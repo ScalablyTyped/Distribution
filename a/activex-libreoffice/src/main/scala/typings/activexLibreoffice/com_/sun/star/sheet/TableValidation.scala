@@ -72,8 +72,7 @@ trait TableValidation
 }
 object TableValidation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ErrorAlertStyle: ValidationAlertStyle,
     ErrorMessage: String,
     ErrorTitle: String,
@@ -112,37 +111,26 @@ object TableValidation {
     __obj.asInstanceOf[TableValidation]
   }
   
-  @scala.inline
-  implicit class TableValidationMutableBuilder[Self <: TableValidation] (val x: Self) extends AnyVal {
+  extension [Self <: TableValidation](x: Self) {
     
-    @scala.inline
-    def setErrorAlertStyle(value: ValidationAlertStyle): Self = StObject.set(x, "ErrorAlertStyle", value.asInstanceOf[js.Any])
+    inline def setErrorAlertStyle(value: ValidationAlertStyle): Self = StObject.set(x, "ErrorAlertStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorTitle(value: String): Self = StObject.set(x, "ErrorTitle", value.asInstanceOf[js.Any])
+    inline def setErrorTitle(value: String): Self = StObject.set(x, "ErrorTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreBlankCells(value: Boolean): Self = StObject.set(x, "IgnoreBlankCells", value.asInstanceOf[js.Any])
+    inline def setIgnoreBlankCells(value: Boolean): Self = StObject.set(x, "IgnoreBlankCells", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputMessage(value: String): Self = StObject.set(x, "InputMessage", value.asInstanceOf[js.Any])
+    inline def setInputMessage(value: String): Self = StObject.set(x, "InputMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputTitle(value: String): Self = StObject.set(x, "InputTitle", value.asInstanceOf[js.Any])
+    inline def setInputTitle(value: String): Self = StObject.set(x, "InputTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowErrorMessage(value: Boolean): Self = StObject.set(x, "ShowErrorMessage", value.asInstanceOf[js.Any])
+    inline def setShowErrorMessage(value: Boolean): Self = StObject.set(x, "ShowErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowInputMessage(value: Boolean): Self = StObject.set(x, "ShowInputMessage", value.asInstanceOf[js.Any])
+    inline def setShowInputMessage(value: Boolean): Self = StObject.set(x, "ShowInputMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowList(value: Double): Self = StObject.set(x, "ShowList", value.asInstanceOf[js.Any])
+    inline def setShowList(value: Double): Self = StObject.set(x, "ShowList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ValidationType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: ValidationType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

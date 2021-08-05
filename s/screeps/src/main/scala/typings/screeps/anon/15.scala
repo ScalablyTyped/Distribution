@@ -10,19 +10,15 @@ trait `15` extends StObject {
 }
 object `15` {
   
-  @scala.inline
-  def apply(): `15` = {
+  inline def apply(): `15` = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`15`]
   }
   
-  @scala.inline
-  implicit class `15MutableBuilder`[Self <: `15`] (val x: Self) extends AnyVal {
+  extension [Self <: `15`](x: Self) {
     
-    @scala.inline
-    def setFilter(value: js.Any | String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: js.Any | String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
   }
 }

@@ -25,25 +25,19 @@ trait SchemaQueryTarget extends StObject {
 }
 object SchemaQueryTarget {
   
-  @scala.inline
-  def apply(): SchemaQueryTarget = {
+  inline def apply(): SchemaQueryTarget = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaQueryTarget]
   }
   
-  @scala.inline
-  implicit class SchemaQueryTargetMutableBuilder[Self <: SchemaQueryTarget] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaQueryTarget](x: Self) {
     
-    @scala.inline
-    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
-    @scala.inline
-    def setStructuredQuery(value: SchemaStructuredQuery): Self = StObject.set(x, "structuredQuery", value.asInstanceOf[js.Any])
+    inline def setStructuredQuery(value: SchemaStructuredQuery): Self = StObject.set(x, "structuredQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructuredQueryUndefined: Self = StObject.set(x, "structuredQuery", js.undefined)
+    inline def setStructuredQueryUndefined: Self = StObject.set(x, "structuredQuery", js.undefined)
   }
 }

@@ -18,22 +18,17 @@ trait PutCorsPolicyInput extends StObject {
 }
 object PutCorsPolicyInput {
   
-  @scala.inline
-  def apply(ContainerName: ContainerName, CorsPolicy: CorsPolicy): PutCorsPolicyInput = {
+  inline def apply(ContainerName: ContainerName, CorsPolicy: CorsPolicy): PutCorsPolicyInput = {
     val __obj = js.Dynamic.literal(ContainerName = ContainerName.asInstanceOf[js.Any], CorsPolicy = CorsPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutCorsPolicyInput]
   }
   
-  @scala.inline
-  implicit class PutCorsPolicyInputMutableBuilder[Self <: PutCorsPolicyInput] (val x: Self) extends AnyVal {
+  extension [Self <: PutCorsPolicyInput](x: Self) {
     
-    @scala.inline
-    def setContainerName(value: ContainerName): Self = StObject.set(x, "ContainerName", value.asInstanceOf[js.Any])
+    inline def setContainerName(value: ContainerName): Self = StObject.set(x, "ContainerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorsPolicy(value: CorsPolicy): Self = StObject.set(x, "CorsPolicy", value.asInstanceOf[js.Any])
+    inline def setCorsPolicy(value: CorsPolicy): Self = StObject.set(x, "CorsPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorsPolicyVarargs(value: CorsRule*): Self = StObject.set(x, "CorsPolicy", js.Array(value :_*))
+    inline def setCorsPolicyVarargs(value: CorsRule*): Self = StObject.set(x, "CorsPolicy", js.Array(value :_*))
   }
 }

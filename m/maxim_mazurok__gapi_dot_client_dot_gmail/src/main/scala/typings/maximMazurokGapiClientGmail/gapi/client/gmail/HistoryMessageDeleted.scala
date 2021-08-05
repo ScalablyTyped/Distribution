@@ -10,19 +10,15 @@ trait HistoryMessageDeleted extends StObject {
 }
 object HistoryMessageDeleted {
   
-  @scala.inline
-  def apply(): HistoryMessageDeleted = {
+  inline def apply(): HistoryMessageDeleted = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HistoryMessageDeleted]
   }
   
-  @scala.inline
-  implicit class HistoryMessageDeletedMutableBuilder[Self <: HistoryMessageDeleted] (val x: Self) extends AnyVal {
+  extension [Self <: HistoryMessageDeleted](x: Self) {
     
-    @scala.inline
-    def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
   }
 }

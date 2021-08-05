@@ -18,25 +18,19 @@ trait LoadPermissionRequest extends StObject {
 }
 object LoadPermissionRequest {
   
-  @scala.inline
-  def apply(): LoadPermissionRequest = {
+  inline def apply(): LoadPermissionRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoadPermissionRequest]
   }
   
-  @scala.inline
-  implicit class LoadPermissionRequestMutableBuilder[Self <: LoadPermissionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: LoadPermissionRequest](x: Self) {
     
-    @scala.inline
-    def setGroup(value: PermissionGroup): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: PermissionGroup): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupUndefined: Self = StObject.set(x, "Group", js.undefined)
+    inline def setGroupUndefined: Self = StObject.set(x, "Group", js.undefined)
     
-    @scala.inline
-    def setUserId(value: String): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: String): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdUndefined: Self = StObject.set(x, "UserId", js.undefined)
+    inline def setUserIdUndefined: Self = StObject.set(x, "UserId", js.undefined)
   }
 }

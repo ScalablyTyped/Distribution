@@ -22,32 +22,24 @@ object anon {
   }
   object Domain {
     
-    @scala.inline
-    def apply(domain: String, first_name: String, href: String, id: String, last_name: String, nickname: String): Domain = {
+    inline def apply(domain: String, first_name: String, href: String, id: String, last_name: String, nickname: String): Domain = {
       val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], first_name = first_name.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], last_name = last_name.asInstanceOf[js.Any], nickname = nickname.asInstanceOf[js.Any])
       __obj.asInstanceOf[Domain]
     }
     
-    @scala.inline
-    implicit class DomainMutableBuilder[Self <: Domain] (val x: Self) extends AnyVal {
+    extension [Self <: Domain](x: Self) {
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirst_name(value: String): Self = StObject.set(x, "first_name", value.asInstanceOf[js.Any])
+      inline def setFirst_name(value: String): Self = StObject.set(x, "first_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLast_name(value: String): Self = StObject.set(x, "last_name", value.asInstanceOf[js.Any])
+      inline def setLast_name(value: String): Self = StObject.set(x, "last_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
+      inline def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
     }
   }
 }

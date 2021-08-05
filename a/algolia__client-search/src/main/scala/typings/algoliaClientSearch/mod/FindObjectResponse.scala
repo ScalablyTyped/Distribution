@@ -23,23 +23,18 @@ trait FindObjectResponse[TObject] extends StObject {
 }
 object FindObjectResponse {
   
-  @scala.inline
-  def apply[TObject](`object`: TObject & ObjectWithObjectID, page: Double, position: Double): FindObjectResponse[TObject] = {
+  inline def apply[TObject](`object`: TObject & ObjectWithObjectID, page: Double, position: Double): FindObjectResponse[TObject] = {
     val __obj = js.Dynamic.literal(page = page.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindObjectResponse[TObject]]
   }
   
-  @scala.inline
-  implicit class FindObjectResponseMutableBuilder[Self <: FindObjectResponse[?], TObject] (val x: Self & FindObjectResponse[TObject]) extends AnyVal {
+  extension [Self <: FindObjectResponse[?], TObject](x: Self & FindObjectResponse[TObject]) {
     
-    @scala.inline
-    def setObject(value: TObject & ObjectWithObjectID): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: TObject & ObjectWithObjectID): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

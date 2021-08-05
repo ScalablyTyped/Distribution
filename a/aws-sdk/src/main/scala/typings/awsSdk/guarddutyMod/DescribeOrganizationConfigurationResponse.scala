@@ -23,25 +23,19 @@ trait DescribeOrganizationConfigurationResponse extends StObject {
 }
 object DescribeOrganizationConfigurationResponse {
   
-  @scala.inline
-  def apply(AutoEnable: Boolean, MemberAccountLimitReached: Boolean): DescribeOrganizationConfigurationResponse = {
+  inline def apply(AutoEnable: Boolean, MemberAccountLimitReached: Boolean): DescribeOrganizationConfigurationResponse = {
     val __obj = js.Dynamic.literal(AutoEnable = AutoEnable.asInstanceOf[js.Any], MemberAccountLimitReached = MemberAccountLimitReached.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeOrganizationConfigurationResponse]
   }
   
-  @scala.inline
-  implicit class DescribeOrganizationConfigurationResponseMutableBuilder[Self <: DescribeOrganizationConfigurationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeOrganizationConfigurationResponse](x: Self) {
     
-    @scala.inline
-    def setAutoEnable(value: Boolean): Self = StObject.set(x, "AutoEnable", value.asInstanceOf[js.Any])
+    inline def setAutoEnable(value: Boolean): Self = StObject.set(x, "AutoEnable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSources(value: OrganizationDataSourceConfigurationsResult): Self = StObject.set(x, "DataSources", value.asInstanceOf[js.Any])
+    inline def setDataSources(value: OrganizationDataSourceConfigurationsResult): Self = StObject.set(x, "DataSources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourcesUndefined: Self = StObject.set(x, "DataSources", js.undefined)
+    inline def setDataSourcesUndefined: Self = StObject.set(x, "DataSources", js.undefined)
     
-    @scala.inline
-    def setMemberAccountLimitReached(value: Boolean): Self = StObject.set(x, "MemberAccountLimitReached", value.asInstanceOf[js.Any])
+    inline def setMemberAccountLimitReached(value: Boolean): Self = StObject.set(x, "MemberAccountLimitReached", value.asInstanceOf[js.Any])
   }
 }

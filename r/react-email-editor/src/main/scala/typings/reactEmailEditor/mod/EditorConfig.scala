@@ -12,25 +12,19 @@ trait EditorConfig extends StObject {
 }
 object EditorConfig {
   
-  @scala.inline
-  def apply(): EditorConfig = {
+  inline def apply(): EditorConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EditorConfig]
   }
   
-  @scala.inline
-  implicit class EditorConfigMutableBuilder[Self <: EditorConfig] (val x: Self) extends AnyVal {
+  extension [Self <: EditorConfig](x: Self) {
     
-    @scala.inline
-    def setMaxRows(value: Double): Self = StObject.set(x, "maxRows", value.asInstanceOf[js.Any])
+    inline def setMaxRows(value: Double): Self = StObject.set(x, "maxRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRowsUndefined: Self = StObject.set(x, "maxRows", js.undefined)
+    inline def setMaxRowsUndefined: Self = StObject.set(x, "maxRows", js.undefined)
     
-    @scala.inline
-    def setMinRows(value: Double): Self = StObject.set(x, "minRows", value.asInstanceOf[js.Any])
+    inline def setMinRows(value: Double): Self = StObject.set(x, "minRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinRowsUndefined: Self = StObject.set(x, "minRows", js.undefined)
+    inline def setMinRowsUndefined: Self = StObject.set(x, "minRows", js.undefined)
   }
 }

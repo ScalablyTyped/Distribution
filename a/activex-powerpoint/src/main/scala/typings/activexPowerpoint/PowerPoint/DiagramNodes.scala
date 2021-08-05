@@ -16,15 +16,14 @@ trait DiagramNodes extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.DiagramNodes_typekey")
+  /* private */ @JSName("PowerPoint.DiagramNodes_typekey")
   var PowerPointDotDiagramNodes_typekey: DiagramNodes
   
   def SelectAll(): Unit
 }
 object DiagramNodes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Count: Double,
     Creator: Double,
@@ -38,28 +37,20 @@ object DiagramNodes {
     __obj.asInstanceOf[DiagramNodes]
   }
   
-  @scala.inline
-  implicit class DiagramNodesMutableBuilder[Self <: DiagramNodes] (val x: Self) extends AnyVal {
+  extension [Self <: DiagramNodes](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: js.Any => DiagramNode): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: js.Any => DiagramNode): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotDiagramNodes_typekey(value: DiagramNodes): Self = StObject.set(x, "PowerPoint.DiagramNodes_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotDiagramNodes_typekey(value: DiagramNodes): Self = StObject.set(x, "PowerPoint.DiagramNodes_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectAll(value: () => Unit): Self = StObject.set(x, "SelectAll", js.Any.fromFunction0(value))
+    inline def setSelectAll(value: () => Unit): Self = StObject.set(x, "SelectAll", js.Any.fromFunction0(value))
   }
 }

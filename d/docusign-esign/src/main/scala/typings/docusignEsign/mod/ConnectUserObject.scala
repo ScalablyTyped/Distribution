@@ -27,46 +27,33 @@ trait ConnectUserObject extends StObject {
 }
 object ConnectUserObject {
   
-  @scala.inline
-  def apply(): ConnectUserObject = {
+  inline def apply(): ConnectUserObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectUserObject]
   }
   
-  @scala.inline
-  implicit class ConnectUserObjectMutableBuilder[Self <: ConnectUserObject] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectUserObject](x: Self) {
     
-    @scala.inline
-    def setConfigurationtype(value: String): Self = StObject.set(x, "configurationtype", value.asInstanceOf[js.Any])
+    inline def setConfigurationtype(value: String): Self = StObject.set(x, "configurationtype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationtypeUndefined: Self = StObject.set(x, "configurationtype", js.undefined)
+    inline def setConfigurationtypeUndefined: Self = StObject.set(x, "configurationtype", js.undefined)
     
-    @scala.inline
-    def setConnectId(value: String): Self = StObject.set(x, "connectId", value.asInstanceOf[js.Any])
+    inline def setConnectId(value: String): Self = StObject.set(x, "connectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectIdUndefined: Self = StObject.set(x, "connectId", js.undefined)
+    inline def setConnectIdUndefined: Self = StObject.set(x, "connectId", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: String): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: String): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setHasAccess(value: String): Self = StObject.set(x, "hasAccess", value.asInstanceOf[js.Any])
+    inline def setHasAccess(value: String): Self = StObject.set(x, "hasAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasAccessUndefined: Self = StObject.set(x, "hasAccess", js.undefined)
+    inline def setHasAccessUndefined: Self = StObject.set(x, "hasAccess", js.undefined)
     
-    @scala.inline
-    def setSenderSearchableItems(value: js.Array[String]): Self = StObject.set(x, "senderSearchableItems", value.asInstanceOf[js.Any])
+    inline def setSenderSearchableItems(value: js.Array[String]): Self = StObject.set(x, "senderSearchableItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSenderSearchableItemsUndefined: Self = StObject.set(x, "senderSearchableItems", js.undefined)
+    inline def setSenderSearchableItemsUndefined: Self = StObject.set(x, "senderSearchableItems", js.undefined)
     
-    @scala.inline
-    def setSenderSearchableItemsVarargs(value: String*): Self = StObject.set(x, "senderSearchableItems", js.Array(value :_*))
+    inline def setSenderSearchableItemsVarargs(value: String*): Self = StObject.set(x, "senderSearchableItems", js.Array(value :_*))
   }
 }

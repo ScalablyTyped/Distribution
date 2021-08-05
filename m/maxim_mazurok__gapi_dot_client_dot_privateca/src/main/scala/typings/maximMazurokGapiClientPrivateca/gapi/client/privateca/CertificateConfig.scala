@@ -20,31 +20,23 @@ trait CertificateConfig extends StObject {
 }
 object CertificateConfig {
   
-  @scala.inline
-  def apply(): CertificateConfig = {
+  inline def apply(): CertificateConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CertificateConfig]
   }
   
-  @scala.inline
-  implicit class CertificateConfigMutableBuilder[Self <: CertificateConfig] (val x: Self) extends AnyVal {
+  extension [Self <: CertificateConfig](x: Self) {
     
-    @scala.inline
-    def setPublicKey(value: PublicKey): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+    inline def setPublicKey(value: PublicKey): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKeyUndefined: Self = StObject.set(x, "publicKey", js.undefined)
+    inline def setPublicKeyUndefined: Self = StObject.set(x, "publicKey", js.undefined)
     
-    @scala.inline
-    def setReusableConfig(value: ReusableConfigWrapper): Self = StObject.set(x, "reusableConfig", value.asInstanceOf[js.Any])
+    inline def setReusableConfig(value: ReusableConfigWrapper): Self = StObject.set(x, "reusableConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReusableConfigUndefined: Self = StObject.set(x, "reusableConfig", js.undefined)
+    inline def setReusableConfigUndefined: Self = StObject.set(x, "reusableConfig", js.undefined)
     
-    @scala.inline
-    def setSubjectConfig(value: SubjectConfig): Self = StObject.set(x, "subjectConfig", value.asInstanceOf[js.Any])
+    inline def setSubjectConfig(value: SubjectConfig): Self = StObject.set(x, "subjectConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectConfigUndefined: Self = StObject.set(x, "subjectConfig", js.undefined)
+    inline def setSubjectConfigUndefined: Self = StObject.set(x, "subjectConfig", js.undefined)
   }
 }

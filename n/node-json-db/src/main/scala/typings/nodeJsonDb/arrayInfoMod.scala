@@ -67,12 +67,9 @@ object arrayInfoMod {
       * Check if the property want to access an Array
       * @param property
       */
-    @scala.inline
-    def processArray(): ArrayInfo | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("processArray")().asInstanceOf[ArrayInfo | Null]
-    @scala.inline
-    def processArray(property: String): ArrayInfo | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("processArray")(property.asInstanceOf[js.Any]).asInstanceOf[ArrayInfo | Null]
+    inline def processArray(): ArrayInfo | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("processArray")().asInstanceOf[ArrayInfo | Null]
+    inline def processArray(property: String): ArrayInfo | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("processArray")(property.asInstanceOf[js.Any]).asInstanceOf[ArrayInfo | Null]
   }
   
-  @scala.inline
-  def arrayRegex(): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayRegex")().asInstanceOf[RegExp]
+  inline def arrayRegex(): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayRegex")().asInstanceOf[RegExp]
 }

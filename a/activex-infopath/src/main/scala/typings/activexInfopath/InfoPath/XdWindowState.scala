@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XdWindowState extends StObject
 object XdWindowState {
   
-  @scala.inline
-  def xdWindowStateMaximize: `1` = 1.asInstanceOf[`1`]
+  inline def xdWindowStateMaximize: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xdWindowStateMinimize: `3` = 3.asInstanceOf[`3`]
+  inline def xdWindowStateMinimize: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def xdWindowStateNormal: `2` = 2.asInstanceOf[`2`]
+  inline def xdWindowStateNormal: `2` = 2.asInstanceOf[`2`]
 }

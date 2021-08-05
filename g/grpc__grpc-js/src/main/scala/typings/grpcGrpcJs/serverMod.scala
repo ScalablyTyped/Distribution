@@ -18,7 +18,7 @@ object serverMod {
   class Server () extends StObject {
     def this(options: ChannelOptions) = this()
     
-    var _setupHandlers: js.Any = js.native
+    /* private */ var _setupHandlers: js.Any = js.native
     
     def addHttp2Port(): Unit = js.native
     
@@ -36,11 +36,11 @@ object serverMod {
     
     def forceShutdown(): Unit = js.native
     
-    var handlers: js.Any = js.native
+    /* private */ var handlers: js.Any = js.native
     
-    var http2ServerList: js.Any = js.native
+    /* private */ var http2ServerList: js.Any = js.native
     
-    var options: js.Any = js.native
+    /* private */ var options: js.Any = js.native
     
     def register[RequestType, ResponseType](
       name: String,
@@ -50,11 +50,11 @@ object serverMod {
       `type`: String
     ): Boolean = js.native
     
-    var sessions: js.Any = js.native
+    /* private */ var sessions: js.Any = js.native
     
     def start(): Unit = js.native
     
-    var started: js.Any = js.native
+    /* private */ var started: js.Any = js.native
     
     def tryShutdown(callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = js.native
   }

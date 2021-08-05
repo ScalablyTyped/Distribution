@@ -12,19 +12,15 @@ trait PullRequestTabExtensionConfig extends StObject {
 }
 object PullRequestTabExtensionConfig {
   
-  @scala.inline
-  def apply(pullRequestId: Double, repositoryId: String): PullRequestTabExtensionConfig = {
+  inline def apply(pullRequestId: Double, repositoryId: String): PullRequestTabExtensionConfig = {
     val __obj = js.Dynamic.literal(pullRequestId = pullRequestId.asInstanceOf[js.Any], repositoryId = repositoryId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PullRequestTabExtensionConfig]
   }
   
-  @scala.inline
-  implicit class PullRequestTabExtensionConfigMutableBuilder[Self <: PullRequestTabExtensionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: PullRequestTabExtensionConfig](x: Self) {
     
-    @scala.inline
-    def setPullRequestId(value: Double): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
+    inline def setPullRequestId(value: Double): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryId(value: String): Self = StObject.set(x, "repositoryId", value.asInstanceOf[js.Any])
+    inline def setRepositoryId(value: String): Self = StObject.set(x, "repositoryId", value.asInstanceOf[js.Any])
   }
 }

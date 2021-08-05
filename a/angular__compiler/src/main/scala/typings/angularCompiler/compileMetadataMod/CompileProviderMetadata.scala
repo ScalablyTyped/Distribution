@@ -22,55 +22,39 @@ trait CompileProviderMetadata extends StObject {
 }
 object CompileProviderMetadata {
   
-  @scala.inline
-  def apply(token: CompileTokenMetadata): CompileProviderMetadata = {
+  inline def apply(token: CompileTokenMetadata): CompileProviderMetadata = {
     val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompileProviderMetadata]
   }
   
-  @scala.inline
-  implicit class CompileProviderMetadataMutableBuilder[Self <: CompileProviderMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: CompileProviderMetadata](x: Self) {
     
-    @scala.inline
-    def setDeps(value: js.Array[CompileDiDependencyMetadata]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
+    inline def setDeps(value: js.Array[CompileDiDependencyMetadata]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepsUndefined: Self = StObject.set(x, "deps", js.undefined)
+    inline def setDepsUndefined: Self = StObject.set(x, "deps", js.undefined)
     
-    @scala.inline
-    def setDepsVarargs(value: CompileDiDependencyMetadata*): Self = StObject.set(x, "deps", js.Array(value :_*))
+    inline def setDepsVarargs(value: CompileDiDependencyMetadata*): Self = StObject.set(x, "deps", js.Array(value :_*))
     
-    @scala.inline
-    def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
+    inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
+    inline def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
     
-    @scala.inline
-    def setToken(value: CompileTokenMetadata): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: CompileTokenMetadata): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseClass(value: CompileTypeMetadata): Self = StObject.set(x, "useClass", value.asInstanceOf[js.Any])
+    inline def setUseClass(value: CompileTypeMetadata): Self = StObject.set(x, "useClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseClassUndefined: Self = StObject.set(x, "useClass", js.undefined)
+    inline def setUseClassUndefined: Self = StObject.set(x, "useClass", js.undefined)
     
-    @scala.inline
-    def setUseExisting(value: CompileTokenMetadata): Self = StObject.set(x, "useExisting", value.asInstanceOf[js.Any])
+    inline def setUseExisting(value: CompileTokenMetadata): Self = StObject.set(x, "useExisting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseExistingUndefined: Self = StObject.set(x, "useExisting", js.undefined)
+    inline def setUseExistingUndefined: Self = StObject.set(x, "useExisting", js.undefined)
     
-    @scala.inline
-    def setUseFactory(value: CompileFactoryMetadata): Self = StObject.set(x, "useFactory", value.asInstanceOf[js.Any])
+    inline def setUseFactory(value: CompileFactoryMetadata): Self = StObject.set(x, "useFactory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseFactoryUndefined: Self = StObject.set(x, "useFactory", js.undefined)
+    inline def setUseFactoryUndefined: Self = StObject.set(x, "useFactory", js.undefined)
     
-    @scala.inline
-    def setUseValue(value: js.Any): Self = StObject.set(x, "useValue", value.asInstanceOf[js.Any])
+    inline def setUseValue(value: js.Any): Self = StObject.set(x, "useValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseValueUndefined: Self = StObject.set(x, "useValue", js.undefined)
+    inline def setUseValueUndefined: Self = StObject.set(x, "useValue", js.undefined)
   }
 }

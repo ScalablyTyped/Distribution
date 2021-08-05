@@ -60,8 +60,7 @@ trait StockDiagram
 }
 object StockDiagram {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AutomaticPosition: Boolean,
     AutomaticSize: Boolean,
     ConstantErrorHigh: Double,
@@ -161,13 +160,10 @@ object StockDiagram {
     __obj.asInstanceOf[StockDiagram]
   }
   
-  @scala.inline
-  implicit class StockDiagramMutableBuilder[Self <: StockDiagram] (val x: Self) extends AnyVal {
+  extension [Self <: StockDiagram](x: Self) {
     
-    @scala.inline
-    def setUpDown(value: Boolean): Self = StObject.set(x, "UpDown", value.asInstanceOf[js.Any])
+    inline def setUpDown(value: Boolean): Self = StObject.set(x, "UpDown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolume(value: Boolean): Self = StObject.set(x, "Volume", value.asInstanceOf[js.Any])
+    inline def setVolume(value: Boolean): Self = StObject.set(x, "Volume", value.asInstanceOf[js.Any])
   }
 }

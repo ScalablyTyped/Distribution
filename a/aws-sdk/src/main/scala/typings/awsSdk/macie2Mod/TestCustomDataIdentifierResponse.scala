@@ -13,19 +13,15 @@ trait TestCustomDataIdentifierResponse extends StObject {
 }
 object TestCustomDataIdentifierResponse {
   
-  @scala.inline
-  def apply(): TestCustomDataIdentifierResponse = {
+  inline def apply(): TestCustomDataIdentifierResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TestCustomDataIdentifierResponse]
   }
   
-  @scala.inline
-  implicit class TestCustomDataIdentifierResponseMutableBuilder[Self <: TestCustomDataIdentifierResponse] (val x: Self) extends AnyVal {
+  extension [Self <: TestCustomDataIdentifierResponse](x: Self) {
     
-    @scala.inline
-    def setMatchCount(value: integer): Self = StObject.set(x, "matchCount", value.asInstanceOf[js.Any])
+    inline def setMatchCount(value: integer): Self = StObject.set(x, "matchCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchCountUndefined: Self = StObject.set(x, "matchCount", js.undefined)
+    inline def setMatchCountUndefined: Self = StObject.set(x, "matchCount", js.undefined)
   }
 }

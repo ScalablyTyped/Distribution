@@ -18,19 +18,15 @@ trait SetSettingsResponse extends StObject {
 }
 object SetSettingsResponse {
   
-  @scala.inline
-  def apply(taskID: Double, updatedAt: Double): SetSettingsResponse = {
+  inline def apply(taskID: Double, updatedAt: Double): SetSettingsResponse = {
     val __obj = js.Dynamic.literal(taskID = taskID.asInstanceOf[js.Any], updatedAt = updatedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetSettingsResponse]
   }
   
-  @scala.inline
-  implicit class SetSettingsResponseMutableBuilder[Self <: SetSettingsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SetSettingsResponse](x: Self) {
     
-    @scala.inline
-    def setTaskID(value: Double): Self = StObject.set(x, "taskID", value.asInstanceOf[js.Any])
+    inline def setTaskID(value: Double): Self = StObject.set(x, "taskID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedAt(value: Double): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: Double): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
   }
 }

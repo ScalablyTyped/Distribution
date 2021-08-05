@@ -107,56 +107,40 @@ object OfficeRuntime {
   }
   object AuthOptions {
     
-    @scala.inline
-    def apply(): AuthOptions = {
+    inline def apply(): AuthOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AuthOptions]
     }
     
-    @scala.inline
-    implicit class AuthOptionsMutableBuilder[Self <: AuthOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AuthOptions](x: Self) {
       
-      @scala.inline
-      def setAllowConsentPrompt(value: Boolean): Self = StObject.set(x, "allowConsentPrompt", value.asInstanceOf[js.Any])
+      inline def setAllowConsentPrompt(value: Boolean): Self = StObject.set(x, "allowConsentPrompt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowConsentPromptUndefined: Self = StObject.set(x, "allowConsentPrompt", js.undefined)
+      inline def setAllowConsentPromptUndefined: Self = StObject.set(x, "allowConsentPrompt", js.undefined)
       
-      @scala.inline
-      def setAllowSignInPrompt(value: Boolean): Self = StObject.set(x, "allowSignInPrompt", value.asInstanceOf[js.Any])
+      inline def setAllowSignInPrompt(value: Boolean): Self = StObject.set(x, "allowSignInPrompt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowSignInPromptUndefined: Self = StObject.set(x, "allowSignInPrompt", js.undefined)
+      inline def setAllowSignInPromptUndefined: Self = StObject.set(x, "allowSignInPrompt", js.undefined)
       
-      @scala.inline
-      def setAsyncContext(value: js.Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
+      inline def setAsyncContext(value: js.Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsyncContextUndefined: Self = StObject.set(x, "asyncContext", js.undefined)
+      inline def setAsyncContextUndefined: Self = StObject.set(x, "asyncContext", js.undefined)
       
-      @scala.inline
-      def setAuthChallenge(value: String): Self = StObject.set(x, "authChallenge", value.asInstanceOf[js.Any])
+      inline def setAuthChallenge(value: String): Self = StObject.set(x, "authChallenge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthChallengeUndefined: Self = StObject.set(x, "authChallenge", js.undefined)
+      inline def setAuthChallengeUndefined: Self = StObject.set(x, "authChallenge", js.undefined)
       
-      @scala.inline
-      def setForMSGraphAccess(value: Boolean): Self = StObject.set(x, "forMSGraphAccess", value.asInstanceOf[js.Any])
+      inline def setForMSGraphAccess(value: Boolean): Self = StObject.set(x, "forMSGraphAccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForMSGraphAccessUndefined: Self = StObject.set(x, "forMSGraphAccess", js.undefined)
+      inline def setForMSGraphAccessUndefined: Self = StObject.set(x, "forMSGraphAccess", js.undefined)
       
-      @scala.inline
-      def setForceAddAccount(value: Boolean): Self = StObject.set(x, "forceAddAccount", value.asInstanceOf[js.Any])
+      inline def setForceAddAccount(value: Boolean): Self = StObject.set(x, "forceAddAccount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceAddAccountUndefined: Self = StObject.set(x, "forceAddAccount", js.undefined)
+      inline def setForceAddAccountUndefined: Self = StObject.set(x, "forceAddAccount", js.undefined)
       
-      @scala.inline
-      def setForceConsent(value: Boolean): Self = StObject.set(x, "forceConsent", value.asInstanceOf[js.Any])
+      inline def setForceConsent(value: Boolean): Self = StObject.set(x, "forceConsent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceConsentUndefined: Self = StObject.set(x, "forceConsent", js.undefined)
+      inline def setForceConsentUndefined: Self = StObject.set(x, "forceConsent", js.undefined)
     }
   }
   
@@ -173,17 +157,14 @@ object OfficeRuntime {
   }
   object Dialog {
     
-    @scala.inline
-    def apply(close: () => js.Promise[Unit]): Dialog = {
+    inline def apply(close: () => js.Promise[Unit]): Dialog = {
       val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close))
       __obj.asInstanceOf[Dialog]
     }
     
-    @scala.inline
-    implicit class DialogMutableBuilder[Self <: Dialog] (val x: Self) extends AnyVal {
+    extension [Self <: Dialog](x: Self) {
       
-      @scala.inline
-      def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     }
   }
   
@@ -243,50 +224,36 @@ object OfficeRuntime {
   }
   object DisplayWebDialogOptions {
     
-    @scala.inline
-    def apply(): DisplayWebDialogOptions = {
+    inline def apply(): DisplayWebDialogOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DisplayWebDialogOptions]
     }
     
-    @scala.inline
-    implicit class DisplayWebDialogOptionsMutableBuilder[Self <: DisplayWebDialogOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DisplayWebDialogOptions](x: Self) {
       
-      @scala.inline
-      def setDisplayInIFrame(value: Boolean): Self = StObject.set(x, "displayInIFrame", value.asInstanceOf[js.Any])
+      inline def setDisplayInIFrame(value: Boolean): Self = StObject.set(x, "displayInIFrame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayInIFrameUndefined: Self = StObject.set(x, "displayInIFrame", js.undefined)
+      inline def setDisplayInIFrameUndefined: Self = StObject.set(x, "displayInIFrame", js.undefined)
       
-      @scala.inline
-      def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+      inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      @scala.inline
-      def setOnMessage(value: (/* message */ String, /* dialog */ js.UndefOr[Dialog]) => Unit): Self = StObject.set(x, "onMessage", js.Any.fromFunction2(value))
+      inline def setOnMessage(value: (/* message */ String, /* dialog */ js.UndefOr[Dialog]) => Unit): Self = StObject.set(x, "onMessage", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnMessageUndefined: Self = StObject.set(x, "onMessage", js.undefined)
+      inline def setOnMessageUndefined: Self = StObject.set(x, "onMessage", js.undefined)
       
-      @scala.inline
-      def setOnRuntimeError(value: (/* error */ Error, /* dialog */ js.UndefOr[Dialog]) => Unit): Self = StObject.set(x, "onRuntimeError", js.Any.fromFunction2(value))
+      inline def setOnRuntimeError(value: (/* error */ Error, /* dialog */ js.UndefOr[Dialog]) => Unit): Self = StObject.set(x, "onRuntimeError", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRuntimeErrorUndefined: Self = StObject.set(x, "onRuntimeError", js.undefined)
+      inline def setOnRuntimeErrorUndefined: Self = StObject.set(x, "onRuntimeError", js.undefined)
       
-      @scala.inline
-      def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -372,8 +339,7 @@ object OfficeRuntime {
   }
   object Storage {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getItem: String => js.Promise[String | Null],
       getItems: js.Array[String] => js.Promise[StringDictionary[String | Null]],
       getKeys: () => js.Promise[js.Array[String]],
@@ -386,29 +352,21 @@ object OfficeRuntime {
       __obj.asInstanceOf[Storage]
     }
     
-    @scala.inline
-    implicit class StorageMutableBuilder[Self <: Storage] (val x: Self) extends AnyVal {
+    extension [Self <: Storage](x: Self) {
       
-      @scala.inline
-      def setGetItem(value: String => js.Promise[String | Null]): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
+      inline def setGetItem(value: String => js.Promise[String | Null]): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetItems(value: js.Array[String] => js.Promise[StringDictionary[String | Null]]): Self = StObject.set(x, "getItems", js.Any.fromFunction1(value))
+      inline def setGetItems(value: js.Array[String] => js.Promise[StringDictionary[String | Null]]): Self = StObject.set(x, "getItems", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetKeys(value: () => js.Promise[js.Array[String]]): Self = StObject.set(x, "getKeys", js.Any.fromFunction0(value))
+      inline def setGetKeys(value: () => js.Promise[js.Array[String]]): Self = StObject.set(x, "getKeys", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveItem(value: String => js.Promise[Unit]): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
+      inline def setRemoveItem(value: String => js.Promise[Unit]): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveItems(value: js.Array[String] => js.Promise[Unit]): Self = StObject.set(x, "removeItems", js.Any.fromFunction1(value))
+      inline def setRemoveItems(value: js.Array[String] => js.Promise[Unit]): Self = StObject.set(x, "removeItems", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetItem(value: (String, String) => js.Promise[Unit]): Self = StObject.set(x, "setItem", js.Any.fromFunction2(value))
+      inline def setSetItem(value: (String, String) => js.Promise[Unit]): Self = StObject.set(x, "setItem", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetItems(value: StringDictionary[String] => js.Promise[Unit]): Self = StObject.set(x, "setItems", js.Any.fromFunction1(value))
+      inline def setSetItems(value: StringDictionary[String] => js.Promise[Unit]): Self = StObject.set(x, "setItems", js.Any.fromFunction1(value))
     }
   }
 }

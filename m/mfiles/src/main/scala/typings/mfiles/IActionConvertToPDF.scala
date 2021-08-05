@@ -18,8 +18,7 @@ trait IActionConvertToPDF extends StObject {
 }
 object IActionConvertToPDF {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Clone: () => IActionConvertToPDF,
     FailOnUnsupportedSourceFiles: Boolean,
     OverwriteExistingFile: Boolean,
@@ -30,22 +29,16 @@ object IActionConvertToPDF {
     __obj.asInstanceOf[IActionConvertToPDF]
   }
   
-  @scala.inline
-  implicit class IActionConvertToPDFMutableBuilder[Self <: IActionConvertToPDF] (val x: Self) extends AnyVal {
+  extension [Self <: IActionConvertToPDF](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => IActionConvertToPDF): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IActionConvertToPDF): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFailOnUnsupportedSourceFiles(value: Boolean): Self = StObject.set(x, "FailOnUnsupportedSourceFiles", value.asInstanceOf[js.Any])
+    inline def setFailOnUnsupportedSourceFiles(value: Boolean): Self = StObject.set(x, "FailOnUnsupportedSourceFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverwriteExistingFile(value: Boolean): Self = StObject.set(x, "OverwriteExistingFile", value.asInstanceOf[js.Any])
+    inline def setOverwriteExistingFile(value: Boolean): Self = StObject.set(x, "OverwriteExistingFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPDFA1b(value: Boolean): Self = StObject.set(x, "PDFA1b", value.asInstanceOf[js.Any])
+    inline def setPDFA1b(value: Boolean): Self = StObject.set(x, "PDFA1b", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoreAsSeparateFile(value: Boolean): Self = StObject.set(x, "StoreAsSeparateFile", value.asInstanceOf[js.Any])
+    inline def setStoreAsSeparateFile(value: Boolean): Self = StObject.set(x, "StoreAsSeparateFile", value.asInstanceOf[js.Any])
   }
 }

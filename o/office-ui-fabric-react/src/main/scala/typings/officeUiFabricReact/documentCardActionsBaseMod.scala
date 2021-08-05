@@ -14,6 +14,6 @@ object documentCardActionsBaseMod {
     extends Component[IDocumentCardActionsProps, js.Any, js.Any] {
     def this(props: IDocumentCardActionsProps) = this()
     
-    var _classNames: js.Any = js.native
+    /* private */ var _classNames: js.Any = js.native
   }
 }

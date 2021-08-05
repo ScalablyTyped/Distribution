@@ -17,8 +17,7 @@ trait LayoutProps
      with VerticalAlignProps[StyledSystemLength]
 object LayoutProps {
   
-  @scala.inline
-  def apply(): LayoutProps = {
+  inline def apply(): LayoutProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LayoutProps]
   }

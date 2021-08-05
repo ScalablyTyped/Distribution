@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "knockout_dot_projections"
-version := "1.0.0-dt-20201002Z-6dbe48"
+version := "1.0.0-dt-20201002Z-18eda1"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

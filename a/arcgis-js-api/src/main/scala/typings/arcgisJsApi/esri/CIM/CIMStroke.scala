@@ -46,56 +46,42 @@ trait CIMStroke
 }
 object CIMStroke {
   
-  @scala.inline
-  def apply(`type`: String): CIMStroke = {
+  inline def apply(`type`: String): CIMStroke = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CIMStroke]
   }
   
-  @scala.inline
-  implicit class CIMStrokeMutableBuilder[Self <: CIMStroke] (val x: Self) extends AnyVal {
+  extension [Self <: CIMStroke](x: Self) {
     
-    @scala.inline
-    def setCapStyle(
+    inline def setCapStyle(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LineCapStyle * / any */ String
     ): Self = StObject.set(x, "capStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapStyleUndefined: Self = StObject.set(x, "capStyle", js.undefined)
+    inline def setCapStyleUndefined: Self = StObject.set(x, "capStyle", js.undefined)
     
-    @scala.inline
-    def setCloseCaps3D(value: Boolean): Self = StObject.set(x, "closeCaps3D", value.asInstanceOf[js.Any])
+    inline def setCloseCaps3D(value: Boolean): Self = StObject.set(x, "closeCaps3D", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseCaps3DUndefined: Self = StObject.set(x, "closeCaps3D", js.undefined)
+    inline def setCloseCaps3DUndefined: Self = StObject.set(x, "closeCaps3D", js.undefined)
     
-    @scala.inline
-    def setJoinStyle(
+    inline def setJoinStyle(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LineJoinStyle * / any */ String
     ): Self = StObject.set(x, "joinStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJoinStyleUndefined: Self = StObject.set(x, "joinStyle", js.undefined)
+    inline def setJoinStyleUndefined: Self = StObject.set(x, "joinStyle", js.undefined)
     
-    @scala.inline
-    def setLineStyle3D(
+    inline def setLineStyle3D(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Simple3DLineStyle * / any */ String
     ): Self = StObject.set(x, "lineStyle3D", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineStyle3DUndefined: Self = StObject.set(x, "lineStyle3D", js.undefined)
+    inline def setLineStyle3DUndefined: Self = StObject.set(x, "lineStyle3D", js.undefined)
     
-    @scala.inline
-    def setMiterLimit(value: Double): Self = StObject.set(x, "miterLimit", value.asInstanceOf[js.Any])
+    inline def setMiterLimit(value: Double): Self = StObject.set(x, "miterLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMiterLimitUndefined: Self = StObject.set(x, "miterLimit", js.undefined)
+    inline def setMiterLimitUndefined: Self = StObject.set(x, "miterLimit", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

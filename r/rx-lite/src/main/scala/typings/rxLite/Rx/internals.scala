@@ -30,8 +30,7 @@ object internals {
   }
   object PriorityQueue {
     
-    @scala.inline
-    def apply[TTime](
+    inline def apply[TTime](
       dequeue: () => ScheduledItem[TTime],
       enqueue: ScheduledItem[TTime] => Unit,
       heapify: Double => Unit,
@@ -46,35 +45,25 @@ object internals {
       __obj.asInstanceOf[PriorityQueue[TTime]]
     }
     
-    @scala.inline
-    implicit class PriorityQueueMutableBuilder[Self <: PriorityQueue[?], TTime] (val x: Self & PriorityQueue[TTime]) extends AnyVal {
+    extension [Self <: PriorityQueue[?], TTime](x: Self & PriorityQueue[TTime]) {
       
-      @scala.inline
-      def setDequeue(value: () => ScheduledItem[TTime]): Self = StObject.set(x, "dequeue", js.Any.fromFunction0(value))
+      inline def setDequeue(value: () => ScheduledItem[TTime]): Self = StObject.set(x, "dequeue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnqueue(value: ScheduledItem[TTime] => Unit): Self = StObject.set(x, "enqueue", js.Any.fromFunction1(value))
+      inline def setEnqueue(value: ScheduledItem[TTime] => Unit): Self = StObject.set(x, "enqueue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHeapify(value: Double => Unit): Self = StObject.set(x, "heapify", js.Any.fromFunction1(value))
+      inline def setHeapify(value: Double => Unit): Self = StObject.set(x, "heapify", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsHigherPriority(value: (Double, Double) => Boolean): Self = StObject.set(x, "isHigherPriority", js.Any.fromFunction2(value))
+      inline def setIsHigherPriority(value: (Double, Double) => Boolean): Self = StObject.set(x, "isHigherPriority", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeek(value: () => ScheduledItem[TTime]): Self = StObject.set(x, "peek", js.Any.fromFunction0(value))
+      inline def setPeek(value: () => ScheduledItem[TTime]): Self = StObject.set(x, "peek", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPercolate(value: Double => Unit): Self = StObject.set(x, "percolate", js.Any.fromFunction1(value))
+      inline def setPercolate(value: Double => Unit): Self = StObject.set(x, "percolate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemove(value: ScheduledItem[TTime] => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+      inline def setRemove(value: ScheduledItem[TTime] => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveAt(value: Double => Unit): Self = StObject.set(x, "removeAt", js.Any.fromFunction1(value))
+      inline def setRemoveAt(value: Double => Unit): Self = StObject.set(x, "removeAt", js.Any.fromFunction1(value))
     }
   }
   
@@ -102,8 +91,7 @@ object internals {
   }
   object ScheduledItem {
     
-    @scala.inline
-    def apply[TTime](
+    inline def apply[TTime](
       action: (IScheduler, js.Any) => IDisposable,
       compareTo: ScheduledItem[TTime] => Double,
       comparer: (TTime, TTime) => Double,
@@ -119,38 +107,27 @@ object internals {
       __obj.asInstanceOf[ScheduledItem[TTime]]
     }
     
-    @scala.inline
-    implicit class ScheduledItemMutableBuilder[Self <: ScheduledItem[?], TTime] (val x: Self & ScheduledItem[TTime]) extends AnyVal {
+    extension [Self <: ScheduledItem[?], TTime](x: Self & ScheduledItem[TTime]) {
       
-      @scala.inline
-      def setAction(value: (IScheduler, js.Any) => IDisposable): Self = StObject.set(x, "action", js.Any.fromFunction2(value))
+      inline def setAction(value: (IScheduler, js.Any) => IDisposable): Self = StObject.set(x, "action", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCompareTo(value: ScheduledItem[TTime] => Double): Self = StObject.set(x, "compareTo", js.Any.fromFunction1(value))
+      inline def setCompareTo(value: ScheduledItem[TTime] => Double): Self = StObject.set(x, "compareTo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComparer(value: (TTime, TTime) => Double): Self = StObject.set(x, "comparer", js.Any.fromFunction2(value))
+      inline def setComparer(value: (TTime, TTime) => Double): Self = StObject.set(x, "comparer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDisposable(value: SingleAssignmentDisposable): Self = StObject.set(x, "disposable", value.asInstanceOf[js.Any])
+      inline def setDisposable(value: SingleAssignmentDisposable): Self = StObject.set(x, "disposable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDueTime(value: TTime): Self = StObject.set(x, "dueTime", value.asInstanceOf[js.Any])
+      inline def setDueTime(value: TTime): Self = StObject.set(x, "dueTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvoke(value: () => Unit): Self = StObject.set(x, "invoke", js.Any.fromFunction0(value))
+      inline def setInvoke(value: () => Unit): Self = StObject.set(x, "invoke", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInvokeCore(value: () => IDisposable): Self = StObject.set(x, "invokeCore", js.Any.fromFunction0(value))
+      inline def setInvokeCore(value: () => IDisposable): Self = StObject.set(x, "invokeCore", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsCancelled(value: () => Boolean): Self = StObject.set(x, "isCancelled", js.Any.fromFunction0(value))
+      inline def setIsCancelled(value: () => Boolean): Self = StObject.set(x, "isCancelled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setScheduler(value: IScheduler): Self = StObject.set(x, "scheduler", value.asInstanceOf[js.Any])
+      inline def setScheduler(value: IScheduler): Self = StObject.set(x, "scheduler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: TTime): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: TTime): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
 }

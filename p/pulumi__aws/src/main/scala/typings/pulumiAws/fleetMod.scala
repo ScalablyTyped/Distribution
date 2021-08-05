@@ -95,21 +95,16 @@ object fleetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Fleet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Fleet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Fleet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Fleet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: FleetState): Fleet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Fleet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: FleetState, opts: CustomResourceOptions): Fleet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Fleet]
+    inline def get(name: String, id: Input[ID]): Fleet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Fleet]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Fleet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Fleet]
+    inline def get(name: String, id: Input[ID], state: FleetState): Fleet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Fleet]
+    inline def get(name: String, id: Input[ID], state: FleetState, opts: CustomResourceOptions): Fleet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Fleet]
     
     /**
       * Returns true if the given object is an instance of Fleet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/fleet.Fleet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/fleet.Fleet */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/fleet.Fleet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/fleet.Fleet */ Boolean]
   }
   
   trait FleetArgs extends StObject {
@@ -166,8 +161,7 @@ object fleetMod {
   }
   object FleetArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       launchTemplateConfig: Input[typings.pulumiAws.inputMod.ec2.FleetLaunchTemplateConfig],
       targetCapacitySpecification: Input[typings.pulumiAws.inputMod.ec2.FleetTargetCapacitySpecification]
     ): FleetArgs = {
@@ -175,62 +169,43 @@ object fleetMod {
       __obj.asInstanceOf[FleetArgs]
     }
     
-    @scala.inline
-    implicit class FleetArgsMutableBuilder[Self <: FleetArgs] (val x: Self) extends AnyVal {
+    extension [Self <: FleetArgs](x: Self) {
       
-      @scala.inline
-      def setExcessCapacityTerminationPolicy(value: Input[String]): Self = StObject.set(x, "excessCapacityTerminationPolicy", value.asInstanceOf[js.Any])
+      inline def setExcessCapacityTerminationPolicy(value: Input[String]): Self = StObject.set(x, "excessCapacityTerminationPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcessCapacityTerminationPolicyUndefined: Self = StObject.set(x, "excessCapacityTerminationPolicy", js.undefined)
+      inline def setExcessCapacityTerminationPolicyUndefined: Self = StObject.set(x, "excessCapacityTerminationPolicy", js.undefined)
       
-      @scala.inline
-      def setLaunchTemplateConfig(value: Input[typings.pulumiAws.inputMod.ec2.FleetLaunchTemplateConfig]): Self = StObject.set(x, "launchTemplateConfig", value.asInstanceOf[js.Any])
+      inline def setLaunchTemplateConfig(value: Input[typings.pulumiAws.inputMod.ec2.FleetLaunchTemplateConfig]): Self = StObject.set(x, "launchTemplateConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnDemandOptions(value: Input[typings.pulumiAws.inputMod.ec2.FleetOnDemandOptions]): Self = StObject.set(x, "onDemandOptions", value.asInstanceOf[js.Any])
+      inline def setOnDemandOptions(value: Input[typings.pulumiAws.inputMod.ec2.FleetOnDemandOptions]): Self = StObject.set(x, "onDemandOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnDemandOptionsUndefined: Self = StObject.set(x, "onDemandOptions", js.undefined)
+      inline def setOnDemandOptionsUndefined: Self = StObject.set(x, "onDemandOptions", js.undefined)
       
-      @scala.inline
-      def setReplaceUnhealthyInstances(value: Input[Boolean]): Self = StObject.set(x, "replaceUnhealthyInstances", value.asInstanceOf[js.Any])
+      inline def setReplaceUnhealthyInstances(value: Input[Boolean]): Self = StObject.set(x, "replaceUnhealthyInstances", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplaceUnhealthyInstancesUndefined: Self = StObject.set(x, "replaceUnhealthyInstances", js.undefined)
+      inline def setReplaceUnhealthyInstancesUndefined: Self = StObject.set(x, "replaceUnhealthyInstances", js.undefined)
       
-      @scala.inline
-      def setSpotOptions(value: Input[typings.pulumiAws.inputMod.ec2.FleetSpotOptions]): Self = StObject.set(x, "spotOptions", value.asInstanceOf[js.Any])
+      inline def setSpotOptions(value: Input[typings.pulumiAws.inputMod.ec2.FleetSpotOptions]): Self = StObject.set(x, "spotOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpotOptionsUndefined: Self = StObject.set(x, "spotOptions", js.undefined)
+      inline def setSpotOptionsUndefined: Self = StObject.set(x, "spotOptions", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTargetCapacitySpecification(value: Input[typings.pulumiAws.inputMod.ec2.FleetTargetCapacitySpecification]): Self = StObject.set(x, "targetCapacitySpecification", value.asInstanceOf[js.Any])
+      inline def setTargetCapacitySpecification(value: Input[typings.pulumiAws.inputMod.ec2.FleetTargetCapacitySpecification]): Self = StObject.set(x, "targetCapacitySpecification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTerminateInstances(value: Input[Boolean]): Self = StObject.set(x, "terminateInstances", value.asInstanceOf[js.Any])
+      inline def setTerminateInstances(value: Input[Boolean]): Self = StObject.set(x, "terminateInstances", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTerminateInstancesUndefined: Self = StObject.set(x, "terminateInstances", js.undefined)
+      inline def setTerminateInstancesUndefined: Self = StObject.set(x, "terminateInstances", js.undefined)
       
-      @scala.inline
-      def setTerminateInstancesWithExpiration(value: Input[Boolean]): Self = StObject.set(x, "terminateInstancesWithExpiration", value.asInstanceOf[js.Any])
+      inline def setTerminateInstancesWithExpiration(value: Input[Boolean]): Self = StObject.set(x, "terminateInstancesWithExpiration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTerminateInstancesWithExpirationUndefined: Self = StObject.set(x, "terminateInstancesWithExpiration", js.undefined)
+      inline def setTerminateInstancesWithExpirationUndefined: Self = StObject.set(x, "terminateInstancesWithExpiration", js.undefined)
       
-      @scala.inline
-      def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -288,74 +263,52 @@ object fleetMod {
   }
   object FleetState {
     
-    @scala.inline
-    def apply(): FleetState = {
+    inline def apply(): FleetState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FleetState]
     }
     
-    @scala.inline
-    implicit class FleetStateMutableBuilder[Self <: FleetState] (val x: Self) extends AnyVal {
+    extension [Self <: FleetState](x: Self) {
       
-      @scala.inline
-      def setExcessCapacityTerminationPolicy(value: Input[String]): Self = StObject.set(x, "excessCapacityTerminationPolicy", value.asInstanceOf[js.Any])
+      inline def setExcessCapacityTerminationPolicy(value: Input[String]): Self = StObject.set(x, "excessCapacityTerminationPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcessCapacityTerminationPolicyUndefined: Self = StObject.set(x, "excessCapacityTerminationPolicy", js.undefined)
+      inline def setExcessCapacityTerminationPolicyUndefined: Self = StObject.set(x, "excessCapacityTerminationPolicy", js.undefined)
       
-      @scala.inline
-      def setLaunchTemplateConfig(value: Input[typings.pulumiAws.inputMod.ec2.FleetLaunchTemplateConfig]): Self = StObject.set(x, "launchTemplateConfig", value.asInstanceOf[js.Any])
+      inline def setLaunchTemplateConfig(value: Input[typings.pulumiAws.inputMod.ec2.FleetLaunchTemplateConfig]): Self = StObject.set(x, "launchTemplateConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLaunchTemplateConfigUndefined: Self = StObject.set(x, "launchTemplateConfig", js.undefined)
+      inline def setLaunchTemplateConfigUndefined: Self = StObject.set(x, "launchTemplateConfig", js.undefined)
       
-      @scala.inline
-      def setOnDemandOptions(value: Input[typings.pulumiAws.inputMod.ec2.FleetOnDemandOptions]): Self = StObject.set(x, "onDemandOptions", value.asInstanceOf[js.Any])
+      inline def setOnDemandOptions(value: Input[typings.pulumiAws.inputMod.ec2.FleetOnDemandOptions]): Self = StObject.set(x, "onDemandOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnDemandOptionsUndefined: Self = StObject.set(x, "onDemandOptions", js.undefined)
+      inline def setOnDemandOptionsUndefined: Self = StObject.set(x, "onDemandOptions", js.undefined)
       
-      @scala.inline
-      def setReplaceUnhealthyInstances(value: Input[Boolean]): Self = StObject.set(x, "replaceUnhealthyInstances", value.asInstanceOf[js.Any])
+      inline def setReplaceUnhealthyInstances(value: Input[Boolean]): Self = StObject.set(x, "replaceUnhealthyInstances", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplaceUnhealthyInstancesUndefined: Self = StObject.set(x, "replaceUnhealthyInstances", js.undefined)
+      inline def setReplaceUnhealthyInstancesUndefined: Self = StObject.set(x, "replaceUnhealthyInstances", js.undefined)
       
-      @scala.inline
-      def setSpotOptions(value: Input[typings.pulumiAws.inputMod.ec2.FleetSpotOptions]): Self = StObject.set(x, "spotOptions", value.asInstanceOf[js.Any])
+      inline def setSpotOptions(value: Input[typings.pulumiAws.inputMod.ec2.FleetSpotOptions]): Self = StObject.set(x, "spotOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpotOptionsUndefined: Self = StObject.set(x, "spotOptions", js.undefined)
+      inline def setSpotOptionsUndefined: Self = StObject.set(x, "spotOptions", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTargetCapacitySpecification(value: Input[typings.pulumiAws.inputMod.ec2.FleetTargetCapacitySpecification]): Self = StObject.set(x, "targetCapacitySpecification", value.asInstanceOf[js.Any])
+      inline def setTargetCapacitySpecification(value: Input[typings.pulumiAws.inputMod.ec2.FleetTargetCapacitySpecification]): Self = StObject.set(x, "targetCapacitySpecification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetCapacitySpecificationUndefined: Self = StObject.set(x, "targetCapacitySpecification", js.undefined)
+      inline def setTargetCapacitySpecificationUndefined: Self = StObject.set(x, "targetCapacitySpecification", js.undefined)
       
-      @scala.inline
-      def setTerminateInstances(value: Input[Boolean]): Self = StObject.set(x, "terminateInstances", value.asInstanceOf[js.Any])
+      inline def setTerminateInstances(value: Input[Boolean]): Self = StObject.set(x, "terminateInstances", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTerminateInstancesUndefined: Self = StObject.set(x, "terminateInstances", js.undefined)
+      inline def setTerminateInstancesUndefined: Self = StObject.set(x, "terminateInstances", js.undefined)
       
-      @scala.inline
-      def setTerminateInstancesWithExpiration(value: Input[Boolean]): Self = StObject.set(x, "terminateInstancesWithExpiration", value.asInstanceOf[js.Any])
+      inline def setTerminateInstancesWithExpiration(value: Input[Boolean]): Self = StObject.set(x, "terminateInstancesWithExpiration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTerminateInstancesWithExpirationUndefined: Self = StObject.set(x, "terminateInstancesWithExpiration", js.undefined)
+      inline def setTerminateInstancesWithExpirationUndefined: Self = StObject.set(x, "terminateInstancesWithExpiration", js.undefined)
       
-      @scala.inline
-      def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

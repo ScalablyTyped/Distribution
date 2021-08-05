@@ -20,17 +20,14 @@ object typesAddPermissionOutputMod {
   }
   object AddPermissionOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): AddPermissionOutput = {
+    inline def apply($metadata: ResponseMetadata): AddPermissionOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[AddPermissionOutput]
     }
     
-    @scala.inline
-    implicit class AddPermissionOutputMutableBuilder[Self <: AddPermissionOutput] (val x: Self) extends AnyVal {
+    extension [Self <: AddPermissionOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }
   }
 }

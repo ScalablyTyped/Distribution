@@ -11,19 +11,19 @@ class ISyntaxList2 protected ()
      with typings.typescriptServices.TypeScript.ISyntaxList2 {
   def this(_fileName: String, members: js.Array[typings.typescriptServices.TypeScript.AST]) = this()
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _astID: js.Any = js.native
   
   /* CompleteClass */
   var _end: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _fileName: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _postComments: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _preComments: js.Any = js.native
   
   /* CompleteClass */
@@ -59,7 +59,7 @@ class ISyntaxList2 protected ()
   /* CompleteClass */
   override def lastOrDefault(func: js.Function2[/* v */ typings.typescriptServices.TypeScript.AST, /* index */ Double, Boolean]): typings.typescriptServices.TypeScript.AST = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var members: js.Any = js.native
   
   /* CompleteClass */

@@ -18,30 +18,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MediaSessionAction extends StObject
 object MediaSessionAction {
   
-  @scala.inline
-  def nexttrack: typings.wicgMediasession.wicgMediasessionStrings.nexttrack = "nexttrack".asInstanceOf[typings.wicgMediasession.wicgMediasessionStrings.nexttrack]
+  inline def nexttrack: typings.wicgMediasession.wicgMediasessionStrings.nexttrack = "nexttrack".asInstanceOf[typings.wicgMediasession.wicgMediasessionStrings.nexttrack]
   
-  @scala.inline
-  def pause: typings.wicgMediasession.wicgMediasessionStrings.pause = "pause".asInstanceOf[typings.wicgMediasession.wicgMediasessionStrings.pause]
+  inline def pause: typings.wicgMediasession.wicgMediasessionStrings.pause = "pause".asInstanceOf[typings.wicgMediasession.wicgMediasessionStrings.pause]
   
-  @scala.inline
-  def play: typings.wicgMediasession.wicgMediasessionStrings.play = "play".asInstanceOf[typings.wicgMediasession.wicgMediasessionStrings.play]
+  inline def play: typings.wicgMediasession.wicgMediasessionStrings.play = "play".asInstanceOf[typings.wicgMediasession.wicgMediasessionStrings.play]
   
-  @scala.inline
-  def previoustrack: typings.wicgMediasession.wicgMediasessionStrings.previoustrack = "previoustrack".asInstanceOf[typings.wicgMediasession.wicgMediasessionStrings.previoustrack]
+  inline def previoustrack: typings.wicgMediasession.wicgMediasessionStrings.previoustrack = "previoustrack".asInstanceOf[typings.wicgMediasession.wicgMediasessionStrings.previoustrack]
   
-  @scala.inline
-  def seekbackward: typings.wicgMediasession.wicgMediasessionStrings.seekbackward = "seekbackward".asInstanceOf[typings.wicgMediasession.wicgMediasessionStrings.seekbackward]
+  inline def seekbackward: typings.wicgMediasession.wicgMediasessionStrings.seekbackward = "seekbackward".asInstanceOf[typings.wicgMediasession.wicgMediasessionStrings.seekbackward]
   
-  @scala.inline
-  def seekforward: typings.wicgMediasession.wicgMediasessionStrings.seekforward = "seekforward".asInstanceOf[typings.wicgMediasession.wicgMediasessionStrings.seekforward]
+  inline def seekforward: typings.wicgMediasession.wicgMediasessionStrings.seekforward = "seekforward".asInstanceOf[typings.wicgMediasession.wicgMediasessionStrings.seekforward]
   
-  @scala.inline
-  def seekto: typings.wicgMediasession.wicgMediasessionStrings.seekto = "seekto".asInstanceOf[typings.wicgMediasession.wicgMediasessionStrings.seekto]
+  inline def seekto: typings.wicgMediasession.wicgMediasessionStrings.seekto = "seekto".asInstanceOf[typings.wicgMediasession.wicgMediasessionStrings.seekto]
   
-  @scala.inline
-  def skipad: typings.wicgMediasession.wicgMediasessionStrings.skipad = "skipad".asInstanceOf[typings.wicgMediasession.wicgMediasessionStrings.skipad]
+  inline def skipad: typings.wicgMediasession.wicgMediasessionStrings.skipad = "skipad".asInstanceOf[typings.wicgMediasession.wicgMediasessionStrings.skipad]
   
-  @scala.inline
-  def stop: typings.wicgMediasession.wicgMediasessionStrings.stop = "stop".asInstanceOf[typings.wicgMediasession.wicgMediasessionStrings.stop]
+  inline def stop: typings.wicgMediasession.wicgMediasessionStrings.stop = "stop".asInstanceOf[typings.wicgMediasession.wicgMediasessionStrings.stop]
 }

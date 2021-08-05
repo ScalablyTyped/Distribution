@@ -18,28 +18,21 @@ trait ThumbnailOptions extends StObject {
 }
 object ThumbnailOptions {
   
-  @scala.inline
-  def apply(acmsession: String, guid: String, height: Double, urn: String, width: Double): ThumbnailOptions = {
+  inline def apply(acmsession: String, guid: String, height: Double, urn: String, width: Double): ThumbnailOptions = {
     val __obj = js.Dynamic.literal(acmsession = acmsession.asInstanceOf[js.Any], guid = guid.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], urn = urn.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThumbnailOptions]
   }
   
-  @scala.inline
-  implicit class ThumbnailOptionsMutableBuilder[Self <: ThumbnailOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ThumbnailOptions](x: Self) {
     
-    @scala.inline
-    def setAcmsession(value: String): Self = StObject.set(x, "acmsession", value.asInstanceOf[js.Any])
+    inline def setAcmsession(value: String): Self = StObject.set(x, "acmsession", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
+    inline def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrn(value: String): Self = StObject.set(x, "urn", value.asInstanceOf[js.Any])
+    inline def setUrn(value: String): Self = StObject.set(x, "urn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

@@ -11,8 +11,7 @@ trait StreamWebSocketControl
      with IStreamWebSocketControl
 object StreamWebSocketControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     noDelay: Boolean,
     outboundBufferSizeInBytes: Double,
     proxyCredential: PasswordCredential,

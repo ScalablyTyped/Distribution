@@ -15,25 +15,19 @@ trait BuildId extends StObject {
 }
 object BuildId {
   
-  @scala.inline
-  def apply(buildId: String, modern: Boolean, rewrites: js.Array[Rewrite]): BuildId = {
+  inline def apply(buildId: String, modern: Boolean, rewrites: js.Array[Rewrite]): BuildId = {
     val __obj = js.Dynamic.literal(buildId = buildId.asInstanceOf[js.Any], modern = modern.asInstanceOf[js.Any], rewrites = rewrites.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildId]
   }
   
-  @scala.inline
-  implicit class BuildIdMutableBuilder[Self <: BuildId] (val x: Self) extends AnyVal {
+  extension [Self <: BuildId](x: Self) {
     
-    @scala.inline
-    def setBuildId(value: String): Self = StObject.set(x, "buildId", value.asInstanceOf[js.Any])
+    inline def setBuildId(value: String): Self = StObject.set(x, "buildId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModern(value: Boolean): Self = StObject.set(x, "modern", value.asInstanceOf[js.Any])
+    inline def setModern(value: Boolean): Self = StObject.set(x, "modern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRewrites(value: js.Array[Rewrite]): Self = StObject.set(x, "rewrites", value.asInstanceOf[js.Any])
+    inline def setRewrites(value: js.Array[Rewrite]): Self = StObject.set(x, "rewrites", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRewritesVarargs(value: Rewrite*): Self = StObject.set(x, "rewrites", js.Array(value :_*))
+    inline def setRewritesVarargs(value: Rewrite*): Self = StObject.set(x, "rewrites", js.Array(value :_*))
   }
 }

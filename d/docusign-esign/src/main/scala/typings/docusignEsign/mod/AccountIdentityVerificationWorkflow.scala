@@ -36,52 +36,37 @@ trait AccountIdentityVerificationWorkflow extends StObject {
 }
 object AccountIdentityVerificationWorkflow {
   
-  @scala.inline
-  def apply(): AccountIdentityVerificationWorkflow = {
+  inline def apply(): AccountIdentityVerificationWorkflow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountIdentityVerificationWorkflow]
   }
   
-  @scala.inline
-  implicit class AccountIdentityVerificationWorkflowMutableBuilder[Self <: AccountIdentityVerificationWorkflow] (val x: Self) extends AnyVal {
+  extension [Self <: AccountIdentityVerificationWorkflow](x: Self) {
     
-    @scala.inline
-    def setDefaultDescription(value: String): Self = StObject.set(x, "defaultDescription", value.asInstanceOf[js.Any])
+    inline def setDefaultDescription(value: String): Self = StObject.set(x, "defaultDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultDescriptionUndefined: Self = StObject.set(x, "defaultDescription", js.undefined)
+    inline def setDefaultDescriptionUndefined: Self = StObject.set(x, "defaultDescription", js.undefined)
     
-    @scala.inline
-    def setDefaultName(value: String): Self = StObject.set(x, "defaultName", value.asInstanceOf[js.Any])
+    inline def setDefaultName(value: String): Self = StObject.set(x, "defaultName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultNameUndefined: Self = StObject.set(x, "defaultName", js.undefined)
+    inline def setDefaultNameUndefined: Self = StObject.set(x, "defaultName", js.undefined)
     
-    @scala.inline
-    def setInputOptions(value: js.Array[AccountIdentityInputOption]): Self = StObject.set(x, "inputOptions", value.asInstanceOf[js.Any])
+    inline def setInputOptions(value: js.Array[AccountIdentityInputOption]): Self = StObject.set(x, "inputOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputOptionsUndefined: Self = StObject.set(x, "inputOptions", js.undefined)
+    inline def setInputOptionsUndefined: Self = StObject.set(x, "inputOptions", js.undefined)
     
-    @scala.inline
-    def setInputOptionsVarargs(value: AccountIdentityInputOption*): Self = StObject.set(x, "inputOptions", js.Array(value :_*))
+    inline def setInputOptionsVarargs(value: AccountIdentityInputOption*): Self = StObject.set(x, "inputOptions", js.Array(value :_*))
     
-    @scala.inline
-    def setSignatureProvider(value: AccountSignatureProvider): Self = StObject.set(x, "signatureProvider", value.asInstanceOf[js.Any])
+    inline def setSignatureProvider(value: AccountSignatureProvider): Self = StObject.set(x, "signatureProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureProviderUndefined: Self = StObject.set(x, "signatureProvider", js.undefined)
+    inline def setSignatureProviderUndefined: Self = StObject.set(x, "signatureProvider", js.undefined)
     
-    @scala.inline
-    def setWorkflowId(value: String): Self = StObject.set(x, "workflowId", value.asInstanceOf[js.Any])
+    inline def setWorkflowId(value: String): Self = StObject.set(x, "workflowId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkflowIdUndefined: Self = StObject.set(x, "workflowId", js.undefined)
+    inline def setWorkflowIdUndefined: Self = StObject.set(x, "workflowId", js.undefined)
     
-    @scala.inline
-    def setWorkflowResourceKey(value: String): Self = StObject.set(x, "workflowResourceKey", value.asInstanceOf[js.Any])
+    inline def setWorkflowResourceKey(value: String): Self = StObject.set(x, "workflowResourceKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkflowResourceKeyUndefined: Self = StObject.set(x, "workflowResourceKey", js.undefined)
+    inline def setWorkflowResourceKeyUndefined: Self = StObject.set(x, "workflowResourceKey", js.undefined)
   }
 }

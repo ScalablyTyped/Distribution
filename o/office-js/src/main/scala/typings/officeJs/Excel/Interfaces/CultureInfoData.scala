@@ -33,31 +33,23 @@ trait CultureInfoData extends StObject {
 }
 object CultureInfoData {
   
-  @scala.inline
-  def apply(): CultureInfoData = {
+  inline def apply(): CultureInfoData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CultureInfoData]
   }
   
-  @scala.inline
-  implicit class CultureInfoDataMutableBuilder[Self <: CultureInfoData] (val x: Self) extends AnyVal {
+  extension [Self <: CultureInfoData](x: Self) {
     
-    @scala.inline
-    def setDatetimeFormat(value: DatetimeFormatInfoData): Self = StObject.set(x, "datetimeFormat", value.asInstanceOf[js.Any])
+    inline def setDatetimeFormat(value: DatetimeFormatInfoData): Self = StObject.set(x, "datetimeFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatetimeFormatUndefined: Self = StObject.set(x, "datetimeFormat", js.undefined)
+    inline def setDatetimeFormatUndefined: Self = StObject.set(x, "datetimeFormat", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNumberFormat(value: NumberFormatInfoData): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
+    inline def setNumberFormat(value: NumberFormatInfoData): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
+    inline def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
   }
 }

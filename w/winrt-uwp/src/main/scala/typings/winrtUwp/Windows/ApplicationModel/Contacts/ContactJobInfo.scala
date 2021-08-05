@@ -33,8 +33,7 @@ trait ContactJobInfo extends StObject {
 }
 object ContactJobInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     companyAddress: String,
     companyName: String,
     companyYomiName: String,
@@ -48,31 +47,22 @@ object ContactJobInfo {
     __obj.asInstanceOf[ContactJobInfo]
   }
   
-  @scala.inline
-  implicit class ContactJobInfoMutableBuilder[Self <: ContactJobInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ContactJobInfo](x: Self) {
     
-    @scala.inline
-    def setCompanyAddress(value: String): Self = StObject.set(x, "companyAddress", value.asInstanceOf[js.Any])
+    inline def setCompanyAddress(value: String): Self = StObject.set(x, "companyAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompanyName(value: String): Self = StObject.set(x, "companyName", value.asInstanceOf[js.Any])
+    inline def setCompanyName(value: String): Self = StObject.set(x, "companyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompanyYomiName(value: String): Self = StObject.set(x, "companyYomiName", value.asInstanceOf[js.Any])
+    inline def setCompanyYomiName(value: String): Self = StObject.set(x, "companyYomiName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepartment(value: String): Self = StObject.set(x, "department", value.asInstanceOf[js.Any])
+    inline def setDepartment(value: String): Self = StObject.set(x, "department", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManager(value: String): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
+    inline def setManager(value: String): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffice(value: String): Self = StObject.set(x, "office", value.asInstanceOf[js.Any])
+    inline def setOffice(value: String): Self = StObject.set(x, "office", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

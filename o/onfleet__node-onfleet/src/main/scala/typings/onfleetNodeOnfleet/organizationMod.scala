@@ -27,29 +27,22 @@ object organizationMod {
   }
   object Delegatee {
     
-    @scala.inline
-    def apply(country: String, email: String, id: String, name: String, timezone: String): Delegatee = {
+    inline def apply(country: String, email: String, id: String, name: String, timezone: String): Delegatee = {
       val __obj = js.Dynamic.literal(country = country.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], timezone = timezone.asInstanceOf[js.Any])
       __obj.asInstanceOf[Delegatee]
     }
     
-    @scala.inline
-    implicit class DelegateeMutableBuilder[Self <: Delegatee] (val x: Self) extends AnyVal {
+    extension [Self <: Delegatee](x: Self) {
       
-      @scala.inline
-      def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+      inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
+      inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     }
   }
   
@@ -75,8 +68,7 @@ object organizationMod {
   }
   object OnfleetOrganization {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       country: String,
       delegatees: js.Array[String],
       email: String,
@@ -91,38 +83,27 @@ object organizationMod {
       __obj.asInstanceOf[OnfleetOrganization]
     }
     
-    @scala.inline
-    implicit class OnfleetOrganizationMutableBuilder[Self <: OnfleetOrganization] (val x: Self) extends AnyVal {
+    extension [Self <: OnfleetOrganization](x: Self) {
       
-      @scala.inline
-      def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+      inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelegatees(value: js.Array[String]): Self = StObject.set(x, "delegatees", value.asInstanceOf[js.Any])
+      inline def setDelegatees(value: js.Array[String]): Self = StObject.set(x, "delegatees", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelegateesVarargs(value: String*): Self = StObject.set(x, "delegatees", js.Array(value :_*))
+      inline def setDelegateesVarargs(value: String*): Self = StObject.set(x, "delegatees", js.Array(value :_*))
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeCreated(value: Double): Self = StObject.set(x, "timeCreated", value.asInstanceOf[js.Any])
+      inline def setTimeCreated(value: Double): Self = StObject.set(x, "timeCreated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeLastModified(value: Double): Self = StObject.set(x, "timeLastModified", value.asInstanceOf[js.Any])
+      inline def setTimeLastModified(value: Double): Self = StObject.set(x, "timeLastModified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
+      inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     }
   }
   

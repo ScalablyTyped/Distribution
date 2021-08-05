@@ -13,23 +13,19 @@ trait Missing
 }
 object Missing {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     missing: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object) | js.Array[js.Any]
   ): Missing = {
     val __obj = js.Dynamic.literal(missing = missing.asInstanceOf[js.Any])
     __obj.asInstanceOf[Missing]
   }
   
-  @scala.inline
-  implicit class MissingMutableBuilder[Self <: Missing] (val x: Self) extends AnyVal {
+  extension [Self <: Missing](x: Self) {
     
-    @scala.inline
-    def setMissing(
+    inline def setMissing(
       value: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object) | js.Array[js.Any]
     ): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMissingVarargs(value: js.Any*): Self = StObject.set(x, "missing", js.Array(value :_*))
+    inline def setMissingVarargs(value: js.Any*): Self = StObject.set(x, "missing", js.Array(value :_*))
   }
 }

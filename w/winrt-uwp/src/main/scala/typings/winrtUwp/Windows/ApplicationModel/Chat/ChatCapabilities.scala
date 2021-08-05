@@ -24,8 +24,7 @@ trait ChatCapabilities extends StObject {
 }
 object ChatCapabilities {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isChatCapable: Boolean,
     isFileTransferCapable: Boolean,
     isGeoLocationPushCapable: Boolean,
@@ -36,22 +35,16 @@ object ChatCapabilities {
     __obj.asInstanceOf[ChatCapabilities]
   }
   
-  @scala.inline
-  implicit class ChatCapabilitiesMutableBuilder[Self <: ChatCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: ChatCapabilities](x: Self) {
     
-    @scala.inline
-    def setIsChatCapable(value: Boolean): Self = StObject.set(x, "isChatCapable", value.asInstanceOf[js.Any])
+    inline def setIsChatCapable(value: Boolean): Self = StObject.set(x, "isChatCapable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFileTransferCapable(value: Boolean): Self = StObject.set(x, "isFileTransferCapable", value.asInstanceOf[js.Any])
+    inline def setIsFileTransferCapable(value: Boolean): Self = StObject.set(x, "isFileTransferCapable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsGeoLocationPushCapable(value: Boolean): Self = StObject.set(x, "isGeoLocationPushCapable", value.asInstanceOf[js.Any])
+    inline def setIsGeoLocationPushCapable(value: Boolean): Self = StObject.set(x, "isGeoLocationPushCapable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsIntegratedMessagingCapable(value: Boolean): Self = StObject.set(x, "isIntegratedMessagingCapable", value.asInstanceOf[js.Any])
+    inline def setIsIntegratedMessagingCapable(value: Boolean): Self = StObject.set(x, "isIntegratedMessagingCapable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsOnline(value: Boolean): Self = StObject.set(x, "isOnline", value.asInstanceOf[js.Any])
+    inline def setIsOnline(value: Boolean): Self = StObject.set(x, "isOnline", value.asInstanceOf[js.Any])
   }
 }

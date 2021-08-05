@@ -18,25 +18,19 @@ trait NamespaceProperties extends StObject {
 }
 object NamespaceProperties {
   
-  @scala.inline
-  def apply(): NamespaceProperties = {
+  inline def apply(): NamespaceProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NamespaceProperties]
   }
   
-  @scala.inline
-  implicit class NamespacePropertiesMutableBuilder[Self <: NamespaceProperties] (val x: Self) extends AnyVal {
+  extension [Self <: NamespaceProperties](x: Self) {
     
-    @scala.inline
-    def setDnsProperties(value: DnsProperties): Self = StObject.set(x, "DnsProperties", value.asInstanceOf[js.Any])
+    inline def setDnsProperties(value: DnsProperties): Self = StObject.set(x, "DnsProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDnsPropertiesUndefined: Self = StObject.set(x, "DnsProperties", js.undefined)
+    inline def setDnsPropertiesUndefined: Self = StObject.set(x, "DnsProperties", js.undefined)
     
-    @scala.inline
-    def setHttpProperties(value: HttpProperties): Self = StObject.set(x, "HttpProperties", value.asInstanceOf[js.Any])
+    inline def setHttpProperties(value: HttpProperties): Self = StObject.set(x, "HttpProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpPropertiesUndefined: Self = StObject.set(x, "HttpProperties", js.undefined)
+    inline def setHttpPropertiesUndefined: Self = StObject.set(x, "HttpProperties", js.undefined)
   }
 }

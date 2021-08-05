@@ -29,16 +29,13 @@ trait XDocumentDataSource extends StObject {
 }
 object XDocumentDataSource {
   
-  @scala.inline
-  def apply(DatabaseDocument: XOfficeDatabaseDocument): XDocumentDataSource = {
+  inline def apply(DatabaseDocument: XOfficeDatabaseDocument): XDocumentDataSource = {
     val __obj = js.Dynamic.literal(DatabaseDocument = DatabaseDocument.asInstanceOf[js.Any])
     __obj.asInstanceOf[XDocumentDataSource]
   }
   
-  @scala.inline
-  implicit class XDocumentDataSourceMutableBuilder[Self <: XDocumentDataSource] (val x: Self) extends AnyVal {
+  extension [Self <: XDocumentDataSource](x: Self) {
     
-    @scala.inline
-    def setDatabaseDocument(value: XOfficeDatabaseDocument): Self = StObject.set(x, "DatabaseDocument", value.asInstanceOf[js.Any])
+    inline def setDatabaseDocument(value: XOfficeDatabaseDocument): Self = StObject.set(x, "DatabaseDocument", value.asInstanceOf[js.Any])
   }
 }

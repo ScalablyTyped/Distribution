@@ -59,7 +59,7 @@ object handshakeIkMod {
       handshake: IK
     ) = this()
     
-    var connection: js.Any = js.native
+    /* private */ var connection: js.Any = js.native
     
     /* CompleteClass */
     override def decrypt(ciphertext: bytes, session: NoiseSession): Plaintext = js.native
@@ -68,17 +68,17 @@ object handshakeIkMod {
     override def encrypt(plaintext: bytes, session: NoiseSession): bytes = js.native
     def encrypt(plaintext: Buffer, session: NoiseSession): Buffer = js.native
     
-    var getCS: js.Any = js.native
+    /* private */ var getCS: js.Any = js.native
     
     def getLocalEphemeralKeys(): KeyPair = js.native
     
-    var ik: js.Any = js.native
+    /* private */ var ik: js.Any = js.native
     
     var isInitiator: Boolean = js.native
     
-    var payload: js.Any = js.native
+    /* private */ var payload: js.Any = js.native
     
-    var prologue: js.Any = js.native
+    /* private */ var prologue: js.Any = js.native
     
     /* CompleteClass */
     var remoteEarlyData: Buffer = js.native
@@ -89,12 +89,12 @@ object handshakeIkMod {
     /* CompleteClass */
     var session: NoiseSession = js.native
     
-    var setRemoteEarlyData: js.Any = js.native
+    /* private */ var setRemoteEarlyData: js.Any = js.native
     
     def stage0(): js.Promise[Unit] = js.native
     
     def stage1(): js.Promise[Unit] = js.native
     
-    var staticKeypair: js.Any = js.native
+    /* private */ var staticKeypair: js.Any = js.native
   }
 }

@@ -50,41 +50,30 @@ object certificates {
     }
     object CertificateSigningRequest {
       
-      @scala.inline
-      def apply(spec: Input[CertificateSigningRequestSpec]): CertificateSigningRequest = {
+      inline def apply(spec: Input[CertificateSigningRequestSpec]): CertificateSigningRequest = {
         val __obj = js.Dynamic.literal(spec = spec.asInstanceOf[js.Any])
         __obj.asInstanceOf[CertificateSigningRequest]
       }
       
-      @scala.inline
-      implicit class CertificateSigningRequestMutableBuilder[Self <: CertificateSigningRequest] (val x: Self) extends AnyVal {
+      extension [Self <: CertificateSigningRequest](x: Self) {
         
-        @scala.inline
-        def setApiVersion(value: Input[certificatesDotk8sDotioSlashv1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+        inline def setApiVersion(value: Input[certificatesDotk8sDotioSlashv1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+        inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
         
-        @scala.inline
-        def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.CertificateSigningRequest]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.CertificateSigningRequest]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+        inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
         
-        @scala.inline
-        def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+        inline def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+        inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
         
-        @scala.inline
-        def setSpec(value: Input[CertificateSigningRequestSpec]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+        inline def setSpec(value: Input[CertificateSigningRequestSpec]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStatus(value: Input[CertificateSigningRequestStatus]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+        inline def setStatus(value: Input[CertificateSigningRequestStatus]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+        inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       }
     }
     
@@ -135,45 +124,33 @@ object certificates {
     }
     object CertificateSigningRequestCondition {
       
-      @scala.inline
-      def apply(status: Input[String], `type`: Input[String]): CertificateSigningRequestCondition = {
+      inline def apply(status: Input[String], `type`: Input[String]): CertificateSigningRequestCondition = {
         val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[CertificateSigningRequestCondition]
       }
       
-      @scala.inline
-      implicit class CertificateSigningRequestConditionMutableBuilder[Self <: CertificateSigningRequestCondition] (val x: Self) extends AnyVal {
+      extension [Self <: CertificateSigningRequestCondition](x: Self) {
         
-        @scala.inline
-        def setLastTransitionTime(value: Input[String]): Self = StObject.set(x, "lastTransitionTime", value.asInstanceOf[js.Any])
+        inline def setLastTransitionTime(value: Input[String]): Self = StObject.set(x, "lastTransitionTime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLastTransitionTimeUndefined: Self = StObject.set(x, "lastTransitionTime", js.undefined)
+        inline def setLastTransitionTimeUndefined: Self = StObject.set(x, "lastTransitionTime", js.undefined)
         
-        @scala.inline
-        def setLastUpdateTime(value: Input[String]): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
+        inline def setLastUpdateTime(value: Input[String]): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLastUpdateTimeUndefined: Self = StObject.set(x, "lastUpdateTime", js.undefined)
+        inline def setLastUpdateTimeUndefined: Self = StObject.set(x, "lastUpdateTime", js.undefined)
         
-        @scala.inline
-        def setMessage(value: Input[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+        inline def setMessage(value: Input[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+        inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
         
-        @scala.inline
-        def setReason(value: Input[String]): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+        inline def setReason(value: Input[String]): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+        inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
         
-        @scala.inline
-        def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+        inline def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
@@ -252,56 +229,40 @@ object certificates {
     }
     object CertificateSigningRequestSpec {
       
-      @scala.inline
-      def apply(request: Input[String], signerName: Input[String]): CertificateSigningRequestSpec = {
+      inline def apply(request: Input[String], signerName: Input[String]): CertificateSigningRequestSpec = {
         val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], signerName = signerName.asInstanceOf[js.Any])
         __obj.asInstanceOf[CertificateSigningRequestSpec]
       }
       
-      @scala.inline
-      implicit class CertificateSigningRequestSpecMutableBuilder[Self <: CertificateSigningRequestSpec] (val x: Self) extends AnyVal {
+      extension [Self <: CertificateSigningRequestSpec](x: Self) {
         
-        @scala.inline
-        def setExtra(value: Input[StringDictionary[Input[js.Array[Input[String]]]]]): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+        inline def setExtra(value: Input[StringDictionary[Input[js.Array[Input[String]]]]]): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
+        inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
         
-        @scala.inline
-        def setGroups(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+        inline def setGroups(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
+        inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
         
-        @scala.inline
-        def setGroupsVarargs(value: Input[String]*): Self = StObject.set(x, "groups", js.Array(value :_*))
+        inline def setGroupsVarargs(value: Input[String]*): Self = StObject.set(x, "groups", js.Array(value :_*))
         
-        @scala.inline
-        def setRequest(value: Input[String]): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+        inline def setRequest(value: Input[String]): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSignerName(value: Input[String]): Self = StObject.set(x, "signerName", value.asInstanceOf[js.Any])
+        inline def setSignerName(value: Input[String]): Self = StObject.set(x, "signerName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUid(value: Input[String]): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+        inline def setUid(value: Input[String]): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
+        inline def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
         
-        @scala.inline
-        def setUsages(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "usages", value.asInstanceOf[js.Any])
+        inline def setUsages(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "usages", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUsagesUndefined: Self = StObject.set(x, "usages", js.undefined)
+        inline def setUsagesUndefined: Self = StObject.set(x, "usages", js.undefined)
         
-        @scala.inline
-        def setUsagesVarargs(value: Input[String]*): Self = StObject.set(x, "usages", js.Array(value :_*))
+        inline def setUsagesVarargs(value: Input[String]*): Self = StObject.set(x, "usages", js.Array(value :_*))
         
-        @scala.inline
-        def setUsername(value: Input[String]): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+        inline def setUsername(value: Input[String]): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+        inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
       }
     }
     
@@ -343,29 +304,22 @@ object certificates {
     }
     object CertificateSigningRequestStatus {
       
-      @scala.inline
-      def apply(): CertificateSigningRequestStatus = {
+      inline def apply(): CertificateSigningRequestStatus = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CertificateSigningRequestStatus]
       }
       
-      @scala.inline
-      implicit class CertificateSigningRequestStatusMutableBuilder[Self <: CertificateSigningRequestStatus] (val x: Self) extends AnyVal {
+      extension [Self <: CertificateSigningRequestStatus](x: Self) {
         
-        @scala.inline
-        def setCertificate(value: Input[String]): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+        inline def setCertificate(value: Input[String]): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
+        inline def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
         
-        @scala.inline
-        def setConditions(value: Input[js.Array[Input[CertificateSigningRequestCondition]]]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+        inline def setConditions(value: Input[js.Array[Input[CertificateSigningRequestCondition]]]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
+        inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
         
-        @scala.inline
-        def setConditionsVarargs(value: Input[CertificateSigningRequestCondition]*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+        inline def setConditionsVarargs(value: Input[CertificateSigningRequestCondition]*): Self = StObject.set(x, "conditions", js.Array(value :_*))
       }
     }
   }
@@ -403,44 +357,32 @@ object certificates {
     }
     object CertificateSigningRequest {
       
-      @scala.inline
-      def apply(): CertificateSigningRequest = {
+      inline def apply(): CertificateSigningRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CertificateSigningRequest]
       }
       
-      @scala.inline
-      implicit class CertificateSigningRequestMutableBuilder[Self <: CertificateSigningRequest] (val x: Self) extends AnyVal {
+      extension [Self <: CertificateSigningRequest](x: Self) {
         
-        @scala.inline
-        def setApiVersion(value: Input[certificatesDotk8sDotioSlashv1beta1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+        inline def setApiVersion(value: Input[certificatesDotk8sDotioSlashv1beta1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+        inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
         
-        @scala.inline
-        def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.CertificateSigningRequest]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.CertificateSigningRequest]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+        inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
         
-        @scala.inline
-        def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+        inline def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+        inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
         
-        @scala.inline
-        def setSpec(value: Input[CertificateSigningRequestSpec]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+        inline def setSpec(value: Input[CertificateSigningRequestSpec]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
+        inline def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
         
-        @scala.inline
-        def setStatus(value: Input[CertificateSigningRequestStatus]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+        inline def setStatus(value: Input[CertificateSigningRequestStatus]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+        inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       }
     }
     
@@ -478,48 +420,35 @@ object certificates {
     }
     object CertificateSigningRequestCondition {
       
-      @scala.inline
-      def apply(`type`: Input[String]): CertificateSigningRequestCondition = {
+      inline def apply(`type`: Input[String]): CertificateSigningRequestCondition = {
         val __obj = js.Dynamic.literal()
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[CertificateSigningRequestCondition]
       }
       
-      @scala.inline
-      implicit class CertificateSigningRequestConditionMutableBuilder[Self <: CertificateSigningRequestCondition] (val x: Self) extends AnyVal {
+      extension [Self <: CertificateSigningRequestCondition](x: Self) {
         
-        @scala.inline
-        def setLastTransitionTime(value: Input[String]): Self = StObject.set(x, "lastTransitionTime", value.asInstanceOf[js.Any])
+        inline def setLastTransitionTime(value: Input[String]): Self = StObject.set(x, "lastTransitionTime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLastTransitionTimeUndefined: Self = StObject.set(x, "lastTransitionTime", js.undefined)
+        inline def setLastTransitionTimeUndefined: Self = StObject.set(x, "lastTransitionTime", js.undefined)
         
-        @scala.inline
-        def setLastUpdateTime(value: Input[String]): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
+        inline def setLastUpdateTime(value: Input[String]): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLastUpdateTimeUndefined: Self = StObject.set(x, "lastUpdateTime", js.undefined)
+        inline def setLastUpdateTimeUndefined: Self = StObject.set(x, "lastUpdateTime", js.undefined)
         
-        @scala.inline
-        def setMessage(value: Input[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+        inline def setMessage(value: Input[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+        inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
         
-        @scala.inline
-        def setReason(value: Input[String]): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+        inline def setReason(value: Input[String]): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+        inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
         
-        @scala.inline
-        def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+        inline def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+        inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
         
-        @scala.inline
-        def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
@@ -596,59 +525,42 @@ object certificates {
     }
     object CertificateSigningRequestSpec {
       
-      @scala.inline
-      def apply(request: Input[String]): CertificateSigningRequestSpec = {
+      inline def apply(request: Input[String]): CertificateSigningRequestSpec = {
         val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
         __obj.asInstanceOf[CertificateSigningRequestSpec]
       }
       
-      @scala.inline
-      implicit class CertificateSigningRequestSpecMutableBuilder[Self <: CertificateSigningRequestSpec] (val x: Self) extends AnyVal {
+      extension [Self <: CertificateSigningRequestSpec](x: Self) {
         
-        @scala.inline
-        def setExtra(value: Input[StringDictionary[Input[js.Array[Input[String]]]]]): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+        inline def setExtra(value: Input[StringDictionary[Input[js.Array[Input[String]]]]]): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
+        inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
         
-        @scala.inline
-        def setGroups(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+        inline def setGroups(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
+        inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
         
-        @scala.inline
-        def setGroupsVarargs(value: Input[String]*): Self = StObject.set(x, "groups", js.Array(value :_*))
+        inline def setGroupsVarargs(value: Input[String]*): Self = StObject.set(x, "groups", js.Array(value :_*))
         
-        @scala.inline
-        def setRequest(value: Input[String]): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+        inline def setRequest(value: Input[String]): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSignerName(value: Input[String]): Self = StObject.set(x, "signerName", value.asInstanceOf[js.Any])
+        inline def setSignerName(value: Input[String]): Self = StObject.set(x, "signerName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSignerNameUndefined: Self = StObject.set(x, "signerName", js.undefined)
+        inline def setSignerNameUndefined: Self = StObject.set(x, "signerName", js.undefined)
         
-        @scala.inline
-        def setUid(value: Input[String]): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+        inline def setUid(value: Input[String]): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
+        inline def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
         
-        @scala.inline
-        def setUsages(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "usages", value.asInstanceOf[js.Any])
+        inline def setUsages(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "usages", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUsagesUndefined: Self = StObject.set(x, "usages", js.undefined)
+        inline def setUsagesUndefined: Self = StObject.set(x, "usages", js.undefined)
         
-        @scala.inline
-        def setUsagesVarargs(value: Input[String]*): Self = StObject.set(x, "usages", js.Array(value :_*))
+        inline def setUsagesVarargs(value: Input[String]*): Self = StObject.set(x, "usages", js.Array(value :_*))
         
-        @scala.inline
-        def setUsername(value: Input[String]): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+        inline def setUsername(value: Input[String]): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+        inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
       }
     }
     
@@ -666,29 +578,22 @@ object certificates {
     }
     object CertificateSigningRequestStatus {
       
-      @scala.inline
-      def apply(): CertificateSigningRequestStatus = {
+      inline def apply(): CertificateSigningRequestStatus = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CertificateSigningRequestStatus]
       }
       
-      @scala.inline
-      implicit class CertificateSigningRequestStatusMutableBuilder[Self <: CertificateSigningRequestStatus] (val x: Self) extends AnyVal {
+      extension [Self <: CertificateSigningRequestStatus](x: Self) {
         
-        @scala.inline
-        def setCertificate(value: Input[String]): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+        inline def setCertificate(value: Input[String]): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
+        inline def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
         
-        @scala.inline
-        def setConditions(value: Input[js.Array[Input[CertificateSigningRequestCondition]]]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+        inline def setConditions(value: Input[js.Array[Input[CertificateSigningRequestCondition]]]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
+        inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
         
-        @scala.inline
-        def setConditionsVarargs(value: Input[CertificateSigningRequestCondition]*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+        inline def setConditionsVarargs(value: Input[CertificateSigningRequestCondition]*): Self = StObject.set(x, "conditions", js.Array(value :_*))
       }
     }
   }

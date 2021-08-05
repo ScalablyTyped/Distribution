@@ -15,17 +15,14 @@ object anon {
   }
   object RelativePaths {
     
-    @scala.inline
-    def apply(relativePaths: Boolean): RelativePaths = {
+    inline def apply(relativePaths: Boolean): RelativePaths = {
       val __obj = js.Dynamic.literal(relativePaths = relativePaths.asInstanceOf[js.Any])
       __obj.asInstanceOf[RelativePaths]
     }
     
-    @scala.inline
-    implicit class RelativePathsMutableBuilder[Self <: RelativePaths] (val x: Self) extends AnyVal {
+    extension [Self <: RelativePaths](x: Self) {
       
-      @scala.inline
-      def setRelativePaths(value: Boolean): Self = StObject.set(x, "relativePaths", value.asInstanceOf[js.Any])
+      inline def setRelativePaths(value: Boolean): Self = StObject.set(x, "relativePaths", value.asInstanceOf[js.Any])
     }
   }
   
@@ -39,32 +36,24 @@ object anon {
   }
   object RootDirectory {
     
-    @scala.inline
-    def apply(): RootDirectory = {
+    inline def apply(): RootDirectory = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RootDirectory]
     }
     
-    @scala.inline
-    implicit class RootDirectoryMutableBuilder[Self <: RootDirectory] (val x: Self) extends AnyVal {
+    extension [Self <: RootDirectory](x: Self) {
       
-      @scala.inline
-      def setRootDirectory(value: String): Self = StObject.set(x, "rootDirectory", value.asInstanceOf[js.Any])
+      inline def setRootDirectory(value: String): Self = StObject.set(x, "rootDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootDirectoryUndefined: Self = StObject.set(x, "rootDirectory", js.undefined)
+      inline def setRootDirectoryUndefined: Self = StObject.set(x, "rootDirectory", js.undefined)
       
-      @scala.inline
-      def setShouldKeepModuleTest(value: (/* module */ Module, /* isDevDep */ Boolean) => Boolean): Self = StObject.set(x, "shouldKeepModuleTest", js.Any.fromFunction2(value))
+      inline def setShouldKeepModuleTest(value: (/* module */ Module, /* isDevDep */ Boolean) => Boolean): Self = StObject.set(x, "shouldKeepModuleTest", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setShouldKeepModuleTestUndefined: Self = StObject.set(x, "shouldKeepModuleTest", js.undefined)
+      inline def setShouldKeepModuleTestUndefined: Self = StObject.set(x, "shouldKeepModuleTest", js.undefined)
       
-      @scala.inline
-      def setWalker(value: Walker): Self = StObject.set(x, "walker", value.asInstanceOf[js.Any])
+      inline def setWalker(value: Walker): Self = StObject.set(x, "walker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWalkerUndefined: Self = StObject.set(x, "walker", js.undefined)
+      inline def setWalkerUndefined: Self = StObject.set(x, "walker", js.undefined)
     }
   }
 }

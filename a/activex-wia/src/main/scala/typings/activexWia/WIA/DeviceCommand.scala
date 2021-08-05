@@ -16,31 +16,25 @@ trait DeviceCommand extends StObject {
   /** Returns the command Name */
   val Name: String
   
-  @JSName("WIA.DeviceCommand_typekey")
+  /* private */ @JSName("WIA.DeviceCommand_typekey")
   var WIADotDeviceCommand_typekey: DeviceCommand
 }
 object DeviceCommand {
   
-  @scala.inline
-  def apply(CommandID: String, Description: String, Name: String, WIADotDeviceCommand_typekey: DeviceCommand): DeviceCommand = {
+  inline def apply(CommandID: String, Description: String, Name: String, WIADotDeviceCommand_typekey: DeviceCommand): DeviceCommand = {
     val __obj = js.Dynamic.literal(CommandID = CommandID.asInstanceOf[js.Any], Description = Description.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.updateDynamic("WIA.DeviceCommand_typekey")(WIADotDeviceCommand_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceCommand]
   }
   
-  @scala.inline
-  implicit class DeviceCommandMutableBuilder[Self <: DeviceCommand] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceCommand](x: Self) {
     
-    @scala.inline
-    def setCommandID(value: String): Self = StObject.set(x, "CommandID", value.asInstanceOf[js.Any])
+    inline def setCommandID(value: String): Self = StObject.set(x, "CommandID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWIADotDeviceCommand_typekey(value: DeviceCommand): Self = StObject.set(x, "WIA.DeviceCommand_typekey", value.asInstanceOf[js.Any])
+    inline def setWIADotDeviceCommand_typekey(value: DeviceCommand): Self = StObject.set(x, "WIA.DeviceCommand_typekey", value.asInstanceOf[js.Any])
   }
 }

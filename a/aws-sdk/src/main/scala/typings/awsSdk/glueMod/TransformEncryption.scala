@@ -18,25 +18,19 @@ trait TransformEncryption extends StObject {
 }
 object TransformEncryption {
   
-  @scala.inline
-  def apply(): TransformEncryption = {
+  inline def apply(): TransformEncryption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TransformEncryption]
   }
   
-  @scala.inline
-  implicit class TransformEncryptionMutableBuilder[Self <: TransformEncryption] (val x: Self) extends AnyVal {
+  extension [Self <: TransformEncryption](x: Self) {
     
-    @scala.inline
-    def setMlUserDataEncryption(value: MLUserDataEncryption): Self = StObject.set(x, "MlUserDataEncryption", value.asInstanceOf[js.Any])
+    inline def setMlUserDataEncryption(value: MLUserDataEncryption): Self = StObject.set(x, "MlUserDataEncryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMlUserDataEncryptionUndefined: Self = StObject.set(x, "MlUserDataEncryption", js.undefined)
+    inline def setMlUserDataEncryptionUndefined: Self = StObject.set(x, "MlUserDataEncryption", js.undefined)
     
-    @scala.inline
-    def setTaskRunSecurityConfigurationName(value: NameString): Self = StObject.set(x, "TaskRunSecurityConfigurationName", value.asInstanceOf[js.Any])
+    inline def setTaskRunSecurityConfigurationName(value: NameString): Self = StObject.set(x, "TaskRunSecurityConfigurationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskRunSecurityConfigurationNameUndefined: Self = StObject.set(x, "TaskRunSecurityConfigurationName", js.undefined)
+    inline def setTaskRunSecurityConfigurationNameUndefined: Self = StObject.set(x, "TaskRunSecurityConfigurationName", js.undefined)
   }
 }

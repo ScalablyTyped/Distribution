@@ -64,8 +64,7 @@ object SPClientForms {
   }
   object ClientForm {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       NotifyControlEvent: (FormManagerEvents, String, js.Any) => Unit,
       RenderClientForm: () => Unit,
       SubmitClientForm: () => Boolean
@@ -74,17 +73,13 @@ object SPClientForms {
       __obj.asInstanceOf[ClientForm]
     }
     
-    @scala.inline
-    implicit class ClientFormMutableBuilder[Self <: ClientForm] (val x: Self) extends AnyVal {
+    extension [Self <: ClientForm](x: Self) {
       
-      @scala.inline
-      def setNotifyControlEvent(value: (FormManagerEvents, String, js.Any) => Unit): Self = StObject.set(x, "NotifyControlEvent", js.Any.fromFunction3(value))
+      inline def setNotifyControlEvent(value: (FormManagerEvents, String, js.Any) => Unit): Self = StObject.set(x, "NotifyControlEvent", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRenderClientForm(value: () => Unit): Self = StObject.set(x, "RenderClientForm", js.Any.fromFunction0(value))
+      inline def setRenderClientForm(value: () => Unit): Self = StObject.set(x, "RenderClientForm", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSubmitClientForm(value: () => Boolean): Self = StObject.set(x, "SubmitClientForm", js.Any.fromFunction0(value))
+      inline def setSubmitClientForm(value: () => Boolean): Self = StObject.set(x, "SubmitClientForm", js.Any.fromFunction0(value))
     }
   }
   
@@ -98,17 +93,14 @@ object SPClientForms {
     }
     object IValidator {
       
-      @scala.inline
-      def apply(Validate: js.Any => ValidationResult): IValidator = {
+      inline def apply(Validate: js.Any => ValidationResult): IValidator = {
         val __obj = js.Dynamic.literal(Validate = js.Any.fromFunction1(Validate))
         __obj.asInstanceOf[IValidator]
       }
       
-      @scala.inline
-      implicit class IValidatorMutableBuilder[Self <: IValidator] (val x: Self) extends AnyVal {
+      extension [Self <: IValidator](x: Self) {
         
-        @scala.inline
-        def setValidate(value: js.Any => ValidationResult): Self = StObject.set(x, "Validate", js.Any.fromFunction1(value))
+        inline def setValidate(value: js.Any => ValidationResult): Self = StObject.set(x, "Validate", js.Any.fromFunction1(value))
       }
     }
     
@@ -117,8 +109,7 @@ object SPClientForms {
          with IValidator
     object MaxLengthUrlValidator {
       
-      @scala.inline
-      def apply(Validate: js.Any => ValidationResult): MaxLengthUrlValidator = {
+      inline def apply(Validate: js.Any => ValidationResult): MaxLengthUrlValidator = {
         val __obj = js.Dynamic.literal(Validate = js.Any.fromFunction1(Validate))
         __obj.asInstanceOf[MaxLengthUrlValidator]
       }
@@ -129,8 +120,7 @@ object SPClientForms {
          with IValidator
     object RequiredFileValidator {
       
-      @scala.inline
-      def apply(Validate: js.Any => ValidationResult): RequiredFileValidator = {
+      inline def apply(Validate: js.Any => ValidationResult): RequiredFileValidator = {
         val __obj = js.Dynamic.literal(Validate = js.Any.fromFunction1(Validate))
         __obj.asInstanceOf[RequiredFileValidator]
       }
@@ -141,8 +131,7 @@ object SPClientForms {
          with IValidator
     object RequiredRichTextValidator {
       
-      @scala.inline
-      def apply(Validate: js.Any => ValidationResult): RequiredRichTextValidator = {
+      inline def apply(Validate: js.Any => ValidationResult): RequiredRichTextValidator = {
         val __obj = js.Dynamic.literal(Validate = js.Any.fromFunction1(Validate))
         __obj.asInstanceOf[RequiredRichTextValidator]
       }
@@ -153,8 +142,7 @@ object SPClientForms {
          with IValidator
     object RequiredValidator {
       
-      @scala.inline
-      def apply(Validate: js.Any => ValidationResult): RequiredValidator = {
+      inline def apply(Validate: js.Any => ValidationResult): RequiredValidator = {
         val __obj = js.Dynamic.literal(Validate = js.Any.fromFunction1(Validate))
         __obj.asInstanceOf[RequiredValidator]
       }
@@ -168,17 +156,14 @@ object SPClientForms {
     }
     object ValidatorSet {
       
-      @scala.inline
-      def apply(RegisterValidator: IValidator => Unit): ValidatorSet = {
+      inline def apply(RegisterValidator: IValidator => Unit): ValidatorSet = {
         val __obj = js.Dynamic.literal(RegisterValidator = js.Any.fromFunction1(RegisterValidator))
         __obj.asInstanceOf[ValidatorSet]
       }
       
-      @scala.inline
-      implicit class ValidatorSetMutableBuilder[Self <: ValidatorSet] (val x: Self) extends AnyVal {
+      extension [Self <: ValidatorSet](x: Self) {
         
-        @scala.inline
-        def setRegisterValidator(value: IValidator => Unit): Self = StObject.set(x, "RegisterValidator", js.Any.fromFunction1(value))
+        inline def setRegisterValidator(value: IValidator => Unit): Self = StObject.set(x, "RegisterValidator", js.Any.fromFunction1(value))
       }
     }
   }

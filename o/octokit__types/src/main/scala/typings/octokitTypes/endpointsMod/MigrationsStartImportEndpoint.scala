@@ -41,46 +41,33 @@ trait MigrationsStartImportEndpoint extends StObject {
 }
 object MigrationsStartImportEndpoint {
   
-  @scala.inline
-  def apply(owner: String, repo: String, vcs_url: String): MigrationsStartImportEndpoint = {
+  inline def apply(owner: String, repo: String, vcs_url: String): MigrationsStartImportEndpoint = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], vcs_url = vcs_url.asInstanceOf[js.Any])
     __obj.asInstanceOf[MigrationsStartImportEndpoint]
   }
   
-  @scala.inline
-  implicit class MigrationsStartImportEndpointMutableBuilder[Self <: MigrationsStartImportEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: MigrationsStartImportEndpoint](x: Self) {
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTfvc_project(value: String): Self = StObject.set(x, "tfvc_project", value.asInstanceOf[js.Any])
+    inline def setTfvc_project(value: String): Self = StObject.set(x, "tfvc_project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTfvc_projectUndefined: Self = StObject.set(x, "tfvc_project", js.undefined)
+    inline def setTfvc_projectUndefined: Self = StObject.set(x, "tfvc_project", js.undefined)
     
-    @scala.inline
-    def setVcs(value: subversion | git | mercurial | tfvc): Self = StObject.set(x, "vcs", value.asInstanceOf[js.Any])
+    inline def setVcs(value: subversion | git | mercurial | tfvc): Self = StObject.set(x, "vcs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVcsUndefined: Self = StObject.set(x, "vcs", js.undefined)
+    inline def setVcsUndefined: Self = StObject.set(x, "vcs", js.undefined)
     
-    @scala.inline
-    def setVcs_password(value: String): Self = StObject.set(x, "vcs_password", value.asInstanceOf[js.Any])
+    inline def setVcs_password(value: String): Self = StObject.set(x, "vcs_password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVcs_passwordUndefined: Self = StObject.set(x, "vcs_password", js.undefined)
+    inline def setVcs_passwordUndefined: Self = StObject.set(x, "vcs_password", js.undefined)
     
-    @scala.inline
-    def setVcs_url(value: String): Self = StObject.set(x, "vcs_url", value.asInstanceOf[js.Any])
+    inline def setVcs_url(value: String): Self = StObject.set(x, "vcs_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVcs_username(value: String): Self = StObject.set(x, "vcs_username", value.asInstanceOf[js.Any])
+    inline def setVcs_username(value: String): Self = StObject.set(x, "vcs_username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVcs_usernameUndefined: Self = StObject.set(x, "vcs_username", js.undefined)
+    inline def setVcs_usernameUndefined: Self = StObject.set(x, "vcs_username", js.undefined)
   }
 }

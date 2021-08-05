@@ -10,8 +10,7 @@ trait AdUrls
      with hasGetFinalUrl
 object AdUrls {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getCustomParameters: () => js.Object,
     getFinalUrl: () => String,
     getMobileFinalUrl: () => String,

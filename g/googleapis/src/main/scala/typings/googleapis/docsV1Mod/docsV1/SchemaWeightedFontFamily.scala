@@ -36,25 +36,19 @@ trait SchemaWeightedFontFamily extends StObject {
 }
 object SchemaWeightedFontFamily {
   
-  @scala.inline
-  def apply(): SchemaWeightedFontFamily = {
+  inline def apply(): SchemaWeightedFontFamily = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaWeightedFontFamily]
   }
   
-  @scala.inline
-  implicit class SchemaWeightedFontFamilyMutableBuilder[Self <: SchemaWeightedFontFamily] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaWeightedFontFamily](x: Self) {
     
-    @scala.inline
-    def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+    inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
+    inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
     
-    @scala.inline
-    def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

@@ -23,31 +23,23 @@ trait ErrorStatistics extends StObject {
 }
 object ErrorStatistics {
   
-  @scala.inline
-  def apply(): ErrorStatistics = {
+  inline def apply(): ErrorStatistics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ErrorStatistics]
   }
   
-  @scala.inline
-  implicit class ErrorStatisticsMutableBuilder[Self <: ErrorStatistics] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorStatistics](x: Self) {
     
-    @scala.inline
-    def setOtherCount(value: NullableLong): Self = StObject.set(x, "OtherCount", value.asInstanceOf[js.Any])
+    inline def setOtherCount(value: NullableLong): Self = StObject.set(x, "OtherCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOtherCountUndefined: Self = StObject.set(x, "OtherCount", js.undefined)
+    inline def setOtherCountUndefined: Self = StObject.set(x, "OtherCount", js.undefined)
     
-    @scala.inline
-    def setThrottleCount(value: NullableLong): Self = StObject.set(x, "ThrottleCount", value.asInstanceOf[js.Any])
+    inline def setThrottleCount(value: NullableLong): Self = StObject.set(x, "ThrottleCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThrottleCountUndefined: Self = StObject.set(x, "ThrottleCount", js.undefined)
+    inline def setThrottleCountUndefined: Self = StObject.set(x, "ThrottleCount", js.undefined)
     
-    @scala.inline
-    def setTotalCount(value: NullableLong): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
+    inline def setTotalCount(value: NullableLong): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalCountUndefined: Self = StObject.set(x, "TotalCount", js.undefined)
+    inline def setTotalCountUndefined: Self = StObject.set(x, "TotalCount", js.undefined)
   }
 }

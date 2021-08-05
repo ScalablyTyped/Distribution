@@ -12,19 +12,15 @@ trait Handler extends StObject {
 }
 object Handler {
   
-  @scala.inline
-  def apply(handler: (js.Any, js.Any) => js.Promise[js.Any], options: Validate): Handler = {
+  inline def apply(handler: (js.Any, js.Any) => js.Promise[js.Any], options: Validate): Handler = {
     val __obj = js.Dynamic.literal(handler = js.Any.fromFunction2(handler), options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Handler]
   }
   
-  @scala.inline
-  implicit class HandlerMutableBuilder[Self <: Handler] (val x: Self) extends AnyVal {
+  extension [Self <: Handler](x: Self) {
     
-    @scala.inline
-    def setHandler(value: (js.Any, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
+    inline def setHandler(value: (js.Any, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOptions(value: Validate): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Validate): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

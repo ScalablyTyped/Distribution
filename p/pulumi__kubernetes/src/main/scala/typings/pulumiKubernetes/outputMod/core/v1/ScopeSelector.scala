@@ -16,19 +16,15 @@ trait ScopeSelector extends StObject {
 }
 object ScopeSelector {
   
-  @scala.inline
-  def apply(matchExpressions: js.Array[ScopedResourceSelectorRequirement]): ScopeSelector = {
+  inline def apply(matchExpressions: js.Array[ScopedResourceSelectorRequirement]): ScopeSelector = {
     val __obj = js.Dynamic.literal(matchExpressions = matchExpressions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScopeSelector]
   }
   
-  @scala.inline
-  implicit class ScopeSelectorMutableBuilder[Self <: ScopeSelector] (val x: Self) extends AnyVal {
+  extension [Self <: ScopeSelector](x: Self) {
     
-    @scala.inline
-    def setMatchExpressions(value: js.Array[ScopedResourceSelectorRequirement]): Self = StObject.set(x, "matchExpressions", value.asInstanceOf[js.Any])
+    inline def setMatchExpressions(value: js.Array[ScopedResourceSelectorRequirement]): Self = StObject.set(x, "matchExpressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchExpressionsVarargs(value: ScopedResourceSelectorRequirement*): Self = StObject.set(x, "matchExpressions", js.Array(value :_*))
+    inline def setMatchExpressionsVarargs(value: ScopedResourceSelectorRequirement*): Self = StObject.set(x, "matchExpressions", js.Array(value :_*))
   }
 }

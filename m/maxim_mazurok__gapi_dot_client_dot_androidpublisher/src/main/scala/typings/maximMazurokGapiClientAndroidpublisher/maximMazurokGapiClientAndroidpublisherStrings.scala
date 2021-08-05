@@ -8,16 +8,13 @@ object maximMazurokGapiClientAndroidpublisherStrings {
   
   @js.native
   sealed trait InAppProduct extends StObject
-  @scala.inline
-  def InAppProduct: InAppProduct = "InAppProduct".asInstanceOf[InAppProduct]
+  inline def InAppProduct: InAppProduct = "InAppProduct".asInstanceOf[InAppProduct]
   
   @js.native
   sealed trait androidpublisher extends StObject
-  @scala.inline
-  def androidpublisher: androidpublisher = "androidpublisher".asInstanceOf[androidpublisher]
+  inline def androidpublisher: androidpublisher = "androidpublisher".asInstanceOf[androidpublisher]
   
   @js.native
   sealed trait v3 extends StObject
-  @scala.inline
-  def v3: v3 = "v3".asInstanceOf[v3]
+  inline def v3: v3 = "v3".asInstanceOf[v3]
 }

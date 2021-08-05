@@ -9,10 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs]]
-  @scala.inline
-  def apply(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs]]
+  inline def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs]]
+  inline def apply(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs]]
   
   @JSImport("express-request-id", JSImport.Namespace)
   @js.native
@@ -30,38 +28,28 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
+      inline def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeNameUndefined: Self = StObject.set(x, "attributeName", js.undefined)
+      inline def setAttributeNameUndefined: Self = StObject.set(x, "attributeName", js.undefined)
       
-      @scala.inline
-      def setHeaderName(value: String): Self = StObject.set(x, "headerName", value.asInstanceOf[js.Any])
+      inline def setHeaderName(value: String): Self = StObject.set(x, "headerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderNameUndefined: Self = StObject.set(x, "headerName", js.undefined)
+      inline def setHeaderNameUndefined: Self = StObject.set(x, "headerName", js.undefined)
       
-      @scala.inline
-      def setSetHeader(value: Boolean): Self = StObject.set(x, "setHeader", value.asInstanceOf[js.Any])
+      inline def setSetHeader(value: Boolean): Self = StObject.set(x, "setHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetHeaderUndefined: Self = StObject.set(x, "setHeader", js.undefined)
+      inline def setSetHeaderUndefined: Self = StObject.set(x, "setHeader", js.undefined)
       
-      @scala.inline
-      def setUuidVersion(value: String): Self = StObject.set(x, "uuidVersion", value.asInstanceOf[js.Any])
+      inline def setUuidVersion(value: String): Self = StObject.set(x, "uuidVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUuidVersionUndefined: Self = StObject.set(x, "uuidVersion", js.undefined)
+      inline def setUuidVersionUndefined: Self = StObject.set(x, "uuidVersion", js.undefined)
     }
   }
 }

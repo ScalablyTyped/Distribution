@@ -12,10 +12,8 @@ object srcMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Emitter = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Emitter]
-  @scala.inline
-  def default(all: EventHandlerMap): Emitter = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(all.asInstanceOf[js.Any]).asInstanceOf[Emitter]
+  inline def default(): Emitter = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Emitter]
+  inline def default(all: EventHandlerMap): Emitter = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(all.asInstanceOf[js.Any]).asInstanceOf[Emitter]
   
   @js.native
   trait Emitter extends StObject {

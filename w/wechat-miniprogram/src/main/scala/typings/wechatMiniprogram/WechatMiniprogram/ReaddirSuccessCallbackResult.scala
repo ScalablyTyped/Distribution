@@ -13,22 +13,17 @@ trait ReaddirSuccessCallbackResult extends StObject {
 }
 object ReaddirSuccessCallbackResult {
   
-  @scala.inline
-  def apply(errMsg: String, files: js.Array[String]): ReaddirSuccessCallbackResult = {
+  inline def apply(errMsg: String, files: js.Array[String]): ReaddirSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReaddirSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class ReaddirSuccessCallbackResultMutableBuilder[Self <: ReaddirSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: ReaddirSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
   }
 }

@@ -13,19 +13,15 @@ trait PlotKeltnerchannelsTopLineOptions extends StObject {
 }
 object PlotKeltnerchannelsTopLineOptions {
   
-  @scala.inline
-  def apply(): PlotKeltnerchannelsTopLineOptions = {
+  inline def apply(): PlotKeltnerchannelsTopLineOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotKeltnerchannelsTopLineOptions]
   }
   
-  @scala.inline
-  implicit class PlotKeltnerchannelsTopLineOptionsMutableBuilder[Self <: PlotKeltnerchannelsTopLineOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotKeltnerchannelsTopLineOptions](x: Self) {
     
-    @scala.inline
-    def setStyles(value: PlotKeltnerchannelsTopLineStylesOptions): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: PlotKeltnerchannelsTopLineStylesOptions): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
   }
 }

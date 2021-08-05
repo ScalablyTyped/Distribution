@@ -16,32 +16,24 @@ object anon {
   }
   object Conjunction {
     
-    @scala.inline
-    def apply(): Conjunction = {
+    inline def apply(): Conjunction = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Conjunction]
     }
     
-    @scala.inline
-    implicit class ConjunctionMutableBuilder[Self <: Conjunction] (val x: Self) extends AnyVal {
+    extension [Self <: Conjunction](x: Self) {
       
-      @scala.inline
-      def setConjunction(value: String): Self = StObject.set(x, "conjunction", value.asInstanceOf[js.Any])
+      inline def setConjunction(value: String): Self = StObject.set(x, "conjunction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConjunctionUndefined: Self = StObject.set(x, "conjunction", js.undefined)
+      inline def setConjunctionUndefined: Self = StObject.set(x, "conjunction", js.undefined)
       
-      @scala.inline
-      def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+      inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+      inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
       
-      @scala.inline
-      def setSerial(value: Boolean): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
+      inline def setSerial(value: Boolean): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerialUndefined: Self = StObject.set(x, "serial", js.undefined)
+      inline def setSerialUndefined: Self = StObject.set(x, "serial", js.undefined)
     }
   }
 }

@@ -18,20 +18,16 @@ object subscriptionMod {
   }
   object AddonOptions {
     
-    @scala.inline
-    def apply(): AddonOptions = {
+    inline def apply(): AddonOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AddonOptions]
     }
     
-    @scala.inline
-    implicit class AddonOptionsMutableBuilder[Self <: AddonOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AddonOptions](x: Self) {
       
-      @scala.inline
-      def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+      inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
+      inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
     }
   }
   
@@ -41,20 +37,16 @@ object subscriptionMod {
   }
   object PlanOptions {
     
-    @scala.inline
-    def apply(): PlanOptions = {
+    inline def apply(): PlanOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PlanOptions]
     }
     
-    @scala.inline
-    implicit class PlanOptionsMutableBuilder[Self <: PlanOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PlanOptions](x: Self) {
       
-      @scala.inline
-      def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+      inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
+      inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
     }
   }
   
@@ -112,17 +104,14 @@ object subscriptionMod {
   }
   object SubscriptionPricingState {
     
-    @scala.inline
-    def apply(price: Base): SubscriptionPricingState = {
+    inline def apply(price: Base): SubscriptionPricingState = {
       val __obj = js.Dynamic.literal(price = price.asInstanceOf[js.Any])
       __obj.asInstanceOf[SubscriptionPricingState]
     }
     
-    @scala.inline
-    implicit class SubscriptionPricingStateMutableBuilder[Self <: SubscriptionPricingState] (val x: Self) extends AnyVal {
+    extension [Self <: SubscriptionPricingState](x: Self) {
       
-      @scala.inline
-      def setPrice(value: Base): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
+      inline def setPrice(value: Base): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     }
   }
   
@@ -136,23 +125,18 @@ object subscriptionMod {
   }
   object SubscriptionPricingStateTax {
     
-    @scala.inline
-    def apply(rate: String, region: String, tax_type: String): SubscriptionPricingStateTax = {
+    inline def apply(rate: String, region: String, tax_type: String): SubscriptionPricingStateTax = {
       val __obj = js.Dynamic.literal(rate = rate.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], tax_type = tax_type.asInstanceOf[js.Any])
       __obj.asInstanceOf[SubscriptionPricingStateTax]
     }
     
-    @scala.inline
-    implicit class SubscriptionPricingStateTaxMutableBuilder[Self <: SubscriptionPricingStateTax] (val x: Self) extends AnyVal {
+    extension [Self <: SubscriptionPricingStateTax](x: Self) {
       
-      @scala.inline
-      def setRate(value: String): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
+      inline def setRate(value: String): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTax_type(value: String): Self = StObject.set(x, "tax_type", value.asInstanceOf[js.Any])
+      inline def setTax_type(value: String): Self = StObject.set(x, "tax_type", value.asInstanceOf[js.Any])
     }
   }
 }

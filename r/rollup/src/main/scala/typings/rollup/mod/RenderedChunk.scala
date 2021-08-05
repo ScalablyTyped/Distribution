@@ -27,8 +27,7 @@ trait RenderedChunk
 }
 object RenderedChunk {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dynamicImports: js.Array[String],
     exports: js.Array[String],
     fileName: String,
@@ -47,49 +46,34 @@ object RenderedChunk {
     __obj.asInstanceOf[RenderedChunk]
   }
   
-  @scala.inline
-  implicit class RenderedChunkMutableBuilder[Self <: RenderedChunk] (val x: Self) extends AnyVal {
+  extension [Self <: RenderedChunk](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setDynamicImports(value: js.Array[String]): Self = StObject.set(x, "dynamicImports", value.asInstanceOf[js.Any])
+    inline def setDynamicImports(value: js.Array[String]): Self = StObject.set(x, "dynamicImports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicImportsVarargs(value: String*): Self = StObject.set(x, "dynamicImports", js.Array(value :_*))
+    inline def setDynamicImportsVarargs(value: String*): Self = StObject.set(x, "dynamicImports", js.Array(value :_*))
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImplicitlyLoadedBefore(value: js.Array[String]): Self = StObject.set(x, "implicitlyLoadedBefore", value.asInstanceOf[js.Any])
+    inline def setImplicitlyLoadedBefore(value: js.Array[String]): Self = StObject.set(x, "implicitlyLoadedBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImplicitlyLoadedBeforeVarargs(value: String*): Self = StObject.set(x, "implicitlyLoadedBefore", js.Array(value :_*))
+    inline def setImplicitlyLoadedBeforeVarargs(value: String*): Self = StObject.set(x, "implicitlyLoadedBefore", js.Array(value :_*))
     
-    @scala.inline
-    def setImportedBindings(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "importedBindings", value.asInstanceOf[js.Any])
+    inline def setImportedBindings(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "importedBindings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImports(value: js.Array[String]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
+    inline def setImports(value: js.Array[String]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportsVarargs(value: String*): Self = StObject.set(x, "imports", js.Array(value :_*))
+    inline def setImportsVarargs(value: String*): Self = StObject.set(x, "imports", js.Array(value :_*))
     
-    @scala.inline
-    def setMap(value: SourceMap): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: SourceMap): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+    inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
-    @scala.inline
-    def setReferencedFiles(value: js.Array[String]): Self = StObject.set(x, "referencedFiles", value.asInstanceOf[js.Any])
+    inline def setReferencedFiles(value: js.Array[String]): Self = StObject.set(x, "referencedFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferencedFilesVarargs(value: String*): Self = StObject.set(x, "referencedFiles", js.Array(value :_*))
+    inline def setReferencedFilesVarargs(value: String*): Self = StObject.set(x, "referencedFiles", js.Array(value :_*))
   }
 }

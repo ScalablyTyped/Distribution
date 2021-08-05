@@ -19,25 +19,19 @@ trait TrafficMirrorFilterRuleDestinationPortRange extends StObject {
 }
 object TrafficMirrorFilterRuleDestinationPortRange {
   
-  @scala.inline
-  def apply(): TrafficMirrorFilterRuleDestinationPortRange = {
+  inline def apply(): TrafficMirrorFilterRuleDestinationPortRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrafficMirrorFilterRuleDestinationPortRange]
   }
   
-  @scala.inline
-  implicit class TrafficMirrorFilterRuleDestinationPortRangeMutableBuilder[Self <: TrafficMirrorFilterRuleDestinationPortRange] (val x: Self) extends AnyVal {
+  extension [Self <: TrafficMirrorFilterRuleDestinationPortRange](x: Self) {
     
-    @scala.inline
-    def setFromPort(value: Input[Double]): Self = StObject.set(x, "fromPort", value.asInstanceOf[js.Any])
+    inline def setFromPort(value: Input[Double]): Self = StObject.set(x, "fromPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromPortUndefined: Self = StObject.set(x, "fromPort", js.undefined)
+    inline def setFromPortUndefined: Self = StObject.set(x, "fromPort", js.undefined)
     
-    @scala.inline
-    def setToPort(value: Input[Double]): Self = StObject.set(x, "toPort", value.asInstanceOf[js.Any])
+    inline def setToPort(value: Input[Double]): Self = StObject.set(x, "toPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToPortUndefined: Self = StObject.set(x, "toPort", js.undefined)
+    inline def setToPortUndefined: Self = StObject.set(x, "toPort", js.undefined)
   }
 }

@@ -15,19 +15,15 @@ trait TypeofTimePicker extends StObject {
 }
 object TypeofTimePicker {
   
-  @scala.inline
-  def apply(extend: js.Object => TimePicker, fn: TimePicker): TypeofTimePicker = {
+  inline def apply(extend: js.Object => TimePicker, fn: TimePicker): TypeofTimePicker = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofTimePicker]
   }
   
-  @scala.inline
-  implicit class TypeofTimePickerMutableBuilder[Self <: TypeofTimePicker] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofTimePicker](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => TimePicker): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => TimePicker): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: TimePicker): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: TimePicker): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

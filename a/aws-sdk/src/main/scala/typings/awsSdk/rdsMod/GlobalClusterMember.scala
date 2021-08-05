@@ -28,40 +28,29 @@ trait GlobalClusterMember extends StObject {
 }
 object GlobalClusterMember {
   
-  @scala.inline
-  def apply(): GlobalClusterMember = {
+  inline def apply(): GlobalClusterMember = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GlobalClusterMember]
   }
   
-  @scala.inline
-  implicit class GlobalClusterMemberMutableBuilder[Self <: GlobalClusterMember] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalClusterMember](x: Self) {
     
-    @scala.inline
-    def setDBClusterArn(value: String): Self = StObject.set(x, "DBClusterArn", value.asInstanceOf[js.Any])
+    inline def setDBClusterArn(value: String): Self = StObject.set(x, "DBClusterArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBClusterArnUndefined: Self = StObject.set(x, "DBClusterArn", js.undefined)
+    inline def setDBClusterArnUndefined: Self = StObject.set(x, "DBClusterArn", js.undefined)
     
-    @scala.inline
-    def setGlobalWriteForwardingStatus(value: WriteForwardingStatus): Self = StObject.set(x, "GlobalWriteForwardingStatus", value.asInstanceOf[js.Any])
+    inline def setGlobalWriteForwardingStatus(value: WriteForwardingStatus): Self = StObject.set(x, "GlobalWriteForwardingStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalWriteForwardingStatusUndefined: Self = StObject.set(x, "GlobalWriteForwardingStatus", js.undefined)
+    inline def setGlobalWriteForwardingStatusUndefined: Self = StObject.set(x, "GlobalWriteForwardingStatus", js.undefined)
     
-    @scala.inline
-    def setIsWriter(value: Boolean): Self = StObject.set(x, "IsWriter", value.asInstanceOf[js.Any])
+    inline def setIsWriter(value: Boolean): Self = StObject.set(x, "IsWriter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsWriterUndefined: Self = StObject.set(x, "IsWriter", js.undefined)
+    inline def setIsWriterUndefined: Self = StObject.set(x, "IsWriter", js.undefined)
     
-    @scala.inline
-    def setReaders(value: ReadersArnList): Self = StObject.set(x, "Readers", value.asInstanceOf[js.Any])
+    inline def setReaders(value: ReadersArnList): Self = StObject.set(x, "Readers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadersUndefined: Self = StObject.set(x, "Readers", js.undefined)
+    inline def setReadersUndefined: Self = StObject.set(x, "Readers", js.undefined)
     
-    @scala.inline
-    def setReadersVarargs(value: String*): Self = StObject.set(x, "Readers", js.Array(value :_*))
+    inline def setReadersVarargs(value: String*): Self = StObject.set(x, "Readers", js.Array(value :_*))
   }
 }

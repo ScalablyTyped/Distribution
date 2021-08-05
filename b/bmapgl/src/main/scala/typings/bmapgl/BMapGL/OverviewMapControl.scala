@@ -23,8 +23,7 @@ trait OverviewMapControl
 }
 object OverviewMapControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     changeView: () => Unit,
     defaultAnchor: ControlAnchor,
     defaultOffset: Size,
@@ -46,22 +45,16 @@ object OverviewMapControl {
     __obj.asInstanceOf[OverviewMapControl]
   }
   
-  @scala.inline
-  implicit class OverviewMapControlMutableBuilder[Self <: OverviewMapControl] (val x: Self) extends AnyVal {
+  extension [Self <: OverviewMapControl](x: Self) {
     
-    @scala.inline
-    def setChangeView(value: () => Unit): Self = StObject.set(x, "changeView", js.Any.fromFunction0(value))
+    inline def setChangeView(value: () => Unit): Self = StObject.set(x, "changeView", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSize(value: () => Size): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
+    inline def setGetSize(value: () => Size): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnviewchanged(value: IsOpen => Unit): Self = StObject.set(x, "onviewchanged", js.Any.fromFunction1(value))
+    inline def setOnviewchanged(value: IsOpen => Unit): Self = StObject.set(x, "onviewchanged", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnviewchanging(value: Target => Unit): Self = StObject.set(x, "onviewchanging", js.Any.fromFunction1(value))
+    inline def setOnviewchanging(value: Target => Unit): Self = StObject.set(x, "onviewchanging", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSize(value: Size => Unit): Self = StObject.set(x, "setSize", js.Any.fromFunction1(value))
+    inline def setSetSize(value: Size => Unit): Self = StObject.set(x, "setSize", js.Any.fromFunction1(value))
   }
 }

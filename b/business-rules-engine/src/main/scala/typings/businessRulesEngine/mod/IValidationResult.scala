@@ -28,8 +28,7 @@ trait IValidationResult extends StObject {
 }
 object IValidationResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Add: IValidationResult => Unit,
     Children: js.Array[IValidationResult],
     ErrorCount: Double,
@@ -43,49 +42,34 @@ object IValidationResult {
     __obj.asInstanceOf[IValidationResult]
   }
   
-  @scala.inline
-  implicit class IValidationResultMutableBuilder[Self <: IValidationResult] (val x: Self) extends AnyVal {
+  extension [Self <: IValidationResult](x: Self) {
     
-    @scala.inline
-    def setAdd(value: IValidationResult => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
+    inline def setAdd(value: IValidationResult => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChildren(value: js.Array[IValidationResult]): Self = StObject.set(x, "Children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[IValidationResult]): Self = StObject.set(x, "Children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVarargs(value: IValidationResult*): Self = StObject.set(x, "Children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: IValidationResult*): Self = StObject.set(x, "Children", js.Array(value :_*))
     
-    @scala.inline
-    def setErrorCount(value: Double): Self = StObject.set(x, "ErrorCount", value.asInstanceOf[js.Any])
+    inline def setErrorCount(value: Double): Self = StObject.set(x, "ErrorCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasErrors(value: Boolean): Self = StObject.set(x, "HasErrors", value.asInstanceOf[js.Any])
+    inline def setHasErrors(value: Boolean): Self = StObject.set(x, "HasErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasErrorsDirty(value: Boolean): Self = StObject.set(x, "HasErrorsDirty", value.asInstanceOf[js.Any])
+    inline def setHasErrorsDirty(value: Boolean): Self = StObject.set(x, "HasErrorsDirty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptional(value: () => Boolean): Self = StObject.set(x, "Optional", js.Any.fromFunction0(value))
+    inline def setOptional(value: () => Boolean): Self = StObject.set(x, "Optional", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOptionalUndefined: Self = StObject.set(x, "Optional", js.undefined)
+    inline def setOptionalUndefined: Self = StObject.set(x, "Optional", js.undefined)
     
-    @scala.inline
-    def setRemove(value: Double => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: Double => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTranslateArgs(value: js.Array[IErrorTranslateArgs]): Self = StObject.set(x, "TranslateArgs", value.asInstanceOf[js.Any])
+    inline def setTranslateArgs(value: js.Array[IErrorTranslateArgs]): Self = StObject.set(x, "TranslateArgs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslateArgsUndefined: Self = StObject.set(x, "TranslateArgs", js.undefined)
+    inline def setTranslateArgsUndefined: Self = StObject.set(x, "TranslateArgs", js.undefined)
     
-    @scala.inline
-    def setTranslateArgsVarargs(value: IErrorTranslateArgs*): Self = StObject.set(x, "TranslateArgs", js.Array(value :_*))
+    inline def setTranslateArgsVarargs(value: IErrorTranslateArgs*): Self = StObject.set(x, "TranslateArgs", js.Array(value :_*))
   }
 }

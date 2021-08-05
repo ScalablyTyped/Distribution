@@ -7,22 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(search: String, replace: String): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(search: String, replace: String, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(search: String, replace: ReplaceFunction): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(search: String, replace: ReplaceFunction, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(search: RegExp, replace: String): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(search: RegExp, replace: String, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(search: RegExp, replace: ReplaceFunction): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(search: RegExp, replace: ReplaceFunction, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(search: String, replace: String): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(search: String, replace: String, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(search: String, replace: ReplaceFunction): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(search: String, replace: ReplaceFunction, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(search: RegExp, replace: String): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(search: RegExp, replace: String, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(search: RegExp, replace: ReplaceFunction): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(search: RegExp, replace: ReplaceFunction, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   @JSImport("replacestream", JSImport.Namespace)
   @js.native
@@ -72,44 +64,32 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
+      inline def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
+      inline def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setMaxMatchLen(value: Double): Self = StObject.set(x, "maxMatchLen", value.asInstanceOf[js.Any])
+      inline def setMaxMatchLen(value: Double): Self = StObject.set(x, "maxMatchLen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxMatchLenUndefined: Self = StObject.set(x, "maxMatchLen", js.undefined)
+      inline def setMaxMatchLenUndefined: Self = StObject.set(x, "maxMatchLen", js.undefined)
       
-      @scala.inline
-      def setRegExpOptions(value: String): Self = StObject.set(x, "regExpOptions", value.asInstanceOf[js.Any])
+      inline def setRegExpOptions(value: String): Self = StObject.set(x, "regExpOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegExpOptionsUndefined: Self = StObject.set(x, "regExpOptions", js.undefined)
+      inline def setRegExpOptionsUndefined: Self = StObject.set(x, "regExpOptions", js.undefined)
     }
   }
   

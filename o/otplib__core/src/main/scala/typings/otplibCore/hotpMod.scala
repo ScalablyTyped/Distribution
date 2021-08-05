@@ -52,33 +52,25 @@ object hotpMod {
     def verify(opts: Counter): Boolean = js.native
   }
   
-  @scala.inline
-  def hotpCheck[T /* <: HOTPOptions_[js.Any] */](token: String, secret: SecretKey, counter: Double, options: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hotpCheck")(token.asInstanceOf[js.Any], secret.asInstanceOf[js.Any], counter.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def hotpCheck[T /* <: HOTPOptions_[js.Any] */](token: String, secret: SecretKey, counter: Double, options: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hotpCheck")(token.asInstanceOf[js.Any], secret.asInstanceOf[js.Any], counter.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def hotpCounter(counter: Double): HexString = ^.asInstanceOf[js.Dynamic].applyDynamic("hotpCounter")(counter.asInstanceOf[js.Any]).asInstanceOf[HexString]
+  inline def hotpCounter(counter: Double): HexString = ^.asInstanceOf[js.Dynamic].applyDynamic("hotpCounter")(counter.asInstanceOf[js.Any]).asInstanceOf[HexString]
   
   @JSImport("@otplib/core/hotp", "hotpCreateHmacKey")
   @js.native
   val hotpCreateHmacKey: CreateHmacKey[HexString] = js.native
   
-  @scala.inline
-  def hotpDefaultOptions[T /* <: HOTPOptions_[js.Any] */](): Partial[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("hotpDefaultOptions")().asInstanceOf[Partial[T]]
+  inline def hotpDefaultOptions[T /* <: HOTPOptions_[js.Any] */](): Partial[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("hotpDefaultOptions")().asInstanceOf[Partial[T]]
   
-  @scala.inline
-  def hotpDigestToToken(hexDigest: HexString, digits: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hotpDigestToToken")(hexDigest.asInstanceOf[js.Any], digits.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def hotpDigestToToken(hexDigest: HexString, digits: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hotpDigestToToken")(hexDigest.asInstanceOf[js.Any], digits.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def hotpKeyuri[T /* <: HOTPOptions_[js.Any] */](accountName: String, issuer: String, secret: SecretKey, counter: Double, options: T): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hotpKeyuri")(accountName.asInstanceOf[js.Any], issuer.asInstanceOf[js.Any], secret.asInstanceOf[js.Any], counter.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def hotpKeyuri[T /* <: HOTPOptions_[js.Any] */](accountName: String, issuer: String, secret: SecretKey, counter: Double, options: T): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hotpKeyuri")(accountName.asInstanceOf[js.Any], issuer.asInstanceOf[js.Any], secret.asInstanceOf[js.Any], counter.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def hotpOptions[T /* <: HOTPOptions_[js.Any] */](opt: Partial[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("hotpOptions")(opt.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def hotpOptions[T /* <: HOTPOptions_[js.Any] */](opt: Partial[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("hotpOptions")(opt.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @scala.inline
-  def hotpOptionsValidator[T /* <: HOTPOptions_[js.Any] */](options: Partial[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hotpOptionsValidator")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def hotpOptionsValidator[T /* <: HOTPOptions_[js.Any] */](options: Partial[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hotpOptionsValidator")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def hotpToken[T /* <: HOTPOptions_[js.Any] */](secret: SecretKey, counter: Double, options: T): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hotpToken")(secret.asInstanceOf[js.Any], counter.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def hotpToken[T /* <: HOTPOptions_[js.Any] */](secret: SecretKey, counter: Double, options: T): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hotpToken")(secret.asInstanceOf[js.Any], counter.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait HOTPOptions_[T]
     extends StObject
@@ -129,8 +121,7 @@ object hotpMod {
   }
   object HOTPOptions_ {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       algorithm: HashAlgorithms,
       createDigest: (/* algorithm */ HashAlgorithms, /* hmacKey */ HexString, /* counter */ HexString) => T,
       createHmacKey: (/* algorithm */ HashAlgorithms, /* secret */ SecretKey, /* encoding */ KeyEncodings) => T,
@@ -141,29 +132,21 @@ object hotpMod {
       __obj.asInstanceOf[HOTPOptions_[T]]
     }
     
-    @scala.inline
-    implicit class HOTPOptions_MutableBuilder[Self <: HOTPOptions_[?], T] (val x: Self & HOTPOptions_[T]) extends AnyVal {
+    extension [Self <: HOTPOptions_[?], T](x: Self & HOTPOptions_[T]) {
       
-      @scala.inline
-      def setAlgorithm(value: HashAlgorithms): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+      inline def setAlgorithm(value: HashAlgorithms): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateDigest(value: (/* algorithm */ HashAlgorithms, /* hmacKey */ HexString, /* counter */ HexString) => T): Self = StObject.set(x, "createDigest", js.Any.fromFunction3(value))
+      inline def setCreateDigest(value: (/* algorithm */ HashAlgorithms, /* hmacKey */ HexString, /* counter */ HexString) => T): Self = StObject.set(x, "createDigest", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setCreateHmacKey(value: (/* algorithm */ HashAlgorithms, /* secret */ SecretKey, /* encoding */ KeyEncodings) => T): Self = StObject.set(x, "createHmacKey", js.Any.fromFunction3(value))
+      inline def setCreateHmacKey(value: (/* algorithm */ HashAlgorithms, /* secret */ SecretKey, /* encoding */ KeyEncodings) => T): Self = StObject.set(x, "createHmacKey", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setDigest(value: HexString): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
+      inline def setDigest(value: HexString): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
+      inline def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
       
-      @scala.inline
-      def setDigits(value: Double): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
+      inline def setDigits(value: Double): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncoding(value: KeyEncodings): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: KeyEncodings): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     }
   }
 }

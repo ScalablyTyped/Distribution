@@ -17,16 +17,13 @@ trait NoPrice extends StObject {
 }
 object NoPrice {
   
-  @scala.inline
-  def apply(): NoPrice = {
+  inline def apply(): NoPrice = {
     val __obj = js.Dynamic.literal(pricing_type = "no_price")
     __obj.asInstanceOf[NoPrice]
   }
   
-  @scala.inline
-  implicit class NoPriceMutableBuilder[Self <: NoPrice] (val x: Self) extends AnyVal {
+  extension [Self <: NoPrice](x: Self) {
     
-    @scala.inline
-    def setPricing_type(value: no_price): Self = StObject.set(x, "pricing_type", value.asInstanceOf[js.Any])
+    inline def setPricing_type(value: no_price): Self = StObject.set(x, "pricing_type", value.asInstanceOf[js.Any])
   }
 }

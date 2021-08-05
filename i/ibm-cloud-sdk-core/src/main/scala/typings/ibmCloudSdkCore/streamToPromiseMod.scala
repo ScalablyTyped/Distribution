@@ -11,6 +11,5 @@ object streamToPromiseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def streamToPromise(stream: Stream): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("streamToPromise")(stream.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def streamToPromise(stream: Stream): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("streamToPromise")(stream.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
 }

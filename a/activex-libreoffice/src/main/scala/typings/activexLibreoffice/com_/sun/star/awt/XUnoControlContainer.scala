@@ -30,8 +30,7 @@ trait XUnoControlContainer
 }
 object XUnoControlContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     TabControllers: SafeArray[XTabController],
     acquire: () => Unit,
     addTabController: XTabController => Unit,
@@ -45,22 +44,16 @@ object XUnoControlContainer {
     __obj.asInstanceOf[XUnoControlContainer]
   }
   
-  @scala.inline
-  implicit class XUnoControlContainerMutableBuilder[Self <: XUnoControlContainer] (val x: Self) extends AnyVal {
+  extension [Self <: XUnoControlContainer](x: Self) {
     
-    @scala.inline
-    def setAddTabController(value: XTabController => Unit): Self = StObject.set(x, "addTabController", js.Any.fromFunction1(value))
+    inline def setAddTabController(value: XTabController => Unit): Self = StObject.set(x, "addTabController", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetTabControllers(value: () => SafeArray[XTabController]): Self = StObject.set(x, "getTabControllers", js.Any.fromFunction0(value))
+    inline def setGetTabControllers(value: () => SafeArray[XTabController]): Self = StObject.set(x, "getTabControllers", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveTabController(value: XTabController => Unit): Self = StObject.set(x, "removeTabController", js.Any.fromFunction1(value))
+    inline def setRemoveTabController(value: XTabController => Unit): Self = StObject.set(x, "removeTabController", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTabControllers(value: SeqEquiv[XTabController] => Unit): Self = StObject.set(x, "setTabControllers", js.Any.fromFunction1(value))
+    inline def setSetTabControllers(value: SeqEquiv[XTabController] => Unit): Self = StObject.set(x, "setTabControllers", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTabControllers(value: SafeArray[XTabController]): Self = StObject.set(x, "TabControllers", value.asInstanceOf[js.Any])
+    inline def setTabControllers(value: SafeArray[XTabController]): Self = StObject.set(x, "TabControllers", value.asInstanceOf[js.Any])
   }
 }

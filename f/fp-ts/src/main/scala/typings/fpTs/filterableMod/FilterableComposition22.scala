@@ -41,8 +41,7 @@ trait FilterableComposition22[F /* <: /* import warning: transforms.QualifyRefer
 }
 object FilterableComposition22 {
   
-  @scala.inline
-  def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
+  inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
     compact: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind2<G, GE, Option<A>>> */ js.Any => js.Any,
     filter: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind2<G, GE, A>> */ js.Any, Predicate[js.Any]) => js.Any,
     filterMap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind2<G, GE, A>> */ js.Any, js.Function1[js.Any, Option_[js.Any]]) => js.Any,
@@ -64,29 +63,24 @@ object FilterableComposition22 {
     __obj.asInstanceOf[FilterableComposition22[F, G]]
   }
   
-  @scala.inline
-  implicit class FilterableComposition22MutableBuilder[Self <: FilterableComposition22[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */] (val x: Self & (FilterableComposition22[F, G])) extends AnyVal {
+  extension [Self <: FilterableComposition22[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](x: Self & (FilterableComposition22[F, G])) {
     
-    @scala.inline
-    def setFilter(
+    inline def setFilter(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind2<G, GE, A>> */ js.Any, Predicate[js.Any]) => js.Any
     ): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFilterMap(
+    inline def setFilterMap(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind2<G, GE, A>> */ js.Any, js.Function1[js.Any, Option_[js.Any]]) => js.Any
     ): Self = StObject.set(x, "filterMap", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPartition(
+    inline def setPartition(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind2<G, GE, A>> */ js.Any, Predicate[js.Any]) => Separated[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind2<G, GE, A>> */ js.Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind2<G, GE, A>> */ js.Any
         ]
     ): Self = StObject.set(x, "partition", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPartitionMap(
+    inline def setPartitionMap(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind2<G, GE, A>> */ js.Any, js.Function1[js.Any, Either_[js.Any, js.Any]]) => Separated[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind2<G, GE, B>> */ js.Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind2<G, GE, C>> */ js.Any

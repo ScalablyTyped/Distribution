@@ -28,19 +28,16 @@ object writersMod {
     @JSImport("typesettable/build/src/writers", "Writer.SupportedRotation")
     @js.native
     def SupportedRotation: js.Any = js.native
-    @scala.inline
-    def SupportedRotation_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SupportedRotation")(x.asInstanceOf[js.Any])
+    inline def SupportedRotation_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SupportedRotation")(x.asInstanceOf[js.Any])
     
     @JSImport("typesettable/build/src/writers", "Writer.XOffsetFactor")
     @js.native
     def XOffsetFactor: KinIXAlignnumber = js.native
-    @scala.inline
-    def XOffsetFactor_=(x: KinIXAlignnumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XOffsetFactor")(x.asInstanceOf[js.Any])
+    inline def XOffsetFactor_=(x: KinIXAlignnumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XOffsetFactor")(x.asInstanceOf[js.Any])
     
     @JSImport("typesettable/build/src/writers", "Writer.YOffsetFactor")
     @js.native
     def YOffsetFactor: KinIYAlignnumber = js.native
-    @scala.inline
-    def YOffsetFactor_=(x: KinIYAlignnumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("YOffsetFactor")(x.asInstanceOf[js.Any])
+    inline def YOffsetFactor_=(x: KinIYAlignnumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("YOffsetFactor")(x.asInstanceOf[js.Any])
   }
 }

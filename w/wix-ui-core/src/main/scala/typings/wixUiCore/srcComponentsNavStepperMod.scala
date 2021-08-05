@@ -31,7 +31,6 @@ object srcComponentsNavStepperMod {
     @JSImport("wix-ui-core/src/components/nav-stepper", "NavStepper.Step")
     @js.native
     def Step: ComponentClass[ExternalNavStepProps, ComponentState] = js.native
-    @scala.inline
-    def Step_=(x: ComponentClass[ExternalNavStepProps, ComponentState]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Step")(x.asInstanceOf[js.Any])
+    inline def Step_=(x: ComponentClass[ExternalNavStepProps, ComponentState]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Step")(x.asInstanceOf[js.Any])
   }
 }

@@ -30,31 +30,23 @@ trait SchemaDimensionDimensionValue extends StObject {
 }
 object SchemaDimensionDimensionValue {
   
-  @scala.inline
-  def apply(): SchemaDimensionDimensionValue = {
+  inline def apply(): SchemaDimensionDimensionValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDimensionDimensionValue]
   }
   
-  @scala.inline
-  implicit class SchemaDimensionDimensionValueMutableBuilder[Self <: SchemaDimensionDimensionValue] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDimensionDimensionValue](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
+    inline def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
+    inline def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
   }
 }

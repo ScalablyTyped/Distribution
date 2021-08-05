@@ -14,8 +14,7 @@ trait XAutoTextContainer2
      with XIndexAccess
 object XAutoTextContainer2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     ElementNames: SafeArray[String],
     ElementType: `type`,

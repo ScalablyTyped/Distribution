@@ -30,8 +30,7 @@ trait IObjVer extends StObject {
 }
 object IObjVer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Clone: () => IObjVer,
     CloneFrom: IObjVer => Unit,
     ID: Double,
@@ -48,40 +47,28 @@ object IObjVer {
     __obj.asInstanceOf[IObjVer]
   }
   
-  @scala.inline
-  implicit class IObjVerMutableBuilder[Self <: IObjVer] (val x: Self) extends AnyVal {
+  extension [Self <: IObjVer](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => IObjVer): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IObjVer): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCloneFrom(value: IObjVer => Unit): Self = StObject.set(x, "CloneFrom", js.Any.fromFunction1(value))
+    inline def setCloneFrom(value: IObjVer => Unit): Self = StObject.set(x, "CloneFrom", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjID(value: IObjID): Self = StObject.set(x, "ObjID", value.asInstanceOf[js.Any])
+    inline def setObjID(value: IObjID): Self = StObject.set(x, "ObjID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerialize(value: () => js.Array[Double]): Self = StObject.set(x, "Serialize", js.Any.fromFunction0(value))
+    inline def setSerialize(value: () => js.Array[Double]): Self = StObject.set(x, "Serialize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetIDs(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "SetIDs", js.Any.fromFunction3(value))
+    inline def setSetIDs(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "SetIDs", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSetObjIDAndVersion(value: (IObjID, Double) => Unit): Self = StObject.set(x, "SetObjIDAndVersion", js.Any.fromFunction2(value))
+    inline def setSetObjIDAndVersion(value: (IObjID, Double) => Unit): Self = StObject.set(x, "SetObjIDAndVersion", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setToJSON(value: () => String): Self = StObject.set(x, "ToJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => String): Self = StObject.set(x, "ToJSON", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnserialize(value: js.Array[Double] => Unit): Self = StObject.set(x, "Unserialize", js.Any.fromFunction1(value))
+    inline def setUnserialize(value: js.Array[Double] => Unit): Self = StObject.set(x, "Unserialize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
   }
 }

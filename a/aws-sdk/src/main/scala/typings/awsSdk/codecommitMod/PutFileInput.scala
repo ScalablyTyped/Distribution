@@ -53,55 +53,39 @@ trait PutFileInput extends StObject {
 }
 object PutFileInput {
   
-  @scala.inline
-  def apply(branchName: BranchName, fileContent: FileContent, filePath: Path, repositoryName: RepositoryName): PutFileInput = {
+  inline def apply(branchName: BranchName, fileContent: FileContent, filePath: Path, repositoryName: RepositoryName): PutFileInput = {
     val __obj = js.Dynamic.literal(branchName = branchName.asInstanceOf[js.Any], fileContent = fileContent.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any], repositoryName = repositoryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutFileInput]
   }
   
-  @scala.inline
-  implicit class PutFileInputMutableBuilder[Self <: PutFileInput] (val x: Self) extends AnyVal {
+  extension [Self <: PutFileInput](x: Self) {
     
-    @scala.inline
-    def setBranchName(value: BranchName): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
+    inline def setBranchName(value: BranchName): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitMessage(value: Message): Self = StObject.set(x, "commitMessage", value.asInstanceOf[js.Any])
+    inline def setCommitMessage(value: Message): Self = StObject.set(x, "commitMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitMessageUndefined: Self = StObject.set(x, "commitMessage", js.undefined)
+    inline def setCommitMessageUndefined: Self = StObject.set(x, "commitMessage", js.undefined)
     
-    @scala.inline
-    def setEmail(value: Email): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: Email): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setFileContent(value: FileContent): Self = StObject.set(x, "fileContent", value.asInstanceOf[js.Any])
+    inline def setFileContent(value: FileContent): Self = StObject.set(x, "fileContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileMode(value: FileModeTypeEnum): Self = StObject.set(x, "fileMode", value.asInstanceOf[js.Any])
+    inline def setFileMode(value: FileModeTypeEnum): Self = StObject.set(x, "fileMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileModeUndefined: Self = StObject.set(x, "fileMode", js.undefined)
+    inline def setFileModeUndefined: Self = StObject.set(x, "fileMode", js.undefined)
     
-    @scala.inline
-    def setFilePath(value: Path): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: Path): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setParentCommitId(value: CommitId): Self = StObject.set(x, "parentCommitId", value.asInstanceOf[js.Any])
+    inline def setParentCommitId(value: CommitId): Self = StObject.set(x, "parentCommitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentCommitIdUndefined: Self = StObject.set(x, "parentCommitId", js.undefined)
+    inline def setParentCommitIdUndefined: Self = StObject.set(x, "parentCommitId", js.undefined)
     
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+    inline def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
   }
 }

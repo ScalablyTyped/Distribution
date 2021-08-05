@@ -19,8 +19,7 @@ object preAuthenticationMod {
   }
   object PreAuthenticationTriggerEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       callerContext: AwsSdkVersion,
       region: String,
       request: UserNotFound,
@@ -32,11 +31,9 @@ object preAuthenticationMod {
       __obj.asInstanceOf[PreAuthenticationTriggerEvent]
     }
     
-    @scala.inline
-    implicit class PreAuthenticationTriggerEventMutableBuilder[Self <: PreAuthenticationTriggerEvent] (val x: Self) extends AnyVal {
+    extension [Self <: PreAuthenticationTriggerEvent](x: Self) {
       
-      @scala.inline
-      def setRequest(value: UserNotFound): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: UserNotFound): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     }
   }
   

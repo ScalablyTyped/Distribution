@@ -12,8 +12,7 @@ object mediaImageUniDotDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def mediaImageDriverFactory(base: UniDriver[js.Any]): MediaImageDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("mediaImageDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[MediaImageDriver]
+  inline def mediaImageDriverFactory(base: UniDriver[js.Any]): MediaImageDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("mediaImageDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[MediaImageDriver]
   
   trait MediaImageDriver
     extends StObject
@@ -27,8 +26,7 @@ object mediaImageUniDotDriverMod {
   }
   object MediaImageDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -43,17 +41,13 @@ object mediaImageUniDotDriverMod {
       __obj.asInstanceOf[MediaImageDriver]
     }
     
-    @scala.inline
-    implicit class MediaImageDriverMutableBuilder[Self <: MediaImageDriver] (val x: Self) extends AnyVal {
+    extension [Self <: MediaImageDriver](x: Self) {
       
-      @scala.inline
-      def setIsError(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isError", js.Any.fromFunction0(value))
+      inline def setIsError(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isError", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsLoaded(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isLoaded", js.Any.fromFunction0(value))
+      inline def setIsLoaded(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isLoaded", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsLoading(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isLoading", js.Any.fromFunction0(value))
+      inline def setIsLoading(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isLoading", js.Any.fromFunction0(value))
     }
   }
 }

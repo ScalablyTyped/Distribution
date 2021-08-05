@@ -21,8 +21,7 @@ trait ParametersReposCreateOrUpdateFileContentsEndpoint extends StObject {
 }
 object ParametersReposCreateOrUpdateFileContentsEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ReposCreateOrUpdateFileContentsEndpoint,
     request: ReposCreateOrUpdateFileContentsRequestOptions,
     response: OctokitResponse[
@@ -33,17 +32,13 @@ object ParametersReposCreateOrUpdateFileContentsEndpoint {
     __obj.asInstanceOf[ParametersReposCreateOrUpdateFileContentsEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersReposCreateOrUpdateFileContentsEndpointMutableBuilder[Self <: ParametersReposCreateOrUpdateFileContentsEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersReposCreateOrUpdateFileContentsEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ReposCreateOrUpdateFileContentsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ReposCreateOrUpdateFileContentsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ReposCreateOrUpdateFileContentsRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ReposCreateOrUpdateFileContentsRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(
+    inline def setResponse(
       value: OctokitResponse[
           ReposCreateOrUpdateFileContentsResponseData | ReposCreateOrUpdateFileContentsResponse201Data
         ]

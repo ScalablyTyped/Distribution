@@ -20,22 +20,17 @@ trait OnTypeRenameProvider extends StObject {
 }
 object OnTypeRenameProvider {
   
-  @scala.inline
-  def apply(provideOnTypeRenameRanges: (ITextModel, Position, CancellationToken) => ProviderResult[Ranges]): OnTypeRenameProvider = {
+  inline def apply(provideOnTypeRenameRanges: (ITextModel, Position, CancellationToken) => ProviderResult[Ranges]): OnTypeRenameProvider = {
     val __obj = js.Dynamic.literal(provideOnTypeRenameRanges = js.Any.fromFunction3(provideOnTypeRenameRanges))
     __obj.asInstanceOf[OnTypeRenameProvider]
   }
   
-  @scala.inline
-  implicit class OnTypeRenameProviderMutableBuilder[Self <: OnTypeRenameProvider] (val x: Self) extends AnyVal {
+  extension [Self <: OnTypeRenameProvider](x: Self) {
     
-    @scala.inline
-    def setProvideOnTypeRenameRanges(value: (ITextModel, Position, CancellationToken) => ProviderResult[Ranges]): Self = StObject.set(x, "provideOnTypeRenameRanges", js.Any.fromFunction3(value))
+    inline def setProvideOnTypeRenameRanges(value: (ITextModel, Position, CancellationToken) => ProviderResult[Ranges]): Self = StObject.set(x, "provideOnTypeRenameRanges", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setWordPattern(value: RegExp): Self = StObject.set(x, "wordPattern", value.asInstanceOf[js.Any])
+    inline def setWordPattern(value: RegExp): Self = StObject.set(x, "wordPattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordPatternUndefined: Self = StObject.set(x, "wordPattern", js.undefined)
+    inline def setWordPatternUndefined: Self = StObject.set(x, "wordPattern", js.undefined)
   }
 }

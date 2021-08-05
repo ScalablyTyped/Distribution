@@ -18,25 +18,19 @@ trait AppCookieStickinessPolicy extends StObject {
 }
 object AppCookieStickinessPolicy {
   
-  @scala.inline
-  def apply(): AppCookieStickinessPolicy = {
+  inline def apply(): AppCookieStickinessPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AppCookieStickinessPolicy]
   }
   
-  @scala.inline
-  implicit class AppCookieStickinessPolicyMutableBuilder[Self <: AppCookieStickinessPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: AppCookieStickinessPolicy](x: Self) {
     
-    @scala.inline
-    def setCookieName(value: CookieName): Self = StObject.set(x, "CookieName", value.asInstanceOf[js.Any])
+    inline def setCookieName(value: CookieName): Self = StObject.set(x, "CookieName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCookieNameUndefined: Self = StObject.set(x, "CookieName", js.undefined)
+    inline def setCookieNameUndefined: Self = StObject.set(x, "CookieName", js.undefined)
     
-    @scala.inline
-    def setPolicyName(value: PolicyName): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
+    inline def setPolicyName(value: PolicyName): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyNameUndefined: Self = StObject.set(x, "PolicyName", js.undefined)
+    inline def setPolicyNameUndefined: Self = StObject.set(x, "PolicyName", js.undefined)
   }
 }

@@ -42,8 +42,7 @@ object policiesTypesMod {
        with PolicyOptions
   object CreatePolicyOptions {
     
-    @scala.inline
-    def apply(): CreatePolicyOptions = {
+    inline def apply(): CreatePolicyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreatePolicyOptions]
     }
@@ -55,20 +54,16 @@ object policiesTypesMod {
   }
   object CreatePolicyOptionsEn {
     
-    @scala.inline
-    def apply(): CreatePolicyOptionsEn = {
+    inline def apply(): CreatePolicyOptionsEn = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreatePolicyOptionsEn]
     }
     
-    @scala.inline
-    implicit class CreatePolicyOptionsEnMutableBuilder[Self <: CreatePolicyOptionsEn] (val x: Self) extends AnyVal {
+    extension [Self <: CreatePolicyOptionsEn](x: Self) {
       
-      @scala.inline
-      def setCommand(value: ALL | SELECT | INSERT | UPDATE | DELETE): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+      inline def setCommand(value: ALL | SELECT | INSERT | UPDATE | DELETE): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
+      inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
     }
   }
   
@@ -89,35 +84,26 @@ object policiesTypesMod {
   }
   object PolicyOptions {
     
-    @scala.inline
-    def apply(): PolicyOptions = {
+    inline def apply(): PolicyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PolicyOptions]
     }
     
-    @scala.inline
-    implicit class PolicyOptionsMutableBuilder[Self <: PolicyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PolicyOptions](x: Self) {
       
-      @scala.inline
-      def setCheck(value: String): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
+      inline def setCheck(value: String): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
+      inline def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
       
-      @scala.inline
-      def setRole(value: String | js.Array[String]): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: String | js.Array[String]): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
-      @scala.inline
-      def setRoleVarargs(value: String*): Self = StObject.set(x, "role", js.Array(value :_*))
+      inline def setRoleVarargs(value: String*): Self = StObject.set(x, "role", js.Array(value :_*))
       
-      @scala.inline
-      def setUsing(value: String): Self = StObject.set(x, "using", value.asInstanceOf[js.Any])
+      inline def setUsing(value: String): Self = StObject.set(x, "using", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsingUndefined: Self = StObject.set(x, "using", js.undefined)
+      inline def setUsingUndefined: Self = StObject.set(x, "using", js.undefined)
     }
   }
   

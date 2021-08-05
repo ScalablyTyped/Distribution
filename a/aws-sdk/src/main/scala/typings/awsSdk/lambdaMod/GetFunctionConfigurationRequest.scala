@@ -18,22 +18,17 @@ trait GetFunctionConfigurationRequest extends StObject {
 }
 object GetFunctionConfigurationRequest {
   
-  @scala.inline
-  def apply(FunctionName: NamespacedFunctionName): GetFunctionConfigurationRequest = {
+  inline def apply(FunctionName: NamespacedFunctionName): GetFunctionConfigurationRequest = {
     val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFunctionConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class GetFunctionConfigurationRequestMutableBuilder[Self <: GetFunctionConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetFunctionConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setFunctionName(value: NamespacedFunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
+    inline def setFunctionName(value: NamespacedFunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualifier(value: Qualifier): Self = StObject.set(x, "Qualifier", value.asInstanceOf[js.Any])
+    inline def setQualifier(value: Qualifier): Self = StObject.set(x, "Qualifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualifierUndefined: Self = StObject.set(x, "Qualifier", js.undefined)
+    inline def setQualifierUndefined: Self = StObject.set(x, "Qualifier", js.undefined)
   }
 }

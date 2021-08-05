@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mdx-js__util"
-version := "2.0.0-next.8-6dd39c"
+version := "2.0.0-next.8-00a78e"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

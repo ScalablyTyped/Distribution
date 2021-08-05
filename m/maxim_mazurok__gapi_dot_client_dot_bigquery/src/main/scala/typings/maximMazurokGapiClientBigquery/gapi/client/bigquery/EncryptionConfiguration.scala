@@ -14,19 +14,15 @@ trait EncryptionConfiguration extends StObject {
 }
 object EncryptionConfiguration {
   
-  @scala.inline
-  def apply(): EncryptionConfiguration = {
+  inline def apply(): EncryptionConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EncryptionConfiguration]
   }
   
-  @scala.inline
-  implicit class EncryptionConfigurationMutableBuilder[Self <: EncryptionConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: EncryptionConfiguration](x: Self) {
     
-    @scala.inline
-    def setKmsKeyName(value: String): Self = StObject.set(x, "kmsKeyName", value.asInstanceOf[js.Any])
+    inline def setKmsKeyName(value: String): Self = StObject.set(x, "kmsKeyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyNameUndefined: Self = StObject.set(x, "kmsKeyName", js.undefined)
+    inline def setKmsKeyNameUndefined: Self = StObject.set(x, "kmsKeyName", js.undefined)
   }
 }

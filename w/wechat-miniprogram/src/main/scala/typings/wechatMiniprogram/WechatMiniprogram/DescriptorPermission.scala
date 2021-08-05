@@ -15,25 +15,19 @@ trait DescriptorPermission extends StObject {
 }
 object DescriptorPermission {
   
-  @scala.inline
-  def apply(): DescriptorPermission = {
+  inline def apply(): DescriptorPermission = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescriptorPermission]
   }
   
-  @scala.inline
-  implicit class DescriptorPermissionMutableBuilder[Self <: DescriptorPermission] (val x: Self) extends AnyVal {
+  extension [Self <: DescriptorPermission](x: Self) {
     
-    @scala.inline
-    def setRead(value: Boolean): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+    inline def setRead(value: Boolean): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
+    inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
     
-    @scala.inline
-    def setWrite(value: Boolean): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
+    inline def setWrite(value: Boolean): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
+    inline def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
   }
 }

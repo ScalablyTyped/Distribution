@@ -43,8 +43,7 @@ trait UpdateUserRequest extends StObject {
 }
 object UpdateUserRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AwsAccountId: AwsAccountId,
     Email: String,
     Namespace: Namespace,
@@ -55,34 +54,24 @@ object UpdateUserRequest {
     __obj.asInstanceOf[UpdateUserRequest]
   }
   
-  @scala.inline
-  implicit class UpdateUserRequestMutableBuilder[Self <: UpdateUserRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateUserRequest](x: Self) {
     
-    @scala.inline
-    def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
+    inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomPermissionsName(value: RoleName): Self = StObject.set(x, "CustomPermissionsName", value.asInstanceOf[js.Any])
+    inline def setCustomPermissionsName(value: RoleName): Self = StObject.set(x, "CustomPermissionsName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomPermissionsNameUndefined: Self = StObject.set(x, "CustomPermissionsName", js.undefined)
+    inline def setCustomPermissionsNameUndefined: Self = StObject.set(x, "CustomPermissionsName", js.undefined)
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRole(value: UserRole): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
+    inline def setRole(value: UserRole): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnapplyCustomPermissions(value: Boolean): Self = StObject.set(x, "UnapplyCustomPermissions", value.asInstanceOf[js.Any])
+    inline def setUnapplyCustomPermissions(value: Boolean): Self = StObject.set(x, "UnapplyCustomPermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnapplyCustomPermissionsUndefined: Self = StObject.set(x, "UnapplyCustomPermissions", js.undefined)
+    inline def setUnapplyCustomPermissionsUndefined: Self = StObject.set(x, "UnapplyCustomPermissions", js.undefined)
     
-    @scala.inline
-    def setUserName(value: UserName_): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: UserName_): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

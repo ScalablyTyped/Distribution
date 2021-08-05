@@ -32,6 +32,5 @@ object Blob {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def blame(repo: js.Any, commit: js.Any, file: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("blame")(repo.asInstanceOf[js.Any], commit.asInstanceOf[js.Any], file.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def blame(repo: js.Any, commit: js.Any, file: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("blame")(repo.asInstanceOf[js.Any], commit.asInstanceOf[js.Any], file.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

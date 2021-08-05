@@ -43,20 +43,15 @@ object authorizations {
   trait AuthorizationMethod extends StObject
   object AuthorizationMethod {
     
-    @scala.inline
-    def chip: typings.stripe.stripeStrings.chip = "chip".asInstanceOf[typings.stripe.stripeStrings.chip]
+    inline def chip: typings.stripe.stripeStrings.chip = "chip".asInstanceOf[typings.stripe.stripeStrings.chip]
     
-    @scala.inline
-    def contactless: typings.stripe.stripeStrings.contactless = "contactless".asInstanceOf[typings.stripe.stripeStrings.contactless]
+    inline def contactless: typings.stripe.stripeStrings.contactless = "contactless".asInstanceOf[typings.stripe.stripeStrings.contactless]
     
-    @scala.inline
-    def keyed_in: typings.stripe.stripeStrings.keyed_in = "keyed_in".asInstanceOf[typings.stripe.stripeStrings.keyed_in]
+    inline def keyed_in: typings.stripe.stripeStrings.keyed_in = "keyed_in".asInstanceOf[typings.stripe.stripeStrings.keyed_in]
     
-    @scala.inline
-    def online: typings.stripe.stripeStrings.online = "online".asInstanceOf[typings.stripe.stripeStrings.online]
+    inline def online: typings.stripe.stripeStrings.online = "online".asInstanceOf[typings.stripe.stripeStrings.online]
     
-    @scala.inline
-    def swipe: typings.stripe.stripeStrings.swipe = "swipe".asInstanceOf[typings.stripe.stripeStrings.swipe]
+    inline def swipe: typings.stripe.stripeStrings.swipe = "swipe".asInstanceOf[typings.stripe.stripeStrings.swipe]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -67,14 +62,11 @@ object authorizations {
   trait AuthorizationStatus extends StObject
   object AuthorizationStatus {
     
-    @scala.inline
-    def closed: typings.stripe.stripeStrings.closed = "closed".asInstanceOf[typings.stripe.stripeStrings.closed]
+    inline def closed: typings.stripe.stripeStrings.closed = "closed".asInstanceOf[typings.stripe.stripeStrings.closed]
     
-    @scala.inline
-    def pending: typings.stripe.stripeStrings.pending = "pending".asInstanceOf[typings.stripe.stripeStrings.pending]
+    inline def pending: typings.stripe.stripeStrings.pending = "pending".asInstanceOf[typings.stripe.stripeStrings.pending]
     
-    @scala.inline
-    def reversed: typings.stripe.stripeStrings.reversed = "reversed".asInstanceOf[typings.stripe.stripeStrings.reversed]
+    inline def reversed: typings.stripe.stripeStrings.reversed = "reversed".asInstanceOf[typings.stripe.stripeStrings.reversed]
   }
   
   /**
@@ -188,8 +180,7 @@ object authorizations {
   }
   object IAuthorization {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       approved: Boolean,
       authorization_method: AuthorizationMethod,
       authorized_amount: Double,
@@ -218,83 +209,57 @@ object authorizations {
       __obj.asInstanceOf[IAuthorization]
     }
     
-    @scala.inline
-    implicit class IAuthorizationMutableBuilder[Self <: IAuthorization] (val x: Self) extends AnyVal {
+    extension [Self <: IAuthorization](x: Self) {
       
-      @scala.inline
-      def setApproved(value: Boolean): Self = StObject.set(x, "approved", value.asInstanceOf[js.Any])
+      inline def setApproved(value: Boolean): Self = StObject.set(x, "approved", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorization_method(value: AuthorizationMethod): Self = StObject.set(x, "authorization_method", value.asInstanceOf[js.Any])
+      inline def setAuthorization_method(value: AuthorizationMethod): Self = StObject.set(x, "authorization_method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorized_amount(value: Double): Self = StObject.set(x, "authorized_amount", value.asInstanceOf[js.Any])
+      inline def setAuthorized_amount(value: Double): Self = StObject.set(x, "authorized_amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorized_currency(value: String): Self = StObject.set(x, "authorized_currency", value.asInstanceOf[js.Any])
+      inline def setAuthorized_currency(value: String): Self = StObject.set(x, "authorized_currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBalance_transactions(value: js.Array[IBalanceTransaction]): Self = StObject.set(x, "balance_transactions", value.asInstanceOf[js.Any])
+      inline def setBalance_transactions(value: js.Array[IBalanceTransaction]): Self = StObject.set(x, "balance_transactions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBalance_transactionsVarargs(value: IBalanceTransaction*): Self = StObject.set(x, "balance_transactions", js.Array(value :_*))
+      inline def setBalance_transactionsVarargs(value: IBalanceTransaction*): Self = StObject.set(x, "balance_transactions", js.Array(value :_*))
       
-      @scala.inline
-      def setCard(value: IIssuingCard): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
+      inline def setCard(value: IIssuingCard): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCardholder(value: String | ICardholder): Self = StObject.set(x, "cardholder", value.asInstanceOf[js.Any])
+      inline def setCardholder(value: String | ICardholder): Self = StObject.set(x, "cardholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeld_amount(value: Double): Self = StObject.set(x, "held_amount", value.asInstanceOf[js.Any])
+      inline def setHeld_amount(value: Double): Self = StObject.set(x, "held_amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeld_currency(value: String): Self = StObject.set(x, "held_currency", value.asInstanceOf[js.Any])
+      inline def setHeld_currency(value: String): Self = StObject.set(x, "held_currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_held_amount_controllable(value: Boolean): Self = StObject.set(x, "is_held_amount_controllable", value.asInstanceOf[js.Any])
+      inline def setIs_held_amount_controllable(value: Boolean): Self = StObject.set(x, "is_held_amount_controllable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
+      inline def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMerchant_data(value: MerchantData): Self = StObject.set(x, "merchant_data", value.asInstanceOf[js.Any])
+      inline def setMerchant_data(value: MerchantData): Self = StObject.set(x, "merchant_data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject(value: issuingDotauthorization): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: issuingDotauthorization): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPending_authorized_amount(value: Double): Self = StObject.set(x, "pending_authorized_amount", value.asInstanceOf[js.Any])
+      inline def setPending_authorized_amount(value: Double): Self = StObject.set(x, "pending_authorized_amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPending_held_amount(value: Double): Self = StObject.set(x, "pending_held_amount", value.asInstanceOf[js.Any])
+      inline def setPending_held_amount(value: Double): Self = StObject.set(x, "pending_held_amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest_history(value: js.Array[RequestHistory]): Self = StObject.set(x, "request_history", value.asInstanceOf[js.Any])
+      inline def setRequest_history(value: js.Array[RequestHistory]): Self = StObject.set(x, "request_history", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest_historyVarargs(value: RequestHistory*): Self = StObject.set(x, "request_history", js.Array(value :_*))
+      inline def setRequest_historyVarargs(value: RequestHistory*): Self = StObject.set(x, "request_history", js.Array(value :_*))
       
-      @scala.inline
-      def setStatus(value: AuthorizationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: AuthorizationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransactions(value: js.Array[ITransaction]): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
+      inline def setTransactions(value: js.Array[ITransaction]): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransactionsVarargs(value: ITransaction*): Self = StObject.set(x, "transactions", js.Array(value :_*))
+      inline def setTransactionsVarargs(value: ITransaction*): Self = StObject.set(x, "transactions", js.Array(value :_*))
       
-      @scala.inline
-      def setVerification_data(value: VerificationData): Self = StObject.set(x, "verification_data", value.asInstanceOf[js.Any])
+      inline def setVerification_data(value: VerificationData): Self = StObject.set(x, "verification_data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWallet_provider(value: WalletProvider): Self = StObject.set(x, "wallet_provider", value.asInstanceOf[js.Any])
+      inline def setWallet_provider(value: WalletProvider): Self = StObject.set(x, "wallet_provider", value.asInstanceOf[js.Any])
     }
   }
   
@@ -313,26 +278,20 @@ object authorizations {
   }
   object IAuthorizationApproveOptions {
     
-    @scala.inline
-    def apply(): IAuthorizationApproveOptions = {
+    inline def apply(): IAuthorizationApproveOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IAuthorizationApproveOptions]
     }
     
-    @scala.inline
-    implicit class IAuthorizationApproveOptionsMutableBuilder[Self <: IAuthorizationApproveOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IAuthorizationApproveOptions](x: Self) {
       
-      @scala.inline
-      def setHeld_amount(value: Double): Self = StObject.set(x, "held_amount", value.asInstanceOf[js.Any])
+      inline def setHeld_amount(value: Double): Self = StObject.set(x, "held_amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeld_amountUndefined: Self = StObject.set(x, "held_amount", js.undefined)
+      inline def setHeld_amountUndefined: Self = StObject.set(x, "held_amount", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: IOptionsMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: IOptionsMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     }
   }
   
@@ -345,20 +304,16 @@ object authorizations {
   }
   object IAuthorizationDeclineOptions {
     
-    @scala.inline
-    def apply(): IAuthorizationDeclineOptions = {
+    inline def apply(): IAuthorizationDeclineOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IAuthorizationDeclineOptions]
     }
     
-    @scala.inline
-    implicit class IAuthorizationDeclineOptionsMutableBuilder[Self <: IAuthorizationDeclineOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IAuthorizationDeclineOptions](x: Self) {
       
-      @scala.inline
-      def setMetadata(value: IOptionsMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: IOptionsMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     }
   }
   
@@ -401,56 +356,40 @@ object authorizations {
   }
   object IAuthorizationListOptions {
     
-    @scala.inline
-    def apply(): IAuthorizationListOptions = {
+    inline def apply(): IAuthorizationListOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IAuthorizationListOptions]
     }
     
-    @scala.inline
-    implicit class IAuthorizationListOptionsMutableBuilder[Self <: IAuthorizationListOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IAuthorizationListOptions](x: Self) {
       
-      @scala.inline
-      def setCard(value: String): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
+      inline def setCard(value: String): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
+      inline def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
       
-      @scala.inline
-      def setCardholder(value: String): Self = StObject.set(x, "cardholder", value.asInstanceOf[js.Any])
+      inline def setCardholder(value: String): Self = StObject.set(x, "cardholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCardholderUndefined: Self = StObject.set(x, "cardholder", js.undefined)
+      inline def setCardholderUndefined: Self = StObject.set(x, "cardholder", js.undefined)
       
-      @scala.inline
-      def setCreated(value: String | ICreated): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: String | ICreated): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+      inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
       
-      @scala.inline
-      def setEnding_before(value: String): Self = StObject.set(x, "ending_before", value.asInstanceOf[js.Any])
+      inline def setEnding_before(value: String): Self = StObject.set(x, "ending_before", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnding_beforeUndefined: Self = StObject.set(x, "ending_before", js.undefined)
+      inline def setEnding_beforeUndefined: Self = StObject.set(x, "ending_before", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setStarting_after(value: String): Self = StObject.set(x, "starting_after", value.asInstanceOf[js.Any])
+      inline def setStarting_after(value: String): Self = StObject.set(x, "starting_after", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStarting_afterUndefined: Self = StObject.set(x, "starting_after", js.undefined)
+      inline def setStarting_afterUndefined: Self = StObject.set(x, "starting_after", js.undefined)
       
-      @scala.inline
-      def setStatus(value: AuthorizationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: AuthorizationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     }
   }
   
@@ -463,20 +402,16 @@ object authorizations {
   }
   object IAuthorizationUpdateOptions {
     
-    @scala.inline
-    def apply(): IAuthorizationUpdateOptions = {
+    inline def apply(): IAuthorizationUpdateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IAuthorizationUpdateOptions]
     }
     
-    @scala.inline
-    implicit class IAuthorizationUpdateOptionsMutableBuilder[Self <: IAuthorizationUpdateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IAuthorizationUpdateOptions](x: Self) {
       
-      @scala.inline
-      def setMetadata(value: IOptionsMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: IOptionsMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     }
   }
   
@@ -524,8 +459,7 @@ object authorizations {
   }
   object MerchantData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       category: String,
       city: String,
       country: String,
@@ -539,32 +473,23 @@ object authorizations {
       __obj.asInstanceOf[MerchantData]
     }
     
-    @scala.inline
-    implicit class MerchantDataMutableBuilder[Self <: MerchantData] (val x: Self) extends AnyVal {
+    extension [Self <: MerchantData](x: Self) {
       
-      @scala.inline
-      def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+      inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+      inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+      inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetwork_id(value: String): Self = StObject.set(x, "network_id", value.asInstanceOf[js.Any])
+      inline def setNetwork_id(value: String): Self = StObject.set(x, "network_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPostal_code(value: String): Self = StObject.set(x, "postal_code", value.asInstanceOf[js.Any])
+      inline def setPostal_code(value: String): Self = StObject.set(x, "postal_code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -612,8 +537,7 @@ object authorizations {
   }
   object RequestHistory {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       approved: Boolean,
       authorized_amount: Double,
       authorized_currency: String,
@@ -627,34 +551,25 @@ object authorizations {
       __obj.asInstanceOf[RequestHistory]
     }
     
-    @scala.inline
-    implicit class RequestHistoryMutableBuilder[Self <: RequestHistory] (val x: Self) extends AnyVal {
+    extension [Self <: RequestHistory](x: Self) {
       
-      @scala.inline
-      def setApproved(value: Boolean): Self = StObject.set(x, "approved", value.asInstanceOf[js.Any])
+      inline def setApproved(value: Boolean): Self = StObject.set(x, "approved", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorized_amount(value: Double): Self = StObject.set(x, "authorized_amount", value.asInstanceOf[js.Any])
+      inline def setAuthorized_amount(value: Double): Self = StObject.set(x, "authorized_amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorized_currency(value: String): Self = StObject.set(x, "authorized_currency", value.asInstanceOf[js.Any])
+      inline def setAuthorized_currency(value: String): Self = StObject.set(x, "authorized_currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeld_amount(value: Double): Self = StObject.set(x, "held_amount", value.asInstanceOf[js.Any])
+      inline def setHeld_amount(value: Double): Self = StObject.set(x, "held_amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeld_currency(value: String): Self = StObject.set(x, "held_currency", value.asInstanceOf[js.Any])
+      inline def setHeld_currency(value: String): Self = StObject.set(x, "held_currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReason(
+      inline def setReason(
         value: authentication_failed | authorization_controls | card_active | card_inactive | insufficient_funds | account_compliance_disabled | account_inactive | suspected_fraud | webhook_approved | webhook_declined | webhook_timeout
       ): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViolated_authorization_controls(value: Entity): Self = StObject.set(x, "violated_authorization_controls", value.asInstanceOf[js.Any])
+      inline def setViolated_authorization_controls(value: Entity): Self = StObject.set(x, "violated_authorization_controls", value.asInstanceOf[js.Any])
     }
   }
   
@@ -682,8 +597,7 @@ object authorizations {
   }
   object VerificationData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       address_line1_check: `match` | mismatch | not_provided,
       address_zip_check: `match` | mismatch | not_provided,
       authentication: exempt | failure | none | success,
@@ -693,20 +607,15 @@ object authorizations {
       __obj.asInstanceOf[VerificationData]
     }
     
-    @scala.inline
-    implicit class VerificationDataMutableBuilder[Self <: VerificationData] (val x: Self) extends AnyVal {
+    extension [Self <: VerificationData](x: Self) {
       
-      @scala.inline
-      def setAddress_line1_check(value: `match` | mismatch | not_provided): Self = StObject.set(x, "address_line1_check", value.asInstanceOf[js.Any])
+      inline def setAddress_line1_check(value: `match` | mismatch | not_provided): Self = StObject.set(x, "address_line1_check", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddress_zip_check(value: `match` | mismatch | not_provided): Self = StObject.set(x, "address_zip_check", value.asInstanceOf[js.Any])
+      inline def setAddress_zip_check(value: `match` | mismatch | not_provided): Self = StObject.set(x, "address_zip_check", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthentication(value: exempt | failure | none | success): Self = StObject.set(x, "authentication", value.asInstanceOf[js.Any])
+      inline def setAuthentication(value: exempt | failure | none | success): Self = StObject.set(x, "authentication", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCvc_check(value: `match` | mismatch | not_provided): Self = StObject.set(x, "cvc_check", value.asInstanceOf[js.Any])
+      inline def setCvc_check(value: `match` | mismatch | not_provided): Self = StObject.set(x, "cvc_check", value.asInstanceOf[js.Any])
     }
   }
   
@@ -718,13 +627,10 @@ object authorizations {
   trait WalletProvider extends StObject
   object WalletProvider {
     
-    @scala.inline
-    def apple_pay: typings.stripe.stripeStrings.apple_pay = "apple_pay".asInstanceOf[typings.stripe.stripeStrings.apple_pay]
+    inline def apple_pay: typings.stripe.stripeStrings.apple_pay = "apple_pay".asInstanceOf[typings.stripe.stripeStrings.apple_pay]
     
-    @scala.inline
-    def google_pay: typings.stripe.stripeStrings.google_pay = "google_pay".asInstanceOf[typings.stripe.stripeStrings.google_pay]
+    inline def google_pay: typings.stripe.stripeStrings.google_pay = "google_pay".asInstanceOf[typings.stripe.stripeStrings.google_pay]
     
-    @scala.inline
-    def samsung_pay: typings.stripe.stripeStrings.samsung_pay = "samsung_pay".asInstanceOf[typings.stripe.stripeStrings.samsung_pay]
+    inline def samsung_pay: typings.stripe.stripeStrings.samsung_pay = "samsung_pay".asInstanceOf[typings.stripe.stripeStrings.samsung_pay]
   }
 }

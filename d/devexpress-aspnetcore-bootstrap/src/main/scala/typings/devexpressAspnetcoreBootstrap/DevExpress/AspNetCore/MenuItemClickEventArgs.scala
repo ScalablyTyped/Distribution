@@ -16,8 +16,7 @@ trait MenuItemClickEventArgs
 }
 object MenuItemClickEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     htmlElement: js.Object,
     htmlEvent: js.Object,
     item: BootstrapMenuItem,
@@ -28,16 +27,12 @@ object MenuItemClickEventArgs {
     __obj.asInstanceOf[MenuItemClickEventArgs]
   }
   
-  @scala.inline
-  implicit class MenuItemClickEventArgsMutableBuilder[Self <: MenuItemClickEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: MenuItemClickEventArgs](x: Self) {
     
-    @scala.inline
-    def setHtmlElement(value: js.Object): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
+    inline def setHtmlElement(value: js.Object): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlEvent(value: js.Object): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+    inline def setHtmlEvent(value: js.Object): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: BootstrapMenuItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: BootstrapMenuItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
   }
 }

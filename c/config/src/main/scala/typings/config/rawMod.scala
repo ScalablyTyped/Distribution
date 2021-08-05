@@ -18,6 +18,5 @@ object rawMod {
     def resolve(): T = js.native
   }
   
-  @scala.inline
-  def raw[T](obj: T): RawConfig[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("raw")(obj.asInstanceOf[js.Any]).asInstanceOf[RawConfig[T]]
+  inline def raw[T](obj: T): RawConfig[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("raw")(obj.asInstanceOf[js.Any]).asInstanceOf[RawConfig[T]]
 }

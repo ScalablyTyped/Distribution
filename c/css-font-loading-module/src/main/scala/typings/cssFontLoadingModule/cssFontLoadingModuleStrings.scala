@@ -12,39 +12,33 @@ object cssFontLoadingModuleStrings {
   sealed trait error
     extends StObject
        with FontFaceLoadStatus
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait loaded
     extends StObject
        with FontFaceLoadStatus
        with FontFaceSetLoadStatus
-  @scala.inline
-  def loaded: loaded = "loaded".asInstanceOf[loaded]
+  inline def loaded: loaded = "loaded".asInstanceOf[loaded]
   
   @js.native
   sealed trait loading
     extends StObject
        with FontFaceLoadStatus
        with FontFaceSetLoadStatus
-  @scala.inline
-  def loading: loading = "loading".asInstanceOf[loading]
+  inline def loading: loading = "loading".asInstanceOf[loading]
   
   @js.native
   sealed trait loadingdone extends StObject
-  @scala.inline
-  def loadingdone: loadingdone = "loadingdone".asInstanceOf[loadingdone]
+  inline def loadingdone: loadingdone = "loadingdone".asInstanceOf[loadingdone]
   
   @js.native
   sealed trait loadingerror extends StObject
-  @scala.inline
-  def loadingerror: loadingerror = "loadingerror".asInstanceOf[loadingerror]
+  inline def loadingerror: loadingerror = "loadingerror".asInstanceOf[loadingerror]
   
   @js.native
   sealed trait unloaded
     extends StObject
        with FontFaceLoadStatus
-  @scala.inline
-  def unloaded: unloaded = "unloaded".asInstanceOf[unloaded]
+  inline def unloaded: unloaded = "unloaded".asInstanceOf[unloaded]
 }

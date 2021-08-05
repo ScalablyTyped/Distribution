@@ -38,8 +38,7 @@ trait Story
 }
 object Story {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activateNextStoryPointAsync: () => js.Promise[StoryPoint],
     activatePreviousStoryPointAsync: () => js.Promise[StoryPoint],
     activateStoryPointAsync: Double => js.Promise[StoryPoint],
@@ -60,25 +59,18 @@ object Story {
     __obj.asInstanceOf[Story]
   }
   
-  @scala.inline
-  implicit class StoryMutableBuilder[Self <: Story] (val x: Self) extends AnyVal {
+  extension [Self <: Story](x: Self) {
     
-    @scala.inline
-    def setActivateNextStoryPointAsync(value: () => js.Promise[StoryPoint]): Self = StObject.set(x, "activateNextStoryPointAsync", js.Any.fromFunction0(value))
+    inline def setActivateNextStoryPointAsync(value: () => js.Promise[StoryPoint]): Self = StObject.set(x, "activateNextStoryPointAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setActivatePreviousStoryPointAsync(value: () => js.Promise[StoryPoint]): Self = StObject.set(x, "activatePreviousStoryPointAsync", js.Any.fromFunction0(value))
+    inline def setActivatePreviousStoryPointAsync(value: () => js.Promise[StoryPoint]): Self = StObject.set(x, "activatePreviousStoryPointAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setActivateStoryPointAsync(value: Double => js.Promise[StoryPoint]): Self = StObject.set(x, "activateStoryPointAsync", js.Any.fromFunction1(value))
+    inline def setActivateStoryPointAsync(value: Double => js.Promise[StoryPoint]): Self = StObject.set(x, "activateStoryPointAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetActiveStoryPoint(value: () => StoryPoint): Self = StObject.set(x, "getActiveStoryPoint", js.Any.fromFunction0(value))
+    inline def setGetActiveStoryPoint(value: () => StoryPoint): Self = StObject.set(x, "getActiveStoryPoint", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStoryPointsInfo(value: () => js.Array[StoryPointInfo]): Self = StObject.set(x, "getStoryPointsInfo", js.Any.fromFunction0(value))
+    inline def setGetStoryPointsInfo(value: () => js.Array[StoryPointInfo]): Self = StObject.set(x, "getStoryPointsInfo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRevertStoryPointAsync(value: Double => js.Promise[StoryPoint]): Self = StObject.set(x, "revertStoryPointAsync", js.Any.fromFunction1(value))
+    inline def setRevertStoryPointAsync(value: Double => js.Promise[StoryPoint]): Self = StObject.set(x, "revertStoryPointAsync", js.Any.fromFunction1(value))
   }
 }

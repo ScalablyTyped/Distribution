@@ -16,25 +16,19 @@ trait AllowedValues extends StObject {
 }
 object AllowedValues {
   
-  @scala.inline
-  def apply(all: scala.Double, allowedValues: scala.Double, dependentFields: scala.Double, none: scala.Double): AllowedValues = {
+  inline def apply(all: scala.Double, allowedValues: scala.Double, dependentFields: scala.Double, none: scala.Double): AllowedValues = {
     val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any], allowedValues = allowedValues.asInstanceOf[js.Any], dependentFields = dependentFields.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllowedValues]
   }
   
-  @scala.inline
-  implicit class AllowedValuesMutableBuilder[Self <: AllowedValues] (val x: Self) extends AnyVal {
+  extension [Self <: AllowedValues](x: Self) {
     
-    @scala.inline
-    def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    inline def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedValues(value: scala.Double): Self = StObject.set(x, "allowedValues", value.asInstanceOf[js.Any])
+    inline def setAllowedValues(value: scala.Double): Self = StObject.set(x, "allowedValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDependentFields(value: scala.Double): Self = StObject.set(x, "dependentFields", value.asInstanceOf[js.Any])
+    inline def setDependentFields(value: scala.Double): Self = StObject.set(x, "dependentFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
   }
 }

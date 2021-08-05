@@ -12,35 +12,23 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def check(file: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("check")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def check(file: String, options: CheckOptions): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  inline def check(file: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("check")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  inline def check(file: String, options: CheckOptions): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
   
-  @scala.inline
-  def checkSync(file: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("checkSync")(file.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def checkSync(file: String, options: CheckOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkSync")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def checkSync(file: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("checkSync")(file.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def checkSync(file: String, options: CheckOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkSync")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def lock(file: String): js.Promise[js.Function0[js.Promise[Unit]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("lock")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Function0[js.Promise[Unit]]]]
-  @scala.inline
-  def lock(file: String, options: LockOptions): js.Promise[js.Function0[js.Promise[Unit]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("lock")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Function0[js.Promise[Unit]]]]
+  inline def lock(file: String): js.Promise[js.Function0[js.Promise[Unit]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("lock")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Function0[js.Promise[Unit]]]]
+  inline def lock(file: String, options: LockOptions): js.Promise[js.Function0[js.Promise[Unit]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("lock")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Function0[js.Promise[Unit]]]]
   
-  @scala.inline
-  def lockSync(file: String): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("lockSync")(file.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
-  @scala.inline
-  def lockSync(file: String, options: LockOptions): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lockSync")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def lockSync(file: String): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("lockSync")(file.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+  inline def lockSync(file: String, options: LockOptions): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lockSync")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
-  @scala.inline
-  def unlock(file: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("unlock")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def unlock(file: String, options: UnlockOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("unlock")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def unlock(file: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("unlock")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def unlock(file: String, options: UnlockOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("unlock")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def unlockSync(file: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unlockSync")(file.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def unlockSync(file: String, options: UnlockOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unlockSync")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unlockSync(file: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unlockSync")(file.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def unlockSync(file: String, options: UnlockOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unlockSync")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait CheckOptions extends StObject {
     
@@ -57,38 +45,28 @@ object mod {
   }
   object CheckOptions {
     
-    @scala.inline
-    def apply(): CheckOptions = {
+    inline def apply(): CheckOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CheckOptions]
     }
     
-    @scala.inline
-    implicit class CheckOptionsMutableBuilder[Self <: CheckOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CheckOptions](x: Self) {
       
-      @scala.inline
-      def setFs(value: js.Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+      inline def setFs(value: js.Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
+      inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
       
-      @scala.inline
-      def setLockfilePath(value: String): Self = StObject.set(x, "lockfilePath", value.asInstanceOf[js.Any])
+      inline def setLockfilePath(value: String): Self = StObject.set(x, "lockfilePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLockfilePathUndefined: Self = StObject.set(x, "lockfilePath", js.undefined)
+      inline def setLockfilePathUndefined: Self = StObject.set(x, "lockfilePath", js.undefined)
       
-      @scala.inline
-      def setRealpath(value: Boolean): Self = StObject.set(x, "realpath", value.asInstanceOf[js.Any])
+      inline def setRealpath(value: Boolean): Self = StObject.set(x, "realpath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRealpathUndefined: Self = StObject.set(x, "realpath", js.undefined)
+      inline def setRealpathUndefined: Self = StObject.set(x, "realpath", js.undefined)
       
-      @scala.inline
-      def setStale(value: Double): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
+      inline def setStale(value: Double): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaleUndefined: Self = StObject.set(x, "stale", js.undefined)
+      inline def setStaleUndefined: Self = StObject.set(x, "stale", js.undefined)
     }
   }
   
@@ -116,56 +94,40 @@ object mod {
   }
   object LockOptions {
     
-    @scala.inline
-    def apply(): LockOptions = {
+    inline def apply(): LockOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LockOptions]
     }
     
-    @scala.inline
-    implicit class LockOptionsMutableBuilder[Self <: LockOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LockOptions](x: Self) {
       
-      @scala.inline
-      def setFs(value: js.Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+      inline def setFs(value: js.Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
+      inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
       
-      @scala.inline
-      def setLockfilePath(value: String): Self = StObject.set(x, "lockfilePath", value.asInstanceOf[js.Any])
+      inline def setLockfilePath(value: String): Self = StObject.set(x, "lockfilePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLockfilePathUndefined: Self = StObject.set(x, "lockfilePath", js.undefined)
+      inline def setLockfilePathUndefined: Self = StObject.set(x, "lockfilePath", js.undefined)
       
-      @scala.inline
-      def setOnCompromised(value: /* err */ Error => js.Any): Self = StObject.set(x, "onCompromised", js.Any.fromFunction1(value))
+      inline def setOnCompromised(value: /* err */ Error => js.Any): Self = StObject.set(x, "onCompromised", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCompromisedUndefined: Self = StObject.set(x, "onCompromised", js.undefined)
+      inline def setOnCompromisedUndefined: Self = StObject.set(x, "onCompromised", js.undefined)
       
-      @scala.inline
-      def setRealpath(value: Boolean): Self = StObject.set(x, "realpath", value.asInstanceOf[js.Any])
+      inline def setRealpath(value: Boolean): Self = StObject.set(x, "realpath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRealpathUndefined: Self = StObject.set(x, "realpath", js.undefined)
+      inline def setRealpathUndefined: Self = StObject.set(x, "realpath", js.undefined)
       
-      @scala.inline
-      def setRetries(value: Double | OperationOptions): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
+      inline def setRetries(value: Double | OperationOptions): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
+      inline def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
       
-      @scala.inline
-      def setStale(value: Double): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
+      inline def setStale(value: Double): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaleUndefined: Self = StObject.set(x, "stale", js.undefined)
+      inline def setStaleUndefined: Self = StObject.set(x, "stale", js.undefined)
       
-      @scala.inline
-      def setUpdate(value: Double): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+      inline def setUpdate(value: Double): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+      inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     }
   }
   
@@ -181,32 +143,24 @@ object mod {
   }
   object UnlockOptions {
     
-    @scala.inline
-    def apply(): UnlockOptions = {
+    inline def apply(): UnlockOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnlockOptions]
     }
     
-    @scala.inline
-    implicit class UnlockOptionsMutableBuilder[Self <: UnlockOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UnlockOptions](x: Self) {
       
-      @scala.inline
-      def setFs(value: js.Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+      inline def setFs(value: js.Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
+      inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
       
-      @scala.inline
-      def setLockfilePath(value: String): Self = StObject.set(x, "lockfilePath", value.asInstanceOf[js.Any])
+      inline def setLockfilePath(value: String): Self = StObject.set(x, "lockfilePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLockfilePathUndefined: Self = StObject.set(x, "lockfilePath", js.undefined)
+      inline def setLockfilePathUndefined: Self = StObject.set(x, "lockfilePath", js.undefined)
       
-      @scala.inline
-      def setRealpath(value: Boolean): Self = StObject.set(x, "realpath", value.asInstanceOf[js.Any])
+      inline def setRealpath(value: Boolean): Self = StObject.set(x, "realpath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRealpathUndefined: Self = StObject.set(x, "realpath", js.undefined)
+      inline def setRealpathUndefined: Self = StObject.set(x, "realpath", js.undefined)
     }
   }
 }

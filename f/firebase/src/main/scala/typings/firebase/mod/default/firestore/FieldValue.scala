@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("firebase", "default.firestore.FieldValue")
 @js.native
-class FieldValue protected () extends StObject {
+/* private */ class FieldValue () extends StObject {
   
   /**
     * Returns true if this `FieldValue` is equal to the provided one.
@@ -33,8 +33,7 @@ object FieldValue {
     * @param elements The elements to remove from the array.
     * @return The FieldValue sentinel for use in a call to `set()` or `update()`.
     */
-  @scala.inline
-  def arrayRemove(elements: js.Any*): typings.firebase.mod.firebase.firestore.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayRemove")(elements.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.firestore.FieldValue]
+  inline def arrayRemove(elements: js.Any*): typings.firebase.mod.firebase.firestore.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayRemove")(elements.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.firestore.FieldValue]
   
   /**
     * Returns a special value that can be used with `set()` or `update()` that tells
@@ -47,14 +46,12 @@ object FieldValue {
     * @param elements The elements to union into the array.
     * @return The FieldValue sentinel for use in a call to `set()` or `update()`.
     */
-  @scala.inline
-  def arrayUnion(elements: js.Any*): typings.firebase.mod.firebase.firestore.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayUnion")(elements.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.firestore.FieldValue]
+  inline def arrayUnion(elements: js.Any*): typings.firebase.mod.firebase.firestore.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayUnion")(elements.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.firestore.FieldValue]
   
   /**
     * Returns a sentinel for use with `update()` to mark a field for deletion.
     */
-  @scala.inline
-  def delete(): typings.firebase.mod.firebase.firestore.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")().asInstanceOf[typings.firebase.mod.firebase.firestore.FieldValue]
+  inline def delete(): typings.firebase.mod.firebase.firestore.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")().asInstanceOf[typings.firebase.mod.firebase.firestore.FieldValue]
   
   /**
     * Returns a special value that can be used with `set()` or `update()` that tells
@@ -73,13 +70,11 @@ object FieldValue {
     * @param n The value to increment by.
     * @return The FieldValue sentinel for use in a call to `set()` or `update()`.
     */
-  @scala.inline
-  def increment(n: Double): typings.firebase.mod.firebase.firestore.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("increment")(n.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.firestore.FieldValue]
+  inline def increment(n: Double): typings.firebase.mod.firebase.firestore.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("increment")(n.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.firestore.FieldValue]
   
   /**
     * Returns a sentinel used with `set()` or `update()` to include a
     * server-generated timestamp in the written data.
     */
-  @scala.inline
-  def serverTimestamp(): typings.firebase.mod.firebase.firestore.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("serverTimestamp")().asInstanceOf[typings.firebase.mod.firebase.firestore.FieldValue]
+  inline def serverTimestamp(): typings.firebase.mod.firebase.firestore.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("serverTimestamp")().asInstanceOf[typings.firebase.mod.firebase.firestore.FieldValue]
 }

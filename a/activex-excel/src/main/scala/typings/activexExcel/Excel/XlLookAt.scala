@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlLookAt extends StObject
 object XlLookAt {
   
-  @scala.inline
-  def xlPart: `2` = 2.asInstanceOf[`2`]
+  inline def xlPart: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlWhole: `1` = 1.asInstanceOf[`1`]
+  inline def xlWhole: `1` = 1.asInstanceOf[`1`]
 }

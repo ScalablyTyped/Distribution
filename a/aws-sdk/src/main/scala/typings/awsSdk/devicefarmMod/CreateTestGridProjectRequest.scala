@@ -18,22 +18,17 @@ trait CreateTestGridProjectRequest extends StObject {
 }
 object CreateTestGridProjectRequest {
   
-  @scala.inline
-  def apply(name: ResourceName): CreateTestGridProjectRequest = {
+  inline def apply(name: ResourceName): CreateTestGridProjectRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTestGridProjectRequest]
   }
   
-  @scala.inline
-  implicit class CreateTestGridProjectRequestMutableBuilder[Self <: CreateTestGridProjectRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateTestGridProjectRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: ResourceDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: ResourceDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

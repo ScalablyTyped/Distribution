@@ -13,19 +13,15 @@ trait GetRunResult extends StObject {
 }
 object GetRunResult {
   
-  @scala.inline
-  def apply(): GetRunResult = {
+  inline def apply(): GetRunResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetRunResult]
   }
   
-  @scala.inline
-  implicit class GetRunResultMutableBuilder[Self <: GetRunResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetRunResult](x: Self) {
     
-    @scala.inline
-    def setRun(value: Run): Self = StObject.set(x, "run", value.asInstanceOf[js.Any])
+    inline def setRun(value: Run): Self = StObject.set(x, "run", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunUndefined: Self = StObject.set(x, "run", js.undefined)
+    inline def setRunUndefined: Self = StObject.set(x, "run", js.undefined)
   }
 }

@@ -18,16 +18,13 @@ trait Get[TElement]
 }
 object Get {
   
-  @scala.inline
-  def apply[TElement](get: Tween[TElement] => js.Any): Get[TElement] = {
+  inline def apply[TElement](get: Tween[TElement] => js.Any): Get[TElement] = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
     __obj.asInstanceOf[Get[TElement]]
   }
   
-  @scala.inline
-  implicit class GetMutableBuilder[Self <: Get[?], TElement] (val x: Self & Get[TElement]) extends AnyVal {
+  extension [Self <: Get[?], TElement](x: Self & Get[TElement]) {
     
-    @scala.inline
-    def setGet(value: Tween[TElement] => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: Tween[TElement] => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
   }
 }

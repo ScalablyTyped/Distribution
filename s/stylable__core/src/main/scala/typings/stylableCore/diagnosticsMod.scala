@@ -36,27 +36,21 @@ object diagnosticsMod {
   }
   object Diagnostic {
     
-    @scala.inline
-    def apply(message: String, node: Node, options: DiagnosticOptions, `type`: DiagnosticType): Diagnostic = {
+    inline def apply(message: String, node: Node, options: DiagnosticOptions, `type`: DiagnosticType): Diagnostic = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Diagnostic]
     }
     
-    @scala.inline
-    implicit class DiagnosticMutableBuilder[Self <: Diagnostic] (val x: Self) extends AnyVal {
+    extension [Self <: Diagnostic](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: DiagnosticOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: DiagnosticOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: DiagnosticType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: DiagnosticType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -66,20 +60,16 @@ object diagnosticsMod {
   }
   object DiagnosticOptions {
     
-    @scala.inline
-    def apply(): DiagnosticOptions = {
+    inline def apply(): DiagnosticOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DiagnosticOptions]
     }
     
-    @scala.inline
-    implicit class DiagnosticOptionsMutableBuilder[Self <: DiagnosticOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DiagnosticOptions](x: Self) {
       
-      @scala.inline
-      def setWord(value: String): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
+      inline def setWord(value: String): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWordUndefined: Self = StObject.set(x, "word", js.undefined)
+      inline def setWordUndefined: Self = StObject.set(x, "word", js.undefined)
     }
   }
   
@@ -90,10 +80,8 @@ object diagnosticsMod {
   trait DiagnosticType extends StObject
   object DiagnosticType {
     
-    @scala.inline
-    def error: typings.stylableCore.stylableCoreStrings.error = "error".asInstanceOf[typings.stylableCore.stylableCoreStrings.error]
+    inline def error: typings.stylableCore.stylableCoreStrings.error = "error".asInstanceOf[typings.stylableCore.stylableCoreStrings.error]
     
-    @scala.inline
-    def warning: typings.stylableCore.stylableCoreStrings.warning = "warning".asInstanceOf[typings.stylableCore.stylableCoreStrings.warning]
+    inline def warning: typings.stylableCore.stylableCoreStrings.warning = "warning".asInstanceOf[typings.stylableCore.stylableCoreStrings.warning]
   }
 }

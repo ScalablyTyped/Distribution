@@ -62,43 +62,31 @@ trait SchemaFhirStore extends StObject {
 }
 object SchemaFhirStore {
   
-  @scala.inline
-  def apply(): SchemaFhirStore = {
+  inline def apply(): SchemaFhirStore = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFhirStore]
   }
   
-  @scala.inline
-  implicit class SchemaFhirStoreMutableBuilder[Self <: SchemaFhirStore] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFhirStore](x: Self) {
     
-    @scala.inline
-    def setDisableReferentialIntegrity(value: Boolean): Self = StObject.set(x, "disableReferentialIntegrity", value.asInstanceOf[js.Any])
+    inline def setDisableReferentialIntegrity(value: Boolean): Self = StObject.set(x, "disableReferentialIntegrity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableReferentialIntegrityUndefined: Self = StObject.set(x, "disableReferentialIntegrity", js.undefined)
+    inline def setDisableReferentialIntegrityUndefined: Self = StObject.set(x, "disableReferentialIntegrity", js.undefined)
     
-    @scala.inline
-    def setDisableResourceVersioning(value: Boolean): Self = StObject.set(x, "disableResourceVersioning", value.asInstanceOf[js.Any])
+    inline def setDisableResourceVersioning(value: Boolean): Self = StObject.set(x, "disableResourceVersioning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableResourceVersioningUndefined: Self = StObject.set(x, "disableResourceVersioning", js.undefined)
+    inline def setDisableResourceVersioningUndefined: Self = StObject.set(x, "disableResourceVersioning", js.undefined)
     
-    @scala.inline
-    def setEnableUpdateCreate(value: Boolean): Self = StObject.set(x, "enableUpdateCreate", value.asInstanceOf[js.Any])
+    inline def setEnableUpdateCreate(value: Boolean): Self = StObject.set(x, "enableUpdateCreate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableUpdateCreateUndefined: Self = StObject.set(x, "enableUpdateCreate", js.undefined)
+    inline def setEnableUpdateCreateUndefined: Self = StObject.set(x, "enableUpdateCreate", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNotificationConfig(value: SchemaNotificationConfig): Self = StObject.set(x, "notificationConfig", value.asInstanceOf[js.Any])
+    inline def setNotificationConfig(value: SchemaNotificationConfig): Self = StObject.set(x, "notificationConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationConfigUndefined: Self = StObject.set(x, "notificationConfig", js.undefined)
+    inline def setNotificationConfigUndefined: Self = StObject.set(x, "notificationConfig", js.undefined)
   }
 }

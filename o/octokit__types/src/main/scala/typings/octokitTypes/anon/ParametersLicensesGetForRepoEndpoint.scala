@@ -18,8 +18,7 @@ trait ParametersLicensesGetForRepoEndpoint extends StObject {
 }
 object ParametersLicensesGetForRepoEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: LicensesGetForRepoEndpoint,
     request: LicensesGetForRepoRequestOptions,
     response: OctokitResponse[LicensesGetForRepoResponseData]
@@ -28,16 +27,12 @@ object ParametersLicensesGetForRepoEndpoint {
     __obj.asInstanceOf[ParametersLicensesGetForRepoEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersLicensesGetForRepoEndpointMutableBuilder[Self <: ParametersLicensesGetForRepoEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersLicensesGetForRepoEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: LicensesGetForRepoEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: LicensesGetForRepoEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: LicensesGetForRepoRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: LicensesGetForRepoRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[LicensesGetForRepoResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[LicensesGetForRepoResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

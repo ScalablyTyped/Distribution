@@ -16,8 +16,7 @@ object msWindowMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isMsWindow(window: Window): /* is @aws-crypto/ie11-detection.@aws-crypto/ie11-detection/build/MsWindow.MsWindow */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMsWindow")(window.asInstanceOf[js.Any]).asInstanceOf[/* is @aws-crypto/ie11-detection.@aws-crypto/ie11-detection/build/MsWindow.MsWindow */ Boolean]
+  inline def isMsWindow(window: Window): /* is @aws-crypto/ie11-detection.@aws-crypto/ie11-detection/build/MsWindow.MsWindow */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMsWindow")(window.asInstanceOf[js.Any]).asInstanceOf[/* is @aws-crypto/ie11-detection.@aws-crypto/ie11-detection/build/MsWindow.MsWindow */ Boolean]
   
   trait MsCrypto extends StObject {
     
@@ -27,20 +26,16 @@ object msWindowMod {
   }
   object MsCrypto {
     
-    @scala.inline
-    def apply(getRandomValues: Uint8Array => Unit, subtle: MsSubtleCrypto): MsCrypto = {
+    inline def apply(getRandomValues: Uint8Array => Unit, subtle: MsSubtleCrypto): MsCrypto = {
       val __obj = js.Dynamic.literal(getRandomValues = js.Any.fromFunction1(getRandomValues), subtle = subtle.asInstanceOf[js.Any])
       __obj.asInstanceOf[MsCrypto]
     }
     
-    @scala.inline
-    implicit class MsCryptoMutableBuilder[Self <: MsCrypto] (val x: Self) extends AnyVal {
+    extension [Self <: MsCrypto](x: Self) {
       
-      @scala.inline
-      def setGetRandomValues(value: Uint8Array => Unit): Self = StObject.set(x, "getRandomValues", js.Any.fromFunction1(value))
+      inline def setGetRandomValues(value: Uint8Array => Unit): Self = StObject.set(x, "getRandomValues", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSubtle(value: MsSubtleCrypto): Self = StObject.set(x, "subtle", value.asInstanceOf[js.Any])
+      inline def setSubtle(value: MsSubtleCrypto): Self = StObject.set(x, "subtle", value.asInstanceOf[js.Any])
     }
   }
   

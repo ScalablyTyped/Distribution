@@ -16,19 +16,15 @@ trait SchemaDeobfuscationFile extends StObject {
 }
 object SchemaDeobfuscationFile {
   
-  @scala.inline
-  def apply(): SchemaDeobfuscationFile = {
+  inline def apply(): SchemaDeobfuscationFile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDeobfuscationFile]
   }
   
-  @scala.inline
-  implicit class SchemaDeobfuscationFileMutableBuilder[Self <: SchemaDeobfuscationFile] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDeobfuscationFile](x: Self) {
     
-    @scala.inline
-    def setSymbolType(value: String): Self = StObject.set(x, "symbolType", value.asInstanceOf[js.Any])
+    inline def setSymbolType(value: String): Self = StObject.set(x, "symbolType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolTypeUndefined: Self = StObject.set(x, "symbolType", js.undefined)
+    inline def setSymbolTypeUndefined: Self = StObject.set(x, "symbolType", js.undefined)
   }
 }

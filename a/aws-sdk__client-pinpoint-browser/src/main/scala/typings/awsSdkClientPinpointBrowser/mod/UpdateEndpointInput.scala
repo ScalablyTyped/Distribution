@@ -10,8 +10,7 @@ trait UpdateEndpointInput
      with typings.awsSdkClientPinpointBrowser.typesUpdateEndpointInputMod.UpdateEndpointInput
 object UpdateEndpointInput {
   
-  @scala.inline
-  def apply(ApplicationId: String, EndpointId: String, EndpointRequest: EndpointRequest): UpdateEndpointInput = {
+  inline def apply(ApplicationId: String, EndpointId: String, EndpointRequest: EndpointRequest): UpdateEndpointInput = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], EndpointId = EndpointId.asInstanceOf[js.Any], EndpointRequest = EndpointRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateEndpointInput]
   }

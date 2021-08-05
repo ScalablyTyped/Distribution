@@ -15,64 +15,56 @@ object scrollAssistMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def enableScrollAssist(
+  inline def enableScrollAssist(
     componentEl: HTMLElement,
     inputEl: HTMLInputElement,
     contentEl: Null,
     footerEl: Null,
     keyboardHeight: Double
   ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("enableScrollAssist")(componentEl.asInstanceOf[js.Any], inputEl.asInstanceOf[js.Any], contentEl.asInstanceOf[js.Any], footerEl.asInstanceOf[js.Any], keyboardHeight.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
-  @scala.inline
-  def enableScrollAssist(
+  inline def enableScrollAssist(
     componentEl: HTMLElement,
     inputEl: HTMLInputElement,
     contentEl: Null,
     footerEl: HTMLIonFooterElement,
     keyboardHeight: Double
   ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("enableScrollAssist")(componentEl.asInstanceOf[js.Any], inputEl.asInstanceOf[js.Any], contentEl.asInstanceOf[js.Any], footerEl.asInstanceOf[js.Any], keyboardHeight.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
-  @scala.inline
-  def enableScrollAssist(
+  inline def enableScrollAssist(
     componentEl: HTMLElement,
     inputEl: HTMLInputElement,
     contentEl: HTMLIonContentElement,
     footerEl: Null,
     keyboardHeight: Double
   ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("enableScrollAssist")(componentEl.asInstanceOf[js.Any], inputEl.asInstanceOf[js.Any], contentEl.asInstanceOf[js.Any], footerEl.asInstanceOf[js.Any], keyboardHeight.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
-  @scala.inline
-  def enableScrollAssist(
+  inline def enableScrollAssist(
     componentEl: HTMLElement,
     inputEl: HTMLInputElement,
     contentEl: HTMLIonContentElement,
     footerEl: HTMLIonFooterElement,
     keyboardHeight: Double
   ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("enableScrollAssist")(componentEl.asInstanceOf[js.Any], inputEl.asInstanceOf[js.Any], contentEl.asInstanceOf[js.Any], footerEl.asInstanceOf[js.Any], keyboardHeight.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
-  @scala.inline
-  def enableScrollAssist(
+  inline def enableScrollAssist(
     componentEl: HTMLElement,
     inputEl: HTMLTextAreaElement,
     contentEl: Null,
     footerEl: Null,
     keyboardHeight: Double
   ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("enableScrollAssist")(componentEl.asInstanceOf[js.Any], inputEl.asInstanceOf[js.Any], contentEl.asInstanceOf[js.Any], footerEl.asInstanceOf[js.Any], keyboardHeight.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
-  @scala.inline
-  def enableScrollAssist(
+  inline def enableScrollAssist(
     componentEl: HTMLElement,
     inputEl: HTMLTextAreaElement,
     contentEl: Null,
     footerEl: HTMLIonFooterElement,
     keyboardHeight: Double
   ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("enableScrollAssist")(componentEl.asInstanceOf[js.Any], inputEl.asInstanceOf[js.Any], contentEl.asInstanceOf[js.Any], footerEl.asInstanceOf[js.Any], keyboardHeight.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
-  @scala.inline
-  def enableScrollAssist(
+  inline def enableScrollAssist(
     componentEl: HTMLElement,
     inputEl: HTMLTextAreaElement,
     contentEl: HTMLIonContentElement,
     footerEl: Null,
     keyboardHeight: Double
   ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("enableScrollAssist")(componentEl.asInstanceOf[js.Any], inputEl.asInstanceOf[js.Any], contentEl.asInstanceOf[js.Any], footerEl.asInstanceOf[js.Any], keyboardHeight.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
-  @scala.inline
-  def enableScrollAssist(
+  inline def enableScrollAssist(
     componentEl: HTMLElement,
     inputEl: HTMLTextAreaElement,
     contentEl: HTMLIonContentElement,
@@ -88,20 +80,16 @@ object scrollAssistMod {
   }
   object PointerCoordinates {
     
-    @scala.inline
-    def apply(x: Double, y: Double): PointerCoordinates = {
+    inline def apply(x: Double, y: Double): PointerCoordinates = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[PointerCoordinates]
     }
     
-    @scala.inline
-    implicit class PointerCoordinatesMutableBuilder[Self <: PointerCoordinates] (val x: Self) extends AnyVal {
+    extension [Self <: PointerCoordinates](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

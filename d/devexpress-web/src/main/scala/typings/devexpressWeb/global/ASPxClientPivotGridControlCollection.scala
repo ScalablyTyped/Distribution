@@ -107,6 +107,5 @@ object ASPxClientPivotGridControlCollection {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def GetPivotGridControlCollection(): typings.devexpressWeb.ASPxClientPivotGridControlCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("GetPivotGridControlCollection")().asInstanceOf[typings.devexpressWeb.ASPxClientPivotGridControlCollection]
+  inline def GetPivotGridControlCollection(): typings.devexpressWeb.ASPxClientPivotGridControlCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("GetPivotGridControlCollection")().asInstanceOf[typings.devexpressWeb.ASPxClientPivotGridControlCollection]
 }

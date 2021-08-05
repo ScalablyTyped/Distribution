@@ -10,16 +10,13 @@ trait WebGLShader extends StObject {
 }
 object WebGLShader {
   
-  @scala.inline
-  def apply(__WebGLShader: Unit): WebGLShader = {
+  inline def apply(__WebGLShader: Unit): WebGLShader = {
     val __obj = js.Dynamic.literal(__WebGLShader = __WebGLShader.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebGLShader]
   }
   
-  @scala.inline
-  implicit class WebGLShaderMutableBuilder[Self <: WebGLShader] (val x: Self) extends AnyVal {
+  extension [Self <: WebGLShader](x: Self) {
     
-    @scala.inline
-    def set__WebGLShader(value: Unit): Self = StObject.set(x, "__WebGLShader", value.asInstanceOf[js.Any])
+    inline def set__WebGLShader(value: Unit): Self = StObject.set(x, "__WebGLShader", value.asInstanceOf[js.Any])
   }
 }

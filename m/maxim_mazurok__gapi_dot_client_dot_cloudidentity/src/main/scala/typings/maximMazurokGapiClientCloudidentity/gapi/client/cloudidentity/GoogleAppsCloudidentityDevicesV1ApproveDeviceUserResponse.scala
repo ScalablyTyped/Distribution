@@ -11,19 +11,15 @@ trait GoogleAppsCloudidentityDevicesV1ApproveDeviceUserResponse extends StObject
 }
 object GoogleAppsCloudidentityDevicesV1ApproveDeviceUserResponse {
   
-  @scala.inline
-  def apply(): GoogleAppsCloudidentityDevicesV1ApproveDeviceUserResponse = {
+  inline def apply(): GoogleAppsCloudidentityDevicesV1ApproveDeviceUserResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleAppsCloudidentityDevicesV1ApproveDeviceUserResponse]
   }
   
-  @scala.inline
-  implicit class GoogleAppsCloudidentityDevicesV1ApproveDeviceUserResponseMutableBuilder[Self <: GoogleAppsCloudidentityDevicesV1ApproveDeviceUserResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleAppsCloudidentityDevicesV1ApproveDeviceUserResponse](x: Self) {
     
-    @scala.inline
-    def setDeviceUser(value: GoogleAppsCloudidentityDevicesV1DeviceUser): Self = StObject.set(x, "deviceUser", value.asInstanceOf[js.Any])
+    inline def setDeviceUser(value: GoogleAppsCloudidentityDevicesV1DeviceUser): Self = StObject.set(x, "deviceUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceUserUndefined: Self = StObject.set(x, "deviceUser", js.undefined)
+    inline def setDeviceUserUndefined: Self = StObject.set(x, "deviceUser", js.undefined)
   }
 }

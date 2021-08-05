@@ -24,8 +24,7 @@ trait PropertyBag
 }
 object PropertyBag {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     PropertySetInfo: XPropertySetInfo,
     PropertyValues: SafeArray[PropertyValue],
     acquire: () => Unit,
@@ -49,13 +48,10 @@ object PropertyBag {
     __obj.asInstanceOf[PropertyBag]
   }
   
-  @scala.inline
-  implicit class PropertyBagMutableBuilder[Self <: PropertyBag] (val x: Self) extends AnyVal {
+  extension [Self <: PropertyBag](x: Self) {
     
-    @scala.inline
-    def setCreateDefault(value: () => Unit): Self = StObject.set(x, "createDefault", js.Any.fromFunction0(value))
+    inline def setCreateDefault(value: () => Unit): Self = StObject.set(x, "createDefault", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreateWithTypes(value: (SeqEquiv[`type`], Boolean, Boolean) => Unit): Self = StObject.set(x, "createWithTypes", js.Any.fromFunction3(value))
+    inline def setCreateWithTypes(value: (SeqEquiv[`type`], Boolean, Boolean) => Unit): Self = StObject.set(x, "createWithTypes", js.Any.fromFunction3(value))
   }
 }

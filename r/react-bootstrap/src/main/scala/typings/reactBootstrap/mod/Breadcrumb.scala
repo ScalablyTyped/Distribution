@@ -24,6 +24,5 @@ object Breadcrumb {
   @JSImport("react-bootstrap", "Breadcrumb.Item")
   @js.native
   def Item: Instantiable0[typings.reactBootstrap.breadcrumbItemMod.^] = js.native
-  @scala.inline
-  def Item_=(x: Instantiable0[typings.reactBootstrap.breadcrumbItemMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+  inline def Item_=(x: Instantiable0[typings.reactBootstrap.breadcrumbItemMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
 }

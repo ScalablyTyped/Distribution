@@ -23,31 +23,23 @@ trait GetSavedFileInfoSuccess extends StObject {
 }
 object GetSavedFileInfoSuccess {
   
-  @scala.inline
-  def apply(): GetSavedFileInfoSuccess = {
+  inline def apply(): GetSavedFileInfoSuccess = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSavedFileInfoSuccess]
   }
   
-  @scala.inline
-  implicit class GetSavedFileInfoSuccessMutableBuilder[Self <: GetSavedFileInfoSuccess] (val x: Self) extends AnyVal {
+  extension [Self <: GetSavedFileInfoSuccess](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: Double): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: Double): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsgUndefined: Self = StObject.set(x, "errMsg", js.undefined)
+    inline def setErrMsgUndefined: Self = StObject.set(x, "errMsg", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

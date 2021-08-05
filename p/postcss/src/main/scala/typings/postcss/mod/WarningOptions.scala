@@ -22,25 +22,19 @@ trait WarningOptions
 }
 object WarningOptions {
   
-  @scala.inline
-  def apply(): WarningOptions = {
+  inline def apply(): WarningOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WarningOptions]
   }
   
-  @scala.inline
-  implicit class WarningOptionsMutableBuilder[Self <: WarningOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WarningOptions](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setWord(value: String): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
+    inline def setWord(value: String): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordUndefined: Self = StObject.set(x, "word", js.undefined)
+    inline def setWordUndefined: Self = StObject.set(x, "word", js.undefined)
   }
 }

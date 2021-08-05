@@ -17,6 +17,5 @@ object MergeAllStream {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(source: typings.wonderFrp.streamMod.Stream): typings.wonderFrp.mergeAllStreamMod.MergeAllStream = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any]).asInstanceOf[typings.wonderFrp.mergeAllStreamMod.MergeAllStream]
+  inline def create(source: typings.wonderFrp.streamMod.Stream): typings.wonderFrp.mergeAllStreamMod.MergeAllStream = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any]).asInstanceOf[typings.wonderFrp.mergeAllStreamMod.MergeAllStream]
 }

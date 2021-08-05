@@ -16,20 +16,16 @@ trait PureAction[TContext, TEvent /* <: EventObject */]
 }
 object PureAction {
   
-  @scala.inline
-  def apply[TContext, TEvent /* <: EventObject */](get: (TContext, TEvent) => js.UndefOr[SingleOrArray[ActionObject[TContext, TEvent]]], `type`: Pure): PureAction[TContext, TEvent] = {
+  inline def apply[TContext, TEvent /* <: EventObject */](get: (TContext, TEvent) => js.UndefOr[SingleOrArray[ActionObject[TContext, TEvent]]], `type`: Pure): PureAction[TContext, TEvent] = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PureAction[TContext, TEvent]]
   }
   
-  @scala.inline
-  implicit class PureActionMutableBuilder[Self <: PureAction[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (PureAction[TContext, TEvent])) extends AnyVal {
+  extension [Self <: PureAction[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (PureAction[TContext, TEvent])) {
     
-    @scala.inline
-    def setGet(value: (TContext, TEvent) => js.UndefOr[SingleOrArray[ActionObject[TContext, TEvent]]]): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+    inline def setGet(value: (TContext, TEvent) => js.UndefOr[SingleOrArray[ActionObject[TContext, TEvent]]]): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setType(value: Pure): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Pure): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

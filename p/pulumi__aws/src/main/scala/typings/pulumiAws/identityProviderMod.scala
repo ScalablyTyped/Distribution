@@ -71,21 +71,16 @@ object identityProviderMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): IdentityProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[IdentityProvider]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): IdentityProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IdentityProvider]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: IdentityProviderState): IdentityProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[IdentityProvider]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: IdentityProviderState, opts: CustomResourceOptions): IdentityProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IdentityProvider]
+    inline def get(name: String, id: Input[ID]): IdentityProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[IdentityProvider]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): IdentityProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IdentityProvider]
+    inline def get(name: String, id: Input[ID], state: IdentityProviderState): IdentityProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[IdentityProvider]
+    inline def get(name: String, id: Input[ID], state: IdentityProviderState, opts: CustomResourceOptions): IdentityProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IdentityProvider]
     
     /**
       * Returns true if the given object is an instance of IdentityProvider.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/identityProvider.IdentityProvider */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cognito/identityProvider.IdentityProvider */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/identityProvider.IdentityProvider */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cognito/identityProvider.IdentityProvider */ Boolean]
   }
   
   trait IdentityProviderArgs extends StObject {
@@ -122,8 +117,7 @@ object identityProviderMod {
   }
   object IdentityProviderArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       providerDetails: Input[StringDictionary[Input[String]]],
       providerName: Input[String],
       providerType: Input[String],
@@ -133,35 +127,25 @@ object identityProviderMod {
       __obj.asInstanceOf[IdentityProviderArgs]
     }
     
-    @scala.inline
-    implicit class IdentityProviderArgsMutableBuilder[Self <: IdentityProviderArgs] (val x: Self) extends AnyVal {
+    extension [Self <: IdentityProviderArgs](x: Self) {
       
-      @scala.inline
-      def setAttributeMapping(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "attributeMapping", value.asInstanceOf[js.Any])
+      inline def setAttributeMapping(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "attributeMapping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeMappingUndefined: Self = StObject.set(x, "attributeMapping", js.undefined)
+      inline def setAttributeMappingUndefined: Self = StObject.set(x, "attributeMapping", js.undefined)
       
-      @scala.inline
-      def setIdpIdentifiers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "idpIdentifiers", value.asInstanceOf[js.Any])
+      inline def setIdpIdentifiers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "idpIdentifiers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdpIdentifiersUndefined: Self = StObject.set(x, "idpIdentifiers", js.undefined)
+      inline def setIdpIdentifiersUndefined: Self = StObject.set(x, "idpIdentifiers", js.undefined)
       
-      @scala.inline
-      def setIdpIdentifiersVarargs(value: Input[String]*): Self = StObject.set(x, "idpIdentifiers", js.Array(value :_*))
+      inline def setIdpIdentifiersVarargs(value: Input[String]*): Self = StObject.set(x, "idpIdentifiers", js.Array(value :_*))
       
-      @scala.inline
-      def setProviderDetails(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "providerDetails", value.asInstanceOf[js.Any])
+      inline def setProviderDetails(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "providerDetails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProviderName(value: Input[String]): Self = StObject.set(x, "providerName", value.asInstanceOf[js.Any])
+      inline def setProviderName(value: Input[String]): Self = StObject.set(x, "providerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProviderType(value: Input[String]): Self = StObject.set(x, "providerType", value.asInstanceOf[js.Any])
+      inline def setProviderType(value: Input[String]): Self = StObject.set(x, "providerType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserPoolId(value: Input[String]): Self = StObject.set(x, "userPoolId", value.asInstanceOf[js.Any])
+      inline def setUserPoolId(value: Input[String]): Self = StObject.set(x, "userPoolId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -199,53 +183,38 @@ object identityProviderMod {
   }
   object IdentityProviderState {
     
-    @scala.inline
-    def apply(): IdentityProviderState = {
+    inline def apply(): IdentityProviderState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IdentityProviderState]
     }
     
-    @scala.inline
-    implicit class IdentityProviderStateMutableBuilder[Self <: IdentityProviderState] (val x: Self) extends AnyVal {
+    extension [Self <: IdentityProviderState](x: Self) {
       
-      @scala.inline
-      def setAttributeMapping(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "attributeMapping", value.asInstanceOf[js.Any])
+      inline def setAttributeMapping(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "attributeMapping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeMappingUndefined: Self = StObject.set(x, "attributeMapping", js.undefined)
+      inline def setAttributeMappingUndefined: Self = StObject.set(x, "attributeMapping", js.undefined)
       
-      @scala.inline
-      def setIdpIdentifiers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "idpIdentifiers", value.asInstanceOf[js.Any])
+      inline def setIdpIdentifiers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "idpIdentifiers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdpIdentifiersUndefined: Self = StObject.set(x, "idpIdentifiers", js.undefined)
+      inline def setIdpIdentifiersUndefined: Self = StObject.set(x, "idpIdentifiers", js.undefined)
       
-      @scala.inline
-      def setIdpIdentifiersVarargs(value: Input[String]*): Self = StObject.set(x, "idpIdentifiers", js.Array(value :_*))
+      inline def setIdpIdentifiersVarargs(value: Input[String]*): Self = StObject.set(x, "idpIdentifiers", js.Array(value :_*))
       
-      @scala.inline
-      def setProviderDetails(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "providerDetails", value.asInstanceOf[js.Any])
+      inline def setProviderDetails(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "providerDetails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProviderDetailsUndefined: Self = StObject.set(x, "providerDetails", js.undefined)
+      inline def setProviderDetailsUndefined: Self = StObject.set(x, "providerDetails", js.undefined)
       
-      @scala.inline
-      def setProviderName(value: Input[String]): Self = StObject.set(x, "providerName", value.asInstanceOf[js.Any])
+      inline def setProviderName(value: Input[String]): Self = StObject.set(x, "providerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProviderNameUndefined: Self = StObject.set(x, "providerName", js.undefined)
+      inline def setProviderNameUndefined: Self = StObject.set(x, "providerName", js.undefined)
       
-      @scala.inline
-      def setProviderType(value: Input[String]): Self = StObject.set(x, "providerType", value.asInstanceOf[js.Any])
+      inline def setProviderType(value: Input[String]): Self = StObject.set(x, "providerType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProviderTypeUndefined: Self = StObject.set(x, "providerType", js.undefined)
+      inline def setProviderTypeUndefined: Self = StObject.set(x, "providerType", js.undefined)
       
-      @scala.inline
-      def setUserPoolId(value: Input[String]): Self = StObject.set(x, "userPoolId", value.asInstanceOf[js.Any])
+      inline def setUserPoolId(value: Input[String]): Self = StObject.set(x, "userPoolId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserPoolIdUndefined: Self = StObject.set(x, "userPoolId", js.undefined)
+      inline def setUserPoolIdUndefined: Self = StObject.set(x, "userPoolId", js.undefined)
     }
   }
 }

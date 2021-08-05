@@ -30,79 +30,55 @@ trait ListParameters extends StObject {
 }
 object ListParameters {
   
-  @scala.inline
-  def apply(): ListParameters = {
+  inline def apply(): ListParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListParameters]
   }
   
-  @scala.inline
-  implicit class ListParametersMutableBuilder[Self <: ListParameters] (val x: Self) extends AnyVal {
+  extension [Self <: ListParameters](x: Self) {
     
-    @scala.inline
-    def setCorpora(value: String): Self = StObject.set(x, "corpora", value.asInstanceOf[js.Any])
+    inline def setCorpora(value: String): Self = StObject.set(x, "corpora", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorporaUndefined: Self = StObject.set(x, "corpora", js.undefined)
+    inline def setCorporaUndefined: Self = StObject.set(x, "corpora", js.undefined)
     
-    @scala.inline
-    def setCorpus(value: String): Self = StObject.set(x, "corpus", value.asInstanceOf[js.Any])
+    inline def setCorpus(value: String): Self = StObject.set(x, "corpus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorpusUndefined: Self = StObject.set(x, "corpus", js.undefined)
+    inline def setCorpusUndefined: Self = StObject.set(x, "corpus", js.undefined)
     
-    @scala.inline
-    def setIncludeTeamDriveItems(value: Boolean): Self = StObject.set(x, "includeTeamDriveItems", value.asInstanceOf[js.Any])
+    inline def setIncludeTeamDriveItems(value: Boolean): Self = StObject.set(x, "includeTeamDriveItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeTeamDriveItemsUndefined: Self = StObject.set(x, "includeTeamDriveItems", js.undefined)
+    inline def setIncludeTeamDriveItemsUndefined: Self = StObject.set(x, "includeTeamDriveItems", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setOrderBy(value: String): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
+    inline def setOrderBy(value: String): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
+    inline def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setProjection(value: String): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+    inline def setProjection(value: String): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+    inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
     
-    @scala.inline
-    def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
+    inline def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQUndefined: Self = StObject.set(x, "q", js.undefined)
+    inline def setQUndefined: Self = StObject.set(x, "q", js.undefined)
     
-    @scala.inline
-    def setSpaces(value: String): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
+    inline def setSpaces(value: String): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpacesUndefined: Self = StObject.set(x, "spaces", js.undefined)
+    inline def setSpacesUndefined: Self = StObject.set(x, "spaces", js.undefined)
     
-    @scala.inline
-    def setSupportsTeamDrives(value: Boolean): Self = StObject.set(x, "supportsTeamDrives", value.asInstanceOf[js.Any])
+    inline def setSupportsTeamDrives(value: Boolean): Self = StObject.set(x, "supportsTeamDrives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsTeamDrivesUndefined: Self = StObject.set(x, "supportsTeamDrives", js.undefined)
+    inline def setSupportsTeamDrivesUndefined: Self = StObject.set(x, "supportsTeamDrives", js.undefined)
     
-    @scala.inline
-    def setTeamDriveId(value: String): Self = StObject.set(x, "teamDriveId", value.asInstanceOf[js.Any])
+    inline def setTeamDriveId(value: String): Self = StObject.set(x, "teamDriveId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeamDriveIdUndefined: Self = StObject.set(x, "teamDriveId", js.undefined)
+    inline def setTeamDriveIdUndefined: Self = StObject.set(x, "teamDriveId", js.undefined)
   }
 }

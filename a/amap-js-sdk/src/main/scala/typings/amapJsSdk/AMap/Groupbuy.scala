@@ -40,8 +40,7 @@ trait Groupbuy extends StObject {
 }
 object Groupbuy {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     count: Double,
     detail: String,
     discount: Double,
@@ -64,58 +63,40 @@ object Groupbuy {
     __obj.asInstanceOf[Groupbuy]
   }
   
-  @scala.inline
-  implicit class GroupbuyMutableBuilder[Self <: Groupbuy] (val x: Self) extends AnyVal {
+  extension [Self <: Groupbuy](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+    inline def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscount(value: Double): Self = StObject.set(x, "discount", value.asInstanceOf[js.Any])
+    inline def setDiscount(value: Double): Self = StObject.set(x, "discount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtime(value: String): Self = StObject.set(x, "etime", value.asInstanceOf[js.Any])
+    inline def setEtime(value: String): Self = StObject.set(x, "etime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupbuy_price(value: Double): Self = StObject.set(x, "groupbuy_price", value.asInstanceOf[js.Any])
+    inline def setGroupbuy_price(value: Double): Self = StObject.set(x, "groupbuy_price", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginal_price(value: Double): Self = StObject.set(x, "original_price", value.asInstanceOf[js.Any])
+    inline def setOriginal_price(value: Double): Self = StObject.set(x, "original_price", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhotos(value: js.Array[Photo]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
+    inline def setPhotos(value: js.Array[Photo]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhotosVarargs(value: Photo*): Self = StObject.set(x, "photos", js.Array(value :_*))
+    inline def setPhotosVarargs(value: Photo*): Self = StObject.set(x, "photos", js.Array(value :_*))
     
-    @scala.inline
-    def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSold_num(value: Double): Self = StObject.set(x, "sold_num", value.asInstanceOf[js.Any])
+    inline def setSold_num(value: Double): Self = StObject.set(x, "sold_num", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStime(value: String): Self = StObject.set(x, "stime", value.asInstanceOf[js.Any])
+    inline def setStime(value: String): Self = StObject.set(x, "stime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTicket_address(value: String): Self = StObject.set(x, "ticket_address", value.asInstanceOf[js.Any])
+    inline def setTicket_address(value: String): Self = StObject.set(x, "ticket_address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTicket_tel(value: String): Self = StObject.set(x, "ticket_tel", value.asInstanceOf[js.Any])
+    inline def setTicket_tel(value: String): Self = StObject.set(x, "ticket_tel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType_code(value: String): Self = StObject.set(x, "type_code", value.asInstanceOf[js.Any])
+    inline def setType_code(value: String): Self = StObject.set(x, "type_code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

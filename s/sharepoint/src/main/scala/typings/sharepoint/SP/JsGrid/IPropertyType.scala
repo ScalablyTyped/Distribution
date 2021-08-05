@@ -20,8 +20,7 @@ trait IPropertyType extends StObject {
 }
 object IPropertyType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BeginValidateNormalizeConvert: (Double, String, js.Any, Boolean, js.Function1[/* args */ DataValue, Unit], js.Any) => Unit,
     ID: String
   ): IPropertyType = {
@@ -29,13 +28,10 @@ object IPropertyType {
     __obj.asInstanceOf[IPropertyType]
   }
   
-  @scala.inline
-  implicit class IPropertyTypeMutableBuilder[Self <: IPropertyType] (val x: Self) extends AnyVal {
+  extension [Self <: IPropertyType](x: Self) {
     
-    @scala.inline
-    def setBeginValidateNormalizeConvert(value: (Double, String, js.Any, Boolean, js.Function1[/* args */ DataValue, Unit], js.Any) => Unit): Self = StObject.set(x, "BeginValidateNormalizeConvert", js.Any.fromFunction6(value))
+    inline def setBeginValidateNormalizeConvert(value: (Double, String, js.Any, Boolean, js.Function1[/* args */ DataValue, Unit], js.Any) => Unit): Self = StObject.set(x, "BeginValidateNormalizeConvert", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
   }
 }

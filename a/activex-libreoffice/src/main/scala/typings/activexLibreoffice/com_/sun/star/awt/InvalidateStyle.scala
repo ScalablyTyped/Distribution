@@ -25,25 +25,18 @@ object InvalidateStyle {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def CHILDREN: `1` = 1.asInstanceOf[`1`]
+    inline def CHILDREN: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def NOCHILDREN: `2` = 2.asInstanceOf[`2`]
+    inline def NOCHILDREN: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def NOCLIPCHILDREN: `16384` = 16384.asInstanceOf[`16384`]
+    inline def NOCLIPCHILDREN: `16384` = 16384.asInstanceOf[`16384`]
     
-    @scala.inline
-    def NOERASE: `4` = 4.asInstanceOf[`4`]
+    inline def NOERASE: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def NOTRANSPARENT: `32` = 32.asInstanceOf[`32`]
+    inline def NOTRANSPARENT: `32` = 32.asInstanceOf[`32`]
     
-    @scala.inline
-    def TRANSPARENT: `16` = 16.asInstanceOf[`16`]
+    inline def TRANSPARENT: `16` = 16.asInstanceOf[`16`]
     
-    @scala.inline
-    def UPDATE: `8` = 8.asInstanceOf[`8`]
+    inline def UPDATE: `8` = 8.asInstanceOf[`8`]
   }
 }

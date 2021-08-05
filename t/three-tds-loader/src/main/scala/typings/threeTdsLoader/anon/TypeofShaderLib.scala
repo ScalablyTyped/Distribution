@@ -41,8 +41,7 @@ trait TypeofShaderLib extends StObject {
 }
 object TypeofShaderLib {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     background: Shader,
     basic: Shader,
     cube: Shader,
@@ -64,55 +63,38 @@ object TypeofShaderLib {
     __obj.asInstanceOf[TypeofShaderLib]
   }
   
-  @scala.inline
-  implicit class TypeofShaderLibMutableBuilder[Self <: TypeofShaderLib] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofShaderLib](x: Self) {
     
-    @scala.inline
-    def setBackground(value: Shader): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: Shader): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasic(value: Shader): Self = StObject.set(x, "basic", value.asInstanceOf[js.Any])
+    inline def setBasic(value: Shader): Self = StObject.set(x, "basic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCube(value: Shader): Self = StObject.set(x, "cube", value.asInstanceOf[js.Any])
+    inline def setCube(value: Shader): Self = StObject.set(x, "cube", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashed(value: Shader): Self = StObject.set(x, "dashed", value.asInstanceOf[js.Any])
+    inline def setDashed(value: Shader): Self = StObject.set(x, "dashed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepth(value: Shader): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+    inline def setDepth(value: Shader): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceRGBA(value: Shader): Self = StObject.set(x, "distanceRGBA", value.asInstanceOf[js.Any])
+    inline def setDistanceRGBA(value: Shader): Self = StObject.set(x, "distanceRGBA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEquirect(value: Shader): Self = StObject.set(x, "equirect", value.asInstanceOf[js.Any])
+    inline def setEquirect(value: Shader): Self = StObject.set(x, "equirect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLambert(value: Shader): Self = StObject.set(x, "lambert", value.asInstanceOf[js.Any])
+    inline def setLambert(value: Shader): Self = StObject.set(x, "lambert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatcap(value: Shader): Self = StObject.set(x, "matcap", value.asInstanceOf[js.Any])
+    inline def setMatcap(value: Shader): Self = StObject.set(x, "matcap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormal(value: Shader): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
+    inline def setNormal(value: Shader): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhong(value: Shader): Self = StObject.set(x, "phong", value.asInstanceOf[js.Any])
+    inline def setPhong(value: Shader): Self = StObject.set(x, "phong", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhysical(value: Shader): Self = StObject.set(x, "physical", value.asInstanceOf[js.Any])
+    inline def setPhysical(value: Shader): Self = StObject.set(x, "physical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoints(value: Shader): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: Shader): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadow(value: Shader): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
+    inline def setShadow(value: Shader): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSprite(value: Shader): Self = StObject.set(x, "sprite", value.asInstanceOf[js.Any])
+    inline def setSprite(value: Shader): Self = StObject.set(x, "sprite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandard(value: Shader): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
+    inline def setStandard(value: Shader): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
   }
 }

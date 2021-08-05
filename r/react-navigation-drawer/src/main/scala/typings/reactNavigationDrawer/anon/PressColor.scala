@@ -12,19 +12,15 @@ trait PressColor extends StObject {
 }
 object PressColor {
   
-  @scala.inline
-  def apply(borderless: Boolean, pressColor: String): PressColor = {
+  inline def apply(borderless: Boolean, pressColor: String): PressColor = {
     val __obj = js.Dynamic.literal(borderless = borderless.asInstanceOf[js.Any], pressColor = pressColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[PressColor]
   }
   
-  @scala.inline
-  implicit class PressColorMutableBuilder[Self <: PressColor] (val x: Self) extends AnyVal {
+  extension [Self <: PressColor](x: Self) {
     
-    @scala.inline
-    def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
+    inline def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPressColor(value: String): Self = StObject.set(x, "pressColor", value.asInstanceOf[js.Any])
+    inline def setPressColor(value: String): Self = StObject.set(x, "pressColor", value.asInstanceOf[js.Any])
   }
 }

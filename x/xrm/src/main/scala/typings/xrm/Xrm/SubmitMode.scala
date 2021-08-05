@@ -16,12 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SubmitMode extends StObject
 object SubmitMode {
   
-  @scala.inline
-  def always: typings.xrm.xrmStrings.always = "always".asInstanceOf[typings.xrm.xrmStrings.always]
+  inline def always: typings.xrm.xrmStrings.always = "always".asInstanceOf[typings.xrm.xrmStrings.always]
   
-  @scala.inline
-  def dirty: typings.xrm.xrmStrings.dirty = "dirty".asInstanceOf[typings.xrm.xrmStrings.dirty]
+  inline def dirty: typings.xrm.xrmStrings.dirty = "dirty".asInstanceOf[typings.xrm.xrmStrings.dirty]
   
-  @scala.inline
-  def never: typings.xrm.xrmStrings.never = "never".asInstanceOf[typings.xrm.xrmStrings.never]
+  inline def never: typings.xrm.xrmStrings.never = "never".asInstanceOf[typings.xrm.xrmStrings.never]
 }

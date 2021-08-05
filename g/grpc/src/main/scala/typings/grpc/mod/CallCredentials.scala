@@ -22,19 +22,15 @@ trait CallCredentials extends StObject {
 }
 object CallCredentials {
   
-  @scala.inline
-  def apply(compose: CallCredentials => CallCredentials, generateMetadata: js.Object => js.Promise[Metadata]): CallCredentials = {
+  inline def apply(compose: CallCredentials => CallCredentials, generateMetadata: js.Object => js.Promise[Metadata]): CallCredentials = {
     val __obj = js.Dynamic.literal(compose = js.Any.fromFunction1(compose), generateMetadata = js.Any.fromFunction1(generateMetadata))
     __obj.asInstanceOf[CallCredentials]
   }
   
-  @scala.inline
-  implicit class CallCredentialsMutableBuilder[Self <: CallCredentials] (val x: Self) extends AnyVal {
+  extension [Self <: CallCredentials](x: Self) {
     
-    @scala.inline
-    def setCompose(value: CallCredentials => CallCredentials): Self = StObject.set(x, "compose", js.Any.fromFunction1(value))
+    inline def setCompose(value: CallCredentials => CallCredentials): Self = StObject.set(x, "compose", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGenerateMetadata(value: js.Object => js.Promise[Metadata]): Self = StObject.set(x, "generateMetadata", js.Any.fromFunction1(value))
+    inline def setGenerateMetadata(value: js.Object => js.Promise[Metadata]): Self = StObject.set(x, "generateMetadata", js.Any.fromFunction1(value))
   }
 }

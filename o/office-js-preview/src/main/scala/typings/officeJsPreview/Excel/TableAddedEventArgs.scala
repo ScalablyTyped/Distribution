@@ -49,26 +49,20 @@ trait TableAddedEventArgs extends StObject {
 }
 object TableAddedEventArgs {
   
-  @scala.inline
-  def apply(source: EventSource | Local | Remote, tableId: String, worksheetId: String): TableAddedEventArgs = {
+  inline def apply(source: EventSource | Local | Remote, tableId: String, worksheetId: String): TableAddedEventArgs = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], tableId = tableId.asInstanceOf[js.Any], worksheetId = worksheetId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TableAdded")
     __obj.asInstanceOf[TableAddedEventArgs]
   }
   
-  @scala.inline
-  implicit class TableAddedEventArgsMutableBuilder[Self <: TableAddedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: TableAddedEventArgs](x: Self) {
     
-    @scala.inline
-    def setSource(value: EventSource | Local | Remote): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: EventSource | Local | Remote): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
+    inline def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: TableAdded): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TableAdded): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorksheetId(value: String): Self = StObject.set(x, "worksheetId", value.asInstanceOf[js.Any])
+    inline def setWorksheetId(value: String): Self = StObject.set(x, "worksheetId", value.asInstanceOf[js.Any])
   }
 }

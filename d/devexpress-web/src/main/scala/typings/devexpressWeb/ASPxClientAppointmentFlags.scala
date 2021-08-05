@@ -51,8 +51,7 @@ trait ASPxClientAppointmentFlags extends StObject {
 }
 object ASPxClientAppointmentFlags {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allowConflicts: Boolean,
     allowCopy: Boolean,
     allowDelete: Boolean,
@@ -66,31 +65,22 @@ object ASPxClientAppointmentFlags {
     __obj.asInstanceOf[ASPxClientAppointmentFlags]
   }
   
-  @scala.inline
-  implicit class ASPxClientAppointmentFlagsMutableBuilder[Self <: ASPxClientAppointmentFlags] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientAppointmentFlags](x: Self) {
     
-    @scala.inline
-    def setAllowConflicts(value: Boolean): Self = StObject.set(x, "allowConflicts", value.asInstanceOf[js.Any])
+    inline def setAllowConflicts(value: Boolean): Self = StObject.set(x, "allowConflicts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowCopy(value: Boolean): Self = StObject.set(x, "allowCopy", value.asInstanceOf[js.Any])
+    inline def setAllowCopy(value: Boolean): Self = StObject.set(x, "allowCopy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowDelete(value: Boolean): Self = StObject.set(x, "allowDelete", value.asInstanceOf[js.Any])
+    inline def setAllowDelete(value: Boolean): Self = StObject.set(x, "allowDelete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowDrag(value: Boolean): Self = StObject.set(x, "allowDrag", value.asInstanceOf[js.Any])
+    inline def setAllowDrag(value: Boolean): Self = StObject.set(x, "allowDrag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowDragBetweenResources(value: Boolean): Self = StObject.set(x, "allowDragBetweenResources", value.asInstanceOf[js.Any])
+    inline def setAllowDragBetweenResources(value: Boolean): Self = StObject.set(x, "allowDragBetweenResources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowEdit(value: Boolean): Self = StObject.set(x, "allowEdit", value.asInstanceOf[js.Any])
+    inline def setAllowEdit(value: Boolean): Self = StObject.set(x, "allowEdit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowInplaceEditor(value: Boolean): Self = StObject.set(x, "allowInplaceEditor", value.asInstanceOf[js.Any])
+    inline def setAllowInplaceEditor(value: Boolean): Self = StObject.set(x, "allowInplaceEditor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowResize(value: Boolean): Self = StObject.set(x, "allowResize", value.asInstanceOf[js.Any])
+    inline def setAllowResize(value: Boolean): Self = StObject.set(x, "allowResize", value.asInstanceOf[js.Any])
   }
 }

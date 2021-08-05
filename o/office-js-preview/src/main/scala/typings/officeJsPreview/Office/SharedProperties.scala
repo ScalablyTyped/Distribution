@@ -51,8 +51,7 @@ trait SharedProperties extends StObject {
 }
 object SharedProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     delegatePermissions: DelegatePermissions,
     owner: String,
     targetMailbox: String,
@@ -62,19 +61,14 @@ object SharedProperties {
     __obj.asInstanceOf[SharedProperties]
   }
   
-  @scala.inline
-  implicit class SharedPropertiesMutableBuilder[Self <: SharedProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SharedProperties](x: Self) {
     
-    @scala.inline
-    def setDelegatePermissions(value: DelegatePermissions): Self = StObject.set(x, "delegatePermissions", value.asInstanceOf[js.Any])
+    inline def setDelegatePermissions(value: DelegatePermissions): Self = StObject.set(x, "delegatePermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetMailbox(value: String): Self = StObject.set(x, "targetMailbox", value.asInstanceOf[js.Any])
+    inline def setTargetMailbox(value: String): Self = StObject.set(x, "targetMailbox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetRestUrl(value: String): Self = StObject.set(x, "targetRestUrl", value.asInstanceOf[js.Any])
+    inline def setTargetRestUrl(value: String): Self = StObject.set(x, "targetRestUrl", value.asInstanceOf[js.Any])
   }
 }

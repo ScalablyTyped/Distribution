@@ -34,8 +34,7 @@ trait AlgorithmIdentifier
      with ASN1Object
 object AlgorithmIdentifier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getEncodedHex: () => String,
     getFreshValueHex: () => String,
     getLengthHexFromValue: () => String,

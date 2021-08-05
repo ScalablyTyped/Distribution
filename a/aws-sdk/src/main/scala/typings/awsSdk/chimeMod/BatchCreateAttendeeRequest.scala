@@ -18,22 +18,17 @@ trait BatchCreateAttendeeRequest extends StObject {
 }
 object BatchCreateAttendeeRequest {
   
-  @scala.inline
-  def apply(Attendees: CreateAttendeeRequestItemList, MeetingId: GuidString): BatchCreateAttendeeRequest = {
+  inline def apply(Attendees: CreateAttendeeRequestItemList, MeetingId: GuidString): BatchCreateAttendeeRequest = {
     val __obj = js.Dynamic.literal(Attendees = Attendees.asInstanceOf[js.Any], MeetingId = MeetingId.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchCreateAttendeeRequest]
   }
   
-  @scala.inline
-  implicit class BatchCreateAttendeeRequestMutableBuilder[Self <: BatchCreateAttendeeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchCreateAttendeeRequest](x: Self) {
     
-    @scala.inline
-    def setAttendees(value: CreateAttendeeRequestItemList): Self = StObject.set(x, "Attendees", value.asInstanceOf[js.Any])
+    inline def setAttendees(value: CreateAttendeeRequestItemList): Self = StObject.set(x, "Attendees", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttendeesVarargs(value: CreateAttendeeRequestItem*): Self = StObject.set(x, "Attendees", js.Array(value :_*))
+    inline def setAttendeesVarargs(value: CreateAttendeeRequestItem*): Self = StObject.set(x, "Attendees", js.Array(value :_*))
     
-    @scala.inline
-    def setMeetingId(value: GuidString): Self = StObject.set(x, "MeetingId", value.asInstanceOf[js.Any])
+    inline def setMeetingId(value: GuidString): Self = StObject.set(x, "MeetingId", value.asInstanceOf[js.Any])
   }
 }

@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.IconView")
 @js.native
-class IconView protected ()
+/* private */ class IconView ()
   extends StObject
      with typings.activexOutlook.Outlook.IconView {
   
@@ -52,7 +52,7 @@ class IconView protected ()
   /* CompleteClass */
   var Name: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.IconView_typekey")
   var OutlookDotIconView_typekey: typings.activexOutlook.Outlook.IconView = js.native
   

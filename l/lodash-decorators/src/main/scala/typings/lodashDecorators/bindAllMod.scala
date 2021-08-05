@@ -11,18 +11,12 @@ object bindAllMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[ClassDecorator]
-  @scala.inline
-  def default(methods: js.Array[String]): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(methods.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator]
+  inline def default(): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[ClassDecorator]
+  inline def default(methods: js.Array[String]): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(methods.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator]
   
-  @scala.inline
-  def BindAll_(): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("BindAll")().asInstanceOf[ClassDecorator]
-  @scala.inline
-  def BindAll_(methods: js.Array[String]): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("BindAll")(methods.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator]
+  inline def BindAll_(): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("BindAll")().asInstanceOf[ClassDecorator]
+  inline def BindAll_(methods: js.Array[String]): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("BindAll")(methods.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator]
   
-  @scala.inline
-  def bindAll(): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("bindAll")().asInstanceOf[ClassDecorator]
-  @scala.inline
-  def bindAll(methods: js.Array[String]): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("bindAll")(methods.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator]
+  inline def bindAll(): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("bindAll")().asInstanceOf[ClassDecorator]
+  inline def bindAll(methods: js.Array[String]): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("bindAll")(methods.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator]
 }

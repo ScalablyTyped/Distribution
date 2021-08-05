@@ -18,25 +18,19 @@ trait Accelerator extends StObject {
 }
 object Accelerator {
   
-  @scala.inline
-  def apply(): Accelerator = {
+  inline def apply(): Accelerator = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Accelerator]
   }
   
-  @scala.inline
-  implicit class AcceleratorMutableBuilder[Self <: Accelerator] (val x: Self) extends AnyVal {
+  extension [Self <: Accelerator](x: Self) {
     
-    @scala.inline
-    def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

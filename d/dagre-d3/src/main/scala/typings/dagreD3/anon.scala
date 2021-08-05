@@ -35,74 +35,52 @@ object anon {
   }
   object Node {
     
-    @scala.inline
-    def apply(height: Double, width: Double, x: Double, y: Double): Node = {
+    inline def apply(height: Double, width: Double, x: Double, y: Double): Node = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[Node]
     }
     
-    @scala.inline
-    implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
+    extension [Self <: Node](x: Self) {
       
-      @scala.inline
-      def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+      inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
+      inline def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      @scala.inline
-      def setPaddingX(value: Double): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
+      inline def setPaddingX(value: Double): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingXUndefined: Self = StObject.set(x, "paddingX", js.undefined)
+      inline def setPaddingXUndefined: Self = StObject.set(x, "paddingX", js.undefined)
       
-      @scala.inline
-      def setPaddingY(value: Double): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
+      inline def setPaddingY(value: Double): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingYUndefined: Self = StObject.set(x, "paddingY", js.undefined)
+      inline def setPaddingYUndefined: Self = StObject.set(x, "paddingY", js.undefined)
       
-      @scala.inline
-      def setRx(value: Double): Self = StObject.set(x, "rx", value.asInstanceOf[js.Any])
+      inline def setRx(value: Double): Self = StObject.set(x, "rx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRxUndefined: Self = StObject.set(x, "rx", js.undefined)
+      inline def setRxUndefined: Self = StObject.set(x, "rx", js.undefined)
       
-      @scala.inline
-      def setRy(value: Double): Self = StObject.set(x, "ry", value.asInstanceOf[js.Any])
+      inline def setRy(value: Double): Self = StObject.set(x, "ry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRyUndefined: Self = StObject.set(x, "ry", js.undefined)
+      inline def setRyUndefined: Self = StObject.set(x, "ry", js.undefined)
       
-      @scala.inline
-      def setShape(value: String): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+      inline def setShape(value: String): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+      inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

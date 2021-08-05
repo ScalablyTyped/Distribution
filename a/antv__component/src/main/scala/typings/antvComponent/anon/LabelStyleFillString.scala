@@ -10,16 +10,13 @@ trait LabelStyleFillString extends StObject {
 }
 object LabelStyleFillString {
   
-  @scala.inline
-  def apply(labelStyle: FillString): LabelStyleFillString = {
+  inline def apply(labelStyle: FillString): LabelStyleFillString = {
     val __obj = js.Dynamic.literal(labelStyle = labelStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelStyleFillString]
   }
   
-  @scala.inline
-  implicit class LabelStyleFillStringMutableBuilder[Self <: LabelStyleFillString] (val x: Self) extends AnyVal {
+  extension [Self <: LabelStyleFillString](x: Self) {
     
-    @scala.inline
-    def setLabelStyle(value: FillString): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
+    inline def setLabelStyle(value: FillString): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
   }
 }

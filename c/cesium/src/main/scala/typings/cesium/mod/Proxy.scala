@@ -10,16 +10,13 @@ trait Proxy extends StObject {
 }
 object Proxy {
   
-  @scala.inline
-  def apply(getURL: String => String): Proxy = {
+  inline def apply(getURL: String => String): Proxy = {
     val __obj = js.Dynamic.literal(getURL = js.Any.fromFunction1(getURL))
     __obj.asInstanceOf[Proxy]
   }
   
-  @scala.inline
-  implicit class ProxyMutableBuilder[Self <: Proxy] (val x: Self) extends AnyVal {
+  extension [Self <: Proxy](x: Self) {
     
-    @scala.inline
-    def setGetURL(value: String => String): Self = StObject.set(x, "getURL", js.Any.fromFunction1(value))
+    inline def setGetURL(value: String => String): Self = StObject.set(x, "getURL", js.Any.fromFunction1(value))
   }
 }

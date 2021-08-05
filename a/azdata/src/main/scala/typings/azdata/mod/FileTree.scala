@@ -12,19 +12,15 @@ trait FileTree extends StObject {
 }
 object FileTree {
   
-  @scala.inline
-  def apply(rootNode: FileTreeNode, selectedNode: FileTreeNode): FileTree = {
+  inline def apply(rootNode: FileTreeNode, selectedNode: FileTreeNode): FileTree = {
     val __obj = js.Dynamic.literal(rootNode = rootNode.asInstanceOf[js.Any], selectedNode = selectedNode.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileTree]
   }
   
-  @scala.inline
-  implicit class FileTreeMutableBuilder[Self <: FileTree] (val x: Self) extends AnyVal {
+  extension [Self <: FileTree](x: Self) {
     
-    @scala.inline
-    def setRootNode(value: FileTreeNode): Self = StObject.set(x, "rootNode", value.asInstanceOf[js.Any])
+    inline def setRootNode(value: FileTreeNode): Self = StObject.set(x, "rootNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedNode(value: FileTreeNode): Self = StObject.set(x, "selectedNode", value.asInstanceOf[js.Any])
+    inline def setSelectedNode(value: FileTreeNode): Self = StObject.set(x, "selectedNode", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait SocketActivityContext extends StObject {
 }
 object SocketActivityContext {
   
-  @scala.inline
-  def apply(data: IBuffer): SocketActivityContext = {
+  inline def apply(data: IBuffer): SocketActivityContext = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocketActivityContext]
   }
   
-  @scala.inline
-  implicit class SocketActivityContextMutableBuilder[Self <: SocketActivityContext] (val x: Self) extends AnyVal {
+  extension [Self <: SocketActivityContext](x: Self) {
     
-    @scala.inline
-    def setData(value: IBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: IBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

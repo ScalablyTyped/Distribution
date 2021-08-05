@@ -11,19 +11,15 @@ trait GooglePrivacyDlpV2ReplaceValueConfig extends StObject {
 }
 object GooglePrivacyDlpV2ReplaceValueConfig {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2ReplaceValueConfig = {
+  inline def apply(): GooglePrivacyDlpV2ReplaceValueConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2ReplaceValueConfig]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2ReplaceValueConfigMutableBuilder[Self <: GooglePrivacyDlpV2ReplaceValueConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2ReplaceValueConfig](x: Self) {
     
-    @scala.inline
-    def setNewValue(value: GooglePrivacyDlpV2Value): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: GooglePrivacyDlpV2Value): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
+    inline def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
   }
 }

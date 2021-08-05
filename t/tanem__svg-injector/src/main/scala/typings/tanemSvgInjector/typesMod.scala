@@ -22,13 +22,10 @@ object typesMod {
   trait EvalScripts extends StObject
   object EvalScripts {
     
-    @scala.inline
-    def always: typings.tanemSvgInjector.tanemSvgInjectorStrings.always = "always".asInstanceOf[typings.tanemSvgInjector.tanemSvgInjectorStrings.always]
+    inline def always: typings.tanemSvgInjector.tanemSvgInjectorStrings.always = "always".asInstanceOf[typings.tanemSvgInjector.tanemSvgInjectorStrings.always]
     
-    @scala.inline
-    def never: typings.tanemSvgInjector.tanemSvgInjectorStrings.never = "never".asInstanceOf[typings.tanemSvgInjector.tanemSvgInjectorStrings.never]
+    inline def never: typings.tanemSvgInjector.tanemSvgInjectorStrings.never = "never".asInstanceOf[typings.tanemSvgInjector.tanemSvgInjectorStrings.never]
     
-    @scala.inline
-    def once: typings.tanemSvgInjector.tanemSvgInjectorStrings.once = "once".asInstanceOf[typings.tanemSvgInjector.tanemSvgInjectorStrings.once]
+    inline def once: typings.tanemSvgInjector.tanemSvgInjectorStrings.once = "once".asInstanceOf[typings.tanemSvgInjector.tanemSvgInjectorStrings.once]
   }
 }

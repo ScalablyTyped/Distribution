@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NxSelectionCellType extends StObject
 object NxSelectionCellType {
   
-  @scala.inline
-  def D: typings.qlikEngineapi.qlikEngineapiStrings.D = "D".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.D]
+  inline def D: typings.qlikEngineapi.qlikEngineapiStrings.D = "D".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.D]
   
-  @scala.inline
-  def L: typings.qlikEngineapi.qlikEngineapiStrings.L = "L".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.L]
+  inline def L: typings.qlikEngineapi.qlikEngineapiStrings.L = "L".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.L]
   
-  @scala.inline
-  def T: typings.qlikEngineapi.qlikEngineapiStrings.T = "T".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.T]
+  inline def T: typings.qlikEngineapi.qlikEngineapiStrings.T = "T".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.T]
 }

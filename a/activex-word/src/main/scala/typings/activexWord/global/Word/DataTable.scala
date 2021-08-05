@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.DataTable")
 @js.native
-class DataTable protected ()
+/* private */ class DataTable ()
   extends StObject
      with typings.activexWord.Word.DataTable {
   
@@ -49,7 +49,7 @@ class DataTable protected ()
   /* CompleteClass */
   var ShowLegendKey: Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.DataTable_typekey")
   var WordDotDataTable_typekey: typings.activexWord.Word.DataTable = js.native
 }

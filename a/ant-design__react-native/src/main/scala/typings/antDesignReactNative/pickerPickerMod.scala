@@ -21,8 +21,7 @@ object pickerPickerMod {
     @JSImport("@ant-design/react-native/lib/picker/Picker", "default.Item")
     @js.native
     def Item: js.Any = js.native
-    @scala.inline
-    def Item_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+    inline def Item_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
     
     /* static member */
     object defaultProps {
@@ -34,8 +33,7 @@ object pickerPickerMod {
       @JSImport("@ant-design/react-native/lib/picker/Picker", "default.defaultProps.children")
       @js.native
       def children: js.Array[scala.Nothing] = js.native
-      @scala.inline
-      def children_=(x: js.Array[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+      inline def children_=(x: js.Array[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
     }
   }
   

@@ -46,14 +46,11 @@ object defaultProps {
   @js.native
   val multiline: Boolean = js.native
   
-  @scala.inline
-  def onBlur(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBlur")().asInstanceOf[Unit]
+  inline def onBlur(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBlur")().asInstanceOf[Unit]
   
-  @scala.inline
-  def onChange(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onChange")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def onChange(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onChange")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def onFocus(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onFocus")().asInstanceOf[Unit]
+  inline def onFocus(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onFocus")().asInstanceOf[Unit]
   
   @JSImport("rc-easyui", "DateTimeSpinner.defaultProps.readOnly")
   @js.native
@@ -75,8 +72,7 @@ object defaultProps {
   @js.native
   val spinners: Boolean = js.native
   
-  @scala.inline
-  def textFormatter(e: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("textFormatter")(e.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def textFormatter(e: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("textFormatter")(e.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSImport("rc-easyui", "DateTimeSpinner.defaultProps.validateOnBlur")
   @js.native

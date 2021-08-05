@@ -30,8 +30,7 @@ trait Block
 }
 object Block {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     coerce: Node => Node,
     column: Double,
     eval: () => Node,
@@ -58,34 +57,24 @@ object Block {
     __obj.asInstanceOf[Block]
   }
   
-  @scala.inline
-  implicit class BlockMutableBuilder[Self <: Block] (val x: Self) extends AnyVal {
+  extension [Self <: Block](x: Self) {
     
-    @scala.inline
-    def setHasMedia(value: scala.Boolean): Self = StObject.set(x, "hasMedia", value.asInstanceOf[js.Any])
+    inline def setHasMedia(value: scala.Boolean): Self = StObject.set(x, "hasMedia", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasProperties(value: scala.Boolean): Self = StObject.set(x, "hasProperties", value.asInstanceOf[js.Any])
+    inline def setHasProperties(value: scala.Boolean): Self = StObject.set(x, "hasProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEmpty(value: scala.Boolean): Self = StObject.set(x, "isEmpty", value.asInstanceOf[js.Any])
+    inline def setIsEmpty(value: scala.Boolean): Self = StObject.set(x, "isEmpty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodes(value: js.Array[Node]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: js.Array[Node]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value :_*))
     
-    @scala.inline
-    def setParent(value: Block): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Block): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPush(value: Node => scala.Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+    inline def setPush(value: Node => scala.Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setScope(value: scala.Boolean): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: scala.Boolean): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
   }
 }

@@ -14,25 +14,19 @@ trait PartialListIconProps extends StObject {
 }
 object PartialListIconProps {
   
-  @scala.inline
-  def apply(): PartialListIconProps = {
+  inline def apply(): PartialListIconProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialListIconProps]
   }
   
-  @scala.inline
-  implicit class PartialListIconPropsMutableBuilder[Self <: PartialListIconProps] (val x: Self) extends AnyVal {
+  extension [Self <: PartialListIconProps](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setGlyph(value: IconGlyph): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
+    inline def setGlyph(value: IconGlyph): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlyphUndefined: Self = StObject.set(x, "glyph", js.undefined)
+    inline def setGlyphUndefined: Self = StObject.set(x, "glyph", js.undefined)
   }
 }

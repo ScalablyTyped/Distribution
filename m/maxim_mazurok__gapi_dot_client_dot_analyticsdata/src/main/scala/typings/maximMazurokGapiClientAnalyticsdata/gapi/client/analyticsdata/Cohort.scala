@@ -25,31 +25,23 @@ trait Cohort extends StObject {
 }
 object Cohort {
   
-  @scala.inline
-  def apply(): Cohort = {
+  inline def apply(): Cohort = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Cohort]
   }
   
-  @scala.inline
-  implicit class CohortMutableBuilder[Self <: Cohort] (val x: Self) extends AnyVal {
+  extension [Self <: Cohort](x: Self) {
     
-    @scala.inline
-    def setDateRange(value: DateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
+    inline def setDateRange(value: DateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateRangeUndefined: Self = StObject.set(x, "dateRange", js.undefined)
+    inline def setDateRangeUndefined: Self = StObject.set(x, "dateRange", js.undefined)
     
-    @scala.inline
-    def setDimension(value: String): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
+    inline def setDimension(value: String): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionUndefined: Self = StObject.set(x, "dimension", js.undefined)
+    inline def setDimensionUndefined: Self = StObject.set(x, "dimension", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

@@ -18,13 +18,9 @@ object MSMediaKeys {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isTypeSupported(keySystem: java.lang.String): scala.Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeSupported")(keySystem.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
-  @scala.inline
-  def isTypeSupported(keySystem: java.lang.String, `type`: java.lang.String): scala.Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTypeSupported")(keySystem.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
+  inline def isTypeSupported(keySystem: java.lang.String): scala.Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeSupported")(keySystem.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+  inline def isTypeSupported(keySystem: java.lang.String, `type`: java.lang.String): scala.Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTypeSupported")(keySystem.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
   
-  @scala.inline
-  def isTypeSupportedWithFeatures(keySystem: java.lang.String): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeSupportedWithFeatures")(keySystem.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
-  @scala.inline
-  def isTypeSupportedWithFeatures(keySystem: java.lang.String, `type`: java.lang.String): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("isTypeSupportedWithFeatures")(keySystem.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+  inline def isTypeSupportedWithFeatures(keySystem: java.lang.String): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeSupportedWithFeatures")(keySystem.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+  inline def isTypeSupportedWithFeatures(keySystem: java.lang.String, `type`: java.lang.String): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("isTypeSupportedWithFeatures")(keySystem.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
 }

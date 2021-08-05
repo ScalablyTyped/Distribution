@@ -20,8 +20,7 @@ trait PathOpEnumValues
 }
 object PathOpEnumValues {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Difference: PathOp,
     Intersect: PathOp,
     ReverseDifference: PathOp,
@@ -33,22 +32,16 @@ object PathOpEnumValues {
     __obj.asInstanceOf[PathOpEnumValues]
   }
   
-  @scala.inline
-  implicit class PathOpEnumValuesMutableBuilder[Self <: PathOpEnumValues] (val x: Self) extends AnyVal {
+  extension [Self <: PathOpEnumValues](x: Self) {
     
-    @scala.inline
-    def setDifference(value: PathOp): Self = StObject.set(x, "Difference", value.asInstanceOf[js.Any])
+    inline def setDifference(value: PathOp): Self = StObject.set(x, "Difference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntersect(value: PathOp): Self = StObject.set(x, "Intersect", value.asInstanceOf[js.Any])
+    inline def setIntersect(value: PathOp): Self = StObject.set(x, "Intersect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReverseDifference(value: PathOp): Self = StObject.set(x, "ReverseDifference", value.asInstanceOf[js.Any])
+    inline def setReverseDifference(value: PathOp): Self = StObject.set(x, "ReverseDifference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnion(value: PathOp): Self = StObject.set(x, "Union", value.asInstanceOf[js.Any])
+    inline def setUnion(value: PathOp): Self = StObject.set(x, "Union", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXOR(value: PathOp): Self = StObject.set(x, "XOR", value.asInstanceOf[js.Any])
+    inline def setXOR(value: PathOp): Self = StObject.set(x, "XOR", value.asInstanceOf[js.Any])
   }
 }

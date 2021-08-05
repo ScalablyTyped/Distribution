@@ -21,6 +21,5 @@ object RatingBase {
   @JSImport("office-ui-fabric-react", "RatingBase.defaultProps")
   @js.native
   def defaultProps: IRatingProps = js.native
-  @scala.inline
-  def defaultProps_=(x: IRatingProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: IRatingProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

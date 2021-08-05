@@ -10,6 +10,5 @@ object fancyboxBooleans {
   sealed trait `false`
     extends StObject
        with FancyBoxInteractionTypes
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
+  inline def `false`: `false` = false.asInstanceOf[`false`]
 }

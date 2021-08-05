@@ -21,11 +21,11 @@ object componentRegistryMod {
       appRegistryService: AppRegistryService
     ) = this()
     
-    var appRegistryService: js.Any = js.native
+    /* private */ var appRegistryService: js.Any = js.native
     
-    var componentEventsObserver: js.Any = js.native
+    /* private */ var componentEventsObserver: js.Any = js.native
     
-    var componentWrapper: js.Any = js.native
+    /* private */ var componentWrapper: js.Any = js.native
     
     def registerComponent(componentName: String, componentProvider: ComponentProvider): ComponentProvider = js.native
     def registerComponent(
@@ -120,6 +120,6 @@ object componentRegistryMod {
       reduxStore: js.Any
     ): ComponentProvider = js.native
     
-    var store: js.Any = js.native
+    /* private */ var store: js.Any = js.native
   }
 }

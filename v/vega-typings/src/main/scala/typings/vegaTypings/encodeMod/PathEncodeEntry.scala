@@ -19,49 +19,35 @@ trait PathEncodeEntry
 }
 object PathEncodeEntry {
   
-  @scala.inline
-  def apply(): PathEncodeEntry = {
+  inline def apply(): PathEncodeEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PathEncodeEntry]
   }
   
-  @scala.inline
-  implicit class PathEncodeEntryMutableBuilder[Self <: PathEncodeEntry] (val x: Self) extends AnyVal {
+  extension [Self <: PathEncodeEntry](x: Self) {
     
-    @scala.inline
-    def setAngle(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    inline def setAngle(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+    inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
     
-    @scala.inline
-    def setAngleVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "angle", js.Array(value :_*))
+    inline def setAngleVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "angle", js.Array(value :_*))
     
-    @scala.inline
-    def setPath(value: ProductionRule[StringValueRef]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: ProductionRule[StringValueRef]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setPathVarargs(value: (Test & StringValueRef)*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: (Test & StringValueRef)*): Self = StObject.set(x, "path", js.Array(value :_*))
     
-    @scala.inline
-    def setScaleX(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
+    inline def setScaleX(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleXUndefined: Self = StObject.set(x, "scaleX", js.undefined)
+    inline def setScaleXUndefined: Self = StObject.set(x, "scaleX", js.undefined)
     
-    @scala.inline
-    def setScaleXVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "scaleX", js.Array(value :_*))
+    inline def setScaleXVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "scaleX", js.Array(value :_*))
     
-    @scala.inline
-    def setScaleY(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
+    inline def setScaleY(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleYUndefined: Self = StObject.set(x, "scaleY", js.undefined)
+    inline def setScaleYUndefined: Self = StObject.set(x, "scaleY", js.undefined)
     
-    @scala.inline
-    def setScaleYVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "scaleY", js.Array(value :_*))
+    inline def setScaleYVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "scaleY", js.Array(value :_*))
   }
 }

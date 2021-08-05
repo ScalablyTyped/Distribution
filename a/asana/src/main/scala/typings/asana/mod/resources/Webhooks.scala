@@ -176,29 +176,22 @@ object Webhooks extends Shortcut {
   }
   object Filter {
     
-    @scala.inline
-    def apply(action: String, fields: js.Array[String], resource_subtype: String, resource_type: String): Filter = {
+    inline def apply(action: String, fields: js.Array[String], resource_subtype: String, resource_type: String): Filter = {
       val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], resource_subtype = resource_subtype.asInstanceOf[js.Any], resource_type = resource_type.asInstanceOf[js.Any])
       __obj.asInstanceOf[Filter]
     }
     
-    @scala.inline
-    implicit class FilterMutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
+    extension [Self <: Filter](x: Self) {
       
-      @scala.inline
-      def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+      inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
       
-      @scala.inline
-      def setResource_subtype(value: String): Self = StObject.set(x, "resource_subtype", value.asInstanceOf[js.Any])
+      inline def setResource_subtype(value: String): Self = StObject.set(x, "resource_subtype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResource_type(value: String): Self = StObject.set(x, "resource_type", value.asInstanceOf[js.Any])
+      inline def setResource_type(value: String): Self = StObject.set(x, "resource_type", value.asInstanceOf[js.Any])
     }
   }
   

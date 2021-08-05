@@ -24,8 +24,7 @@ object anon {
   }
   object ConsoleFormattedStream {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ConsoleFormattedStream: typings.browserBunyan.mod.BrowserBunyan.ConsoleFormattedStream,
       ConsoleRawStream: ConsoleRawStream
     ): ConsoleFormattedStream = {
@@ -33,14 +32,11 @@ object anon {
       __obj.asInstanceOf[ConsoleFormattedStream]
     }
     
-    @scala.inline
-    implicit class ConsoleFormattedStreamMutableBuilder[Self <: ConsoleFormattedStream] (val x: Self) extends AnyVal {
+    extension [Self <: ConsoleFormattedStream](x: Self) {
       
-      @scala.inline
-      def setConsoleFormattedStream(value: typings.browserBunyan.mod.BrowserBunyan.ConsoleFormattedStream): Self = StObject.set(x, "ConsoleFormattedStream", value.asInstanceOf[js.Any])
+      inline def setConsoleFormattedStream(value: typings.browserBunyan.mod.BrowserBunyan.ConsoleFormattedStream): Self = StObject.set(x, "ConsoleFormattedStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsoleRawStream(value: ConsoleRawStream): Self = StObject.set(x, "ConsoleRawStream", value.asInstanceOf[js.Any])
+      inline def setConsoleRawStream(value: ConsoleRawStream): Self = StObject.set(x, "ConsoleRawStream", value.asInstanceOf[js.Any])
     }
   }
   
@@ -61,50 +57,36 @@ object anon {
   }
   object PartialConsoleFormattedSt {
     
-    @scala.inline
-    def apply(): PartialConsoleFormattedSt = {
+    inline def apply(): PartialConsoleFormattedSt = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialConsoleFormattedSt]
     }
     
-    @scala.inline
-    implicit class PartialConsoleFormattedStMutableBuilder[Self <: PartialConsoleFormattedSt] (val x: Self) extends AnyVal {
+    extension [Self <: PartialConsoleFormattedSt](x: Self) {
       
-      @scala.inline
-      def setDebug(value: String): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: String): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setFatal(value: String): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
+      inline def setFatal(value: String): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFatalUndefined: Self = StObject.set(x, "fatal", js.undefined)
+      inline def setFatalUndefined: Self = StObject.set(x, "fatal", js.undefined)
       
-      @scala.inline
-      def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
+      inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
       
-      @scala.inline
-      def setTrace(value: String): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
+      inline def setTrace(value: String): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
+      inline def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
       
-      @scala.inline
-      def setWarn(value: String): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
+      inline def setWarn(value: String): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
+      inline def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
     }
   }
   
@@ -121,38 +103,28 @@ object anon {
   }
   object PartialConsoleFormattedStDef {
     
-    @scala.inline
-    def apply(): PartialConsoleFormattedStDef = {
+    inline def apply(): PartialConsoleFormattedStDef = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialConsoleFormattedStDef]
     }
     
-    @scala.inline
-    implicit class PartialConsoleFormattedStDefMutableBuilder[Self <: PartialConsoleFormattedStDef] (val x: Self) extends AnyVal {
+    extension [Self <: PartialConsoleFormattedStDef](x: Self) {
       
-      @scala.inline
-      def setDef(value: String): Self = StObject.set(x, "def", value.asInstanceOf[js.Any])
+      inline def setDef(value: String): Self = StObject.set(x, "def", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefUndefined: Self = StObject.set(x, "def", js.undefined)
+      inline def setDefUndefined: Self = StObject.set(x, "def", js.undefined)
       
-      @scala.inline
-      def setLevels(value: PartialConsoleFormattedSt): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
+      inline def setLevels(value: PartialConsoleFormattedSt): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
+      inline def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
       
-      @scala.inline
-      def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
+      inline def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgUndefined: Self = StObject.set(x, "msg", js.undefined)
+      inline def setMsgUndefined: Self = StObject.set(x, "msg", js.undefined)
       
-      @scala.inline
-      def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+      inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
     }
   }
   
@@ -189,8 +161,7 @@ object anon {
   }
   object Typeofbunyan {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       DEBUG: Double,
       ERROR: Double,
       FATAL: Double,
@@ -210,50 +181,35 @@ object anon {
       __obj.asInstanceOf[Typeofbunyan]
     }
     
-    @scala.inline
-    implicit class TypeofbunyanMutableBuilder[Self <: Typeofbunyan] (val x: Self) extends AnyVal {
+    extension [Self <: Typeofbunyan](x: Self) {
       
-      @scala.inline
-      def setCreateLogger(value: LoggerOptions => Logger): Self = StObject.set(x, "createLogger", js.Any.fromFunction1(value))
+      inline def setCreateLogger(value: LoggerOptions => Logger): Self = StObject.set(x, "createLogger", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDEBUG(value: Double): Self = StObject.set(x, "DEBUG", value.asInstanceOf[js.Any])
+      inline def setDEBUG(value: Double): Self = StObject.set(x, "DEBUG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setERROR(value: Double): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
+      inline def setERROR(value: Double): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFATAL(value: Double): Self = StObject.set(x, "FATAL", value.asInstanceOf[js.Any])
+      inline def setFATAL(value: Double): Self = StObject.set(x, "FATAL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setINFO(value: Double): Self = StObject.set(x, "INFO", value.asInstanceOf[js.Any])
+      inline def setINFO(value: Double): Self = StObject.set(x, "INFO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelFromName(value: TypeoflevelFromName): Self = StObject.set(x, "levelFromName", value.asInstanceOf[js.Any])
+      inline def setLevelFromName(value: TypeoflevelFromName): Self = StObject.set(x, "levelFromName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameFromLevel(value: js.Any): Self = StObject.set(x, "nameFromLevel", value.asInstanceOf[js.Any])
+      inline def setNameFromLevel(value: js.Any): Self = StObject.set(x, "nameFromLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolveLevel(value: LogLevel => Double): Self = StObject.set(x, "resolveLevel", js.Any.fromFunction1(value))
+      inline def setResolveLevel(value: LogLevel => Double): Self = StObject.set(x, "resolveLevel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRingBuffer(value: Instantiable1[/* options */ RingBufferOptions, RingBuffer]): Self = StObject.set(x, "RingBuffer", value.asInstanceOf[js.Any])
+      inline def setRingBuffer(value: Instantiable1[/* options */ RingBufferOptions, RingBuffer]): Self = StObject.set(x, "RingBuffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotatingFileStream(value: Instantiable1[/* options */ RotatingFileStreamOptions, RotatingFileStream]): Self = StObject.set(x, "RotatingFileStream", value.asInstanceOf[js.Any])
+      inline def setRotatingFileStream(value: Instantiable1[/* options */ RotatingFileStreamOptions, RotatingFileStream]): Self = StObject.set(x, "RotatingFileStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSafeCycles(value: () => js.Function2[/* key */ String, /* value */ js.Any, js.Any]): Self = StObject.set(x, "safeCycles", js.Any.fromFunction0(value))
+      inline def setSafeCycles(value: () => js.Function2[/* key */ String, /* value */ js.Any, js.Any]): Self = StObject.set(x, "safeCycles", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStdSerializers(value: StdSerializers_): Self = StObject.set(x, "stdSerializers", value.asInstanceOf[js.Any])
+      inline def setStdSerializers(value: StdSerializers_): Self = StObject.set(x, "stdSerializers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTRACE(value: Double): Self = StObject.set(x, "TRACE", value.asInstanceOf[js.Any])
+      inline def setTRACE(value: Double): Self = StObject.set(x, "TRACE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWARN(value: Double): Self = StObject.set(x, "WARN", value.asInstanceOf[js.Any])
+      inline def setWARN(value: Double): Self = StObject.set(x, "WARN", value.asInstanceOf[js.Any])
     }
   }
   
@@ -273,32 +229,24 @@ object anon {
   }
   object TypeoflevelFromName {
     
-    @scala.inline
-    def apply(debug: Double, error: Double, fatal: Double, info: Double, trace: Double, warn: Double): TypeoflevelFromName = {
+    inline def apply(debug: Double, error: Double, fatal: Double, info: Double, trace: Double, warn: Double): TypeoflevelFromName = {
       val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], fatal = fatal.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], trace = trace.asInstanceOf[js.Any], warn = warn.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeoflevelFromName]
     }
     
-    @scala.inline
-    implicit class TypeoflevelFromNameMutableBuilder[Self <: TypeoflevelFromName] (val x: Self) extends AnyVal {
+    extension [Self <: TypeoflevelFromName](x: Self) {
       
-      @scala.inline
-      def setDebug(value: Double): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Double): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFatal(value: Double): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
+      inline def setFatal(value: Double): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfo(value: Double): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: Double): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrace(value: Double): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
+      inline def setTrace(value: Double): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarn(value: Double): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
+      inline def setWarn(value: Double): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
     }
   }
 }

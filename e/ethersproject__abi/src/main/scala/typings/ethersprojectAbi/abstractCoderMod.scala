@@ -74,8 +74,7 @@ object abstractCoderMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def coerce(name: String, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("coerce")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def coerce(name: String, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("coerce")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
   @JSImport("@ethersproject/abi/lib/coders/abstract-coder", "Writer")
@@ -104,8 +103,7 @@ object abstractCoderMod {
     def writeValue(value: BigNumberish): Double = js.native
   }
   
-  @scala.inline
-  def checkResultErrors(result: Result): js.Array[Error] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkResultErrors")(result.asInstanceOf[js.Any]).asInstanceOf[js.Array[Error]]
+  inline def checkResultErrors(result: Result): js.Array[Error] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkResultErrors")(result.asInstanceOf[js.Any]).asInstanceOf[js.Array[Error]]
   
   type CoerceFunc = js.Function2[/* type */ String, /* value */ js.Any, js.Any]
   

@@ -25,49 +25,35 @@ trait ESCOption extends StObject {
 }
 object ESCOption {
   
-  @scala.inline
-  def apply(pin: Double | String): ESCOption = {
+  inline def apply(pin: Double | String): ESCOption = {
     val __obj = js.Dynamic.literal(pin = pin.asInstanceOf[js.Any])
     __obj.asInstanceOf[ESCOption]
   }
   
-  @scala.inline
-  implicit class ESCOptionMutableBuilder[Self <: ESCOption] (val x: Self) extends AnyVal {
+  extension [Self <: ESCOption](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setController(value: PCA9685 | DEFAULT): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+    inline def setController(value: PCA9685 | DEFAULT): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
+    inline def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
     
-    @scala.inline
-    def setDevice(value: FORWARD | FORWARD_REVERSE | FORWARD_REVERSE_BRAKE): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: FORWARD | FORWARD_REVERSE | FORWARD_REVERSE_BRAKE): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
+    inline def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
     
-    @scala.inline
-    def setNeutral(value: Double): Self = StObject.set(x, "neutral", value.asInstanceOf[js.Any])
+    inline def setNeutral(value: Double): Self = StObject.set(x, "neutral", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeutralUndefined: Self = StObject.set(x, "neutral", js.undefined)
+    inline def setNeutralUndefined: Self = StObject.set(x, "neutral", js.undefined)
     
-    @scala.inline
-    def setPin(value: Double | String): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
+    inline def setPin(value: Double | String): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPwmRange(value: js.Array[Double]): Self = StObject.set(x, "pwmRange", value.asInstanceOf[js.Any])
+    inline def setPwmRange(value: js.Array[Double]): Self = StObject.set(x, "pwmRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPwmRangeUndefined: Self = StObject.set(x, "pwmRange", js.undefined)
+    inline def setPwmRangeUndefined: Self = StObject.set(x, "pwmRange", js.undefined)
     
-    @scala.inline
-    def setPwmRangeVarargs(value: Double*): Self = StObject.set(x, "pwmRange", js.Array(value :_*))
+    inline def setPwmRangeVarargs(value: Double*): Self = StObject.set(x, "pwmRange", js.Array(value :_*))
   }
 }

@@ -19,25 +19,19 @@ trait Alwaysupdate extends StObject {
 }
 object Alwaysupdate {
   
-  @scala.inline
-  def apply(): Alwaysupdate = {
+  inline def apply(): Alwaysupdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Alwaysupdate]
   }
   
-  @scala.inline
-  implicit class AlwaysupdateMutableBuilder[Self <: Alwaysupdate] (val x: Self) extends AnyVal {
+  extension [Self <: Alwaysupdate](x: Self) {
     
-    @scala.inline
-    def setAlways_update(value: Boolean): Self = StObject.set(x, "always_update", value.asInstanceOf[js.Any])
+    inline def setAlways_update(value: Boolean): Self = StObject.set(x, "always_update", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlways_updateUndefined: Self = StObject.set(x, "always_update", js.undefined)
+    inline def setAlways_updateUndefined: Self = StObject.set(x, "always_update", js.undefined)
     
-    @scala.inline
-    def setRequired_platform_version(value: String): Self = StObject.set(x, "required_platform_version", value.asInstanceOf[js.Any])
+    inline def setRequired_platform_version(value: String): Self = StObject.set(x, "required_platform_version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequired_platform_versionUndefined: Self = StObject.set(x, "required_platform_version", js.undefined)
+    inline def setRequired_platform_versionUndefined: Self = StObject.set(x, "required_platform_version", js.undefined)
   }
 }

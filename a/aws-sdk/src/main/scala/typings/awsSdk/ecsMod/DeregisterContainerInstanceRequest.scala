@@ -23,28 +23,21 @@ trait DeregisterContainerInstanceRequest extends StObject {
 }
 object DeregisterContainerInstanceRequest {
   
-  @scala.inline
-  def apply(containerInstance: String): DeregisterContainerInstanceRequest = {
+  inline def apply(containerInstance: String): DeregisterContainerInstanceRequest = {
     val __obj = js.Dynamic.literal(containerInstance = containerInstance.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeregisterContainerInstanceRequest]
   }
   
-  @scala.inline
-  implicit class DeregisterContainerInstanceRequestMutableBuilder[Self <: DeregisterContainerInstanceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeregisterContainerInstanceRequest](x: Self) {
     
-    @scala.inline
-    def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
+    inline def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
+    inline def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
     
-    @scala.inline
-    def setContainerInstance(value: String): Self = StObject.set(x, "containerInstance", value.asInstanceOf[js.Any])
+    inline def setContainerInstance(value: String): Self = StObject.set(x, "containerInstance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForce(value: BoxedBoolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    inline def setForce(value: BoxedBoolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
   }
 }

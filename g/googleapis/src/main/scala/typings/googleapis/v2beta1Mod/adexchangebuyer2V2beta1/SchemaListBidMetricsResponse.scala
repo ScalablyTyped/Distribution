@@ -24,28 +24,21 @@ trait SchemaListBidMetricsResponse extends StObject {
 }
 object SchemaListBidMetricsResponse {
   
-  @scala.inline
-  def apply(): SchemaListBidMetricsResponse = {
+  inline def apply(): SchemaListBidMetricsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListBidMetricsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListBidMetricsResponseMutableBuilder[Self <: SchemaListBidMetricsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListBidMetricsResponse](x: Self) {
     
-    @scala.inline
-    def setBidMetricsRows(value: js.Array[SchemaBidMetricsRow]): Self = StObject.set(x, "bidMetricsRows", value.asInstanceOf[js.Any])
+    inline def setBidMetricsRows(value: js.Array[SchemaBidMetricsRow]): Self = StObject.set(x, "bidMetricsRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBidMetricsRowsUndefined: Self = StObject.set(x, "bidMetricsRows", js.undefined)
+    inline def setBidMetricsRowsUndefined: Self = StObject.set(x, "bidMetricsRows", js.undefined)
     
-    @scala.inline
-    def setBidMetricsRowsVarargs(value: SchemaBidMetricsRow*): Self = StObject.set(x, "bidMetricsRows", js.Array(value :_*))
+    inline def setBidMetricsRowsVarargs(value: SchemaBidMetricsRow*): Self = StObject.set(x, "bidMetricsRows", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

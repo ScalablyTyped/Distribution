@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoSharedWorkspaceTaskStatus extends StObject
 object MsoSharedWorkspaceTaskStatus {
   
-  @scala.inline
-  def msoSharedWorkspaceTaskStatusCompleted: `3` = 3.asInstanceOf[`3`]
+  inline def msoSharedWorkspaceTaskStatusCompleted: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoSharedWorkspaceTaskStatusDeferred: `4` = 4.asInstanceOf[`4`]
+  inline def msoSharedWorkspaceTaskStatusDeferred: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def msoSharedWorkspaceTaskStatusInProgress: `2` = 2.asInstanceOf[`2`]
+  inline def msoSharedWorkspaceTaskStatusInProgress: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoSharedWorkspaceTaskStatusNotStarted: `1` = 1.asInstanceOf[`1`]
+  inline def msoSharedWorkspaceTaskStatusNotStarted: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoSharedWorkspaceTaskStatusWaiting: `5` = 5.asInstanceOf[`5`]
+  inline def msoSharedWorkspaceTaskStatusWaiting: `5` = 5.asInstanceOf[`5`]
 }

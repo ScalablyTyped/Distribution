@@ -152,8 +152,7 @@ trait Node extends StObject {
 }
 object Node {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     backendNodeId: BackendNodeId,
     localName: String,
     nodeId: NodeId,
@@ -165,172 +164,116 @@ object Node {
     __obj.asInstanceOf[Node]
   }
   
-  @scala.inline
-  implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
+  extension [Self <: Node](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
     
-    @scala.inline
-    def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
+    inline def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseURL(value: String): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
+    inline def setBaseURL(value: String): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseURLUndefined: Self = StObject.set(x, "baseURL", js.undefined)
+    inline def setBaseURLUndefined: Self = StObject.set(x, "baseURL", js.undefined)
     
-    @scala.inline
-    def setChildNodeCount(value: integer): Self = StObject.set(x, "childNodeCount", value.asInstanceOf[js.Any])
+    inline def setChildNodeCount(value: integer): Self = StObject.set(x, "childNodeCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildNodeCountUndefined: Self = StObject.set(x, "childNodeCount", js.undefined)
+    inline def setChildNodeCountUndefined: Self = StObject.set(x, "childNodeCount", js.undefined)
     
-    @scala.inline
-    def setChildren(value: js.Array[Node]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[Node]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setChildrenVarargs(value: Node*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: Node*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setContentDocument(value: Node): Self = StObject.set(x, "contentDocument", value.asInstanceOf[js.Any])
+    inline def setContentDocument(value: Node): Self = StObject.set(x, "contentDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentDocumentUndefined: Self = StObject.set(x, "contentDocument", js.undefined)
+    inline def setContentDocumentUndefined: Self = StObject.set(x, "contentDocument", js.undefined)
     
-    @scala.inline
-    def setDistributedNodes(value: js.Array[BackendNode]): Self = StObject.set(x, "distributedNodes", value.asInstanceOf[js.Any])
+    inline def setDistributedNodes(value: js.Array[BackendNode]): Self = StObject.set(x, "distributedNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributedNodesUndefined: Self = StObject.set(x, "distributedNodes", js.undefined)
+    inline def setDistributedNodesUndefined: Self = StObject.set(x, "distributedNodes", js.undefined)
     
-    @scala.inline
-    def setDistributedNodesVarargs(value: BackendNode*): Self = StObject.set(x, "distributedNodes", js.Array(value :_*))
+    inline def setDistributedNodesVarargs(value: BackendNode*): Self = StObject.set(x, "distributedNodes", js.Array(value :_*))
     
-    @scala.inline
-    def setDocumentURL(value: String): Self = StObject.set(x, "documentURL", value.asInstanceOf[js.Any])
+    inline def setDocumentURL(value: String): Self = StObject.set(x, "documentURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentURLUndefined: Self = StObject.set(x, "documentURL", js.undefined)
+    inline def setDocumentURLUndefined: Self = StObject.set(x, "documentURL", js.undefined)
     
-    @scala.inline
-    def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+    inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameIdUndefined: Self = StObject.set(x, "frameId", js.undefined)
+    inline def setFrameIdUndefined: Self = StObject.set(x, "frameId", js.undefined)
     
-    @scala.inline
-    def setImportedDocument(value: Node): Self = StObject.set(x, "importedDocument", value.asInstanceOf[js.Any])
+    inline def setImportedDocument(value: Node): Self = StObject.set(x, "importedDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportedDocumentUndefined: Self = StObject.set(x, "importedDocument", js.undefined)
+    inline def setImportedDocumentUndefined: Self = StObject.set(x, "importedDocument", js.undefined)
     
-    @scala.inline
-    def setInternalSubset(value: String): Self = StObject.set(x, "internalSubset", value.asInstanceOf[js.Any])
+    inline def setInternalSubset(value: String): Self = StObject.set(x, "internalSubset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInternalSubsetUndefined: Self = StObject.set(x, "internalSubset", js.undefined)
+    inline def setInternalSubsetUndefined: Self = StObject.set(x, "internalSubset", js.undefined)
     
-    @scala.inline
-    def setIsSVG(value: Boolean): Self = StObject.set(x, "isSVG", value.asInstanceOf[js.Any])
+    inline def setIsSVG(value: Boolean): Self = StObject.set(x, "isSVG", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSVGUndefined: Self = StObject.set(x, "isSVG", js.undefined)
+    inline def setIsSVGUndefined: Self = StObject.set(x, "isSVG", js.undefined)
     
-    @scala.inline
-    def setLocalName(value: String): Self = StObject.set(x, "localName", value.asInstanceOf[js.Any])
+    inline def setLocalName(value: String): Self = StObject.set(x, "localName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeName(value: String): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
+    inline def setNodeName(value: String): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeType(value: integer): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
+    inline def setNodeType(value: integer): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeValue(value: String): Self = StObject.set(x, "nodeValue", value.asInstanceOf[js.Any])
+    inline def setNodeValue(value: String): Self = StObject.set(x, "nodeValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentId(value: NodeId): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+    inline def setParentId(value: NodeId): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
+    inline def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
     
-    @scala.inline
-    def setPseudoElements(value: js.Array[Node]): Self = StObject.set(x, "pseudoElements", value.asInstanceOf[js.Any])
+    inline def setPseudoElements(value: js.Array[Node]): Self = StObject.set(x, "pseudoElements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPseudoElementsUndefined: Self = StObject.set(x, "pseudoElements", js.undefined)
+    inline def setPseudoElementsUndefined: Self = StObject.set(x, "pseudoElements", js.undefined)
     
-    @scala.inline
-    def setPseudoElementsVarargs(value: Node*): Self = StObject.set(x, "pseudoElements", js.Array(value :_*))
+    inline def setPseudoElementsVarargs(value: Node*): Self = StObject.set(x, "pseudoElements", js.Array(value :_*))
     
-    @scala.inline
-    def setPseudoType(value: PseudoType): Self = StObject.set(x, "pseudoType", value.asInstanceOf[js.Any])
+    inline def setPseudoType(value: PseudoType): Self = StObject.set(x, "pseudoType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPseudoTypeUndefined: Self = StObject.set(x, "pseudoType", js.undefined)
+    inline def setPseudoTypeUndefined: Self = StObject.set(x, "pseudoType", js.undefined)
     
-    @scala.inline
-    def setPublicId(value: String): Self = StObject.set(x, "publicId", value.asInstanceOf[js.Any])
+    inline def setPublicId(value: String): Self = StObject.set(x, "publicId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicIdUndefined: Self = StObject.set(x, "publicId", js.undefined)
+    inline def setPublicIdUndefined: Self = StObject.set(x, "publicId", js.undefined)
     
-    @scala.inline
-    def setShadowRootType(value: ShadowRootType): Self = StObject.set(x, "shadowRootType", value.asInstanceOf[js.Any])
+    inline def setShadowRootType(value: ShadowRootType): Self = StObject.set(x, "shadowRootType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowRootTypeUndefined: Self = StObject.set(x, "shadowRootType", js.undefined)
+    inline def setShadowRootTypeUndefined: Self = StObject.set(x, "shadowRootType", js.undefined)
     
-    @scala.inline
-    def setShadowRoots(value: js.Array[Node]): Self = StObject.set(x, "shadowRoots", value.asInstanceOf[js.Any])
+    inline def setShadowRoots(value: js.Array[Node]): Self = StObject.set(x, "shadowRoots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowRootsUndefined: Self = StObject.set(x, "shadowRoots", js.undefined)
+    inline def setShadowRootsUndefined: Self = StObject.set(x, "shadowRoots", js.undefined)
     
-    @scala.inline
-    def setShadowRootsVarargs(value: Node*): Self = StObject.set(x, "shadowRoots", js.Array(value :_*))
+    inline def setShadowRootsVarargs(value: Node*): Self = StObject.set(x, "shadowRoots", js.Array(value :_*))
     
-    @scala.inline
-    def setSystemId(value: String): Self = StObject.set(x, "systemId", value.asInstanceOf[js.Any])
+    inline def setSystemId(value: String): Self = StObject.set(x, "systemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemIdUndefined: Self = StObject.set(x, "systemId", js.undefined)
+    inline def setSystemIdUndefined: Self = StObject.set(x, "systemId", js.undefined)
     
-    @scala.inline
-    def setTemplateContent(value: Node): Self = StObject.set(x, "templateContent", value.asInstanceOf[js.Any])
+    inline def setTemplateContent(value: Node): Self = StObject.set(x, "templateContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateContentUndefined: Self = StObject.set(x, "templateContent", js.undefined)
+    inline def setTemplateContentUndefined: Self = StObject.set(x, "templateContent", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    @scala.inline
-    def setXmlVersion(value: String): Self = StObject.set(x, "xmlVersion", value.asInstanceOf[js.Any])
+    inline def setXmlVersion(value: String): Self = StObject.set(x, "xmlVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXmlVersionUndefined: Self = StObject.set(x, "xmlVersion", js.undefined)
+    inline def setXmlVersionUndefined: Self = StObject.set(x, "xmlVersion", js.undefined)
   }
 }

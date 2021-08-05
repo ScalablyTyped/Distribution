@@ -35,44 +35,32 @@ object mod {
   }
   object AppendOptions {
     
-    @scala.inline
-    def apply(): AppendOptions = {
+    inline def apply(): AppendOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AppendOptions]
     }
     
-    @scala.inline
-    implicit class AppendOptionsMutableBuilder[Self <: AppendOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AppendOptions](x: Self) {
       
-      @scala.inline
-      def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+      inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+      inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setFilepath(value: String): Self = StObject.set(x, "filepath", value.asInstanceOf[js.Any])
+      inline def setFilepath(value: String): Self = StObject.set(x, "filepath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilepathUndefined: Self = StObject.set(x, "filepath", js.undefined)
+      inline def setFilepathUndefined: Self = StObject.set(x, "filepath", js.undefined)
       
-      @scala.inline
-      def setHeader(value: String | Headers): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: String | Headers): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setKnownLength(value: Double): Self = StObject.set(x, "knownLength", value.asInstanceOf[js.Any])
+      inline def setKnownLength(value: Double): Self = StObject.set(x, "knownLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKnownLengthUndefined: Self = StObject.set(x, "knownLength", js.undefined)
+      inline def setKnownLengthUndefined: Self = StObject.set(x, "knownLength", js.undefined)
     }
   }
   
@@ -126,44 +114,32 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDataSize(value: Double): Self = StObject.set(x, "dataSize", value.asInstanceOf[js.Any])
+      inline def setDataSize(value: Double): Self = StObject.set(x, "dataSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataSizeUndefined: Self = StObject.set(x, "dataSize", js.undefined)
+      inline def setDataSizeUndefined: Self = StObject.set(x, "dataSize", js.undefined)
       
-      @scala.inline
-      def setMaxDataSize(value: Double): Self = StObject.set(x, "maxDataSize", value.asInstanceOf[js.Any])
+      inline def setMaxDataSize(value: Double): Self = StObject.set(x, "maxDataSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxDataSizeUndefined: Self = StObject.set(x, "maxDataSize", js.undefined)
+      inline def setMaxDataSizeUndefined: Self = StObject.set(x, "maxDataSize", js.undefined)
       
-      @scala.inline
-      def setPauseStreams(value: Boolean): Self = StObject.set(x, "pauseStreams", value.asInstanceOf[js.Any])
+      inline def setPauseStreams(value: Boolean): Self = StObject.set(x, "pauseStreams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPauseStreamsUndefined: Self = StObject.set(x, "pauseStreams", js.undefined)
+      inline def setPauseStreamsUndefined: Self = StObject.set(x, "pauseStreams", js.undefined)
       
-      @scala.inline
-      def setReadable(value: Boolean): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
+      inline def setReadable(value: Boolean): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadableUndefined: Self = StObject.set(x, "readable", js.undefined)
+      inline def setReadableUndefined: Self = StObject.set(x, "readable", js.undefined)
       
-      @scala.inline
-      def setWritable(value: Boolean): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
+      inline def setWritable(value: Boolean): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWritableUndefined: Self = StObject.set(x, "writable", js.undefined)
+      inline def setWritableUndefined: Self = StObject.set(x, "writable", js.undefined)
     }
   }
   
@@ -191,23 +167,18 @@ object mod {
   }
   object ReadableOptions {
     
-    @scala.inline
-    def apply(): ReadableOptions = {
+    inline def apply(): ReadableOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReadableOptions]
     }
     
-    @scala.inline
-    implicit class ReadableOptionsMutableBuilder[Self <: ReadableOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ReadableOptions](x: Self) {
       
-      @scala.inline
-      def setAutoDestroy(value: Boolean): Self = StObject.set(x, "autoDestroy", value.asInstanceOf[js.Any])
+      inline def setAutoDestroy(value: Boolean): Self = StObject.set(x, "autoDestroy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoDestroyUndefined: Self = StObject.set(x, "autoDestroy", js.undefined)
+      inline def setAutoDestroyUndefined: Self = StObject.set(x, "autoDestroy", js.undefined)
       
-      @scala.inline
-      def setDestroy(
+      inline def setDestroy(
         value: js.ThisFunction2[
               /* this */ Readable, 
               /* error */ Error | Null, 
@@ -216,32 +187,23 @@ object mod {
             ]
       ): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+      inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
+      inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
+      inline def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
       
-      @scala.inline
-      def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
+      inline def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
+      inline def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
       
-      @scala.inline
-      def setRead(value: js.ThisFunction1[/* this */ Readable, /* size */ Double, Unit]): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+      inline def setRead(value: js.ThisFunction1[/* this */ Readable, /* size */ Double, Unit]): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
+      inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
     }
   }
   
@@ -254,20 +216,16 @@ object mod {
   }
   object SubmitOptions {
     
-    @scala.inline
-    def apply(): SubmitOptions = {
+    inline def apply(): SubmitOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SubmitOptions]
     }
     
-    @scala.inline
-    implicit class SubmitOptionsMutableBuilder[Self <: SubmitOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SubmitOptions](x: Self) {
       
-      @scala.inline
-      def setProtocol(value: httpsColon | httpColon): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: httpsColon | httpColon): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+      inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
     }
   }
 }

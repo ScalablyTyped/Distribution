@@ -23,25 +23,19 @@ trait CreatePolicyVersionRequest extends StObject {
 }
 object CreatePolicyVersionRequest {
   
-  @scala.inline
-  def apply(policyDocument: PolicyDocument, policyName: PolicyName): CreatePolicyVersionRequest = {
+  inline def apply(policyDocument: PolicyDocument, policyName: PolicyName): CreatePolicyVersionRequest = {
     val __obj = js.Dynamic.literal(policyDocument = policyDocument.asInstanceOf[js.Any], policyName = policyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePolicyVersionRequest]
   }
   
-  @scala.inline
-  implicit class CreatePolicyVersionRequestMutableBuilder[Self <: CreatePolicyVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePolicyVersionRequest](x: Self) {
     
-    @scala.inline
-    def setPolicyDocument(value: PolicyDocument): Self = StObject.set(x, "policyDocument", value.asInstanceOf[js.Any])
+    inline def setPolicyDocument(value: PolicyDocument): Self = StObject.set(x, "policyDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyName(value: PolicyName): Self = StObject.set(x, "policyName", value.asInstanceOf[js.Any])
+    inline def setPolicyName(value: PolicyName): Self = StObject.set(x, "policyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetAsDefault(value: SetAsDefault): Self = StObject.set(x, "setAsDefault", value.asInstanceOf[js.Any])
+    inline def setSetAsDefault(value: SetAsDefault): Self = StObject.set(x, "setAsDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetAsDefaultUndefined: Self = StObject.set(x, "setAsDefault", js.undefined)
+    inline def setSetAsDefaultUndefined: Self = StObject.set(x, "setAsDefault", js.undefined)
   }
 }

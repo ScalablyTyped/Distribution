@@ -10,22 +10,17 @@ trait MobileNotifierConfigurationInformation extends StObject {
 }
 object MobileNotifierConfigurationInformation {
   
-  @scala.inline
-  def apply(): MobileNotifierConfigurationInformation = {
+  inline def apply(): MobileNotifierConfigurationInformation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MobileNotifierConfigurationInformation]
   }
   
-  @scala.inline
-  implicit class MobileNotifierConfigurationInformationMutableBuilder[Self <: MobileNotifierConfigurationInformation] (val x: Self) extends AnyVal {
+  extension [Self <: MobileNotifierConfigurationInformation](x: Self) {
     
-    @scala.inline
-    def setMobileNotifierConfigurations(value: js.Array[MobileNotifierConfiguration]): Self = StObject.set(x, "mobileNotifierConfigurations", value.asInstanceOf[js.Any])
+    inline def setMobileNotifierConfigurations(value: js.Array[MobileNotifierConfiguration]): Self = StObject.set(x, "mobileNotifierConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMobileNotifierConfigurationsUndefined: Self = StObject.set(x, "mobileNotifierConfigurations", js.undefined)
+    inline def setMobileNotifierConfigurationsUndefined: Self = StObject.set(x, "mobileNotifierConfigurations", js.undefined)
     
-    @scala.inline
-    def setMobileNotifierConfigurationsVarargs(value: MobileNotifierConfiguration*): Self = StObject.set(x, "mobileNotifierConfigurations", js.Array(value :_*))
+    inline def setMobileNotifierConfigurationsVarargs(value: MobileNotifierConfiguration*): Self = StObject.set(x, "mobileNotifierConfigurations", js.Array(value :_*))
   }
 }

@@ -23,31 +23,23 @@ trait DatasetAction extends StObject {
 }
 object DatasetAction {
   
-  @scala.inline
-  def apply(): DatasetAction = {
+  inline def apply(): DatasetAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DatasetAction]
   }
   
-  @scala.inline
-  implicit class DatasetActionMutableBuilder[Self <: DatasetAction] (val x: Self) extends AnyVal {
+  extension [Self <: DatasetAction](x: Self) {
     
-    @scala.inline
-    def setActionName(value: DatasetActionName): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
+    inline def setActionName(value: DatasetActionName): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionNameUndefined: Self = StObject.set(x, "actionName", js.undefined)
+    inline def setActionNameUndefined: Self = StObject.set(x, "actionName", js.undefined)
     
-    @scala.inline
-    def setContainerAction(value: ContainerDatasetAction): Self = StObject.set(x, "containerAction", value.asInstanceOf[js.Any])
+    inline def setContainerAction(value: ContainerDatasetAction): Self = StObject.set(x, "containerAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerActionUndefined: Self = StObject.set(x, "containerAction", js.undefined)
+    inline def setContainerActionUndefined: Self = StObject.set(x, "containerAction", js.undefined)
     
-    @scala.inline
-    def setQueryAction(value: SqlQueryDatasetAction): Self = StObject.set(x, "queryAction", value.asInstanceOf[js.Any])
+    inline def setQueryAction(value: SqlQueryDatasetAction): Self = StObject.set(x, "queryAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryActionUndefined: Self = StObject.set(x, "queryAction", js.undefined)
+    inline def setQueryActionUndefined: Self = StObject.set(x, "queryAction", js.undefined)
   }
 }

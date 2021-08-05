@@ -23,34 +23,25 @@ trait DescribeProvisionedProductPlanOutput extends StObject {
 }
 object DescribeProvisionedProductPlanOutput {
   
-  @scala.inline
-  def apply(): DescribeProvisionedProductPlanOutput = {
+  inline def apply(): DescribeProvisionedProductPlanOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeProvisionedProductPlanOutput]
   }
   
-  @scala.inline
-  implicit class DescribeProvisionedProductPlanOutputMutableBuilder[Self <: DescribeProvisionedProductPlanOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeProvisionedProductPlanOutput](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: PageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: PageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
     
-    @scala.inline
-    def setProvisionedProductPlanDetails(value: ProvisionedProductPlanDetails): Self = StObject.set(x, "ProvisionedProductPlanDetails", value.asInstanceOf[js.Any])
+    inline def setProvisionedProductPlanDetails(value: ProvisionedProductPlanDetails): Self = StObject.set(x, "ProvisionedProductPlanDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisionedProductPlanDetailsUndefined: Self = StObject.set(x, "ProvisionedProductPlanDetails", js.undefined)
+    inline def setProvisionedProductPlanDetailsUndefined: Self = StObject.set(x, "ProvisionedProductPlanDetails", js.undefined)
     
-    @scala.inline
-    def setResourceChanges(value: ResourceChanges): Self = StObject.set(x, "ResourceChanges", value.asInstanceOf[js.Any])
+    inline def setResourceChanges(value: ResourceChanges): Self = StObject.set(x, "ResourceChanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceChangesUndefined: Self = StObject.set(x, "ResourceChanges", js.undefined)
+    inline def setResourceChangesUndefined: Self = StObject.set(x, "ResourceChanges", js.undefined)
     
-    @scala.inline
-    def setResourceChangesVarargs(value: ResourceChange*): Self = StObject.set(x, "ResourceChanges", js.Array(value :_*))
+    inline def setResourceChangesVarargs(value: ResourceChange*): Self = StObject.set(x, "ResourceChanges", js.Array(value :_*))
   }
 }

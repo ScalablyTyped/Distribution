@@ -24,48 +24,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EventType extends StObject
 object EventType {
   
-  @scala.inline
-  def animationend: typings.baiduApp.baiduAppStrings.animationend = "animationend".asInstanceOf[typings.baiduApp.baiduAppStrings.animationend]
+  inline def animationend: typings.baiduApp.baiduAppStrings.animationend = "animationend".asInstanceOf[typings.baiduApp.baiduAppStrings.animationend]
   
-  @scala.inline
-  def animationiteration: typings.baiduApp.baiduAppStrings.animationiteration = "animationiteration".asInstanceOf[typings.baiduApp.baiduAppStrings.animationiteration]
+  inline def animationiteration: typings.baiduApp.baiduAppStrings.animationiteration = "animationiteration".asInstanceOf[typings.baiduApp.baiduAppStrings.animationiteration]
   
-  @scala.inline
-  def animationstart: typings.baiduApp.baiduAppStrings.animationstart = "animationstart".asInstanceOf[typings.baiduApp.baiduAppStrings.animationstart]
+  inline def animationstart: typings.baiduApp.baiduAppStrings.animationstart = "animationstart".asInstanceOf[typings.baiduApp.baiduAppStrings.animationstart]
   
-  @scala.inline
-  def form: typings.baiduApp.baiduAppStrings.form = "form".asInstanceOf[typings.baiduApp.baiduAppStrings.form]
+  inline def form: typings.baiduApp.baiduAppStrings.form = "form".asInstanceOf[typings.baiduApp.baiduAppStrings.form]
   
-  @scala.inline
-  def input: typings.baiduApp.baiduAppStrings.input = "input".asInstanceOf[typings.baiduApp.baiduAppStrings.input]
+  inline def input: typings.baiduApp.baiduAppStrings.input = "input".asInstanceOf[typings.baiduApp.baiduAppStrings.input]
   
-  @scala.inline
-  def longpress: typings.baiduApp.baiduAppStrings.longpress = "longpress".asInstanceOf[typings.baiduApp.baiduAppStrings.longpress]
+  inline def longpress: typings.baiduApp.baiduAppStrings.longpress = "longpress".asInstanceOf[typings.baiduApp.baiduAppStrings.longpress]
   
-  @scala.inline
-  def scroll: typings.baiduApp.baiduAppStrings.scroll = "scroll".asInstanceOf[typings.baiduApp.baiduAppStrings.scroll]
+  inline def scroll: typings.baiduApp.baiduAppStrings.scroll = "scroll".asInstanceOf[typings.baiduApp.baiduAppStrings.scroll]
   
-  @scala.inline
-  def submit: typings.baiduApp.baiduAppStrings.submit = "submit".asInstanceOf[typings.baiduApp.baiduAppStrings.submit]
+  inline def submit: typings.baiduApp.baiduAppStrings.submit = "submit".asInstanceOf[typings.baiduApp.baiduAppStrings.submit]
   
-  @scala.inline
-  def tap: typings.baiduApp.baiduAppStrings.tap = "tap".asInstanceOf[typings.baiduApp.baiduAppStrings.tap]
+  inline def tap: typings.baiduApp.baiduAppStrings.tap = "tap".asInstanceOf[typings.baiduApp.baiduAppStrings.tap]
   
-  @scala.inline
-  def touchcancel: typings.baiduApp.baiduAppStrings.touchcancel = "touchcancel".asInstanceOf[typings.baiduApp.baiduAppStrings.touchcancel]
+  inline def touchcancel: typings.baiduApp.baiduAppStrings.touchcancel = "touchcancel".asInstanceOf[typings.baiduApp.baiduAppStrings.touchcancel]
   
-  @scala.inline
-  def touchend: typings.baiduApp.baiduAppStrings.touchend = "touchend".asInstanceOf[typings.baiduApp.baiduAppStrings.touchend]
+  inline def touchend: typings.baiduApp.baiduAppStrings.touchend = "touchend".asInstanceOf[typings.baiduApp.baiduAppStrings.touchend]
   
-  @scala.inline
-  def touchforcechange: typings.baiduApp.baiduAppStrings.touchforcechange = "touchforcechange".asInstanceOf[typings.baiduApp.baiduAppStrings.touchforcechange]
+  inline def touchforcechange: typings.baiduApp.baiduAppStrings.touchforcechange = "touchforcechange".asInstanceOf[typings.baiduApp.baiduAppStrings.touchforcechange]
   
-  @scala.inline
-  def touchmove: typings.baiduApp.baiduAppStrings.touchmove = "touchmove".asInstanceOf[typings.baiduApp.baiduAppStrings.touchmove]
+  inline def touchmove: typings.baiduApp.baiduAppStrings.touchmove = "touchmove".asInstanceOf[typings.baiduApp.baiduAppStrings.touchmove]
   
-  @scala.inline
-  def touchstart: typings.baiduApp.baiduAppStrings.touchstart = "touchstart".asInstanceOf[typings.baiduApp.baiduAppStrings.touchstart]
+  inline def touchstart: typings.baiduApp.baiduAppStrings.touchstart = "touchstart".asInstanceOf[typings.baiduApp.baiduAppStrings.touchstart]
   
-  @scala.inline
-  def transitionend: typings.baiduApp.baiduAppStrings.transitionend = "transitionend".asInstanceOf[typings.baiduApp.baiduAppStrings.transitionend]
+  inline def transitionend: typings.baiduApp.baiduAppStrings.transitionend = "transitionend".asInstanceOf[typings.baiduApp.baiduAppStrings.transitionend]
 }

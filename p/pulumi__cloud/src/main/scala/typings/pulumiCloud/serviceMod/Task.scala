@@ -16,6 +16,5 @@ trait Task extends StObject {
 }
 object Task {
   
-  @scala.inline
-  def apply: TaskConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("Task").asInstanceOf[TaskConstructor]
+  inline def apply: TaskConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("Task").asInstanceOf[TaskConstructor]
 }

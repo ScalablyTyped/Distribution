@@ -12,19 +12,15 @@ trait SortByColumn extends StObject {
 }
 object SortByColumn {
   
-  @scala.inline
-  def apply(column: Double, desc: Boolean): SortByColumn = {
+  inline def apply(column: Double, desc: Boolean): SortByColumn = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], desc = desc.asInstanceOf[js.Any])
     __obj.asInstanceOf[SortByColumn]
   }
   
-  @scala.inline
-  implicit class SortByColumnMutableBuilder[Self <: SortByColumn] (val x: Self) extends AnyVal {
+  extension [Self <: SortByColumn](x: Self) {
     
-    @scala.inline
-    def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesc(value: Boolean): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
+    inline def setDesc(value: Boolean): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
   }
 }

@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object levelMod {
   
-  @scala.inline
-  def apply(clientOptions: ClientOptions): js.Function3[
+  inline def apply(clientOptions: ClientOptions): js.Function3[
     /* subsystem */ js.Any, 
     /* level */ js.Any, 
     /* options */ js.UndefOr[js.Object], 

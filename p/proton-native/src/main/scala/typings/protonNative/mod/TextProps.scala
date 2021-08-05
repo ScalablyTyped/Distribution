@@ -17,19 +17,15 @@ trait TextProps
 }
 object TextProps {
   
-  @scala.inline
-  def apply(): TextProps = {
+  inline def apply(): TextProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextProps]
   }
   
-  @scala.inline
-  implicit class TextPropsMutableBuilder[Self <: TextProps] (val x: Self) extends AnyVal {
+  extension [Self <: TextProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
   }
 }

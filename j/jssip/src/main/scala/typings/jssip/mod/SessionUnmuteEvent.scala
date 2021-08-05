@@ -12,19 +12,15 @@ trait SessionUnmuteEvent extends StObject {
 }
 object SessionUnmuteEvent {
   
-  @scala.inline
-  def apply(audio: Boolean, video: Boolean): SessionUnmuteEvent = {
+  inline def apply(audio: Boolean, video: Boolean): SessionUnmuteEvent = {
     val __obj = js.Dynamic.literal(audio = audio.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionUnmuteEvent]
   }
   
-  @scala.inline
-  implicit class SessionUnmuteEventMutableBuilder[Self <: SessionUnmuteEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SessionUnmuteEvent](x: Self) {
     
-    @scala.inline
-    def setAudio(value: Boolean): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+    inline def setAudio(value: Boolean): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideo(value: Boolean): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+    inline def setVideo(value: Boolean): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
   }
 }

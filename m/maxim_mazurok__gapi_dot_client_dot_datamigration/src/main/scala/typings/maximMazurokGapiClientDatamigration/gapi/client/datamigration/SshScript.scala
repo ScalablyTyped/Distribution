@@ -11,19 +11,15 @@ trait SshScript extends StObject {
 }
 object SshScript {
   
-  @scala.inline
-  def apply(): SshScript = {
+  inline def apply(): SshScript = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SshScript]
   }
   
-  @scala.inline
-  implicit class SshScriptMutableBuilder[Self <: SshScript] (val x: Self) extends AnyVal {
+  extension [Self <: SshScript](x: Self) {
     
-    @scala.inline
-    def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+    inline def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
+    inline def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
   }
 }

@@ -22,8 +22,7 @@ trait TripWaypoint
 }
 object TripWaypoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     distance: Double,
     hint: String,
     location: Coordinate,
@@ -35,13 +34,10 @@ object TripWaypoint {
     __obj.asInstanceOf[TripWaypoint]
   }
   
-  @scala.inline
-  implicit class TripWaypointMutableBuilder[Self <: TripWaypoint] (val x: Self) extends AnyVal {
+  extension [Self <: TripWaypoint](x: Self) {
     
-    @scala.inline
-    def setTrips_index(value: Double): Self = StObject.set(x, "trips_index", value.asInstanceOf[js.Any])
+    inline def setTrips_index(value: Double): Self = StObject.set(x, "trips_index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaypoint_index(value: Double): Self = StObject.set(x, "waypoint_index", value.asInstanceOf[js.Any])
+    inline def setWaypoint_index(value: Double): Self = StObject.set(x, "waypoint_index", value.asInstanceOf[js.Any])
   }
 }

@@ -16,16 +16,13 @@ trait RollbackConfig extends StObject {
 }
 object RollbackConfig {
   
-  @scala.inline
-  def apply(revision: Double): RollbackConfig = {
+  inline def apply(revision: Double): RollbackConfig = {
     val __obj = js.Dynamic.literal(revision = revision.asInstanceOf[js.Any])
     __obj.asInstanceOf[RollbackConfig]
   }
   
-  @scala.inline
-  implicit class RollbackConfigMutableBuilder[Self <: RollbackConfig] (val x: Self) extends AnyVal {
+  extension [Self <: RollbackConfig](x: Self) {
     
-    @scala.inline
-    def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+    inline def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
   }
 }

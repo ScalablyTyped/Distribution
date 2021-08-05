@@ -19,23 +19,18 @@ trait SecuritySchemeOauth2AccessCode
 }
 object SecuritySchemeOauth2AccessCode {
   
-  @scala.inline
-  def apply(authorizationUrl: String, scopes: ScopesObject, tokenUrl: String): SecuritySchemeOauth2AccessCode = {
+  inline def apply(authorizationUrl: String, scopes: ScopesObject, tokenUrl: String): SecuritySchemeOauth2AccessCode = {
     val __obj = js.Dynamic.literal(authorizationUrl = authorizationUrl.asInstanceOf[js.Any], flow = "accessCode", scopes = scopes.asInstanceOf[js.Any], tokenUrl = tokenUrl.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("oauth2")
     __obj.asInstanceOf[SecuritySchemeOauth2AccessCode]
   }
   
-  @scala.inline
-  implicit class SecuritySchemeOauth2AccessCodeMutableBuilder[Self <: SecuritySchemeOauth2AccessCode] (val x: Self) extends AnyVal {
+  extension [Self <: SecuritySchemeOauth2AccessCode](x: Self) {
     
-    @scala.inline
-    def setAuthorizationUrl(value: String): Self = StObject.set(x, "authorizationUrl", value.asInstanceOf[js.Any])
+    inline def setAuthorizationUrl(value: String): Self = StObject.set(x, "authorizationUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlow(value: accessCode): Self = StObject.set(x, "flow", value.asInstanceOf[js.Any])
+    inline def setFlow(value: accessCode): Self = StObject.set(x, "flow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenUrl(value: String): Self = StObject.set(x, "tokenUrl", value.asInstanceOf[js.Any])
+    inline def setTokenUrl(value: String): Self = StObject.set(x, "tokenUrl", value.asInstanceOf[js.Any])
   }
 }

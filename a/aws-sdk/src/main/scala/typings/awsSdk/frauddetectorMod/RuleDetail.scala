@@ -58,76 +58,53 @@ trait RuleDetail extends StObject {
 }
 object RuleDetail {
   
-  @scala.inline
-  def apply(): RuleDetail = {
+  inline def apply(): RuleDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RuleDetail]
   }
   
-  @scala.inline
-  implicit class RuleDetailMutableBuilder[Self <: RuleDetail] (val x: Self) extends AnyVal {
+  extension [Self <: RuleDetail](x: Self) {
     
-    @scala.inline
-    def setArn(value: fraudDetectorArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: fraudDetectorArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setCreatedTime(value: time): Self = StObject.set(x, "createdTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: time): Self = StObject.set(x, "createdTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedTimeUndefined: Self = StObject.set(x, "createdTime", js.undefined)
+    inline def setCreatedTimeUndefined: Self = StObject.set(x, "createdTime", js.undefined)
     
-    @scala.inline
-    def setDescription(value: description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDetectorId(value: identifier): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
+    inline def setDetectorId(value: identifier): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectorIdUndefined: Self = StObject.set(x, "detectorId", js.undefined)
+    inline def setDetectorIdUndefined: Self = StObject.set(x, "detectorId", js.undefined)
     
-    @scala.inline
-    def setExpression(value: ruleExpression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: ruleExpression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
+    inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: Language): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: Language): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setLastUpdatedTime(value: time): Self = StObject.set(x, "lastUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTime(value: time): Self = StObject.set(x, "lastUpdatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedTimeUndefined: Self = StObject.set(x, "lastUpdatedTime", js.undefined)
+    inline def setLastUpdatedTimeUndefined: Self = StObject.set(x, "lastUpdatedTime", js.undefined)
     
-    @scala.inline
-    def setOutcomes(value: NonEmptyListOfStrings): Self = StObject.set(x, "outcomes", value.asInstanceOf[js.Any])
+    inline def setOutcomes(value: NonEmptyListOfStrings): Self = StObject.set(x, "outcomes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutcomesUndefined: Self = StObject.set(x, "outcomes", js.undefined)
+    inline def setOutcomesUndefined: Self = StObject.set(x, "outcomes", js.undefined)
     
-    @scala.inline
-    def setOutcomesVarargs(value: String*): Self = StObject.set(x, "outcomes", js.Array(value :_*))
+    inline def setOutcomesVarargs(value: String*): Self = StObject.set(x, "outcomes", js.Array(value :_*))
     
-    @scala.inline
-    def setRuleId(value: identifier): Self = StObject.set(x, "ruleId", value.asInstanceOf[js.Any])
+    inline def setRuleId(value: identifier): Self = StObject.set(x, "ruleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleIdUndefined: Self = StObject.set(x, "ruleId", js.undefined)
+    inline def setRuleIdUndefined: Self = StObject.set(x, "ruleId", js.undefined)
     
-    @scala.inline
-    def setRuleVersion(value: wholeNumberVersionString): Self = StObject.set(x, "ruleVersion", value.asInstanceOf[js.Any])
+    inline def setRuleVersion(value: wholeNumberVersionString): Self = StObject.set(x, "ruleVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleVersionUndefined: Self = StObject.set(x, "ruleVersion", js.undefined)
+    inline def setRuleVersionUndefined: Self = StObject.set(x, "ruleVersion", js.undefined)
   }
 }

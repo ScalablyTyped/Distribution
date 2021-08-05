@@ -38,14 +38,11 @@ object boxplotMod {
   @js.native
   val boxPlotNormalizer: CompositeMarkNormalizer[boxplot] = js.native
   
-  @scala.inline
-  def getBoxPlotType(extent: Double): `min-max` | tukey = ^.asInstanceOf[js.Dynamic].applyDynamic("getBoxPlotType")(extent.asInstanceOf[js.Any]).asInstanceOf[`min-max` | tukey]
+  inline def getBoxPlotType(extent: Double): `min-max` | tukey = ^.asInstanceOf[js.Dynamic].applyDynamic("getBoxPlotType")(extent.asInstanceOf[js.Any]).asInstanceOf[`min-max` | tukey]
   
-  @scala.inline
-  def getBoxPlotType_minmax(extent: `min-max`): `min-max` | tukey = ^.asInstanceOf[js.Dynamic].applyDynamic("getBoxPlotType")(extent.asInstanceOf[js.Any]).asInstanceOf[`min-max` | tukey]
+  inline def getBoxPlotType_minmax(extent: `min-max`): `min-max` | tukey = ^.asInstanceOf[js.Dynamic].applyDynamic("getBoxPlotType")(extent.asInstanceOf[js.Any]).asInstanceOf[`min-max` | tukey]
   
-  @scala.inline
-  def normalizeBoxPlot(spec: GenericUnitSpec[Encoding[String], BoxPlot | BoxPlotDef], hasConfig: NormalizerParams): NormalizedLayerSpec = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeBoxPlot")(spec.asInstanceOf[js.Any], hasConfig.asInstanceOf[js.Any])).asInstanceOf[NormalizedLayerSpec]
+  inline def normalizeBoxPlot(spec: GenericUnitSpec[Encoding[String], BoxPlot | BoxPlotDef], hasConfig: NormalizerParams): NormalizedLayerSpec = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeBoxPlot")(spec.asInstanceOf[js.Any], hasConfig.asInstanceOf[js.Any])).asInstanceOf[NormalizedLayerSpec]
   
   type BoxPlot = boxplot
   
@@ -66,26 +63,20 @@ object boxplotMod {
   }
   object BoxPlotConfig {
     
-    @scala.inline
-    def apply(): BoxPlotConfig = {
+    inline def apply(): BoxPlotConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BoxPlotConfig]
     }
     
-    @scala.inline
-    implicit class BoxPlotConfigMutableBuilder[Self <: BoxPlotConfig] (val x: Self) extends AnyVal {
+    extension [Self <: BoxPlotConfig](x: Self) {
       
-      @scala.inline
-      def setExtent(value: `min-max` | Double): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
+      inline def setExtent(value: `min-max` | Double): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
+      inline def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -98,20 +89,16 @@ object boxplotMod {
   }
   object BoxPlotConfigMixins {
     
-    @scala.inline
-    def apply(): BoxPlotConfigMixins = {
+    inline def apply(): BoxPlotConfigMixins = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BoxPlotConfigMixins]
     }
     
-    @scala.inline
-    implicit class BoxPlotConfigMixinsMutableBuilder[Self <: BoxPlotConfigMixins] (val x: Self) extends AnyVal {
+    extension [Self <: BoxPlotConfigMixins](x: Self) {
       
-      @scala.inline
-      def setBoxplot(value: BoxPlotConfig): Self = StObject.set(x, "boxplot", value.asInstanceOf[js.Any])
+      inline def setBoxplot(value: BoxPlotConfig): Self = StObject.set(x, "boxplot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoxplotUndefined: Self = StObject.set(x, "boxplot", js.undefined)
+      inline def setBoxplotUndefined: Self = StObject.set(x, "boxplot", js.undefined)
     }
   }
   

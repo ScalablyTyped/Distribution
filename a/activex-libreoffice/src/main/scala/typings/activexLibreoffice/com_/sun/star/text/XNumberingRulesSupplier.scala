@@ -23,8 +23,7 @@ trait XNumberingRulesSupplier
 }
 object XNumberingRulesSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     NumberingRules: XIndexAccess,
     acquire: () => Unit,
     getNumberingRules: () => XIndexAccess,
@@ -35,13 +34,10 @@ object XNumberingRulesSupplier {
     __obj.asInstanceOf[XNumberingRulesSupplier]
   }
   
-  @scala.inline
-  implicit class XNumberingRulesSupplierMutableBuilder[Self <: XNumberingRulesSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XNumberingRulesSupplier](x: Self) {
     
-    @scala.inline
-    def setGetNumberingRules(value: () => XIndexAccess): Self = StObject.set(x, "getNumberingRules", js.Any.fromFunction0(value))
+    inline def setGetNumberingRules(value: () => XIndexAccess): Self = StObject.set(x, "getNumberingRules", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNumberingRules(value: XIndexAccess): Self = StObject.set(x, "NumberingRules", value.asInstanceOf[js.Any])
+    inline def setNumberingRules(value: XIndexAccess): Self = StObject.set(x, "NumberingRules", value.asInstanceOf[js.Any])
   }
 }

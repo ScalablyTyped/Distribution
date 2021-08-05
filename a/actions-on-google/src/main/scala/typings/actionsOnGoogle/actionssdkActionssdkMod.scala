@@ -105,8 +105,7 @@ object actionssdkActionssdkMod {
   }
   object ActionsSdkHandlers {
     
-    @scala.inline
-    def apply[TConvData, TUserStorage, TConversation /* <: ActionsSdkConversation[TConvData, TUserStorage] */](
+    inline def apply[TConvData, TUserStorage, TConversation /* <: ActionsSdkConversation[TConvData, TUserStorage] */](
       catcher: (TConversation, /* error */ Error) => js.Promise[js.Any] | js.Any,
       intents: ActionSdkIntentHandlers
     ): ActionsSdkHandlers[TConvData, TUserStorage, TConversation] = {
@@ -114,27 +113,21 @@ object actionssdkActionssdkMod {
       __obj.asInstanceOf[ActionsSdkHandlers[TConvData, TUserStorage, TConversation]]
     }
     
-    @scala.inline
-    implicit class ActionsSdkHandlersMutableBuilder[Self <: ActionsSdkHandlers[?, ?, ?], TConvData, TUserStorage, TConversation /* <: ActionsSdkConversation[TConvData, TUserStorage] */] (val x: Self & (ActionsSdkHandlers[TConvData, TUserStorage, TConversation])) extends AnyVal {
+    extension [Self <: ActionsSdkHandlers[?, ?, ?], TConvData, TUserStorage, TConversation /* <: ActionsSdkConversation[TConvData, TUserStorage] */](x: Self & (ActionsSdkHandlers[TConvData, TUserStorage, TConversation])) {
       
-      @scala.inline
-      def setCatcher(value: (TConversation, /* error */ Error) => js.Promise[js.Any] | js.Any): Self = StObject.set(x, "catcher", js.Any.fromFunction2(value))
+      inline def setCatcher(value: (TConversation, /* error */ Error) => js.Promise[js.Any] | js.Any): Self = StObject.set(x, "catcher", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFallback(
+      inline def setFallback(
         value: (ActionsSdkIntentHandler[js.Object, js.Object, ActionsSdkConversation[js.Object, js.Object], Argument]) | String
       ): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackFunction4(
+      inline def setFallbackFunction4(
         value: (ActionsSdkConversation[js.Object, js.Object], /* input */ String, Argument, /* status */ js.UndefOr[GoogleRpcStatus]) => js.Promise[js.Any] | js.Any
       ): Self = StObject.set(x, "fallback", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+      inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
       
-      @scala.inline
-      def setIntents(value: ActionSdkIntentHandlers): Self = StObject.set(x, "intents", value.asInstanceOf[js.Any])
+      inline def setIntents(value: ActionSdkIntentHandlers): Self = StObject.set(x, "intents", value.asInstanceOf[js.Any])
     }
   }
   
@@ -175,20 +168,16 @@ object actionssdkActionssdkMod {
   }
   object ActionsSdkOptions {
     
-    @scala.inline
-    def apply[TConvData, TUserStorage](): ActionsSdkOptions[TConvData, TUserStorage] = {
+    inline def apply[TConvData, TUserStorage](): ActionsSdkOptions[TConvData, TUserStorage] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ActionsSdkOptions[TConvData, TUserStorage]]
     }
     
-    @scala.inline
-    implicit class ActionsSdkOptionsMutableBuilder[Self <: ActionsSdkOptions[?, ?], TConvData, TUserStorage] (val x: Self & (ActionsSdkOptions[TConvData, TUserStorage])) extends AnyVal {
+    extension [Self <: ActionsSdkOptions[?, ?], TConvData, TUserStorage](x: Self & (ActionsSdkOptions[TConvData, TUserStorage])) {
       
-      @scala.inline
-      def setVerification(value: ActionsSdkVerification | String): Self = StObject.set(x, "verification", value.asInstanceOf[js.Any])
+      inline def setVerification(value: ActionsSdkVerification | String): Self = StObject.set(x, "verification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerificationUndefined: Self = StObject.set(x, "verification", js.undefined)
+      inline def setVerificationUndefined: Self = StObject.set(x, "verification", js.undefined)
     }
   }
   
@@ -217,32 +206,24 @@ object actionssdkActionssdkMod {
   }
   object ActionsSdkVerification {
     
-    @scala.inline
-    def apply(project: String): ActionsSdkVerification = {
+    inline def apply(project: String): ActionsSdkVerification = {
       val __obj = js.Dynamic.literal(project = project.asInstanceOf[js.Any])
       __obj.asInstanceOf[ActionsSdkVerification]
     }
     
-    @scala.inline
-    implicit class ActionsSdkVerificationMutableBuilder[Self <: ActionsSdkVerification] (val x: Self) extends AnyVal {
+    extension [Self <: ActionsSdkVerification](x: Self) {
       
-      @scala.inline
-      def setError(value: String | (js.Function1[/* error */ String, String])): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: String | (js.Function1[/* error */ String, String])): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorFunction1(value: /* error */ String => String): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setErrorFunction1(value: /* error */ String => String): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     }
   }
   

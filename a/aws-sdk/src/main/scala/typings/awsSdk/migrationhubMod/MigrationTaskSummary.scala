@@ -38,49 +38,35 @@ trait MigrationTaskSummary extends StObject {
 }
 object MigrationTaskSummary {
   
-  @scala.inline
-  def apply(): MigrationTaskSummary = {
+  inline def apply(): MigrationTaskSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MigrationTaskSummary]
   }
   
-  @scala.inline
-  implicit class MigrationTaskSummaryMutableBuilder[Self <: MigrationTaskSummary] (val x: Self) extends AnyVal {
+  extension [Self <: MigrationTaskSummary](x: Self) {
     
-    @scala.inline
-    def setMigrationTaskName(value: MigrationTaskName): Self = StObject.set(x, "MigrationTaskName", value.asInstanceOf[js.Any])
+    inline def setMigrationTaskName(value: MigrationTaskName): Self = StObject.set(x, "MigrationTaskName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMigrationTaskNameUndefined: Self = StObject.set(x, "MigrationTaskName", js.undefined)
+    inline def setMigrationTaskNameUndefined: Self = StObject.set(x, "MigrationTaskName", js.undefined)
     
-    @scala.inline
-    def setProgressPercent(value: ProgressPercent): Self = StObject.set(x, "ProgressPercent", value.asInstanceOf[js.Any])
+    inline def setProgressPercent(value: ProgressPercent): Self = StObject.set(x, "ProgressPercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressPercentUndefined: Self = StObject.set(x, "ProgressPercent", js.undefined)
+    inline def setProgressPercentUndefined: Self = StObject.set(x, "ProgressPercent", js.undefined)
     
-    @scala.inline
-    def setProgressUpdateStream(value: ProgressUpdateStream): Self = StObject.set(x, "ProgressUpdateStream", value.asInstanceOf[js.Any])
+    inline def setProgressUpdateStream(value: ProgressUpdateStream): Self = StObject.set(x, "ProgressUpdateStream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressUpdateStreamUndefined: Self = StObject.set(x, "ProgressUpdateStream", js.undefined)
+    inline def setProgressUpdateStreamUndefined: Self = StObject.set(x, "ProgressUpdateStream", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusDetail(value: StatusDetail): Self = StObject.set(x, "StatusDetail", value.asInstanceOf[js.Any])
+    inline def setStatusDetail(value: StatusDetail): Self = StObject.set(x, "StatusDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusDetailUndefined: Self = StObject.set(x, "StatusDetail", js.undefined)
+    inline def setStatusDetailUndefined: Self = StObject.set(x, "StatusDetail", js.undefined)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setUpdateDateTime(value: UpdateDateTime): Self = StObject.set(x, "UpdateDateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateDateTime(value: UpdateDateTime): Self = StObject.set(x, "UpdateDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateDateTimeUndefined: Self = StObject.set(x, "UpdateDateTime", js.undefined)
+    inline def setUpdateDateTimeUndefined: Self = StObject.set(x, "UpdateDateTime", js.undefined)
   }
 }

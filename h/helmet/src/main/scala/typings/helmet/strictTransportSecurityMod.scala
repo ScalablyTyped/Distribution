@@ -13,8 +13,7 @@ object strictTransportSecurityMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): js.Function3[
+  inline def default(): js.Function3[
     /* _req */ IncomingMessage, 
     /* res */ ServerResponse, 
     /* next */ js.Function0[Unit], 
@@ -25,8 +24,7 @@ object strictTransportSecurityMod {
     /* next */ js.Function0[Unit], 
     Unit
   ]]
-  @scala.inline
-  def default(options: ReadonlyStrictTransportSe): js.Function3[
+  inline def default(options: ReadonlyStrictTransportSe): js.Function3[
     /* _req */ IncomingMessage, 
     /* res */ ServerResponse, 
     /* next */ js.Function0[Unit], 
@@ -48,32 +46,24 @@ object strictTransportSecurityMod {
   }
   object StrictTransportSecurityOptions {
     
-    @scala.inline
-    def apply(): StrictTransportSecurityOptions = {
+    inline def apply(): StrictTransportSecurityOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictTransportSecurityOptions]
     }
     
-    @scala.inline
-    implicit class StrictTransportSecurityOptionsMutableBuilder[Self <: StrictTransportSecurityOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StrictTransportSecurityOptions](x: Self) {
       
-      @scala.inline
-      def setIncludeSubDomains(value: Boolean): Self = StObject.set(x, "includeSubDomains", value.asInstanceOf[js.Any])
+      inline def setIncludeSubDomains(value: Boolean): Self = StObject.set(x, "includeSubDomains", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeSubDomainsUndefined: Self = StObject.set(x, "includeSubDomains", js.undefined)
+      inline def setIncludeSubDomainsUndefined: Self = StObject.set(x, "includeSubDomains", js.undefined)
       
-      @scala.inline
-      def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+      inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
       
-      @scala.inline
-      def setPreload(value: Boolean): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
+      inline def setPreload(value: Boolean): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
+      inline def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
     }
   }
 }

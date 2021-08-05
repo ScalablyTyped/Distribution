@@ -15,28 +15,21 @@ trait DeleteMessagesParameters extends StObject {
 }
 object DeleteMessagesParameters {
   
-  @scala.inline
-  def apply(channel: String): DeleteMessagesParameters = {
+  inline def apply(channel: String): DeleteMessagesParameters = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteMessagesParameters]
   }
   
-  @scala.inline
-  implicit class DeleteMessagesParametersMutableBuilder[Self <: DeleteMessagesParameters] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteMessagesParameters](x: Self) {
     
-    @scala.inline
-    def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd(value: String | Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: String | Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    @scala.inline
-    def setStart(value: String | Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: String | Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

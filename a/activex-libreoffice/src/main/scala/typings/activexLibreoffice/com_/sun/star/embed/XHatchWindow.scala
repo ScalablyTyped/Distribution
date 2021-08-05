@@ -26,8 +26,7 @@ trait XHatchWindow
 }
 object XHatchWindow {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     HatchBorderSize: Size,
     acquire: () => Unit,
     addEventListener: XEventListener => Unit,
@@ -41,13 +40,10 @@ object XHatchWindow {
     __obj.asInstanceOf[XHatchWindow]
   }
   
-  @scala.inline
-  implicit class XHatchWindowMutableBuilder[Self <: XHatchWindow] (val x: Self) extends AnyVal {
+  extension [Self <: XHatchWindow](x: Self) {
     
-    @scala.inline
-    def setHatchBorderSize(value: Size): Self = StObject.set(x, "HatchBorderSize", value.asInstanceOf[js.Any])
+    inline def setHatchBorderSize(value: Size): Self = StObject.set(x, "HatchBorderSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetController(value: XHatchWindowController => Unit): Self = StObject.set(x, "setController", js.Any.fromFunction1(value))
+    inline def setSetController(value: XHatchWindowController => Unit): Self = StObject.set(x, "setController", js.Any.fromFunction1(value))
   }
 }

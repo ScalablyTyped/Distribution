@@ -29,31 +29,23 @@ trait ServiceLoadBalancer extends StObject {
 }
 object ServiceLoadBalancer {
   
-  @scala.inline
-  def apply(containerName: Input[String], containerPort: Input[Double]): ServiceLoadBalancer = {
+  inline def apply(containerName: Input[String], containerPort: Input[Double]): ServiceLoadBalancer = {
     val __obj = js.Dynamic.literal(containerName = containerName.asInstanceOf[js.Any], containerPort = containerPort.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceLoadBalancer]
   }
   
-  @scala.inline
-  implicit class ServiceLoadBalancerMutableBuilder[Self <: ServiceLoadBalancer] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceLoadBalancer](x: Self) {
     
-    @scala.inline
-    def setContainerName(value: Input[String]): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
+    inline def setContainerName(value: Input[String]): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerPort(value: Input[Double]): Self = StObject.set(x, "containerPort", value.asInstanceOf[js.Any])
+    inline def setContainerPort(value: Input[Double]): Self = StObject.set(x, "containerPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElbName(value: Input[String]): Self = StObject.set(x, "elbName", value.asInstanceOf[js.Any])
+    inline def setElbName(value: Input[String]): Self = StObject.set(x, "elbName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElbNameUndefined: Self = StObject.set(x, "elbName", js.undefined)
+    inline def setElbNameUndefined: Self = StObject.set(x, "elbName", js.undefined)
     
-    @scala.inline
-    def setTargetGroupArn(value: Input[String]): Self = StObject.set(x, "targetGroupArn", value.asInstanceOf[js.Any])
+    inline def setTargetGroupArn(value: Input[String]): Self = StObject.set(x, "targetGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetGroupArnUndefined: Self = StObject.set(x, "targetGroupArn", js.undefined)
+    inline def setTargetGroupArnUndefined: Self = StObject.set(x, "targetGroupArn", js.undefined)
   }
 }

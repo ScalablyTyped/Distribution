@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AssociationDirection extends StObject
 object AssociationDirection {
   
-  @scala.inline
-  def Both: typings.bpmnModdle.bpmnModdleStrings.Both = "Both".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.Both]
+  inline def Both: typings.bpmnModdle.bpmnModdleStrings.Both = "Both".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.Both]
   
-  @scala.inline
-  def None: typings.bpmnModdle.bpmnModdleStrings.None = "None".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.None]
+  inline def None: typings.bpmnModdle.bpmnModdleStrings.None = "None".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.None]
   
-  @scala.inline
-  def One: typings.bpmnModdle.bpmnModdleStrings.One = "One".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.One]
+  inline def One: typings.bpmnModdle.bpmnModdleStrings.One = "One".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.One]
 }

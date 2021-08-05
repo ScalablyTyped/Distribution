@@ -12,19 +12,15 @@ trait RollupGetRollupCaps
 }
 object RollupGetRollupCaps {
   
-  @scala.inline
-  def apply(): RollupGetRollupCaps = {
+  inline def apply(): RollupGetRollupCaps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RollupGetRollupCaps]
   }
   
-  @scala.inline
-  implicit class RollupGetRollupCapsMutableBuilder[Self <: RollupGetRollupCaps] (val x: Self) extends AnyVal {
+  extension [Self <: RollupGetRollupCaps](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

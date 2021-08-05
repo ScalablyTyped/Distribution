@@ -18,31 +18,23 @@ trait UpdateContainerInstancesStateResponse extends StObject {
 }
 object UpdateContainerInstancesStateResponse {
   
-  @scala.inline
-  def apply(): UpdateContainerInstancesStateResponse = {
+  inline def apply(): UpdateContainerInstancesStateResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateContainerInstancesStateResponse]
   }
   
-  @scala.inline
-  implicit class UpdateContainerInstancesStateResponseMutableBuilder[Self <: UpdateContainerInstancesStateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateContainerInstancesStateResponse](x: Self) {
     
-    @scala.inline
-    def setContainerInstances(value: ContainerInstances): Self = StObject.set(x, "containerInstances", value.asInstanceOf[js.Any])
+    inline def setContainerInstances(value: ContainerInstances): Self = StObject.set(x, "containerInstances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerInstancesUndefined: Self = StObject.set(x, "containerInstances", js.undefined)
+    inline def setContainerInstancesUndefined: Self = StObject.set(x, "containerInstances", js.undefined)
     
-    @scala.inline
-    def setContainerInstancesVarargs(value: ContainerInstance*): Self = StObject.set(x, "containerInstances", js.Array(value :_*))
+    inline def setContainerInstancesVarargs(value: ContainerInstance*): Self = StObject.set(x, "containerInstances", js.Array(value :_*))
     
-    @scala.inline
-    def setFailures(value: Failures): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
+    inline def setFailures(value: Failures): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailuresUndefined: Self = StObject.set(x, "failures", js.undefined)
+    inline def setFailuresUndefined: Self = StObject.set(x, "failures", js.undefined)
     
-    @scala.inline
-    def setFailuresVarargs(value: Failure*): Self = StObject.set(x, "failures", js.Array(value :_*))
+    inline def setFailuresVarargs(value: Failure*): Self = StObject.set(x, "failures", js.Array(value :_*))
   }
 }

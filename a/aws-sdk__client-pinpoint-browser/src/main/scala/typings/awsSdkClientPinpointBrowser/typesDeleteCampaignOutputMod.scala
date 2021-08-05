@@ -26,20 +26,16 @@ object typesDeleteCampaignOutputMod {
   }
   object DeleteCampaignOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata, CampaignResponse: UnmarshalledCampaignResponse): DeleteCampaignOutput = {
+    inline def apply($metadata: ResponseMetadata, CampaignResponse: UnmarshalledCampaignResponse): DeleteCampaignOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], CampaignResponse = CampaignResponse.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteCampaignOutput]
     }
     
-    @scala.inline
-    implicit class DeleteCampaignOutputMutableBuilder[Self <: DeleteCampaignOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteCampaignOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCampaignResponse(value: UnmarshalledCampaignResponse): Self = StObject.set(x, "CampaignResponse", value.asInstanceOf[js.Any])
+      inline def setCampaignResponse(value: UnmarshalledCampaignResponse): Self = StObject.set(x, "CampaignResponse", value.asInstanceOf[js.Any])
     }
   }
 }

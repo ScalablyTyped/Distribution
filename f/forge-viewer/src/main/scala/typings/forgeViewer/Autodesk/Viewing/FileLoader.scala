@@ -17,8 +17,7 @@ trait FileLoader extends StObject {
 }
 object FileLoader {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     is3d: () => Boolean,
     loadFile: (String, FileLoaderOptions, js.Function0[Unit], js.Function0[Unit]) => Unit
   ): FileLoader = {
@@ -26,13 +25,10 @@ object FileLoader {
     __obj.asInstanceOf[FileLoader]
   }
   
-  @scala.inline
-  implicit class FileLoaderMutableBuilder[Self <: FileLoader] (val x: Self) extends AnyVal {
+  extension [Self <: FileLoader](x: Self) {
     
-    @scala.inline
-    def setIs3d(value: () => Boolean): Self = StObject.set(x, "is3d", js.Any.fromFunction0(value))
+    inline def setIs3d(value: () => Boolean): Self = StObject.set(x, "is3d", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLoadFile(value: (String, FileLoaderOptions, js.Function0[Unit], js.Function0[Unit]) => Unit): Self = StObject.set(x, "loadFile", js.Any.fromFunction4(value))
+    inline def setLoadFile(value: (String, FileLoaderOptions, js.Function0[Unit], js.Function0[Unit]) => Unit): Self = StObject.set(x, "loadFile", js.Any.fromFunction4(value))
   }
 }

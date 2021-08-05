@@ -24,16 +24,13 @@ object PullTypeResolver {
   @JSImport("typescript-services", "PullTypeResolver.globalTypeCheckPhase")
   @js.native
   def globalTypeCheckPhase: Double = js.native
-  @scala.inline
-  def globalTypeCheckPhase_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("globalTypeCheckPhase")(x.asInstanceOf[js.Any])
+  inline def globalTypeCheckPhase_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("globalTypeCheckPhase")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @scala.inline
-  def hasSetAccessorParameterTypeAnnotation(setAccessor: typings.typescriptServices.TypeScript.SetAccessor): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasSetAccessorParameterTypeAnnotation")(setAccessor.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def hasSetAccessorParameterTypeAnnotation(setAccessor: typings.typescriptServices.TypeScript.SetAccessor): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasSetAccessorParameterTypeAnnotation")(setAccessor.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* static member */
-  @scala.inline
-  def typeCheck(
+  inline def typeCheck(
     compilationSettings: typings.typescriptServices.TypeScript.ImmutableCompilationSettings,
     semanticInfoChain: typings.typescriptServices.TypeScript.SemanticInfoChain,
     document: typings.typescriptServices.TypeScript.Document

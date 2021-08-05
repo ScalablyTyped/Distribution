@@ -10,8 +10,7 @@ trait GetKeyRotationStatusOutput
      with typings.awsSdkClientKmsNode.typesGetKeyRotationStatusOutputMod.GetKeyRotationStatusOutput
 object GetKeyRotationStatusOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): GetKeyRotationStatusOutput = {
+  inline def apply($metadata: ResponseMetadata): GetKeyRotationStatusOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetKeyRotationStatusOutput]
   }

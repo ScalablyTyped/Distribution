@@ -19,7 +19,7 @@ object notificationMod {
     def accept(): js.Promise[Unit] = js.native
     def accept(options: ResponseOptions): js.Promise[Unit] = js.native
     
-    var incomingNotifyRequest: js.Any = js.native
+    /* private */ var incomingNotifyRequest: js.Any = js.native
     
     /** Reject the request. */
     def reject(): js.Promise[Unit] = js.native

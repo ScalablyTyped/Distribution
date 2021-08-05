@@ -223,224 +223,151 @@ object mod {
     @js.native
     val ^ : Syntax = js.native
     
-    @scala.inline
-    implicit class SyntaxMutableBuilder[Self <: Syntax] (val x: Self) extends AnyVal {
+    extension [Self <: Syntax](x: Self) {
       
-      @scala.inline
-      def setArrayExpression(value: NodeType): Self = StObject.set(x, "ArrayExpression", value.asInstanceOf[js.Any])
+      inline def setArrayExpression(value: NodeType): Self = StObject.set(x, "ArrayExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayPattern(value: NodeType): Self = StObject.set(x, "ArrayPattern", value.asInstanceOf[js.Any])
+      inline def setArrayPattern(value: NodeType): Self = StObject.set(x, "ArrayPattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrowFunctionExpression(value: NodeType): Self = StObject.set(x, "ArrowFunctionExpression", value.asInstanceOf[js.Any])
+      inline def setArrowFunctionExpression(value: NodeType): Self = StObject.set(x, "ArrowFunctionExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssignmentExpression(value: NodeType): Self = StObject.set(x, "AssignmentExpression", value.asInstanceOf[js.Any])
+      inline def setAssignmentExpression(value: NodeType): Self = StObject.set(x, "AssignmentExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssignmentPattern(value: NodeType): Self = StObject.set(x, "AssignmentPattern", value.asInstanceOf[js.Any])
+      inline def setAssignmentPattern(value: NodeType): Self = StObject.set(x, "AssignmentPattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAwaitExpression(value: NodeType): Self = StObject.set(x, "AwaitExpression", value.asInstanceOf[js.Any])
+      inline def setAwaitExpression(value: NodeType): Self = StObject.set(x, "AwaitExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinaryExpression(value: NodeType): Self = StObject.set(x, "BinaryExpression", value.asInstanceOf[js.Any])
+      inline def setBinaryExpression(value: NodeType): Self = StObject.set(x, "BinaryExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockStatement(value: NodeType): Self = StObject.set(x, "BlockStatement", value.asInstanceOf[js.Any])
+      inline def setBlockStatement(value: NodeType): Self = StObject.set(x, "BlockStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBreakStatement(value: NodeType): Self = StObject.set(x, "BreakStatement", value.asInstanceOf[js.Any])
+      inline def setBreakStatement(value: NodeType): Self = StObject.set(x, "BreakStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallExpression(value: NodeType): Self = StObject.set(x, "CallExpression", value.asInstanceOf[js.Any])
+      inline def setCallExpression(value: NodeType): Self = StObject.set(x, "CallExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCatchClause(value: NodeType): Self = StObject.set(x, "CatchClause", value.asInstanceOf[js.Any])
+      inline def setCatchClause(value: NodeType): Self = StObject.set(x, "CatchClause", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassBody(value: NodeType): Self = StObject.set(x, "ClassBody", value.asInstanceOf[js.Any])
+      inline def setClassBody(value: NodeType): Self = StObject.set(x, "ClassBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassDeclaration(value: NodeType): Self = StObject.set(x, "ClassDeclaration", value.asInstanceOf[js.Any])
+      inline def setClassDeclaration(value: NodeType): Self = StObject.set(x, "ClassDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassExpression(value: NodeType): Self = StObject.set(x, "ClassExpression", value.asInstanceOf[js.Any])
+      inline def setClassExpression(value: NodeType): Self = StObject.set(x, "ClassExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComprehensionBlock(value: NodeType): Self = StObject.set(x, "ComprehensionBlock", value.asInstanceOf[js.Any])
+      inline def setComprehensionBlock(value: NodeType): Self = StObject.set(x, "ComprehensionBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComprehensionExpression(value: NodeType): Self = StObject.set(x, "ComprehensionExpression", value.asInstanceOf[js.Any])
+      inline def setComprehensionExpression(value: NodeType): Self = StObject.set(x, "ComprehensionExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConditionalExpression(value: NodeType): Self = StObject.set(x, "ConditionalExpression", value.asInstanceOf[js.Any])
+      inline def setConditionalExpression(value: NodeType): Self = StObject.set(x, "ConditionalExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContinueStatement(value: NodeType): Self = StObject.set(x, "ContinueStatement", value.asInstanceOf[js.Any])
+      inline def setContinueStatement(value: NodeType): Self = StObject.set(x, "ContinueStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebuggerStatement(value: NodeType): Self = StObject.set(x, "DebuggerStatement", value.asInstanceOf[js.Any])
+      inline def setDebuggerStatement(value: NodeType): Self = StObject.set(x, "DebuggerStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectiveStatement(value: NodeType): Self = StObject.set(x, "DirectiveStatement", value.asInstanceOf[js.Any])
+      inline def setDirectiveStatement(value: NodeType): Self = StObject.set(x, "DirectiveStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDoWhileStatement(value: NodeType): Self = StObject.set(x, "DoWhileStatement", value.asInstanceOf[js.Any])
+      inline def setDoWhileStatement(value: NodeType): Self = StObject.set(x, "DoWhileStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmptyStatement(value: NodeType): Self = StObject.set(x, "EmptyStatement", value.asInstanceOf[js.Any])
+      inline def setEmptyStatement(value: NodeType): Self = StObject.set(x, "EmptyStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportAllDeclaration(value: NodeType): Self = StObject.set(x, "ExportAllDeclaration", value.asInstanceOf[js.Any])
+      inline def setExportAllDeclaration(value: NodeType): Self = StObject.set(x, "ExportAllDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportDefaultDeclaration(value: NodeType): Self = StObject.set(x, "ExportDefaultDeclaration", value.asInstanceOf[js.Any])
+      inline def setExportDefaultDeclaration(value: NodeType): Self = StObject.set(x, "ExportDefaultDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportNamedDeclaration(value: NodeType): Self = StObject.set(x, "ExportNamedDeclaration", value.asInstanceOf[js.Any])
+      inline def setExportNamedDeclaration(value: NodeType): Self = StObject.set(x, "ExportNamedDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportSpecifier(value: NodeType): Self = StObject.set(x, "ExportSpecifier", value.asInstanceOf[js.Any])
+      inline def setExportSpecifier(value: NodeType): Self = StObject.set(x, "ExportSpecifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressionStatement(value: NodeType): Self = StObject.set(x, "ExpressionStatement", value.asInstanceOf[js.Any])
+      inline def setExpressionStatement(value: NodeType): Self = StObject.set(x, "ExpressionStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForInStatement(value: NodeType): Self = StObject.set(x, "ForInStatement", value.asInstanceOf[js.Any])
+      inline def setForInStatement(value: NodeType): Self = StObject.set(x, "ForInStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForOfStatement(value: NodeType): Self = StObject.set(x, "ForOfStatement", value.asInstanceOf[js.Any])
+      inline def setForOfStatement(value: NodeType): Self = StObject.set(x, "ForOfStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForStatement(value: NodeType): Self = StObject.set(x, "ForStatement", value.asInstanceOf[js.Any])
+      inline def setForStatement(value: NodeType): Self = StObject.set(x, "ForStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionDeclaration(value: NodeType): Self = StObject.set(x, "FunctionDeclaration", value.asInstanceOf[js.Any])
+      inline def setFunctionDeclaration(value: NodeType): Self = StObject.set(x, "FunctionDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionExpression(value: NodeType): Self = StObject.set(x, "FunctionExpression", value.asInstanceOf[js.Any])
+      inline def setFunctionExpression(value: NodeType): Self = StObject.set(x, "FunctionExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeneratorExpression(value: NodeType): Self = StObject.set(x, "GeneratorExpression", value.asInstanceOf[js.Any])
+      inline def setGeneratorExpression(value: NodeType): Self = StObject.set(x, "GeneratorExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentifier(value: NodeType): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
+      inline def setIdentifier(value: NodeType): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIfStatement(value: NodeType): Self = StObject.set(x, "IfStatement", value.asInstanceOf[js.Any])
+      inline def setIfStatement(value: NodeType): Self = StObject.set(x, "IfStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportDeclaration(value: NodeType): Self = StObject.set(x, "ImportDeclaration", value.asInstanceOf[js.Any])
+      inline def setImportDeclaration(value: NodeType): Self = StObject.set(x, "ImportDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportDefaultSpecifier(value: NodeType): Self = StObject.set(x, "ImportDefaultSpecifier", value.asInstanceOf[js.Any])
+      inline def setImportDefaultSpecifier(value: NodeType): Self = StObject.set(x, "ImportDefaultSpecifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportExpression(value: NodeType): Self = StObject.set(x, "ImportExpression", value.asInstanceOf[js.Any])
+      inline def setImportExpression(value: NodeType): Self = StObject.set(x, "ImportExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportNamespaceSpecifier(value: NodeType): Self = StObject.set(x, "ImportNamespaceSpecifier", value.asInstanceOf[js.Any])
+      inline def setImportNamespaceSpecifier(value: NodeType): Self = StObject.set(x, "ImportNamespaceSpecifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportSpecifier(value: NodeType): Self = StObject.set(x, "ImportSpecifier", value.asInstanceOf[js.Any])
+      inline def setImportSpecifier(value: NodeType): Self = StObject.set(x, "ImportSpecifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabeledStatement(value: NodeType): Self = StObject.set(x, "LabeledStatement", value.asInstanceOf[js.Any])
+      inline def setLabeledStatement(value: NodeType): Self = StObject.set(x, "LabeledStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLiteral(value: NodeType): Self = StObject.set(x, "Literal", value.asInstanceOf[js.Any])
+      inline def setLiteral(value: NodeType): Self = StObject.set(x, "Literal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogicalExpression(value: NodeType): Self = StObject.set(x, "LogicalExpression", value.asInstanceOf[js.Any])
+      inline def setLogicalExpression(value: NodeType): Self = StObject.set(x, "LogicalExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemberExpression(value: NodeType): Self = StObject.set(x, "MemberExpression", value.asInstanceOf[js.Any])
+      inline def setMemberExpression(value: NodeType): Self = StObject.set(x, "MemberExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaProperty(value: NodeType): Self = StObject.set(x, "MetaProperty", value.asInstanceOf[js.Any])
+      inline def setMetaProperty(value: NodeType): Self = StObject.set(x, "MetaProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodDefinition(value: NodeType): Self = StObject.set(x, "MethodDefinition", value.asInstanceOf[js.Any])
+      inline def setMethodDefinition(value: NodeType): Self = StObject.set(x, "MethodDefinition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModuleSpecifier(value: NodeType): Self = StObject.set(x, "ModuleSpecifier", value.asInstanceOf[js.Any])
+      inline def setModuleSpecifier(value: NodeType): Self = StObject.set(x, "ModuleSpecifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewExpression(value: NodeType): Self = StObject.set(x, "NewExpression", value.asInstanceOf[js.Any])
+      inline def setNewExpression(value: NodeType): Self = StObject.set(x, "NewExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectExpression(value: NodeType): Self = StObject.set(x, "ObjectExpression", value.asInstanceOf[js.Any])
+      inline def setObjectExpression(value: NodeType): Self = StObject.set(x, "ObjectExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectPattern(value: NodeType): Self = StObject.set(x, "ObjectPattern", value.asInstanceOf[js.Any])
+      inline def setObjectPattern(value: NodeType): Self = StObject.set(x, "ObjectPattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgram(value: NodeType): Self = StObject.set(x, "Program", value.asInstanceOf[js.Any])
+      inline def setProgram(value: NodeType): Self = StObject.set(x, "Program", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperty(value: NodeType): Self = StObject.set(x, "Property", value.asInstanceOf[js.Any])
+      inline def setProperty(value: NodeType): Self = StObject.set(x, "Property", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestElement(value: NodeType): Self = StObject.set(x, "RestElement", value.asInstanceOf[js.Any])
+      inline def setRestElement(value: NodeType): Self = StObject.set(x, "RestElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnStatement(value: NodeType): Self = StObject.set(x, "ReturnStatement", value.asInstanceOf[js.Any])
+      inline def setReturnStatement(value: NodeType): Self = StObject.set(x, "ReturnStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSequenceExpression(value: NodeType): Self = StObject.set(x, "SequenceExpression", value.asInstanceOf[js.Any])
+      inline def setSequenceExpression(value: NodeType): Self = StObject.set(x, "SequenceExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpreadElement(value: NodeType): Self = StObject.set(x, "SpreadElement", value.asInstanceOf[js.Any])
+      inline def setSpreadElement(value: NodeType): Self = StObject.set(x, "SpreadElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuper(value: NodeType): Self = StObject.set(x, "Super", value.asInstanceOf[js.Any])
+      inline def setSuper(value: NodeType): Self = StObject.set(x, "Super", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwitchCase(value: NodeType): Self = StObject.set(x, "SwitchCase", value.asInstanceOf[js.Any])
+      inline def setSwitchCase(value: NodeType): Self = StObject.set(x, "SwitchCase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwitchStatement(value: NodeType): Self = StObject.set(x, "SwitchStatement", value.asInstanceOf[js.Any])
+      inline def setSwitchStatement(value: NodeType): Self = StObject.set(x, "SwitchStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaggedTemplateExpression(value: NodeType): Self = StObject.set(x, "TaggedTemplateExpression", value.asInstanceOf[js.Any])
+      inline def setTaggedTemplateExpression(value: NodeType): Self = StObject.set(x, "TaggedTemplateExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateElement(value: NodeType): Self = StObject.set(x, "TemplateElement", value.asInstanceOf[js.Any])
+      inline def setTemplateElement(value: NodeType): Self = StObject.set(x, "TemplateElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateLiteral(value: NodeType): Self = StObject.set(x, "TemplateLiteral", value.asInstanceOf[js.Any])
+      inline def setTemplateLiteral(value: NodeType): Self = StObject.set(x, "TemplateLiteral", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThisExpression(value: NodeType): Self = StObject.set(x, "ThisExpression", value.asInstanceOf[js.Any])
+      inline def setThisExpression(value: NodeType): Self = StObject.set(x, "ThisExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrowStatement(value: NodeType): Self = StObject.set(x, "ThrowStatement", value.asInstanceOf[js.Any])
+      inline def setThrowStatement(value: NodeType): Self = StObject.set(x, "ThrowStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTryStatement(value: NodeType): Self = StObject.set(x, "TryStatement", value.asInstanceOf[js.Any])
+      inline def setTryStatement(value: NodeType): Self = StObject.set(x, "TryStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnaryExpression(value: NodeType): Self = StObject.set(x, "UnaryExpression", value.asInstanceOf[js.Any])
+      inline def setUnaryExpression(value: NodeType): Self = StObject.set(x, "UnaryExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateExpression(value: NodeType): Self = StObject.set(x, "UpdateExpression", value.asInstanceOf[js.Any])
+      inline def setUpdateExpression(value: NodeType): Self = StObject.set(x, "UpdateExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariableDeclaration(value: NodeType): Self = StObject.set(x, "VariableDeclaration", value.asInstanceOf[js.Any])
+      inline def setVariableDeclaration(value: NodeType): Self = StObject.set(x, "VariableDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariableDeclarator(value: NodeType): Self = StObject.set(x, "VariableDeclarator", value.asInstanceOf[js.Any])
+      inline def setVariableDeclarator(value: NodeType): Self = StObject.set(x, "VariableDeclarator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhileStatement(value: NodeType): Self = StObject.set(x, "WhileStatement", value.asInstanceOf[js.Any])
+      inline def setWhileStatement(value: NodeType): Self = StObject.set(x, "WhileStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithStatement(value: NodeType): Self = StObject.set(x, "WithStatement", value.asInstanceOf[js.Any])
+      inline def setWithStatement(value: NodeType): Self = StObject.set(x, "WithStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYieldExpression(value: NodeType): Self = StObject.set(x, "YieldExpression", value.asInstanceOf[js.Any])
+      inline def setYieldExpression(value: NodeType): Self = StObject.set(x, "YieldExpression", value.asInstanceOf[js.Any])
     }
   }
   
@@ -597,440 +524,295 @@ object mod {
     @js.native
     val ^ : VisitorKeys = js.native
     
-    @scala.inline
-    implicit class VisitorKeysMutableBuilder[Self <: VisitorKeys] (val x: Self) extends AnyVal {
+    extension [Self <: VisitorKeys](x: Self) {
       
-      @scala.inline
-      def setArrayExpression(value: js.Array[String]): Self = StObject.set(x, "ArrayExpression", value.asInstanceOf[js.Any])
+      inline def setArrayExpression(value: js.Array[String]): Self = StObject.set(x, "ArrayExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayExpressionVarargs(value: String*): Self = StObject.set(x, "ArrayExpression", js.Array(value :_*))
+      inline def setArrayExpressionVarargs(value: String*): Self = StObject.set(x, "ArrayExpression", js.Array(value :_*))
       
-      @scala.inline
-      def setArrayPattern(value: js.Array[String]): Self = StObject.set(x, "ArrayPattern", value.asInstanceOf[js.Any])
+      inline def setArrayPattern(value: js.Array[String]): Self = StObject.set(x, "ArrayPattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayPatternVarargs(value: String*): Self = StObject.set(x, "ArrayPattern", js.Array(value :_*))
+      inline def setArrayPatternVarargs(value: String*): Self = StObject.set(x, "ArrayPattern", js.Array(value :_*))
       
-      @scala.inline
-      def setArrowFunctionExpression(value: js.Array[String]): Self = StObject.set(x, "ArrowFunctionExpression", value.asInstanceOf[js.Any])
+      inline def setArrowFunctionExpression(value: js.Array[String]): Self = StObject.set(x, "ArrowFunctionExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrowFunctionExpressionVarargs(value: String*): Self = StObject.set(x, "ArrowFunctionExpression", js.Array(value :_*))
+      inline def setArrowFunctionExpressionVarargs(value: String*): Self = StObject.set(x, "ArrowFunctionExpression", js.Array(value :_*))
       
-      @scala.inline
-      def setAssignmentExpression(value: js.Array[String]): Self = StObject.set(x, "AssignmentExpression", value.asInstanceOf[js.Any])
+      inline def setAssignmentExpression(value: js.Array[String]): Self = StObject.set(x, "AssignmentExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssignmentExpressionVarargs(value: String*): Self = StObject.set(x, "AssignmentExpression", js.Array(value :_*))
+      inline def setAssignmentExpressionVarargs(value: String*): Self = StObject.set(x, "AssignmentExpression", js.Array(value :_*))
       
-      @scala.inline
-      def setAssignmentPattern(value: js.Array[String]): Self = StObject.set(x, "AssignmentPattern", value.asInstanceOf[js.Any])
+      inline def setAssignmentPattern(value: js.Array[String]): Self = StObject.set(x, "AssignmentPattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssignmentPatternVarargs(value: String*): Self = StObject.set(x, "AssignmentPattern", js.Array(value :_*))
+      inline def setAssignmentPatternVarargs(value: String*): Self = StObject.set(x, "AssignmentPattern", js.Array(value :_*))
       
-      @scala.inline
-      def setAwaitExpression(value: js.Array[String]): Self = StObject.set(x, "AwaitExpression", value.asInstanceOf[js.Any])
+      inline def setAwaitExpression(value: js.Array[String]): Self = StObject.set(x, "AwaitExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAwaitExpressionVarargs(value: String*): Self = StObject.set(x, "AwaitExpression", js.Array(value :_*))
+      inline def setAwaitExpressionVarargs(value: String*): Self = StObject.set(x, "AwaitExpression", js.Array(value :_*))
       
-      @scala.inline
-      def setBinaryExpression(value: js.Array[String]): Self = StObject.set(x, "BinaryExpression", value.asInstanceOf[js.Any])
+      inline def setBinaryExpression(value: js.Array[String]): Self = StObject.set(x, "BinaryExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinaryExpressionVarargs(value: String*): Self = StObject.set(x, "BinaryExpression", js.Array(value :_*))
+      inline def setBinaryExpressionVarargs(value: String*): Self = StObject.set(x, "BinaryExpression", js.Array(value :_*))
       
-      @scala.inline
-      def setBlockStatement(value: js.Array[String]): Self = StObject.set(x, "BlockStatement", value.asInstanceOf[js.Any])
+      inline def setBlockStatement(value: js.Array[String]): Self = StObject.set(x, "BlockStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockStatementVarargs(value: String*): Self = StObject.set(x, "BlockStatement", js.Array(value :_*))
+      inline def setBlockStatementVarargs(value: String*): Self = StObject.set(x, "BlockStatement", js.Array(value :_*))
       
-      @scala.inline
-      def setBreakStatement(value: js.Array[String]): Self = StObject.set(x, "BreakStatement", value.asInstanceOf[js.Any])
+      inline def setBreakStatement(value: js.Array[String]): Self = StObject.set(x, "BreakStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBreakStatementVarargs(value: String*): Self = StObject.set(x, "BreakStatement", js.Array(value :_*))
+      inline def setBreakStatementVarargs(value: String*): Self = StObject.set(x, "BreakStatement", js.Array(value :_*))
       
-      @scala.inline
-      def setCallExpression(value: js.Array[String]): Self = StObject.set(x, "CallExpression", value.asInstanceOf[js.Any])
+      inline def setCallExpression(value: js.Array[String]): Self = StObject.set(x, "CallExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallExpressionVarargs(value: String*): Self = StObject.set(x, "CallExpression", js.Array(value :_*))
+      inline def setCallExpressionVarargs(value: String*): Self = StObject.set(x, "CallExpression", js.Array(value :_*))
       
-      @scala.inline
-      def setCatchClause(value: js.Array[String]): Self = StObject.set(x, "CatchClause", value.asInstanceOf[js.Any])
+      inline def setCatchClause(value: js.Array[String]): Self = StObject.set(x, "CatchClause", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCatchClauseVarargs(value: String*): Self = StObject.set(x, "CatchClause", js.Array(value :_*))
+      inline def setCatchClauseVarargs(value: String*): Self = StObject.set(x, "CatchClause", js.Array(value :_*))
       
-      @scala.inline
-      def setClassBody(value: js.Array[String]): Self = StObject.set(x, "ClassBody", value.asInstanceOf[js.Any])
+      inline def setClassBody(value: js.Array[String]): Self = StObject.set(x, "ClassBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassBodyVarargs(value: String*): Self = StObject.set(x, "ClassBody", js.Array(value :_*))
+      inline def setClassBodyVarargs(value: String*): Self = StObject.set(x, "ClassBody", js.Array(value :_*))
       
-      @scala.inline
-      def setClassDeclaration(value: js.Array[String]): Self = StObject.set(x, "ClassDeclaration", value.asInstanceOf[js.Any])
+      inline def setClassDeclaration(value: js.Array[String]): Self = StObject.set(x, "ClassDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassDeclarationVarargs(value: String*): Self = StObject.set(x, "ClassDeclaration", js.Array(value :_*))
+      inline def setClassDeclarationVarargs(value: String*): Self = StObject.set(x, "ClassDeclaration", js.Array(value :_*))
       
-      @scala.inline
-      def setClassExpression(value: js.Array[String]): Self = StObject.set(x, "ClassExpression", value.asInstanceOf[js.Any])
+      inline def setClassExpression(value: js.Array[String]): Self = StObject.set(x, "ClassExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassExpressionVarargs(value: String*): Self = StObject.set(x, "ClassExpression", js.Array(value :_*))
+      inline def setClassExpressionVarargs(value: String*): Self = StObject.set(x, "ClassExpression", js.Array(value :_*))
       
-      @scala.inline
-      def setComprehensionBlock(value: js.Array[String]): Self = StObject.set(x, "ComprehensionBlock", value.asInstanceOf[js.Any])
+      inline def setComprehensionBlock(value: js.Array[String]): Self = StObject.set(x, "ComprehensionBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComprehensionBlockVarargs(value: String*): Self = StObject.set(x, "ComprehensionBlock", js.Array(value :_*))
+      inline def setComprehensionBlockVarargs(value: String*): Self = StObject.set(x, "ComprehensionBlock", js.Array(value :_*))
       
-      @scala.inline
-      def setComprehensionExpression(value: js.Array[String]): Self = StObject.set(x, "ComprehensionExpression", value.asInstanceOf[js.Any])
+      inline def setComprehensionExpression(value: js.Array[String]): Self = StObject.set(x, "ComprehensionExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComprehensionExpressionVarargs(value: String*): Self = StObject.set(x, "ComprehensionExpression", js.Array(value :_*))
+      inline def setComprehensionExpressionVarargs(value: String*): Self = StObject.set(x, "ComprehensionExpression", js.Array(value :_*))
       
-      @scala.inline
-      def setConditionalExpression(value: js.Array[String]): Self = StObject.set(x, "ConditionalExpression", value.asInstanceOf[js.Any])
+      inline def setConditionalExpression(value: js.Array[String]): Self = StObject.set(x, "ConditionalExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConditionalExpressionVarargs(value: String*): Self = StObject.set(x, "ConditionalExpression", js.Array(value :_*))
+      inline def setConditionalExpressionVarargs(value: String*): Self = StObject.set(x, "ConditionalExpression", js.Array(value :_*))
       
-      @scala.inline
-      def setContinueStatement(value: js.Array[String]): Self = StObject.set(x, "ContinueStatement", value.asInstanceOf[js.Any])
+      inline def setContinueStatement(value: js.Array[String]): Self = StObject.set(x, "ContinueStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContinueStatementVarargs(value: String*): Self = StObject.set(x, "ContinueStatement", js.Array(value :_*))
+      inline def setContinueStatementVarargs(value: String*): Self = StObject.set(x, "ContinueStatement", js.Array(value :_*))
       
-      @scala.inline
-      def setDebuggerStatement(value: js.Array[String]): Self = StObject.set(x, "DebuggerStatement", value.asInstanceOf[js.Any])
+      inline def setDebuggerStatement(value: js.Array[String]): Self = StObject.set(x, "DebuggerStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebuggerStatementVarargs(value: String*): Self = StObject.set(x, "DebuggerStatement", js.Array(value :_*))
+      inline def setDebuggerStatementVarargs(value: String*): Self = StObject.set(x, "DebuggerStatement", js.Array(value :_*))
       
-      @scala.inline
-      def setDirectiveStatement(value: js.Array[String]): Self = StObject.set(x, "DirectiveStatement", value.asInstanceOf[js.Any])
+      inline def setDirectiveStatement(value: js.Array[String]): Self = StObject.set(x, "DirectiveStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectiveStatementVarargs(value: String*): Self = StObject.set(x, "DirectiveStatement", js.Array(value :_*))
+      inline def setDirectiveStatementVarargs(value: String*): Self = StObject.set(x, "DirectiveStatement", js.Array(value :_*))
       
-      @scala.inline
-      def setDoWhileStatement(value: js.Array[String]): Self = StObject.set(x, "DoWhileStatement", value.asInstanceOf[js.Any])
+      inline def setDoWhileStatement(value: js.Array[String]): Self = StObject.set(x, "DoWhileStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDoWhileStatementVarargs(value: String*): Self = StObject.set(x, "DoWhileStatement", js.Array(value :_*))
+      inline def setDoWhileStatementVarargs(value: String*): Self = StObject.set(x, "DoWhileStatement", js.Array(value :_*))
       
-      @scala.inline
-      def setEmptyStatement(value: js.Array[String]): Self = StObject.set(x, "EmptyStatement", value.asInstanceOf[js.Any])
+      inline def setEmptyStatement(value: js.Array[String]): Self = StObject.set(x, "EmptyStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmptyStatementVarargs(value: String*): Self = StObject.set(x, "EmptyStatement", js.Array(value :_*))
+      inline def setEmptyStatementVarargs(value: String*): Self = StObject.set(x, "EmptyStatement", js.Array(value :_*))
       
-      @scala.inline
-      def setExportAllDeclaration(value: js.Array[String]): Self = StObject.set(x, "ExportAllDeclaration", value.asInstanceOf[js.Any])
+      inline def setExportAllDeclaration(value: js.Array[String]): Self = StObject.set(x, "ExportAllDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportAllDeclarationVarargs(value: String*): Self = StObject.set(x, "ExportAllDeclaration", js.Array(value :_*))
+      inline def setExportAllDeclarationVarargs(value: String*): Self = StObject.set(x, "ExportAllDeclaration", js.Array(value :_*))
       
-      @scala.inline
-      def setExportDefaultDeclaration(value: js.Array[String]): Self = StObject.set(x, "ExportDefaultDeclaration", value.asInstanceOf[js.Any])
+      inline def setExportDefaultDeclaration(value: js.Array[String]): Self = StObject.set(x, "ExportDefaultDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportDefaultDeclarationVarargs(value: String*): Self = StObject.set(x, "ExportDefaultDeclaration", js.Array(value :_*))
+      inline def setExportDefaultDeclarationVarargs(value: String*): Self = StObject.set(x, "ExportDefaultDeclaration", js.Array(value :_*))
       
-      @scala.inline
-      def setExportNamedDeclaration(value: js.Array[String]): Self = StObject.set(x, "ExportNamedDeclaration", value.asInstanceOf[js.Any])
+      inline def setExportNamedDeclaration(value: js.Array[String]): Self = StObject.set(x, "ExportNamedDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportNamedDeclarationVarargs(value: String*): Self = StObject.set(x, "ExportNamedDeclaration", js.Array(value :_*))
+      inline def setExportNamedDeclarationVarargs(value: String*): Self = StObject.set(x, "ExportNamedDeclaration", js.Array(value :_*))
       
-      @scala.inline
-      def setExportSpecifier(value: js.Array[String]): Self = StObject.set(x, "ExportSpecifier", value.asInstanceOf[js.Any])
+      inline def setExportSpecifier(value: js.Array[String]): Self = StObject.set(x, "ExportSpecifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportSpecifierVarargs(value: String*): Self = StObject.set(x, "ExportSpecifier", js.Array(value :_*))
+      inline def setExportSpecifierVarargs(value: String*): Self = StObject.set(x, "ExportSpecifier", js.Array(value :_*))
       
-      @scala.inline
-      def setExpressionStatement(value: js.Array[String]): Self = StObject.set(x, "ExpressionStatement", value.asInstanceOf[js.Any])
+      inline def setExpressionStatement(value: js.Array[String]): Self = StObject.set(x, "ExpressionStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressionStatementVarargs(value: String*): Self = StObject.set(x, "ExpressionStatement", js.Array(value :_*))
+      inline def setExpressionStatementVarargs(value: String*): Self = StObject.set(x, "ExpressionStatement", js.Array(value :_*))
       
-      @scala.inline
-      def setForInStatement(value: js.Array[String]): Self = StObject.set(x, "ForInStatement", value.asInstanceOf[js.Any])
+      inline def setForInStatement(value: js.Array[String]): Self = StObject.set(x, "ForInStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForInStatementVarargs(value: String*): Self = StObject.set(x, "ForInStatement", js.Array(value :_*))
+      inline def setForInStatementVarargs(value: String*): Self = StObject.set(x, "ForInStatement", js.Array(value :_*))
       
-      @scala.inline
-      def setForOfStatement(value: js.Array[String]): Self = StObject.set(x, "ForOfStatement", value.asInstanceOf[js.Any])
+      inline def setForOfStatement(value: js.Array[String]): Self = StObject.set(x, "ForOfStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForOfStatementVarargs(value: String*): Self = StObject.set(x, "ForOfStatement", js.Array(value :_*))
+      inline def setForOfStatementVarargs(value: String*): Self = StObject.set(x, "ForOfStatement", js.Array(value :_*))
       
-      @scala.inline
-      def setForStatement(value: js.Array[String]): Self = StObject.set(x, "ForStatement", value.asInstanceOf[js.Any])
+      inline def setForStatement(value: js.Array[String]): Self = StObject.set(x, "ForStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForStatementVarargs(value: String*): Self = StObject.set(x, "ForStatement", js.Array(value :_*))
+      inline def setForStatementVarargs(value: String*): Self = StObject.set(x, "ForStatement", js.Array(value :_*))
       
-      @scala.inline
-      def setFunctionDeclaration(value: js.Array[String]): Self = StObject.set(x, "FunctionDeclaration", value.asInstanceOf[js.Any])
+      inline def setFunctionDeclaration(value: js.Array[String]): Self = StObject.set(x, "FunctionDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionDeclarationVarargs(value: String*): Self = StObject.set(x, "FunctionDeclaration", js.Array(value :_*))
+      inline def setFunctionDeclarationVarargs(value: String*): Self = StObject.set(x, "FunctionDeclaration", js.Array(value :_*))
       
-      @scala.inline
-      def setFunctionExpression(value: js.Array[String]): Self = StObject.set(x, "FunctionExpression", value.asInstanceOf[js.Any])
+      inline def setFunctionExpression(value: js.Array[String]): Self = StObject.set(x, "FunctionExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionExpressionVarargs(value: String*): Self = StObject.set(x, "FunctionExpression", js.Array(value :_*))
+      inline def setFunctionExpressionVarargs(value: String*): Self = StObject.set(x, "FunctionExpression", js.Array(value :_*))
       
-      @scala.inline
-      def setGeneratorExpression(value: js.Array[String]): Self = StObject.set(x, "GeneratorExpression", value.asInstanceOf[js.Any])
+      inline def setGeneratorExpression(value: js.Array[String]): Self = StObject.set(x, "GeneratorExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeneratorExpressionVarargs(value: String*): Self = StObject.set(x, "GeneratorExpression", js.Array(value :_*))
+      inline def setGeneratorExpressionVarargs(value: String*): Self = StObject.set(x, "GeneratorExpression", js.Array(value :_*))
       
-      @scala.inline
-      def setIdentifier(value: js.Array[String]): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
+      inline def setIdentifier(value: js.Array[String]): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentifierVarargs(value: String*): Self = StObject.set(x, "Identifier", js.Array(value :_*))
+      inline def setIdentifierVarargs(value: String*): Self = StObject.set(x, "Identifier", js.Array(value :_*))
       
-      @scala.inline
-      def setIfStatement(value: js.Array[String]): Self = StObject.set(x, "IfStatement", value.asInstanceOf[js.Any])
+      inline def setIfStatement(value: js.Array[String]): Self = StObject.set(x, "IfStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIfStatementVarargs(value: String*): Self = StObject.set(x, "IfStatement", js.Array(value :_*))
+      inline def setIfStatementVarargs(value: String*): Self = StObject.set(x, "IfStatement", js.Array(value :_*))
       
-      @scala.inline
-      def setImportDeclaration(value: js.Array[String]): Self = StObject.set(x, "ImportDeclaration", value.asInstanceOf[js.Any])
+      inline def setImportDeclaration(value: js.Array[String]): Self = StObject.set(x, "ImportDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportDeclarationVarargs(value: String*): Self = StObject.set(x, "ImportDeclaration", js.Array(value :_*))
+      inline def setImportDeclarationVarargs(value: String*): Self = StObject.set(x, "ImportDeclaration", js.Array(value :_*))
       
-      @scala.inline
-      def setImportDefaultSpecifier(value: js.Array[String]): Self = StObject.set(x, "ImportDefaultSpecifier", value.asInstanceOf[js.Any])
+      inline def setImportDefaultSpecifier(value: js.Array[String]): Self = StObject.set(x, "ImportDefaultSpecifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportDefaultSpecifierVarargs(value: String*): Self = StObject.set(x, "ImportDefaultSpecifier", js.Array(value :_*))
+      inline def setImportDefaultSpecifierVarargs(value: String*): Self = StObject.set(x, "ImportDefaultSpecifier", js.Array(value :_*))
       
-      @scala.inline
-      def setImportExpression(value: js.Array[String]): Self = StObject.set(x, "ImportExpression", value.asInstanceOf[js.Any])
+      inline def setImportExpression(value: js.Array[String]): Self = StObject.set(x, "ImportExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportExpressionVarargs(value: String*): Self = StObject.set(x, "ImportExpression", js.Array(value :_*))
+      inline def setImportExpressionVarargs(value: String*): Self = StObject.set(x, "ImportExpression", js.Array(value :_*))
       
-      @scala.inline
-      def setImportNamespaceSpecifier(value: js.Array[String]): Self = StObject.set(x, "ImportNamespaceSpecifier", value.asInstanceOf[js.Any])
+      inline def setImportNamespaceSpecifier(value: js.Array[String]): Self = StObject.set(x, "ImportNamespaceSpecifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportNamespaceSpecifierVarargs(value: String*): Self = StObject.set(x, "ImportNamespaceSpecifier", js.Array(value :_*))
+      inline def setImportNamespaceSpecifierVarargs(value: String*): Self = StObject.set(x, "ImportNamespaceSpecifier", js.Array(value :_*))
       
-      @scala.inline
-      def setImportSpecifier(value: js.Array[String]): Self = StObject.set(x, "ImportSpecifier", value.asInstanceOf[js.Any])
+      inline def setImportSpecifier(value: js.Array[String]): Self = StObject.set(x, "ImportSpecifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportSpecifierVarargs(value: String*): Self = StObject.set(x, "ImportSpecifier", js.Array(value :_*))
+      inline def setImportSpecifierVarargs(value: String*): Self = StObject.set(x, "ImportSpecifier", js.Array(value :_*))
       
-      @scala.inline
-      def setLabeledStatement(value: js.Array[String]): Self = StObject.set(x, "LabeledStatement", value.asInstanceOf[js.Any])
+      inline def setLabeledStatement(value: js.Array[String]): Self = StObject.set(x, "LabeledStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabeledStatementVarargs(value: String*): Self = StObject.set(x, "LabeledStatement", js.Array(value :_*))
+      inline def setLabeledStatementVarargs(value: String*): Self = StObject.set(x, "LabeledStatement", js.Array(value :_*))
       
-      @scala.inline
-      def setLiteral(value: js.Array[String]): Self = StObject.set(x, "Literal", value.asInstanceOf[js.Any])
+      inline def setLiteral(value: js.Array[String]): Self = StObject.set(x, "Literal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLiteralVarargs(value: String*): Self = StObject.set(x, "Literal", js.Array(value :_*))
+      inline def setLiteralVarargs(value: String*): Self = StObject.set(x, "Literal", js.Array(value :_*))
       
-      @scala.inline
-      def setLogicalExpression(value: js.Array[String]): Self = StObject.set(x, "LogicalExpression", value.asInstanceOf[js.Any])
+      inline def setLogicalExpression(value: js.Array[String]): Self = StObject.set(x, "LogicalExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogicalExpressionVarargs(value: String*): Self = StObject.set(x, "LogicalExpression", js.Array(value :_*))
+      inline def setLogicalExpressionVarargs(value: String*): Self = StObject.set(x, "LogicalExpression", js.Array(value :_*))
       
-      @scala.inline
-      def setMemberExpression(value: js.Array[String]): Self = StObject.set(x, "MemberExpression", value.asInstanceOf[js.Any])
+      inline def setMemberExpression(value: js.Array[String]): Self = StObject.set(x, "MemberExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemberExpressionVarargs(value: String*): Self = StObject.set(x, "MemberExpression", js.Array(value :_*))
+      inline def setMemberExpressionVarargs(value: String*): Self = StObject.set(x, "MemberExpression", js.Array(value :_*))
       
-      @scala.inline
-      def setMetaProperty(value: js.Array[String]): Self = StObject.set(x, "MetaProperty", value.asInstanceOf[js.Any])
+      inline def setMetaProperty(value: js.Array[String]): Self = StObject.set(x, "MetaProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaPropertyVarargs(value: String*): Self = StObject.set(x, "MetaProperty", js.Array(value :_*))
+      inline def setMetaPropertyVarargs(value: String*): Self = StObject.set(x, "MetaProperty", js.Array(value :_*))
       
-      @scala.inline
-      def setMethodDefinition(value: js.Array[String]): Self = StObject.set(x, "MethodDefinition", value.asInstanceOf[js.Any])
+      inline def setMethodDefinition(value: js.Array[String]): Self = StObject.set(x, "MethodDefinition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodDefinitionVarargs(value: String*): Self = StObject.set(x, "MethodDefinition", js.Array(value :_*))
+      inline def setMethodDefinitionVarargs(value: String*): Self = StObject.set(x, "MethodDefinition", js.Array(value :_*))
       
-      @scala.inline
-      def setModuleSpecifier(value: js.Array[String]): Self = StObject.set(x, "ModuleSpecifier", value.asInstanceOf[js.Any])
+      inline def setModuleSpecifier(value: js.Array[String]): Self = StObject.set(x, "ModuleSpecifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModuleSpecifierVarargs(value: String*): Self = StObject.set(x, "ModuleSpecifier", js.Array(value :_*))
+      inline def setModuleSpecifierVarargs(value: String*): Self = StObject.set(x, "ModuleSpecifier", js.Array(value :_*))
       
-      @scala.inline
-      def setNewExpression(value: js.Array[String]): Self = StObject.set(x, "NewExpression", value.asInstanceOf[js.Any])
+      inline def setNewExpression(value: js.Array[String]): Self = StObject.set(x, "NewExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewExpressionVarargs(value: String*): Self = StObject.set(x, "NewExpression", js.Array(value :_*))
+      inline def setNewExpressionVarargs(value: String*): Self = StObject.set(x, "NewExpression", js.Array(value :_*))
       
-      @scala.inline
-      def setObjectExpression(value: js.Array[String]): Self = StObject.set(x, "ObjectExpression", value.asInstanceOf[js.Any])
+      inline def setObjectExpression(value: js.Array[String]): Self = StObject.set(x, "ObjectExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectExpressionVarargs(value: String*): Self = StObject.set(x, "ObjectExpression", js.Array(value :_*))
+      inline def setObjectExpressionVarargs(value: String*): Self = StObject.set(x, "ObjectExpression", js.Array(value :_*))
       
-      @scala.inline
-      def setObjectPattern(value: js.Array[String]): Self = StObject.set(x, "ObjectPattern", value.asInstanceOf[js.Any])
+      inline def setObjectPattern(value: js.Array[String]): Self = StObject.set(x, "ObjectPattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectPatternVarargs(value: String*): Self = StObject.set(x, "ObjectPattern", js.Array(value :_*))
+      inline def setObjectPatternVarargs(value: String*): Self = StObject.set(x, "ObjectPattern", js.Array(value :_*))
       
-      @scala.inline
-      def setProgram(value: js.Array[String]): Self = StObject.set(x, "Program", value.asInstanceOf[js.Any])
+      inline def setProgram(value: js.Array[String]): Self = StObject.set(x, "Program", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgramVarargs(value: String*): Self = StObject.set(x, "Program", js.Array(value :_*))
+      inline def setProgramVarargs(value: String*): Self = StObject.set(x, "Program", js.Array(value :_*))
       
-      @scala.inline
-      def setProperty(value: js.Array[String]): Self = StObject.set(x, "Property", value.asInstanceOf[js.Any])
+      inline def setProperty(value: js.Array[String]): Self = StObject.set(x, "Property", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertyVarargs(value: String*): Self = StObject.set(x, "Property", js.Array(value :_*))
+      inline def setPropertyVarargs(value: String*): Self = StObject.set(x, "Property", js.Array(value :_*))
       
-      @scala.inline
-      def setRestElement(value: js.Array[String]): Self = StObject.set(x, "RestElement", value.asInstanceOf[js.Any])
+      inline def setRestElement(value: js.Array[String]): Self = StObject.set(x, "RestElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestElementVarargs(value: String*): Self = StObject.set(x, "RestElement", js.Array(value :_*))
+      inline def setRestElementVarargs(value: String*): Self = StObject.set(x, "RestElement", js.Array(value :_*))
       
-      @scala.inline
-      def setReturnStatement(value: js.Array[String]): Self = StObject.set(x, "ReturnStatement", value.asInstanceOf[js.Any])
+      inline def setReturnStatement(value: js.Array[String]): Self = StObject.set(x, "ReturnStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnStatementVarargs(value: String*): Self = StObject.set(x, "ReturnStatement", js.Array(value :_*))
+      inline def setReturnStatementVarargs(value: String*): Self = StObject.set(x, "ReturnStatement", js.Array(value :_*))
       
-      @scala.inline
-      def setSequenceExpression(value: js.Array[String]): Self = StObject.set(x, "SequenceExpression", value.asInstanceOf[js.Any])
+      inline def setSequenceExpression(value: js.Array[String]): Self = StObject.set(x, "SequenceExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSequenceExpressionVarargs(value: String*): Self = StObject.set(x, "SequenceExpression", js.Array(value :_*))
+      inline def setSequenceExpressionVarargs(value: String*): Self = StObject.set(x, "SequenceExpression", js.Array(value :_*))
       
-      @scala.inline
-      def setSpreadElement(value: js.Array[String]): Self = StObject.set(x, "SpreadElement", value.asInstanceOf[js.Any])
+      inline def setSpreadElement(value: js.Array[String]): Self = StObject.set(x, "SpreadElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpreadElementVarargs(value: String*): Self = StObject.set(x, "SpreadElement", js.Array(value :_*))
+      inline def setSpreadElementVarargs(value: String*): Self = StObject.set(x, "SpreadElement", js.Array(value :_*))
       
-      @scala.inline
-      def setSuper(value: js.Array[String]): Self = StObject.set(x, "Super", value.asInstanceOf[js.Any])
+      inline def setSuper(value: js.Array[String]): Self = StObject.set(x, "Super", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuperVarargs(value: String*): Self = StObject.set(x, "Super", js.Array(value :_*))
+      inline def setSuperVarargs(value: String*): Self = StObject.set(x, "Super", js.Array(value :_*))
       
-      @scala.inline
-      def setSwitchCase(value: js.Array[String]): Self = StObject.set(x, "SwitchCase", value.asInstanceOf[js.Any])
+      inline def setSwitchCase(value: js.Array[String]): Self = StObject.set(x, "SwitchCase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwitchCaseVarargs(value: String*): Self = StObject.set(x, "SwitchCase", js.Array(value :_*))
+      inline def setSwitchCaseVarargs(value: String*): Self = StObject.set(x, "SwitchCase", js.Array(value :_*))
       
-      @scala.inline
-      def setSwitchStatement(value: js.Array[String]): Self = StObject.set(x, "SwitchStatement", value.asInstanceOf[js.Any])
+      inline def setSwitchStatement(value: js.Array[String]): Self = StObject.set(x, "SwitchStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwitchStatementVarargs(value: String*): Self = StObject.set(x, "SwitchStatement", js.Array(value :_*))
+      inline def setSwitchStatementVarargs(value: String*): Self = StObject.set(x, "SwitchStatement", js.Array(value :_*))
       
-      @scala.inline
-      def setTaggedTemplateExpression(value: js.Array[String]): Self = StObject.set(x, "TaggedTemplateExpression", value.asInstanceOf[js.Any])
+      inline def setTaggedTemplateExpression(value: js.Array[String]): Self = StObject.set(x, "TaggedTemplateExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaggedTemplateExpressionVarargs(value: String*): Self = StObject.set(x, "TaggedTemplateExpression", js.Array(value :_*))
+      inline def setTaggedTemplateExpressionVarargs(value: String*): Self = StObject.set(x, "TaggedTemplateExpression", js.Array(value :_*))
       
-      @scala.inline
-      def setTemplateElement(value: js.Array[String]): Self = StObject.set(x, "TemplateElement", value.asInstanceOf[js.Any])
+      inline def setTemplateElement(value: js.Array[String]): Self = StObject.set(x, "TemplateElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateElementVarargs(value: String*): Self = StObject.set(x, "TemplateElement", js.Array(value :_*))
+      inline def setTemplateElementVarargs(value: String*): Self = StObject.set(x, "TemplateElement", js.Array(value :_*))
       
-      @scala.inline
-      def setTemplateLiteral(value: js.Array[String]): Self = StObject.set(x, "TemplateLiteral", value.asInstanceOf[js.Any])
+      inline def setTemplateLiteral(value: js.Array[String]): Self = StObject.set(x, "TemplateLiteral", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateLiteralVarargs(value: String*): Self = StObject.set(x, "TemplateLiteral", js.Array(value :_*))
+      inline def setTemplateLiteralVarargs(value: String*): Self = StObject.set(x, "TemplateLiteral", js.Array(value :_*))
       
-      @scala.inline
-      def setThisExpression(value: js.Array[String]): Self = StObject.set(x, "ThisExpression", value.asInstanceOf[js.Any])
+      inline def setThisExpression(value: js.Array[String]): Self = StObject.set(x, "ThisExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThisExpressionVarargs(value: String*): Self = StObject.set(x, "ThisExpression", js.Array(value :_*))
+      inline def setThisExpressionVarargs(value: String*): Self = StObject.set(x, "ThisExpression", js.Array(value :_*))
       
-      @scala.inline
-      def setThrowStatement(value: js.Array[String]): Self = StObject.set(x, "ThrowStatement", value.asInstanceOf[js.Any])
+      inline def setThrowStatement(value: js.Array[String]): Self = StObject.set(x, "ThrowStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrowStatementVarargs(value: String*): Self = StObject.set(x, "ThrowStatement", js.Array(value :_*))
+      inline def setThrowStatementVarargs(value: String*): Self = StObject.set(x, "ThrowStatement", js.Array(value :_*))
       
-      @scala.inline
-      def setTryStatement(value: js.Array[String]): Self = StObject.set(x, "TryStatement", value.asInstanceOf[js.Any])
+      inline def setTryStatement(value: js.Array[String]): Self = StObject.set(x, "TryStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTryStatementVarargs(value: String*): Self = StObject.set(x, "TryStatement", js.Array(value :_*))
+      inline def setTryStatementVarargs(value: String*): Self = StObject.set(x, "TryStatement", js.Array(value :_*))
       
-      @scala.inline
-      def setUnaryExpression(value: js.Array[String]): Self = StObject.set(x, "UnaryExpression", value.asInstanceOf[js.Any])
+      inline def setUnaryExpression(value: js.Array[String]): Self = StObject.set(x, "UnaryExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnaryExpressionVarargs(value: String*): Self = StObject.set(x, "UnaryExpression", js.Array(value :_*))
+      inline def setUnaryExpressionVarargs(value: String*): Self = StObject.set(x, "UnaryExpression", js.Array(value :_*))
       
-      @scala.inline
-      def setUpdateExpression(value: js.Array[String]): Self = StObject.set(x, "UpdateExpression", value.asInstanceOf[js.Any])
+      inline def setUpdateExpression(value: js.Array[String]): Self = StObject.set(x, "UpdateExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateExpressionVarargs(value: String*): Self = StObject.set(x, "UpdateExpression", js.Array(value :_*))
+      inline def setUpdateExpressionVarargs(value: String*): Self = StObject.set(x, "UpdateExpression", js.Array(value :_*))
       
-      @scala.inline
-      def setVariableDeclaration(value: js.Array[String]): Self = StObject.set(x, "VariableDeclaration", value.asInstanceOf[js.Any])
+      inline def setVariableDeclaration(value: js.Array[String]): Self = StObject.set(x, "VariableDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariableDeclarationVarargs(value: String*): Self = StObject.set(x, "VariableDeclaration", js.Array(value :_*))
+      inline def setVariableDeclarationVarargs(value: String*): Self = StObject.set(x, "VariableDeclaration", js.Array(value :_*))
       
-      @scala.inline
-      def setVariableDeclarator(value: js.Array[String]): Self = StObject.set(x, "VariableDeclarator", value.asInstanceOf[js.Any])
+      inline def setVariableDeclarator(value: js.Array[String]): Self = StObject.set(x, "VariableDeclarator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariableDeclaratorVarargs(value: String*): Self = StObject.set(x, "VariableDeclarator", js.Array(value :_*))
+      inline def setVariableDeclaratorVarargs(value: String*): Self = StObject.set(x, "VariableDeclarator", js.Array(value :_*))
       
-      @scala.inline
-      def setWhileStatement(value: js.Array[String]): Self = StObject.set(x, "WhileStatement", value.asInstanceOf[js.Any])
+      inline def setWhileStatement(value: js.Array[String]): Self = StObject.set(x, "WhileStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhileStatementVarargs(value: String*): Self = StObject.set(x, "WhileStatement", js.Array(value :_*))
+      inline def setWhileStatementVarargs(value: String*): Self = StObject.set(x, "WhileStatement", js.Array(value :_*))
       
-      @scala.inline
-      def setWithStatement(value: js.Array[String]): Self = StObject.set(x, "WithStatement", value.asInstanceOf[js.Any])
+      inline def setWithStatement(value: js.Array[String]): Self = StObject.set(x, "WithStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithStatementVarargs(value: String*): Self = StObject.set(x, "WithStatement", js.Array(value :_*))
+      inline def setWithStatementVarargs(value: String*): Self = StObject.set(x, "WithStatement", js.Array(value :_*))
       
-      @scala.inline
-      def setYieldExpression(value: js.Array[String]): Self = StObject.set(x, "YieldExpression", value.asInstanceOf[js.Any])
+      inline def setYieldExpression(value: js.Array[String]): Self = StObject.set(x, "YieldExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYieldExpressionVarargs(value: String*): Self = StObject.set(x, "YieldExpression", js.Array(value :_*))
+      inline def setYieldExpressionVarargs(value: String*): Self = StObject.set(x, "YieldExpression", js.Array(value :_*))
     }
   }
   
@@ -1062,17 +844,13 @@ object mod {
     /* 1 */ val Skip: typings.estraverse.mod.VisitorOption.Skip & Double = js.native
   }
   
-  @scala.inline
-  def attachComments(tree: Node, providedComments: js.Array[Comment], tokens: js.Array[Node]): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("attachComments")(tree.asInstanceOf[js.Any], providedComments.asInstanceOf[js.Any], tokens.asInstanceOf[js.Any])).asInstanceOf[Node]
+  inline def attachComments(tree: Node, providedComments: js.Array[Comment], tokens: js.Array[Node]): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("attachComments")(tree.asInstanceOf[js.Any], providedComments.asInstanceOf[js.Any], tokens.asInstanceOf[js.Any])).asInstanceOf[Node]
   
-  @scala.inline
-  def cloneEnvironment(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneEnvironment")().asInstanceOf[js.Any]
+  inline def cloneEnvironment(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneEnvironment")().asInstanceOf[js.Any]
   
-  @scala.inline
-  def replace(root: Node, visitor: Visitor): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(root.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[Node]
+  inline def replace(root: Node, visitor: Visitor): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(root.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[Node]
   
-  @scala.inline
-  def traverse(root: Node, visitor: Visitor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverse")(root.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def traverse(root: Node, visitor: Visitor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverse")(root.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* Rewritten from type alias, can be one of: 
     - typings.estraverse.estraverseStrings.AssignmentExpression
@@ -1151,221 +929,149 @@ object mod {
   trait NodeType extends StObject
   object NodeType {
     
-    @scala.inline
-    def ArrayExpression: typings.estraverse.estraverseStrings.ArrayExpression = "ArrayExpression".asInstanceOf[typings.estraverse.estraverseStrings.ArrayExpression]
+    inline def ArrayExpression: typings.estraverse.estraverseStrings.ArrayExpression = "ArrayExpression".asInstanceOf[typings.estraverse.estraverseStrings.ArrayExpression]
     
-    @scala.inline
-    def ArrayPattern: typings.estraverse.estraverseStrings.ArrayPattern = "ArrayPattern".asInstanceOf[typings.estraverse.estraverseStrings.ArrayPattern]
+    inline def ArrayPattern: typings.estraverse.estraverseStrings.ArrayPattern = "ArrayPattern".asInstanceOf[typings.estraverse.estraverseStrings.ArrayPattern]
     
-    @scala.inline
-    def ArrowFunctionExpression: typings.estraverse.estraverseStrings.ArrowFunctionExpression = "ArrowFunctionExpression".asInstanceOf[typings.estraverse.estraverseStrings.ArrowFunctionExpression]
+    inline def ArrowFunctionExpression: typings.estraverse.estraverseStrings.ArrowFunctionExpression = "ArrowFunctionExpression".asInstanceOf[typings.estraverse.estraverseStrings.ArrowFunctionExpression]
     
-    @scala.inline
-    def AssignmentExpression: typings.estraverse.estraverseStrings.AssignmentExpression = "AssignmentExpression".asInstanceOf[typings.estraverse.estraverseStrings.AssignmentExpression]
+    inline def AssignmentExpression: typings.estraverse.estraverseStrings.AssignmentExpression = "AssignmentExpression".asInstanceOf[typings.estraverse.estraverseStrings.AssignmentExpression]
     
-    @scala.inline
-    def AssignmentPattern: typings.estraverse.estraverseStrings.AssignmentPattern = "AssignmentPattern".asInstanceOf[typings.estraverse.estraverseStrings.AssignmentPattern]
+    inline def AssignmentPattern: typings.estraverse.estraverseStrings.AssignmentPattern = "AssignmentPattern".asInstanceOf[typings.estraverse.estraverseStrings.AssignmentPattern]
     
-    @scala.inline
-    def AwaitExpression: typings.estraverse.estraverseStrings.AwaitExpression = "AwaitExpression".asInstanceOf[typings.estraverse.estraverseStrings.AwaitExpression]
+    inline def AwaitExpression: typings.estraverse.estraverseStrings.AwaitExpression = "AwaitExpression".asInstanceOf[typings.estraverse.estraverseStrings.AwaitExpression]
     
-    @scala.inline
-    def BinaryExpression: typings.estraverse.estraverseStrings.BinaryExpression = "BinaryExpression".asInstanceOf[typings.estraverse.estraverseStrings.BinaryExpression]
+    inline def BinaryExpression: typings.estraverse.estraverseStrings.BinaryExpression = "BinaryExpression".asInstanceOf[typings.estraverse.estraverseStrings.BinaryExpression]
     
-    @scala.inline
-    def BlockStatement: typings.estraverse.estraverseStrings.BlockStatement = "BlockStatement".asInstanceOf[typings.estraverse.estraverseStrings.BlockStatement]
+    inline def BlockStatement: typings.estraverse.estraverseStrings.BlockStatement = "BlockStatement".asInstanceOf[typings.estraverse.estraverseStrings.BlockStatement]
     
-    @scala.inline
-    def BreakStatement: typings.estraverse.estraverseStrings.BreakStatement = "BreakStatement".asInstanceOf[typings.estraverse.estraverseStrings.BreakStatement]
+    inline def BreakStatement: typings.estraverse.estraverseStrings.BreakStatement = "BreakStatement".asInstanceOf[typings.estraverse.estraverseStrings.BreakStatement]
     
-    @scala.inline
-    def CallExpression: typings.estraverse.estraverseStrings.CallExpression = "CallExpression".asInstanceOf[typings.estraverse.estraverseStrings.CallExpression]
+    inline def CallExpression: typings.estraverse.estraverseStrings.CallExpression = "CallExpression".asInstanceOf[typings.estraverse.estraverseStrings.CallExpression]
     
-    @scala.inline
-    def CatchClause: typings.estraverse.estraverseStrings.CatchClause = "CatchClause".asInstanceOf[typings.estraverse.estraverseStrings.CatchClause]
+    inline def CatchClause: typings.estraverse.estraverseStrings.CatchClause = "CatchClause".asInstanceOf[typings.estraverse.estraverseStrings.CatchClause]
     
-    @scala.inline
-    def ClassBody: typings.estraverse.estraverseStrings.ClassBody = "ClassBody".asInstanceOf[typings.estraverse.estraverseStrings.ClassBody]
+    inline def ClassBody: typings.estraverse.estraverseStrings.ClassBody = "ClassBody".asInstanceOf[typings.estraverse.estraverseStrings.ClassBody]
     
-    @scala.inline
-    def ClassDeclaration: typings.estraverse.estraverseStrings.ClassDeclaration = "ClassDeclaration".asInstanceOf[typings.estraverse.estraverseStrings.ClassDeclaration]
+    inline def ClassDeclaration: typings.estraverse.estraverseStrings.ClassDeclaration = "ClassDeclaration".asInstanceOf[typings.estraverse.estraverseStrings.ClassDeclaration]
     
-    @scala.inline
-    def ClassExpression: typings.estraverse.estraverseStrings.ClassExpression = "ClassExpression".asInstanceOf[typings.estraverse.estraverseStrings.ClassExpression]
+    inline def ClassExpression: typings.estraverse.estraverseStrings.ClassExpression = "ClassExpression".asInstanceOf[typings.estraverse.estraverseStrings.ClassExpression]
     
-    @scala.inline
-    def ComprehensionBlock: typings.estraverse.estraverseStrings.ComprehensionBlock = "ComprehensionBlock".asInstanceOf[typings.estraverse.estraverseStrings.ComprehensionBlock]
+    inline def ComprehensionBlock: typings.estraverse.estraverseStrings.ComprehensionBlock = "ComprehensionBlock".asInstanceOf[typings.estraverse.estraverseStrings.ComprehensionBlock]
     
-    @scala.inline
-    def ComprehensionExpression: typings.estraverse.estraverseStrings.ComprehensionExpression = "ComprehensionExpression".asInstanceOf[typings.estraverse.estraverseStrings.ComprehensionExpression]
+    inline def ComprehensionExpression: typings.estraverse.estraverseStrings.ComprehensionExpression = "ComprehensionExpression".asInstanceOf[typings.estraverse.estraverseStrings.ComprehensionExpression]
     
-    @scala.inline
-    def ConditionalExpression: typings.estraverse.estraverseStrings.ConditionalExpression = "ConditionalExpression".asInstanceOf[typings.estraverse.estraverseStrings.ConditionalExpression]
+    inline def ConditionalExpression: typings.estraverse.estraverseStrings.ConditionalExpression = "ConditionalExpression".asInstanceOf[typings.estraverse.estraverseStrings.ConditionalExpression]
     
-    @scala.inline
-    def ContinueStatement: typings.estraverse.estraverseStrings.ContinueStatement = "ContinueStatement".asInstanceOf[typings.estraverse.estraverseStrings.ContinueStatement]
+    inline def ContinueStatement: typings.estraverse.estraverseStrings.ContinueStatement = "ContinueStatement".asInstanceOf[typings.estraverse.estraverseStrings.ContinueStatement]
     
-    @scala.inline
-    def DebuggerStatement: typings.estraverse.estraverseStrings.DebuggerStatement = "DebuggerStatement".asInstanceOf[typings.estraverse.estraverseStrings.DebuggerStatement]
+    inline def DebuggerStatement: typings.estraverse.estraverseStrings.DebuggerStatement = "DebuggerStatement".asInstanceOf[typings.estraverse.estraverseStrings.DebuggerStatement]
     
-    @scala.inline
-    def DirectiveStatement: typings.estraverse.estraverseStrings.DirectiveStatement = "DirectiveStatement".asInstanceOf[typings.estraverse.estraverseStrings.DirectiveStatement]
+    inline def DirectiveStatement: typings.estraverse.estraverseStrings.DirectiveStatement = "DirectiveStatement".asInstanceOf[typings.estraverse.estraverseStrings.DirectiveStatement]
     
-    @scala.inline
-    def DoWhileStatement: typings.estraverse.estraverseStrings.DoWhileStatement = "DoWhileStatement".asInstanceOf[typings.estraverse.estraverseStrings.DoWhileStatement]
+    inline def DoWhileStatement: typings.estraverse.estraverseStrings.DoWhileStatement = "DoWhileStatement".asInstanceOf[typings.estraverse.estraverseStrings.DoWhileStatement]
     
-    @scala.inline
-    def EmptyStatement: typings.estraverse.estraverseStrings.EmptyStatement = "EmptyStatement".asInstanceOf[typings.estraverse.estraverseStrings.EmptyStatement]
+    inline def EmptyStatement: typings.estraverse.estraverseStrings.EmptyStatement = "EmptyStatement".asInstanceOf[typings.estraverse.estraverseStrings.EmptyStatement]
     
-    @scala.inline
-    def ExportAllDeclaration: typings.estraverse.estraverseStrings.ExportAllDeclaration = "ExportAllDeclaration".asInstanceOf[typings.estraverse.estraverseStrings.ExportAllDeclaration]
+    inline def ExportAllDeclaration: typings.estraverse.estraverseStrings.ExportAllDeclaration = "ExportAllDeclaration".asInstanceOf[typings.estraverse.estraverseStrings.ExportAllDeclaration]
     
-    @scala.inline
-    def ExportDefaultDeclaration: typings.estraverse.estraverseStrings.ExportDefaultDeclaration = "ExportDefaultDeclaration".asInstanceOf[typings.estraverse.estraverseStrings.ExportDefaultDeclaration]
+    inline def ExportDefaultDeclaration: typings.estraverse.estraverseStrings.ExportDefaultDeclaration = "ExportDefaultDeclaration".asInstanceOf[typings.estraverse.estraverseStrings.ExportDefaultDeclaration]
     
-    @scala.inline
-    def ExportNamedDeclaration: typings.estraverse.estraverseStrings.ExportNamedDeclaration = "ExportNamedDeclaration".asInstanceOf[typings.estraverse.estraverseStrings.ExportNamedDeclaration]
+    inline def ExportNamedDeclaration: typings.estraverse.estraverseStrings.ExportNamedDeclaration = "ExportNamedDeclaration".asInstanceOf[typings.estraverse.estraverseStrings.ExportNamedDeclaration]
     
-    @scala.inline
-    def ExportSpecifier: typings.estraverse.estraverseStrings.ExportSpecifier = "ExportSpecifier".asInstanceOf[typings.estraverse.estraverseStrings.ExportSpecifier]
+    inline def ExportSpecifier: typings.estraverse.estraverseStrings.ExportSpecifier = "ExportSpecifier".asInstanceOf[typings.estraverse.estraverseStrings.ExportSpecifier]
     
-    @scala.inline
-    def ExpressionStatement: typings.estraverse.estraverseStrings.ExpressionStatement = "ExpressionStatement".asInstanceOf[typings.estraverse.estraverseStrings.ExpressionStatement]
+    inline def ExpressionStatement: typings.estraverse.estraverseStrings.ExpressionStatement = "ExpressionStatement".asInstanceOf[typings.estraverse.estraverseStrings.ExpressionStatement]
     
-    @scala.inline
-    def ForInStatement: typings.estraverse.estraverseStrings.ForInStatement = "ForInStatement".asInstanceOf[typings.estraverse.estraverseStrings.ForInStatement]
+    inline def ForInStatement: typings.estraverse.estraverseStrings.ForInStatement = "ForInStatement".asInstanceOf[typings.estraverse.estraverseStrings.ForInStatement]
     
-    @scala.inline
-    def ForOfStatement: typings.estraverse.estraverseStrings.ForOfStatement = "ForOfStatement".asInstanceOf[typings.estraverse.estraverseStrings.ForOfStatement]
+    inline def ForOfStatement: typings.estraverse.estraverseStrings.ForOfStatement = "ForOfStatement".asInstanceOf[typings.estraverse.estraverseStrings.ForOfStatement]
     
-    @scala.inline
-    def ForStatement: typings.estraverse.estraverseStrings.ForStatement = "ForStatement".asInstanceOf[typings.estraverse.estraverseStrings.ForStatement]
+    inline def ForStatement: typings.estraverse.estraverseStrings.ForStatement = "ForStatement".asInstanceOf[typings.estraverse.estraverseStrings.ForStatement]
     
-    @scala.inline
-    def FunctionDeclaration: typings.estraverse.estraverseStrings.FunctionDeclaration = "FunctionDeclaration".asInstanceOf[typings.estraverse.estraverseStrings.FunctionDeclaration]
+    inline def FunctionDeclaration: typings.estraverse.estraverseStrings.FunctionDeclaration = "FunctionDeclaration".asInstanceOf[typings.estraverse.estraverseStrings.FunctionDeclaration]
     
-    @scala.inline
-    def FunctionExpression: typings.estraverse.estraverseStrings.FunctionExpression = "FunctionExpression".asInstanceOf[typings.estraverse.estraverseStrings.FunctionExpression]
+    inline def FunctionExpression: typings.estraverse.estraverseStrings.FunctionExpression = "FunctionExpression".asInstanceOf[typings.estraverse.estraverseStrings.FunctionExpression]
     
-    @scala.inline
-    def GeneratorExpression: typings.estraverse.estraverseStrings.GeneratorExpression = "GeneratorExpression".asInstanceOf[typings.estraverse.estraverseStrings.GeneratorExpression]
+    inline def GeneratorExpression: typings.estraverse.estraverseStrings.GeneratorExpression = "GeneratorExpression".asInstanceOf[typings.estraverse.estraverseStrings.GeneratorExpression]
     
-    @scala.inline
-    def Identifier: typings.estraverse.estraverseStrings.Identifier = "Identifier".asInstanceOf[typings.estraverse.estraverseStrings.Identifier]
+    inline def Identifier: typings.estraverse.estraverseStrings.Identifier = "Identifier".asInstanceOf[typings.estraverse.estraverseStrings.Identifier]
     
-    @scala.inline
-    def IfStatement: typings.estraverse.estraverseStrings.IfStatement = "IfStatement".asInstanceOf[typings.estraverse.estraverseStrings.IfStatement]
+    inline def IfStatement: typings.estraverse.estraverseStrings.IfStatement = "IfStatement".asInstanceOf[typings.estraverse.estraverseStrings.IfStatement]
     
-    @scala.inline
-    def ImportDeclaration: typings.estraverse.estraverseStrings.ImportDeclaration = "ImportDeclaration".asInstanceOf[typings.estraverse.estraverseStrings.ImportDeclaration]
+    inline def ImportDeclaration: typings.estraverse.estraverseStrings.ImportDeclaration = "ImportDeclaration".asInstanceOf[typings.estraverse.estraverseStrings.ImportDeclaration]
     
-    @scala.inline
-    def ImportDefaultSpecifier: typings.estraverse.estraverseStrings.ImportDefaultSpecifier = "ImportDefaultSpecifier".asInstanceOf[typings.estraverse.estraverseStrings.ImportDefaultSpecifier]
+    inline def ImportDefaultSpecifier: typings.estraverse.estraverseStrings.ImportDefaultSpecifier = "ImportDefaultSpecifier".asInstanceOf[typings.estraverse.estraverseStrings.ImportDefaultSpecifier]
     
-    @scala.inline
-    def ImportExpression: typings.estraverse.estraverseStrings.ImportExpression = "ImportExpression".asInstanceOf[typings.estraverse.estraverseStrings.ImportExpression]
+    inline def ImportExpression: typings.estraverse.estraverseStrings.ImportExpression = "ImportExpression".asInstanceOf[typings.estraverse.estraverseStrings.ImportExpression]
     
-    @scala.inline
-    def ImportNamespaceSpecifier: typings.estraverse.estraverseStrings.ImportNamespaceSpecifier = "ImportNamespaceSpecifier".asInstanceOf[typings.estraverse.estraverseStrings.ImportNamespaceSpecifier]
+    inline def ImportNamespaceSpecifier: typings.estraverse.estraverseStrings.ImportNamespaceSpecifier = "ImportNamespaceSpecifier".asInstanceOf[typings.estraverse.estraverseStrings.ImportNamespaceSpecifier]
     
-    @scala.inline
-    def ImportSpecifier: typings.estraverse.estraverseStrings.ImportSpecifier = "ImportSpecifier".asInstanceOf[typings.estraverse.estraverseStrings.ImportSpecifier]
+    inline def ImportSpecifier: typings.estraverse.estraverseStrings.ImportSpecifier = "ImportSpecifier".asInstanceOf[typings.estraverse.estraverseStrings.ImportSpecifier]
     
-    @scala.inline
-    def LabeledStatement: typings.estraverse.estraverseStrings.LabeledStatement = "LabeledStatement".asInstanceOf[typings.estraverse.estraverseStrings.LabeledStatement]
+    inline def LabeledStatement: typings.estraverse.estraverseStrings.LabeledStatement = "LabeledStatement".asInstanceOf[typings.estraverse.estraverseStrings.LabeledStatement]
     
-    @scala.inline
-    def Literal: typings.estraverse.estraverseStrings.Literal = "Literal".asInstanceOf[typings.estraverse.estraverseStrings.Literal]
+    inline def Literal: typings.estraverse.estraverseStrings.Literal = "Literal".asInstanceOf[typings.estraverse.estraverseStrings.Literal]
     
-    @scala.inline
-    def LogicalExpression: typings.estraverse.estraverseStrings.LogicalExpression = "LogicalExpression".asInstanceOf[typings.estraverse.estraverseStrings.LogicalExpression]
+    inline def LogicalExpression: typings.estraverse.estraverseStrings.LogicalExpression = "LogicalExpression".asInstanceOf[typings.estraverse.estraverseStrings.LogicalExpression]
     
-    @scala.inline
-    def MemberExpression: typings.estraverse.estraverseStrings.MemberExpression = "MemberExpression".asInstanceOf[typings.estraverse.estraverseStrings.MemberExpression]
+    inline def MemberExpression: typings.estraverse.estraverseStrings.MemberExpression = "MemberExpression".asInstanceOf[typings.estraverse.estraverseStrings.MemberExpression]
     
-    @scala.inline
-    def MetaProperty: typings.estraverse.estraverseStrings.MetaProperty = "MetaProperty".asInstanceOf[typings.estraverse.estraverseStrings.MetaProperty]
+    inline def MetaProperty: typings.estraverse.estraverseStrings.MetaProperty = "MetaProperty".asInstanceOf[typings.estraverse.estraverseStrings.MetaProperty]
     
-    @scala.inline
-    def MethodDefinition: typings.estraverse.estraverseStrings.MethodDefinition = "MethodDefinition".asInstanceOf[typings.estraverse.estraverseStrings.MethodDefinition]
+    inline def MethodDefinition: typings.estraverse.estraverseStrings.MethodDefinition = "MethodDefinition".asInstanceOf[typings.estraverse.estraverseStrings.MethodDefinition]
     
-    @scala.inline
-    def ModuleSpecifier: typings.estraverse.estraverseStrings.ModuleSpecifier = "ModuleSpecifier".asInstanceOf[typings.estraverse.estraverseStrings.ModuleSpecifier]
+    inline def ModuleSpecifier: typings.estraverse.estraverseStrings.ModuleSpecifier = "ModuleSpecifier".asInstanceOf[typings.estraverse.estraverseStrings.ModuleSpecifier]
     
-    @scala.inline
-    def NewExpression: typings.estraverse.estraverseStrings.NewExpression = "NewExpression".asInstanceOf[typings.estraverse.estraverseStrings.NewExpression]
+    inline def NewExpression: typings.estraverse.estraverseStrings.NewExpression = "NewExpression".asInstanceOf[typings.estraverse.estraverseStrings.NewExpression]
     
-    @scala.inline
-    def ObjectExpression: typings.estraverse.estraverseStrings.ObjectExpression = "ObjectExpression".asInstanceOf[typings.estraverse.estraverseStrings.ObjectExpression]
+    inline def ObjectExpression: typings.estraverse.estraverseStrings.ObjectExpression = "ObjectExpression".asInstanceOf[typings.estraverse.estraverseStrings.ObjectExpression]
     
-    @scala.inline
-    def ObjectPattern: typings.estraverse.estraverseStrings.ObjectPattern = "ObjectPattern".asInstanceOf[typings.estraverse.estraverseStrings.ObjectPattern]
+    inline def ObjectPattern: typings.estraverse.estraverseStrings.ObjectPattern = "ObjectPattern".asInstanceOf[typings.estraverse.estraverseStrings.ObjectPattern]
     
-    @scala.inline
-    def Program: typings.estraverse.estraverseStrings.Program = "Program".asInstanceOf[typings.estraverse.estraverseStrings.Program]
+    inline def Program: typings.estraverse.estraverseStrings.Program = "Program".asInstanceOf[typings.estraverse.estraverseStrings.Program]
     
-    @scala.inline
-    def Property: typings.estraverse.estraverseStrings.Property = "Property".asInstanceOf[typings.estraverse.estraverseStrings.Property]
+    inline def Property: typings.estraverse.estraverseStrings.Property = "Property".asInstanceOf[typings.estraverse.estraverseStrings.Property]
     
-    @scala.inline
-    def RestElement: typings.estraverse.estraverseStrings.RestElement = "RestElement".asInstanceOf[typings.estraverse.estraverseStrings.RestElement]
+    inline def RestElement: typings.estraverse.estraverseStrings.RestElement = "RestElement".asInstanceOf[typings.estraverse.estraverseStrings.RestElement]
     
-    @scala.inline
-    def ReturnStatement: typings.estraverse.estraverseStrings.ReturnStatement = "ReturnStatement".asInstanceOf[typings.estraverse.estraverseStrings.ReturnStatement]
+    inline def ReturnStatement: typings.estraverse.estraverseStrings.ReturnStatement = "ReturnStatement".asInstanceOf[typings.estraverse.estraverseStrings.ReturnStatement]
     
-    @scala.inline
-    def SequenceExpression: typings.estraverse.estraverseStrings.SequenceExpression = "SequenceExpression".asInstanceOf[typings.estraverse.estraverseStrings.SequenceExpression]
+    inline def SequenceExpression: typings.estraverse.estraverseStrings.SequenceExpression = "SequenceExpression".asInstanceOf[typings.estraverse.estraverseStrings.SequenceExpression]
     
-    @scala.inline
-    def SpreadElement: typings.estraverse.estraverseStrings.SpreadElement = "SpreadElement".asInstanceOf[typings.estraverse.estraverseStrings.SpreadElement]
+    inline def SpreadElement: typings.estraverse.estraverseStrings.SpreadElement = "SpreadElement".asInstanceOf[typings.estraverse.estraverseStrings.SpreadElement]
     
-    @scala.inline
-    def Super: typings.estraverse.estraverseStrings.Super = "Super".asInstanceOf[typings.estraverse.estraverseStrings.Super]
+    inline def Super: typings.estraverse.estraverseStrings.Super = "Super".asInstanceOf[typings.estraverse.estraverseStrings.Super]
     
-    @scala.inline
-    def SwitchCase: typings.estraverse.estraverseStrings.SwitchCase = "SwitchCase".asInstanceOf[typings.estraverse.estraverseStrings.SwitchCase]
+    inline def SwitchCase: typings.estraverse.estraverseStrings.SwitchCase = "SwitchCase".asInstanceOf[typings.estraverse.estraverseStrings.SwitchCase]
     
-    @scala.inline
-    def SwitchStatement: typings.estraverse.estraverseStrings.SwitchStatement = "SwitchStatement".asInstanceOf[typings.estraverse.estraverseStrings.SwitchStatement]
+    inline def SwitchStatement: typings.estraverse.estraverseStrings.SwitchStatement = "SwitchStatement".asInstanceOf[typings.estraverse.estraverseStrings.SwitchStatement]
     
-    @scala.inline
-    def TaggedTemplateExpression: typings.estraverse.estraverseStrings.TaggedTemplateExpression = "TaggedTemplateExpression".asInstanceOf[typings.estraverse.estraverseStrings.TaggedTemplateExpression]
+    inline def TaggedTemplateExpression: typings.estraverse.estraverseStrings.TaggedTemplateExpression = "TaggedTemplateExpression".asInstanceOf[typings.estraverse.estraverseStrings.TaggedTemplateExpression]
     
-    @scala.inline
-    def TemplateElement: typings.estraverse.estraverseStrings.TemplateElement = "TemplateElement".asInstanceOf[typings.estraverse.estraverseStrings.TemplateElement]
+    inline def TemplateElement: typings.estraverse.estraverseStrings.TemplateElement = "TemplateElement".asInstanceOf[typings.estraverse.estraverseStrings.TemplateElement]
     
-    @scala.inline
-    def TemplateLiteral: typings.estraverse.estraverseStrings.TemplateLiteral = "TemplateLiteral".asInstanceOf[typings.estraverse.estraverseStrings.TemplateLiteral]
+    inline def TemplateLiteral: typings.estraverse.estraverseStrings.TemplateLiteral = "TemplateLiteral".asInstanceOf[typings.estraverse.estraverseStrings.TemplateLiteral]
     
-    @scala.inline
-    def ThisExpression: typings.estraverse.estraverseStrings.ThisExpression = "ThisExpression".asInstanceOf[typings.estraverse.estraverseStrings.ThisExpression]
+    inline def ThisExpression: typings.estraverse.estraverseStrings.ThisExpression = "ThisExpression".asInstanceOf[typings.estraverse.estraverseStrings.ThisExpression]
     
-    @scala.inline
-    def ThrowStatement: typings.estraverse.estraverseStrings.ThrowStatement = "ThrowStatement".asInstanceOf[typings.estraverse.estraverseStrings.ThrowStatement]
+    inline def ThrowStatement: typings.estraverse.estraverseStrings.ThrowStatement = "ThrowStatement".asInstanceOf[typings.estraverse.estraverseStrings.ThrowStatement]
     
-    @scala.inline
-    def TryStatement: typings.estraverse.estraverseStrings.TryStatement = "TryStatement".asInstanceOf[typings.estraverse.estraverseStrings.TryStatement]
+    inline def TryStatement: typings.estraverse.estraverseStrings.TryStatement = "TryStatement".asInstanceOf[typings.estraverse.estraverseStrings.TryStatement]
     
-    @scala.inline
-    def UnaryExpression: typings.estraverse.estraverseStrings.UnaryExpression = "UnaryExpression".asInstanceOf[typings.estraverse.estraverseStrings.UnaryExpression]
+    inline def UnaryExpression: typings.estraverse.estraverseStrings.UnaryExpression = "UnaryExpression".asInstanceOf[typings.estraverse.estraverseStrings.UnaryExpression]
     
-    @scala.inline
-    def UpdateExpression: typings.estraverse.estraverseStrings.UpdateExpression = "UpdateExpression".asInstanceOf[typings.estraverse.estraverseStrings.UpdateExpression]
+    inline def UpdateExpression: typings.estraverse.estraverseStrings.UpdateExpression = "UpdateExpression".asInstanceOf[typings.estraverse.estraverseStrings.UpdateExpression]
     
-    @scala.inline
-    def VariableDeclaration: typings.estraverse.estraverseStrings.VariableDeclaration = "VariableDeclaration".asInstanceOf[typings.estraverse.estraverseStrings.VariableDeclaration]
+    inline def VariableDeclaration: typings.estraverse.estraverseStrings.VariableDeclaration = "VariableDeclaration".asInstanceOf[typings.estraverse.estraverseStrings.VariableDeclaration]
     
-    @scala.inline
-    def VariableDeclarator: typings.estraverse.estraverseStrings.VariableDeclarator = "VariableDeclarator".asInstanceOf[typings.estraverse.estraverseStrings.VariableDeclarator]
+    inline def VariableDeclarator: typings.estraverse.estraverseStrings.VariableDeclarator = "VariableDeclarator".asInstanceOf[typings.estraverse.estraverseStrings.VariableDeclarator]
     
-    @scala.inline
-    def WhileStatement: typings.estraverse.estraverseStrings.WhileStatement = "WhileStatement".asInstanceOf[typings.estraverse.estraverseStrings.WhileStatement]
+    inline def WhileStatement: typings.estraverse.estraverseStrings.WhileStatement = "WhileStatement".asInstanceOf[typings.estraverse.estraverseStrings.WhileStatement]
     
-    @scala.inline
-    def WithStatement: typings.estraverse.estraverseStrings.WithStatement = "WithStatement".asInstanceOf[typings.estraverse.estraverseStrings.WithStatement]
+    inline def WithStatement: typings.estraverse.estraverseStrings.WithStatement = "WithStatement".asInstanceOf[typings.estraverse.estraverseStrings.WithStatement]
     
-    @scala.inline
-    def YieldExpression: typings.estraverse.estraverseStrings.YieldExpression = "YieldExpression".asInstanceOf[typings.estraverse.estraverseStrings.YieldExpression]
+    inline def YieldExpression: typings.estraverse.estraverseStrings.YieldExpression = "YieldExpression".asInstanceOf[typings.estraverse.estraverseStrings.YieldExpression]
   }
   
   trait Visitor extends StObject {
@@ -1396,17 +1102,14 @@ object mod {
   }
   object Visitor {
     
-    @scala.inline
-    def apply(): Visitor = {
+    inline def apply(): Visitor = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Visitor]
     }
     
-    @scala.inline
-    implicit class VisitorMutableBuilder[Self <: Visitor] (val x: Self) extends AnyVal {
+    extension [Self <: Visitor](x: Self) {
       
-      @scala.inline
-      def setEnter(
+      inline def setEnter(
         value: js.ThisFunction2[
               /* this */ Controller, 
               /* node */ Node, 
@@ -1415,23 +1118,17 @@ object mod {
             ]
       ): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
+      inline def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
       
-      @scala.inline
-      def setFallback(value: iteration | (js.ThisFunction1[/* this */ Controller, /* node */ Node, js.Array[String]])): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      inline def setFallback(value: iteration | (js.ThisFunction1[/* this */ Controller, /* node */ Node, js.Array[String]])): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+      inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
       
-      @scala.inline
-      def setKeys(value: Record[String, js.Array[String]]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+      inline def setKeys(value: Record[String, js.Array[String]]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
+      inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
       
-      @scala.inline
-      def setLeave(
+      inline def setLeave(
         value: js.ThisFunction2[
               /* this */ Controller, 
               /* node */ Node, 
@@ -1440,8 +1137,7 @@ object mod {
             ]
       ): Self = StObject.set(x, "leave", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeaveUndefined: Self = StObject.set(x, "leave", js.undefined)
+      inline def setLeaveUndefined: Self = StObject.set(x, "leave", js.undefined)
     }
   }
 }

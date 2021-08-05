@@ -19,8 +19,7 @@ trait Footnote
 }
 object Footnote {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     asBody: () => Body,
     asEquation: () => Equation,
     asEquationFunction: () => EquationFunction,
@@ -57,10 +56,8 @@ object Footnote {
     __obj.asInstanceOf[Footnote]
   }
   
-  @scala.inline
-  implicit class FootnoteMutableBuilder[Self <: Footnote] (val x: Self) extends AnyVal {
+  extension [Self <: Footnote](x: Self) {
     
-    @scala.inline
-    def setGetFootnoteContents(value: () => FootnoteSection): Self = StObject.set(x, "getFootnoteContents", js.Any.fromFunction0(value))
+    inline def setGetFootnoteContents(value: () => FootnoteSection): Self = StObject.set(x, "getFootnoteContents", js.Any.fromFunction0(value))
   }
 }

@@ -13,19 +13,15 @@ trait ListStreamingDistributionsResult extends StObject {
 }
 object ListStreamingDistributionsResult {
   
-  @scala.inline
-  def apply(): ListStreamingDistributionsResult = {
+  inline def apply(): ListStreamingDistributionsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListStreamingDistributionsResult]
   }
   
-  @scala.inline
-  implicit class ListStreamingDistributionsResultMutableBuilder[Self <: ListStreamingDistributionsResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListStreamingDistributionsResult](x: Self) {
     
-    @scala.inline
-    def setStreamingDistributionList(value: StreamingDistributionList): Self = StObject.set(x, "StreamingDistributionList", value.asInstanceOf[js.Any])
+    inline def setStreamingDistributionList(value: StreamingDistributionList): Self = StObject.set(x, "StreamingDistributionList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamingDistributionListUndefined: Self = StObject.set(x, "StreamingDistributionList", js.undefined)
+    inline def setStreamingDistributionListUndefined: Self = StObject.set(x, "StreamingDistributionList", js.undefined)
   }
 }

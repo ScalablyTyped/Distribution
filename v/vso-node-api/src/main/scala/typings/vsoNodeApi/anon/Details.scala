@@ -22,8 +22,7 @@ trait Details extends StObject {
 }
 object Details {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     all: scala.Double,
     details: scala.Double,
     dropLocation: scala.Double,
@@ -36,28 +35,20 @@ object Details {
     __obj.asInstanceOf[Details]
   }
   
-  @scala.inline
-  implicit class DetailsMutableBuilder[Self <: Details] (val x: Self) extends AnyVal {
+  extension [Self <: Details](x: Self) {
     
-    @scala.inline
-    def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    inline def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetails(value: scala.Double): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: scala.Double): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropLocation(value: scala.Double): Self = StObject.set(x, "dropLocation", value.asInstanceOf[js.Any])
+    inline def setDropLocation(value: scala.Double): Self = StObject.set(x, "dropLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: scala.Double): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: scala.Double): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbols(value: scala.Double): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
+    inline def setSymbols(value: scala.Double): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestResults(value: scala.Double): Self = StObject.set(x, "testResults", value.asInstanceOf[js.Any])
+    inline def setTestResults(value: scala.Double): Self = StObject.set(x, "testResults", value.asInstanceOf[js.Any])
   }
 }

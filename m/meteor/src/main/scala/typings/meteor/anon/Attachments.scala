@@ -31,94 +31,65 @@ trait Attachments extends StObject {
 }
 object Attachments {
   
-  @scala.inline
-  def apply(): Attachments = {
+  inline def apply(): Attachments = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Attachments]
   }
   
-  @scala.inline
-  implicit class AttachmentsMutableBuilder[Self <: Attachments] (val x: Self) extends AnyVal {
+  extension [Self <: Attachments](x: Self) {
     
-    @scala.inline
-    def setAttachments(value: js.Array[js.Object]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
+    inline def setAttachments(value: js.Array[js.Object]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
+    inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
-    @scala.inline
-    def setAttachmentsVarargs(value: js.Object*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+    inline def setAttachmentsVarargs(value: js.Object*): Self = StObject.set(x, "attachments", js.Array(value :_*))
     
-    @scala.inline
-    def setBcc(value: String | js.Array[String]): Self = StObject.set(x, "bcc", value.asInstanceOf[js.Any])
+    inline def setBcc(value: String | js.Array[String]): Self = StObject.set(x, "bcc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBccUndefined: Self = StObject.set(x, "bcc", js.undefined)
+    inline def setBccUndefined: Self = StObject.set(x, "bcc", js.undefined)
     
-    @scala.inline
-    def setBccVarargs(value: String*): Self = StObject.set(x, "bcc", js.Array(value :_*))
+    inline def setBccVarargs(value: String*): Self = StObject.set(x, "bcc", js.Array(value :_*))
     
-    @scala.inline
-    def setCc(value: String | js.Array[String]): Self = StObject.set(x, "cc", value.asInstanceOf[js.Any])
+    inline def setCc(value: String | js.Array[String]): Self = StObject.set(x, "cc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCcUndefined: Self = StObject.set(x, "cc", js.undefined)
+    inline def setCcUndefined: Self = StObject.set(x, "cc", js.undefined)
     
-    @scala.inline
-    def setCcVarargs(value: String*): Self = StObject.set(x, "cc", js.Array(value :_*))
+    inline def setCcVarargs(value: String*): Self = StObject.set(x, "cc", js.Array(value :_*))
     
-    @scala.inline
-    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+    inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
     
-    @scala.inline
-    def setMailComposer(value: MailComposer): Self = StObject.set(x, "mailComposer", value.asInstanceOf[js.Any])
+    inline def setMailComposer(value: MailComposer): Self = StObject.set(x, "mailComposer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMailComposerUndefined: Self = StObject.set(x, "mailComposer", js.undefined)
+    inline def setMailComposerUndefined: Self = StObject.set(x, "mailComposer", js.undefined)
     
-    @scala.inline
-    def setReplyTo(value: String | js.Array[String]): Self = StObject.set(x, "replyTo", value.asInstanceOf[js.Any])
+    inline def setReplyTo(value: String | js.Array[String]): Self = StObject.set(x, "replyTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplyToUndefined: Self = StObject.set(x, "replyTo", js.undefined)
+    inline def setReplyToUndefined: Self = StObject.set(x, "replyTo", js.undefined)
     
-    @scala.inline
-    def setReplyToVarargs(value: String*): Self = StObject.set(x, "replyTo", js.Array(value :_*))
+    inline def setReplyToVarargs(value: String*): Self = StObject.set(x, "replyTo", js.Array(value :_*))
     
-    @scala.inline
-    def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+    inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setTo(value: String | js.Array[String]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: String | js.Array[String]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     
-    @scala.inline
-    def setToVarargs(value: String*): Self = StObject.set(x, "to", js.Array(value :_*))
+    inline def setToVarargs(value: String*): Self = StObject.set(x, "to", js.Array(value :_*))
   }
 }

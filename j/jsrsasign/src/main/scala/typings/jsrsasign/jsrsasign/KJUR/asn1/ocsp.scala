@@ -95,26 +95,20 @@ object ocsp {
   }
   object CertificateRequest {
     
-    @scala.inline
-    def apply(issuerCert: String, subjectCert: String): CertificateRequest = {
+    inline def apply(issuerCert: String, subjectCert: String): CertificateRequest = {
       val __obj = js.Dynamic.literal(issuerCert = issuerCert.asInstanceOf[js.Any], subjectCert = subjectCert.asInstanceOf[js.Any])
       __obj.asInstanceOf[CertificateRequest]
     }
     
-    @scala.inline
-    implicit class CertificateRequestMutableBuilder[Self <: CertificateRequest] (val x: Self) extends AnyVal {
+    extension [Self <: CertificateRequest](x: Self) {
       
-      @scala.inline
-      def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
+      inline def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlgUndefined: Self = StObject.set(x, "alg", js.undefined)
+      inline def setAlgUndefined: Self = StObject.set(x, "alg", js.undefined)
       
-      @scala.inline
-      def setIssuerCert(value: String): Self = StObject.set(x, "issuerCert", value.asInstanceOf[js.Any])
+      inline def setIssuerCert(value: String): Self = StObject.set(x, "issuerCert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubjectCert(value: String): Self = StObject.set(x, "subjectCert", value.asInstanceOf[js.Any])
+      inline def setSubjectCert(value: String): Self = StObject.set(x, "subjectCert", value.asInstanceOf[js.Any])
     }
   }
   
@@ -124,20 +118,16 @@ object ocsp {
   }
   object CertificateRequestList {
     
-    @scala.inline
-    def apply(reqList: js.Array[CertificateRequest]): CertificateRequestList = {
+    inline def apply(reqList: js.Array[CertificateRequest]): CertificateRequestList = {
       val __obj = js.Dynamic.literal(reqList = reqList.asInstanceOf[js.Any])
       __obj.asInstanceOf[CertificateRequestList]
     }
     
-    @scala.inline
-    implicit class CertificateRequestListMutableBuilder[Self <: CertificateRequestList] (val x: Self) extends AnyVal {
+    extension [Self <: CertificateRequestList](x: Self) {
       
-      @scala.inline
-      def setReqList(value: js.Array[CertificateRequest]): Self = StObject.set(x, "reqList", value.asInstanceOf[js.Any])
+      inline def setReqList(value: js.Array[CertificateRequest]): Self = StObject.set(x, "reqList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReqListVarargs(value: CertificateRequest*): Self = StObject.set(x, "reqList", js.Array(value :_*))
+      inline def setReqListVarargs(value: CertificateRequest*): Self = StObject.set(x, "reqList", js.Array(value :_*))
     }
   }
   
@@ -167,8 +157,7 @@ object ocsp {
        with ASN1Object
   object OCSPRequest {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getEncodedHex: () => String,
       getFreshValueHex: () => String,
       getLengthHexFromValue: () => String,
@@ -205,26 +194,20 @@ object ocsp {
     }
     object ResponseInfo {
       
-      @scala.inline
-      def apply(certStatus: String, nextUpdate: String, responseStatus: Double, thisUpdate: String): ResponseInfo = {
+      inline def apply(certStatus: String, nextUpdate: String, responseStatus: Double, thisUpdate: String): ResponseInfo = {
         val __obj = js.Dynamic.literal(certStatus = certStatus.asInstanceOf[js.Any], nextUpdate = nextUpdate.asInstanceOf[js.Any], responseStatus = responseStatus.asInstanceOf[js.Any], thisUpdate = thisUpdate.asInstanceOf[js.Any])
         __obj.asInstanceOf[ResponseInfo]
       }
       
-      @scala.inline
-      implicit class ResponseInfoMutableBuilder[Self <: ResponseInfo] (val x: Self) extends AnyVal {
+      extension [Self <: ResponseInfo](x: Self) {
         
-        @scala.inline
-        def setCertStatus(value: String): Self = StObject.set(x, "certStatus", value.asInstanceOf[js.Any])
+        inline def setCertStatus(value: String): Self = StObject.set(x, "certStatus", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNextUpdate(value: String): Self = StObject.set(x, "nextUpdate", value.asInstanceOf[js.Any])
+        inline def setNextUpdate(value: String): Self = StObject.set(x, "nextUpdate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResponseStatus(value: Double): Self = StObject.set(x, "responseStatus", value.asInstanceOf[js.Any])
+        inline def setResponseStatus(value: Double): Self = StObject.set(x, "responseStatus", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setThisUpdate(value: String): Self = StObject.set(x, "thisUpdate", value.asInstanceOf[js.Any])
+        inline def setThisUpdate(value: String): Self = StObject.set(x, "thisUpdate", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -256,8 +239,7 @@ object ocsp {
        with ASN1Object
   object Request {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getEncodedHex: () => String,
       getFreshValueHex: () => String,
       getLengthHexFromValue: () => String,
@@ -313,8 +295,7 @@ object ocsp {
   }
   object TBSRequest {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getEncodedHex: () => String,
       getFreshValueHex: () => String,
       getLengthHexFromValue: () => String,
@@ -330,11 +311,9 @@ object ocsp {
       __obj.asInstanceOf[TBSRequest]
     }
     
-    @scala.inline
-    implicit class TBSRequestMutableBuilder[Self <: TBSRequest] (val x: Self) extends AnyVal {
+    extension [Self <: TBSRequest](x: Self) {
       
-      @scala.inline
-      def setSetRequestListByParam(value: js.Array[CertificateRequest] => Unit): Self = StObject.set(x, "setRequestListByParam", js.Any.fromFunction1(value))
+      inline def setSetRequestListByParam(value: js.Array[CertificateRequest] => Unit): Self = StObject.set(x, "setRequestListByParam", js.Any.fromFunction1(value))
     }
   }
 }

@@ -19,9 +19,7 @@ object randomMod {
   @js.native
   val randomBool: IO_[Boolean] = js.native
   
-  @scala.inline
-  def randomInt(low: Double, high: Double): IO_[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomInt")(low.asInstanceOf[js.Any], high.asInstanceOf[js.Any])).asInstanceOf[IO_[Double]]
+  inline def randomInt(low: Double, high: Double): IO_[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomInt")(low.asInstanceOf[js.Any], high.asInstanceOf[js.Any])).asInstanceOf[IO_[Double]]
   
-  @scala.inline
-  def randomRange(min: Double, max: Double): IO_[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomRange")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[IO_[Double]]
+  inline def randomRange(min: Double, max: Double): IO_[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomRange")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[IO_[Double]]
 }

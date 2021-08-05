@@ -14,25 +14,19 @@ trait DataSourceGroupCompareItem extends StObject {
 }
 object DataSourceGroupCompareItem {
   
-  @scala.inline
-  def apply(field: String, items: js.Array[js.Any], value: js.Any): DataSourceGroupCompareItem = {
+  inline def apply(field: String, items: js.Array[js.Any], value: js.Any): DataSourceGroupCompareItem = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceGroupCompareItem]
   }
   
-  @scala.inline
-  implicit class DataSourceGroupCompareItemMutableBuilder[Self <: DataSourceGroupCompareItem] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceGroupCompareItem](x: Self) {
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

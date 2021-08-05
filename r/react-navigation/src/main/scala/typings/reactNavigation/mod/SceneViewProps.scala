@@ -15,22 +15,17 @@ trait SceneViewProps extends StObject {
 }
 object SceneViewProps {
   
-  @scala.inline
-  def apply(component: ComponentType[js.Object], navigation: NavigationProp[js.Any], screenProps: js.Any): SceneViewProps = {
+  inline def apply(component: ComponentType[js.Object], navigation: NavigationProp[js.Any], screenProps: js.Any): SceneViewProps = {
     val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], navigation = navigation.asInstanceOf[js.Any], screenProps = screenProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[SceneViewProps]
   }
   
-  @scala.inline
-  implicit class SceneViewPropsMutableBuilder[Self <: SceneViewProps] (val x: Self) extends AnyVal {
+  extension [Self <: SceneViewProps](x: Self) {
     
-    @scala.inline
-    def setComponent(value: ComponentType[js.Object]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: ComponentType[js.Object]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigation(value: NavigationProp[js.Any]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
+    inline def setNavigation(value: NavigationProp[js.Any]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenProps(value: js.Any): Self = StObject.set(x, "screenProps", value.asInstanceOf[js.Any])
+    inline def setScreenProps(value: js.Any): Self = StObject.set(x, "screenProps", value.asInstanceOf[js.Any])
   }
 }

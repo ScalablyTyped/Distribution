@@ -19,37 +19,27 @@ trait AuditConfig extends StObject {
 }
 object AuditConfig {
   
-  @scala.inline
-  def apply(): AuditConfig = {
+  inline def apply(): AuditConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuditConfig]
   }
   
-  @scala.inline
-  implicit class AuditConfigMutableBuilder[Self <: AuditConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AuditConfig](x: Self) {
     
-    @scala.inline
-    def setAuditLogConfigs(value: js.Array[AuditLogConfig]): Self = StObject.set(x, "auditLogConfigs", value.asInstanceOf[js.Any])
+    inline def setAuditLogConfigs(value: js.Array[AuditLogConfig]): Self = StObject.set(x, "auditLogConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuditLogConfigsUndefined: Self = StObject.set(x, "auditLogConfigs", js.undefined)
+    inline def setAuditLogConfigsUndefined: Self = StObject.set(x, "auditLogConfigs", js.undefined)
     
-    @scala.inline
-    def setAuditLogConfigsVarargs(value: AuditLogConfig*): Self = StObject.set(x, "auditLogConfigs", js.Array(value :_*))
+    inline def setAuditLogConfigsVarargs(value: AuditLogConfig*): Self = StObject.set(x, "auditLogConfigs", js.Array(value :_*))
     
-    @scala.inline
-    def setExemptedMembers(value: js.Array[String]): Self = StObject.set(x, "exemptedMembers", value.asInstanceOf[js.Any])
+    inline def setExemptedMembers(value: js.Array[String]): Self = StObject.set(x, "exemptedMembers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExemptedMembersUndefined: Self = StObject.set(x, "exemptedMembers", js.undefined)
+    inline def setExemptedMembersUndefined: Self = StObject.set(x, "exemptedMembers", js.undefined)
     
-    @scala.inline
-    def setExemptedMembersVarargs(value: String*): Self = StObject.set(x, "exemptedMembers", js.Array(value :_*))
+    inline def setExemptedMembersVarargs(value: String*): Self = StObject.set(x, "exemptedMembers", js.Array(value :_*))
     
-    @scala.inline
-    def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+    inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
   }
 }

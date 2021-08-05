@@ -18,25 +18,19 @@ trait DataSourceCredentials extends StObject {
 }
 object DataSourceCredentials {
   
-  @scala.inline
-  def apply(): DataSourceCredentials = {
+  inline def apply(): DataSourceCredentials = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSourceCredentials]
   }
   
-  @scala.inline
-  implicit class DataSourceCredentialsMutableBuilder[Self <: DataSourceCredentials] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceCredentials](x: Self) {
     
-    @scala.inline
-    def setCopySourceArn(value: CopySourceArn): Self = StObject.set(x, "CopySourceArn", value.asInstanceOf[js.Any])
+    inline def setCopySourceArn(value: CopySourceArn): Self = StObject.set(x, "CopySourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopySourceArnUndefined: Self = StObject.set(x, "CopySourceArn", js.undefined)
+    inline def setCopySourceArnUndefined: Self = StObject.set(x, "CopySourceArn", js.undefined)
     
-    @scala.inline
-    def setCredentialPair(value: CredentialPair): Self = StObject.set(x, "CredentialPair", value.asInstanceOf[js.Any])
+    inline def setCredentialPair(value: CredentialPair): Self = StObject.set(x, "CredentialPair", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentialPairUndefined: Self = StObject.set(x, "CredentialPair", js.undefined)
+    inline def setCredentialPairUndefined: Self = StObject.set(x, "CredentialPair", js.undefined)
   }
 }

@@ -38,74 +38,52 @@ object tilegridTileGridMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(resolutions: js.Array[Double]): Options = {
+    inline def apply(resolutions: js.Array[Double]): Options = {
       val __obj = js.Dynamic.literal(resolutions = resolutions.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setExtent(value: Extent): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
+      inline def setExtent(value: Extent): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
+      inline def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
       
-      @scala.inline
-      def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
+      inline def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
+      inline def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
       
-      @scala.inline
-      def setOrigin(value: Coordinate): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: Coordinate): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+      inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
       
-      @scala.inline
-      def setOriginVarargs(value: Double*): Self = StObject.set(x, "origin", js.Array(value :_*))
+      inline def setOriginVarargs(value: Double*): Self = StObject.set(x, "origin", js.Array(value :_*))
       
-      @scala.inline
-      def setOrigins(value: js.Array[Coordinate]): Self = StObject.set(x, "origins", value.asInstanceOf[js.Any])
+      inline def setOrigins(value: js.Array[Coordinate]): Self = StObject.set(x, "origins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginsUndefined: Self = StObject.set(x, "origins", js.undefined)
+      inline def setOriginsUndefined: Self = StObject.set(x, "origins", js.undefined)
       
-      @scala.inline
-      def setOriginsVarargs(value: Coordinate*): Self = StObject.set(x, "origins", js.Array(value :_*))
+      inline def setOriginsVarargs(value: Coordinate*): Self = StObject.set(x, "origins", js.Array(value :_*))
       
-      @scala.inline
-      def setResolutions(value: js.Array[Double]): Self = StObject.set(x, "resolutions", value.asInstanceOf[js.Any])
+      inline def setResolutions(value: js.Array[Double]): Self = StObject.set(x, "resolutions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolutionsVarargs(value: Double*): Self = StObject.set(x, "resolutions", js.Array(value :_*))
+      inline def setResolutionsVarargs(value: Double*): Self = StObject.set(x, "resolutions", js.Array(value :_*))
       
-      @scala.inline
-      def setSizes(value: js.Array[Size]): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
+      inline def setSizes(value: js.Array[Size]): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
+      inline def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
       
-      @scala.inline
-      def setSizesVarargs(value: Size*): Self = StObject.set(x, "sizes", js.Array(value :_*))
+      inline def setSizesVarargs(value: Size*): Self = StObject.set(x, "sizes", js.Array(value :_*))
       
-      @scala.inline
-      def setTileSize(value: Double | Size): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
+      inline def setTileSize(value: Double | Size): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
+      inline def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
       
-      @scala.inline
-      def setTileSizes(value: js.Array[Size]): Self = StObject.set(x, "tileSizes", value.asInstanceOf[js.Any])
+      inline def setTileSizes(value: js.Array[Size]): Self = StObject.set(x, "tileSizes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTileSizesUndefined: Self = StObject.set(x, "tileSizes", js.undefined)
+      inline def setTileSizesUndefined: Self = StObject.set(x, "tileSizes", js.undefined)
       
-      @scala.inline
-      def setTileSizesVarargs(value: Size*): Self = StObject.set(x, "tileSizes", js.Array(value :_*))
+      inline def setTileSizesVarargs(value: Size*): Self = StObject.set(x, "tileSizes", js.Array(value :_*))
     }
   }
   
@@ -222,8 +200,8 @@ object tilegridTileGridMod {
     def getZForResolution(resolution: Double): Double = js.native
     def getZForResolution(resolution: Double, opt_direction: Double): Double = js.native
     
-    var maxZoom: Double = js.native
+    /* protected */ var maxZoom: Double = js.native
     
-    var minZoom: Double = js.native
+    /* protected */ var minZoom: Double = js.native
   }
 }

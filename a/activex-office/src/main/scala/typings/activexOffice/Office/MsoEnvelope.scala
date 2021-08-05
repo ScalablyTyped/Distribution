@@ -16,15 +16,14 @@ trait MsoEnvelope extends StObject {
   
   val Item: MailItem
   
-  @JSName("Office.MsoEnvelope_typekey")
+  /* private */ @JSName("Office.MsoEnvelope_typekey")
   var OfficeDotMsoEnvelope_typekey: MsoEnvelope
   
   val Parent: js.Any
 }
 object MsoEnvelope {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CommandBars: CommandBars,
     Introduction: String,
     Item: MailItem,
@@ -36,22 +35,16 @@ object MsoEnvelope {
     __obj.asInstanceOf[MsoEnvelope]
   }
   
-  @scala.inline
-  implicit class MsoEnvelopeMutableBuilder[Self <: MsoEnvelope] (val x: Self) extends AnyVal {
+  extension [Self <: MsoEnvelope](x: Self) {
     
-    @scala.inline
-    def setCommandBars(value: CommandBars): Self = StObject.set(x, "CommandBars", value.asInstanceOf[js.Any])
+    inline def setCommandBars(value: CommandBars): Self = StObject.set(x, "CommandBars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntroduction(value: String): Self = StObject.set(x, "Introduction", value.asInstanceOf[js.Any])
+    inline def setIntroduction(value: String): Self = StObject.set(x, "Introduction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: MailItem): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+    inline def setItem(value: MailItem): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotMsoEnvelope_typekey(value: MsoEnvelope): Self = StObject.set(x, "Office.MsoEnvelope_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotMsoEnvelope_typekey(value: MsoEnvelope): Self = StObject.set(x, "Office.MsoEnvelope_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
   }
 }

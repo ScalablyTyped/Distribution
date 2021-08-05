@@ -13,19 +13,15 @@ trait UpstreamRepositoryInfo extends StObject {
 }
 object UpstreamRepositoryInfo {
   
-  @scala.inline
-  def apply(): UpstreamRepositoryInfo = {
+  inline def apply(): UpstreamRepositoryInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpstreamRepositoryInfo]
   }
   
-  @scala.inline
-  implicit class UpstreamRepositoryInfoMutableBuilder[Self <: UpstreamRepositoryInfo] (val x: Self) extends AnyVal {
+  extension [Self <: UpstreamRepositoryInfo](x: Self) {
     
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+    inline def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryNameUndefined: Self = StObject.set(x, "repositoryName", js.undefined)
+    inline def setRepositoryNameUndefined: Self = StObject.set(x, "repositoryName", js.undefined)
   }
 }

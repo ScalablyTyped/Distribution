@@ -16,37 +16,27 @@ trait DivOverlayOptions extends StObject {
 }
 object DivOverlayOptions {
   
-  @scala.inline
-  def apply(): DivOverlayOptions = {
+  inline def apply(): DivOverlayOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DivOverlayOptions]
   }
   
-  @scala.inline
-  implicit class DivOverlayOptionsMutableBuilder[Self <: DivOverlayOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DivOverlayOptions](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setOffset(value: PointExpression): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: PointExpression): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setPane(value: String): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
+    inline def setPane(value: String): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
+    inline def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
     
-    @scala.inline
-    def setZoomAnimation(value: Boolean): Self = StObject.set(x, "zoomAnimation", value.asInstanceOf[js.Any])
+    inline def setZoomAnimation(value: Boolean): Self = StObject.set(x, "zoomAnimation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomAnimationUndefined: Self = StObject.set(x, "zoomAnimation", js.undefined)
+    inline def setZoomAnimationUndefined: Self = StObject.set(x, "zoomAnimation", js.undefined)
   }
 }

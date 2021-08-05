@@ -19,8 +19,7 @@ trait WorksheetDimensionProperties extends StObject {
 }
 object WorksheetDimensionProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     developerMetadata: js.Array[DeveloperMetadata],
     hiddenByFilter: Boolean,
     hiddenByUser: Boolean,
@@ -30,22 +29,16 @@ object WorksheetDimensionProperties {
     __obj.asInstanceOf[WorksheetDimensionProperties]
   }
   
-  @scala.inline
-  implicit class WorksheetDimensionPropertiesMutableBuilder[Self <: WorksheetDimensionProperties] (val x: Self) extends AnyVal {
+  extension [Self <: WorksheetDimensionProperties](x: Self) {
     
-    @scala.inline
-    def setDeveloperMetadata(value: js.Array[DeveloperMetadata]): Self = StObject.set(x, "developerMetadata", value.asInstanceOf[js.Any])
+    inline def setDeveloperMetadata(value: js.Array[DeveloperMetadata]): Self = StObject.set(x, "developerMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeveloperMetadataVarargs(value: DeveloperMetadata*): Self = StObject.set(x, "developerMetadata", js.Array(value :_*))
+    inline def setDeveloperMetadataVarargs(value: DeveloperMetadata*): Self = StObject.set(x, "developerMetadata", js.Array(value :_*))
     
-    @scala.inline
-    def setHiddenByFilter(value: Boolean): Self = StObject.set(x, "hiddenByFilter", value.asInstanceOf[js.Any])
+    inline def setHiddenByFilter(value: Boolean): Self = StObject.set(x, "hiddenByFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenByUser(value: Boolean): Self = StObject.set(x, "hiddenByUser", value.asInstanceOf[js.Any])
+    inline def setHiddenByUser(value: Boolean): Self = StObject.set(x, "hiddenByUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPixelSize(value: Double): Self = StObject.set(x, "pixelSize", value.asInstanceOf[js.Any])
+    inline def setPixelSize(value: Double): Self = StObject.set(x, "pixelSize", value.asInstanceOf[js.Any])
   }
 }

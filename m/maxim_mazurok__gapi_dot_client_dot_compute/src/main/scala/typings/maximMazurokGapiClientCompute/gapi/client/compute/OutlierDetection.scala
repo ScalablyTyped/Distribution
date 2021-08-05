@@ -66,79 +66,55 @@ trait OutlierDetection extends StObject {
 }
 object OutlierDetection {
   
-  @scala.inline
-  def apply(): OutlierDetection = {
+  inline def apply(): OutlierDetection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OutlierDetection]
   }
   
-  @scala.inline
-  implicit class OutlierDetectionMutableBuilder[Self <: OutlierDetection] (val x: Self) extends AnyVal {
+  extension [Self <: OutlierDetection](x: Self) {
     
-    @scala.inline
-    def setBaseEjectionTime(value: Duration): Self = StObject.set(x, "baseEjectionTime", value.asInstanceOf[js.Any])
+    inline def setBaseEjectionTime(value: Duration): Self = StObject.set(x, "baseEjectionTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseEjectionTimeUndefined: Self = StObject.set(x, "baseEjectionTime", js.undefined)
+    inline def setBaseEjectionTimeUndefined: Self = StObject.set(x, "baseEjectionTime", js.undefined)
     
-    @scala.inline
-    def setConsecutiveErrors(value: Double): Self = StObject.set(x, "consecutiveErrors", value.asInstanceOf[js.Any])
+    inline def setConsecutiveErrors(value: Double): Self = StObject.set(x, "consecutiveErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsecutiveErrorsUndefined: Self = StObject.set(x, "consecutiveErrors", js.undefined)
+    inline def setConsecutiveErrorsUndefined: Self = StObject.set(x, "consecutiveErrors", js.undefined)
     
-    @scala.inline
-    def setConsecutiveGatewayFailure(value: Double): Self = StObject.set(x, "consecutiveGatewayFailure", value.asInstanceOf[js.Any])
+    inline def setConsecutiveGatewayFailure(value: Double): Self = StObject.set(x, "consecutiveGatewayFailure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsecutiveGatewayFailureUndefined: Self = StObject.set(x, "consecutiveGatewayFailure", js.undefined)
+    inline def setConsecutiveGatewayFailureUndefined: Self = StObject.set(x, "consecutiveGatewayFailure", js.undefined)
     
-    @scala.inline
-    def setEnforcingConsecutiveErrors(value: Double): Self = StObject.set(x, "enforcingConsecutiveErrors", value.asInstanceOf[js.Any])
+    inline def setEnforcingConsecutiveErrors(value: Double): Self = StObject.set(x, "enforcingConsecutiveErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnforcingConsecutiveErrorsUndefined: Self = StObject.set(x, "enforcingConsecutiveErrors", js.undefined)
+    inline def setEnforcingConsecutiveErrorsUndefined: Self = StObject.set(x, "enforcingConsecutiveErrors", js.undefined)
     
-    @scala.inline
-    def setEnforcingConsecutiveGatewayFailure(value: Double): Self = StObject.set(x, "enforcingConsecutiveGatewayFailure", value.asInstanceOf[js.Any])
+    inline def setEnforcingConsecutiveGatewayFailure(value: Double): Self = StObject.set(x, "enforcingConsecutiveGatewayFailure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnforcingConsecutiveGatewayFailureUndefined: Self = StObject.set(x, "enforcingConsecutiveGatewayFailure", js.undefined)
+    inline def setEnforcingConsecutiveGatewayFailureUndefined: Self = StObject.set(x, "enforcingConsecutiveGatewayFailure", js.undefined)
     
-    @scala.inline
-    def setEnforcingSuccessRate(value: Double): Self = StObject.set(x, "enforcingSuccessRate", value.asInstanceOf[js.Any])
+    inline def setEnforcingSuccessRate(value: Double): Self = StObject.set(x, "enforcingSuccessRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnforcingSuccessRateUndefined: Self = StObject.set(x, "enforcingSuccessRate", js.undefined)
+    inline def setEnforcingSuccessRateUndefined: Self = StObject.set(x, "enforcingSuccessRate", js.undefined)
     
-    @scala.inline
-    def setInterval(value: Duration): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Duration): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
-    @scala.inline
-    def setMaxEjectionPercent(value: Double): Self = StObject.set(x, "maxEjectionPercent", value.asInstanceOf[js.Any])
+    inline def setMaxEjectionPercent(value: Double): Self = StObject.set(x, "maxEjectionPercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxEjectionPercentUndefined: Self = StObject.set(x, "maxEjectionPercent", js.undefined)
+    inline def setMaxEjectionPercentUndefined: Self = StObject.set(x, "maxEjectionPercent", js.undefined)
     
-    @scala.inline
-    def setSuccessRateMinimumHosts(value: Double): Self = StObject.set(x, "successRateMinimumHosts", value.asInstanceOf[js.Any])
+    inline def setSuccessRateMinimumHosts(value: Double): Self = StObject.set(x, "successRateMinimumHosts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessRateMinimumHostsUndefined: Self = StObject.set(x, "successRateMinimumHosts", js.undefined)
+    inline def setSuccessRateMinimumHostsUndefined: Self = StObject.set(x, "successRateMinimumHosts", js.undefined)
     
-    @scala.inline
-    def setSuccessRateRequestVolume(value: Double): Self = StObject.set(x, "successRateRequestVolume", value.asInstanceOf[js.Any])
+    inline def setSuccessRateRequestVolume(value: Double): Self = StObject.set(x, "successRateRequestVolume", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessRateRequestVolumeUndefined: Self = StObject.set(x, "successRateRequestVolume", js.undefined)
+    inline def setSuccessRateRequestVolumeUndefined: Self = StObject.set(x, "successRateRequestVolume", js.undefined)
     
-    @scala.inline
-    def setSuccessRateStdevFactor(value: Double): Self = StObject.set(x, "successRateStdevFactor", value.asInstanceOf[js.Any])
+    inline def setSuccessRateStdevFactor(value: Double): Self = StObject.set(x, "successRateStdevFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessRateStdevFactorUndefined: Self = StObject.set(x, "successRateStdevFactor", js.undefined)
+    inline def setSuccessRateStdevFactorUndefined: Self = StObject.set(x, "successRateStdevFactor", js.undefined)
   }
 }

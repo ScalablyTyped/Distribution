@@ -69,91 +69,62 @@ object DataType {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def ARRAY: `2003` = 2003.asInstanceOf[`2003`]
+    inline def ARRAY: `2003` = 2003.asInstanceOf[`2003`]
     
-    @scala.inline
-    def BIGINT: `-5` = -5.asInstanceOf[`-5`]
+    inline def BIGINT: `-5` = -5.asInstanceOf[`-5`]
     
-    @scala.inline
-    def BINARY: `-2` = -2.asInstanceOf[`-2`]
+    inline def BINARY: `-2` = -2.asInstanceOf[`-2`]
     
-    @scala.inline
-    def BIT: `-7` = -7.asInstanceOf[`-7`]
+    inline def BIT: `-7` = -7.asInstanceOf[`-7`]
     
-    @scala.inline
-    def BLOB: `2004` = 2004.asInstanceOf[`2004`]
+    inline def BLOB: `2004` = 2004.asInstanceOf[`2004`]
     
-    @scala.inline
-    def BOOLEAN: `16` = 16.asInstanceOf[`16`]
+    inline def BOOLEAN: `16` = 16.asInstanceOf[`16`]
     
-    @scala.inline
-    def CHAR: `1` = 1.asInstanceOf[`1`]
+    inline def CHAR: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def CLOB: `2005` = 2005.asInstanceOf[`2005`]
+    inline def CLOB: `2005` = 2005.asInstanceOf[`2005`]
     
-    @scala.inline
-    def DATE: `91` = 91.asInstanceOf[`91`]
+    inline def DATE: `91` = 91.asInstanceOf[`91`]
     
-    @scala.inline
-    def DECIMAL: `3` = 3.asInstanceOf[`3`]
+    inline def DECIMAL: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def DISTINCT: `2001` = 2001.asInstanceOf[`2001`]
+    inline def DISTINCT: `2001` = 2001.asInstanceOf[`2001`]
     
-    @scala.inline
-    def DOUBLE: `8` = 8.asInstanceOf[`8`]
+    inline def DOUBLE: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def FLOAT: `6` = 6.asInstanceOf[`6`]
+    inline def FLOAT: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def INTEGER: `4` = 4.asInstanceOf[`4`]
+    inline def INTEGER: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def LONGVARBINARY: `-4` = -4.asInstanceOf[`-4`]
+    inline def LONGVARBINARY: `-4` = -4.asInstanceOf[`-4`]
     
-    @scala.inline
-    def LONGVARCHAR: `-1` = -1.asInstanceOf[`-1`]
+    inline def LONGVARCHAR: `-1` = -1.asInstanceOf[`-1`]
     
-    @scala.inline
-    def NUMERIC: `2` = 2.asInstanceOf[`2`]
+    inline def NUMERIC: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def OBJECT: `2000` = 2000.asInstanceOf[`2000`]
+    inline def OBJECT: `2000` = 2000.asInstanceOf[`2000`]
     
-    @scala.inline
-    def OTHER: `1111` = 1111.asInstanceOf[`1111`]
+    inline def OTHER: `1111` = 1111.asInstanceOf[`1111`]
     
-    @scala.inline
-    def REAL: `7` = 7.asInstanceOf[`7`]
+    inline def REAL: `7` = 7.asInstanceOf[`7`]
     
-    @scala.inline
-    def REF: `2006` = 2006.asInstanceOf[`2006`]
+    inline def REF: `2006` = 2006.asInstanceOf[`2006`]
     
-    @scala.inline
-    def SMALLINT: `5` = 5.asInstanceOf[`5`]
+    inline def SMALLINT: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def SQLNULL: `0` = 0.asInstanceOf[`0`]
+    inline def SQLNULL: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def STRUCT: `2002` = 2002.asInstanceOf[`2002`]
+    inline def STRUCT: `2002` = 2002.asInstanceOf[`2002`]
     
-    @scala.inline
-    def TIME: `92` = 92.asInstanceOf[`92`]
+    inline def TIME: `92` = 92.asInstanceOf[`92`]
     
-    @scala.inline
-    def TIMESTAMP: `93` = 93.asInstanceOf[`93`]
+    inline def TIMESTAMP: `93` = 93.asInstanceOf[`93`]
     
-    @scala.inline
-    def TINYINT: `-6` = -6.asInstanceOf[`-6`]
+    inline def TINYINT: `-6` = -6.asInstanceOf[`-6`]
     
-    @scala.inline
-    def VARBINARY: `-3` = -3.asInstanceOf[`-3`]
+    inline def VARBINARY: `-3` = -3.asInstanceOf[`-3`]
     
-    @scala.inline
-    def VARCHAR: `12` = 12.asInstanceOf[`12`]
+    inline def VARCHAR: `12` = 12.asInstanceOf[`12`]
   }
 }

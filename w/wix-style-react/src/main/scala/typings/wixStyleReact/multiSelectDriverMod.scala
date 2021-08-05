@@ -23,8 +23,7 @@ object multiSelectDriverMod {
   }
   object MultiSelectDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       driver: Blur & ClickOnInputWrapper,
       dropdownLayoutDriver: DropdownLayoutDriver,
       exists: () => Boolean,
@@ -34,20 +33,15 @@ object multiSelectDriverMod {
       __obj.asInstanceOf[MultiSelectDriver]
     }
     
-    @scala.inline
-    implicit class MultiSelectDriverMutableBuilder[Self <: MultiSelectDriver] (val x: Self) extends AnyVal {
+    extension [Self <: MultiSelectDriver](x: Self) {
       
-      @scala.inline
-      def setDriver(value: Blur & ClickOnInputWrapper): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
+      inline def setDriver(value: Blur & ClickOnInputWrapper): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropdownLayoutDriver(value: DropdownLayoutDriver): Self = StObject.set(x, "dropdownLayoutDriver", value.asInstanceOf[js.Any])
+      inline def setDropdownLayoutDriver(value: DropdownLayoutDriver): Self = StObject.set(x, "dropdownLayoutDriver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExists(value: () => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
+      inline def setExists(value: () => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInputDriver(value: InputDriver): Self = StObject.set(x, "inputDriver", value.asInstanceOf[js.Any])
+      inline def setInputDriver(value: InputDriver): Self = StObject.set(x, "inputDriver", value.asInstanceOf[js.Any])
     }
   }
 }

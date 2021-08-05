@@ -33,69 +33,47 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TimeOffReasonIconType extends StObject
 object TimeOffReasonIconType {
   
-  @scala.inline
-  def cake: typings.microsoftGraph.microsoftGraphStrings.cake = "cake".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.cake]
+  inline def cake: typings.microsoftGraph.microsoftGraphStrings.cake = "cake".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.cake]
   
-  @scala.inline
-  def calendar: typings.microsoftGraph.microsoftGraphStrings.calendar = "calendar".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.calendar]
+  inline def calendar: typings.microsoftGraph.microsoftGraphStrings.calendar = "calendar".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.calendar]
   
-  @scala.inline
-  def car: typings.microsoftGraph.microsoftGraphStrings.car = "car".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.car]
+  inline def car: typings.microsoftGraph.microsoftGraphStrings.car = "car".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.car]
   
-  @scala.inline
-  def clock: typings.microsoftGraph.microsoftGraphStrings.clock = "clock".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.clock]
+  inline def clock: typings.microsoftGraph.microsoftGraphStrings.clock = "clock".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.clock]
   
-  @scala.inline
-  def cup: typings.microsoftGraph.microsoftGraphStrings.cup = "cup".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.cup]
+  inline def cup: typings.microsoftGraph.microsoftGraphStrings.cup = "cup".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.cup]
   
-  @scala.inline
-  def doctor: typings.microsoftGraph.microsoftGraphStrings.doctor = "doctor".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.doctor]
+  inline def doctor: typings.microsoftGraph.microsoftGraphStrings.doctor = "doctor".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.doctor]
   
-  @scala.inline
-  def dog: typings.microsoftGraph.microsoftGraphStrings.dog = "dog".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.dog]
+  inline def dog: typings.microsoftGraph.microsoftGraphStrings.dog = "dog".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.dog]
   
-  @scala.inline
-  def firstAid: typings.microsoftGraph.microsoftGraphStrings.firstAid = "firstAid".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.firstAid]
+  inline def firstAid: typings.microsoftGraph.microsoftGraphStrings.firstAid = "firstAid".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.firstAid]
   
-  @scala.inline
-  def globe: typings.microsoftGraph.microsoftGraphStrings.globe = "globe".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.globe]
+  inline def globe: typings.microsoftGraph.microsoftGraphStrings.globe = "globe".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.globe]
   
-  @scala.inline
-  def juryDuty: typings.microsoftGraph.microsoftGraphStrings.juryDuty = "juryDuty".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.juryDuty]
+  inline def juryDuty: typings.microsoftGraph.microsoftGraphStrings.juryDuty = "juryDuty".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.juryDuty]
   
-  @scala.inline
-  def none: none_ = "none".asInstanceOf[none_]
+  inline def none: none_ = "none".asInstanceOf[none_]
   
-  @scala.inline
-  def notWorking: typings.microsoftGraph.microsoftGraphStrings.notWorking = "notWorking".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notWorking]
+  inline def notWorking: typings.microsoftGraph.microsoftGraphStrings.notWorking = "notWorking".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notWorking]
   
-  @scala.inline
-  def phone: typings.microsoftGraph.microsoftGraphStrings.phone = "phone".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.phone]
+  inline def phone: typings.microsoftGraph.microsoftGraphStrings.phone = "phone".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.phone]
   
-  @scala.inline
-  def piggyBank: typings.microsoftGraph.microsoftGraphStrings.piggyBank = "piggyBank".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.piggyBank]
+  inline def piggyBank: typings.microsoftGraph.microsoftGraphStrings.piggyBank = "piggyBank".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.piggyBank]
   
-  @scala.inline
-  def pin: typings.microsoftGraph.microsoftGraphStrings.pin = "pin".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.pin]
+  inline def pin: typings.microsoftGraph.microsoftGraphStrings.pin = "pin".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.pin]
   
-  @scala.inline
-  def plane: typings.microsoftGraph.microsoftGraphStrings.plane = "plane".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.plane]
+  inline def plane: typings.microsoftGraph.microsoftGraphStrings.plane = "plane".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.plane]
   
-  @scala.inline
-  def running: running_ = "running".asInstanceOf[running_]
+  inline def running: running_ = "running".asInstanceOf[running_]
   
-  @scala.inline
-  def sunny: typings.microsoftGraph.microsoftGraphStrings.sunny = "sunny".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.sunny]
+  inline def sunny: typings.microsoftGraph.microsoftGraphStrings.sunny = "sunny".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.sunny]
   
-  @scala.inline
-  def trafficCone: typings.microsoftGraph.microsoftGraphStrings.trafficCone = "trafficCone".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.trafficCone]
+  inline def trafficCone: typings.microsoftGraph.microsoftGraphStrings.trafficCone = "trafficCone".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.trafficCone]
   
-  @scala.inline
-  def umbrella: typings.microsoftGraph.microsoftGraphStrings.umbrella = "umbrella".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.umbrella]
+  inline def umbrella: typings.microsoftGraph.microsoftGraphStrings.umbrella = "umbrella".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.umbrella]
   
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
   
-  @scala.inline
-  def weather: typings.microsoftGraph.microsoftGraphStrings.weather = "weather".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.weather]
+  inline def weather: typings.microsoftGraph.microsoftGraphStrings.weather = "weather".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.weather]
 }

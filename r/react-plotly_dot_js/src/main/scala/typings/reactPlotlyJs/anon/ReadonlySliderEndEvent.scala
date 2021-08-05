@@ -15,19 +15,15 @@ trait ReadonlySliderEndEvent extends StObject {
 }
 object ReadonlySliderEndEvent {
   
-  @scala.inline
-  def apply(slider: Slider, step: SliderStep): ReadonlySliderEndEvent = {
+  inline def apply(slider: Slider, step: SliderStep): ReadonlySliderEndEvent = {
     val __obj = js.Dynamic.literal(slider = slider.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadonlySliderEndEvent]
   }
   
-  @scala.inline
-  implicit class ReadonlySliderEndEventMutableBuilder[Self <: ReadonlySliderEndEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlySliderEndEvent](x: Self) {
     
-    @scala.inline
-    def setSlider(value: Slider): Self = StObject.set(x, "slider", value.asInstanceOf[js.Any])
+    inline def setSlider(value: Slider): Self = StObject.set(x, "slider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStep(value: SliderStep): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: SliderStep): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
   }
 }

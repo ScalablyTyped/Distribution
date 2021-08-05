@@ -28,31 +28,23 @@ trait DecimalColumnStatisticsData extends StObject {
 }
 object DecimalColumnStatisticsData {
   
-  @scala.inline
-  def apply(NumberOfDistinctValues: NonNegativeLong, NumberOfNulls: NonNegativeLong): DecimalColumnStatisticsData = {
+  inline def apply(NumberOfDistinctValues: NonNegativeLong, NumberOfNulls: NonNegativeLong): DecimalColumnStatisticsData = {
     val __obj = js.Dynamic.literal(NumberOfDistinctValues = NumberOfDistinctValues.asInstanceOf[js.Any], NumberOfNulls = NumberOfNulls.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecimalColumnStatisticsData]
   }
   
-  @scala.inline
-  implicit class DecimalColumnStatisticsDataMutableBuilder[Self <: DecimalColumnStatisticsData] (val x: Self) extends AnyVal {
+  extension [Self <: DecimalColumnStatisticsData](x: Self) {
     
-    @scala.inline
-    def setMaximumValue(value: DecimalNumber): Self = StObject.set(x, "MaximumValue", value.asInstanceOf[js.Any])
+    inline def setMaximumValue(value: DecimalNumber): Self = StObject.set(x, "MaximumValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumValueUndefined: Self = StObject.set(x, "MaximumValue", js.undefined)
+    inline def setMaximumValueUndefined: Self = StObject.set(x, "MaximumValue", js.undefined)
     
-    @scala.inline
-    def setMinimumValue(value: DecimalNumber): Self = StObject.set(x, "MinimumValue", value.asInstanceOf[js.Any])
+    inline def setMinimumValue(value: DecimalNumber): Self = StObject.set(x, "MinimumValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumValueUndefined: Self = StObject.set(x, "MinimumValue", js.undefined)
+    inline def setMinimumValueUndefined: Self = StObject.set(x, "MinimumValue", js.undefined)
     
-    @scala.inline
-    def setNumberOfDistinctValues(value: NonNegativeLong): Self = StObject.set(x, "NumberOfDistinctValues", value.asInstanceOf[js.Any])
+    inline def setNumberOfDistinctValues(value: NonNegativeLong): Self = StObject.set(x, "NumberOfDistinctValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfNulls(value: NonNegativeLong): Self = StObject.set(x, "NumberOfNulls", value.asInstanceOf[js.Any])
+    inline def setNumberOfNulls(value: NonNegativeLong): Self = StObject.set(x, "NumberOfNulls", value.asInstanceOf[js.Any])
   }
 }

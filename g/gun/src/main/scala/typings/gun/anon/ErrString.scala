@@ -10,16 +10,13 @@ trait ErrString extends StObject {
 }
 object ErrString {
   
-  @scala.inline
-  def apply(err: String): ErrString = {
+  inline def apply(err: String): ErrString = {
     val __obj = js.Dynamic.literal(err = err.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrString]
   }
   
-  @scala.inline
-  implicit class ErrStringMutableBuilder[Self <: ErrString] (val x: Self) extends AnyVal {
+  extension [Self <: ErrString](x: Self) {
     
-    @scala.inline
-    def setErr(value: String): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
+    inline def setErr(value: String): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
   }
 }

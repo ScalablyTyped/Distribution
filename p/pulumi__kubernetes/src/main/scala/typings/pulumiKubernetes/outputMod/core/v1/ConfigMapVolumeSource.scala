@@ -33,28 +33,21 @@ trait ConfigMapVolumeSource extends StObject {
 }
 object ConfigMapVolumeSource {
   
-  @scala.inline
-  def apply(defaultMode: Double, items: js.Array[KeyToPath], name: String, optional: Boolean): ConfigMapVolumeSource = {
+  inline def apply(defaultMode: Double, items: js.Array[KeyToPath], name: String, optional: Boolean): ConfigMapVolumeSource = {
     val __obj = js.Dynamic.literal(defaultMode = defaultMode.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigMapVolumeSource]
   }
   
-  @scala.inline
-  implicit class ConfigMapVolumeSourceMutableBuilder[Self <: ConfigMapVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigMapVolumeSource](x: Self) {
     
-    @scala.inline
-    def setDefaultMode(value: Double): Self = StObject.set(x, "defaultMode", value.asInstanceOf[js.Any])
+    inline def setDefaultMode(value: Double): Self = StObject.set(x, "defaultMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: js.Array[KeyToPath]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[KeyToPath]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: KeyToPath*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: KeyToPath*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
   }
 }

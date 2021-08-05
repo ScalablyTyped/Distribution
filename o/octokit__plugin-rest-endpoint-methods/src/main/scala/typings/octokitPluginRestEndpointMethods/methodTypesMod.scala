@@ -88,8 +88,7 @@ object methodTypesMod {
   }
   object RestEndpointMethods {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       actions: AddSelectedRepoToOrgSecret,
       activity: CheckRepoIsStarredByAuthenticatedUser,
       apps: AddRepoToInstallation,
@@ -121,86 +120,59 @@ object methodTypesMod {
       __obj.asInstanceOf[RestEndpointMethods]
     }
     
-    @scala.inline
-    implicit class RestEndpointMethodsMutableBuilder[Self <: RestEndpointMethods] (val x: Self) extends AnyVal {
+    extension [Self <: RestEndpointMethods](x: Self) {
       
-      @scala.inline
-      def setActions(value: AddSelectedRepoToOrgSecret): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: AddSelectedRepoToOrgSecret): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActivity(value: CheckRepoIsStarredByAuthenticatedUser): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
+      inline def setActivity(value: CheckRepoIsStarredByAuthenticatedUser): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApps(value: AddRepoToInstallation): Self = StObject.set(x, "apps", value.asInstanceOf[js.Any])
+      inline def setApps(value: AddRepoToInstallation): Self = StObject.set(x, "apps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBilling(value: GetGithubActionsBillingOrg): Self = StObject.set(x, "billing", value.asInstanceOf[js.Any])
+      inline def setBilling(value: GetGithubActionsBillingOrg): Self = StObject.set(x, "billing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChecks(value: Create): Self = StObject.set(x, "checks", value.asInstanceOf[js.Any])
+      inline def setChecks(value: Create): Self = StObject.set(x, "checks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeScanning(value: GetAlert): Self = StObject.set(x, "codeScanning", value.asInstanceOf[js.Any])
+      inline def setCodeScanning(value: GetAlert): Self = StObject.set(x, "codeScanning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodesOfConduct(value: GetAllCodesOfConduct): Self = StObject.set(x, "codesOfConduct", value.asInstanceOf[js.Any])
+      inline def setCodesOfConduct(value: GetAllCodesOfConduct): Self = StObject.set(x, "codesOfConduct", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmojis(value: Get): Self = StObject.set(x, "emojis", value.asInstanceOf[js.Any])
+      inline def setEmojis(value: Get): Self = StObject.set(x, "emojis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGists(value: CheckIsStarred): Self = StObject.set(x, "gists", value.asInstanceOf[js.Any])
+      inline def setGists(value: CheckIsStarred): Self = StObject.set(x, "gists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGit(value: CreateBlob): Self = StObject.set(x, "git", value.asInstanceOf[js.Any])
+      inline def setGit(value: CreateBlob): Self = StObject.set(x, "git", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGitignore(value: GetAllTemplates): Self = StObject.set(x, "gitignore", value.asInstanceOf[js.Any])
+      inline def setGitignore(value: GetAllTemplates): Self = StObject.set(x, "gitignore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInteractions(value: GetRestrictionsForOrg): Self = StObject.set(x, "interactions", value.asInstanceOf[js.Any])
+      inline def setInteractions(value: GetRestrictionsForOrg): Self = StObject.set(x, "interactions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIssues(value: AddAssignees): Self = StObject.set(x, "issues", value.asInstanceOf[js.Any])
+      inline def setIssues(value: AddAssignees): Self = StObject.set(x, "issues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLicenses(value: GetAllCommonlyUsed): Self = StObject.set(x, "licenses", value.asInstanceOf[js.Any])
+      inline def setLicenses(value: GetAllCommonlyUsed): Self = StObject.set(x, "licenses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkdown(value: Render): Self = StObject.set(x, "markdown", value.asInstanceOf[js.Any])
+      inline def setMarkdown(value: Render): Self = StObject.set(x, "markdown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeta(value: Get209): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: Get209): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMigrations(value: CancelImport): Self = StObject.set(x, "migrations", value.asInstanceOf[js.Any])
+      inline def setMigrations(value: CancelImport): Self = StObject.set(x, "migrations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrgs(value: BlockUser): Self = StObject.set(x, "orgs", value.asInstanceOf[js.Any])
+      inline def setOrgs(value: BlockUser): Self = StObject.set(x, "orgs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjects(value: AddCollaborator): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
+      inline def setProjects(value: AddCollaborator): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPulls(value: CheckIfMerged): Self = StObject.set(x, "pulls", value.asInstanceOf[js.Any])
+      inline def setPulls(value: CheckIfMerged): Self = StObject.set(x, "pulls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRateLimit(value: Get319): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
+      inline def setRateLimit(value: Get319): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReactions(value: CreateForCommitComment): Self = StObject.set(x, "reactions", value.asInstanceOf[js.Any])
+      inline def setReactions(value: CreateForCommitComment): Self = StObject.set(x, "reactions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepos(value: AcceptInvitation): Self = StObject.set(x, "repos", value.asInstanceOf[js.Any])
+      inline def setRepos(value: AcceptInvitation): Self = StObject.set(x, "repos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearch(value: Code): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: Code): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeams(value: AddOrUpdateMembershipForUserInOrg): Self = StObject.set(x, "teams", value.asInstanceOf[js.Any])
+      inline def setTeams(value: AddOrUpdateMembershipForUserInOrg): Self = StObject.set(x, "teams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsers(value: AddEmailForAuthenticated): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+      inline def setUsers(value: AddEmailForAuthenticated): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     }
   }
 }

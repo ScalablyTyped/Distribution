@@ -10,6 +10,5 @@ object scriptsGetPropertyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(element: String, property: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(element: String, property: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[String]
 }

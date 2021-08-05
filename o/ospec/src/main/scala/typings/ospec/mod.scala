@@ -110,38 +110,28 @@ object mod extends Shortcut {
   }
   object Result {
     
-    @scala.inline
-    def apply(context: String, message: String): Result = {
+    inline def apply(context: String, message: String): Result = {
       val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], error = null, pass = null, testError = null)
       __obj.asInstanceOf[Result]
     }
     
-    @scala.inline
-    implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+    extension [Self <: Result](x: Self) {
       
-      @scala.inline
-      def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorNull: Self = StObject.set(x, "error", null)
+      inline def setErrorNull: Self = StObject.set(x, "error", null)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPass(value: Boolean): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
+      inline def setPass(value: Boolean): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassNull: Self = StObject.set(x, "pass", null)
+      inline def setPassNull: Self = StObject.set(x, "pass", null)
       
-      @scala.inline
-      def setTestError(value: Error): Self = StObject.set(x, "testError", value.asInstanceOf[js.Any])
+      inline def setTestError(value: Error): Self = StObject.set(x, "testError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTestErrorNull: Self = StObject.set(x, "testError", null)
+      inline def setTestErrorNull: Self = StObject.set(x, "testError", null)
     }
   }
   

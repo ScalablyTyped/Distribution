@@ -57,61 +57,43 @@ trait RadarOptions extends StObject {
 }
 object RadarOptions {
   
-  @scala.inline
-  def apply(): RadarOptions = {
+  inline def apply(): RadarOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RadarOptions]
   }
   
-  @scala.inline
-  implicit class RadarOptionsMutableBuilder[Self <: RadarOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RadarOptions](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setEntrances(value: Boolean): Self = StObject.set(x, "entrances", value.asInstanceOf[js.Any])
+    inline def setEntrances(value: Boolean): Self = StObject.set(x, "entrances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntrancesUndefined: Self = StObject.set(x, "entrances", js.undefined)
+    inline def setEntrancesUndefined: Self = StObject.set(x, "entrances", js.undefined)
     
-    @scala.inline
-    def setFrames(value: Double): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
+    inline def setFrames(value: Double): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
+    inline def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
     
-    @scala.inline
-    def setPolylines(value: Boolean): Self = StObject.set(x, "polylines", value.asInstanceOf[js.Any])
+    inline def setPolylines(value: Boolean): Self = StObject.set(x, "polylines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolylinesUndefined: Self = StObject.set(x, "polylines", js.undefined)
+    inline def setPolylinesUndefined: Self = StObject.set(x, "polylines", js.undefined)
     
-    @scala.inline
-    def setProducts(value: Boolean | js.Object): Self = StObject.set(x, "products", value.asInstanceOf[js.Any])
+    inline def setProducts(value: Boolean | js.Object): Self = StObject.set(x, "products", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductsUndefined: Self = StObject.set(x, "products", js.undefined)
+    inline def setProductsUndefined: Self = StObject.set(x, "products", js.undefined)
     
-    @scala.inline
-    def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    @scala.inline
-    def setSubStops(value: Boolean): Self = StObject.set(x, "subStops", value.asInstanceOf[js.Any])
+    inline def setSubStops(value: Boolean): Self = StObject.set(x, "subStops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubStopsUndefined: Self = StObject.set(x, "subStops", js.undefined)
+    inline def setSubStopsUndefined: Self = StObject.set(x, "subStops", js.undefined)
     
-    @scala.inline
-    def setWhen(value: Date): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
+    inline def setWhen(value: Date): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
+    inline def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
   }
 }

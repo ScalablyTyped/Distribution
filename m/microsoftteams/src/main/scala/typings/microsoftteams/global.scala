@@ -40,22 +40,19 @@ object global {
         * Initiates an authentication request, which opens a new window with the specified settings.
         * @param authenticateParameters A set of values that configure the authentication pop-up.
         */
-      @scala.inline
-      def authenticate(authenticateParameters: AuthenticateParameters): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(authenticateParameters.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def authenticate(authenticateParameters: AuthenticateParameters): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(authenticateParameters.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Requests an Azure AD token to be issued on behalf of the app. The token is acquired from the cache
         * if it is not expired. Otherwise a request is sent to Azure AD to obtain a new token.
         * @param authTokenRequest A set of values that configure the token request.
         */
-      @scala.inline
-      def getAuthToken(authTokenRequest: AuthTokenRequest): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAuthToken")(authTokenRequest.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def getAuthToken(authTokenRequest: AuthTokenRequest): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAuthToken")(authTokenRequest.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Requests the decoded Azure AD user identity on behalf of the app.
         */
-      @scala.inline
-      def getUser(userRequest: UserRequest): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getUser")(userRequest.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def getUser(userRequest: UserRequest): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getUser")(userRequest.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Notifies the frame that initiated this authentication request that the request failed.
@@ -63,10 +60,8 @@ object global {
         * This call causes the authentication window to be closed.
         * @param reason Specifies a reason for the authentication failure. If specified, the frame that initiated the authentication pop-up receives this value in its callback.
         */
-      @scala.inline
-      def notifyFailure(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notifyFailure")().asInstanceOf[Unit]
-      @scala.inline
-      def notifyFailure(reason: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notifyFailure")(reason.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def notifyFailure(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notifyFailure")().asInstanceOf[Unit]
+      inline def notifyFailure(reason: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notifyFailure")(reason.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Notifies the frame that initiated this authentication request that the request was successful.
@@ -74,28 +69,23 @@ object global {
         * This call causes the authentication window to be closed.
         * @param result Specifies a result for the authentication. If specified, the frame that initiated the authentication pop-up receives this value in its callback.
         */
-      @scala.inline
-      def notifySuccess(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notifySuccess")().asInstanceOf[Unit]
-      @scala.inline
-      def notifySuccess(result: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notifySuccess")(result.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def notifySuccess(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notifySuccess")().asInstanceOf[Unit]
+      inline def notifySuccess(result: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notifySuccess")(result.asInstanceOf[js.Any]).asInstanceOf[Unit]
     }
     
     /**
       * Retrieves the current context the frame is running in.
       * @param callback The callback to invoke when the {@link Context} object is retrieved.
       */
-    @scala.inline
-    def getContext(callback: js.Function1[/* context */ Context, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getContext(callback: js.Function1[/* context */ Context, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Allows an app to retrieve the most recently used tabs for this user.
       * @param callback The callback to invoke when the {@link TabInformation} object is retrieved.
       * @param tabInstanceParameters OPTIONAL Ignored, kept for future use
       */
-    @scala.inline
-    def getMruTabInstances(callback: js.Function1[/* tabInfo */ TabInformation, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getMruTabInstances")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def getMruTabInstances(
+    inline def getMruTabInstances(callback: js.Function1[/* tabInfo */ TabInformation, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getMruTabInstances")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getMruTabInstances(
       callback: js.Function1[/* tabInfo */ TabInformation, Unit],
       tabInstanceParameters: TabInstanceParameters
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getMruTabInstances")(callback.asInstanceOf[js.Any], tabInstanceParameters.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -106,10 +96,8 @@ object global {
       * @param callback The callback to invoke when the {@link TabInstanceParameters} object is retrieved.
       * @param tabInstanceParameters OPTIONAL Flags that specify whether to scope call to favorite teams or channels.
       */
-    @scala.inline
-    def getTabInstances(callback: js.Function1[/* tabInfo */ TabInformation, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getTabInstances")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def getTabInstances(
+    inline def getTabInstances(callback: js.Function1[/* tabInfo */ TabInformation, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getTabInstances")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getTabInstances(
       callback: js.Function1[/* tabInfo */ TabInformation, Unit],
       tabInstanceParameters: TabInstanceParameters
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getTabInstances")(callback.asInstanceOf[js.Any], tabInstanceParameters.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -118,8 +106,7 @@ object global {
       * Initializes the library. This must be called before any other SDK calls
       * but after the frame is loaded successfully.
       */
-    @scala.inline
-    def initialize(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")().asInstanceOf[Unit]
+    inline def initialize(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")().asInstanceOf[Unit]
     
     /**
       * Navigates the frame to a new cross-domain URL. The domain of this URL must match at least one of the
@@ -129,31 +116,27 @@ object global {
       * continue working.
       * @param url The URL to navigate the frame to.
       */
-    @scala.inline
-    def navigateCrossDomain(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("navigateCrossDomain")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def navigateCrossDomain(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("navigateCrossDomain")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Navigates the Microsoft Teams app to the specified tab instance.
       * @param tabInstance The tab instance to navigate to.
       */
-    @scala.inline
-    def navigateToTab(tabInstance: TabInstance): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("navigateToTab")(tabInstance.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def navigateToTab(tabInstance: TabInstance): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("navigateToTab")(tabInstance.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Registers a handler for changes from or to full-screen view for a tab.
       * Only one handler can be registered at a time. A subsequent registration replaces an existing registration.
       * @param handler The handler to invoke when the user toggles full-screen view for a tab.
       */
-    @scala.inline
-    def registerFullScreenHandler(handler: js.Function1[/* isFullScreen */ Boolean, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerFullScreenHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def registerFullScreenHandler(handler: js.Function1[/* isFullScreen */ Boolean, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerFullScreenHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Registers a handler for theme changes.
       * Only one handler can be registered at a time. A subsequent registration replaces an existing registration.
       * @param handler The handler to invoke when the user changes their theme.
       */
-    @scala.inline
-    def registerOnThemeChangeHandler(handler: js.Function1[/* theme */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerOnThemeChangeHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def registerOnThemeChangeHandler(handler: js.Function1[/* theme */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerOnThemeChangeHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Namespace to interact with the settings-specific part of the SDK.
@@ -169,8 +152,7 @@ object global {
         * Gets the settings for the current instance.
         * @param callback The callback to invoke when the {@link Settings} object is retrieved.
         */
-      @scala.inline
-      def getSettings(callback: js.Function1[/* settings */ Settings, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getSettings")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def getSettings(callback: js.Function1[/* settings */ Settings, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getSettings")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Registers a handler for user attempts to remove content. This handler should be used
@@ -179,8 +161,7 @@ object global {
         * Only one handler may be registered at a time. Subsequent registrations will override the first.
         * @param handler The handler to invoke when the user selects the remove button.
         */
-      @scala.inline
-      def registerOnRemoveHandler(handler: js.Function1[/* evt */ RemoveEvent, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerOnRemoveHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def registerOnRemoveHandler(handler: js.Function1[/* evt */ RemoveEvent, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerOnRemoveHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Registers a handler for when the user attempts to save the settings. This handler should be used
@@ -189,31 +170,27 @@ object global {
         * Only one handler can be registered at a time. A subsequent registration replaces an existing registration.
         * @param handler The handler to invoke when the user selects the save button.
         */
-      @scala.inline
-      def registerOnSaveHandler(handler: js.Function1[/* evt */ SaveEvent, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerOnSaveHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def registerOnSaveHandler(handler: js.Function1[/* evt */ SaveEvent, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerOnSaveHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Sets the settings for the current instance.
         * This is an asynchronous operation; calls to getSettings are not guaranteed to reflect the changed state.
         * @param settings The desired settings for this instance.
         */
-      @scala.inline
-      def setSettings(settings: Settings): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setSettings")(settings.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def setSettings(settings: Settings): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setSettings")(settings.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Sets the validity state for the settings.
         * The initial value is false, so the user cannot save the settings until this is called with true.
         * @param validityState Indicates whether the save or remove button is enabled for the user.
         */
-      @scala.inline
-      def setValidityState(validityState: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setValidityState")(validityState.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def setValidityState(validityState: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setValidityState")(validityState.asInstanceOf[js.Any]).asInstanceOf[Unit]
     }
     
     /**
       * Shares a deep link that a user can use to navigate back to a specific state in this page.
       * @param deepLinkParameters ID and label for the link and fallback URL.
       */
-    @scala.inline
-    def shareDeepLink(deepLinkParameters: DeepLinkParameters): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("shareDeepLink")(deepLinkParameters.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def shareDeepLink(deepLinkParameters: DeepLinkParameters): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("shareDeepLink")(deepLinkParameters.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

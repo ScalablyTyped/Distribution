@@ -10,16 +10,13 @@ trait SessionHoldEvent extends StObject {
 }
 object SessionHoldEvent {
   
-  @scala.inline
-  def apply(originator: String): SessionHoldEvent = {
+  inline def apply(originator: String): SessionHoldEvent = {
     val __obj = js.Dynamic.literal(originator = originator.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionHoldEvent]
   }
   
-  @scala.inline
-  implicit class SessionHoldEventMutableBuilder[Self <: SessionHoldEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SessionHoldEvent](x: Self) {
     
-    @scala.inline
-    def setOriginator(value: String): Self = StObject.set(x, "originator", value.asInstanceOf[js.Any])
+    inline def setOriginator(value: String): Self = StObject.set(x, "originator", value.asInstanceOf[js.Any])
   }
 }

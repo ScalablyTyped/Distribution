@@ -36,8 +36,7 @@ object UssdSession {
     * @return The USSD session for the mobile device associated with the supplied network account ID.
     */
   /* static member */
-  @scala.inline
-  def createFromNetworkAccountId(networkAccountId: String): typings.winrtUwp.Windows.Networking.NetworkOperators.UssdSession = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromNetworkAccountId")(networkAccountId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Networking.NetworkOperators.UssdSession]
+  inline def createFromNetworkAccountId(networkAccountId: String): typings.winrtUwp.Windows.Networking.NetworkOperators.UssdSession = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromNetworkAccountId")(networkAccountId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Networking.NetworkOperators.UssdSession]
   
   /**
     * Creates a USSD session for the mobile device associated with the supplied network interface ID.
@@ -45,6 +44,5 @@ object UssdSession {
     * @return The USSD session for the mobile device associated with the supplied network interface ID.
     */
   /* static member */
-  @scala.inline
-  def createFromNetworkInterfaceId(networkInterfaceId: String): typings.winrtUwp.Windows.Networking.NetworkOperators.UssdSession = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromNetworkInterfaceId")(networkInterfaceId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Networking.NetworkOperators.UssdSession]
+  inline def createFromNetworkInterfaceId(networkInterfaceId: String): typings.winrtUwp.Windows.Networking.NetworkOperators.UssdSession = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromNetworkInterfaceId")(networkInterfaceId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Networking.NetworkOperators.UssdSession]
 }

@@ -12,25 +12,19 @@ trait IValue extends StObject {
 }
 object IValue {
   
-  @scala.inline
-  def apply(): IValue = {
+  inline def apply(): IValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IValue]
   }
   
-  @scala.inline
-  implicit class IValueMutableBuilder[Self <: IValue] (val x: Self) extends AnyVal {
+  extension [Self <: IValue](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setLocalized(value: String): Self = StObject.set(x, "localized", value.asInstanceOf[js.Any])
+    inline def setLocalized(value: String): Self = StObject.set(x, "localized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalizedUndefined: Self = StObject.set(x, "localized", js.undefined)
+    inline def setLocalizedUndefined: Self = StObject.set(x, "localized", js.undefined)
   }
 }

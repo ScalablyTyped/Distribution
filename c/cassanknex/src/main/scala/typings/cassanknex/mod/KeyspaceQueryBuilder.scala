@@ -14,8 +14,7 @@ trait KeyspaceQueryBuilder
      with KeyspaceableQueryBuilder
 object KeyspaceQueryBuilder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bindings: () => js.Array[js.Any],
     cql: () => String,
     eachRow: (js.Function2[/* n */ Double, /* row */ Row, js.Any], js.Function1[/* err */ Error, js.Any]) => Unit,

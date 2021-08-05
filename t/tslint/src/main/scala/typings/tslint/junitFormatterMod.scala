@@ -12,7 +12,7 @@ object junitFormatterMod {
   @js.native
   class Formatter () extends AbstractFormatter {
     
-    var escapeXml: js.Any = js.native
+    /* private */ var escapeXml: js.Any = js.native
   }
   /* static members */
   object Formatter {
@@ -24,7 +24,6 @@ object junitFormatterMod {
     @JSImport("tslint/lib/formatters/junitFormatter", "Formatter.metadata")
     @js.native
     def metadata: IFormatterMetadata = js.native
-    @scala.inline
-    def metadata_=(x: IFormatterMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    inline def metadata_=(x: IFormatterMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
 }

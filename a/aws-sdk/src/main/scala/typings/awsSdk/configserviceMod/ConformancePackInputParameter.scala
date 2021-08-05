@@ -18,19 +18,15 @@ trait ConformancePackInputParameter extends StObject {
 }
 object ConformancePackInputParameter {
   
-  @scala.inline
-  def apply(ParameterName: ParameterName, ParameterValue: ParameterValue): ConformancePackInputParameter = {
+  inline def apply(ParameterName: ParameterName, ParameterValue: ParameterValue): ConformancePackInputParameter = {
     val __obj = js.Dynamic.literal(ParameterName = ParameterName.asInstanceOf[js.Any], ParameterValue = ParameterValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConformancePackInputParameter]
   }
   
-  @scala.inline
-  implicit class ConformancePackInputParameterMutableBuilder[Self <: ConformancePackInputParameter] (val x: Self) extends AnyVal {
+  extension [Self <: ConformancePackInputParameter](x: Self) {
     
-    @scala.inline
-    def setParameterName(value: ParameterName): Self = StObject.set(x, "ParameterName", value.asInstanceOf[js.Any])
+    inline def setParameterName(value: ParameterName): Self = StObject.set(x, "ParameterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterValue(value: ParameterValue): Self = StObject.set(x, "ParameterValue", value.asInstanceOf[js.Any])
+    inline def setParameterValue(value: ParameterValue): Self = StObject.set(x, "ParameterValue", value.asInstanceOf[js.Any])
   }
 }

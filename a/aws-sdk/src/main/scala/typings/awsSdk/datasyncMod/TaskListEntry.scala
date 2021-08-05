@@ -23,31 +23,23 @@ trait TaskListEntry extends StObject {
 }
 object TaskListEntry {
   
-  @scala.inline
-  def apply(): TaskListEntry = {
+  inline def apply(): TaskListEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TaskListEntry]
   }
   
-  @scala.inline
-  implicit class TaskListEntryMutableBuilder[Self <: TaskListEntry] (val x: Self) extends AnyVal {
+  extension [Self <: TaskListEntry](x: Self) {
     
-    @scala.inline
-    def setName(value: TagValue): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: TagValue): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setStatus(value: TaskStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: TaskStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setTaskArn(value: TaskArn): Self = StObject.set(x, "TaskArn", value.asInstanceOf[js.Any])
+    inline def setTaskArn(value: TaskArn): Self = StObject.set(x, "TaskArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskArnUndefined: Self = StObject.set(x, "TaskArn", js.undefined)
+    inline def setTaskArnUndefined: Self = StObject.set(x, "TaskArn", js.undefined)
   }
 }

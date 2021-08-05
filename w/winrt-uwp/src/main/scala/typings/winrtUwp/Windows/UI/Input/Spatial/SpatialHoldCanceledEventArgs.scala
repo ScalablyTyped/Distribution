@@ -10,16 +10,13 @@ trait SpatialHoldCanceledEventArgs extends StObject {
 }
 object SpatialHoldCanceledEventArgs {
   
-  @scala.inline
-  def apply(interactionSourceKind: js.Any): SpatialHoldCanceledEventArgs = {
+  inline def apply(interactionSourceKind: js.Any): SpatialHoldCanceledEventArgs = {
     val __obj = js.Dynamic.literal(interactionSourceKind = interactionSourceKind.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpatialHoldCanceledEventArgs]
   }
   
-  @scala.inline
-  implicit class SpatialHoldCanceledEventArgsMutableBuilder[Self <: SpatialHoldCanceledEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: SpatialHoldCanceledEventArgs](x: Self) {
     
-    @scala.inline
-    def setInteractionSourceKind(value: js.Any): Self = StObject.set(x, "interactionSourceKind", value.asInstanceOf[js.Any])
+    inline def setInteractionSourceKind(value: js.Any): Self = StObject.set(x, "interactionSourceKind", value.asInstanceOf[js.Any])
   }
 }

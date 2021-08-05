@@ -18,25 +18,19 @@ trait AccessControlList extends StObject {
 }
 object AccessControlList {
   
-  @scala.inline
-  def apply(): AccessControlList = {
+  inline def apply(): AccessControlList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccessControlList]
   }
   
-  @scala.inline
-  implicit class AccessControlListMutableBuilder[Self <: AccessControlList] (val x: Self) extends AnyVal {
+  extension [Self <: AccessControlList](x: Self) {
     
-    @scala.inline
-    def setAllowsPublicReadAccess(value: Boolean): Self = StObject.set(x, "AllowsPublicReadAccess", value.asInstanceOf[js.Any])
+    inline def setAllowsPublicReadAccess(value: Boolean): Self = StObject.set(x, "AllowsPublicReadAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowsPublicReadAccessUndefined: Self = StObject.set(x, "AllowsPublicReadAccess", js.undefined)
+    inline def setAllowsPublicReadAccessUndefined: Self = StObject.set(x, "AllowsPublicReadAccess", js.undefined)
     
-    @scala.inline
-    def setAllowsPublicWriteAccess(value: Boolean): Self = StObject.set(x, "AllowsPublicWriteAccess", value.asInstanceOf[js.Any])
+    inline def setAllowsPublicWriteAccess(value: Boolean): Self = StObject.set(x, "AllowsPublicWriteAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowsPublicWriteAccessUndefined: Self = StObject.set(x, "AllowsPublicWriteAccess", js.undefined)
+    inline def setAllowsPublicWriteAccessUndefined: Self = StObject.set(x, "AllowsPublicWriteAccess", js.undefined)
   }
 }

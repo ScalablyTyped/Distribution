@@ -13,16 +13,13 @@ trait Geo extends StObject {
 }
 object Geo {
   
-  @scala.inline
-  def apply(Point: Call): Geo = {
+  inline def apply(Point: Call): Geo = {
     val __obj = js.Dynamic.literal(Point = Point.asInstanceOf[js.Any])
     __obj.asInstanceOf[Geo]
   }
   
-  @scala.inline
-  implicit class GeoMutableBuilder[Self <: Geo] (val x: Self) extends AnyVal {
+  extension [Self <: Geo](x: Self) {
     
-    @scala.inline
-    def setPoint(value: Call): Self = StObject.set(x, "Point", value.asInstanceOf[js.Any])
+    inline def setPoint(value: Call): Self = StObject.set(x, "Point", value.asInstanceOf[js.Any])
   }
 }

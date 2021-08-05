@@ -58,73 +58,51 @@ trait ElasticsearchClusterConfig extends StObject {
 }
 object ElasticsearchClusterConfig {
   
-  @scala.inline
-  def apply(): ElasticsearchClusterConfig = {
+  inline def apply(): ElasticsearchClusterConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ElasticsearchClusterConfig]
   }
   
-  @scala.inline
-  implicit class ElasticsearchClusterConfigMutableBuilder[Self <: ElasticsearchClusterConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ElasticsearchClusterConfig](x: Self) {
     
-    @scala.inline
-    def setDedicatedMasterCount(value: IntegerClass): Self = StObject.set(x, "DedicatedMasterCount", value.asInstanceOf[js.Any])
+    inline def setDedicatedMasterCount(value: IntegerClass): Self = StObject.set(x, "DedicatedMasterCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDedicatedMasterCountUndefined: Self = StObject.set(x, "DedicatedMasterCount", js.undefined)
+    inline def setDedicatedMasterCountUndefined: Self = StObject.set(x, "DedicatedMasterCount", js.undefined)
     
-    @scala.inline
-    def setDedicatedMasterEnabled(value: Boolean): Self = StObject.set(x, "DedicatedMasterEnabled", value.asInstanceOf[js.Any])
+    inline def setDedicatedMasterEnabled(value: Boolean): Self = StObject.set(x, "DedicatedMasterEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDedicatedMasterEnabledUndefined: Self = StObject.set(x, "DedicatedMasterEnabled", js.undefined)
+    inline def setDedicatedMasterEnabledUndefined: Self = StObject.set(x, "DedicatedMasterEnabled", js.undefined)
     
-    @scala.inline
-    def setDedicatedMasterType(value: ESPartitionInstanceType): Self = StObject.set(x, "DedicatedMasterType", value.asInstanceOf[js.Any])
+    inline def setDedicatedMasterType(value: ESPartitionInstanceType): Self = StObject.set(x, "DedicatedMasterType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDedicatedMasterTypeUndefined: Self = StObject.set(x, "DedicatedMasterType", js.undefined)
+    inline def setDedicatedMasterTypeUndefined: Self = StObject.set(x, "DedicatedMasterType", js.undefined)
     
-    @scala.inline
-    def setInstanceCount(value: IntegerClass): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
+    inline def setInstanceCount(value: IntegerClass): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceCountUndefined: Self = StObject.set(x, "InstanceCount", js.undefined)
+    inline def setInstanceCountUndefined: Self = StObject.set(x, "InstanceCount", js.undefined)
     
-    @scala.inline
-    def setInstanceType(value: ESPartitionInstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: ESPartitionInstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
+    inline def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
     
-    @scala.inline
-    def setWarmCount(value: IntegerClass): Self = StObject.set(x, "WarmCount", value.asInstanceOf[js.Any])
+    inline def setWarmCount(value: IntegerClass): Self = StObject.set(x, "WarmCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarmCountUndefined: Self = StObject.set(x, "WarmCount", js.undefined)
+    inline def setWarmCountUndefined: Self = StObject.set(x, "WarmCount", js.undefined)
     
-    @scala.inline
-    def setWarmEnabled(value: Boolean): Self = StObject.set(x, "WarmEnabled", value.asInstanceOf[js.Any])
+    inline def setWarmEnabled(value: Boolean): Self = StObject.set(x, "WarmEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarmEnabledUndefined: Self = StObject.set(x, "WarmEnabled", js.undefined)
+    inline def setWarmEnabledUndefined: Self = StObject.set(x, "WarmEnabled", js.undefined)
     
-    @scala.inline
-    def setWarmType(value: ESWarmPartitionInstanceType): Self = StObject.set(x, "WarmType", value.asInstanceOf[js.Any])
+    inline def setWarmType(value: ESWarmPartitionInstanceType): Self = StObject.set(x, "WarmType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarmTypeUndefined: Self = StObject.set(x, "WarmType", js.undefined)
+    inline def setWarmTypeUndefined: Self = StObject.set(x, "WarmType", js.undefined)
     
-    @scala.inline
-    def setZoneAwarenessConfig(value: ZoneAwarenessConfig): Self = StObject.set(x, "ZoneAwarenessConfig", value.asInstanceOf[js.Any])
+    inline def setZoneAwarenessConfig(value: ZoneAwarenessConfig): Self = StObject.set(x, "ZoneAwarenessConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoneAwarenessConfigUndefined: Self = StObject.set(x, "ZoneAwarenessConfig", js.undefined)
+    inline def setZoneAwarenessConfigUndefined: Self = StObject.set(x, "ZoneAwarenessConfig", js.undefined)
     
-    @scala.inline
-    def setZoneAwarenessEnabled(value: Boolean): Self = StObject.set(x, "ZoneAwarenessEnabled", value.asInstanceOf[js.Any])
+    inline def setZoneAwarenessEnabled(value: Boolean): Self = StObject.set(x, "ZoneAwarenessEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoneAwarenessEnabledUndefined: Self = StObject.set(x, "ZoneAwarenessEnabled", js.undefined)
+    inline def setZoneAwarenessEnabledUndefined: Self = StObject.set(x, "ZoneAwarenessEnabled", js.undefined)
   }
 }

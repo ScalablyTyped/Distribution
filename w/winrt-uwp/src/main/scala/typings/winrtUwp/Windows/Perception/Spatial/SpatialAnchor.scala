@@ -23,8 +23,7 @@ trait SpatialAnchor extends StObject {
 }
 object SpatialAnchor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addEventListener: js.Any,
     coordinateSystem: js.Any,
     onrawcoordinatesystemadjusted: js.Any,
@@ -35,22 +34,16 @@ object SpatialAnchor {
     __obj.asInstanceOf[SpatialAnchor]
   }
   
-  @scala.inline
-  implicit class SpatialAnchorMutableBuilder[Self <: SpatialAnchor] (val x: Self) extends AnyVal {
+  extension [Self <: SpatialAnchor](x: Self) {
     
-    @scala.inline
-    def setAddEventListener(value: js.Any): Self = StObject.set(x, "addEventListener", value.asInstanceOf[js.Any])
+    inline def setAddEventListener(value: js.Any): Self = StObject.set(x, "addEventListener", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoordinateSystem(value: js.Any): Self = StObject.set(x, "coordinateSystem", value.asInstanceOf[js.Any])
+    inline def setCoordinateSystem(value: js.Any): Self = StObject.set(x, "coordinateSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnrawcoordinatesystemadjusted(value: js.Any): Self = StObject.set(x, "onrawcoordinatesystemadjusted", value.asInstanceOf[js.Any])
+    inline def setOnrawcoordinatesystemadjusted(value: js.Any): Self = StObject.set(x, "onrawcoordinatesystemadjusted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawCoordinateSystem(value: js.Any): Self = StObject.set(x, "rawCoordinateSystem", value.asInstanceOf[js.Any])
+    inline def setRawCoordinateSystem(value: js.Any): Self = StObject.set(x, "rawCoordinateSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveEventListener(value: js.Any): Self = StObject.set(x, "removeEventListener", value.asInstanceOf[js.Any])
+    inline def setRemoveEventListener(value: js.Any): Self = StObject.set(x, "removeEventListener", value.asInstanceOf[js.Any])
   }
 }

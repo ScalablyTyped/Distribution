@@ -25,8 +25,7 @@ trait Window
 }
 object Window {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     absolutePosition: X,
     addClass: String => Unit,
     center: () => Unit,
@@ -75,25 +74,18 @@ object Window {
     __obj.asInstanceOf[Window]
   }
   
-  @scala.inline
-  implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+  extension [Self <: Window](x: Self) {
     
-    @scala.inline
-    def setCloseButtonVisible(value: Boolean): Self = StObject.set(x, "closeButtonVisible", value.asInstanceOf[js.Any])
+    inline def setCloseButtonVisible(value: Boolean): Self = StObject.set(x, "closeButtonVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModal(value: Boolean): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
+    inline def setModal(value: Boolean): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMovable(value: Boolean): Self = StObject.set(x, "movable", value.asInstanceOf[js.Any])
+    inline def setMovable(value: Boolean): Self = StObject.set(x, "movable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveToBack(value: () => Unit): Self = StObject.set(x, "moveToBack", js.Any.fromFunction0(value))
+    inline def setMoveToBack(value: () => Unit): Self = StObject.set(x, "moveToBack", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMoveToFront(value: () => Unit): Self = StObject.set(x, "moveToFront", js.Any.fromFunction0(value))
+    inline def setMoveToFront(value: () => Unit): Self = StObject.set(x, "moveToFront", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

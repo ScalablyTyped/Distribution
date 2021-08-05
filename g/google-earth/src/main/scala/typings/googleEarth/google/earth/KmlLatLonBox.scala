@@ -73,8 +73,7 @@ trait KmlLatLonBox
 }
 object KmlLatLonBox {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
     equals_ : KmlObject => Boolean,
@@ -106,40 +105,28 @@ object KmlLatLonBox {
     __obj.asInstanceOf[KmlLatLonBox]
   }
   
-  @scala.inline
-  implicit class KmlLatLonBoxMutableBuilder[Self <: KmlLatLonBox] (val x: Self) extends AnyVal {
+  extension [Self <: KmlLatLonBox](x: Self) {
     
-    @scala.inline
-    def setGetEast(value: () => Double): Self = StObject.set(x, "getEast", js.Any.fromFunction0(value))
+    inline def setGetEast(value: () => Double): Self = StObject.set(x, "getEast", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNorth(value: () => Double): Self = StObject.set(x, "getNorth", js.Any.fromFunction0(value))
+    inline def setGetNorth(value: () => Double): Self = StObject.set(x, "getNorth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRotation(value: () => Double): Self = StObject.set(x, "getRotation", js.Any.fromFunction0(value))
+    inline def setGetRotation(value: () => Double): Self = StObject.set(x, "getRotation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSouth(value: () => Double): Self = StObject.set(x, "getSouth", js.Any.fromFunction0(value))
+    inline def setGetSouth(value: () => Double): Self = StObject.set(x, "getSouth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWest(value: () => Double): Self = StObject.set(x, "getWest", js.Any.fromFunction0(value))
+    inline def setGetWest(value: () => Double): Self = StObject.set(x, "getWest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetBox(value: (Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "setBox", js.Any.fromFunction5(value))
+    inline def setSetBox(value: (Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "setBox", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setSetEast(value: Double => Unit): Self = StObject.set(x, "setEast", js.Any.fromFunction1(value))
+    inline def setSetEast(value: Double => Unit): Self = StObject.set(x, "setEast", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetNorth(value: Double => Unit): Self = StObject.set(x, "setNorth", js.Any.fromFunction1(value))
+    inline def setSetNorth(value: Double => Unit): Self = StObject.set(x, "setNorth", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRotation(value: Double => Unit): Self = StObject.set(x, "setRotation", js.Any.fromFunction1(value))
+    inline def setSetRotation(value: Double => Unit): Self = StObject.set(x, "setRotation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSouth(value: Double => Unit): Self = StObject.set(x, "setSouth", js.Any.fromFunction1(value))
+    inline def setSetSouth(value: Double => Unit): Self = StObject.set(x, "setSouth", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetWest(value: Double => Unit): Self = StObject.set(x, "setWest", js.Any.fromFunction1(value))
+    inline def setSetWest(value: Double => Unit): Self = StObject.set(x, "setWest", js.Any.fromFunction1(value))
   }
 }

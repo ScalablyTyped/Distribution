@@ -9,8 +9,7 @@ trait IPersonaStyles
      with typings.officeUiFabricReact.personaTypesMod.IPersonaStyles
 object IPersonaStyles {
   
-  @scala.inline
-  def apply(): IPersonaStyles = {
+  inline def apply(): IPersonaStyles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPersonaStyles]
   }

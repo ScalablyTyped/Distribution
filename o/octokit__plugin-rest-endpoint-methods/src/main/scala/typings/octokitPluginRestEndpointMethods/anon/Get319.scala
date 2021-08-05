@@ -37,16 +37,13 @@ trait Get319 extends StObject {
 }
 object Get319 {
   
-  @scala.inline
-  def apply(get: `319`): Get319 = {
+  inline def apply(get: `319`): Get319 = {
     val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Get319]
   }
   
-  @scala.inline
-  implicit class Get319MutableBuilder[Self <: Get319] (val x: Self) extends AnyVal {
+  extension [Self <: Get319](x: Self) {
     
-    @scala.inline
-    def setGet(value: `319`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: `319`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
   }
 }

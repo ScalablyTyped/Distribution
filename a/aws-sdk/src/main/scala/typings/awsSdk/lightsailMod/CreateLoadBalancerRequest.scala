@@ -43,55 +43,39 @@ trait CreateLoadBalancerRequest extends StObject {
 }
 object CreateLoadBalancerRequest {
   
-  @scala.inline
-  def apply(instancePort: Port, loadBalancerName: ResourceName): CreateLoadBalancerRequest = {
+  inline def apply(instancePort: Port, loadBalancerName: ResourceName): CreateLoadBalancerRequest = {
     val __obj = js.Dynamic.literal(instancePort = instancePort.asInstanceOf[js.Any], loadBalancerName = loadBalancerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateLoadBalancerRequest]
   }
   
-  @scala.inline
-  implicit class CreateLoadBalancerRequestMutableBuilder[Self <: CreateLoadBalancerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateLoadBalancerRequest](x: Self) {
     
-    @scala.inline
-    def setCertificateAlternativeNames(value: DomainNameList): Self = StObject.set(x, "certificateAlternativeNames", value.asInstanceOf[js.Any])
+    inline def setCertificateAlternativeNames(value: DomainNameList): Self = StObject.set(x, "certificateAlternativeNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateAlternativeNamesUndefined: Self = StObject.set(x, "certificateAlternativeNames", js.undefined)
+    inline def setCertificateAlternativeNamesUndefined: Self = StObject.set(x, "certificateAlternativeNames", js.undefined)
     
-    @scala.inline
-    def setCertificateAlternativeNamesVarargs(value: DomainName*): Self = StObject.set(x, "certificateAlternativeNames", js.Array(value :_*))
+    inline def setCertificateAlternativeNamesVarargs(value: DomainName*): Self = StObject.set(x, "certificateAlternativeNames", js.Array(value :_*))
     
-    @scala.inline
-    def setCertificateDomainName(value: DomainName): Self = StObject.set(x, "certificateDomainName", value.asInstanceOf[js.Any])
+    inline def setCertificateDomainName(value: DomainName): Self = StObject.set(x, "certificateDomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateDomainNameUndefined: Self = StObject.set(x, "certificateDomainName", js.undefined)
+    inline def setCertificateDomainNameUndefined: Self = StObject.set(x, "certificateDomainName", js.undefined)
     
-    @scala.inline
-    def setCertificateName(value: ResourceName): Self = StObject.set(x, "certificateName", value.asInstanceOf[js.Any])
+    inline def setCertificateName(value: ResourceName): Self = StObject.set(x, "certificateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateNameUndefined: Self = StObject.set(x, "certificateName", js.undefined)
+    inline def setCertificateNameUndefined: Self = StObject.set(x, "certificateName", js.undefined)
     
-    @scala.inline
-    def setHealthCheckPath(value: String): Self = StObject.set(x, "healthCheckPath", value.asInstanceOf[js.Any])
+    inline def setHealthCheckPath(value: String): Self = StObject.set(x, "healthCheckPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthCheckPathUndefined: Self = StObject.set(x, "healthCheckPath", js.undefined)
+    inline def setHealthCheckPathUndefined: Self = StObject.set(x, "healthCheckPath", js.undefined)
     
-    @scala.inline
-    def setInstancePort(value: Port): Self = StObject.set(x, "instancePort", value.asInstanceOf[js.Any])
+    inline def setInstancePort(value: Port): Self = StObject.set(x, "instancePort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadBalancerName(value: ResourceName): Self = StObject.set(x, "loadBalancerName", value.asInstanceOf[js.Any])
+    inline def setLoadBalancerName(value: ResourceName): Self = StObject.set(x, "loadBalancerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

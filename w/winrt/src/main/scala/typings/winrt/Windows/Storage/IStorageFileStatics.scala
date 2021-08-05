@@ -31,8 +31,7 @@ trait IStorageFileStatics extends StObject {
 }
 object IStorageFileStatics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createStreamedFileAsync: (String, StreamedFileDataRequestedHandler, IRandomAccessStreamReference) => IAsyncOperation[StorageFile],
     createStreamedFileFromUriAsync: (String, Uri, IRandomAccessStreamReference) => IAsyncOperation[StorageFile],
     getFileFromApplicationUriAsync: Uri => IAsyncOperation[StorageFile],
@@ -44,29 +43,22 @@ object IStorageFileStatics {
     __obj.asInstanceOf[IStorageFileStatics]
   }
   
-  @scala.inline
-  implicit class IStorageFileStaticsMutableBuilder[Self <: IStorageFileStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IStorageFileStatics](x: Self) {
     
-    @scala.inline
-    def setCreateStreamedFileAsync(
+    inline def setCreateStreamedFileAsync(
       value: (String, StreamedFileDataRequestedHandler, IRandomAccessStreamReference) => IAsyncOperation[StorageFile]
     ): Self = StObject.set(x, "createStreamedFileAsync", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCreateStreamedFileFromUriAsync(value: (String, Uri, IRandomAccessStreamReference) => IAsyncOperation[StorageFile]): Self = StObject.set(x, "createStreamedFileFromUriAsync", js.Any.fromFunction3(value))
+    inline def setCreateStreamedFileFromUriAsync(value: (String, Uri, IRandomAccessStreamReference) => IAsyncOperation[StorageFile]): Self = StObject.set(x, "createStreamedFileFromUriAsync", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetFileFromApplicationUriAsync(value: Uri => IAsyncOperation[StorageFile]): Self = StObject.set(x, "getFileFromApplicationUriAsync", js.Any.fromFunction1(value))
+    inline def setGetFileFromApplicationUriAsync(value: Uri => IAsyncOperation[StorageFile]): Self = StObject.set(x, "getFileFromApplicationUriAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetFileFromPathAsync(value: String => IAsyncOperation[StorageFile]): Self = StObject.set(x, "getFileFromPathAsync", js.Any.fromFunction1(value))
+    inline def setGetFileFromPathAsync(value: String => IAsyncOperation[StorageFile]): Self = StObject.set(x, "getFileFromPathAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReplaceWithStreamedFileAsync(
+    inline def setReplaceWithStreamedFileAsync(
       value: (IStorageFile, StreamedFileDataRequestedHandler, IRandomAccessStreamReference) => IAsyncOperation[StorageFile]
     ): Self = StObject.set(x, "replaceWithStreamedFileAsync", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setReplaceWithStreamedFileFromUriAsync(value: (IStorageFile, Uri, IRandomAccessStreamReference) => IAsyncOperation[StorageFile]): Self = StObject.set(x, "replaceWithStreamedFileFromUriAsync", js.Any.fromFunction3(value))
+    inline def setReplaceWithStreamedFileFromUriAsync(value: (IStorageFile, Uri, IRandomAccessStreamReference) => IAsyncOperation[StorageFile]): Self = StObject.set(x, "replaceWithStreamedFileFromUriAsync", js.Any.fromFunction3(value))
   }
 }

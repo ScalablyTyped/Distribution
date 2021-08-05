@@ -24,10 +24,8 @@ object mod {
   	});
   	```
   	*/
-  @scala.inline
-  def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
-  @scala.inline
-  def apply(options: RunPathOptions): String = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
+  inline def apply(options: RunPathOptions): String = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("npm-run-path", JSImport.Namespace)
   @js.native
@@ -37,16 +35,13 @@ object mod {
   @JSImport("npm-run-path", "default")
   @js.native
   def default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof npmRunPath */ js.Any = js.native
-  @scala.inline
-  def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof npmRunPath */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof npmRunPath */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   /**
   	@returns The augmented [`process.env`](https://nodejs.org/api/process.html#process_process_env) object.
   	*/
-  @scala.inline
-  def env(): ProcessEnv = ^.asInstanceOf[js.Dynamic].applyDynamic("env")().asInstanceOf[ProcessEnv]
-  @scala.inline
-  def env(options: EnvOptions): ProcessEnv = ^.asInstanceOf[js.Dynamic].applyDynamic("env")(options.asInstanceOf[js.Any]).asInstanceOf[ProcessEnv]
+  inline def env(): ProcessEnv = ^.asInstanceOf[js.Dynamic].applyDynamic("env")().asInstanceOf[ProcessEnv]
+  inline def env(options: EnvOptions): ProcessEnv = ^.asInstanceOf[js.Dynamic].applyDynamic("env")(options.asInstanceOf[js.Any]).asInstanceOf[ProcessEnv]
   
   trait EnvOptions extends StObject {
     
@@ -70,32 +65,24 @@ object mod {
   }
   object EnvOptions {
     
-    @scala.inline
-    def apply(): EnvOptions = {
+    inline def apply(): EnvOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EnvOptions]
     }
     
-    @scala.inline
-    implicit class EnvOptionsMutableBuilder[Self <: EnvOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EnvOptions](x: Self) {
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setEnv(value: ProcessEnv): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: ProcessEnv): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+      inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
       
-      @scala.inline
-      def setExecPath(value: String): Self = StObject.set(x, "execPath", value.asInstanceOf[js.Any])
+      inline def setExecPath(value: String): Self = StObject.set(x, "execPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecPathUndefined: Self = StObject.set(x, "execPath", js.undefined)
+      inline def setExecPathUndefined: Self = StObject.set(x, "execPath", js.undefined)
     }
   }
   
@@ -124,32 +111,24 @@ object mod {
   }
   object RunPathOptions {
     
-    @scala.inline
-    def apply(): RunPathOptions = {
+    inline def apply(): RunPathOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RunPathOptions]
     }
     
-    @scala.inline
-    implicit class RunPathOptionsMutableBuilder[Self <: RunPathOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RunPathOptions](x: Self) {
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setExecPath(value: String): Self = StObject.set(x, "execPath", value.asInstanceOf[js.Any])
+      inline def setExecPath(value: String): Self = StObject.set(x, "execPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecPathUndefined: Self = StObject.set(x, "execPath", js.undefined)
+      inline def setExecPathUndefined: Self = StObject.set(x, "execPath", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     }
   }
 }

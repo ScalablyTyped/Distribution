@@ -10,19 +10,15 @@ trait `12` extends StObject {
 }
 object `12` {
   
-  @scala.inline
-  def apply(): `12` = {
+  inline def apply(): `12` = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`12`]
   }
   
-  @scala.inline
-  implicit class `12MutableBuilder`[Self <: `12`] (val x: Self) extends AnyVal {
+  extension [Self <: `12`](x: Self) {
     
-    @scala.inline
-    def setComponents(value: ProgressBar): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+    inline def setComponents(value: ProgressBar): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
+    inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
   }
 }

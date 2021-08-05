@@ -20,12 +20,8 @@ object EntityManager {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def importEntities(exportedData: js.Object): typings.breeze.breeze.EntityManager = ^.asInstanceOf[js.Dynamic].applyDynamic("importEntities")(exportedData.asInstanceOf[js.Any]).asInstanceOf[typings.breeze.breeze.EntityManager]
-  @scala.inline
-  def importEntities(exportedData: js.Object, config: typings.breeze.anon.MergeStrategy): typings.breeze.breeze.EntityManager = (^.asInstanceOf[js.Dynamic].applyDynamic("importEntities")(exportedData.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[typings.breeze.breeze.EntityManager]
-  @scala.inline
-  def importEntities(exportedString: String): typings.breeze.breeze.EntityManager = ^.asInstanceOf[js.Dynamic].applyDynamic("importEntities")(exportedString.asInstanceOf[js.Any]).asInstanceOf[typings.breeze.breeze.EntityManager]
-  @scala.inline
-  def importEntities(exportedString: String, config: typings.breeze.anon.MergeStrategy): typings.breeze.breeze.EntityManager = (^.asInstanceOf[js.Dynamic].applyDynamic("importEntities")(exportedString.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[typings.breeze.breeze.EntityManager]
+  inline def importEntities(exportedData: js.Object): typings.breeze.breeze.EntityManager = ^.asInstanceOf[js.Dynamic].applyDynamic("importEntities")(exportedData.asInstanceOf[js.Any]).asInstanceOf[typings.breeze.breeze.EntityManager]
+  inline def importEntities(exportedData: js.Object, config: typings.breeze.anon.MergeStrategy): typings.breeze.breeze.EntityManager = (^.asInstanceOf[js.Dynamic].applyDynamic("importEntities")(exportedData.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[typings.breeze.breeze.EntityManager]
+  inline def importEntities(exportedString: String): typings.breeze.breeze.EntityManager = ^.asInstanceOf[js.Dynamic].applyDynamic("importEntities")(exportedString.asInstanceOf[js.Any]).asInstanceOf[typings.breeze.breeze.EntityManager]
+  inline def importEntities(exportedString: String, config: typings.breeze.anon.MergeStrategy): typings.breeze.breeze.EntityManager = (^.asInstanceOf[js.Dynamic].applyDynamic("importEntities")(exportedString.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[typings.breeze.breeze.EntityManager]
 }

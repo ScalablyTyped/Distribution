@@ -21,19 +21,15 @@ trait SmartCardConnection extends StObject {
 }
 object SmartCardConnection {
   
-  @scala.inline
-  def apply(close: () => Unit, transmitAsync: IBuffer => IPromiseWithIAsyncOperation[IBuffer]): SmartCardConnection = {
+  inline def apply(close: () => Unit, transmitAsync: IBuffer => IPromiseWithIAsyncOperation[IBuffer]): SmartCardConnection = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), transmitAsync = js.Any.fromFunction1(transmitAsync))
     __obj.asInstanceOf[SmartCardConnection]
   }
   
-  @scala.inline
-  implicit class SmartCardConnectionMutableBuilder[Self <: SmartCardConnection] (val x: Self) extends AnyVal {
+  extension [Self <: SmartCardConnection](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTransmitAsync(value: IBuffer => IPromiseWithIAsyncOperation[IBuffer]): Self = StObject.set(x, "transmitAsync", js.Any.fromFunction1(value))
+    inline def setTransmitAsync(value: IBuffer => IPromiseWithIAsyncOperation[IBuffer]): Self = StObject.set(x, "transmitAsync", js.Any.fromFunction1(value))
   }
 }

@@ -15,19 +15,15 @@ trait OnDraggableEnd extends StObject {
 }
 object OnDraggableEnd {
   
-  @scala.inline
-  def apply(onDraggableEnd: DragEvent[Element] => Unit, onDraggableStart: DragEvent[Element] => Unit): OnDraggableEnd = {
+  inline def apply(onDraggableEnd: DragEvent[Element] => Unit, onDraggableStart: DragEvent[Element] => Unit): OnDraggableEnd = {
     val __obj = js.Dynamic.literal(onDraggableEnd = js.Any.fromFunction1(onDraggableEnd), onDraggableStart = js.Any.fromFunction1(onDraggableStart))
     __obj.asInstanceOf[OnDraggableEnd]
   }
   
-  @scala.inline
-  implicit class OnDraggableEndMutableBuilder[Self <: OnDraggableEnd] (val x: Self) extends AnyVal {
+  extension [Self <: OnDraggableEnd](x: Self) {
     
-    @scala.inline
-    def setOnDraggableEnd(value: DragEvent[Element] => Unit): Self = StObject.set(x, "onDraggableEnd", js.Any.fromFunction1(value))
+    inline def setOnDraggableEnd(value: DragEvent[Element] => Unit): Self = StObject.set(x, "onDraggableEnd", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDraggableStart(value: DragEvent[Element] => Unit): Self = StObject.set(x, "onDraggableStart", js.Any.fromFunction1(value))
+    inline def setOnDraggableStart(value: DragEvent[Element] => Unit): Self = StObject.set(x, "onDraggableStart", js.Any.fromFunction1(value))
   }
 }

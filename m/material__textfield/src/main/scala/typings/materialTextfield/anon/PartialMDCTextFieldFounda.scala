@@ -20,37 +20,27 @@ trait PartialMDCTextFieldFounda extends StObject {
 }
 object PartialMDCTextFieldFounda {
   
-  @scala.inline
-  def apply(): PartialMDCTextFieldFounda = {
+  inline def apply(): PartialMDCTextFieldFounda = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialMDCTextFieldFounda]
   }
   
-  @scala.inline
-  implicit class PartialMDCTextFieldFoundaMutableBuilder[Self <: PartialMDCTextFieldFounda] (val x: Self) extends AnyVal {
+  extension [Self <: PartialMDCTextFieldFounda](x: Self) {
     
-    @scala.inline
-    def setCharacterCounter(value: MDCTextFieldCharacterCounterFoundation): Self = StObject.set(x, "characterCounter", value.asInstanceOf[js.Any])
+    inline def setCharacterCounter(value: MDCTextFieldCharacterCounterFoundation): Self = StObject.set(x, "characterCounter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharacterCounterUndefined: Self = StObject.set(x, "characterCounter", js.undefined)
+    inline def setCharacterCounterUndefined: Self = StObject.set(x, "characterCounter", js.undefined)
     
-    @scala.inline
-    def setHelperText(value: MDCTextFieldHelperTextFoundation): Self = StObject.set(x, "helperText", value.asInstanceOf[js.Any])
+    inline def setHelperText(value: MDCTextFieldHelperTextFoundation): Self = StObject.set(x, "helperText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelperTextUndefined: Self = StObject.set(x, "helperText", js.undefined)
+    inline def setHelperTextUndefined: Self = StObject.set(x, "helperText", js.undefined)
     
-    @scala.inline
-    def setLeadingIcon(value: MDCTextFieldIconFoundation): Self = StObject.set(x, "leadingIcon", value.asInstanceOf[js.Any])
+    inline def setLeadingIcon(value: MDCTextFieldIconFoundation): Self = StObject.set(x, "leadingIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeadingIconUndefined: Self = StObject.set(x, "leadingIcon", js.undefined)
+    inline def setLeadingIconUndefined: Self = StObject.set(x, "leadingIcon", js.undefined)
     
-    @scala.inline
-    def setTrailingIcon(value: MDCTextFieldIconFoundation): Self = StObject.set(x, "trailingIcon", value.asInstanceOf[js.Any])
+    inline def setTrailingIcon(value: MDCTextFieldIconFoundation): Self = StObject.set(x, "trailingIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrailingIconUndefined: Self = StObject.set(x, "trailingIcon", js.undefined)
+    inline def setTrailingIconUndefined: Self = StObject.set(x, "trailingIcon", js.undefined)
   }
 }

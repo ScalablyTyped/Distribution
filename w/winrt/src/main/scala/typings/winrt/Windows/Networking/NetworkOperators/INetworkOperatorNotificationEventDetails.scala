@@ -21,8 +21,7 @@ trait INetworkOperatorNotificationEventDetails extends StObject {
 }
 object INetworkOperatorNotificationEventDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     encodingType: Double,
     message: String,
     networkAccountId: String,
@@ -34,25 +33,18 @@ object INetworkOperatorNotificationEventDetails {
     __obj.asInstanceOf[INetworkOperatorNotificationEventDetails]
   }
   
-  @scala.inline
-  implicit class INetworkOperatorNotificationEventDetailsMutableBuilder[Self <: INetworkOperatorNotificationEventDetails] (val x: Self) extends AnyVal {
+  extension [Self <: INetworkOperatorNotificationEventDetails](x: Self) {
     
-    @scala.inline
-    def setEncodingType(value: Double): Self = StObject.set(x, "encodingType", value.asInstanceOf[js.Any])
+    inline def setEncodingType(value: Double): Self = StObject.set(x, "encodingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkAccountId(value: String): Self = StObject.set(x, "networkAccountId", value.asInstanceOf[js.Any])
+    inline def setNetworkAccountId(value: String): Self = StObject.set(x, "networkAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationType(value: NetworkOperatorEventMessageType): Self = StObject.set(x, "notificationType", value.asInstanceOf[js.Any])
+    inline def setNotificationType(value: NetworkOperatorEventMessageType): Self = StObject.set(x, "notificationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleId(value: String): Self = StObject.set(x, "ruleId", value.asInstanceOf[js.Any])
+    inline def setRuleId(value: String): Self = StObject.set(x, "ruleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmsMessage(value: ISmsMessage): Self = StObject.set(x, "smsMessage", value.asInstanceOf[js.Any])
+    inline def setSmsMessage(value: ISmsMessage): Self = StObject.set(x, "smsMessage", value.asInstanceOf[js.Any])
   }
 }

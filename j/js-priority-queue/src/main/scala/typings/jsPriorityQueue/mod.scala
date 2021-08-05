@@ -184,29 +184,22 @@ object mod {
   }
   object AbstractPriorityQueue {
     
-    @scala.inline
-    def apply[T](clear: () => Unit, dequeue: () => T, length: Double, peek: () => T, queue: T => Unit): AbstractPriorityQueue[T] = {
+    inline def apply[T](clear: () => Unit, dequeue: () => T, length: Double, peek: () => T, queue: T => Unit): AbstractPriorityQueue[T] = {
       val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), dequeue = js.Any.fromFunction0(dequeue), length = length.asInstanceOf[js.Any], peek = js.Any.fromFunction0(peek), queue = js.Any.fromFunction1(queue))
       __obj.asInstanceOf[AbstractPriorityQueue[T]]
     }
     
-    @scala.inline
-    implicit class AbstractPriorityQueueMutableBuilder[Self <: AbstractPriorityQueue[?], T] (val x: Self & AbstractPriorityQueue[T]) extends AnyVal {
+    extension [Self <: AbstractPriorityQueue[?], T](x: Self & AbstractPriorityQueue[T]) {
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDequeue(value: () => T): Self = StObject.set(x, "dequeue", js.Any.fromFunction0(value))
+      inline def setDequeue(value: () => T): Self = StObject.set(x, "dequeue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeek(value: () => T): Self = StObject.set(x, "peek", js.Any.fromFunction0(value))
+      inline def setPeek(value: () => T): Self = StObject.set(x, "peek", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setQueue(value: T => Unit): Self = StObject.set(x, "queue", js.Any.fromFunction1(value))
+      inline def setQueue(value: T => Unit): Self = StObject.set(x, "queue", js.Any.fromFunction1(value))
     }
   }
   
@@ -241,32 +234,24 @@ object mod {
   }
   object PriorityQueueOptions {
     
-    @scala.inline
-    def apply[T](): PriorityQueueOptions[T] = {
+    inline def apply[T](): PriorityQueueOptions[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PriorityQueueOptions[T]]
     }
     
-    @scala.inline
-    implicit class PriorityQueueOptionsMutableBuilder[Self <: PriorityQueueOptions[?], T] (val x: Self & PriorityQueueOptions[T]) extends AnyVal {
+    extension [Self <: PriorityQueueOptions[?], T](x: Self & PriorityQueueOptions[T]) {
       
-      @scala.inline
-      def setComparator(value: (/* a */ T, /* b */ T) => Double): Self = StObject.set(x, "comparator", js.Any.fromFunction2(value))
+      inline def setComparator(value: (/* a */ T, /* b */ T) => Double): Self = StObject.set(x, "comparator", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
+      inline def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
       
-      @scala.inline
-      def setInitialValues(value: js.Array[T]): Self = StObject.set(x, "initialValues", value.asInstanceOf[js.Any])
+      inline def setInitialValues(value: js.Array[T]): Self = StObject.set(x, "initialValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialValuesUndefined: Self = StObject.set(x, "initialValues", js.undefined)
+      inline def setInitialValuesUndefined: Self = StObject.set(x, "initialValues", js.undefined)
       
-      @scala.inline
-      def setInitialValuesVarargs(value: T*): Self = StObject.set(x, "initialValues", js.Array(value :_*))
+      inline def setInitialValuesVarargs(value: T*): Self = StObject.set(x, "initialValues", js.Array(value :_*))
       
-      @scala.inline
-      def setStrategy(
+      inline def setStrategy(
         value: Instantiable1[
               /* options */ js.UndefOr[
                 PriorityQueueOptions[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any]
@@ -275,8 +260,7 @@ object mod {
             ]
       ): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
+      inline def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
     }
   }
 }

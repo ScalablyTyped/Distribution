@@ -18,25 +18,19 @@ trait UpdateClientCertificateRequest extends StObject {
 }
 object UpdateClientCertificateRequest {
   
-  @scala.inline
-  def apply(clientCertificateId: String): UpdateClientCertificateRequest = {
+  inline def apply(clientCertificateId: String): UpdateClientCertificateRequest = {
     val __obj = js.Dynamic.literal(clientCertificateId = clientCertificateId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateClientCertificateRequest]
   }
   
-  @scala.inline
-  implicit class UpdateClientCertificateRequestMutableBuilder[Self <: UpdateClientCertificateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateClientCertificateRequest](x: Self) {
     
-    @scala.inline
-    def setClientCertificateId(value: String): Self = StObject.set(x, "clientCertificateId", value.asInstanceOf[js.Any])
+    inline def setClientCertificateId(value: String): Self = StObject.set(x, "clientCertificateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatchOperations(value: ListOfPatchOperation): Self = StObject.set(x, "patchOperations", value.asInstanceOf[js.Any])
+    inline def setPatchOperations(value: ListOfPatchOperation): Self = StObject.set(x, "patchOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatchOperationsUndefined: Self = StObject.set(x, "patchOperations", js.undefined)
+    inline def setPatchOperationsUndefined: Self = StObject.set(x, "patchOperations", js.undefined)
     
-    @scala.inline
-    def setPatchOperationsVarargs(value: PatchOperation*): Self = StObject.set(x, "patchOperations", js.Array(value :_*))
+    inline def setPatchOperationsVarargs(value: PatchOperation*): Self = StObject.set(x, "patchOperations", js.Array(value :_*))
   }
 }

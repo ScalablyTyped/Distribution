@@ -43,8 +43,7 @@ object errorsMod {
       * Returns true if the given object is an instance of a ResourceError.  This is designed to work even when
       * multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/errors.ResourceError */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/pulumi.@pulumi/pulumi/errors.ResourceError */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/errors.ResourceError */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/pulumi.@pulumi/pulumi/errors.ResourceError */ Boolean]
   }
   
   @JSImport("@pulumi/pulumi/errors", "RunError")
@@ -71,10 +70,8 @@ object errorsMod {
       * Returns true if the given object is an instance of a RunError.  This is designed to work even when
       * multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/errors.RunError */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/pulumi.@pulumi/pulumi/errors.RunError */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/errors.RunError */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/pulumi.@pulumi/pulumi/errors.RunError */ Boolean]
   }
   
-  @scala.inline
-  def isGrpcError(err: Error): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGrpcError")(err.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isGrpcError(err: Error): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGrpcError")(err.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

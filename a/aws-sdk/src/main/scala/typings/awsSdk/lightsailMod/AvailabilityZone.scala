@@ -18,25 +18,19 @@ trait AvailabilityZone extends StObject {
 }
 object AvailabilityZone {
   
-  @scala.inline
-  def apply(): AvailabilityZone = {
+  inline def apply(): AvailabilityZone = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AvailabilityZone]
   }
   
-  @scala.inline
-  implicit class AvailabilityZoneMutableBuilder[Self <: AvailabilityZone] (val x: Self) extends AnyVal {
+  extension [Self <: AvailabilityZone](x: Self) {
     
-    @scala.inline
-    def setState(value: NonEmptyString): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: NonEmptyString): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setZoneName(value: NonEmptyString): Self = StObject.set(x, "zoneName", value.asInstanceOf[js.Any])
+    inline def setZoneName(value: NonEmptyString): Self = StObject.set(x, "zoneName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoneNameUndefined: Self = StObject.set(x, "zoneName", js.undefined)
+    inline def setZoneNameUndefined: Self = StObject.set(x, "zoneName", js.undefined)
   }
 }

@@ -27,31 +27,23 @@ trait SchemaDatafeedsCustomBatchResponseEntry extends StObject {
 }
 object SchemaDatafeedsCustomBatchResponseEntry {
   
-  @scala.inline
-  def apply(): SchemaDatafeedsCustomBatchResponseEntry = {
+  inline def apply(): SchemaDatafeedsCustomBatchResponseEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDatafeedsCustomBatchResponseEntry]
   }
   
-  @scala.inline
-  implicit class SchemaDatafeedsCustomBatchResponseEntryMutableBuilder[Self <: SchemaDatafeedsCustomBatchResponseEntry] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDatafeedsCustomBatchResponseEntry](x: Self) {
     
-    @scala.inline
-    def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
+    inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
+    inline def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
     
-    @scala.inline
-    def setDatafeed(value: SchemaDatafeed): Self = StObject.set(x, "datafeed", value.asInstanceOf[js.Any])
+    inline def setDatafeed(value: SchemaDatafeed): Self = StObject.set(x, "datafeed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatafeedUndefined: Self = StObject.set(x, "datafeed", js.undefined)
+    inline def setDatafeedUndefined: Self = StObject.set(x, "datafeed", js.undefined)
     
-    @scala.inline
-    def setErrors(value: SchemaErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: SchemaErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
   }
 }

@@ -16,25 +16,19 @@ trait View extends StObject {
 }
 object View {
   
-  @scala.inline
-  def apply(delete: scala.Double, edit: scala.Double, none: scala.Double, view: scala.Double): View = {
+  inline def apply(delete: scala.Double, edit: scala.Double, none: scala.Double, view: scala.Double): View = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], edit = edit.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
     __obj.asInstanceOf[View]
   }
   
-  @scala.inline
-  implicit class ViewMutableBuilder[Self <: View] (val x: Self) extends AnyVal {
+  extension [Self <: View](x: Self) {
     
-    @scala.inline
-    def setDelete(value: scala.Double): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: scala.Double): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdit(value: scala.Double): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
+    inline def setEdit(value: scala.Double): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView(value: scala.Double): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: scala.Double): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

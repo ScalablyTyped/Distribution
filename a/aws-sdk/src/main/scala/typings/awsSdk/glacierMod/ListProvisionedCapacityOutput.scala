@@ -13,22 +13,17 @@ trait ListProvisionedCapacityOutput extends StObject {
 }
 object ListProvisionedCapacityOutput {
   
-  @scala.inline
-  def apply(): ListProvisionedCapacityOutput = {
+  inline def apply(): ListProvisionedCapacityOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListProvisionedCapacityOutput]
   }
   
-  @scala.inline
-  implicit class ListProvisionedCapacityOutputMutableBuilder[Self <: ListProvisionedCapacityOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListProvisionedCapacityOutput](x: Self) {
     
-    @scala.inline
-    def setProvisionedCapacityList(value: ProvisionedCapacityList): Self = StObject.set(x, "ProvisionedCapacityList", value.asInstanceOf[js.Any])
+    inline def setProvisionedCapacityList(value: ProvisionedCapacityList): Self = StObject.set(x, "ProvisionedCapacityList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisionedCapacityListUndefined: Self = StObject.set(x, "ProvisionedCapacityList", js.undefined)
+    inline def setProvisionedCapacityListUndefined: Self = StObject.set(x, "ProvisionedCapacityList", js.undefined)
     
-    @scala.inline
-    def setProvisionedCapacityListVarargs(value: ProvisionedCapacityDescription*): Self = StObject.set(x, "ProvisionedCapacityList", js.Array(value :_*))
+    inline def setProvisionedCapacityListVarargs(value: ProvisionedCapacityDescription*): Self = StObject.set(x, "ProvisionedCapacityList", js.Array(value :_*))
   }
 }

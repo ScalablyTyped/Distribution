@@ -21,8 +21,7 @@ object global {
       * @param args Arguments to pass to the method, each of which must be JSON-serializable.
       * @returns The result of the operation.
       */
-    @scala.inline
-    def invokeMethod[T](assemblyName: String, methodIdentifier: String, args: js.Any*): T = (^.asInstanceOf[js.Dynamic].applyDynamic("invokeMethod")(assemblyName.asInstanceOf[js.Any], methodIdentifier.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def invokeMethod[T](assemblyName: String, methodIdentifier: String, args: js.Any*): T = (^.asInstanceOf[js.Dynamic].applyDynamic("invokeMethod")(assemblyName.asInstanceOf[js.Any], methodIdentifier.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[T]
     
     /**
       * Invokes the specified .NET public method asynchronously.
@@ -32,7 +31,6 @@ object global {
       * @param args Arguments to pass to the method, each of which must be JSON-serializable.
       * @returns A promise representing the result of the operation.
       */
-    @scala.inline
-    def invokeMethodAsync[T](assemblyName: String, methodIdentifier: String, args: js.Any*): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("invokeMethodAsync")(assemblyName.asInstanceOf[js.Any], methodIdentifier.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+    inline def invokeMethodAsync[T](assemblyName: String, methodIdentifier: String, args: js.Any*): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("invokeMethodAsync")(assemblyName.asInstanceOf[js.Any], methodIdentifier.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   }
 }

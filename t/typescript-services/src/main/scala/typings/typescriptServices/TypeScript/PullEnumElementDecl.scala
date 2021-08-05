@@ -12,8 +12,7 @@ trait PullEnumElementDecl
 }
 object PullEnumElementDecl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _getEnclosingDeclFromParentDecl: () => PullDecl,
     _rootDecl: RootPullDecl,
     addChildDecl: PullDecl => Unit,
@@ -68,10 +67,8 @@ object PullEnumElementDecl {
     __obj.asInstanceOf[PullEnumElementDecl]
   }
   
-  @scala.inline
-  implicit class PullEnumElementDeclMutableBuilder[Self <: PullEnumElementDecl] (val x: Self) extends AnyVal {
+  extension [Self <: PullEnumElementDecl](x: Self) {
     
-    @scala.inline
-    def setConstantValue(value: Double): Self = StObject.set(x, "constantValue", value.asInstanceOf[js.Any])
+    inline def setConstantValue(value: Double): Self = StObject.set(x, "constantValue", value.asInstanceOf[js.Any])
   }
 }

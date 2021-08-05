@@ -10,16 +10,13 @@ trait CordovaPlugins extends StObject {
 }
 object CordovaPlugins {
   
-  @scala.inline
-  def apply(email: CordovaPluginEmailComposer): CordovaPlugins = {
+  inline def apply(email: CordovaPluginEmailComposer): CordovaPlugins = {
     val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any])
     __obj.asInstanceOf[CordovaPlugins]
   }
   
-  @scala.inline
-  implicit class CordovaPluginsMutableBuilder[Self <: CordovaPlugins] (val x: Self) extends AnyVal {
+  extension [Self <: CordovaPlugins](x: Self) {
     
-    @scala.inline
-    def setEmail(value: CordovaPluginEmailComposer): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: CordovaPluginEmailComposer): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
   }
 }

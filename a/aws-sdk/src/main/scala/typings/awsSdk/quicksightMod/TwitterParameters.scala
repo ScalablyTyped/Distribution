@@ -18,19 +18,15 @@ trait TwitterParameters extends StObject {
 }
 object TwitterParameters {
   
-  @scala.inline
-  def apply(MaxRows: PositiveInteger, Query: Query): TwitterParameters = {
+  inline def apply(MaxRows: PositiveInteger, Query: Query): TwitterParameters = {
     val __obj = js.Dynamic.literal(MaxRows = MaxRows.asInstanceOf[js.Any], Query = Query.asInstanceOf[js.Any])
     __obj.asInstanceOf[TwitterParameters]
   }
   
-  @scala.inline
-  implicit class TwitterParametersMutableBuilder[Self <: TwitterParameters] (val x: Self) extends AnyVal {
+  extension [Self <: TwitterParameters](x: Self) {
     
-    @scala.inline
-    def setMaxRows(value: PositiveInteger): Self = StObject.set(x, "MaxRows", value.asInstanceOf[js.Any])
+    inline def setMaxRows(value: PositiveInteger): Self = StObject.set(x, "MaxRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: Query): Self = StObject.set(x, "Query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: Query): Self = StObject.set(x, "Query", value.asInstanceOf[js.Any])
   }
 }

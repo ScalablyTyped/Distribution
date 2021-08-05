@@ -18,46 +18,33 @@ trait Cwd extends StObject {
 }
 object Cwd {
   
-  @scala.inline
-  def apply(): Cwd = {
+  inline def apply(): Cwd = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Cwd]
   }
   
-  @scala.inline
-  implicit class CwdMutableBuilder[Self <: Cwd] (val x: Self) extends AnyVal {
+  extension [Self <: Cwd](x: Self) {
     
-    @scala.inline
-    def setCwd(value: js.Object): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+    inline def setCwd(value: js.Object): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+    inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
     
-    @scala.inline
-    def setDestination(value: js.Any): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: js.Any): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
+    inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
-    @scala.inline
-    def setEnv(value: js.Object): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+    inline def setEnv(value: js.Object): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+    inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
-    @scala.inline
-    def setStdio(value: js.Array[js.Any] | String): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
+    inline def setStdio(value: js.Array[js.Any] | String): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStdioUndefined: Self = StObject.set(x, "stdio", js.undefined)
+    inline def setStdioUndefined: Self = StObject.set(x, "stdio", js.undefined)
     
-    @scala.inline
-    def setStdioVarargs(value: js.Any*): Self = StObject.set(x, "stdio", js.Array(value :_*))
+    inline def setStdioVarargs(value: js.Any*): Self = StObject.set(x, "stdio", js.Array(value :_*))
     
-    @scala.inline
-    def setWaitForClose(value: String): Self = StObject.set(x, "waitForClose", value.asInstanceOf[js.Any])
+    inline def setWaitForClose(value: String): Self = StObject.set(x, "waitForClose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaitForCloseUndefined: Self = StObject.set(x, "waitForClose", js.undefined)
+    inline def setWaitForCloseUndefined: Self = StObject.set(x, "waitForClose", js.undefined)
   }
 }

@@ -14,23 +14,18 @@ trait GoogleAnalytics extends StObject {
 }
 object GoogleAnalytics {
   
-  @scala.inline
-  def apply(async: Boolean, src: String, `type`: String): GoogleAnalytics = {
+  inline def apply(async: Boolean, src: String, `type`: String): GoogleAnalytics = {
     val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleAnalytics]
   }
   
-  @scala.inline
-  implicit class GoogleAnalyticsMutableBuilder[Self <: GoogleAnalytics] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleAnalytics](x: Self) {
     
-    @scala.inline
-    def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+    inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

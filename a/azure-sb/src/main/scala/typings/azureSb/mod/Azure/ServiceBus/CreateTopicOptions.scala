@@ -25,61 +25,43 @@ trait CreateTopicOptions extends StObject {
 }
 object CreateTopicOptions {
   
-  @scala.inline
-  def apply(): CreateTopicOptions = {
+  inline def apply(): CreateTopicOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateTopicOptions]
   }
   
-  @scala.inline
-  implicit class CreateTopicOptionsMutableBuilder[Self <: CreateTopicOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CreateTopicOptions](x: Self) {
     
-    @scala.inline
-    def setDefaultMessageTimeToLive(value: String): Self = StObject.set(x, "DefaultMessageTimeToLive", value.asInstanceOf[js.Any])
+    inline def setDefaultMessageTimeToLive(value: String): Self = StObject.set(x, "DefaultMessageTimeToLive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultMessageTimeToLiveUndefined: Self = StObject.set(x, "DefaultMessageTimeToLive", js.undefined)
+    inline def setDefaultMessageTimeToLiveUndefined: Self = StObject.set(x, "DefaultMessageTimeToLive", js.undefined)
     
-    @scala.inline
-    def setDuplicateDetectionHistoryTimeWindow(value: String): Self = StObject.set(x, "DuplicateDetectionHistoryTimeWindow", value.asInstanceOf[js.Any])
+    inline def setDuplicateDetectionHistoryTimeWindow(value: String): Self = StObject.set(x, "DuplicateDetectionHistoryTimeWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuplicateDetectionHistoryTimeWindowUndefined: Self = StObject.set(x, "DuplicateDetectionHistoryTimeWindow", js.undefined)
+    inline def setDuplicateDetectionHistoryTimeWindowUndefined: Self = StObject.set(x, "DuplicateDetectionHistoryTimeWindow", js.undefined)
     
-    @scala.inline
-    def setEnableBatchedOperations(value: Boolean): Self = StObject.set(x, "EnableBatchedOperations", value.asInstanceOf[js.Any])
+    inline def setEnableBatchedOperations(value: Boolean): Self = StObject.set(x, "EnableBatchedOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableBatchedOperationsUndefined: Self = StObject.set(x, "EnableBatchedOperations", js.undefined)
+    inline def setEnableBatchedOperationsUndefined: Self = StObject.set(x, "EnableBatchedOperations", js.undefined)
     
-    @scala.inline
-    def setEnablePartitioning(value: Boolean): Self = StObject.set(x, "EnablePartitioning", value.asInstanceOf[js.Any])
+    inline def setEnablePartitioning(value: Boolean): Self = StObject.set(x, "EnablePartitioning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnablePartitioningUndefined: Self = StObject.set(x, "EnablePartitioning", js.undefined)
+    inline def setEnablePartitioningUndefined: Self = StObject.set(x, "EnablePartitioning", js.undefined)
     
-    @scala.inline
-    def setMaxSizeInMegabytes(value: Double): Self = StObject.set(x, "MaxSizeInMegabytes", value.asInstanceOf[js.Any])
+    inline def setMaxSizeInMegabytes(value: Double): Self = StObject.set(x, "MaxSizeInMegabytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSizeInMegabytesUndefined: Self = StObject.set(x, "MaxSizeInMegabytes", js.undefined)
+    inline def setMaxSizeInMegabytesUndefined: Self = StObject.set(x, "MaxSizeInMegabytes", js.undefined)
     
-    @scala.inline
-    def setRequiresDuplicateDetection(value: Boolean): Self = StObject.set(x, "RequiresDuplicateDetection", value.asInstanceOf[js.Any])
+    inline def setRequiresDuplicateDetection(value: Boolean): Self = StObject.set(x, "RequiresDuplicateDetection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiresDuplicateDetectionUndefined: Self = StObject.set(x, "RequiresDuplicateDetection", js.undefined)
+    inline def setRequiresDuplicateDetectionUndefined: Self = StObject.set(x, "RequiresDuplicateDetection", js.undefined)
     
-    @scala.inline
-    def setSizeInBytes(value: Boolean): Self = StObject.set(x, "SizeInBytes", value.asInstanceOf[js.Any])
+    inline def setSizeInBytes(value: Boolean): Self = StObject.set(x, "SizeInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeInBytesUndefined: Self = StObject.set(x, "SizeInBytes", js.undefined)
+    inline def setSizeInBytesUndefined: Self = StObject.set(x, "SizeInBytes", js.undefined)
     
-    @scala.inline
-    def setSupportOrdering(value: Boolean): Self = StObject.set(x, "SupportOrdering", value.asInstanceOf[js.Any])
+    inline def setSupportOrdering(value: Boolean): Self = StObject.set(x, "SupportOrdering", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportOrderingUndefined: Self = StObject.set(x, "SupportOrdering", js.undefined)
+    inline def setSupportOrderingUndefined: Self = StObject.set(x, "SupportOrdering", js.undefined)
   }
 }

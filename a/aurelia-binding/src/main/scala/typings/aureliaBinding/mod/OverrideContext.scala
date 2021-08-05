@@ -12,22 +12,17 @@ trait OverrideContext extends StObject {
 }
 object OverrideContext {
   
-  @scala.inline
-  def apply(bindingContext: js.Any): OverrideContext = {
+  inline def apply(bindingContext: js.Any): OverrideContext = {
     val __obj = js.Dynamic.literal(bindingContext = bindingContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[OverrideContext]
   }
   
-  @scala.inline
-  implicit class OverrideContextMutableBuilder[Self <: OverrideContext] (val x: Self) extends AnyVal {
+  extension [Self <: OverrideContext](x: Self) {
     
-    @scala.inline
-    def setBindingContext(value: js.Any): Self = StObject.set(x, "bindingContext", value.asInstanceOf[js.Any])
+    inline def setBindingContext(value: js.Any): Self = StObject.set(x, "bindingContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentOverrideContext(value: OverrideContext): Self = StObject.set(x, "parentOverrideContext", value.asInstanceOf[js.Any])
+    inline def setParentOverrideContext(value: OverrideContext): Self = StObject.set(x, "parentOverrideContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentOverrideContextUndefined: Self = StObject.set(x, "parentOverrideContext", js.undefined)
+    inline def setParentOverrideContextUndefined: Self = StObject.set(x, "parentOverrideContext", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait ApplySchemaResponse extends StObject {
 }
 object ApplySchemaResponse {
   
-  @scala.inline
-  def apply(): ApplySchemaResponse = {
+  inline def apply(): ApplySchemaResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApplySchemaResponse]
   }
   
-  @scala.inline
-  implicit class ApplySchemaResponseMutableBuilder[Self <: ApplySchemaResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ApplySchemaResponse](x: Self) {
     
-    @scala.inline
-    def setAppliedSchemaArn(value: Arn): Self = StObject.set(x, "AppliedSchemaArn", value.asInstanceOf[js.Any])
+    inline def setAppliedSchemaArn(value: Arn): Self = StObject.set(x, "AppliedSchemaArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppliedSchemaArnUndefined: Self = StObject.set(x, "AppliedSchemaArn", js.undefined)
+    inline def setAppliedSchemaArnUndefined: Self = StObject.set(x, "AppliedSchemaArn", js.undefined)
     
-    @scala.inline
-    def setDirectoryArn(value: Arn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
+    inline def setDirectoryArn(value: Arn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoryArnUndefined: Self = StObject.set(x, "DirectoryArn", js.undefined)
+    inline def setDirectoryArnUndefined: Self = StObject.set(x, "DirectoryArn", js.undefined)
   }
 }

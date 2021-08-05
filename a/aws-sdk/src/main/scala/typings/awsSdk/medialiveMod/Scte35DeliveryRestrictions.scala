@@ -28,8 +28,7 @@ trait Scte35DeliveryRestrictions extends StObject {
 }
 object Scte35DeliveryRestrictions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ArchiveAllowedFlag: Scte35ArchiveAllowedFlag,
     DeviceRestrictions: Scte35DeviceRestrictions,
     NoRegionalBlackoutFlag: Scte35NoRegionalBlackoutFlag,
@@ -39,19 +38,14 @@ object Scte35DeliveryRestrictions {
     __obj.asInstanceOf[Scte35DeliveryRestrictions]
   }
   
-  @scala.inline
-  implicit class Scte35DeliveryRestrictionsMutableBuilder[Self <: Scte35DeliveryRestrictions] (val x: Self) extends AnyVal {
+  extension [Self <: Scte35DeliveryRestrictions](x: Self) {
     
-    @scala.inline
-    def setArchiveAllowedFlag(value: Scte35ArchiveAllowedFlag): Self = StObject.set(x, "ArchiveAllowedFlag", value.asInstanceOf[js.Any])
+    inline def setArchiveAllowedFlag(value: Scte35ArchiveAllowedFlag): Self = StObject.set(x, "ArchiveAllowedFlag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceRestrictions(value: Scte35DeviceRestrictions): Self = StObject.set(x, "DeviceRestrictions", value.asInstanceOf[js.Any])
+    inline def setDeviceRestrictions(value: Scte35DeviceRestrictions): Self = StObject.set(x, "DeviceRestrictions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoRegionalBlackoutFlag(value: Scte35NoRegionalBlackoutFlag): Self = StObject.set(x, "NoRegionalBlackoutFlag", value.asInstanceOf[js.Any])
+    inline def setNoRegionalBlackoutFlag(value: Scte35NoRegionalBlackoutFlag): Self = StObject.set(x, "NoRegionalBlackoutFlag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebDeliveryAllowedFlag(value: Scte35WebDeliveryAllowedFlag): Self = StObject.set(x, "WebDeliveryAllowedFlag", value.asInstanceOf[js.Any])
+    inline def setWebDeliveryAllowedFlag(value: Scte35WebDeliveryAllowedFlag): Self = StObject.set(x, "WebDeliveryAllowedFlag", value.asInstanceOf[js.Any])
   }
 }

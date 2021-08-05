@@ -10,15 +10,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getPort(service: String): PortInfo | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPort")(service.asInstanceOf[js.Any]).asInstanceOf[PortInfo | Null]
-  @scala.inline
-  def getPort(service: String, protocol: String): PortInfo | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getPort")(service.asInstanceOf[js.Any], protocol.asInstanceOf[js.Any])).asInstanceOf[PortInfo | Null]
+  inline def getPort(service: String): PortInfo | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPort")(service.asInstanceOf[js.Any]).asInstanceOf[PortInfo | Null]
+  inline def getPort(service: String, protocol: String): PortInfo | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getPort")(service.asInstanceOf[js.Any], protocol.asInstanceOf[js.Any])).asInstanceOf[PortInfo | Null]
   
-  @scala.inline
-  def getService(port: Double): ServiceInfo | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getService")(port.asInstanceOf[js.Any]).asInstanceOf[ServiceInfo | Null]
-  @scala.inline
-  def getService(port: Double, protocol: String): ServiceInfo | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getService")(port.asInstanceOf[js.Any], protocol.asInstanceOf[js.Any])).asInstanceOf[ServiceInfo | Null]
+  inline def getService(port: Double): ServiceInfo | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getService")(port.asInstanceOf[js.Any]).asInstanceOf[ServiceInfo | Null]
+  inline def getService(port: Double, protocol: String): ServiceInfo | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getService")(port.asInstanceOf[js.Any], protocol.asInstanceOf[js.Any])).asInstanceOf[ServiceInfo | Null]
   
   trait PortInfo extends StObject {
     
@@ -30,23 +26,18 @@ object mod {
   }
   object PortInfo {
     
-    @scala.inline
-    def apply(description: String, port: Double, protocol: String): PortInfo = {
+    inline def apply(description: String, port: Double, protocol: String): PortInfo = {
       val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
       __obj.asInstanceOf[PortInfo]
     }
     
-    @scala.inline
-    implicit class PortInfoMutableBuilder[Self <: PortInfo] (val x: Self) extends AnyVal {
+    extension [Self <: PortInfo](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     }
   }
   
@@ -58,20 +49,16 @@ object mod {
   }
   object ServiceInfo {
     
-    @scala.inline
-    def apply(description: String, name: String): ServiceInfo = {
+    inline def apply(description: String, name: String): ServiceInfo = {
       val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServiceInfo]
     }
     
-    @scala.inline
-    implicit class ServiceInfoMutableBuilder[Self <: ServiceInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ServiceInfo](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

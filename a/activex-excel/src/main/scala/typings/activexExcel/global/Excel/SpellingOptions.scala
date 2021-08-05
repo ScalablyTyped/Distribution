@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.SpellingOptions")
 @js.native
-class SpellingOptions protected ()
+/* private */ class SpellingOptions ()
   extends StObject
      with typings.activexExcel.Excel.SpellingOptions {
   
@@ -32,7 +32,7 @@ class SpellingOptions protected ()
   /* CompleteClass */
   var DictLang: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.SpellingOptions_typekey")
   var ExcelDotSpellingOptions_typekey: typings.activexExcel.Excel.SpellingOptions = js.native
   

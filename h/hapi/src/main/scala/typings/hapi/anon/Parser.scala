@@ -15,16 +15,13 @@ trait Parser extends StObject {
 }
 object Parser {
   
-  @scala.inline
-  def apply(parser: Dictionary[String] => Dictionary[js.Any]): Parser = {
+  inline def apply(parser: Dictionary[String] => Dictionary[js.Any]): Parser = {
     val __obj = js.Dynamic.literal(parser = js.Any.fromFunction1(parser))
     __obj.asInstanceOf[Parser]
   }
   
-  @scala.inline
-  implicit class ParserMutableBuilder[Self <: Parser] (val x: Self) extends AnyVal {
+  extension [Self <: Parser](x: Self) {
     
-    @scala.inline
-    def setParser(value: Dictionary[String] => Dictionary[js.Any]): Self = StObject.set(x, "parser", js.Any.fromFunction1(value))
+    inline def setParser(value: Dictionary[String] => Dictionary[js.Any]): Self = StObject.set(x, "parser", js.Any.fromFunction1(value))
   }
 }

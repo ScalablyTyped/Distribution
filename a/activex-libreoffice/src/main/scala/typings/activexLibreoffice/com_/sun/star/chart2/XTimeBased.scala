@@ -23,8 +23,7 @@ trait XTimeBased
 }
 object XTimeBased {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -36,16 +35,12 @@ object XTimeBased {
     __obj.asInstanceOf[XTimeBased]
   }
   
-  @scala.inline
-  implicit class XTimeBasedMutableBuilder[Self <: XTimeBased] (val x: Self) extends AnyVal {
+  extension [Self <: XTimeBased](x: Self) {
     
-    @scala.inline
-    def setSetRange(value: (Double, Double) => Unit): Self = StObject.set(x, "setRange", js.Any.fromFunction2(value))
+    inline def setSetRange(value: (Double, Double) => Unit): Self = StObject.set(x, "setRange", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetToPointInTime(value: Double => Boolean): Self = StObject.set(x, "setToPointInTime", js.Any.fromFunction1(value))
+    inline def setSetToPointInTime(value: Double => Boolean): Self = StObject.set(x, "setToPointInTime", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSwitchToNext(value: Boolean => Boolean): Self = StObject.set(x, "switchToNext", js.Any.fromFunction1(value))
+    inline def setSwitchToNext(value: Boolean => Boolean): Self = StObject.set(x, "switchToNext", js.Any.fromFunction1(value))
   }
 }

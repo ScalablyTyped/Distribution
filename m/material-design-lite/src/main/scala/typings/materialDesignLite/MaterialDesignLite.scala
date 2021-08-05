@@ -20,26 +20,20 @@ object MaterialDesignLite {
   }
   object ComponentConfigPublic {
     
-    @scala.inline
-    def apply(classAsString: String, cssClass: String): ComponentConfigPublic = {
+    inline def apply(classAsString: String, cssClass: String): ComponentConfigPublic = {
       val __obj = js.Dynamic.literal(classAsString = classAsString.asInstanceOf[js.Any], cssClass = cssClass.asInstanceOf[js.Any])
       __obj.asInstanceOf[ComponentConfigPublic]
     }
     
-    @scala.inline
-    implicit class ComponentConfigPublicMutableBuilder[Self <: ComponentConfigPublic] (val x: Self) extends AnyVal {
+    extension [Self <: ComponentConfigPublic](x: Self) {
       
-      @scala.inline
-      def setClassAsString(value: String): Self = StObject.set(x, "classAsString", value.asInstanceOf[js.Any])
+      inline def setClassAsString(value: String): Self = StObject.set(x, "classAsString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
+      inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidget(value: String | Boolean): Self = StObject.set(x, "widget", value.asInstanceOf[js.Any])
+      inline def setWidget(value: String | Boolean): Self = StObject.set(x, "widget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidgetUndefined: Self = StObject.set(x, "widget", js.undefined)
+      inline def setWidgetUndefined: Self = StObject.set(x, "widget", js.undefined)
     }
   }
   

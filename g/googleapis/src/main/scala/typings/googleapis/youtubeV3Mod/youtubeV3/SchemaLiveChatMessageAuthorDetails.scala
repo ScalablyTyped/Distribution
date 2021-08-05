@@ -48,61 +48,43 @@ trait SchemaLiveChatMessageAuthorDetails extends StObject {
 }
 object SchemaLiveChatMessageAuthorDetails {
   
-  @scala.inline
-  def apply(): SchemaLiveChatMessageAuthorDetails = {
+  inline def apply(): SchemaLiveChatMessageAuthorDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLiveChatMessageAuthorDetails]
   }
   
-  @scala.inline
-  implicit class SchemaLiveChatMessageAuthorDetailsMutableBuilder[Self <: SchemaLiveChatMessageAuthorDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLiveChatMessageAuthorDetails](x: Self) {
     
-    @scala.inline
-    def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
+    inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
+    inline def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
     
-    @scala.inline
-    def setChannelUrl(value: String): Self = StObject.set(x, "channelUrl", value.asInstanceOf[js.Any])
+    inline def setChannelUrl(value: String): Self = StObject.set(x, "channelUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelUrlUndefined: Self = StObject.set(x, "channelUrl", js.undefined)
+    inline def setChannelUrlUndefined: Self = StObject.set(x, "channelUrl", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setIsChatModerator(value: Boolean): Self = StObject.set(x, "isChatModerator", value.asInstanceOf[js.Any])
+    inline def setIsChatModerator(value: Boolean): Self = StObject.set(x, "isChatModerator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsChatModeratorUndefined: Self = StObject.set(x, "isChatModerator", js.undefined)
+    inline def setIsChatModeratorUndefined: Self = StObject.set(x, "isChatModerator", js.undefined)
     
-    @scala.inline
-    def setIsChatOwner(value: Boolean): Self = StObject.set(x, "isChatOwner", value.asInstanceOf[js.Any])
+    inline def setIsChatOwner(value: Boolean): Self = StObject.set(x, "isChatOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsChatOwnerUndefined: Self = StObject.set(x, "isChatOwner", js.undefined)
+    inline def setIsChatOwnerUndefined: Self = StObject.set(x, "isChatOwner", js.undefined)
     
-    @scala.inline
-    def setIsChatSponsor(value: Boolean): Self = StObject.set(x, "isChatSponsor", value.asInstanceOf[js.Any])
+    inline def setIsChatSponsor(value: Boolean): Self = StObject.set(x, "isChatSponsor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsChatSponsorUndefined: Self = StObject.set(x, "isChatSponsor", js.undefined)
+    inline def setIsChatSponsorUndefined: Self = StObject.set(x, "isChatSponsor", js.undefined)
     
-    @scala.inline
-    def setIsVerified(value: Boolean): Self = StObject.set(x, "isVerified", value.asInstanceOf[js.Any])
+    inline def setIsVerified(value: Boolean): Self = StObject.set(x, "isVerified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsVerifiedUndefined: Self = StObject.set(x, "isVerified", js.undefined)
+    inline def setIsVerifiedUndefined: Self = StObject.set(x, "isVerified", js.undefined)
     
-    @scala.inline
-    def setProfileImageUrl(value: String): Self = StObject.set(x, "profileImageUrl", value.asInstanceOf[js.Any])
+    inline def setProfileImageUrl(value: String): Self = StObject.set(x, "profileImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileImageUrlUndefined: Self = StObject.set(x, "profileImageUrl", js.undefined)
+    inline def setProfileImageUrlUndefined: Self = StObject.set(x, "profileImageUrl", js.undefined)
   }
 }

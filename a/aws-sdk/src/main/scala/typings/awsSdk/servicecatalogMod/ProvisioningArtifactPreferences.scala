@@ -18,31 +18,23 @@ trait ProvisioningArtifactPreferences extends StObject {
 }
 object ProvisioningArtifactPreferences {
   
-  @scala.inline
-  def apply(): ProvisioningArtifactPreferences = {
+  inline def apply(): ProvisioningArtifactPreferences = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProvisioningArtifactPreferences]
   }
   
-  @scala.inline
-  implicit class ProvisioningArtifactPreferencesMutableBuilder[Self <: ProvisioningArtifactPreferences] (val x: Self) extends AnyVal {
+  extension [Self <: ProvisioningArtifactPreferences](x: Self) {
     
-    @scala.inline
-    def setStackSetAccounts(value: StackSetAccounts): Self = StObject.set(x, "StackSetAccounts", value.asInstanceOf[js.Any])
+    inline def setStackSetAccounts(value: StackSetAccounts): Self = StObject.set(x, "StackSetAccounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackSetAccountsUndefined: Self = StObject.set(x, "StackSetAccounts", js.undefined)
+    inline def setStackSetAccountsUndefined: Self = StObject.set(x, "StackSetAccounts", js.undefined)
     
-    @scala.inline
-    def setStackSetAccountsVarargs(value: AccountId*): Self = StObject.set(x, "StackSetAccounts", js.Array(value :_*))
+    inline def setStackSetAccountsVarargs(value: AccountId*): Self = StObject.set(x, "StackSetAccounts", js.Array(value :_*))
     
-    @scala.inline
-    def setStackSetRegions(value: StackSetRegions): Self = StObject.set(x, "StackSetRegions", value.asInstanceOf[js.Any])
+    inline def setStackSetRegions(value: StackSetRegions): Self = StObject.set(x, "StackSetRegions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackSetRegionsUndefined: Self = StObject.set(x, "StackSetRegions", js.undefined)
+    inline def setStackSetRegionsUndefined: Self = StObject.set(x, "StackSetRegions", js.undefined)
     
-    @scala.inline
-    def setStackSetRegionsVarargs(value: Region*): Self = StObject.set(x, "StackSetRegions", js.Array(value :_*))
+    inline def setStackSetRegionsVarargs(value: Region*): Self = StObject.set(x, "StackSetRegions", js.Array(value :_*))
   }
 }

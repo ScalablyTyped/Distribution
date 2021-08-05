@@ -126,85 +126,59 @@ trait PlusShareShareMessage extends StObject {
 }
 object PlusShareShareMessage {
   
-  @scala.inline
-  def apply(): PlusShareShareMessage = {
+  inline def apply(): PlusShareShareMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusShareShareMessage]
   }
   
-  @scala.inline
-  implicit class PlusShareShareMessageMutableBuilder[Self <: PlusShareShareMessage] (val x: Self) extends AnyVal {
+  extension [Self <: PlusShareShareMessage](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setExtra(value: PlusShareShareMessageExtra): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+    inline def setExtra(value: PlusShareShareMessageExtra): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
+    inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
     
-    @scala.inline
-    def setGeo(value: PlusShareGeoPosition): Self = StObject.set(x, "geo", value.asInstanceOf[js.Any])
+    inline def setGeo(value: PlusShareGeoPosition): Self = StObject.set(x, "geo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeoUndefined: Self = StObject.set(x, "geo", js.undefined)
+    inline def setGeoUndefined: Self = StObject.set(x, "geo", js.undefined)
     
-    @scala.inline
-    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+    inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
     
-    @scala.inline
-    def setInterface(value: auto | slient | editable): Self = StObject.set(x, "interface", value.asInstanceOf[js.Any])
+    inline def setInterface(value: auto | slient | editable): Self = StObject.set(x, "interface", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterfaceUndefined: Self = StObject.set(x, "interface", js.undefined)
+    inline def setInterfaceUndefined: Self = StObject.set(x, "interface", js.undefined)
     
-    @scala.inline
-    def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
+    inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
     
-    @scala.inline
-    def setMiniProgram(value: PlusShareWeixinMiniProgramOptions): Self = StObject.set(x, "miniProgram", value.asInstanceOf[js.Any])
+    inline def setMiniProgram(value: PlusShareWeixinMiniProgramOptions): Self = StObject.set(x, "miniProgram", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMiniProgramUndefined: Self = StObject.set(x, "miniProgram", js.undefined)
+    inline def setMiniProgramUndefined: Self = StObject.set(x, "miniProgram", js.undefined)
     
-    @scala.inline
-    def setPictures(value: js.Array[js.Any]): Self = StObject.set(x, "pictures", value.asInstanceOf[js.Any])
+    inline def setPictures(value: js.Array[js.Any]): Self = StObject.set(x, "pictures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPicturesUndefined: Self = StObject.set(x, "pictures", js.undefined)
+    inline def setPicturesUndefined: Self = StObject.set(x, "pictures", js.undefined)
     
-    @scala.inline
-    def setPicturesVarargs(value: js.Any*): Self = StObject.set(x, "pictures", js.Array(value :_*))
+    inline def setPicturesVarargs(value: js.Any*): Self = StObject.set(x, "pictures", js.Array(value :_*))
     
-    @scala.inline
-    def setThumbs(value: js.Array[js.Any]): Self = StObject.set(x, "thumbs", value.asInstanceOf[js.Any])
+    inline def setThumbs(value: js.Array[js.Any]): Self = StObject.set(x, "thumbs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbsUndefined: Self = StObject.set(x, "thumbs", js.undefined)
+    inline def setThumbsUndefined: Self = StObject.set(x, "thumbs", js.undefined)
     
-    @scala.inline
-    def setThumbsVarargs(value: js.Any*): Self = StObject.set(x, "thumbs", js.Array(value :_*))
+    inline def setThumbsVarargs(value: js.Any*): Self = StObject.set(x, "thumbs", js.Array(value :_*))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

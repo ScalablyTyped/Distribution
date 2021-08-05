@@ -18,19 +18,15 @@ trait PutContainerPolicyInput extends StObject {
 }
 object PutContainerPolicyInput {
   
-  @scala.inline
-  def apply(ContainerName: ContainerName, Policy: ContainerPolicy): PutContainerPolicyInput = {
+  inline def apply(ContainerName: ContainerName, Policy: ContainerPolicy): PutContainerPolicyInput = {
     val __obj = js.Dynamic.literal(ContainerName = ContainerName.asInstanceOf[js.Any], Policy = Policy.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutContainerPolicyInput]
   }
   
-  @scala.inline
-  implicit class PutContainerPolicyInputMutableBuilder[Self <: PutContainerPolicyInput] (val x: Self) extends AnyVal {
+  extension [Self <: PutContainerPolicyInput](x: Self) {
     
-    @scala.inline
-    def setContainerName(value: ContainerName): Self = StObject.set(x, "ContainerName", value.asInstanceOf[js.Any])
+    inline def setContainerName(value: ContainerName): Self = StObject.set(x, "ContainerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicy(value: ContainerPolicy): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: ContainerPolicy): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
   }
 }

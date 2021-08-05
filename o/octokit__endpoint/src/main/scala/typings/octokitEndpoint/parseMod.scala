@@ -12,6 +12,5 @@ object parseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parse(options: EndpointDefaults): RequestOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(options.asInstanceOf[js.Any]).asInstanceOf[RequestOptions]
+  inline def parse(options: EndpointDefaults): RequestOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(options.asInstanceOf[js.Any]).asInstanceOf[RequestOptions]
 }

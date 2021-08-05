@@ -34,8 +34,7 @@ trait GitRepository extends StObject {
 }
 object GitRepository {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     defaultBranch: String,
     id: String,
@@ -52,43 +51,30 @@ object GitRepository {
     __obj.asInstanceOf[GitRepository]
   }
   
-  @scala.inline
-  implicit class GitRepositoryMutableBuilder[Self <: GitRepository] (val x: Self) extends AnyVal {
+  extension [Self <: GitRepository](x: Self) {
     
-    @scala.inline
-    def setDefaultBranch(value: String): Self = StObject.set(x, "defaultBranch", value.asInstanceOf[js.Any])
+    inline def setDefaultBranch(value: String): Self = StObject.set(x, "defaultBranch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFork(value: Boolean): Self = StObject.set(x, "isFork", value.asInstanceOf[js.Any])
+    inline def setIsFork(value: Boolean): Self = StObject.set(x, "isFork", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentRepository(value: GitRepositoryRef): Self = StObject.set(x, "parentRepository", value.asInstanceOf[js.Any])
+    inline def setParentRepository(value: GitRepositoryRef): Self = StObject.set(x, "parentRepository", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProject(value: TeamProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: TeamProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteUrl(value: String): Self = StObject.set(x, "remoteUrl", value.asInstanceOf[js.Any])
+    inline def setRemoteUrl(value: String): Self = StObject.set(x, "remoteUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSshUrl(value: String): Self = StObject.set(x, "sshUrl", value.asInstanceOf[js.Any])
+    inline def setSshUrl(value: String): Self = StObject.set(x, "sshUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidRemoteUrls(value: js.Array[String]): Self = StObject.set(x, "validRemoteUrls", value.asInstanceOf[js.Any])
+    inline def setValidRemoteUrls(value: js.Array[String]): Self = StObject.set(x, "validRemoteUrls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidRemoteUrlsVarargs(value: String*): Self = StObject.set(x, "validRemoteUrls", js.Array(value :_*))
+    inline def setValidRemoteUrlsVarargs(value: String*): Self = StObject.set(x, "validRemoteUrls", js.Array(value :_*))
     
-    @scala.inline
-    def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

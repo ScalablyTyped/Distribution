@@ -18,10 +18,10 @@ object hmacMod {
   @JSImport("asmcrypto.js/dist_es8/hmac/hmac", "Hmac")
   @js.native
   abstract class Hmac[T /* <: Hash[sha1result | sha256result | sha512result] */] protected () extends StObject {
-    protected def this(hash: T, password: Uint8Array) = this()
-    protected def this(hash: T, password: Uint8Array, verify: Uint8Array) = this()
+    /* protected */ def this(hash: T, password: Uint8Array) = this()
+    /* protected */ def this(hash: T, password: Uint8Array, verify: Uint8Array) = this()
     
-    var BLOCK_SIZE: Double = js.native
+    /* protected */ var BLOCK_SIZE: Double = js.native
     
     var HMAC_SIZE: Double = js.native
     
@@ -31,15 +31,14 @@ object hmacMod {
     
     var hash: T = js.native
     
-    var key: Uint8Array = js.native
+    /* protected */ var key: Uint8Array = js.native
     
     def process(data: Uint8Array): this.type = js.native
     
     var result: Uint8Array | Null = js.native
     
-    var verify: Uint8Array | Null = js.native
+    /* protected */ var verify: Uint8Array | Null = js.native
   }
   
-  @scala.inline
-  def hmacKey(hash: Hash[sha1result | sha256result | sha512result], password: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("_hmac_key")(hash.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def hmacKey(hash: Hash[sha1result | sha256result | sha512result], password: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("_hmac_key")(hash.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
 }

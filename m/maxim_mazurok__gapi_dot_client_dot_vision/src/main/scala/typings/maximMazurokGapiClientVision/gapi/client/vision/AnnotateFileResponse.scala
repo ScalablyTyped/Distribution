@@ -20,40 +20,29 @@ trait AnnotateFileResponse extends StObject {
 }
 object AnnotateFileResponse {
   
-  @scala.inline
-  def apply(): AnnotateFileResponse = {
+  inline def apply(): AnnotateFileResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnnotateFileResponse]
   }
   
-  @scala.inline
-  implicit class AnnotateFileResponseMutableBuilder[Self <: AnnotateFileResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AnnotateFileResponse](x: Self) {
     
-    @scala.inline
-    def setError(value: Status): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Status): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setInputConfig(value: InputConfig): Self = StObject.set(x, "inputConfig", value.asInstanceOf[js.Any])
+    inline def setInputConfig(value: InputConfig): Self = StObject.set(x, "inputConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputConfigUndefined: Self = StObject.set(x, "inputConfig", js.undefined)
+    inline def setInputConfigUndefined: Self = StObject.set(x, "inputConfig", js.undefined)
     
-    @scala.inline
-    def setResponses(value: js.Array[AnnotateImageResponse]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: js.Array[AnnotateImageResponse]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
+    inline def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
     
-    @scala.inline
-    def setResponsesVarargs(value: AnnotateImageResponse*): Self = StObject.set(x, "responses", js.Array(value :_*))
+    inline def setResponsesVarargs(value: AnnotateImageResponse*): Self = StObject.set(x, "responses", js.Array(value :_*))
     
-    @scala.inline
-    def setTotalPages(value: Double): Self = StObject.set(x, "totalPages", value.asInstanceOf[js.Any])
+    inline def setTotalPages(value: Double): Self = StObject.set(x, "totalPages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalPagesUndefined: Self = StObject.set(x, "totalPages", js.undefined)
+    inline def setTotalPagesUndefined: Self = StObject.set(x, "totalPages", js.undefined)
   }
 }

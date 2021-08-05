@@ -23,34 +23,25 @@ trait GetStorageInfoSuccess extends StObject {
 }
 object GetStorageInfoSuccess {
   
-  @scala.inline
-  def apply(): GetStorageInfoSuccess = {
+  inline def apply(): GetStorageInfoSuccess = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetStorageInfoSuccess]
   }
   
-  @scala.inline
-  implicit class GetStorageInfoSuccessMutableBuilder[Self <: GetStorageInfoSuccess] (val x: Self) extends AnyVal {
+  extension [Self <: GetStorageInfoSuccess](x: Self) {
     
-    @scala.inline
-    def setCurrentSize(value: Double): Self = StObject.set(x, "currentSize", value.asInstanceOf[js.Any])
+    inline def setCurrentSize(value: Double): Self = StObject.set(x, "currentSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentSizeUndefined: Self = StObject.set(x, "currentSize", js.undefined)
+    inline def setCurrentSizeUndefined: Self = StObject.set(x, "currentSize", js.undefined)
     
-    @scala.inline
-    def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
+    inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
-    @scala.inline
-    def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
     
-    @scala.inline
-    def setLimitSize(value: Double): Self = StObject.set(x, "limitSize", value.asInstanceOf[js.Any])
+    inline def setLimitSize(value: Double): Self = StObject.set(x, "limitSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitSizeUndefined: Self = StObject.set(x, "limitSize", js.undefined)
+    inline def setLimitSizeUndefined: Self = StObject.set(x, "limitSize", js.undefined)
   }
 }

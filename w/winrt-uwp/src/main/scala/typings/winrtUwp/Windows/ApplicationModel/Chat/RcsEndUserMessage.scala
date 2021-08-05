@@ -41,8 +41,7 @@ trait RcsEndUserMessage extends StObject {
 }
 object RcsEndUserMessage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     actions: IVectorView[RcsEndUserMessageAction],
     isPinRequired: Boolean,
     sendResponseAsync: RcsEndUserMessageAction => IPromiseWithIAsyncAction,
@@ -55,28 +54,20 @@ object RcsEndUserMessage {
     __obj.asInstanceOf[RcsEndUserMessage]
   }
   
-  @scala.inline
-  implicit class RcsEndUserMessageMutableBuilder[Self <: RcsEndUserMessage] (val x: Self) extends AnyVal {
+  extension [Self <: RcsEndUserMessage](x: Self) {
     
-    @scala.inline
-    def setActions(value: IVectorView[RcsEndUserMessageAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: IVectorView[RcsEndUserMessageAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPinRequired(value: Boolean): Self = StObject.set(x, "isPinRequired", value.asInstanceOf[js.Any])
+    inline def setIsPinRequired(value: Boolean): Self = StObject.set(x, "isPinRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendResponseAsync(value: RcsEndUserMessageAction => IPromiseWithIAsyncAction): Self = StObject.set(x, "sendResponseAsync", js.Any.fromFunction1(value))
+    inline def setSendResponseAsync(value: RcsEndUserMessageAction => IPromiseWithIAsyncAction): Self = StObject.set(x, "sendResponseAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSendResponseWithPinAsync(value: (RcsEndUserMessageAction, String) => IPromiseWithIAsyncAction): Self = StObject.set(x, "sendResponseWithPinAsync", js.Any.fromFunction2(value))
+    inline def setSendResponseWithPinAsync(value: (RcsEndUserMessageAction, String) => IPromiseWithIAsyncAction): Self = StObject.set(x, "sendResponseWithPinAsync", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransportId(value: String): Self = StObject.set(x, "transportId", value.asInstanceOf[js.Any])
+    inline def setTransportId(value: String): Self = StObject.set(x, "transportId", value.asInstanceOf[js.Any])
   }
 }

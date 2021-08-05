@@ -39,38 +39,27 @@ object activationConfigMod {
   trait ActivationIdentifier extends StObject
   object ActivationIdentifier {
     
-    @scala.inline
-    def elu: elu_ = "elu".asInstanceOf[elu_]
+    inline def elu: elu_ = "elu".asInstanceOf[elu_]
     
-    @scala.inline
-    def hardSigmoid: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.hardSigmoid = "hardSigmoid".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.hardSigmoid]
+    inline def hardSigmoid: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.hardSigmoid = "hardSigmoid".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.hardSigmoid]
     
-    @scala.inline
-    def linear: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.linear = "linear".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.linear]
+    inline def linear: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.linear = "linear".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.linear]
     
-    @scala.inline
-    def relu: relu_ = "relu".asInstanceOf[relu_]
+    inline def relu: relu_ = "relu".asInstanceOf[relu_]
     
-    @scala.inline
-    def relu6: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.relu6 = "relu6".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.relu6]
+    inline def relu6: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.relu6 = "relu6".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.relu6]
     
-    @scala.inline
-    def selu: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.selu = "selu".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.selu]
+    inline def selu: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.selu = "selu".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.selu]
     
-    @scala.inline
-    def sigmoid: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.sigmoid = "sigmoid".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.sigmoid]
+    inline def sigmoid: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.sigmoid = "sigmoid".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.sigmoid]
     
-    @scala.inline
-    def softmax: softmax_ = "softmax".asInstanceOf[softmax_]
+    inline def softmax: softmax_ = "softmax".asInstanceOf[softmax_]
     
-    @scala.inline
-    def softplus: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.softplus = "softplus".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.softplus]
+    inline def softplus: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.softplus = "softplus".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.softplus]
     
-    @scala.inline
-    def softsign: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.softsign = "softsign".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.softsign]
+    inline def softsign: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.softsign = "softsign".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.softsign]
     
-    @scala.inline
-    def tanh: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.tanh = "tanh".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.tanh]
+    inline def tanh: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.tanh = "tanh".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.tanh]
   }
   
   type ActivationSerialization = /* import warning: importer.ImportType#apply Failed type conversion: std.Array<'linear' | 'relu' | 'elu' | 'relu6' | 'selu' | 'sigmoid' | 'softmax' | 'softplus' | 'tanh' | 'hard_sigmoid' | 'softsign'>[number] */ js.Any

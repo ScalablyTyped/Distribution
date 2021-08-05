@@ -21,31 +21,23 @@ trait SchemaReportRow extends StObject {
 }
 object SchemaReportRow {
   
-  @scala.inline
-  def apply(): SchemaReportRow = {
+  inline def apply(): SchemaReportRow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaReportRow]
   }
   
-  @scala.inline
-  implicit class SchemaReportRowMutableBuilder[Self <: SchemaReportRow] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaReportRow](x: Self) {
     
-    @scala.inline
-    def setDimensions(value: js.Array[String]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: js.Array[String]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
+    inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
     
-    @scala.inline
-    def setDimensionsVarargs(value: String*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: String*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
     
-    @scala.inline
-    def setMetrics(value: js.Array[SchemaDateRangeValues]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+    inline def setMetrics(value: js.Array[SchemaDateRangeValues]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
+    inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    @scala.inline
-    def setMetricsVarargs(value: SchemaDateRangeValues*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: SchemaDateRangeValues*): Self = StObject.set(x, "metrics", js.Array(value :_*))
   }
 }

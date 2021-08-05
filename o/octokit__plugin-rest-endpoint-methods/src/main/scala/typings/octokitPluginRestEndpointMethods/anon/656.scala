@@ -20,8 +20,7 @@ trait `656` extends StObject {
 }
 object `656` {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: RequestParameters & (Omit[BillingGetSharedStorageBillingUserEndpoint, baseUrl | headers | mediaType]),
     response: OctokitResponse[BillingGetSharedStorageBillingUserResponseData]
   ): `656` = {
@@ -29,15 +28,12 @@ object `656` {
     __obj.asInstanceOf[`656`]
   }
   
-  @scala.inline
-  implicit class `656MutableBuilder`[Self <: `656`] (val x: Self) extends AnyVal {
+  extension [Self <: `656`](x: Self) {
     
-    @scala.inline
-    def setParameters(
+    inline def setParameters(
       value: RequestParameters & (Omit[BillingGetSharedStorageBillingUserEndpoint, baseUrl | headers | mediaType])
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[BillingGetSharedStorageBillingUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[BillingGetSharedStorageBillingUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

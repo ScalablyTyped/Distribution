@@ -25,27 +25,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlSourceType extends StObject
 object XlSourceType {
   
-  @scala.inline
-  def xlSourceAutoFilter: `3` = 3.asInstanceOf[`3`]
+  inline def xlSourceAutoFilter: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def xlSourceChart: `5` = 5.asInstanceOf[`5`]
+  inline def xlSourceChart: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def xlSourcePivotTable: `6` = 6.asInstanceOf[`6`]
+  inline def xlSourcePivotTable: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def xlSourcePrintArea: `2` = 2.asInstanceOf[`2`]
+  inline def xlSourcePrintArea: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlSourceQuery: `7` = 7.asInstanceOf[`7`]
+  inline def xlSourceQuery: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def xlSourceRange: `4` = 4.asInstanceOf[`4`]
+  inline def xlSourceRange: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def xlSourceSheet: `1` = 1.asInstanceOf[`1`]
+  inline def xlSourceSheet: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlSourceWorkbook: `0` = 0.asInstanceOf[`0`]
+  inline def xlSourceWorkbook: `0` = 0.asInstanceOf[`0`]
 }

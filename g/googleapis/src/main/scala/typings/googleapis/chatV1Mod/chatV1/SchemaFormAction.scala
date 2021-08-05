@@ -23,28 +23,21 @@ trait SchemaFormAction extends StObject {
 }
 object SchemaFormAction {
   
-  @scala.inline
-  def apply(): SchemaFormAction = {
+  inline def apply(): SchemaFormAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFormAction]
   }
   
-  @scala.inline
-  implicit class SchemaFormActionMutableBuilder[Self <: SchemaFormAction] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFormAction](x: Self) {
     
-    @scala.inline
-    def setActionMethodName(value: String): Self = StObject.set(x, "actionMethodName", value.asInstanceOf[js.Any])
+    inline def setActionMethodName(value: String): Self = StObject.set(x, "actionMethodName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionMethodNameUndefined: Self = StObject.set(x, "actionMethodName", js.undefined)
+    inline def setActionMethodNameUndefined: Self = StObject.set(x, "actionMethodName", js.undefined)
     
-    @scala.inline
-    def setParameters(value: js.Array[SchemaActionParameter]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: js.Array[SchemaActionParameter]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setParametersVarargs(value: SchemaActionParameter*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: SchemaActionParameter*): Self = StObject.set(x, "parameters", js.Array(value :_*))
   }
 }

@@ -12,19 +12,15 @@ trait fragParsedData extends StObject {
 }
 object fragParsedData {
   
-  @scala.inline
-  def apply(frag: Fragment, id: String): fragParsedData = {
+  inline def apply(frag: Fragment, id: String): fragParsedData = {
     val __obj = js.Dynamic.literal(frag = frag.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[fragParsedData]
   }
   
-  @scala.inline
-  implicit class fragParsedDataMutableBuilder[Self <: fragParsedData] (val x: Self) extends AnyVal {
+  extension [Self <: fragParsedData](x: Self) {
     
-    @scala.inline
-    def setFrag(value: Fragment): Self = StObject.set(x, "frag", value.asInstanceOf[js.Any])
+    inline def setFrag(value: Fragment): Self = StObject.set(x, "frag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

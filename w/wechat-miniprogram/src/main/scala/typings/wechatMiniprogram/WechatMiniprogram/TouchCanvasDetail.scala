@@ -18,22 +18,17 @@ trait TouchCanvasDetail extends StObject {
 }
 object TouchCanvasDetail {
   
-  @scala.inline
-  def apply(identifier: Double, x: Double, y: Double): TouchCanvasDetail = {
+  inline def apply(identifier: Double, x: Double, y: Double): TouchCanvasDetail = {
     val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchCanvasDetail]
   }
   
-  @scala.inline
-  implicit class TouchCanvasDetailMutableBuilder[Self <: TouchCanvasDetail] (val x: Self) extends AnyVal {
+  extension [Self <: TouchCanvasDetail](x: Self) {
     
-    @scala.inline
-    def setIdentifier(value: Double): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: Double): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

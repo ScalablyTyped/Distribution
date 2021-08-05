@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DefaultSortTypes extends StObject
 object DefaultSortTypes {
   
-  @scala.inline
-  def alphanumeric: typings.reactTable.reactTableStrings.alphanumeric = "alphanumeric".asInstanceOf[typings.reactTable.reactTableStrings.alphanumeric]
+  inline def alphanumeric: typings.reactTable.reactTableStrings.alphanumeric = "alphanumeric".asInstanceOf[typings.reactTable.reactTableStrings.alphanumeric]
   
-  @scala.inline
-  def basic: typings.reactTable.reactTableStrings.basic = "basic".asInstanceOf[typings.reactTable.reactTableStrings.basic]
+  inline def basic: typings.reactTable.reactTableStrings.basic = "basic".asInstanceOf[typings.reactTable.reactTableStrings.basic]
   
-  @scala.inline
-  def datetime: typings.reactTable.reactTableStrings.datetime = "datetime".asInstanceOf[typings.reactTable.reactTableStrings.datetime]
+  inline def datetime: typings.reactTable.reactTableStrings.datetime = "datetime".asInstanceOf[typings.reactTable.reactTableStrings.datetime]
 }

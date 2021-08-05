@@ -16,21 +16,17 @@ object anon {
   }
   object Stat {
     
-    @scala.inline
-    def apply(stat: Stats, `type`: InputMetadataType): Stat = {
+    inline def apply(stat: Stats, `type`: InputMetadataType): Stat = {
       val __obj = js.Dynamic.literal(stat = stat.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Stat]
     }
     
-    @scala.inline
-    implicit class StatMutableBuilder[Self <: Stat] (val x: Self) extends AnyVal {
+    extension [Self <: Stat](x: Self) {
       
-      @scala.inline
-      def setStat(value: Stats): Self = StObject.set(x, "stat", value.asInstanceOf[js.Any])
+      inline def setStat(value: Stats): Self = StObject.set(x, "stat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: InputMetadataType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: InputMetadataType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

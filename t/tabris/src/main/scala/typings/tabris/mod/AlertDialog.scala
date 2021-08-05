@@ -96,12 +96,10 @@ object AlertDialog {
     * the given JSX element from `any` to an actual AlertDialog.
     * @param alertDialog The alert dialog to open
     */
-  @scala.inline
-  def open(alertDialog: AlertDialog): AlertDialog = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(alertDialog.asInstanceOf[js.Any]).asInstanceOf[AlertDialog]
+  inline def open(alertDialog: AlertDialog): AlertDialog = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(alertDialog.asInstanceOf[js.Any]).asInstanceOf[AlertDialog]
   /**
     * Creates and opens an alert dialog with one 'OK' button and the given message.
     * @param message The message to display
     */
-  @scala.inline
-  def open(message: String): AlertDialog = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(message.asInstanceOf[js.Any]).asInstanceOf[AlertDialog]
+  inline def open(message: String): AlertDialog = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(message.asInstanceOf[js.Any]).asInstanceOf[AlertDialog]
 }

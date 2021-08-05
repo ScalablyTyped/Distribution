@@ -13,16 +13,13 @@ trait GetConfigurationSetRequest extends StObject {
 }
 object GetConfigurationSetRequest {
   
-  @scala.inline
-  def apply(ConfigurationSetName: ConfigurationSetName): GetConfigurationSetRequest = {
+  inline def apply(ConfigurationSetName: ConfigurationSetName): GetConfigurationSetRequest = {
     val __obj = js.Dynamic.literal(ConfigurationSetName = ConfigurationSetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetConfigurationSetRequest]
   }
   
-  @scala.inline
-  implicit class GetConfigurationSetRequestMutableBuilder[Self <: GetConfigurationSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetConfigurationSetRequest](x: Self) {
     
-    @scala.inline
-    def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
+    inline def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
   }
 }

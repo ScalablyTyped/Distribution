@@ -12,8 +12,7 @@ trait Notification extends StObject {
 }
 object Notification {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     notification: /* import warning: importer.ImportType#apply Failed type conversion: std.Array<@storybook/api.@storybook/api/dist/modules/notifications.Notification>[0] */ js.Any,
     onDismissNotification: String => Unit
   ): Notification = {
@@ -21,15 +20,12 @@ object Notification {
     __obj.asInstanceOf[Notification]
   }
   
-  @scala.inline
-  implicit class NotificationMutableBuilder[Self <: Notification] (val x: Self) extends AnyVal {
+  extension [Self <: Notification](x: Self) {
     
-    @scala.inline
-    def setNotification(
+    inline def setNotification(
       value: /* import warning: importer.ImportType#apply Failed type conversion: std.Array<@storybook/api.@storybook/api/dist/modules/notifications.Notification>[0] */ js.Any
     ): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnDismissNotification(value: String => Unit): Self = StObject.set(x, "onDismissNotification", js.Any.fromFunction1(value))
+    inline def setOnDismissNotification(value: String => Unit): Self = StObject.set(x, "onDismissNotification", js.Any.fromFunction1(value))
   }
 }

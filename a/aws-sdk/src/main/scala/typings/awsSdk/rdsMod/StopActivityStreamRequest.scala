@@ -18,22 +18,17 @@ trait StopActivityStreamRequest extends StObject {
 }
 object StopActivityStreamRequest {
   
-  @scala.inline
-  def apply(ResourceArn: String): StopActivityStreamRequest = {
+  inline def apply(ResourceArn: String): StopActivityStreamRequest = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopActivityStreamRequest]
   }
   
-  @scala.inline
-  implicit class StopActivityStreamRequestMutableBuilder[Self <: StopActivityStreamRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StopActivityStreamRequest](x: Self) {
     
-    @scala.inline
-    def setApplyImmediately(value: BooleanOptional): Self = StObject.set(x, "ApplyImmediately", value.asInstanceOf[js.Any])
+    inline def setApplyImmediately(value: BooleanOptional): Self = StObject.set(x, "ApplyImmediately", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplyImmediatelyUndefined: Self = StObject.set(x, "ApplyImmediately", js.undefined)
+    inline def setApplyImmediatelyUndefined: Self = StObject.set(x, "ApplyImmediately", js.undefined)
     
-    @scala.inline
-    def setResourceArn(value: String): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: String): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
   }
 }

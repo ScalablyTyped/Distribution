@@ -93,23 +93,18 @@ object membersMod {
   }
   object MembersServices {
     
-    @scala.inline
-    def apply(session: Session, syncClient: SyncClient, users: Users): MembersServices = {
+    inline def apply(session: Session, syncClient: SyncClient, users: Users): MembersServices = {
       val __obj = js.Dynamic.literal(session = session.asInstanceOf[js.Any], syncClient = syncClient.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
       __obj.asInstanceOf[MembersServices]
     }
     
-    @scala.inline
-    implicit class MembersServicesMutableBuilder[Self <: MembersServices] (val x: Self) extends AnyVal {
+    extension [Self <: MembersServices](x: Self) {
       
-      @scala.inline
-      def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+      inline def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyncClient(value: SyncClient): Self = StObject.set(x, "syncClient", value.asInstanceOf[js.Any])
+      inline def setSyncClient(value: SyncClient): Self = StObject.set(x, "syncClient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsers(value: Users): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+      inline def setUsers(value: Users): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     }
   }
 }

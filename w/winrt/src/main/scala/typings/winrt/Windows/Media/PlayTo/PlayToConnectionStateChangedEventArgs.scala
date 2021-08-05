@@ -9,8 +9,7 @@ trait PlayToConnectionStateChangedEventArgs
      with IPlayToConnectionStateChangedEventArgs
 object PlayToConnectionStateChangedEventArgs {
   
-  @scala.inline
-  def apply(currentState: PlayToConnectionState, previousState: PlayToConnectionState): PlayToConnectionStateChangedEventArgs = {
+  inline def apply(currentState: PlayToConnectionState, previousState: PlayToConnectionState): PlayToConnectionStateChangedEventArgs = {
     val __obj = js.Dynamic.literal(currentState = currentState.asInstanceOf[js.Any], previousState = previousState.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlayToConnectionStateChangedEventArgs]
   }

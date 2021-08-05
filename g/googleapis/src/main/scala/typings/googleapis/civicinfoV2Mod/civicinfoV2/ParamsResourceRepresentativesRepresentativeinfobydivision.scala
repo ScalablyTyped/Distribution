@@ -51,55 +51,39 @@ trait ParamsResourceRepresentativesRepresentativeinfobydivision
 }
 object ParamsResourceRepresentativesRepresentativeinfobydivision {
   
-  @scala.inline
-  def apply(): ParamsResourceRepresentativesRepresentativeinfobydivision = {
+  inline def apply(): ParamsResourceRepresentativesRepresentativeinfobydivision = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceRepresentativesRepresentativeinfobydivision]
   }
   
-  @scala.inline
-  implicit class ParamsResourceRepresentativesRepresentativeinfobydivisionMutableBuilder[Self <: ParamsResourceRepresentativesRepresentativeinfobydivision] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceRepresentativesRepresentativeinfobydivision](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setLevels(value: js.Array[String]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
+    inline def setLevels(value: js.Array[String]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
+    inline def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
     
-    @scala.inline
-    def setLevelsVarargs(value: String*): Self = StObject.set(x, "levels", js.Array(value :_*))
+    inline def setLevelsVarargs(value: String*): Self = StObject.set(x, "levels", js.Array(value :_*))
     
-    @scala.inline
-    def setOcdId(value: String): Self = StObject.set(x, "ocdId", value.asInstanceOf[js.Any])
+    inline def setOcdId(value: String): Self = StObject.set(x, "ocdId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOcdIdUndefined: Self = StObject.set(x, "ocdId", js.undefined)
+    inline def setOcdIdUndefined: Self = StObject.set(x, "ocdId", js.undefined)
     
-    @scala.inline
-    def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+    inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
+    inline def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaDivisionRepresentativeInfoRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaDivisionRepresentativeInfoRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
-    @scala.inline
-    def setRoles(value: js.Array[String]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
+    inline def setRoles(value: js.Array[String]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
+    inline def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
     
-    @scala.inline
-    def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value :_*))
+    inline def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value :_*))
   }
 }

@@ -18,43 +18,31 @@ trait CombinedData extends StObject {
 }
 object CombinedData {
   
-  @scala.inline
-  def apply(): CombinedData = {
+  inline def apply(): CombinedData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CombinedData]
   }
   
-  @scala.inline
-  implicit class CombinedDataMutableBuilder[Self <: CombinedData] (val x: Self) extends AnyVal {
+  extension [Self <: CombinedData](x: Self) {
     
-    @scala.inline
-    def setBarData(value: BarData): Self = StObject.set(x, "barData", value.asInstanceOf[js.Any])
+    inline def setBarData(value: BarData): Self = StObject.set(x, "barData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBarDataUndefined: Self = StObject.set(x, "barData", js.undefined)
+    inline def setBarDataUndefined: Self = StObject.set(x, "barData", js.undefined)
     
-    @scala.inline
-    def setBubbleData(value: BubbleData): Self = StObject.set(x, "bubbleData", value.asInstanceOf[js.Any])
+    inline def setBubbleData(value: BubbleData): Self = StObject.set(x, "bubbleData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBubbleDataUndefined: Self = StObject.set(x, "bubbleData", js.undefined)
+    inline def setBubbleDataUndefined: Self = StObject.set(x, "bubbleData", js.undefined)
     
-    @scala.inline
-    def setCandleData(value: CandleStickData): Self = StObject.set(x, "candleData", value.asInstanceOf[js.Any])
+    inline def setCandleData(value: CandleStickData): Self = StObject.set(x, "candleData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCandleDataUndefined: Self = StObject.set(x, "candleData", js.undefined)
+    inline def setCandleDataUndefined: Self = StObject.set(x, "candleData", js.undefined)
     
-    @scala.inline
-    def setLineData(value: LineData): Self = StObject.set(x, "lineData", value.asInstanceOf[js.Any])
+    inline def setLineData(value: LineData): Self = StObject.set(x, "lineData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineDataUndefined: Self = StObject.set(x, "lineData", js.undefined)
+    inline def setLineDataUndefined: Self = StObject.set(x, "lineData", js.undefined)
     
-    @scala.inline
-    def setScatterData(value: ScatterData): Self = StObject.set(x, "scatterData", value.asInstanceOf[js.Any])
+    inline def setScatterData(value: ScatterData): Self = StObject.set(x, "scatterData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScatterDataUndefined: Self = StObject.set(x, "scatterData", js.undefined)
+    inline def setScatterDataUndefined: Self = StObject.set(x, "scatterData", js.undefined)
   }
 }

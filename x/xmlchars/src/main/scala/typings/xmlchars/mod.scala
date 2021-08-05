@@ -34,12 +34,10 @@ object mod {
       }
       
       /* was `typeof nsed3.isNCNameChar` */
-      @scala.inline
-      def isNCNameChar(c: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNCNameChar")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def isNCNameChar(c: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNCNameChar")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
       /* was `typeof nsed3.isNCNameStartChar` */
-      @scala.inline
-      def isNCNameStartChar(c: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNCNameStartChar")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def isNCNameStartChar(c: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNCNameStartChar")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
       /**
         * Regular expression. These correspond to the productions of the same name
@@ -199,20 +197,16 @@ object mod {
       }
       
       /* was `typeof ed5.isChar` */
-      @scala.inline
-      def isChar(c: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isChar")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def isChar(c: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isChar")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
       /* was `typeof ed5.isNameChar` */
-      @scala.inline
-      def isNameChar(c: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNameChar")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def isNameChar(c: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNameChar")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
       /* was `typeof ed5.isNameStartChar` */
-      @scala.inline
-      def isNameStartChar(c: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNameStartChar")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def isNameStartChar(c: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNameStartChar")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
       /* was `typeof ed5.isS` */
-      @scala.inline
-      def isS(c: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isS")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def isS(c: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isS")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
       /**
         * Lists of characters.

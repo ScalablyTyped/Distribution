@@ -13,19 +13,15 @@ trait Row extends StObject {
 }
 object Row {
   
-  @scala.inline
-  def apply(Data: DatumList): Row = {
+  inline def apply(Data: DatumList): Row = {
     val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any])
     __obj.asInstanceOf[Row]
   }
   
-  @scala.inline
-  implicit class RowMutableBuilder[Self <: Row] (val x: Self) extends AnyVal {
+  extension [Self <: Row](x: Self) {
     
-    @scala.inline
-    def setData(value: DatumList): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+    inline def setData(value: DatumList): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: Datum*): Self = StObject.set(x, "Data", js.Array(value :_*))
+    inline def setDataVarargs(value: Datum*): Self = StObject.set(x, "Data", js.Array(value :_*))
   }
 }

@@ -53,8 +53,7 @@ trait Observer[T] extends StObject {
 }
 object Observer {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     asObserver: () => Observer[T],
     checked: () => CheckedObserver[T],
     makeSafe: IDisposable => Observer[T],
@@ -68,31 +67,22 @@ object Observer {
     __obj.asInstanceOf[Observer[T]]
   }
   
-  @scala.inline
-  implicit class ObserverMutableBuilder[Self <: Observer[?], T] (val x: Self & Observer[T]) extends AnyVal {
+  extension [Self <: Observer[?], T](x: Self & Observer[T]) {
     
-    @scala.inline
-    def setAsObserver(value: () => Observer[T]): Self = StObject.set(x, "asObserver", js.Any.fromFunction0(value))
+    inline def setAsObserver(value: () => Observer[T]): Self = StObject.set(x, "asObserver", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setChecked(value: () => CheckedObserver[T]): Self = StObject.set(x, "checked", js.Any.fromFunction0(value))
+    inline def setChecked(value: () => CheckedObserver[T]): Self = StObject.set(x, "checked", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMakeSafe(value: IDisposable => Observer[T]): Self = StObject.set(x, "makeSafe", js.Any.fromFunction1(value))
+    inline def setMakeSafe(value: IDisposable => Observer[T]): Self = StObject.set(x, "makeSafe", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNotifyOn(value: IScheduler => Observer[T]): Self = StObject.set(x, "notifyOn", js.Any.fromFunction1(value))
+    inline def setNotifyOn(value: IScheduler => Observer[T]): Self = StObject.set(x, "notifyOn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnCompleted(value: () => Unit): Self = StObject.set(x, "onCompleted", js.Any.fromFunction0(value))
+    inline def setOnCompleted(value: () => Unit): Self = StObject.set(x, "onCompleted", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnError(value: js.Any => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    inline def setOnError(value: js.Any => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnNext(value: T => Unit): Self = StObject.set(x, "onNext", js.Any.fromFunction1(value))
+    inline def setOnNext(value: T => Unit): Self = StObject.set(x, "onNext", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToNotifier(value: () => js.Function1[/* notification */ Notification[T], Unit]): Self = StObject.set(x, "toNotifier", js.Any.fromFunction0(value))
+    inline def setToNotifier(value: () => js.Function1[/* notification */ Notification[T], Unit]): Self = StObject.set(x, "toNotifier", js.Any.fromFunction0(value))
   }
 }

@@ -14,8 +14,7 @@ object useFocusManagerMod {
     * This hook exposes methods to enable or disable focus management for all
     * components or manually switch focus to next or previous components.
     */
-  @scala.inline
-  def default(): Output = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Output]
+  inline def default(): Output = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Output]
   
   trait Output extends StObject {
     
@@ -45,8 +44,7 @@ object useFocusManagerMod {
   }
   object Output {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       disableFocus: () => Unit,
       enableFocus: () => Unit,
       focusNext: () => Unit,
@@ -56,20 +54,15 @@ object useFocusManagerMod {
       __obj.asInstanceOf[Output]
     }
     
-    @scala.inline
-    implicit class OutputMutableBuilder[Self <: Output] (val x: Self) extends AnyVal {
+    extension [Self <: Output](x: Self) {
       
-      @scala.inline
-      def setDisableFocus(value: () => Unit): Self = StObject.set(x, "disableFocus", js.Any.fromFunction0(value))
+      inline def setDisableFocus(value: () => Unit): Self = StObject.set(x, "disableFocus", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnableFocus(value: () => Unit): Self = StObject.set(x, "enableFocus", js.Any.fromFunction0(value))
+      inline def setEnableFocus(value: () => Unit): Self = StObject.set(x, "enableFocus", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFocusNext(value: () => Unit): Self = StObject.set(x, "focusNext", js.Any.fromFunction0(value))
+      inline def setFocusNext(value: () => Unit): Self = StObject.set(x, "focusNext", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFocusPrevious(value: () => Unit): Self = StObject.set(x, "focusPrevious", js.Any.fromFunction0(value))
+      inline def setFocusPrevious(value: () => Unit): Self = StObject.set(x, "focusPrevious", js.Any.fromFunction0(value))
     }
   }
 }

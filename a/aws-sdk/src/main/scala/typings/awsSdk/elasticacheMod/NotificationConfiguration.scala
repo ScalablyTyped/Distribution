@@ -18,25 +18,19 @@ trait NotificationConfiguration extends StObject {
 }
 object NotificationConfiguration {
   
-  @scala.inline
-  def apply(): NotificationConfiguration = {
+  inline def apply(): NotificationConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NotificationConfiguration]
   }
   
-  @scala.inline
-  implicit class NotificationConfigurationMutableBuilder[Self <: NotificationConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationConfiguration](x: Self) {
     
-    @scala.inline
-    def setTopicArn(value: String): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
+    inline def setTopicArn(value: String): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicArnUndefined: Self = StObject.set(x, "TopicArn", js.undefined)
+    inline def setTopicArnUndefined: Self = StObject.set(x, "TopicArn", js.undefined)
     
-    @scala.inline
-    def setTopicStatus(value: String): Self = StObject.set(x, "TopicStatus", value.asInstanceOf[js.Any])
+    inline def setTopicStatus(value: String): Self = StObject.set(x, "TopicStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicStatusUndefined: Self = StObject.set(x, "TopicStatus", js.undefined)
+    inline def setTopicStatusUndefined: Self = StObject.set(x, "TopicStatus", js.undefined)
   }
 }

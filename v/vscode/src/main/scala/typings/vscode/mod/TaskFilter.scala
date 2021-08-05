@@ -19,25 +19,19 @@ trait TaskFilter extends StObject {
 }
 object TaskFilter {
   
-  @scala.inline
-  def apply(): TaskFilter = {
+  inline def apply(): TaskFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TaskFilter]
   }
   
-  @scala.inline
-  implicit class TaskFilterMutableBuilder[Self <: TaskFilter] (val x: Self) extends AnyVal {
+  extension [Self <: TaskFilter](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

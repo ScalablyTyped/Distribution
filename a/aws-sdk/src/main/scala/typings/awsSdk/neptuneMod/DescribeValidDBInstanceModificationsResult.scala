@@ -10,19 +10,15 @@ trait DescribeValidDBInstanceModificationsResult extends StObject {
 }
 object DescribeValidDBInstanceModificationsResult {
   
-  @scala.inline
-  def apply(): DescribeValidDBInstanceModificationsResult = {
+  inline def apply(): DescribeValidDBInstanceModificationsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeValidDBInstanceModificationsResult]
   }
   
-  @scala.inline
-  implicit class DescribeValidDBInstanceModificationsResultMutableBuilder[Self <: DescribeValidDBInstanceModificationsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeValidDBInstanceModificationsResult](x: Self) {
     
-    @scala.inline
-    def setValidDBInstanceModificationsMessage(value: ValidDBInstanceModificationsMessage): Self = StObject.set(x, "ValidDBInstanceModificationsMessage", value.asInstanceOf[js.Any])
+    inline def setValidDBInstanceModificationsMessage(value: ValidDBInstanceModificationsMessage): Self = StObject.set(x, "ValidDBInstanceModificationsMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidDBInstanceModificationsMessageUndefined: Self = StObject.set(x, "ValidDBInstanceModificationsMessage", js.undefined)
+    inline def setValidDBInstanceModificationsMessageUndefined: Self = StObject.set(x, "ValidDBInstanceModificationsMessage", js.undefined)
   }
 }

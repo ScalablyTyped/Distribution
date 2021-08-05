@@ -27,17 +27,14 @@ object mockdataMod {
     @JSImport("@storybook/ui/dist/components/sidebar/mockdata", "mockExpanded.noRootSecond")
     @js.native
     def noRootSecond: `112` = js.native
-    @scala.inline
-    def noRootSecond_=(x: `112`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("noRootSecond")(x.asInstanceOf[js.Any])
+    inline def noRootSecond_=(x: `112`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("noRootSecond")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def noRoot_=(x: `112`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("noRoot")(x.asInstanceOf[js.Any])
+    inline def noRoot_=(x: `112`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("noRoot")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/ui/dist/components/sidebar/mockdata", "mockExpanded.withRoot")
     @js.native
     def withRoot: `111` = js.native
-    @scala.inline
-    def withRoot_=(x: `111`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("withRoot")(x.asInstanceOf[js.Any])
+    inline def withRoot_=(x: `111`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("withRoot")(x.asInstanceOf[js.Any])
   }
   
   object mockSelected {
@@ -49,14 +46,12 @@ object mockdataMod {
     @JSImport("@storybook/ui/dist/components/sidebar/mockdata", "mockSelected.noRoot")
     @js.native
     def noRoot: `112` = js.native
-    @scala.inline
-    def noRoot_=(x: `112`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("noRoot")(x.asInstanceOf[js.Any])
+    inline def noRoot_=(x: `112`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("noRoot")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/ui/dist/components/sidebar/mockdata", "mockSelected.withRoot")
     @js.native
     def withRoot: `111` = js.native
-    @scala.inline
-    def withRoot_=(x: `111`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("withRoot")(x.asInstanceOf[js.Any])
+    inline def withRoot_=(x: `111`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("withRoot")(x.asInstanceOf[js.Any])
   }
   
   type MockDataSet_ = Record[String, StoriesHash]

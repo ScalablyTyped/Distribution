@@ -84,17 +84,14 @@ object pivotTypesMod {
   }
   object IPivot {
     
-    @scala.inline
-    def apply(focus: () => Unit): IPivot = {
+    inline def apply(focus: () => Unit): IPivot = {
       val __obj = js.Dynamic.literal(focus = js.Any.fromFunction0(focus))
       __obj.asInstanceOf[IPivot]
     }
     
-    @scala.inline
-    implicit class IPivotMutableBuilder[Self <: IPivot] (val x: Self) extends AnyVal {
+    extension [Self <: IPivot](x: Self) {
       
-      @scala.inline
-      def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+      inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     }
   }
   
@@ -196,103 +193,72 @@ object pivotTypesMod {
   }
   object IPivotProps {
     
-    @scala.inline
-    def apply(): IPivotProps = {
+    inline def apply(): IPivotProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IPivotProps]
     }
     
-    @scala.inline
-    implicit class IPivotPropsMutableBuilder[Self <: IPivotProps] (val x: Self) extends AnyVal {
+    extension [Self <: IPivotProps](x: Self) {
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[IPivot]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[IPivot]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ IPivot | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ IPivot | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setDefaultSelectedIndex(value: Double): Self = StObject.set(x, "defaultSelectedIndex", value.asInstanceOf[js.Any])
+      inline def setDefaultSelectedIndex(value: Double): Self = StObject.set(x, "defaultSelectedIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultSelectedIndexUndefined: Self = StObject.set(x, "defaultSelectedIndex", js.undefined)
+      inline def setDefaultSelectedIndexUndefined: Self = StObject.set(x, "defaultSelectedIndex", js.undefined)
       
-      @scala.inline
-      def setDefaultSelectedKey(value: String): Self = StObject.set(x, "defaultSelectedKey", value.asInstanceOf[js.Any])
+      inline def setDefaultSelectedKey(value: String): Self = StObject.set(x, "defaultSelectedKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultSelectedKeyUndefined: Self = StObject.set(x, "defaultSelectedKey", js.undefined)
+      inline def setDefaultSelectedKeyUndefined: Self = StObject.set(x, "defaultSelectedKey", js.undefined)
       
-      @scala.inline
-      def setGetTabId(value: (/* itemKey */ String, /* index */ Double) => String): Self = StObject.set(x, "getTabId", js.Any.fromFunction2(value))
+      inline def setGetTabId(value: (/* itemKey */ String, /* index */ Double) => String): Self = StObject.set(x, "getTabId", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetTabIdUndefined: Self = StObject.set(x, "getTabId", js.undefined)
+      inline def setGetTabIdUndefined: Self = StObject.set(x, "getTabId", js.undefined)
       
-      @scala.inline
-      def setHeadersOnly(value: Boolean): Self = StObject.set(x, "headersOnly", value.asInstanceOf[js.Any])
+      inline def setHeadersOnly(value: Boolean): Self = StObject.set(x, "headersOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersOnlyUndefined: Self = StObject.set(x, "headersOnly", js.undefined)
+      inline def setHeadersOnlyUndefined: Self = StObject.set(x, "headersOnly", js.undefined)
       
-      @scala.inline
-      def setInitialSelectedIndex(value: Double): Self = StObject.set(x, "initialSelectedIndex", value.asInstanceOf[js.Any])
+      inline def setInitialSelectedIndex(value: Double): Self = StObject.set(x, "initialSelectedIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialSelectedIndexUndefined: Self = StObject.set(x, "initialSelectedIndex", js.undefined)
+      inline def setInitialSelectedIndexUndefined: Self = StObject.set(x, "initialSelectedIndex", js.undefined)
       
-      @scala.inline
-      def setInitialSelectedKey(value: String): Self = StObject.set(x, "initialSelectedKey", value.asInstanceOf[js.Any])
+      inline def setInitialSelectedKey(value: String): Self = StObject.set(x, "initialSelectedKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialSelectedKeyUndefined: Self = StObject.set(x, "initialSelectedKey", js.undefined)
+      inline def setInitialSelectedKeyUndefined: Self = StObject.set(x, "initialSelectedKey", js.undefined)
       
-      @scala.inline
-      def setLinkFormat(value: PivotLinkFormat): Self = StObject.set(x, "linkFormat", value.asInstanceOf[js.Any])
+      inline def setLinkFormat(value: PivotLinkFormat): Self = StObject.set(x, "linkFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkFormatUndefined: Self = StObject.set(x, "linkFormat", js.undefined)
+      inline def setLinkFormatUndefined: Self = StObject.set(x, "linkFormat", js.undefined)
       
-      @scala.inline
-      def setLinkSize(value: PivotLinkSize): Self = StObject.set(x, "linkSize", value.asInstanceOf[js.Any])
+      inline def setLinkSize(value: PivotLinkSize): Self = StObject.set(x, "linkSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkSizeUndefined: Self = StObject.set(x, "linkSize", js.undefined)
+      inline def setLinkSizeUndefined: Self = StObject.set(x, "linkSize", js.undefined)
       
-      @scala.inline
-      def setOnLinkClick(
+      inline def setOnLinkClick(
         value: (/* item */ js.UndefOr[PivotItem], /* ev */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]]) => Unit
       ): Self = StObject.set(x, "onLinkClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnLinkClickUndefined: Self = StObject.set(x, "onLinkClick", js.undefined)
+      inline def setOnLinkClickUndefined: Self = StObject.set(x, "onLinkClick", js.undefined)
       
-      @scala.inline
-      def setSelectedKey(value: String): Self = StObject.set(x, "selectedKey", value.asInstanceOf[js.Any])
+      inline def setSelectedKey(value: String): Self = StObject.set(x, "selectedKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedKeyNull: Self = StObject.set(x, "selectedKey", null)
+      inline def setSelectedKeyNull: Self = StObject.set(x, "selectedKey", null)
       
-      @scala.inline
-      def setSelectedKeyUndefined: Self = StObject.set(x, "selectedKey", js.undefined)
+      inline def setSelectedKeyUndefined: Self = StObject.set(x, "selectedKey", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[IPivotStyleProps, IPivotStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[IPivotStyleProps, IPivotStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: IPivotStyleProps => DeepPartial[IPivotStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: IPivotStyleProps => DeepPartial[IPivotStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -317,41 +283,30 @@ object pivotTypesMod {
   }
   object IPivotStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): IPivotStyleProps = {
+    inline def apply(theme: ITheme): IPivotStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPivotStyleProps]
     }
     
-    @scala.inline
-    implicit class IPivotStylePropsMutableBuilder[Self <: IPivotStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IPivotStyleProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setLinkIsSelected(value: Boolean): Self = StObject.set(x, "linkIsSelected", value.asInstanceOf[js.Any])
+      inline def setLinkIsSelected(value: Boolean): Self = StObject.set(x, "linkIsSelected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkIsSelectedUndefined: Self = StObject.set(x, "linkIsSelected", js.undefined)
+      inline def setLinkIsSelectedUndefined: Self = StObject.set(x, "linkIsSelected", js.undefined)
       
-      @scala.inline
-      def setRootIsLarge(value: Boolean): Self = StObject.set(x, "rootIsLarge", value.asInstanceOf[js.Any])
+      inline def setRootIsLarge(value: Boolean): Self = StObject.set(x, "rootIsLarge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootIsLargeUndefined: Self = StObject.set(x, "rootIsLarge", js.undefined)
+      inline def setRootIsLargeUndefined: Self = StObject.set(x, "rootIsLarge", js.undefined)
       
-      @scala.inline
-      def setRootIsTabs(value: Boolean): Self = StObject.set(x, "rootIsTabs", value.asInstanceOf[js.Any])
+      inline def setRootIsTabs(value: Boolean): Self = StObject.set(x, "rootIsTabs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootIsTabsUndefined: Self = StObject.set(x, "rootIsTabs", js.undefined)
+      inline def setRootIsTabsUndefined: Self = StObject.set(x, "rootIsTabs", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -378,86 +333,60 @@ object pivotTypesMod {
   }
   object IPivotStyles {
     
-    @scala.inline
-    def apply(): IPivotStyles = {
+    inline def apply(): IPivotStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IPivotStyles]
     }
     
-    @scala.inline
-    implicit class IPivotStylesMutableBuilder[Self <: IPivotStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IPivotStyles](x: Self) {
       
-      @scala.inline
-      def setCount(value: IStyle): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: IStyle): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountNull: Self = StObject.set(x, "count", null)
+      inline def setCountNull: Self = StObject.set(x, "count", null)
       
-      @scala.inline
-      def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+      inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      @scala.inline
-      def setIcon(value: IStyle): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: IStyle): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconNull: Self = StObject.set(x, "icon", null)
+      inline def setIconNull: Self = StObject.set(x, "icon", null)
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setItemContainer(value: IStyle): Self = StObject.set(x, "itemContainer", value.asInstanceOf[js.Any])
+      inline def setItemContainer(value: IStyle): Self = StObject.set(x, "itemContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemContainerNull: Self = StObject.set(x, "itemContainer", null)
+      inline def setItemContainerNull: Self = StObject.set(x, "itemContainer", null)
       
-      @scala.inline
-      def setItemContainerUndefined: Self = StObject.set(x, "itemContainer", js.undefined)
+      inline def setItemContainerUndefined: Self = StObject.set(x, "itemContainer", js.undefined)
       
-      @scala.inline
-      def setLink(value: IStyle): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+      inline def setLink(value: IStyle): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkContent(value: IStyle): Self = StObject.set(x, "linkContent", value.asInstanceOf[js.Any])
+      inline def setLinkContent(value: IStyle): Self = StObject.set(x, "linkContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkContentNull: Self = StObject.set(x, "linkContent", null)
+      inline def setLinkContentNull: Self = StObject.set(x, "linkContent", null)
       
-      @scala.inline
-      def setLinkContentUndefined: Self = StObject.set(x, "linkContent", js.undefined)
+      inline def setLinkContentUndefined: Self = StObject.set(x, "linkContent", js.undefined)
       
-      @scala.inline
-      def setLinkIsSelected(value: IStyle): Self = StObject.set(x, "linkIsSelected", value.asInstanceOf[js.Any])
+      inline def setLinkIsSelected(value: IStyle): Self = StObject.set(x, "linkIsSelected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkIsSelectedNull: Self = StObject.set(x, "linkIsSelected", null)
+      inline def setLinkIsSelectedNull: Self = StObject.set(x, "linkIsSelected", null)
       
-      @scala.inline
-      def setLinkIsSelectedUndefined: Self = StObject.set(x, "linkIsSelected", js.undefined)
+      inline def setLinkIsSelectedUndefined: Self = StObject.set(x, "linkIsSelected", js.undefined)
       
-      @scala.inline
-      def setLinkNull: Self = StObject.set(x, "link", null)
+      inline def setLinkNull: Self = StObject.set(x, "link", null)
       
-      @scala.inline
-      def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+      inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setText(value: IStyle): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: IStyle): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextNull: Self = StObject.set(x, "text", null)
+      inline def setTextNull: Self = StObject.set(x, "text", null)
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
 }

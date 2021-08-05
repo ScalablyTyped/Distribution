@@ -84,21 +84,16 @@ object sagemakerModelMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Model = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Model]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Model = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Model]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ModelState): Model = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Model]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ModelState, opts: CustomResourceOptions): Model = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Model]
+    inline def get(name: String, id: Input[ID]): Model = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Model]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Model = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Model]
+    inline def get(name: String, id: Input[ID], state: ModelState): Model = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Model]
+    inline def get(name: String, id: Input[ID], state: ModelState, opts: CustomResourceOptions): Model = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Model]
     
     /**
       * Returns true if the given object is an instance of Model.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sagemaker/model.Model */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/sagemaker/model.Model */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sagemaker/model.Model */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/sagemaker/model.Model */ Boolean]
   }
   
   trait ModelArgs extends StObject {
@@ -140,56 +135,40 @@ object sagemakerModelMod {
   }
   object ModelArgs {
     
-    @scala.inline
-    def apply(executionRoleArn: Input[String]): ModelArgs = {
+    inline def apply(executionRoleArn: Input[String]): ModelArgs = {
       val __obj = js.Dynamic.literal(executionRoleArn = executionRoleArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[ModelArgs]
     }
     
-    @scala.inline
-    implicit class ModelArgsMutableBuilder[Self <: ModelArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ModelArgs](x: Self) {
       
-      @scala.inline
-      def setContainers(value: Input[js.Array[Input[typings.pulumiAws.inputMod.sagemaker.ModelContainer]]]): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
+      inline def setContainers(value: Input[js.Array[Input[typings.pulumiAws.inputMod.sagemaker.ModelContainer]]]): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainersUndefined: Self = StObject.set(x, "containers", js.undefined)
+      inline def setContainersUndefined: Self = StObject.set(x, "containers", js.undefined)
       
-      @scala.inline
-      def setContainersVarargs(value: Input[typings.pulumiAws.inputMod.sagemaker.ModelContainer]*): Self = StObject.set(x, "containers", js.Array(value :_*))
+      inline def setContainersVarargs(value: Input[typings.pulumiAws.inputMod.sagemaker.ModelContainer]*): Self = StObject.set(x, "containers", js.Array(value :_*))
       
-      @scala.inline
-      def setEnableNetworkIsolation(value: Input[Boolean]): Self = StObject.set(x, "enableNetworkIsolation", value.asInstanceOf[js.Any])
+      inline def setEnableNetworkIsolation(value: Input[Boolean]): Self = StObject.set(x, "enableNetworkIsolation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableNetworkIsolationUndefined: Self = StObject.set(x, "enableNetworkIsolation", js.undefined)
+      inline def setEnableNetworkIsolationUndefined: Self = StObject.set(x, "enableNetworkIsolation", js.undefined)
       
-      @scala.inline
-      def setExecutionRoleArn(value: Input[String]): Self = StObject.set(x, "executionRoleArn", value.asInstanceOf[js.Any])
+      inline def setExecutionRoleArn(value: Input[String]): Self = StObject.set(x, "executionRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPrimaryContainer(value: Input[typings.pulumiAws.inputMod.sagemaker.ModelPrimaryContainer]): Self = StObject.set(x, "primaryContainer", value.asInstanceOf[js.Any])
+      inline def setPrimaryContainer(value: Input[typings.pulumiAws.inputMod.sagemaker.ModelPrimaryContainer]): Self = StObject.set(x, "primaryContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryContainerUndefined: Self = StObject.set(x, "primaryContainer", js.undefined)
+      inline def setPrimaryContainerUndefined: Self = StObject.set(x, "primaryContainer", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVpcConfig(value: Input[typings.pulumiAws.inputMod.sagemaker.ModelVpcConfig]): Self = StObject.set(x, "vpcConfig", value.asInstanceOf[js.Any])
+      inline def setVpcConfig(value: Input[typings.pulumiAws.inputMod.sagemaker.ModelVpcConfig]): Self = StObject.set(x, "vpcConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcConfigUndefined: Self = StObject.set(x, "vpcConfig", js.undefined)
+      inline def setVpcConfigUndefined: Self = StObject.set(x, "vpcConfig", js.undefined)
     }
   }
   
@@ -237,65 +216,46 @@ object sagemakerModelMod {
   }
   object ModelState {
     
-    @scala.inline
-    def apply(): ModelState = {
+    inline def apply(): ModelState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ModelState]
     }
     
-    @scala.inline
-    implicit class ModelStateMutableBuilder[Self <: ModelState] (val x: Self) extends AnyVal {
+    extension [Self <: ModelState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setContainers(value: Input[js.Array[Input[typings.pulumiAws.inputMod.sagemaker.ModelContainer]]]): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
+      inline def setContainers(value: Input[js.Array[Input[typings.pulumiAws.inputMod.sagemaker.ModelContainer]]]): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainersUndefined: Self = StObject.set(x, "containers", js.undefined)
+      inline def setContainersUndefined: Self = StObject.set(x, "containers", js.undefined)
       
-      @scala.inline
-      def setContainersVarargs(value: Input[typings.pulumiAws.inputMod.sagemaker.ModelContainer]*): Self = StObject.set(x, "containers", js.Array(value :_*))
+      inline def setContainersVarargs(value: Input[typings.pulumiAws.inputMod.sagemaker.ModelContainer]*): Self = StObject.set(x, "containers", js.Array(value :_*))
       
-      @scala.inline
-      def setEnableNetworkIsolation(value: Input[Boolean]): Self = StObject.set(x, "enableNetworkIsolation", value.asInstanceOf[js.Any])
+      inline def setEnableNetworkIsolation(value: Input[Boolean]): Self = StObject.set(x, "enableNetworkIsolation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableNetworkIsolationUndefined: Self = StObject.set(x, "enableNetworkIsolation", js.undefined)
+      inline def setEnableNetworkIsolationUndefined: Self = StObject.set(x, "enableNetworkIsolation", js.undefined)
       
-      @scala.inline
-      def setExecutionRoleArn(value: Input[String]): Self = StObject.set(x, "executionRoleArn", value.asInstanceOf[js.Any])
+      inline def setExecutionRoleArn(value: Input[String]): Self = StObject.set(x, "executionRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecutionRoleArnUndefined: Self = StObject.set(x, "executionRoleArn", js.undefined)
+      inline def setExecutionRoleArnUndefined: Self = StObject.set(x, "executionRoleArn", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPrimaryContainer(value: Input[typings.pulumiAws.inputMod.sagemaker.ModelPrimaryContainer]): Self = StObject.set(x, "primaryContainer", value.asInstanceOf[js.Any])
+      inline def setPrimaryContainer(value: Input[typings.pulumiAws.inputMod.sagemaker.ModelPrimaryContainer]): Self = StObject.set(x, "primaryContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryContainerUndefined: Self = StObject.set(x, "primaryContainer", js.undefined)
+      inline def setPrimaryContainerUndefined: Self = StObject.set(x, "primaryContainer", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVpcConfig(value: Input[typings.pulumiAws.inputMod.sagemaker.ModelVpcConfig]): Self = StObject.set(x, "vpcConfig", value.asInstanceOf[js.Any])
+      inline def setVpcConfig(value: Input[typings.pulumiAws.inputMod.sagemaker.ModelVpcConfig]): Self = StObject.set(x, "vpcConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcConfigUndefined: Self = StObject.set(x, "vpcConfig", js.undefined)
+      inline def setVpcConfigUndefined: Self = StObject.set(x, "vpcConfig", js.undefined)
     }
   }
 }

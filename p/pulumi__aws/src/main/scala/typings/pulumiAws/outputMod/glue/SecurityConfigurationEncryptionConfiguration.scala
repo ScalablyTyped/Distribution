@@ -17,8 +17,7 @@ trait SecurityConfigurationEncryptionConfiguration extends StObject {
 }
 object SecurityConfigurationEncryptionConfiguration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cloudwatchEncryption: SecurityConfigurationEncryptionConfigurationCloudwatchEncryption,
     jobBookmarksEncryption: SecurityConfigurationEncryptionConfigurationJobBookmarksEncryption,
     s3Encryption: SecurityConfigurationEncryptionConfigurationS3Encryption
@@ -27,16 +26,12 @@ object SecurityConfigurationEncryptionConfiguration {
     __obj.asInstanceOf[SecurityConfigurationEncryptionConfiguration]
   }
   
-  @scala.inline
-  implicit class SecurityConfigurationEncryptionConfigurationMutableBuilder[Self <: SecurityConfigurationEncryptionConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: SecurityConfigurationEncryptionConfiguration](x: Self) {
     
-    @scala.inline
-    def setCloudwatchEncryption(value: SecurityConfigurationEncryptionConfigurationCloudwatchEncryption): Self = StObject.set(x, "cloudwatchEncryption", value.asInstanceOf[js.Any])
+    inline def setCloudwatchEncryption(value: SecurityConfigurationEncryptionConfigurationCloudwatchEncryption): Self = StObject.set(x, "cloudwatchEncryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobBookmarksEncryption(value: SecurityConfigurationEncryptionConfigurationJobBookmarksEncryption): Self = StObject.set(x, "jobBookmarksEncryption", value.asInstanceOf[js.Any])
+    inline def setJobBookmarksEncryption(value: SecurityConfigurationEncryptionConfigurationJobBookmarksEncryption): Self = StObject.set(x, "jobBookmarksEncryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3Encryption(value: SecurityConfigurationEncryptionConfigurationS3Encryption): Self = StObject.set(x, "s3Encryption", value.asInstanceOf[js.Any])
+    inline def setS3Encryption(value: SecurityConfigurationEncryptionConfigurationS3Encryption): Self = StObject.set(x, "s3Encryption", value.asInstanceOf[js.Any])
   }
 }

@@ -18,22 +18,17 @@ trait BatchPutMessageRequest extends StObject {
 }
 object BatchPutMessageRequest {
   
-  @scala.inline
-  def apply(channelName: ChannelName, messages: Messages): BatchPutMessageRequest = {
+  inline def apply(channelName: ChannelName, messages: Messages): BatchPutMessageRequest = {
     val __obj = js.Dynamic.literal(channelName = channelName.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchPutMessageRequest]
   }
   
-  @scala.inline
-  implicit class BatchPutMessageRequestMutableBuilder[Self <: BatchPutMessageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchPutMessageRequest](x: Self) {
     
-    @scala.inline
-    def setChannelName(value: ChannelName): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
+    inline def setChannelName(value: ChannelName): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessages(value: Messages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: Messages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesVarargs(value: Message*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: Message*): Self = StObject.set(x, "messages", js.Array(value :_*))
   }
 }

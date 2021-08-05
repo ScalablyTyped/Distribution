@@ -18,22 +18,17 @@ trait ObjectIdentifier extends StObject {
 }
 object ObjectIdentifier {
   
-  @scala.inline
-  def apply(Key: ObjectKey): ObjectIdentifier = {
+  inline def apply(Key: ObjectKey): ObjectIdentifier = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectIdentifier]
   }
   
-  @scala.inline
-  implicit class ObjectIdentifierMutableBuilder[Self <: ObjectIdentifier] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectIdentifier](x: Self) {
     
-    @scala.inline
-    def setKey(value: ObjectKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: ObjectKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionId(value: ObjectVersionId): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
+    inline def setVersionId(value: ObjectVersionId): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
+    inline def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
   }
 }

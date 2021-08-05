@@ -243,6 +243,5 @@ object MVCxClientBinaryImage {
     * @param obj The object.
     */
   /* static member */
-  @scala.inline
-  def Cast(obj: js.Any): typings.devexpressWeb.MVCxClientBinaryImage = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.MVCxClientBinaryImage]
+  inline def Cast(obj: js.Any): typings.devexpressWeb.MVCxClientBinaryImage = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.MVCxClientBinaryImage]
 }

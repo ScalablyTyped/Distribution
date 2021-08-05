@@ -14,22 +14,17 @@ trait SchemaInstanceGroupManagersRecreateInstancesRequest extends StObject {
 }
 object SchemaInstanceGroupManagersRecreateInstancesRequest {
   
-  @scala.inline
-  def apply(): SchemaInstanceGroupManagersRecreateInstancesRequest = {
+  inline def apply(): SchemaInstanceGroupManagersRecreateInstancesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInstanceGroupManagersRecreateInstancesRequest]
   }
   
-  @scala.inline
-  implicit class SchemaInstanceGroupManagersRecreateInstancesRequestMutableBuilder[Self <: SchemaInstanceGroupManagersRecreateInstancesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInstanceGroupManagersRecreateInstancesRequest](x: Self) {
     
-    @scala.inline
-    def setInstances(value: js.Array[String]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
+    inline def setInstances(value: js.Array[String]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
+    inline def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
     
-    @scala.inline
-    def setInstancesVarargs(value: String*): Self = StObject.set(x, "instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: String*): Self = StObject.set(x, "instances", js.Array(value :_*))
   }
 }

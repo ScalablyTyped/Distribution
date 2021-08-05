@@ -27,28 +27,21 @@ trait MarkdownRenderEndpoint extends StObject {
 }
 object MarkdownRenderEndpoint {
   
-  @scala.inline
-  def apply(text: String): MarkdownRenderEndpoint = {
+  inline def apply(text: String): MarkdownRenderEndpoint = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkdownRenderEndpoint]
   }
   
-  @scala.inline
-  implicit class MarkdownRenderEndpointMutableBuilder[Self <: MarkdownRenderEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: MarkdownRenderEndpoint](x: Self) {
     
-    @scala.inline
-    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setMode(value: markdown | gfm): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: markdown | gfm): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

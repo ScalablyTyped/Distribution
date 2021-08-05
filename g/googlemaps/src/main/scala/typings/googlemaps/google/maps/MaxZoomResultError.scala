@@ -22,16 +22,13 @@ trait MaxZoomResultError
 }
 object MaxZoomResultError {
   
-  @scala.inline
-  def apply(status: ERROR): MaxZoomResultError = {
+  inline def apply(status: ERROR): MaxZoomResultError = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaxZoomResultError]
   }
   
-  @scala.inline
-  implicit class MaxZoomResultErrorMutableBuilder[Self <: MaxZoomResultError] (val x: Self) extends AnyVal {
+  extension [Self <: MaxZoomResultError](x: Self) {
     
-    @scala.inline
-    def setStatus(value: ERROR): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ERROR): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

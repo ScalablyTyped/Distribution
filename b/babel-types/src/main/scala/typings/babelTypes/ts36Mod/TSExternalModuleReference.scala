@@ -19,13 +19,10 @@ object TSExternalModuleReference {
   @js.native
   def apply(expression: StringLiteral_): TSExternalModuleReference = js.native
   
-  @scala.inline
-  implicit class TSExternalModuleReferenceMutableBuilder[Self <: TSExternalModuleReference] (val x: Self) extends AnyVal {
+  extension [Self <: TSExternalModuleReference](x: Self) {
     
-    @scala.inline
-    def setExpression(value: StringLiteral_): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: StringLiteral_): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.babelTypes.babelTypesStrings.TSExternalModuleReference): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.babelTypes.babelTypesStrings.TSExternalModuleReference): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

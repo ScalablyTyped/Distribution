@@ -42,8 +42,7 @@ trait DirectLineMeasurement3DViewModelMeasurement
 }
 object DirectLineMeasurement3DViewModelMeasurement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     directDistance: DirectLineMeasurement3DViewModelMeasurementValue,
     hasOwnProperty: PropertyKey => Boolean,
@@ -56,19 +55,14 @@ object DirectLineMeasurement3DViewModelMeasurement {
     __obj.asInstanceOf[DirectLineMeasurement3DViewModelMeasurement]
   }
   
-  @scala.inline
-  implicit class DirectLineMeasurement3DViewModelMeasurementMutableBuilder[Self <: DirectLineMeasurement3DViewModelMeasurement] (val x: Self) extends AnyVal {
+  extension [Self <: DirectLineMeasurement3DViewModelMeasurement](x: Self) {
     
-    @scala.inline
-    def setDirectDistance(value: DirectLineMeasurement3DViewModelMeasurementValue): Self = StObject.set(x, "directDistance", value.asInstanceOf[js.Any])
+    inline def setDirectDistance(value: DirectLineMeasurement3DViewModelMeasurementValue): Self = StObject.set(x, "directDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalDistance(value: DirectLineMeasurement3DViewModelMeasurementValue): Self = StObject.set(x, "horizontalDistance", value.asInstanceOf[js.Any])
+    inline def setHorizontalDistance(value: DirectLineMeasurement3DViewModelMeasurementValue): Self = StObject.set(x, "horizontalDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasurementMode(value: euclidean | geodesic): Self = StObject.set(x, "measurementMode", value.asInstanceOf[js.Any])
+    inline def setMeasurementMode(value: euclidean | geodesic): Self = StObject.set(x, "measurementMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalDistance(value: DirectLineMeasurement3DViewModelMeasurementValue): Self = StObject.set(x, "verticalDistance", value.asInstanceOf[js.Any])
+    inline def setVerticalDistance(value: DirectLineMeasurement3DViewModelMeasurementValue): Self = StObject.set(x, "verticalDistance", value.asInstanceOf[js.Any])
   }
 }

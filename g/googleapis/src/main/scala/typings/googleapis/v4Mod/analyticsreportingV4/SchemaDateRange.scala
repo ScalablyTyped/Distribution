@@ -23,25 +23,19 @@ trait SchemaDateRange extends StObject {
 }
 object SchemaDateRange {
   
-  @scala.inline
-  def apply(): SchemaDateRange = {
+  inline def apply(): SchemaDateRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDateRange]
   }
   
-  @scala.inline
-  implicit class SchemaDateRangeMutableBuilder[Self <: SchemaDateRange] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDateRange](x: Self) {
     
-    @scala.inline
-    def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
+    inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
     
-    @scala.inline
-    def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
+    inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
   }
 }

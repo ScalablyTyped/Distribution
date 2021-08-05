@@ -11,16 +11,13 @@ trait RequiredPreview[T] extends StObject {
 }
 object RequiredPreview {
   
-  @scala.inline
-  def apply[T](mediaType: `0`[T]): RequiredPreview[T] = {
+  inline def apply[T](mediaType: `0`[T]): RequiredPreview[T] = {
     val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequiredPreview[T]]
   }
   
-  @scala.inline
-  implicit class RequiredPreviewMutableBuilder[Self <: RequiredPreview[?], T] (val x: Self & RequiredPreview[T]) extends AnyVal {
+  extension [Self <: RequiredPreview[?], T](x: Self & RequiredPreview[T]) {
     
-    @scala.inline
-    def setMediaType(value: `0`[T]): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+    inline def setMediaType(value: `0`[T]): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
   }
 }

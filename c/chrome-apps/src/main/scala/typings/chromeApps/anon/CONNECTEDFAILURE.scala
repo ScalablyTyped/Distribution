@@ -14,19 +14,15 @@ trait CONNECTEDFAILURE extends StObject {
 }
 object CONNECTEDFAILURE {
   
-  @scala.inline
-  def apply(): CONNECTEDFAILURE = {
+  inline def apply(): CONNECTEDFAILURE = {
     val __obj = js.Dynamic.literal(CONNECTED = "connected", FAILURE = "failure")
     __obj.asInstanceOf[CONNECTEDFAILURE]
   }
   
-  @scala.inline
-  implicit class CONNECTEDFAILUREMutableBuilder[Self <: CONNECTEDFAILURE] (val x: Self) extends AnyVal {
+  extension [Self <: CONNECTEDFAILURE](x: Self) {
     
-    @scala.inline
-    def setCONNECTED(value: connected__): Self = StObject.set(x, "CONNECTED", value.asInstanceOf[js.Any])
+    inline def setCONNECTED(value: connected__): Self = StObject.set(x, "CONNECTED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFAILURE(value: failure_): Self = StObject.set(x, "FAILURE", value.asInstanceOf[js.Any])
+    inline def setFAILURE(value: failure_): Self = StObject.set(x, "FAILURE", value.asInstanceOf[js.Any])
   }
 }

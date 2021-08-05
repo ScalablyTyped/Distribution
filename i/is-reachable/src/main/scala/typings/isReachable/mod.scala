@@ -23,14 +23,10 @@ object mod {
   })();
   ```
   */
-  @scala.inline
-  def apply(targets: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].apply(targets.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def apply(targets: String, options: Options): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].apply(targets.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def apply(targets: js.Array[String]): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].apply(targets.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def apply(targets: js.Array[String], options: Options): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].apply(targets.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  inline def apply(targets: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].apply(targets.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  inline def apply(targets: String, options: Options): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].apply(targets.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  inline def apply(targets: js.Array[String]): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].apply(targets.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  inline def apply(targets: js.Array[String], options: Options): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].apply(targets.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
   
   @JSImport("is-reachable", JSImport.Namespace)
   @js.native
@@ -46,20 +42,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
 }

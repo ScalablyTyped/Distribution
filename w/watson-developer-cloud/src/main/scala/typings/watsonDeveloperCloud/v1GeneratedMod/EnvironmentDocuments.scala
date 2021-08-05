@@ -15,25 +15,19 @@ trait EnvironmentDocuments extends StObject {
 }
 object EnvironmentDocuments {
   
-  @scala.inline
-  def apply(): EnvironmentDocuments = {
+  inline def apply(): EnvironmentDocuments = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnvironmentDocuments]
   }
   
-  @scala.inline
-  implicit class EnvironmentDocumentsMutableBuilder[Self <: EnvironmentDocuments] (val x: Self) extends AnyVal {
+  extension [Self <: EnvironmentDocuments](x: Self) {
     
-    @scala.inline
-    def setIndexed(value: Double): Self = StObject.set(x, "indexed", value.asInstanceOf[js.Any])
+    inline def setIndexed(value: Double): Self = StObject.set(x, "indexed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexedUndefined: Self = StObject.set(x, "indexed", js.undefined)
+    inline def setIndexedUndefined: Self = StObject.set(x, "indexed", js.undefined)
     
-    @scala.inline
-    def setMaximum_allowed(value: Double): Self = StObject.set(x, "maximum_allowed", value.asInstanceOf[js.Any])
+    inline def setMaximum_allowed(value: Double): Self = StObject.set(x, "maximum_allowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximum_allowedUndefined: Self = StObject.set(x, "maximum_allowed", js.undefined)
+    inline def setMaximum_allowedUndefined: Self = StObject.set(x, "maximum_allowed", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait DemodulationConfig extends StObject {
 }
 object DemodulationConfig {
   
-  @scala.inline
-  def apply(unvalidatedJSON: JsonString): DemodulationConfig = {
+  inline def apply(unvalidatedJSON: JsonString): DemodulationConfig = {
     val __obj = js.Dynamic.literal(unvalidatedJSON = unvalidatedJSON.asInstanceOf[js.Any])
     __obj.asInstanceOf[DemodulationConfig]
   }
   
-  @scala.inline
-  implicit class DemodulationConfigMutableBuilder[Self <: DemodulationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: DemodulationConfig](x: Self) {
     
-    @scala.inline
-    def setUnvalidatedJSON(value: JsonString): Self = StObject.set(x, "unvalidatedJSON", value.asInstanceOf[js.Any])
+    inline def setUnvalidatedJSON(value: JsonString): Self = StObject.set(x, "unvalidatedJSON", value.asInstanceOf[js.Any])
   }
 }

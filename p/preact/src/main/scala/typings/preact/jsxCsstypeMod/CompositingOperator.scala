@@ -16,15 +16,11 @@ trait CompositingOperator
      with _MaskLayer[js.Any]
 object CompositingOperator {
   
-  @scala.inline
-  def add: typings.preact.preactStrings.add = "add".asInstanceOf[typings.preact.preactStrings.add]
+  inline def add: typings.preact.preactStrings.add = "add".asInstanceOf[typings.preact.preactStrings.add]
   
-  @scala.inline
-  def exclude: typings.preact.preactStrings.exclude = "exclude".asInstanceOf[typings.preact.preactStrings.exclude]
+  inline def exclude: typings.preact.preactStrings.exclude = "exclude".asInstanceOf[typings.preact.preactStrings.exclude]
   
-  @scala.inline
-  def intersect: typings.preact.preactStrings.intersect = "intersect".asInstanceOf[typings.preact.preactStrings.intersect]
+  inline def intersect: typings.preact.preactStrings.intersect = "intersect".asInstanceOf[typings.preact.preactStrings.intersect]
   
-  @scala.inline
-  def subtract: typings.preact.preactStrings.subtract = "subtract".asInstanceOf[typings.preact.preactStrings.subtract]
+  inline def subtract: typings.preact.preactStrings.subtract = "subtract".asInstanceOf[typings.preact.preactStrings.subtract]
 }

@@ -10,16 +10,13 @@ trait ApplicationEvent extends StObject {
 }
 object ApplicationEvent {
   
-  @scala.inline
-  def apply(sender: Application): ApplicationEvent = {
+  inline def apply(sender: Application): ApplicationEvent = {
     val __obj = js.Dynamic.literal(sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationEvent]
   }
   
-  @scala.inline
-  implicit class ApplicationEventMutableBuilder[Self <: ApplicationEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationEvent](x: Self) {
     
-    @scala.inline
-    def setSender(value: Application): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: Application): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
   }
 }

@@ -18,8 +18,7 @@ trait UpcomingLiveSearchResult
 }
 object UpcomingLiveSearchResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     author: Author,
     description: String,
     image: String,
@@ -36,16 +35,12 @@ object UpcomingLiveSearchResult {
     __obj.asInstanceOf[UpcomingLiveSearchResult]
   }
   
-  @scala.inline
-  implicit class UpcomingLiveSearchResultMutableBuilder[Self <: UpcomingLiveSearchResult] (val x: Self) extends AnyVal {
+  extension [Self <: UpcomingLiveSearchResult](x: Self) {
     
-    @scala.inline
-    def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: UPCOMING): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: UPCOMING): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

@@ -33,46 +33,33 @@ trait GetFederationTokenRequest extends StObject {
 }
 object GetFederationTokenRequest {
   
-  @scala.inline
-  def apply(Name: userNameType): GetFederationTokenRequest = {
+  inline def apply(Name: userNameType): GetFederationTokenRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFederationTokenRequest]
   }
   
-  @scala.inline
-  implicit class GetFederationTokenRequestMutableBuilder[Self <: GetFederationTokenRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetFederationTokenRequest](x: Self) {
     
-    @scala.inline
-    def setDurationSeconds(value: durationSecondsType): Self = StObject.set(x, "DurationSeconds", value.asInstanceOf[js.Any])
+    inline def setDurationSeconds(value: durationSecondsType): Self = StObject.set(x, "DurationSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationSecondsUndefined: Self = StObject.set(x, "DurationSeconds", js.undefined)
+    inline def setDurationSecondsUndefined: Self = StObject.set(x, "DurationSeconds", js.undefined)
     
-    @scala.inline
-    def setName(value: userNameType): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: userNameType): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicy(value: sessionPolicyDocumentType): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: sessionPolicyDocumentType): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyArns(value: policyDescriptorListType): Self = StObject.set(x, "PolicyArns", value.asInstanceOf[js.Any])
+    inline def setPolicyArns(value: policyDescriptorListType): Self = StObject.set(x, "PolicyArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyArnsUndefined: Self = StObject.set(x, "PolicyArns", js.undefined)
+    inline def setPolicyArnsUndefined: Self = StObject.set(x, "PolicyArns", js.undefined)
     
-    @scala.inline
-    def setPolicyArnsVarargs(value: PolicyDescriptorType*): Self = StObject.set(x, "PolicyArns", js.Array(value :_*))
+    inline def setPolicyArnsVarargs(value: PolicyDescriptorType*): Self = StObject.set(x, "PolicyArns", js.Array(value :_*))
     
-    @scala.inline
-    def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
+    inline def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
     
-    @scala.inline
-    def setTags(value: tagListType): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: tagListType): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

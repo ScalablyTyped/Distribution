@@ -58,8 +58,7 @@ object graphicsUtils {
        with Polygon
   object Star {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       closeStroke: Boolean,
       contains: (Double, Double) => Boolean,
       points: js.Array[Double],

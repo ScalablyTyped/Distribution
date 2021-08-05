@@ -13,19 +13,15 @@ trait DescribeIndexFieldsResponse extends StObject {
 }
 object DescribeIndexFieldsResponse {
   
-  @scala.inline
-  def apply(IndexFields: IndexFieldStatusList): DescribeIndexFieldsResponse = {
+  inline def apply(IndexFields: IndexFieldStatusList): DescribeIndexFieldsResponse = {
     val __obj = js.Dynamic.literal(IndexFields = IndexFields.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeIndexFieldsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeIndexFieldsResponseMutableBuilder[Self <: DescribeIndexFieldsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeIndexFieldsResponse](x: Self) {
     
-    @scala.inline
-    def setIndexFields(value: IndexFieldStatusList): Self = StObject.set(x, "IndexFields", value.asInstanceOf[js.Any])
+    inline def setIndexFields(value: IndexFieldStatusList): Self = StObject.set(x, "IndexFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexFieldsVarargs(value: IndexFieldStatus*): Self = StObject.set(x, "IndexFields", js.Array(value :_*))
+    inline def setIndexFieldsVarargs(value: IndexFieldStatus*): Self = StObject.set(x, "IndexFields", js.Array(value :_*))
   }
 }

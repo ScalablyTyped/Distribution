@@ -12,16 +12,13 @@ trait LockScreenCallEndCallDeferral extends StObject {
 }
 object LockScreenCallEndCallDeferral {
   
-  @scala.inline
-  def apply(complete: () => Unit): LockScreenCallEndCallDeferral = {
+  inline def apply(complete: () => Unit): LockScreenCallEndCallDeferral = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
     __obj.asInstanceOf[LockScreenCallEndCallDeferral]
   }
   
-  @scala.inline
-  implicit class LockScreenCallEndCallDeferralMutableBuilder[Self <: LockScreenCallEndCallDeferral] (val x: Self) extends AnyVal {
+  extension [Self <: LockScreenCallEndCallDeferral](x: Self) {
     
-    @scala.inline
-    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
   }
 }

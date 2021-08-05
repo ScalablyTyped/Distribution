@@ -23,31 +23,23 @@ trait AddInstanceFleetOutput extends StObject {
 }
 object AddInstanceFleetOutput {
   
-  @scala.inline
-  def apply(): AddInstanceFleetOutput = {
+  inline def apply(): AddInstanceFleetOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddInstanceFleetOutput]
   }
   
-  @scala.inline
-  implicit class AddInstanceFleetOutputMutableBuilder[Self <: AddInstanceFleetOutput] (val x: Self) extends AnyVal {
+  extension [Self <: AddInstanceFleetOutput](x: Self) {
     
-    @scala.inline
-    def setClusterArn(value: ArnType): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
+    inline def setClusterArn(value: ArnType): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterArnUndefined: Self = StObject.set(x, "ClusterArn", js.undefined)
+    inline def setClusterArnUndefined: Self = StObject.set(x, "ClusterArn", js.undefined)
     
-    @scala.inline
-    def setClusterId(value: XmlStringMaxLen256): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
+    inline def setClusterId(value: XmlStringMaxLen256): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterIdUndefined: Self = StObject.set(x, "ClusterId", js.undefined)
+    inline def setClusterIdUndefined: Self = StObject.set(x, "ClusterId", js.undefined)
     
-    @scala.inline
-    def setInstanceFleetId(value: InstanceFleetId): Self = StObject.set(x, "InstanceFleetId", value.asInstanceOf[js.Any])
+    inline def setInstanceFleetId(value: InstanceFleetId): Self = StObject.set(x, "InstanceFleetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceFleetIdUndefined: Self = StObject.set(x, "InstanceFleetId", js.undefined)
+    inline def setInstanceFleetIdUndefined: Self = StObject.set(x, "InstanceFleetId", js.undefined)
   }
 }

@@ -21,20 +21,17 @@ object EditableEnum {
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.EditableEnum.Always")
   @js.native
   def Always: EditableEnum = js.native
-  @scala.inline
-  def Always_=(x: EditableEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Always")(x.asInstanceOf[js.Any])
+  inline def Always_=(x: EditableEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Always")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.EditableEnum.Conditional")
   @js.native
   def Conditional: EditableEnum = js.native
-  @scala.inline
-  def Conditional_=(x: EditableEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Conditional")(x.asInstanceOf[js.Any])
+  inline def Conditional_=(x: EditableEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Conditional")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.EditableEnum.Never")
   @js.native
   def Never: EditableEnum = js.native
-  @scala.inline
-  def Never_=(x: EditableEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Never")(x.asInstanceOf[js.Any])
+  inline def Never_=(x: EditableEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Never")(x.asInstanceOf[js.Any])
 }

@@ -16,28 +16,21 @@ trait RendererConfig extends StObject {
 }
 object RendererConfig {
   
-  @scala.inline
-  def apply(padding: Offset, pageLayouts: js.Object, verticallyOriented: Boolean): RendererConfig = {
+  inline def apply(padding: Offset, pageLayouts: js.Object, verticallyOriented: Boolean): RendererConfig = {
     val __obj = js.Dynamic.literal(padding = padding.asInstanceOf[js.Any], pageLayouts = pageLayouts.asInstanceOf[js.Any], verticallyOriented = verticallyOriented.asInstanceOf[js.Any], maxZoomLevel = null)
     __obj.asInstanceOf[RendererConfig]
   }
   
-  @scala.inline
-  implicit class RendererConfigMutableBuilder[Self <: RendererConfig] (val x: Self) extends AnyVal {
+  extension [Self <: RendererConfig](x: Self) {
     
-    @scala.inline
-    def setMaxZoomLevel(value: Double): Self = StObject.set(x, "maxZoomLevel", value.asInstanceOf[js.Any])
+    inline def setMaxZoomLevel(value: Double): Self = StObject.set(x, "maxZoomLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxZoomLevelNull: Self = StObject.set(x, "maxZoomLevel", null)
+    inline def setMaxZoomLevelNull: Self = StObject.set(x, "maxZoomLevel", null)
     
-    @scala.inline
-    def setPadding(value: Offset): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Offset): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageLayouts(value: js.Object): Self = StObject.set(x, "pageLayouts", value.asInstanceOf[js.Any])
+    inline def setPageLayouts(value: js.Object): Self = StObject.set(x, "pageLayouts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticallyOriented(value: Boolean): Self = StObject.set(x, "verticallyOriented", value.asInstanceOf[js.Any])
+    inline def setVerticallyOriented(value: Boolean): Self = StObject.set(x, "verticallyOriented", value.asInstanceOf[js.Any])
   }
 }

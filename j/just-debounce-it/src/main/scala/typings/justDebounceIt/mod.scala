@@ -9,20 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[T /* <: js.Function */](fn: T): T = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[T]
-  @scala.inline
-  def apply[T /* <: js.Function */](fn: T, wait: Double): js.Function1[/* args */ ArgumentTypes[T], Unit] = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* args */ ArgumentTypes[T], Unit]]
-  @scala.inline
-  def apply[T /* <: js.Function */](fn: T, wait: Double, callFirst: `false`): js.Function1[/* args */ ArgumentTypes[T], Unit] = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], callFirst.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* args */ ArgumentTypes[T], Unit]]
-  @scala.inline
-  def apply[T /* <: js.Function */](fn: T, wait: Double, callFirst: `true`): T = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], callFirst.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def apply[T /* <: js.Function */](fn: T, wait: Unit, callFirst: Boolean): T = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], callFirst.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def apply[T /* <: js.Function */](fn: T, wait: `0`): T = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def apply[T /* <: js.Function */](fn: T, wait: `0`, callFirst: Boolean): T = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], callFirst.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def apply[T /* <: js.Function */](fn: T): T = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def apply[T /* <: js.Function */](fn: T, wait: Double): js.Function1[/* args */ ArgumentTypes[T], Unit] = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* args */ ArgumentTypes[T], Unit]]
+  inline def apply[T /* <: js.Function */](fn: T, wait: Double, callFirst: `false`): js.Function1[/* args */ ArgumentTypes[T], Unit] = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], callFirst.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* args */ ArgumentTypes[T], Unit]]
+  inline def apply[T /* <: js.Function */](fn: T, wait: Double, callFirst: `true`): T = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], callFirst.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def apply[T /* <: js.Function */](fn: T, wait: Unit, callFirst: Boolean): T = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], callFirst.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def apply[T /* <: js.Function */](fn: T, wait: `0`): T = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def apply[T /* <: js.Function */](fn: T, wait: `0`, callFirst: Boolean): T = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], callFirst.asInstanceOf[js.Any])).asInstanceOf[T]
   
   @JSImport("just-debounce-it", JSImport.Namespace)
   @js.native

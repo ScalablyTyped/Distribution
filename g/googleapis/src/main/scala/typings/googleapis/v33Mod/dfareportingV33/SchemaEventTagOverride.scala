@@ -21,25 +21,19 @@ trait SchemaEventTagOverride extends StObject {
 }
 object SchemaEventTagOverride {
   
-  @scala.inline
-  def apply(): SchemaEventTagOverride = {
+  inline def apply(): SchemaEventTagOverride = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEventTagOverride]
   }
   
-  @scala.inline
-  implicit class SchemaEventTagOverrideMutableBuilder[Self <: SchemaEventTagOverride] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaEventTagOverride](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

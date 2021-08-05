@@ -22,8 +22,7 @@ trait SheetsOnEdit
 }
 object SheetsOnEdit {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     authMode: AuthMode,
     oldValue: String,
     range: Range,
@@ -36,19 +35,14 @@ object SheetsOnEdit {
     __obj.asInstanceOf[SheetsOnEdit]
   }
   
-  @scala.inline
-  implicit class SheetsOnEditMutableBuilder[Self <: SheetsOnEdit] (val x: Self) extends AnyVal {
+  extension [Self <: SheetsOnEdit](x: Self) {
     
-    @scala.inline
-    def setOldValue(value: String): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+    inline def setOldValue(value: String): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: Spreadsheet): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Spreadsheet): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

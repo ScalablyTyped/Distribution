@@ -12,19 +12,15 @@ trait ReleaseCreatedEvent extends StObject {
 }
 object ReleaseCreatedEvent {
   
-  @scala.inline
-  def apply(project: ProjectReference, release: Release): ReleaseCreatedEvent = {
+  inline def apply(project: ProjectReference, release: Release): ReleaseCreatedEvent = {
     val __obj = js.Dynamic.literal(project = project.asInstanceOf[js.Any], release = release.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReleaseCreatedEvent]
   }
   
-  @scala.inline
-  implicit class ReleaseCreatedEventMutableBuilder[Self <: ReleaseCreatedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ReleaseCreatedEvent](x: Self) {
     
-    @scala.inline
-    def setProject(value: ProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: ProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelease(value: Release): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
+    inline def setRelease(value: Release): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
   }
 }

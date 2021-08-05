@@ -17,16 +17,13 @@ trait Http extends StObject {
 }
 object Http {
   
-  @scala.inline
-  def apply(http: AxiosInstance): Http = {
+  inline def apply(http: AxiosInstance): Http = {
     val __obj = js.Dynamic.literal(http = http.asInstanceOf[js.Any])
     __obj.asInstanceOf[Http]
   }
   
-  @scala.inline
-  implicit class HttpMutableBuilder[Self <: Http] (val x: Self) extends AnyVal {
+  extension [Self <: Http](x: Self) {
     
-    @scala.inline
-    def setHttp(value: AxiosInstance): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
+    inline def setHttp(value: AxiosInstance): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
   }
 }

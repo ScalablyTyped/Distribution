@@ -10,16 +10,13 @@ trait IAccelerometerStatics extends StObject {
 }
 object IAccelerometerStatics {
   
-  @scala.inline
-  def apply(getDefault: () => Accelerometer): IAccelerometerStatics = {
+  inline def apply(getDefault: () => Accelerometer): IAccelerometerStatics = {
     val __obj = js.Dynamic.literal(getDefault = js.Any.fromFunction0(getDefault))
     __obj.asInstanceOf[IAccelerometerStatics]
   }
   
-  @scala.inline
-  implicit class IAccelerometerStaticsMutableBuilder[Self <: IAccelerometerStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IAccelerometerStatics](x: Self) {
     
-    @scala.inline
-    def setGetDefault(value: () => Accelerometer): Self = StObject.set(x, "getDefault", js.Any.fromFunction0(value))
+    inline def setGetDefault(value: () => Accelerometer): Self = StObject.set(x, "getDefault", js.Any.fromFunction0(value))
   }
 }

@@ -18,28 +18,21 @@ trait Code extends StObject {
 }
 object Code {
   
-  @scala.inline
-  def apply(code: Boolean, pre: Boolean, script: Boolean, style: Boolean, textarea: Boolean): Code = {
+  inline def apply(code: Boolean, pre: Boolean, script: Boolean, style: Boolean, textarea: Boolean): Code = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], pre = pre.asInstanceOf[js.Any], script = script.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], textarea = textarea.asInstanceOf[js.Any])
     __obj.asInstanceOf[Code]
   }
   
-  @scala.inline
-  implicit class CodeMutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
+  extension [Self <: Code](x: Self) {
     
-    @scala.inline
-    def setCode(value: Boolean): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Boolean): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPre(value: Boolean): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
+    inline def setPre(value: Boolean): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScript(value: Boolean): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+    inline def setScript(value: Boolean): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: Boolean): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: Boolean): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextarea(value: Boolean): Self = StObject.set(x, "textarea", value.asInstanceOf[js.Any])
+    inline def setTextarea(value: Boolean): Self = StObject.set(x, "textarea", value.asInstanceOf[js.Any])
   }
 }

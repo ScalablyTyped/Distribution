@@ -11,19 +11,15 @@ trait PartialDUPLICATEMODULENAM extends StObject {
 }
 object PartialDUPLICATEMODULENAM {
   
-  @scala.inline
-  def apply(): PartialDUPLICATEMODULENAM = {
+  inline def apply(): PartialDUPLICATEMODULENAM = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialDUPLICATEMODULENAM]
   }
   
-  @scala.inline
-  implicit class PartialDUPLICATEMODULENAMMutableBuilder[Self <: PartialDUPLICATEMODULENAM] (val x: Self) extends AnyVal {
+  extension [Self <: PartialDUPLICATEMODULENAM](x: Self) {
     
-    @scala.inline
-    def setDUPLICATE_MODULE_NAMESPACE(value: Boolean): Self = StObject.set(x, "DUPLICATE_MODULE_NAMESPACE", value.asInstanceOf[js.Any])
+    inline def setDUPLICATE_MODULE_NAMESPACE(value: Boolean): Self = StObject.set(x, "DUPLICATE_MODULE_NAMESPACE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDUPLICATE_MODULE_NAMESPACEUndefined: Self = StObject.set(x, "DUPLICATE_MODULE_NAMESPACE", js.undefined)
+    inline def setDUPLICATE_MODULE_NAMESPACEUndefined: Self = StObject.set(x, "DUPLICATE_MODULE_NAMESPACE", js.undefined)
   }
 }

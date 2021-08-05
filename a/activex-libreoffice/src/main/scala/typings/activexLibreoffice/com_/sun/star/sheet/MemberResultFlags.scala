@@ -21,19 +21,14 @@ object MemberResultFlags {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def CONTINUE: `4` = 4.asInstanceOf[`4`]
+    inline def CONTINUE: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def GRANDTOTAL: `8` = 8.asInstanceOf[`8`]
+    inline def GRANDTOTAL: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def HASMEMBER: `1` = 1.asInstanceOf[`1`]
+    inline def HASMEMBER: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def NUMERIC: `16` = 16.asInstanceOf[`16`]
+    inline def NUMERIC: `16` = 16.asInstanceOf[`16`]
     
-    @scala.inline
-    def SUBTOTAL: `2` = 2.asInstanceOf[`2`]
+    inline def SUBTOTAL: `2` = 2.asInstanceOf[`2`]
   }
 }

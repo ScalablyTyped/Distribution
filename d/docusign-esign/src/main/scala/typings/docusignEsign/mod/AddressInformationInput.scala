@@ -33,31 +33,23 @@ trait AddressInformationInput extends StObject {
 }
 object AddressInformationInput {
   
-  @scala.inline
-  def apply(): AddressInformationInput = {
+  inline def apply(): AddressInformationInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddressInformationInput]
   }
   
-  @scala.inline
-  implicit class AddressInformationInputMutableBuilder[Self <: AddressInformationInput] (val x: Self) extends AnyVal {
+  extension [Self <: AddressInformationInput](x: Self) {
     
-    @scala.inline
-    def setAddressInformation(value: /* Contains address information. */ AddressInformation): Self = StObject.set(x, "addressInformation", value.asInstanceOf[js.Any])
+    inline def setAddressInformation(value: /* Contains address information. */ AddressInformation): Self = StObject.set(x, "addressInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressInformationUndefined: Self = StObject.set(x, "addressInformation", js.undefined)
+    inline def setAddressInformationUndefined: Self = StObject.set(x, "addressInformation", js.undefined)
     
-    @scala.inline
-    def setDisplayLevelCode(value: String): Self = StObject.set(x, "displayLevelCode", value.asInstanceOf[js.Any])
+    inline def setDisplayLevelCode(value: String): Self = StObject.set(x, "displayLevelCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayLevelCodeUndefined: Self = StObject.set(x, "displayLevelCode", js.undefined)
+    inline def setDisplayLevelCodeUndefined: Self = StObject.set(x, "displayLevelCode", js.undefined)
     
-    @scala.inline
-    def setReceiveInResponse(value: String): Self = StObject.set(x, "receiveInResponse", value.asInstanceOf[js.Any])
+    inline def setReceiveInResponse(value: String): Self = StObject.set(x, "receiveInResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceiveInResponseUndefined: Self = StObject.set(x, "receiveInResponse", js.undefined)
+    inline def setReceiveInResponseUndefined: Self = StObject.set(x, "receiveInResponse", js.undefined)
   }
 }

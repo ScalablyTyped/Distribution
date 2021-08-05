@@ -19,23 +19,18 @@ object KnockoutTransformations {
   }
   object MappingOption {
     
-    @scala.inline
-    def apply[T, TResult](mapping: T => TResult): MappingOption[T, TResult] = {
+    inline def apply[T, TResult](mapping: T => TResult): MappingOption[T, TResult] = {
       val __obj = js.Dynamic.literal(mapping = js.Any.fromFunction1(mapping))
       __obj.asInstanceOf[MappingOption[T, TResult]]
     }
     
-    @scala.inline
-    implicit class MappingOptionMutableBuilder[Self <: MappingOption[?, ?], T, TResult] (val x: Self & (MappingOption[T, TResult])) extends AnyVal {
+    extension [Self <: MappingOption[?, ?], T, TResult](x: Self & (MappingOption[T, TResult])) {
       
-      @scala.inline
-      def setDisposeItem(value: /* item */ TResult => Unit): Self = StObject.set(x, "disposeItem", js.Any.fromFunction1(value))
+      inline def setDisposeItem(value: /* item */ TResult => Unit): Self = StObject.set(x, "disposeItem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDisposeItemUndefined: Self = StObject.set(x, "disposeItem", js.undefined)
+      inline def setDisposeItemUndefined: Self = StObject.set(x, "disposeItem", js.undefined)
       
-      @scala.inline
-      def setMapping(value: T => TResult): Self = StObject.set(x, "mapping", js.Any.fromFunction1(value))
+      inline def setMapping(value: T => TResult): Self = StObject.set(x, "mapping", js.Any.fromFunction1(value))
     }
   }
   
@@ -45,17 +40,14 @@ object KnockoutTransformations {
   }
   object MappingWithDisposeCallbackOption {
     
-    @scala.inline
-    def apply[T, TResult](mappingWithDisposeCallback: T => Dispose[TResult]): MappingWithDisposeCallbackOption[T, TResult] = {
+    inline def apply[T, TResult](mappingWithDisposeCallback: T => Dispose[TResult]): MappingWithDisposeCallbackOption[T, TResult] = {
       val __obj = js.Dynamic.literal(mappingWithDisposeCallback = js.Any.fromFunction1(mappingWithDisposeCallback))
       __obj.asInstanceOf[MappingWithDisposeCallbackOption[T, TResult]]
     }
     
-    @scala.inline
-    implicit class MappingWithDisposeCallbackOptionMutableBuilder[Self <: MappingWithDisposeCallbackOption[?, ?], T, TResult] (val x: Self & (MappingWithDisposeCallbackOption[T, TResult])) extends AnyVal {
+    extension [Self <: MappingWithDisposeCallbackOption[?, ?], T, TResult](x: Self & (MappingWithDisposeCallbackOption[T, TResult])) {
       
-      @scala.inline
-      def setMappingWithDisposeCallback(value: T => Dispose[TResult]): Self = StObject.set(x, "mappingWithDisposeCallback", js.Any.fromFunction1(value))
+      inline def setMappingWithDisposeCallback(value: T => Dispose[TResult]): Self = StObject.set(x, "mappingWithDisposeCallback", js.Any.fromFunction1(value))
     }
   }
 }

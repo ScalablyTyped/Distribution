@@ -10,16 +10,13 @@ trait DescribeBandwidthRateLimitScheduleInput extends StObject {
 }
 object DescribeBandwidthRateLimitScheduleInput {
   
-  @scala.inline
-  def apply(GatewayARN: GatewayARN): DescribeBandwidthRateLimitScheduleInput = {
+  inline def apply(GatewayARN: GatewayARN): DescribeBandwidthRateLimitScheduleInput = {
     val __obj = js.Dynamic.literal(GatewayARN = GatewayARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeBandwidthRateLimitScheduleInput]
   }
   
-  @scala.inline
-  implicit class DescribeBandwidthRateLimitScheduleInputMutableBuilder[Self <: DescribeBandwidthRateLimitScheduleInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeBandwidthRateLimitScheduleInput](x: Self) {
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
   }
 }

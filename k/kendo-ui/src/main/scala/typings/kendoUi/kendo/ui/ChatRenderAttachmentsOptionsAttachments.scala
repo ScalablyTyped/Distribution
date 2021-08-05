@@ -12,25 +12,19 @@ trait ChatRenderAttachmentsOptionsAttachments extends StObject {
 }
 object ChatRenderAttachmentsOptionsAttachments {
   
-  @scala.inline
-  def apply(): ChatRenderAttachmentsOptionsAttachments = {
+  inline def apply(): ChatRenderAttachmentsOptionsAttachments = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChatRenderAttachmentsOptionsAttachments]
   }
   
-  @scala.inline
-  implicit class ChatRenderAttachmentsOptionsAttachmentsMutableBuilder[Self <: ChatRenderAttachmentsOptionsAttachments] (val x: Self) extends AnyVal {
+  extension [Self <: ChatRenderAttachmentsOptionsAttachments](x: Self) {
     
-    @scala.inline
-    def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
   }
 }

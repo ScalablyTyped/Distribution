@@ -24,8 +24,7 @@ object MediaCapture {
     * @return The list of video profiles supported by the specified video capture device.
     */
   /* static member */
-  @scala.inline
-  def findAllVideoProfiles(videoDeviceId: String): IVectorView[typings.winrtUwp.Windows.Media.Capture.MediaCaptureVideoProfile] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllVideoProfiles")(videoDeviceId.asInstanceOf[js.Any]).asInstanceOf[IVectorView[typings.winrtUwp.Windows.Media.Capture.MediaCaptureVideoProfile]]
+  inline def findAllVideoProfiles(videoDeviceId: String): IVectorView[typings.winrtUwp.Windows.Media.Capture.MediaCaptureVideoProfile] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllVideoProfiles")(videoDeviceId.asInstanceOf[js.Any]).asInstanceOf[IVectorView[typings.winrtUwp.Windows.Media.Capture.MediaCaptureVideoProfile]]
   
   /**
     * Retrieves the list of video profiles supported by the specified video capture device that can be used while another profile is used on a different capture device.
@@ -33,8 +32,7 @@ object MediaCapture {
     * @return The list of video profiles supported by the specified video capture device that support concurrency.
     */
   /* static member */
-  @scala.inline
-  def findConcurrentProfiles(videoDeviceId: String): IVectorView[typings.winrtUwp.Windows.Media.Capture.MediaCaptureVideoProfile] = ^.asInstanceOf[js.Dynamic].applyDynamic("findConcurrentProfiles")(videoDeviceId.asInstanceOf[js.Any]).asInstanceOf[IVectorView[typings.winrtUwp.Windows.Media.Capture.MediaCaptureVideoProfile]]
+  inline def findConcurrentProfiles(videoDeviceId: String): IVectorView[typings.winrtUwp.Windows.Media.Capture.MediaCaptureVideoProfile] = ^.asInstanceOf[js.Dynamic].applyDynamic("findConcurrentProfiles")(videoDeviceId.asInstanceOf[js.Any]).asInstanceOf[IVectorView[typings.winrtUwp.Windows.Media.Capture.MediaCaptureVideoProfile]]
   
   /**
     * Retrieves the list of all video profiles supported by the specified video capture device that match the specified KnownVideoProfile value.
@@ -43,8 +41,7 @@ object MediaCapture {
     * @return The list of video profiles supported by the specified video capture device that match the specified known profile name.
     */
   /* static member */
-  @scala.inline
-  def findKnownVideoProfiles(videoDeviceId: String, name: typings.winrtUwp.Windows.Media.Capture.KnownVideoProfile): IVectorView[typings.winrtUwp.Windows.Media.Capture.MediaCaptureVideoProfile] = (^.asInstanceOf[js.Dynamic].applyDynamic("findKnownVideoProfiles")(videoDeviceId.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[IVectorView[typings.winrtUwp.Windows.Media.Capture.MediaCaptureVideoProfile]]
+  inline def findKnownVideoProfiles(videoDeviceId: String, name: typings.winrtUwp.Windows.Media.Capture.KnownVideoProfile): IVectorView[typings.winrtUwp.Windows.Media.Capture.MediaCaptureVideoProfile] = (^.asInstanceOf[js.Dynamic].applyDynamic("findKnownVideoProfiles")(videoDeviceId.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[IVectorView[typings.winrtUwp.Windows.Media.Capture.MediaCaptureVideoProfile]]
   
   /**
     * Gets a boolean value indicating whether video profiles are supported by the specified video capture device.
@@ -52,6 +49,5 @@ object MediaCapture {
     * @return True if video profiles are supported; otherwise, false.
     */
   /* static member */
-  @scala.inline
-  def isVideoProfileSupported(videoDeviceId: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVideoProfileSupported")(videoDeviceId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isVideoProfileSupported(videoDeviceId: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVideoProfileSupported")(videoDeviceId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

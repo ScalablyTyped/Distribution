@@ -10,6 +10,5 @@ object logCustom {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def logUdp(txt: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("log_udp")(txt.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def logUdp(txt: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("log_udp")(txt.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

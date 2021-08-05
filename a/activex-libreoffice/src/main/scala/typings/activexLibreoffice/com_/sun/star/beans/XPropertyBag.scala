@@ -15,8 +15,7 @@ trait XPropertyBag
      with XPropertyAccess
 object XPropertyBag {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     PropertySetInfo: XPropertySetInfo,
     PropertyValues: SafeArray[PropertyValue],
     acquire: () => Unit,

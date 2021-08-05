@@ -12,16 +12,13 @@ trait GetBeaconsSuccessCallbackResult extends StObject {
 }
 object GetBeaconsSuccessCallbackResult {
   
-  @scala.inline
-  def apply(beacons: Array[IBeaconInfo]): GetBeaconsSuccessCallbackResult = {
+  inline def apply(beacons: Array[IBeaconInfo]): GetBeaconsSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(beacons = beacons.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBeaconsSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class GetBeaconsSuccessCallbackResultMutableBuilder[Self <: GetBeaconsSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetBeaconsSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setBeacons(value: Array[IBeaconInfo]): Self = StObject.set(x, "beacons", value.asInstanceOf[js.Any])
+    inline def setBeacons(value: Array[IBeaconInfo]): Self = StObject.set(x, "beacons", value.asInstanceOf[js.Any])
   }
 }

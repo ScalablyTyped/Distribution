@@ -19,8 +19,7 @@ trait ReadonlyESMap[K, V]
 }
 object ReadonlyESMap {
   
-  @scala.inline
-  def apply[K, V](
+  inline def apply[K, V](
     entries: () => Iterator[js.Tuple2[K, V]],
     forEach: js.Function2[/* value */ V, /* key */ K, Unit] => Unit,
     get: K => js.UndefOr[V],
@@ -33,19 +32,14 @@ object ReadonlyESMap {
     __obj.asInstanceOf[ReadonlyESMap[K, V]]
   }
   
-  @scala.inline
-  implicit class ReadonlyESMapMutableBuilder[Self <: ReadonlyESMap[?, ?], K, V] (val x: Self & (ReadonlyESMap[K, V])) extends AnyVal {
+  extension [Self <: ReadonlyESMap[?, ?], K, V](x: Self & (ReadonlyESMap[K, V])) {
     
-    @scala.inline
-    def setEntries(value: () => Iterator[js.Tuple2[K, V]]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))
+    inline def setEntries(value: () => Iterator[js.Tuple2[K, V]]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setForEach(value: js.Function2[/* value */ V, /* key */ K, Unit] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
+    inline def setForEach(value: js.Function2[/* value */ V, /* key */ K, Unit] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGet(value: K => js.UndefOr[V]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: K => js.UndefOr[V]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValues(value: () => Iterator[V]): Self = StObject.set(x, "values", js.Any.fromFunction0(value))
+    inline def setValues(value: () => Iterator[V]): Self = StObject.set(x, "values", js.Any.fromFunction0(value))
   }
 }

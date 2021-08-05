@@ -13,16 +13,13 @@ trait DeleteGraphqlApiRequest extends StObject {
 }
 object DeleteGraphqlApiRequest {
   
-  @scala.inline
-  def apply(apiId: String): DeleteGraphqlApiRequest = {
+  inline def apply(apiId: String): DeleteGraphqlApiRequest = {
     val __obj = js.Dynamic.literal(apiId = apiId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteGraphqlApiRequest]
   }
   
-  @scala.inline
-  implicit class DeleteGraphqlApiRequestMutableBuilder[Self <: DeleteGraphqlApiRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteGraphqlApiRequest](x: Self) {
     
-    @scala.inline
-    def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
+    inline def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
   }
 }

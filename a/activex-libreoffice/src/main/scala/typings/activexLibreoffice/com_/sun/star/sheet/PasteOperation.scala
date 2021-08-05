@@ -21,16 +21,13 @@ trait PasteOperation extends StObject
 object PasteOperation {
   
   /** old and new values are added. */
-  @scala.inline
-  def ADD: `1` = 1.asInstanceOf[`1`]
+  inline def ADD: `1` = 1.asInstanceOf[`1`]
   
   /** new values are divided by the new values. */
-  @scala.inline
-  def DIVIDE: `4` = 4.asInstanceOf[`4`]
+  inline def DIVIDE: `4` = 4.asInstanceOf[`4`]
   
   /** old and new values are multiplied. */
-  @scala.inline
-  def MULTIPLY: `3` = 3.asInstanceOf[`3`]
+  inline def MULTIPLY: `3` = 3.asInstanceOf[`3`]
   
   /**
     * no cells are moved.
@@ -45,10 +42,8 @@ object PasteOperation {
     *
     * sheet is not linked.
     */
-  @scala.inline
-  def NONE: `0` = 0.asInstanceOf[`0`]
+  inline def NONE: `0` = 0.asInstanceOf[`0`]
   
   /** new values are subtracted from the old values. */
-  @scala.inline
-  def SUBTRACT: `2` = 2.asInstanceOf[`2`]
+  inline def SUBTRACT: `2` = 2.asInstanceOf[`2`]
 }

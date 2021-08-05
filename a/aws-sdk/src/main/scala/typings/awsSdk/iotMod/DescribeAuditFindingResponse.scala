@@ -10,19 +10,15 @@ trait DescribeAuditFindingResponse extends StObject {
 }
 object DescribeAuditFindingResponse {
   
-  @scala.inline
-  def apply(): DescribeAuditFindingResponse = {
+  inline def apply(): DescribeAuditFindingResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAuditFindingResponse]
   }
   
-  @scala.inline
-  implicit class DescribeAuditFindingResponseMutableBuilder[Self <: DescribeAuditFindingResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAuditFindingResponse](x: Self) {
     
-    @scala.inline
-    def setFinding(value: AuditFinding): Self = StObject.set(x, "finding", value.asInstanceOf[js.Any])
+    inline def setFinding(value: AuditFinding): Self = StObject.set(x, "finding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingUndefined: Self = StObject.set(x, "finding", js.undefined)
+    inline def setFindingUndefined: Self = StObject.set(x, "finding", js.undefined)
   }
 }

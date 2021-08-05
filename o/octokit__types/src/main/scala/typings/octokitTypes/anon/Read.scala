@@ -14,22 +14,17 @@ trait Read extends StObject {
 }
 object Read {
   
-  @scala.inline
-  def apply(admin: Boolean, read: Boolean, write: Boolean): Read = {
+  inline def apply(admin: Boolean, read: Boolean, write: Boolean): Read = {
     val __obj = js.Dynamic.literal(admin = admin.asInstanceOf[js.Any], read = read.asInstanceOf[js.Any], write = write.asInstanceOf[js.Any])
     __obj.asInstanceOf[Read]
   }
   
-  @scala.inline
-  implicit class ReadMutableBuilder[Self <: Read] (val x: Self) extends AnyVal {
+  extension [Self <: Read](x: Self) {
     
-    @scala.inline
-    def setAdmin(value: Boolean): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
+    inline def setAdmin(value: Boolean): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRead(value: Boolean): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+    inline def setRead(value: Boolean): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrite(value: Boolean): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
+    inline def setWrite(value: Boolean): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
   }
 }

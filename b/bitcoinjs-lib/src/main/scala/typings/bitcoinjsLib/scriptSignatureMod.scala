@@ -11,11 +11,9 @@ object scriptSignatureMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def decode(buffer: Buffer): ScriptSignature = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buffer.asInstanceOf[js.Any]).asInstanceOf[ScriptSignature]
+  inline def decode(buffer: Buffer): ScriptSignature = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buffer.asInstanceOf[js.Any]).asInstanceOf[ScriptSignature]
   
-  @scala.inline
-  def encode(signature: Buffer, hashType: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(signature.asInstanceOf[js.Any], hashType.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def encode(signature: Buffer, hashType: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(signature.asInstanceOf[js.Any], hashType.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
   trait ScriptSignature extends StObject {
     
@@ -25,20 +23,16 @@ object scriptSignatureMod {
   }
   object ScriptSignature {
     
-    @scala.inline
-    def apply(hashType: Double, signature: Buffer): ScriptSignature = {
+    inline def apply(hashType: Double, signature: Buffer): ScriptSignature = {
       val __obj = js.Dynamic.literal(hashType = hashType.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScriptSignature]
     }
     
-    @scala.inline
-    implicit class ScriptSignatureMutableBuilder[Self <: ScriptSignature] (val x: Self) extends AnyVal {
+    extension [Self <: ScriptSignature](x: Self) {
       
-      @scala.inline
-      def setHashType(value: Double): Self = StObject.set(x, "hashType", value.asInstanceOf[js.Any])
+      inline def setHashType(value: Double): Self = StObject.set(x, "hashType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignature(value: Buffer): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+      inline def setSignature(value: Buffer): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     }
   }
 }

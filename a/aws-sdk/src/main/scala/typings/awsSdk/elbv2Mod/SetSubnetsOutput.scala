@@ -18,28 +18,21 @@ trait SetSubnetsOutput extends StObject {
 }
 object SetSubnetsOutput {
   
-  @scala.inline
-  def apply(): SetSubnetsOutput = {
+  inline def apply(): SetSubnetsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SetSubnetsOutput]
   }
   
-  @scala.inline
-  implicit class SetSubnetsOutputMutableBuilder[Self <: SetSubnetsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: SetSubnetsOutput](x: Self) {
     
-    @scala.inline
-    def setAvailabilityZones(value: AvailabilityZones): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZones(value: AvailabilityZones): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
+    inline def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
     
-    @scala.inline
-    def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
+    inline def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
     
-    @scala.inline
-    def setIpAddressType(value: IpAddressType): Self = StObject.set(x, "IpAddressType", value.asInstanceOf[js.Any])
+    inline def setIpAddressType(value: IpAddressType): Self = StObject.set(x, "IpAddressType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddressTypeUndefined: Self = StObject.set(x, "IpAddressType", js.undefined)
+    inline def setIpAddressTypeUndefined: Self = StObject.set(x, "IpAddressType", js.undefined)
   }
 }

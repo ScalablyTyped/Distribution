@@ -13,22 +13,17 @@ trait SchemaDetectionsListResponse extends StObject {
 }
 object SchemaDetectionsListResponse {
   
-  @scala.inline
-  def apply(): SchemaDetectionsListResponse = {
+  inline def apply(): SchemaDetectionsListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDetectionsListResponse]
   }
   
-  @scala.inline
-  implicit class SchemaDetectionsListResponseMutableBuilder[Self <: SchemaDetectionsListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDetectionsListResponse](x: Self) {
     
-    @scala.inline
-    def setDetections(value: js.Array[SchemaDetectionsResource]): Self = StObject.set(x, "detections", value.asInstanceOf[js.Any])
+    inline def setDetections(value: js.Array[SchemaDetectionsResource]): Self = StObject.set(x, "detections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectionsUndefined: Self = StObject.set(x, "detections", js.undefined)
+    inline def setDetectionsUndefined: Self = StObject.set(x, "detections", js.undefined)
     
-    @scala.inline
-    def setDetectionsVarargs(value: SchemaDetectionsResource*): Self = StObject.set(x, "detections", js.Array(value :_*))
+    inline def setDetectionsVarargs(value: SchemaDetectionsResource*): Self = StObject.set(x, "detections", js.Array(value :_*))
   }
 }

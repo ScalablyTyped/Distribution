@@ -19,20 +19,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object NullableTypeAnnotation_ {
   
-  @scala.inline
-  def apply(typeAnnotation: FlowType): NullableTypeAnnotation_ = {
+  inline def apply(typeAnnotation: FlowType): NullableTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(typeAnnotation = typeAnnotation.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("NullableTypeAnnotation")
     __obj.asInstanceOf[NullableTypeAnnotation_]
   }
   
-  @scala.inline
-  implicit class NullableTypeAnnotation_MutableBuilder[Self <: NullableTypeAnnotation_] (val x: Self) extends AnyVal {
+  extension [Self <: NullableTypeAnnotation_](x: Self) {
     
-    @scala.inline
-    def setType(value: NullableTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: NullableTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeAnnotation(value: FlowType): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
+    inline def setTypeAnnotation(value: FlowType): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
   }
 }

@@ -25,29 +25,23 @@ trait Attributes extends StObject {
 }
 object Attributes {
   
-  @scala.inline
-  def apply(): Attributes = {
+  inline def apply(): Attributes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Attributes]
   }
   
-  @scala.inline
-  implicit class AttributesMutableBuilder[Self <: Attributes] (val x: Self) extends AnyVal {
+  extension [Self <: Attributes](x: Self) {
     
-    @scala.inline
-    def setAttributeMap(
+    inline def setAttributeMap(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.cloudtrace.gapi.client.cloudtrace.AttributeValue}
       */ typings.maximMazurokGapiClientCloudtrace.maximMazurokGapiClientCloudtraceStrings.Attributes & TopLevel[js.Any]
     ): Self = StObject.set(x, "attributeMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeMapUndefined: Self = StObject.set(x, "attributeMap", js.undefined)
+    inline def setAttributeMapUndefined: Self = StObject.set(x, "attributeMap", js.undefined)
     
-    @scala.inline
-    def setDroppedAttributesCount(value: Double): Self = StObject.set(x, "droppedAttributesCount", value.asInstanceOf[js.Any])
+    inline def setDroppedAttributesCount(value: Double): Self = StObject.set(x, "droppedAttributesCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDroppedAttributesCountUndefined: Self = StObject.set(x, "droppedAttributesCount", js.undefined)
+    inline def setDroppedAttributesCountUndefined: Self = StObject.set(x, "droppedAttributesCount", js.undefined)
   }
 }

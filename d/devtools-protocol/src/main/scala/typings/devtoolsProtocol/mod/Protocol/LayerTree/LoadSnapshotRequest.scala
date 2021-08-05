@@ -13,19 +13,15 @@ trait LoadSnapshotRequest extends StObject {
 }
 object LoadSnapshotRequest {
   
-  @scala.inline
-  def apply(tiles: js.Array[PictureTile]): LoadSnapshotRequest = {
+  inline def apply(tiles: js.Array[PictureTile]): LoadSnapshotRequest = {
     val __obj = js.Dynamic.literal(tiles = tiles.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadSnapshotRequest]
   }
   
-  @scala.inline
-  implicit class LoadSnapshotRequestMutableBuilder[Self <: LoadSnapshotRequest] (val x: Self) extends AnyVal {
+  extension [Self <: LoadSnapshotRequest](x: Self) {
     
-    @scala.inline
-    def setTiles(value: js.Array[PictureTile]): Self = StObject.set(x, "tiles", value.asInstanceOf[js.Any])
+    inline def setTiles(value: js.Array[PictureTile]): Self = StObject.set(x, "tiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTilesVarargs(value: PictureTile*): Self = StObject.set(x, "tiles", js.Array(value :_*))
+    inline def setTilesVarargs(value: PictureTile*): Self = StObject.set(x, "tiles", js.Array(value :_*))
   }
 }

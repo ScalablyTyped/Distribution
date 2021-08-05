@@ -18,19 +18,15 @@ trait DeleteUserHierarchyGroupRequest extends StObject {
 }
 object DeleteUserHierarchyGroupRequest {
   
-  @scala.inline
-  def apply(HierarchyGroupId: HierarchyGroupId, InstanceId: InstanceId): DeleteUserHierarchyGroupRequest = {
+  inline def apply(HierarchyGroupId: HierarchyGroupId, InstanceId: InstanceId): DeleteUserHierarchyGroupRequest = {
     val __obj = js.Dynamic.literal(HierarchyGroupId = HierarchyGroupId.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteUserHierarchyGroupRequest]
   }
   
-  @scala.inline
-  implicit class DeleteUserHierarchyGroupRequestMutableBuilder[Self <: DeleteUserHierarchyGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteUserHierarchyGroupRequest](x: Self) {
     
-    @scala.inline
-    def setHierarchyGroupId(value: HierarchyGroupId): Self = StObject.set(x, "HierarchyGroupId", value.asInstanceOf[js.Any])
+    inline def setHierarchyGroupId(value: HierarchyGroupId): Self = StObject.set(x, "HierarchyGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
   }
 }

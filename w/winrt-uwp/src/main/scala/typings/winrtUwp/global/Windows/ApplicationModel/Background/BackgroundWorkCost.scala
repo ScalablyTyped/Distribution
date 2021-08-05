@@ -21,6 +21,5 @@ object BackgroundWorkCost {
   @JSGlobal("Windows.ApplicationModel.Background.BackgroundWorkCost.currentBackgroundWorkCost")
   @js.native
   def currentBackgroundWorkCost: typings.winrtUwp.Windows.ApplicationModel.Background.BackgroundWorkCostValue = js.native
-  @scala.inline
-  def currentBackgroundWorkCost_=(x: typings.winrtUwp.Windows.ApplicationModel.Background.BackgroundWorkCostValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("currentBackgroundWorkCost")(x.asInstanceOf[js.Any])
+  inline def currentBackgroundWorkCost_=(x: typings.winrtUwp.Windows.ApplicationModel.Background.BackgroundWorkCostValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("currentBackgroundWorkCost")(x.asInstanceOf[js.Any])
 }

@@ -34,8 +34,7 @@ trait HiddenParagraph
 }
 object HiddenParagraph {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
     AnchorTypes: SafeArray[TextContentAnchorType],
@@ -66,13 +65,10 @@ object HiddenParagraph {
     __obj.asInstanceOf[HiddenParagraph]
   }
   
-  @scala.inline
-  implicit class HiddenParagraphMutableBuilder[Self <: HiddenParagraph] (val x: Self) extends AnyVal {
+  extension [Self <: HiddenParagraph](x: Self) {
     
-    @scala.inline
-    def setCondition(value: String): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: String): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsHidden(value: Boolean): Self = StObject.set(x, "IsHidden", value.asInstanceOf[js.Any])
+    inline def setIsHidden(value: Boolean): Self = StObject.set(x, "IsHidden", value.asInstanceOf[js.Any])
   }
 }

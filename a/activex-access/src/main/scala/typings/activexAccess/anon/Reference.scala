@@ -10,16 +10,13 @@ trait Reference extends StObject {
 }
 object Reference {
   
-  @scala.inline
-  def apply(Reference: typings.activexAccess.Access.Reference): Reference = {
+  inline def apply(Reference: typings.activexAccess.Access.Reference): Reference = {
     val __obj = js.Dynamic.literal(Reference = Reference.asInstanceOf[js.Any])
     __obj.asInstanceOf[Reference]
   }
   
-  @scala.inline
-  implicit class ReferenceMutableBuilder[Self <: Reference] (val x: Self) extends AnyVal {
+  extension [Self <: Reference](x: Self) {
     
-    @scala.inline
-    def setReference(value: typings.activexAccess.Access.Reference): Self = StObject.set(x, "Reference", value.asInstanceOf[js.Any])
+    inline def setReference(value: typings.activexAccess.Access.Reference): Self = StObject.set(x, "Reference", value.asInstanceOf[js.Any])
   }
 }

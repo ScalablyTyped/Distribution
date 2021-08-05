@@ -18,25 +18,19 @@ trait AssociateSoftwareTokenRequest extends StObject {
 }
 object AssociateSoftwareTokenRequest {
   
-  @scala.inline
-  def apply(): AssociateSoftwareTokenRequest = {
+  inline def apply(): AssociateSoftwareTokenRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssociateSoftwareTokenRequest]
   }
   
-  @scala.inline
-  implicit class AssociateSoftwareTokenRequestMutableBuilder[Self <: AssociateSoftwareTokenRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateSoftwareTokenRequest](x: Self) {
     
-    @scala.inline
-    def setAccessToken(value: TokenModelType): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
+    inline def setAccessToken(value: TokenModelType): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessTokenUndefined: Self = StObject.set(x, "AccessToken", js.undefined)
+    inline def setAccessTokenUndefined: Self = StObject.set(x, "AccessToken", js.undefined)
     
-    @scala.inline
-    def setSession(value: SessionType): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: SessionType): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionUndefined: Self = StObject.set(x, "Session", js.undefined)
+    inline def setSessionUndefined: Self = StObject.set(x, "Session", js.undefined)
   }
 }

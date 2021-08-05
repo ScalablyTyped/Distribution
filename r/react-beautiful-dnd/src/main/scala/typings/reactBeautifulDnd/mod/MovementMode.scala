@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MovementMode extends StObject
 object MovementMode {
   
-  @scala.inline
-  def FLUID: typings.reactBeautifulDnd.reactBeautifulDndStrings.FLUID = "FLUID".asInstanceOf[typings.reactBeautifulDnd.reactBeautifulDndStrings.FLUID]
+  inline def FLUID: typings.reactBeautifulDnd.reactBeautifulDndStrings.FLUID = "FLUID".asInstanceOf[typings.reactBeautifulDnd.reactBeautifulDndStrings.FLUID]
   
-  @scala.inline
-  def SNAP: typings.reactBeautifulDnd.reactBeautifulDndStrings.SNAP = "SNAP".asInstanceOf[typings.reactBeautifulDnd.reactBeautifulDndStrings.SNAP]
+  inline def SNAP: typings.reactBeautifulDnd.reactBeautifulDndStrings.SNAP = "SNAP".asInstanceOf[typings.reactBeautifulDnd.reactBeautifulDndStrings.SNAP]
 }

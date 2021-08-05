@@ -12,20 +12,16 @@ object anon {
   }
   object Platform {
     
-    @scala.inline
-    def apply(): Platform = {
+    inline def apply(): Platform = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Platform]
     }
     
-    @scala.inline
-    implicit class PlatformMutableBuilder[Self <: Platform] (val x: Self) extends AnyVal {
+    extension [Self <: Platform](x: Self) {
       
-      @scala.inline
-      def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+      inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     }
   }
 }

@@ -10,8 +10,7 @@ object getterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def defaultGetter(carrier: js.Any, key: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultGetter")(carrier.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def defaultGetter(carrier: js.Any, key: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultGetter")(carrier.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   type GetterFunction[Carrier] = js.Function2[/* carrier */ Carrier, /* key */ String, js.Any]
 }

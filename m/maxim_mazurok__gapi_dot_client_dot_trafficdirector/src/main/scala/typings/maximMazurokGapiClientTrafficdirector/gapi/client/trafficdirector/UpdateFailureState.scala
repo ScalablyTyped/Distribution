@@ -22,35 +22,27 @@ trait UpdateFailureState extends StObject {
 }
 object UpdateFailureState {
   
-  @scala.inline
-  def apply(): UpdateFailureState = {
+  inline def apply(): UpdateFailureState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateFailureState]
   }
   
-  @scala.inline
-  implicit class UpdateFailureStateMutableBuilder[Self <: UpdateFailureState] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateFailureState](x: Self) {
     
-    @scala.inline
-    def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    @scala.inline
-    def setFailedConfiguration(
+    inline def setFailedConfiguration(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.UpdateFailureState & TopLevel[js.Any]
     ): Self = StObject.set(x, "failedConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedConfigurationUndefined: Self = StObject.set(x, "failedConfiguration", js.undefined)
+    inline def setFailedConfigurationUndefined: Self = StObject.set(x, "failedConfiguration", js.undefined)
     
-    @scala.inline
-    def setLastUpdateAttempt(value: String): Self = StObject.set(x, "lastUpdateAttempt", value.asInstanceOf[js.Any])
+    inline def setLastUpdateAttempt(value: String): Self = StObject.set(x, "lastUpdateAttempt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdateAttemptUndefined: Self = StObject.set(x, "lastUpdateAttempt", js.undefined)
+    inline def setLastUpdateAttemptUndefined: Self = StObject.set(x, "lastUpdateAttempt", js.undefined)
   }
 }

@@ -21,8 +21,7 @@ trait KeymasterEvent extends StObject {
 }
 object KeymasterEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     key: String,
     method: (/* keyboardEvent */ KeyboardEvent, /* keymasterEvent */ KeymasterEvent) => Unit,
     mods: js.Array[Double],
@@ -33,25 +32,18 @@ object KeymasterEvent {
     __obj.asInstanceOf[KeymasterEvent]
   }
   
-  @scala.inline
-  implicit class KeymasterEventMutableBuilder[Self <: KeymasterEvent] (val x: Self) extends AnyVal {
+  extension [Self <: KeymasterEvent](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: (/* keyboardEvent */ KeyboardEvent, /* keymasterEvent */ KeymasterEvent) => Unit): Self = StObject.set(x, "method", js.Any.fromFunction2(value))
+    inline def setMethod(value: (/* keyboardEvent */ KeyboardEvent, /* keymasterEvent */ KeymasterEvent) => Unit): Self = StObject.set(x, "method", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMods(value: js.Array[Double]): Self = StObject.set(x, "mods", value.asInstanceOf[js.Any])
+    inline def setMods(value: js.Array[Double]): Self = StObject.set(x, "mods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModsVarargs(value: Double*): Self = StObject.set(x, "mods", js.Array(value :_*))
+    inline def setModsVarargs(value: Double*): Self = StObject.set(x, "mods", js.Array(value :_*))
     
-    @scala.inline
-    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortcut(value: String): Self = StObject.set(x, "shortcut", value.asInstanceOf[js.Any])
+    inline def setShortcut(value: String): Self = StObject.set(x, "shortcut", value.asInstanceOf[js.Any])
   }
 }

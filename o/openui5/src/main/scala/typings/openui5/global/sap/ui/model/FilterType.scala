@@ -16,8 +16,7 @@ object FilterType {
   @JSGlobal("sap.ui.model.FilterType.Application")
   @js.native
   def Application: js.Any = js.native
-  @scala.inline
-  def Application_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Application")(x.asInstanceOf[js.Any])
+  inline def Application_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Application")(x.asInstanceOf[js.Any])
   
   /**
     * Filters which are set by the different controls
@@ -25,6 +24,5 @@ object FilterType {
   @JSGlobal("sap.ui.model.FilterType.Control")
   @js.native
   def Control: js.Any = js.native
-  @scala.inline
-  def Control_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Control")(x.asInstanceOf[js.Any])
+  inline def Control_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Control")(x.asInstanceOf[js.Any])
 }

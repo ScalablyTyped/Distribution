@@ -9,6 +9,5 @@ object global {
   @JSGlobal("rpio")
   @js.native
   def rpio: Rpio = js.native
-  @scala.inline
-  def rpio_=(x: Rpio): Unit = js.Dynamic.global.updateDynamic("rpio")(x.asInstanceOf[js.Any])
+  inline def rpio_=(x: Rpio): Unit = js.Dynamic.global.updateDynamic("rpio")(x.asInstanceOf[js.Any])
 }

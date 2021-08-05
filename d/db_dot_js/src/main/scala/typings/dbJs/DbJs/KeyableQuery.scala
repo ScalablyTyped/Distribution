@@ -10,16 +10,13 @@ trait KeyableQuery[T] extends StObject {
 }
 object KeyableQuery {
   
-  @scala.inline
-  def apply[T](keys: () => KeysQuery[T]): KeyableQuery[T] = {
+  inline def apply[T](keys: () => KeysQuery[T]): KeyableQuery[T] = {
     val __obj = js.Dynamic.literal(keys = js.Any.fromFunction0(keys))
     __obj.asInstanceOf[KeyableQuery[T]]
   }
   
-  @scala.inline
-  implicit class KeyableQueryMutableBuilder[Self <: KeyableQuery[?], T] (val x: Self & KeyableQuery[T]) extends AnyVal {
+  extension [Self <: KeyableQuery[?], T](x: Self & KeyableQuery[T]) {
     
-    @scala.inline
-    def setKeys(value: () => KeysQuery[T]): Self = StObject.set(x, "keys", js.Any.fromFunction0(value))
+    inline def setKeys(value: () => KeysQuery[T]): Self = StObject.set(x, "keys", js.Any.fromFunction0(value))
   }
 }

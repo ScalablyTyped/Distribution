@@ -10,19 +10,15 @@ trait StatefulPolicy extends StObject {
 }
 object StatefulPolicy {
   
-  @scala.inline
-  def apply(): StatefulPolicy = {
+  inline def apply(): StatefulPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StatefulPolicy]
   }
   
-  @scala.inline
-  implicit class StatefulPolicyMutableBuilder[Self <: StatefulPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: StatefulPolicy](x: Self) {
     
-    @scala.inline
-    def setPreservedState(value: StatefulPolicyPreservedState): Self = StObject.set(x, "preservedState", value.asInstanceOf[js.Any])
+    inline def setPreservedState(value: StatefulPolicyPreservedState): Self = StObject.set(x, "preservedState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreservedStateUndefined: Self = StObject.set(x, "preservedState", js.undefined)
+    inline def setPreservedStateUndefined: Self = StObject.set(x, "preservedState", js.undefined)
   }
 }

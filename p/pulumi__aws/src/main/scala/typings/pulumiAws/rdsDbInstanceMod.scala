@@ -60,21 +60,16 @@ object rdsDbInstanceMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): RdsDbInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[RdsDbInstance]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): RdsDbInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RdsDbInstance]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: RdsDbInstanceState): RdsDbInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RdsDbInstance]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: RdsDbInstanceState, opts: CustomResourceOptions): RdsDbInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RdsDbInstance]
+    inline def get(name: String, id: Input[ID]): RdsDbInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[RdsDbInstance]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): RdsDbInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RdsDbInstance]
+    inline def get(name: String, id: Input[ID], state: RdsDbInstanceState): RdsDbInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RdsDbInstance]
+    inline def get(name: String, id: Input[ID], state: RdsDbInstanceState, opts: CustomResourceOptions): RdsDbInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RdsDbInstance]
     
     /**
       * Returns true if the given object is an instance of RdsDbInstance.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/rdsDbInstance.RdsDbInstance */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/opsworks/rdsDbInstance.RdsDbInstance */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/rdsDbInstance.RdsDbInstance */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/opsworks/rdsDbInstance.RdsDbInstance */ Boolean]
   }
   
   trait RdsDbInstanceArgs extends StObject {
@@ -101,8 +96,7 @@ object rdsDbInstanceMod {
   }
   object RdsDbInstanceArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dbPassword: Input[String],
       dbUser: Input[String],
       rdsDbInstanceArn: Input[String],
@@ -112,20 +106,15 @@ object rdsDbInstanceMod {
       __obj.asInstanceOf[RdsDbInstanceArgs]
     }
     
-    @scala.inline
-    implicit class RdsDbInstanceArgsMutableBuilder[Self <: RdsDbInstanceArgs] (val x: Self) extends AnyVal {
+    extension [Self <: RdsDbInstanceArgs](x: Self) {
       
-      @scala.inline
-      def setDbPassword(value: Input[String]): Self = StObject.set(x, "dbPassword", value.asInstanceOf[js.Any])
+      inline def setDbPassword(value: Input[String]): Self = StObject.set(x, "dbPassword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDbUser(value: Input[String]): Self = StObject.set(x, "dbUser", value.asInstanceOf[js.Any])
+      inline def setDbUser(value: Input[String]): Self = StObject.set(x, "dbUser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRdsDbInstanceArn(value: Input[String]): Self = StObject.set(x, "rdsDbInstanceArn", value.asInstanceOf[js.Any])
+      inline def setRdsDbInstanceArn(value: Input[String]): Self = StObject.set(x, "rdsDbInstanceArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackId(value: Input[String]): Self = StObject.set(x, "stackId", value.asInstanceOf[js.Any])
+      inline def setStackId(value: Input[String]): Self = StObject.set(x, "stackId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -153,38 +142,28 @@ object rdsDbInstanceMod {
   }
   object RdsDbInstanceState {
     
-    @scala.inline
-    def apply(): RdsDbInstanceState = {
+    inline def apply(): RdsDbInstanceState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RdsDbInstanceState]
     }
     
-    @scala.inline
-    implicit class RdsDbInstanceStateMutableBuilder[Self <: RdsDbInstanceState] (val x: Self) extends AnyVal {
+    extension [Self <: RdsDbInstanceState](x: Self) {
       
-      @scala.inline
-      def setDbPassword(value: Input[String]): Self = StObject.set(x, "dbPassword", value.asInstanceOf[js.Any])
+      inline def setDbPassword(value: Input[String]): Self = StObject.set(x, "dbPassword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDbPasswordUndefined: Self = StObject.set(x, "dbPassword", js.undefined)
+      inline def setDbPasswordUndefined: Self = StObject.set(x, "dbPassword", js.undefined)
       
-      @scala.inline
-      def setDbUser(value: Input[String]): Self = StObject.set(x, "dbUser", value.asInstanceOf[js.Any])
+      inline def setDbUser(value: Input[String]): Self = StObject.set(x, "dbUser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDbUserUndefined: Self = StObject.set(x, "dbUser", js.undefined)
+      inline def setDbUserUndefined: Self = StObject.set(x, "dbUser", js.undefined)
       
-      @scala.inline
-      def setRdsDbInstanceArn(value: Input[String]): Self = StObject.set(x, "rdsDbInstanceArn", value.asInstanceOf[js.Any])
+      inline def setRdsDbInstanceArn(value: Input[String]): Self = StObject.set(x, "rdsDbInstanceArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRdsDbInstanceArnUndefined: Self = StObject.set(x, "rdsDbInstanceArn", js.undefined)
+      inline def setRdsDbInstanceArnUndefined: Self = StObject.set(x, "rdsDbInstanceArn", js.undefined)
       
-      @scala.inline
-      def setStackId(value: Input[String]): Self = StObject.set(x, "stackId", value.asInstanceOf[js.Any])
+      inline def setStackId(value: Input[String]): Self = StObject.set(x, "stackId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackIdUndefined: Self = StObject.set(x, "stackId", js.undefined)
+      inline def setStackIdUndefined: Self = StObject.set(x, "stackId", js.undefined)
     }
   }
 }

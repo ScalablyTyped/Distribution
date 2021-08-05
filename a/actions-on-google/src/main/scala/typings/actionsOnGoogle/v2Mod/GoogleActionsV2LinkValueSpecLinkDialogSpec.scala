@@ -26,25 +26,19 @@ trait GoogleActionsV2LinkValueSpecLinkDialogSpec extends StObject {
 }
 object GoogleActionsV2LinkValueSpecLinkDialogSpec {
   
-  @scala.inline
-  def apply(): GoogleActionsV2LinkValueSpecLinkDialogSpec = {
+  inline def apply(): GoogleActionsV2LinkValueSpecLinkDialogSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2LinkValueSpecLinkDialogSpec]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2LinkValueSpecLinkDialogSpecMutableBuilder[Self <: GoogleActionsV2LinkValueSpecLinkDialogSpec] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2LinkValueSpecLinkDialogSpec](x: Self) {
     
-    @scala.inline
-    def setDestinationName(value: String): Self = StObject.set(x, "destinationName", value.asInstanceOf[js.Any])
+    inline def setDestinationName(value: String): Self = StObject.set(x, "destinationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationNameUndefined: Self = StObject.set(x, "destinationName", js.undefined)
+    inline def setDestinationNameUndefined: Self = StObject.set(x, "destinationName", js.undefined)
     
-    @scala.inline
-    def setRequestLinkReason(value: String): Self = StObject.set(x, "requestLinkReason", value.asInstanceOf[js.Any])
+    inline def setRequestLinkReason(value: String): Self = StObject.set(x, "requestLinkReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestLinkReasonUndefined: Self = StObject.set(x, "requestLinkReason", js.undefined)
+    inline def setRequestLinkReasonUndefined: Self = StObject.set(x, "requestLinkReason", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait DetectStackResourceDriftOutput extends StObject {
 }
 object DetectStackResourceDriftOutput {
   
-  @scala.inline
-  def apply(StackResourceDrift: StackResourceDrift): DetectStackResourceDriftOutput = {
+  inline def apply(StackResourceDrift: StackResourceDrift): DetectStackResourceDriftOutput = {
     val __obj = js.Dynamic.literal(StackResourceDrift = StackResourceDrift.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectStackResourceDriftOutput]
   }
   
-  @scala.inline
-  implicit class DetectStackResourceDriftOutputMutableBuilder[Self <: DetectStackResourceDriftOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DetectStackResourceDriftOutput](x: Self) {
     
-    @scala.inline
-    def setStackResourceDrift(value: StackResourceDrift): Self = StObject.set(x, "StackResourceDrift", value.asInstanceOf[js.Any])
+    inline def setStackResourceDrift(value: StackResourceDrift): Self = StObject.set(x, "StackResourceDrift", value.asInstanceOf[js.Any])
   }
 }

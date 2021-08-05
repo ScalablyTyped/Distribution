@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FinishingSides extends StObject
 object FinishingSides {
   
-  @scala.inline
-  def back: typings.ipp.ippStrings.back = "back".asInstanceOf[typings.ipp.ippStrings.back]
+  inline def back: typings.ipp.ippStrings.back = "back".asInstanceOf[typings.ipp.ippStrings.back]
   
-  @scala.inline
-  def both: typings.ipp.ippStrings.both = "both".asInstanceOf[typings.ipp.ippStrings.both]
+  inline def both: typings.ipp.ippStrings.both = "both".asInstanceOf[typings.ipp.ippStrings.both]
   
-  @scala.inline
-  def front: typings.ipp.ippStrings.front = "front".asInstanceOf[typings.ipp.ippStrings.front]
+  inline def front: typings.ipp.ippStrings.front = "front".asInstanceOf[typings.ipp.ippStrings.front]
 }

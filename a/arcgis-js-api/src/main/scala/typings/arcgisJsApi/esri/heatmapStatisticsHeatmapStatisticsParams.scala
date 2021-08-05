@@ -55,8 +55,7 @@ trait heatmapStatisticsHeatmapStatisticsParams
 }
 object heatmapStatisticsHeatmapStatisticsParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     layer: FeatureLayer | CSVLayer | GeoJSONLayer,
@@ -67,40 +66,28 @@ object heatmapStatisticsHeatmapStatisticsParams {
     __obj.asInstanceOf[heatmapStatisticsHeatmapStatisticsParams]
   }
   
-  @scala.inline
-  implicit class heatmapStatisticsHeatmapStatisticsParamsMutableBuilder[Self <: heatmapStatisticsHeatmapStatisticsParams] (val x: Self) extends AnyVal {
+  extension [Self <: heatmapStatisticsHeatmapStatisticsParams](x: Self) {
     
-    @scala.inline
-    def setBlurRadius(value: Double): Self = StObject.set(x, "blurRadius", value.asInstanceOf[js.Any])
+    inline def setBlurRadius(value: Double): Self = StObject.set(x, "blurRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlurRadiusUndefined: Self = StObject.set(x, "blurRadius", js.undefined)
+    inline def setBlurRadiusUndefined: Self = StObject.set(x, "blurRadius", js.undefined)
     
-    @scala.inline
-    def setFeatures(value: js.Array[Graphic]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+    inline def setFeatures(value: js.Array[Graphic]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
+    inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
-    @scala.inline
-    def setFeaturesVarargs(value: Graphic*): Self = StObject.set(x, "features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: Graphic*): Self = StObject.set(x, "features", js.Array(value :_*))
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setLayer(value: FeatureLayer | CSVLayer | GeoJSONLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: FeatureLayer | CSVLayer | GeoJSONLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
-    @scala.inline
-    def setView(value: MapView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

@@ -35,8 +35,7 @@ trait PersistentVolumeClaimCondition extends StObject {
 }
 object PersistentVolumeClaimCondition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     lastProbeTime: String,
     lastTransitionTime: String,
     message: String,
@@ -49,25 +48,18 @@ object PersistentVolumeClaimCondition {
     __obj.asInstanceOf[PersistentVolumeClaimCondition]
   }
   
-  @scala.inline
-  implicit class PersistentVolumeClaimConditionMutableBuilder[Self <: PersistentVolumeClaimCondition] (val x: Self) extends AnyVal {
+  extension [Self <: PersistentVolumeClaimCondition](x: Self) {
     
-    @scala.inline
-    def setLastProbeTime(value: String): Self = StObject.set(x, "lastProbeTime", value.asInstanceOf[js.Any])
+    inline def setLastProbeTime(value: String): Self = StObject.set(x, "lastProbeTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastTransitionTime(value: String): Self = StObject.set(x, "lastTransitionTime", value.asInstanceOf[js.Any])
+    inline def setLastTransitionTime(value: String): Self = StObject.set(x, "lastTransitionTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

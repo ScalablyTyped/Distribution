@@ -12,19 +12,15 @@ trait Expansions extends StObject {
 }
 object Expansions {
   
-  @scala.inline
-  def apply(expansions: js.Array[Expansion]): Expansions = {
+  inline def apply(expansions: js.Array[Expansion]): Expansions = {
     val __obj = js.Dynamic.literal(expansions = expansions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expansions]
   }
   
-  @scala.inline
-  implicit class ExpansionsMutableBuilder[Self <: Expansions] (val x: Self) extends AnyVal {
+  extension [Self <: Expansions](x: Self) {
     
-    @scala.inline
-    def setExpansions(value: js.Array[Expansion]): Self = StObject.set(x, "expansions", value.asInstanceOf[js.Any])
+    inline def setExpansions(value: js.Array[Expansion]): Self = StObject.set(x, "expansions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpansionsVarargs(value: Expansion*): Self = StObject.set(x, "expansions", js.Array(value :_*))
+    inline def setExpansionsVarargs(value: Expansion*): Self = StObject.set(x, "expansions", js.Array(value :_*))
   }
 }

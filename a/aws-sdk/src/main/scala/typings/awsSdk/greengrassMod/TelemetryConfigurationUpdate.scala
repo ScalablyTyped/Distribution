@@ -13,16 +13,13 @@ trait TelemetryConfigurationUpdate extends StObject {
 }
 object TelemetryConfigurationUpdate {
   
-  @scala.inline
-  def apply(Telemetry: Telemetry): TelemetryConfigurationUpdate = {
+  inline def apply(Telemetry: Telemetry): TelemetryConfigurationUpdate = {
     val __obj = js.Dynamic.literal(Telemetry = Telemetry.asInstanceOf[js.Any])
     __obj.asInstanceOf[TelemetryConfigurationUpdate]
   }
   
-  @scala.inline
-  implicit class TelemetryConfigurationUpdateMutableBuilder[Self <: TelemetryConfigurationUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: TelemetryConfigurationUpdate](x: Self) {
     
-    @scala.inline
-    def setTelemetry(value: Telemetry): Self = StObject.set(x, "Telemetry", value.asInstanceOf[js.Any])
+    inline def setTelemetry(value: Telemetry): Self = StObject.set(x, "Telemetry", value.asInstanceOf[js.Any])
   }
 }

@@ -14,22 +14,17 @@ trait LanguageCodesSet extends StObject {
 }
 object LanguageCodesSet {
   
-  @scala.inline
-  def apply(): LanguageCodesSet = {
+  inline def apply(): LanguageCodesSet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LanguageCodesSet]
   }
   
-  @scala.inline
-  implicit class LanguageCodesSetMutableBuilder[Self <: LanguageCodesSet] (val x: Self) extends AnyVal {
+  extension [Self <: LanguageCodesSet](x: Self) {
     
-    @scala.inline
-    def setLanguageCodes(value: js.Array[String]): Self = StObject.set(x, "languageCodes", value.asInstanceOf[js.Any])
+    inline def setLanguageCodes(value: js.Array[String]): Self = StObject.set(x, "languageCodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodesUndefined: Self = StObject.set(x, "languageCodes", js.undefined)
+    inline def setLanguageCodesUndefined: Self = StObject.set(x, "languageCodes", js.undefined)
     
-    @scala.inline
-    def setLanguageCodesVarargs(value: String*): Self = StObject.set(x, "languageCodes", js.Array(value :_*))
+    inline def setLanguageCodesVarargs(value: String*): Self = StObject.set(x, "languageCodes", js.Array(value :_*))
   }
 }

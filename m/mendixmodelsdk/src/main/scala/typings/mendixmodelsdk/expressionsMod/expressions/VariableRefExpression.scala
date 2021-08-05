@@ -86,8 +86,7 @@ object VariableRefExpression {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def create(model: IModel): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -98,8 +97,7 @@ object VariableRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInAppServiceCallParameterMappingUnderArgumentModel(container: AppServiceCallParameterMapping): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInAppServiceCallParameterMappingUnderArgumentModel(container: AppServiceCallParameterMapping): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -110,8 +108,7 @@ object VariableRefExpression {
     *  7.21.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInBasicCodeActionParameterValueUnderArgumentModel(container: BasicCodeActionParameterValue): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicCodeActionParameterValueUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInBasicCodeActionParameterValueUnderArgumentModel(container: BasicCodeActionParameterValue): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicCodeActionParameterValueUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -122,8 +119,7 @@ object VariableRefExpression {
     *  7.9.0 to 7.20.0
     */
   /* static member */
-  @scala.inline
-  def createInBasicJavaActionParameterValueUnderArgumentModel(container: BasicJavaActionParameterValue): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicJavaActionParameterValueUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInBasicJavaActionParameterValueUnderArgumentModel(container: BasicJavaActionParameterValue): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicJavaActionParameterValueUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -134,8 +130,7 @@ object VariableRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInBinaryExpressionUnderLeft(container: BinaryExpression): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryExpressionUnderLeft")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInBinaryExpressionUnderLeft(container: BinaryExpression): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryExpressionUnderLeft")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -146,8 +141,7 @@ object VariableRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInBinaryExpressionUnderRight(container: BinaryExpression): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryExpressionUnderRight")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInBinaryExpressionUnderRight(container: BinaryExpression): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryExpressionUnderRight")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -158,8 +152,7 @@ object VariableRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInBinaryRequestHandlingUnderExpressionModel(container: BinaryRequestHandling): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryRequestHandlingUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInBinaryRequestHandlingUnderExpressionModel(container: BinaryRequestHandling): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryRequestHandlingUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -170,8 +163,7 @@ object VariableRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInChangeListActionUnderValueModel(container: ChangeListAction): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInChangeListActionUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInChangeListActionUnderValueModel(container: ChangeListAction): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInChangeListActionUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -182,8 +174,7 @@ object VariableRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInChangeVariableActionUnderValueModel(container: ChangeVariableAction): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInChangeVariableActionUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInChangeVariableActionUnderValueModel(container: ChangeVariableAction): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInChangeVariableActionUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -194,8 +185,7 @@ object VariableRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInConditionalSettingsUnderExpressionModel(container: ConditionalSettings): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConditionalSettingsUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInConditionalSettingsUnderExpressionModel(container: ConditionalSettings): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConditionalSettingsUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -206,8 +196,7 @@ object VariableRefExpression {
     *  8.5.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInConsumedODataServiceUnderTimeoutModel(container: ConsumedODataService): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConsumedODataServiceUnderTimeoutModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInConsumedODataServiceUnderTimeoutModel(container: ConsumedODataService): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConsumedODataServiceUnderTimeoutModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -218,8 +207,7 @@ object VariableRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInCreateVariableActionUnderInitialValueModel(container: CreateVariableAction): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderInitialValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInCreateVariableActionUnderInitialValueModel(container: CreateVariableAction): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderInitialValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -230,8 +218,7 @@ object VariableRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInCustomRangeUnderLimitExpressionModel(container: CustomRange): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomRangeUnderLimitExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInCustomRangeUnderLimitExpressionModel(container: CustomRange): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomRangeUnderLimitExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -242,8 +229,7 @@ object VariableRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInCustomRangeUnderOffsetExpressionModel(container: CustomRange): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomRangeUnderOffsetExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInCustomRangeUnderOffsetExpressionModel(container: CustomRange): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomRangeUnderOffsetExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -254,8 +240,7 @@ object VariableRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInDocumentTemplateParameterMappingUnderArgumentModel(container: DocumentTemplateParameterMapping): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInDocumentTemplateParameterMappingUnderArgumentModel(container: DocumentTemplateParameterMapping): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -266,8 +251,7 @@ object VariableRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInEndEventUnderReturnValueModel(container: EndEvent): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEndEventUnderReturnValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInEndEventUnderReturnValueModel(container: EndEvent): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEndEventUnderReturnValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -278,8 +262,7 @@ object VariableRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInExpressionSplitConditionUnderExpressionModel(container: ExpressionSplitCondition): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInExpressionSplitConditionUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInExpressionSplitConditionUnderExpressionModel(container: ExpressionSplitCondition): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInExpressionSplitConditionUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -290,8 +273,7 @@ object VariableRefExpression {
     *  8.0.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInFormDataPartUnderValueModel(container: FormDataPart): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInFormDataPartUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInFormDataPartUnderValueModel(container: FormDataPart): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInFormDataPartUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -302,8 +284,7 @@ object VariableRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInFunctionCallExpressionUnderArguments(container: FunctionCallExpression): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInFunctionCallExpressionUnderArguments")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInFunctionCallExpressionUnderArguments(container: FunctionCallExpression): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInFunctionCallExpressionUnderArguments")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -314,8 +295,7 @@ object VariableRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInGenerateDocumentActionUnderMarginBottomInInchModel(container: GenerateDocumentAction): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginBottomInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInGenerateDocumentActionUnderMarginBottomInInchModel(container: GenerateDocumentAction): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginBottomInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -326,8 +306,7 @@ object VariableRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInGenerateDocumentActionUnderMarginLeftInInchModel(container: GenerateDocumentAction): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginLeftInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInGenerateDocumentActionUnderMarginLeftInInchModel(container: GenerateDocumentAction): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginLeftInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -338,8 +317,7 @@ object VariableRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInGenerateDocumentActionUnderMarginRightInInchModel(container: GenerateDocumentAction): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginRightInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInGenerateDocumentActionUnderMarginRightInInchModel(container: GenerateDocumentAction): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginRightInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -350,8 +328,7 @@ object VariableRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInGenerateDocumentActionUnderMarginTopInInchModel(container: GenerateDocumentAction): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginTopInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInGenerateDocumentActionUnderMarginTopInInchModel(container: GenerateDocumentAction): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginTopInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -362,8 +339,7 @@ object VariableRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInHttpConfigurationUnderCustomLocationModel(container: HttpConfiguration): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderCustomLocationModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInHttpConfigurationUnderCustomLocationModel(container: HttpConfiguration): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderCustomLocationModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -374,8 +350,7 @@ object VariableRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInHttpConfigurationUnderPassword(container: HttpConfiguration): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderPassword")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInHttpConfigurationUnderPassword(container: HttpConfiguration): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderPassword")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -386,8 +361,7 @@ object VariableRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInHttpConfigurationUnderUsername(container: HttpConfiguration): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderUsername")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInHttpConfigurationUnderUsername(container: HttpConfiguration): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderUsername")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -398,8 +372,7 @@ object VariableRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInHttpHeaderEntryUnderValueModel(container: HttpHeaderEntry): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpHeaderEntryUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInHttpHeaderEntryUnderValueModel(container: HttpHeaderEntry): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpHeaderEntryUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -410,8 +383,7 @@ object VariableRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInIfExpressionUnderCondition(container: IfExpression): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderCondition")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInIfExpressionUnderCondition(container: IfExpression): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderCondition")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -422,8 +394,7 @@ object VariableRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInIfExpressionUnderIfFalse(container: IfExpression): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderIfFalse")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInIfExpressionUnderIfFalse(container: IfExpression): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderIfFalse")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -434,8 +405,7 @@ object VariableRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInIfExpressionUnderIfTrue(container: IfExpression): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderIfTrue")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInIfExpressionUnderIfTrue(container: IfExpression): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderIfTrue")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -446,8 +416,7 @@ object VariableRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInInspectAttributeUnderExpressionModel(container: InspectAttribute): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInInspectAttributeUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInInspectAttributeUnderExpressionModel(container: InspectAttribute): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInInspectAttributeUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -458,8 +427,7 @@ object VariableRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInLogMessageActionUnderNodeModel(container: LogMessageAction): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLogMessageActionUnderNodeModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInLogMessageActionUnderNodeModel(container: LogMessageAction): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLogMessageActionUnderNodeModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -470,8 +438,7 @@ object VariableRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInMemberChangeUnderValueModel(container: MemberChange): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMemberChangeUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInMemberChangeUnderValueModel(container: MemberChange): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMemberChangeUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -482,8 +449,7 @@ object VariableRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -494,8 +460,7 @@ object VariableRefExpression {
     *  8.0.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNanoflowCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNanoflowCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -506,8 +471,7 @@ object VariableRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInParenthesisExpressionUnderExpression(container: ParenthesisExpression): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInParenthesisExpressionUnderExpression")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInParenthesisExpressionUnderExpression(container: ParenthesisExpression): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInParenthesisExpressionUnderExpression")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -518,8 +482,7 @@ object VariableRefExpression {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInProxyConfigurationUnderHostExpressionModel(container: ProxyConfiguration): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderHostExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInProxyConfigurationUnderHostExpressionModel(container: ProxyConfiguration): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderHostExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -530,8 +493,7 @@ object VariableRefExpression {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInProxyConfigurationUnderPasswordExpressionModel(container: ProxyConfiguration): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderPasswordExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInProxyConfigurationUnderPasswordExpressionModel(container: ProxyConfiguration): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderPasswordExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -542,8 +504,7 @@ object VariableRefExpression {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInProxyConfigurationUnderPortExpressionModel(container: ProxyConfiguration): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderPortExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInProxyConfigurationUnderPortExpressionModel(container: ProxyConfiguration): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderPortExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -554,8 +515,7 @@ object VariableRefExpression {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInProxyConfigurationUnderUseConfigurationExpressionModel(container: ProxyConfiguration): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderUseConfigurationExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInProxyConfigurationUnderUseConfigurationExpressionModel(container: ProxyConfiguration): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderUseConfigurationExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -566,8 +526,7 @@ object VariableRefExpression {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInProxyConfigurationUnderUsernameExpressionModel(container: ProxyConfiguration): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderUsernameExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInProxyConfigurationUnderUsernameExpressionModel(container: ProxyConfiguration): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderUsernameExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -578,8 +537,7 @@ object VariableRefExpression {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInRestCallActionUnderTimeOutModel(container: RestCallAction): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestCallActionUnderTimeOutModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInRestCallActionUnderTimeOutModel(container: RestCallAction): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestCallActionUnderTimeOutModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -590,8 +548,7 @@ object VariableRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInRuleCallParameterMappingUnderArgumentModel(container: RuleCallParameterMapping): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRuleCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInRuleCallParameterMappingUnderArgumentModel(container: RuleCallParameterMapping): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRuleCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -602,8 +559,7 @@ object VariableRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInTemplateArgumentUnderExpressionModel(container: TemplateArgument): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateArgumentUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInTemplateArgumentUnderExpressionModel(container: TemplateArgument): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateArgumentUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -614,8 +570,7 @@ object VariableRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInUnaryExpressionUnderExpression(container: UnaryExpression): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInUnaryExpressionUnderExpression")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInUnaryExpressionUnderExpression(container: UnaryExpression): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInUnaryExpressionUnderExpression")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -626,8 +581,7 @@ object VariableRefExpression {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInWebServiceCallActionUnderTimeOutModel(container: WebServiceCallAction): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderTimeOutModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInWebServiceCallActionUnderTimeOutModel(container: WebServiceCallAction): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderTimeOutModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -638,8 +592,7 @@ object VariableRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInWebServiceOperationParameterMappingUnderArgumentModel(container: WebServiceOperationParameterMapping): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceOperationParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInWebServiceOperationParameterMappingUnderArgumentModel(container: WebServiceOperationParameterMapping): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceOperationParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /**
     * Creates and returns a new VariableRefExpression instance in the SDK and on the server.
@@ -650,20 +603,17 @@ object VariableRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInWidgetValidationUnderExpressionModel(container: WidgetValidation): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValidationUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
+  inline def createInWidgetValidationUnderExpressionModel(container: WidgetValidation): VariableRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValidationUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[VariableRefExpression]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.VariableRefExpression.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.VariableRefExpression.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

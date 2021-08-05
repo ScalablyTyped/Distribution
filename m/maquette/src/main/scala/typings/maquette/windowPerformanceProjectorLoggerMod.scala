@@ -14,6 +14,5 @@ object windowPerformanceProjectorLoggerMod {
   @JSImport("maquette/dist/utilities/window-performance-projector-logger", "windowPerformanceProjectorLogger")
   @js.native
   def windowPerformanceProjectorLogger: ProjectorPerformanceLogger = js.native
-  @scala.inline
-  def windowPerformanceProjectorLogger_=(x: ProjectorPerformanceLogger): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("windowPerformanceProjectorLogger")(x.asInstanceOf[js.Any])
+  inline def windowPerformanceProjectorLogger_=(x: ProjectorPerformanceLogger): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("windowPerformanceProjectorLogger")(x.asInstanceOf[js.Any])
 }

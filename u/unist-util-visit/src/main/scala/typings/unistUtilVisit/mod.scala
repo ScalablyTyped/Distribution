@@ -22,14 +22,10 @@ object mod {
     * @param visitor function to run for each node
     * @param reverse visit the tree in reverse, defaults to false
     */
-  @scala.inline
-  def apply(tree: Node, visitor: Visitor[Node]): Unit = (^.asInstanceOf[js.Dynamic].apply(tree.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(tree: Node, visitor: Visitor[Node], reverse: Boolean): Unit = (^.asInstanceOf[js.Dynamic].apply(tree.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply[V /* <: Node */](tree: Node, test: js.Array[Test[js.Any]], visitor: Visitor[V]): Unit = (^.asInstanceOf[js.Dynamic].apply(tree.asInstanceOf[js.Any], test.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply[V /* <: Node */](tree: Node, test: js.Array[Test[js.Any]], visitor: Visitor[V], reverse: Boolean): Unit = (^.asInstanceOf[js.Dynamic].apply(tree.asInstanceOf[js.Any], test.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(tree: Node, visitor: Visitor[Node]): Unit = (^.asInstanceOf[js.Dynamic].apply(tree.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(tree: Node, visitor: Visitor[Node], reverse: Boolean): Unit = (^.asInstanceOf[js.Dynamic].apply(tree.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply[V /* <: Node */](tree: Node, test: js.Array[Test[js.Any]], visitor: Visitor[V]): Unit = (^.asInstanceOf[js.Dynamic].apply(tree.asInstanceOf[js.Any], test.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply[V /* <: Node */](tree: Node, test: js.Array[Test[js.Any]], visitor: Visitor[V], reverse: Boolean): Unit = (^.asInstanceOf[js.Dynamic].apply(tree.asInstanceOf[js.Any], test.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Visit children of tree which pass a test
     *
@@ -40,10 +36,8 @@ object mod {
     * @typeParam T tree node
     * @typeParam V node type found
     */
-  @scala.inline
-  def apply[V /* <: Node */](tree: Node, test: Test[V], visitor: Visitor[V]): Unit = (^.asInstanceOf[js.Dynamic].apply(tree.asInstanceOf[js.Any], test.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply[V /* <: Node */](tree: Node, test: Test[V], visitor: Visitor[V], reverse: Boolean): Unit = (^.asInstanceOf[js.Dynamic].apply(tree.asInstanceOf[js.Any], test.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply[V /* <: Node */](tree: Node, test: Test[V], visitor: Visitor[V]): Unit = (^.asInstanceOf[js.Dynamic].apply(tree.asInstanceOf[js.Any], test.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply[V /* <: Node */](tree: Node, test: Test[V], visitor: Visitor[V], reverse: Boolean): Unit = (^.asInstanceOf[js.Dynamic].apply(tree.asInstanceOf[js.Any], test.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("unist-util-visit", JSImport.Namespace)
   @js.native
@@ -55,8 +49,7 @@ object mod {
   @JSImport("unist-util-visit", "CONTINUE")
   @js.native
   def CONTINUE: Continue = js.native
-  @scala.inline
-  def CONTINUE_=(x: Continue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONTINUE")(x.asInstanceOf[js.Any])
+  inline def CONTINUE_=(x: Continue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONTINUE")(x.asInstanceOf[js.Any])
   
   /**
     * Stop traversing immediately
@@ -64,8 +57,7 @@ object mod {
   @JSImport("unist-util-visit", "EXIT")
   @js.native
   def EXIT: Exit = js.native
-  @scala.inline
-  def EXIT_=(x: Exit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EXIT")(x.asInstanceOf[js.Any])
+  inline def EXIT_=(x: Exit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EXIT")(x.asInstanceOf[js.Any])
   
   /**
     * Do not traverse this node’s children
@@ -73,8 +65,7 @@ object mod {
   @JSImport("unist-util-visit", "SKIP")
   @js.native
   def SKIP: Skip = js.native
-  @scala.inline
-  def SKIP_=(x: Skip): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SKIP")(x.asInstanceOf[js.Any])
+  inline def SKIP_=(x: Skip): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SKIP")(x.asInstanceOf[js.Any])
   
   /**
     * Invoked when a node (matching test, if given) is found.

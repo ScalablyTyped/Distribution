@@ -13,8 +13,7 @@ trait MediaPropertySet
      with IMap[String, js.Any]
 object MediaPropertySet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clear: () => Unit,
     first: () => IIterator[IKeyValuePair[String, js.Any]],
     getView: () => IMapView[String, js.Any],

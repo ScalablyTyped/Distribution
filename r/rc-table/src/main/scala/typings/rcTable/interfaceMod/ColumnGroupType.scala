@@ -12,19 +12,15 @@ trait ColumnGroupType[RecordType]
 }
 object ColumnGroupType {
   
-  @scala.inline
-  def apply[RecordType](children: ColumnsType[RecordType]): ColumnGroupType[RecordType] = {
+  inline def apply[RecordType](children: ColumnsType[RecordType]): ColumnGroupType[RecordType] = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnGroupType[RecordType]]
   }
   
-  @scala.inline
-  implicit class ColumnGroupTypeMutableBuilder[Self <: ColumnGroupType[?], RecordType] (val x: Self & ColumnGroupType[RecordType]) extends AnyVal {
+  extension [Self <: ColumnGroupType[?], RecordType](x: Self & ColumnGroupType[RecordType]) {
     
-    @scala.inline
-    def setChildren(value: ColumnsType[RecordType]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ColumnsType[RecordType]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVarargs(value: (ColumnGroupType[RecordType] | ColumnType[RecordType])*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: (ColumnGroupType[RecordType] | ColumnType[RecordType])*): Self = StObject.set(x, "children", js.Array(value :_*))
   }
 }

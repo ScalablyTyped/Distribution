@@ -16,20 +16,16 @@ trait BitbucketServerRepoAssociation
 }
 object BitbucketServerRepoAssociation {
   
-  @scala.inline
-  def apply(clone_url: String, full_name: String, html_url: String, id: Double): BitbucketServerRepoAssociation = {
+  inline def apply(clone_url: String, full_name: String, html_url: String, id: Double): BitbucketServerRepoAssociation = {
     val __obj = js.Dynamic.literal(clone_url = clone_url.asInstanceOf[js.Any], full_name = full_name.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("bitbucket_server")
     __obj.asInstanceOf[BitbucketServerRepoAssociation]
   }
   
-  @scala.inline
-  implicit class BitbucketServerRepoAssociationMutableBuilder[Self <: BitbucketServerRepoAssociation] (val x: Self) extends AnyVal {
+  extension [Self <: BitbucketServerRepoAssociation](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: bitbucket_server): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: bitbucket_server): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

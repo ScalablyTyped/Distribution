@@ -28,40 +28,29 @@ trait DescribeSpotFleetRequestsRequest extends StObject {
 }
 object DescribeSpotFleetRequestsRequest {
   
-  @scala.inline
-  def apply(): DescribeSpotFleetRequestsRequest = {
+  inline def apply(): DescribeSpotFleetRequestsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeSpotFleetRequestsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeSpotFleetRequestsRequestMutableBuilder[Self <: DescribeSpotFleetRequestsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSpotFleetRequestsRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: Integer): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Integer): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSpotFleetRequestIds(value: SpotFleetRequestIdList): Self = StObject.set(x, "SpotFleetRequestIds", value.asInstanceOf[js.Any])
+    inline def setSpotFleetRequestIds(value: SpotFleetRequestIdList): Self = StObject.set(x, "SpotFleetRequestIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpotFleetRequestIdsUndefined: Self = StObject.set(x, "SpotFleetRequestIds", js.undefined)
+    inline def setSpotFleetRequestIdsUndefined: Self = StObject.set(x, "SpotFleetRequestIds", js.undefined)
     
-    @scala.inline
-    def setSpotFleetRequestIdsVarargs(value: SpotFleetRequestId*): Self = StObject.set(x, "SpotFleetRequestIds", js.Array(value :_*))
+    inline def setSpotFleetRequestIdsVarargs(value: SpotFleetRequestId*): Self = StObject.set(x, "SpotFleetRequestIds", js.Array(value :_*))
   }
 }

@@ -17,32 +17,24 @@ object anon {
   }
   object PartialFiltersFilterCrite {
     
-    @scala.inline
-    def apply(): PartialFiltersFilterCrite = {
+    inline def apply(): PartialFiltersFilterCrite = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialFiltersFilterCrite]
     }
     
-    @scala.inline
-    implicit class PartialFiltersFilterCriteMutableBuilder[Self <: PartialFiltersFilterCrite] (val x: Self) extends AnyVal {
+    extension [Self <: PartialFiltersFilterCrite](x: Self) {
       
-      @scala.inline
-      def setExclude(value: FilterCriteria): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: FilterCriteria): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+      inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      @scala.inline
-      def setExcludeVarargs(value: FilterCriterion*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: FilterCriterion*): Self = StObject.set(x, "exclude", js.Array(value :_*))
       
-      @scala.inline
-      def setInclude(value: FilterCriteria): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: FilterCriteria): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+      inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      @scala.inline
-      def setIncludeVarargs(value: FilterCriterion*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: FilterCriterion*): Self = StObject.set(x, "include", js.Array(value :_*))
     }
   }
 }

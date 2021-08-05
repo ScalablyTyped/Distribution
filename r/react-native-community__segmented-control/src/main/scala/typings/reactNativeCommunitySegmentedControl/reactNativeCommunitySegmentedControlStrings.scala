@@ -8,11 +8,9 @@ object reactNativeCommunitySegmentedControlStrings {
   
   @js.native
   sealed trait dark extends StObject
-  @scala.inline
-  def dark: dark = "dark".asInstanceOf[dark]
+  inline def dark: dark = "dark".asInstanceOf[dark]
   
   @js.native
   sealed trait light extends StObject
-  @scala.inline
-  def light: light = "light".asInstanceOf[light]
+  inline def light: light = "light".asInstanceOf[light]
 }

@@ -15,19 +15,15 @@ trait TypeofWizard extends StObject {
 }
 object TypeofWizard {
   
-  @scala.inline
-  def apply(extend: js.Object => Wizard, fn: Wizard): TypeofWizard = {
+  inline def apply(extend: js.Object => Wizard, fn: Wizard): TypeofWizard = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofWizard]
   }
   
-  @scala.inline
-  implicit class TypeofWizardMutableBuilder[Self <: TypeofWizard] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofWizard](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => Wizard): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => Wizard): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: Wizard): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Wizard): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

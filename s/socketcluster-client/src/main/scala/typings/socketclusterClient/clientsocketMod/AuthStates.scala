@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AuthStates extends StObject
 object AuthStates {
   
-  @scala.inline
-  def authenticated: typings.socketclusterClient.socketclusterClientStrings.authenticated = "authenticated".asInstanceOf[typings.socketclusterClient.socketclusterClientStrings.authenticated]
+  inline def authenticated: typings.socketclusterClient.socketclusterClientStrings.authenticated = "authenticated".asInstanceOf[typings.socketclusterClient.socketclusterClientStrings.authenticated]
   
-  @scala.inline
-  def unauthenticated: typings.socketclusterClient.socketclusterClientStrings.unauthenticated = "unauthenticated".asInstanceOf[typings.socketclusterClient.socketclusterClientStrings.unauthenticated]
+  inline def unauthenticated: typings.socketclusterClient.socketclusterClientStrings.unauthenticated = "unauthenticated".asInstanceOf[typings.socketclusterClient.socketclusterClientStrings.unauthenticated]
 }

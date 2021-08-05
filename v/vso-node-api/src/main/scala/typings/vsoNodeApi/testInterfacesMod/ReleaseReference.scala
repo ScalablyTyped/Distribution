@@ -22,8 +22,7 @@ trait ReleaseReference extends StObject {
 }
 object ReleaseReference {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     definitionId: Double,
     environmentDefinitionId: Double,
     environmentDefinitionName: String,
@@ -36,28 +35,20 @@ object ReleaseReference {
     __obj.asInstanceOf[ReleaseReference]
   }
   
-  @scala.inline
-  implicit class ReleaseReferenceMutableBuilder[Self <: ReleaseReference] (val x: Self) extends AnyVal {
+  extension [Self <: ReleaseReference](x: Self) {
     
-    @scala.inline
-    def setDefinitionId(value: Double): Self = StObject.set(x, "definitionId", value.asInstanceOf[js.Any])
+    inline def setDefinitionId(value: Double): Self = StObject.set(x, "definitionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentDefinitionId(value: Double): Self = StObject.set(x, "environmentDefinitionId", value.asInstanceOf[js.Any])
+    inline def setEnvironmentDefinitionId(value: Double): Self = StObject.set(x, "environmentDefinitionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentDefinitionName(value: String): Self = StObject.set(x, "environmentDefinitionName", value.asInstanceOf[js.Any])
+    inline def setEnvironmentDefinitionName(value: String): Self = StObject.set(x, "environmentDefinitionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentId(value: Double): Self = StObject.set(x, "environmentId", value.asInstanceOf[js.Any])
+    inline def setEnvironmentId(value: Double): Self = StObject.set(x, "environmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentName(value: String): Self = StObject.set(x, "environmentName", value.asInstanceOf[js.Any])
+    inline def setEnvironmentName(value: String): Self = StObject.set(x, "environmentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

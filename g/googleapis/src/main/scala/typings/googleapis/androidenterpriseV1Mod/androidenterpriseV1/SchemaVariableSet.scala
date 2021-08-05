@@ -30,31 +30,23 @@ trait SchemaVariableSet extends StObject {
 }
 object SchemaVariableSet {
   
-  @scala.inline
-  def apply(): SchemaVariableSet = {
+  inline def apply(): SchemaVariableSet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaVariableSet]
   }
   
-  @scala.inline
-  implicit class SchemaVariableSetMutableBuilder[Self <: SchemaVariableSet] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaVariableSet](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+    inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
-    @scala.inline
-    def setUserValue(value: String): Self = StObject.set(x, "userValue", value.asInstanceOf[js.Any])
+    inline def setUserValue(value: String): Self = StObject.set(x, "userValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserValueUndefined: Self = StObject.set(x, "userValue", js.undefined)
+    inline def setUserValueUndefined: Self = StObject.set(x, "userValue", js.undefined)
   }
 }

@@ -17,10 +17,8 @@ object generateUrlsMod {
   /**
     * Create a function to generate urls by route names.
     */
-  @scala.inline
-  def default(router: typings.universalRouter.mod.default[js.Any, RouterContext]): GenerateUrl = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(router.asInstanceOf[js.Any]).asInstanceOf[GenerateUrl]
-  @scala.inline
-  def default(router: typings.universalRouter.mod.default[js.Any, RouterContext], options: GenerateUrlsOptions): GenerateUrl = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(router.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GenerateUrl]
+  inline def default(router: typings.universalRouter.mod.default[js.Any, RouterContext]): GenerateUrl = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(router.asInstanceOf[js.Any]).asInstanceOf[GenerateUrl]
+  inline def default(router: typings.universalRouter.mod.default[js.Any, RouterContext], options: GenerateUrlsOptions): GenerateUrl = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(router.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GenerateUrl]
   
   type GenerateUrl = js.Function2[/* routeName */ String, /* params */ js.UndefOr[UrlParams], String]
   
@@ -36,20 +34,16 @@ object generateUrlsMod {
   }
   object GenerateUrlsOptions {
     
-    @scala.inline
-    def apply(): GenerateUrlsOptions = {
+    inline def apply(): GenerateUrlsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GenerateUrlsOptions]
     }
     
-    @scala.inline
-    implicit class GenerateUrlsOptionsMutableBuilder[Self <: GenerateUrlsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GenerateUrlsOptions](x: Self) {
       
-      @scala.inline
-      def setStringifyQueryParams(value: /* params */ UrlParams => String): Self = StObject.set(x, "stringifyQueryParams", js.Any.fromFunction1(value))
+      inline def setStringifyQueryParams(value: /* params */ UrlParams => String): Self = StObject.set(x, "stringifyQueryParams", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStringifyQueryParamsUndefined: Self = StObject.set(x, "stringifyQueryParams", js.undefined)
+      inline def setStringifyQueryParamsUndefined: Self = StObject.set(x, "stringifyQueryParams", js.undefined)
     }
   }
   

@@ -13,19 +13,15 @@ trait RTCRtpHeaderExtensionParameters extends StObject {
 }
 object RTCRtpHeaderExtensionParameters {
   
-  @scala.inline
-  def apply(): RTCRtpHeaderExtensionParameters = {
+  inline def apply(): RTCRtpHeaderExtensionParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RTCRtpHeaderExtensionParameters]
   }
   
-  @scala.inline
-  implicit class RTCRtpHeaderExtensionParametersMutableBuilder[Self <: RTCRtpHeaderExtensionParameters] (val x: Self) extends AnyVal {
+  extension [Self <: RTCRtpHeaderExtensionParameters](x: Self) {
     
-    @scala.inline
-    def setEncrypted(value: Boolean): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
+    inline def setEncrypted(value: Boolean): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptedUndefined: Self = StObject.set(x, "encrypted", js.undefined)
+    inline def setEncryptedUndefined: Self = StObject.set(x, "encrypted", js.undefined)
   }
 }

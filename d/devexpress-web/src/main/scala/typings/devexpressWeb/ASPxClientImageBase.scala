@@ -20,8 +20,7 @@ trait ASPxClientImageBase
 }
 object ASPxClientImageBase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     Click: ASPxClientEvent[ASPxClientEditEventHandler[ASPxClientStaticEdit]],
     GetCaption: () => String,
@@ -50,10 +49,8 @@ object ASPxClientImageBase {
     __obj.asInstanceOf[ASPxClientImageBase]
   }
   
-  @scala.inline
-  implicit class ASPxClientImageBaseMutableBuilder[Self <: ASPxClientImageBase] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientImageBase](x: Self) {
     
-    @scala.inline
-    def setSetSize(value: (Double, Double) => Unit): Self = StObject.set(x, "SetSize", js.Any.fromFunction2(value))
+    inline def setSetSize(value: (Double, Double) => Unit): Self = StObject.set(x, "SetSize", js.Any.fromFunction2(value))
   }
 }

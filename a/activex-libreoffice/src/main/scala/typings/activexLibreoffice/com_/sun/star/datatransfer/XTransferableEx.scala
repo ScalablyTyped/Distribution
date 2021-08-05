@@ -25,8 +25,7 @@ trait XTransferableEx
 }
 object XTransferableEx {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     queryTransferDataFlavors: SeqEquiv[DataFlavor] => SafeArray[DataFlavor],
@@ -36,10 +35,8 @@ object XTransferableEx {
     __obj.asInstanceOf[XTransferableEx]
   }
   
-  @scala.inline
-  implicit class XTransferableExMutableBuilder[Self <: XTransferableEx] (val x: Self) extends AnyVal {
+  extension [Self <: XTransferableEx](x: Self) {
     
-    @scala.inline
-    def setQueryTransferDataFlavors(value: SeqEquiv[DataFlavor] => SafeArray[DataFlavor]): Self = StObject.set(x, "queryTransferDataFlavors", js.Any.fromFunction1(value))
+    inline def setQueryTransferDataFlavors(value: SeqEquiv[DataFlavor] => SafeArray[DataFlavor]): Self = StObject.set(x, "queryTransferDataFlavors", js.Any.fromFunction1(value))
   }
 }

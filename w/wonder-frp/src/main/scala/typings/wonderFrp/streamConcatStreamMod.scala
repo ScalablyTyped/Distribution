@@ -13,7 +13,7 @@ object streamConcatStreamMod {
   class ConcatStream protected () extends BaseStream {
     def this(sources: js.Array[Stream]) = this()
     
-    var _sources: js.Any = js.native
+    /* private */ var _sources: js.Any = js.native
   }
   /* static members */
   object ConcatStream {
@@ -22,7 +22,6 @@ object streamConcatStreamMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(sources: js.Array[Stream]): ConcatStream = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(sources.asInstanceOf[js.Any]).asInstanceOf[ConcatStream]
+    inline def create(sources: js.Array[Stream]): ConcatStream = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(sources.asInstanceOf[js.Any]).asInstanceOf[ConcatStream]
   }
 }

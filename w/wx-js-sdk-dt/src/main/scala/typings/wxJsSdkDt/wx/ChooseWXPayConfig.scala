@@ -36,32 +36,24 @@ trait ChooseWXPayConfig
 }
 object ChooseWXPayConfig {
   
-  @scala.inline
-  def apply(_package: String, nonceStr: String, paySign: String, timestamp: Double): ChooseWXPayConfig = {
+  inline def apply(_package: String, nonceStr: String, paySign: String, timestamp: Double): ChooseWXPayConfig = {
     val __obj = js.Dynamic.literal(nonceStr = nonceStr.asInstanceOf[js.Any], paySign = paySign.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChooseWXPayConfig]
   }
   
-  @scala.inline
-  implicit class ChooseWXPayConfigMutableBuilder[Self <: ChooseWXPayConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ChooseWXPayConfig](x: Self) {
     
-    @scala.inline
-    def setNonceStr(value: String): Self = StObject.set(x, "nonceStr", value.asInstanceOf[js.Any])
+    inline def setNonceStr(value: String): Self = StObject.set(x, "nonceStr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaySign(value: String): Self = StObject.set(x, "paySign", value.asInstanceOf[js.Any])
+    inline def setPaySign(value: String): Self = StObject.set(x, "paySign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignType(value: String): Self = StObject.set(x, "signType", value.asInstanceOf[js.Any])
+    inline def setSignType(value: String): Self = StObject.set(x, "signType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignTypeUndefined: Self = StObject.set(x, "signType", js.undefined)
+    inline def setSignTypeUndefined: Self = StObject.set(x, "signType", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_package(value: String): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
+    inline def set_package(value: String): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
   }
 }

@@ -11,16 +11,13 @@ trait PickImplsearch extends StObject {
 }
 object PickImplsearch {
   
-  @scala.inline
-  def apply(search: Double): PickImplsearch = {
+  inline def apply(search: Double): PickImplsearch = {
     val __obj = js.Dynamic.literal(search = search.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplsearch]
   }
   
-  @scala.inline
-  implicit class PickImplsearchMutableBuilder[Self <: PickImplsearch] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplsearch](x: Self) {
     
-    @scala.inline
-    def setSearch(value: Double): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    inline def setSearch(value: Double): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
   }
 }

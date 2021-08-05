@@ -55,49 +55,35 @@ trait DictionaryRendererProperties
 }
 object DictionaryRendererProperties {
   
-  @scala.inline
-  def apply(): DictionaryRendererProperties = {
+  inline def apply(): DictionaryRendererProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DictionaryRendererProperties]
   }
   
-  @scala.inline
-  implicit class DictionaryRendererPropertiesMutableBuilder[Self <: DictionaryRendererProperties] (val x: Self) extends AnyVal {
+  extension [Self <: DictionaryRendererProperties](x: Self) {
     
-    @scala.inline
-    def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    @scala.inline
-    def setFieldMap(value: HashMap[String]): Self = StObject.set(x, "fieldMap", value.asInstanceOf[js.Any])
+    inline def setFieldMap(value: HashMap[String]): Self = StObject.set(x, "fieldMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldMapUndefined: Self = StObject.set(x, "fieldMap", js.undefined)
+    inline def setFieldMapUndefined: Self = StObject.set(x, "fieldMap", js.undefined)
     
-    @scala.inline
-    def setScaleExpression(value: String): Self = StObject.set(x, "scaleExpression", value.asInstanceOf[js.Any])
+    inline def setScaleExpression(value: String): Self = StObject.set(x, "scaleExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleExpressionTitle(value: String): Self = StObject.set(x, "scaleExpressionTitle", value.asInstanceOf[js.Any])
+    inline def setScaleExpressionTitle(value: String): Self = StObject.set(x, "scaleExpressionTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleExpressionTitleUndefined: Self = StObject.set(x, "scaleExpressionTitle", js.undefined)
+    inline def setScaleExpressionTitleUndefined: Self = StObject.set(x, "scaleExpressionTitle", js.undefined)
     
-    @scala.inline
-    def setScaleExpressionUndefined: Self = StObject.set(x, "scaleExpression", js.undefined)
+    inline def setScaleExpressionUndefined: Self = StObject.set(x, "scaleExpression", js.undefined)
     
-    @scala.inline
-    def setType(value: dictionary): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: dictionary): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

@@ -25,32 +25,24 @@ object sidePanelFooterMod {
   }
   object FooterProps {
     
-    @scala.inline
-    def apply(): FooterProps = {
+    inline def apply(): FooterProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FooterProps]
     }
     
-    @scala.inline
-    implicit class FooterPropsMutableBuilder[Self <: FooterProps] (val x: Self) extends AnyVal {
+    extension [Self <: FooterProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setShowDivider(value: Boolean): Self = StObject.set(x, "showDivider", value.asInstanceOf[js.Any])
+      inline def setShowDivider(value: Boolean): Self = StObject.set(x, "showDivider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowDividerUndefined: Self = StObject.set(x, "showDivider", js.undefined)
+      inline def setShowDividerUndefined: Self = StObject.set(x, "showDivider", js.undefined)
     }
   }
 }

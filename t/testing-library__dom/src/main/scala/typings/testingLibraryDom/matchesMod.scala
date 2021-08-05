@@ -12,10 +12,8 @@ object matchesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getDefaultNormalizer(): NormalizerFn = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultNormalizer")().asInstanceOf[NormalizerFn]
-  @scala.inline
-  def getDefaultNormalizer(options: DefaultNormalizerOptions): NormalizerFn = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultNormalizer")(options.asInstanceOf[js.Any]).asInstanceOf[NormalizerFn]
+  inline def getDefaultNormalizer(): NormalizerFn = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultNormalizer")().asInstanceOf[NormalizerFn]
+  inline def getDefaultNormalizer(options: DefaultNormalizerOptions): NormalizerFn = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultNormalizer")(options.asInstanceOf[js.Any]).asInstanceOf[NormalizerFn]
   
   type ByRoleMatcher = ARIARole | MatcherFunction | js.Object
   
@@ -27,26 +25,20 @@ object matchesMod {
   }
   object DefaultNormalizerOptions {
     
-    @scala.inline
-    def apply(): DefaultNormalizerOptions = {
+    inline def apply(): DefaultNormalizerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DefaultNormalizerOptions]
     }
     
-    @scala.inline
-    implicit class DefaultNormalizerOptionsMutableBuilder[Self <: DefaultNormalizerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultNormalizerOptions](x: Self) {
       
-      @scala.inline
-      def setCollapseWhitespace(value: Boolean): Self = StObject.set(x, "collapseWhitespace", value.asInstanceOf[js.Any])
+      inline def setCollapseWhitespace(value: Boolean): Self = StObject.set(x, "collapseWhitespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapseWhitespaceUndefined: Self = StObject.set(x, "collapseWhitespace", js.undefined)
+      inline def setCollapseWhitespaceUndefined: Self = StObject.set(x, "collapseWhitespace", js.undefined)
       
-      @scala.inline
-      def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
+      inline def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
+      inline def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
     }
   }
   
@@ -79,44 +71,32 @@ object matchesMod {
   }
   object MatcherOptions {
     
-    @scala.inline
-    def apply(): MatcherOptions = {
+    inline def apply(): MatcherOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MatcherOptions]
     }
     
-    @scala.inline
-    implicit class MatcherOptionsMutableBuilder[Self <: MatcherOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MatcherOptions](x: Self) {
       
-      @scala.inline
-      def setCollapseWhitespace(value: Boolean): Self = StObject.set(x, "collapseWhitespace", value.asInstanceOf[js.Any])
+      inline def setCollapseWhitespace(value: Boolean): Self = StObject.set(x, "collapseWhitespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapseWhitespaceUndefined: Self = StObject.set(x, "collapseWhitespace", js.undefined)
+      inline def setCollapseWhitespaceUndefined: Self = StObject.set(x, "collapseWhitespace", js.undefined)
       
-      @scala.inline
-      def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
+      inline def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
+      inline def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
       
-      @scala.inline
-      def setNormalizer(value: /* text */ String => String): Self = StObject.set(x, "normalizer", js.Any.fromFunction1(value))
+      inline def setNormalizer(value: /* text */ String => String): Self = StObject.set(x, "normalizer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNormalizerUndefined: Self = StObject.set(x, "normalizer", js.undefined)
+      inline def setNormalizerUndefined: Self = StObject.set(x, "normalizer", js.undefined)
       
-      @scala.inline
-      def setSuggest(value: Boolean): Self = StObject.set(x, "suggest", value.asInstanceOf[js.Any])
+      inline def setSuggest(value: Boolean): Self = StObject.set(x, "suggest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuggestUndefined: Self = StObject.set(x, "suggest", js.undefined)
+      inline def setSuggestUndefined: Self = StObject.set(x, "suggest", js.undefined)
       
-      @scala.inline
-      def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
+      inline def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
+      inline def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
     }
   }
   

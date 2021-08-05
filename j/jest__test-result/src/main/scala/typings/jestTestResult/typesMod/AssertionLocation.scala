@@ -12,19 +12,15 @@ trait AssertionLocation extends StObject {
 }
 object AssertionLocation {
   
-  @scala.inline
-  def apply(fullName: String, path: String): AssertionLocation = {
+  inline def apply(fullName: String, path: String): AssertionLocation = {
     val __obj = js.Dynamic.literal(fullName = fullName.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssertionLocation]
   }
   
-  @scala.inline
-  implicit class AssertionLocationMutableBuilder[Self <: AssertionLocation] (val x: Self) extends AnyVal {
+  extension [Self <: AssertionLocation](x: Self) {
     
-    @scala.inline
-    def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
+    inline def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

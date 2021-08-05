@@ -22,20 +22,16 @@ object Collation {
   }
   object CharacterGrouping {
     
-    @scala.inline
-    def apply(first: String, label: String): CharacterGrouping = {
+    inline def apply(first: String, label: String): CharacterGrouping = {
       val __obj = js.Dynamic.literal(first = first.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
       __obj.asInstanceOf[CharacterGrouping]
     }
     
-    @scala.inline
-    implicit class CharacterGroupingMutableBuilder[Self <: CharacterGrouping] (val x: Self) extends AnyVal {
+    extension [Self <: CharacterGrouping](x: Self) {
       
-      @scala.inline
-      def setFirst(value: String): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
+      inline def setFirst(value: String): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     }
   }
   

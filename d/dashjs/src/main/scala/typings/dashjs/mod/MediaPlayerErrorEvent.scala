@@ -18,20 +18,16 @@ trait MediaPlayerErrorEvent
 }
 object MediaPlayerErrorEvent {
   
-  @scala.inline
-  def apply(error: Code): MediaPlayerErrorEvent = {
+  inline def apply(error: Code): MediaPlayerErrorEvent = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("error")
     __obj.asInstanceOf[MediaPlayerErrorEvent]
   }
   
-  @scala.inline
-  implicit class MediaPlayerErrorEventMutableBuilder[Self <: MediaPlayerErrorEvent] (val x: Self) extends AnyVal {
+  extension [Self <: MediaPlayerErrorEvent](x: Self) {
     
-    @scala.inline
-    def setError(value: Code): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Code): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: error): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: error): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

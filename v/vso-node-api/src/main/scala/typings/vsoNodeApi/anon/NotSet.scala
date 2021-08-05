@@ -18,8 +18,7 @@ trait NotSet extends StObject {
 }
 object NotSet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abandoned: scala.Double,
     active: scala.Double,
     all: scala.Double,
@@ -30,22 +29,16 @@ object NotSet {
     __obj.asInstanceOf[NotSet]
   }
   
-  @scala.inline
-  implicit class NotSetMutableBuilder[Self <: NotSet] (val x: Self) extends AnyVal {
+  extension [Self <: NotSet](x: Self) {
     
-    @scala.inline
-    def setAbandoned(value: scala.Double): Self = StObject.set(x, "abandoned", value.asInstanceOf[js.Any])
+    inline def setAbandoned(value: scala.Double): Self = StObject.set(x, "abandoned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActive(value: scala.Double): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: scala.Double): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    inline def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompleted(value: scala.Double): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
+    inline def setCompleted(value: scala.Double): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotSet(value: scala.Double): Self = StObject.set(x, "notSet", value.asInstanceOf[js.Any])
+    inline def setNotSet(value: scala.Double): Self = StObject.set(x, "notSet", value.asInstanceOf[js.Any])
   }
 }

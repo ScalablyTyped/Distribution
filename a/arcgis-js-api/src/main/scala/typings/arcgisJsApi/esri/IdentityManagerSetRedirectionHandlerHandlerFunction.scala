@@ -40,8 +40,7 @@ trait IdentityManagerSetRedirectionHandlerHandlerFunction
 }
 object IdentityManagerSetRedirectionHandlerHandlerFunction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -54,19 +53,14 @@ object IdentityManagerSetRedirectionHandlerHandlerFunction {
     __obj.asInstanceOf[IdentityManagerSetRedirectionHandlerHandlerFunction]
   }
   
-  @scala.inline
-  implicit class IdentityManagerSetRedirectionHandlerHandlerFunctionMutableBuilder[Self <: IdentityManagerSetRedirectionHandlerHandlerFunction] (val x: Self) extends AnyVal {
+  extension [Self <: IdentityManagerSetRedirectionHandlerHandlerFunction](x: Self) {
     
-    @scala.inline
-    def setResourceUrl(value: String): Self = StObject.set(x, "resourceUrl", value.asInstanceOf[js.Any])
+    inline def setResourceUrl(value: String): Self = StObject.set(x, "resourceUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnUrlParamName(value: String): Self = StObject.set(x, "returnUrlParamName", value.asInstanceOf[js.Any])
+    inline def setReturnUrlParamName(value: String): Self = StObject.set(x, "returnUrlParamName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerInfo(value: ServerInfo): Self = StObject.set(x, "serverInfo", value.asInstanceOf[js.Any])
+    inline def setServerInfo(value: ServerInfo): Self = StObject.set(x, "serverInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignInPage(value: String): Self = StObject.set(x, "signInPage", value.asInstanceOf[js.Any])
+    inline def setSignInPage(value: String): Self = StObject.set(x, "signInPage", value.asInstanceOf[js.Any])
   }
 }

@@ -41,8 +41,7 @@ trait XDocumentHandler
 }
 object XDocumentHandler {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     characters: String => Unit,
     endDocument: () => Unit,
@@ -59,31 +58,22 @@ object XDocumentHandler {
     __obj.asInstanceOf[XDocumentHandler]
   }
   
-  @scala.inline
-  implicit class XDocumentHandlerMutableBuilder[Self <: XDocumentHandler] (val x: Self) extends AnyVal {
+  extension [Self <: XDocumentHandler](x: Self) {
     
-    @scala.inline
-    def setCharacters(value: String => Unit): Self = StObject.set(x, "characters", js.Any.fromFunction1(value))
+    inline def setCharacters(value: String => Unit): Self = StObject.set(x, "characters", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEndDocument(value: () => Unit): Self = StObject.set(x, "endDocument", js.Any.fromFunction0(value))
+    inline def setEndDocument(value: () => Unit): Self = StObject.set(x, "endDocument", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEndElement(value: String => Unit): Self = StObject.set(x, "endElement", js.Any.fromFunction1(value))
+    inline def setEndElement(value: String => Unit): Self = StObject.set(x, "endElement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIgnorableWhitespace(value: String => Unit): Self = StObject.set(x, "ignorableWhitespace", js.Any.fromFunction1(value))
+    inline def setIgnorableWhitespace(value: String => Unit): Self = StObject.set(x, "ignorableWhitespace", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setProcessingInstruction(value: (String, String) => Unit): Self = StObject.set(x, "processingInstruction", js.Any.fromFunction2(value))
+    inline def setProcessingInstruction(value: (String, String) => Unit): Self = StObject.set(x, "processingInstruction", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetDocumentLocator(value: XLocator => Unit): Self = StObject.set(x, "setDocumentLocator", js.Any.fromFunction1(value))
+    inline def setSetDocumentLocator(value: XLocator => Unit): Self = StObject.set(x, "setDocumentLocator", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStartDocument(value: () => Unit): Self = StObject.set(x, "startDocument", js.Any.fromFunction0(value))
+    inline def setStartDocument(value: () => Unit): Self = StObject.set(x, "startDocument", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStartElement(value: (String, XAttributeList) => Unit): Self = StObject.set(x, "startElement", js.Any.fromFunction2(value))
+    inline def setStartElement(value: (String, XAttributeList) => Unit): Self = StObject.set(x, "startElement", js.Any.fromFunction2(value))
   }
 }

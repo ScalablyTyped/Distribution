@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait challengeType extends StObject
 object challengeType {
   
-  @scala.inline
-  def ackNeeded: typings.actionsOnGoogle.actionsOnGoogleStrings.ackNeeded = "ackNeeded".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.ackNeeded]
+  inline def ackNeeded: typings.actionsOnGoogle.actionsOnGoogleStrings.ackNeeded = "ackNeeded".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.ackNeeded]
   
-  @scala.inline
-  def challengeFailedPinNeeded: typings.actionsOnGoogle.actionsOnGoogleStrings.challengeFailedPinNeeded = "challengeFailedPinNeeded".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.challengeFailedPinNeeded]
+  inline def challengeFailedPinNeeded: typings.actionsOnGoogle.actionsOnGoogleStrings.challengeFailedPinNeeded = "challengeFailedPinNeeded".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.challengeFailedPinNeeded]
   
-  @scala.inline
-  def pinNeeded: typings.actionsOnGoogle.actionsOnGoogleStrings.pinNeeded = "pinNeeded".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.pinNeeded]
+  inline def pinNeeded: typings.actionsOnGoogle.actionsOnGoogleStrings.pinNeeded = "pinNeeded".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.pinNeeded]
 }

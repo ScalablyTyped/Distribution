@@ -25,31 +25,23 @@ trait FullManifestResource extends StObject {
 }
 object FullManifestResource {
   
-  @scala.inline
-  def apply(name: ShortManifestResource, types: js.Array[ContentType]): FullManifestResource = {
+  inline def apply(name: ShortManifestResource, types: js.Array[ContentType]): FullManifestResource = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
     __obj.asInstanceOf[FullManifestResource]
   }
   
-  @scala.inline
-  implicit class FullManifestResourceMutableBuilder[Self <: FullManifestResource] (val x: Self) extends AnyVal {
+  extension [Self <: FullManifestResource](x: Self) {
     
-    @scala.inline
-    def setIdPrefixes(value: js.Array[String]): Self = StObject.set(x, "idPrefixes", value.asInstanceOf[js.Any])
+    inline def setIdPrefixes(value: js.Array[String]): Self = StObject.set(x, "idPrefixes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdPrefixesUndefined: Self = StObject.set(x, "idPrefixes", js.undefined)
+    inline def setIdPrefixesUndefined: Self = StObject.set(x, "idPrefixes", js.undefined)
     
-    @scala.inline
-    def setIdPrefixesVarargs(value: String*): Self = StObject.set(x, "idPrefixes", js.Array(value :_*))
+    inline def setIdPrefixesVarargs(value: String*): Self = StObject.set(x, "idPrefixes", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: ShortManifestResource): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ShortManifestResource): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypes(value: js.Array[ContentType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: js.Array[ContentType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesVarargs(value: ContentType*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: ContentType*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

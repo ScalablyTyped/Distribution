@@ -13,16 +13,13 @@ trait TabBarAnimationOptions
 }
 object TabBarAnimationOptions {
   
-  @scala.inline
-  def apply(animation: Boolean): TabBarAnimationOptions = {
+  inline def apply(animation: Boolean): TabBarAnimationOptions = {
     val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabBarAnimationOptions]
   }
   
-  @scala.inline
-  implicit class TabBarAnimationOptionsMutableBuilder[Self <: TabBarAnimationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TabBarAnimationOptions](x: Self) {
     
-    @scala.inline
-    def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
   }
 }

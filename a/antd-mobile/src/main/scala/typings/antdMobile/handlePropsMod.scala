@@ -12,6 +12,5 @@ object handlePropsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(props: ListViewProps, isIndexed: Boolean): ExtraProps = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any], isIndexed.asInstanceOf[js.Any])).asInstanceOf[ExtraProps]
+  inline def default(props: ListViewProps, isIndexed: Boolean): ExtraProps = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any], isIndexed.asInstanceOf[js.Any])).asInstanceOf[ExtraProps]
 }

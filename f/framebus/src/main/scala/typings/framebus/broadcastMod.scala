@@ -11,6 +11,5 @@ object broadcastMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def broadcast(frame: Window, payload: String, origin: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("broadcast")(frame.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def broadcast(frame: Window, payload: String, origin: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("broadcast")(frame.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

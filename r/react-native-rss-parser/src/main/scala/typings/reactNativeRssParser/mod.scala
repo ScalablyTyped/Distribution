@@ -16,8 +16,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parse(feedUrl: String): js.Promise[Feed] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(feedUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Feed]]
+  inline def parse(feedUrl: String): js.Promise[Feed] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(feedUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Feed]]
   
   trait Feed extends StObject {
     
@@ -49,8 +48,7 @@ object mod {
   }
   object Feed {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       authors: js.Array[Maybe[Name]],
       categories: js.Array[Maybe[Name]],
       description: String,
@@ -69,62 +67,43 @@ object mod {
       __obj.asInstanceOf[Feed]
     }
     
-    @scala.inline
-    implicit class FeedMutableBuilder[Self <: Feed] (val x: Self) extends AnyVal {
+    extension [Self <: Feed](x: Self) {
       
-      @scala.inline
-      def setAuthors(value: js.Array[Maybe[Name]]): Self = StObject.set(x, "authors", value.asInstanceOf[js.Any])
+      inline def setAuthors(value: js.Array[Maybe[Name]]): Self = StObject.set(x, "authors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorsVarargs(value: Maybe[Name]*): Self = StObject.set(x, "authors", js.Array(value :_*))
+      inline def setAuthorsVarargs(value: Maybe[Name]*): Self = StObject.set(x, "authors", js.Array(value :_*))
       
-      @scala.inline
-      def setCategories(value: js.Array[Maybe[Name]]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+      inline def setCategories(value: js.Array[Maybe[Name]]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCategoriesVarargs(value: Maybe[Name]*): Self = StObject.set(x, "categories", js.Array(value :_*))
+      inline def setCategoriesVarargs(value: Maybe[Name]*): Self = StObject.set(x, "categories", js.Array(value :_*))
       
-      @scala.inline
-      def setCopyright(value: Maybe[String]): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
+      inline def setCopyright(value: Maybe[String]): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
+      inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage(value: Description): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: Description): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItems(value: js.Array[FeedItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[FeedItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: FeedItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: FeedItem*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setItunes(value: Block): Self = StObject.set(x, "itunes", value.asInstanceOf[js.Any])
+      inline def setItunes(value: Block): Self = StObject.set(x, "itunes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastPublished(value: String): Self = StObject.set(x, "lastPublished", value.asInstanceOf[js.Any])
+      inline def setLastPublished(value: String): Self = StObject.set(x, "lastPublished", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastUpdated(value: String): Self = StObject.set(x, "lastUpdated", value.asInstanceOf[js.Any])
+      inline def setLastUpdated(value: String): Self = StObject.set(x, "lastUpdated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinks(value: js.Array[Rel]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+      inline def setLinks(value: js.Array[Rel]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinksVarargs(value: Rel*): Self = StObject.set(x, "links", js.Array(value :_*))
+      inline def setLinksVarargs(value: Rel*): Self = StObject.set(x, "links", js.Array(value :_*))
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -152,8 +131,7 @@ object mod {
   }
   object FeedItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       authors: js.Array[Maybe[Name]],
       categories: js.Array[Maybe[Name]],
       content: String,
@@ -169,50 +147,35 @@ object mod {
       __obj.asInstanceOf[FeedItem]
     }
     
-    @scala.inline
-    implicit class FeedItemMutableBuilder[Self <: FeedItem] (val x: Self) extends AnyVal {
+    extension [Self <: FeedItem](x: Self) {
       
-      @scala.inline
-      def setAuthors(value: js.Array[Maybe[Name]]): Self = StObject.set(x, "authors", value.asInstanceOf[js.Any])
+      inline def setAuthors(value: js.Array[Maybe[Name]]): Self = StObject.set(x, "authors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorsVarargs(value: Maybe[Name]*): Self = StObject.set(x, "authors", js.Array(value :_*))
+      inline def setAuthorsVarargs(value: Maybe[Name]*): Self = StObject.set(x, "authors", js.Array(value :_*))
       
-      @scala.inline
-      def setCategories(value: js.Array[Maybe[Name]]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+      inline def setCategories(value: js.Array[Maybe[Name]]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCategoriesVarargs(value: Maybe[Name]*): Self = StObject.set(x, "categories", js.Array(value :_*))
+      inline def setCategoriesVarargs(value: Maybe[Name]*): Self = StObject.set(x, "categories", js.Array(value :_*))
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnclosures(value: js.Array[Length]): Self = StObject.set(x, "enclosures", value.asInstanceOf[js.Any])
+      inline def setEnclosures(value: js.Array[Length]): Self = StObject.set(x, "enclosures", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnclosuresVarargs(value: Length*): Self = StObject.set(x, "enclosures", js.Array(value :_*))
+      inline def setEnclosuresVarargs(value: Length*): Self = StObject.set(x, "enclosures", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItunes(value: Authors): Self = StObject.set(x, "itunes", value.asInstanceOf[js.Any])
+      inline def setItunes(value: Authors): Self = StObject.set(x, "itunes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinks(value: js.Array[Rel]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+      inline def setLinks(value: js.Array[Rel]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinksVarargs(value: Rel*): Self = StObject.set(x, "links", js.Array(value :_*))
+      inline def setLinksVarargs(value: Rel*): Self = StObject.set(x, "links", js.Array(value :_*))
       
-      @scala.inline
-      def setPublished(value: String): Self = StObject.set(x, "published", value.asInstanceOf[js.Any])
+      inline def setPublished(value: String): Self = StObject.set(x, "published", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   

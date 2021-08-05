@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GoogleActionsV2PermissionValueSpecPermissions extends StObject
 object GoogleActionsV2PermissionValueSpecPermissions {
   
-  @scala.inline
-  def DEVICE_COARSE_LOCATION: typings.actionsOnGoogle.actionsOnGoogleStrings.DEVICE_COARSE_LOCATION = "DEVICE_COARSE_LOCATION".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.DEVICE_COARSE_LOCATION]
+  inline def DEVICE_COARSE_LOCATION: typings.actionsOnGoogle.actionsOnGoogleStrings.DEVICE_COARSE_LOCATION = "DEVICE_COARSE_LOCATION".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.DEVICE_COARSE_LOCATION]
   
-  @scala.inline
-  def DEVICE_PRECISE_LOCATION: typings.actionsOnGoogle.actionsOnGoogleStrings.DEVICE_PRECISE_LOCATION = "DEVICE_PRECISE_LOCATION".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.DEVICE_PRECISE_LOCATION]
+  inline def DEVICE_PRECISE_LOCATION: typings.actionsOnGoogle.actionsOnGoogleStrings.DEVICE_PRECISE_LOCATION = "DEVICE_PRECISE_LOCATION".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.DEVICE_PRECISE_LOCATION]
   
-  @scala.inline
-  def NAME: typings.actionsOnGoogle.actionsOnGoogleStrings.NAME = "NAME".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.NAME]
+  inline def NAME: typings.actionsOnGoogle.actionsOnGoogleStrings.NAME = "NAME".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.NAME]
   
-  @scala.inline
-  def UNSPECIFIED_PERMISSION: typings.actionsOnGoogle.actionsOnGoogleStrings.UNSPECIFIED_PERMISSION = "UNSPECIFIED_PERMISSION".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.UNSPECIFIED_PERMISSION]
+  inline def UNSPECIFIED_PERMISSION: typings.actionsOnGoogle.actionsOnGoogleStrings.UNSPECIFIED_PERMISSION = "UNSPECIFIED_PERMISSION".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.UNSPECIFIED_PERMISSION]
   
-  @scala.inline
-  def UPDATE: typings.actionsOnGoogle.actionsOnGoogleStrings.UPDATE = "UPDATE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.UPDATE]
+  inline def UPDATE: typings.actionsOnGoogle.actionsOnGoogleStrings.UPDATE = "UPDATE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.UPDATE]
 }

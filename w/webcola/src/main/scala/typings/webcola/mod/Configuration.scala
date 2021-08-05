@@ -24,8 +24,7 @@ object Configuration {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getEdges(
+  inline def getEdges(
     modules: typings.webcola.powergraphMod.ModuleSet,
     es: js.Array[typings.webcola.powergraphMod.PowerEdge]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getEdges")(modules.asInstanceOf[js.Any], es.asInstanceOf[js.Any])).asInstanceOf[Unit]

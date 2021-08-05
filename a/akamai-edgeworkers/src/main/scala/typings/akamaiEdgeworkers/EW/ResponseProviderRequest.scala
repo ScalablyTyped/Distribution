@@ -11,8 +11,7 @@ trait ResponseProviderRequest
      with ReadsHeaders
 object ResponseProviderRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cpCode: Double,
     getHeader: String => js.Array[String] | Null,
     host: String,

@@ -15,22 +15,17 @@ trait ChunkId extends StObject {
 }
 object ChunkId {
   
-  @scala.inline
-  def apply(chunkId: String, format: InternalModuleFormat, moduleId: String): ChunkId = {
+  inline def apply(chunkId: String, format: InternalModuleFormat, moduleId: String): ChunkId = {
     val __obj = js.Dynamic.literal(chunkId = chunkId.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], moduleId = moduleId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChunkId]
   }
   
-  @scala.inline
-  implicit class ChunkIdMutableBuilder[Self <: ChunkId] (val x: Self) extends AnyVal {
+  extension [Self <: ChunkId](x: Self) {
     
-    @scala.inline
-    def setChunkId(value: String): Self = StObject.set(x, "chunkId", value.asInstanceOf[js.Any])
+    inline def setChunkId(value: String): Self = StObject.set(x, "chunkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: InternalModuleFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: InternalModuleFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModuleId(value: String): Self = StObject.set(x, "moduleId", value.asInstanceOf[js.Any])
+    inline def setModuleId(value: String): Self = StObject.set(x, "moduleId", value.asInstanceOf[js.Any])
   }
 }

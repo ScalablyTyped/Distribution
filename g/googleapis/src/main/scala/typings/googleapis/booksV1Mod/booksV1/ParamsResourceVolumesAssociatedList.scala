@@ -46,49 +46,35 @@ trait ParamsResourceVolumesAssociatedList
 }
 object ParamsResourceVolumesAssociatedList {
   
-  @scala.inline
-  def apply(): ParamsResourceVolumesAssociatedList = {
+  inline def apply(): ParamsResourceVolumesAssociatedList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceVolumesAssociatedList]
   }
   
-  @scala.inline
-  implicit class ParamsResourceVolumesAssociatedListMutableBuilder[Self <: ParamsResourceVolumesAssociatedList] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceVolumesAssociatedList](x: Self) {
     
-    @scala.inline
-    def setAssociation(value: String): Self = StObject.set(x, "association", value.asInstanceOf[js.Any])
+    inline def setAssociation(value: String): Self = StObject.set(x, "association", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationUndefined: Self = StObject.set(x, "association", js.undefined)
+    inline def setAssociationUndefined: Self = StObject.set(x, "association", js.undefined)
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setMaxAllowedMaturityRating(value: String): Self = StObject.set(x, "maxAllowedMaturityRating", value.asInstanceOf[js.Any])
+    inline def setMaxAllowedMaturityRating(value: String): Self = StObject.set(x, "maxAllowedMaturityRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxAllowedMaturityRatingUndefined: Self = StObject.set(x, "maxAllowedMaturityRating", js.undefined)
+    inline def setMaxAllowedMaturityRatingUndefined: Self = StObject.set(x, "maxAllowedMaturityRating", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setVolumeId(value: String): Self = StObject.set(x, "volumeId", value.asInstanceOf[js.Any])
+    inline def setVolumeId(value: String): Self = StObject.set(x, "volumeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeIdUndefined: Self = StObject.set(x, "volumeId", js.undefined)
+    inline def setVolumeIdUndefined: Self = StObject.set(x, "volumeId", js.undefined)
   }
 }

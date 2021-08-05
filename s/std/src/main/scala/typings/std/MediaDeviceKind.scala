@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MediaDeviceKind extends StObject
 object MediaDeviceKind {
   
-  @scala.inline
-  def audioinput: typings.std.stdStrings.audioinput = "audioinput".asInstanceOf[typings.std.stdStrings.audioinput]
+  inline def audioinput: typings.std.stdStrings.audioinput = "audioinput".asInstanceOf[typings.std.stdStrings.audioinput]
   
-  @scala.inline
-  def audiooutput: typings.std.stdStrings.audiooutput = "audiooutput".asInstanceOf[typings.std.stdStrings.audiooutput]
+  inline def audiooutput: typings.std.stdStrings.audiooutput = "audiooutput".asInstanceOf[typings.std.stdStrings.audiooutput]
   
-  @scala.inline
-  def videoinput: typings.std.stdStrings.videoinput = "videoinput".asInstanceOf[typings.std.stdStrings.videoinput]
+  inline def videoinput: typings.std.stdStrings.videoinput = "videoinput".asInstanceOf[typings.std.stdStrings.videoinput]
 }

@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.ParagraphFormat")
 @js.native
-class ParagraphFormat protected ()
+/* private */ class ParagraphFormat ()
   extends StObject
      with typings.activexWord.Word.ParagraphFormat {
   
@@ -172,7 +172,7 @@ class ParagraphFormat protected ()
   /* CompleteClass */
   var WidowControl: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.ParagraphFormat_typekey")
   var WordDotParagraphFormat_typekey: typings.activexWord.Word.ParagraphFormat = js.native
   

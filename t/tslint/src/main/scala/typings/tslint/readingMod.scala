@@ -11,6 +11,5 @@ object readingMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def tryReadFile(filename: String, logger: Logger): js.Promise[js.UndefOr[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("tryReadFile")(filename.asInstanceOf[js.Any], logger.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[String]]]
+  inline def tryReadFile(filename: String, logger: Logger): js.Promise[js.UndefOr[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("tryReadFile")(filename.asInstanceOf[js.Any], logger.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[String]]]
 }

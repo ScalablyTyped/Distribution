@@ -23,25 +23,19 @@ trait PatchRollout extends StObject {
 }
 object PatchRollout {
   
-  @scala.inline
-  def apply(): PatchRollout = {
+  inline def apply(): PatchRollout = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PatchRollout]
   }
   
-  @scala.inline
-  implicit class PatchRolloutMutableBuilder[Self <: PatchRollout] (val x: Self) extends AnyVal {
+  extension [Self <: PatchRollout](x: Self) {
     
-    @scala.inline
-    def setDisruptionBudget(value: FixedOrPercent): Self = StObject.set(x, "disruptionBudget", value.asInstanceOf[js.Any])
+    inline def setDisruptionBudget(value: FixedOrPercent): Self = StObject.set(x, "disruptionBudget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisruptionBudgetUndefined: Self = StObject.set(x, "disruptionBudget", js.undefined)
+    inline def setDisruptionBudgetUndefined: Self = StObject.set(x, "disruptionBudget", js.undefined)
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

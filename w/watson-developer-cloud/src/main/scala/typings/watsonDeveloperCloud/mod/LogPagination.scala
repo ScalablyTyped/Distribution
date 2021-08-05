@@ -18,31 +18,23 @@ trait LogPagination extends StObject {
 }
 object LogPagination {
   
-  @scala.inline
-  def apply(): LogPagination = {
+  inline def apply(): LogPagination = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LogPagination]
   }
   
-  @scala.inline
-  implicit class LogPaginationMutableBuilder[Self <: LogPagination] (val x: Self) extends AnyVal {
+  extension [Self <: LogPagination](x: Self) {
     
-    @scala.inline
-    def setMatched(value: Double): Self = StObject.set(x, "matched", value.asInstanceOf[js.Any])
+    inline def setMatched(value: Double): Self = StObject.set(x, "matched", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchedUndefined: Self = StObject.set(x, "matched", js.undefined)
+    inline def setMatchedUndefined: Self = StObject.set(x, "matched", js.undefined)
     
-    @scala.inline
-    def setNext_cursor(value: String): Self = StObject.set(x, "next_cursor", value.asInstanceOf[js.Any])
+    inline def setNext_cursor(value: String): Self = StObject.set(x, "next_cursor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext_cursorUndefined: Self = StObject.set(x, "next_cursor", js.undefined)
+    inline def setNext_cursorUndefined: Self = StObject.set(x, "next_cursor", js.undefined)
     
-    @scala.inline
-    def setNext_url(value: String): Self = StObject.set(x, "next_url", value.asInstanceOf[js.Any])
+    inline def setNext_url(value: String): Self = StObject.set(x, "next_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext_urlUndefined: Self = StObject.set(x, "next_url", js.undefined)
+    inline def setNext_urlUndefined: Self = StObject.set(x, "next_url", js.undefined)
   }
 }

@@ -9,8 +9,7 @@ trait CallControl
      with ICallControl
 object CallControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     endCall: Double => Unit,
     hasRinger: Boolean,
     indicateActiveCall: Double => Unit,

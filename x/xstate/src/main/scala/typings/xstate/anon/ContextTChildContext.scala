@@ -12,19 +12,15 @@ trait ContextTChildContext[TChildContext] extends StObject {
 }
 object ContextTChildContext {
   
-  @scala.inline
-  def apply[TChildContext](context: TChildContext, value: js.Any): ContextTChildContext[TChildContext] = {
+  inline def apply[TChildContext](context: TChildContext, value: js.Any): ContextTChildContext[TChildContext] = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextTChildContext[TChildContext]]
   }
   
-  @scala.inline
-  implicit class ContextTChildContextMutableBuilder[Self <: ContextTChildContext[?], TChildContext] (val x: Self & ContextTChildContext[TChildContext]) extends AnyVal {
+  extension [Self <: ContextTChildContext[?], TChildContext](x: Self & ContextTChildContext[TChildContext]) {
     
-    @scala.inline
-    def setContext(value: TChildContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: TChildContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

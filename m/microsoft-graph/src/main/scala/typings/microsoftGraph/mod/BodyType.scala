@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BodyType extends StObject
 object BodyType {
   
-  @scala.inline
-  def html: typings.microsoftGraph.microsoftGraphStrings.html = "html".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.html]
+  inline def html: typings.microsoftGraph.microsoftGraphStrings.html = "html".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.html]
   
-  @scala.inline
-  def text: typings.microsoftGraph.microsoftGraphStrings.text = "text".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.text]
+  inline def text: typings.microsoftGraph.microsoftGraphStrings.text = "text".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.text]
 }

@@ -38,8 +38,7 @@ object jobsMod {
     @JSImport("googleapis/build/src/apis/jobs", "VERSIONS.v2")
     @js.native
     def v2: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Jobs] = js.native
-    @scala.inline
-    def v2_=(x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Jobs]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v2")(x.asInstanceOf[js.Any])
+    inline def v2_=(x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Jobs]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v2")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("googleapis/build/src/apis/jobs", "VERSIONS.v3")
@@ -56,8 +55,7 @@ object jobsMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.jobsV3Mod.jobsV3.Jobs
       ] = js.native
-    @scala.inline
-    def v3_=(
+    inline def v3_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -80,8 +78,7 @@ object jobsMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.v3p1beta1Mod.jobsV3p1beta1.Jobs
       ] = js.native
-    @scala.inline
-    def v3p1beta1_=(
+    inline def v3p1beta1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -123,8 +120,7 @@ object jobsMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -168,19 +164,13 @@ object jobsMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def jobs(options: Options): Jobs = ^.asInstanceOf[js.Dynamic].applyDynamic("jobs")(options.asInstanceOf[js.Any]).asInstanceOf[Jobs]
-  @scala.inline
-  def jobs(options: typings.googleapis.jobsV3Mod.jobsV3.Options): typings.googleapis.jobsV3Mod.jobsV3.Jobs = ^.asInstanceOf[js.Dynamic].applyDynamic("jobs")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.jobsV3Mod.jobsV3.Jobs]
-  @scala.inline
-  def jobs(options: typings.googleapis.v3p1beta1Mod.jobsV3p1beta1.Options): typings.googleapis.v3p1beta1Mod.jobsV3p1beta1.Jobs = ^.asInstanceOf[js.Dynamic].applyDynamic("jobs")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v3p1beta1Mod.jobsV3p1beta1.Jobs]
+  inline def jobs(options: Options): Jobs = ^.asInstanceOf[js.Dynamic].applyDynamic("jobs")(options.asInstanceOf[js.Any]).asInstanceOf[Jobs]
+  inline def jobs(options: typings.googleapis.jobsV3Mod.jobsV3.Options): typings.googleapis.jobsV3Mod.jobsV3.Jobs = ^.asInstanceOf[js.Dynamic].applyDynamic("jobs")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.jobsV3Mod.jobsV3.Jobs]
+  inline def jobs(options: typings.googleapis.v3p1beta1Mod.jobsV3p1beta1.Options): typings.googleapis.v3p1beta1Mod.jobsV3p1beta1.Jobs = ^.asInstanceOf[js.Dynamic].applyDynamic("jobs")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v3p1beta1Mod.jobsV3p1beta1.Jobs]
   
-  @scala.inline
-  def jobs_v2(version: v2): Jobs = ^.asInstanceOf[js.Dynamic].applyDynamic("jobs")(version.asInstanceOf[js.Any]).asInstanceOf[Jobs]
+  inline def jobs_v2(version: v2): Jobs = ^.asInstanceOf[js.Dynamic].applyDynamic("jobs")(version.asInstanceOf[js.Any]).asInstanceOf[Jobs]
   
-  @scala.inline
-  def jobs_v3(version: v3): typings.googleapis.jobsV3Mod.jobsV3.Jobs = ^.asInstanceOf[js.Dynamic].applyDynamic("jobs")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.jobsV3Mod.jobsV3.Jobs]
+  inline def jobs_v3(version: v3): typings.googleapis.jobsV3Mod.jobsV3.Jobs = ^.asInstanceOf[js.Dynamic].applyDynamic("jobs")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.jobsV3Mod.jobsV3.Jobs]
   
-  @scala.inline
-  def jobs_v3p1beta1(version: v3p1beta1): typings.googleapis.v3p1beta1Mod.jobsV3p1beta1.Jobs = ^.asInstanceOf[js.Dynamic].applyDynamic("jobs")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v3p1beta1Mod.jobsV3p1beta1.Jobs]
+  inline def jobs_v3p1beta1(version: v3p1beta1): typings.googleapis.v3p1beta1Mod.jobsV3p1beta1.Jobs = ^.asInstanceOf[js.Dynamic].applyDynamic("jobs")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v3p1beta1Mod.jobsV3p1beta1.Jobs]
 }

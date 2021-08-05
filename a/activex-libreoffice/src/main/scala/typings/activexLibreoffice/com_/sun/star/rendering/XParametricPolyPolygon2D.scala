@@ -52,8 +52,7 @@ trait XParametricPolyPolygon2D
 }
 object XParametricPolyPolygon2D {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ColorSpace: XColorSpace,
     acquire: () => Unit,
     getColor: Double => SafeArray[ColorComponent],
@@ -67,22 +66,16 @@ object XParametricPolyPolygon2D {
     __obj.asInstanceOf[XParametricPolyPolygon2D]
   }
   
-  @scala.inline
-  implicit class XParametricPolyPolygon2DMutableBuilder[Self <: XParametricPolyPolygon2D] (val x: Self) extends AnyVal {
+  extension [Self <: XParametricPolyPolygon2D](x: Self) {
     
-    @scala.inline
-    def setColorSpace(value: XColorSpace): Self = StObject.set(x, "ColorSpace", value.asInstanceOf[js.Any])
+    inline def setColorSpace(value: XColorSpace): Self = StObject.set(x, "ColorSpace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetColor(value: Double => SafeArray[ColorComponent]): Self = StObject.set(x, "getColor", js.Any.fromFunction1(value))
+    inline def setGetColor(value: Double => SafeArray[ColorComponent]): Self = StObject.set(x, "getColor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetColorSpace(value: () => XColorSpace): Self = StObject.set(x, "getColorSpace", js.Any.fromFunction0(value))
+    inline def setGetColorSpace(value: () => XColorSpace): Self = StObject.set(x, "getColorSpace", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOutline(value: Double => XPolyPolygon2D): Self = StObject.set(x, "getOutline", js.Any.fromFunction1(value))
+    inline def setGetOutline(value: Double => XPolyPolygon2D): Self = StObject.set(x, "getOutline", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPointColor(value: RealPoint2D => SafeArray[ColorComponent]): Self = StObject.set(x, "getPointColor", js.Any.fromFunction1(value))
+    inline def setGetPointColor(value: RealPoint2D => SafeArray[ColorComponent]): Self = StObject.set(x, "getPointColor", js.Any.fromFunction1(value))
   }
 }

@@ -22,37 +22,27 @@ trait JQDateRangeSliderOptions
 }
 object JQDateRangeSliderOptions {
   
-  @scala.inline
-  def apply(): JQDateRangeSliderOptions = {
+  inline def apply(): JQDateRangeSliderOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JQDateRangeSliderOptions]
   }
   
-  @scala.inline
-  implicit class JQDateRangeSliderOptionsMutableBuilder[Self <: JQDateRangeSliderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: JQDateRangeSliderOptions](x: Self) {
     
-    @scala.inline
-    def setBounds(value: JQRangeSliderDateRange): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: JQRangeSliderDateRange): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
+    inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
     
-    @scala.inline
-    def setDefaultValues(value: JQRangeSliderDateRange): Self = StObject.set(x, "defaultValues", value.asInstanceOf[js.Any])
+    inline def setDefaultValues(value: JQRangeSliderDateRange): Self = StObject.set(x, "defaultValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValuesUndefined: Self = StObject.set(x, "defaultValues", js.undefined)
+    inline def setDefaultValuesUndefined: Self = StObject.set(x, "defaultValues", js.undefined)
     
-    @scala.inline
-    def setFormatter(value: /* date */ Date => String): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
+    inline def setFormatter(value: /* date */ Date => String): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
+    inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
     
-    @scala.inline
-    def setStep(value: JQRangeSliderDateSteps): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: JQRangeSliderDateSteps): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait PullRequest extends StObject {
 }
 object PullRequest {
   
-  @scala.inline
-  def apply(): PullRequest = {
+  inline def apply(): PullRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PullRequest]
   }
   
-  @scala.inline
-  implicit class PullRequestMutableBuilder[Self <: PullRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PullRequest](x: Self) {
     
-    @scala.inline
-    def setMaxMessages(value: Double): Self = StObject.set(x, "maxMessages", value.asInstanceOf[js.Any])
+    inline def setMaxMessages(value: Double): Self = StObject.set(x, "maxMessages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxMessagesUndefined: Self = StObject.set(x, "maxMessages", js.undefined)
+    inline def setMaxMessagesUndefined: Self = StObject.set(x, "maxMessages", js.undefined)
     
-    @scala.inline
-    def setReturnImmediately(value: Boolean): Self = StObject.set(x, "returnImmediately", value.asInstanceOf[js.Any])
+    inline def setReturnImmediately(value: Boolean): Self = StObject.set(x, "returnImmediately", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnImmediatelyUndefined: Self = StObject.set(x, "returnImmediately", js.undefined)
+    inline def setReturnImmediatelyUndefined: Self = StObject.set(x, "returnImmediately", js.undefined)
   }
 }

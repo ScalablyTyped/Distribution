@@ -26,28 +26,21 @@ trait IonItemDivider extends StObject {
 }
 object IonItemDivider {
   
-  @scala.inline
-  def apply(sticky: Boolean): IonItemDivider = {
+  inline def apply(sticky: Boolean): IonItemDivider = {
     val __obj = js.Dynamic.literal(sticky = sticky.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonItemDivider]
   }
   
-  @scala.inline
-  implicit class IonItemDividerMutableBuilder[Self <: IonItemDivider] (val x: Self) extends AnyVal {
+  extension [Self <: IonItemDivider](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setMode(value: ios | md): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: ios | md): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setSticky(value: Boolean): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
+    inline def setSticky(value: Boolean): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
   }
 }

@@ -18,16 +18,13 @@ trait ASPxClientCustomLegendItem
 }
 object ASPxClientCustomLegendItem {
   
-  @scala.inline
-  def apply(chart: ASPxClientWebChart, name: String, text: String): ASPxClientCustomLegendItem = {
+  inline def apply(chart: ASPxClientWebChart, name: String, text: String): ASPxClientCustomLegendItem = {
     val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientCustomLegendItem]
   }
   
-  @scala.inline
-  implicit class ASPxClientCustomLegendItemMutableBuilder[Self <: ASPxClientCustomLegendItem] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientCustomLegendItem](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

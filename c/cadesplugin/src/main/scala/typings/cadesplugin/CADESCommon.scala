@@ -54,8 +54,7 @@ object CADESCommon {
   trait _Unpacked[T] extends StObject
   object _Unpacked {
     
-    @scala.inline
-    def CPHashedDataAsync(
+    inline def CPHashedDataAsync(
       Algorithm: (// tslint:disable-line ban-types
     js.Promise[Unpacked[ValuesOf[CAPICOM_HASH_ALGORITHM]]]) | PromisifiedFunction[ValuesOf[CAPICOM_HASH_ALGORITHM]],
       DataEncoding: (// tslint:disable-line ban-types
@@ -73,8 +72,7 @@ object CADESCommon {
       __obj.asInstanceOf[typings.cadesplugin.CAdESCOM.CPHashedDataAsync]
     }
     
-    @scala.inline
-    def CPSignerAsync(
+    inline def CPSignerAsync(
       Certificate: (// tslint:disable-line ban-types
     js.Promise[Unpacked[Certificate]]) | PromisifiedFunction[Certificate],
       CheckCertificate: (// tslint:disable-line ban-types
@@ -111,8 +109,7 @@ object CADESCommon {
       __obj.asInstanceOf[typings.cadesplugin.CAdESCOM.CPSignerAsync]
     }
     
-    @scala.inline
-    def CertificateAsync(
+    inline def CertificateAsync(
       Display: (// tslint:disable-line ban-types
     js.Promise[Unpacked[js.Function0[Unit]]]) | PromisifiedFunction[js.Function0[Unit]],
       Export: (// tslint:disable-line ban-types
@@ -146,8 +143,7 @@ object CADESCommon {
       __obj.asInstanceOf[typings.cadesplugin.CAPICOM.CertificateAsync]
     }
     
-    @scala.inline
-    def CertificatesAsync(
+    inline def CertificatesAsync(
       Count: (// tslint:disable-line ban-types
     js.Promise[Unpacked[Double]]) | PromisifiedFunction[Double],
       Find: (// tslint:disable-line ban-types
@@ -193,8 +189,7 @@ object CADESCommon {
       __obj.asInstanceOf[typings.cadesplugin.CAPICOM.CertificatesAsync]
     }
     
-    @scala.inline
-    def EncodedDataAsync(
+    inline def EncodedDataAsync(
       Format: (// tslint:disable-line ban-types
     js.Promise[Unpacked[String]]) | PromisifiedFunction[String],
       Value: (// tslint:disable-line ban-types
@@ -206,8 +201,7 @@ object CADESCommon {
       __obj.asInstanceOf[typings.cadesplugin.CAPICOM.EncodedDataAsync]
     }
     
-    @scala.inline
-    def OIDAsync(
+    inline def OIDAsync(
       FriendlyName: (// tslint:disable-line ban-types
     js.Promise[Unpacked[String]]) | PromisifiedFunction[String],
       Name: (// tslint:disable-line ban-types
@@ -219,8 +213,7 @@ object CADESCommon {
       __obj.asInstanceOf[typings.cadesplugin.CAPICOM.OIDAsync]
     }
     
-    @scala.inline
-    def PublicKeyAsync(
+    inline def PublicKeyAsync(
       Algorithm: (// tslint:disable-line ban-types
     js.Promise[Unpacked[OID]]) | PromisifiedFunction[OID],
       EncodedKey: (// tslint:disable-line ban-types
@@ -234,8 +227,7 @@ object CADESCommon {
       __obj.asInstanceOf[typings.cadesplugin.CAPICOM.PublicKeyAsync]
     }
     
-    @scala.inline
-    def VersionAsync(
+    inline def VersionAsync(
       BuildVersion: (// tslint:disable-line ban-types
     js.Promise[Unpacked[Double]]) | PromisifiedFunction[Double],
       MajorVersion: (// tslint:disable-line ban-types

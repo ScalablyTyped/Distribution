@@ -14,19 +14,15 @@ trait OnSocketMessageCallbackResult extends StObject {
 }
 object OnSocketMessageCallbackResult {
   
-  @scala.inline
-  def apply(): OnSocketMessageCallbackResult = {
+  inline def apply(): OnSocketMessageCallbackResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnSocketMessageCallbackResult]
   }
   
-  @scala.inline
-  implicit class OnSocketMessageCallbackResultMutableBuilder[Self <: OnSocketMessageCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: OnSocketMessageCallbackResult](x: Self) {
     
-    @scala.inline
-    def setData(value: String | ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
   }
 }

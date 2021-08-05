@@ -15,10 +15,8 @@ object PositionAndSpaceMode {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def LABEL_ALIGNMENT: `1` = 1.asInstanceOf[`1`]
+    inline def LABEL_ALIGNMENT: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def LABEL_WIDTH_AND_POSITION: `0` = 0.asInstanceOf[`0`]
+    inline def LABEL_WIDTH_AND_POSITION: `0` = 0.asInstanceOf[`0`]
   }
 }

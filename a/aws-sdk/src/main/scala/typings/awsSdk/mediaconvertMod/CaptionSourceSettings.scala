@@ -43,55 +43,39 @@ trait CaptionSourceSettings extends StObject {
 }
 object CaptionSourceSettings {
   
-  @scala.inline
-  def apply(): CaptionSourceSettings = {
+  inline def apply(): CaptionSourceSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CaptionSourceSettings]
   }
   
-  @scala.inline
-  implicit class CaptionSourceSettingsMutableBuilder[Self <: CaptionSourceSettings] (val x: Self) extends AnyVal {
+  extension [Self <: CaptionSourceSettings](x: Self) {
     
-    @scala.inline
-    def setAncillarySourceSettings(value: AncillarySourceSettings): Self = StObject.set(x, "AncillarySourceSettings", value.asInstanceOf[js.Any])
+    inline def setAncillarySourceSettings(value: AncillarySourceSettings): Self = StObject.set(x, "AncillarySourceSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAncillarySourceSettingsUndefined: Self = StObject.set(x, "AncillarySourceSettings", js.undefined)
+    inline def setAncillarySourceSettingsUndefined: Self = StObject.set(x, "AncillarySourceSettings", js.undefined)
     
-    @scala.inline
-    def setDvbSubSourceSettings(value: DvbSubSourceSettings): Self = StObject.set(x, "DvbSubSourceSettings", value.asInstanceOf[js.Any])
+    inline def setDvbSubSourceSettings(value: DvbSubSourceSettings): Self = StObject.set(x, "DvbSubSourceSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDvbSubSourceSettingsUndefined: Self = StObject.set(x, "DvbSubSourceSettings", js.undefined)
+    inline def setDvbSubSourceSettingsUndefined: Self = StObject.set(x, "DvbSubSourceSettings", js.undefined)
     
-    @scala.inline
-    def setEmbeddedSourceSettings(value: EmbeddedSourceSettings): Self = StObject.set(x, "EmbeddedSourceSettings", value.asInstanceOf[js.Any])
+    inline def setEmbeddedSourceSettings(value: EmbeddedSourceSettings): Self = StObject.set(x, "EmbeddedSourceSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmbeddedSourceSettingsUndefined: Self = StObject.set(x, "EmbeddedSourceSettings", js.undefined)
+    inline def setEmbeddedSourceSettingsUndefined: Self = StObject.set(x, "EmbeddedSourceSettings", js.undefined)
     
-    @scala.inline
-    def setFileSourceSettings(value: FileSourceSettings): Self = StObject.set(x, "FileSourceSettings", value.asInstanceOf[js.Any])
+    inline def setFileSourceSettings(value: FileSourceSettings): Self = StObject.set(x, "FileSourceSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSourceSettingsUndefined: Self = StObject.set(x, "FileSourceSettings", js.undefined)
+    inline def setFileSourceSettingsUndefined: Self = StObject.set(x, "FileSourceSettings", js.undefined)
     
-    @scala.inline
-    def setSourceType(value: CaptionSourceType): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
+    inline def setSourceType(value: CaptionSourceType): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceTypeUndefined: Self = StObject.set(x, "SourceType", js.undefined)
+    inline def setSourceTypeUndefined: Self = StObject.set(x, "SourceType", js.undefined)
     
-    @scala.inline
-    def setTeletextSourceSettings(value: TeletextSourceSettings): Self = StObject.set(x, "TeletextSourceSettings", value.asInstanceOf[js.Any])
+    inline def setTeletextSourceSettings(value: TeletextSourceSettings): Self = StObject.set(x, "TeletextSourceSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeletextSourceSettingsUndefined: Self = StObject.set(x, "TeletextSourceSettings", js.undefined)
+    inline def setTeletextSourceSettingsUndefined: Self = StObject.set(x, "TeletextSourceSettings", js.undefined)
     
-    @scala.inline
-    def setTrackSourceSettings(value: TrackSourceSettings): Self = StObject.set(x, "TrackSourceSettings", value.asInstanceOf[js.Any])
+    inline def setTrackSourceSettings(value: TrackSourceSettings): Self = StObject.set(x, "TrackSourceSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackSourceSettingsUndefined: Self = StObject.set(x, "TrackSourceSettings", js.undefined)
+    inline def setTrackSourceSettingsUndefined: Self = StObject.set(x, "TrackSourceSettings", js.undefined)
   }
 }

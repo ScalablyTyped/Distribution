@@ -21,8 +21,7 @@ trait TypeCastExpression_
 }
 object TypeCastExpression_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     end: Double,
     expression: Expression,
     loc: SourceLocation,
@@ -34,16 +33,12 @@ object TypeCastExpression_ {
     __obj.asInstanceOf[TypeCastExpression_]
   }
   
-  @scala.inline
-  implicit class TypeCastExpression_MutableBuilder[Self <: TypeCastExpression_] (val x: Self) extends AnyVal {
+  extension [Self <: TypeCastExpression_](x: Self) {
     
-    @scala.inline
-    def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: TypeCastExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TypeCastExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeAnnotation(value: FlowTypeAnnotation): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
+    inline def setTypeAnnotation(value: FlowTypeAnnotation): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
   }
 }

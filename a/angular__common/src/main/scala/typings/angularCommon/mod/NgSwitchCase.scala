@@ -14,7 +14,7 @@ class NgSwitchCase protected ()
      with DoCheck {
   def this(viewContainer: ViewContainerRef, templateRef: TemplateRef[js.Object], ngSwitch: NgSwitch) = this()
   
-  var _view: js.Any = js.native
+  /* private */ var _view: js.Any = js.native
   
   /**
     * A callback method that performs change-detection, invoked
@@ -26,7 +26,7 @@ class NgSwitchCase protected ()
   /* CompleteClass */
   override def ngDoCheck(): Unit = js.native
   
-  var ngSwitch: js.Any = js.native
+  /* private */ var ngSwitch: js.Any = js.native
   
   /**
     * Stores the HTML template to be selected on match.

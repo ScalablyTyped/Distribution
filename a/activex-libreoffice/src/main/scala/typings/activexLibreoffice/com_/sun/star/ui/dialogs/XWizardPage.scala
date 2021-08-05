@@ -50,8 +50,7 @@ trait XWizardPage
 }
 object XWizardPage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     PageId: Double,
     Window: XWindow,
     acquire: () => Unit,
@@ -68,22 +67,16 @@ object XWizardPage {
     __obj.asInstanceOf[XWizardPage]
   }
   
-  @scala.inline
-  implicit class XWizardPageMutableBuilder[Self <: XWizardPage] (val x: Self) extends AnyVal {
+  extension [Self <: XWizardPage](x: Self) {
     
-    @scala.inline
-    def setActivatePage(value: () => Unit): Self = StObject.set(x, "activatePage", js.Any.fromFunction0(value))
+    inline def setActivatePage(value: () => Unit): Self = StObject.set(x, "activatePage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCanAdvance(value: () => Boolean): Self = StObject.set(x, "canAdvance", js.Any.fromFunction0(value))
+    inline def setCanAdvance(value: () => Boolean): Self = StObject.set(x, "canAdvance", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCommitPage(value: Double => Boolean): Self = StObject.set(x, "commitPage", js.Any.fromFunction1(value))
+    inline def setCommitPage(value: Double => Boolean): Self = StObject.set(x, "commitPage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPageId(value: Double): Self = StObject.set(x, "PageId", value.asInstanceOf[js.Any])
+    inline def setPageId(value: Double): Self = StObject.set(x, "PageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindow(value: XWindow): Self = StObject.set(x, "Window", value.asInstanceOf[js.Any])
+    inline def setWindow(value: XWindow): Self = StObject.set(x, "Window", value.asInstanceOf[js.Any])
   }
 }

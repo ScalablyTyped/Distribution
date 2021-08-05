@@ -22,20 +22,16 @@ object mod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def listen(observer: Observer[DescriptorEvent[String]]): Subscription = ^.asInstanceOf[js.Dynamic].applyDynamic("listen")(observer.asInstanceOf[js.Any]).asInstanceOf[Subscription]
+    inline def listen(observer: Observer[DescriptorEvent[String]]): Subscription = ^.asInstanceOf[js.Dynamic].applyDynamic("listen")(observer.asInstanceOf[js.Any]).asInstanceOf[Subscription]
     
     /* static member */
-    @scala.inline
-    def open(device: String): js.Promise[TransportWebUSB] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(device.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TransportWebUSB]]
+    inline def open(device: String): js.Promise[TransportWebUSB] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(device.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TransportWebUSB]]
     
     /* static member */
-    @scala.inline
-    def openConnection(): js.Promise[TransportWebUSB] = ^.asInstanceOf[js.Dynamic].applyDynamic("openConnection")().asInstanceOf[js.Promise[TransportWebUSB]]
+    inline def openConnection(): js.Promise[TransportWebUSB] = ^.asInstanceOf[js.Dynamic].applyDynamic("openConnection")().asInstanceOf[js.Promise[TransportWebUSB]]
     
     /* static member */
-    @scala.inline
-    def request(): js.Promise[TransportWebUSB] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")().asInstanceOf[js.Promise[TransportWebUSB]]
+    inline def request(): js.Promise[TransportWebUSB] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")().asInstanceOf[js.Promise[TransportWebUSB]]
   }
   
   type TransportWebUSB = typings.ledgerhqHwTransport.mod.default[String]

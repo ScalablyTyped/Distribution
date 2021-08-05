@@ -48,8 +48,7 @@ trait ISCEService extends StObject {
 }
 object ISCEService {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getTrusted: (String, js.Any) => js.Any,
     getTrustedCss: js.Any => js.Any,
     getTrustedHtml: js.Any => js.Any,
@@ -73,61 +72,42 @@ object ISCEService {
     __obj.asInstanceOf[ISCEService]
   }
   
-  @scala.inline
-  implicit class ISCEServiceMutableBuilder[Self <: ISCEService] (val x: Self) extends AnyVal {
+  extension [Self <: ISCEService](x: Self) {
     
-    @scala.inline
-    def setGetTrusted(value: (String, js.Any) => js.Any): Self = StObject.set(x, "getTrusted", js.Any.fromFunction2(value))
+    inline def setGetTrusted(value: (String, js.Any) => js.Any): Self = StObject.set(x, "getTrusted", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetTrustedCss(value: js.Any => js.Any): Self = StObject.set(x, "getTrustedCss", js.Any.fromFunction1(value))
+    inline def setGetTrustedCss(value: js.Any => js.Any): Self = StObject.set(x, "getTrustedCss", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetTrustedHtml(value: js.Any => js.Any): Self = StObject.set(x, "getTrustedHtml", js.Any.fromFunction1(value))
+    inline def setGetTrustedHtml(value: js.Any => js.Any): Self = StObject.set(x, "getTrustedHtml", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetTrustedJs(value: js.Any => js.Any): Self = StObject.set(x, "getTrustedJs", js.Any.fromFunction1(value))
+    inline def setGetTrustedJs(value: js.Any => js.Any): Self = StObject.set(x, "getTrustedJs", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetTrustedResourceUrl(value: js.Any => js.Any): Self = StObject.set(x, "getTrustedResourceUrl", js.Any.fromFunction1(value))
+    inline def setGetTrustedResourceUrl(value: js.Any => js.Any): Self = StObject.set(x, "getTrustedResourceUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetTrustedUrl(value: js.Any => js.Any): Self = StObject.set(x, "getTrustedUrl", js.Any.fromFunction1(value))
+    inline def setGetTrustedUrl(value: js.Any => js.Any): Self = StObject.set(x, "getTrustedUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsEnabled(value: () => Boolean): Self = StObject.set(x, "isEnabled", js.Any.fromFunction0(value))
+    inline def setIsEnabled(value: () => Boolean): Self = StObject.set(x, "isEnabled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setParse(value: (String, String) => js.Function2[/* context */ js.Any, /* locals */ js.Any, js.Any]): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
+    inline def setParse(value: (String, String) => js.Function2[/* context */ js.Any, /* locals */ js.Any, js.Any]): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setParseAsCss(value: String => js.Function2[/* context */ js.Any, /* locals */ js.Any, js.Any]): Self = StObject.set(x, "parseAsCss", js.Any.fromFunction1(value))
+    inline def setParseAsCss(value: String => js.Function2[/* context */ js.Any, /* locals */ js.Any, js.Any]): Self = StObject.set(x, "parseAsCss", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParseAsHtml(value: String => js.Function2[/* context */ js.Any, /* locals */ js.Any, js.Any]): Self = StObject.set(x, "parseAsHtml", js.Any.fromFunction1(value))
+    inline def setParseAsHtml(value: String => js.Function2[/* context */ js.Any, /* locals */ js.Any, js.Any]): Self = StObject.set(x, "parseAsHtml", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParseAsJs(value: String => js.Function2[/* context */ js.Any, /* locals */ js.Any, js.Any]): Self = StObject.set(x, "parseAsJs", js.Any.fromFunction1(value))
+    inline def setParseAsJs(value: String => js.Function2[/* context */ js.Any, /* locals */ js.Any, js.Any]): Self = StObject.set(x, "parseAsJs", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParseAsResourceUrl(value: String => js.Function2[/* context */ js.Any, /* locals */ js.Any, js.Any]): Self = StObject.set(x, "parseAsResourceUrl", js.Any.fromFunction1(value))
+    inline def setParseAsResourceUrl(value: String => js.Function2[/* context */ js.Any, /* locals */ js.Any, js.Any]): Self = StObject.set(x, "parseAsResourceUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParseAsUrl(value: String => js.Function2[/* context */ js.Any, /* locals */ js.Any, js.Any]): Self = StObject.set(x, "parseAsUrl", js.Any.fromFunction1(value))
+    inline def setParseAsUrl(value: String => js.Function2[/* context */ js.Any, /* locals */ js.Any, js.Any]): Self = StObject.set(x, "parseAsUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTrustAs(value: (String, js.Any) => js.Any): Self = StObject.set(x, "trustAs", js.Any.fromFunction2(value))
+    inline def setTrustAs(value: (String, js.Any) => js.Any): Self = StObject.set(x, "trustAs", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTrustAsHtml(value: js.Any => js.Any): Self = StObject.set(x, "trustAsHtml", js.Any.fromFunction1(value))
+    inline def setTrustAsHtml(value: js.Any => js.Any): Self = StObject.set(x, "trustAsHtml", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTrustAsJs(value: js.Any => js.Any): Self = StObject.set(x, "trustAsJs", js.Any.fromFunction1(value))
+    inline def setTrustAsJs(value: js.Any => js.Any): Self = StObject.set(x, "trustAsJs", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTrustAsResourceUrl(value: js.Any => js.Any): Self = StObject.set(x, "trustAsResourceUrl", js.Any.fromFunction1(value))
+    inline def setTrustAsResourceUrl(value: js.Any => js.Any): Self = StObject.set(x, "trustAsResourceUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTrustAsUrl(value: js.Any => js.Any): Self = StObject.set(x, "trustAsUrl", js.Any.fromFunction1(value))
+    inline def setTrustAsUrl(value: js.Any => js.Any): Self = StObject.set(x, "trustAsUrl", js.Any.fromFunction1(value))
   }
 }

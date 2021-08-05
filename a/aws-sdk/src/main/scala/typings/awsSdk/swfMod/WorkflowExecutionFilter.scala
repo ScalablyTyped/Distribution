@@ -13,16 +13,13 @@ trait WorkflowExecutionFilter extends StObject {
 }
 object WorkflowExecutionFilter {
   
-  @scala.inline
-  def apply(workflowId: WorkflowId): WorkflowExecutionFilter = {
+  inline def apply(workflowId: WorkflowId): WorkflowExecutionFilter = {
     val __obj = js.Dynamic.literal(workflowId = workflowId.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkflowExecutionFilter]
   }
   
-  @scala.inline
-  implicit class WorkflowExecutionFilterMutableBuilder[Self <: WorkflowExecutionFilter] (val x: Self) extends AnyVal {
+  extension [Self <: WorkflowExecutionFilter](x: Self) {
     
-    @scala.inline
-    def setWorkflowId(value: WorkflowId): Self = StObject.set(x, "workflowId", value.asInstanceOf[js.Any])
+    inline def setWorkflowId(value: WorkflowId): Self = StObject.set(x, "workflowId", value.asInstanceOf[js.Any])
   }
 }

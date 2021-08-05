@@ -75,21 +75,16 @@ object eventSubscriptionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): EventSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EventSubscription]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EventSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EventSubscription]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: EventSubscriptionState): EventSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EventSubscription]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: EventSubscriptionState, opts: CustomResourceOptions): EventSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EventSubscription]
+    inline def get(name: String, id: Input[ID]): EventSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EventSubscription]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EventSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EventSubscription]
+    inline def get(name: String, id: Input[ID], state: EventSubscriptionState): EventSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EventSubscription]
+    inline def get(name: String, id: Input[ID], state: EventSubscriptionState, opts: CustomResourceOptions): EventSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EventSubscription]
     
     /**
       * Returns true if the given object is an instance of EventSubscription.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dms/eventSubscription.EventSubscription */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/dms/eventSubscription.EventSubscription */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dms/eventSubscription.EventSubscription */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/dms/eventSubscription.EventSubscription */ Boolean]
   }
   
   trait EventSubscriptionArgs extends StObject {
@@ -128,56 +123,40 @@ object eventSubscriptionMod {
   }
   object EventSubscriptionArgs {
     
-    @scala.inline
-    def apply(eventCategories: Input[js.Array[Input[String]]], snsTopicArn: Input[String]): EventSubscriptionArgs = {
+    inline def apply(eventCategories: Input[js.Array[Input[String]]], snsTopicArn: Input[String]): EventSubscriptionArgs = {
       val __obj = js.Dynamic.literal(eventCategories = eventCategories.asInstanceOf[js.Any], snsTopicArn = snsTopicArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventSubscriptionArgs]
     }
     
-    @scala.inline
-    implicit class EventSubscriptionArgsMutableBuilder[Self <: EventSubscriptionArgs] (val x: Self) extends AnyVal {
+    extension [Self <: EventSubscriptionArgs](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setEventCategories(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "eventCategories", value.asInstanceOf[js.Any])
+      inline def setEventCategories(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "eventCategories", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventCategoriesVarargs(value: Input[String]*): Self = StObject.set(x, "eventCategories", js.Array(value :_*))
+      inline def setEventCategoriesVarargs(value: Input[String]*): Self = StObject.set(x, "eventCategories", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setSnsTopicArn(value: Input[String]): Self = StObject.set(x, "snsTopicArn", value.asInstanceOf[js.Any])
+      inline def setSnsTopicArn(value: Input[String]): Self = StObject.set(x, "snsTopicArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "sourceIds", value.asInstanceOf[js.Any])
+      inline def setSourceIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "sourceIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceIdsUndefined: Self = StObject.set(x, "sourceIds", js.undefined)
+      inline def setSourceIdsUndefined: Self = StObject.set(x, "sourceIds", js.undefined)
       
-      @scala.inline
-      def setSourceIdsVarargs(value: Input[String]*): Self = StObject.set(x, "sourceIds", js.Array(value :_*))
+      inline def setSourceIdsVarargs(value: Input[String]*): Self = StObject.set(x, "sourceIds", js.Array(value :_*))
       
-      @scala.inline
-      def setSourceType(value: Input[String]): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
+      inline def setSourceType(value: Input[String]): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
+      inline def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -219,68 +198,48 @@ object eventSubscriptionMod {
   }
   object EventSubscriptionState {
     
-    @scala.inline
-    def apply(): EventSubscriptionState = {
+    inline def apply(): EventSubscriptionState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EventSubscriptionState]
     }
     
-    @scala.inline
-    implicit class EventSubscriptionStateMutableBuilder[Self <: EventSubscriptionState] (val x: Self) extends AnyVal {
+    extension [Self <: EventSubscriptionState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setEventCategories(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "eventCategories", value.asInstanceOf[js.Any])
+      inline def setEventCategories(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "eventCategories", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventCategoriesUndefined: Self = StObject.set(x, "eventCategories", js.undefined)
+      inline def setEventCategoriesUndefined: Self = StObject.set(x, "eventCategories", js.undefined)
       
-      @scala.inline
-      def setEventCategoriesVarargs(value: Input[String]*): Self = StObject.set(x, "eventCategories", js.Array(value :_*))
+      inline def setEventCategoriesVarargs(value: Input[String]*): Self = StObject.set(x, "eventCategories", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setSnsTopicArn(value: Input[String]): Self = StObject.set(x, "snsTopicArn", value.asInstanceOf[js.Any])
+      inline def setSnsTopicArn(value: Input[String]): Self = StObject.set(x, "snsTopicArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnsTopicArnUndefined: Self = StObject.set(x, "snsTopicArn", js.undefined)
+      inline def setSnsTopicArnUndefined: Self = StObject.set(x, "snsTopicArn", js.undefined)
       
-      @scala.inline
-      def setSourceIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "sourceIds", value.asInstanceOf[js.Any])
+      inline def setSourceIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "sourceIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceIdsUndefined: Self = StObject.set(x, "sourceIds", js.undefined)
+      inline def setSourceIdsUndefined: Self = StObject.set(x, "sourceIds", js.undefined)
       
-      @scala.inline
-      def setSourceIdsVarargs(value: Input[String]*): Self = StObject.set(x, "sourceIds", js.Array(value :_*))
+      inline def setSourceIdsVarargs(value: Input[String]*): Self = StObject.set(x, "sourceIds", js.Array(value :_*))
       
-      @scala.inline
-      def setSourceType(value: Input[String]): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
+      inline def setSourceType(value: Input[String]): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
+      inline def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

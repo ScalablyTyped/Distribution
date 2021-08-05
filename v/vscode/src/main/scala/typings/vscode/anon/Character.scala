@@ -12,25 +12,19 @@ trait Character extends StObject {
 }
 object Character {
   
-  @scala.inline
-  def apply(): Character = {
+  inline def apply(): Character = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Character]
   }
   
-  @scala.inline
-  implicit class CharacterMutableBuilder[Self <: Character] (val x: Self) extends AnyVal {
+  extension [Self <: Character](x: Self) {
     
-    @scala.inline
-    def setCharacter(value: Double): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
+    inline def setCharacter(value: Double): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharacterUndefined: Self = StObject.set(x, "character", js.undefined)
+    inline def setCharacterUndefined: Self = StObject.set(x, "character", js.undefined)
     
-    @scala.inline
-    def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
   }
 }

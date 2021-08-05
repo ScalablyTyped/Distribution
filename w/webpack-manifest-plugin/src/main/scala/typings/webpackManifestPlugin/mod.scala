@@ -26,23 +26,18 @@ object mod {
   }
   object Chunk {
     
-    @scala.inline
-    def apply(id: String, parents: js.Array[String]): Chunk = {
+    inline def apply(id: String, parents: js.Array[String]): Chunk = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], parents = parents.asInstanceOf[js.Any])
       __obj.asInstanceOf[Chunk]
     }
     
-    @scala.inline
-    implicit class ChunkMutableBuilder[Self <: Chunk] (val x: Self) extends AnyVal {
+    extension [Self <: Chunk](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParents(value: js.Array[String]): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
+      inline def setParents(value: js.Array[String]): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentsVarargs(value: String*): Self = StObject.set(x, "parents", js.Array(value :_*))
+      inline def setParentsVarargs(value: String*): Self = StObject.set(x, "parents", js.Array(value :_*))
     }
   }
   
@@ -67,41 +62,30 @@ object mod {
   }
   object FileDescriptor {
     
-    @scala.inline
-    def apply(isAsset: Boolean, isChunk: Boolean, isInitial: Boolean, isModuleAsset: Boolean, path: String): FileDescriptor = {
+    inline def apply(isAsset: Boolean, isChunk: Boolean, isInitial: Boolean, isModuleAsset: Boolean, path: String): FileDescriptor = {
       val __obj = js.Dynamic.literal(isAsset = isAsset.asInstanceOf[js.Any], isChunk = isChunk.asInstanceOf[js.Any], isInitial = isInitial.asInstanceOf[js.Any], isModuleAsset = isModuleAsset.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], name = null)
       __obj.asInstanceOf[FileDescriptor]
     }
     
-    @scala.inline
-    implicit class FileDescriptorMutableBuilder[Self <: FileDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: FileDescriptor](x: Self) {
       
-      @scala.inline
-      def setChunk(value: Chunk): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
+      inline def setChunk(value: Chunk): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChunkUndefined: Self = StObject.set(x, "chunk", js.undefined)
+      inline def setChunkUndefined: Self = StObject.set(x, "chunk", js.undefined)
       
-      @scala.inline
-      def setIsAsset(value: Boolean): Self = StObject.set(x, "isAsset", value.asInstanceOf[js.Any])
+      inline def setIsAsset(value: Boolean): Self = StObject.set(x, "isAsset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsChunk(value: Boolean): Self = StObject.set(x, "isChunk", value.asInstanceOf[js.Any])
+      inline def setIsChunk(value: Boolean): Self = StObject.set(x, "isChunk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsInitial(value: Boolean): Self = StObject.set(x, "isInitial", value.asInstanceOf[js.Any])
+      inline def setIsInitial(value: Boolean): Self = StObject.set(x, "isInitial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsModuleAsset(value: Boolean): Self = StObject.set(x, "isModuleAsset", value.asInstanceOf[js.Any])
+      inline def setIsModuleAsset(value: Boolean): Self = StObject.set(x, "isModuleAsset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameNull: Self = StObject.set(x, "name", null)
+      inline def setNameNull: Self = StObject.set(x, "name", null)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
@@ -172,76 +156,54 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
+      inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
+      inline def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
       
-      @scala.inline
-      def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+      inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
       
-      @scala.inline
-      def setFilter(value: /* file */ FileDescriptor => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(value: /* file */ FileDescriptor => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setGenerate(
+      inline def setGenerate(
         value: (/* seed */ js.Object, /* files */ js.Array[FileDescriptor], /* entrypoints */ StringDictionary[js.Array[String]]) => js.Object
       ): Self = StObject.set(x, "generate", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGenerateUndefined: Self = StObject.set(x, "generate", js.undefined)
+      inline def setGenerateUndefined: Self = StObject.set(x, "generate", js.undefined)
       
-      @scala.inline
-      def setMap(value: /* file */ FileDescriptor => FileDescriptor): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+      inline def setMap(value: /* file */ FileDescriptor => FileDescriptor): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
-      @scala.inline
-      def setPublicPath(value: String): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
+      inline def setPublicPath(value: String): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicPathUndefined: Self = StObject.set(x, "publicPath", js.undefined)
+      inline def setPublicPathUndefined: Self = StObject.set(x, "publicPath", js.undefined)
       
-      @scala.inline
-      def setSeed(value: js.Object): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
+      inline def setSeed(value: js.Object): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
+      inline def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
       
-      @scala.inline
-      def setSerialize(value: /* manifest */ js.Object => String): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
+      inline def setSerialize(value: /* manifest */ js.Object => String): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSerializeUndefined: Self = StObject.set(x, "serialize", js.undefined)
+      inline def setSerializeUndefined: Self = StObject.set(x, "serialize", js.undefined)
       
-      @scala.inline
-      def setSort(value: (/* a */ FileDescriptor, /* b */ FileDescriptor) => Double): Self = StObject.set(x, "sort", js.Any.fromFunction2(value))
+      inline def setSort(value: (/* a */ FileDescriptor, /* b */ FileDescriptor) => Double): Self = StObject.set(x, "sort", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+      inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
       
-      @scala.inline
-      def setWriteToFileEmit(value: Boolean): Self = StObject.set(x, "writeToFileEmit", value.asInstanceOf[js.Any])
+      inline def setWriteToFileEmit(value: Boolean): Self = StObject.set(x, "writeToFileEmit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteToFileEmitUndefined: Self = StObject.set(x, "writeToFileEmit", js.undefined)
+      inline def setWriteToFileEmitUndefined: Self = StObject.set(x, "writeToFileEmit", js.undefined)
     }
   }
   

@@ -14,28 +14,21 @@ trait Index extends StObject {
 }
 object Index {
   
-  @scala.inline
-  def apply(text: String): Index = {
+  inline def apply(text: String): Index = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Index]
   }
   
-  @scala.inline
-  implicit class IndexMutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
+  extension [Self <: Index](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setName(value: String | Double): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String | Double): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

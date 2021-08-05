@@ -13,34 +13,22 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def atom(value: js.Any): Atom_ = ^.asInstanceOf[js.Dynamic].applyDynamic("atom")(value.asInstanceOf[js.Any]).asInstanceOf[Atom_]
-  @scala.inline
-  def atom(value: js.Any, props: Sentinel): Atom_ = (^.asInstanceOf[js.Dynamic].applyDynamic("atom")(value.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Atom_]
+  inline def atom(value: js.Any): Atom_ = ^.asInstanceOf[js.Dynamic].applyDynamic("atom")(value.asInstanceOf[js.Any]).asInstanceOf[Atom_]
+  inline def atom(value: js.Any, props: Sentinel): Atom_ = (^.asInstanceOf[js.Dynamic].applyDynamic("atom")(value.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Atom_]
   
-  @scala.inline
-  def error(errorValue: js.Any): Error_ = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(errorValue.asInstanceOf[js.Any]).asInstanceOf[Error_]
-  @scala.inline
-  def error(errorValue: js.Any, props: Sentinel): Error_ = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(errorValue.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Error_]
+  inline def error(errorValue: js.Any): Error_ = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(errorValue.asInstanceOf[js.Any]).asInstanceOf[Error_]
+  inline def error(errorValue: js.Any, props: Sentinel): Error_ = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(errorValue.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Error_]
   
-  @scala.inline
-  def pathInvalidation(path: String): InvalidPath = ^.asInstanceOf[js.Dynamic].applyDynamic("pathInvalidation")(path.asInstanceOf[js.Any]).asInstanceOf[InvalidPath]
-  @scala.inline
-  def pathInvalidation(path: PathSet): InvalidPath = ^.asInstanceOf[js.Dynamic].applyDynamic("pathInvalidation")(path.asInstanceOf[js.Any]).asInstanceOf[InvalidPath]
+  inline def pathInvalidation(path: String): InvalidPath = ^.asInstanceOf[js.Dynamic].applyDynamic("pathInvalidation")(path.asInstanceOf[js.Any]).asInstanceOf[InvalidPath]
+  inline def pathInvalidation(path: PathSet): InvalidPath = ^.asInstanceOf[js.Dynamic].applyDynamic("pathInvalidation")(path.asInstanceOf[js.Any]).asInstanceOf[InvalidPath]
   
-  @scala.inline
-  def pathValue(path: String, value: js.Any): PathValue_ = (^.asInstanceOf[js.Dynamic].applyDynamic("pathValue")(path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[PathValue_]
-  @scala.inline
-  def pathValue(path: PathSet, value: js.Any): PathValue_ = (^.asInstanceOf[js.Dynamic].applyDynamic("pathValue")(path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[PathValue_]
+  inline def pathValue(path: String, value: js.Any): PathValue_ = (^.asInstanceOf[js.Dynamic].applyDynamic("pathValue")(path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[PathValue_]
+  inline def pathValue(path: PathSet, value: js.Any): PathValue_ = (^.asInstanceOf[js.Dynamic].applyDynamic("pathValue")(path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[PathValue_]
   
-  @scala.inline
-  def ref(path: String): Reference = ^.asInstanceOf[js.Dynamic].applyDynamic("ref")(path.asInstanceOf[js.Any]).asInstanceOf[Reference]
-  @scala.inline
-  def ref(path: String, props: Sentinel): Reference = (^.asInstanceOf[js.Dynamic].applyDynamic("ref")(path.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Reference]
-  @scala.inline
-  def ref(path: PathSet): Reference = ^.asInstanceOf[js.Dynamic].applyDynamic("ref")(path.asInstanceOf[js.Any]).asInstanceOf[Reference]
-  @scala.inline
-  def ref(path: PathSet, props: Sentinel): Reference = (^.asInstanceOf[js.Dynamic].applyDynamic("ref")(path.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Reference]
+  inline def ref(path: String): Reference = ^.asInstanceOf[js.Dynamic].applyDynamic("ref")(path.asInstanceOf[js.Any]).asInstanceOf[Reference]
+  inline def ref(path: String, props: Sentinel): Reference = (^.asInstanceOf[js.Dynamic].applyDynamic("ref")(path.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Reference]
+  inline def ref(path: PathSet): Reference = ^.asInstanceOf[js.Dynamic].applyDynamic("ref")(path.asInstanceOf[js.Any]).asInstanceOf[Reference]
+  inline def ref(path: PathSet, props: Sentinel): Reference = (^.asInstanceOf[js.Dynamic].applyDynamic("ref")(path.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Reference]
   
   // NOTE: The following types are described at https://github.com/Netflix/falcor/tree/master/lib/typedefs .
   /**
@@ -57,20 +45,16 @@ object mod {
   }
   object Atom_ {
     
-    @scala.inline
-    def apply(value: js.Any): Atom_ = {
+    inline def apply(value: js.Any): Atom_ = {
       val __obj = js.Dynamic.literal($type = "atom", value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Atom_]
     }
     
-    @scala.inline
-    implicit class Atom_MutableBuilder[Self <: Atom_] (val x: Self) extends AnyVal {
+    extension [Self <: Atom_](x: Self) {
       
-      @scala.inline
-      def set$type(value: atom): Self = StObject.set(x, "$type", value.asInstanceOf[js.Any])
+      inline def set$type(value: atom): Self = StObject.set(x, "$type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -85,20 +69,16 @@ object mod {
   }
   object Error_ {
     
-    @scala.inline
-    def apply(value: js.Any): Error_ = {
+    inline def apply(value: js.Any): Error_ = {
       val __obj = js.Dynamic.literal($type = "error", value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Error_]
     }
     
-    @scala.inline
-    implicit class Error_MutableBuilder[Self <: Error_] (val x: Self) extends AnyVal {
+    extension [Self <: Error_](x: Self) {
       
-      @scala.inline
-      def set$type(value: error): Self = StObject.set(x, "$type", value.asInstanceOf[js.Any])
+      inline def set$type(value: error): Self = StObject.set(x, "$type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -110,23 +90,18 @@ object mod {
   }
   object InvalidPath {
     
-    @scala.inline
-    def apply(invalidate: Boolean, path: PathSet): InvalidPath = {
+    inline def apply(invalidate: Boolean, path: PathSet): InvalidPath = {
       val __obj = js.Dynamic.literal(invalidate = invalidate.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[InvalidPath]
     }
     
-    @scala.inline
-    implicit class InvalidPathMutableBuilder[Self <: InvalidPath] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidPath](x: Self) {
       
-      @scala.inline
-      def setInvalidate(value: Boolean): Self = StObject.set(x, "invalidate", value.asInstanceOf[js.Any])
+      inline def setInvalidate(value: Boolean): Self = StObject.set(x, "invalidate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: PathSet): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: PathSet): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathVarargs(value: KeySet*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: KeySet*): Self = StObject.set(x, "path", js.Array(value :_*))
     }
   }
   
@@ -139,17 +114,14 @@ object mod {
   }
   object JSONEnvelope {
     
-    @scala.inline
-    def apply[T](json: T): JSONEnvelope[T] = {
+    inline def apply[T](json: T): JSONEnvelope[T] = {
       val __obj = js.Dynamic.literal(json = json.asInstanceOf[js.Any])
       __obj.asInstanceOf[JSONEnvelope[T]]
     }
     
-    @scala.inline
-    implicit class JSONEnvelopeMutableBuilder[Self <: JSONEnvelope[?], T] (val x: Self & JSONEnvelope[T]) extends AnyVal {
+    extension [Self <: JSONEnvelope[?], T](x: Self & JSONEnvelope[T]) {
       
-      @scala.inline
-      def setJson(value: T): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: T): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
     }
   }
   
@@ -171,35 +143,26 @@ object mod {
   }
   object JSONGraphEnvelope {
     
-    @scala.inline
-    def apply(jsonGraph: JSONGraph): JSONGraphEnvelope = {
+    inline def apply(jsonGraph: JSONGraph): JSONGraphEnvelope = {
       val __obj = js.Dynamic.literal(jsonGraph = jsonGraph.asInstanceOf[js.Any])
       __obj.asInstanceOf[JSONGraphEnvelope]
     }
     
-    @scala.inline
-    implicit class JSONGraphEnvelopeMutableBuilder[Self <: JSONGraphEnvelope] (val x: Self) extends AnyVal {
+    extension [Self <: JSONGraphEnvelope](x: Self) {
       
-      @scala.inline
-      def setInvalidate(value: js.Array[PathSet]): Self = StObject.set(x, "invalidate", value.asInstanceOf[js.Any])
+      inline def setInvalidate(value: js.Array[PathSet]): Self = StObject.set(x, "invalidate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalidateUndefined: Self = StObject.set(x, "invalidate", js.undefined)
+      inline def setInvalidateUndefined: Self = StObject.set(x, "invalidate", js.undefined)
       
-      @scala.inline
-      def setInvalidateVarargs(value: PathSet*): Self = StObject.set(x, "invalidate", js.Array(value :_*))
+      inline def setInvalidateVarargs(value: PathSet*): Self = StObject.set(x, "invalidate", js.Array(value :_*))
       
-      @scala.inline
-      def setJsonGraph(value: JSONGraph): Self = StObject.set(x, "jsonGraph", value.asInstanceOf[js.Any])
+      inline def setJsonGraph(value: JSONGraph): Self = StObject.set(x, "jsonGraph", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaths(value: js.Array[PathSet]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+      inline def setPaths(value: js.Array[PathSet]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
+      inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
       
-      @scala.inline
-      def setPathsVarargs(value: PathSet*): Self = StObject.set(x, "paths", js.Array(value :_*))
+      inline def setPathsVarargs(value: PathSet*): Self = StObject.set(x, "paths", js.Array(value :_*))
     }
   }
   
@@ -234,23 +197,18 @@ object mod {
   }
   object PathValue_ {
     
-    @scala.inline
-    def apply(path: String | PathSet, value: js.Any): PathValue_ = {
+    inline def apply(path: String | PathSet, value: js.Any): PathValue_ = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[PathValue_]
     }
     
-    @scala.inline
-    implicit class PathValue_MutableBuilder[Self <: PathValue_] (val x: Self) extends AnyVal {
+    extension [Self <: PathValue_](x: Self) {
       
-      @scala.inline
-      def setPath(value: String | PathSet): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String | PathSet): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathVarargs(value: KeySet*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: KeySet*): Self = StObject.set(x, "path", js.Array(value :_*))
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -267,32 +225,24 @@ object mod {
   }
   object Range {
     
-    @scala.inline
-    def apply(): Range = {
+    inline def apply(): Range = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Range]
     }
     
-    @scala.inline
-    implicit class RangeMutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
+    extension [Self <: Range](x: Self) {
       
-      @scala.inline
-      def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+      inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
       
-      @scala.inline
-      def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     }
   }
   
@@ -307,23 +257,18 @@ object mod {
   }
   object Reference {
     
-    @scala.inline
-    def apply(value: Path): Reference = {
+    inline def apply(value: Path): Reference = {
       val __obj = js.Dynamic.literal($type = "reference", value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Reference]
     }
     
-    @scala.inline
-    implicit class ReferenceMutableBuilder[Self <: Reference] (val x: Self) extends AnyVal {
+    extension [Self <: Reference](x: Self) {
       
-      @scala.inline
-      def set$type(value: reference): Self = StObject.set(x, "$type", value.asInstanceOf[js.Any])
+      inline def set$type(value: reference): Self = StObject.set(x, "$type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Path): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Path): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueVarargs(value: Key*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: Key*): Self = StObject.set(x, "value", js.Array(value :_*))
     }
   }
   
@@ -334,20 +279,16 @@ object mod {
   }
   object Sentinel {
     
-    @scala.inline
-    def apply(): Sentinel = {
+    inline def apply(): Sentinel = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Sentinel]
     }
     
-    @scala.inline
-    implicit class SentinelMutableBuilder[Self <: Sentinel] (val x: Self) extends AnyVal {
+    extension [Self <: Sentinel](x: Self) {
       
-      @scala.inline
-      def set$expires(value: Double): Self = StObject.set(x, "$expires", value.asInstanceOf[js.Any])
+      inline def set$expires(value: Double): Self = StObject.set(x, "$expires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$expiresUndefined: Self = StObject.set(x, "$expires", js.undefined)
+      inline def set$expiresUndefined: Self = StObject.set(x, "$expires", js.undefined)
     }
   }
 }

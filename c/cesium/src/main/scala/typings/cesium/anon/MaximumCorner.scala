@@ -16,25 +16,19 @@ trait MaximumCorner extends StObject {
 }
 object MaximumCorner {
   
-  @scala.inline
-  def apply(maximumCorner: Cartesian3, minimumCorner: Cartesian3): MaximumCorner = {
+  inline def apply(maximumCorner: Cartesian3, minimumCorner: Cartesian3): MaximumCorner = {
     val __obj = js.Dynamic.literal(maximumCorner = maximumCorner.asInstanceOf[js.Any], minimumCorner = minimumCorner.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaximumCorner]
   }
   
-  @scala.inline
-  implicit class MaximumCornerMutableBuilder[Self <: MaximumCorner] (val x: Self) extends AnyVal {
+  extension [Self <: MaximumCorner](x: Self) {
     
-    @scala.inline
-    def setMaximumCorner(value: Cartesian3): Self = StObject.set(x, "maximumCorner", value.asInstanceOf[js.Any])
+    inline def setMaximumCorner(value: Cartesian3): Self = StObject.set(x, "maximumCorner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumCorner(value: Cartesian3): Self = StObject.set(x, "minimumCorner", value.asInstanceOf[js.Any])
+    inline def setMinimumCorner(value: Cartesian3): Self = StObject.set(x, "minimumCorner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertexFormat(value: VertexFormat): Self = StObject.set(x, "vertexFormat", value.asInstanceOf[js.Any])
+    inline def setVertexFormat(value: VertexFormat): Self = StObject.set(x, "vertexFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertexFormatUndefined: Self = StObject.set(x, "vertexFormat", js.undefined)
+    inline def setVertexFormatUndefined: Self = StObject.set(x, "vertexFormat", js.undefined)
   }
 }

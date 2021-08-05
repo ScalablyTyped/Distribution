@@ -28,37 +28,27 @@ trait DescribeSharedDirectoriesRequest extends StObject {
 }
 object DescribeSharedDirectoriesRequest {
   
-  @scala.inline
-  def apply(OwnerDirectoryId: DirectoryId): DescribeSharedDirectoriesRequest = {
+  inline def apply(OwnerDirectoryId: DirectoryId): DescribeSharedDirectoriesRequest = {
     val __obj = js.Dynamic.literal(OwnerDirectoryId = OwnerDirectoryId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSharedDirectoriesRequest]
   }
   
-  @scala.inline
-  implicit class DescribeSharedDirectoriesRequestMutableBuilder[Self <: DescribeSharedDirectoriesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSharedDirectoriesRequest](x: Self) {
     
-    @scala.inline
-    def setLimit(value: Limit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Limit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setOwnerDirectoryId(value: DirectoryId): Self = StObject.set(x, "OwnerDirectoryId", value.asInstanceOf[js.Any])
+    inline def setOwnerDirectoryId(value: DirectoryId): Self = StObject.set(x, "OwnerDirectoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedDirectoryIds(value: DirectoryIds): Self = StObject.set(x, "SharedDirectoryIds", value.asInstanceOf[js.Any])
+    inline def setSharedDirectoryIds(value: DirectoryIds): Self = StObject.set(x, "SharedDirectoryIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedDirectoryIdsUndefined: Self = StObject.set(x, "SharedDirectoryIds", js.undefined)
+    inline def setSharedDirectoryIdsUndefined: Self = StObject.set(x, "SharedDirectoryIds", js.undefined)
     
-    @scala.inline
-    def setSharedDirectoryIdsVarargs(value: DirectoryId*): Self = StObject.set(x, "SharedDirectoryIds", js.Array(value :_*))
+    inline def setSharedDirectoryIdsVarargs(value: DirectoryId*): Self = StObject.set(x, "SharedDirectoryIds", js.Array(value :_*))
   }
 }

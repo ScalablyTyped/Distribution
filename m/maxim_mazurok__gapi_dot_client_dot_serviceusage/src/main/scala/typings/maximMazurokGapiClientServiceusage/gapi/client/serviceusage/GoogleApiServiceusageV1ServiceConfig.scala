@@ -38,82 +38,57 @@ trait GoogleApiServiceusageV1ServiceConfig extends StObject {
 }
 object GoogleApiServiceusageV1ServiceConfig {
   
-  @scala.inline
-  def apply(): GoogleApiServiceusageV1ServiceConfig = {
+  inline def apply(): GoogleApiServiceusageV1ServiceConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleApiServiceusageV1ServiceConfig]
   }
   
-  @scala.inline
-  implicit class GoogleApiServiceusageV1ServiceConfigMutableBuilder[Self <: GoogleApiServiceusageV1ServiceConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleApiServiceusageV1ServiceConfig](x: Self) {
     
-    @scala.inline
-    def setApis(value: js.Array[Api]): Self = StObject.set(x, "apis", value.asInstanceOf[js.Any])
+    inline def setApis(value: js.Array[Api]): Self = StObject.set(x, "apis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApisUndefined: Self = StObject.set(x, "apis", js.undefined)
+    inline def setApisUndefined: Self = StObject.set(x, "apis", js.undefined)
     
-    @scala.inline
-    def setApisVarargs(value: Api*): Self = StObject.set(x, "apis", js.Array(value :_*))
+    inline def setApisVarargs(value: Api*): Self = StObject.set(x, "apis", js.Array(value :_*))
     
-    @scala.inline
-    def setAuthentication(value: Authentication): Self = StObject.set(x, "authentication", value.asInstanceOf[js.Any])
+    inline def setAuthentication(value: Authentication): Self = StObject.set(x, "authentication", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationUndefined: Self = StObject.set(x, "authentication", js.undefined)
+    inline def setAuthenticationUndefined: Self = StObject.set(x, "authentication", js.undefined)
     
-    @scala.inline
-    def setDocumentation(value: Documentation): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
+    inline def setDocumentation(value: Documentation): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
+    inline def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
     
-    @scala.inline
-    def setEndpoints(value: js.Array[Endpoint]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
+    inline def setEndpoints(value: js.Array[Endpoint]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointsUndefined: Self = StObject.set(x, "endpoints", js.undefined)
+    inline def setEndpointsUndefined: Self = StObject.set(x, "endpoints", js.undefined)
     
-    @scala.inline
-    def setEndpointsVarargs(value: Endpoint*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
+    inline def setEndpointsVarargs(value: Endpoint*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
     
-    @scala.inline
-    def setMonitoredResources(value: js.Array[MonitoredResourceDescriptor]): Self = StObject.set(x, "monitoredResources", value.asInstanceOf[js.Any])
+    inline def setMonitoredResources(value: js.Array[MonitoredResourceDescriptor]): Self = StObject.set(x, "monitoredResources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitoredResourcesUndefined: Self = StObject.set(x, "monitoredResources", js.undefined)
+    inline def setMonitoredResourcesUndefined: Self = StObject.set(x, "monitoredResources", js.undefined)
     
-    @scala.inline
-    def setMonitoredResourcesVarargs(value: MonitoredResourceDescriptor*): Self = StObject.set(x, "monitoredResources", js.Array(value :_*))
+    inline def setMonitoredResourcesVarargs(value: MonitoredResourceDescriptor*): Self = StObject.set(x, "monitoredResources", js.Array(value :_*))
     
-    @scala.inline
-    def setMonitoring(value: Monitoring): Self = StObject.set(x, "monitoring", value.asInstanceOf[js.Any])
+    inline def setMonitoring(value: Monitoring): Self = StObject.set(x, "monitoring", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitoringUndefined: Self = StObject.set(x, "monitoring", js.undefined)
+    inline def setMonitoringUndefined: Self = StObject.set(x, "monitoring", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setQuota(value: Quota): Self = StObject.set(x, "quota", value.asInstanceOf[js.Any])
+    inline def setQuota(value: Quota): Self = StObject.set(x, "quota", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuotaUndefined: Self = StObject.set(x, "quota", js.undefined)
+    inline def setQuotaUndefined: Self = StObject.set(x, "quota", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setUsage(value: Usage): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
+    inline def setUsage(value: Usage): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
+    inline def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
   }
 }

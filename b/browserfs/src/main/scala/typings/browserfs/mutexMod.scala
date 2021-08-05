@@ -12,10 +12,10 @@ object mutexMod {
     extends StObject
        with Mutex {
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _locked: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _waiters: js.Any = js.native
     
     /* CompleteClass */
@@ -33,9 +33,9 @@ object mutexMod {
   
   trait Mutex extends StObject {
     
-    var _locked: js.Any
+    /* private */ var _locked: js.Any
     
-    var _waiters: js.Any
+    /* private */ var _waiters: js.Any
     
     def isLocked(): Boolean
     
@@ -47,8 +47,7 @@ object mutexMod {
   }
   object Mutex {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _locked: js.Any,
       _waiters: js.Any,
       isLocked: () => Boolean,
@@ -60,26 +59,19 @@ object mutexMod {
       __obj.asInstanceOf[Mutex]
     }
     
-    @scala.inline
-    implicit class MutexMutableBuilder[Self <: Mutex] (val x: Self) extends AnyVal {
+    extension [Self <: Mutex](x: Self) {
       
-      @scala.inline
-      def setIsLocked(value: () => Boolean): Self = StObject.set(x, "isLocked", js.Any.fromFunction0(value))
+      inline def setIsLocked(value: () => Boolean): Self = StObject.set(x, "isLocked", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLock(value: js.Function => Unit): Self = StObject.set(x, "lock", js.Any.fromFunction1(value))
+      inline def setLock(value: js.Function => Unit): Self = StObject.set(x, "lock", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTryLock(value: () => Boolean): Self = StObject.set(x, "tryLock", js.Any.fromFunction0(value))
+      inline def setTryLock(value: () => Boolean): Self = StObject.set(x, "tryLock", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUnlock(value: () => Unit): Self = StObject.set(x, "unlock", js.Any.fromFunction0(value))
+      inline def setUnlock(value: () => Unit): Self = StObject.set(x, "unlock", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_locked(value: js.Any): Self = StObject.set(x, "_locked", value.asInstanceOf[js.Any])
+      inline def set_locked(value: js.Any): Self = StObject.set(x, "_locked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_waiters(value: js.Any): Self = StObject.set(x, "_waiters", value.asInstanceOf[js.Any])
+      inline def set_waiters(value: js.Any): Self = StObject.set(x, "_waiters", value.asInstanceOf[js.Any])
     }
   }
 }

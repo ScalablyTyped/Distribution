@@ -60,8 +60,7 @@ trait ITypedValue extends StObject {
 }
 object ITypedValue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Clone: () => ITypedValue,
     CloneFrom: ITypedValue => Unit,
     CompareTo: ITypedValue => Double,
@@ -89,73 +88,50 @@ object ITypedValue {
     __obj.asInstanceOf[ITypedValue]
   }
   
-  @scala.inline
-  implicit class ITypedValueMutableBuilder[Self <: ITypedValue] (val x: Self) extends AnyVal {
+  extension [Self <: ITypedValue](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => ITypedValue): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => ITypedValue): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCloneFrom(value: ITypedValue => Unit): Self = StObject.set(x, "CloneFrom", js.Any.fromFunction1(value))
+    inline def setCloneFrom(value: ITypedValue => Unit): Self = StObject.set(x, "CloneFrom", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCompareTo(value: ITypedValue => Double): Self = StObject.set(x, "CompareTo", js.Any.fromFunction1(value))
+    inline def setCompareTo(value: ITypedValue => Double): Self = StObject.set(x, "CompareTo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDataType(value: MFDataType): Self = StObject.set(x, "DataType", value.asInstanceOf[js.Any])
+    inline def setDataType(value: MFDataType): Self = StObject.set(x, "DataType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayValue(value: String): Self = StObject.set(x, "DisplayValue", value.asInstanceOf[js.Any])
+    inline def setDisplayValue(value: String): Self = StObject.set(x, "DisplayValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetLookupID(value: () => Double): Self = StObject.set(x, "GetLookupID", js.Any.fromFunction0(value))
+    inline def setGetLookupID(value: () => Double): Self = StObject.set(x, "GetLookupID", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetValueAsLocalizedText(value: () => String): Self = StObject.set(x, "GetValueAsLocalizedText", js.Any.fromFunction0(value))
+    inline def setGetValueAsLocalizedText(value: () => String): Self = StObject.set(x, "GetValueAsLocalizedText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetValueAsLookup(value: () => ILookup): Self = StObject.set(x, "GetValueAsLookup", js.Any.fromFunction0(value))
+    inline def setGetValueAsLookup(value: () => ILookup): Self = StObject.set(x, "GetValueAsLookup", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetValueAsLookups(value: () => ILookups): Self = StObject.set(x, "GetValueAsLookups", js.Any.fromFunction0(value))
+    inline def setGetValueAsLookups(value: () => ILookups): Self = StObject.set(x, "GetValueAsLookups", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetValueAsText(value: (Boolean, Boolean, Boolean, Boolean, Boolean, Boolean) => String): Self = StObject.set(x, "GetValueAsText", js.Any.fromFunction6(value))
+    inline def setGetValueAsText(value: (Boolean, Boolean, Boolean, Boolean, Boolean, Boolean) => String): Self = StObject.set(x, "GetValueAsText", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setGetValueAsTextWithExpression(value: (IExpression, Double) => String): Self = StObject.set(x, "GetValueAsTextWithExpression", js.Any.fromFunction2(value))
+    inline def setGetValueAsTextWithExpression(value: (IExpression, Double) => String): Self = StObject.set(x, "GetValueAsTextWithExpression", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetValueAsTimestamp(value: () => ITimestamp): Self = StObject.set(x, "GetValueAsTimestamp", js.Any.fromFunction0(value))
+    inline def setGetValueAsTimestamp(value: () => ITimestamp): Self = StObject.set(x, "GetValueAsTimestamp", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetValueAsUnlocalizedText(value: () => String): Self = StObject.set(x, "GetValueAsUnlocalizedText", js.Any.fromFunction0(value))
+    inline def setGetValueAsUnlocalizedText(value: () => String): Self = StObject.set(x, "GetValueAsUnlocalizedText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsNULL(value: () => Boolean): Self = StObject.set(x, "IsNULL", js.Any.fromFunction0(value))
+    inline def setIsNULL(value: () => Boolean): Self = StObject.set(x, "IsNULL", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsUninitialized(value: () => Boolean): Self = StObject.set(x, "IsUninitialized", js.Any.fromFunction0(value))
+    inline def setIsUninitialized(value: () => Boolean): Self = StObject.set(x, "IsUninitialized", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSerialize(value: () => js.Array[Double]): Self = StObject.set(x, "Serialize", js.Any.fromFunction0(value))
+    inline def setSerialize(value: () => js.Array[Double]): Self = StObject.set(x, "Serialize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetValue(value: (MFDataType, js.Any) => Unit): Self = StObject.set(x, "SetValue", js.Any.fromFunction2(value))
+    inline def setSetValue(value: (MFDataType, js.Any) => Unit): Self = StObject.set(x, "SetValue", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetValueToLookup(value: ILookup => Unit): Self = StObject.set(x, "SetValueToLookup", js.Any.fromFunction1(value))
+    inline def setSetValueToLookup(value: ILookup => Unit): Self = StObject.set(x, "SetValueToLookup", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetValueToMultiSelectLookup(value: ILookups => Unit): Self = StObject.set(x, "SetValueToMultiSelectLookup", js.Any.fromFunction1(value))
+    inline def setSetValueToMultiSelectLookup(value: ILookups => Unit): Self = StObject.set(x, "SetValueToMultiSelectLookup", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetValueToNULL(value: MFDataType => Unit): Self = StObject.set(x, "SetValueToNULL", js.Any.fromFunction1(value))
+    inline def setSetValueToNULL(value: MFDataType => Unit): Self = StObject.set(x, "SetValueToNULL", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnserialize(value: (js.Array[Double], Boolean) => Unit): Self = StObject.set(x, "Unserialize", js.Any.fromFunction2(value))
+    inline def setUnserialize(value: (js.Array[Double], Boolean) => Unit): Self = StObject.set(x, "Unserialize", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

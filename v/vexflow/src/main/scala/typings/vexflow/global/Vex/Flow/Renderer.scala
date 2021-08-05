@@ -61,34 +61,23 @@ object Renderer {
   @JSGlobal("Vex.Flow.Renderer.USE_CANVAS_PROXY")
   @js.native
   def USE_CANVAS_PROXY: Boolean = js.native
-  @scala.inline
-  def USE_CANVAS_PROXY_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("USE_CANVAS_PROXY")(x.asInstanceOf[js.Any])
+  inline def USE_CANVAS_PROXY_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("USE_CANVAS_PROXY")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @scala.inline
-  def bolsterCanvasContext(ctx: CanvasRenderingContext2D): typings.vexflow.Vex.Flow.CanvasContext = ^.asInstanceOf[js.Dynamic].applyDynamic("bolsterCanvasContext")(ctx.asInstanceOf[js.Any]).asInstanceOf[typings.vexflow.Vex.Flow.CanvasContext]
+  inline def bolsterCanvasContext(ctx: CanvasRenderingContext2D): typings.vexflow.Vex.Flow.CanvasContext = ^.asInstanceOf[js.Dynamic].applyDynamic("bolsterCanvasContext")(ctx.asInstanceOf[js.Any]).asInstanceOf[typings.vexflow.Vex.Flow.CanvasContext]
   
   /* static member */
-  @scala.inline
-  def buildContext(sel: HTMLElement, backend: Backends): IRenderContext = (^.asInstanceOf[js.Dynamic].applyDynamic("buildContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any])).asInstanceOf[IRenderContext]
-  @scala.inline
-  def buildContext(sel: HTMLElement, backend: Backends, width: Double): IRenderContext = (^.asInstanceOf[js.Dynamic].applyDynamic("buildContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[IRenderContext]
-  @scala.inline
-  def buildContext(sel: HTMLElement, backend: Backends, width: Double, height: Double): IRenderContext = (^.asInstanceOf[js.Dynamic].applyDynamic("buildContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[IRenderContext]
-  @scala.inline
-  def buildContext(sel: HTMLElement, backend: Backends, width: Double, height: Double, background: String): IRenderContext = (^.asInstanceOf[js.Dynamic].applyDynamic("buildContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], background.asInstanceOf[js.Any])).asInstanceOf[IRenderContext]
-  @scala.inline
-  def buildContext(sel: HTMLElement, backend: Backends, width: Double, height: Unit, background: String): IRenderContext = (^.asInstanceOf[js.Dynamic].applyDynamic("buildContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], background.asInstanceOf[js.Any])).asInstanceOf[IRenderContext]
-  @scala.inline
-  def buildContext(sel: HTMLElement, backend: Backends, width: Unit, height: Double): IRenderContext = (^.asInstanceOf[js.Dynamic].applyDynamic("buildContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[IRenderContext]
-  @scala.inline
-  def buildContext(sel: HTMLElement, backend: Backends, width: Unit, height: Double, background: String): IRenderContext = (^.asInstanceOf[js.Dynamic].applyDynamic("buildContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], background.asInstanceOf[js.Any])).asInstanceOf[IRenderContext]
-  @scala.inline
-  def buildContext(sel: HTMLElement, backend: Backends, width: Unit, height: Unit, background: String): IRenderContext = (^.asInstanceOf[js.Dynamic].applyDynamic("buildContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], background.asInstanceOf[js.Any])).asInstanceOf[IRenderContext]
+  inline def buildContext(sel: HTMLElement, backend: Backends): IRenderContext = (^.asInstanceOf[js.Dynamic].applyDynamic("buildContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any])).asInstanceOf[IRenderContext]
+  inline def buildContext(sel: HTMLElement, backend: Backends, width: Double): IRenderContext = (^.asInstanceOf[js.Dynamic].applyDynamic("buildContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[IRenderContext]
+  inline def buildContext(sel: HTMLElement, backend: Backends, width: Double, height: Double): IRenderContext = (^.asInstanceOf[js.Dynamic].applyDynamic("buildContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[IRenderContext]
+  inline def buildContext(sel: HTMLElement, backend: Backends, width: Double, height: Double, background: String): IRenderContext = (^.asInstanceOf[js.Dynamic].applyDynamic("buildContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], background.asInstanceOf[js.Any])).asInstanceOf[IRenderContext]
+  inline def buildContext(sel: HTMLElement, backend: Backends, width: Double, height: Unit, background: String): IRenderContext = (^.asInstanceOf[js.Dynamic].applyDynamic("buildContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], background.asInstanceOf[js.Any])).asInstanceOf[IRenderContext]
+  inline def buildContext(sel: HTMLElement, backend: Backends, width: Unit, height: Double): IRenderContext = (^.asInstanceOf[js.Dynamic].applyDynamic("buildContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[IRenderContext]
+  inline def buildContext(sel: HTMLElement, backend: Backends, width: Unit, height: Double, background: String): IRenderContext = (^.asInstanceOf[js.Dynamic].applyDynamic("buildContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], background.asInstanceOf[js.Any])).asInstanceOf[IRenderContext]
+  inline def buildContext(sel: HTMLElement, backend: Backends, width: Unit, height: Unit, background: String): IRenderContext = (^.asInstanceOf[js.Dynamic].applyDynamic("buildContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], background.asInstanceOf[js.Any])).asInstanceOf[IRenderContext]
   
   /* static member */
-  @scala.inline
-  def drawDashedLine(
+  inline def drawDashedLine(
     context: IRenderContext,
     fromX: Double,
     fromY: Double,
@@ -98,56 +87,32 @@ object Renderer {
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawDashedLine")(context.asInstanceOf[js.Any], fromX.asInstanceOf[js.Any], fromY.asInstanceOf[js.Any], toX.asInstanceOf[js.Any], toY.asInstanceOf[js.Any], dashPattern.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @scala.inline
-  def getCanvasContext(sel: HTMLElement, backend: Backends): typings.vexflow.Vex.Flow.CanvasContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getCanvasContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.CanvasContext]
-  @scala.inline
-  def getCanvasContext(sel: HTMLElement, backend: Backends, width: Double): typings.vexflow.Vex.Flow.CanvasContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getCanvasContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.CanvasContext]
-  @scala.inline
-  def getCanvasContext(sel: HTMLElement, backend: Backends, width: Double, height: Double): typings.vexflow.Vex.Flow.CanvasContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getCanvasContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.CanvasContext]
-  @scala.inline
-  def getCanvasContext(sel: HTMLElement, backend: Backends, width: Double, height: Double, background: String): typings.vexflow.Vex.Flow.CanvasContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getCanvasContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], background.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.CanvasContext]
-  @scala.inline
-  def getCanvasContext(sel: HTMLElement, backend: Backends, width: Double, height: Unit, background: String): typings.vexflow.Vex.Flow.CanvasContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getCanvasContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], background.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.CanvasContext]
-  @scala.inline
-  def getCanvasContext(sel: HTMLElement, backend: Backends, width: Unit, height: Double): typings.vexflow.Vex.Flow.CanvasContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getCanvasContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.CanvasContext]
-  @scala.inline
-  def getCanvasContext(sel: HTMLElement, backend: Backends, width: Unit, height: Double, background: String): typings.vexflow.Vex.Flow.CanvasContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getCanvasContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], background.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.CanvasContext]
-  @scala.inline
-  def getCanvasContext(sel: HTMLElement, backend: Backends, width: Unit, height: Unit, background: String): typings.vexflow.Vex.Flow.CanvasContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getCanvasContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], background.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.CanvasContext]
+  inline def getCanvasContext(sel: HTMLElement, backend: Backends): typings.vexflow.Vex.Flow.CanvasContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getCanvasContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.CanvasContext]
+  inline def getCanvasContext(sel: HTMLElement, backend: Backends, width: Double): typings.vexflow.Vex.Flow.CanvasContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getCanvasContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.CanvasContext]
+  inline def getCanvasContext(sel: HTMLElement, backend: Backends, width: Double, height: Double): typings.vexflow.Vex.Flow.CanvasContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getCanvasContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.CanvasContext]
+  inline def getCanvasContext(sel: HTMLElement, backend: Backends, width: Double, height: Double, background: String): typings.vexflow.Vex.Flow.CanvasContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getCanvasContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], background.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.CanvasContext]
+  inline def getCanvasContext(sel: HTMLElement, backend: Backends, width: Double, height: Unit, background: String): typings.vexflow.Vex.Flow.CanvasContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getCanvasContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], background.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.CanvasContext]
+  inline def getCanvasContext(sel: HTMLElement, backend: Backends, width: Unit, height: Double): typings.vexflow.Vex.Flow.CanvasContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getCanvasContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.CanvasContext]
+  inline def getCanvasContext(sel: HTMLElement, backend: Backends, width: Unit, height: Double, background: String): typings.vexflow.Vex.Flow.CanvasContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getCanvasContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], background.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.CanvasContext]
+  inline def getCanvasContext(sel: HTMLElement, backend: Backends, width: Unit, height: Unit, background: String): typings.vexflow.Vex.Flow.CanvasContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getCanvasContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], background.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.CanvasContext]
   
   /* static member */
-  @scala.inline
-  def getRaphaelContext(sel: HTMLElement, backend: Backends): typings.vexflow.Vex.Flow.RaphaelContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getRaphaelContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.RaphaelContext]
-  @scala.inline
-  def getRaphaelContext(sel: HTMLElement, backend: Backends, width: Double): typings.vexflow.Vex.Flow.RaphaelContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getRaphaelContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.RaphaelContext]
-  @scala.inline
-  def getRaphaelContext(sel: HTMLElement, backend: Backends, width: Double, height: Double): typings.vexflow.Vex.Flow.RaphaelContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getRaphaelContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.RaphaelContext]
-  @scala.inline
-  def getRaphaelContext(sel: HTMLElement, backend: Backends, width: Double, height: Double, background: String): typings.vexflow.Vex.Flow.RaphaelContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getRaphaelContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], background.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.RaphaelContext]
-  @scala.inline
-  def getRaphaelContext(sel: HTMLElement, backend: Backends, width: Double, height: Unit, background: String): typings.vexflow.Vex.Flow.RaphaelContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getRaphaelContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], background.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.RaphaelContext]
-  @scala.inline
-  def getRaphaelContext(sel: HTMLElement, backend: Backends, width: Unit, height: Double): typings.vexflow.Vex.Flow.RaphaelContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getRaphaelContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.RaphaelContext]
-  @scala.inline
-  def getRaphaelContext(sel: HTMLElement, backend: Backends, width: Unit, height: Double, background: String): typings.vexflow.Vex.Flow.RaphaelContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getRaphaelContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], background.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.RaphaelContext]
-  @scala.inline
-  def getRaphaelContext(sel: HTMLElement, backend: Backends, width: Unit, height: Unit, background: String): typings.vexflow.Vex.Flow.RaphaelContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getRaphaelContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], background.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.RaphaelContext]
+  inline def getRaphaelContext(sel: HTMLElement, backend: Backends): typings.vexflow.Vex.Flow.RaphaelContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getRaphaelContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.RaphaelContext]
+  inline def getRaphaelContext(sel: HTMLElement, backend: Backends, width: Double): typings.vexflow.Vex.Flow.RaphaelContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getRaphaelContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.RaphaelContext]
+  inline def getRaphaelContext(sel: HTMLElement, backend: Backends, width: Double, height: Double): typings.vexflow.Vex.Flow.RaphaelContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getRaphaelContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.RaphaelContext]
+  inline def getRaphaelContext(sel: HTMLElement, backend: Backends, width: Double, height: Double, background: String): typings.vexflow.Vex.Flow.RaphaelContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getRaphaelContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], background.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.RaphaelContext]
+  inline def getRaphaelContext(sel: HTMLElement, backend: Backends, width: Double, height: Unit, background: String): typings.vexflow.Vex.Flow.RaphaelContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getRaphaelContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], background.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.RaphaelContext]
+  inline def getRaphaelContext(sel: HTMLElement, backend: Backends, width: Unit, height: Double): typings.vexflow.Vex.Flow.RaphaelContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getRaphaelContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.RaphaelContext]
+  inline def getRaphaelContext(sel: HTMLElement, backend: Backends, width: Unit, height: Double, background: String): typings.vexflow.Vex.Flow.RaphaelContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getRaphaelContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], background.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.RaphaelContext]
+  inline def getRaphaelContext(sel: HTMLElement, backend: Backends, width: Unit, height: Unit, background: String): typings.vexflow.Vex.Flow.RaphaelContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getRaphaelContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], background.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.RaphaelContext]
   
   /* static member */
-  @scala.inline
-  def getSVGContext(sel: HTMLElement, backend: Backends): typings.vexflow.Vex.Flow.SVGContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getSVGContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.SVGContext]
-  @scala.inline
-  def getSVGContext(sel: HTMLElement, backend: Backends, width: Double): typings.vexflow.Vex.Flow.SVGContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getSVGContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.SVGContext]
-  @scala.inline
-  def getSVGContext(sel: HTMLElement, backend: Backends, width: Double, height: Double): typings.vexflow.Vex.Flow.SVGContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getSVGContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.SVGContext]
-  @scala.inline
-  def getSVGContext(sel: HTMLElement, backend: Backends, width: Double, height: Double, background: String): typings.vexflow.Vex.Flow.SVGContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getSVGContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], background.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.SVGContext]
-  @scala.inline
-  def getSVGContext(sel: HTMLElement, backend: Backends, width: Double, height: Unit, background: String): typings.vexflow.Vex.Flow.SVGContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getSVGContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], background.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.SVGContext]
-  @scala.inline
-  def getSVGContext(sel: HTMLElement, backend: Backends, width: Unit, height: Double): typings.vexflow.Vex.Flow.SVGContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getSVGContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.SVGContext]
-  @scala.inline
-  def getSVGContext(sel: HTMLElement, backend: Backends, width: Unit, height: Double, background: String): typings.vexflow.Vex.Flow.SVGContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getSVGContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], background.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.SVGContext]
-  @scala.inline
-  def getSVGContext(sel: HTMLElement, backend: Backends, width: Unit, height: Unit, background: String): typings.vexflow.Vex.Flow.SVGContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getSVGContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], background.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.SVGContext]
+  inline def getSVGContext(sel: HTMLElement, backend: Backends): typings.vexflow.Vex.Flow.SVGContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getSVGContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.SVGContext]
+  inline def getSVGContext(sel: HTMLElement, backend: Backends, width: Double): typings.vexflow.Vex.Flow.SVGContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getSVGContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.SVGContext]
+  inline def getSVGContext(sel: HTMLElement, backend: Backends, width: Double, height: Double): typings.vexflow.Vex.Flow.SVGContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getSVGContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.SVGContext]
+  inline def getSVGContext(sel: HTMLElement, backend: Backends, width: Double, height: Double, background: String): typings.vexflow.Vex.Flow.SVGContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getSVGContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], background.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.SVGContext]
+  inline def getSVGContext(sel: HTMLElement, backend: Backends, width: Double, height: Unit, background: String): typings.vexflow.Vex.Flow.SVGContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getSVGContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], background.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.SVGContext]
+  inline def getSVGContext(sel: HTMLElement, backend: Backends, width: Unit, height: Double): typings.vexflow.Vex.Flow.SVGContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getSVGContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.SVGContext]
+  inline def getSVGContext(sel: HTMLElement, backend: Backends, width: Unit, height: Double, background: String): typings.vexflow.Vex.Flow.SVGContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getSVGContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], background.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.SVGContext]
+  inline def getSVGContext(sel: HTMLElement, backend: Backends, width: Unit, height: Unit, background: String): typings.vexflow.Vex.Flow.SVGContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getSVGContext")(sel.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], background.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.SVGContext]
 }

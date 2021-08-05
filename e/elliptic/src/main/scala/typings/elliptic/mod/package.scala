@@ -5,14 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def rand: js.Any = typings.elliptic.mod.^.asInstanceOf[js.Dynamic].selectDynamic("rand").asInstanceOf[js.Any]
+inline def rand: js.Any = typings.elliptic.mod.^.asInstanceOf[js.Dynamic].selectDynamic("rand").asInstanceOf[js.Any]
 
-@scala.inline
-def utils: js.Any = typings.elliptic.mod.^.asInstanceOf[js.Dynamic].selectDynamic("utils").asInstanceOf[js.Any]
+inline def utils: js.Any = typings.elliptic.mod.^.asInstanceOf[js.Dynamic].selectDynamic("utils").asInstanceOf[js.Any]
 
-@scala.inline
-def version: scala.Double = typings.elliptic.mod.^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[scala.Double]
+inline def version: scala.Double = typings.elliptic.mod.^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[scala.Double]
 
 type BNInput = java.lang.String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any) | scala.Double | typings.node.Buffer | typings.std.Uint8Array | js.Array[scala.Double]
 

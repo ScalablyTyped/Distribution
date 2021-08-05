@@ -10,10 +10,8 @@ object operatorsSingleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def single[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("single")().asInstanceOf[js.Any]
-  @scala.inline
-  def single[T](
+  inline def single[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("single")().asInstanceOf[js.Any]
+  inline def single[T](
     predicate: js.Function3[
       /* value */ T, 
       /* index */ Double, 

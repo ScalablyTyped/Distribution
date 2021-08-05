@@ -18,43 +18,31 @@ trait SelectionStyle extends StObject {
 }
 object SelectionStyle {
   
-  @scala.inline
-  def apply(): SelectionStyle = {
+  inline def apply(): SelectionStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SelectionStyle]
   }
   
-  @scala.inline
-  implicit class SelectionStyleMutableBuilder[Self <: SelectionStyle] (val x: Self) extends AnyVal {
+  extension [Self <: SelectionStyle](x: Self) {
     
-    @scala.inline
-    def setBorder(value: ColorWidth): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: ColorWidth): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setHoverStyle(value: `30`): Self = StObject.set(x, "hoverStyle", value.asInstanceOf[js.Any])
+    inline def setHoverStyle(value: `30`): Self = StObject.set(x, "hoverStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverStyleUndefined: Self = StObject.set(x, "hoverStyle", js.undefined)
+    inline def setHoverStyleUndefined: Self = StObject.set(x, "hoverStyle", js.undefined)
     
-    @scala.inline
-    def setLabel(value: WordWrap): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: WordWrap): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setSelectionStyle(value: `30`): Self = StObject.set(x, "selectionStyle", value.asInstanceOf[js.Any])
+    inline def setSelectionStyle(value: `30`): Self = StObject.set(x, "selectionStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionStyleUndefined: Self = StObject.set(x, "selectionStyle", js.undefined)
+    inline def setSelectionStyleUndefined: Self = StObject.set(x, "selectionStyle", js.undefined)
   }
 }

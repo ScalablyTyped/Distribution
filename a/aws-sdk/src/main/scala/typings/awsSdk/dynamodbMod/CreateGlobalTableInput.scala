@@ -18,22 +18,17 @@ trait CreateGlobalTableInput extends StObject {
 }
 object CreateGlobalTableInput {
   
-  @scala.inline
-  def apply(GlobalTableName: TableName, ReplicationGroup: ReplicaList): CreateGlobalTableInput = {
+  inline def apply(GlobalTableName: TableName, ReplicationGroup: ReplicaList): CreateGlobalTableInput = {
     val __obj = js.Dynamic.literal(GlobalTableName = GlobalTableName.asInstanceOf[js.Any], ReplicationGroup = ReplicationGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateGlobalTableInput]
   }
   
-  @scala.inline
-  implicit class CreateGlobalTableInputMutableBuilder[Self <: CreateGlobalTableInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateGlobalTableInput](x: Self) {
     
-    @scala.inline
-    def setGlobalTableName(value: TableName): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
+    inline def setGlobalTableName(value: TableName): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationGroup(value: ReplicaList): Self = StObject.set(x, "ReplicationGroup", value.asInstanceOf[js.Any])
+    inline def setReplicationGroup(value: ReplicaList): Self = StObject.set(x, "ReplicationGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationGroupVarargs(value: Replica*): Self = StObject.set(x, "ReplicationGroup", js.Array(value :_*))
+    inline def setReplicationGroupVarargs(value: Replica*): Self = StObject.set(x, "ReplicationGroup", js.Array(value :_*))
   }
 }

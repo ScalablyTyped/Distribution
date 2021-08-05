@@ -20,8 +20,7 @@ trait ICreateTopicIfNotExistsOptions
 }
 object ICreateTopicIfNotExistsOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DefaultMessageTimeToLive: String,
     DuplicateDetectionHistoryTimeWindow: String,
     EnableBatchedOperations: Boolean,
@@ -40,22 +39,16 @@ object ICreateTopicIfNotExistsOptions {
     __obj.asInstanceOf[ICreateTopicIfNotExistsOptions]
   }
   
-  @scala.inline
-  implicit class ICreateTopicIfNotExistsOptionsMutableBuilder[Self <: ICreateTopicIfNotExistsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ICreateTopicIfNotExistsOptions](x: Self) {
     
-    @scala.inline
-    def setEnableDeadLetteringOnFilterEvaluationExceptions(value: Boolean): Self = StObject.set(x, "EnableDeadLetteringOnFilterEvaluationExceptions", value.asInstanceOf[js.Any])
+    inline def setEnableDeadLetteringOnFilterEvaluationExceptions(value: Boolean): Self = StObject.set(x, "EnableDeadLetteringOnFilterEvaluationExceptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableDeadLetteringOnMessageExpiration(value: Boolean): Self = StObject.set(x, "EnableDeadLetteringOnMessageExpiration", value.asInstanceOf[js.Any])
+    inline def setEnableDeadLetteringOnMessageExpiration(value: Boolean): Self = StObject.set(x, "EnableDeadLetteringOnMessageExpiration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxCorrelationFiltersPerTopic(value: Double): Self = StObject.set(x, "MaxCorrelationFiltersPerTopic", value.asInstanceOf[js.Any])
+    inline def setMaxCorrelationFiltersPerTopic(value: Double): Self = StObject.set(x, "MaxCorrelationFiltersPerTopic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSqlFiltersPerTopic(value: Double): Self = StObject.set(x, "MaxSqlFiltersPerTopic", value.asInstanceOf[js.Any])
+    inline def setMaxSqlFiltersPerTopic(value: Double): Self = StObject.set(x, "MaxSqlFiltersPerTopic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSubscriptionsPerTopic(value: Double): Self = StObject.set(x, "MaxSubscriptionsPerTopic", value.asInstanceOf[js.Any])
+    inline def setMaxSubscriptionsPerTopic(value: Double): Self = StObject.set(x, "MaxSubscriptionsPerTopic", value.asInstanceOf[js.Any])
   }
 }

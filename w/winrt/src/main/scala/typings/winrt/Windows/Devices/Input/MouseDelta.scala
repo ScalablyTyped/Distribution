@@ -12,19 +12,15 @@ trait MouseDelta extends StObject {
 }
 object MouseDelta {
   
-  @scala.inline
-  def apply(x: Double, y: Double): MouseDelta = {
+  inline def apply(x: Double, y: Double): MouseDelta = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[MouseDelta]
   }
   
-  @scala.inline
-  implicit class MouseDeltaMutableBuilder[Self <: MouseDelta] (val x: Self) extends AnyVal {
+  extension [Self <: MouseDelta](x: Self) {
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

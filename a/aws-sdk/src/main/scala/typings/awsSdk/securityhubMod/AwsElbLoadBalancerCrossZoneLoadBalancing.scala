@@ -13,19 +13,15 @@ trait AwsElbLoadBalancerCrossZoneLoadBalancing extends StObject {
 }
 object AwsElbLoadBalancerCrossZoneLoadBalancing {
   
-  @scala.inline
-  def apply(): AwsElbLoadBalancerCrossZoneLoadBalancing = {
+  inline def apply(): AwsElbLoadBalancerCrossZoneLoadBalancing = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsElbLoadBalancerCrossZoneLoadBalancing]
   }
   
-  @scala.inline
-  implicit class AwsElbLoadBalancerCrossZoneLoadBalancingMutableBuilder[Self <: AwsElbLoadBalancerCrossZoneLoadBalancing] (val x: Self) extends AnyVal {
+  extension [Self <: AwsElbLoadBalancerCrossZoneLoadBalancing](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
   }
 }

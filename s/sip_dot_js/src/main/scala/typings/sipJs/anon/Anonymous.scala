@@ -12,25 +12,19 @@ trait Anonymous extends StObject {
 }
 object Anonymous {
   
-  @scala.inline
-  def apply(): Anonymous = {
+  inline def apply(): Anonymous = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Anonymous]
   }
   
-  @scala.inline
-  implicit class AnonymousMutableBuilder[Self <: Anonymous] (val x: Self) extends AnyVal {
+  extension [Self <: Anonymous](x: Self) {
     
-    @scala.inline
-    def setAnonymous(value: Boolean): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
+    inline def setAnonymous(value: Boolean): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnonymousUndefined: Self = StObject.set(x, "anonymous", js.undefined)
+    inline def setAnonymousUndefined: Self = StObject.set(x, "anonymous", js.undefined)
     
-    @scala.inline
-    def setOutbound(value: Boolean): Self = StObject.set(x, "outbound", value.asInstanceOf[js.Any])
+    inline def setOutbound(value: Boolean): Self = StObject.set(x, "outbound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutboundUndefined: Self = StObject.set(x, "outbound", js.undefined)
+    inline def setOutboundUndefined: Self = StObject.set(x, "outbound", js.undefined)
   }
 }

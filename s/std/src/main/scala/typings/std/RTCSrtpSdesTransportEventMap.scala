@@ -10,16 +10,13 @@ trait RTCSrtpSdesTransportEventMap extends StObject {
 }
 object RTCSrtpSdesTransportEventMap {
   
-  @scala.inline
-  def apply(error: Event): RTCSrtpSdesTransportEventMap = {
+  inline def apply(error: Event): RTCSrtpSdesTransportEventMap = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCSrtpSdesTransportEventMap]
   }
   
-  @scala.inline
-  implicit class RTCSrtpSdesTransportEventMapMutableBuilder[Self <: RTCSrtpSdesTransportEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: RTCSrtpSdesTransportEventMap](x: Self) {
     
-    @scala.inline
-    def setError(value: Event): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Event): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }
 }

@@ -12,8 +12,7 @@ object renderNodeToOutputMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(node: DOMElement, output: typings.ink.outputMod.default, options: OffsetX): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], output.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(node: DOMElement, output: typings.ink.outputMod.default, options: OffsetX): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], output.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type OutputTransformer = js.Function1[/* s */ String, String]
 }

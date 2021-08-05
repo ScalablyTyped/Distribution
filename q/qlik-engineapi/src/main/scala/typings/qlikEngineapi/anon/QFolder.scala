@@ -10,16 +10,13 @@ trait QFolder extends StObject {
 }
 object QFolder {
   
-  @scala.inline
-  def apply(qFolder: String): QFolder = {
+  inline def apply(qFolder: String): QFolder = {
     val __obj = js.Dynamic.literal(qFolder = qFolder.asInstanceOf[js.Any])
     __obj.asInstanceOf[QFolder]
   }
   
-  @scala.inline
-  implicit class QFolderMutableBuilder[Self <: QFolder] (val x: Self) extends AnyVal {
+  extension [Self <: QFolder](x: Self) {
     
-    @scala.inline
-    def setQFolder(value: String): Self = StObject.set(x, "qFolder", value.asInstanceOf[js.Any])
+    inline def setQFolder(value: String): Self = StObject.set(x, "qFolder", value.asInstanceOf[js.Any])
   }
 }

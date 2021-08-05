@@ -42,49 +42,35 @@ trait DocumentHtmlDisplayAnchor extends StObject {
 }
 object DocumentHtmlDisplayAnchor {
   
-  @scala.inline
-  def apply(): DocumentHtmlDisplayAnchor = {
+  inline def apply(): DocumentHtmlDisplayAnchor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentHtmlDisplayAnchor]
   }
   
-  @scala.inline
-  implicit class DocumentHtmlDisplayAnchorMutableBuilder[Self <: DocumentHtmlDisplayAnchor] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentHtmlDisplayAnchor](x: Self) {
     
-    @scala.inline
-    def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
+    inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
+    inline def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
     
-    @scala.inline
-    def setDisplaySettings(value: DocumentHtmlDisplaySettings): Self = StObject.set(x, "displaySettings", value.asInstanceOf[js.Any])
+    inline def setDisplaySettings(value: DocumentHtmlDisplaySettings): Self = StObject.set(x, "displaySettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplaySettingsUndefined: Self = StObject.set(x, "displaySettings", js.undefined)
+    inline def setDisplaySettingsUndefined: Self = StObject.set(x, "displaySettings", js.undefined)
     
-    @scala.inline
-    def setEndAnchor(value: String): Self = StObject.set(x, "endAnchor", value.asInstanceOf[js.Any])
+    inline def setEndAnchor(value: String): Self = StObject.set(x, "endAnchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndAnchorUndefined: Self = StObject.set(x, "endAnchor", js.undefined)
+    inline def setEndAnchorUndefined: Self = StObject.set(x, "endAnchor", js.undefined)
     
-    @scala.inline
-    def setRemoveEndAnchor(value: Boolean): Self = StObject.set(x, "removeEndAnchor", value.asInstanceOf[js.Any])
+    inline def setRemoveEndAnchor(value: Boolean): Self = StObject.set(x, "removeEndAnchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveEndAnchorUndefined: Self = StObject.set(x, "removeEndAnchor", js.undefined)
+    inline def setRemoveEndAnchorUndefined: Self = StObject.set(x, "removeEndAnchor", js.undefined)
     
-    @scala.inline
-    def setRemoveStartAnchor(value: Boolean): Self = StObject.set(x, "removeStartAnchor", value.asInstanceOf[js.Any])
+    inline def setRemoveStartAnchor(value: Boolean): Self = StObject.set(x, "removeStartAnchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveStartAnchorUndefined: Self = StObject.set(x, "removeStartAnchor", js.undefined)
+    inline def setRemoveStartAnchorUndefined: Self = StObject.set(x, "removeStartAnchor", js.undefined)
     
-    @scala.inline
-    def setStartAnchor(value: String): Self = StObject.set(x, "startAnchor", value.asInstanceOf[js.Any])
+    inline def setStartAnchor(value: String): Self = StObject.set(x, "startAnchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartAnchorUndefined: Self = StObject.set(x, "startAnchor", js.undefined)
+    inline def setStartAnchorUndefined: Self = StObject.set(x, "startAnchor", js.undefined)
   }
 }

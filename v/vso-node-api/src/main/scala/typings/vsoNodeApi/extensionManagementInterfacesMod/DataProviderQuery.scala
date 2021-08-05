@@ -18,22 +18,17 @@ trait DataProviderQuery extends StObject {
 }
 object DataProviderQuery {
   
-  @scala.inline
-  def apply(context: DataProviderContext, contributionIds: js.Array[String]): DataProviderQuery = {
+  inline def apply(context: DataProviderContext, contributionIds: js.Array[String]): DataProviderQuery = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], contributionIds = contributionIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataProviderQuery]
   }
   
-  @scala.inline
-  implicit class DataProviderQueryMutableBuilder[Self <: DataProviderQuery] (val x: Self) extends AnyVal {
+  extension [Self <: DataProviderQuery](x: Self) {
     
-    @scala.inline
-    def setContext(value: DataProviderContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: DataProviderContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContributionIds(value: js.Array[String]): Self = StObject.set(x, "contributionIds", value.asInstanceOf[js.Any])
+    inline def setContributionIds(value: js.Array[String]): Self = StObject.set(x, "contributionIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContributionIdsVarargs(value: String*): Self = StObject.set(x, "contributionIds", js.Array(value :_*))
+    inline def setContributionIdsVarargs(value: String*): Self = StObject.set(x, "contributionIds", js.Array(value :_*))
   }
 }

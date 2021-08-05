@@ -10,16 +10,13 @@ trait CanvasFilters extends StObject {
 }
 object CanvasFilters {
   
-  @scala.inline
-  def apply(filter: java.lang.String): CanvasFilters = {
+  inline def apply(filter: java.lang.String): CanvasFilters = {
     val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any])
     __obj.asInstanceOf[CanvasFilters]
   }
   
-  @scala.inline
-  implicit class CanvasFiltersMutableBuilder[Self <: CanvasFilters] (val x: Self) extends AnyVal {
+  extension [Self <: CanvasFilters](x: Self) {
     
-    @scala.inline
-    def setFilter(value: java.lang.String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: java.lang.String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
   }
 }

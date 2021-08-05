@@ -25,19 +25,15 @@ trait SceneRegistryItem extends StObject {
 }
 object SceneRegistryItem {
   
-  @scala.inline
-  def apply(name: String, url: String): SceneRegistryItem = {
+  inline def apply(name: String, url: String): SceneRegistryItem = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SceneRegistryItem]
   }
   
-  @scala.inline
-  implicit class SceneRegistryItemMutableBuilder[Self <: SceneRegistryItem] (val x: Self) extends AnyVal {
+  extension [Self <: SceneRegistryItem](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

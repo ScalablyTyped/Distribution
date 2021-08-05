@@ -26,8 +26,7 @@ trait GetTargetGroupHealthCheck extends StObject {
 }
 object GetTargetGroupHealthCheck {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     enabled: Boolean,
     healthyThreshold: Double,
     interval: Double,
@@ -42,34 +41,24 @@ object GetTargetGroupHealthCheck {
     __obj.asInstanceOf[GetTargetGroupHealthCheck]
   }
   
-  @scala.inline
-  implicit class GetTargetGroupHealthCheckMutableBuilder[Self <: GetTargetGroupHealthCheck] (val x: Self) extends AnyVal {
+  extension [Self <: GetTargetGroupHealthCheck](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthyThreshold(value: Double): Self = StObject.set(x, "healthyThreshold", value.asInstanceOf[js.Any])
+    inline def setHealthyThreshold(value: Double): Self = StObject.set(x, "healthyThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatcher(value: String): Self = StObject.set(x, "matcher", value.asInstanceOf[js.Any])
+    inline def setMatcher(value: String): Self = StObject.set(x, "matcher", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnhealthyThreshold(value: Double): Self = StObject.set(x, "unhealthyThreshold", value.asInstanceOf[js.Any])
+    inline def setUnhealthyThreshold(value: Double): Self = StObject.set(x, "unhealthyThreshold", value.asInstanceOf[js.Any])
   }
 }

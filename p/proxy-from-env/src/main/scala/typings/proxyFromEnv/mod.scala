@@ -11,8 +11,6 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getProxyForUrl(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getProxyForUrl")(url.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def getProxyForUrl(url: Url): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getProxyForUrl")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getProxyForUrl(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getProxyForUrl")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getProxyForUrl(url: Url): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getProxyForUrl")(url.asInstanceOf[js.Any]).asInstanceOf[String]
 }

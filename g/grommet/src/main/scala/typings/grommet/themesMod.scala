@@ -225,14 +225,10 @@ object themesMod {
   @js.native
   val dark: ThemeType = js.native
   
-  @scala.inline
-  def generate(): DeepReadonlyThemeType = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")().asInstanceOf[DeepReadonlyThemeType]
-  @scala.inline
-  def generate(baseSpacing: Double): DeepReadonlyThemeType = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(baseSpacing.asInstanceOf[js.Any]).asInstanceOf[DeepReadonlyThemeType]
-  @scala.inline
-  def generate(baseSpacing: Double, scale: Double): DeepReadonlyThemeType = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(baseSpacing.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[DeepReadonlyThemeType]
-  @scala.inline
-  def generate(baseSpacing: Unit, scale: Double): DeepReadonlyThemeType = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(baseSpacing.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[DeepReadonlyThemeType]
+  inline def generate(): DeepReadonlyThemeType = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")().asInstanceOf[DeepReadonlyThemeType]
+  inline def generate(baseSpacing: Double): DeepReadonlyThemeType = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(baseSpacing.asInstanceOf[js.Any]).asInstanceOf[DeepReadonlyThemeType]
+  inline def generate(baseSpacing: Double, scale: Double): DeepReadonlyThemeType = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(baseSpacing.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[DeepReadonlyThemeType]
+  inline def generate(baseSpacing: Unit, scale: Double): DeepReadonlyThemeType = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(baseSpacing.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[DeepReadonlyThemeType]
   
   @JSImport("grommet/themes", "grommet")
   @js.native

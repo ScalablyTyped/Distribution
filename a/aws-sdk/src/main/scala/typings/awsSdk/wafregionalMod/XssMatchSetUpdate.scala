@@ -18,19 +18,15 @@ trait XssMatchSetUpdate extends StObject {
 }
 object XssMatchSetUpdate {
   
-  @scala.inline
-  def apply(Action: ChangeAction, XssMatchTuple: XssMatchTuple): XssMatchSetUpdate = {
+  inline def apply(Action: ChangeAction, XssMatchTuple: XssMatchTuple): XssMatchSetUpdate = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], XssMatchTuple = XssMatchTuple.asInstanceOf[js.Any])
     __obj.asInstanceOf[XssMatchSetUpdate]
   }
   
-  @scala.inline
-  implicit class XssMatchSetUpdateMutableBuilder[Self <: XssMatchSetUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: XssMatchSetUpdate](x: Self) {
     
-    @scala.inline
-    def setAction(value: ChangeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: ChangeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXssMatchTuple(value: XssMatchTuple): Self = StObject.set(x, "XssMatchTuple", value.asInstanceOf[js.Any])
+    inline def setXssMatchTuple(value: XssMatchTuple): Self = StObject.set(x, "XssMatchTuple", value.asInstanceOf[js.Any])
   }
 }

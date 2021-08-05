@@ -19,8 +19,7 @@ trait ISeriesList extends StObject {
 }
 object ISeriesList {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     anyUsesAxes: () => Boolean,
     chart: IChart,
     clicked: IPoint => Boolean,
@@ -31,25 +30,18 @@ object ISeriesList {
     __obj.asInstanceOf[ISeriesList]
   }
   
-  @scala.inline
-  implicit class ISeriesListMutableBuilder[Self <: ISeriesList] (val x: Self) extends AnyVal {
+  extension [Self <: ISeriesList](x: Self) {
     
-    @scala.inline
-    def setAnyUsesAxes(value: () => Boolean): Self = StObject.set(x, "anyUsesAxes", js.Any.fromFunction0(value))
+    inline def setAnyUsesAxes(value: () => Boolean): Self = StObject.set(x, "anyUsesAxes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setChart(value: IChart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
+    inline def setChart(value: IChart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClicked(value: IPoint => Boolean): Self = StObject.set(x, "clicked", js.Any.fromFunction1(value))
+    inline def setClicked(value: IPoint => Boolean): Self = StObject.set(x, "clicked", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFirstVisible(value: () => ISeries): Self = StObject.set(x, "firstVisible", js.Any.fromFunction0(value))
+    inline def setFirstVisible(value: () => ISeries): Self = StObject.set(x, "firstVisible", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setItems(value: js.Array[ISeries]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[ISeries]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: ISeries*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ISeries*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

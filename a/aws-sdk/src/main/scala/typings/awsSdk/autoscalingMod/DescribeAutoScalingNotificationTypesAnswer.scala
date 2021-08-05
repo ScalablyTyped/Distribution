@@ -13,22 +13,17 @@ trait DescribeAutoScalingNotificationTypesAnswer extends StObject {
 }
 object DescribeAutoScalingNotificationTypesAnswer {
   
-  @scala.inline
-  def apply(): DescribeAutoScalingNotificationTypesAnswer = {
+  inline def apply(): DescribeAutoScalingNotificationTypesAnswer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAutoScalingNotificationTypesAnswer]
   }
   
-  @scala.inline
-  implicit class DescribeAutoScalingNotificationTypesAnswerMutableBuilder[Self <: DescribeAutoScalingNotificationTypesAnswer] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAutoScalingNotificationTypesAnswer](x: Self) {
     
-    @scala.inline
-    def setAutoScalingNotificationTypes(value: AutoScalingNotificationTypes): Self = StObject.set(x, "AutoScalingNotificationTypes", value.asInstanceOf[js.Any])
+    inline def setAutoScalingNotificationTypes(value: AutoScalingNotificationTypes): Self = StObject.set(x, "AutoScalingNotificationTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoScalingNotificationTypesUndefined: Self = StObject.set(x, "AutoScalingNotificationTypes", js.undefined)
+    inline def setAutoScalingNotificationTypesUndefined: Self = StObject.set(x, "AutoScalingNotificationTypes", js.undefined)
     
-    @scala.inline
-    def setAutoScalingNotificationTypesVarargs(value: XmlStringMaxLen255*): Self = StObject.set(x, "AutoScalingNotificationTypes", js.Array(value :_*))
+    inline def setAutoScalingNotificationTypesVarargs(value: XmlStringMaxLen255*): Self = StObject.set(x, "AutoScalingNotificationTypes", js.Array(value :_*))
   }
 }

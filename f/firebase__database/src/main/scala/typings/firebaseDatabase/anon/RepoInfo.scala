@@ -12,8 +12,7 @@ trait RepoInfo extends StObject {
 }
 object RepoInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     path: typings.firebaseDatabase.pathMod.Path,
     repoInfo: typings.firebaseDatabase.repoInfoMod.RepoInfo
   ): RepoInfo = {
@@ -21,13 +20,10 @@ object RepoInfo {
     __obj.asInstanceOf[RepoInfo]
   }
   
-  @scala.inline
-  implicit class RepoInfoMutableBuilder[Self <: RepoInfo] (val x: Self) extends AnyVal {
+  extension [Self <: RepoInfo](x: Self) {
     
-    @scala.inline
-    def setPath(value: typings.firebaseDatabase.pathMod.Path): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: typings.firebaseDatabase.pathMod.Path): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepoInfo(value: typings.firebaseDatabase.repoInfoMod.RepoInfo): Self = StObject.set(x, "repoInfo", value.asInstanceOf[js.Any])
+    inline def setRepoInfo(value: typings.firebaseDatabase.repoInfoMod.RepoInfo): Self = StObject.set(x, "repoInfo", value.asInstanceOf[js.Any])
   }
 }

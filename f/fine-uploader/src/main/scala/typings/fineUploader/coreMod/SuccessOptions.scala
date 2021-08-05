@@ -54,52 +54,37 @@ trait SuccessOptions extends StObject {
 }
 object SuccessOptions {
   
-  @scala.inline
-  def apply(): SuccessOptions = {
+  inline def apply(): SuccessOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SuccessOptions]
   }
   
-  @scala.inline
-  implicit class SuccessOptionsMutableBuilder[Self <: SuccessOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SuccessOptions](x: Self) {
     
-    @scala.inline
-    def setEndpoint(value: String | js.Function): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpoint(value: String | js.Function): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
+    inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: js.Function): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Function): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setJsonPayload(value: Boolean): Self = StObject.set(x, "jsonPayload", value.asInstanceOf[js.Any])
+    inline def setJsonPayload(value: Boolean): Self = StObject.set(x, "jsonPayload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsonPayloadUndefined: Self = StObject.set(x, "jsonPayload", js.undefined)
+    inline def setJsonPayloadUndefined: Self = StObject.set(x, "jsonPayload", js.undefined)
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setParams(value: js.Function): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Function): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    @scala.inline
-    def setResetOnStatus(value: js.Array[js.Any]): Self = StObject.set(x, "resetOnStatus", value.asInstanceOf[js.Any])
+    inline def setResetOnStatus(value: js.Array[js.Any]): Self = StObject.set(x, "resetOnStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResetOnStatusUndefined: Self = StObject.set(x, "resetOnStatus", js.undefined)
+    inline def setResetOnStatusUndefined: Self = StObject.set(x, "resetOnStatus", js.undefined)
     
-    @scala.inline
-    def setResetOnStatusVarargs(value: js.Any*): Self = StObject.set(x, "resetOnStatus", js.Array(value :_*))
+    inline def setResetOnStatusVarargs(value: js.Any*): Self = StObject.set(x, "resetOnStatus", js.Array(value :_*))
   }
 }

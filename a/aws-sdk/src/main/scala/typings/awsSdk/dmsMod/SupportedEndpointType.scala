@@ -33,43 +33,31 @@ trait SupportedEndpointType extends StObject {
 }
 object SupportedEndpointType {
   
-  @scala.inline
-  def apply(): SupportedEndpointType = {
+  inline def apply(): SupportedEndpointType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SupportedEndpointType]
   }
   
-  @scala.inline
-  implicit class SupportedEndpointTypeMutableBuilder[Self <: SupportedEndpointType] (val x: Self) extends AnyVal {
+  extension [Self <: SupportedEndpointType](x: Self) {
     
-    @scala.inline
-    def setEndpointType(value: ReplicationEndpointTypeValue): Self = StObject.set(x, "EndpointType", value.asInstanceOf[js.Any])
+    inline def setEndpointType(value: ReplicationEndpointTypeValue): Self = StObject.set(x, "EndpointType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointTypeUndefined: Self = StObject.set(x, "EndpointType", js.undefined)
+    inline def setEndpointTypeUndefined: Self = StObject.set(x, "EndpointType", js.undefined)
     
-    @scala.inline
-    def setEngineDisplayName(value: String): Self = StObject.set(x, "EngineDisplayName", value.asInstanceOf[js.Any])
+    inline def setEngineDisplayName(value: String): Self = StObject.set(x, "EngineDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineDisplayNameUndefined: Self = StObject.set(x, "EngineDisplayName", js.undefined)
+    inline def setEngineDisplayNameUndefined: Self = StObject.set(x, "EngineDisplayName", js.undefined)
     
-    @scala.inline
-    def setEngineName(value: String): Self = StObject.set(x, "EngineName", value.asInstanceOf[js.Any])
+    inline def setEngineName(value: String): Self = StObject.set(x, "EngineName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineNameUndefined: Self = StObject.set(x, "EngineName", js.undefined)
+    inline def setEngineNameUndefined: Self = StObject.set(x, "EngineName", js.undefined)
     
-    @scala.inline
-    def setReplicationInstanceEngineMinimumVersion(value: String): Self = StObject.set(x, "ReplicationInstanceEngineMinimumVersion", value.asInstanceOf[js.Any])
+    inline def setReplicationInstanceEngineMinimumVersion(value: String): Self = StObject.set(x, "ReplicationInstanceEngineMinimumVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationInstanceEngineMinimumVersionUndefined: Self = StObject.set(x, "ReplicationInstanceEngineMinimumVersion", js.undefined)
+    inline def setReplicationInstanceEngineMinimumVersionUndefined: Self = StObject.set(x, "ReplicationInstanceEngineMinimumVersion", js.undefined)
     
-    @scala.inline
-    def setSupportsCDC(value: Boolean): Self = StObject.set(x, "SupportsCDC", value.asInstanceOf[js.Any])
+    inline def setSupportsCDC(value: Boolean): Self = StObject.set(x, "SupportsCDC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsCDCUndefined: Self = StObject.set(x, "SupportsCDC", js.undefined)
+    inline def setSupportsCDCUndefined: Self = StObject.set(x, "SupportsCDC", js.undefined)
   }
 }

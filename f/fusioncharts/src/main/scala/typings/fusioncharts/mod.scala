@@ -33,20 +33,15 @@ object mod extends Shortcut {
   trait ChartDataFormats extends StObject
   object ChartDataFormats {
     
-    @scala.inline
-    def csv: typings.fusioncharts.fusionchartsStrings.csv = "csv".asInstanceOf[typings.fusioncharts.fusionchartsStrings.csv]
+    inline def csv: typings.fusioncharts.fusionchartsStrings.csv = "csv".asInstanceOf[typings.fusioncharts.fusionchartsStrings.csv]
     
-    @scala.inline
-    def json: typings.fusioncharts.fusionchartsStrings.json = "json".asInstanceOf[typings.fusioncharts.fusionchartsStrings.json]
+    inline def json: typings.fusioncharts.fusionchartsStrings.json = "json".asInstanceOf[typings.fusioncharts.fusionchartsStrings.json]
     
-    @scala.inline
-    def jsonurl: typings.fusioncharts.fusionchartsStrings.jsonurl = "jsonurl".asInstanceOf[typings.fusioncharts.fusionchartsStrings.jsonurl]
+    inline def jsonurl: typings.fusioncharts.fusionchartsStrings.jsonurl = "jsonurl".asInstanceOf[typings.fusioncharts.fusionchartsStrings.jsonurl]
     
-    @scala.inline
-    def xml: typings.fusioncharts.fusionchartsStrings.xml = "xml".asInstanceOf[typings.fusioncharts.fusionchartsStrings.xml]
+    inline def xml: typings.fusioncharts.fusionchartsStrings.xml = "xml".asInstanceOf[typings.fusioncharts.fusionchartsStrings.xml]
     
-    @scala.inline
-    def xmlurl: typings.fusioncharts.fusionchartsStrings.xmlurl = "xmlurl".asInstanceOf[typings.fusioncharts.fusionchartsStrings.xmlurl]
+    inline def xmlurl: typings.fusioncharts.fusionchartsStrings.xmlurl = "xmlurl".asInstanceOf[typings.fusioncharts.fusionchartsStrings.xmlurl]
   }
   
   trait ChartObject extends StObject {
@@ -149,302 +144,204 @@ object mod extends Shortcut {
   }
   object ChartObject {
     
-    @scala.inline
-    def apply(): ChartObject = {
+    inline def apply(): ChartObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ChartObject]
     }
     
-    @scala.inline
-    implicit class ChartObjectMutableBuilder[Self <: ChartObject] (val x: Self) extends AnyVal {
+    extension [Self <: ChartObject](x: Self) {
       
-      @scala.inline
-      def setBaseChartMessageColor(value: String): Self = StObject.set(x, "baseChartMessageColor", value.asInstanceOf[js.Any])
+      inline def setBaseChartMessageColor(value: String): Self = StObject.set(x, "baseChartMessageColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseChartMessageColorUndefined: Self = StObject.set(x, "baseChartMessageColor", js.undefined)
+      inline def setBaseChartMessageColorUndefined: Self = StObject.set(x, "baseChartMessageColor", js.undefined)
       
-      @scala.inline
-      def setBaseChartMessageFont(value: String): Self = StObject.set(x, "baseChartMessageFont", value.asInstanceOf[js.Any])
+      inline def setBaseChartMessageFont(value: String): Self = StObject.set(x, "baseChartMessageFont", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseChartMessageFontSize(value: String): Self = StObject.set(x, "baseChartMessageFontSize", value.asInstanceOf[js.Any])
+      inline def setBaseChartMessageFontSize(value: String): Self = StObject.set(x, "baseChartMessageFontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseChartMessageFontSizeUndefined: Self = StObject.set(x, "baseChartMessageFontSize", js.undefined)
+      inline def setBaseChartMessageFontSizeUndefined: Self = StObject.set(x, "baseChartMessageFontSize", js.undefined)
       
-      @scala.inline
-      def setBaseChartMessageFontUndefined: Self = StObject.set(x, "baseChartMessageFont", js.undefined)
+      inline def setBaseChartMessageFontUndefined: Self = StObject.set(x, "baseChartMessageFont", js.undefined)
       
-      @scala.inline
-      def setBaseChartMessageImageHAlign(value: ImageHAlign): Self = StObject.set(x, "baseChartMessageImageHAlign", value.asInstanceOf[js.Any])
+      inline def setBaseChartMessageImageHAlign(value: ImageHAlign): Self = StObject.set(x, "baseChartMessageImageHAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseChartMessageImageHAlignUndefined: Self = StObject.set(x, "baseChartMessageImageHAlign", js.undefined)
+      inline def setBaseChartMessageImageHAlignUndefined: Self = StObject.set(x, "baseChartMessageImageHAlign", js.undefined)
       
-      @scala.inline
-      def setContainerBackgroundColor(value: String): Self = StObject.set(x, "containerBackgroundColor", value.asInstanceOf[js.Any])
+      inline def setContainerBackgroundColor(value: String): Self = StObject.set(x, "containerBackgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerBackgroundColorUndefined: Self = StObject.set(x, "containerBackgroundColor", js.undefined)
+      inline def setContainerBackgroundColorUndefined: Self = StObject.set(x, "containerBackgroundColor", js.undefined)
       
-      @scala.inline
-      def setContainerBackgroundOpacity(value: Double): Self = StObject.set(x, "containerBackgroundOpacity", value.asInstanceOf[js.Any])
+      inline def setContainerBackgroundOpacity(value: Double): Self = StObject.set(x, "containerBackgroundOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerBackgroundOpacityUndefined: Self = StObject.set(x, "containerBackgroundOpacity", js.undefined)
+      inline def setContainerBackgroundOpacityUndefined: Self = StObject.set(x, "containerBackgroundOpacity", js.undefined)
       
-      @scala.inline
-      def setContainerClassName(value: String): Self = StObject.set(x, "containerClassName", value.asInstanceOf[js.Any])
+      inline def setContainerClassName(value: String): Self = StObject.set(x, "containerClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerClassNameUndefined: Self = StObject.set(x, "containerClassName", js.undefined)
+      inline def setContainerClassNameUndefined: Self = StObject.set(x, "containerClassName", js.undefined)
       
-      @scala.inline
-      def setDataEmptyMessage(value: String): Self = StObject.set(x, "dataEmptyMessage", value.asInstanceOf[js.Any])
+      inline def setDataEmptyMessage(value: String): Self = StObject.set(x, "dataEmptyMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataEmptyMessageImageAlpha(value: Double): Self = StObject.set(x, "dataEmptyMessageImageAlpha", value.asInstanceOf[js.Any])
+      inline def setDataEmptyMessageImageAlpha(value: Double): Self = StObject.set(x, "dataEmptyMessageImageAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataEmptyMessageImageAlphaUndefined: Self = StObject.set(x, "dataEmptyMessageImageAlpha", js.undefined)
+      inline def setDataEmptyMessageImageAlphaUndefined: Self = StObject.set(x, "dataEmptyMessageImageAlpha", js.undefined)
       
-      @scala.inline
-      def setDataEmptyMessageImageHAlign(value: ImageHAlign): Self = StObject.set(x, "dataEmptyMessageImageHAlign", value.asInstanceOf[js.Any])
+      inline def setDataEmptyMessageImageHAlign(value: ImageHAlign): Self = StObject.set(x, "dataEmptyMessageImageHAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataEmptyMessageImageHAlignUndefined: Self = StObject.set(x, "dataEmptyMessageImageHAlign", js.undefined)
+      inline def setDataEmptyMessageImageHAlignUndefined: Self = StObject.set(x, "dataEmptyMessageImageHAlign", js.undefined)
       
-      @scala.inline
-      def setDataEmptyMessageImageScale(value: Double): Self = StObject.set(x, "dataEmptyMessageImageScale", value.asInstanceOf[js.Any])
+      inline def setDataEmptyMessageImageScale(value: Double): Self = StObject.set(x, "dataEmptyMessageImageScale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataEmptyMessageImageScaleUndefined: Self = StObject.set(x, "dataEmptyMessageImageScale", js.undefined)
+      inline def setDataEmptyMessageImageScaleUndefined: Self = StObject.set(x, "dataEmptyMessageImageScale", js.undefined)
       
-      @scala.inline
-      def setDataEmptyMessageImageVAlign(value: ImageVAlign): Self = StObject.set(x, "dataEmptyMessageImageVAlign", value.asInstanceOf[js.Any])
+      inline def setDataEmptyMessageImageVAlign(value: ImageVAlign): Self = StObject.set(x, "dataEmptyMessageImageVAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataEmptyMessageImageVAlignUndefined: Self = StObject.set(x, "dataEmptyMessageImageVAlign", js.undefined)
+      inline def setDataEmptyMessageImageVAlignUndefined: Self = StObject.set(x, "dataEmptyMessageImageVAlign", js.undefined)
       
-      @scala.inline
-      def setDataEmptyMessageUndefined: Self = StObject.set(x, "dataEmptyMessage", js.undefined)
+      inline def setDataEmptyMessageUndefined: Self = StObject.set(x, "dataEmptyMessage", js.undefined)
       
-      @scala.inline
-      def setDataFormat(value: ChartDataFormats): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
+      inline def setDataFormat(value: ChartDataFormats): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataFormatUndefined: Self = StObject.set(x, "dataFormat", js.undefined)
+      inline def setDataFormatUndefined: Self = StObject.set(x, "dataFormat", js.undefined)
       
-      @scala.inline
-      def setDataInvalidMessage(value: String): Self = StObject.set(x, "dataInvalidMessage", value.asInstanceOf[js.Any])
+      inline def setDataInvalidMessage(value: String): Self = StObject.set(x, "dataInvalidMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataInvalidMessageImageAlpha(value: Double): Self = StObject.set(x, "dataInvalidMessageImageAlpha", value.asInstanceOf[js.Any])
+      inline def setDataInvalidMessageImageAlpha(value: Double): Self = StObject.set(x, "dataInvalidMessageImageAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataInvalidMessageImageAlphaUndefined: Self = StObject.set(x, "dataInvalidMessageImageAlpha", js.undefined)
+      inline def setDataInvalidMessageImageAlphaUndefined: Self = StObject.set(x, "dataInvalidMessageImageAlpha", js.undefined)
       
-      @scala.inline
-      def setDataInvalidMessageImageHAlign(value: ImageHAlign): Self = StObject.set(x, "dataInvalidMessageImageHAlign", value.asInstanceOf[js.Any])
+      inline def setDataInvalidMessageImageHAlign(value: ImageHAlign): Self = StObject.set(x, "dataInvalidMessageImageHAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataInvalidMessageImageHAlignUndefined: Self = StObject.set(x, "dataInvalidMessageImageHAlign", js.undefined)
+      inline def setDataInvalidMessageImageHAlignUndefined: Self = StObject.set(x, "dataInvalidMessageImageHAlign", js.undefined)
       
-      @scala.inline
-      def setDataInvalidMessageImageScale(value: Double): Self = StObject.set(x, "dataInvalidMessageImageScale", value.asInstanceOf[js.Any])
+      inline def setDataInvalidMessageImageScale(value: Double): Self = StObject.set(x, "dataInvalidMessageImageScale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataInvalidMessageImageScaleUndefined: Self = StObject.set(x, "dataInvalidMessageImageScale", js.undefined)
+      inline def setDataInvalidMessageImageScaleUndefined: Self = StObject.set(x, "dataInvalidMessageImageScale", js.undefined)
       
-      @scala.inline
-      def setDataInvalidMessageImageVAlign(value: ImageVAlign): Self = StObject.set(x, "dataInvalidMessageImageVAlign", value.asInstanceOf[js.Any])
+      inline def setDataInvalidMessageImageVAlign(value: ImageVAlign): Self = StObject.set(x, "dataInvalidMessageImageVAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataInvalidMessageImageVAlignUndefined: Self = StObject.set(x, "dataInvalidMessageImageVAlign", js.undefined)
+      inline def setDataInvalidMessageImageVAlignUndefined: Self = StObject.set(x, "dataInvalidMessageImageVAlign", js.undefined)
       
-      @scala.inline
-      def setDataInvalidMessageUndefined: Self = StObject.set(x, "dataInvalidMessage", js.undefined)
+      inline def setDataInvalidMessageUndefined: Self = StObject.set(x, "dataInvalidMessage", js.undefined)
       
-      @scala.inline
-      def setDataLoadErrorMessage(value: String): Self = StObject.set(x, "dataLoadErrorMessage", value.asInstanceOf[js.Any])
+      inline def setDataLoadErrorMessage(value: String): Self = StObject.set(x, "dataLoadErrorMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataLoadErrorMessageImageAlpha(value: Double): Self = StObject.set(x, "dataLoadErrorMessageImageAlpha", value.asInstanceOf[js.Any])
+      inline def setDataLoadErrorMessageImageAlpha(value: Double): Self = StObject.set(x, "dataLoadErrorMessageImageAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataLoadErrorMessageImageAlphaUndefined: Self = StObject.set(x, "dataLoadErrorMessageImageAlpha", js.undefined)
+      inline def setDataLoadErrorMessageImageAlphaUndefined: Self = StObject.set(x, "dataLoadErrorMessageImageAlpha", js.undefined)
       
-      @scala.inline
-      def setDataLoadErrorMessageImageScale(value: Double): Self = StObject.set(x, "dataLoadErrorMessageImageScale", value.asInstanceOf[js.Any])
+      inline def setDataLoadErrorMessageImageScale(value: Double): Self = StObject.set(x, "dataLoadErrorMessageImageScale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataLoadErrorMessageImageScaleUndefined: Self = StObject.set(x, "dataLoadErrorMessageImageScale", js.undefined)
+      inline def setDataLoadErrorMessageImageScaleUndefined: Self = StObject.set(x, "dataLoadErrorMessageImageScale", js.undefined)
       
-      @scala.inline
-      def setDataLoadErrorMessageImageVAlign(value: ImageVAlign): Self = StObject.set(x, "dataLoadErrorMessageImageVAlign", value.asInstanceOf[js.Any])
+      inline def setDataLoadErrorMessageImageVAlign(value: ImageVAlign): Self = StObject.set(x, "dataLoadErrorMessageImageVAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataLoadErrorMessageImageVAlignUndefined: Self = StObject.set(x, "dataLoadErrorMessageImageVAlign", js.undefined)
+      inline def setDataLoadErrorMessageImageVAlignUndefined: Self = StObject.set(x, "dataLoadErrorMessageImageVAlign", js.undefined)
       
-      @scala.inline
-      def setDataLoadErrorMessageUndefined: Self = StObject.set(x, "dataLoadErrorMessage", js.undefined)
+      inline def setDataLoadErrorMessageUndefined: Self = StObject.set(x, "dataLoadErrorMessage", js.undefined)
       
-      @scala.inline
-      def setDataLoadStartMessage(value: String): Self = StObject.set(x, "dataLoadStartMessage", value.asInstanceOf[js.Any])
+      inline def setDataLoadStartMessage(value: String): Self = StObject.set(x, "dataLoadStartMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataLoadStartMessageImageAlpha(value: Double): Self = StObject.set(x, "dataLoadStartMessageImageAlpha", value.asInstanceOf[js.Any])
+      inline def setDataLoadStartMessageImageAlpha(value: Double): Self = StObject.set(x, "dataLoadStartMessageImageAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataLoadStartMessageImageAlphaUndefined: Self = StObject.set(x, "dataLoadStartMessageImageAlpha", js.undefined)
+      inline def setDataLoadStartMessageImageAlphaUndefined: Self = StObject.set(x, "dataLoadStartMessageImageAlpha", js.undefined)
       
-      @scala.inline
-      def setDataLoadStartMessageImageHAlign(value: ImageHAlign): Self = StObject.set(x, "dataLoadStartMessageImageHAlign", value.asInstanceOf[js.Any])
+      inline def setDataLoadStartMessageImageHAlign(value: ImageHAlign): Self = StObject.set(x, "dataLoadStartMessageImageHAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataLoadStartMessageImageHAlignUndefined: Self = StObject.set(x, "dataLoadStartMessageImageHAlign", js.undefined)
+      inline def setDataLoadStartMessageImageHAlignUndefined: Self = StObject.set(x, "dataLoadStartMessageImageHAlign", js.undefined)
       
-      @scala.inline
-      def setDataLoadStartMessageImageScale(value: Double): Self = StObject.set(x, "dataLoadStartMessageImageScale", value.asInstanceOf[js.Any])
+      inline def setDataLoadStartMessageImageScale(value: Double): Self = StObject.set(x, "dataLoadStartMessageImageScale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataLoadStartMessageImageScaleUndefined: Self = StObject.set(x, "dataLoadStartMessageImageScale", js.undefined)
+      inline def setDataLoadStartMessageImageScaleUndefined: Self = StObject.set(x, "dataLoadStartMessageImageScale", js.undefined)
       
-      @scala.inline
-      def setDataLoadStartMessageImageVAlign(value: ImageVAlign): Self = StObject.set(x, "dataLoadStartMessageImageVAlign", value.asInstanceOf[js.Any])
+      inline def setDataLoadStartMessageImageVAlign(value: ImageVAlign): Self = StObject.set(x, "dataLoadStartMessageImageVAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataLoadStartMessageImageVAlignUndefined: Self = StObject.set(x, "dataLoadStartMessageImageVAlign", js.undefined)
+      inline def setDataLoadStartMessageImageVAlignUndefined: Self = StObject.set(x, "dataLoadStartMessageImageVAlign", js.undefined)
       
-      @scala.inline
-      def setDataLoadStartMessageUndefined: Self = StObject.set(x, "dataLoadStartMessage", js.undefined)
+      inline def setDataLoadStartMessageUndefined: Self = StObject.set(x, "dataLoadStartMessage", js.undefined)
       
-      @scala.inline
-      def setDataSource(value: String | js.Object): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: String | js.Object): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+      inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
       
-      @scala.inline
-      def setEvents(value: js.Object): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: js.Object): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+      inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setLink(value: js.Object): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+      inline def setLink(value: js.Object): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+      inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
       
-      @scala.inline
-      def setLoadMessage(value: String): Self = StObject.set(x, "loadMessage", value.asInstanceOf[js.Any])
+      inline def setLoadMessage(value: String): Self = StObject.set(x, "loadMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadMessageImageAlpha(value: Double): Self = StObject.set(x, "loadMessageImageAlpha", value.asInstanceOf[js.Any])
+      inline def setLoadMessageImageAlpha(value: Double): Self = StObject.set(x, "loadMessageImageAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadMessageImageAlphaUndefined: Self = StObject.set(x, "loadMessageImageAlpha", js.undefined)
+      inline def setLoadMessageImageAlphaUndefined: Self = StObject.set(x, "loadMessageImageAlpha", js.undefined)
       
-      @scala.inline
-      def setLoadMessageImageHAlign(value: ImageHAlign): Self = StObject.set(x, "loadMessageImageHAlign", value.asInstanceOf[js.Any])
+      inline def setLoadMessageImageHAlign(value: ImageHAlign): Self = StObject.set(x, "loadMessageImageHAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadMessageImageHAlignUndefined: Self = StObject.set(x, "loadMessageImageHAlign", js.undefined)
+      inline def setLoadMessageImageHAlignUndefined: Self = StObject.set(x, "loadMessageImageHAlign", js.undefined)
       
-      @scala.inline
-      def setLoadMessageImageScale(value: Double): Self = StObject.set(x, "loadMessageImageScale", value.asInstanceOf[js.Any])
+      inline def setLoadMessageImageScale(value: Double): Self = StObject.set(x, "loadMessageImageScale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadMessageImageScaleUndefined: Self = StObject.set(x, "loadMessageImageScale", js.undefined)
+      inline def setLoadMessageImageScaleUndefined: Self = StObject.set(x, "loadMessageImageScale", js.undefined)
       
-      @scala.inline
-      def setLoadMessageImageVAlign(value: ImageVAlign): Self = StObject.set(x, "loadMessageImageVAlign", value.asInstanceOf[js.Any])
+      inline def setLoadMessageImageVAlign(value: ImageVAlign): Self = StObject.set(x, "loadMessageImageVAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadMessageImageVAlignUndefined: Self = StObject.set(x, "loadMessageImageVAlign", js.undefined)
+      inline def setLoadMessageImageVAlignUndefined: Self = StObject.set(x, "loadMessageImageVAlign", js.undefined)
       
-      @scala.inline
-      def setLoadMessageUndefined: Self = StObject.set(x, "loadMessage", js.undefined)
+      inline def setLoadMessageUndefined: Self = StObject.set(x, "loadMessage", js.undefined)
       
-      @scala.inline
-      def setRenderAt(value: String): Self = StObject.set(x, "renderAt", value.asInstanceOf[js.Any])
+      inline def setRenderAt(value: String): Self = StObject.set(x, "renderAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderAtUndefined: Self = StObject.set(x, "renderAt", js.undefined)
+      inline def setRenderAtUndefined: Self = StObject.set(x, "renderAt", js.undefined)
       
-      @scala.inline
-      def setRenderErrorMessage(value: String): Self = StObject.set(x, "renderErrorMessage", value.asInstanceOf[js.Any])
+      inline def setRenderErrorMessage(value: String): Self = StObject.set(x, "renderErrorMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderErrorMessageImageAlpha(value: Double): Self = StObject.set(x, "renderErrorMessageImageAlpha", value.asInstanceOf[js.Any])
+      inline def setRenderErrorMessageImageAlpha(value: Double): Self = StObject.set(x, "renderErrorMessageImageAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderErrorMessageImageAlphaUndefined: Self = StObject.set(x, "renderErrorMessageImageAlpha", js.undefined)
+      inline def setRenderErrorMessageImageAlphaUndefined: Self = StObject.set(x, "renderErrorMessageImageAlpha", js.undefined)
       
-      @scala.inline
-      def setRenderErrorMessageImageHAlign(value: ImageHAlign): Self = StObject.set(x, "renderErrorMessageImageHAlign", value.asInstanceOf[js.Any])
+      inline def setRenderErrorMessageImageHAlign(value: ImageHAlign): Self = StObject.set(x, "renderErrorMessageImageHAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderErrorMessageImageHAlignUndefined: Self = StObject.set(x, "renderErrorMessageImageHAlign", js.undefined)
+      inline def setRenderErrorMessageImageHAlignUndefined: Self = StObject.set(x, "renderErrorMessageImageHAlign", js.undefined)
       
-      @scala.inline
-      def setRenderErrorMessageImageScale(value: Double): Self = StObject.set(x, "renderErrorMessageImageScale", value.asInstanceOf[js.Any])
+      inline def setRenderErrorMessageImageScale(value: Double): Self = StObject.set(x, "renderErrorMessageImageScale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderErrorMessageImageScaleUndefined: Self = StObject.set(x, "renderErrorMessageImageScale", js.undefined)
+      inline def setRenderErrorMessageImageScaleUndefined: Self = StObject.set(x, "renderErrorMessageImageScale", js.undefined)
       
-      @scala.inline
-      def setRenderErrorMessageImageVAlign(value: ImageVAlign): Self = StObject.set(x, "renderErrorMessageImageVAlign", value.asInstanceOf[js.Any])
+      inline def setRenderErrorMessageImageVAlign(value: ImageVAlign): Self = StObject.set(x, "renderErrorMessageImageVAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderErrorMessageImageVAlignUndefined: Self = StObject.set(x, "renderErrorMessageImageVAlign", js.undefined)
+      inline def setRenderErrorMessageImageVAlignUndefined: Self = StObject.set(x, "renderErrorMessageImageVAlign", js.undefined)
       
-      @scala.inline
-      def setRenderErrorMessageUndefined: Self = StObject.set(x, "renderErrorMessage", js.undefined)
+      inline def setRenderErrorMessageUndefined: Self = StObject.set(x, "renderErrorMessage", js.undefined)
       
-      @scala.inline
-      def setShowChartLoadingMessage(value: Boolean): Self = StObject.set(x, "showChartLoadingMessage", value.asInstanceOf[js.Any])
+      inline def setShowChartLoadingMessage(value: Boolean): Self = StObject.set(x, "showChartLoadingMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowChartLoadingMessageUndefined: Self = StObject.set(x, "showChartLoadingMessage", js.undefined)
+      inline def setShowChartLoadingMessageUndefined: Self = StObject.set(x, "showChartLoadingMessage", js.undefined)
       
-      @scala.inline
-      def setShowDataLoadingMessage(value: Boolean): Self = StObject.set(x, "showDataLoadingMessage", value.asInstanceOf[js.Any])
+      inline def setShowDataLoadingMessage(value: Boolean): Self = StObject.set(x, "showDataLoadingMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowDataLoadingMessageUndefined: Self = StObject.set(x, "showDataLoadingMessage", js.undefined)
+      inline def setShowDataLoadingMessageUndefined: Self = StObject.set(x, "showDataLoadingMessage", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeNotSupportedMessage(value: String): Self = StObject.set(x, "typeNotSupportedMessage", value.asInstanceOf[js.Any])
+      inline def setTypeNotSupportedMessage(value: String): Self = StObject.set(x, "typeNotSupportedMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeNotSupportedMessageUndefined: Self = StObject.set(x, "typeNotSupportedMessage", js.undefined)
+      inline def setTypeNotSupportedMessageUndefined: Self = StObject.set(x, "typeNotSupportedMessage", js.undefined)
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -485,8 +382,7 @@ object mod extends Shortcut {
   }
   object EventObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cancelled: Boolean,
       detachHandler: () => Unit,
       detached: Boolean,
@@ -502,35 +398,25 @@ object mod extends Shortcut {
       __obj.asInstanceOf[EventObject]
     }
     
-    @scala.inline
-    implicit class EventObjectMutableBuilder[Self <: EventObject] (val x: Self) extends AnyVal {
+    extension [Self <: EventObject](x: Self) {
       
-      @scala.inline
-      def setCancelled(value: Boolean): Self = StObject.set(x, "cancelled", value.asInstanceOf[js.Any])
+      inline def setCancelled(value: Boolean): Self = StObject.set(x, "cancelled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetachHandler(value: () => Unit): Self = StObject.set(x, "detachHandler", js.Any.fromFunction0(value))
+      inline def setDetachHandler(value: () => Unit): Self = StObject.set(x, "detachHandler", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDetached(value: Boolean): Self = StObject.set(x, "detached", value.asInstanceOf[js.Any])
+      inline def setDetached(value: Boolean): Self = StObject.set(x, "detached", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventId(value: Double): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
+      inline def setEventId(value: Double): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
+      inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPrevented(value: Boolean): Self = StObject.set(x, "prevented", value.asInstanceOf[js.Any])
+      inline def setPrevented(value: Boolean): Self = StObject.set(x, "prevented", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSender(value: FusionCharts): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+      inline def setSender(value: FusionCharts): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
+      inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -796,14 +682,11 @@ object mod extends Shortcut {
   trait ImageHAlign extends StObject
   object ImageHAlign {
     
-    @scala.inline
-    def left: typings.fusioncharts.fusionchartsStrings.left = "left".asInstanceOf[typings.fusioncharts.fusionchartsStrings.left]
+    inline def left: typings.fusioncharts.fusionchartsStrings.left = "left".asInstanceOf[typings.fusioncharts.fusionchartsStrings.left]
     
-    @scala.inline
-    def middle: typings.fusioncharts.fusionchartsStrings.middle = "middle".asInstanceOf[typings.fusioncharts.fusionchartsStrings.middle]
+    inline def middle: typings.fusioncharts.fusionchartsStrings.middle = "middle".asInstanceOf[typings.fusioncharts.fusionchartsStrings.middle]
     
-    @scala.inline
-    def right: typings.fusioncharts.fusionchartsStrings.right = "right".asInstanceOf[typings.fusioncharts.fusionchartsStrings.right]
+    inline def right: typings.fusioncharts.fusionchartsStrings.right = "right".asInstanceOf[typings.fusioncharts.fusionchartsStrings.right]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -814,14 +697,11 @@ object mod extends Shortcut {
   trait ImageVAlign extends StObject
   object ImageVAlign {
     
-    @scala.inline
-    def bottom: typings.fusioncharts.fusionchartsStrings.bottom = "bottom".asInstanceOf[typings.fusioncharts.fusionchartsStrings.bottom]
+    inline def bottom: typings.fusioncharts.fusionchartsStrings.bottom = "bottom".asInstanceOf[typings.fusioncharts.fusionchartsStrings.bottom]
     
-    @scala.inline
-    def middle: typings.fusioncharts.fusionchartsStrings.middle = "middle".asInstanceOf[typings.fusioncharts.fusionchartsStrings.middle]
+    inline def middle: typings.fusioncharts.fusionchartsStrings.middle = "middle".asInstanceOf[typings.fusioncharts.fusionchartsStrings.middle]
     
-    @scala.inline
-    def top: typings.fusioncharts.fusionchartsStrings.top = "top".asInstanceOf[typings.fusioncharts.fusionchartsStrings.top]
+    inline def top: typings.fusioncharts.fusionchartsStrings.top = "top".asInstanceOf[typings.fusioncharts.fusionchartsStrings.top]
   }
   
   type _To = FusionChartStatic

@@ -20,8 +20,7 @@ trait XSelectedSheetsSupplier
 }
 object XSelectedSheetsSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     SelectedSheets: SafeArray[Double],
     acquire: () => Unit,
     getSelectedSheets: () => SafeArray[Double],
@@ -32,13 +31,10 @@ object XSelectedSheetsSupplier {
     __obj.asInstanceOf[XSelectedSheetsSupplier]
   }
   
-  @scala.inline
-  implicit class XSelectedSheetsSupplierMutableBuilder[Self <: XSelectedSheetsSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XSelectedSheetsSupplier](x: Self) {
     
-    @scala.inline
-    def setGetSelectedSheets(value: () => SafeArray[Double]): Self = StObject.set(x, "getSelectedSheets", js.Any.fromFunction0(value))
+    inline def setGetSelectedSheets(value: () => SafeArray[Double]): Self = StObject.set(x, "getSelectedSheets", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSelectedSheets(value: SafeArray[Double]): Self = StObject.set(x, "SelectedSheets", value.asInstanceOf[js.Any])
+    inline def setSelectedSheets(value: SafeArray[Double]): Self = StObject.set(x, "SelectedSheets", value.asInstanceOf[js.Any])
   }
 }

@@ -48,8 +48,7 @@ trait StartPiiEntitiesDetectionJobRequest extends StObject {
 }
 object StartPiiEntitiesDetectionJobRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DataAccessRoleArn: IamRoleArn,
     InputDataConfig: InputDataConfig,
     LanguageCode: LanguageCode,
@@ -60,40 +59,28 @@ object StartPiiEntitiesDetectionJobRequest {
     __obj.asInstanceOf[StartPiiEntitiesDetectionJobRequest]
   }
   
-  @scala.inline
-  implicit class StartPiiEntitiesDetectionJobRequestMutableBuilder[Self <: StartPiiEntitiesDetectionJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartPiiEntitiesDetectionJobRequest](x: Self) {
     
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestTokenString): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: ClientRequestTokenString): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
+    inline def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
     
-    @scala.inline
-    def setDataAccessRoleArn(value: IamRoleArn): Self = StObject.set(x, "DataAccessRoleArn", value.asInstanceOf[js.Any])
+    inline def setDataAccessRoleArn(value: IamRoleArn): Self = StObject.set(x, "DataAccessRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputDataConfig(value: InputDataConfig): Self = StObject.set(x, "InputDataConfig", value.asInstanceOf[js.Any])
+    inline def setInputDataConfig(value: InputDataConfig): Self = StObject.set(x, "InputDataConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobName(value: JobName): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
+    inline def setJobName(value: JobName): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobNameUndefined: Self = StObject.set(x, "JobName", js.undefined)
+    inline def setJobNameUndefined: Self = StObject.set(x, "JobName", js.undefined)
     
-    @scala.inline
-    def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: PiiEntitiesDetectionMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: PiiEntitiesDetectionMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputDataConfig(value: OutputDataConfig): Self = StObject.set(x, "OutputDataConfig", value.asInstanceOf[js.Any])
+    inline def setOutputDataConfig(value: OutputDataConfig): Self = StObject.set(x, "OutputDataConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedactionConfig(value: RedactionConfig): Self = StObject.set(x, "RedactionConfig", value.asInstanceOf[js.Any])
+    inline def setRedactionConfig(value: RedactionConfig): Self = StObject.set(x, "RedactionConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedactionConfigUndefined: Self = StObject.set(x, "RedactionConfig", js.undefined)
+    inline def setRedactionConfigUndefined: Self = StObject.set(x, "RedactionConfig", js.undefined)
   }
 }

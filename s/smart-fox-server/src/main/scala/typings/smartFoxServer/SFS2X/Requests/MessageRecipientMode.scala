@@ -14,19 +14,15 @@ trait MessageRecipientMode extends StObject {
 }
 object MessageRecipientMode {
   
-  @scala.inline
-  def apply(mode: Double, target: js.Any): MessageRecipientMode = {
+  inline def apply(mode: Double, target: js.Any): MessageRecipientMode = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageRecipientMode]
   }
   
-  @scala.inline
-  implicit class MessageRecipientModeMutableBuilder[Self <: MessageRecipientMode] (val x: Self) extends AnyVal {
+  extension [Self <: MessageRecipientMode](x: Self) {
     
-    @scala.inline
-    def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

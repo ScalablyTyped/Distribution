@@ -20,10 +20,8 @@ object mod {
   		});
   	```
   	*/
-  @scala.inline
-  def apply[ValueType](): js.Function1[/* value */ ValueType, js.Promise[ValueType]] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function1[/* value */ ValueType, js.Promise[ValueType]]]
-  @scala.inline
-  def apply[ValueType](logger: Logger): js.Function1[/* value */ ValueType, js.Promise[ValueType]] = ^.asInstanceOf[js.Dynamic].apply(logger.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* value */ ValueType, js.Promise[ValueType]]]
+  inline def apply[ValueType](): js.Function1[/* value */ ValueType, js.Promise[ValueType]] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function1[/* value */ ValueType, js.Promise[ValueType]]]
+  inline def apply[ValueType](logger: Logger): js.Function1[/* value */ ValueType, js.Promise[ValueType]] = ^.asInstanceOf[js.Dynamic].apply(logger.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* value */ ValueType, js.Promise[ValueType]]]
   
   @JSImport("p-log", JSImport.Namespace)
   @js.native
@@ -51,13 +49,10 @@ object mod {
   		});
   	```
   	*/
-  @scala.inline
-  def `catch`(): js.Function1[/* error */ js.Any, js.Promise[scala.Nothing]] = ^.asInstanceOf[js.Dynamic].applyDynamic("catch")().asInstanceOf[js.Function1[/* error */ js.Any, js.Promise[scala.Nothing]]]
-  @scala.inline
-  def `catch`(logger: Logger): js.Function1[/* error */ js.Any, js.Promise[scala.Nothing]] = ^.asInstanceOf[js.Dynamic].applyDynamic("catch")(logger.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* error */ js.Any, js.Promise[scala.Nothing]]]
+  inline def `catch`(): js.Function1[/* error */ js.Any, js.Promise[scala.Nothing]] = ^.asInstanceOf[js.Dynamic].applyDynamic("catch")().asInstanceOf[js.Function1[/* error */ js.Any, js.Promise[scala.Nothing]]]
+  inline def `catch`(logger: Logger): js.Function1[/* error */ js.Any, js.Promise[scala.Nothing]] = ^.asInstanceOf[js.Dynamic].applyDynamic("catch")(logger.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* error */ js.Any, js.Promise[scala.Nothing]]]
   
-  @scala.inline
-  def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pLog */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pLog */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   type Logger = js.Function1[/* message */ js.Any, Unit]
 }

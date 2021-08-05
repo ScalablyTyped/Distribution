@@ -14,22 +14,17 @@ trait CacheFrom extends StObject {
 }
 object CacheFrom {
   
-  @scala.inline
-  def apply(): CacheFrom = {
+  inline def apply(): CacheFrom = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CacheFrom]
   }
   
-  @scala.inline
-  implicit class CacheFromMutableBuilder[Self <: CacheFrom] (val x: Self) extends AnyVal {
+  extension [Self <: CacheFrom](x: Self) {
     
-    @scala.inline
-    def setStages(value: js.Array[String]): Self = StObject.set(x, "stages", value.asInstanceOf[js.Any])
+    inline def setStages(value: js.Array[String]): Self = StObject.set(x, "stages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStagesUndefined: Self = StObject.set(x, "stages", js.undefined)
+    inline def setStagesUndefined: Self = StObject.set(x, "stages", js.undefined)
     
-    @scala.inline
-    def setStagesVarargs(value: String*): Self = StObject.set(x, "stages", js.Array(value :_*))
+    inline def setStagesVarargs(value: String*): Self = StObject.set(x, "stages", js.Array(value :_*))
   }
 }

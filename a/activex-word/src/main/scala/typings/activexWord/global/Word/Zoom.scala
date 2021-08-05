@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Zoom")
 @js.native
-class Zoom protected ()
+/* private */ class Zoom ()
   extends StObject
      with typings.activexWord.Word.Zoom {
   
@@ -32,7 +32,7 @@ class Zoom protected ()
   /* CompleteClass */
   var Percentage: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.Zoom_typekey")
   var WordDotZoom_typekey: typings.activexWord.Word.Zoom = js.native
 }

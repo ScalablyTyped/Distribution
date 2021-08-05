@@ -11,16 +11,13 @@ trait PickImpldata extends StObject {
 }
 object PickImpldata {
   
-  @scala.inline
-  def apply(data: js.Any): PickImpldata = {
+  inline def apply(data: js.Any): PickImpldata = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldata]
   }
   
-  @scala.inline
-  implicit class PickImpldataMutableBuilder[Self <: PickImpldata] (val x: Self) extends AnyVal {
+  extension [Self <: PickImpldata](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

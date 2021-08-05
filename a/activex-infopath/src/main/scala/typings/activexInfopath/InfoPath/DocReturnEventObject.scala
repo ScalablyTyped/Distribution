@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DocReturnEventObject extends StObject {
   
-  @JSName("InfoPath.DocReturnEventObject_typekey")
+  /* private */ @JSName("InfoPath.DocReturnEventObject_typekey")
   var InfoPathDotDocReturnEventObject_typekey: DocReturnEventObject
   
   var ReturnStatus: Boolean
@@ -15,8 +15,7 @@ trait DocReturnEventObject extends StObject {
 }
 object DocReturnEventObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     InfoPathDotDocReturnEventObject_typekey: DocReturnEventObject,
     ReturnStatus: Boolean,
     XDocument: _XDocument
@@ -26,16 +25,12 @@ object DocReturnEventObject {
     __obj.asInstanceOf[DocReturnEventObject]
   }
   
-  @scala.inline
-  implicit class DocReturnEventObjectMutableBuilder[Self <: DocReturnEventObject] (val x: Self) extends AnyVal {
+  extension [Self <: DocReturnEventObject](x: Self) {
     
-    @scala.inline
-    def setInfoPathDotDocReturnEventObject_typekey(value: DocReturnEventObject): Self = StObject.set(x, "InfoPath.DocReturnEventObject_typekey", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotDocReturnEventObject_typekey(value: DocReturnEventObject): Self = StObject.set(x, "InfoPath.DocReturnEventObject_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnStatus(value: Boolean): Self = StObject.set(x, "ReturnStatus", value.asInstanceOf[js.Any])
+    inline def setReturnStatus(value: Boolean): Self = StObject.set(x, "ReturnStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXDocument(value: _XDocument): Self = StObject.set(x, "XDocument", value.asInstanceOf[js.Any])
+    inline def setXDocument(value: _XDocument): Self = StObject.set(x, "XDocument", value.asInstanceOf[js.Any])
   }
 }

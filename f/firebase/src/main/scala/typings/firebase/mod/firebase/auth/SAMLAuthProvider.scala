@@ -9,8 +9,7 @@ trait SAMLAuthProvider
      with AuthProvider
 object SAMLAuthProvider {
   
-  @scala.inline
-  def apply(providerId: String): SAMLAuthProvider = {
+  inline def apply(providerId: String): SAMLAuthProvider = {
     val __obj = js.Dynamic.literal(providerId = providerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SAMLAuthProvider]
   }

@@ -13,19 +13,15 @@ trait DeploymentExportResult extends StObject {
 }
 object DeploymentExportResult {
   
-  @scala.inline
-  def apply(): DeploymentExportResult = {
+  inline def apply(): DeploymentExportResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeploymentExportResult]
   }
   
-  @scala.inline
-  implicit class DeploymentExportResultMutableBuilder[Self <: DeploymentExportResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentExportResult](x: Self) {
     
-    @scala.inline
-    def setTemplate(value: js.Any): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: js.Any): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
   }
 }

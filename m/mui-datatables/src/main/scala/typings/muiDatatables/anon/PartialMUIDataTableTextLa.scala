@@ -17,31 +17,23 @@ trait PartialMUIDataTableTextLa extends StObject {
 }
 object PartialMUIDataTableTextLa {
   
-  @scala.inline
-  def apply(): PartialMUIDataTableTextLa = {
+  inline def apply(): PartialMUIDataTableTextLa = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialMUIDataTableTextLa]
   }
   
-  @scala.inline
-  implicit class PartialMUIDataTableTextLaMutableBuilder[Self <: PartialMUIDataTableTextLa] (val x: Self) extends AnyVal {
+  extension [Self <: PartialMUIDataTableTextLa](x: Self) {
     
-    @scala.inline
-    def setColumnHeaderTooltip(value: /* column */ MUIDataTableColumn => String): Self = StObject.set(x, "columnHeaderTooltip", js.Any.fromFunction1(value))
+    inline def setColumnHeaderTooltip(value: /* column */ MUIDataTableColumn => String): Self = StObject.set(x, "columnHeaderTooltip", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setColumnHeaderTooltipUndefined: Self = StObject.set(x, "columnHeaderTooltip", js.undefined)
+    inline def setColumnHeaderTooltipUndefined: Self = StObject.set(x, "columnHeaderTooltip", js.undefined)
     
-    @scala.inline
-    def setNoMatch(value: String | ReactNode): Self = StObject.set(x, "noMatch", value.asInstanceOf[js.Any])
+    inline def setNoMatch(value: String | ReactNode): Self = StObject.set(x, "noMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoMatchUndefined: Self = StObject.set(x, "noMatch", js.undefined)
+    inline def setNoMatchUndefined: Self = StObject.set(x, "noMatch", js.undefined)
     
-    @scala.inline
-    def setToolTip(value: String): Self = StObject.set(x, "toolTip", value.asInstanceOf[js.Any])
+    inline def setToolTip(value: String): Self = StObject.set(x, "toolTip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolTipUndefined: Self = StObject.set(x, "toolTip", js.undefined)
+    inline def setToolTipUndefined: Self = StObject.set(x, "toolTip", js.undefined)
   }
 }

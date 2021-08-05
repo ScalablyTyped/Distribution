@@ -23,34 +23,25 @@ trait DescribeBrokerInstanceOptionsResponse extends StObject {
 }
 object DescribeBrokerInstanceOptionsResponse {
   
-  @scala.inline
-  def apply(): DescribeBrokerInstanceOptionsResponse = {
+  inline def apply(): DescribeBrokerInstanceOptionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeBrokerInstanceOptionsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeBrokerInstanceOptionsResponseMutableBuilder[Self <: DescribeBrokerInstanceOptionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeBrokerInstanceOptionsResponse](x: Self) {
     
-    @scala.inline
-    def setBrokerInstanceOptions(value: listOfBrokerInstanceOption): Self = StObject.set(x, "BrokerInstanceOptions", value.asInstanceOf[js.Any])
+    inline def setBrokerInstanceOptions(value: listOfBrokerInstanceOption): Self = StObject.set(x, "BrokerInstanceOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrokerInstanceOptionsUndefined: Self = StObject.set(x, "BrokerInstanceOptions", js.undefined)
+    inline def setBrokerInstanceOptionsUndefined: Self = StObject.set(x, "BrokerInstanceOptions", js.undefined)
     
-    @scala.inline
-    def setBrokerInstanceOptionsVarargs(value: BrokerInstanceOption*): Self = StObject.set(x, "BrokerInstanceOptions", js.Array(value :_*))
+    inline def setBrokerInstanceOptionsVarargs(value: BrokerInstanceOption*): Self = StObject.set(x, "BrokerInstanceOptions", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxResults(value: integerMin5Max100): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: integerMin5Max100): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

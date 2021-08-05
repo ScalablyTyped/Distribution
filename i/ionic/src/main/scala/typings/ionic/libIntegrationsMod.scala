@@ -27,7 +27,7 @@ object libIntegrationsMod {
        with IIntegration[T] {
     def this(e: IntegrationDeps) = this()
     
-    val e: IntegrationDeps = js.native
+    /* protected */ val e: IntegrationDeps = js.native
     
     def enable(config: ProjectIntegration): js.Promise[Unit] = js.native
   }
@@ -38,17 +38,13 @@ object libIntegrationsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def createFromName(deps: IntegrationDeps, name: IntegrationName): js.Promise[IIntegration[ProjectIntegration]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromName")(deps.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IIntegration[ProjectIntegration]]]
+    inline def createFromName(deps: IntegrationDeps, name: IntegrationName): js.Promise[IIntegration[ProjectIntegration]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromName")(deps.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IIntegration[ProjectIntegration]]]
     
-    @scala.inline
-    def createFromName_capacitor(deps: IntegrationDeps, name: capacitor): js.Promise[Integration] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromName")(deps.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Integration]]
+    inline def createFromName_capacitor(deps: IntegrationDeps, name: capacitor): js.Promise[Integration] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromName")(deps.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Integration]]
     
-    @scala.inline
-    def createFromName_cordova(deps: IntegrationDeps, name: cordova): js.Promise[typings.ionic.integrationsCordovaMod.Integration] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromName")(deps.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.ionic.integrationsCordovaMod.Integration]]
+    inline def createFromName_cordova(deps: IntegrationDeps, name: cordova): js.Promise[typings.ionic.integrationsCordovaMod.Integration] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromName")(deps.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.ionic.integrationsCordovaMod.Integration]]
     
-    @scala.inline
-    def createFromName_enterprise(deps: IntegrationDeps, name: enterprise): js.Promise[typings.ionic.integrationsEnterpriseMod.Integration] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromName")(deps.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.ionic.integrationsEnterpriseMod.Integration]]
+    inline def createFromName_enterprise(deps: IntegrationDeps, name: enterprise): js.Promise[typings.ionic.integrationsEnterpriseMod.Integration] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromName")(deps.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.ionic.integrationsEnterpriseMod.Integration]]
   }
   
   @JSImport("ionic/lib/integrations", "INTEGRATION_NAMES")
@@ -83,26 +79,20 @@ object libIntegrationsMod {
   }
   object IntegrationDeps {
     
-    @scala.inline
-    def apply(config: IConfig, log: ILogger, project: IProject, shell: IShell): IntegrationDeps = {
+    inline def apply(config: IConfig, log: ILogger, project: IProject, shell: IShell): IntegrationDeps = {
       val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], shell = shell.asInstanceOf[js.Any])
       __obj.asInstanceOf[IntegrationDeps]
     }
     
-    @scala.inline
-    implicit class IntegrationDepsMutableBuilder[Self <: IntegrationDeps] (val x: Self) extends AnyVal {
+    extension [Self <: IntegrationDeps](x: Self) {
       
-      @scala.inline
-      def setConfig(value: IConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: IConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLog(value: ILogger): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: ILogger): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProject(value: IProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: IProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShell(value: IShell): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
+      inline def setShell(value: IShell): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
     }
   }
   
@@ -112,20 +102,16 @@ object libIntegrationsMod {
   }
   object IntegrationOptions {
     
-    @scala.inline
-    def apply(): IntegrationOptions = {
+    inline def apply(): IntegrationOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IntegrationOptions]
     }
     
-    @scala.inline
-    implicit class IntegrationOptionsMutableBuilder[Self <: IntegrationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IntegrationOptions](x: Self) {
       
-      @scala.inline
-      def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
+      inline def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
+      inline def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
     }
   }
 }

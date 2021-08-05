@@ -18,28 +18,21 @@ trait ResultFrame extends StObject {
 }
 object ResultFrame {
   
-  @scala.inline
-  def apply(): ResultFrame = {
+  inline def apply(): ResultFrame = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResultFrame]
   }
   
-  @scala.inline
-  implicit class ResultFrameMutableBuilder[Self <: ResultFrame] (val x: Self) extends AnyVal {
+  extension [Self <: ResultFrame](x: Self) {
     
-    @scala.inline
-    def setRecords(value: Records): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
+    inline def setRecords(value: Records): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordsUndefined: Self = StObject.set(x, "records", js.undefined)
+    inline def setRecordsUndefined: Self = StObject.set(x, "records", js.undefined)
     
-    @scala.inline
-    def setRecordsVarargs(value: Record*): Self = StObject.set(x, "records", js.Array(value :_*))
+    inline def setRecordsVarargs(value: Record*): Self = StObject.set(x, "records", js.Array(value :_*))
     
-    @scala.inline
-    def setResultSetMetadata(value: ResultSetMetadata): Self = StObject.set(x, "resultSetMetadata", value.asInstanceOf[js.Any])
+    inline def setResultSetMetadata(value: ResultSetMetadata): Self = StObject.set(x, "resultSetMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultSetMetadataUndefined: Self = StObject.set(x, "resultSetMetadata", js.undefined)
+    inline def setResultSetMetadataUndefined: Self = StObject.set(x, "resultSetMetadata", js.undefined)
   }
 }

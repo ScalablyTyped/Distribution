@@ -31,29 +31,22 @@ object typesStartingPositionMod {
   }
   object StartingPosition {
     
-    @scala.inline
-    def apply(Type: AT_SEQUENCE_NUMBER | AFTER_SEQUENCE_NUMBER | TRIM_HORIZON | LATEST | AT_TIMESTAMP | String): StartingPosition = {
+    inline def apply(Type: AT_SEQUENCE_NUMBER | AFTER_SEQUENCE_NUMBER | TRIM_HORIZON | LATEST | AT_TIMESTAMP | String): StartingPosition = {
       val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
       __obj.asInstanceOf[StartingPosition]
     }
     
-    @scala.inline
-    implicit class StartingPositionMutableBuilder[Self <: StartingPosition] (val x: Self) extends AnyVal {
+    extension [Self <: StartingPosition](x: Self) {
       
-      @scala.inline
-      def setSequenceNumber(value: String): Self = StObject.set(x, "SequenceNumber", value.asInstanceOf[js.Any])
+      inline def setSequenceNumber(value: String): Self = StObject.set(x, "SequenceNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSequenceNumberUndefined: Self = StObject.set(x, "SequenceNumber", js.undefined)
+      inline def setSequenceNumberUndefined: Self = StObject.set(x, "SequenceNumber", js.undefined)
       
-      @scala.inline
-      def setTimestamp(value: Date | String | Double): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Date | String | Double): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
+      inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
       
-      @scala.inline
-      def setType(value: AT_SEQUENCE_NUMBER | AFTER_SEQUENCE_NUMBER | TRIM_HORIZON | LATEST | AT_TIMESTAMP | String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      inline def setType(value: AT_SEQUENCE_NUMBER | AFTER_SEQUENCE_NUMBER | TRIM_HORIZON | LATEST | AT_TIMESTAMP | String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -69,20 +62,16 @@ object typesStartingPositionMod {
   }
   object UnmarshalledStartingPosition {
     
-    @scala.inline
-    def apply(Type: AT_SEQUENCE_NUMBER | AFTER_SEQUENCE_NUMBER | TRIM_HORIZON | LATEST | AT_TIMESTAMP | String): UnmarshalledStartingPosition = {
+    inline def apply(Type: AT_SEQUENCE_NUMBER | AFTER_SEQUENCE_NUMBER | TRIM_HORIZON | LATEST | AT_TIMESTAMP | String): UnmarshalledStartingPosition = {
       val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnmarshalledStartingPosition]
     }
     
-    @scala.inline
-    implicit class UnmarshalledStartingPositionMutableBuilder[Self <: UnmarshalledStartingPosition] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledStartingPosition](x: Self) {
       
-      @scala.inline
-      def setTimestamp(value: Date): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Date): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
+      inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
     }
   }
 }

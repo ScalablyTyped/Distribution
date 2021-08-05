@@ -11,22 +11,17 @@ trait Source extends StObject {
 }
 object Source {
   
-  @scala.inline
-  def apply(): Source = {
+  inline def apply(): Source = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Source]
   }
   
-  @scala.inline
-  implicit class SourceMutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
+  extension [Self <: Source](x: Self) {
     
-    @scala.inline
-    def setFiles(value: js.Array[File]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: js.Array[File]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+    inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    @scala.inline
-    def setFilesVarargs(value: File*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: File*): Self = StObject.set(x, "files", js.Array(value :_*))
   }
 }

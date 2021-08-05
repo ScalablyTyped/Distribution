@@ -20,49 +20,35 @@ trait FileManagerMessagesViews extends StObject {
 }
 object FileManagerMessagesViews {
   
-  @scala.inline
-  def apply(): FileManagerMessagesViews = {
+  inline def apply(): FileManagerMessagesViews = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileManagerMessagesViews]
   }
   
-  @scala.inline
-  implicit class FileManagerMessagesViewsMutableBuilder[Self <: FileManagerMessagesViews] (val x: Self) extends AnyVal {
+  extension [Self <: FileManagerMessagesViews](x: Self) {
     
-    @scala.inline
-    def setDateCreatedField(value: String): Self = StObject.set(x, "dateCreatedField", value.asInstanceOf[js.Any])
+    inline def setDateCreatedField(value: String): Self = StObject.set(x, "dateCreatedField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateCreatedFieldUndefined: Self = StObject.set(x, "dateCreatedField", js.undefined)
+    inline def setDateCreatedFieldUndefined: Self = StObject.set(x, "dateCreatedField", js.undefined)
     
-    @scala.inline
-    def setDateModifiedField(value: String): Self = StObject.set(x, "dateModifiedField", value.asInstanceOf[js.Any])
+    inline def setDateModifiedField(value: String): Self = StObject.set(x, "dateModifiedField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateModifiedFieldUndefined: Self = StObject.set(x, "dateModifiedField", js.undefined)
+    inline def setDateModifiedFieldUndefined: Self = StObject.set(x, "dateModifiedField", js.undefined)
     
-    @scala.inline
-    def setItems(value: String): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: String): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setNameField(value: String): Self = StObject.set(x, "nameField", value.asInstanceOf[js.Any])
+    inline def setNameField(value: String): Self = StObject.set(x, "nameField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameFieldUndefined: Self = StObject.set(x, "nameField", js.undefined)
+    inline def setNameFieldUndefined: Self = StObject.set(x, "nameField", js.undefined)
     
-    @scala.inline
-    def setSizeField(value: String): Self = StObject.set(x, "sizeField", value.asInstanceOf[js.Any])
+    inline def setSizeField(value: String): Self = StObject.set(x, "sizeField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeFieldUndefined: Self = StObject.set(x, "sizeField", js.undefined)
+    inline def setSizeFieldUndefined: Self = StObject.set(x, "sizeField", js.undefined)
     
-    @scala.inline
-    def setTypeField(value: String): Self = StObject.set(x, "typeField", value.asInstanceOf[js.Any])
+    inline def setTypeField(value: String): Self = StObject.set(x, "typeField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeFieldUndefined: Self = StObject.set(x, "typeField", js.undefined)
+    inline def setTypeFieldUndefined: Self = StObject.set(x, "typeField", js.undefined)
   }
 }

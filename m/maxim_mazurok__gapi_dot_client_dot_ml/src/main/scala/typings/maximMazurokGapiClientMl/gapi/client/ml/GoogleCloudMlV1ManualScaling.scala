@@ -14,19 +14,15 @@ trait GoogleCloudMlV1ManualScaling extends StObject {
 }
 object GoogleCloudMlV1ManualScaling {
   
-  @scala.inline
-  def apply(): GoogleCloudMlV1ManualScaling = {
+  inline def apply(): GoogleCloudMlV1ManualScaling = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMlV1ManualScaling]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMlV1ManualScalingMutableBuilder[Self <: GoogleCloudMlV1ManualScaling] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMlV1ManualScaling](x: Self) {
     
-    @scala.inline
-    def setNodes(value: Double): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: Double): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
+    inline def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
   }
 }

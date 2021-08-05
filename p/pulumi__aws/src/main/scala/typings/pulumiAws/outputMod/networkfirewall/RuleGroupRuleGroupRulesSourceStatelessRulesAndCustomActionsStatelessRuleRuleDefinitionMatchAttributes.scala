@@ -58,96 +58,76 @@ trait RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRu
 }
 object RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributes {
   
-  @scala.inline
-  def apply(): RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributes = {
+  inline def apply(): RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributes]
   }
   
-  @scala.inline
-  implicit class RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesMutableBuilder[Self <: RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributes](x: Self) {
     
-    @scala.inline
-    def setDestinationPorts(
+    inline def setDestinationPorts(
       value: js.Array[
           RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestinationPort
         ]
     ): Self = StObject.set(x, "destinationPorts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationPortsUndefined: Self = StObject.set(x, "destinationPorts", js.undefined)
+    inline def setDestinationPortsUndefined: Self = StObject.set(x, "destinationPorts", js.undefined)
     
-    @scala.inline
-    def setDestinationPortsVarargs(
+    inline def setDestinationPortsVarargs(
       value: RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestinationPort*
     ): Self = StObject.set(x, "destinationPorts", js.Array(value :_*))
     
-    @scala.inline
-    def setDestinations(
+    inline def setDestinations(
       value: js.Array[
           RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestination
         ]
     ): Self = StObject.set(x, "destinations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationsUndefined: Self = StObject.set(x, "destinations", js.undefined)
+    inline def setDestinationsUndefined: Self = StObject.set(x, "destinations", js.undefined)
     
-    @scala.inline
-    def setDestinationsVarargs(
+    inline def setDestinationsVarargs(
       value: RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestination*
     ): Self = StObject.set(x, "destinations", js.Array(value :_*))
     
-    @scala.inline
-    def setProtocols(value: js.Array[Double]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
+    inline def setProtocols(value: js.Array[Double]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
+    inline def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
     
-    @scala.inline
-    def setProtocolsVarargs(value: Double*): Self = StObject.set(x, "protocols", js.Array(value :_*))
+    inline def setProtocolsVarargs(value: Double*): Self = StObject.set(x, "protocols", js.Array(value :_*))
     
-    @scala.inline
-    def setSourcePorts(
+    inline def setSourcePorts(
       value: js.Array[
           RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesSourcePort
         ]
     ): Self = StObject.set(x, "sourcePorts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcePortsUndefined: Self = StObject.set(x, "sourcePorts", js.undefined)
+    inline def setSourcePortsUndefined: Self = StObject.set(x, "sourcePorts", js.undefined)
     
-    @scala.inline
-    def setSourcePortsVarargs(
+    inline def setSourcePortsVarargs(
       value: RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesSourcePort*
     ): Self = StObject.set(x, "sourcePorts", js.Array(value :_*))
     
-    @scala.inline
-    def setSources(
+    inline def setSources(
       value: js.Array[
           RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesSource
         ]
     ): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
+    inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
-    @scala.inline
-    def setSourcesVarargs(
+    inline def setSourcesVarargs(
       value: RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesSource*
     ): Self = StObject.set(x, "sources", js.Array(value :_*))
     
-    @scala.inline
-    def setTcpFlags(
+    inline def setTcpFlags(
       value: js.Array[
           RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesTcpFlag
         ]
     ): Self = StObject.set(x, "tcpFlags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTcpFlagsUndefined: Self = StObject.set(x, "tcpFlags", js.undefined)
+    inline def setTcpFlagsUndefined: Self = StObject.set(x, "tcpFlags", js.undefined)
     
-    @scala.inline
-    def setTcpFlagsVarargs(
+    inline def setTcpFlagsVarargs(
       value: RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesTcpFlag*
     ): Self = StObject.set(x, "tcpFlags", js.Array(value :_*))
   }

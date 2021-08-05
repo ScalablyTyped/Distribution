@@ -13,16 +13,13 @@ trait DeleteRunRequest extends StObject {
 }
 object DeleteRunRequest {
   
-  @scala.inline
-  def apply(arn: AmazonResourceName): DeleteRunRequest = {
+  inline def apply(arn: AmazonResourceName): DeleteRunRequest = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteRunRequest]
   }
   
-  @scala.inline
-  implicit class DeleteRunRequestMutableBuilder[Self <: DeleteRunRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteRunRequest](x: Self) {
     
-    @scala.inline
-    def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
   }
 }

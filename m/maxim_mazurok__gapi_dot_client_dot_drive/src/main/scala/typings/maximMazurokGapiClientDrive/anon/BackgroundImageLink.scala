@@ -17,31 +17,23 @@ trait BackgroundImageLink extends StObject {
 }
 object BackgroundImageLink {
   
-  @scala.inline
-  def apply(): BackgroundImageLink = {
+  inline def apply(): BackgroundImageLink = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BackgroundImageLink]
   }
   
-  @scala.inline
-  implicit class BackgroundImageLinkMutableBuilder[Self <: BackgroundImageLink] (val x: Self) extends AnyVal {
+  extension [Self <: BackgroundImageLink](x: Self) {
     
-    @scala.inline
-    def setBackgroundImageLink(value: String): Self = StObject.set(x, "backgroundImageLink", value.asInstanceOf[js.Any])
+    inline def setBackgroundImageLink(value: String): Self = StObject.set(x, "backgroundImageLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundImageLinkUndefined: Self = StObject.set(x, "backgroundImageLink", js.undefined)
+    inline def setBackgroundImageLinkUndefined: Self = StObject.set(x, "backgroundImageLink", js.undefined)
     
-    @scala.inline
-    def setColorRgb(value: String): Self = StObject.set(x, "colorRgb", value.asInstanceOf[js.Any])
+    inline def setColorRgb(value: String): Self = StObject.set(x, "colorRgb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorRgbUndefined: Self = StObject.set(x, "colorRgb", js.undefined)
+    inline def setColorRgbUndefined: Self = StObject.set(x, "colorRgb", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait KinesisStreamConfig extends StObject {
 }
 object KinesisStreamConfig {
   
-  @scala.inline
-  def apply(StreamArn: ARN): KinesisStreamConfig = {
+  inline def apply(StreamArn: ARN): KinesisStreamConfig = {
     val __obj = js.Dynamic.literal(StreamArn = StreamArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[KinesisStreamConfig]
   }
   
-  @scala.inline
-  implicit class KinesisStreamConfigMutableBuilder[Self <: KinesisStreamConfig] (val x: Self) extends AnyVal {
+  extension [Self <: KinesisStreamConfig](x: Self) {
     
-    @scala.inline
-    def setStreamArn(value: ARN): Self = StObject.set(x, "StreamArn", value.asInstanceOf[js.Any])
+    inline def setStreamArn(value: ARN): Self = StObject.set(x, "StreamArn", value.asInstanceOf[js.Any])
   }
 }

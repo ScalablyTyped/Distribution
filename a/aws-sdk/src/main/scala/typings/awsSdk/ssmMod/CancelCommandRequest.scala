@@ -18,25 +18,19 @@ trait CancelCommandRequest extends StObject {
 }
 object CancelCommandRequest {
   
-  @scala.inline
-  def apply(CommandId: CommandId): CancelCommandRequest = {
+  inline def apply(CommandId: CommandId): CancelCommandRequest = {
     val __obj = js.Dynamic.literal(CommandId = CommandId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelCommandRequest]
   }
   
-  @scala.inline
-  implicit class CancelCommandRequestMutableBuilder[Self <: CancelCommandRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CancelCommandRequest](x: Self) {
     
-    @scala.inline
-    def setCommandId(value: CommandId): Self = StObject.set(x, "CommandId", value.asInstanceOf[js.Any])
+    inline def setCommandId(value: CommandId): Self = StObject.set(x, "CommandId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIds(value: InstanceIdList): Self = StObject.set(x, "InstanceIds", value.asInstanceOf[js.Any])
+    inline def setInstanceIds(value: InstanceIdList): Self = StObject.set(x, "InstanceIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdsUndefined: Self = StObject.set(x, "InstanceIds", js.undefined)
+    inline def setInstanceIdsUndefined: Self = StObject.set(x, "InstanceIds", js.undefined)
     
-    @scala.inline
-    def setInstanceIdsVarargs(value: InstanceId*): Self = StObject.set(x, "InstanceIds", js.Array(value :_*))
+    inline def setInstanceIdsVarargs(value: InstanceId*): Self = StObject.set(x, "InstanceIds", js.Array(value :_*))
   }
 }

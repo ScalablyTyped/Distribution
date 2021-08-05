@@ -13,11 +13,9 @@ object placeholderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[OptionType /* <: OptionTypeBase */](WrappedComponent: ComponentType[PlaceholderProps[OptionType]]): ComponentType[AnimatedPlaceholderProps[OptionType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[AnimatedPlaceholderProps[OptionType]]]
+  inline def default[OptionType /* <: OptionTypeBase */](WrappedComponent: ComponentType[PlaceholderProps[OptionType]]): ComponentType[AnimatedPlaceholderProps[OptionType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[AnimatedPlaceholderProps[OptionType]]]
   
-  @scala.inline
-  def AnimatedPlaceholder[OptionType /* <: OptionTypeBase */](WrappedComponent: ComponentType[PlaceholderProps[OptionType]]): ComponentType[AnimatedPlaceholderProps[OptionType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("AnimatedPlaceholder")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[AnimatedPlaceholderProps[OptionType]]]
+  inline def AnimatedPlaceholder[OptionType /* <: OptionTypeBase */](WrappedComponent: ComponentType[PlaceholderProps[OptionType]]): ComponentType[AnimatedPlaceholderProps[OptionType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("AnimatedPlaceholder")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[AnimatedPlaceholderProps[OptionType]]]
   
   type AnimatedPlaceholderProps[OptionType /* <: OptionTypeBase */] = PlaceholderProps[OptionType]
 }

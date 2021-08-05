@@ -74,12 +74,10 @@ object Equation {
   @JSImport("p2", "Equation.DEFAULT_RELAXATION")
   @js.native
   def DEFAULT_RELAXATION: Double = js.native
-  @scala.inline
-  def DEFAULT_RELAXATION_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_RELAXATION")(x.asInstanceOf[js.Any])
+  inline def DEFAULT_RELAXATION_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_RELAXATION")(x.asInstanceOf[js.Any])
   
   @JSImport("p2", "Equation.DEFAULT_STIFFNESS")
   @js.native
   def DEFAULT_STIFFNESS: Double = js.native
-  @scala.inline
-  def DEFAULT_STIFFNESS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_STIFFNESS")(x.asInstanceOf[js.Any])
+  inline def DEFAULT_STIFFNESS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_STIFFNESS")(x.asInstanceOf[js.Any])
 }

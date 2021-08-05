@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlIconViewType extends StObject
 object OlIconViewType {
   
-  @scala.inline
-  def olIconViewLarge: `0` = 0.asInstanceOf[`0`]
+  inline def olIconViewLarge: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def olIconViewList: `2` = 2.asInstanceOf[`2`]
+  inline def olIconViewList: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def olIconViewSmall: `1` = 1.asInstanceOf[`1`]
+  inline def olIconViewSmall: `1` = 1.asInstanceOf[`1`]
 }

@@ -12,25 +12,19 @@ trait PinchZoomOptions extends StObject {
 }
 object PinchZoomOptions {
   
-  @scala.inline
-  def apply(): PinchZoomOptions = {
+  inline def apply(): PinchZoomOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PinchZoomOptions]
   }
   
-  @scala.inline
-  implicit class PinchZoomOptionsMutableBuilder[Self <: PinchZoomOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PinchZoomOptions](x: Self) {
     
-    @scala.inline
-    def setConstrainResolution(value: Boolean): Self = StObject.set(x, "constrainResolution", value.asInstanceOf[js.Any])
+    inline def setConstrainResolution(value: Boolean): Self = StObject.set(x, "constrainResolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstrainResolutionUndefined: Self = StObject.set(x, "constrainResolution", js.undefined)
+    inline def setConstrainResolutionUndefined: Self = StObject.set(x, "constrainResolution", js.undefined)
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
   }
 }

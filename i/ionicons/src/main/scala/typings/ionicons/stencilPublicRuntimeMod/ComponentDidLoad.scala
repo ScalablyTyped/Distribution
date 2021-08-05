@@ -18,16 +18,13 @@ trait ComponentDidLoad extends StObject {
 }
 object ComponentDidLoad {
   
-  @scala.inline
-  def apply(componentDidLoad: () => Unit): ComponentDidLoad = {
+  inline def apply(componentDidLoad: () => Unit): ComponentDidLoad = {
     val __obj = js.Dynamic.literal(componentDidLoad = js.Any.fromFunction0(componentDidLoad))
     __obj.asInstanceOf[ComponentDidLoad]
   }
   
-  @scala.inline
-  implicit class ComponentDidLoadMutableBuilder[Self <: ComponentDidLoad] (val x: Self) extends AnyVal {
+  extension [Self <: ComponentDidLoad](x: Self) {
     
-    @scala.inline
-    def setComponentDidLoad(value: () => Unit): Self = StObject.set(x, "componentDidLoad", js.Any.fromFunction0(value))
+    inline def setComponentDidLoad(value: () => Unit): Self = StObject.set(x, "componentDidLoad", js.Any.fromFunction0(value))
   }
 }

@@ -213,8 +213,7 @@ object TreeLayout {
   @JSImport("go", "TreeLayout.AlignmentBottomRightBus")
   @js.native
   def AlignmentBottomRightBus: EnumValue = js.native
-  @scala.inline
-  def AlignmentBottomRightBus_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AlignmentBottomRightBus")(x.asInstanceOf[js.Any])
+  inline def AlignmentBottomRightBus_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AlignmentBottomRightBus")(x.asInstanceOf[js.Any])
   
   /**The children are positioned in a bus on both sides of an "aisle" where the links to them go, with the last odd child (if any) placed at the end of the aisle in the middle.*/
   /* static member */
@@ -227,201 +226,175 @@ object TreeLayout {
   @JSImport("go", "TreeLayout.AlignmentBusBranching")
   @js.native
   def AlignmentBusBranching: EnumValue = js.native
-  @scala.inline
-  def AlignmentBusBranching_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AlignmentBusBranching")(x.asInstanceOf[js.Any])
+  inline def AlignmentBusBranching_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AlignmentBusBranching")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def AlignmentBus_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AlignmentBus")(x.asInstanceOf[js.Any])
+  inline def AlignmentBus_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AlignmentBus")(x.asInstanceOf[js.Any])
   
   /**The parent is centered at the middle of the range of its immediate child nodes; This value is used for TreeLayout.alignment or TreeLayout.alternateAlignment.*/
   /* static member */
   @JSImport("go", "TreeLayout.AlignmentCenterChildren")
   @js.native
   def AlignmentCenterChildren: EnumValue = js.native
-  @scala.inline
-  def AlignmentCenterChildren_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AlignmentCenterChildren")(x.asInstanceOf[js.Any])
+  inline def AlignmentCenterChildren_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AlignmentCenterChildren")(x.asInstanceOf[js.Any])
   
   /**The parent is centered at the middle of the range of its child subtrees; This value is used for TreeLayout.alignment or TreeLayout.alternateAlignment.*/
   /* static member */
   @JSImport("go", "TreeLayout.AlignmentCenterSubtrees")
   @js.native
   def AlignmentCenterSubtrees: EnumValue = js.native
-  @scala.inline
-  def AlignmentCenterSubtrees_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AlignmentCenterSubtrees")(x.asInstanceOf[js.Any])
+  inline def AlignmentCenterSubtrees_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AlignmentCenterSubtrees")(x.asInstanceOf[js.Any])
   
   /**The parent is positioned near the last of its children; This value is used for TreeLayout.alignment or TreeLayout.alternateAlignment.*/
   /* static member */
   @JSImport("go", "TreeLayout.AlignmentEnd")
   @js.native
   def AlignmentEnd: EnumValue = js.native
-  @scala.inline
-  def AlignmentEnd_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AlignmentEnd")(x.asInstanceOf[js.Any])
+  inline def AlignmentEnd_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AlignmentEnd")(x.asInstanceOf[js.Any])
   
   /**The parent is positioned near the first of its children; This value is used for TreeLayout.alignment or TreeLayout.alternateAlignment.*/
   /* static member */
   @JSImport("go", "TreeLayout.AlignmentStart")
   @js.native
   def AlignmentStart: EnumValue = js.native
-  @scala.inline
-  def AlignmentStart_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AlignmentStart")(x.asInstanceOf[js.Any])
+  inline def AlignmentStart_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AlignmentStart")(x.asInstanceOf[js.Any])
   
   /**The children are positioned in a bus, only on the top or left side of the parent; This value is used for TreeLayout.alignment or TreeLayout.alternateAlignment.*/
   /* static member */
   @JSImport("go", "TreeLayout.AlignmentTopLeftBus")
   @js.native
   def AlignmentTopLeftBus: EnumValue = js.native
-  @scala.inline
-  def AlignmentTopLeftBus_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AlignmentTopLeftBus")(x.asInstanceOf[js.Any])
+  inline def AlignmentTopLeftBus_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AlignmentTopLeftBus")(x.asInstanceOf[js.Any])
   
   /**Do not move each root node, but position all of their descendants relative to their root; This value is used for TreeLayout.arrangement.*/
   /* static member */
   @JSImport("go", "TreeLayout.ArrangementFixedRoots")
   @js.native
   def ArrangementFixedRoots: EnumValue = js.native
-  @scala.inline
-  def ArrangementFixedRoots_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ArrangementFixedRoots")(x.asInstanceOf[js.Any])
+  inline def ArrangementFixedRoots_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ArrangementFixedRoots")(x.asInstanceOf[js.Any])
   
   /**Position each tree in a non-overlapping fashion by increasing X coordinates, starting at the Layout.arrangementOrigin; This value is used for TreeLayout.arrangement.*/
   /* static member */
   @JSImport("go", "TreeLayout.ArrangementHorizontal")
   @js.native
   def ArrangementHorizontal: EnumValue = js.native
-  @scala.inline
-  def ArrangementHorizontal_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ArrangementHorizontal")(x.asInstanceOf[js.Any])
+  inline def ArrangementHorizontal_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ArrangementHorizontal")(x.asInstanceOf[js.Any])
   
   /**Position each tree in a non-overlapping fashion by increasing Y coordinates, starting at the Layout.arrangementOrigin; This value is used for TreeLayout.arrangement.*/
   /* static member */
   @JSImport("go", "TreeLayout.ArrangementVertical")
   @js.native
   def ArrangementVertical: EnumValue = js.native
-  @scala.inline
-  def ArrangementVertical_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ArrangementVertical")(x.asInstanceOf[js.Any])
+  inline def ArrangementVertical_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ArrangementVertical")(x.asInstanceOf[js.Any])
   
   /**A simple fitting of subtrees; This value is used for TreeLayout.compaction or TreeLayout.alternateCompaction.*/
   /* static member */
   @JSImport("go", "TreeLayout.CompactionBlock")
   @js.native
   def CompactionBlock: EnumValue = js.native
-  @scala.inline
-  def CompactionBlock_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CompactionBlock")(x.asInstanceOf[js.Any])
+  inline def CompactionBlock_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CompactionBlock")(x.asInstanceOf[js.Any])
   
   /**Only simple placement of children next to each other, as determined by their subtree breadth; This value is used for TreeLayout.compaction or TreeLayout.alternateCompaction.*/
   /* static member */
   @JSImport("go", "TreeLayout.CompactionNone")
   @js.native
   def CompactionNone: EnumValue = js.native
-  @scala.inline
-  def CompactionNone_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CompactionNone")(x.asInstanceOf[js.Any])
+  inline def CompactionNone_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CompactionNone")(x.asInstanceOf[js.Any])
   
   /**This default value for TreeLayout.layerStyle causes each node takes up only the depth that it needs.*/
   /* static member */
   @JSImport("go", "TreeLayout.LayerIndividual")
   @js.native
   def LayerIndividual: EnumValue = js.native
-  @scala.inline
-  def LayerIndividual_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LayerIndividual")(x.asInstanceOf[js.Any])
+  inline def LayerIndividual_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LayerIndividual")(x.asInstanceOf[js.Any])
   
   /**This value for TreeLayout.layerStyle causes all of the children of a parent node take up the same amount of depth -- this typically causes all cousins to be aligned.*/
   /* static member */
   @JSImport("go", "TreeLayout.LayerSiblings")
   @js.native
   def LayerSiblings: EnumValue = js.native
-  @scala.inline
-  def LayerSiblings_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LayerSiblings")(x.asInstanceOf[js.Any])
+  inline def LayerSiblings_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LayerSiblings")(x.asInstanceOf[js.Any])
   
   /**This value for TreeLayout.layerStyle causes all nodes with the same TreeVertex.level throughout the tree take up the same amount of depth.*/
   /* static member */
   @JSImport("go", "TreeLayout.LayerUniform")
   @js.native
   def LayerUniform: EnumValue = js.native
-  @scala.inline
-  def LayerUniform_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LayerUniform")(x.asInstanceOf[js.Any])
+  inline def LayerUniform_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LayerUniform")(x.asInstanceOf[js.Any])
   
   /**This value for TreeLayout.path causes the value of Diagram.isTreePathToChildren to effectively choose either TreeLayout.PathDestination (if true) or TreeLayout.PathSource (if false).*/
   /* static member */
   @JSImport("go", "TreeLayout.PathDefault")
   @js.native
   def PathDefault: EnumValue = js.native
-  @scala.inline
-  def PathDefault_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PathDefault")(x.asInstanceOf[js.Any])
+  inline def PathDefault_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PathDefault")(x.asInstanceOf[js.Any])
   
   /**The children of a TreeVertex are its LayoutVertex.destinationVertexes, the collection of connected LayoutEdge.toVertexes; This value is used for TreeLayout.path.*/
   /* static member */
   @JSImport("go", "TreeLayout.PathDestination")
   @js.native
   def PathDestination: EnumValue = js.native
-  @scala.inline
-  def PathDestination_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PathDestination")(x.asInstanceOf[js.Any])
+  inline def PathDestination_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PathDestination")(x.asInstanceOf[js.Any])
   
   /**The children of a TreeVertex are its LayoutVertex.sourceVertexes, the collection of connected LayoutEdge.fromVertexes; This value is used for TreeLayout.path.*/
   /* static member */
   @JSImport("go", "TreeLayout.PathSource")
   @js.native
   def PathSource: EnumValue = js.native
-  @scala.inline
-  def PathSource_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PathSource")(x.asInstanceOf[js.Any])
+  inline def PathSource_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PathSource")(x.asInstanceOf[js.Any])
   
   /**Lay out each child according to the sort order given by TreeVertex.comparer; This value is used for TreeLayout.sorting or TreeLayout.alternateSorting.*/
   /* static member */
   @JSImport("go", "TreeLayout.SortingAscending")
   @js.native
   def SortingAscending: EnumValue = js.native
-  @scala.inline
-  def SortingAscending_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SortingAscending")(x.asInstanceOf[js.Any])
+  inline def SortingAscending_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SortingAscending")(x.asInstanceOf[js.Any])
   
   /**Lay out each child in reverse sort order given by TreeVertex.comparer; This value is used for TreeLayout.sorting or TreeLayout.alternateSorting.*/
   /* static member */
   @JSImport("go", "TreeLayout.SortingDescending")
   @js.native
   def SortingDescending: EnumValue = js.native
-  @scala.inline
-  def SortingDescending_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SortingDescending")(x.asInstanceOf[js.Any])
+  inline def SortingDescending_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SortingDescending")(x.asInstanceOf[js.Any])
   
   /**Lay out each child in the order in which they were found; This value is used for TreeLayout.sorting or TreeLayout.alternateSorting.*/
   /* static member */
   @JSImport("go", "TreeLayout.SortingForwards")
   @js.native
   def SortingForwards: EnumValue = js.native
-  @scala.inline
-  def SortingForwards_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SortingForwards")(x.asInstanceOf[js.Any])
+  inline def SortingForwards_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SortingForwards")(x.asInstanceOf[js.Any])
   
   /**Lay out each child in reverse order from which they were found; This value is used for TreeLayout.sorting or TreeLayout.alternateSorting.*/
   /* static member */
   @JSImport("go", "TreeLayout.SortingReverse")
   @js.native
   def SortingReverse: EnumValue = js.native
-  @scala.inline
-  def SortingReverse_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SortingReverse")(x.asInstanceOf[js.Any])
+  inline def SortingReverse_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SortingReverse")(x.asInstanceOf[js.Any])
   
   /**Alternate layers of the tree have different properties, typically including the angle; This value is used for TreeLayout.treeStyle.*/
   /* static member */
   @JSImport("go", "TreeLayout.StyleAlternating")
   @js.native
   def StyleAlternating: EnumValue = js.native
-  @scala.inline
-  def StyleAlternating_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StyleAlternating")(x.asInstanceOf[js.Any])
+  inline def StyleAlternating_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StyleAlternating")(x.asInstanceOf[js.Any])
   
   /**Just like the standard layered tree style, except that the nodes with children but no grandchildren have alternate properties; This value is used for TreeLayout.treeStyle.*/
   /* static member */
   @JSImport("go", "TreeLayout.StyleLastParents")
   @js.native
   def StyleLastParents: EnumValue = js.native
-  @scala.inline
-  def StyleLastParents_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StyleLastParents")(x.asInstanceOf[js.Any])
+  inline def StyleLastParents_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StyleLastParents")(x.asInstanceOf[js.Any])
   
   /**The normal tree style, where all of the children of each TreeVertex are lined up horizontally or vertically; This value is used for TreeLayout.treeStyle.*/
   /* static member */
   @JSImport("go", "TreeLayout.StyleLayered")
   @js.native
   def StyleLayered: EnumValue = js.native
-  @scala.inline
-  def StyleLayered_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StyleLayered")(x.asInstanceOf[js.Any])
+  inline def StyleLayered_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StyleLayered")(x.asInstanceOf[js.Any])
   
   /**All of the nodes get the alternate properties, except the root node gets the default properties; This value is used for TreeLayout.treeStyle.*/
   /* static member */
   @JSImport("go", "TreeLayout.StyleRootOnly")
   @js.native
   def StyleRootOnly: EnumValue = js.native
-  @scala.inline
-  def StyleRootOnly_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StyleRootOnly")(x.asInstanceOf[js.Any])
+  inline def StyleRootOnly_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StyleRootOnly")(x.asInstanceOf[js.Any])
 }

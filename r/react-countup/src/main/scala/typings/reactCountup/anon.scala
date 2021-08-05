@@ -18,26 +18,20 @@ object anon {
   }
   object PauseResume {
     
-    @scala.inline
-    def apply(pauseResume: () => Unit, reset: () => Unit, start: () => Unit, update: () => Unit): PauseResume = {
+    inline def apply(pauseResume: () => Unit, reset: () => Unit, start: () => Unit, update: () => Unit): PauseResume = {
       val __obj = js.Dynamic.literal(pauseResume = js.Any.fromFunction0(pauseResume), reset = js.Any.fromFunction0(reset), start = js.Any.fromFunction0(start), update = js.Any.fromFunction0(update))
       __obj.asInstanceOf[PauseResume]
     }
     
-    @scala.inline
-    implicit class PauseResumeMutableBuilder[Self <: PauseResume] (val x: Self) extends AnyVal {
+    extension [Self <: PauseResume](x: Self) {
       
-      @scala.inline
-      def setPauseResume(value: () => Unit): Self = StObject.set(x, "pauseResume", js.Any.fromFunction0(value))
+      inline def setPauseResume(value: () => Unit): Self = StObject.set(x, "pauseResume", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+      inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+      inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     }
   }
   
@@ -51,23 +45,18 @@ object anon {
   }
   object PauseResumeReset {
     
-    @scala.inline
-    def apply(pauseResume: () => Unit, reset: () => Unit, start: () => Unit): PauseResumeReset = {
+    inline def apply(pauseResume: () => Unit, reset: () => Unit, start: () => Unit): PauseResumeReset = {
       val __obj = js.Dynamic.literal(pauseResume = js.Any.fromFunction0(pauseResume), reset = js.Any.fromFunction0(reset), start = js.Any.fromFunction0(start))
       __obj.asInstanceOf[PauseResumeReset]
     }
     
-    @scala.inline
-    implicit class PauseResumeResetMutableBuilder[Self <: PauseResumeReset] (val x: Self) extends AnyVal {
+    extension [Self <: PauseResumeReset](x: Self) {
       
-      @scala.inline
-      def setPauseResume(value: () => Unit): Self = StObject.set(x, "pauseResume", js.Any.fromFunction0(value))
+      inline def setPauseResume(value: () => Unit): Self = StObject.set(x, "pauseResume", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+      inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     }
   }
   
@@ -81,23 +70,18 @@ object anon {
   }
   object Reset {
     
-    @scala.inline
-    def apply(pauseResume: () => Unit, reset: () => Unit, update: () => Unit): Reset = {
+    inline def apply(pauseResume: () => Unit, reset: () => Unit, update: () => Unit): Reset = {
       val __obj = js.Dynamic.literal(pauseResume = js.Any.fromFunction0(pauseResume), reset = js.Any.fromFunction0(reset), update = js.Any.fromFunction0(update))
       __obj.asInstanceOf[Reset]
     }
     
-    @scala.inline
-    implicit class ResetMutableBuilder[Self <: Reset] (val x: Self) extends AnyVal {
+    extension [Self <: Reset](x: Self) {
       
-      @scala.inline
-      def setPauseResume(value: () => Unit): Self = StObject.set(x, "pauseResume", js.Any.fromFunction0(value))
+      inline def setPauseResume(value: () => Unit): Self = StObject.set(x, "pauseResume", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+      inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     }
   }
   
@@ -111,23 +95,18 @@ object anon {
   }
   object Start {
     
-    @scala.inline
-    def apply(reset: () => Unit, start: () => Unit, update: () => Unit): Start = {
+    inline def apply(reset: () => Unit, start: () => Unit, update: () => Unit): Start = {
       val __obj = js.Dynamic.literal(reset = js.Any.fromFunction0(reset), start = js.Any.fromFunction0(start), update = js.Any.fromFunction0(update))
       __obj.asInstanceOf[Start]
     }
     
-    @scala.inline
-    implicit class StartMutableBuilder[Self <: Start] (val x: Self) extends AnyVal {
+    extension [Self <: Start](x: Self) {
       
-      @scala.inline
-      def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+      inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+      inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     }
   }
   
@@ -141,23 +120,18 @@ object anon {
   }
   object Update {
     
-    @scala.inline
-    def apply(pauseResume: () => Unit, start: () => Unit, update: () => Unit): Update = {
+    inline def apply(pauseResume: () => Unit, start: () => Unit, update: () => Unit): Update = {
       val __obj = js.Dynamic.literal(pauseResume = js.Any.fromFunction0(pauseResume), start = js.Any.fromFunction0(start), update = js.Any.fromFunction0(update))
       __obj.asInstanceOf[Update]
     }
     
-    @scala.inline
-    implicit class UpdateMutableBuilder[Self <: Update] (val x: Self) extends AnyVal {
+    extension [Self <: Update](x: Self) {
       
-      @scala.inline
-      def setPauseResume(value: () => Unit): Self = StObject.set(x, "pauseResume", js.Any.fromFunction0(value))
+      inline def setPauseResume(value: () => Unit): Self = StObject.set(x, "pauseResume", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+      inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+      inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     }
   }
 }

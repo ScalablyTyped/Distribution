@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.DocumentProperty")
 @js.native
-class DocumentProperty[TApplication] protected ()
+/* private */ class DocumentProperty[TApplication] ()
   extends StObject
      with typings.activexOffice.Office.DocumentProperty[TApplication] {
   
@@ -29,7 +29,7 @@ class DocumentProperty[TApplication] protected ()
   /* CompleteClass */
   var Name: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.DocumentProperty_typekey")
   var OfficeDotDocumentProperty_typekey: typings.activexOffice.Office.DocumentProperty[TApplication] = js.native
   

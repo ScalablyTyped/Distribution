@@ -12,19 +12,15 @@ trait EmailOptions extends StObject {
 }
 object EmailOptions {
   
-  @scala.inline
-  def apply(domain: String, length: Double): EmailOptions = {
+  inline def apply(domain: String, length: Double): EmailOptions = {
     val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmailOptions]
   }
   
-  @scala.inline
-  implicit class EmailOptionsMutableBuilder[Self <: EmailOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EmailOptions](x: Self) {
     
-    @scala.inline
-    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
   }
 }

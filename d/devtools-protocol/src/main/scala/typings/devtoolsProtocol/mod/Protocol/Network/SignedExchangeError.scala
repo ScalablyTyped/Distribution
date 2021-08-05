@@ -24,28 +24,21 @@ trait SignedExchangeError extends StObject {
 }
 object SignedExchangeError {
   
-  @scala.inline
-  def apply(message: String): SignedExchangeError = {
+  inline def apply(message: String): SignedExchangeError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignedExchangeError]
   }
   
-  @scala.inline
-  implicit class SignedExchangeErrorMutableBuilder[Self <: SignedExchangeError] (val x: Self) extends AnyVal {
+  extension [Self <: SignedExchangeError](x: Self) {
     
-    @scala.inline
-    def setErrorField(value: SignedExchangeErrorField): Self = StObject.set(x, "errorField", value.asInstanceOf[js.Any])
+    inline def setErrorField(value: SignedExchangeErrorField): Self = StObject.set(x, "errorField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorFieldUndefined: Self = StObject.set(x, "errorField", js.undefined)
+    inline def setErrorFieldUndefined: Self = StObject.set(x, "errorField", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureIndex(value: integer): Self = StObject.set(x, "signatureIndex", value.asInstanceOf[js.Any])
+    inline def setSignatureIndex(value: integer): Self = StObject.set(x, "signatureIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureIndexUndefined: Self = StObject.set(x, "signatureIndex", js.undefined)
+    inline def setSignatureIndexUndefined: Self = StObject.set(x, "signatureIndex", js.undefined)
   }
 }

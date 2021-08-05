@@ -28,19 +28,15 @@ trait OnNetworkStatusChangeCallbackResult extends StObject {
 }
 object OnNetworkStatusChangeCallbackResult {
   
-  @scala.inline
-  def apply(isConnected: Boolean, networkType: wifi | `2g` | `3g` | `4g` | unknown | none): OnNetworkStatusChangeCallbackResult = {
+  inline def apply(isConnected: Boolean, networkType: wifi | `2g` | `3g` | `4g` | unknown | none): OnNetworkStatusChangeCallbackResult = {
     val __obj = js.Dynamic.literal(isConnected = isConnected.asInstanceOf[js.Any], networkType = networkType.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnNetworkStatusChangeCallbackResult]
   }
   
-  @scala.inline
-  implicit class OnNetworkStatusChangeCallbackResultMutableBuilder[Self <: OnNetworkStatusChangeCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: OnNetworkStatusChangeCallbackResult](x: Self) {
     
-    @scala.inline
-    def setIsConnected(value: Boolean): Self = StObject.set(x, "isConnected", value.asInstanceOf[js.Any])
+    inline def setIsConnected(value: Boolean): Self = StObject.set(x, "isConnected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkType(value: wifi | `2g` | `3g` | `4g` | unknown | none): Self = StObject.set(x, "networkType", value.asInstanceOf[js.Any])
+    inline def setNetworkType(value: wifi | `2g` | `3g` | `4g` | unknown | none): Self = StObject.set(x, "networkType", value.asInstanceOf[js.Any])
   }
 }

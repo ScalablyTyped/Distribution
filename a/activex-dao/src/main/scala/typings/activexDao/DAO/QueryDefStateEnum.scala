@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait QueryDefStateEnum extends StObject
 object QueryDefStateEnum {
   
-  @scala.inline
-  def dbQPrepare: `1` = 1.asInstanceOf[`1`]
+  inline def dbQPrepare: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def dbQUnprepare: `2` = 2.asInstanceOf[`2`]
+  inline def dbQUnprepare: `2` = 2.asInstanceOf[`2`]
 }

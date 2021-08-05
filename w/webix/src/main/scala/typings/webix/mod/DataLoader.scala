@@ -92,6 +92,5 @@ trait DataLoader extends StObject {
 }
 object DataLoader {
   
-  @scala.inline
-  def apply: DataLoader = ^.asInstanceOf[js.Dynamic].selectDynamic("DataLoader").asInstanceOf[DataLoader]
+  inline def apply: DataLoader = ^.asInstanceOf[js.Dynamic].selectDynamic("DataLoader").asInstanceOf[DataLoader]
 }

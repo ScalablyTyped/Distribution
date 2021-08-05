@@ -13,19 +13,15 @@ trait GetInlinePolicyForPermissionSetResponse extends StObject {
 }
 object GetInlinePolicyForPermissionSetResponse {
   
-  @scala.inline
-  def apply(): GetInlinePolicyForPermissionSetResponse = {
+  inline def apply(): GetInlinePolicyForPermissionSetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetInlinePolicyForPermissionSetResponse]
   }
   
-  @scala.inline
-  implicit class GetInlinePolicyForPermissionSetResponseMutableBuilder[Self <: GetInlinePolicyForPermissionSetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetInlinePolicyForPermissionSetResponse](x: Self) {
     
-    @scala.inline
-    def setInlinePolicy(value: PermissionSetPolicyDocument): Self = StObject.set(x, "InlinePolicy", value.asInstanceOf[js.Any])
+    inline def setInlinePolicy(value: PermissionSetPolicyDocument): Self = StObject.set(x, "InlinePolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInlinePolicyUndefined: Self = StObject.set(x, "InlinePolicy", js.undefined)
+    inline def setInlinePolicyUndefined: Self = StObject.set(x, "InlinePolicy", js.undefined)
   }
 }

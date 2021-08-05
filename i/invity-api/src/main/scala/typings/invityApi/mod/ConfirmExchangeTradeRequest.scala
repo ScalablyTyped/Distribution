@@ -18,28 +18,21 @@ trait ConfirmExchangeTradeRequest extends StObject {
 }
 object ConfirmExchangeTradeRequest {
   
-  @scala.inline
-  def apply(receiveAddress: String, refundAddress: String, trade: ExchangeTrade): ConfirmExchangeTradeRequest = {
+  inline def apply(receiveAddress: String, refundAddress: String, trade: ExchangeTrade): ConfirmExchangeTradeRequest = {
     val __obj = js.Dynamic.literal(receiveAddress = receiveAddress.asInstanceOf[js.Any], refundAddress = refundAddress.asInstanceOf[js.Any], trade = trade.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfirmExchangeTradeRequest]
   }
   
-  @scala.inline
-  implicit class ConfirmExchangeTradeRequestMutableBuilder[Self <: ConfirmExchangeTradeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ConfirmExchangeTradeRequest](x: Self) {
     
-    @scala.inline
-    def setExtraField(value: String): Self = StObject.set(x, "extraField", value.asInstanceOf[js.Any])
+    inline def setExtraField(value: String): Self = StObject.set(x, "extraField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraFieldUndefined: Self = StObject.set(x, "extraField", js.undefined)
+    inline def setExtraFieldUndefined: Self = StObject.set(x, "extraField", js.undefined)
     
-    @scala.inline
-    def setReceiveAddress(value: String): Self = StObject.set(x, "receiveAddress", value.asInstanceOf[js.Any])
+    inline def setReceiveAddress(value: String): Self = StObject.set(x, "receiveAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefundAddress(value: String): Self = StObject.set(x, "refundAddress", value.asInstanceOf[js.Any])
+    inline def setRefundAddress(value: String): Self = StObject.set(x, "refundAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrade(value: ExchangeTrade): Self = StObject.set(x, "trade", value.asInstanceOf[js.Any])
+    inline def setTrade(value: ExchangeTrade): Self = StObject.set(x, "trade", value.asInstanceOf[js.Any])
   }
 }

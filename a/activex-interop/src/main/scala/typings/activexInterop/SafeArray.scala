@@ -9,20 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait SafeArray[T] extends StObject {
   
-  var SafeArray_typekey: SafeArray[T]
+  /* private */ var SafeArray_typekey: SafeArray[T]
 }
 object SafeArray {
   
-  @scala.inline
-  def apply[T](SafeArray_typekey: SafeArray[T]): SafeArray[T] = {
+  inline def apply[T](SafeArray_typekey: SafeArray[T]): SafeArray[T] = {
     val __obj = js.Dynamic.literal(SafeArray_typekey = SafeArray_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[SafeArray[T]]
   }
   
-  @scala.inline
-  implicit class SafeArrayMutableBuilder[Self <: SafeArray[?], T] (val x: Self & SafeArray[T]) extends AnyVal {
+  extension [Self <: SafeArray[?], T](x: Self & SafeArray[T]) {
     
-    @scala.inline
-    def setSafeArray_typekey(value: SafeArray[T]): Self = StObject.set(x, "SafeArray_typekey", value.asInstanceOf[js.Any])
+    inline def setSafeArray_typekey(value: SafeArray[T]): Self = StObject.set(x, "SafeArray_typekey", value.asInstanceOf[js.Any])
   }
 }

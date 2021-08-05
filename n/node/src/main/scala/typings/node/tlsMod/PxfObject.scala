@@ -19,22 +19,17 @@ trait PxfObject extends StObject {
 }
 object PxfObject {
   
-  @scala.inline
-  def apply(buf: String | Buffer): PxfObject = {
+  inline def apply(buf: String | Buffer): PxfObject = {
     val __obj = js.Dynamic.literal(buf = buf.asInstanceOf[js.Any])
     __obj.asInstanceOf[PxfObject]
   }
   
-  @scala.inline
-  implicit class PxfObjectMutableBuilder[Self <: PxfObject] (val x: Self) extends AnyVal {
+  extension [Self <: PxfObject](x: Self) {
     
-    @scala.inline
-    def setBuf(value: String | Buffer): Self = StObject.set(x, "buf", value.asInstanceOf[js.Any])
+    inline def setBuf(value: String | Buffer): Self = StObject.set(x, "buf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
+    inline def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
+    inline def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
   }
 }

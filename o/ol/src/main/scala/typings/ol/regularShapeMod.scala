@@ -39,74 +39,52 @@ object regularShapeMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(points: Double): Options = {
+    inline def apply(points: Double): Options = {
       val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+      inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+      inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
       
-      @scala.inline
-      def setDisplacement(value: js.Array[Double]): Self = StObject.set(x, "displacement", value.asInstanceOf[js.Any])
+      inline def setDisplacement(value: js.Array[Double]): Self = StObject.set(x, "displacement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplacementUndefined: Self = StObject.set(x, "displacement", js.undefined)
+      inline def setDisplacementUndefined: Self = StObject.set(x, "displacement", js.undefined)
       
-      @scala.inline
-      def setDisplacementVarargs(value: Double*): Self = StObject.set(x, "displacement", js.Array(value :_*))
+      inline def setDisplacementVarargs(value: Double*): Self = StObject.set(x, "displacement", js.Array(value :_*))
       
-      @scala.inline
-      def setFill(value: typings.ol.fillMod.default): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      inline def setFill(value: typings.ol.fillMod.default): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+      inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
-      @scala.inline
-      def setPoints(value: Double): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+      inline def setPoints(value: Double): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadius1(value: Double): Self = StObject.set(x, "radius1", value.asInstanceOf[js.Any])
+      inline def setRadius1(value: Double): Self = StObject.set(x, "radius1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadius1Undefined: Self = StObject.set(x, "radius1", js.undefined)
+      inline def setRadius1Undefined: Self = StObject.set(x, "radius1", js.undefined)
       
-      @scala.inline
-      def setRadius2(value: Double): Self = StObject.set(x, "radius2", value.asInstanceOf[js.Any])
+      inline def setRadius2(value: Double): Self = StObject.set(x, "radius2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadius2Undefined: Self = StObject.set(x, "radius2", js.undefined)
+      inline def setRadius2Undefined: Self = StObject.set(x, "radius2", js.undefined)
       
-      @scala.inline
-      def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+      inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
       
-      @scala.inline
-      def setRotateWithView(value: Boolean): Self = StObject.set(x, "rotateWithView", value.asInstanceOf[js.Any])
+      inline def setRotateWithView(value: Boolean): Self = StObject.set(x, "rotateWithView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotateWithViewUndefined: Self = StObject.set(x, "rotateWithView", js.undefined)
+      inline def setRotateWithViewUndefined: Self = StObject.set(x, "rotateWithView", js.undefined)
       
-      @scala.inline
-      def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+      inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
+      inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
       
-      @scala.inline
-      def setStroke(value: typings.ol.strokeMod.default): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+      inline def setStroke(value: typings.ol.strokeMod.default): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+      inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
     }
   }
   
@@ -146,7 +124,7 @@ object regularShapeMod {
       */
     def getStroke(): typings.ol.strokeMod.default = js.native
     
-    var radius_ : Double = js.native
+    /* protected */ var radius_ : Double = js.native
     
     /* protected */ def render(): Unit = js.native
   }
@@ -171,8 +149,7 @@ object regularShapeMod {
   }
   object RenderOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       lineCap: CanvasLineCap,
       lineDash: js.Array[Double],
       lineDashOffset: Double,
@@ -185,38 +162,27 @@ object regularShapeMod {
       __obj.asInstanceOf[RenderOptions]
     }
     
-    @scala.inline
-    implicit class RenderOptionsMutableBuilder[Self <: RenderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RenderOptions](x: Self) {
       
-      @scala.inline
-      def setLineCap(value: CanvasLineCap): Self = StObject.set(x, "lineCap", value.asInstanceOf[js.Any])
+      inline def setLineCap(value: CanvasLineCap): Self = StObject.set(x, "lineCap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineDash(value: js.Array[Double]): Self = StObject.set(x, "lineDash", value.asInstanceOf[js.Any])
+      inline def setLineDash(value: js.Array[Double]): Self = StObject.set(x, "lineDash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineDashOffset(value: Double): Self = StObject.set(x, "lineDashOffset", value.asInstanceOf[js.Any])
+      inline def setLineDashOffset(value: Double): Self = StObject.set(x, "lineDashOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineDashVarargs(value: Double*): Self = StObject.set(x, "lineDash", js.Array(value :_*))
+      inline def setLineDashVarargs(value: Double*): Self = StObject.set(x, "lineDash", js.Array(value :_*))
       
-      @scala.inline
-      def setLineJoin(value: CanvasLineJoin): Self = StObject.set(x, "lineJoin", value.asInstanceOf[js.Any])
+      inline def setLineJoin(value: CanvasLineJoin): Self = StObject.set(x, "lineJoin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMiterLimit(value: Double): Self = StObject.set(x, "miterLimit", value.asInstanceOf[js.Any])
+      inline def setMiterLimit(value: Double): Self = StObject.set(x, "miterLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeStyle(value: ColorLike): Self = StObject.set(x, "strokeStyle", value.asInstanceOf[js.Any])
+      inline def setStrokeStyle(value: ColorLike): Self = StObject.set(x, "strokeStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeStyleUndefined: Self = StObject.set(x, "strokeStyle", js.undefined)
+      inline def setStrokeStyleUndefined: Self = StObject.set(x, "strokeStyle", js.undefined)
       
-      @scala.inline
-      def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+      inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     }
   }
 }

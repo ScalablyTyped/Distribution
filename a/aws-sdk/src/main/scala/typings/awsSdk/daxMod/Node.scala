@@ -38,49 +38,35 @@ trait Node extends StObject {
 }
 object Node {
   
-  @scala.inline
-  def apply(): Node = {
+  inline def apply(): Node = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Node]
   }
   
-  @scala.inline
-  implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
+  extension [Self <: Node](x: Self) {
     
-    @scala.inline
-    def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
+    inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
-    @scala.inline
-    def setEndpoint(value: Endpoint): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpoint(value: Endpoint): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointUndefined: Self = StObject.set(x, "Endpoint", js.undefined)
+    inline def setEndpointUndefined: Self = StObject.set(x, "Endpoint", js.undefined)
     
-    @scala.inline
-    def setNodeCreateTime(value: TStamp): Self = StObject.set(x, "NodeCreateTime", value.asInstanceOf[js.Any])
+    inline def setNodeCreateTime(value: TStamp): Self = StObject.set(x, "NodeCreateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeCreateTimeUndefined: Self = StObject.set(x, "NodeCreateTime", js.undefined)
+    inline def setNodeCreateTimeUndefined: Self = StObject.set(x, "NodeCreateTime", js.undefined)
     
-    @scala.inline
-    def setNodeId(value: String): Self = StObject.set(x, "NodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: String): Self = StObject.set(x, "NodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeIdUndefined: Self = StObject.set(x, "NodeId", js.undefined)
+    inline def setNodeIdUndefined: Self = StObject.set(x, "NodeId", js.undefined)
     
-    @scala.inline
-    def setNodeStatus(value: String): Self = StObject.set(x, "NodeStatus", value.asInstanceOf[js.Any])
+    inline def setNodeStatus(value: String): Self = StObject.set(x, "NodeStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeStatusUndefined: Self = StObject.set(x, "NodeStatus", js.undefined)
+    inline def setNodeStatusUndefined: Self = StObject.set(x, "NodeStatus", js.undefined)
     
-    @scala.inline
-    def setParameterGroupStatus(value: String): Self = StObject.set(x, "ParameterGroupStatus", value.asInstanceOf[js.Any])
+    inline def setParameterGroupStatus(value: String): Self = StObject.set(x, "ParameterGroupStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterGroupStatusUndefined: Self = StObject.set(x, "ParameterGroupStatus", js.undefined)
+    inline def setParameterGroupStatusUndefined: Self = StObject.set(x, "ParameterGroupStatus", js.undefined)
   }
 }

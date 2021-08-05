@@ -36,8 +36,7 @@ object floatingHelperContentUniDriverMod {
   }
   object FloatingHelperContentUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       clickActionButton: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
@@ -57,41 +56,29 @@ object floatingHelperContentUniDriverMod {
       __obj.asInstanceOf[FloatingHelperContentUniDriver]
     }
     
-    @scala.inline
-    implicit class FloatingHelperContentUniDriverMutableBuilder[Self <: FloatingHelperContentUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: FloatingHelperContentUniDriver](x: Self) {
       
-      @scala.inline
-      def setClickActionButton(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickActionButton", js.Any.fromFunction0(value))
+      inline def setClickActionButton(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickActionButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetActionButtonText(value: () => js.Promise[String]): Self = StObject.set(x, "getActionButtonText", js.Any.fromFunction0(value))
+      inline def setGetActionButtonText(value: () => js.Promise[String]): Self = StObject.set(x, "getActionButtonText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetBodyContent(value: () => js.Promise[String]): Self = StObject.set(x, "getBodyContent", js.Any.fromFunction0(value))
+      inline def setGetBodyContent(value: () => js.Promise[String]): Self = StObject.set(x, "getBodyContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFooter(value: () => js.Promise[HTMLElement]): Self = StObject.set(x, "getFooter", js.Any.fromFunction0(value))
+      inline def setGetFooter(value: () => js.Promise[HTMLElement]): Self = StObject.set(x, "getFooter", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetImage(value: () => js.Promise[HTMLElement]): Self = StObject.set(x, "getImage", js.Any.fromFunction0(value))
+      inline def setGetImage(value: () => js.Promise[HTMLElement]): Self = StObject.set(x, "getImage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTitleContent(value: () => js.Promise[String]): Self = StObject.set(x, "getTitleContent", js.Any.fromFunction0(value))
+      inline def setGetTitleContent(value: () => js.Promise[String]): Self = StObject.set(x, "getTitleContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasActionButton(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasActionButton", js.Any.fromFunction0(value))
+      inline def setHasActionButton(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasActionButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasBody(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasBody", js.Any.fromFunction0(value))
+      inline def setHasBody(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasBody", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasFooter(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasFooter", js.Any.fromFunction0(value))
+      inline def setHasFooter(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasFooter", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasImage(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasImage", js.Any.fromFunction0(value))
+      inline def setHasImage(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasImage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasTitle(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasTitle", js.Any.fromFunction0(value))
+      inline def setHasTitle(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasTitle", js.Any.fromFunction0(value))
     }
   }
 }

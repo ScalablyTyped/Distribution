@@ -38,8 +38,7 @@ trait XNameAccess
 }
 object XNameAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementNames: SafeArray[String],
     ElementType: `type`,
     acquire: () => Unit,
@@ -55,19 +54,14 @@ object XNameAccess {
     __obj.asInstanceOf[XNameAccess]
   }
   
-  @scala.inline
-  implicit class XNameAccessMutableBuilder[Self <: XNameAccess] (val x: Self) extends AnyVal {
+  extension [Self <: XNameAccess](x: Self) {
     
-    @scala.inline
-    def setElementNames(value: SafeArray[String]): Self = StObject.set(x, "ElementNames", value.asInstanceOf[js.Any])
+    inline def setElementNames(value: SafeArray[String]): Self = StObject.set(x, "ElementNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetByName(value: String => js.Any): Self = StObject.set(x, "getByName", js.Any.fromFunction1(value))
+    inline def setGetByName(value: String => js.Any): Self = StObject.set(x, "getByName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetElementNames(value: () => SafeArray[String]): Self = StObject.set(x, "getElementNames", js.Any.fromFunction0(value))
+    inline def setGetElementNames(value: () => SafeArray[String]): Self = StObject.set(x, "getElementNames", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasByName(value: String => Boolean): Self = StObject.set(x, "hasByName", js.Any.fromFunction1(value))
+    inline def setHasByName(value: String => Boolean): Self = StObject.set(x, "hasByName", js.Any.fromFunction1(value))
   }
 }

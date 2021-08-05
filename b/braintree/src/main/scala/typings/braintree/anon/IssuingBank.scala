@@ -12,19 +12,15 @@ trait IssuingBank extends StObject {
 }
 object IssuingBank {
   
-  @scala.inline
-  def apply(CountryOfIssuance: String, IssuingBank: String): IssuingBank = {
+  inline def apply(CountryOfIssuance: String, IssuingBank: String): IssuingBank = {
     val __obj = js.Dynamic.literal(CountryOfIssuance = CountryOfIssuance.asInstanceOf[js.Any], IssuingBank = IssuingBank.asInstanceOf[js.Any])
     __obj.asInstanceOf[IssuingBank]
   }
   
-  @scala.inline
-  implicit class IssuingBankMutableBuilder[Self <: IssuingBank] (val x: Self) extends AnyVal {
+  extension [Self <: IssuingBank](x: Self) {
     
-    @scala.inline
-    def setCountryOfIssuance(value: String): Self = StObject.set(x, "CountryOfIssuance", value.asInstanceOf[js.Any])
+    inline def setCountryOfIssuance(value: String): Self = StObject.set(x, "CountryOfIssuance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuingBank(value: String): Self = StObject.set(x, "IssuingBank", value.asInstanceOf[js.Any])
+    inline def setIssuingBank(value: String): Self = StObject.set(x, "IssuingBank", value.asInstanceOf[js.Any])
   }
 }

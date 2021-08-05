@@ -56,109 +56,75 @@ trait TransferCounters extends StObject {
 }
 object TransferCounters {
   
-  @scala.inline
-  def apply(): TransferCounters = {
+  inline def apply(): TransferCounters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TransferCounters]
   }
   
-  @scala.inline
-  implicit class TransferCountersMutableBuilder[Self <: TransferCounters] (val x: Self) extends AnyVal {
+  extension [Self <: TransferCounters](x: Self) {
     
-    @scala.inline
-    def setBytesCopiedToSink(value: String): Self = StObject.set(x, "bytesCopiedToSink", value.asInstanceOf[js.Any])
+    inline def setBytesCopiedToSink(value: String): Self = StObject.set(x, "bytesCopiedToSink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesCopiedToSinkUndefined: Self = StObject.set(x, "bytesCopiedToSink", js.undefined)
+    inline def setBytesCopiedToSinkUndefined: Self = StObject.set(x, "bytesCopiedToSink", js.undefined)
     
-    @scala.inline
-    def setBytesDeletedFromSink(value: String): Self = StObject.set(x, "bytesDeletedFromSink", value.asInstanceOf[js.Any])
+    inline def setBytesDeletedFromSink(value: String): Self = StObject.set(x, "bytesDeletedFromSink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesDeletedFromSinkUndefined: Self = StObject.set(x, "bytesDeletedFromSink", js.undefined)
+    inline def setBytesDeletedFromSinkUndefined: Self = StObject.set(x, "bytesDeletedFromSink", js.undefined)
     
-    @scala.inline
-    def setBytesDeletedFromSource(value: String): Self = StObject.set(x, "bytesDeletedFromSource", value.asInstanceOf[js.Any])
+    inline def setBytesDeletedFromSource(value: String): Self = StObject.set(x, "bytesDeletedFromSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesDeletedFromSourceUndefined: Self = StObject.set(x, "bytesDeletedFromSource", js.undefined)
+    inline def setBytesDeletedFromSourceUndefined: Self = StObject.set(x, "bytesDeletedFromSource", js.undefined)
     
-    @scala.inline
-    def setBytesFailedToDeleteFromSink(value: String): Self = StObject.set(x, "bytesFailedToDeleteFromSink", value.asInstanceOf[js.Any])
+    inline def setBytesFailedToDeleteFromSink(value: String): Self = StObject.set(x, "bytesFailedToDeleteFromSink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesFailedToDeleteFromSinkUndefined: Self = StObject.set(x, "bytesFailedToDeleteFromSink", js.undefined)
+    inline def setBytesFailedToDeleteFromSinkUndefined: Self = StObject.set(x, "bytesFailedToDeleteFromSink", js.undefined)
     
-    @scala.inline
-    def setBytesFoundFromSource(value: String): Self = StObject.set(x, "bytesFoundFromSource", value.asInstanceOf[js.Any])
+    inline def setBytesFoundFromSource(value: String): Self = StObject.set(x, "bytesFoundFromSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesFoundFromSourceUndefined: Self = StObject.set(x, "bytesFoundFromSource", js.undefined)
+    inline def setBytesFoundFromSourceUndefined: Self = StObject.set(x, "bytesFoundFromSource", js.undefined)
     
-    @scala.inline
-    def setBytesFoundOnlyFromSink(value: String): Self = StObject.set(x, "bytesFoundOnlyFromSink", value.asInstanceOf[js.Any])
+    inline def setBytesFoundOnlyFromSink(value: String): Self = StObject.set(x, "bytesFoundOnlyFromSink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesFoundOnlyFromSinkUndefined: Self = StObject.set(x, "bytesFoundOnlyFromSink", js.undefined)
+    inline def setBytesFoundOnlyFromSinkUndefined: Self = StObject.set(x, "bytesFoundOnlyFromSink", js.undefined)
     
-    @scala.inline
-    def setBytesFromSourceFailed(value: String): Self = StObject.set(x, "bytesFromSourceFailed", value.asInstanceOf[js.Any])
+    inline def setBytesFromSourceFailed(value: String): Self = StObject.set(x, "bytesFromSourceFailed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesFromSourceFailedUndefined: Self = StObject.set(x, "bytesFromSourceFailed", js.undefined)
+    inline def setBytesFromSourceFailedUndefined: Self = StObject.set(x, "bytesFromSourceFailed", js.undefined)
     
-    @scala.inline
-    def setBytesFromSourceSkippedBySync(value: String): Self = StObject.set(x, "bytesFromSourceSkippedBySync", value.asInstanceOf[js.Any])
+    inline def setBytesFromSourceSkippedBySync(value: String): Self = StObject.set(x, "bytesFromSourceSkippedBySync", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesFromSourceSkippedBySyncUndefined: Self = StObject.set(x, "bytesFromSourceSkippedBySync", js.undefined)
+    inline def setBytesFromSourceSkippedBySyncUndefined: Self = StObject.set(x, "bytesFromSourceSkippedBySync", js.undefined)
     
-    @scala.inline
-    def setObjectsCopiedToSink(value: String): Self = StObject.set(x, "objectsCopiedToSink", value.asInstanceOf[js.Any])
+    inline def setObjectsCopiedToSink(value: String): Self = StObject.set(x, "objectsCopiedToSink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectsCopiedToSinkUndefined: Self = StObject.set(x, "objectsCopiedToSink", js.undefined)
+    inline def setObjectsCopiedToSinkUndefined: Self = StObject.set(x, "objectsCopiedToSink", js.undefined)
     
-    @scala.inline
-    def setObjectsDeletedFromSink(value: String): Self = StObject.set(x, "objectsDeletedFromSink", value.asInstanceOf[js.Any])
+    inline def setObjectsDeletedFromSink(value: String): Self = StObject.set(x, "objectsDeletedFromSink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectsDeletedFromSinkUndefined: Self = StObject.set(x, "objectsDeletedFromSink", js.undefined)
+    inline def setObjectsDeletedFromSinkUndefined: Self = StObject.set(x, "objectsDeletedFromSink", js.undefined)
     
-    @scala.inline
-    def setObjectsDeletedFromSource(value: String): Self = StObject.set(x, "objectsDeletedFromSource", value.asInstanceOf[js.Any])
+    inline def setObjectsDeletedFromSource(value: String): Self = StObject.set(x, "objectsDeletedFromSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectsDeletedFromSourceUndefined: Self = StObject.set(x, "objectsDeletedFromSource", js.undefined)
+    inline def setObjectsDeletedFromSourceUndefined: Self = StObject.set(x, "objectsDeletedFromSource", js.undefined)
     
-    @scala.inline
-    def setObjectsFailedToDeleteFromSink(value: String): Self = StObject.set(x, "objectsFailedToDeleteFromSink", value.asInstanceOf[js.Any])
+    inline def setObjectsFailedToDeleteFromSink(value: String): Self = StObject.set(x, "objectsFailedToDeleteFromSink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectsFailedToDeleteFromSinkUndefined: Self = StObject.set(x, "objectsFailedToDeleteFromSink", js.undefined)
+    inline def setObjectsFailedToDeleteFromSinkUndefined: Self = StObject.set(x, "objectsFailedToDeleteFromSink", js.undefined)
     
-    @scala.inline
-    def setObjectsFoundFromSource(value: String): Self = StObject.set(x, "objectsFoundFromSource", value.asInstanceOf[js.Any])
+    inline def setObjectsFoundFromSource(value: String): Self = StObject.set(x, "objectsFoundFromSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectsFoundFromSourceUndefined: Self = StObject.set(x, "objectsFoundFromSource", js.undefined)
+    inline def setObjectsFoundFromSourceUndefined: Self = StObject.set(x, "objectsFoundFromSource", js.undefined)
     
-    @scala.inline
-    def setObjectsFoundOnlyFromSink(value: String): Self = StObject.set(x, "objectsFoundOnlyFromSink", value.asInstanceOf[js.Any])
+    inline def setObjectsFoundOnlyFromSink(value: String): Self = StObject.set(x, "objectsFoundOnlyFromSink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectsFoundOnlyFromSinkUndefined: Self = StObject.set(x, "objectsFoundOnlyFromSink", js.undefined)
+    inline def setObjectsFoundOnlyFromSinkUndefined: Self = StObject.set(x, "objectsFoundOnlyFromSink", js.undefined)
     
-    @scala.inline
-    def setObjectsFromSourceFailed(value: String): Self = StObject.set(x, "objectsFromSourceFailed", value.asInstanceOf[js.Any])
+    inline def setObjectsFromSourceFailed(value: String): Self = StObject.set(x, "objectsFromSourceFailed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectsFromSourceFailedUndefined: Self = StObject.set(x, "objectsFromSourceFailed", js.undefined)
+    inline def setObjectsFromSourceFailedUndefined: Self = StObject.set(x, "objectsFromSourceFailed", js.undefined)
     
-    @scala.inline
-    def setObjectsFromSourceSkippedBySync(value: String): Self = StObject.set(x, "objectsFromSourceSkippedBySync", value.asInstanceOf[js.Any])
+    inline def setObjectsFromSourceSkippedBySync(value: String): Self = StObject.set(x, "objectsFromSourceSkippedBySync", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectsFromSourceSkippedBySyncUndefined: Self = StObject.set(x, "objectsFromSourceSkippedBySync", js.undefined)
+    inline def setObjectsFromSourceSkippedBySyncUndefined: Self = StObject.set(x, "objectsFromSourceSkippedBySync", js.undefined)
   }
 }

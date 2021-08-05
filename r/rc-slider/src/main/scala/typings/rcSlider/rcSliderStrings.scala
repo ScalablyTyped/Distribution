@@ -8,6 +8,5 @@ object rcSliderStrings {
   
   @js.native
   sealed trait visibles extends StObject
-  @scala.inline
-  def visibles: visibles = "visibles".asInstanceOf[visibles]
+  inline def visibles: visibles = "visibles".asInstanceOf[visibles]
 }

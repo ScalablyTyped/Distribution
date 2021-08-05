@@ -48,8 +48,7 @@ trait DERInteger
 }
 object DERInteger {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getEncodedHex: () => String,
     getFreshValueHex: () => String,
     getLengthHexFromValue: () => String,
@@ -67,16 +66,12 @@ object DERInteger {
     __obj.asInstanceOf[DERInteger]
   }
   
-  @scala.inline
-  implicit class DERIntegerMutableBuilder[Self <: DERInteger] (val x: Self) extends AnyVal {
+  extension [Self <: DERInteger](x: Self) {
     
-    @scala.inline
-    def setSetByBigInteger(value: BigInteger => Unit): Self = StObject.set(x, "setByBigInteger", js.Any.fromFunction1(value))
+    inline def setSetByBigInteger(value: BigInteger => Unit): Self = StObject.set(x, "setByBigInteger", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetByInteger(value: Double => Unit): Self = StObject.set(x, "setByInteger", js.Any.fromFunction1(value))
+    inline def setSetByInteger(value: Double => Unit): Self = StObject.set(x, "setByInteger", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetValueHex(value: String => Unit): Self = StObject.set(x, "setValueHex", js.Any.fromFunction1(value))
+    inline def setSetValueHex(value: String => Unit): Self = StObject.set(x, "setValueHex", js.Any.fromFunction1(value))
   }
 }

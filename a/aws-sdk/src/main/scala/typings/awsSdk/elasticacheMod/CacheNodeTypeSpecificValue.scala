@@ -18,25 +18,19 @@ trait CacheNodeTypeSpecificValue extends StObject {
 }
 object CacheNodeTypeSpecificValue {
   
-  @scala.inline
-  def apply(): CacheNodeTypeSpecificValue = {
+  inline def apply(): CacheNodeTypeSpecificValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CacheNodeTypeSpecificValue]
   }
   
-  @scala.inline
-  implicit class CacheNodeTypeSpecificValueMutableBuilder[Self <: CacheNodeTypeSpecificValue] (val x: Self) extends AnyVal {
+  extension [Self <: CacheNodeTypeSpecificValue](x: Self) {
     
-    @scala.inline
-    def setCacheNodeType(value: String): Self = StObject.set(x, "CacheNodeType", value.asInstanceOf[js.Any])
+    inline def setCacheNodeType(value: String): Self = StObject.set(x, "CacheNodeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheNodeTypeUndefined: Self = StObject.set(x, "CacheNodeType", js.undefined)
+    inline def setCacheNodeTypeUndefined: Self = StObject.set(x, "CacheNodeType", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

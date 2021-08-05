@@ -18,8 +18,8 @@ object agentMod {
   @js.native
   trait SocksProxyAgent extends Agent {
     
-    var lookup: js.Any = js.native
+    /* private */ var lookup: js.Any = js.native
     
-    var proxy: js.Any = js.native
+    /* private */ var proxy: js.Any = js.native
   }
 }

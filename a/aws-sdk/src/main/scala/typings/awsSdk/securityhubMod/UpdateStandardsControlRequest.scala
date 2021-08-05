@@ -23,28 +23,21 @@ trait UpdateStandardsControlRequest extends StObject {
 }
 object UpdateStandardsControlRequest {
   
-  @scala.inline
-  def apply(StandardsControlArn: NonEmptyString): UpdateStandardsControlRequest = {
+  inline def apply(StandardsControlArn: NonEmptyString): UpdateStandardsControlRequest = {
     val __obj = js.Dynamic.literal(StandardsControlArn = StandardsControlArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateStandardsControlRequest]
   }
   
-  @scala.inline
-  implicit class UpdateStandardsControlRequestMutableBuilder[Self <: UpdateStandardsControlRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateStandardsControlRequest](x: Self) {
     
-    @scala.inline
-    def setControlStatus(value: ControlStatus): Self = StObject.set(x, "ControlStatus", value.asInstanceOf[js.Any])
+    inline def setControlStatus(value: ControlStatus): Self = StObject.set(x, "ControlStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlStatusUndefined: Self = StObject.set(x, "ControlStatus", js.undefined)
+    inline def setControlStatusUndefined: Self = StObject.set(x, "ControlStatus", js.undefined)
     
-    @scala.inline
-    def setDisabledReason(value: NonEmptyString): Self = StObject.set(x, "DisabledReason", value.asInstanceOf[js.Any])
+    inline def setDisabledReason(value: NonEmptyString): Self = StObject.set(x, "DisabledReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledReasonUndefined: Self = StObject.set(x, "DisabledReason", js.undefined)
+    inline def setDisabledReasonUndefined: Self = StObject.set(x, "DisabledReason", js.undefined)
     
-    @scala.inline
-    def setStandardsControlArn(value: NonEmptyString): Self = StObject.set(x, "StandardsControlArn", value.asInstanceOf[js.Any])
+    inline def setStandardsControlArn(value: NonEmptyString): Self = StObject.set(x, "StandardsControlArn", value.asInstanceOf[js.Any])
   }
 }

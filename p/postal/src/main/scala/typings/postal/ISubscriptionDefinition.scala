@@ -45,8 +45,7 @@ trait ISubscriptionDefinition[T] extends StObject {
 }
 object ISubscriptionDefinition {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     callback: (T, /* envelope */ IEnvelope[T]) => Unit,
     channel: String,
     constraint: js.Function2[/* data */ T, /* envelope */ IEnvelope[T], Boolean] => ISubscriptionDefinition[T],
@@ -69,62 +68,44 @@ object ISubscriptionDefinition {
     __obj.asInstanceOf[ISubscriptionDefinition[T]]
   }
   
-  @scala.inline
-  implicit class ISubscriptionDefinitionMutableBuilder[Self <: ISubscriptionDefinition[?], T] (val x: Self & ISubscriptionDefinition[T]) extends AnyVal {
+  extension [Self <: ISubscriptionDefinition[?], T](x: Self & ISubscriptionDefinition[T]) {
     
-    @scala.inline
-    def setCallback(value: (T, /* envelope */ IEnvelope[T]) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+    inline def setCallback(value: (T, /* envelope */ IEnvelope[T]) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstraint(
+    inline def setConstraint(
       value: js.Function2[/* data */ T, /* envelope */ IEnvelope[T], Boolean] => ISubscriptionDefinition[T]
     ): Self = StObject.set(x, "constraint", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConstraints(
+    inline def setConstraints(
       value: js.Array[js.Function2[/* data */ T, /* envelope */ IEnvelope[T], Boolean]] => ISubscriptionDefinition[T]
     ): Self = StObject.set(x, "constraints", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setContext(value: js.Any => ISubscriptionDefinition[T]): Self = StObject.set(x, "context", js.Any.fromFunction1(value))
+    inline def setContext(value: js.Any => ISubscriptionDefinition[T]): Self = StObject.set(x, "context", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDebounce(value: Double => ISubscriptionDefinition[T]): Self = StObject.set(x, "debounce", js.Any.fromFunction1(value))
+    inline def setDebounce(value: Double => ISubscriptionDefinition[T]): Self = StObject.set(x, "debounce", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDefer(value: () => ISubscriptionDefinition[T]): Self = StObject.set(x, "defer", js.Any.fromFunction0(value))
+    inline def setDefer(value: () => ISubscriptionDefinition[T]): Self = StObject.set(x, "defer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDelay(value: Double => ISubscriptionDefinition[T]): Self = StObject.set(x, "delay", js.Any.fromFunction1(value))
+    inline def setDelay(value: Double => ISubscriptionDefinition[T]): Self = StObject.set(x, "delay", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDisposeAfter(value: Double => ISubscriptionDefinition[T]): Self = StObject.set(x, "disposeAfter", js.Any.fromFunction1(value))
+    inline def setDisposeAfter(value: Double => ISubscriptionDefinition[T]): Self = StObject.set(x, "disposeAfter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDistinct(value: () => ISubscriptionDefinition[T]): Self = StObject.set(x, "distinct", js.Any.fromFunction0(value))
+    inline def setDistinct(value: () => ISubscriptionDefinition[T]): Self = StObject.set(x, "distinct", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDistinctUntilChanged(value: () => ISubscriptionDefinition[T]): Self = StObject.set(x, "distinctUntilChanged", js.Any.fromFunction0(value))
+    inline def setDistinctUntilChanged(value: () => ISubscriptionDefinition[T]): Self = StObject.set(x, "distinctUntilChanged", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLogError(value: () => ISubscriptionDefinition[T]): Self = StObject.set(x, "logError", js.Any.fromFunction0(value))
+    inline def setLogError(value: () => ISubscriptionDefinition[T]): Self = StObject.set(x, "logError", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnce(value: () => ISubscriptionDefinition[T]): Self = StObject.set(x, "once", js.Any.fromFunction0(value))
+    inline def setOnce(value: () => ISubscriptionDefinition[T]): Self = StObject.set(x, "once", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSubscribe(value: ICallback[T] => ISubscriptionDefinition[T]): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
+    inline def setSubscribe(value: ICallback[T] => ISubscriptionDefinition[T]): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setThrottle(value: Double => ISubscriptionDefinition[T]): Self = StObject.set(x, "throttle", js.Any.fromFunction1(value))
+    inline def setThrottle(value: Double => ISubscriptionDefinition[T]): Self = StObject.set(x, "throttle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
+    inline def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
   }
 }

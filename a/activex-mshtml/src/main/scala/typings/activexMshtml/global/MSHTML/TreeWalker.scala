@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.TreeWalker")
 @js.native
-class TreeWalker protected ()
+/* private */ class TreeWalker ()
   extends StObject
      with typings.activexMshtml.MSHTML.TreeWalker {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.TreeWalker_typekey")
   var MSHTMLDotTreeWalker_typekey: typings.activexMshtml.MSHTML.TreeWalker = js.native
   

@@ -20,8 +20,7 @@ trait DocumentColorProvider extends StObject {
 }
 object DocumentColorProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     provideColorPresentations: (ITextModel, IColorInformation, CancellationToken) => ProviderResult[js.Array[IColorPresentation]],
     provideDocumentColors: (ITextModel, CancellationToken) => ProviderResult[js.Array[IColorInformation]]
   ): DocumentColorProvider = {
@@ -29,15 +28,12 @@ object DocumentColorProvider {
     __obj.asInstanceOf[DocumentColorProvider]
   }
   
-  @scala.inline
-  implicit class DocumentColorProviderMutableBuilder[Self <: DocumentColorProvider] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentColorProvider](x: Self) {
     
-    @scala.inline
-    def setProvideColorPresentations(
+    inline def setProvideColorPresentations(
       value: (ITextModel, IColorInformation, CancellationToken) => ProviderResult[js.Array[IColorPresentation]]
     ): Self = StObject.set(x, "provideColorPresentations", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setProvideDocumentColors(value: (ITextModel, CancellationToken) => ProviderResult[js.Array[IColorInformation]]): Self = StObject.set(x, "provideDocumentColors", js.Any.fromFunction2(value))
+    inline def setProvideDocumentColors(value: (ITextModel, CancellationToken) => ProviderResult[js.Array[IColorInformation]]): Self = StObject.set(x, "provideDocumentColors", js.Any.fromFunction2(value))
   }
 }

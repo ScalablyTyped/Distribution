@@ -14,19 +14,15 @@ trait IN extends StObject {
 }
 object IN {
   
-  @scala.inline
-  def apply(): IN = {
+  inline def apply(): IN = {
     val __obj = js.Dynamic.literal(IN = "in", OUT = "out")
     __obj.asInstanceOf[IN]
   }
   
-  @scala.inline
-  implicit class INMutableBuilder[Self <: IN] (val x: Self) extends AnyVal {
+  extension [Self <: IN](x: Self) {
     
-    @scala.inline
-    def setIN(value: in_): Self = StObject.set(x, "IN", value.asInstanceOf[js.Any])
+    inline def setIN(value: in_): Self = StObject.set(x, "IN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOUT(value: out_): Self = StObject.set(x, "OUT", value.asInstanceOf[js.Any])
+    inline def setOUT(value: out_): Self = StObject.set(x, "OUT", value.asInstanceOf[js.Any])
   }
 }

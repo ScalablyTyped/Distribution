@@ -10,19 +10,15 @@ trait PlotHistogramAnimationOptions extends StObject {
 }
 object PlotHistogramAnimationOptions {
   
-  @scala.inline
-  def apply(): PlotHistogramAnimationOptions = {
+  inline def apply(): PlotHistogramAnimationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotHistogramAnimationOptions]
   }
   
-  @scala.inline
-  implicit class PlotHistogramAnimationOptionsMutableBuilder[Self <: PlotHistogramAnimationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotHistogramAnimationOptions](x: Self) {
     
-    @scala.inline
-    def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
+    inline def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
+    inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
   }
 }

@@ -35,8 +35,7 @@ trait TableColumn
 }
 object TableColumn {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     IsStartOfNewPage: Boolean,
     IsVisible: Boolean,
     Name: String,
@@ -63,19 +62,14 @@ object TableColumn {
     __obj.asInstanceOf[TableColumn]
   }
   
-  @scala.inline
-  implicit class TableColumnMutableBuilder[Self <: TableColumn] (val x: Self) extends AnyVal {
+  extension [Self <: TableColumn](x: Self) {
     
-    @scala.inline
-    def setIsStartOfNewPage(value: Boolean): Self = StObject.set(x, "IsStartOfNewPage", value.asInstanceOf[js.Any])
+    inline def setIsStartOfNewPage(value: Boolean): Self = StObject.set(x, "IsStartOfNewPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsVisible(value: Boolean): Self = StObject.set(x, "IsVisible", value.asInstanceOf[js.Any])
+    inline def setIsVisible(value: Boolean): Self = StObject.set(x, "IsVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptimalWidth(value: Boolean): Self = StObject.set(x, "OptimalWidth", value.asInstanceOf[js.Any])
+    inline def setOptimalWidth(value: Boolean): Self = StObject.set(x, "OptimalWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
   }
 }

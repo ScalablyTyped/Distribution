@@ -91,8 +91,7 @@ trait XDocumentRepository
 }
 object XDocumentRepository {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GraphNames: SafeArray[XURI],
     createBlankNode: () => XBlankNode,
     createGraph: XURI => XNamedGraph,
@@ -114,19 +113,14 @@ object XDocumentRepository {
     __obj.asInstanceOf[XDocumentRepository]
   }
   
-  @scala.inline
-  implicit class XDocumentRepositoryMutableBuilder[Self <: XDocumentRepository] (val x: Self) extends AnyVal {
+  extension [Self <: XDocumentRepository](x: Self) {
     
-    @scala.inline
-    def setGetStatementRDFa(value: XMetadatable => Pair[SafeArray[Statement], Boolean]): Self = StObject.set(x, "getStatementRDFa", js.Any.fromFunction1(value))
+    inline def setGetStatementRDFa(value: XMetadatable => Pair[SafeArray[Statement], Boolean]): Self = StObject.set(x, "getStatementRDFa", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetStatementsRDFa(value: (XResource, XURI, XNode) => XEnumeration): Self = StObject.set(x, "getStatementsRDFa", js.Any.fromFunction3(value))
+    inline def setGetStatementsRDFa(value: (XResource, XURI, XNode) => XEnumeration): Self = StObject.set(x, "getStatementsRDFa", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRemoveStatementRDFa(value: XMetadatable => Unit): Self = StObject.set(x, "removeStatementRDFa", js.Any.fromFunction1(value))
+    inline def setRemoveStatementRDFa(value: XMetadatable => Unit): Self = StObject.set(x, "removeStatementRDFa", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetStatementRDFa(value: (XResource, SeqEquiv[XURI], XMetadatable, String, XURI) => Unit): Self = StObject.set(x, "setStatementRDFa", js.Any.fromFunction5(value))
+    inline def setSetStatementRDFa(value: (XResource, SeqEquiv[XURI], XMetadatable, String, XURI) => Unit): Self = StObject.set(x, "setStatementRDFa", js.Any.fromFunction5(value))
   }
 }

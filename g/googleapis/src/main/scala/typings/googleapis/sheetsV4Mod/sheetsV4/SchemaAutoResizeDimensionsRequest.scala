@@ -17,19 +17,15 @@ trait SchemaAutoResizeDimensionsRequest extends StObject {
 }
 object SchemaAutoResizeDimensionsRequest {
   
-  @scala.inline
-  def apply(): SchemaAutoResizeDimensionsRequest = {
+  inline def apply(): SchemaAutoResizeDimensionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAutoResizeDimensionsRequest]
   }
   
-  @scala.inline
-  implicit class SchemaAutoResizeDimensionsRequestMutableBuilder[Self <: SchemaAutoResizeDimensionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAutoResizeDimensionsRequest](x: Self) {
     
-    @scala.inline
-    def setDimensions(value: SchemaDimensionRange): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: SchemaDimensionRange): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
+    inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
   }
 }

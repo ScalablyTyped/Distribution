@@ -13,16 +13,13 @@ trait VirtualGatewayTlsValidationContext extends StObject {
 }
 object VirtualGatewayTlsValidationContext {
   
-  @scala.inline
-  def apply(trust: VirtualGatewayTlsValidationContextTrust): VirtualGatewayTlsValidationContext = {
+  inline def apply(trust: VirtualGatewayTlsValidationContextTrust): VirtualGatewayTlsValidationContext = {
     val __obj = js.Dynamic.literal(trust = trust.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualGatewayTlsValidationContext]
   }
   
-  @scala.inline
-  implicit class VirtualGatewayTlsValidationContextMutableBuilder[Self <: VirtualGatewayTlsValidationContext] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualGatewayTlsValidationContext](x: Self) {
     
-    @scala.inline
-    def setTrust(value: VirtualGatewayTlsValidationContextTrust): Self = StObject.set(x, "trust", value.asInstanceOf[js.Any])
+    inline def setTrust(value: VirtualGatewayTlsValidationContextTrust): Self = StObject.set(x, "trust", value.asInstanceOf[js.Any])
   }
 }

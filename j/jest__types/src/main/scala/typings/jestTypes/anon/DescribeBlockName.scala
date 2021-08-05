@@ -16,19 +16,15 @@ trait DescribeBlockName
 }
 object DescribeBlockName {
   
-  @scala.inline
-  def apply(describeBlock: typings.jestTypes.circusMod.DescribeBlock): DescribeBlockName = {
+  inline def apply(describeBlock: typings.jestTypes.circusMod.DescribeBlock): DescribeBlockName = {
     val __obj = js.Dynamic.literal(describeBlock = describeBlock.asInstanceOf[js.Any], name = "run_describe_start")
     __obj.asInstanceOf[DescribeBlockName]
   }
   
-  @scala.inline
-  implicit class DescribeBlockNameMutableBuilder[Self <: DescribeBlockName] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeBlockName](x: Self) {
     
-    @scala.inline
-    def setDescribeBlock(value: typings.jestTypes.circusMod.DescribeBlock): Self = StObject.set(x, "describeBlock", value.asInstanceOf[js.Any])
+    inline def setDescribeBlock(value: typings.jestTypes.circusMod.DescribeBlock): Self = StObject.set(x, "describeBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: run_describe_start): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: run_describe_start): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

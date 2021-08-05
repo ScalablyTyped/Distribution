@@ -18,23 +18,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object TSIntersectionType_ {
   
-  @scala.inline
-  def apply(types: js.Array[TSType]): TSIntersectionType_ = {
+  inline def apply(types: js.Array[TSType]): TSIntersectionType_ = {
     val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("TSIntersectionType")
     __obj.asInstanceOf[TSIntersectionType_]
   }
   
-  @scala.inline
-  implicit class TSIntersectionType_MutableBuilder[Self <: TSIntersectionType_] (val x: Self) extends AnyVal {
+  extension [Self <: TSIntersectionType_](x: Self) {
     
-    @scala.inline
-    def setType(value: TSIntersectionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TSIntersectionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypes(value: js.Array[TSType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: js.Array[TSType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesVarargs(value: TSType*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: TSType*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

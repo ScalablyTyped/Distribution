@@ -31,8 +31,7 @@ object jasmineUtilMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def predicate(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("predicate")().asInstanceOf[Boolean]
+    inline def predicate(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("predicate")().asInstanceOf[Boolean]
   }
   
   object HAS_WORKER {
@@ -41,8 +40,7 @@ object jasmineUtilMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def predicate(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("predicate")().asInstanceOf[Boolean]
+    inline def predicate(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("predicate")().asInstanceOf[Boolean]
   }
   
   @JSImport("@tensorflow/tfjs-core/dist/jasmine_util", "NODE_ENVS")
@@ -61,23 +59,17 @@ object jasmineUtilMod {
   @js.native
   class TestKernelBackend () extends KernelBackend
   
-  @scala.inline
-  def describeWithFlags(name: String, constraints: Constraints, tests: js.Function1[/* env */ TestEnv, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("describeWithFlags")(name.asInstanceOf[js.Any], constraints.asInstanceOf[js.Any], tests.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def describeWithFlags(name: String, constraints: Constraints, tests: js.Function1[/* env */ TestEnv, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("describeWithFlags")(name.asInstanceOf[js.Any], constraints.asInstanceOf[js.Any], tests.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def envSatisfiesConstraints(env: Environment, testEnv: TestEnv, constraints: Constraints): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("envSatisfiesConstraints")(env.asInstanceOf[js.Any], testEnv.asInstanceOf[js.Any], constraints.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def envSatisfiesConstraints(env: Environment, testEnv: TestEnv, constraints: Constraints): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("envSatisfiesConstraints")(env.asInstanceOf[js.Any], testEnv.asInstanceOf[js.Any], constraints.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def parseTestEnvFromKarmaFlags(args: js.Array[String], registeredTestEnvs: js.Array[TestEnv]): TestEnv = (^.asInstanceOf[js.Dynamic].applyDynamic("parseTestEnvFromKarmaFlags")(args.asInstanceOf[js.Any], registeredTestEnvs.asInstanceOf[js.Any])).asInstanceOf[TestEnv]
+  inline def parseTestEnvFromKarmaFlags(args: js.Array[String], registeredTestEnvs: js.Array[TestEnv]): TestEnv = (^.asInstanceOf[js.Dynamic].applyDynamic("parseTestEnvFromKarmaFlags")(args.asInstanceOf[js.Any], registeredTestEnvs.asInstanceOf[js.Any])).asInstanceOf[TestEnv]
   
-  @scala.inline
-  def registerTestEnv(testEnv: TestEnv): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerTestEnv")(testEnv.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def registerTestEnv(testEnv: TestEnv): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerTestEnv")(testEnv.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setTestEnvs(testEnvs: js.Array[TestEnv]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTestEnvs")(testEnvs.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setTestEnvs(testEnvs: js.Array[TestEnv]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTestEnvs")(testEnvs.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setupTestFilters(testFilters: js.Array[TestFilter], customInclude: js.Function1[/* name */ String, Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setupTestFilters")(testFilters.asInstanceOf[js.Any], customInclude.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setupTestFilters(testFilters: js.Array[TestFilter], customInclude: js.Function1[/* name */ String, Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setupTestFilters")(testFilters.asInstanceOf[js.Any], customInclude.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait Constraints extends StObject {
     
@@ -87,26 +79,20 @@ object jasmineUtilMod {
   }
   object Constraints {
     
-    @scala.inline
-    def apply(): Constraints = {
+    inline def apply(): Constraints = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Constraints]
     }
     
-    @scala.inline
-    implicit class ConstraintsMutableBuilder[Self <: Constraints] (val x: Self) extends AnyVal {
+    extension [Self <: Constraints](x: Self) {
       
-      @scala.inline
-      def setFlags(value: Flags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: Flags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
+      inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
       
-      @scala.inline
-      def setPredicate(value: /* testEnv */ TestEnv => Boolean): Self = StObject.set(x, "predicate", js.Any.fromFunction1(value))
+      inline def setPredicate(value: /* testEnv */ TestEnv => Boolean): Self = StObject.set(x, "predicate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPredicateUndefined: Self = StObject.set(x, "predicate", js.undefined)
+      inline def setPredicateUndefined: Self = StObject.set(x, "predicate", js.undefined)
     }
   }
   
@@ -122,32 +108,24 @@ object jasmineUtilMod {
   }
   object TestEnv {
     
-    @scala.inline
-    def apply(backendName: String, name: String): TestEnv = {
+    inline def apply(backendName: String, name: String): TestEnv = {
       val __obj = js.Dynamic.literal(backendName = backendName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[TestEnv]
     }
     
-    @scala.inline
-    implicit class TestEnvMutableBuilder[Self <: TestEnv] (val x: Self) extends AnyVal {
+    extension [Self <: TestEnv](x: Self) {
       
-      @scala.inline
-      def setBackendName(value: String): Self = StObject.set(x, "backendName", value.asInstanceOf[js.Any])
+      inline def setBackendName(value: String): Self = StObject.set(x, "backendName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlags(value: Flags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: Flags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
+      inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
       
-      @scala.inline
-      def setIsDataSync(value: Boolean): Self = StObject.set(x, "isDataSync", value.asInstanceOf[js.Any])
+      inline def setIsDataSync(value: Boolean): Self = StObject.set(x, "isDataSync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDataSyncUndefined: Self = StObject.set(x, "isDataSync", js.undefined)
+      inline def setIsDataSyncUndefined: Self = StObject.set(x, "isDataSync", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -161,35 +139,26 @@ object jasmineUtilMod {
   }
   object TestFilter {
     
-    @scala.inline
-    def apply(): TestFilter = {
+    inline def apply(): TestFilter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TestFilter]
     }
     
-    @scala.inline
-    implicit class TestFilterMutableBuilder[Self <: TestFilter] (val x: Self) extends AnyVal {
+    extension [Self <: TestFilter](x: Self) {
       
-      @scala.inline
-      def setExcludes(value: js.Array[String]): Self = StObject.set(x, "excludes", value.asInstanceOf[js.Any])
+      inline def setExcludes(value: js.Array[String]): Self = StObject.set(x, "excludes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludesUndefined: Self = StObject.set(x, "excludes", js.undefined)
+      inline def setExcludesUndefined: Self = StObject.set(x, "excludes", js.undefined)
       
-      @scala.inline
-      def setExcludesVarargs(value: String*): Self = StObject.set(x, "excludes", js.Array(value :_*))
+      inline def setExcludesVarargs(value: String*): Self = StObject.set(x, "excludes", js.Array(value :_*))
       
-      @scala.inline
-      def setInclude(value: String): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: String): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+      inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      @scala.inline
-      def setStartsWith(value: String): Self = StObject.set(x, "startsWith", value.asInstanceOf[js.Any])
+      inline def setStartsWith(value: String): Self = StObject.set(x, "startsWith", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartsWithUndefined: Self = StObject.set(x, "startsWith", js.undefined)
+      inline def setStartsWithUndefined: Self = StObject.set(x, "startsWith", js.undefined)
     }
   }
 }

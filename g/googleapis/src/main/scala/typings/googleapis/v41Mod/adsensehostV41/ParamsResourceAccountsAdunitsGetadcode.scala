@@ -39,46 +39,33 @@ trait ParamsResourceAccountsAdunitsGetadcode
 }
 object ParamsResourceAccountsAdunitsGetadcode {
   
-  @scala.inline
-  def apply(): ParamsResourceAccountsAdunitsGetadcode = {
+  inline def apply(): ParamsResourceAccountsAdunitsGetadcode = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceAccountsAdunitsGetadcode]
   }
   
-  @scala.inline
-  implicit class ParamsResourceAccountsAdunitsGetadcodeMutableBuilder[Self <: ParamsResourceAccountsAdunitsGetadcode] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceAccountsAdunitsGetadcode](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setAdClientId(value: String): Self = StObject.set(x, "adClientId", value.asInstanceOf[js.Any])
+    inline def setAdClientId(value: String): Self = StObject.set(x, "adClientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdClientIdUndefined: Self = StObject.set(x, "adClientId", js.undefined)
+    inline def setAdClientIdUndefined: Self = StObject.set(x, "adClientId", js.undefined)
     
-    @scala.inline
-    def setAdUnitId(value: String): Self = StObject.set(x, "adUnitId", value.asInstanceOf[js.Any])
+    inline def setAdUnitId(value: String): Self = StObject.set(x, "adUnitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdUnitIdUndefined: Self = StObject.set(x, "adUnitId", js.undefined)
+    inline def setAdUnitIdUndefined: Self = StObject.set(x, "adUnitId", js.undefined)
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setHostCustomChannelId(value: js.Array[String]): Self = StObject.set(x, "hostCustomChannelId", value.asInstanceOf[js.Any])
+    inline def setHostCustomChannelId(value: js.Array[String]): Self = StObject.set(x, "hostCustomChannelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostCustomChannelIdUndefined: Self = StObject.set(x, "hostCustomChannelId", js.undefined)
+    inline def setHostCustomChannelIdUndefined: Self = StObject.set(x, "hostCustomChannelId", js.undefined)
     
-    @scala.inline
-    def setHostCustomChannelIdVarargs(value: String*): Self = StObject.set(x, "hostCustomChannelId", js.Array(value :_*))
+    inline def setHostCustomChannelIdVarargs(value: String*): Self = StObject.set(x, "hostCustomChannelId", js.Array(value :_*))
   }
 }

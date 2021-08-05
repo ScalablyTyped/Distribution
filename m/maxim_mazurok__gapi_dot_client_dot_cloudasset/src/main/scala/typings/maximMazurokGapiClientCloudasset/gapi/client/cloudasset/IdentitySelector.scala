@@ -15,19 +15,15 @@ trait IdentitySelector extends StObject {
 }
 object IdentitySelector {
   
-  @scala.inline
-  def apply(): IdentitySelector = {
+  inline def apply(): IdentitySelector = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IdentitySelector]
   }
   
-  @scala.inline
-  implicit class IdentitySelectorMutableBuilder[Self <: IdentitySelector] (val x: Self) extends AnyVal {
+  extension [Self <: IdentitySelector](x: Self) {
     
-    @scala.inline
-    def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+    inline def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
+    inline def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
   }
 }

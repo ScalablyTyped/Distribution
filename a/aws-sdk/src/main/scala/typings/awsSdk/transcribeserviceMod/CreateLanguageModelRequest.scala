@@ -28,8 +28,7 @@ trait CreateLanguageModelRequest extends StObject {
 }
 object CreateLanguageModelRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BaseModelName: BaseModelName,
     InputDataConfig: InputDataConfig,
     LanguageCode: CLMLanguageCode,
@@ -39,19 +38,14 @@ object CreateLanguageModelRequest {
     __obj.asInstanceOf[CreateLanguageModelRequest]
   }
   
-  @scala.inline
-  implicit class CreateLanguageModelRequestMutableBuilder[Self <: CreateLanguageModelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateLanguageModelRequest](x: Self) {
     
-    @scala.inline
-    def setBaseModelName(value: BaseModelName): Self = StObject.set(x, "BaseModelName", value.asInstanceOf[js.Any])
+    inline def setBaseModelName(value: BaseModelName): Self = StObject.set(x, "BaseModelName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputDataConfig(value: InputDataConfig): Self = StObject.set(x, "InputDataConfig", value.asInstanceOf[js.Any])
+    inline def setInputDataConfig(value: InputDataConfig): Self = StObject.set(x, "InputDataConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCode(value: CLMLanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: CLMLanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelName(value: ModelName): Self = StObject.set(x, "ModelName", value.asInstanceOf[js.Any])
+    inline def setModelName(value: ModelName): Self = StObject.set(x, "ModelName", value.asInstanceOf[js.Any])
   }
 }

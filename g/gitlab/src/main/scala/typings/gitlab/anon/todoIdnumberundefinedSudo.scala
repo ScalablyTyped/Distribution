@@ -13,25 +13,19 @@ trait todoIdnumberundefinedSudo extends StObject {
 }
 object todoIdnumberundefinedSudo {
   
-  @scala.inline
-  def apply(): todoIdnumberundefinedSudo = {
+  inline def apply(): todoIdnumberundefinedSudo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[todoIdnumberundefinedSudo]
   }
   
-  @scala.inline
-  implicit class todoIdnumberundefinedSudoMutableBuilder[Self <: todoIdnumberundefinedSudo] (val x: Self) extends AnyVal {
+  extension [Self <: todoIdnumberundefinedSudo](x: Self) {
     
-    @scala.inline
-    def setSudo(value: String | Double): Self = StObject.set(x, "sudo", value.asInstanceOf[js.Any])
+    inline def setSudo(value: String | Double): Self = StObject.set(x, "sudo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSudoUndefined: Self = StObject.set(x, "sudo", js.undefined)
+    inline def setSudoUndefined: Self = StObject.set(x, "sudo", js.undefined)
     
-    @scala.inline
-    def setTodoId(value: Double): Self = StObject.set(x, "todoId", value.asInstanceOf[js.Any])
+    inline def setTodoId(value: Double): Self = StObject.set(x, "todoId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTodoIdUndefined: Self = StObject.set(x, "todoId", js.undefined)
+    inline def setTodoIdUndefined: Self = StObject.set(x, "todoId", js.undefined)
   }
 }

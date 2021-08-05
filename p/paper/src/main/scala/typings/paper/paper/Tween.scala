@@ -45,29 +45,22 @@ trait Tween extends StObject {
 }
 object Tween {
   
-  @scala.inline
-  def apply(start: () => Tween, stop: () => Tween, `then`: js.Function => Tween): Tween = {
+  inline def apply(start: () => Tween, stop: () => Tween, `then`: js.Function => Tween): Tween = {
     val __obj = js.Dynamic.literal(start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop), onUpdate = null)
     __obj.updateDynamic("then")(js.Any.fromFunction1(`then`))
     __obj.asInstanceOf[Tween]
   }
   
-  @scala.inline
-  implicit class TweenMutableBuilder[Self <: Tween] (val x: Self) extends AnyVal {
+  extension [Self <: Tween](x: Self) {
     
-    @scala.inline
-    def setOnUpdate(value: js.Function): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
+    inline def setOnUpdate(value: js.Function): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnUpdateNull: Self = StObject.set(x, "onUpdate", null)
+    inline def setOnUpdateNull: Self = StObject.set(x, "onUpdate", null)
     
-    @scala.inline
-    def setStart(value: () => Tween): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+    inline def setStart(value: () => Tween): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStop(value: () => Tween): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+    inline def setStop(value: () => Tween): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setThen(value: js.Function => Tween): Self = StObject.set(x, "then", js.Any.fromFunction1(value))
+    inline def setThen(value: js.Function => Tween): Self = StObject.set(x, "then", js.Any.fromFunction1(value))
   }
 }

@@ -86,23 +86,18 @@ object Popups {
   }
   object IUICommand {
     
-    @scala.inline
-    def apply(id: js.Any, invoked: /* command */ IUICommand => Unit, label: String): IUICommand = {
+    inline def apply(id: js.Any, invoked: /* command */ IUICommand => Unit, label: String): IUICommand = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], invoked = js.Any.fromFunction1(invoked), label = label.asInstanceOf[js.Any])
       __obj.asInstanceOf[IUICommand]
     }
     
-    @scala.inline
-    implicit class IUICommandMutableBuilder[Self <: IUICommand] (val x: Self) extends AnyVal {
+    extension [Self <: IUICommand](x: Self) {
       
-      @scala.inline
-      def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvoked(value: /* command */ IUICommand => Unit): Self = StObject.set(x, "invoked", js.Any.fromFunction1(value))
+      inline def setInvoked(value: /* command */ IUICommand => Unit): Self = StObject.set(x, "invoked", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     }
   }
   
@@ -135,8 +130,7 @@ object Popups {
   }
   object MessageDialog {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cancelCommandIndex: Double,
       commands: IVector[IUICommand],
       content: String,
@@ -149,29 +143,21 @@ object Popups {
       __obj.asInstanceOf[MessageDialog]
     }
     
-    @scala.inline
-    implicit class MessageDialogMutableBuilder[Self <: MessageDialog] (val x: Self) extends AnyVal {
+    extension [Self <: MessageDialog](x: Self) {
       
-      @scala.inline
-      def setCancelCommandIndex(value: Double): Self = StObject.set(x, "cancelCommandIndex", value.asInstanceOf[js.Any])
+      inline def setCancelCommandIndex(value: Double): Self = StObject.set(x, "cancelCommandIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommands(value: IVector[IUICommand]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
+      inline def setCommands(value: IVector[IUICommand]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultCommandIndex(value: Double): Self = StObject.set(x, "defaultCommandIndex", value.asInstanceOf[js.Any])
+      inline def setDefaultCommandIndex(value: Double): Self = StObject.set(x, "defaultCommandIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: MessageDialogOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: MessageDialogOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowAsync(value: () => IPromiseWithIAsyncOperation[IUICommand]): Self = StObject.set(x, "showAsync", js.Any.fromFunction0(value))
+      inline def setShowAsync(value: () => IPromiseWithIAsyncOperation[IUICommand]): Self = StObject.set(x, "showAsync", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -221,23 +207,18 @@ object Popups {
   }
   object UICommand {
     
-    @scala.inline
-    def apply(id: js.Any, invoked: /* command */ IUICommand => Unit, label: String): UICommand = {
+    inline def apply(id: js.Any, invoked: /* command */ IUICommand => Unit, label: String): UICommand = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], invoked = js.Any.fromFunction1(invoked), label = label.asInstanceOf[js.Any])
       __obj.asInstanceOf[UICommand]
     }
     
-    @scala.inline
-    implicit class UICommandMutableBuilder[Self <: UICommand] (val x: Self) extends AnyVal {
+    extension [Self <: UICommand](x: Self) {
       
-      @scala.inline
-      def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvoked(value: /* command */ IUICommand => Unit): Self = StObject.set(x, "invoked", js.Any.fromFunction1(value))
+      inline def setInvoked(value: /* command */ IUICommand => Unit): Self = StObject.set(x, "invoked", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     }
   }
   
@@ -261,23 +242,18 @@ object Popups {
   }
   object UICommandSeparator {
     
-    @scala.inline
-    def apply(id: js.Any, invoked: /* command */ IUICommand => Unit, label: String): UICommandSeparator = {
+    inline def apply(id: js.Any, invoked: /* command */ IUICommand => Unit, label: String): UICommandSeparator = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], invoked = js.Any.fromFunction1(invoked), label = label.asInstanceOf[js.Any])
       __obj.asInstanceOf[UICommandSeparator]
     }
     
-    @scala.inline
-    implicit class UICommandSeparatorMutableBuilder[Self <: UICommandSeparator] (val x: Self) extends AnyVal {
+    extension [Self <: UICommandSeparator](x: Self) {
       
-      @scala.inline
-      def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvoked(value: /* command */ IUICommand => Unit): Self = StObject.set(x, "invoked", js.Any.fromFunction1(value))
+      inline def setInvoked(value: /* command */ IUICommand => Unit): Self = StObject.set(x, "invoked", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     }
   }
 }

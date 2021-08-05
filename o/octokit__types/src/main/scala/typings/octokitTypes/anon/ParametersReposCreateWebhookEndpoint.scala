@@ -18,8 +18,7 @@ trait ParametersReposCreateWebhookEndpoint extends StObject {
 }
 object ParametersReposCreateWebhookEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ReposCreateWebhookEndpoint,
     request: ReposCreateWebhookRequestOptions,
     response: OctokitResponse[ReposCreateWebhookResponseData]
@@ -28,16 +27,12 @@ object ParametersReposCreateWebhookEndpoint {
     __obj.asInstanceOf[ParametersReposCreateWebhookEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersReposCreateWebhookEndpointMutableBuilder[Self <: ParametersReposCreateWebhookEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersReposCreateWebhookEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ReposCreateWebhookEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ReposCreateWebhookEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ReposCreateWebhookRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ReposCreateWebhookRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReposCreateWebhookResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ReposCreateWebhookResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

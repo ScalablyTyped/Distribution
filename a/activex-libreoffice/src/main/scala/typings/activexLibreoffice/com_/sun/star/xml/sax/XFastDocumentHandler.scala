@@ -21,8 +21,7 @@ trait XFastDocumentHandler
 }
 object XFastDocumentHandler {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     characters: String => Unit,
     createFastChildContext: (Double, XFastAttributeList) => XFastContextHandler,
@@ -41,16 +40,12 @@ object XFastDocumentHandler {
     __obj.asInstanceOf[XFastDocumentHandler]
   }
   
-  @scala.inline
-  implicit class XFastDocumentHandlerMutableBuilder[Self <: XFastDocumentHandler] (val x: Self) extends AnyVal {
+  extension [Self <: XFastDocumentHandler](x: Self) {
     
-    @scala.inline
-    def setEndDocument(value: () => Unit): Self = StObject.set(x, "endDocument", js.Any.fromFunction0(value))
+    inline def setEndDocument(value: () => Unit): Self = StObject.set(x, "endDocument", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetDocumentLocator(value: XLocator => Unit): Self = StObject.set(x, "setDocumentLocator", js.Any.fromFunction1(value))
+    inline def setSetDocumentLocator(value: XLocator => Unit): Self = StObject.set(x, "setDocumentLocator", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStartDocument(value: () => Unit): Self = StObject.set(x, "startDocument", js.Any.fromFunction0(value))
+    inline def setStartDocument(value: () => Unit): Self = StObject.set(x, "startDocument", js.Any.fromFunction0(value))
   }
 }

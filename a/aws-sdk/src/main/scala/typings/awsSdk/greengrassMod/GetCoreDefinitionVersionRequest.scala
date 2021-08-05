@@ -18,19 +18,15 @@ trait GetCoreDefinitionVersionRequest extends StObject {
 }
 object GetCoreDefinitionVersionRequest {
   
-  @scala.inline
-  def apply(CoreDefinitionId: string, CoreDefinitionVersionId: string): GetCoreDefinitionVersionRequest = {
+  inline def apply(CoreDefinitionId: string, CoreDefinitionVersionId: string): GetCoreDefinitionVersionRequest = {
     val __obj = js.Dynamic.literal(CoreDefinitionId = CoreDefinitionId.asInstanceOf[js.Any], CoreDefinitionVersionId = CoreDefinitionVersionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCoreDefinitionVersionRequest]
   }
   
-  @scala.inline
-  implicit class GetCoreDefinitionVersionRequestMutableBuilder[Self <: GetCoreDefinitionVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetCoreDefinitionVersionRequest](x: Self) {
     
-    @scala.inline
-    def setCoreDefinitionId(value: string): Self = StObject.set(x, "CoreDefinitionId", value.asInstanceOf[js.Any])
+    inline def setCoreDefinitionId(value: string): Self = StObject.set(x, "CoreDefinitionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoreDefinitionVersionId(value: string): Self = StObject.set(x, "CoreDefinitionVersionId", value.asInstanceOf[js.Any])
+    inline def setCoreDefinitionVersionId(value: string): Self = StObject.set(x, "CoreDefinitionVersionId", value.asInstanceOf[js.Any])
   }
 }

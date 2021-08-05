@@ -58,44 +58,32 @@ object mod {
   }
   object CommonOptions {
     
-    @scala.inline
-    def apply(): CommonOptions = {
+    inline def apply(): CommonOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CommonOptions]
     }
     
-    @scala.inline
-    implicit class CommonOptionsMutableBuilder[Self <: CommonOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CommonOptions](x: Self) {
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setSocketTimeout(value: Double): Self = StObject.set(x, "socketTimeout", value.asInstanceOf[js.Any])
+      inline def setSocketTimeout(value: Double): Self = StObject.set(x, "socketTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocketTimeoutUndefined: Self = StObject.set(x, "socketTimeout", js.undefined)
+      inline def setSocketTimeoutUndefined: Self = StObject.set(x, "socketTimeout", js.undefined)
       
-      @scala.inline
-      def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTcp(value: Boolean): Self = StObject.set(x, "tcp", value.asInstanceOf[js.Any])
+      inline def setTcp(value: Boolean): Self = StObject.set(x, "tcp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTcpUndefined: Self = StObject.set(x, "tcp", js.undefined)
+      inline def setTcpUndefined: Self = StObject.set(x, "tcp", js.undefined)
     }
   }
   
@@ -129,34 +117,26 @@ object mod {
   }
   object ExpressMiddlewareOptions {
     
-    @scala.inline
-    def apply(): ExpressMiddlewareOptions = {
+    inline def apply(): ExpressMiddlewareOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExpressMiddlewareOptions]
     }
     
-    @scala.inline
-    implicit class ExpressMiddlewareOptionsMutableBuilder[Self <: ExpressMiddlewareOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ExpressMiddlewareOptions](x: Self) {
       
-      @scala.inline
-      def setNotFoundRouteName(value: String): Self = StObject.set(x, "notFoundRouteName", value.asInstanceOf[js.Any])
+      inline def setNotFoundRouteName(value: String): Self = StObject.set(x, "notFoundRouteName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotFoundRouteNameUndefined: Self = StObject.set(x, "notFoundRouteName", js.undefined)
+      inline def setNotFoundRouteNameUndefined: Self = StObject.set(x, "notFoundRouteName", js.undefined)
       
-      @scala.inline
-      def setOnResponseEnd(
+      inline def setOnResponseEnd(
         value: (/* client */ StatsdClient, /* startTime */ Date, /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any]) => Unit
       ): Self = StObject.set(x, "onResponseEnd", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setOnResponseEndUndefined: Self = StObject.set(x, "onResponseEnd", js.undefined)
+      inline def setOnResponseEndUndefined: Self = StObject.set(x, "onResponseEnd", js.undefined)
       
-      @scala.inline
-      def setTimeByUrl(value: Boolean): Self = StObject.set(x, "timeByUrl", value.asInstanceOf[js.Any])
+      inline def setTimeByUrl(value: Boolean): Self = StObject.set(x, "timeByUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeByUrlUndefined: Self = StObject.set(x, "timeByUrl", js.undefined)
+      inline def setTimeByUrlUndefined: Self = StObject.set(x, "timeByUrl", js.undefined)
     }
   }
   
@@ -181,32 +161,24 @@ object mod {
   }
   object HttpOptions {
     
-    @scala.inline
-    def apply(): HttpOptions = {
+    inline def apply(): HttpOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HttpOptions]
     }
     
-    @scala.inline
-    implicit class HttpOptionsMutableBuilder[Self <: HttpOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HttpOptions](x: Self) {
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     }
   }
   
@@ -280,29 +252,22 @@ object mod {
   }
   object TcpOptions {
     
-    @scala.inline
-    def apply(socketTimeoutsToClose: Double): TcpOptions = {
+    inline def apply(socketTimeoutsToClose: Double): TcpOptions = {
       val __obj = js.Dynamic.literal(socketTimeoutsToClose = socketTimeoutsToClose.asInstanceOf[js.Any])
       __obj.asInstanceOf[TcpOptions]
     }
     
-    @scala.inline
-    implicit class TcpOptionsMutableBuilder[Self <: TcpOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TcpOptions](x: Self) {
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setSocketTimeoutsToClose(value: Double): Self = StObject.set(x, "socketTimeoutsToClose", value.asInstanceOf[js.Any])
+      inline def setSocketTimeoutsToClose(value: Double): Self = StObject.set(x, "socketTimeoutsToClose", value.asInstanceOf[js.Any])
     }
   }
   
@@ -322,26 +287,20 @@ object mod {
   }
   object UdpOptions {
     
-    @scala.inline
-    def apply(): UdpOptions = {
+    inline def apply(): UdpOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UdpOptions]
     }
     
-    @scala.inline
-    implicit class UdpOptionsMutableBuilder[Self <: UdpOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UdpOptions](x: Self) {
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     }
   }
 }

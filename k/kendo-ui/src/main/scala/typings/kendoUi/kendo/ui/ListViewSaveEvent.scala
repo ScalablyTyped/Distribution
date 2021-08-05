@@ -16,25 +16,19 @@ trait ListViewSaveEvent
 }
 object ListViewSaveEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: ListView): ListViewSaveEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: ListView): ListViewSaveEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListViewSaveEvent]
   }
   
-  @scala.inline
-  implicit class ListViewSaveEventMutableBuilder[Self <: ListViewSaveEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ListViewSaveEvent](x: Self) {
     
-    @scala.inline
-    def setItem(value: JQuery): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: JQuery): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
-    @scala.inline
-    def setModel(value: Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
   }
 }

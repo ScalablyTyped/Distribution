@@ -77,106 +77,73 @@ trait ChannelSummary extends StObject {
 }
 object ChannelSummary {
   
-  @scala.inline
-  def apply(): ChannelSummary = {
+  inline def apply(): ChannelSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChannelSummary]
   }
   
-  @scala.inline
-  implicit class ChannelSummaryMutableBuilder[Self <: ChannelSummary] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelSummary](x: Self) {
     
-    @scala.inline
-    def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setCdiInputSpecification(value: CdiInputSpecification): Self = StObject.set(x, "CdiInputSpecification", value.asInstanceOf[js.Any])
+    inline def setCdiInputSpecification(value: CdiInputSpecification): Self = StObject.set(x, "CdiInputSpecification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCdiInputSpecificationUndefined: Self = StObject.set(x, "CdiInputSpecification", js.undefined)
+    inline def setCdiInputSpecificationUndefined: Self = StObject.set(x, "CdiInputSpecification", js.undefined)
     
-    @scala.inline
-    def setChannelClass(value: ChannelClass): Self = StObject.set(x, "ChannelClass", value.asInstanceOf[js.Any])
+    inline def setChannelClass(value: ChannelClass): Self = StObject.set(x, "ChannelClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelClassUndefined: Self = StObject.set(x, "ChannelClass", js.undefined)
+    inline def setChannelClassUndefined: Self = StObject.set(x, "ChannelClass", js.undefined)
     
-    @scala.inline
-    def setDestinations(value: listOfOutputDestination): Self = StObject.set(x, "Destinations", value.asInstanceOf[js.Any])
+    inline def setDestinations(value: listOfOutputDestination): Self = StObject.set(x, "Destinations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationsUndefined: Self = StObject.set(x, "Destinations", js.undefined)
+    inline def setDestinationsUndefined: Self = StObject.set(x, "Destinations", js.undefined)
     
-    @scala.inline
-    def setDestinationsVarargs(value: OutputDestination*): Self = StObject.set(x, "Destinations", js.Array(value :_*))
+    inline def setDestinationsVarargs(value: OutputDestination*): Self = StObject.set(x, "Destinations", js.Array(value :_*))
     
-    @scala.inline
-    def setEgressEndpoints(value: listOfChannelEgressEndpoint): Self = StObject.set(x, "EgressEndpoints", value.asInstanceOf[js.Any])
+    inline def setEgressEndpoints(value: listOfChannelEgressEndpoint): Self = StObject.set(x, "EgressEndpoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEgressEndpointsUndefined: Self = StObject.set(x, "EgressEndpoints", js.undefined)
+    inline def setEgressEndpointsUndefined: Self = StObject.set(x, "EgressEndpoints", js.undefined)
     
-    @scala.inline
-    def setEgressEndpointsVarargs(value: ChannelEgressEndpoint*): Self = StObject.set(x, "EgressEndpoints", js.Array(value :_*))
+    inline def setEgressEndpointsVarargs(value: ChannelEgressEndpoint*): Self = StObject.set(x, "EgressEndpoints", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setInputAttachments(value: listOfInputAttachment): Self = StObject.set(x, "InputAttachments", value.asInstanceOf[js.Any])
+    inline def setInputAttachments(value: listOfInputAttachment): Self = StObject.set(x, "InputAttachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputAttachmentsUndefined: Self = StObject.set(x, "InputAttachments", js.undefined)
+    inline def setInputAttachmentsUndefined: Self = StObject.set(x, "InputAttachments", js.undefined)
     
-    @scala.inline
-    def setInputAttachmentsVarargs(value: InputAttachment*): Self = StObject.set(x, "InputAttachments", js.Array(value :_*))
+    inline def setInputAttachmentsVarargs(value: InputAttachment*): Self = StObject.set(x, "InputAttachments", js.Array(value :_*))
     
-    @scala.inline
-    def setInputSpecification(value: InputSpecification): Self = StObject.set(x, "InputSpecification", value.asInstanceOf[js.Any])
+    inline def setInputSpecification(value: InputSpecification): Self = StObject.set(x, "InputSpecification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputSpecificationUndefined: Self = StObject.set(x, "InputSpecification", js.undefined)
+    inline def setInputSpecificationUndefined: Self = StObject.set(x, "InputSpecification", js.undefined)
     
-    @scala.inline
-    def setLogLevel(value: LogLevel): Self = StObject.set(x, "LogLevel", value.asInstanceOf[js.Any])
+    inline def setLogLevel(value: LogLevel): Self = StObject.set(x, "LogLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogLevelUndefined: Self = StObject.set(x, "LogLevel", js.undefined)
+    inline def setLogLevelUndefined: Self = StObject.set(x, "LogLevel", js.undefined)
     
-    @scala.inline
-    def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setPipelinesRunningCount(value: integer): Self = StObject.set(x, "PipelinesRunningCount", value.asInstanceOf[js.Any])
+    inline def setPipelinesRunningCount(value: integer): Self = StObject.set(x, "PipelinesRunningCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipelinesRunningCountUndefined: Self = StObject.set(x, "PipelinesRunningCount", js.undefined)
+    inline def setPipelinesRunningCountUndefined: Self = StObject.set(x, "PipelinesRunningCount", js.undefined)
     
-    @scala.inline
-    def setRoleArn(value: string): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: string): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
+    inline def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
     
-    @scala.inline
-    def setState(value: ChannelState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: ChannelState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

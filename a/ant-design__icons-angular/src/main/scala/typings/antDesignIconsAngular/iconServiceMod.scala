@@ -32,24 +32,24 @@ object iconServiceMod {
     /**
       * Url prefix for fetching inline SVG by dynamic importing.
       */
-    var _assetsUrlRoot: String = js.native
+    /* protected */ var _assetsUrlRoot: String = js.native
     
     /* protected */ def _colorizeSVGIcon(svg: SVGElement, twotone: Boolean, pri: String, sec: String): SVGElement = js.native
     
     /* protected */ def _createSVGElementFromString(str: String): SVGElement = js.native
     
-    var _document: js.Any = js.native
+    /* protected */ var _document: js.Any = js.native
     
     /** A flag indicates whether jsonp loading is enabled. */
-    var _enableJsonpLoading: js.Any = js.native
+    /* private */ var _enableJsonpLoading: js.Any = js.native
     
-    var _handler: HttpBackend = js.native
+    /* protected */ var _handler: HttpBackend = js.native
     
-    var _http: HttpClient = js.native
+    /* protected */ var _http: HttpClient = js.native
     
-    var _inProgressFetches: Map[String, Observable_[IconDefinition | Null]] = js.native
+    /* protected */ var _inProgressFetches: Map[String, Observable_[IconDefinition | Null]] = js.native
     
-    @JSName("_jsonpIconLoad$")
+    /* private */ @JSName("_jsonpIconLoad$")
     val _jsonpIconLoad$: js.Any = js.native
     
     /**
@@ -68,24 +68,24 @@ object iconServiceMod {
     /* protected */ def _loadSVGFromCacheOrCreateNew(icon: IconDefinition): SVGElement = js.native
     /* protected */ def _loadSVGFromCacheOrCreateNew(icon: IconDefinition, twoToneColor: String): SVGElement = js.native
     
-    var _renderer: Renderer2 = js.native
+    /* protected */ var _renderer: Renderer2 = js.native
     
-    var _rendererFactory: RendererFactory2 = js.native
+    /* protected */ var _rendererFactory: RendererFactory2 = js.native
     
     /* protected */ def _setSVGAttribute(svg: SVGElement): SVGElement = js.native
     
     /**
       * All icon definitions would be registered here.
       */
-    val _svgDefinitions: Map[String, IconDefinition] = js.native
+    /* protected */ val _svgDefinitions: Map[String, IconDefinition] = js.native
     
     /**
       * Cache all rendered icons. Icons are identified by name, theme,
       * and for twotone icons, primary color and secondary color.
       */
-    val _svgRenderedDefinitions: Map[String, CachedIconDefinition] = js.native
+    /* protected */ val _svgRenderedDefinitions: Map[String, CachedIconDefinition] = js.native
     
-    var _twoToneColorPalette: TwoToneColorPalette = js.native
+    /* protected */ var _twoToneColorPalette: TwoToneColorPalette = js.native
     
     /**
       * Add icons provided by ant design.
@@ -125,7 +125,7 @@ object iconServiceMod {
     def getRenderedContent(icon: IconDefinition): Observable_[SVGElement] = js.native
     def getRenderedContent(icon: IconDefinition, twoToneColor: String): Observable_[SVGElement] = js.native
     
-    var sanitizer: DomSanitizer = js.native
+    /* protected */ var sanitizer: DomSanitizer = js.native
     
     def twoToneColor: TwoToneColorPaletteSetter = js.native
     def twoToneColor_=(hasPrimaryColorSecondaryColor: TwoToneColorPaletteSetter): Unit = js.native

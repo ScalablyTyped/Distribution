@@ -46,25 +46,19 @@ trait SchemaBuildBazelRemoteExecutionV2Digest extends StObject {
 }
 object SchemaBuildBazelRemoteExecutionV2Digest {
   
-  @scala.inline
-  def apply(): SchemaBuildBazelRemoteExecutionV2Digest = {
+  inline def apply(): SchemaBuildBazelRemoteExecutionV2Digest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBuildBazelRemoteExecutionV2Digest]
   }
   
-  @scala.inline
-  implicit class SchemaBuildBazelRemoteExecutionV2DigestMutableBuilder[Self <: SchemaBuildBazelRemoteExecutionV2Digest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBuildBazelRemoteExecutionV2Digest](x: Self) {
     
-    @scala.inline
-    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+    inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
     
-    @scala.inline
-    def setSizeBytes(value: String): Self = StObject.set(x, "sizeBytes", value.asInstanceOf[js.Any])
+    inline def setSizeBytes(value: String): Self = StObject.set(x, "sizeBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeBytesUndefined: Self = StObject.set(x, "sizeBytes", js.undefined)
+    inline def setSizeBytesUndefined: Self = StObject.set(x, "sizeBytes", js.undefined)
   }
 }

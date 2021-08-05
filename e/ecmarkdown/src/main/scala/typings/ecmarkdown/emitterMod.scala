@@ -69,9 +69,7 @@ object emitterMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def emit(node: js.Array[Node]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("emit")(node.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def emit(node: Node): String = ^.asInstanceOf[js.Dynamic].applyDynamic("emit")(node.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def emit(node: js.Array[Node]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("emit")(node.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def emit(node: Node): String = ^.asInstanceOf[js.Dynamic].applyDynamic("emit")(node.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

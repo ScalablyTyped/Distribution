@@ -33,8 +33,7 @@ trait AbstractRange extends StObject {
 }
 object AbstractRange {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     collapsed: scala.Boolean,
     endContainer: Node,
     endOffset: Double,
@@ -45,22 +44,16 @@ object AbstractRange {
     __obj.asInstanceOf[AbstractRange]
   }
   
-  @scala.inline
-  implicit class AbstractRangeMutableBuilder[Self <: AbstractRange] (val x: Self) extends AnyVal {
+  extension [Self <: AbstractRange](x: Self) {
     
-    @scala.inline
-    def setCollapsed(value: scala.Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+    inline def setCollapsed(value: scala.Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndContainer(value: Node): Self = StObject.set(x, "endContainer", value.asInstanceOf[js.Any])
+    inline def setEndContainer(value: Node): Self = StObject.set(x, "endContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndOffset(value: Double): Self = StObject.set(x, "endOffset", value.asInstanceOf[js.Any])
+    inline def setEndOffset(value: Double): Self = StObject.set(x, "endOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartContainer(value: Node): Self = StObject.set(x, "startContainer", value.asInstanceOf[js.Any])
+    inline def setStartContainer(value: Node): Self = StObject.set(x, "startContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartOffset(value: Double): Self = StObject.set(x, "startOffset", value.asInstanceOf[js.Any])
+    inline def setStartOffset(value: Double): Self = StObject.set(x, "startOffset", value.asInstanceOf[js.Any])
   }
 }

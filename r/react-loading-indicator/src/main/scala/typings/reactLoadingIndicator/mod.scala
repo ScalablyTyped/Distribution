@@ -29,26 +29,20 @@ object mod {
   }
   object LoadingIndicatorColor {
     
-    @scala.inline
-    def apply(alpha: Double, blue: Double, green: Double, red: Double): LoadingIndicatorColor = {
+    inline def apply(alpha: Double, blue: Double, green: Double, red: Double): LoadingIndicatorColor = {
       val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any], blue = blue.asInstanceOf[js.Any], green = green.asInstanceOf[js.Any], red = red.asInstanceOf[js.Any])
       __obj.asInstanceOf[LoadingIndicatorColor]
     }
     
-    @scala.inline
-    implicit class LoadingIndicatorColorMutableBuilder[Self <: LoadingIndicatorColor] (val x: Self) extends AnyVal {
+    extension [Self <: LoadingIndicatorColor](x: Self) {
       
-      @scala.inline
-      def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+      inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlue(value: Double): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
+      inline def setBlue(value: Double): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreen(value: Double): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
+      inline def setGreen(value: Double): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRed(value: Double): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
+      inline def setRed(value: Double): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
     }
   }
   
@@ -92,56 +86,40 @@ object mod {
   }
   object LoadingIndicatorProps {
     
-    @scala.inline
-    def apply(): LoadingIndicatorProps = {
+    inline def apply(): LoadingIndicatorProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LoadingIndicatorProps]
     }
     
-    @scala.inline
-    implicit class LoadingIndicatorPropsMutableBuilder[Self <: LoadingIndicatorProps] (val x: Self) extends AnyVal {
+    extension [Self <: LoadingIndicatorProps](x: Self) {
       
-      @scala.inline
-      def setColor(value: LoadingIndicatorColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: LoadingIndicatorColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setFadeSteps(value: Double): Self = StObject.set(x, "fadeSteps", value.asInstanceOf[js.Any])
+      inline def setFadeSteps(value: Double): Self = StObject.set(x, "fadeSteps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFadeStepsUndefined: Self = StObject.set(x, "fadeSteps", js.undefined)
+      inline def setFadeStepsUndefined: Self = StObject.set(x, "fadeSteps", js.undefined)
       
-      @scala.inline
-      def setFadeTo(value: Double): Self = StObject.set(x, "fadeTo", value.asInstanceOf[js.Any])
+      inline def setFadeTo(value: Double): Self = StObject.set(x, "fadeTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFadeToUndefined: Self = StObject.set(x, "fadeTo", js.undefined)
+      inline def setFadeToUndefined: Self = StObject.set(x, "fadeTo", js.undefined)
       
-      @scala.inline
-      def setSegmentLength(value: Double): Self = StObject.set(x, "segmentLength", value.asInstanceOf[js.Any])
+      inline def setSegmentLength(value: Double): Self = StObject.set(x, "segmentLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegmentLengthUndefined: Self = StObject.set(x, "segmentLength", js.undefined)
+      inline def setSegmentLengthUndefined: Self = StObject.set(x, "segmentLength", js.undefined)
       
-      @scala.inline
-      def setSegmentWidth(value: Double): Self = StObject.set(x, "segmentWidth", value.asInstanceOf[js.Any])
+      inline def setSegmentWidth(value: Double): Self = StObject.set(x, "segmentWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegmentWidthUndefined: Self = StObject.set(x, "segmentWidth", js.undefined)
+      inline def setSegmentWidthUndefined: Self = StObject.set(x, "segmentWidth", js.undefined)
       
-      @scala.inline
-      def setSegments(value: Double): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
+      inline def setSegments(value: Double): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
+      inline def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
       
-      @scala.inline
-      def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+      inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
+      inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
     }
   }
 }

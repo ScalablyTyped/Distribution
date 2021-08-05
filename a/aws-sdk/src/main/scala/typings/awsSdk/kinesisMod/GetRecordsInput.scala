@@ -18,22 +18,17 @@ trait GetRecordsInput extends StObject {
 }
 object GetRecordsInput {
   
-  @scala.inline
-  def apply(ShardIterator: ShardIterator): GetRecordsInput = {
+  inline def apply(ShardIterator: ShardIterator): GetRecordsInput = {
     val __obj = js.Dynamic.literal(ShardIterator = ShardIterator.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRecordsInput]
   }
   
-  @scala.inline
-  implicit class GetRecordsInputMutableBuilder[Self <: GetRecordsInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetRecordsInput](x: Self) {
     
-    @scala.inline
-    def setLimit(value: GetRecordsInputLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: GetRecordsInputLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setShardIterator(value: ShardIterator): Self = StObject.set(x, "ShardIterator", value.asInstanceOf[js.Any])
+    inline def setShardIterator(value: ShardIterator): Self = StObject.set(x, "ShardIterator", value.asInstanceOf[js.Any])
   }
 }

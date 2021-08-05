@@ -13,19 +13,15 @@ trait ModelSettings extends StObject {
 }
 object ModelSettings {
   
-  @scala.inline
-  def apply(): ModelSettings = {
+  inline def apply(): ModelSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModelSettings]
   }
   
-  @scala.inline
-  implicit class ModelSettingsMutableBuilder[Self <: ModelSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ModelSettings](x: Self) {
     
-    @scala.inline
-    def setLanguageModelName(value: ModelName): Self = StObject.set(x, "LanguageModelName", value.asInstanceOf[js.Any])
+    inline def setLanguageModelName(value: ModelName): Self = StObject.set(x, "LanguageModelName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageModelNameUndefined: Self = StObject.set(x, "LanguageModelName", js.undefined)
+    inline def setLanguageModelNameUndefined: Self = StObject.set(x, "LanguageModelName", js.undefined)
   }
 }

@@ -35,8 +35,7 @@ trait RootNode
 }
 object RootNode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cached: Double,
     children: js.Array[TemplateChildNode],
     components: js.Array[String],
@@ -52,67 +51,46 @@ object RootNode {
     __obj.asInstanceOf[RootNode]
   }
   
-  @scala.inline
-  implicit class RootNodeMutableBuilder[Self <: RootNode] (val x: Self) extends AnyVal {
+  extension [Self <: RootNode](x: Self) {
     
-    @scala.inline
-    def setCached(value: Double): Self = StObject.set(x, "cached", value.asInstanceOf[js.Any])
+    inline def setCached(value: Double): Self = StObject.set(x, "cached", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildren(value: js.Array[TemplateChildNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[TemplateChildNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVarargs(value: TemplateChildNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: TemplateChildNode*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setCodegenNode(value: TemplateChildNode | JSChildNode | BlockStatement): Self = StObject.set(x, "codegenNode", value.asInstanceOf[js.Any])
+    inline def setCodegenNode(value: TemplateChildNode | JSChildNode | BlockStatement): Self = StObject.set(x, "codegenNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodegenNodeUndefined: Self = StObject.set(x, "codegenNode", js.undefined)
+    inline def setCodegenNodeUndefined: Self = StObject.set(x, "codegenNode", js.undefined)
     
-    @scala.inline
-    def setComponents(value: js.Array[String]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+    inline def setComponents(value: js.Array[String]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentsVarargs(value: String*): Self = StObject.set(x, "components", js.Array(value :_*))
+    inline def setComponentsVarargs(value: String*): Self = StObject.set(x, "components", js.Array(value :_*))
     
-    @scala.inline
-    def setDirectives(value: js.Array[String]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
+    inline def setDirectives(value: js.Array[String]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectivesVarargs(value: String*): Self = StObject.set(x, "directives", js.Array(value :_*))
+    inline def setDirectivesVarargs(value: String*): Self = StObject.set(x, "directives", js.Array(value :_*))
     
-    @scala.inline
-    def setHelpers(value: js.Array[js.Symbol]): Self = StObject.set(x, "helpers", value.asInstanceOf[js.Any])
+    inline def setHelpers(value: js.Array[js.Symbol]): Self = StObject.set(x, "helpers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelpersVarargs(value: js.Symbol*): Self = StObject.set(x, "helpers", js.Array(value :_*))
+    inline def setHelpersVarargs(value: js.Symbol*): Self = StObject.set(x, "helpers", js.Array(value :_*))
     
-    @scala.inline
-    def setHoists(value: js.Array[JSChildNode | Null]): Self = StObject.set(x, "hoists", value.asInstanceOf[js.Any])
+    inline def setHoists(value: js.Array[JSChildNode | Null]): Self = StObject.set(x, "hoists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoistsVarargs(value: (JSChildNode | Null)*): Self = StObject.set(x, "hoists", js.Array(value :_*))
+    inline def setHoistsVarargs(value: (JSChildNode | Null)*): Self = StObject.set(x, "hoists", js.Array(value :_*))
     
-    @scala.inline
-    def setImports(value: js.Array[ImportItem]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
+    inline def setImports(value: js.Array[ImportItem]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportsVarargs(value: ImportItem*): Self = StObject.set(x, "imports", js.Array(value :_*))
+    inline def setImportsVarargs(value: ImportItem*): Self = StObject.set(x, "imports", js.Array(value :_*))
     
-    @scala.inline
-    def setSsrHelpers(value: js.Array[js.Symbol]): Self = StObject.set(x, "ssrHelpers", value.asInstanceOf[js.Any])
+    inline def setSsrHelpers(value: js.Array[js.Symbol]): Self = StObject.set(x, "ssrHelpers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsrHelpersUndefined: Self = StObject.set(x, "ssrHelpers", js.undefined)
+    inline def setSsrHelpersUndefined: Self = StObject.set(x, "ssrHelpers", js.undefined)
     
-    @scala.inline
-    def setSsrHelpersVarargs(value: js.Symbol*): Self = StObject.set(x, "ssrHelpers", js.Array(value :_*))
+    inline def setSsrHelpersVarargs(value: js.Symbol*): Self = StObject.set(x, "ssrHelpers", js.Array(value :_*))
     
-    @scala.inline
-    def setTemps(value: Double): Self = StObject.set(x, "temps", value.asInstanceOf[js.Any])
+    inline def setTemps(value: Double): Self = StObject.set(x, "temps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `0`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `0`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

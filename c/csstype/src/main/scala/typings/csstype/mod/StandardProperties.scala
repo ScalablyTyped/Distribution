@@ -10,8 +10,7 @@ trait StandardProperties[TLength]
      with StandardShorthandProperties[TLength]
 object StandardProperties {
   
-  @scala.inline
-  def apply[TLength](): StandardProperties[TLength] = {
+  inline def apply[TLength](): StandardProperties[TLength] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StandardProperties[TLength]]
   }

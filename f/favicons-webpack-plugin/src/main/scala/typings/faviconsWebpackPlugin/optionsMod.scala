@@ -84,8 +84,7 @@ object optionsMod {
   }
   object FaviconWebpackPlugionInternalOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cache: Boolean & js.UndefOr[Boolean],
       favicons: PartialConfiguration & js.UndefOr[PartialConfiguration],
       inject: (Boolean | (js.Function1[/* htmlWebpackPlugin */ js.Any, Boolean])) & (js.UndefOr[Boolean | (js.Function1[/* htmlWebpackPlugin */ js.Any, Boolean])]),
@@ -96,49 +95,35 @@ object optionsMod {
       __obj.asInstanceOf[FaviconWebpackPlugionInternalOptions]
     }
     
-    @scala.inline
-    implicit class FaviconWebpackPlugionInternalOptionsMutableBuilder[Self <: FaviconWebpackPlugionInternalOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FaviconWebpackPlugionInternalOptions](x: Self) {
       
-      @scala.inline
-      def setCache(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevMode(value: light | webapp): Self = StObject.set(x, "devMode", value.asInstanceOf[js.Any])
+      inline def setDevMode(value: light | webapp): Self = StObject.set(x, "devMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevModeUndefined: Self = StObject.set(x, "devMode", js.undefined)
+      inline def setDevModeUndefined: Self = StObject.set(x, "devMode", js.undefined)
       
-      @scala.inline
-      def setFavicons(value: PartialConfiguration & js.UndefOr[PartialConfiguration]): Self = StObject.set(x, "favicons", value.asInstanceOf[js.Any])
+      inline def setFavicons(value: PartialConfiguration & js.UndefOr[PartialConfiguration]): Self = StObject.set(x, "favicons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInject(
+      inline def setInject(
         value: (Boolean | (js.Function1[/* htmlWebpackPlugin */ js.Any, Boolean])) & (js.UndefOr[Boolean | (js.Function1[/* htmlWebpackPlugin */ js.Any, Boolean])])
       ): Self = StObject.set(x, "inject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogo(value: String): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
+      inline def setLogo(value: String): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMode(value: light | webapp): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: light | webapp): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setOutputPath(value: String): Self = StObject.set(x, "outputPath", value.asInstanceOf[js.Any])
+      inline def setOutputPath(value: String): Self = StObject.set(x, "outputPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputPathUndefined: Self = StObject.set(x, "outputPath", js.undefined)
+      inline def setOutputPathUndefined: Self = StObject.set(x, "outputPath", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String & js.UndefOr[String]): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String & js.UndefOr[String]): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicPath(value: String): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
+      inline def setPublicPath(value: String): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicPathUndefined: Self = StObject.set(x, "publicPath", js.undefined)
+      inline def setPublicPathUndefined: Self = StObject.set(x, "publicPath", js.undefined)
     }
   }
   
@@ -216,68 +201,48 @@ object optionsMod {
   }
   object FaviconWebpackPlugionOptions {
     
-    @scala.inline
-    def apply(logo: String): FaviconWebpackPlugionOptions = {
+    inline def apply(logo: String): FaviconWebpackPlugionOptions = {
       val __obj = js.Dynamic.literal(logo = logo.asInstanceOf[js.Any])
       __obj.asInstanceOf[FaviconWebpackPlugionOptions]
     }
     
-    @scala.inline
-    implicit class FaviconWebpackPlugionOptionsMutableBuilder[Self <: FaviconWebpackPlugionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FaviconWebpackPlugionOptions](x: Self) {
       
-      @scala.inline
-      def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setDevMode(value: light | webapp): Self = StObject.set(x, "devMode", value.asInstanceOf[js.Any])
+      inline def setDevMode(value: light | webapp): Self = StObject.set(x, "devMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevModeUndefined: Self = StObject.set(x, "devMode", js.undefined)
+      inline def setDevModeUndefined: Self = StObject.set(x, "devMode", js.undefined)
       
-      @scala.inline
-      def setFavicons(value: PartialConfiguration): Self = StObject.set(x, "favicons", value.asInstanceOf[js.Any])
+      inline def setFavicons(value: PartialConfiguration): Self = StObject.set(x, "favicons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFaviconsUndefined: Self = StObject.set(x, "favicons", js.undefined)
+      inline def setFaviconsUndefined: Self = StObject.set(x, "favicons", js.undefined)
       
-      @scala.inline
-      def setInject(value: Boolean | (js.Function1[/* htmlWebpackPlugin */ js.Any, Boolean])): Self = StObject.set(x, "inject", value.asInstanceOf[js.Any])
+      inline def setInject(value: Boolean | (js.Function1[/* htmlWebpackPlugin */ js.Any, Boolean])): Self = StObject.set(x, "inject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInjectFunction1(value: /* htmlWebpackPlugin */ js.Any => Boolean): Self = StObject.set(x, "inject", js.Any.fromFunction1(value))
+      inline def setInjectFunction1(value: /* htmlWebpackPlugin */ js.Any => Boolean): Self = StObject.set(x, "inject", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInjectUndefined: Self = StObject.set(x, "inject", js.undefined)
+      inline def setInjectUndefined: Self = StObject.set(x, "inject", js.undefined)
       
-      @scala.inline
-      def setLogo(value: String): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
+      inline def setLogo(value: String): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMode(value: light | webapp): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: light | webapp): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setOutputPath(value: String): Self = StObject.set(x, "outputPath", value.asInstanceOf[js.Any])
+      inline def setOutputPath(value: String): Self = StObject.set(x, "outputPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputPathUndefined: Self = StObject.set(x, "outputPath", js.undefined)
+      inline def setOutputPathUndefined: Self = StObject.set(x, "outputPath", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setPublicPath(value: String): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
+      inline def setPublicPath(value: String): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicPathUndefined: Self = StObject.set(x, "publicPath", js.undefined)
+      inline def setPublicPathUndefined: Self = StObject.set(x, "publicPath", js.undefined)
     }
   }
 }

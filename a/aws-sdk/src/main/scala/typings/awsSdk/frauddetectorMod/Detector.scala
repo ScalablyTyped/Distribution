@@ -38,49 +38,35 @@ trait Detector extends StObject {
 }
 object Detector {
   
-  @scala.inline
-  def apply(): Detector = {
+  inline def apply(): Detector = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Detector]
   }
   
-  @scala.inline
-  implicit class DetectorMutableBuilder[Self <: Detector] (val x: Self) extends AnyVal {
+  extension [Self <: Detector](x: Self) {
     
-    @scala.inline
-    def setArn(value: fraudDetectorArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: fraudDetectorArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setCreatedTime(value: time): Self = StObject.set(x, "createdTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: time): Self = StObject.set(x, "createdTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedTimeUndefined: Self = StObject.set(x, "createdTime", js.undefined)
+    inline def setCreatedTimeUndefined: Self = StObject.set(x, "createdTime", js.undefined)
     
-    @scala.inline
-    def setDescription(value: description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDetectorId(value: identifier): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
+    inline def setDetectorId(value: identifier): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectorIdUndefined: Self = StObject.set(x, "detectorId", js.undefined)
+    inline def setDetectorIdUndefined: Self = StObject.set(x, "detectorId", js.undefined)
     
-    @scala.inline
-    def setEventTypeName(value: identifier): Self = StObject.set(x, "eventTypeName", value.asInstanceOf[js.Any])
+    inline def setEventTypeName(value: identifier): Self = StObject.set(x, "eventTypeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTypeNameUndefined: Self = StObject.set(x, "eventTypeName", js.undefined)
+    inline def setEventTypeNameUndefined: Self = StObject.set(x, "eventTypeName", js.undefined)
     
-    @scala.inline
-    def setLastUpdatedTime(value: time): Self = StObject.set(x, "lastUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTime(value: time): Self = StObject.set(x, "lastUpdatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedTimeUndefined: Self = StObject.set(x, "lastUpdatedTime", js.undefined)
+    inline def setLastUpdatedTimeUndefined: Self = StObject.set(x, "lastUpdatedTime", js.undefined)
   }
 }

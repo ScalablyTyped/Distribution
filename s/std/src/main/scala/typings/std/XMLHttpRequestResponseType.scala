@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XMLHttpRequestResponseType extends StObject
 object XMLHttpRequestResponseType {
   
-  @scala.inline
-  def _empty: typings.std.stdStrings._empty = "".asInstanceOf[typings.std.stdStrings._empty]
+  inline def _empty: typings.std.stdStrings._empty = "".asInstanceOf[typings.std.stdStrings._empty]
   
-  @scala.inline
-  def arraybuffer: typings.std.stdStrings.arraybuffer = "arraybuffer".asInstanceOf[typings.std.stdStrings.arraybuffer]
+  inline def arraybuffer: typings.std.stdStrings.arraybuffer = "arraybuffer".asInstanceOf[typings.std.stdStrings.arraybuffer]
   
-  @scala.inline
-  def blob: typings.std.stdStrings.blob = "blob".asInstanceOf[typings.std.stdStrings.blob]
+  inline def blob: typings.std.stdStrings.blob = "blob".asInstanceOf[typings.std.stdStrings.blob]
   
-  @scala.inline
-  def document: typings.std.stdStrings.document = "document".asInstanceOf[typings.std.stdStrings.document]
+  inline def document: typings.std.stdStrings.document = "document".asInstanceOf[typings.std.stdStrings.document]
   
-  @scala.inline
-  def json: typings.std.stdStrings.json = "json".asInstanceOf[typings.std.stdStrings.json]
+  inline def json: typings.std.stdStrings.json = "json".asInstanceOf[typings.std.stdStrings.json]
   
-  @scala.inline
-  def text: typings.std.stdStrings.text = "text".asInstanceOf[typings.std.stdStrings.text]
+  inline def text: typings.std.stdStrings.text = "text".asInstanceOf[typings.std.stdStrings.text]
 }

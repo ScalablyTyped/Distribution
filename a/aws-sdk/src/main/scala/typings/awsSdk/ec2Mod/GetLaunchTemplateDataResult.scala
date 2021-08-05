@@ -13,19 +13,15 @@ trait GetLaunchTemplateDataResult extends StObject {
 }
 object GetLaunchTemplateDataResult {
   
-  @scala.inline
-  def apply(): GetLaunchTemplateDataResult = {
+  inline def apply(): GetLaunchTemplateDataResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetLaunchTemplateDataResult]
   }
   
-  @scala.inline
-  implicit class GetLaunchTemplateDataResultMutableBuilder[Self <: GetLaunchTemplateDataResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetLaunchTemplateDataResult](x: Self) {
     
-    @scala.inline
-    def setLaunchTemplateData(value: ResponseLaunchTemplateData): Self = StObject.set(x, "LaunchTemplateData", value.asInstanceOf[js.Any])
+    inline def setLaunchTemplateData(value: ResponseLaunchTemplateData): Self = StObject.set(x, "LaunchTemplateData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchTemplateDataUndefined: Self = StObject.set(x, "LaunchTemplateData", js.undefined)
+    inline def setLaunchTemplateDataUndefined: Self = StObject.set(x, "LaunchTemplateData", js.undefined)
   }
 }

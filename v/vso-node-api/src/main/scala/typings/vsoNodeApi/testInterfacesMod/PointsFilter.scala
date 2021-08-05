@@ -15,8 +15,7 @@ trait PointsFilter extends StObject {
 }
 object PointsFilter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     configurationNames: js.Array[String],
     testcaseIds: js.Array[Double],
     testers: js.Array[IdentityRef]
@@ -25,25 +24,18 @@ object PointsFilter {
     __obj.asInstanceOf[PointsFilter]
   }
   
-  @scala.inline
-  implicit class PointsFilterMutableBuilder[Self <: PointsFilter] (val x: Self) extends AnyVal {
+  extension [Self <: PointsFilter](x: Self) {
     
-    @scala.inline
-    def setConfigurationNames(value: js.Array[String]): Self = StObject.set(x, "configurationNames", value.asInstanceOf[js.Any])
+    inline def setConfigurationNames(value: js.Array[String]): Self = StObject.set(x, "configurationNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationNamesVarargs(value: String*): Self = StObject.set(x, "configurationNames", js.Array(value :_*))
+    inline def setConfigurationNamesVarargs(value: String*): Self = StObject.set(x, "configurationNames", js.Array(value :_*))
     
-    @scala.inline
-    def setTestcaseIds(value: js.Array[Double]): Self = StObject.set(x, "testcaseIds", value.asInstanceOf[js.Any])
+    inline def setTestcaseIds(value: js.Array[Double]): Self = StObject.set(x, "testcaseIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestcaseIdsVarargs(value: Double*): Self = StObject.set(x, "testcaseIds", js.Array(value :_*))
+    inline def setTestcaseIdsVarargs(value: Double*): Self = StObject.set(x, "testcaseIds", js.Array(value :_*))
     
-    @scala.inline
-    def setTesters(value: js.Array[IdentityRef]): Self = StObject.set(x, "testers", value.asInstanceOf[js.Any])
+    inline def setTesters(value: js.Array[IdentityRef]): Self = StObject.set(x, "testers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestersVarargs(value: IdentityRef*): Self = StObject.set(x, "testers", js.Array(value :_*))
+    inline def setTestersVarargs(value: IdentityRef*): Self = StObject.set(x, "testers", js.Array(value :_*))
   }
 }

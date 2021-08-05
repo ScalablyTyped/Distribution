@@ -18,25 +18,19 @@ trait AssociateSkillGroupWithRoomRequest extends StObject {
 }
 object AssociateSkillGroupWithRoomRequest {
   
-  @scala.inline
-  def apply(): AssociateSkillGroupWithRoomRequest = {
+  inline def apply(): AssociateSkillGroupWithRoomRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssociateSkillGroupWithRoomRequest]
   }
   
-  @scala.inline
-  implicit class AssociateSkillGroupWithRoomRequestMutableBuilder[Self <: AssociateSkillGroupWithRoomRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateSkillGroupWithRoomRequest](x: Self) {
     
-    @scala.inline
-    def setRoomArn(value: Arn): Self = StObject.set(x, "RoomArn", value.asInstanceOf[js.Any])
+    inline def setRoomArn(value: Arn): Self = StObject.set(x, "RoomArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoomArnUndefined: Self = StObject.set(x, "RoomArn", js.undefined)
+    inline def setRoomArnUndefined: Self = StObject.set(x, "RoomArn", js.undefined)
     
-    @scala.inline
-    def setSkillGroupArn(value: Arn): Self = StObject.set(x, "SkillGroupArn", value.asInstanceOf[js.Any])
+    inline def setSkillGroupArn(value: Arn): Self = StObject.set(x, "SkillGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkillGroupArnUndefined: Self = StObject.set(x, "SkillGroupArn", js.undefined)
+    inline def setSkillGroupArnUndefined: Self = StObject.set(x, "SkillGroupArn", js.undefined)
   }
 }

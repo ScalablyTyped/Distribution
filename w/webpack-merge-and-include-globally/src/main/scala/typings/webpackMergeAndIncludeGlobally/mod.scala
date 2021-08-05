@@ -26,8 +26,7 @@ object mod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def getHashOfRelatedFile(assets: js.Any, fileName: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getHashOfRelatedFile")(assets.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def getHashOfRelatedFile(assets: js.Any, fileName: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getHashOfRelatedFile")(assets.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
   /**
     * Object that maps file names to array of all files (can also be defined by wildcard path) that will be merged together and saved under each file name.
@@ -72,50 +71,36 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setChunks(value: js.Array[String]): Self = StObject.set(x, "chunks", value.asInstanceOf[js.Any])
+      inline def setChunks(value: js.Array[String]): Self = StObject.set(x, "chunks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChunksUndefined: Self = StObject.set(x, "chunks", js.undefined)
+      inline def setChunksUndefined: Self = StObject.set(x, "chunks", js.undefined)
       
-      @scala.inline
-      def setChunksVarargs(value: String*): Self = StObject.set(x, "chunks", js.Array(value :_*))
+      inline def setChunksVarargs(value: String*): Self = StObject.set(x, "chunks", js.Array(value :_*))
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setFiles(value: FilesMap | SourceDestinationMaps): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: FilesMap | SourceDestinationMaps): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+      inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      @scala.inline
-      def setFilesVarargs(value: Dest*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: Dest*): Self = StObject.set(x, "files", js.Array(value :_*))
       
-      @scala.inline
-      def setHash(value: Boolean): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: Boolean): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+      inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
       
-      @scala.inline
-      def setTransform(value: StringDictionary[js.Function1[/* code */ String, String]]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+      inline def setTransform(value: StringDictionary[js.Function1[/* code */ String, String]]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     }
   }
   

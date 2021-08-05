@@ -14,25 +14,19 @@ trait Event extends StObject {
 }
 object Event {
   
-  @scala.inline
-  def apply(eid: String, etype: TerritoryEventType): Event = {
+  inline def apply(eid: String, etype: TerritoryEventType): Event = {
     val __obj = js.Dynamic.literal(eid = eid.asInstanceOf[js.Any], etype = etype.asInstanceOf[js.Any])
     __obj.asInstanceOf[Event]
   }
   
-  @scala.inline
-  implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
+  extension [Self <: Event](x: Self) {
     
-    @scala.inline
-    def setEid(value: String): Self = StObject.set(x, "eid", value.asInstanceOf[js.Any])
+    inline def setEid(value: String): Self = StObject.set(x, "eid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtype(value: TerritoryEventType): Self = StObject.set(x, "etype", value.asInstanceOf[js.Any])
+    inline def setEtype(value: TerritoryEventType): Self = StObject.set(x, "etype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

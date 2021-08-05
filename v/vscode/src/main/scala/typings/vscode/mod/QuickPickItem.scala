@@ -39,40 +39,29 @@ trait QuickPickItem extends StObject {
 }
 object QuickPickItem {
   
-  @scala.inline
-  def apply(label: String): QuickPickItem = {
+  inline def apply(label: String): QuickPickItem = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuickPickItem]
   }
   
-  @scala.inline
-  implicit class QuickPickItemMutableBuilder[Self <: QuickPickItem] (val x: Self) extends AnyVal {
+  extension [Self <: QuickPickItem](x: Self) {
     
-    @scala.inline
-    def setAlwaysShow(value: Boolean): Self = StObject.set(x, "alwaysShow", value.asInstanceOf[js.Any])
+    inline def setAlwaysShow(value: Boolean): Self = StObject.set(x, "alwaysShow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlwaysShowUndefined: Self = StObject.set(x, "alwaysShow", js.undefined)
+    inline def setAlwaysShowUndefined: Self = StObject.set(x, "alwaysShow", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+    inline def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
+    inline def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPicked(value: Boolean): Self = StObject.set(x, "picked", value.asInstanceOf[js.Any])
+    inline def setPicked(value: Boolean): Self = StObject.set(x, "picked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickedUndefined: Self = StObject.set(x, "picked", js.undefined)
+    inline def setPickedUndefined: Self = StObject.set(x, "picked", js.undefined)
   }
 }

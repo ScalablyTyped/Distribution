@@ -30,15 +30,14 @@ trait Language extends StObject {
   
   var SpellingDictionaryType: WdDictionaryType
   
-  @JSName("Word.Language_typekey")
+  /* private */ @JSName("Word.Language_typekey")
   var WordDotLanguage_typekey: Language
   
   val WritingStyleList: js.Any
 }
 object Language {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActiveGrammarDictionary: Dictionary,
     ActiveHyphenationDictionary: Dictionary,
     ActiveSpellingDictionary: Dictionary,
@@ -59,49 +58,34 @@ object Language {
     __obj.asInstanceOf[Language]
   }
   
-  @scala.inline
-  implicit class LanguageMutableBuilder[Self <: Language] (val x: Self) extends AnyVal {
+  extension [Self <: Language](x: Self) {
     
-    @scala.inline
-    def setActiveGrammarDictionary(value: Dictionary): Self = StObject.set(x, "ActiveGrammarDictionary", value.asInstanceOf[js.Any])
+    inline def setActiveGrammarDictionary(value: Dictionary): Self = StObject.set(x, "ActiveGrammarDictionary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveHyphenationDictionary(value: Dictionary): Self = StObject.set(x, "ActiveHyphenationDictionary", value.asInstanceOf[js.Any])
+    inline def setActiveHyphenationDictionary(value: Dictionary): Self = StObject.set(x, "ActiveHyphenationDictionary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveSpellingDictionary(value: Dictionary): Self = StObject.set(x, "ActiveSpellingDictionary", value.asInstanceOf[js.Any])
+    inline def setActiveSpellingDictionary(value: Dictionary): Self = StObject.set(x, "ActiveSpellingDictionary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveThesaurusDictionary(value: Dictionary): Self = StObject.set(x, "ActiveThesaurusDictionary", value.asInstanceOf[js.Any])
+    inline def setActiveThesaurusDictionary(value: Dictionary): Self = StObject.set(x, "ActiveThesaurusDictionary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultWritingStyle(value: String): Self = StObject.set(x, "DefaultWritingStyle", value.asInstanceOf[js.Any])
+    inline def setDefaultWritingStyle(value: String): Self = StObject.set(x, "DefaultWritingStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setID(value: WdLanguageID): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: WdLanguageID): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameLocal(value: String): Self = StObject.set(x, "NameLocal", value.asInstanceOf[js.Any])
+    inline def setNameLocal(value: String): Self = StObject.set(x, "NameLocal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpellingDictionaryType(value: WdDictionaryType): Self = StObject.set(x, "SpellingDictionaryType", value.asInstanceOf[js.Any])
+    inline def setSpellingDictionaryType(value: WdDictionaryType): Self = StObject.set(x, "SpellingDictionaryType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotLanguage_typekey(value: Language): Self = StObject.set(x, "Word.Language_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotLanguage_typekey(value: Language): Self = StObject.set(x, "Word.Language_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWritingStyleList(value: js.Any): Self = StObject.set(x, "WritingStyleList", value.asInstanceOf[js.Any])
+    inline def setWritingStyleList(value: js.Any): Self = StObject.set(x, "WritingStyleList", value.asInstanceOf[js.Any])
   }
 }

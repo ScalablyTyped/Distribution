@@ -16,25 +16,19 @@ trait ISequentialIdGenerator
 }
 object ISequentialIdGenerator {
   
-  @scala.inline
-  def apply(): ISequentialIdGenerator = {
+  inline def apply(): ISequentialIdGenerator = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ISequentialIdGenerator]
   }
   
-  @scala.inline
-  implicit class ISequentialIdGeneratorMutableBuilder[Self <: ISequentialIdGenerator] (val x: Self) extends AnyVal {
+  extension [Self <: ISequentialIdGenerator](x: Self) {
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     
-    @scala.inline
-    def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
+    inline def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
+    inline def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
   }
 }

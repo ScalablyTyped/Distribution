@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(mean: Double, variance: Double): Gaussian = (^.asInstanceOf[js.Dynamic].apply(mean.asInstanceOf[js.Any], variance.asInstanceOf[js.Any])).asInstanceOf[Gaussian]
+  inline def apply(mean: Double, variance: Double): Gaussian = (^.asInstanceOf[js.Dynamic].apply(mean.asInstanceOf[js.Any], variance.asInstanceOf[js.Any])).asInstanceOf[Gaussian]
   
   @JSImport("gaussian", JSImport.Namespace)
   @js.native

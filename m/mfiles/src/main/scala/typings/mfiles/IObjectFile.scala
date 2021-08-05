@@ -37,8 +37,7 @@ trait IObjectFile extends StObject {
 }
 object IObjectFile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ChangeTimeUtc: Date,
     CreationTimeUtc: Date,
     Extension: String,
@@ -58,49 +57,34 @@ object IObjectFile {
     __obj.asInstanceOf[IObjectFile]
   }
   
-  @scala.inline
-  implicit class IObjectFileMutableBuilder[Self <: IObjectFile] (val x: Self) extends AnyVal {
+  extension [Self <: IObjectFile](x: Self) {
     
-    @scala.inline
-    def setChangeTimeUtc(value: Date): Self = StObject.set(x, "ChangeTimeUtc", value.asInstanceOf[js.Any])
+    inline def setChangeTimeUtc(value: Date): Self = StObject.set(x, "ChangeTimeUtc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUtc(value: Date): Self = StObject.set(x, "CreationTimeUtc", value.asInstanceOf[js.Any])
+    inline def setCreationTimeUtc(value: Date): Self = StObject.set(x, "CreationTimeUtc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtension(value: String): Self = StObject.set(x, "Extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: String): Self = StObject.set(x, "Extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileGUID(value: String): Self = StObject.set(x, "FileGUID", value.asInstanceOf[js.Any])
+    inline def setFileGUID(value: String): Self = StObject.set(x, "FileGUID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileVer(value: IFileVer): Self = StObject.set(x, "FileVer", value.asInstanceOf[js.Any])
+    inline def setFileVer(value: IFileVer): Self = StObject.set(x, "FileVer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetNameForFileSystem(value: () => String): Self = StObject.set(x, "GetNameForFileSystem", js.Any.fromFunction0(value))
+    inline def setGetNameForFileSystem(value: () => String): Self = StObject.set(x, "GetNameForFileSystem", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastAccessTimeUtc(value: Date): Self = StObject.set(x, "LastAccessTimeUtc", value.asInstanceOf[js.Any])
+    inline def setLastAccessTimeUtc(value: Date): Self = StObject.set(x, "LastAccessTimeUtc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastWriteTimeUtc(value: Date): Self = StObject.set(x, "LastWriteTimeUtc", value.asInstanceOf[js.Any])
+    inline def setLastWriteTimeUtc(value: Date): Self = StObject.set(x, "LastWriteTimeUtc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogicalSize(value: Double): Self = StObject.set(x, "LogicalSize", value.asInstanceOf[js.Any])
+    inline def setLogicalSize(value: Double): Self = StObject.set(x, "LogicalSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogicalSize_32bit(value: Double): Self = StObject.set(x, "LogicalSize_32bit", value.asInstanceOf[js.Any])
+    inline def setLogicalSize_32bit(value: Double): Self = StObject.set(x, "LogicalSize_32bit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToJSON(value: () => String): Self = StObject.set(x, "ToJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => String): Self = StObject.set(x, "ToJSON", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
   }
 }

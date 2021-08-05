@@ -22,8 +22,7 @@ object typeScriptEmbeddedExtensionMod {
     * @param getEmbeddedSource  Function that returns embedded TypeScript source text and extension that this file
     *                           would have if it would be a regular TypeScript file
     */
-  @scala.inline
-  def createTypeScriptEmbeddedExtension(hasEmbeddedExtensionsGetEmbeddedSource: TypeScriptEmbeddedExtensionHost): TypeScriptExtension = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeScriptEmbeddedExtension")(hasEmbeddedExtensionsGetEmbeddedSource.asInstanceOf[js.Any]).asInstanceOf[TypeScriptExtension]
+  inline def createTypeScriptEmbeddedExtension(hasEmbeddedExtensionsGetEmbeddedSource: TypeScriptEmbeddedExtensionHost): TypeScriptExtension = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeScriptEmbeddedExtension")(hasEmbeddedExtensionsGetEmbeddedSource.asInstanceOf[js.Any]).asInstanceOf[TypeScriptExtension]
   
   trait TypeScriptEmbeddedExtensionHost extends StObject {
     
@@ -33,8 +32,7 @@ object typeScriptEmbeddedExtensionMod {
   }
   object TypeScriptEmbeddedExtensionHost {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       embeddedExtensions: js.Array[String],
       getEmbeddedSource: String => js.UndefOr[TypeScriptEmbeddedSource]
     ): TypeScriptEmbeddedExtensionHost = {
@@ -42,17 +40,13 @@ object typeScriptEmbeddedExtensionMod {
       __obj.asInstanceOf[TypeScriptEmbeddedExtensionHost]
     }
     
-    @scala.inline
-    implicit class TypeScriptEmbeddedExtensionHostMutableBuilder[Self <: TypeScriptEmbeddedExtensionHost] (val x: Self) extends AnyVal {
+    extension [Self <: TypeScriptEmbeddedExtensionHost](x: Self) {
       
-      @scala.inline
-      def setEmbeddedExtensions(value: js.Array[String]): Self = StObject.set(x, "embeddedExtensions", value.asInstanceOf[js.Any])
+      inline def setEmbeddedExtensions(value: js.Array[String]): Self = StObject.set(x, "embeddedExtensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmbeddedExtensionsVarargs(value: String*): Self = StObject.set(x, "embeddedExtensions", js.Array(value :_*))
+      inline def setEmbeddedExtensionsVarargs(value: String*): Self = StObject.set(x, "embeddedExtensions", js.Array(value :_*))
       
-      @scala.inline
-      def setGetEmbeddedSource(value: String => js.UndefOr[TypeScriptEmbeddedSource]): Self = StObject.set(x, "getEmbeddedSource", js.Any.fromFunction1(value))
+      inline def setGetEmbeddedSource(value: String => js.UndefOr[TypeScriptEmbeddedSource]): Self = StObject.set(x, "getEmbeddedSource", js.Any.fromFunction1(value))
     }
   }
   
@@ -64,21 +58,17 @@ object typeScriptEmbeddedExtensionMod {
   }
   object TypeScriptEmbeddedSource {
     
-    @scala.inline
-    def apply(`extension`: Dotts | Dottsx | Dotjs, sourceText: String): TypeScriptEmbeddedSource = {
+    inline def apply(`extension`: Dotts | Dottsx | Dotjs, sourceText: String): TypeScriptEmbeddedSource = {
       val __obj = js.Dynamic.literal(sourceText = sourceText.asInstanceOf[js.Any])
       __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeScriptEmbeddedSource]
     }
     
-    @scala.inline
-    implicit class TypeScriptEmbeddedSourceMutableBuilder[Self <: TypeScriptEmbeddedSource] (val x: Self) extends AnyVal {
+    extension [Self <: TypeScriptEmbeddedSource](x: Self) {
       
-      @scala.inline
-      def setExtension(value: Dotts | Dottsx | Dotjs): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+      inline def setExtension(value: Dotts | Dottsx | Dotjs): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceText(value: String): Self = StObject.set(x, "sourceText", value.asInstanceOf[js.Any])
+      inline def setSourceText(value: String): Self = StObject.set(x, "sourceText", value.asInstanceOf[js.Any])
     }
   }
 }

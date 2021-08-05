@@ -17,22 +17,17 @@ trait SchemaGoogleIamV1TestIamPermissionsResponse extends StObject {
 }
 object SchemaGoogleIamV1TestIamPermissionsResponse {
   
-  @scala.inline
-  def apply(): SchemaGoogleIamV1TestIamPermissionsResponse = {
+  inline def apply(): SchemaGoogleIamV1TestIamPermissionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleIamV1TestIamPermissionsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleIamV1TestIamPermissionsResponseMutableBuilder[Self <: SchemaGoogleIamV1TestIamPermissionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleIamV1TestIamPermissionsResponse](x: Self) {
     
-    @scala.inline
-    def setPermissions(value: js.Array[String]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: js.Array[String]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
+    inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
-    @scala.inline
-    def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value :_*))
   }
 }

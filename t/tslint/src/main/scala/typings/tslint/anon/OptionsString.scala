@@ -10,16 +10,13 @@ trait OptionsString extends StObject {
 }
 object OptionsString {
   
-  @scala.inline
-  def apply(options: String): OptionsString = {
+  inline def apply(options: String): OptionsString = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsString]
   }
   
-  @scala.inline
-  implicit class OptionsStringMutableBuilder[Self <: OptionsString] (val x: Self) extends AnyVal {
+  extension [Self <: OptionsString](x: Self) {
     
-    @scala.inline
-    def setOptions(value: String): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: String): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

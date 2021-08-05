@@ -18,14 +18,11 @@ object r3ModuleCompilerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def compileInjector(meta: R3InjectorMetadata): R3InjectorDef = ^.asInstanceOf[js.Dynamic].applyDynamic("compileInjector")(meta.asInstanceOf[js.Any]).asInstanceOf[R3InjectorDef]
+  inline def compileInjector(meta: R3InjectorMetadata): R3InjectorDef = ^.asInstanceOf[js.Dynamic].applyDynamic("compileInjector")(meta.asInstanceOf[js.Any]).asInstanceOf[R3InjectorDef]
   
-  @scala.inline
-  def compileNgModule(meta: R3NgModuleMetadata): R3NgModuleDef = ^.asInstanceOf[js.Dynamic].applyDynamic("compileNgModule")(meta.asInstanceOf[js.Any]).asInstanceOf[R3NgModuleDef]
+  inline def compileNgModule(meta: R3NgModuleMetadata): R3NgModuleDef = ^.asInstanceOf[js.Dynamic].applyDynamic("compileNgModule")(meta.asInstanceOf[js.Any]).asInstanceOf[R3NgModuleDef]
   
-  @scala.inline
-  def compileNgModuleFromRender2(ctx: OutputContext, ngModule: CompileShallowModuleMetadata, injectableCompiler: InjectableCompiler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compileNgModuleFromRender2")(ctx.asInstanceOf[js.Any], ngModule.asInstanceOf[js.Any], injectableCompiler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def compileNgModuleFromRender2(ctx: OutputContext, ngModule: CompileShallowModuleMetadata, injectableCompiler: InjectableCompiler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compileNgModuleFromRender2")(ctx.asInstanceOf[js.Any], ngModule.asInstanceOf[js.Any], injectableCompiler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait R3InjectorDef extends StObject {
     
@@ -37,27 +34,21 @@ object r3ModuleCompilerMod {
   }
   object R3InjectorDef {
     
-    @scala.inline
-    def apply(expression: Expression, statements: js.Array[Statement], `type`: Type): R3InjectorDef = {
+    inline def apply(expression: Expression, statements: js.Array[Statement], `type`: Type): R3InjectorDef = {
       val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], statements = statements.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[R3InjectorDef]
     }
     
-    @scala.inline
-    implicit class R3InjectorDefMutableBuilder[Self <: R3InjectorDef] (val x: Self) extends AnyVal {
+    extension [Self <: R3InjectorDef](x: Self) {
       
-      @scala.inline
-      def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+      inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatements(value: js.Array[Statement]): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
+      inline def setStatements(value: js.Array[Statement]): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatementsVarargs(value: Statement*): Self = StObject.set(x, "statements", js.Array(value :_*))
+      inline def setStatementsVarargs(value: Statement*): Self = StObject.set(x, "statements", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -77,45 +68,33 @@ object r3ModuleCompilerMod {
   }
   object R3InjectorMetadata {
     
-    @scala.inline
-    def apply(imports: js.Array[Expression], internalType: Expression, name: String, `type`: R3Reference): R3InjectorMetadata = {
+    inline def apply(imports: js.Array[Expression], internalType: Expression, name: String, `type`: R3Reference): R3InjectorMetadata = {
       val __obj = js.Dynamic.literal(imports = imports.asInstanceOf[js.Any], internalType = internalType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], deps = null, providers = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[R3InjectorMetadata]
     }
     
-    @scala.inline
-    implicit class R3InjectorMetadataMutableBuilder[Self <: R3InjectorMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: R3InjectorMetadata](x: Self) {
       
-      @scala.inline
-      def setDeps(value: js.Array[R3DependencyMetadata]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
+      inline def setDeps(value: js.Array[R3DependencyMetadata]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepsNull: Self = StObject.set(x, "deps", null)
+      inline def setDepsNull: Self = StObject.set(x, "deps", null)
       
-      @scala.inline
-      def setDepsVarargs(value: R3DependencyMetadata*): Self = StObject.set(x, "deps", js.Array(value :_*))
+      inline def setDepsVarargs(value: R3DependencyMetadata*): Self = StObject.set(x, "deps", js.Array(value :_*))
       
-      @scala.inline
-      def setImports(value: js.Array[Expression]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
+      inline def setImports(value: js.Array[Expression]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportsVarargs(value: Expression*): Self = StObject.set(x, "imports", js.Array(value :_*))
+      inline def setImportsVarargs(value: Expression*): Self = StObject.set(x, "imports", js.Array(value :_*))
       
-      @scala.inline
-      def setInternalType(value: Expression): Self = StObject.set(x, "internalType", value.asInstanceOf[js.Any])
+      inline def setInternalType(value: Expression): Self = StObject.set(x, "internalType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProviders(value: Expression): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
+      inline def setProviders(value: Expression): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvidersNull: Self = StObject.set(x, "providers", null)
+      inline def setProvidersNull: Self = StObject.set(x, "providers", null)
       
-      @scala.inline
-      def setType(value: R3Reference): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: R3Reference): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -129,27 +108,21 @@ object r3ModuleCompilerMod {
   }
   object R3NgModuleDef {
     
-    @scala.inline
-    def apply(additionalStatements: js.Array[Statement], expression: Expression, `type`: Type): R3NgModuleDef = {
+    inline def apply(additionalStatements: js.Array[Statement], expression: Expression, `type`: Type): R3NgModuleDef = {
       val __obj = js.Dynamic.literal(additionalStatements = additionalStatements.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[R3NgModuleDef]
     }
     
-    @scala.inline
-    implicit class R3NgModuleDefMutableBuilder[Self <: R3NgModuleDef] (val x: Self) extends AnyVal {
+    extension [Self <: R3NgModuleDef](x: Self) {
       
-      @scala.inline
-      def setAdditionalStatements(value: js.Array[Statement]): Self = StObject.set(x, "additionalStatements", value.asInstanceOf[js.Any])
+      inline def setAdditionalStatements(value: js.Array[Statement]): Self = StObject.set(x, "additionalStatements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalStatementsVarargs(value: Statement*): Self = StObject.set(x, "additionalStatements", js.Array(value :_*))
+      inline def setAdditionalStatementsVarargs(value: Statement*): Self = StObject.set(x, "additionalStatements", js.Array(value :_*))
       
-      @scala.inline
-      def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+      inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -220,8 +193,7 @@ object r3ModuleCompilerMod {
   }
   object R3NgModuleMetadata {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       adjacentType: Expression,
       bootstrap: js.Array[R3Reference],
       containsForwardDecls: Boolean,
@@ -237,62 +209,43 @@ object r3ModuleCompilerMod {
       __obj.asInstanceOf[R3NgModuleMetadata]
     }
     
-    @scala.inline
-    implicit class R3NgModuleMetadataMutableBuilder[Self <: R3NgModuleMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: R3NgModuleMetadata](x: Self) {
       
-      @scala.inline
-      def setAdjacentType(value: Expression): Self = StObject.set(x, "adjacentType", value.asInstanceOf[js.Any])
+      inline def setAdjacentType(value: Expression): Self = StObject.set(x, "adjacentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBootstrap(value: js.Array[R3Reference]): Self = StObject.set(x, "bootstrap", value.asInstanceOf[js.Any])
+      inline def setBootstrap(value: js.Array[R3Reference]): Self = StObject.set(x, "bootstrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBootstrapVarargs(value: R3Reference*): Self = StObject.set(x, "bootstrap", js.Array(value :_*))
+      inline def setBootstrapVarargs(value: R3Reference*): Self = StObject.set(x, "bootstrap", js.Array(value :_*))
       
-      @scala.inline
-      def setContainsForwardDecls(value: Boolean): Self = StObject.set(x, "containsForwardDecls", value.asInstanceOf[js.Any])
+      inline def setContainsForwardDecls(value: Boolean): Self = StObject.set(x, "containsForwardDecls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeclarations(value: js.Array[R3Reference]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
+      inline def setDeclarations(value: js.Array[R3Reference]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeclarationsVarargs(value: R3Reference*): Self = StObject.set(x, "declarations", js.Array(value :_*))
+      inline def setDeclarationsVarargs(value: R3Reference*): Self = StObject.set(x, "declarations", js.Array(value :_*))
       
-      @scala.inline
-      def setEmitInline(value: Boolean): Self = StObject.set(x, "emitInline", value.asInstanceOf[js.Any])
+      inline def setEmitInline(value: Boolean): Self = StObject.set(x, "emitInline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExports(value: js.Array[R3Reference]): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
+      inline def setExports(value: js.Array[R3Reference]): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportsVarargs(value: R3Reference*): Self = StObject.set(x, "exports", js.Array(value :_*))
+      inline def setExportsVarargs(value: R3Reference*): Self = StObject.set(x, "exports", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: Expression): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Expression): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdNull: Self = StObject.set(x, "id", null)
+      inline def setIdNull: Self = StObject.set(x, "id", null)
       
-      @scala.inline
-      def setImports(value: js.Array[R3Reference]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
+      inline def setImports(value: js.Array[R3Reference]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportsVarargs(value: R3Reference*): Self = StObject.set(x, "imports", js.Array(value :_*))
+      inline def setImportsVarargs(value: R3Reference*): Self = StObject.set(x, "imports", js.Array(value :_*))
       
-      @scala.inline
-      def setInternalType(value: Expression): Self = StObject.set(x, "internalType", value.asInstanceOf[js.Any])
+      inline def setInternalType(value: Expression): Self = StObject.set(x, "internalType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemas(value: js.Array[R3Reference]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
+      inline def setSchemas(value: js.Array[R3Reference]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemasNull: Self = StObject.set(x, "schemas", null)
+      inline def setSchemasNull: Self = StObject.set(x, "schemas", null)
       
-      @scala.inline
-      def setSchemasVarargs(value: R3Reference*): Self = StObject.set(x, "schemas", js.Array(value :_*))
+      inline def setSchemasVarargs(value: R3Reference*): Self = StObject.set(x, "schemas", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: R3Reference): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: R3Reference): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

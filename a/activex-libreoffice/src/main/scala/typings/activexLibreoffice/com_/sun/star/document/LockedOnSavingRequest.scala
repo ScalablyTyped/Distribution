@@ -22,19 +22,15 @@ trait LockedOnSavingRequest
 }
 object LockedOnSavingRequest {
   
-  @scala.inline
-  def apply(Context: XInterface, DocumentURL: String, Message: String, UserInfo: String): LockedOnSavingRequest = {
+  inline def apply(Context: XInterface, DocumentURL: String, Message: String, UserInfo: String): LockedOnSavingRequest = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], DocumentURL = DocumentURL.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], UserInfo = UserInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[LockedOnSavingRequest]
   }
   
-  @scala.inline
-  implicit class LockedOnSavingRequestMutableBuilder[Self <: LockedOnSavingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: LockedOnSavingRequest](x: Self) {
     
-    @scala.inline
-    def setDocumentURL(value: String): Self = StObject.set(x, "DocumentURL", value.asInstanceOf[js.Any])
+    inline def setDocumentURL(value: String): Self = StObject.set(x, "DocumentURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserInfo(value: String): Self = StObject.set(x, "UserInfo", value.asInstanceOf[js.Any])
+    inline def setUserInfo(value: String): Self = StObject.set(x, "UserInfo", value.asInstanceOf[js.Any])
   }
 }

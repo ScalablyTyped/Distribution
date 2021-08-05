@@ -23,26 +23,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object ExportAllDeclaration_ {
   
-  @scala.inline
-  def apply(source: StringLiteral_): ExportAllDeclaration_ = {
+  inline def apply(source: StringLiteral_): ExportAllDeclaration_ = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], assertions = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("ExportAllDeclaration")
     __obj.asInstanceOf[ExportAllDeclaration_]
   }
   
-  @scala.inline
-  implicit class ExportAllDeclaration_MutableBuilder[Self <: ExportAllDeclaration_] (val x: Self) extends AnyVal {
+  extension [Self <: ExportAllDeclaration_](x: Self) {
     
-    @scala.inline
-    def setAssertions(value: ImportAttribute_): Self = StObject.set(x, "assertions", value.asInstanceOf[js.Any])
+    inline def setAssertions(value: ImportAttribute_): Self = StObject.set(x, "assertions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssertionsNull: Self = StObject.set(x, "assertions", null)
+    inline def setAssertionsNull: Self = StObject.set(x, "assertions", null)
     
-    @scala.inline
-    def setSource(value: StringLiteral_): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: StringLiteral_): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ExportAllDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ExportAllDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -58,45 +58,31 @@ object mod {
   @js.native
   val Suspense: js.Symbol = js.native
   
-  @scala.inline
-  def isAsyncMode(value: js.Any): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAsyncMode")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
+  inline def isAsyncMode(value: js.Any): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAsyncMode")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
   
-  @scala.inline
-  def isContextConsumer(value: js.Any): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isContextConsumer")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
+  inline def isContextConsumer(value: js.Any): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isContextConsumer")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
   
-  @scala.inline
-  def isContextProvider(value: js.Any): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isContextProvider")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
+  inline def isContextProvider(value: js.Any): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isContextProvider")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
   
-  @scala.inline
-  def isElement(value: js.Any): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElement")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
+  inline def isElement(value: js.Any): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElement")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
   
-  @scala.inline
-  def isForwardRef(value: js.Any): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isForwardRef")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
+  inline def isForwardRef(value: js.Any): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isForwardRef")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
   
-  @scala.inline
-  def isFragment(value: js.Any): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFragment")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
+  inline def isFragment(value: js.Any): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFragment")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
   
-  @scala.inline
-  def isLazy(value: js.Any): /* is react.react.LazyExoticComponent<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLazy")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.LazyExoticComponent<any> */ Boolean]
+  inline def isLazy(value: js.Any): /* is react.react.LazyExoticComponent<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLazy")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.LazyExoticComponent<any> */ Boolean]
   
-  @scala.inline
-  def isMemo(value: js.Any): /* is react.react.MemoExoticComponent<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMemo")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.MemoExoticComponent<any> */ Boolean]
+  inline def isMemo(value: js.Any): /* is react.react.MemoExoticComponent<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMemo")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.MemoExoticComponent<any> */ Boolean]
   
-  @scala.inline
-  def isPortal(value: js.Any): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPortal")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
+  inline def isPortal(value: js.Any): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPortal")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
   
-  @scala.inline
-  def isProfiler(value: js.Any): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isProfiler")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
+  inline def isProfiler(value: js.Any): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isProfiler")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
   
-  @scala.inline
-  def isStrictMode(value: js.Any): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStrictMode")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
+  inline def isStrictMode(value: js.Any): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStrictMode")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
   
-  @scala.inline
-  def isSuspense(value: js.Any): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSuspense")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
+  inline def isSuspense(value: js.Any): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSuspense")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
   
-  @scala.inline
-  def isValidElementType(value: js.Any): /* is react.react.ReactType<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidElementType")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactType<any> */ Boolean]
+  inline def isValidElementType(value: js.Any): /* is react.react.ReactType<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidElementType")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactType<any> */ Boolean]
   
-  @scala.inline
-  def typeOf(value: js.Any): js.UndefOr[js.Symbol] = ^.asInstanceOf[js.Dynamic].applyDynamic("typeOf")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Symbol]]
+  inline def typeOf(value: js.Any): js.UndefOr[js.Symbol] = ^.asInstanceOf[js.Dynamic].applyDynamic("typeOf")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Symbol]]
 }

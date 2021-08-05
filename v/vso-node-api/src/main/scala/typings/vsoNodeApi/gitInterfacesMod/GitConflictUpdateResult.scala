@@ -28,8 +28,7 @@ trait GitConflictUpdateResult extends StObject {
 }
 object GitConflictUpdateResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     conflictId: Double,
     customMessage: String,
     updateStatus: GitConflictUpdateStatus,
@@ -39,19 +38,14 @@ object GitConflictUpdateResult {
     __obj.asInstanceOf[GitConflictUpdateResult]
   }
   
-  @scala.inline
-  implicit class GitConflictUpdateResultMutableBuilder[Self <: GitConflictUpdateResult] (val x: Self) extends AnyVal {
+  extension [Self <: GitConflictUpdateResult](x: Self) {
     
-    @scala.inline
-    def setConflictId(value: Double): Self = StObject.set(x, "conflictId", value.asInstanceOf[js.Any])
+    inline def setConflictId(value: Double): Self = StObject.set(x, "conflictId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomMessage(value: String): Self = StObject.set(x, "customMessage", value.asInstanceOf[js.Any])
+    inline def setCustomMessage(value: String): Self = StObject.set(x, "customMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateStatus(value: GitConflictUpdateStatus): Self = StObject.set(x, "updateStatus", value.asInstanceOf[js.Any])
+    inline def setUpdateStatus(value: GitConflictUpdateStatus): Self = StObject.set(x, "updateStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedConflict(value: GitConflict): Self = StObject.set(x, "updatedConflict", value.asInstanceOf[js.Any])
+    inline def setUpdatedConflict(value: GitConflict): Self = StObject.set(x, "updatedConflict", value.asInstanceOf[js.Any])
   }
 }

@@ -18,28 +18,21 @@ trait PutEmailIdentityDkimSigningAttributesResponse extends StObject {
 }
 object PutEmailIdentityDkimSigningAttributesResponse {
   
-  @scala.inline
-  def apply(): PutEmailIdentityDkimSigningAttributesResponse = {
+  inline def apply(): PutEmailIdentityDkimSigningAttributesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutEmailIdentityDkimSigningAttributesResponse]
   }
   
-  @scala.inline
-  implicit class PutEmailIdentityDkimSigningAttributesResponseMutableBuilder[Self <: PutEmailIdentityDkimSigningAttributesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PutEmailIdentityDkimSigningAttributesResponse](x: Self) {
     
-    @scala.inline
-    def setDkimStatus(value: DkimStatus): Self = StObject.set(x, "DkimStatus", value.asInstanceOf[js.Any])
+    inline def setDkimStatus(value: DkimStatus): Self = StObject.set(x, "DkimStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDkimStatusUndefined: Self = StObject.set(x, "DkimStatus", js.undefined)
+    inline def setDkimStatusUndefined: Self = StObject.set(x, "DkimStatus", js.undefined)
     
-    @scala.inline
-    def setDkimTokens(value: DnsTokenList): Self = StObject.set(x, "DkimTokens", value.asInstanceOf[js.Any])
+    inline def setDkimTokens(value: DnsTokenList): Self = StObject.set(x, "DkimTokens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDkimTokensUndefined: Self = StObject.set(x, "DkimTokens", js.undefined)
+    inline def setDkimTokensUndefined: Self = StObject.set(x, "DkimTokens", js.undefined)
     
-    @scala.inline
-    def setDkimTokensVarargs(value: DnsToken*): Self = StObject.set(x, "DkimTokens", js.Array(value :_*))
+    inline def setDkimTokensVarargs(value: DnsToken*): Self = StObject.set(x, "DkimTokens", js.Array(value :_*))
   }
 }

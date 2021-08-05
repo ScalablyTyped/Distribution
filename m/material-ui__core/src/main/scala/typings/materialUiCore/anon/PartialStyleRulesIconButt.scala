@@ -22,49 +22,35 @@ trait PartialStyleRulesIconButt extends StObject {
 }
 object PartialStyleRulesIconButt {
   
-  @scala.inline
-  def apply(): PartialStyleRulesIconButt = {
+  inline def apply(): PartialStyleRulesIconButt = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialStyleRulesIconButt]
   }
   
-  @scala.inline
-  implicit class PartialStyleRulesIconButtMutableBuilder[Self <: PartialStyleRulesIconButt] (val x: Self) extends AnyVal {
+  extension [Self <: PartialStyleRulesIconButt](x: Self) {
     
-    @scala.inline
-    def setColorInherit(value: CSSProperties): Self = StObject.set(x, "colorInherit", value.asInstanceOf[js.Any])
+    inline def setColorInherit(value: CSSProperties): Self = StObject.set(x, "colorInherit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorInheritUndefined: Self = StObject.set(x, "colorInherit", js.undefined)
+    inline def setColorInheritUndefined: Self = StObject.set(x, "colorInherit", js.undefined)
     
-    @scala.inline
-    def setColorPrimary(value: CSSProperties): Self = StObject.set(x, "colorPrimary", value.asInstanceOf[js.Any])
+    inline def setColorPrimary(value: CSSProperties): Self = StObject.set(x, "colorPrimary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorPrimaryUndefined: Self = StObject.set(x, "colorPrimary", js.undefined)
+    inline def setColorPrimaryUndefined: Self = StObject.set(x, "colorPrimary", js.undefined)
     
-    @scala.inline
-    def setColorSecondary(value: CSSProperties): Self = StObject.set(x, "colorSecondary", value.asInstanceOf[js.Any])
+    inline def setColorSecondary(value: CSSProperties): Self = StObject.set(x, "colorSecondary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorSecondaryUndefined: Self = StObject.set(x, "colorSecondary", js.undefined)
+    inline def setColorSecondaryUndefined: Self = StObject.set(x, "colorSecondary", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: CSSProperties): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: CSSProperties): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setLabel(value: CSSProperties): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: CSSProperties): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

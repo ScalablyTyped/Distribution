@@ -13,19 +13,15 @@ trait MediaTypeHeaderValue extends StObject {
 }
 object MediaTypeHeaderValue {
   
-  @scala.inline
-  def apply(mediaTypeHeaderValue: HttpMediaTypeHeaderValue, returnValue: Boolean): MediaTypeHeaderValue = {
+  inline def apply(mediaTypeHeaderValue: HttpMediaTypeHeaderValue, returnValue: Boolean): MediaTypeHeaderValue = {
     val __obj = js.Dynamic.literal(mediaTypeHeaderValue = mediaTypeHeaderValue.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaTypeHeaderValue]
   }
   
-  @scala.inline
-  implicit class MediaTypeHeaderValueMutableBuilder[Self <: MediaTypeHeaderValue] (val x: Self) extends AnyVal {
+  extension [Self <: MediaTypeHeaderValue](x: Self) {
     
-    @scala.inline
-    def setMediaTypeHeaderValue(value: HttpMediaTypeHeaderValue): Self = StObject.set(x, "mediaTypeHeaderValue", value.asInstanceOf[js.Any])
+    inline def setMediaTypeHeaderValue(value: HttpMediaTypeHeaderValue): Self = StObject.set(x, "mediaTypeHeaderValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

@@ -25,8 +25,7 @@ trait CoreTextLayoutRequest extends StObject {
 }
 object CoreTextLayoutRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getDeferral: () => Deferral,
     isCanceled: Boolean,
     layoutBounds: CoreTextLayoutBounds,
@@ -36,19 +35,14 @@ object CoreTextLayoutRequest {
     __obj.asInstanceOf[CoreTextLayoutRequest]
   }
   
-  @scala.inline
-  implicit class CoreTextLayoutRequestMutableBuilder[Self <: CoreTextLayoutRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CoreTextLayoutRequest](x: Self) {
     
-    @scala.inline
-    def setGetDeferral(value: () => Deferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
+    inline def setGetDeferral(value: () => Deferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsCanceled(value: Boolean): Self = StObject.set(x, "isCanceled", value.asInstanceOf[js.Any])
+    inline def setIsCanceled(value: Boolean): Self = StObject.set(x, "isCanceled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutBounds(value: CoreTextLayoutBounds): Self = StObject.set(x, "layoutBounds", value.asInstanceOf[js.Any])
+    inline def setLayoutBounds(value: CoreTextLayoutBounds): Self = StObject.set(x, "layoutBounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: CoreTextRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: CoreTextRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
   }
 }

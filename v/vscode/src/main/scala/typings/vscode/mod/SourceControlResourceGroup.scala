@@ -35,8 +35,7 @@ trait SourceControlResourceGroup extends StObject {
 }
 object SourceControlResourceGroup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dispose: () => Unit,
     id: String,
     label: String,
@@ -46,28 +45,20 @@ object SourceControlResourceGroup {
     __obj.asInstanceOf[SourceControlResourceGroup]
   }
   
-  @scala.inline
-  implicit class SourceControlResourceGroupMutableBuilder[Self <: SourceControlResourceGroup] (val x: Self) extends AnyVal {
+  extension [Self <: SourceControlResourceGroup](x: Self) {
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHideWhenEmpty(value: Boolean): Self = StObject.set(x, "hideWhenEmpty", value.asInstanceOf[js.Any])
+    inline def setHideWhenEmpty(value: Boolean): Self = StObject.set(x, "hideWhenEmpty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideWhenEmptyUndefined: Self = StObject.set(x, "hideWhenEmpty", js.undefined)
+    inline def setHideWhenEmptyUndefined: Self = StObject.set(x, "hideWhenEmpty", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceStates(value: js.Array[SourceControlResourceState]): Self = StObject.set(x, "resourceStates", value.asInstanceOf[js.Any])
+    inline def setResourceStates(value: js.Array[SourceControlResourceState]): Self = StObject.set(x, "resourceStates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceStatesVarargs(value: SourceControlResourceState*): Self = StObject.set(x, "resourceStates", js.Array(value :_*))
+    inline def setResourceStatesVarargs(value: SourceControlResourceState*): Self = StObject.set(x, "resourceStates", js.Array(value :_*))
   }
 }

@@ -10,16 +10,13 @@ trait TargetIdPayload extends StObject {
 }
 object TargetIdPayload {
   
-  @scala.inline
-  def apply(targetId: Identifier): TargetIdPayload = {
+  inline def apply(targetId: Identifier): TargetIdPayload = {
     val __obj = js.Dynamic.literal(targetId = targetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetIdPayload]
   }
   
-  @scala.inline
-  implicit class TargetIdPayloadMutableBuilder[Self <: TargetIdPayload] (val x: Self) extends AnyVal {
+  extension [Self <: TargetIdPayload](x: Self) {
     
-    @scala.inline
-    def setTargetId(value: Identifier): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
+    inline def setTargetId(value: Identifier): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
   }
 }

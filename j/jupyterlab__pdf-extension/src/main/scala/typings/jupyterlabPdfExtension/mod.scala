@@ -18,13 +18,13 @@ object mod extends Shortcut {
   @js.native
   class RenderedPDF () extends IRenderer {
     
-    var _base64: js.Any = js.native
+    /* private */ var _base64: js.Any = js.native
     
-    var _disposable: js.Any = js.native
+    /* private */ var _disposable: js.Any = js.native
     
-    var _object: js.Any = js.native
+    /* private */ var _object: js.Any = js.native
     
-    var _ready: js.Any = js.native
+    /* private */ var _ready: js.Any = js.native
     
     /**
       * Handle a `before-hide` message.

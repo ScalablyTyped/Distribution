@@ -23,26 +23,20 @@ object mod extends Shortcut {
   }
   object Static {
     
-    @scala.inline
-    def apply(nfc: String => String, nfd: String => String, nfkc: String => String, nfkd: String => String): Static = {
+    inline def apply(nfc: String => String, nfd: String => String, nfkc: String => String, nfkd: String => String): Static = {
       val __obj = js.Dynamic.literal(nfc = js.Any.fromFunction1(nfc), nfd = js.Any.fromFunction1(nfd), nfkc = js.Any.fromFunction1(nfkc), nfkd = js.Any.fromFunction1(nfkd))
       __obj.asInstanceOf[Static]
     }
     
-    @scala.inline
-    implicit class StaticMutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
+    extension [Self <: Static](x: Self) {
       
-      @scala.inline
-      def setNfc(value: String => String): Self = StObject.set(x, "nfc", js.Any.fromFunction1(value))
+      inline def setNfc(value: String => String): Self = StObject.set(x, "nfc", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNfd(value: String => String): Self = StObject.set(x, "nfd", js.Any.fromFunction1(value))
+      inline def setNfd(value: String => String): Self = StObject.set(x, "nfd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNfkc(value: String => String): Self = StObject.set(x, "nfkc", js.Any.fromFunction1(value))
+      inline def setNfkc(value: String => String): Self = StObject.set(x, "nfkc", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNfkd(value: String => String): Self = StObject.set(x, "nfkd", js.Any.fromFunction1(value))
+      inline def setNfkd(value: String => String): Self = StObject.set(x, "nfkd", js.Any.fromFunction1(value))
     }
   }
   

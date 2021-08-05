@@ -51,8 +51,7 @@ trait XSeekable
 }
 object XSeekable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Length: Double,
     Position: Double,
     acquire: () => Unit,
@@ -66,22 +65,16 @@ object XSeekable {
     __obj.asInstanceOf[XSeekable]
   }
   
-  @scala.inline
-  implicit class XSeekableMutableBuilder[Self <: XSeekable] (val x: Self) extends AnyVal {
+  extension [Self <: XSeekable](x: Self) {
     
-    @scala.inline
-    def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
+    inline def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPosition(value: () => Double): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
+    inline def setGetPosition(value: () => Double): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "Length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "Length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeek(value: Double => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction1(value))
+    inline def setSeek(value: Double => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction1(value))
   }
 }

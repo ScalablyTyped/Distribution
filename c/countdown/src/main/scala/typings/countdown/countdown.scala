@@ -92,62 +92,44 @@ object countdown {
   }
   object Format {
     
-    @scala.inline
-    def apply(): Format = {
+    inline def apply(): Format = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Format]
     }
     
-    @scala.inline
-    implicit class FormatMutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
+    extension [Self <: Format](x: Self) {
       
-      @scala.inline
-      def setDelim(value: String): Self = StObject.set(x, "delim", value.asInstanceOf[js.Any])
+      inline def setDelim(value: String): Self = StObject.set(x, "delim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelimUndefined: Self = StObject.set(x, "delim", js.undefined)
+      inline def setDelimUndefined: Self = StObject.set(x, "delim", js.undefined)
       
-      @scala.inline
-      def setEmpty(value: String): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
+      inline def setEmpty(value: String): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
+      inline def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
       
-      @scala.inline
-      def setFormatNumber(value: /* value */ Double => String): Self = StObject.set(x, "formatNumber", js.Any.fromFunction1(value))
+      inline def setFormatNumber(value: /* value */ Double => String): Self = StObject.set(x, "formatNumber", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFormatNumberUndefined: Self = StObject.set(x, "formatNumber", js.undefined)
+      inline def setFormatNumberUndefined: Self = StObject.set(x, "formatNumber", js.undefined)
       
-      @scala.inline
-      def setFormatter(value: (/* value */ Double, /* unit */ Double) => String): Self = StObject.set(x, "formatter", js.Any.fromFunction2(value))
+      inline def setFormatter(value: (/* value */ Double, /* unit */ Double) => String): Self = StObject.set(x, "formatter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
+      inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
       
-      @scala.inline
-      def setLast(value: String): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
+      inline def setLast(value: String): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
+      inline def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
       
-      @scala.inline
-      def setPlural(value: String | js.Array[String]): Self = StObject.set(x, "plural", value.asInstanceOf[js.Any])
+      inline def setPlural(value: String | js.Array[String]): Self = StObject.set(x, "plural", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluralUndefined: Self = StObject.set(x, "plural", js.undefined)
+      inline def setPluralUndefined: Self = StObject.set(x, "plural", js.undefined)
       
-      @scala.inline
-      def setPluralVarargs(value: String*): Self = StObject.set(x, "plural", js.Array(value :_*))
+      inline def setPluralVarargs(value: String*): Self = StObject.set(x, "plural", js.Array(value :_*))
       
-      @scala.inline
-      def setSingular(value: String | js.Array[String]): Self = StObject.set(x, "singular", value.asInstanceOf[js.Any])
+      inline def setSingular(value: String | js.Array[String]): Self = StObject.set(x, "singular", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSingularUndefined: Self = StObject.set(x, "singular", js.undefined)
+      inline def setSingularUndefined: Self = StObject.set(x, "singular", js.undefined)
       
-      @scala.inline
-      def setSingularVarargs(value: String*): Self = StObject.set(x, "singular", js.Array(value :_*))
+      inline def setSingularVarargs(value: String*): Self = StObject.set(x, "singular", js.Array(value :_*))
     }
   }
   

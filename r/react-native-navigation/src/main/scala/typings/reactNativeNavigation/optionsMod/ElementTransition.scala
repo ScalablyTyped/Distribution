@@ -28,70 +28,49 @@ trait ElementTransition extends StObject {
 }
 object ElementTransition {
   
-  @scala.inline
-  def apply(id: String): ElementTransition = {
+  inline def apply(id: String): ElementTransition = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementTransition]
   }
   
-  @scala.inline
-  implicit class ElementTransitionMutableBuilder[Self <: ElementTransition] (val x: Self) extends AnyVal {
+  extension [Self <: ElementTransition](x: Self) {
     
-    @scala.inline
-    def setAlpha(value: AppearingElementAnimation | DisappearingElementAnimation): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+    inline def setAlpha(value: AppearingElementAnimation | DisappearingElementAnimation): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+    inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotationX(value: AppearingElementAnimation | DisappearingElementAnimation): Self = StObject.set(x, "rotationX", value.asInstanceOf[js.Any])
+    inline def setRotationX(value: AppearingElementAnimation | DisappearingElementAnimation): Self = StObject.set(x, "rotationX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotationXUndefined: Self = StObject.set(x, "rotationX", js.undefined)
+    inline def setRotationXUndefined: Self = StObject.set(x, "rotationX", js.undefined)
     
-    @scala.inline
-    def setRotationY(value: AppearingElementAnimation | DisappearingElementAnimation): Self = StObject.set(x, "rotationY", value.asInstanceOf[js.Any])
+    inline def setRotationY(value: AppearingElementAnimation | DisappearingElementAnimation): Self = StObject.set(x, "rotationY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotationYUndefined: Self = StObject.set(x, "rotationY", js.undefined)
+    inline def setRotationYUndefined: Self = StObject.set(x, "rotationY", js.undefined)
     
-    @scala.inline
-    def setScaleX(value: AppearingElementAnimation | DisappearingElementAnimation): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
+    inline def setScaleX(value: AppearingElementAnimation | DisappearingElementAnimation): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleXUndefined: Self = StObject.set(x, "scaleX", js.undefined)
+    inline def setScaleXUndefined: Self = StObject.set(x, "scaleX", js.undefined)
     
-    @scala.inline
-    def setScaleY(value: AppearingElementAnimation | DisappearingElementAnimation): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
+    inline def setScaleY(value: AppearingElementAnimation | DisappearingElementAnimation): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleYUndefined: Self = StObject.set(x, "scaleY", js.undefined)
+    inline def setScaleYUndefined: Self = StObject.set(x, "scaleY", js.undefined)
     
-    @scala.inline
-    def setTranslationX(value: AppearingElementAnimation | DisappearingElementAnimation): Self = StObject.set(x, "translationX", value.asInstanceOf[js.Any])
+    inline def setTranslationX(value: AppearingElementAnimation | DisappearingElementAnimation): Self = StObject.set(x, "translationX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslationXUndefined: Self = StObject.set(x, "translationX", js.undefined)
+    inline def setTranslationXUndefined: Self = StObject.set(x, "translationX", js.undefined)
     
-    @scala.inline
-    def setTranslationY(value: AppearingElementAnimation | DisappearingElementAnimation): Self = StObject.set(x, "translationY", value.asInstanceOf[js.Any])
+    inline def setTranslationY(value: AppearingElementAnimation | DisappearingElementAnimation): Self = StObject.set(x, "translationY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslationYUndefined: Self = StObject.set(x, "translationY", js.undefined)
+    inline def setTranslationYUndefined: Self = StObject.set(x, "translationY", js.undefined)
     
-    @scala.inline
-    def setX(value: AppearingElementAnimation | DisappearingElementAnimation): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: AppearingElementAnimation | DisappearingElementAnimation): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setY(value: AppearingElementAnimation | DisappearingElementAnimation): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: AppearingElementAnimation | DisappearingElementAnimation): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

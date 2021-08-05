@@ -25,25 +25,19 @@ trait SchemaGoogleDevtoolsRemoteexecutionV1testLogFile extends StObject {
 }
 object SchemaGoogleDevtoolsRemoteexecutionV1testLogFile {
   
-  @scala.inline
-  def apply(): SchemaGoogleDevtoolsRemoteexecutionV1testLogFile = {
+  inline def apply(): SchemaGoogleDevtoolsRemoteexecutionV1testLogFile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleDevtoolsRemoteexecutionV1testLogFile]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleDevtoolsRemoteexecutionV1testLogFileMutableBuilder[Self <: SchemaGoogleDevtoolsRemoteexecutionV1testLogFile] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleDevtoolsRemoteexecutionV1testLogFile](x: Self) {
     
-    @scala.inline
-    def setDigest(value: SchemaGoogleDevtoolsRemoteexecutionV1testDigest): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
+    inline def setDigest(value: SchemaGoogleDevtoolsRemoteexecutionV1testDigest): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
+    inline def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
     
-    @scala.inline
-    def setHumanReadable(value: Boolean): Self = StObject.set(x, "humanReadable", value.asInstanceOf[js.Any])
+    inline def setHumanReadable(value: Boolean): Self = StObject.set(x, "humanReadable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHumanReadableUndefined: Self = StObject.set(x, "humanReadable", js.undefined)
+    inline def setHumanReadableUndefined: Self = StObject.set(x, "humanReadable", js.undefined)
   }
 }

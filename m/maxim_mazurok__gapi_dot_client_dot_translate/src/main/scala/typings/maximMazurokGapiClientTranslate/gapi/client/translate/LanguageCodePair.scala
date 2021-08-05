@@ -14,25 +14,19 @@ trait LanguageCodePair extends StObject {
 }
 object LanguageCodePair {
   
-  @scala.inline
-  def apply(): LanguageCodePair = {
+  inline def apply(): LanguageCodePair = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LanguageCodePair]
   }
   
-  @scala.inline
-  implicit class LanguageCodePairMutableBuilder[Self <: LanguageCodePair] (val x: Self) extends AnyVal {
+  extension [Self <: LanguageCodePair](x: Self) {
     
-    @scala.inline
-    def setSourceLanguageCode(value: String): Self = StObject.set(x, "sourceLanguageCode", value.asInstanceOf[js.Any])
+    inline def setSourceLanguageCode(value: String): Self = StObject.set(x, "sourceLanguageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceLanguageCodeUndefined: Self = StObject.set(x, "sourceLanguageCode", js.undefined)
+    inline def setSourceLanguageCodeUndefined: Self = StObject.set(x, "sourceLanguageCode", js.undefined)
     
-    @scala.inline
-    def setTargetLanguageCode(value: String): Self = StObject.set(x, "targetLanguageCode", value.asInstanceOf[js.Any])
+    inline def setTargetLanguageCode(value: String): Self = StObject.set(x, "targetLanguageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetLanguageCodeUndefined: Self = StObject.set(x, "targetLanguageCode", js.undefined)
+    inline def setTargetLanguageCodeUndefined: Self = StObject.set(x, "targetLanguageCode", js.undefined)
   }
 }

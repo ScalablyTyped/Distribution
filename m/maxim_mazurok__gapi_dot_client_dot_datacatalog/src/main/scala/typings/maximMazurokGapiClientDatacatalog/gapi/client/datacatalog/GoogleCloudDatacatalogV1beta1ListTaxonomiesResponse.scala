@@ -14,28 +14,21 @@ trait GoogleCloudDatacatalogV1beta1ListTaxonomiesResponse extends StObject {
 }
 object GoogleCloudDatacatalogV1beta1ListTaxonomiesResponse {
   
-  @scala.inline
-  def apply(): GoogleCloudDatacatalogV1beta1ListTaxonomiesResponse = {
+  inline def apply(): GoogleCloudDatacatalogV1beta1ListTaxonomiesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatacatalogV1beta1ListTaxonomiesResponse]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatacatalogV1beta1ListTaxonomiesResponseMutableBuilder[Self <: GoogleCloudDatacatalogV1beta1ListTaxonomiesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatacatalogV1beta1ListTaxonomiesResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setTaxonomies(value: js.Array[GoogleCloudDatacatalogV1beta1Taxonomy]): Self = StObject.set(x, "taxonomies", value.asInstanceOf[js.Any])
+    inline def setTaxonomies(value: js.Array[GoogleCloudDatacatalogV1beta1Taxonomy]): Self = StObject.set(x, "taxonomies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaxonomiesUndefined: Self = StObject.set(x, "taxonomies", js.undefined)
+    inline def setTaxonomiesUndefined: Self = StObject.set(x, "taxonomies", js.undefined)
     
-    @scala.inline
-    def setTaxonomiesVarargs(value: GoogleCloudDatacatalogV1beta1Taxonomy*): Self = StObject.set(x, "taxonomies", js.Array(value :_*))
+    inline def setTaxonomiesVarargs(value: GoogleCloudDatacatalogV1beta1Taxonomy*): Self = StObject.set(x, "taxonomies", js.Array(value :_*))
   }
 }

@@ -13,17 +13,14 @@ trait LaunchTemplateElasticGpuSpecification extends StObject {
 }
 object LaunchTemplateElasticGpuSpecification {
   
-  @scala.inline
-  def apply(`type`: String): LaunchTemplateElasticGpuSpecification = {
+  inline def apply(`type`: String): LaunchTemplateElasticGpuSpecification = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchTemplateElasticGpuSpecification]
   }
   
-  @scala.inline
-  implicit class LaunchTemplateElasticGpuSpecificationMutableBuilder[Self <: LaunchTemplateElasticGpuSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: LaunchTemplateElasticGpuSpecification](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

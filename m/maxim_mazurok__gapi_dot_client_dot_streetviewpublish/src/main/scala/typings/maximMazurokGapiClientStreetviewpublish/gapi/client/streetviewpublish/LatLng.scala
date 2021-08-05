@@ -14,25 +14,19 @@ trait LatLng extends StObject {
 }
 object LatLng {
   
-  @scala.inline
-  def apply(): LatLng = {
+  inline def apply(): LatLng = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LatLng]
   }
   
-  @scala.inline
-  implicit class LatLngMutableBuilder[Self <: LatLng] (val x: Self) extends AnyVal {
+  extension [Self <: LatLng](x: Self) {
     
-    @scala.inline
-    def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+    inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatitudeUndefined: Self = StObject.set(x, "latitude", js.undefined)
+    inline def setLatitudeUndefined: Self = StObject.set(x, "latitude", js.undefined)
     
-    @scala.inline
-    def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+    inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongitudeUndefined: Self = StObject.set(x, "longitude", js.undefined)
+    inline def setLongitudeUndefined: Self = StObject.set(x, "longitude", js.undefined)
   }
 }

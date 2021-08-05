@@ -52,8 +52,7 @@ object mod {
   }
   object AttachedScope {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addDeclaration: (Node, Boolean, Boolean) => Unit,
       contains: String => Boolean,
       declarations: StringDictionary[Boolean],
@@ -63,26 +62,19 @@ object mod {
       __obj.asInstanceOf[AttachedScope]
     }
     
-    @scala.inline
-    implicit class AttachedScopeMutableBuilder[Self <: AttachedScope] (val x: Self) extends AnyVal {
+    extension [Self <: AttachedScope](x: Self) {
       
-      @scala.inline
-      def setAddDeclaration(value: (Node, Boolean, Boolean) => Unit): Self = StObject.set(x, "addDeclaration", js.Any.fromFunction3(value))
+      inline def setAddDeclaration(value: (Node, Boolean, Boolean) => Unit): Self = StObject.set(x, "addDeclaration", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setContains(value: String => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+      inline def setContains(value: String => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDeclarations(value: StringDictionary[Boolean]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
+      inline def setDeclarations(value: StringDictionary[Boolean]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBlockScope(value: Boolean): Self = StObject.set(x, "isBlockScope", value.asInstanceOf[js.Any])
+      inline def setIsBlockScope(value: Boolean): Self = StObject.set(x, "isBlockScope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent(value: AttachedScope): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: AttachedScope): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+      inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     }
   }
   
@@ -107,44 +99,32 @@ object mod {
   }
   object DataToEsmOptions {
     
-    @scala.inline
-    def apply(): DataToEsmOptions = {
+    inline def apply(): DataToEsmOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DataToEsmOptions]
     }
     
-    @scala.inline
-    implicit class DataToEsmOptionsMutableBuilder[Self <: DataToEsmOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DataToEsmOptions](x: Self) {
       
-      @scala.inline
-      def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+      inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
+      inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
       
-      @scala.inline
-      def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+      inline def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
+      inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
       
-      @scala.inline
-      def setNamedExports(value: Boolean): Self = StObject.set(x, "namedExports", value.asInstanceOf[js.Any])
+      inline def setNamedExports(value: Boolean): Self = StObject.set(x, "namedExports", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamedExportsUndefined: Self = StObject.set(x, "namedExports", js.undefined)
+      inline def setNamedExportsUndefined: Self = StObject.set(x, "namedExports", js.undefined)
       
-      @scala.inline
-      def setObjectShorthand(value: Boolean): Self = StObject.set(x, "objectShorthand", value.asInstanceOf[js.Any])
+      inline def setObjectShorthand(value: Boolean): Self = StObject.set(x, "objectShorthand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectShorthandUndefined: Self = StObject.set(x, "objectShorthand", js.undefined)
+      inline def setObjectShorthandUndefined: Self = StObject.set(x, "objectShorthand", js.undefined)
       
-      @scala.inline
-      def setPreferConst(value: Boolean): Self = StObject.set(x, "preferConst", value.asInstanceOf[js.Any])
+      inline def setPreferConst(value: Boolean): Self = StObject.set(x, "preferConst", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreferConstUndefined: Self = StObject.set(x, "preferConst", js.undefined)
+      inline def setPreferConstUndefined: Self = StObject.set(x, "preferConst", js.undefined)
     }
   }
   

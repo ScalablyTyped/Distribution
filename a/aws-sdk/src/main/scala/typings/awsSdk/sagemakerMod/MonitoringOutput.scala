@@ -13,16 +13,13 @@ trait MonitoringOutput extends StObject {
 }
 object MonitoringOutput {
   
-  @scala.inline
-  def apply(S3Output: MonitoringS3Output): MonitoringOutput = {
+  inline def apply(S3Output: MonitoringS3Output): MonitoringOutput = {
     val __obj = js.Dynamic.literal(S3Output = S3Output.asInstanceOf[js.Any])
     __obj.asInstanceOf[MonitoringOutput]
   }
   
-  @scala.inline
-  implicit class MonitoringOutputMutableBuilder[Self <: MonitoringOutput] (val x: Self) extends AnyVal {
+  extension [Self <: MonitoringOutput](x: Self) {
     
-    @scala.inline
-    def setS3Output(value: MonitoringS3Output): Self = StObject.set(x, "S3Output", value.asInstanceOf[js.Any])
+    inline def setS3Output(value: MonitoringS3Output): Self = StObject.set(x, "S3Output", value.asInstanceOf[js.Any])
   }
 }

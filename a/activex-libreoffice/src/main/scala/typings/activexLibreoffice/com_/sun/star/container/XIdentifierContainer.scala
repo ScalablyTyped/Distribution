@@ -33,8 +33,7 @@ trait XIdentifierContainer
 }
 object XIdentifierContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementType: `type`,
     Identifiers: SafeArray[Double],
     acquire: () => Unit,
@@ -52,13 +51,10 @@ object XIdentifierContainer {
     __obj.asInstanceOf[XIdentifierContainer]
   }
   
-  @scala.inline
-  implicit class XIdentifierContainerMutableBuilder[Self <: XIdentifierContainer] (val x: Self) extends AnyVal {
+  extension [Self <: XIdentifierContainer](x: Self) {
     
-    @scala.inline
-    def setInsert(value: js.Any => Double): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
+    inline def setInsert(value: js.Any => Double): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveByIdentifier(value: Double => Unit): Self = StObject.set(x, "removeByIdentifier", js.Any.fromFunction1(value))
+    inline def setRemoveByIdentifier(value: Double => Unit): Self = StObject.set(x, "removeByIdentifier", js.Any.fromFunction1(value))
   }
 }

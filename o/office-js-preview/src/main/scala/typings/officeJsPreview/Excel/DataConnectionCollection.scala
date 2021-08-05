@@ -35,8 +35,7 @@ trait DataConnectionCollection
 }
 object DataConnectionCollection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     context: RequestContext,
     isNullObject: Boolean,
     refreshAll: () => Unit,
@@ -46,16 +45,12 @@ object DataConnectionCollection {
     __obj.asInstanceOf[DataConnectionCollection]
   }
   
-  @scala.inline
-  implicit class DataConnectionCollectionMutableBuilder[Self <: DataConnectionCollection] (val x: Self) extends AnyVal {
+  extension [Self <: DataConnectionCollection](x: Self) {
     
-    @scala.inline
-    def setContext(value: RequestContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: RequestContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshAll(value: () => Unit): Self = StObject.set(x, "refreshAll", js.Any.fromFunction0(value))
+    inline def setRefreshAll(value: () => Unit): Self = StObject.set(x, "refreshAll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToJSON(value: () => StringDictionary[String]): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => StringDictionary[String]): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }
 }

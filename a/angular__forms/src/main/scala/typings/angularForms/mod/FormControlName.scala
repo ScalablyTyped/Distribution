@@ -28,13 +28,13 @@ class FormControlName protected ()
     _ngModelWarningConfig: String
   ) = this()
   
-  var _added: js.Any = js.native
+  /* private */ var _added: js.Any = js.native
   
-  var _checkParentType: js.Any = js.native
+  /* private */ var _checkParentType: js.Any = js.native
   
-  var _ngModelWarningConfig: js.Any = js.native
+  /* private */ var _ngModelWarningConfig: js.Any = js.native
   
-  var _setUpControl: js.Any = js.native
+  /* private */ var _setUpControl: js.Any = js.native
   
   /**
     * @description

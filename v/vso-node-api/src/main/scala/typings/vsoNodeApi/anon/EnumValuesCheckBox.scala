@@ -10,16 +10,13 @@ trait EnumValuesCheckBox extends StObject {
 }
 object EnumValuesCheckBox {
   
-  @scala.inline
-  def apply(enumValues: CheckBox): EnumValuesCheckBox = {
+  inline def apply(enumValues: CheckBox): EnumValuesCheckBox = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesCheckBox]
   }
   
-  @scala.inline
-  implicit class EnumValuesCheckBoxMutableBuilder[Self <: EnumValuesCheckBox] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesCheckBox](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: CheckBox): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: CheckBox): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

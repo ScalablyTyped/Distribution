@@ -28,31 +28,23 @@ trait DoubleColumnStatisticsData extends StObject {
 }
 object DoubleColumnStatisticsData {
   
-  @scala.inline
-  def apply(NumberOfDistinctValues: NonNegativeLong, NumberOfNulls: NonNegativeLong): DoubleColumnStatisticsData = {
+  inline def apply(NumberOfDistinctValues: NonNegativeLong, NumberOfNulls: NonNegativeLong): DoubleColumnStatisticsData = {
     val __obj = js.Dynamic.literal(NumberOfDistinctValues = NumberOfDistinctValues.asInstanceOf[js.Any], NumberOfNulls = NumberOfNulls.asInstanceOf[js.Any])
     __obj.asInstanceOf[DoubleColumnStatisticsData]
   }
   
-  @scala.inline
-  implicit class DoubleColumnStatisticsDataMutableBuilder[Self <: DoubleColumnStatisticsData] (val x: Self) extends AnyVal {
+  extension [Self <: DoubleColumnStatisticsData](x: Self) {
     
-    @scala.inline
-    def setMaximumValue(value: Double): Self = StObject.set(x, "MaximumValue", value.asInstanceOf[js.Any])
+    inline def setMaximumValue(value: Double): Self = StObject.set(x, "MaximumValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumValueUndefined: Self = StObject.set(x, "MaximumValue", js.undefined)
+    inline def setMaximumValueUndefined: Self = StObject.set(x, "MaximumValue", js.undefined)
     
-    @scala.inline
-    def setMinimumValue(value: Double): Self = StObject.set(x, "MinimumValue", value.asInstanceOf[js.Any])
+    inline def setMinimumValue(value: Double): Self = StObject.set(x, "MinimumValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumValueUndefined: Self = StObject.set(x, "MinimumValue", js.undefined)
+    inline def setMinimumValueUndefined: Self = StObject.set(x, "MinimumValue", js.undefined)
     
-    @scala.inline
-    def setNumberOfDistinctValues(value: NonNegativeLong): Self = StObject.set(x, "NumberOfDistinctValues", value.asInstanceOf[js.Any])
+    inline def setNumberOfDistinctValues(value: NonNegativeLong): Self = StObject.set(x, "NumberOfDistinctValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfNulls(value: NonNegativeLong): Self = StObject.set(x, "NumberOfNulls", value.asInstanceOf[js.Any])
+    inline def setNumberOfNulls(value: NonNegativeLong): Self = StObject.set(x, "NumberOfNulls", value.asInstanceOf[js.Any])
   }
 }

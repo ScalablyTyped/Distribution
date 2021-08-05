@@ -32,8 +32,7 @@ object previewFrameMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def uuid(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uuid")().asInstanceOf[String]
+    inline def uuid(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uuid")().asInstanceOf[String]
   }
   
   trait PreviewFrameParams
@@ -50,8 +49,7 @@ object previewFrameMod {
   }
   object PreviewFrameParams {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       channel: String,
       container: js.Any,
       previewUrl: js.Any,
@@ -63,17 +61,13 @@ object previewFrameMod {
       __obj.asInstanceOf[PreviewFrameParams]
     }
     
-    @scala.inline
-    implicit class PreviewFrameParamsMutableBuilder[Self <: PreviewFrameParams] (val x: Self) extends AnyVal {
+    extension [Self <: PreviewFrameParams](x: Self) {
       
-      @scala.inline
-      def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewUrl(value: js.Any): Self = StObject.set(x, "previewUrl", value.asInstanceOf[js.Any])
+      inline def setPreviewUrl(value: js.Any): Self = StObject.set(x, "previewUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     }
   }
 }

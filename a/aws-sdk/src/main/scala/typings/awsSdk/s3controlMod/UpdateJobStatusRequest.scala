@@ -28,28 +28,21 @@ trait UpdateJobStatusRequest extends StObject {
 }
 object UpdateJobStatusRequest {
   
-  @scala.inline
-  def apply(AccountId: AccountId, JobId: JobId, RequestedJobStatus: RequestedJobStatus): UpdateJobStatusRequest = {
+  inline def apply(AccountId: AccountId, JobId: JobId, RequestedJobStatus: RequestedJobStatus): UpdateJobStatusRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], JobId = JobId.asInstanceOf[js.Any], RequestedJobStatus = RequestedJobStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateJobStatusRequest]
   }
   
-  @scala.inline
-  implicit class UpdateJobStatusRequestMutableBuilder[Self <: UpdateJobStatusRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateJobStatusRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestedJobStatus(value: RequestedJobStatus): Self = StObject.set(x, "RequestedJobStatus", value.asInstanceOf[js.Any])
+    inline def setRequestedJobStatus(value: RequestedJobStatus): Self = StObject.set(x, "RequestedJobStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUpdateReason(value: JobStatusUpdateReason): Self = StObject.set(x, "StatusUpdateReason", value.asInstanceOf[js.Any])
+    inline def setStatusUpdateReason(value: JobStatusUpdateReason): Self = StObject.set(x, "StatusUpdateReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUpdateReasonUndefined: Self = StObject.set(x, "StatusUpdateReason", js.undefined)
+    inline def setStatusUpdateReasonUndefined: Self = StObject.set(x, "StatusUpdateReason", js.undefined)
   }
 }

@@ -11,10 +11,8 @@ object getUserMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getUser(args: GetUserArgs): js.Promise[GetUserResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUser")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetUserResult]]
-  @scala.inline
-  def getUser(args: GetUserArgs, opts: InvokeOptions): js.Promise[GetUserResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUser")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetUserResult]]
+  inline def getUser(args: GetUserArgs): js.Promise[GetUserResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUser")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetUserResult]]
+  inline def getUser(args: GetUserArgs, opts: InvokeOptions): js.Promise[GetUserResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUser")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetUserResult]]
   
   trait GetUserArgs extends StObject {
     
@@ -25,17 +23,14 @@ object getUserMod {
   }
   object GetUserArgs {
     
-    @scala.inline
-    def apply(userName: String): GetUserArgs = {
+    inline def apply(userName: String): GetUserArgs = {
       val __obj = js.Dynamic.literal(userName = userName.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetUserArgs]
     }
     
-    @scala.inline
-    implicit class GetUserArgsMutableBuilder[Self <: GetUserArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetUserArgs](x: Self) {
       
-      @scala.inline
-      def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
+      inline def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -73,8 +68,7 @@ object getUserMod {
   }
   object GetUserResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arn: String,
       id: String,
       path: String,
@@ -86,26 +80,19 @@ object getUserMod {
       __obj.asInstanceOf[GetUserResult]
     }
     
-    @scala.inline
-    implicit class GetUserResultMutableBuilder[Self <: GetUserResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetUserResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPermissionsBoundary(value: String): Self = StObject.set(x, "permissionsBoundary", value.asInstanceOf[js.Any])
+      inline def setPermissionsBoundary(value: String): Self = StObject.set(x, "permissionsBoundary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+      inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
+      inline def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
     }
   }
 }

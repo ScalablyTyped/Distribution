@@ -12,6 +12,5 @@ object searchBoxStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStyles(props: ISearchBoxStyleProps): ISearchBoxStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[ISearchBoxStyles]
+  inline def getStyles(props: ISearchBoxStyleProps): ISearchBoxStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[ISearchBoxStyles]
 }

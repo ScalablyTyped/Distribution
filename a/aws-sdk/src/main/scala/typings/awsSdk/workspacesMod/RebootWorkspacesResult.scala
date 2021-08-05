@@ -13,22 +13,17 @@ trait RebootWorkspacesResult extends StObject {
 }
 object RebootWorkspacesResult {
   
-  @scala.inline
-  def apply(): RebootWorkspacesResult = {
+  inline def apply(): RebootWorkspacesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RebootWorkspacesResult]
   }
   
-  @scala.inline
-  implicit class RebootWorkspacesResultMutableBuilder[Self <: RebootWorkspacesResult] (val x: Self) extends AnyVal {
+  extension [Self <: RebootWorkspacesResult](x: Self) {
     
-    @scala.inline
-    def setFailedRequests(value: FailedRebootWorkspaceRequests): Self = StObject.set(x, "FailedRequests", value.asInstanceOf[js.Any])
+    inline def setFailedRequests(value: FailedRebootWorkspaceRequests): Self = StObject.set(x, "FailedRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedRequestsUndefined: Self = StObject.set(x, "FailedRequests", js.undefined)
+    inline def setFailedRequestsUndefined: Self = StObject.set(x, "FailedRequests", js.undefined)
     
-    @scala.inline
-    def setFailedRequestsVarargs(value: FailedWorkspaceChangeRequest*): Self = StObject.set(x, "FailedRequests", js.Array(value :_*))
+    inline def setFailedRequestsVarargs(value: FailedWorkspaceChangeRequest*): Self = StObject.set(x, "FailedRequests", js.Array(value :_*))
   }
 }

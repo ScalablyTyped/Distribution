@@ -22,25 +22,19 @@ trait SourceRepository extends StObject {
 }
 object SourceRepository {
   
-  @scala.inline
-  def apply(): SourceRepository = {
+  inline def apply(): SourceRepository = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SourceRepository]
   }
   
-  @scala.inline
-  implicit class SourceRepositoryMutableBuilder[Self <: SourceRepository] (val x: Self) extends AnyVal {
+  extension [Self <: SourceRepository](x: Self) {
     
-    @scala.inline
-    def setDeployedUrl(value: String): Self = StObject.set(x, "deployedUrl", value.asInstanceOf[js.Any])
+    inline def setDeployedUrl(value: String): Self = StObject.set(x, "deployedUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeployedUrlUndefined: Self = StObject.set(x, "deployedUrl", js.undefined)
+    inline def setDeployedUrlUndefined: Self = StObject.set(x, "deployedUrl", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

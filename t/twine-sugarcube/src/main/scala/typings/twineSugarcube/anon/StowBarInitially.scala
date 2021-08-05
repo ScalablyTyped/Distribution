@@ -46,19 +46,15 @@ trait StowBarInitially extends StObject {
 }
 object StowBarInitially {
   
-  @scala.inline
-  def apply(stowBarInitially: Boolean | Double, updateStoryElements: Boolean): StowBarInitially = {
+  inline def apply(stowBarInitially: Boolean | Double, updateStoryElements: Boolean): StowBarInitially = {
     val __obj = js.Dynamic.literal(stowBarInitially = stowBarInitially.asInstanceOf[js.Any], updateStoryElements = updateStoryElements.asInstanceOf[js.Any])
     __obj.asInstanceOf[StowBarInitially]
   }
   
-  @scala.inline
-  implicit class StowBarInitiallyMutableBuilder[Self <: StowBarInitially] (val x: Self) extends AnyVal {
+  extension [Self <: StowBarInitially](x: Self) {
     
-    @scala.inline
-    def setStowBarInitially(value: Boolean | Double): Self = StObject.set(x, "stowBarInitially", value.asInstanceOf[js.Any])
+    inline def setStowBarInitially(value: Boolean | Double): Self = StObject.set(x, "stowBarInitially", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateStoryElements(value: Boolean): Self = StObject.set(x, "updateStoryElements", value.asInstanceOf[js.Any])
+    inline def setUpdateStoryElements(value: Boolean): Self = StObject.set(x, "updateStoryElements", value.asInstanceOf[js.Any])
   }
 }

@@ -11,22 +11,17 @@ trait GroupLicensesListResponse extends StObject {
 }
 object GroupLicensesListResponse {
   
-  @scala.inline
-  def apply(): GroupLicensesListResponse = {
+  inline def apply(): GroupLicensesListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GroupLicensesListResponse]
   }
   
-  @scala.inline
-  implicit class GroupLicensesListResponseMutableBuilder[Self <: GroupLicensesListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GroupLicensesListResponse](x: Self) {
     
-    @scala.inline
-    def setGroupLicense(value: js.Array[GroupLicense]): Self = StObject.set(x, "groupLicense", value.asInstanceOf[js.Any])
+    inline def setGroupLicense(value: js.Array[GroupLicense]): Self = StObject.set(x, "groupLicense", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupLicenseUndefined: Self = StObject.set(x, "groupLicense", js.undefined)
+    inline def setGroupLicenseUndefined: Self = StObject.set(x, "groupLicense", js.undefined)
     
-    @scala.inline
-    def setGroupLicenseVarargs(value: GroupLicense*): Self = StObject.set(x, "groupLicense", js.Array(value :_*))
+    inline def setGroupLicenseVarargs(value: GroupLicense*): Self = StObject.set(x, "groupLicense", js.Array(value :_*))
   }
 }

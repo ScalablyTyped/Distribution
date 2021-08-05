@@ -18,8 +18,7 @@ trait HyperParameterTuningJobWarmStartConfig extends StObject {
 }
 object HyperParameterTuningJobWarmStartConfig {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ParentHyperParameterTuningJobs: ParentHyperParameterTuningJobs,
     WarmStartType: HyperParameterTuningJobWarmStartType
   ): HyperParameterTuningJobWarmStartConfig = {
@@ -27,16 +26,12 @@ object HyperParameterTuningJobWarmStartConfig {
     __obj.asInstanceOf[HyperParameterTuningJobWarmStartConfig]
   }
   
-  @scala.inline
-  implicit class HyperParameterTuningJobWarmStartConfigMutableBuilder[Self <: HyperParameterTuningJobWarmStartConfig] (val x: Self) extends AnyVal {
+  extension [Self <: HyperParameterTuningJobWarmStartConfig](x: Self) {
     
-    @scala.inline
-    def setParentHyperParameterTuningJobs(value: ParentHyperParameterTuningJobs): Self = StObject.set(x, "ParentHyperParameterTuningJobs", value.asInstanceOf[js.Any])
+    inline def setParentHyperParameterTuningJobs(value: ParentHyperParameterTuningJobs): Self = StObject.set(x, "ParentHyperParameterTuningJobs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentHyperParameterTuningJobsVarargs(value: ParentHyperParameterTuningJob*): Self = StObject.set(x, "ParentHyperParameterTuningJobs", js.Array(value :_*))
+    inline def setParentHyperParameterTuningJobsVarargs(value: ParentHyperParameterTuningJob*): Self = StObject.set(x, "ParentHyperParameterTuningJobs", js.Array(value :_*))
     
-    @scala.inline
-    def setWarmStartType(value: HyperParameterTuningJobWarmStartType): Self = StObject.set(x, "WarmStartType", value.asInstanceOf[js.Any])
+    inline def setWarmStartType(value: HyperParameterTuningJobWarmStartType): Self = StObject.set(x, "WarmStartType", value.asInstanceOf[js.Any])
   }
 }

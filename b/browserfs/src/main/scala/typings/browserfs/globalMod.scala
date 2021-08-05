@@ -13,6 +13,5 @@ object globalMod {
   @JSImport("browserfs/dist/node/core/global", JSImport.Default)
   @js.native
   def default: js.Any = js.native
-  @scala.inline
-  def default_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

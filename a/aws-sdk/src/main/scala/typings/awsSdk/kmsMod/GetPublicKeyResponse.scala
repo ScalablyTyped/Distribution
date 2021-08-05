@@ -38,55 +38,39 @@ trait GetPublicKeyResponse extends StObject {
 }
 object GetPublicKeyResponse {
   
-  @scala.inline
-  def apply(): GetPublicKeyResponse = {
+  inline def apply(): GetPublicKeyResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetPublicKeyResponse]
   }
   
-  @scala.inline
-  implicit class GetPublicKeyResponseMutableBuilder[Self <: GetPublicKeyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetPublicKeyResponse](x: Self) {
     
-    @scala.inline
-    def setCustomerMasterKeySpec(value: CustomerMasterKeySpec): Self = StObject.set(x, "CustomerMasterKeySpec", value.asInstanceOf[js.Any])
+    inline def setCustomerMasterKeySpec(value: CustomerMasterKeySpec): Self = StObject.set(x, "CustomerMasterKeySpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerMasterKeySpecUndefined: Self = StObject.set(x, "CustomerMasterKeySpec", js.undefined)
+    inline def setCustomerMasterKeySpecUndefined: Self = StObject.set(x, "CustomerMasterKeySpec", js.undefined)
     
-    @scala.inline
-    def setEncryptionAlgorithms(value: EncryptionAlgorithmSpecList): Self = StObject.set(x, "EncryptionAlgorithms", value.asInstanceOf[js.Any])
+    inline def setEncryptionAlgorithms(value: EncryptionAlgorithmSpecList): Self = StObject.set(x, "EncryptionAlgorithms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionAlgorithmsUndefined: Self = StObject.set(x, "EncryptionAlgorithms", js.undefined)
+    inline def setEncryptionAlgorithmsUndefined: Self = StObject.set(x, "EncryptionAlgorithms", js.undefined)
     
-    @scala.inline
-    def setEncryptionAlgorithmsVarargs(value: EncryptionAlgorithmSpec*): Self = StObject.set(x, "EncryptionAlgorithms", js.Array(value :_*))
+    inline def setEncryptionAlgorithmsVarargs(value: EncryptionAlgorithmSpec*): Self = StObject.set(x, "EncryptionAlgorithms", js.Array(value :_*))
     
-    @scala.inline
-    def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
+    inline def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
+    inline def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
     
-    @scala.inline
-    def setKeyUsage(value: KeyUsageType): Self = StObject.set(x, "KeyUsage", value.asInstanceOf[js.Any])
+    inline def setKeyUsage(value: KeyUsageType): Self = StObject.set(x, "KeyUsage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUsageUndefined: Self = StObject.set(x, "KeyUsage", js.undefined)
+    inline def setKeyUsageUndefined: Self = StObject.set(x, "KeyUsage", js.undefined)
     
-    @scala.inline
-    def setPublicKey(value: PublicKeyType): Self = StObject.set(x, "PublicKey", value.asInstanceOf[js.Any])
+    inline def setPublicKey(value: PublicKeyType): Self = StObject.set(x, "PublicKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKeyUndefined: Self = StObject.set(x, "PublicKey", js.undefined)
+    inline def setPublicKeyUndefined: Self = StObject.set(x, "PublicKey", js.undefined)
     
-    @scala.inline
-    def setSigningAlgorithms(value: SigningAlgorithmSpecList): Self = StObject.set(x, "SigningAlgorithms", value.asInstanceOf[js.Any])
+    inline def setSigningAlgorithms(value: SigningAlgorithmSpecList): Self = StObject.set(x, "SigningAlgorithms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigningAlgorithmsUndefined: Self = StObject.set(x, "SigningAlgorithms", js.undefined)
+    inline def setSigningAlgorithmsUndefined: Self = StObject.set(x, "SigningAlgorithms", js.undefined)
     
-    @scala.inline
-    def setSigningAlgorithmsVarargs(value: SigningAlgorithmSpec*): Self = StObject.set(x, "SigningAlgorithms", js.Array(value :_*))
+    inline def setSigningAlgorithmsVarargs(value: SigningAlgorithmSpec*): Self = StObject.set(x, "SigningAlgorithms", js.Array(value :_*))
   }
 }

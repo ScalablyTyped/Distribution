@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.NodeIterator")
 @js.native
-class NodeIterator protected ()
+/* private */ class NodeIterator ()
   extends StObject
      with typings.activexMshtml.MSHTML.NodeIterator {
   
   /* CompleteClass */
   override def Detach(): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.NodeIterator_typekey")
   var MSHTMLDotNodeIterator_typekey: typings.activexMshtml.MSHTML.NodeIterator = js.native
   

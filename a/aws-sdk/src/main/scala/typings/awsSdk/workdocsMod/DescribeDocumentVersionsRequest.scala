@@ -38,46 +38,33 @@ trait DescribeDocumentVersionsRequest extends StObject {
 }
 object DescribeDocumentVersionsRequest {
   
-  @scala.inline
-  def apply(DocumentId: ResourceIdType): DescribeDocumentVersionsRequest = {
+  inline def apply(DocumentId: ResourceIdType): DescribeDocumentVersionsRequest = {
     val __obj = js.Dynamic.literal(DocumentId = DocumentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDocumentVersionsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeDocumentVersionsRequestMutableBuilder[Self <: DescribeDocumentVersionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDocumentVersionsRequest](x: Self) {
     
-    @scala.inline
-    def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
+    inline def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
+    inline def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
     
-    @scala.inline
-    def setDocumentId(value: ResourceIdType): Self = StObject.set(x, "DocumentId", value.asInstanceOf[js.Any])
+    inline def setDocumentId(value: ResourceIdType): Self = StObject.set(x, "DocumentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFields(value: FieldNamesType): Self = StObject.set(x, "Fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: FieldNamesType): Self = StObject.set(x, "Fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "Fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "Fields", js.undefined)
     
-    @scala.inline
-    def setInclude(value: FieldNamesType): Self = StObject.set(x, "Include", value.asInstanceOf[js.Any])
+    inline def setInclude(value: FieldNamesType): Self = StObject.set(x, "Include", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeUndefined: Self = StObject.set(x, "Include", js.undefined)
+    inline def setIncludeUndefined: Self = StObject.set(x, "Include", js.undefined)
     
-    @scala.inline
-    def setLimit(value: LimitType): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: LimitType): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setMarker(value: PageMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: PageMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

@@ -28,50 +28,36 @@ object Array {
   }
   object ArrayOptions {
     
-    @scala.inline
-    def apply(): ArrayOptions = {
+    inline def apply(): ArrayOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ArrayOptions]
     }
     
-    @scala.inline
-    implicit class ArrayOptionsMutableBuilder[Self <: ArrayOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ArrayOptions](x: Self) {
       
-      @scala.inline
-      def setSortCollate(value: typings.sugar.Function): Self = StObject.set(x, "sortCollate", value.asInstanceOf[js.Any])
+      inline def setSortCollate(value: typings.sugar.Function): Self = StObject.set(x, "sortCollate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortCollateUndefined: Self = StObject.set(x, "sortCollate", js.undefined)
+      inline def setSortCollateUndefined: Self = StObject.set(x, "sortCollate", js.undefined)
       
-      @scala.inline
-      def setSortEquivalents(value: js.Object): Self = StObject.set(x, "sortEquivalents", value.asInstanceOf[js.Any])
+      inline def setSortEquivalents(value: js.Object): Self = StObject.set(x, "sortEquivalents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortEquivalentsUndefined: Self = StObject.set(x, "sortEquivalents", js.undefined)
+      inline def setSortEquivalentsUndefined: Self = StObject.set(x, "sortEquivalents", js.undefined)
       
-      @scala.inline
-      def setSortIgnore(value: typings.sugar.RegExp): Self = StObject.set(x, "sortIgnore", value.asInstanceOf[js.Any])
+      inline def setSortIgnore(value: typings.sugar.RegExp): Self = StObject.set(x, "sortIgnore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortIgnoreCase(value: Boolean): Self = StObject.set(x, "sortIgnoreCase", value.asInstanceOf[js.Any])
+      inline def setSortIgnoreCase(value: Boolean): Self = StObject.set(x, "sortIgnoreCase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortIgnoreCaseUndefined: Self = StObject.set(x, "sortIgnoreCase", js.undefined)
+      inline def setSortIgnoreCaseUndefined: Self = StObject.set(x, "sortIgnoreCase", js.undefined)
       
-      @scala.inline
-      def setSortIgnoreUndefined: Self = StObject.set(x, "sortIgnore", js.undefined)
+      inline def setSortIgnoreUndefined: Self = StObject.set(x, "sortIgnore", js.undefined)
       
-      @scala.inline
-      def setSortNatural(value: Boolean): Self = StObject.set(x, "sortNatural", value.asInstanceOf[js.Any])
+      inline def setSortNatural(value: Boolean): Self = StObject.set(x, "sortNatural", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortNaturalUndefined: Self = StObject.set(x, "sortNatural", js.undefined)
+      inline def setSortNaturalUndefined: Self = StObject.set(x, "sortNatural", js.undefined)
       
-      @scala.inline
-      def setSortOrder(value: java.lang.String): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
+      inline def setSortOrder(value: java.lang.String): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
+      inline def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
     }
   }
   

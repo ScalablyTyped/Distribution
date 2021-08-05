@@ -11,6 +11,5 @@ object baseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def Base(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Base")().asInstanceOf[Element]
+  inline def Base(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Base")().asInstanceOf[Element]
 }

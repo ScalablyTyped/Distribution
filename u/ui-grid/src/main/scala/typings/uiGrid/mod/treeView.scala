@@ -18,20 +18,16 @@ object treeView {
   }
   object IGridOptions {
     
-    @scala.inline
-    def apply(): typings.uiGrid.mod.treeView.IGridOptions = {
+    inline def apply(): typings.uiGrid.mod.treeView.IGridOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.uiGrid.mod.treeView.IGridOptions]
     }
     
-    @scala.inline
-    implicit class IGridOptionsMutableBuilder[Self <: typings.uiGrid.mod.treeView.IGridOptions] (val x: Self) extends AnyVal {
+    extension [Self <: typings.uiGrid.mod.treeView.IGridOptions](x: Self) {
       
-      @scala.inline
-      def setEnableTreeView(value: Boolean): Self = StObject.set(x, "enableTreeView", value.asInstanceOf[js.Any])
+      inline def setEnableTreeView(value: Boolean): Self = StObject.set(x, "enableTreeView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableTreeViewUndefined: Self = StObject.set(x, "enableTreeView", js.undefined)
+      inline def setEnableTreeViewUndefined: Self = StObject.set(x, "enableTreeView", js.undefined)
     }
   }
   
@@ -43,8 +39,7 @@ object treeView {
   }
   object IUiGridTreeViewConstants {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       COLLAPSED: String,
       EXPANDED: String,
       aggregation: AVG_,
@@ -55,11 +50,9 @@ object treeView {
       __obj.asInstanceOf[IUiGridTreeViewConstants]
     }
     
-    @scala.inline
-    implicit class IUiGridTreeViewConstantsMutableBuilder[Self <: IUiGridTreeViewConstants] (val x: Self) extends AnyVal {
+    extension [Self <: IUiGridTreeViewConstants](x: Self) {
       
-      @scala.inline
-      def setFeatureName(value: String): Self = StObject.set(x, "featureName", value.asInstanceOf[js.Any])
+      inline def setFeatureName(value: String): Self = StObject.set(x, "featureName", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -96,11 +96,9 @@ object RawTransaction {
     /* 4 */ val WRITE_SET: typings.libraCore.transactionPbMod.RawTransaction.PayloadCase.WRITE_SET & Double = js.native
   }
   
-  @scala.inline
-  def deserializeBinary(bytes: Uint8Array): RawTransaction = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[RawTransaction]
+  inline def deserializeBinary(bytes: Uint8Array): RawTransaction = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[RawTransaction]
   
-  @scala.inline
-  def deserializeBinaryFromReader(message: RawTransaction, reader: BinaryReader): RawTransaction = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[RawTransaction]
+  inline def deserializeBinaryFromReader(message: RawTransaction, reader: BinaryReader): RawTransaction = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[RawTransaction]
   
   @JSImport("libra-core/lib/@/generated/transaction_pb", "RawTransaction.extensions")
   @js.native
@@ -109,17 +107,13 @@ object RawTransaction {
   @JSImport("libra-core/lib/@/generated/transaction_pb", "RawTransaction.extensionsBinary")
   @js.native
   def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-  @scala.inline
-  def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+  inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+  inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def serializeBinaryToWriter(message: RawTransaction, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serializeBinaryToWriter(message: RawTransaction, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def toObject(includeInstance: Boolean, msg: RawTransaction): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+  inline def toObject(includeInstance: Boolean, msg: RawTransaction): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
   trait AsObject extends StObject {
     
@@ -139,8 +133,7 @@ object RawTransaction {
   }
   object AsObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       expirationTime: String,
       gasUnitPrice: String,
       maxGasAmount: String,
@@ -151,35 +144,25 @@ object RawTransaction {
       __obj.asInstanceOf[AsObject]
     }
     
-    @scala.inline
-    implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+    extension [Self <: AsObject](x: Self) {
       
-      @scala.inline
-      def setExpirationTime(value: String): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
+      inline def setExpirationTime(value: String): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGasUnitPrice(value: String): Self = StObject.set(x, "gasUnitPrice", value.asInstanceOf[js.Any])
+      inline def setGasUnitPrice(value: String): Self = StObject.set(x, "gasUnitPrice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxGasAmount(value: String): Self = StObject.set(x, "maxGasAmount", value.asInstanceOf[js.Any])
+      inline def setMaxGasAmount(value: String): Self = StObject.set(x, "maxGasAmount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgram(value: typings.libraCore.transactionPbMod.Program.AsObject): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
+      inline def setProgram(value: typings.libraCore.transactionPbMod.Program.AsObject): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgramUndefined: Self = StObject.set(x, "program", js.undefined)
+      inline def setProgramUndefined: Self = StObject.set(x, "program", js.undefined)
       
-      @scala.inline
-      def setSenderAccount(value: Uint8Array | String): Self = StObject.set(x, "senderAccount", value.asInstanceOf[js.Any])
+      inline def setSenderAccount(value: Uint8Array | String): Self = StObject.set(x, "senderAccount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSequenceNumber(value: String): Self = StObject.set(x, "sequenceNumber", value.asInstanceOf[js.Any])
+      inline def setSequenceNumber(value: String): Self = StObject.set(x, "sequenceNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteSet(value: typings.libraCore.transactionPbMod.WriteSet.AsObject): Self = StObject.set(x, "writeSet", value.asInstanceOf[js.Any])
+      inline def setWriteSet(value: typings.libraCore.transactionPbMod.WriteSet.AsObject): Self = StObject.set(x, "writeSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteSetUndefined: Self = StObject.set(x, "writeSet", js.undefined)
+      inline def setWriteSetUndefined: Self = StObject.set(x, "writeSet", js.undefined)
     }
   }
 }

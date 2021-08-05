@@ -11,11 +11,9 @@ object global {
     *
     * @param handle The ID of the macrotask to remove from the macrotask queue.
     */
-  @scala.inline
-  def clearImmediate(handle: Double): Unit = js.Dynamic.global.applyDynamic("clearImmediate")(handle.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def clearImmediate(handle: Double): Unit = js.Dynamic.global.applyDynamic("clearImmediate")(handle.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setImmediate[T /* <: js.Array[js.Any] */](
+  inline def setImmediate[T /* <: js.Array[js.Any] */](
     callback: js.Function1[/* args */ T, Unit],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type T is not an array type */ args: T
   ): Double = (js.Dynamic.global.applyDynamic("setImmediate")(callback.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Double]

@@ -16,25 +16,19 @@ trait EnumCommon
 }
 object EnumCommon {
   
-  @scala.inline
-  def apply(custom: Unit, name: StringOrTranslated): EnumCommon = {
+  inline def apply(custom: Unit, name: StringOrTranslated): EnumCommon = {
     val __obj = js.Dynamic.literal(custom = custom.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumCommon]
   }
   
-  @scala.inline
-  implicit class EnumCommonMutableBuilder[Self <: EnumCommon] (val x: Self) extends AnyVal {
+  extension [Self <: EnumCommon](x: Self) {
     
-    @scala.inline
-    def setCustom(value: Unit): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: Unit): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembers(value: js.Array[String]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+    inline def setMembers(value: js.Array[String]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
+    inline def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
     
-    @scala.inline
-    def setMembersVarargs(value: String*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: String*): Self = StObject.set(x, "members", js.Array(value :_*))
   }
 }

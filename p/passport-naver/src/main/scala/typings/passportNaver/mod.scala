@@ -31,17 +31,14 @@ object mod {
   }
   object Profile {
     
-    @scala.inline
-    def apply(_json: Age, displayName: String, id: String, provider: String): Profile = {
+    inline def apply(_json: Age, displayName: String, id: String, provider: String): Profile = {
       val __obj = js.Dynamic.literal(_json = _json.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any])
       __obj.asInstanceOf[Profile]
     }
     
-    @scala.inline
-    implicit class ProfileMutableBuilder[Self <: Profile] (val x: Self) extends AnyVal {
+    extension [Self <: Profile](x: Self) {
       
-      @scala.inline
-      def set_json(value: Age): Self = StObject.set(x, "_json", value.asInstanceOf[js.Any])
+      inline def set_json(value: Age): Self = StObject.set(x, "_json", value.asInstanceOf[js.Any])
     }
   }
   
@@ -65,53 +62,38 @@ object mod {
   }
   object StrategyOption {
     
-    @scala.inline
-    def apply(callbackURL: String, clientID: String, clientSecret: String): StrategyOption = {
+    inline def apply(callbackURL: String, clientID: String, clientSecret: String): StrategyOption = {
       val __obj = js.Dynamic.literal(callbackURL = callbackURL.asInstanceOf[js.Any], clientID = clientID.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any])
       __obj.asInstanceOf[StrategyOption]
     }
     
-    @scala.inline
-    implicit class StrategyOptionMutableBuilder[Self <: StrategyOption] (val x: Self) extends AnyVal {
+    extension [Self <: StrategyOption](x: Self) {
       
-      @scala.inline
-      def setAuthType(value: String): Self = StObject.set(x, "authType", value.asInstanceOf[js.Any])
+      inline def setAuthType(value: String): Self = StObject.set(x, "authType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthTypeUndefined: Self = StObject.set(x, "authType", js.undefined)
+      inline def setAuthTypeUndefined: Self = StObject.set(x, "authType", js.undefined)
       
-      @scala.inline
-      def setAuthorizationURL(value: String): Self = StObject.set(x, "authorizationURL", value.asInstanceOf[js.Any])
+      inline def setAuthorizationURL(value: String): Self = StObject.set(x, "authorizationURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorizationURLUndefined: Self = StObject.set(x, "authorizationURL", js.undefined)
+      inline def setAuthorizationURLUndefined: Self = StObject.set(x, "authorizationURL", js.undefined)
       
-      @scala.inline
-      def setCallbackURL(value: String): Self = StObject.set(x, "callbackURL", value.asInstanceOf[js.Any])
+      inline def setCallbackURL(value: String): Self = StObject.set(x, "callbackURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientID(value: String): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
+      inline def setClientID(value: String): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
+      inline def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfileURL(value: String): Self = StObject.set(x, "profileURL", value.asInstanceOf[js.Any])
+      inline def setProfileURL(value: String): Self = StObject.set(x, "profileURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfileURLUndefined: Self = StObject.set(x, "profileURL", js.undefined)
+      inline def setProfileURLUndefined: Self = StObject.set(x, "profileURL", js.undefined)
       
-      @scala.inline
-      def setSvcType(value: Double): Self = StObject.set(x, "svcType", value.asInstanceOf[js.Any])
+      inline def setSvcType(value: Double): Self = StObject.set(x, "svcType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSvcTypeUndefined: Self = StObject.set(x, "svcType", js.undefined)
+      inline def setSvcTypeUndefined: Self = StObject.set(x, "svcType", js.undefined)
       
-      @scala.inline
-      def setTokenURL(value: String): Self = StObject.set(x, "tokenURL", value.asInstanceOf[js.Any])
+      inline def setTokenURL(value: String): Self = StObject.set(x, "tokenURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenURLUndefined: Self = StObject.set(x, "tokenURL", js.undefined)
+      inline def setTokenURLUndefined: Self = StObject.set(x, "tokenURL", js.undefined)
     }
   }
   
@@ -123,17 +105,14 @@ object mod {
   }
   object StrategyOptionWithRequest {
     
-    @scala.inline
-    def apply(callbackURL: String, clientID: String, clientSecret: String, passReqToCallback: Boolean): StrategyOptionWithRequest = {
+    inline def apply(callbackURL: String, clientID: String, clientSecret: String, passReqToCallback: Boolean): StrategyOptionWithRequest = {
       val __obj = js.Dynamic.literal(callbackURL = callbackURL.asInstanceOf[js.Any], clientID = clientID.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], passReqToCallback = passReqToCallback.asInstanceOf[js.Any])
       __obj.asInstanceOf[StrategyOptionWithRequest]
     }
     
-    @scala.inline
-    implicit class StrategyOptionWithRequestMutableBuilder[Self <: StrategyOptionWithRequest] (val x: Self) extends AnyVal {
+    extension [Self <: StrategyOptionWithRequest](x: Self) {
       
-      @scala.inline
-      def setPassReqToCallback(value: Boolean): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
+      inline def setPassReqToCallback(value: Boolean): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
     }
   }
   

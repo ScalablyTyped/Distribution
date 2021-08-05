@@ -61,21 +61,16 @@ object globalacceleratorListenerMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Listener = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Listener]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Listener = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Listener]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ListenerState): Listener = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Listener]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ListenerState, opts: CustomResourceOptions): Listener = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Listener]
+    inline def get(name: String, id: Input[ID]): Listener = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Listener]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Listener = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Listener]
+    inline def get(name: String, id: Input[ID], state: ListenerState): Listener = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Listener]
+    inline def get(name: String, id: Input[ID], state: ListenerState, opts: CustomResourceOptions): Listener = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Listener]
     
     /**
       * Returns true if the given object is an instance of Listener.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/globalaccelerator/listener.Listener */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/globalaccelerator/listener.Listener */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/globalaccelerator/listener.Listener */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/globalaccelerator/listener.Listener */ Boolean]
   }
   
   trait ListenerArgs extends StObject {
@@ -102,8 +97,7 @@ object globalacceleratorListenerMod {
   }
   object ListenerArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acceleratorArn: Input[String],
       portRanges: Input[js.Array[Input[typings.pulumiAws.inputMod.globalaccelerator.ListenerPortRange]]],
       protocol: Input[String]
@@ -112,26 +106,19 @@ object globalacceleratorListenerMod {
       __obj.asInstanceOf[ListenerArgs]
     }
     
-    @scala.inline
-    implicit class ListenerArgsMutableBuilder[Self <: ListenerArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ListenerArgs](x: Self) {
       
-      @scala.inline
-      def setAcceleratorArn(value: Input[String]): Self = StObject.set(x, "acceleratorArn", value.asInstanceOf[js.Any])
+      inline def setAcceleratorArn(value: Input[String]): Self = StObject.set(x, "acceleratorArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientAffinity(value: Input[String]): Self = StObject.set(x, "clientAffinity", value.asInstanceOf[js.Any])
+      inline def setClientAffinity(value: Input[String]): Self = StObject.set(x, "clientAffinity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientAffinityUndefined: Self = StObject.set(x, "clientAffinity", js.undefined)
+      inline def setClientAffinityUndefined: Self = StObject.set(x, "clientAffinity", js.undefined)
       
-      @scala.inline
-      def setPortRanges(value: Input[js.Array[Input[typings.pulumiAws.inputMod.globalaccelerator.ListenerPortRange]]]): Self = StObject.set(x, "portRanges", value.asInstanceOf[js.Any])
+      inline def setPortRanges(value: Input[js.Array[Input[typings.pulumiAws.inputMod.globalaccelerator.ListenerPortRange]]]): Self = StObject.set(x, "portRanges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortRangesVarargs(value: Input[typings.pulumiAws.inputMod.globalaccelerator.ListenerPortRange]*): Self = StObject.set(x, "portRanges", js.Array(value :_*))
+      inline def setPortRangesVarargs(value: Input[typings.pulumiAws.inputMod.globalaccelerator.ListenerPortRange]*): Self = StObject.set(x, "portRanges", js.Array(value :_*))
       
-      @scala.inline
-      def setProtocol(value: Input[String]): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: Input[String]): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     }
   }
   
@@ -161,41 +148,30 @@ object globalacceleratorListenerMod {
   }
   object ListenerState {
     
-    @scala.inline
-    def apply(): ListenerState = {
+    inline def apply(): ListenerState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListenerState]
     }
     
-    @scala.inline
-    implicit class ListenerStateMutableBuilder[Self <: ListenerState] (val x: Self) extends AnyVal {
+    extension [Self <: ListenerState](x: Self) {
       
-      @scala.inline
-      def setAcceleratorArn(value: Input[String]): Self = StObject.set(x, "acceleratorArn", value.asInstanceOf[js.Any])
+      inline def setAcceleratorArn(value: Input[String]): Self = StObject.set(x, "acceleratorArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcceleratorArnUndefined: Self = StObject.set(x, "acceleratorArn", js.undefined)
+      inline def setAcceleratorArnUndefined: Self = StObject.set(x, "acceleratorArn", js.undefined)
       
-      @scala.inline
-      def setClientAffinity(value: Input[String]): Self = StObject.set(x, "clientAffinity", value.asInstanceOf[js.Any])
+      inline def setClientAffinity(value: Input[String]): Self = StObject.set(x, "clientAffinity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientAffinityUndefined: Self = StObject.set(x, "clientAffinity", js.undefined)
+      inline def setClientAffinityUndefined: Self = StObject.set(x, "clientAffinity", js.undefined)
       
-      @scala.inline
-      def setPortRanges(value: Input[js.Array[Input[typings.pulumiAws.inputMod.globalaccelerator.ListenerPortRange]]]): Self = StObject.set(x, "portRanges", value.asInstanceOf[js.Any])
+      inline def setPortRanges(value: Input[js.Array[Input[typings.pulumiAws.inputMod.globalaccelerator.ListenerPortRange]]]): Self = StObject.set(x, "portRanges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortRangesUndefined: Self = StObject.set(x, "portRanges", js.undefined)
+      inline def setPortRangesUndefined: Self = StObject.set(x, "portRanges", js.undefined)
       
-      @scala.inline
-      def setPortRangesVarargs(value: Input[typings.pulumiAws.inputMod.globalaccelerator.ListenerPortRange]*): Self = StObject.set(x, "portRanges", js.Array(value :_*))
+      inline def setPortRangesVarargs(value: Input[typings.pulumiAws.inputMod.globalaccelerator.ListenerPortRange]*): Self = StObject.set(x, "portRanges", js.Array(value :_*))
       
-      @scala.inline
-      def setProtocol(value: Input[String]): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: Input[String]): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+      inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
     }
   }
 }

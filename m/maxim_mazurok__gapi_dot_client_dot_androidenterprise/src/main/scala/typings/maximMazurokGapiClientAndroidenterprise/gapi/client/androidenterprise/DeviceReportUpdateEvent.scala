@@ -17,31 +17,23 @@ trait DeviceReportUpdateEvent extends StObject {
 }
 object DeviceReportUpdateEvent {
   
-  @scala.inline
-  def apply(): DeviceReportUpdateEvent = {
+  inline def apply(): DeviceReportUpdateEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceReportUpdateEvent]
   }
   
-  @scala.inline
-  implicit class DeviceReportUpdateEventMutableBuilder[Self <: DeviceReportUpdateEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceReportUpdateEvent](x: Self) {
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
+    inline def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
     
-    @scala.inline
-    def setReport(value: DeviceReport): Self = StObject.set(x, "report", value.asInstanceOf[js.Any])
+    inline def setReport(value: DeviceReport): Self = StObject.set(x, "report", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportUndefined: Self = StObject.set(x, "report", js.undefined)
+    inline def setReportUndefined: Self = StObject.set(x, "report", js.undefined)
     
-    @scala.inline
-    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+    inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

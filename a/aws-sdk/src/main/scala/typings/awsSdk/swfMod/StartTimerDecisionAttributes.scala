@@ -23,25 +23,19 @@ trait StartTimerDecisionAttributes extends StObject {
 }
 object StartTimerDecisionAttributes {
   
-  @scala.inline
-  def apply(startToFireTimeout: DurationInSeconds, timerId: TimerId): StartTimerDecisionAttributes = {
+  inline def apply(startToFireTimeout: DurationInSeconds, timerId: TimerId): StartTimerDecisionAttributes = {
     val __obj = js.Dynamic.literal(startToFireTimeout = startToFireTimeout.asInstanceOf[js.Any], timerId = timerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartTimerDecisionAttributes]
   }
   
-  @scala.inline
-  implicit class StartTimerDecisionAttributesMutableBuilder[Self <: StartTimerDecisionAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: StartTimerDecisionAttributes](x: Self) {
     
-    @scala.inline
-    def setControl(value: Data): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
+    inline def setControl(value: Data): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
+    inline def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
     
-    @scala.inline
-    def setStartToFireTimeout(value: DurationInSeconds): Self = StObject.set(x, "startToFireTimeout", value.asInstanceOf[js.Any])
+    inline def setStartToFireTimeout(value: DurationInSeconds): Self = StObject.set(x, "startToFireTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimerId(value: TimerId): Self = StObject.set(x, "timerId", value.asInstanceOf[js.Any])
+    inline def setTimerId(value: TimerId): Self = StObject.set(x, "timerId", value.asInstanceOf[js.Any])
   }
 }

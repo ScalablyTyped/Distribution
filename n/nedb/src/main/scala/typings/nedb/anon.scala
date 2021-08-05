@@ -14,20 +14,16 @@ object anon {
   }
   object NewDoc {
     
-    @scala.inline
-    def apply[T /* <: G */, G](newDoc: T, oldDoc: T): NewDoc[T, G] = {
+    inline def apply[T /* <: G */, G](newDoc: T, oldDoc: T): NewDoc[T, G] = {
       val __obj = js.Dynamic.literal(newDoc = newDoc.asInstanceOf[js.Any], oldDoc = oldDoc.asInstanceOf[js.Any])
       __obj.asInstanceOf[NewDoc[T, G]]
     }
     
-    @scala.inline
-    implicit class NewDocMutableBuilder[Self <: NewDoc[?, ?], T /* <: G */, G] (val x: Self & (NewDoc[T, G])) extends AnyVal {
+    extension [Self <: NewDoc[?, ?], T /* <: G */, G](x: Self & (NewDoc[T, G])) {
       
-      @scala.inline
-      def setNewDoc(value: T): Self = StObject.set(x, "newDoc", value.asInstanceOf[js.Any])
+      inline def setNewDoc(value: T): Self = StObject.set(x, "newDoc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldDoc(value: T): Self = StObject.set(x, "oldDoc", value.asInstanceOf[js.Any])
+      inline def setOldDoc(value: T): Self = StObject.set(x, "oldDoc", value.asInstanceOf[js.Any])
     }
   }
 }

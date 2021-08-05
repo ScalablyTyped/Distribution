@@ -15,8 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Category[T /* <: Context */] extends StObject
 object Category {
   
-  @scala.inline
-  def BaseCategory(
+  inline def BaseCategory(
     _links: Record[String, js.Array[Dictk]],
     count: Double,
     description: String,
@@ -32,8 +31,7 @@ object Category {
     __obj.asInstanceOf[typings.wordpressApiFetch.mod.Schema.BaseCategory]
   }
   
-  @scala.inline
-  def PickBaseCategoryCategory(
+  inline def PickBaseCategoryCategory(
     _links: Record[String, js.Array[Dictk]],
     id: Double,
     link: String,
@@ -45,8 +43,7 @@ object Category {
     __obj.asInstanceOf[typings.wordpressApiFetch.anon.PickBaseCategoryCategory]
   }
   
-  @scala.inline
-  def PickBaseCategoryCategoryCount(
+  inline def PickBaseCategoryCategoryCount(
     _links: Record[String, js.Array[Dictk]],
     count: Double,
     description: String,

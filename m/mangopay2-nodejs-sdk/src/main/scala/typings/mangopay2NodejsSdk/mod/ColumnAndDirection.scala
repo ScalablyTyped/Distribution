@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ColumnAndDirection extends StObject
 object ColumnAndDirection {
   
-  @scala.inline
-  def ASC: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ASC = "ASC".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ASC]
+  inline def ASC: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ASC = "ASC".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ASC]
   
-  @scala.inline
-  def DESC: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DESC = "DESC".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DESC]
+  inline def DESC: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DESC = "DESC".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DESC]
 }

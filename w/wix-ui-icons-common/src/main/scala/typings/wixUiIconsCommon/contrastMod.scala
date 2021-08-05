@@ -22,20 +22,16 @@ object contrastMod extends Shortcut {
   }
   object ContrastProps {
     
-    @scala.inline
-    def apply(): ContrastProps = {
+    inline def apply(): ContrastProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ContrastProps]
     }
     
-    @scala.inline
-    implicit class ContrastPropsMutableBuilder[Self <: ContrastProps] (val x: Self) extends AnyVal {
+    extension [Self <: ContrastProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

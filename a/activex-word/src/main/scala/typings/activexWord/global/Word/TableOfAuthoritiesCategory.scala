@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.TableOfAuthoritiesCategory")
 @js.native
-class TableOfAuthoritiesCategory protected ()
+/* private */ class TableOfAuthoritiesCategory ()
   extends StObject
      with typings.activexWord.Word.TableOfAuthoritiesCategory {
   
@@ -25,7 +25,7 @@ class TableOfAuthoritiesCategory protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.TableOfAuthoritiesCategory_typekey")
   var WordDotTableOfAuthoritiesCategory_typekey: typings.activexWord.Word.TableOfAuthoritiesCategory = js.native
 }

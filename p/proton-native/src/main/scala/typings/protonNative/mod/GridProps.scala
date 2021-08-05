@@ -23,31 +23,23 @@ trait GridProps extends StObject {
 }
 object GridProps {
   
-  @scala.inline
-  def apply(): GridProps = {
+  inline def apply(): GridProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridProps]
   }
   
-  @scala.inline
-  implicit class GridPropsMutableBuilder[Self <: GridProps] (val x: Self) extends AnyVal {
+  extension [Self <: GridProps](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setPadded(value: Boolean): Self = StObject.set(x, "padded", value.asInstanceOf[js.Any])
+    inline def setPadded(value: Boolean): Self = StObject.set(x, "padded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddedUndefined: Self = StObject.set(x, "padded", js.undefined)
+    inline def setPaddedUndefined: Self = StObject.set(x, "padded", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

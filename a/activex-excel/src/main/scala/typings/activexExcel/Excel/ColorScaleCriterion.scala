@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ColorScaleCriterion extends StObject {
   
-  @JSName("Excel.ColorScaleCriterion_typekey")
+  /* private */ @JSName("Excel.ColorScaleCriterion_typekey")
   var ExcelDotColorScaleCriterion_typekey: ColorScaleCriterion
   
   val FormatColor: typings.activexExcel.Excel.FormatColor
@@ -19,8 +19,7 @@ trait ColorScaleCriterion extends StObject {
 }
 object ColorScaleCriterion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ExcelDotColorScaleCriterion_typekey: ColorScaleCriterion,
     FormatColor: FormatColor,
     Index: Double,
@@ -32,22 +31,16 @@ object ColorScaleCriterion {
     __obj.asInstanceOf[ColorScaleCriterion]
   }
   
-  @scala.inline
-  implicit class ColorScaleCriterionMutableBuilder[Self <: ColorScaleCriterion] (val x: Self) extends AnyVal {
+  extension [Self <: ColorScaleCriterion](x: Self) {
     
-    @scala.inline
-    def setExcelDotColorScaleCriterion_typekey(value: ColorScaleCriterion): Self = StObject.set(x, "Excel.ColorScaleCriterion_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotColorScaleCriterion_typekey(value: ColorScaleCriterion): Self = StObject.set(x, "Excel.ColorScaleCriterion_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatColor(value: FormatColor): Self = StObject.set(x, "FormatColor", value.asInstanceOf[js.Any])
+    inline def setFormatColor(value: FormatColor): Self = StObject.set(x, "FormatColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: XlConditionValueTypes): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: XlConditionValueTypes): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

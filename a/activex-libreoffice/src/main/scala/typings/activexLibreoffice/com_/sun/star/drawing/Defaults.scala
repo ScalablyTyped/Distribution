@@ -38,8 +38,7 @@ trait Defaults
      with MeasureProperties
 object Defaults {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BorderDistance: Double,
     BottomBorder: BorderLine,
     BottomBorderDistance: Double,

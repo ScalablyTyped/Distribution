@@ -209,7 +209,7 @@ object queryBuilderQueryBuilderMod {
     /**
       * Query runner used to execute query builder query.
       */
-    var queryRunner: js.UndefOr[QueryRunner] = js.native
+    /* protected */ var queryRunner: js.UndefOr[QueryRunner] = js.native
     
     /**
       * Sets entity's relation with which this query builder gonna work.

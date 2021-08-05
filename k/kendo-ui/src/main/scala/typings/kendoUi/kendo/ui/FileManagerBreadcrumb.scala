@@ -12,25 +12,19 @@ trait FileManagerBreadcrumb extends StObject {
 }
 object FileManagerBreadcrumb {
   
-  @scala.inline
-  def apply(): FileManagerBreadcrumb = {
+  inline def apply(): FileManagerBreadcrumb = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileManagerBreadcrumb]
   }
   
-  @scala.inline
-  implicit class FileManagerBreadcrumbMutableBuilder[Self <: FileManagerBreadcrumb] (val x: Self) extends AnyVal {
+  extension [Self <: FileManagerBreadcrumb](x: Self) {
     
-    @scala.inline
-    def setDelimiterIcon(value: String): Self = StObject.set(x, "delimiterIcon", value.asInstanceOf[js.Any])
+    inline def setDelimiterIcon(value: String): Self = StObject.set(x, "delimiterIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelimiterIconUndefined: Self = StObject.set(x, "delimiterIcon", js.undefined)
+    inline def setDelimiterIconUndefined: Self = StObject.set(x, "delimiterIcon", js.undefined)
     
-    @scala.inline
-    def setRootIcon(value: String): Self = StObject.set(x, "rootIcon", value.asInstanceOf[js.Any])
+    inline def setRootIcon(value: String): Self = StObject.set(x, "rootIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootIconUndefined: Self = StObject.set(x, "rootIcon", js.undefined)
+    inline def setRootIconUndefined: Self = StObject.set(x, "rootIcon", js.undefined)
   }
 }

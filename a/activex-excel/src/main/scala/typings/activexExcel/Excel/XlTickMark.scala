@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlTickMark extends StObject
 object XlTickMark {
   
-  @scala.inline
-  def xlTickMarkCross: `4` = 4.asInstanceOf[`4`]
+  inline def xlTickMarkCross: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def xlTickMarkInside: `2` = 2.asInstanceOf[`2`]
+  inline def xlTickMarkInside: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlTickMarkNone: `-4142` = -4142.asInstanceOf[`-4142`]
+  inline def xlTickMarkNone: `-4142` = -4142.asInstanceOf[`-4142`]
   
-  @scala.inline
-  def xlTickMarkOutside: `3` = 3.asInstanceOf[`3`]
+  inline def xlTickMarkOutside: `3` = 3.asInstanceOf[`3`]
 }

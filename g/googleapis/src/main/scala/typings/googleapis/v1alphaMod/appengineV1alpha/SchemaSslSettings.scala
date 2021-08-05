@@ -30,25 +30,19 @@ trait SchemaSslSettings extends StObject {
 }
 object SchemaSslSettings {
   
-  @scala.inline
-  def apply(): SchemaSslSettings = {
+  inline def apply(): SchemaSslSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSslSettings]
   }
   
-  @scala.inline
-  implicit class SchemaSslSettingsMutableBuilder[Self <: SchemaSslSettings] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSslSettings](x: Self) {
     
-    @scala.inline
-    def setCertificateId(value: String): Self = StObject.set(x, "certificateId", value.asInstanceOf[js.Any])
+    inline def setCertificateId(value: String): Self = StObject.set(x, "certificateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateIdUndefined: Self = StObject.set(x, "certificateId", js.undefined)
+    inline def setCertificateIdUndefined: Self = StObject.set(x, "certificateId", js.undefined)
     
-    @scala.inline
-    def setIsManagedCertificate(value: Boolean): Self = StObject.set(x, "isManagedCertificate", value.asInstanceOf[js.Any])
+    inline def setIsManagedCertificate(value: Boolean): Self = StObject.set(x, "isManagedCertificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsManagedCertificateUndefined: Self = StObject.set(x, "isManagedCertificate", js.undefined)
+    inline def setIsManagedCertificateUndefined: Self = StObject.set(x, "isManagedCertificate", js.undefined)
   }
 }

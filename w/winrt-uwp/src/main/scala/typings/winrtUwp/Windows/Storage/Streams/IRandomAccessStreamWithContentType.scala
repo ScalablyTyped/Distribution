@@ -13,8 +13,7 @@ trait IRandomAccessStreamWithContentType
      with IContentTypeProvider
 object IRandomAccessStreamWithContentType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canRead: Boolean,
     canWrite: Boolean,
     cloneStream: () => IRandomAccessStream,

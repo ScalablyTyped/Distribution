@@ -17,7 +17,7 @@ object throwErrorMethodStubMod {
        with MethodStub {
     def this(groupIndex: Double, matchers: js.Array[Matcher], error: Error) = this()
     
-    var error: js.Any = js.native
+    /* private */ var error: js.Any = js.native
     
     /* CompleteClass */
     override def execute(args: js.Array[js.Any]): Unit = js.native
@@ -31,8 +31,8 @@ object throwErrorMethodStubMod {
     /* CompleteClass */
     override def isApplicable(args: js.Array[js.Any]): Boolean = js.native
     
-    var matchers: js.Any = js.native
+    /* private */ var matchers: js.Any = js.native
     
-    var validator: js.Any = js.native
+    /* private */ var validator: js.Any = js.native
   }
 }

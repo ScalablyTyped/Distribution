@@ -26,10 +26,8 @@ object mod {
       var options_Loading_ : LoadingOptions = js.native
     }
     
-    @scala.inline
-    def loading(): Loading_ = ^.asInstanceOf[js.Dynamic].applyDynamic("loading")().asInstanceOf[Loading_]
-    @scala.inline
-    def loading(options: LoadingOptions): Loading_ = ^.asInstanceOf[js.Dynamic].applyDynamic("loading")(options.asInstanceOf[js.Any]).asInstanceOf[Loading_]
+    inline def loading(): Loading_ = ^.asInstanceOf[js.Dynamic].applyDynamic("loading")().asInstanceOf[Loading_]
+    inline def loading(options: LoadingOptions): Loading_ = ^.asInstanceOf[js.Dynamic].applyDynamic("loading")(options.asInstanceOf[js.Any]).asInstanceOf[Loading_]
   }
   
   trait LoadingOptions
@@ -48,44 +46,32 @@ object mod {
   }
   object LoadingOptions {
     
-    @scala.inline
-    def apply(): LoadingOptions = {
+    inline def apply(): LoadingOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LoadingOptions]
     }
     
-    @scala.inline
-    implicit class LoadingOptionsMutableBuilder[Self <: LoadingOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LoadingOptions](x: Self) {
       
-      @scala.inline
-      def setDelayIndicator(value: Double): Self = StObject.set(x, "delayIndicator", value.asInstanceOf[js.Any])
+      inline def setDelayIndicator(value: Double): Self = StObject.set(x, "delayIndicator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayIndicatorUndefined: Self = StObject.set(x, "delayIndicator", js.undefined)
+      inline def setDelayIndicatorUndefined: Self = StObject.set(x, "delayIndicator", js.undefined)
       
-      @scala.inline
-      def setSeparate(value: Boolean): Self = StObject.set(x, "separate", value.asInstanceOf[js.Any])
+      inline def setSeparate(value: Boolean): Self = StObject.set(x, "separate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeparateUndefined: Self = StObject.set(x, "separate", js.undefined)
+      inline def setSeparateUndefined: Self = StObject.set(x, "separate", js.undefined)
       
-      @scala.inline
-      def setSpin(value: Length): Self = StObject.set(x, "spin", value.asInstanceOf[js.Any])
+      inline def setSpin(value: Length): Self = StObject.set(x, "spin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpinUndefined: Self = StObject.set(x, "spin", js.undefined)
+      inline def setSpinUndefined: Self = StObject.set(x, "spin", js.undefined)
       
-      @scala.inline
-      def setSpinjs(value: Boolean): Self = StObject.set(x, "spinjs", value.asInstanceOf[js.Any])
+      inline def setSpinjs(value: Boolean): Self = StObject.set(x, "spinjs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpinjsUndefined: Self = StObject.set(x, "spinjs", js.undefined)
+      inline def setSpinjsUndefined: Self = StObject.set(x, "spinjs", js.undefined)
       
-      @scala.inline
-      def setZoomControl(value: Zoom): Self = StObject.set(x, "zoomControl", value.asInstanceOf[js.Any])
+      inline def setZoomControl(value: Zoom): Self = StObject.set(x, "zoomControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomControlUndefined: Self = StObject.set(x, "zoomControl", js.undefined)
+      inline def setZoomControlUndefined: Self = StObject.set(x, "zoomControl", js.undefined)
     }
   }
   
@@ -95,20 +81,16 @@ object mod {
   }
   object MapOptions {
     
-    @scala.inline
-    def apply(): MapOptions = {
+    inline def apply(): MapOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MapOptions]
     }
     
-    @scala.inline
-    implicit class MapOptionsMutableBuilder[Self <: MapOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MapOptions](x: Self) {
       
-      @scala.inline
-      def setLoadingControl(value: Boolean): Self = StObject.set(x, "loadingControl", value.asInstanceOf[js.Any])
+      inline def setLoadingControl(value: Boolean): Self = StObject.set(x, "loadingControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingControlUndefined: Self = StObject.set(x, "loadingControl", js.undefined)
+      inline def setLoadingControlUndefined: Self = StObject.set(x, "loadingControl", js.undefined)
     }
   }
 }

@@ -11,34 +11,29 @@ object allureJsCommonsStrings {
   sealed trait broken
     extends StObject
        with Status
-  @scala.inline
-  def broken: broken = "broken".asInstanceOf[broken]
+  inline def broken: broken = "broken".asInstanceOf[broken]
   
   @js.native
   sealed trait failed
     extends StObject
        with Status
-  @scala.inline
-  def failed: failed = "failed".asInstanceOf[failed]
+  inline def failed: failed = "failed".asInstanceOf[failed]
   
   @js.native
   sealed trait passed
     extends StObject
        with Status
-  @scala.inline
-  def passed: passed = "passed".asInstanceOf[passed]
+  inline def passed: passed = "passed".asInstanceOf[passed]
   
   @js.native
   sealed trait pending
     extends StObject
        with Status
-  @scala.inline
-  def pending: pending = "pending".asInstanceOf[pending]
+  inline def pending: pending = "pending".asInstanceOf[pending]
   
   @js.native
   sealed trait skipped
     extends StObject
        with Status
-  @scala.inline
-  def skipped: skipped = "skipped".asInstanceOf[skipped]
+  inline def skipped: skipped = "skipped".asInstanceOf[skipped]
 }

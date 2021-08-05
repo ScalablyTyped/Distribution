@@ -16,28 +16,21 @@ trait Plugin extends StObject {
 }
 object Plugin {
   
-  @scala.inline
-  def apply(install: () => Unit, name: String, version: String): Plugin = {
+  inline def apply(install: () => Unit, name: String, version: String): Plugin = {
     val __obj = js.Dynamic.literal(install = js.Any.fromFunction0(install), name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Plugin]
   }
   
-  @scala.inline
-  implicit class PluginMutableBuilder[Self <: Plugin] (val x: Self) extends AnyVal {
+  extension [Self <: Plugin](x: Self) {
     
-    @scala.inline
-    def setFor(value: String): Self = StObject.set(x, "for", value.asInstanceOf[js.Any])
+    inline def setFor(value: String): Self = StObject.set(x, "for", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForUndefined: Self = StObject.set(x, "for", js.undefined)
+    inline def setForUndefined: Self = StObject.set(x, "for", js.undefined)
     
-    @scala.inline
-    def setInstall(value: () => Unit): Self = StObject.set(x, "install", js.Any.fromFunction0(value))
+    inline def setInstall(value: () => Unit): Self = StObject.set(x, "install", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

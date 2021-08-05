@@ -44,8 +44,7 @@ trait BusinessCategory extends StObject {
 }
 object BusinessCategory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     C: String,
     CN: String,
     DC: String,
@@ -69,61 +68,42 @@ object BusinessCategory {
     __obj.asInstanceOf[BusinessCategory]
   }
   
-  @scala.inline
-  implicit class BusinessCategoryMutableBuilder[Self <: BusinessCategory] (val x: Self) extends AnyVal {
+  extension [Self <: BusinessCategory](x: Self) {
     
-    @scala.inline
-    def setBusinessCategory(value: String): Self = StObject.set(x, "businessCategory", value.asInstanceOf[js.Any])
+    inline def setBusinessCategory(value: String): Self = StObject.set(x, "businessCategory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setC(value: String): Self = StObject.set(x, "C", value.asInstanceOf[js.Any])
+    inline def setC(value: String): Self = StObject.set(x, "C", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCN(value: String): Self = StObject.set(x, "CN", value.asInstanceOf[js.Any])
+    inline def setCN(value: String): Self = StObject.set(x, "CN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDC(value: String): Self = StObject.set(x, "DC", value.asInstanceOf[js.Any])
+    inline def setDC(value: String): Self = StObject.set(x, "DC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDN(value: String): Self = StObject.set(x, "DN", value.asInstanceOf[js.Any])
+    inline def setDN(value: String): Self = StObject.set(x, "DN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setE(value: String): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
+    inline def setE(value: String): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJurisdictionOfIncorporationC(value: String): Self = StObject.set(x, "jurisdictionOfIncorporationC", value.asInstanceOf[js.Any])
+    inline def setJurisdictionOfIncorporationC(value: String): Self = StObject.set(x, "jurisdictionOfIncorporationC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJurisdictionOfIncorporationL(value: String): Self = StObject.set(x, "jurisdictionOfIncorporationL", value.asInstanceOf[js.Any])
+    inline def setJurisdictionOfIncorporationL(value: String): Self = StObject.set(x, "jurisdictionOfIncorporationL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJurisdictionOfIncorporationSP(value: String): Self = StObject.set(x, "jurisdictionOfIncorporationSP", value.asInstanceOf[js.Any])
+    inline def setJurisdictionOfIncorporationSP(value: String): Self = StObject.set(x, "jurisdictionOfIncorporationSP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setL(value: String): Self = StObject.set(x, "L", value.asInstanceOf[js.Any])
+    inline def setL(value: String): Self = StObject.set(x, "L", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setO(value: String): Self = StObject.set(x, "O", value.asInstanceOf[js.Any])
+    inline def setO(value: String): Self = StObject.set(x, "O", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOU(value: String): Self = StObject.set(x, "OU", value.asInstanceOf[js.Any])
+    inline def setOU(value: String): Self = StObject.set(x, "OU", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
+    inline def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSN(value: String): Self = StObject.set(x, "SN", value.asInstanceOf[js.Any])
+    inline def setSN(value: String): Self = StObject.set(x, "SN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setST(value: String): Self = StObject.set(x, "ST", value.asInstanceOf[js.Any])
+    inline def setST(value: String): Self = StObject.set(x, "ST", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSTREET(value: String): Self = StObject.set(x, "STREET", value.asInstanceOf[js.Any])
+    inline def setSTREET(value: String): Self = StObject.set(x, "STREET", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
+    inline def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUID(value: String): Self = StObject.set(x, "UID", value.asInstanceOf[js.Any])
+    inline def setUID(value: String): Self = StObject.set(x, "UID", value.asInstanceOf[js.Any])
   }
 }

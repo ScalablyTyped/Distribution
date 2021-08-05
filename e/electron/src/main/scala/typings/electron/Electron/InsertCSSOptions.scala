@@ -14,19 +14,15 @@ trait InsertCSSOptions extends StObject {
 }
 object InsertCSSOptions {
   
-  @scala.inline
-  def apply(): InsertCSSOptions = {
+  inline def apply(): InsertCSSOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InsertCSSOptions]
   }
   
-  @scala.inline
-  implicit class InsertCSSOptionsMutableBuilder[Self <: InsertCSSOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InsertCSSOptions](x: Self) {
     
-    @scala.inline
-    def setCssOrigin(value: String): Self = StObject.set(x, "cssOrigin", value.asInstanceOf[js.Any])
+    inline def setCssOrigin(value: String): Self = StObject.set(x, "cssOrigin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssOriginUndefined: Self = StObject.set(x, "cssOrigin", js.undefined)
+    inline def setCssOriginUndefined: Self = StObject.set(x, "cssOrigin", js.undefined)
   }
 }

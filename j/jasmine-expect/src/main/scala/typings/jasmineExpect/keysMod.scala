@@ -10,6 +10,5 @@ object keysMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def keys(`object`: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def keys(`object`: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

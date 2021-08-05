@@ -9,17 +9,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * checks whether your browser is supporting MediaSource Extensions
   */
 /* static member */
-@scala.inline
-def isSupported(): scala.Boolean = typings.hlsJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[scala.Boolean]
+inline def isSupported(): scala.Boolean = typings.hlsJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[scala.Boolean]
 
 /**
   * returns hls.js dist version number
   */
 /* static member */
-@scala.inline
-def version: java.lang.String = typings.hlsJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[java.lang.String]
-@scala.inline
-def version_=(x: java.lang.String): scala.Unit = typings.hlsJs.mod.^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
+inline def version: java.lang.String = typings.hlsJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[java.lang.String]
+inline def version_=(x: java.lang.String): scala.Unit = typings.hlsJs.mod.^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
 
 type K_AUDIO_TRACKS_UPDATED = typings.hlsJs.hlsJsStrings.hlsAudioTracksUpdated
 

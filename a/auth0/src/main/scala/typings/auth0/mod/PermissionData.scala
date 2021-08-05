@@ -12,19 +12,15 @@ trait PermissionData extends StObject {
 }
 object PermissionData {
   
-  @scala.inline
-  def apply(permission_name: String, resource_server_identifier: String): PermissionData = {
+  inline def apply(permission_name: String, resource_server_identifier: String): PermissionData = {
     val __obj = js.Dynamic.literal(permission_name = permission_name.asInstanceOf[js.Any], resource_server_identifier = resource_server_identifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[PermissionData]
   }
   
-  @scala.inline
-  implicit class PermissionDataMutableBuilder[Self <: PermissionData] (val x: Self) extends AnyVal {
+  extension [Self <: PermissionData](x: Self) {
     
-    @scala.inline
-    def setPermission_name(value: String): Self = StObject.set(x, "permission_name", value.asInstanceOf[js.Any])
+    inline def setPermission_name(value: String): Self = StObject.set(x, "permission_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResource_server_identifier(value: String): Self = StObject.set(x, "resource_server_identifier", value.asInstanceOf[js.Any])
+    inline def setResource_server_identifier(value: String): Self = StObject.set(x, "resource_server_identifier", value.asInstanceOf[js.Any])
   }
 }

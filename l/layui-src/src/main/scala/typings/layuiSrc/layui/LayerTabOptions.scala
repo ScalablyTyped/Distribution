@@ -13,19 +13,15 @@ trait LayerTabOptions
 }
 object LayerTabOptions {
   
-  @scala.inline
-  def apply(tab: js.Array[Content]): LayerTabOptions = {
+  inline def apply(tab: js.Array[Content]): LayerTabOptions = {
     val __obj = js.Dynamic.literal(tab = tab.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayerTabOptions]
   }
   
-  @scala.inline
-  implicit class LayerTabOptionsMutableBuilder[Self <: LayerTabOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LayerTabOptions](x: Self) {
     
-    @scala.inline
-    def setTab(value: js.Array[Content]): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
+    inline def setTab(value: js.Array[Content]): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabVarargs(value: Content*): Self = StObject.set(x, "tab", js.Array(value :_*))
+    inline def setTabVarargs(value: Content*): Self = StObject.set(x, "tab", js.Array(value :_*))
   }
 }

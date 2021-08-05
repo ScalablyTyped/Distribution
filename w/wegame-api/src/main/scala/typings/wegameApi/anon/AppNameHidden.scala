@@ -43,8 +43,7 @@ trait AppNameHidden extends StObject {
 }
 object AppNameHidden {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appNameHidden: Boolean,
     borderColor: String,
     borderWidth: Double,
@@ -57,28 +56,20 @@ object AppNameHidden {
     __obj.asInstanceOf[AppNameHidden]
   }
   
-  @scala.inline
-  implicit class AppNameHiddenMutableBuilder[Self <: AppNameHidden] (val x: Self) extends AnyVal {
+  extension [Self <: AppNameHidden](x: Self) {
     
-    @scala.inline
-    def setAppNameHidden(value: Boolean): Self = StObject.set(x, "appNameHidden", value.asInstanceOf[js.Any])
+    inline def setAppNameHidden(value: Boolean): Self = StObject.set(x, "appNameHidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
+    inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
   }
 }

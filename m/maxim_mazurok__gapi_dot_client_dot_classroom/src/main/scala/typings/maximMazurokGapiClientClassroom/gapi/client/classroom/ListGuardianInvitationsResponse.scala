@@ -14,28 +14,21 @@ trait ListGuardianInvitationsResponse extends StObject {
 }
 object ListGuardianInvitationsResponse {
   
-  @scala.inline
-  def apply(): ListGuardianInvitationsResponse = {
+  inline def apply(): ListGuardianInvitationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListGuardianInvitationsResponse]
   }
   
-  @scala.inline
-  implicit class ListGuardianInvitationsResponseMutableBuilder[Self <: ListGuardianInvitationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListGuardianInvitationsResponse](x: Self) {
     
-    @scala.inline
-    def setGuardianInvitations(value: js.Array[GuardianInvitation]): Self = StObject.set(x, "guardianInvitations", value.asInstanceOf[js.Any])
+    inline def setGuardianInvitations(value: js.Array[GuardianInvitation]): Self = StObject.set(x, "guardianInvitations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuardianInvitationsUndefined: Self = StObject.set(x, "guardianInvitations", js.undefined)
+    inline def setGuardianInvitationsUndefined: Self = StObject.set(x, "guardianInvitations", js.undefined)
     
-    @scala.inline
-    def setGuardianInvitationsVarargs(value: GuardianInvitation*): Self = StObject.set(x, "guardianInvitations", js.Array(value :_*))
+    inline def setGuardianInvitationsVarargs(value: GuardianInvitation*): Self = StObject.set(x, "guardianInvitations", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

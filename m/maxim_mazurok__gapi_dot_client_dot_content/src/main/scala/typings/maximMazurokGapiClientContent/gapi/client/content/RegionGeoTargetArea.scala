@@ -11,22 +11,17 @@ trait RegionGeoTargetArea extends StObject {
 }
 object RegionGeoTargetArea {
   
-  @scala.inline
-  def apply(): RegionGeoTargetArea = {
+  inline def apply(): RegionGeoTargetArea = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegionGeoTargetArea]
   }
   
-  @scala.inline
-  implicit class RegionGeoTargetAreaMutableBuilder[Self <: RegionGeoTargetArea] (val x: Self) extends AnyVal {
+  extension [Self <: RegionGeoTargetArea](x: Self) {
     
-    @scala.inline
-    def setGeotargetCriteriaIds(value: js.Array[String]): Self = StObject.set(x, "geotargetCriteriaIds", value.asInstanceOf[js.Any])
+    inline def setGeotargetCriteriaIds(value: js.Array[String]): Self = StObject.set(x, "geotargetCriteriaIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeotargetCriteriaIdsUndefined: Self = StObject.set(x, "geotargetCriteriaIds", js.undefined)
+    inline def setGeotargetCriteriaIdsUndefined: Self = StObject.set(x, "geotargetCriteriaIds", js.undefined)
     
-    @scala.inline
-    def setGeotargetCriteriaIdsVarargs(value: String*): Self = StObject.set(x, "geotargetCriteriaIds", js.Array(value :_*))
+    inline def setGeotargetCriteriaIdsVarargs(value: String*): Self = StObject.set(x, "geotargetCriteriaIds", js.Array(value :_*))
   }
 }

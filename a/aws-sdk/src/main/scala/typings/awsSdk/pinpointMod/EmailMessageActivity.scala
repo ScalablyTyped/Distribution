@@ -28,37 +28,27 @@ trait EmailMessageActivity extends StObject {
 }
 object EmailMessageActivity {
   
-  @scala.inline
-  def apply(): EmailMessageActivity = {
+  inline def apply(): EmailMessageActivity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EmailMessageActivity]
   }
   
-  @scala.inline
-  implicit class EmailMessageActivityMutableBuilder[Self <: EmailMessageActivity] (val x: Self) extends AnyVal {
+  extension [Self <: EmailMessageActivity](x: Self) {
     
-    @scala.inline
-    def setMessageConfig(value: JourneyEmailMessage): Self = StObject.set(x, "MessageConfig", value.asInstanceOf[js.Any])
+    inline def setMessageConfig(value: JourneyEmailMessage): Self = StObject.set(x, "MessageConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageConfigUndefined: Self = StObject.set(x, "MessageConfig", js.undefined)
+    inline def setMessageConfigUndefined: Self = StObject.set(x, "MessageConfig", js.undefined)
     
-    @scala.inline
-    def setNextActivity(value: string): Self = StObject.set(x, "NextActivity", value.asInstanceOf[js.Any])
+    inline def setNextActivity(value: string): Self = StObject.set(x, "NextActivity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextActivityUndefined: Self = StObject.set(x, "NextActivity", js.undefined)
+    inline def setNextActivityUndefined: Self = StObject.set(x, "NextActivity", js.undefined)
     
-    @scala.inline
-    def setTemplateName(value: string): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
+    inline def setTemplateName(value: string): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateNameUndefined: Self = StObject.set(x, "TemplateName", js.undefined)
+    inline def setTemplateNameUndefined: Self = StObject.set(x, "TemplateName", js.undefined)
     
-    @scala.inline
-    def setTemplateVersion(value: string): Self = StObject.set(x, "TemplateVersion", value.asInstanceOf[js.Any])
+    inline def setTemplateVersion(value: string): Self = StObject.set(x, "TemplateVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateVersionUndefined: Self = StObject.set(x, "TemplateVersion", js.undefined)
+    inline def setTemplateVersionUndefined: Self = StObject.set(x, "TemplateVersion", js.undefined)
   }
 }

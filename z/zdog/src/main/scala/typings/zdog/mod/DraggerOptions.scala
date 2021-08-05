@@ -20,37 +20,27 @@ trait DraggerOptions extends StObject {
 }
 object DraggerOptions {
   
-  @scala.inline
-  def apply(): DraggerOptions = {
+  inline def apply(): DraggerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DraggerOptions]
   }
   
-  @scala.inline
-  implicit class DraggerOptionsMutableBuilder[Self <: DraggerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DraggerOptions](x: Self) {
     
-    @scala.inline
-    def setOnDragEnd(value: DragEndListener): Self = StObject.set(x, "onDragEnd", value.asInstanceOf[js.Any])
+    inline def setOnDragEnd(value: DragEndListener): Self = StObject.set(x, "onDragEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
+    inline def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
     
-    @scala.inline
-    def setOnDragMove(value: DragMoveListener): Self = StObject.set(x, "onDragMove", value.asInstanceOf[js.Any])
+    inline def setOnDragMove(value: DragMoveListener): Self = StObject.set(x, "onDragMove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnDragMoveUndefined: Self = StObject.set(x, "onDragMove", js.undefined)
+    inline def setOnDragMoveUndefined: Self = StObject.set(x, "onDragMove", js.undefined)
     
-    @scala.inline
-    def setOnDragStart(value: DragStartListener): Self = StObject.set(x, "onDragStart", value.asInstanceOf[js.Any])
+    inline def setOnDragStart(value: DragStartListener): Self = StObject.set(x, "onDragStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
+    inline def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
     
-    @scala.inline
-    def setStartElement(value: String | Element): Self = StObject.set(x, "startElement", value.asInstanceOf[js.Any])
+    inline def setStartElement(value: String | Element): Self = StObject.set(x, "startElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartElementUndefined: Self = StObject.set(x, "startElement", js.undefined)
+    inline def setStartElementUndefined: Self = StObject.set(x, "startElement", js.undefined)
   }
 }

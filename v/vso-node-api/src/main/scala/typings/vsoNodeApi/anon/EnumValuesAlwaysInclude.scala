@@ -10,16 +10,13 @@ trait EnumValuesAlwaysInclude extends StObject {
 }
 object EnumValuesAlwaysInclude {
   
-  @scala.inline
-  def apply(enumValues: AlwaysInclude): EnumValuesAlwaysInclude = {
+  inline def apply(enumValues: AlwaysInclude): EnumValuesAlwaysInclude = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesAlwaysInclude]
   }
   
-  @scala.inline
-  implicit class EnumValuesAlwaysIncludeMutableBuilder[Self <: EnumValuesAlwaysInclude] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesAlwaysInclude](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: AlwaysInclude): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: AlwaysInclude): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

@@ -33,8 +33,7 @@ trait LabelSymbol3DVerticalOffset
 }
 object LabelSymbol3DVerticalOffset {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -47,22 +46,16 @@ object LabelSymbol3DVerticalOffset {
     __obj.asInstanceOf[LabelSymbol3DVerticalOffset]
   }
   
-  @scala.inline
-  implicit class LabelSymbol3DVerticalOffsetMutableBuilder[Self <: LabelSymbol3DVerticalOffset] (val x: Self) extends AnyVal {
+  extension [Self <: LabelSymbol3DVerticalOffset](x: Self) {
     
-    @scala.inline
-    def setMaxWorldLength(value: Double): Self = StObject.set(x, "maxWorldLength", value.asInstanceOf[js.Any])
+    inline def setMaxWorldLength(value: Double): Self = StObject.set(x, "maxWorldLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxWorldLengthUndefined: Self = StObject.set(x, "maxWorldLength", js.undefined)
+    inline def setMaxWorldLengthUndefined: Self = StObject.set(x, "maxWorldLength", js.undefined)
     
-    @scala.inline
-    def setMinWorldLength(value: Double): Self = StObject.set(x, "minWorldLength", value.asInstanceOf[js.Any])
+    inline def setMinWorldLength(value: Double): Self = StObject.set(x, "minWorldLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinWorldLengthUndefined: Self = StObject.set(x, "minWorldLength", js.undefined)
+    inline def setMinWorldLengthUndefined: Self = StObject.set(x, "minWorldLength", js.undefined)
     
-    @scala.inline
-    def setScreenLength(value: Double): Self = StObject.set(x, "screenLength", value.asInstanceOf[js.Any])
+    inline def setScreenLength(value: Double): Self = StObject.set(x, "screenLength", value.asInstanceOf[js.Any])
   }
 }

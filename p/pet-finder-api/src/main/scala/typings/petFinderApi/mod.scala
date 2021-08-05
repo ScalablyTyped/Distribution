@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(api_key: String, api_secret: String): PetFinder = (^.asInstanceOf[js.Dynamic].apply(api_key.asInstanceOf[js.Any], api_secret.asInstanceOf[js.Any])).asInstanceOf[PetFinder]
-  @scala.inline
-  def apply(api_key: String, api_secret: String, options: js.Any): PetFinder = (^.asInstanceOf[js.Dynamic].apply(api_key.asInstanceOf[js.Any], api_secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PetFinder]
+  inline def apply(api_key: String, api_secret: String): PetFinder = (^.asInstanceOf[js.Dynamic].apply(api_key.asInstanceOf[js.Any], api_secret.asInstanceOf[js.Any])).asInstanceOf[PetFinder]
+  inline def apply(api_key: String, api_secret: String, options: js.Any): PetFinder = (^.asInstanceOf[js.Dynamic].apply(api_key.asInstanceOf[js.Any], api_secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PetFinder]
   
   @JSImport("pet-finder-api", JSImport.Namespace)
   @js.native
@@ -35,8 +33,7 @@ object mod {
   }
   object Contact {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       address1: String,
       address2: String,
       city: String,
@@ -50,32 +47,23 @@ object mod {
       __obj.asInstanceOf[Contact]
     }
     
-    @scala.inline
-    implicit class ContactMutableBuilder[Self <: Contact] (val x: Self) extends AnyVal {
+    extension [Self <: Contact](x: Self) {
       
-      @scala.inline
-      def setAddress1(value: String): Self = StObject.set(x, "address1", value.asInstanceOf[js.Any])
+      inline def setAddress1(value: String): Self = StObject.set(x, "address1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddress2(value: String): Self = StObject.set(x, "address2", value.asInstanceOf[js.Any])
+      inline def setAddress2(value: String): Self = StObject.set(x, "address2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+      inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFax(value: String): Self = StObject.set(x, "fax", value.asInstanceOf[js.Any])
+      inline def setFax(value: String): Self = StObject.set(x, "fax", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+      inline def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZip(value: String): Self = StObject.set(x, "zip", value.asInstanceOf[js.Any])
+      inline def setZip(value: String): Self = StObject.set(x, "zip", value.asInstanceOf[js.Any])
     }
   }
   
@@ -113,8 +101,7 @@ object mod {
   }
   object Pet {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       age: String,
       animal: String,
       breeds: js.Array[String],
@@ -135,59 +122,41 @@ object mod {
       __obj.asInstanceOf[Pet]
     }
     
-    @scala.inline
-    implicit class PetMutableBuilder[Self <: Pet] (val x: Self) extends AnyVal {
+    extension [Self <: Pet](x: Self) {
       
-      @scala.inline
-      def setAge(value: String): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
+      inline def setAge(value: String): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimal(value: String): Self = StObject.set(x, "animal", value.asInstanceOf[js.Any])
+      inline def setAnimal(value: String): Self = StObject.set(x, "animal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBreeds(value: js.Array[String]): Self = StObject.set(x, "breeds", value.asInstanceOf[js.Any])
+      inline def setBreeds(value: js.Array[String]): Self = StObject.set(x, "breeds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBreedsVarargs(value: String*): Self = StObject.set(x, "breeds", js.Array(value :_*))
+      inline def setBreedsVarargs(value: String*): Self = StObject.set(x, "breeds", js.Array(value :_*))
       
-      @scala.inline
-      def setContact(value: Contact): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
+      inline def setContact(value: Contact): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMedia(value: js.Any): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+      inline def setMedia(value: js.Any): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMix(value: String): Self = StObject.set(x, "mix", value.asInstanceOf[js.Any])
+      inline def setMix(value: String): Self = StObject.set(x, "mix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: js.Array[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Array[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value :_*))
       
-      @scala.inline
-      def setSex(value: String): Self = StObject.set(x, "sex", value.asInstanceOf[js.Any])
+      inline def setSex(value: String): Self = StObject.set(x, "sex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShelterId(value: String): Self = StObject.set(x, "shelterId", value.asInstanceOf[js.Any])
+      inline def setShelterId(value: String): Self = StObject.set(x, "shelterId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShelterPetId(value: String): Self = StObject.set(x, "shelterPetId", value.asInstanceOf[js.Any])
+      inline def setShelterPetId(value: String): Self = StObject.set(x, "shelterPetId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -228,8 +197,7 @@ object mod {
   }
   object PetFinder {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       findPet: (js.Any, js.Function2[/* error */ js.Any, /* pets */ js.Array[Pet], Unit]) => Unit,
       findShelter: (String, js.Any, js.Function2[/* error */ js.Any, /* shelters */ js.Array[Shelter], Unit]) => Unit,
       getBreedList: (String, js.Function2[/* err */ js.Any, /* breedArray */ js.Array[String], Unit]) => Unit,
@@ -243,34 +211,25 @@ object mod {
       __obj.asInstanceOf[PetFinder]
     }
     
-    @scala.inline
-    implicit class PetFinderMutableBuilder[Self <: PetFinder] (val x: Self) extends AnyVal {
+    extension [Self <: PetFinder](x: Self) {
       
-      @scala.inline
-      def setFindPet(value: (js.Any, js.Function2[/* error */ js.Any, /* pets */ js.Array[Pet], Unit]) => Unit): Self = StObject.set(x, "findPet", js.Any.fromFunction2(value))
+      inline def setFindPet(value: (js.Any, js.Function2[/* error */ js.Any, /* pets */ js.Array[Pet], Unit]) => Unit): Self = StObject.set(x, "findPet", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFindShelter(
+      inline def setFindShelter(
         value: (String, js.Any, js.Function2[/* error */ js.Any, /* shelters */ js.Array[Shelter], Unit]) => Unit
       ): Self = StObject.set(x, "findShelter", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetBreedList(value: (String, js.Function2[/* err */ js.Any, /* breedArray */ js.Array[String], Unit]) => Unit): Self = StObject.set(x, "getBreedList", js.Any.fromFunction2(value))
+      inline def setGetBreedList(value: (String, js.Function2[/* err */ js.Any, /* breedArray */ js.Array[String], Unit]) => Unit): Self = StObject.set(x, "getBreedList", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetPet(value: (Double, js.Any, js.Function2[/* error */ js.Any, /* pet */ Pet, Unit]) => Unit): Self = StObject.set(x, "getPet", js.Any.fromFunction3(value))
+      inline def setGetPet(value: (Double, js.Any, js.Function2[/* error */ js.Any, /* pet */ Pet, Unit]) => Unit): Self = StObject.set(x, "getPet", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetPetsInShelter(value: (String, js.Any, js.Function2[/* error */ js.Any, /* pets */ js.Array[Pet], Unit]) => Unit): Self = StObject.set(x, "getPetsInShelter", js.Any.fromFunction3(value))
+      inline def setGetPetsInShelter(value: (String, js.Any, js.Function2[/* error */ js.Any, /* pets */ js.Array[Pet], Unit]) => Unit): Self = StObject.set(x, "getPetsInShelter", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetRandomPet(value: (js.Any, js.Function2[/* error */ js.Any, /* pet */ Pet, Unit]) => Unit): Self = StObject.set(x, "getRandomPet", js.Any.fromFunction2(value))
+      inline def setGetRandomPet(value: (js.Any, js.Function2[/* error */ js.Any, /* pet */ Pet, Unit]) => Unit): Self = StObject.set(x, "getRandomPet", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetShelter(value: (String, js.Any, js.Function2[/* error */ js.Any, /* shelter */ Shelter, Unit]) => Unit): Self = StObject.set(x, "getShelter", js.Any.fromFunction3(value))
+      inline def setGetShelter(value: (String, js.Any, js.Function2[/* error */ js.Any, /* shelter */ Shelter, Unit]) => Unit): Self = StObject.set(x, "getShelter", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetSheltersWithBreeds(
+      inline def setGetSheltersWithBreeds(
         value: (String, String, js.Any, js.Function2[/* error */ js.Any, /* shelters */ js.Array[Shelter], Unit]) => Unit
       ): Self = StObject.set(x, "getSheltersWithBreeds", js.Any.fromFunction4(value))
     }
@@ -306,8 +265,7 @@ object mod {
   }
   object Shelter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       address1: String,
       address2: String,
       city: String,
@@ -326,47 +284,33 @@ object mod {
       __obj.asInstanceOf[Shelter]
     }
     
-    @scala.inline
-    implicit class ShelterMutableBuilder[Self <: Shelter] (val x: Self) extends AnyVal {
+    extension [Self <: Shelter](x: Self) {
       
-      @scala.inline
-      def setAddress1(value: String): Self = StObject.set(x, "address1", value.asInstanceOf[js.Any])
+      inline def setAddress1(value: String): Self = StObject.set(x, "address1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddress2(value: String): Self = StObject.set(x, "address2", value.asInstanceOf[js.Any])
+      inline def setAddress2(value: String): Self = StObject.set(x, "address2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+      inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+      inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFax(value: String): Self = StObject.set(x, "fax", value.asInstanceOf[js.Any])
+      inline def setFax(value: String): Self = StObject.set(x, "fax", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+      inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+      inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+      inline def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZip(value: String): Self = StObject.set(x, "zip", value.asInstanceOf[js.Any])
+      inline def setZip(value: String): Self = StObject.set(x, "zip", value.asInstanceOf[js.Any])
     }
   }
 }

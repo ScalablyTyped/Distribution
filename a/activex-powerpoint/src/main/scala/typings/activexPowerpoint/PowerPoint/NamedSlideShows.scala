@@ -16,13 +16,12 @@ trait NamedSlideShows extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.NamedSlideShows_typekey")
+  /* private */ @JSName("PowerPoint.NamedSlideShows_typekey")
   var PowerPointDotNamedSlideShows_typekey: NamedSlideShows
 }
 object NamedSlideShows {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Add: (String, js.Any) => NamedSlideShow,
     Application: Application,
     Count: Double,
@@ -35,25 +34,18 @@ object NamedSlideShows {
     __obj.asInstanceOf[NamedSlideShows]
   }
   
-  @scala.inline
-  implicit class NamedSlideShowsMutableBuilder[Self <: NamedSlideShows] (val x: Self) extends AnyVal {
+  extension [Self <: NamedSlideShows](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (String, js.Any) => NamedSlideShow): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (String, js.Any) => NamedSlideShow): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: js.Any => NamedSlideShow): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: js.Any => NamedSlideShow): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotNamedSlideShows_typekey(value: NamedSlideShows): Self = StObject.set(x, "PowerPoint.NamedSlideShows_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotNamedSlideShows_typekey(value: NamedSlideShows): Self = StObject.set(x, "PowerPoint.NamedSlideShows_typekey", value.asInstanceOf[js.Any])
   }
 }

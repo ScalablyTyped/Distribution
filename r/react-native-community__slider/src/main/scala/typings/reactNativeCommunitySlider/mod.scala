@@ -135,107 +135,74 @@ object mod {
   }
   object SliderProps {
     
-    @scala.inline
-    def apply(): SliderProps = {
+    inline def apply(): SliderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SliderProps]
     }
     
-    @scala.inline
-    implicit class SliderPropsMutableBuilder[Self <: SliderProps] (val x: Self) extends AnyVal {
+    extension [Self <: SliderProps](x: Self) {
       
-      @scala.inline
-      def setAccessibilityIncrements(value: js.Array[String]): Self = StObject.set(x, "accessibilityIncrements", value.asInstanceOf[js.Any])
+      inline def setAccessibilityIncrements(value: js.Array[String]): Self = StObject.set(x, "accessibilityIncrements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessibilityIncrementsUndefined: Self = StObject.set(x, "accessibilityIncrements", js.undefined)
+      inline def setAccessibilityIncrementsUndefined: Self = StObject.set(x, "accessibilityIncrements", js.undefined)
       
-      @scala.inline
-      def setAccessibilityIncrementsVarargs(value: String*): Self = StObject.set(x, "accessibilityIncrements", js.Array(value :_*))
+      inline def setAccessibilityIncrementsVarargs(value: String*): Self = StObject.set(x, "accessibilityIncrements", js.Array(value :_*))
       
-      @scala.inline
-      def setAccessibilityUnits(value: String): Self = StObject.set(x, "accessibilityUnits", value.asInstanceOf[js.Any])
+      inline def setAccessibilityUnits(value: String): Self = StObject.set(x, "accessibilityUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessibilityUnitsUndefined: Self = StObject.set(x, "accessibilityUnits", js.undefined)
+      inline def setAccessibilityUnitsUndefined: Self = StObject.set(x, "accessibilityUnits", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setInverted(value: Boolean): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
+      inline def setInverted(value: Boolean): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvertedUndefined: Self = StObject.set(x, "inverted", js.undefined)
+      inline def setInvertedUndefined: Self = StObject.set(x, "inverted", js.undefined)
       
-      @scala.inline
-      def setMaximumTrackTintColor(value: String): Self = StObject.set(x, "maximumTrackTintColor", value.asInstanceOf[js.Any])
+      inline def setMaximumTrackTintColor(value: String): Self = StObject.set(x, "maximumTrackTintColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumTrackTintColorUndefined: Self = StObject.set(x, "maximumTrackTintColor", js.undefined)
+      inline def setMaximumTrackTintColorUndefined: Self = StObject.set(x, "maximumTrackTintColor", js.undefined)
       
-      @scala.inline
-      def setMaximumValue(value: Double): Self = StObject.set(x, "maximumValue", value.asInstanceOf[js.Any])
+      inline def setMaximumValue(value: Double): Self = StObject.set(x, "maximumValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumValueUndefined: Self = StObject.set(x, "maximumValue", js.undefined)
+      inline def setMaximumValueUndefined: Self = StObject.set(x, "maximumValue", js.undefined)
       
-      @scala.inline
-      def setMinimumTrackTintColor(value: String): Self = StObject.set(x, "minimumTrackTintColor", value.asInstanceOf[js.Any])
+      inline def setMinimumTrackTintColor(value: String): Self = StObject.set(x, "minimumTrackTintColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimumTrackTintColorUndefined: Self = StObject.set(x, "minimumTrackTintColor", js.undefined)
+      inline def setMinimumTrackTintColorUndefined: Self = StObject.set(x, "minimumTrackTintColor", js.undefined)
       
-      @scala.inline
-      def setMinimumValue(value: Double): Self = StObject.set(x, "minimumValue", value.asInstanceOf[js.Any])
+      inline def setMinimumValue(value: Double): Self = StObject.set(x, "minimumValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimumValueUndefined: Self = StObject.set(x, "minimumValue", js.undefined)
+      inline def setMinimumValueUndefined: Self = StObject.set(x, "minimumValue", js.undefined)
       
-      @scala.inline
-      def setOnSlidingComplete(value: /* value */ Double => Unit): Self = StObject.set(x, "onSlidingComplete", js.Any.fromFunction1(value))
+      inline def setOnSlidingComplete(value: /* value */ Double => Unit): Self = StObject.set(x, "onSlidingComplete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSlidingCompleteUndefined: Self = StObject.set(x, "onSlidingComplete", js.undefined)
+      inline def setOnSlidingCompleteUndefined: Self = StObject.set(x, "onSlidingComplete", js.undefined)
       
-      @scala.inline
-      def setOnSlidingStart(value: /* value */ Double => Unit): Self = StObject.set(x, "onSlidingStart", js.Any.fromFunction1(value))
+      inline def setOnSlidingStart(value: /* value */ Double => Unit): Self = StObject.set(x, "onSlidingStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSlidingStartUndefined: Self = StObject.set(x, "onSlidingStart", js.undefined)
+      inline def setOnSlidingStartUndefined: Self = StObject.set(x, "onSlidingStart", js.undefined)
       
-      @scala.inline
-      def setOnValueChange(value: /* value */ Double => Unit): Self = StObject.set(x, "onValueChange", js.Any.fromFunction1(value))
+      inline def setOnValueChange(value: /* value */ Double => Unit): Self = StObject.set(x, "onValueChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnValueChangeUndefined: Self = StObject.set(x, "onValueChange", js.undefined)
+      inline def setOnValueChangeUndefined: Self = StObject.set(x, "onValueChange", js.undefined)
       
-      @scala.inline
-      def setRef(value: MutableRefObject[SliderRef]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: MutableRefObject[SliderRef]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
-      @scala.inline
-      def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+      inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
       
-      @scala.inline
-      def setThumbTintColor(value: String): Self = StObject.set(x, "thumbTintColor", value.asInstanceOf[js.Any])
+      inline def setThumbTintColor(value: String): Self = StObject.set(x, "thumbTintColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbTintColorUndefined: Self = StObject.set(x, "thumbTintColor", js.undefined)
+      inline def setThumbTintColorUndefined: Self = StObject.set(x, "thumbTintColor", js.undefined)
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -250,20 +217,16 @@ object mod {
   }
   object SliderPropsAndroid {
     
-    @scala.inline
-    def apply(): SliderPropsAndroid = {
+    inline def apply(): SliderPropsAndroid = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SliderPropsAndroid]
     }
     
-    @scala.inline
-    implicit class SliderPropsAndroidMutableBuilder[Self <: SliderPropsAndroid] (val x: Self) extends AnyVal {
+    extension [Self <: SliderPropsAndroid](x: Self) {
       
-      @scala.inline
-      def setThumbTintColor(value: String): Self = StObject.set(x, "thumbTintColor", value.asInstanceOf[js.Any])
+      inline def setThumbTintColor(value: String): Self = StObject.set(x, "thumbTintColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbTintColorUndefined: Self = StObject.set(x, "thumbTintColor", js.undefined)
+      inline def setThumbTintColorUndefined: Self = StObject.set(x, "thumbTintColor", js.undefined)
     }
   }
   
@@ -297,38 +260,28 @@ object mod {
   }
   object SliderPropsIOS {
     
-    @scala.inline
-    def apply(): SliderPropsIOS = {
+    inline def apply(): SliderPropsIOS = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SliderPropsIOS]
     }
     
-    @scala.inline
-    implicit class SliderPropsIOSMutableBuilder[Self <: SliderPropsIOS] (val x: Self) extends AnyVal {
+    extension [Self <: SliderPropsIOS](x: Self) {
       
-      @scala.inline
-      def setMaximumTrackImage(value: ImageURISource): Self = StObject.set(x, "maximumTrackImage", value.asInstanceOf[js.Any])
+      inline def setMaximumTrackImage(value: ImageURISource): Self = StObject.set(x, "maximumTrackImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumTrackImageUndefined: Self = StObject.set(x, "maximumTrackImage", js.undefined)
+      inline def setMaximumTrackImageUndefined: Self = StObject.set(x, "maximumTrackImage", js.undefined)
       
-      @scala.inline
-      def setMinimumTrackImage(value: ImageURISource): Self = StObject.set(x, "minimumTrackImage", value.asInstanceOf[js.Any])
+      inline def setMinimumTrackImage(value: ImageURISource): Self = StObject.set(x, "minimumTrackImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimumTrackImageUndefined: Self = StObject.set(x, "minimumTrackImage", js.undefined)
+      inline def setMinimumTrackImageUndefined: Self = StObject.set(x, "minimumTrackImage", js.undefined)
       
-      @scala.inline
-      def setThumbImage(value: ImageURISource): Self = StObject.set(x, "thumbImage", value.asInstanceOf[js.Any])
+      inline def setThumbImage(value: ImageURISource): Self = StObject.set(x, "thumbImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbImageUndefined: Self = StObject.set(x, "thumbImage", js.undefined)
+      inline def setThumbImageUndefined: Self = StObject.set(x, "thumbImage", js.undefined)
       
-      @scala.inline
-      def setTrackImage(value: ImageURISource): Self = StObject.set(x, "trackImage", value.asInstanceOf[js.Any])
+      inline def setTrackImage(value: ImageURISource): Self = StObject.set(x, "trackImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackImageUndefined: Self = StObject.set(x, "trackImage", js.undefined)
+      inline def setTrackImageUndefined: Self = StObject.set(x, "trackImage", js.undefined)
     }
   }
   
@@ -338,17 +291,14 @@ object mod {
   }
   object SliderRef {
     
-    @scala.inline
-    def apply(updateValue: Double => Unit): SliderRef = {
+    inline def apply(updateValue: Double => Unit): SliderRef = {
       val __obj = js.Dynamic.literal(updateValue = js.Any.fromFunction1(updateValue))
       __obj.asInstanceOf[SliderRef]
     }
     
-    @scala.inline
-    implicit class SliderRefMutableBuilder[Self <: SliderRef] (val x: Self) extends AnyVal {
+    extension [Self <: SliderRef](x: Self) {
       
-      @scala.inline
-      def setUpdateValue(value: Double => Unit): Self = StObject.set(x, "updateValue", js.Any.fromFunction1(value))
+      inline def setUpdateValue(value: Double => Unit): Self = StObject.set(x, "updateValue", js.Any.fromFunction1(value))
     }
   }
 }

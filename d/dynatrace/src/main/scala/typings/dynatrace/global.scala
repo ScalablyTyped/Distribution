@@ -9,6 +9,5 @@ object global {
   @JSGlobal("dynaTrace")
   @js.native
   def dynaTrace: typings.dynatrace.dynaTrace = js.native
-  @scala.inline
-  def dynaTrace_=(x: dynaTrace): Unit = js.Dynamic.global.updateDynamic("dynaTrace")(x.asInstanceOf[js.Any])
+  inline def dynaTrace_=(x: dynaTrace): Unit = js.Dynamic.global.updateDynamic("dynaTrace")(x.asInstanceOf[js.Any])
 }

@@ -15,8 +15,7 @@ trait Init extends StObject {
 }
 object Init {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     init: () => BindingHandlerControlsDescendant,
     update: (Node, js.Function0[MaybeSubscribable[String]]) => Unit
   ): Init = {
@@ -24,13 +23,10 @@ object Init {
     __obj.asInstanceOf[Init]
   }
   
-  @scala.inline
-  implicit class InitMutableBuilder[Self <: Init] (val x: Self) extends AnyVal {
+  extension [Self <: Init](x: Self) {
     
-    @scala.inline
-    def setInit(value: () => BindingHandlerControlsDescendant): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
+    inline def setInit(value: () => BindingHandlerControlsDescendant): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdate(value: (Node, js.Function0[MaybeSubscribable[String]]) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+    inline def setUpdate(value: (Node, js.Function0[MaybeSubscribable[String]]) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
   }
 }

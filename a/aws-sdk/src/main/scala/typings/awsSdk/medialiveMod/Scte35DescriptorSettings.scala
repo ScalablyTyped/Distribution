@@ -13,16 +13,13 @@ trait Scte35DescriptorSettings extends StObject {
 }
 object Scte35DescriptorSettings {
   
-  @scala.inline
-  def apply(SegmentationDescriptorScte35DescriptorSettings: Scte35SegmentationDescriptor): Scte35DescriptorSettings = {
+  inline def apply(SegmentationDescriptorScte35DescriptorSettings: Scte35SegmentationDescriptor): Scte35DescriptorSettings = {
     val __obj = js.Dynamic.literal(SegmentationDescriptorScte35DescriptorSettings = SegmentationDescriptorScte35DescriptorSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scte35DescriptorSettings]
   }
   
-  @scala.inline
-  implicit class Scte35DescriptorSettingsMutableBuilder[Self <: Scte35DescriptorSettings] (val x: Self) extends AnyVal {
+  extension [Self <: Scte35DescriptorSettings](x: Self) {
     
-    @scala.inline
-    def setSegmentationDescriptorScte35DescriptorSettings(value: Scte35SegmentationDescriptor): Self = StObject.set(x, "SegmentationDescriptorScte35DescriptorSettings", value.asInstanceOf[js.Any])
+    inline def setSegmentationDescriptorScte35DescriptorSettings(value: Scte35SegmentationDescriptor): Self = StObject.set(x, "SegmentationDescriptorScte35DescriptorSettings", value.asInstanceOf[js.Any])
   }
 }

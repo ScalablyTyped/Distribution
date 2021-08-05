@@ -12,22 +12,17 @@ trait Response extends StObject {
 }
 object Response {
   
-  @scala.inline
-  def apply(error: typings.std.Error): Response = {
+  inline def apply(error: typings.std.Error): Response = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[Response]
   }
   
-  @scala.inline
-  implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
+  extension [Self <: Response](x: Self) {
     
-    @scala.inline
-    def setError(value: typings.std.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: typings.std.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: typings.std.Response): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: typings.std.Response): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+    inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
   }
 }

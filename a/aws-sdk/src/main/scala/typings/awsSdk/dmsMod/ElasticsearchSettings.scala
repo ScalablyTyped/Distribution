@@ -28,31 +28,23 @@ trait ElasticsearchSettings extends StObject {
 }
 object ElasticsearchSettings {
   
-  @scala.inline
-  def apply(EndpointUri: String, ServiceAccessRoleArn: String): ElasticsearchSettings = {
+  inline def apply(EndpointUri: String, ServiceAccessRoleArn: String): ElasticsearchSettings = {
     val __obj = js.Dynamic.literal(EndpointUri = EndpointUri.asInstanceOf[js.Any], ServiceAccessRoleArn = ServiceAccessRoleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElasticsearchSettings]
   }
   
-  @scala.inline
-  implicit class ElasticsearchSettingsMutableBuilder[Self <: ElasticsearchSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ElasticsearchSettings](x: Self) {
     
-    @scala.inline
-    def setEndpointUri(value: String): Self = StObject.set(x, "EndpointUri", value.asInstanceOf[js.Any])
+    inline def setEndpointUri(value: String): Self = StObject.set(x, "EndpointUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorRetryDuration(value: IntegerOptional): Self = StObject.set(x, "ErrorRetryDuration", value.asInstanceOf[js.Any])
+    inline def setErrorRetryDuration(value: IntegerOptional): Self = StObject.set(x, "ErrorRetryDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorRetryDurationUndefined: Self = StObject.set(x, "ErrorRetryDuration", js.undefined)
+    inline def setErrorRetryDurationUndefined: Self = StObject.set(x, "ErrorRetryDuration", js.undefined)
     
-    @scala.inline
-    def setFullLoadErrorPercentage(value: IntegerOptional): Self = StObject.set(x, "FullLoadErrorPercentage", value.asInstanceOf[js.Any])
+    inline def setFullLoadErrorPercentage(value: IntegerOptional): Self = StObject.set(x, "FullLoadErrorPercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullLoadErrorPercentageUndefined: Self = StObject.set(x, "FullLoadErrorPercentage", js.undefined)
+    inline def setFullLoadErrorPercentageUndefined: Self = StObject.set(x, "FullLoadErrorPercentage", js.undefined)
     
-    @scala.inline
-    def setServiceAccessRoleArn(value: String): Self = StObject.set(x, "ServiceAccessRoleArn", value.asInstanceOf[js.Any])
+    inline def setServiceAccessRoleArn(value: String): Self = StObject.set(x, "ServiceAccessRoleArn", value.asInstanceOf[js.Any])
   }
 }

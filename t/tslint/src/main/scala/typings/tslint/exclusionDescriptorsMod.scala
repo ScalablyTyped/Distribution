@@ -16,20 +16,17 @@ object exclusionDescriptorsMod {
   trait ExclusionDescriptor extends StObject
   object ExclusionDescriptor {
     
-    @scala.inline
-    def IBlockExclusionDescriptor(): typings.tslint.blockExclusionMod.IBlockExclusionDescriptor = {
+    inline def IBlockExclusionDescriptor(): typings.tslint.blockExclusionMod.IBlockExclusionDescriptor = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.tslint.blockExclusionMod.IBlockExclusionDescriptor]
     }
     
-    @scala.inline
-    def IClassExclusionDescriptor(): typings.tslint.classExclusionMod.IClassExclusionDescriptor = {
+    inline def IClassExclusionDescriptor(): typings.tslint.classExclusionMod.IClassExclusionDescriptor = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.tslint.classExclusionMod.IClassExclusionDescriptor]
     }
     
-    @scala.inline
-    def ITagExclusionDescriptor(): typings.tslint.tagExclusionMod.ITagExclusionDescriptor = {
+    inline def ITagExclusionDescriptor(): typings.tslint.tagExclusionMod.ITagExclusionDescriptor = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.tslint.tagExclusionMod.ITagExclusionDescriptor]
     }

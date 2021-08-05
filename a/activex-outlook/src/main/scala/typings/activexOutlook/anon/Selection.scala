@@ -12,8 +12,7 @@ trait Selection extends StObject {
 }
 object Selection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CommandBar: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.CommandBar */ js.Any,
     Selection: typings.activexOutlook.Outlook.Selection
   ): Selection = {
@@ -21,15 +20,12 @@ object Selection {
     __obj.asInstanceOf[Selection]
   }
   
-  @scala.inline
-  implicit class SelectionMutableBuilder[Self <: Selection] (val x: Self) extends AnyVal {
+  extension [Self <: Selection](x: Self) {
     
-    @scala.inline
-    def setCommandBar(
+    inline def setCommandBar(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.CommandBar */ js.Any
     ): Self = StObject.set(x, "CommandBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelection(value: typings.activexOutlook.Outlook.Selection): Self = StObject.set(x, "Selection", value.asInstanceOf[js.Any])
+    inline def setSelection(value: typings.activexOutlook.Outlook.Selection): Self = StObject.set(x, "Selection", value.asInstanceOf[js.Any])
   }
 }

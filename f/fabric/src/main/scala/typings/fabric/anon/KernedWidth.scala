@@ -12,19 +12,15 @@ trait KernedWidth extends StObject {
 }
 object KernedWidth {
   
-  @scala.inline
-  def apply(kernedWidth: Double, width: Double): KernedWidth = {
+  inline def apply(kernedWidth: Double, width: Double): KernedWidth = {
     val __obj = js.Dynamic.literal(kernedWidth = kernedWidth.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[KernedWidth]
   }
   
-  @scala.inline
-  implicit class KernedWidthMutableBuilder[Self <: KernedWidth] (val x: Self) extends AnyVal {
+  extension [Self <: KernedWidth](x: Self) {
     
-    @scala.inline
-    def setKernedWidth(value: Double): Self = StObject.set(x, "kernedWidth", value.asInstanceOf[js.Any])
+    inline def setKernedWidth(value: Double): Self = StObject.set(x, "kernedWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

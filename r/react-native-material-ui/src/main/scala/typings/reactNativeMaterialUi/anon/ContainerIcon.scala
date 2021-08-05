@@ -13,31 +13,23 @@ trait ContainerIcon extends StObject {
 }
 object ContainerIcon {
   
-  @scala.inline
-  def apply(): ContainerIcon = {
+  inline def apply(): ContainerIcon = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContainerIcon]
   }
   
-  @scala.inline
-  implicit class ContainerIconMutableBuilder[Self <: ContainerIcon] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerIcon](x: Self) {
     
-    @scala.inline
-    def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerNull: Self = StObject.set(x, "container", null)
+    inline def setContainerNull: Self = StObject.set(x, "container", null)
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setIcon(value: ViewStyle): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: ViewStyle): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconNull: Self = StObject.set(x, "icon", null)
+    inline def setIconNull: Self = StObject.set(x, "icon", null)
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
   }
 }

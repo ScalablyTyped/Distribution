@@ -17,15 +17,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parse(text: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def parse(text: String, options: DeserializeOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def parse(text: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def parse(text: String, options: DeserializeOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def stringify(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def stringify(value: js.Any, options: SerializeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringify(value: js.Any, options: SerializeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait DeserializeOptions extends StObject {
     
@@ -42,26 +38,20 @@ object mod {
   }
   object DeserializeOptions {
     
-    @scala.inline
-    def apply(): DeserializeOptions = {
+    inline def apply(): DeserializeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DeserializeOptions]
     }
     
-    @scala.inline
-    implicit class DeserializeOptionsMutableBuilder[Self <: DeserializeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DeserializeOptions](x: Self) {
       
-      @scala.inline
-      def setKeepWsc(value: Boolean): Self = StObject.set(x, "keepWsc", value.asInstanceOf[js.Any])
+      inline def setKeepWsc(value: Boolean): Self = StObject.set(x, "keepWsc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepWscUndefined: Self = StObject.set(x, "keepWsc", js.undefined)
+      inline def setKeepWscUndefined: Self = StObject.set(x, "keepWsc", js.undefined)
       
-      @scala.inline
-      def setLegacyRoot(value: Boolean): Self = StObject.set(x, "legacyRoot", value.asInstanceOf[js.Any])
+      inline def setLegacyRoot(value: Boolean): Self = StObject.set(x, "legacyRoot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLegacyRootUndefined: Self = StObject.set(x, "legacyRoot", js.undefined)
+      inline def setLegacyRootUndefined: Self = StObject.set(x, "legacyRoot", js.undefined)
     }
   }
   
@@ -123,68 +113,48 @@ object mod {
   }
   object SerializeOptions {
     
-    @scala.inline
-    def apply(): SerializeOptions = {
+    inline def apply(): SerializeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SerializeOptions]
     }
     
-    @scala.inline
-    implicit class SerializeOptionsMutableBuilder[Self <: SerializeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SerializeOptions](x: Self) {
       
-      @scala.inline
-      def setBracesSameLine(value: Boolean): Self = StObject.set(x, "bracesSameLine", value.asInstanceOf[js.Any])
+      inline def setBracesSameLine(value: Boolean): Self = StObject.set(x, "bracesSameLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBracesSameLineUndefined: Self = StObject.set(x, "bracesSameLine", js.undefined)
+      inline def setBracesSameLineUndefined: Self = StObject.set(x, "bracesSameLine", js.undefined)
       
-      @scala.inline
-      def setColors(value: Boolean): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: Boolean): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+      inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
       
-      @scala.inline
-      def setEmitRootBraces(value: Boolean): Self = StObject.set(x, "emitRootBraces", value.asInstanceOf[js.Any])
+      inline def setEmitRootBraces(value: Boolean): Self = StObject.set(x, "emitRootBraces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmitRootBracesUndefined: Self = StObject.set(x, "emitRootBraces", js.undefined)
+      inline def setEmitRootBracesUndefined: Self = StObject.set(x, "emitRootBraces", js.undefined)
       
-      @scala.inline
-      def setEol(value: String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
+      inline def setEol(value: String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEolUndefined: Self = StObject.set(x, "eol", js.undefined)
+      inline def setEolUndefined: Self = StObject.set(x, "eol", js.undefined)
       
-      @scala.inline
-      def setKeepWsc(value: Boolean): Self = StObject.set(x, "keepWsc", value.asInstanceOf[js.Any])
+      inline def setKeepWsc(value: Boolean): Self = StObject.set(x, "keepWsc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepWscUndefined: Self = StObject.set(x, "keepWsc", js.undefined)
+      inline def setKeepWscUndefined: Self = StObject.set(x, "keepWsc", js.undefined)
       
-      @scala.inline
-      def setMultiline(value: std | `no-tabs` | off): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
+      inline def setMultiline(value: std | `no-tabs` | off): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultilineUndefined: Self = StObject.set(x, "multiline", js.undefined)
+      inline def setMultilineUndefined: Self = StObject.set(x, "multiline", js.undefined)
       
-      @scala.inline
-      def setQuotes(value: min | keys | strings | all): Self = StObject.set(x, "quotes", value.asInstanceOf[js.Any])
+      inline def setQuotes(value: min | keys | strings | all): Self = StObject.set(x, "quotes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuotesUndefined: Self = StObject.set(x, "quotes", js.undefined)
+      inline def setQuotesUndefined: Self = StObject.set(x, "quotes", js.undefined)
       
-      @scala.inline
-      def setSeparator(value: Boolean): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+      inline def setSeparator(value: Boolean): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+      inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
       
-      @scala.inline
-      def setSpace(value: Double | String): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
+      inline def setSpace(value: Double | String): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
+      inline def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
     }
   }
 }

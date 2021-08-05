@@ -44,40 +44,29 @@ trait Endpoints extends StObject {
 }
 object Endpoints {
   
-  @scala.inline
-  def apply(): Endpoints = {
+  inline def apply(): Endpoints = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Endpoints]
   }
   
-  @scala.inline
-  implicit class EndpointsMutableBuilder[Self <: Endpoints] (val x: Self) extends AnyVal {
+  extension [Self <: Endpoints](x: Self) {
     
-    @scala.inline
-    def setApiVersion(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.v1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+    inline def setApiVersion(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.v1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+    inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     
-    @scala.inline
-    def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.Endpoints]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.Endpoints]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setSubsets(value: Input[js.Array[Input[EndpointSubset]]]): Self = StObject.set(x, "subsets", value.asInstanceOf[js.Any])
+    inline def setSubsets(value: Input[js.Array[Input[EndpointSubset]]]): Self = StObject.set(x, "subsets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubsetsUndefined: Self = StObject.set(x, "subsets", js.undefined)
+    inline def setSubsetsUndefined: Self = StObject.set(x, "subsets", js.undefined)
     
-    @scala.inline
-    def setSubsetsVarargs(value: Input[EndpointSubset]*): Self = StObject.set(x, "subsets", js.Array(value :_*))
+    inline def setSubsetsVarargs(value: Input[EndpointSubset]*): Self = StObject.set(x, "subsets", js.Array(value :_*))
   }
 }

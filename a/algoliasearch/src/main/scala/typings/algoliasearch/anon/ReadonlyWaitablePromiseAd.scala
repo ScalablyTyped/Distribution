@@ -16,8 +16,7 @@ trait ReadonlyWaitablePromiseAd extends StObject {
 }
 object ReadonlyWaitablePromiseAd {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `catch`: () => js.Promise[AddApiKeyResponse | js.Any],
     `finally`: () => js.Promise[AddApiKeyResponse],
     `then`: () => js.Promise[js.Any | js.Any]
@@ -29,16 +28,12 @@ object ReadonlyWaitablePromiseAd {
     __obj.asInstanceOf[ReadonlyWaitablePromiseAd]
   }
   
-  @scala.inline
-  implicit class ReadonlyWaitablePromiseAdMutableBuilder[Self <: ReadonlyWaitablePromiseAd] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyWaitablePromiseAd](x: Self) {
     
-    @scala.inline
-    def setCatch(value: () => js.Promise[AddApiKeyResponse | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
+    inline def setCatch(value: () => js.Promise[AddApiKeyResponse | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFinally(value: () => js.Promise[AddApiKeyResponse]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
+    inline def setFinally(value: () => js.Promise[AddApiKeyResponse]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
+    inline def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
   }
 }

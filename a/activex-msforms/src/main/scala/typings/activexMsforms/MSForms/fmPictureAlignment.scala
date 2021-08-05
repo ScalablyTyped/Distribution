@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait fmPictureAlignment extends StObject
 object fmPictureAlignment {
   
-  @scala.inline
-  def fmPictureAlignmentBottomLeft: `3` = 3.asInstanceOf[`3`]
+  inline def fmPictureAlignmentBottomLeft: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def fmPictureAlignmentBottomRight: `4` = 4.asInstanceOf[`4`]
+  inline def fmPictureAlignmentBottomRight: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def fmPictureAlignmentCenter: `2` = 2.asInstanceOf[`2`]
+  inline def fmPictureAlignmentCenter: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def fmPictureAlignmentTopLeft: `0` = 0.asInstanceOf[`0`]
+  inline def fmPictureAlignmentTopLeft: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def fmPictureAlignmentTopRight: `1` = 1.asInstanceOf[`1`]
+  inline def fmPictureAlignmentTopRight: `1` = 1.asInstanceOf[`1`]
 }

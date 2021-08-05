@@ -36,8 +36,7 @@ trait LokiLocalStorageAdapter extends StObject {
 }
 object LokiLocalStorageAdapter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deleteDatabase: (String, js.Function1[/* err */ js.UndefOr[Error | Null], Unit]) => Unit,
     loadDatabase: (String, js.Function1[/* dataOrError */ js.Any | Error, Unit]) => Unit,
     saveDatabase: (String, String, js.Function1[/* err */ js.UndefOr[Error | Null], Unit]) => Unit
@@ -46,16 +45,12 @@ object LokiLocalStorageAdapter {
     __obj.asInstanceOf[LokiLocalStorageAdapter]
   }
   
-  @scala.inline
-  implicit class LokiLocalStorageAdapterMutableBuilder[Self <: LokiLocalStorageAdapter] (val x: Self) extends AnyVal {
+  extension [Self <: LokiLocalStorageAdapter](x: Self) {
     
-    @scala.inline
-    def setDeleteDatabase(value: (String, js.Function1[/* err */ js.UndefOr[Error | Null], Unit]) => Unit): Self = StObject.set(x, "deleteDatabase", js.Any.fromFunction2(value))
+    inline def setDeleteDatabase(value: (String, js.Function1[/* err */ js.UndefOr[Error | Null], Unit]) => Unit): Self = StObject.set(x, "deleteDatabase", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLoadDatabase(value: (String, js.Function1[/* dataOrError */ js.Any | Error, Unit]) => Unit): Self = StObject.set(x, "loadDatabase", js.Any.fromFunction2(value))
+    inline def setLoadDatabase(value: (String, js.Function1[/* dataOrError */ js.Any | Error, Unit]) => Unit): Self = StObject.set(x, "loadDatabase", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSaveDatabase(value: (String, String, js.Function1[/* err */ js.UndefOr[Error | Null], Unit]) => Unit): Self = StObject.set(x, "saveDatabase", js.Any.fromFunction3(value))
+    inline def setSaveDatabase(value: (String, String, js.Function1[/* err */ js.UndefOr[Error | Null], Unit]) => Unit): Self = StObject.set(x, "saveDatabase", js.Any.fromFunction3(value))
   }
 }

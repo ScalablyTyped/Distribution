@@ -18,19 +18,15 @@ trait CreateGatewayResponse extends StObject {
 }
 object CreateGatewayResponse {
   
-  @scala.inline
-  def apply(gatewayArn: ARN, gatewayId: ID): CreateGatewayResponse = {
+  inline def apply(gatewayArn: ARN, gatewayId: ID): CreateGatewayResponse = {
     val __obj = js.Dynamic.literal(gatewayArn = gatewayArn.asInstanceOf[js.Any], gatewayId = gatewayId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateGatewayResponse]
   }
   
-  @scala.inline
-  implicit class CreateGatewayResponseMutableBuilder[Self <: CreateGatewayResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateGatewayResponse](x: Self) {
     
-    @scala.inline
-    def setGatewayArn(value: ARN): Self = StObject.set(x, "gatewayArn", value.asInstanceOf[js.Any])
+    inline def setGatewayArn(value: ARN): Self = StObject.set(x, "gatewayArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayId(value: ID): Self = StObject.set(x, "gatewayId", value.asInstanceOf[js.Any])
+    inline def setGatewayId(value: ID): Self = StObject.set(x, "gatewayId", value.asInstanceOf[js.Any])
   }
 }

@@ -25,20 +25,16 @@ object tableHeaderCellMod extends Shortcut {
   }
   object StrictTableHeaderCellProps {
     
-    @scala.inline
-    def apply(): StrictTableHeaderCellProps = {
+    inline def apply(): StrictTableHeaderCellProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictTableHeaderCellProps]
     }
     
-    @scala.inline
-    implicit class StrictTableHeaderCellPropsMutableBuilder[Self <: StrictTableHeaderCellProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictTableHeaderCellProps](x: Self) {
       
-      @scala.inline
-      def setSorted(value: ascending | descending): Self = StObject.set(x, "sorted", value.asInstanceOf[js.Any])
+      inline def setSorted(value: ascending | descending): Self = StObject.set(x, "sorted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortedUndefined: Self = StObject.set(x, "sorted", js.undefined)
+      inline def setSortedUndefined: Self = StObject.set(x, "sorted", js.undefined)
     }
   }
   
@@ -48,8 +44,7 @@ object tableHeaderCellMod extends Shortcut {
        with /* key */ StringDictionary[js.Any]
   object TableHeaderCellProps {
     
-    @scala.inline
-    def apply(): TableHeaderCellProps = {
+    inline def apply(): TableHeaderCellProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableHeaderCellProps]
     }

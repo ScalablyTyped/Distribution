@@ -14,14 +14,10 @@ object fakeGeneratorsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getFakeApp(): FirebaseApp = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeApp")().asInstanceOf[FirebaseApp]
+  inline def getFakeApp(): FirebaseApp = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeApp")().asInstanceOf[FirebaseApp]
   
-  @scala.inline
-  def getFakeAppConfig(): AppConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeAppConfig")().asInstanceOf[AppConfig]
-  @scala.inline
-  def getFakeAppConfig(customValues: PartialAppConfig): AppConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeAppConfig")(customValues.asInstanceOf[js.Any]).asInstanceOf[AppConfig]
+  inline def getFakeAppConfig(): AppConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeAppConfig")().asInstanceOf[AppConfig]
+  inline def getFakeAppConfig(customValues: PartialAppConfig): AppConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeAppConfig")(customValues.asInstanceOf[js.Any]).asInstanceOf[AppConfig]
   
-  @scala.inline
-  def getFakeDependencies(): FirebaseDependencies = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeDependencies")().asInstanceOf[FirebaseDependencies]
+  inline def getFakeDependencies(): FirebaseDependencies = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeDependencies")().asInstanceOf[FirebaseDependencies]
 }

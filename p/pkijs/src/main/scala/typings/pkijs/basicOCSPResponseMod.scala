@@ -29,16 +29,12 @@ object basicOCSPResponseMod {
       * @param {string} memberName String name for a class member
       * @param {*} memberValue Value to compare with default value
       */
-    @scala.inline
-    def compareWithDefault(memberName: String, memberValue: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareWithDefault")(memberName.asInstanceOf[js.Any], memberValue.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def compareWithDefault(memberName: String, memberValue: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareWithDefault")(memberName.asInstanceOf[js.Any], memberValue.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
-    @scala.inline
-    def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
+    inline def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   @js.native
@@ -103,20 +99,16 @@ object basicOCSPResponseMod {
   }
   object GetCertificateStatusResult {
     
-    @scala.inline
-    def apply(isForCertificate: Boolean, status: Double): GetCertificateStatusResult = {
+    inline def apply(isForCertificate: Boolean, status: Double): GetCertificateStatusResult = {
       val __obj = js.Dynamic.literal(isForCertificate = isForCertificate.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetCertificateStatusResult]
     }
     
-    @scala.inline
-    implicit class GetCertificateStatusResultMutableBuilder[Self <: GetCertificateStatusResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetCertificateStatusResult](x: Self) {
       
-      @scala.inline
-      def setIsForCertificate(value: Boolean): Self = StObject.set(x, "isForCertificate", value.asInstanceOf[js.Any])
+      inline def setIsForCertificate(value: Boolean): Self = StObject.set(x, "isForCertificate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
 }

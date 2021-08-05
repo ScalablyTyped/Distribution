@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlPivotTableSourceType extends StObject
 object XlPivotTableSourceType {
   
-  @scala.inline
-  def xlConsolidation: `3` = 3.asInstanceOf[`3`]
+  inline def xlConsolidation: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def xlDatabase: `1` = 1.asInstanceOf[`1`]
+  inline def xlDatabase: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlExternal: `2` = 2.asInstanceOf[`2`]
+  inline def xlExternal: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlPivotTable: `-4148` = -4148.asInstanceOf[`-4148`]
+  inline def xlPivotTable: `-4148` = -4148.asInstanceOf[`-4148`]
   
-  @scala.inline
-  def xlScenario: `4` = 4.asInstanceOf[`4`]
+  inline def xlScenario: `4` = 4.asInstanceOf[`4`]
 }

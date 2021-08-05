@@ -19,33 +19,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LocationType extends StObject
 object LocationType {
   
-  @scala.inline
-  def default: typings.microsoftGraph.microsoftGraphStrings.default = "default".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.default]
+  inline def default: typings.microsoftGraph.microsoftGraphStrings.default = "default".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.default]
   
-  @scala.inline
-  def businessAddress: typings.microsoftGraph.microsoftGraphStrings.businessAddress = "businessAddress".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.businessAddress]
+  inline def businessAddress: typings.microsoftGraph.microsoftGraphStrings.businessAddress = "businessAddress".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.businessAddress]
   
-  @scala.inline
-  def conferenceRoom: typings.microsoftGraph.microsoftGraphStrings.conferenceRoom = "conferenceRoom".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.conferenceRoom]
+  inline def conferenceRoom: typings.microsoftGraph.microsoftGraphStrings.conferenceRoom = "conferenceRoom".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.conferenceRoom]
   
-  @scala.inline
-  def geoCoordinates: typings.microsoftGraph.microsoftGraphStrings.geoCoordinates = "geoCoordinates".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.geoCoordinates]
+  inline def geoCoordinates: typings.microsoftGraph.microsoftGraphStrings.geoCoordinates = "geoCoordinates".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.geoCoordinates]
   
-  @scala.inline
-  def homeAddress: typings.microsoftGraph.microsoftGraphStrings.homeAddress = "homeAddress".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.homeAddress]
+  inline def homeAddress: typings.microsoftGraph.microsoftGraphStrings.homeAddress = "homeAddress".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.homeAddress]
   
-  @scala.inline
-  def hotel: typings.microsoftGraph.microsoftGraphStrings.hotel = "hotel".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.hotel]
+  inline def hotel: typings.microsoftGraph.microsoftGraphStrings.hotel = "hotel".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.hotel]
   
-  @scala.inline
-  def localBusiness: typings.microsoftGraph.microsoftGraphStrings.localBusiness = "localBusiness".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.localBusiness]
+  inline def localBusiness: typings.microsoftGraph.microsoftGraphStrings.localBusiness = "localBusiness".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.localBusiness]
   
-  @scala.inline
-  def postalAddress: typings.microsoftGraph.microsoftGraphStrings.postalAddress = "postalAddress".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.postalAddress]
+  inline def postalAddress: typings.microsoftGraph.microsoftGraphStrings.postalAddress = "postalAddress".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.postalAddress]
   
-  @scala.inline
-  def restaurant: typings.microsoftGraph.microsoftGraphStrings.restaurant = "restaurant".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.restaurant]
+  inline def restaurant: typings.microsoftGraph.microsoftGraphStrings.restaurant = "restaurant".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.restaurant]
   
-  @scala.inline
-  def streetAddress: typings.microsoftGraph.microsoftGraphStrings.streetAddress = "streetAddress".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.streetAddress]
+  inline def streetAddress: typings.microsoftGraph.microsoftGraphStrings.streetAddress = "streetAddress".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.streetAddress]
 }

@@ -10,16 +10,13 @@ trait QrResponse extends StObject {
 }
 object QrResponse {
   
-  @scala.inline
-  def apply(image: String): QrResponse = {
+  inline def apply(image: String): QrResponse = {
     val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any])
     __obj.asInstanceOf[QrResponse]
   }
   
-  @scala.inline
-  implicit class QrResponseMutableBuilder[Self <: QrResponse] (val x: Self) extends AnyVal {
+  extension [Self <: QrResponse](x: Self) {
     
-    @scala.inline
-    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
   }
 }

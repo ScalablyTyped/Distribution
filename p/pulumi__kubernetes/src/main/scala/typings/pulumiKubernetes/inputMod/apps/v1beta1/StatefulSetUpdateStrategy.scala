@@ -22,25 +22,19 @@ trait StatefulSetUpdateStrategy extends StObject {
 }
 object StatefulSetUpdateStrategy {
   
-  @scala.inline
-  def apply(): StatefulSetUpdateStrategy = {
+  inline def apply(): StatefulSetUpdateStrategy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StatefulSetUpdateStrategy]
   }
   
-  @scala.inline
-  implicit class StatefulSetUpdateStrategyMutableBuilder[Self <: StatefulSetUpdateStrategy] (val x: Self) extends AnyVal {
+  extension [Self <: StatefulSetUpdateStrategy](x: Self) {
     
-    @scala.inline
-    def setRollingUpdate(value: Input[RollingUpdateStatefulSetStrategy]): Self = StObject.set(x, "rollingUpdate", value.asInstanceOf[js.Any])
+    inline def setRollingUpdate(value: Input[RollingUpdateStatefulSetStrategy]): Self = StObject.set(x, "rollingUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRollingUpdateUndefined: Self = StObject.set(x, "rollingUpdate", js.undefined)
+    inline def setRollingUpdateUndefined: Self = StObject.set(x, "rollingUpdate", js.undefined)
     
-    @scala.inline
-    def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

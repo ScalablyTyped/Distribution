@@ -18,8 +18,7 @@ trait Compiler extends StObject {
 }
 object Compiler {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     compiler: AotCompiler,
     host: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CompilerHost */ js.Any,
     ngcProgram: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_compiler-cli.Program */ js.Any,
@@ -29,23 +28,18 @@ object Compiler {
     __obj.asInstanceOf[Compiler]
   }
   
-  @scala.inline
-  implicit class CompilerMutableBuilder[Self <: Compiler] (val x: Self) extends AnyVal {
+  extension [Self <: Compiler](x: Self) {
     
-    @scala.inline
-    def setCompiler(value: AotCompiler): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
+    inline def setCompiler(value: AotCompiler): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHost(
+    inline def setHost(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CompilerHost */ js.Any
     ): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNgcProgram(
+    inline def setNgcProgram(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_compiler-cli.Program */ js.Any
     ): Self = StObject.set(x, "ngcProgram", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgram(value: Program): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
+    inline def setProgram(value: Program): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
   }
 }

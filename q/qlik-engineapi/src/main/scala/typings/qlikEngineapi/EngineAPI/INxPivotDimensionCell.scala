@@ -84,8 +84,7 @@ trait INxPivotDimensionCell extends StObject {
 }
 object INxPivotDimensionCell {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qAttrDims: js.Array[INxAttributeDimValues],
     qAttrExps: js.Array[INxAttributeExpressionValues],
     qCanCollapse: Boolean,
@@ -102,49 +101,34 @@ object INxPivotDimensionCell {
     __obj.asInstanceOf[INxPivotDimensionCell]
   }
   
-  @scala.inline
-  implicit class INxPivotDimensionCellMutableBuilder[Self <: INxPivotDimensionCell] (val x: Self) extends AnyVal {
+  extension [Self <: INxPivotDimensionCell](x: Self) {
     
-    @scala.inline
-    def setQAttrDims(value: js.Array[INxAttributeDimValues]): Self = StObject.set(x, "qAttrDims", value.asInstanceOf[js.Any])
+    inline def setQAttrDims(value: js.Array[INxAttributeDimValues]): Self = StObject.set(x, "qAttrDims", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQAttrDimsVarargs(value: INxAttributeDimValues*): Self = StObject.set(x, "qAttrDims", js.Array(value :_*))
+    inline def setQAttrDimsVarargs(value: INxAttributeDimValues*): Self = StObject.set(x, "qAttrDims", js.Array(value :_*))
     
-    @scala.inline
-    def setQAttrExps(value: js.Array[INxAttributeExpressionValues]): Self = StObject.set(x, "qAttrExps", value.asInstanceOf[js.Any])
+    inline def setQAttrExps(value: js.Array[INxAttributeExpressionValues]): Self = StObject.set(x, "qAttrExps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQAttrExpsVarargs(value: INxAttributeExpressionValues*): Self = StObject.set(x, "qAttrExps", js.Array(value :_*))
+    inline def setQAttrExpsVarargs(value: INxAttributeExpressionValues*): Self = StObject.set(x, "qAttrExps", js.Array(value :_*))
     
-    @scala.inline
-    def setQCanCollapse(value: Boolean): Self = StObject.set(x, "qCanCollapse", value.asInstanceOf[js.Any])
+    inline def setQCanCollapse(value: Boolean): Self = StObject.set(x, "qCanCollapse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQCanExpand(value: Boolean): Self = StObject.set(x, "qCanExpand", value.asInstanceOf[js.Any])
+    inline def setQCanExpand(value: Boolean): Self = StObject.set(x, "qCanExpand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQDown(value: Double): Self = StObject.set(x, "qDown", value.asInstanceOf[js.Any])
+    inline def setQDown(value: Double): Self = StObject.set(x, "qDown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQElemNo(value: Double): Self = StObject.set(x, "qElemNo", value.asInstanceOf[js.Any])
+    inline def setQElemNo(value: Double): Self = StObject.set(x, "qElemNo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQSubNodes(value: js.Array[INxPivotDimensionCell]): Self = StObject.set(x, "qSubNodes", value.asInstanceOf[js.Any])
+    inline def setQSubNodes(value: js.Array[INxPivotDimensionCell]): Self = StObject.set(x, "qSubNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQSubNodesVarargs(value: INxPivotDimensionCell*): Self = StObject.set(x, "qSubNodes", js.Array(value :_*))
+    inline def setQSubNodesVarargs(value: INxPivotDimensionCell*): Self = StObject.set(x, "qSubNodes", js.Array(value :_*))
     
-    @scala.inline
-    def setQText(value: String): Self = StObject.set(x, "qText", value.asInstanceOf[js.Any])
+    inline def setQText(value: String): Self = StObject.set(x, "qText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQType(value: NxCellType): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
+    inline def setQType(value: NxCellType): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQUp(value: Double): Self = StObject.set(x, "qUp", value.asInstanceOf[js.Any])
+    inline def setQUp(value: Double): Self = StObject.set(x, "qUp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQValue(value: Double): Self = StObject.set(x, "qValue", value.asInstanceOf[js.Any])
+    inline def setQValue(value: Double): Self = StObject.set(x, "qValue", value.asInstanceOf[js.Any])
   }
 }

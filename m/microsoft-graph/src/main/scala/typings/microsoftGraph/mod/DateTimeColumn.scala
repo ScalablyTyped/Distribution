@@ -17,31 +17,23 @@ trait DateTimeColumn extends StObject {
 }
 object DateTimeColumn {
   
-  @scala.inline
-  def apply(): DateTimeColumn = {
+  inline def apply(): DateTimeColumn = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DateTimeColumn]
   }
   
-  @scala.inline
-  implicit class DateTimeColumnMutableBuilder[Self <: DateTimeColumn] (val x: Self) extends AnyVal {
+  extension [Self <: DateTimeColumn](x: Self) {
     
-    @scala.inline
-    def setDisplayAs(value: NullableOption[String]): Self = StObject.set(x, "displayAs", value.asInstanceOf[js.Any])
+    inline def setDisplayAs(value: NullableOption[String]): Self = StObject.set(x, "displayAs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayAsNull: Self = StObject.set(x, "displayAs", null)
+    inline def setDisplayAsNull: Self = StObject.set(x, "displayAs", null)
     
-    @scala.inline
-    def setDisplayAsUndefined: Self = StObject.set(x, "displayAs", js.undefined)
+    inline def setDisplayAsUndefined: Self = StObject.set(x, "displayAs", js.undefined)
     
-    @scala.inline
-    def setFormat(value: NullableOption[String]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: NullableOption[String]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatNull: Self = StObject.set(x, "format", null)
+    inline def setFormatNull: Self = StObject.set(x, "format", null)
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
   }
 }

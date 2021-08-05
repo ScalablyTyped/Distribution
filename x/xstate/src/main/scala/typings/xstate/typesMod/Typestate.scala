@@ -12,19 +12,15 @@ trait Typestate[TContext] extends StObject {
 }
 object Typestate {
   
-  @scala.inline
-  def apply[TContext](context: TContext, value: StateValue): Typestate[TContext] = {
+  inline def apply[TContext](context: TContext, value: StateValue): Typestate[TContext] = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typestate[TContext]]
   }
   
-  @scala.inline
-  implicit class TypestateMutableBuilder[Self <: Typestate[?], TContext] (val x: Self & Typestate[TContext]) extends AnyVal {
+  extension [Self <: Typestate[?], TContext](x: Self & Typestate[TContext]) {
     
-    @scala.inline
-    def setContext(value: TContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: TContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: StateValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: StateValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

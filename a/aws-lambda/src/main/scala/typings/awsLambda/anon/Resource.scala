@@ -10,19 +10,15 @@ trait Resource extends StObject {
 }
 object Resource {
   
-  @scala.inline
-  def apply(Resource: String | js.Array[String]): Resource = {
+  inline def apply(Resource: String | js.Array[String]): Resource = {
     val __obj = js.Dynamic.literal(Resource = Resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Resource]
   }
   
-  @scala.inline
-  implicit class ResourceMutableBuilder[Self <: Resource] (val x: Self) extends AnyVal {
+  extension [Self <: Resource](x: Self) {
     
-    @scala.inline
-    def setResource(value: String | js.Array[String]): Self = StObject.set(x, "Resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: String | js.Array[String]): Self = StObject.set(x, "Resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceVarargs(value: String*): Self = StObject.set(x, "Resource", js.Array(value :_*))
+    inline def setResourceVarargs(value: String*): Self = StObject.set(x, "Resource", js.Array(value :_*))
   }
 }

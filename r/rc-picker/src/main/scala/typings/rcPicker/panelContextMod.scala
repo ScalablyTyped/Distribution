@@ -29,26 +29,20 @@ object panelContextMod extends Shortcut {
   }
   object ContextOperationRefProps {
     
-    @scala.inline
-    def apply(): ContextOperationRefProps = {
+    inline def apply(): ContextOperationRefProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ContextOperationRefProps]
     }
     
-    @scala.inline
-    implicit class ContextOperationRefPropsMutableBuilder[Self <: ContextOperationRefProps] (val x: Self) extends AnyVal {
+    extension [Self <: ContextOperationRefProps](x: Self) {
       
-      @scala.inline
-      def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+      inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      @scala.inline
-      def setOnKeyDown(value: /* e */ KeyboardEvent[HTMLElement] => Boolean): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: /* e */ KeyboardEvent[HTMLElement] => Boolean): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
     }
   }
   
@@ -80,86 +74,60 @@ object panelContextMod extends Shortcut {
   }
   object PanelContextProps {
     
-    @scala.inline
-    def apply(): PanelContextProps = {
+    inline def apply(): PanelContextProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PanelContextProps]
     }
     
-    @scala.inline
-    implicit class PanelContextPropsMutableBuilder[Self <: PanelContextProps] (val x: Self) extends AnyVal {
+    extension [Self <: PanelContextProps](x: Self) {
       
-      @scala.inline
-      def setDefaultOpenValue(value: js.Any): Self = StObject.set(x, "defaultOpenValue", value.asInstanceOf[js.Any])
+      inline def setDefaultOpenValue(value: js.Any): Self = StObject.set(x, "defaultOpenValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultOpenValueUndefined: Self = StObject.set(x, "defaultOpenValue", js.undefined)
+      inline def setDefaultOpenValueUndefined: Self = StObject.set(x, "defaultOpenValue", js.undefined)
       
-      @scala.inline
-      def setHideHeader(value: Boolean): Self = StObject.set(x, "hideHeader", value.asInstanceOf[js.Any])
+      inline def setHideHeader(value: Boolean): Self = StObject.set(x, "hideHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideHeaderUndefined: Self = StObject.set(x, "hideHeader", js.undefined)
+      inline def setHideHeaderUndefined: Self = StObject.set(x, "hideHeader", js.undefined)
       
-      @scala.inline
-      def setHideNextBtn(value: Boolean): Self = StObject.set(x, "hideNextBtn", value.asInstanceOf[js.Any])
+      inline def setHideNextBtn(value: Boolean): Self = StObject.set(x, "hideNextBtn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideNextBtnUndefined: Self = StObject.set(x, "hideNextBtn", js.undefined)
+      inline def setHideNextBtnUndefined: Self = StObject.set(x, "hideNextBtn", js.undefined)
       
-      @scala.inline
-      def setHidePrevBtn(value: Boolean): Self = StObject.set(x, "hidePrevBtn", value.asInstanceOf[js.Any])
+      inline def setHidePrevBtn(value: Boolean): Self = StObject.set(x, "hidePrevBtn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHidePrevBtnUndefined: Self = StObject.set(x, "hidePrevBtn", js.undefined)
+      inline def setHidePrevBtnUndefined: Self = StObject.set(x, "hidePrevBtn", js.undefined)
       
-      @scala.inline
-      def setHideRanges(value: Boolean): Self = StObject.set(x, "hideRanges", value.asInstanceOf[js.Any])
+      inline def setHideRanges(value: Boolean): Self = StObject.set(x, "hideRanges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideRangesUndefined: Self = StObject.set(x, "hideRanges", js.undefined)
+      inline def setHideRangesUndefined: Self = StObject.set(x, "hideRanges", js.undefined)
       
-      @scala.inline
-      def setOnDateMouseEnter(value: /* date */ js.Any => Unit): Self = StObject.set(x, "onDateMouseEnter", js.Any.fromFunction1(value))
+      inline def setOnDateMouseEnter(value: /* date */ js.Any => Unit): Self = StObject.set(x, "onDateMouseEnter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDateMouseEnterUndefined: Self = StObject.set(x, "onDateMouseEnter", js.undefined)
+      inline def setOnDateMouseEnterUndefined: Self = StObject.set(x, "onDateMouseEnter", js.undefined)
       
-      @scala.inline
-      def setOnDateMouseLeave(value: /* date */ js.Any => Unit): Self = StObject.set(x, "onDateMouseLeave", js.Any.fromFunction1(value))
+      inline def setOnDateMouseLeave(value: /* date */ js.Any => Unit): Self = StObject.set(x, "onDateMouseLeave", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDateMouseLeaveUndefined: Self = StObject.set(x, "onDateMouseLeave", js.undefined)
+      inline def setOnDateMouseLeaveUndefined: Self = StObject.set(x, "onDateMouseLeave", js.undefined)
       
-      @scala.inline
-      def setOnSelect(value: (js.Any, /* type */ key | mouse | submit) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
+      inline def setOnSelect(value: (js.Any, /* type */ key | mouse | submit) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
+      inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
-      @scala.inline
-      def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+      inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
       
-      @scala.inline
-      def setOperationRef(value: MutableRefObject[ContextOperationRefProps | Null]): Self = StObject.set(x, "operationRef", value.asInstanceOf[js.Any])
+      inline def setOperationRef(value: MutableRefObject[ContextOperationRefProps | Null]): Self = StObject.set(x, "operationRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperationRefUndefined: Self = StObject.set(x, "operationRef", js.undefined)
+      inline def setOperationRefUndefined: Self = StObject.set(x, "operationRef", js.undefined)
       
-      @scala.inline
-      def setPanelRef(value: Ref[HTMLDivElement]): Self = StObject.set(x, "panelRef", value.asInstanceOf[js.Any])
+      inline def setPanelRef(value: Ref[HTMLDivElement]): Self = StObject.set(x, "panelRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanelRefFunction1(value: /* instance */ HTMLDivElement | Null => Unit): Self = StObject.set(x, "panelRef", js.Any.fromFunction1(value))
+      inline def setPanelRefFunction1(value: /* instance */ HTMLDivElement | Null => Unit): Self = StObject.set(x, "panelRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPanelRefNull: Self = StObject.set(x, "panelRef", null)
+      inline def setPanelRefNull: Self = StObject.set(x, "panelRef", null)
       
-      @scala.inline
-      def setPanelRefUndefined: Self = StObject.set(x, "panelRef", js.undefined)
+      inline def setPanelRefUndefined: Self = StObject.set(x, "panelRef", js.undefined)
     }
   }
   

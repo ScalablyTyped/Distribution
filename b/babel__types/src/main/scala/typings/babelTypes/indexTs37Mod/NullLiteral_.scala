@@ -19,17 +19,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object NullLiteral_ {
   
-  @scala.inline
-  def apply(): NullLiteral_ = {
+  inline def apply(): NullLiteral_ = {
     val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("NullLiteral")
     __obj.asInstanceOf[NullLiteral_]
   }
   
-  @scala.inline
-  implicit class NullLiteral_MutableBuilder[Self <: NullLiteral_] (val x: Self) extends AnyVal {
+  extension [Self <: NullLiteral_](x: Self) {
     
-    @scala.inline
-    def setType(value: NullLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: NullLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -74,91 +74,63 @@ trait WebAclRuleStatement extends StObject {
 }
 object WebAclRuleStatement {
   
-  @scala.inline
-  def apply(): WebAclRuleStatement = {
+  inline def apply(): WebAclRuleStatement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebAclRuleStatement]
   }
   
-  @scala.inline
-  implicit class WebAclRuleStatementMutableBuilder[Self <: WebAclRuleStatement] (val x: Self) extends AnyVal {
+  extension [Self <: WebAclRuleStatement](x: Self) {
     
-    @scala.inline
-    def setAndStatement(value: Input[WebAclRuleStatementAndStatement]): Self = StObject.set(x, "andStatement", value.asInstanceOf[js.Any])
+    inline def setAndStatement(value: Input[WebAclRuleStatementAndStatement]): Self = StObject.set(x, "andStatement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndStatementUndefined: Self = StObject.set(x, "andStatement", js.undefined)
+    inline def setAndStatementUndefined: Self = StObject.set(x, "andStatement", js.undefined)
     
-    @scala.inline
-    def setByteMatchStatement(value: Input[WebAclRuleStatementByteMatchStatement]): Self = StObject.set(x, "byteMatchStatement", value.asInstanceOf[js.Any])
+    inline def setByteMatchStatement(value: Input[WebAclRuleStatementByteMatchStatement]): Self = StObject.set(x, "byteMatchStatement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByteMatchStatementUndefined: Self = StObject.set(x, "byteMatchStatement", js.undefined)
+    inline def setByteMatchStatementUndefined: Self = StObject.set(x, "byteMatchStatement", js.undefined)
     
-    @scala.inline
-    def setGeoMatchStatement(value: Input[WebAclRuleStatementGeoMatchStatement]): Self = StObject.set(x, "geoMatchStatement", value.asInstanceOf[js.Any])
+    inline def setGeoMatchStatement(value: Input[WebAclRuleStatementGeoMatchStatement]): Self = StObject.set(x, "geoMatchStatement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeoMatchStatementUndefined: Self = StObject.set(x, "geoMatchStatement", js.undefined)
+    inline def setGeoMatchStatementUndefined: Self = StObject.set(x, "geoMatchStatement", js.undefined)
     
-    @scala.inline
-    def setIpSetReferenceStatement(value: Input[WebAclRuleStatementIpSetReferenceStatement]): Self = StObject.set(x, "ipSetReferenceStatement", value.asInstanceOf[js.Any])
+    inline def setIpSetReferenceStatement(value: Input[WebAclRuleStatementIpSetReferenceStatement]): Self = StObject.set(x, "ipSetReferenceStatement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpSetReferenceStatementUndefined: Self = StObject.set(x, "ipSetReferenceStatement", js.undefined)
+    inline def setIpSetReferenceStatementUndefined: Self = StObject.set(x, "ipSetReferenceStatement", js.undefined)
     
-    @scala.inline
-    def setManagedRuleGroupStatement(value: Input[WebAclRuleStatementManagedRuleGroupStatement]): Self = StObject.set(x, "managedRuleGroupStatement", value.asInstanceOf[js.Any])
+    inline def setManagedRuleGroupStatement(value: Input[WebAclRuleStatementManagedRuleGroupStatement]): Self = StObject.set(x, "managedRuleGroupStatement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedRuleGroupStatementUndefined: Self = StObject.set(x, "managedRuleGroupStatement", js.undefined)
+    inline def setManagedRuleGroupStatementUndefined: Self = StObject.set(x, "managedRuleGroupStatement", js.undefined)
     
-    @scala.inline
-    def setNotStatement(value: Input[WebAclRuleStatementNotStatement]): Self = StObject.set(x, "notStatement", value.asInstanceOf[js.Any])
+    inline def setNotStatement(value: Input[WebAclRuleStatementNotStatement]): Self = StObject.set(x, "notStatement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotStatementUndefined: Self = StObject.set(x, "notStatement", js.undefined)
+    inline def setNotStatementUndefined: Self = StObject.set(x, "notStatement", js.undefined)
     
-    @scala.inline
-    def setOrStatement(value: Input[WebAclRuleStatementOrStatement]): Self = StObject.set(x, "orStatement", value.asInstanceOf[js.Any])
+    inline def setOrStatement(value: Input[WebAclRuleStatementOrStatement]): Self = StObject.set(x, "orStatement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrStatementUndefined: Self = StObject.set(x, "orStatement", js.undefined)
+    inline def setOrStatementUndefined: Self = StObject.set(x, "orStatement", js.undefined)
     
-    @scala.inline
-    def setRateBasedStatement(value: Input[WebAclRuleStatementRateBasedStatement]): Self = StObject.set(x, "rateBasedStatement", value.asInstanceOf[js.Any])
+    inline def setRateBasedStatement(value: Input[WebAclRuleStatementRateBasedStatement]): Self = StObject.set(x, "rateBasedStatement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRateBasedStatementUndefined: Self = StObject.set(x, "rateBasedStatement", js.undefined)
+    inline def setRateBasedStatementUndefined: Self = StObject.set(x, "rateBasedStatement", js.undefined)
     
-    @scala.inline
-    def setRegexPatternSetReferenceStatement(value: Input[WebAclRuleStatementRegexPatternSetReferenceStatement]): Self = StObject.set(x, "regexPatternSetReferenceStatement", value.asInstanceOf[js.Any])
+    inline def setRegexPatternSetReferenceStatement(value: Input[WebAclRuleStatementRegexPatternSetReferenceStatement]): Self = StObject.set(x, "regexPatternSetReferenceStatement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegexPatternSetReferenceStatementUndefined: Self = StObject.set(x, "regexPatternSetReferenceStatement", js.undefined)
+    inline def setRegexPatternSetReferenceStatementUndefined: Self = StObject.set(x, "regexPatternSetReferenceStatement", js.undefined)
     
-    @scala.inline
-    def setRuleGroupReferenceStatement(value: Input[WebAclRuleStatementRuleGroupReferenceStatement]): Self = StObject.set(x, "ruleGroupReferenceStatement", value.asInstanceOf[js.Any])
+    inline def setRuleGroupReferenceStatement(value: Input[WebAclRuleStatementRuleGroupReferenceStatement]): Self = StObject.set(x, "ruleGroupReferenceStatement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleGroupReferenceStatementUndefined: Self = StObject.set(x, "ruleGroupReferenceStatement", js.undefined)
+    inline def setRuleGroupReferenceStatementUndefined: Self = StObject.set(x, "ruleGroupReferenceStatement", js.undefined)
     
-    @scala.inline
-    def setSizeConstraintStatement(value: Input[WebAclRuleStatementSizeConstraintStatement]): Self = StObject.set(x, "sizeConstraintStatement", value.asInstanceOf[js.Any])
+    inline def setSizeConstraintStatement(value: Input[WebAclRuleStatementSizeConstraintStatement]): Self = StObject.set(x, "sizeConstraintStatement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeConstraintStatementUndefined: Self = StObject.set(x, "sizeConstraintStatement", js.undefined)
+    inline def setSizeConstraintStatementUndefined: Self = StObject.set(x, "sizeConstraintStatement", js.undefined)
     
-    @scala.inline
-    def setSqliMatchStatement(value: Input[WebAclRuleStatementSqliMatchStatement]): Self = StObject.set(x, "sqliMatchStatement", value.asInstanceOf[js.Any])
+    inline def setSqliMatchStatement(value: Input[WebAclRuleStatementSqliMatchStatement]): Self = StObject.set(x, "sqliMatchStatement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSqliMatchStatementUndefined: Self = StObject.set(x, "sqliMatchStatement", js.undefined)
+    inline def setSqliMatchStatementUndefined: Self = StObject.set(x, "sqliMatchStatement", js.undefined)
     
-    @scala.inline
-    def setXssMatchStatement(value: Input[WebAclRuleStatementXssMatchStatement]): Self = StObject.set(x, "xssMatchStatement", value.asInstanceOf[js.Any])
+    inline def setXssMatchStatement(value: Input[WebAclRuleStatementXssMatchStatement]): Self = StObject.set(x, "xssMatchStatement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXssMatchStatementUndefined: Self = StObject.set(x, "xssMatchStatement", js.undefined)
+    inline def setXssMatchStatementUndefined: Self = StObject.set(x, "xssMatchStatement", js.undefined)
   }
 }

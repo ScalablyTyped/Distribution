@@ -20,25 +20,19 @@ trait Back extends StObject {
 }
 object Back {
   
-  @scala.inline
-  def apply(): Back = {
+  inline def apply(): Back = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Back]
   }
   
-  @scala.inline
-  implicit class BackMutableBuilder[Self <: Back] (val x: Self) extends AnyVal {
+  extension [Self <: Back](x: Self) {
     
-    @scala.inline
-    def setBack(value: String): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
+    inline def setBack(value: String): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackUndefined: Self = StObject.set(x, "back", js.undefined)
+    inline def setBackUndefined: Self = StObject.set(x, "back", js.undefined)
     
-    @scala.inline
-    def setFront(value: String): Self = StObject.set(x, "front", value.asInstanceOf[js.Any])
+    inline def setFront(value: String): Self = StObject.set(x, "front", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrontUndefined: Self = StObject.set(x, "front", js.undefined)
+    inline def setFrontUndefined: Self = StObject.set(x, "front", js.undefined)
   }
 }

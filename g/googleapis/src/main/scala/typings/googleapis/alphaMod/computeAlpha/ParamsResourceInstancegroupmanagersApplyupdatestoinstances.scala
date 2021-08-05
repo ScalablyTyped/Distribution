@@ -39,43 +39,31 @@ trait ParamsResourceInstancegroupmanagersApplyupdatestoinstances
 }
 object ParamsResourceInstancegroupmanagersApplyupdatestoinstances {
   
-  @scala.inline
-  def apply(): ParamsResourceInstancegroupmanagersApplyupdatestoinstances = {
+  inline def apply(): ParamsResourceInstancegroupmanagersApplyupdatestoinstances = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceInstancegroupmanagersApplyupdatestoinstances]
   }
   
-  @scala.inline
-  implicit class ParamsResourceInstancegroupmanagersApplyupdatestoinstancesMutableBuilder[Self <: ParamsResourceInstancegroupmanagersApplyupdatestoinstances] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceInstancegroupmanagersApplyupdatestoinstances](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setInstanceGroupManager(value: String): Self = StObject.set(x, "instanceGroupManager", value.asInstanceOf[js.Any])
+    inline def setInstanceGroupManager(value: String): Self = StObject.set(x, "instanceGroupManager", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceGroupManagerUndefined: Self = StObject.set(x, "instanceGroupManager", js.undefined)
+    inline def setInstanceGroupManagerUndefined: Self = StObject.set(x, "instanceGroupManager", js.undefined)
     
-    @scala.inline
-    def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+    inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaInstanceGroupManagersApplyUpdatesRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaInstanceGroupManagersApplyUpdatesRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
-    @scala.inline
-    def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+    inline def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
+    inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }
 }

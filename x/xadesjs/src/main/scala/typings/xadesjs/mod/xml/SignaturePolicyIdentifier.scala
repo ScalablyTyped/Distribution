@@ -13,6 +13,5 @@ class SignaturePolicyIdentifier ()
   extends typings.xadesjs.xmlMod.SignaturePolicyIdentifier
 object SignaturePolicyIdentifier {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.SignaturePolicyIdentifier] = ^.asInstanceOf[js.Dynamic].selectDynamic("SignaturePolicyIdentifier").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.SignaturePolicyIdentifier]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.SignaturePolicyIdentifier] = ^.asInstanceOf[js.Dynamic].selectDynamic("SignaturePolicyIdentifier").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.SignaturePolicyIdentifier]]
 }

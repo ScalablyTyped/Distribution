@@ -14,16 +14,13 @@ trait PickImplstorageMethod extends StObject {
 }
 object PickImplstorageMethod {
   
-  @scala.inline
-  def apply(storageMethod: cookie | localstorage | sessionstorage): PickImplstorageMethod = {
+  inline def apply(storageMethod: cookie | localstorage | sessionstorage): PickImplstorageMethod = {
     val __obj = js.Dynamic.literal(storageMethod = storageMethod.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplstorageMethod]
   }
   
-  @scala.inline
-  implicit class PickImplstorageMethodMutableBuilder[Self <: PickImplstorageMethod] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplstorageMethod](x: Self) {
     
-    @scala.inline
-    def setStorageMethod(value: cookie | localstorage | sessionstorage): Self = StObject.set(x, "storageMethod", value.asInstanceOf[js.Any])
+    inline def setStorageMethod(value: cookie | localstorage | sessionstorage): Self = StObject.set(x, "storageMethod", value.asInstanceOf[js.Any])
   }
 }

@@ -11,22 +11,17 @@ trait ResourcePolicyWeeklyCycle extends StObject {
 }
 object ResourcePolicyWeeklyCycle {
   
-  @scala.inline
-  def apply(): ResourcePolicyWeeklyCycle = {
+  inline def apply(): ResourcePolicyWeeklyCycle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourcePolicyWeeklyCycle]
   }
   
-  @scala.inline
-  implicit class ResourcePolicyWeeklyCycleMutableBuilder[Self <: ResourcePolicyWeeklyCycle] (val x: Self) extends AnyVal {
+  extension [Self <: ResourcePolicyWeeklyCycle](x: Self) {
     
-    @scala.inline
-    def setDayOfWeeks(value: js.Array[ResourcePolicyWeeklyCycleDayOfWeek]): Self = StObject.set(x, "dayOfWeeks", value.asInstanceOf[js.Any])
+    inline def setDayOfWeeks(value: js.Array[ResourcePolicyWeeklyCycleDayOfWeek]): Self = StObject.set(x, "dayOfWeeks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayOfWeeksUndefined: Self = StObject.set(x, "dayOfWeeks", js.undefined)
+    inline def setDayOfWeeksUndefined: Self = StObject.set(x, "dayOfWeeks", js.undefined)
     
-    @scala.inline
-    def setDayOfWeeksVarargs(value: ResourcePolicyWeeklyCycleDayOfWeek*): Self = StObject.set(x, "dayOfWeeks", js.Array(value :_*))
+    inline def setDayOfWeeksVarargs(value: ResourcePolicyWeeklyCycleDayOfWeek*): Self = StObject.set(x, "dayOfWeeks", js.Array(value :_*))
   }
 }

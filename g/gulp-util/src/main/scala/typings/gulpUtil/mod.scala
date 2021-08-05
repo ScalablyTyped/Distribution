@@ -101,49 +101,32 @@ object mod {
     var stack_PluginError: String = js.native
   }
   
-  @scala.inline
-  def beep(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beep")().asInstanceOf[Unit]
+  inline def beep(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beep")().asInstanceOf[Unit]
   
-  @scala.inline
-  def buffer(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")().asInstanceOf[ReadWriteStream]
-  @scala.inline
-  def buffer(cb: js.Function2[/* err */ Error, /* data */ js.Array[js.Any], Unit]): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(cb.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def buffer(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")().asInstanceOf[ReadWriteStream]
+  inline def buffer(cb: js.Function2[/* err */ Error, /* data */ js.Array[js.Any], Unit]): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(cb.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   
   @JSImport("gulp-util", "colors")
   @js.native
   val colors: Typeof = js.native
   
-  @scala.inline
-  def combine(streams: ReadWriteStream*): js.Function0[ReadWriteStream] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(streams.asInstanceOf[js.Any]).asInstanceOf[js.Function0[ReadWriteStream]]
-  @scala.inline
-  def combine(streams: js.Array[ReadWriteStream]): js.Function0[ReadWriteStream] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(streams.asInstanceOf[js.Any]).asInstanceOf[js.Function0[ReadWriteStream]]
+  inline def combine(streams: ReadWriteStream*): js.Function0[ReadWriteStream] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(streams.asInstanceOf[js.Any]).asInstanceOf[js.Function0[ReadWriteStream]]
+  inline def combine(streams: js.Array[ReadWriteStream]): js.Function0[ReadWriteStream] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(streams.asInstanceOf[js.Any]).asInstanceOf[js.Function0[ReadWriteStream]]
   
   object date {
     
-    @scala.inline
-    def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-    @scala.inline
-    def apply(now: String): js.Any = ^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    @scala.inline
-    def apply(now: String, mask: String): js.Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def apply(now: String, mask: String, convertLocalTimeToUTC: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], convertLocalTimeToUTC.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def apply(now: String, mask: Unit, convertLocalTimeToUTC: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], convertLocalTimeToUTC.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def apply(now: Unit, mask: String): js.Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def apply(now: Unit, mask: String, convertLocalTimeToUTC: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], convertLocalTimeToUTC.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def apply(now: Unit, mask: Unit, convertLocalTimeToUTC: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], convertLocalTimeToUTC.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def apply(now: Date): js.Any = ^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    @scala.inline
-    def apply(now: Date, mask: String): js.Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def apply(now: Date, mask: String, convertLocalTimeToUTC: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], convertLocalTimeToUTC.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def apply(now: Date, mask: Unit, convertLocalTimeToUTC: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], convertLocalTimeToUTC.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+    inline def apply(now: String): js.Any = ^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def apply(now: String, mask: String): js.Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def apply(now: String, mask: String, convertLocalTimeToUTC: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], convertLocalTimeToUTC.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def apply(now: String, mask: Unit, convertLocalTimeToUTC: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], convertLocalTimeToUTC.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def apply(now: Unit, mask: String): js.Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def apply(now: Unit, mask: String, convertLocalTimeToUTC: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], convertLocalTimeToUTC.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def apply(now: Unit, mask: Unit, convertLocalTimeToUTC: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], convertLocalTimeToUTC.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def apply(now: Date): js.Any = ^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def apply(now: Date, mask: String): js.Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def apply(now: Date, mask: String, convertLocalTimeToUTC: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], convertLocalTimeToUTC.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def apply(now: Date, mask: Unit, convertLocalTimeToUTC: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], convertLocalTimeToUTC.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     @JSImport("gulp-util", "date")
     @js.native
@@ -152,62 +135,42 @@ object mod {
     @JSImport("gulp-util", "date.masks")
     @js.native
     def masks: js.Any = js.native
-    @scala.inline
-    def masks_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("masks")(x.asInstanceOf[js.Any])
+    inline def masks_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("masks")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("gulp-util", "env")
   @js.native
   val env: js.Any = js.native
   
-  @scala.inline
-  def isBuffer(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBuffer")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isBuffer(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBuffer")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isNull(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNull")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isNull(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNull")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isStream(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStream")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isStream(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStream")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("gulp-util", "linefeed")
   @js.native
   val linefeed: String = js.native
   
-  @scala.inline
-  def log(message: js.Any, optionalParams: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(message.asInstanceOf[js.Any], optionalParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def log(message: Unit, optionalParams: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(message.asInstanceOf[js.Any], optionalParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def log(message: js.Any, optionalParams: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(message.asInstanceOf[js.Any], optionalParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def log(message: Unit, optionalParams: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(message.asInstanceOf[js.Any], optionalParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def noop(): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")().asInstanceOf[Transform]
-  @scala.inline
-  def noop(opts: Unit, transform: Unit, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].applyDynamic("noop")(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
-  @scala.inline
-  def noop(opts: Unit, transform: TransformFunction): Transform = (^.asInstanceOf[js.Dynamic].applyDynamic("noop")(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Transform]
-  @scala.inline
-  def noop(opts: Unit, transform: TransformFunction, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].applyDynamic("noop")(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
-  @scala.inline
-  def noop(opts: DuplexOptions): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")(opts.asInstanceOf[js.Any]).asInstanceOf[Transform]
-  @scala.inline
-  def noop(opts: DuplexOptions, transform: Unit, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].applyDynamic("noop")(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
-  @scala.inline
-  def noop(opts: DuplexOptions, transform: TransformFunction): Transform = (^.asInstanceOf[js.Dynamic].applyDynamic("noop")(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Transform]
-  @scala.inline
-  def noop(opts: DuplexOptions, transform: TransformFunction, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].applyDynamic("noop")(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
-  @scala.inline
-  def noop(transform: Unit, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].applyDynamic("noop")(transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
-  @scala.inline
-  def noop(transform: TransformFunction): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")(transform.asInstanceOf[js.Any]).asInstanceOf[Transform]
-  @scala.inline
-  def noop(transform: TransformFunction, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].applyDynamic("noop")(transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  inline def noop(): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")().asInstanceOf[Transform]
+  inline def noop(opts: Unit, transform: Unit, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].applyDynamic("noop")(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  inline def noop(opts: Unit, transform: TransformFunction): Transform = (^.asInstanceOf[js.Dynamic].applyDynamic("noop")(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  inline def noop(opts: Unit, transform: TransformFunction, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].applyDynamic("noop")(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  inline def noop(opts: DuplexOptions): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")(opts.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  inline def noop(opts: DuplexOptions, transform: Unit, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].applyDynamic("noop")(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  inline def noop(opts: DuplexOptions, transform: TransformFunction): Transform = (^.asInstanceOf[js.Dynamic].applyDynamic("noop")(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  inline def noop(opts: DuplexOptions, transform: TransformFunction, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].applyDynamic("noop")(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  inline def noop(transform: Unit, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].applyDynamic("noop")(transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  inline def noop(transform: TransformFunction): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")(transform.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  inline def noop(transform: TransformFunction, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].applyDynamic("noop")(transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
   
-  @scala.inline
-  def replaceExtension(npath: String, ext: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceExtension")(npath.asInstanceOf[js.Any], ext.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def replaceExtension(npath: String, ext: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceExtension")(npath.asInstanceOf[js.Any], ext.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def template(tmpl: String): js.Function1[/* opt */ File, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("template")(tmpl.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* opt */ File, String]]
-  @scala.inline
-  def template(tmpl: String, opt: File): String = (^.asInstanceOf[js.Dynamic].applyDynamic("template")(tmpl.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def template(tmpl: String): js.Function1[/* opt */ File, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("template")(tmpl.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* opt */ File, String]]
+  inline def template(tmpl: String, opt: File): String = (^.asInstanceOf[js.Dynamic].applyDynamic("template")(tmpl.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait PluginErrorOptions extends StObject {
     
@@ -250,68 +213,48 @@ object mod {
   }
   object PluginErrorOptions {
     
-    @scala.inline
-    def apply(): PluginErrorOptions = {
+    inline def apply(): PluginErrorOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PluginErrorOptions]
     }
     
-    @scala.inline
-    implicit class PluginErrorOptionsMutableBuilder[Self <: PluginErrorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PluginErrorOptions](x: Self) {
       
-      @scala.inline
-      def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+      inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
       
-      @scala.inline
-      def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+      inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
+      inline def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
       
-      @scala.inline
-      def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPlugin(value: String): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+      inline def setPlugin(value: String): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
+      inline def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
       
-      @scala.inline
-      def setShowProperties(value: Boolean): Self = StObject.set(x, "showProperties", value.asInstanceOf[js.Any])
+      inline def setShowProperties(value: Boolean): Self = StObject.set(x, "showProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowPropertiesUndefined: Self = StObject.set(x, "showProperties", js.undefined)
+      inline def setShowPropertiesUndefined: Self = StObject.set(x, "showProperties", js.undefined)
       
-      @scala.inline
-      def setShowStack(value: Boolean): Self = StObject.set(x, "showStack", value.asInstanceOf[js.Any])
+      inline def setShowStack(value: Boolean): Self = StObject.set(x, "showStack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowStackUndefined: Self = StObject.set(x, "showStack", js.undefined)
+      inline def setShowStackUndefined: Self = StObject.set(x, "showStack", js.undefined)
       
-      @scala.inline
-      def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+      inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     }
   }
 }

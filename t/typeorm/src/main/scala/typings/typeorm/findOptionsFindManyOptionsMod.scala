@@ -23,26 +23,20 @@ object findOptionsFindManyOptionsMod {
   }
   object FindManyOptions {
     
-    @scala.inline
-    def apply[Entity](): FindManyOptions[Entity] = {
+    inline def apply[Entity](): FindManyOptions[Entity] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FindManyOptions[Entity]]
     }
     
-    @scala.inline
-    implicit class FindManyOptionsMutableBuilder[Self <: FindManyOptions[?], Entity] (val x: Self & FindManyOptions[Entity]) extends AnyVal {
+    extension [Self <: FindManyOptions[?], Entity](x: Self & FindManyOptions[Entity]) {
       
-      @scala.inline
-      def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+      inline def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+      inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
       
-      @scala.inline
-      def setTake(value: Double): Self = StObject.set(x, "take", value.asInstanceOf[js.Any])
+      inline def setTake(value: Double): Self = StObject.set(x, "take", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTakeUndefined: Self = StObject.set(x, "take", js.undefined)
+      inline def setTakeUndefined: Self = StObject.set(x, "take", js.undefined)
     }
   }
 }

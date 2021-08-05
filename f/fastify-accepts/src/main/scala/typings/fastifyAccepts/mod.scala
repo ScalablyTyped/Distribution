@@ -10,8 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
+  inline def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
   
   @JSImport("fastify-accepts", JSImport.Namespace)
   @js.native
@@ -23,20 +22,16 @@ object mod {
   }
   object FastifyAcceptsOptions {
     
-    @scala.inline
-    def apply(): FastifyAcceptsOptions = {
+    inline def apply(): FastifyAcceptsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FastifyAcceptsOptions]
     }
     
-    @scala.inline
-    implicit class FastifyAcceptsOptionsMutableBuilder[Self <: FastifyAcceptsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FastifyAcceptsOptions](x: Self) {
       
-      @scala.inline
-      def setDecorateReplyToo(value: Boolean): Self = StObject.set(x, "decorateReplyToo", value.asInstanceOf[js.Any])
+      inline def setDecorateReplyToo(value: Boolean): Self = StObject.set(x, "decorateReplyToo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecorateReplyTooUndefined: Self = StObject.set(x, "decorateReplyToo", js.undefined)
+      inline def setDecorateReplyTooUndefined: Self = StObject.set(x, "decorateReplyToo", js.undefined)
     }
   }
   
@@ -95,8 +90,7 @@ object mod {
     }
     object FastifyReply {
       
-      @scala.inline
-      def apply[HttpResponse](
+      inline def apply[HttpResponse](
         requestAccepts: () => Accepts,
         requestCharset: FnCall,
         requestCharsets: FnCall,
@@ -111,35 +105,25 @@ object mod {
         __obj.asInstanceOf[FastifyReply[HttpResponse]]
       }
       
-      @scala.inline
-      implicit class FastifyReplyMutableBuilder[Self <: FastifyReply[?], HttpResponse] (val x: Self & FastifyReply[HttpResponse]) extends AnyVal {
+      extension [Self <: FastifyReply[?], HttpResponse](x: Self & FastifyReply[HttpResponse]) {
         
-        @scala.inline
-        def setRequestAccepts(value: () => Accepts): Self = StObject.set(x, "requestAccepts", js.Any.fromFunction0(value))
+        inline def setRequestAccepts(value: () => Accepts): Self = StObject.set(x, "requestAccepts", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setRequestCharset(value: FnCall): Self = StObject.set(x, "requestCharset", value.asInstanceOf[js.Any])
+        inline def setRequestCharset(value: FnCall): Self = StObject.set(x, "requestCharset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRequestCharsets(value: FnCall): Self = StObject.set(x, "requestCharsets", value.asInstanceOf[js.Any])
+        inline def setRequestCharsets(value: FnCall): Self = StObject.set(x, "requestCharsets", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRequestEncoding(value: FnCall): Self = StObject.set(x, "requestEncoding", value.asInstanceOf[js.Any])
+        inline def setRequestEncoding(value: FnCall): Self = StObject.set(x, "requestEncoding", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRequestEncodings(value: FnCall): Self = StObject.set(x, "requestEncodings", value.asInstanceOf[js.Any])
+        inline def setRequestEncodings(value: FnCall): Self = StObject.set(x, "requestEncodings", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRequestLanguage(value: FnCall): Self = StObject.set(x, "requestLanguage", value.asInstanceOf[js.Any])
+        inline def setRequestLanguage(value: FnCall): Self = StObject.set(x, "requestLanguage", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRequestLanguages(value: FnCall): Self = StObject.set(x, "requestLanguages", value.asInstanceOf[js.Any])
+        inline def setRequestLanguages(value: FnCall): Self = StObject.set(x, "requestLanguages", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRequestType(value: FnCallTypes): Self = StObject.set(x, "requestType", value.asInstanceOf[js.Any])
+        inline def setRequestType(value: FnCallTypes): Self = StObject.set(x, "requestType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRequestTypes(value: FnCallTypes): Self = StObject.set(x, "requestTypes", value.asInstanceOf[js.Any])
+        inline def setRequestTypes(value: FnCallTypes): Self = StObject.set(x, "requestTypes", value.asInstanceOf[js.Any])
       }
     }
     
@@ -195,8 +179,7 @@ object mod {
     }
     object FastifyRequest {
       
-      @scala.inline
-      def apply[HttpRequest](
+      inline def apply[HttpRequest](
         accepts: () => Accepts,
         charset: FnCall,
         charsets: FnCall,
@@ -212,35 +195,25 @@ object mod {
         __obj.asInstanceOf[FastifyRequest[HttpRequest]]
       }
       
-      @scala.inline
-      implicit class FastifyRequestMutableBuilder[Self <: FastifyRequest[?], HttpRequest] (val x: Self & FastifyRequest[HttpRequest]) extends AnyVal {
+      extension [Self <: FastifyRequest[?], HttpRequest](x: Self & FastifyRequest[HttpRequest]) {
         
-        @scala.inline
-        def setAccepts(value: () => Accepts): Self = StObject.set(x, "accepts", js.Any.fromFunction0(value))
+        inline def setAccepts(value: () => Accepts): Self = StObject.set(x, "accepts", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setCharset(value: FnCall): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
+        inline def setCharset(value: FnCall): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCharsets(value: FnCall): Self = StObject.set(x, "charsets", value.asInstanceOf[js.Any])
+        inline def setCharsets(value: FnCall): Self = StObject.set(x, "charsets", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEncoding(value: FnCall): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+        inline def setEncoding(value: FnCall): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEncodings(value: FnCall): Self = StObject.set(x, "encodings", value.asInstanceOf[js.Any])
+        inline def setEncodings(value: FnCall): Self = StObject.set(x, "encodings", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLanguage(value: FnCall): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+        inline def setLanguage(value: FnCall): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLanguages(value: FnCall): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
+        inline def setLanguages(value: FnCall): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setType(value: FnCallTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: FnCallTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypes(value: FnCallTypes): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+        inline def setTypes(value: FnCallTypes): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
       }
     }
   }

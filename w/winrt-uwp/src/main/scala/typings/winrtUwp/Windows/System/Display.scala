@@ -18,20 +18,16 @@ object Display {
   }
   object DisplayRequest {
     
-    @scala.inline
-    def apply(requestActive: () => Unit, requestRelease: () => Unit): DisplayRequest = {
+    inline def apply(requestActive: () => Unit, requestRelease: () => Unit): DisplayRequest = {
       val __obj = js.Dynamic.literal(requestActive = js.Any.fromFunction0(requestActive), requestRelease = js.Any.fromFunction0(requestRelease))
       __obj.asInstanceOf[DisplayRequest]
     }
     
-    @scala.inline
-    implicit class DisplayRequestMutableBuilder[Self <: DisplayRequest] (val x: Self) extends AnyVal {
+    extension [Self <: DisplayRequest](x: Self) {
       
-      @scala.inline
-      def setRequestActive(value: () => Unit): Self = StObject.set(x, "requestActive", js.Any.fromFunction0(value))
+      inline def setRequestActive(value: () => Unit): Self = StObject.set(x, "requestActive", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRequestRelease(value: () => Unit): Self = StObject.set(x, "requestRelease", js.Any.fromFunction0(value))
+      inline def setRequestRelease(value: () => Unit): Self = StObject.set(x, "requestRelease", js.Any.fromFunction0(value))
     }
   }
 }

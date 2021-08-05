@@ -161,17 +161,14 @@ object ExtendedExecution {
     }
     object ExtendedExecutionForegroundRevokedEventArgs {
       
-      @scala.inline
-      def apply(reason: ExtendedExecutionForegroundRevokedReason): ExtendedExecutionForegroundRevokedEventArgs = {
+      inline def apply(reason: ExtendedExecutionForegroundRevokedReason): ExtendedExecutionForegroundRevokedEventArgs = {
         val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any])
         __obj.asInstanceOf[ExtendedExecutionForegroundRevokedEventArgs]
       }
       
-      @scala.inline
-      implicit class ExtendedExecutionForegroundRevokedEventArgsMutableBuilder[Self <: ExtendedExecutionForegroundRevokedEventArgs] (val x: Self) extends AnyVal {
+      extension [Self <: ExtendedExecutionForegroundRevokedEventArgs](x: Self) {
         
-        @scala.inline
-        def setReason(value: ExtendedExecutionForegroundRevokedReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+        inline def setReason(value: ExtendedExecutionForegroundRevokedReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       }
     }
     
@@ -218,17 +215,14 @@ object ExtendedExecution {
   }
   object ExtendedExecutionRevokedEventArgs {
     
-    @scala.inline
-    def apply(reason: ExtendedExecutionRevokedReason): ExtendedExecutionRevokedEventArgs = {
+    inline def apply(reason: ExtendedExecutionRevokedReason): ExtendedExecutionRevokedEventArgs = {
       val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExtendedExecutionRevokedEventArgs]
     }
     
-    @scala.inline
-    implicit class ExtendedExecutionRevokedEventArgsMutableBuilder[Self <: ExtendedExecutionRevokedEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ExtendedExecutionRevokedEventArgs](x: Self) {
       
-      @scala.inline
-      def setReason(value: ExtendedExecutionRevokedReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      inline def setReason(value: ExtendedExecutionRevokedReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     }
   }
   

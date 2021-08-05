@@ -41,82 +41,57 @@ trait Trust extends StObject {
 }
 object Trust {
   
-  @scala.inline
-  def apply(): Trust = {
+  inline def apply(): Trust = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Trust]
   }
   
-  @scala.inline
-  implicit class TrustMutableBuilder[Self <: Trust] (val x: Self) extends AnyVal {
+  extension [Self <: Trust](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setLastTrustHeartbeatTime(value: String): Self = StObject.set(x, "lastTrustHeartbeatTime", value.asInstanceOf[js.Any])
+    inline def setLastTrustHeartbeatTime(value: String): Self = StObject.set(x, "lastTrustHeartbeatTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastTrustHeartbeatTimeUndefined: Self = StObject.set(x, "lastTrustHeartbeatTime", js.undefined)
+    inline def setLastTrustHeartbeatTimeUndefined: Self = StObject.set(x, "lastTrustHeartbeatTime", js.undefined)
     
-    @scala.inline
-    def setSelectiveAuthentication(value: Boolean): Self = StObject.set(x, "selectiveAuthentication", value.asInstanceOf[js.Any])
+    inline def setSelectiveAuthentication(value: Boolean): Self = StObject.set(x, "selectiveAuthentication", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectiveAuthenticationUndefined: Self = StObject.set(x, "selectiveAuthentication", js.undefined)
+    inline def setSelectiveAuthenticationUndefined: Self = StObject.set(x, "selectiveAuthentication", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateDescription(value: String): Self = StObject.set(x, "stateDescription", value.asInstanceOf[js.Any])
+    inline def setStateDescription(value: String): Self = StObject.set(x, "stateDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateDescriptionUndefined: Self = StObject.set(x, "stateDescription", js.undefined)
+    inline def setStateDescriptionUndefined: Self = StObject.set(x, "stateDescription", js.undefined)
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setTargetDnsIpAddresses(value: js.Array[String]): Self = StObject.set(x, "targetDnsIpAddresses", value.asInstanceOf[js.Any])
+    inline def setTargetDnsIpAddresses(value: js.Array[String]): Self = StObject.set(x, "targetDnsIpAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetDnsIpAddressesUndefined: Self = StObject.set(x, "targetDnsIpAddresses", js.undefined)
+    inline def setTargetDnsIpAddressesUndefined: Self = StObject.set(x, "targetDnsIpAddresses", js.undefined)
     
-    @scala.inline
-    def setTargetDnsIpAddressesVarargs(value: String*): Self = StObject.set(x, "targetDnsIpAddresses", js.Array(value :_*))
+    inline def setTargetDnsIpAddressesVarargs(value: String*): Self = StObject.set(x, "targetDnsIpAddresses", js.Array(value :_*))
     
-    @scala.inline
-    def setTargetDomainName(value: String): Self = StObject.set(x, "targetDomainName", value.asInstanceOf[js.Any])
+    inline def setTargetDomainName(value: String): Self = StObject.set(x, "targetDomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetDomainNameUndefined: Self = StObject.set(x, "targetDomainName", js.undefined)
+    inline def setTargetDomainNameUndefined: Self = StObject.set(x, "targetDomainName", js.undefined)
     
-    @scala.inline
-    def setTrustDirection(value: String): Self = StObject.set(x, "trustDirection", value.asInstanceOf[js.Any])
+    inline def setTrustDirection(value: String): Self = StObject.set(x, "trustDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrustDirectionUndefined: Self = StObject.set(x, "trustDirection", js.undefined)
+    inline def setTrustDirectionUndefined: Self = StObject.set(x, "trustDirection", js.undefined)
     
-    @scala.inline
-    def setTrustHandshakeSecret(value: String): Self = StObject.set(x, "trustHandshakeSecret", value.asInstanceOf[js.Any])
+    inline def setTrustHandshakeSecret(value: String): Self = StObject.set(x, "trustHandshakeSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrustHandshakeSecretUndefined: Self = StObject.set(x, "trustHandshakeSecret", js.undefined)
+    inline def setTrustHandshakeSecretUndefined: Self = StObject.set(x, "trustHandshakeSecret", js.undefined)
     
-    @scala.inline
-    def setTrustType(value: String): Self = StObject.set(x, "trustType", value.asInstanceOf[js.Any])
+    inline def setTrustType(value: String): Self = StObject.set(x, "trustType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrustTypeUndefined: Self = StObject.set(x, "trustType", js.undefined)
+    inline def setTrustTypeUndefined: Self = StObject.set(x, "trustType", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

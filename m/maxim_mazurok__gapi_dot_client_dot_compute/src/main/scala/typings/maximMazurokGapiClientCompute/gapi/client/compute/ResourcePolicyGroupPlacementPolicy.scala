@@ -17,31 +17,23 @@ trait ResourcePolicyGroupPlacementPolicy extends StObject {
 }
 object ResourcePolicyGroupPlacementPolicy {
   
-  @scala.inline
-  def apply(): ResourcePolicyGroupPlacementPolicy = {
+  inline def apply(): ResourcePolicyGroupPlacementPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourcePolicyGroupPlacementPolicy]
   }
   
-  @scala.inline
-  implicit class ResourcePolicyGroupPlacementPolicyMutableBuilder[Self <: ResourcePolicyGroupPlacementPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: ResourcePolicyGroupPlacementPolicy](x: Self) {
     
-    @scala.inline
-    def setAvailabilityDomainCount(value: Double): Self = StObject.set(x, "availabilityDomainCount", value.asInstanceOf[js.Any])
+    inline def setAvailabilityDomainCount(value: Double): Self = StObject.set(x, "availabilityDomainCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityDomainCountUndefined: Self = StObject.set(x, "availabilityDomainCount", js.undefined)
+    inline def setAvailabilityDomainCountUndefined: Self = StObject.set(x, "availabilityDomainCount", js.undefined)
     
-    @scala.inline
-    def setCollocation(value: String): Self = StObject.set(x, "collocation", value.asInstanceOf[js.Any])
+    inline def setCollocation(value: String): Self = StObject.set(x, "collocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollocationUndefined: Self = StObject.set(x, "collocation", js.undefined)
+    inline def setCollocationUndefined: Self = StObject.set(x, "collocation", js.undefined)
     
-    @scala.inline
-    def setVmCount(value: Double): Self = StObject.set(x, "vmCount", value.asInstanceOf[js.Any])
+    inline def setVmCount(value: Double): Self = StObject.set(x, "vmCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmCountUndefined: Self = StObject.set(x, "vmCount", js.undefined)
+    inline def setVmCountUndefined: Self = StObject.set(x, "vmCount", js.undefined)
   }
 }

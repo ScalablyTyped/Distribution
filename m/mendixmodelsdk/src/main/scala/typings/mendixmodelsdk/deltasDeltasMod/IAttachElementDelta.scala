@@ -30,28 +30,21 @@ trait IAttachElementDelta
 }
 object IAttachElementDelta {
   
-  @scala.inline
-  def apply(elementId: String, newParentId: String, newParentPropertyName: String, unitId: String): IAttachElementDelta = {
+  inline def apply(elementId: String, newParentId: String, newParentPropertyName: String, unitId: String): IAttachElementDelta = {
     val __obj = js.Dynamic.literal(deltaType = "ATTACH_ELEMENT", elementId = elementId.asInstanceOf[js.Any], newParentId = newParentId.asInstanceOf[js.Any], newParentPropertyName = newParentPropertyName.asInstanceOf[js.Any], unitId = unitId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAttachElementDelta]
   }
   
-  @scala.inline
-  implicit class IAttachElementDeltaMutableBuilder[Self <: IAttachElementDelta] (val x: Self) extends AnyVal {
+  extension [Self <: IAttachElementDelta](x: Self) {
     
-    @scala.inline
-    def setDeltaType(value: ATTACH_ELEMENT): Self = StObject.set(x, "deltaType", value.asInstanceOf[js.Any])
+    inline def setDeltaType(value: ATTACH_ELEMENT): Self = StObject.set(x, "deltaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
+    inline def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewIndexUndefined: Self = StObject.set(x, "newIndex", js.undefined)
+    inline def setNewIndexUndefined: Self = StObject.set(x, "newIndex", js.undefined)
     
-    @scala.inline
-    def setNewParentId(value: String): Self = StObject.set(x, "newParentId", value.asInstanceOf[js.Any])
+    inline def setNewParentId(value: String): Self = StObject.set(x, "newParentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewParentPropertyName(value: String): Self = StObject.set(x, "newParentPropertyName", value.asInstanceOf[js.Any])
+    inline def setNewParentPropertyName(value: String): Self = StObject.set(x, "newParentPropertyName", value.asInstanceOf[js.Any])
   }
 }

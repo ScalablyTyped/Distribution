@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InferenceClassificationType extends StObject
 object InferenceClassificationType {
   
-  @scala.inline
-  def focused: typings.microsoftGraph.microsoftGraphStrings.focused = "focused".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.focused]
+  inline def focused: typings.microsoftGraph.microsoftGraphStrings.focused = "focused".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.focused]
   
-  @scala.inline
-  def other: typings.microsoftGraph.microsoftGraphStrings.other = "other".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.other]
+  inline def other: typings.microsoftGraph.microsoftGraphStrings.other = "other".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.other]
 }

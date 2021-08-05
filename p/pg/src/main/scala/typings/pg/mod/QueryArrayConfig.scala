@@ -13,16 +13,13 @@ trait QueryArrayConfig[I /* <: js.Array[js.Any] */]
 }
 object QueryArrayConfig {
   
-  @scala.inline
-  def apply[I /* <: js.Array[js.Any] */](text: String): QueryArrayConfig[I] = {
+  inline def apply[I /* <: js.Array[js.Any] */](text: String): QueryArrayConfig[I] = {
     val __obj = js.Dynamic.literal(rowMode = "array", text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryArrayConfig[I]]
   }
   
-  @scala.inline
-  implicit class QueryArrayConfigMutableBuilder[Self <: QueryArrayConfig[?], I /* <: js.Array[js.Any] */] (val x: Self & QueryArrayConfig[I]) extends AnyVal {
+  extension [Self <: QueryArrayConfig[?], I /* <: js.Array[js.Any] */](x: Self & QueryArrayConfig[I]) {
     
-    @scala.inline
-    def setRowMode(value: array): Self = StObject.set(x, "rowMode", value.asInstanceOf[js.Any])
+    inline def setRowMode(value: array): Self = StObject.set(x, "rowMode", value.asInstanceOf[js.Any])
   }
 }

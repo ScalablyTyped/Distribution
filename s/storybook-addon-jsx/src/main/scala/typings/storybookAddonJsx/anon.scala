@@ -22,19 +22,16 @@ object anon {
   }
   object AddWithJSX {
     
-    @scala.inline
-    def apply[StoryFnReturnType](
+    inline def apply[StoryFnReturnType](
       addWithJSX: (/* kind */ String, /* fn */ js.Function0[ReactNode], /* options */ js.UndefOr[AddonParameters]) => StoryApi[StoryFnReturnType]
     ): AddWithJSX[StoryFnReturnType] = {
       val __obj = js.Dynamic.literal(addWithJSX = js.Any.fromFunction3(addWithJSX))
       __obj.asInstanceOf[AddWithJSX[StoryFnReturnType]]
     }
     
-    @scala.inline
-    implicit class AddWithJSXMutableBuilder[Self <: AddWithJSX[?], StoryFnReturnType] (val x: Self & AddWithJSX[StoryFnReturnType]) extends AnyVal {
+    extension [Self <: AddWithJSX[?], StoryFnReturnType](x: Self & AddWithJSX[StoryFnReturnType]) {
       
-      @scala.inline
-      def setAddWithJSX(
+      inline def setAddWithJSX(
         value: (/* kind */ String, /* fn */ js.Function0[ReactNode], /* options */ js.UndefOr[AddonParameters]) => StoryApi[StoryFnReturnType]
       ): Self = StObject.set(x, "addWithJSX", js.Any.fromFunction3(value))
     }
@@ -58,41 +55,30 @@ object anon {
   }
   object ParametersjsxAddonParamet {
     
-    @scala.inline
-    def apply(jsx: AddonParameters): ParametersjsxAddonParamet = {
+    inline def apply(jsx: AddonParameters): ParametersjsxAddonParamet = {
       val __obj = js.Dynamic.literal(jsx = jsx.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParametersjsxAddonParamet]
     }
     
-    @scala.inline
-    implicit class ParametersjsxAddonParametMutableBuilder[Self <: ParametersjsxAddonParamet] (val x: Self) extends AnyVal {
+    extension [Self <: ParametersjsxAddonParamet](x: Self) {
       
-      @scala.inline
-      def setDocsOnly(value: Boolean): Self = StObject.set(x, "docsOnly", value.asInstanceOf[js.Any])
+      inline def setDocsOnly(value: Boolean): Self = StObject.set(x, "docsOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocsOnlyUndefined: Self = StObject.set(x, "docsOnly", js.undefined)
+      inline def setDocsOnlyUndefined: Self = StObject.set(x, "docsOnly", js.undefined)
       
-      @scala.inline
-      def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+      inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
       
-      @scala.inline
-      def setJsx(value: AddonParameters): Self = StObject.set(x, "jsx", value.asInstanceOf[js.Any])
+      inline def setJsx(value: AddonParameters): Self = StObject.set(x, "jsx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayout(value: centered | fullscreen | padded | none): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: centered | fullscreen | padded | none): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+      inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
       
-      @scala.inline
-      def setOptions(value: OptionsParameter): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: OptionsParameter): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     }
   }
 }

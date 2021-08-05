@@ -12,6 +12,5 @@ object superClassMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getSuperClassDeclarations(classDecl: ClassDeclaration, classMetadataMap: ClassMetadataMap): js.Array[ClassDeclaration] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSuperClassDeclarations")(classDecl.asInstanceOf[js.Any], classMetadataMap.asInstanceOf[js.Any])).asInstanceOf[js.Array[ClassDeclaration]]
+  inline def getSuperClassDeclarations(classDecl: ClassDeclaration, classMetadataMap: ClassMetadataMap): js.Array[ClassDeclaration] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSuperClassDeclarations")(classDecl.asInstanceOf[js.Any], classMetadataMap.asInstanceOf[js.Any])).asInstanceOf[js.Array[ClassDeclaration]]
 }

@@ -22,8 +22,7 @@ object renderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def renderToHTML(
+  inline def renderToHTML(
     req: IncomingMessage,
     res: ServerResponse,
     pathname: String,
@@ -43,26 +42,20 @@ object renderMod {
   }
   object ManifestItem {
     
-    @scala.inline
-    def apply(file: String, id: Double | String, name: String, publicPath: String): ManifestItem = {
+    inline def apply(file: String, id: Double | String, name: String, publicPath: String): ManifestItem = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], publicPath = publicPath.asInstanceOf[js.Any])
       __obj.asInstanceOf[ManifestItem]
     }
     
-    @scala.inline
-    implicit class ManifestItemMutableBuilder[Self <: ManifestItem] (val x: Self) extends AnyVal {
+    extension [Self <: ManifestItem](x: Self) {
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicPath(value: String): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
+      inline def setPublicPath(value: String): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
     }
   }
   
@@ -124,8 +117,7 @@ object renderMod {
   }
   object RenderOpts {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       App: AppType,
       Component: ComponentType[js.Object],
       Document: DocumentType,
@@ -144,128 +136,87 @@ object renderMod {
       __obj.asInstanceOf[RenderOpts]
     }
     
-    @scala.inline
-    implicit class RenderOptsMutableBuilder[Self <: RenderOpts] (val x: Self) extends AnyVal {
+    extension [Self <: RenderOpts](x: Self) {
       
-      @scala.inline
-      def setAmpBindInitData(value: Boolean): Self = StObject.set(x, "ampBindInitData", value.asInstanceOf[js.Any])
+      inline def setAmpBindInitData(value: Boolean): Self = StObject.set(x, "ampBindInitData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmpMode(value: js.Any): Self = StObject.set(x, "ampMode", value.asInstanceOf[js.Any])
+      inline def setAmpMode(value: js.Any): Self = StObject.set(x, "ampMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmpModeUndefined: Self = StObject.set(x, "ampMode", js.undefined)
+      inline def setAmpModeUndefined: Self = StObject.set(x, "ampMode", js.undefined)
       
-      @scala.inline
-      def setAmpPath(value: String): Self = StObject.set(x, "ampPath", value.asInstanceOf[js.Any])
+      inline def setAmpPath(value: String): Self = StObject.set(x, "ampPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmpPathUndefined: Self = StObject.set(x, "ampPath", js.undefined)
+      inline def setAmpPathUndefined: Self = StObject.set(x, "ampPath", js.undefined)
       
-      @scala.inline
-      def setAmpValidator(value: (/* html */ String, /* pathname */ String) => js.Promise[Unit]): Self = StObject.set(x, "ampValidator", js.Any.fromFunction2(value))
+      inline def setAmpValidator(value: (/* html */ String, /* pathname */ String) => js.Promise[Unit]): Self = StObject.set(x, "ampValidator", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAmpValidatorUndefined: Self = StObject.set(x, "ampValidator", js.undefined)
+      inline def setAmpValidatorUndefined: Self = StObject.set(x, "ampValidator", js.undefined)
       
-      @scala.inline
-      def setApp(value: AppType): Self = StObject.set(x, "App", value.asInstanceOf[js.Any])
+      inline def setApp(value: AppType): Self = StObject.set(x, "App", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssetPrefix(value: String): Self = StObject.set(x, "assetPrefix", value.asInstanceOf[js.Any])
+      inline def setAssetPrefix(value: String): Self = StObject.set(x, "assetPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssetPrefixUndefined: Self = StObject.set(x, "assetPrefix", js.undefined)
+      inline def setAssetPrefixUndefined: Self = StObject.set(x, "assetPrefix", js.undefined)
       
-      @scala.inline
-      def setBuildId(value: String): Self = StObject.set(x, "buildId", value.asInstanceOf[js.Any])
+      inline def setBuildId(value: String): Self = StObject.set(x, "buildId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuildManifest(value: BuildManifest): Self = StObject.set(x, "buildManifest", value.asInstanceOf[js.Any])
+      inline def setBuildManifest(value: BuildManifest): Self = StObject.set(x, "buildManifest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanonicalBase(value: String): Self = StObject.set(x, "canonicalBase", value.asInstanceOf[js.Any])
+      inline def setCanonicalBase(value: String): Self = StObject.set(x, "canonicalBase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponent(value: ComponentType[js.Object]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ComponentType[js.Object]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDangerousAsPath(value: String): Self = StObject.set(x, "dangerousAsPath", value.asInstanceOf[js.Any])
+      inline def setDangerousAsPath(value: String): Self = StObject.set(x, "dangerousAsPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataOnly(value: Boolean): Self = StObject.set(x, "dataOnly", value.asInstanceOf[js.Any])
+      inline def setDataOnly(value: Boolean): Self = StObject.set(x, "dataOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataOnlyUndefined: Self = StObject.set(x, "dataOnly", js.undefined)
+      inline def setDataOnlyUndefined: Self = StObject.set(x, "dataOnly", js.undefined)
       
-      @scala.inline
-      def setDev(value: Boolean): Self = StObject.set(x, "dev", value.asInstanceOf[js.Any])
+      inline def setDev(value: Boolean): Self = StObject.set(x, "dev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevUndefined: Self = StObject.set(x, "dev", js.undefined)
+      inline def setDevUndefined: Self = StObject.set(x, "dev", js.undefined)
       
-      @scala.inline
-      def setDocument(value: DocumentType): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
+      inline def setDocument(value: DocumentType): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentMiddleware(value: NextPageContext => Unit): Self = StObject.set(x, "DocumentMiddleware", js.Any.fromFunction1(value))
+      inline def setDocumentMiddleware(value: NextPageContext => Unit): Self = StObject.set(x, "DocumentMiddleware", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDocumentMiddlewareEnabled(value: Boolean): Self = StObject.set(x, "documentMiddlewareEnabled", value.asInstanceOf[js.Any])
+      inline def setDocumentMiddlewareEnabled(value: Boolean): Self = StObject.set(x, "documentMiddlewareEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErr(value: Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
+      inline def setErr(value: Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrNull: Self = StObject.set(x, "err", null)
+      inline def setErrNull: Self = StObject.set(x, "err", null)
       
-      @scala.inline
-      def setErrUndefined: Self = StObject.set(x, "err", js.undefined)
+      inline def setErrUndefined: Self = StObject.set(x, "err", js.undefined)
       
-      @scala.inline
-      def setErrorDebug(value: ComponentType[ErrorError]): Self = StObject.set(x, "ErrorDebug", value.asInstanceOf[js.Any])
+      inline def setErrorDebug(value: ComponentType[ErrorError]): Self = StObject.set(x, "ErrorDebug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorDebugUndefined: Self = StObject.set(x, "ErrorDebug", js.undefined)
+      inline def setErrorDebugUndefined: Self = StObject.set(x, "ErrorDebug", js.undefined)
       
-      @scala.inline
-      def setHybridAmp(value: Boolean): Self = StObject.set(x, "hybridAmp", value.asInstanceOf[js.Any])
+      inline def setHybridAmp(value: Boolean): Self = StObject.set(x, "hybridAmp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHybridAmpUndefined: Self = StObject.set(x, "hybridAmp", js.undefined)
+      inline def setHybridAmpUndefined: Self = StObject.set(x, "hybridAmp", js.undefined)
       
-      @scala.inline
-      def setInAmpMode(value: Boolean): Self = StObject.set(x, "inAmpMode", value.asInstanceOf[js.Any])
+      inline def setInAmpMode(value: Boolean): Self = StObject.set(x, "inAmpMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInAmpModeUndefined: Self = StObject.set(x, "inAmpMode", js.undefined)
+      inline def setInAmpModeUndefined: Self = StObject.set(x, "inAmpMode", js.undefined)
       
-      @scala.inline
-      def setNextExport(value: Boolean): Self = StObject.set(x, "nextExport", value.asInstanceOf[js.Any])
+      inline def setNextExport(value: Boolean): Self = StObject.set(x, "nextExport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextExportUndefined: Self = StObject.set(x, "nextExport", js.undefined)
+      inline def setNextExportUndefined: Self = StObject.set(x, "nextExport", js.undefined)
       
-      @scala.inline
-      def setPageConfig(value: PageConfig): Self = StObject.set(x, "pageConfig", value.asInstanceOf[js.Any])
+      inline def setPageConfig(value: PageConfig): Self = StObject.set(x, "pageConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReactLoadableManifest(value: ReactLoadableManifest): Self = StObject.set(x, "reactLoadableManifest", value.asInstanceOf[js.Any])
+      inline def setReactLoadableManifest(value: ReactLoadableManifest): Self = StObject.set(x, "reactLoadableManifest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuntimeConfig(value: StringDictionary[js.Any]): Self = StObject.set(x, "runtimeConfig", value.asInstanceOf[js.Any])
+      inline def setRuntimeConfig(value: StringDictionary[js.Any]): Self = StObject.set(x, "runtimeConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuntimeConfigUndefined: Self = StObject.set(x, "runtimeConfig", js.undefined)
+      inline def setRuntimeConfigUndefined: Self = StObject.set(x, "runtimeConfig", js.undefined)
       
-      @scala.inline
-      def setSkeleton(value: Boolean): Self = StObject.set(x, "skeleton", value.asInstanceOf[js.Any])
+      inline def setSkeleton(value: Boolean): Self = StObject.set(x, "skeleton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkeletonUndefined: Self = StObject.set(x, "skeleton", js.undefined)
+      inline def setSkeletonUndefined: Self = StObject.set(x, "skeleton", js.undefined)
       
-      @scala.inline
-      def setStaticMarkup(value: Boolean): Self = StObject.set(x, "staticMarkup", value.asInstanceOf[js.Any])
+      inline def setStaticMarkup(value: Boolean): Self = StObject.set(x, "staticMarkup", value.asInstanceOf[js.Any])
     }
   }
 }

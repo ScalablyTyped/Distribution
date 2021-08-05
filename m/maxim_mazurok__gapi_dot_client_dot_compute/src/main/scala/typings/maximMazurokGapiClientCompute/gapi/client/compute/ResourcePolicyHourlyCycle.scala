@@ -17,31 +17,23 @@ trait ResourcePolicyHourlyCycle extends StObject {
 }
 object ResourcePolicyHourlyCycle {
   
-  @scala.inline
-  def apply(): ResourcePolicyHourlyCycle = {
+  inline def apply(): ResourcePolicyHourlyCycle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourcePolicyHourlyCycle]
   }
   
-  @scala.inline
-  implicit class ResourcePolicyHourlyCycleMutableBuilder[Self <: ResourcePolicyHourlyCycle] (val x: Self) extends AnyVal {
+  extension [Self <: ResourcePolicyHourlyCycle](x: Self) {
     
-    @scala.inline
-    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setHoursInCycle(value: Double): Self = StObject.set(x, "hoursInCycle", value.asInstanceOf[js.Any])
+    inline def setHoursInCycle(value: Double): Self = StObject.set(x, "hoursInCycle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoursInCycleUndefined: Self = StObject.set(x, "hoursInCycle", js.undefined)
+    inline def setHoursInCycleUndefined: Self = StObject.set(x, "hoursInCycle", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

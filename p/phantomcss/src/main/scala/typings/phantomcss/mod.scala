@@ -173,127 +173,88 @@ object mod {
       }
       object PhantomCSSOptions {
         
-        @scala.inline
-        def apply(addIteratorToImage: Boolean): PhantomCSSOptions = {
+        inline def apply(addIteratorToImage: Boolean): PhantomCSSOptions = {
           val __obj = js.Dynamic.literal(addIteratorToImage = addIteratorToImage.asInstanceOf[js.Any])
           __obj.asInstanceOf[PhantomCSSOptions]
         }
         
-        @scala.inline
-        implicit class PhantomCSSOptionsMutableBuilder[Self <: PhantomCSSOptions] (val x: Self) extends AnyVal {
+        extension [Self <: PhantomCSSOptions](x: Self) {
           
-          @scala.inline
-          def setAddIteratorToImage(value: Boolean): Self = StObject.set(x, "addIteratorToImage", value.asInstanceOf[js.Any])
+          inline def setAddIteratorToImage(value: Boolean): Self = StObject.set(x, "addIteratorToImage", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAddLabelToFailedImage(value: Boolean): Self = StObject.set(x, "addLabelToFailedImage", value.asInstanceOf[js.Any])
+          inline def setAddLabelToFailedImage(value: Boolean): Self = StObject.set(x, "addLabelToFailedImage", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAddLabelToFailedImageUndefined: Self = StObject.set(x, "addLabelToFailedImage", js.undefined)
+          inline def setAddLabelToFailedImageUndefined: Self = StObject.set(x, "addLabelToFailedImage", js.undefined)
           
-          @scala.inline
-          def setCasper(value: Casper): Self = StObject.set(x, "casper", value.asInstanceOf[js.Any])
+          inline def setCasper(value: Casper): Self = StObject.set(x, "casper", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCasperUndefined: Self = StObject.set(x, "casper", js.undefined)
+          inline def setCasperUndefined: Self = StObject.set(x, "casper", js.undefined)
           
-          @scala.inline
-          def setCleanupComparisonImages(value: Boolean): Self = StObject.set(x, "cleanupComparisonImages", value.asInstanceOf[js.Any])
+          inline def setCleanupComparisonImages(value: Boolean): Self = StObject.set(x, "cleanupComparisonImages", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCleanupComparisonImagesUndefined: Self = StObject.set(x, "cleanupComparisonImages", js.undefined)
+          inline def setCleanupComparisonImagesUndefined: Self = StObject.set(x, "cleanupComparisonImages", js.undefined)
           
-          @scala.inline
-          def setComparisonResultRoot(value: String): Self = StObject.set(x, "comparisonResultRoot", value.asInstanceOf[js.Any])
+          inline def setComparisonResultRoot(value: String): Self = StObject.set(x, "comparisonResultRoot", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setComparisonResultRootUndefined: Self = StObject.set(x, "comparisonResultRoot", js.undefined)
+          inline def setComparisonResultRootUndefined: Self = StObject.set(x, "comparisonResultRoot", js.undefined)
           
-          @scala.inline
-          def setFailedComparisonsRoot(value: String): Self = StObject.set(x, "failedComparisonsRoot", value.asInstanceOf[js.Any])
+          inline def setFailedComparisonsRoot(value: String): Self = StObject.set(x, "failedComparisonsRoot", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setFailedComparisonsRootUndefined: Self = StObject.set(x, "failedComparisonsRoot", js.undefined)
+          inline def setFailedComparisonsRootUndefined: Self = StObject.set(x, "failedComparisonsRoot", js.undefined)
           
-          @scala.inline
-          def setFileNameGetter(value: (/* rootPath */ String, /* fileName */ js.UndefOr[String]) => String): Self = StObject.set(x, "fileNameGetter", js.Any.fromFunction2(value))
+          inline def setFileNameGetter(value: (/* rootPath */ String, /* fileName */ js.UndefOr[String]) => String): Self = StObject.set(x, "fileNameGetter", js.Any.fromFunction2(value))
           
-          @scala.inline
-          def setFileNameGetterUndefined: Self = StObject.set(x, "fileNameGetter", js.undefined)
+          inline def setFileNameGetterUndefined: Self = StObject.set(x, "fileNameGetter", js.undefined)
           
-          @scala.inline
-          def setHideElements(value: String): Self = StObject.set(x, "hideElements", value.asInstanceOf[js.Any])
+          inline def setHideElements(value: String): Self = StObject.set(x, "hideElements", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setHideElementsUndefined: Self = StObject.set(x, "hideElements", js.undefined)
+          inline def setHideElementsUndefined: Self = StObject.set(x, "hideElements", js.undefined)
           
-          @scala.inline
-          def setLibraryRoot(value: String): Self = StObject.set(x, "libraryRoot", value.asInstanceOf[js.Any])
+          inline def setLibraryRoot(value: String): Self = StObject.set(x, "libraryRoot", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLibraryRootUndefined: Self = StObject.set(x, "libraryRoot", js.undefined)
+          inline def setLibraryRootUndefined: Self = StObject.set(x, "libraryRoot", js.undefined)
           
-          @scala.inline
-          def setMismatchTolerance(value: Double): Self = StObject.set(x, "mismatchTolerance", value.asInstanceOf[js.Any])
+          inline def setMismatchTolerance(value: Double): Self = StObject.set(x, "mismatchTolerance", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMismatchToleranceUndefined: Self = StObject.set(x, "mismatchTolerance", js.undefined)
+          inline def setMismatchToleranceUndefined: Self = StObject.set(x, "mismatchTolerance", js.undefined)
           
-          @scala.inline
-          def setOnComplete(
+          inline def setOnComplete(
             value: (/* tests */ js.Array[PhantomCSSTest], /* noOfFails */ Double, /* noOfErrors */ Double) => Unit
           ): Self = StObject.set(x, "onComplete", js.Any.fromFunction3(value))
           
-          @scala.inline
-          def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
+          inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
           
-          @scala.inline
-          def setOnFail(value: /* test */ PhantomCSSTest => Unit): Self = StObject.set(x, "onFail", js.Any.fromFunction1(value))
+          inline def setOnFail(value: /* test */ PhantomCSSTest => Unit): Self = StObject.set(x, "onFail", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setOnFailUndefined: Self = StObject.set(x, "onFail", js.undefined)
+          inline def setOnFailUndefined: Self = StObject.set(x, "onFail", js.undefined)
           
-          @scala.inline
-          def setOnNewImage(value: /* test */ PhantomCSSTest => Unit): Self = StObject.set(x, "onNewImage", js.Any.fromFunction1(value))
+          inline def setOnNewImage(value: /* test */ PhantomCSSTest => Unit): Self = StObject.set(x, "onNewImage", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setOnNewImageUndefined: Self = StObject.set(x, "onNewImage", js.undefined)
+          inline def setOnNewImageUndefined: Self = StObject.set(x, "onNewImage", js.undefined)
           
-          @scala.inline
-          def setOnPass(value: /* test */ PhantomCSSTest => Unit): Self = StObject.set(x, "onPass", js.Any.fromFunction1(value))
+          inline def setOnPass(value: /* test */ PhantomCSSTest => Unit): Self = StObject.set(x, "onPass", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setOnPassUndefined: Self = StObject.set(x, "onPass", js.undefined)
+          inline def setOnPassUndefined: Self = StObject.set(x, "onPass", js.undefined)
           
-          @scala.inline
-          def setOnTimeout(value: /* test */ PhantomCSSTest => Unit): Self = StObject.set(x, "onTimeout", js.Any.fromFunction1(value))
+          inline def setOnTimeout(value: /* test */ PhantomCSSTest => Unit): Self = StObject.set(x, "onTimeout", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setOnTimeoutUndefined: Self = StObject.set(x, "onTimeout", js.undefined)
+          inline def setOnTimeoutUndefined: Self = StObject.set(x, "onTimeout", js.undefined)
           
-          @scala.inline
-          def setOutputSettings(value: OutputSettings_): Self = StObject.set(x, "outputSettings", value.asInstanceOf[js.Any])
+          inline def setOutputSettings(value: OutputSettings_): Self = StObject.set(x, "outputSettings", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setOutputSettingsUndefined: Self = StObject.set(x, "outputSettings", js.undefined)
+          inline def setOutputSettingsUndefined: Self = StObject.set(x, "outputSettings", js.undefined)
           
-          @scala.inline
-          def setPrefixCount(value: Boolean): Self = StObject.set(x, "prefixCount", value.asInstanceOf[js.Any])
+          inline def setPrefixCount(value: Boolean): Self = StObject.set(x, "prefixCount", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPrefixCountUndefined: Self = StObject.set(x, "prefixCount", js.undefined)
+          inline def setPrefixCountUndefined: Self = StObject.set(x, "prefixCount", js.undefined)
           
-          @scala.inline
-          def setRebase(value: js.Any): Self = StObject.set(x, "rebase", value.asInstanceOf[js.Any])
+          inline def setRebase(value: js.Any): Self = StObject.set(x, "rebase", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRebaseUndefined: Self = StObject.set(x, "rebase", js.undefined)
+          inline def setRebaseUndefined: Self = StObject.set(x, "rebase", js.undefined)
           
-          @scala.inline
-          def setScreenshotRoot(value: String): Self = StObject.set(x, "screenshotRoot", value.asInstanceOf[js.Any])
+          inline def setScreenshotRoot(value: String): Self = StObject.set(x, "screenshotRoot", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setScreenshotRootUndefined: Self = StObject.set(x, "screenshotRoot", js.undefined)
+          inline def setScreenshotRootUndefined: Self = StObject.set(x, "screenshotRoot", js.undefined)
         }
       }
       
@@ -313,50 +274,36 @@ object mod {
       }
       object PhantomCSSTest {
         
-        @scala.inline
-        def apply(): PhantomCSSTest = {
+        inline def apply(): PhantomCSSTest = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[PhantomCSSTest]
         }
         
-        @scala.inline
-        implicit class PhantomCSSTestMutableBuilder[Self <: PhantomCSSTest] (val x: Self) extends AnyVal {
+        extension [Self <: PhantomCSSTest](x: Self) {
           
-          @scala.inline
-          def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+          inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+          inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
           
-          @scala.inline
-          def setFail(value: Boolean): Self = StObject.set(x, "fail", value.asInstanceOf[js.Any])
+          inline def setFail(value: Boolean): Self = StObject.set(x, "fail", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setFailFile(value: String): Self = StObject.set(x, "failFile", value.asInstanceOf[js.Any])
+          inline def setFailFile(value: String): Self = StObject.set(x, "failFile", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setFailFileUndefined: Self = StObject.set(x, "failFile", js.undefined)
+          inline def setFailFileUndefined: Self = StObject.set(x, "failFile", js.undefined)
           
-          @scala.inline
-          def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+          inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
           
-          @scala.inline
-          def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+          inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+          inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
           
-          @scala.inline
-          def setMismatch(value: js.Any): Self = StObject.set(x, "mismatch", value.asInstanceOf[js.Any])
+          inline def setMismatch(value: js.Any): Self = StObject.set(x, "mismatch", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMismatchUndefined: Self = StObject.set(x, "mismatch", js.undefined)
+          inline def setMismatchUndefined: Self = StObject.set(x, "mismatch", js.undefined)
           
-          @scala.inline
-          def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+          inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+          inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
         }
       }
     }

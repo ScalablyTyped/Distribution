@@ -10,6 +10,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def invalidFunction(message: String): js.Function0[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidFunction")(message.asInstanceOf[js.Any]).asInstanceOf[js.Function0[scala.Nothing]]
+  inline def invalidFunction(message: String): js.Function0[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidFunction")(message.asInstanceOf[js.Any]).asInstanceOf[js.Function0[scala.Nothing]]
 }

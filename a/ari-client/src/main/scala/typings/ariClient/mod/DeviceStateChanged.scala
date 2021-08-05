@@ -16,17 +16,14 @@ trait DeviceStateChanged
 }
 object DeviceStateChanged {
   
-  @scala.inline
-  def apply(application: String, device_state: DeviceState, timestamp: Date, `type`: String): DeviceStateChanged = {
+  inline def apply(application: String, device_state: DeviceState, timestamp: Date, `type`: String): DeviceStateChanged = {
     val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any], device_state = device_state.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceStateChanged]
   }
   
-  @scala.inline
-  implicit class DeviceStateChangedMutableBuilder[Self <: DeviceStateChanged] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceStateChanged](x: Self) {
     
-    @scala.inline
-    def setDevice_state(value: DeviceState): Self = StObject.set(x, "device_state", value.asInstanceOf[js.Any])
+    inline def setDevice_state(value: DeviceState): Self = StObject.set(x, "device_state", value.asInstanceOf[js.Any])
   }
 }

@@ -33,8 +33,7 @@ trait DocumentOrShadowRoot extends StObject {
 }
 object DocumentOrShadowRoot {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     caretPositionFromPoint: (Double, Double) => CaretPosition | Null,
     caretRangeFromPoint: (Double, Double) => Range,
     elementFromPoint: (Double, Double) => Element | Null,
@@ -46,43 +45,30 @@ object DocumentOrShadowRoot {
     __obj.asInstanceOf[DocumentOrShadowRoot]
   }
   
-  @scala.inline
-  implicit class DocumentOrShadowRootMutableBuilder[Self <: DocumentOrShadowRoot] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentOrShadowRoot](x: Self) {
     
-    @scala.inline
-    def setActiveElement(value: Element): Self = StObject.set(x, "activeElement", value.asInstanceOf[js.Any])
+    inline def setActiveElement(value: Element): Self = StObject.set(x, "activeElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveElementNull: Self = StObject.set(x, "activeElement", null)
+    inline def setActiveElementNull: Self = StObject.set(x, "activeElement", null)
     
-    @scala.inline
-    def setCaretPositionFromPoint(value: (Double, Double) => CaretPosition | Null): Self = StObject.set(x, "caretPositionFromPoint", js.Any.fromFunction2(value))
+    inline def setCaretPositionFromPoint(value: (Double, Double) => CaretPosition | Null): Self = StObject.set(x, "caretPositionFromPoint", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCaretRangeFromPoint(value: (Double, Double) => Range): Self = StObject.set(x, "caretRangeFromPoint", js.Any.fromFunction2(value))
+    inline def setCaretRangeFromPoint(value: (Double, Double) => Range): Self = StObject.set(x, "caretRangeFromPoint", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setElementFromPoint(value: (Double, Double) => Element | Null): Self = StObject.set(x, "elementFromPoint", js.Any.fromFunction2(value))
+    inline def setElementFromPoint(value: (Double, Double) => Element | Null): Self = StObject.set(x, "elementFromPoint", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setElementsFromPoint(value: (Double, Double) => js.Array[Element]): Self = StObject.set(x, "elementsFromPoint", js.Any.fromFunction2(value))
+    inline def setElementsFromPoint(value: (Double, Double) => js.Array[Element]): Self = StObject.set(x, "elementsFromPoint", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFullscreenElement(value: Element): Self = StObject.set(x, "fullscreenElement", value.asInstanceOf[js.Any])
+    inline def setFullscreenElement(value: Element): Self = StObject.set(x, "fullscreenElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullscreenElementNull: Self = StObject.set(x, "fullscreenElement", null)
+    inline def setFullscreenElementNull: Self = StObject.set(x, "fullscreenElement", null)
     
-    @scala.inline
-    def setGetSelection(value: () => Selection | Null): Self = StObject.set(x, "getSelection", js.Any.fromFunction0(value))
+    inline def setGetSelection(value: () => Selection | Null): Self = StObject.set(x, "getSelection", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPointerLockElement(value: Element): Self = StObject.set(x, "pointerLockElement", value.asInstanceOf[js.Any])
+    inline def setPointerLockElement(value: Element): Self = StObject.set(x, "pointerLockElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointerLockElementNull: Self = StObject.set(x, "pointerLockElement", null)
+    inline def setPointerLockElementNull: Self = StObject.set(x, "pointerLockElement", null)
     
-    @scala.inline
-    def setStyleSheets(value: StyleSheetList): Self = StObject.set(x, "styleSheets", value.asInstanceOf[js.Any])
+    inline def setStyleSheets(value: StyleSheetList): Self = StObject.set(x, "styleSheets", value.asInstanceOf[js.Any])
   }
 }

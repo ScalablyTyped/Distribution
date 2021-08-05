@@ -10,6 +10,5 @@ object getPointerDataMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getPointerData(evt: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getPointerData")(evt.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getPointerData(evt: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getPointerData")(evt.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

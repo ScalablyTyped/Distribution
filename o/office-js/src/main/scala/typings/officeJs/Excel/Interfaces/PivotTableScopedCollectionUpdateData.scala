@@ -11,22 +11,17 @@ trait PivotTableScopedCollectionUpdateData extends StObject {
 }
 object PivotTableScopedCollectionUpdateData {
   
-  @scala.inline
-  def apply(): PivotTableScopedCollectionUpdateData = {
+  inline def apply(): PivotTableScopedCollectionUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PivotTableScopedCollectionUpdateData]
   }
   
-  @scala.inline
-  implicit class PivotTableScopedCollectionUpdateDataMutableBuilder[Self <: PivotTableScopedCollectionUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: PivotTableScopedCollectionUpdateData](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[PivotTableData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[PivotTableData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: PivotTableData*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: PivotTableData*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

@@ -14,19 +14,15 @@ trait HeightValue extends StObject {
 }
 object HeightValue {
   
-  @scala.inline
-  def apply(height: Double, value: String): HeightValue = {
+  inline def apply(height: Double, value: String): HeightValue = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeightValue]
   }
   
-  @scala.inline
-  implicit class HeightValueMutableBuilder[Self <: HeightValue] (val x: Self) extends AnyVal {
+  extension [Self <: HeightValue](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

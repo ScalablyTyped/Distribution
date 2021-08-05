@@ -13,19 +13,15 @@ trait PutAggregationAuthorizationResponse extends StObject {
 }
 object PutAggregationAuthorizationResponse {
   
-  @scala.inline
-  def apply(): PutAggregationAuthorizationResponse = {
+  inline def apply(): PutAggregationAuthorizationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutAggregationAuthorizationResponse]
   }
   
-  @scala.inline
-  implicit class PutAggregationAuthorizationResponseMutableBuilder[Self <: PutAggregationAuthorizationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PutAggregationAuthorizationResponse](x: Self) {
     
-    @scala.inline
-    def setAggregationAuthorization(value: AggregationAuthorization): Self = StObject.set(x, "AggregationAuthorization", value.asInstanceOf[js.Any])
+    inline def setAggregationAuthorization(value: AggregationAuthorization): Self = StObject.set(x, "AggregationAuthorization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregationAuthorizationUndefined: Self = StObject.set(x, "AggregationAuthorization", js.undefined)
+    inline def setAggregationAuthorizationUndefined: Self = StObject.set(x, "AggregationAuthorization", js.undefined)
   }
 }

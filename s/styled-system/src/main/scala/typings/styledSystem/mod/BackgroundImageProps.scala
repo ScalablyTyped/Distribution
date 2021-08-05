@@ -20,31 +20,25 @@ trait BackgroundImageProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extend
 }
 object BackgroundImageProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): BackgroundImageProps[ThemeType] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): BackgroundImageProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BackgroundImageProps[ThemeType]]
   }
   
-  @scala.inline
-  implicit class BackgroundImagePropsMutableBuilder[Self <: BackgroundImageProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & BackgroundImageProps[ThemeType]) extends AnyVal {
+  extension [Self <: BackgroundImageProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & BackgroundImageProps[ThemeType]) {
     
-    @scala.inline
-    def setBackgroundImage(
+    inline def setBackgroundImage(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundImage */ js.Any, 
           ThemeType
         ]
     ): Self = StObject.set(x, "backgroundImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundImageNull: Self = StObject.set(x, "backgroundImage", null)
+    inline def setBackgroundImageNull: Self = StObject.set(x, "backgroundImage", null)
     
-    @scala.inline
-    def setBackgroundImageUndefined: Self = StObject.set(x, "backgroundImage", js.undefined)
+    inline def setBackgroundImageUndefined: Self = StObject.set(x, "backgroundImage", js.undefined)
     
-    @scala.inline
-    def setBackgroundImageVarargs(
+    inline def setBackgroundImageVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundImage */ js.Any) | Null)*
     ): Self = StObject.set(x, "backgroundImage", js.Array(value :_*))
   }

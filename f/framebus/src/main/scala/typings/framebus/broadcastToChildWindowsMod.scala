@@ -11,6 +11,5 @@ object broadcastToChildWindowsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def broadcastToChildWindows(payload: String, origin: String, source: Window): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("broadcastToChildWindows")(payload.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def broadcastToChildWindows(payload: String, origin: String, source: Window): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("broadcastToChildWindows")(payload.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

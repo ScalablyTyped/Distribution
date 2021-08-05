@@ -13,16 +13,13 @@ trait OnEntryRecordAdded
 }
 object OnEntryRecordAdded {
   
-  @scala.inline
-  def apply(recordKey: Double): OnEntryRecordAdded = {
+  inline def apply(recordKey: Double): OnEntryRecordAdded = {
     val __obj = js.Dynamic.literal(recordKey = recordKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnEntryRecordAdded]
   }
   
-  @scala.inline
-  implicit class OnEntryRecordAddedMutableBuilder[Self <: OnEntryRecordAdded] (val x: Self) extends AnyVal {
+  extension [Self <: OnEntryRecordAdded](x: Self) {
     
-    @scala.inline
-    def setRecordKey(value: Double): Self = StObject.set(x, "recordKey", value.asInstanceOf[js.Any])
+    inline def setRecordKey(value: Double): Self = StObject.set(x, "recordKey", value.asInstanceOf[js.Any])
   }
 }

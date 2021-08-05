@@ -32,8 +32,7 @@ trait IRegistration extends StObject {
 }
 object IRegistration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     active: Boolean,
     endpoint: (/* args */ js.UndefOr[js.Array[js.Any]], /* kwargs */ js.UndefOr[js.Any], /* details */ js.UndefOr[IInvocation]) => Unit,
     id: Double,
@@ -46,30 +45,22 @@ object IRegistration {
     __obj.asInstanceOf[IRegistration]
   }
   
-  @scala.inline
-  implicit class IRegistrationMutableBuilder[Self <: IRegistration] (val x: Self) extends AnyVal {
+  extension [Self <: IRegistration](x: Self) {
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpoint(
+    inline def setEndpoint(
       value: (/* args */ js.UndefOr[js.Array[js.Any]], /* kwargs */ js.UndefOr[js.Any], /* details */ js.UndefOr[IInvocation]) => Unit
     ): Self = StObject.set(x, "endpoint", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: IRegisterOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: IRegisterOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcedure(value: String): Self = StObject.set(x, "procedure", value.asInstanceOf[js.Any])
+    inline def setProcedure(value: String): Self = StObject.set(x, "procedure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+    inline def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnregister(value: () => Promise[js.Any]): Self = StObject.set(x, "unregister", js.Any.fromFunction0(value))
+    inline def setUnregister(value: () => Promise[js.Any]): Self = StObject.set(x, "unregister", js.Any.fromFunction0(value))
   }
 }

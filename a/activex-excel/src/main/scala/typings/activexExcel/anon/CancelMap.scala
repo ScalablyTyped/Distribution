@@ -15,22 +15,17 @@ trait CancelMap extends StObject {
 }
 object CancelMap {
   
-  @scala.inline
-  def apply(Cancel: Boolean, Map: XmlMap, Url: String): CancelMap = {
+  inline def apply(Cancel: Boolean, Map: XmlMap, Url: String): CancelMap = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Map = Map.asInstanceOf[js.Any], Url = Url.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelMap]
   }
   
-  @scala.inline
-  implicit class CancelMapMutableBuilder[Self <: CancelMap] (val x: Self) extends AnyVal {
+  extension [Self <: CancelMap](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMap(value: XmlMap): Self = StObject.set(x, "Map", value.asInstanceOf[js.Any])
+    inline def setMap(value: XmlMap): Self = StObject.set(x, "Map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
   }
 }

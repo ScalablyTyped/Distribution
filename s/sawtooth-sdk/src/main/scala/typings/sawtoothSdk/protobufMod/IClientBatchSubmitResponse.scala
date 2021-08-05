@@ -12,22 +12,17 @@ trait IClientBatchSubmitResponse extends StObject {
 }
 object IClientBatchSubmitResponse {
   
-  @scala.inline
-  def apply(): IClientBatchSubmitResponse = {
+  inline def apply(): IClientBatchSubmitResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IClientBatchSubmitResponse]
   }
   
-  @scala.inline
-  implicit class IClientBatchSubmitResponseMutableBuilder[Self <: IClientBatchSubmitResponse] (val x: Self) extends AnyVal {
+  extension [Self <: IClientBatchSubmitResponse](x: Self) {
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusNull: Self = StObject.set(x, "status", null)
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

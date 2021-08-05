@@ -16,8 +16,7 @@ trait Infoname extends StObject {
 }
 object Infoname {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     info_name: java.lang.String,
     name: java.lang.String,
     protocol: java.lang.String,
@@ -28,19 +27,14 @@ object Infoname {
     __obj.asInstanceOf[Infoname]
   }
   
-  @scala.inline
-  implicit class InfonameMutableBuilder[Self <: Infoname] (val x: Self) extends AnyVal {
+  extension [Self <: Infoname](x: Self) {
     
-    @scala.inline
-    def setInfo_name(value: java.lang.String): Self = StObject.set(x, "info_name", value.asInstanceOf[js.Any])
+    inline def setInfo_name(value: java.lang.String): Self = StObject.set(x, "info_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocol(value: java.lang.String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: java.lang.String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: java.lang.String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: java.lang.String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

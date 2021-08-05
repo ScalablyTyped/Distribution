@@ -23,43 +23,31 @@ trait TableCell extends StObject {
 }
 object TableCell {
   
-  @scala.inline
-  def apply(): TableCell = {
+  inline def apply(): TableCell = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableCell]
   }
   
-  @scala.inline
-  implicit class TableCellMutableBuilder[Self <: TableCell] (val x: Self) extends AnyVal {
+  extension [Self <: TableCell](x: Self) {
     
-    @scala.inline
-    def setColumnSpan(value: Double): Self = StObject.set(x, "columnSpan", value.asInstanceOf[js.Any])
+    inline def setColumnSpan(value: Double): Self = StObject.set(x, "columnSpan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnSpanUndefined: Self = StObject.set(x, "columnSpan", js.undefined)
+    inline def setColumnSpanUndefined: Self = StObject.set(x, "columnSpan", js.undefined)
     
-    @scala.inline
-    def setLocation(value: TableCellLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: TableCellLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
+    inline def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
+    inline def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
     
-    @scala.inline
-    def setTableCellProperties(value: TableCellProperties): Self = StObject.set(x, "tableCellProperties", value.asInstanceOf[js.Any])
+    inline def setTableCellProperties(value: TableCellProperties): Self = StObject.set(x, "tableCellProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableCellPropertiesUndefined: Self = StObject.set(x, "tableCellProperties", js.undefined)
+    inline def setTableCellPropertiesUndefined: Self = StObject.set(x, "tableCellProperties", js.undefined)
     
-    @scala.inline
-    def setText(value: TextContent): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: TextContent): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

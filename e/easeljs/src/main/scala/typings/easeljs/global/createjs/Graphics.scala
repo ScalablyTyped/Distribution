@@ -71,8 +71,7 @@ object Graphics {
   @JSGlobal("createjs.Graphics.BASE_64")
   @js.native
   def BASE_64: js.Object = js.native
-  @scala.inline
-  def BASE_64_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BASE_64")(x.asInstanceOf[js.Any])
+  inline def BASE_64_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BASE_64")(x.asInstanceOf[js.Any])
   
   @JSGlobal("createjs.Graphics.BeginPath")
   @js.native
@@ -284,14 +283,12 @@ object Graphics {
   @JSGlobal("createjs.Graphics.STROKE_CAPS_MAP")
   @js.native
   def STROKE_CAPS_MAP: js.Array[String] = js.native
-  @scala.inline
-  def STROKE_CAPS_MAP_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STROKE_CAPS_MAP")(x.asInstanceOf[js.Any])
+  inline def STROKE_CAPS_MAP_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STROKE_CAPS_MAP")(x.asInstanceOf[js.Any])
   
   @JSGlobal("createjs.Graphics.STROKE_JOINTS_MAP")
   @js.native
   def STROKE_JOINTS_MAP: js.Array[String] = js.native
-  @scala.inline
-  def STROKE_JOINTS_MAP_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STROKE_JOINTS_MAP")(x.asInstanceOf[js.Any])
+  inline def STROKE_JOINTS_MAP_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STROKE_JOINTS_MAP")(x.asInstanceOf[js.Any])
   
   @JSGlobal("createjs.Graphics.Stroke")
   @js.native
@@ -325,16 +322,11 @@ object Graphics {
   @JSGlobal("createjs.Graphics.beginCmd")
   @js.native
   def beginCmd: typings.easeljs.createjs.Graphics.BeginPath = js.native
-  @scala.inline
-  def beginCmd_=(x: typings.easeljs.createjs.Graphics.BeginPath): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("beginCmd")(x.asInstanceOf[js.Any])
+  inline def beginCmd_=(x: typings.easeljs.createjs.Graphics.BeginPath): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("beginCmd")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def getHSL(hue: Double, saturation: Double, lightness: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getHSL")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def getHSL(hue: Double, saturation: Double, lightness: Double, alpha: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getHSL")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getHSL(hue: Double, saturation: Double, lightness: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getHSL")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getHSL(hue: Double, saturation: Double, lightness: Double, alpha: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getHSL")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def getRGB(r: Double, g: Double, b: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getRGB")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def getRGB(r: Double, g: Double, b: Double, alpha: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getRGB")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getRGB(r: Double, g: Double, b: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getRGB")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getRGB(r: Double, g: Double, b: Double, alpha: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getRGB")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[String]
 }

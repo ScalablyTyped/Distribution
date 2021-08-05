@@ -10,19 +10,15 @@ trait Computed extends StObject {
 }
 object Computed {
   
-  @scala.inline
-  def apply(): Computed = {
+  inline def apply(): Computed = {
     val __obj = js.Dynamic.literal(computed = null)
     __obj.asInstanceOf[Computed]
   }
   
-  @scala.inline
-  implicit class ComputedMutableBuilder[Self <: Computed] (val x: Self) extends AnyVal {
+  extension [Self <: Computed](x: Self) {
     
-    @scala.inline
-    def setComputed(value: Boolean): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
+    inline def setComputed(value: Boolean): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputedNull: Self = StObject.set(x, "computed", null)
+    inline def setComputedNull: Self = StObject.set(x, "computed", null)
   }
 }

@@ -11,7 +11,7 @@ trait WebServiceAdapterObject extends StObject {
   
   def GenerateDataSetDiffGram(pNode: IXMLDOMNode): IXMLDOMNode
   
-  @JSName("InfoPath.WebServiceAdapterObject_typekey")
+  /* private */ @JSName("InfoPath.WebServiceAdapterObject_typekey")
   var InfoPathDotWebServiceAdapterObject_typekey: WebServiceAdapterObject
   
   var Input: String
@@ -36,8 +36,7 @@ trait WebServiceAdapterObject extends StObject {
 }
 object WebServiceAdapterObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ErrorsLocation: IXMLDOMNode,
     GenerateDataSetDiffGram: IXMLDOMNode => IXMLDOMNode,
     InfoPathDotWebServiceAdapterObject_typekey: WebServiceAdapterObject,
@@ -57,46 +56,32 @@ object WebServiceAdapterObject {
     __obj.asInstanceOf[WebServiceAdapterObject]
   }
   
-  @scala.inline
-  implicit class WebServiceAdapterObjectMutableBuilder[Self <: WebServiceAdapterObject] (val x: Self) extends AnyVal {
+  extension [Self <: WebServiceAdapterObject](x: Self) {
     
-    @scala.inline
-    def setErrorsLocation(value: IXMLDOMNode): Self = StObject.set(x, "ErrorsLocation", value.asInstanceOf[js.Any])
+    inline def setErrorsLocation(value: IXMLDOMNode): Self = StObject.set(x, "ErrorsLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenerateDataSetDiffGram(value: IXMLDOMNode => IXMLDOMNode): Self = StObject.set(x, "GenerateDataSetDiffGram", js.Any.fromFunction1(value))
+    inline def setGenerateDataSetDiffGram(value: IXMLDOMNode => IXMLDOMNode): Self = StObject.set(x, "GenerateDataSetDiffGram", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInfoPathDotWebServiceAdapterObject_typekey(value: WebServiceAdapterObject): Self = StObject.set(x, "InfoPath.WebServiceAdapterObject_typekey", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotWebServiceAdapterObject_typekey(value: WebServiceAdapterObject): Self = StObject.set(x, "InfoPath.WebServiceAdapterObject_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInput(value: String): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
+    inline def setInput(value: String): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperation(value: String): Self = StObject.set(x, "Operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: String): Self = StObject.set(x, "Operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputLocation(value: IXMLDOMNode): Self = StObject.set(x, "OutputLocation", value.asInstanceOf[js.Any])
+    inline def setOutputLocation(value: IXMLDOMNode): Self = StObject.set(x, "OutputLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: () => Unit): Self = StObject.set(x, "Query", js.Any.fromFunction0(value))
+    inline def setQuery(value: () => Unit): Self = StObject.set(x, "Query", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setQueryAllowed(value: Boolean): Self = StObject.set(x, "QueryAllowed", value.asInstanceOf[js.Any])
+    inline def setQueryAllowed(value: Boolean): Self = StObject.set(x, "QueryAllowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmit(value: () => Unit): Self = StObject.set(x, "Submit", js.Any.fromFunction0(value))
+    inline def setSubmit(value: () => Unit): Self = StObject.set(x, "Submit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSubmitAllowed(value: Boolean): Self = StObject.set(x, "SubmitAllowed", value.asInstanceOf[js.Any])
+    inline def setSubmitAllowed(value: Boolean): Self = StObject.set(x, "SubmitAllowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "Timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "Timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWSDLURL(value: String): Self = StObject.set(x, "WSDLURL", value.asInstanceOf[js.Any])
+    inline def setWSDLURL(value: String): Self = StObject.set(x, "WSDLURL", value.asInstanceOf[js.Any])
   }
 }

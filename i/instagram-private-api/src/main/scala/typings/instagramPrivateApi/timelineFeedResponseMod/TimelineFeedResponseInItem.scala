@@ -16,8 +16,7 @@ trait TimelineFeedResponseInItem extends StObject {
 }
 object TimelineFeedResponseInItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     duration_in_video_in_sec: Null,
     position: js.Array[Double | String],
     start_time_in_video_in_sec: Null,
@@ -27,22 +26,16 @@ object TimelineFeedResponseInItem {
     __obj.asInstanceOf[TimelineFeedResponseInItem]
   }
   
-  @scala.inline
-  implicit class TimelineFeedResponseInItemMutableBuilder[Self <: TimelineFeedResponseInItem] (val x: Self) extends AnyVal {
+  extension [Self <: TimelineFeedResponseInItem](x: Self) {
     
-    @scala.inline
-    def setDuration_in_video_in_sec(value: Null): Self = StObject.set(x, "duration_in_video_in_sec", value.asInstanceOf[js.Any])
+    inline def setDuration_in_video_in_sec(value: Null): Self = StObject.set(x, "duration_in_video_in_sec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: js.Array[Double | String]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: js.Array[Double | String]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionVarargs(value: (Double | String)*): Self = StObject.set(x, "position", js.Array(value :_*))
+    inline def setPositionVarargs(value: (Double | String)*): Self = StObject.set(x, "position", js.Array(value :_*))
     
-    @scala.inline
-    def setStart_time_in_video_in_sec(value: Null): Self = StObject.set(x, "start_time_in_video_in_sec", value.asInstanceOf[js.Any])
+    inline def setStart_time_in_video_in_sec(value: Null): Self = StObject.set(x, "start_time_in_video_in_sec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: TimelineFeedResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: TimelineFeedResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

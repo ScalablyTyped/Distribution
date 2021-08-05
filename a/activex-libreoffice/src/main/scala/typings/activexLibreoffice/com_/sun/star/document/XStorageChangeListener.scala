@@ -21,8 +21,7 @@ trait XStorageChangeListener
 }
 object XStorageChangeListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: typings.activexLibreoffice.com_.sun.star.lang.EventObject => Unit,
     notifyStorageChange: (XInterface, XStorage) => Unit,
@@ -33,10 +32,8 @@ object XStorageChangeListener {
     __obj.asInstanceOf[XStorageChangeListener]
   }
   
-  @scala.inline
-  implicit class XStorageChangeListenerMutableBuilder[Self <: XStorageChangeListener] (val x: Self) extends AnyVal {
+  extension [Self <: XStorageChangeListener](x: Self) {
     
-    @scala.inline
-    def setNotifyStorageChange(value: (XInterface, XStorage) => Unit): Self = StObject.set(x, "notifyStorageChange", js.Any.fromFunction2(value))
+    inline def setNotifyStorageChange(value: (XInterface, XStorage) => Unit): Self = StObject.set(x, "notifyStorageChange", js.Any.fromFunction2(value))
   }
 }

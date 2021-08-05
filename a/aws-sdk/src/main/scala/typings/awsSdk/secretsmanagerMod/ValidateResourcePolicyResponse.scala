@@ -18,28 +18,21 @@ trait ValidateResourcePolicyResponse extends StObject {
 }
 object ValidateResourcePolicyResponse {
   
-  @scala.inline
-  def apply(): ValidateResourcePolicyResponse = {
+  inline def apply(): ValidateResourcePolicyResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ValidateResourcePolicyResponse]
   }
   
-  @scala.inline
-  implicit class ValidateResourcePolicyResponseMutableBuilder[Self <: ValidateResourcePolicyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ValidateResourcePolicyResponse](x: Self) {
     
-    @scala.inline
-    def setPolicyValidationPassed(value: BooleanType): Self = StObject.set(x, "PolicyValidationPassed", value.asInstanceOf[js.Any])
+    inline def setPolicyValidationPassed(value: BooleanType): Self = StObject.set(x, "PolicyValidationPassed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyValidationPassedUndefined: Self = StObject.set(x, "PolicyValidationPassed", js.undefined)
+    inline def setPolicyValidationPassedUndefined: Self = StObject.set(x, "PolicyValidationPassed", js.undefined)
     
-    @scala.inline
-    def setValidationErrors(value: ValidationErrorsType): Self = StObject.set(x, "ValidationErrors", value.asInstanceOf[js.Any])
+    inline def setValidationErrors(value: ValidationErrorsType): Self = StObject.set(x, "ValidationErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationErrorsUndefined: Self = StObject.set(x, "ValidationErrors", js.undefined)
+    inline def setValidationErrorsUndefined: Self = StObject.set(x, "ValidationErrors", js.undefined)
     
-    @scala.inline
-    def setValidationErrorsVarargs(value: ValidationErrorsEntry*): Self = StObject.set(x, "ValidationErrors", js.Array(value :_*))
+    inline def setValidationErrorsVarargs(value: ValidationErrorsEntry*): Self = StObject.set(x, "ValidationErrors", js.Array(value :_*))
   }
 }

@@ -19,49 +19,35 @@ trait AudioConferencing extends StObject {
 }
 object AudioConferencing {
   
-  @scala.inline
-  def apply(): AudioConferencing = {
+  inline def apply(): AudioConferencing = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AudioConferencing]
   }
   
-  @scala.inline
-  implicit class AudioConferencingMutableBuilder[Self <: AudioConferencing] (val x: Self) extends AnyVal {
+  extension [Self <: AudioConferencing](x: Self) {
     
-    @scala.inline
-    def setConferenceId(value: NullableOption[String]): Self = StObject.set(x, "conferenceId", value.asInstanceOf[js.Any])
+    inline def setConferenceId(value: NullableOption[String]): Self = StObject.set(x, "conferenceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConferenceIdNull: Self = StObject.set(x, "conferenceId", null)
+    inline def setConferenceIdNull: Self = StObject.set(x, "conferenceId", null)
     
-    @scala.inline
-    def setConferenceIdUndefined: Self = StObject.set(x, "conferenceId", js.undefined)
+    inline def setConferenceIdUndefined: Self = StObject.set(x, "conferenceId", js.undefined)
     
-    @scala.inline
-    def setDialinUrl(value: NullableOption[String]): Self = StObject.set(x, "dialinUrl", value.asInstanceOf[js.Any])
+    inline def setDialinUrl(value: NullableOption[String]): Self = StObject.set(x, "dialinUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialinUrlNull: Self = StObject.set(x, "dialinUrl", null)
+    inline def setDialinUrlNull: Self = StObject.set(x, "dialinUrl", null)
     
-    @scala.inline
-    def setDialinUrlUndefined: Self = StObject.set(x, "dialinUrl", js.undefined)
+    inline def setDialinUrlUndefined: Self = StObject.set(x, "dialinUrl", js.undefined)
     
-    @scala.inline
-    def setTollFreeNumber(value: NullableOption[String]): Self = StObject.set(x, "tollFreeNumber", value.asInstanceOf[js.Any])
+    inline def setTollFreeNumber(value: NullableOption[String]): Self = StObject.set(x, "tollFreeNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTollFreeNumberNull: Self = StObject.set(x, "tollFreeNumber", null)
+    inline def setTollFreeNumberNull: Self = StObject.set(x, "tollFreeNumber", null)
     
-    @scala.inline
-    def setTollFreeNumberUndefined: Self = StObject.set(x, "tollFreeNumber", js.undefined)
+    inline def setTollFreeNumberUndefined: Self = StObject.set(x, "tollFreeNumber", js.undefined)
     
-    @scala.inline
-    def setTollNumber(value: NullableOption[String]): Self = StObject.set(x, "tollNumber", value.asInstanceOf[js.Any])
+    inline def setTollNumber(value: NullableOption[String]): Self = StObject.set(x, "tollNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTollNumberNull: Self = StObject.set(x, "tollNumber", null)
+    inline def setTollNumberNull: Self = StObject.set(x, "tollNumber", null)
     
-    @scala.inline
-    def setTollNumberUndefined: Self = StObject.set(x, "tollNumber", js.undefined)
+    inline def setTollNumberUndefined: Self = StObject.set(x, "tollNumber", js.undefined)
   }
 }

@@ -51,8 +51,7 @@ object JSGit {
   }
   object DB {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clear: js.Function1[/* err */ js.Any, Unit] => Unit,
       del: (String, js.Function1[/* err */ js.Any, Unit]) => Unit,
       get: (String, js.Function2[/* err */ js.Any, /* value */ js.Any, Unit]) => Unit,
@@ -65,29 +64,21 @@ object JSGit {
       __obj.asInstanceOf[DB]
     }
     
-    @scala.inline
-    implicit class DBMutableBuilder[Self <: DB] (val x: Self) extends AnyVal {
+    extension [Self <: DB](x: Self) {
       
-      @scala.inline
-      def setClear(value: js.Function1[/* err */ js.Any, Unit] => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
+      inline def setClear(value: js.Function1[/* err */ js.Any, Unit] => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDel(value: (String, js.Function1[/* err */ js.Any, Unit]) => Unit): Self = StObject.set(x, "del", js.Any.fromFunction2(value))
+      inline def setDel(value: (String, js.Function1[/* err */ js.Any, Unit]) => Unit): Self = StObject.set(x, "del", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGet(value: (String, js.Function2[/* err */ js.Any, /* value */ js.Any, Unit]) => Unit): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+      inline def setGet(value: (String, js.Function2[/* err */ js.Any, /* value */ js.Any, Unit]) => Unit): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setHas(value: (String, js.Function2[/* err */ js.Any, /* hasKey */ Boolean, Unit]) => Unit): Self = StObject.set(x, "has", js.Any.fromFunction2(value))
+      inline def setHas(value: (String, js.Function2[/* err */ js.Any, /* hasKey */ Boolean, Unit]) => Unit): Self = StObject.set(x, "has", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInit(value: js.Function1[/* err */ js.Any, Unit] => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+      inline def setInit(value: js.Function1[/* err */ js.Any, Unit] => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setKeys(value: (String, js.Function2[/* err */ js.Any, /* keys */ js.Array[String], Unit]) => Unit): Self = StObject.set(x, "keys", js.Any.fromFunction2(value))
+      inline def setKeys(value: (String, js.Function2[/* err */ js.Any, /* keys */ js.Array[String], Unit]) => Unit): Self = StObject.set(x, "keys", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSet(value: (String, js.Any, js.Function1[/* err */ js.Any, Unit]) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction3(value))
+      inline def setSet(value: (String, js.Any, js.Function1[/* err */ js.Any, Unit]) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction3(value))
     }
   }
   
@@ -101,23 +92,18 @@ object JSGit {
   }
   object GitAuthor {
     
-    @scala.inline
-    def apply(date: Date, email: String, name: String): GitAuthor = {
+    inline def apply(date: Date, email: String, name: String): GitAuthor = {
       val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GitAuthor]
     }
     
-    @scala.inline
-    implicit class GitAuthorMutableBuilder[Self <: GitAuthor] (val x: Self) extends AnyVal {
+    extension [Self <: GitAuthor](x: Self) {
       
-      @scala.inline
-      def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -131,23 +117,18 @@ object JSGit {
   }
   object GitCommit {
     
-    @scala.inline
-    def apply(author: GitAuthor, message: String, tree: String): GitCommit = {
+    inline def apply(author: GitAuthor, message: String, tree: String): GitCommit = {
       val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], tree = tree.asInstanceOf[js.Any])
       __obj.asInstanceOf[GitCommit]
     }
     
-    @scala.inline
-    implicit class GitCommitMutableBuilder[Self <: GitCommit] (val x: Self) extends AnyVal {
+    extension [Self <: GitCommit](x: Self) {
       
-      @scala.inline
-      def setAuthor(value: GitAuthor): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+      inline def setAuthor(value: GitAuthor): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTree(value: String): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
+      inline def setTree(value: String): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
     }
   }
   
@@ -159,21 +140,17 @@ object JSGit {
   }
   object GitObject {
     
-    @scala.inline
-    def apply(body: js.Any, `type`: String): GitObject = {
+    inline def apply(body: js.Any, `type`: String): GitObject = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[GitObject]
     }
     
-    @scala.inline
-    implicit class GitObjectMutableBuilder[Self <: GitObject] (val x: Self) extends AnyVal {
+    extension [Self <: GitObject](x: Self) {
       
-      @scala.inline
-      def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -189,23 +166,18 @@ object JSGit {
   }
   object GitTreeElem {
     
-    @scala.inline
-    def apply(hash: String, mode: Double, name: String): GitTreeElem = {
+    inline def apply(hash: String, mode: Double, name: String): GitTreeElem = {
       val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GitTreeElem]
     }
     
-    @scala.inline
-    implicit class GitTreeElemMutableBuilder[Self <: GitTreeElem] (val x: Self) extends AnyVal {
+    extension [Self <: GitTreeElem](x: Self) {
       
-      @scala.inline
-      def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -327,8 +299,7 @@ object JSGit {
   }
   object Repo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       fetch: (Remote, js.Object, js.Function1[/* err */ js.Any, Unit]) => Unit,
       getHead: js.Function2[/* err */ js.Any, /* ref_name */ String, Unit] => Unit,
       load: (String, js.Function2[/* err */ js.Any, /* git_object */ GitObject, Unit]) => Unit,
@@ -348,50 +319,35 @@ object JSGit {
       __obj.asInstanceOf[Repo]
     }
     
-    @scala.inline
-    implicit class RepoMutableBuilder[Self <: Repo] (val x: Self) extends AnyVal {
+    extension [Self <: Repo](x: Self) {
       
-      @scala.inline
-      def setFetch(value: (Remote, js.Object, js.Function1[/* err */ js.Any, Unit]) => Unit): Self = StObject.set(x, "fetch", js.Any.fromFunction3(value))
+      inline def setFetch(value: (Remote, js.Object, js.Function1[/* err */ js.Any, Unit]) => Unit): Self = StObject.set(x, "fetch", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetHead(value: js.Function2[/* err */ js.Any, /* ref_name */ String, Unit] => Unit): Self = StObject.set(x, "getHead", js.Any.fromFunction1(value))
+      inline def setGetHead(value: js.Function2[/* err */ js.Any, /* ref_name */ String, Unit] => Unit): Self = StObject.set(x, "getHead", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLoad(value: (String, js.Function2[/* err */ js.Any, /* git_object */ GitObject, Unit]) => Unit): Self = StObject.set(x, "load", js.Any.fromFunction2(value))
+      inline def setLoad(value: (String, js.Function2[/* err */ js.Any, /* git_object */ GitObject, Unit]) => Unit): Self = StObject.set(x, "load", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLoadAs(value: (String, String, js.Function2[/* err */ js.Any, /* body */ js.Any, Unit]) => Unit): Self = StObject.set(x, "loadAs", js.Any.fromFunction3(value))
+      inline def setLoadAs(value: (String, String, js.Function2[/* err */ js.Any, /* body */ js.Any, Unit]) => Unit): Self = StObject.set(x, "loadAs", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setLogWalk(value: (String, js.Function2[/* err */ js.Any, /* log_stream */ js.Any, Unit]) => Unit): Self = StObject.set(x, "logWalk", js.Any.fromFunction2(value))
+      inline def setLogWalk(value: (String, js.Function2[/* err */ js.Any, /* log_stream */ js.Any, Unit]) => Unit): Self = StObject.set(x, "logWalk", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemove(value: (String, js.Function1[/* err */ js.Any, Unit]) => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
+      inline def setRemove(value: (String, js.Function1[/* err */ js.Any, Unit]) => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setResolveHashish(value: (String, js.Function2[/* err */ js.Any, /* hash */ String, Unit]) => Unit): Self = StObject.set(x, "resolveHashish", js.Any.fromFunction2(value))
+      inline def setResolveHashish(value: (String, js.Function2[/* err */ js.Any, /* hash */ String, Unit]) => Unit): Self = StObject.set(x, "resolveHashish", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSave(value: (GitObject, js.Function2[/* err */ js.Any, /* hash */ String, Unit]) => Unit): Self = StObject.set(x, "save", js.Any.fromFunction2(value))
+      inline def setSave(value: (GitObject, js.Function2[/* err */ js.Any, /* hash */ String, Unit]) => Unit): Self = StObject.set(x, "save", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSaveAs(value: (String, js.Any, js.Function2[/* err */ js.Any, /* hash */ String, Unit]) => Unit): Self = StObject.set(x, "saveAs", js.Any.fromFunction3(value))
+      inline def setSaveAs(value: (String, js.Any, js.Function2[/* err */ js.Any, /* hash */ String, Unit]) => Unit): Self = StObject.set(x, "saveAs", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSetHead(value: (String, js.Function1[/* err */ js.Any, Unit]) => Unit): Self = StObject.set(x, "setHead", js.Any.fromFunction2(value))
+      inline def setSetHead(value: (String, js.Function1[/* err */ js.Any, Unit]) => Unit): Self = StObject.set(x, "setHead", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTreeWalk(value: (String, js.Function2[/* err */ js.Any, /* file_stream */ js.Any, Unit]) => Unit): Self = StObject.set(x, "treeWalk", js.Any.fromFunction2(value))
+      inline def setTreeWalk(value: (String, js.Function2[/* err */ js.Any, /* file_stream */ js.Any, Unit]) => Unit): Self = StObject.set(x, "treeWalk", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUnpack(value: (js.Any, js.Object, js.Function1[/* err */ js.Any, Unit]) => Unit): Self = StObject.set(x, "unpack", js.Any.fromFunction3(value))
+      inline def setUnpack(value: (js.Any, js.Object, js.Function1[/* err */ js.Any, Unit]) => Unit): Self = StObject.set(x, "unpack", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setUpdateHead(value: (String, js.Function1[/* err */ js.Any, Unit]) => Unit): Self = StObject.set(x, "updateHead", js.Any.fromFunction2(value))
+      inline def setUpdateHead(value: (String, js.Function1[/* err */ js.Any, Unit]) => Unit): Self = StObject.set(x, "updateHead", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWalk(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "walk", js.Any.fromFunction4(value))
+      inline def setWalk(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "walk", js.Any.fromFunction4(value))
     }
   }
   

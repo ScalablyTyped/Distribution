@@ -48,65 +48,47 @@ trait AndroidConfig extends StObject {
 }
 object AndroidConfig {
   
-  @scala.inline
-  def apply(): AndroidConfig = {
+  inline def apply(): AndroidConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AndroidConfig]
   }
   
-  @scala.inline
-  implicit class AndroidConfigMutableBuilder[Self <: AndroidConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AndroidConfig](x: Self) {
     
-    @scala.inline
-    def setCollapseKey(value: String): Self = StObject.set(x, "collapseKey", value.asInstanceOf[js.Any])
+    inline def setCollapseKey(value: String): Self = StObject.set(x, "collapseKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollapseKeyUndefined: Self = StObject.set(x, "collapseKey", js.undefined)
+    inline def setCollapseKeyUndefined: Self = StObject.set(x, "collapseKey", js.undefined)
     
-    @scala.inline
-    def setData(
+    inline def setData(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.AndroidConfig & TopLevel[js.Any]
     ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setDirectBootOk(value: Boolean): Self = StObject.set(x, "directBootOk", value.asInstanceOf[js.Any])
+    inline def setDirectBootOk(value: Boolean): Self = StObject.set(x, "directBootOk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectBootOkUndefined: Self = StObject.set(x, "directBootOk", js.undefined)
+    inline def setDirectBootOkUndefined: Self = StObject.set(x, "directBootOk", js.undefined)
     
-    @scala.inline
-    def setFcmOptions(value: AndroidFcmOptions): Self = StObject.set(x, "fcmOptions", value.asInstanceOf[js.Any])
+    inline def setFcmOptions(value: AndroidFcmOptions): Self = StObject.set(x, "fcmOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFcmOptionsUndefined: Self = StObject.set(x, "fcmOptions", js.undefined)
+    inline def setFcmOptionsUndefined: Self = StObject.set(x, "fcmOptions", js.undefined)
     
-    @scala.inline
-    def setNotification(value: AndroidNotification): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
+    inline def setNotification(value: AndroidNotification): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
+    inline def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
     
-    @scala.inline
-    def setPriority(value: String): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: String): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
-    @scala.inline
-    def setRestrictedPackageName(value: String): Self = StObject.set(x, "restrictedPackageName", value.asInstanceOf[js.Any])
+    inline def setRestrictedPackageName(value: String): Self = StObject.set(x, "restrictedPackageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestrictedPackageNameUndefined: Self = StObject.set(x, "restrictedPackageName", js.undefined)
+    inline def setRestrictedPackageNameUndefined: Self = StObject.set(x, "restrictedPackageName", js.undefined)
     
-    @scala.inline
-    def setTtl(value: String): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+    inline def setTtl(value: String): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+    inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
   }
 }

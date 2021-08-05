@@ -18,22 +18,17 @@ trait GetScriptSourceResponse extends StObject {
 }
 object GetScriptSourceResponse {
   
-  @scala.inline
-  def apply(scriptSource: String): GetScriptSourceResponse = {
+  inline def apply(scriptSource: String): GetScriptSourceResponse = {
     val __obj = js.Dynamic.literal(scriptSource = scriptSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetScriptSourceResponse]
   }
   
-  @scala.inline
-  implicit class GetScriptSourceResponseMutableBuilder[Self <: GetScriptSourceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetScriptSourceResponse](x: Self) {
     
-    @scala.inline
-    def setBytecode(value: String): Self = StObject.set(x, "bytecode", value.asInstanceOf[js.Any])
+    inline def setBytecode(value: String): Self = StObject.set(x, "bytecode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytecodeUndefined: Self = StObject.set(x, "bytecode", js.undefined)
+    inline def setBytecodeUndefined: Self = StObject.set(x, "bytecode", js.undefined)
     
-    @scala.inline
-    def setScriptSource(value: String): Self = StObject.set(x, "scriptSource", value.asInstanceOf[js.Any])
+    inline def setScriptSource(value: String): Self = StObject.set(x, "scriptSource", value.asInstanceOf[js.Any])
   }
 }

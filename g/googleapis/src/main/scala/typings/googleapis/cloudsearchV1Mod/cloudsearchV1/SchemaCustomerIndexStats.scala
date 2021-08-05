@@ -21,28 +21,21 @@ trait SchemaCustomerIndexStats extends StObject {
 }
 object SchemaCustomerIndexStats {
   
-  @scala.inline
-  def apply(): SchemaCustomerIndexStats = {
+  inline def apply(): SchemaCustomerIndexStats = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCustomerIndexStats]
   }
   
-  @scala.inline
-  implicit class SchemaCustomerIndexStatsMutableBuilder[Self <: SchemaCustomerIndexStats] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCustomerIndexStats](x: Self) {
     
-    @scala.inline
-    def setDate(value: SchemaDate): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: SchemaDate): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    @scala.inline
-    def setItemCountByStatus(value: js.Array[SchemaItemCountByStatus]): Self = StObject.set(x, "itemCountByStatus", value.asInstanceOf[js.Any])
+    inline def setItemCountByStatus(value: js.Array[SchemaItemCountByStatus]): Self = StObject.set(x, "itemCountByStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemCountByStatusUndefined: Self = StObject.set(x, "itemCountByStatus", js.undefined)
+    inline def setItemCountByStatusUndefined: Self = StObject.set(x, "itemCountByStatus", js.undefined)
     
-    @scala.inline
-    def setItemCountByStatusVarargs(value: SchemaItemCountByStatus*): Self = StObject.set(x, "itemCountByStatus", js.Array(value :_*))
+    inline def setItemCountByStatusVarargs(value: SchemaItemCountByStatus*): Self = StObject.set(x, "itemCountByStatus", js.Array(value :_*))
   }
 }

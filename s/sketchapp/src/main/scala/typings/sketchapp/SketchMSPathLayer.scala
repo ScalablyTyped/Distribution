@@ -26,8 +26,7 @@ trait SketchMSPathLayer
 }
 object SketchMSPathLayer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _class: path | shapePath | rectangle | oval | triangle,
     booleanOperation: SketchMSLayerBooleanOperation,
     clippingMaskMode: SketchMSLayerClippingMaskMode,
@@ -57,25 +56,18 @@ object SketchMSPathLayer {
     __obj.asInstanceOf[SketchMSPathLayer]
   }
   
-  @scala.inline
-  implicit class SketchMSPathLayerMutableBuilder[Self <: SketchMSPathLayer] (val x: Self) extends AnyVal {
+  extension [Self <: SketchMSPathLayer](x: Self) {
     
-    @scala.inline
-    def setEdited(value: Boolean): Self = StObject.set(x, "edited", value.asInstanceOf[js.Any])
+    inline def setEdited(value: Boolean): Self = StObject.set(x, "edited", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsClosed(value: Boolean): Self = StObject.set(x, "isClosed", value.asInstanceOf[js.Any])
+    inline def setIsClosed(value: Boolean): Self = StObject.set(x, "isClosed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointRadiusBehaviour(value: Double): Self = StObject.set(x, "pointRadiusBehaviour", value.asInstanceOf[js.Any])
+    inline def setPointRadiusBehaviour(value: Double): Self = StObject.set(x, "pointRadiusBehaviour", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoints(value: js.Array[SketchMSPoint]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: js.Array[SketchMSPoint]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointsVarargs(value: SketchMSPoint*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: SketchMSPoint*): Self = StObject.set(x, "points", js.Array(value :_*))
     
-    @scala.inline
-    def set_class(value: path | shapePath | rectangle | oval | triangle): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
+    inline def set_class(value: path | shapePath | rectangle | oval | triangle): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

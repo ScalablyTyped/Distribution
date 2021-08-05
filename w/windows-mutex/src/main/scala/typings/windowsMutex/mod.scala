@@ -20,6 +20,5 @@ object mod {
     def release(): Unit = js.native
   }
   
-  @scala.inline
-  def isActive(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isActive")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isActive(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isActive")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

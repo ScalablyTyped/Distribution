@@ -30,8 +30,7 @@ trait TouchEvent[T]
 }
 object TouchEvent {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     altKey: Boolean,
     bubbles: Boolean,
     cancelable: Boolean,
@@ -63,31 +62,22 @@ object TouchEvent {
     __obj.asInstanceOf[TouchEvent[T]]
   }
   
-  @scala.inline
-  implicit class TouchEventMutableBuilder[Self <: TouchEvent[?], T] (val x: Self & TouchEvent[T]) extends AnyVal {
+  extension [Self <: TouchEvent[?], T](x: Self & TouchEvent[T]) {
     
-    @scala.inline
-    def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
+    inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangedTouches(value: TouchList): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
+    inline def setChangedTouches(value: TouchList): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
+    inline def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetModifierState(value: String => Boolean): Self = StObject.set(x, "getModifierState", js.Any.fromFunction1(value))
+    inline def setGetModifierState(value: String => Boolean): Self = StObject.set(x, "getModifierState", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
+    inline def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
+    inline def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetTouches(value: TouchList): Self = StObject.set(x, "targetTouches", value.asInstanceOf[js.Any])
+    inline def setTargetTouches(value: TouchList): Self = StObject.set(x, "targetTouches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouches(value: TouchList): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
+    inline def setTouches(value: TouchList): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
   }
 }

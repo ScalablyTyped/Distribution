@@ -38,8 +38,7 @@ trait TaskDefinitionEndpoint extends StObject {
 }
 object TaskDefinitionEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     connectionId: String,
     keySelector: String,
     scope: String,
@@ -51,25 +50,18 @@ object TaskDefinitionEndpoint {
     __obj.asInstanceOf[TaskDefinitionEndpoint]
   }
   
-  @scala.inline
-  implicit class TaskDefinitionEndpointMutableBuilder[Self <: TaskDefinitionEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: TaskDefinitionEndpoint](x: Self) {
     
-    @scala.inline
-    def setConnectionId(value: String): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
+    inline def setConnectionId(value: String): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeySelector(value: String): Self = StObject.set(x, "keySelector", value.asInstanceOf[js.Any])
+    inline def setKeySelector(value: String): Self = StObject.set(x, "keySelector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskId(value: String): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
+    inline def setTaskId(value: String): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

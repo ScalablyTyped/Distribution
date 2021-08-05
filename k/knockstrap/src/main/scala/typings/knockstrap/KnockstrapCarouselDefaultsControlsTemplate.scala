@@ -12,8 +12,7 @@ trait KnockstrapCarouselDefaultsControlsTemplate
 }
 object KnockstrapCarouselDefaultsControlsTemplate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dataConverter: js.Any => KnockstrapCarouselDefaultsIdDataConverted,
     name: String,
     templateEngine: KnockstrapStringTemplateEngine
@@ -22,10 +21,8 @@ object KnockstrapCarouselDefaultsControlsTemplate {
     __obj.asInstanceOf[KnockstrapCarouselDefaultsControlsTemplate]
   }
   
-  @scala.inline
-  implicit class KnockstrapCarouselDefaultsControlsTemplateMutableBuilder[Self <: KnockstrapCarouselDefaultsControlsTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: KnockstrapCarouselDefaultsControlsTemplate](x: Self) {
     
-    @scala.inline
-    def setDataConverter(value: js.Any => KnockstrapCarouselDefaultsIdDataConverted): Self = StObject.set(x, "dataConverter", js.Any.fromFunction1(value))
+    inline def setDataConverter(value: js.Any => KnockstrapCarouselDefaultsIdDataConverted): Self = StObject.set(x, "dataConverter", js.Any.fromFunction1(value))
   }
 }

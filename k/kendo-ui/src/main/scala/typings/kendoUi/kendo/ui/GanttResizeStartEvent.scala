@@ -13,19 +13,15 @@ trait GanttResizeStartEvent
 }
 object GanttResizeStartEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Gantt): GanttResizeStartEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Gantt): GanttResizeStartEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[GanttResizeStartEvent]
   }
   
-  @scala.inline
-  implicit class GanttResizeStartEventMutableBuilder[Self <: GanttResizeStartEvent] (val x: Self) extends AnyVal {
+  extension [Self <: GanttResizeStartEvent](x: Self) {
     
-    @scala.inline
-    def setTask(value: GanttTask): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
+    inline def setTask(value: GanttTask): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskUndefined: Self = StObject.set(x, "task", js.undefined)
+    inline def setTaskUndefined: Self = StObject.set(x, "task", js.undefined)
   }
 }

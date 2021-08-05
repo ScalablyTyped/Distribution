@@ -37,8 +37,7 @@ object cloudassetMod {
     @JSImport("googleapis/build/src/apis/cloudasset", "VERSIONS.v1")
     @js.native
     def v1: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Cloudasset] = js.native
-    @scala.inline
-    def v1_=(
+    inline def v1_=(
       x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Cloudasset]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
     
@@ -57,8 +56,7 @@ object cloudassetMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.cloudassetV1beta1Mod.cloudassetV1beta1.Cloudasset
       ] = js.native
-    @scala.inline
-    def v1beta1_=(
+    inline def v1beta1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -100,8 +98,7 @@ object cloudassetMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -145,14 +142,10 @@ object cloudassetMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def cloudasset(options: Options): Cloudasset = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudasset")(options.asInstanceOf[js.Any]).asInstanceOf[Cloudasset]
-  @scala.inline
-  def cloudasset(options: typings.googleapis.cloudassetV1beta1Mod.cloudassetV1beta1.Options): typings.googleapis.cloudassetV1beta1Mod.cloudassetV1beta1.Cloudasset = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudasset")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.cloudassetV1beta1Mod.cloudassetV1beta1.Cloudasset]
+  inline def cloudasset(options: Options): Cloudasset = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudasset")(options.asInstanceOf[js.Any]).asInstanceOf[Cloudasset]
+  inline def cloudasset(options: typings.googleapis.cloudassetV1beta1Mod.cloudassetV1beta1.Options): typings.googleapis.cloudassetV1beta1Mod.cloudassetV1beta1.Cloudasset = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudasset")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.cloudassetV1beta1Mod.cloudassetV1beta1.Cloudasset]
   
-  @scala.inline
-  def cloudasset_v1(version: v1): Cloudasset = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudasset")(version.asInstanceOf[js.Any]).asInstanceOf[Cloudasset]
+  inline def cloudasset_v1(version: v1): Cloudasset = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudasset")(version.asInstanceOf[js.Any]).asInstanceOf[Cloudasset]
   
-  @scala.inline
-  def cloudasset_v1beta1(version: v1beta1): typings.googleapis.cloudassetV1beta1Mod.cloudassetV1beta1.Cloudasset = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudasset")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.cloudassetV1beta1Mod.cloudassetV1beta1.Cloudasset]
+  inline def cloudasset_v1beta1(version: v1beta1): typings.googleapis.cloudassetV1beta1Mod.cloudassetV1beta1.Cloudasset = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudasset")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.cloudassetV1beta1Mod.cloudassetV1beta1.Cloudasset]
 }

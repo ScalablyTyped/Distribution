@@ -37,37 +37,27 @@ trait Credential extends StObject {
 }
 object Credential {
   
-  @scala.inline
-  def apply(credentialId: String, isResidentCredential: Boolean, privateKey: String, signCount: integer): Credential = {
+  inline def apply(credentialId: String, isResidentCredential: Boolean, privateKey: String, signCount: integer): Credential = {
     val __obj = js.Dynamic.literal(credentialId = credentialId.asInstanceOf[js.Any], isResidentCredential = isResidentCredential.asInstanceOf[js.Any], privateKey = privateKey.asInstanceOf[js.Any], signCount = signCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[Credential]
   }
   
-  @scala.inline
-  implicit class CredentialMutableBuilder[Self <: Credential] (val x: Self) extends AnyVal {
+  extension [Self <: Credential](x: Self) {
     
-    @scala.inline
-    def setCredentialId(value: String): Self = StObject.set(x, "credentialId", value.asInstanceOf[js.Any])
+    inline def setCredentialId(value: String): Self = StObject.set(x, "credentialId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsResidentCredential(value: Boolean): Self = StObject.set(x, "isResidentCredential", value.asInstanceOf[js.Any])
+    inline def setIsResidentCredential(value: Boolean): Self = StObject.set(x, "isResidentCredential", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
+    inline def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRpId(value: String): Self = StObject.set(x, "rpId", value.asInstanceOf[js.Any])
+    inline def setRpId(value: String): Self = StObject.set(x, "rpId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRpIdUndefined: Self = StObject.set(x, "rpId", js.undefined)
+    inline def setRpIdUndefined: Self = StObject.set(x, "rpId", js.undefined)
     
-    @scala.inline
-    def setSignCount(value: integer): Self = StObject.set(x, "signCount", value.asInstanceOf[js.Any])
+    inline def setSignCount(value: integer): Self = StObject.set(x, "signCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserHandle(value: String): Self = StObject.set(x, "userHandle", value.asInstanceOf[js.Any])
+    inline def setUserHandle(value: String): Self = StObject.set(x, "userHandle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserHandleUndefined: Self = StObject.set(x, "userHandle", js.undefined)
+    inline def setUserHandleUndefined: Self = StObject.set(x, "userHandle", js.undefined)
   }
 }

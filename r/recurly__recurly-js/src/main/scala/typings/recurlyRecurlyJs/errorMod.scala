@@ -19,26 +19,20 @@ object errorMod {
   }
   object RecurlyError {
     
-    @scala.inline
-    def apply(classification: String, code: String, message: String, name: String): RecurlyError = {
+    inline def apply(classification: String, code: String, message: String, name: String): RecurlyError = {
       val __obj = js.Dynamic.literal(classification = classification.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[RecurlyError]
     }
     
-    @scala.inline
-    implicit class RecurlyErrorMutableBuilder[Self <: RecurlyError] (val x: Self) extends AnyVal {
+    extension [Self <: RecurlyError](x: Self) {
       
-      @scala.inline
-      def setClassification(value: String): Self = StObject.set(x, "classification", value.asInstanceOf[js.Any])
+      inline def setClassification(value: String): Self = StObject.set(x, "classification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelp(value: String): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
+      inline def setHelp(value: String): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
+      inline def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
     }
   }
 }

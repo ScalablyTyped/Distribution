@@ -28,37 +28,27 @@ trait CustomAvailabilityZone extends StObject {
 }
 object CustomAvailabilityZone {
   
-  @scala.inline
-  def apply(): CustomAvailabilityZone = {
+  inline def apply(): CustomAvailabilityZone = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomAvailabilityZone]
   }
   
-  @scala.inline
-  implicit class CustomAvailabilityZoneMutableBuilder[Self <: CustomAvailabilityZone] (val x: Self) extends AnyVal {
+  extension [Self <: CustomAvailabilityZone](x: Self) {
     
-    @scala.inline
-    def setCustomAvailabilityZoneId(value: String): Self = StObject.set(x, "CustomAvailabilityZoneId", value.asInstanceOf[js.Any])
+    inline def setCustomAvailabilityZoneId(value: String): Self = StObject.set(x, "CustomAvailabilityZoneId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomAvailabilityZoneIdUndefined: Self = StObject.set(x, "CustomAvailabilityZoneId", js.undefined)
+    inline def setCustomAvailabilityZoneIdUndefined: Self = StObject.set(x, "CustomAvailabilityZoneId", js.undefined)
     
-    @scala.inline
-    def setCustomAvailabilityZoneName(value: String): Self = StObject.set(x, "CustomAvailabilityZoneName", value.asInstanceOf[js.Any])
+    inline def setCustomAvailabilityZoneName(value: String): Self = StObject.set(x, "CustomAvailabilityZoneName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomAvailabilityZoneNameUndefined: Self = StObject.set(x, "CustomAvailabilityZoneName", js.undefined)
+    inline def setCustomAvailabilityZoneNameUndefined: Self = StObject.set(x, "CustomAvailabilityZoneName", js.undefined)
     
-    @scala.inline
-    def setCustomAvailabilityZoneStatus(value: String): Self = StObject.set(x, "CustomAvailabilityZoneStatus", value.asInstanceOf[js.Any])
+    inline def setCustomAvailabilityZoneStatus(value: String): Self = StObject.set(x, "CustomAvailabilityZoneStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomAvailabilityZoneStatusUndefined: Self = StObject.set(x, "CustomAvailabilityZoneStatus", js.undefined)
+    inline def setCustomAvailabilityZoneStatusUndefined: Self = StObject.set(x, "CustomAvailabilityZoneStatus", js.undefined)
     
-    @scala.inline
-    def setVpnDetails(value: VpnDetails): Self = StObject.set(x, "VpnDetails", value.asInstanceOf[js.Any])
+    inline def setVpnDetails(value: VpnDetails): Self = StObject.set(x, "VpnDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpnDetailsUndefined: Self = StObject.set(x, "VpnDetails", js.undefined)
+    inline def setVpnDetailsUndefined: Self = StObject.set(x, "VpnDetails", js.undefined)
   }
 }

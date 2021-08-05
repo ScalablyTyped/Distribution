@@ -16,8 +16,7 @@ object loadEntryPointMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def loadEntryPoint[TEntryPoint](
+  inline def loadEntryPoint[TEntryPoint](
     environmentProvider: IEnvironmentProvider[EnvironmentProviderOptions[Record[String, js.Any]]],
     entryPoint: TEntryPoint,
     entryPointParams: GetEntryPointParamsFromEntryPoint[TEntryPoint]

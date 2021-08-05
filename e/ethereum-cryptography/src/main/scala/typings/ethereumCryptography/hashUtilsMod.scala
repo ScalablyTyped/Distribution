@@ -12,6 +12,5 @@ object hashUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createHashFunction(hashConstructor: js.Function0[Hash]): js.Function1[/* msg */ Buffer, Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("createHashFunction")(hashConstructor.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* msg */ Buffer, Buffer]]
+  inline def createHashFunction(hashConstructor: js.Function0[Hash]): js.Function1[/* msg */ Buffer, Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("createHashFunction")(hashConstructor.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* msg */ Buffer, Buffer]]
 }

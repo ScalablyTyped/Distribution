@@ -64,29 +64,22 @@ object mod extends Shortcut {
   }
   object v1 {
     
-    @scala.inline
-    def apply(clockseq: Double, msecs: Double | Date, node: js.Array[Double], nsecs: Double): v1 = {
+    inline def apply(clockseq: Double, msecs: Double | Date, node: js.Array[Double], nsecs: Double): v1 = {
       val __obj = js.Dynamic.literal(clockseq = clockseq.asInstanceOf[js.Any], msecs = msecs.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], nsecs = nsecs.asInstanceOf[js.Any])
       __obj.asInstanceOf[v1]
     }
     
-    @scala.inline
-    implicit class v1MutableBuilder[Self <: v1] (val x: Self) extends AnyVal {
+    extension [Self <: v1](x: Self) {
       
-      @scala.inline
-      def setClockseq(value: Double): Self = StObject.set(x, "clockseq", value.asInstanceOf[js.Any])
+      inline def setClockseq(value: Double): Self = StObject.set(x, "clockseq", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsecs(value: Double | Date): Self = StObject.set(x, "msecs", value.asInstanceOf[js.Any])
+      inline def setMsecs(value: Double | Date): Self = StObject.set(x, "msecs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode(value: js.Array[Double]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: js.Array[Double]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeVarargs(value: Double*): Self = StObject.set(x, "node", js.Array(value :_*))
+      inline def setNodeVarargs(value: Double*): Self = StObject.set(x, "node", js.Array(value :_*))
       
-      @scala.inline
-      def setNsecs(value: Double): Self = StObject.set(x, "nsecs", value.asInstanceOf[js.Any])
+      inline def setNsecs(value: Double): Self = StObject.set(x, "nsecs", value.asInstanceOf[js.Any])
     }
   }
   
@@ -98,29 +91,22 @@ object mod extends Shortcut {
   }
   object v4 {
     
-    @scala.inline
-    def apply(): v4 = {
+    inline def apply(): v4 = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[v4]
     }
     
-    @scala.inline
-    implicit class v4MutableBuilder[Self <: v4] (val x: Self) extends AnyVal {
+    extension [Self <: v4](x: Self) {
       
-      @scala.inline
-      def setRandom(value: js.Array[Double]): Self = StObject.set(x, "random", value.asInstanceOf[js.Any])
+      inline def setRandom(value: js.Array[Double]): Self = StObject.set(x, "random", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRandomUndefined: Self = StObject.set(x, "random", js.undefined)
+      inline def setRandomUndefined: Self = StObject.set(x, "random", js.undefined)
       
-      @scala.inline
-      def setRandomVarargs(value: Double*): Self = StObject.set(x, "random", js.Array(value :_*))
+      inline def setRandomVarargs(value: Double*): Self = StObject.set(x, "random", js.Array(value :_*))
       
-      @scala.inline
-      def setRng(value: /* args */ js.Any => Unit): Self = StObject.set(x, "rng", js.Any.fromFunction1(value))
+      inline def setRng(value: /* args */ js.Any => Unit): Self = StObject.set(x, "rng", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRngUndefined: Self = StObject.set(x, "rng", js.undefined)
+      inline def setRngUndefined: Self = StObject.set(x, "rng", js.undefined)
     }
   }
 }

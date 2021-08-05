@@ -19,34 +19,25 @@ trait TestResult extends StObject {
 }
 object TestResult {
   
-  @scala.inline
-  def apply(duration: Double, passed: Boolean, retries: Attempts): TestResult = {
+  inline def apply(duration: Double, passed: Boolean, retries: Attempts): TestResult = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], passed = passed.asInstanceOf[js.Any], retries = retries.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestResult]
   }
   
-  @scala.inline
-  implicit class TestResultMutableBuilder[Self <: TestResult] (val x: Self) extends AnyVal {
+  extension [Self <: TestResult](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setPassed(value: Boolean): Self = StObject.set(x, "passed", value.asInstanceOf[js.Any])
+    inline def setPassed(value: Boolean): Self = StObject.set(x, "passed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     
-    @scala.inline
-    def setRetries(value: Attempts): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
+    inline def setRetries(value: Attempts): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
   }
 }

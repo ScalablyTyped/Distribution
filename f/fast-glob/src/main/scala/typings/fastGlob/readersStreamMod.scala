@@ -18,16 +18,16 @@ object readersStreamMod {
   trait ReaderStream
     extends typings.fastGlob.readerMod.default[Readable] {
     
-    var _getEntry: js.Any = js.native
+    /* private */ var _getEntry: js.Any = js.native
     
-    var _getStat: js.Any = js.native
+    /* private */ var _getStat: js.Any = js.native
     
-    var _stat: Typeofstat = js.native
+    /* protected */ var _stat: Typeofstat = js.native
     
     /* protected */ def _walkStream(directory: String): Readable = js.native
     /* protected */ def _walkStream(directory: String, optionsOrSettings: Options): Readable = js.native
     /* protected */ def _walkStream(directory: String, optionsOrSettings: typings.nodelibFsWalk.settingsMod.default): Readable = js.native
-    @JSName("_walkStream")
+    /* protected */ @JSName("_walkStream")
     var _walkStream_Original: FnCall = js.native
   }
 }

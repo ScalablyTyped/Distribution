@@ -58,73 +58,51 @@ trait GoogleCloudDialogflowV2InputAudioConfig extends StObject {
 }
 object GoogleCloudDialogflowV2InputAudioConfig {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2InputAudioConfig = {
+  inline def apply(): GoogleCloudDialogflowV2InputAudioConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2InputAudioConfig]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2InputAudioConfigMutableBuilder[Self <: GoogleCloudDialogflowV2InputAudioConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2InputAudioConfig](x: Self) {
     
-    @scala.inline
-    def setAudioEncoding(value: String): Self = StObject.set(x, "audioEncoding", value.asInstanceOf[js.Any])
+    inline def setAudioEncoding(value: String): Self = StObject.set(x, "audioEncoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioEncodingUndefined: Self = StObject.set(x, "audioEncoding", js.undefined)
+    inline def setAudioEncodingUndefined: Self = StObject.set(x, "audioEncoding", js.undefined)
     
-    @scala.inline
-    def setEnableWordInfo(value: Boolean): Self = StObject.set(x, "enableWordInfo", value.asInstanceOf[js.Any])
+    inline def setEnableWordInfo(value: Boolean): Self = StObject.set(x, "enableWordInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableWordInfoUndefined: Self = StObject.set(x, "enableWordInfo", js.undefined)
+    inline def setEnableWordInfoUndefined: Self = StObject.set(x, "enableWordInfo", js.undefined)
     
-    @scala.inline
-    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
-    @scala.inline
-    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    @scala.inline
-    def setModelVariant(value: String): Self = StObject.set(x, "modelVariant", value.asInstanceOf[js.Any])
+    inline def setModelVariant(value: String): Self = StObject.set(x, "modelVariant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelVariantUndefined: Self = StObject.set(x, "modelVariant", js.undefined)
+    inline def setModelVariantUndefined: Self = StObject.set(x, "modelVariant", js.undefined)
     
-    @scala.inline
-    def setPhraseHints(value: js.Array[String]): Self = StObject.set(x, "phraseHints", value.asInstanceOf[js.Any])
+    inline def setPhraseHints(value: js.Array[String]): Self = StObject.set(x, "phraseHints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhraseHintsUndefined: Self = StObject.set(x, "phraseHints", js.undefined)
+    inline def setPhraseHintsUndefined: Self = StObject.set(x, "phraseHints", js.undefined)
     
-    @scala.inline
-    def setPhraseHintsVarargs(value: String*): Self = StObject.set(x, "phraseHints", js.Array(value :_*))
+    inline def setPhraseHintsVarargs(value: String*): Self = StObject.set(x, "phraseHints", js.Array(value :_*))
     
-    @scala.inline
-    def setSampleRateHertz(value: Double): Self = StObject.set(x, "sampleRateHertz", value.asInstanceOf[js.Any])
+    inline def setSampleRateHertz(value: Double): Self = StObject.set(x, "sampleRateHertz", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleRateHertzUndefined: Self = StObject.set(x, "sampleRateHertz", js.undefined)
+    inline def setSampleRateHertzUndefined: Self = StObject.set(x, "sampleRateHertz", js.undefined)
     
-    @scala.inline
-    def setSingleUtterance(value: Boolean): Self = StObject.set(x, "singleUtterance", value.asInstanceOf[js.Any])
+    inline def setSingleUtterance(value: Boolean): Self = StObject.set(x, "singleUtterance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleUtteranceUndefined: Self = StObject.set(x, "singleUtterance", js.undefined)
+    inline def setSingleUtteranceUndefined: Self = StObject.set(x, "singleUtterance", js.undefined)
     
-    @scala.inline
-    def setSpeechContexts(value: js.Array[GoogleCloudDialogflowV2SpeechContext]): Self = StObject.set(x, "speechContexts", value.asInstanceOf[js.Any])
+    inline def setSpeechContexts(value: js.Array[GoogleCloudDialogflowV2SpeechContext]): Self = StObject.set(x, "speechContexts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeechContextsUndefined: Self = StObject.set(x, "speechContexts", js.undefined)
+    inline def setSpeechContextsUndefined: Self = StObject.set(x, "speechContexts", js.undefined)
     
-    @scala.inline
-    def setSpeechContextsVarargs(value: GoogleCloudDialogflowV2SpeechContext*): Self = StObject.set(x, "speechContexts", js.Array(value :_*))
+    inline def setSpeechContextsVarargs(value: GoogleCloudDialogflowV2SpeechContext*): Self = StObject.set(x, "speechContexts", js.Array(value :_*))
   }
 }

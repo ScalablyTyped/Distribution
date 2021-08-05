@@ -21,22 +21,17 @@ trait SortField extends StObject {
 }
 object SortField {
   
-  @scala.inline
-  def apply(Field: Double, FieldType: SortFieldType, SortAscending: Boolean): SortField = {
+  inline def apply(Field: Double, FieldType: SortFieldType, SortAscending: Boolean): SortField = {
     val __obj = js.Dynamic.literal(Field = Field.asInstanceOf[js.Any], FieldType = FieldType.asInstanceOf[js.Any], SortAscending = SortAscending.asInstanceOf[js.Any])
     __obj.asInstanceOf[SortField]
   }
   
-  @scala.inline
-  implicit class SortFieldMutableBuilder[Self <: SortField] (val x: Self) extends AnyVal {
+  extension [Self <: SortField](x: Self) {
     
-    @scala.inline
-    def setField(value: Double): Self = StObject.set(x, "Field", value.asInstanceOf[js.Any])
+    inline def setField(value: Double): Self = StObject.set(x, "Field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldType(value: SortFieldType): Self = StObject.set(x, "FieldType", value.asInstanceOf[js.Any])
+    inline def setFieldType(value: SortFieldType): Self = StObject.set(x, "FieldType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortAscending(value: Boolean): Self = StObject.set(x, "SortAscending", value.asInstanceOf[js.Any])
+    inline def setSortAscending(value: Boolean): Self = StObject.set(x, "SortAscending", value.asInstanceOf[js.Any])
   }
 }

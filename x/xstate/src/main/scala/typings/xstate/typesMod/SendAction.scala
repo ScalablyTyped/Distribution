@@ -21,45 +21,34 @@ trait SendAction[TContext, TEvent /* <: EventObject */, TSentEvent /* <: EventOb
 }
 object SendAction {
   
-  @scala.inline
-  def apply[TContext, TEvent /* <: EventObject */, TSentEvent /* <: EventObject */](event: TSentEvent | (SendExpr[TContext, TEvent, TSentEvent]), id: String | Double, `type`: String): SendAction[TContext, TEvent, TSentEvent] = {
+  inline def apply[TContext, TEvent /* <: EventObject */, TSentEvent /* <: EventObject */](event: TSentEvent | (SendExpr[TContext, TEvent, TSentEvent]), id: String | Double, `type`: String): SendAction[TContext, TEvent, TSentEvent] = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendAction[TContext, TEvent, TSentEvent]]
   }
   
-  @scala.inline
-  implicit class SendActionMutableBuilder[Self <: SendAction[?, ?, ?], TContext, TEvent /* <: EventObject */, TSentEvent /* <: EventObject */] (val x: Self & (SendAction[TContext, TEvent, TSentEvent])) extends AnyVal {
+  extension [Self <: SendAction[?, ?, ?], TContext, TEvent /* <: EventObject */, TSentEvent /* <: EventObject */](x: Self & (SendAction[TContext, TEvent, TSentEvent])) {
     
-    @scala.inline
-    def setDelay(value: Double | String | (DelayExpr[TContext, TEvent])): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double | String | (DelayExpr[TContext, TEvent])): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayFunction3(value: (TContext, TEvent, /* meta */ SCXMLEventMeta[TEvent]) => Double): Self = StObject.set(x, "delay", js.Any.fromFunction3(value))
+    inline def setDelayFunction3(value: (TContext, TEvent, /* meta */ SCXMLEventMeta[TEvent]) => Double): Self = StObject.set(x, "delay", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
-    @scala.inline
-    def setEvent(value: TSentEvent | (SendExpr[TContext, TEvent, TSentEvent])): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: TSentEvent | (SendExpr[TContext, TEvent, TSentEvent])): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventFunction3(value: (TContext, TEvent, /* meta */ SCXMLEventMeta[TEvent]) => TSentEvent): Self = StObject.set(x, "event", js.Any.fromFunction3(value))
+    inline def setEventFunction3(value: (TContext, TEvent, /* meta */ SCXMLEventMeta[TEvent]) => TSentEvent): Self = StObject.set(x, "event", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTo(
+    inline def setTo(
       value: String | Double | (Actor[js.Any, AnyEventObject]) | (ExprWithMeta[TContext, TEvent, String | Double | (Actor[js.Any, AnyEventObject])])
     ): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToFunction3(
+    inline def setToFunction3(
       value: (TContext, TEvent, /* meta */ SCXMLEventMeta[TEvent]) => String | Double | (Actor[js.Any, AnyEventObject])
     ): Self = StObject.set(x, "to", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
   }
 }

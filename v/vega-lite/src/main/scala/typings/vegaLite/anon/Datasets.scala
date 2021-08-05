@@ -35,37 +35,27 @@ trait Datasets extends StObject {
 }
 object Datasets {
   
-  @scala.inline
-  def apply(): Datasets = {
+  inline def apply(): Datasets = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Datasets]
   }
   
-  @scala.inline
-  implicit class DatasetsMutableBuilder[Self <: Datasets] (val x: Self) extends AnyVal {
+  extension [Self <: Datasets](x: Self) {
     
-    @scala.inline
-    def set$schema(value: String): Self = StObject.set(x, "$schema", value.asInstanceOf[js.Any])
+    inline def set$schema(value: String): Self = StObject.set(x, "$schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$schemaUndefined: Self = StObject.set(x, "$schema", js.undefined)
+    inline def set$schemaUndefined: Self = StObject.set(x, "$schema", js.undefined)
     
-    @scala.inline
-    def setConfig(value: typings.vegaLite.srcConfigMod.Config[ExprRef | SignalRef]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: typings.vegaLite.srcConfigMod.Config[ExprRef | SignalRef]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    @scala.inline
-    def setDatasets(value: typings.vegaLite.toplevelMod.Datasets): Self = StObject.set(x, "datasets", value.asInstanceOf[js.Any])
+    inline def setDatasets(value: typings.vegaLite.toplevelMod.Datasets): Self = StObject.set(x, "datasets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetsUndefined: Self = StObject.set(x, "datasets", js.undefined)
+    inline def setDatasetsUndefined: Self = StObject.set(x, "datasets", js.undefined)
     
-    @scala.inline
-    def setUsermeta(value: Dict[js.Any]): Self = StObject.set(x, "usermeta", value.asInstanceOf[js.Any])
+    inline def setUsermeta(value: Dict[js.Any]): Self = StObject.set(x, "usermeta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsermetaUndefined: Self = StObject.set(x, "usermeta", js.undefined)
+    inline def setUsermetaUndefined: Self = StObject.set(x, "usermeta", js.undefined)
   }
 }

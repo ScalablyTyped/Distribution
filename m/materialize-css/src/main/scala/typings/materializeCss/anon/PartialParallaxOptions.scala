@@ -11,19 +11,15 @@ trait PartialParallaxOptions extends StObject {
 }
 object PartialParallaxOptions {
   
-  @scala.inline
-  def apply(): PartialParallaxOptions = {
+  inline def apply(): PartialParallaxOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialParallaxOptions]
   }
   
-  @scala.inline
-  implicit class PartialParallaxOptionsMutableBuilder[Self <: PartialParallaxOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PartialParallaxOptions](x: Self) {
     
-    @scala.inline
-    def setResponsiveThreshold(value: Double): Self = StObject.set(x, "responsiveThreshold", value.asInstanceOf[js.Any])
+    inline def setResponsiveThreshold(value: Double): Self = StObject.set(x, "responsiveThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponsiveThresholdUndefined: Self = StObject.set(x, "responsiveThreshold", js.undefined)
+    inline def setResponsiveThresholdUndefined: Self = StObject.set(x, "responsiveThreshold", js.undefined)
   }
 }

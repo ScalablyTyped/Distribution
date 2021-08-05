@@ -13,19 +13,15 @@ trait DescribeCopyJobOutput extends StObject {
 }
 object DescribeCopyJobOutput {
   
-  @scala.inline
-  def apply(): DescribeCopyJobOutput = {
+  inline def apply(): DescribeCopyJobOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeCopyJobOutput]
   }
   
-  @scala.inline
-  implicit class DescribeCopyJobOutputMutableBuilder[Self <: DescribeCopyJobOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeCopyJobOutput](x: Self) {
     
-    @scala.inline
-    def setCopyJob(value: CopyJob): Self = StObject.set(x, "CopyJob", value.asInstanceOf[js.Any])
+    inline def setCopyJob(value: CopyJob): Self = StObject.set(x, "CopyJob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyJobUndefined: Self = StObject.set(x, "CopyJob", js.undefined)
+    inline def setCopyJobUndefined: Self = StObject.set(x, "CopyJob", js.undefined)
   }
 }

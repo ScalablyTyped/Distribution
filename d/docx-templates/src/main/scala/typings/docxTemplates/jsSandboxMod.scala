@@ -12,8 +12,6 @@ object jsSandboxMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def runUserJsAndGetRaw(data: Unit, code: String, ctx: Context): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("runUserJsAndGetRaw")(data.asInstanceOf[js.Any], code.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-  @scala.inline
-  def runUserJsAndGetRaw(data: ReportData, code: String, ctx: Context): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("runUserJsAndGetRaw")(data.asInstanceOf[js.Any], code.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def runUserJsAndGetRaw(data: Unit, code: String, ctx: Context): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("runUserJsAndGetRaw")(data.asInstanceOf[js.Any], code.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def runUserJsAndGetRaw(data: ReportData, code: String, ctx: Context): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("runUserJsAndGetRaw")(data.asInstanceOf[js.Any], code.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
 }

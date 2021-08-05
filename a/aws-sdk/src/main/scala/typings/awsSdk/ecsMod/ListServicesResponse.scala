@@ -18,28 +18,21 @@ trait ListServicesResponse extends StObject {
 }
 object ListServicesResponse {
   
-  @scala.inline
-  def apply(): ListServicesResponse = {
+  inline def apply(): ListServicesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListServicesResponse]
   }
   
-  @scala.inline
-  implicit class ListServicesResponseMutableBuilder[Self <: ListServicesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListServicesResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setServiceArns(value: StringList): Self = StObject.set(x, "serviceArns", value.asInstanceOf[js.Any])
+    inline def setServiceArns(value: StringList): Self = StObject.set(x, "serviceArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceArnsUndefined: Self = StObject.set(x, "serviceArns", js.undefined)
+    inline def setServiceArnsUndefined: Self = StObject.set(x, "serviceArns", js.undefined)
     
-    @scala.inline
-    def setServiceArnsVarargs(value: String*): Self = StObject.set(x, "serviceArns", js.Array(value :_*))
+    inline def setServiceArnsVarargs(value: String*): Self = StObject.set(x, "serviceArns", js.Array(value :_*))
   }
 }

@@ -33,46 +33,33 @@ trait GenericRevisionInfo extends StObject {
 }
 object GenericRevisionInfo {
   
-  @scala.inline
-  def apply(): GenericRevisionInfo = {
+  inline def apply(): GenericRevisionInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GenericRevisionInfo]
   }
   
-  @scala.inline
-  implicit class GenericRevisionInfoMutableBuilder[Self <: GenericRevisionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: GenericRevisionInfo](x: Self) {
     
-    @scala.inline
-    def setDeploymentGroups(value: DeploymentGroupsList): Self = StObject.set(x, "deploymentGroups", value.asInstanceOf[js.Any])
+    inline def setDeploymentGroups(value: DeploymentGroupsList): Self = StObject.set(x, "deploymentGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentGroupsUndefined: Self = StObject.set(x, "deploymentGroups", js.undefined)
+    inline def setDeploymentGroupsUndefined: Self = StObject.set(x, "deploymentGroups", js.undefined)
     
-    @scala.inline
-    def setDeploymentGroupsVarargs(value: DeploymentGroupName*): Self = StObject.set(x, "deploymentGroups", js.Array(value :_*))
+    inline def setDeploymentGroupsVarargs(value: DeploymentGroupName*): Self = StObject.set(x, "deploymentGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setFirstUsedTime(value: Timestamp): Self = StObject.set(x, "firstUsedTime", value.asInstanceOf[js.Any])
+    inline def setFirstUsedTime(value: Timestamp): Self = StObject.set(x, "firstUsedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstUsedTimeUndefined: Self = StObject.set(x, "firstUsedTime", js.undefined)
+    inline def setFirstUsedTimeUndefined: Self = StObject.set(x, "firstUsedTime", js.undefined)
     
-    @scala.inline
-    def setLastUsedTime(value: Timestamp): Self = StObject.set(x, "lastUsedTime", value.asInstanceOf[js.Any])
+    inline def setLastUsedTime(value: Timestamp): Self = StObject.set(x, "lastUsedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUsedTimeUndefined: Self = StObject.set(x, "lastUsedTime", js.undefined)
+    inline def setLastUsedTimeUndefined: Self = StObject.set(x, "lastUsedTime", js.undefined)
     
-    @scala.inline
-    def setRegisterTime(value: Timestamp): Self = StObject.set(x, "registerTime", value.asInstanceOf[js.Any])
+    inline def setRegisterTime(value: Timestamp): Self = StObject.set(x, "registerTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegisterTimeUndefined: Self = StObject.set(x, "registerTime", js.undefined)
+    inline def setRegisterTimeUndefined: Self = StObject.set(x, "registerTime", js.undefined)
   }
 }

@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.SignatureLinesCollection")
 @js.native
-class SignatureLinesCollection protected ()
+/* private */ class SignatureLinesCollection ()
   extends StObject
      with typings.activexInfopath.InfoPath.SignatureLinesCollection {
   
   /* CompleteClass */
   override val Count: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("InfoPath.SignatureLinesCollection_typekey")
   var InfoPathDotSignatureLinesCollection_typekey: typings.activexInfopath.InfoPath.SignatureLinesCollection = js.native
   

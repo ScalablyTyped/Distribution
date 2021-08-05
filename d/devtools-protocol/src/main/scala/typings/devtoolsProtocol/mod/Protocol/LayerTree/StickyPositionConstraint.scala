@@ -29,31 +29,23 @@ trait StickyPositionConstraint extends StObject {
 }
 object StickyPositionConstraint {
   
-  @scala.inline
-  def apply(containingBlockRect: Rect, stickyBoxRect: Rect): StickyPositionConstraint = {
+  inline def apply(containingBlockRect: Rect, stickyBoxRect: Rect): StickyPositionConstraint = {
     val __obj = js.Dynamic.literal(containingBlockRect = containingBlockRect.asInstanceOf[js.Any], stickyBoxRect = stickyBoxRect.asInstanceOf[js.Any])
     __obj.asInstanceOf[StickyPositionConstraint]
   }
   
-  @scala.inline
-  implicit class StickyPositionConstraintMutableBuilder[Self <: StickyPositionConstraint] (val x: Self) extends AnyVal {
+  extension [Self <: StickyPositionConstraint](x: Self) {
     
-    @scala.inline
-    def setContainingBlockRect(value: Rect): Self = StObject.set(x, "containingBlockRect", value.asInstanceOf[js.Any])
+    inline def setContainingBlockRect(value: Rect): Self = StObject.set(x, "containingBlockRect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNearestLayerShiftingContainingBlock(value: LayerId): Self = StObject.set(x, "nearestLayerShiftingContainingBlock", value.asInstanceOf[js.Any])
+    inline def setNearestLayerShiftingContainingBlock(value: LayerId): Self = StObject.set(x, "nearestLayerShiftingContainingBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNearestLayerShiftingContainingBlockUndefined: Self = StObject.set(x, "nearestLayerShiftingContainingBlock", js.undefined)
+    inline def setNearestLayerShiftingContainingBlockUndefined: Self = StObject.set(x, "nearestLayerShiftingContainingBlock", js.undefined)
     
-    @scala.inline
-    def setNearestLayerShiftingStickyBox(value: LayerId): Self = StObject.set(x, "nearestLayerShiftingStickyBox", value.asInstanceOf[js.Any])
+    inline def setNearestLayerShiftingStickyBox(value: LayerId): Self = StObject.set(x, "nearestLayerShiftingStickyBox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNearestLayerShiftingStickyBoxUndefined: Self = StObject.set(x, "nearestLayerShiftingStickyBox", js.undefined)
+    inline def setNearestLayerShiftingStickyBoxUndefined: Self = StObject.set(x, "nearestLayerShiftingStickyBox", js.undefined)
     
-    @scala.inline
-    def setStickyBoxRect(value: Rect): Self = StObject.set(x, "stickyBoxRect", value.asInstanceOf[js.Any])
+    inline def setStickyBoxRect(value: Rect): Self = StObject.set(x, "stickyBoxRect", value.asInstanceOf[js.Any])
   }
 }

@@ -17,28 +17,21 @@ trait ListFirebaseProjectsResponse extends StObject {
 }
 object ListFirebaseProjectsResponse {
   
-  @scala.inline
-  def apply(): ListFirebaseProjectsResponse = {
+  inline def apply(): ListFirebaseProjectsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListFirebaseProjectsResponse]
   }
   
-  @scala.inline
-  implicit class ListFirebaseProjectsResponseMutableBuilder[Self <: ListFirebaseProjectsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListFirebaseProjectsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setResults(value: js.Array[FirebaseProject]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[FirebaseProject]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    @scala.inline
-    def setResultsVarargs(value: FirebaseProject*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: FirebaseProject*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

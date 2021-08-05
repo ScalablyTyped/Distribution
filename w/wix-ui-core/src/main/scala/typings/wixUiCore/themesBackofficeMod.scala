@@ -11,26 +11,21 @@ object themesBackofficeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def avatar(values: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("avatar")(values.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def avatar(values: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("avatar")(values.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("wix-ui-core/dist/standalone/src/themes/backoffice", "border")
   @js.native
   val border: Record[String, String] = js.native
   
-  @scala.inline
-  def button(values: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("button")(values.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def button(values: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("button")(values.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def closeButton(values: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("closeButton")(values.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def closeButton(values: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("closeButton")(values.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def iconButton(values: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("iconButton")(values.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def iconButton(values: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("iconButton")(values.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("wix-ui-core/dist/standalone/src/themes/backoffice", "opacity")
   @js.native
   val opacity: Record[String, String] = js.native
   
-  @scala.inline
-  def textButton(values: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("textButton")(values.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def textButton(values: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("textButton")(values.asInstanceOf[js.Any]).asInstanceOf[String]
 }

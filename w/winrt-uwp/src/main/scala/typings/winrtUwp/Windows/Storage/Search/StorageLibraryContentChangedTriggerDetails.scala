@@ -21,19 +21,15 @@ trait StorageLibraryContentChangedTriggerDetails extends StObject {
 }
 object StorageLibraryContentChangedTriggerDetails {
   
-  @scala.inline
-  def apply(createModifiedSinceQuery: Date => StorageItemQueryResult, folder: StorageFolder): StorageLibraryContentChangedTriggerDetails = {
+  inline def apply(createModifiedSinceQuery: Date => StorageItemQueryResult, folder: StorageFolder): StorageLibraryContentChangedTriggerDetails = {
     val __obj = js.Dynamic.literal(createModifiedSinceQuery = js.Any.fromFunction1(createModifiedSinceQuery), folder = folder.asInstanceOf[js.Any])
     __obj.asInstanceOf[StorageLibraryContentChangedTriggerDetails]
   }
   
-  @scala.inline
-  implicit class StorageLibraryContentChangedTriggerDetailsMutableBuilder[Self <: StorageLibraryContentChangedTriggerDetails] (val x: Self) extends AnyVal {
+  extension [Self <: StorageLibraryContentChangedTriggerDetails](x: Self) {
     
-    @scala.inline
-    def setCreateModifiedSinceQuery(value: Date => StorageItemQueryResult): Self = StObject.set(x, "createModifiedSinceQuery", js.Any.fromFunction1(value))
+    inline def setCreateModifiedSinceQuery(value: Date => StorageItemQueryResult): Self = StObject.set(x, "createModifiedSinceQuery", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFolder(value: StorageFolder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+    inline def setFolder(value: StorageFolder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
   }
 }

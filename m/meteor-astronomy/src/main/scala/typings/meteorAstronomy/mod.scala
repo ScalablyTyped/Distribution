@@ -15,8 +15,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create[T /* <: js.Object */](model: ClassModel[T]): typings.meteorAstronomy.MeteorAstronomy.Class[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.meteorAstronomy.MeteorAstronomy.Class[T]]
+    inline def create[T /* <: js.Object */](model: ClassModel[T]): typings.meteorAstronomy.MeteorAstronomy.Class[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.meteorAstronomy.MeteorAstronomy.Class[T]]
   }
   
   object Enum {
@@ -25,7 +24,6 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create[T](model: EnumModel[T]): typings.meteorAstronomy.MeteorAstronomy.Enum[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.meteorAstronomy.MeteorAstronomy.Enum[T]]
+    inline def create[T](model: EnumModel[T]): typings.meteorAstronomy.MeteorAstronomy.Enum[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.meteorAstronomy.MeteorAstronomy.Enum[T]]
   }
 }

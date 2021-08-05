@@ -38,43 +38,31 @@ trait UpdateAliasRequest extends StObject {
 }
 object UpdateAliasRequest {
   
-  @scala.inline
-  def apply(FunctionName: FunctionName, Name: Alias): UpdateAliasRequest = {
+  inline def apply(FunctionName: FunctionName, Name: Alias): UpdateAliasRequest = {
     val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAliasRequest]
   }
   
-  @scala.inline
-  implicit class UpdateAliasRequestMutableBuilder[Self <: UpdateAliasRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateAliasRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setFunctionName(value: FunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
+    inline def setFunctionName(value: FunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionVersion(value: Version): Self = StObject.set(x, "FunctionVersion", value.asInstanceOf[js.Any])
+    inline def setFunctionVersion(value: Version): Self = StObject.set(x, "FunctionVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionVersionUndefined: Self = StObject.set(x, "FunctionVersion", js.undefined)
+    inline def setFunctionVersionUndefined: Self = StObject.set(x, "FunctionVersion", js.undefined)
     
-    @scala.inline
-    def setName(value: Alias): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: Alias): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionId(value: String): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
+    inline def setRevisionId(value: String): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionIdUndefined: Self = StObject.set(x, "RevisionId", js.undefined)
+    inline def setRevisionIdUndefined: Self = StObject.set(x, "RevisionId", js.undefined)
     
-    @scala.inline
-    def setRoutingConfig(value: AliasRoutingConfiguration): Self = StObject.set(x, "RoutingConfig", value.asInstanceOf[js.Any])
+    inline def setRoutingConfig(value: AliasRoutingConfiguration): Self = StObject.set(x, "RoutingConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutingConfigUndefined: Self = StObject.set(x, "RoutingConfig", js.undefined)
+    inline def setRoutingConfigUndefined: Self = StObject.set(x, "RoutingConfig", js.undefined)
   }
 }

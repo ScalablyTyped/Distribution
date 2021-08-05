@@ -15,32 +15,24 @@ trait UseMultipleSelectionStateChange[Item] extends StObject {
 }
 object UseMultipleSelectionStateChange {
   
-  @scala.inline
-  def apply[Item](`type`: UseMultipleSelectionStateChangeTypes): UseMultipleSelectionStateChange[Item] = {
+  inline def apply[Item](`type`: UseMultipleSelectionStateChangeTypes): UseMultipleSelectionStateChange[Item] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseMultipleSelectionStateChange[Item]]
   }
   
-  @scala.inline
-  implicit class UseMultipleSelectionStateChangeMutableBuilder[Self <: UseMultipleSelectionStateChange[?], Item] (val x: Self & UseMultipleSelectionStateChange[Item]) extends AnyVal {
+  extension [Self <: UseMultipleSelectionStateChange[?], Item](x: Self & UseMultipleSelectionStateChange[Item]) {
     
-    @scala.inline
-    def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
+    inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveIndexUndefined: Self = StObject.set(x, "activeIndex", js.undefined)
+    inline def setActiveIndexUndefined: Self = StObject.set(x, "activeIndex", js.undefined)
     
-    @scala.inline
-    def setSelectedItems(value: js.Array[Item]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+    inline def setSelectedItems(value: js.Array[Item]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
+    inline def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
     
-    @scala.inline
-    def setSelectedItemsVarargs(value: Item*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
+    inline def setSelectedItemsVarargs(value: Item*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: UseMultipleSelectionStateChangeTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: UseMultipleSelectionStateChangeTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

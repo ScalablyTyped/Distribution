@@ -25,8 +25,7 @@ object primitivesMod {
   @js.native
   val integer: ISimpleType[Double] = js.native
   
-  @scala.inline
-  def isPrimitiveType(
+  inline def isPrimitiveType(
     `type`: IType[
       Boolean | Date | Double | String, 
       Boolean | Double | String, 

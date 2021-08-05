@@ -11,16 +11,13 @@ trait Response extends StObject {
 }
 object Response {
   
-  @scala.inline
-  def apply(body: js.Object): Response = {
+  inline def apply(body: js.Object): Response = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.asInstanceOf[Response]
   }
   
-  @scala.inline
-  implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
+  extension [Self <: Response](x: Self) {
     
-    @scala.inline
-    def setBody(value: js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }
 }

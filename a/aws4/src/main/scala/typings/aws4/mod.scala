@@ -63,12 +63,8 @@ object mod {
     def stringToSign(): String = js.native
   }
   
-  @scala.inline
-  def sign(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")().asInstanceOf[js.Any]
-  @scala.inline
-  def sign(options: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def sign(options: js.Any, credentials: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(options.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def sign(options: Unit, credentials: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(options.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def sign(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")().asInstanceOf[js.Any]
+  inline def sign(options: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def sign(options: js.Any, credentials: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(options.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def sign(options: Unit, credentials: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(options.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

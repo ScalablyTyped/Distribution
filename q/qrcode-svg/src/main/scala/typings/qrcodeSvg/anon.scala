@@ -15,17 +15,14 @@ object anon {
   }
   object Container {
     
-    @scala.inline
-    def apply(container: svg | g | none): Container = {
+    inline def apply(container: svg | g | none): Container = {
       val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
       __obj.asInstanceOf[Container]
     }
     
-    @scala.inline
-    implicit class ContainerMutableBuilder[Self <: Container] (val x: Self) extends AnyVal {
+    extension [Self <: Container](x: Self) {
       
-      @scala.inline
-      def setContainer(value: svg | g | none): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: svg | g | none): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     }
   }
   
@@ -39,26 +36,20 @@ object anon {
   }
   object Data {
     
-    @scala.inline
-    def apply(data: String, mode: Double, parsedData: js.Array[Double]): Data = {
+    inline def apply(data: String, mode: Double, parsedData: js.Array[Double]): Data = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], parsedData = parsedData.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data]
     }
     
-    @scala.inline
-    implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+    extension [Self <: Data](x: Self) {
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParsedData(value: js.Array[Double]): Self = StObject.set(x, "parsedData", value.asInstanceOf[js.Any])
+      inline def setParsedData(value: js.Array[Double]): Self = StObject.set(x, "parsedData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParsedDataVarargs(value: Double*): Self = StObject.set(x, "parsedData", js.Array(value :_*))
+      inline def setParsedDataVarargs(value: Double*): Self = StObject.set(x, "parsedData", js.Array(value :_*))
     }
   }
 }

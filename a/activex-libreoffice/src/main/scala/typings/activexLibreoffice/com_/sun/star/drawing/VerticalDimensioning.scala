@@ -23,8 +23,7 @@ object VerticalDimensioning {
     *
     * Set this to have the application select the best horizontal position for the text.
     */
-  @scala.inline
-  def AUTO: `0` = 0.asInstanceOf[`0`]
+  inline def AUTO: `0` = 0.asInstanceOf[`0`]
   
   /**
     * the connection line leaves the connected object from the bottom,
@@ -33,16 +32,14 @@ object VerticalDimensioning {
     *
     * The text is positioned below the main line.
     */
-  @scala.inline
-  def BOTTOM: `3` = 3.asInstanceOf[`3`]
+  inline def BOTTOM: `3` = 3.asInstanceOf[`3`]
   
   /**
     * The text is positioned at the center.
     *
     * The text is positioned over the main line.
     */
-  @scala.inline
-  def CENTERED: `2` = 2.asInstanceOf[`2`]
+  inline def CENTERED: `2` = 2.asInstanceOf[`2`]
   
   /**
     * the connection line leaves the connected object from the top,
@@ -51,6 +48,5 @@ object VerticalDimensioning {
     *
     * The text is positioned above the main line.
     */
-  @scala.inline
-  def TOP: `1` = 1.asInstanceOf[`1`]
+  inline def TOP: `1` = 1.asInstanceOf[`1`]
 }

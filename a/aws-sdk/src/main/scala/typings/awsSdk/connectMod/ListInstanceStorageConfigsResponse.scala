@@ -18,28 +18,21 @@ trait ListInstanceStorageConfigsResponse extends StObject {
 }
 object ListInstanceStorageConfigsResponse {
   
-  @scala.inline
-  def apply(): ListInstanceStorageConfigsResponse = {
+  inline def apply(): ListInstanceStorageConfigsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListInstanceStorageConfigsResponse]
   }
   
-  @scala.inline
-  implicit class ListInstanceStorageConfigsResponseMutableBuilder[Self <: ListInstanceStorageConfigsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListInstanceStorageConfigsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setStorageConfigs(value: InstanceStorageConfigs): Self = StObject.set(x, "StorageConfigs", value.asInstanceOf[js.Any])
+    inline def setStorageConfigs(value: InstanceStorageConfigs): Self = StObject.set(x, "StorageConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageConfigsUndefined: Self = StObject.set(x, "StorageConfigs", js.undefined)
+    inline def setStorageConfigsUndefined: Self = StObject.set(x, "StorageConfigs", js.undefined)
     
-    @scala.inline
-    def setStorageConfigsVarargs(value: InstanceStorageConfig*): Self = StObject.set(x, "StorageConfigs", js.Array(value :_*))
+    inline def setStorageConfigsVarargs(value: InstanceStorageConfig*): Self = StObject.set(x, "StorageConfigs", js.Array(value :_*))
   }
 }

@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GoToLocationValues extends StObject
 object GoToLocationValues {
   
-  @scala.inline
-  def goto: typings.monacoEditor.monacoEditorStrings.goto = "goto".asInstanceOf[typings.monacoEditor.monacoEditorStrings.goto]
+  inline def goto: typings.monacoEditor.monacoEditorStrings.goto = "goto".asInstanceOf[typings.monacoEditor.monacoEditorStrings.goto]
   
-  @scala.inline
-  def gotoAndPeek: typings.monacoEditor.monacoEditorStrings.gotoAndPeek = "gotoAndPeek".asInstanceOf[typings.monacoEditor.monacoEditorStrings.gotoAndPeek]
+  inline def gotoAndPeek: typings.monacoEditor.monacoEditorStrings.gotoAndPeek = "gotoAndPeek".asInstanceOf[typings.monacoEditor.monacoEditorStrings.gotoAndPeek]
   
-  @scala.inline
-  def peek: typings.monacoEditor.monacoEditorStrings.peek = "peek".asInstanceOf[typings.monacoEditor.monacoEditorStrings.peek]
+  inline def peek: typings.monacoEditor.monacoEditorStrings.peek = "peek".asInstanceOf[typings.monacoEditor.monacoEditorStrings.peek]
 }

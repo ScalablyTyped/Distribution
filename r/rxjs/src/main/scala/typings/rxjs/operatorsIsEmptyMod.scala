@@ -10,6 +10,5 @@ object operatorsIsEmptyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isEmpty[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")().asInstanceOf[js.Any]
+  inline def isEmpty[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")().asInstanceOf[js.Any]
 }

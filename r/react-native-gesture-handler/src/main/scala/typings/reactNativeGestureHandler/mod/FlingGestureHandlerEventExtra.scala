@@ -16,25 +16,19 @@ trait FlingGestureHandlerEventExtra extends StObject {
 }
 object FlingGestureHandlerEventExtra {
   
-  @scala.inline
-  def apply(absoluteX: Double, absoluteY: Double, x: Double, y: Double): FlingGestureHandlerEventExtra = {
+  inline def apply(absoluteX: Double, absoluteY: Double, x: Double, y: Double): FlingGestureHandlerEventExtra = {
     val __obj = js.Dynamic.literal(absoluteX = absoluteX.asInstanceOf[js.Any], absoluteY = absoluteY.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlingGestureHandlerEventExtra]
   }
   
-  @scala.inline
-  implicit class FlingGestureHandlerEventExtraMutableBuilder[Self <: FlingGestureHandlerEventExtra] (val x: Self) extends AnyVal {
+  extension [Self <: FlingGestureHandlerEventExtra](x: Self) {
     
-    @scala.inline
-    def setAbsoluteX(value: Double): Self = StObject.set(x, "absoluteX", value.asInstanceOf[js.Any])
+    inline def setAbsoluteX(value: Double): Self = StObject.set(x, "absoluteX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbsoluteY(value: Double): Self = StObject.set(x, "absoluteY", value.asInstanceOf[js.Any])
+    inline def setAbsoluteY(value: Double): Self = StObject.set(x, "absoluteY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

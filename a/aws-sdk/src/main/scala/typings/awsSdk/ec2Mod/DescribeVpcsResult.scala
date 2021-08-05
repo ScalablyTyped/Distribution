@@ -18,28 +18,21 @@ trait DescribeVpcsResult extends StObject {
 }
 object DescribeVpcsResult {
   
-  @scala.inline
-  def apply(): DescribeVpcsResult = {
+  inline def apply(): DescribeVpcsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeVpcsResult]
   }
   
-  @scala.inline
-  implicit class DescribeVpcsResultMutableBuilder[Self <: DescribeVpcsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeVpcsResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setVpcs(value: VpcList): Self = StObject.set(x, "Vpcs", value.asInstanceOf[js.Any])
+    inline def setVpcs(value: VpcList): Self = StObject.set(x, "Vpcs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcsUndefined: Self = StObject.set(x, "Vpcs", js.undefined)
+    inline def setVpcsUndefined: Self = StObject.set(x, "Vpcs", js.undefined)
     
-    @scala.inline
-    def setVpcsVarargs(value: Vpc*): Self = StObject.set(x, "Vpcs", js.Array(value :_*))
+    inline def setVpcsVarargs(value: Vpc*): Self = StObject.set(x, "Vpcs", js.Array(value :_*))
   }
 }

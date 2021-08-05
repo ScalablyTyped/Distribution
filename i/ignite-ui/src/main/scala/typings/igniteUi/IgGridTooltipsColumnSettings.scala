@@ -38,37 +38,27 @@ trait IgGridTooltipsColumnSettings
 }
 object IgGridTooltipsColumnSettings {
   
-  @scala.inline
-  def apply(): IgGridTooltipsColumnSettings = {
+  inline def apply(): IgGridTooltipsColumnSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgGridTooltipsColumnSettings]
   }
   
-  @scala.inline
-  implicit class IgGridTooltipsColumnSettingsMutableBuilder[Self <: IgGridTooltipsColumnSettings] (val x: Self) extends AnyVal {
+  extension [Self <: IgGridTooltipsColumnSettings](x: Self) {
     
-    @scala.inline
-    def setAllowTooltips(value: Boolean): Self = StObject.set(x, "allowTooltips", value.asInstanceOf[js.Any])
+    inline def setAllowTooltips(value: Boolean): Self = StObject.set(x, "allowTooltips", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowTooltipsUndefined: Self = StObject.set(x, "allowTooltips", js.undefined)
+    inline def setAllowTooltipsUndefined: Self = StObject.set(x, "allowTooltips", js.undefined)
     
-    @scala.inline
-    def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
+    inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
+    inline def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
     
-    @scala.inline
-    def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
+    inline def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
+    inline def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
     
-    @scala.inline
-    def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+    inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
   }
 }

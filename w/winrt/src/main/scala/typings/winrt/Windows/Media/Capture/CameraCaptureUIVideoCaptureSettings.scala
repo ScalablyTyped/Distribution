@@ -9,8 +9,7 @@ trait CameraCaptureUIVideoCaptureSettings
      with ICameraCaptureUIVideoCaptureSettings
 object CameraCaptureUIVideoCaptureSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allowTrimming: Boolean,
     format: CameraCaptureUIVideoFormat,
     maxDurationInSeconds: Double,

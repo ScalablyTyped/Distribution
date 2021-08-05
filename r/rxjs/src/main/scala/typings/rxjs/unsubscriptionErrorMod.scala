@@ -20,14 +20,11 @@ object unsubscriptionErrorMod {
     @js.native
     val ^ : UnsubscriptionErrorCtor = js.native
     
-    @scala.inline
-    implicit class UnsubscriptionErrorMutableBuilder[Self <: UnsubscriptionError] (val x: Self) extends AnyVal {
+    extension [Self <: UnsubscriptionError](x: Self) {
       
-      @scala.inline
-      def setErrors(value: js.Array[js.Any]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[js.Any]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsVarargs(value: js.Any*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: js.Any*): Self = StObject.set(x, "errors", js.Array(value :_*))
     }
   }
   

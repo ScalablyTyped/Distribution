@@ -18,25 +18,19 @@ trait Identity extends StObject {
 }
 object Identity {
   
-  @scala.inline
-  def apply(): Identity = {
+  inline def apply(): Identity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Identity]
   }
   
-  @scala.inline
-  implicit class IdentityMutableBuilder[Self <: Identity] (val x: Self) extends AnyVal {
+  extension [Self <: Identity](x: Self) {
     
-    @scala.inline
-    def setPrincipalId(value: String): Self = StObject.set(x, "PrincipalId", value.asInstanceOf[js.Any])
+    inline def setPrincipalId(value: String): Self = StObject.set(x, "PrincipalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalIdUndefined: Self = StObject.set(x, "PrincipalId", js.undefined)
+    inline def setPrincipalIdUndefined: Self = StObject.set(x, "PrincipalId", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

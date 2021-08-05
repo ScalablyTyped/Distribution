@@ -44,8 +44,7 @@ trait SmsDeviceMessageStore extends StObject {
 }
 object SmsDeviceMessageStore {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deleteMessageAsync: Double => IPromiseWithIAsyncAction,
     deleteMessagesAsync: SmsMessageFilter => IPromiseWithIAsyncAction,
     getMessageAsync: Double => IPromiseWithIAsyncOperation[ISmsMessage],
@@ -56,22 +55,16 @@ object SmsDeviceMessageStore {
     __obj.asInstanceOf[SmsDeviceMessageStore]
   }
   
-  @scala.inline
-  implicit class SmsDeviceMessageStoreMutableBuilder[Self <: SmsDeviceMessageStore] (val x: Self) extends AnyVal {
+  extension [Self <: SmsDeviceMessageStore](x: Self) {
     
-    @scala.inline
-    def setDeleteMessageAsync(value: Double => IPromiseWithIAsyncAction): Self = StObject.set(x, "deleteMessageAsync", js.Any.fromFunction1(value))
+    inline def setDeleteMessageAsync(value: Double => IPromiseWithIAsyncAction): Self = StObject.set(x, "deleteMessageAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDeleteMessagesAsync(value: SmsMessageFilter => IPromiseWithIAsyncAction): Self = StObject.set(x, "deleteMessagesAsync", js.Any.fromFunction1(value))
+    inline def setDeleteMessagesAsync(value: SmsMessageFilter => IPromiseWithIAsyncAction): Self = StObject.set(x, "deleteMessagesAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetMessageAsync(value: Double => IPromiseWithIAsyncOperation[ISmsMessage]): Self = StObject.set(x, "getMessageAsync", js.Any.fromFunction1(value))
+    inline def setGetMessageAsync(value: Double => IPromiseWithIAsyncOperation[ISmsMessage]): Self = StObject.set(x, "getMessageAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetMessagesAsync(value: SmsMessageFilter => IPromiseWithIAsyncOperationWithProgress[IVectorView[js.Any], Double]): Self = StObject.set(x, "getMessagesAsync", js.Any.fromFunction1(value))
+    inline def setGetMessagesAsync(value: SmsMessageFilter => IPromiseWithIAsyncOperationWithProgress[IVectorView[js.Any], Double]): Self = StObject.set(x, "getMessagesAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMaxMessages(value: Double): Self = StObject.set(x, "maxMessages", value.asInstanceOf[js.Any])
+    inline def setMaxMessages(value: Double): Self = StObject.set(x, "maxMessages", value.asInstanceOf[js.Any])
   }
 }

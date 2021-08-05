@@ -25,27 +25,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFExpressionType extends StObject
 object MFExpressionType {
   
-  @scala.inline
-  def AnyField: `6` = 6.asInstanceOf[`6`]
+  inline def AnyField: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def FileValue: `4` = 4.asInstanceOf[`4`]
+  inline def FileValue: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def ObjectIDSegment: `2` = 2.asInstanceOf[`2`]
+  inline def ObjectIDSegment: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def Permissions: `7` = 7.asInstanceOf[`7`]
+  inline def Permissions: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def PropertyValue: `1` = 1.asInstanceOf[`1`]
+  inline def PropertyValue: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def StatusValue: `3` = 3.asInstanceOf[`3`]
+  inline def StatusValue: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def TypedValue: `5` = 5.asInstanceOf[`5`]
+  inline def TypedValue: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def Uninitialized: `0` = 0.asInstanceOf[`0`]
+  inline def Uninitialized: `0` = 0.asInstanceOf[`0`]
 }

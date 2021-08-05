@@ -13,19 +13,15 @@ trait DeleteRepositoryOutput extends StObject {
 }
 object DeleteRepositoryOutput {
   
-  @scala.inline
-  def apply(): DeleteRepositoryOutput = {
+  inline def apply(): DeleteRepositoryOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteRepositoryOutput]
   }
   
-  @scala.inline
-  implicit class DeleteRepositoryOutputMutableBuilder[Self <: DeleteRepositoryOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteRepositoryOutput](x: Self) {
     
-    @scala.inline
-    def setRepositoryId(value: RepositoryId): Self = StObject.set(x, "repositoryId", value.asInstanceOf[js.Any])
+    inline def setRepositoryId(value: RepositoryId): Self = StObject.set(x, "repositoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryIdUndefined: Self = StObject.set(x, "repositoryId", js.undefined)
+    inline def setRepositoryIdUndefined: Self = StObject.set(x, "repositoryId", js.undefined)
   }
 }

@@ -8,11 +8,9 @@ object sqsProducerStrings {
   
   @js.native
   sealed trait Binary extends StObject
-  @scala.inline
-  def Binary: Binary = "Binary".asInstanceOf[Binary]
+  inline def Binary: Binary = "Binary".asInstanceOf[Binary]
   
   @js.native
   sealed trait String extends StObject
-  @scala.inline
-  def String: String = "String".asInstanceOf[String]
+  inline def String: String = "String".asInstanceOf[String]
 }

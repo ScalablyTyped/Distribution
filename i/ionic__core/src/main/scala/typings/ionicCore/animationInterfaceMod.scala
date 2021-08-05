@@ -273,17 +273,14 @@ object animationInterfaceMod {
   }
   object AnimationCallbackOptions {
     
-    @scala.inline
-    def apply(oneTimeCallback: Boolean): AnimationCallbackOptions = {
+    inline def apply(oneTimeCallback: Boolean): AnimationCallbackOptions = {
       val __obj = js.Dynamic.literal(oneTimeCallback = oneTimeCallback.asInstanceOf[js.Any])
       __obj.asInstanceOf[AnimationCallbackOptions]
     }
     
-    @scala.inline
-    implicit class AnimationCallbackOptionsMutableBuilder[Self <: AnimationCallbackOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AnimationCallbackOptions](x: Self) {
       
-      @scala.inline
-      def setOneTimeCallback(value: Boolean): Self = StObject.set(x, "oneTimeCallback", value.asInstanceOf[js.Any])
+      inline def setOneTimeCallback(value: Boolean): Self = StObject.set(x, "oneTimeCallback", value.asInstanceOf[js.Any])
     }
   }
   
@@ -296,17 +293,13 @@ object animationInterfaceMod {
   trait AnimationDirection extends StObject
   object AnimationDirection {
     
-    @scala.inline
-    def alternate: typings.ionicCore.ionicCoreStrings.alternate = "alternate".asInstanceOf[typings.ionicCore.ionicCoreStrings.alternate]
+    inline def alternate: typings.ionicCore.ionicCoreStrings.alternate = "alternate".asInstanceOf[typings.ionicCore.ionicCoreStrings.alternate]
     
-    @scala.inline
-    def `alternate-reverse`: typings.ionicCore.ionicCoreStrings.`alternate-reverse` = "alternate-reverse".asInstanceOf[typings.ionicCore.ionicCoreStrings.`alternate-reverse`]
+    inline def `alternate-reverse`: typings.ionicCore.ionicCoreStrings.`alternate-reverse` = "alternate-reverse".asInstanceOf[typings.ionicCore.ionicCoreStrings.`alternate-reverse`]
     
-    @scala.inline
-    def normal: typings.ionicCore.ionicCoreStrings.normal = "normal".asInstanceOf[typings.ionicCore.ionicCoreStrings.normal]
+    inline def normal: typings.ionicCore.ionicCoreStrings.normal = "normal".asInstanceOf[typings.ionicCore.ionicCoreStrings.normal]
     
-    @scala.inline
-    def reverse: typings.ionicCore.ionicCoreStrings.reverse = "reverse".asInstanceOf[typings.ionicCore.ionicCoreStrings.reverse]
+    inline def reverse: typings.ionicCore.ionicCoreStrings.reverse = "reverse".asInstanceOf[typings.ionicCore.ionicCoreStrings.reverse]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -319,20 +312,15 @@ object animationInterfaceMod {
   trait AnimationFill extends StObject
   object AnimationFill {
     
-    @scala.inline
-    def auto: typings.ionicCore.ionicCoreStrings.auto = "auto".asInstanceOf[typings.ionicCore.ionicCoreStrings.auto]
+    inline def auto: typings.ionicCore.ionicCoreStrings.auto = "auto".asInstanceOf[typings.ionicCore.ionicCoreStrings.auto]
     
-    @scala.inline
-    def backwards: typings.ionicCore.ionicCoreStrings.backwards = "backwards".asInstanceOf[typings.ionicCore.ionicCoreStrings.backwards]
+    inline def backwards: typings.ionicCore.ionicCoreStrings.backwards = "backwards".asInstanceOf[typings.ionicCore.ionicCoreStrings.backwards]
     
-    @scala.inline
-    def both: typings.ionicCore.ionicCoreStrings.both = "both".asInstanceOf[typings.ionicCore.ionicCoreStrings.both]
+    inline def both: typings.ionicCore.ionicCoreStrings.both = "both".asInstanceOf[typings.ionicCore.ionicCoreStrings.both]
     
-    @scala.inline
-    def forwards: typings.ionicCore.ionicCoreStrings.forwards = "forwards".asInstanceOf[typings.ionicCore.ionicCoreStrings.forwards]
+    inline def forwards: typings.ionicCore.ionicCoreStrings.forwards = "forwards".asInstanceOf[typings.ionicCore.ionicCoreStrings.forwards]
     
-    @scala.inline
-    def none: typings.ionicCore.ionicCoreStrings.none = "none".asInstanceOf[typings.ionicCore.ionicCoreStrings.none]
+    inline def none: typings.ionicCore.ionicCoreStrings.none = "none".asInstanceOf[typings.ionicCore.ionicCoreStrings.none]
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -342,17 +330,14 @@ object animationInterfaceMod {
   }
   object AnimationKeyFrame {
     
-    @scala.inline
-    def apply(offset: Double): AnimationKeyFrame = {
+    inline def apply(offset: Double): AnimationKeyFrame = {
       val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any])
       __obj.asInstanceOf[AnimationKeyFrame]
     }
     
-    @scala.inline
-    implicit class AnimationKeyFrameMutableBuilder[Self <: AnimationKeyFrame] (val x: Self) extends AnyVal {
+    extension [Self <: AnimationKeyFrame](x: Self) {
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     }
   }
   
@@ -363,20 +348,16 @@ object animationInterfaceMod {
   }
   object AnimationKeyFrameEdge {
     
-    @scala.inline
-    def apply(): AnimationKeyFrameEdge = {
+    inline def apply(): AnimationKeyFrameEdge = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AnimationKeyFrameEdge]
     }
     
-    @scala.inline
-    implicit class AnimationKeyFrameEdgeMutableBuilder[Self <: AnimationKeyFrameEdge] (val x: Self) extends AnyVal {
+    extension [Self <: AnimationKeyFrameEdge](x: Self) {
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     }
   }
   
@@ -390,17 +371,14 @@ object animationInterfaceMod {
   }
   object AnimationPlayOptions {
     
-    @scala.inline
-    def apply(sync: Boolean): AnimationPlayOptions = {
+    inline def apply(sync: Boolean): AnimationPlayOptions = {
       val __obj = js.Dynamic.literal(sync = sync.asInstanceOf[js.Any])
       __obj.asInstanceOf[AnimationPlayOptions]
     }
     
-    @scala.inline
-    implicit class AnimationPlayOptionsMutableBuilder[Self <: AnimationPlayOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AnimationPlayOptions](x: Self) {
       
-      @scala.inline
-      def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+      inline def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
     }
   }
   
@@ -411,11 +389,9 @@ object animationInterfaceMod {
   trait AnimationPlayTo extends StObject
   object AnimationPlayTo {
     
-    @scala.inline
-    def end: typings.ionicCore.ionicCoreStrings.end = "end".asInstanceOf[typings.ionicCore.ionicCoreStrings.end]
+    inline def end: typings.ionicCore.ionicCoreStrings.end = "end".asInstanceOf[typings.ionicCore.ionicCoreStrings.end]
     
-    @scala.inline
-    def start: typings.ionicCore.ionicCoreStrings.start = "start".asInstanceOf[typings.ionicCore.ionicCoreStrings.start]
+    inline def start: typings.ionicCore.ionicCoreStrings.start = "start".asInstanceOf[typings.ionicCore.ionicCoreStrings.start]
   }
   
   type AnimationStyles = Record[String, js.Any]

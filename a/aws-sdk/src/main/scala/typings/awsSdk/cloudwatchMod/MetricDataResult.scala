@@ -38,58 +38,41 @@ trait MetricDataResult extends StObject {
 }
 object MetricDataResult {
   
-  @scala.inline
-  def apply(): MetricDataResult = {
+  inline def apply(): MetricDataResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MetricDataResult]
   }
   
-  @scala.inline
-  implicit class MetricDataResultMutableBuilder[Self <: MetricDataResult] (val x: Self) extends AnyVal {
+  extension [Self <: MetricDataResult](x: Self) {
     
-    @scala.inline
-    def setId(value: MetricId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: MetricId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setLabel(value: MetricLabel): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: MetricLabel): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "Label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "Label", js.undefined)
     
-    @scala.inline
-    def setMessages(value: MetricDataResultMessages): Self = StObject.set(x, "Messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: MetricDataResultMessages): Self = StObject.set(x, "Messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesUndefined: Self = StObject.set(x, "Messages", js.undefined)
+    inline def setMessagesUndefined: Self = StObject.set(x, "Messages", js.undefined)
     
-    @scala.inline
-    def setMessagesVarargs(value: MessageData*): Self = StObject.set(x, "Messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: MessageData*): Self = StObject.set(x, "Messages", js.Array(value :_*))
     
-    @scala.inline
-    def setStatusCode(value: StatusCode): Self = StObject.set(x, "StatusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: StatusCode): Self = StObject.set(x, "StatusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCodeUndefined: Self = StObject.set(x, "StatusCode", js.undefined)
+    inline def setStatusCodeUndefined: Self = StObject.set(x, "StatusCode", js.undefined)
     
-    @scala.inline
-    def setTimestamps(value: Timestamps): Self = StObject.set(x, "Timestamps", value.asInstanceOf[js.Any])
+    inline def setTimestamps(value: Timestamps): Self = StObject.set(x, "Timestamps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampsUndefined: Self = StObject.set(x, "Timestamps", js.undefined)
+    inline def setTimestampsUndefined: Self = StObject.set(x, "Timestamps", js.undefined)
     
-    @scala.inline
-    def setTimestampsVarargs(value: Timestamp*): Self = StObject.set(x, "Timestamps", js.Array(value :_*))
+    inline def setTimestampsVarargs(value: Timestamp*): Self = StObject.set(x, "Timestamps", js.Array(value :_*))
     
-    @scala.inline
-    def setValues(value: DatapointValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: DatapointValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: DatapointValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: DatapointValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

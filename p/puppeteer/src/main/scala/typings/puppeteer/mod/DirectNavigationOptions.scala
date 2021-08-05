@@ -17,19 +17,15 @@ trait DirectNavigationOptions
 }
 object DirectNavigationOptions {
   
-  @scala.inline
-  def apply(): DirectNavigationOptions = {
+  inline def apply(): DirectNavigationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DirectNavigationOptions]
   }
   
-  @scala.inline
-  implicit class DirectNavigationOptionsMutableBuilder[Self <: DirectNavigationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DirectNavigationOptions](x: Self) {
     
-    @scala.inline
-    def setReferer(value: String): Self = StObject.set(x, "referer", value.asInstanceOf[js.Any])
+    inline def setReferer(value: String): Self = StObject.set(x, "referer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefererUndefined: Self = StObject.set(x, "referer", js.undefined)
+    inline def setRefererUndefined: Self = StObject.set(x, "referer", js.undefined)
   }
 }

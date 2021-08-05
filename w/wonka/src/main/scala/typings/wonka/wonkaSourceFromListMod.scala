@@ -12,6 +12,5 @@ object wonkaSourceFromListMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromList[A](list: List[A]): Source[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromList")(list.asInstanceOf[js.Any]).asInstanceOf[Source[A]]
+  inline def fromList[A](list: List[A]): Source[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromList")(list.asInstanceOf[js.Any]).asInstanceOf[Source[A]]
 }

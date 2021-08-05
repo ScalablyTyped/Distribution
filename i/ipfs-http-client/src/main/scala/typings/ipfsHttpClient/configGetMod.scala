@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object configGetMod {
   
-  @scala.inline
-  def apply(clientOptions: ClientOptions): APIWithExtraOptions[
+  inline def apply(clientOptions: ClientOptions): APIWithExtraOptions[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_config.Get */ js.Any, 
     HttpOptions
   ] = ^.asInstanceOf[js.Dynamic].apply(clientOptions.asInstanceOf[js.Any]).asInstanceOf[APIWithExtraOptions[

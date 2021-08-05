@@ -84,72 +84,51 @@ trait PixelBlockProperties extends StObject {
 }
 object PixelBlockProperties {
   
-  @scala.inline
-  def apply(): PixelBlockProperties = {
+  inline def apply(): PixelBlockProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PixelBlockProperties]
   }
   
-  @scala.inline
-  implicit class PixelBlockPropertiesMutableBuilder[Self <: PixelBlockProperties] (val x: Self) extends AnyVal {
+  extension [Self <: PixelBlockProperties](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setMask(value: js.Array[Double] | Uint8Array): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+    inline def setMask(value: js.Array[Double] | Uint8Array): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaskIsAlpha(value: Boolean): Self = StObject.set(x, "maskIsAlpha", value.asInstanceOf[js.Any])
+    inline def setMaskIsAlpha(value: Boolean): Self = StObject.set(x, "maskIsAlpha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaskIsAlphaUndefined: Self = StObject.set(x, "maskIsAlpha", js.undefined)
+    inline def setMaskIsAlphaUndefined: Self = StObject.set(x, "maskIsAlpha", js.undefined)
     
-    @scala.inline
-    def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
+    inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
     
-    @scala.inline
-    def setMaskVarargs(value: Double*): Self = StObject.set(x, "mask", js.Array(value :_*))
+    inline def setMaskVarargs(value: Double*): Self = StObject.set(x, "mask", js.Array(value :_*))
     
-    @scala.inline
-    def setPixelType(value: unknown | s8 | s16 | s32 | u8 | u16 | u32 | f32 | f64): Self = StObject.set(x, "pixelType", value.asInstanceOf[js.Any])
+    inline def setPixelType(value: unknown | s8 | s16 | s32 | u8 | u16 | u32 | f32 | f64): Self = StObject.set(x, "pixelType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPixelTypeUndefined: Self = StObject.set(x, "pixelType", js.undefined)
+    inline def setPixelTypeUndefined: Self = StObject.set(x, "pixelType", js.undefined)
     
-    @scala.inline
-    def setPixels(
+    inline def setPixels(
       value: js.Array[Double] | Int8Array | Uint8Array | Uint8ClampedArray | Int16Array | Uint16Array | Int32Array | Uint32Array | Float32Array | Float64Array
     ): Self = StObject.set(x, "pixels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPixelsUndefined: Self = StObject.set(x, "pixels", js.undefined)
+    inline def setPixelsUndefined: Self = StObject.set(x, "pixels", js.undefined)
     
-    @scala.inline
-    def setPixelsVarargs(value: Double*): Self = StObject.set(x, "pixels", js.Array(value :_*))
+    inline def setPixelsVarargs(value: Double*): Self = StObject.set(x, "pixels", js.Array(value :_*))
     
-    @scala.inline
-    def setStatistics(value: js.Array[PixelBlockStatistics]): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
+    inline def setStatistics(value: js.Array[PixelBlockStatistics]): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatisticsUndefined: Self = StObject.set(x, "statistics", js.undefined)
+    inline def setStatisticsUndefined: Self = StObject.set(x, "statistics", js.undefined)
     
-    @scala.inline
-    def setStatisticsVarargs(value: PixelBlockStatistics*): Self = StObject.set(x, "statistics", js.Array(value :_*))
+    inline def setStatisticsVarargs(value: PixelBlockStatistics*): Self = StObject.set(x, "statistics", js.Array(value :_*))
     
-    @scala.inline
-    def setValidPixelCount(value: Double): Self = StObject.set(x, "validPixelCount", value.asInstanceOf[js.Any])
+    inline def setValidPixelCount(value: Double): Self = StObject.set(x, "validPixelCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidPixelCountUndefined: Self = StObject.set(x, "validPixelCount", js.undefined)
+    inline def setValidPixelCountUndefined: Self = StObject.set(x, "validPixelCount", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

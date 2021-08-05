@@ -11,7 +11,7 @@ trait ExternalApplication extends StObject {
   
   def Close(bstrDocumentURI: String): Unit = js.native
   
-  @JSName("InfoPath.ExternalApplication_typekey")
+  /* private */ @JSName("InfoPath.ExternalApplication_typekey")
   var InfoPathDotExternalApplication_typekey: ExternalApplication = js.native
   
   /** @param number [dwBehavior=1] */

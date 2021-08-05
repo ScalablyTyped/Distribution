@@ -13,19 +13,15 @@ trait AccountLevelPermissions extends StObject {
 }
 object AccountLevelPermissions {
   
-  @scala.inline
-  def apply(): AccountLevelPermissions = {
+  inline def apply(): AccountLevelPermissions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountLevelPermissions]
   }
   
-  @scala.inline
-  implicit class AccountLevelPermissionsMutableBuilder[Self <: AccountLevelPermissions] (val x: Self) extends AnyVal {
+  extension [Self <: AccountLevelPermissions](x: Self) {
     
-    @scala.inline
-    def setBlockPublicAccess(value: BlockPublicAccess): Self = StObject.set(x, "BlockPublicAccess", value.asInstanceOf[js.Any])
+    inline def setBlockPublicAccess(value: BlockPublicAccess): Self = StObject.set(x, "BlockPublicAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockPublicAccessUndefined: Self = StObject.set(x, "BlockPublicAccess", js.undefined)
+    inline def setBlockPublicAccessUndefined: Self = StObject.set(x, "BlockPublicAccess", js.undefined)
   }
 }

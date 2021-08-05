@@ -10,8 +10,7 @@ trait GetBucketRequestPaymentOutput
      with typings.awsSdkClientS3Node.typesGetBucketRequestPaymentOutputMod.GetBucketRequestPaymentOutput
 object GetBucketRequestPaymentOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): GetBucketRequestPaymentOutput = {
+  inline def apply($metadata: ResponseMetadata): GetBucketRequestPaymentOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketRequestPaymentOutput]
   }

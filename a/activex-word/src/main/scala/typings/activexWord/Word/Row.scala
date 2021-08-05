@@ -65,6 +65,6 @@ trait Row extends StObject {
   
   var SpaceBetweenColumns: Double = js.native
   
-  @JSName("Word.Row_typekey")
+  /* private */ @JSName("Word.Row_typekey")
   var WordDotRow_typekey: Row = js.native
 }

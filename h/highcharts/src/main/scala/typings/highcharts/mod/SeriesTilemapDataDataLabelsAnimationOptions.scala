@@ -15,19 +15,15 @@ trait SeriesTilemapDataDataLabelsAnimationOptions extends StObject {
 }
 object SeriesTilemapDataDataLabelsAnimationOptions {
   
-  @scala.inline
-  def apply(): SeriesTilemapDataDataLabelsAnimationOptions = {
+  inline def apply(): SeriesTilemapDataDataLabelsAnimationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SeriesTilemapDataDataLabelsAnimationOptions]
   }
   
-  @scala.inline
-  implicit class SeriesTilemapDataDataLabelsAnimationOptionsMutableBuilder[Self <: SeriesTilemapDataDataLabelsAnimationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SeriesTilemapDataDataLabelsAnimationOptions](x: Self) {
     
-    @scala.inline
-    def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
+    inline def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
+    inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
   }
 }

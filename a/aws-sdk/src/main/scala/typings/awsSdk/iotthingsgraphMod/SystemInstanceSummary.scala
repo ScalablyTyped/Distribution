@@ -53,67 +53,47 @@ trait SystemInstanceSummary extends StObject {
 }
 object SystemInstanceSummary {
   
-  @scala.inline
-  def apply(): SystemInstanceSummary = {
+  inline def apply(): SystemInstanceSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SystemInstanceSummary]
   }
   
-  @scala.inline
-  implicit class SystemInstanceSummaryMutableBuilder[Self <: SystemInstanceSummary] (val x: Self) extends AnyVal {
+  extension [Self <: SystemInstanceSummary](x: Self) {
     
-    @scala.inline
-    def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setCreatedAt(value: Timestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
-    @scala.inline
-    def setGreengrassGroupId(value: GreengrassGroupId): Self = StObject.set(x, "greengrassGroupId", value.asInstanceOf[js.Any])
+    inline def setGreengrassGroupId(value: GreengrassGroupId): Self = StObject.set(x, "greengrassGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGreengrassGroupIdUndefined: Self = StObject.set(x, "greengrassGroupId", js.undefined)
+    inline def setGreengrassGroupIdUndefined: Self = StObject.set(x, "greengrassGroupId", js.undefined)
     
-    @scala.inline
-    def setGreengrassGroupName(value: GroupName): Self = StObject.set(x, "greengrassGroupName", value.asInstanceOf[js.Any])
+    inline def setGreengrassGroupName(value: GroupName): Self = StObject.set(x, "greengrassGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGreengrassGroupNameUndefined: Self = StObject.set(x, "greengrassGroupName", js.undefined)
+    inline def setGreengrassGroupNameUndefined: Self = StObject.set(x, "greengrassGroupName", js.undefined)
     
-    @scala.inline
-    def setGreengrassGroupVersionId(value: GreengrassGroupVersionId): Self = StObject.set(x, "greengrassGroupVersionId", value.asInstanceOf[js.Any])
+    inline def setGreengrassGroupVersionId(value: GreengrassGroupVersionId): Self = StObject.set(x, "greengrassGroupVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGreengrassGroupVersionIdUndefined: Self = StObject.set(x, "greengrassGroupVersionId", js.undefined)
+    inline def setGreengrassGroupVersionIdUndefined: Self = StObject.set(x, "greengrassGroupVersionId", js.undefined)
     
-    @scala.inline
-    def setId(value: Urn): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Urn): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setStatus(value: SystemInstanceDeploymentStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: SystemInstanceDeploymentStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setTarget(value: DeploymentTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: DeploymentTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    @scala.inline
-    def setUpdatedAt(value: Timestamp): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: Timestamp): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedAtUndefined: Self = StObject.set(x, "updatedAt", js.undefined)
+    inline def setUpdatedAtUndefined: Self = StObject.set(x, "updatedAt", js.undefined)
   }
 }

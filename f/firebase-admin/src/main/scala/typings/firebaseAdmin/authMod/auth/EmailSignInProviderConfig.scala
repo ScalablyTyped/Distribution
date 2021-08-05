@@ -22,22 +22,17 @@ trait EmailSignInProviderConfig extends StObject {
 }
 object EmailSignInProviderConfig {
   
-  @scala.inline
-  def apply(enabled: Boolean): EmailSignInProviderConfig = {
+  inline def apply(enabled: Boolean): EmailSignInProviderConfig = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmailSignInProviderConfig]
   }
   
-  @scala.inline
-  implicit class EmailSignInProviderConfigMutableBuilder[Self <: EmailSignInProviderConfig] (val x: Self) extends AnyVal {
+  extension [Self <: EmailSignInProviderConfig](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordRequired(value: Boolean): Self = StObject.set(x, "passwordRequired", value.asInstanceOf[js.Any])
+    inline def setPasswordRequired(value: Boolean): Self = StObject.set(x, "passwordRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordRequiredUndefined: Self = StObject.set(x, "passwordRequired", js.undefined)
+    inline def setPasswordRequiredUndefined: Self = StObject.set(x, "passwordRequired", js.undefined)
   }
 }

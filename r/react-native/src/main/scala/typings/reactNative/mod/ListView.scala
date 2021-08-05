@@ -51,6 +51,5 @@ object ListView {
   @JSImport("react-native", "ListView.DataSource")
   @js.native
   def DataSource: ListViewDataSource = js.native
-  @scala.inline
-  def DataSource_=(x: ListViewDataSource): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataSource")(x.asInstanceOf[js.Any])
+  inline def DataSource_=(x: ListViewDataSource): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataSource")(x.asInstanceOf[js.Any])
 }

@@ -18,28 +18,21 @@ trait SignatureProviderRequiredOption extends StObject {
 }
 object SignatureProviderRequiredOption {
   
-  @scala.inline
-  def apply(): SignatureProviderRequiredOption = {
+  inline def apply(): SignatureProviderRequiredOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SignatureProviderRequiredOption]
   }
   
-  @scala.inline
-  implicit class SignatureProviderRequiredOptionMutableBuilder[Self <: SignatureProviderRequiredOption] (val x: Self) extends AnyVal {
+  extension [Self <: SignatureProviderRequiredOption](x: Self) {
     
-    @scala.inline
-    def setRequiredSignatureProviderOptionIds(value: js.Array[String]): Self = StObject.set(x, "requiredSignatureProviderOptionIds", value.asInstanceOf[js.Any])
+    inline def setRequiredSignatureProviderOptionIds(value: js.Array[String]): Self = StObject.set(x, "requiredSignatureProviderOptionIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredSignatureProviderOptionIdsUndefined: Self = StObject.set(x, "requiredSignatureProviderOptionIds", js.undefined)
+    inline def setRequiredSignatureProviderOptionIdsUndefined: Self = StObject.set(x, "requiredSignatureProviderOptionIds", js.undefined)
     
-    @scala.inline
-    def setRequiredSignatureProviderOptionIdsVarargs(value: String*): Self = StObject.set(x, "requiredSignatureProviderOptionIds", js.Array(value :_*))
+    inline def setRequiredSignatureProviderOptionIdsVarargs(value: String*): Self = StObject.set(x, "requiredSignatureProviderOptionIds", js.Array(value :_*))
     
-    @scala.inline
-    def setSignerType(value: String): Self = StObject.set(x, "signerType", value.asInstanceOf[js.Any])
+    inline def setSignerType(value: String): Self = StObject.set(x, "signerType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignerTypeUndefined: Self = StObject.set(x, "signerType", js.undefined)
+    inline def setSignerTypeUndefined: Self = StObject.set(x, "signerType", js.undefined)
   }
 }

@@ -14,22 +14,17 @@ trait MUIDataTableTextLabelsSelectedRows extends StObject {
 }
 object MUIDataTableTextLabelsSelectedRows {
   
-  @scala.inline
-  def apply(delete: String, deleteAria: String, text: String): MUIDataTableTextLabelsSelectedRows = {
+  inline def apply(delete: String, deleteAria: String, text: String): MUIDataTableTextLabelsSelectedRows = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], deleteAria = deleteAria.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[MUIDataTableTextLabelsSelectedRows]
   }
   
-  @scala.inline
-  implicit class MUIDataTableTextLabelsSelectedRowsMutableBuilder[Self <: MUIDataTableTextLabelsSelectedRows] (val x: Self) extends AnyVal {
+  extension [Self <: MUIDataTableTextLabelsSelectedRows](x: Self) {
     
-    @scala.inline
-    def setDelete(value: String): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: String): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteAria(value: String): Self = StObject.set(x, "deleteAria", value.asInstanceOf[js.Any])
+    inline def setDeleteAria(value: String): Self = StObject.set(x, "deleteAria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

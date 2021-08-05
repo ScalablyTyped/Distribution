@@ -17,31 +17,23 @@ trait V1GenerateDefaultIdentityResponse extends StObject {
 }
 object V1GenerateDefaultIdentityResponse {
   
-  @scala.inline
-  def apply(): V1GenerateDefaultIdentityResponse = {
+  inline def apply(): V1GenerateDefaultIdentityResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[V1GenerateDefaultIdentityResponse]
   }
   
-  @scala.inline
-  implicit class V1GenerateDefaultIdentityResponseMutableBuilder[Self <: V1GenerateDefaultIdentityResponse] (val x: Self) extends AnyVal {
+  extension [Self <: V1GenerateDefaultIdentityResponse](x: Self) {
     
-    @scala.inline
-    def setAttachStatus(value: String): Self = StObject.set(x, "attachStatus", value.asInstanceOf[js.Any])
+    inline def setAttachStatus(value: String): Self = StObject.set(x, "attachStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachStatusUndefined: Self = StObject.set(x, "attachStatus", js.undefined)
+    inline def setAttachStatusUndefined: Self = StObject.set(x, "attachStatus", js.undefined)
     
-    @scala.inline
-    def setIdentity(value: V1DefaultIdentity): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+    inline def setIdentity(value: V1DefaultIdentity): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
+    inline def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
     
-    @scala.inline
-    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
   }
 }

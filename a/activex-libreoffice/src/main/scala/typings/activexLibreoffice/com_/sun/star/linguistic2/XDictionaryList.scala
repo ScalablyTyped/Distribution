@@ -140,8 +140,7 @@ trait XDictionaryList
 }
 object XDictionaryList {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     Dictionaries: SafeArray[XDictionary],
     acquire: () => Unit,
@@ -163,46 +162,32 @@ object XDictionaryList {
     __obj.asInstanceOf[XDictionaryList]
   }
   
-  @scala.inline
-  implicit class XDictionaryListMutableBuilder[Self <: XDictionaryList] (val x: Self) extends AnyVal {
+  extension [Self <: XDictionaryList](x: Self) {
     
-    @scala.inline
-    def setAddDictionary(value: XDictionary => Boolean): Self = StObject.set(x, "addDictionary", js.Any.fromFunction1(value))
+    inline def setAddDictionary(value: XDictionary => Boolean): Self = StObject.set(x, "addDictionary", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddDictionaryListEventListener(value: (XDictionaryListEventListener, Boolean) => Boolean): Self = StObject.set(x, "addDictionaryListEventListener", js.Any.fromFunction2(value))
+    inline def setAddDictionaryListEventListener(value: (XDictionaryListEventListener, Boolean) => Boolean): Self = StObject.set(x, "addDictionaryListEventListener", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBeginCollectEvents(value: () => Double): Self = StObject.set(x, "beginCollectEvents", js.Any.fromFunction0(value))
+    inline def setBeginCollectEvents(value: () => Double): Self = StObject.set(x, "beginCollectEvents", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateDictionary(value: (String, Locale, DictionaryType, String) => XDictionary): Self = StObject.set(x, "createDictionary", js.Any.fromFunction4(value))
+    inline def setCreateDictionary(value: (String, Locale, DictionaryType, String) => XDictionary): Self = StObject.set(x, "createDictionary", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setDictionaries(value: SafeArray[XDictionary]): Self = StObject.set(x, "Dictionaries", value.asInstanceOf[js.Any])
+    inline def setDictionaries(value: SafeArray[XDictionary]): Self = StObject.set(x, "Dictionaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndCollectEvents(value: () => Double): Self = StObject.set(x, "endCollectEvents", js.Any.fromFunction0(value))
+    inline def setEndCollectEvents(value: () => Double): Self = StObject.set(x, "endCollectEvents", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFlushEvents(value: () => Double): Self = StObject.set(x, "flushEvents", js.Any.fromFunction0(value))
+    inline def setFlushEvents(value: () => Double): Self = StObject.set(x, "flushEvents", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCount(value: () => Double): Self = StObject.set(x, "getCount", js.Any.fromFunction0(value))
+    inline def setGetCount(value: () => Double): Self = StObject.set(x, "getCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDictionaries(value: () => SafeArray[XDictionary]): Self = StObject.set(x, "getDictionaries", js.Any.fromFunction0(value))
+    inline def setGetDictionaries(value: () => SafeArray[XDictionary]): Self = StObject.set(x, "getDictionaries", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDictionaryByName(value: String => XDictionary): Self = StObject.set(x, "getDictionaryByName", js.Any.fromFunction1(value))
+    inline def setGetDictionaryByName(value: String => XDictionary): Self = StObject.set(x, "getDictionaryByName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveDictionary(value: XDictionary => Boolean): Self = StObject.set(x, "removeDictionary", js.Any.fromFunction1(value))
+    inline def setRemoveDictionary(value: XDictionary => Boolean): Self = StObject.set(x, "removeDictionary", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveDictionaryListEventListener(value: XDictionaryListEventListener => Boolean): Self = StObject.set(x, "removeDictionaryListEventListener", js.Any.fromFunction1(value))
+    inline def setRemoveDictionaryListEventListener(value: XDictionaryListEventListener => Boolean): Self = StObject.set(x, "removeDictionaryListEventListener", js.Any.fromFunction1(value))
   }
 }

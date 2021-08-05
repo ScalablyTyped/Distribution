@@ -12,19 +12,15 @@ trait SinonExposeOptions extends StObject {
 }
 object SinonExposeOptions {
   
-  @scala.inline
-  def apply(includeFail: Boolean, prefix: String): SinonExposeOptions = {
+  inline def apply(includeFail: Boolean, prefix: String): SinonExposeOptions = {
     val __obj = js.Dynamic.literal(includeFail = includeFail.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[SinonExposeOptions]
   }
   
-  @scala.inline
-  implicit class SinonExposeOptionsMutableBuilder[Self <: SinonExposeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SinonExposeOptions](x: Self) {
     
-    @scala.inline
-    def setIncludeFail(value: Boolean): Self = StObject.set(x, "includeFail", value.asInstanceOf[js.Any])
+    inline def setIncludeFail(value: Boolean): Self = StObject.set(x, "includeFail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
   }
 }

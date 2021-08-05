@@ -38,16 +38,14 @@ object totextMod {
     @JSImport("rrule/dist/esm/src/nlp/totext", "default.IMPLEMENTED")
     @js.native
     def IMPLEMENTED: js.Array[js.Array[String]] = js.native
-    @scala.inline
-    def IMPLEMENTED_=(x: js.Array[js.Array[String]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IMPLEMENTED")(x.asInstanceOf[js.Any])
+    inline def IMPLEMENTED_=(x: js.Array[js.Array[String]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IMPLEMENTED")(x.asInstanceOf[js.Any])
     
     /**
       * Test whether the rrule can be fully converted to text.
       * @param {RRule} rrule
       * @return {Boolean}
       */
-    @scala.inline
-    def isFullyConvertible(rrule: typings.rrule.mod.default): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFullyConvertible")(rrule.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isFullyConvertible(rrule: typings.rrule.mod.default): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFullyConvertible")(rrule.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   type DateFormatter = js.Function3[/* year */ Double, /* month */ String, /* day */ Double, String]
@@ -69,27 +67,27 @@ object totextMod {
     
     def YEARLY(): Unit = js.native
     
-    var _byhour: js.Any = js.native
+    /* private */ var _byhour: js.Any = js.native
     
-    var _bymonth: js.Any = js.native
+    /* private */ var _bymonth: js.Any = js.native
     
-    var _bymonthday: js.Any = js.native
+    /* private */ var _bymonthday: js.Any = js.native
     
-    var _byweekday: js.Any = js.native
+    /* private */ var _byweekday: js.Any = js.native
     
     def add(s: String): this.type = js.native
     
-    var bymonthday: js.Any = js.native
+    /* private */ var bymonthday: js.Any = js.native
     
-    var byweekday: js.Any = js.native
+    /* private */ var byweekday: js.Any = js.native
     
-    var dateFormatter: js.Any = js.native
+    /* private */ var dateFormatter: js.Any = js.native
     
-    var gettext: js.Any = js.native
+    /* private */ var gettext: js.Any = js.native
     
     def isFullyConvertible(): Boolean = js.native
     
-    var language: js.Any = js.native
+    /* private */ var language: js.Any = js.native
     
     def list(arr: js.Array[ByWeekday]): String = js.native
     def list(arr: js.Array[ByWeekday], callback: Unit, finalDelim: String): String = js.native
@@ -113,15 +111,15 @@ object totextMod {
     def nth(n: String): String = js.native
     def nth(n: Double): String = js.native
     
-    var options: js.Any = js.native
+    /* private */ var options: js.Any = js.native
     
-    var origOptions: js.Any = js.native
+    /* private */ var origOptions: js.Any = js.native
     
     def plural(n: Double): Boolean = js.native
     
-    var rrule: js.Any = js.native
+    /* private */ var rrule: js.Any = js.native
     
-    var text: js.Any = js.native
+    /* private */ var text: js.Any = js.native
     
     def weekdaytext(wday: Double): String = js.native
     def weekdaytext(wday: Weekday): String = js.native

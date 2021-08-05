@@ -10,22 +10,17 @@ trait DocumentTemplateList extends StObject {
 }
 object DocumentTemplateList {
   
-  @scala.inline
-  def apply(): DocumentTemplateList = {
+  inline def apply(): DocumentTemplateList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentTemplateList]
   }
   
-  @scala.inline
-  implicit class DocumentTemplateListMutableBuilder[Self <: DocumentTemplateList] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentTemplateList](x: Self) {
     
-    @scala.inline
-    def setDocumentTemplates(value: js.Array[DocumentTemplate]): Self = StObject.set(x, "documentTemplates", value.asInstanceOf[js.Any])
+    inline def setDocumentTemplates(value: js.Array[DocumentTemplate]): Self = StObject.set(x, "documentTemplates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentTemplatesUndefined: Self = StObject.set(x, "documentTemplates", js.undefined)
+    inline def setDocumentTemplatesUndefined: Self = StObject.set(x, "documentTemplates", js.undefined)
     
-    @scala.inline
-    def setDocumentTemplatesVarargs(value: DocumentTemplate*): Self = StObject.set(x, "documentTemplates", js.Array(value :_*))
+    inline def setDocumentTemplatesVarargs(value: DocumentTemplate*): Self = StObject.set(x, "documentTemplates", js.Array(value :_*))
   }
 }

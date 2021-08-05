@@ -17,31 +17,23 @@ trait GoogleCloudDatalabelingV1alpha1ImportDataOperationResponse extends StObjec
 }
 object GoogleCloudDatalabelingV1alpha1ImportDataOperationResponse {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1alpha1ImportDataOperationResponse = {
+  inline def apply(): GoogleCloudDatalabelingV1alpha1ImportDataOperationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1alpha1ImportDataOperationResponse]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1alpha1ImportDataOperationResponseMutableBuilder[Self <: GoogleCloudDatalabelingV1alpha1ImportDataOperationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1alpha1ImportDataOperationResponse](x: Self) {
     
-    @scala.inline
-    def setDataset(value: String): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+    inline def setDataset(value: String): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
+    inline def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
     
-    @scala.inline
-    def setImportCount(value: Double): Self = StObject.set(x, "importCount", value.asInstanceOf[js.Any])
+    inline def setImportCount(value: Double): Self = StObject.set(x, "importCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportCountUndefined: Self = StObject.set(x, "importCount", js.undefined)
+    inline def setImportCountUndefined: Self = StObject.set(x, "importCount", js.undefined)
     
-    @scala.inline
-    def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
+    inline def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalCountUndefined: Self = StObject.set(x, "totalCount", js.undefined)
+    inline def setTotalCountUndefined: Self = StObject.set(x, "totalCount", js.undefined)
   }
 }

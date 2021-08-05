@@ -17,20 +17,16 @@ object anon {
   }
   object Event {
     
-    @scala.inline
-    def apply(event: SyntheticEvent[HTMLInputElement, typings.std.Event], value: Date): Event = {
+    inline def apply(event: SyntheticEvent[HTMLInputElement, typings.std.Event], value: Date): Event = {
       val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Event]
     }
     
-    @scala.inline
-    implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
+    extension [Self <: Event](x: Self) {
       
-      @scala.inline
-      def setEvent(value: SyntheticEvent[HTMLInputElement, typings.std.Event]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: SyntheticEvent[HTMLInputElement, typings.std.Event]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

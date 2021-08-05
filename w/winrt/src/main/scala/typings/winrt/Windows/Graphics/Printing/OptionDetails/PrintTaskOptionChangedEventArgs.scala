@@ -9,8 +9,7 @@ trait PrintTaskOptionChangedEventArgs
      with IPrintTaskOptionChangedEventArgs
 object PrintTaskOptionChangedEventArgs {
   
-  @scala.inline
-  def apply(optionId: js.Any): PrintTaskOptionChangedEventArgs = {
+  inline def apply(optionId: js.Any): PrintTaskOptionChangedEventArgs = {
     val __obj = js.Dynamic.literal(optionId = optionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrintTaskOptionChangedEventArgs]
   }

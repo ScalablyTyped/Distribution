@@ -21,8 +21,7 @@ trait CategoricalFilter
 }
 object CategoricalFilter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getAppliedValues: () => js.Array[DataValue],
     getFieldAsync: () => js.Promise[Field],
     getFieldName: () => String,
@@ -34,13 +33,10 @@ object CategoricalFilter {
     __obj.asInstanceOf[CategoricalFilter]
   }
   
-  @scala.inline
-  implicit class CategoricalFilterMutableBuilder[Self <: CategoricalFilter] (val x: Self) extends AnyVal {
+  extension [Self <: CategoricalFilter](x: Self) {
     
-    @scala.inline
-    def setGetAppliedValues(value: () => js.Array[DataValue]): Self = StObject.set(x, "getAppliedValues", js.Any.fromFunction0(value))
+    inline def setGetAppliedValues(value: () => js.Array[DataValue]): Self = StObject.set(x, "getAppliedValues", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIsExcludeMode(value: () => Boolean): Self = StObject.set(x, "getIsExcludeMode", js.Any.fromFunction0(value))
+    inline def setGetIsExcludeMode(value: () => Boolean): Self = StObject.set(x, "getIsExcludeMode", js.Any.fromFunction0(value))
   }
 }

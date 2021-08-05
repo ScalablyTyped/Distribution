@@ -17,26 +17,20 @@ trait ConstructQuery
 }
 object ConstructQuery {
   
-  @scala.inline
-  def apply(prefixes: StringDictionary[String]): ConstructQuery = {
+  inline def apply(prefixes: StringDictionary[String]): ConstructQuery = {
     val __obj = js.Dynamic.literal(prefixes = prefixes.asInstanceOf[js.Any], queryType = "CONSTRUCT")
     __obj.updateDynamic("type")("query")
     __obj.asInstanceOf[ConstructQuery]
   }
   
-  @scala.inline
-  implicit class ConstructQueryMutableBuilder[Self <: ConstructQuery] (val x: Self) extends AnyVal {
+  extension [Self <: ConstructQuery](x: Self) {
     
-    @scala.inline
-    def setQueryType(value: CONSTRUCT): Self = StObject.set(x, "queryType", value.asInstanceOf[js.Any])
+    inline def setQueryType(value: CONSTRUCT): Self = StObject.set(x, "queryType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplate(value: js.Array[Triple]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: js.Array[Triple]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
-    @scala.inline
-    def setTemplateVarargs(value: Triple*): Self = StObject.set(x, "template", js.Array(value :_*))
+    inline def setTemplateVarargs(value: Triple*): Self = StObject.set(x, "template", js.Array(value :_*))
   }
 }

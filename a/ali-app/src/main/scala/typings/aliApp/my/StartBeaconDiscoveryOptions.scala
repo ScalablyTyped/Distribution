@@ -19,25 +19,19 @@ trait StartBeaconDiscoveryOptions
 }
 object StartBeaconDiscoveryOptions {
   
-  @scala.inline
-  def apply(uuids: js.Array[String]): StartBeaconDiscoveryOptions = {
+  inline def apply(uuids: js.Array[String]): StartBeaconDiscoveryOptions = {
     val __obj = js.Dynamic.literal(uuids = uuids.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartBeaconDiscoveryOptions]
   }
   
-  @scala.inline
-  implicit class StartBeaconDiscoveryOptionsMutableBuilder[Self <: StartBeaconDiscoveryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StartBeaconDiscoveryOptions](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: /* res */ ErrMsgResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ ErrMsgResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
-    @scala.inline
-    def setUuids(value: js.Array[String]): Self = StObject.set(x, "uuids", value.asInstanceOf[js.Any])
+    inline def setUuids(value: js.Array[String]): Self = StObject.set(x, "uuids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUuidsVarargs(value: String*): Self = StObject.set(x, "uuids", js.Array(value :_*))
+    inline def setUuidsVarargs(value: String*): Self = StObject.set(x, "uuids", js.Array(value :_*))
   }
 }

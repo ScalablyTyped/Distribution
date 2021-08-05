@@ -24,25 +24,19 @@ trait ParamsResourceProductsCustombatch
 }
 object ParamsResourceProductsCustombatch {
   
-  @scala.inline
-  def apply(): ParamsResourceProductsCustombatch = {
+  inline def apply(): ParamsResourceProductsCustombatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceProductsCustombatch]
   }
   
-  @scala.inline
-  implicit class ParamsResourceProductsCustombatchMutableBuilder[Self <: ParamsResourceProductsCustombatch] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceProductsCustombatch](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaProductsCustomBatchRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaProductsCustomBatchRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }
 }

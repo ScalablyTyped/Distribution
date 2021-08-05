@@ -21,16 +21,12 @@ object STATE_CHANGE_TYPE {
   @js.native
   val ^ : STATE_CHANGE_TYPE = js.native
   
-  @scala.inline
-  implicit class STATE_CHANGE_TYPEMutableBuilder[Self <: STATE_CHANGE_TYPE] (val x: Self) extends AnyVal {
+  extension [Self <: STATE_CHANGE_TYPE](x: Self) {
     
-    @scala.inline
-    def setClear(value: clear): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
+    inline def setClear(value: clear): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemove(value: remove): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+    inline def setRemove(value: remove): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelect(value: select): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+    inline def setSelect(value: select): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
   }
 }

@@ -43,8 +43,7 @@ trait XFetchProviderForContentAccess
 }
 object XFetchProviderForContentAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     fetchContentIdentifierStrings: (Double, Double, Boolean) => FetchResult,
     fetchContentIdentifiers: (Double, Double, Boolean) => FetchResult,
@@ -56,16 +55,12 @@ object XFetchProviderForContentAccess {
     __obj.asInstanceOf[XFetchProviderForContentAccess]
   }
   
-  @scala.inline
-  implicit class XFetchProviderForContentAccessMutableBuilder[Self <: XFetchProviderForContentAccess] (val x: Self) extends AnyVal {
+  extension [Self <: XFetchProviderForContentAccess](x: Self) {
     
-    @scala.inline
-    def setFetchContentIdentifierStrings(value: (Double, Double, Boolean) => FetchResult): Self = StObject.set(x, "fetchContentIdentifierStrings", js.Any.fromFunction3(value))
+    inline def setFetchContentIdentifierStrings(value: (Double, Double, Boolean) => FetchResult): Self = StObject.set(x, "fetchContentIdentifierStrings", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setFetchContentIdentifiers(value: (Double, Double, Boolean) => FetchResult): Self = StObject.set(x, "fetchContentIdentifiers", js.Any.fromFunction3(value))
+    inline def setFetchContentIdentifiers(value: (Double, Double, Boolean) => FetchResult): Self = StObject.set(x, "fetchContentIdentifiers", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setFetchContents(value: (Double, Double, Boolean) => FetchResult): Self = StObject.set(x, "fetchContents", js.Any.fromFunction3(value))
+    inline def setFetchContents(value: (Double, Double, Boolean) => FetchResult): Self = StObject.set(x, "fetchContents", js.Any.fromFunction3(value))
   }
 }

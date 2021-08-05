@@ -13,19 +13,15 @@ trait FindingSourceDetail extends StObject {
 }
 object FindingSourceDetail {
   
-  @scala.inline
-  def apply(): FindingSourceDetail = {
+  inline def apply(): FindingSourceDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FindingSourceDetail]
   }
   
-  @scala.inline
-  implicit class FindingSourceDetailMutableBuilder[Self <: FindingSourceDetail] (val x: Self) extends AnyVal {
+  extension [Self <: FindingSourceDetail](x: Self) {
     
-    @scala.inline
-    def setAccessPointArn(value: String): Self = StObject.set(x, "accessPointArn", value.asInstanceOf[js.Any])
+    inline def setAccessPointArn(value: String): Self = StObject.set(x, "accessPointArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessPointArnUndefined: Self = StObject.set(x, "accessPointArn", js.undefined)
+    inline def setAccessPointArnUndefined: Self = StObject.set(x, "accessPointArn", js.undefined)
   }
 }

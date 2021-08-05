@@ -13,19 +13,15 @@ trait GetBackupPlanFromTemplateOutput extends StObject {
 }
 object GetBackupPlanFromTemplateOutput {
   
-  @scala.inline
-  def apply(): GetBackupPlanFromTemplateOutput = {
+  inline def apply(): GetBackupPlanFromTemplateOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetBackupPlanFromTemplateOutput]
   }
   
-  @scala.inline
-  implicit class GetBackupPlanFromTemplateOutputMutableBuilder[Self <: GetBackupPlanFromTemplateOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetBackupPlanFromTemplateOutput](x: Self) {
     
-    @scala.inline
-    def setBackupPlanDocument(value: BackupPlan): Self = StObject.set(x, "BackupPlanDocument", value.asInstanceOf[js.Any])
+    inline def setBackupPlanDocument(value: BackupPlan): Self = StObject.set(x, "BackupPlanDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupPlanDocumentUndefined: Self = StObject.set(x, "BackupPlanDocument", js.undefined)
+    inline def setBackupPlanDocumentUndefined: Self = StObject.set(x, "BackupPlanDocument", js.undefined)
   }
 }

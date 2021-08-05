@@ -10,16 +10,13 @@ trait URIF[F] extends StObject {
 }
 object URIF {
   
-  @scala.inline
-  def apply[F](URI: F): URIF[F] = {
+  inline def apply[F](URI: F): URIF[F] = {
     val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any])
     __obj.asInstanceOf[URIF[F]]
   }
   
-  @scala.inline
-  implicit class URIFMutableBuilder[Self <: URIF[?], F] (val x: Self & URIF[F]) extends AnyVal {
+  extension [Self <: URIF[?], F](x: Self & URIF[F]) {
     
-    @scala.inline
-    def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+    inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
   }
 }

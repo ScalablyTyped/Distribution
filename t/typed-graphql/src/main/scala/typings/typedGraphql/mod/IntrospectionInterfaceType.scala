@@ -21,8 +21,7 @@ trait IntrospectionInterfaceType
 }
 object IntrospectionInterfaceType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fields: js.Array[IntrospectionField],
     name: String,
     possibleTypes: js.Array[IntrospectionNamedTypeRef]
@@ -31,31 +30,22 @@ object IntrospectionInterfaceType {
     __obj.asInstanceOf[IntrospectionInterfaceType]
   }
   
-  @scala.inline
-  implicit class IntrospectionInterfaceTypeMutableBuilder[Self <: IntrospectionInterfaceType] (val x: Self) extends AnyVal {
+  extension [Self <: IntrospectionInterfaceType](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setFields(value: js.Array[IntrospectionField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[IntrospectionField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsVarargs(value: IntrospectionField*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: IntrospectionField*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: INTERFACE): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: INTERFACE): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPossibleTypes(value: js.Array[IntrospectionNamedTypeRef]): Self = StObject.set(x, "possibleTypes", value.asInstanceOf[js.Any])
+    inline def setPossibleTypes(value: js.Array[IntrospectionNamedTypeRef]): Self = StObject.set(x, "possibleTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPossibleTypesVarargs(value: IntrospectionNamedTypeRef*): Self = StObject.set(x, "possibleTypes", js.Array(value :_*))
+    inline def setPossibleTypesVarargs(value: IntrospectionNamedTypeRef*): Self = StObject.set(x, "possibleTypes", js.Array(value :_*))
   }
 }

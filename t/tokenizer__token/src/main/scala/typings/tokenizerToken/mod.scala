@@ -24,20 +24,16 @@ object mod {
   }
   object IGetToken {
     
-    @scala.inline
-    def apply[T](get: (Buffer, Double) => T, len: Double): IGetToken[T] = {
+    inline def apply[T](get: (Buffer, Double) => T, len: Double): IGetToken[T] = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get), len = len.asInstanceOf[js.Any])
       __obj.asInstanceOf[IGetToken[T]]
     }
     
-    @scala.inline
-    implicit class IGetTokenMutableBuilder[Self <: IGetToken[?], T] (val x: Self & IGetToken[T]) extends AnyVal {
+    extension [Self <: IGetToken[?], T](x: Self & IGetToken[T]) {
       
-      @scala.inline
-      def setGet(value: (Buffer, Double) => T): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+      inline def setGet(value: (Buffer, Double) => T): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLen(value: Double): Self = StObject.set(x, "len", value.asInstanceOf[js.Any])
+      inline def setLen(value: Double): Self = StObject.set(x, "len", value.asInstanceOf[js.Any])
     }
   }
   
@@ -55,17 +51,14 @@ object mod {
   }
   object IToken {
     
-    @scala.inline
-    def apply[T](get: (Buffer, Double) => T, len: Double, put: (Buffer, Double, T) => Double): IToken[T] = {
+    inline def apply[T](get: (Buffer, Double) => T, len: Double, put: (Buffer, Double, T) => Double): IToken[T] = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get), len = len.asInstanceOf[js.Any], put = js.Any.fromFunction3(put))
       __obj.asInstanceOf[IToken[T]]
     }
     
-    @scala.inline
-    implicit class ITokenMutableBuilder[Self <: IToken[?], T] (val x: Self & IToken[T]) extends AnyVal {
+    extension [Self <: IToken[?], T](x: Self & IToken[T]) {
       
-      @scala.inline
-      def setPut(value: (Buffer, Double, T) => Double): Self = StObject.set(x, "put", js.Any.fromFunction3(value))
+      inline def setPut(value: (Buffer, Double, T) => Double): Self = StObject.set(x, "put", js.Any.fromFunction3(value))
     }
   }
 }

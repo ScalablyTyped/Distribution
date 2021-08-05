@@ -10,16 +10,13 @@ trait StreetViewPanoRequest extends StObject {
 }
 object StreetViewPanoRequest {
   
-  @scala.inline
-  def apply(pano: String): StreetViewPanoRequest = {
+  inline def apply(pano: String): StreetViewPanoRequest = {
     val __obj = js.Dynamic.literal(pano = pano.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreetViewPanoRequest]
   }
   
-  @scala.inline
-  implicit class StreetViewPanoRequestMutableBuilder[Self <: StreetViewPanoRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StreetViewPanoRequest](x: Self) {
     
-    @scala.inline
-    def setPano(value: String): Self = StObject.set(x, "pano", value.asInstanceOf[js.Any])
+    inline def setPano(value: String): Self = StObject.set(x, "pano", value.asInstanceOf[js.Any])
   }
 }

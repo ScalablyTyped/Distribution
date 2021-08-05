@@ -25,8 +25,7 @@ trait CodeLens extends StObject {
 }
 object CodeLens {
   
-  @scala.inline
-  def apply(range: Range): CodeLens = {
+  inline def apply(range: Range): CodeLens = {
     val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeLens]
   }
@@ -38,33 +37,24 @@ object CodeLens {
   /**
     * Creates a new CodeLens literal.
     */
-  @scala.inline
-  def create(range: Range): CodeLens = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any]).asInstanceOf[CodeLens]
-  @scala.inline
-  def create(range: Range, data: js.Any): CodeLens = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[CodeLens]
+  inline def create(range: Range): CodeLens = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any]).asInstanceOf[CodeLens]
+  inline def create(range: Range, data: js.Any): CodeLens = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[CodeLens]
   
   /**
     * Checks whether the given literal conforms to the [CodeLens](#CodeLens) interface.
     */
-  @scala.inline
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.CodeLens */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.CodeLens */ Boolean]
+  inline def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.CodeLens */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.CodeLens */ Boolean]
   
-  @scala.inline
-  implicit class CodeLensMutableBuilder[Self <: CodeLens] (val x: Self) extends AnyVal {
+  extension [Self <: CodeLens](x: Self) {
     
-    @scala.inline
-    def setCommand(value: Command): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: Command): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
+    inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
   }
 }

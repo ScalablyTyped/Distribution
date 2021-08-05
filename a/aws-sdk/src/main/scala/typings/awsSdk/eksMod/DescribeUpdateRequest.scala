@@ -23,25 +23,19 @@ trait DescribeUpdateRequest extends StObject {
 }
 object DescribeUpdateRequest {
   
-  @scala.inline
-  def apply(name: String, updateId: String): DescribeUpdateRequest = {
+  inline def apply(name: String, updateId: String): DescribeUpdateRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], updateId = updateId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeUpdateRequest]
   }
   
-  @scala.inline
-  implicit class DescribeUpdateRequestMutableBuilder[Self <: DescribeUpdateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeUpdateRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodegroupName(value: String): Self = StObject.set(x, "nodegroupName", value.asInstanceOf[js.Any])
+    inline def setNodegroupName(value: String): Self = StObject.set(x, "nodegroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodegroupNameUndefined: Self = StObject.set(x, "nodegroupName", js.undefined)
+    inline def setNodegroupNameUndefined: Self = StObject.set(x, "nodegroupName", js.undefined)
     
-    @scala.inline
-    def setUpdateId(value: String): Self = StObject.set(x, "updateId", value.asInstanceOf[js.Any])
+    inline def setUpdateId(value: String): Self = StObject.set(x, "updateId", value.asInstanceOf[js.Any])
   }
 }

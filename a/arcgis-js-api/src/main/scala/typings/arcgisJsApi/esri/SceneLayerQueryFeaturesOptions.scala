@@ -20,8 +20,7 @@ trait SceneLayerQueryFeaturesOptions
 }
 object SceneLayerQueryFeaturesOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -30,13 +29,10 @@ object SceneLayerQueryFeaturesOptions {
     __obj.asInstanceOf[SceneLayerQueryFeaturesOptions]
   }
   
-  @scala.inline
-  implicit class SceneLayerQueryFeaturesOptionsMutableBuilder[Self <: SceneLayerQueryFeaturesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SceneLayerQueryFeaturesOptions](x: Self) {
     
-    @scala.inline
-    def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
   }
 }

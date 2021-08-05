@@ -36,8 +36,7 @@ trait XStringListControl
 }
 object XStringListControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ControlContext: XPropertyControlContext,
     ControlType: Double,
     ControlWindow: XWindow,
@@ -55,22 +54,16 @@ object XStringListControl {
     __obj.asInstanceOf[XStringListControl]
   }
   
-  @scala.inline
-  implicit class XStringListControlMutableBuilder[Self <: XStringListControl] (val x: Self) extends AnyVal {
+  extension [Self <: XStringListControl](x: Self) {
     
-    @scala.inline
-    def setAppendListEntry(value: String => Unit): Self = StObject.set(x, "appendListEntry", js.Any.fromFunction1(value))
+    inline def setAppendListEntry(value: String => Unit): Self = StObject.set(x, "appendListEntry", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClearList(value: () => Unit): Self = StObject.set(x, "clearList", js.Any.fromFunction0(value))
+    inline def setClearList(value: () => Unit): Self = StObject.set(x, "clearList", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetListEntries(value: () => SafeArray[String]): Self = StObject.set(x, "getListEntries", js.Any.fromFunction0(value))
+    inline def setGetListEntries(value: () => SafeArray[String]): Self = StObject.set(x, "getListEntries", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setListEntries(value: SafeArray[String]): Self = StObject.set(x, "ListEntries", value.asInstanceOf[js.Any])
+    inline def setListEntries(value: SafeArray[String]): Self = StObject.set(x, "ListEntries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrependListEntry(value: String => Unit): Self = StObject.set(x, "prependListEntry", js.Any.fromFunction1(value))
+    inline def setPrependListEntry(value: String => Unit): Self = StObject.set(x, "prependListEntry", js.Any.fromFunction1(value))
   }
 }

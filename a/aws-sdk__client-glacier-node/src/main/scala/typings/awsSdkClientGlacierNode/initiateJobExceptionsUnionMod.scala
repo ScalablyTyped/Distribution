@@ -17,38 +17,32 @@ object initiateJobExceptionsUnionMod {
   trait InitiateJobExceptionsUnion extends StObject
   object InitiateJobExceptionsUnion {
     
-    @scala.inline
-    def InsufficientCapacityException(): typings.awsSdkClientGlacierNode.typesInsufficientCapacityExceptionMod.InsufficientCapacityException = {
+    inline def InsufficientCapacityException(): typings.awsSdkClientGlacierNode.typesInsufficientCapacityExceptionMod.InsufficientCapacityException = {
       val __obj = js.Dynamic.literal(name = "InsufficientCapacityException")
       __obj.asInstanceOf[typings.awsSdkClientGlacierNode.typesInsufficientCapacityExceptionMod.InsufficientCapacityException]
     }
     
-    @scala.inline
-    def InvalidParameterValueException(): typings.awsSdkClientGlacierNode.typesInvalidParameterValueExceptionMod.InvalidParameterValueException = {
+    inline def InvalidParameterValueException(): typings.awsSdkClientGlacierNode.typesInvalidParameterValueExceptionMod.InvalidParameterValueException = {
       val __obj = js.Dynamic.literal(name = "InvalidParameterValueException")
       __obj.asInstanceOf[typings.awsSdkClientGlacierNode.typesInvalidParameterValueExceptionMod.InvalidParameterValueException]
     }
     
-    @scala.inline
-    def MissingParameterValueException(): typings.awsSdkClientGlacierNode.typesMissingParameterValueExceptionMod.MissingParameterValueException = {
+    inline def MissingParameterValueException(): typings.awsSdkClientGlacierNode.typesMissingParameterValueExceptionMod.MissingParameterValueException = {
       val __obj = js.Dynamic.literal(name = "MissingParameterValueException")
       __obj.asInstanceOf[typings.awsSdkClientGlacierNode.typesMissingParameterValueExceptionMod.MissingParameterValueException]
     }
     
-    @scala.inline
-    def PolicyEnforcedException(): typings.awsSdkClientGlacierNode.typesPolicyEnforcedExceptionMod.PolicyEnforcedException = {
+    inline def PolicyEnforcedException(): typings.awsSdkClientGlacierNode.typesPolicyEnforcedExceptionMod.PolicyEnforcedException = {
       val __obj = js.Dynamic.literal(name = "PolicyEnforcedException")
       __obj.asInstanceOf[typings.awsSdkClientGlacierNode.typesPolicyEnforcedExceptionMod.PolicyEnforcedException]
     }
     
-    @scala.inline
-    def ResourceNotFoundException(): typings.awsSdkClientGlacierNode.typesResourceNotFoundExceptionMod.ResourceNotFoundException = {
+    inline def ResourceNotFoundException(): typings.awsSdkClientGlacierNode.typesResourceNotFoundExceptionMod.ResourceNotFoundException = {
       val __obj = js.Dynamic.literal(name = "ResourceNotFoundException")
       __obj.asInstanceOf[typings.awsSdkClientGlacierNode.typesResourceNotFoundExceptionMod.ResourceNotFoundException]
     }
     
-    @scala.inline
-    def ServiceUnavailableException(): typings.awsSdkClientGlacierNode.typesServiceUnavailableExceptionMod.ServiceUnavailableException = {
+    inline def ServiceUnavailableException(): typings.awsSdkClientGlacierNode.typesServiceUnavailableExceptionMod.ServiceUnavailableException = {
       val __obj = js.Dynamic.literal(name = "ServiceUnavailableException")
       __obj.asInstanceOf[typings.awsSdkClientGlacierNode.typesServiceUnavailableExceptionMod.ServiceUnavailableException]
     }

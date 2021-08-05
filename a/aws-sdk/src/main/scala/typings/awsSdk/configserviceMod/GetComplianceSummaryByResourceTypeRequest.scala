@@ -13,22 +13,17 @@ trait GetComplianceSummaryByResourceTypeRequest extends StObject {
 }
 object GetComplianceSummaryByResourceTypeRequest {
   
-  @scala.inline
-  def apply(): GetComplianceSummaryByResourceTypeRequest = {
+  inline def apply(): GetComplianceSummaryByResourceTypeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetComplianceSummaryByResourceTypeRequest]
   }
   
-  @scala.inline
-  implicit class GetComplianceSummaryByResourceTypeRequestMutableBuilder[Self <: GetComplianceSummaryByResourceTypeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetComplianceSummaryByResourceTypeRequest](x: Self) {
     
-    @scala.inline
-    def setResourceTypes(value: ResourceTypes): Self = StObject.set(x, "ResourceTypes", value.asInstanceOf[js.Any])
+    inline def setResourceTypes(value: ResourceTypes): Self = StObject.set(x, "ResourceTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypesUndefined: Self = StObject.set(x, "ResourceTypes", js.undefined)
+    inline def setResourceTypesUndefined: Self = StObject.set(x, "ResourceTypes", js.undefined)
     
-    @scala.inline
-    def setResourceTypesVarargs(value: StringWithCharLimit256*): Self = StObject.set(x, "ResourceTypes", js.Array(value :_*))
+    inline def setResourceTypesVarargs(value: StringWithCharLimit256*): Self = StObject.set(x, "ResourceTypes", js.Array(value :_*))
   }
 }

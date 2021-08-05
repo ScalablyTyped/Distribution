@@ -23,31 +23,23 @@ trait Config extends StObject {
 }
 object Config {
   
-  @scala.inline
-  def apply(): Config = {
+  inline def apply(): Config = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Config]
   }
   
-  @scala.inline
-  implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+  extension [Self <: Config](x: Self) {
     
-    @scala.inline
-    def setPacScript(value: String): Self = StObject.set(x, "pacScript", value.asInstanceOf[js.Any])
+    inline def setPacScript(value: String): Self = StObject.set(x, "pacScript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPacScriptUndefined: Self = StObject.set(x, "pacScript", js.undefined)
+    inline def setPacScriptUndefined: Self = StObject.set(x, "pacScript", js.undefined)
     
-    @scala.inline
-    def setProxyBypassRules(value: String): Self = StObject.set(x, "proxyBypassRules", value.asInstanceOf[js.Any])
+    inline def setProxyBypassRules(value: String): Self = StObject.set(x, "proxyBypassRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyBypassRulesUndefined: Self = StObject.set(x, "proxyBypassRules", js.undefined)
+    inline def setProxyBypassRulesUndefined: Self = StObject.set(x, "proxyBypassRules", js.undefined)
     
-    @scala.inline
-    def setProxyRules(value: String): Self = StObject.set(x, "proxyRules", value.asInstanceOf[js.Any])
+    inline def setProxyRules(value: String): Self = StObject.set(x, "proxyRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyRulesUndefined: Self = StObject.set(x, "proxyRules", js.undefined)
+    inline def setProxyRulesUndefined: Self = StObject.set(x, "proxyRules", js.undefined)
   }
 }

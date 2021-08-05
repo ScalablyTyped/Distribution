@@ -46,13 +46,13 @@ class Router protected () extends StObject {
     config: Routes
   ) = this()
   
-  var browserUrlTree: js.Any = js.native
+  /* private */ var browserUrlTree: js.Any = js.native
   
   var config: Routes = js.native
   
-  var configLoader: js.Any = js.native
+  /* private */ var configLoader: js.Any = js.native
   
-  var console: js.Any = js.native
+  /* private */ var console: js.Any = js.native
   
   /**
     * Appends URL segments to the current URL tree to create a new URL tree.
@@ -102,9 +102,9 @@ class Router protected () extends StObject {
   def createUrlTree(commands: js.Array[js.Any]): UrlTree = js.native
   def createUrlTree(commands: js.Array[js.Any], navigationExtras: UrlCreationOptions): UrlTree = js.native
   
-  var currentNavigation: js.Any = js.native
+  /* private */ var currentNavigation: js.Any = js.native
   
-  var currentUrlTree: js.Any = js.native
+  /* private */ var currentUrlTree: js.Any = js.native
   
   /** Disposes of the router. */
   def dispose(): Unit = js.native
@@ -125,12 +125,12 @@ class Router protected () extends StObject {
   val events: Observable_[Event] = js.native
   
   /** Extracts router-related information from a `PopStateEvent`. */
-  var extractLocationChangeInfoFromEvent: js.Any = js.native
+  /* private */ var extractLocationChangeInfoFromEvent: js.Any = js.native
   
   /** The current Navigation object if one exists */
   def getCurrentNavigation(): Navigation | Null = js.native
   
-  var getTransition: js.Any = js.native
+  /* private */ var getTransition: js.Any = js.native
   
   /**
     * Sets up the location change listener and performs the initial navigation.
@@ -141,21 +141,21 @@ class Router protected () extends StObject {
   def isActive(url: String, exact: Boolean): Boolean = js.native
   def isActive(url: UrlTree, exact: Boolean): Boolean = js.native
   
-  var isNgZoneEnabled: js.Any = js.native
+  /* private */ var isNgZoneEnabled: js.Any = js.native
   
   /**
     * Tracks the previously seen location change from the location subscription so we can compare
     * the two latest to see if they are duplicates. See setUpLocationChangeListener.
     */
-  var lastLocationChangeInfo: js.Any = js.native
+  /* private */ var lastLocationChangeInfo: js.Any = js.native
   
-  var lastSuccessfulId: js.Any = js.native
+  /* private */ var lastSuccessfulId: js.Any = js.native
   
-  var lastSuccessfulNavigation: js.Any = js.native
+  /* private */ var lastSuccessfulNavigation: js.Any = js.native
   
-  var location: js.Any = js.native
+  /* private */ var location: js.Any = js.native
   
-  var locationSubscription: js.Any = js.native
+  /* private */ var locationSubscription: js.Any = js.native
   
   /**
     * A handler for errors thrown by `Router.parseUrl(url)`
@@ -233,11 +233,11 @@ class Router protected () extends StObject {
     */
   var navigated: Boolean = js.native
   
-  var navigationId: js.Any = js.native
+  /* private */ var navigationId: js.Any = js.native
   
-  var navigations: js.Any = js.native
+  /* private */ var navigations: js.Any = js.native
   
-  var ngModule: js.Any = js.native
+  /* private */ var ngModule: js.Any = js.native
   
   /** @nodoc */
   def ngOnDestroy(): Unit = js.native
@@ -263,9 +263,9 @@ class Router protected () extends StObject {
   /** Parses a string into a `UrlTree` */
   def parseUrl(url: String): UrlTree = js.native
   
-  var processNavigations: js.Any = js.native
+  /* private */ var processNavigations: js.Any = js.native
   
-  var rawUrlTree: js.Any = js.native
+  /* private */ var rawUrlTree: js.Any = js.native
   
   /**
     * Enables a bug fix that corrects relative link resolution in components with empty paths.
@@ -273,7 +273,7 @@ class Router protected () extends StObject {
     */
   var relativeLinkResolution: legacy | corrected = js.native
   
-  var removeEmptyProps: js.Any = js.native
+  /* private */ var removeEmptyProps: js.Any = js.native
   
   /**
     * Resets the route configuration used for navigation and generating links.
@@ -293,13 +293,13 @@ class Router protected () extends StObject {
     */
   def resetConfig(config: Routes): Unit = js.native
   
-  var resetStateAndUrl: js.Any = js.native
+  /* private */ var resetStateAndUrl: js.Any = js.native
   
-  var resetUrlToCurrentUrlTree: js.Any = js.native
+  /* private */ var resetUrlToCurrentUrlTree: js.Any = js.native
   
-  var rootComponentType: js.Any = js.native
+  /* private */ var rootComponentType: js.Any = js.native
   
-  var rootContexts: js.Any = js.native
+  /* private */ var rootContexts: js.Any = js.native
   
   /**
     * A strategy for re-using routes.
@@ -311,14 +311,14 @@ class Router protected () extends StObject {
     */
   val routerState: RouterState = js.native
   
-  var scheduleNavigation: js.Any = js.native
+  /* private */ var scheduleNavigation: js.Any = js.native
   
   /** Serializes a `UrlTree` into a string */
   def serializeUrl(url: UrlTree): String = js.native
   
-  var setBrowserUrl: js.Any = js.native
+  /* private */ var setBrowserUrl: js.Any = js.native
   
-  var setTransition: js.Any = js.native
+  /* private */ var setTransition: js.Any = js.native
   
   /**
     * Sets up the location change listener. This listener detects navigations triggered from outside
@@ -327,7 +327,7 @@ class Router protected () extends StObject {
     */
   def setUpLocationChangeListener(): Unit = js.native
   
-  var setupNavigations: js.Any = js.native
+  /* private */ var setupNavigations: js.Any = js.native
   
   /**
     * Determines whether two events triggered by the Location subscription are due to the same
@@ -335,9 +335,9 @@ class Router protected () extends StObject {
     * single navigation. The second one should be ignored, that is, we should not schedule another
     * navigation in the Router.
     */
-  var shouldScheduleNavigation: js.Any = js.native
+  /* private */ var shouldScheduleNavigation: js.Any = js.native
   
-  val transitions: js.Any = js.native
+  /* private */ val transitions: js.Any = js.native
   
   /** The current URL. */
   def url: String = js.native
@@ -348,7 +348,7 @@ class Router protected () extends StObject {
     */
   var urlHandlingStrategy: UrlHandlingStrategy = js.native
   
-  var urlSerializer: js.Any = js.native
+  /* private */ var urlSerializer: js.Any = js.native
   
   /**
     * Determines when the router updates the browser URL.

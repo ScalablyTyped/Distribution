@@ -115,8 +115,7 @@ object mod {
       * #### Notes
       * This will clear all posted messages and hooks for the handler.
       */
-    @scala.inline
-    def clearData(handler: IMessageHandler): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearData")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def clearData(handler: IMessageHandler): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearData")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Process the pending posted messages in the queue immediately.
@@ -130,8 +129,7 @@ object mod {
       *
       * Recursing into this function is a no-op.
       */
-    @scala.inline
-    def flush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[Unit]
+    inline def flush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[Unit]
     
     /**
       * Get the message loop exception handler.
@@ -141,8 +139,7 @@ object mod {
       * #### Notes
       * The default exception handler is `console.error`.
       */
-    @scala.inline
-    def getExceptionHandler(): ExceptionHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("getExceptionHandler")().asInstanceOf[ExceptionHandler]
+    inline def getExceptionHandler(): ExceptionHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("getExceptionHandler")().asInstanceOf[ExceptionHandler]
     
     /**
       * Install a message hook for a message handler.
@@ -160,8 +157,7 @@ object mod {
       *
       * If the hook is already installed, this is a no-op.
       */
-    @scala.inline
-    def installMessageHook(handler: IMessageHandler, hook: MessageHook): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("installMessageHook")(handler.asInstanceOf[js.Any], hook.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def installMessageHook(handler: IMessageHandler, hook: MessageHook): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("installMessageHook")(handler.asInstanceOf[js.Any], hook.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Post a message to a message handler to process in the future.
@@ -177,8 +173,7 @@ object mod {
       *
       * Exceptions in hooks and handlers will be caught and logged.
       */
-    @scala.inline
-    def postMessage(handler: IMessageHandler, msg: Message): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postMessage")(handler.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def postMessage(handler: IMessageHandler, msg: Message): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postMessage")(handler.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Remove an installed message hook for a message handler.
@@ -192,8 +187,7 @@ object mod {
       *
       * If the hook is not installed, this is a no-op.
       */
-    @scala.inline
-    def removeMessageHook(handler: IMessageHandler, hook: MessageHook): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeMessageHook")(handler.asInstanceOf[js.Any], hook.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeMessageHook(handler: IMessageHandler, hook: MessageHook): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeMessageHook")(handler.asInstanceOf[js.Any], hook.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Send a message to a message handler to process immediately.
@@ -211,8 +205,7 @@ object mod {
       *
       * Exceptions in hooks and handlers will be caught and logged.
       */
-    @scala.inline
-    def sendMessage(handler: IMessageHandler, msg: Message): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(handler.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def sendMessage(handler: IMessageHandler, msg: Message): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(handler.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Set the message loop exception handler.
@@ -225,8 +218,7 @@ object mod {
       * The exception handler is invoked when a message handler or a
       * message hook throws an exception.
       */
-    @scala.inline
-    def setExceptionHandler(handler: ExceptionHandler): ExceptionHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("setExceptionHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[ExceptionHandler]
+    inline def setExceptionHandler(handler: ExceptionHandler): ExceptionHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("setExceptionHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[ExceptionHandler]
     
     /**
       * A type alias for the exception handler function.
@@ -245,17 +237,14 @@ object mod {
   }
   object IMessageHandler {
     
-    @scala.inline
-    def apply(processMessage: Message => Unit): IMessageHandler = {
+    inline def apply(processMessage: Message => Unit): IMessageHandler = {
       val __obj = js.Dynamic.literal(processMessage = js.Any.fromFunction1(processMessage))
       __obj.asInstanceOf[IMessageHandler]
     }
     
-    @scala.inline
-    implicit class IMessageHandlerMutableBuilder[Self <: IMessageHandler] (val x: Self) extends AnyVal {
+    extension [Self <: IMessageHandler](x: Self) {
       
-      @scala.inline
-      def setProcessMessage(value: Message => Unit): Self = StObject.set(x, "processMessage", js.Any.fromFunction1(value))
+      inline def setProcessMessage(value: Message => Unit): Self = StObject.set(x, "processMessage", js.Any.fromFunction1(value))
     }
   }
   
@@ -275,17 +264,14 @@ object mod {
   }
   object IMessageHook {
     
-    @scala.inline
-    def apply(messageHook: (IMessageHandler, Message) => Boolean): IMessageHook = {
+    inline def apply(messageHook: (IMessageHandler, Message) => Boolean): IMessageHook = {
       val __obj = js.Dynamic.literal(messageHook = js.Any.fromFunction2(messageHook))
       __obj.asInstanceOf[IMessageHook]
     }
     
-    @scala.inline
-    implicit class IMessageHookMutableBuilder[Self <: IMessageHook] (val x: Self) extends AnyVal {
+    extension [Self <: IMessageHook](x: Self) {
       
-      @scala.inline
-      def setMessageHook(value: (IMessageHandler, Message) => Boolean): Self = StObject.set(x, "messageHook", js.Any.fromFunction2(value))
+      inline def setMessageHook(value: (IMessageHandler, Message) => Boolean): Self = StObject.set(x, "messageHook", js.Any.fromFunction2(value))
     }
   }
   

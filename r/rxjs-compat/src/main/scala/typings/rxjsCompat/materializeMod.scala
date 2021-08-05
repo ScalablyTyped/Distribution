@@ -10,6 +10,5 @@ object materializeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def materialize[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("materialize")().asInstanceOf[js.Any]
+  inline def materialize[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("materialize")().asInstanceOf[js.Any]
 }

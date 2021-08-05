@@ -16,8 +16,7 @@ trait MarksEvent
 }
 object MarksEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getEventName: () => TableauEventName,
     getMarksAsync: () => js.Promise[js.Array[Mark]],
     getViz: () => Viz,
@@ -27,13 +26,10 @@ object MarksEvent {
     __obj.asInstanceOf[MarksEvent]
   }
   
-  @scala.inline
-  implicit class MarksEventMutableBuilder[Self <: MarksEvent] (val x: Self) extends AnyVal {
+  extension [Self <: MarksEvent](x: Self) {
     
-    @scala.inline
-    def setGetMarksAsync(value: () => js.Promise[js.Array[Mark]]): Self = StObject.set(x, "getMarksAsync", js.Any.fromFunction0(value))
+    inline def setGetMarksAsync(value: () => js.Promise[js.Array[Mark]]): Self = StObject.set(x, "getMarksAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWorksheet(value: () => Worksheet): Self = StObject.set(x, "getWorksheet", js.Any.fromFunction0(value))
+    inline def setGetWorksheet(value: () => Worksheet): Self = StObject.set(x, "getWorksheet", js.Any.fromFunction0(value))
   }
 }

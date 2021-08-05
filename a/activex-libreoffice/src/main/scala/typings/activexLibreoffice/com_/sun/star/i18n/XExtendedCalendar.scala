@@ -31,8 +31,7 @@ trait XExtendedCalendar
 }
 object XExtendedCalendar {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DateTime: Double,
     Days: SafeArray[CalendarItem],
     FirstDayOfWeek: Double,
@@ -71,10 +70,8 @@ object XExtendedCalendar {
     __obj.asInstanceOf[XExtendedCalendar]
   }
   
-  @scala.inline
-  implicit class XExtendedCalendarMutableBuilder[Self <: XExtendedCalendar] (val x: Self) extends AnyVal {
+  extension [Self <: XExtendedCalendar](x: Self) {
     
-    @scala.inline
-    def setGetDisplayString(value: (Double, Double) => String): Self = StObject.set(x, "getDisplayString", js.Any.fromFunction2(value))
+    inline def setGetDisplayString(value: (Double, Double) => String): Self = StObject.set(x, "getDisplayString", js.Any.fromFunction2(value))
   }
 }

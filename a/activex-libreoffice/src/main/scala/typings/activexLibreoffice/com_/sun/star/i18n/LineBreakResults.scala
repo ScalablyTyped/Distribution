@@ -16,22 +16,17 @@ trait LineBreakResults extends StObject {
 }
 object LineBreakResults {
   
-  @scala.inline
-  def apply(breakIndex: Double, breakType: Double, rHyphenatedWord: XHyphenatedWord): LineBreakResults = {
+  inline def apply(breakIndex: Double, breakType: Double, rHyphenatedWord: XHyphenatedWord): LineBreakResults = {
     val __obj = js.Dynamic.literal(breakIndex = breakIndex.asInstanceOf[js.Any], breakType = breakType.asInstanceOf[js.Any], rHyphenatedWord = rHyphenatedWord.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineBreakResults]
   }
   
-  @scala.inline
-  implicit class LineBreakResultsMutableBuilder[Self <: LineBreakResults] (val x: Self) extends AnyVal {
+  extension [Self <: LineBreakResults](x: Self) {
     
-    @scala.inline
-    def setBreakIndex(value: Double): Self = StObject.set(x, "breakIndex", value.asInstanceOf[js.Any])
+    inline def setBreakIndex(value: Double): Self = StObject.set(x, "breakIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBreakType(value: Double): Self = StObject.set(x, "breakType", value.asInstanceOf[js.Any])
+    inline def setBreakType(value: Double): Self = StObject.set(x, "breakType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRHyphenatedWord(value: XHyphenatedWord): Self = StObject.set(x, "rHyphenatedWord", value.asInstanceOf[js.Any])
+    inline def setRHyphenatedWord(value: XHyphenatedWord): Self = StObject.set(x, "rHyphenatedWord", value.asInstanceOf[js.Any])
   }
 }

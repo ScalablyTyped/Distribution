@@ -25,26 +25,20 @@ object typesTargetGrantMod {
   }
   object TargetGrant {
     
-    @scala.inline
-    def apply(): TargetGrant = {
+    inline def apply(): TargetGrant = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TargetGrant]
     }
     
-    @scala.inline
-    implicit class TargetGrantMutableBuilder[Self <: TargetGrant] (val x: Self) extends AnyVal {
+    extension [Self <: TargetGrant](x: Self) {
       
-      @scala.inline
-      def setGrantee(value: Grantee): Self = StObject.set(x, "Grantee", value.asInstanceOf[js.Any])
+      inline def setGrantee(value: Grantee): Self = StObject.set(x, "Grantee", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGranteeUndefined: Self = StObject.set(x, "Grantee", js.undefined)
+      inline def setGranteeUndefined: Self = StObject.set(x, "Grantee", js.undefined)
       
-      @scala.inline
-      def setPermission(value: FULL_CONTROL | READ | WRITE | String): Self = StObject.set(x, "Permission", value.asInstanceOf[js.Any])
+      inline def setPermission(value: FULL_CONTROL | READ | WRITE | String): Self = StObject.set(x, "Permission", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPermissionUndefined: Self = StObject.set(x, "Permission", js.undefined)
+      inline def setPermissionUndefined: Self = StObject.set(x, "Permission", js.undefined)
     }
   }
   
@@ -60,20 +54,16 @@ object typesTargetGrantMod {
   }
   object UnmarshalledTargetGrant {
     
-    @scala.inline
-    def apply(): UnmarshalledTargetGrant = {
+    inline def apply(): UnmarshalledTargetGrant = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledTargetGrant]
     }
     
-    @scala.inline
-    implicit class UnmarshalledTargetGrantMutableBuilder[Self <: UnmarshalledTargetGrant] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledTargetGrant](x: Self) {
       
-      @scala.inline
-      def setGrantee(value: UnmarshalledGrantee): Self = StObject.set(x, "Grantee", value.asInstanceOf[js.Any])
+      inline def setGrantee(value: UnmarshalledGrantee): Self = StObject.set(x, "Grantee", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGranteeUndefined: Self = StObject.set(x, "Grantee", js.undefined)
+      inline def setGranteeUndefined: Self = StObject.set(x, "Grantee", js.undefined)
     }
   }
 }

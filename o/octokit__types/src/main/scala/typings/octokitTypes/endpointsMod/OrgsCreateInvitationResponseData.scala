@@ -25,8 +25,7 @@ trait OrgsCreateInvitationResponseData extends StObject {
 }
 object OrgsCreateInvitationResponseData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     created_at: String,
     email: String,
     id: Double,
@@ -40,31 +39,22 @@ object OrgsCreateInvitationResponseData {
     __obj.asInstanceOf[OrgsCreateInvitationResponseData]
   }
   
-  @scala.inline
-  implicit class OrgsCreateInvitationResponseDataMutableBuilder[Self <: OrgsCreateInvitationResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: OrgsCreateInvitationResponseData](x: Self) {
     
-    @scala.inline
-    def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+    inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvitation_team_url(value: String): Self = StObject.set(x, "invitation_team_url", value.asInstanceOf[js.Any])
+    inline def setInvitation_team_url(value: String): Self = StObject.set(x, "invitation_team_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInviter(value: Avatarurl): Self = StObject.set(x, "inviter", value.asInstanceOf[js.Any])
+    inline def setInviter(value: Avatarurl): Self = StObject.set(x, "inviter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogin(value: String): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
+    inline def setLogin(value: String): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeam_count(value: Double): Self = StObject.set(x, "team_count", value.asInstanceOf[js.Any])
+    inline def setTeam_count(value: Double): Self = StObject.set(x, "team_count", value.asInstanceOf[js.Any])
   }
 }

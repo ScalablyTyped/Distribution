@@ -14,22 +14,17 @@ trait FilterGroup extends StObject {
 }
 object FilterGroup {
   
-  @scala.inline
-  def apply(end: Double, level: Double, start: Double): FilterGroup = {
+  inline def apply(end: Double, level: Double, start: Double): FilterGroup = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterGroup]
   }
   
-  @scala.inline
-  implicit class FilterGroupMutableBuilder[Self <: FilterGroup] (val x: Self) extends AnyVal {
+  extension [Self <: FilterGroup](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

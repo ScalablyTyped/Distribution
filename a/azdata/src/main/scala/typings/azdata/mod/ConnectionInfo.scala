@@ -11,16 +11,13 @@ trait ConnectionInfo extends StObject {
 }
 object ConnectionInfo {
   
-  @scala.inline
-  def apply(options: StringDictionary[js.Any]): ConnectionInfo = {
+  inline def apply(options: StringDictionary[js.Any]): ConnectionInfo = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionInfo]
   }
   
-  @scala.inline
-  implicit class ConnectionInfoMutableBuilder[Self <: ConnectionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionInfo](x: Self) {
     
-    @scala.inline
-    def setOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

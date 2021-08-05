@@ -12,8 +12,7 @@ object toggleSwitchUniDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def toggleSwitchUniDriverFactory(base: UniDriver[js.Any]): ToggleSwitchUniDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleSwitchUniDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[ToggleSwitchUniDriver]
+  inline def toggleSwitchUniDriverFactory(base: UniDriver[js.Any]): ToggleSwitchUniDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleSwitchUniDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[ToggleSwitchUniDriver]
   
   trait ToggleSwitchUniDriver
     extends StObject
@@ -51,8 +50,7 @@ object toggleSwitchUniDriverMod {
   }
   object ToggleSwitchUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -71,38 +69,27 @@ object toggleSwitchUniDriverMod {
       __obj.asInstanceOf[ToggleSwitchUniDriver]
     }
     
-    @scala.inline
-    implicit class ToggleSwitchUniDriverMutableBuilder[Self <: ToggleSwitchUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: ToggleSwitchUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetId(value: () => js.Promise[String]): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+      inline def setGetId(value: () => js.Promise[String]): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetKnobIcon(value: () => js.Promise[js.Object]): Self = StObject.set(x, "getKnobIcon", js.Any.fromFunction0(value))
+      inline def setGetKnobIcon(value: () => js.Promise[js.Object]): Self = StObject.set(x, "getKnobIcon", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetKnobIconStyles(value: () => js.Promise[js.Object]): Self = StObject.set(x, "getKnobIconStyles", js.Any.fromFunction0(value))
+      inline def setGetKnobIconStyles(value: () => js.Promise[js.Object]): Self = StObject.set(x, "getKnobIconStyles", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetKnobStyles(value: () => js.Promise[js.Object]): Self = StObject.set(x, "getKnobStyles", js.Any.fromFunction0(value))
+      inline def setGetKnobStyles(value: () => js.Promise[js.Object]): Self = StObject.set(x, "getKnobStyles", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRootStyles(value: () => js.Promise[js.Object]): Self = StObject.set(x, "getRootStyles", js.Any.fromFunction0(value))
+      inline def setGetRootStyles(value: () => js.Promise[js.Object]): Self = StObject.set(x, "getRootStyles", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTabIndex(value: () => js.Promise[Double]): Self = StObject.set(x, "getTabIndex", js.Any.fromFunction0(value))
+      inline def setGetTabIndex(value: () => js.Promise[Double]): Self = StObject.set(x, "getTabIndex", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTrackStyles(value: () => js.Promise[js.Object]): Self = StObject.set(x, "getTrackStyles", js.Any.fromFunction0(value))
+      inline def setGetTrackStyles(value: () => js.Promise[js.Object]): Self = StObject.set(x, "getTrackStyles", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasKnobIcon(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasKnobIcon", js.Any.fromFunction0(value))
+      inline def setHasKnobIcon(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasKnobIcon", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsChecked(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isChecked", js.Any.fromFunction0(value))
+      inline def setIsChecked(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isChecked", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
+      inline def setIsDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
     }
   }
 }

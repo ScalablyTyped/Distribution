@@ -28,37 +28,27 @@ trait NetworkFirewallMissingFirewallViolation extends StObject {
 }
 object NetworkFirewallMissingFirewallViolation {
   
-  @scala.inline
-  def apply(): NetworkFirewallMissingFirewallViolation = {
+  inline def apply(): NetworkFirewallMissingFirewallViolation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NetworkFirewallMissingFirewallViolation]
   }
   
-  @scala.inline
-  implicit class NetworkFirewallMissingFirewallViolationMutableBuilder[Self <: NetworkFirewallMissingFirewallViolation] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkFirewallMissingFirewallViolation](x: Self) {
     
-    @scala.inline
-    def setAvailabilityZone(value: LengthBoundedString): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZone(value: LengthBoundedString): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
+    inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
-    @scala.inline
-    def setTargetViolationReason(value: TargetViolationReason): Self = StObject.set(x, "TargetViolationReason", value.asInstanceOf[js.Any])
+    inline def setTargetViolationReason(value: TargetViolationReason): Self = StObject.set(x, "TargetViolationReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetViolationReasonUndefined: Self = StObject.set(x, "TargetViolationReason", js.undefined)
+    inline def setTargetViolationReasonUndefined: Self = StObject.set(x, "TargetViolationReason", js.undefined)
     
-    @scala.inline
-    def setVPC(value: ResourceId): Self = StObject.set(x, "VPC", value.asInstanceOf[js.Any])
+    inline def setVPC(value: ResourceId): Self = StObject.set(x, "VPC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVPCUndefined: Self = StObject.set(x, "VPC", js.undefined)
+    inline def setVPCUndefined: Self = StObject.set(x, "VPC", js.undefined)
     
-    @scala.inline
-    def setViolationTarget(value: ViolationTarget): Self = StObject.set(x, "ViolationTarget", value.asInstanceOf[js.Any])
+    inline def setViolationTarget(value: ViolationTarget): Self = StObject.set(x, "ViolationTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViolationTargetUndefined: Self = StObject.set(x, "ViolationTarget", js.undefined)
+    inline def setViolationTargetUndefined: Self = StObject.set(x, "ViolationTarget", js.undefined)
   }
 }

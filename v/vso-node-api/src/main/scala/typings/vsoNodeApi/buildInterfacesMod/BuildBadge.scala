@@ -18,19 +18,15 @@ trait BuildBadge extends StObject {
 }
 object BuildBadge {
   
-  @scala.inline
-  def apply(buildId: Double, imageUrl: String): BuildBadge = {
+  inline def apply(buildId: Double, imageUrl: String): BuildBadge = {
     val __obj = js.Dynamic.literal(buildId = buildId.asInstanceOf[js.Any], imageUrl = imageUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildBadge]
   }
   
-  @scala.inline
-  implicit class BuildBadgeMutableBuilder[Self <: BuildBadge] (val x: Self) extends AnyVal {
+  extension [Self <: BuildBadge](x: Self) {
     
-    @scala.inline
-    def setBuildId(value: Double): Self = StObject.set(x, "buildId", value.asInstanceOf[js.Any])
+    inline def setBuildId(value: Double): Self = StObject.set(x, "buildId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
+    inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
   }
 }

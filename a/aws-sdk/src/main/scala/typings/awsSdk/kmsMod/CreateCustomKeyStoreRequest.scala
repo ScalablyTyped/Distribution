@@ -28,8 +28,7 @@ trait CreateCustomKeyStoreRequest extends StObject {
 }
 object CreateCustomKeyStoreRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CloudHsmClusterId: CloudHsmClusterIdType,
     CustomKeyStoreName: CustomKeyStoreNameType,
     KeyStorePassword: KeyStorePasswordType,
@@ -39,19 +38,14 @@ object CreateCustomKeyStoreRequest {
     __obj.asInstanceOf[CreateCustomKeyStoreRequest]
   }
   
-  @scala.inline
-  implicit class CreateCustomKeyStoreRequestMutableBuilder[Self <: CreateCustomKeyStoreRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCustomKeyStoreRequest](x: Self) {
     
-    @scala.inline
-    def setCloudHsmClusterId(value: CloudHsmClusterIdType): Self = StObject.set(x, "CloudHsmClusterId", value.asInstanceOf[js.Any])
+    inline def setCloudHsmClusterId(value: CloudHsmClusterIdType): Self = StObject.set(x, "CloudHsmClusterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomKeyStoreName(value: CustomKeyStoreNameType): Self = StObject.set(x, "CustomKeyStoreName", value.asInstanceOf[js.Any])
+    inline def setCustomKeyStoreName(value: CustomKeyStoreNameType): Self = StObject.set(x, "CustomKeyStoreName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyStorePassword(value: KeyStorePasswordType): Self = StObject.set(x, "KeyStorePassword", value.asInstanceOf[js.Any])
+    inline def setKeyStorePassword(value: KeyStorePasswordType): Self = StObject.set(x, "KeyStorePassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrustAnchorCertificate(value: TrustAnchorCertificateType): Self = StObject.set(x, "TrustAnchorCertificate", value.asInstanceOf[js.Any])
+    inline def setTrustAnchorCertificate(value: TrustAnchorCertificateType): Self = StObject.set(x, "TrustAnchorCertificate", value.asInstanceOf[js.Any])
   }
 }

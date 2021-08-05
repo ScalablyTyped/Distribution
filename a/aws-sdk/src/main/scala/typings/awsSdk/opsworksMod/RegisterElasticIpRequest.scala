@@ -18,19 +18,15 @@ trait RegisterElasticIpRequest extends StObject {
 }
 object RegisterElasticIpRequest {
   
-  @scala.inline
-  def apply(ElasticIp: String, StackId: String): RegisterElasticIpRequest = {
+  inline def apply(ElasticIp: String, StackId: String): RegisterElasticIpRequest = {
     val __obj = js.Dynamic.literal(ElasticIp = ElasticIp.asInstanceOf[js.Any], StackId = StackId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterElasticIpRequest]
   }
   
-  @scala.inline
-  implicit class RegisterElasticIpRequestMutableBuilder[Self <: RegisterElasticIpRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterElasticIpRequest](x: Self) {
     
-    @scala.inline
-    def setElasticIp(value: String): Self = StObject.set(x, "ElasticIp", value.asInstanceOf[js.Any])
+    inline def setElasticIp(value: String): Self = StObject.set(x, "ElasticIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
+    inline def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
   }
 }

@@ -30,8 +30,7 @@ object blockContentProviderMod {
     override def _to: ComponentType[Props] = ^
   }
   
-  @scala.inline
-  def withBlockContentContext[T /* <: ComponentType[js.Any] */](wrapped: T): ComponentType[Omit[js.Any, BlockContent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withBlockContentContext")(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Omit[js.Any, BlockContent]]]
+  inline def withBlockContentContext[T /* <: ComponentType[js.Any] */](wrapped: T): ComponentType[Omit[js.Any, BlockContent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withBlockContentContext")(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Omit[js.Any, BlockContent]]]
   
   object BlockContentProvider {
     
@@ -43,26 +42,20 @@ object blockContentProviderMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(innerBlocks: js.Array[BlockInstance[StringDictionary[js.Any]]]): Props = {
+      inline def apply(innerBlocks: js.Array[BlockInstance[StringDictionary[js.Any]]]): Props = {
         val __obj = js.Dynamic.literal(innerBlocks = innerBlocks.asInstanceOf[js.Any])
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+        inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+        inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
         
-        @scala.inline
-        def setInnerBlocks(value: js.Array[BlockInstance[StringDictionary[js.Any]]]): Self = StObject.set(x, "innerBlocks", value.asInstanceOf[js.Any])
+        inline def setInnerBlocks(value: js.Array[BlockInstance[StringDictionary[js.Any]]]): Self = StObject.set(x, "innerBlocks", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInnerBlocksVarargs(value: BlockInstance[StringDictionary[js.Any]]*): Self = StObject.set(x, "innerBlocks", js.Array(value :_*))
+        inline def setInnerBlocksVarargs(value: BlockInstance[StringDictionary[js.Any]]*): Self = StObject.set(x, "innerBlocks", js.Array(value :_*))
       }
     }
   }

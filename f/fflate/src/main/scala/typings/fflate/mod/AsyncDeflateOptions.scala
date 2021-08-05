@@ -10,8 +10,7 @@ trait AsyncDeflateOptions
      with AsyncOptions
 object AsyncDeflateOptions {
   
-  @scala.inline
-  def apply(): AsyncDeflateOptions = {
+  inline def apply(): AsyncDeflateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AsyncDeflateOptions]
   }

@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TextPathMidLine extends StObject
 object TextPathMidLine {
   
-  @scala.inline
-  def sharp: typings.reactNativeSvg.reactNativeSvgStrings.sharp = "sharp".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.sharp]
+  inline def sharp: typings.reactNativeSvg.reactNativeSvgStrings.sharp = "sharp".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.sharp]
   
-  @scala.inline
-  def smooth: typings.reactNativeSvg.reactNativeSvgStrings.smooth = "smooth".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.smooth]
+  inline def smooth: typings.reactNativeSvg.reactNativeSvgStrings.smooth = "smooth".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.smooth]
 }

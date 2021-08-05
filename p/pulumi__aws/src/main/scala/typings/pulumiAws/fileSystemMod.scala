@@ -97,21 +97,16 @@ object fileSystemMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): FileSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[FileSystem]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): FileSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[FileSystem]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: FileSystemState): FileSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[FileSystem]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: FileSystemState, opts: CustomResourceOptions): FileSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[FileSystem]
+    inline def get(name: String, id: Input[ID]): FileSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[FileSystem]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): FileSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[FileSystem]
+    inline def get(name: String, id: Input[ID], state: FileSystemState): FileSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[FileSystem]
+    inline def get(name: String, id: Input[ID], state: FileSystemState, opts: CustomResourceOptions): FileSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[FileSystem]
     
     /**
       * Returns true if the given object is an instance of FileSystem.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/efs/fileSystem.FileSystem */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/efs/fileSystem.FileSystem */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/efs/fileSystem.FileSystem */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/efs/fileSystem.FileSystem */ Boolean]
   }
   
   trait FileSystemArgs extends StObject {
@@ -161,62 +156,44 @@ object fileSystemMod {
   }
   object FileSystemArgs {
     
-    @scala.inline
-    def apply(): FileSystemArgs = {
+    inline def apply(): FileSystemArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FileSystemArgs]
     }
     
-    @scala.inline
-    implicit class FileSystemArgsMutableBuilder[Self <: FileSystemArgs] (val x: Self) extends AnyVal {
+    extension [Self <: FileSystemArgs](x: Self) {
       
-      @scala.inline
-      def setCreationToken(value: Input[String]): Self = StObject.set(x, "creationToken", value.asInstanceOf[js.Any])
+      inline def setCreationToken(value: Input[String]): Self = StObject.set(x, "creationToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreationTokenUndefined: Self = StObject.set(x, "creationToken", js.undefined)
+      inline def setCreationTokenUndefined: Self = StObject.set(x, "creationToken", js.undefined)
       
-      @scala.inline
-      def setEncrypted(value: Input[Boolean]): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
+      inline def setEncrypted(value: Input[Boolean]): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptedUndefined: Self = StObject.set(x, "encrypted", js.undefined)
+      inline def setEncryptedUndefined: Self = StObject.set(x, "encrypted", js.undefined)
       
-      @scala.inline
-      def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
+      inline def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
+      inline def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
       
-      @scala.inline
-      def setLifecyclePolicy(value: Input[typings.pulumiAws.inputMod.efs.FileSystemLifecyclePolicy]): Self = StObject.set(x, "lifecyclePolicy", value.asInstanceOf[js.Any])
+      inline def setLifecyclePolicy(value: Input[typings.pulumiAws.inputMod.efs.FileSystemLifecyclePolicy]): Self = StObject.set(x, "lifecyclePolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLifecyclePolicyUndefined: Self = StObject.set(x, "lifecyclePolicy", js.undefined)
+      inline def setLifecyclePolicyUndefined: Self = StObject.set(x, "lifecyclePolicy", js.undefined)
       
-      @scala.inline
-      def setPerformanceMode(value: Input[String]): Self = StObject.set(x, "performanceMode", value.asInstanceOf[js.Any])
+      inline def setPerformanceMode(value: Input[String]): Self = StObject.set(x, "performanceMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPerformanceModeUndefined: Self = StObject.set(x, "performanceMode", js.undefined)
+      inline def setPerformanceModeUndefined: Self = StObject.set(x, "performanceMode", js.undefined)
       
-      @scala.inline
-      def setProvisionedThroughputInMibps(value: Input[Double]): Self = StObject.set(x, "provisionedThroughputInMibps", value.asInstanceOf[js.Any])
+      inline def setProvisionedThroughputInMibps(value: Input[Double]): Self = StObject.set(x, "provisionedThroughputInMibps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedThroughputInMibpsUndefined: Self = StObject.set(x, "provisionedThroughputInMibps", js.undefined)
+      inline def setProvisionedThroughputInMibpsUndefined: Self = StObject.set(x, "provisionedThroughputInMibps", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setThroughputMode(value: Input[String]): Self = StObject.set(x, "throughputMode", value.asInstanceOf[js.Any])
+      inline def setThroughputMode(value: Input[String]): Self = StObject.set(x, "throughputMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThroughputModeUndefined: Self = StObject.set(x, "throughputMode", js.undefined)
+      inline def setThroughputModeUndefined: Self = StObject.set(x, "throughputMode", js.undefined)
     }
   }
   
@@ -277,74 +254,52 @@ object fileSystemMod {
   }
   object FileSystemState {
     
-    @scala.inline
-    def apply(): FileSystemState = {
+    inline def apply(): FileSystemState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FileSystemState]
     }
     
-    @scala.inline
-    implicit class FileSystemStateMutableBuilder[Self <: FileSystemState] (val x: Self) extends AnyVal {
+    extension [Self <: FileSystemState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setCreationToken(value: Input[String]): Self = StObject.set(x, "creationToken", value.asInstanceOf[js.Any])
+      inline def setCreationToken(value: Input[String]): Self = StObject.set(x, "creationToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreationTokenUndefined: Self = StObject.set(x, "creationToken", js.undefined)
+      inline def setCreationTokenUndefined: Self = StObject.set(x, "creationToken", js.undefined)
       
-      @scala.inline
-      def setDnsName(value: Input[String]): Self = StObject.set(x, "dnsName", value.asInstanceOf[js.Any])
+      inline def setDnsName(value: Input[String]): Self = StObject.set(x, "dnsName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDnsNameUndefined: Self = StObject.set(x, "dnsName", js.undefined)
+      inline def setDnsNameUndefined: Self = StObject.set(x, "dnsName", js.undefined)
       
-      @scala.inline
-      def setEncrypted(value: Input[Boolean]): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
+      inline def setEncrypted(value: Input[Boolean]): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptedUndefined: Self = StObject.set(x, "encrypted", js.undefined)
+      inline def setEncryptedUndefined: Self = StObject.set(x, "encrypted", js.undefined)
       
-      @scala.inline
-      def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
+      inline def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
+      inline def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
       
-      @scala.inline
-      def setLifecyclePolicy(value: Input[typings.pulumiAws.inputMod.efs.FileSystemLifecyclePolicy]): Self = StObject.set(x, "lifecyclePolicy", value.asInstanceOf[js.Any])
+      inline def setLifecyclePolicy(value: Input[typings.pulumiAws.inputMod.efs.FileSystemLifecyclePolicy]): Self = StObject.set(x, "lifecyclePolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLifecyclePolicyUndefined: Self = StObject.set(x, "lifecyclePolicy", js.undefined)
+      inline def setLifecyclePolicyUndefined: Self = StObject.set(x, "lifecyclePolicy", js.undefined)
       
-      @scala.inline
-      def setPerformanceMode(value: Input[String]): Self = StObject.set(x, "performanceMode", value.asInstanceOf[js.Any])
+      inline def setPerformanceMode(value: Input[String]): Self = StObject.set(x, "performanceMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPerformanceModeUndefined: Self = StObject.set(x, "performanceMode", js.undefined)
+      inline def setPerformanceModeUndefined: Self = StObject.set(x, "performanceMode", js.undefined)
       
-      @scala.inline
-      def setProvisionedThroughputInMibps(value: Input[Double]): Self = StObject.set(x, "provisionedThroughputInMibps", value.asInstanceOf[js.Any])
+      inline def setProvisionedThroughputInMibps(value: Input[Double]): Self = StObject.set(x, "provisionedThroughputInMibps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedThroughputInMibpsUndefined: Self = StObject.set(x, "provisionedThroughputInMibps", js.undefined)
+      inline def setProvisionedThroughputInMibpsUndefined: Self = StObject.set(x, "provisionedThroughputInMibps", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setThroughputMode(value: Input[String]): Self = StObject.set(x, "throughputMode", value.asInstanceOf[js.Any])
+      inline def setThroughputMode(value: Input[String]): Self = StObject.set(x, "throughputMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThroughputModeUndefined: Self = StObject.set(x, "throughputMode", js.undefined)
+      inline def setThroughputModeUndefined: Self = StObject.set(x, "throughputMode", js.undefined)
     }
   }
 }

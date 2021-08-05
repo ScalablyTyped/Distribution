@@ -18,8 +18,7 @@ object pickerNativeMod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def Item(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Item")().asInstanceOf[Unit]
+    inline def Item(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Item")().asInstanceOf[Unit]
     
     /* static member */
     object defaultProps {
@@ -31,8 +30,7 @@ object pickerNativeMod {
       @JSImport("rmc-picker/lib/Picker.native", "default.defaultProps.children")
       @js.native
       def children: js.Array[js.Any] = js.native
-      @scala.inline
-      def children_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+      inline def children_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
     }
   }
   

@@ -24,16 +24,13 @@ trait UseBackupException
 }
 object UseBackupException {
   
-  @scala.inline
-  def apply(Context: XInterface, Message: String, TemporaryFileURL: String): UseBackupException = {
+  inline def apply(Context: XInterface, Message: String, TemporaryFileURL: String): UseBackupException = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], TemporaryFileURL = TemporaryFileURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseBackupException]
   }
   
-  @scala.inline
-  implicit class UseBackupExceptionMutableBuilder[Self <: UseBackupException] (val x: Self) extends AnyVal {
+  extension [Self <: UseBackupException](x: Self) {
     
-    @scala.inline
-    def setTemporaryFileURL(value: String): Self = StObject.set(x, "TemporaryFileURL", value.asInstanceOf[js.Any])
+    inline def setTemporaryFileURL(value: String): Self = StObject.set(x, "TemporaryFileURL", value.asInstanceOf[js.Any])
   }
 }

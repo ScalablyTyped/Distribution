@@ -12,23 +12,18 @@ trait RunOnly extends StObject {
 }
 object RunOnly {
   
-  @scala.inline
-  def apply(`type`: RunOnlyType, values: js.Array[String | TagValue]): RunOnly = {
+  inline def apply(`type`: RunOnlyType, values: js.Array[String | TagValue]): RunOnly = {
     val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunOnly]
   }
   
-  @scala.inline
-  implicit class RunOnlyMutableBuilder[Self <: RunOnly] (val x: Self) extends AnyVal {
+  extension [Self <: RunOnly](x: Self) {
     
-    @scala.inline
-    def setType(value: RunOnlyType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: RunOnlyType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: js.Array[String | TagValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[String | TagValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: (String | TagValue)*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: (String | TagValue)*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

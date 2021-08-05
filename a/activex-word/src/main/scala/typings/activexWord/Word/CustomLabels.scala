@@ -20,6 +20,6 @@ trait CustomLabels extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("Word.CustomLabels_typekey")
+  /* private */ @JSName("Word.CustomLabels_typekey")
   var WordDotCustomLabels_typekey: CustomLabels = js.native
 }

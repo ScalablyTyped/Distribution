@@ -53,8 +53,7 @@ trait RefinementInfo extends StObject {
 }
 object RefinementInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Culture: String,
     DisplayName: String,
     Entropy: Double,
@@ -82,73 +81,50 @@ object RefinementInfo {
     __obj.asInstanceOf[RefinementInfo]
   }
   
-  @scala.inline
-  implicit class RefinementInfoMutableBuilder[Self <: RefinementInfo] (val x: Self) extends AnyVal {
+  extension [Self <: RefinementInfo](x: Self) {
     
-    @scala.inline
-    def setCulture(value: String): Self = StObject.set(x, "Culture", value.asInstanceOf[js.Any])
+    inline def setCulture(value: String): Self = StObject.set(x, "Culture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntropy(value: Double): Self = StObject.set(x, "Entropy", value.asInstanceOf[js.Any])
+    inline def setEntropy(value: Double): Self = StObject.set(x, "Entropy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHitCount(value: Double): Self = StObject.set(x, "HitCount", value.asInstanceOf[js.Any])
+    inline def setHitCount(value: Double): Self = StObject.set(x, "HitCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "Max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "Max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMean(value: Double): Self = StObject.set(x, "Mean", value.asInstanceOf[js.Any])
+    inline def setMean(value: Double): Self = StObject.set(x, "Mean", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "Min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "Min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifier(value: String): Self = StObject.set(x, "Modifier", value.asInstanceOf[js.Any])
+    inline def setModifier(value: String): Self = StObject.set(x, "Modifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonZeroCount(value: Double): Self = StObject.set(x, "NonZeroCount", value.asInstanceOf[js.Any])
+    inline def setNonZeroCount(value: Double): Self = StObject.set(x, "NonZeroCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionId(value: Guid): Self = StObject.set(x, "PartitionId", value.asInstanceOf[js.Any])
+    inline def setPartitionId(value: Guid): Self = StObject.set(x, "PartitionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRatio(value: Double): Self = StObject.set(x, "Ratio", value.asInstanceOf[js.Any])
+    inline def setRatio(value: Double): Self = StObject.set(x, "Ratio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefinementCount(value: Double): Self = StObject.set(x, "RefinementCount", value.asInstanceOf[js.Any])
+    inline def setRefinementCount(value: Double): Self = StObject.set(x, "RefinementCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefinementName(value: String): Self = StObject.set(x, "RefinementName", value.asInstanceOf[js.Any])
+    inline def setRefinementName(value: String): Self = StObject.set(x, "RefinementName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefinementToken(value: String): Self = StObject.set(x, "RefinementToken", value.asInstanceOf[js.Any])
+    inline def setRefinementToken(value: String): Self = StObject.set(x, "RefinementToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefinementValue(value: String): Self = StObject.set(x, "RefinementValue", value.asInstanceOf[js.Any])
+    inline def setRefinementValue(value: String): Self = StObject.set(x, "RefinementValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefinerName(value: String): Self = StObject.set(x, "RefinerName", value.asInstanceOf[js.Any])
+    inline def setRefinerName(value: String): Self = StObject.set(x, "RefinerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderTemplateId(value: String): Self = StObject.set(x, "RenderTemplateId", value.asInstanceOf[js.Any])
+    inline def setRenderTemplateId(value: String): Self = StObject.set(x, "RenderTemplateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScore(value: Double): Self = StObject.set(x, "Score", value.asInstanceOf[js.Any])
+    inline def setScore(value: Double): Self = StObject.set(x, "Score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSum(value: Double): Self = StObject.set(x, "Sum", value.asInstanceOf[js.Any])
+    inline def setSum(value: Double): Self = StObject.set(x, "Sum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueCount(value: Double): Self = StObject.set(x, "UniqueCount", value.asInstanceOf[js.Any])
+    inline def setUniqueCount(value: Double): Self = StObject.set(x, "UniqueCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlZone(value: Double): Self = StObject.set(x, "UrlZone", value.asInstanceOf[js.Any])
+    inline def setUrlZone(value: Double): Self = StObject.set(x, "UrlZone", value.asInstanceOf[js.Any])
   }
 }

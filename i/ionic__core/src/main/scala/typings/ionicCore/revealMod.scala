@@ -12,6 +12,5 @@ object revealMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def menuRevealAnimation(menu: MenuI): Animation = ^.asInstanceOf[js.Dynamic].applyDynamic("menuRevealAnimation")(menu.asInstanceOf[js.Any]).asInstanceOf[Animation]
+  inline def menuRevealAnimation(menu: MenuI): Animation = ^.asInstanceOf[js.Dynamic].applyDynamic("menuRevealAnimation")(menu.asInstanceOf[js.Any]).asInstanceOf[Animation]
 }

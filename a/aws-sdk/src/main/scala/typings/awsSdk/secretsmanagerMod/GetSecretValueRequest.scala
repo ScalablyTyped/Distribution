@@ -23,28 +23,21 @@ trait GetSecretValueRequest extends StObject {
 }
 object GetSecretValueRequest {
   
-  @scala.inline
-  def apply(SecretId: SecretIdType): GetSecretValueRequest = {
+  inline def apply(SecretId: SecretIdType): GetSecretValueRequest = {
     val __obj = js.Dynamic.literal(SecretId = SecretId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSecretValueRequest]
   }
   
-  @scala.inline
-  implicit class GetSecretValueRequestMutableBuilder[Self <: GetSecretValueRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetSecretValueRequest](x: Self) {
     
-    @scala.inline
-    def setSecretId(value: SecretIdType): Self = StObject.set(x, "SecretId", value.asInstanceOf[js.Any])
+    inline def setSecretId(value: SecretIdType): Self = StObject.set(x, "SecretId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionId(value: SecretVersionIdType): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
+    inline def setVersionId(value: SecretVersionIdType): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
+    inline def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
     
-    @scala.inline
-    def setVersionStage(value: SecretVersionStageType): Self = StObject.set(x, "VersionStage", value.asInstanceOf[js.Any])
+    inline def setVersionStage(value: SecretVersionStageType): Self = StObject.set(x, "VersionStage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionStageUndefined: Self = StObject.set(x, "VersionStage", js.undefined)
+    inline def setVersionStageUndefined: Self = StObject.set(x, "VersionStage", js.undefined)
   }
 }

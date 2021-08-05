@@ -16,19 +16,15 @@ trait ProfileUsage extends StObject {
 }
 object ProfileUsage {
   
-  @scala.inline
-  def apply(lastSyncTime: Date, usageInMegabytes: Double): ProfileUsage = {
+  inline def apply(lastSyncTime: Date, usageInMegabytes: Double): ProfileUsage = {
     val __obj = js.Dynamic.literal(lastSyncTime = lastSyncTime.asInstanceOf[js.Any], usageInMegabytes = usageInMegabytes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProfileUsage]
   }
   
-  @scala.inline
-  implicit class ProfileUsageMutableBuilder[Self <: ProfileUsage] (val x: Self) extends AnyVal {
+  extension [Self <: ProfileUsage](x: Self) {
     
-    @scala.inline
-    def setLastSyncTime(value: Date): Self = StObject.set(x, "lastSyncTime", value.asInstanceOf[js.Any])
+    inline def setLastSyncTime(value: Date): Self = StObject.set(x, "lastSyncTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageInMegabytes(value: Double): Self = StObject.set(x, "usageInMegabytes", value.asInstanceOf[js.Any])
+    inline def setUsageInMegabytes(value: Double): Self = StObject.set(x, "usageInMegabytes", value.asInstanceOf[js.Any])
   }
 }

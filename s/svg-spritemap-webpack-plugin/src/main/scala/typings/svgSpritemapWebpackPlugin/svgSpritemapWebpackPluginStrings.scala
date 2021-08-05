@@ -8,26 +8,21 @@ object svgSpritemapWebpackPluginStrings {
   
   @js.native
   sealed trait asset extends StObject
-  @scala.inline
-  def asset: asset = "asset".asInstanceOf[asset]
+  inline def asset: asset = "asset".asInstanceOf[asset]
   
   @js.native
   sealed trait data extends StObject
-  @scala.inline
-  def data: data = "data".asInstanceOf[data]
+  inline def data: data = "data".asInstanceOf[data]
   
   @js.native
   sealed trait dir extends StObject
-  @scala.inline
-  def dir: dir = "dir".asInstanceOf[dir]
+  inline def dir: dir = "dir".asInstanceOf[dir]
   
   @js.native
   sealed trait fragment extends StObject
-  @scala.inline
-  def fragment: fragment = "fragment".asInstanceOf[fragment]
+  inline def fragment: fragment = "fragment".asInstanceOf[fragment]
   
   @js.native
   sealed trait module extends StObject
-  @scala.inline
-  def module: module = "module".asInstanceOf[module]
+  inline def module: module = "module".asInstanceOf[module]
 }

@@ -19,25 +19,19 @@ trait DroppableEventUIParam extends StObject {
 }
 object DroppableEventUIParam {
   
-  @scala.inline
-  def apply(draggable: JQuery, helper: JQuery, offset: Left, position: Left): DroppableEventUIParam = {
+  inline def apply(draggable: JQuery, helper: JQuery, offset: Left, position: Left): DroppableEventUIParam = {
     val __obj = js.Dynamic.literal(draggable = draggable.asInstanceOf[js.Any], helper = helper.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[DroppableEventUIParam]
   }
   
-  @scala.inline
-  implicit class DroppableEventUIParamMutableBuilder[Self <: DroppableEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: DroppableEventUIParam](x: Self) {
     
-    @scala.inline
-    def setDraggable(value: JQuery): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
+    inline def setDraggable(value: JQuery): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelper(value: JQuery): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
+    inline def setHelper(value: JQuery): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: Left): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Left): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Left): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Left): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

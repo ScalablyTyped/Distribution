@@ -26,24 +26,24 @@ object noiseMod {
     def this(staticNoiseKey: Unit, earlyData: bytes) = this()
     def this(staticNoiseKey: bytes, earlyData: bytes) = this()
     
-    var createSecureConnection: js.Any = js.native
+    /* private */ var createSecureConnection: js.Any = js.native
     
-    val earlyData: js.Any = js.native
+    /* private */ val earlyData: js.Any = js.native
     
     /**
       * If Noise pipes supported, tries IK handshake first with XX as fallback if it fails.
       * If noise pipes disabled or remote peer static key is unknown, use XX.
       * @param {HandshakeParams} params
       */
-    var performHandshake: js.Any = js.native
+    /* private */ var performHandshake: js.Any = js.native
     
-    var performIKHandshake: js.Any = js.native
+    /* private */ var performIKHandshake: js.Any = js.native
     
-    var performXXFallbackHandshake: js.Any = js.native
+    /* private */ var performXXFallbackHandshake: js.Any = js.native
     
-    var performXXHandshake: js.Any = js.native
+    /* private */ var performXXHandshake: js.Any = js.native
     
-    val prologue: js.Any = js.native
+    /* private */ val prologue: js.Any = js.native
     
     var protocol: String = js.native
     
@@ -61,9 +61,9 @@ object noiseMod {
     /* CompleteClass */
     override def secureOutbound(localPeer: ^, insecure: js.Any, remotePeer: ^): js.Promise[SecureOutbound] = js.native
     
-    val staticKeys: js.Any = js.native
+    /* private */ val staticKeys: js.Any = js.native
     
-    var useNoisePipes: js.Any = js.native
+    /* private */ var useNoisePipes: js.Any = js.native
   }
   
   type WrappedConnection = ReturnType[FnCall]

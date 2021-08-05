@@ -22,6 +22,5 @@ object TableExclusion {
   /**
     * Creates exclusions from the exclusion metadata object.
     */
-  @scala.inline
-  def create(exclusionMetadata: ExclusionMetadata): typings.typeorm.tableTableExclusionMod.TableExclusion = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(exclusionMetadata.asInstanceOf[js.Any]).asInstanceOf[typings.typeorm.tableTableExclusionMod.TableExclusion]
+  inline def create(exclusionMetadata: ExclusionMetadata): typings.typeorm.tableTableExclusionMod.TableExclusion = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(exclusionMetadata.asInstanceOf[js.Any]).asInstanceOf[typings.typeorm.tableTableExclusionMod.TableExclusion]
 }

@@ -8,16 +8,13 @@ object jsonSchemaMergeAllofStrings {
   
   @js.native
   sealed trait additionalProperties extends StObject
-  @scala.inline
-  def additionalProperties: additionalProperties = "additionalProperties".asInstanceOf[additionalProperties]
+  inline def additionalProperties: additionalProperties = "additionalProperties".asInstanceOf[additionalProperties]
   
   @js.native
   sealed trait patternProperties extends StObject
-  @scala.inline
-  def patternProperties: patternProperties = "patternProperties".asInstanceOf[patternProperties]
+  inline def patternProperties: patternProperties = "patternProperties".asInstanceOf[patternProperties]
   
   @js.native
   sealed trait properties extends StObject
-  @scala.inline
-  def properties: properties = "properties".asInstanceOf[properties]
+  inline def properties: properties = "properties".asInstanceOf[properties]
 }

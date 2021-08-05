@@ -31,7 +31,7 @@ trait XMLNamespace extends StObject {
   
   val URI: String = js.native
   
-  @JSName("Word.XMLNamespace_typekey")
+  /* private */ @JSName("Word.XMLNamespace_typekey")
   var WordDotXMLNamespace_typekey: XMLNamespace = js.native
   
   val XSLTransforms: typings.activexWord.Word.XSLTransforms = js.native

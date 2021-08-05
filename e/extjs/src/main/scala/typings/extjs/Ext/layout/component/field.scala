@@ -64,98 +64,68 @@ object field {
   }
   object IField {
     
-    @scala.inline
-    def apply(): IField = {
+    inline def apply(): IField = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IField]
     }
     
-    @scala.inline
-    implicit class IFieldMutableBuilder[Self <: IField] (val x: Self) extends AnyVal {
+    extension [Self <: IField](x: Self) {
       
-      @scala.inline
-      def setBeginLayout(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beginLayout", js.Any.fromFunction1(value))
+      inline def setBeginLayout(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beginLayout", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBeginLayoutCycle(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beginLayoutCycle", js.Any.fromFunction1(value))
+      inline def setBeginLayoutCycle(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beginLayoutCycle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBeginLayoutCycleUndefined: Self = StObject.set(x, "beginLayoutCycle", js.undefined)
+      inline def setBeginLayoutCycleUndefined: Self = StObject.set(x, "beginLayoutCycle", js.undefined)
       
-      @scala.inline
-      def setBeginLayoutUndefined: Self = StObject.set(x, "beginLayout", js.undefined)
+      inline def setBeginLayoutUndefined: Self = StObject.set(x, "beginLayout", js.undefined)
       
-      @scala.inline
-      def setElementId(value: js.Any): Self = StObject.set(x, "elementId", value.asInstanceOf[js.Any])
+      inline def setElementId(value: js.Any): Self = StObject.set(x, "elementId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementIdUndefined: Self = StObject.set(x, "elementId", js.undefined)
+      inline def setElementIdUndefined: Self = StObject.set(x, "elementId", js.undefined)
       
-      @scala.inline
-      def setErrorStrategies(value: js.Any): Self = StObject.set(x, "errorStrategies", value.asInstanceOf[js.Any])
+      inline def setErrorStrategies(value: js.Any): Self = StObject.set(x, "errorStrategies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorStrategiesUndefined: Self = StObject.set(x, "errorStrategies", js.undefined)
+      inline def setErrorStrategiesUndefined: Self = StObject.set(x, "errorStrategies", js.undefined)
       
-      @scala.inline
-      def setGetErrorStrategy(value: () => Unit): Self = StObject.set(x, "getErrorStrategy", js.Any.fromFunction0(value))
+      inline def setGetErrorStrategy(value: () => Unit): Self = StObject.set(x, "getErrorStrategy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetErrorStrategyUndefined: Self = StObject.set(x, "getErrorStrategy", js.undefined)
+      inline def setGetErrorStrategyUndefined: Self = StObject.set(x, "getErrorStrategy", js.undefined)
       
-      @scala.inline
-      def setGetLabelStrategy(value: () => Unit): Self = StObject.set(x, "getLabelStrategy", js.Any.fromFunction0(value))
+      inline def setGetLabelStrategy(value: () => Unit): Self = StObject.set(x, "getLabelStrategy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLabelStrategyUndefined: Self = StObject.set(x, "getLabelStrategy", js.undefined)
+      inline def setGetLabelStrategyUndefined: Self = StObject.set(x, "getLabelStrategy", js.undefined)
       
-      @scala.inline
-      def setLabelStrategies(value: js.Any): Self = StObject.set(x, "labelStrategies", value.asInstanceOf[js.Any])
+      inline def setLabelStrategies(value: js.Any): Self = StObject.set(x, "labelStrategies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelStrategiesUndefined: Self = StObject.set(x, "labelStrategies", js.undefined)
+      inline def setLabelStrategiesUndefined: Self = StObject.set(x, "labelStrategies", js.undefined)
       
-      @scala.inline
-      def setLeft(value: js.Any): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: js.Any): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+      inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
       
-      @scala.inline
-      def setQtip(value: js.Any): Self = StObject.set(x, "qtip", value.asInstanceOf[js.Any])
+      inline def setQtip(value: js.Any): Self = StObject.set(x, "qtip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQtipUndefined: Self = StObject.set(x, "qtip", js.undefined)
+      inline def setQtipUndefined: Self = StObject.set(x, "qtip", js.undefined)
       
-      @scala.inline
-      def setRight(value: js.Any): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: js.Any): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+      inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
       
-      @scala.inline
-      def setSide(value: js.Any): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
+      inline def setSide(value: js.Any): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSideUndefined: Self = StObject.set(x, "side", js.undefined)
+      inline def setSideUndefined: Self = StObject.set(x, "side", js.undefined)
       
-      @scala.inline
-      def setTitle(value: js.Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: js.Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setTop(value: js.Any): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: js.Any): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+      inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
       
-      @scala.inline
-      def setUnder(value: js.Any): Self = StObject.set(x, "under", value.asInstanceOf[js.Any])
+      inline def setUnder(value: js.Any): Self = StObject.set(x, "under", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnderUndefined: Self = StObject.set(x, "under", js.undefined)
+      inline def setUnderUndefined: Self = StObject.set(x, "under", js.undefined)
     }
   }
   
@@ -164,8 +134,7 @@ object field {
        with IField
   object IFieldContainer {
     
-    @scala.inline
-    def apply(): IFieldContainer = {
+    inline def apply(): IFieldContainer = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IFieldContainer]
     }
@@ -181,20 +150,16 @@ object field {
   }
   object IHtmlEditor {
     
-    @scala.inline
-    def apply(): IHtmlEditor = {
+    inline def apply(): IHtmlEditor = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IHtmlEditor]
     }
     
-    @scala.inline
-    implicit class IHtmlEditorMutableBuilder[Self <: IHtmlEditor] (val x: Self) extends AnyVal {
+    extension [Self <: IHtmlEditor](x: Self) {
       
-      @scala.inline
-      def setFinishedLayout(value: () => Unit): Self = StObject.set(x, "finishedLayout", js.Any.fromFunction0(value))
+      inline def setFinishedLayout(value: () => Unit): Self = StObject.set(x, "finishedLayout", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFinishedLayoutUndefined: Self = StObject.set(x, "finishedLayout", js.undefined)
+      inline def setFinishedLayoutUndefined: Self = StObject.set(x, "finishedLayout", js.undefined)
     }
   }
   
@@ -203,8 +168,7 @@ object field {
        with IField
   object ISlider {
     
-    @scala.inline
-    def apply(): ISlider = {
+    inline def apply(): ISlider = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISlider]
     }
@@ -215,8 +179,7 @@ object field {
        with IField
   object IText {
     
-    @scala.inline
-    def apply(): IText = {
+    inline def apply(): IText = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IText]
     }
@@ -227,8 +190,7 @@ object field {
        with IText
   object ITextArea {
     
-    @scala.inline
-    def apply(): ITextArea = {
+    inline def apply(): ITextArea = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ITextArea]
     }
@@ -239,8 +201,7 @@ object field {
        with IField
   object ITrigger {
     
-    @scala.inline
-    def apply(): ITrigger = {
+    inline def apply(): ITrigger = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ITrigger]
     }

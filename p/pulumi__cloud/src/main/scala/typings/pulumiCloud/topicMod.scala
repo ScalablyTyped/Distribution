@@ -26,11 +26,9 @@ object topicMod {
     @js.native
     val ^ : TopicConstructor = js.native
     
-    @scala.inline
-    implicit class TopicMutableBuilder[Self <: Topic[?], T] (val x: Self & Topic[T]) extends AnyVal {
+    extension [Self <: Topic[?], T](x: Self & Topic[T]) {
       
-      @scala.inline
-      def setPublish(value: T => js.Promise[Unit]): Self = StObject.set(x, "publish", js.Any.fromFunction1(value))
+      inline def setPublish(value: T => js.Promise[Unit]): Self = StObject.set(x, "publish", js.Any.fromFunction1(value))
     }
   }
   
@@ -91,17 +89,14 @@ object topicMod {
   }
   object Stream {
     
-    @scala.inline
-    def apply[T](subscribe: (String, js.Function1[/* item */ T, js.Promise[Unit]]) => Unit): Stream[T] = {
+    inline def apply[T](subscribe: (String, js.Function1[/* item */ T, js.Promise[Unit]]) => Unit): Stream[T] = {
       val __obj = js.Dynamic.literal(subscribe = js.Any.fromFunction2(subscribe))
       __obj.asInstanceOf[Stream[T]]
     }
     
-    @scala.inline
-    implicit class StreamMutableBuilder[Self <: Stream[?], T] (val x: Self & Stream[T]) extends AnyVal {
+    extension [Self <: Stream[?], T](x: Self & Stream[T]) {
       
-      @scala.inline
-      def setSubscribe(value: (String, js.Function1[/* item */ T, js.Promise[Unit]]) => Unit): Self = StObject.set(x, "subscribe", js.Any.fromFunction2(value))
+      inline def setSubscribe(value: (String, js.Function1[/* item */ T, js.Promise[Unit]]) => Unit): Self = StObject.set(x, "subscribe", js.Any.fromFunction2(value))
     }
   }
   

@@ -15,8 +15,7 @@ trait Type
      with IHasTarget
 object Type {
   
-  @scala.inline
-  def apply(): Type = {
+  inline def apply(): Type = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Type]
   }

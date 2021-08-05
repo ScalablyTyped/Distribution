@@ -22,8 +22,7 @@ object indexMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def attachTo(root: Element): typings.materialChips.componentMod.MDCChipSet = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialChips.componentMod.MDCChipSet]
+    inline def attachTo(root: Element): typings.materialChips.componentMod.MDCChipSet = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialChips.componentMod.MDCChipSet]
   }
   
   @JSImport("@material/chips/chip-set/index", "MDCChipSetFoundation")
@@ -42,14 +41,12 @@ object indexMod {
     @JSImport("@material/chips/chip-set/index", "chipSetCssClasses.CHOICE")
     @js.native
     def CHOICE: String = js.native
-    @scala.inline
-    def CHOICE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CHOICE")(x.asInstanceOf[js.Any])
+    inline def CHOICE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CHOICE")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/chips/chip-set/index", "chipSetCssClasses.FILTER")
     @js.native
     def FILTER: String = js.native
-    @scala.inline
-    def FILTER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILTER")(x.asInstanceOf[js.Any])
+    inline def FILTER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILTER")(x.asInstanceOf[js.Any])
   }
   
   object chipSetStrings {
@@ -61,7 +58,6 @@ object indexMod {
     @JSImport("@material/chips/chip-set/index", "chipSetStrings.CHIP_SELECTOR")
     @js.native
     def CHIP_SELECTOR: String = js.native
-    @scala.inline
-    def CHIP_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CHIP_SELECTOR")(x.asInstanceOf[js.Any])
+    inline def CHIP_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CHIP_SELECTOR")(x.asInstanceOf[js.Any])
   }
 }

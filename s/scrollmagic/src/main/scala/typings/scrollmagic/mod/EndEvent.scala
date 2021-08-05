@@ -16,8 +16,7 @@ trait EndEvent
 }
 object EndEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     currentTarget: Scene,
     namespace: String,
     progress: Double,
@@ -31,13 +30,10 @@ object EndEvent {
     __obj.asInstanceOf[EndEvent]
   }
   
-  @scala.inline
-  implicit class EndEventMutableBuilder[Self <: EndEvent] (val x: Self) extends AnyVal {
+  extension [Self <: EndEvent](x: Self) {
     
-    @scala.inline
-    def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: SceneState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: SceneState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

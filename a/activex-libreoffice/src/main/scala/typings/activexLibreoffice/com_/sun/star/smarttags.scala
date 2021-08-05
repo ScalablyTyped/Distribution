@@ -50,17 +50,13 @@ object smarttags {
   trait SmartTagRecognizerMode extends StObject
   object SmartTagRecognizerMode {
     
-    @scala.inline
-    def CELL: `3` = 3.asInstanceOf[`3`]
+    inline def CELL: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def CHAR: `0` = 0.asInstanceOf[`0`]
+    inline def CHAR: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def PARAGRAPH: `2` = 2.asInstanceOf[`2`]
+    inline def PARAGRAPH: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def SINGLE_WORD: `1` = 1.asInstanceOf[`1`]
+    inline def SINGLE_WORD: `1` = 1.asInstanceOf[`1`]
   }
   
   /** provides access to a range based smart tag recognizer. */
@@ -86,8 +82,7 @@ object smarttags {
   }
   object XRangeBasedSmartTagRecognizer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       initialize: SeqEquiv[js.Any] => Unit,
       queryInterface: `type` => js.Any,
@@ -98,11 +93,9 @@ object smarttags {
       __obj.asInstanceOf[XRangeBasedSmartTagRecognizer]
     }
     
-    @scala.inline
-    implicit class XRangeBasedSmartTagRecognizerMutableBuilder[Self <: XRangeBasedSmartTagRecognizer] (val x: Self) extends AnyVal {
+    extension [Self <: XRangeBasedSmartTagRecognizer](x: Self) {
       
-      @scala.inline
-      def setRecognizeTextRange(value: (XTextRange, SmartTagRecognizerMode, XTextMarkup, String, XController) => Unit): Self = StObject.set(x, "recognizeTextRange", js.Any.fromFunction5(value))
+      inline def setRecognizeTextRange(value: (XTextRange, SmartTagRecognizerMode, XTextMarkup, String, XController) => Unit): Self = StObject.set(x, "recognizeTextRange", js.Any.fromFunction5(value))
     }
   }
   
@@ -247,8 +240,7 @@ object smarttags {
   }
   object XSmartTagAction {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       SmartTagCount: Double,
       acquire: () => Unit,
       getActionCaptionFromID: (Double, String, Locale, XStringKeyMap, String, String, XController, XTextRange) => String,
@@ -270,44 +262,31 @@ object smarttags {
       __obj.asInstanceOf[XSmartTagAction]
     }
     
-    @scala.inline
-    implicit class XSmartTagActionMutableBuilder[Self <: XSmartTagAction] (val x: Self) extends AnyVal {
+    extension [Self <: XSmartTagAction](x: Self) {
       
-      @scala.inline
-      def setGetActionCaptionFromID(value: (Double, String, Locale, XStringKeyMap, String, String, XController, XTextRange) => String): Self = StObject.set(x, "getActionCaptionFromID", js.Any.fromFunction8(value))
+      inline def setGetActionCaptionFromID(value: (Double, String, Locale, XStringKeyMap, String, String, XController, XTextRange) => String): Self = StObject.set(x, "getActionCaptionFromID", js.Any.fromFunction8(value))
       
-      @scala.inline
-      def setGetActionCount(value: (String, XController, XStringKeyMap) => Double): Self = StObject.set(x, "getActionCount", js.Any.fromFunction3(value))
+      inline def setGetActionCount(value: (String, XController, XStringKeyMap) => Double): Self = StObject.set(x, "getActionCount", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetActionID(value: (String, Double, XController) => Double): Self = StObject.set(x, "getActionID", js.Any.fromFunction3(value))
+      inline def setGetActionID(value: (String, Double, XController) => Double): Self = StObject.set(x, "getActionID", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetActionNameFromID(value: (Double, XController) => String): Self = StObject.set(x, "getActionNameFromID", js.Any.fromFunction2(value))
+      inline def setGetActionNameFromID(value: (Double, XController) => String): Self = StObject.set(x, "getActionNameFromID", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetDescription(value: Locale => String): Self = StObject.set(x, "getDescription", js.Any.fromFunction1(value))
+      inline def setGetDescription(value: Locale => String): Self = StObject.set(x, "getDescription", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetName(value: Locale => String): Self = StObject.set(x, "getName", js.Any.fromFunction1(value))
+      inline def setGetName(value: Locale => String): Self = StObject.set(x, "getName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetSmartTagCaption(value: (Double, Locale) => String): Self = StObject.set(x, "getSmartTagCaption", js.Any.fromFunction2(value))
+      inline def setGetSmartTagCaption(value: (Double, Locale) => String): Self = StObject.set(x, "getSmartTagCaption", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetSmartTagName(value: Double => String): Self = StObject.set(x, "getSmartTagName", js.Any.fromFunction1(value))
+      inline def setGetSmartTagName(value: Double => String): Self = StObject.set(x, "getSmartTagName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInvokeAction(value: (Double, String, XController, XTextRange, XStringKeyMap, String, String, Locale) => Unit): Self = StObject.set(x, "invokeAction", js.Any.fromFunction8(value))
+      inline def setInvokeAction(value: (Double, String, XController, XTextRange, XStringKeyMap, String, String, Locale) => Unit): Self = StObject.set(x, "invokeAction", js.Any.fromFunction8(value))
       
-      @scala.inline
-      def setIsCaptionDynamic(value: (Double, String, XController, Locale) => Boolean): Self = StObject.set(x, "isCaptionDynamic", js.Any.fromFunction4(value))
+      inline def setIsCaptionDynamic(value: (Double, String, XController, Locale) => Boolean): Self = StObject.set(x, "isCaptionDynamic", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setIsShowSmartTagIndicator(value: (Double, String, XController, Locale) => Boolean): Self = StObject.set(x, "isShowSmartTagIndicator", js.Any.fromFunction4(value))
+      inline def setIsShowSmartTagIndicator(value: (Double, String, XController, Locale) => Boolean): Self = StObject.set(x, "isShowSmartTagIndicator", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setSmartTagCount(value: Double): Self = StObject.set(x, "SmartTagCount", value.asInstanceOf[js.Any])
+      inline def setSmartTagCount(value: Double): Self = StObject.set(x, "SmartTagCount", value.asInstanceOf[js.Any])
     }
   }
   
@@ -395,8 +374,7 @@ object smarttags {
   }
   object XSmartTagRecognizer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       SmartTagCount: Double,
       acquire: () => Unit,
       displayPropertyPage: (Double, Locale) => Unit,
@@ -414,34 +392,25 @@ object smarttags {
       __obj.asInstanceOf[XSmartTagRecognizer]
     }
     
-    @scala.inline
-    implicit class XSmartTagRecognizerMutableBuilder[Self <: XSmartTagRecognizer] (val x: Self) extends AnyVal {
+    extension [Self <: XSmartTagRecognizer](x: Self) {
       
-      @scala.inline
-      def setDisplayPropertyPage(value: (Double, Locale) => Unit): Self = StObject.set(x, "displayPropertyPage", js.Any.fromFunction2(value))
+      inline def setDisplayPropertyPage(value: (Double, Locale) => Unit): Self = StObject.set(x, "displayPropertyPage", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetDescription(value: Locale => String): Self = StObject.set(x, "getDescription", js.Any.fromFunction1(value))
+      inline def setGetDescription(value: Locale => String): Self = StObject.set(x, "getDescription", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetName(value: Locale => String): Self = StObject.set(x, "getName", js.Any.fromFunction1(value))
+      inline def setGetName(value: Locale => String): Self = StObject.set(x, "getName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetSmartTagDownloadURL(value: Double => String): Self = StObject.set(x, "getSmartTagDownloadURL", js.Any.fromFunction1(value))
+      inline def setGetSmartTagDownloadURL(value: Double => String): Self = StObject.set(x, "getSmartTagDownloadURL", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetSmartTagName(value: Double => String): Self = StObject.set(x, "getSmartTagName", js.Any.fromFunction1(value))
+      inline def setGetSmartTagName(value: Double => String): Self = StObject.set(x, "getSmartTagName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasPropertyPage(value: (Double, Locale) => Boolean): Self = StObject.set(x, "hasPropertyPage", js.Any.fromFunction2(value))
+      inline def setHasPropertyPage(value: (Double, Locale) => Boolean): Self = StObject.set(x, "hasPropertyPage", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRecognize(
+      inline def setRecognize(
         value: (String, Double, Double, SmartTagRecognizerMode, Locale, XTextMarkup, String, XController, XBreakIterator) => Unit
       ): Self = StObject.set(x, "recognize", js.Any.fromFunction9(value))
       
-      @scala.inline
-      def setSmartTagCount(value: Double): Self = StObject.set(x, "SmartTagCount", value.asInstanceOf[js.Any])
+      inline def setSmartTagCount(value: Double): Self = StObject.set(x, "SmartTagCount", value.asInstanceOf[js.Any])
     }
   }
 }

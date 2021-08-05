@@ -13,19 +13,15 @@ trait GetPresetResponse extends StObject {
 }
 object GetPresetResponse {
   
-  @scala.inline
-  def apply(): GetPresetResponse = {
+  inline def apply(): GetPresetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetPresetResponse]
   }
   
-  @scala.inline
-  implicit class GetPresetResponseMutableBuilder[Self <: GetPresetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetPresetResponse](x: Self) {
     
-    @scala.inline
-    def setPreset(value: Preset): Self = StObject.set(x, "Preset", value.asInstanceOf[js.Any])
+    inline def setPreset(value: Preset): Self = StObject.set(x, "Preset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPresetUndefined: Self = StObject.set(x, "Preset", js.undefined)
+    inline def setPresetUndefined: Self = StObject.set(x, "Preset", js.undefined)
   }
 }

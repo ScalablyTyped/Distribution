@@ -24,8 +24,7 @@ trait ListReelMediaViewerFeedResponseConsumptionSheetConfig extends StObject {
 }
 object ListReelMediaViewerFeedResponseConsumptionSheetConfig {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     can_viewer_donate: Boolean,
     currency: String,
     donation_amount_config: ListReelMediaViewerFeedResponseDonationAmountConfig,
@@ -39,31 +38,22 @@ object ListReelMediaViewerFeedResponseConsumptionSheetConfig {
     __obj.asInstanceOf[ListReelMediaViewerFeedResponseConsumptionSheetConfig]
   }
   
-  @scala.inline
-  implicit class ListReelMediaViewerFeedResponseConsumptionSheetConfigMutableBuilder[Self <: ListReelMediaViewerFeedResponseConsumptionSheetConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ListReelMediaViewerFeedResponseConsumptionSheetConfig](x: Self) {
     
-    @scala.inline
-    def setCan_viewer_donate(value: Boolean): Self = StObject.set(x, "can_viewer_donate", value.asInstanceOf[js.Any])
+    inline def setCan_viewer_donate(value: Boolean): Self = StObject.set(x, "can_viewer_donate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+    inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDonation_amount_config(value: ListReelMediaViewerFeedResponseDonationAmountConfig): Self = StObject.set(x, "donation_amount_config", value.asInstanceOf[js.Any])
+    inline def setDonation_amount_config(value: ListReelMediaViewerFeedResponseDonationAmountConfig): Self = StObject.set(x, "donation_amount_config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDonation_disabled_message(value: Null): Self = StObject.set(x, "donation_disabled_message", value.asInstanceOf[js.Any])
+    inline def setDonation_disabled_message(value: Null): Self = StObject.set(x, "donation_disabled_message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDonation_url(value: String): Self = StObject.set(x, "donation_url", value.asInstanceOf[js.Any])
+    inline def setDonation_url(value: String): Self = StObject.set(x, "donation_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHas_viewer_donated(value: Boolean): Self = StObject.set(x, "has_viewer_donated", value.asInstanceOf[js.Any])
+    inline def setHas_viewer_donated(value: Boolean): Self = StObject.set(x, "has_viewer_donated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivacy_disclaimer(value: String): Self = StObject.set(x, "privacy_disclaimer", value.asInstanceOf[js.Any])
+    inline def setPrivacy_disclaimer(value: String): Self = StObject.set(x, "privacy_disclaimer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYou_donated_message(value: Null): Self = StObject.set(x, "you_donated_message", value.asInstanceOf[js.Any])
+    inline def setYou_donated_message(value: Null): Self = StObject.set(x, "you_donated_message", value.asInstanceOf[js.Any])
   }
 }

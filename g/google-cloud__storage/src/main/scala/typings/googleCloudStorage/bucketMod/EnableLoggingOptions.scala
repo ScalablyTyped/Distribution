@@ -12,22 +12,17 @@ trait EnableLoggingOptions extends StObject {
 }
 object EnableLoggingOptions {
   
-  @scala.inline
-  def apply(prefix: String): EnableLoggingOptions = {
+  inline def apply(prefix: String): EnableLoggingOptions = {
     val __obj = js.Dynamic.literal(prefix = prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnableLoggingOptions]
   }
   
-  @scala.inline
-  implicit class EnableLoggingOptionsMutableBuilder[Self <: EnableLoggingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EnableLoggingOptions](x: Self) {
     
-    @scala.inline
-    def setBucket(value: String | Bucket): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: String | Bucket): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
+    inline def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
   }
 }

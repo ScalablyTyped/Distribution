@@ -12,19 +12,15 @@ trait ISmsMessageReceivedEventArgs extends StObject {
 }
 object ISmsMessageReceivedEventArgs {
   
-  @scala.inline
-  def apply(binaryMessage: SmsBinaryMessage, textMessage: SmsTextMessage): ISmsMessageReceivedEventArgs = {
+  inline def apply(binaryMessage: SmsBinaryMessage, textMessage: SmsTextMessage): ISmsMessageReceivedEventArgs = {
     val __obj = js.Dynamic.literal(binaryMessage = binaryMessage.asInstanceOf[js.Any], textMessage = textMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISmsMessageReceivedEventArgs]
   }
   
-  @scala.inline
-  implicit class ISmsMessageReceivedEventArgsMutableBuilder[Self <: ISmsMessageReceivedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ISmsMessageReceivedEventArgs](x: Self) {
     
-    @scala.inline
-    def setBinaryMessage(value: SmsBinaryMessage): Self = StObject.set(x, "binaryMessage", value.asInstanceOf[js.Any])
+    inline def setBinaryMessage(value: SmsBinaryMessage): Self = StObject.set(x, "binaryMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextMessage(value: SmsTextMessage): Self = StObject.set(x, "textMessage", value.asInstanceOf[js.Any])
+    inline def setTextMessage(value: SmsTextMessage): Self = StObject.set(x, "textMessage", value.asInstanceOf[js.Any])
   }
 }

@@ -32,21 +32,20 @@ object cardStackMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getDerivedStateFromProps(props: Props, state: State): Gestures | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Gestures | Null]
+    inline def getDerivedStateFromProps(props: Props, state: State): Gestures | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Gestures | Null]
   }
   
   @js.native
   trait CardStack
     extends Component[Props, State, js.Any] {
     
-    var getFocusedRoute: js.Any = js.native
+    /* private */ var getFocusedRoute: js.Any = js.native
     
-    var getPreviousScene: js.Any = js.native
+    /* private */ var getPreviousScene: js.Any = js.native
     
-    var handleHeaderLayout: js.Any = js.native
+    /* private */ var handleHeaderLayout: js.Any = js.native
     
-    var handleLayout: js.Any = js.native
+    /* private */ var handleLayout: js.Any = js.native
   }
   
   type GestureValues = StringDictionary[Value]
@@ -103,8 +102,7 @@ object cardStackMod {
   }
   object Props {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       closingRouteKeys: js.Array[String],
       descriptors: StackDescriptorMap,
       getGesturesEnabled: Route => Boolean,
@@ -127,110 +125,75 @@ object cardStackMod {
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setClosingRouteKeys(value: js.Array[String]): Self = StObject.set(x, "closingRouteKeys", value.asInstanceOf[js.Any])
+      inline def setClosingRouteKeys(value: js.Array[String]): Self = StObject.set(x, "closingRouteKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClosingRouteKeysVarargs(value: String*): Self = StObject.set(x, "closingRouteKeys", js.Array(value :_*))
+      inline def setClosingRouteKeysVarargs(value: String*): Self = StObject.set(x, "closingRouteKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setDescriptors(value: StackDescriptorMap): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
+      inline def setDescriptors(value: StackDescriptorMap): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetachInactiveScreens(value: Boolean): Self = StObject.set(x, "detachInactiveScreens", value.asInstanceOf[js.Any])
+      inline def setDetachInactiveScreens(value: Boolean): Self = StObject.set(x, "detachInactiveScreens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetachInactiveScreensUndefined: Self = StObject.set(x, "detachInactiveScreens", js.undefined)
+      inline def setDetachInactiveScreensUndefined: Self = StObject.set(x, "detachInactiveScreens", js.undefined)
       
-      @scala.inline
-      def setGetGesturesEnabled(value: Route => Boolean): Self = StObject.set(x, "getGesturesEnabled", js.Any.fromFunction1(value))
+      inline def setGetGesturesEnabled(value: Route => Boolean): Self = StObject.set(x, "getGesturesEnabled", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetPreviousRoute(value: Route => js.UndefOr[typings.reactNavigationStack.vendorTypesMod.Route[String]]): Self = StObject.set(x, "getPreviousRoute", js.Any.fromFunction1(value))
+      inline def setGetPreviousRoute(value: Route => js.UndefOr[typings.reactNavigationStack.vendorTypesMod.Route[String]]): Self = StObject.set(x, "getPreviousRoute", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHeaderMode(value: StackHeaderMode): Self = StObject.set(x, "headerMode", value.asInstanceOf[js.Any])
+      inline def setHeaderMode(value: StackHeaderMode): Self = StObject.set(x, "headerMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsets(value: EdgeInsets): Self = StObject.set(x, "insets", value.asInstanceOf[js.Any])
+      inline def setInsets(value: EdgeInsets): Self = StObject.set(x, "insets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsParentHeaderShown(value: Boolean): Self = StObject.set(x, "isParentHeaderShown", value.asInstanceOf[js.Any])
+      inline def setIsParentHeaderShown(value: Boolean): Self = StObject.set(x, "isParentHeaderShown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMode(value: StackCardMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: StackCardMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnCloseRoute(value: Route => Unit): Self = StObject.set(x, "onCloseRoute", js.Any.fromFunction1(value))
+      inline def setOnCloseRoute(value: Route => Unit): Self = StObject.set(x, "onCloseRoute", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnGestureCancel(value: /* props */ Route => Unit): Self = StObject.set(x, "onGestureCancel", js.Any.fromFunction1(value))
+      inline def setOnGestureCancel(value: /* props */ Route => Unit): Self = StObject.set(x, "onGestureCancel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnGestureCancelUndefined: Self = StObject.set(x, "onGestureCancel", js.undefined)
+      inline def setOnGestureCancelUndefined: Self = StObject.set(x, "onGestureCancel", js.undefined)
       
-      @scala.inline
-      def setOnGestureEnd(value: /* props */ Route => Unit): Self = StObject.set(x, "onGestureEnd", js.Any.fromFunction1(value))
+      inline def setOnGestureEnd(value: /* props */ Route => Unit): Self = StObject.set(x, "onGestureEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnGestureEndUndefined: Self = StObject.set(x, "onGestureEnd", js.undefined)
+      inline def setOnGestureEndUndefined: Self = StObject.set(x, "onGestureEnd", js.undefined)
       
-      @scala.inline
-      def setOnGestureStart(value: /* props */ Route => Unit): Self = StObject.set(x, "onGestureStart", js.Any.fromFunction1(value))
+      inline def setOnGestureStart(value: /* props */ Route => Unit): Self = StObject.set(x, "onGestureStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnGestureStartUndefined: Self = StObject.set(x, "onGestureStart", js.undefined)
+      inline def setOnGestureStartUndefined: Self = StObject.set(x, "onGestureStart", js.undefined)
       
-      @scala.inline
-      def setOnOpenRoute(value: Route => Unit): Self = StObject.set(x, "onOpenRoute", js.Any.fromFunction1(value))
+      inline def setOnOpenRoute(value: Route => Unit): Self = StObject.set(x, "onOpenRoute", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPageChangeCancel(value: () => Unit): Self = StObject.set(x, "onPageChangeCancel", js.Any.fromFunction0(value))
+      inline def setOnPageChangeCancel(value: () => Unit): Self = StObject.set(x, "onPageChangeCancel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnPageChangeCancelUndefined: Self = StObject.set(x, "onPageChangeCancel", js.undefined)
+      inline def setOnPageChangeCancelUndefined: Self = StObject.set(x, "onPageChangeCancel", js.undefined)
       
-      @scala.inline
-      def setOnPageChangeConfirm(value: /* force */ Boolean => Unit): Self = StObject.set(x, "onPageChangeConfirm", js.Any.fromFunction1(value))
+      inline def setOnPageChangeConfirm(value: /* force */ Boolean => Unit): Self = StObject.set(x, "onPageChangeConfirm", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPageChangeConfirmUndefined: Self = StObject.set(x, "onPageChangeConfirm", js.undefined)
+      inline def setOnPageChangeConfirmUndefined: Self = StObject.set(x, "onPageChangeConfirm", js.undefined)
       
-      @scala.inline
-      def setOnPageChangeStart(value: () => Unit): Self = StObject.set(x, "onPageChangeStart", js.Any.fromFunction0(value))
+      inline def setOnPageChangeStart(value: () => Unit): Self = StObject.set(x, "onPageChangeStart", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnPageChangeStartUndefined: Self = StObject.set(x, "onPageChangeStart", js.undefined)
+      inline def setOnPageChangeStartUndefined: Self = StObject.set(x, "onPageChangeStart", js.undefined)
       
-      @scala.inline
-      def setOnTransitionEnd(value: (Route, Boolean) => Unit): Self = StObject.set(x, "onTransitionEnd", js.Any.fromFunction2(value))
+      inline def setOnTransitionEnd(value: (Route, Boolean) => Unit): Self = StObject.set(x, "onTransitionEnd", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnTransitionStart(value: (Route, Boolean) => Unit): Self = StObject.set(x, "onTransitionStart", js.Any.fromFunction2(value))
+      inline def setOnTransitionStart(value: (Route, Boolean) => Unit): Self = StObject.set(x, "onTransitionStart", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOpeningRouteKeys(value: js.Array[String]): Self = StObject.set(x, "openingRouteKeys", value.asInstanceOf[js.Any])
+      inline def setOpeningRouteKeys(value: js.Array[String]): Self = StObject.set(x, "openingRouteKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpeningRouteKeysVarargs(value: String*): Self = StObject.set(x, "openingRouteKeys", js.Array(value :_*))
+      inline def setOpeningRouteKeysVarargs(value: String*): Self = StObject.set(x, "openingRouteKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setRenderHeader(value: typings.reactNavigationStack.headerContainerMod.Props => ReactNode): Self = StObject.set(x, "renderHeader", js.Any.fromFunction1(value))
+      inline def setRenderHeader(value: typings.reactNavigationStack.headerContainerMod.Props => ReactNode): Self = StObject.set(x, "renderHeader", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderScene(value: Route => ReactNode): Self = StObject.set(x, "renderScene", js.Any.fromFunction1(value))
+      inline def setRenderScene(value: Route => ReactNode): Self = StObject.set(x, "renderScene", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRoutes(value: js.Array[typings.reactNavigationStack.vendorTypesMod.Route[String]]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+      inline def setRoutes(value: js.Array[typings.reactNavigationStack.vendorTypesMod.Route[String]]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoutesVarargs(value: typings.reactNavigationStack.vendorTypesMod.Route[String]*): Self = StObject.set(x, "routes", js.Array(value :_*))
+      inline def setRoutesVarargs(value: typings.reactNavigationStack.vendorTypesMod.Route[String]*): Self = StObject.set(x, "routes", js.Array(value :_*))
       
-      @scala.inline
-      def setState(value: NavigationState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: NavigationState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
@@ -250,8 +213,7 @@ object cardStackMod {
   }
   object State {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       descriptors: StackDescriptorMap,
       gestures: GestureValues,
       headerHeights: Record[String, Double],
@@ -263,32 +225,23 @@ object cardStackMod {
       __obj.asInstanceOf[State]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+    extension [Self <: State](x: Self) {
       
-      @scala.inline
-      def setDescriptors(value: StackDescriptorMap): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
+      inline def setDescriptors(value: StackDescriptorMap): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGestures(value: GestureValues): Self = StObject.set(x, "gestures", value.asInstanceOf[js.Any])
+      inline def setGestures(value: GestureValues): Self = StObject.set(x, "gestures", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderHeights(value: Record[String, Double]): Self = StObject.set(x, "headerHeights", value.asInstanceOf[js.Any])
+      inline def setHeaderHeights(value: Record[String, Double]): Self = StObject.set(x, "headerHeights", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoutes(value: js.Array[typings.reactNavigationStack.vendorTypesMod.Route[String]]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+      inline def setRoutes(value: js.Array[typings.reactNavigationStack.vendorTypesMod.Route[String]]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoutesVarargs(value: typings.reactNavigationStack.vendorTypesMod.Route[String]*): Self = StObject.set(x, "routes", js.Array(value :_*))
+      inline def setRoutesVarargs(value: typings.reactNavigationStack.vendorTypesMod.Route[String]*): Self = StObject.set(x, "routes", js.Array(value :_*))
       
-      @scala.inline
-      def setScenes(value: js.Array[Scene[typings.reactNavigationStack.vendorTypesMod.Route[String]]]): Self = StObject.set(x, "scenes", value.asInstanceOf[js.Any])
+      inline def setScenes(value: js.Array[Scene[typings.reactNavigationStack.vendorTypesMod.Route[String]]]): Self = StObject.set(x, "scenes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScenesVarargs(value: Scene[typings.reactNavigationStack.vendorTypesMod.Route[String]]*): Self = StObject.set(x, "scenes", js.Array(value :_*))
+      inline def setScenesVarargs(value: Scene[typings.reactNavigationStack.vendorTypesMod.Route[String]]*): Self = StObject.set(x, "scenes", js.Array(value :_*))
     }
   }
 }

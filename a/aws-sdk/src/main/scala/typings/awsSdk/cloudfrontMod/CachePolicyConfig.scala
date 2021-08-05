@@ -38,43 +38,31 @@ trait CachePolicyConfig extends StObject {
 }
 object CachePolicyConfig {
   
-  @scala.inline
-  def apply(MinTTL: long, Name: String): CachePolicyConfig = {
+  inline def apply(MinTTL: long, Name: String): CachePolicyConfig = {
     val __obj = js.Dynamic.literal(MinTTL = MinTTL.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CachePolicyConfig]
   }
   
-  @scala.inline
-  implicit class CachePolicyConfigMutableBuilder[Self <: CachePolicyConfig] (val x: Self) extends AnyVal {
+  extension [Self <: CachePolicyConfig](x: Self) {
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "Comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "Comment", js.undefined)
     
-    @scala.inline
-    def setDefaultTTL(value: long): Self = StObject.set(x, "DefaultTTL", value.asInstanceOf[js.Any])
+    inline def setDefaultTTL(value: long): Self = StObject.set(x, "DefaultTTL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultTTLUndefined: Self = StObject.set(x, "DefaultTTL", js.undefined)
+    inline def setDefaultTTLUndefined: Self = StObject.set(x, "DefaultTTL", js.undefined)
     
-    @scala.inline
-    def setMaxTTL(value: long): Self = StObject.set(x, "MaxTTL", value.asInstanceOf[js.Any])
+    inline def setMaxTTL(value: long): Self = StObject.set(x, "MaxTTL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxTTLUndefined: Self = StObject.set(x, "MaxTTL", js.undefined)
+    inline def setMaxTTLUndefined: Self = StObject.set(x, "MaxTTL", js.undefined)
     
-    @scala.inline
-    def setMinTTL(value: long): Self = StObject.set(x, "MinTTL", value.asInstanceOf[js.Any])
+    inline def setMinTTL(value: long): Self = StObject.set(x, "MinTTL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersInCacheKeyAndForwardedToOrigin(value: ParametersInCacheKeyAndForwardedToOrigin): Self = StObject.set(x, "ParametersInCacheKeyAndForwardedToOrigin", value.asInstanceOf[js.Any])
+    inline def setParametersInCacheKeyAndForwardedToOrigin(value: ParametersInCacheKeyAndForwardedToOrigin): Self = StObject.set(x, "ParametersInCacheKeyAndForwardedToOrigin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersInCacheKeyAndForwardedToOriginUndefined: Self = StObject.set(x, "ParametersInCacheKeyAndForwardedToOrigin", js.undefined)
+    inline def setParametersInCacheKeyAndForwardedToOriginUndefined: Self = StObject.set(x, "ParametersInCacheKeyAndForwardedToOrigin", js.undefined)
   }
 }

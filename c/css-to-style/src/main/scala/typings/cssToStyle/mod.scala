@@ -11,6 +11,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(cssText: String): CSSStyleDeclaration = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(cssText.asInstanceOf[js.Any]).asInstanceOf[CSSStyleDeclaration]
+  inline def default(cssText: String): CSSStyleDeclaration = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(cssText.asInstanceOf[js.Any]).asInstanceOf[CSSStyleDeclaration]
 }

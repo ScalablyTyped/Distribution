@@ -55,43 +55,31 @@ trait QueryOptions extends StObject {
 }
 object QueryOptions {
   
-  @scala.inline
-  def apply(sql: String): QueryOptions = {
+  inline def apply(sql: String): QueryOptions = {
     val __obj = js.Dynamic.literal(sql = sql.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryOptions]
   }
   
-  @scala.inline
-  implicit class QueryOptionsMutableBuilder[Self <: QueryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: QueryOptions](x: Self) {
     
-    @scala.inline
-    def setNestTables(value: js.Any): Self = StObject.set(x, "nestTables", value.asInstanceOf[js.Any])
+    inline def setNestTables(value: js.Any): Self = StObject.set(x, "nestTables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNestTablesUndefined: Self = StObject.set(x, "nestTables", js.undefined)
+    inline def setNestTablesUndefined: Self = StObject.set(x, "nestTables", js.undefined)
     
-    @scala.inline
-    def setSql(value: String): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
+    inline def setSql(value: String): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    @scala.inline
-    def setTypeCast(value: TypeCast): Self = StObject.set(x, "typeCast", value.asInstanceOf[js.Any])
+    inline def setTypeCast(value: TypeCast): Self = StObject.set(x, "typeCast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeCastFunction2(value: (/* field */ UntypedFieldInfotypestrin, /* next */ js.Function0[Unit]) => js.Any): Self = StObject.set(x, "typeCast", js.Any.fromFunction2(value))
+    inline def setTypeCastFunction2(value: (/* field */ UntypedFieldInfotypestrin, /* next */ js.Function0[Unit]) => js.Any): Self = StObject.set(x, "typeCast", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTypeCastUndefined: Self = StObject.set(x, "typeCast", js.undefined)
+    inline def setTypeCastUndefined: Self = StObject.set(x, "typeCast", js.undefined)
     
-    @scala.inline
-    def setValues(value: js.Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
   }
 }

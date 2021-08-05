@@ -61,61 +61,43 @@ trait PlaceRadarRequest extends StObject {
 }
 object PlaceRadarRequest {
   
-  @scala.inline
-  def apply(location: LatLng, radius: Double): PlaceRadarRequest = {
+  inline def apply(location: LatLng, radius: Double): PlaceRadarRequest = {
     val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaceRadarRequest]
   }
   
-  @scala.inline
-  implicit class PlaceRadarRequestMutableBuilder[Self <: PlaceRadarRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PlaceRadarRequest](x: Self) {
     
-    @scala.inline
-    def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
+    inline def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeywordUndefined: Self = StObject.set(x, "keyword", js.undefined)
+    inline def setKeywordUndefined: Self = StObject.set(x, "keyword", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setLocation(value: LatLng): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: LatLng): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxprice(value: Double): Self = StObject.set(x, "maxprice", value.asInstanceOf[js.Any])
+    inline def setMaxprice(value: Double): Self = StObject.set(x, "maxprice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxpriceUndefined: Self = StObject.set(x, "maxprice", js.undefined)
+    inline def setMaxpriceUndefined: Self = StObject.set(x, "maxprice", js.undefined)
     
-    @scala.inline
-    def setMinprice(value: Double): Self = StObject.set(x, "minprice", value.asInstanceOf[js.Any])
+    inline def setMinprice(value: Double): Self = StObject.set(x, "minprice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinpriceUndefined: Self = StObject.set(x, "minprice", js.undefined)
+    inline def setMinpriceUndefined: Self = StObject.set(x, "minprice", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOpennow(value: Boolean): Self = StObject.set(x, "opennow", value.asInstanceOf[js.Any])
+    inline def setOpennow(value: Boolean): Self = StObject.set(x, "opennow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpennowUndefined: Self = StObject.set(x, "opennow", js.undefined)
+    inline def setOpennowUndefined: Self = StObject.set(x, "opennow", js.undefined)
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: AddressType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: AddressType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

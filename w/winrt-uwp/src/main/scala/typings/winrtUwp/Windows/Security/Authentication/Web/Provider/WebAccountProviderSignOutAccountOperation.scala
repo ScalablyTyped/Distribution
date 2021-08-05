@@ -33,8 +33,7 @@ trait WebAccountProviderSignOutAccountOperation extends StObject {
 }
 object WebAccountProviderSignOutAccountOperation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     applicationCallbackUri: Uri,
     clientId: String,
     kind: WebAccountProviderOperationKind,
@@ -46,25 +45,18 @@ object WebAccountProviderSignOutAccountOperation {
     __obj.asInstanceOf[WebAccountProviderSignOutAccountOperation]
   }
   
-  @scala.inline
-  implicit class WebAccountProviderSignOutAccountOperationMutableBuilder[Self <: WebAccountProviderSignOutAccountOperation] (val x: Self) extends AnyVal {
+  extension [Self <: WebAccountProviderSignOutAccountOperation](x: Self) {
     
-    @scala.inline
-    def setApplicationCallbackUri(value: Uri): Self = StObject.set(x, "applicationCallbackUri", value.asInstanceOf[js.Any])
+    inline def setApplicationCallbackUri(value: Uri): Self = StObject.set(x, "applicationCallbackUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: WebAccountProviderOperationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: WebAccountProviderOperationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportCompleted(value: () => Unit): Self = StObject.set(x, "reportCompleted", js.Any.fromFunction0(value))
+    inline def setReportCompleted(value: () => Unit): Self = StObject.set(x, "reportCompleted", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReportError(value: WebProviderError => Unit): Self = StObject.set(x, "reportError", js.Any.fromFunction1(value))
+    inline def setReportError(value: WebProviderError => Unit): Self = StObject.set(x, "reportError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWebAccount(value: WebAccount): Self = StObject.set(x, "webAccount", value.asInstanceOf[js.Any])
+    inline def setWebAccount(value: WebAccount): Self = StObject.set(x, "webAccount", value.asInstanceOf[js.Any])
   }
 }

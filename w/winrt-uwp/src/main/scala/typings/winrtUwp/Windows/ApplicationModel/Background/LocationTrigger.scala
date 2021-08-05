@@ -12,16 +12,13 @@ trait LocationTrigger extends StObject {
 }
 object LocationTrigger {
   
-  @scala.inline
-  def apply(triggerType: LocationTriggerType): LocationTrigger = {
+  inline def apply(triggerType: LocationTriggerType): LocationTrigger = {
     val __obj = js.Dynamic.literal(triggerType = triggerType.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationTrigger]
   }
   
-  @scala.inline
-  implicit class LocationTriggerMutableBuilder[Self <: LocationTrigger] (val x: Self) extends AnyVal {
+  extension [Self <: LocationTrigger](x: Self) {
     
-    @scala.inline
-    def setTriggerType(value: LocationTriggerType): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
+    inline def setTriggerType(value: LocationTriggerType): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
   }
 }

@@ -17,9 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StageStatus extends StObject
 object StageStatus {
   
-  @scala.inline
-  def Active: active = "active".asInstanceOf[active]
+  inline def Active: active = "active".asInstanceOf[active]
   
-  @scala.inline
-  def Inactive: inactive = "inactive".asInstanceOf[inactive]
+  inline def Inactive: inactive = "inactive".asInstanceOf[inactive]
 }

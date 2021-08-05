@@ -12,16 +12,13 @@ trait PickImplrandom extends StObject {
 }
 object PickImplrandom {
   
-  @scala.inline
-  def apply(random: RandomSettings): PickImplrandom = {
+  inline def apply(random: RandomSettings): PickImplrandom = {
     val __obj = js.Dynamic.literal(random = random.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplrandom]
   }
   
-  @scala.inline
-  implicit class PickImplrandomMutableBuilder[Self <: PickImplrandom] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplrandom](x: Self) {
     
-    @scala.inline
-    def setRandom(value: RandomSettings): Self = StObject.set(x, "random", value.asInstanceOf[js.Any])
+    inline def setRandom(value: RandomSettings): Self = StObject.set(x, "random", value.asInstanceOf[js.Any])
   }
 }

@@ -27,34 +27,25 @@ trait SchemaEventPeriodUpdate extends StObject {
 }
 object SchemaEventPeriodUpdate {
   
-  @scala.inline
-  def apply(): SchemaEventPeriodUpdate = {
+  inline def apply(): SchemaEventPeriodUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEventPeriodUpdate]
   }
   
-  @scala.inline
-  implicit class SchemaEventPeriodUpdateMutableBuilder[Self <: SchemaEventPeriodUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaEventPeriodUpdate](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setTimePeriod(value: SchemaEventPeriodRange): Self = StObject.set(x, "timePeriod", value.asInstanceOf[js.Any])
+    inline def setTimePeriod(value: SchemaEventPeriodRange): Self = StObject.set(x, "timePeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimePeriodUndefined: Self = StObject.set(x, "timePeriod", js.undefined)
+    inline def setTimePeriodUndefined: Self = StObject.set(x, "timePeriod", js.undefined)
     
-    @scala.inline
-    def setUpdates(value: js.Array[SchemaEventUpdateRequest]): Self = StObject.set(x, "updates", value.asInstanceOf[js.Any])
+    inline def setUpdates(value: js.Array[SchemaEventUpdateRequest]): Self = StObject.set(x, "updates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatesUndefined: Self = StObject.set(x, "updates", js.undefined)
+    inline def setUpdatesUndefined: Self = StObject.set(x, "updates", js.undefined)
     
-    @scala.inline
-    def setUpdatesVarargs(value: SchemaEventUpdateRequest*): Self = StObject.set(x, "updates", js.Array(value :_*))
+    inline def setUpdatesVarargs(value: SchemaEventUpdateRequest*): Self = StObject.set(x, "updates", js.Array(value :_*))
   }
 }

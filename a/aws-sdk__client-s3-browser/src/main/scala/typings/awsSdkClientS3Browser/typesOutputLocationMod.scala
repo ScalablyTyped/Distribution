@@ -17,20 +17,16 @@ object typesOutputLocationMod {
   }
   object OutputLocation {
     
-    @scala.inline
-    def apply(): OutputLocation = {
+    inline def apply(): OutputLocation = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OutputLocation]
     }
     
-    @scala.inline
-    implicit class OutputLocationMutableBuilder[Self <: OutputLocation] (val x: Self) extends AnyVal {
+    extension [Self <: OutputLocation](x: Self) {
       
-      @scala.inline
-      def setS3(value: S3Location): Self = StObject.set(x, "S3", value.asInstanceOf[js.Any])
+      inline def setS3(value: S3Location): Self = StObject.set(x, "S3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3Undefined: Self = StObject.set(x, "S3", js.undefined)
+      inline def setS3Undefined: Self = StObject.set(x, "S3", js.undefined)
     }
   }
   
@@ -46,20 +42,16 @@ object typesOutputLocationMod {
   }
   object UnmarshalledOutputLocation {
     
-    @scala.inline
-    def apply(): UnmarshalledOutputLocation = {
+    inline def apply(): UnmarshalledOutputLocation = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledOutputLocation]
     }
     
-    @scala.inline
-    implicit class UnmarshalledOutputLocationMutableBuilder[Self <: UnmarshalledOutputLocation] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledOutputLocation](x: Self) {
       
-      @scala.inline
-      def setS3(value: UnmarshalledS3Location): Self = StObject.set(x, "S3", value.asInstanceOf[js.Any])
+      inline def setS3(value: UnmarshalledS3Location): Self = StObject.set(x, "S3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3Undefined: Self = StObject.set(x, "S3", js.undefined)
+      inline def setS3Undefined: Self = StObject.set(x, "S3", js.undefined)
     }
   }
 }

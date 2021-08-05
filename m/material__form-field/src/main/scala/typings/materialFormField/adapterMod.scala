@@ -20,8 +20,7 @@ object adapterMod {
   }
   object MDCFormFieldAdapter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       activateInputRipple: () => Unit,
       deactivateInputRipple: () => Unit,
       deregisterInteractionHandler: (js.Any, SpecificEventListener[js.Any]) => Unit,
@@ -31,20 +30,15 @@ object adapterMod {
       __obj.asInstanceOf[MDCFormFieldAdapter]
     }
     
-    @scala.inline
-    implicit class MDCFormFieldAdapterMutableBuilder[Self <: MDCFormFieldAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: MDCFormFieldAdapter](x: Self) {
       
-      @scala.inline
-      def setActivateInputRipple(value: () => Unit): Self = StObject.set(x, "activateInputRipple", js.Any.fromFunction0(value))
+      inline def setActivateInputRipple(value: () => Unit): Self = StObject.set(x, "activateInputRipple", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDeactivateInputRipple(value: () => Unit): Self = StObject.set(x, "deactivateInputRipple", js.Any.fromFunction0(value))
+      inline def setDeactivateInputRipple(value: () => Unit): Self = StObject.set(x, "deactivateInputRipple", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDeregisterInteractionHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "deregisterInteractionHandler", js.Any.fromFunction2(value))
+      inline def setDeregisterInteractionHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "deregisterInteractionHandler", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRegisterInteractionHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "registerInteractionHandler", js.Any.fromFunction2(value))
+      inline def setRegisterInteractionHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "registerInteractionHandler", js.Any.fromFunction2(value))
     }
   }
 }

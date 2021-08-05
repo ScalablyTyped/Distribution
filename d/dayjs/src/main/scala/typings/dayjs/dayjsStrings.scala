@@ -24,16 +24,14 @@ object dayjsStrings {
        with typings.dayjs.esmMod.UnitType
        with UnitTypeShort
        with typings.dayjs.esmMod.UnitTypeShort
-  @scala.inline
-  def M: M = "M".asInstanceOf[M]
+  inline def M: M = "M".asInstanceOf[M]
   
   @js.native
   sealed trait Q
     extends StObject
        with QUnitType
        with typings.dayjs.esmMod.QUnitType
-  @scala.inline
-  def Q: Q = "Q".asInstanceOf[Q]
+  inline def Q: Q = "Q".asInstanceOf[Q]
   
   @js.native
   sealed trait d
@@ -48,8 +46,7 @@ object dayjsStrings {
        with typings.dayjs.esmMod.UnitType
        with UnitTypeShort
        with typings.dayjs.esmMod.UnitTypeShort
-  @scala.inline
-  def d: d = "d".asInstanceOf[d]
+  inline def d: d = "d".asInstanceOf[d]
   
   @js.native
   sealed trait date
@@ -62,8 +59,7 @@ object dayjsStrings {
        with typings.dayjs.esmMod.QUnitType
        with UnitType
        with typings.dayjs.esmMod.UnitType
-  @scala.inline
-  def date: date = "date".asInstanceOf[date]
+  inline def date: date = "date".asInstanceOf[date]
   
   @js.native
   sealed trait day
@@ -76,8 +72,7 @@ object dayjsStrings {
        with typings.dayjs.esmMod.QUnitType
        with UnitType
        with typings.dayjs.esmMod.UnitType
-  @scala.inline
-  def day: day = "day".asInstanceOf[day]
+  inline def day: day = "day".asInstanceOf[day]
   
   @js.native
   sealed trait h
@@ -92,8 +87,7 @@ object dayjsStrings {
        with typings.dayjs.esmMod.UnitType
        with UnitTypeShort
        with typings.dayjs.esmMod.UnitTypeShort
-  @scala.inline
-  def h: h = "h".asInstanceOf[h]
+  inline def h: h = "h".asInstanceOf[h]
   
   @js.native
   sealed trait hour
@@ -106,16 +100,14 @@ object dayjsStrings {
        with typings.dayjs.esmMod.QUnitType
        with UnitType
        with typings.dayjs.esmMod.UnitType
-  @scala.inline
-  def hour: hour = "hour".asInstanceOf[hour]
+  inline def hour: hour = "hour".asInstanceOf[hour]
   
   @js.native
   sealed trait isoWeek
     extends StObject
        with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
-  @scala.inline
-  def isoWeek: isoWeek = "isoWeek".asInstanceOf[isoWeek]
+  inline def isoWeek: isoWeek = "isoWeek".asInstanceOf[isoWeek]
   
   @js.native
   sealed trait m_
@@ -130,8 +122,7 @@ object dayjsStrings {
        with typings.dayjs.esmMod.UnitType
        with UnitTypeShort
        with typings.dayjs.esmMod.UnitTypeShort
-  @scala.inline
-  def m_ : m_ = "m".asInstanceOf[m_]
+  inline def m_ : m_ = "m".asInstanceOf[m_]
   
   @js.native
   sealed trait millisecond
@@ -144,8 +135,7 @@ object dayjsStrings {
        with typings.dayjs.esmMod.QUnitType
        with UnitType
        with typings.dayjs.esmMod.UnitType
-  @scala.inline
-  def millisecond: millisecond = "millisecond".asInstanceOf[millisecond]
+  inline def millisecond: millisecond = "millisecond".asInstanceOf[millisecond]
   
   @js.native
   sealed trait minute
@@ -158,8 +148,7 @@ object dayjsStrings {
        with typings.dayjs.esmMod.QUnitType
        with UnitType
        with typings.dayjs.esmMod.UnitType
-  @scala.inline
-  def minute: minute = "minute".asInstanceOf[minute]
+  inline def minute: minute = "minute".asInstanceOf[minute]
   
   @js.native
   sealed trait month
@@ -172,8 +161,7 @@ object dayjsStrings {
        with typings.dayjs.esmMod.QUnitType
        with UnitType
        with typings.dayjs.esmMod.UnitType
-  @scala.inline
-  def month: month = "month".asInstanceOf[month]
+  inline def month: month = "month".asInstanceOf[month]
   
   @js.native
   sealed trait ms
@@ -188,16 +176,14 @@ object dayjsStrings {
        with typings.dayjs.esmMod.UnitType
        with UnitTypeShort
        with typings.dayjs.esmMod.UnitTypeShort
-  @scala.inline
-  def ms: ms = "ms".asInstanceOf[ms]
+  inline def ms: ms = "ms".asInstanceOf[ms]
   
   @js.native
   sealed trait quarter
     extends StObject
        with QUnitType
        with typings.dayjs.esmMod.QUnitType
-  @scala.inline
-  def quarter: quarter = "quarter".asInstanceOf[quarter]
+  inline def quarter: quarter = "quarter".asInstanceOf[quarter]
   
   @js.native
   sealed trait s
@@ -212,8 +198,7 @@ object dayjsStrings {
        with typings.dayjs.esmMod.UnitType
        with UnitTypeShort
        with typings.dayjs.esmMod.UnitTypeShort
-  @scala.inline
-  def s: s = "s".asInstanceOf[s]
+  inline def s: s = "s".asInstanceOf[s]
   
   @js.native
   sealed trait second
@@ -226,8 +211,7 @@ object dayjsStrings {
        with typings.dayjs.esmMod.QUnitType
        with UnitType
        with typings.dayjs.esmMod.UnitType
-  @scala.inline
-  def second: second = "second".asInstanceOf[second]
+  inline def second: second = "second".asInstanceOf[second]
   
   @js.native
   sealed trait w
@@ -236,8 +220,7 @@ object dayjsStrings {
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with OpUnitType
        with typings.dayjs.esmMod.OpUnitType
-  @scala.inline
-  def w: w = "w".asInstanceOf[w]
+  inline def w: w = "w".asInstanceOf[w]
   
   @js.native
   sealed trait week
@@ -246,8 +229,7 @@ object dayjsStrings {
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with OpUnitType
        with typings.dayjs.esmMod.OpUnitType
-  @scala.inline
-  def week: week = "week".asInstanceOf[week]
+  inline def week: week = "week".asInstanceOf[week]
   
   @js.native
   sealed trait y
@@ -262,8 +244,7 @@ object dayjsStrings {
        with typings.dayjs.esmMod.UnitType
        with UnitTypeShort
        with typings.dayjs.esmMod.UnitTypeShort
-  @scala.inline
-  def y: y = "y".asInstanceOf[y]
+  inline def y: y = "y".asInstanceOf[y]
   
   @js.native
   sealed trait year
@@ -276,6 +257,5 @@ object dayjsStrings {
        with typings.dayjs.esmMod.QUnitType
        with UnitType
        with typings.dayjs.esmMod.UnitType
-  @scala.inline
-  def year: year = "year".asInstanceOf[year]
+  inline def year: year = "year".asInstanceOf[year]
 }

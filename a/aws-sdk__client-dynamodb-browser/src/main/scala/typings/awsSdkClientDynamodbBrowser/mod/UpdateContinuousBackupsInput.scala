@@ -10,8 +10,7 @@ trait UpdateContinuousBackupsInput
      with typings.awsSdkClientDynamodbBrowser.typesUpdateContinuousBackupsInputMod.UpdateContinuousBackupsInput
 object UpdateContinuousBackupsInput {
   
-  @scala.inline
-  def apply(PointInTimeRecoverySpecification: PointInTimeRecoverySpecification, TableName: String): UpdateContinuousBackupsInput = {
+  inline def apply(PointInTimeRecoverySpecification: PointInTimeRecoverySpecification, TableName: String): UpdateContinuousBackupsInput = {
     val __obj = js.Dynamic.literal(PointInTimeRecoverySpecification = PointInTimeRecoverySpecification.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateContinuousBackupsInput]
   }

@@ -38,8 +38,7 @@ trait Lock
 }
 object Lock {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Depth: LockDepth,
     LockTokens: SafeArray[String],
     Owner: js.Any,
@@ -51,19 +50,14 @@ object Lock {
     __obj.asInstanceOf[Lock]
   }
   
-  @scala.inline
-  implicit class LockMutableBuilder[Self <: Lock] (val x: Self) extends AnyVal {
+  extension [Self <: Lock](x: Self) {
     
-    @scala.inline
-    def setDepth(value: LockDepth): Self = StObject.set(x, "Depth", value.asInstanceOf[js.Any])
+    inline def setDepth(value: LockDepth): Self = StObject.set(x, "Depth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockTokens(value: SafeArray[String]): Self = StObject.set(x, "LockTokens", value.asInstanceOf[js.Any])
+    inline def setLockTokens(value: SafeArray[String]): Self = StObject.set(x, "LockTokens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "Timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "Timeout", value.asInstanceOf[js.Any])
   }
 }

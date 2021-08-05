@@ -18,25 +18,19 @@ trait DescribePendingAggregationRequestsRequest extends StObject {
 }
 object DescribePendingAggregationRequestsRequest {
   
-  @scala.inline
-  def apply(): DescribePendingAggregationRequestsRequest = {
+  inline def apply(): DescribePendingAggregationRequestsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribePendingAggregationRequestsRequest]
   }
   
-  @scala.inline
-  implicit class DescribePendingAggregationRequestsRequestMutableBuilder[Self <: DescribePendingAggregationRequestsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribePendingAggregationRequestsRequest](x: Self) {
     
-    @scala.inline
-    def setLimit(value: DescribePendingAggregationRequestsLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: DescribePendingAggregationRequestsLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

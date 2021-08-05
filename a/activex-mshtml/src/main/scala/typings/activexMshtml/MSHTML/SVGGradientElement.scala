@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SVGGradientElement extends StObject {
   
-  @JSName("MSHTML.SVGGradientElement_typekey")
+  /* private */ @JSName("MSHTML.SVGGradientElement_typekey")
   var MSHTMLDotSVGGradientElement_typekey: SVGGradientElement
   
   val className: SVGAnimatedString
@@ -31,8 +31,7 @@ trait SVGGradientElement extends StObject {
 }
 object SVGGradientElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotSVGGradientElement_typekey: SVGGradientElement,
     className: SVGAnimatedString,
     externalResourcesRequired: SVGAnimatedBoolean,
@@ -50,40 +49,28 @@ object SVGGradientElement {
     __obj.asInstanceOf[SVGGradientElement]
   }
   
-  @scala.inline
-  implicit class SVGGradientElementMutableBuilder[Self <: SVGGradientElement] (val x: Self) extends AnyVal {
+  extension [Self <: SVGGradientElement](x: Self) {
     
-    @scala.inline
-    def setClassName(value: SVGAnimatedString): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: SVGAnimatedString): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalResourcesRequired(value: SVGAnimatedBoolean): Self = StObject.set(x, "externalResourcesRequired", value.asInstanceOf[js.Any])
+    inline def setExternalResourcesRequired(value: SVGAnimatedBoolean): Self = StObject.set(x, "externalResourcesRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusable(value: SVGAnimatedEnumeration): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
+    inline def setFocusable(value: SVGAnimatedEnumeration): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradientTransform(value: SVGAnimatedTransformList): Self = StObject.set(x, "gradientTransform", value.asInstanceOf[js.Any])
+    inline def setGradientTransform(value: SVGAnimatedTransformList): Self = StObject.set(x, "gradientTransform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradientUnits(value: SVGAnimatedEnumeration): Self = StObject.set(x, "gradientUnits", value.asInstanceOf[js.Any])
+    inline def setGradientUnits(value: SVGAnimatedEnumeration): Self = StObject.set(x, "gradientUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHref(value: SVGAnimatedString): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    inline def setHref(value: SVGAnimatedString): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotSVGGradientElement_typekey(value: SVGGradientElement): Self = StObject.set(x, "MSHTML.SVGGradientElement_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotSVGGradientElement_typekey(value: SVGGradientElement): Self = StObject.set(x, "MSHTML.SVGGradientElement_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerSVGElement(value: ISVGSVGElement): Self = StObject.set(x, "ownerSVGElement", value.asInstanceOf[js.Any])
+    inline def setOwnerSVGElement(value: ISVGSVGElement): Self = StObject.set(x, "ownerSVGElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpreadMethod(value: SVGAnimatedEnumeration): Self = StObject.set(x, "spreadMethod", value.asInstanceOf[js.Any])
+    inline def setSpreadMethod(value: SVGAnimatedEnumeration): Self = StObject.set(x, "spreadMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewportElement(value: ISVGElement): Self = StObject.set(x, "viewportElement", value.asInstanceOf[js.Any])
+    inline def setViewportElement(value: ISVGElement): Self = StObject.set(x, "viewportElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXmlbase(value: String): Self = StObject.set(x, "xmlbase", value.asInstanceOf[js.Any])
+    inline def setXmlbase(value: String): Self = StObject.set(x, "xmlbase", value.asInstanceOf[js.Any])
   }
 }

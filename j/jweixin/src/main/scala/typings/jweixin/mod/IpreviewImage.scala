@@ -15,22 +15,17 @@ trait IpreviewImage
 }
 object IpreviewImage {
   
-  @scala.inline
-  def apply(current: String, urls: js.Array[String]): IpreviewImage = {
+  inline def apply(current: String, urls: js.Array[String]): IpreviewImage = {
     val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], urls = urls.asInstanceOf[js.Any])
     __obj.asInstanceOf[IpreviewImage]
   }
   
-  @scala.inline
-  implicit class IpreviewImageMutableBuilder[Self <: IpreviewImage] (val x: Self) extends AnyVal {
+  extension [Self <: IpreviewImage](x: Self) {
     
-    @scala.inline
-    def setCurrent(value: String): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+    inline def setCurrent(value: String): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrls(value: js.Array[String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
+    inline def setUrls(value: js.Array[String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
+    inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
   }
 }

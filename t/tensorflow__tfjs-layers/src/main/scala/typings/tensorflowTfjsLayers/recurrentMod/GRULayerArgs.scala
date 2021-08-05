@@ -35,25 +35,19 @@ trait GRULayerArgs
 }
 object GRULayerArgs {
   
-  @scala.inline
-  def apply(units: Double): GRULayerArgs = {
+  inline def apply(units: Double): GRULayerArgs = {
     val __obj = js.Dynamic.literal(units = units.asInstanceOf[js.Any])
     __obj.asInstanceOf[GRULayerArgs]
   }
   
-  @scala.inline
-  implicit class GRULayerArgsMutableBuilder[Self <: GRULayerArgs] (val x: Self) extends AnyVal {
+  extension [Self <: GRULayerArgs](x: Self) {
     
-    @scala.inline
-    def setImplementation(value: Double): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
+    inline def setImplementation(value: Double): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImplementationUndefined: Self = StObject.set(x, "implementation", js.undefined)
+    inline def setImplementationUndefined: Self = StObject.set(x, "implementation", js.undefined)
     
-    @scala.inline
-    def setRecurrentActivation(value: ActivationIdentifier): Self = StObject.set(x, "recurrentActivation", value.asInstanceOf[js.Any])
+    inline def setRecurrentActivation(value: ActivationIdentifier): Self = StObject.set(x, "recurrentActivation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecurrentActivationUndefined: Self = StObject.set(x, "recurrentActivation", js.undefined)
+    inline def setRecurrentActivationUndefined: Self = StObject.set(x, "recurrentActivation", js.undefined)
   }
 }

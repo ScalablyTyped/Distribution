@@ -28,37 +28,27 @@ trait HistoricalMetric extends StObject {
 }
 object HistoricalMetric {
   
-  @scala.inline
-  def apply(): HistoricalMetric = {
+  inline def apply(): HistoricalMetric = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HistoricalMetric]
   }
   
-  @scala.inline
-  implicit class HistoricalMetricMutableBuilder[Self <: HistoricalMetric] (val x: Self) extends AnyVal {
+  extension [Self <: HistoricalMetric](x: Self) {
     
-    @scala.inline
-    def setName(value: HistoricalMetricName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: HistoricalMetricName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setStatistic(value: Statistic): Self = StObject.set(x, "Statistic", value.asInstanceOf[js.Any])
+    inline def setStatistic(value: Statistic): Self = StObject.set(x, "Statistic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatisticUndefined: Self = StObject.set(x, "Statistic", js.undefined)
+    inline def setStatisticUndefined: Self = StObject.set(x, "Statistic", js.undefined)
     
-    @scala.inline
-    def setThreshold(value: Threshold): Self = StObject.set(x, "Threshold", value.asInstanceOf[js.Any])
+    inline def setThreshold(value: Threshold): Self = StObject.set(x, "Threshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThresholdUndefined: Self = StObject.set(x, "Threshold", js.undefined)
+    inline def setThresholdUndefined: Self = StObject.set(x, "Threshold", js.undefined)
     
-    @scala.inline
-    def setUnit(value: Unit): Self = StObject.set(x, "Unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: Unit): Self = StObject.set(x, "Unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitUndefined: Self = StObject.set(x, "Unit", js.undefined)
+    inline def setUnitUndefined: Self = StObject.set(x, "Unit", js.undefined)
   }
 }

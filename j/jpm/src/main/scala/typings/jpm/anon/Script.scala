@@ -10,16 +10,13 @@ trait Script extends StObject {
 }
 object Script {
   
-  @scala.inline
-  def apply(script: Boolean): Script = {
+  inline def apply(script: Boolean): Script = {
     val __obj = js.Dynamic.literal(script = script.asInstanceOf[js.Any])
     __obj.asInstanceOf[Script]
   }
   
-  @scala.inline
-  implicit class ScriptMutableBuilder[Self <: Script] (val x: Self) extends AnyVal {
+  extension [Self <: Script](x: Self) {
     
-    @scala.inline
-    def setScript(value: Boolean): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+    inline def setScript(value: Boolean): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
   }
 }

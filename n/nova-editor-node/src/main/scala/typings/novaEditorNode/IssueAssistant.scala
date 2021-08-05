@@ -10,16 +10,13 @@ trait IssueAssistant extends StObject {
 }
 object IssueAssistant {
   
-  @scala.inline
-  def apply(provideIssues: TextEditor => AssistantArray[Issue]): IssueAssistant = {
+  inline def apply(provideIssues: TextEditor => AssistantArray[Issue]): IssueAssistant = {
     val __obj = js.Dynamic.literal(provideIssues = js.Any.fromFunction1(provideIssues))
     __obj.asInstanceOf[IssueAssistant]
   }
   
-  @scala.inline
-  implicit class IssueAssistantMutableBuilder[Self <: IssueAssistant] (val x: Self) extends AnyVal {
+  extension [Self <: IssueAssistant](x: Self) {
     
-    @scala.inline
-    def setProvideIssues(value: TextEditor => AssistantArray[Issue]): Self = StObject.set(x, "provideIssues", js.Any.fromFunction1(value))
+    inline def setProvideIssues(value: TextEditor => AssistantArray[Issue]): Self = StObject.set(x, "provideIssues", js.Any.fromFunction1(value))
   }
 }

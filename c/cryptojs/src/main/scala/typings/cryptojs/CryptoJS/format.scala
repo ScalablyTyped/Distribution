@@ -16,20 +16,16 @@ object format {
   }
   object FormatStatic {
     
-    @scala.inline
-    def apply(Hex: IFormatter, OpenSSL: IFormatter): FormatStatic = {
+    inline def apply(Hex: IFormatter, OpenSSL: IFormatter): FormatStatic = {
       val __obj = js.Dynamic.literal(Hex = Hex.asInstanceOf[js.Any], OpenSSL = OpenSSL.asInstanceOf[js.Any])
       __obj.asInstanceOf[FormatStatic]
     }
     
-    @scala.inline
-    implicit class FormatStaticMutableBuilder[Self <: FormatStatic] (val x: Self) extends AnyVal {
+    extension [Self <: FormatStatic](x: Self) {
       
-      @scala.inline
-      def setHex(value: IFormatter): Self = StObject.set(x, "Hex", value.asInstanceOf[js.Any])
+      inline def setHex(value: IFormatter): Self = StObject.set(x, "Hex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenSSL(value: IFormatter): Self = StObject.set(x, "OpenSSL", value.asInstanceOf[js.Any])
+      inline def setOpenSSL(value: IFormatter): Self = StObject.set(x, "OpenSSL", value.asInstanceOf[js.Any])
     }
   }
   
@@ -41,20 +37,16 @@ object format {
   }
   object IFormatter {
     
-    @scala.inline
-    def apply(parse: String => CipherParams, stringify: CipherParamsData => String): IFormatter = {
+    inline def apply(parse: String => CipherParams, stringify: CipherParamsData => String): IFormatter = {
       val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse), stringify = js.Any.fromFunction1(stringify))
       __obj.asInstanceOf[IFormatter]
     }
     
-    @scala.inline
-    implicit class IFormatterMutableBuilder[Self <: IFormatter] (val x: Self) extends AnyVal {
+    extension [Self <: IFormatter](x: Self) {
       
-      @scala.inline
-      def setParse(value: String => CipherParams): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+      inline def setParse(value: String => CipherParams): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStringify(value: CipherParamsData => String): Self = StObject.set(x, "stringify", js.Any.fromFunction1(value))
+      inline def setStringify(value: CipherParamsData => String): Self = StObject.set(x, "stringify", js.Any.fromFunction1(value))
     }
   }
 }

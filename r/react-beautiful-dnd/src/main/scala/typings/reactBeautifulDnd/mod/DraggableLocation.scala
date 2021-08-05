@@ -12,19 +12,15 @@ trait DraggableLocation extends StObject {
 }
 object DraggableLocation {
   
-  @scala.inline
-  def apply(droppableId: DroppableId, index: Double): DraggableLocation = {
+  inline def apply(droppableId: DroppableId, index: Double): DraggableLocation = {
     val __obj = js.Dynamic.literal(droppableId = droppableId.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
     __obj.asInstanceOf[DraggableLocation]
   }
   
-  @scala.inline
-  implicit class DraggableLocationMutableBuilder[Self <: DraggableLocation] (val x: Self) extends AnyVal {
+  extension [Self <: DraggableLocation](x: Self) {
     
-    @scala.inline
-    def setDroppableId(value: DroppableId): Self = StObject.set(x, "droppableId", value.asInstanceOf[js.Any])
+    inline def setDroppableId(value: DroppableId): Self = StObject.set(x, "droppableId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
   }
 }

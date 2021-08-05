@@ -15,8 +15,7 @@ trait PipeableFunctorWithIndex[F, I]
 }
 object PipeableFunctorWithIndex {
   
-  @scala.inline
-  def apply[F, I](
+  inline def apply[F, I](
     map: js.Function1[js.Any, js.Any] => js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ /* fa */ js.Any, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, B> */ js.Any
@@ -30,11 +29,9 @@ object PipeableFunctorWithIndex {
     __obj.asInstanceOf[PipeableFunctorWithIndex[F, I]]
   }
   
-  @scala.inline
-  implicit class PipeableFunctorWithIndexMutableBuilder[Self <: PipeableFunctorWithIndex[?, ?], F, I] (val x: Self & (PipeableFunctorWithIndex[F, I])) extends AnyVal {
+  extension [Self <: PipeableFunctorWithIndex[?, ?], F, I](x: Self & (PipeableFunctorWithIndex[F, I])) {
     
-    @scala.inline
-    def setMapWithIndex(
+    inline def setMapWithIndex(
       value: js.Function2[/* i */ I, js.Any, js.Any] => js.Function1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ /* fa */ js.Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, B> */ js.Any

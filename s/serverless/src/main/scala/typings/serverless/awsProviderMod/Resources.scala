@@ -16,34 +16,25 @@ trait Resources extends StObject {
 }
 object Resources {
   
-  @scala.inline
-  def apply(Resources: CloudFormationResources): Resources = {
+  inline def apply(Resources: CloudFormationResources): Resources = {
     val __obj = js.Dynamic.literal(Resources = Resources.asInstanceOf[js.Any])
     __obj.asInstanceOf[Resources]
   }
   
-  @scala.inline
-  implicit class ResourcesMutableBuilder[Self <: Resources] (val x: Self) extends AnyVal {
+  extension [Self <: Resources](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setExtensions(value: CloudFormationResources): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+    inline def setExtensions(value: CloudFormationResources): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+    inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
-    @scala.inline
-    def setOutputs(value: Outputs): Self = StObject.set(x, "Outputs", value.asInstanceOf[js.Any])
+    inline def setOutputs(value: Outputs): Self = StObject.set(x, "Outputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputsUndefined: Self = StObject.set(x, "Outputs", js.undefined)
+    inline def setOutputsUndefined: Self = StObject.set(x, "Outputs", js.undefined)
     
-    @scala.inline
-    def setResources(value: CloudFormationResources): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: CloudFormationResources): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
   }
 }

@@ -8,6 +8,5 @@ object ofeStrings {
   
   @js.native
   sealed trait done extends StObject
-  @scala.inline
-  def done: done = "done".asInstanceOf[done]
+  inline def done: done = "done".asInstanceOf[done]
 }

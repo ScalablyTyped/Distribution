@@ -8,16 +8,13 @@ object pmmmwhReactRefreshWebpackPluginStrings {
   
   @js.native
   sealed trait wds extends StObject
-  @scala.inline
-  def wds: wds = "wds".asInstanceOf[wds]
+  inline def wds: wds = "wds".asInstanceOf[wds]
   
   @js.native
   sealed trait whm extends StObject
-  @scala.inline
-  def whm: whm = "whm".asInstanceOf[whm]
+  inline def whm: whm = "whm".asInstanceOf[whm]
   
   @js.native
   sealed trait wps extends StObject
-  @scala.inline
-  def wps: wps = "wps".asInstanceOf[wps]
+  inline def wps: wps = "wps".asInstanceOf[wps]
 }

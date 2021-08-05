@@ -9,8 +9,7 @@ trait IArea
      with IStackedCartesian
 object IArea {
   
-  @scala.inline
-  def apply(): IArea = {
+  inline def apply(): IArea = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IArea]
   }

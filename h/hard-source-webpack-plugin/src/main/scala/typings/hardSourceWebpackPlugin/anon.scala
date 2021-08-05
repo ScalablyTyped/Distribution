@@ -23,29 +23,22 @@ object anon {
   }
   object Directories {
     
-    @scala.inline
-    def apply(directories: js.Array[String], files: js.Array[String], root: String): Directories = {
+    inline def apply(directories: js.Array[String], files: js.Array[String], root: String): Directories = {
       val __obj = js.Dynamic.literal(directories = directories.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
       __obj.asInstanceOf[Directories]
     }
     
-    @scala.inline
-    implicit class DirectoriesMutableBuilder[Self <: Directories] (val x: Self) extends AnyVal {
+    extension [Self <: Directories](x: Self) {
       
-      @scala.inline
-      def setDirectories(value: js.Array[String]): Self = StObject.set(x, "directories", value.asInstanceOf[js.Any])
+      inline def setDirectories(value: js.Array[String]): Self = StObject.set(x, "directories", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectoriesVarargs(value: String*): Self = StObject.set(x, "directories", js.Array(value :_*))
+      inline def setDirectoriesVarargs(value: String*): Self = StObject.set(x, "directories", js.Array(value :_*))
       
-      @scala.inline
-      def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
       
-      @scala.inline
-      def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     }
   }
   
@@ -57,20 +50,16 @@ object anon {
   }
   object Level {
     
-    @scala.inline
-    def apply(level: debug | log | info | warn | error, mode: none | test): Level = {
+    inline def apply(level: debug | log | info | warn | error, mode: none | test): Level = {
       val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any])
       __obj.asInstanceOf[Level]
     }
     
-    @scala.inline
-    implicit class LevelMutableBuilder[Self <: Level] (val x: Self) extends AnyVal {
+    extension [Self <: Level](x: Self) {
       
-      @scala.inline
-      def setLevel(value: debug | log | info | warn | error): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: debug | log | info | warn | error): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMode(value: none | test): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: none | test): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -82,20 +71,16 @@ object anon {
   }
   object MaxAge {
     
-    @scala.inline
-    def apply(maxAge: Double, sizeThreshold: Double): MaxAge = {
+    inline def apply(maxAge: Double, sizeThreshold: Double): MaxAge = {
       val __obj = js.Dynamic.literal(maxAge = maxAge.asInstanceOf[js.Any], sizeThreshold = sizeThreshold.asInstanceOf[js.Any])
       __obj.asInstanceOf[MaxAge]
     }
     
-    @scala.inline
-    implicit class MaxAgeMutableBuilder[Self <: MaxAge] (val x: Self) extends AnyVal {
+    extension [Self <: MaxAge](x: Self) {
       
-      @scala.inline
-      def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeThreshold(value: Double): Self = StObject.set(x, "sizeThreshold", value.asInstanceOf[js.Any])
+      inline def setSizeThreshold(value: Double): Self = StObject.set(x, "sizeThreshold", value.asInstanceOf[js.Any])
     }
   }
 }

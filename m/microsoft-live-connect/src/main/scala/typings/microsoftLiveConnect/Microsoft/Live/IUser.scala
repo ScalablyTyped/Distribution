@@ -94,8 +94,7 @@ trait IUser extends StObject {
 }
 object IUser {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addresses: Personal,
     birth_day: Double,
     birth_month: Double,
@@ -116,55 +115,38 @@ object IUser {
     __obj.asInstanceOf[IUser]
   }
   
-  @scala.inline
-  implicit class IUserMutableBuilder[Self <: IUser] (val x: Self) extends AnyVal {
+  extension [Self <: IUser](x: Self) {
     
-    @scala.inline
-    def setAddresses(value: Personal): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
+    inline def setAddresses(value: Personal): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBirth_day(value: Double): Self = StObject.set(x, "birth_day", value.asInstanceOf[js.Any])
+    inline def setBirth_day(value: Double): Self = StObject.set(x, "birth_day", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBirth_month(value: Double): Self = StObject.set(x, "birth_month", value.asInstanceOf[js.Any])
+    inline def setBirth_month(value: Double): Self = StObject.set(x, "birth_month", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBirth_year(value: Double): Self = StObject.set(x, "birth_year", value.asInstanceOf[js.Any])
+    inline def setBirth_year(value: Double): Self = StObject.set(x, "birth_year", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmails(value: Account): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
+    inline def setEmails(value: Account): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirst_name(value: String): Self = StObject.set(x, "first_name", value.asInstanceOf[js.Any])
+    inline def setFirst_name(value: String): Self = StObject.set(x, "first_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGender(value: String): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
+    inline def setGender(value: String): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLast_name(value: String): Self = StObject.set(x, "last_name", value.asInstanceOf[js.Any])
+    inline def setLast_name(value: String): Self = StObject.set(x, "last_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhones(value: Mobile): Self = StObject.set(x, "phones", value.asInstanceOf[js.Any])
+    inline def setPhones(value: Mobile): Self = StObject.set(x, "phones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdated_time(value: String): Self = StObject.set(x, "updated_time", value.asInstanceOf[js.Any])
+    inline def setUpdated_time(value: String): Self = StObject.set(x, "updated_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWork(value: js.Array[IWorkInfo]): Self = StObject.set(x, "work", value.asInstanceOf[js.Any])
+    inline def setWork(value: js.Array[IWorkInfo]): Self = StObject.set(x, "work", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkVarargs(value: IWorkInfo*): Self = StObject.set(x, "work", js.Array(value :_*))
+    inline def setWorkVarargs(value: IWorkInfo*): Self = StObject.set(x, "work", js.Array(value :_*))
   }
 }

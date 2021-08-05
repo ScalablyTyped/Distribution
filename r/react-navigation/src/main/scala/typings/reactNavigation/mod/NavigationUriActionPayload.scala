@@ -10,16 +10,13 @@ trait NavigationUriActionPayload extends StObject {
 }
 object NavigationUriActionPayload {
   
-  @scala.inline
-  def apply(uri: String): NavigationUriActionPayload = {
+  inline def apply(uri: String): NavigationUriActionPayload = {
     val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationUriActionPayload]
   }
   
-  @scala.inline
-  implicit class NavigationUriActionPayloadMutableBuilder[Self <: NavigationUriActionPayload] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationUriActionPayload](x: Self) {
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

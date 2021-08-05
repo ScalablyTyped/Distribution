@@ -18,28 +18,21 @@ trait Annotationsurl extends StObject {
 }
 object Annotationsurl {
   
-  @scala.inline
-  def apply(annotations_count: Double, annotations_url: String, summary: String, text: String, title: String): Annotationsurl = {
+  inline def apply(annotations_count: Double, annotations_url: String, summary: String, text: String, title: String): Annotationsurl = {
     val __obj = js.Dynamic.literal(annotations_count = annotations_count.asInstanceOf[js.Any], annotations_url = annotations_url.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Annotationsurl]
   }
   
-  @scala.inline
-  implicit class AnnotationsurlMutableBuilder[Self <: Annotationsurl] (val x: Self) extends AnyVal {
+  extension [Self <: Annotationsurl](x: Self) {
     
-    @scala.inline
-    def setAnnotations_count(value: Double): Self = StObject.set(x, "annotations_count", value.asInstanceOf[js.Any])
+    inline def setAnnotations_count(value: Double): Self = StObject.set(x, "annotations_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotations_url(value: String): Self = StObject.set(x, "annotations_url", value.asInstanceOf[js.Any])
+    inline def setAnnotations_url(value: String): Self = StObject.set(x, "annotations_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

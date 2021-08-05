@@ -26,28 +26,21 @@ trait CriticalSound extends StObject {
 }
 object CriticalSound {
   
-  @scala.inline
-  def apply(name: String): CriticalSound = {
+  inline def apply(name: String): CriticalSound = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CriticalSound]
   }
   
-  @scala.inline
-  implicit class CriticalSoundMutableBuilder[Self <: CriticalSound] (val x: Self) extends AnyVal {
+  extension [Self <: CriticalSound](x: Self) {
     
-    @scala.inline
-    def setCritical(value: Boolean): Self = StObject.set(x, "critical", value.asInstanceOf[js.Any])
+    inline def setCritical(value: Boolean): Self = StObject.set(x, "critical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCriticalUndefined: Self = StObject.set(x, "critical", js.undefined)
+    inline def setCriticalUndefined: Self = StObject.set(x, "critical", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+    inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
+    inline def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
   }
 }

@@ -18,19 +18,15 @@ trait RegisterPatchBaselineForPatchGroupRequest extends StObject {
 }
 object RegisterPatchBaselineForPatchGroupRequest {
   
-  @scala.inline
-  def apply(BaselineId: BaselineId, PatchGroup: PatchGroup): RegisterPatchBaselineForPatchGroupRequest = {
+  inline def apply(BaselineId: BaselineId, PatchGroup: PatchGroup): RegisterPatchBaselineForPatchGroupRequest = {
     val __obj = js.Dynamic.literal(BaselineId = BaselineId.asInstanceOf[js.Any], PatchGroup = PatchGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterPatchBaselineForPatchGroupRequest]
   }
   
-  @scala.inline
-  implicit class RegisterPatchBaselineForPatchGroupRequestMutableBuilder[Self <: RegisterPatchBaselineForPatchGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterPatchBaselineForPatchGroupRequest](x: Self) {
     
-    @scala.inline
-    def setBaselineId(value: BaselineId): Self = StObject.set(x, "BaselineId", value.asInstanceOf[js.Any])
+    inline def setBaselineId(value: BaselineId): Self = StObject.set(x, "BaselineId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatchGroup(value: PatchGroup): Self = StObject.set(x, "PatchGroup", value.asInstanceOf[js.Any])
+    inline def setPatchGroup(value: PatchGroup): Self = StObject.set(x, "PatchGroup", value.asInstanceOf[js.Any])
   }
 }

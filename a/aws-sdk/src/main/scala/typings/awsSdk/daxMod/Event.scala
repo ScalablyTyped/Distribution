@@ -28,37 +28,27 @@ trait Event extends StObject {
 }
 object Event {
   
-  @scala.inline
-  def apply(): Event = {
+  inline def apply(): Event = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Event]
   }
   
-  @scala.inline
-  implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
+  extension [Self <: Event](x: Self) {
     
-    @scala.inline
-    def setDate(value: TStamp): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
+    inline def setDate(value: TStamp): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateUndefined: Self = StObject.set(x, "Date", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "Date", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
-    @scala.inline
-    def setSourceName(value: String): Self = StObject.set(x, "SourceName", value.asInstanceOf[js.Any])
+    inline def setSourceName(value: String): Self = StObject.set(x, "SourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceNameUndefined: Self = StObject.set(x, "SourceName", js.undefined)
+    inline def setSourceNameUndefined: Self = StObject.set(x, "SourceName", js.undefined)
     
-    @scala.inline
-    def setSourceType(value: SourceType): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
+    inline def setSourceType(value: SourceType): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceTypeUndefined: Self = StObject.set(x, "SourceType", js.undefined)
+    inline def setSourceTypeUndefined: Self = StObject.set(x, "SourceType", js.undefined)
   }
 }

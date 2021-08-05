@@ -10,16 +10,13 @@ trait AuthSettings extends StObject {
 }
 object AuthSettings {
   
-  @scala.inline
-  def apply(appVerificationDisabledForTesting: Boolean): AuthSettings = {
+  inline def apply(appVerificationDisabledForTesting: Boolean): AuthSettings = {
     val __obj = js.Dynamic.literal(appVerificationDisabledForTesting = appVerificationDisabledForTesting.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthSettings]
   }
   
-  @scala.inline
-  implicit class AuthSettingsMutableBuilder[Self <: AuthSettings] (val x: Self) extends AnyVal {
+  extension [Self <: AuthSettings](x: Self) {
     
-    @scala.inline
-    def setAppVerificationDisabledForTesting(value: Boolean): Self = StObject.set(x, "appVerificationDisabledForTesting", value.asInstanceOf[js.Any])
+    inline def setAppVerificationDisabledForTesting(value: Boolean): Self = StObject.set(x, "appVerificationDisabledForTesting", value.asInstanceOf[js.Any])
   }
 }

@@ -20,31 +20,23 @@ trait AnnotationsInfinityLineTypePointsOptions extends StObject {
 }
 object AnnotationsInfinityLineTypePointsOptions {
   
-  @scala.inline
-  def apply(): AnnotationsInfinityLineTypePointsOptions = {
+  inline def apply(): AnnotationsInfinityLineTypePointsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnnotationsInfinityLineTypePointsOptions]
   }
   
-  @scala.inline
-  implicit class AnnotationsInfinityLineTypePointsOptionsMutableBuilder[Self <: AnnotationsInfinityLineTypePointsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AnnotationsInfinityLineTypePointsOptions](x: Self) {
     
-    @scala.inline
-    def setControlPoint(value: Double): Self = StObject.set(x, "controlPoint", value.asInstanceOf[js.Any])
+    inline def setControlPoint(value: Double): Self = StObject.set(x, "controlPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlPointUndefined: Self = StObject.set(x, "controlPoint", js.undefined)
+    inline def setControlPointUndefined: Self = StObject.set(x, "controlPoint", js.undefined)
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

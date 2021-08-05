@@ -23,28 +23,21 @@ trait ListProtocolsListsRequest extends StObject {
 }
 object ListProtocolsListsRequest {
   
-  @scala.inline
-  def apply(MaxResults: PaginationMaxResults): ListProtocolsListsRequest = {
+  inline def apply(MaxResults: PaginationMaxResults): ListProtocolsListsRequest = {
     val __obj = js.Dynamic.literal(MaxResults = MaxResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListProtocolsListsRequest]
   }
   
-  @scala.inline
-  implicit class ListProtocolsListsRequestMutableBuilder[Self <: ListProtocolsListsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListProtocolsListsRequest](x: Self) {
     
-    @scala.inline
-    def setDefaultLists(value: Boolean): Self = StObject.set(x, "DefaultLists", value.asInstanceOf[js.Any])
+    inline def setDefaultLists(value: Boolean): Self = StObject.set(x, "DefaultLists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultListsUndefined: Self = StObject.set(x, "DefaultLists", js.undefined)
+    inline def setDefaultListsUndefined: Self = StObject.set(x, "DefaultLists", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: PaginationMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: PaginationMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

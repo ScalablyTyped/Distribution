@@ -16,6 +16,5 @@ object FieldPath {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def documentId(): FieldPath = ^.asInstanceOf[js.Dynamic].applyDynamic("documentId")().asInstanceOf[FieldPath]
+  inline def documentId(): FieldPath = ^.asInstanceOf[js.Dynamic].applyDynamic("documentId")().asInstanceOf[FieldPath]
 }

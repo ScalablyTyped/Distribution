@@ -13,19 +13,15 @@ trait `2`[Params /* <: js.UndefOr[js.Object] */] extends StObject {
 }
 object `2` {
   
-  @scala.inline
-  def apply[Params /* <: js.UndefOr[js.Object] */](): `2`[Params] = {
+  inline def apply[Params /* <: js.UndefOr[js.Object] */](): `2`[Params] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`2`[Params]]
   }
   
-  @scala.inline
-  implicit class `2MutableBuilder`[Self <: `2`[?], Params /* <: js.UndefOr[js.Object] */] (val x: Self & `2`[Params]) extends AnyVal {
+  extension [Self <: `2`[?], Params /* <: js.UndefOr[js.Object] */](x: Self & `2`[Params]) {
     
-    @scala.inline
-    def setParams(value: Params): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: Params): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
   }
 }

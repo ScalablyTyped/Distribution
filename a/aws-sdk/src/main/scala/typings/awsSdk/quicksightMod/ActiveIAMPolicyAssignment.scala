@@ -18,25 +18,19 @@ trait ActiveIAMPolicyAssignment extends StObject {
 }
 object ActiveIAMPolicyAssignment {
   
-  @scala.inline
-  def apply(): ActiveIAMPolicyAssignment = {
+  inline def apply(): ActiveIAMPolicyAssignment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ActiveIAMPolicyAssignment]
   }
   
-  @scala.inline
-  implicit class ActiveIAMPolicyAssignmentMutableBuilder[Self <: ActiveIAMPolicyAssignment] (val x: Self) extends AnyVal {
+  extension [Self <: ActiveIAMPolicyAssignment](x: Self) {
     
-    @scala.inline
-    def setAssignmentName(value: IAMPolicyAssignmentName): Self = StObject.set(x, "AssignmentName", value.asInstanceOf[js.Any])
+    inline def setAssignmentName(value: IAMPolicyAssignmentName): Self = StObject.set(x, "AssignmentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignmentNameUndefined: Self = StObject.set(x, "AssignmentName", js.undefined)
+    inline def setAssignmentNameUndefined: Self = StObject.set(x, "AssignmentName", js.undefined)
     
-    @scala.inline
-    def setPolicyArn(value: Arn): Self = StObject.set(x, "PolicyArn", value.asInstanceOf[js.Any])
+    inline def setPolicyArn(value: Arn): Self = StObject.set(x, "PolicyArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyArnUndefined: Self = StObject.set(x, "PolicyArn", js.undefined)
+    inline def setPolicyArnUndefined: Self = StObject.set(x, "PolicyArn", js.undefined)
   }
 }

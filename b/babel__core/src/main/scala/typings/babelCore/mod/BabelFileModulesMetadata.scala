@@ -13,22 +13,17 @@ trait BabelFileModulesMetadata extends StObject {
 }
 object BabelFileModulesMetadata {
   
-  @scala.inline
-  def apply(exports: Exported, imports: js.Array[js.Object]): BabelFileModulesMetadata = {
+  inline def apply(exports: Exported, imports: js.Array[js.Object]): BabelFileModulesMetadata = {
     val __obj = js.Dynamic.literal(exports = exports.asInstanceOf[js.Any], imports = imports.asInstanceOf[js.Any])
     __obj.asInstanceOf[BabelFileModulesMetadata]
   }
   
-  @scala.inline
-  implicit class BabelFileModulesMetadataMutableBuilder[Self <: BabelFileModulesMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: BabelFileModulesMetadata](x: Self) {
     
-    @scala.inline
-    def setExports(value: Exported): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
+    inline def setExports(value: Exported): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImports(value: js.Array[js.Object]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
+    inline def setImports(value: js.Array[js.Object]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportsVarargs(value: js.Object*): Self = StObject.set(x, "imports", js.Array(value :_*))
+    inline def setImportsVarargs(value: js.Object*): Self = StObject.set(x, "imports", js.Array(value :_*))
   }
 }

@@ -25,38 +25,28 @@ object mimeMod extends Shortcut {
   }
   object Config {
     
-    @scala.inline
-    def apply(): Config = {
+    inline def apply(): Config = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
+      inline def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
+      inline def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
       
-      @scala.inline
-      def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
+      inline def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
+      inline def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
       
-      @scala.inline
-      def setPermissive(value: Boolean): Self = StObject.set(x, "permissive", value.asInstanceOf[js.Any])
+      inline def setPermissive(value: Boolean): Self = StObject.set(x, "permissive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPermissiveUndefined: Self = StObject.set(x, "permissive", js.undefined)
+      inline def setPermissiveUndefined: Self = StObject.set(x, "permissive", js.undefined)
       
-      @scala.inline
-      def setRegistry(value: Registry): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
+      inline def setRegistry(value: Registry): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegistryUndefined: Self = StObject.set(x, "registry", js.undefined)
+      inline def setRegistryUndefined: Self = StObject.set(x, "registry", js.undefined)
     }
   }
   

@@ -52,8 +52,7 @@ trait XFolderPicker
 }
 object XFolderPicker {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Directory: String,
     DisplayDirectory: String,
     acquire: () => Unit,
@@ -70,25 +69,18 @@ object XFolderPicker {
     __obj.asInstanceOf[XFolderPicker]
   }
   
-  @scala.inline
-  implicit class XFolderPickerMutableBuilder[Self <: XFolderPicker] (val x: Self) extends AnyVal {
+  extension [Self <: XFolderPicker](x: Self) {
     
-    @scala.inline
-    def setDirectory(value: String): Self = StObject.set(x, "Directory", value.asInstanceOf[js.Any])
+    inline def setDirectory(value: String): Self = StObject.set(x, "Directory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayDirectory(value: String): Self = StObject.set(x, "DisplayDirectory", value.asInstanceOf[js.Any])
+    inline def setDisplayDirectory(value: String): Self = StObject.set(x, "DisplayDirectory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDirectory(value: () => String): Self = StObject.set(x, "getDirectory", js.Any.fromFunction0(value))
+    inline def setGetDirectory(value: () => String): Self = StObject.set(x, "getDirectory", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDisplayDirectory(value: () => String): Self = StObject.set(x, "getDisplayDirectory", js.Any.fromFunction0(value))
+    inline def setGetDisplayDirectory(value: () => String): Self = StObject.set(x, "getDisplayDirectory", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetDescription(value: String => Unit): Self = StObject.set(x, "setDescription", js.Any.fromFunction1(value))
+    inline def setSetDescription(value: String => Unit): Self = StObject.set(x, "setDescription", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDisplayDirectory(value: String => Unit): Self = StObject.set(x, "setDisplayDirectory", js.Any.fromFunction1(value))
+    inline def setSetDisplayDirectory(value: String => Unit): Self = StObject.set(x, "setDisplayDirectory", js.Any.fromFunction1(value))
   }
 }

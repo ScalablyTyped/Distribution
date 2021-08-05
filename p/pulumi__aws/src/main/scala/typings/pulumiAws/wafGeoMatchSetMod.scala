@@ -58,21 +58,16 @@ object wafGeoMatchSetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): GeoMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[GeoMatchSet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): GeoMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GeoMatchSet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: GeoMatchSetState): GeoMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[GeoMatchSet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: GeoMatchSetState, opts: CustomResourceOptions): GeoMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GeoMatchSet]
+    inline def get(name: String, id: Input[ID]): GeoMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[GeoMatchSet]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): GeoMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GeoMatchSet]
+    inline def get(name: String, id: Input[ID], state: GeoMatchSetState): GeoMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[GeoMatchSet]
+    inline def get(name: String, id: Input[ID], state: GeoMatchSetState, opts: CustomResourceOptions): GeoMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GeoMatchSet]
     
     /**
       * Returns true if the given object is an instance of GeoMatchSet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/geoMatchSet.GeoMatchSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/waf/geoMatchSet.GeoMatchSet */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/geoMatchSet.GeoMatchSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/waf/geoMatchSet.GeoMatchSet */ Boolean]
   }
   
   trait GeoMatchSetArgs extends StObject {
@@ -91,29 +86,22 @@ object wafGeoMatchSetMod {
   }
   object GeoMatchSetArgs {
     
-    @scala.inline
-    def apply(): GeoMatchSetArgs = {
+    inline def apply(): GeoMatchSetArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GeoMatchSetArgs]
     }
     
-    @scala.inline
-    implicit class GeoMatchSetArgsMutableBuilder[Self <: GeoMatchSetArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GeoMatchSetArgs](x: Self) {
       
-      @scala.inline
-      def setGeoMatchConstraints(value: Input[js.Array[Input[typings.pulumiAws.inputMod.waf.GeoMatchSetGeoMatchConstraint]]]): Self = StObject.set(x, "geoMatchConstraints", value.asInstanceOf[js.Any])
+      inline def setGeoMatchConstraints(value: Input[js.Array[Input[typings.pulumiAws.inputMod.waf.GeoMatchSetGeoMatchConstraint]]]): Self = StObject.set(x, "geoMatchConstraints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeoMatchConstraintsUndefined: Self = StObject.set(x, "geoMatchConstraints", js.undefined)
+      inline def setGeoMatchConstraintsUndefined: Self = StObject.set(x, "geoMatchConstraints", js.undefined)
       
-      @scala.inline
-      def setGeoMatchConstraintsVarargs(value: Input[typings.pulumiAws.inputMod.waf.GeoMatchSetGeoMatchConstraint]*): Self = StObject.set(x, "geoMatchConstraints", js.Array(value :_*))
+      inline def setGeoMatchConstraintsVarargs(value: Input[typings.pulumiAws.inputMod.waf.GeoMatchSetGeoMatchConstraint]*): Self = StObject.set(x, "geoMatchConstraints", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
   
@@ -138,35 +126,26 @@ object wafGeoMatchSetMod {
   }
   object GeoMatchSetState {
     
-    @scala.inline
-    def apply(): GeoMatchSetState = {
+    inline def apply(): GeoMatchSetState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GeoMatchSetState]
     }
     
-    @scala.inline
-    implicit class GeoMatchSetStateMutableBuilder[Self <: GeoMatchSetState] (val x: Self) extends AnyVal {
+    extension [Self <: GeoMatchSetState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setGeoMatchConstraints(value: Input[js.Array[Input[typings.pulumiAws.inputMod.waf.GeoMatchSetGeoMatchConstraint]]]): Self = StObject.set(x, "geoMatchConstraints", value.asInstanceOf[js.Any])
+      inline def setGeoMatchConstraints(value: Input[js.Array[Input[typings.pulumiAws.inputMod.waf.GeoMatchSetGeoMatchConstraint]]]): Self = StObject.set(x, "geoMatchConstraints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeoMatchConstraintsUndefined: Self = StObject.set(x, "geoMatchConstraints", js.undefined)
+      inline def setGeoMatchConstraintsUndefined: Self = StObject.set(x, "geoMatchConstraints", js.undefined)
       
-      @scala.inline
-      def setGeoMatchConstraintsVarargs(value: Input[typings.pulumiAws.inputMod.waf.GeoMatchSetGeoMatchConstraint]*): Self = StObject.set(x, "geoMatchConstraints", js.Array(value :_*))
+      inline def setGeoMatchConstraintsVarargs(value: Input[typings.pulumiAws.inputMod.waf.GeoMatchSetGeoMatchConstraint]*): Self = StObject.set(x, "geoMatchConstraints", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
 }

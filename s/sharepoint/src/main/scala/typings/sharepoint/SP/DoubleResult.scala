@@ -10,16 +10,13 @@ trait DoubleResult extends StObject {
 }
 object DoubleResult {
   
-  @scala.inline
-  def apply(get_value: () => Double): DoubleResult = {
+  inline def apply(get_value: () => Double): DoubleResult = {
     val __obj = js.Dynamic.literal(get_value = js.Any.fromFunction0(get_value))
     __obj.asInstanceOf[DoubleResult]
   }
   
-  @scala.inline
-  implicit class DoubleResultMutableBuilder[Self <: DoubleResult] (val x: Self) extends AnyVal {
+  extension [Self <: DoubleResult](x: Self) {
     
-    @scala.inline
-    def setGet_value(value: () => Double): Self = StObject.set(x, "get_value", js.Any.fromFunction0(value))
+    inline def setGet_value(value: () => Double): Self = StObject.set(x, "get_value", js.Any.fromFunction0(value))
   }
 }

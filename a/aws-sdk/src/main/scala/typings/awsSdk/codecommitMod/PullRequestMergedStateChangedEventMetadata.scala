@@ -23,31 +23,23 @@ trait PullRequestMergedStateChangedEventMetadata extends StObject {
 }
 object PullRequestMergedStateChangedEventMetadata {
   
-  @scala.inline
-  def apply(): PullRequestMergedStateChangedEventMetadata = {
+  inline def apply(): PullRequestMergedStateChangedEventMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PullRequestMergedStateChangedEventMetadata]
   }
   
-  @scala.inline
-  implicit class PullRequestMergedStateChangedEventMetadataMutableBuilder[Self <: PullRequestMergedStateChangedEventMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: PullRequestMergedStateChangedEventMetadata](x: Self) {
     
-    @scala.inline
-    def setDestinationReference(value: ReferenceName): Self = StObject.set(x, "destinationReference", value.asInstanceOf[js.Any])
+    inline def setDestinationReference(value: ReferenceName): Self = StObject.set(x, "destinationReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationReferenceUndefined: Self = StObject.set(x, "destinationReference", js.undefined)
+    inline def setDestinationReferenceUndefined: Self = StObject.set(x, "destinationReference", js.undefined)
     
-    @scala.inline
-    def setMergeMetadata(value: MergeMetadata): Self = StObject.set(x, "mergeMetadata", value.asInstanceOf[js.Any])
+    inline def setMergeMetadata(value: MergeMetadata): Self = StObject.set(x, "mergeMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeMetadataUndefined: Self = StObject.set(x, "mergeMetadata", js.undefined)
+    inline def setMergeMetadataUndefined: Self = StObject.set(x, "mergeMetadata", js.undefined)
     
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+    inline def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryNameUndefined: Self = StObject.set(x, "repositoryName", js.undefined)
+    inline def setRepositoryNameUndefined: Self = StObject.set(x, "repositoryName", js.undefined)
   }
 }

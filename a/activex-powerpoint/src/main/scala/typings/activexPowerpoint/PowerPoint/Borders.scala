@@ -14,13 +14,12 @@ trait Borders extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.Borders_typekey")
+  /* private */ @JSName("PowerPoint.Borders_typekey")
   var PowerPointDotBorders_typekey: Borders
 }
 object Borders {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Count: Double,
     Item: PpBorderType => LineFormat,
@@ -32,22 +31,16 @@ object Borders {
     __obj.asInstanceOf[Borders]
   }
   
-  @scala.inline
-  implicit class BordersMutableBuilder[Self <: Borders] (val x: Self) extends AnyVal {
+  extension [Self <: Borders](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: PpBorderType => LineFormat): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: PpBorderType => LineFormat): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotBorders_typekey(value: Borders): Self = StObject.set(x, "PowerPoint.Borders_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotBorders_typekey(value: Borders): Self = StObject.set(x, "PowerPoint.Borders_typekey", value.asInstanceOf[js.Any])
   }
 }

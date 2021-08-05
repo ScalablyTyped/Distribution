@@ -14,8 +14,7 @@ trait PathsItem[TContext, TEvent /* <: EventObject */] extends StObject {
 }
 object PathsItem {
   
-  @scala.inline
-  def apply[TContext, TEvent /* <: EventObject */](
+  inline def apply[TContext, TEvent /* <: EventObject */](
     paths: js.Array[js.Array[Segment[TContext, TEvent]]],
     state: State[TContext, TEvent, js.Any, ContextTContext[TContext]]
   ): PathsItem[TContext, TEvent] = {
@@ -23,16 +22,12 @@ object PathsItem {
     __obj.asInstanceOf[PathsItem[TContext, TEvent]]
   }
   
-  @scala.inline
-  implicit class PathsItemMutableBuilder[Self <: PathsItem[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (PathsItem[TContext, TEvent])) extends AnyVal {
+  extension [Self <: PathsItem[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (PathsItem[TContext, TEvent])) {
     
-    @scala.inline
-    def setPaths(value: js.Array[js.Array[Segment[TContext, TEvent]]]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+    inline def setPaths(value: js.Array[js.Array[Segment[TContext, TEvent]]]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathsVarargs(value: (js.Array[Segment[TContext, TEvent]])*): Self = StObject.set(x, "paths", js.Array(value :_*))
+    inline def setPathsVarargs(value: (js.Array[Segment[TContext, TEvent]])*): Self = StObject.set(x, "paths", js.Array(value :_*))
     
-    @scala.inline
-    def setState(value: State[TContext, TEvent, js.Any, ContextTContext[TContext]]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: State[TContext, TEvent, js.Any, ContextTContext[TContext]]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

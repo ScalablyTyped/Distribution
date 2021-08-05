@@ -22,8 +22,7 @@ object KnownContactField {
     * @return The type of field.
     */
   /* static member */
-  @scala.inline
-  def convertNameToType(name: String): typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactFieldType = ^.asInstanceOf[js.Dynamic].applyDynamic("convertNameToType")(name.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactFieldType]
+  inline def convertNameToType(name: String): typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactFieldType = ^.asInstanceOf[js.Dynamic].applyDynamic("convertNameToType")(name.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactFieldType]
   
   /**
     * Converts the type of a field to its corresponding string name.
@@ -31,38 +30,33 @@ object KnownContactField {
     * @return The name of the field.
     */
   /* static member */
-  @scala.inline
-  def convertTypeToName(`type`: typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactFieldType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertTypeToName")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def convertTypeToName(`type`: typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactFieldType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertTypeToName")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /** Contains the name of the field used for email addresses. */
   /* static member */
   @JSGlobal("Windows.ApplicationModel.Contacts.KnownContactField.email")
   @js.native
   def email: String = js.native
-  @scala.inline
-  def email_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("email")(x.asInstanceOf[js.Any])
+  inline def email_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("email")(x.asInstanceOf[js.Any])
   
   /** Contains the name of the field used for instant messaging accounts. */
   /* static member */
   @JSGlobal("Windows.ApplicationModel.Contacts.KnownContactField.instantMessage")
   @js.native
   def instantMessage: String = js.native
-  @scala.inline
-  def instantMessage_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("instantMessage")(x.asInstanceOf[js.Any])
+  inline def instantMessage_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("instantMessage")(x.asInstanceOf[js.Any])
   
   /** Contains the name of the field used for the contact's location. */
   /* static member */
   @JSGlobal("Windows.ApplicationModel.Contacts.KnownContactField.location")
   @js.native
   def location: String = js.native
-  @scala.inline
-  def location_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("location")(x.asInstanceOf[js.Any])
+  inline def location_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("location")(x.asInstanceOf[js.Any])
   
   /** Contains the name of the field used for phone numbers. */
   /* static member */
   @JSGlobal("Windows.ApplicationModel.Contacts.KnownContactField.phoneNumber")
   @js.native
   def phoneNumber: String = js.native
-  @scala.inline
-  def phoneNumber_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("phoneNumber")(x.asInstanceOf[js.Any])
+  inline def phoneNumber_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("phoneNumber")(x.asInstanceOf[js.Any])
 }

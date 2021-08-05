@@ -13,17 +13,17 @@ object simulatedClockMod {
     extends StObject
        with Clock {
     
-    var _id: js.Any = js.native
+    /* private */ var _id: js.Any = js.native
     
-    var _now: js.Any = js.native
+    /* private */ var _now: js.Any = js.native
     
     /* CompleteClass */
     override def clearTimeout(id: js.Any): Unit = js.native
     def clearTimeout(id: Double): Unit = js.native
     
-    var flushTimeouts: js.Any = js.native
+    /* private */ var flushTimeouts: js.Any = js.native
     
-    var getId: js.Any = js.native
+    /* private */ var getId: js.Any = js.native
     
     def increment(ms: Double): Unit = js.native
     
@@ -36,6 +36,6 @@ object simulatedClockMod {
     
     def start(speed: Double): Unit = js.native
     
-    var timeouts: js.Any = js.native
+    /* private */ var timeouts: js.Any = js.native
   }
 }

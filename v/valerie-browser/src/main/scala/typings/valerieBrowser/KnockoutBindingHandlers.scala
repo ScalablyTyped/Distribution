@@ -166,8 +166,7 @@ trait KnockoutBindingHandlers extends StObject {
 }
 object KnockoutBindingHandlers {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     disabledWhenNotValid: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any,
     disabledWhenTouchedAndNotValid: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any,
     enabledWhenApplicable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any,
@@ -191,96 +190,77 @@ object KnockoutBindingHandlers {
     __obj.asInstanceOf[KnockoutBindingHandlers]
   }
   
-  @scala.inline
-  implicit class KnockoutBindingHandlersMutableBuilder[Self <: KnockoutBindingHandlers] (val x: Self) extends AnyVal {
+  extension [Self <: KnockoutBindingHandlers](x: Self) {
     
-    @scala.inline
-    def setDisabledWhenNotValid(
+    inline def setDisabledWhenNotValid(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
     ): Self = StObject.set(x, "disabledWhenNotValid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledWhenTouchedAndNotValid(
+    inline def setDisabledWhenTouchedAndNotValid(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
     ): Self = StObject.set(x, "disabledWhenTouchedAndNotValid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledWhenApplicable(
+    inline def setEnabledWhenApplicable(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
     ): Self = StObject.set(x, "enabledWhenApplicable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormattedText(
+    inline def setFormattedText(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
     ): Self = StObject.set(x, "formattedText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidatedChecked(
+    inline def setValidatedChecked(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
     ): Self = StObject.set(x, "validatedChecked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidatedSelectedOptions(
+    inline def setValidatedSelectedOptions(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
     ): Self = StObject.set(x, "validatedSelectedOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidatedValue(
+    inline def setValidatedValue(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
     ): Self = StObject.set(x, "validatedValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationCss(
+    inline def setValidationCss(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
     ): Self = StObject.set(x, "validationCss", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationMessage(
+    inline def setValidationMessage(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
     ): Self = StObject.set(x, "validationMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationMessageText(
+    inline def setValidationMessageText(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
     ): Self = StObject.set(x, "validationMessageText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationName(
+    inline def setValidationName(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
     ): Self = StObject.set(x, "validationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleWhenApplicable(
+    inline def setVisibleWhenApplicable(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
     ): Self = StObject.set(x, "visibleWhenApplicable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleWhenFocused(
+    inline def setVisibleWhenFocused(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
     ): Self = StObject.set(x, "visibleWhenFocused", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleWhenInvalid(
+    inline def setVisibleWhenInvalid(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
     ): Self = StObject.set(x, "visibleWhenInvalid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleWhenSummaryNotEmpty(
+    inline def setVisibleWhenSummaryNotEmpty(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
     ): Self = StObject.set(x, "visibleWhenSummaryNotEmpty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleWhenTouched(
+    inline def setVisibleWhenTouched(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
     ): Self = StObject.set(x, "visibleWhenTouched", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleWhenUntouched(
+    inline def setVisibleWhenUntouched(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
     ): Self = StObject.set(x, "visibleWhenUntouched", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleWhenValid(
+    inline def setVisibleWhenValid(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
     ): Self = StObject.set(x, "visibleWhenValid", value.asInstanceOf[js.Any])
   }

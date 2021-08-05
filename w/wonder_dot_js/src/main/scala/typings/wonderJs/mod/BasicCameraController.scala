@@ -17,6 +17,5 @@ object BasicCameraController {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(cameraComponent: typings.wonderJs.cameraMod.Camera): typings.wonderJs.basicCameraControllerMod.BasicCameraController = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(cameraComponent.asInstanceOf[js.Any]).asInstanceOf[typings.wonderJs.basicCameraControllerMod.BasicCameraController]
+  inline def create(cameraComponent: typings.wonderJs.cameraMod.Camera): typings.wonderJs.basicCameraControllerMod.BasicCameraController = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(cameraComponent.asInstanceOf[js.Any]).asInstanceOf[typings.wonderJs.basicCameraControllerMod.BasicCameraController]
 }

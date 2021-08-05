@@ -41,58 +41,41 @@ trait ChatMessagePolicyViolation extends StObject {
 }
 object ChatMessagePolicyViolation {
   
-  @scala.inline
-  def apply(): ChatMessagePolicyViolation = {
+  inline def apply(): ChatMessagePolicyViolation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChatMessagePolicyViolation]
   }
   
-  @scala.inline
-  implicit class ChatMessagePolicyViolationMutableBuilder[Self <: ChatMessagePolicyViolation] (val x: Self) extends AnyVal {
+  extension [Self <: ChatMessagePolicyViolation](x: Self) {
     
-    @scala.inline
-    def setDlpAction(value: NullableOption[ChatMessagePolicyViolationDlpActionTypes]): Self = StObject.set(x, "dlpAction", value.asInstanceOf[js.Any])
+    inline def setDlpAction(value: NullableOption[ChatMessagePolicyViolationDlpActionTypes]): Self = StObject.set(x, "dlpAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDlpActionNull: Self = StObject.set(x, "dlpAction", null)
+    inline def setDlpActionNull: Self = StObject.set(x, "dlpAction", null)
     
-    @scala.inline
-    def setDlpActionUndefined: Self = StObject.set(x, "dlpAction", js.undefined)
+    inline def setDlpActionUndefined: Self = StObject.set(x, "dlpAction", js.undefined)
     
-    @scala.inline
-    def setJustificationText(value: NullableOption[String]): Self = StObject.set(x, "justificationText", value.asInstanceOf[js.Any])
+    inline def setJustificationText(value: NullableOption[String]): Self = StObject.set(x, "justificationText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJustificationTextNull: Self = StObject.set(x, "justificationText", null)
+    inline def setJustificationTextNull: Self = StObject.set(x, "justificationText", null)
     
-    @scala.inline
-    def setJustificationTextUndefined: Self = StObject.set(x, "justificationText", js.undefined)
+    inline def setJustificationTextUndefined: Self = StObject.set(x, "justificationText", js.undefined)
     
-    @scala.inline
-    def setPolicyTip(value: NullableOption[ChatMessagePolicyViolationPolicyTip]): Self = StObject.set(x, "policyTip", value.asInstanceOf[js.Any])
+    inline def setPolicyTip(value: NullableOption[ChatMessagePolicyViolationPolicyTip]): Self = StObject.set(x, "policyTip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyTipNull: Self = StObject.set(x, "policyTip", null)
+    inline def setPolicyTipNull: Self = StObject.set(x, "policyTip", null)
     
-    @scala.inline
-    def setPolicyTipUndefined: Self = StObject.set(x, "policyTip", js.undefined)
+    inline def setPolicyTipUndefined: Self = StObject.set(x, "policyTip", js.undefined)
     
-    @scala.inline
-    def setUserAction(value: NullableOption[ChatMessagePolicyViolationUserActionTypes]): Self = StObject.set(x, "userAction", value.asInstanceOf[js.Any])
+    inline def setUserAction(value: NullableOption[ChatMessagePolicyViolationUserActionTypes]): Self = StObject.set(x, "userAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserActionNull: Self = StObject.set(x, "userAction", null)
+    inline def setUserActionNull: Self = StObject.set(x, "userAction", null)
     
-    @scala.inline
-    def setUserActionUndefined: Self = StObject.set(x, "userAction", js.undefined)
+    inline def setUserActionUndefined: Self = StObject.set(x, "userAction", js.undefined)
     
-    @scala.inline
-    def setVerdictDetails(value: NullableOption[ChatMessagePolicyViolationVerdictDetailsTypes]): Self = StObject.set(x, "verdictDetails", value.asInstanceOf[js.Any])
+    inline def setVerdictDetails(value: NullableOption[ChatMessagePolicyViolationVerdictDetailsTypes]): Self = StObject.set(x, "verdictDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerdictDetailsNull: Self = StObject.set(x, "verdictDetails", null)
+    inline def setVerdictDetailsNull: Self = StObject.set(x, "verdictDetails", null)
     
-    @scala.inline
-    def setVerdictDetailsUndefined: Self = StObject.set(x, "verdictDetails", js.undefined)
+    inline def setVerdictDetailsUndefined: Self = StObject.set(x, "verdictDetails", js.undefined)
   }
 }

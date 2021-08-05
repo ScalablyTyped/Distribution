@@ -33,43 +33,31 @@ trait AlgorithmSpecification extends StObject {
 }
 object AlgorithmSpecification {
   
-  @scala.inline
-  def apply(TrainingInputMode: TrainingInputMode): AlgorithmSpecification = {
+  inline def apply(TrainingInputMode: TrainingInputMode): AlgorithmSpecification = {
     val __obj = js.Dynamic.literal(TrainingInputMode = TrainingInputMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlgorithmSpecification]
   }
   
-  @scala.inline
-  implicit class AlgorithmSpecificationMutableBuilder[Self <: AlgorithmSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: AlgorithmSpecification](x: Self) {
     
-    @scala.inline
-    def setAlgorithmName(value: ArnOrName): Self = StObject.set(x, "AlgorithmName", value.asInstanceOf[js.Any])
+    inline def setAlgorithmName(value: ArnOrName): Self = StObject.set(x, "AlgorithmName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgorithmNameUndefined: Self = StObject.set(x, "AlgorithmName", js.undefined)
+    inline def setAlgorithmNameUndefined: Self = StObject.set(x, "AlgorithmName", js.undefined)
     
-    @scala.inline
-    def setEnableSageMakerMetricsTimeSeries(value: Boolean): Self = StObject.set(x, "EnableSageMakerMetricsTimeSeries", value.asInstanceOf[js.Any])
+    inline def setEnableSageMakerMetricsTimeSeries(value: Boolean): Self = StObject.set(x, "EnableSageMakerMetricsTimeSeries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableSageMakerMetricsTimeSeriesUndefined: Self = StObject.set(x, "EnableSageMakerMetricsTimeSeries", js.undefined)
+    inline def setEnableSageMakerMetricsTimeSeriesUndefined: Self = StObject.set(x, "EnableSageMakerMetricsTimeSeries", js.undefined)
     
-    @scala.inline
-    def setMetricDefinitions(value: MetricDefinitionList): Self = StObject.set(x, "MetricDefinitions", value.asInstanceOf[js.Any])
+    inline def setMetricDefinitions(value: MetricDefinitionList): Self = StObject.set(x, "MetricDefinitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricDefinitionsUndefined: Self = StObject.set(x, "MetricDefinitions", js.undefined)
+    inline def setMetricDefinitionsUndefined: Self = StObject.set(x, "MetricDefinitions", js.undefined)
     
-    @scala.inline
-    def setMetricDefinitionsVarargs(value: MetricDefinition*): Self = StObject.set(x, "MetricDefinitions", js.Array(value :_*))
+    inline def setMetricDefinitionsVarargs(value: MetricDefinition*): Self = StObject.set(x, "MetricDefinitions", js.Array(value :_*))
     
-    @scala.inline
-    def setTrainingImage(value: AlgorithmImage): Self = StObject.set(x, "TrainingImage", value.asInstanceOf[js.Any])
+    inline def setTrainingImage(value: AlgorithmImage): Self = StObject.set(x, "TrainingImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrainingImageUndefined: Self = StObject.set(x, "TrainingImage", js.undefined)
+    inline def setTrainingImageUndefined: Self = StObject.set(x, "TrainingImage", js.undefined)
     
-    @scala.inline
-    def setTrainingInputMode(value: TrainingInputMode): Self = StObject.set(x, "TrainingInputMode", value.asInstanceOf[js.Any])
+    inline def setTrainingInputMode(value: TrainingInputMode): Self = StObject.set(x, "TrainingInputMode", value.asInstanceOf[js.Any])
   }
 }

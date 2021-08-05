@@ -17,19 +17,15 @@ trait Documentation
 }
 object Documentation {
   
-  @scala.inline
-  def apply($parent: TypeDerived, $type: ElementType, id: String, text: String, textFormat: String): Documentation = {
+  inline def apply($parent: TypeDerived, $type: ElementType, id: String, text: String, textFormat: String): Documentation = {
     val __obj = js.Dynamic.literal($parent = $parent.asInstanceOf[js.Any], $type = $type.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textFormat = textFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[Documentation]
   }
   
-  @scala.inline
-  implicit class DocumentationMutableBuilder[Self <: Documentation] (val x: Self) extends AnyVal {
+  extension [Self <: Documentation](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextFormat(value: String): Self = StObject.set(x, "textFormat", value.asInstanceOf[js.Any])
+    inline def setTextFormat(value: String): Self = StObject.set(x, "textFormat", value.asInstanceOf[js.Any])
   }
 }

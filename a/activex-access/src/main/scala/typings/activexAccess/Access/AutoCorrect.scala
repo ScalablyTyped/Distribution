@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AutoCorrect extends StObject {
   
-  @JSName("Access.AutoCorrect_typekey")
+  /* private */ @JSName("Access.AutoCorrect_typekey")
   var AccessDotAutoCorrect_typekey: AutoCorrect
   
   var DisplayAutoCorrectOptions: Boolean
@@ -15,8 +15,7 @@ trait AutoCorrect extends StObject {
 }
 object AutoCorrect {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessDotAutoCorrect_typekey: AutoCorrect,
     DisplayAutoCorrectOptions: Boolean,
     IsMemberSafe: Double => Boolean
@@ -26,16 +25,12 @@ object AutoCorrect {
     __obj.asInstanceOf[AutoCorrect]
   }
   
-  @scala.inline
-  implicit class AutoCorrectMutableBuilder[Self <: AutoCorrect] (val x: Self) extends AnyVal {
+  extension [Self <: AutoCorrect](x: Self) {
     
-    @scala.inline
-    def setAccessDotAutoCorrect_typekey(value: AutoCorrect): Self = StObject.set(x, "Access.AutoCorrect_typekey", value.asInstanceOf[js.Any])
+    inline def setAccessDotAutoCorrect_typekey(value: AutoCorrect): Self = StObject.set(x, "Access.AutoCorrect_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayAutoCorrectOptions(value: Boolean): Self = StObject.set(x, "DisplayAutoCorrectOptions", value.asInstanceOf[js.Any])
+    inline def setDisplayAutoCorrectOptions(value: Boolean): Self = StObject.set(x, "DisplayAutoCorrectOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
+    inline def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
   }
 }

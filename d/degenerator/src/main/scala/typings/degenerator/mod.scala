@@ -17,19 +17,15 @@ object mod {
     * @return {String} Converted JavaScript string with async/await injected
     * @api public
     */
-  @scala.inline
-  def apply(code: String, _names: DegeneratorNames): String = (^.asInstanceOf[js.Dynamic].apply(code.asInstanceOf[js.Any], _names.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(code: String, _names: DegeneratorNames, hasOutput: DegeneratorOptions): String = (^.asInstanceOf[js.Dynamic].apply(code.asInstanceOf[js.Any], _names.asInstanceOf[js.Any], hasOutput.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(code: String, _names: DegeneratorNames): String = (^.asInstanceOf[js.Dynamic].apply(code.asInstanceOf[js.Any], _names.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(code: String, _names: DegeneratorNames, hasOutput: DegeneratorOptions): String = (^.asInstanceOf[js.Dynamic].apply(code.asInstanceOf[js.Any], _names.asInstanceOf[js.Any], hasOutput.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("degenerator", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def compile[T /* <: js.Function */](code: String, returnName: String, names: DegeneratorNames): T = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(code.asInstanceOf[js.Any], returnName.asInstanceOf[js.Any], names.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def compile[T /* <: js.Function */](code: String, returnName: String, names: DegeneratorNames, options: CompileOptions): T = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(code.asInstanceOf[js.Any], returnName.asInstanceOf[js.Any], names.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def compile[T /* <: js.Function */](code: String, returnName: String, names: DegeneratorNames): T = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(code.asInstanceOf[js.Any], returnName.asInstanceOf[js.Any], names.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def compile[T /* <: js.Function */](code: String, returnName: String, names: DegeneratorNames, options: CompileOptions): T = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(code.asInstanceOf[js.Any], returnName.asInstanceOf[js.Any], names.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
   
   @JSImport("degenerator", "supportsAsync")
   @js.native
@@ -44,20 +40,16 @@ object mod {
   }
   object CompileOptions {
     
-    @scala.inline
-    def apply(): CompileOptions = {
+    inline def apply(): CompileOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CompileOptions]
     }
     
-    @scala.inline
-    implicit class CompileOptionsMutableBuilder[Self <: CompileOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CompileOptions](x: Self) {
       
-      @scala.inline
-      def setSandbox(value: Context): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
+      inline def setSandbox(value: Context): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
+      inline def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
     }
   }
   
@@ -71,20 +63,16 @@ object mod {
   }
   object DegeneratorOptions {
     
-    @scala.inline
-    def apply(): DegeneratorOptions = {
+    inline def apply(): DegeneratorOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DegeneratorOptions]
     }
     
-    @scala.inline
-    implicit class DegeneratorOptionsMutableBuilder[Self <: DegeneratorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DegeneratorOptions](x: Self) {
       
-      @scala.inline
-      def setOutput(value: DegeneratorOutput): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: DegeneratorOutput): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+      inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
     }
   }
   
@@ -95,10 +83,8 @@ object mod {
   trait DegeneratorOutput extends StObject
   object DegeneratorOutput {
     
-    @scala.inline
-    def async: typings.degenerator.degeneratorStrings.async = "async".asInstanceOf[typings.degenerator.degeneratorStrings.async]
+    inline def async: typings.degenerator.degeneratorStrings.async = "async".asInstanceOf[typings.degenerator.degeneratorStrings.async]
     
-    @scala.inline
-    def generator: typings.degenerator.degeneratorStrings.generator = "generator".asInstanceOf[typings.degenerator.degeneratorStrings.generator]
+    inline def generator: typings.degenerator.degeneratorStrings.generator = "generator".asInstanceOf[typings.degenerator.degeneratorStrings.generator]
   }
 }

@@ -16,40 +16,29 @@ trait Query extends StObject {
 }
 object Query {
   
-  @scala.inline
-  def apply(): Query = {
+  inline def apply(): Query = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Query]
   }
   
-  @scala.inline
-  implicit class QueryMutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
+  extension [Self <: Query](x: Self) {
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    @scala.inline
-    def setCreator(value: UserId): Self = StObject.set(x, "creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: UserId): Self = StObject.set(x, "creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatorUndefined: Self = StObject.set(x, "creator", js.undefined)
+    inline def setCreatorUndefined: Self = StObject.set(x, "creator", js.undefined)
     
-    @scala.inline
-    def setLabels(value: js.Array[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: js.Array[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

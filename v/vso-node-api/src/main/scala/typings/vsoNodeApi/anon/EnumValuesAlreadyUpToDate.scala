@@ -10,16 +10,13 @@ trait EnumValuesAlreadyUpToDate extends StObject {
 }
 object EnumValuesAlreadyUpToDate {
   
-  @scala.inline
-  def apply(enumValues: AlreadyUpToDate): EnumValuesAlreadyUpToDate = {
+  inline def apply(enumValues: AlreadyUpToDate): EnumValuesAlreadyUpToDate = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesAlreadyUpToDate]
   }
   
-  @scala.inline
-  implicit class EnumValuesAlreadyUpToDateMutableBuilder[Self <: EnumValuesAlreadyUpToDate] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesAlreadyUpToDate](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: AlreadyUpToDate): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: AlreadyUpToDate): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

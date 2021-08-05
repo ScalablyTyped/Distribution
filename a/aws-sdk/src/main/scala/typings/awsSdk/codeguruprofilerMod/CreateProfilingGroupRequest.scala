@@ -33,37 +33,27 @@ trait CreateProfilingGroupRequest extends StObject {
 }
 object CreateProfilingGroupRequest {
   
-  @scala.inline
-  def apply(clientToken: ClientToken, profilingGroupName: ProfilingGroupName): CreateProfilingGroupRequest = {
+  inline def apply(clientToken: ClientToken, profilingGroupName: ProfilingGroupName): CreateProfilingGroupRequest = {
     val __obj = js.Dynamic.literal(clientToken = clientToken.asInstanceOf[js.Any], profilingGroupName = profilingGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateProfilingGroupRequest]
   }
   
-  @scala.inline
-  implicit class CreateProfilingGroupRequestMutableBuilder[Self <: CreateProfilingGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateProfilingGroupRequest](x: Self) {
     
-    @scala.inline
-    def setAgentOrchestrationConfig(value: AgentOrchestrationConfig): Self = StObject.set(x, "agentOrchestrationConfig", value.asInstanceOf[js.Any])
+    inline def setAgentOrchestrationConfig(value: AgentOrchestrationConfig): Self = StObject.set(x, "agentOrchestrationConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentOrchestrationConfigUndefined: Self = StObject.set(x, "agentOrchestrationConfig", js.undefined)
+    inline def setAgentOrchestrationConfigUndefined: Self = StObject.set(x, "agentOrchestrationConfig", js.undefined)
     
-    @scala.inline
-    def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputePlatform(value: ComputePlatform): Self = StObject.set(x, "computePlatform", value.asInstanceOf[js.Any])
+    inline def setComputePlatform(value: ComputePlatform): Self = StObject.set(x, "computePlatform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputePlatformUndefined: Self = StObject.set(x, "computePlatform", js.undefined)
+    inline def setComputePlatformUndefined: Self = StObject.set(x, "computePlatform", js.undefined)
     
-    @scala.inline
-    def setProfilingGroupName(value: ProfilingGroupName): Self = StObject.set(x, "profilingGroupName", value.asInstanceOf[js.Any])
+    inline def setProfilingGroupName(value: ProfilingGroupName): Self = StObject.set(x, "profilingGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagsMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagsMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

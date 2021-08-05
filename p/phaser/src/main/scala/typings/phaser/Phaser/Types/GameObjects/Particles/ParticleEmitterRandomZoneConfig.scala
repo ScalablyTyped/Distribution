@@ -18,22 +18,17 @@ trait ParticleEmitterRandomZoneConfig extends StObject {
 }
 object ParticleEmitterRandomZoneConfig {
   
-  @scala.inline
-  def apply(source: RandomZoneSource): ParticleEmitterRandomZoneConfig = {
+  inline def apply(source: RandomZoneSource): ParticleEmitterRandomZoneConfig = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParticleEmitterRandomZoneConfig]
   }
   
-  @scala.inline
-  implicit class ParticleEmitterRandomZoneConfigMutableBuilder[Self <: ParticleEmitterRandomZoneConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ParticleEmitterRandomZoneConfig](x: Self) {
     
-    @scala.inline
-    def setSource(value: RandomZoneSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: RandomZoneSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

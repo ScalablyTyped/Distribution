@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MemberLocation extends StObject
 object MemberLocation {
   
-  @scala.inline
-  def header: typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.header = "header".asInstanceOf[typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.header]
+  inline def header: typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.header = "header".asInstanceOf[typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.header]
   
-  @scala.inline
-  def headers: typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.headers = "headers".asInstanceOf[typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.headers]
+  inline def headers: typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.headers = "headers".asInstanceOf[typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.headers]
   
-  @scala.inline
-  def querystring: typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.querystring = "querystring".asInstanceOf[typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.querystring]
+  inline def querystring: typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.querystring = "querystring".asInstanceOf[typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.querystring]
   
-  @scala.inline
-  def uri: typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.uri = "uri".asInstanceOf[typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.uri]
+  inline def uri: typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.uri = "uri".asInstanceOf[typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.uri]
 }

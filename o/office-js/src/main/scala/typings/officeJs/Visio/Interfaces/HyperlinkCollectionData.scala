@@ -11,22 +11,17 @@ trait HyperlinkCollectionData extends StObject {
 }
 object HyperlinkCollectionData {
   
-  @scala.inline
-  def apply(): HyperlinkCollectionData = {
+  inline def apply(): HyperlinkCollectionData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HyperlinkCollectionData]
   }
   
-  @scala.inline
-  implicit class HyperlinkCollectionDataMutableBuilder[Self <: HyperlinkCollectionData] (val x: Self) extends AnyVal {
+  extension [Self <: HyperlinkCollectionData](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[HyperlinkData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[HyperlinkData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: HyperlinkData*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: HyperlinkData*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

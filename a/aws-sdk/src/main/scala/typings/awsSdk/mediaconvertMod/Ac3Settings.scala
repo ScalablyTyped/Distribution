@@ -48,61 +48,43 @@ trait Ac3Settings extends StObject {
 }
 object Ac3Settings {
   
-  @scala.inline
-  def apply(): Ac3Settings = {
+  inline def apply(): Ac3Settings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Ac3Settings]
   }
   
-  @scala.inline
-  implicit class Ac3SettingsMutableBuilder[Self <: Ac3Settings] (val x: Self) extends AnyVal {
+  extension [Self <: Ac3Settings](x: Self) {
     
-    @scala.inline
-    def setBitrate(value: integerMin64000Max640000): Self = StObject.set(x, "Bitrate", value.asInstanceOf[js.Any])
+    inline def setBitrate(value: integerMin64000Max640000): Self = StObject.set(x, "Bitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitrateUndefined: Self = StObject.set(x, "Bitrate", js.undefined)
+    inline def setBitrateUndefined: Self = StObject.set(x, "Bitrate", js.undefined)
     
-    @scala.inline
-    def setBitstreamMode(value: Ac3BitstreamMode): Self = StObject.set(x, "BitstreamMode", value.asInstanceOf[js.Any])
+    inline def setBitstreamMode(value: Ac3BitstreamMode): Self = StObject.set(x, "BitstreamMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitstreamModeUndefined: Self = StObject.set(x, "BitstreamMode", js.undefined)
+    inline def setBitstreamModeUndefined: Self = StObject.set(x, "BitstreamMode", js.undefined)
     
-    @scala.inline
-    def setCodingMode(value: Ac3CodingMode): Self = StObject.set(x, "CodingMode", value.asInstanceOf[js.Any])
+    inline def setCodingMode(value: Ac3CodingMode): Self = StObject.set(x, "CodingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodingModeUndefined: Self = StObject.set(x, "CodingMode", js.undefined)
+    inline def setCodingModeUndefined: Self = StObject.set(x, "CodingMode", js.undefined)
     
-    @scala.inline
-    def setDialnorm(value: integerMin1Max31): Self = StObject.set(x, "Dialnorm", value.asInstanceOf[js.Any])
+    inline def setDialnorm(value: integerMin1Max31): Self = StObject.set(x, "Dialnorm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialnormUndefined: Self = StObject.set(x, "Dialnorm", js.undefined)
+    inline def setDialnormUndefined: Self = StObject.set(x, "Dialnorm", js.undefined)
     
-    @scala.inline
-    def setDynamicRangeCompressionProfile(value: Ac3DynamicRangeCompressionProfile): Self = StObject.set(x, "DynamicRangeCompressionProfile", value.asInstanceOf[js.Any])
+    inline def setDynamicRangeCompressionProfile(value: Ac3DynamicRangeCompressionProfile): Self = StObject.set(x, "DynamicRangeCompressionProfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicRangeCompressionProfileUndefined: Self = StObject.set(x, "DynamicRangeCompressionProfile", js.undefined)
+    inline def setDynamicRangeCompressionProfileUndefined: Self = StObject.set(x, "DynamicRangeCompressionProfile", js.undefined)
     
-    @scala.inline
-    def setLfeFilter(value: Ac3LfeFilter): Self = StObject.set(x, "LfeFilter", value.asInstanceOf[js.Any])
+    inline def setLfeFilter(value: Ac3LfeFilter): Self = StObject.set(x, "LfeFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLfeFilterUndefined: Self = StObject.set(x, "LfeFilter", js.undefined)
+    inline def setLfeFilterUndefined: Self = StObject.set(x, "LfeFilter", js.undefined)
     
-    @scala.inline
-    def setMetadataControl(value: Ac3MetadataControl): Self = StObject.set(x, "MetadataControl", value.asInstanceOf[js.Any])
+    inline def setMetadataControl(value: Ac3MetadataControl): Self = StObject.set(x, "MetadataControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataControlUndefined: Self = StObject.set(x, "MetadataControl", js.undefined)
+    inline def setMetadataControlUndefined: Self = StObject.set(x, "MetadataControl", js.undefined)
     
-    @scala.inline
-    def setSampleRate(value: integerMin48000Max48000): Self = StObject.set(x, "SampleRate", value.asInstanceOf[js.Any])
+    inline def setSampleRate(value: integerMin48000Max48000): Self = StObject.set(x, "SampleRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleRateUndefined: Self = StObject.set(x, "SampleRate", js.undefined)
+    inline def setSampleRateUndefined: Self = StObject.set(x, "SampleRate", js.undefined)
   }
 }

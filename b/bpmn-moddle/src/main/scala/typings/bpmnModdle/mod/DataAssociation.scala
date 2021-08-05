@@ -18,8 +18,7 @@ trait DataAssociation
 }
 object DataAssociation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     assignment: Assignment,
@@ -32,19 +31,14 @@ object DataAssociation {
     __obj.asInstanceOf[DataAssociation]
   }
   
-  @scala.inline
-  implicit class DataAssociationMutableBuilder[Self <: DataAssociation] (val x: Self) extends AnyVal {
+  extension [Self <: DataAssociation](x: Self) {
     
-    @scala.inline
-    def setAssignment(value: Assignment): Self = StObject.set(x, "assignment", value.asInstanceOf[js.Any])
+    inline def setAssignment(value: Assignment): Self = StObject.set(x, "assignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceRef(value: ItemAwareElement): Self = StObject.set(x, "sourceRef", value.asInstanceOf[js.Any])
+    inline def setSourceRef(value: ItemAwareElement): Self = StObject.set(x, "sourceRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetRef(value: ItemAwareElement): Self = StObject.set(x, "targetRef", value.asInstanceOf[js.Any])
+    inline def setTargetRef(value: ItemAwareElement): Self = StObject.set(x, "targetRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformation(value: FormalExpression): Self = StObject.set(x, "transformation", value.asInstanceOf[js.Any])
+    inline def setTransformation(value: FormalExpression): Self = StObject.set(x, "transformation", value.asInstanceOf[js.Any])
   }
 }

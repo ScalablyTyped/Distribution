@@ -83,6 +83,5 @@ object StringNumber {
   val CATEGORY: String = js.native
   
   /* static member */
-  @scala.inline
-  def format(nums: js.Array[typings.vexflow.Vex.Flow.StringNumber], state: Leftshift): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(nums.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def format(nums: js.Array[typings.vexflow.Vex.Flow.StringNumber], state: Leftshift): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(nums.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

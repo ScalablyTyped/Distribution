@@ -9,8 +9,7 @@ trait RevocationAndRenewalItem
      with IRevocationAndRenewalItem
 object RevocationAndRenewalItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     headerHash: String,
     name: String,
     publicKeyHash: String,

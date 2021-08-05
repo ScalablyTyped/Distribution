@@ -14,22 +14,17 @@ trait OnProgressData extends StObject {
 }
 object OnProgressData {
   
-  @scala.inline
-  def apply(currentTime: Double, playableDuration: Double, seekableDuration: Double): OnProgressData = {
+  inline def apply(currentTime: Double, playableDuration: Double, seekableDuration: Double): OnProgressData = {
     val __obj = js.Dynamic.literal(currentTime = currentTime.asInstanceOf[js.Any], playableDuration = playableDuration.asInstanceOf[js.Any], seekableDuration = seekableDuration.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnProgressData]
   }
   
-  @scala.inline
-  implicit class OnProgressDataMutableBuilder[Self <: OnProgressData] (val x: Self) extends AnyVal {
+  extension [Self <: OnProgressData](x: Self) {
     
-    @scala.inline
-    def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
+    inline def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayableDuration(value: Double): Self = StObject.set(x, "playableDuration", value.asInstanceOf[js.Any])
+    inline def setPlayableDuration(value: Double): Self = StObject.set(x, "playableDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeekableDuration(value: Double): Self = StObject.set(x, "seekableDuration", value.asInstanceOf[js.Any])
+    inline def setSeekableDuration(value: Double): Self = StObject.set(x, "seekableDuration", value.asInstanceOf[js.Any])
   }
 }

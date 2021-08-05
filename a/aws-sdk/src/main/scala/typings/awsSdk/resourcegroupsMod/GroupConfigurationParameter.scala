@@ -18,25 +18,19 @@ trait GroupConfigurationParameter extends StObject {
 }
 object GroupConfigurationParameter {
   
-  @scala.inline
-  def apply(Name: GroupConfigurationParameterName): GroupConfigurationParameter = {
+  inline def apply(Name: GroupConfigurationParameterName): GroupConfigurationParameter = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupConfigurationParameter]
   }
   
-  @scala.inline
-  implicit class GroupConfigurationParameterMutableBuilder[Self <: GroupConfigurationParameter] (val x: Self) extends AnyVal {
+  extension [Self <: GroupConfigurationParameter](x: Self) {
     
-    @scala.inline
-    def setName(value: GroupConfigurationParameterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: GroupConfigurationParameterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: GroupConfigurationParameterValueList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: GroupConfigurationParameterValueList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: GroupConfigurationParameterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: GroupConfigurationParameterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

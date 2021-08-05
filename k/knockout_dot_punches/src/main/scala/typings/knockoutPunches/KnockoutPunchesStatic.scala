@@ -10,16 +10,13 @@ trait KnockoutPunchesStatic extends StObject {
 }
 object KnockoutPunchesStatic {
   
-  @scala.inline
-  def apply(enableAll: () => Unit): KnockoutPunchesStatic = {
+  inline def apply(enableAll: () => Unit): KnockoutPunchesStatic = {
     val __obj = js.Dynamic.literal(enableAll = js.Any.fromFunction0(enableAll))
     __obj.asInstanceOf[KnockoutPunchesStatic]
   }
   
-  @scala.inline
-  implicit class KnockoutPunchesStaticMutableBuilder[Self <: KnockoutPunchesStatic] (val x: Self) extends AnyVal {
+  extension [Self <: KnockoutPunchesStatic](x: Self) {
     
-    @scala.inline
-    def setEnableAll(value: () => Unit): Self = StObject.set(x, "enableAll", js.Any.fromFunction0(value))
+    inline def setEnableAll(value: () => Unit): Self = StObject.set(x, "enableAll", js.Any.fromFunction0(value))
   }
 }

@@ -13,7 +13,7 @@ trait FaxOutboundRoutingGroup extends StObject {
   @JSName("DeviceIds")
   val DeviceIds_Original: FaxDeviceIds
   
-  @JSName("FAXCOMEXLib.FaxOutboundRoutingGroup_typekey")
+  /* private */ @JSName("FAXCOMEXLib.FaxOutboundRoutingGroup_typekey")
   var FAXCOMEXLibDotFaxOutboundRoutingGroup_typekey: FaxOutboundRoutingGroup
   
   /** Name of the group */
@@ -24,8 +24,7 @@ trait FaxOutboundRoutingGroup extends StObject {
 }
 object FaxOutboundRoutingGroup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DeviceIds: FaxDeviceIds,
     FAXCOMEXLibDotFaxOutboundRoutingGroup_typekey: FaxOutboundRoutingGroup,
     Name: String,
@@ -36,19 +35,14 @@ object FaxOutboundRoutingGroup {
     __obj.asInstanceOf[FaxOutboundRoutingGroup]
   }
   
-  @scala.inline
-  implicit class FaxOutboundRoutingGroupMutableBuilder[Self <: FaxOutboundRoutingGroup] (val x: Self) extends AnyVal {
+  extension [Self <: FaxOutboundRoutingGroup](x: Self) {
     
-    @scala.inline
-    def setDeviceIds(value: FaxDeviceIds): Self = StObject.set(x, "DeviceIds", value.asInstanceOf[js.Any])
+    inline def setDeviceIds(value: FaxDeviceIds): Self = StObject.set(x, "DeviceIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFAXCOMEXLibDotFaxOutboundRoutingGroup_typekey(value: FaxOutboundRoutingGroup): Self = StObject.set(x, "FAXCOMEXLib.FaxOutboundRoutingGroup_typekey", value.asInstanceOf[js.Any])
+    inline def setFAXCOMEXLibDotFaxOutboundRoutingGroup_typekey(value: FaxOutboundRoutingGroup): Self = StObject.set(x, "FAXCOMEXLib.FaxOutboundRoutingGroup_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: FAX_GROUP_STATUS_ENUM): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: FAX_GROUP_STATUS_ENUM): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

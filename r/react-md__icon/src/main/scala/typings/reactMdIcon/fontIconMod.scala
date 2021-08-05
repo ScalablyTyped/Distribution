@@ -43,38 +43,28 @@ object fontIconMod {
   }
   object FontIconProps {
     
-    @scala.inline
-    def apply(): FontIconProps = {
+    inline def apply(): FontIconProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FontIconProps]
     }
     
-    @scala.inline
-    implicit class FontIconPropsMutableBuilder[Self <: FontIconProps] (val x: Self) extends AnyVal {
+    extension [Self <: FontIconProps](x: Self) {
       
-      @scala.inline
-      def setDense(value: Boolean): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
+      inline def setDense(value: Boolean): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDenseUndefined: Self = StObject.set(x, "dense", js.undefined)
+      inline def setDenseUndefined: Self = StObject.set(x, "dense", js.undefined)
       
-      @scala.inline
-      def setForceFontSize(value: Boolean): Self = StObject.set(x, "forceFontSize", value.asInstanceOf[js.Any])
+      inline def setForceFontSize(value: Boolean): Self = StObject.set(x, "forceFontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceFontSizeUndefined: Self = StObject.set(x, "forceFontSize", js.undefined)
+      inline def setForceFontSizeUndefined: Self = StObject.set(x, "forceFontSize", js.undefined)
       
-      @scala.inline
-      def setForceSize(value: Boolean): Self = StObject.set(x, "forceSize", value.asInstanceOf[js.Any])
+      inline def setForceSize(value: Boolean): Self = StObject.set(x, "forceSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceSizeUndefined: Self = StObject.set(x, "forceSize", js.undefined)
+      inline def setForceSizeUndefined: Self = StObject.set(x, "forceSize", js.undefined)
       
-      @scala.inline
-      def setIconClassName(value: String): Self = StObject.set(x, "iconClassName", value.asInstanceOf[js.Any])
+      inline def setIconClassName(value: String): Self = StObject.set(x, "iconClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconClassNameUndefined: Self = StObject.set(x, "iconClassName", js.undefined)
+      inline def setIconClassNameUndefined: Self = StObject.set(x, "iconClassName", js.undefined)
     }
   }
 }

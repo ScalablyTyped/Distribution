@@ -12,22 +12,17 @@ trait IRegExpOptions extends StObject {
 }
 object IRegExpOptions {
   
-  @scala.inline
-  def apply(regexp: String): IRegExpOptions = {
+  inline def apply(regexp: String): IRegExpOptions = {
     val __obj = js.Dynamic.literal(regexp = regexp.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRegExpOptions]
   }
   
-  @scala.inline
-  implicit class IRegExpOptionsMutableBuilder[Self <: IRegExpOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IRegExpOptions](x: Self) {
     
-    @scala.inline
-    def setOptions(value: String): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: String): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setRegexp(value: String): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
+    inline def setRegexp(value: String): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
   }
 }

@@ -12,8 +12,7 @@ trait SyndicationText
      with ISyndicationText
 object SyndicationText {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attributeExtensions: IVector[SyndicationAttribute],
     baseUri: Uri,
     elementExtensions: IVector[ISyndicationNode],

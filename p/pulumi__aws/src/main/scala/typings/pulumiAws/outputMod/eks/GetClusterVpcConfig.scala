@@ -43,8 +43,7 @@ trait GetClusterVpcConfig extends StObject {
 }
 object GetClusterVpcConfig {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clusterSecurityGroupId: String,
     endpointPrivateAccess: Boolean,
     endpointPublicAccess: Boolean,
@@ -57,37 +56,26 @@ object GetClusterVpcConfig {
     __obj.asInstanceOf[GetClusterVpcConfig]
   }
   
-  @scala.inline
-  implicit class GetClusterVpcConfigMutableBuilder[Self <: GetClusterVpcConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GetClusterVpcConfig](x: Self) {
     
-    @scala.inline
-    def setClusterSecurityGroupId(value: String): Self = StObject.set(x, "clusterSecurityGroupId", value.asInstanceOf[js.Any])
+    inline def setClusterSecurityGroupId(value: String): Self = StObject.set(x, "clusterSecurityGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointPrivateAccess(value: Boolean): Self = StObject.set(x, "endpointPrivateAccess", value.asInstanceOf[js.Any])
+    inline def setEndpointPrivateAccess(value: Boolean): Self = StObject.set(x, "endpointPrivateAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointPublicAccess(value: Boolean): Self = StObject.set(x, "endpointPublicAccess", value.asInstanceOf[js.Any])
+    inline def setEndpointPublicAccess(value: Boolean): Self = StObject.set(x, "endpointPublicAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicAccessCidrs(value: js.Array[String]): Self = StObject.set(x, "publicAccessCidrs", value.asInstanceOf[js.Any])
+    inline def setPublicAccessCidrs(value: js.Array[String]): Self = StObject.set(x, "publicAccessCidrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicAccessCidrsVarargs(value: String*): Self = StObject.set(x, "publicAccessCidrs", js.Array(value :_*))
+    inline def setPublicAccessCidrsVarargs(value: String*): Self = StObject.set(x, "publicAccessCidrs", js.Array(value :_*))
     
-    @scala.inline
-    def setSecurityGroupIds(value: js.Array[String]): Self = StObject.set(x, "securityGroupIds", value.asInstanceOf[js.Any])
+    inline def setSecurityGroupIds(value: js.Array[String]): Self = StObject.set(x, "securityGroupIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "securityGroupIds", js.Array(value :_*))
+    inline def setSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "securityGroupIds", js.Array(value :_*))
     
-    @scala.inline
-    def setSubnetIds(value: js.Array[String]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
+    inline def setSubnetIds(value: js.Array[String]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetIdsVarargs(value: String*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
+    inline def setSubnetIdsVarargs(value: String*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
     
-    @scala.inline
-    def setVpcId(value: String): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+    inline def setVpcId(value: String): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
   }
 }

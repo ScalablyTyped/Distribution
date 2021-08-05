@@ -14,19 +14,15 @@ trait DisableVpcServiceControlsRequest extends StObject {
 }
 object DisableVpcServiceControlsRequest {
   
-  @scala.inline
-  def apply(): DisableVpcServiceControlsRequest = {
+  inline def apply(): DisableVpcServiceControlsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisableVpcServiceControlsRequest]
   }
   
-  @scala.inline
-  implicit class DisableVpcServiceControlsRequestMutableBuilder[Self <: DisableVpcServiceControlsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisableVpcServiceControlsRequest](x: Self) {
     
-    @scala.inline
-    def setConsumerNetwork(value: String): Self = StObject.set(x, "consumerNetwork", value.asInstanceOf[js.Any])
+    inline def setConsumerNetwork(value: String): Self = StObject.set(x, "consumerNetwork", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumerNetworkUndefined: Self = StObject.set(x, "consumerNetwork", js.undefined)
+    inline def setConsumerNetworkUndefined: Self = StObject.set(x, "consumerNetwork", js.undefined)
   }
 }

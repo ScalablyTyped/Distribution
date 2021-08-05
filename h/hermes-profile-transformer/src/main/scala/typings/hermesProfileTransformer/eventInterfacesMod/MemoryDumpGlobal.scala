@@ -17,19 +17,15 @@ trait MemoryDumpGlobal
 }
 object MemoryDumpGlobal {
   
-  @scala.inline
-  def apply(id: String, ph: MEMORY_DUMP_EVENTS_GLOBAL): MemoryDumpGlobal = {
+  inline def apply(id: String, ph: MEMORY_DUMP_EVENTS_GLOBAL): MemoryDumpGlobal = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], ph = ph.asInstanceOf[js.Any])
     __obj.asInstanceOf[MemoryDumpGlobal]
   }
   
-  @scala.inline
-  implicit class MemoryDumpGlobalMutableBuilder[Self <: MemoryDumpGlobal] (val x: Self) extends AnyVal {
+  extension [Self <: MemoryDumpGlobal](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPh(value: MEMORY_DUMP_EVENTS_GLOBAL): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
+    inline def setPh(value: MEMORY_DUMP_EVENTS_GLOBAL): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
   }
 }

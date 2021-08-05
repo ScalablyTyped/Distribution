@@ -13,19 +13,15 @@ trait CloseSource extends StObject {
 }
 object CloseSource {
   
-  @scala.inline
-  def apply(): CloseSource = {
+  inline def apply(): CloseSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CloseSource]
   }
   
-  @scala.inline
-  implicit class CloseSourceMutableBuilder[Self <: CloseSource] (val x: Self) extends AnyVal {
+  extension [Self <: CloseSource](x: Self) {
     
-    @scala.inline
-    def setCloseSource(value: closeButton | backdrop | escape_): Self = StObject.set(x, "closeSource", value.asInstanceOf[js.Any])
+    inline def setCloseSource(value: closeButton | backdrop | escape_): Self = StObject.set(x, "closeSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseSourceUndefined: Self = StObject.set(x, "closeSource", js.undefined)
+    inline def setCloseSourceUndefined: Self = StObject.set(x, "closeSource", js.undefined)
   }
 }

@@ -39,8 +39,7 @@ trait BevelEnabled extends StObject {
 }
 object BevelEnabled {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bevelEnabled: Boolean,
     bevelOffset: Double,
     bevelSegments: Double,
@@ -55,34 +54,24 @@ object BevelEnabled {
     __obj.asInstanceOf[BevelEnabled]
   }
   
-  @scala.inline
-  implicit class BevelEnabledMutableBuilder[Self <: BevelEnabled] (val x: Self) extends AnyVal {
+  extension [Self <: BevelEnabled](x: Self) {
     
-    @scala.inline
-    def setBevelEnabled(value: Boolean): Self = StObject.set(x, "bevelEnabled", value.asInstanceOf[js.Any])
+    inline def setBevelEnabled(value: Boolean): Self = StObject.set(x, "bevelEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBevelOffset(value: Double): Self = StObject.set(x, "bevelOffset", value.asInstanceOf[js.Any])
+    inline def setBevelOffset(value: Double): Self = StObject.set(x, "bevelOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBevelSegments(value: Double): Self = StObject.set(x, "bevelSegments", value.asInstanceOf[js.Any])
+    inline def setBevelSegments(value: Double): Self = StObject.set(x, "bevelSegments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBevelSize(value: Double): Self = StObject.set(x, "bevelSize", value.asInstanceOf[js.Any])
+    inline def setBevelSize(value: Double): Self = StObject.set(x, "bevelSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBevelThickness(value: Double): Self = StObject.set(x, "bevelThickness", value.asInstanceOf[js.Any])
+    inline def setBevelThickness(value: Double): Self = StObject.set(x, "bevelThickness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurveSegments(value: Double): Self = StObject.set(x, "curveSegments", value.asInstanceOf[js.Any])
+    inline def setCurveSegments(value: Double): Self = StObject.set(x, "curveSegments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFont(value: Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

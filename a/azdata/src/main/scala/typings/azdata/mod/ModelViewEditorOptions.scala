@@ -25,31 +25,23 @@ trait ModelViewEditorOptions extends StObject {
 }
 object ModelViewEditorOptions {
   
-  @scala.inline
-  def apply(): ModelViewEditorOptions = {
+  inline def apply(): ModelViewEditorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModelViewEditorOptions]
   }
   
-  @scala.inline
-  implicit class ModelViewEditorOptionsMutableBuilder[Self <: ModelViewEditorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ModelViewEditorOptions](x: Self) {
     
-    @scala.inline
-    def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
+    inline def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
     
-    @scala.inline
-    def setRetainContextWhenHidden(value: Boolean): Self = StObject.set(x, "retainContextWhenHidden", value.asInstanceOf[js.Any])
+    inline def setRetainContextWhenHidden(value: Boolean): Self = StObject.set(x, "retainContextWhenHidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetainContextWhenHiddenUndefined: Self = StObject.set(x, "retainContextWhenHidden", js.undefined)
+    inline def setRetainContextWhenHiddenUndefined: Self = StObject.set(x, "retainContextWhenHidden", js.undefined)
     
-    @scala.inline
-    def setSupportsSave(value: Boolean): Self = StObject.set(x, "supportsSave", value.asInstanceOf[js.Any])
+    inline def setSupportsSave(value: Boolean): Self = StObject.set(x, "supportsSave", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsSaveUndefined: Self = StObject.set(x, "supportsSave", js.undefined)
+    inline def setSupportsSaveUndefined: Self = StObject.set(x, "supportsSave", js.undefined)
   }
 }

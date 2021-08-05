@@ -71,6 +71,5 @@ object Label {
   @JSImport("cesium", "Label.enableRightToLeftDetection")
   @js.native
   def enableRightToLeftDetection: Boolean = js.native
-  @scala.inline
-  def enableRightToLeftDetection_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enableRightToLeftDetection")(x.asInstanceOf[js.Any])
+  inline def enableRightToLeftDetection_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enableRightToLeftDetection")(x.asInstanceOf[js.Any])
 }

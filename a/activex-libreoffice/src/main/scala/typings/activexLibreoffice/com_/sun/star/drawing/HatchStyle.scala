@@ -17,14 +17,11 @@ trait HatchStyle extends StObject
 object HatchStyle {
   
   /** the hatch has a horizontal and a vertical line */
-  @scala.inline
-  def DOUBLE: `1` = 1.asInstanceOf[`1`]
+  inline def DOUBLE: `1` = 1.asInstanceOf[`1`]
   
   /** the hatch consists of a single horizontal line */
-  @scala.inline
-  def SINGLE: `0` = 0.asInstanceOf[`0`]
+  inline def SINGLE: `0` = 0.asInstanceOf[`0`]
   
   /** the hatch has a horizontal, a vertical and a diagonal line */
-  @scala.inline
-  def TRIPLE: `2` = 2.asInstanceOf[`2`]
+  inline def TRIPLE: `2` = 2.asInstanceOf[`2`]
 }

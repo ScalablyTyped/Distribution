@@ -13,16 +13,13 @@ trait ImageConfig extends StObject {
 }
 object ImageConfig {
   
-  @scala.inline
-  def apply(RepositoryAccessMode: RepositoryAccessMode): ImageConfig = {
+  inline def apply(RepositoryAccessMode: RepositoryAccessMode): ImageConfig = {
     val __obj = js.Dynamic.literal(RepositoryAccessMode = RepositoryAccessMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageConfig]
   }
   
-  @scala.inline
-  implicit class ImageConfigMutableBuilder[Self <: ImageConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ImageConfig](x: Self) {
     
-    @scala.inline
-    def setRepositoryAccessMode(value: RepositoryAccessMode): Self = StObject.set(x, "RepositoryAccessMode", value.asInstanceOf[js.Any])
+    inline def setRepositoryAccessMode(value: RepositoryAccessMode): Self = StObject.set(x, "RepositoryAccessMode", value.asInstanceOf[js.Any])
   }
 }

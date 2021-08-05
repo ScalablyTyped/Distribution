@@ -18,25 +18,19 @@ trait Emotion extends StObject {
 }
 object Emotion {
   
-  @scala.inline
-  def apply(): Emotion = {
+  inline def apply(): Emotion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Emotion]
   }
   
-  @scala.inline
-  implicit class EmotionMutableBuilder[Self <: Emotion] (val x: Self) extends AnyVal {
+  extension [Self <: Emotion](x: Self) {
     
-    @scala.inline
-    def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
     
-    @scala.inline
-    def setType(value: EmotionName): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: EmotionName): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

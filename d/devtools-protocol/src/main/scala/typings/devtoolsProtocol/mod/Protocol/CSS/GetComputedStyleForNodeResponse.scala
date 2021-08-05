@@ -13,19 +13,15 @@ trait GetComputedStyleForNodeResponse extends StObject {
 }
 object GetComputedStyleForNodeResponse {
   
-  @scala.inline
-  def apply(computedStyle: js.Array[CSSComputedStyleProperty]): GetComputedStyleForNodeResponse = {
+  inline def apply(computedStyle: js.Array[CSSComputedStyleProperty]): GetComputedStyleForNodeResponse = {
     val __obj = js.Dynamic.literal(computedStyle = computedStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetComputedStyleForNodeResponse]
   }
   
-  @scala.inline
-  implicit class GetComputedStyleForNodeResponseMutableBuilder[Self <: GetComputedStyleForNodeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetComputedStyleForNodeResponse](x: Self) {
     
-    @scala.inline
-    def setComputedStyle(value: js.Array[CSSComputedStyleProperty]): Self = StObject.set(x, "computedStyle", value.asInstanceOf[js.Any])
+    inline def setComputedStyle(value: js.Array[CSSComputedStyleProperty]): Self = StObject.set(x, "computedStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputedStyleVarargs(value: CSSComputedStyleProperty*): Self = StObject.set(x, "computedStyle", js.Array(value :_*))
+    inline def setComputedStyleVarargs(value: CSSComputedStyleProperty*): Self = StObject.set(x, "computedStyle", js.Array(value :_*))
   }
 }

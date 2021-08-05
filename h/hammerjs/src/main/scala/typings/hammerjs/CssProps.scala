@@ -20,8 +20,7 @@ trait CssProps extends StObject {
 }
 object CssProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contentZooming: String,
     tapHighlightColor: String,
     touchCallout: String,
@@ -33,25 +32,18 @@ object CssProps {
     __obj.asInstanceOf[CssProps]
   }
   
-  @scala.inline
-  implicit class CssPropsMutableBuilder[Self <: CssProps] (val x: Self) extends AnyVal {
+  extension [Self <: CssProps](x: Self) {
     
-    @scala.inline
-    def setContentZooming(value: String): Self = StObject.set(x, "contentZooming", value.asInstanceOf[js.Any])
+    inline def setContentZooming(value: String): Self = StObject.set(x, "contentZooming", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTapHighlightColor(value: String): Self = StObject.set(x, "tapHighlightColor", value.asInstanceOf[js.Any])
+    inline def setTapHighlightColor(value: String): Self = StObject.set(x, "tapHighlightColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchCallout(value: String): Self = StObject.set(x, "touchCallout", value.asInstanceOf[js.Any])
+    inline def setTouchCallout(value: String): Self = StObject.set(x, "touchCallout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchSelect(value: String): Self = StObject.set(x, "touchSelect", value.asInstanceOf[js.Any])
+    inline def setTouchSelect(value: String): Self = StObject.set(x, "touchSelect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserDrag(value: String): Self = StObject.set(x, "userDrag", value.asInstanceOf[js.Any])
+    inline def setUserDrag(value: String): Self = StObject.set(x, "userDrag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserSelect(value: String): Self = StObject.set(x, "userSelect", value.asInstanceOf[js.Any])
+    inline def setUserSelect(value: String): Self = StObject.set(x, "userSelect", value.asInstanceOf[js.Any])
   }
 }

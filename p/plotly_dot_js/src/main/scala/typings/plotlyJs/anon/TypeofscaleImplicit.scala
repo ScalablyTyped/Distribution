@@ -11,16 +11,13 @@ trait TypeofscaleImplicit extends StObject {
 }
 object TypeofscaleImplicit {
   
-  @scala.inline
-  def apply(): TypeofscaleImplicit = {
+  inline def apply(): TypeofscaleImplicit = {
     val __obj = js.Dynamic.literal(name = "implicit")
     __obj.asInstanceOf[TypeofscaleImplicit]
   }
   
-  @scala.inline
-  implicit class TypeofscaleImplicitMutableBuilder[Self <: TypeofscaleImplicit] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofscaleImplicit](x: Self) {
     
-    @scala.inline
-    def setName(value: `implicit`): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: `implicit`): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

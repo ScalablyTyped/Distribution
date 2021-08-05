@@ -20,8 +20,7 @@ trait OAuth2 extends StObject {
 }
 object OAuth2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     client: js.Any,
     info: OAuth2Info,
     redirectURI: String,
@@ -33,25 +32,18 @@ object OAuth2 {
     __obj.asInstanceOf[OAuth2]
   }
   
-  @scala.inline
-  implicit class OAuth2MutableBuilder[Self <: OAuth2] (val x: Self) extends AnyVal {
+  extension [Self <: OAuth2](x: Self) {
     
-    @scala.inline
-    def setClient(value: js.Any): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+    inline def setClient(value: js.Any): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfo(value: OAuth2Info): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: OAuth2Info): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectURI(value: String): Self = StObject.set(x, "redirectURI", value.asInstanceOf[js.Any])
+    inline def setRedirectURI(value: String): Self = StObject.set(x, "redirectURI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReq(value: OAuth2Req): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+    inline def setReq(value: OAuth2Req): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionID(value: String): Self = StObject.set(x, "transactionID", value.asInstanceOf[js.Any])
+    inline def setTransactionID(value: String): Self = StObject.set(x, "transactionID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: js.Any): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: js.Any): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

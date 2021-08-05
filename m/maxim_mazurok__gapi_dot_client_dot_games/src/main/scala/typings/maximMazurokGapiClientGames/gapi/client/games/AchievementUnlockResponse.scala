@@ -14,25 +14,19 @@ trait AchievementUnlockResponse extends StObject {
 }
 object AchievementUnlockResponse {
   
-  @scala.inline
-  def apply(): AchievementUnlockResponse = {
+  inline def apply(): AchievementUnlockResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AchievementUnlockResponse]
   }
   
-  @scala.inline
-  implicit class AchievementUnlockResponseMutableBuilder[Self <: AchievementUnlockResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AchievementUnlockResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNewlyUnlocked(value: Boolean): Self = StObject.set(x, "newlyUnlocked", value.asInstanceOf[js.Any])
+    inline def setNewlyUnlocked(value: Boolean): Self = StObject.set(x, "newlyUnlocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewlyUnlockedUndefined: Self = StObject.set(x, "newlyUnlocked", js.undefined)
+    inline def setNewlyUnlockedUndefined: Self = StObject.set(x, "newlyUnlocked", js.undefined)
   }
 }

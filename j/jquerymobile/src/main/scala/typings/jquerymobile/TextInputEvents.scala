@@ -11,19 +11,15 @@ trait TextInputEvents extends StObject {
 }
 object TextInputEvents {
   
-  @scala.inline
-  def apply(): TextInputEvents = {
+  inline def apply(): TextInputEvents = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextInputEvents]
   }
   
-  @scala.inline
-  implicit class TextInputEventsMutableBuilder[Self <: TextInputEvents] (val x: Self) extends AnyVal {
+  extension [Self <: TextInputEvents](x: Self) {
     
-    @scala.inline
-    def setCreate(value: (/* event */ Event, /* ui */ js.Any) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+    inline def setCreate(value: (/* event */ Event, /* ui */ js.Any) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+    inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
   }
 }

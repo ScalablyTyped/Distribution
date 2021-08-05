@@ -36,8 +36,7 @@ trait MagneticStripeReaderBankCardDataReceivedEventArgs extends StObject {
 }
 object MagneticStripeReaderBankCardDataReceivedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accountNumber: String,
     expirationDate: String,
     firstName: String,
@@ -52,34 +51,24 @@ object MagneticStripeReaderBankCardDataReceivedEventArgs {
     __obj.asInstanceOf[MagneticStripeReaderBankCardDataReceivedEventArgs]
   }
   
-  @scala.inline
-  implicit class MagneticStripeReaderBankCardDataReceivedEventArgsMutableBuilder[Self <: MagneticStripeReaderBankCardDataReceivedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: MagneticStripeReaderBankCardDataReceivedEventArgs](x: Self) {
     
-    @scala.inline
-    def setAccountNumber(value: String): Self = StObject.set(x, "accountNumber", value.asInstanceOf[js.Any])
+    inline def setAccountNumber(value: String): Self = StObject.set(x, "accountNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationDate(value: String): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
+    inline def setExpirationDate(value: String): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
+    inline def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMiddleInitial(value: String): Self = StObject.set(x, "middleInitial", value.asInstanceOf[js.Any])
+    inline def setMiddleInitial(value: String): Self = StObject.set(x, "middleInitial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReport(value: MagneticStripeReaderReport): Self = StObject.set(x, "report", value.asInstanceOf[js.Any])
+    inline def setReport(value: MagneticStripeReaderReport): Self = StObject.set(x, "report", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceCode(value: String): Self = StObject.set(x, "serviceCode", value.asInstanceOf[js.Any])
+    inline def setServiceCode(value: String): Self = StObject.set(x, "serviceCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+    inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSurname(value: String): Self = StObject.set(x, "surname", value.asInstanceOf[js.Any])
+    inline def setSurname(value: String): Self = StObject.set(x, "surname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

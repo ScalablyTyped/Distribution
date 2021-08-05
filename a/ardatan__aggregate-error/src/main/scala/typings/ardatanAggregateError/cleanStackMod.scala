@@ -10,8 +10,6 @@ object cleanStackMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def cleanStack(stack: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanStack")(stack.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def cleanStack(stack: String, basePath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("cleanStack")(stack.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cleanStack(stack: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanStack")(stack.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def cleanStack(stack: String, basePath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("cleanStack")(stack.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[String]
 }

@@ -44,8 +44,7 @@ trait SymbolInformation extends StObject {
 }
 object SymbolInformation {
   
-  @scala.inline
-  def apply(kind: SymbolKind, location: Location, name: String): SymbolInformation = {
+  inline def apply(kind: SymbolKind, location: Location, name: String): SymbolInformation = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SymbolInformation]
   }
@@ -63,37 +62,25 @@ object SymbolInformation {
     * @param uri The resource of the location of symbol, defaults to the current document.
     * @param containerName The name of the symbol containing the symbol.
     */
-  @scala.inline
-  def create(name: String, kind: SymbolKind, range: Range): SymbolInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[SymbolInformation]
-  @scala.inline
-  def create(name: String, kind: SymbolKind, range: Range, uri: String): SymbolInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], range.asInstanceOf[js.Any], uri.asInstanceOf[js.Any])).asInstanceOf[SymbolInformation]
-  @scala.inline
-  def create(name: String, kind: SymbolKind, range: Range, uri: String, containerName: String): SymbolInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], range.asInstanceOf[js.Any], uri.asInstanceOf[js.Any], containerName.asInstanceOf[js.Any])).asInstanceOf[SymbolInformation]
-  @scala.inline
-  def create(name: String, kind: SymbolKind, range: Range, uri: Unit, containerName: String): SymbolInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], range.asInstanceOf[js.Any], uri.asInstanceOf[js.Any], containerName.asInstanceOf[js.Any])).asInstanceOf[SymbolInformation]
+  inline def create(name: String, kind: SymbolKind, range: Range): SymbolInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[SymbolInformation]
+  inline def create(name: String, kind: SymbolKind, range: Range, uri: String): SymbolInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], range.asInstanceOf[js.Any], uri.asInstanceOf[js.Any])).asInstanceOf[SymbolInformation]
+  inline def create(name: String, kind: SymbolKind, range: Range, uri: String, containerName: String): SymbolInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], range.asInstanceOf[js.Any], uri.asInstanceOf[js.Any], containerName.asInstanceOf[js.Any])).asInstanceOf[SymbolInformation]
+  inline def create(name: String, kind: SymbolKind, range: Range, uri: Unit, containerName: String): SymbolInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], range.asInstanceOf[js.Any], uri.asInstanceOf[js.Any], containerName.asInstanceOf[js.Any])).asInstanceOf[SymbolInformation]
   
-  @scala.inline
-  implicit class SymbolInformationMutableBuilder[Self <: SymbolInformation] (val x: Self) extends AnyVal {
+  extension [Self <: SymbolInformation](x: Self) {
     
-    @scala.inline
-    def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
+    inline def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerNameUndefined: Self = StObject.set(x, "containerName", js.undefined)
+    inline def setContainerNameUndefined: Self = StObject.set(x, "containerName", js.undefined)
     
-    @scala.inline
-    def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
+    inline def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
+    inline def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
     
-    @scala.inline
-    def setKind(value: SymbolKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: SymbolKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

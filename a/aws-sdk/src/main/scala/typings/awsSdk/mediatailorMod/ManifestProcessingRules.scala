@@ -10,19 +10,15 @@ trait ManifestProcessingRules extends StObject {
 }
 object ManifestProcessingRules {
   
-  @scala.inline
-  def apply(): ManifestProcessingRules = {
+  inline def apply(): ManifestProcessingRules = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ManifestProcessingRules]
   }
   
-  @scala.inline
-  implicit class ManifestProcessingRulesMutableBuilder[Self <: ManifestProcessingRules] (val x: Self) extends AnyVal {
+  extension [Self <: ManifestProcessingRules](x: Self) {
     
-    @scala.inline
-    def setAdMarkerPassthrough(value: AdMarkerPassthrough): Self = StObject.set(x, "AdMarkerPassthrough", value.asInstanceOf[js.Any])
+    inline def setAdMarkerPassthrough(value: AdMarkerPassthrough): Self = StObject.set(x, "AdMarkerPassthrough", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdMarkerPassthroughUndefined: Self = StObject.set(x, "AdMarkerPassthrough", js.undefined)
+    inline def setAdMarkerPassthroughUndefined: Self = StObject.set(x, "AdMarkerPassthrough", js.undefined)
   }
 }

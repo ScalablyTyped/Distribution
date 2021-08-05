@@ -13,19 +13,15 @@ trait DeregisterWebhookWithThirdPartyInput extends StObject {
 }
 object DeregisterWebhookWithThirdPartyInput {
   
-  @scala.inline
-  def apply(): DeregisterWebhookWithThirdPartyInput = {
+  inline def apply(): DeregisterWebhookWithThirdPartyInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeregisterWebhookWithThirdPartyInput]
   }
   
-  @scala.inline
-  implicit class DeregisterWebhookWithThirdPartyInputMutableBuilder[Self <: DeregisterWebhookWithThirdPartyInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeregisterWebhookWithThirdPartyInput](x: Self) {
     
-    @scala.inline
-    def setWebhookName(value: WebhookName): Self = StObject.set(x, "webhookName", value.asInstanceOf[js.Any])
+    inline def setWebhookName(value: WebhookName): Self = StObject.set(x, "webhookName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebhookNameUndefined: Self = StObject.set(x, "webhookName", js.undefined)
+    inline def setWebhookNameUndefined: Self = StObject.set(x, "webhookName", js.undefined)
   }
 }

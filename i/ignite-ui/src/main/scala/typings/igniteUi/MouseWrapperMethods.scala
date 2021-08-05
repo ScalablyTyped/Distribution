@@ -10,16 +10,13 @@ trait MouseWrapperMethods extends StObject {
 }
 object MouseWrapperMethods {
   
-  @scala.inline
-  def apply(destroy: () => Unit): MouseWrapperMethods = {
+  inline def apply(destroy: () => Unit): MouseWrapperMethods = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy))
     __obj.asInstanceOf[MouseWrapperMethods]
   }
   
-  @scala.inline
-  implicit class MouseWrapperMethodsMutableBuilder[Self <: MouseWrapperMethods] (val x: Self) extends AnyVal {
+  extension [Self <: MouseWrapperMethods](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
   }
 }

@@ -12,19 +12,15 @@ trait BotCommand extends StObject {
 }
 object BotCommand {
   
-  @scala.inline
-  def apply(command: String, description: String): BotCommand = {
+  inline def apply(command: String, description: String): BotCommand = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any])
     __obj.asInstanceOf[BotCommand]
   }
   
-  @scala.inline
-  implicit class BotCommandMutableBuilder[Self <: BotCommand] (val x: Self) extends AnyVal {
+  extension [Self <: BotCommand](x: Self) {
     
-    @scala.inline
-    def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
   }
 }

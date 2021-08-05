@@ -15,19 +15,15 @@ trait MediaRatio extends StObject {
 }
 object MediaRatio {
   
-  @scala.inline
-  def apply(denominator: Double, numerator: Double): MediaRatio = {
+  inline def apply(denominator: Double, numerator: Double): MediaRatio = {
     val __obj = js.Dynamic.literal(denominator = denominator.asInstanceOf[js.Any], numerator = numerator.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaRatio]
   }
   
-  @scala.inline
-  implicit class MediaRatioMutableBuilder[Self <: MediaRatio] (val x: Self) extends AnyVal {
+  extension [Self <: MediaRatio](x: Self) {
     
-    @scala.inline
-    def setDenominator(value: Double): Self = StObject.set(x, "denominator", value.asInstanceOf[js.Any])
+    inline def setDenominator(value: Double): Self = StObject.set(x, "denominator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumerator(value: Double): Self = StObject.set(x, "numerator", value.asInstanceOf[js.Any])
+    inline def setNumerator(value: Double): Self = StObject.set(x, "numerator", value.asInstanceOf[js.Any])
   }
 }

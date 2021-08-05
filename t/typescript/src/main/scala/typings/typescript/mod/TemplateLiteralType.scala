@@ -14,8 +14,7 @@ trait TemplateLiteralType
 }
 object TemplateLiteralType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     flags: TypeFlags,
     getApparentProperties: () => js.Array[Symbol],
     getBaseTypes: () => js.UndefOr[js.Array[BaseType]],
@@ -47,19 +46,14 @@ object TemplateLiteralType {
     __obj.asInstanceOf[TemplateLiteralType]
   }
   
-  @scala.inline
-  implicit class TemplateLiteralTypeMutableBuilder[Self <: TemplateLiteralType] (val x: Self) extends AnyVal {
+  extension [Self <: TemplateLiteralType](x: Self) {
     
-    @scala.inline
-    def setTexts(value: js.Array[java.lang.String]): Self = StObject.set(x, "texts", value.asInstanceOf[js.Any])
+    inline def setTexts(value: js.Array[java.lang.String]): Self = StObject.set(x, "texts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextsVarargs(value: java.lang.String*): Self = StObject.set(x, "texts", js.Array(value :_*))
+    inline def setTextsVarargs(value: java.lang.String*): Self = StObject.set(x, "texts", js.Array(value :_*))
     
-    @scala.inline
-    def setTypes(value: js.Array[Type]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: js.Array[Type]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesVarargs(value: Type*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: Type*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

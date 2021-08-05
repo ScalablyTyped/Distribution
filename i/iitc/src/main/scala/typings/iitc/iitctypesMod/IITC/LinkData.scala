@@ -22,8 +22,7 @@ trait LinkData extends StObject {
 }
 object LinkData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dGuid: String,
     dLatE6: Double,
     dLngE6: Double,
@@ -36,28 +35,20 @@ object LinkData {
     __obj.asInstanceOf[LinkData]
   }
   
-  @scala.inline
-  implicit class LinkDataMutableBuilder[Self <: LinkData] (val x: Self) extends AnyVal {
+  extension [Self <: LinkData](x: Self) {
     
-    @scala.inline
-    def setDGuid(value: String): Self = StObject.set(x, "dGuid", value.asInstanceOf[js.Any])
+    inline def setDGuid(value: String): Self = StObject.set(x, "dGuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDLatE6(value: Double): Self = StObject.set(x, "dLatE6", value.asInstanceOf[js.Any])
+    inline def setDLatE6(value: Double): Self = StObject.set(x, "dLatE6", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDLngE6(value: Double): Self = StObject.set(x, "dLngE6", value.asInstanceOf[js.Any])
+    inline def setDLngE6(value: Double): Self = StObject.set(x, "dLngE6", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOGuid(value: String): Self = StObject.set(x, "oGuid", value.asInstanceOf[js.Any])
+    inline def setOGuid(value: String): Self = StObject.set(x, "oGuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOLatE6(value: Double): Self = StObject.set(x, "oLatE6", value.asInstanceOf[js.Any])
+    inline def setOLatE6(value: Double): Self = StObject.set(x, "oLatE6", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOLngE6(value: Double): Self = StObject.set(x, "oLngE6", value.asInstanceOf[js.Any])
+    inline def setOLngE6(value: Double): Self = StObject.set(x, "oLngE6", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeam(value: String): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
+    inline def setTeam(value: String): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
   }
 }

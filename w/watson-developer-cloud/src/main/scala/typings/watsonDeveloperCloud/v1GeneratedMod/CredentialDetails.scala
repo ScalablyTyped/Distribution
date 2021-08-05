@@ -66,127 +66,87 @@ trait CredentialDetails extends StObject {
 }
 object CredentialDetails {
   
-  @scala.inline
-  def apply(): CredentialDetails = {
+  inline def apply(): CredentialDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CredentialDetails]
   }
   
-  @scala.inline
-  implicit class CredentialDetailsMutableBuilder[Self <: CredentialDetails] (val x: Self) extends AnyVal {
+  extension [Self <: CredentialDetails](x: Self) {
     
-    @scala.inline
-    def setAccess_key_id(value: String): Self = StObject.set(x, "access_key_id", value.asInstanceOf[js.Any])
+    inline def setAccess_key_id(value: String): Self = StObject.set(x, "access_key_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccess_key_idUndefined: Self = StObject.set(x, "access_key_id", js.undefined)
+    inline def setAccess_key_idUndefined: Self = StObject.set(x, "access_key_id", js.undefined)
     
-    @scala.inline
-    def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
+    inline def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClient_idUndefined: Self = StObject.set(x, "client_id", js.undefined)
+    inline def setClient_idUndefined: Self = StObject.set(x, "client_id", js.undefined)
     
-    @scala.inline
-    def setClient_secret(value: String): Self = StObject.set(x, "client_secret", value.asInstanceOf[js.Any])
+    inline def setClient_secret(value: String): Self = StObject.set(x, "client_secret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClient_secretUndefined: Self = StObject.set(x, "client_secret", js.undefined)
+    inline def setClient_secretUndefined: Self = StObject.set(x, "client_secret", js.undefined)
     
-    @scala.inline
-    def setCredential_type(value: String): Self = StObject.set(x, "credential_type", value.asInstanceOf[js.Any])
+    inline def setCredential_type(value: String): Self = StObject.set(x, "credential_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredential_typeUndefined: Self = StObject.set(x, "credential_type", js.undefined)
+    inline def setCredential_typeUndefined: Self = StObject.set(x, "credential_type", js.undefined)
     
-    @scala.inline
-    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
-    @scala.inline
-    def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
+    inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
     
-    @scala.inline
-    def setEnterprise_id(value: String): Self = StObject.set(x, "enterprise_id", value.asInstanceOf[js.Any])
+    inline def setEnterprise_id(value: String): Self = StObject.set(x, "enterprise_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterprise_idUndefined: Self = StObject.set(x, "enterprise_id", js.undefined)
+    inline def setEnterprise_idUndefined: Self = StObject.set(x, "enterprise_id", js.undefined)
     
-    @scala.inline
-    def setGateway_id(value: String): Self = StObject.set(x, "gateway_id", value.asInstanceOf[js.Any])
+    inline def setGateway_id(value: String): Self = StObject.set(x, "gateway_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGateway_idUndefined: Self = StObject.set(x, "gateway_id", js.undefined)
+    inline def setGateway_idUndefined: Self = StObject.set(x, "gateway_id", js.undefined)
     
-    @scala.inline
-    def setOrganization_url(value: String): Self = StObject.set(x, "organization_url", value.asInstanceOf[js.Any])
+    inline def setOrganization_url(value: String): Self = StObject.set(x, "organization_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganization_urlUndefined: Self = StObject.set(x, "organization_url", js.undefined)
+    inline def setOrganization_urlUndefined: Self = StObject.set(x, "organization_url", js.undefined)
     
-    @scala.inline
-    def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
+    inline def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
+    inline def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
-    @scala.inline
-    def setPrivate_key(value: String): Self = StObject.set(x, "private_key", value.asInstanceOf[js.Any])
+    inline def setPrivate_key(value: String): Self = StObject.set(x, "private_key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivate_keyUndefined: Self = StObject.set(x, "private_key", js.undefined)
+    inline def setPrivate_keyUndefined: Self = StObject.set(x, "private_key", js.undefined)
     
-    @scala.inline
-    def setPublic_key_id(value: String): Self = StObject.set(x, "public_key_id", value.asInstanceOf[js.Any])
+    inline def setPublic_key_id(value: String): Self = StObject.set(x, "public_key_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublic_key_idUndefined: Self = StObject.set(x, "public_key_id", js.undefined)
+    inline def setPublic_key_idUndefined: Self = StObject.set(x, "public_key_id", js.undefined)
     
-    @scala.inline
-    def setSecret_access_key(value: String): Self = StObject.set(x, "secret_access_key", value.asInstanceOf[js.Any])
+    inline def setSecret_access_key(value: String): Self = StObject.set(x, "secret_access_key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecret_access_keyUndefined: Self = StObject.set(x, "secret_access_key", js.undefined)
+    inline def setSecret_access_keyUndefined: Self = StObject.set(x, "secret_access_key", js.undefined)
     
-    @scala.inline
-    def setSite_collection_path(value: String): Self = StObject.set(x, "site_collection_path", value.asInstanceOf[js.Any])
+    inline def setSite_collection_path(value: String): Self = StObject.set(x, "site_collection_path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSite_collection_pathUndefined: Self = StObject.set(x, "site_collection_path", js.undefined)
+    inline def setSite_collection_pathUndefined: Self = StObject.set(x, "site_collection_path", js.undefined)
     
-    @scala.inline
-    def setSource_version(value: String): Self = StObject.set(x, "source_version", value.asInstanceOf[js.Any])
+    inline def setSource_version(value: String): Self = StObject.set(x, "source_version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource_versionUndefined: Self = StObject.set(x, "source_version", js.undefined)
+    inline def setSource_versionUndefined: Self = StObject.set(x, "source_version", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     
-    @scala.inline
-    def setWeb_application_url(value: String): Self = StObject.set(x, "web_application_url", value.asInstanceOf[js.Any])
+    inline def setWeb_application_url(value: String): Self = StObject.set(x, "web_application_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeb_application_urlUndefined: Self = StObject.set(x, "web_application_url", js.undefined)
+    inline def setWeb_application_urlUndefined: Self = StObject.set(x, "web_application_url", js.undefined)
   }
 }

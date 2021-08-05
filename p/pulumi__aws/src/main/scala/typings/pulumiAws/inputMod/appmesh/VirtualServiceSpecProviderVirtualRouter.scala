@@ -14,16 +14,13 @@ trait VirtualServiceSpecProviderVirtualRouter extends StObject {
 }
 object VirtualServiceSpecProviderVirtualRouter {
   
-  @scala.inline
-  def apply(virtualRouterName: Input[String]): VirtualServiceSpecProviderVirtualRouter = {
+  inline def apply(virtualRouterName: Input[String]): VirtualServiceSpecProviderVirtualRouter = {
     val __obj = js.Dynamic.literal(virtualRouterName = virtualRouterName.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualServiceSpecProviderVirtualRouter]
   }
   
-  @scala.inline
-  implicit class VirtualServiceSpecProviderVirtualRouterMutableBuilder[Self <: VirtualServiceSpecProviderVirtualRouter] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualServiceSpecProviderVirtualRouter](x: Self) {
     
-    @scala.inline
-    def setVirtualRouterName(value: Input[String]): Self = StObject.set(x, "virtualRouterName", value.asInstanceOf[js.Any])
+    inline def setVirtualRouterName(value: Input[String]): Self = StObject.set(x, "virtualRouterName", value.asInstanceOf[js.Any])
   }
 }

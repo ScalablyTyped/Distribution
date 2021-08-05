@@ -10,19 +10,15 @@ trait MessageTemplate extends StObject {
 }
 object MessageTemplate {
   
-  @scala.inline
-  def apply(): MessageTemplate = {
+  inline def apply(): MessageTemplate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MessageTemplate]
   }
   
-  @scala.inline
-  implicit class MessageTemplateMutableBuilder[Self <: MessageTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: MessageTemplate](x: Self) {
     
-    @scala.inline
-    def setMessageTemplate(value: String): Self = StObject.set(x, "messageTemplate", value.asInstanceOf[js.Any])
+    inline def setMessageTemplate(value: String): Self = StObject.set(x, "messageTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageTemplateUndefined: Self = StObject.set(x, "messageTemplate", js.undefined)
+    inline def setMessageTemplateUndefined: Self = StObject.set(x, "messageTemplate", js.undefined)
   }
 }

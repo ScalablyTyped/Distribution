@@ -32,22 +32,17 @@ trait ConnectedPlayer extends StObject {
 }
 object ConnectedPlayer {
   
-  @scala.inline
-  def apply(getID: () => String, getName: () => String | Null, getPhoto: () => String | Null): ConnectedPlayer = {
+  inline def apply(getID: () => String, getName: () => String | Null, getPhoto: () => String | Null): ConnectedPlayer = {
     val __obj = js.Dynamic.literal(getID = js.Any.fromFunction0(getID), getName = js.Any.fromFunction0(getName), getPhoto = js.Any.fromFunction0(getPhoto))
     __obj.asInstanceOf[ConnectedPlayer]
   }
   
-  @scala.inline
-  implicit class ConnectedPlayerMutableBuilder[Self <: ConnectedPlayer] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectedPlayer](x: Self) {
     
-    @scala.inline
-    def setGetID(value: () => String): Self = StObject.set(x, "getID", js.Any.fromFunction0(value))
+    inline def setGetID(value: () => String): Self = StObject.set(x, "getID", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetName(value: () => String | Null): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String | Null): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPhoto(value: () => String | Null): Self = StObject.set(x, "getPhoto", js.Any.fromFunction0(value))
+    inline def setGetPhoto(value: () => String | Null): Self = StObject.set(x, "getPhoto", js.Any.fromFunction0(value))
   }
 }

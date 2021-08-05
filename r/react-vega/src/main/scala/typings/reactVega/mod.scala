@@ -31,8 +31,7 @@ object mod {
     @JSImport("react-vega", "default.createClassFromSpec")
     @js.native
     def createClassFromSpec: CreateClassFromSpec = js.native
-    @scala.inline
-    def createClassFromSpec_=(x: CreateClassFromSpec): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createClassFromSpec")(x.asInstanceOf[js.Any])
+    inline def createClassFromSpec_=(x: CreateClassFromSpec): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createClassFromSpec")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-vega", "VegaWithSpec")
@@ -53,8 +52,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getSpec(): Spec = ^.asInstanceOf[js.Dynamic].applyDynamic("getSpec")().asInstanceOf[Spec]
+    inline def getSpec(): Spec = ^.asInstanceOf[js.Dynamic].applyDynamic("getSpec")().asInstanceOf[Spec]
   }
   
   @js.native
@@ -74,17 +72,14 @@ object mod {
   }
   object VegaPropsWithSpec {
     
-    @scala.inline
-    def apply(spec: Spec): VegaPropsWithSpec = {
+    inline def apply(spec: Spec): VegaPropsWithSpec = {
       val __obj = js.Dynamic.literal(spec = spec.asInstanceOf[js.Any])
       __obj.asInstanceOf[VegaPropsWithSpec]
     }
     
-    @scala.inline
-    implicit class VegaPropsWithSpecMutableBuilder[Self <: VegaPropsWithSpec] (val x: Self) extends AnyVal {
+    extension [Self <: VegaPropsWithSpec](x: Self) {
       
-      @scala.inline
-      def setSpec(value: Spec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+      inline def setSpec(value: Spec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     }
   }
   
@@ -118,94 +113,66 @@ object mod {
   }
   object VegaPropsWithoutSpec {
     
-    @scala.inline
-    def apply(): VegaPropsWithoutSpec = {
+    inline def apply(): VegaPropsWithoutSpec = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VegaPropsWithoutSpec]
     }
     
-    @scala.inline
-    implicit class VegaPropsWithoutSpecMutableBuilder[Self <: VegaPropsWithoutSpec] (val x: Self) extends AnyVal {
+    extension [Self <: VegaPropsWithoutSpec](x: Self) {
       
-      @scala.inline
-      def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+      inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setData(value: Record[String, js.Array[js.Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Record[String, js.Array[js.Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setEnableHover(value: Boolean): Self = StObject.set(x, "enableHover", value.asInstanceOf[js.Any])
+      inline def setEnableHover(value: Boolean): Self = StObject.set(x, "enableHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableHoverUndefined: Self = StObject.set(x, "enableHover", js.undefined)
+      inline def setEnableHoverUndefined: Self = StObject.set(x, "enableHover", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setLogLevel(value: Double): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+      inline def setLogLevel(value: Double): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
+      inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
       
-      @scala.inline
-      def setOnNewView(value: /* view */ View => Unit): Self = StObject.set(x, "onNewView", js.Any.fromFunction1(value))
+      inline def setOnNewView(value: /* view */ View => Unit): Self = StObject.set(x, "onNewView", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnNewViewUndefined: Self = StObject.set(x, "onNewView", js.undefined)
+      inline def setOnNewViewUndefined: Self = StObject.set(x, "onNewView", js.undefined)
       
-      @scala.inline
-      def setOnParseError(value: /* error */ Error => Unit): Self = StObject.set(x, "onParseError", js.Any.fromFunction1(value))
+      inline def setOnParseError(value: /* error */ Error => Unit): Self = StObject.set(x, "onParseError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnParseErrorUndefined: Self = StObject.set(x, "onParseError", js.undefined)
+      inline def setOnParseErrorUndefined: Self = StObject.set(x, "onParseError", js.undefined)
       
-      @scala.inline
-      def setPadding(value: Double | Bottom): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: Double | Bottom): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      @scala.inline
-      def setRenderer(value: String): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+      inline def setRenderer(value: String): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+      inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTooltip(
+      inline def setTooltip(
         value: (/* handler */ js.Any, /* event */ MouseEvent, /* item */ Item[js.Any], /* value */ js.Any) => Unit
       ): Self = StObject.set(x, "tooltip", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+      inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
 }

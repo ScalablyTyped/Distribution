@@ -14,6 +14,6 @@ object bindingWhenSyntaxMod {
        with typings.inversify.interfacesMod.interfaces.BindingWhenSyntax[T] {
     def this(binding: Binding[T]) = this()
     
-    var _binding: js.Any = js.native
+    /* private */ var _binding: js.Any = js.native
   }
 }

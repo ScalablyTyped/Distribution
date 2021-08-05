@@ -27,13 +27,13 @@ object rendererMod {
     
     var hideGenerator: Boolean = js.native
     
-    var prepareOutputDirectory: js.Any = js.native
+    /* private */ var prepareOutputDirectory: js.Any = js.native
     
-    var prepareTheme: js.Any = js.native
+    /* private */ var prepareTheme: js.Any = js.native
     
     def render(project: ProjectReflection, outputDirectory: String): Unit = js.native
     
-    var renderDocument: js.Any = js.native
+    /* private */ var renderDocument: js.Any = js.native
     
     var theme: js.UndefOr[Theme] = js.native
     
@@ -48,10 +48,8 @@ object rendererMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getDefaultTheme(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultTheme")().asInstanceOf[String]
+    inline def getDefaultTheme(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultTheme")().asInstanceOf[String]
     
-    @scala.inline
-    def getThemeDirectory(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getThemeDirectory")().asInstanceOf[String]
+    inline def getThemeDirectory(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getThemeDirectory")().asInstanceOf[String]
   }
 }

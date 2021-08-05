@@ -26,6 +26,5 @@ object ColorHelper {
     * @return The generated Color value.
     */
   /* static member */
-  @scala.inline
-  def fromArgb(a: Double, r: Double, g: Double, b: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromArgb")(a.asInstanceOf[js.Any], r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Color]
+  inline def fromArgb(a: Double, r: Double, g: Double, b: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromArgb")(a.asInstanceOf[js.Any], r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Color]
 }

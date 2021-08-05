@@ -13,22 +13,17 @@ trait DescribeAcceleratorTypesResponse extends StObject {
 }
 object DescribeAcceleratorTypesResponse {
   
-  @scala.inline
-  def apply(): DescribeAcceleratorTypesResponse = {
+  inline def apply(): DescribeAcceleratorTypesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAcceleratorTypesResponse]
   }
   
-  @scala.inline
-  implicit class DescribeAcceleratorTypesResponseMutableBuilder[Self <: DescribeAcceleratorTypesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAcceleratorTypesResponse](x: Self) {
     
-    @scala.inline
-    def setAcceleratorTypes(value: AcceleratorTypeList): Self = StObject.set(x, "acceleratorTypes", value.asInstanceOf[js.Any])
+    inline def setAcceleratorTypes(value: AcceleratorTypeList): Self = StObject.set(x, "acceleratorTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceleratorTypesUndefined: Self = StObject.set(x, "acceleratorTypes", js.undefined)
+    inline def setAcceleratorTypesUndefined: Self = StObject.set(x, "acceleratorTypes", js.undefined)
     
-    @scala.inline
-    def setAcceleratorTypesVarargs(value: AcceleratorType*): Self = StObject.set(x, "acceleratorTypes", js.Array(value :_*))
+    inline def setAcceleratorTypesVarargs(value: AcceleratorType*): Self = StObject.set(x, "acceleratorTypes", js.Array(value :_*))
   }
 }

@@ -10,17 +10,14 @@ trait JSONSchemaBasicType extends StObject {
 }
 object JSONSchemaBasicType {
   
-  @scala.inline
-  def apply(`type`: JSONBasicTypes): JSONSchemaBasicType = {
+  inline def apply(`type`: JSONBasicTypes): JSONSchemaBasicType = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSONSchemaBasicType]
   }
   
-  @scala.inline
-  implicit class JSONSchemaBasicTypeMutableBuilder[Self <: JSONSchemaBasicType] (val x: Self) extends AnyVal {
+  extension [Self <: JSONSchemaBasicType](x: Self) {
     
-    @scala.inline
-    def setType(value: JSONBasicTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: JSONBasicTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

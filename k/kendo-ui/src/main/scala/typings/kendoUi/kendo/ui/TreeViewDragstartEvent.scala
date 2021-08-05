@@ -13,19 +13,15 @@ trait TreeViewDragstartEvent
 }
 object TreeViewDragstartEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: TreeView): TreeViewDragstartEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: TreeView): TreeViewDragstartEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeViewDragstartEvent]
   }
   
-  @scala.inline
-  implicit class TreeViewDragstartEventMutableBuilder[Self <: TreeViewDragstartEvent] (val x: Self) extends AnyVal {
+  extension [Self <: TreeViewDragstartEvent](x: Self) {
     
-    @scala.inline
-    def setSourceNode(value: Element): Self = StObject.set(x, "sourceNode", value.asInstanceOf[js.Any])
+    inline def setSourceNode(value: Element): Self = StObject.set(x, "sourceNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceNodeUndefined: Self = StObject.set(x, "sourceNode", js.undefined)
+    inline def setSourceNodeUndefined: Self = StObject.set(x, "sourceNode", js.undefined)
   }
 }

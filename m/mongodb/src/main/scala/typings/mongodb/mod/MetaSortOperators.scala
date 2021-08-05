@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MetaSortOperators extends StObject
 object MetaSortOperators {
   
-  @scala.inline
-  def indexKey: typings.mongodb.mongodbStrings.indexKey = "indexKey".asInstanceOf[typings.mongodb.mongodbStrings.indexKey]
+  inline def indexKey: typings.mongodb.mongodbStrings.indexKey = "indexKey".asInstanceOf[typings.mongodb.mongodbStrings.indexKey]
   
-  @scala.inline
-  def textScore: typings.mongodb.mongodbStrings.textScore = "textScore".asInstanceOf[typings.mongodb.mongodbStrings.textScore]
+  inline def textScore: typings.mongodb.mongodbStrings.textScore = "textScore".asInstanceOf[typings.mongodb.mongodbStrings.textScore]
 }

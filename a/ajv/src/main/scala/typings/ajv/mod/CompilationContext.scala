@@ -38,8 +38,7 @@ trait CompilationContext extends StObject {
 }
 object CompilationContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     async: Boolean,
     baseId: String,
     compositeRule: Boolean,
@@ -59,52 +58,36 @@ object CompilationContext {
     __obj.asInstanceOf[CompilationContext]
   }
   
-  @scala.inline
-  implicit class CompilationContextMutableBuilder[Self <: CompilationContext] (val x: Self) extends AnyVal {
+  extension [Self <: CompilationContext](x: Self) {
     
-    @scala.inline
-    def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+    inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseId(value: String): Self = StObject.set(x, "baseId", value.asInstanceOf[js.Any])
+    inline def setBaseId(value: String): Self = StObject.set(x, "baseId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompositeRule(value: Boolean): Self = StObject.set(x, "compositeRule", value.asInstanceOf[js.Any])
+    inline def setCompositeRule(value: Boolean): Self = StObject.set(x, "compositeRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataLevel(value: Double): Self = StObject.set(x, "dataLevel", value.asInstanceOf[js.Any])
+    inline def setDataLevel(value: Double): Self = StObject.set(x, "dataLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataPathArr(value: js.Array[String]): Self = StObject.set(x, "dataPathArr", value.asInstanceOf[js.Any])
+    inline def setDataPathArr(value: js.Array[String]): Self = StObject.set(x, "dataPathArr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataPathArrVarargs(value: String*): Self = StObject.set(x, "dataPathArr", js.Array(value :_*))
+    inline def setDataPathArrVarargs(value: String*): Self = StObject.set(x, "dataPathArr", js.Array(value :_*))
     
-    @scala.inline
-    def setFormats(value: StringDictionary[js.UndefOr[FormatDefinition]]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+    inline def setFormats(value: StringDictionary[js.UndefOr[FormatDefinition]]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeywords(value: StringDictionary[js.UndefOr[KeywordDefinition]]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
+    inline def setKeywords(value: StringDictionary[js.UndefOr[KeywordDefinition]]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpts(value: Options): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
+    inline def setOpts(value: Options): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchema(value: js.Any): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: js.Any): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaPath(value: String): Self = StObject.set(x, "schemaPath", value.asInstanceOf[js.Any])
+    inline def setSchemaPath(value: String): Self = StObject.set(x, "schemaPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelf(value: Ajv): Self = StObject.set(x, "self", value.asInstanceOf[js.Any])
+    inline def setSelf(value: Ajv): Self = StObject.set(x, "self", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtil(value: Copy): Self = StObject.set(x, "util", value.asInstanceOf[js.Any])
+    inline def setUtil(value: Copy): Self = StObject.set(x, "util", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidate(value: js.Object => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+    inline def setValidate(value: js.Object => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
   }
 }

@@ -19,40 +19,29 @@ trait UpsellProps extends StObject {
 }
 object UpsellProps {
   
-  @scala.inline
-  def apply(message: String): UpsellProps = {
+  inline def apply(message: String): UpsellProps = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpsellProps]
   }
   
-  @scala.inline
-  implicit class UpsellPropsMutableBuilder[Self <: UpsellProps] (val x: Self) extends AnyVal {
+  extension [Self <: UpsellProps](x: Self) {
     
-    @scala.inline
-    def setDismissButton(value: AccessibilityLabel): Self = StObject.set(x, "dismissButton", value.asInstanceOf[js.Any])
+    inline def setDismissButton(value: AccessibilityLabel): Self = StObject.set(x, "dismissButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDismissButtonUndefined: Self = StObject.set(x, "dismissButton", js.undefined)
+    inline def setDismissButtonUndefined: Self = StObject.set(x, "dismissButton", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryLink(value: LinkData): Self = StObject.set(x, "primaryLink", value.asInstanceOf[js.Any])
+    inline def setPrimaryLink(value: LinkData): Self = StObject.set(x, "primaryLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryLinkUndefined: Self = StObject.set(x, "primaryLink", js.undefined)
+    inline def setPrimaryLinkUndefined: Self = StObject.set(x, "primaryLink", js.undefined)
     
-    @scala.inline
-    def setSecondaryLink(value: LinkData): Self = StObject.set(x, "secondaryLink", value.asInstanceOf[js.Any])
+    inline def setSecondaryLink(value: LinkData): Self = StObject.set(x, "secondaryLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryLinkUndefined: Self = StObject.set(x, "secondaryLink", js.undefined)
+    inline def setSecondaryLinkUndefined: Self = StObject.set(x, "secondaryLink", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

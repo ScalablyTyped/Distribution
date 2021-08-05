@@ -112,38 +112,28 @@ object mod extends Shortcut {
   }
   object FormatOptions {
     
-    @scala.inline
-    def apply(): FormatOptions = {
+    inline def apply(): FormatOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FormatOptions]
     }
     
-    @scala.inline
-    implicit class FormatOptionsMutableBuilder[Self <: FormatOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FormatOptions](x: Self) {
       
-      @scala.inline
-      def setIncludeNullValues(value: Boolean): Self = StObject.set(x, "includeNullValues", value.asInstanceOf[js.Any])
+      inline def setIncludeNullValues(value: Boolean): Self = StObject.set(x, "includeNullValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeNullValuesUndefined: Self = StObject.set(x, "includeNullValues", js.undefined)
+      inline def setIncludeNullValuesUndefined: Self = StObject.set(x, "includeNullValues", js.undefined)
       
-      @scala.inline
-      def setInitialFormData(value: InitialFormData): Self = StObject.set(x, "initialFormData", value.asInstanceOf[js.Any])
+      inline def setInitialFormData(value: InitialFormData): Self = StObject.set(x, "initialFormData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialFormDataUndefined: Self = StObject.set(x, "initialFormData", js.undefined)
+      inline def setInitialFormDataUndefined: Self = StObject.set(x, "initialFormData", js.undefined)
       
-      @scala.inline
-      def setMapping(value: /* value */ ValidJSONValue => String | Blob): Self = StObject.set(x, "mapping", js.Any.fromFunction1(value))
+      inline def setMapping(value: /* value */ ValidJSONValue => String | Blob): Self = StObject.set(x, "mapping", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMappingUndefined: Self = StObject.set(x, "mapping", js.undefined)
+      inline def setMappingUndefined: Self = StObject.set(x, "mapping", js.undefined)
       
-      @scala.inline
-      def setShowLeafArrayIndexes(value: Boolean): Self = StObject.set(x, "showLeafArrayIndexes", value.asInstanceOf[js.Any])
+      inline def setShowLeafArrayIndexes(value: Boolean): Self = StObject.set(x, "showLeafArrayIndexes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowLeafArrayIndexesUndefined: Self = StObject.set(x, "showLeafArrayIndexes", js.undefined)
+      inline def setShowLeafArrayIndexesUndefined: Self = StObject.set(x, "showLeafArrayIndexes", js.undefined)
     }
   }
   
@@ -158,17 +148,14 @@ object mod extends Shortcut {
   }
   object InitialFormData {
     
-    @scala.inline
-    def apply(append: FnCall): InitialFormData = {
+    inline def apply(append: FnCall): InitialFormData = {
       val __obj = js.Dynamic.literal(append = append.asInstanceOf[js.Any])
       __obj.asInstanceOf[InitialFormData]
     }
     
-    @scala.inline
-    implicit class InitialFormDataMutableBuilder[Self <: InitialFormData] (val x: Self) extends AnyVal {
+    extension [Self <: InitialFormData](x: Self) {
       
-      @scala.inline
-      def setAppend(value: FnCall): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
+      inline def setAppend(value: FnCall): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
     }
   }
   
@@ -177,8 +164,7 @@ object mod extends Shortcut {
        with /* key */ StringDictionary[ValidJSON | ValidJSONValue | js.Array[ValidJSONValue] | FileList]
   object ValidJSON {
     
-    @scala.inline
-    def apply(): ValidJSON = {
+    inline def apply(): ValidJSON = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ValidJSON]
     }

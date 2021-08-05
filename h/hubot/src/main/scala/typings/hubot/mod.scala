@@ -375,23 +375,18 @@ object mod {
   }
   object Envelope {
     
-    @scala.inline
-    def apply(message: Message, room: String, user: User): Envelope = {
+    inline def apply(message: Message, room: String, user: User): Envelope = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
       __obj.asInstanceOf[Envelope]
     }
     
-    @scala.inline
-    implicit class EnvelopeMutableBuilder[Self <: Envelope] (val x: Self) extends AnyVal {
+    extension [Self <: Envelope](x: Self) {
       
-      @scala.inline
-      def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoom(value: String): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
+      inline def setRoom(value: String): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
   
@@ -443,20 +438,16 @@ object mod {
   }
   object MiddlewareContext {
     
-    @scala.inline
-    def apply[T /* <: Adapter */](): MiddlewareContext[T] = {
+    inline def apply[T /* <: Adapter */](): MiddlewareContext[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MiddlewareContext[T]]
     }
     
-    @scala.inline
-    implicit class MiddlewareContextMutableBuilder[Self <: MiddlewareContext[?], T /* <: Adapter */] (val x: Self & MiddlewareContext[T]) extends AnyVal {
+    extension [Self <: MiddlewareContext[?], T /* <: Adapter */](x: Self & MiddlewareContext[T]) {
       
-      @scala.inline
-      def setResponse(value: Response[T, Message]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: Response[T, Message]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+      inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     }
   }
   

@@ -29,8 +29,7 @@ object mod {
        with /* index */ StringDictionary[js.Any]
   object AnyObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       constructor: js.Function,
       hasOwnProperty: PropertyKey => Boolean,
       propertyIsEnumerable: PropertyKey => Boolean
@@ -48,20 +47,16 @@ object mod {
   }
   object Entry {
     
-    @scala.inline
-    def apply(key: String, value: String): Entry = {
+    inline def apply(key: String, value: String): Entry = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Entry]
     }
     
-    @scala.inline
-    implicit class EntryMutableBuilder[Self <: Entry] (val x: Self) extends AnyVal {
+    extension [Self <: Entry](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -146,120 +141,84 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setApply(value: /* manifest */ WebpackAssetsManifest => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
+      inline def setApply(value: /* manifest */ WebpackAssetsManifest => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setApplyNull: Self = StObject.set(x, "apply", null)
+      inline def setApplyNull: Self = StObject.set(x, "apply", null)
       
-      @scala.inline
-      def setApplyUndefined: Self = StObject.set(x, "apply", js.undefined)
+      inline def setApplyUndefined: Self = StObject.set(x, "apply", js.undefined)
       
-      @scala.inline
-      def setAssets(value: js.Object): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
+      inline def setAssets(value: js.Object): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssetsUndefined: Self = StObject.set(x, "assets", js.undefined)
+      inline def setAssetsUndefined: Self = StObject.set(x, "assets", js.undefined)
       
-      @scala.inline
-      def setCustomize(
+      inline def setCustomize(
         value: (/* entry */ Entry, /* original */ AnyObject, /* manifest */ WebpackAssetsManifest, /* asset */ AnyObject) => Entry | `false`
       ): Self = StObject.set(x, "customize", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setCustomizeNull: Self = StObject.set(x, "customize", null)
+      inline def setCustomizeNull: Self = StObject.set(x, "customize", null)
       
-      @scala.inline
-      def setCustomizeUndefined: Self = StObject.set(x, "customize", js.undefined)
+      inline def setCustomizeUndefined: Self = StObject.set(x, "customize", js.undefined)
       
-      @scala.inline
-      def setDone(value: (/* manifest */ WebpackAssetsManifest, /* stats */ AnyObject) => Unit): Self = StObject.set(x, "done", js.Any.fromFunction2(value))
+      inline def setDone(value: (/* manifest */ WebpackAssetsManifest, /* stats */ AnyObject) => Unit): Self = StObject.set(x, "done", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDoneNull: Self = StObject.set(x, "done", null)
+      inline def setDoneNull: Self = StObject.set(x, "done", null)
       
-      @scala.inline
-      def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
+      inline def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
       
-      @scala.inline
-      def setEntrypoints(value: Boolean): Self = StObject.set(x, "entrypoints", value.asInstanceOf[js.Any])
+      inline def setEntrypoints(value: Boolean): Self = StObject.set(x, "entrypoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntrypointsKey(value: String | `false`): Self = StObject.set(x, "entrypointsKey", value.asInstanceOf[js.Any])
+      inline def setEntrypointsKey(value: String | `false`): Self = StObject.set(x, "entrypointsKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntrypointsKeyUndefined: Self = StObject.set(x, "entrypointsKey", js.undefined)
+      inline def setEntrypointsKeyUndefined: Self = StObject.set(x, "entrypointsKey", js.undefined)
       
-      @scala.inline
-      def setEntrypointsUndefined: Self = StObject.set(x, "entrypoints", js.undefined)
+      inline def setEntrypointsUndefined: Self = StObject.set(x, "entrypoints", js.undefined)
       
-      @scala.inline
-      def setFileExtRegex(value: RegExp | `false`): Self = StObject.set(x, "fileExtRegex", value.asInstanceOf[js.Any])
+      inline def setFileExtRegex(value: RegExp | `false`): Self = StObject.set(x, "fileExtRegex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileExtRegexNull: Self = StObject.set(x, "fileExtRegex", null)
+      inline def setFileExtRegexNull: Self = StObject.set(x, "fileExtRegex", null)
       
-      @scala.inline
-      def setFileExtRegexUndefined: Self = StObject.set(x, "fileExtRegex", js.undefined)
+      inline def setFileExtRegexUndefined: Self = StObject.set(x, "fileExtRegex", js.undefined)
       
-      @scala.inline
-      def setIntegrity(value: Boolean): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
+      inline def setIntegrity(value: Boolean): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntegrityHashes(value: js.Array[String]): Self = StObject.set(x, "integrityHashes", value.asInstanceOf[js.Any])
+      inline def setIntegrityHashes(value: js.Array[String]): Self = StObject.set(x, "integrityHashes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntegrityHashesUndefined: Self = StObject.set(x, "integrityHashes", js.undefined)
+      inline def setIntegrityHashesUndefined: Self = StObject.set(x, "integrityHashes", js.undefined)
       
-      @scala.inline
-      def setIntegrityHashesVarargs(value: String*): Self = StObject.set(x, "integrityHashes", js.Array(value :_*))
+      inline def setIntegrityHashesVarargs(value: String*): Self = StObject.set(x, "integrityHashes", js.Array(value :_*))
       
-      @scala.inline
-      def setIntegrityPropertyName(value: String): Self = StObject.set(x, "integrityPropertyName", value.asInstanceOf[js.Any])
+      inline def setIntegrityPropertyName(value: String): Self = StObject.set(x, "integrityPropertyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntegrityPropertyNameUndefined: Self = StObject.set(x, "integrityPropertyName", js.undefined)
+      inline def setIntegrityPropertyNameUndefined: Self = StObject.set(x, "integrityPropertyName", js.undefined)
       
-      @scala.inline
-      def setIntegrityUndefined: Self = StObject.set(x, "integrity", js.undefined)
+      inline def setIntegrityUndefined: Self = StObject.set(x, "integrity", js.undefined)
       
-      @scala.inline
-      def setMerge(value: Boolean | customize): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
+      inline def setMerge(value: Boolean | customize): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMergeUndefined: Self = StObject.set(x, "merge", js.undefined)
+      inline def setMergeUndefined: Self = StObject.set(x, "merge", js.undefined)
       
-      @scala.inline
-      def setOutput(value: String): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: String): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+      inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
       
-      @scala.inline
-      def setPublicPath(
+      inline def setPublicPath(
         value: String | Boolean | (js.Function2[/* filename */ String, /* manifest */ WebpackAssetsManifest, String])
       ): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicPathFunction2(value: (/* filename */ String, /* manifest */ WebpackAssetsManifest) => String): Self = StObject.set(x, "publicPath", js.Any.fromFunction2(value))
+      inline def setPublicPathFunction2(value: (/* filename */ String, /* manifest */ WebpackAssetsManifest) => String): Self = StObject.set(x, "publicPath", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPublicPathNull: Self = StObject.set(x, "publicPath", null)
+      inline def setPublicPathNull: Self = StObject.set(x, "publicPath", null)
       
-      @scala.inline
-      def setPublicPathUndefined: Self = StObject.set(x, "publicPath", js.undefined)
+      inline def setPublicPathUndefined: Self = StObject.set(x, "publicPath", js.undefined)
       
-      @scala.inline
-      def setReplacer(
+      inline def setReplacer(
         value: js.Array[String] | (js.Function2[
               /* key */ String, 
               /* value */ String, 
@@ -267,48 +226,35 @@ object mod {
             ])
       ): Self = StObject.set(x, "replacer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplacerFunction2(
+      inline def setReplacerFunction2(
         value: (/* key */ String, /* value */ String) => js.UndefOr[Double | String | Boolean | Null | js.Object]
       ): Self = StObject.set(x, "replacer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReplacerNull: Self = StObject.set(x, "replacer", null)
+      inline def setReplacerNull: Self = StObject.set(x, "replacer", null)
       
-      @scala.inline
-      def setReplacerUndefined: Self = StObject.set(x, "replacer", js.undefined)
+      inline def setReplacerUndefined: Self = StObject.set(x, "replacer", js.undefined)
       
-      @scala.inline
-      def setReplacerVarargs(value: String*): Self = StObject.set(x, "replacer", js.Array(value :_*))
+      inline def setReplacerVarargs(value: String*): Self = StObject.set(x, "replacer", js.Array(value :_*))
       
-      @scala.inline
-      def setSortManifest(
+      inline def setSortManifest(
         value: Boolean | (js.ThisFunction2[/* this */ WebpackAssetsManifest, /* a */ String, /* b */ String, Double])
       ): Self = StObject.set(x, "sortManifest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortManifestUndefined: Self = StObject.set(x, "sortManifest", js.undefined)
+      inline def setSortManifestUndefined: Self = StObject.set(x, "sortManifest", js.undefined)
       
-      @scala.inline
-      def setSpace(value: Double): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
+      inline def setSpace(value: Double): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
+      inline def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
       
-      @scala.inline
-      def setTransform(value: (/* assets */ AnyObject, /* manifest */ WebpackAssetsManifest) => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
+      inline def setTransform(value: (/* assets */ AnyObject, /* manifest */ WebpackAssetsManifest) => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTransformNull: Self = StObject.set(x, "transform", null)
+      inline def setTransformNull: Self = StObject.set(x, "transform", null)
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       
-      @scala.inline
-      def setWriteToDisk(value: Boolean): Self = StObject.set(x, "writeToDisk", value.asInstanceOf[js.Any])
+      inline def setWriteToDisk(value: Boolean): Self = StObject.set(x, "writeToDisk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteToDiskUndefined: Self = StObject.set(x, "writeToDisk", js.undefined)
+      inline def setWriteToDiskUndefined: Self = StObject.set(x, "writeToDisk", js.undefined)
     }
   }
   

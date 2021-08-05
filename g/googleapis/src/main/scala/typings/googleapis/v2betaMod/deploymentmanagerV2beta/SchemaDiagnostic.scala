@@ -19,25 +19,19 @@ trait SchemaDiagnostic extends StObject {
 }
 object SchemaDiagnostic {
   
-  @scala.inline
-  def apply(): SchemaDiagnostic = {
+  inline def apply(): SchemaDiagnostic = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDiagnostic]
   }
   
-  @scala.inline
-  implicit class SchemaDiagnosticMutableBuilder[Self <: SchemaDiagnostic] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDiagnostic](x: Self) {
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
   }
 }

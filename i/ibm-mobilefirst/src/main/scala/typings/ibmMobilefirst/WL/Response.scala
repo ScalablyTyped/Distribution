@@ -17,8 +17,7 @@ trait Response
 }
 object Response {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     errorCode: Double,
     errorMsg: String,
     getAllHeaders: () => Headers,
@@ -38,16 +37,12 @@ object Response {
     __obj.asInstanceOf[Response]
   }
   
-  @scala.inline
-  implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
+  extension [Self <: Response](x: Self) {
     
-    @scala.inline
-    def setGetAllHeaders(value: () => Headers): Self = StObject.set(x, "getAllHeaders", js.Any.fromFunction0(value))
+    inline def setGetAllHeaders(value: () => Headers): Self = StObject.set(x, "getAllHeaders", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHeader(value: js.Any => String): Self = StObject.set(x, "getHeader", js.Any.fromFunction1(value))
+    inline def setGetHeader(value: js.Any => String): Self = StObject.set(x, "getHeader", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetHeaderNames(value: () => js.Array[String]): Self = StObject.set(x, "getHeaderNames", js.Any.fromFunction0(value))
+    inline def setGetHeaderNames(value: () => js.Array[String]): Self = StObject.set(x, "getHeaderNames", js.Any.fromFunction0(value))
   }
 }

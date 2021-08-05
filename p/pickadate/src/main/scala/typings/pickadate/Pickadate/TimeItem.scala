@@ -20,19 +20,15 @@ trait TimeItem
 }
 object TimeItem {
   
-  @scala.inline
-  def apply(hour: Double, mins: Double, pick: Double): TimeItem = {
+  inline def apply(hour: Double, mins: Double, pick: Double): TimeItem = {
     val __obj = js.Dynamic.literal(hour = hour.asInstanceOf[js.Any], mins = mins.asInstanceOf[js.Any], pick = pick.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeItem]
   }
   
-  @scala.inline
-  implicit class TimeItemMutableBuilder[Self <: TimeItem] (val x: Self) extends AnyVal {
+  extension [Self <: TimeItem](x: Self) {
     
-    @scala.inline
-    def setHour(value: Double): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
+    inline def setHour(value: Double): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMins(value: Double): Self = StObject.set(x, "mins", value.asInstanceOf[js.Any])
+    inline def setMins(value: Double): Self = StObject.set(x, "mins", value.asInstanceOf[js.Any])
   }
 }

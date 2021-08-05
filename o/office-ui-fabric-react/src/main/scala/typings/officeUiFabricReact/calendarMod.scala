@@ -23,8 +23,7 @@ object calendarMod {
     @JSImport("office-ui-fabric-react/lib/components/Calendar", "Calendar.defaultProps")
     @js.native
     def defaultProps: ICalendarProps = js.native
-    @scala.inline
-    def defaultProps_=(x: ICalendarProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: ICalendarProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("office-ui-fabric-react/lib/components/Calendar", "DateRangeType")

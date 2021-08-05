@@ -17,24 +17,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StreamFilterStatus extends StObject
 object StreamFilterStatus {
   
-  @scala.inline
-  def closed: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.closed = "closed".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.closed]
+  inline def closed: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.closed = "closed".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.closed]
   
-  @scala.inline
-  def disconnected: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.disconnected = "disconnected".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.disconnected]
+  inline def disconnected: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.disconnected = "disconnected".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.disconnected]
   
-  @scala.inline
-  def failed: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.failed = "failed".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.failed]
+  inline def failed: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.failed = "failed".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.failed]
   
-  @scala.inline
-  def finishedtransferringdata: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.finishedtransferringdata = "finishedtransferringdata".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.finishedtransferringdata]
+  inline def finishedtransferringdata: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.finishedtransferringdata = "finishedtransferringdata".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.finishedtransferringdata]
   
-  @scala.inline
-  def suspended: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.suspended = "suspended".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.suspended]
+  inline def suspended: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.suspended = "suspended".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.suspended]
   
-  @scala.inline
-  def transferringdata: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.transferringdata = "transferringdata".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.transferringdata]
+  inline def transferringdata: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.transferringdata = "transferringdata".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.transferringdata]
   
-  @scala.inline
-  def uninitialized: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.uninitialized = "uninitialized".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.uninitialized]
+  inline def uninitialized: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.uninitialized = "uninitialized".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.uninitialized]
 }

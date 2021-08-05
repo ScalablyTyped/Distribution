@@ -281,8 +281,7 @@ object SyntaxTreeToAstVisitor {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def visit(
+  inline def visit(
     syntaxTree: typings.typescriptServices.TypeScript.SyntaxTree,
     fileName: String,
     compilationSettings: typings.typescriptServices.TypeScript.ImmutableCompilationSettings,

@@ -16,8 +16,7 @@ trait ReaderField
      with ReaderSelection
 object ReaderField {
   
-  @scala.inline
-  def ReaderLinkedField(
+  inline def ReaderLinkedField(
     args: js.Array[ReaderArgument],
     kind: String,
     name: String,
@@ -28,14 +27,12 @@ object ReaderField {
     __obj.asInstanceOf[typings.relayRuntime.readerNodeMod.ReaderLinkedField]
   }
   
-  @scala.inline
-  def ReaderMatchField(kind: String, matchesByType: StringDictionary[FragmentName], name: String): typings.relayRuntime.readerNodeMod.ReaderMatchField = {
+  inline def ReaderMatchField(kind: String, matchesByType: StringDictionary[FragmentName], name: String): typings.relayRuntime.readerNodeMod.ReaderMatchField = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], matchesByType = matchesByType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.relayRuntime.readerNodeMod.ReaderMatchField]
   }
   
-  @scala.inline
-  def ReaderScalarField(kind: String, name: String): typings.relayRuntime.readerNodeMod.ReaderScalarField = {
+  inline def ReaderScalarField(kind: String, name: String): typings.relayRuntime.readerNodeMod.ReaderScalarField = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.relayRuntime.readerNodeMod.ReaderScalarField]
   }

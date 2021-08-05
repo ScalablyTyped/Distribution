@@ -123,211 +123,144 @@ object mod {
   }
   object ReactTagsProps {
     
-    @scala.inline
-    def apply(handleAddition: Id => Unit, handleDelete: Double => Unit): ReactTagsProps = {
+    inline def apply(handleAddition: Id => Unit, handleDelete: Double => Unit): ReactTagsProps = {
       val __obj = js.Dynamic.literal(handleAddition = js.Any.fromFunction1(handleAddition), handleDelete = js.Any.fromFunction1(handleDelete))
       __obj.asInstanceOf[ReactTagsProps]
     }
     
-    @scala.inline
-    implicit class ReactTagsPropsMutableBuilder[Self <: ReactTagsProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReactTagsProps](x: Self) {
       
-      @scala.inline
-      def setAllowAdditionFromPaste(value: Boolean): Self = StObject.set(x, "allowAdditionFromPaste", value.asInstanceOf[js.Any])
+      inline def setAllowAdditionFromPaste(value: Boolean): Self = StObject.set(x, "allowAdditionFromPaste", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowAdditionFromPasteUndefined: Self = StObject.set(x, "allowAdditionFromPaste", js.undefined)
+      inline def setAllowAdditionFromPasteUndefined: Self = StObject.set(x, "allowAdditionFromPaste", js.undefined)
       
-      @scala.inline
-      def setAllowDeleteFromEmptyInput(value: Boolean): Self = StObject.set(x, "allowDeleteFromEmptyInput", value.asInstanceOf[js.Any])
+      inline def setAllowDeleteFromEmptyInput(value: Boolean): Self = StObject.set(x, "allowDeleteFromEmptyInput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowDeleteFromEmptyInputUndefined: Self = StObject.set(x, "allowDeleteFromEmptyInput", js.undefined)
+      inline def setAllowDeleteFromEmptyInputUndefined: Self = StObject.set(x, "allowDeleteFromEmptyInput", js.undefined)
       
-      @scala.inline
-      def setAllowDragDrop(value: Boolean): Self = StObject.set(x, "allowDragDrop", value.asInstanceOf[js.Any])
+      inline def setAllowDragDrop(value: Boolean): Self = StObject.set(x, "allowDragDrop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowDragDropUndefined: Self = StObject.set(x, "allowDragDrop", js.undefined)
+      inline def setAllowDragDropUndefined: Self = StObject.set(x, "allowDragDrop", js.undefined)
       
-      @scala.inline
-      def setAllowUnique(value: Boolean): Self = StObject.set(x, "allowUnique", value.asInstanceOf[js.Any])
+      inline def setAllowUnique(value: Boolean): Self = StObject.set(x, "allowUnique", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowUniqueUndefined: Self = StObject.set(x, "allowUnique", js.undefined)
+      inline def setAllowUniqueUndefined: Self = StObject.set(x, "allowUnique", js.undefined)
       
-      @scala.inline
-      def setAutocomplete(value: Boolean | `1`): Self = StObject.set(x, "autocomplete", value.asInstanceOf[js.Any])
+      inline def setAutocomplete(value: Boolean | `1`): Self = StObject.set(x, "autocomplete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutocompleteUndefined: Self = StObject.set(x, "autocomplete", js.undefined)
+      inline def setAutocompleteUndefined: Self = StObject.set(x, "autocomplete", js.undefined)
       
-      @scala.inline
-      def setAutofocus(value: Boolean): Self = StObject.set(x, "autofocus", value.asInstanceOf[js.Any])
+      inline def setAutofocus(value: Boolean): Self = StObject.set(x, "autofocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutofocusUndefined: Self = StObject.set(x, "autofocus", js.undefined)
+      inline def setAutofocusUndefined: Self = StObject.set(x, "autofocus", js.undefined)
       
-      @scala.inline
-      def setClassNames(value: ActiveSuggestion): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
+      inline def setClassNames(value: ActiveSuggestion): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNamesUndefined: Self = StObject.set(x, "classNames", js.undefined)
+      inline def setClassNamesUndefined: Self = StObject.set(x, "classNames", js.undefined)
       
-      @scala.inline
-      def setDelimiters(value: js.Array[Double]): Self = StObject.set(x, "delimiters", value.asInstanceOf[js.Any])
+      inline def setDelimiters(value: js.Array[Double]): Self = StObject.set(x, "delimiters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelimitersUndefined: Self = StObject.set(x, "delimiters", js.undefined)
+      inline def setDelimitersUndefined: Self = StObject.set(x, "delimiters", js.undefined)
       
-      @scala.inline
-      def setDelimitersVarargs(value: Double*): Self = StObject.set(x, "delimiters", js.Array(value :_*))
+      inline def setDelimitersVarargs(value: Double*): Self = StObject.set(x, "delimiters", js.Array(value :_*))
       
-      @scala.inline
-      def setHandleAddition(value: Id => Unit): Self = StObject.set(x, "handleAddition", js.Any.fromFunction1(value))
+      inline def setHandleAddition(value: Id => Unit): Self = StObject.set(x, "handleAddition", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHandleDelete(value: Double => Unit): Self = StObject.set(x, "handleDelete", js.Any.fromFunction1(value))
+      inline def setHandleDelete(value: Double => Unit): Self = StObject.set(x, "handleDelete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHandleDrag(value: (/* tag */ Id, /* currPos */ Double, /* newPos */ Double) => Unit): Self = StObject.set(x, "handleDrag", js.Any.fromFunction3(value))
+      inline def setHandleDrag(value: (/* tag */ Id, /* currPos */ Double, /* newPos */ Double) => Unit): Self = StObject.set(x, "handleDrag", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setHandleDragUndefined: Self = StObject.set(x, "handleDrag", js.undefined)
+      inline def setHandleDragUndefined: Self = StObject.set(x, "handleDrag", js.undefined)
       
-      @scala.inline
-      def setHandleFilterSuggestions(
+      inline def setHandleFilterSuggestions(
         value: (/* textInputValue */ String, /* possibleSuggestionsArray */ js.Array[Tag]) => js.Array[Tag]
       ): Self = StObject.set(x, "handleFilterSuggestions", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setHandleFilterSuggestionsUndefined: Self = StObject.set(x, "handleFilterSuggestions", js.undefined)
+      inline def setHandleFilterSuggestionsUndefined: Self = StObject.set(x, "handleFilterSuggestions", js.undefined)
       
-      @scala.inline
-      def setHandleInputBlur(value: /* textInputValue */ String => Unit): Self = StObject.set(x, "handleInputBlur", js.Any.fromFunction1(value))
+      inline def setHandleInputBlur(value: /* textInputValue */ String => Unit): Self = StObject.set(x, "handleInputBlur", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHandleInputBlurUndefined: Self = StObject.set(x, "handleInputBlur", js.undefined)
+      inline def setHandleInputBlurUndefined: Self = StObject.set(x, "handleInputBlur", js.undefined)
       
-      @scala.inline
-      def setHandleInputChange(value: /* value */ String => Unit): Self = StObject.set(x, "handleInputChange", js.Any.fromFunction1(value))
+      inline def setHandleInputChange(value: /* value */ String => Unit): Self = StObject.set(x, "handleInputChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHandleInputChangeUndefined: Self = StObject.set(x, "handleInputChange", js.undefined)
+      inline def setHandleInputChangeUndefined: Self = StObject.set(x, "handleInputChange", js.undefined)
       
-      @scala.inline
-      def setHandleInputFocus(value: /* value */ String => Unit): Self = StObject.set(x, "handleInputFocus", js.Any.fromFunction1(value))
+      inline def setHandleInputFocus(value: /* value */ String => Unit): Self = StObject.set(x, "handleInputFocus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHandleInputFocusUndefined: Self = StObject.set(x, "handleInputFocus", js.undefined)
+      inline def setHandleInputFocusUndefined: Self = StObject.set(x, "handleInputFocus", js.undefined)
       
-      @scala.inline
-      def setHandleTagClick(value: /* i */ Double => Unit): Self = StObject.set(x, "handleTagClick", js.Any.fromFunction1(value))
+      inline def setHandleTagClick(value: /* i */ Double => Unit): Self = StObject.set(x, "handleTagClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHandleTagClickUndefined: Self = StObject.set(x, "handleTagClick", js.undefined)
+      inline def setHandleTagClickUndefined: Self = StObject.set(x, "handleTagClick", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+      inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
+      inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
       
-      @scala.inline
-      def setInputFieldPosition(value: top | bottom | `inline`): Self = StObject.set(x, "inputFieldPosition", value.asInstanceOf[js.Any])
+      inline def setInputFieldPosition(value: top | bottom | `inline`): Self = StObject.set(x, "inputFieldPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputFieldPositionUndefined: Self = StObject.set(x, "inputFieldPosition", js.undefined)
+      inline def setInputFieldPositionUndefined: Self = StObject.set(x, "inputFieldPosition", js.undefined)
       
-      @scala.inline
-      def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
+      inline def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputValueUndefined: Self = StObject.set(x, "inputValue", js.undefined)
+      inline def setInputValueUndefined: Self = StObject.set(x, "inputValue", js.undefined)
       
-      @scala.inline
-      def setLabelField(value: String): Self = StObject.set(x, "labelField", value.asInstanceOf[js.Any])
+      inline def setLabelField(value: String): Self = StObject.set(x, "labelField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelFieldUndefined: Self = StObject.set(x, "labelField", js.undefined)
+      inline def setLabelFieldUndefined: Self = StObject.set(x, "labelField", js.undefined)
       
-      @scala.inline
-      def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+      inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
+      inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
       
-      @scala.inline
-      def setMinQueryLength(value: Double): Self = StObject.set(x, "minQueryLength", value.asInstanceOf[js.Any])
+      inline def setMinQueryLength(value: Double): Self = StObject.set(x, "minQueryLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinQueryLengthUndefined: Self = StObject.set(x, "minQueryLength", js.undefined)
+      inline def setMinQueryLengthUndefined: Self = StObject.set(x, "minQueryLength", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      @scala.inline
-      def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+      inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+      inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
-      @scala.inline
-      def setRemoveComponent(value: Component[js.Any, js.Any, js.Any]): Self = StObject.set(x, "removeComponent", value.asInstanceOf[js.Any])
+      inline def setRemoveComponent(value: Component[js.Any, js.Any, js.Any]): Self = StObject.set(x, "removeComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveComponentUndefined: Self = StObject.set(x, "removeComponent", js.undefined)
+      inline def setRemoveComponentUndefined: Self = StObject.set(x, "removeComponent", js.undefined)
       
-      @scala.inline
-      def setRenderSuggestion(value: (/* tag */ Tag, /* query */ String) => ReactChild | Unit): Self = StObject.set(x, "renderSuggestion", js.Any.fromFunction2(value))
+      inline def setRenderSuggestion(value: (/* tag */ Tag, /* query */ String) => ReactChild | Unit): Self = StObject.set(x, "renderSuggestion", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRenderSuggestionUndefined: Self = StObject.set(x, "renderSuggestion", js.undefined)
+      inline def setRenderSuggestionUndefined: Self = StObject.set(x, "renderSuggestion", js.undefined)
       
-      @scala.inline
-      def setResetInputOnDelete(value: Boolean): Self = StObject.set(x, "resetInputOnDelete", value.asInstanceOf[js.Any])
+      inline def setResetInputOnDelete(value: Boolean): Self = StObject.set(x, "resetInputOnDelete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResetInputOnDeleteUndefined: Self = StObject.set(x, "resetInputOnDelete", js.undefined)
+      inline def setResetInputOnDeleteUndefined: Self = StObject.set(x, "resetInputOnDelete", js.undefined)
       
-      @scala.inline
-      def setShouldRenderSuggestions(value: /* query */ String => Boolean): Self = StObject.set(x, "shouldRenderSuggestions", js.Any.fromFunction1(value))
+      inline def setShouldRenderSuggestions(value: /* query */ String => Boolean): Self = StObject.set(x, "shouldRenderSuggestions", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShouldRenderSuggestionsUndefined: Self = StObject.set(x, "shouldRenderSuggestions", js.undefined)
+      inline def setShouldRenderSuggestionsUndefined: Self = StObject.set(x, "shouldRenderSuggestions", js.undefined)
       
-      @scala.inline
-      def setSuggestions(value: js.Array[Tag]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
+      inline def setSuggestions(value: js.Array[Tag]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuggestionsUndefined: Self = StObject.set(x, "suggestions", js.undefined)
+      inline def setSuggestionsUndefined: Self = StObject.set(x, "suggestions", js.undefined)
       
-      @scala.inline
-      def setSuggestionsVarargs(value: Tag*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
+      inline def setSuggestionsVarargs(value: Tag*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     }
   }
   
@@ -339,20 +272,16 @@ object mod {
   }
   object Tag {
     
-    @scala.inline
-    def apply(id: String, text: String): Tag = {
+    inline def apply(id: String, text: String): Tag = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[Tag]
     }
     
-    @scala.inline
-    implicit class TagMutableBuilder[Self <: Tag] (val x: Self) extends AnyVal {
+    extension [Self <: Tag](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
 }

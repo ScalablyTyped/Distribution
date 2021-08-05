@@ -13,16 +13,13 @@ trait DeleteUserPoolRequest extends StObject {
 }
 object DeleteUserPoolRequest {
   
-  @scala.inline
-  def apply(UserPoolId: UserPoolIdType): DeleteUserPoolRequest = {
+  inline def apply(UserPoolId: UserPoolIdType): DeleteUserPoolRequest = {
     val __obj = js.Dynamic.literal(UserPoolId = UserPoolId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteUserPoolRequest]
   }
   
-  @scala.inline
-  implicit class DeleteUserPoolRequestMutableBuilder[Self <: DeleteUserPoolRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteUserPoolRequest](x: Self) {
     
-    @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
+    inline def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
   }
 }

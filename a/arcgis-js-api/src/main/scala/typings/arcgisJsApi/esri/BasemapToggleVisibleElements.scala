@@ -19,8 +19,7 @@ trait BasemapToggleVisibleElements
 }
 object BasemapToggleVisibleElements {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -29,13 +28,10 @@ object BasemapToggleVisibleElements {
     __obj.asInstanceOf[BasemapToggleVisibleElements]
   }
   
-  @scala.inline
-  implicit class BasemapToggleVisibleElementsMutableBuilder[Self <: BasemapToggleVisibleElements] (val x: Self) extends AnyVal {
+  extension [Self <: BasemapToggleVisibleElements](x: Self) {
     
-    @scala.inline
-    def setTitle(value: Boolean): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: Boolean): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

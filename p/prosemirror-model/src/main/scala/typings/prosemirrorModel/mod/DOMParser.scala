@@ -53,6 +53,5 @@ object DOMParser {
     * schema's [node specs](#model.NodeSpec.parseDOM), reordered by
     * [priority](#model.ParseRule.priority).
     */
-  @scala.inline
-  def fromSchema[S /* <: Schema[js.Any, js.Any] */](schema: S): DOMParser[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSchema")(schema.asInstanceOf[js.Any]).asInstanceOf[DOMParser[S]]
+  inline def fromSchema[S /* <: Schema[js.Any, js.Any] */](schema: S): DOMParser[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSchema")(schema.asInstanceOf[js.Any]).asInstanceOf[DOMParser[S]]
 }

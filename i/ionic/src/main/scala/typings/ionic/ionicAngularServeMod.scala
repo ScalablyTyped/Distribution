@@ -24,7 +24,7 @@ object ionicAngularServeMod {
   class IonicAngularServeRunner protected () extends ServeRunner[IonicAngularServeOptions] {
     def this(e: IonicAngularServeRunnerDeps) = this()
     
-    @JSName("e")
+    /* protected */ @JSName("e")
     val e_IonicAngularServeRunner: IonicAngularServeRunnerDeps = js.native
   }
   
@@ -37,8 +37,7 @@ object ionicAngularServeMod {
   }
   object IonicAngularServeRunnerDeps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       config: IConfig,
       flags: IonicEnvironmentFlags,
       log: ILogger,
@@ -50,11 +49,9 @@ object ionicAngularServeMod {
       __obj.asInstanceOf[IonicAngularServeRunnerDeps]
     }
     
-    @scala.inline
-    implicit class IonicAngularServeRunnerDepsMutableBuilder[Self <: IonicAngularServeRunnerDeps] (val x: Self) extends AnyVal {
+    extension [Self <: IonicAngularServeRunnerDeps](x: Self) {
       
-      @scala.inline
-      def setProject(value: IonicAngularProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: IonicAngularProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -17,31 +17,23 @@ trait Principal extends StObject {
 }
 object Principal {
   
-  @scala.inline
-  def apply(): Principal = {
+  inline def apply(): Principal = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Principal]
   }
   
-  @scala.inline
-  implicit class PrincipalMutableBuilder[Self <: Principal] (val x: Self) extends AnyVal {
+  extension [Self <: Principal](x: Self) {
     
-    @scala.inline
-    def setGroupResourceName(value: String): Self = StObject.set(x, "groupResourceName", value.asInstanceOf[js.Any])
+    inline def setGroupResourceName(value: String): Self = StObject.set(x, "groupResourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupResourceNameUndefined: Self = StObject.set(x, "groupResourceName", js.undefined)
+    inline def setGroupResourceNameUndefined: Self = StObject.set(x, "groupResourceName", js.undefined)
     
-    @scala.inline
-    def setGsuitePrincipal(value: GSuitePrincipal): Self = StObject.set(x, "gsuitePrincipal", value.asInstanceOf[js.Any])
+    inline def setGsuitePrincipal(value: GSuitePrincipal): Self = StObject.set(x, "gsuitePrincipal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGsuitePrincipalUndefined: Self = StObject.set(x, "gsuitePrincipal", js.undefined)
+    inline def setGsuitePrincipalUndefined: Self = StObject.set(x, "gsuitePrincipal", js.undefined)
     
-    @scala.inline
-    def setUserResourceName(value: String): Self = StObject.set(x, "userResourceName", value.asInstanceOf[js.Any])
+    inline def setUserResourceName(value: String): Self = StObject.set(x, "userResourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserResourceNameUndefined: Self = StObject.set(x, "userResourceName", js.undefined)
+    inline def setUserResourceNameUndefined: Self = StObject.set(x, "userResourceName", js.undefined)
   }
 }

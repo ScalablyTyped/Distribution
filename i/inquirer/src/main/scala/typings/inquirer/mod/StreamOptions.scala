@@ -23,25 +23,19 @@ trait StreamOptions extends StObject {
 }
 object StreamOptions {
   
-  @scala.inline
-  def apply(): StreamOptions = {
+  inline def apply(): StreamOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StreamOptions]
   }
   
-  @scala.inline
-  implicit class StreamOptionsMutableBuilder[Self <: StreamOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StreamOptions](x: Self) {
     
-    @scala.inline
-    def setInput(value: ReadStream): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: ReadStream): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    @scala.inline
-    def setOutput(value: WriteStream): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: WriteStream): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+    inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
   }
 }

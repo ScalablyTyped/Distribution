@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object coshMod {
   
   /* was `typeof core.Math.cosh` */
-  @scala.inline
-  def apply(x: Double): Double = ^.asInstanceOf[js.Dynamic].apply(x.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def apply(x: Double): Double = ^.asInstanceOf[js.Dynamic].apply(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("core-js/fn/math/cosh", JSImport.Namespace)
   @js.native

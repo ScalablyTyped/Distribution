@@ -147,17 +147,14 @@ object stageMod {
   }
   object StageConfig {
     
-    @scala.inline
-    def apply(container: HTMLDivElement | String): StageConfig = {
+    inline def apply(container: HTMLDivElement | String): StageConfig = {
       val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
       __obj.asInstanceOf[StageConfig]
     }
     
-    @scala.inline
-    implicit class StageConfigMutableBuilder[Self <: StageConfig] (val x: Self) extends AnyVal {
+    extension [Self <: StageConfig](x: Self) {
       
-      @scala.inline
-      def setContainer(value: HTMLDivElement | String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: HTMLDivElement | String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     }
   }
 }

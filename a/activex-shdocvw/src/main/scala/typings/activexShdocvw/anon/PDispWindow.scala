@@ -10,16 +10,13 @@ trait PDispWindow extends StObject {
 }
 object PDispWindow {
   
-  @scala.inline
-  def apply(pDispWindow: js.Any): PDispWindow = {
+  inline def apply(pDispWindow: js.Any): PDispWindow = {
     val __obj = js.Dynamic.literal(pDispWindow = pDispWindow.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDispWindow]
   }
   
-  @scala.inline
-  implicit class PDispWindowMutableBuilder[Self <: PDispWindow] (val x: Self) extends AnyVal {
+  extension [Self <: PDispWindow](x: Self) {
     
-    @scala.inline
-    def setPDispWindow(value: js.Any): Self = StObject.set(x, "pDispWindow", value.asInstanceOf[js.Any])
+    inline def setPDispWindow(value: js.Any): Self = StObject.set(x, "pDispWindow", value.asInstanceOf[js.Any])
   }
 }

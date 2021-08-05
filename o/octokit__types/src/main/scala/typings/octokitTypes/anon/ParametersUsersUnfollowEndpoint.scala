@@ -17,8 +17,7 @@ trait ParametersUsersUnfollowEndpoint extends StObject {
 }
 object ParametersUsersUnfollowEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: UsersUnfollowEndpoint,
     request: UsersUnfollowRequestOptions,
     response: OctokitResponse[js.Any]
@@ -27,16 +26,12 @@ object ParametersUsersUnfollowEndpoint {
     __obj.asInstanceOf[ParametersUsersUnfollowEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersUsersUnfollowEndpointMutableBuilder[Self <: ParametersUsersUnfollowEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersUsersUnfollowEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: UsersUnfollowEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: UsersUnfollowEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: UsersUnfollowRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: UsersUnfollowRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

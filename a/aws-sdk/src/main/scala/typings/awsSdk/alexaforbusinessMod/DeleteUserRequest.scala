@@ -18,22 +18,17 @@ trait DeleteUserRequest extends StObject {
 }
 object DeleteUserRequest {
   
-  @scala.inline
-  def apply(EnrollmentId: EnrollmentId): DeleteUserRequest = {
+  inline def apply(EnrollmentId: EnrollmentId): DeleteUserRequest = {
     val __obj = js.Dynamic.literal(EnrollmentId = EnrollmentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteUserRequest]
   }
   
-  @scala.inline
-  implicit class DeleteUserRequestMutableBuilder[Self <: DeleteUserRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteUserRequest](x: Self) {
     
-    @scala.inline
-    def setEnrollmentId(value: EnrollmentId): Self = StObject.set(x, "EnrollmentId", value.asInstanceOf[js.Any])
+    inline def setEnrollmentId(value: EnrollmentId): Self = StObject.set(x, "EnrollmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserArn(value: Arn): Self = StObject.set(x, "UserArn", value.asInstanceOf[js.Any])
+    inline def setUserArn(value: Arn): Self = StObject.set(x, "UserArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserArnUndefined: Self = StObject.set(x, "UserArn", js.undefined)
+    inline def setUserArnUndefined: Self = StObject.set(x, "UserArn", js.undefined)
   }
 }

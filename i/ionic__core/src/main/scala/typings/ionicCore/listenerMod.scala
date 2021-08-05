@@ -12,6 +12,5 @@ object listenerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addEventListener(el: js.Any, eventName: String, callback: EventListenerOrEventListenerObject, opts: Capture): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(el.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def addEventListener(el: js.Any, eventName: String, callback: EventListenerOrEventListenerObject, opts: Capture): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(el.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
 }

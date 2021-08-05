@@ -31,8 +31,7 @@ trait ApplicationApplicationConfigurationFlinkApplicationConfigurationCheckpoint
 }
 object ApplicationApplicationConfigurationFlinkApplicationConfigurationCheckpointConfiguration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     checkpointInterval: Double,
     checkpointingEnabled: Boolean,
     configurationType: String,
@@ -42,19 +41,14 @@ object ApplicationApplicationConfigurationFlinkApplicationConfigurationCheckpoin
     __obj.asInstanceOf[ApplicationApplicationConfigurationFlinkApplicationConfigurationCheckpointConfiguration]
   }
   
-  @scala.inline
-  implicit class ApplicationApplicationConfigurationFlinkApplicationConfigurationCheckpointConfigurationMutableBuilder[Self <: ApplicationApplicationConfigurationFlinkApplicationConfigurationCheckpointConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationApplicationConfigurationFlinkApplicationConfigurationCheckpointConfiguration](x: Self) {
     
-    @scala.inline
-    def setCheckpointInterval(value: Double): Self = StObject.set(x, "checkpointInterval", value.asInstanceOf[js.Any])
+    inline def setCheckpointInterval(value: Double): Self = StObject.set(x, "checkpointInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckpointingEnabled(value: Boolean): Self = StObject.set(x, "checkpointingEnabled", value.asInstanceOf[js.Any])
+    inline def setCheckpointingEnabled(value: Boolean): Self = StObject.set(x, "checkpointingEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationType(value: String): Self = StObject.set(x, "configurationType", value.asInstanceOf[js.Any])
+    inline def setConfigurationType(value: String): Self = StObject.set(x, "configurationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinPauseBetweenCheckpoints(value: Double): Self = StObject.set(x, "minPauseBetweenCheckpoints", value.asInstanceOf[js.Any])
+    inline def setMinPauseBetweenCheckpoints(value: Double): Self = StObject.set(x, "minPauseBetweenCheckpoints", value.asInstanceOf[js.Any])
   }
 }

@@ -15,22 +15,17 @@ trait RQIAddDocumentOptions extends StObject {
 }
 object RQIAddDocumentOptions {
   
-  @scala.inline
-  def apply(data: IDocumentData): RQIAddDocumentOptions = {
+  inline def apply(data: IDocumentData): RQIAddDocumentOptions = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[RQIAddDocumentOptions]
   }
   
-  @scala.inline
-  implicit class RQIAddDocumentOptionsMutableBuilder[Self <: RQIAddDocumentOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RQIAddDocumentOptions](x: Self) {
     
-    @scala.inline
-    def setConfig(value: ICloudConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: ICloudConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    @scala.inline
-    def setData(value: IDocumentData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: IDocumentData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

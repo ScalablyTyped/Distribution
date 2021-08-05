@@ -13,8 +13,7 @@ object themeProviderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasValueChildren: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasValueChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(hasValueChildren: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasValueChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   // tslint:disable-next-line strict-export-declare-modifiers interface-over-type-literal
   trait Props extends StObject {
@@ -25,23 +24,18 @@ object themeProviderMod {
   }
   object Props {
     
-    @scala.inline
-    def apply(value: Theme): Props = {
+    inline def apply(value: Theme): Props = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setValue(value: Theme): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Theme): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

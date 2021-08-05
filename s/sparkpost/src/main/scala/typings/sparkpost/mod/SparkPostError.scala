@@ -18,25 +18,19 @@ trait SparkPostError
 }
 object SparkPostError {
   
-  @scala.inline
-  def apply(errors: js.Array[ErrorWithDescription | ErrorWithParam], message: String, statusCode: Double): SparkPostError = {
+  inline def apply(errors: js.Array[ErrorWithDescription | ErrorWithParam], message: String, statusCode: Double): SparkPostError = {
     val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = "SparkPostError", statusCode = statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SparkPostError]
   }
   
-  @scala.inline
-  implicit class SparkPostErrorMutableBuilder[Self <: SparkPostError] (val x: Self) extends AnyVal {
+  extension [Self <: SparkPostError](x: Self) {
     
-    @scala.inline
-    def setErrors(value: js.Array[ErrorWithDescription | ErrorWithParam]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Array[ErrorWithDescription | ErrorWithParam]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsVarargs(value: (ErrorWithDescription | ErrorWithParam)*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: (ErrorWithDescription | ErrorWithParam)*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: typings.sparkpost.sparkpostStrings.SparkPostError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: typings.sparkpost.sparkpostStrings.SparkPostError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
   }
 }

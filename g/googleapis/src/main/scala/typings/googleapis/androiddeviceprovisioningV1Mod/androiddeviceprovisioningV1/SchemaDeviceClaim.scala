@@ -29,31 +29,23 @@ trait SchemaDeviceClaim extends StObject {
 }
 object SchemaDeviceClaim {
   
-  @scala.inline
-  def apply(): SchemaDeviceClaim = {
+  inline def apply(): SchemaDeviceClaim = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDeviceClaim]
   }
   
-  @scala.inline
-  implicit class SchemaDeviceClaimMutableBuilder[Self <: SchemaDeviceClaim] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDeviceClaim](x: Self) {
     
-    @scala.inline
-    def setOwnerCompanyId(value: String): Self = StObject.set(x, "ownerCompanyId", value.asInstanceOf[js.Any])
+    inline def setOwnerCompanyId(value: String): Self = StObject.set(x, "ownerCompanyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerCompanyIdUndefined: Self = StObject.set(x, "ownerCompanyId", js.undefined)
+    inline def setOwnerCompanyIdUndefined: Self = StObject.set(x, "ownerCompanyId", js.undefined)
     
-    @scala.inline
-    def setResellerId(value: String): Self = StObject.set(x, "resellerId", value.asInstanceOf[js.Any])
+    inline def setResellerId(value: String): Self = StObject.set(x, "resellerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResellerIdUndefined: Self = StObject.set(x, "resellerId", js.undefined)
+    inline def setResellerIdUndefined: Self = StObject.set(x, "resellerId", js.undefined)
     
-    @scala.inline
-    def setSectionType(value: String): Self = StObject.set(x, "sectionType", value.asInstanceOf[js.Any])
+    inline def setSectionType(value: String): Self = StObject.set(x, "sectionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectionTypeUndefined: Self = StObject.set(x, "sectionType", js.undefined)
+    inline def setSectionTypeUndefined: Self = StObject.set(x, "sectionType", js.undefined)
   }
 }

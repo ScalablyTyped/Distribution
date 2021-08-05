@@ -12,19 +12,15 @@ trait TableOnToolbar extends StObject {
 }
 object TableOnToolbar {
   
-  @scala.inline
-  def apply(config: TableOption, event: String): TableOnToolbar = {
+  inline def apply(config: TableOption, event: String): TableOnToolbar = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableOnToolbar]
   }
   
-  @scala.inline
-  implicit class TableOnToolbarMutableBuilder[Self <: TableOnToolbar] (val x: Self) extends AnyVal {
+  extension [Self <: TableOnToolbar](x: Self) {
     
-    @scala.inline
-    def setConfig(value: TableOption): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: TableOption): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
   }
 }

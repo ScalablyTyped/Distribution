@@ -14,25 +14,19 @@ trait GoogleCloudAssetV1Edge extends StObject {
 }
 object GoogleCloudAssetV1Edge {
   
-  @scala.inline
-  def apply(): GoogleCloudAssetV1Edge = {
+  inline def apply(): GoogleCloudAssetV1Edge = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudAssetV1Edge]
   }
   
-  @scala.inline
-  implicit class GoogleCloudAssetV1EdgeMutableBuilder[Self <: GoogleCloudAssetV1Edge] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudAssetV1Edge](x: Self) {
     
-    @scala.inline
-    def setSourceNode(value: String): Self = StObject.set(x, "sourceNode", value.asInstanceOf[js.Any])
+    inline def setSourceNode(value: String): Self = StObject.set(x, "sourceNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceNodeUndefined: Self = StObject.set(x, "sourceNode", js.undefined)
+    inline def setSourceNodeUndefined: Self = StObject.set(x, "sourceNode", js.undefined)
     
-    @scala.inline
-    def setTargetNode(value: String): Self = StObject.set(x, "targetNode", value.asInstanceOf[js.Any])
+    inline def setTargetNode(value: String): Self = StObject.set(x, "targetNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetNodeUndefined: Self = StObject.set(x, "targetNode", js.undefined)
+    inline def setTargetNodeUndefined: Self = StObject.set(x, "targetNode", js.undefined)
   }
 }

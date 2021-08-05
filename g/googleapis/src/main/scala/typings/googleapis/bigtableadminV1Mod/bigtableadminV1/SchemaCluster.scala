@@ -43,43 +43,31 @@ trait SchemaCluster extends StObject {
 }
 object SchemaCluster {
   
-  @scala.inline
-  def apply(): SchemaCluster = {
+  inline def apply(): SchemaCluster = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCluster]
   }
   
-  @scala.inline
-  implicit class SchemaClusterMutableBuilder[Self <: SchemaCluster] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCluster](x: Self) {
     
-    @scala.inline
-    def setDefaultStorageType(value: String): Self = StObject.set(x, "defaultStorageType", value.asInstanceOf[js.Any])
+    inline def setDefaultStorageType(value: String): Self = StObject.set(x, "defaultStorageType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultStorageTypeUndefined: Self = StObject.set(x, "defaultStorageType", js.undefined)
+    inline def setDefaultStorageTypeUndefined: Self = StObject.set(x, "defaultStorageType", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setServeNodes(value: Double): Self = StObject.set(x, "serveNodes", value.asInstanceOf[js.Any])
+    inline def setServeNodes(value: Double): Self = StObject.set(x, "serveNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServeNodesUndefined: Self = StObject.set(x, "serveNodes", js.undefined)
+    inline def setServeNodesUndefined: Self = StObject.set(x, "serveNodes", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

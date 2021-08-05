@@ -15,19 +15,15 @@ trait ParametersGistsListForksEndpoint extends StObject {
 }
 object ParametersGistsListForksEndpoint {
   
-  @scala.inline
-  def apply(parameters: GistsListForksEndpoint, response: OctokitResponse[GistsListForksResponseData]): ParametersGistsListForksEndpoint = {
+  inline def apply(parameters: GistsListForksEndpoint, response: OctokitResponse[GistsListForksResponseData]): ParametersGistsListForksEndpoint = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersGistsListForksEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersGistsListForksEndpointMutableBuilder[Self <: ParametersGistsListForksEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersGistsListForksEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: GistsListForksEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: GistsListForksEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[GistsListForksResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[GistsListForksResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

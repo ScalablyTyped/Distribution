@@ -15,6 +15,5 @@ trait ValidateData extends StObject {
 }
 object ValidateData {
   
-  @scala.inline
-  def apply: ValidateData = ^.asInstanceOf[js.Dynamic].selectDynamic("ValidateData").asInstanceOf[ValidateData]
+  inline def apply: ValidateData = ^.asInstanceOf[js.Dynamic].selectDynamic("ValidateData").asInstanceOf[ValidateData]
 }

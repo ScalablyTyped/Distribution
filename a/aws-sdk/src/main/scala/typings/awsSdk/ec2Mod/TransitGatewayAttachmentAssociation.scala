@@ -18,25 +18,19 @@ trait TransitGatewayAttachmentAssociation extends StObject {
 }
 object TransitGatewayAttachmentAssociation {
   
-  @scala.inline
-  def apply(): TransitGatewayAttachmentAssociation = {
+  inline def apply(): TransitGatewayAttachmentAssociation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TransitGatewayAttachmentAssociation]
   }
   
-  @scala.inline
-  implicit class TransitGatewayAttachmentAssociationMutableBuilder[Self <: TransitGatewayAttachmentAssociation] (val x: Self) extends AnyVal {
+  extension [Self <: TransitGatewayAttachmentAssociation](x: Self) {
     
-    @scala.inline
-    def setState(value: TransitGatewayAssociationState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: TransitGatewayAssociationState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
-    @scala.inline
-    def setTransitGatewayRouteTableId(value: String): Self = StObject.set(x, "TransitGatewayRouteTableId", value.asInstanceOf[js.Any])
+    inline def setTransitGatewayRouteTableId(value: String): Self = StObject.set(x, "TransitGatewayRouteTableId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitGatewayRouteTableIdUndefined: Self = StObject.set(x, "TransitGatewayRouteTableId", js.undefined)
+    inline def setTransitGatewayRouteTableIdUndefined: Self = StObject.set(x, "TransitGatewayRouteTableId", js.undefined)
   }
 }

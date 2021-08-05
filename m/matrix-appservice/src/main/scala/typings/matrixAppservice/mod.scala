@@ -44,14 +44,12 @@ object mod {
       * @param obj The registration object
       * @return The registration.
       */
-    @scala.inline
-    def fromObject(obj: AppServiceOutput): typings.matrixAppservice.appServiceRegistrationMod.AppServiceRegistration = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.matrixAppservice.appServiceRegistrationMod.AppServiceRegistration]
+    inline def fromObject(obj: AppServiceOutput): typings.matrixAppservice.appServiceRegistrationMod.AppServiceRegistration = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.matrixAppservice.appServiceRegistrationMod.AppServiceRegistration]
     
     /**
       * Generate a random token.
       * @return {string} A randomly generated token.
       */
-    @scala.inline
-    def generateToken(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateToken")().asInstanceOf[String]
+    inline def generateToken(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateToken")().asInstanceOf[String]
   }
 }

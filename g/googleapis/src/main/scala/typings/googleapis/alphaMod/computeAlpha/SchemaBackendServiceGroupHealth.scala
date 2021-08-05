@@ -26,34 +26,25 @@ trait SchemaBackendServiceGroupHealth extends StObject {
 }
 object SchemaBackendServiceGroupHealth {
   
-  @scala.inline
-  def apply(): SchemaBackendServiceGroupHealth = {
+  inline def apply(): SchemaBackendServiceGroupHealth = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBackendServiceGroupHealth]
   }
   
-  @scala.inline
-  implicit class SchemaBackendServiceGroupHealthMutableBuilder[Self <: SchemaBackendServiceGroupHealth] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBackendServiceGroupHealth](x: Self) {
     
-    @scala.inline
-    def setAnnotations(value: StringDictionary[String]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
+    inline def setAnnotations(value: StringDictionary[String]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
+    inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
     
-    @scala.inline
-    def setHealthStatus(value: js.Array[SchemaHealthStatus]): Self = StObject.set(x, "healthStatus", value.asInstanceOf[js.Any])
+    inline def setHealthStatus(value: js.Array[SchemaHealthStatus]): Self = StObject.set(x, "healthStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthStatusUndefined: Self = StObject.set(x, "healthStatus", js.undefined)
+    inline def setHealthStatusUndefined: Self = StObject.set(x, "healthStatus", js.undefined)
     
-    @scala.inline
-    def setHealthStatusVarargs(value: SchemaHealthStatus*): Self = StObject.set(x, "healthStatus", js.Array(value :_*))
+    inline def setHealthStatusVarargs(value: SchemaHealthStatus*): Self = StObject.set(x, "healthStatus", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

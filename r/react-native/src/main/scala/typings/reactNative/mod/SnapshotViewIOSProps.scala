@@ -16,19 +16,15 @@ trait SnapshotViewIOSProps
 }
 object SnapshotViewIOSProps {
   
-  @scala.inline
-  def apply(onSnapshotReady: () => js.Any, testIdentifier: String): SnapshotViewIOSProps = {
+  inline def apply(onSnapshotReady: () => js.Any, testIdentifier: String): SnapshotViewIOSProps = {
     val __obj = js.Dynamic.literal(onSnapshotReady = js.Any.fromFunction0(onSnapshotReady), testIdentifier = testIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnapshotViewIOSProps]
   }
   
-  @scala.inline
-  implicit class SnapshotViewIOSPropsMutableBuilder[Self <: SnapshotViewIOSProps] (val x: Self) extends AnyVal {
+  extension [Self <: SnapshotViewIOSProps](x: Self) {
     
-    @scala.inline
-    def setOnSnapshotReady(value: () => js.Any): Self = StObject.set(x, "onSnapshotReady", js.Any.fromFunction0(value))
+    inline def setOnSnapshotReady(value: () => js.Any): Self = StObject.set(x, "onSnapshotReady", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTestIdentifier(value: String): Self = StObject.set(x, "testIdentifier", value.asInstanceOf[js.Any])
+    inline def setTestIdentifier(value: String): Self = StObject.set(x, "testIdentifier", value.asInstanceOf[js.Any])
   }
 }

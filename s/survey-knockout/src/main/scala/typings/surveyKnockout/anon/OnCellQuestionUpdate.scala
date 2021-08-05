@@ -12,22 +12,17 @@ trait OnCellQuestionUpdate extends StObject {
 }
 object OnCellQuestionUpdate {
   
-  @scala.inline
-  def apply(onCellQuestionUpdate: (js.Any, js.Any, js.Any, js.Any) => Unit, properties: js.Array[String]): OnCellQuestionUpdate = {
+  inline def apply(onCellQuestionUpdate: (js.Any, js.Any, js.Any, js.Any) => Unit, properties: js.Array[String]): OnCellQuestionUpdate = {
     val __obj = js.Dynamic.literal(onCellQuestionUpdate = js.Any.fromFunction4(onCellQuestionUpdate), properties = properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnCellQuestionUpdate]
   }
   
-  @scala.inline
-  implicit class OnCellQuestionUpdateMutableBuilder[Self <: OnCellQuestionUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: OnCellQuestionUpdate](x: Self) {
     
-    @scala.inline
-    def setOnCellQuestionUpdate(value: (js.Any, js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "onCellQuestionUpdate", js.Any.fromFunction4(value))
+    inline def setOnCellQuestionUpdate(value: (js.Any, js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "onCellQuestionUpdate", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setProperties(value: js.Array[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: js.Array[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesVarargs(value: String*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: String*): Self = StObject.set(x, "properties", js.Array(value :_*))
   }
 }

@@ -51,49 +51,35 @@ trait GoogleCloudOrgpolicyV1ListPolicy extends StObject {
 }
 object GoogleCloudOrgpolicyV1ListPolicy {
   
-  @scala.inline
-  def apply(): GoogleCloudOrgpolicyV1ListPolicy = {
+  inline def apply(): GoogleCloudOrgpolicyV1ListPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudOrgpolicyV1ListPolicy]
   }
   
-  @scala.inline
-  implicit class GoogleCloudOrgpolicyV1ListPolicyMutableBuilder[Self <: GoogleCloudOrgpolicyV1ListPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudOrgpolicyV1ListPolicy](x: Self) {
     
-    @scala.inline
-    def setAllValues(value: String): Self = StObject.set(x, "allValues", value.asInstanceOf[js.Any])
+    inline def setAllValues(value: String): Self = StObject.set(x, "allValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllValuesUndefined: Self = StObject.set(x, "allValues", js.undefined)
+    inline def setAllValuesUndefined: Self = StObject.set(x, "allValues", js.undefined)
     
-    @scala.inline
-    def setAllowedValues(value: js.Array[String]): Self = StObject.set(x, "allowedValues", value.asInstanceOf[js.Any])
+    inline def setAllowedValues(value: js.Array[String]): Self = StObject.set(x, "allowedValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedValuesUndefined: Self = StObject.set(x, "allowedValues", js.undefined)
+    inline def setAllowedValuesUndefined: Self = StObject.set(x, "allowedValues", js.undefined)
     
-    @scala.inline
-    def setAllowedValuesVarargs(value: String*): Self = StObject.set(x, "allowedValues", js.Array(value :_*))
+    inline def setAllowedValuesVarargs(value: String*): Self = StObject.set(x, "allowedValues", js.Array(value :_*))
     
-    @scala.inline
-    def setDeniedValues(value: js.Array[String]): Self = StObject.set(x, "deniedValues", value.asInstanceOf[js.Any])
+    inline def setDeniedValues(value: js.Array[String]): Self = StObject.set(x, "deniedValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeniedValuesUndefined: Self = StObject.set(x, "deniedValues", js.undefined)
+    inline def setDeniedValuesUndefined: Self = StObject.set(x, "deniedValues", js.undefined)
     
-    @scala.inline
-    def setDeniedValuesVarargs(value: String*): Self = StObject.set(x, "deniedValues", js.Array(value :_*))
+    inline def setDeniedValuesVarargs(value: String*): Self = StObject.set(x, "deniedValues", js.Array(value :_*))
     
-    @scala.inline
-    def setInheritFromParent(value: Boolean): Self = StObject.set(x, "inheritFromParent", value.asInstanceOf[js.Any])
+    inline def setInheritFromParent(value: Boolean): Self = StObject.set(x, "inheritFromParent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInheritFromParentUndefined: Self = StObject.set(x, "inheritFromParent", js.undefined)
+    inline def setInheritFromParentUndefined: Self = StObject.set(x, "inheritFromParent", js.undefined)
     
-    @scala.inline
-    def setSuggestedValue(value: String): Self = StObject.set(x, "suggestedValue", value.asInstanceOf[js.Any])
+    inline def setSuggestedValue(value: String): Self = StObject.set(x, "suggestedValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestedValueUndefined: Self = StObject.set(x, "suggestedValue", js.undefined)
+    inline def setSuggestedValueUndefined: Self = StObject.set(x, "suggestedValue", js.undefined)
   }
 }

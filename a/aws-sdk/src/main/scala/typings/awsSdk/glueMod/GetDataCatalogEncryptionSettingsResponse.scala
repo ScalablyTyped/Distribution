@@ -13,19 +13,15 @@ trait GetDataCatalogEncryptionSettingsResponse extends StObject {
 }
 object GetDataCatalogEncryptionSettingsResponse {
   
-  @scala.inline
-  def apply(): GetDataCatalogEncryptionSettingsResponse = {
+  inline def apply(): GetDataCatalogEncryptionSettingsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDataCatalogEncryptionSettingsResponse]
   }
   
-  @scala.inline
-  implicit class GetDataCatalogEncryptionSettingsResponseMutableBuilder[Self <: GetDataCatalogEncryptionSettingsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetDataCatalogEncryptionSettingsResponse](x: Self) {
     
-    @scala.inline
-    def setDataCatalogEncryptionSettings(value: DataCatalogEncryptionSettings): Self = StObject.set(x, "DataCatalogEncryptionSettings", value.asInstanceOf[js.Any])
+    inline def setDataCatalogEncryptionSettings(value: DataCatalogEncryptionSettings): Self = StObject.set(x, "DataCatalogEncryptionSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataCatalogEncryptionSettingsUndefined: Self = StObject.set(x, "DataCatalogEncryptionSettings", js.undefined)
+    inline def setDataCatalogEncryptionSettingsUndefined: Self = StObject.set(x, "DataCatalogEncryptionSettings", js.undefined)
   }
 }

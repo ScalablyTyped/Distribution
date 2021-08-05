@@ -17,25 +17,19 @@ trait JobScheduling extends StObject {
 }
 object JobScheduling {
   
-  @scala.inline
-  def apply(): JobScheduling = {
+  inline def apply(): JobScheduling = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobScheduling]
   }
   
-  @scala.inline
-  implicit class JobSchedulingMutableBuilder[Self <: JobScheduling] (val x: Self) extends AnyVal {
+  extension [Self <: JobScheduling](x: Self) {
     
-    @scala.inline
-    def setMaxFailuresPerHour(value: Double): Self = StObject.set(x, "maxFailuresPerHour", value.asInstanceOf[js.Any])
+    inline def setMaxFailuresPerHour(value: Double): Self = StObject.set(x, "maxFailuresPerHour", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxFailuresPerHourUndefined: Self = StObject.set(x, "maxFailuresPerHour", js.undefined)
+    inline def setMaxFailuresPerHourUndefined: Self = StObject.set(x, "maxFailuresPerHour", js.undefined)
     
-    @scala.inline
-    def setMaxFailuresTotal(value: Double): Self = StObject.set(x, "maxFailuresTotal", value.asInstanceOf[js.Any])
+    inline def setMaxFailuresTotal(value: Double): Self = StObject.set(x, "maxFailuresTotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxFailuresTotalUndefined: Self = StObject.set(x, "maxFailuresTotal", js.undefined)
+    inline def setMaxFailuresTotalUndefined: Self = StObject.set(x, "maxFailuresTotal", js.undefined)
   }
 }

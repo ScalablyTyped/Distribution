@@ -37,8 +37,7 @@ object cloudbuildMod {
     @JSImport("googleapis/build/src/apis/cloudbuild", "VERSIONS.v1")
     @js.native
     def v1: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Cloudbuild] = js.native
-    @scala.inline
-    def v1_=(
+    inline def v1_=(
       x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Cloudbuild]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
     
@@ -57,8 +56,7 @@ object cloudbuildMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.v1alpha1Mod.cloudbuildV1alpha1.Cloudbuild
       ] = js.native
-    @scala.inline
-    def v1alpha1_=(
+    inline def v1alpha1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -100,8 +98,7 @@ object cloudbuildMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -145,14 +142,10 @@ object cloudbuildMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def cloudbuild(options: Options): Cloudbuild = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudbuild")(options.asInstanceOf[js.Any]).asInstanceOf[Cloudbuild]
-  @scala.inline
-  def cloudbuild(options: typings.googleapis.v1alpha1Mod.cloudbuildV1alpha1.Options): typings.googleapis.v1alpha1Mod.cloudbuildV1alpha1.Cloudbuild = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudbuild")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v1alpha1Mod.cloudbuildV1alpha1.Cloudbuild]
+  inline def cloudbuild(options: Options): Cloudbuild = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudbuild")(options.asInstanceOf[js.Any]).asInstanceOf[Cloudbuild]
+  inline def cloudbuild(options: typings.googleapis.v1alpha1Mod.cloudbuildV1alpha1.Options): typings.googleapis.v1alpha1Mod.cloudbuildV1alpha1.Cloudbuild = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudbuild")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v1alpha1Mod.cloudbuildV1alpha1.Cloudbuild]
   
-  @scala.inline
-  def cloudbuild_v1(version: v1): Cloudbuild = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudbuild")(version.asInstanceOf[js.Any]).asInstanceOf[Cloudbuild]
+  inline def cloudbuild_v1(version: v1): Cloudbuild = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudbuild")(version.asInstanceOf[js.Any]).asInstanceOf[Cloudbuild]
   
-  @scala.inline
-  def cloudbuild_v1alpha1(version: v1alpha1): typings.googleapis.v1alpha1Mod.cloudbuildV1alpha1.Cloudbuild = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudbuild")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v1alpha1Mod.cloudbuildV1alpha1.Cloudbuild]
+  inline def cloudbuild_v1alpha1(version: v1alpha1): typings.googleapis.v1alpha1Mod.cloudbuildV1alpha1.Cloudbuild = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudbuild")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v1alpha1Mod.cloudbuildV1alpha1.Cloudbuild]
 }

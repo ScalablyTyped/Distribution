@@ -26,67 +26,47 @@ trait SchedulerMessagesRecurrenceEditor extends StObject {
 }
 object SchedulerMessagesRecurrenceEditor {
   
-  @scala.inline
-  def apply(): SchedulerMessagesRecurrenceEditor = {
+  inline def apply(): SchedulerMessagesRecurrenceEditor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchedulerMessagesRecurrenceEditor]
   }
   
-  @scala.inline
-  implicit class SchedulerMessagesRecurrenceEditorMutableBuilder[Self <: SchedulerMessagesRecurrenceEditor] (val x: Self) extends AnyVal {
+  extension [Self <: SchedulerMessagesRecurrenceEditor](x: Self) {
     
-    @scala.inline
-    def setDaily(value: SchedulerMessagesRecurrenceEditorDaily): Self = StObject.set(x, "daily", value.asInstanceOf[js.Any])
+    inline def setDaily(value: SchedulerMessagesRecurrenceEditorDaily): Self = StObject.set(x, "daily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDailyUndefined: Self = StObject.set(x, "daily", js.undefined)
+    inline def setDailyUndefined: Self = StObject.set(x, "daily", js.undefined)
     
-    @scala.inline
-    def setEnd(value: SchedulerMessagesRecurrenceEditorEnd): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: SchedulerMessagesRecurrenceEditorEnd): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    @scala.inline
-    def setFrequencies(value: SchedulerMessagesRecurrenceEditorFrequencies): Self = StObject.set(x, "frequencies", value.asInstanceOf[js.Any])
+    inline def setFrequencies(value: SchedulerMessagesRecurrenceEditorFrequencies): Self = StObject.set(x, "frequencies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrequenciesUndefined: Self = StObject.set(x, "frequencies", js.undefined)
+    inline def setFrequenciesUndefined: Self = StObject.set(x, "frequencies", js.undefined)
     
-    @scala.inline
-    def setMonthly(value: SchedulerMessagesRecurrenceEditorMonthly): Self = StObject.set(x, "monthly", value.asInstanceOf[js.Any])
+    inline def setMonthly(value: SchedulerMessagesRecurrenceEditorMonthly): Self = StObject.set(x, "monthly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonthlyUndefined: Self = StObject.set(x, "monthly", js.undefined)
+    inline def setMonthlyUndefined: Self = StObject.set(x, "monthly", js.undefined)
     
-    @scala.inline
-    def setOffsetPositions(value: SchedulerMessagesRecurrenceEditorOffsetPositions): Self = StObject.set(x, "offsetPositions", value.asInstanceOf[js.Any])
+    inline def setOffsetPositions(value: SchedulerMessagesRecurrenceEditorOffsetPositions): Self = StObject.set(x, "offsetPositions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetPositionsUndefined: Self = StObject.set(x, "offsetPositions", js.undefined)
+    inline def setOffsetPositionsUndefined: Self = StObject.set(x, "offsetPositions", js.undefined)
     
-    @scala.inline
-    def setRecurrenceEditorTitle(value: String): Self = StObject.set(x, "recurrenceEditorTitle", value.asInstanceOf[js.Any])
+    inline def setRecurrenceEditorTitle(value: String): Self = StObject.set(x, "recurrenceEditorTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecurrenceEditorTitleUndefined: Self = StObject.set(x, "recurrenceEditorTitle", js.undefined)
+    inline def setRecurrenceEditorTitleUndefined: Self = StObject.set(x, "recurrenceEditorTitle", js.undefined)
     
-    @scala.inline
-    def setWeekdays(value: SchedulerMessagesRecurrenceEditorWeekdays): Self = StObject.set(x, "weekdays", value.asInstanceOf[js.Any])
+    inline def setWeekdays(value: SchedulerMessagesRecurrenceEditorWeekdays): Self = StObject.set(x, "weekdays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeekdaysUndefined: Self = StObject.set(x, "weekdays", js.undefined)
+    inline def setWeekdaysUndefined: Self = StObject.set(x, "weekdays", js.undefined)
     
-    @scala.inline
-    def setWeekly(value: SchedulerMessagesRecurrenceEditorWeekly): Self = StObject.set(x, "weekly", value.asInstanceOf[js.Any])
+    inline def setWeekly(value: SchedulerMessagesRecurrenceEditorWeekly): Self = StObject.set(x, "weekly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeeklyUndefined: Self = StObject.set(x, "weekly", js.undefined)
+    inline def setWeeklyUndefined: Self = StObject.set(x, "weekly", js.undefined)
     
-    @scala.inline
-    def setYearly(value: SchedulerMessagesRecurrenceEditorYearly): Self = StObject.set(x, "yearly", value.asInstanceOf[js.Any])
+    inline def setYearly(value: SchedulerMessagesRecurrenceEditorYearly): Self = StObject.set(x, "yearly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYearlyUndefined: Self = StObject.set(x, "yearly", js.undefined)
+    inline def setYearlyUndefined: Self = StObject.set(x, "yearly", js.undefined)
   }
 }

@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[T /* <: ReadableStream */](streams: T*): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(streams.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def apply[T /* <: ReadableStream */](streams: T*): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(streams.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   
   @JSImport("stream-series", JSImport.Namespace)
   @js.native

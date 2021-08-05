@@ -12,25 +12,19 @@ trait Reasons extends StObject {
 }
 object Reasons {
   
-  @scala.inline
-  def apply(unreliable: Boolean): Reasons = {
+  inline def apply(unreliable: Boolean): Reasons = {
     val __obj = js.Dynamic.literal(unreliable = unreliable.asInstanceOf[js.Any])
     __obj.asInstanceOf[Reasons]
   }
   
-  @scala.inline
-  implicit class ReasonsMutableBuilder[Self <: Reasons] (val x: Self) extends AnyVal {
+  extension [Self <: Reasons](x: Self) {
     
-    @scala.inline
-    def setReasons(value: js.Array[String]): Self = StObject.set(x, "reasons", value.asInstanceOf[js.Any])
+    inline def setReasons(value: js.Array[String]): Self = StObject.set(x, "reasons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonsUndefined: Self = StObject.set(x, "reasons", js.undefined)
+    inline def setReasonsUndefined: Self = StObject.set(x, "reasons", js.undefined)
     
-    @scala.inline
-    def setReasonsVarargs(value: String*): Self = StObject.set(x, "reasons", js.Array(value :_*))
+    inline def setReasonsVarargs(value: String*): Self = StObject.set(x, "reasons", js.Array(value :_*))
     
-    @scala.inline
-    def setUnreliable(value: Boolean): Self = StObject.set(x, "unreliable", value.asInstanceOf[js.Any])
+    inline def setUnreliable(value: Boolean): Self = StObject.set(x, "unreliable", value.asInstanceOf[js.Any])
   }
 }

@@ -73,85 +73,59 @@ trait DescribeDataSourcesInputw extends StObject {
 }
 object DescribeDataSourcesInputw {
   
-  @scala.inline
-  def apply(): DescribeDataSourcesInputw = {
+  inline def apply(): DescribeDataSourcesInputw = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeDataSourcesInputw]
   }
   
-  @scala.inline
-  implicit class DescribeDataSourcesInputwMutableBuilder[Self <: DescribeDataSourcesInputw] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDataSourcesInputw](x: Self) {
     
-    @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
+    inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
+    inline def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
-    @scala.inline
-    def setEQ(value: ComparatorValue): Self = StObject.set(x, "EQ", value.asInstanceOf[js.Any])
+    inline def setEQ(value: ComparatorValue): Self = StObject.set(x, "EQ", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEQUndefined: Self = StObject.set(x, "EQ", js.undefined)
+    inline def setEQUndefined: Self = StObject.set(x, "EQ", js.undefined)
     
-    @scala.inline
-    def setFilterVariable(value: DataSourceFilterVariable): Self = StObject.set(x, "FilterVariable", value.asInstanceOf[js.Any])
+    inline def setFilterVariable(value: DataSourceFilterVariable): Self = StObject.set(x, "FilterVariable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterVariableUndefined: Self = StObject.set(x, "FilterVariable", js.undefined)
+    inline def setFilterVariableUndefined: Self = StObject.set(x, "FilterVariable", js.undefined)
     
-    @scala.inline
-    def setGE(value: ComparatorValue): Self = StObject.set(x, "GE", value.asInstanceOf[js.Any])
+    inline def setGE(value: ComparatorValue): Self = StObject.set(x, "GE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGEUndefined: Self = StObject.set(x, "GE", js.undefined)
+    inline def setGEUndefined: Self = StObject.set(x, "GE", js.undefined)
     
-    @scala.inline
-    def setGT(value: ComparatorValue): Self = StObject.set(x, "GT", value.asInstanceOf[js.Any])
+    inline def setGT(value: ComparatorValue): Self = StObject.set(x, "GT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGTUndefined: Self = StObject.set(x, "GT", js.undefined)
+    inline def setGTUndefined: Self = StObject.set(x, "GT", js.undefined)
     
-    @scala.inline
-    def setLE(value: ComparatorValue): Self = StObject.set(x, "LE", value.asInstanceOf[js.Any])
+    inline def setLE(value: ComparatorValue): Self = StObject.set(x, "LE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLEUndefined: Self = StObject.set(x, "LE", js.undefined)
+    inline def setLEUndefined: Self = StObject.set(x, "LE", js.undefined)
     
-    @scala.inline
-    def setLT(value: ComparatorValue): Self = StObject.set(x, "LT", value.asInstanceOf[js.Any])
+    inline def setLT(value: ComparatorValue): Self = StObject.set(x, "LT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLTUndefined: Self = StObject.set(x, "LT", js.undefined)
+    inline def setLTUndefined: Self = StObject.set(x, "LT", js.undefined)
     
-    @scala.inline
-    def setLimit(value: PageLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: PageLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setNE(value: ComparatorValue): Self = StObject.set(x, "NE", value.asInstanceOf[js.Any])
+    inline def setNE(value: ComparatorValue): Self = StObject.set(x, "NE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNEUndefined: Self = StObject.set(x, "NE", js.undefined)
+    inline def setNEUndefined: Self = StObject.set(x, "NE", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: StringType): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: StringType): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPrefix(value: ComparatorValue): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: ComparatorValue): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
     
-    @scala.inline
-    def setSortOrder(value: SortOrder): Self = StObject.set(x, "SortOrder", value.asInstanceOf[js.Any])
+    inline def setSortOrder(value: SortOrder): Self = StObject.set(x, "SortOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortOrderUndefined: Self = StObject.set(x, "SortOrder", js.undefined)
+    inline def setSortOrderUndefined: Self = StObject.set(x, "SortOrder", js.undefined)
   }
 }

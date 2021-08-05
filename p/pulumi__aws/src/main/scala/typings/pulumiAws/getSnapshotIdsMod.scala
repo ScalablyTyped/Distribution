@@ -12,14 +12,10 @@ object getSnapshotIdsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getSnapshotIds(): js.Promise[GetSnapshotIdsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshotIds")().asInstanceOf[js.Promise[GetSnapshotIdsResult]]
-  @scala.inline
-  def getSnapshotIds(args: Unit, opts: InvokeOptions): js.Promise[GetSnapshotIdsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshotIds")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSnapshotIdsResult]]
-  @scala.inline
-  def getSnapshotIds(args: GetSnapshotIdsArgs): js.Promise[GetSnapshotIdsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshotIds")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSnapshotIdsResult]]
-  @scala.inline
-  def getSnapshotIds(args: GetSnapshotIdsArgs, opts: InvokeOptions): js.Promise[GetSnapshotIdsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshotIds")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSnapshotIdsResult]]
+  inline def getSnapshotIds(): js.Promise[GetSnapshotIdsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshotIds")().asInstanceOf[js.Promise[GetSnapshotIdsResult]]
+  inline def getSnapshotIds(args: Unit, opts: InvokeOptions): js.Promise[GetSnapshotIdsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshotIds")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSnapshotIdsResult]]
+  inline def getSnapshotIds(args: GetSnapshotIdsArgs): js.Promise[GetSnapshotIdsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshotIds")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSnapshotIdsResult]]
+  inline def getSnapshotIds(args: GetSnapshotIdsArgs, opts: InvokeOptions): js.Promise[GetSnapshotIdsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshotIds")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSnapshotIdsResult]]
   
   trait GetSnapshotIdsArgs extends StObject {
     
@@ -42,41 +38,30 @@ object getSnapshotIdsMod {
   }
   object GetSnapshotIdsArgs {
     
-    @scala.inline
-    def apply(): GetSnapshotIdsArgs = {
+    inline def apply(): GetSnapshotIdsArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetSnapshotIdsArgs]
     }
     
-    @scala.inline
-    implicit class GetSnapshotIdsArgsMutableBuilder[Self <: GetSnapshotIdsArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetSnapshotIdsArgs](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[GetSnapshotIdsFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[GetSnapshotIdsFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: GetSnapshotIdsFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: GetSnapshotIdsFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setOwners(value: js.Array[String]): Self = StObject.set(x, "owners", value.asInstanceOf[js.Any])
+      inline def setOwners(value: js.Array[String]): Self = StObject.set(x, "owners", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnersUndefined: Self = StObject.set(x, "owners", js.undefined)
+      inline def setOwnersUndefined: Self = StObject.set(x, "owners", js.undefined)
       
-      @scala.inline
-      def setOwnersVarargs(value: String*): Self = StObject.set(x, "owners", js.Array(value :_*))
+      inline def setOwnersVarargs(value: String*): Self = StObject.set(x, "owners", js.Array(value :_*))
       
-      @scala.inline
-      def setRestorableByUserIds(value: js.Array[String]): Self = StObject.set(x, "restorableByUserIds", value.asInstanceOf[js.Any])
+      inline def setRestorableByUserIds(value: js.Array[String]): Self = StObject.set(x, "restorableByUserIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestorableByUserIdsUndefined: Self = StObject.set(x, "restorableByUserIds", js.undefined)
+      inline def setRestorableByUserIdsUndefined: Self = StObject.set(x, "restorableByUserIds", js.undefined)
       
-      @scala.inline
-      def setRestorableByUserIdsVarargs(value: String*): Self = StObject.set(x, "restorableByUserIds", js.Array(value :_*))
+      inline def setRestorableByUserIdsVarargs(value: String*): Self = StObject.set(x, "restorableByUserIds", js.Array(value :_*))
     }
   }
   
@@ -100,50 +85,36 @@ object getSnapshotIdsMod {
   }
   object GetSnapshotIdsResult {
     
-    @scala.inline
-    def apply(id: String, ids: js.Array[String]): GetSnapshotIdsResult = {
+    inline def apply(id: String, ids: js.Array[String]): GetSnapshotIdsResult = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], ids = ids.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetSnapshotIdsResult]
     }
     
-    @scala.inline
-    implicit class GetSnapshotIdsResultMutableBuilder[Self <: GetSnapshotIdsResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetSnapshotIdsResult](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[typings.pulumiAws.outputMod.ebs.GetSnapshotIdsFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[typings.pulumiAws.outputMod.ebs.GetSnapshotIdsFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: typings.pulumiAws.outputMod.ebs.GetSnapshotIdsFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: typings.pulumiAws.outputMod.ebs.GetSnapshotIdsFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+      inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+      inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
       
-      @scala.inline
-      def setOwners(value: js.Array[String]): Self = StObject.set(x, "owners", value.asInstanceOf[js.Any])
+      inline def setOwners(value: js.Array[String]): Self = StObject.set(x, "owners", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnersUndefined: Self = StObject.set(x, "owners", js.undefined)
+      inline def setOwnersUndefined: Self = StObject.set(x, "owners", js.undefined)
       
-      @scala.inline
-      def setOwnersVarargs(value: String*): Self = StObject.set(x, "owners", js.Array(value :_*))
+      inline def setOwnersVarargs(value: String*): Self = StObject.set(x, "owners", js.Array(value :_*))
       
-      @scala.inline
-      def setRestorableByUserIds(value: js.Array[String]): Self = StObject.set(x, "restorableByUserIds", value.asInstanceOf[js.Any])
+      inline def setRestorableByUserIds(value: js.Array[String]): Self = StObject.set(x, "restorableByUserIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestorableByUserIdsUndefined: Self = StObject.set(x, "restorableByUserIds", js.undefined)
+      inline def setRestorableByUserIdsUndefined: Self = StObject.set(x, "restorableByUserIds", js.undefined)
       
-      @scala.inline
-      def setRestorableByUserIdsVarargs(value: String*): Self = StObject.set(x, "restorableByUserIds", js.Array(value :_*))
+      inline def setRestorableByUserIdsVarargs(value: String*): Self = StObject.set(x, "restorableByUserIds", js.Array(value :_*))
     }
   }
 }

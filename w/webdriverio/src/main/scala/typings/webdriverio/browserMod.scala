@@ -27,8 +27,7 @@ object browserMod {
     js.Promise[js.Any]
   ] = js.native
   
-  @scala.inline
-  def call[T](fn: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def call[T](fn: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any]).asInstanceOf[T]
   
   @JSImport("webdriverio/build/commands/browser", "custom$")
   @js.native

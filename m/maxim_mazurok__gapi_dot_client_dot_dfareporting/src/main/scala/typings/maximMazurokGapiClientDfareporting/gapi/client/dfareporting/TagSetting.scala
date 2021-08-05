@@ -26,37 +26,27 @@ trait TagSetting extends StObject {
 }
 object TagSetting {
   
-  @scala.inline
-  def apply(): TagSetting = {
+  inline def apply(): TagSetting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TagSetting]
   }
   
-  @scala.inline
-  implicit class TagSettingMutableBuilder[Self <: TagSetting] (val x: Self) extends AnyVal {
+  extension [Self <: TagSetting](x: Self) {
     
-    @scala.inline
-    def setAdditionalKeyValues(value: String): Self = StObject.set(x, "additionalKeyValues", value.asInstanceOf[js.Any])
+    inline def setAdditionalKeyValues(value: String): Self = StObject.set(x, "additionalKeyValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalKeyValuesUndefined: Self = StObject.set(x, "additionalKeyValues", js.undefined)
+    inline def setAdditionalKeyValuesUndefined: Self = StObject.set(x, "additionalKeyValues", js.undefined)
     
-    @scala.inline
-    def setIncludeClickThroughUrls(value: Boolean): Self = StObject.set(x, "includeClickThroughUrls", value.asInstanceOf[js.Any])
+    inline def setIncludeClickThroughUrls(value: Boolean): Self = StObject.set(x, "includeClickThroughUrls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeClickThroughUrlsUndefined: Self = StObject.set(x, "includeClickThroughUrls", js.undefined)
+    inline def setIncludeClickThroughUrlsUndefined: Self = StObject.set(x, "includeClickThroughUrls", js.undefined)
     
-    @scala.inline
-    def setIncludeClickTracking(value: Boolean): Self = StObject.set(x, "includeClickTracking", value.asInstanceOf[js.Any])
+    inline def setIncludeClickTracking(value: Boolean): Self = StObject.set(x, "includeClickTracking", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeClickTrackingUndefined: Self = StObject.set(x, "includeClickTracking", js.undefined)
+    inline def setIncludeClickTrackingUndefined: Self = StObject.set(x, "includeClickTracking", js.undefined)
     
-    @scala.inline
-    def setKeywordOption(value: String): Self = StObject.set(x, "keywordOption", value.asInstanceOf[js.Any])
+    inline def setKeywordOption(value: String): Self = StObject.set(x, "keywordOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeywordOptionUndefined: Self = StObject.set(x, "keywordOption", js.undefined)
+    inline def setKeywordOptionUndefined: Self = StObject.set(x, "keywordOption", js.undefined)
   }
 }

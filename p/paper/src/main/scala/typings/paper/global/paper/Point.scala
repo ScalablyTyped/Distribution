@@ -55,8 +55,7 @@ object Point {
     * @return the newly created point object
     */
   /* static member */
-  @scala.inline
-  def max(point1: typings.paper.paper.Point, point2: typings.paper.paper.Point): typings.paper.paper.Point = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(point1.asInstanceOf[js.Any], point2.asInstanceOf[js.Any])).asInstanceOf[typings.paper.paper.Point]
+  inline def max(point1: typings.paper.paper.Point, point2: typings.paper.paper.Point): typings.paper.paper.Point = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(point1.asInstanceOf[js.Any], point2.asInstanceOf[js.Any])).asInstanceOf[typings.paper.paper.Point]
   
   /** 
     * Returns a new point object with the smallest {@link #x} and
@@ -65,8 +64,7 @@ object Point {
     * @return the newly created point object
     */
   /* static member */
-  @scala.inline
-  def min(point1: typings.paper.paper.Point, point2: typings.paper.paper.Point): typings.paper.paper.Point = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(point1.asInstanceOf[js.Any], point2.asInstanceOf[js.Any])).asInstanceOf[typings.paper.paper.Point]
+  inline def min(point1: typings.paper.paper.Point, point2: typings.paper.paper.Point): typings.paper.paper.Point = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(point1.asInstanceOf[js.Any], point2.asInstanceOf[js.Any])).asInstanceOf[typings.paper.paper.Point]
   
   /** 
     * Returns a point object with random {@link #x} and {@link #y} values
@@ -75,6 +73,5 @@ object Point {
     * @return the newly created point object
     */
   /* static member */
-  @scala.inline
-  def random(): typings.paper.paper.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[typings.paper.paper.Point]
+  inline def random(): typings.paper.paper.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[typings.paper.paper.Point]
 }

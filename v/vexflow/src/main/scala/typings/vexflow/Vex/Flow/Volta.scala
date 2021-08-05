@@ -15,8 +15,7 @@ trait Volta
 }
 object Volta {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addEndModifier: () => Unit,
     addModifier: () => Unit,
     addToStave: (Stave, Boolean) => StaveModifier,
@@ -67,13 +66,10 @@ object Volta {
          with `type`
   }
   
-  @scala.inline
-  implicit class VoltaMutableBuilder[Self <: Volta] (val x: Self) extends AnyVal {
+  extension [Self <: Volta](x: Self) {
     
-    @scala.inline
-    def setDraw(value: (Stave, Double) => Volta): Self = StObject.set(x, "draw", js.Any.fromFunction2(value))
+    inline def setDraw(value: (Stave, Double) => Volta): Self = StObject.set(x, "draw", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetShiftY(value: Double => Volta): Self = StObject.set(x, "setShiftY", js.Any.fromFunction1(value))
+    inline def setSetShiftY(value: Double => Volta): Self = StObject.set(x, "setShiftY", js.Any.fromFunction1(value))
   }
 }

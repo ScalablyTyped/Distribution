@@ -13,12 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** The union type meta-constructor. */
 object mod {
   
-  @scala.inline
-  def apply(): UnionType = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[UnionType]
-  @scala.inline
-  def apply(fields: js.Array[js.Any]): UnionType = ^.asInstanceOf[js.Dynamic].apply(fields.asInstanceOf[js.Any]).asInstanceOf[UnionType]
-  @scala.inline
-  def apply(fields: js.Object): UnionType = ^.asInstanceOf[js.Dynamic].apply(fields.asInstanceOf[js.Any]).asInstanceOf[UnionType]
+  inline def apply(): UnionType = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[UnionType]
+  inline def apply(fields: js.Array[js.Any]): UnionType = ^.asInstanceOf[js.Dynamic].apply(fields.asInstanceOf[js.Any]).asInstanceOf[UnionType]
+  inline def apply(fields: js.Object): UnionType = ^.asInstanceOf[js.Dynamic].apply(fields.asInstanceOf[js.Any]).asInstanceOf[UnionType]
   
   @JSImport("ref-union", JSImport.Namespace)
   @js.native

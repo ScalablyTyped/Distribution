@@ -30,40 +30,29 @@ trait SystemUpdate extends StObject {
 }
 object SystemUpdate {
   
-  @scala.inline
-  def apply(): SystemUpdate = {
+  inline def apply(): SystemUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SystemUpdate]
   }
   
-  @scala.inline
-  implicit class SystemUpdateMutableBuilder[Self <: SystemUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: SystemUpdate](x: Self) {
     
-    @scala.inline
-    def setEndMinutes(value: Double): Self = StObject.set(x, "endMinutes", value.asInstanceOf[js.Any])
+    inline def setEndMinutes(value: Double): Self = StObject.set(x, "endMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndMinutesUndefined: Self = StObject.set(x, "endMinutes", js.undefined)
+    inline def setEndMinutesUndefined: Self = StObject.set(x, "endMinutes", js.undefined)
     
-    @scala.inline
-    def setFreezePeriods(value: js.Array[FreezePeriod]): Self = StObject.set(x, "freezePeriods", value.asInstanceOf[js.Any])
+    inline def setFreezePeriods(value: js.Array[FreezePeriod]): Self = StObject.set(x, "freezePeriods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFreezePeriodsUndefined: Self = StObject.set(x, "freezePeriods", js.undefined)
+    inline def setFreezePeriodsUndefined: Self = StObject.set(x, "freezePeriods", js.undefined)
     
-    @scala.inline
-    def setFreezePeriodsVarargs(value: FreezePeriod*): Self = StObject.set(x, "freezePeriods", js.Array(value :_*))
+    inline def setFreezePeriodsVarargs(value: FreezePeriod*): Self = StObject.set(x, "freezePeriods", js.Array(value :_*))
     
-    @scala.inline
-    def setStartMinutes(value: Double): Self = StObject.set(x, "startMinutes", value.asInstanceOf[js.Any])
+    inline def setStartMinutes(value: Double): Self = StObject.set(x, "startMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartMinutesUndefined: Self = StObject.set(x, "startMinutes", js.undefined)
+    inline def setStartMinutesUndefined: Self = StObject.set(x, "startMinutes", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

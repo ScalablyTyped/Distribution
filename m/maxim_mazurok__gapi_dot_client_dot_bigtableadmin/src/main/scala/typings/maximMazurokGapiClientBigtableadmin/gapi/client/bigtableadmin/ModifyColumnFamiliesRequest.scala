@@ -14,22 +14,17 @@ trait ModifyColumnFamiliesRequest extends StObject {
 }
 object ModifyColumnFamiliesRequest {
   
-  @scala.inline
-  def apply(): ModifyColumnFamiliesRequest = {
+  inline def apply(): ModifyColumnFamiliesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyColumnFamiliesRequest]
   }
   
-  @scala.inline
-  implicit class ModifyColumnFamiliesRequestMutableBuilder[Self <: ModifyColumnFamiliesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyColumnFamiliesRequest](x: Self) {
     
-    @scala.inline
-    def setModifications(value: js.Array[Modification]): Self = StObject.set(x, "modifications", value.asInstanceOf[js.Any])
+    inline def setModifications(value: js.Array[Modification]): Self = StObject.set(x, "modifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModificationsUndefined: Self = StObject.set(x, "modifications", js.undefined)
+    inline def setModificationsUndefined: Self = StObject.set(x, "modifications", js.undefined)
     
-    @scala.inline
-    def setModificationsVarargs(value: Modification*): Self = StObject.set(x, "modifications", js.Array(value :_*))
+    inline def setModificationsVarargs(value: Modification*): Self = StObject.set(x, "modifications", js.Array(value :_*))
   }
 }

@@ -13,22 +13,17 @@ trait SpeechToTextResult extends StObject {
 }
 object SpeechToTextResult {
   
-  @scala.inline
-  def apply(languageCode: String, text: js.Array[String]): SpeechToTextResult = {
+  inline def apply(languageCode: String, text: js.Array[String]): SpeechToTextResult = {
     val __obj = js.Dynamic.literal(languageCode = languageCode.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpeechToTextResult]
   }
   
-  @scala.inline
-  implicit class SpeechToTextResultMutableBuilder[Self <: SpeechToTextResult] (val x: Self) extends AnyVal {
+  extension [Self <: SpeechToTextResult](x: Self) {
     
-    @scala.inline
-    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: js.Array[String]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: js.Array[String]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value :_*))
+    inline def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value :_*))
   }
 }

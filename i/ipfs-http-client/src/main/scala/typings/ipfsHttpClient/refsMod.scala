@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object refsMod {
   
-  @scala.inline
-  def apply(clientOptions: ClientOptions): Call = ^.asInstanceOf[js.Dynamic].apply(clientOptions.asInstanceOf[js.Any]).asInstanceOf[Call]
+  inline def apply(clientOptions: ClientOptions): Call = ^.asInstanceOf[js.Dynamic].apply(clientOptions.asInstanceOf[js.Any]).asInstanceOf[Call]
   
   @JSImport("ipfs-http-client/dist/src/refs", JSImport.Namespace)
   @js.native

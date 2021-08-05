@@ -23,25 +23,19 @@ trait RegisterApplicationRevisionInput extends StObject {
 }
 object RegisterApplicationRevisionInput {
   
-  @scala.inline
-  def apply(applicationName: ApplicationName, revision: RevisionLocation): RegisterApplicationRevisionInput = {
+  inline def apply(applicationName: ApplicationName, revision: RevisionLocation): RegisterApplicationRevisionInput = {
     val __obj = js.Dynamic.literal(applicationName = applicationName.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterApplicationRevisionInput]
   }
   
-  @scala.inline
-  implicit class RegisterApplicationRevisionInputMutableBuilder[Self <: RegisterApplicationRevisionInput] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterApplicationRevisionInput](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setRevision(value: RevisionLocation): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+    inline def setRevision(value: RevisionLocation): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
   }
 }

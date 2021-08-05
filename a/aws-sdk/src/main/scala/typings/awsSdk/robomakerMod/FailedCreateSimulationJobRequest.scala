@@ -28,37 +28,27 @@ trait FailedCreateSimulationJobRequest extends StObject {
 }
 object FailedCreateSimulationJobRequest {
   
-  @scala.inline
-  def apply(): FailedCreateSimulationJobRequest = {
+  inline def apply(): FailedCreateSimulationJobRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FailedCreateSimulationJobRequest]
   }
   
-  @scala.inline
-  implicit class FailedCreateSimulationJobRequestMutableBuilder[Self <: FailedCreateSimulationJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: FailedCreateSimulationJobRequest](x: Self) {
     
-    @scala.inline
-    def setFailedAt(value: FailedAt): Self = StObject.set(x, "failedAt", value.asInstanceOf[js.Any])
+    inline def setFailedAt(value: FailedAt): Self = StObject.set(x, "failedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedAtUndefined: Self = StObject.set(x, "failedAt", js.undefined)
+    inline def setFailedAtUndefined: Self = StObject.set(x, "failedAt", js.undefined)
     
-    @scala.inline
-    def setFailureCode(value: SimulationJobErrorCode): Self = StObject.set(x, "failureCode", value.asInstanceOf[js.Any])
+    inline def setFailureCode(value: SimulationJobErrorCode): Self = StObject.set(x, "failureCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureCodeUndefined: Self = StObject.set(x, "failureCode", js.undefined)
+    inline def setFailureCodeUndefined: Self = StObject.set(x, "failureCode", js.undefined)
     
-    @scala.inline
-    def setFailureReason(value: GenericString): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
+    inline def setFailureReason(value: GenericString): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
+    inline def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
     
-    @scala.inline
-    def setRequest(value: SimulationJobRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: SimulationJobRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+    inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait DescribeEventCategoriesMessage extends StObject {
 }
 object DescribeEventCategoriesMessage {
   
-  @scala.inline
-  def apply(): DescribeEventCategoriesMessage = {
+  inline def apply(): DescribeEventCategoriesMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeEventCategoriesMessage]
   }
   
-  @scala.inline
-  implicit class DescribeEventCategoriesMessageMutableBuilder[Self <: DescribeEventCategoriesMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEventCategoriesMessage](x: Self) {
     
-    @scala.inline
-    def setSourceType(value: String): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
+    inline def setSourceType(value: String): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceTypeUndefined: Self = StObject.set(x, "SourceType", js.undefined)
+    inline def setSourceTypeUndefined: Self = StObject.set(x, "SourceType", js.undefined)
   }
 }

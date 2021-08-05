@@ -20,25 +20,19 @@ trait QueryInterpretationOptions extends StObject {
 }
 object QueryInterpretationOptions {
   
-  @scala.inline
-  def apply(): QueryInterpretationOptions = {
+  inline def apply(): QueryInterpretationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryInterpretationOptions]
   }
   
-  @scala.inline
-  implicit class QueryInterpretationOptionsMutableBuilder[Self <: QueryInterpretationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: QueryInterpretationOptions](x: Self) {
     
-    @scala.inline
-    def setDisableNlInterpretation(value: Boolean): Self = StObject.set(x, "disableNlInterpretation", value.asInstanceOf[js.Any])
+    inline def setDisableNlInterpretation(value: Boolean): Self = StObject.set(x, "disableNlInterpretation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableNlInterpretationUndefined: Self = StObject.set(x, "disableNlInterpretation", js.undefined)
+    inline def setDisableNlInterpretationUndefined: Self = StObject.set(x, "disableNlInterpretation", js.undefined)
     
-    @scala.inline
-    def setEnableVerbatimMode(value: Boolean): Self = StObject.set(x, "enableVerbatimMode", value.asInstanceOf[js.Any])
+    inline def setEnableVerbatimMode(value: Boolean): Self = StObject.set(x, "enableVerbatimMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableVerbatimModeUndefined: Self = StObject.set(x, "enableVerbatimMode", js.undefined)
+    inline def setEnableVerbatimModeUndefined: Self = StObject.set(x, "enableVerbatimMode", js.undefined)
   }
 }

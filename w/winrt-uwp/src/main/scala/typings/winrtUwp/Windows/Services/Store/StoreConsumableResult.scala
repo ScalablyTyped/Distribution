@@ -22,8 +22,7 @@ trait StoreConsumableResult extends StObject {
 }
 object StoreConsumableResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     balanceRemaining: Double,
     extendedError: WinRTError,
     status: StoreConsumableStatus,
@@ -33,19 +32,14 @@ object StoreConsumableResult {
     __obj.asInstanceOf[StoreConsumableResult]
   }
   
-  @scala.inline
-  implicit class StoreConsumableResultMutableBuilder[Self <: StoreConsumableResult] (val x: Self) extends AnyVal {
+  extension [Self <: StoreConsumableResult](x: Self) {
     
-    @scala.inline
-    def setBalanceRemaining(value: Double): Self = StObject.set(x, "balanceRemaining", value.asInstanceOf[js.Any])
+    inline def setBalanceRemaining(value: Double): Self = StObject.set(x, "balanceRemaining", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendedError(value: WinRTError): Self = StObject.set(x, "extendedError", value.asInstanceOf[js.Any])
+    inline def setExtendedError(value: WinRTError): Self = StObject.set(x, "extendedError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: StoreConsumableStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: StoreConsumableStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackingId(value: String): Self = StObject.set(x, "trackingId", value.asInstanceOf[js.Any])
+    inline def setTrackingId(value: String): Self = StObject.set(x, "trackingId", value.asInstanceOf[js.Any])
   }
 }

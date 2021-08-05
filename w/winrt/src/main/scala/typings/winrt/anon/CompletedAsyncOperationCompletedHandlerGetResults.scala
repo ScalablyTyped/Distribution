@@ -18,8 +18,7 @@ trait CompletedAsyncOperationCompletedHandlerGetResults extends StObject {
 }
 object CompletedAsyncOperationCompletedHandlerGetResults {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     completed: (/* asyncInfo */ IAsyncOperation[SmsDevice], /* asyncStatus */ AsyncStatus) => Unit,
     getResults: () => SmsDevice
   ): CompletedAsyncOperationCompletedHandlerGetResults = {
@@ -27,13 +26,10 @@ object CompletedAsyncOperationCompletedHandlerGetResults {
     __obj.asInstanceOf[CompletedAsyncOperationCompletedHandlerGetResults]
   }
   
-  @scala.inline
-  implicit class CompletedAsyncOperationCompletedHandlerGetResultsMutableBuilder[Self <: CompletedAsyncOperationCompletedHandlerGetResults] (val x: Self) extends AnyVal {
+  extension [Self <: CompletedAsyncOperationCompletedHandlerGetResults](x: Self) {
     
-    @scala.inline
-    def setCompleted(value: (/* asyncInfo */ IAsyncOperation[SmsDevice], /* asyncStatus */ AsyncStatus) => Unit): Self = StObject.set(x, "completed", js.Any.fromFunction2(value))
+    inline def setCompleted(value: (/* asyncInfo */ IAsyncOperation[SmsDevice], /* asyncStatus */ AsyncStatus) => Unit): Self = StObject.set(x, "completed", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetResults(value: () => SmsDevice): Self = StObject.set(x, "getResults", js.Any.fromFunction0(value))
+    inline def setGetResults(value: () => SmsDevice): Self = StObject.set(x, "getResults", js.Any.fromFunction0(value))
   }
 }

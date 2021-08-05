@@ -20,16 +20,13 @@ trait dotDensity extends StObject {
 }
 object dotDensity {
   
-  @scala.inline
-  def apply(createRenderer: dotDensityCreateRendererParams => js.Promise[RendererResult]): dotDensity = {
+  inline def apply(createRenderer: dotDensityCreateRendererParams => js.Promise[RendererResult]): dotDensity = {
     val __obj = js.Dynamic.literal(createRenderer = js.Any.fromFunction1(createRenderer))
     __obj.asInstanceOf[dotDensity]
   }
   
-  @scala.inline
-  implicit class dotDensityMutableBuilder[Self <: dotDensity] (val x: Self) extends AnyVal {
+  extension [Self <: dotDensity](x: Self) {
     
-    @scala.inline
-    def setCreateRenderer(value: dotDensityCreateRendererParams => js.Promise[RendererResult]): Self = StObject.set(x, "createRenderer", js.Any.fromFunction1(value))
+    inline def setCreateRenderer(value: dotDensityCreateRendererParams => js.Promise[RendererResult]): Self = StObject.set(x, "createRenderer", js.Any.fromFunction1(value))
   }
 }

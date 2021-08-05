@@ -50,7 +50,7 @@ object templateMod {
   
   @JSImport("@angular/compiler/src/render3/view/template", "BindingScope")
   @js.native
-  class BindingScope protected ()
+  /* private */ class BindingScope ()
     extends StObject
        with LocalResolver {
     
@@ -79,7 +79,7 @@ object templateMod {
     def isListenerScope(): Boolean | Null = js.native
     
     /** Keeps a map from local variables to their BindingData. */
-    var map: js.Any = js.native
+    /* private */ var map: js.Any = js.native
     
     def maybeGenerateSharedContextVar(value: BindingData): Unit = js.native
     
@@ -91,13 +91,13 @@ object templateMod {
     /* CompleteClass */
     override def notifyImplicitReceiverUse(): Unit = js.native
     
-    var parent: js.Any = js.native
+    /* private */ var parent: js.Any = js.native
     
-    var referenceNameIndex: js.Any = js.native
+    /* private */ var referenceNameIndex: js.Any = js.native
     
     def restoreViewStatement(): js.Array[Statement] = js.native
     
-    var restoreViewVariable: js.Any = js.native
+    /* private */ var restoreViewVariable: js.Any = js.native
     
     /**
       * Create a local variable for later reference.
@@ -173,8 +173,7 @@ object templateMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def createRootScope(): BindingScope = ^.asInstanceOf[js.Dynamic].applyDynamic("createRootScope")().asInstanceOf[BindingScope]
+    inline def createRootScope(): BindingScope = ^.asInstanceOf[js.Dynamic].applyDynamic("createRootScope")().asInstanceOf[BindingScope]
   }
   
   @JSImport("@angular/compiler/src/render3/view/template", "LEADING_TRIVIA_CHARS")
@@ -205,33 +204,33 @@ object templateMod {
       _constants: js.UndefOr[ComponentDefConsts]
     ) = this()
     
-    var _bindingContext: js.Any = js.native
+    /* private */ var _bindingContext: js.Any = js.native
     
     /**
       * This scope contains local variables declared in the update mode block of the template.
       * (e.g. refs and context vars in bindings)
       */
-    var _bindingScope: js.Any = js.native
+    /* private */ var _bindingScope: js.Any = js.native
     
-    var _bindingSlots: js.Any = js.native
+    /* private */ var _bindingSlots: js.Any = js.native
     
-    var _constants: js.Any = js.native
+    /* private */ var _constants: js.Any = js.native
     
     /**
       * List of callbacks to generate creation mode instructions. We store them here as we process
       * the template so bindings in listeners are resolved only once all nodes have been visited.
       * This ensures all local refs and context variables are available for matching.
       */
-    var _creationCodeFns: js.Any = js.native
+    /* private */ var _creationCodeFns: js.Any = js.native
     
     /** Index of the currently-selected node. */
-    var _currentIndex: js.Any = js.native
+    /* private */ var _currentIndex: js.Any = js.native
     
-    var _dataIndex: js.Any = js.native
+    /* private */ var _dataIndex: js.Any = js.native
     
-    var _implicitReceiverExpr: js.Any = js.native
+    /* private */ var _implicitReceiverExpr: js.Any = js.native
     
-    var _namespace: js.Any = js.native
+    /* private */ var _namespace: js.Any = js.native
     
     /**
       * List of callbacks to build nested templates. Nested templates must not be visited until
@@ -239,45 +238,45 @@ object templateMod {
       * local ref bindings in nested templates are able to find local ref values if the refs
       * are defined after the template declaration.
       */
-    var _nestedTemplateFns: js.Any = js.native
+    /* private */ var _nestedTemplateFns: js.Any = js.native
     
-    var _ngContentReservedSlots: js.Any = js.native
+    /* private */ var _ngContentReservedSlots: js.Any = js.native
     
-    var _ngContentSelectorsOffset: js.Any = js.native
+    /* private */ var _ngContentSelectorsOffset: js.Any = js.native
     
-    var _prefixCode: js.Any = js.native
+    /* private */ var _prefixCode: js.Any = js.native
     
-    var _pureFunctionSlots: js.Any = js.native
+    /* private */ var _pureFunctionSlots: js.Any = js.native
     
     /** Temporary variable declarations generated from visiting pipes, literals, etc. */
-    var _tempVariables: js.Any = js.native
+    /* private */ var _tempVariables: js.Any = js.native
     
-    var _unsupported: js.Any = js.native
+    /* private */ var _unsupported: js.Any = js.native
     
     /**
       * List of callbacks to generate update mode instructions. We store them here as we process
       * the template so bindings are resolved only once all nodes have been visited. This ensures
       * all local refs and context variables are available for matching.
       */
-    var _updateCodeFns: js.Any = js.native
+    /* private */ var _updateCodeFns: js.Any = js.native
     
-    var _valueConverter: js.Any = js.native
+    /* private */ var _valueConverter: js.Any = js.native
     
-    var addAdvanceInstructionIfNecessary: js.Any = js.native
+    /* private */ var addAdvanceInstructionIfNecessary: js.Any = js.native
     
-    var addAttrsToConsts: js.Any = js.native
+    /* private */ var addAttrsToConsts: js.Any = js.native
     
-    var addNamespaceInstruction: js.Any = js.native
+    /* private */ var addNamespaceInstruction: js.Any = js.native
     
-    var addToConsts: js.Any = js.native
+    /* private */ var addToConsts: js.Any = js.native
     
-    var allocateBindingSlots: js.Any = js.native
+    /* private */ var allocateBindingSlots: js.Any = js.native
     
-    var allocateDataSlot: js.Any = js.native
+    /* private */ var allocateDataSlot: js.Any = js.native
     
-    var allocatePureFunctionSlots: js.Any = js.native
+    /* private */ var allocatePureFunctionSlots: js.Any = js.native
     
-    var bindingContext: js.Any = js.native
+    /* private */ var bindingContext: js.Any = js.native
     
     def buildTemplateFunction(nodes: js.Array[Node], variables: js.Array[Variable]): FunctionExpr = js.native
     def buildTemplateFunction(nodes: js.Array[Node], variables: js.Array[Variable], ngContentSelectorsOffset: Double): FunctionExpr = js.native
@@ -294,21 +293,21 @@ object templateMod {
       i18n: I18nMeta
     ): FunctionExpr = js.native
     
-    var constantPool: js.Any = js.native
+    /* private */ var constantPool: js.Any = js.native
     
-    var contextName: js.Any = js.native
+    /* private */ var contextName: js.Any = js.native
     
-    var convertPropertyBinding: js.Any = js.native
+    /* private */ var convertPropertyBinding: js.Any = js.native
     
-    var creationInstruction: js.Any = js.native
+    /* private */ var creationInstruction: js.Any = js.native
     
-    var creationInstructionChain: js.Any = js.native
+    /* private */ var creationInstructionChain: js.Any = js.native
     
-    var directiveMatcher: js.Any = js.native
+    /* private */ var directiveMatcher: js.Any = js.native
     
-    var directives: js.Any = js.native
+    /* private */ var directives: js.Any = js.native
     
-    var fileBasedI18nSuffix: js.Any = js.native
+    /* private */ var fileBasedI18nSuffix: js.Any = js.native
     
     /**
       * Prepares all attribute expression values for the `TAttributes` array.
@@ -333,7 +332,7 @@ object templateMod {
       * Note that this function will fully ignore all synthetic (@foo) attribute values
       * because those values are intended to always be generated as property instructions.
       */
-    var getAttributeExpressions: js.Any = js.native
+    /* private */ var getAttributeExpressions: js.Any = js.native
     
     def getConstCount(): Double = js.native
     
@@ -343,12 +342,12 @@ object templateMod {
       * Gets an expression that refers to the implicit receiver. The implicit
       * receiver is always the root level context.
       */
-    var getImplicitReceiverExpr: js.Any = js.native
+    /* private */ var getImplicitReceiverExpr: js.Any = js.native
     
     /* CompleteClass */
     override def getLocal(name: String): Expression | Null = js.native
     
-    var getNamespaceInstruction: js.Any = js.native
+    /* private */ var getNamespaceInstruction: js.Any = js.native
     
     def getNgContentSelectors(): Expression | Null = js.native
     
@@ -358,74 +357,74 @@ object templateMod {
       * while visiting the arguments.
       * @param value The original expression we will be resolving an arguments list from.
       */
-    var getUpdateInstructionArguments: js.Any = js.native
+    /* private */ var getUpdateInstructionArguments: js.Any = js.native
     
     def getVarCount(): Double = js.native
     
-    var i18n: js.Any = js.native
+    /* private */ var i18n: js.Any = js.native
     
-    var i18nAppendBindings: js.Any = js.native
+    /* private */ var i18nAppendBindings: js.Any = js.native
     
-    var i18nAttributesInstruction: js.Any = js.native
+    /* private */ var i18nAttributesInstruction: js.Any = js.native
     
-    var i18nBindProps: js.Any = js.native
+    /* private */ var i18nBindProps: js.Any = js.native
     
-    var i18nContext: js.Any = js.native
+    /* private */ var i18nContext: js.Any = js.native
     
-    var i18nEnd: js.Any = js.native
+    /* private */ var i18nEnd: js.Any = js.native
     
-    var i18nGenerateClosureVar: js.Any = js.native
+    /* private */ var i18nGenerateClosureVar: js.Any = js.native
     
-    var i18nGenerateMainBlockVar: js.Any = js.native
+    /* private */ var i18nGenerateMainBlockVar: js.Any = js.native
     
-    var i18nStart: js.Any = js.native
+    /* private */ var i18nStart: js.Any = js.native
     
-    var i18nTranslate: js.Any = js.native
+    /* private */ var i18nTranslate: js.Any = js.native
     
-    var i18nUpdateRef: js.Any = js.native
+    /* private */ var i18nUpdateRef: js.Any = js.native
     
-    var i18nUseExternalIds: js.Any = js.native
+    /* private */ var i18nUseExternalIds: js.Any = js.native
     
-    var instructionFn: js.Any = js.native
+    /* private */ var instructionFn: js.Any = js.native
     
     /**
       * Adds an update instruction for an interpolated property or attribute, such as
       * `prop="{{value}}"` or `attr.title="{{value}}"`
       */
-    var interpolatedUpdateInstruction: js.Any = js.native
+    /* private */ var interpolatedUpdateInstruction: js.Any = js.native
     
-    var level: js.Any = js.native
+    /* private */ var level: js.Any = js.native
     
-    var matchDirectives: js.Any = js.native
+    /* private */ var matchDirectives: js.Any = js.native
     
     /* CompleteClass */
     override def notifyImplicitReceiverUse(): Unit = js.native
     
-    var pipeTypeByName: js.Any = js.native
+    /* private */ var pipeTypeByName: js.Any = js.native
     
-    var pipes: js.Any = js.native
+    /* private */ var pipes: js.Any = js.native
     
-    var prepareListenerParameter: js.Any = js.native
+    /* private */ var prepareListenerParameter: js.Any = js.native
     
-    var prepareRefsArray: js.Any = js.native
+    /* private */ var prepareRefsArray: js.Any = js.native
     
-    var processStylingUpdateInstruction: js.Any = js.native
+    /* private */ var processStylingUpdateInstruction: js.Any = js.native
     
-    var registerContextVariables: js.Any = js.native
+    /* private */ var registerContextVariables: js.Any = js.native
     
-    var templateIndex: js.Any = js.native
+    /* private */ var templateIndex: js.Any = js.native
     
-    var templateName: js.Any = js.native
+    /* private */ var templateName: js.Any = js.native
     
-    var templatePropertyBindings: js.Any = js.native
+    /* private */ var templatePropertyBindings: js.Any = js.native
     
-    var updateInstruction: js.Any = js.native
+    /* private */ var updateInstruction: js.Any = js.native
     
-    var updateInstructionChain: js.Any = js.native
+    /* private */ var updateInstructionChain: js.Any = js.native
     
-    var updateInstructionChainWithAdvance: js.Any = js.native
+    /* private */ var updateInstructionChainWithAdvance: js.Any = js.native
     
-    var updateInstructionWithAdvance: js.Any = js.native
+    /* private */ var updateInstructionWithAdvance: js.Any = js.native
     
     /* CompleteClass */
     override def visitBoundAttribute(attribute: BoundAttribute): Unit = js.native
@@ -492,41 +491,36 @@ object templateMod {
           ]
     ) = this()
     
-    var _pipeBindExprs: js.Any = js.native
+    /* private */ var _pipeBindExprs: js.Any = js.native
     
-    var allocatePureFunctionSlots: js.Any = js.native
+    /* private */ var allocatePureFunctionSlots: js.Any = js.native
     
-    var allocateSlot: js.Any = js.native
+    /* private */ var allocateSlot: js.Any = js.native
     
-    var constantPool: js.Any = js.native
+    /* private */ var constantPool: js.Any = js.native
     
-    var definePipe: js.Any = js.native
+    /* private */ var definePipe: js.Any = js.native
     
     def updatePipeSlotOffsets(bindingSlots: Double): Unit = js.native
   }
   
-  @scala.inline
-  def createCssSelector(elementName: String, attributes: StringDictionary[String]): CssSelector = (^.asInstanceOf[js.Dynamic].applyDynamic("createCssSelector")(elementName.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[CssSelector]
+  inline def createCssSelector(elementName: String, attributes: StringDictionary[String]): CssSelector = (^.asInstanceOf[js.Dynamic].applyDynamic("createCssSelector")(elementName.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[CssSelector]
   
-  @scala.inline
-  def getTranslationDeclStmts(message: Message, variable: ReadVarExpr, closureVar: ReadVarExpr): js.Array[Statement] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTranslationDeclStmts")(message.asInstanceOf[js.Any], variable.asInstanceOf[js.Any], closureVar.asInstanceOf[js.Any])).asInstanceOf[js.Array[Statement]]
-  @scala.inline
-  def getTranslationDeclStmts(
+  inline def getTranslationDeclStmts(message: Message, variable: ReadVarExpr, closureVar: ReadVarExpr): js.Array[Statement] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTranslationDeclStmts")(message.asInstanceOf[js.Any], variable.asInstanceOf[js.Any], closureVar.asInstanceOf[js.Any])).asInstanceOf[js.Array[Statement]]
+  inline def getTranslationDeclStmts(
     message: Message,
     variable: ReadVarExpr,
     closureVar: ReadVarExpr,
     params: StringDictionary[Expression]
   ): js.Array[Statement] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTranslationDeclStmts")(message.asInstanceOf[js.Any], variable.asInstanceOf[js.Any], closureVar.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Array[Statement]]
-  @scala.inline
-  def getTranslationDeclStmts(
+  inline def getTranslationDeclStmts(
     message: Message,
     variable: ReadVarExpr,
     closureVar: ReadVarExpr,
     params: StringDictionary[Expression],
     transformFn: js.Function1[/* raw */ ReadVarExpr, Expression]
   ): js.Array[Statement] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTranslationDeclStmts")(message.asInstanceOf[js.Any], variable.asInstanceOf[js.Any], closureVar.asInstanceOf[js.Any], params.asInstanceOf[js.Any], transformFn.asInstanceOf[js.Any])).asInstanceOf[js.Array[Statement]]
-  @scala.inline
-  def getTranslationDeclStmts(
+  inline def getTranslationDeclStmts(
     message: Message,
     variable: ReadVarExpr,
     closureVar: ReadVarExpr,
@@ -534,34 +528,22 @@ object templateMod {
     transformFn: js.Function1[/* raw */ ReadVarExpr, Expression]
   ): js.Array[Statement] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTranslationDeclStmts")(message.asInstanceOf[js.Any], variable.asInstanceOf[js.Any], closureVar.asInstanceOf[js.Any], params.asInstanceOf[js.Any], transformFn.asInstanceOf[js.Any])).asInstanceOf[js.Array[Statement]]
   
-  @scala.inline
-  def makeBindingParser(): BindingParser = ^.asInstanceOf[js.Dynamic].applyDynamic("makeBindingParser")().asInstanceOf[BindingParser]
-  @scala.inline
-  def makeBindingParser(interpolationConfig: InterpolationConfig): BindingParser = ^.asInstanceOf[js.Dynamic].applyDynamic("makeBindingParser")(interpolationConfig.asInstanceOf[js.Any]).asInstanceOf[BindingParser]
+  inline def makeBindingParser(): BindingParser = ^.asInstanceOf[js.Dynamic].applyDynamic("makeBindingParser")().asInstanceOf[BindingParser]
+  inline def makeBindingParser(interpolationConfig: InterpolationConfig): BindingParser = ^.asInstanceOf[js.Dynamic].applyDynamic("makeBindingParser")(interpolationConfig.asInstanceOf[js.Any]).asInstanceOf[BindingParser]
   
-  @scala.inline
-  def parseTemplate(template: String, templateUrl: String): ParsedTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("parseTemplate")(template.asInstanceOf[js.Any], templateUrl.asInstanceOf[js.Any])).asInstanceOf[ParsedTemplate]
-  @scala.inline
-  def parseTemplate(template: String, templateUrl: String, options: ParseTemplateOptions): ParsedTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("parseTemplate")(template.asInstanceOf[js.Any], templateUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParsedTemplate]
+  inline def parseTemplate(template: String, templateUrl: String): ParsedTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("parseTemplate")(template.asInstanceOf[js.Any], templateUrl.asInstanceOf[js.Any])).asInstanceOf[ParsedTemplate]
+  inline def parseTemplate(template: String, templateUrl: String, options: ParseTemplateOptions): ParsedTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("parseTemplate")(template.asInstanceOf[js.Any], templateUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParsedTemplate]
   
-  @scala.inline
-  def prepareEventListenerParameters(eventAst: BoundEvent): js.Array[Expression] = ^.asInstanceOf[js.Dynamic].applyDynamic("prepareEventListenerParameters")(eventAst.asInstanceOf[js.Any]).asInstanceOf[js.Array[Expression]]
-  @scala.inline
-  def prepareEventListenerParameters(eventAst: BoundEvent, handlerName: String): js.Array[Expression] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareEventListenerParameters")(eventAst.asInstanceOf[js.Any], handlerName.asInstanceOf[js.Any])).asInstanceOf[js.Array[Expression]]
-  @scala.inline
-  def prepareEventListenerParameters(eventAst: BoundEvent, handlerName: String, scope: BindingScope): js.Array[Expression] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareEventListenerParameters")(eventAst.asInstanceOf[js.Any], handlerName.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Array[Expression]]
-  @scala.inline
-  def prepareEventListenerParameters(eventAst: BoundEvent, handlerName: Null, scope: BindingScope): js.Array[Expression] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareEventListenerParameters")(eventAst.asInstanceOf[js.Any], handlerName.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Array[Expression]]
-  @scala.inline
-  def prepareEventListenerParameters(eventAst: BoundEvent, handlerName: Unit, scope: BindingScope): js.Array[Expression] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareEventListenerParameters")(eventAst.asInstanceOf[js.Any], handlerName.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Array[Expression]]
+  inline def prepareEventListenerParameters(eventAst: BoundEvent): js.Array[Expression] = ^.asInstanceOf[js.Dynamic].applyDynamic("prepareEventListenerParameters")(eventAst.asInstanceOf[js.Any]).asInstanceOf[js.Array[Expression]]
+  inline def prepareEventListenerParameters(eventAst: BoundEvent, handlerName: String): js.Array[Expression] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareEventListenerParameters")(eventAst.asInstanceOf[js.Any], handlerName.asInstanceOf[js.Any])).asInstanceOf[js.Array[Expression]]
+  inline def prepareEventListenerParameters(eventAst: BoundEvent, handlerName: String, scope: BindingScope): js.Array[Expression] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareEventListenerParameters")(eventAst.asInstanceOf[js.Any], handlerName.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Array[Expression]]
+  inline def prepareEventListenerParameters(eventAst: BoundEvent, handlerName: Null, scope: BindingScope): js.Array[Expression] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareEventListenerParameters")(eventAst.asInstanceOf[js.Any], handlerName.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Array[Expression]]
+  inline def prepareEventListenerParameters(eventAst: BoundEvent, handlerName: Unit, scope: BindingScope): js.Array[Expression] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareEventListenerParameters")(eventAst.asInstanceOf[js.Any], handlerName.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Array[Expression]]
   
-  @scala.inline
-  def renderFlagCheckIfStmt(flags: RenderFlags, statements: js.Array[Statement]): IfStmt_ = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFlagCheckIfStmt")(flags.asInstanceOf[js.Any], statements.asInstanceOf[js.Any])).asInstanceOf[IfStmt_]
+  inline def renderFlagCheckIfStmt(flags: RenderFlags, statements: js.Array[Statement]): IfStmt_ = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFlagCheckIfStmt")(flags.asInstanceOf[js.Any], statements.asInstanceOf[js.Any])).asInstanceOf[IfStmt_]
   
-  @scala.inline
-  def resolveSanitizationFn(context: SecurityContext): ExternalExpr | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveSanitizationFn")(context.asInstanceOf[js.Any]).asInstanceOf[ExternalExpr | Null]
-  @scala.inline
-  def resolveSanitizationFn(context: SecurityContext, isAttribute: Boolean): ExternalExpr | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveSanitizationFn")(context.asInstanceOf[js.Any], isAttribute.asInstanceOf[js.Any])).asInstanceOf[ExternalExpr | Null]
+  inline def resolveSanitizationFn(context: SecurityContext): ExternalExpr | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveSanitizationFn")(context.asInstanceOf[js.Any]).asInstanceOf[ExternalExpr | Null]
+  inline def resolveSanitizationFn(context: SecurityContext, isAttribute: Boolean): ExternalExpr | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveSanitizationFn")(context.asInstanceOf[js.Any], isAttribute.asInstanceOf[js.Any])).asInstanceOf[ExternalExpr | Null]
   
   /**
     * This is used when one refers to variable such as: 'let abc = nextContext(2).$implicit`.
@@ -593,35 +575,26 @@ object templateMod {
   }
   object BindingData {
     
-    @scala.inline
-    def apply(declare: Boolean, lhs: Expression, localRef: Boolean, priority: Double, retrievalLevel: Double): BindingData = {
+    inline def apply(declare: Boolean, lhs: Expression, localRef: Boolean, priority: Double, retrievalLevel: Double): BindingData = {
       val __obj = js.Dynamic.literal(declare = declare.asInstanceOf[js.Any], lhs = lhs.asInstanceOf[js.Any], localRef = localRef.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], retrievalLevel = retrievalLevel.asInstanceOf[js.Any])
       __obj.asInstanceOf[BindingData]
     }
     
-    @scala.inline
-    implicit class BindingDataMutableBuilder[Self <: BindingData] (val x: Self) extends AnyVal {
+    extension [Self <: BindingData](x: Self) {
       
-      @scala.inline
-      def setDeclare(value: Boolean): Self = StObject.set(x, "declare", value.asInstanceOf[js.Any])
+      inline def setDeclare(value: Boolean): Self = StObject.set(x, "declare", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeclareLocalCallback(value: (/* scope */ BindingScope, /* relativeLevel */ Double) => js.Array[Statement]): Self = StObject.set(x, "declareLocalCallback", js.Any.fromFunction2(value))
+      inline def setDeclareLocalCallback(value: (/* scope */ BindingScope, /* relativeLevel */ Double) => js.Array[Statement]): Self = StObject.set(x, "declareLocalCallback", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDeclareLocalCallbackUndefined: Self = StObject.set(x, "declareLocalCallback", js.undefined)
+      inline def setDeclareLocalCallbackUndefined: Self = StObject.set(x, "declareLocalCallback", js.undefined)
       
-      @scala.inline
-      def setLhs(value: Expression): Self = StObject.set(x, "lhs", value.asInstanceOf[js.Any])
+      inline def setLhs(value: Expression): Self = StObject.set(x, "lhs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalRef(value: Boolean): Self = StObject.set(x, "localRef", value.asInstanceOf[js.Any])
+      inline def setLocalRef(value: Boolean): Self = StObject.set(x, "localRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetrievalLevel(value: Double): Self = StObject.set(x, "retrievalLevel", value.asInstanceOf[js.Any])
+      inline def setRetrievalLevel(value: Double): Self = StObject.set(x, "retrievalLevel", value.asInstanceOf[js.Any])
     }
   }
   
@@ -633,26 +606,20 @@ object templateMod {
   }
   object ComponentDefConsts {
     
-    @scala.inline
-    def apply(constExpressions: js.Array[Expression], prepareStatements: js.Array[Statement]): ComponentDefConsts = {
+    inline def apply(constExpressions: js.Array[Expression], prepareStatements: js.Array[Statement]): ComponentDefConsts = {
       val __obj = js.Dynamic.literal(constExpressions = constExpressions.asInstanceOf[js.Any], prepareStatements = prepareStatements.asInstanceOf[js.Any])
       __obj.asInstanceOf[ComponentDefConsts]
     }
     
-    @scala.inline
-    implicit class ComponentDefConstsMutableBuilder[Self <: ComponentDefConsts] (val x: Self) extends AnyVal {
+    extension [Self <: ComponentDefConsts](x: Self) {
       
-      @scala.inline
-      def setConstExpressions(value: js.Array[Expression]): Self = StObject.set(x, "constExpressions", value.asInstanceOf[js.Any])
+      inline def setConstExpressions(value: js.Array[Expression]): Self = StObject.set(x, "constExpressions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConstExpressionsVarargs(value: Expression*): Self = StObject.set(x, "constExpressions", js.Array(value :_*))
+      inline def setConstExpressionsVarargs(value: Expression*): Self = StObject.set(x, "constExpressions", js.Array(value :_*))
       
-      @scala.inline
-      def setPrepareStatements(value: js.Array[Statement]): Self = StObject.set(x, "prepareStatements", value.asInstanceOf[js.Any])
+      inline def setPrepareStatements(value: js.Array[Statement]): Self = StObject.set(x, "prepareStatements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrepareStatementsVarargs(value: Statement*): Self = StObject.set(x, "prepareStatements", js.Array(value :_*))
+      inline def setPrepareStatementsVarargs(value: Statement*): Self = StObject.set(x, "prepareStatements", js.Array(value :_*))
     }
   }
   
@@ -730,59 +697,42 @@ object templateMod {
   }
   object ParseTemplateOptions {
     
-    @scala.inline
-    def apply(): ParseTemplateOptions = {
+    inline def apply(): ParseTemplateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParseTemplateOptions]
     }
     
-    @scala.inline
-    implicit class ParseTemplateOptionsMutableBuilder[Self <: ParseTemplateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ParseTemplateOptions](x: Self) {
       
-      @scala.inline
-      def setEnableI18nLegacyMessageIdFormat(value: Boolean): Self = StObject.set(x, "enableI18nLegacyMessageIdFormat", value.asInstanceOf[js.Any])
+      inline def setEnableI18nLegacyMessageIdFormat(value: Boolean): Self = StObject.set(x, "enableI18nLegacyMessageIdFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableI18nLegacyMessageIdFormatUndefined: Self = StObject.set(x, "enableI18nLegacyMessageIdFormat", js.undefined)
+      inline def setEnableI18nLegacyMessageIdFormatUndefined: Self = StObject.set(x, "enableI18nLegacyMessageIdFormat", js.undefined)
       
-      @scala.inline
-      def setEscapedString(value: Boolean): Self = StObject.set(x, "escapedString", value.asInstanceOf[js.Any])
+      inline def setEscapedString(value: Boolean): Self = StObject.set(x, "escapedString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapedStringUndefined: Self = StObject.set(x, "escapedString", js.undefined)
+      inline def setEscapedStringUndefined: Self = StObject.set(x, "escapedString", js.undefined)
       
-      @scala.inline
-      def setI18nNormalizeLineEndingsInICUs(value: Boolean): Self = StObject.set(x, "i18nNormalizeLineEndingsInICUs", value.asInstanceOf[js.Any])
+      inline def setI18nNormalizeLineEndingsInICUs(value: Boolean): Self = StObject.set(x, "i18nNormalizeLineEndingsInICUs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setI18nNormalizeLineEndingsInICUsUndefined: Self = StObject.set(x, "i18nNormalizeLineEndingsInICUs", js.undefined)
+      inline def setI18nNormalizeLineEndingsInICUsUndefined: Self = StObject.set(x, "i18nNormalizeLineEndingsInICUs", js.undefined)
       
-      @scala.inline
-      def setInterpolationConfig(value: InterpolationConfig): Self = StObject.set(x, "interpolationConfig", value.asInstanceOf[js.Any])
+      inline def setInterpolationConfig(value: InterpolationConfig): Self = StObject.set(x, "interpolationConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterpolationConfigUndefined: Self = StObject.set(x, "interpolationConfig", js.undefined)
+      inline def setInterpolationConfigUndefined: Self = StObject.set(x, "interpolationConfig", js.undefined)
       
-      @scala.inline
-      def setLeadingTriviaChars(value: js.Array[String]): Self = StObject.set(x, "leadingTriviaChars", value.asInstanceOf[js.Any])
+      inline def setLeadingTriviaChars(value: js.Array[String]): Self = StObject.set(x, "leadingTriviaChars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeadingTriviaCharsUndefined: Self = StObject.set(x, "leadingTriviaChars", js.undefined)
+      inline def setLeadingTriviaCharsUndefined: Self = StObject.set(x, "leadingTriviaChars", js.undefined)
       
-      @scala.inline
-      def setLeadingTriviaCharsVarargs(value: String*): Self = StObject.set(x, "leadingTriviaChars", js.Array(value :_*))
+      inline def setLeadingTriviaCharsVarargs(value: String*): Self = StObject.set(x, "leadingTriviaChars", js.Array(value :_*))
       
-      @scala.inline
-      def setPreserveWhitespaces(value: Boolean): Self = StObject.set(x, "preserveWhitespaces", value.asInstanceOf[js.Any])
+      inline def setPreserveWhitespaces(value: Boolean): Self = StObject.set(x, "preserveWhitespaces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveWhitespacesUndefined: Self = StObject.set(x, "preserveWhitespaces", js.undefined)
+      inline def setPreserveWhitespacesUndefined: Self = StObject.set(x, "preserveWhitespaces", js.undefined)
       
-      @scala.inline
-      def setRange(value: LexerRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: LexerRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+      inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     }
   }
   
@@ -835,8 +785,7 @@ object templateMod {
   }
   object ParsedTemplate {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ngContentSelectors: js.Array[String],
       nodes: js.Array[Node],
       styleUrls: js.Array[String],
@@ -847,56 +796,39 @@ object templateMod {
       __obj.asInstanceOf[ParsedTemplate]
     }
     
-    @scala.inline
-    implicit class ParsedTemplateMutableBuilder[Self <: ParsedTemplate] (val x: Self) extends AnyVal {
+    extension [Self <: ParsedTemplate](x: Self) {
       
-      @scala.inline
-      def setErrors(value: js.Array[ParseError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[ParseError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsNull: Self = StObject.set(x, "errors", null)
+      inline def setErrorsNull: Self = StObject.set(x, "errors", null)
       
-      @scala.inline
-      def setErrorsVarargs(value: ParseError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: ParseError*): Self = StObject.set(x, "errors", js.Array(value :_*))
       
-      @scala.inline
-      def setInterpolationConfig(value: InterpolationConfig): Self = StObject.set(x, "interpolationConfig", value.asInstanceOf[js.Any])
+      inline def setInterpolationConfig(value: InterpolationConfig): Self = StObject.set(x, "interpolationConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterpolationConfigUndefined: Self = StObject.set(x, "interpolationConfig", js.undefined)
+      inline def setInterpolationConfigUndefined: Self = StObject.set(x, "interpolationConfig", js.undefined)
       
-      @scala.inline
-      def setNgContentSelectors(value: js.Array[String]): Self = StObject.set(x, "ngContentSelectors", value.asInstanceOf[js.Any])
+      inline def setNgContentSelectors(value: js.Array[String]): Self = StObject.set(x, "ngContentSelectors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNgContentSelectorsVarargs(value: String*): Self = StObject.set(x, "ngContentSelectors", js.Array(value :_*))
+      inline def setNgContentSelectorsVarargs(value: String*): Self = StObject.set(x, "ngContentSelectors", js.Array(value :_*))
       
-      @scala.inline
-      def setNodes(value: js.Array[Node]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      inline def setNodes(value: js.Array[Node]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+      inline def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value :_*))
       
-      @scala.inline
-      def setPreserveWhitespaces(value: Boolean): Self = StObject.set(x, "preserveWhitespaces", value.asInstanceOf[js.Any])
+      inline def setPreserveWhitespaces(value: Boolean): Self = StObject.set(x, "preserveWhitespaces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveWhitespacesUndefined: Self = StObject.set(x, "preserveWhitespaces", js.undefined)
+      inline def setPreserveWhitespacesUndefined: Self = StObject.set(x, "preserveWhitespaces", js.undefined)
       
-      @scala.inline
-      def setStyleUrls(value: js.Array[String]): Self = StObject.set(x, "styleUrls", value.asInstanceOf[js.Any])
+      inline def setStyleUrls(value: js.Array[String]): Self = StObject.set(x, "styleUrls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUrlsVarargs(value: String*): Self = StObject.set(x, "styleUrls", js.Array(value :_*))
+      inline def setStyleUrlsVarargs(value: String*): Self = StObject.set(x, "styleUrls", js.Array(value :_*))
       
-      @scala.inline
-      def setStyles(value: js.Array[String]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: js.Array[String]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value :_*))
+      inline def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value :_*))
       
-      @scala.inline
-      def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     }
   }
 }

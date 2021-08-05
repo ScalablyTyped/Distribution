@@ -39,63 +39,45 @@ trait MinecraftFilter extends StObject {
 }
 object MinecraftFilter {
   
-  @scala.inline
-  def apply(): MinecraftFilter = {
+  inline def apply(): MinecraftFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MinecraftFilter]
   }
   
-  @scala.inline
-  implicit class MinecraftFilterMutableBuilder[Self <: MinecraftFilter] (val x: Self) extends AnyVal {
+  extension [Self <: MinecraftFilter](x: Self) {
     
-    @scala.inline
-    def setAll_of(value: js.Array[MinecraftFilter]): Self = StObject.set(x, "all_of", value.asInstanceOf[js.Any])
+    inline def setAll_of(value: js.Array[MinecraftFilter]): Self = StObject.set(x, "all_of", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAll_ofUndefined: Self = StObject.set(x, "all_of", js.undefined)
+    inline def setAll_ofUndefined: Self = StObject.set(x, "all_of", js.undefined)
     
-    @scala.inline
-    def setAll_ofVarargs(value: MinecraftFilter*): Self = StObject.set(x, "all_of", js.Array(value :_*))
+    inline def setAll_ofVarargs(value: MinecraftFilter*): Self = StObject.set(x, "all_of", js.Array(value :_*))
     
-    @scala.inline
-    def setAny_of(value: js.Array[MinecraftFilter]): Self = StObject.set(x, "any_of", value.asInstanceOf[js.Any])
+    inline def setAny_of(value: js.Array[MinecraftFilter]): Self = StObject.set(x, "any_of", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAny_ofUndefined: Self = StObject.set(x, "any_of", js.undefined)
+    inline def setAny_ofUndefined: Self = StObject.set(x, "any_of", js.undefined)
     
-    @scala.inline
-    def setAny_ofVarargs(value: MinecraftFilter*): Self = StObject.set(x, "any_of", js.Array(value :_*))
+    inline def setAny_ofVarargs(value: MinecraftFilter*): Self = StObject.set(x, "any_of", js.Array(value :_*))
     
-    @scala.inline
-    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
-    @scala.inline
-    def setOperator(
+    inline def setOperator(
       value: ExclamationmarkEqualssign | Lessthansign | LessthansignEqualssign | LessthansignGreaterthansign | Equalssign | EqualssignEqualssign | Greaterthansign | GreaterthansignEqualssign | equals | not
     ): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
+    inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
     
-    @scala.inline
-    def setSubject(value: other | parent | player | self | target): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: other | parent | player | self | target): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+    inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     
-    @scala.inline
-    def setTest(value: String): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+    inline def setTest(value: String): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
+    inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

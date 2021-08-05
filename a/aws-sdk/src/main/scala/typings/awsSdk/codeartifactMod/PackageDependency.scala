@@ -29,37 +29,27 @@ trait PackageDependency extends StObject {
 }
 object PackageDependency {
   
-  @scala.inline
-  def apply(): PackageDependency = {
+  inline def apply(): PackageDependency = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PackageDependency]
   }
   
-  @scala.inline
-  implicit class PackageDependencyMutableBuilder[Self <: PackageDependency] (val x: Self) extends AnyVal {
+  extension [Self <: PackageDependency](x: Self) {
     
-    @scala.inline
-    def setDependencyType(value: String): Self = StObject.set(x, "dependencyType", value.asInstanceOf[js.Any])
+    inline def setDependencyType(value: String): Self = StObject.set(x, "dependencyType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDependencyTypeUndefined: Self = StObject.set(x, "dependencyType", js.undefined)
+    inline def setDependencyTypeUndefined: Self = StObject.set(x, "dependencyType", js.undefined)
     
-    @scala.inline
-    def setNamespace(value: PackageNamespace): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: PackageNamespace): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+    inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
-    @scala.inline
-    def setVersionRequirement(value: String): Self = StObject.set(x, "versionRequirement", value.asInstanceOf[js.Any])
+    inline def setVersionRequirement(value: String): Self = StObject.set(x, "versionRequirement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionRequirementUndefined: Self = StObject.set(x, "versionRequirement", js.undefined)
+    inline def setVersionRequirementUndefined: Self = StObject.set(x, "versionRequirement", js.undefined)
     
-    @scala.inline
-    def set_package(value: PackageName): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
+    inline def set_package(value: PackageName): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
+    inline def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
   }
 }

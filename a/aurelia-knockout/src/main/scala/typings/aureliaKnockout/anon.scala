@@ -14,8 +14,7 @@ object anon {
   }
   object Container {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       container: typings.aureliaDependencyInjection.mod.Container,
       globalResources: /* repeated */ String => js.Any
     ): Container = {
@@ -23,14 +22,11 @@ object anon {
       __obj.asInstanceOf[Container]
     }
     
-    @scala.inline
-    implicit class ContainerMutableBuilder[Self <: Container] (val x: Self) extends AnyVal {
+    extension [Self <: Container](x: Self) {
       
-      @scala.inline
-      def setContainer(value: typings.aureliaDependencyInjection.mod.Container): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: typings.aureliaDependencyInjection.mod.Container): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalResources(value: /* repeated */ String => js.Any): Self = StObject.set(x, "globalResources", js.Any.fromFunction1(value))
+      inline def setGlobalResources(value: /* repeated */ String => js.Any): Self = StObject.set(x, "globalResources", js.Any.fromFunction1(value))
     }
   }
 }

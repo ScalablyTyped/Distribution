@@ -13,19 +13,15 @@ trait PutServiceQuotaIncreaseRequestIntoTemplateResponse extends StObject {
 }
 object PutServiceQuotaIncreaseRequestIntoTemplateResponse {
   
-  @scala.inline
-  def apply(): PutServiceQuotaIncreaseRequestIntoTemplateResponse = {
+  inline def apply(): PutServiceQuotaIncreaseRequestIntoTemplateResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutServiceQuotaIncreaseRequestIntoTemplateResponse]
   }
   
-  @scala.inline
-  implicit class PutServiceQuotaIncreaseRequestIntoTemplateResponseMutableBuilder[Self <: PutServiceQuotaIncreaseRequestIntoTemplateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PutServiceQuotaIncreaseRequestIntoTemplateResponse](x: Self) {
     
-    @scala.inline
-    def setServiceQuotaIncreaseRequestInTemplate(value: ServiceQuotaIncreaseRequestInTemplate): Self = StObject.set(x, "ServiceQuotaIncreaseRequestInTemplate", value.asInstanceOf[js.Any])
+    inline def setServiceQuotaIncreaseRequestInTemplate(value: ServiceQuotaIncreaseRequestInTemplate): Self = StObject.set(x, "ServiceQuotaIncreaseRequestInTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceQuotaIncreaseRequestInTemplateUndefined: Self = StObject.set(x, "ServiceQuotaIncreaseRequestInTemplate", js.undefined)
+    inline def setServiceQuotaIncreaseRequestInTemplateUndefined: Self = StObject.set(x, "ServiceQuotaIncreaseRequestInTemplate", js.undefined)
   }
 }

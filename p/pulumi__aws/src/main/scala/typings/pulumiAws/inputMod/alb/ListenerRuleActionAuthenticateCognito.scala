@@ -50,52 +50,37 @@ trait ListenerRuleActionAuthenticateCognito extends StObject {
 }
 object ListenerRuleActionAuthenticateCognito {
   
-  @scala.inline
-  def apply(userPoolArn: Input[String], userPoolClientId: Input[String], userPoolDomain: Input[String]): ListenerRuleActionAuthenticateCognito = {
+  inline def apply(userPoolArn: Input[String], userPoolClientId: Input[String], userPoolDomain: Input[String]): ListenerRuleActionAuthenticateCognito = {
     val __obj = js.Dynamic.literal(userPoolArn = userPoolArn.asInstanceOf[js.Any], userPoolClientId = userPoolClientId.asInstanceOf[js.Any], userPoolDomain = userPoolDomain.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListenerRuleActionAuthenticateCognito]
   }
   
-  @scala.inline
-  implicit class ListenerRuleActionAuthenticateCognitoMutableBuilder[Self <: ListenerRuleActionAuthenticateCognito] (val x: Self) extends AnyVal {
+  extension [Self <: ListenerRuleActionAuthenticateCognito](x: Self) {
     
-    @scala.inline
-    def setAuthenticationRequestExtraParams(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "authenticationRequestExtraParams", value.asInstanceOf[js.Any])
+    inline def setAuthenticationRequestExtraParams(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "authenticationRequestExtraParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationRequestExtraParamsUndefined: Self = StObject.set(x, "authenticationRequestExtraParams", js.undefined)
+    inline def setAuthenticationRequestExtraParamsUndefined: Self = StObject.set(x, "authenticationRequestExtraParams", js.undefined)
     
-    @scala.inline
-    def setOnUnauthenticatedRequest(value: Input[String]): Self = StObject.set(x, "onUnauthenticatedRequest", value.asInstanceOf[js.Any])
+    inline def setOnUnauthenticatedRequest(value: Input[String]): Self = StObject.set(x, "onUnauthenticatedRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnUnauthenticatedRequestUndefined: Self = StObject.set(x, "onUnauthenticatedRequest", js.undefined)
+    inline def setOnUnauthenticatedRequestUndefined: Self = StObject.set(x, "onUnauthenticatedRequest", js.undefined)
     
-    @scala.inline
-    def setScope(value: Input[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: Input[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    @scala.inline
-    def setSessionCookieName(value: Input[String]): Self = StObject.set(x, "sessionCookieName", value.asInstanceOf[js.Any])
+    inline def setSessionCookieName(value: Input[String]): Self = StObject.set(x, "sessionCookieName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionCookieNameUndefined: Self = StObject.set(x, "sessionCookieName", js.undefined)
+    inline def setSessionCookieNameUndefined: Self = StObject.set(x, "sessionCookieName", js.undefined)
     
-    @scala.inline
-    def setSessionTimeout(value: Input[Double]): Self = StObject.set(x, "sessionTimeout", value.asInstanceOf[js.Any])
+    inline def setSessionTimeout(value: Input[Double]): Self = StObject.set(x, "sessionTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionTimeoutUndefined: Self = StObject.set(x, "sessionTimeout", js.undefined)
+    inline def setSessionTimeoutUndefined: Self = StObject.set(x, "sessionTimeout", js.undefined)
     
-    @scala.inline
-    def setUserPoolArn(value: Input[String]): Self = StObject.set(x, "userPoolArn", value.asInstanceOf[js.Any])
+    inline def setUserPoolArn(value: Input[String]): Self = StObject.set(x, "userPoolArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserPoolClientId(value: Input[String]): Self = StObject.set(x, "userPoolClientId", value.asInstanceOf[js.Any])
+    inline def setUserPoolClientId(value: Input[String]): Self = StObject.set(x, "userPoolClientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserPoolDomain(value: Input[String]): Self = StObject.set(x, "userPoolDomain", value.asInstanceOf[js.Any])
+    inline def setUserPoolDomain(value: Input[String]): Self = StObject.set(x, "userPoolDomain", value.asInstanceOf[js.Any])
   }
 }

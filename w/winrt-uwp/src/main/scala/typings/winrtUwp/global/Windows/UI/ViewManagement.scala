@@ -52,47 +52,41 @@ object ViewManagement {
       * @return An ApplicationView instance that can be used to get and set app display properties.
       */
     /* static member */
-    @scala.inline
-    def getForCurrentView(): typings.winrtUwp.Windows.UI.ViewManagement.ApplicationView = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrtUwp.Windows.UI.ViewManagement.ApplicationView]
+    inline def getForCurrentView(): typings.winrtUwp.Windows.UI.ViewManagement.ApplicationView = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrtUwp.Windows.UI.ViewManagement.ApplicationView]
     
     /** Gets or sets the size the app launches with if no view size is remembered by Windows. */
     /* static member */
     @JSGlobal("Windows.UI.ViewManagement.ApplicationView.preferredLaunchViewSize")
     @js.native
     def preferredLaunchViewSize: Size = js.native
-    @scala.inline
-    def preferredLaunchViewSize_=(x: Size): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("preferredLaunchViewSize")(x.asInstanceOf[js.Any])
+    inline def preferredLaunchViewSize_=(x: Size): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("preferredLaunchViewSize")(x.asInstanceOf[js.Any])
     
     /** Gets or sets a value that indicates the windowing mode the app launches with. */
     /* static member */
     @JSGlobal("Windows.UI.ViewManagement.ApplicationView.preferredLaunchWindowingMode")
     @js.native
     def preferredLaunchWindowingMode: ApplicationViewWindowingMode = js.native
-    @scala.inline
-    def preferredLaunchWindowingMode_=(x: ApplicationViewWindowingMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("preferredLaunchWindowingMode")(x.asInstanceOf[js.Any])
+    inline def preferredLaunchWindowingMode_=(x: ApplicationViewWindowingMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("preferredLaunchWindowingMode")(x.asInstanceOf[js.Any])
     
     /** Indicates whether the app terminates when the last window is closed. */
     /* static member */
     @JSGlobal("Windows.UI.ViewManagement.ApplicationView.terminateAppOnFinalViewClose")
     @js.native
     def terminateAppOnFinalViewClose: Boolean = js.native
-    @scala.inline
-    def terminateAppOnFinalViewClose_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("terminateAppOnFinalViewClose")(x.asInstanceOf[js.Any])
+    inline def terminateAppOnFinalViewClose_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("terminateAppOnFinalViewClose")(x.asInstanceOf[js.Any])
     
     /**
       * Attempts to unsnap a previously snapped app. This call will only succeed when the app is running in the foreground.
       * @return true if the app has been successfully unsnapped; false if the unsnap attempt failed.
       */
     /* static member */
-    @scala.inline
-    def tryUnsnap(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("tryUnsnap")().asInstanceOf[Boolean]
+    inline def tryUnsnap(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("tryUnsnap")().asInstanceOf[Boolean]
     
     /* static member */
     @JSGlobal("Windows.UI.ViewManagement.ApplicationView.tryUnsnapToFullscreen")
     @js.native
     def tryUnsnapToFullscreen: js.Any = js.native
-    @scala.inline
-    def tryUnsnapToFullscreen_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tryUnsnapToFullscreen")(x.asInstanceOf[js.Any])
+    inline def tryUnsnapToFullscreen_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tryUnsnapToFullscreen")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     /** Gets the state of the current window (app view). */
@@ -100,8 +94,7 @@ object ViewManagement {
     @JSGlobal("Windows.UI.ViewManagement.ApplicationView.value")
     @js.native
     def value: ApplicationViewState = js.native
-    @scala.inline
-    def value_=(x: ApplicationViewState): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("value")(x.asInstanceOf[js.Any])
+    inline def value_=(x: ApplicationViewState): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("value")(x.asInstanceOf[js.Any])
   }
   
   /** The bounds used by the framework to lay out the contents of a window (app view). */
@@ -173,15 +166,13 @@ object ViewManagement {
     
     /** Disables the primary window (app view) when the app is activated, showing the most recently displayed window instead. */
     /* static member */
-    @scala.inline
-    def disableShowingMainViewOnActivation(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableShowingMainViewOnActivation")().asInstanceOf[Unit]
+    inline def disableShowingMainViewOnActivation(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableShowingMainViewOnActivation")().asInstanceOf[Unit]
     
     /* static member */
     @JSGlobal("Windows.UI.ViewManagement.ApplicationViewSwitcher.disableSystemViewActivationPolicy")
     @js.native
     def disableSystemViewActivationPolicy: js.Any = js.native
-    @scala.inline
-    def disableSystemViewActivationPolicy_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disableSystemViewActivationPolicy")(x.asInstanceOf[js.Any])
+    inline def disableSystemViewActivationPolicy_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disableSystemViewActivationPolicy")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     /**
@@ -192,8 +183,7 @@ object ViewManagement {
       * @return Asynchronously returns true if the call succeeds; false if it does not.
       */
     /* static member */
-    @scala.inline
-    def prepareForCustomAnimatedSwitchAsync(toViewId: Double, fromViewId: Double, options: ApplicationViewSwitchingOptions): IPromiseWithIAsyncOperation[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareForCustomAnimatedSwitchAsync")(toViewId.asInstanceOf[js.Any], fromViewId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
+    inline def prepareForCustomAnimatedSwitchAsync(toViewId: Double, fromViewId: Double, options: ApplicationViewSwitchingOptions): IPromiseWithIAsyncOperation[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareForCustomAnimatedSwitchAsync")(toViewId.asInstanceOf[js.Any], fromViewId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
     
     /**
       * Visually replaces the calling window (app view) with a specified window.
@@ -202,8 +192,7 @@ object ViewManagement {
       * @return The asynchronous results of the operation. Use this to determine when the async call is complete.
       */
     /* static member */
-    @scala.inline
-    def switchAsync(toViewId: Double, fromViewId: Double): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("switchAsync")(toViewId.asInstanceOf[js.Any], fromViewId.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
+    inline def switchAsync(toViewId: Double, fromViewId: Double): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("switchAsync")(toViewId.asInstanceOf[js.Any], fromViewId.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
     /**
       * Visually replaces the calling window (app view) with a specified window.
       * @param toViewId The ID of the window under preparation for display.
@@ -212,16 +201,14 @@ object ViewManagement {
       * @return The asynchronous results of the operation. Use this to determine when the async call is complete.
       */
     /* static member */
-    @scala.inline
-    def switchAsync(toViewId: Double, fromViewId: Double, options: ApplicationViewSwitchingOptions): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("switchAsync")(toViewId.asInstanceOf[js.Any], fromViewId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
+    inline def switchAsync(toViewId: Double, fromViewId: Double, options: ApplicationViewSwitchingOptions): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("switchAsync")(toViewId.asInstanceOf[js.Any], fromViewId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
     /**
       * Visually replaces the calling window (app view) with a specified window.
       * @param viewId The ID of the window under preparation for display.
       * @return The asynchronous results of the operation. Use this to determine when the async call is complete.
       */
     /* static member */
-    @scala.inline
-    def switchAsync(viewId: Double): IPromiseWithIAsyncAction = ^.asInstanceOf[js.Dynamic].applyDynamic("switchAsync")(viewId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncAction]
+    inline def switchAsync(viewId: Double): IPromiseWithIAsyncAction = ^.asInstanceOf[js.Dynamic].applyDynamic("switchAsync")(viewId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncAction]
     
     /**
       * Displays another window (app view) for the app on the screen, adjacent to the original window
@@ -229,8 +216,7 @@ object ViewManagement {
       * @return Asynchronously returns true if the call succeeds; false if it does not.
       */
     /* static member */
-    @scala.inline
-    def tryShowAsStandaloneAsync(viewId: Double): IPromiseWithIAsyncOperation[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("tryShowAsStandaloneAsync")(viewId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
+    inline def tryShowAsStandaloneAsync(viewId: Double): IPromiseWithIAsyncOperation[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("tryShowAsStandaloneAsync")(viewId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
     /**
       * Displays another window (app view) for the app on the screen, adjacent to the original window
       * @param viewId The ID of the new window to display.
@@ -238,8 +224,7 @@ object ViewManagement {
       * @return Asynchronously returns true if the call succeeds; false if it does not.
       */
     /* static member */
-    @scala.inline
-    def tryShowAsStandaloneAsync(viewId: Double, sizePreference: ViewSizePreference): IPromiseWithIAsyncOperation[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("tryShowAsStandaloneAsync")(viewId.asInstanceOf[js.Any], sizePreference.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
+    inline def tryShowAsStandaloneAsync(viewId: Double, sizePreference: ViewSizePreference): IPromiseWithIAsyncOperation[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("tryShowAsStandaloneAsync")(viewId.asInstanceOf[js.Any], sizePreference.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
     /**
       * Displays another window (app view) for the app on the screen, adjacent to the original window.
       * @param viewId The ID of the new window to display.
@@ -249,8 +234,7 @@ object ViewManagement {
       * @return Asynchronously returns true if the call succeeds; false if it does not.
       */
     /* static member */
-    @scala.inline
-    def tryShowAsStandaloneAsync(
+    inline def tryShowAsStandaloneAsync(
       viewId: Double,
       sizePreference: ViewSizePreference,
       anchorViewId: Double,
@@ -351,8 +335,7 @@ object ViewManagement {
     @JSGlobal("Windows.UI.ViewManagement.ApplicationViewTransferContext.dataPackageFormatId")
     @js.native
     def dataPackageFormatId: js.Any = js.native
-    @scala.inline
-    def dataPackageFormatId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dataPackageFormatId")(x.asInstanceOf[js.Any])
+    inline def dataPackageFormatId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dataPackageFormatId")(x.asInstanceOf[js.Any])
   }
   
   /** Defines constants that specify whether the app window is auto-sized, full-screen, or set to a specific size on launch. */
@@ -413,8 +396,7 @@ object ViewManagement {
       * @return The input pane.
       */
     /* static member */
-    @scala.inline
-    def getForCurrentView(): typings.winrtUwp.Windows.UI.ViewManagement.InputPane = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrtUwp.Windows.UI.ViewManagement.InputPane]
+    inline def getForCurrentView(): typings.winrtUwp.Windows.UI.ViewManagement.InputPane = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrtUwp.Windows.UI.ViewManagement.InputPane]
   }
   
   /** Provides data for the input pane Hiding and Showing events. */
@@ -446,44 +428,37 @@ object ViewManagement {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def addEventListener_projectiondisplayavailablechanged(`type`: projectiondisplayavailablechanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_projectiondisplayavailablechanged(`type`: projectiondisplayavailablechanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Returns a string that is used to enumerate device services.
       * @return A string that is used to enumerate device services.
       */
     /* static member */
-    @scala.inline
-    def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
+    inline def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
     
     /** Occurs when a projector or other secondary display becomes available or unavailable. */
     /* static member */
     @JSGlobal("Windows.UI.ViewManagement.ProjectionManager.onprojectiondisplayavailablechanged")
     @js.native
     def onprojectiondisplayavailablechanged: EventHandler[js.Any] = js.native
-    @scala.inline
-    def onprojectiondisplayavailablechanged_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onprojectiondisplayavailablechanged")(x.asInstanceOf[js.Any])
+    inline def onprojectiondisplayavailablechanged_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onprojectiondisplayavailablechanged")(x.asInstanceOf[js.Any])
     
     /** Gets whether or not a projection display is available to use. */
     /* static member */
     @JSGlobal("Windows.UI.ViewManagement.ProjectionManager.projectionDisplayAvailable")
     @js.native
     def projectionDisplayAvailable: Boolean = js.native
-    @scala.inline
-    def projectionDisplayAvailable_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("projectionDisplayAvailable")(x.asInstanceOf[js.Any])
+    inline def projectionDisplayAvailable_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("projectionDisplayAvailable")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @scala.inline
-    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def removeEventListener_projectiondisplayavailablechanged(`type`: projectiondisplayavailablechanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_projectiondisplayavailablechanged(`type`: projectiondisplayavailablechanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Makes a request to asynchronously sends a window (app view) to the projector or other secondary display.
@@ -493,8 +468,7 @@ object ViewManagement {
       * @return true if projection started; otherwise, false.
       */
     /* static member */
-    @scala.inline
-    def requestStartProjectingAsync(projectionViewId: Double, anchorViewId: Double, selection: Rect): IPromiseWithIAsyncOperation[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestStartProjectingAsync")(projectionViewId.asInstanceOf[js.Any], anchorViewId.asInstanceOf[js.Any], selection.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
+    inline def requestStartProjectingAsync(projectionViewId: Double, anchorViewId: Double, selection: Rect): IPromiseWithIAsyncOperation[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestStartProjectingAsync")(projectionViewId.asInstanceOf[js.Any], anchorViewId.asInstanceOf[js.Any], selection.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
     /**
       * Makes a request to asynchronously sends a window (app view) to the projector or other secondary display with the specified preferred placement.
       * @param projectionViewId The new ID of the window to be displayed by the projector or other secondary display.
@@ -504,8 +478,7 @@ object ViewManagement {
       * @return true if projection started; otherwise, false.
       */
     /* static member */
-    @scala.inline
-    def requestStartProjectingAsync(projectionViewId: Double, anchorViewId: Double, selection: Rect, prefferedPlacement: Placement): IPromiseWithIAsyncOperation[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestStartProjectingAsync")(projectionViewId.asInstanceOf[js.Any], anchorViewId.asInstanceOf[js.Any], selection.asInstanceOf[js.Any], prefferedPlacement.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
+    inline def requestStartProjectingAsync(projectionViewId: Double, anchorViewId: Double, selection: Rect, prefferedPlacement: Placement): IPromiseWithIAsyncOperation[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestStartProjectingAsync")(projectionViewId.asInstanceOf[js.Any], anchorViewId.asInstanceOf[js.Any], selection.asInstanceOf[js.Any], prefferedPlacement.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
     
     /**
       * Asynchronously sends a window (app view) to the projector or other secondary display.
@@ -514,8 +487,7 @@ object ViewManagement {
       * @return The asynchronous results of the operation. Use this to determine when the async call is complete.
       */
     /* static member */
-    @scala.inline
-    def startProjectingAsync(projectionViewId: Double, anchorViewId: Double): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("startProjectingAsync")(projectionViewId.asInstanceOf[js.Any], anchorViewId.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
+    inline def startProjectingAsync(projectionViewId: Double, anchorViewId: Double): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("startProjectingAsync")(projectionViewId.asInstanceOf[js.Any], anchorViewId.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
     /**
       * Asynchronously sends a window (app view) to the projector or other secondary display, and provides info about the display.
       * @param projectionViewId The new ID of the window to be displayed by the projector or other secondary display.
@@ -524,8 +496,7 @@ object ViewManagement {
       * @return The asynchronous results of the operation. Use this to determine when the async call is complete.
       */
     /* static member */
-    @scala.inline
-    def startProjectingAsync(projectionViewId: Double, anchorViewId: Double, displayDeviceInfo: DeviceInformation): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("startProjectingAsync")(projectionViewId.asInstanceOf[js.Any], anchorViewId.asInstanceOf[js.Any], displayDeviceInfo.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
+    inline def startProjectingAsync(projectionViewId: Double, anchorViewId: Double, displayDeviceInfo: DeviceInformation): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("startProjectingAsync")(projectionViewId.asInstanceOf[js.Any], anchorViewId.asInstanceOf[js.Any], displayDeviceInfo.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
     
     /**
       * Asynchronously hides a window (app view) displayed by a projector or other secondary display.
@@ -534,8 +505,7 @@ object ViewManagement {
       * @return The asynchronous results of the operation. Use this to determine when the async call is complete.
       */
     /* static member */
-    @scala.inline
-    def stopProjectingAsync(projectionViewId: Double, anchorViewId: Double): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("stopProjectingAsync")(projectionViewId.asInstanceOf[js.Any], anchorViewId.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
+    inline def stopProjectingAsync(projectionViewId: Double, anchorViewId: Double): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("stopProjectingAsync")(projectionViewId.asInstanceOf[js.Any], anchorViewId.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
     
     /**
       * Asynchronously swaps the calling window (app view) with the window displayed on the projector or other secondary display. The result is that the calling window is displayed on the projector, and the formerly projected window is displayed on the device screen.
@@ -544,8 +514,7 @@ object ViewManagement {
       * @return The asynchronous results of the operation. Use this to determine when the async call is complete.
       */
     /* static member */
-    @scala.inline
-    def swapDisplaysForViewsAsync(projectionViewId: Double, anchorViewId: Double): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("swapDisplaysForViewsAsync")(projectionViewId.asInstanceOf[js.Any], anchorViewId.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
+    inline def swapDisplaysForViewsAsync(projectionViewId: Double, anchorViewId: Double): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("swapDisplaysForViewsAsync")(projectionViewId.asInstanceOf[js.Any], anchorViewId.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
   }
   
   /** Defines constants that specify known system color values. */
@@ -642,8 +611,7 @@ object ViewManagement {
       * @return A UIViewSettings instance that can be used to get and set view settings properties.
       */
     /* static member */
-    @scala.inline
-    def getForCurrentView(): typings.winrtUwp.Windows.UI.ViewManagement.UIViewSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrtUwp.Windows.UI.ViewManagement.UIViewSettings]
+    inline def getForCurrentView(): typings.winrtUwp.Windows.UI.ViewManagement.UIViewSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrtUwp.Windows.UI.ViewManagement.UIViewSettings]
   }
   
   /** Specifies the UI view, optimized for input device type. */

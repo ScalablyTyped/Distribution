@@ -16,37 +16,27 @@ trait LangAccessibilityScreenReaderSectionAnnotationsOptions extends StObject {
 }
 object LangAccessibilityScreenReaderSectionAnnotationsOptions {
   
-  @scala.inline
-  def apply(): LangAccessibilityScreenReaderSectionAnnotationsOptions = {
+  inline def apply(): LangAccessibilityScreenReaderSectionAnnotationsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LangAccessibilityScreenReaderSectionAnnotationsOptions]
   }
   
-  @scala.inline
-  implicit class LangAccessibilityScreenReaderSectionAnnotationsOptionsMutableBuilder[Self <: LangAccessibilityScreenReaderSectionAnnotationsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LangAccessibilityScreenReaderSectionAnnotationsOptions](x: Self) {
     
-    @scala.inline
-    def setDescriptionMultiplePoints(value: String): Self = StObject.set(x, "descriptionMultiplePoints", value.asInstanceOf[js.Any])
+    inline def setDescriptionMultiplePoints(value: String): Self = StObject.set(x, "descriptionMultiplePoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionMultiplePointsUndefined: Self = StObject.set(x, "descriptionMultiplePoints", js.undefined)
+    inline def setDescriptionMultiplePointsUndefined: Self = StObject.set(x, "descriptionMultiplePoints", js.undefined)
     
-    @scala.inline
-    def setDescriptionNoPoints(value: String): Self = StObject.set(x, "descriptionNoPoints", value.asInstanceOf[js.Any])
+    inline def setDescriptionNoPoints(value: String): Self = StObject.set(x, "descriptionNoPoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionNoPointsUndefined: Self = StObject.set(x, "descriptionNoPoints", js.undefined)
+    inline def setDescriptionNoPointsUndefined: Self = StObject.set(x, "descriptionNoPoints", js.undefined)
     
-    @scala.inline
-    def setDescriptionSinglePoint(value: String): Self = StObject.set(x, "descriptionSinglePoint", value.asInstanceOf[js.Any])
+    inline def setDescriptionSinglePoint(value: String): Self = StObject.set(x, "descriptionSinglePoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionSinglePointUndefined: Self = StObject.set(x, "descriptionSinglePoint", js.undefined)
+    inline def setDescriptionSinglePointUndefined: Self = StObject.set(x, "descriptionSinglePoint", js.undefined)
     
-    @scala.inline
-    def setHeading(value: String): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
+    inline def setHeading(value: String): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
+    inline def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
   }
 }

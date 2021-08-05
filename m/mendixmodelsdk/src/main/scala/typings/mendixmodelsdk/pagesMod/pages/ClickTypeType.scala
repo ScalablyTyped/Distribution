@@ -21,13 +21,11 @@ object ClickTypeType {
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClickTypeType.Double")
   @js.native
   def Double: ClickTypeType = js.native
-  @scala.inline
-  def Double_=(x: ClickTypeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Double")(x.asInstanceOf[js.Any])
+  inline def Double_=(x: ClickTypeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Double")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClickTypeType.Single")
   @js.native
   def Single: ClickTypeType = js.native
-  @scala.inline
-  def Single_=(x: ClickTypeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Single")(x.asInstanceOf[js.Any])
+  inline def Single_=(x: ClickTypeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Single")(x.asInstanceOf[js.Any])
 }

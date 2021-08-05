@@ -13,12 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GestureSourceType extends StObject
 object GestureSourceType {
   
-  @scala.inline
-  def default: default_ = "default".asInstanceOf[default_]
+  inline def default: default_ = "default".asInstanceOf[default_]
   
-  @scala.inline
-  def mouse: typings.devtoolsProtocol.devtoolsProtocolStrings.mouse = "mouse".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.mouse]
+  inline def mouse: typings.devtoolsProtocol.devtoolsProtocolStrings.mouse = "mouse".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.mouse]
   
-  @scala.inline
-  def touch: typings.devtoolsProtocol.devtoolsProtocolStrings.touch = "touch".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.touch]
+  inline def touch: typings.devtoolsProtocol.devtoolsProtocolStrings.touch = "touch".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.touch]
 }

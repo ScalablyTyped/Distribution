@@ -13,12 +13,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def convertKeyPair(keyPair: SignKeyPair): BoxKeyPair | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("convertKeyPair")(keyPair.asInstanceOf[js.Any]).asInstanceOf[BoxKeyPair | Null]
+  inline def convertKeyPair(keyPair: SignKeyPair): BoxKeyPair | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("convertKeyPair")(keyPair.asInstanceOf[js.Any]).asInstanceOf[BoxKeyPair | Null]
   
-  @scala.inline
-  def convertPublicKey(publicKey: Uint8Array): Uint8Array | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("convertPublicKey")(publicKey.asInstanceOf[js.Any]).asInstanceOf[Uint8Array | Null]
+  inline def convertPublicKey(publicKey: Uint8Array): Uint8Array | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("convertPublicKey")(publicKey.asInstanceOf[js.Any]).asInstanceOf[Uint8Array | Null]
   
-  @scala.inline
-  def convertSecretKey(secretKey: Uint8Array): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("convertSecretKey")(secretKey.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def convertSecretKey(secretKey: Uint8Array): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("convertSecretKey")(secretKey.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
 }

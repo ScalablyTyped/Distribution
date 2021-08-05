@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.DOMProgressEvent")
 @js.native
-class DOMProgressEvent protected ()
+/* private */ class DOMProgressEvent ()
   extends StObject
      with typings.activexMshtml.MSHTML.DOMProgressEvent {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.DOMProgressEvent_typekey")
   var MSHTMLDotDOMProgressEvent_typekey: typings.activexMshtml.MSHTML.DOMProgressEvent = js.native
   

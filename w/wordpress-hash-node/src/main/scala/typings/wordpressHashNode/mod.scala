@@ -10,9 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def CheckPassword(password: String, hash: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("CheckPassword")(password.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def CheckPassword(password: String, hash: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("CheckPassword")(password.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def HashPassword(password: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("HashPassword")(password.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def HashPassword(password: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("HashPassword")(password.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -17,31 +17,23 @@ trait GoogleCloudDialogflowV2QueryInput extends StObject {
 }
 object GoogleCloudDialogflowV2QueryInput {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2QueryInput = {
+  inline def apply(): GoogleCloudDialogflowV2QueryInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2QueryInput]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2QueryInputMutableBuilder[Self <: GoogleCloudDialogflowV2QueryInput] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2QueryInput](x: Self) {
     
-    @scala.inline
-    def setAudioConfig(value: GoogleCloudDialogflowV2InputAudioConfig): Self = StObject.set(x, "audioConfig", value.asInstanceOf[js.Any])
+    inline def setAudioConfig(value: GoogleCloudDialogflowV2InputAudioConfig): Self = StObject.set(x, "audioConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioConfigUndefined: Self = StObject.set(x, "audioConfig", js.undefined)
+    inline def setAudioConfigUndefined: Self = StObject.set(x, "audioConfig", js.undefined)
     
-    @scala.inline
-    def setEvent(value: GoogleCloudDialogflowV2EventInput): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: GoogleCloudDialogflowV2EventInput): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
-    @scala.inline
-    def setText(value: GoogleCloudDialogflowV2TextInput): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: GoogleCloudDialogflowV2TextInput): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

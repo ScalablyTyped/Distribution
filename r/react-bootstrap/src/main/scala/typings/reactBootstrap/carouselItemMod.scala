@@ -36,50 +36,36 @@ object carouselItemMod {
   }
   object CarouselItemProps {
     
-    @scala.inline
-    def apply(): CarouselItemProps = {
+    inline def apply(): CarouselItemProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CarouselItemProps]
     }
     
-    @scala.inline
-    implicit class CarouselItemPropsMutableBuilder[Self <: CarouselItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: CarouselItemProps](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setAnimateOut(value: Boolean): Self = StObject.set(x, "animateOut", value.asInstanceOf[js.Any])
+      inline def setAnimateOut(value: Boolean): Self = StObject.set(x, "animateOut", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimateOutUndefined: Self = StObject.set(x, "animateOut", js.undefined)
+      inline def setAnimateOutUndefined: Self = StObject.set(x, "animateOut", js.undefined)
       
-      @scala.inline
-      def setAnimtateIn(value: Boolean): Self = StObject.set(x, "animtateIn", value.asInstanceOf[js.Any])
+      inline def setAnimtateIn(value: Boolean): Self = StObject.set(x, "animtateIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimtateInUndefined: Self = StObject.set(x, "animtateIn", js.undefined)
+      inline def setAnimtateInUndefined: Self = StObject.set(x, "animtateIn", js.undefined)
       
-      @scala.inline
-      def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setOnAnimateOutEnd(value: js.Function): Self = StObject.set(x, "onAnimateOutEnd", value.asInstanceOf[js.Any])
+      inline def setOnAnimateOutEnd(value: js.Function): Self = StObject.set(x, "onAnimateOutEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnAnimateOutEndUndefined: Self = StObject.set(x, "onAnimateOutEnd", js.undefined)
+      inline def setOnAnimateOutEndUndefined: Self = StObject.set(x, "onAnimateOutEnd", js.undefined)
     }
   }
 }

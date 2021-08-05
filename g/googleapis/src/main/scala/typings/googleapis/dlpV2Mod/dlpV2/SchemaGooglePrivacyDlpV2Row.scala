@@ -10,22 +10,17 @@ trait SchemaGooglePrivacyDlpV2Row extends StObject {
 }
 object SchemaGooglePrivacyDlpV2Row {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2Row = {
+  inline def apply(): SchemaGooglePrivacyDlpV2Row = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2Row]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2RowMutableBuilder[Self <: SchemaGooglePrivacyDlpV2Row] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2Row](x: Self) {
     
-    @scala.inline
-    def setValues(value: js.Array[SchemaGooglePrivacyDlpV2Value]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[SchemaGooglePrivacyDlpV2Value]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: SchemaGooglePrivacyDlpV2Value*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: SchemaGooglePrivacyDlpV2Value*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

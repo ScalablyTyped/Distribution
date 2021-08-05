@@ -261,17 +261,12 @@ object global {
       var suspension_stiffness: Double = js.native
     }
     
-    @scala.inline
-    def createMaterial(material: Material): typings.physijs.Physijs.Material = ^.asInstanceOf[js.Dynamic].applyDynamic("createMaterial")(material.asInstanceOf[js.Any]).asInstanceOf[typings.physijs.Physijs.Material]
-    @scala.inline
-    def createMaterial(material: Material, friction: Double): typings.physijs.Physijs.Material = (^.asInstanceOf[js.Dynamic].applyDynamic("createMaterial")(material.asInstanceOf[js.Any], friction.asInstanceOf[js.Any])).asInstanceOf[typings.physijs.Physijs.Material]
-    @scala.inline
-    def createMaterial(material: Material, friction: Double, restitution: Double): typings.physijs.Physijs.Material = (^.asInstanceOf[js.Dynamic].applyDynamic("createMaterial")(material.asInstanceOf[js.Any], friction.asInstanceOf[js.Any], restitution.asInstanceOf[js.Any])).asInstanceOf[typings.physijs.Physijs.Material]
-    @scala.inline
-    def createMaterial(material: Material, friction: Unit, restitution: Double): typings.physijs.Physijs.Material = (^.asInstanceOf[js.Dynamic].applyDynamic("createMaterial")(material.asInstanceOf[js.Any], friction.asInstanceOf[js.Any], restitution.asInstanceOf[js.Any])).asInstanceOf[typings.physijs.Physijs.Material]
+    inline def createMaterial(material: Material): typings.physijs.Physijs.Material = ^.asInstanceOf[js.Dynamic].applyDynamic("createMaterial")(material.asInstanceOf[js.Any]).asInstanceOf[typings.physijs.Physijs.Material]
+    inline def createMaterial(material: Material, friction: Double): typings.physijs.Physijs.Material = (^.asInstanceOf[js.Dynamic].applyDynamic("createMaterial")(material.asInstanceOf[js.Any], friction.asInstanceOf[js.Any])).asInstanceOf[typings.physijs.Physijs.Material]
+    inline def createMaterial(material: Material, friction: Double, restitution: Double): typings.physijs.Physijs.Material = (^.asInstanceOf[js.Dynamic].applyDynamic("createMaterial")(material.asInstanceOf[js.Any], friction.asInstanceOf[js.Any], restitution.asInstanceOf[js.Any])).asInstanceOf[typings.physijs.Physijs.Material]
+    inline def createMaterial(material: Material, friction: Unit, restitution: Double): typings.physijs.Physijs.Material = (^.asInstanceOf[js.Dynamic].applyDynamic("createMaterial")(material.asInstanceOf[js.Any], friction.asInstanceOf[js.Any], restitution.asInstanceOf[js.Any])).asInstanceOf[typings.physijs.Physijs.Material]
     
-    @scala.inline
-    def noConflict(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("noConflict")().asInstanceOf[js.Object]
+    inline def noConflict(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("noConflict")().asInstanceOf[js.Object]
     
     object scripts {
       
@@ -282,14 +277,12 @@ object global {
       @JSGlobal("Physijs.scripts.ammo")
       @js.native
       def ammo: String = js.native
-      @scala.inline
-      def ammo_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ammo")(x.asInstanceOf[js.Any])
+      inline def ammo_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ammo")(x.asInstanceOf[js.Any])
       
       @JSGlobal("Physijs.scripts.worker")
       @js.native
       def worker: String = js.native
-      @scala.inline
-      def worker_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("worker")(x.asInstanceOf[js.Any])
+      inline def worker_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("worker")(x.asInstanceOf[js.Any])
     }
   }
 }

@@ -761,11 +761,9 @@ object SearchParameters {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def make(newParameters: PlainSearchParameters): SearchParameters = ^.asInstanceOf[js.Dynamic].applyDynamic("make")(newParameters.asInstanceOf[js.Any]).asInstanceOf[SearchParameters]
+  inline def make(newParameters: PlainSearchParameters): SearchParameters = ^.asInstanceOf[js.Dynamic].applyDynamic("make")(newParameters.asInstanceOf[js.Any]).asInstanceOf[SearchParameters]
   
-  @scala.inline
-  def validate(currentState: SearchParameters, parameters: PlainSearchParameters): Null | Error = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(currentState.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[Null | Error]
+  inline def validate(currentState: SearchParameters, parameters: PlainSearchParameters): Null | Error = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(currentState.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[Null | Error]
   
   type FacetList = js.Array[String]
   
@@ -779,26 +777,20 @@ object SearchParameters {
   }
   object HierarchicalFacet {
     
-    @scala.inline
-    def apply(attributes: js.Array[String], name: String, separator: String): HierarchicalFacet = {
+    inline def apply(attributes: js.Array[String], name: String, separator: String): HierarchicalFacet = {
       val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], separator = separator.asInstanceOf[js.Any])
       __obj.asInstanceOf[HierarchicalFacet]
     }
     
-    @scala.inline
-    implicit class HierarchicalFacetMutableBuilder[Self <: HierarchicalFacet] (val x: Self) extends AnyVal {
+    extension [Self <: HierarchicalFacet](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+      inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+      inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     }
   }
   
@@ -813,23 +805,17 @@ object SearchParameters {
   trait Operator extends StObject
   object Operator {
     
-    @scala.inline
-    def Equalssign: typings.algoliasearchHelper.algoliasearchHelperStrings.Equalssign = "=".asInstanceOf[typings.algoliasearchHelper.algoliasearchHelperStrings.Equalssign]
+    inline def Equalssign: typings.algoliasearchHelper.algoliasearchHelperStrings.Equalssign = "=".asInstanceOf[typings.algoliasearchHelper.algoliasearchHelperStrings.Equalssign]
     
-    @scala.inline
-    def ExclamationmarkEqualssign: typings.algoliasearchHelper.algoliasearchHelperStrings.ExclamationmarkEqualssign = "!=".asInstanceOf[typings.algoliasearchHelper.algoliasearchHelperStrings.ExclamationmarkEqualssign]
+    inline def ExclamationmarkEqualssign: typings.algoliasearchHelper.algoliasearchHelperStrings.ExclamationmarkEqualssign = "!=".asInstanceOf[typings.algoliasearchHelper.algoliasearchHelperStrings.ExclamationmarkEqualssign]
     
-    @scala.inline
-    def Greaterthansign: typings.algoliasearchHelper.algoliasearchHelperStrings.Greaterthansign = ">".asInstanceOf[typings.algoliasearchHelper.algoliasearchHelperStrings.Greaterthansign]
+    inline def Greaterthansign: typings.algoliasearchHelper.algoliasearchHelperStrings.Greaterthansign = ">".asInstanceOf[typings.algoliasearchHelper.algoliasearchHelperStrings.Greaterthansign]
     
-    @scala.inline
-    def GreaterthansignEqualssign: typings.algoliasearchHelper.algoliasearchHelperStrings.GreaterthansignEqualssign = ">=".asInstanceOf[typings.algoliasearchHelper.algoliasearchHelperStrings.GreaterthansignEqualssign]
+    inline def GreaterthansignEqualssign: typings.algoliasearchHelper.algoliasearchHelperStrings.GreaterthansignEqualssign = ">=".asInstanceOf[typings.algoliasearchHelper.algoliasearchHelperStrings.GreaterthansignEqualssign]
     
-    @scala.inline
-    def Lessthansign: typings.algoliasearchHelper.algoliasearchHelperStrings.Lessthansign = "<".asInstanceOf[typings.algoliasearchHelper.algoliasearchHelperStrings.Lessthansign]
+    inline def Lessthansign: typings.algoliasearchHelper.algoliasearchHelperStrings.Lessthansign = "<".asInstanceOf[typings.algoliasearchHelper.algoliasearchHelperStrings.Lessthansign]
     
-    @scala.inline
-    def LessthansignEqualssign: typings.algoliasearchHelper.algoliasearchHelperStrings.LessthansignEqualssign = "<=".asInstanceOf[typings.algoliasearchHelper.algoliasearchHelperStrings.LessthansignEqualssign]
+    inline def LessthansignEqualssign: typings.algoliasearchHelper.algoliasearchHelperStrings.LessthansignEqualssign = "<=".asInstanceOf[typings.algoliasearchHelper.algoliasearchHelperStrings.LessthansignEqualssign]
   }
   
   /* Inlined {[ k in algoliasearch-helper.algoliasearch-helper.SearchParameters.Operator ]:? std.Array<number | std.Array<number>>} */
@@ -855,68 +841,48 @@ object SearchParameters {
   }
   object OperatorList {
     
-    @scala.inline
-    def apply(): OperatorList = {
+    inline def apply(): OperatorList = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OperatorList]
     }
     
-    @scala.inline
-    implicit class OperatorListMutableBuilder[Self <: OperatorList] (val x: Self) extends AnyVal {
+    extension [Self <: OperatorList](x: Self) {
       
-      @scala.inline
-      def setEqualssign(value: js.Array[Double | js.Array[Double]]): Self = StObject.set(x, "=", value.asInstanceOf[js.Any])
+      inline def setEqualssign(value: js.Array[Double | js.Array[Double]]): Self = StObject.set(x, "=", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEqualssignUndefined: Self = StObject.set(x, "=", js.undefined)
+      inline def setEqualssignUndefined: Self = StObject.set(x, "=", js.undefined)
       
-      @scala.inline
-      def setEqualssignVarargs(value: (Double | js.Array[Double])*): Self = StObject.set(x, "=", js.Array(value :_*))
+      inline def setEqualssignVarargs(value: (Double | js.Array[Double])*): Self = StObject.set(x, "=", js.Array(value :_*))
       
-      @scala.inline
-      def setExclamationmarkEqualssign(value: js.Array[Double | js.Array[Double]]): Self = StObject.set(x, "!=", value.asInstanceOf[js.Any])
+      inline def setExclamationmarkEqualssign(value: js.Array[Double | js.Array[Double]]): Self = StObject.set(x, "!=", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExclamationmarkEqualssignUndefined: Self = StObject.set(x, "!=", js.undefined)
+      inline def setExclamationmarkEqualssignUndefined: Self = StObject.set(x, "!=", js.undefined)
       
-      @scala.inline
-      def setExclamationmarkEqualssignVarargs(value: (Double | js.Array[Double])*): Self = StObject.set(x, "!=", js.Array(value :_*))
+      inline def setExclamationmarkEqualssignVarargs(value: (Double | js.Array[Double])*): Self = StObject.set(x, "!=", js.Array(value :_*))
       
-      @scala.inline
-      def setGreaterthansign(value: js.Array[Double | js.Array[Double]]): Self = StObject.set(x, ">", value.asInstanceOf[js.Any])
+      inline def setGreaterthansign(value: js.Array[Double | js.Array[Double]]): Self = StObject.set(x, ">", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreaterthansignEqualssign(value: js.Array[Double | js.Array[Double]]): Self = StObject.set(x, ">=", value.asInstanceOf[js.Any])
+      inline def setGreaterthansignEqualssign(value: js.Array[Double | js.Array[Double]]): Self = StObject.set(x, ">=", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreaterthansignEqualssignUndefined: Self = StObject.set(x, ">=", js.undefined)
+      inline def setGreaterthansignEqualssignUndefined: Self = StObject.set(x, ">=", js.undefined)
       
-      @scala.inline
-      def setGreaterthansignEqualssignVarargs(value: (Double | js.Array[Double])*): Self = StObject.set(x, ">=", js.Array(value :_*))
+      inline def setGreaterthansignEqualssignVarargs(value: (Double | js.Array[Double])*): Self = StObject.set(x, ">=", js.Array(value :_*))
       
-      @scala.inline
-      def setGreaterthansignUndefined: Self = StObject.set(x, ">", js.undefined)
+      inline def setGreaterthansignUndefined: Self = StObject.set(x, ">", js.undefined)
       
-      @scala.inline
-      def setGreaterthansignVarargs(value: (Double | js.Array[Double])*): Self = StObject.set(x, ">", js.Array(value :_*))
+      inline def setGreaterthansignVarargs(value: (Double | js.Array[Double])*): Self = StObject.set(x, ">", js.Array(value :_*))
       
-      @scala.inline
-      def setLessthansign(value: js.Array[Double | js.Array[Double]]): Self = StObject.set(x, "<", value.asInstanceOf[js.Any])
+      inline def setLessthansign(value: js.Array[Double | js.Array[Double]]): Self = StObject.set(x, "<", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLessthansignEqualssign(value: js.Array[Double | js.Array[Double]]): Self = StObject.set(x, "<=", value.asInstanceOf[js.Any])
+      inline def setLessthansignEqualssign(value: js.Array[Double | js.Array[Double]]): Self = StObject.set(x, "<=", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLessthansignEqualssignUndefined: Self = StObject.set(x, "<=", js.undefined)
+      inline def setLessthansignEqualssignUndefined: Self = StObject.set(x, "<=", js.undefined)
       
-      @scala.inline
-      def setLessthansignEqualssignVarargs(value: (Double | js.Array[Double])*): Self = StObject.set(x, "<=", js.Array(value :_*))
+      inline def setLessthansignEqualssignVarargs(value: (Double | js.Array[Double])*): Self = StObject.set(x, "<=", js.Array(value :_*))
       
-      @scala.inline
-      def setLessthansignUndefined: Self = StObject.set(x, "<", js.undefined)
+      inline def setLessthansignUndefined: Self = StObject.set(x, "<", js.undefined)
       
-      @scala.inline
-      def setLessthansignVarargs(value: (Double | js.Array[Double])*): Self = StObject.set(x, "<", js.Array(value :_*))
+      inline def setLessthansignVarargs(value: (Double | js.Array[Double])*): Self = StObject.set(x, "<", js.Array(value :_*))
     }
   }
 }

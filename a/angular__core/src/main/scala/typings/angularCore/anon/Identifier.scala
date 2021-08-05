@@ -13,19 +13,15 @@ trait Identifier extends StObject {
 }
 object Identifier {
   
-  @scala.inline
-  def apply(identifier: typings.typescript.mod.Identifier, node: ClassDeclaration): Identifier = {
+  inline def apply(identifier: typings.typescript.mod.Identifier, node: ClassDeclaration): Identifier = {
     val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
     __obj.asInstanceOf[Identifier]
   }
   
-  @scala.inline
-  implicit class IdentifierMutableBuilder[Self <: Identifier] (val x: Self) extends AnyVal {
+  extension [Self <: Identifier](x: Self) {
     
-    @scala.inline
-    def setIdentifier(value: typings.typescript.mod.Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: typings.typescript.mod.Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode(value: ClassDeclaration): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: ClassDeclaration): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
   }
 }

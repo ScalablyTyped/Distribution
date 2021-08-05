@@ -22,26 +22,20 @@ object highlighterMod {
   }
   object HighlighterProps {
     
-    @scala.inline
-    def apply(): HighlighterProps = {
+    inline def apply(): HighlighterProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HighlighterProps]
     }
     
-    @scala.inline
-    implicit class HighlighterPropsMutableBuilder[Self <: HighlighterProps] (val x: Self) extends AnyVal {
+    extension [Self <: HighlighterProps](x: Self) {
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setMatch(value: String): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+      inline def setMatch(value: String): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
+      inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
     }
   }
 }

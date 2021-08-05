@@ -13,7 +13,7 @@ object loggerMod {
   trait Logger_ extends StObject {
     
     /** JSDoc */
-    var _enabled: js.Any
+    /* private */ var _enabled: js.Any
     
     /** JSDoc */
     def disable(): Unit
@@ -32,8 +32,7 @@ object loggerMod {
   }
   object Logger_ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _enabled: js.Any,
       disable: () => Unit,
       enable: () => Unit,
@@ -45,26 +44,19 @@ object loggerMod {
       __obj.asInstanceOf[Logger_]
     }
     
-    @scala.inline
-    implicit class Logger_MutableBuilder[Self <: Logger_] (val x: Self) extends AnyVal {
+    extension [Self <: Logger_](x: Self) {
       
-      @scala.inline
-      def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
+      inline def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
+      inline def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setError(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLog(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
+      inline def setLog(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWarn(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+      inline def setWarn(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_enabled(value: js.Any): Self = StObject.set(x, "_enabled", value.asInstanceOf[js.Any])
+      inline def set_enabled(value: js.Any): Self = StObject.set(x, "_enabled", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(cmp: List, to: List): Double = (^.asInstanceOf[js.Dynamic].apply(cmp.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def apply[T](cmp: T, to: T): Double = (^.asInstanceOf[js.Dynamic].apply(cmp.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def apply(cmp: List, to: List): Double = (^.asInstanceOf[js.Dynamic].apply(cmp.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def apply[T](cmp: T, to: T): Double = (^.asInstanceOf[js.Dynamic].apply(cmp.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   @JSImport("buffer-compare", JSImport.Namespace)
   @js.native
@@ -24,17 +22,14 @@ object mod {
   }
   object List {
     
-    @scala.inline
-    def apply(length: Double): List = {
+    inline def apply(length: Double): List = {
       val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
       __obj.asInstanceOf[List]
     }
     
-    @scala.inline
-    implicit class ListMutableBuilder[Self <: List] (val x: Self) extends AnyVal {
+    extension [Self <: List](x: Self) {
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
 }

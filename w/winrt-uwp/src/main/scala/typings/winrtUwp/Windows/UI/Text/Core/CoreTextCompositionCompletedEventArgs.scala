@@ -23,8 +23,7 @@ trait CoreTextCompositionCompletedEventArgs extends StObject {
 }
 object CoreTextCompositionCompletedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     compositionSegments: IVectorView[CoreTextCompositionSegment],
     getDeferral: () => Deferral,
     isCanceled: Boolean
@@ -33,16 +32,12 @@ object CoreTextCompositionCompletedEventArgs {
     __obj.asInstanceOf[CoreTextCompositionCompletedEventArgs]
   }
   
-  @scala.inline
-  implicit class CoreTextCompositionCompletedEventArgsMutableBuilder[Self <: CoreTextCompositionCompletedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: CoreTextCompositionCompletedEventArgs](x: Self) {
     
-    @scala.inline
-    def setCompositionSegments(value: IVectorView[CoreTextCompositionSegment]): Self = StObject.set(x, "compositionSegments", value.asInstanceOf[js.Any])
+    inline def setCompositionSegments(value: IVectorView[CoreTextCompositionSegment]): Self = StObject.set(x, "compositionSegments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDeferral(value: () => Deferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
+    inline def setGetDeferral(value: () => Deferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsCanceled(value: Boolean): Self = StObject.set(x, "isCanceled", value.asInstanceOf[js.Any])
+    inline def setIsCanceled(value: Boolean): Self = StObject.set(x, "isCanceled", value.asInstanceOf[js.Any])
   }
 }

@@ -10,6 +10,5 @@ object dilateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(a: Double, b: Double, dilation: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], dilation.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def default(a: Double, b: Double, dilation: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], dilation.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

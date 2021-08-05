@@ -16,22 +16,17 @@ trait CropAndResizeAttrs extends StObject {
 }
 object CropAndResizeAttrs {
   
-  @scala.inline
-  def apply(cropSize: js.Tuple2[Double, Double], extrapolationValue: Double, method: bilinear | nearest): CropAndResizeAttrs = {
+  inline def apply(cropSize: js.Tuple2[Double, Double], extrapolationValue: Double, method: bilinear | nearest): CropAndResizeAttrs = {
     val __obj = js.Dynamic.literal(cropSize = cropSize.asInstanceOf[js.Any], extrapolationValue = extrapolationValue.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
     __obj.asInstanceOf[CropAndResizeAttrs]
   }
   
-  @scala.inline
-  implicit class CropAndResizeAttrsMutableBuilder[Self <: CropAndResizeAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: CropAndResizeAttrs](x: Self) {
     
-    @scala.inline
-    def setCropSize(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "cropSize", value.asInstanceOf[js.Any])
+    inline def setCropSize(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "cropSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtrapolationValue(value: Double): Self = StObject.set(x, "extrapolationValue", value.asInstanceOf[js.Any])
+    inline def setExtrapolationValue(value: Double): Self = StObject.set(x, "extrapolationValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: bilinear | nearest): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: bilinear | nearest): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
   }
 }

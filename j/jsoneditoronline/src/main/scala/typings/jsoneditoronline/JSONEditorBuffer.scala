@@ -14,22 +14,17 @@ trait JSONEditorBuffer extends StObject {
 }
 object JSONEditorBuffer {
   
-  @scala.inline
-  def apply(flush: () => String, set: String => Unit, text: String): JSONEditorBuffer = {
+  inline def apply(flush: () => String, set: String => Unit, text: String): JSONEditorBuffer = {
     val __obj = js.Dynamic.literal(flush = js.Any.fromFunction0(flush), set = js.Any.fromFunction1(set), text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSONEditorBuffer]
   }
   
-  @scala.inline
-  implicit class JSONEditorBufferMutableBuilder[Self <: JSONEditorBuffer] (val x: Self) extends AnyVal {
+  extension [Self <: JSONEditorBuffer](x: Self) {
     
-    @scala.inline
-    def setFlush(value: () => String): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
+    inline def setFlush(value: () => String): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet(value: String => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+    inline def setSet(value: String => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

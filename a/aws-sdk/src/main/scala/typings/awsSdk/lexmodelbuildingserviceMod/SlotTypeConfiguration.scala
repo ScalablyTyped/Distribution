@@ -13,19 +13,15 @@ trait SlotTypeConfiguration extends StObject {
 }
 object SlotTypeConfiguration {
   
-  @scala.inline
-  def apply(): SlotTypeConfiguration = {
+  inline def apply(): SlotTypeConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SlotTypeConfiguration]
   }
   
-  @scala.inline
-  implicit class SlotTypeConfigurationMutableBuilder[Self <: SlotTypeConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: SlotTypeConfiguration](x: Self) {
     
-    @scala.inline
-    def setRegexConfiguration(value: SlotTypeRegexConfiguration): Self = StObject.set(x, "regexConfiguration", value.asInstanceOf[js.Any])
+    inline def setRegexConfiguration(value: SlotTypeRegexConfiguration): Self = StObject.set(x, "regexConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegexConfigurationUndefined: Self = StObject.set(x, "regexConfiguration", js.undefined)
+    inline def setRegexConfigurationUndefined: Self = StObject.set(x, "regexConfiguration", js.undefined)
   }
 }

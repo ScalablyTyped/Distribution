@@ -47,8 +47,7 @@ trait ConditionalCellValueRule extends StObject {
 }
 object ConditionalCellValueRule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     formula1: String,
     operator: ConditionalCellValueOperator | Invalid | Between | NotBetween | EqualTo | NotEqualTo | GreaterThan | LessThan | GreaterThanOrEqual | LessThanOrEqual
   ): ConditionalCellValueRule = {
@@ -56,20 +55,15 @@ object ConditionalCellValueRule {
     __obj.asInstanceOf[ConditionalCellValueRule]
   }
   
-  @scala.inline
-  implicit class ConditionalCellValueRuleMutableBuilder[Self <: ConditionalCellValueRule] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionalCellValueRule](x: Self) {
     
-    @scala.inline
-    def setFormula1(value: String): Self = StObject.set(x, "formula1", value.asInstanceOf[js.Any])
+    inline def setFormula1(value: String): Self = StObject.set(x, "formula1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormula2(value: String): Self = StObject.set(x, "formula2", value.asInstanceOf[js.Any])
+    inline def setFormula2(value: String): Self = StObject.set(x, "formula2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormula2Undefined: Self = StObject.set(x, "formula2", js.undefined)
+    inline def setFormula2Undefined: Self = StObject.set(x, "formula2", js.undefined)
     
-    @scala.inline
-    def setOperator(
+    inline def setOperator(
       value: ConditionalCellValueOperator | Invalid | Between | NotBetween | EqualTo | NotEqualTo | GreaterThan | LessThan | GreaterThanOrEqual | LessThanOrEqual
     ): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
   }

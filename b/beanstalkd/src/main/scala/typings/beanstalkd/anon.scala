@@ -163,8 +163,7 @@ object anon {
   }
   object RequiredBeanstalkdClient {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _command: (/* command */ String, /* args */ js.Array[js.Any], /* writer */ BasicWriter, /* reader */ BasicReader | YamlReader) => js.Promise[js.Any],
       bury: (/* id */ Double, /* priority */ Double) => js.Promise[Unit],
       closed: Boolean,
@@ -203,109 +202,75 @@ object anon {
       __obj.asInstanceOf[RequiredBeanstalkdClient]
     }
     
-    @scala.inline
-    implicit class RequiredBeanstalkdClientMutableBuilder[Self <: RequiredBeanstalkdClient] (val x: Self) extends AnyVal {
+    extension [Self <: RequiredBeanstalkdClient](x: Self) {
       
-      @scala.inline
-      def setBury(value: (/* id */ Double, /* priority */ Double) => js.Promise[Unit]): Self = StObject.set(x, "bury", js.Any.fromFunction2(value))
+      inline def setBury(value: (/* id */ Double, /* priority */ Double) => js.Promise[Unit]): Self = StObject.set(x, "bury", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
+      inline def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnect(value: () => (js.Promise[RequiredBeanstalkdClient & BeanstalkdCaller]) & BeanstalkdCaller): Self = StObject.set(x, "connect", js.Any.fromFunction0(value))
+      inline def setConnect(value: () => (js.Promise[RequiredBeanstalkdClient & BeanstalkdCaller]) & BeanstalkdCaller): Self = StObject.set(x, "connect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDelete(value: /* id */ Double => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
+      inline def setDelete(value: /* id */ Double => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDestroy(value: /* id */ Double => js.Promise[Unit]): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
+      inline def setDestroy(value: /* id */ Double => js.Promise[Unit]): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnore(value: /* tube */ Double => js.Promise[Double]): Self = StObject.set(x, "ignore", js.Any.fromFunction1(value))
+      inline def setIgnore(value: /* tube */ Double => js.Promise[Double]): Self = StObject.set(x, "ignore", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setKick(value: /* maxToKick */ Double => js.Promise[Double]): Self = StObject.set(x, "kick", js.Any.fromFunction1(value))
+      inline def setKick(value: /* maxToKick */ Double => js.Promise[Double]): Self = StObject.set(x, "kick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setKickJob(value: /* id */ Double => js.Promise[Unit]): Self = StObject.set(x, "kickJob", js.Any.fromFunction1(value))
+      inline def setKickJob(value: /* id */ Double => js.Promise[Unit]): Self = StObject.set(x, "kickJob", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setListTubeUsed(value: () => js.Promise[String]): Self = StObject.set(x, "listTubeUsed", js.Any.fromFunction0(value))
+      inline def setListTubeUsed(value: () => js.Promise[String]): Self = StObject.set(x, "listTubeUsed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setListTubeWatched(value: () => js.Promise[js.Array[String]]): Self = StObject.set(x, "listTubeWatched", js.Any.fromFunction0(value))
+      inline def setListTubeWatched(value: () => js.Promise[js.Array[String]]): Self = StObject.set(x, "listTubeWatched", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setListTubes(value: () => js.Promise[js.Array[String]]): Self = StObject.set(x, "listTubes", js.Any.fromFunction0(value))
+      inline def setListTubes(value: () => js.Promise[js.Array[String]]): Self = StObject.set(x, "listTubes", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOn(value: (/* event */ String, /* repeated */ js.Function1[/* repeated */ js.Any, Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      inline def setOn(value: (/* event */ String, /* repeated */ js.Function1[/* repeated */ js.Any, Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPauseTube(value: (/* tube */ String, /* delay */ Double) => js.Promise[Unit]): Self = StObject.set(x, "pauseTube", js.Any.fromFunction2(value))
+      inline def setPauseTube(value: (/* tube */ String, /* delay */ Double) => js.Promise[Unit]): Self = StObject.set(x, "pauseTube", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPeek(value: /* id */ Double => js.Promise[Buffer]): Self = StObject.set(x, "peek", js.Any.fromFunction1(value))
+      inline def setPeek(value: /* id */ Double => js.Promise[Buffer]): Self = StObject.set(x, "peek", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPeekBuried(value: () => js.Promise[js.Tuple2[String, Buffer]]): Self = StObject.set(x, "peekBuried", js.Any.fromFunction0(value))
+      inline def setPeekBuried(value: () => js.Promise[js.Tuple2[String, Buffer]]): Self = StObject.set(x, "peekBuried", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPeekDelayed(value: () => js.Promise[js.Tuple2[String, Buffer]]): Self = StObject.set(x, "peekDelayed", js.Any.fromFunction0(value))
+      inline def setPeekDelayed(value: () => js.Promise[js.Tuple2[String, Buffer]]): Self = StObject.set(x, "peekDelayed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPeekReady(value: () => js.Promise[js.Tuple2[String, Buffer]]): Self = StObject.set(x, "peekReady", js.Any.fromFunction0(value))
+      inline def setPeekReady(value: () => js.Promise[js.Tuple2[String, Buffer]]): Self = StObject.set(x, "peekReady", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocol(value: BeanstalkdProtocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: BeanstalkdProtocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPut(
+      inline def setPut(
         value: (/* priority */ Double, /* delay */ Double, /* ttr */ Double, /* payload */ js.UndefOr[String | Buffer]) => js.Promise[String]
       ): Self = StObject.set(x, "put", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setQuit(value: () => js.Promise[Unit]): Self = StObject.set(x, "quit", js.Any.fromFunction0(value))
+      inline def setQuit(value: () => js.Promise[Unit]): Self = StObject.set(x, "quit", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRelease(value: (/* id */ Double, /* priority */ Double, /* delay */ Double) => js.Promise[Unit]): Self = StObject.set(x, "release", js.Any.fromFunction3(value))
+      inline def setRelease(value: (/* id */ Double, /* priority */ Double, /* delay */ Double) => js.Promise[Unit]): Self = StObject.set(x, "release", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setReserve(value: () => js.Promise[js.Tuple2[String, Buffer]]): Self = StObject.set(x, "reserve", js.Any.fromFunction0(value))
+      inline def setReserve(value: () => js.Promise[js.Tuple2[String, Buffer]]): Self = StObject.set(x, "reserve", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReserveWithTimeout(value: /* seconds */ Double => js.Promise[Unit]): Self = StObject.set(x, "reserveWithTimeout", js.Any.fromFunction1(value))
+      inline def setReserveWithTimeout(value: /* seconds */ Double => js.Promise[Unit]): Self = StObject.set(x, "reserveWithTimeout", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStats(value: () => js.Promise[BeanstalkdStats]): Self = StObject.set(x, "stats", js.Any.fromFunction0(value))
+      inline def setStats(value: () => js.Promise[BeanstalkdStats]): Self = StObject.set(x, "stats", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStatsJob(value: /* id */ Double => js.Promise[BeanstalkdJobStats]): Self = StObject.set(x, "statsJob", js.Any.fromFunction1(value))
+      inline def setStatsJob(value: /* id */ Double => js.Promise[BeanstalkdJobStats]): Self = StObject.set(x, "statsJob", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStatsTube(value: /* tube */ String => js.Promise[BeanstalkdTubeStats]): Self = StObject.set(x, "statsTube", js.Any.fromFunction1(value))
+      inline def setStatsTube(value: /* tube */ String => js.Promise[BeanstalkdTubeStats]): Self = StObject.set(x, "statsTube", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTouch(value: /* id */ Double => js.Promise[Unit]): Self = StObject.set(x, "touch", js.Any.fromFunction1(value))
+      inline def setTouch(value: /* id */ Double => js.Promise[Unit]): Self = StObject.set(x, "touch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUnref(value: () => Unit): Self = StObject.set(x, "unref", js.Any.fromFunction0(value))
+      inline def setUnref(value: () => Unit): Self = StObject.set(x, "unref", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUse(value: /* tube */ String => js.Promise[String]): Self = StObject.set(x, "use", js.Any.fromFunction1(value))
+      inline def setUse(value: /* tube */ String => js.Promise[String]): Self = StObject.set(x, "use", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWatch(value: /* tube */ Double => js.Promise[Double]): Self = StObject.set(x, "watch", js.Any.fromFunction1(value))
+      inline def setWatch(value: /* tube */ Double => js.Promise[Double]): Self = StObject.set(x, "watch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_command(
+      inline def set_command(
         value: (/* command */ String, /* args */ js.Array[js.Any], /* writer */ BasicWriter, /* reader */ BasicReader | YamlReader) => js.Promise[js.Any]
       ): Self = StObject.set(x, "_command", js.Any.fromFunction4(value))
     }

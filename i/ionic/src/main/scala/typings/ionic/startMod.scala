@@ -21,7 +21,7 @@ object startMod {
   class StartCommand protected () extends Command {
     def this(namespace: INamespace) = this()
     
-    var canRemoveExisting: js.Any = js.native
+    /* private */ var canRemoveExisting: js.Any = js.native
     
     def checkForExisting(projectDir: String): js.Promise[Unit] = js.native
     
@@ -40,7 +40,7 @@ object startMod {
     
     def run(inputs: CommandLineInputs, options: CommandLineOptions, runinfo: CommandInstanceInfo): js.Promise[Unit] = js.native
     
-    var schema: js.Any = js.native
+    /* private */ var schema: js.Any = js.native
     
     def showNextSteps(projectDir: String, cloned: Boolean, linkConfirmed: Boolean): js.Promise[Unit] = js.native
     

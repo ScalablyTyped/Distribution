@@ -18,22 +18,17 @@ trait DeletePlacementGroupRequest extends StObject {
 }
 object DeletePlacementGroupRequest {
   
-  @scala.inline
-  def apply(GroupName: PlacementGroupName): DeletePlacementGroupRequest = {
+  inline def apply(GroupName: PlacementGroupName): DeletePlacementGroupRequest = {
     val __obj = js.Dynamic.literal(GroupName = GroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeletePlacementGroupRequest]
   }
   
-  @scala.inline
-  implicit class DeletePlacementGroupRequestMutableBuilder[Self <: DeletePlacementGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeletePlacementGroupRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setGroupName(value: PlacementGroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: PlacementGroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
   }
 }

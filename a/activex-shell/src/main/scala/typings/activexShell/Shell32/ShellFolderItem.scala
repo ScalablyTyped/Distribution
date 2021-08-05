@@ -63,7 +63,7 @@ trait ShellFolderItem extends StObject {
   /** Get the pathname to the item */
   val Path: String = js.native
   
-  @JSName("Shell32.ShellFolderItem_typekey")
+  /* private */ @JSName("Shell32.ShellFolderItem_typekey")
   var Shell32DotShellFolderItem_typekey: ShellFolderItem = js.native
   
   /** Size */

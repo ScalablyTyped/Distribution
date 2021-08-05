@@ -36,43 +36,31 @@ trait SchemaThumbnailDetails extends StObject {
 }
 object SchemaThumbnailDetails {
   
-  @scala.inline
-  def apply(): SchemaThumbnailDetails = {
+  inline def apply(): SchemaThumbnailDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaThumbnailDetails]
   }
   
-  @scala.inline
-  implicit class SchemaThumbnailDetailsMutableBuilder[Self <: SchemaThumbnailDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaThumbnailDetails](x: Self) {
     
-    @scala.inline
-    def setDefault(value: SchemaThumbnail): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: SchemaThumbnail): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
-    @scala.inline
-    def setHigh(value: SchemaThumbnail): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
+    inline def setHigh(value: SchemaThumbnail): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighUndefined: Self = StObject.set(x, "high", js.undefined)
+    inline def setHighUndefined: Self = StObject.set(x, "high", js.undefined)
     
-    @scala.inline
-    def setMaxres(value: SchemaThumbnail): Self = StObject.set(x, "maxres", value.asInstanceOf[js.Any])
+    inline def setMaxres(value: SchemaThumbnail): Self = StObject.set(x, "maxres", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxresUndefined: Self = StObject.set(x, "maxres", js.undefined)
+    inline def setMaxresUndefined: Self = StObject.set(x, "maxres", js.undefined)
     
-    @scala.inline
-    def setMedium(value: SchemaThumbnail): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
+    inline def setMedium(value: SchemaThumbnail): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediumUndefined: Self = StObject.set(x, "medium", js.undefined)
+    inline def setMediumUndefined: Self = StObject.set(x, "medium", js.undefined)
     
-    @scala.inline
-    def setStandard(value: SchemaThumbnail): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
+    inline def setStandard(value: SchemaThumbnail): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardUndefined: Self = StObject.set(x, "standard", js.undefined)
+    inline def setStandardUndefined: Self = StObject.set(x, "standard", js.undefined)
   }
 }

@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait _BEHAVIOR_EVENT_FLAGS extends StObject
 object _BEHAVIOR_EVENT_FLAGS {
   
-  @scala.inline
-  def BEHAVIOREVENTFLAGS_BUBBLE: `1` = 1.asInstanceOf[`1`]
+  inline def BEHAVIOREVENTFLAGS_BUBBLE: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def BEHAVIOREVENTFLAGS_STANDARDADDITIVE: `2` = 2.asInstanceOf[`2`]
+  inline def BEHAVIOREVENTFLAGS_STANDARDADDITIVE: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def BEHAVIOR_EVENT_FLAGS_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def BEHAVIOR_EVENT_FLAGS_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

@@ -18,6 +18,6 @@ object graticuleMod {
     
     def assemble(): GraticuleTransform = js.native
     
-    var params: js.Any = js.native
+    /* private */ var params: js.Any = js.native
   }
 }

@@ -32,79 +32,55 @@ trait CommunityMessagesOptions extends StObject {
 }
 object CommunityMessagesOptions {
   
-  @scala.inline
-  def apply(): CommunityMessagesOptions = {
+  inline def apply(): CommunityMessagesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommunityMessagesOptions]
   }
   
-  @scala.inline
-  implicit class CommunityMessagesOptionsMutableBuilder[Self <: CommunityMessagesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CommunityMessagesOptions](x: Self) {
     
-    @scala.inline
-    def setButtonType(value: String): Self = StObject.set(x, "buttonType", value.asInstanceOf[js.Any])
+    inline def setButtonType(value: String): Self = StObject.set(x, "buttonType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonTypeUndefined: Self = StObject.set(x, "buttonType", js.undefined)
+    inline def setButtonTypeUndefined: Self = StObject.set(x, "buttonType", js.undefined)
     
-    @scala.inline
-    def setDisableButtonTooltip(value: `1`): Self = StObject.set(x, "disableButtonTooltip", value.asInstanceOf[js.Any])
+    inline def setDisableButtonTooltip(value: `1`): Self = StObject.set(x, "disableButtonTooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableButtonTooltipUndefined: Self = StObject.set(x, "disableButtonTooltip", js.undefined)
+    inline def setDisableButtonTooltipUndefined: Self = StObject.set(x, "disableButtonTooltip", js.undefined)
     
-    @scala.inline
-    def setDisableExpandChatSound(value: `1`): Self = StObject.set(x, "disableExpandChatSound", value.asInstanceOf[js.Any])
+    inline def setDisableExpandChatSound(value: `1`): Self = StObject.set(x, "disableExpandChatSound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableExpandChatSoundUndefined: Self = StObject.set(x, "disableExpandChatSound", js.undefined)
+    inline def setDisableExpandChatSoundUndefined: Self = StObject.set(x, "disableExpandChatSound", js.undefined)
     
-    @scala.inline
-    def setDisableNewMessagesSound(value: `1`): Self = StObject.set(x, "disableNewMessagesSound", value.asInstanceOf[js.Any])
+    inline def setDisableNewMessagesSound(value: `1`): Self = StObject.set(x, "disableNewMessagesSound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableNewMessagesSoundUndefined: Self = StObject.set(x, "disableNewMessagesSound", js.undefined)
+    inline def setDisableNewMessagesSoundUndefined: Self = StObject.set(x, "disableNewMessagesSound", js.undefined)
     
-    @scala.inline
-    def setDisableTitleChange(value: `1`): Self = StObject.set(x, "disableTitleChange", value.asInstanceOf[js.Any])
+    inline def setDisableTitleChange(value: `1`): Self = StObject.set(x, "disableTitleChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableTitleChangeUndefined: Self = StObject.set(x, "disableTitleChange", js.undefined)
+    inline def setDisableTitleChangeUndefined: Self = StObject.set(x, "disableTitleChange", js.undefined)
     
-    @scala.inline
-    def setExpandTimeout(value: Double): Self = StObject.set(x, "expandTimeout", value.asInstanceOf[js.Any])
+    inline def setExpandTimeout(value: Double): Self = StObject.set(x, "expandTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandTimeoutUndefined: Self = StObject.set(x, "expandTimeout", js.undefined)
+    inline def setExpandTimeoutUndefined: Self = StObject.set(x, "expandTimeout", js.undefined)
     
-    @scala.inline
-    def setExpanded(value: `1`): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+    inline def setExpanded(value: `1`): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
+    inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
     
-    @scala.inline
-    def setOnCanNotWrite(value: /* reason */ OnCanNotWriteReason => Unit): Self = StObject.set(x, "onCanNotWrite", js.Any.fromFunction1(value))
+    inline def setOnCanNotWrite(value: /* reason */ OnCanNotWriteReason => Unit): Self = StObject.set(x, "onCanNotWrite", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnCanNotWriteUndefined: Self = StObject.set(x, "onCanNotWrite", js.undefined)
+    inline def setOnCanNotWriteUndefined: Self = StObject.set(x, "onCanNotWrite", js.undefined)
     
-    @scala.inline
-    def setTooltipButtonText(value: String): Self = StObject.set(x, "tooltipButtonText", value.asInstanceOf[js.Any])
+    inline def setTooltipButtonText(value: String): Self = StObject.set(x, "tooltipButtonText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipButtonTextUndefined: Self = StObject.set(x, "tooltipButtonText", js.undefined)
+    inline def setTooltipButtonTextUndefined: Self = StObject.set(x, "tooltipButtonText", js.undefined)
     
-    @scala.inline
-    def setWelcomeScreen(value: NumericBoolean): Self = StObject.set(x, "welcomeScreen", value.asInstanceOf[js.Any])
+    inline def setWelcomeScreen(value: NumericBoolean): Self = StObject.set(x, "welcomeScreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWelcomeScreenUndefined: Self = StObject.set(x, "welcomeScreen", js.undefined)
+    inline def setWelcomeScreenUndefined: Self = StObject.set(x, "welcomeScreen", js.undefined)
     
-    @scala.inline
-    def setWidgetPosition(value: String): Self = StObject.set(x, "widgetPosition", value.asInstanceOf[js.Any])
+    inline def setWidgetPosition(value: String): Self = StObject.set(x, "widgetPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidgetPositionUndefined: Self = StObject.set(x, "widgetPosition", js.undefined)
+    inline def setWidgetPositionUndefined: Self = StObject.set(x, "widgetPosition", js.undefined)
   }
 }

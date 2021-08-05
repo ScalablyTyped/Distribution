@@ -23,8 +23,7 @@ trait Actions[TContext, TEvent /* <: EventObject */] extends StObject {
 }
 object Actions {
   
-  @scala.inline
-  def apply[TContext, TEvent /* <: EventObject */](
+  inline def apply[TContext, TEvent /* <: EventObject */](
     actions: js.Array[ActionObject[TContext, TEvent]],
     eventType: (/* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any) | NullEvent | Asterisk,
     source: String
@@ -33,36 +32,26 @@ object Actions {
     __obj.asInstanceOf[Actions[TContext, TEvent]]
   }
   
-  @scala.inline
-  implicit class ActionsMutableBuilder[Self <: Actions[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (Actions[TContext, TEvent])) extends AnyVal {
+  extension [Self <: Actions[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (Actions[TContext, TEvent])) {
     
-    @scala.inline
-    def setActions(value: js.Array[ActionObject[TContext, TEvent]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: js.Array[ActionObject[TContext, TEvent]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsVarargs(value: (ActionObject[TContext, TEvent])*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: (ActionObject[TContext, TEvent])*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
-    @scala.inline
-    def setCond(value: Guard[TContext, TEvent]): Self = StObject.set(x, "cond", value.asInstanceOf[js.Any])
+    inline def setCond(value: Guard[TContext, TEvent]): Self = StObject.set(x, "cond", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCondUndefined: Self = StObject.set(x, "cond", js.undefined)
+    inline def setCondUndefined: Self = StObject.set(x, "cond", js.undefined)
     
-    @scala.inline
-    def setEventType(
+    inline def setEventType(
       value: (/* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any) | NullEvent | Asterisk
     ): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: js.Array[String]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: js.Array[String]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    @scala.inline
-    def setTargetVarargs(value: String*): Self = StObject.set(x, "target", js.Array(value :_*))
+    inline def setTargetVarargs(value: String*): Self = StObject.set(x, "target", js.Array(value :_*))
   }
 }

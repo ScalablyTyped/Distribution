@@ -18,13 +18,12 @@ trait PrintRanges extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.PrintRanges_typekey")
+  /* private */ @JSName("PowerPoint.PrintRanges_typekey")
   var PowerPointDotPrintRanges_typekey: PrintRanges
 }
 object PrintRanges {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Add: (Double, Double) => PrintRange,
     Application: Application,
     ClearAll: () => Unit,
@@ -38,28 +37,20 @@ object PrintRanges {
     __obj.asInstanceOf[PrintRanges]
   }
   
-  @scala.inline
-  implicit class PrintRangesMutableBuilder[Self <: PrintRanges] (val x: Self) extends AnyVal {
+  extension [Self <: PrintRanges](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (Double, Double) => PrintRange): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (Double, Double) => PrintRange): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearAll(value: () => Unit): Self = StObject.set(x, "ClearAll", js.Any.fromFunction0(value))
+    inline def setClearAll(value: () => Unit): Self = StObject.set(x, "ClearAll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Double => PrintRange): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => PrintRange): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotPrintRanges_typekey(value: PrintRanges): Self = StObject.set(x, "PowerPoint.PrintRanges_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotPrintRanges_typekey(value: PrintRanges): Self = StObject.set(x, "PowerPoint.PrintRanges_typekey", value.asInstanceOf[js.Any])
   }
 }

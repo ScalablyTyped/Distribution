@@ -11,16 +11,13 @@ trait ApplicationViewTransferContext extends StObject {
 }
 object ApplicationViewTransferContext {
   
-  @scala.inline
-  def apply(viewId: js.Any): ApplicationViewTransferContext = {
+  inline def apply(viewId: js.Any): ApplicationViewTransferContext = {
     val __obj = js.Dynamic.literal(viewId = viewId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationViewTransferContext]
   }
   
-  @scala.inline
-  implicit class ApplicationViewTransferContextMutableBuilder[Self <: ApplicationViewTransferContext] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationViewTransferContext](x: Self) {
     
-    @scala.inline
-    def setViewId(value: js.Any): Self = StObject.set(x, "viewId", value.asInstanceOf[js.Any])
+    inline def setViewId(value: js.Any): Self = StObject.set(x, "viewId", value.asInstanceOf[js.Any])
   }
 }

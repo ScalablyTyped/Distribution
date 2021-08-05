@@ -16,13 +16,13 @@ object settingsMod {
        with Settings {
     def this(_options: Options) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _getFileSystemMethods: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _getValue: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     override val _options: js.Any = js.native
     
     /* CompleteClass */
@@ -251,153 +251,108 @@ object settingsMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
+      inline def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbsoluteUndefined: Self = StObject.set(x, "absolute", js.undefined)
+      inline def setAbsoluteUndefined: Self = StObject.set(x, "absolute", js.undefined)
       
-      @scala.inline
-      def setBaseNameMatch(value: Boolean): Self = StObject.set(x, "baseNameMatch", value.asInstanceOf[js.Any])
+      inline def setBaseNameMatch(value: Boolean): Self = StObject.set(x, "baseNameMatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseNameMatchUndefined: Self = StObject.set(x, "baseNameMatch", js.undefined)
+      inline def setBaseNameMatchUndefined: Self = StObject.set(x, "baseNameMatch", js.undefined)
       
-      @scala.inline
-      def setBraceExpansion(value: Boolean): Self = StObject.set(x, "braceExpansion", value.asInstanceOf[js.Any])
+      inline def setBraceExpansion(value: Boolean): Self = StObject.set(x, "braceExpansion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBraceExpansionUndefined: Self = StObject.set(x, "braceExpansion", js.undefined)
+      inline def setBraceExpansionUndefined: Self = StObject.set(x, "braceExpansion", js.undefined)
       
-      @scala.inline
-      def setCaseSensitiveMatch(value: Boolean): Self = StObject.set(x, "caseSensitiveMatch", value.asInstanceOf[js.Any])
+      inline def setCaseSensitiveMatch(value: Boolean): Self = StObject.set(x, "caseSensitiveMatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaseSensitiveMatchUndefined: Self = StObject.set(x, "caseSensitiveMatch", js.undefined)
+      inline def setCaseSensitiveMatchUndefined: Self = StObject.set(x, "caseSensitiveMatch", js.undefined)
       
-      @scala.inline
-      def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
+      inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConcurrencyUndefined: Self = StObject.set(x, "concurrency", js.undefined)
+      inline def setConcurrencyUndefined: Self = StObject.set(x, "concurrency", js.undefined)
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setDeep(value: Double): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
+      inline def setDeep(value: Double): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeepUndefined: Self = StObject.set(x, "deep", js.undefined)
+      inline def setDeepUndefined: Self = StObject.set(x, "deep", js.undefined)
       
-      @scala.inline
-      def setDot(value: Boolean): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
+      inline def setDot(value: Boolean): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDotUndefined: Self = StObject.set(x, "dot", js.undefined)
+      inline def setDotUndefined: Self = StObject.set(x, "dot", js.undefined)
       
-      @scala.inline
-      def setExtglob(value: Boolean): Self = StObject.set(x, "extglob", value.asInstanceOf[js.Any])
+      inline def setExtglob(value: Boolean): Self = StObject.set(x, "extglob", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtglobUndefined: Self = StObject.set(x, "extglob", js.undefined)
+      inline def setExtglobUndefined: Self = StObject.set(x, "extglob", js.undefined)
       
-      @scala.inline
-      def setFollowSymbolicLinks(value: Boolean): Self = StObject.set(x, "followSymbolicLinks", value.asInstanceOf[js.Any])
+      inline def setFollowSymbolicLinks(value: Boolean): Self = StObject.set(x, "followSymbolicLinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowSymbolicLinksUndefined: Self = StObject.set(x, "followSymbolicLinks", js.undefined)
+      inline def setFollowSymbolicLinksUndefined: Self = StObject.set(x, "followSymbolicLinks", js.undefined)
       
-      @scala.inline
-      def setFs(value: PartialFileSystemAdapter): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+      inline def setFs(value: PartialFileSystemAdapter): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
+      inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
       
-      @scala.inline
-      def setGlobstar(value: Boolean): Self = StObject.set(x, "globstar", value.asInstanceOf[js.Any])
+      inline def setGlobstar(value: Boolean): Self = StObject.set(x, "globstar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobstarUndefined: Self = StObject.set(x, "globstar", js.undefined)
+      inline def setGlobstarUndefined: Self = StObject.set(x, "globstar", js.undefined)
       
-      @scala.inline
-      def setIgnore(value: js.Array[Pattern]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: js.Array[Pattern]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      @scala.inline
-      def setIgnoreVarargs(value: Pattern*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: Pattern*): Self = StObject.set(x, "ignore", js.Array(value :_*))
       
-      @scala.inline
-      def setMarkDirectories(value: Boolean): Self = StObject.set(x, "markDirectories", value.asInstanceOf[js.Any])
+      inline def setMarkDirectories(value: Boolean): Self = StObject.set(x, "markDirectories", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkDirectoriesUndefined: Self = StObject.set(x, "markDirectories", js.undefined)
+      inline def setMarkDirectoriesUndefined: Self = StObject.set(x, "markDirectories", js.undefined)
       
-      @scala.inline
-      def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
+      inline def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
+      inline def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
       
-      @scala.inline
-      def setOnlyDirectories(value: Boolean): Self = StObject.set(x, "onlyDirectories", value.asInstanceOf[js.Any])
+      inline def setOnlyDirectories(value: Boolean): Self = StObject.set(x, "onlyDirectories", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnlyDirectoriesUndefined: Self = StObject.set(x, "onlyDirectories", js.undefined)
+      inline def setOnlyDirectoriesUndefined: Self = StObject.set(x, "onlyDirectories", js.undefined)
       
-      @scala.inline
-      def setOnlyFiles(value: Boolean): Self = StObject.set(x, "onlyFiles", value.asInstanceOf[js.Any])
+      inline def setOnlyFiles(value: Boolean): Self = StObject.set(x, "onlyFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnlyFilesUndefined: Self = StObject.set(x, "onlyFiles", js.undefined)
+      inline def setOnlyFilesUndefined: Self = StObject.set(x, "onlyFiles", js.undefined)
       
-      @scala.inline
-      def setStats(value: Boolean): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+      inline def setStats(value: Boolean): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
+      inline def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
       
-      @scala.inline
-      def setSuppressErrors(value: Boolean): Self = StObject.set(x, "suppressErrors", value.asInstanceOf[js.Any])
+      inline def setSuppressErrors(value: Boolean): Self = StObject.set(x, "suppressErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressErrorsUndefined: Self = StObject.set(x, "suppressErrors", js.undefined)
+      inline def setSuppressErrorsUndefined: Self = StObject.set(x, "suppressErrors", js.undefined)
       
-      @scala.inline
-      def setThrowErrorOnBrokenSymbolicLink(value: Boolean): Self = StObject.set(x, "throwErrorOnBrokenSymbolicLink", value.asInstanceOf[js.Any])
+      inline def setThrowErrorOnBrokenSymbolicLink(value: Boolean): Self = StObject.set(x, "throwErrorOnBrokenSymbolicLink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrowErrorOnBrokenSymbolicLinkUndefined: Self = StObject.set(x, "throwErrorOnBrokenSymbolicLink", js.undefined)
+      inline def setThrowErrorOnBrokenSymbolicLinkUndefined: Self = StObject.set(x, "throwErrorOnBrokenSymbolicLink", js.undefined)
       
-      @scala.inline
-      def setUnique(value: Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
+      inline def setUnique(value: Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
+      inline def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
     }
   }
   
   trait Settings extends StObject {
     
-    var _getFileSystemMethods: js.Any
+    /* private */ var _getFileSystemMethods: js.Any
     
-    var _getValue: js.Any
+    /* private */ var _getValue: js.Any
     
-    val _options: js.Any
+    /* private */ val _options: js.Any
     
     val absolute: Boolean
     
@@ -443,8 +398,7 @@ object settingsMod {
   }
   object Settings {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _getFileSystemMethods: js.Any,
       _getValue: js.Any,
       _options: js.Any,
@@ -474,83 +428,57 @@ object settingsMod {
       __obj.asInstanceOf[Settings]
     }
     
-    @scala.inline
-    implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
+    extension [Self <: Settings](x: Self) {
       
-      @scala.inline
-      def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
+      inline def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseNameMatch(value: Boolean): Self = StObject.set(x, "baseNameMatch", value.asInstanceOf[js.Any])
+      inline def setBaseNameMatch(value: Boolean): Self = StObject.set(x, "baseNameMatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBraceExpansion(value: Boolean): Self = StObject.set(x, "braceExpansion", value.asInstanceOf[js.Any])
+      inline def setBraceExpansion(value: Boolean): Self = StObject.set(x, "braceExpansion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaseSensitiveMatch(value: Boolean): Self = StObject.set(x, "caseSensitiveMatch", value.asInstanceOf[js.Any])
+      inline def setCaseSensitiveMatch(value: Boolean): Self = StObject.set(x, "caseSensitiveMatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
+      inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeep(value: Double): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
+      inline def setDeep(value: Double): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDot(value: Boolean): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
+      inline def setDot(value: Boolean): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtglob(value: Boolean): Self = StObject.set(x, "extglob", value.asInstanceOf[js.Any])
+      inline def setExtglob(value: Boolean): Self = StObject.set(x, "extglob", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowSymbolicLinks(value: Boolean): Self = StObject.set(x, "followSymbolicLinks", value.asInstanceOf[js.Any])
+      inline def setFollowSymbolicLinks(value: Boolean): Self = StObject.set(x, "followSymbolicLinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFs(value: FileSystemAdapter): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+      inline def setFs(value: FileSystemAdapter): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobstar(value: Boolean): Self = StObject.set(x, "globstar", value.asInstanceOf[js.Any])
+      inline def setGlobstar(value: Boolean): Self = StObject.set(x, "globstar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnore(value: js.Array[Pattern]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: js.Array[Pattern]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreVarargs(value: Pattern*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: Pattern*): Self = StObject.set(x, "ignore", js.Array(value :_*))
       
-      @scala.inline
-      def setMarkDirectories(value: Boolean): Self = StObject.set(x, "markDirectories", value.asInstanceOf[js.Any])
+      inline def setMarkDirectories(value: Boolean): Self = StObject.set(x, "markDirectories", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
+      inline def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnlyDirectories(value: Boolean): Self = StObject.set(x, "onlyDirectories", value.asInstanceOf[js.Any])
+      inline def setOnlyDirectories(value: Boolean): Self = StObject.set(x, "onlyDirectories", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnlyFiles(value: Boolean): Self = StObject.set(x, "onlyFiles", value.asInstanceOf[js.Any])
+      inline def setOnlyFiles(value: Boolean): Self = StObject.set(x, "onlyFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStats(value: Boolean): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+      inline def setStats(value: Boolean): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressErrors(value: Boolean): Self = StObject.set(x, "suppressErrors", value.asInstanceOf[js.Any])
+      inline def setSuppressErrors(value: Boolean): Self = StObject.set(x, "suppressErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrowErrorOnBrokenSymbolicLink(value: Boolean): Self = StObject.set(x, "throwErrorOnBrokenSymbolicLink", value.asInstanceOf[js.Any])
+      inline def setThrowErrorOnBrokenSymbolicLink(value: Boolean): Self = StObject.set(x, "throwErrorOnBrokenSymbolicLink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnique(value: Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
+      inline def setUnique(value: Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_getFileSystemMethods(value: js.Any): Self = StObject.set(x, "_getFileSystemMethods", value.asInstanceOf[js.Any])
+      inline def set_getFileSystemMethods(value: js.Any): Self = StObject.set(x, "_getFileSystemMethods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_getValue(value: js.Any): Self = StObject.set(x, "_getValue", value.asInstanceOf[js.Any])
+      inline def set_getValue(value: js.Any): Self = StObject.set(x, "_getValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_options(value: js.Any): Self = StObject.set(x, "_options", value.asInstanceOf[js.Any])
+      inline def set_options(value: js.Any): Self = StObject.set(x, "_options", value.asInstanceOf[js.Any])
     }
   }
 }

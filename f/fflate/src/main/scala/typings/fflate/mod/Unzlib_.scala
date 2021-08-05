@@ -24,7 +24,7 @@ class Unzlib_ () extends StObject {
   @JSName("ondata")
   var ondata_Original: FlateStreamHandler = js.native
   
-  var p: js.Any = js.native
+  /* private */ var p: js.Any = js.native
   
   /**
     * Pushes a chunk to be unzlibbed
@@ -34,5 +34,5 @@ class Unzlib_ () extends StObject {
   def push(chunk: Uint8Array): Unit = js.native
   def push(chunk: Uint8Array, `final`: Boolean): Unit = js.native
   
-  var v: js.Any = js.native
+  /* private */ var v: js.Any = js.native
 }

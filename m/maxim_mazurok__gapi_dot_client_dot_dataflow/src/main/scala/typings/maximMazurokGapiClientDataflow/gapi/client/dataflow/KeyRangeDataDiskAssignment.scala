@@ -20,31 +20,23 @@ trait KeyRangeDataDiskAssignment extends StObject {
 }
 object KeyRangeDataDiskAssignment {
   
-  @scala.inline
-  def apply(): KeyRangeDataDiskAssignment = {
+  inline def apply(): KeyRangeDataDiskAssignment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KeyRangeDataDiskAssignment]
   }
   
-  @scala.inline
-  implicit class KeyRangeDataDiskAssignmentMutableBuilder[Self <: KeyRangeDataDiskAssignment] (val x: Self) extends AnyVal {
+  extension [Self <: KeyRangeDataDiskAssignment](x: Self) {
     
-    @scala.inline
-    def setDataDisk(value: String): Self = StObject.set(x, "dataDisk", value.asInstanceOf[js.Any])
+    inline def setDataDisk(value: String): Self = StObject.set(x, "dataDisk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataDiskUndefined: Self = StObject.set(x, "dataDisk", js.undefined)
+    inline def setDataDiskUndefined: Self = StObject.set(x, "dataDisk", js.undefined)
     
-    @scala.inline
-    def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    @scala.inline
-    def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

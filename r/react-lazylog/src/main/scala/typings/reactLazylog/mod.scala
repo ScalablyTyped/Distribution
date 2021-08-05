@@ -33,8 +33,7 @@ object mod {
     @JSImport("react-lazylog", "LazyLog.defaultProps")
     @js.native
     def defaultProps: PartialLazyLogProps = js.native
-    @scala.inline
-    def defaultProps_=(x: PartialLazyLogProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PartialLazyLogProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-lazylog", "ScrollFollow")

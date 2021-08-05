@@ -94,95 +94,67 @@ trait ListItemProperties extends StObject {
 }
 object ListItemProperties {
   
-  @scala.inline
-  def apply(): ListItemProperties = {
+  inline def apply(): ListItemProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListItemProperties]
   }
   
-  @scala.inline
-  implicit class ListItemPropertiesMutableBuilder[Self <: ListItemProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ListItemProperties](x: Self) {
     
-    @scala.inline
-    def setActionsOpen(value: Boolean): Self = StObject.set(x, "actionsOpen", value.asInstanceOf[js.Any])
+    inline def setActionsOpen(value: Boolean): Self = StObject.set(x, "actionsOpen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsOpenUndefined: Self = StObject.set(x, "actionsOpen", js.undefined)
+    inline def setActionsOpenUndefined: Self = StObject.set(x, "actionsOpen", js.undefined)
     
-    @scala.inline
-    def setActionsSections(
+    inline def setActionsSections(
       value: (CollectionProperties[CollectionProperties[ActionButtonProperties | ActionToggleProperties]]) | js.Array[js.Array[js.Any]]
     ): Self = StObject.set(x, "actionsSections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsSectionsUndefined: Self = StObject.set(x, "actionsSections", js.undefined)
+    inline def setActionsSectionsUndefined: Self = StObject.set(x, "actionsSections", js.undefined)
     
-    @scala.inline
-    def setActionsSectionsVarargs(
+    inline def setActionsSectionsVarargs(
       value: (js.Array[js.Any] | (CollectionProperties[ActionButtonProperties | ActionToggleProperties]))*
     ): Self = StObject.set(x, "actionsSections", js.Array(value :_*))
     
-    @scala.inline
-    def setChildren(value: CollectionProperties[ListItemProperties]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: CollectionProperties[ListItemProperties]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenSortable(value: Boolean): Self = StObject.set(x, "childrenSortable", value.asInstanceOf[js.Any])
+    inline def setChildrenSortable(value: Boolean): Self = StObject.set(x, "childrenSortable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenSortableUndefined: Self = StObject.set(x, "childrenSortable", js.undefined)
+    inline def setChildrenSortableUndefined: Self = StObject.set(x, "childrenSortable", js.undefined)
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setChildrenVarargs(value: ListItemProperties*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: ListItemProperties*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setLayer(value: LayerProperties): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: LayerProperties): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
+    inline def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
     
-    @scala.inline
-    def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+    inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     
-    @scala.inline
-    def setPanel(value: ListItemPanel): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
+    inline def setPanel(value: ListItemPanel): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPanelUndefined: Self = StObject.set(x, "panel", js.undefined)
+    inline def setPanelUndefined: Self = StObject.set(x, "panel", js.undefined)
     
-    @scala.inline
-    def setParent(value: ListItemProperties): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: ListItemProperties): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
-    @scala.inline
-    def setSortable(value: Boolean): Self = StObject.set(x, "sortable", value.asInstanceOf[js.Any])
+    inline def setSortable(value: Boolean): Self = StObject.set(x, "sortable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortableUndefined: Self = StObject.set(x, "sortable", js.undefined)
+    inline def setSortableUndefined: Self = StObject.set(x, "sortable", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

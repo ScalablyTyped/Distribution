@@ -18,28 +18,21 @@ trait ListAccountsForParentResponse extends StObject {
 }
 object ListAccountsForParentResponse {
   
-  @scala.inline
-  def apply(): ListAccountsForParentResponse = {
+  inline def apply(): ListAccountsForParentResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListAccountsForParentResponse]
   }
   
-  @scala.inline
-  implicit class ListAccountsForParentResponseMutableBuilder[Self <: ListAccountsForParentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListAccountsForParentResponse](x: Self) {
     
-    @scala.inline
-    def setAccounts(value: Accounts): Self = StObject.set(x, "Accounts", value.asInstanceOf[js.Any])
+    inline def setAccounts(value: Accounts): Self = StObject.set(x, "Accounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountsUndefined: Self = StObject.set(x, "Accounts", js.undefined)
+    inline def setAccountsUndefined: Self = StObject.set(x, "Accounts", js.undefined)
     
-    @scala.inline
-    def setAccountsVarargs(value: Account*): Self = StObject.set(x, "Accounts", js.Array(value :_*))
+    inline def setAccountsVarargs(value: Account*): Self = StObject.set(x, "Accounts", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

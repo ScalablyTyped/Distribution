@@ -23,25 +23,19 @@ trait UpdateAccessKeyRequest extends StObject {
 }
 object UpdateAccessKeyRequest {
   
-  @scala.inline
-  def apply(AccessKeyId: accessKeyIdType, Status: statusType): UpdateAccessKeyRequest = {
+  inline def apply(AccessKeyId: accessKeyIdType, Status: statusType): UpdateAccessKeyRequest = {
     val __obj = js.Dynamic.literal(AccessKeyId = AccessKeyId.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAccessKeyRequest]
   }
   
-  @scala.inline
-  implicit class UpdateAccessKeyRequestMutableBuilder[Self <: UpdateAccessKeyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateAccessKeyRequest](x: Self) {
     
-    @scala.inline
-    def setAccessKeyId(value: accessKeyIdType): Self = StObject.set(x, "AccessKeyId", value.asInstanceOf[js.Any])
+    inline def setAccessKeyId(value: accessKeyIdType): Self = StObject.set(x, "AccessKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: statusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: statusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserName(value: existingUserNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: existingUserNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
+    inline def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
   }
 }

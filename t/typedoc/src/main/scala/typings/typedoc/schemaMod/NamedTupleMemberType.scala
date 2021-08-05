@@ -18,8 +18,7 @@ trait NamedTupleMemberType extends StObject {
 }
 object NamedTupleMemberType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     element: ModelToObject[typings.typedoc.typesAbstractMod.Type],
     isOptional: Boolean,
     name: String,
@@ -30,25 +29,18 @@ object NamedTupleMemberType {
     __obj.asInstanceOf[NamedTupleMemberType]
   }
   
-  @scala.inline
-  implicit class NamedTupleMemberTypeMutableBuilder[Self <: NamedTupleMemberType] (val x: Self) extends AnyVal {
+  extension [Self <: NamedTupleMemberType](x: Self) {
     
-    @scala.inline
-    def setElement(value: ModelToObject[typings.typedoc.typesAbstractMod.Type]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: ModelToObject[typings.typedoc.typesAbstractMod.Type]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "element", js.Array(value :_*))
+    inline def setElementVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "element", js.Array(value :_*))
     
-    @scala.inline
-    def setIsOptional(value: Boolean): Self = StObject.set(x, "isOptional", value.asInstanceOf[js.Any])
+    inline def setIsOptional(value: Boolean): Self = StObject.set(x, "isOptional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: (ModelToObject[/* "named-tuple-member" */ String]) | (/* "named-tuple-member" */ String)): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: (ModelToObject[/* "named-tuple-member" */ String]) | (/* "named-tuple-member" */ String)): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
   }
 }

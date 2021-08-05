@@ -18,28 +18,21 @@ trait ListIPSetsResponse extends StObject {
 }
 object ListIPSetsResponse {
   
-  @scala.inline
-  def apply(): ListIPSetsResponse = {
+  inline def apply(): ListIPSetsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListIPSetsResponse]
   }
   
-  @scala.inline
-  implicit class ListIPSetsResponseMutableBuilder[Self <: ListIPSetsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListIPSetsResponse](x: Self) {
     
-    @scala.inline
-    def setIPSets(value: IPSetSummaries): Self = StObject.set(x, "IPSets", value.asInstanceOf[js.Any])
+    inline def setIPSets(value: IPSetSummaries): Self = StObject.set(x, "IPSets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIPSetsUndefined: Self = StObject.set(x, "IPSets", js.undefined)
+    inline def setIPSetsUndefined: Self = StObject.set(x, "IPSets", js.undefined)
     
-    @scala.inline
-    def setIPSetsVarargs(value: IPSetSummary*): Self = StObject.set(x, "IPSets", js.Array(value :_*))
+    inline def setIPSetsVarargs(value: IPSetSummary*): Self = StObject.set(x, "IPSets", js.Array(value :_*))
     
-    @scala.inline
-    def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
+    inline def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
+    inline def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
   }
 }

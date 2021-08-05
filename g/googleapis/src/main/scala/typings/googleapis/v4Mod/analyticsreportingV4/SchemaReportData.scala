@@ -79,85 +79,59 @@ trait SchemaReportData extends StObject {
 }
 object SchemaReportData {
   
-  @scala.inline
-  def apply(): SchemaReportData = {
+  inline def apply(): SchemaReportData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaReportData]
   }
   
-  @scala.inline
-  implicit class SchemaReportDataMutableBuilder[Self <: SchemaReportData] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaReportData](x: Self) {
     
-    @scala.inline
-    def setDataLastRefreshed(value: String): Self = StObject.set(x, "dataLastRefreshed", value.asInstanceOf[js.Any])
+    inline def setDataLastRefreshed(value: String): Self = StObject.set(x, "dataLastRefreshed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataLastRefreshedUndefined: Self = StObject.set(x, "dataLastRefreshed", js.undefined)
+    inline def setDataLastRefreshedUndefined: Self = StObject.set(x, "dataLastRefreshed", js.undefined)
     
-    @scala.inline
-    def setIsDataGolden(value: Boolean): Self = StObject.set(x, "isDataGolden", value.asInstanceOf[js.Any])
+    inline def setIsDataGolden(value: Boolean): Self = StObject.set(x, "isDataGolden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDataGoldenUndefined: Self = StObject.set(x, "isDataGolden", js.undefined)
+    inline def setIsDataGoldenUndefined: Self = StObject.set(x, "isDataGolden", js.undefined)
     
-    @scala.inline
-    def setMaximums(value: js.Array[SchemaDateRangeValues]): Self = StObject.set(x, "maximums", value.asInstanceOf[js.Any])
+    inline def setMaximums(value: js.Array[SchemaDateRangeValues]): Self = StObject.set(x, "maximums", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumsUndefined: Self = StObject.set(x, "maximums", js.undefined)
+    inline def setMaximumsUndefined: Self = StObject.set(x, "maximums", js.undefined)
     
-    @scala.inline
-    def setMaximumsVarargs(value: SchemaDateRangeValues*): Self = StObject.set(x, "maximums", js.Array(value :_*))
+    inline def setMaximumsVarargs(value: SchemaDateRangeValues*): Self = StObject.set(x, "maximums", js.Array(value :_*))
     
-    @scala.inline
-    def setMinimums(value: js.Array[SchemaDateRangeValues]): Self = StObject.set(x, "minimums", value.asInstanceOf[js.Any])
+    inline def setMinimums(value: js.Array[SchemaDateRangeValues]): Self = StObject.set(x, "minimums", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumsUndefined: Self = StObject.set(x, "minimums", js.undefined)
+    inline def setMinimumsUndefined: Self = StObject.set(x, "minimums", js.undefined)
     
-    @scala.inline
-    def setMinimumsVarargs(value: SchemaDateRangeValues*): Self = StObject.set(x, "minimums", js.Array(value :_*))
+    inline def setMinimumsVarargs(value: SchemaDateRangeValues*): Self = StObject.set(x, "minimums", js.Array(value :_*))
     
-    @scala.inline
-    def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
+    inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
+    inline def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
     
-    @scala.inline
-    def setRows(value: js.Array[SchemaReportRow]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[SchemaReportRow]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    @scala.inline
-    def setRowsVarargs(value: SchemaReportRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: SchemaReportRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
     
-    @scala.inline
-    def setSamplesReadCounts(value: js.Array[String]): Self = StObject.set(x, "samplesReadCounts", value.asInstanceOf[js.Any])
+    inline def setSamplesReadCounts(value: js.Array[String]): Self = StObject.set(x, "samplesReadCounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSamplesReadCountsUndefined: Self = StObject.set(x, "samplesReadCounts", js.undefined)
+    inline def setSamplesReadCountsUndefined: Self = StObject.set(x, "samplesReadCounts", js.undefined)
     
-    @scala.inline
-    def setSamplesReadCountsVarargs(value: String*): Self = StObject.set(x, "samplesReadCounts", js.Array(value :_*))
+    inline def setSamplesReadCountsVarargs(value: String*): Self = StObject.set(x, "samplesReadCounts", js.Array(value :_*))
     
-    @scala.inline
-    def setSamplingSpaceSizes(value: js.Array[String]): Self = StObject.set(x, "samplingSpaceSizes", value.asInstanceOf[js.Any])
+    inline def setSamplingSpaceSizes(value: js.Array[String]): Self = StObject.set(x, "samplingSpaceSizes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSamplingSpaceSizesUndefined: Self = StObject.set(x, "samplingSpaceSizes", js.undefined)
+    inline def setSamplingSpaceSizesUndefined: Self = StObject.set(x, "samplingSpaceSizes", js.undefined)
     
-    @scala.inline
-    def setSamplingSpaceSizesVarargs(value: String*): Self = StObject.set(x, "samplingSpaceSizes", js.Array(value :_*))
+    inline def setSamplingSpaceSizesVarargs(value: String*): Self = StObject.set(x, "samplingSpaceSizes", js.Array(value :_*))
     
-    @scala.inline
-    def setTotals(value: js.Array[SchemaDateRangeValues]): Self = StObject.set(x, "totals", value.asInstanceOf[js.Any])
+    inline def setTotals(value: js.Array[SchemaDateRangeValues]): Self = StObject.set(x, "totals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalsUndefined: Self = StObject.set(x, "totals", js.undefined)
+    inline def setTotalsUndefined: Self = StObject.set(x, "totals", js.undefined)
     
-    @scala.inline
-    def setTotalsVarargs(value: SchemaDateRangeValues*): Self = StObject.set(x, "totals", js.Array(value :_*))
+    inline def setTotalsVarargs(value: SchemaDateRangeValues*): Self = StObject.set(x, "totals", js.Array(value :_*))
   }
 }

@@ -16,17 +16,14 @@ trait IParams extends StObject {
 }
 object IParams {
   
-  @scala.inline
-  def apply(`type`: Double): IParams = {
+  inline def apply(`type`: Double): IParams = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IParams]
   }
   
-  @scala.inline
-  implicit class IParamsMutableBuilder[Self <: IParams] (val x: Self) extends AnyVal {
+  extension [Self <: IParams](x: Self) {
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

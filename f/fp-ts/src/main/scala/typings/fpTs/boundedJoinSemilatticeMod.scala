@@ -15,17 +15,14 @@ object boundedJoinSemilatticeMod {
   }
   object BoundedJoinSemilattice {
     
-    @scala.inline
-    def apply[A](join: (A, A) => A, zero: A): BoundedJoinSemilattice[A] = {
+    inline def apply[A](join: (A, A) => A, zero: A): BoundedJoinSemilattice[A] = {
       val __obj = js.Dynamic.literal(join = js.Any.fromFunction2(join), zero = zero.asInstanceOf[js.Any])
       __obj.asInstanceOf[BoundedJoinSemilattice[A]]
     }
     
-    @scala.inline
-    implicit class BoundedJoinSemilatticeMutableBuilder[Self <: BoundedJoinSemilattice[?], A] (val x: Self & BoundedJoinSemilattice[A]) extends AnyVal {
+    extension [Self <: BoundedJoinSemilattice[?], A](x: Self & BoundedJoinSemilattice[A]) {
       
-      @scala.inline
-      def setZero(value: A): Self = StObject.set(x, "zero", value.asInstanceOf[js.Any])
+      inline def setZero(value: A): Self = StObject.set(x, "zero", value.asInstanceOf[js.Any])
     }
   }
 }

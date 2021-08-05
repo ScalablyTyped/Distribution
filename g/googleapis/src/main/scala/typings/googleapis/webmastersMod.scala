@@ -36,8 +36,7 @@ object webmastersMod {
     @JSImport("googleapis/build/src/apis/webmasters", "VERSIONS.v3")
     @js.native
     def v3: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Webmasters] = js.native
-    @scala.inline
-    def v3_=(
+    inline def v3_=(
       x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Webmasters]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v3")(x.asInstanceOf[js.Any])
   }
@@ -75,8 +74,7 @@ object webmastersMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -120,9 +118,7 @@ object webmastersMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def webmasters(options: Options): Webmasters = ^.asInstanceOf[js.Dynamic].applyDynamic("webmasters")(options.asInstanceOf[js.Any]).asInstanceOf[Webmasters]
+  inline def webmasters(options: Options): Webmasters = ^.asInstanceOf[js.Dynamic].applyDynamic("webmasters")(options.asInstanceOf[js.Any]).asInstanceOf[Webmasters]
   
-  @scala.inline
-  def webmasters_v3(version: v3): Webmasters = ^.asInstanceOf[js.Dynamic].applyDynamic("webmasters")(version.asInstanceOf[js.Any]).asInstanceOf[Webmasters]
+  inline def webmasters_v3(version: v3): Webmasters = ^.asInstanceOf[js.Dynamic].applyDynamic("webmasters")(version.asInstanceOf[js.Any]).asInstanceOf[Webmasters]
 }

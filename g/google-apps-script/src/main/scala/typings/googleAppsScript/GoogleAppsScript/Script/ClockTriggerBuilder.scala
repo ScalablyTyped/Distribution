@@ -40,8 +40,7 @@ trait ClockTriggerBuilder extends StObject {
 }
 object ClockTriggerBuilder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     after: Integer => ClockTriggerBuilder,
     at: Date => ClockTriggerBuilder,
     atDate: (Integer, Integer, Integer) => ClockTriggerBuilder,
@@ -60,46 +59,32 @@ object ClockTriggerBuilder {
     __obj.asInstanceOf[ClockTriggerBuilder]
   }
   
-  @scala.inline
-  implicit class ClockTriggerBuilderMutableBuilder[Self <: ClockTriggerBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: ClockTriggerBuilder](x: Self) {
     
-    @scala.inline
-    def setAfter(value: Integer => ClockTriggerBuilder): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
+    inline def setAfter(value: Integer => ClockTriggerBuilder): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAt(value: Date => ClockTriggerBuilder): Self = StObject.set(x, "at", js.Any.fromFunction1(value))
+    inline def setAt(value: Date => ClockTriggerBuilder): Self = StObject.set(x, "at", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAtDate(value: (Integer, Integer, Integer) => ClockTriggerBuilder): Self = StObject.set(x, "atDate", js.Any.fromFunction3(value))
+    inline def setAtDate(value: (Integer, Integer, Integer) => ClockTriggerBuilder): Self = StObject.set(x, "atDate", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAtHour(value: Integer => ClockTriggerBuilder): Self = StObject.set(x, "atHour", js.Any.fromFunction1(value))
+    inline def setAtHour(value: Integer => ClockTriggerBuilder): Self = StObject.set(x, "atHour", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreate(value: () => Trigger): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
+    inline def setCreate(value: () => Trigger): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEveryDays(value: Integer => ClockTriggerBuilder): Self = StObject.set(x, "everyDays", js.Any.fromFunction1(value))
+    inline def setEveryDays(value: Integer => ClockTriggerBuilder): Self = StObject.set(x, "everyDays", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEveryHours(value: Integer => ClockTriggerBuilder): Self = StObject.set(x, "everyHours", js.Any.fromFunction1(value))
+    inline def setEveryHours(value: Integer => ClockTriggerBuilder): Self = StObject.set(x, "everyHours", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEveryMinutes(value: Integer => ClockTriggerBuilder): Self = StObject.set(x, "everyMinutes", js.Any.fromFunction1(value))
+    inline def setEveryMinutes(value: Integer => ClockTriggerBuilder): Self = StObject.set(x, "everyMinutes", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEveryWeeks(value: Integer => ClockTriggerBuilder): Self = StObject.set(x, "everyWeeks", js.Any.fromFunction1(value))
+    inline def setEveryWeeks(value: Integer => ClockTriggerBuilder): Self = StObject.set(x, "everyWeeks", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInTimezone(value: String => ClockTriggerBuilder): Self = StObject.set(x, "inTimezone", js.Any.fromFunction1(value))
+    inline def setInTimezone(value: String => ClockTriggerBuilder): Self = StObject.set(x, "inTimezone", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNearMinute(value: Integer => ClockTriggerBuilder): Self = StObject.set(x, "nearMinute", js.Any.fromFunction1(value))
+    inline def setNearMinute(value: Integer => ClockTriggerBuilder): Self = StObject.set(x, "nearMinute", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnMonthDay(value: Integer => ClockTriggerBuilder): Self = StObject.set(x, "onMonthDay", js.Any.fromFunction1(value))
+    inline def setOnMonthDay(value: Integer => ClockTriggerBuilder): Self = StObject.set(x, "onMonthDay", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnWeekDay(value: Weekday => ClockTriggerBuilder): Self = StObject.set(x, "onWeekDay", js.Any.fromFunction1(value))
+    inline def setOnWeekDay(value: Weekday => ClockTriggerBuilder): Self = StObject.set(x, "onWeekDay", js.Any.fromFunction1(value))
   }
 }

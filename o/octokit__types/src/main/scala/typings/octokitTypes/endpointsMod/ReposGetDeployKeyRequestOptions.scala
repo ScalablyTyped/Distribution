@@ -20,25 +20,19 @@ trait ReposGetDeployKeyRequestOptions extends StObject {
 }
 object ReposGetDeployKeyRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): ReposGetDeployKeyRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): ReposGetDeployKeyRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "GET", request = request.asInstanceOf[js.Any], url = "/repos/:owner/:repo/keys/:key_id")
     __obj.asInstanceOf[ReposGetDeployKeyRequestOptions]
   }
   
-  @scala.inline
-  implicit class ReposGetDeployKeyRequestOptionsMutableBuilder[Self <: ReposGetDeployKeyRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ReposGetDeployKeyRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashreposSlashColonownerSlashColonrepoSlashkeysSlashColonkey_id): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashreposSlashColonownerSlashColonrepoSlashkeysSlashColonkey_id): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

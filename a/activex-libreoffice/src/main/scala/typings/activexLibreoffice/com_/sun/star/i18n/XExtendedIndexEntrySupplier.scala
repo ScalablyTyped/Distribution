@@ -76,8 +76,7 @@ trait XExtendedIndexEntrySupplier
 }
 object XExtendedIndexEntrySupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     LocaleList: SafeArray[Locale],
     acquire: () => Unit,
     compareIndexEntry: (String, String, Locale, String, String, Locale) => Double,
@@ -96,31 +95,22 @@ object XExtendedIndexEntrySupplier {
     __obj.asInstanceOf[XExtendedIndexEntrySupplier]
   }
   
-  @scala.inline
-  implicit class XExtendedIndexEntrySupplierMutableBuilder[Self <: XExtendedIndexEntrySupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XExtendedIndexEntrySupplier](x: Self) {
     
-    @scala.inline
-    def setCompareIndexEntry(value: (String, String, Locale, String, String, Locale) => Double): Self = StObject.set(x, "compareIndexEntry", js.Any.fromFunction6(value))
+    inline def setCompareIndexEntry(value: (String, String, Locale, String, String, Locale) => Double): Self = StObject.set(x, "compareIndexEntry", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setGetAlgorithmList(value: Locale => SafeArray[String]): Self = StObject.set(x, "getAlgorithmList", js.Any.fromFunction1(value))
+    inline def setGetAlgorithmList(value: Locale => SafeArray[String]): Self = StObject.set(x, "getAlgorithmList", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetIndexKey(value: (String, String, Locale) => String): Self = StObject.set(x, "getIndexKey", js.Any.fromFunction3(value))
+    inline def setGetIndexKey(value: (String, String, Locale) => String): Self = StObject.set(x, "getIndexKey", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetLocaleList(value: () => SafeArray[Locale]): Self = StObject.set(x, "getLocaleList", js.Any.fromFunction0(value))
+    inline def setGetLocaleList(value: () => SafeArray[Locale]): Self = StObject.set(x, "getLocaleList", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPhoneticCandidate(value: (String, Locale) => String): Self = StObject.set(x, "getPhoneticCandidate", js.Any.fromFunction2(value))
+    inline def setGetPhoneticCandidate(value: (String, Locale) => String): Self = StObject.set(x, "getPhoneticCandidate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLoadAlgorithm(value: (Locale, String, Double) => Boolean): Self = StObject.set(x, "loadAlgorithm", js.Any.fromFunction3(value))
+    inline def setLoadAlgorithm(value: (Locale, String, Double) => Boolean): Self = StObject.set(x, "loadAlgorithm", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setLocaleList(value: SafeArray[Locale]): Self = StObject.set(x, "LocaleList", value.asInstanceOf[js.Any])
+    inline def setLocaleList(value: SafeArray[Locale]): Self = StObject.set(x, "LocaleList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsePhoneticEntry(value: Locale => Boolean): Self = StObject.set(x, "usePhoneticEntry", js.Any.fromFunction1(value))
+    inline def setUsePhoneticEntry(value: Locale => Boolean): Self = StObject.set(x, "usePhoneticEntry", js.Any.fromFunction1(value))
   }
 }

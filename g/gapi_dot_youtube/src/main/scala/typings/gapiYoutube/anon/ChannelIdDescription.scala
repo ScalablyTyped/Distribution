@@ -17,8 +17,7 @@ trait ChannelIdDescription extends StObject {
 }
 object ChannelIdDescription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     channelId: String,
     description: String,
     thumbnails: GoogleApiYouTubeThumbnailResource,
@@ -28,19 +27,14 @@ object ChannelIdDescription {
     __obj.asInstanceOf[ChannelIdDescription]
   }
   
-  @scala.inline
-  implicit class ChannelIdDescriptionMutableBuilder[Self <: ChannelIdDescription] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelIdDescription](x: Self) {
     
-    @scala.inline
-    def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
+    inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnails(value: GoogleApiYouTubeThumbnailResource): Self = StObject.set(x, "thumbnails", value.asInstanceOf[js.Any])
+    inline def setThumbnails(value: GoogleApiYouTubeThumbnailResource): Self = StObject.set(x, "thumbnails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

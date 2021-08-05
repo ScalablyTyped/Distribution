@@ -95,7 +95,7 @@ object typesMod {
       * Adding private keyword works, but the annotation is stripped away in declaration.
       * Turns out if we use an empty string, it doesn't show up in intelliSense.
       */
-    @JSName("")
+    /* protected */ @JSName("")
     var _empty: js.UndefOr[AB[A, B, C]] = js.native
   }
   
@@ -121,29 +121,22 @@ object typesMod {
   }
   object DefaultNavigatorOptions {
     
-    @scala.inline
-    def apply[ScreenOptions /* <: js.Object */, ParamList /* <: ParamListBase */](): DefaultNavigatorOptions[ScreenOptions, ParamList] = {
+    inline def apply[ScreenOptions /* <: js.Object */, ParamList /* <: ParamListBase */](): DefaultNavigatorOptions[ScreenOptions, ParamList] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DefaultNavigatorOptions[ScreenOptions, ParamList]]
     }
     
-    @scala.inline
-    implicit class DefaultNavigatorOptionsMutableBuilder[Self <: DefaultNavigatorOptions[?, ?], ScreenOptions /* <: js.Object */, ParamList /* <: ParamListBase */] (val x: Self & (DefaultNavigatorOptions[ScreenOptions, ParamList])) extends AnyVal {
+    extension [Self <: DefaultNavigatorOptions[?, ?], ScreenOptions /* <: js.Object */, ParamList /* <: ParamListBase */](x: Self & (DefaultNavigatorOptions[ScreenOptions, ParamList])) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setScreenOptions(value: ScreenOptions | (js.Function1[/* props */ Navigation[ParamList], ScreenOptions])): Self = StObject.set(x, "screenOptions", value.asInstanceOf[js.Any])
+      inline def setScreenOptions(value: ScreenOptions | (js.Function1[/* props */ Navigation[ParamList], ScreenOptions])): Self = StObject.set(x, "screenOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenOptionsFunction1(value: /* props */ Navigation[ParamList] => ScreenOptions): Self = StObject.set(x, "screenOptions", js.Any.fromFunction1(value))
+      inline def setScreenOptionsFunction1(value: /* props */ Navigation[ParamList] => ScreenOptions): Self = StObject.set(x, "screenOptions", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setScreenOptionsUndefined: Self = StObject.set(x, "screenOptions", js.undefined)
+      inline def setScreenOptionsUndefined: Self = StObject.set(x, "screenOptions", js.undefined)
     }
   }
   
@@ -166,8 +159,7 @@ object typesMod {
   }
   object Descriptor {
     
-    @scala.inline
-    def apply[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */, State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */](
+    inline def apply[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */, State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */](
       navigation: NavigationProp[ParamList, RouteName, State, ScreenOptions, EventMap],
       options: ScreenOptions,
       render: () => Element
@@ -176,17 +168,13 @@ object typesMod {
       __obj.asInstanceOf[Descriptor[ParamList, RouteName, State, ScreenOptions, EventMap]]
     }
     
-    @scala.inline
-    implicit class DescriptorMutableBuilder[Self <: Descriptor[?, ?, ?, ?, ?], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */, State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */] (val x: Self & (Descriptor[ParamList, RouteName, State, ScreenOptions, EventMap])) extends AnyVal {
+    extension [Self <: Descriptor[?, ?, ?, ?, ?], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */, State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */](x: Self & (Descriptor[ParamList, RouteName, State, ScreenOptions, EventMap])) {
       
-      @scala.inline
-      def setNavigation(value: NavigationProp[ParamList, RouteName, State, ScreenOptions, EventMap]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
+      inline def setNavigation(value: NavigationProp[ParamList, RouteName, State, ScreenOptions, EventMap]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: ScreenOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: ScreenOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRender(value: () => Element): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
+      inline def setRender(value: () => Element): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
     }
   }
   
@@ -206,8 +194,7 @@ object typesMod {
   }
   object EventConsumer {
     
-    @scala.inline
-    def apply[EventMap /* <: EventMapBase */](
+    inline def apply[EventMap /* <: EventMapBase */](
       addListener: (js.Any, EventListenerCallback[EventMap, js.Any]) => js.Function0[Unit],
       removeListener: (js.Any, EventListenerCallback[EventMap, js.Any]) => Unit
     ): EventConsumer[EventMap] = {
@@ -215,14 +202,11 @@ object typesMod {
       __obj.asInstanceOf[EventConsumer[EventMap]]
     }
     
-    @scala.inline
-    implicit class EventConsumerMutableBuilder[Self <: EventConsumer[?], EventMap /* <: EventMapBase */] (val x: Self & EventConsumer[EventMap]) extends AnyVal {
+    extension [Self <: EventConsumer[?], EventMap /* <: EventMapBase */](x: Self & EventConsumer[EventMap]) {
       
-      @scala.inline
-      def setAddListener(value: (js.Any, EventListenerCallback[EventMap, js.Any]) => js.Function0[Unit]): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
+      inline def setAddListener(value: (js.Any, EventListenerCallback[EventMap, js.Any]) => js.Function0[Unit]): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemoveListener(value: (js.Any, EventListenerCallback[EventMap, js.Any]) => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction2(value))
+      inline def setRemoveListener(value: (js.Any, EventListenerCallback[EventMap, js.Any]) => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction2(value))
     }
   }
   
@@ -246,8 +230,7 @@ object typesMod {
   }
   object EventEmitter {
     
-    @scala.inline
-    def apply[EventMap /* <: EventMapBase */](
+    inline def apply[EventMap /* <: EventMapBase */](
       emit: (TargetTypeEventName[js.Any, EventMap]) & (js.Object | `3`) & ((`5`[EventMap, js.Any]) | (`4`[EventMap, js.Any])) => EventArg[
           js.Any, 
           /* import warning: importer.ImportType#apply Failed type conversion: EventMap[EventName]['canPreventDefault'] */ js.Any, 
@@ -258,11 +241,9 @@ object typesMod {
       __obj.asInstanceOf[EventEmitter[EventMap]]
     }
     
-    @scala.inline
-    implicit class EventEmitterMutableBuilder[Self <: EventEmitter[?], EventMap /* <: EventMapBase */] (val x: Self & EventEmitter[EventMap]) extends AnyVal {
+    extension [Self <: EventEmitter[?], EventMap /* <: EventMapBase */](x: Self & EventEmitter[EventMap]) {
       
-      @scala.inline
-      def setEmit(
+      inline def setEmit(
         value: (TargetTypeEventName[js.Any, EventMap]) & (js.Object | `3`) & ((`5`[EventMap, js.Any]) | (`4`[EventMap, js.Any])) => EventArg[
               js.Any, 
               /* import warning: importer.ImportType#apply Failed type conversion: EventMap[EventName]['canPreventDefault'] */ js.Any, 
@@ -295,26 +276,20 @@ object typesMod {
   }
   object EventMapCore {
     
-    @scala.inline
-    def apply[State /* <: NavigationState[ParamListBase] */](beforeRemove: CanPreventDefaultData, blur: Data, focus: Data, state: DataStateState[State]): EventMapCore[State] = {
+    inline def apply[State /* <: NavigationState[ParamListBase] */](beforeRemove: CanPreventDefaultData, blur: Data, focus: Data, state: DataStateState[State]): EventMapCore[State] = {
       val __obj = js.Dynamic.literal(beforeRemove = beforeRemove.asInstanceOf[js.Any], blur = blur.asInstanceOf[js.Any], focus = focus.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventMapCore[State]]
     }
     
-    @scala.inline
-    implicit class EventMapCoreMutableBuilder[Self <: EventMapCore[?], State /* <: NavigationState[ParamListBase] */] (val x: Self & EventMapCore[State]) extends AnyVal {
+    extension [Self <: EventMapCore[?], State /* <: NavigationState[ParamListBase] */](x: Self & EventMapCore[State]) {
       
-      @scala.inline
-      def setBeforeRemove(value: CanPreventDefaultData): Self = StObject.set(x, "beforeRemove", value.asInstanceOf[js.Any])
+      inline def setBeforeRemove(value: CanPreventDefaultData): Self = StObject.set(x, "beforeRemove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlur(value: Data): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
+      inline def setBlur(value: Data): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocus(value: Data): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+      inline def setFocus(value: Data): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: DataStateState[State]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: DataStateState[State]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
@@ -339,23 +314,18 @@ object typesMod {
   }
   object NavigationContainerEventMap {
     
-    @scala.inline
-    def apply(__unsafe_action__ : DataNoop, options: DataOptionsObject, state: Data9): NavigationContainerEventMap = {
+    inline def apply(__unsafe_action__ : DataNoop, options: DataOptionsObject, state: Data9): NavigationContainerEventMap = {
       val __obj = js.Dynamic.literal(__unsafe_action__ = __unsafe_action__.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[NavigationContainerEventMap]
     }
     
-    @scala.inline
-    implicit class NavigationContainerEventMapMutableBuilder[Self <: NavigationContainerEventMap] (val x: Self) extends AnyVal {
+    extension [Self <: NavigationContainerEventMap](x: Self) {
       
-      @scala.inline
-      def setOptions(value: DataOptionsObject): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: DataOptionsObject): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: Data9): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: Data9): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__unsafe_action__(value: DataNoop): Self = StObject.set(x, "__unsafe_action__", value.asInstanceOf[js.Any])
+      inline def set__unsafe_action__(value: DataNoop): Self = StObject.set(x, "__unsafe_action__", value.asInstanceOf[js.Any])
     }
   }
   
@@ -390,44 +360,32 @@ object typesMod {
   }
   object NavigationContainerProps {
     
-    @scala.inline
-    def apply(): NavigationContainerProps = {
+    inline def apply(): NavigationContainerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NavigationContainerProps]
     }
     
-    @scala.inline
-    implicit class NavigationContainerPropsMutableBuilder[Self <: NavigationContainerProps] (val x: Self) extends AnyVal {
+    extension [Self <: NavigationContainerProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setIndependent(value: Boolean): Self = StObject.set(x, "independent", value.asInstanceOf[js.Any])
+      inline def setIndependent(value: Boolean): Self = StObject.set(x, "independent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndependentUndefined: Self = StObject.set(x, "independent", js.undefined)
+      inline def setIndependentUndefined: Self = StObject.set(x, "independent", js.undefined)
       
-      @scala.inline
-      def setInitialState(value: InitialState): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
+      inline def setInitialState(value: InitialState): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
+      inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
       
-      @scala.inline
-      def setOnStateChange(value: /* state */ js.UndefOr[NavigationState[ParamListBase]] => Unit): Self = StObject.set(x, "onStateChange", js.Any.fromFunction1(value))
+      inline def setOnStateChange(value: /* state */ js.UndefOr[NavigationState[ParamListBase]] => Unit): Self = StObject.set(x, "onStateChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnStateChangeUndefined: Self = StObject.set(x, "onStateChange", js.undefined)
+      inline def setOnStateChangeUndefined: Self = StObject.set(x, "onStateChange", js.undefined)
       
-      @scala.inline
-      def setOnUnhandledAction(value: /* action */ NavigationAction => Unit): Self = StObject.set(x, "onUnhandledAction", js.Any.fromFunction1(value))
+      inline def setOnUnhandledAction(value: /* action */ NavigationAction => Unit): Self = StObject.set(x, "onUnhandledAction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnUnhandledActionUndefined: Self = StObject.set(x, "onUnhandledAction", js.undefined)
+      inline def setOnUnhandledActionUndefined: Self = StObject.set(x, "onUnhandledAction", js.undefined)
     }
   }
   
@@ -445,7 +403,7 @@ object typesMod {
       * Adding private keyword works, but the annotation is stripped away in declaration.
       * Turns out if we use an empty string, it doesn't show up in intelliSense.
       */
-    @JSName("")
+    /* protected */ @JSName("")
     var _empty: js.UndefOr[C] = js.native
     
     /**
@@ -601,7 +559,7 @@ object typesMod {
       * Adding private keyword works, but the annotation is stripped away in declaration.
       * Turns out if we use an empty string, it doesn't show up in intelliSense.
       */
-    @JSName("")
+    /* protected */ @JSName("")
     var _empty: js.UndefOr[A[ParamList]] = js.native
     
     /**
@@ -796,7 +754,7 @@ object typesMod {
       * Adding private keyword works, but the annotation is stripped away in declaration.
       * Turns out if we use an empty string, it doesn't show up in intelliSense.
       */
-    @JSName("")
+    /* protected */ @JSName("")
     var _empty: js.UndefOr[A[ParamList]] & (js.UndefOr[B[ParamList, RouteName, EventMap]]) = js.native
     
     /**
@@ -925,50 +883,36 @@ object typesMod {
   }
   object PathConfig {
     
-    @scala.inline
-    def apply(): PathConfig = {
+    inline def apply(): PathConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PathConfig]
     }
     
-    @scala.inline
-    implicit class PathConfigMutableBuilder[Self <: PathConfig] (val x: Self) extends AnyVal {
+    extension [Self <: PathConfig](x: Self) {
       
-      @scala.inline
-      def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
+      inline def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
+      inline def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
       
-      @scala.inline
-      def setInitialRouteName(value: String): Self = StObject.set(x, "initialRouteName", value.asInstanceOf[js.Any])
+      inline def setInitialRouteName(value: String): Self = StObject.set(x, "initialRouteName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialRouteNameUndefined: Self = StObject.set(x, "initialRouteName", js.undefined)
+      inline def setInitialRouteNameUndefined: Self = StObject.set(x, "initialRouteName", js.undefined)
       
-      @scala.inline
-      def setParse(value: Record[String, js.Function1[/* value */ String, js.Any]]): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
+      inline def setParse(value: Record[String, js.Function1[/* value */ String, js.Any]]): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
+      inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setScreens(value: PathConfigMap): Self = StObject.set(x, "screens", value.asInstanceOf[js.Any])
+      inline def setScreens(value: PathConfigMap): Self = StObject.set(x, "screens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreensUndefined: Self = StObject.set(x, "screens", js.undefined)
+      inline def setScreensUndefined: Self = StObject.set(x, "screens", js.undefined)
       
-      @scala.inline
-      def setStringify(value: Record[String, js.Function1[/* value */ js.Any, String]]): Self = StObject.set(x, "stringify", value.asInstanceOf[js.Any])
+      inline def setStringify(value: Record[String, js.Function1[/* value */ js.Any, String]]): Self = StObject.set(x, "stringify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringifyUndefined: Self = StObject.set(x, "stringify", js.undefined)
+      inline def setStringifyUndefined: Self = StObject.set(x, "stringify", js.undefined)
     }
   }
   
@@ -977,8 +921,7 @@ object typesMod {
        with /* routeName */ StringDictionary[String | PathConfig]
   object PathConfigMap {
     
-    @scala.inline
-    def apply(): PathConfigMap = {
+    inline def apply(): PathConfigMap = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PathConfigMap]
     }
@@ -1017,8 +960,7 @@ object typesMod {
   }
   object TypedNavigator {
     
-    @scala.inline
-    def apply[ParamList /* <: ParamListBase */, State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */, Navigator /* <: ComponentType[js.Any] */](
+    inline def apply[ParamList /* <: ParamListBase */, State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */, Navigator /* <: ComponentType[js.Any] */](
       Navigator: ComponentType[
           (Omit[
             ComponentProps[Navigator], 
@@ -1031,11 +973,9 @@ object typesMod {
       __obj.asInstanceOf[TypedNavigator[ParamList, State, ScreenOptions, EventMap, Navigator]]
     }
     
-    @scala.inline
-    implicit class TypedNavigatorMutableBuilder[Self <: TypedNavigator[?, ?, ?, ?, ?], ParamList /* <: ParamListBase */, State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */, Navigator /* <: ComponentType[js.Any] */] (val x: Self & (TypedNavigator[ParamList, State, ScreenOptions, EventMap, Navigator])) extends AnyVal {
+    extension [Self <: TypedNavigator[?, ?, ?, ?, ?], ParamList /* <: ParamListBase */, State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */, Navigator /* <: ComponentType[js.Any] */](x: Self & (TypedNavigator[ParamList, State, ScreenOptions, EventMap, Navigator])) {
       
-      @scala.inline
-      def setNavigator(
+      inline def setNavigator(
         value: ComponentType[
               (Omit[
                 ComponentProps[Navigator], 
@@ -1044,8 +984,7 @@ object typesMod {
             ]
       ): Self = StObject.set(x, "Navigator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreen(value: RouteConfig[ParamList, js.Any, State, ScreenOptions, EventMap] => Null): Self = StObject.set(x, "Screen", js.Any.fromFunction1(value))
+      inline def setScreen(value: RouteConfig[ParamList, js.Any, State, ScreenOptions, EventMap] => Null): Self = StObject.set(x, "Screen", js.Any.fromFunction1(value))
     }
   }
 }

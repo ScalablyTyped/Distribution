@@ -21,8 +21,7 @@ object mod {
   	//=> 'Foo bar'
   	```
   	*/
-  @scala.inline
-  def apply(text: String): String = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(text: String): String = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("humanize-string", JSImport.Namespace)
   @js.native
@@ -51,8 +50,6 @@ object mod {
   // TODO: Remove this for the next major release, refactor the whole definition to:
   // declare function humanizeString(text: string): string;
   // export = humanizeString;
-  @scala.inline
-  def default(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

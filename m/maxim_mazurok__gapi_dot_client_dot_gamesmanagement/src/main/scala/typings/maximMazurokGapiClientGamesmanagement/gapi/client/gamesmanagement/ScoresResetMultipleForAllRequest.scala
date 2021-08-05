@@ -14,28 +14,21 @@ trait ScoresResetMultipleForAllRequest extends StObject {
 }
 object ScoresResetMultipleForAllRequest {
   
-  @scala.inline
-  def apply(): ScoresResetMultipleForAllRequest = {
+  inline def apply(): ScoresResetMultipleForAllRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScoresResetMultipleForAllRequest]
   }
   
-  @scala.inline
-  implicit class ScoresResetMultipleForAllRequestMutableBuilder[Self <: ScoresResetMultipleForAllRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ScoresResetMultipleForAllRequest](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLeaderboard_ids(value: js.Array[String]): Self = StObject.set(x, "leaderboard_ids", value.asInstanceOf[js.Any])
+    inline def setLeaderboard_ids(value: js.Array[String]): Self = StObject.set(x, "leaderboard_ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeaderboard_idsUndefined: Self = StObject.set(x, "leaderboard_ids", js.undefined)
+    inline def setLeaderboard_idsUndefined: Self = StObject.set(x, "leaderboard_ids", js.undefined)
     
-    @scala.inline
-    def setLeaderboard_idsVarargs(value: String*): Self = StObject.set(x, "leaderboard_ids", js.Array(value :_*))
+    inline def setLeaderboard_idsVarargs(value: String*): Self = StObject.set(x, "leaderboard_ids", js.Array(value :_*))
   }
 }

@@ -15,22 +15,17 @@ trait End extends StObject {
 }
 object End {
   
-  @scala.inline
-  def apply(end: Double | Position, file: String, start: Double | Position): End = {
+  inline def apply(end: Double | Position, file: String, start: Double | Position): End = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[End]
   }
   
-  @scala.inline
-  implicit class EndMutableBuilder[Self <: End] (val x: Self) extends AnyVal {
+  extension [Self <: End](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Double | Position): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double | Position): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double | Position): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double | Position): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

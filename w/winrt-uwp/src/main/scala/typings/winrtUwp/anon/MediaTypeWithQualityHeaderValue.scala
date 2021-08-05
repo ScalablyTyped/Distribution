@@ -13,19 +13,15 @@ trait MediaTypeWithQualityHeaderValue extends StObject {
 }
 object MediaTypeWithQualityHeaderValue {
   
-  @scala.inline
-  def apply(mediaTypeWithQualityHeaderValue: HttpMediaTypeWithQualityHeaderValue, returnValue: Boolean): MediaTypeWithQualityHeaderValue = {
+  inline def apply(mediaTypeWithQualityHeaderValue: HttpMediaTypeWithQualityHeaderValue, returnValue: Boolean): MediaTypeWithQualityHeaderValue = {
     val __obj = js.Dynamic.literal(mediaTypeWithQualityHeaderValue = mediaTypeWithQualityHeaderValue.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaTypeWithQualityHeaderValue]
   }
   
-  @scala.inline
-  implicit class MediaTypeWithQualityHeaderValueMutableBuilder[Self <: MediaTypeWithQualityHeaderValue] (val x: Self) extends AnyVal {
+  extension [Self <: MediaTypeWithQualityHeaderValue](x: Self) {
     
-    @scala.inline
-    def setMediaTypeWithQualityHeaderValue(value: HttpMediaTypeWithQualityHeaderValue): Self = StObject.set(x, "mediaTypeWithQualityHeaderValue", value.asInstanceOf[js.Any])
+    inline def setMediaTypeWithQualityHeaderValue(value: HttpMediaTypeWithQualityHeaderValue): Self = StObject.set(x, "mediaTypeWithQualityHeaderValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

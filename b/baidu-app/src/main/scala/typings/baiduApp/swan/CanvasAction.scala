@@ -14,22 +14,17 @@ trait CanvasAction extends StObject {
 }
 object CanvasAction {
   
-  @scala.inline
-  def apply(data: js.Array[CanvasAction | Double | String], method: String): CanvasAction = {
+  inline def apply(data: js.Array[CanvasAction | Double | String], method: String): CanvasAction = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
     __obj.asInstanceOf[CanvasAction]
   }
   
-  @scala.inline
-  implicit class CanvasActionMutableBuilder[Self <: CanvasAction] (val x: Self) extends AnyVal {
+  extension [Self <: CanvasAction](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Array[CanvasAction | Double | String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[CanvasAction | Double | String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: (CanvasAction | Double | String)*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: (CanvasAction | Double | String)*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
   }
 }

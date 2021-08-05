@@ -23,31 +23,23 @@ trait CreateBrowserContextRequest extends StObject {
 }
 object CreateBrowserContextRequest {
   
-  @scala.inline
-  def apply(): CreateBrowserContextRequest = {
+  inline def apply(): CreateBrowserContextRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateBrowserContextRequest]
   }
   
-  @scala.inline
-  implicit class CreateBrowserContextRequestMutableBuilder[Self <: CreateBrowserContextRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateBrowserContextRequest](x: Self) {
     
-    @scala.inline
-    def setDisposeOnDetach(value: Boolean): Self = StObject.set(x, "disposeOnDetach", value.asInstanceOf[js.Any])
+    inline def setDisposeOnDetach(value: Boolean): Self = StObject.set(x, "disposeOnDetach", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisposeOnDetachUndefined: Self = StObject.set(x, "disposeOnDetach", js.undefined)
+    inline def setDisposeOnDetachUndefined: Self = StObject.set(x, "disposeOnDetach", js.undefined)
     
-    @scala.inline
-    def setProxyBypassList(value: String): Self = StObject.set(x, "proxyBypassList", value.asInstanceOf[js.Any])
+    inline def setProxyBypassList(value: String): Self = StObject.set(x, "proxyBypassList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyBypassListUndefined: Self = StObject.set(x, "proxyBypassList", js.undefined)
+    inline def setProxyBypassListUndefined: Self = StObject.set(x, "proxyBypassList", js.undefined)
     
-    @scala.inline
-    def setProxyServer(value: String): Self = StObject.set(x, "proxyServer", value.asInstanceOf[js.Any])
+    inline def setProxyServer(value: String): Self = StObject.set(x, "proxyServer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyServerUndefined: Self = StObject.set(x, "proxyServer", js.undefined)
+    inline def setProxyServerUndefined: Self = StObject.set(x, "proxyServer", js.undefined)
   }
 }

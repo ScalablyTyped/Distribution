@@ -23,25 +23,19 @@ trait AddAttributesActivity extends StObject {
 }
 object AddAttributesActivity {
   
-  @scala.inline
-  def apply(attributes: AttributeNameMapping, name: ActivityName): AddAttributesActivity = {
+  inline def apply(attributes: AttributeNameMapping, name: ActivityName): AddAttributesActivity = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddAttributesActivity]
   }
   
-  @scala.inline
-  implicit class AddAttributesActivityMutableBuilder[Self <: AddAttributesActivity] (val x: Self) extends AnyVal {
+  extension [Self <: AddAttributesActivity](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: AttributeNameMapping): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: AttributeNameMapping): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: ActivityName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ActivityName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext(value: ActivityName): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: ActivityName): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+    inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
   }
 }

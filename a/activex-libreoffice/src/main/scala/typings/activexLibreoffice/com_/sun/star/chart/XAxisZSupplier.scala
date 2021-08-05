@@ -66,8 +66,7 @@ trait XAxisZSupplier
 }
 object XAxisZSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ZAxis: XPropertySet,
     ZAxisTitle: XShape,
     ZHelpGrid: XPropertySet,
@@ -84,31 +83,22 @@ object XAxisZSupplier {
     __obj.asInstanceOf[XAxisZSupplier]
   }
   
-  @scala.inline
-  implicit class XAxisZSupplierMutableBuilder[Self <: XAxisZSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XAxisZSupplier](x: Self) {
     
-    @scala.inline
-    def setGetZAxis(value: () => XPropertySet): Self = StObject.set(x, "getZAxis", js.Any.fromFunction0(value))
+    inline def setGetZAxis(value: () => XPropertySet): Self = StObject.set(x, "getZAxis", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetZAxisTitle(value: () => XShape): Self = StObject.set(x, "getZAxisTitle", js.Any.fromFunction0(value))
+    inline def setGetZAxisTitle(value: () => XShape): Self = StObject.set(x, "getZAxisTitle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetZHelpGrid(value: () => XPropertySet): Self = StObject.set(x, "getZHelpGrid", js.Any.fromFunction0(value))
+    inline def setGetZHelpGrid(value: () => XPropertySet): Self = StObject.set(x, "getZHelpGrid", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetZMainGrid(value: () => XPropertySet): Self = StObject.set(x, "getZMainGrid", js.Any.fromFunction0(value))
+    inline def setGetZMainGrid(value: () => XPropertySet): Self = StObject.set(x, "getZMainGrid", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setZAxis(value: XPropertySet): Self = StObject.set(x, "ZAxis", value.asInstanceOf[js.Any])
+    inline def setZAxis(value: XPropertySet): Self = StObject.set(x, "ZAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZAxisTitle(value: XShape): Self = StObject.set(x, "ZAxisTitle", value.asInstanceOf[js.Any])
+    inline def setZAxisTitle(value: XShape): Self = StObject.set(x, "ZAxisTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZHelpGrid(value: XPropertySet): Self = StObject.set(x, "ZHelpGrid", value.asInstanceOf[js.Any])
+    inline def setZHelpGrid(value: XPropertySet): Self = StObject.set(x, "ZHelpGrid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZMainGrid(value: XPropertySet): Self = StObject.set(x, "ZMainGrid", value.asInstanceOf[js.Any])
+    inline def setZMainGrid(value: XPropertySet): Self = StObject.set(x, "ZMainGrid", value.asInstanceOf[js.Any])
   }
 }

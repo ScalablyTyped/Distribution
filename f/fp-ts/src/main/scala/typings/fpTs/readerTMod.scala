@@ -16,16 +16,11 @@ object readerTMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getReaderM[M](M: Monad[M]): ReaderM[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getReaderM")(M.asInstanceOf[js.Any]).asInstanceOf[ReaderM[M]]
-  @scala.inline
-  def getReaderM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](M: Monad1[M]): ReaderM1[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getReaderM")(M.asInstanceOf[js.Any]).asInstanceOf[ReaderM1[M]]
-  @scala.inline
-  def getReaderM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](M: Monad2[M]): ReaderM2[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getReaderM")(M.asInstanceOf[js.Any]).asInstanceOf[ReaderM2[M]]
-  @scala.inline
-  def getReaderM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](M: Monad3[M]): ReaderM3[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getReaderM")(M.asInstanceOf[js.Any]).asInstanceOf[ReaderM3[M]]
-  @scala.inline
-  def getReaderM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](M: Monad2C[M, E]): ReaderM2C[M, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("getReaderM")(M.asInstanceOf[js.Any]).asInstanceOf[ReaderM2C[M, E]]
+  inline def getReaderM[M](M: Monad[M]): ReaderM[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getReaderM")(M.asInstanceOf[js.Any]).asInstanceOf[ReaderM[M]]
+  inline def getReaderM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](M: Monad1[M]): ReaderM1[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getReaderM")(M.asInstanceOf[js.Any]).asInstanceOf[ReaderM1[M]]
+  inline def getReaderM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](M: Monad2[M]): ReaderM2[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getReaderM")(M.asInstanceOf[js.Any]).asInstanceOf[ReaderM2[M]]
+  inline def getReaderM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](M: Monad3[M]): ReaderM3[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getReaderM")(M.asInstanceOf[js.Any]).asInstanceOf[ReaderM3[M]]
+  inline def getReaderM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](M: Monad2C[M, E]): ReaderM2C[M, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("getReaderM")(M.asInstanceOf[js.Any]).asInstanceOf[ReaderM2C[M, E]]
   
   trait ReaderM[M] extends StObject {
     
@@ -51,8 +46,7 @@ object readerTMod {
   }
   object ReaderM {
     
-    @scala.inline
-    def apply[M](
+    inline def apply[M](
       ap: (ReaderT[M, js.Any, js.Function1[js.Any, js.Any]], ReaderT[M, js.Any, js.Any]) => ReaderT[M, js.Any, js.Any],
       ask: () => ReaderT[M, js.Any, js.Any],
       asks: js.Function1[js.Any, js.Any] => ReaderT[M, js.Any, js.Any],
@@ -67,41 +61,31 @@ object readerTMod {
       __obj.asInstanceOf[ReaderM[M]]
     }
     
-    @scala.inline
-    implicit class ReaderMMutableBuilder[Self <: ReaderM[?], M] (val x: Self & ReaderM[M]) extends AnyVal {
+    extension [Self <: ReaderM[?], M](x: Self & ReaderM[M]) {
       
-      @scala.inline
-      def setAp(
+      inline def setAp(
         value: (ReaderT[M, js.Any, js.Function1[js.Any, js.Any]], ReaderT[M, js.Any, js.Any]) => ReaderT[M, js.Any, js.Any]
       ): Self = StObject.set(x, "ap", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAsk(value: () => ReaderT[M, js.Any, js.Any]): Self = StObject.set(x, "ask", js.Any.fromFunction0(value))
+      inline def setAsk(value: () => ReaderT[M, js.Any, js.Any]): Self = StObject.set(x, "ask", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAsks(value: js.Function1[js.Any, js.Any] => ReaderT[M, js.Any, js.Any]): Self = StObject.set(x, "asks", js.Any.fromFunction1(value))
+      inline def setAsks(value: js.Function1[js.Any, js.Any] => ReaderT[M, js.Any, js.Any]): Self = StObject.set(x, "asks", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChain(
+      inline def setChain(
         value: (ReaderT[M, js.Any, js.Any], js.Function1[js.Any, ReaderT[M, js.Any, js.Any]]) => ReaderT[M, js.Any, js.Any]
       ): Self = StObject.set(x, "chain", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFromM(
+      inline def setFromM(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, A> */ js.Any => ReaderT[M, js.Any, js.Any]
       ): Self = StObject.set(x, "fromM", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFromReader(value: Reader_[js.Any, js.Any] => ReaderT[M, js.Any, js.Any]): Self = StObject.set(x, "fromReader", js.Any.fromFunction1(value))
+      inline def setFromReader(value: Reader_[js.Any, js.Any] => ReaderT[M, js.Any, js.Any]): Self = StObject.set(x, "fromReader", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLocal(value: (ReaderT[M, js.Any, js.Any], js.Function1[js.Any, js.Any]) => ReaderT[M, js.Any, js.Any]): Self = StObject.set(x, "local", js.Any.fromFunction2(value))
+      inline def setLocal(value: (ReaderT[M, js.Any, js.Any], js.Function1[js.Any, js.Any]) => ReaderT[M, js.Any, js.Any]): Self = StObject.set(x, "local", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMap(value: (ReaderT[M, js.Any, js.Any], js.Function1[js.Any, js.Any]) => ReaderT[M, js.Any, js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
+      inline def setMap(value: (ReaderT[M, js.Any, js.Any], js.Function1[js.Any, js.Any]) => ReaderT[M, js.Any, js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOf(value: js.Any => ReaderT[M, js.Any, js.Any]): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
+      inline def setOf(value: js.Any => ReaderT[M, js.Any, js.Any]): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
     }
   }
   
@@ -129,8 +113,7 @@ object readerTMod {
   }
   object ReaderM1 {
     
-    @scala.inline
-    def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
       ap: (ReaderT1[M, js.Any, js.Function1[js.Any, js.Any]], ReaderT1[M, js.Any, js.Any]) => ReaderT1[M, js.Any, js.Any],
       ask: () => ReaderT1[M, js.Any, js.Any],
       asks: js.Function1[js.Any, js.Any] => ReaderT1[M, js.Any, js.Any],
@@ -145,41 +128,31 @@ object readerTMod {
       __obj.asInstanceOf[ReaderM1[M]]
     }
     
-    @scala.inline
-    implicit class ReaderM1MutableBuilder[Self <: ReaderM1[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */] (val x: Self & ReaderM1[M]) extends AnyVal {
+    extension [Self <: ReaderM1[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](x: Self & ReaderM1[M]) {
       
-      @scala.inline
-      def setAp(
+      inline def setAp(
         value: (ReaderT1[M, js.Any, js.Function1[js.Any, js.Any]], ReaderT1[M, js.Any, js.Any]) => ReaderT1[M, js.Any, js.Any]
       ): Self = StObject.set(x, "ap", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAsk(value: () => ReaderT1[M, js.Any, js.Any]): Self = StObject.set(x, "ask", js.Any.fromFunction0(value))
+      inline def setAsk(value: () => ReaderT1[M, js.Any, js.Any]): Self = StObject.set(x, "ask", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAsks(value: js.Function1[js.Any, js.Any] => ReaderT1[M, js.Any, js.Any]): Self = StObject.set(x, "asks", js.Any.fromFunction1(value))
+      inline def setAsks(value: js.Function1[js.Any, js.Any] => ReaderT1[M, js.Any, js.Any]): Self = StObject.set(x, "asks", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChain(
+      inline def setChain(
         value: (ReaderT1[M, js.Any, js.Any], js.Function1[js.Any, ReaderT1[M, js.Any, js.Any]]) => ReaderT1[M, js.Any, js.Any]
       ): Self = StObject.set(x, "chain", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFromM(
+      inline def setFromM(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, A> */ js.Any => ReaderT1[M, js.Any, js.Any]
       ): Self = StObject.set(x, "fromM", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFromReader(value: Reader_[js.Any, js.Any] => ReaderT1[M, js.Any, js.Any]): Self = StObject.set(x, "fromReader", js.Any.fromFunction1(value))
+      inline def setFromReader(value: Reader_[js.Any, js.Any] => ReaderT1[M, js.Any, js.Any]): Self = StObject.set(x, "fromReader", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLocal(value: (ReaderT1[M, js.Any, js.Any], js.Function1[js.Any, js.Any]) => ReaderT1[M, js.Any, js.Any]): Self = StObject.set(x, "local", js.Any.fromFunction2(value))
+      inline def setLocal(value: (ReaderT1[M, js.Any, js.Any], js.Function1[js.Any, js.Any]) => ReaderT1[M, js.Any, js.Any]): Self = StObject.set(x, "local", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMap(value: (ReaderT1[M, js.Any, js.Any], js.Function1[js.Any, js.Any]) => ReaderT1[M, js.Any, js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
+      inline def setMap(value: (ReaderT1[M, js.Any, js.Any], js.Function1[js.Any, js.Any]) => ReaderT1[M, js.Any, js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOf(value: js.Any => ReaderT1[M, js.Any, js.Any]): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
+      inline def setOf(value: js.Any => ReaderT1[M, js.Any, js.Any]): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
     }
   }
   
@@ -207,8 +180,7 @@ object readerTMod {
   }
   object ReaderM2 {
     
-    @scala.inline
-    def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
       ap: (ReaderT2[M, js.Any, js.Any, js.Function1[js.Any, js.Any]], ReaderT2[M, js.Any, js.Any, js.Any]) => ReaderT2[M, js.Any, js.Any, js.Any],
       ask: () => ReaderT2[M, js.Any, js.Any, js.Any],
       asks: js.Function1[js.Any, js.Any] => ReaderT2[M, js.Any, js.Any, js.Any],
@@ -223,45 +195,35 @@ object readerTMod {
       __obj.asInstanceOf[ReaderM2[M]]
     }
     
-    @scala.inline
-    implicit class ReaderM2MutableBuilder[Self <: ReaderM2[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */] (val x: Self & ReaderM2[M]) extends AnyVal {
+    extension [Self <: ReaderM2[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](x: Self & ReaderM2[M]) {
       
-      @scala.inline
-      def setAp(
+      inline def setAp(
         value: (ReaderT2[M, js.Any, js.Any, js.Function1[js.Any, js.Any]], ReaderT2[M, js.Any, js.Any, js.Any]) => ReaderT2[M, js.Any, js.Any, js.Any]
       ): Self = StObject.set(x, "ap", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAsk(value: () => ReaderT2[M, js.Any, js.Any, js.Any]): Self = StObject.set(x, "ask", js.Any.fromFunction0(value))
+      inline def setAsk(value: () => ReaderT2[M, js.Any, js.Any, js.Any]): Self = StObject.set(x, "ask", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAsks(value: js.Function1[js.Any, js.Any] => ReaderT2[M, js.Any, js.Any, js.Any]): Self = StObject.set(x, "asks", js.Any.fromFunction1(value))
+      inline def setAsks(value: js.Function1[js.Any, js.Any] => ReaderT2[M, js.Any, js.Any, js.Any]): Self = StObject.set(x, "asks", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChain(
+      inline def setChain(
         value: (ReaderT2[M, js.Any, js.Any, js.Any], js.Function1[js.Any, ReaderT2[M, js.Any, js.Any, js.Any]]) => ReaderT2[M, js.Any, js.Any, js.Any]
       ): Self = StObject.set(x, "chain", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFromM(
+      inline def setFromM(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, A> */ js.Any => ReaderT2[M, js.Any, js.Any, js.Any]
       ): Self = StObject.set(x, "fromM", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFromReader(value: Reader_[js.Any, js.Any] => ReaderT2[M, js.Any, js.Any, js.Any]): Self = StObject.set(x, "fromReader", js.Any.fromFunction1(value))
+      inline def setFromReader(value: Reader_[js.Any, js.Any] => ReaderT2[M, js.Any, js.Any, js.Any]): Self = StObject.set(x, "fromReader", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLocal(
+      inline def setLocal(
         value: (ReaderT2[M, js.Any, js.Any, js.Any], js.Function1[js.Any, js.Any]) => ReaderT2[M, js.Any, js.Any, js.Any]
       ): Self = StObject.set(x, "local", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMap(
+      inline def setMap(
         value: (ReaderT2[M, js.Any, js.Any, js.Any], js.Function1[js.Any, js.Any]) => ReaderT2[M, js.Any, js.Any, js.Any]
       ): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOf(value: js.Any => ReaderT2[M, js.Any, js.Any, js.Any]): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
+      inline def setOf(value: js.Any => ReaderT2[M, js.Any, js.Any, js.Any]): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
     }
   }
   
@@ -289,8 +251,7 @@ object readerTMod {
   }
   object ReaderM2C {
     
-    @scala.inline
-    def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
       ap: (ReaderT2[M, js.Any, E, js.Function1[js.Any, js.Any]], ReaderT2[M, js.Any, E, js.Any]) => ReaderT2[M, js.Any, E, js.Any],
       ask: () => ReaderT2[M, js.Any, E, js.Any],
       asks: js.Function1[js.Any, js.Any] => ReaderT2[M, js.Any, E, js.Any],
@@ -305,45 +266,35 @@ object readerTMod {
       __obj.asInstanceOf[ReaderM2C[M, E]]
     }
     
-    @scala.inline
-    implicit class ReaderM2CMutableBuilder[Self <: ReaderM2C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E] (val x: Self & (ReaderM2C[M, E])) extends AnyVal {
+    extension [Self <: ReaderM2C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](x: Self & (ReaderM2C[M, E])) {
       
-      @scala.inline
-      def setAp(
+      inline def setAp(
         value: (ReaderT2[M, js.Any, E, js.Function1[js.Any, js.Any]], ReaderT2[M, js.Any, E, js.Any]) => ReaderT2[M, js.Any, E, js.Any]
       ): Self = StObject.set(x, "ap", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAsk(value: () => ReaderT2[M, js.Any, E, js.Any]): Self = StObject.set(x, "ask", js.Any.fromFunction0(value))
+      inline def setAsk(value: () => ReaderT2[M, js.Any, E, js.Any]): Self = StObject.set(x, "ask", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAsks(value: js.Function1[js.Any, js.Any] => ReaderT2[M, js.Any, E, js.Any]): Self = StObject.set(x, "asks", js.Any.fromFunction1(value))
+      inline def setAsks(value: js.Function1[js.Any, js.Any] => ReaderT2[M, js.Any, E, js.Any]): Self = StObject.set(x, "asks", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChain(
+      inline def setChain(
         value: (ReaderT2[M, js.Any, E, js.Any], js.Function1[js.Any, ReaderT2[M, js.Any, E, js.Any]]) => ReaderT2[M, js.Any, E, js.Any]
       ): Self = StObject.set(x, "chain", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFromM(
+      inline def setFromM(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, A> */ js.Any => ReaderT2[M, js.Any, E, js.Any]
       ): Self = StObject.set(x, "fromM", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFromReader(value: Reader_[js.Any, js.Any] => ReaderT2[M, js.Any, E, js.Any]): Self = StObject.set(x, "fromReader", js.Any.fromFunction1(value))
+      inline def setFromReader(value: Reader_[js.Any, js.Any] => ReaderT2[M, js.Any, E, js.Any]): Self = StObject.set(x, "fromReader", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLocal(
+      inline def setLocal(
         value: (ReaderT2[M, js.Any, E, js.Any], js.Function1[js.Any, js.Any]) => ReaderT2[M, js.Any, E, js.Any]
       ): Self = StObject.set(x, "local", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMap(
+      inline def setMap(
         value: (ReaderT2[M, js.Any, E, js.Any], js.Function1[js.Any, js.Any]) => ReaderT2[M, js.Any, E, js.Any]
       ): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOf(value: js.Any => ReaderT2[M, js.Any, E, js.Any]): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
+      inline def setOf(value: js.Any => ReaderT2[M, js.Any, E, js.Any]): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
     }
   }
   
@@ -371,8 +322,7 @@ object readerTMod {
   }
   object ReaderM3 {
     
-    @scala.inline
-    def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](
       ap: (ReaderT3[M, js.Any, js.Any, js.Any, js.Function1[js.Any, js.Any]], ReaderT3[M, js.Any, js.Any, js.Any, js.Any]) => ReaderT3[M, js.Any, js.Any, js.Any, js.Any],
       ask: () => ReaderT3[M, js.Any, js.Any, js.Any, js.Any],
       asks: js.Function1[js.Any, js.Any] => ReaderT3[M, js.Any, js.Any, js.Any, js.Any],
@@ -387,45 +337,35 @@ object readerTMod {
       __obj.asInstanceOf[ReaderM3[M]]
     }
     
-    @scala.inline
-    implicit class ReaderM3MutableBuilder[Self <: ReaderM3[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */] (val x: Self & ReaderM3[M]) extends AnyVal {
+    extension [Self <: ReaderM3[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](x: Self & ReaderM3[M]) {
       
-      @scala.inline
-      def setAp(
+      inline def setAp(
         value: (ReaderT3[M, js.Any, js.Any, js.Any, js.Function1[js.Any, js.Any]], ReaderT3[M, js.Any, js.Any, js.Any, js.Any]) => ReaderT3[M, js.Any, js.Any, js.Any, js.Any]
       ): Self = StObject.set(x, "ap", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAsk(value: () => ReaderT3[M, js.Any, js.Any, js.Any, js.Any]): Self = StObject.set(x, "ask", js.Any.fromFunction0(value))
+      inline def setAsk(value: () => ReaderT3[M, js.Any, js.Any, js.Any, js.Any]): Self = StObject.set(x, "ask", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAsks(value: js.Function1[js.Any, js.Any] => ReaderT3[M, js.Any, js.Any, js.Any, js.Any]): Self = StObject.set(x, "asks", js.Any.fromFunction1(value))
+      inline def setAsks(value: js.Function1[js.Any, js.Any] => ReaderT3[M, js.Any, js.Any, js.Any, js.Any]): Self = StObject.set(x, "asks", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChain(
+      inline def setChain(
         value: (ReaderT3[M, js.Any, js.Any, js.Any, js.Any], js.Function1[js.Any, ReaderT3[M, js.Any, js.Any, js.Any, js.Any]]) => ReaderT3[M, js.Any, js.Any, js.Any, js.Any]
       ): Self = StObject.set(x, "chain", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFromM(
+      inline def setFromM(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, U, E, A> */ js.Any => ReaderT3[M, js.Any, js.Any, js.Any, js.Any]
       ): Self = StObject.set(x, "fromM", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFromReader(value: Reader_[js.Any, js.Any] => ReaderT3[M, js.Any, js.Any, js.Any, js.Any]): Self = StObject.set(x, "fromReader", js.Any.fromFunction1(value))
+      inline def setFromReader(value: Reader_[js.Any, js.Any] => ReaderT3[M, js.Any, js.Any, js.Any, js.Any]): Self = StObject.set(x, "fromReader", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLocal(
+      inline def setLocal(
         value: (ReaderT3[M, js.Any, js.Any, js.Any, js.Any], js.Function1[js.Any, js.Any]) => ReaderT3[M, js.Any, js.Any, js.Any, js.Any]
       ): Self = StObject.set(x, "local", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMap(
+      inline def setMap(
         value: (ReaderT3[M, js.Any, js.Any, js.Any, js.Any], js.Function1[js.Any, js.Any]) => ReaderT3[M, js.Any, js.Any, js.Any, js.Any]
       ): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOf(value: js.Any => ReaderT3[M, js.Any, js.Any, js.Any, js.Any]): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
+      inline def setOf(value: js.Any => ReaderT3[M, js.Any, js.Any, js.Any, js.Any]): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
     }
   }
   

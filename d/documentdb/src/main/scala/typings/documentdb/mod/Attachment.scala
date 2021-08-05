@@ -18,19 +18,15 @@ trait Attachment
 }
 object Attachment {
   
-  @scala.inline
-  def apply(contentType: String, media: String): Attachment = {
+  inline def apply(contentType: String, media: String): Attachment = {
     val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], media = media.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attachment]
   }
   
-  @scala.inline
-  implicit class AttachmentMutableBuilder[Self <: Attachment] (val x: Self) extends AnyVal {
+  extension [Self <: Attachment](x: Self) {
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
   }
 }

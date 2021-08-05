@@ -16,13 +16,12 @@ trait TextColumn extends StObject {
   
   var Width: Double
   
-  @JSName("Word.TextColumn_typekey")
+  /* private */ @JSName("Word.TextColumn_typekey")
   var WordDotTextColumn_typekey: TextColumn
 }
 object TextColumn {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: Double,
     Parent: js.Any,
@@ -35,25 +34,18 @@ object TextColumn {
     __obj.asInstanceOf[TextColumn]
   }
   
-  @scala.inline
-  implicit class TextColumnMutableBuilder[Self <: TextColumn] (val x: Self) extends AnyVal {
+  extension [Self <: TextColumn](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpaceAfter(value: Double): Self = StObject.set(x, "SpaceAfter", value.asInstanceOf[js.Any])
+    inline def setSpaceAfter(value: Double): Self = StObject.set(x, "SpaceAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotTextColumn_typekey(value: TextColumn): Self = StObject.set(x, "Word.TextColumn_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotTextColumn_typekey(value: TextColumn): Self = StObject.set(x, "Word.TextColumn_typekey", value.asInstanceOf[js.Any])
   }
 }

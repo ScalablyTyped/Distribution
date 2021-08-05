@@ -18,25 +18,19 @@ trait ForecastStatistics extends StObject {
 }
 object ForecastStatistics {
   
-  @scala.inline
-  def apply(): ForecastStatistics = {
+  inline def apply(): ForecastStatistics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ForecastStatistics]
   }
   
-  @scala.inline
-  implicit class ForecastStatisticsMutableBuilder[Self <: ForecastStatistics] (val x: Self) extends AnyVal {
+  extension [Self <: ForecastStatistics](x: Self) {
     
-    @scala.inline
-    def setFaultCountHigh(value: NullableLong): Self = StObject.set(x, "FaultCountHigh", value.asInstanceOf[js.Any])
+    inline def setFaultCountHigh(value: NullableLong): Self = StObject.set(x, "FaultCountHigh", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaultCountHighUndefined: Self = StObject.set(x, "FaultCountHigh", js.undefined)
+    inline def setFaultCountHighUndefined: Self = StObject.set(x, "FaultCountHigh", js.undefined)
     
-    @scala.inline
-    def setFaultCountLow(value: NullableLong): Self = StObject.set(x, "FaultCountLow", value.asInstanceOf[js.Any])
+    inline def setFaultCountLow(value: NullableLong): Self = StObject.set(x, "FaultCountLow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaultCountLowUndefined: Self = StObject.set(x, "FaultCountLow", js.undefined)
+    inline def setFaultCountLowUndefined: Self = StObject.set(x, "FaultCountLow", js.undefined)
   }
 }

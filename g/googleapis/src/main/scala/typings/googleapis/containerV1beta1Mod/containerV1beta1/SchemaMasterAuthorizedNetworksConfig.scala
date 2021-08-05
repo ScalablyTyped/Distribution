@@ -25,28 +25,21 @@ trait SchemaMasterAuthorizedNetworksConfig extends StObject {
 }
 object SchemaMasterAuthorizedNetworksConfig {
   
-  @scala.inline
-  def apply(): SchemaMasterAuthorizedNetworksConfig = {
+  inline def apply(): SchemaMasterAuthorizedNetworksConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMasterAuthorizedNetworksConfig]
   }
   
-  @scala.inline
-  implicit class SchemaMasterAuthorizedNetworksConfigMutableBuilder[Self <: SchemaMasterAuthorizedNetworksConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMasterAuthorizedNetworksConfig](x: Self) {
     
-    @scala.inline
-    def setCidrBlocks(value: js.Array[SchemaCidrBlock]): Self = StObject.set(x, "cidrBlocks", value.asInstanceOf[js.Any])
+    inline def setCidrBlocks(value: js.Array[SchemaCidrBlock]): Self = StObject.set(x, "cidrBlocks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidrBlocksUndefined: Self = StObject.set(x, "cidrBlocks", js.undefined)
+    inline def setCidrBlocksUndefined: Self = StObject.set(x, "cidrBlocks", js.undefined)
     
-    @scala.inline
-    def setCidrBlocksVarargs(value: SchemaCidrBlock*): Self = StObject.set(x, "cidrBlocks", js.Array(value :_*))
+    inline def setCidrBlocksVarargs(value: SchemaCidrBlock*): Self = StObject.set(x, "cidrBlocks", js.Array(value :_*))
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
   }
 }

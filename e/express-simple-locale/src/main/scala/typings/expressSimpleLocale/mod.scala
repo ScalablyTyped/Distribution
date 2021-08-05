@@ -13,10 +13,8 @@ object mod {
     * A simple Express middleware to guess the short-locale of a user.
     * It then saves the found locale on the request for further usage.
     */
-  @scala.inline
-  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  @scala.inline
-  def apply(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
   @JSImport("express-simple-locale", JSImport.Namespace)
   @js.native
@@ -59,50 +57,36 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCookieName(value: String): Self = StObject.set(x, "cookieName", value.asInstanceOf[js.Any])
+      inline def setCookieName(value: String): Self = StObject.set(x, "cookieName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieNameUndefined: Self = StObject.set(x, "cookieName", js.undefined)
+      inline def setCookieNameUndefined: Self = StObject.set(x, "cookieName", js.undefined)
       
-      @scala.inline
-      def setDefaultLocale(value: String): Self = StObject.set(x, "defaultLocale", value.asInstanceOf[js.Any])
+      inline def setDefaultLocale(value: String): Self = StObject.set(x, "defaultLocale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultLocaleUndefined: Self = StObject.set(x, "defaultLocale", js.undefined)
+      inline def setDefaultLocaleUndefined: Self = StObject.set(x, "defaultLocale", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setQueryParams(value: String | js.Array[String]): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
+      inline def setQueryParams(value: String | js.Array[String]): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryParamsUndefined: Self = StObject.set(x, "queryParams", js.undefined)
+      inline def setQueryParamsUndefined: Self = StObject.set(x, "queryParams", js.undefined)
       
-      @scala.inline
-      def setQueryParamsVarargs(value: String*): Self = StObject.set(x, "queryParams", js.Array(value :_*))
+      inline def setQueryParamsVarargs(value: String*): Self = StObject.set(x, "queryParams", js.Array(value :_*))
       
-      @scala.inline
-      def setSupportedLocales(value: js.Array[String]): Self = StObject.set(x, "supportedLocales", value.asInstanceOf[js.Any])
+      inline def setSupportedLocales(value: js.Array[String]): Self = StObject.set(x, "supportedLocales", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportedLocalesUndefined: Self = StObject.set(x, "supportedLocales", js.undefined)
+      inline def setSupportedLocalesUndefined: Self = StObject.set(x, "supportedLocales", js.undefined)
       
-      @scala.inline
-      def setSupportedLocalesVarargs(value: String*): Self = StObject.set(x, "supportedLocales", js.Array(value :_*))
+      inline def setSupportedLocalesVarargs(value: String*): Self = StObject.set(x, "supportedLocales", js.Array(value :_*))
     }
   }
   
@@ -117,17 +101,14 @@ object mod {
     }
     object Request {
       
-      @scala.inline
-      def apply(userLocale: ShortLocale): Request = {
+      inline def apply(userLocale: ShortLocale): Request = {
         val __obj = js.Dynamic.literal(userLocale = userLocale.asInstanceOf[js.Any])
         __obj.asInstanceOf[Request]
       }
       
-      @scala.inline
-      implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+      extension [Self <: Request](x: Self) {
         
-        @scala.inline
-        def setUserLocale(value: ShortLocale): Self = StObject.set(x, "userLocale", value.asInstanceOf[js.Any])
+        inline def setUserLocale(value: ShortLocale): Self = StObject.set(x, "userLocale", value.asInstanceOf[js.Any])
       }
     }
   }

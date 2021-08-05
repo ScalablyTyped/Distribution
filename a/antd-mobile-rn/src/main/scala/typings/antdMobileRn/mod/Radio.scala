@@ -22,12 +22,10 @@ object Radio {
   @JSImport("antd-mobile-rn", "Radio.RadioItem")
   @js.native
   def RadioItem: js.Any = js.native
-  @scala.inline
-  def RadioItem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RadioItem")(x.asInstanceOf[js.Any])
+  inline def RadioItem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RadioItem")(x.asInstanceOf[js.Any])
   
   @JSImport("antd-mobile-rn", "Radio.defaultProps")
   @js.native
   def defaultProps: Styles = js.native
-  @scala.inline
-  def defaultProps_=(x: Styles): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: Styles): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

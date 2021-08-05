@@ -23,34 +23,25 @@ trait ListInfrastructureConfigurationsResponse extends StObject {
 }
 object ListInfrastructureConfigurationsResponse {
   
-  @scala.inline
-  def apply(): ListInfrastructureConfigurationsResponse = {
+  inline def apply(): ListInfrastructureConfigurationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListInfrastructureConfigurationsResponse]
   }
   
-  @scala.inline
-  implicit class ListInfrastructureConfigurationsResponseMutableBuilder[Self <: ListInfrastructureConfigurationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListInfrastructureConfigurationsResponse](x: Self) {
     
-    @scala.inline
-    def setInfrastructureConfigurationSummaryList(value: InfrastructureConfigurationSummaryList): Self = StObject.set(x, "infrastructureConfigurationSummaryList", value.asInstanceOf[js.Any])
+    inline def setInfrastructureConfigurationSummaryList(value: InfrastructureConfigurationSummaryList): Self = StObject.set(x, "infrastructureConfigurationSummaryList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfrastructureConfigurationSummaryListUndefined: Self = StObject.set(x, "infrastructureConfigurationSummaryList", js.undefined)
+    inline def setInfrastructureConfigurationSummaryListUndefined: Self = StObject.set(x, "infrastructureConfigurationSummaryList", js.undefined)
     
-    @scala.inline
-    def setInfrastructureConfigurationSummaryListVarargs(value: InfrastructureConfigurationSummary*): Self = StObject.set(x, "infrastructureConfigurationSummaryList", js.Array(value :_*))
+    inline def setInfrastructureConfigurationSummaryListVarargs(value: InfrastructureConfigurationSummary*): Self = StObject.set(x, "infrastructureConfigurationSummaryList", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: NonEmptyString): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: NonEmptyString): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
   }
 }

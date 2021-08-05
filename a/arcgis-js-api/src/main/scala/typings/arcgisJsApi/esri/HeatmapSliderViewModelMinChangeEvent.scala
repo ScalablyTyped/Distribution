@@ -15,23 +15,18 @@ trait HeatmapSliderViewModelMinChangeEvent extends StObject {
 }
 object HeatmapSliderViewModelMinChangeEvent {
   
-  @scala.inline
-  def apply(oldValue: Double, value: Double): HeatmapSliderViewModelMinChangeEvent = {
+  inline def apply(oldValue: Double, value: Double): HeatmapSliderViewModelMinChangeEvent = {
     val __obj = js.Dynamic.literal(oldValue = oldValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("min")
     __obj.asInstanceOf[HeatmapSliderViewModelMinChangeEvent]
   }
   
-  @scala.inline
-  implicit class HeatmapSliderViewModelMinChangeEventMutableBuilder[Self <: HeatmapSliderViewModelMinChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: HeatmapSliderViewModelMinChangeEvent](x: Self) {
     
-    @scala.inline
-    def setOldValue(value: Double): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+    inline def setOldValue(value: Double): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: min): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: min): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

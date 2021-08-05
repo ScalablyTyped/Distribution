@@ -56,61 +56,43 @@ trait NearByOptions extends StObject {
 }
 object NearByOptions {
   
-  @scala.inline
-  def apply(): NearByOptions = {
+  inline def apply(): NearByOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NearByOptions]
   }
   
-  @scala.inline
-  implicit class NearByOptionsMutableBuilder[Self <: NearByOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NearByOptions](x: Self) {
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+    inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
     
-    @scala.inline
-    def setEntrances(value: Boolean): Self = StObject.set(x, "entrances", value.asInstanceOf[js.Any])
+    inline def setEntrances(value: Boolean): Self = StObject.set(x, "entrances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntrancesUndefined: Self = StObject.set(x, "entrances", js.undefined)
+    inline def setEntrancesUndefined: Self = StObject.set(x, "entrances", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setLinesOfStops(value: Boolean): Self = StObject.set(x, "linesOfStops", value.asInstanceOf[js.Any])
+    inline def setLinesOfStops(value: Boolean): Self = StObject.set(x, "linesOfStops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinesOfStopsUndefined: Self = StObject.set(x, "linesOfStops", js.undefined)
+    inline def setLinesOfStopsUndefined: Self = StObject.set(x, "linesOfStops", js.undefined)
     
-    @scala.inline
-    def setPoi(value: Boolean): Self = StObject.set(x, "poi", value.asInstanceOf[js.Any])
+    inline def setPoi(value: Boolean): Self = StObject.set(x, "poi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoiUndefined: Self = StObject.set(x, "poi", js.undefined)
+    inline def setPoiUndefined: Self = StObject.set(x, "poi", js.undefined)
     
-    @scala.inline
-    def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    @scala.inline
-    def setStops(value: Boolean): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
+    inline def setStops(value: Boolean): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
+    inline def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
     
-    @scala.inline
-    def setSubStops(value: Boolean): Self = StObject.set(x, "subStops", value.asInstanceOf[js.Any])
+    inline def setSubStops(value: Boolean): Self = StObject.set(x, "subStops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubStopsUndefined: Self = StObject.set(x, "subStops", js.undefined)
+    inline def setSubStopsUndefined: Self = StObject.set(x, "subStops", js.undefined)
   }
 }

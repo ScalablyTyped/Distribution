@@ -36,8 +36,7 @@ trait ReposCompareCommitsResponseData extends StObject {
 }
 object ReposCompareCommitsResponseData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ahead_by: Double,
     base_commit: Commentsurl,
     behind_by: Double,
@@ -56,52 +55,36 @@ object ReposCompareCommitsResponseData {
     __obj.asInstanceOf[ReposCompareCommitsResponseData]
   }
   
-  @scala.inline
-  implicit class ReposCompareCommitsResponseDataMutableBuilder[Self <: ReposCompareCommitsResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: ReposCompareCommitsResponseData](x: Self) {
     
-    @scala.inline
-    def setAhead_by(value: Double): Self = StObject.set(x, "ahead_by", value.asInstanceOf[js.Any])
+    inline def setAhead_by(value: Double): Self = StObject.set(x, "ahead_by", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBase_commit(value: Commentsurl): Self = StObject.set(x, "base_commit", value.asInstanceOf[js.Any])
+    inline def setBase_commit(value: Commentsurl): Self = StObject.set(x, "base_commit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBehind_by(value: Double): Self = StObject.set(x, "behind_by", value.asInstanceOf[js.Any])
+    inline def setBehind_by(value: Double): Self = StObject.set(x, "behind_by", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommits(value: js.Array[Commentsurl]): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
+    inline def setCommits(value: js.Array[Commentsurl]): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitsVarargs(value: Commentsurl*): Self = StObject.set(x, "commits", js.Array(value :_*))
+    inline def setCommitsVarargs(value: Commentsurl*): Self = StObject.set(x, "commits", js.Array(value :_*))
     
-    @scala.inline
-    def setDiff_url(value: String): Self = StObject.set(x, "diff_url", value.asInstanceOf[js.Any])
+    inline def setDiff_url(value: String): Self = StObject.set(x, "diff_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiles(value: js.Array[Bloburl]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: js.Array[Bloburl]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesVarargs(value: Bloburl*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: Bloburl*): Self = StObject.set(x, "files", js.Array(value :_*))
     
-    @scala.inline
-    def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
+    inline def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerge_base_commit(value: Commentsurl): Self = StObject.set(x, "merge_base_commit", value.asInstanceOf[js.Any])
+    inline def setMerge_base_commit(value: Commentsurl): Self = StObject.set(x, "merge_base_commit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatch_url(value: String): Self = StObject.set(x, "patch_url", value.asInstanceOf[js.Any])
+    inline def setPatch_url(value: String): Self = StObject.set(x, "patch_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermalink_url(value: String): Self = StObject.set(x, "permalink_url", value.asInstanceOf[js.Any])
+    inline def setPermalink_url(value: String): Self = StObject.set(x, "permalink_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal_commits(value: Double): Self = StObject.set(x, "total_commits", value.asInstanceOf[js.Any])
+    inline def setTotal_commits(value: Double): Self = StObject.set(x, "total_commits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

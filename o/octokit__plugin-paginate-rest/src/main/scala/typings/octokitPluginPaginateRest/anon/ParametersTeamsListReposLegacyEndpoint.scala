@@ -15,8 +15,7 @@ trait ParametersTeamsListReposLegacyEndpoint extends StObject {
 }
 object ParametersTeamsListReposLegacyEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: TeamsListReposLegacyEndpoint,
     response: OctokitResponse[TeamsListReposLegacyResponseData]
   ): ParametersTeamsListReposLegacyEndpoint = {
@@ -24,13 +23,10 @@ object ParametersTeamsListReposLegacyEndpoint {
     __obj.asInstanceOf[ParametersTeamsListReposLegacyEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersTeamsListReposLegacyEndpointMutableBuilder[Self <: ParametersTeamsListReposLegacyEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersTeamsListReposLegacyEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: TeamsListReposLegacyEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: TeamsListReposLegacyEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[TeamsListReposLegacyResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[TeamsListReposLegacyResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

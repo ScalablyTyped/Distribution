@@ -32,38 +32,28 @@ object typesMod {
   }
   object IFileInfo {
     
-    @scala.inline
-    def apply(): IFileInfo = {
+    inline def apply(): IFileInfo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IFileInfo]
     }
     
-    @scala.inline
-    implicit class IFileInfoMutableBuilder[Self <: IFileInfo] (val x: Self) extends AnyVal {
+    extension [Self <: IFileInfo](x: Self) {
       
-      @scala.inline
-      def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+      inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+      inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -93,38 +83,28 @@ object typesMod {
   }
   object IReadChunkOptions {
     
-    @scala.inline
-    def apply(): IReadChunkOptions = {
+    inline def apply(): IReadChunkOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IReadChunkOptions]
     }
     
-    @scala.inline
-    implicit class IReadChunkOptionsMutableBuilder[Self <: IReadChunkOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IReadChunkOptions](x: Self) {
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+      inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
       
-      @scala.inline
-      def setMayBeLess(value: Boolean): Self = StObject.set(x, "mayBeLess", value.asInstanceOf[js.Any])
+      inline def setMayBeLess(value: Boolean): Self = StObject.set(x, "mayBeLess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMayBeLessUndefined: Self = StObject.set(x, "mayBeLess", js.undefined)
+      inline def setMayBeLessUndefined: Self = StObject.set(x, "mayBeLess", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     }
   }
   

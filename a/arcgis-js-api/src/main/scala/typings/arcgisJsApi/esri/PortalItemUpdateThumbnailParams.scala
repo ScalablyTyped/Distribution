@@ -27,8 +27,7 @@ trait PortalItemUpdateThumbnailParams
 }
 object PortalItemUpdateThumbnailParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -38,16 +37,12 @@ object PortalItemUpdateThumbnailParams {
     __obj.asInstanceOf[PortalItemUpdateThumbnailParams]
   }
   
-  @scala.inline
-  implicit class PortalItemUpdateThumbnailParamsMutableBuilder[Self <: PortalItemUpdateThumbnailParams] (val x: Self) extends AnyVal {
+  extension [Self <: PortalItemUpdateThumbnailParams](x: Self) {
     
-    @scala.inline
-    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+    inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     
-    @scala.inline
-    def setThumbnail(value: Blob | String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+    inline def setThumbnail(value: Blob | String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
   }
 }

@@ -48,8 +48,7 @@ trait FieldAttributes extends StObject {
 }
 object FieldAttributes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qDec: String,
     qFmt: String,
     qSAFEARRAY: js.Array[js.Any],
@@ -62,32 +61,23 @@ object FieldAttributes {
     __obj.asInstanceOf[FieldAttributes]
   }
   
-  @scala.inline
-  implicit class FieldAttributesMutableBuilder[Self <: FieldAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: FieldAttributes](x: Self) {
     
-    @scala.inline
-    def setQDec(value: String): Self = StObject.set(x, "qDec", value.asInstanceOf[js.Any])
+    inline def setQDec(value: String): Self = StObject.set(x, "qDec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQFmt(value: String): Self = StObject.set(x, "qFmt", value.asInstanceOf[js.Any])
+    inline def setQFmt(value: String): Self = StObject.set(x, "qFmt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQSAFEARRAY(value: js.Array[js.Any]): Self = StObject.set(x, "qSAFEARRAY", value.asInstanceOf[js.Any])
+    inline def setQSAFEARRAY(value: js.Array[js.Any]): Self = StObject.set(x, "qSAFEARRAY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQSAFEARRAYVarargs(value: js.Any*): Self = StObject.set(x, "qSAFEARRAY", js.Array(value :_*))
+    inline def setQSAFEARRAYVarargs(value: js.Any*): Self = StObject.set(x, "qSAFEARRAY", js.Array(value :_*))
     
-    @scala.inline
-    def setQThou(value: String): Self = StObject.set(x, "qThou", value.asInstanceOf[js.Any])
+    inline def setQThou(value: String): Self = StObject.set(x, "qThou", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQType(value: U | A | I | R | F | M | D | T | TS | IV): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
+    inline def setQType(value: U | A | I | R | F | M | D | T | TS | IV): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQUseThou(value: `0` | `1`): Self = StObject.set(x, "qUseThou", value.asInstanceOf[js.Any])
+    inline def setQUseThou(value: `0` | `1`): Self = StObject.set(x, "qUseThou", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQnDec(
+    inline def setQnDec(
       value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `13` | `14` | `15`
     ): Self = StObject.set(x, "qnDec", value.asInstanceOf[js.Any])
   }

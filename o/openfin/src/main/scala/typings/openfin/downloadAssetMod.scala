@@ -22,41 +22,30 @@ object downloadAssetMod {
   }
   object AppAssetInfo {
     
-    @scala.inline
-    def apply(alias: String, src: String, version: String): AppAssetInfo = {
+    inline def apply(alias: String, src: String, version: String): AppAssetInfo = {
       val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[AppAssetInfo]
     }
     
-    @scala.inline
-    implicit class AppAssetInfoMutableBuilder[Self <: AppAssetInfo] (val x: Self) extends AnyVal {
+    extension [Self <: AppAssetInfo](x: Self) {
       
-      @scala.inline
-      def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+      inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgs(value: String): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: String): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+      inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      @scala.inline
-      def setMandatory(value: Boolean): Self = StObject.set(x, "mandatory", value.asInstanceOf[js.Any])
+      inline def setMandatory(value: Boolean): Self = StObject.set(x, "mandatory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMandatoryUndefined: Self = StObject.set(x, "mandatory", js.undefined)
+      inline def setMandatoryUndefined: Self = StObject.set(x, "mandatory", js.undefined)
       
-      @scala.inline
-      def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -66,17 +55,14 @@ object downloadAssetMod {
   }
   object AppAssetRequest {
     
-    @scala.inline
-    def apply(alias: String): AppAssetRequest = {
+    inline def apply(alias: String): AppAssetRequest = {
       val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any])
       __obj.asInstanceOf[AppAssetRequest]
     }
     
-    @scala.inline
-    implicit class AppAssetRequestMutableBuilder[Self <: AppAssetRequest] (val x: Self) extends AnyVal {
+    extension [Self <: AppAssetRequest](x: Self) {
       
-      @scala.inline
-      def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+      inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     }
   }
   
@@ -86,17 +72,14 @@ object downloadAssetMod {
   }
   object RuntimeDownloadOptions {
     
-    @scala.inline
-    def apply(version: String): RuntimeDownloadOptions = {
+    inline def apply(version: String): RuntimeDownloadOptions = {
       val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[RuntimeDownloadOptions]
     }
     
-    @scala.inline
-    implicit class RuntimeDownloadOptionsMutableBuilder[Self <: RuntimeDownloadOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RuntimeDownloadOptions](x: Self) {
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -108,20 +91,16 @@ object downloadAssetMod {
   }
   object RuntimeDownloadProgress {
     
-    @scala.inline
-    def apply(downloadedBytes: Double, totalBytes: Double): RuntimeDownloadProgress = {
+    inline def apply(downloadedBytes: Double, totalBytes: Double): RuntimeDownloadProgress = {
       val __obj = js.Dynamic.literal(downloadedBytes = downloadedBytes.asInstanceOf[js.Any], totalBytes = totalBytes.asInstanceOf[js.Any])
       __obj.asInstanceOf[RuntimeDownloadProgress]
     }
     
-    @scala.inline
-    implicit class RuntimeDownloadProgressMutableBuilder[Self <: RuntimeDownloadProgress] (val x: Self) extends AnyVal {
+    extension [Self <: RuntimeDownloadProgress](x: Self) {
       
-      @scala.inline
-      def setDownloadedBytes(value: Double): Self = StObject.set(x, "downloadedBytes", value.asInstanceOf[js.Any])
+      inline def setDownloadedBytes(value: Double): Self = StObject.set(x, "downloadedBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalBytes(value: Double): Self = StObject.set(x, "totalBytes", value.asInstanceOf[js.Any])
+      inline def setTotalBytes(value: Double): Self = StObject.set(x, "totalBytes", value.asInstanceOf[js.Any])
     }
   }
 }

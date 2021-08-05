@@ -28,31 +28,23 @@ trait ListPoliciesForTargetRequest extends StObject {
 }
 object ListPoliciesForTargetRequest {
   
-  @scala.inline
-  def apply(Filter: PolicyType, TargetId: PolicyTargetId): ListPoliciesForTargetRequest = {
+  inline def apply(Filter: PolicyType, TargetId: PolicyTargetId): ListPoliciesForTargetRequest = {
     val __obj = js.Dynamic.literal(Filter = Filter.asInstanceOf[js.Any], TargetId = TargetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPoliciesForTargetRequest]
   }
   
-  @scala.inline
-  implicit class ListPoliciesForTargetRequestMutableBuilder[Self <: ListPoliciesForTargetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListPoliciesForTargetRequest](x: Self) {
     
-    @scala.inline
-    def setFilter(value: PolicyType): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: PolicyType): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTargetId(value: PolicyTargetId): Self = StObject.set(x, "TargetId", value.asInstanceOf[js.Any])
+    inline def setTargetId(value: PolicyTargetId): Self = StObject.set(x, "TargetId", value.asInstanceOf[js.Any])
   }
 }

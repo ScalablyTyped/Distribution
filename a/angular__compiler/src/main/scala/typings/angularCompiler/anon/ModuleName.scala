@@ -16,31 +16,23 @@ trait ModuleName extends StObject {
 }
 object ModuleName {
   
-  @scala.inline
-  def apply(importAs: js.Array[ImportAs], summaries: js.Array[Summary[StaticSymbol]]): ModuleName = {
+  inline def apply(importAs: js.Array[ImportAs], summaries: js.Array[Summary[StaticSymbol]]): ModuleName = {
     val __obj = js.Dynamic.literal(importAs = importAs.asInstanceOf[js.Any], summaries = summaries.asInstanceOf[js.Any], moduleName = null)
     __obj.asInstanceOf[ModuleName]
   }
   
-  @scala.inline
-  implicit class ModuleNameMutableBuilder[Self <: ModuleName] (val x: Self) extends AnyVal {
+  extension [Self <: ModuleName](x: Self) {
     
-    @scala.inline
-    def setImportAs(value: js.Array[ImportAs]): Self = StObject.set(x, "importAs", value.asInstanceOf[js.Any])
+    inline def setImportAs(value: js.Array[ImportAs]): Self = StObject.set(x, "importAs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportAsVarargs(value: ImportAs*): Self = StObject.set(x, "importAs", js.Array(value :_*))
+    inline def setImportAsVarargs(value: ImportAs*): Self = StObject.set(x, "importAs", js.Array(value :_*))
     
-    @scala.inline
-    def setModuleName(value: String): Self = StObject.set(x, "moduleName", value.asInstanceOf[js.Any])
+    inline def setModuleName(value: String): Self = StObject.set(x, "moduleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModuleNameNull: Self = StObject.set(x, "moduleName", null)
+    inline def setModuleNameNull: Self = StObject.set(x, "moduleName", null)
     
-    @scala.inline
-    def setSummaries(value: js.Array[Summary[StaticSymbol]]): Self = StObject.set(x, "summaries", value.asInstanceOf[js.Any])
+    inline def setSummaries(value: js.Array[Summary[StaticSymbol]]): Self = StObject.set(x, "summaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummariesVarargs(value: Summary[StaticSymbol]*): Self = StObject.set(x, "summaries", js.Array(value :_*))
+    inline def setSummariesVarargs(value: Summary[StaticSymbol]*): Self = StObject.set(x, "summaries", js.Array(value :_*))
   }
 }

@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PointStateValue extends StObject
 object PointStateValue {
   
-  @scala.inline
-  def hover: typings.highcharts.highchartsStrings.hover = "hover".asInstanceOf[typings.highcharts.highchartsStrings.hover]
+  inline def hover: typings.highcharts.highchartsStrings.hover = "hover".asInstanceOf[typings.highcharts.highchartsStrings.hover]
   
-  @scala.inline
-  def inactive: typings.highcharts.highchartsStrings.inactive = "inactive".asInstanceOf[typings.highcharts.highchartsStrings.inactive]
+  inline def inactive: typings.highcharts.highchartsStrings.inactive = "inactive".asInstanceOf[typings.highcharts.highchartsStrings.inactive]
   
-  @scala.inline
-  def normal: typings.highcharts.highchartsStrings.normal = "normal".asInstanceOf[typings.highcharts.highchartsStrings.normal]
+  inline def normal: typings.highcharts.highchartsStrings.normal = "normal".asInstanceOf[typings.highcharts.highchartsStrings.normal]
   
-  @scala.inline
-  def select: typings.highcharts.highchartsStrings.select = "select".asInstanceOf[typings.highcharts.highchartsStrings.select]
+  inline def select: typings.highcharts.highchartsStrings.select = "select".asInstanceOf[typings.highcharts.highchartsStrings.select]
 }

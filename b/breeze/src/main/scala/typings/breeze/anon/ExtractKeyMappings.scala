@@ -21,37 +21,27 @@ trait ExtractKeyMappings extends StObject {
 }
 object ExtractKeyMappings {
   
-  @scala.inline
-  def apply(name: String, visitNode: (js.Object, QueryContext, NodeContext) => EntityType): ExtractKeyMappings = {
+  inline def apply(name: String, visitNode: (js.Object, QueryContext, NodeContext) => EntityType): ExtractKeyMappings = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], visitNode = js.Any.fromFunction3(visitNode))
     __obj.asInstanceOf[ExtractKeyMappings]
   }
   
-  @scala.inline
-  implicit class ExtractKeyMappingsMutableBuilder[Self <: ExtractKeyMappings] (val x: Self) extends AnyVal {
+  extension [Self <: ExtractKeyMappings](x: Self) {
     
-    @scala.inline
-    def setExtractKeyMappings(value: /* data */ js.Object => js.Array[KeyMapping]): Self = StObject.set(x, "extractKeyMappings", js.Any.fromFunction1(value))
+    inline def setExtractKeyMappings(value: /* data */ js.Object => js.Array[KeyMapping]): Self = StObject.set(x, "extractKeyMappings", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExtractKeyMappingsUndefined: Self = StObject.set(x, "extractKeyMappings", js.undefined)
+    inline def setExtractKeyMappingsUndefined: Self = StObject.set(x, "extractKeyMappings", js.undefined)
     
-    @scala.inline
-    def setExtractResults(value: /* data */ js.Object => js.Object): Self = StObject.set(x, "extractResults", js.Any.fromFunction1(value))
+    inline def setExtractResults(value: /* data */ js.Object => js.Object): Self = StObject.set(x, "extractResults", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExtractResultsUndefined: Self = StObject.set(x, "extractResults", js.undefined)
+    inline def setExtractResultsUndefined: Self = StObject.set(x, "extractResults", js.undefined)
     
-    @scala.inline
-    def setExtractSaveResults(value: /* data */ js.Object => js.Array[js.Any]): Self = StObject.set(x, "extractSaveResults", js.Any.fromFunction1(value))
+    inline def setExtractSaveResults(value: /* data */ js.Object => js.Array[js.Any]): Self = StObject.set(x, "extractSaveResults", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExtractSaveResultsUndefined: Self = StObject.set(x, "extractSaveResults", js.undefined)
+    inline def setExtractSaveResultsUndefined: Self = StObject.set(x, "extractSaveResults", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisitNode(value: (js.Object, QueryContext, NodeContext) => EntityType): Self = StObject.set(x, "visitNode", js.Any.fromFunction3(value))
+    inline def setVisitNode(value: (js.Object, QueryContext, NodeContext) => EntityType): Self = StObject.set(x, "visitNode", js.Any.fromFunction3(value))
   }
 }

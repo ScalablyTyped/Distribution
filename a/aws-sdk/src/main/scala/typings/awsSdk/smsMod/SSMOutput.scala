@@ -10,19 +10,15 @@ trait SSMOutput extends StObject {
 }
 object SSMOutput {
   
-  @scala.inline
-  def apply(): SSMOutput = {
+  inline def apply(): SSMOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SSMOutput]
   }
   
-  @scala.inline
-  implicit class SSMOutputMutableBuilder[Self <: SSMOutput] (val x: Self) extends AnyVal {
+  extension [Self <: SSMOutput](x: Self) {
     
-    @scala.inline
-    def setS3Location(value: S3Location): Self = StObject.set(x, "s3Location", value.asInstanceOf[js.Any])
+    inline def setS3Location(value: S3Location): Self = StObject.set(x, "s3Location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3LocationUndefined: Self = StObject.set(x, "s3Location", js.undefined)
+    inline def setS3LocationUndefined: Self = StObject.set(x, "s3Location", js.undefined)
   }
 }

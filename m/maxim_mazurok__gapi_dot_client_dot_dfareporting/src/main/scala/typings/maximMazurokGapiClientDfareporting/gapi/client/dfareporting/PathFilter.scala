@@ -20,34 +20,25 @@ trait PathFilter extends StObject {
 }
 object PathFilter {
   
-  @scala.inline
-  def apply(): PathFilter = {
+  inline def apply(): PathFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PathFilter]
   }
   
-  @scala.inline
-  implicit class PathFilterMutableBuilder[Self <: PathFilter] (val x: Self) extends AnyVal {
+  extension [Self <: PathFilter](x: Self) {
     
-    @scala.inline
-    def setEventFilters(value: js.Array[EventFilter]): Self = StObject.set(x, "eventFilters", value.asInstanceOf[js.Any])
+    inline def setEventFilters(value: js.Array[EventFilter]): Self = StObject.set(x, "eventFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventFiltersUndefined: Self = StObject.set(x, "eventFilters", js.undefined)
+    inline def setEventFiltersUndefined: Self = StObject.set(x, "eventFilters", js.undefined)
     
-    @scala.inline
-    def setEventFiltersVarargs(value: EventFilter*): Self = StObject.set(x, "eventFilters", js.Array(value :_*))
+    inline def setEventFiltersVarargs(value: EventFilter*): Self = StObject.set(x, "eventFilters", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setPathMatchPosition(value: String): Self = StObject.set(x, "pathMatchPosition", value.asInstanceOf[js.Any])
+    inline def setPathMatchPosition(value: String): Self = StObject.set(x, "pathMatchPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathMatchPositionUndefined: Self = StObject.set(x, "pathMatchPosition", js.undefined)
+    inline def setPathMatchPositionUndefined: Self = StObject.set(x, "pathMatchPosition", js.undefined)
   }
 }

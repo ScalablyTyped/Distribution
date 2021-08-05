@@ -6,13 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(email: String): Boolean = ^.asInstanceOf[js.Dynamic].apply(email.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def apply(email: String): Boolean = ^.asInstanceOf[js.Dynamic].apply(email.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("sane-email-validation", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isNotEmail(email: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotEmail")(email.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isNotEmail(email: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotEmail")(email.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

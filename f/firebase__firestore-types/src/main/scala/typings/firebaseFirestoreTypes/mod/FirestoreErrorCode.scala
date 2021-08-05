@@ -25,51 +25,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FirestoreErrorCode extends StObject
 object FirestoreErrorCode {
   
-  @scala.inline
-  def aborted: typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.aborted = "aborted".asInstanceOf[typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.aborted]
+  inline def aborted: typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.aborted = "aborted".asInstanceOf[typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.aborted]
   
-  @scala.inline
-  def `already-exists`: typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.`already-exists` = "already-exists".asInstanceOf[typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.`already-exists`]
+  inline def `already-exists`: typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.`already-exists` = "already-exists".asInstanceOf[typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.`already-exists`]
   
-  @scala.inline
-  def cancelled: typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.cancelled = "cancelled".asInstanceOf[typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.cancelled]
+  inline def cancelled: typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.cancelled = "cancelled".asInstanceOf[typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.cancelled]
   
-  @scala.inline
-  def `data-loss`: typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.`data-loss` = "data-loss".asInstanceOf[typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.`data-loss`]
+  inline def `data-loss`: typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.`data-loss` = "data-loss".asInstanceOf[typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.`data-loss`]
   
-  @scala.inline
-  def `deadline-exceeded`: typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.`deadline-exceeded` = "deadline-exceeded".asInstanceOf[typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.`deadline-exceeded`]
+  inline def `deadline-exceeded`: typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.`deadline-exceeded` = "deadline-exceeded".asInstanceOf[typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.`deadline-exceeded`]
   
-  @scala.inline
-  def `failed-precondition`: typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.`failed-precondition` = "failed-precondition".asInstanceOf[typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.`failed-precondition`]
+  inline def `failed-precondition`: typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.`failed-precondition` = "failed-precondition".asInstanceOf[typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.`failed-precondition`]
   
-  @scala.inline
-  def internal: typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.internal = "internal".asInstanceOf[typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.internal]
+  inline def internal: typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.internal = "internal".asInstanceOf[typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.internal]
   
-  @scala.inline
-  def `invalid-argument`: typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.`invalid-argument` = "invalid-argument".asInstanceOf[typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.`invalid-argument`]
+  inline def `invalid-argument`: typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.`invalid-argument` = "invalid-argument".asInstanceOf[typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.`invalid-argument`]
   
-  @scala.inline
-  def `not-found`: typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.`not-found` = "not-found".asInstanceOf[typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.`not-found`]
+  inline def `not-found`: typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.`not-found` = "not-found".asInstanceOf[typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.`not-found`]
   
-  @scala.inline
-  def `out-of-range`: typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.`out-of-range` = "out-of-range".asInstanceOf[typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.`out-of-range`]
+  inline def `out-of-range`: typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.`out-of-range` = "out-of-range".asInstanceOf[typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.`out-of-range`]
   
-  @scala.inline
-  def `permission-denied`: typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.`permission-denied` = "permission-denied".asInstanceOf[typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.`permission-denied`]
+  inline def `permission-denied`: typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.`permission-denied` = "permission-denied".asInstanceOf[typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.`permission-denied`]
   
-  @scala.inline
-  def `resource-exhausted`: typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.`resource-exhausted` = "resource-exhausted".asInstanceOf[typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.`resource-exhausted`]
+  inline def `resource-exhausted`: typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.`resource-exhausted` = "resource-exhausted".asInstanceOf[typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.`resource-exhausted`]
   
-  @scala.inline
-  def unauthenticated: typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.unauthenticated = "unauthenticated".asInstanceOf[typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.unauthenticated]
+  inline def unauthenticated: typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.unauthenticated = "unauthenticated".asInstanceOf[typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.unauthenticated]
   
-  @scala.inline
-  def unavailable: typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.unavailable = "unavailable".asInstanceOf[typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.unavailable]
+  inline def unavailable: typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.unavailable = "unavailable".asInstanceOf[typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.unavailable]
   
-  @scala.inline
-  def unimplemented: typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.unimplemented = "unimplemented".asInstanceOf[typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.unimplemented]
+  inline def unimplemented: typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.unimplemented = "unimplemented".asInstanceOf[typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.unimplemented]
   
-  @scala.inline
-  def unknown: typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.unknown = "unknown".asInstanceOf[typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.unknown]
+  inline def unknown: typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.unknown = "unknown".asInstanceOf[typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.unknown]
 }

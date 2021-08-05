@@ -23,17 +23,14 @@ object mod {
   }
   object OEmbedAdapterConfig {
     
-    @scala.inline
-    def apply(apiKey: String): OEmbedAdapterConfig = {
+    inline def apply(apiKey: String): OEmbedAdapterConfig = {
       val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[OEmbedAdapterConfig]
     }
     
-    @scala.inline
-    implicit class OEmbedAdapterConfigMutableBuilder[Self <: OEmbedAdapterConfig] (val x: Self) extends AnyVal {
+    extension [Self <: OEmbedAdapterConfig](x: Self) {
       
-      @scala.inline
-      def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
+      inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -13,16 +13,13 @@ trait DeleteReportInput extends StObject {
 }
 object DeleteReportInput {
   
-  @scala.inline
-  def apply(arn: NonEmptyString): DeleteReportInput = {
+  inline def apply(arn: NonEmptyString): DeleteReportInput = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteReportInput]
   }
   
-  @scala.inline
-  implicit class DeleteReportInputMutableBuilder[Self <: DeleteReportInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteReportInput](x: Self) {
     
-    @scala.inline
-    def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
   }
 }

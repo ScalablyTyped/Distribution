@@ -19,12 +19,10 @@ object Dropzone {
   @JSImport("wix-style-react", "Dropzone.Content")
   @js.native
   def Content: FC[js.Object] = js.native
-  @scala.inline
-  def Content_=(x: FC[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Content")(x.asInstanceOf[js.Any])
+  inline def Content_=(x: FC[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Content")(x.asInstanceOf[js.Any])
   
   @JSImport("wix-style-react", "Dropzone.Overlay")
   @js.native
   def Overlay: FC[js.Object] = js.native
-  @scala.inline
-  def Overlay_=(x: FC[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Overlay")(x.asInstanceOf[js.Any])
+  inline def Overlay_=(x: FC[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Overlay")(x.asInstanceOf[js.Any])
 }

@@ -29,20 +29,16 @@ object coreTransportMod {
   }
   object Transport {
     
-    @scala.inline
-    def apply(protocol: String, send: String => js.Promise[Unit]): Transport = {
+    inline def apply(protocol: String, send: String => js.Promise[Unit]): Transport = {
       val __obj = js.Dynamic.literal(protocol = protocol.asInstanceOf[js.Any], send = js.Any.fromFunction1(send))
       __obj.asInstanceOf[Transport]
     }
     
-    @scala.inline
-    implicit class TransportMutableBuilder[Self <: Transport] (val x: Self) extends AnyVal {
+    extension [Self <: Transport](x: Self) {
       
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSend(value: String => js.Promise[Unit]): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
+      inline def setSend(value: String => js.Promise[Unit]): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
     }
   }
 }

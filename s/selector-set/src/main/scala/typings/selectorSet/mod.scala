@@ -25,23 +25,18 @@ object mod {
   }
   object ISelectorSetIndex {
     
-    @scala.inline
-    def apply(element: Element => js.Array[String] | Unit, name: String, selector: String => String | Unit): ISelectorSetIndex = {
+    inline def apply(element: Element => js.Array[String] | Unit, name: String, selector: String => String | Unit): ISelectorSetIndex = {
       val __obj = js.Dynamic.literal(element = js.Any.fromFunction1(element), name = name.asInstanceOf[js.Any], selector = js.Any.fromFunction1(selector))
       __obj.asInstanceOf[ISelectorSetIndex]
     }
     
-    @scala.inline
-    implicit class ISelectorSetIndexMutableBuilder[Self <: ISelectorSetIndex] (val x: Self) extends AnyVal {
+    extension [Self <: ISelectorSetIndex](x: Self) {
       
-      @scala.inline
-      def setElement(value: Element => js.Array[String] | Unit): Self = StObject.set(x, "element", js.Any.fromFunction1(value))
+      inline def setElement(value: Element => js.Array[String] | Unit): Self = StObject.set(x, "element", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelector(value: String => String | Unit): Self = StObject.set(x, "selector", js.Any.fromFunction1(value))
+      inline def setSelector(value: String => String | Unit): Self = StObject.set(x, "selector", js.Any.fromFunction1(value))
     }
   }
   

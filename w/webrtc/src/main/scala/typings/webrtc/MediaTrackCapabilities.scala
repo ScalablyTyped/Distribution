@@ -20,19 +20,15 @@ trait MediaTrackCapabilities extends StObject {
 }
 object MediaTrackCapabilities {
   
-  @scala.inline
-  def apply(): MediaTrackCapabilities = {
+  inline def apply(): MediaTrackCapabilities = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MediaTrackCapabilities]
   }
   
-  @scala.inline
-  implicit class MediaTrackCapabilitiesMutableBuilder[Self <: MediaTrackCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: MediaTrackCapabilities](x: Self) {
     
-    @scala.inline
-    def setLatency(value: DoubleRange): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
+    inline def setLatency(value: DoubleRange): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatencyUndefined: Self = StObject.set(x, "latency", js.undefined)
+    inline def setLatencyUndefined: Self = StObject.set(x, "latency", js.undefined)
   }
 }

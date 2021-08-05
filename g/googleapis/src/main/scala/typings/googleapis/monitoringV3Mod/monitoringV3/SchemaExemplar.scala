@@ -37,34 +37,25 @@ trait SchemaExemplar extends StObject {
 }
 object SchemaExemplar {
   
-  @scala.inline
-  def apply(): SchemaExemplar = {
+  inline def apply(): SchemaExemplar = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaExemplar]
   }
   
-  @scala.inline
-  implicit class SchemaExemplarMutableBuilder[Self <: SchemaExemplar] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaExemplar](x: Self) {
     
-    @scala.inline
-    def setAttachments(value: js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
+    inline def setAttachments(value: js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
+    inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
-    @scala.inline
-    def setAttachmentsVarargs(value: StringDictionary[js.Any]*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+    inline def setAttachmentsVarargs(value: StringDictionary[js.Any]*): Self = StObject.set(x, "attachments", js.Array(value :_*))
     
-    @scala.inline
-    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

@@ -18,34 +18,25 @@ trait MeetingTimeSuggestionsResult extends StObject {
 }
 object MeetingTimeSuggestionsResult {
   
-  @scala.inline
-  def apply(): MeetingTimeSuggestionsResult = {
+  inline def apply(): MeetingTimeSuggestionsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MeetingTimeSuggestionsResult]
   }
   
-  @scala.inline
-  implicit class MeetingTimeSuggestionsResultMutableBuilder[Self <: MeetingTimeSuggestionsResult] (val x: Self) extends AnyVal {
+  extension [Self <: MeetingTimeSuggestionsResult](x: Self) {
     
-    @scala.inline
-    def setEmptySuggestionsReason(value: NullableOption[String]): Self = StObject.set(x, "emptySuggestionsReason", value.asInstanceOf[js.Any])
+    inline def setEmptySuggestionsReason(value: NullableOption[String]): Self = StObject.set(x, "emptySuggestionsReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmptySuggestionsReasonNull: Self = StObject.set(x, "emptySuggestionsReason", null)
+    inline def setEmptySuggestionsReasonNull: Self = StObject.set(x, "emptySuggestionsReason", null)
     
-    @scala.inline
-    def setEmptySuggestionsReasonUndefined: Self = StObject.set(x, "emptySuggestionsReason", js.undefined)
+    inline def setEmptySuggestionsReasonUndefined: Self = StObject.set(x, "emptySuggestionsReason", js.undefined)
     
-    @scala.inline
-    def setMeetingTimeSuggestions(value: NullableOption[js.Array[MeetingTimeSuggestion]]): Self = StObject.set(x, "meetingTimeSuggestions", value.asInstanceOf[js.Any])
+    inline def setMeetingTimeSuggestions(value: NullableOption[js.Array[MeetingTimeSuggestion]]): Self = StObject.set(x, "meetingTimeSuggestions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeetingTimeSuggestionsNull: Self = StObject.set(x, "meetingTimeSuggestions", null)
+    inline def setMeetingTimeSuggestionsNull: Self = StObject.set(x, "meetingTimeSuggestions", null)
     
-    @scala.inline
-    def setMeetingTimeSuggestionsUndefined: Self = StObject.set(x, "meetingTimeSuggestions", js.undefined)
+    inline def setMeetingTimeSuggestionsUndefined: Self = StObject.set(x, "meetingTimeSuggestions", js.undefined)
     
-    @scala.inline
-    def setMeetingTimeSuggestionsVarargs(value: MeetingTimeSuggestion*): Self = StObject.set(x, "meetingTimeSuggestions", js.Array(value :_*))
+    inline def setMeetingTimeSuggestionsVarargs(value: MeetingTimeSuggestion*): Self = StObject.set(x, "meetingTimeSuggestions", js.Array(value :_*))
   }
 }

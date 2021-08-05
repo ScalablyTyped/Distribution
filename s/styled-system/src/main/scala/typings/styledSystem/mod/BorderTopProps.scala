@@ -16,25 +16,19 @@ trait BorderTopProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extend
 }
 object BorderTopProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): BorderTopProps[ThemeType, TVal] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): BorderTopProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BorderTopProps[ThemeType, TVal]]
   }
   
-  @scala.inline
-  implicit class BorderTopPropsMutableBuilder[Self <: BorderTopProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (BorderTopProps[ThemeType, TVal])) extends AnyVal {
+  extension [Self <: BorderTopProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (BorderTopProps[ThemeType, TVal])) {
     
-    @scala.inline
-    def setBorderTop(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderTop", value.asInstanceOf[js.Any])
+    inline def setBorderTop(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderTopNull: Self = StObject.set(x, "borderTop", null)
+    inline def setBorderTopNull: Self = StObject.set(x, "borderTop", null)
     
-    @scala.inline
-    def setBorderTopUndefined: Self = StObject.set(x, "borderTop", js.undefined)
+    inline def setBorderTopUndefined: Self = StObject.set(x, "borderTop", js.undefined)
     
-    @scala.inline
-    def setBorderTopVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderTop", js.Array(value :_*))
+    inline def setBorderTopVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderTop", js.Array(value :_*))
   }
 }

@@ -10,16 +10,13 @@ trait Geometry extends StObject {
 }
 object Geometry {
   
-  @scala.inline
-  def apply(location: Location): Geometry = {
+  inline def apply(location: Location): Geometry = {
     val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any])
     __obj.asInstanceOf[Geometry]
   }
   
-  @scala.inline
-  implicit class GeometryMutableBuilder[Self <: Geometry] (val x: Self) extends AnyVal {
+  extension [Self <: Geometry](x: Self) {
     
-    @scala.inline
-    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
   }
 }

@@ -55,8 +55,7 @@ trait InputJax extends StObject {
 }
 object InputJax {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Process: (js.Any, js.Any) => js.Any,
     Register: String => Unit,
     Translate: (js.Any, js.Any) => ElementJax,
@@ -70,31 +69,22 @@ object InputJax {
     __obj.asInstanceOf[InputJax]
   }
   
-  @scala.inline
-  implicit class InputJaxMutableBuilder[Self <: InputJax] (val x: Self) extends AnyVal {
+  extension [Self <: InputJax](x: Self) {
     
-    @scala.inline
-    def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
+    inline def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementJax(value: String): Self = StObject.set(x, "elementJax", value.asInstanceOf[js.Any])
+    inline def setElementJax(value: String): Self = StObject.set(x, "elementJax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeedsUpdate(value: js.Any => Boolean): Self = StObject.set(x, "needsUpdate", js.Any.fromFunction1(value))
+    inline def setNeedsUpdate(value: js.Any => Boolean): Self = StObject.set(x, "needsUpdate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setProcess(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "Process", js.Any.fromFunction2(value))
+    inline def setProcess(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "Process", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRegister(value: String => Unit): Self = StObject.set(x, "Register", js.Any.fromFunction1(value))
+    inline def setRegister(value: String => Unit): Self = StObject.set(x, "Register", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTranslate(value: (js.Any, js.Any) => ElementJax): Self = StObject.set(x, "Translate", js.Any.fromFunction2(value))
+    inline def setTranslate(value: (js.Any, js.Any) => ElementJax): Self = StObject.set(x, "Translate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

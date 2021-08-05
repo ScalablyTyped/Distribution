@@ -18,25 +18,19 @@ trait Base64Options extends StObject {
 }
 object Base64Options {
   
-  @scala.inline
-  def apply(): Base64Options = {
+  inline def apply(): Base64Options = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Base64Options]
   }
   
-  @scala.inline
-  implicit class Base64OptionsMutableBuilder[Self <: Base64Options] (val x: Self) extends AnyVal {
+  extension [Self <: Base64Options](x: Self) {
     
-    @scala.inline
-    def setPaddingRequired(value: Boolean): Self = StObject.set(x, "paddingRequired", value.asInstanceOf[js.Any])
+    inline def setPaddingRequired(value: Boolean): Self = StObject.set(x, "paddingRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingRequiredUndefined: Self = StObject.set(x, "paddingRequired", js.undefined)
+    inline def setPaddingRequiredUndefined: Self = StObject.set(x, "paddingRequired", js.undefined)
     
-    @scala.inline
-    def setUrlSafe(value: Boolean): Self = StObject.set(x, "urlSafe", value.asInstanceOf[js.Any])
+    inline def setUrlSafe(value: Boolean): Self = StObject.set(x, "urlSafe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlSafeUndefined: Self = StObject.set(x, "urlSafe", js.undefined)
+    inline def setUrlSafeUndefined: Self = StObject.set(x, "urlSafe", js.undefined)
   }
 }

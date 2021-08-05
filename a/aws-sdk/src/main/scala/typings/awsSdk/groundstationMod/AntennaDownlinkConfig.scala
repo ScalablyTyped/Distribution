@@ -13,16 +13,13 @@ trait AntennaDownlinkConfig extends StObject {
 }
 object AntennaDownlinkConfig {
   
-  @scala.inline
-  def apply(spectrumConfig: SpectrumConfig): AntennaDownlinkConfig = {
+  inline def apply(spectrumConfig: SpectrumConfig): AntennaDownlinkConfig = {
     val __obj = js.Dynamic.literal(spectrumConfig = spectrumConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[AntennaDownlinkConfig]
   }
   
-  @scala.inline
-  implicit class AntennaDownlinkConfigMutableBuilder[Self <: AntennaDownlinkConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AntennaDownlinkConfig](x: Self) {
     
-    @scala.inline
-    def setSpectrumConfig(value: SpectrumConfig): Self = StObject.set(x, "spectrumConfig", value.asInstanceOf[js.Any])
+    inline def setSpectrumConfig(value: SpectrumConfig): Self = StObject.set(x, "spectrumConfig", value.asInstanceOf[js.Any])
   }
 }

@@ -43,40 +43,29 @@ trait SchemaArtifact extends StObject {
 }
 object SchemaArtifact {
   
-  @scala.inline
-  def apply(): SchemaArtifact = {
+  inline def apply(): SchemaArtifact = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaArtifact]
   }
   
-  @scala.inline
-  implicit class SchemaArtifactMutableBuilder[Self <: SchemaArtifact] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaArtifact](x: Self) {
     
-    @scala.inline
-    def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
+    inline def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
+    inline def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+    inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
+    inline def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
     
-    @scala.inline
-    def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
   }
 }

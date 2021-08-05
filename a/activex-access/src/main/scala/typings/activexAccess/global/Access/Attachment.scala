@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.Attachment")
 @js.native
-class Attachment protected ()
+/* private */ class Attachment ()
   extends StObject
      with typings.activexAccess.Access.Attachment

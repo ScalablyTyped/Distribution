@@ -43,54 +43,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFUserAccountVaultRole extends StObject
 object MFUserAccountVaultRole {
   
-  @scala.inline
-  def ChangeMetadataStructure: `256` = 256.asInstanceOf[`256`]
+  inline def ChangeMetadataStructure: `256` = 256.asInstanceOf[`256`]
   
-  @scala.inline
-  def ChangeObjectSecurity: `128` = 128.asInstanceOf[`128`]
+  inline def ChangeObjectSecurity: `128` = 128.asInstanceOf[`128`]
   
-  @scala.inline
-  def CreateObjects: `4` = 4.asInstanceOf[`4`]
+  inline def CreateObjects: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def DefaultRoles: `3078` = 3078.asInstanceOf[`3078`]
+  inline def DefaultRoles: `3078` = 3078.asInstanceOf[`3078`]
   
-  @scala.inline
-  def DefineTemplates: `4096` = 4096.asInstanceOf[`4096`]
+  inline def DefineTemplates: `4096` = 4096.asInstanceOf[`4096`]
   
-  @scala.inline
-  def DestroyObjects: `32` = 32.asInstanceOf[`32`]
+  inline def DestroyObjects: `32` = 32.asInstanceOf[`32`]
   
-  @scala.inline
-  def ForceUndoCheckout: `64` = 64.asInstanceOf[`64`]
+  inline def ForceUndoCheckout: `64` = 64.asInstanceOf[`64`]
   
-  @scala.inline
-  def FullControl: `1` = 1.asInstanceOf[`1`]
+  inline def FullControl: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def InternalUser: `1024` = 1024.asInstanceOf[`1024`]
+  inline def InternalUser: `1024` = 1024.asInstanceOf[`1024`]
   
-  @scala.inline
-  def LogIn: `2` = 2.asInstanceOf[`2`]
+  inline def LogIn: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def ManageCommonViews: `8192` = 8192.asInstanceOf[`8192`]
+  inline def ManageCommonViews: `8192` = 8192.asInstanceOf[`8192`]
   
-  @scala.inline
-  def ManageTraditionalFolders: `2048` = 2048.asInstanceOf[`2048`]
+  inline def ManageTraditionalFolders: `2048` = 2048.asInstanceOf[`2048`]
   
-  @scala.inline
-  def ManageUserAccounts: `512` = 512.asInstanceOf[`512`]
+  inline def ManageUserAccounts: `512` = 512.asInstanceOf[`512`]
   
-  @scala.inline
-  def ManageWorkflows: `16384` = 16384.asInstanceOf[`16384`]
+  inline def ManageWorkflows: `16384` = 16384.asInstanceOf[`16384`]
   
-  @scala.inline
-  def None: `0` = 0.asInstanceOf[`0`]
+  inline def None: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def SeeAllObjects: `8` = 8.asInstanceOf[`8`]
+  inline def SeeAllObjects: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def UndeleteObjects: `16` = 16.asInstanceOf[`16`]
+  inline def UndeleteObjects: `16` = 16.asInstanceOf[`16`]
 }

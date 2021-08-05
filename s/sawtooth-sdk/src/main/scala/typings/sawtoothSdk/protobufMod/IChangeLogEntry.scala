@@ -19,46 +19,33 @@ trait IChangeLogEntry extends StObject {
 }
 object IChangeLogEntry {
   
-  @scala.inline
-  def apply(): IChangeLogEntry = {
+  inline def apply(): IChangeLogEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IChangeLogEntry]
   }
   
-  @scala.inline
-  implicit class IChangeLogEntryMutableBuilder[Self <: IChangeLogEntry] (val x: Self) extends AnyVal {
+  extension [Self <: IChangeLogEntry](x: Self) {
     
-    @scala.inline
-    def setAdditions(value: js.Array[Uint8Array]): Self = StObject.set(x, "additions", value.asInstanceOf[js.Any])
+    inline def setAdditions(value: js.Array[Uint8Array]): Self = StObject.set(x, "additions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionsNull: Self = StObject.set(x, "additions", null)
+    inline def setAdditionsNull: Self = StObject.set(x, "additions", null)
     
-    @scala.inline
-    def setAdditionsUndefined: Self = StObject.set(x, "additions", js.undefined)
+    inline def setAdditionsUndefined: Self = StObject.set(x, "additions", js.undefined)
     
-    @scala.inline
-    def setAdditionsVarargs(value: Uint8Array*): Self = StObject.set(x, "additions", js.Array(value :_*))
+    inline def setAdditionsVarargs(value: Uint8Array*): Self = StObject.set(x, "additions", js.Array(value :_*))
     
-    @scala.inline
-    def setParent(value: Uint8Array): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Uint8Array): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentNull: Self = StObject.set(x, "parent", null)
+    inline def setParentNull: Self = StObject.set(x, "parent", null)
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
-    @scala.inline
-    def setSuccessors(value: js.Array[ISuccessor]): Self = StObject.set(x, "successors", value.asInstanceOf[js.Any])
+    inline def setSuccessors(value: js.Array[ISuccessor]): Self = StObject.set(x, "successors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessorsNull: Self = StObject.set(x, "successors", null)
+    inline def setSuccessorsNull: Self = StObject.set(x, "successors", null)
     
-    @scala.inline
-    def setSuccessorsUndefined: Self = StObject.set(x, "successors", js.undefined)
+    inline def setSuccessorsUndefined: Self = StObject.set(x, "successors", js.undefined)
     
-    @scala.inline
-    def setSuccessorsVarargs(value: ISuccessor*): Self = StObject.set(x, "successors", js.Array(value :_*))
+    inline def setSuccessorsVarargs(value: ISuccessor*): Self = StObject.set(x, "successors", js.Array(value :_*))
   }
 }

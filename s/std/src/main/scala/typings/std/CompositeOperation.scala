@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CompositeOperation extends StObject
 object CompositeOperation {
   
-  @scala.inline
-  def accumulate: typings.std.stdStrings.accumulate = "accumulate".asInstanceOf[typings.std.stdStrings.accumulate]
+  inline def accumulate: typings.std.stdStrings.accumulate = "accumulate".asInstanceOf[typings.std.stdStrings.accumulate]
   
-  @scala.inline
-  def add: typings.std.stdStrings.add = "add".asInstanceOf[typings.std.stdStrings.add]
+  inline def add: typings.std.stdStrings.add = "add".asInstanceOf[typings.std.stdStrings.add]
   
-  @scala.inline
-  def replace: typings.std.stdStrings.replace = "replace".asInstanceOf[typings.std.stdStrings.replace]
+  inline def replace: typings.std.stdStrings.replace = "replace".asInstanceOf[typings.std.stdStrings.replace]
 }

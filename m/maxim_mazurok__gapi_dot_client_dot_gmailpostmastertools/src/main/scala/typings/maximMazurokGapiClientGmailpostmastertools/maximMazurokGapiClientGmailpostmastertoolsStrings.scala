@@ -8,11 +8,9 @@ object maximMazurokGapiClientGmailpostmastertoolsStrings {
   
   @js.native
   sealed trait gmailpostmastertools extends StObject
-  @scala.inline
-  def gmailpostmastertools: gmailpostmastertools = "gmailpostmastertools".asInstanceOf[gmailpostmastertools]
+  inline def gmailpostmastertools: gmailpostmastertools = "gmailpostmastertools".asInstanceOf[gmailpostmastertools]
   
   @js.native
   sealed trait v1beta1 extends StObject
-  @scala.inline
-  def v1beta1: v1beta1 = "v1beta1".asInstanceOf[v1beta1]
+  inline def v1beta1: v1beta1 = "v1beta1".asInstanceOf[v1beta1]
 }

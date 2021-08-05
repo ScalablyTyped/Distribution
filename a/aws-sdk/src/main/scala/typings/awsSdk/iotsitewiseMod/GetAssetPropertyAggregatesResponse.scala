@@ -18,25 +18,19 @@ trait GetAssetPropertyAggregatesResponse extends StObject {
 }
 object GetAssetPropertyAggregatesResponse {
   
-  @scala.inline
-  def apply(aggregatedValues: AggregatedValues): GetAssetPropertyAggregatesResponse = {
+  inline def apply(aggregatedValues: AggregatedValues): GetAssetPropertyAggregatesResponse = {
     val __obj = js.Dynamic.literal(aggregatedValues = aggregatedValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAssetPropertyAggregatesResponse]
   }
   
-  @scala.inline
-  implicit class GetAssetPropertyAggregatesResponseMutableBuilder[Self <: GetAssetPropertyAggregatesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetAssetPropertyAggregatesResponse](x: Self) {
     
-    @scala.inline
-    def setAggregatedValues(value: AggregatedValues): Self = StObject.set(x, "aggregatedValues", value.asInstanceOf[js.Any])
+    inline def setAggregatedValues(value: AggregatedValues): Self = StObject.set(x, "aggregatedValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregatedValuesVarargs(value: AggregatedValue*): Self = StObject.set(x, "aggregatedValues", js.Array(value :_*))
+    inline def setAggregatedValuesVarargs(value: AggregatedValue*): Self = StObject.set(x, "aggregatedValues", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

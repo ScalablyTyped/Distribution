@@ -15,19 +15,15 @@ trait TypeofValidator extends StObject {
 }
 object TypeofValidator {
   
-  @scala.inline
-  def apply(extend: js.Object => Validator, fn: Validator): TypeofValidator = {
+  inline def apply(extend: js.Object => Validator, fn: Validator): TypeofValidator = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofValidator]
   }
   
-  @scala.inline
-  implicit class TypeofValidatorMutableBuilder[Self <: TypeofValidator] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofValidator](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => Validator): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => Validator): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: Validator): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Validator): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

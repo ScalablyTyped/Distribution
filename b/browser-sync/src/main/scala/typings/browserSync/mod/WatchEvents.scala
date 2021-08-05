@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WatchEvents extends StObject
 object WatchEvents {
   
-  @scala.inline
-  def add: typings.browserSync.browserSyncStrings.add = "add".asInstanceOf[typings.browserSync.browserSyncStrings.add]
+  inline def add: typings.browserSync.browserSyncStrings.add = "add".asInstanceOf[typings.browserSync.browserSyncStrings.add]
   
-  @scala.inline
-  def addDir: typings.browserSync.browserSyncStrings.addDir = "addDir".asInstanceOf[typings.browserSync.browserSyncStrings.addDir]
+  inline def addDir: typings.browserSync.browserSyncStrings.addDir = "addDir".asInstanceOf[typings.browserSync.browserSyncStrings.addDir]
   
-  @scala.inline
-  def change: typings.browserSync.browserSyncStrings.change = "change".asInstanceOf[typings.browserSync.browserSyncStrings.change]
+  inline def change: typings.browserSync.browserSyncStrings.change = "change".asInstanceOf[typings.browserSync.browserSyncStrings.change]
   
-  @scala.inline
-  def unlink: typings.browserSync.browserSyncStrings.unlink = "unlink".asInstanceOf[typings.browserSync.browserSyncStrings.unlink]
+  inline def unlink: typings.browserSync.browserSyncStrings.unlink = "unlink".asInstanceOf[typings.browserSync.browserSyncStrings.unlink]
   
-  @scala.inline
-  def unlinkDir: typings.browserSync.browserSyncStrings.unlinkDir = "unlinkDir".asInstanceOf[typings.browserSync.browserSyncStrings.unlinkDir]
+  inline def unlinkDir: typings.browserSync.browserSyncStrings.unlinkDir = "unlinkDir".asInstanceOf[typings.browserSync.browserSyncStrings.unlinkDir]
 }

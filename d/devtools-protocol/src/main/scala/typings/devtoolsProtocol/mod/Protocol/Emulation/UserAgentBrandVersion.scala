@@ -12,19 +12,15 @@ trait UserAgentBrandVersion extends StObject {
 }
 object UserAgentBrandVersion {
   
-  @scala.inline
-  def apply(brand: String, version: String): UserAgentBrandVersion = {
+  inline def apply(brand: String, version: String): UserAgentBrandVersion = {
     val __obj = js.Dynamic.literal(brand = brand.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserAgentBrandVersion]
   }
   
-  @scala.inline
-  implicit class UserAgentBrandVersionMutableBuilder[Self <: UserAgentBrandVersion] (val x: Self) extends AnyVal {
+  extension [Self <: UserAgentBrandVersion](x: Self) {
     
-    @scala.inline
-    def setBrand(value: String): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
+    inline def setBrand(value: String): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

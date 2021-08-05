@@ -18,28 +18,21 @@ trait DescribeCasesResponse extends StObject {
 }
 object DescribeCasesResponse {
   
-  @scala.inline
-  def apply(): DescribeCasesResponse = {
+  inline def apply(): DescribeCasesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeCasesResponse]
   }
   
-  @scala.inline
-  implicit class DescribeCasesResponseMutableBuilder[Self <: DescribeCasesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeCasesResponse](x: Self) {
     
-    @scala.inline
-    def setCases(value: CaseList): Self = StObject.set(x, "cases", value.asInstanceOf[js.Any])
+    inline def setCases(value: CaseList): Self = StObject.set(x, "cases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCasesUndefined: Self = StObject.set(x, "cases", js.undefined)
+    inline def setCasesUndefined: Self = StObject.set(x, "cases", js.undefined)
     
-    @scala.inline
-    def setCasesVarargs(value: CaseDetails*): Self = StObject.set(x, "cases", js.Array(value :_*))
+    inline def setCasesVarargs(value: CaseDetails*): Self = StObject.set(x, "cases", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

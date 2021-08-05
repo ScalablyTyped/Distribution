@@ -18,22 +18,17 @@ trait DeleteAccessPolicyRequest extends StObject {
 }
 object DeleteAccessPolicyRequest {
   
-  @scala.inline
-  def apply(accessPolicyId: ID): DeleteAccessPolicyRequest = {
+  inline def apply(accessPolicyId: ID): DeleteAccessPolicyRequest = {
     val __obj = js.Dynamic.literal(accessPolicyId = accessPolicyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAccessPolicyRequest]
   }
   
-  @scala.inline
-  implicit class DeleteAccessPolicyRequestMutableBuilder[Self <: DeleteAccessPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAccessPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setAccessPolicyId(value: ID): Self = StObject.set(x, "accessPolicyId", value.asInstanceOf[js.Any])
+    inline def setAccessPolicyId(value: ID): Self = StObject.set(x, "accessPolicyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
   }
 }

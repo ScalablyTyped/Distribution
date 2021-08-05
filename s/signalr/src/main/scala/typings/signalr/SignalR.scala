@@ -85,29 +85,22 @@ object SignalR {
   }
   object AjaxDefaults {
     
-    @scala.inline
-    def apply(async: Boolean, cache: Boolean, global: Boolean, processData: Boolean, timeout: Double): AjaxDefaults = {
+    inline def apply(async: Boolean, cache: Boolean, global: Boolean, processData: Boolean, timeout: Double): AjaxDefaults = {
       val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], cache = cache.asInstanceOf[js.Any], global = global.asInstanceOf[js.Any], processData = processData.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
       __obj.asInstanceOf[AjaxDefaults]
     }
     
-    @scala.inline
-    implicit class AjaxDefaultsMutableBuilder[Self <: AjaxDefaults] (val x: Self) extends AnyVal {
+    extension [Self <: AjaxDefaults](x: Self) {
       
-      @scala.inline
-      def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+      inline def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessData(value: Boolean): Self = StObject.set(x, "processData", value.asInstanceOf[js.Any])
+      inline def setProcessData(value: Boolean): Self = StObject.set(x, "processData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     }
   }
   
@@ -131,8 +124,7 @@ object SignalR {
   }
   object AvailableEvents {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       onConnectionSlow: String,
       onDisconnect: String,
       onError: String,
@@ -146,32 +138,23 @@ object SignalR {
       __obj.asInstanceOf[AvailableEvents]
     }
     
-    @scala.inline
-    implicit class AvailableEventsMutableBuilder[Self <: AvailableEvents] (val x: Self) extends AnyVal {
+    extension [Self <: AvailableEvents](x: Self) {
       
-      @scala.inline
-      def setOnConnectionSlow(value: String): Self = StObject.set(x, "onConnectionSlow", value.asInstanceOf[js.Any])
+      inline def setOnConnectionSlow(value: String): Self = StObject.set(x, "onConnectionSlow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnDisconnect(value: String): Self = StObject.set(x, "onDisconnect", value.asInstanceOf[js.Any])
+      inline def setOnDisconnect(value: String): Self = StObject.set(x, "onDisconnect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnError(value: String): Self = StObject.set(x, "onError", value.asInstanceOf[js.Any])
+      inline def setOnError(value: String): Self = StObject.set(x, "onError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnReceived(value: String): Self = StObject.set(x, "onReceived", value.asInstanceOf[js.Any])
+      inline def setOnReceived(value: String): Self = StObject.set(x, "onReceived", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnReconnect(value: String): Self = StObject.set(x, "onReconnect", value.asInstanceOf[js.Any])
+      inline def setOnReconnect(value: String): Self = StObject.set(x, "onReconnect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnStart(value: String): Self = StObject.set(x, "onStart", value.asInstanceOf[js.Any])
+      inline def setOnStart(value: String): Self = StObject.set(x, "onStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnStarting(value: String): Self = StObject.set(x, "onStarting", value.asInstanceOf[js.Any])
+      inline def setOnStarting(value: String): Self = StObject.set(x, "onStarting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnStateChanged(value: String): Self = StObject.set(x, "onStateChanged", value.asInstanceOf[js.Any])
+      inline def setOnStateChanged(value: String): Self = StObject.set(x, "onStateChanged", value.asInstanceOf[js.Any])
     }
   }
   
@@ -345,29 +328,22 @@ object SignalR {
   }
   object ConnectionError {
     
-    @scala.inline
-    def apply(context: ConnectionErrorContext, message: String, name: String): ConnectionError = {
+    inline def apply(context: ConnectionErrorContext, message: String, name: String): ConnectionError = {
       val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConnectionError]
     }
     
-    @scala.inline
-    implicit class ConnectionErrorMutableBuilder[Self <: ConnectionError] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectionError](x: Self) {
       
-      @scala.inline
-      def setContext(value: ConnectionErrorContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: ConnectionErrorContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      @scala.inline
-      def setTransport(value: String): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
+      inline def setTransport(value: String): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
+      inline def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
     }
   }
   
@@ -383,26 +359,20 @@ object SignalR {
   }
   object ConnectionErrorContext {
     
-    @scala.inline
-    def apply(readyState: Double, responseText: String, status: Double, statusText: String): ConnectionErrorContext = {
+    inline def apply(readyState: Double, responseText: String, status: Double, statusText: String): ConnectionErrorContext = {
       val __obj = js.Dynamic.literal(readyState = readyState.asInstanceOf[js.Any], responseText = responseText.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConnectionErrorContext]
     }
     
-    @scala.inline
-    implicit class ConnectionErrorContextMutableBuilder[Self <: ConnectionErrorContext] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectionErrorContext](x: Self) {
       
-      @scala.inline
-      def setReadyState(value: Double): Self = StObject.set(x, "readyState", value.asInstanceOf[js.Any])
+      inline def setReadyState(value: Double): Self = StObject.set(x, "readyState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseText(value: String): Self = StObject.set(x, "responseText", value.asInstanceOf[js.Any])
+      inline def setResponseText(value: String): Self = StObject.set(x, "responseText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
+      inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
     }
   }
   
@@ -422,53 +392,38 @@ object SignalR {
   }
   object ConnectionOptions {
     
-    @scala.inline
-    def apply(): ConnectionOptions = {
+    inline def apply(): ConnectionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConnectionOptions]
     }
     
-    @scala.inline
-    implicit class ConnectionOptionsMutableBuilder[Self <: ConnectionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectionOptions](x: Self) {
       
-      @scala.inline
-      def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+      inline def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
-      @scala.inline
-      def setJsonp(value: Boolean): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
+      inline def setJsonp(value: Boolean): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonpUndefined: Self = StObject.set(x, "jsonp", js.undefined)
+      inline def setJsonpUndefined: Self = StObject.set(x, "jsonp", js.undefined)
       
-      @scala.inline
-      def setPingInterval(value: Double): Self = StObject.set(x, "pingInterval", value.asInstanceOf[js.Any])
+      inline def setPingInterval(value: Double): Self = StObject.set(x, "pingInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPingIntervalUndefined: Self = StObject.set(x, "pingInterval", js.undefined)
+      inline def setPingIntervalUndefined: Self = StObject.set(x, "pingInterval", js.undefined)
       
-      @scala.inline
-      def setTransport(value: String | js.Array[String] | Transport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
+      inline def setTransport(value: String | js.Array[String] | Transport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
+      inline def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
       
-      @scala.inline
-      def setTransportVarargs(value: String*): Self = StObject.set(x, "transport", js.Array(value :_*))
+      inline def setTransportVarargs(value: String*): Self = StObject.set(x, "transport", js.Array(value :_*))
       
-      @scala.inline
-      def setWaitForPageLoad(value: Boolean): Self = StObject.set(x, "waitForPageLoad", value.asInstanceOf[js.Any])
+      inline def setWaitForPageLoad(value: Boolean): Self = StObject.set(x, "waitForPageLoad", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWaitForPageLoadUndefined: Self = StObject.set(x, "waitForPageLoad", js.undefined)
+      inline def setWaitForPageLoadUndefined: Self = StObject.set(x, "waitForPageLoad", js.undefined)
       
-      @scala.inline
-      def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
+      inline def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
+      inline def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
     }
   }
   
@@ -481,17 +436,13 @@ object SignalR {
   trait ConnectionState extends StObject
   object ConnectionState {
     
-    @scala.inline
-    def Connected: `1` = 1.asInstanceOf[`1`]
+    inline def Connected: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def Connecting: `0` = 0.asInstanceOf[`0`]
+    inline def Connecting: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def Disconnected: `4` = 4.asInstanceOf[`4`]
+    inline def Disconnected: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def Reconnecting: `2` = 2.asInstanceOf[`2`]
+    inline def Reconnecting: `2` = 2.asInstanceOf[`2`]
   }
   
   trait ConnectionStates extends StObject {
@@ -506,26 +457,20 @@ object SignalR {
   }
   object ConnectionStates {
     
-    @scala.inline
-    def apply(connected: Double, connecting: Double, disconnected: Double, reconnecting: Double): ConnectionStates = {
+    inline def apply(connected: Double, connecting: Double, disconnected: Double, reconnecting: Double): ConnectionStates = {
       val __obj = js.Dynamic.literal(connected = connected.asInstanceOf[js.Any], connecting = connecting.asInstanceOf[js.Any], disconnected = disconnected.asInstanceOf[js.Any], reconnecting = reconnecting.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConnectionStates]
     }
     
-    @scala.inline
-    implicit class ConnectionStatesMutableBuilder[Self <: ConnectionStates] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectionStates](x: Self) {
       
-      @scala.inline
-      def setConnected(value: Double): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
+      inline def setConnected(value: Double): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnecting(value: Double): Self = StObject.set(x, "connecting", value.asInstanceOf[js.Any])
+      inline def setConnecting(value: Double): Self = StObject.set(x, "connecting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisconnected(value: Double): Self = StObject.set(x, "disconnected", value.asInstanceOf[js.Any])
+      inline def setDisconnected(value: Double): Self = StObject.set(x, "disconnected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReconnecting(value: Double): Self = StObject.set(x, "reconnecting", value.asInstanceOf[js.Any])
+      inline def setReconnecting(value: Double): Self = StObject.set(x, "reconnecting", value.asInstanceOf[js.Any])
     }
   }
   
@@ -543,26 +488,20 @@ object SignalR {
     }
     object ClientHubInvocation {
       
-      @scala.inline
-      def apply(Args: String, Hub: String, Method: String, State: String): ClientHubInvocation = {
+      inline def apply(Args: String, Hub: String, Method: String, State: String): ClientHubInvocation = {
         val __obj = js.Dynamic.literal(Args = Args.asInstanceOf[js.Any], Hub = Hub.asInstanceOf[js.Any], Method = Method.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any])
         __obj.asInstanceOf[ClientHubInvocation]
       }
       
-      @scala.inline
-      implicit class ClientHubInvocationMutableBuilder[Self <: ClientHubInvocation] (val x: Self) extends AnyVal {
+      extension [Self <: ClientHubInvocation](x: Self) {
         
-        @scala.inline
-        def setArgs(value: String): Self = StObject.set(x, "Args", value.asInstanceOf[js.Any])
+        inline def setArgs(value: String): Self = StObject.set(x, "Args", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHub(value: String): Self = StObject.set(x, "Hub", value.asInstanceOf[js.Any])
+        inline def setHub(value: String): Self = StObject.set(x, "Hub", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMethod(value: String): Self = StObject.set(x, "Method", value.asInstanceOf[js.Any])
+        inline def setMethod(value: String): Self = StObject.set(x, "Method", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setState(value: String): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+        inline def setState(value: String): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
       }
     }
     
@@ -596,17 +535,14 @@ object SignalR {
     }
     object IHub {
       
-      @scala.inline
-      def apply(start: () => Unit): IHub = {
+      inline def apply(start: () => Unit): IHub = {
         val __obj = js.Dynamic.literal(start = js.Any.fromFunction0(start))
         __obj.asInstanceOf[IHub]
       }
       
-      @scala.inline
-      implicit class IHubMutableBuilder[Self <: IHub] (val x: Self) extends AnyVal {
+      extension [Self <: IHub](x: Self) {
         
-        @scala.inline
-        def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+        inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
       }
     }
     
@@ -620,32 +556,24 @@ object SignalR {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setLogging(value: Boolean): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
+        inline def setLogging(value: Boolean): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
+        inline def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
         
-        @scala.inline
-        def setQs(value: String): Self = StObject.set(x, "qs", value.asInstanceOf[js.Any])
+        inline def setQs(value: String): Self = StObject.set(x, "qs", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setQsUndefined: Self = StObject.set(x, "qs", js.undefined)
+        inline def setQsUndefined: Self = StObject.set(x, "qs", js.undefined)
         
-        @scala.inline
-        def setUseDefaultPath(value: Boolean): Self = StObject.set(x, "useDefaultPath", value.asInstanceOf[js.Any])
+        inline def setUseDefaultPath(value: Boolean): Self = StObject.set(x, "useDefaultPath", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUseDefaultPathUndefined: Self = StObject.set(x, "useDefaultPath", js.undefined)
+        inline def setUseDefaultPathUndefined: Self = StObject.set(x, "useDefaultPath", js.undefined)
       }
     }
     
@@ -742,8 +670,7 @@ object SignalR {
   }
   object Resources {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       errorDuringStartRequest: String,
       errorOnNegotiate: String,
       errorParsingNegotiateResponse: String,
@@ -774,83 +701,57 @@ object SignalR {
       __obj.asInstanceOf[Resources]
     }
     
-    @scala.inline
-    implicit class ResourcesMutableBuilder[Self <: Resources] (val x: Self) extends AnyVal {
+    extension [Self <: Resources](x: Self) {
       
-      @scala.inline
-      def setErrorDuringStartRequest(value: String): Self = StObject.set(x, "errorDuringStartRequest", value.asInstanceOf[js.Any])
+      inline def setErrorDuringStartRequest(value: String): Self = StObject.set(x, "errorDuringStartRequest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorOnNegotiate(value: String): Self = StObject.set(x, "errorOnNegotiate", value.asInstanceOf[js.Any])
+      inline def setErrorOnNegotiate(value: String): Self = StObject.set(x, "errorOnNegotiate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorParsingNegotiateResponse(value: String): Self = StObject.set(x, "errorParsingNegotiateResponse", value.asInstanceOf[js.Any])
+      inline def setErrorParsingNegotiateResponse(value: String): Self = StObject.set(x, "errorParsingNegotiateResponse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorParsingStartResponse(value: String): Self = StObject.set(x, "errorParsingStartResponse", value.asInstanceOf[js.Any])
+      inline def setErrorParsingStartResponse(value: String): Self = StObject.set(x, "errorParsingStartResponse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventSourceError(value: String): Self = StObject.set(x, "eventSourceError", value.asInstanceOf[js.Any])
+      inline def setEventSourceError(value: String): Self = StObject.set(x, "eventSourceError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventSourceFailedToConnect(value: String): Self = StObject.set(x, "eventSourceFailedToConnect", value.asInstanceOf[js.Any])
+      inline def setEventSourceFailedToConnect(value: String): Self = StObject.set(x, "eventSourceFailedToConnect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalidStartResponse(value: String): Self = StObject.set(x, "invalidStartResponse", value.asInstanceOf[js.Any])
+      inline def setInvalidStartResponse(value: String): Self = StObject.set(x, "invalidStartResponse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongPollFailed(value: String): Self = StObject.set(x, "longPollFailed", value.asInstanceOf[js.Any])
+      inline def setLongPollFailed(value: String): Self = StObject.set(x, "longPollFailed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoConnectionTransport(value: String): Self = StObject.set(x, "noConnectionTransport", value.asInstanceOf[js.Any])
+      inline def setNoConnectionTransport(value: String): Self = StObject.set(x, "noConnectionTransport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoTransportOnInit(value: String): Self = StObject.set(x, "noTransportOnInit", value.asInstanceOf[js.Any])
+      inline def setNoTransportOnInit(value: String): Self = StObject.set(x, "noTransportOnInit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNojQuery(value: String): Self = StObject.set(x, "nojQuery", value.asInstanceOf[js.Any])
+      inline def setNojQuery(value: String): Self = StObject.set(x, "nojQuery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParseFailed(value: String): Self = StObject.set(x, "parseFailed", value.asInstanceOf[js.Any])
+      inline def setParseFailed(value: String): Self = StObject.set(x, "parseFailed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPingServerFailed(value: String): Self = StObject.set(x, "pingServerFailed", value.asInstanceOf[js.Any])
+      inline def setPingServerFailed(value: String): Self = StObject.set(x, "pingServerFailed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPingServerFailedInvalidResponse(value: String): Self = StObject.set(x, "pingServerFailedInvalidResponse", value.asInstanceOf[js.Any])
+      inline def setPingServerFailedInvalidResponse(value: String): Self = StObject.set(x, "pingServerFailedInvalidResponse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPingServerFailedParse(value: String): Self = StObject.set(x, "pingServerFailedParse", value.asInstanceOf[js.Any])
+      inline def setPingServerFailedParse(value: String): Self = StObject.set(x, "pingServerFailedParse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPingServerFailedStatusCode(value: String): Self = StObject.set(x, "pingServerFailedStatusCode", value.asInstanceOf[js.Any])
+      inline def setPingServerFailedStatusCode(value: String): Self = StObject.set(x, "pingServerFailedStatusCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolIncompatible(value: String): Self = StObject.set(x, "protocolIncompatible", value.asInstanceOf[js.Any])
+      inline def setProtocolIncompatible(value: String): Self = StObject.set(x, "protocolIncompatible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReconnectTimeout(value: String): Self = StObject.set(x, "reconnectTimeout", value.asInstanceOf[js.Any])
+      inline def setReconnectTimeout(value: String): Self = StObject.set(x, "reconnectTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReconnectWindowTimeout(value: String): Self = StObject.set(x, "reconnectWindowTimeout", value.asInstanceOf[js.Any])
+      inline def setReconnectWindowTimeout(value: String): Self = StObject.set(x, "reconnectWindowTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSendFailed(value: String): Self = StObject.set(x, "sendFailed", value.asInstanceOf[js.Any])
+      inline def setSendFailed(value: String): Self = StObject.set(x, "sendFailed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoppedDuringStartRequest(value: String): Self = StObject.set(x, "stoppedDuringStartRequest", value.asInstanceOf[js.Any])
+      inline def setStoppedDuringStartRequest(value: String): Self = StObject.set(x, "stoppedDuringStartRequest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoppedWhileLoading(value: String): Self = StObject.set(x, "stoppedWhileLoading", value.asInstanceOf[js.Any])
+      inline def setStoppedWhileLoading(value: String): Self = StObject.set(x, "stoppedWhileLoading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoppedWhileNegotiating(value: String): Self = StObject.set(x, "stoppedWhileNegotiating", value.asInstanceOf[js.Any])
+      inline def setStoppedWhileNegotiating(value: String): Self = StObject.set(x, "stoppedWhileNegotiating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebSocketClosed(value: String): Self = StObject.set(x, "webSocketClosed", value.asInstanceOf[js.Any])
+      inline def setWebSocketClosed(value: String): Self = StObject.set(x, "webSocketClosed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebSocketsInvalidState(value: String): Self = StObject.set(x, "webSocketsInvalidState", value.asInstanceOf[js.Any])
+      inline def setWebSocketsInvalidState(value: String): Self = StObject.set(x, "webSocketsInvalidState", value.asInstanceOf[js.Any])
     }
   }
   
@@ -862,20 +763,16 @@ object SignalR {
   }
   object SimplifyLocation {
     
-    @scala.inline
-    def apply(host: String, protocol: String): SimplifyLocation = {
+    inline def apply(host: String, protocol: String): SimplifyLocation = {
       val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
       __obj.asInstanceOf[SimplifyLocation]
     }
     
-    @scala.inline
-    implicit class SimplifyLocationMutableBuilder[Self <: SimplifyLocation] (val x: Self) extends AnyVal {
+    extension [Self <: SimplifyLocation](x: Self) {
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     }
   }
   
@@ -887,20 +784,16 @@ object SignalR {
   }
   object StateChanged {
     
-    @scala.inline
-    def apply(newState: Double, oldState: Double): StateChanged = {
+    inline def apply(newState: Double, oldState: Double): StateChanged = {
       val __obj = js.Dynamic.literal(newState = newState.asInstanceOf[js.Any], oldState = oldState.asInstanceOf[js.Any])
       __obj.asInstanceOf[StateChanged]
     }
     
-    @scala.inline
-    implicit class StateChangedMutableBuilder[Self <: StateChanged] (val x: Self) extends AnyVal {
+    extension [Self <: StateChanged](x: Self) {
       
-      @scala.inline
-      def setNewState(value: Double): Self = StObject.set(x, "newState", value.asInstanceOf[js.Any])
+      inline def setNewState(value: Double): Self = StObject.set(x, "newState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldState(value: Double): Self = StObject.set(x, "oldState", value.asInstanceOf[js.Any])
+      inline def setOldState(value: Double): Self = StObject.set(x, "oldState", value.asInstanceOf[js.Any])
     }
   }
   
@@ -928,8 +821,7 @@ object SignalR {
   }
   object Transport {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abort: (Connection, Boolean) => Unit,
       lostConnection: Connection => Unit,
       name: String,
@@ -943,34 +835,25 @@ object SignalR {
       __obj.asInstanceOf[Transport]
     }
     
-    @scala.inline
-    implicit class TransportMutableBuilder[Self <: Transport] (val x: Self) extends AnyVal {
+    extension [Self <: Transport](x: Self) {
       
-      @scala.inline
-      def setAbort(value: (Connection, Boolean) => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction2(value))
+      inline def setAbort(value: (Connection, Boolean) => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLostConnection(value: Connection => Unit): Self = StObject.set(x, "lostConnection", js.Any.fromFunction1(value))
+      inline def setLostConnection(value: Connection => Unit): Self = StObject.set(x, "lostConnection", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReconnect(value: Connection => Unit): Self = StObject.set(x, "reconnect", js.Any.fromFunction1(value))
+      inline def setReconnect(value: Connection => Unit): Self = StObject.set(x, "reconnect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSend(value: (Connection, js.Any) => Unit): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
+      inline def setSend(value: (Connection, js.Any) => Unit): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setStart(
+      inline def setStart(
         value: (Connection, js.Function0[Unit], js.Function1[/* error */ js.UndefOr[ConnectionError], Unit]) => Unit
       ): Self = StObject.set(x, "start", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setStop(value: Connection => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction1(value))
+      inline def setStop(value: Connection => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSupportsKeepAlive(value: () => Boolean): Self = StObject.set(x, "supportsKeepAlive", js.Any.fromFunction0(value))
+      inline def setSupportsKeepAlive(value: () => Boolean): Self = StObject.set(x, "supportsKeepAlive", js.Any.fromFunction0(value))
     }
   }
   
@@ -986,8 +869,7 @@ object SignalR {
   }
   object Transports {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       foreverFrame: Transport,
       longPolling: Transport,
       serverSentEvents: Transport,
@@ -997,20 +879,15 @@ object SignalR {
       __obj.asInstanceOf[Transports]
     }
     
-    @scala.inline
-    implicit class TransportsMutableBuilder[Self <: Transports] (val x: Self) extends AnyVal {
+    extension [Self <: Transports](x: Self) {
       
-      @scala.inline
-      def setForeverFrame(value: Transport): Self = StObject.set(x, "foreverFrame", value.asInstanceOf[js.Any])
+      inline def setForeverFrame(value: Transport): Self = StObject.set(x, "foreverFrame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongPolling(value: Transport): Self = StObject.set(x, "longPolling", value.asInstanceOf[js.Any])
+      inline def setLongPolling(value: Transport): Self = StObject.set(x, "longPolling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerSentEvents(value: Transport): Self = StObject.set(x, "serverSentEvents", value.asInstanceOf[js.Any])
+      inline def setServerSentEvents(value: Transport): Self = StObject.set(x, "serverSentEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebSockets(value: Transport): Self = StObject.set(x, "webSockets", value.asInstanceOf[js.Any])
+      inline def setWebSockets(value: Transport): Self = StObject.set(x, "webSockets", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -37,8 +37,7 @@ trait IConnectionProfile
 }
 object IConnectionProfile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     authenticationType: String,
     connectionName: String,
     databaseName: String,
@@ -55,55 +54,38 @@ object IConnectionProfile {
     __obj.asInstanceOf[IConnectionProfile]
   }
   
-  @scala.inline
-  implicit class IConnectionProfileMutableBuilder[Self <: IConnectionProfile] (val x: Self) extends AnyVal {
+  extension [Self <: IConnectionProfile](x: Self) {
     
-    @scala.inline
-    def setAuthenticationType(value: String): Self = StObject.set(x, "authenticationType", value.asInstanceOf[js.Any])
+    inline def setAuthenticationType(value: String): Self = StObject.set(x, "authenticationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAzureTenantId(value: String): Self = StObject.set(x, "azureTenantId", value.asInstanceOf[js.Any])
+    inline def setAzureTenantId(value: String): Self = StObject.set(x, "azureTenantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAzureTenantIdUndefined: Self = StObject.set(x, "azureTenantId", js.undefined)
+    inline def setAzureTenantIdUndefined: Self = StObject.set(x, "azureTenantId", js.undefined)
     
-    @scala.inline
-    def setConnectionName(value: String): Self = StObject.set(x, "connectionName", value.asInstanceOf[js.Any])
+    inline def setConnectionName(value: String): Self = StObject.set(x, "connectionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseName(value: String): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: String): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupFullName(value: String): Self = StObject.set(x, "groupFullName", value.asInstanceOf[js.Any])
+    inline def setGroupFullName(value: String): Self = StObject.set(x, "groupFullName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupFullNameUndefined: Self = StObject.set(x, "groupFullName", js.undefined)
+    inline def setGroupFullNameUndefined: Self = StObject.set(x, "groupFullName", js.undefined)
     
-    @scala.inline
-    def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
+    inline def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderName(value: String): Self = StObject.set(x, "providerName", value.asInstanceOf[js.Any])
+    inline def setProviderName(value: String): Self = StObject.set(x, "providerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSavePassword(value: Boolean): Self = StObject.set(x, "savePassword", value.asInstanceOf[js.Any])
+    inline def setSavePassword(value: Boolean): Self = StObject.set(x, "savePassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveProfile(value: Boolean): Self = StObject.set(x, "saveProfile", value.asInstanceOf[js.Any])
+    inline def setSaveProfile(value: Boolean): Self = StObject.set(x, "saveProfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerName(value: String): Self = StObject.set(x, "serverName", value.asInstanceOf[js.Any])
+    inline def setServerName(value: String): Self = StObject.set(x, "serverName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
   }
 }

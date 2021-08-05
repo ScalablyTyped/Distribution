@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tabris", "Camera")
 @js.native
-class Camera protected () extends NativeObject {
+/* private */ class Camera () extends NativeObject {
   
   /**
     * Setting `active` to true activates the camera. If it is currently assigned to a `CameraView`, the

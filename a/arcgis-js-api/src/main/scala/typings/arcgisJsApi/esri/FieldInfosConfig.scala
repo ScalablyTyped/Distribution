@@ -33,8 +33,7 @@ trait FieldInfosConfig
 }
 object FieldInfosConfig {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     fields: js.Array[Field],
     hasOwnProperty: PropertyKey => Boolean,
@@ -44,25 +43,18 @@ object FieldInfosConfig {
     __obj.asInstanceOf[FieldInfosConfig]
   }
   
-  @scala.inline
-  implicit class FieldInfosConfigMutableBuilder[Self <: FieldInfosConfig] (val x: Self) extends AnyVal {
+  extension [Self <: FieldInfosConfig](x: Self) {
     
-    @scala.inline
-    def setEditFieldsInfo(value: EditFieldsInfo): Self = StObject.set(x, "editFieldsInfo", value.asInstanceOf[js.Any])
+    inline def setEditFieldsInfo(value: EditFieldsInfo): Self = StObject.set(x, "editFieldsInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditFieldsInfoUndefined: Self = StObject.set(x, "editFieldsInfo", js.undefined)
+    inline def setEditFieldsInfoUndefined: Self = StObject.set(x, "editFieldsInfo", js.undefined)
     
-    @scala.inline
-    def setFields(value: js.Array[Field]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[Field]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsVarargs(value: Field*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: Field*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setObjectIdField(value: String): Self = StObject.set(x, "objectIdField", value.asInstanceOf[js.Any])
+    inline def setObjectIdField(value: String): Self = StObject.set(x, "objectIdField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdFieldUndefined: Self = StObject.set(x, "objectIdField", js.undefined)
+    inline def setObjectIdFieldUndefined: Self = StObject.set(x, "objectIdField", js.undefined)
   }
 }

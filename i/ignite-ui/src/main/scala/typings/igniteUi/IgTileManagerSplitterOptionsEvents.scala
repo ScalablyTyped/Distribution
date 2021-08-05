@@ -32,25 +32,19 @@ trait IgTileManagerSplitterOptionsEvents
 }
 object IgTileManagerSplitterOptionsEvents {
   
-  @scala.inline
-  def apply(): IgTileManagerSplitterOptionsEvents = {
+  inline def apply(): IgTileManagerSplitterOptionsEvents = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgTileManagerSplitterOptionsEvents]
   }
   
-  @scala.inline
-  implicit class IgTileManagerSplitterOptionsEventsMutableBuilder[Self <: IgTileManagerSplitterOptionsEvents] (val x: Self) extends AnyVal {
+  extension [Self <: IgTileManagerSplitterOptionsEvents](x: Self) {
     
-    @scala.inline
-    def setCollapsed(value: js.Any): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+    inline def setCollapsed(value: js.Any): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
+    inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
     
-    @scala.inline
-    def setExpanded(value: js.Any): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+    inline def setExpanded(value: js.Any): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
+    inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
   }
 }

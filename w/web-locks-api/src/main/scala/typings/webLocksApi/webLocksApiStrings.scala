@@ -8,11 +8,9 @@ object webLocksApiStrings {
   
   @js.native
   sealed trait exclusive extends StObject
-  @scala.inline
-  def exclusive: exclusive = "exclusive".asInstanceOf[exclusive]
+  inline def exclusive: exclusive = "exclusive".asInstanceOf[exclusive]
   
   @js.native
   sealed trait shared extends StObject
-  @scala.inline
-  def shared: shared = "shared".asInstanceOf[shared]
+  inline def shared: shared = "shared".asInstanceOf[shared]
 }

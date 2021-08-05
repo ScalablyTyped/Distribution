@@ -18,25 +18,19 @@ trait ReplicationTaskAssessmentRunProgress extends StObject {
 }
 object ReplicationTaskAssessmentRunProgress {
   
-  @scala.inline
-  def apply(): ReplicationTaskAssessmentRunProgress = {
+  inline def apply(): ReplicationTaskAssessmentRunProgress = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReplicationTaskAssessmentRunProgress]
   }
   
-  @scala.inline
-  implicit class ReplicationTaskAssessmentRunProgressMutableBuilder[Self <: ReplicationTaskAssessmentRunProgress] (val x: Self) extends AnyVal {
+  extension [Self <: ReplicationTaskAssessmentRunProgress](x: Self) {
     
-    @scala.inline
-    def setIndividualAssessmentCompletedCount(value: Integer): Self = StObject.set(x, "IndividualAssessmentCompletedCount", value.asInstanceOf[js.Any])
+    inline def setIndividualAssessmentCompletedCount(value: Integer): Self = StObject.set(x, "IndividualAssessmentCompletedCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndividualAssessmentCompletedCountUndefined: Self = StObject.set(x, "IndividualAssessmentCompletedCount", js.undefined)
+    inline def setIndividualAssessmentCompletedCountUndefined: Self = StObject.set(x, "IndividualAssessmentCompletedCount", js.undefined)
     
-    @scala.inline
-    def setIndividualAssessmentCount(value: Integer): Self = StObject.set(x, "IndividualAssessmentCount", value.asInstanceOf[js.Any])
+    inline def setIndividualAssessmentCount(value: Integer): Self = StObject.set(x, "IndividualAssessmentCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndividualAssessmentCountUndefined: Self = StObject.set(x, "IndividualAssessmentCount", js.undefined)
+    inline def setIndividualAssessmentCountUndefined: Self = StObject.set(x, "IndividualAssessmentCount", js.undefined)
   }
 }

@@ -16,25 +16,19 @@ trait All extends StObject {
 }
 object All {
   
-  @scala.inline
-  def apply(all: js.Any, ctx: Print, peer: js.Any, timeout: js.Any): All = {
+  inline def apply(all: js.Any, ctx: Print, peer: js.Any, timeout: js.Any): All = {
     val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any], ctx = ctx.asInstanceOf[js.Any], peer = peer.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[All]
   }
   
-  @scala.inline
-  implicit class AllMutableBuilder[Self <: All] (val x: Self) extends AnyVal {
+  extension [Self <: All](x: Self) {
     
-    @scala.inline
-    def setAll(value: js.Any): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    inline def setAll(value: js.Any): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCtx(value: Print): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
+    inline def setCtx(value: Print): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeer(value: js.Any): Self = StObject.set(x, "peer", value.asInstanceOf[js.Any])
+    inline def setPeer(value: js.Any): Self = StObject.set(x, "peer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

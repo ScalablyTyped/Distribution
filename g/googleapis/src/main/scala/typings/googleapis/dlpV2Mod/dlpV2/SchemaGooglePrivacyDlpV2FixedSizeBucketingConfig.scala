@@ -45,31 +45,23 @@ trait SchemaGooglePrivacyDlpV2FixedSizeBucketingConfig extends StObject {
 }
 object SchemaGooglePrivacyDlpV2FixedSizeBucketingConfig {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2FixedSizeBucketingConfig = {
+  inline def apply(): SchemaGooglePrivacyDlpV2FixedSizeBucketingConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2FixedSizeBucketingConfig]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2FixedSizeBucketingConfigMutableBuilder[Self <: SchemaGooglePrivacyDlpV2FixedSizeBucketingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2FixedSizeBucketingConfig](x: Self) {
     
-    @scala.inline
-    def setBucketSize(value: Double): Self = StObject.set(x, "bucketSize", value.asInstanceOf[js.Any])
+    inline def setBucketSize(value: Double): Self = StObject.set(x, "bucketSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketSizeUndefined: Self = StObject.set(x, "bucketSize", js.undefined)
+    inline def setBucketSizeUndefined: Self = StObject.set(x, "bucketSize", js.undefined)
     
-    @scala.inline
-    def setLowerBound(value: SchemaGooglePrivacyDlpV2Value): Self = StObject.set(x, "lowerBound", value.asInstanceOf[js.Any])
+    inline def setLowerBound(value: SchemaGooglePrivacyDlpV2Value): Self = StObject.set(x, "lowerBound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowerBoundUndefined: Self = StObject.set(x, "lowerBound", js.undefined)
+    inline def setLowerBoundUndefined: Self = StObject.set(x, "lowerBound", js.undefined)
     
-    @scala.inline
-    def setUpperBound(value: SchemaGooglePrivacyDlpV2Value): Self = StObject.set(x, "upperBound", value.asInstanceOf[js.Any])
+    inline def setUpperBound(value: SchemaGooglePrivacyDlpV2Value): Self = StObject.set(x, "upperBound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpperBoundUndefined: Self = StObject.set(x, "upperBound", js.undefined)
+    inline def setUpperBoundUndefined: Self = StObject.set(x, "upperBound", js.undefined)
   }
 }

@@ -78,20 +78,16 @@ object lockModelsMod {
   }
   object ManagementLockOwner {
     
-    @scala.inline
-    def apply(): ManagementLockOwner = {
+    inline def apply(): ManagementLockOwner = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ManagementLockOwner]
     }
     
-    @scala.inline
-    implicit class ManagementLockOwnerMutableBuilder[Self <: ManagementLockOwner] (val x: Self) extends AnyVal {
+    extension [Self <: ManagementLockOwner](x: Self) {
       
-      @scala.inline
-      def setApplicationId(value: String): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
+      inline def setApplicationId(value: String): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationIdUndefined: Self = StObject.set(x, "applicationId", js.undefined)
+      inline def setApplicationIdUndefined: Self = StObject.set(x, "applicationId", js.undefined)
     }
   }
   
@@ -109,26 +105,20 @@ object lockModelsMod {
   }
   object Operation {
     
-    @scala.inline
-    def apply(): Operation = {
+    inline def apply(): Operation = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Operation]
     }
     
-    @scala.inline
-    implicit class OperationMutableBuilder[Self <: Operation] (val x: Self) extends AnyVal {
+    extension [Self <: Operation](x: Self) {
       
-      @scala.inline
-      def setDisplay(value: OperationDisplay): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+      inline def setDisplay(value: OperationDisplay): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+      inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
   
@@ -151,32 +141,24 @@ object lockModelsMod {
   }
   object OperationDisplay {
     
-    @scala.inline
-    def apply(): OperationDisplay = {
+    inline def apply(): OperationDisplay = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OperationDisplay]
     }
     
-    @scala.inline
-    implicit class OperationDisplayMutableBuilder[Self <: OperationDisplay] (val x: Self) extends AnyVal {
+    extension [Self <: OperationDisplay](x: Self) {
       
-      @scala.inline
-      def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+      inline def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
+      inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
       
-      @scala.inline
-      def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+      inline def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
+      inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
       
-      @scala.inline
-      def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+      inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     }
   }
   

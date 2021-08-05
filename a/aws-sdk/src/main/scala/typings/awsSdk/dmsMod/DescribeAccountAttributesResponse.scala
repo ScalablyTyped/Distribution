@@ -18,28 +18,21 @@ trait DescribeAccountAttributesResponse extends StObject {
 }
 object DescribeAccountAttributesResponse {
   
-  @scala.inline
-  def apply(): DescribeAccountAttributesResponse = {
+  inline def apply(): DescribeAccountAttributesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAccountAttributesResponse]
   }
   
-  @scala.inline
-  implicit class DescribeAccountAttributesResponseMutableBuilder[Self <: DescribeAccountAttributesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAccountAttributesResponse](x: Self) {
     
-    @scala.inline
-    def setAccountQuotas(value: AccountQuotaList): Self = StObject.set(x, "AccountQuotas", value.asInstanceOf[js.Any])
+    inline def setAccountQuotas(value: AccountQuotaList): Self = StObject.set(x, "AccountQuotas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountQuotasUndefined: Self = StObject.set(x, "AccountQuotas", js.undefined)
+    inline def setAccountQuotasUndefined: Self = StObject.set(x, "AccountQuotas", js.undefined)
     
-    @scala.inline
-    def setAccountQuotasVarargs(value: AccountQuota*): Self = StObject.set(x, "AccountQuotas", js.Array(value :_*))
+    inline def setAccountQuotasVarargs(value: AccountQuota*): Self = StObject.set(x, "AccountQuotas", js.Array(value :_*))
     
-    @scala.inline
-    def setUniqueAccountIdentifier(value: String): Self = StObject.set(x, "UniqueAccountIdentifier", value.asInstanceOf[js.Any])
+    inline def setUniqueAccountIdentifier(value: String): Self = StObject.set(x, "UniqueAccountIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueAccountIdentifierUndefined: Self = StObject.set(x, "UniqueAccountIdentifier", js.undefined)
+    inline def setUniqueAccountIdentifierUndefined: Self = StObject.set(x, "UniqueAccountIdentifier", js.undefined)
   }
 }

@@ -12,8 +12,6 @@ object treeChildrenMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def TreeChildren(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("TreeChildren")().asInstanceOf[PropertyDecorator]
-  @scala.inline
-  def TreeChildren(options: Cascade): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("TreeChildren")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  inline def TreeChildren(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("TreeChildren")().asInstanceOf[PropertyDecorator]
+  inline def TreeChildren(options: Cascade): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("TreeChildren")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
 }

@@ -10,16 +10,13 @@ trait GroupWidth extends StObject {
 }
 object GroupWidth {
   
-  @scala.inline
-  def apply(groupWidth: js.Any): GroupWidth = {
+  inline def apply(groupWidth: js.Any): GroupWidth = {
     val __obj = js.Dynamic.literal(groupWidth = groupWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupWidth]
   }
   
-  @scala.inline
-  implicit class GroupWidthMutableBuilder[Self <: GroupWidth] (val x: Self) extends AnyVal {
+  extension [Self <: GroupWidth](x: Self) {
     
-    @scala.inline
-    def setGroupWidth(value: js.Any): Self = StObject.set(x, "groupWidth", value.asInstanceOf[js.Any])
+    inline def setGroupWidth(value: js.Any): Self = StObject.set(x, "groupWidth", value.asInstanceOf[js.Any])
   }
 }

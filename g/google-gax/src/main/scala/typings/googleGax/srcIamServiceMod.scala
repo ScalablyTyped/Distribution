@@ -26,15 +26,15 @@ object srcIamServiceMod {
     def this(gaxGrpc: GrpcClient, options: ClientOptions) = this()
     def this(gaxGrpc: typings.googleGax.grpcMod.GrpcClient, options: ClientOptions) = this()
     
-    var _defaults: js.Any = js.native
+    /* private */ var _defaults: js.Any = js.native
     
-    var _gaxGrpc: js.Any = js.native
+    /* private */ var _gaxGrpc: js.Any = js.native
     
-    var _opts: js.Any = js.native
+    /* private */ var _opts: js.Any = js.native
     
-    var _protos: js.Any = js.native
+    /* private */ var _protos: js.Any = js.native
     
-    var _terminated: js.Any = js.native
+    /* private */ var _terminated: js.Any = js.native
     
     var auth: js.UndefOr[GoogleAuth | OAuth2Client] = js.native
     

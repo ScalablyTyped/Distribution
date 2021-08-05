@@ -12,19 +12,15 @@ trait DebugResource extends StObject {
 }
 object DebugResource {
   
-  @scala.inline
-  def apply(datasources: DatasourcesResource, identitysources: IdentitysourcesResource): DebugResource = {
+  inline def apply(datasources: DatasourcesResource, identitysources: IdentitysourcesResource): DebugResource = {
     val __obj = js.Dynamic.literal(datasources = datasources.asInstanceOf[js.Any], identitysources = identitysources.asInstanceOf[js.Any])
     __obj.asInstanceOf[DebugResource]
   }
   
-  @scala.inline
-  implicit class DebugResourceMutableBuilder[Self <: DebugResource] (val x: Self) extends AnyVal {
+  extension [Self <: DebugResource](x: Self) {
     
-    @scala.inline
-    def setDatasources(value: DatasourcesResource): Self = StObject.set(x, "datasources", value.asInstanceOf[js.Any])
+    inline def setDatasources(value: DatasourcesResource): Self = StObject.set(x, "datasources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentitysources(value: IdentitysourcesResource): Self = StObject.set(x, "identitysources", value.asInstanceOf[js.Any])
+    inline def setIdentitysources(value: IdentitysourcesResource): Self = StObject.set(x, "identitysources", value.asInstanceOf[js.Any])
   }
 }

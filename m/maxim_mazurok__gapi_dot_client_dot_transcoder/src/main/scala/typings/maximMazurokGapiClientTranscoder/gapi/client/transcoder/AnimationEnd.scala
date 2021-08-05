@@ -11,19 +11,15 @@ trait AnimationEnd extends StObject {
 }
 object AnimationEnd {
   
-  @scala.inline
-  def apply(): AnimationEnd = {
+  inline def apply(): AnimationEnd = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnimationEnd]
   }
   
-  @scala.inline
-  implicit class AnimationEndMutableBuilder[Self <: AnimationEnd] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationEnd](x: Self) {
     
-    @scala.inline
-    def setStartTimeOffset(value: String): Self = StObject.set(x, "startTimeOffset", value.asInstanceOf[js.Any])
+    inline def setStartTimeOffset(value: String): Self = StObject.set(x, "startTimeOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeOffsetUndefined: Self = StObject.set(x, "startTimeOffset", js.undefined)
+    inline def setStartTimeOffsetUndefined: Self = StObject.set(x, "startTimeOffset", js.undefined)
   }
 }

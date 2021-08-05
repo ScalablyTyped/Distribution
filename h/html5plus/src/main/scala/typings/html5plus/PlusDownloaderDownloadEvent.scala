@@ -21,19 +21,15 @@ trait PlusDownloaderDownloadEvent extends StObject {
 }
 object PlusDownloaderDownloadEvent {
   
-  @scala.inline
-  def apply(): PlusDownloaderDownloadEvent = {
+  inline def apply(): PlusDownloaderDownloadEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusDownloaderDownloadEvent]
   }
   
-  @scala.inline
-  implicit class PlusDownloaderDownloadEventMutableBuilder[Self <: PlusDownloaderDownloadEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PlusDownloaderDownloadEvent](x: Self) {
     
-    @scala.inline
-    def setStatechanged(value: String): Self = StObject.set(x, "statechanged", value.asInstanceOf[js.Any])
+    inline def setStatechanged(value: String): Self = StObject.set(x, "statechanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatechangedUndefined: Self = StObject.set(x, "statechanged", js.undefined)
+    inline def setStatechangedUndefined: Self = StObject.set(x, "statechanged", js.undefined)
   }
 }

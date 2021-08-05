@@ -12,17 +12,13 @@ object serverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def renderToNodeStream(element: ReactElement): ReadableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("renderToNodeStream")(element.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
+  inline def renderToNodeStream(element: ReactElement): ReadableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("renderToNodeStream")(element.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
   
-  @scala.inline
-  def renderToStaticMarkup(element: ReactElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("renderToStaticMarkup")(element.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def renderToStaticMarkup(element: ReactElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("renderToStaticMarkup")(element.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def renderToStaticNodeStream(element: ReactElement): ReadableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("renderToStaticNodeStream")(element.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
+  inline def renderToStaticNodeStream(element: ReactElement): ReadableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("renderToStaticNodeStream")(element.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
   
-  @scala.inline
-  def renderToString(element: ReactElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("renderToString")(element.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def renderToString(element: ReactElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("renderToString")(element.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("react-dom/server", "version")
   @js.native

@@ -13,19 +13,15 @@ trait ComputeType extends StObject {
 }
 object ComputeType {
   
-  @scala.inline
-  def apply(): ComputeType = {
+  inline def apply(): ComputeType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ComputeType]
   }
   
-  @scala.inline
-  implicit class ComputeTypeMutableBuilder[Self <: ComputeType] (val x: Self) extends AnyVal {
+  extension [Self <: ComputeType](x: Self) {
     
-    @scala.inline
-    def setName(value: Compute): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: Compute): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

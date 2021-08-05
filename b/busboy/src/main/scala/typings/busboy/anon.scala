@@ -24,56 +24,40 @@ object anon {
   }
   object FieldNameSize {
     
-    @scala.inline
-    def apply(): FieldNameSize = {
+    inline def apply(): FieldNameSize = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FieldNameSize]
     }
     
-    @scala.inline
-    implicit class FieldNameSizeMutableBuilder[Self <: FieldNameSize] (val x: Self) extends AnyVal {
+    extension [Self <: FieldNameSize](x: Self) {
       
-      @scala.inline
-      def setFieldNameSize(value: Double): Self = StObject.set(x, "fieldNameSize", value.asInstanceOf[js.Any])
+      inline def setFieldNameSize(value: Double): Self = StObject.set(x, "fieldNameSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldNameSizeUndefined: Self = StObject.set(x, "fieldNameSize", js.undefined)
+      inline def setFieldNameSizeUndefined: Self = StObject.set(x, "fieldNameSize", js.undefined)
       
-      @scala.inline
-      def setFieldSize(value: Double): Self = StObject.set(x, "fieldSize", value.asInstanceOf[js.Any])
+      inline def setFieldSize(value: Double): Self = StObject.set(x, "fieldSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldSizeUndefined: Self = StObject.set(x, "fieldSize", js.undefined)
+      inline def setFieldSizeUndefined: Self = StObject.set(x, "fieldSize", js.undefined)
       
-      @scala.inline
-      def setFields(value: Double): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: Double): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+      inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      @scala.inline
-      def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
+      inline def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileSizeUndefined: Self = StObject.set(x, "fileSize", js.undefined)
+      inline def setFileSizeUndefined: Self = StObject.set(x, "fileSize", js.undefined)
       
-      @scala.inline
-      def setFiles(value: Double): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: Double): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+      inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      @scala.inline
-      def setHeaderPairs(value: Double): Self = StObject.set(x, "headerPairs", value.asInstanceOf[js.Any])
+      inline def setHeaderPairs(value: Double): Self = StObject.set(x, "headerPairs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderPairsUndefined: Self = StObject.set(x, "headerPairs", js.undefined)
+      inline def setHeaderPairsUndefined: Self = StObject.set(x, "headerPairs", js.undefined)
       
-      @scala.inline
-      def setParts(value: Double): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
+      inline def setParts(value: Double): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartsUndefined: Self = StObject.set(x, "parts", js.undefined)
+      inline def setPartsUndefined: Self = StObject.set(x, "parts", js.undefined)
     }
   }
 }

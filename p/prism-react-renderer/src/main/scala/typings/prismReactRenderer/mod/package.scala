@@ -5,11 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def Prism: typings.prismReactRenderer.mod.PrismLib = typings.prismReactRenderer.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Prism").asInstanceOf[typings.prismReactRenderer.mod.PrismLib]
+inline def Prism: typings.prismReactRenderer.mod.PrismLib = typings.prismReactRenderer.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Prism").asInstanceOf[typings.prismReactRenderer.mod.PrismLib]
 
-@scala.inline
-def defaultProps: typings.prismReactRenderer.mod.DefaultProps_ = typings.prismReactRenderer.mod.^.asInstanceOf[js.Dynamic].selectDynamic("defaultProps").asInstanceOf[typings.prismReactRenderer.mod.DefaultProps_]
+inline def defaultProps: typings.prismReactRenderer.mod.DefaultProps_ = typings.prismReactRenderer.mod.^.asInstanceOf[js.Dynamic].selectDynamic("defaultProps").asInstanceOf[typings.prismReactRenderer.mod.DefaultProps_]
 
 type PrismGrammar = org.scalablytyped.runtime.StringDictionary[js.Any]
 

@@ -16,8 +16,7 @@ trait SilenceTimeEndHour extends StObject {
 }
 object SilenceTimeEndHour {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     silenceTimeEndHour: Double,
     silenceTimeEndMinute: Double,
     silenceTimeStartHour: Double,
@@ -27,19 +26,14 @@ object SilenceTimeEndHour {
     __obj.asInstanceOf[SilenceTimeEndHour]
   }
   
-  @scala.inline
-  implicit class SilenceTimeEndHourMutableBuilder[Self <: SilenceTimeEndHour] (val x: Self) extends AnyVal {
+  extension [Self <: SilenceTimeEndHour](x: Self) {
     
-    @scala.inline
-    def setSilenceTimeEndHour(value: Double): Self = StObject.set(x, "silenceTimeEndHour", value.asInstanceOf[js.Any])
+    inline def setSilenceTimeEndHour(value: Double): Self = StObject.set(x, "silenceTimeEndHour", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSilenceTimeEndMinute(value: Double): Self = StObject.set(x, "silenceTimeEndMinute", value.asInstanceOf[js.Any])
+    inline def setSilenceTimeEndMinute(value: Double): Self = StObject.set(x, "silenceTimeEndMinute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSilenceTimeStartHour(value: Double): Self = StObject.set(x, "silenceTimeStartHour", value.asInstanceOf[js.Any])
+    inline def setSilenceTimeStartHour(value: Double): Self = StObject.set(x, "silenceTimeStartHour", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSilenceTimeStartMinute(value: Double): Self = StObject.set(x, "silenceTimeStartMinute", value.asInstanceOf[js.Any])
+    inline def setSilenceTimeStartMinute(value: Double): Self = StObject.set(x, "silenceTimeStartMinute", value.asInstanceOf[js.Any])
   }
 }

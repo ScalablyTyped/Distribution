@@ -34,20 +34,16 @@ object mod extends Shortcut {
   }
   object DropDownOption {
     
-    @scala.inline
-    def apply[T](label: String | Double, value: T): DropDownOption[T] = {
+    inline def apply[T](label: String | Double, value: T): DropDownOption[T] = {
       val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[DropDownOption[T]]
     }
     
-    @scala.inline
-    implicit class DropDownOptionMutableBuilder[Self <: DropDownOption[?], T] (val x: Self & DropDownOption[T]) extends AnyVal {
+    extension [Self <: DropDownOption[?], T](x: Self & DropDownOption[T]) {
       
-      @scala.inline
-      def setLabel(value: String | Double): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String | Double): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -61,23 +57,18 @@ object mod extends Shortcut {
   }
   object DropDownSelection {
     
-    @scala.inline
-    def apply[T](index: Double, label: String, value: T): DropDownSelection[T] = {
+    inline def apply[T](index: Double, label: String, value: T): DropDownSelection[T] = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[DropDownSelection[T]]
     }
     
-    @scala.inline
-    implicit class DropDownSelectionMutableBuilder[Self <: DropDownSelection[?], T] (val x: Self & DropDownSelection[T]) extends AnyVal {
+    extension [Self <: DropDownSelection[?], T](x: Self & DropDownSelection[T]) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

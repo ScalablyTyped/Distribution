@@ -21,8 +21,7 @@ trait CrossFilterTransform
 }
 object CrossFilterTransform {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fields: (js.Array[String | TransformField]) | SignalRef,
     query: (js.Array[(Vector2[Double | SignalRef]) | SignalRef]) | SignalRef
   ): CrossFilterTransform = {
@@ -31,28 +30,20 @@ object CrossFilterTransform {
     __obj.asInstanceOf[CrossFilterTransform]
   }
   
-  @scala.inline
-  implicit class CrossFilterTransformMutableBuilder[Self <: CrossFilterTransform] (val x: Self) extends AnyVal {
+  extension [Self <: CrossFilterTransform](x: Self) {
     
-    @scala.inline
-    def setFields(value: (js.Array[String | TransformField]) | SignalRef): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: (js.Array[String | TransformField]) | SignalRef): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsVarargs(value: (String | TransformField)*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: (String | TransformField)*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setQuery(value: (js.Array[(Vector2[Double | SignalRef]) | SignalRef]) | SignalRef): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: (js.Array[(Vector2[Double | SignalRef]) | SignalRef]) | SignalRef): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryVarargs(value: ((Vector2[Double | SignalRef]) | SignalRef)*): Self = StObject.set(x, "query", js.Array(value :_*))
+    inline def setQueryVarargs(value: ((Vector2[Double | SignalRef]) | SignalRef)*): Self = StObject.set(x, "query", js.Array(value :_*))
     
-    @scala.inline
-    def setSignal(value: SignalName): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    inline def setSignal(value: SignalName): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
-    @scala.inline
-    def setType(value: crossfilter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: crossfilter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

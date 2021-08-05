@@ -21,19 +21,15 @@ trait SecretReference extends StObject {
 }
 object SecretReference {
   
-  @scala.inline
-  def apply(name: String, namespace: String): SecretReference = {
+  inline def apply(name: String, namespace: String): SecretReference = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecretReference]
   }
   
-  @scala.inline
-  implicit class SecretReferenceMutableBuilder[Self <: SecretReference] (val x: Self) extends AnyVal {
+  extension [Self <: SecretReference](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
   }
 }

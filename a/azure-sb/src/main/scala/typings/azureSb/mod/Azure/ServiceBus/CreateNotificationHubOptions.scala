@@ -17,37 +17,27 @@ trait CreateNotificationHubOptions extends StObject {
 }
 object CreateNotificationHubOptions {
   
-  @scala.inline
-  def apply(): CreateNotificationHubOptions = {
+  inline def apply(): CreateNotificationHubOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateNotificationHubOptions]
   }
   
-  @scala.inline
-  implicit class CreateNotificationHubOptionsMutableBuilder[Self <: CreateNotificationHubOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CreateNotificationHubOptions](x: Self) {
     
-    @scala.inline
-    def setApns(value: Dictionary[String]): Self = StObject.set(x, "apns", value.asInstanceOf[js.Any])
+    inline def setApns(value: Dictionary[String]): Self = StObject.set(x, "apns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApnsUndefined: Self = StObject.set(x, "apns", js.undefined)
+    inline def setApnsUndefined: Self = StObject.set(x, "apns", js.undefined)
     
-    @scala.inline
-    def setGcm(value: Dictionary[String]): Self = StObject.set(x, "gcm", value.asInstanceOf[js.Any])
+    inline def setGcm(value: Dictionary[String]): Self = StObject.set(x, "gcm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcmUndefined: Self = StObject.set(x, "gcm", js.undefined)
+    inline def setGcmUndefined: Self = StObject.set(x, "gcm", js.undefined)
     
-    @scala.inline
-    def setMpns(value: Dictionary[String]): Self = StObject.set(x, "mpns", value.asInstanceOf[js.Any])
+    inline def setMpns(value: Dictionary[String]): Self = StObject.set(x, "mpns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMpnsUndefined: Self = StObject.set(x, "mpns", js.undefined)
+    inline def setMpnsUndefined: Self = StObject.set(x, "mpns", js.undefined)
     
-    @scala.inline
-    def setWns(value: Dictionary[String]): Self = StObject.set(x, "wns", value.asInstanceOf[js.Any])
+    inline def setWns(value: Dictionary[String]): Self = StObject.set(x, "wns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWnsUndefined: Self = StObject.set(x, "wns", js.undefined)
+    inline def setWnsUndefined: Self = StObject.set(x, "wns", js.undefined)
   }
 }

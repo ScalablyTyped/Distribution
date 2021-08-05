@@ -89,84 +89,62 @@ object textMod extends Shortcut {
   }
   object Props {
     
-    @scala.inline
-    def apply(): Props = {
+    inline def apply(): Props = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setBackgroundColor(
+      inline def setBackgroundColor(
         value: LiteralUnion[
               /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BackgroundColor */ js.Any, 
               String
             ]
       ): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+      inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      @scala.inline
-      def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
+      inline def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
+      inline def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setColor(
+      inline def setColor(
         value: LiteralUnion[
               /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ForegroundColor */ js.Any, 
               String
             ]
       ): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setDimColor(value: Boolean): Self = StObject.set(x, "dimColor", value.asInstanceOf[js.Any])
+      inline def setDimColor(value: Boolean): Self = StObject.set(x, "dimColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDimColorUndefined: Self = StObject.set(x, "dimColor", js.undefined)
+      inline def setDimColorUndefined: Self = StObject.set(x, "dimColor", js.undefined)
       
-      @scala.inline
-      def setInverse(value: Boolean): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
+      inline def setInverse(value: Boolean): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInverseUndefined: Self = StObject.set(x, "inverse", js.undefined)
+      inline def setInverseUndefined: Self = StObject.set(x, "inverse", js.undefined)
       
-      @scala.inline
-      def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
+      inline def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
+      inline def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
       
-      @scala.inline
-      def setStrikethrough(value: Boolean): Self = StObject.set(x, "strikethrough", value.asInstanceOf[js.Any])
+      inline def setStrikethrough(value: Boolean): Self = StObject.set(x, "strikethrough", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrikethroughUndefined: Self = StObject.set(x, "strikethrough", js.undefined)
+      inline def setStrikethroughUndefined: Self = StObject.set(x, "strikethrough", js.undefined)
       
-      @scala.inline
-      def setUnderline(value: Boolean): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
+      inline def setUnderline(value: Boolean): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
+      inline def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
       
-      @scala.inline
-      def setWrap(value: wrap | end | middle | `truncate-end` | truncate | `truncate-middle` | `truncate-start`): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+      inline def setWrap(value: wrap | end | middle | `truncate-end` | truncate | `truncate-middle` | `truncate-start`): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
+      inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
     }
   }
   

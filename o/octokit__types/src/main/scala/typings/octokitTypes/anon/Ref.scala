@@ -14,22 +14,17 @@ trait Ref extends StObject {
 }
 object Ref {
   
-  @scala.inline
-  def apply(ref: String, repo: IdName, sha: String): Ref = {
+  inline def apply(ref: String, repo: IdName, sha: String): Ref = {
     val __obj = js.Dynamic.literal(ref = ref.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ref]
   }
   
-  @scala.inline
-  implicit class RefMutableBuilder[Self <: Ref] (val x: Self) extends AnyVal {
+  extension [Self <: Ref](x: Self) {
     
-    @scala.inline
-    def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: IdName): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: IdName): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
+    inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
   }
 }

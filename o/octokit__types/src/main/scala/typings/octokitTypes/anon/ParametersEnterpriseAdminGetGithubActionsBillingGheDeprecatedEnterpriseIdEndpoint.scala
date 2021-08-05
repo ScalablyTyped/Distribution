@@ -18,8 +18,7 @@ trait ParametersEnterpriseAdminGetGithubActionsBillingGheDeprecatedEnterpriseIdE
 }
 object ParametersEnterpriseAdminGetGithubActionsBillingGheDeprecatedEnterpriseIdEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: EnterpriseAdminGetGithubActionsBillingGheDeprecatedEnterpriseIdEndpoint,
     request: EnterpriseAdminGetGithubActionsBillingGheRequestOptions,
     response: OctokitResponse[EnterpriseAdminGetGithubActionsBillingGheResponseData]
@@ -28,16 +27,12 @@ object ParametersEnterpriseAdminGetGithubActionsBillingGheDeprecatedEnterpriseId
     __obj.asInstanceOf[ParametersEnterpriseAdminGetGithubActionsBillingGheDeprecatedEnterpriseIdEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersEnterpriseAdminGetGithubActionsBillingGheDeprecatedEnterpriseIdEndpointMutableBuilder[Self <: ParametersEnterpriseAdminGetGithubActionsBillingGheDeprecatedEnterpriseIdEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersEnterpriseAdminGetGithubActionsBillingGheDeprecatedEnterpriseIdEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: EnterpriseAdminGetGithubActionsBillingGheDeprecatedEnterpriseIdEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: EnterpriseAdminGetGithubActionsBillingGheDeprecatedEnterpriseIdEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: EnterpriseAdminGetGithubActionsBillingGheRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: EnterpriseAdminGetGithubActionsBillingGheRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[EnterpriseAdminGetGithubActionsBillingGheResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[EnterpriseAdminGetGithubActionsBillingGheResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

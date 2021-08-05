@@ -32,7 +32,6 @@ object portalDetailMod {
     @JSGlobal("portalDetail")
     @js.native
     def portalDetail: PortalDetail_ = js.native
-    @scala.inline
-    def portalDetail_=(x: PortalDetail_): Unit = js.Dynamic.global.updateDynamic("portalDetail")(x.asInstanceOf[js.Any])
+    inline def portalDetail_=(x: PortalDetail_): Unit = js.Dynamic.global.updateDynamic("portalDetail")(x.asInstanceOf[js.Any])
   }
 }

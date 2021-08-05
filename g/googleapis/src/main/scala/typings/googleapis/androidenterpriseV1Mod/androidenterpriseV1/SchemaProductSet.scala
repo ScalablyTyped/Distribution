@@ -50,43 +50,31 @@ trait SchemaProductSet extends StObject {
 }
 object SchemaProductSet {
   
-  @scala.inline
-  def apply(): SchemaProductSet = {
+  inline def apply(): SchemaProductSet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaProductSet]
   }
   
-  @scala.inline
-  implicit class SchemaProductSetMutableBuilder[Self <: SchemaProductSet] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaProductSet](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setProductId(value: js.Array[String]): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: js.Array[String]): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
+    inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
     
-    @scala.inline
-    def setProductIdVarargs(value: String*): Self = StObject.set(x, "productId", js.Array(value :_*))
+    inline def setProductIdVarargs(value: String*): Self = StObject.set(x, "productId", js.Array(value :_*))
     
-    @scala.inline
-    def setProductSetBehavior(value: String): Self = StObject.set(x, "productSetBehavior", value.asInstanceOf[js.Any])
+    inline def setProductSetBehavior(value: String): Self = StObject.set(x, "productSetBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductSetBehaviorUndefined: Self = StObject.set(x, "productSetBehavior", js.undefined)
+    inline def setProductSetBehaviorUndefined: Self = StObject.set(x, "productSetBehavior", js.undefined)
     
-    @scala.inline
-    def setProductVisibility(value: js.Array[SchemaProductVisibility]): Self = StObject.set(x, "productVisibility", value.asInstanceOf[js.Any])
+    inline def setProductVisibility(value: js.Array[SchemaProductVisibility]): Self = StObject.set(x, "productVisibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductVisibilityUndefined: Self = StObject.set(x, "productVisibility", js.undefined)
+    inline def setProductVisibilityUndefined: Self = StObject.set(x, "productVisibility", js.undefined)
     
-    @scala.inline
-    def setProductVisibilityVarargs(value: SchemaProductVisibility*): Self = StObject.set(x, "productVisibility", js.Array(value :_*))
+    inline def setProductVisibilityVarargs(value: SchemaProductVisibility*): Self = StObject.set(x, "productVisibility", js.Array(value :_*))
   }
 }

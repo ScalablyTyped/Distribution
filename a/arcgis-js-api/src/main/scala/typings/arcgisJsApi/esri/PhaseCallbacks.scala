@@ -33,8 +33,7 @@ trait PhaseCallbacks
 }
 object PhaseCallbacks {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -43,25 +42,18 @@ object PhaseCallbacks {
     __obj.asInstanceOf[PhaseCallbacks]
   }
   
-  @scala.inline
-  implicit class PhaseCallbacksMutableBuilder[Self <: PhaseCallbacks] (val x: Self) extends AnyVal {
+  extension [Self <: PhaseCallbacks](x: Self) {
     
-    @scala.inline
-    def setPrepare(value: /* event */ js.UndefOr[PhaseEvent] => Unit): Self = StObject.set(x, "prepare", js.Any.fromFunction1(value))
+    inline def setPrepare(value: /* event */ js.UndefOr[PhaseEvent] => Unit): Self = StObject.set(x, "prepare", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPrepareUndefined: Self = StObject.set(x, "prepare", js.undefined)
+    inline def setPrepareUndefined: Self = StObject.set(x, "prepare", js.undefined)
     
-    @scala.inline
-    def setRender(value: /* event */ js.UndefOr[PhaseEvent] => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+    inline def setRender(value: /* event */ js.UndefOr[PhaseEvent] => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+    inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     
-    @scala.inline
-    def setUpdate(value: /* event */ js.UndefOr[PhaseEvent] => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+    inline def setUpdate(value: /* event */ js.UndefOr[PhaseEvent] => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+    inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

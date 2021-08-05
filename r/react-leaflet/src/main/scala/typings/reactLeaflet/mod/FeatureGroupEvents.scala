@@ -24,55 +24,39 @@ trait FeatureGroupEvents extends StObject {
 }
 object FeatureGroupEvents {
   
-  @scala.inline
-  def apply(): FeatureGroupEvents = {
+  inline def apply(): FeatureGroupEvents = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FeatureGroupEvents]
   }
   
-  @scala.inline
-  implicit class FeatureGroupEventsMutableBuilder[Self <: FeatureGroupEvents] (val x: Self) extends AnyVal {
+  extension [Self <: FeatureGroupEvents](x: Self) {
     
-    @scala.inline
-    def setOnclick(value: /* event */ LeafletMouseEvent => Unit): Self = StObject.set(x, "onclick", js.Any.fromFunction1(value))
+    inline def setOnclick(value: /* event */ LeafletMouseEvent => Unit): Self = StObject.set(x, "onclick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnclickUndefined: Self = StObject.set(x, "onclick", js.undefined)
+    inline def setOnclickUndefined: Self = StObject.set(x, "onclick", js.undefined)
     
-    @scala.inline
-    def setOncontextmenu(value: /* event */ LeafletMouseEvent => Unit): Self = StObject.set(x, "oncontextmenu", js.Any.fromFunction1(value))
+    inline def setOncontextmenu(value: /* event */ LeafletMouseEvent => Unit): Self = StObject.set(x, "oncontextmenu", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOncontextmenuUndefined: Self = StObject.set(x, "oncontextmenu", js.undefined)
+    inline def setOncontextmenuUndefined: Self = StObject.set(x, "oncontextmenu", js.undefined)
     
-    @scala.inline
-    def setOndblclick(value: /* event */ LeafletMouseEvent => Unit): Self = StObject.set(x, "ondblclick", js.Any.fromFunction1(value))
+    inline def setOndblclick(value: /* event */ LeafletMouseEvent => Unit): Self = StObject.set(x, "ondblclick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOndblclickUndefined: Self = StObject.set(x, "ondblclick", js.undefined)
+    inline def setOndblclickUndefined: Self = StObject.set(x, "ondblclick", js.undefined)
     
-    @scala.inline
-    def setOnlayeradd(value: /* event */ LayerEvent => Unit): Self = StObject.set(x, "onlayeradd", js.Any.fromFunction1(value))
+    inline def setOnlayeradd(value: /* event */ LayerEvent => Unit): Self = StObject.set(x, "onlayeradd", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnlayeraddUndefined: Self = StObject.set(x, "onlayeradd", js.undefined)
+    inline def setOnlayeraddUndefined: Self = StObject.set(x, "onlayeradd", js.undefined)
     
-    @scala.inline
-    def setOnlayerremove(value: /* event */ LayerEvent => Unit): Self = StObject.set(x, "onlayerremove", js.Any.fromFunction1(value))
+    inline def setOnlayerremove(value: /* event */ LayerEvent => Unit): Self = StObject.set(x, "onlayerremove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnlayerremoveUndefined: Self = StObject.set(x, "onlayerremove", js.undefined)
+    inline def setOnlayerremoveUndefined: Self = StObject.set(x, "onlayerremove", js.undefined)
     
-    @scala.inline
-    def setOnmouseout(value: /* event */ LeafletMouseEvent => Unit): Self = StObject.set(x, "onmouseout", js.Any.fromFunction1(value))
+    inline def setOnmouseout(value: /* event */ LeafletMouseEvent => Unit): Self = StObject.set(x, "onmouseout", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnmouseoutUndefined: Self = StObject.set(x, "onmouseout", js.undefined)
+    inline def setOnmouseoutUndefined: Self = StObject.set(x, "onmouseout", js.undefined)
     
-    @scala.inline
-    def setOnmouseover(value: /* event */ LeafletMouseEvent => Unit): Self = StObject.set(x, "onmouseover", js.Any.fromFunction1(value))
+    inline def setOnmouseover(value: /* event */ LeafletMouseEvent => Unit): Self = StObject.set(x, "onmouseover", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnmouseoverUndefined: Self = StObject.set(x, "onmouseover", js.undefined)
+    inline def setOnmouseoverUndefined: Self = StObject.set(x, "onmouseover", js.undefined)
   }
 }

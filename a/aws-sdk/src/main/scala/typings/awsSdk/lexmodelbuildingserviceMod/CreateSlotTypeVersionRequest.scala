@@ -18,22 +18,17 @@ trait CreateSlotTypeVersionRequest extends StObject {
 }
 object CreateSlotTypeVersionRequest {
   
-  @scala.inline
-  def apply(name: SlotTypeName): CreateSlotTypeVersionRequest = {
+  inline def apply(name: SlotTypeName): CreateSlotTypeVersionRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSlotTypeVersionRequest]
   }
   
-  @scala.inline
-  implicit class CreateSlotTypeVersionRequestMutableBuilder[Self <: CreateSlotTypeVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSlotTypeVersionRequest](x: Self) {
     
-    @scala.inline
-    def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
+    inline def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
+    inline def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
     
-    @scala.inline
-    def setName(value: SlotTypeName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: SlotTypeName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

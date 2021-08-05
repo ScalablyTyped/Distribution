@@ -24,37 +24,27 @@ trait TransitionProps extends StObject {
 }
 object TransitionProps {
   
-  @scala.inline
-  def apply(): TransitionProps = {
+  inline def apply(): TransitionProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TransitionProps]
   }
   
-  @scala.inline
-  implicit class TransitionPropsMutableBuilder[Self <: TransitionProps] (val x: Self) extends AnyVal {
+  extension [Self <: TransitionProps](x: Self) {
     
-    @scala.inline
-    def setDelayMs(value: Double): Self = StObject.set(x, "delayMs", value.asInstanceOf[js.Any])
+    inline def setDelayMs(value: Double): Self = StObject.set(x, "delayMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayMsUndefined: Self = StObject.set(x, "delayMs", js.undefined)
+    inline def setDelayMsUndefined: Self = StObject.set(x, "delayMs", js.undefined)
     
-    @scala.inline
-    def setDurationMs(value: Double): Self = StObject.set(x, "durationMs", value.asInstanceOf[js.Any])
+    inline def setDurationMs(value: Double): Self = StObject.set(x, "durationMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationMsUndefined: Self = StObject.set(x, "durationMs", js.undefined)
+    inline def setDurationMsUndefined: Self = StObject.set(x, "durationMs", js.undefined)
     
-    @scala.inline
-    def setInterpolation(value: linear | easeIn | easeOut | easeInOut): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
+    inline def setInterpolation(value: linear | easeIn | easeOut | easeInOut): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterpolationUndefined: Self = StObject.set(x, "interpolation", js.undefined)
+    inline def setInterpolationUndefined: Self = StObject.set(x, "interpolation", js.undefined)
     
-    @scala.inline
-    def setPropagation(value: top | bottom | left | right): Self = StObject.set(x, "propagation", value.asInstanceOf[js.Any])
+    inline def setPropagation(value: top | bottom | left | right): Self = StObject.set(x, "propagation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropagationUndefined: Self = StObject.set(x, "propagation", js.undefined)
+    inline def setPropagationUndefined: Self = StObject.set(x, "propagation", js.undefined)
   }
 }

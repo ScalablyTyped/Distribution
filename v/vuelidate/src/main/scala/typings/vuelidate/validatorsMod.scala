@@ -14,90 +14,60 @@ object validatorsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def alpha(): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("alpha")().asInstanceOf[ValidationRule]
+  inline def alpha(): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("alpha")().asInstanceOf[ValidationRule]
   
-  @scala.inline
-  def alphaNum(): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("alphaNum")().asInstanceOf[ValidationRule]
+  inline def alphaNum(): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("alphaNum")().asInstanceOf[ValidationRule]
   
-  @scala.inline
-  def and(validators: (ValidationFunc | CustomRule)*): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(validators.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
+  inline def and(validators: (ValidationFunc | CustomRule)*): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(validators.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
   
-  @scala.inline
-  def between(min: Double, max: Double): ValidationRule = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[ValidationRule]
-  @scala.inline
-  def between(min: Double, max: Date): ValidationRule = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[ValidationRule]
-  @scala.inline
-  def between(min: Date, max: Double): ValidationRule = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[ValidationRule]
-  @scala.inline
-  def between(min: Date, max: Date): ValidationRule = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[ValidationRule]
+  inline def between(min: Double, max: Double): ValidationRule = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[ValidationRule]
+  inline def between(min: Double, max: Date): ValidationRule = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[ValidationRule]
+  inline def between(min: Date, max: Double): ValidationRule = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[ValidationRule]
+  inline def between(min: Date, max: Date): ValidationRule = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[ValidationRule]
   
-  @scala.inline
-  def decimal(): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("decimal")().asInstanceOf[ValidationRule]
+  inline def decimal(): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("decimal")().asInstanceOf[ValidationRule]
   
-  @scala.inline
-  def email(): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("email")().asInstanceOf[ValidationRule]
+  inline def email(): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("email")().asInstanceOf[ValidationRule]
   
   @JSImport("vuelidate/lib/validators", "helpers")
   @js.native
   val helpers: Helpers_ = js.native
   
-  @scala.inline
-  def integer(): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("integer")().asInstanceOf[ValidationRule]
+  inline def integer(): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("integer")().asInstanceOf[ValidationRule]
   
-  @scala.inline
-  def ipAddress(): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("ipAddress")().asInstanceOf[ValidationRule]
+  inline def ipAddress(): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("ipAddress")().asInstanceOf[ValidationRule]
   
-  @scala.inline
-  def macAddress(): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("macAddress")().asInstanceOf[ValidationRule]
+  inline def macAddress(): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("macAddress")().asInstanceOf[ValidationRule]
   
-  @scala.inline
-  def maxLength(length: Double): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("maxLength")(length.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
+  inline def maxLength(length: Double): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("maxLength")(length.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
   
-  @scala.inline
-  def maxValue(max: Double): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("maxValue")(max.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
-  @scala.inline
-  def maxValue(max: Date): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("maxValue")(max.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
+  inline def maxValue(max: Double): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("maxValue")(max.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
+  inline def maxValue(max: Date): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("maxValue")(max.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
   
-  @scala.inline
-  def minLength(length: Double): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("minLength")(length.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
+  inline def minLength(length: Double): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("minLength")(length.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
   
-  @scala.inline
-  def minValue(min: Double): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("minValue")(min.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
-  @scala.inline
-  def minValue(min: Date): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("minValue")(min.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
+  inline def minValue(min: Double): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("minValue")(min.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
+  inline def minValue(min: Date): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("minValue")(min.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
   
-  @scala.inline
-  def not(validator: CustomRule): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(validator.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
-  @scala.inline
-  def not(validator: ValidationRule): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(validator.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
+  inline def not(validator: CustomRule): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(validator.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
+  inline def not(validator: ValidationRule): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(validator.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
   
-  @scala.inline
-  def numeric(): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("numeric")().asInstanceOf[ValidationRule]
+  inline def numeric(): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("numeric")().asInstanceOf[ValidationRule]
   
-  @scala.inline
-  def or(validators: (ValidationFunc | CustomRule)*): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(validators.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
+  inline def or(validators: (ValidationFunc | CustomRule)*): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(validators.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
   
-  @scala.inline
-  def required(): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("required")().asInstanceOf[ValidationRule]
+  inline def required(): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("required")().asInstanceOf[ValidationRule]
   
-  @scala.inline
-  def requiredIf(field: String): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("requiredIf")(field.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
-  @scala.inline
-  def requiredIf(field: js.Function2[/* vm */ js.Any, /* parentVm */ js.UndefOr[Vue], js.Any]): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("requiredIf")(field.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
+  inline def requiredIf(field: String): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("requiredIf")(field.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
+  inline def requiredIf(field: js.Function2[/* vm */ js.Any, /* parentVm */ js.UndefOr[Vue], js.Any]): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("requiredIf")(field.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
   
-  @scala.inline
-  def requiredUnless(field: String): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("requiredUnless")(field.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
-  @scala.inline
-  def requiredUnless(field: js.Function2[/* vm */ js.Any, /* parentVm */ js.UndefOr[Vue], js.Any]): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("requiredUnless")(field.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
+  inline def requiredUnless(field: String): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("requiredUnless")(field.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
+  inline def requiredUnless(field: js.Function2[/* vm */ js.Any, /* parentVm */ js.UndefOr[Vue], js.Any]): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("requiredUnless")(field.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
   
-  @scala.inline
-  def sameAs(field: String): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("sameAs")(field.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
-  @scala.inline
-  def sameAs(field: js.Function2[/* vm */ js.Any, /* parentVm */ js.UndefOr[Vue], js.Any]): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("sameAs")(field.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
+  inline def sameAs(field: String): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("sameAs")(field.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
+  inline def sameAs(field: js.Function2[/* vm */ js.Any, /* parentVm */ js.UndefOr[Vue], js.Any]): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("sameAs")(field.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
   
-  @scala.inline
-  def url(): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("url")().asInstanceOf[ValidationRule]
+  inline def url(): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("url")().asInstanceOf[ValidationRule]
   
   type CustomRule = js.Function2[/* value */ js.Any, /* parentVm */ js.UndefOr[js.Any], Boolean | js.Promise[Boolean]]
   
@@ -131,18 +101,15 @@ object validatorsMod {
   }
   object Params {
     
-    @scala.inline
-    def apply(`type`: String): Params = {
+    inline def apply(`type`: String): Params = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Params]
     }
     
-    @scala.inline
-    implicit class ParamsMutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
+    extension [Self <: Params](x: Self) {
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -158,26 +125,20 @@ object validatorsMod {
   }
   object ValidationParams {
     
-    @scala.inline
-    def apply(name: String, params: Params, path: js.Array[String]): ValidationParams = {
+    inline def apply(name: String, params: Params, path: js.Array[String]): ValidationParams = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[ValidationParams]
     }
     
-    @scala.inline
-    implicit class ValidationParamsMutableBuilder[Self <: ValidationParams] (val x: Self) extends AnyVal {
+    extension [Self <: ValidationParams](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParams(value: Params): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Params): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
     }
   }
   

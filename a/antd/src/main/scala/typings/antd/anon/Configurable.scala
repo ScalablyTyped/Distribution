@@ -12,19 +12,15 @@ trait Configurable extends StObject {
 }
 object Configurable {
   
-  @scala.inline
-  def apply(configurable: Boolean, get: () => js.Any): Configurable = {
+  inline def apply(configurable: Boolean, get: () => js.Any): Configurable = {
     val __obj = js.Dynamic.literal(configurable = configurable.asInstanceOf[js.Any], get = js.Any.fromFunction0(get))
     __obj.asInstanceOf[Configurable]
   }
   
-  @scala.inline
-  implicit class ConfigurableMutableBuilder[Self <: Configurable] (val x: Self) extends AnyVal {
+  extension [Self <: Configurable](x: Self) {
     
-    @scala.inline
-    def setConfigurable(value: Boolean): Self = StObject.set(x, "configurable", value.asInstanceOf[js.Any])
+    inline def setConfigurable(value: Boolean): Self = StObject.set(x, "configurable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGet(value: () => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+    inline def setGet(value: () => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
   }
 }

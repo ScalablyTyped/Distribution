@@ -8,6 +8,5 @@ object saslExternalStrings {
   
   @js.native
   sealed trait EXTERNAL extends StObject
-  @scala.inline
-  def EXTERNAL: EXTERNAL = "EXTERNAL".asInstanceOf[EXTERNAL]
+  inline def EXTERNAL: EXTERNAL = "EXTERNAL".asInstanceOf[EXTERNAL]
 }

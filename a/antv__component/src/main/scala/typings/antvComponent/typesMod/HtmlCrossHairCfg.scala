@@ -36,28 +36,21 @@ trait HtmlCrossHairCfg
 }
 object HtmlCrossHairCfg {
   
-  @scala.inline
-  def apply(crossHairTpl: String, end: Point, start: Point, text: CrosshairTextBaseCfg, textTpl: String): HtmlCrossHairCfg = {
+  inline def apply(crossHairTpl: String, end: Point, start: Point, text: CrosshairTextBaseCfg, textTpl: String): HtmlCrossHairCfg = {
     val __obj = js.Dynamic.literal(crossHairTpl = crossHairTpl.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textTpl = textTpl.asInstanceOf[js.Any])
     __obj.asInstanceOf[HtmlCrossHairCfg]
   }
   
-  @scala.inline
-  implicit class HtmlCrossHairCfgMutableBuilder[Self <: HtmlCrossHairCfg] (val x: Self) extends AnyVal {
+  extension [Self <: HtmlCrossHairCfg](x: Self) {
     
-    @scala.inline
-    def setCrossHairTpl(value: String): Self = StObject.set(x, "crossHairTpl", value.asInstanceOf[js.Any])
+    inline def setCrossHairTpl(value: String): Self = StObject.set(x, "crossHairTpl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd(value: Point): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Point): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Point): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Point): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: CrosshairTextBaseCfg): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: CrosshairTextBaseCfg): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextTpl(value: String): Self = StObject.set(x, "textTpl", value.asInstanceOf[js.Any])
+    inline def setTextTpl(value: String): Self = StObject.set(x, "textTpl", value.asInstanceOf[js.Any])
   }
 }

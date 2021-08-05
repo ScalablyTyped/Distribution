@@ -14,6 +14,5 @@ object utils {
   val ^ : js.Any = js.native
   
   // engine/utils/bindtwostepcarettoattribute
-  @scala.inline
-  def bindTwoStepCaretToAttribute(view: View, model: Model, emitter: Emitter, attribute: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bindTwoStepCaretToAttribute")(view.asInstanceOf[js.Any], model.asInstanceOf[js.Any], emitter.asInstanceOf[js.Any], attribute.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def bindTwoStepCaretToAttribute(view: View, model: Model, emitter: Emitter, attribute: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bindTwoStepCaretToAttribute")(view.asInstanceOf[js.Any], model.asInstanceOf[js.Any], emitter.asInstanceOf[js.Any], attribute.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

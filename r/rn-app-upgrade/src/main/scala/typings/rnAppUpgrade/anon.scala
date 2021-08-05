@@ -16,23 +16,18 @@ object anon {
   }
   object Code {
     
-    @scala.inline
-    def apply(code: Double, msg: String, version: Unit): Code = {
+    inline def apply(code: Double, msg: String, version: Unit): Code = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], msg = msg.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[Code]
     }
     
-    @scala.inline
-    implicit class CodeMutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
+    extension [Self <: Code](x: Self) {
       
-      @scala.inline
-      def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
+      inline def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: Unit): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Unit): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -20,37 +20,27 @@ trait JobStatus extends StObject {
 }
 object JobStatus {
   
-  @scala.inline
-  def apply(): JobStatus = {
+  inline def apply(): JobStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobStatus]
   }
   
-  @scala.inline
-  implicit class JobStatusMutableBuilder[Self <: JobStatus] (val x: Self) extends AnyVal {
+  extension [Self <: JobStatus](x: Self) {
     
-    @scala.inline
-    def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateStartTime(value: String): Self = StObject.set(x, "stateStartTime", value.asInstanceOf[js.Any])
+    inline def setStateStartTime(value: String): Self = StObject.set(x, "stateStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateStartTimeUndefined: Self = StObject.set(x, "stateStartTime", js.undefined)
+    inline def setStateStartTimeUndefined: Self = StObject.set(x, "stateStartTime", js.undefined)
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setSubstate(value: String): Self = StObject.set(x, "substate", value.asInstanceOf[js.Any])
+    inline def setSubstate(value: String): Self = StObject.set(x, "substate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubstateUndefined: Self = StObject.set(x, "substate", js.undefined)
+    inline def setSubstateUndefined: Self = StObject.set(x, "substate", js.undefined)
   }
 }

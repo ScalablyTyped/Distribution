@@ -36,8 +36,7 @@ trait DatasourceAdministrationDialog
 }
 object DatasourceAdministrationDialog {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ParentWindow: XWindow,
     PropertySetInfo: XPropertySetInfo,
     Title: String,
@@ -59,13 +58,10 @@ object DatasourceAdministrationDialog {
     __obj.asInstanceOf[DatasourceAdministrationDialog]
   }
   
-  @scala.inline
-  implicit class DatasourceAdministrationDialogMutableBuilder[Self <: DatasourceAdministrationDialog] (val x: Self) extends AnyVal {
+  extension [Self <: DatasourceAdministrationDialog](x: Self) {
     
-    @scala.inline
-    def setParentWindow(value: XWindow): Self = StObject.set(x, "ParentWindow", value.asInstanceOf[js.Any])
+    inline def setParentWindow(value: XWindow): Self = StObject.set(x, "ParentWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
   }
 }

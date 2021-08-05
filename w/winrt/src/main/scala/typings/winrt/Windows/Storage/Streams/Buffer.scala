@@ -9,8 +9,7 @@ trait Buffer
      with IBuffer
 object Buffer {
   
-  @scala.inline
-  def apply(capacity: Double, length: Double): Buffer = {
+  inline def apply(capacity: Double, length: Double): Buffer = {
     val __obj = js.Dynamic.literal(capacity = capacity.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any])
     __obj.asInstanceOf[Buffer]
   }

@@ -41,73 +41,51 @@ trait SpriteSheet extends StObject {
 }
 object SpriteSheet {
   
-  @scala.inline
-  def apply(): SpriteSheet = {
+  inline def apply(): SpriteSheet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SpriteSheet]
   }
   
-  @scala.inline
-  implicit class SpriteSheetMutableBuilder[Self <: SpriteSheet] (val x: Self) extends AnyVal {
+  extension [Self <: SpriteSheet](x: Self) {
     
-    @scala.inline
-    def setColumnCount(value: Double): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
+    inline def setColumnCount(value: Double): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnCountUndefined: Self = StObject.set(x, "columnCount", js.undefined)
+    inline def setColumnCountUndefined: Self = StObject.set(x, "columnCount", js.undefined)
     
-    @scala.inline
-    def setEndTimeOffset(value: String): Self = StObject.set(x, "endTimeOffset", value.asInstanceOf[js.Any])
+    inline def setEndTimeOffset(value: String): Self = StObject.set(x, "endTimeOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeOffsetUndefined: Self = StObject.set(x, "endTimeOffset", js.undefined)
+    inline def setEndTimeOffsetUndefined: Self = StObject.set(x, "endTimeOffset", js.undefined)
     
-    @scala.inline
-    def setFilePrefix(value: String): Self = StObject.set(x, "filePrefix", value.asInstanceOf[js.Any])
+    inline def setFilePrefix(value: String): Self = StObject.set(x, "filePrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilePrefixUndefined: Self = StObject.set(x, "filePrefix", js.undefined)
+    inline def setFilePrefixUndefined: Self = StObject.set(x, "filePrefix", js.undefined)
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setInterval(value: String): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: String): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
-    @scala.inline
-    def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
+    inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
+    inline def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
     
-    @scala.inline
-    def setSpriteHeightPixels(value: Double): Self = StObject.set(x, "spriteHeightPixels", value.asInstanceOf[js.Any])
+    inline def setSpriteHeightPixels(value: Double): Self = StObject.set(x, "spriteHeightPixels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpriteHeightPixelsUndefined: Self = StObject.set(x, "spriteHeightPixels", js.undefined)
+    inline def setSpriteHeightPixelsUndefined: Self = StObject.set(x, "spriteHeightPixels", js.undefined)
     
-    @scala.inline
-    def setSpriteWidthPixels(value: Double): Self = StObject.set(x, "spriteWidthPixels", value.asInstanceOf[js.Any])
+    inline def setSpriteWidthPixels(value: Double): Self = StObject.set(x, "spriteWidthPixels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpriteWidthPixelsUndefined: Self = StObject.set(x, "spriteWidthPixels", js.undefined)
+    inline def setSpriteWidthPixelsUndefined: Self = StObject.set(x, "spriteWidthPixels", js.undefined)
     
-    @scala.inline
-    def setStartTimeOffset(value: String): Self = StObject.set(x, "startTimeOffset", value.asInstanceOf[js.Any])
+    inline def setStartTimeOffset(value: String): Self = StObject.set(x, "startTimeOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeOffsetUndefined: Self = StObject.set(x, "startTimeOffset", js.undefined)
+    inline def setStartTimeOffsetUndefined: Self = StObject.set(x, "startTimeOffset", js.undefined)
     
-    @scala.inline
-    def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
+    inline def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalCountUndefined: Self = StObject.set(x, "totalCount", js.undefined)
+    inline def setTotalCountUndefined: Self = StObject.set(x, "totalCount", js.undefined)
   }
 }

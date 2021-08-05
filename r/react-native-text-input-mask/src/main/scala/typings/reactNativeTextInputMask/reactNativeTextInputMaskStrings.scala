@@ -8,21 +8,17 @@ object reactNativeTextInputMaskStrings {
   
   @js.native
   sealed trait characters extends StObject
-  @scala.inline
-  def characters: characters = "characters".asInstanceOf[characters]
+  inline def characters: characters = "characters".asInstanceOf[characters]
   
   @js.native
   sealed trait none extends StObject
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait sentences extends StObject
-  @scala.inline
-  def sentences: sentences = "sentences".asInstanceOf[sentences]
+  inline def sentences: sentences = "sentences".asInstanceOf[sentences]
   
   @js.native
   sealed trait words extends StObject
-  @scala.inline
-  def words: words = "words".asInstanceOf[words]
+  inline def words: words = "words".asInstanceOf[words]
 }

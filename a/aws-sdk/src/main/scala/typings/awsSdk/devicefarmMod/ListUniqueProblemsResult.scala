@@ -18,25 +18,19 @@ trait ListUniqueProblemsResult extends StObject {
 }
 object ListUniqueProblemsResult {
   
-  @scala.inline
-  def apply(): ListUniqueProblemsResult = {
+  inline def apply(): ListUniqueProblemsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListUniqueProblemsResult]
   }
   
-  @scala.inline
-  implicit class ListUniqueProblemsResultMutableBuilder[Self <: ListUniqueProblemsResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListUniqueProblemsResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setUniqueProblems(value: UniqueProblemsByExecutionResultMap): Self = StObject.set(x, "uniqueProblems", value.asInstanceOf[js.Any])
+    inline def setUniqueProblems(value: UniqueProblemsByExecutionResultMap): Self = StObject.set(x, "uniqueProblems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueProblemsUndefined: Self = StObject.set(x, "uniqueProblems", js.undefined)
+    inline def setUniqueProblemsUndefined: Self = StObject.set(x, "uniqueProblems", js.undefined)
   }
 }

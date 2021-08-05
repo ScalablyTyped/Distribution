@@ -43,8 +43,7 @@ trait XDataInputStream
 }
 object XDataInputStream {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     available: () => Double,
     closeInput: () => Unit,
@@ -67,34 +66,24 @@ object XDataInputStream {
     __obj.asInstanceOf[XDataInputStream]
   }
   
-  @scala.inline
-  implicit class XDataInputStreamMutableBuilder[Self <: XDataInputStream] (val x: Self) extends AnyVal {
+  extension [Self <: XDataInputStream](x: Self) {
     
-    @scala.inline
-    def setReadBoolean(value: () => Double): Self = StObject.set(x, "readBoolean", js.Any.fromFunction0(value))
+    inline def setReadBoolean(value: () => Double): Self = StObject.set(x, "readBoolean", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReadByte(value: () => Double): Self = StObject.set(x, "readByte", js.Any.fromFunction0(value))
+    inline def setReadByte(value: () => Double): Self = StObject.set(x, "readByte", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReadChar(value: () => String): Self = StObject.set(x, "readChar", js.Any.fromFunction0(value))
+    inline def setReadChar(value: () => String): Self = StObject.set(x, "readChar", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReadDouble(value: () => Double): Self = StObject.set(x, "readDouble", js.Any.fromFunction0(value))
+    inline def setReadDouble(value: () => Double): Self = StObject.set(x, "readDouble", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReadFloat(value: () => Double): Self = StObject.set(x, "readFloat", js.Any.fromFunction0(value))
+    inline def setReadFloat(value: () => Double): Self = StObject.set(x, "readFloat", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReadHyper(value: () => Double): Self = StObject.set(x, "readHyper", js.Any.fromFunction0(value))
+    inline def setReadHyper(value: () => Double): Self = StObject.set(x, "readHyper", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReadLong(value: () => Double): Self = StObject.set(x, "readLong", js.Any.fromFunction0(value))
+    inline def setReadLong(value: () => Double): Self = StObject.set(x, "readLong", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReadShort(value: () => Double): Self = StObject.set(x, "readShort", js.Any.fromFunction0(value))
+    inline def setReadShort(value: () => Double): Self = StObject.set(x, "readShort", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReadUTF(value: () => String): Self = StObject.set(x, "readUTF", js.Any.fromFunction0(value))
+    inline def setReadUTF(value: () => String): Self = StObject.set(x, "readUTF", js.Any.fromFunction0(value))
   }
 }

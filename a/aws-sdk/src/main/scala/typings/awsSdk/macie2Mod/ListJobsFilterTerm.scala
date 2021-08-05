@@ -23,34 +23,25 @@ trait ListJobsFilterTerm extends StObject {
 }
 object ListJobsFilterTerm {
   
-  @scala.inline
-  def apply(): ListJobsFilterTerm = {
+  inline def apply(): ListJobsFilterTerm = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListJobsFilterTerm]
   }
   
-  @scala.inline
-  implicit class ListJobsFilterTermMutableBuilder[Self <: ListJobsFilterTerm] (val x: Self) extends AnyVal {
+  extension [Self <: ListJobsFilterTerm](x: Self) {
     
-    @scala.inline
-    def setComparator(value: JobComparator): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
+    inline def setComparator(value: JobComparator): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
+    inline def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
     
-    @scala.inline
-    def setKey(value: ListJobsFilterKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: ListJobsFilterKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setValues(value: listOfString): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: listOfString): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: string*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: string*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

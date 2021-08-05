@@ -57,8 +57,7 @@ trait JQueryStatic extends StObject {
 }
 object JQueryStatic {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     UNSAFE_restoreLegacyHtmlPrefilter: () => Unit,
     migrateMute: Boolean,
     migrateReset: () => Unit,
@@ -70,34 +69,24 @@ object JQueryStatic {
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  @scala.inline
-  implicit class JQueryStaticMutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryStatic](x: Self) {
     
-    @scala.inline
-    def setMigrateDeduplicateWarnings(value: Boolean): Self = StObject.set(x, "migrateDeduplicateWarnings", value.asInstanceOf[js.Any])
+    inline def setMigrateDeduplicateWarnings(value: Boolean): Self = StObject.set(x, "migrateDeduplicateWarnings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMigrateDeduplicateWarningsUndefined: Self = StObject.set(x, "migrateDeduplicateWarnings", js.undefined)
+    inline def setMigrateDeduplicateWarningsUndefined: Self = StObject.set(x, "migrateDeduplicateWarnings", js.undefined)
     
-    @scala.inline
-    def setMigrateMute(value: Boolean): Self = StObject.set(x, "migrateMute", value.asInstanceOf[js.Any])
+    inline def setMigrateMute(value: Boolean): Self = StObject.set(x, "migrateMute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMigrateReset(value: () => Unit): Self = StObject.set(x, "migrateReset", js.Any.fromFunction0(value))
+    inline def setMigrateReset(value: () => Unit): Self = StObject.set(x, "migrateReset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMigrateTrace(value: Boolean): Self = StObject.set(x, "migrateTrace", value.asInstanceOf[js.Any])
+    inline def setMigrateTrace(value: Boolean): Self = StObject.set(x, "migrateTrace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMigrateVersion(value: String): Self = StObject.set(x, "migrateVersion", value.asInstanceOf[js.Any])
+    inline def setMigrateVersion(value: String): Self = StObject.set(x, "migrateVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMigrateWarnings(value: js.Array[String]): Self = StObject.set(x, "migrateWarnings", value.asInstanceOf[js.Any])
+    inline def setMigrateWarnings(value: js.Array[String]): Self = StObject.set(x, "migrateWarnings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMigrateWarningsVarargs(value: String*): Self = StObject.set(x, "migrateWarnings", js.Array(value :_*))
+    inline def setMigrateWarningsVarargs(value: String*): Self = StObject.set(x, "migrateWarnings", js.Array(value :_*))
     
-    @scala.inline
-    def setUNSAFE_restoreLegacyHtmlPrefilter(value: () => Unit): Self = StObject.set(x, "UNSAFE_restoreLegacyHtmlPrefilter", js.Any.fromFunction0(value))
+    inline def setUNSAFE_restoreLegacyHtmlPrefilter(value: () => Unit): Self = StObject.set(x, "UNSAFE_restoreLegacyHtmlPrefilter", js.Any.fromFunction0(value))
   }
 }

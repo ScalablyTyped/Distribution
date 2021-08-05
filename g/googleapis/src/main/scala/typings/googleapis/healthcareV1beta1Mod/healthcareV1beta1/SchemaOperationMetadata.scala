@@ -29,37 +29,27 @@ trait SchemaOperationMetadata extends StObject {
 }
 object SchemaOperationMetadata {
   
-  @scala.inline
-  def apply(): SchemaOperationMetadata = {
+  inline def apply(): SchemaOperationMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOperationMetadata]
   }
   
-  @scala.inline
-  implicit class SchemaOperationMetadataMutableBuilder[Self <: SchemaOperationMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOperationMetadata](x: Self) {
     
-    @scala.inline
-    def setApiMethodName(value: String): Self = StObject.set(x, "apiMethodName", value.asInstanceOf[js.Any])
+    inline def setApiMethodName(value: String): Self = StObject.set(x, "apiMethodName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiMethodNameUndefined: Self = StObject.set(x, "apiMethodName", js.undefined)
+    inline def setApiMethodNameUndefined: Self = StObject.set(x, "apiMethodName", js.undefined)
     
-    @scala.inline
-    def setCounter(value: SchemaProgressCounter): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
+    inline def setCounter(value: SchemaProgressCounter): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCounterUndefined: Self = StObject.set(x, "counter", js.undefined)
+    inline def setCounterUndefined: Self = StObject.set(x, "counter", js.undefined)
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
   }
 }

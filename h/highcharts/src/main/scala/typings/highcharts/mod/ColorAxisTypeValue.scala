@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ColorAxisTypeValue extends StObject
 object ColorAxisTypeValue {
   
-  @scala.inline
-  def linear: typings.highcharts.highchartsStrings.linear = "linear".asInstanceOf[typings.highcharts.highchartsStrings.linear]
+  inline def linear: typings.highcharts.highchartsStrings.linear = "linear".asInstanceOf[typings.highcharts.highchartsStrings.linear]
   
-  @scala.inline
-  def logarithmic: typings.highcharts.highchartsStrings.logarithmic = "logarithmic".asInstanceOf[typings.highcharts.highchartsStrings.logarithmic]
+  inline def logarithmic: typings.highcharts.highchartsStrings.logarithmic = "logarithmic".asInstanceOf[typings.highcharts.highchartsStrings.logarithmic]
 }

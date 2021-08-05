@@ -20,22 +20,17 @@ trait EnqueueOptions extends StObject {
 }
 object EnqueueOptions {
   
-  @scala.inline
-  def apply(deliveryMode: Double, transformation: String, visibility: Double): EnqueueOptions = {
+  inline def apply(deliveryMode: Double, transformation: String, visibility: Double): EnqueueOptions = {
     val __obj = js.Dynamic.literal(deliveryMode = deliveryMode.asInstanceOf[js.Any], transformation = transformation.asInstanceOf[js.Any], visibility = visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnqueueOptions]
   }
   
-  @scala.inline
-  implicit class EnqueueOptionsMutableBuilder[Self <: EnqueueOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EnqueueOptions](x: Self) {
     
-    @scala.inline
-    def setDeliveryMode(value: Double): Self = StObject.set(x, "deliveryMode", value.asInstanceOf[js.Any])
+    inline def setDeliveryMode(value: Double): Self = StObject.set(x, "deliveryMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformation(value: String): Self = StObject.set(x, "transformation", value.asInstanceOf[js.Any])
+    inline def setTransformation(value: String): Self = StObject.set(x, "transformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibility(value: Double): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: Double): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
   }
 }

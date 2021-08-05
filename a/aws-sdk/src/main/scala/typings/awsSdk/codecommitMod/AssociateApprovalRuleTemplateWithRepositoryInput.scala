@@ -18,19 +18,15 @@ trait AssociateApprovalRuleTemplateWithRepositoryInput extends StObject {
 }
 object AssociateApprovalRuleTemplateWithRepositoryInput {
   
-  @scala.inline
-  def apply(approvalRuleTemplateName: ApprovalRuleTemplateName, repositoryName: RepositoryName): AssociateApprovalRuleTemplateWithRepositoryInput = {
+  inline def apply(approvalRuleTemplateName: ApprovalRuleTemplateName, repositoryName: RepositoryName): AssociateApprovalRuleTemplateWithRepositoryInput = {
     val __obj = js.Dynamic.literal(approvalRuleTemplateName = approvalRuleTemplateName.asInstanceOf[js.Any], repositoryName = repositoryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateApprovalRuleTemplateWithRepositoryInput]
   }
   
-  @scala.inline
-  implicit class AssociateApprovalRuleTemplateWithRepositoryInputMutableBuilder[Self <: AssociateApprovalRuleTemplateWithRepositoryInput] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateApprovalRuleTemplateWithRepositoryInput](x: Self) {
     
-    @scala.inline
-    def setApprovalRuleTemplateName(value: ApprovalRuleTemplateName): Self = StObject.set(x, "approvalRuleTemplateName", value.asInstanceOf[js.Any])
+    inline def setApprovalRuleTemplateName(value: ApprovalRuleTemplateName): Self = StObject.set(x, "approvalRuleTemplateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+    inline def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
   }
 }

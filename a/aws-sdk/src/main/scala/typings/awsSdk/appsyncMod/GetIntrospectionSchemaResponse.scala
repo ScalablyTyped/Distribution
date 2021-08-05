@@ -13,19 +13,15 @@ trait GetIntrospectionSchemaResponse extends StObject {
 }
 object GetIntrospectionSchemaResponse {
   
-  @scala.inline
-  def apply(): GetIntrospectionSchemaResponse = {
+  inline def apply(): GetIntrospectionSchemaResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetIntrospectionSchemaResponse]
   }
   
-  @scala.inline
-  implicit class GetIntrospectionSchemaResponseMutableBuilder[Self <: GetIntrospectionSchemaResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetIntrospectionSchemaResponse](x: Self) {
     
-    @scala.inline
-    def setSchema(value: _Blob): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: _Blob): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+    inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
   }
 }

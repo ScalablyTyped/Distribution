@@ -13,19 +13,15 @@ trait ReturnValue extends StObject {
 }
 object ReturnValue {
   
-  @scala.inline
-  def apply(items: IWwwFormUrlDecoderEntry, returnValue: Double): ReturnValue = {
+  inline def apply(items: IWwwFormUrlDecoderEntry, returnValue: Double): ReturnValue = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnValue]
   }
   
-  @scala.inline
-  implicit class ReturnValueMutableBuilder[Self <: ReturnValue] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnValue](x: Self) {
     
-    @scala.inline
-    def setItems(value: IWwwFormUrlDecoderEntry): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: IWwwFormUrlDecoderEntry): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

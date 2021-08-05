@@ -10,19 +10,15 @@ trait RetryBuildBatchOutput extends StObject {
 }
 object RetryBuildBatchOutput {
   
-  @scala.inline
-  def apply(): RetryBuildBatchOutput = {
+  inline def apply(): RetryBuildBatchOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RetryBuildBatchOutput]
   }
   
-  @scala.inline
-  implicit class RetryBuildBatchOutputMutableBuilder[Self <: RetryBuildBatchOutput] (val x: Self) extends AnyVal {
+  extension [Self <: RetryBuildBatchOutput](x: Self) {
     
-    @scala.inline
-    def setBuildBatch(value: BuildBatch): Self = StObject.set(x, "buildBatch", value.asInstanceOf[js.Any])
+    inline def setBuildBatch(value: BuildBatch): Self = StObject.set(x, "buildBatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildBatchUndefined: Self = StObject.set(x, "buildBatch", js.undefined)
+    inline def setBuildBatchUndefined: Self = StObject.set(x, "buildBatch", js.undefined)
   }
 }

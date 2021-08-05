@@ -15,16 +15,13 @@ trait PrefixOptions
 }
 object PrefixOptions {
   
-  @scala.inline
-  def apply(full: Boolean, gender: male | female | all): PrefixOptions = {
+  inline def apply(full: Boolean, gender: male | female | all): PrefixOptions = {
     val __obj = js.Dynamic.literal(full = full.asInstanceOf[js.Any], gender = gender.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrefixOptions]
   }
   
-  @scala.inline
-  implicit class PrefixOptionsMutableBuilder[Self <: PrefixOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PrefixOptions](x: Self) {
     
-    @scala.inline
-    def setGender(value: male | female | all): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
+    inline def setGender(value: male | female | all): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
   }
 }

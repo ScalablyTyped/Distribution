@@ -12,6 +12,5 @@ object domSecuritySchemaMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def SECURITY_SCHEMA(): StringDictionary[SecurityContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("SECURITY_SCHEMA")().asInstanceOf[StringDictionary[SecurityContext]]
+  inline def SECURITY_SCHEMA(): StringDictionary[SecurityContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("SECURITY_SCHEMA")().asInstanceOf[StringDictionary[SecurityContext]]
 }

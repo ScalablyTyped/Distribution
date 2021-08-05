@@ -34,39 +34,31 @@ trait ApnsConfig extends StObject {
 }
 object ApnsConfig {
   
-  @scala.inline
-  def apply(): ApnsConfig = {
+  inline def apply(): ApnsConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApnsConfig]
   }
   
-  @scala.inline
-  implicit class ApnsConfigMutableBuilder[Self <: ApnsConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ApnsConfig](x: Self) {
     
-    @scala.inline
-    def setFcmOptions(value: ApnsFcmOptions): Self = StObject.set(x, "fcmOptions", value.asInstanceOf[js.Any])
+    inline def setFcmOptions(value: ApnsFcmOptions): Self = StObject.set(x, "fcmOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFcmOptionsUndefined: Self = StObject.set(x, "fcmOptions", js.undefined)
+    inline def setFcmOptionsUndefined: Self = StObject.set(x, "fcmOptions", js.undefined)
     
-    @scala.inline
-    def setHeaders(
+    inline def setHeaders(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.ApnsConfig & TopLevel[js.Any]
     ): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setPayload(
+    inline def setPayload(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.ApnsConfig & TopLevel[js.Any]
     ): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
   }
 }

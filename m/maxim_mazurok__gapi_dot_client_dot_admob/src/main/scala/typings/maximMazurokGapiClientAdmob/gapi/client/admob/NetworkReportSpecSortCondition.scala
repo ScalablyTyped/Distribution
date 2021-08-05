@@ -17,31 +17,23 @@ trait NetworkReportSpecSortCondition extends StObject {
 }
 object NetworkReportSpecSortCondition {
   
-  @scala.inline
-  def apply(): NetworkReportSpecSortCondition = {
+  inline def apply(): NetworkReportSpecSortCondition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NetworkReportSpecSortCondition]
   }
   
-  @scala.inline
-  implicit class NetworkReportSpecSortConditionMutableBuilder[Self <: NetworkReportSpecSortCondition] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkReportSpecSortCondition](x: Self) {
     
-    @scala.inline
-    def setDimension(value: String): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
+    inline def setDimension(value: String): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionUndefined: Self = StObject.set(x, "dimension", js.undefined)
+    inline def setDimensionUndefined: Self = StObject.set(x, "dimension", js.undefined)
     
-    @scala.inline
-    def setMetric(value: String): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
+    inline def setMetric(value: String): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
+    inline def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
     
-    @scala.inline
-    def setOrder(value: String): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: String): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
   }
 }

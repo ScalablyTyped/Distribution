@@ -19,8 +19,7 @@ trait Renderer extends StObject {
 }
 object Renderer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     container: HTMLElement,
     refresh: () => Sigma,
     render: () => Sigma,
@@ -31,22 +30,16 @@ object Renderer {
     __obj.asInstanceOf[Renderer]
   }
   
-  @scala.inline
-  implicit class RendererMutableBuilder[Self <: Renderer] (val x: Self) extends AnyVal {
+  extension [Self <: Renderer](x: Self) {
     
-    @scala.inline
-    def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefresh(value: () => Sigma): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
+    inline def setRefresh(value: () => Sigma): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRender(value: () => Sigma): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
+    inline def setRender(value: () => Sigma): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResize(value: () => Sigma): Self = StObject.set(x, "resize", js.Any.fromFunction0(value))
+    inline def setResize(value: () => Sigma): Self = StObject.set(x, "resize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSettings(value: Settings => Unit): Self = StObject.set(x, "settings", js.Any.fromFunction1(value))
+    inline def setSettings(value: Settings => Unit): Self = StObject.set(x, "settings", js.Any.fromFunction1(value))
   }
 }

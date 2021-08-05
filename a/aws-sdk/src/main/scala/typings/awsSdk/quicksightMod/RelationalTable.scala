@@ -28,31 +28,23 @@ trait RelationalTable extends StObject {
 }
 object RelationalTable {
   
-  @scala.inline
-  def apply(DataSourceArn: Arn, InputColumns: InputColumnList, Name: RelationalTableName): RelationalTable = {
+  inline def apply(DataSourceArn: Arn, InputColumns: InputColumnList, Name: RelationalTableName): RelationalTable = {
     val __obj = js.Dynamic.literal(DataSourceArn = DataSourceArn.asInstanceOf[js.Any], InputColumns = InputColumns.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelationalTable]
   }
   
-  @scala.inline
-  implicit class RelationalTableMutableBuilder[Self <: RelationalTable] (val x: Self) extends AnyVal {
+  extension [Self <: RelationalTable](x: Self) {
     
-    @scala.inline
-    def setDataSourceArn(value: Arn): Self = StObject.set(x, "DataSourceArn", value.asInstanceOf[js.Any])
+    inline def setDataSourceArn(value: Arn): Self = StObject.set(x, "DataSourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputColumns(value: InputColumnList): Self = StObject.set(x, "InputColumns", value.asInstanceOf[js.Any])
+    inline def setInputColumns(value: InputColumnList): Self = StObject.set(x, "InputColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputColumnsVarargs(value: InputColumn*): Self = StObject.set(x, "InputColumns", js.Array(value :_*))
+    inline def setInputColumnsVarargs(value: InputColumn*): Self = StObject.set(x, "InputColumns", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: RelationalTableName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: RelationalTableName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchema(value: RelationalTableSchema): Self = StObject.set(x, "Schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: RelationalTableSchema): Self = StObject.set(x, "Schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaUndefined: Self = StObject.set(x, "Schema", js.undefined)
+    inline def setSchemaUndefined: Self = StObject.set(x, "Schema", js.undefined)
   }
 }

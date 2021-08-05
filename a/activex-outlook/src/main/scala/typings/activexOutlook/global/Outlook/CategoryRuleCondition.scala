@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.CategoryRuleCondition")
 @js.native
-class CategoryRuleCondition protected ()
+/* private */ class CategoryRuleCondition ()
   extends StObject
      with typings.activexOutlook.Outlook.CategoryRuleCondition {
   
@@ -27,7 +27,7 @@ class CategoryRuleCondition protected ()
   /* CompleteClass */
   var Enabled: Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.CategoryRuleCondition_typekey")
   var OutlookDotCategoryRuleCondition_typekey: typings.activexOutlook.Outlook.CategoryRuleCondition = js.native
   

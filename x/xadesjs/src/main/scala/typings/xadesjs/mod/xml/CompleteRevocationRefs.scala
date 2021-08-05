@@ -13,6 +13,5 @@ class CompleteRevocationRefs ()
   extends typings.xadesjs.xmlMod.CompleteRevocationRefs
 object CompleteRevocationRefs {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.CompleteRevocationRefs] = ^.asInstanceOf[js.Dynamic].selectDynamic("CompleteRevocationRefs").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.CompleteRevocationRefs]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.CompleteRevocationRefs] = ^.asInstanceOf[js.Dynamic].selectDynamic("CompleteRevocationRefs").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.CompleteRevocationRefs]]
 }

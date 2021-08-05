@@ -52,43 +52,31 @@ trait ChartAxisTitleLoadOptions extends StObject {
 }
 object ChartAxisTitleLoadOptions {
   
-  @scala.inline
-  def apply(): ChartAxisTitleLoadOptions = {
+  inline def apply(): ChartAxisTitleLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartAxisTitleLoadOptions]
   }
   
-  @scala.inline
-  implicit class ChartAxisTitleLoadOptionsMutableBuilder[Self <: ChartAxisTitleLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChartAxisTitleLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setFormat(value: ChartAxisTitleFormatLoadOptions): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: ChartAxisTitleFormatLoadOptions): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setText(value: Boolean): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: Boolean): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextOrientation(value: Boolean): Self = StObject.set(x, "textOrientation", value.asInstanceOf[js.Any])
+    inline def setTextOrientation(value: Boolean): Self = StObject.set(x, "textOrientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextOrientationUndefined: Self = StObject.set(x, "textOrientation", js.undefined)
+    inline def setTextOrientationUndefined: Self = StObject.set(x, "textOrientation", js.undefined)
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait MediaPlayerDataReceivedEventArgs extends StObject {
 }
 object MediaPlayerDataReceivedEventArgs {
   
-  @scala.inline
-  def apply(data: IMap[String, String]): MediaPlayerDataReceivedEventArgs = {
+  inline def apply(data: IMap[String, String]): MediaPlayerDataReceivedEventArgs = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaPlayerDataReceivedEventArgs]
   }
   
-  @scala.inline
-  implicit class MediaPlayerDataReceivedEventArgsMutableBuilder[Self <: MediaPlayerDataReceivedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: MediaPlayerDataReceivedEventArgs](x: Self) {
     
-    @scala.inline
-    def setData(value: IMap[String, String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: IMap[String, String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait ResourceIdChannelIdKind extends StObject {
 }
 object ResourceIdChannelIdKind {
   
-  @scala.inline
-  def apply(resourceId: ChannelIdKind): ResourceIdChannelIdKind = {
+  inline def apply(resourceId: ChannelIdKind): ResourceIdChannelIdKind = {
     val __obj = js.Dynamic.literal(resourceId = resourceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceIdChannelIdKind]
   }
   
-  @scala.inline
-  implicit class ResourceIdChannelIdKindMutableBuilder[Self <: ResourceIdChannelIdKind] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceIdChannelIdKind](x: Self) {
     
-    @scala.inline
-    def setResourceId(value: ChannelIdKind): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: ChannelIdKind): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
   }
 }

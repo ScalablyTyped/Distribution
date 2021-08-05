@@ -22,8 +22,7 @@ trait loggingLevels extends StObject {
 }
 object loggingLevels {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FINE: Double,
     FINER: Double,
     FINEST: Double,
@@ -37,28 +36,20 @@ object loggingLevels {
     __obj.asInstanceOf[loggingLevels]
   }
   
-  @scala.inline
-  implicit class loggingLevelsMutableBuilder[Self <: loggingLevels] (val x: Self) extends AnyVal {
+  extension [Self <: loggingLevels](x: Self) {
     
-    @scala.inline
-    def setFINE(value: Double): Self = StObject.set(x, "FINE", value.asInstanceOf[js.Any])
+    inline def setFINE(value: Double): Self = StObject.set(x, "FINE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFINER(value: Double): Self = StObject.set(x, "FINER", value.asInstanceOf[js.Any])
+    inline def setFINER(value: Double): Self = StObject.set(x, "FINER", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFINEST(value: Double): Self = StObject.set(x, "FINEST", value.asInstanceOf[js.Any])
+    inline def setFINEST(value: Double): Self = StObject.set(x, "FINEST", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setINFO(value: Double): Self = StObject.set(x, "INFO", value.asInstanceOf[js.Any])
+    inline def setINFO(value: Double): Self = StObject.set(x, "INFO", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSEVERE(value: Double): Self = StObject.set(x, "SEVERE", value.asInstanceOf[js.Any])
+    inline def setSEVERE(value: Double): Self = StObject.set(x, "SEVERE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToString_(value: Double => String): Self = StObject.set(x, "toString", js.Any.fromFunction1(value))
+    inline def setToString_(value: Double => String): Self = StObject.set(x, "toString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWARN(value: Double): Self = StObject.set(x, "WARN", value.asInstanceOf[js.Any])
+    inline def setWARN(value: Double): Self = StObject.set(x, "WARN", value.asInstanceOf[js.Any])
   }
 }

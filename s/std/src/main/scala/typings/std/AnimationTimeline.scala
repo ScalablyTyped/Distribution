@@ -10,19 +10,15 @@ trait AnimationTimeline extends StObject {
 }
 object AnimationTimeline {
   
-  @scala.inline
-  def apply(): AnimationTimeline = {
+  inline def apply(): AnimationTimeline = {
     val __obj = js.Dynamic.literal(currentTime = null)
     __obj.asInstanceOf[AnimationTimeline]
   }
   
-  @scala.inline
-  implicit class AnimationTimelineMutableBuilder[Self <: AnimationTimeline] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationTimeline](x: Self) {
     
-    @scala.inline
-    def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
+    inline def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentTimeNull: Self = StObject.set(x, "currentTime", null)
+    inline def setCurrentTimeNull: Self = StObject.set(x, "currentTime", null)
   }
 }

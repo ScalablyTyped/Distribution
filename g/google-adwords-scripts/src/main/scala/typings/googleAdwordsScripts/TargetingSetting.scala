@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TargetingSetting extends StObject
 object TargetingSetting {
   
-  @scala.inline
-  def TARGET_ALL_FALSE: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.TARGET_ALL_FALSE = "TARGET_ALL_FALSE".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.TARGET_ALL_FALSE]
+  inline def TARGET_ALL_FALSE: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.TARGET_ALL_FALSE = "TARGET_ALL_FALSE".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.TARGET_ALL_FALSE]
   
-  @scala.inline
-  def TARGET_ALL_TRUE: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.TARGET_ALL_TRUE = "TARGET_ALL_TRUE".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.TARGET_ALL_TRUE]
+  inline def TARGET_ALL_TRUE: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.TARGET_ALL_TRUE = "TARGET_ALL_TRUE".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.TARGET_ALL_TRUE]
 }

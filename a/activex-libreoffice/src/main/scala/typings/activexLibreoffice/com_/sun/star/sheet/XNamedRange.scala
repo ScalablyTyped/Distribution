@@ -67,8 +67,7 @@ trait XNamedRange
 }
 object XNamedRange {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Content: String,
     Name: String,
     ReferencePosition: CellAddress,
@@ -89,34 +88,24 @@ object XNamedRange {
     __obj.asInstanceOf[XNamedRange]
   }
   
-  @scala.inline
-  implicit class XNamedRangeMutableBuilder[Self <: XNamedRange] (val x: Self) extends AnyVal {
+  extension [Self <: XNamedRange](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetContent(value: () => String): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
+    inline def setGetContent(value: () => String): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetReferencePosition(value: () => CellAddress): Self = StObject.set(x, "getReferencePosition", js.Any.fromFunction0(value))
+    inline def setGetReferencePosition(value: () => CellAddress): Self = StObject.set(x, "getReferencePosition", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetType(value: () => Double): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+    inline def setGetType(value: () => Double): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReferencePosition(value: CellAddress): Self = StObject.set(x, "ReferencePosition", value.asInstanceOf[js.Any])
+    inline def setReferencePosition(value: CellAddress): Self = StObject.set(x, "ReferencePosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetContent(value: String => Unit): Self = StObject.set(x, "setContent", js.Any.fromFunction1(value))
+    inline def setSetContent(value: String => Unit): Self = StObject.set(x, "setContent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetReferencePosition(value: CellAddress => Unit): Self = StObject.set(x, "setReferencePosition", js.Any.fromFunction1(value))
+    inline def setSetReferencePosition(value: CellAddress => Unit): Self = StObject.set(x, "setReferencePosition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetType(value: Double => Unit): Self = StObject.set(x, "setType", js.Any.fromFunction1(value))
+    inline def setSetType(value: Double => Unit): Self = StObject.set(x, "setType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

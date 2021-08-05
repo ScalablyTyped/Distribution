@@ -19,8 +19,7 @@ trait XScreenCursor
 }
 object XScreenCursor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -31,13 +30,10 @@ object XScreenCursor {
     __obj.asInstanceOf[XScreenCursor]
   }
   
-  @scala.inline
-  implicit class XScreenCursorMutableBuilder[Self <: XScreenCursor] (val x: Self) extends AnyVal {
+  extension [Self <: XScreenCursor](x: Self) {
     
-    @scala.inline
-    def setScreenDown(value: () => Boolean): Self = StObject.set(x, "screenDown", js.Any.fromFunction0(value))
+    inline def setScreenDown(value: () => Boolean): Self = StObject.set(x, "screenDown", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setScreenUp(value: () => Boolean): Self = StObject.set(x, "screenUp", js.Any.fromFunction0(value))
+    inline def setScreenUp(value: () => Boolean): Self = StObject.set(x, "screenUp", js.Any.fromFunction0(value))
   }
 }

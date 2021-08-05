@@ -17,31 +17,23 @@ trait BulletSuggestionState extends StObject {
 }
 object BulletSuggestionState {
   
-  @scala.inline
-  def apply(): BulletSuggestionState = {
+  inline def apply(): BulletSuggestionState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BulletSuggestionState]
   }
   
-  @scala.inline
-  implicit class BulletSuggestionStateMutableBuilder[Self <: BulletSuggestionState] (val x: Self) extends AnyVal {
+  extension [Self <: BulletSuggestionState](x: Self) {
     
-    @scala.inline
-    def setListIdSuggested(value: Boolean): Self = StObject.set(x, "listIdSuggested", value.asInstanceOf[js.Any])
+    inline def setListIdSuggested(value: Boolean): Self = StObject.set(x, "listIdSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListIdSuggestedUndefined: Self = StObject.set(x, "listIdSuggested", js.undefined)
+    inline def setListIdSuggestedUndefined: Self = StObject.set(x, "listIdSuggested", js.undefined)
     
-    @scala.inline
-    def setNestingLevelSuggested(value: Boolean): Self = StObject.set(x, "nestingLevelSuggested", value.asInstanceOf[js.Any])
+    inline def setNestingLevelSuggested(value: Boolean): Self = StObject.set(x, "nestingLevelSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNestingLevelSuggestedUndefined: Self = StObject.set(x, "nestingLevelSuggested", js.undefined)
+    inline def setNestingLevelSuggestedUndefined: Self = StObject.set(x, "nestingLevelSuggested", js.undefined)
     
-    @scala.inline
-    def setTextStyleSuggestionState(value: TextStyleSuggestionState): Self = StObject.set(x, "textStyleSuggestionState", value.asInstanceOf[js.Any])
+    inline def setTextStyleSuggestionState(value: TextStyleSuggestionState): Self = StObject.set(x, "textStyleSuggestionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextStyleSuggestionStateUndefined: Self = StObject.set(x, "textStyleSuggestionState", js.undefined)
+    inline def setTextStyleSuggestionStateUndefined: Self = StObject.set(x, "textStyleSuggestionState", js.undefined)
   }
 }

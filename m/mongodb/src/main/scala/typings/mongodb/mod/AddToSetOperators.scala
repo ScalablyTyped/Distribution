@@ -11,16 +11,13 @@ trait AddToSetOperators[Type] extends StObject {
 }
 object AddToSetOperators {
   
-  @scala.inline
-  def apply[Type]($each: Type): AddToSetOperators[Type] = {
+  inline def apply[Type]($each: Type): AddToSetOperators[Type] = {
     val __obj = js.Dynamic.literal($each = $each.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddToSetOperators[Type]]
   }
   
-  @scala.inline
-  implicit class AddToSetOperatorsMutableBuilder[Self <: AddToSetOperators[?], Type] (val x: Self & AddToSetOperators[Type]) extends AnyVal {
+  extension [Self <: AddToSetOperators[?], Type](x: Self & AddToSetOperators[Type]) {
     
-    @scala.inline
-    def set$each(value: Type): Self = StObject.set(x, "$each", value.asInstanceOf[js.Any])
+    inline def set$each(value: Type): Self = StObject.set(x, "$each", value.asInstanceOf[js.Any])
   }
 }

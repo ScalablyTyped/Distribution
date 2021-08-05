@@ -12,19 +12,15 @@ trait AllOrNone extends StObject {
 }
 object AllOrNone {
   
-  @scala.inline
-  def apply(allOrNone: scala.Double, bestEffort: scala.Double): AllOrNone = {
+  inline def apply(allOrNone: scala.Double, bestEffort: scala.Double): AllOrNone = {
     val __obj = js.Dynamic.literal(allOrNone = allOrNone.asInstanceOf[js.Any], bestEffort = bestEffort.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllOrNone]
   }
   
-  @scala.inline
-  implicit class AllOrNoneMutableBuilder[Self <: AllOrNone] (val x: Self) extends AnyVal {
+  extension [Self <: AllOrNone](x: Self) {
     
-    @scala.inline
-    def setAllOrNone(value: scala.Double): Self = StObject.set(x, "allOrNone", value.asInstanceOf[js.Any])
+    inline def setAllOrNone(value: scala.Double): Self = StObject.set(x, "allOrNone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBestEffort(value: scala.Double): Self = StObject.set(x, "bestEffort", value.asInstanceOf[js.Any])
+    inline def setBestEffort(value: scala.Double): Self = StObject.set(x, "bestEffort", value.asInstanceOf[js.Any])
   }
 }

@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlCheckInVersionType extends StObject
 object XlCheckInVersionType {
   
-  @scala.inline
-  def xlCheckInMajorVersion: `1` = 1.asInstanceOf[`1`]
+  inline def xlCheckInMajorVersion: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlCheckInMinorVersion: `0` = 0.asInstanceOf[`0`]
+  inline def xlCheckInMinorVersion: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xlCheckInOverwriteVersion: `2` = 2.asInstanceOf[`2`]
+  inline def xlCheckInOverwriteVersion: `2` = 2.asInstanceOf[`2`]
 }

@@ -32,8 +32,7 @@ trait RuleTerm extends StObject {
 }
 object RuleTerm {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CaseSensitive: Boolean,
     Operand: js.Any,
     Operator: Double,
@@ -44,22 +43,16 @@ object RuleTerm {
     __obj.asInstanceOf[RuleTerm]
   }
   
-  @scala.inline
-  implicit class RuleTermMutableBuilder[Self <: RuleTerm] (val x: Self) extends AnyVal {
+  extension [Self <: RuleTerm](x: Self) {
     
-    @scala.inline
-    def setCaseSensitive(value: Boolean): Self = StObject.set(x, "CaseSensitive", value.asInstanceOf[js.Any])
+    inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "CaseSensitive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperand(value: js.Any): Self = StObject.set(x, "Operand", value.asInstanceOf[js.Any])
+    inline def setOperand(value: js.Any): Self = StObject.set(x, "Operand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperator(value: Double): Self = StObject.set(x, "Operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: Double): Self = StObject.set(x, "Operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperty(value: String): Self = StObject.set(x, "Property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: String): Self = StObject.set(x, "Property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegularExpression(value: Boolean): Self = StObject.set(x, "RegularExpression", value.asInstanceOf[js.Any])
+    inline def setRegularExpression(value: Boolean): Self = StObject.set(x, "RegularExpression", value.asInstanceOf[js.Any])
   }
 }

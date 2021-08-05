@@ -54,8 +54,7 @@ trait TEdge extends StObject {
 }
 object TEdge {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deltaX: Double,
     deltaY: Double,
     dx: Double,
@@ -84,76 +83,52 @@ object TEdge {
     __obj.asInstanceOf[TEdge]
   }
   
-  @scala.inline
-  implicit class TEdgeMutableBuilder[Self <: TEdge] (val x: Self) extends AnyVal {
+  extension [Self <: TEdge](x: Self) {
     
-    @scala.inline
-    def setDeltaX(value: Double): Self = StObject.set(x, "deltaX", value.asInstanceOf[js.Any])
+    inline def setDeltaX(value: Double): Self = StObject.set(x, "deltaX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeltaY(value: Double): Self = StObject.set(x, "deltaY", value.asInstanceOf[js.Any])
+    inline def setDeltaY(value: Double): Self = StObject.set(x, "deltaY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDx(value: Double): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
+    inline def setDx(value: Double): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext(value: TEdge): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: TEdge): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextInAEL(value: TEdge): Self = StObject.set(x, "nextInAEL", value.asInstanceOf[js.Any])
+    inline def setNextInAEL(value: TEdge): Self = StObject.set(x, "nextInAEL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextInLML(value: TEdge): Self = StObject.set(x, "nextInLML", value.asInstanceOf[js.Any])
+    inline def setNextInLML(value: TEdge): Self = StObject.set(x, "nextInLML", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextInSEL(value: TEdge): Self = StObject.set(x, "nextInSEL", value.asInstanceOf[js.Any])
+    inline def setNextInSEL(value: TEdge): Self = StObject.set(x, "nextInSEL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutIdx(value: Double): Self = StObject.set(x, "outIdx", value.asInstanceOf[js.Any])
+    inline def setOutIdx(value: Double): Self = StObject.set(x, "outIdx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolyType(value: PolyType): Self = StObject.set(x, "polyType", value.asInstanceOf[js.Any])
+    inline def setPolyType(value: PolyType): Self = StObject.set(x, "polyType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrev(value: TEdge): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+    inline def setPrev(value: TEdge): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevInAEL(value: TEdge): Self = StObject.set(x, "prevInAEL", value.asInstanceOf[js.Any])
+    inline def setPrevInAEL(value: TEdge): Self = StObject.set(x, "prevInAEL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevInSEL(value: TEdge): Self = StObject.set(x, "prevInSEL", value.asInstanceOf[js.Any])
+    inline def setPrevInSEL(value: TEdge): Self = StObject.set(x, "prevInSEL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSide(value: EdgeSide): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
+    inline def setSide(value: EdgeSide): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTmpX(value: Double): Self = StObject.set(x, "tmpX", value.asInstanceOf[js.Any])
+    inline def setTmpX(value: Double): Self = StObject.set(x, "tmpX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindCnt(value: Double): Self = StObject.set(x, "windCnt", value.asInstanceOf[js.Any])
+    inline def setWindCnt(value: Double): Self = StObject.set(x, "windCnt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindCnt2(value: Double): Self = StObject.set(x, "windCnt2", value.asInstanceOf[js.Any])
+    inline def setWindCnt2(value: Double): Self = StObject.set(x, "windCnt2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindDelta(value: Double): Self = StObject.set(x, "windDelta", value.asInstanceOf[js.Any])
+    inline def setWindDelta(value: Double): Self = StObject.set(x, "windDelta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXbot(value: Double): Self = StObject.set(x, "xbot", value.asInstanceOf[js.Any])
+    inline def setXbot(value: Double): Self = StObject.set(x, "xbot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXcurr(value: Double): Self = StObject.set(x, "xcurr", value.asInstanceOf[js.Any])
+    inline def setXcurr(value: Double): Self = StObject.set(x, "xcurr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXtop(value: Double): Self = StObject.set(x, "xtop", value.asInstanceOf[js.Any])
+    inline def setXtop(value: Double): Self = StObject.set(x, "xtop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYbot(value: Double): Self = StObject.set(x, "ybot", value.asInstanceOf[js.Any])
+    inline def setYbot(value: Double): Self = StObject.set(x, "ybot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYcurr(value: Double): Self = StObject.set(x, "ycurr", value.asInstanceOf[js.Any])
+    inline def setYcurr(value: Double): Self = StObject.set(x, "ycurr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYtop(value: Double): Self = StObject.set(x, "ytop", value.asInstanceOf[js.Any])
+    inline def setYtop(value: Double): Self = StObject.set(x, "ytop", value.asInstanceOf[js.Any])
   }
 }

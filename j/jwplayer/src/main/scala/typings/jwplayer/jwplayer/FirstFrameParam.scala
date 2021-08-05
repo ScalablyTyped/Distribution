@@ -14,19 +14,15 @@ trait FirstFrameParam extends StObject {
 }
 object FirstFrameParam {
   
-  @scala.inline
-  def apply(loadTime: Double, viewable: `0` | `1`): FirstFrameParam = {
+  inline def apply(loadTime: Double, viewable: `0` | `1`): FirstFrameParam = {
     val __obj = js.Dynamic.literal(loadTime = loadTime.asInstanceOf[js.Any], viewable = viewable.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirstFrameParam]
   }
   
-  @scala.inline
-  implicit class FirstFrameParamMutableBuilder[Self <: FirstFrameParam] (val x: Self) extends AnyVal {
+  extension [Self <: FirstFrameParam](x: Self) {
     
-    @scala.inline
-    def setLoadTime(value: Double): Self = StObject.set(x, "loadTime", value.asInstanceOf[js.Any])
+    inline def setLoadTime(value: Double): Self = StObject.set(x, "loadTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewable(value: `0` | `1`): Self = StObject.set(x, "viewable", value.asInstanceOf[js.Any])
+    inline def setViewable(value: `0` | `1`): Self = StObject.set(x, "viewable", value.asInstanceOf[js.Any])
   }
 }

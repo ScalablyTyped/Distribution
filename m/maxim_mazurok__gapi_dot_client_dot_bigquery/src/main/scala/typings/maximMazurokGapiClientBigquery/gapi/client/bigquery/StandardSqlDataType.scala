@@ -17,31 +17,23 @@ trait StandardSqlDataType extends StObject {
 }
 object StandardSqlDataType {
   
-  @scala.inline
-  def apply(): StandardSqlDataType = {
+  inline def apply(): StandardSqlDataType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StandardSqlDataType]
   }
   
-  @scala.inline
-  implicit class StandardSqlDataTypeMutableBuilder[Self <: StandardSqlDataType] (val x: Self) extends AnyVal {
+  extension [Self <: StandardSqlDataType](x: Self) {
     
-    @scala.inline
-    def setArrayElementType(value: StandardSqlDataType): Self = StObject.set(x, "arrayElementType", value.asInstanceOf[js.Any])
+    inline def setArrayElementType(value: StandardSqlDataType): Self = StObject.set(x, "arrayElementType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrayElementTypeUndefined: Self = StObject.set(x, "arrayElementType", js.undefined)
+    inline def setArrayElementTypeUndefined: Self = StObject.set(x, "arrayElementType", js.undefined)
     
-    @scala.inline
-    def setStructType(value: StandardSqlStructType): Self = StObject.set(x, "structType", value.asInstanceOf[js.Any])
+    inline def setStructType(value: StandardSqlStructType): Self = StObject.set(x, "structType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructTypeUndefined: Self = StObject.set(x, "structType", js.undefined)
+    inline def setStructTypeUndefined: Self = StObject.set(x, "structType", js.undefined)
     
-    @scala.inline
-    def setTypeKind(value: String): Self = StObject.set(x, "typeKind", value.asInstanceOf[js.Any])
+    inline def setTypeKind(value: String): Self = StObject.set(x, "typeKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeKindUndefined: Self = StObject.set(x, "typeKind", js.undefined)
+    inline def setTypeKindUndefined: Self = StObject.set(x, "typeKind", js.undefined)
   }
 }

@@ -783,8 +783,7 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
 }
 object AddOrUpdateMembershipForUserInOrg {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addOrUpdateMembershipForUserInOrg: `485`,
     addOrUpdateProjectPermissionsInOrg: `486`,
     addOrUpdateRepoPermissionsInOrg: `487`,
@@ -820,97 +819,66 @@ object AddOrUpdateMembershipForUserInOrg {
     __obj.asInstanceOf[AddOrUpdateMembershipForUserInOrg]
   }
   
-  @scala.inline
-  implicit class AddOrUpdateMembershipForUserInOrgMutableBuilder[Self <: AddOrUpdateMembershipForUserInOrg] (val x: Self) extends AnyVal {
+  extension [Self <: AddOrUpdateMembershipForUserInOrg](x: Self) {
     
-    @scala.inline
-    def setAddOrUpdateMembershipForUserInOrg(value: `485`): Self = StObject.set(x, "addOrUpdateMembershipForUserInOrg", value.asInstanceOf[js.Any])
+    inline def setAddOrUpdateMembershipForUserInOrg(value: `485`): Self = StObject.set(x, "addOrUpdateMembershipForUserInOrg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddOrUpdateProjectPermissionsInOrg(value: `486`): Self = StObject.set(x, "addOrUpdateProjectPermissionsInOrg", value.asInstanceOf[js.Any])
+    inline def setAddOrUpdateProjectPermissionsInOrg(value: `486`): Self = StObject.set(x, "addOrUpdateProjectPermissionsInOrg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddOrUpdateRepoPermissionsInOrg(value: `487`): Self = StObject.set(x, "addOrUpdateRepoPermissionsInOrg", value.asInstanceOf[js.Any])
+    inline def setAddOrUpdateRepoPermissionsInOrg(value: `487`): Self = StObject.set(x, "addOrUpdateRepoPermissionsInOrg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckPermissionsForProjectInOrg(value: `488`): Self = StObject.set(x, "checkPermissionsForProjectInOrg", value.asInstanceOf[js.Any])
+    inline def setCheckPermissionsForProjectInOrg(value: `488`): Self = StObject.set(x, "checkPermissionsForProjectInOrg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckPermissionsForRepoInOrg(value: `489`): Self = StObject.set(x, "checkPermissionsForRepoInOrg", value.asInstanceOf[js.Any])
+    inline def setCheckPermissionsForRepoInOrg(value: `489`): Self = StObject.set(x, "checkPermissionsForRepoInOrg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreate(value: `490`): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+    inline def setCreate(value: `490`): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateDiscussionCommentInOrg(value: `491`): Self = StObject.set(x, "createDiscussionCommentInOrg", value.asInstanceOf[js.Any])
+    inline def setCreateDiscussionCommentInOrg(value: `491`): Self = StObject.set(x, "createDiscussionCommentInOrg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateDiscussionInOrg(value: `492`): Self = StObject.set(x, "createDiscussionInOrg", value.asInstanceOf[js.Any])
+    inline def setCreateDiscussionInOrg(value: `492`): Self = StObject.set(x, "createDiscussionInOrg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteDiscussionCommentInOrg(value: `493`): Self = StObject.set(x, "deleteDiscussionCommentInOrg", value.asInstanceOf[js.Any])
+    inline def setDeleteDiscussionCommentInOrg(value: `493`): Self = StObject.set(x, "deleteDiscussionCommentInOrg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteDiscussionInOrg(value: `494`): Self = StObject.set(x, "deleteDiscussionInOrg", value.asInstanceOf[js.Any])
+    inline def setDeleteDiscussionInOrg(value: `494`): Self = StObject.set(x, "deleteDiscussionInOrg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteInOrg(value: `495`): Self = StObject.set(x, "deleteInOrg", value.asInstanceOf[js.Any])
+    inline def setDeleteInOrg(value: `495`): Self = StObject.set(x, "deleteInOrg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetByName(value: `496`): Self = StObject.set(x, "getByName", value.asInstanceOf[js.Any])
+    inline def setGetByName(value: `496`): Self = StObject.set(x, "getByName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDiscussionCommentInOrg(value: `497`): Self = StObject.set(x, "getDiscussionCommentInOrg", value.asInstanceOf[js.Any])
+    inline def setGetDiscussionCommentInOrg(value: `497`): Self = StObject.set(x, "getDiscussionCommentInOrg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDiscussionInOrg(value: `498`): Self = StObject.set(x, "getDiscussionInOrg", value.asInstanceOf[js.Any])
+    inline def setGetDiscussionInOrg(value: `498`): Self = StObject.set(x, "getDiscussionInOrg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetMembershipForUserInOrg(value: `499`): Self = StObject.set(x, "getMembershipForUserInOrg", value.asInstanceOf[js.Any])
+    inline def setGetMembershipForUserInOrg(value: `499`): Self = StObject.set(x, "getMembershipForUserInOrg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setList(value: `500`): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+    inline def setList(value: `500`): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListChildInOrg(value: `501`): Self = StObject.set(x, "listChildInOrg", value.asInstanceOf[js.Any])
+    inline def setListChildInOrg(value: `501`): Self = StObject.set(x, "listChildInOrg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListDiscussionCommentsInOrg(value: `502`): Self = StObject.set(x, "listDiscussionCommentsInOrg", value.asInstanceOf[js.Any])
+    inline def setListDiscussionCommentsInOrg(value: `502`): Self = StObject.set(x, "listDiscussionCommentsInOrg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListDiscussionsInOrg(value: `503`): Self = StObject.set(x, "listDiscussionsInOrg", value.asInstanceOf[js.Any])
+    inline def setListDiscussionsInOrg(value: `503`): Self = StObject.set(x, "listDiscussionsInOrg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListForAuthenticatedUser(value: `504`): Self = StObject.set(x, "listForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setListForAuthenticatedUser(value: `504`): Self = StObject.set(x, "listForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListMembersInOrg(value: `505`): Self = StObject.set(x, "listMembersInOrg", value.asInstanceOf[js.Any])
+    inline def setListMembersInOrg(value: `505`): Self = StObject.set(x, "listMembersInOrg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListPendingInvitationsInOrg(value: `506`): Self = StObject.set(x, "listPendingInvitationsInOrg", value.asInstanceOf[js.Any])
+    inline def setListPendingInvitationsInOrg(value: `506`): Self = StObject.set(x, "listPendingInvitationsInOrg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListProjectsInOrg(value: `507`): Self = StObject.set(x, "listProjectsInOrg", value.asInstanceOf[js.Any])
+    inline def setListProjectsInOrg(value: `507`): Self = StObject.set(x, "listProjectsInOrg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListReposInOrg(value: `508`): Self = StObject.set(x, "listReposInOrg", value.asInstanceOf[js.Any])
+    inline def setListReposInOrg(value: `508`): Self = StObject.set(x, "listReposInOrg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveMembershipForUserInOrg(value: `509`): Self = StObject.set(x, "removeMembershipForUserInOrg", value.asInstanceOf[js.Any])
+    inline def setRemoveMembershipForUserInOrg(value: `509`): Self = StObject.set(x, "removeMembershipForUserInOrg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveProjectInOrg(value: `510`): Self = StObject.set(x, "removeProjectInOrg", value.asInstanceOf[js.Any])
+    inline def setRemoveProjectInOrg(value: `510`): Self = StObject.set(x, "removeProjectInOrg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveRepoInOrg(value: `511`): Self = StObject.set(x, "removeRepoInOrg", value.asInstanceOf[js.Any])
+    inline def setRemoveRepoInOrg(value: `511`): Self = StObject.set(x, "removeRepoInOrg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateDiscussionCommentInOrg(value: `512`): Self = StObject.set(x, "updateDiscussionCommentInOrg", value.asInstanceOf[js.Any])
+    inline def setUpdateDiscussionCommentInOrg(value: `512`): Self = StObject.set(x, "updateDiscussionCommentInOrg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateDiscussionInOrg(value: `513`): Self = StObject.set(x, "updateDiscussionInOrg", value.asInstanceOf[js.Any])
+    inline def setUpdateDiscussionInOrg(value: `513`): Self = StObject.set(x, "updateDiscussionInOrg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateInOrg(value: `514`): Self = StObject.set(x, "updateInOrg", value.asInstanceOf[js.Any])
+    inline def setUpdateInOrg(value: `514`): Self = StObject.set(x, "updateInOrg", value.asInstanceOf[js.Any])
   }
 }

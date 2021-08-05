@@ -18,28 +18,21 @@ trait QueryStringObject extends StObject {
 }
 object QueryStringObject {
   
-  @scala.inline
-  def apply(): QueryStringObject = {
+  inline def apply(): QueryStringObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryStringObject]
   }
   
-  @scala.inline
-  implicit class QueryStringObjectMutableBuilder[Self <: QueryStringObject] (val x: Self) extends AnyVal {
+  extension [Self <: QueryStringObject](x: Self) {
     
-    @scala.inline
-    def setOption(value: Boolean): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
+    inline def setOption(value: Boolean): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionUndefined: Self = StObject.set(x, "option", js.undefined)
+    inline def setOptionUndefined: Self = StObject.set(x, "option", js.undefined)
     
-    @scala.inline
-    def setQueryStringsAllowList(value: StringList): Self = StObject.set(x, "queryStringsAllowList", value.asInstanceOf[js.Any])
+    inline def setQueryStringsAllowList(value: StringList): Self = StObject.set(x, "queryStringsAllowList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryStringsAllowListUndefined: Self = StObject.set(x, "queryStringsAllowList", js.undefined)
+    inline def setQueryStringsAllowListUndefined: Self = StObject.set(x, "queryStringsAllowList", js.undefined)
     
-    @scala.inline
-    def setQueryStringsAllowListVarargs(value: String*): Self = StObject.set(x, "queryStringsAllowList", js.Array(value :_*))
+    inline def setQueryStringsAllowListVarargs(value: String*): Self = StObject.set(x, "queryStringsAllowList", js.Array(value :_*))
   }
 }

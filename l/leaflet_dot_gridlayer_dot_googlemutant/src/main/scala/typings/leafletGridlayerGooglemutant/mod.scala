@@ -17,10 +17,8 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def googleMutant(): GoogleMutant_ = ^.asInstanceOf[js.Dynamic].applyDynamic("googleMutant")().asInstanceOf[GoogleMutant_]
-    @scala.inline
-    def googleMutant(options: GoogleMutantOptions): GoogleMutant_ = ^.asInstanceOf[js.Dynamic].applyDynamic("googleMutant")(options.asInstanceOf[js.Any]).asInstanceOf[GoogleMutant_]
+    inline def googleMutant(): GoogleMutant_ = ^.asInstanceOf[js.Dynamic].applyDynamic("googleMutant")().asInstanceOf[GoogleMutant_]
+    inline def googleMutant(options: GoogleMutantOptions): GoogleMutant_ = ^.asInstanceOf[js.Dynamic].applyDynamic("googleMutant")(options.asInstanceOf[js.Any]).asInstanceOf[GoogleMutant_]
     
     trait GoogleMutantOptions
       extends StObject
@@ -40,35 +38,26 @@ object mod {
     }
     object GoogleMutantOptions {
       
-      @scala.inline
-      def apply(): GoogleMutantOptions = {
+      inline def apply(): GoogleMutantOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[GoogleMutantOptions]
       }
       
-      @scala.inline
-      implicit class GoogleMutantOptionsMutableBuilder[Self <: GoogleMutantOptions] (val x: Self) extends AnyVal {
+      extension [Self <: GoogleMutantOptions](x: Self) {
         
-        @scala.inline
-        def setContinuousWorld(value: Boolean): Self = StObject.set(x, "continuousWorld", value.asInstanceOf[js.Any])
+        inline def setContinuousWorld(value: Boolean): Self = StObject.set(x, "continuousWorld", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContinuousWorldUndefined: Self = StObject.set(x, "continuousWorld", js.undefined)
+        inline def setContinuousWorldUndefined: Self = StObject.set(x, "continuousWorld", js.undefined)
         
-        @scala.inline
-        def setStyles(value: js.Array[GoogleMutantStyle]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+        inline def setStyles(value: js.Array[GoogleMutantStyle]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+        inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
         
-        @scala.inline
-        def setStylesVarargs(value: GoogleMutantStyle*): Self = StObject.set(x, "styles", js.Array(value :_*))
+        inline def setStylesVarargs(value: GoogleMutantStyle*): Self = StObject.set(x, "styles", js.Array(value :_*))
         
-        @scala.inline
-        def setType(value: GoogleMutantType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: GoogleMutantType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       }
     }
     
@@ -96,35 +85,26 @@ object mod {
     }
     object GoogleMutantStyle {
       
-      @scala.inline
-      def apply(): GoogleMutantStyle = {
+      inline def apply(): GoogleMutantStyle = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[GoogleMutantStyle]
       }
       
-      @scala.inline
-      implicit class GoogleMutantStyleMutableBuilder[Self <: GoogleMutantStyle] (val x: Self) extends AnyVal {
+      extension [Self <: GoogleMutantStyle](x: Self) {
         
-        @scala.inline
-        def setElementType(value: String): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
+        inline def setElementType(value: String): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setElementTypeUndefined: Self = StObject.set(x, "elementType", js.undefined)
+        inline def setElementTypeUndefined: Self = StObject.set(x, "elementType", js.undefined)
         
-        @scala.inline
-        def setFeatureType(value: String): Self = StObject.set(x, "featureType", value.asInstanceOf[js.Any])
+        inline def setFeatureType(value: String): Self = StObject.set(x, "featureType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFeatureTypeUndefined: Self = StObject.set(x, "featureType", js.undefined)
+        inline def setFeatureTypeUndefined: Self = StObject.set(x, "featureType", js.undefined)
         
-        @scala.inline
-        def setStylers(value: js.Array[GoogleMutantStyler]): Self = StObject.set(x, "stylers", value.asInstanceOf[js.Any])
+        inline def setStylers(value: js.Array[GoogleMutantStyler]): Self = StObject.set(x, "stylers", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStylersUndefined: Self = StObject.set(x, "stylers", js.undefined)
+        inline def setStylersUndefined: Self = StObject.set(x, "stylers", js.undefined)
         
-        @scala.inline
-        def setStylersVarargs(value: GoogleMutantStyler*): Self = StObject.set(x, "stylers", js.Array(value :_*))
+        inline def setStylersVarargs(value: GoogleMutantStyler*): Self = StObject.set(x, "stylers", js.Array(value :_*))
       }
     }
     
@@ -148,62 +128,44 @@ object mod {
     }
     object GoogleMutantStyler {
       
-      @scala.inline
-      def apply(): GoogleMutantStyler = {
+      inline def apply(): GoogleMutantStyler = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[GoogleMutantStyler]
       }
       
-      @scala.inline
-      implicit class GoogleMutantStylerMutableBuilder[Self <: GoogleMutantStyler] (val x: Self) extends AnyVal {
+      extension [Self <: GoogleMutantStyler](x: Self) {
         
-        @scala.inline
-        def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+        inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+        inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
         
-        @scala.inline
-        def setGamma(value: Double): Self = StObject.set(x, "gamma", value.asInstanceOf[js.Any])
+        inline def setGamma(value: Double): Self = StObject.set(x, "gamma", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGammaUndefined: Self = StObject.set(x, "gamma", js.undefined)
+        inline def setGammaUndefined: Self = StObject.set(x, "gamma", js.undefined)
         
-        @scala.inline
-        def setHue(value: String): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
+        inline def setHue(value: String): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHueUndefined: Self = StObject.set(x, "hue", js.undefined)
+        inline def setHueUndefined: Self = StObject.set(x, "hue", js.undefined)
         
-        @scala.inline
-        def setInvert_lightness(value: Boolean): Self = StObject.set(x, "invert_lightness", value.asInstanceOf[js.Any])
+        inline def setInvert_lightness(value: Boolean): Self = StObject.set(x, "invert_lightness", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInvert_lightnessUndefined: Self = StObject.set(x, "invert_lightness", js.undefined)
+        inline def setInvert_lightnessUndefined: Self = StObject.set(x, "invert_lightness", js.undefined)
         
-        @scala.inline
-        def setLightness(value: Double): Self = StObject.set(x, "lightness", value.asInstanceOf[js.Any])
+        inline def setLightness(value: Double): Self = StObject.set(x, "lightness", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLightnessUndefined: Self = StObject.set(x, "lightness", js.undefined)
+        inline def setLightnessUndefined: Self = StObject.set(x, "lightness", js.undefined)
         
-        @scala.inline
-        def setSaturation(value: Double): Self = StObject.set(x, "saturation", value.asInstanceOf[js.Any])
+        inline def setSaturation(value: Double): Self = StObject.set(x, "saturation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSaturationUndefined: Self = StObject.set(x, "saturation", js.undefined)
+        inline def setSaturationUndefined: Self = StObject.set(x, "saturation", js.undefined)
         
-        @scala.inline
-        def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+        inline def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
+        inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
         
-        @scala.inline
-        def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+        inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+        inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
       }
     }
     
@@ -216,17 +178,13 @@ object mod {
     trait GoogleMutantType extends StObject
     object GoogleMutantType {
       
-      @scala.inline
-      def hybrid: typings.leafletGridlayerGooglemutant.leafletGridlayerGooglemutantStrings.hybrid = "hybrid".asInstanceOf[typings.leafletGridlayerGooglemutant.leafletGridlayerGooglemutantStrings.hybrid]
+      inline def hybrid: typings.leafletGridlayerGooglemutant.leafletGridlayerGooglemutantStrings.hybrid = "hybrid".asInstanceOf[typings.leafletGridlayerGooglemutant.leafletGridlayerGooglemutantStrings.hybrid]
       
-      @scala.inline
-      def roadmap: typings.leafletGridlayerGooglemutant.leafletGridlayerGooglemutantStrings.roadmap = "roadmap".asInstanceOf[typings.leafletGridlayerGooglemutant.leafletGridlayerGooglemutantStrings.roadmap]
+      inline def roadmap: typings.leafletGridlayerGooglemutant.leafletGridlayerGooglemutantStrings.roadmap = "roadmap".asInstanceOf[typings.leafletGridlayerGooglemutant.leafletGridlayerGooglemutantStrings.roadmap]
       
-      @scala.inline
-      def satellite: typings.leafletGridlayerGooglemutant.leafletGridlayerGooglemutantStrings.satellite = "satellite".asInstanceOf[typings.leafletGridlayerGooglemutant.leafletGridlayerGooglemutantStrings.satellite]
+      inline def satellite: typings.leafletGridlayerGooglemutant.leafletGridlayerGooglemutantStrings.satellite = "satellite".asInstanceOf[typings.leafletGridlayerGooglemutant.leafletGridlayerGooglemutantStrings.satellite]
       
-      @scala.inline
-      def terrain: typings.leafletGridlayerGooglemutant.leafletGridlayerGooglemutantStrings.terrain = "terrain".asInstanceOf[typings.leafletGridlayerGooglemutant.leafletGridlayerGooglemutantStrings.terrain]
+      inline def terrain: typings.leafletGridlayerGooglemutant.leafletGridlayerGooglemutantStrings.terrain = "terrain".asInstanceOf[typings.leafletGridlayerGooglemutant.leafletGridlayerGooglemutantStrings.terrain]
     }
     
     @js.native

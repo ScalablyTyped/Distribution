@@ -29,29 +29,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object ForOfStatement_ {
   
-  @scala.inline
-  def apply(await: Boolean, body: Statement, left: VariableDeclaration_ | LVal, right: Expression): ForOfStatement_ = {
+  inline def apply(await: Boolean, body: Statement, left: VariableDeclaration_ | LVal, right: Expression): ForOfStatement_ = {
     val __obj = js.Dynamic.literal(await = await.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("ForOfStatement")
     __obj.asInstanceOf[ForOfStatement_]
   }
   
-  @scala.inline
-  implicit class ForOfStatement_MutableBuilder[Self <: ForOfStatement_] (val x: Self) extends AnyVal {
+  extension [Self <: ForOfStatement_](x: Self) {
     
-    @scala.inline
-    def setAwait(value: Boolean): Self = StObject.set(x, "await", value.asInstanceOf[js.Any])
+    inline def setAwait(value: Boolean): Self = StObject.set(x, "await", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBody(value: Statement): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Statement): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft(value: VariableDeclaration_ | LVal): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: VariableDeclaration_ | LVal): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: Expression): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Expression): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ForOfStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ForOfStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -12,8 +12,7 @@ object filterWrapperMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(props: FilterDropdownMenuWrapperProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(props: FilterDropdownMenuWrapperProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait FilterDropdownMenuWrapperProps extends StObject {
     
@@ -23,26 +22,20 @@ object filterWrapperMod {
   }
   object FilterDropdownMenuWrapperProps {
     
-    @scala.inline
-    def apply(): FilterDropdownMenuWrapperProps = {
+    inline def apply(): FilterDropdownMenuWrapperProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FilterDropdownMenuWrapperProps]
     }
     
-    @scala.inline
-    implicit class FilterDropdownMenuWrapperPropsMutableBuilder[Self <: FilterDropdownMenuWrapperProps] (val x: Self) extends AnyVal {
+    extension [Self <: FilterDropdownMenuWrapperProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     }
   }
 }

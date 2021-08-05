@@ -24,70 +24,49 @@ trait Conjugations extends StObject {
 }
 object Conjugations {
   
-  @scala.inline
-  def apply(): Conjugations = {
+  inline def apply(): Conjugations = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Conjugations]
   }
   
-  @scala.inline
-  implicit class ConjugationsMutableBuilder[Self <: Conjugations] (val x: Self) extends AnyVal {
+  extension [Self <: Conjugations](x: Self) {
     
-    @scala.inline
-    def setConjugations(value: js.Array[Type]): Self = StObject.set(x, "conjugations", value.asInstanceOf[js.Any])
+    inline def setConjugations(value: js.Array[Type]): Self = StObject.set(x, "conjugations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConjugationsUndefined: Self = StObject.set(x, "conjugations", js.undefined)
+    inline def setConjugationsUndefined: Self = StObject.set(x, "conjugations", js.undefined)
     
-    @scala.inline
-    def setConjugationsVarargs(value: Type*): Self = StObject.set(x, "conjugations", js.Array(value :_*))
+    inline def setConjugationsVarargs(value: Type*): Self = StObject.set(x, "conjugations", js.Array(value :_*))
     
-    @scala.inline
-    def setDefinitions(value: js.Array[Definition]): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
+    inline def setDefinitions(value: js.Array[Definition]): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinitionsUndefined: Self = StObject.set(x, "definitions", js.undefined)
+    inline def setDefinitionsUndefined: Self = StObject.set(x, "definitions", js.undefined)
     
-    @scala.inline
-    def setDefinitionsVarargs(value: Definition*): Self = StObject.set(x, "definitions", js.Array(value :_*))
+    inline def setDefinitionsVarargs(value: Definition*): Self = StObject.set(x, "definitions", js.Array(value :_*))
     
-    @scala.inline
-    def setPartOfSpeech(value: String): Self = StObject.set(x, "partOfSpeech", value.asInstanceOf[js.Any])
+    inline def setPartOfSpeech(value: String): Self = StObject.set(x, "partOfSpeech", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartOfSpeechUndefined: Self = StObject.set(x, "partOfSpeech", js.undefined)
+    inline def setPartOfSpeechUndefined: Self = StObject.set(x, "partOfSpeech", js.undefined)
     
-    @scala.inline
-    def setPronunciation(value: String): Self = StObject.set(x, "pronunciation", value.asInstanceOf[js.Any])
+    inline def setPronunciation(value: String): Self = StObject.set(x, "pronunciation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPronunciationUndefined: Self = StObject.set(x, "pronunciation", js.undefined)
+    inline def setPronunciationUndefined: Self = StObject.set(x, "pronunciation", js.undefined)
     
-    @scala.inline
-    def setPronunciationUrl(value: String): Self = StObject.set(x, "pronunciationUrl", value.asInstanceOf[js.Any])
+    inline def setPronunciationUrl(value: String): Self = StObject.set(x, "pronunciationUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPronunciationUrlUndefined: Self = StObject.set(x, "pronunciationUrl", js.undefined)
+    inline def setPronunciationUrlUndefined: Self = StObject.set(x, "pronunciationUrl", js.undefined)
     
-    @scala.inline
-    def setSource(value: Attribution): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Attribution): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setSyllabification(value: String): Self = StObject.set(x, "syllabification", value.asInstanceOf[js.Any])
+    inline def setSyllabification(value: String): Self = StObject.set(x, "syllabification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyllabificationUndefined: Self = StObject.set(x, "syllabification", js.undefined)
+    inline def setSyllabificationUndefined: Self = StObject.set(x, "syllabification", js.undefined)
     
-    @scala.inline
-    def setSynonyms(value: js.Array[Source]): Self = StObject.set(x, "synonyms", value.asInstanceOf[js.Any])
+    inline def setSynonyms(value: js.Array[Source]): Self = StObject.set(x, "synonyms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSynonymsUndefined: Self = StObject.set(x, "synonyms", js.undefined)
+    inline def setSynonymsUndefined: Self = StObject.set(x, "synonyms", js.undefined)
     
-    @scala.inline
-    def setSynonymsVarargs(value: Source*): Self = StObject.set(x, "synonyms", js.Array(value :_*))
+    inline def setSynonymsVarargs(value: Source*): Self = StObject.set(x, "synonyms", js.Array(value :_*))
   }
 }

@@ -119,20 +119,16 @@ object Direct3D11 {
   }
   object Direct3DMultisampleDescription {
     
-    @scala.inline
-    def apply(count: Double, quality: Double): Direct3DMultisampleDescription = {
+    inline def apply(count: Double, quality: Double): Direct3DMultisampleDescription = {
       val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], quality = quality.asInstanceOf[js.Any])
       __obj.asInstanceOf[Direct3DMultisampleDescription]
     }
     
-    @scala.inline
-    implicit class Direct3DMultisampleDescriptionMutableBuilder[Self <: Direct3DMultisampleDescription] (val x: Self) extends AnyVal {
+    extension [Self <: Direct3DMultisampleDescription](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     }
   }
   
@@ -153,8 +149,7 @@ object Direct3D11 {
   }
   object Direct3DSurfaceDescription {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       format: DirectXPixelFormat,
       height: Double,
       multisampleDescription: Direct3DMultisampleDescription,
@@ -164,20 +159,15 @@ object Direct3D11 {
       __obj.asInstanceOf[Direct3DSurfaceDescription]
     }
     
-    @scala.inline
-    implicit class Direct3DSurfaceDescriptionMutableBuilder[Self <: Direct3DSurfaceDescription] (val x: Self) extends AnyVal {
+    extension [Self <: Direct3DSurfaceDescription](x: Self) {
       
-      @scala.inline
-      def setFormat(value: DirectXPixelFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: DirectXPixelFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultisampleDescription(value: Direct3DMultisampleDescription): Self = StObject.set(x, "multisampleDescription", value.asInstanceOf[js.Any])
+      inline def setMultisampleDescription(value: Direct3DMultisampleDescription): Self = StObject.set(x, "multisampleDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -191,17 +181,14 @@ object Direct3D11 {
   }
   object IDirect3DSurface {
     
-    @scala.inline
-    def apply(close: () => Unit, description: Direct3DSurfaceDescription): IDirect3DSurface = {
+    inline def apply(close: () => Unit, description: Direct3DSurfaceDescription): IDirect3DSurface = {
       val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), description = description.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDirect3DSurface]
     }
     
-    @scala.inline
-    implicit class IDirect3DSurfaceMutableBuilder[Self <: IDirect3DSurface] (val x: Self) extends AnyVal {
+    extension [Self <: IDirect3DSurface](x: Self) {
       
-      @scala.inline
-      def setDescription(value: Direct3DSurfaceDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Direct3DSurfaceDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     }
   }
 }

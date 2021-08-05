@@ -11,16 +11,13 @@ trait ValueScaleField extends StObject {
 }
 object ValueScaleField {
   
-  @scala.inline
-  def apply(value: ScaleField): ValueScaleField = {
+  inline def apply(value: ScaleField): ValueScaleField = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueScaleField]
   }
   
-  @scala.inline
-  implicit class ValueScaleFieldMutableBuilder[Self <: ValueScaleField] (val x: Self) extends AnyVal {
+  extension [Self <: ValueScaleField](x: Self) {
     
-    @scala.inline
-    def setValue(value: ScaleField): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: ScaleField): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

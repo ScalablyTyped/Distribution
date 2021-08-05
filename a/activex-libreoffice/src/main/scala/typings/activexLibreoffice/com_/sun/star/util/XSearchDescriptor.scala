@@ -25,8 +25,7 @@ trait XSearchDescriptor
 }
 object XSearchDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     PropertySetInfo: XPropertySetInfo,
     SearchString: String,
     acquire: () => Unit,
@@ -46,16 +45,12 @@ object XSearchDescriptor {
     __obj.asInstanceOf[XSearchDescriptor]
   }
   
-  @scala.inline
-  implicit class XSearchDescriptorMutableBuilder[Self <: XSearchDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: XSearchDescriptor](x: Self) {
     
-    @scala.inline
-    def setGetSearchString(value: () => String): Self = StObject.set(x, "getSearchString", js.Any.fromFunction0(value))
+    inline def setGetSearchString(value: () => String): Self = StObject.set(x, "getSearchString", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSearchString(value: String): Self = StObject.set(x, "SearchString", value.asInstanceOf[js.Any])
+    inline def setSearchString(value: String): Self = StObject.set(x, "SearchString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetSearchString(value: String => Unit): Self = StObject.set(x, "setSearchString", js.Any.fromFunction1(value))
+    inline def setSetSearchString(value: String => Unit): Self = StObject.set(x, "setSearchString", js.Any.fromFunction1(value))
   }
 }

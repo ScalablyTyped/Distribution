@@ -23,8 +23,7 @@ trait AbstractNonUnionTypeDescription
 }
 object AbstractNonUnionTypeDescription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     extAttrs: js.Array[ExtendedAttribute],
     generic: FrozenArray | ObservableArray | Promise | record | sequence | _empty,
     nullable: Boolean,
@@ -35,13 +34,10 @@ object AbstractNonUnionTypeDescription {
     __obj.asInstanceOf[AbstractNonUnionTypeDescription]
   }
   
-  @scala.inline
-  implicit class AbstractNonUnionTypeDescriptionMutableBuilder[Self <: AbstractNonUnionTypeDescription] (val x: Self) extends AnyVal {
+  extension [Self <: AbstractNonUnionTypeDescription](x: Self) {
     
-    @scala.inline
-    def setGeneric(value: FrozenArray | ObservableArray | Promise | record | sequence | _empty): Self = StObject.set(x, "generic", value.asInstanceOf[js.Any])
+    inline def setGeneric(value: FrozenArray | ObservableArray | Promise | record | sequence | _empty): Self = StObject.set(x, "generic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnion(value: `false`): Self = StObject.set(x, "union", value.asInstanceOf[js.Any])
+    inline def setUnion(value: `false`): Self = StObject.set(x, "union", value.asInstanceOf[js.Any])
   }
 }

@@ -72,8 +72,7 @@ object pushnotificationMod {
     }
     object Descriptor {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         action: String,
         badge: Double,
         body: String,
@@ -87,29 +86,21 @@ object pushnotificationMod {
         __obj.asInstanceOf[Descriptor]
       }
       
-      @scala.inline
-      implicit class DescriptorMutableBuilder[Self <: Descriptor] (val x: Self) extends AnyVal {
+      extension [Self <: Descriptor](x: Self) {
         
-        @scala.inline
-        def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+        inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBadge(value: Double): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
+        inline def setBadge(value: Double): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+        inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSound(value: String): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
+        inline def setSound(value: String): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
@@ -122,17 +113,13 @@ object pushnotificationMod {
     trait Type extends StObject
     object Type {
       
-      @scala.inline
-      def twilioDotchannelDotadded_to_channel: typings.twilioChat.twilioChatStrings.twilioDotchannelDotadded_to_channel = "twilio.channel.added_to_channel".asInstanceOf[typings.twilioChat.twilioChatStrings.twilioDotchannelDotadded_to_channel]
+      inline def twilioDotchannelDotadded_to_channel: typings.twilioChat.twilioChatStrings.twilioDotchannelDotadded_to_channel = "twilio.channel.added_to_channel".asInstanceOf[typings.twilioChat.twilioChatStrings.twilioDotchannelDotadded_to_channel]
       
-      @scala.inline
-      def twilioDotchannelDotinvited_to_channel: typings.twilioChat.twilioChatStrings.twilioDotchannelDotinvited_to_channel = "twilio.channel.invited_to_channel".asInstanceOf[typings.twilioChat.twilioChatStrings.twilioDotchannelDotinvited_to_channel]
+      inline def twilioDotchannelDotinvited_to_channel: typings.twilioChat.twilioChatStrings.twilioDotchannelDotinvited_to_channel = "twilio.channel.invited_to_channel".asInstanceOf[typings.twilioChat.twilioChatStrings.twilioDotchannelDotinvited_to_channel]
       
-      @scala.inline
-      def twilioDotchannelDotnew_message: typings.twilioChat.twilioChatStrings.twilioDotchannelDotnew_message = "twilio.channel.new_message".asInstanceOf[typings.twilioChat.twilioChatStrings.twilioDotchannelDotnew_message]
+      inline def twilioDotchannelDotnew_message: typings.twilioChat.twilioChatStrings.twilioDotchannelDotnew_message = "twilio.channel.new_message".asInstanceOf[typings.twilioChat.twilioChatStrings.twilioDotchannelDotnew_message]
       
-      @scala.inline
-      def twilioDotchannelDotremoved_from_channel: typings.twilioChat.twilioChatStrings.twilioDotchannelDotremoved_from_channel = "twilio.channel.removed_from_channel".asInstanceOf[typings.twilioChat.twilioChatStrings.twilioDotchannelDotremoved_from_channel]
+      inline def twilioDotchannelDotremoved_from_channel: typings.twilioChat.twilioChatStrings.twilioDotchannelDotremoved_from_channel = "twilio.channel.removed_from_channel".asInstanceOf[typings.twilioChat.twilioChatStrings.twilioDotchannelDotremoved_from_channel]
     }
   }
 }

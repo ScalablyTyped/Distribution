@@ -14,25 +14,19 @@ trait APIUser extends StObject {
 }
 object APIUser {
   
-  @scala.inline
-  def apply(authToken: String, email: String): APIUser = {
+  inline def apply(authToken: String, email: String): APIUser = {
     val __obj = js.Dynamic.literal(authToken = authToken.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any])
     __obj.asInstanceOf[APIUser]
   }
   
-  @scala.inline
-  implicit class APIUserMutableBuilder[Self <: APIUser] (val x: Self) extends AnyVal {
+  extension [Self <: APIUser](x: Self) {
     
-    @scala.inline
-    def setAuthToken(value: String): Self = StObject.set(x, "authToken", value.asInstanceOf[js.Any])
+    inline def setAuthToken(value: String): Self = StObject.set(x, "authToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
+    inline def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser_idUndefined: Self = StObject.set(x, "user_id", js.undefined)
+    inline def setUser_idUndefined: Self = StObject.set(x, "user_id", js.undefined)
   }
 }

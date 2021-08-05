@@ -36,8 +36,7 @@ trait Clear extends StObject {
 }
 object Clear {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clear: Boolean,
     editable: Boolean,
     error: Boolean,
@@ -58,49 +57,34 @@ object Clear {
     __obj.asInstanceOf[Clear]
   }
   
-  @scala.inline
-  implicit class ClearMutableBuilder[Self <: Clear] (val x: Self) extends AnyVal {
+  extension [Self <: Clear](x: Self) {
     
-    @scala.inline
-    def setClear(value: Boolean): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
+    inline def setClear(value: Boolean): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
+    inline def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtra(value: String): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+    inline def setExtra(value: String): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelNumber(value: Double): Self = StObject.set(x, "labelNumber", value.asInstanceOf[js.Any])
+    inline def setLabelNumber(value: Double): Self = StObject.set(x, "labelNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelPosition(value: String): Self = StObject.set(x, "labelPosition", value.asInstanceOf[js.Any])
+    inline def setLabelPosition(value: String): Self = StObject.set(x, "labelPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLast(value: Boolean): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
+    inline def setLast(value: Boolean): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnBlur(value: () => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction0(value))
+    inline def setOnBlur(value: () => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnChange(value: () => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
+    inline def setOnChange(value: () => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnErrorClick(value: () => Unit): Self = StObject.set(x, "onErrorClick", js.Any.fromFunction0(value))
+    inline def setOnErrorClick(value: () => Unit): Self = StObject.set(x, "onErrorClick", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnExtraClick(value: () => Unit): Self = StObject.set(x, "onExtraClick", js.Any.fromFunction0(value))
+    inline def setOnExtraClick(value: () => Unit): Self = StObject.set(x, "onExtraClick", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnFocus(value: () => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction0(value))
+    inline def setOnFocus(value: () => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTextAlign(value: String): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+    inline def setTextAlign(value: String): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait MapStateStartedEventDetails extends StObject {
 }
 object MapStateStartedEventDetails {
   
-  @scala.inline
-  def apply(): MapStateStartedEventDetails = {
+  inline def apply(): MapStateStartedEventDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapStateStartedEventDetails]
   }
   
-  @scala.inline
-  implicit class MapStateStartedEventDetailsMutableBuilder[Self <: MapStateStartedEventDetails] (val x: Self) extends AnyVal {
+  extension [Self <: MapStateStartedEventDetails](x: Self) {
     
-    @scala.inline
-    def setLength(value: UnsignedInteger): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: UnsignedInteger): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
   }
 }

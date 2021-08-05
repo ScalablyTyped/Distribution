@@ -11,17 +11,14 @@ trait GetPrinterAttributesRequest extends StObject {
 }
 object GetPrinterAttributesRequest {
   
-  @scala.inline
-  def apply(`operation-attributes-tag`: Printeruri): GetPrinterAttributesRequest = {
+  inline def apply(`operation-attributes-tag`: Printeruri): GetPrinterAttributesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("operation-attributes-tag")(`operation-attributes-tag`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPrinterAttributesRequest]
   }
   
-  @scala.inline
-  implicit class GetPrinterAttributesRequestMutableBuilder[Self <: GetPrinterAttributesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetPrinterAttributesRequest](x: Self) {
     
-    @scala.inline
-    def `setOperation-attributes-tag`(value: Printeruri): Self = StObject.set(x, "operation-attributes-tag", value.asInstanceOf[js.Any])
+    inline def `setOperation-attributes-tag`(value: Printeruri): Self = StObject.set(x, "operation-attributes-tag", value.asInstanceOf[js.Any])
   }
 }

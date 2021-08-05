@@ -16,24 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StrictCompilerOption extends StObject
 object StrictCompilerOption {
   
-  @scala.inline
-  def alwaysStrict: typings.tsutils.tsutilsStrings.alwaysStrict = "alwaysStrict".asInstanceOf[typings.tsutils.tsutilsStrings.alwaysStrict]
+  inline def alwaysStrict: typings.tsutils.tsutilsStrings.alwaysStrict = "alwaysStrict".asInstanceOf[typings.tsutils.tsutilsStrings.alwaysStrict]
   
-  @scala.inline
-  def noImplicitAny: typings.tsutils.tsutilsStrings.noImplicitAny = "noImplicitAny".asInstanceOf[typings.tsutils.tsutilsStrings.noImplicitAny]
+  inline def noImplicitAny: typings.tsutils.tsutilsStrings.noImplicitAny = "noImplicitAny".asInstanceOf[typings.tsutils.tsutilsStrings.noImplicitAny]
   
-  @scala.inline
-  def noImplicitThis: typings.tsutils.tsutilsStrings.noImplicitThis = "noImplicitThis".asInstanceOf[typings.tsutils.tsutilsStrings.noImplicitThis]
+  inline def noImplicitThis: typings.tsutils.tsutilsStrings.noImplicitThis = "noImplicitThis".asInstanceOf[typings.tsutils.tsutilsStrings.noImplicitThis]
   
-  @scala.inline
-  def strictBindCallApply: typings.tsutils.tsutilsStrings.strictBindCallApply = "strictBindCallApply".asInstanceOf[typings.tsutils.tsutilsStrings.strictBindCallApply]
+  inline def strictBindCallApply: typings.tsutils.tsutilsStrings.strictBindCallApply = "strictBindCallApply".asInstanceOf[typings.tsutils.tsutilsStrings.strictBindCallApply]
   
-  @scala.inline
-  def strictFunctionTypes: typings.tsutils.tsutilsStrings.strictFunctionTypes = "strictFunctionTypes".asInstanceOf[typings.tsutils.tsutilsStrings.strictFunctionTypes]
+  inline def strictFunctionTypes: typings.tsutils.tsutilsStrings.strictFunctionTypes = "strictFunctionTypes".asInstanceOf[typings.tsutils.tsutilsStrings.strictFunctionTypes]
   
-  @scala.inline
-  def strictNullChecks: typings.tsutils.tsutilsStrings.strictNullChecks = "strictNullChecks".asInstanceOf[typings.tsutils.tsutilsStrings.strictNullChecks]
+  inline def strictNullChecks: typings.tsutils.tsutilsStrings.strictNullChecks = "strictNullChecks".asInstanceOf[typings.tsutils.tsutilsStrings.strictNullChecks]
   
-  @scala.inline
-  def strictPropertyInitialization: typings.tsutils.tsutilsStrings.strictPropertyInitialization = "strictPropertyInitialization".asInstanceOf[typings.tsutils.tsutilsStrings.strictPropertyInitialization]
+  inline def strictPropertyInitialization: typings.tsutils.tsutilsStrings.strictPropertyInitialization = "strictPropertyInitialization".asInstanceOf[typings.tsutils.tsutilsStrings.strictPropertyInitialization]
 }

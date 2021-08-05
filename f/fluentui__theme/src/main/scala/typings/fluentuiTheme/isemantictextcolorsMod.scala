@@ -165,8 +165,7 @@ object isemantictextcolorsMod {
   }
   object ISemanticTextColors {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       accentButtonText: String,
       actionLink: String,
       actionLinkHovered: String,
@@ -203,101 +202,69 @@ object isemantictextcolorsMod {
       __obj.asInstanceOf[ISemanticTextColors]
     }
     
-    @scala.inline
-    implicit class ISemanticTextColorsMutableBuilder[Self <: ISemanticTextColors] (val x: Self) extends AnyVal {
+    extension [Self <: ISemanticTextColors](x: Self) {
       
-      @scala.inline
-      def setAccentButtonText(value: String): Self = StObject.set(x, "accentButtonText", value.asInstanceOf[js.Any])
+      inline def setAccentButtonText(value: String): Self = StObject.set(x, "accentButtonText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionLink(value: String): Self = StObject.set(x, "actionLink", value.asInstanceOf[js.Any])
+      inline def setActionLink(value: String): Self = StObject.set(x, "actionLink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionLinkHovered(value: String): Self = StObject.set(x, "actionLinkHovered", value.asInstanceOf[js.Any])
+      inline def setActionLinkHovered(value: String): Self = StObject.set(x, "actionLinkHovered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodySubtext(value: String): Self = StObject.set(x, "bodySubtext", value.asInstanceOf[js.Any])
+      inline def setBodySubtext(value: String): Self = StObject.set(x, "bodySubtext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyText(value: String): Self = StObject.set(x, "bodyText", value.asInstanceOf[js.Any])
+      inline def setBodyText(value: String): Self = StObject.set(x, "bodyText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyTextChecked(value: String): Self = StObject.set(x, "bodyTextChecked", value.asInstanceOf[js.Any])
+      inline def setBodyTextChecked(value: String): Self = StObject.set(x, "bodyTextChecked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonText(value: String): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
+      inline def setButtonText(value: String): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonTextChecked(value: String): Self = StObject.set(x, "buttonTextChecked", value.asInstanceOf[js.Any])
+      inline def setButtonTextChecked(value: String): Self = StObject.set(x, "buttonTextChecked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonTextCheckedHovered(value: String): Self = StObject.set(x, "buttonTextCheckedHovered", value.asInstanceOf[js.Any])
+      inline def setButtonTextCheckedHovered(value: String): Self = StObject.set(x, "buttonTextCheckedHovered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonTextDisabled(value: String): Self = StObject.set(x, "buttonTextDisabled", value.asInstanceOf[js.Any])
+      inline def setButtonTextDisabled(value: String): Self = StObject.set(x, "buttonTextDisabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonTextHovered(value: String): Self = StObject.set(x, "buttonTextHovered", value.asInstanceOf[js.Any])
+      inline def setButtonTextHovered(value: String): Self = StObject.set(x, "buttonTextHovered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonTextPressed(value: String): Self = StObject.set(x, "buttonTextPressed", value.asInstanceOf[js.Any])
+      inline def setButtonTextPressed(value: String): Self = StObject.set(x, "buttonTextPressed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledBodySubtext(value: String): Self = StObject.set(x, "disabledBodySubtext", value.asInstanceOf[js.Any])
+      inline def setDisabledBodySubtext(value: String): Self = StObject.set(x, "disabledBodySubtext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledBodyText(value: String): Self = StObject.set(x, "disabledBodyText", value.asInstanceOf[js.Any])
+      inline def setDisabledBodyText(value: String): Self = StObject.set(x, "disabledBodyText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledSubtext(value: String): Self = StObject.set(x, "disabledSubtext", value.asInstanceOf[js.Any])
+      inline def setDisabledSubtext(value: String): Self = StObject.set(x, "disabledSubtext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledText(value: String): Self = StObject.set(x, "disabledText", value.asInstanceOf[js.Any])
+      inline def setDisabledText(value: String): Self = StObject.set(x, "disabledText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorText(value: String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
+      inline def setErrorText(value: String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputPlaceholderText(value: String): Self = StObject.set(x, "inputPlaceholderText", value.asInstanceOf[js.Any])
+      inline def setInputPlaceholderText(value: String): Self = StObject.set(x, "inputPlaceholderText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputText(value: String): Self = StObject.set(x, "inputText", value.asInstanceOf[js.Any])
+      inline def setInputText(value: String): Self = StObject.set(x, "inputText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputTextHovered(value: String): Self = StObject.set(x, "inputTextHovered", value.asInstanceOf[js.Any])
+      inline def setInputTextHovered(value: String): Self = StObject.set(x, "inputTextHovered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+      inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkHovered(value: String): Self = StObject.set(x, "linkHovered", value.asInstanceOf[js.Any])
+      inline def setLinkHovered(value: String): Self = StObject.set(x, "linkHovered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListText(value: String): Self = StObject.set(x, "listText", value.asInstanceOf[js.Any])
+      inline def setListText(value: String): Self = StObject.set(x, "listText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListTextColor(value: String): Self = StObject.set(x, "listTextColor", value.asInstanceOf[js.Any])
+      inline def setListTextColor(value: String): Self = StObject.set(x, "listTextColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageText(value: String): Self = StObject.set(x, "messageText", value.asInstanceOf[js.Any])
+      inline def setMessageText(value: String): Self = StObject.set(x, "messageText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryButtonText(value: String): Self = StObject.set(x, "primaryButtonText", value.asInstanceOf[js.Any])
+      inline def setPrimaryButtonText(value: String): Self = StObject.set(x, "primaryButtonText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryButtonTextDisabled(value: String): Self = StObject.set(x, "primaryButtonTextDisabled", value.asInstanceOf[js.Any])
+      inline def setPrimaryButtonTextDisabled(value: String): Self = StObject.set(x, "primaryButtonTextDisabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryButtonTextHovered(value: String): Self = StObject.set(x, "primaryButtonTextHovered", value.asInstanceOf[js.Any])
+      inline def setPrimaryButtonTextHovered(value: String): Self = StObject.set(x, "primaryButtonTextHovered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryButtonTextPressed(value: String): Self = StObject.set(x, "primaryButtonTextPressed", value.asInstanceOf[js.Any])
+      inline def setPrimaryButtonTextPressed(value: String): Self = StObject.set(x, "primaryButtonTextPressed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccessText(value: String): Self = StObject.set(x, "successText", value.asInstanceOf[js.Any])
+      inline def setSuccessText(value: String): Self = StObject.set(x, "successText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarningText(value: String): Self = StObject.set(x, "warningText", value.asInstanceOf[js.Any])
+      inline def setWarningText(value: String): Self = StObject.set(x, "warningText", value.asInstanceOf[js.Any])
     }
   }
 }

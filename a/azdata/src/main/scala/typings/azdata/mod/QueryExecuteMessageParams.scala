@@ -12,19 +12,15 @@ trait QueryExecuteMessageParams extends StObject {
 }
 object QueryExecuteMessageParams {
   
-  @scala.inline
-  def apply(message: IResultMessage, ownerUri: String): QueryExecuteMessageParams = {
+  inline def apply(message: IResultMessage, ownerUri: String): QueryExecuteMessageParams = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], ownerUri = ownerUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryExecuteMessageParams]
   }
   
-  @scala.inline
-  implicit class QueryExecuteMessageParamsMutableBuilder[Self <: QueryExecuteMessageParams] (val x: Self) extends AnyVal {
+  extension [Self <: QueryExecuteMessageParams](x: Self) {
     
-    @scala.inline
-    def setMessage(value: IResultMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: IResultMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUri(value: String): Self = StObject.set(x, "ownerUri", value.asInstanceOf[js.Any])
+    inline def setOwnerUri(value: String): Self = StObject.set(x, "ownerUri", value.asInstanceOf[js.Any])
   }
 }

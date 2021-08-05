@@ -20,21 +20,17 @@ object anon {
   }
   object Imagebmp {
     
-    @scala.inline
-    def apply(imageSlashbmp: js.Array[String]): Imagebmp = {
+    inline def apply(imageSlashbmp: js.Array[String]): Imagebmp = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("image/bmp")(imageSlashbmp.asInstanceOf[js.Any])
       __obj.asInstanceOf[Imagebmp]
     }
     
-    @scala.inline
-    implicit class ImagebmpMutableBuilder[Self <: Imagebmp] (val x: Self) extends AnyVal {
+    extension [Self <: Imagebmp](x: Self) {
       
-      @scala.inline
-      def setImageSlashbmp(value: js.Array[String]): Self = StObject.set(x, "image/bmp", value.asInstanceOf[js.Any])
+      inline def setImageSlashbmp(value: js.Array[String]): Self = StObject.set(x, "image/bmp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageSlashbmpVarargs(value: String*): Self = StObject.set(x, "image/bmp", js.Array(value :_*))
+      inline def setImageSlashbmpVarargs(value: String*): Self = StObject.set(x, "image/bmp", js.Array(value :_*))
     }
   }
   
@@ -52,22 +48,18 @@ object anon {
   }
   object ImagebmpImagexmsbmp {
     
-    @scala.inline
-    def apply(imageSlashbmp: Image => Buffer, `imageSlashx-ms-bmp`: Image => Buffer): ImagebmpImagexmsbmp = {
+    inline def apply(imageSlashbmp: Image => Buffer, `imageSlashx-ms-bmp`: Image => Buffer): ImagebmpImagexmsbmp = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("image/bmp")(js.Any.fromFunction1(imageSlashbmp))
       __obj.updateDynamic("image/x-ms-bmp")(js.Any.fromFunction1(`imageSlashx-ms-bmp`))
       __obj.asInstanceOf[ImagebmpImagexmsbmp]
     }
     
-    @scala.inline
-    implicit class ImagebmpImagexmsbmpMutableBuilder[Self <: ImagebmpImagexmsbmp] (val x: Self) extends AnyVal {
+    extension [Self <: ImagebmpImagexmsbmp](x: Self) {
       
-      @scala.inline
-      def setImageSlashbmp(value: Image => Buffer): Self = StObject.set(x, "image/bmp", js.Any.fromFunction1(value))
+      inline def setImageSlashbmp(value: Image => Buffer): Self = StObject.set(x, "image/bmp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def `setImageSlashx-ms-bmp`(value: Image => Buffer): Self = StObject.set(x, "image/x-ms-bmp", js.Any.fromFunction1(value))
+      inline def `setImageSlashx-ms-bmp`(value: Image => Buffer): Self = StObject.set(x, "image/x-ms-bmp", js.Any.fromFunction1(value))
     }
   }
   
@@ -85,22 +77,18 @@ object anon {
   }
   object Imagexmsbmp {
     
-    @scala.inline
-    def apply(imageSlashbmp: /* data */ Buffer => Bitmap, `imageSlashx-ms-bmp`: /* data */ Buffer => Bitmap): Imagexmsbmp = {
+    inline def apply(imageSlashbmp: /* data */ Buffer => Bitmap, `imageSlashx-ms-bmp`: /* data */ Buffer => Bitmap): Imagexmsbmp = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("image/bmp")(js.Any.fromFunction1(imageSlashbmp))
       __obj.updateDynamic("image/x-ms-bmp")(js.Any.fromFunction1(`imageSlashx-ms-bmp`))
       __obj.asInstanceOf[Imagexmsbmp]
     }
     
-    @scala.inline
-    implicit class ImagexmsbmpMutableBuilder[Self <: Imagexmsbmp] (val x: Self) extends AnyVal {
+    extension [Self <: Imagexmsbmp](x: Self) {
       
-      @scala.inline
-      def setImageSlashbmp(value: /* data */ Buffer => Bitmap): Self = StObject.set(x, "image/bmp", js.Any.fromFunction1(value))
+      inline def setImageSlashbmp(value: /* data */ Buffer => Bitmap): Self = StObject.set(x, "image/bmp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def `setImageSlashx-ms-bmp`(value: /* data */ Buffer => Bitmap): Self = StObject.set(x, "image/x-ms-bmp", js.Any.fromFunction1(value))
+      inline def `setImageSlashx-ms-bmp`(value: /* data */ Buffer => Bitmap): Self = StObject.set(x, "image/x-ms-bmp", js.Any.fromFunction1(value))
     }
   }
   
@@ -112,20 +100,16 @@ object anon {
   }
   object MIMEBMP {
     
-    @scala.inline
-    def apply(): MIMEBMP = {
+    inline def apply(): MIMEBMP = {
       val __obj = js.Dynamic.literal(MIME_BMP = "image/bmp", MIME_X_MS_BMP = "image/x-ms-bmp")
       __obj.asInstanceOf[MIMEBMP]
     }
     
-    @scala.inline
-    implicit class MIMEBMPMutableBuilder[Self <: MIMEBMP] (val x: Self) extends AnyVal {
+    extension [Self <: MIMEBMP](x: Self) {
       
-      @scala.inline
-      def setMIME_BMP(value: imageSlashbmp): Self = StObject.set(x, "MIME_BMP", value.asInstanceOf[js.Any])
+      inline def setMIME_BMP(value: imageSlashbmp): Self = StObject.set(x, "MIME_BMP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMIME_X_MS_BMP(value: `imageSlashx-ms-bmp`): Self = StObject.set(x, "MIME_X_MS_BMP", value.asInstanceOf[js.Any])
+      inline def setMIME_X_MS_BMP(value: `imageSlashx-ms-bmp`): Self = StObject.set(x, "MIME_X_MS_BMP", value.asInstanceOf[js.Any])
     }
   }
 }

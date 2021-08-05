@@ -24,12 +24,12 @@ object relationCountRelationCountLoaderMod {
       relationCountAttributes: js.Array[RelationCountAttribute]
     ) = this()
     
-    var connection: Connection = js.native
+    /* protected */ var connection: Connection = js.native
     
     def load(rawEntities: js.Array[js.Any]): js.Promise[js.Array[RelationCountLoadResult]] = js.native
     
-    var queryRunner: js.UndefOr[QueryRunner] = js.native
+    /* protected */ var queryRunner: js.UndefOr[QueryRunner] = js.native
     
-    var relationCountAttributes: js.Array[RelationCountAttribute] = js.native
+    /* protected */ var relationCountAttributes: js.Array[RelationCountAttribute] = js.native
   }
 }

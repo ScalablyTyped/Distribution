@@ -23,31 +23,23 @@ trait ResponsiveColumnShownEventUIParam extends StObject {
 }
 object ResponsiveColumnShownEventUIParam {
   
-  @scala.inline
-  def apply(): ResponsiveColumnShownEventUIParam = {
+  inline def apply(): ResponsiveColumnShownEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResponsiveColumnShownEventUIParam]
   }
   
-  @scala.inline
-  implicit class ResponsiveColumnShownEventUIParamMutableBuilder[Self <: ResponsiveColumnShownEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: ResponsiveColumnShownEventUIParam](x: Self) {
     
-    @scala.inline
-    def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
+    inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
+    inline def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
     
-    @scala.inline
-    def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
+    inline def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
+    inline def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

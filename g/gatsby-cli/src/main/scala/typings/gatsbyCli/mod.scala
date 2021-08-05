@@ -10,6 +10,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createCli(argv: js.Array[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createCli")(argv.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def createCli(argv: js.Array[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createCli")(argv.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

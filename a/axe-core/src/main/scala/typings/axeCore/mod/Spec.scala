@@ -28,73 +28,51 @@ trait Spec extends StObject {
 }
 object Spec {
   
-  @scala.inline
-  def apply(): Spec = {
+  inline def apply(): Spec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Spec]
   }
   
-  @scala.inline
-  implicit class SpecMutableBuilder[Self <: Spec] (val x: Self) extends AnyVal {
+  extension [Self <: Spec](x: Self) {
     
-    @scala.inline
-    def setAxeVersion(value: String): Self = StObject.set(x, "axeVersion", value.asInstanceOf[js.Any])
+    inline def setAxeVersion(value: String): Self = StObject.set(x, "axeVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxeVersionUndefined: Self = StObject.set(x, "axeVersion", js.undefined)
+    inline def setAxeVersionUndefined: Self = StObject.set(x, "axeVersion", js.undefined)
     
-    @scala.inline
-    def setBranding(value: Application): Self = StObject.set(x, "branding", value.asInstanceOf[js.Any])
+    inline def setBranding(value: Application): Self = StObject.set(x, "branding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrandingUndefined: Self = StObject.set(x, "branding", js.undefined)
+    inline def setBrandingUndefined: Self = StObject.set(x, "branding", js.undefined)
     
-    @scala.inline
-    def setChecks(value: js.Array[Check]): Self = StObject.set(x, "checks", value.asInstanceOf[js.Any])
+    inline def setChecks(value: js.Array[Check]): Self = StObject.set(x, "checks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChecksUndefined: Self = StObject.set(x, "checks", js.undefined)
+    inline def setChecksUndefined: Self = StObject.set(x, "checks", js.undefined)
     
-    @scala.inline
-    def setChecksVarargs(value: Check*): Self = StObject.set(x, "checks", js.Array(value :_*))
+    inline def setChecksVarargs(value: Check*): Self = StObject.set(x, "checks", js.Array(value :_*))
     
-    @scala.inline
-    def setDisableOtherRules(value: Boolean): Self = StObject.set(x, "disableOtherRules", value.asInstanceOf[js.Any])
+    inline def setDisableOtherRules(value: Boolean): Self = StObject.set(x, "disableOtherRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableOtherRulesUndefined: Self = StObject.set(x, "disableOtherRules", js.undefined)
+    inline def setDisableOtherRulesUndefined: Self = StObject.set(x, "disableOtherRules", js.undefined)
     
-    @scala.inline
-    def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setReporter(value: ReporterVersion): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
+    inline def setReporter(value: ReporterVersion): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
+    inline def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
     
-    @scala.inline
-    def setRules(value: js.Array[Rule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: js.Array[Rule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+    inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    @scala.inline
-    def setRulesVarargs(value: Rule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: Rule*): Self = StObject.set(x, "rules", js.Array(value :_*))
     
-    @scala.inline
-    def setStandards(value: Standards): Self = StObject.set(x, "standards", value.asInstanceOf[js.Any])
+    inline def setStandards(value: Standards): Self = StObject.set(x, "standards", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardsUndefined: Self = StObject.set(x, "standards", js.undefined)
+    inline def setStandardsUndefined: Self = StObject.set(x, "standards", js.undefined)
     
-    @scala.inline
-    def setVer(value: String): Self = StObject.set(x, "ver", value.asInstanceOf[js.Any])
+    inline def setVer(value: String): Self = StObject.set(x, "ver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerUndefined: Self = StObject.set(x, "ver", js.undefined)
+    inline def setVerUndefined: Self = StObject.set(x, "ver", js.undefined)
   }
 }

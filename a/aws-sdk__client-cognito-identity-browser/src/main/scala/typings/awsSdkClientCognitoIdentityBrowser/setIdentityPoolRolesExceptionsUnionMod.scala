@@ -18,44 +18,37 @@ object setIdentityPoolRolesExceptionsUnionMod {
   trait SetIdentityPoolRolesExceptionsUnion extends StObject
   object SetIdentityPoolRolesExceptionsUnion {
     
-    @scala.inline
-    def ConcurrentModificationException(): typings.awsSdkClientCognitoIdentityBrowser.typesConcurrentModificationExceptionMod.ConcurrentModificationException = {
+    inline def ConcurrentModificationException(): typings.awsSdkClientCognitoIdentityBrowser.typesConcurrentModificationExceptionMod.ConcurrentModificationException = {
       val __obj = js.Dynamic.literal(name = "ConcurrentModificationException")
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentityBrowser.typesConcurrentModificationExceptionMod.ConcurrentModificationException]
     }
     
-    @scala.inline
-    def InternalErrorException(): typings.awsSdkClientCognitoIdentityBrowser.typesInternalErrorExceptionMod.InternalErrorException = {
+    inline def InternalErrorException(): typings.awsSdkClientCognitoIdentityBrowser.typesInternalErrorExceptionMod.InternalErrorException = {
       val __obj = js.Dynamic.literal(name = "InternalErrorException")
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentityBrowser.typesInternalErrorExceptionMod.InternalErrorException]
     }
     
-    @scala.inline
-    def InvalidParameterException(): typings.awsSdkClientCognitoIdentityBrowser.typesInvalidParameterExceptionMod.InvalidParameterException = {
+    inline def InvalidParameterException(): typings.awsSdkClientCognitoIdentityBrowser.typesInvalidParameterExceptionMod.InvalidParameterException = {
       val __obj = js.Dynamic.literal(name = "InvalidParameterException")
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentityBrowser.typesInvalidParameterExceptionMod.InvalidParameterException]
     }
     
-    @scala.inline
-    def NotAuthorizedException(): typings.awsSdkClientCognitoIdentityBrowser.typesNotAuthorizedExceptionMod.NotAuthorizedException = {
+    inline def NotAuthorizedException(): typings.awsSdkClientCognitoIdentityBrowser.typesNotAuthorizedExceptionMod.NotAuthorizedException = {
       val __obj = js.Dynamic.literal(name = "NotAuthorizedException")
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentityBrowser.typesNotAuthorizedExceptionMod.NotAuthorizedException]
     }
     
-    @scala.inline
-    def ResourceConflictException(): typings.awsSdkClientCognitoIdentityBrowser.typesResourceConflictExceptionMod.ResourceConflictException = {
+    inline def ResourceConflictException(): typings.awsSdkClientCognitoIdentityBrowser.typesResourceConflictExceptionMod.ResourceConflictException = {
       val __obj = js.Dynamic.literal(name = "ResourceConflictException")
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentityBrowser.typesResourceConflictExceptionMod.ResourceConflictException]
     }
     
-    @scala.inline
-    def ResourceNotFoundException(): typings.awsSdkClientCognitoIdentityBrowser.typesResourceNotFoundExceptionMod.ResourceNotFoundException = {
+    inline def ResourceNotFoundException(): typings.awsSdkClientCognitoIdentityBrowser.typesResourceNotFoundExceptionMod.ResourceNotFoundException = {
       val __obj = js.Dynamic.literal(name = "ResourceNotFoundException")
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentityBrowser.typesResourceNotFoundExceptionMod.ResourceNotFoundException]
     }
     
-    @scala.inline
-    def TooManyRequestsException(): typings.awsSdkClientCognitoIdentityBrowser.typesTooManyRequestsExceptionMod.TooManyRequestsException = {
+    inline def TooManyRequestsException(): typings.awsSdkClientCognitoIdentityBrowser.typesTooManyRequestsExceptionMod.TooManyRequestsException = {
       val __obj = js.Dynamic.literal(name = "TooManyRequestsException")
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentityBrowser.typesTooManyRequestsExceptionMod.TooManyRequestsException]
     }

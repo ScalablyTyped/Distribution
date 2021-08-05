@@ -18,40 +18,29 @@ trait Meta extends StObject {
 }
 object Meta {
   
-  @scala.inline
-  def apply(location: ActionMetaLocation): Meta = {
+  inline def apply(location: ActionMetaLocation): Meta = {
     val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any])
     __obj.asInstanceOf[Meta]
   }
   
-  @scala.inline
-  implicit class MetaMutableBuilder[Self <: Meta] (val x: Self) extends AnyVal {
+  extension [Self <: Meta](x: Self) {
     
-    @scala.inline
-    def setLocation(value: ActionMetaLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: ActionMetaLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigation(value: NavigationAction): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
+    inline def setNavigation(value: NavigationAction): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigationUndefined: Self = StObject.set(x, "navigation", js.undefined)
+    inline def setNavigationUndefined: Self = StObject.set(x, "navigation", js.undefined)
     
-    @scala.inline
-    def setNotFoundPath(value: String): Self = StObject.set(x, "notFoundPath", value.asInstanceOf[js.Any])
+    inline def setNotFoundPath(value: String): Self = StObject.set(x, "notFoundPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotFoundPathUndefined: Self = StObject.set(x, "notFoundPath", js.undefined)
+    inline def setNotFoundPathUndefined: Self = StObject.set(x, "notFoundPath", js.undefined)
     
-    @scala.inline
-    def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+    inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
   }
 }

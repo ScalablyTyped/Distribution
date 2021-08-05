@@ -14,8 +14,7 @@ trait HasuraQueryResponse[K /* <: String */, T /* <: Record[String, js.Any] */] 
 }
 object HasuraQueryResponse {
   
-  @scala.inline
-  def apply[K /* <: String */, T /* <: Record[String, js.Any] */](
+  inline def apply[K /* <: String */, T /* <: Record[String, js.Any] */](
     data: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in K ]: std.Array<hasura.hasura.HasuraDataItem<T>>}
     */ typings.hasura.hasuraStrings.HasuraQueryResponse & TopLevel[js.Any]
@@ -24,11 +23,9 @@ object HasuraQueryResponse {
     __obj.asInstanceOf[HasuraQueryResponse[K, T]]
   }
   
-  @scala.inline
-  implicit class HasuraQueryResponseMutableBuilder[Self <: HasuraQueryResponse[?, ?], K /* <: String */, T /* <: Record[String, js.Any] */] (val x: Self & (HasuraQueryResponse[K, T])) extends AnyVal {
+  extension [Self <: HasuraQueryResponse[?, ?], K /* <: String */, T /* <: Record[String, js.Any] */](x: Self & (HasuraQueryResponse[K, T])) {
     
-    @scala.inline
-    def setData(
+    inline def setData(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in K ]: std.Array<hasura.hasura.HasuraDataItem<T>>}
       */ typings.hasura.hasuraStrings.HasuraQueryResponse & TopLevel[js.Any]

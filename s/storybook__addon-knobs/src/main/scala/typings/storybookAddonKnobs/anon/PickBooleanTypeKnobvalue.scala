@@ -12,16 +12,13 @@ trait PickBooleanTypeKnobvalue extends StObject {
 }
 object PickBooleanTypeKnobvalue {
   
-  @scala.inline
-  def apply(value: BooleanTypeKnobValue): PickBooleanTypeKnobvalue = {
+  inline def apply(value: BooleanTypeKnobValue): PickBooleanTypeKnobvalue = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickBooleanTypeKnobvalue]
   }
   
-  @scala.inline
-  implicit class PickBooleanTypeKnobvalueMutableBuilder[Self <: PickBooleanTypeKnobvalue] (val x: Self) extends AnyVal {
+  extension [Self <: PickBooleanTypeKnobvalue](x: Self) {
     
-    @scala.inline
-    def setValue(value: BooleanTypeKnobValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: BooleanTypeKnobValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

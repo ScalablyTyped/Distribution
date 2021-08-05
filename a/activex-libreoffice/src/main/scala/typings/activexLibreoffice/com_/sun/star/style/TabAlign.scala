@@ -27,16 +27,13 @@ object TabAlign {
     *
     * The text range is centered between the previous tabulator (or the left border, if none) and this tabulator.
     */
-  @scala.inline
-  def CENTER: `1` = 1.asInstanceOf[`1`]
+  inline def CENTER: `1` = 1.asInstanceOf[`1`]
   
   /** The decimal point of the text range to the left of this tabulator is aligned to the position of this tabulator. */
-  @scala.inline
-  def DECIMAL: `3` = 3.asInstanceOf[`3`]
+  inline def DECIMAL: `3` = 3.asInstanceOf[`3`]
   
   /** The default alignment for tabulators is applied. */
-  @scala.inline
-  def DEFAULT: `4` = 4.asInstanceOf[`4`]
+  inline def DEFAULT: `4` = 4.asInstanceOf[`4`]
   
   /**
     * set the horizontal alignment to the left margin from the container object
@@ -47,8 +44,7 @@ object TabAlign {
     *
     * The text range is left-aligned between the previous tabulator (or the left border, if none) and this tabulator.
     */
-  @scala.inline
-  def LEFT: `0` = 0.asInstanceOf[`0`]
+  inline def LEFT: `0` = 0.asInstanceOf[`0`]
   
   /**
     * set the horizontal alignment to the right margin from the container object
@@ -59,6 +55,5 @@ object TabAlign {
     *
     * The text range is right-aligned between the previous tabulator (or the left border, if none) and this tabulator.
     */
-  @scala.inline
-  def RIGHT: `2` = 2.asInstanceOf[`2`]
+  inline def RIGHT: `2` = 2.asInstanceOf[`2`]
 }

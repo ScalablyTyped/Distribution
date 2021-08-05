@@ -34,52 +34,43 @@ object Gaming {
       val ^ : js.Any = js.native
       
       /* static member */
-      @scala.inline
-      def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /* static member */
-      @scala.inline
-      def addEventListener_gamepadadded(`type`: gamepadadded, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def addEventListener_gamepadadded(`type`: gamepadadded, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /* static member */
-      @scala.inline
-      def addEventListener_gamepadremoved(`type`: gamepadremoved, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def addEventListener_gamepadremoved(`type`: gamepadremoved, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /** The list of all connected gamepads. */
       /* static member */
       @JSGlobal("Windows.Gaming.Input.Gamepad.gamepads")
       @js.native
       def gamepads: IVectorView[typings.winrtUwp.Windows.Gaming.Input.Gamepad] = js.native
-      @scala.inline
-      def gamepads_=(x: IVectorView[typings.winrtUwp.Windows.Gaming.Input.Gamepad]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gamepads")(x.asInstanceOf[js.Any])
+      inline def gamepads_=(x: IVectorView[typings.winrtUwp.Windows.Gaming.Input.Gamepad]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gamepads")(x.asInstanceOf[js.Any])
       
       /** Signals when a new gamepad is connected. */
       /* static member */
       @JSGlobal("Windows.Gaming.Input.Gamepad.ongamepadadded")
       @js.native
       def ongamepadadded: EventHandler[js.Any] = js.native
-      @scala.inline
-      def ongamepadadded_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ongamepadadded")(x.asInstanceOf[js.Any])
+      inline def ongamepadadded_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ongamepadadded")(x.asInstanceOf[js.Any])
       
       /** Signals when a gamepad is disconnected. */
       /* static member */
       @JSGlobal("Windows.Gaming.Input.Gamepad.ongamepadremoved")
       @js.native
       def ongamepadremoved: EventHandler[js.Any] = js.native
-      @scala.inline
-      def ongamepadremoved_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ongamepadremoved")(x.asInstanceOf[js.Any])
+      inline def ongamepadremoved_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ongamepadremoved")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @scala.inline
-      def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /* static member */
-      @scala.inline
-      def removeEventListener_gamepadadded(`type`: gamepadadded, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def removeEventListener_gamepadadded(`type`: gamepadadded, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /* static member */
-      @scala.inline
-      def removeEventListener_gamepadremoved(`type`: gamepadremoved, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def removeEventListener_gamepadremoved(`type`: gamepadremoved, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
     
     /** Specifies the button type. */
@@ -157,48 +148,42 @@ object Gaming {
         @JSGlobal("Windows.Gaming.Preview.GamesEnumeration.GameList.addEventListener")
         @js.native
         def addEventListener: js.Any = js.native
-        @scala.inline
-        def addEventListener_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("addEventListener")(x.asInstanceOf[js.Any])
+        inline def addEventListener_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("addEventListener")(x.asInstanceOf[js.Any])
         
         /* unmapped type */
         /* static member */
         @JSGlobal("Windows.Gaming.Preview.GamesEnumeration.GameList.findAllAsync")
         @js.native
         def findAllAsync: js.Any = js.native
-        @scala.inline
-        def findAllAsync_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findAllAsync")(x.asInstanceOf[js.Any])
+        inline def findAllAsync_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findAllAsync")(x.asInstanceOf[js.Any])
         
         /* unmapped type */
         /* static member */
         @JSGlobal("Windows.Gaming.Preview.GamesEnumeration.GameList.ongameadded")
         @js.native
         def ongameadded: js.Any = js.native
-        @scala.inline
-        def ongameadded_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ongameadded")(x.asInstanceOf[js.Any])
+        inline def ongameadded_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ongameadded")(x.asInstanceOf[js.Any])
         
         /* unmapped type */
         /* static member */
         @JSGlobal("Windows.Gaming.Preview.GamesEnumeration.GameList.ongameremoved")
         @js.native
         def ongameremoved: js.Any = js.native
-        @scala.inline
-        def ongameremoved_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ongameremoved")(x.asInstanceOf[js.Any])
+        inline def ongameremoved_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ongameremoved")(x.asInstanceOf[js.Any])
         
         /* unmapped type */
         /* static member */
         @JSGlobal("Windows.Gaming.Preview.GamesEnumeration.GameList.ongameupdated")
         @js.native
         def ongameupdated: js.Any = js.native
-        @scala.inline
-        def ongameupdated_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ongameupdated")(x.asInstanceOf[js.Any])
+        inline def ongameupdated_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ongameupdated")(x.asInstanceOf[js.Any])
         
         /* unmapped type */
         /* static member */
         @JSGlobal("Windows.Gaming.Preview.GamesEnumeration.GameList.removeEventListener")
         @js.native
         def removeEventListener: js.Any = js.native
-        @scala.inline
-        def removeEventListener_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("removeEventListener")(x.asInstanceOf[js.Any])
+        inline def removeEventListener_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("removeEventListener")(x.asInstanceOf[js.Any])
       }
       
       object GameListCategory {
@@ -210,22 +195,19 @@ object Gaming {
         @JSGlobal("Windows.Gaming.Preview.GamesEnumeration.GameListCategory.candidate")
         @js.native
         def candidate: js.Any = js.native
-        @scala.inline
-        def candidate_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("candidate")(x.asInstanceOf[js.Any])
+        inline def candidate_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("candidate")(x.asInstanceOf[js.Any])
         
         /* unmapped type */
         @JSGlobal("Windows.Gaming.Preview.GamesEnumeration.GameListCategory.confirmedBySystem")
         @js.native
         def confirmedBySystem: js.Any = js.native
-        @scala.inline
-        def confirmedBySystem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("confirmedBySystem")(x.asInstanceOf[js.Any])
+        inline def confirmedBySystem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("confirmedBySystem")(x.asInstanceOf[js.Any])
         
         /* unmapped type */
         @JSGlobal("Windows.Gaming.Preview.GamesEnumeration.GameListCategory.confirmedByUser")
         @js.native
         def confirmedByUser: js.Any = js.native
-        @scala.inline
-        def confirmedByUser_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("confirmedByUser")(x.asInstanceOf[js.Any])
+        inline def confirmedByUser_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("confirmedByUser")(x.asInstanceOf[js.Any])
       }
       
       @JSGlobal("Windows.Gaming.Preview.GamesEnumeration.GameListEntry")
@@ -273,48 +255,42 @@ object Gaming {
       @JSGlobal("Windows.Gaming.UI.GameBar.addEventListener")
       @js.native
       def addEventListener: js.Any = js.native
-      @scala.inline
-      def addEventListener_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("addEventListener")(x.asInstanceOf[js.Any])
+      inline def addEventListener_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("addEventListener")(x.asInstanceOf[js.Any])
       
       /* unmapped type */
       /* static member */
       @JSGlobal("Windows.Gaming.UI.GameBar.isInputRedirected")
       @js.native
       def isInputRedirected: js.Any = js.native
-      @scala.inline
-      def isInputRedirected_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isInputRedirected")(x.asInstanceOf[js.Any])
+      inline def isInputRedirected_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isInputRedirected")(x.asInstanceOf[js.Any])
       
       /* unmapped type */
       /* static member */
       @JSGlobal("Windows.Gaming.UI.GameBar.onisinputredirectedchanged")
       @js.native
       def onisinputredirectedchanged: js.Any = js.native
-      @scala.inline
-      def onisinputredirectedchanged_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onisinputredirectedchanged")(x.asInstanceOf[js.Any])
+      inline def onisinputredirectedchanged_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onisinputredirectedchanged")(x.asInstanceOf[js.Any])
       
       /* unmapped type */
       /* static member */
       @JSGlobal("Windows.Gaming.UI.GameBar.onvisibilitychanged")
       @js.native
       def onvisibilitychanged: js.Any = js.native
-      @scala.inline
-      def onvisibilitychanged_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onvisibilitychanged")(x.asInstanceOf[js.Any])
+      inline def onvisibilitychanged_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onvisibilitychanged")(x.asInstanceOf[js.Any])
       
       /* unmapped type */
       /* static member */
       @JSGlobal("Windows.Gaming.UI.GameBar.removeEventListener")
       @js.native
       def removeEventListener: js.Any = js.native
-      @scala.inline
-      def removeEventListener_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("removeEventListener")(x.asInstanceOf[js.Any])
+      inline def removeEventListener_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("removeEventListener")(x.asInstanceOf[js.Any])
       
       /* unmapped type */
       /* static member */
       @JSGlobal("Windows.Gaming.UI.GameBar.visible")
       @js.native
       def visible: js.Any = js.native
-      @scala.inline
-      def visible_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("visible")(x.asInstanceOf[js.Any])
+      inline def visible_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("visible")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -559,8 +535,7 @@ object Gaming {
           * @return This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
           */
         /* static member */
-        @scala.inline
-        def getForUserAsync(user: User, serviceConfigId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Gaming.XboxLive.Storage.GameSaveProviderGetResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getForUserAsync")(user.asInstanceOf[js.Any], serviceConfigId.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Gaming.XboxLive.Storage.GameSaveProviderGetResult]]
+        inline def getForUserAsync(user: User, serviceConfigId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Gaming.XboxLive.Storage.GameSaveProviderGetResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getForUserAsync")(user.asInstanceOf[js.Any], serviceConfigId.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Gaming.XboxLive.Storage.GameSaveProviderGetResult]]
         
         /**
           * This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
@@ -569,8 +544,7 @@ object Gaming {
           * @return This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
           */
         /* static member */
-        @scala.inline
-        def getSyncOnDemandForUserAsync(user: User, serviceConfigId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Gaming.XboxLive.Storage.GameSaveProviderGetResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSyncOnDemandForUserAsync")(user.asInstanceOf[js.Any], serviceConfigId.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Gaming.XboxLive.Storage.GameSaveProviderGetResult]]
+        inline def getSyncOnDemandForUserAsync(user: User, serviceConfigId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Gaming.XboxLive.Storage.GameSaveProviderGetResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSyncOnDemandForUserAsync")(user.asInstanceOf[js.Any], serviceConfigId.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Gaming.XboxLive.Storage.GameSaveProviderGetResult]]
       }
       
       /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */

@@ -10,8 +10,7 @@ object inspectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def inspect(value: InspectValue): String = ^.asInstanceOf[js.Dynamic].applyDynamic("inspect")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def inspect(value: InspectValue): String = ^.asInstanceOf[js.Dynamic].applyDynamic("inspect")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @js.native
   trait InspectFunction extends StObject {

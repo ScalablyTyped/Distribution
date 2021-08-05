@@ -14,8 +14,8 @@ object dialogFooterBaseMod {
     extends Component[IDialogFooterProps, js.Object, js.Any] {
     def this(props: IDialogFooterProps) = this()
     
-    var _classNames: js.Any = js.native
+    /* private */ var _classNames: js.Any = js.native
     
-    var _renderChildrenAsActions: js.Any = js.native
+    /* private */ var _renderChildrenAsActions: js.Any = js.native
   }
 }

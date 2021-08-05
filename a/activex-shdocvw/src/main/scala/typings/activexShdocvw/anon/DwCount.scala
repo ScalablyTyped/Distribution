@@ -12,19 +12,15 @@ trait DwCount extends StObject {
 }
 object DwCount {
   
-  @scala.inline
-  def apply(URL: js.Any, dwCount: Double): DwCount = {
+  inline def apply(URL: js.Any, dwCount: Double): DwCount = {
     val __obj = js.Dynamic.literal(URL = URL.asInstanceOf[js.Any], dwCount = dwCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[DwCount]
   }
   
-  @scala.inline
-  implicit class DwCountMutableBuilder[Self <: DwCount] (val x: Self) extends AnyVal {
+  extension [Self <: DwCount](x: Self) {
     
-    @scala.inline
-    def setDwCount(value: Double): Self = StObject.set(x, "dwCount", value.asInstanceOf[js.Any])
+    inline def setDwCount(value: Double): Self = StObject.set(x, "dwCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setURL(value: js.Any): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
+    inline def setURL(value: js.Any): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
   }
 }

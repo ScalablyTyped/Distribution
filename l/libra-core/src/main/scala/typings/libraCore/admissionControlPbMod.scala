@@ -36,11 +36,9 @@ object admissionControlPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def deserializeBinary(bytes: Uint8Array): AdmissionControlStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[AdmissionControlStatus]
+    inline def deserializeBinary(bytes: Uint8Array): AdmissionControlStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[AdmissionControlStatus]
     
-    @scala.inline
-    def deserializeBinaryFromReader(message: AdmissionControlStatus, reader: BinaryReader): AdmissionControlStatus = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[AdmissionControlStatus]
+    inline def deserializeBinaryFromReader(message: AdmissionControlStatus, reader: BinaryReader): AdmissionControlStatus = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[AdmissionControlStatus]
     
     @JSImport("libra-core/lib/@/generated/admission_control_pb", "AdmissionControlStatus.extensions")
     @js.native
@@ -49,17 +47,13 @@ object admissionControlPbMod {
     @JSImport("libra-core/lib/@/generated/admission_control_pb", "AdmissionControlStatus.extensionsBinary")
     @js.native
     def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-    @scala.inline
-    def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+    inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+    inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def serializeBinaryToWriter(message: AdmissionControlStatus, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def serializeBinaryToWriter(message: AdmissionControlStatus, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def toObject(includeInstance: Boolean, msg: AdmissionControlStatus): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+    inline def toObject(includeInstance: Boolean, msg: AdmissionControlStatus): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
     
     trait AsObject extends StObject {
       
@@ -69,20 +63,16 @@ object admissionControlPbMod {
     }
     object AsObject {
       
-      @scala.inline
-      def apply(code: AdmissionControlStatusCode, message: String): AsObject = {
+      inline def apply(code: AdmissionControlStatusCode, message: String): AsObject = {
         val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
         __obj.asInstanceOf[AsObject]
       }
       
-      @scala.inline
-      implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+      extension [Self <: AsObject](x: Self) {
         
-        @scala.inline
-        def setCode(value: AdmissionControlStatusCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+        inline def setCode(value: AdmissionControlStatusCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+        inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -135,11 +125,9 @@ object admissionControlPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def deserializeBinary(bytes: Uint8Array): SubmitTransactionRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[SubmitTransactionRequest]
+    inline def deserializeBinary(bytes: Uint8Array): SubmitTransactionRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[SubmitTransactionRequest]
     
-    @scala.inline
-    def deserializeBinaryFromReader(message: SubmitTransactionRequest, reader: BinaryReader): SubmitTransactionRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[SubmitTransactionRequest]
+    inline def deserializeBinaryFromReader(message: SubmitTransactionRequest, reader: BinaryReader): SubmitTransactionRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[SubmitTransactionRequest]
     
     @JSImport("libra-core/lib/@/generated/admission_control_pb", "SubmitTransactionRequest.extensions")
     @js.native
@@ -148,17 +136,13 @@ object admissionControlPbMod {
     @JSImport("libra-core/lib/@/generated/admission_control_pb", "SubmitTransactionRequest.extensionsBinary")
     @js.native
     def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-    @scala.inline
-    def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+    inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+    inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def serializeBinaryToWriter(message: SubmitTransactionRequest, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def serializeBinaryToWriter(message: SubmitTransactionRequest, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def toObject(includeInstance: Boolean, msg: SubmitTransactionRequest): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+    inline def toObject(includeInstance: Boolean, msg: SubmitTransactionRequest): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
     
     trait AsObject extends StObject {
       
@@ -166,20 +150,16 @@ object admissionControlPbMod {
     }
     object AsObject {
       
-      @scala.inline
-      def apply(): AsObject = {
+      inline def apply(): AsObject = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[AsObject]
       }
       
-      @scala.inline
-      implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+      extension [Self <: AsObject](x: Self) {
         
-        @scala.inline
-        def setSignedTxn(value: typings.libraCore.transactionPbMod.SignedTransaction.AsObject): Self = StObject.set(x, "signedTxn", value.asInstanceOf[js.Any])
+        inline def setSignedTxn(value: typings.libraCore.transactionPbMod.SignedTransaction.AsObject): Self = StObject.set(x, "signedTxn", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSignedTxnUndefined: Self = StObject.set(x, "signedTxn", js.undefined)
+        inline def setSignedTxnUndefined: Self = StObject.set(x, "signedTxn", js.undefined)
       }
     }
   }
@@ -267,11 +247,9 @@ object admissionControlPbMod {
       /* 1 */ val VM_STATUS: typings.libraCore.admissionControlPbMod.SubmitTransactionResponse.StatusCase.VM_STATUS & Double = js.native
     }
     
-    @scala.inline
-    def deserializeBinary(bytes: Uint8Array): SubmitTransactionResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[SubmitTransactionResponse]
+    inline def deserializeBinary(bytes: Uint8Array): SubmitTransactionResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[SubmitTransactionResponse]
     
-    @scala.inline
-    def deserializeBinaryFromReader(message: SubmitTransactionResponse, reader: BinaryReader): SubmitTransactionResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[SubmitTransactionResponse]
+    inline def deserializeBinaryFromReader(message: SubmitTransactionResponse, reader: BinaryReader): SubmitTransactionResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[SubmitTransactionResponse]
     
     @JSImport("libra-core/lib/@/generated/admission_control_pb", "SubmitTransactionResponse.extensions")
     @js.native
@@ -280,17 +258,13 @@ object admissionControlPbMod {
     @JSImport("libra-core/lib/@/generated/admission_control_pb", "SubmitTransactionResponse.extensionsBinary")
     @js.native
     def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-    @scala.inline
-    def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+    inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+    inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def serializeBinaryToWriter(message: SubmitTransactionResponse, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def serializeBinaryToWriter(message: SubmitTransactionResponse, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def toObject(includeInstance: Boolean, msg: SubmitTransactionResponse): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+    inline def toObject(includeInstance: Boolean, msg: SubmitTransactionResponse): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
     
     trait AsObject extends StObject {
       
@@ -304,35 +278,26 @@ object admissionControlPbMod {
     }
     object AsObject {
       
-      @scala.inline
-      def apply(validatorId: Uint8Array | String): AsObject = {
+      inline def apply(validatorId: Uint8Array | String): AsObject = {
         val __obj = js.Dynamic.literal(validatorId = validatorId.asInstanceOf[js.Any])
         __obj.asInstanceOf[AsObject]
       }
       
-      @scala.inline
-      implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+      extension [Self <: AsObject](x: Self) {
         
-        @scala.inline
-        def setAcStatus(value: typings.libraCore.admissionControlPbMod.AdmissionControlStatus.AsObject): Self = StObject.set(x, "acStatus", value.asInstanceOf[js.Any])
+        inline def setAcStatus(value: typings.libraCore.admissionControlPbMod.AdmissionControlStatus.AsObject): Self = StObject.set(x, "acStatus", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAcStatusUndefined: Self = StObject.set(x, "acStatus", js.undefined)
+        inline def setAcStatusUndefined: Self = StObject.set(x, "acStatus", js.undefined)
         
-        @scala.inline
-        def setMempoolStatus(value: typings.libraCore.mempoolStatusPbMod.MempoolAddTransactionStatus.AsObject): Self = StObject.set(x, "mempoolStatus", value.asInstanceOf[js.Any])
+        inline def setMempoolStatus(value: typings.libraCore.mempoolStatusPbMod.MempoolAddTransactionStatus.AsObject): Self = StObject.set(x, "mempoolStatus", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMempoolStatusUndefined: Self = StObject.set(x, "mempoolStatus", js.undefined)
+        inline def setMempoolStatusUndefined: Self = StObject.set(x, "mempoolStatus", js.undefined)
         
-        @scala.inline
-        def setValidatorId(value: Uint8Array | String): Self = StObject.set(x, "validatorId", value.asInstanceOf[js.Any])
+        inline def setValidatorId(value: Uint8Array | String): Self = StObject.set(x, "validatorId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVmStatus(value: typings.libraCore.vmErrorsPbMod.VMStatus.AsObject): Self = StObject.set(x, "vmStatus", value.asInstanceOf[js.Any])
+        inline def setVmStatus(value: typings.libraCore.vmErrorsPbMod.VMStatus.AsObject): Self = StObject.set(x, "vmStatus", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVmStatusUndefined: Self = StObject.set(x, "vmStatus", js.undefined)
+        inline def setVmStatusUndefined: Self = StObject.set(x, "vmStatus", js.undefined)
       }
     }
   }

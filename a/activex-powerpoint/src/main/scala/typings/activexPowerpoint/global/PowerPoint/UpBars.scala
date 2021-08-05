@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.UpBars")
 @js.native
-class UpBars protected ()
+/* private */ class UpBars ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.UpBars {
   
@@ -37,7 +37,7 @@ class UpBars protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.UpBars_typekey")
   var PowerPointDotUpBars_typekey: typings.activexPowerpoint.PowerPoint.UpBars = js.native
   

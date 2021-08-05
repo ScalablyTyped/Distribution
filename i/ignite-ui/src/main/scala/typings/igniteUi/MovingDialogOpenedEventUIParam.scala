@@ -13,19 +13,15 @@ trait MovingDialogOpenedEventUIParam extends StObject {
 }
 object MovingDialogOpenedEventUIParam {
   
-  @scala.inline
-  def apply(): MovingDialogOpenedEventUIParam = {
+  inline def apply(): MovingDialogOpenedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MovingDialogOpenedEventUIParam]
   }
   
-  @scala.inline
-  implicit class MovingDialogOpenedEventUIParamMutableBuilder[Self <: MovingDialogOpenedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: MovingDialogOpenedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

@@ -26,6 +26,5 @@ object ClientContext {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def getCurrent(): typings.sharepoint.SP.ClientContext = ^.asInstanceOf[js.Dynamic].applyDynamic("get_current")().asInstanceOf[typings.sharepoint.SP.ClientContext]
+  inline def getCurrent(): typings.sharepoint.SP.ClientContext = ^.asInstanceOf[js.Dynamic].applyDynamic("get_current")().asInstanceOf[typings.sharepoint.SP.ClientContext]
 }

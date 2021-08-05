@@ -39,6 +39,6 @@ trait ShellWindows extends StObject {
   /** Remove a window from the list */
   def Revoke(lCookie: Double): Unit = js.native
   
-  @JSName("SHDocVw.ShellWindows_typekey")
+  /* private */ @JSName("SHDocVw.ShellWindows_typekey")
   var SHDocVwDotShellWindows_typekey: ShellWindows = js.native
 }

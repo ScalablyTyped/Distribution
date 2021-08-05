@@ -23,28 +23,21 @@ trait DescribeReplicationInstanceTaskLogsMessage extends StObject {
 }
 object DescribeReplicationInstanceTaskLogsMessage {
   
-  @scala.inline
-  def apply(ReplicationInstanceArn: String): DescribeReplicationInstanceTaskLogsMessage = {
+  inline def apply(ReplicationInstanceArn: String): DescribeReplicationInstanceTaskLogsMessage = {
     val __obj = js.Dynamic.literal(ReplicationInstanceArn = ReplicationInstanceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeReplicationInstanceTaskLogsMessage]
   }
   
-  @scala.inline
-  implicit class DescribeReplicationInstanceTaskLogsMessageMutableBuilder[Self <: DescribeReplicationInstanceTaskLogsMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeReplicationInstanceTaskLogsMessage](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
+    inline def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
+    inline def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
     
-    @scala.inline
-    def setReplicationInstanceArn(value: String): Self = StObject.set(x, "ReplicationInstanceArn", value.asInstanceOf[js.Any])
+    inline def setReplicationInstanceArn(value: String): Self = StObject.set(x, "ReplicationInstanceArn", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait CacheBehavior extends StObject {
 }
 object CacheBehavior {
   
-  @scala.inline
-  def apply(): CacheBehavior = {
+  inline def apply(): CacheBehavior = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CacheBehavior]
   }
   
-  @scala.inline
-  implicit class CacheBehaviorMutableBuilder[Self <: CacheBehavior] (val x: Self) extends AnyVal {
+  extension [Self <: CacheBehavior](x: Self) {
     
-    @scala.inline
-    def setBehavior(value: BehaviorEnum): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
+    inline def setBehavior(value: BehaviorEnum): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
+    inline def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
   }
 }

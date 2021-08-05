@@ -12,25 +12,17 @@ object bip32Mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromBase58(inString: String): BIP32Interface = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBase58")(inString.asInstanceOf[js.Any]).asInstanceOf[BIP32Interface]
-  @scala.inline
-  def fromBase58(inString: String, network: Network): BIP32Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBase58")(inString.asInstanceOf[js.Any], network.asInstanceOf[js.Any])).asInstanceOf[BIP32Interface]
+  inline def fromBase58(inString: String): BIP32Interface = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBase58")(inString.asInstanceOf[js.Any]).asInstanceOf[BIP32Interface]
+  inline def fromBase58(inString: String, network: Network): BIP32Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBase58")(inString.asInstanceOf[js.Any], network.asInstanceOf[js.Any])).asInstanceOf[BIP32Interface]
   
-  @scala.inline
-  def fromPrivateKey(privateKey: Buffer, chainCode: Buffer): BIP32Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivateKey")(privateKey.asInstanceOf[js.Any], chainCode.asInstanceOf[js.Any])).asInstanceOf[BIP32Interface]
-  @scala.inline
-  def fromPrivateKey(privateKey: Buffer, chainCode: Buffer, network: Network): BIP32Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivateKey")(privateKey.asInstanceOf[js.Any], chainCode.asInstanceOf[js.Any], network.asInstanceOf[js.Any])).asInstanceOf[BIP32Interface]
+  inline def fromPrivateKey(privateKey: Buffer, chainCode: Buffer): BIP32Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivateKey")(privateKey.asInstanceOf[js.Any], chainCode.asInstanceOf[js.Any])).asInstanceOf[BIP32Interface]
+  inline def fromPrivateKey(privateKey: Buffer, chainCode: Buffer, network: Network): BIP32Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivateKey")(privateKey.asInstanceOf[js.Any], chainCode.asInstanceOf[js.Any], network.asInstanceOf[js.Any])).asInstanceOf[BIP32Interface]
   
-  @scala.inline
-  def fromPublicKey(publicKey: Buffer, chainCode: Buffer): BIP32Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublicKey")(publicKey.asInstanceOf[js.Any], chainCode.asInstanceOf[js.Any])).asInstanceOf[BIP32Interface]
-  @scala.inline
-  def fromPublicKey(publicKey: Buffer, chainCode: Buffer, network: Network): BIP32Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublicKey")(publicKey.asInstanceOf[js.Any], chainCode.asInstanceOf[js.Any], network.asInstanceOf[js.Any])).asInstanceOf[BIP32Interface]
+  inline def fromPublicKey(publicKey: Buffer, chainCode: Buffer): BIP32Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublicKey")(publicKey.asInstanceOf[js.Any], chainCode.asInstanceOf[js.Any])).asInstanceOf[BIP32Interface]
+  inline def fromPublicKey(publicKey: Buffer, chainCode: Buffer, network: Network): BIP32Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublicKey")(publicKey.asInstanceOf[js.Any], chainCode.asInstanceOf[js.Any], network.asInstanceOf[js.Any])).asInstanceOf[BIP32Interface]
   
-  @scala.inline
-  def fromSeed(seed: Buffer): BIP32Interface = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSeed")(seed.asInstanceOf[js.Any]).asInstanceOf[BIP32Interface]
-  @scala.inline
-  def fromSeed(seed: Buffer, network: Network): BIP32Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSeed")(seed.asInstanceOf[js.Any], network.asInstanceOf[js.Any])).asInstanceOf[BIP32Interface]
+  inline def fromSeed(seed: Buffer): BIP32Interface = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSeed")(seed.asInstanceOf[js.Any]).asInstanceOf[BIP32Interface]
+  inline def fromSeed(seed: Buffer, network: Network): BIP32Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSeed")(seed.asInstanceOf[js.Any], network.asInstanceOf[js.Any])).asInstanceOf[BIP32Interface]
   
   @js.native
   trait BIP32Interface extends StObject {
@@ -91,44 +83,32 @@ object bip32Mod {
   }
   object Network {
     
-    @scala.inline
-    def apply(bip32: Private, wif: Double): Network = {
+    inline def apply(bip32: Private, wif: Double): Network = {
       val __obj = js.Dynamic.literal(bip32 = bip32.asInstanceOf[js.Any], wif = wif.asInstanceOf[js.Any])
       __obj.asInstanceOf[Network]
     }
     
-    @scala.inline
-    implicit class NetworkMutableBuilder[Self <: Network] (val x: Self) extends AnyVal {
+    extension [Self <: Network](x: Self) {
       
-      @scala.inline
-      def setBech32(value: String): Self = StObject.set(x, "bech32", value.asInstanceOf[js.Any])
+      inline def setBech32(value: String): Self = StObject.set(x, "bech32", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBech32Undefined: Self = StObject.set(x, "bech32", js.undefined)
+      inline def setBech32Undefined: Self = StObject.set(x, "bech32", js.undefined)
       
-      @scala.inline
-      def setBip32(value: Private): Self = StObject.set(x, "bip32", value.asInstanceOf[js.Any])
+      inline def setBip32(value: Private): Self = StObject.set(x, "bip32", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessagePrefix(value: String): Self = StObject.set(x, "messagePrefix", value.asInstanceOf[js.Any])
+      inline def setMessagePrefix(value: String): Self = StObject.set(x, "messagePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessagePrefixUndefined: Self = StObject.set(x, "messagePrefix", js.undefined)
+      inline def setMessagePrefixUndefined: Self = StObject.set(x, "messagePrefix", js.undefined)
       
-      @scala.inline
-      def setPubKeyHash(value: Double): Self = StObject.set(x, "pubKeyHash", value.asInstanceOf[js.Any])
+      inline def setPubKeyHash(value: Double): Self = StObject.set(x, "pubKeyHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPubKeyHashUndefined: Self = StObject.set(x, "pubKeyHash", js.undefined)
+      inline def setPubKeyHashUndefined: Self = StObject.set(x, "pubKeyHash", js.undefined)
       
-      @scala.inline
-      def setScriptHash(value: Double): Self = StObject.set(x, "scriptHash", value.asInstanceOf[js.Any])
+      inline def setScriptHash(value: Double): Self = StObject.set(x, "scriptHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScriptHashUndefined: Self = StObject.set(x, "scriptHash", js.undefined)
+      inline def setScriptHashUndefined: Self = StObject.set(x, "scriptHash", js.undefined)
       
-      @scala.inline
-      def setWif(value: Double): Self = StObject.set(x, "wif", value.asInstanceOf[js.Any])
+      inline def setWif(value: Double): Self = StObject.set(x, "wif", value.asInstanceOf[js.Any])
     }
   }
 }

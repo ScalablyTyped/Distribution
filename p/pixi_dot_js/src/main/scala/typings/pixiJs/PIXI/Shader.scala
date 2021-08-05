@@ -28,19 +28,15 @@ trait Shader extends StObject {
 }
 object Shader {
   
-  @scala.inline
-  def apply(program: Program, uniforms: js.Any): Shader = {
+  inline def apply(program: Program, uniforms: js.Any): Shader = {
     val __obj = js.Dynamic.literal(program = program.asInstanceOf[js.Any], uniforms = uniforms.asInstanceOf[js.Any])
     __obj.asInstanceOf[Shader]
   }
   
-  @scala.inline
-  implicit class ShaderMutableBuilder[Self <: Shader] (val x: Self) extends AnyVal {
+  extension [Self <: Shader](x: Self) {
     
-    @scala.inline
-    def setProgram(value: Program): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
+    inline def setProgram(value: Program): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniforms(value: js.Any): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
+    inline def setUniforms(value: js.Any): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
   }
 }

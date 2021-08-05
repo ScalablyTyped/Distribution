@@ -15,22 +15,17 @@ trait ISymmetricKeyAlgorithmProvider extends StObject {
 }
 object ISymmetricKeyAlgorithmProvider {
   
-  @scala.inline
-  def apply(algorithmName: String, blockLength: Double, createSymmetricKey: IBuffer => CryptographicKey): ISymmetricKeyAlgorithmProvider = {
+  inline def apply(algorithmName: String, blockLength: Double, createSymmetricKey: IBuffer => CryptographicKey): ISymmetricKeyAlgorithmProvider = {
     val __obj = js.Dynamic.literal(algorithmName = algorithmName.asInstanceOf[js.Any], blockLength = blockLength.asInstanceOf[js.Any], createSymmetricKey = js.Any.fromFunction1(createSymmetricKey))
     __obj.asInstanceOf[ISymmetricKeyAlgorithmProvider]
   }
   
-  @scala.inline
-  implicit class ISymmetricKeyAlgorithmProviderMutableBuilder[Self <: ISymmetricKeyAlgorithmProvider] (val x: Self) extends AnyVal {
+  extension [Self <: ISymmetricKeyAlgorithmProvider](x: Self) {
     
-    @scala.inline
-    def setAlgorithmName(value: String): Self = StObject.set(x, "algorithmName", value.asInstanceOf[js.Any])
+    inline def setAlgorithmName(value: String): Self = StObject.set(x, "algorithmName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockLength(value: Double): Self = StObject.set(x, "blockLength", value.asInstanceOf[js.Any])
+    inline def setBlockLength(value: Double): Self = StObject.set(x, "blockLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateSymmetricKey(value: IBuffer => CryptographicKey): Self = StObject.set(x, "createSymmetricKey", js.Any.fromFunction1(value))
+    inline def setCreateSymmetricKey(value: IBuffer => CryptographicKey): Self = StObject.set(x, "createSymmetricKey", js.Any.fromFunction1(value))
   }
 }

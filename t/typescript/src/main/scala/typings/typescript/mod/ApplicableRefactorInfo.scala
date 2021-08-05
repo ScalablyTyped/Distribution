@@ -33,31 +33,23 @@ trait ApplicableRefactorInfo extends StObject {
 }
 object ApplicableRefactorInfo {
   
-  @scala.inline
-  def apply(actions: js.Array[RefactorActionInfo], description: java.lang.String, name: java.lang.String): ApplicableRefactorInfo = {
+  inline def apply(actions: js.Array[RefactorActionInfo], description: java.lang.String, name: java.lang.String): ApplicableRefactorInfo = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicableRefactorInfo]
   }
   
-  @scala.inline
-  implicit class ApplicableRefactorInfoMutableBuilder[Self <: ApplicableRefactorInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicableRefactorInfo](x: Self) {
     
-    @scala.inline
-    def setActions(value: js.Array[RefactorActionInfo]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: js.Array[RefactorActionInfo]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsVarargs(value: RefactorActionInfo*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: RefactorActionInfo*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: java.lang.String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: java.lang.String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInlineable(value: Boolean): Self = StObject.set(x, "inlineable", value.asInstanceOf[js.Any])
+    inline def setInlineable(value: Boolean): Self = StObject.set(x, "inlineable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInlineableUndefined: Self = StObject.set(x, "inlineable", js.undefined)
+    inline def setInlineableUndefined: Self = StObject.set(x, "inlineable", js.undefined)
     
-    @scala.inline
-    def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

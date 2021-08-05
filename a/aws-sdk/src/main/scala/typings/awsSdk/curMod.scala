@@ -133,20 +133,16 @@ object curMod {
   }
   object ClientApiVersions {
     
-    @scala.inline
-    def apply(): ClientApiVersions = {
+    inline def apply(): ClientApiVersions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientApiVersions]
     }
     
-    @scala.inline
-    implicit class ClientApiVersionsMutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
+    extension [Self <: ClientApiVersions](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     }
   }
   
@@ -172,20 +168,16 @@ object curMod {
   }
   object DeleteReportDefinitionRequest {
     
-    @scala.inline
-    def apply(): DeleteReportDefinitionRequest = {
+    inline def apply(): DeleteReportDefinitionRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DeleteReportDefinitionRequest]
     }
     
-    @scala.inline
-    implicit class DeleteReportDefinitionRequestMutableBuilder[Self <: DeleteReportDefinitionRequest] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteReportDefinitionRequest](x: Self) {
       
-      @scala.inline
-      def setReportName(value: ReportName): Self = StObject.set(x, "ReportName", value.asInstanceOf[js.Any])
+      inline def setReportName(value: ReportName): Self = StObject.set(x, "ReportName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportNameUndefined: Self = StObject.set(x, "ReportName", js.undefined)
+      inline def setReportNameUndefined: Self = StObject.set(x, "ReportName", js.undefined)
     }
   }
   
@@ -195,20 +187,16 @@ object curMod {
   }
   object DeleteReportDefinitionResponse {
     
-    @scala.inline
-    def apply(): DeleteReportDefinitionResponse = {
+    inline def apply(): DeleteReportDefinitionResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DeleteReportDefinitionResponse]
     }
     
-    @scala.inline
-    implicit class DeleteReportDefinitionResponseMutableBuilder[Self <: DeleteReportDefinitionResponse] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteReportDefinitionResponse](x: Self) {
       
-      @scala.inline
-      def setResponseMessage(value: DeleteResponseMessage): Self = StObject.set(x, "ResponseMessage", value.asInstanceOf[js.Any])
+      inline def setResponseMessage(value: DeleteResponseMessage): Self = StObject.set(x, "ResponseMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseMessageUndefined: Self = StObject.set(x, "ResponseMessage", js.undefined)
+      inline def setResponseMessageUndefined: Self = StObject.set(x, "ResponseMessage", js.undefined)
     }
   }
   
@@ -222,26 +210,20 @@ object curMod {
   }
   object DescribeReportDefinitionsRequest {
     
-    @scala.inline
-    def apply(): DescribeReportDefinitionsRequest = {
+    inline def apply(): DescribeReportDefinitionsRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DescribeReportDefinitionsRequest]
     }
     
-    @scala.inline
-    implicit class DescribeReportDefinitionsRequestMutableBuilder[Self <: DescribeReportDefinitionsRequest] (val x: Self) extends AnyVal {
+    extension [Self <: DescribeReportDefinitionsRequest](x: Self) {
       
-      @scala.inline
-      def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+      inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+      inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
       
-      @scala.inline
-      def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+      inline def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+      inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     }
   }
   
@@ -256,29 +238,22 @@ object curMod {
   }
   object DescribeReportDefinitionsResponse {
     
-    @scala.inline
-    def apply(): DescribeReportDefinitionsResponse = {
+    inline def apply(): DescribeReportDefinitionsResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DescribeReportDefinitionsResponse]
     }
     
-    @scala.inline
-    implicit class DescribeReportDefinitionsResponseMutableBuilder[Self <: DescribeReportDefinitionsResponse] (val x: Self) extends AnyVal {
+    extension [Self <: DescribeReportDefinitionsResponse](x: Self) {
       
-      @scala.inline
-      def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+      inline def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+      inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
       
-      @scala.inline
-      def setReportDefinitions(value: ReportDefinitionList): Self = StObject.set(x, "ReportDefinitions", value.asInstanceOf[js.Any])
+      inline def setReportDefinitions(value: ReportDefinitionList): Self = StObject.set(x, "ReportDefinitions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportDefinitionsUndefined: Self = StObject.set(x, "ReportDefinitions", js.undefined)
+      inline def setReportDefinitionsUndefined: Self = StObject.set(x, "ReportDefinitions", js.undefined)
       
-      @scala.inline
-      def setReportDefinitionsVarargs(value: ReportDefinition*): Self = StObject.set(x, "ReportDefinitions", js.Array(value :_*))
+      inline def setReportDefinitionsVarargs(value: ReportDefinition*): Self = StObject.set(x, "ReportDefinitions", js.Array(value :_*))
     }
   }
   
@@ -294,20 +269,16 @@ object curMod {
   }
   object ModifyReportDefinitionRequest {
     
-    @scala.inline
-    def apply(ReportDefinition: ReportDefinition, ReportName: ReportName): ModifyReportDefinitionRequest = {
+    inline def apply(ReportDefinition: ReportDefinition, ReportName: ReportName): ModifyReportDefinitionRequest = {
       val __obj = js.Dynamic.literal(ReportDefinition = ReportDefinition.asInstanceOf[js.Any], ReportName = ReportName.asInstanceOf[js.Any])
       __obj.asInstanceOf[ModifyReportDefinitionRequest]
     }
     
-    @scala.inline
-    implicit class ModifyReportDefinitionRequestMutableBuilder[Self <: ModifyReportDefinitionRequest] (val x: Self) extends AnyVal {
+    extension [Self <: ModifyReportDefinitionRequest](x: Self) {
       
-      @scala.inline
-      def setReportDefinition(value: ReportDefinition): Self = StObject.set(x, "ReportDefinition", value.asInstanceOf[js.Any])
+      inline def setReportDefinition(value: ReportDefinition): Self = StObject.set(x, "ReportDefinition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportName(value: ReportName): Self = StObject.set(x, "ReportName", value.asInstanceOf[js.Any])
+      inline def setReportName(value: ReportName): Self = StObject.set(x, "ReportName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -322,17 +293,14 @@ object curMod {
   }
   object PutReportDefinitionRequest {
     
-    @scala.inline
-    def apply(ReportDefinition: ReportDefinition): PutReportDefinitionRequest = {
+    inline def apply(ReportDefinition: ReportDefinition): PutReportDefinitionRequest = {
       val __obj = js.Dynamic.literal(ReportDefinition = ReportDefinition.asInstanceOf[js.Any])
       __obj.asInstanceOf[PutReportDefinitionRequest]
     }
     
-    @scala.inline
-    implicit class PutReportDefinitionRequestMutableBuilder[Self <: PutReportDefinitionRequest] (val x: Self) extends AnyVal {
+    extension [Self <: PutReportDefinitionRequest](x: Self) {
       
-      @scala.inline
-      def setReportDefinition(value: ReportDefinition): Self = StObject.set(x, "ReportDefinition", value.asInstanceOf[js.Any])
+      inline def setReportDefinition(value: ReportDefinition): Self = StObject.set(x, "ReportDefinition", value.asInstanceOf[js.Any])
     }
   }
   
@@ -378,8 +346,7 @@ object curMod {
   }
   object ReportDefinition {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AdditionalSchemaElements: SchemaElementList,
       Compression: CompressionFormat,
       Format: ReportFormat,
@@ -393,56 +360,39 @@ object curMod {
       __obj.asInstanceOf[ReportDefinition]
     }
     
-    @scala.inline
-    implicit class ReportDefinitionMutableBuilder[Self <: ReportDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: ReportDefinition](x: Self) {
       
-      @scala.inline
-      def setAdditionalArtifacts(value: AdditionalArtifactList): Self = StObject.set(x, "AdditionalArtifacts", value.asInstanceOf[js.Any])
+      inline def setAdditionalArtifacts(value: AdditionalArtifactList): Self = StObject.set(x, "AdditionalArtifacts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalArtifactsUndefined: Self = StObject.set(x, "AdditionalArtifacts", js.undefined)
+      inline def setAdditionalArtifactsUndefined: Self = StObject.set(x, "AdditionalArtifacts", js.undefined)
       
-      @scala.inline
-      def setAdditionalArtifactsVarargs(value: AdditionalArtifact*): Self = StObject.set(x, "AdditionalArtifacts", js.Array(value :_*))
+      inline def setAdditionalArtifactsVarargs(value: AdditionalArtifact*): Self = StObject.set(x, "AdditionalArtifacts", js.Array(value :_*))
       
-      @scala.inline
-      def setAdditionalSchemaElements(value: SchemaElementList): Self = StObject.set(x, "AdditionalSchemaElements", value.asInstanceOf[js.Any])
+      inline def setAdditionalSchemaElements(value: SchemaElementList): Self = StObject.set(x, "AdditionalSchemaElements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalSchemaElementsVarargs(value: SchemaElement*): Self = StObject.set(x, "AdditionalSchemaElements", js.Array(value :_*))
+      inline def setAdditionalSchemaElementsVarargs(value: SchemaElement*): Self = StObject.set(x, "AdditionalSchemaElements", js.Array(value :_*))
       
-      @scala.inline
-      def setCompression(value: CompressionFormat): Self = StObject.set(x, "Compression", value.asInstanceOf[js.Any])
+      inline def setCompression(value: CompressionFormat): Self = StObject.set(x, "Compression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormat(value: ReportFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: ReportFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefreshClosedReports(value: RefreshClosedReports): Self = StObject.set(x, "RefreshClosedReports", value.asInstanceOf[js.Any])
+      inline def setRefreshClosedReports(value: RefreshClosedReports): Self = StObject.set(x, "RefreshClosedReports", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefreshClosedReportsUndefined: Self = StObject.set(x, "RefreshClosedReports", js.undefined)
+      inline def setRefreshClosedReportsUndefined: Self = StObject.set(x, "RefreshClosedReports", js.undefined)
       
-      @scala.inline
-      def setReportName(value: ReportName): Self = StObject.set(x, "ReportName", value.asInstanceOf[js.Any])
+      inline def setReportName(value: ReportName): Self = StObject.set(x, "ReportName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportVersioning(value: ReportVersioning): Self = StObject.set(x, "ReportVersioning", value.asInstanceOf[js.Any])
+      inline def setReportVersioning(value: ReportVersioning): Self = StObject.set(x, "ReportVersioning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportVersioningUndefined: Self = StObject.set(x, "ReportVersioning", js.undefined)
+      inline def setReportVersioningUndefined: Self = StObject.set(x, "ReportVersioning", js.undefined)
       
-      @scala.inline
-      def setS3Bucket(value: S3Bucket): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
+      inline def setS3Bucket(value: S3Bucket): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3Prefix(value: S3Prefix): Self = StObject.set(x, "S3Prefix", value.asInstanceOf[js.Any])
+      inline def setS3Prefix(value: S3Prefix): Self = StObject.set(x, "S3Prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3Region(value: AWSRegion): Self = StObject.set(x, "S3Region", value.asInstanceOf[js.Any])
+      inline def setS3Region(value: AWSRegion): Self = StObject.set(x, "S3Region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeUnit(value: TimeUnit): Self = StObject.set(x, "TimeUnit", value.asInstanceOf[js.Any])
+      inline def setTimeUnit(value: TimeUnit): Self = StObject.set(x, "TimeUnit", value.asInstanceOf[js.Any])
     }
   }
   

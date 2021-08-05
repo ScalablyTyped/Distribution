@@ -16,8 +16,7 @@ trait ReadonlyPromiseSetPersona extends StObject {
 }
 object ReadonlyPromiseSetPersona {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `catch`: () => js.Promise[SetPersonalizationStrategyResponse | js.Any],
     `finally`: () => js.Promise[SetPersonalizationStrategyResponse],
     `then`: () => js.Promise[js.Any | js.Any]
@@ -29,16 +28,12 @@ object ReadonlyPromiseSetPersona {
     __obj.asInstanceOf[ReadonlyPromiseSetPersona]
   }
   
-  @scala.inline
-  implicit class ReadonlyPromiseSetPersonaMutableBuilder[Self <: ReadonlyPromiseSetPersona] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyPromiseSetPersona](x: Self) {
     
-    @scala.inline
-    def setCatch(value: () => js.Promise[SetPersonalizationStrategyResponse | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
+    inline def setCatch(value: () => js.Promise[SetPersonalizationStrategyResponse | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFinally(value: () => js.Promise[SetPersonalizationStrategyResponse]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
+    inline def setFinally(value: () => js.Promise[SetPersonalizationStrategyResponse]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
+    inline def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
   }
 }

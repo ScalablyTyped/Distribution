@@ -12,14 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TestOptions[P /* <: Record[String, js.Any] */, C] extends StObject
 object TestOptions {
   
-  @scala.inline
-  def ExclusiveTestOptions[P /* <: Record[String, js.Any] */, C](name: String, test: TestFunction[js.Any, C]): typings.yup.mod.ExclusiveTestOptions[P, C] = {
+  inline def ExclusiveTestOptions[P /* <: Record[String, js.Any] */, C](name: String, test: TestFunction[js.Any, C]): typings.yup.mod.ExclusiveTestOptions[P, C] = {
     val __obj = js.Dynamic.literal(exclusive = true, name = name.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.yup.mod.ExclusiveTestOptions[P, C]]
   }
   
-  @scala.inline
-  def NonExclusiveTestOptions[P /* <: Record[String, js.Any] */, C](test: TestFunction[js.Any, C]): typings.yup.mod.NonExclusiveTestOptions[P, C] = {
+  inline def NonExclusiveTestOptions[P /* <: Record[String, js.Any] */, C](test: TestFunction[js.Any, C]): typings.yup.mod.NonExclusiveTestOptions[P, C] = {
     val __obj = js.Dynamic.literal(test = test.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.yup.mod.NonExclusiveTestOptions[P, C]]
   }

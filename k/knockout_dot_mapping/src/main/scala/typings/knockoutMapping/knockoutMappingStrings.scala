@@ -8,11 +8,9 @@ object knockoutMappingStrings {
   
   @js.native
   sealed trait KnockoutMappingSpecificOptions extends StObject
-  @scala.inline
-  def KnockoutMappingSpecificOptions: KnockoutMappingSpecificOptions = "KnockoutMappingSpecificOptions".asInstanceOf[KnockoutMappingSpecificOptions]
+  inline def KnockoutMappingSpecificOptions: KnockoutMappingSpecificOptions = "KnockoutMappingSpecificOptions".asInstanceOf[KnockoutMappingSpecificOptions]
   
   @js.native
   sealed trait KnockoutObservableType extends StObject
-  @scala.inline
-  def KnockoutObservableType: KnockoutObservableType = "KnockoutObservableType".asInstanceOf[KnockoutObservableType]
+  inline def KnockoutObservableType: KnockoutObservableType = "KnockoutObservableType".asInstanceOf[KnockoutObservableType]
 }

@@ -13,16 +13,13 @@ trait GetInfrastructureConfigurationRequest extends StObject {
 }
 object GetInfrastructureConfigurationRequest {
   
-  @scala.inline
-  def apply(infrastructureConfigurationArn: InfrastructureConfigurationArn): GetInfrastructureConfigurationRequest = {
+  inline def apply(infrastructureConfigurationArn: InfrastructureConfigurationArn): GetInfrastructureConfigurationRequest = {
     val __obj = js.Dynamic.literal(infrastructureConfigurationArn = infrastructureConfigurationArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetInfrastructureConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class GetInfrastructureConfigurationRequestMutableBuilder[Self <: GetInfrastructureConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetInfrastructureConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setInfrastructureConfigurationArn(value: InfrastructureConfigurationArn): Self = StObject.set(x, "infrastructureConfigurationArn", value.asInstanceOf[js.Any])
+    inline def setInfrastructureConfigurationArn(value: InfrastructureConfigurationArn): Self = StObject.set(x, "infrastructureConfigurationArn", value.asInstanceOf[js.Any])
   }
 }

@@ -23,28 +23,21 @@ trait MaxCountRule extends StObject {
 }
 object MaxCountRule {
   
-  @scala.inline
-  def apply(Enabled: BoxedBoolean): MaxCountRule = {
+  inline def apply(Enabled: BoxedBoolean): MaxCountRule = {
     val __obj = js.Dynamic.literal(Enabled = Enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaxCountRule]
   }
   
-  @scala.inline
-  implicit class MaxCountRuleMutableBuilder[Self <: MaxCountRule] (val x: Self) extends AnyVal {
+  extension [Self <: MaxCountRule](x: Self) {
     
-    @scala.inline
-    def setDeleteSourceFromS3(value: BoxedBoolean): Self = StObject.set(x, "DeleteSourceFromS3", value.asInstanceOf[js.Any])
+    inline def setDeleteSourceFromS3(value: BoxedBoolean): Self = StObject.set(x, "DeleteSourceFromS3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteSourceFromS3Undefined: Self = StObject.set(x, "DeleteSourceFromS3", js.undefined)
+    inline def setDeleteSourceFromS3Undefined: Self = StObject.set(x, "DeleteSourceFromS3", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: BoxedBoolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: BoxedBoolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxCount(value: BoxedInt): Self = StObject.set(x, "MaxCount", value.asInstanceOf[js.Any])
+    inline def setMaxCount(value: BoxedInt): Self = StObject.set(x, "MaxCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxCountUndefined: Self = StObject.set(x, "MaxCount", js.undefined)
+    inline def setMaxCountUndefined: Self = StObject.set(x, "MaxCount", js.undefined)
   }
 }

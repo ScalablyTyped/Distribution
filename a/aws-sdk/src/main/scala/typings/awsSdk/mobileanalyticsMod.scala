@@ -32,20 +32,16 @@ object mobileanalyticsMod {
   }
   object ClientApiVersions {
     
-    @scala.inline
-    def apply(): ClientApiVersions = {
+    inline def apply(): ClientApiVersions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientApiVersions]
     }
     
-    @scala.inline
-    implicit class ClientApiVersionsMutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
+    extension [Self <: ClientApiVersions](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     }
   }
   
@@ -90,44 +86,32 @@ object mobileanalyticsMod {
   }
   object Event {
     
-    @scala.inline
-    def apply(eventType: String50Chars, timestamp: ISO8601Timestamp): Event = {
+    inline def apply(eventType: String50Chars, timestamp: ISO8601Timestamp): Event = {
       val __obj = js.Dynamic.literal(eventType = eventType.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[Event]
     }
     
-    @scala.inline
-    implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
+    extension [Self <: Event](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: MapOfStringToString): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: MapOfStringToString): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setEventType(value: String50Chars): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
+      inline def setEventType(value: String50Chars): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetrics(value: MapOfStringToNumber): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+      inline def setMetrics(value: MapOfStringToNumber): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
+      inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
       
-      @scala.inline
-      def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+      inline def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
+      inline def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
       
-      @scala.inline
-      def setTimestamp(value: ISO8601Timestamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: ISO8601Timestamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String10Chars): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String10Chars): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -178,29 +162,22 @@ object mobileanalyticsMod {
   }
   object PutEventsInput {
     
-    @scala.inline
-    def apply(clientContext: String, events: EventListDefinition): PutEventsInput = {
+    inline def apply(clientContext: String, events: EventListDefinition): PutEventsInput = {
       val __obj = js.Dynamic.literal(clientContext = clientContext.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any])
       __obj.asInstanceOf[PutEventsInput]
     }
     
-    @scala.inline
-    implicit class PutEventsInputMutableBuilder[Self <: PutEventsInput] (val x: Self) extends AnyVal {
+    extension [Self <: PutEventsInput](x: Self) {
       
-      @scala.inline
-      def setClientContext(value: String): Self = StObject.set(x, "clientContext", value.asInstanceOf[js.Any])
+      inline def setClientContext(value: String): Self = StObject.set(x, "clientContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientContextEncoding(value: String): Self = StObject.set(x, "clientContextEncoding", value.asInstanceOf[js.Any])
+      inline def setClientContextEncoding(value: String): Self = StObject.set(x, "clientContextEncoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientContextEncodingUndefined: Self = StObject.set(x, "clientContextEncoding", js.undefined)
+      inline def setClientContextEncodingUndefined: Self = StObject.set(x, "clientContextEncoding", js.undefined)
       
-      @scala.inline
-      def setEvents(value: EventListDefinition): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: EventListDefinition): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsVarargs(value: Event*): Self = StObject.set(x, "events", js.Array(value :_*))
+      inline def setEventsVarargs(value: Event*): Self = StObject.set(x, "events", js.Array(value :_*))
     }
   }
   
@@ -228,38 +205,28 @@ object mobileanalyticsMod {
   }
   object Session {
     
-    @scala.inline
-    def apply(): Session = {
+    inline def apply(): Session = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Session]
     }
     
-    @scala.inline
-    implicit class SessionMutableBuilder[Self <: Session] (val x: Self) extends AnyVal {
+    extension [Self <: Session](x: Self) {
       
-      @scala.inline
-      def setDuration(value: Long): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Long): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setId(value: String50Chars): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String50Chars): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setStartTimestamp(value: ISO8601Timestamp): Self = StObject.set(x, "startTimestamp", value.asInstanceOf[js.Any])
+      inline def setStartTimestamp(value: ISO8601Timestamp): Self = StObject.set(x, "startTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTimestampUndefined: Self = StObject.set(x, "startTimestamp", js.undefined)
+      inline def setStartTimestampUndefined: Self = StObject.set(x, "startTimestamp", js.undefined)
       
-      @scala.inline
-      def setStopTimestamp(value: ISO8601Timestamp): Self = StObject.set(x, "stopTimestamp", value.asInstanceOf[js.Any])
+      inline def setStopTimestamp(value: ISO8601Timestamp): Self = StObject.set(x, "stopTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStopTimestampUndefined: Self = StObject.set(x, "stopTimestamp", js.undefined)
+      inline def setStopTimestampUndefined: Self = StObject.set(x, "stopTimestamp", js.undefined)
     }
   }
   

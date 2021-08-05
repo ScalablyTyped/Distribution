@@ -50,21 +50,16 @@ object organizationsPolicyAttachmentMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): PolicyAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[PolicyAttachment]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): PolicyAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PolicyAttachment]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: PolicyAttachmentState): PolicyAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PolicyAttachment]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: PolicyAttachmentState, opts: CustomResourceOptions): PolicyAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PolicyAttachment]
+    inline def get(name: String, id: Input[ID]): PolicyAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[PolicyAttachment]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): PolicyAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PolicyAttachment]
+    inline def get(name: String, id: Input[ID], state: PolicyAttachmentState): PolicyAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PolicyAttachment]
+    inline def get(name: String, id: Input[ID], state: PolicyAttachmentState, opts: CustomResourceOptions): PolicyAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PolicyAttachment]
     
     /**
       * Returns true if the given object is an instance of PolicyAttachment.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/organizations/policyAttachment.PolicyAttachment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/organizations/policyAttachment.PolicyAttachment */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/organizations/policyAttachment.PolicyAttachment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/organizations/policyAttachment.PolicyAttachment */ Boolean]
   }
   
   trait PolicyAttachmentArgs extends StObject {
@@ -81,20 +76,16 @@ object organizationsPolicyAttachmentMod {
   }
   object PolicyAttachmentArgs {
     
-    @scala.inline
-    def apply(policyId: Input[String], targetId: Input[String]): PolicyAttachmentArgs = {
+    inline def apply(policyId: Input[String], targetId: Input[String]): PolicyAttachmentArgs = {
       val __obj = js.Dynamic.literal(policyId = policyId.asInstanceOf[js.Any], targetId = targetId.asInstanceOf[js.Any])
       __obj.asInstanceOf[PolicyAttachmentArgs]
     }
     
-    @scala.inline
-    implicit class PolicyAttachmentArgsMutableBuilder[Self <: PolicyAttachmentArgs] (val x: Self) extends AnyVal {
+    extension [Self <: PolicyAttachmentArgs](x: Self) {
       
-      @scala.inline
-      def setPolicyId(value: Input[String]): Self = StObject.set(x, "policyId", value.asInstanceOf[js.Any])
+      inline def setPolicyId(value: Input[String]): Self = StObject.set(x, "policyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetId(value: Input[String]): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
+      inline def setTargetId(value: Input[String]): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -112,26 +103,20 @@ object organizationsPolicyAttachmentMod {
   }
   object PolicyAttachmentState {
     
-    @scala.inline
-    def apply(): PolicyAttachmentState = {
+    inline def apply(): PolicyAttachmentState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PolicyAttachmentState]
     }
     
-    @scala.inline
-    implicit class PolicyAttachmentStateMutableBuilder[Self <: PolicyAttachmentState] (val x: Self) extends AnyVal {
+    extension [Self <: PolicyAttachmentState](x: Self) {
       
-      @scala.inline
-      def setPolicyId(value: Input[String]): Self = StObject.set(x, "policyId", value.asInstanceOf[js.Any])
+      inline def setPolicyId(value: Input[String]): Self = StObject.set(x, "policyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyIdUndefined: Self = StObject.set(x, "policyId", js.undefined)
+      inline def setPolicyIdUndefined: Self = StObject.set(x, "policyId", js.undefined)
       
-      @scala.inline
-      def setTargetId(value: Input[String]): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
+      inline def setTargetId(value: Input[String]): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetIdUndefined: Self = StObject.set(x, "targetId", js.undefined)
+      inline def setTargetIdUndefined: Self = StObject.set(x, "targetId", js.undefined)
     }
   }
 }

@@ -23,28 +23,21 @@ trait UpdateChannelClassRequest extends StObject {
 }
 object UpdateChannelClassRequest {
   
-  @scala.inline
-  def apply(ChannelClass: ChannelClass, ChannelId: string): UpdateChannelClassRequest = {
+  inline def apply(ChannelClass: ChannelClass, ChannelId: string): UpdateChannelClassRequest = {
     val __obj = js.Dynamic.literal(ChannelClass = ChannelClass.asInstanceOf[js.Any], ChannelId = ChannelId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateChannelClassRequest]
   }
   
-  @scala.inline
-  implicit class UpdateChannelClassRequestMutableBuilder[Self <: UpdateChannelClassRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateChannelClassRequest](x: Self) {
     
-    @scala.inline
-    def setChannelClass(value: ChannelClass): Self = StObject.set(x, "ChannelClass", value.asInstanceOf[js.Any])
+    inline def setChannelClass(value: ChannelClass): Self = StObject.set(x, "ChannelClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelId(value: string): Self = StObject.set(x, "ChannelId", value.asInstanceOf[js.Any])
+    inline def setChannelId(value: string): Self = StObject.set(x, "ChannelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinations(value: listOfOutputDestination): Self = StObject.set(x, "Destinations", value.asInstanceOf[js.Any])
+    inline def setDestinations(value: listOfOutputDestination): Self = StObject.set(x, "Destinations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationsUndefined: Self = StObject.set(x, "Destinations", js.undefined)
+    inline def setDestinationsUndefined: Self = StObject.set(x, "Destinations", js.undefined)
     
-    @scala.inline
-    def setDestinationsVarargs(value: OutputDestination*): Self = StObject.set(x, "Destinations", js.Array(value :_*))
+    inline def setDestinationsVarargs(value: OutputDestination*): Self = StObject.set(x, "Destinations", js.Array(value :_*))
   }
 }

@@ -15,6 +15,5 @@ object global {
   @JSGlobal("WL")
   @js.native
   def WL: API = js.native
-  @scala.inline
-  def WL_=(x: API): Unit = js.Dynamic.global.updateDynamic("WL")(x.asInstanceOf[js.Any])
+  inline def WL_=(x: API): Unit = js.Dynamic.global.updateDynamic("WL")(x.asInstanceOf[js.Any])
 }

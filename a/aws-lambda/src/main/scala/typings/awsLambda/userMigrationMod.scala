@@ -23,8 +23,7 @@ object userMigrationMod {
   }
   object BaseUserMigrationTriggerEvent {
     
-    @scala.inline
-    def apply[T /* <: String */](
+    inline def apply[T /* <: String */](
       callerContext: AwsSdkVersion,
       region: String,
       request: Password,
@@ -38,14 +37,11 @@ object userMigrationMod {
       __obj.asInstanceOf[BaseUserMigrationTriggerEvent[T]]
     }
     
-    @scala.inline
-    implicit class BaseUserMigrationTriggerEventMutableBuilder[Self <: BaseUserMigrationTriggerEvent[?], T /* <: String */] (val x: Self & BaseUserMigrationTriggerEvent[T]) extends AnyVal {
+    extension [Self <: BaseUserMigrationTriggerEvent[?], T /* <: String */](x: Self & BaseUserMigrationTriggerEvent[T]) {
       
-      @scala.inline
-      def setRequest(value: Password): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: Password): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse(value: DesiredDeliveryMediums): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: DesiredDeliveryMediums): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
   }
   
@@ -69,25 +65,18 @@ object userMigrationMod {
   trait UserStatus extends StObject
   object UserStatus {
     
-    @scala.inline
-    def ARCHIVED: typings.awsLambda.awsLambdaStrings.ARCHIVED = "ARCHIVED".asInstanceOf[typings.awsLambda.awsLambdaStrings.ARCHIVED]
+    inline def ARCHIVED: typings.awsLambda.awsLambdaStrings.ARCHIVED = "ARCHIVED".asInstanceOf[typings.awsLambda.awsLambdaStrings.ARCHIVED]
     
-    @scala.inline
-    def COMPROMISED: typings.awsLambda.awsLambdaStrings.COMPROMISED = "COMPROMISED".asInstanceOf[typings.awsLambda.awsLambdaStrings.COMPROMISED]
+    inline def COMPROMISED: typings.awsLambda.awsLambdaStrings.COMPROMISED = "COMPROMISED".asInstanceOf[typings.awsLambda.awsLambdaStrings.COMPROMISED]
     
-    @scala.inline
-    def CONFIRMED: typings.awsLambda.awsLambdaStrings.CONFIRMED = "CONFIRMED".asInstanceOf[typings.awsLambda.awsLambdaStrings.CONFIRMED]
+    inline def CONFIRMED: typings.awsLambda.awsLambdaStrings.CONFIRMED = "CONFIRMED".asInstanceOf[typings.awsLambda.awsLambdaStrings.CONFIRMED]
     
-    @scala.inline
-    def FORCE_CHANGE_PASSWORD: typings.awsLambda.awsLambdaStrings.FORCE_CHANGE_PASSWORD = "FORCE_CHANGE_PASSWORD".asInstanceOf[typings.awsLambda.awsLambdaStrings.FORCE_CHANGE_PASSWORD]
+    inline def FORCE_CHANGE_PASSWORD: typings.awsLambda.awsLambdaStrings.FORCE_CHANGE_PASSWORD = "FORCE_CHANGE_PASSWORD".asInstanceOf[typings.awsLambda.awsLambdaStrings.FORCE_CHANGE_PASSWORD]
     
-    @scala.inline
-    def RESET_REQUIRED: typings.awsLambda.awsLambdaStrings.RESET_REQUIRED = "RESET_REQUIRED".asInstanceOf[typings.awsLambda.awsLambdaStrings.RESET_REQUIRED]
+    inline def RESET_REQUIRED: typings.awsLambda.awsLambdaStrings.RESET_REQUIRED = "RESET_REQUIRED".asInstanceOf[typings.awsLambda.awsLambdaStrings.RESET_REQUIRED]
     
-    @scala.inline
-    def UNCONFIRMED: typings.awsLambda.awsLambdaStrings.UNCONFIRMED = "UNCONFIRMED".asInstanceOf[typings.awsLambda.awsLambdaStrings.UNCONFIRMED]
+    inline def UNCONFIRMED: typings.awsLambda.awsLambdaStrings.UNCONFIRMED = "UNCONFIRMED".asInstanceOf[typings.awsLambda.awsLambdaStrings.UNCONFIRMED]
     
-    @scala.inline
-    def UNKNOWN: typings.awsLambda.awsLambdaStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.awsLambda.awsLambdaStrings.UNKNOWN]
+    inline def UNKNOWN: typings.awsLambda.awsLambdaStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.awsLambda.awsLambdaStrings.UNKNOWN]
   }
 }

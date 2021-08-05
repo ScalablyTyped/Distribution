@@ -12,19 +12,15 @@ trait Closest extends StObject {
 }
 object Closest {
   
-  @scala.inline
-  def apply(mdist: Double, mpos: Double): Closest = {
+  inline def apply(mdist: Double, mpos: Double): Closest = {
     val __obj = js.Dynamic.literal(mdist = mdist.asInstanceOf[js.Any], mpos = mpos.asInstanceOf[js.Any])
     __obj.asInstanceOf[Closest]
   }
   
-  @scala.inline
-  implicit class ClosestMutableBuilder[Self <: Closest] (val x: Self) extends AnyVal {
+  extension [Self <: Closest](x: Self) {
     
-    @scala.inline
-    def setMdist(value: Double): Self = StObject.set(x, "mdist", value.asInstanceOf[js.Any])
+    inline def setMdist(value: Double): Self = StObject.set(x, "mdist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMpos(value: Double): Self = StObject.set(x, "mpos", value.asInstanceOf[js.Any])
+    inline def setMpos(value: Double): Self = StObject.set(x, "mpos", value.asInstanceOf[js.Any])
   }
 }

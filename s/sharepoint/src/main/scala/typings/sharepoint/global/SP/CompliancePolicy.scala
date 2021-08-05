@@ -18,20 +18,16 @@ object CompliancePolicy {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def create(context: typings.sharepoint.SP.ClientRuntimeContext, containerId: js.Any): typings.sharepoint.SP.CompliancePolicy.SPContainerId = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(context.asInstanceOf[js.Any], containerId.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.CompliancePolicy.SPContainerId]
+    inline def create(context: typings.sharepoint.SP.ClientRuntimeContext, containerId: js.Any): typings.sharepoint.SP.CompliancePolicy.SPContainerId = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(context.asInstanceOf[js.Any], containerId.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.CompliancePolicy.SPContainerId]
     
     /* static member */
-    @scala.inline
-    def createFromList(context: typings.sharepoint.SP.ClientRuntimeContext, list: typings.sharepoint.SP.List[js.Any]): typings.sharepoint.SP.CompliancePolicy.SPContainerId = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromList")(context.asInstanceOf[js.Any], list.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.CompliancePolicy.SPContainerId]
+    inline def createFromList(context: typings.sharepoint.SP.ClientRuntimeContext, list: typings.sharepoint.SP.List[js.Any]): typings.sharepoint.SP.CompliancePolicy.SPContainerId = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromList")(context.asInstanceOf[js.Any], list.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.CompliancePolicy.SPContainerId]
     
     /* static member */
-    @scala.inline
-    def createFromSite(context: typings.sharepoint.SP.ClientRuntimeContext, site: typings.sharepoint.SP.Site): typings.sharepoint.SP.CompliancePolicy.SPContainerId = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromSite")(context.asInstanceOf[js.Any], site.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.CompliancePolicy.SPContainerId]
+    inline def createFromSite(context: typings.sharepoint.SP.ClientRuntimeContext, site: typings.sharepoint.SP.Site): typings.sharepoint.SP.CompliancePolicy.SPContainerId = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromSite")(context.asInstanceOf[js.Any], site.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.CompliancePolicy.SPContainerId]
     
     /* static member */
-    @scala.inline
-    def createFromWeb(context: typings.sharepoint.SP.ClientRuntimeContext, web: typings.sharepoint.SP.Web): typings.sharepoint.SP.CompliancePolicy.SPContainerId = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromWeb")(context.asInstanceOf[js.Any], web.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.CompliancePolicy.SPContainerId]
+    inline def createFromWeb(context: typings.sharepoint.SP.ClientRuntimeContext, web: typings.sharepoint.SP.Web): typings.sharepoint.SP.CompliancePolicy.SPContainerId = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromWeb")(context.asInstanceOf[js.Any], web.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.CompliancePolicy.SPContainerId]
   }
   
   @JSGlobal("SP.CompliancePolicy.SPContainerType")
@@ -86,20 +82,16 @@ object CompliancePolicy {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def createPolicyAssociation(context: typings.sharepoint.SP.ClientRuntimeContext): typings.sharepoint.SP.CompliancePolicy.SPPolicyAssociation = ^.asInstanceOf[js.Dynamic].applyDynamic("createPolicyAssociation")(context.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.CompliancePolicy.SPPolicyAssociation]
+    inline def createPolicyAssociation(context: typings.sharepoint.SP.ClientRuntimeContext): typings.sharepoint.SP.CompliancePolicy.SPPolicyAssociation = ^.asInstanceOf[js.Dynamic].applyDynamic("createPolicyAssociation")(context.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.CompliancePolicy.SPPolicyAssociation]
     
     /* static member */
-    @scala.inline
-    def createPolicyBinding(context: typings.sharepoint.SP.ClientRuntimeContext): typings.sharepoint.SP.CompliancePolicy.SPPolicyBinding = ^.asInstanceOf[js.Dynamic].applyDynamic("createPolicyBinding")(context.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.CompliancePolicy.SPPolicyBinding]
+    inline def createPolicyBinding(context: typings.sharepoint.SP.ClientRuntimeContext): typings.sharepoint.SP.CompliancePolicy.SPPolicyBinding = ^.asInstanceOf[js.Dynamic].applyDynamic("createPolicyBinding")(context.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.CompliancePolicy.SPPolicyBinding]
     
     /* static member */
-    @scala.inline
-    def createPolicyDefinition(context: typings.sharepoint.SP.ClientRuntimeContext): typings.sharepoint.SP.CompliancePolicy.SPPolicyDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("createPolicyDefinition")(context.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.CompliancePolicy.SPPolicyDefinition]
+    inline def createPolicyDefinition(context: typings.sharepoint.SP.ClientRuntimeContext): typings.sharepoint.SP.CompliancePolicy.SPPolicyDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("createPolicyDefinition")(context.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.CompliancePolicy.SPPolicyDefinition]
     
     /* static member */
-    @scala.inline
-    def createPolicyRule(context: typings.sharepoint.SP.ClientRuntimeContext): typings.sharepoint.SP.CompliancePolicy.SPPolicyRule = ^.asInstanceOf[js.Dynamic].applyDynamic("createPolicyRule")(context.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.CompliancePolicy.SPPolicyRule]
+    inline def createPolicyRule(context: typings.sharepoint.SP.ClientRuntimeContext): typings.sharepoint.SP.CompliancePolicy.SPPolicyRule = ^.asInstanceOf[js.Dynamic].applyDynamic("createPolicyRule")(context.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.CompliancePolicy.SPPolicyRule]
   }
   
   @JSGlobal("SP.CompliancePolicy.SPPolicyStoreProxy")

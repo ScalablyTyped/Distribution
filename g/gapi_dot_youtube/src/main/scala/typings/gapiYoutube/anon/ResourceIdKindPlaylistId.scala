@@ -13,16 +13,13 @@ trait ResourceIdKindPlaylistId extends StObject {
 }
 object ResourceIdKindPlaylistId {
   
-  @scala.inline
-  def apply(resourceId: KindPlaylistId): ResourceIdKindPlaylistId = {
+  inline def apply(resourceId: KindPlaylistId): ResourceIdKindPlaylistId = {
     val __obj = js.Dynamic.literal(resourceId = resourceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceIdKindPlaylistId]
   }
   
-  @scala.inline
-  implicit class ResourceIdKindPlaylistIdMutableBuilder[Self <: ResourceIdKindPlaylistId] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceIdKindPlaylistId](x: Self) {
     
-    @scala.inline
-    def setResourceId(value: KindPlaylistId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: KindPlaylistId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
   }
 }

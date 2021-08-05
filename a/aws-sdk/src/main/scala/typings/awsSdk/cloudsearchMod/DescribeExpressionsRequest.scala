@@ -23,31 +23,23 @@ trait DescribeExpressionsRequest extends StObject {
 }
 object DescribeExpressionsRequest {
   
-  @scala.inline
-  def apply(DomainName: DomainName): DescribeExpressionsRequest = {
+  inline def apply(DomainName: DomainName): DescribeExpressionsRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeExpressionsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeExpressionsRequestMutableBuilder[Self <: DescribeExpressionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeExpressionsRequest](x: Self) {
     
-    @scala.inline
-    def setDeployed(value: Boolean): Self = StObject.set(x, "Deployed", value.asInstanceOf[js.Any])
+    inline def setDeployed(value: Boolean): Self = StObject.set(x, "Deployed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeployedUndefined: Self = StObject.set(x, "Deployed", js.undefined)
+    inline def setDeployedUndefined: Self = StObject.set(x, "Deployed", js.undefined)
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionNames(value: StandardNameList): Self = StObject.set(x, "ExpressionNames", value.asInstanceOf[js.Any])
+    inline def setExpressionNames(value: StandardNameList): Self = StObject.set(x, "ExpressionNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionNamesUndefined: Self = StObject.set(x, "ExpressionNames", js.undefined)
+    inline def setExpressionNamesUndefined: Self = StObject.set(x, "ExpressionNames", js.undefined)
     
-    @scala.inline
-    def setExpressionNamesVarargs(value: StandardName*): Self = StObject.set(x, "ExpressionNames", js.Array(value :_*))
+    inline def setExpressionNamesVarargs(value: StandardName*): Self = StObject.set(x, "ExpressionNames", js.Array(value :_*))
   }
 }

@@ -42,49 +42,35 @@ trait SchemaDomainAlias extends StObject {
 }
 object SchemaDomainAlias {
   
-  @scala.inline
-  def apply(): SchemaDomainAlias = {
+  inline def apply(): SchemaDomainAlias = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDomainAlias]
   }
   
-  @scala.inline
-  implicit class SchemaDomainAliasMutableBuilder[Self <: SchemaDomainAlias] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDomainAlias](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
-    @scala.inline
-    def setDomainAliasName(value: String): Self = StObject.set(x, "domainAliasName", value.asInstanceOf[js.Any])
+    inline def setDomainAliasName(value: String): Self = StObject.set(x, "domainAliasName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainAliasNameUndefined: Self = StObject.set(x, "domainAliasName", js.undefined)
+    inline def setDomainAliasNameUndefined: Self = StObject.set(x, "domainAliasName", js.undefined)
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setParentDomainName(value: String): Self = StObject.set(x, "parentDomainName", value.asInstanceOf[js.Any])
+    inline def setParentDomainName(value: String): Self = StObject.set(x, "parentDomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentDomainNameUndefined: Self = StObject.set(x, "parentDomainName", js.undefined)
+    inline def setParentDomainNameUndefined: Self = StObject.set(x, "parentDomainName", js.undefined)
     
-    @scala.inline
-    def setVerified(value: Boolean): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
+    inline def setVerified(value: Boolean): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerifiedUndefined: Self = StObject.set(x, "verified", js.undefined)
+    inline def setVerifiedUndefined: Self = StObject.set(x, "verified", js.undefined)
   }
 }

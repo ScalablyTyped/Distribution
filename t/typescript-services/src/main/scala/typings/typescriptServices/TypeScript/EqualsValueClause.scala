@@ -12,8 +12,7 @@ trait EqualsValueClause
 }
 object EqualsValueClause {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -40,10 +39,8 @@ object EqualsValueClause {
     __obj.asInstanceOf[EqualsValueClause]
   }
   
-  @scala.inline
-  implicit class EqualsValueClauseMutableBuilder[Self <: EqualsValueClause] (val x: Self) extends AnyVal {
+  extension [Self <: EqualsValueClause](x: Self) {
     
-    @scala.inline
-    def setValue(value: AST): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: AST): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

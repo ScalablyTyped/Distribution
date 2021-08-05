@@ -21,7 +21,6 @@ object ListView {
     @JSImport("@ant-design/react-native", "ListView.contextTypes.antLocale")
     @js.native
     def antLocale: Requireable[js.Object] = js.native
-    @scala.inline
-    def antLocale_=(x: Requireable[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("antLocale")(x.asInstanceOf[js.Any])
+    inline def antLocale_=(x: Requireable[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("antLocale")(x.asInstanceOf[js.Any])
   }
 }

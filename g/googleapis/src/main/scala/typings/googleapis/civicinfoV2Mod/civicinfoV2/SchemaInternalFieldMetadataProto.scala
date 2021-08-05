@@ -12,25 +12,19 @@ trait SchemaInternalFieldMetadataProto extends StObject {
 }
 object SchemaInternalFieldMetadataProto {
   
-  @scala.inline
-  def apply(): SchemaInternalFieldMetadataProto = {
+  inline def apply(): SchemaInternalFieldMetadataProto = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInternalFieldMetadataProto]
   }
   
-  @scala.inline
-  implicit class SchemaInternalFieldMetadataProtoMutableBuilder[Self <: SchemaInternalFieldMetadataProto] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInternalFieldMetadataProto](x: Self) {
     
-    @scala.inline
-    def setIsAuto(value: Boolean): Self = StObject.set(x, "isAuto", value.asInstanceOf[js.Any])
+    inline def setIsAuto(value: Boolean): Self = StObject.set(x, "isAuto", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAutoUndefined: Self = StObject.set(x, "isAuto", js.undefined)
+    inline def setIsAutoUndefined: Self = StObject.set(x, "isAuto", js.undefined)
     
-    @scala.inline
-    def setSourceSummary(value: SchemaInternalSourceSummaryProto): Self = StObject.set(x, "sourceSummary", value.asInstanceOf[js.Any])
+    inline def setSourceSummary(value: SchemaInternalSourceSummaryProto): Self = StObject.set(x, "sourceSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceSummaryUndefined: Self = StObject.set(x, "sourceSummary", js.undefined)
+    inline def setSourceSummaryUndefined: Self = StObject.set(x, "sourceSummary", js.undefined)
   }
 }

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.WorkbookConnection")
 @js.native
-class WorkbookConnection protected ()
+/* private */ class WorkbookConnection ()
   extends StObject
      with typings.activexExcel.Excel.WorkbookConnection {
   
@@ -26,7 +26,7 @@ class WorkbookConnection protected ()
   /* CompleteClass */
   var Description: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.WorkbookConnection_typekey")
   var ExcelDotWorkbookConnection_typekey: typings.activexExcel.Excel.WorkbookConnection = js.native
   

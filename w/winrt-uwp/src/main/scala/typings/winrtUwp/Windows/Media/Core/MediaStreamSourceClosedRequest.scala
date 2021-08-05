@@ -12,16 +12,13 @@ trait MediaStreamSourceClosedRequest extends StObject {
 }
 object MediaStreamSourceClosedRequest {
   
-  @scala.inline
-  def apply(reason: MediaStreamSourceClosedReason): MediaStreamSourceClosedRequest = {
+  inline def apply(reason: MediaStreamSourceClosedReason): MediaStreamSourceClosedRequest = {
     val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaStreamSourceClosedRequest]
   }
   
-  @scala.inline
-  implicit class MediaStreamSourceClosedRequestMutableBuilder[Self <: MediaStreamSourceClosedRequest] (val x: Self) extends AnyVal {
+  extension [Self <: MediaStreamSourceClosedRequest](x: Self) {
     
-    @scala.inline
-    def setReason(value: MediaStreamSourceClosedReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: MediaStreamSourceClosedReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }
 }

@@ -16,23 +16,18 @@ object anon {
   }
   object Level {
     
-    @scala.inline
-    def apply(stream: DestinationStream | WritableStream): Level = {
+    inline def apply(stream: DestinationStream | WritableStream): Level = {
       val __obj = js.Dynamic.literal(stream = stream.asInstanceOf[js.Any])
       __obj.asInstanceOf[Level]
     }
     
-    @scala.inline
-    implicit class LevelMutableBuilder[Self <: Level] (val x: Self) extends AnyVal {
+    extension [Self <: Level](x: Self) {
       
-      @scala.inline
-      def setLevel(value: typings.pinoMultiStream.mod.Level): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: typings.pinoMultiStream.mod.Level): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      @scala.inline
-      def setStream(value: DestinationStream | WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: DestinationStream | WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     }
   }
 }

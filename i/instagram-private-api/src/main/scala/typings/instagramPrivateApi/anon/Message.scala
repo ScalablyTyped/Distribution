@@ -14,31 +14,23 @@ trait Message extends StObject {
 }
 object Message {
   
-  @scala.inline
-  def apply(): Message = {
+  inline def apply(): Message = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Message]
   }
   
-  @scala.inline
-  implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
+  extension [Self <: Message](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setPreviewHeight(value: Double | String): Self = StObject.set(x, "previewHeight", value.asInstanceOf[js.Any])
+    inline def setPreviewHeight(value: Double | String): Self = StObject.set(x, "previewHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviewHeightUndefined: Self = StObject.set(x, "previewHeight", js.undefined)
+    inline def setPreviewHeightUndefined: Self = StObject.set(x, "previewHeight", js.undefined)
     
-    @scala.inline
-    def setPreviewWidth(value: Double | String): Self = StObject.set(x, "previewWidth", value.asInstanceOf[js.Any])
+    inline def setPreviewWidth(value: Double | String): Self = StObject.set(x, "previewWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviewWidthUndefined: Self = StObject.set(x, "previewWidth", js.undefined)
+    inline def setPreviewWidthUndefined: Self = StObject.set(x, "previewWidth", js.undefined)
   }
 }

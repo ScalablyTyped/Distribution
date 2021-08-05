@@ -15,23 +15,18 @@ trait GetAction
 }
 object GetAction {
   
-  @scala.inline
-  def apply(`type`: GET): GetAction = {
+  inline def apply(`type`: GET): GetAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAction]
   }
   
-  @scala.inline
-  implicit class GetActionMutableBuilder[Self <: GetAction] (val x: Self) extends AnyVal {
+  extension [Self <: GetAction](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setType(value: GET): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: GET): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -11,19 +11,15 @@ trait Transformers extends StObject {
 }
 object Transformers {
   
-  @scala.inline
-  def apply(transformers: js.Array[OutputTransformer]): Transformers = {
+  inline def apply(transformers: js.Array[OutputTransformer]): Transformers = {
     val __obj = js.Dynamic.literal(transformers = transformers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Transformers]
   }
   
-  @scala.inline
-  implicit class TransformersMutableBuilder[Self <: Transformers] (val x: Self) extends AnyVal {
+  extension [Self <: Transformers](x: Self) {
     
-    @scala.inline
-    def setTransformers(value: js.Array[OutputTransformer]): Self = StObject.set(x, "transformers", value.asInstanceOf[js.Any])
+    inline def setTransformers(value: js.Array[OutputTransformer]): Self = StObject.set(x, "transformers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformersVarargs(value: OutputTransformer*): Self = StObject.set(x, "transformers", js.Array(value :_*))
+    inline def setTransformersVarargs(value: OutputTransformer*): Self = StObject.set(x, "transformers", js.Array(value :_*))
   }
 }

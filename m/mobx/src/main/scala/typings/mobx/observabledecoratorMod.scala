@@ -12,8 +12,7 @@ object observabledecoratorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createDecoratorForEnhancer(enhancer: IEnhancer[js.Any]): IObservableDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("createDecoratorForEnhancer")(enhancer.asInstanceOf[js.Any]).asInstanceOf[IObservableDecorator]
+  inline def createDecoratorForEnhancer(enhancer: IEnhancer[js.Any]): IObservableDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("createDecoratorForEnhancer")(enhancer.asInstanceOf[js.Any]).asInstanceOf[IObservableDecorator]
   
   @js.native
   trait IObservableDecorator extends StObject {

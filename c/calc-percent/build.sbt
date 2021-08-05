@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "calc-percent"
-version := "1.0-dt-20200812Z-084586"
+version := "1.0-dt-20200812Z-cd84de"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

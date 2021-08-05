@@ -51,7 +51,7 @@ object listMod {
     /**
       * Gets or sets a value indicating whether the prompt has been rendered the first time.
       */
-    var firstRender: Boolean = js.native
+    /* protected */ var firstRender: Boolean = js.native
     
     /**
       * Gets the current value of the prompt.
@@ -87,7 +87,7 @@ object listMod {
     /**
       * Gets or sets an object for paginating the content.
       */
-    var paginator: typings.inquirer.paginatorMod.^ = js.native
+    /* protected */ var paginator: typings.inquirer.paginatorMod.^ = js.native
     
     /**
       * Renders the prompt.
@@ -97,7 +97,7 @@ object listMod {
     /**
       * The index of the selected choice.
       */
-    var selected: Double = js.native
+    /* protected */ var selected: Double = js.native
   }
   
   /**

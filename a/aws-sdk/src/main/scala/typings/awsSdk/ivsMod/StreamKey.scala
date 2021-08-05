@@ -28,37 +28,27 @@ trait StreamKey extends StObject {
 }
 object StreamKey {
   
-  @scala.inline
-  def apply(): StreamKey = {
+  inline def apply(): StreamKey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StreamKey]
   }
   
-  @scala.inline
-  implicit class StreamKeyMutableBuilder[Self <: StreamKey] (val x: Self) extends AnyVal {
+  extension [Self <: StreamKey](x: Self) {
     
-    @scala.inline
-    def setArn(value: StreamKeyArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: StreamKeyArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setChannelArn(value: ChannelArn): Self = StObject.set(x, "channelArn", value.asInstanceOf[js.Any])
+    inline def setChannelArn(value: ChannelArn): Self = StObject.set(x, "channelArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelArnUndefined: Self = StObject.set(x, "channelArn", js.undefined)
+    inline def setChannelArnUndefined: Self = StObject.set(x, "channelArn", js.undefined)
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setValue(value: StreamKeyValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: StreamKeyValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

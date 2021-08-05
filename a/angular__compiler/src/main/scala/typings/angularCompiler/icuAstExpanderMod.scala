@@ -31,6 +31,5 @@ object icuAstExpanderMod {
     var nodes: js.Array[Node] = js.native
   }
   
-  @scala.inline
-  def expandNodes(nodes: js.Array[Node]): ExpansionResult = ^.asInstanceOf[js.Dynamic].applyDynamic("expandNodes")(nodes.asInstanceOf[js.Any]).asInstanceOf[ExpansionResult]
+  inline def expandNodes(nodes: js.Array[Node]): ExpansionResult = ^.asInstanceOf[js.Dynamic].applyDynamic("expandNodes")(nodes.asInstanceOf[js.Any]).asInstanceOf[ExpansionResult]
 }

@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PpSlideShowPointerType extends StObject
 object PpSlideShowPointerType {
   
-  @scala.inline
-  def ppSlideShowPointerAlwaysHidden: `3` = 3.asInstanceOf[`3`]
+  inline def ppSlideShowPointerAlwaysHidden: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def ppSlideShowPointerArrow: `1` = 1.asInstanceOf[`1`]
+  inline def ppSlideShowPointerArrow: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def ppSlideShowPointerAutoArrow: `4` = 4.asInstanceOf[`4`]
+  inline def ppSlideShowPointerAutoArrow: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def ppSlideShowPointerEraser: `5` = 5.asInstanceOf[`5`]
+  inline def ppSlideShowPointerEraser: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def ppSlideShowPointerNone: `0` = 0.asInstanceOf[`0`]
+  inline def ppSlideShowPointerNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def ppSlideShowPointerPen: `2` = 2.asInstanceOf[`2`]
+  inline def ppSlideShowPointerPen: `2` = 2.asInstanceOf[`2`]
 }

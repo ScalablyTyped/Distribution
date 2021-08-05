@@ -30,8 +30,7 @@ trait TextStyle
 }
 object TextStyle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     description: String,
     fontName: FontName,
     fontSize: Double,
@@ -52,34 +51,24 @@ object TextStyle {
     __obj.asInstanceOf[TextStyle]
   }
   
-  @scala.inline
-  implicit class TextStyleMutableBuilder[Self <: TextStyle] (val x: Self) extends AnyVal {
+  extension [Self <: TextStyle](x: Self) {
     
-    @scala.inline
-    def setFontName(value: FontName): Self = StObject.set(x, "fontName", value.asInstanceOf[js.Any])
+    inline def setFontName(value: FontName): Self = StObject.set(x, "fontName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLetterSpacing(value: LetterSpacing): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
+    inline def setLetterSpacing(value: LetterSpacing): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineHeight(value: LineHeight): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+    inline def setLineHeight(value: LineHeight): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParagraphIndent(value: Double): Self = StObject.set(x, "paragraphIndent", value.asInstanceOf[js.Any])
+    inline def setParagraphIndent(value: Double): Self = StObject.set(x, "paragraphIndent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParagraphSpacing(value: Double): Self = StObject.set(x, "paragraphSpacing", value.asInstanceOf[js.Any])
+    inline def setParagraphSpacing(value: Double): Self = StObject.set(x, "paragraphSpacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextCase(value: TextCase): Self = StObject.set(x, "textCase", value.asInstanceOf[js.Any])
+    inline def setTextCase(value: TextCase): Self = StObject.set(x, "textCase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextDecoration(value: TextDecoration): Self = StObject.set(x, "textDecoration", value.asInstanceOf[js.Any])
+    inline def setTextDecoration(value: TextDecoration): Self = StObject.set(x, "textDecoration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: TEXT): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TEXT): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

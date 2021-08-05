@@ -13,19 +13,15 @@ trait FlinkRunConfiguration extends StObject {
 }
 object FlinkRunConfiguration {
   
-  @scala.inline
-  def apply(): FlinkRunConfiguration = {
+  inline def apply(): FlinkRunConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FlinkRunConfiguration]
   }
   
-  @scala.inline
-  implicit class FlinkRunConfigurationMutableBuilder[Self <: FlinkRunConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: FlinkRunConfiguration](x: Self) {
     
-    @scala.inline
-    def setAllowNonRestoredState(value: BooleanObject): Self = StObject.set(x, "AllowNonRestoredState", value.asInstanceOf[js.Any])
+    inline def setAllowNonRestoredState(value: BooleanObject): Self = StObject.set(x, "AllowNonRestoredState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowNonRestoredStateUndefined: Self = StObject.set(x, "AllowNonRestoredState", js.undefined)
+    inline def setAllowNonRestoredStateUndefined: Self = StObject.set(x, "AllowNonRestoredState", js.undefined)
   }
 }

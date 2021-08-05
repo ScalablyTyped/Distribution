@@ -18,22 +18,17 @@ trait ValidateResourcePolicyRequest extends StObject {
 }
 object ValidateResourcePolicyRequest {
   
-  @scala.inline
-  def apply(ResourcePolicy: NonEmptyResourcePolicyType): ValidateResourcePolicyRequest = {
+  inline def apply(ResourcePolicy: NonEmptyResourcePolicyType): ValidateResourcePolicyRequest = {
     val __obj = js.Dynamic.literal(ResourcePolicy = ResourcePolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidateResourcePolicyRequest]
   }
   
-  @scala.inline
-  implicit class ValidateResourcePolicyRequestMutableBuilder[Self <: ValidateResourcePolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ValidateResourcePolicyRequest](x: Self) {
     
-    @scala.inline
-    def setResourcePolicy(value: NonEmptyResourcePolicyType): Self = StObject.set(x, "ResourcePolicy", value.asInstanceOf[js.Any])
+    inline def setResourcePolicy(value: NonEmptyResourcePolicyType): Self = StObject.set(x, "ResourcePolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretId(value: SecretIdType): Self = StObject.set(x, "SecretId", value.asInstanceOf[js.Any])
+    inline def setSecretId(value: SecretIdType): Self = StObject.set(x, "SecretId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretIdUndefined: Self = StObject.set(x, "SecretId", js.undefined)
+    inline def setSecretIdUndefined: Self = StObject.set(x, "SecretId", js.undefined)
   }
 }

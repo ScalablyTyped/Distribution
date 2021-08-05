@@ -67,16 +67,12 @@ object mod {
     def reRender(): Unit = js.native
   }
   
-  @scala.inline
-  def hook[P /* <: js.Object */](WrappedComponent: ComponentClass[WithTestHook[P], ComponentState]): ComponentClass[P, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("hook")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[P, ComponentState]]
+  inline def hook[P /* <: js.Object */](WrappedComponent: ComponentClass[WithTestHook[P], ComponentState]): ComponentClass[P, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("hook")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[P, ComponentState]]
   
-  @scala.inline
-  def useCavy(): TestHookGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("useCavy")().asInstanceOf[TestHookGenerator]
+  inline def useCavy(): TestHookGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("useCavy")().asInstanceOf[TestHookGenerator]
   
-  @scala.inline
-  def wrap[P /* <: js.Object */](WrappedComponent: js.Object): ComponentClass[P, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[P, ComponentState]]
-  @scala.inline
-  def wrap[P /* <: js.Object */](WrappedComponent: FunctionComponent[P]): ComponentClass[P, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[P, ComponentState]]
+  inline def wrap[P /* <: js.Object */](WrappedComponent: js.Object): ComponentClass[P, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[P, ComponentState]]
+  inline def wrap[P /* <: js.Object */](WrappedComponent: FunctionComponent[P]): ComponentClass[P, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[P, ComponentState]]
   
   type RefCallback = js.Function1[/* element */ ReactNode | Null, Unit]
   
@@ -103,26 +99,20 @@ object mod {
   }
   object TestReport {
     
-    @scala.inline
-    def apply(duration: Double, errorCount: Double, results: js.Array[TestResult]): TestReport = {
+    inline def apply(duration: Double, errorCount: Double, results: js.Array[TestResult]): TestReport = {
       val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], errorCount = errorCount.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any])
       __obj.asInstanceOf[TestReport]
     }
     
-    @scala.inline
-    implicit class TestReportMutableBuilder[Self <: TestReport] (val x: Self) extends AnyVal {
+    extension [Self <: TestReport](x: Self) {
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorCount(value: Double): Self = StObject.set(x, "errorCount", value.asInstanceOf[js.Any])
+      inline def setErrorCount(value: Double): Self = StObject.set(x, "errorCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResults(value: js.Array[TestResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      inline def setResults(value: js.Array[TestResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultsVarargs(value: TestResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+      inline def setResultsVarargs(value: TestResult*): Self = StObject.set(x, "results", js.Array(value :_*))
     }
   }
   
@@ -134,20 +124,16 @@ object mod {
   }
   object TestResult {
     
-    @scala.inline
-    def apply(message: String, passed: Boolean): TestResult = {
+    inline def apply(message: String, passed: Boolean): TestResult = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], passed = passed.asInstanceOf[js.Any])
       __obj.asInstanceOf[TestResult]
     }
     
-    @scala.inline
-    implicit class TestResultMutableBuilder[Self <: TestResult] (val x: Self) extends AnyVal {
+    extension [Self <: TestResult](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassed(value: Boolean): Self = StObject.set(x, "passed", value.asInstanceOf[js.Any])
+      inline def setPassed(value: Boolean): Self = StObject.set(x, "passed", value.asInstanceOf[js.Any])
     }
   }
   
@@ -170,53 +156,38 @@ object mod {
   }
   object TesterProps {
     
-    @scala.inline
-    def apply(specs: js.Array[js.Function1[/* spec */ TestScope, Unit]], store: TestHookStore): TesterProps = {
+    inline def apply(specs: js.Array[js.Function1[/* spec */ TestScope, Unit]], store: TestHookStore): TesterProps = {
       val __obj = js.Dynamic.literal(specs = specs.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any])
       __obj.asInstanceOf[TesterProps]
     }
     
-    @scala.inline
-    implicit class TesterPropsMutableBuilder[Self <: TesterProps] (val x: Self) extends AnyVal {
+    extension [Self <: TesterProps](x: Self) {
       
-      @scala.inline
-      def setClearAsyncStorage(value: Boolean): Self = StObject.set(x, "clearAsyncStorage", value.asInstanceOf[js.Any])
+      inline def setClearAsyncStorage(value: Boolean): Self = StObject.set(x, "clearAsyncStorage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearAsyncStorageUndefined: Self = StObject.set(x, "clearAsyncStorage", js.undefined)
+      inline def setClearAsyncStorageUndefined: Self = StObject.set(x, "clearAsyncStorage", js.undefined)
       
-      @scala.inline
-      def setReporter(value: /* report */ TestReport => Unit): Self = StObject.set(x, "reporter", js.Any.fromFunction1(value))
+      inline def setReporter(value: /* report */ TestReport => Unit): Self = StObject.set(x, "reporter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
+      inline def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
       
-      @scala.inline
-      def setSendReport(value: Boolean): Self = StObject.set(x, "sendReport", value.asInstanceOf[js.Any])
+      inline def setSendReport(value: Boolean): Self = StObject.set(x, "sendReport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSendReportUndefined: Self = StObject.set(x, "sendReport", js.undefined)
+      inline def setSendReportUndefined: Self = StObject.set(x, "sendReport", js.undefined)
       
-      @scala.inline
-      def setSpecs(value: js.Array[js.Function1[/* spec */ TestScope, Unit]]): Self = StObject.set(x, "specs", value.asInstanceOf[js.Any])
+      inline def setSpecs(value: js.Array[js.Function1[/* spec */ TestScope, Unit]]): Self = StObject.set(x, "specs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpecsVarargs(value: (js.Function1[/* spec */ TestScope, Unit])*): Self = StObject.set(x, "specs", js.Array(value :_*))
+      inline def setSpecsVarargs(value: (js.Function1[/* spec */ TestScope, Unit])*): Self = StObject.set(x, "specs", js.Array(value :_*))
       
-      @scala.inline
-      def setStartDelay(value: Double): Self = StObject.set(x, "startDelay", value.asInstanceOf[js.Any])
+      inline def setStartDelay(value: Double): Self = StObject.set(x, "startDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartDelayUndefined: Self = StObject.set(x, "startDelay", js.undefined)
+      inline def setStartDelayUndefined: Self = StObject.set(x, "startDelay", js.undefined)
       
-      @scala.inline
-      def setStore(value: TestHookStore): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      inline def setStore(value: TestHookStore): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWaitTime(value: Double): Self = StObject.set(x, "waitTime", value.asInstanceOf[js.Any])
+      inline def setWaitTime(value: Double): Self = StObject.set(x, "waitTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWaitTimeUndefined: Self = StObject.set(x, "waitTime", js.undefined)
+      inline def setWaitTimeUndefined: Self = StObject.set(x, "waitTime", js.undefined)
     }
   }
   

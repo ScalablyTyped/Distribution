@@ -36,43 +36,31 @@ trait SchemaDfpSettings extends StObject {
 }
 object SchemaDfpSettings {
   
-  @scala.inline
-  def apply(): SchemaDfpSettings = {
+  inline def apply(): SchemaDfpSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDfpSettings]
   }
   
-  @scala.inline
-  implicit class SchemaDfpSettingsMutableBuilder[Self <: SchemaDfpSettings] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDfpSettings](x: Self) {
     
-    @scala.inline
-    def setDfpNetworkCode(value: String): Self = StObject.set(x, "dfpNetworkCode", value.asInstanceOf[js.Any])
+    inline def setDfpNetworkCode(value: String): Self = StObject.set(x, "dfpNetworkCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDfpNetworkCodeUndefined: Self = StObject.set(x, "dfpNetworkCode", js.undefined)
+    inline def setDfpNetworkCodeUndefined: Self = StObject.set(x, "dfpNetworkCode", js.undefined)
     
-    @scala.inline
-    def setDfpNetworkName(value: String): Self = StObject.set(x, "dfpNetworkName", value.asInstanceOf[js.Any])
+    inline def setDfpNetworkName(value: String): Self = StObject.set(x, "dfpNetworkName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDfpNetworkNameUndefined: Self = StObject.set(x, "dfpNetworkName", js.undefined)
+    inline def setDfpNetworkNameUndefined: Self = StObject.set(x, "dfpNetworkName", js.undefined)
     
-    @scala.inline
-    def setProgrammaticPlacementAccepted(value: Boolean): Self = StObject.set(x, "programmaticPlacementAccepted", value.asInstanceOf[js.Any])
+    inline def setProgrammaticPlacementAccepted(value: Boolean): Self = StObject.set(x, "programmaticPlacementAccepted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgrammaticPlacementAcceptedUndefined: Self = StObject.set(x, "programmaticPlacementAccepted", js.undefined)
+    inline def setProgrammaticPlacementAcceptedUndefined: Self = StObject.set(x, "programmaticPlacementAccepted", js.undefined)
     
-    @scala.inline
-    def setPubPaidPlacementAccepted(value: Boolean): Self = StObject.set(x, "pubPaidPlacementAccepted", value.asInstanceOf[js.Any])
+    inline def setPubPaidPlacementAccepted(value: Boolean): Self = StObject.set(x, "pubPaidPlacementAccepted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPubPaidPlacementAcceptedUndefined: Self = StObject.set(x, "pubPaidPlacementAccepted", js.undefined)
+    inline def setPubPaidPlacementAcceptedUndefined: Self = StObject.set(x, "pubPaidPlacementAccepted", js.undefined)
     
-    @scala.inline
-    def setPublisherPortalOnly(value: Boolean): Self = StObject.set(x, "publisherPortalOnly", value.asInstanceOf[js.Any])
+    inline def setPublisherPortalOnly(value: Boolean): Self = StObject.set(x, "publisherPortalOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublisherPortalOnlyUndefined: Self = StObject.set(x, "publisherPortalOnly", js.undefined)
+    inline def setPublisherPortalOnlyUndefined: Self = StObject.set(x, "publisherPortalOnly", js.undefined)
   }
 }

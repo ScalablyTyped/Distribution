@@ -104,97 +104,67 @@ trait IPaginationConfig extends StObject {
 }
 object IPaginationConfig {
   
-  @scala.inline
-  def apply(): IPaginationConfig = {
+  inline def apply(): IPaginationConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPaginationConfig]
   }
   
-  @scala.inline
-  implicit class IPaginationConfigMutableBuilder[Self <: IPaginationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: IPaginationConfig](x: Self) {
     
-    @scala.inline
-    def setBoundaryLinkNumbers(value: Boolean): Self = StObject.set(x, "boundaryLinkNumbers", value.asInstanceOf[js.Any])
+    inline def setBoundaryLinkNumbers(value: Boolean): Self = StObject.set(x, "boundaryLinkNumbers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundaryLinkNumbersUndefined: Self = StObject.set(x, "boundaryLinkNumbers", js.undefined)
+    inline def setBoundaryLinkNumbersUndefined: Self = StObject.set(x, "boundaryLinkNumbers", js.undefined)
     
-    @scala.inline
-    def setBoundaryLinks(value: Boolean): Self = StObject.set(x, "boundaryLinks", value.asInstanceOf[js.Any])
+    inline def setBoundaryLinks(value: Boolean): Self = StObject.set(x, "boundaryLinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundaryLinksUndefined: Self = StObject.set(x, "boundaryLinks", js.undefined)
+    inline def setBoundaryLinksUndefined: Self = StObject.set(x, "boundaryLinks", js.undefined)
     
-    @scala.inline
-    def setDirectionLinks(value: Boolean): Self = StObject.set(x, "directionLinks", value.asInstanceOf[js.Any])
+    inline def setDirectionLinks(value: Boolean): Self = StObject.set(x, "directionLinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionLinksUndefined: Self = StObject.set(x, "directionLinks", js.undefined)
+    inline def setDirectionLinksUndefined: Self = StObject.set(x, "directionLinks", js.undefined)
     
-    @scala.inline
-    def setFirstText(value: String): Self = StObject.set(x, "firstText", value.asInstanceOf[js.Any])
+    inline def setFirstText(value: String): Self = StObject.set(x, "firstText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstTextUndefined: Self = StObject.set(x, "firstText", js.undefined)
+    inline def setFirstTextUndefined: Self = StObject.set(x, "firstText", js.undefined)
     
-    @scala.inline
-    def setForceEllipses(value: Boolean): Self = StObject.set(x, "forceEllipses", value.asInstanceOf[js.Any])
+    inline def setForceEllipses(value: Boolean): Self = StObject.set(x, "forceEllipses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceEllipsesUndefined: Self = StObject.set(x, "forceEllipses", js.undefined)
+    inline def setForceEllipsesUndefined: Self = StObject.set(x, "forceEllipses", js.undefined)
     
-    @scala.inline
-    def setItemsPerPage(value: Double): Self = StObject.set(x, "itemsPerPage", value.asInstanceOf[js.Any])
+    inline def setItemsPerPage(value: Double): Self = StObject.set(x, "itemsPerPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsPerPageUndefined: Self = StObject.set(x, "itemsPerPage", js.undefined)
+    inline def setItemsPerPageUndefined: Self = StObject.set(x, "itemsPerPage", js.undefined)
     
-    @scala.inline
-    def setLastText(value: String): Self = StObject.set(x, "lastText", value.asInstanceOf[js.Any])
+    inline def setLastText(value: String): Self = StObject.set(x, "lastText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastTextUndefined: Self = StObject.set(x, "lastText", js.undefined)
+    inline def setLastTextUndefined: Self = StObject.set(x, "lastText", js.undefined)
     
-    @scala.inline
-    def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+    inline def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
+    inline def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
     
-    @scala.inline
-    def setNextText(value: String): Self = StObject.set(x, "nextText", value.asInstanceOf[js.Any])
+    inline def setNextText(value: String): Self = StObject.set(x, "nextText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTextUndefined: Self = StObject.set(x, "nextText", js.undefined)
+    inline def setNextTextUndefined: Self = StObject.set(x, "nextText", js.undefined)
     
-    @scala.inline
-    def setNumPages(value: Double): Self = StObject.set(x, "numPages", value.asInstanceOf[js.Any])
+    inline def setNumPages(value: Double): Self = StObject.set(x, "numPages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumPagesUndefined: Self = StObject.set(x, "numPages", js.undefined)
+    inline def setNumPagesUndefined: Self = StObject.set(x, "numPages", js.undefined)
     
-    @scala.inline
-    def setPreviousText(value: String): Self = StObject.set(x, "previousText", value.asInstanceOf[js.Any])
+    inline def setPreviousText(value: String): Self = StObject.set(x, "previousText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousTextUndefined: Self = StObject.set(x, "previousText", js.undefined)
+    inline def setPreviousTextUndefined: Self = StObject.set(x, "previousText", js.undefined)
     
-    @scala.inline
-    def setRotate(value: Boolean): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+    inline def setRotate(value: Boolean): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
+    inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
     
-    @scala.inline
-    def setTemplateUrl(value: String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
+    inline def setTemplateUrl(value: String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
+    inline def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
     
-    @scala.inline
-    def setTotalItems(value: Double): Self = StObject.set(x, "totalItems", value.asInstanceOf[js.Any])
+    inline def setTotalItems(value: Double): Self = StObject.set(x, "totalItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalItemsUndefined: Self = StObject.set(x, "totalItems", js.undefined)
+    inline def setTotalItemsUndefined: Self = StObject.set(x, "totalItems", js.undefined)
   }
 }

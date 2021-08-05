@@ -10,6 +10,5 @@ object randomPortMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getRandomPort(): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomPort")().asInstanceOf[js.Promise[Double]]
+  inline def getRandomPort(): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomPort")().asInstanceOf[js.Promise[Double]]
 }

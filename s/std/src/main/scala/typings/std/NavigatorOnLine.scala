@@ -10,16 +10,13 @@ trait NavigatorOnLine extends StObject {
 }
 object NavigatorOnLine {
   
-  @scala.inline
-  def apply(onLine: scala.Boolean): NavigatorOnLine = {
+  inline def apply(onLine: scala.Boolean): NavigatorOnLine = {
     val __obj = js.Dynamic.literal(onLine = onLine.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigatorOnLine]
   }
   
-  @scala.inline
-  implicit class NavigatorOnLineMutableBuilder[Self <: NavigatorOnLine] (val x: Self) extends AnyVal {
+  extension [Self <: NavigatorOnLine](x: Self) {
     
-    @scala.inline
-    def setOnLine(value: scala.Boolean): Self = StObject.set(x, "onLine", value.asInstanceOf[js.Any])
+    inline def setOnLine(value: scala.Boolean): Self = StObject.set(x, "onLine", value.asInstanceOf[js.Any])
   }
 }

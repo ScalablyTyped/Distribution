@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CTemplatePrinter extends StObject {
   
-  @JSName("MSHTML.CTemplatePrinter_typekey")
+  /* private */ @JSName("MSHTML.CTemplatePrinter_typekey")
   var MSHTMLDotCTemplatePrinter_typekey: CTemplatePrinter
   
   var allLinkedDocuments: Boolean
@@ -111,8 +111,7 @@ trait CTemplatePrinter extends StObject {
 }
 object CTemplatePrinter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotCTemplatePrinter_typekey: CTemplatePrinter,
     allLinkedDocuments: Boolean,
     collate: Boolean,
@@ -170,160 +169,108 @@ object CTemplatePrinter {
     __obj.asInstanceOf[CTemplatePrinter]
   }
   
-  @scala.inline
-  implicit class CTemplatePrinterMutableBuilder[Self <: CTemplatePrinter] (val x: Self) extends AnyVal {
+  extension [Self <: CTemplatePrinter](x: Self) {
     
-    @scala.inline
-    def setAllLinkedDocuments(value: Boolean): Self = StObject.set(x, "allLinkedDocuments", value.asInstanceOf[js.Any])
+    inline def setAllLinkedDocuments(value: Boolean): Self = StObject.set(x, "allLinkedDocuments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollate(value: Boolean): Self = StObject.set(x, "collate", value.asInstanceOf[js.Any])
+    inline def setCollate(value: Boolean): Self = StObject.set(x, "collate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopies(value: Double): Self = StObject.set(x, "copies", value.asInstanceOf[js.Any])
+    inline def setCopies(value: Double): Self = StObject.set(x, "copies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentPage(value: Boolean): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
+    inline def setCurrentPage(value: Boolean): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentPageAvail(value: Boolean): Self = StObject.set(x, "currentPageAvail", value.asInstanceOf[js.Any])
+    inline def setCurrentPageAvail(value: Boolean): Self = StObject.set(x, "currentPageAvail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceSupports(value: String => js.Any): Self = StObject.set(x, "deviceSupports", js.Any.fromFunction1(value))
+    inline def setDeviceSupports(value: String => js.Any): Self = StObject.set(x, "deviceSupports", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDuplex(value: Boolean): Self = StObject.set(x, "duplex", value.asInstanceOf[js.Any])
+    inline def setDuplex(value: Boolean): Self = StObject.set(x, "duplex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnsurePrintDialogDefaults(value: () => Boolean): Self = StObject.set(x, "ensurePrintDialogDefaults", js.Any.fromFunction0(value))
+    inline def setEnsurePrintDialogDefaults(value: () => Boolean): Self = StObject.set(x, "ensurePrintDialogDefaults", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFooter(value: String): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+    inline def setFooter(value: String): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameActive(value: Boolean): Self = StObject.set(x, "frameActive", value.asInstanceOf[js.Any])
+    inline def setFrameActive(value: Boolean): Self = StObject.set(x, "frameActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameActiveEnabled(value: Boolean): Self = StObject.set(x, "frameActiveEnabled", value.asInstanceOf[js.Any])
+    inline def setFrameActiveEnabled(value: Boolean): Self = StObject.set(x, "frameActiveEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameAsShown(value: Boolean): Self = StObject.set(x, "frameAsShown", value.asInstanceOf[js.Any])
+    inline def setFrameAsShown(value: Boolean): Self = StObject.set(x, "frameAsShown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFramesetDocument(value: Boolean): Self = StObject.set(x, "framesetDocument", value.asInstanceOf[js.Any])
+    inline def setFramesetDocument(value: Boolean): Self = StObject.set(x, "framesetDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetPageMarginBottom(value: (js.Any, Double, Double) => js.Any): Self = StObject.set(x, "getPageMarginBottom", js.Any.fromFunction3(value))
+    inline def setGetPageMarginBottom(value: (js.Any, Double, Double) => js.Any): Self = StObject.set(x, "getPageMarginBottom", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetPageMarginBottomImportant(value: js.Any => Boolean): Self = StObject.set(x, "getPageMarginBottomImportant", js.Any.fromFunction1(value))
+    inline def setGetPageMarginBottomImportant(value: js.Any => Boolean): Self = StObject.set(x, "getPageMarginBottomImportant", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPageMarginLeft(value: (js.Any, Double, Double) => js.Any): Self = StObject.set(x, "getPageMarginLeft", js.Any.fromFunction3(value))
+    inline def setGetPageMarginLeft(value: (js.Any, Double, Double) => js.Any): Self = StObject.set(x, "getPageMarginLeft", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetPageMarginLeftImportant(value: js.Any => Boolean): Self = StObject.set(x, "getPageMarginLeftImportant", js.Any.fromFunction1(value))
+    inline def setGetPageMarginLeftImportant(value: js.Any => Boolean): Self = StObject.set(x, "getPageMarginLeftImportant", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPageMarginRight(value: (js.Any, Double, Double) => js.Any): Self = StObject.set(x, "getPageMarginRight", js.Any.fromFunction3(value))
+    inline def setGetPageMarginRight(value: (js.Any, Double, Double) => js.Any): Self = StObject.set(x, "getPageMarginRight", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetPageMarginRightImportant(value: js.Any => Boolean): Self = StObject.set(x, "getPageMarginRightImportant", js.Any.fromFunction1(value))
+    inline def setGetPageMarginRightImportant(value: js.Any => Boolean): Self = StObject.set(x, "getPageMarginRightImportant", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPageMarginTop(value: (js.Any, Double, Double) => js.Any): Self = StObject.set(x, "getPageMarginTop", js.Any.fromFunction3(value))
+    inline def setGetPageMarginTop(value: (js.Any, Double, Double) => js.Any): Self = StObject.set(x, "getPageMarginTop", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetPageMarginTopImportant(value: js.Any => Boolean): Self = StObject.set(x, "getPageMarginTopImportant", js.Any.fromFunction1(value))
+    inline def setGetPageMarginTopImportant(value: js.Any => Boolean): Self = StObject.set(x, "getPageMarginTopImportant", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderFooterFont(value: String): Self = StObject.set(x, "headerFooterFont", value.asInstanceOf[js.Any])
+    inline def setHeaderFooterFont(value: String): Self = StObject.set(x, "headerFooterFont", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotCTemplatePrinter_typekey(value: CTemplatePrinter): Self = StObject.set(x, "MSHTML.CTemplatePrinter_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotCTemplatePrinter_typekey(value: CTemplatePrinter): Self = StObject.set(x, "MSHTML.CTemplatePrinter_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginBottom(value: Double): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
+    inline def setMarginBottom(value: Double): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+    inline def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginRight(value: Double): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
+    inline def setMarginRight(value: Double): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+    inline def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageFrom(value: Double): Self = StObject.set(x, "pageFrom", value.asInstanceOf[js.Any])
+    inline def setPageFrom(value: Double): Self = StObject.set(x, "pageFrom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageHeight(value: Double): Self = StObject.set(x, "pageHeight", value.asInstanceOf[js.Any])
+    inline def setPageHeight(value: Double): Self = StObject.set(x, "pageHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTo(value: Double): Self = StObject.set(x, "pageTo", value.asInstanceOf[js.Any])
+    inline def setPageTo(value: Double): Self = StObject.set(x, "pageTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageWidth(value: Double): Self = StObject.set(x, "pageWidth", value.asInstanceOf[js.Any])
+    inline def setPageWidth(value: Double): Self = StObject.set(x, "pageWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintBlankPage(value: () => Unit): Self = StObject.set(x, "printBlankPage", js.Any.fromFunction0(value))
+    inline def setPrintBlankPage(value: () => Unit): Self = StObject.set(x, "printBlankPage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPrintNonNative(value: js.Any => Boolean): Self = StObject.set(x, "printNonNative", js.Any.fromFunction1(value))
+    inline def setPrintNonNative(value: js.Any => Boolean): Self = StObject.set(x, "printNonNative", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPrintNonNativeFrames(value: (js.Any, Boolean) => Unit): Self = StObject.set(x, "printNonNativeFrames", js.Any.fromFunction2(value))
+    inline def setPrintNonNativeFrames(value: (js.Any, Boolean) => Unit): Self = StObject.set(x, "printNonNativeFrames", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPrintPage(value: js.Any => Unit): Self = StObject.set(x, "printPage", js.Any.fromFunction1(value))
+    inline def setPrintPage(value: js.Any => Unit): Self = StObject.set(x, "printPage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSelectedPages(value: Boolean): Self = StObject.set(x, "selectedPages", value.asInstanceOf[js.Any])
+    inline def setSelectedPages(value: Boolean): Self = StObject.set(x, "selectedPages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelection(value: Boolean): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+    inline def setSelection(value: Boolean): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionEnabled(value: Boolean): Self = StObject.set(x, "selectionEnabled", value.asInstanceOf[js.Any])
+    inline def setSelectionEnabled(value: Boolean): Self = StObject.set(x, "selectionEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowPageSetupDialog(value: () => Boolean): Self = StObject.set(x, "showPageSetupDialog", js.Any.fromFunction0(value))
+    inline def setShowPageSetupDialog(value: () => Boolean): Self = StObject.set(x, "showPageSetupDialog", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShowPrintDialog(value: () => Boolean): Self = StObject.set(x, "showPrintDialog", js.Any.fromFunction0(value))
+    inline def setShowPrintDialog(value: () => Boolean): Self = StObject.set(x, "showPrintDialog", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStartDoc(value: String => Boolean): Self = StObject.set(x, "startDoc", js.Any.fromFunction1(value))
+    inline def setStartDoc(value: String => Boolean): Self = StObject.set(x, "startDoc", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStopDoc(value: () => Unit): Self = StObject.set(x, "stopDoc", js.Any.fromFunction0(value))
+    inline def setStopDoc(value: () => Unit): Self = StObject.set(x, "stopDoc", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTableOfLinks(value: Boolean): Self = StObject.set(x, "tableOfLinks", value.asInstanceOf[js.Any])
+    inline def setTableOfLinks(value: Boolean): Self = StObject.set(x, "tableOfLinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnprintableBottom(value: Double): Self = StObject.set(x, "unprintableBottom", value.asInstanceOf[js.Any])
+    inline def setUnprintableBottom(value: Double): Self = StObject.set(x, "unprintableBottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnprintableLeft(value: Double): Self = StObject.set(x, "unprintableLeft", value.asInstanceOf[js.Any])
+    inline def setUnprintableLeft(value: Double): Self = StObject.set(x, "unprintableLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnprintableRight(value: Double): Self = StObject.set(x, "unprintableRight", value.asInstanceOf[js.Any])
+    inline def setUnprintableRight(value: Double): Self = StObject.set(x, "unprintableRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnprintableTop(value: Double): Self = StObject.set(x, "unprintableTop", value.asInstanceOf[js.Any])
+    inline def setUnprintableTop(value: Double): Self = StObject.set(x, "unprintableTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatePageStatus(value: Double => Unit): Self = StObject.set(x, "updatePageStatus", js.Any.fromFunction1(value))
+    inline def setUpdatePageStatus(value: Double => Unit): Self = StObject.set(x, "updatePageStatus", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUsePrinterCopyCollate(value: Boolean): Self = StObject.set(x, "usePrinterCopyCollate", value.asInstanceOf[js.Any])
+    inline def setUsePrinterCopyCollate(value: Boolean): Self = StObject.set(x, "usePrinterCopyCollate", value.asInstanceOf[js.Any])
   }
 }

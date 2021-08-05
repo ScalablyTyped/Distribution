@@ -28,7 +28,7 @@ class CompositeValidationResult protected ()
   
   var Errors: StringDictionary[IValidationResult] = js.native
   
-  var FlattenErros: js.Any = js.native
+  /* private */ var FlattenErros: js.Any = js.native
   
   /* CompleteClass */
   var HasErrors: Boolean = js.native

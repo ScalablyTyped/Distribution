@@ -16,22 +16,17 @@ trait BodyParameter
 }
 object BodyParameter {
   
-  @scala.inline
-  def apply(name: String): BodyParameter = {
+  inline def apply(name: String): BodyParameter = {
     val __obj = js.Dynamic.literal(in = "body", name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[BodyParameter]
   }
   
-  @scala.inline
-  implicit class BodyParameterMutableBuilder[Self <: BodyParameter] (val x: Self) extends AnyVal {
+  extension [Self <: BodyParameter](x: Self) {
     
-    @scala.inline
-    def setIn(value: body): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+    inline def setIn(value: body): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchema(value: Schema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: Schema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+    inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
   }
 }

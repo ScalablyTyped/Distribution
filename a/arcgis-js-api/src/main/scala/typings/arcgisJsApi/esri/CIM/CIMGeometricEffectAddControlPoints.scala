@@ -19,23 +19,18 @@ trait CIMGeometricEffectAddControlPoints
 }
 object CIMGeometricEffectAddControlPoints {
   
-  @scala.inline
-  def apply(): CIMGeometricEffectAddControlPoints = {
+  inline def apply(): CIMGeometricEffectAddControlPoints = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMGeometricEffectAddControlPoints")
     __obj.asInstanceOf[CIMGeometricEffectAddControlPoints]
   }
   
-  @scala.inline
-  implicit class CIMGeometricEffectAddControlPointsMutableBuilder[Self <: CIMGeometricEffectAddControlPoints] (val x: Self) extends AnyVal {
+  extension [Self <: CIMGeometricEffectAddControlPoints](x: Self) {
     
-    @scala.inline
-    def setAngleTolerance(value: Double): Self = StObject.set(x, "angleTolerance", value.asInstanceOf[js.Any])
+    inline def setAngleTolerance(value: Double): Self = StObject.set(x, "angleTolerance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngleToleranceUndefined: Self = StObject.set(x, "angleTolerance", js.undefined)
+    inline def setAngleToleranceUndefined: Self = StObject.set(x, "angleTolerance", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectAddControlPoints): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectAddControlPoints): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

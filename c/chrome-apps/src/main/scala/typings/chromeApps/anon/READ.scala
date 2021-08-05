@@ -13,19 +13,15 @@ trait READ extends StObject {
 }
 object READ {
   
-  @scala.inline
-  def apply(): READ = {
+  inline def apply(): READ = {
     val __obj = js.Dynamic.literal(READ = "READ", WRITE = "WRITE")
     __obj.asInstanceOf[READ]
   }
   
-  @scala.inline
-  implicit class READMutableBuilder[Self <: READ] (val x: Self) extends AnyVal {
+  extension [Self <: READ](x: Self) {
     
-    @scala.inline
-    def setREAD(value: typings.chromeApps.chromeAppsStrings.READ): Self = StObject.set(x, "READ", value.asInstanceOf[js.Any])
+    inline def setREAD(value: typings.chromeApps.chromeAppsStrings.READ): Self = StObject.set(x, "READ", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWRITE(value: WRITE): Self = StObject.set(x, "WRITE", value.asInstanceOf[js.Any])
+    inline def setWRITE(value: WRITE): Self = StObject.set(x, "WRITE", value.asInstanceOf[js.Any])
   }
 }

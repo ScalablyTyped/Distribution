@@ -14,31 +14,23 @@ trait TrafficImageZIndex extends StObject {
 }
 object TrafficImageZIndex {
   
-  @scala.inline
-  def apply(): TrafficImageZIndex = {
+  inline def apply(): TrafficImageZIndex = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrafficImageZIndex]
   }
   
-  @scala.inline
-  implicit class TrafficImageZIndexMutableBuilder[Self <: TrafficImageZIndex] (val x: Self) extends AnyVal {
+  extension [Self <: TrafficImageZIndex](x: Self) {
     
-    @scala.inline
-    def setTrafficImageZIndex(value: Double): Self = StObject.set(x, "trafficImageZIndex", value.asInstanceOf[js.Any])
+    inline def setTrafficImageZIndex(value: Double): Self = StObject.set(x, "trafficImageZIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrafficImageZIndexUndefined: Self = StObject.set(x, "trafficImageZIndex", js.undefined)
+    inline def setTrafficImageZIndexUndefined: Self = StObject.set(x, "trafficImageZIndex", js.undefined)
     
-    @scala.inline
-    def setTrafficInfoZIndex(value: Double): Self = StObject.set(x, "trafficInfoZIndex", value.asInstanceOf[js.Any])
+    inline def setTrafficInfoZIndex(value: Double): Self = StObject.set(x, "trafficInfoZIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrafficInfoZIndexUndefined: Self = StObject.set(x, "trafficInfoZIndex", js.undefined)
+    inline def setTrafficInfoZIndexUndefined: Self = StObject.set(x, "trafficInfoZIndex", js.undefined)
     
-    @scala.inline
-    def setTrafficJamZIndex(value: Double): Self = StObject.set(x, "trafficJamZIndex", value.asInstanceOf[js.Any])
+    inline def setTrafficJamZIndex(value: Double): Self = StObject.set(x, "trafficJamZIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrafficJamZIndexUndefined: Self = StObject.set(x, "trafficJamZIndex", js.undefined)
+    inline def setTrafficJamZIndexUndefined: Self = StObject.set(x, "trafficJamZIndex", js.undefined)
   }
 }

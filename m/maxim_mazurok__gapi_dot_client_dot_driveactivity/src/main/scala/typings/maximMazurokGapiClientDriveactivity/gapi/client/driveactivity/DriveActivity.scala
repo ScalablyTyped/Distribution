@@ -29,58 +29,41 @@ trait DriveActivity extends StObject {
 }
 object DriveActivity {
   
-  @scala.inline
-  def apply(): DriveActivity = {
+  inline def apply(): DriveActivity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DriveActivity]
   }
   
-  @scala.inline
-  implicit class DriveActivityMutableBuilder[Self <: DriveActivity] (val x: Self) extends AnyVal {
+  extension [Self <: DriveActivity](x: Self) {
     
-    @scala.inline
-    def setActions(value: js.Array[Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: js.Array[Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+    inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    @scala.inline
-    def setActionsVarargs(value: Action*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
-    @scala.inline
-    def setActors(value: js.Array[Actor]): Self = StObject.set(x, "actors", value.asInstanceOf[js.Any])
+    inline def setActors(value: js.Array[Actor]): Self = StObject.set(x, "actors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActorsUndefined: Self = StObject.set(x, "actors", js.undefined)
+    inline def setActorsUndefined: Self = StObject.set(x, "actors", js.undefined)
     
-    @scala.inline
-    def setActorsVarargs(value: Actor*): Self = StObject.set(x, "actors", js.Array(value :_*))
+    inline def setActorsVarargs(value: Actor*): Self = StObject.set(x, "actors", js.Array(value :_*))
     
-    @scala.inline
-    def setPrimaryActionDetail(value: ActionDetail): Self = StObject.set(x, "primaryActionDetail", value.asInstanceOf[js.Any])
+    inline def setPrimaryActionDetail(value: ActionDetail): Self = StObject.set(x, "primaryActionDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryActionDetailUndefined: Self = StObject.set(x, "primaryActionDetail", js.undefined)
+    inline def setPrimaryActionDetailUndefined: Self = StObject.set(x, "primaryActionDetail", js.undefined)
     
-    @scala.inline
-    def setTargets(value: js.Array[Target]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
+    inline def setTargets(value: js.Array[Target]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
+    inline def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
     
-    @scala.inline
-    def setTargetsVarargs(value: Target*): Self = StObject.set(x, "targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: Target*): Self = StObject.set(x, "targets", js.Array(value :_*))
     
-    @scala.inline
-    def setTimeRange(value: TimeRange): Self = StObject.set(x, "timeRange", value.asInstanceOf[js.Any])
+    inline def setTimeRange(value: TimeRange): Self = StObject.set(x, "timeRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeRangeUndefined: Self = StObject.set(x, "timeRange", js.undefined)
+    inline def setTimeRangeUndefined: Self = StObject.set(x, "timeRange", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
   }
 }

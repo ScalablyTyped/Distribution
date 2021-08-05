@@ -22,6 +22,5 @@ object NoticeBar {
   @JSImport("@ant-design/react-native", "NoticeBar.defaultProps")
   @js.native
   def defaultProps: OnPress = js.native
-  @scala.inline
-  def defaultProps_=(x: OnPress): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: OnPress): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

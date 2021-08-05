@@ -21,25 +21,19 @@ trait SchemaRestrictionChange extends StObject {
 }
 object SchemaRestrictionChange {
   
-  @scala.inline
-  def apply(): SchemaRestrictionChange = {
+  inline def apply(): SchemaRestrictionChange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRestrictionChange]
   }
   
-  @scala.inline
-  implicit class SchemaRestrictionChangeMutableBuilder[Self <: SchemaRestrictionChange] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRestrictionChange](x: Self) {
     
-    @scala.inline
-    def setFeature(value: String): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
+    inline def setFeature(value: String): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureUndefined: Self = StObject.set(x, "feature", js.undefined)
+    inline def setFeatureUndefined: Self = StObject.set(x, "feature", js.undefined)
     
-    @scala.inline
-    def setNewRestriction(value: String): Self = StObject.set(x, "newRestriction", value.asInstanceOf[js.Any])
+    inline def setNewRestriction(value: String): Self = StObject.set(x, "newRestriction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewRestrictionUndefined: Self = StObject.set(x, "newRestriction", js.undefined)
+    inline def setNewRestrictionUndefined: Self = StObject.set(x, "newRestriction", js.undefined)
   }
 }

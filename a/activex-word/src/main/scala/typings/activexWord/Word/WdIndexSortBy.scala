@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdIndexSortBy extends StObject
 object WdIndexSortBy {
   
-  @scala.inline
-  def wdIndexSortByStroke: `0` = 0.asInstanceOf[`0`]
+  inline def wdIndexSortByStroke: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdIndexSortBySyllable: `1` = 1.asInstanceOf[`1`]
+  inline def wdIndexSortBySyllable: `1` = 1.asInstanceOf[`1`]
 }

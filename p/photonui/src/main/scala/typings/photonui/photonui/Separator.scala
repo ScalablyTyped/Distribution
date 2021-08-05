@@ -15,8 +15,7 @@ trait Separator
 }
 object Separator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     absolutePosition: X,
     addClass: String => Unit,
     contextMenu: PopupWindow,
@@ -43,10 +42,8 @@ object Separator {
     __obj.asInstanceOf[Separator]
   }
   
-  @scala.inline
-  implicit class SeparatorMutableBuilder[Self <: Separator] (val x: Self) extends AnyVal {
+  extension [Self <: Separator](x: Self) {
     
-    @scala.inline
-    def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
   }
 }

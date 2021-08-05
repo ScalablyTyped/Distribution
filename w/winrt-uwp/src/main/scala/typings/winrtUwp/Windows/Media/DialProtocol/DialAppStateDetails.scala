@@ -15,19 +15,15 @@ trait DialAppStateDetails extends StObject {
 }
 object DialAppStateDetails {
   
-  @scala.inline
-  def apply(fullXml: String, state: DialAppState): DialAppStateDetails = {
+  inline def apply(fullXml: String, state: DialAppState): DialAppStateDetails = {
     val __obj = js.Dynamic.literal(fullXml = fullXml.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialAppStateDetails]
   }
   
-  @scala.inline
-  implicit class DialAppStateDetailsMutableBuilder[Self <: DialAppStateDetails] (val x: Self) extends AnyVal {
+  extension [Self <: DialAppStateDetails](x: Self) {
     
-    @scala.inline
-    def setFullXml(value: String): Self = StObject.set(x, "fullXml", value.asInstanceOf[js.Any])
+    inline def setFullXml(value: String): Self = StObject.set(x, "fullXml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: DialAppState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: DialAppState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

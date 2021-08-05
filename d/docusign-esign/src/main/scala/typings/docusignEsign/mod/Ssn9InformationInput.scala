@@ -21,25 +21,19 @@ trait Ssn9InformationInput extends StObject {
 }
 object Ssn9InformationInput {
   
-  @scala.inline
-  def apply(): Ssn9InformationInput = {
+  inline def apply(): Ssn9InformationInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Ssn9InformationInput]
   }
   
-  @scala.inline
-  implicit class Ssn9InformationInputMutableBuilder[Self <: Ssn9InformationInput] (val x: Self) extends AnyVal {
+  extension [Self <: Ssn9InformationInput](x: Self) {
     
-    @scala.inline
-    def setDisplayLevelCode(value: String): Self = StObject.set(x, "displayLevelCode", value.asInstanceOf[js.Any])
+    inline def setDisplayLevelCode(value: String): Self = StObject.set(x, "displayLevelCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayLevelCodeUndefined: Self = StObject.set(x, "displayLevelCode", js.undefined)
+    inline def setDisplayLevelCodeUndefined: Self = StObject.set(x, "displayLevelCode", js.undefined)
     
-    @scala.inline
-    def setSsn9(value: String): Self = StObject.set(x, "ssn9", value.asInstanceOf[js.Any])
+    inline def setSsn9(value: String): Self = StObject.set(x, "ssn9", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsn9Undefined: Self = StObject.set(x, "ssn9", js.undefined)
+    inline def setSsn9Undefined: Self = StObject.set(x, "ssn9", js.undefined)
   }
 }

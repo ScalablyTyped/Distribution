@@ -98,11 +98,9 @@ object EnumDescriptorProto {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def deserializeBinary(bytes: Uint8Array): EnumReservedRange = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[EnumReservedRange]
+    inline def deserializeBinary(bytes: Uint8Array): EnumReservedRange = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[EnumReservedRange]
     
-    @scala.inline
-    def deserializeBinaryFromReader(message: EnumReservedRange, reader: BinaryReader): EnumReservedRange = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[EnumReservedRange]
+    inline def deserializeBinaryFromReader(message: EnumReservedRange, reader: BinaryReader): EnumReservedRange = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[EnumReservedRange]
     
     @JSImport("google-protobuf/google/protobuf/descriptor_pb", "EnumDescriptorProto.EnumReservedRange.extensions")
     @js.native
@@ -111,17 +109,13 @@ object EnumDescriptorProto {
     @JSImport("google-protobuf/google/protobuf/descriptor_pb", "EnumDescriptorProto.EnumReservedRange.extensionsBinary")
     @js.native
     def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-    @scala.inline
-    def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+    inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+    inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def serializeBinaryToWriter(message: EnumReservedRange, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def serializeBinaryToWriter(message: EnumReservedRange, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def toObject(includeInstance: Boolean, msg: EnumReservedRange): typings.googleProtobuf.descriptorPbMod.EnumDescriptorProto.EnumReservedRange.AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[typings.googleProtobuf.descriptorPbMod.EnumDescriptorProto.EnumReservedRange.AsObject]
+    inline def toObject(includeInstance: Boolean, msg: EnumReservedRange): typings.googleProtobuf.descriptorPbMod.EnumDescriptorProto.EnumReservedRange.AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[typings.googleProtobuf.descriptorPbMod.EnumDescriptorProto.EnumReservedRange.AsObject]
     
     trait AsObject extends StObject {
       
@@ -131,35 +125,27 @@ object EnumDescriptorProto {
     }
     object AsObject {
       
-      @scala.inline
-      def apply(): typings.googleProtobuf.descriptorPbMod.EnumDescriptorProto.EnumReservedRange.AsObject = {
+      inline def apply(): typings.googleProtobuf.descriptorPbMod.EnumDescriptorProto.EnumReservedRange.AsObject = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.googleProtobuf.descriptorPbMod.EnumDescriptorProto.EnumReservedRange.AsObject]
       }
       
-      @scala.inline
-      implicit class AsObjectMutableBuilder[Self <: typings.googleProtobuf.descriptorPbMod.EnumDescriptorProto.EnumReservedRange.AsObject] (val x: Self) extends AnyVal {
+      extension [Self <: typings.googleProtobuf.descriptorPbMod.EnumDescriptorProto.EnumReservedRange.AsObject](x: Self) {
         
-        @scala.inline
-        def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+        inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+        inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
         
-        @scala.inline
-        def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+        inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+        inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       }
     }
   }
   
-  @scala.inline
-  def deserializeBinary(bytes: Uint8Array): EnumDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[EnumDescriptorProto]
+  inline def deserializeBinary(bytes: Uint8Array): EnumDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[EnumDescriptorProto]
   
-  @scala.inline
-  def deserializeBinaryFromReader(message: EnumDescriptorProto, reader: BinaryReader): EnumDescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[EnumDescriptorProto]
+  inline def deserializeBinaryFromReader(message: EnumDescriptorProto, reader: BinaryReader): EnumDescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[EnumDescriptorProto]
   
   @JSImport("google-protobuf/google/protobuf/descriptor_pb", "EnumDescriptorProto.extensions")
   @js.native
@@ -168,17 +154,13 @@ object EnumDescriptorProto {
   @JSImport("google-protobuf/google/protobuf/descriptor_pb", "EnumDescriptorProto.extensionsBinary")
   @js.native
   def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-  @scala.inline
-  def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+  inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+  inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def serializeBinaryToWriter(message: EnumDescriptorProto, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serializeBinaryToWriter(message: EnumDescriptorProto, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def toObject(includeInstance: Boolean, msg: EnumDescriptorProto): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+  inline def toObject(includeInstance: Boolean, msg: EnumDescriptorProto): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
   trait AsObject extends StObject {
     
@@ -196,8 +178,7 @@ object EnumDescriptorProto {
   }
   object AsObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       reservedNameList: js.Array[String],
       reservedRangeList: js.Array[
           typings.googleProtobuf.descriptorPbMod.EnumDescriptorProto.EnumReservedRange.AsObject
@@ -208,42 +189,31 @@ object EnumDescriptorProto {
       __obj.asInstanceOf[AsObject]
     }
     
-    @scala.inline
-    implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+    extension [Self <: AsObject](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOptions(value: typings.googleProtobuf.descriptorPbMod.EnumOptions.AsObject): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: typings.googleProtobuf.descriptorPbMod.EnumOptions.AsObject): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setReservedNameList(value: js.Array[String]): Self = StObject.set(x, "reservedNameList", value.asInstanceOf[js.Any])
+      inline def setReservedNameList(value: js.Array[String]): Self = StObject.set(x, "reservedNameList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReservedNameListVarargs(value: String*): Self = StObject.set(x, "reservedNameList", js.Array(value :_*))
+      inline def setReservedNameListVarargs(value: String*): Self = StObject.set(x, "reservedNameList", js.Array(value :_*))
       
-      @scala.inline
-      def setReservedRangeList(
+      inline def setReservedRangeList(
         value: js.Array[
               typings.googleProtobuf.descriptorPbMod.EnumDescriptorProto.EnumReservedRange.AsObject
             ]
       ): Self = StObject.set(x, "reservedRangeList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReservedRangeListVarargs(value: typings.googleProtobuf.descriptorPbMod.EnumDescriptorProto.EnumReservedRange.AsObject*): Self = StObject.set(x, "reservedRangeList", js.Array(value :_*))
+      inline def setReservedRangeListVarargs(value: typings.googleProtobuf.descriptorPbMod.EnumDescriptorProto.EnumReservedRange.AsObject*): Self = StObject.set(x, "reservedRangeList", js.Array(value :_*))
       
-      @scala.inline
-      def setValueList(value: js.Array[typings.googleProtobuf.descriptorPbMod.EnumValueDescriptorProto.AsObject]): Self = StObject.set(x, "valueList", value.asInstanceOf[js.Any])
+      inline def setValueList(value: js.Array[typings.googleProtobuf.descriptorPbMod.EnumValueDescriptorProto.AsObject]): Self = StObject.set(x, "valueList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueListVarargs(value: typings.googleProtobuf.descriptorPbMod.EnumValueDescriptorProto.AsObject*): Self = StObject.set(x, "valueList", js.Array(value :_*))
+      inline def setValueListVarargs(value: typings.googleProtobuf.descriptorPbMod.EnumValueDescriptorProto.AsObject*): Self = StObject.set(x, "valueList", js.Array(value :_*))
     }
   }
 }

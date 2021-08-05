@@ -23,8 +23,7 @@ trait Typeofcanvas extends StObject {
 }
 object Typeofcanvas {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AssetManager: Instantiable1[/* pathPrefix */ js.UndefOr[String], AssetManager],
     CanvasTexture: Instantiable1[/* image */ HTMLImageElement, CanvasTexture],
     SkeletonRenderer: (Instantiable1[/* context */ CanvasRenderingContext2D, SkeletonRenderer]) & TypeofSkeletonRenderer
@@ -33,17 +32,13 @@ object Typeofcanvas {
     __obj.asInstanceOf[Typeofcanvas]
   }
   
-  @scala.inline
-  implicit class TypeofcanvasMutableBuilder[Self <: Typeofcanvas] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofcanvas](x: Self) {
     
-    @scala.inline
-    def setAssetManager(value: Instantiable1[/* pathPrefix */ js.UndefOr[String], AssetManager]): Self = StObject.set(x, "AssetManager", value.asInstanceOf[js.Any])
+    inline def setAssetManager(value: Instantiable1[/* pathPrefix */ js.UndefOr[String], AssetManager]): Self = StObject.set(x, "AssetManager", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanvasTexture(value: Instantiable1[/* image */ HTMLImageElement, CanvasTexture]): Self = StObject.set(x, "CanvasTexture", value.asInstanceOf[js.Any])
+    inline def setCanvasTexture(value: Instantiable1[/* image */ HTMLImageElement, CanvasTexture]): Self = StObject.set(x, "CanvasTexture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkeletonRenderer(
+    inline def setSkeletonRenderer(
       value: (Instantiable1[/* context */ CanvasRenderingContext2D, SkeletonRenderer]) & TypeofSkeletonRenderer
     ): Self = StObject.set(x, "SkeletonRenderer", value.asInstanceOf[js.Any])
   }

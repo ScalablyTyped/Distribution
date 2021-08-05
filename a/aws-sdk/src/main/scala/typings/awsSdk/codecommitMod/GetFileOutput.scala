@@ -38,8 +38,7 @@ trait GetFileOutput extends StObject {
 }
 object GetFileOutput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     blobId: ObjectId,
     commitId: ObjectId,
     fileContent: FileContent,
@@ -51,25 +50,18 @@ object GetFileOutput {
     __obj.asInstanceOf[GetFileOutput]
   }
   
-  @scala.inline
-  implicit class GetFileOutputMutableBuilder[Self <: GetFileOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetFileOutput](x: Self) {
     
-    @scala.inline
-    def setBlobId(value: ObjectId): Self = StObject.set(x, "blobId", value.asInstanceOf[js.Any])
+    inline def setBlobId(value: ObjectId): Self = StObject.set(x, "blobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitId(value: ObjectId): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
+    inline def setCommitId(value: ObjectId): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileContent(value: FileContent): Self = StObject.set(x, "fileContent", value.asInstanceOf[js.Any])
+    inline def setFileContent(value: FileContent): Self = StObject.set(x, "fileContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileMode(value: FileModeTypeEnum): Self = StObject.set(x, "fileMode", value.asInstanceOf[js.Any])
+    inline def setFileMode(value: FileModeTypeEnum): Self = StObject.set(x, "fileMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilePath(value: Path): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: Path): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSize(value: ObjectSize): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
+    inline def setFileSize(value: ObjectSize): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
   }
 }

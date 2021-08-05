@@ -53,22 +53,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Statement extends StObject
 object Statement {
   
-  @scala.inline
-  def BlockStatement_(body: js.Array[Statement], end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.BlockStatement_ = {
+  inline def BlockStatement_(body: js.Array[Statement], end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.BlockStatement_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("BlockStatement")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.BlockStatement_]
   }
   
-  @scala.inline
-  def BreakStatement_(end: Double, label: Identifier_, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.BreakStatement_ = {
+  inline def BreakStatement_(end: Double, label: Identifier_, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.BreakStatement_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("BreakStatement")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.BreakStatement_]
   }
   
-  @scala.inline
-  def ClassDeclaration_(
+  inline def ClassDeclaration_(
     body: ClassBody_,
     end: Double,
     id: Identifier_,
@@ -81,22 +78,19 @@ object Statement {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ClassDeclaration_]
   }
   
-  @scala.inline
-  def ContinueStatement_(end: Double, label: Identifier_, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.ContinueStatement_ = {
+  inline def ContinueStatement_(end: Double, label: Identifier_, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.ContinueStatement_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ContinueStatement")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ContinueStatement_]
   }
   
-  @scala.inline
-  def DebuggerStatement_(end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.DebuggerStatement_ = {
+  inline def DebuggerStatement_(end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.DebuggerStatement_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("DebuggerStatement")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.DebuggerStatement_]
   }
   
-  @scala.inline
-  def DeclareClass_(
+  inline def DeclareClass_(
     body: ObjectTypeAnnotation_,
     end: Double,
     `extends`: js.Array[InterfaceExtends_],
@@ -111,15 +105,13 @@ object Statement {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.DeclareClass_]
   }
   
-  @scala.inline
-  def DeclareFunction_(end: Double, id: Identifier_, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.DeclareFunction_ = {
+  inline def DeclareFunction_(end: Double, id: Identifier_, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.DeclareFunction_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("DeclareFunction")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.DeclareFunction_]
   }
   
-  @scala.inline
-  def DeclareInterface_(
+  inline def DeclareInterface_(
     body: ObjectTypeAnnotation_,
     end: Double,
     `extends`: js.Array[InterfaceExtends_],
@@ -134,8 +126,7 @@ object Statement {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.DeclareInterface_]
   }
   
-  @scala.inline
-  def DeclareModule_(
+  inline def DeclareModule_(
     body: BlockStatement_,
     end: Double,
     id: StringLiteral_ | Identifier_,
@@ -147,8 +138,7 @@ object Statement {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.DeclareModule_]
   }
   
-  @scala.inline
-  def DeclareTypeAlias_(
+  inline def DeclareTypeAlias_(
     end: Double,
     id: Identifier_,
     loc: SourceLocation,
@@ -161,43 +151,37 @@ object Statement {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.DeclareTypeAlias_]
   }
   
-  @scala.inline
-  def DeclareVariable_(end: Double, id: Identifier_, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.DeclareVariable_ = {
+  inline def DeclareVariable_(end: Double, id: Identifier_, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.DeclareVariable_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("DeclareVariable")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.DeclareVariable_]
   }
   
-  @scala.inline
-  def DoWhileStatement_(body: Statement, end: Double, loc: SourceLocation, start: Double, test: Expression): typings.babelTypes.ts36Mod.DoWhileStatement_ = {
+  inline def DoWhileStatement_(body: Statement, end: Double, loc: SourceLocation, start: Double, test: Expression): typings.babelTypes.ts36Mod.DoWhileStatement_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("DoWhileStatement")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.DoWhileStatement_]
   }
   
-  @scala.inline
-  def EmptyStatement_(end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.EmptyStatement_ = {
+  inline def EmptyStatement_(end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.EmptyStatement_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("EmptyStatement")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.EmptyStatement_]
   }
   
-  @scala.inline
-  def ExportAllDeclaration_(end: Double, loc: SourceLocation, source: StringLiteral_, start: Double): typings.babelTypes.ts36Mod.ExportAllDeclaration_ = {
+  inline def ExportAllDeclaration_(end: Double, loc: SourceLocation, source: StringLiteral_, start: Double): typings.babelTypes.ts36Mod.ExportAllDeclaration_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ExportAllDeclaration")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ExportAllDeclaration_]
   }
   
-  @scala.inline
-  def ExportDefaultDeclaration_(declaration: Declaration | Expression, end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.ExportDefaultDeclaration_ = {
+  inline def ExportDefaultDeclaration_(declaration: Declaration | Expression, end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.ExportDefaultDeclaration_ = {
     val __obj = js.Dynamic.literal(declaration = declaration.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ExportDefaultDeclaration")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ExportDefaultDeclaration_]
   }
   
-  @scala.inline
-  def ExportNamedDeclaration_(
+  inline def ExportNamedDeclaration_(
     declaration: Declaration,
     end: Double,
     loc: SourceLocation,
@@ -209,15 +193,13 @@ object Statement {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ExportNamedDeclaration_]
   }
   
-  @scala.inline
-  def ExpressionStatement_(end: Double, expression: Expression, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.ExpressionStatement_ = {
+  inline def ExpressionStatement_(end: Double, expression: Expression, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.ExpressionStatement_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ExpressionStatement")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ExpressionStatement_]
   }
   
-  @scala.inline
-  def ForInStatement_(
+  inline def ForInStatement_(
     body: Statement,
     end: Double,
     left: VariableDeclaration_ | LVal,
@@ -230,8 +212,7 @@ object Statement {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ForInStatement_]
   }
   
-  @scala.inline
-  def ForOfStatement_(
+  inline def ForOfStatement_(
     body: Statement,
     end: Double,
     left: VariableDeclaration_ | LVal,
@@ -244,8 +225,7 @@ object Statement {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ForOfStatement_]
   }
   
-  @scala.inline
-  def ForStatement_(
+  inline def ForStatement_(
     body: Statement,
     end: Double,
     init: VariableDeclaration_ | Expression,
@@ -259,8 +239,7 @@ object Statement {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ForStatement_]
   }
   
-  @scala.inline
-  def FunctionDeclaration_(
+  inline def FunctionDeclaration_(
     async: Boolean,
     body: BlockStatement_,
     end: Double,
@@ -275,8 +254,7 @@ object Statement {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.FunctionDeclaration_]
   }
   
-  @scala.inline
-  def IfStatement_(
+  inline def IfStatement_(
     alternate: Statement,
     consequent: Statement,
     end: Double,
@@ -289,8 +267,7 @@ object Statement {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.IfStatement_]
   }
   
-  @scala.inline
-  def ImportDeclaration_(
+  inline def ImportDeclaration_(
     end: Double,
     loc: SourceLocation,
     source: StringLiteral_,
@@ -302,8 +279,7 @@ object Statement {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ImportDeclaration_]
   }
   
-  @scala.inline
-  def InterfaceDeclaration_(
+  inline def InterfaceDeclaration_(
     body: ObjectTypeAnnotation_,
     end: Double,
     `extends`: js.Array[InterfaceExtends_],
@@ -318,22 +294,19 @@ object Statement {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.InterfaceDeclaration_]
   }
   
-  @scala.inline
-  def LabeledStatement_(body: Statement, end: Double, label: Identifier_, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.LabeledStatement_ = {
+  inline def LabeledStatement_(body: Statement, end: Double, label: Identifier_, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.LabeledStatement_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("LabeledStatement")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.LabeledStatement_]
   }
   
-  @scala.inline
-  def ReturnStatement_(argument: Expression, end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.ReturnStatement_ = {
+  inline def ReturnStatement_(argument: Expression, end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.ReturnStatement_ = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ReturnStatement")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ReturnStatement_]
   }
   
-  @scala.inline
-  def SwitchStatement_(
+  inline def SwitchStatement_(
     cases: js.Array[SwitchCase_],
     discriminant: Expression,
     end: Double,
@@ -345,8 +318,7 @@ object Statement {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.SwitchStatement_]
   }
   
-  @scala.inline
-  def TSDeclareFunction(
+  inline def TSDeclareFunction(
     async: Boolean,
     end: Double,
     generator: Boolean,
@@ -359,22 +331,19 @@ object Statement {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.TSDeclareFunction]
   }
   
-  @scala.inline
-  def TSEnumDeclaration(end: Double, id: Identifier_, loc: SourceLocation, members: js.Array[TSEnumMember], start: Double): typings.babelTypes.ts36Mod.TSEnumDeclaration = {
+  inline def TSEnumDeclaration(end: Double, id: Identifier_, loc: SourceLocation, members: js.Array[TSEnumMember], start: Double): typings.babelTypes.ts36Mod.TSEnumDeclaration = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], const = null, declare = null, initializer = null)
     __obj.updateDynamic("type")("TSEnumDeclaration")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.TSEnumDeclaration]
   }
   
-  @scala.inline
-  def TSExportAssignment(end: Double, expression: Expression, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.TSExportAssignment = {
+  inline def TSExportAssignment(end: Double, expression: Expression, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.TSExportAssignment = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSExportAssignment")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.TSExportAssignment]
   }
   
-  @scala.inline
-  def TSImportEqualsDeclaration(
+  inline def TSImportEqualsDeclaration(
     end: Double,
     id: Identifier_,
     loc: SourceLocation,
@@ -386,16 +355,14 @@ object Statement {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.TSImportEqualsDeclaration]
   }
   
-  @scala.inline
-  def TSInterfaceDeclaration(body: TSInterfaceBody, end: Double, id: Identifier_, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.TSInterfaceDeclaration = {
+  inline def TSInterfaceDeclaration(body: TSInterfaceBody, end: Double, id: Identifier_, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.TSInterfaceDeclaration = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], declare = null, typeParameters = null)
     __obj.updateDynamic("type")("TSInterfaceDeclaration")
     __obj.updateDynamic("extends")(null)
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.TSInterfaceDeclaration]
   }
   
-  @scala.inline
-  def TSModuleDeclaration(
+  inline def TSModuleDeclaration(
     body: TSModuleBlock | typings.babelTypes.ts36Mod.TSModuleDeclaration,
     end: Double,
     id: Identifier_ | StringLiteral_,
@@ -407,29 +374,25 @@ object Statement {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.TSModuleDeclaration]
   }
   
-  @scala.inline
-  def TSNamespaceExportDeclaration(end: Double, id: Identifier_, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.TSNamespaceExportDeclaration = {
+  inline def TSNamespaceExportDeclaration(end: Double, id: Identifier_, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.TSNamespaceExportDeclaration = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSNamespaceExportDeclaration")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.TSNamespaceExportDeclaration]
   }
   
-  @scala.inline
-  def TSTypeAliasDeclaration(end: Double, id: Identifier_, loc: SourceLocation, start: Double, typeAnnotation: TSType): typings.babelTypes.ts36Mod.TSTypeAliasDeclaration = {
+  inline def TSTypeAliasDeclaration(end: Double, id: Identifier_, loc: SourceLocation, start: Double, typeAnnotation: TSType): typings.babelTypes.ts36Mod.TSTypeAliasDeclaration = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any], declare = null, typeParameters = null)
     __obj.updateDynamic("type")("TSTypeAliasDeclaration")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.TSTypeAliasDeclaration]
   }
   
-  @scala.inline
-  def ThrowStatement_(argument: Expression, end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.ThrowStatement_ = {
+  inline def ThrowStatement_(argument: Expression, end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.ThrowStatement_ = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ThrowStatement")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ThrowStatement_]
   }
   
-  @scala.inline
-  def TryStatement_(
+  inline def TryStatement_(
     block: BlockStatement_,
     end: Double,
     finalizer: BlockStatement_,
@@ -442,8 +405,7 @@ object Statement {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.TryStatement_]
   }
   
-  @scala.inline
-  def TypeAlias_(
+  inline def TypeAlias_(
     end: Double,
     id: Identifier_,
     loc: SourceLocation,
@@ -456,8 +418,7 @@ object Statement {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.TypeAlias_]
   }
   
-  @scala.inline
-  def VariableDeclaration_(
+  inline def VariableDeclaration_(
     declarations: js.Array[VariableDeclarator_],
     end: Double,
     kind: `var` | let | const,
@@ -469,15 +430,13 @@ object Statement {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.VariableDeclaration_]
   }
   
-  @scala.inline
-  def WhileStatement_(body: Statement, end: Double, loc: SourceLocation, start: Double, test: Expression): typings.babelTypes.ts36Mod.WhileStatement_ = {
+  inline def WhileStatement_(body: Statement, end: Double, loc: SourceLocation, start: Double, test: Expression): typings.babelTypes.ts36Mod.WhileStatement_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("WhileStatement")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.WhileStatement_]
   }
   
-  @scala.inline
-  def WithStatement_(
+  inline def WithStatement_(
     body: BlockStatement_ | Statement,
     end: Double,
     loc: SourceLocation,

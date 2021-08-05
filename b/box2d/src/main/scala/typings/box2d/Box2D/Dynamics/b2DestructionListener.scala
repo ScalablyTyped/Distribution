@@ -21,19 +21,15 @@ trait b2DestructionListener extends StObject {
 }
 object b2DestructionListener {
   
-  @scala.inline
-  def apply(SayGoodbyeFixture: b2Fixture => Unit, SayGoodbyeJoint: b2Joint => Unit): b2DestructionListener = {
+  inline def apply(SayGoodbyeFixture: b2Fixture => Unit, SayGoodbyeJoint: b2Joint => Unit): b2DestructionListener = {
     val __obj = js.Dynamic.literal(SayGoodbyeFixture = js.Any.fromFunction1(SayGoodbyeFixture), SayGoodbyeJoint = js.Any.fromFunction1(SayGoodbyeJoint))
     __obj.asInstanceOf[b2DestructionListener]
   }
   
-  @scala.inline
-  implicit class b2DestructionListenerMutableBuilder[Self <: b2DestructionListener] (val x: Self) extends AnyVal {
+  extension [Self <: b2DestructionListener](x: Self) {
     
-    @scala.inline
-    def setSayGoodbyeFixture(value: b2Fixture => Unit): Self = StObject.set(x, "SayGoodbyeFixture", js.Any.fromFunction1(value))
+    inline def setSayGoodbyeFixture(value: b2Fixture => Unit): Self = StObject.set(x, "SayGoodbyeFixture", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSayGoodbyeJoint(value: b2Joint => Unit): Self = StObject.set(x, "SayGoodbyeJoint", js.Any.fromFunction1(value))
+    inline def setSayGoodbyeJoint(value: b2Joint => Unit): Self = StObject.set(x, "SayGoodbyeJoint", js.Any.fromFunction1(value))
   }
 }

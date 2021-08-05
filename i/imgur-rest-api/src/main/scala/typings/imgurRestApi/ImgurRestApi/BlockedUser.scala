@@ -12,19 +12,15 @@ trait BlockedUser extends StObject {
 }
 object BlockedUser {
   
-  @scala.inline
-  def apply(blocked_id: Double, blocked_url: String): BlockedUser = {
+  inline def apply(blocked_id: Double, blocked_url: String): BlockedUser = {
     val __obj = js.Dynamic.literal(blocked_id = blocked_id.asInstanceOf[js.Any], blocked_url = blocked_url.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockedUser]
   }
   
-  @scala.inline
-  implicit class BlockedUserMutableBuilder[Self <: BlockedUser] (val x: Self) extends AnyVal {
+  extension [Self <: BlockedUser](x: Self) {
     
-    @scala.inline
-    def setBlocked_id(value: Double): Self = StObject.set(x, "blocked_id", value.asInstanceOf[js.Any])
+    inline def setBlocked_id(value: Double): Self = StObject.set(x, "blocked_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlocked_url(value: String): Self = StObject.set(x, "blocked_url", value.asInstanceOf[js.Any])
+    inline def setBlocked_url(value: String): Self = StObject.set(x, "blocked_url", value.asInstanceOf[js.Any])
   }
 }

@@ -10,6 +10,5 @@ object pipeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def pipe(transformers: js.Function*): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(transformers.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  inline def pipe(transformers: js.Function*): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(transformers.asInstanceOf[js.Any]).asInstanceOf[js.Function]
 }

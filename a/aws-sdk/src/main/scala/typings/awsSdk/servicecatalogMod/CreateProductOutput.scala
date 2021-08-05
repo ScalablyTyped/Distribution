@@ -23,34 +23,25 @@ trait CreateProductOutput extends StObject {
 }
 object CreateProductOutput {
   
-  @scala.inline
-  def apply(): CreateProductOutput = {
+  inline def apply(): CreateProductOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateProductOutput]
   }
   
-  @scala.inline
-  implicit class CreateProductOutputMutableBuilder[Self <: CreateProductOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateProductOutput](x: Self) {
     
-    @scala.inline
-    def setProductViewDetail(value: ProductViewDetail): Self = StObject.set(x, "ProductViewDetail", value.asInstanceOf[js.Any])
+    inline def setProductViewDetail(value: ProductViewDetail): Self = StObject.set(x, "ProductViewDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductViewDetailUndefined: Self = StObject.set(x, "ProductViewDetail", js.undefined)
+    inline def setProductViewDetailUndefined: Self = StObject.set(x, "ProductViewDetail", js.undefined)
     
-    @scala.inline
-    def setProvisioningArtifactDetail(value: ProvisioningArtifactDetail): Self = StObject.set(x, "ProvisioningArtifactDetail", value.asInstanceOf[js.Any])
+    inline def setProvisioningArtifactDetail(value: ProvisioningArtifactDetail): Self = StObject.set(x, "ProvisioningArtifactDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisioningArtifactDetailUndefined: Self = StObject.set(x, "ProvisioningArtifactDetail", js.undefined)
+    inline def setProvisioningArtifactDetailUndefined: Self = StObject.set(x, "ProvisioningArtifactDetail", js.undefined)
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

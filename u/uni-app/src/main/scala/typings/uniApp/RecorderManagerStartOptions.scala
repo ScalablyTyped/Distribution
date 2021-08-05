@@ -38,49 +38,35 @@ trait RecorderManagerStartOptions extends StObject {
 }
 object RecorderManagerStartOptions {
   
-  @scala.inline
-  def apply(): RecorderManagerStartOptions = {
+  inline def apply(): RecorderManagerStartOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecorderManagerStartOptions]
   }
   
-  @scala.inline
-  implicit class RecorderManagerStartOptionsMutableBuilder[Self <: RecorderManagerStartOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RecorderManagerStartOptions](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setEncodeBitRate(value: Double): Self = StObject.set(x, "encodeBitRate", value.asInstanceOf[js.Any])
+    inline def setEncodeBitRate(value: Double): Self = StObject.set(x, "encodeBitRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodeBitRateUndefined: Self = StObject.set(x, "encodeBitRate", js.undefined)
+    inline def setEncodeBitRateUndefined: Self = StObject.set(x, "encodeBitRate", js.undefined)
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setFrameSize(value: Double): Self = StObject.set(x, "frameSize", value.asInstanceOf[js.Any])
+    inline def setFrameSize(value: Double): Self = StObject.set(x, "frameSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameSizeUndefined: Self = StObject.set(x, "frameSize", js.undefined)
+    inline def setFrameSizeUndefined: Self = StObject.set(x, "frameSize", js.undefined)
     
-    @scala.inline
-    def setNumberOfChannels(value: Double): Self = StObject.set(x, "numberOfChannels", value.asInstanceOf[js.Any])
+    inline def setNumberOfChannels(value: Double): Self = StObject.set(x, "numberOfChannels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfChannelsUndefined: Self = StObject.set(x, "numberOfChannels", js.undefined)
+    inline def setNumberOfChannelsUndefined: Self = StObject.set(x, "numberOfChannels", js.undefined)
     
-    @scala.inline
-    def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
+    inline def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
+    inline def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
   }
 }

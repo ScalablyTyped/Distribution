@@ -16,22 +16,17 @@ trait TargetPoolsAddInstanceRequest extends StObject {
 }
 object TargetPoolsAddInstanceRequest {
   
-  @scala.inline
-  def apply(): TargetPoolsAddInstanceRequest = {
+  inline def apply(): TargetPoolsAddInstanceRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TargetPoolsAddInstanceRequest]
   }
   
-  @scala.inline
-  implicit class TargetPoolsAddInstanceRequestMutableBuilder[Self <: TargetPoolsAddInstanceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: TargetPoolsAddInstanceRequest](x: Self) {
     
-    @scala.inline
-    def setInstances(value: js.Array[InstanceReference]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
+    inline def setInstances(value: js.Array[InstanceReference]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
+    inline def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
     
-    @scala.inline
-    def setInstancesVarargs(value: InstanceReference*): Self = StObject.set(x, "instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: InstanceReference*): Self = StObject.set(x, "instances", js.Array(value :_*))
   }
 }

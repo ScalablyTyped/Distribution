@@ -12,19 +12,15 @@ trait IBooleanValue extends StObject {
 }
 object IBooleanValue {
   
-  @scala.inline
-  def apply(Clone: () => IBooleanValue, Value: Boolean): IBooleanValue = {
+  inline def apply(Clone: () => IBooleanValue, Value: Boolean): IBooleanValue = {
     val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBooleanValue]
   }
   
-  @scala.inline
-  implicit class IBooleanValueMutableBuilder[Self <: IBooleanValue] (val x: Self) extends AnyVal {
+  extension [Self <: IBooleanValue](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => IBooleanValue): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IBooleanValue): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setValue(value: Boolean): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Boolean): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

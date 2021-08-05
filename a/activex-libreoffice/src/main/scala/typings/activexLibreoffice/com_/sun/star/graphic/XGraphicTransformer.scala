@@ -39,8 +39,7 @@ trait XGraphicTransformer
 }
 object XGraphicTransformer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     applyBrightnessContrast: (XGraphic, Double, Double, Boolean) => XGraphic,
     applyDuotone: (XGraphic, Double, Double) => XGraphic,
@@ -52,16 +51,12 @@ object XGraphicTransformer {
     __obj.asInstanceOf[XGraphicTransformer]
   }
   
-  @scala.inline
-  implicit class XGraphicTransformerMutableBuilder[Self <: XGraphicTransformer] (val x: Self) extends AnyVal {
+  extension [Self <: XGraphicTransformer](x: Self) {
     
-    @scala.inline
-    def setApplyBrightnessContrast(value: (XGraphic, Double, Double, Boolean) => XGraphic): Self = StObject.set(x, "applyBrightnessContrast", js.Any.fromFunction4(value))
+    inline def setApplyBrightnessContrast(value: (XGraphic, Double, Double, Boolean) => XGraphic): Self = StObject.set(x, "applyBrightnessContrast", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setApplyDuotone(value: (XGraphic, Double, Double) => XGraphic): Self = StObject.set(x, "applyDuotone", js.Any.fromFunction3(value))
+    inline def setApplyDuotone(value: (XGraphic, Double, Double) => XGraphic): Self = StObject.set(x, "applyDuotone", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setColorChange(value: (XGraphic, Double, Double, Double, Double) => XGraphic): Self = StObject.set(x, "colorChange", js.Any.fromFunction5(value))
+    inline def setColorChange(value: (XGraphic, Double, Double, Double, Double) => XGraphic): Self = StObject.set(x, "colorChange", js.Any.fromFunction5(value))
   }
 }

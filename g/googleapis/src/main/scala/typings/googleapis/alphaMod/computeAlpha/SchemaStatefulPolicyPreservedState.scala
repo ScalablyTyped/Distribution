@@ -18,19 +18,15 @@ trait SchemaStatefulPolicyPreservedState extends StObject {
 }
 object SchemaStatefulPolicyPreservedState {
   
-  @scala.inline
-  def apply(): SchemaStatefulPolicyPreservedState = {
+  inline def apply(): SchemaStatefulPolicyPreservedState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaStatefulPolicyPreservedState]
   }
   
-  @scala.inline
-  implicit class SchemaStatefulPolicyPreservedStateMutableBuilder[Self <: SchemaStatefulPolicyPreservedState] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaStatefulPolicyPreservedState](x: Self) {
     
-    @scala.inline
-    def setDisks(value: StringDictionary[SchemaStatefulPolicyPreservedStateDiskDevice]): Self = StObject.set(x, "disks", value.asInstanceOf[js.Any])
+    inline def setDisks(value: StringDictionary[SchemaStatefulPolicyPreservedStateDiskDevice]): Self = StObject.set(x, "disks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisksUndefined: Self = StObject.set(x, "disks", js.undefined)
+    inline def setDisksUndefined: Self = StObject.set(x, "disks", js.undefined)
   }
 }

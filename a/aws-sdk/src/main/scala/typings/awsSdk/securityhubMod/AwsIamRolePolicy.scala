@@ -13,19 +13,15 @@ trait AwsIamRolePolicy extends StObject {
 }
 object AwsIamRolePolicy {
   
-  @scala.inline
-  def apply(): AwsIamRolePolicy = {
+  inline def apply(): AwsIamRolePolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsIamRolePolicy]
   }
   
-  @scala.inline
-  implicit class AwsIamRolePolicyMutableBuilder[Self <: AwsIamRolePolicy] (val x: Self) extends AnyVal {
+  extension [Self <: AwsIamRolePolicy](x: Self) {
     
-    @scala.inline
-    def setPolicyName(value: NonEmptyString): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
+    inline def setPolicyName(value: NonEmptyString): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyNameUndefined: Self = StObject.set(x, "PolicyName", js.undefined)
+    inline def setPolicyNameUndefined: Self = StObject.set(x, "PolicyName", js.undefined)
   }
 }

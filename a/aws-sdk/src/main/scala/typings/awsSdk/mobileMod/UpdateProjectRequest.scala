@@ -18,22 +18,17 @@ trait UpdateProjectRequest extends StObject {
 }
 object UpdateProjectRequest {
   
-  @scala.inline
-  def apply(projectId: ProjectId): UpdateProjectRequest = {
+  inline def apply(projectId: ProjectId): UpdateProjectRequest = {
     val __obj = js.Dynamic.literal(projectId = projectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateProjectRequest]
   }
   
-  @scala.inline
-  implicit class UpdateProjectRequestMutableBuilder[Self <: UpdateProjectRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateProjectRequest](x: Self) {
     
-    @scala.inline
-    def setContents(value: Contents): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+    inline def setContents(value: Contents): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
+    inline def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: ProjectId): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: ProjectId): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
   }
 }

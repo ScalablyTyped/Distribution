@@ -158,8 +158,7 @@ trait GlideTime extends StObject {
 }
 object GlideTime {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getByFormat: String => String,
     getDisplayValue: () => String,
     getDisplayValueInternal: () => String,
@@ -179,49 +178,34 @@ object GlideTime {
     __obj.asInstanceOf[GlideTime]
   }
   
-  @scala.inline
-  implicit class GlideTimeMutableBuilder[Self <: GlideTime] (val x: Self) extends AnyVal {
+  extension [Self <: GlideTime](x: Self) {
     
-    @scala.inline
-    def setGetByFormat(value: String => String): Self = StObject.set(x, "getByFormat", js.Any.fromFunction1(value))
+    inline def setGetByFormat(value: String => String): Self = StObject.set(x, "getByFormat", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDisplayValue(value: () => String): Self = StObject.set(x, "getDisplayValue", js.Any.fromFunction0(value))
+    inline def setGetDisplayValue(value: () => String): Self = StObject.set(x, "getDisplayValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDisplayValueInternal(value: () => String): Self = StObject.set(x, "getDisplayValueInternal", js.Any.fromFunction0(value))
+    inline def setGetDisplayValueInternal(value: () => String): Self = StObject.set(x, "getDisplayValueInternal", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHourLocalTime(value: () => Double): Self = StObject.set(x, "getHourLocalTime", js.Any.fromFunction0(value))
+    inline def setGetHourLocalTime(value: () => Double): Self = StObject.set(x, "getHourLocalTime", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHourOfDayLocalTime(value: () => Double): Self = StObject.set(x, "getHourOfDayLocalTime", js.Any.fromFunction0(value))
+    inline def setGetHourOfDayLocalTime(value: () => Double): Self = StObject.set(x, "getHourOfDayLocalTime", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHourOfDayUTC(value: () => Double): Self = StObject.set(x, "getHourOfDayUTC", js.Any.fromFunction0(value))
+    inline def setGetHourOfDayUTC(value: () => Double): Self = StObject.set(x, "getHourOfDayUTC", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHourUTC(value: () => Double): Self = StObject.set(x, "getHourUTC", js.Any.fromFunction0(value))
+    inline def setGetHourUTC(value: () => Double): Self = StObject.set(x, "getHourUTC", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMinutesLocalTime(value: () => Double): Self = StObject.set(x, "getMinutesLocalTime", js.Any.fromFunction0(value))
+    inline def setGetMinutesLocalTime(value: () => Double): Self = StObject.set(x, "getMinutesLocalTime", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMinutesUTC(value: () => Double): Self = StObject.set(x, "getMinutesUTC", js.Any.fromFunction0(value))
+    inline def setGetMinutesUTC(value: () => Double): Self = StObject.set(x, "getMinutesUTC", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSeconds(value: () => Double): Self = StObject.set(x, "getSeconds", js.Any.fromFunction0(value))
+    inline def setGetSeconds(value: () => Double): Self = StObject.set(x, "getSeconds", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetValue(value: () => String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetDisplayValue(value: String => Unit): Self = StObject.set(x, "setDisplayValue", js.Any.fromFunction1(value))
+    inline def setSetDisplayValue(value: String => Unit): Self = StObject.set(x, "setDisplayValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetValue(value: String => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: String => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSubtract(value: (GlideTime, GlideTime) => GlideDuration): Self = StObject.set(x, "subtract", js.Any.fromFunction2(value))
+    inline def setSubtract(value: (GlideTime, GlideTime) => GlideDuration): Self = StObject.set(x, "subtract", js.Any.fromFunction2(value))
   }
 }

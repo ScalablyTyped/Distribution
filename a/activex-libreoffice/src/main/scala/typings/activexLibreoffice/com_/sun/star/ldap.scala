@@ -27,17 +27,14 @@ object ldap {
   }
   object LdapGenericException {
     
-    @scala.inline
-    def apply(Context: XInterface, ErrorCode: Double, Message: String): LdapGenericException = {
+    inline def apply(Context: XInterface, ErrorCode: Double, Message: String): LdapGenericException = {
       val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], ErrorCode = ErrorCode.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any])
       __obj.asInstanceOf[LdapGenericException]
     }
     
-    @scala.inline
-    implicit class LdapGenericExceptionMutableBuilder[Self <: LdapGenericException] (val x: Self) extends AnyVal {
+    extension [Self <: LdapGenericException](x: Self) {
       
-      @scala.inline
-      def setErrorCode(value: Double): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
+      inline def setErrorCode(value: Double): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     }
   }
 }

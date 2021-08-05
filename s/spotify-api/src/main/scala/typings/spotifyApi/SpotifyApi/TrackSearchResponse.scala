@@ -16,16 +16,13 @@ trait TrackSearchResponse extends StObject {
 }
 object TrackSearchResponse {
   
-  @scala.inline
-  def apply(tracks: PagingObject[TrackObjectFull]): TrackSearchResponse = {
+  inline def apply(tracks: PagingObject[TrackObjectFull]): TrackSearchResponse = {
     val __obj = js.Dynamic.literal(tracks = tracks.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrackSearchResponse]
   }
   
-  @scala.inline
-  implicit class TrackSearchResponseMutableBuilder[Self <: TrackSearchResponse] (val x: Self) extends AnyVal {
+  extension [Self <: TrackSearchResponse](x: Self) {
     
-    @scala.inline
-    def setTracks(value: PagingObject[TrackObjectFull]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
+    inline def setTracks(value: PagingObject[TrackObjectFull]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
   }
 }

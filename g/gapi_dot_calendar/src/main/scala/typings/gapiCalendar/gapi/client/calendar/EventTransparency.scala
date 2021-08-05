@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EventTransparency extends StObject
 object EventTransparency {
   
-  @scala.inline
-  def opaque: typings.gapiCalendar.gapiCalendarStrings.opaque = "opaque".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.opaque]
+  inline def opaque: typings.gapiCalendar.gapiCalendarStrings.opaque = "opaque".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.opaque]
   
-  @scala.inline
-  def transparent: typings.gapiCalendar.gapiCalendarStrings.transparent = "transparent".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.transparent]
+  inline def transparent: typings.gapiCalendar.gapiCalendarStrings.transparent = "transparent".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.transparent]
 }

@@ -18,25 +18,19 @@ trait ImageTestsConfiguration extends StObject {
 }
 object ImageTestsConfiguration {
   
-  @scala.inline
-  def apply(): ImageTestsConfiguration = {
+  inline def apply(): ImageTestsConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImageTestsConfiguration]
   }
   
-  @scala.inline
-  implicit class ImageTestsConfigurationMutableBuilder[Self <: ImageTestsConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ImageTestsConfiguration](x: Self) {
     
-    @scala.inline
-    def setImageTestsEnabled(value: NullableBoolean): Self = StObject.set(x, "imageTestsEnabled", value.asInstanceOf[js.Any])
+    inline def setImageTestsEnabled(value: NullableBoolean): Self = StObject.set(x, "imageTestsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageTestsEnabledUndefined: Self = StObject.set(x, "imageTestsEnabled", js.undefined)
+    inline def setImageTestsEnabledUndefined: Self = StObject.set(x, "imageTestsEnabled", js.undefined)
     
-    @scala.inline
-    def setTimeoutMinutes(value: ImageTestsTimeoutMinutes): Self = StObject.set(x, "timeoutMinutes", value.asInstanceOf[js.Any])
+    inline def setTimeoutMinutes(value: ImageTestsTimeoutMinutes): Self = StObject.set(x, "timeoutMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutMinutesUndefined: Self = StObject.set(x, "timeoutMinutes", js.undefined)
+    inline def setTimeoutMinutesUndefined: Self = StObject.set(x, "timeoutMinutes", js.undefined)
   }
 }

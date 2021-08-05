@@ -15,31 +15,23 @@ trait Field extends StObject {
 }
 object Field {
   
-  @scala.inline
-  def apply(): Field = {
+  inline def apply(): Field = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Field]
   }
   
-  @scala.inline
-  implicit class FieldMutableBuilder[Self <: Field] (val x: Self) extends AnyVal {
+  extension [Self <: Field](x: Self) {
     
-    @scala.inline
-    def setField(value: dxFilterBuilderField): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: dxFilterBuilderField): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setValue(value: String | Double | typings.std.Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String | Double | typings.std.Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueText(value: String): Self = StObject.set(x, "valueText", value.asInstanceOf[js.Any])
+    inline def setValueText(value: String): Self = StObject.set(x, "valueText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueTextUndefined: Self = StObject.set(x, "valueText", js.undefined)
+    inline def setValueTextUndefined: Self = StObject.set(x, "valueText", js.undefined)
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

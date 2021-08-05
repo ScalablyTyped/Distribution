@@ -10,17 +10,14 @@ trait IEvent extends StObject {
 }
 object IEvent {
   
-  @scala.inline
-  def apply(`type`: String): IEvent = {
+  inline def apply(`type`: String): IEvent = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEvent]
   }
   
-  @scala.inline
-  implicit class IEventMutableBuilder[Self <: IEvent] (val x: Self) extends AnyVal {
+  extension [Self <: IEvent](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

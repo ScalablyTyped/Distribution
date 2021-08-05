@@ -156,14 +156,11 @@ object CanvasGauges {
   trait FontStyle extends StObject
   object FontStyle {
     
-    @scala.inline
-    def italic: typings.canvasGauges.canvasGaugesStrings.italic = "italic".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.italic]
+    inline def italic: typings.canvasGauges.canvasGaugesStrings.italic = "italic".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.italic]
     
-    @scala.inline
-    def normal: typings.canvasGauges.canvasGaugesStrings.normal = "normal".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.normal]
+    inline def normal: typings.canvasGauges.canvasGaugesStrings.normal = "normal".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.normal]
     
-    @scala.inline
-    def oblique: typings.canvasGauges.canvasGaugesStrings.oblique = "oblique".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.oblique]
+    inline def oblique: typings.canvasGauges.canvasGaugesStrings.oblique = "oblique".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.oblique]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -184,44 +181,31 @@ object CanvasGauges {
   trait FontWeight extends StObject
   object FontWeight {
     
-    @scala.inline
-    def `100`: typings.canvasGauges.canvasGaugesStrings.`100` = "100".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.`100`]
+    inline def `100`: typings.canvasGauges.canvasGaugesStrings.`100` = "100".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.`100`]
     
-    @scala.inline
-    def `200`: typings.canvasGauges.canvasGaugesStrings.`200` = "200".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.`200`]
+    inline def `200`: typings.canvasGauges.canvasGaugesStrings.`200` = "200".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.`200`]
     
-    @scala.inline
-    def `300`: typings.canvasGauges.canvasGaugesStrings.`300` = "300".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.`300`]
+    inline def `300`: typings.canvasGauges.canvasGaugesStrings.`300` = "300".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.`300`]
     
-    @scala.inline
-    def `400`: typings.canvasGauges.canvasGaugesStrings.`400` = "400".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.`400`]
+    inline def `400`: typings.canvasGauges.canvasGaugesStrings.`400` = "400".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.`400`]
     
-    @scala.inline
-    def `500`: typings.canvasGauges.canvasGaugesStrings.`500` = "500".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.`500`]
+    inline def `500`: typings.canvasGauges.canvasGaugesStrings.`500` = "500".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.`500`]
     
-    @scala.inline
-    def `600`: typings.canvasGauges.canvasGaugesStrings.`600` = "600".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.`600`]
+    inline def `600`: typings.canvasGauges.canvasGaugesStrings.`600` = "600".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.`600`]
     
-    @scala.inline
-    def `700`: typings.canvasGauges.canvasGaugesStrings.`700` = "700".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.`700`]
+    inline def `700`: typings.canvasGauges.canvasGaugesStrings.`700` = "700".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.`700`]
     
-    @scala.inline
-    def `800`: typings.canvasGauges.canvasGaugesStrings.`800` = "800".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.`800`]
+    inline def `800`: typings.canvasGauges.canvasGaugesStrings.`800` = "800".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.`800`]
     
-    @scala.inline
-    def `900`: typings.canvasGauges.canvasGaugesStrings.`900` = "900".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.`900`]
+    inline def `900`: typings.canvasGauges.canvasGaugesStrings.`900` = "900".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.`900`]
     
-    @scala.inline
-    def bold: typings.canvasGauges.canvasGaugesStrings.bold = "bold".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.bold]
+    inline def bold: typings.canvasGauges.canvasGaugesStrings.bold = "bold".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.bold]
     
-    @scala.inline
-    def bolder: typings.canvasGauges.canvasGaugesStrings.bolder = "bolder".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.bolder]
+    inline def bolder: typings.canvasGauges.canvasGaugesStrings.bolder = "bolder".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.bolder]
     
-    @scala.inline
-    def lighter: typings.canvasGauges.canvasGaugesStrings.lighter = "lighter".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.lighter]
+    inline def lighter: typings.canvasGauges.canvasGaugesStrings.lighter = "lighter".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.lighter]
     
-    @scala.inline
-    def normal: typings.canvasGauges.canvasGaugesStrings.normal = "normal".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.normal]
+    inline def normal: typings.canvasGauges.canvasGaugesStrings.normal = "normal".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.normal]
   }
   
   trait GenericOptions extends StObject {
@@ -408,560 +392,376 @@ object CanvasGauges {
   }
   object GenericOptions {
     
-    @scala.inline
-    def apply(renderTo: RenderTarget): GenericOptions = {
+    inline def apply(renderTo: RenderTarget): GenericOptions = {
       val __obj = js.Dynamic.literal(renderTo = renderTo.asInstanceOf[js.Any])
       __obj.asInstanceOf[GenericOptions]
     }
     
-    @scala.inline
-    implicit class GenericOptionsMutableBuilder[Self <: GenericOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GenericOptions](x: Self) {
       
-      @scala.inline
-      def setAnimateOnInit(value: Boolean): Self = StObject.set(x, "animateOnInit", value.asInstanceOf[js.Any])
+      inline def setAnimateOnInit(value: Boolean): Self = StObject.set(x, "animateOnInit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimateOnInitUndefined: Self = StObject.set(x, "animateOnInit", js.undefined)
+      inline def setAnimateOnInitUndefined: Self = StObject.set(x, "animateOnInit", js.undefined)
       
-      @scala.inline
-      def setAnimatedValue(value: Boolean): Self = StObject.set(x, "animatedValue", value.asInstanceOf[js.Any])
+      inline def setAnimatedValue(value: Boolean): Self = StObject.set(x, "animatedValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimatedValueUndefined: Self = StObject.set(x, "animatedValue", js.undefined)
+      inline def setAnimatedValueUndefined: Self = StObject.set(x, "animatedValue", js.undefined)
       
-      @scala.inline
-      def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
+      inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
+      inline def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
       
-      @scala.inline
-      def setAnimationRule(value: String | AnimationRule): Self = StObject.set(x, "animationRule", value.asInstanceOf[js.Any])
+      inline def setAnimationRule(value: String | AnimationRule): Self = StObject.set(x, "animationRule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationRuleFunction1(value: /* percent */ Double => Double): Self = StObject.set(x, "animationRule", js.Any.fromFunction1(value))
+      inline def setAnimationRuleFunction1(value: /* percent */ Double => Double): Self = StObject.set(x, "animationRule", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAnimationRuleUndefined: Self = StObject.set(x, "animationRule", js.undefined)
+      inline def setAnimationRuleUndefined: Self = StObject.set(x, "animationRule", js.undefined)
       
-      @scala.inline
-      def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+      inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
-      @scala.inline
-      def setBarProgress(value: Boolean): Self = StObject.set(x, "barProgress", value.asInstanceOf[js.Any])
+      inline def setBarProgress(value: Boolean): Self = StObject.set(x, "barProgress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBarProgressUndefined: Self = StObject.set(x, "barProgress", js.undefined)
+      inline def setBarProgressUndefined: Self = StObject.set(x, "barProgress", js.undefined)
       
-      @scala.inline
-      def setBarShadow(value: Double): Self = StObject.set(x, "barShadow", value.asInstanceOf[js.Any])
+      inline def setBarShadow(value: Double): Self = StObject.set(x, "barShadow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBarShadowUndefined: Self = StObject.set(x, "barShadow", js.undefined)
+      inline def setBarShadowUndefined: Self = StObject.set(x, "barShadow", js.undefined)
       
-      @scala.inline
-      def setBarStrokeWidth(value: Double): Self = StObject.set(x, "barStrokeWidth", value.asInstanceOf[js.Any])
+      inline def setBarStrokeWidth(value: Double): Self = StObject.set(x, "barStrokeWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBarStrokeWidthUndefined: Self = StObject.set(x, "barStrokeWidth", js.undefined)
+      inline def setBarStrokeWidthUndefined: Self = StObject.set(x, "barStrokeWidth", js.undefined)
       
-      @scala.inline
-      def setBarWidth(value: Double): Self = StObject.set(x, "barWidth", value.asInstanceOf[js.Any])
+      inline def setBarWidth(value: Double): Self = StObject.set(x, "barWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBarWidthUndefined: Self = StObject.set(x, "barWidth", js.undefined)
+      inline def setBarWidthUndefined: Self = StObject.set(x, "barWidth", js.undefined)
       
-      @scala.inline
-      def setBorderInnerWidth(value: Double): Self = StObject.set(x, "borderInnerWidth", value.asInstanceOf[js.Any])
+      inline def setBorderInnerWidth(value: Double): Self = StObject.set(x, "borderInnerWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderInnerWidthUndefined: Self = StObject.set(x, "borderInnerWidth", js.undefined)
+      inline def setBorderInnerWidthUndefined: Self = StObject.set(x, "borderInnerWidth", js.undefined)
       
-      @scala.inline
-      def setBorderMiddleWidth(value: Double): Self = StObject.set(x, "borderMiddleWidth", value.asInstanceOf[js.Any])
+      inline def setBorderMiddleWidth(value: Double): Self = StObject.set(x, "borderMiddleWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderMiddleWidthUndefined: Self = StObject.set(x, "borderMiddleWidth", js.undefined)
+      inline def setBorderMiddleWidthUndefined: Self = StObject.set(x, "borderMiddleWidth", js.undefined)
       
-      @scala.inline
-      def setBorderOuterWidth(value: Double): Self = StObject.set(x, "borderOuterWidth", value.asInstanceOf[js.Any])
+      inline def setBorderOuterWidth(value: Double): Self = StObject.set(x, "borderOuterWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderOuterWidthUndefined: Self = StObject.set(x, "borderOuterWidth", js.undefined)
+      inline def setBorderOuterWidthUndefined: Self = StObject.set(x, "borderOuterWidth", js.undefined)
       
-      @scala.inline
-      def setBorderShadowWidth(value: Double): Self = StObject.set(x, "borderShadowWidth", value.asInstanceOf[js.Any])
+      inline def setBorderShadowWidth(value: Double): Self = StObject.set(x, "borderShadowWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderShadowWidthUndefined: Self = StObject.set(x, "borderShadowWidth", js.undefined)
+      inline def setBorderShadowWidthUndefined: Self = StObject.set(x, "borderShadowWidth", js.undefined)
       
-      @scala.inline
-      def setBorders(value: Boolean): Self = StObject.set(x, "borders", value.asInstanceOf[js.Any])
+      inline def setBorders(value: Boolean): Self = StObject.set(x, "borders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBordersUndefined: Self = StObject.set(x, "borders", js.undefined)
+      inline def setBordersUndefined: Self = StObject.set(x, "borders", js.undefined)
       
-      @scala.inline
-      def setColorBar(value: String): Self = StObject.set(x, "colorBar", value.asInstanceOf[js.Any])
+      inline def setColorBar(value: String): Self = StObject.set(x, "colorBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorBarProgress(value: String): Self = StObject.set(x, "colorBarProgress", value.asInstanceOf[js.Any])
+      inline def setColorBarProgress(value: String): Self = StObject.set(x, "colorBarProgress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorBarProgressUndefined: Self = StObject.set(x, "colorBarProgress", js.undefined)
+      inline def setColorBarProgressUndefined: Self = StObject.set(x, "colorBarProgress", js.undefined)
       
-      @scala.inline
-      def setColorBarShadow(value: String): Self = StObject.set(x, "colorBarShadow", value.asInstanceOf[js.Any])
+      inline def setColorBarShadow(value: String): Self = StObject.set(x, "colorBarShadow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorBarShadowUndefined: Self = StObject.set(x, "colorBarShadow", js.undefined)
+      inline def setColorBarShadowUndefined: Self = StObject.set(x, "colorBarShadow", js.undefined)
       
-      @scala.inline
-      def setColorBarStroke(value: String): Self = StObject.set(x, "colorBarStroke", value.asInstanceOf[js.Any])
+      inline def setColorBarStroke(value: String): Self = StObject.set(x, "colorBarStroke", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorBarStrokeUndefined: Self = StObject.set(x, "colorBarStroke", js.undefined)
+      inline def setColorBarStrokeUndefined: Self = StObject.set(x, "colorBarStroke", js.undefined)
       
-      @scala.inline
-      def setColorBarUndefined: Self = StObject.set(x, "colorBar", js.undefined)
+      inline def setColorBarUndefined: Self = StObject.set(x, "colorBar", js.undefined)
       
-      @scala.inline
-      def setColorBorderInner(value: String): Self = StObject.set(x, "colorBorderInner", value.asInstanceOf[js.Any])
+      inline def setColorBorderInner(value: String): Self = StObject.set(x, "colorBorderInner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorBorderInnerEnd(value: String): Self = StObject.set(x, "colorBorderInnerEnd", value.asInstanceOf[js.Any])
+      inline def setColorBorderInnerEnd(value: String): Self = StObject.set(x, "colorBorderInnerEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorBorderInnerEndUndefined: Self = StObject.set(x, "colorBorderInnerEnd", js.undefined)
+      inline def setColorBorderInnerEndUndefined: Self = StObject.set(x, "colorBorderInnerEnd", js.undefined)
       
-      @scala.inline
-      def setColorBorderInnerUndefined: Self = StObject.set(x, "colorBorderInner", js.undefined)
+      inline def setColorBorderInnerUndefined: Self = StObject.set(x, "colorBorderInner", js.undefined)
       
-      @scala.inline
-      def setColorBorderMiddle(value: String): Self = StObject.set(x, "colorBorderMiddle", value.asInstanceOf[js.Any])
+      inline def setColorBorderMiddle(value: String): Self = StObject.set(x, "colorBorderMiddle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorBorderMiddleEnd(value: String): Self = StObject.set(x, "colorBorderMiddleEnd", value.asInstanceOf[js.Any])
+      inline def setColorBorderMiddleEnd(value: String): Self = StObject.set(x, "colorBorderMiddleEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorBorderMiddleEndUndefined: Self = StObject.set(x, "colorBorderMiddleEnd", js.undefined)
+      inline def setColorBorderMiddleEndUndefined: Self = StObject.set(x, "colorBorderMiddleEnd", js.undefined)
       
-      @scala.inline
-      def setColorBorderMiddleUndefined: Self = StObject.set(x, "colorBorderMiddle", js.undefined)
+      inline def setColorBorderMiddleUndefined: Self = StObject.set(x, "colorBorderMiddle", js.undefined)
       
-      @scala.inline
-      def setColorBorderOuter(value: String): Self = StObject.set(x, "colorBorderOuter", value.asInstanceOf[js.Any])
+      inline def setColorBorderOuter(value: String): Self = StObject.set(x, "colorBorderOuter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorBorderOuterEnd(value: String): Self = StObject.set(x, "colorBorderOuterEnd", value.asInstanceOf[js.Any])
+      inline def setColorBorderOuterEnd(value: String): Self = StObject.set(x, "colorBorderOuterEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorBorderOuterEndUndefined: Self = StObject.set(x, "colorBorderOuterEnd", js.undefined)
+      inline def setColorBorderOuterEndUndefined: Self = StObject.set(x, "colorBorderOuterEnd", js.undefined)
       
-      @scala.inline
-      def setColorBorderOuterUndefined: Self = StObject.set(x, "colorBorderOuter", js.undefined)
+      inline def setColorBorderOuterUndefined: Self = StObject.set(x, "colorBorderOuter", js.undefined)
       
-      @scala.inline
-      def setColorBorderShadow(value: String): Self = StObject.set(x, "colorBorderShadow", value.asInstanceOf[js.Any])
+      inline def setColorBorderShadow(value: String): Self = StObject.set(x, "colorBorderShadow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorBorderShadowUndefined: Self = StObject.set(x, "colorBorderShadow", js.undefined)
+      inline def setColorBorderShadowUndefined: Self = StObject.set(x, "colorBorderShadow", js.undefined)
       
-      @scala.inline
-      def setColorMajorTicks(value: String): Self = StObject.set(x, "colorMajorTicks", value.asInstanceOf[js.Any])
+      inline def setColorMajorTicks(value: String): Self = StObject.set(x, "colorMajorTicks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorMajorTicksUndefined: Self = StObject.set(x, "colorMajorTicks", js.undefined)
+      inline def setColorMajorTicksUndefined: Self = StObject.set(x, "colorMajorTicks", js.undefined)
       
-      @scala.inline
-      def setColorMinorTicks(value: String): Self = StObject.set(x, "colorMinorTicks", value.asInstanceOf[js.Any])
+      inline def setColorMinorTicks(value: String): Self = StObject.set(x, "colorMinorTicks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorMinorTicksUndefined: Self = StObject.set(x, "colorMinorTicks", js.undefined)
+      inline def setColorMinorTicksUndefined: Self = StObject.set(x, "colorMinorTicks", js.undefined)
       
-      @scala.inline
-      def setColorNeedle(value: String): Self = StObject.set(x, "colorNeedle", value.asInstanceOf[js.Any])
+      inline def setColorNeedle(value: String): Self = StObject.set(x, "colorNeedle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorNeedleEnd(value: String): Self = StObject.set(x, "colorNeedleEnd", value.asInstanceOf[js.Any])
+      inline def setColorNeedleEnd(value: String): Self = StObject.set(x, "colorNeedleEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorNeedleEndUndefined: Self = StObject.set(x, "colorNeedleEnd", js.undefined)
+      inline def setColorNeedleEndUndefined: Self = StObject.set(x, "colorNeedleEnd", js.undefined)
       
-      @scala.inline
-      def setColorNeedleShadowDown(value: String): Self = StObject.set(x, "colorNeedleShadowDown", value.asInstanceOf[js.Any])
+      inline def setColorNeedleShadowDown(value: String): Self = StObject.set(x, "colorNeedleShadowDown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorNeedleShadowDownUndefined: Self = StObject.set(x, "colorNeedleShadowDown", js.undefined)
+      inline def setColorNeedleShadowDownUndefined: Self = StObject.set(x, "colorNeedleShadowDown", js.undefined)
       
-      @scala.inline
-      def setColorNeedleShadowUp(value: String): Self = StObject.set(x, "colorNeedleShadowUp", value.asInstanceOf[js.Any])
+      inline def setColorNeedleShadowUp(value: String): Self = StObject.set(x, "colorNeedleShadowUp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorNeedleShadowUpUndefined: Self = StObject.set(x, "colorNeedleShadowUp", js.undefined)
+      inline def setColorNeedleShadowUpUndefined: Self = StObject.set(x, "colorNeedleShadowUp", js.undefined)
       
-      @scala.inline
-      def setColorNeedleUndefined: Self = StObject.set(x, "colorNeedle", js.undefined)
+      inline def setColorNeedleUndefined: Self = StObject.set(x, "colorNeedle", js.undefined)
       
-      @scala.inline
-      def setColorNumbers(value: String): Self = StObject.set(x, "colorNumbers", value.asInstanceOf[js.Any])
+      inline def setColorNumbers(value: String): Self = StObject.set(x, "colorNumbers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorNumbersUndefined: Self = StObject.set(x, "colorNumbers", js.undefined)
+      inline def setColorNumbersUndefined: Self = StObject.set(x, "colorNumbers", js.undefined)
       
-      @scala.inline
-      def setColorPlate(value: String): Self = StObject.set(x, "colorPlate", value.asInstanceOf[js.Any])
+      inline def setColorPlate(value: String): Self = StObject.set(x, "colorPlate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorPlateEnd(value: String): Self = StObject.set(x, "colorPlateEnd", value.asInstanceOf[js.Any])
+      inline def setColorPlateEnd(value: String): Self = StObject.set(x, "colorPlateEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorPlateEndUndefined: Self = StObject.set(x, "colorPlateEnd", js.undefined)
+      inline def setColorPlateEndUndefined: Self = StObject.set(x, "colorPlateEnd", js.undefined)
       
-      @scala.inline
-      def setColorPlateUndefined: Self = StObject.set(x, "colorPlate", js.undefined)
+      inline def setColorPlateUndefined: Self = StObject.set(x, "colorPlate", js.undefined)
       
-      @scala.inline
-      def setColorTitle(value: String): Self = StObject.set(x, "colorTitle", value.asInstanceOf[js.Any])
+      inline def setColorTitle(value: String): Self = StObject.set(x, "colorTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorTitleUndefined: Self = StObject.set(x, "colorTitle", js.undefined)
+      inline def setColorTitleUndefined: Self = StObject.set(x, "colorTitle", js.undefined)
       
-      @scala.inline
-      def setColorUnits(value: String): Self = StObject.set(x, "colorUnits", value.asInstanceOf[js.Any])
+      inline def setColorUnits(value: String): Self = StObject.set(x, "colorUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUnitsUndefined: Self = StObject.set(x, "colorUnits", js.undefined)
+      inline def setColorUnitsUndefined: Self = StObject.set(x, "colorUnits", js.undefined)
       
-      @scala.inline
-      def setColorValueBoxBackground(value: String): Self = StObject.set(x, "colorValueBoxBackground", value.asInstanceOf[js.Any])
+      inline def setColorValueBoxBackground(value: String): Self = StObject.set(x, "colorValueBoxBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorValueBoxBackgroundUndefined: Self = StObject.set(x, "colorValueBoxBackground", js.undefined)
+      inline def setColorValueBoxBackgroundUndefined: Self = StObject.set(x, "colorValueBoxBackground", js.undefined)
       
-      @scala.inline
-      def setColorValueBoxRect(value: String): Self = StObject.set(x, "colorValueBoxRect", value.asInstanceOf[js.Any])
+      inline def setColorValueBoxRect(value: String): Self = StObject.set(x, "colorValueBoxRect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorValueBoxRectEnd(value: String): Self = StObject.set(x, "colorValueBoxRectEnd", value.asInstanceOf[js.Any])
+      inline def setColorValueBoxRectEnd(value: String): Self = StObject.set(x, "colorValueBoxRectEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorValueBoxRectEndUndefined: Self = StObject.set(x, "colorValueBoxRectEnd", js.undefined)
+      inline def setColorValueBoxRectEndUndefined: Self = StObject.set(x, "colorValueBoxRectEnd", js.undefined)
       
-      @scala.inline
-      def setColorValueBoxRectUndefined: Self = StObject.set(x, "colorValueBoxRect", js.undefined)
+      inline def setColorValueBoxRectUndefined: Self = StObject.set(x, "colorValueBoxRect", js.undefined)
       
-      @scala.inline
-      def setColorValueBoxShadow(value: String): Self = StObject.set(x, "colorValueBoxShadow", value.asInstanceOf[js.Any])
+      inline def setColorValueBoxShadow(value: String): Self = StObject.set(x, "colorValueBoxShadow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorValueBoxShadowUndefined: Self = StObject.set(x, "colorValueBoxShadow", js.undefined)
+      inline def setColorValueBoxShadowUndefined: Self = StObject.set(x, "colorValueBoxShadow", js.undefined)
       
-      @scala.inline
-      def setColorValueText(value: String): Self = StObject.set(x, "colorValueText", value.asInstanceOf[js.Any])
+      inline def setColorValueText(value: String): Self = StObject.set(x, "colorValueText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorValueTextShadow(value: String): Self = StObject.set(x, "colorValueTextShadow", value.asInstanceOf[js.Any])
+      inline def setColorValueTextShadow(value: String): Self = StObject.set(x, "colorValueTextShadow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorValueTextShadowUndefined: Self = StObject.set(x, "colorValueTextShadow", js.undefined)
+      inline def setColorValueTextShadowUndefined: Self = StObject.set(x, "colorValueTextShadow", js.undefined)
       
-      @scala.inline
-      def setColorValueTextUndefined: Self = StObject.set(x, "colorValueText", js.undefined)
+      inline def setColorValueTextUndefined: Self = StObject.set(x, "colorValueText", js.undefined)
       
-      @scala.inline
-      def setExactTicks(value: Boolean): Self = StObject.set(x, "exactTicks", value.asInstanceOf[js.Any])
+      inline def setExactTicks(value: Boolean): Self = StObject.set(x, "exactTicks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExactTicksUndefined: Self = StObject.set(x, "exactTicks", js.undefined)
+      inline def setExactTicksUndefined: Self = StObject.set(x, "exactTicks", js.undefined)
       
-      @scala.inline
-      def setFontNumbers(value: String): Self = StObject.set(x, "fontNumbers", value.asInstanceOf[js.Any])
+      inline def setFontNumbers(value: String): Self = StObject.set(x, "fontNumbers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontNumbersSize(value: Double): Self = StObject.set(x, "fontNumbersSize", value.asInstanceOf[js.Any])
+      inline def setFontNumbersSize(value: Double): Self = StObject.set(x, "fontNumbersSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontNumbersSizeUndefined: Self = StObject.set(x, "fontNumbersSize", js.undefined)
+      inline def setFontNumbersSizeUndefined: Self = StObject.set(x, "fontNumbersSize", js.undefined)
       
-      @scala.inline
-      def setFontNumbersStyle(value: FontStyle): Self = StObject.set(x, "fontNumbersStyle", value.asInstanceOf[js.Any])
+      inline def setFontNumbersStyle(value: FontStyle): Self = StObject.set(x, "fontNumbersStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontNumbersStyleUndefined: Self = StObject.set(x, "fontNumbersStyle", js.undefined)
+      inline def setFontNumbersStyleUndefined: Self = StObject.set(x, "fontNumbersStyle", js.undefined)
       
-      @scala.inline
-      def setFontNumbersUndefined: Self = StObject.set(x, "fontNumbers", js.undefined)
+      inline def setFontNumbersUndefined: Self = StObject.set(x, "fontNumbers", js.undefined)
       
-      @scala.inline
-      def setFontNumbersWeight(value: FontWeight): Self = StObject.set(x, "fontNumbersWeight", value.asInstanceOf[js.Any])
+      inline def setFontNumbersWeight(value: FontWeight): Self = StObject.set(x, "fontNumbersWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontNumbersWeightUndefined: Self = StObject.set(x, "fontNumbersWeight", js.undefined)
+      inline def setFontNumbersWeightUndefined: Self = StObject.set(x, "fontNumbersWeight", js.undefined)
       
-      @scala.inline
-      def setFontTitle(value: String): Self = StObject.set(x, "fontTitle", value.asInstanceOf[js.Any])
+      inline def setFontTitle(value: String): Self = StObject.set(x, "fontTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontTitleSize(value: Double): Self = StObject.set(x, "fontTitleSize", value.asInstanceOf[js.Any])
+      inline def setFontTitleSize(value: Double): Self = StObject.set(x, "fontTitleSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontTitleSizeUndefined: Self = StObject.set(x, "fontTitleSize", js.undefined)
+      inline def setFontTitleSizeUndefined: Self = StObject.set(x, "fontTitleSize", js.undefined)
       
-      @scala.inline
-      def setFontTitleStyle(value: FontStyle): Self = StObject.set(x, "fontTitleStyle", value.asInstanceOf[js.Any])
+      inline def setFontTitleStyle(value: FontStyle): Self = StObject.set(x, "fontTitleStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontTitleStyleUndefined: Self = StObject.set(x, "fontTitleStyle", js.undefined)
+      inline def setFontTitleStyleUndefined: Self = StObject.set(x, "fontTitleStyle", js.undefined)
       
-      @scala.inline
-      def setFontTitleUndefined: Self = StObject.set(x, "fontTitle", js.undefined)
+      inline def setFontTitleUndefined: Self = StObject.set(x, "fontTitle", js.undefined)
       
-      @scala.inline
-      def setFontTitleWeight(value: FontWeight): Self = StObject.set(x, "fontTitleWeight", value.asInstanceOf[js.Any])
+      inline def setFontTitleWeight(value: FontWeight): Self = StObject.set(x, "fontTitleWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontTitleWeightUndefined: Self = StObject.set(x, "fontTitleWeight", js.undefined)
+      inline def setFontTitleWeightUndefined: Self = StObject.set(x, "fontTitleWeight", js.undefined)
       
-      @scala.inline
-      def setFontUnits(value: String): Self = StObject.set(x, "fontUnits", value.asInstanceOf[js.Any])
+      inline def setFontUnits(value: String): Self = StObject.set(x, "fontUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontUnitsSize(value: Double): Self = StObject.set(x, "fontUnitsSize", value.asInstanceOf[js.Any])
+      inline def setFontUnitsSize(value: Double): Self = StObject.set(x, "fontUnitsSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontUnitsSizeUndefined: Self = StObject.set(x, "fontUnitsSize", js.undefined)
+      inline def setFontUnitsSizeUndefined: Self = StObject.set(x, "fontUnitsSize", js.undefined)
       
-      @scala.inline
-      def setFontUnitsStyle(value: FontStyle): Self = StObject.set(x, "fontUnitsStyle", value.asInstanceOf[js.Any])
+      inline def setFontUnitsStyle(value: FontStyle): Self = StObject.set(x, "fontUnitsStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontUnitsStyleUndefined: Self = StObject.set(x, "fontUnitsStyle", js.undefined)
+      inline def setFontUnitsStyleUndefined: Self = StObject.set(x, "fontUnitsStyle", js.undefined)
       
-      @scala.inline
-      def setFontUnitsUndefined: Self = StObject.set(x, "fontUnits", js.undefined)
+      inline def setFontUnitsUndefined: Self = StObject.set(x, "fontUnits", js.undefined)
       
-      @scala.inline
-      def setFontUnitsWeight(value: FontWeight): Self = StObject.set(x, "fontUnitsWeight", value.asInstanceOf[js.Any])
+      inline def setFontUnitsWeight(value: FontWeight): Self = StObject.set(x, "fontUnitsWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontUnitsWeightUndefined: Self = StObject.set(x, "fontUnitsWeight", js.undefined)
+      inline def setFontUnitsWeightUndefined: Self = StObject.set(x, "fontUnitsWeight", js.undefined)
       
-      @scala.inline
-      def setFontValue(value: String): Self = StObject.set(x, "fontValue", value.asInstanceOf[js.Any])
+      inline def setFontValue(value: String): Self = StObject.set(x, "fontValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontValueSize(value: Double): Self = StObject.set(x, "fontValueSize", value.asInstanceOf[js.Any])
+      inline def setFontValueSize(value: Double): Self = StObject.set(x, "fontValueSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontValueSizeUndefined: Self = StObject.set(x, "fontValueSize", js.undefined)
+      inline def setFontValueSizeUndefined: Self = StObject.set(x, "fontValueSize", js.undefined)
       
-      @scala.inline
-      def setFontValueStyle(value: FontStyle): Self = StObject.set(x, "fontValueStyle", value.asInstanceOf[js.Any])
+      inline def setFontValueStyle(value: FontStyle): Self = StObject.set(x, "fontValueStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontValueStyleUndefined: Self = StObject.set(x, "fontValueStyle", js.undefined)
+      inline def setFontValueStyleUndefined: Self = StObject.set(x, "fontValueStyle", js.undefined)
       
-      @scala.inline
-      def setFontValueUndefined: Self = StObject.set(x, "fontValue", js.undefined)
+      inline def setFontValueUndefined: Self = StObject.set(x, "fontValue", js.undefined)
       
-      @scala.inline
-      def setFontValueWeight(value: FontWeight): Self = StObject.set(x, "fontValueWeight", value.asInstanceOf[js.Any])
+      inline def setFontValueWeight(value: FontWeight): Self = StObject.set(x, "fontValueWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontValueWeightUndefined: Self = StObject.set(x, "fontValueWeight", js.undefined)
+      inline def setFontValueWeightUndefined: Self = StObject.set(x, "fontValueWeight", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setHighlights(value: js.Array[Highlight]): Self = StObject.set(x, "highlights", value.asInstanceOf[js.Any])
+      inline def setHighlights(value: js.Array[Highlight]): Self = StObject.set(x, "highlights", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlightsUndefined: Self = StObject.set(x, "highlights", js.undefined)
+      inline def setHighlightsUndefined: Self = StObject.set(x, "highlights", js.undefined)
       
-      @scala.inline
-      def setHighlightsVarargs(value: Highlight*): Self = StObject.set(x, "highlights", js.Array(value :_*))
+      inline def setHighlightsVarargs(value: Highlight*): Self = StObject.set(x, "highlights", js.Array(value :_*))
       
-      @scala.inline
-      def setHighlightsWidth(value: Double): Self = StObject.set(x, "highlightsWidth", value.asInstanceOf[js.Any])
+      inline def setHighlightsWidth(value: Double): Self = StObject.set(x, "highlightsWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlightsWidthUndefined: Self = StObject.set(x, "highlightsWidth", js.undefined)
+      inline def setHighlightsWidthUndefined: Self = StObject.set(x, "highlightsWidth", js.undefined)
       
-      @scala.inline
-      def setListeners(value: EventListeners): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
+      inline def setListeners(value: EventListeners): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListenersUndefined: Self = StObject.set(x, "listeners", js.undefined)
+      inline def setListenersUndefined: Self = StObject.set(x, "listeners", js.undefined)
       
-      @scala.inline
-      def setMajorTicks(value: MajorTicks): Self = StObject.set(x, "majorTicks", value.asInstanceOf[js.Any])
+      inline def setMajorTicks(value: MajorTicks): Self = StObject.set(x, "majorTicks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMajorTicksDec(value: Double): Self = StObject.set(x, "majorTicksDec", value.asInstanceOf[js.Any])
+      inline def setMajorTicksDec(value: Double): Self = StObject.set(x, "majorTicksDec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMajorTicksDecUndefined: Self = StObject.set(x, "majorTicksDec", js.undefined)
+      inline def setMajorTicksDecUndefined: Self = StObject.set(x, "majorTicksDec", js.undefined)
       
-      @scala.inline
-      def setMajorTicksInt(value: Double): Self = StObject.set(x, "majorTicksInt", value.asInstanceOf[js.Any])
+      inline def setMajorTicksInt(value: Double): Self = StObject.set(x, "majorTicksInt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMajorTicksIntUndefined: Self = StObject.set(x, "majorTicksInt", js.undefined)
+      inline def setMajorTicksIntUndefined: Self = StObject.set(x, "majorTicksInt", js.undefined)
       
-      @scala.inline
-      def setMajorTicksUndefined: Self = StObject.set(x, "majorTicks", js.undefined)
+      inline def setMajorTicksUndefined: Self = StObject.set(x, "majorTicks", js.undefined)
       
-      @scala.inline
-      def setMajorTicksVarargs(value: (Double | String)*): Self = StObject.set(x, "majorTicks", js.Array(value :_*))
+      inline def setMajorTicksVarargs(value: (Double | String)*): Self = StObject.set(x, "majorTicks", js.Array(value :_*))
       
-      @scala.inline
-      def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+      inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
+      inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
       
-      @scala.inline
-      def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+      inline def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
+      inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
       
-      @scala.inline
-      def setMinorTicks(value: Double): Self = StObject.set(x, "minorTicks", value.asInstanceOf[js.Any])
+      inline def setMinorTicks(value: Double): Self = StObject.set(x, "minorTicks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinorTicksUndefined: Self = StObject.set(x, "minorTicks", js.undefined)
+      inline def setMinorTicksUndefined: Self = StObject.set(x, "minorTicks", js.undefined)
       
-      @scala.inline
-      def setNeedle(value: Boolean): Self = StObject.set(x, "needle", value.asInstanceOf[js.Any])
+      inline def setNeedle(value: Boolean): Self = StObject.set(x, "needle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeedleEnd(value: Double): Self = StObject.set(x, "needleEnd", value.asInstanceOf[js.Any])
+      inline def setNeedleEnd(value: Double): Self = StObject.set(x, "needleEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeedleEndUndefined: Self = StObject.set(x, "needleEnd", js.undefined)
+      inline def setNeedleEndUndefined: Self = StObject.set(x, "needleEnd", js.undefined)
       
-      @scala.inline
-      def setNeedleShadow(value: Boolean): Self = StObject.set(x, "needleShadow", value.asInstanceOf[js.Any])
+      inline def setNeedleShadow(value: Boolean): Self = StObject.set(x, "needleShadow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeedleShadowUndefined: Self = StObject.set(x, "needleShadow", js.undefined)
+      inline def setNeedleShadowUndefined: Self = StObject.set(x, "needleShadow", js.undefined)
       
-      @scala.inline
-      def setNeedleStart(value: Double): Self = StObject.set(x, "needleStart", value.asInstanceOf[js.Any])
+      inline def setNeedleStart(value: Double): Self = StObject.set(x, "needleStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeedleStartUndefined: Self = StObject.set(x, "needleStart", js.undefined)
+      inline def setNeedleStartUndefined: Self = StObject.set(x, "needleStart", js.undefined)
       
-      @scala.inline
-      def setNeedleType(value: String): Self = StObject.set(x, "needleType", value.asInstanceOf[js.Any])
+      inline def setNeedleType(value: String): Self = StObject.set(x, "needleType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeedleTypeUndefined: Self = StObject.set(x, "needleType", js.undefined)
+      inline def setNeedleTypeUndefined: Self = StObject.set(x, "needleType", js.undefined)
       
-      @scala.inline
-      def setNeedleUndefined: Self = StObject.set(x, "needle", js.undefined)
+      inline def setNeedleUndefined: Self = StObject.set(x, "needle", js.undefined)
       
-      @scala.inline
-      def setNeedleWidth(value: Double): Self = StObject.set(x, "needleWidth", value.asInstanceOf[js.Any])
+      inline def setNeedleWidth(value: Double): Self = StObject.set(x, "needleWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeedleWidthUndefined: Self = StObject.set(x, "needleWidth", js.undefined)
+      inline def setNeedleWidthUndefined: Self = StObject.set(x, "needleWidth", js.undefined)
       
-      @scala.inline
-      def setNumbersMargin(value: Double): Self = StObject.set(x, "numbersMargin", value.asInstanceOf[js.Any])
+      inline def setNumbersMargin(value: Double): Self = StObject.set(x, "numbersMargin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumbersMarginUndefined: Self = StObject.set(x, "numbersMargin", js.undefined)
+      inline def setNumbersMarginUndefined: Self = StObject.set(x, "numbersMargin", js.undefined)
       
-      @scala.inline
-      def setRenderTo(value: RenderTarget): Self = StObject.set(x, "renderTo", value.asInstanceOf[js.Any])
+      inline def setRenderTo(value: RenderTarget): Self = StObject.set(x, "renderTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeTicks(value: Boolean): Self = StObject.set(x, "strokeTicks", value.asInstanceOf[js.Any])
+      inline def setStrokeTicks(value: Boolean): Self = StObject.set(x, "strokeTicks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeTicksUndefined: Self = StObject.set(x, "strokeTicks", js.undefined)
+      inline def setStrokeTicksUndefined: Self = StObject.set(x, "strokeTicks", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String | Boolean): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String | Boolean): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setUnits(value: String | Boolean): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+      inline def setUnits(value: String | Boolean): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
+      inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueBox(value: Boolean): Self = StObject.set(x, "valueBox", value.asInstanceOf[js.Any])
+      inline def setValueBox(value: Boolean): Self = StObject.set(x, "valueBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueBoxBorderRadius(value: Double): Self = StObject.set(x, "valueBoxBorderRadius", value.asInstanceOf[js.Any])
+      inline def setValueBoxBorderRadius(value: Double): Self = StObject.set(x, "valueBoxBorderRadius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueBoxBorderRadiusUndefined: Self = StObject.set(x, "valueBoxBorderRadius", js.undefined)
+      inline def setValueBoxBorderRadiusUndefined: Self = StObject.set(x, "valueBoxBorderRadius", js.undefined)
       
-      @scala.inline
-      def setValueBoxStroke(value: Double): Self = StObject.set(x, "valueBoxStroke", value.asInstanceOf[js.Any])
+      inline def setValueBoxStroke(value: Double): Self = StObject.set(x, "valueBoxStroke", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueBoxStrokeUndefined: Self = StObject.set(x, "valueBoxStroke", js.undefined)
+      inline def setValueBoxStrokeUndefined: Self = StObject.set(x, "valueBoxStroke", js.undefined)
       
-      @scala.inline
-      def setValueBoxUndefined: Self = StObject.set(x, "valueBox", js.undefined)
+      inline def setValueBoxUndefined: Self = StObject.set(x, "valueBox", js.undefined)
       
-      @scala.inline
-      def setValueBoxWidth(value: Double): Self = StObject.set(x, "valueBoxWidth", value.asInstanceOf[js.Any])
+      inline def setValueBoxWidth(value: Double): Self = StObject.set(x, "valueBoxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueBoxWidthUndefined: Self = StObject.set(x, "valueBoxWidth", js.undefined)
+      inline def setValueBoxWidthUndefined: Self = StObject.set(x, "valueBoxWidth", js.undefined)
       
-      @scala.inline
-      def setValueDec(value: Double): Self = StObject.set(x, "valueDec", value.asInstanceOf[js.Any])
+      inline def setValueDec(value: Double): Self = StObject.set(x, "valueDec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueDecUndefined: Self = StObject.set(x, "valueDec", js.undefined)
+      inline def setValueDecUndefined: Self = StObject.set(x, "valueDec", js.undefined)
       
-      @scala.inline
-      def setValueInt(value: Double): Self = StObject.set(x, "valueInt", value.asInstanceOf[js.Any])
+      inline def setValueInt(value: Double): Self = StObject.set(x, "valueInt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueIntUndefined: Self = StObject.set(x, "valueInt", js.undefined)
+      inline def setValueIntUndefined: Self = StObject.set(x, "valueInt", js.undefined)
       
-      @scala.inline
-      def setValueText(value: String): Self = StObject.set(x, "valueText", value.asInstanceOf[js.Any])
+      inline def setValueText(value: String): Self = StObject.set(x, "valueText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueTextShadow(value: Boolean): Self = StObject.set(x, "valueTextShadow", value.asInstanceOf[js.Any])
+      inline def setValueTextShadow(value: Boolean): Self = StObject.set(x, "valueTextShadow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueTextShadowUndefined: Self = StObject.set(x, "valueTextShadow", js.undefined)
+      inline def setValueTextShadowUndefined: Self = StObject.set(x, "valueTextShadow", js.undefined)
       
-      @scala.inline
-      def setValueTextUndefined: Self = StObject.set(x, "valueText", js.undefined)
+      inline def setValueTextUndefined: Self = StObject.set(x, "valueText", js.undefined)
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -975,23 +775,18 @@ object CanvasGauges {
   }
   object Highlight {
     
-    @scala.inline
-    def apply(color: String, from: Double, to: Double): Highlight = {
+    inline def apply(color: String, from: Double, to: Double): Highlight = {
       val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[Highlight]
     }
     
-    @scala.inline
-    implicit class HighlightMutableBuilder[Self <: Highlight] (val x: Self) extends AnyVal {
+    extension [Self <: Highlight](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1035,80 +830,56 @@ object CanvasGauges {
   }
   object LinearGaugeOptions {
     
-    @scala.inline
-    def apply(renderTo: RenderTarget): LinearGaugeOptions = {
+    inline def apply(renderTo: RenderTarget): LinearGaugeOptions = {
       val __obj = js.Dynamic.literal(renderTo = renderTo.asInstanceOf[js.Any])
       __obj.asInstanceOf[LinearGaugeOptions]
     }
     
-    @scala.inline
-    implicit class LinearGaugeOptionsMutableBuilder[Self <: LinearGaugeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LinearGaugeOptions](x: Self) {
       
-      @scala.inline
-      def setBarBeginCircle(value: Double): Self = StObject.set(x, "barBeginCircle", value.asInstanceOf[js.Any])
+      inline def setBarBeginCircle(value: Double): Self = StObject.set(x, "barBeginCircle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBarBeginCircleUndefined: Self = StObject.set(x, "barBeginCircle", js.undefined)
+      inline def setBarBeginCircleUndefined: Self = StObject.set(x, "barBeginCircle", js.undefined)
       
-      @scala.inline
-      def setBarLength(value: Double): Self = StObject.set(x, "barLength", value.asInstanceOf[js.Any])
+      inline def setBarLength(value: Double): Self = StObject.set(x, "barLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBarLengthUndefined: Self = StObject.set(x, "barLength", js.undefined)
+      inline def setBarLengthUndefined: Self = StObject.set(x, "barLength", js.undefined)
       
-      @scala.inline
-      def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+      inline def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
+      inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
       
-      @scala.inline
-      def setColorBarEnd(value: String): Self = StObject.set(x, "colorBarEnd", value.asInstanceOf[js.Any])
+      inline def setColorBarEnd(value: String): Self = StObject.set(x, "colorBarEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorBarEndUndefined: Self = StObject.set(x, "colorBarEnd", js.undefined)
+      inline def setColorBarEndUndefined: Self = StObject.set(x, "colorBarEnd", js.undefined)
       
-      @scala.inline
-      def setColorBarProgressEnd(value: String): Self = StObject.set(x, "colorBarProgressEnd", value.asInstanceOf[js.Any])
+      inline def setColorBarProgressEnd(value: String): Self = StObject.set(x, "colorBarProgressEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorBarProgressEndUndefined: Self = StObject.set(x, "colorBarProgressEnd", js.undefined)
+      inline def setColorBarProgressEndUndefined: Self = StObject.set(x, "colorBarProgressEnd", js.undefined)
       
-      @scala.inline
-      def setNeedleSide(value: String): Self = StObject.set(x, "needleSide", value.asInstanceOf[js.Any])
+      inline def setNeedleSide(value: String): Self = StObject.set(x, "needleSide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeedleSideUndefined: Self = StObject.set(x, "needleSide", js.undefined)
+      inline def setNeedleSideUndefined: Self = StObject.set(x, "needleSide", js.undefined)
       
-      @scala.inline
-      def setNumberSide(value: String): Self = StObject.set(x, "numberSide", value.asInstanceOf[js.Any])
+      inline def setNumberSide(value: String): Self = StObject.set(x, "numberSide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberSideUndefined: Self = StObject.set(x, "numberSide", js.undefined)
+      inline def setNumberSideUndefined: Self = StObject.set(x, "numberSide", js.undefined)
       
-      @scala.inline
-      def setTickSide(value: String): Self = StObject.set(x, "tickSide", value.asInstanceOf[js.Any])
+      inline def setTickSide(value: String): Self = StObject.set(x, "tickSide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTickSideUndefined: Self = StObject.set(x, "tickSide", js.undefined)
+      inline def setTickSideUndefined: Self = StObject.set(x, "tickSide", js.undefined)
       
-      @scala.inline
-      def setTicksPadding(value: Double): Self = StObject.set(x, "ticksPadding", value.asInstanceOf[js.Any])
+      inline def setTicksPadding(value: Double): Self = StObject.set(x, "ticksPadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTicksPaddingUndefined: Self = StObject.set(x, "ticksPadding", js.undefined)
+      inline def setTicksPaddingUndefined: Self = StObject.set(x, "ticksPadding", js.undefined)
       
-      @scala.inline
-      def setTicksWidth(value: Double): Self = StObject.set(x, "ticksWidth", value.asInstanceOf[js.Any])
+      inline def setTicksWidth(value: Double): Self = StObject.set(x, "ticksWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTicksWidthMinor(value: Double): Self = StObject.set(x, "ticksWidthMinor", value.asInstanceOf[js.Any])
+      inline def setTicksWidthMinor(value: Double): Self = StObject.set(x, "ticksWidthMinor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTicksWidthMinorUndefined: Self = StObject.set(x, "ticksWidthMinor", js.undefined)
+      inline def setTicksWidthMinorUndefined: Self = StObject.set(x, "ticksWidthMinor", js.undefined)
       
-      @scala.inline
-      def setTicksWidthUndefined: Self = StObject.set(x, "ticksWidth", js.undefined)
+      inline def setTicksWidthUndefined: Self = StObject.set(x, "ticksWidth", js.undefined)
     }
   }
   
@@ -1154,80 +925,56 @@ object CanvasGauges {
   }
   object RadialGaugeOptions {
     
-    @scala.inline
-    def apply(renderTo: RenderTarget): RadialGaugeOptions = {
+    inline def apply(renderTo: RenderTarget): RadialGaugeOptions = {
       val __obj = js.Dynamic.literal(renderTo = renderTo.asInstanceOf[js.Any])
       __obj.asInstanceOf[RadialGaugeOptions]
     }
     
-    @scala.inline
-    implicit class RadialGaugeOptionsMutableBuilder[Self <: RadialGaugeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RadialGaugeOptions](x: Self) {
       
-      @scala.inline
-      def setAnimationTarget(value: String): Self = StObject.set(x, "animationTarget", value.asInstanceOf[js.Any])
+      inline def setAnimationTarget(value: String): Self = StObject.set(x, "animationTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationTargetUndefined: Self = StObject.set(x, "animationTarget", js.undefined)
+      inline def setAnimationTargetUndefined: Self = StObject.set(x, "animationTarget", js.undefined)
       
-      @scala.inline
-      def setColorNeedleCircleInner(value: String): Self = StObject.set(x, "colorNeedleCircleInner", value.asInstanceOf[js.Any])
+      inline def setColorNeedleCircleInner(value: String): Self = StObject.set(x, "colorNeedleCircleInner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorNeedleCircleInnerEnd(value: String): Self = StObject.set(x, "colorNeedleCircleInnerEnd", value.asInstanceOf[js.Any])
+      inline def setColorNeedleCircleInnerEnd(value: String): Self = StObject.set(x, "colorNeedleCircleInnerEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorNeedleCircleInnerEndUndefined: Self = StObject.set(x, "colorNeedleCircleInnerEnd", js.undefined)
+      inline def setColorNeedleCircleInnerEndUndefined: Self = StObject.set(x, "colorNeedleCircleInnerEnd", js.undefined)
       
-      @scala.inline
-      def setColorNeedleCircleInnerUndefined: Self = StObject.set(x, "colorNeedleCircleInner", js.undefined)
+      inline def setColorNeedleCircleInnerUndefined: Self = StObject.set(x, "colorNeedleCircleInner", js.undefined)
       
-      @scala.inline
-      def setColorNeedleCircleOuter(value: String): Self = StObject.set(x, "colorNeedleCircleOuter", value.asInstanceOf[js.Any])
+      inline def setColorNeedleCircleOuter(value: String): Self = StObject.set(x, "colorNeedleCircleOuter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorNeedleCircleOuterEnd(value: String): Self = StObject.set(x, "colorNeedleCircleOuterEnd", value.asInstanceOf[js.Any])
+      inline def setColorNeedleCircleOuterEnd(value: String): Self = StObject.set(x, "colorNeedleCircleOuterEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorNeedleCircleOuterEndUndefined: Self = StObject.set(x, "colorNeedleCircleOuterEnd", js.undefined)
+      inline def setColorNeedleCircleOuterEndUndefined: Self = StObject.set(x, "colorNeedleCircleOuterEnd", js.undefined)
       
-      @scala.inline
-      def setColorNeedleCircleOuterUndefined: Self = StObject.set(x, "colorNeedleCircleOuter", js.undefined)
+      inline def setColorNeedleCircleOuterUndefined: Self = StObject.set(x, "colorNeedleCircleOuter", js.undefined)
       
-      @scala.inline
-      def setNeedleCircleInner(value: Boolean): Self = StObject.set(x, "needleCircleInner", value.asInstanceOf[js.Any])
+      inline def setNeedleCircleInner(value: Boolean): Self = StObject.set(x, "needleCircleInner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeedleCircleInnerUndefined: Self = StObject.set(x, "needleCircleInner", js.undefined)
+      inline def setNeedleCircleInnerUndefined: Self = StObject.set(x, "needleCircleInner", js.undefined)
       
-      @scala.inline
-      def setNeedleCircleOuter(value: Boolean): Self = StObject.set(x, "needleCircleOuter", value.asInstanceOf[js.Any])
+      inline def setNeedleCircleOuter(value: Boolean): Self = StObject.set(x, "needleCircleOuter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeedleCircleOuterUndefined: Self = StObject.set(x, "needleCircleOuter", js.undefined)
+      inline def setNeedleCircleOuterUndefined: Self = StObject.set(x, "needleCircleOuter", js.undefined)
       
-      @scala.inline
-      def setNeedleCircleSize(value: Double): Self = StObject.set(x, "needleCircleSize", value.asInstanceOf[js.Any])
+      inline def setNeedleCircleSize(value: Double): Self = StObject.set(x, "needleCircleSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeedleCircleSizeUndefined: Self = StObject.set(x, "needleCircleSize", js.undefined)
+      inline def setNeedleCircleSizeUndefined: Self = StObject.set(x, "needleCircleSize", js.undefined)
       
-      @scala.inline
-      def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
+      inline def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
+      inline def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
       
-      @scala.inline
-      def setTicksAngle(value: Double): Self = StObject.set(x, "ticksAngle", value.asInstanceOf[js.Any])
+      inline def setTicksAngle(value: Double): Self = StObject.set(x, "ticksAngle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTicksAngleUndefined: Self = StObject.set(x, "ticksAngle", js.undefined)
+      inline def setTicksAngleUndefined: Self = StObject.set(x, "ticksAngle", js.undefined)
       
-      @scala.inline
-      def setUseMinPath(value: Boolean): Self = StObject.set(x, "useMinPath", value.asInstanceOf[js.Any])
+      inline def setUseMinPath(value: Boolean): Self = StObject.set(x, "useMinPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseMinPathUndefined: Self = StObject.set(x, "useMinPath", js.undefined)
+      inline def setUseMinPathUndefined: Self = StObject.set(x, "useMinPath", js.undefined)
     }
   }
   
@@ -1271,8 +1018,7 @@ object CanvasGauges {
   }
   object SmartCanvas {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       commit: () => SmartCanvas,
       context: CanvasRenderingContext2D,
       contextClone: CanvasRenderingContext2D,
@@ -1295,59 +1041,41 @@ object CanvasGauges {
       __obj.asInstanceOf[SmartCanvas]
     }
     
-    @scala.inline
-    implicit class SmartCanvasMutableBuilder[Self <: SmartCanvas] (val x: Self) extends AnyVal {
+    extension [Self <: SmartCanvas](x: Self) {
       
-      @scala.inline
-      def setCommit(value: () => SmartCanvas): Self = StObject.set(x, "commit", js.Any.fromFunction0(value))
+      inline def setCommit(value: () => SmartCanvas): Self = StObject.set(x, "commit", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setContext(value: CanvasRenderingContext2D): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: CanvasRenderingContext2D): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextClone(value: CanvasRenderingContext2D): Self = StObject.set(x, "contextClone", value.asInstanceOf[js.Any])
+      inline def setContextClone(value: CanvasRenderingContext2D): Self = StObject.set(x, "contextClone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestroy(value: () => js.Any): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => js.Any): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDrawHeight(value: Double): Self = StObject.set(x, "drawHeight", value.asInstanceOf[js.Any])
+      inline def setDrawHeight(value: Double): Self = StObject.set(x, "drawHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawWidth(value: Double): Self = StObject.set(x, "drawWidth", value.asInstanceOf[js.Any])
+      inline def setDrawWidth(value: Double): Self = StObject.set(x, "drawWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawX(value: Double): Self = StObject.set(x, "drawX", value.asInstanceOf[js.Any])
+      inline def setDrawX(value: Double): Self = StObject.set(x, "drawX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawY(value: Double): Self = StObject.set(x, "drawY", value.asInstanceOf[js.Any])
+      inline def setDrawY(value: Double): Self = StObject.set(x, "drawY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElement(value: HTMLCanvasElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: HTMLCanvasElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementClone(value: HTMLCanvasElement): Self = StObject.set(x, "elementClone", value.asInstanceOf[js.Any])
+      inline def setElementClone(value: HTMLCanvasElement): Self = StObject.set(x, "elementClone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInit(value: () => js.Any): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
+      inline def setInit(value: () => js.Any): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMinSide(value: Double): Self = StObject.set(x, "minSide", value.asInstanceOf[js.Any])
+      inline def setMinSide(value: Double): Self = StObject.set(x, "minSide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnRedraw(value: () => js.Any): Self = StObject.set(x, "onRedraw", js.Any.fromFunction0(value))
+      inline def setOnRedraw(value: () => js.Any): Self = StObject.set(x, "onRedraw", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
+      inline def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedraw(value: () => SmartCanvas): Self = StObject.set(x, "redraw", js.Any.fromFunction0(value))
+      inline def setRedraw(value: () => SmartCanvas): Self = StObject.set(x, "redraw", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1399,8 +1127,7 @@ object CanvasGauges {
   }
   object rules {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bounce: /* percent */ Double => Double,
       cycle: /* percent */ Double => Double,
       debounce: /* percent */ Double => Double,
@@ -1417,41 +1144,29 @@ object CanvasGauges {
       __obj.asInstanceOf[rules]
     }
     
-    @scala.inline
-    implicit class rulesMutableBuilder[Self <: rules] (val x: Self) extends AnyVal {
+    extension [Self <: rules](x: Self) {
       
-      @scala.inline
-      def setBounce(value: /* percent */ Double => Double): Self = StObject.set(x, "bounce", js.Any.fromFunction1(value))
+      inline def setBounce(value: /* percent */ Double => Double): Self = StObject.set(x, "bounce", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCycle(value: /* percent */ Double => Double): Self = StObject.set(x, "cycle", js.Any.fromFunction1(value))
+      inline def setCycle(value: /* percent */ Double => Double): Self = StObject.set(x, "cycle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDebounce(value: /* percent */ Double => Double): Self = StObject.set(x, "debounce", js.Any.fromFunction1(value))
+      inline def setDebounce(value: /* percent */ Double => Double): Self = StObject.set(x, "debounce", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDecycle(value: /* percent */ Double => Double): Self = StObject.set(x, "decycle", js.Any.fromFunction1(value))
+      inline def setDecycle(value: /* percent */ Double => Double): Self = StObject.set(x, "decycle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDelastic(value: /* percent */ Double => Double): Self = StObject.set(x, "delastic", js.Any.fromFunction1(value))
+      inline def setDelastic(value: /* percent */ Double => Double): Self = StObject.set(x, "delastic", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDequad(value: /* percent */ Double => Double): Self = StObject.set(x, "dequad", js.Any.fromFunction1(value))
+      inline def setDequad(value: /* percent */ Double => Double): Self = StObject.set(x, "dequad", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDequint(value: /* percent */ Double => Double): Self = StObject.set(x, "dequint", js.Any.fromFunction1(value))
+      inline def setDequint(value: /* percent */ Double => Double): Self = StObject.set(x, "dequint", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setElastic(value: /* percent */ Double => Double): Self = StObject.set(x, "elastic", js.Any.fromFunction1(value))
+      inline def setElastic(value: /* percent */ Double => Double): Self = StObject.set(x, "elastic", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLinear(value: /* percent */ Double => Double): Self = StObject.set(x, "linear", js.Any.fromFunction1(value))
+      inline def setLinear(value: /* percent */ Double => Double): Self = StObject.set(x, "linear", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setQuad(value: /* percent */ Double => Double): Self = StObject.set(x, "quad", js.Any.fromFunction1(value))
+      inline def setQuad(value: /* percent */ Double => Double): Self = StObject.set(x, "quad", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setQuint(value: /* percent */ Double => Double): Self = StObject.set(x, "quint", js.Any.fromFunction1(value))
+      inline def setQuint(value: /* percent */ Double => Double): Self = StObject.set(x, "quint", js.Any.fromFunction1(value))
     }
   }
 }

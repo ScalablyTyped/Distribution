@@ -21,19 +21,15 @@ trait IOSApi extends StObject {
 }
 object IOSApi {
   
-  @scala.inline
-  def apply(openDocument: String => Unit, previewDocument: String => Unit): IOSApi = {
+  inline def apply(openDocument: String => Unit, previewDocument: String => Unit): IOSApi = {
     val __obj = js.Dynamic.literal(openDocument = js.Any.fromFunction1(openDocument), previewDocument = js.Any.fromFunction1(previewDocument))
     __obj.asInstanceOf[IOSApi]
   }
   
-  @scala.inline
-  implicit class IOSApiMutableBuilder[Self <: IOSApi] (val x: Self) extends AnyVal {
+  extension [Self <: IOSApi](x: Self) {
     
-    @scala.inline
-    def setOpenDocument(value: String => Unit): Self = StObject.set(x, "openDocument", js.Any.fromFunction1(value))
+    inline def setOpenDocument(value: String => Unit): Self = StObject.set(x, "openDocument", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPreviewDocument(value: String => Unit): Self = StObject.set(x, "previewDocument", js.Any.fromFunction1(value))
+    inline def setPreviewDocument(value: String => Unit): Self = StObject.set(x, "previewDocument", js.Any.fromFunction1(value))
   }
 }

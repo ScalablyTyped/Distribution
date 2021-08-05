@@ -8,6 +8,5 @@ object googleCloudPaginatorStrings {
   
   @js.native
   sealed trait data extends StObject
-  @scala.inline
-  def data: data = "data".asInstanceOf[data]
+  inline def data: data = "data".asInstanceOf[data]
 }

@@ -15,19 +15,15 @@ trait CurrentMediaPlaybackItemChangedEventArgs extends StObject {
 }
 object CurrentMediaPlaybackItemChangedEventArgs {
   
-  @scala.inline
-  def apply(newItem: MediaPlaybackItem, oldItem: MediaPlaybackItem): CurrentMediaPlaybackItemChangedEventArgs = {
+  inline def apply(newItem: MediaPlaybackItem, oldItem: MediaPlaybackItem): CurrentMediaPlaybackItemChangedEventArgs = {
     val __obj = js.Dynamic.literal(newItem = newItem.asInstanceOf[js.Any], oldItem = oldItem.asInstanceOf[js.Any])
     __obj.asInstanceOf[CurrentMediaPlaybackItemChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class CurrentMediaPlaybackItemChangedEventArgsMutableBuilder[Self <: CurrentMediaPlaybackItemChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: CurrentMediaPlaybackItemChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setNewItem(value: MediaPlaybackItem): Self = StObject.set(x, "newItem", value.asInstanceOf[js.Any])
+    inline def setNewItem(value: MediaPlaybackItem): Self = StObject.set(x, "newItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldItem(value: MediaPlaybackItem): Self = StObject.set(x, "oldItem", value.asInstanceOf[js.Any])
+    inline def setOldItem(value: MediaPlaybackItem): Self = StObject.set(x, "oldItem", value.asInstanceOf[js.Any])
   }
 }

@@ -21,22 +21,17 @@ trait IPBlock extends StObject {
 }
 object IPBlock {
   
-  @scala.inline
-  def apply(cidr: String, except: js.Array[String]): IPBlock = {
+  inline def apply(cidr: String, except: js.Array[String]): IPBlock = {
     val __obj = js.Dynamic.literal(cidr = cidr.asInstanceOf[js.Any], except = except.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPBlock]
   }
   
-  @scala.inline
-  implicit class IPBlockMutableBuilder[Self <: IPBlock] (val x: Self) extends AnyVal {
+  extension [Self <: IPBlock](x: Self) {
     
-    @scala.inline
-    def setCidr(value: String): Self = StObject.set(x, "cidr", value.asInstanceOf[js.Any])
+    inline def setCidr(value: String): Self = StObject.set(x, "cidr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcept(value: js.Array[String]): Self = StObject.set(x, "except", value.asInstanceOf[js.Any])
+    inline def setExcept(value: js.Array[String]): Self = StObject.set(x, "except", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExceptVarargs(value: String*): Self = StObject.set(x, "except", js.Array(value :_*))
+    inline def setExceptVarargs(value: String*): Self = StObject.set(x, "except", js.Array(value :_*))
   }
 }

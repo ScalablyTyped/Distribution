@@ -32,8 +32,7 @@ trait ChildNode extends StObject {
 }
 object ChildNode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     after: /* repeated */ Node | String => Unit,
     before: /* repeated */ Node | String => Unit,
     remove: () => Unit,
@@ -43,19 +42,14 @@ object ChildNode {
     __obj.asInstanceOf[ChildNode]
   }
   
-  @scala.inline
-  implicit class ChildNodeMutableBuilder[Self <: ChildNode] (val x: Self) extends AnyVal {
+  extension [Self <: ChildNode](x: Self) {
     
-    @scala.inline
-    def setAfter(value: /* repeated */ Node | String => Unit): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
+    inline def setAfter(value: /* repeated */ Node | String => Unit): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBefore(value: /* repeated */ Node | String => Unit): Self = StObject.set(x, "before", js.Any.fromFunction1(value))
+    inline def setBefore(value: /* repeated */ Node | String => Unit): Self = StObject.set(x, "before", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+    inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReplaceWith(value: /* repeated */ Node | String => Unit): Self = StObject.set(x, "replaceWith", js.Any.fromFunction1(value))
+    inline def setReplaceWith(value: /* repeated */ Node | String => Unit): Self = StObject.set(x, "replaceWith", js.Any.fromFunction1(value))
   }
 }

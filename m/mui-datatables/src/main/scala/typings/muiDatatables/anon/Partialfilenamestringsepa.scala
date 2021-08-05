@@ -15,31 +15,23 @@ trait Partialfilenamestringsepa extends StObject {
 }
 object Partialfilenamestringsepa {
   
-  @scala.inline
-  def apply(): Partialfilenamestringsepa = {
+  inline def apply(): Partialfilenamestringsepa = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Partialfilenamestringsepa]
   }
   
-  @scala.inline
-  implicit class PartialfilenamestringsepaMutableBuilder[Self <: Partialfilenamestringsepa] (val x: Self) extends AnyVal {
+  extension [Self <: Partialfilenamestringsepa](x: Self) {
     
-    @scala.inline
-    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+    inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     
-    @scala.inline
-    def setFilterOptions(value: PartialuseDisplayedColumn): Self = StObject.set(x, "filterOptions", value.asInstanceOf[js.Any])
+    inline def setFilterOptions(value: PartialuseDisplayedColumn): Self = StObject.set(x, "filterOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterOptionsUndefined: Self = StObject.set(x, "filterOptions", js.undefined)
+    inline def setFilterOptionsUndefined: Self = StObject.set(x, "filterOptions", js.undefined)
     
-    @scala.inline
-    def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+    inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+    inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
   }
 }

@@ -31,37 +31,27 @@ trait IonInfiniteScroll extends StObject {
 }
 object IonInfiniteScroll {
   
-  @scala.inline
-  def apply(): IonInfiniteScroll = {
+  inline def apply(): IonInfiniteScroll = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IonInfiniteScroll]
   }
   
-  @scala.inline
-  implicit class IonInfiniteScrollMutableBuilder[Self <: IonInfiniteScroll] (val x: Self) extends AnyVal {
+  extension [Self <: IonInfiniteScroll](x: Self) {
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setOnIonInfinite(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonInfinite", js.Any.fromFunction1(value))
+    inline def setOnIonInfinite(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonInfinite", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnIonInfiniteUndefined: Self = StObject.set(x, "onIonInfinite", js.undefined)
+    inline def setOnIonInfiniteUndefined: Self = StObject.set(x, "onIonInfinite", js.undefined)
     
-    @scala.inline
-    def setPosition(value: top | bottom): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: top | bottom): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setThreshold(value: String): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+    inline def setThreshold(value: String): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+    inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
   }
 }

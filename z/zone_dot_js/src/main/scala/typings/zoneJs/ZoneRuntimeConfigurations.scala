@@ -33,19 +33,15 @@ trait ZoneRuntimeConfigurations extends StObject {
 }
 object ZoneRuntimeConfigurations {
   
-  @scala.inline
-  def apply(): ZoneRuntimeConfigurations = {
+  inline def apply(): ZoneRuntimeConfigurations = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ZoneRuntimeConfigurations]
   }
   
-  @scala.inline
-  implicit class ZoneRuntimeConfigurationsMutableBuilder[Self <: ZoneRuntimeConfigurations] (val x: Self) extends AnyVal {
+  extension [Self <: ZoneRuntimeConfigurations](x: Self) {
     
-    @scala.inline
-    def set__zone_symbol__ignoreConsoleErrorUncaughtError(value: Boolean): Self = StObject.set(x, "__zone_symbol__ignoreConsoleErrorUncaughtError", value.asInstanceOf[js.Any])
+    inline def set__zone_symbol__ignoreConsoleErrorUncaughtError(value: Boolean): Self = StObject.set(x, "__zone_symbol__ignoreConsoleErrorUncaughtError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__zone_symbol__ignoreConsoleErrorUncaughtErrorUndefined: Self = StObject.set(x, "__zone_symbol__ignoreConsoleErrorUncaughtError", js.undefined)
+    inline def set__zone_symbol__ignoreConsoleErrorUncaughtErrorUndefined: Self = StObject.set(x, "__zone_symbol__ignoreConsoleErrorUncaughtError", js.undefined)
   }
 }

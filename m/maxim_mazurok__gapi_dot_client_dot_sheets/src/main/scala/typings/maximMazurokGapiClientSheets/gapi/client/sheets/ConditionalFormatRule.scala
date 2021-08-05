@@ -17,34 +17,25 @@ trait ConditionalFormatRule extends StObject {
 }
 object ConditionalFormatRule {
   
-  @scala.inline
-  def apply(): ConditionalFormatRule = {
+  inline def apply(): ConditionalFormatRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConditionalFormatRule]
   }
   
-  @scala.inline
-  implicit class ConditionalFormatRuleMutableBuilder[Self <: ConditionalFormatRule] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionalFormatRule](x: Self) {
     
-    @scala.inline
-    def setBooleanRule(value: BooleanRule): Self = StObject.set(x, "booleanRule", value.asInstanceOf[js.Any])
+    inline def setBooleanRule(value: BooleanRule): Self = StObject.set(x, "booleanRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBooleanRuleUndefined: Self = StObject.set(x, "booleanRule", js.undefined)
+    inline def setBooleanRuleUndefined: Self = StObject.set(x, "booleanRule", js.undefined)
     
-    @scala.inline
-    def setGradientRule(value: GradientRule): Self = StObject.set(x, "gradientRule", value.asInstanceOf[js.Any])
+    inline def setGradientRule(value: GradientRule): Self = StObject.set(x, "gradientRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradientRuleUndefined: Self = StObject.set(x, "gradientRule", js.undefined)
+    inline def setGradientRuleUndefined: Self = StObject.set(x, "gradientRule", js.undefined)
     
-    @scala.inline
-    def setRanges(value: js.Array[GridRange]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
+    inline def setRanges(value: js.Array[GridRange]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
+    inline def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
     
-    @scala.inline
-    def setRangesVarargs(value: GridRange*): Self = StObject.set(x, "ranges", js.Array(value :_*))
+    inline def setRangesVarargs(value: GridRange*): Self = StObject.set(x, "ranges", js.Array(value :_*))
   }
 }

@@ -24,24 +24,17 @@ object DistanceDisplayCondition {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def clone_(): DistanceDisplayCondition = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")().asInstanceOf[DistanceDisplayCondition]
-  @scala.inline
-  def clone_(value: Unit, result: DistanceDisplayCondition): DistanceDisplayCondition = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(value.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[DistanceDisplayCondition]
-  @scala.inline
-  def clone_(value: DistanceDisplayCondition): DistanceDisplayCondition = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(value.asInstanceOf[js.Any]).asInstanceOf[DistanceDisplayCondition]
-  @scala.inline
-  def clone_(value: DistanceDisplayCondition, result: DistanceDisplayCondition): DistanceDisplayCondition = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(value.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[DistanceDisplayCondition]
+  inline def clone_(): DistanceDisplayCondition = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")().asInstanceOf[DistanceDisplayCondition]
+  inline def clone_(value: Unit, result: DistanceDisplayCondition): DistanceDisplayCondition = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(value.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[DistanceDisplayCondition]
+  inline def clone_(value: DistanceDisplayCondition): DistanceDisplayCondition = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(value.asInstanceOf[js.Any]).asInstanceOf[DistanceDisplayCondition]
+  inline def clone_(value: DistanceDisplayCondition, result: DistanceDisplayCondition): DistanceDisplayCondition = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(value.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[DistanceDisplayCondition]
   
   /* static member */
-  @scala.inline
-  def equals_(left: DistanceDisplayCondition, right: DistanceDisplayCondition): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def equals_(left: DistanceDisplayCondition, right: DistanceDisplayCondition): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @scala.inline
-  def pack(value: DistanceDisplayCondition, array: js.Array[Double], startingIndex: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("pack")(value.asInstanceOf[js.Any], array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def pack(value: DistanceDisplayCondition, array: js.Array[Double], startingIndex: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("pack")(value.asInstanceOf[js.Any], array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
   /* static member */
-  @scala.inline
-  def unpack(array: js.Array[Double], startingIndex: Double, result: DistanceDisplayCondition): DistanceDisplayCondition = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[DistanceDisplayCondition]
+  inline def unpack(array: js.Array[Double], startingIndex: Double, result: DistanceDisplayCondition): DistanceDisplayCondition = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[DistanceDisplayCondition]
 }

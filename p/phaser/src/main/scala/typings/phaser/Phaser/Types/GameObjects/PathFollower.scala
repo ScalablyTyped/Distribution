@@ -48,56 +48,40 @@ object PathFollower {
   }
   object PathConfig {
     
-    @scala.inline
-    def apply(): PathConfig = {
+    inline def apply(): PathConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PathConfig]
     }
     
-    @scala.inline
-    implicit class PathConfigMutableBuilder[Self <: PathConfig] (val x: Self) extends AnyVal {
+    extension [Self <: PathConfig](x: Self) {
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
-      @scala.inline
-      def setPositionOnPath(value: Boolean): Self = StObject.set(x, "positionOnPath", value.asInstanceOf[js.Any])
+      inline def setPositionOnPath(value: Boolean): Self = StObject.set(x, "positionOnPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionOnPathUndefined: Self = StObject.set(x, "positionOnPath", js.undefined)
+      inline def setPositionOnPathUndefined: Self = StObject.set(x, "positionOnPath", js.undefined)
       
-      @scala.inline
-      def setRotateToPath(value: Boolean): Self = StObject.set(x, "rotateToPath", value.asInstanceOf[js.Any])
+      inline def setRotateToPath(value: Boolean): Self = StObject.set(x, "rotateToPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotateToPathUndefined: Self = StObject.set(x, "rotateToPath", js.undefined)
+      inline def setRotateToPathUndefined: Self = StObject.set(x, "rotateToPath", js.undefined)
       
-      @scala.inline
-      def setRotationOffset(value: Double): Self = StObject.set(x, "rotationOffset", value.asInstanceOf[js.Any])
+      inline def setRotationOffset(value: Double): Self = StObject.set(x, "rotationOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotationOffsetUndefined: Self = StObject.set(x, "rotationOffset", js.undefined)
+      inline def setRotationOffsetUndefined: Self = StObject.set(x, "rotationOffset", js.undefined)
       
-      @scala.inline
-      def setStartAt(value: Double): Self = StObject.set(x, "startAt", value.asInstanceOf[js.Any])
+      inline def setStartAt(value: Double): Self = StObject.set(x, "startAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartAtUndefined: Self = StObject.set(x, "startAt", js.undefined)
+      inline def setStartAtUndefined: Self = StObject.set(x, "startAt", js.undefined)
       
-      @scala.inline
-      def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     }
   }
 }

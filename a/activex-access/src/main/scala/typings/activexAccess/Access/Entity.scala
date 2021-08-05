@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Entity extends StObject {
   
-  @JSName("Access.Entity_typekey")
+  /* private */ @JSName("Access.Entity_typekey")
   var AccessDotEntity_typekey: Entity
   
   def IsMemberSafe(dispid: Double): Boolean
@@ -22,8 +22,7 @@ trait Entity extends StObject {
 }
 object Entity {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessDotEntity_typekey: Entity,
     IsMemberSafe: Double => Boolean,
     Name: String,
@@ -35,22 +34,16 @@ object Entity {
     __obj.asInstanceOf[Entity]
   }
   
-  @scala.inline
-  implicit class EntityMutableBuilder[Self <: Entity] (val x: Self) extends AnyVal {
+  extension [Self <: Entity](x: Self) {
     
-    @scala.inline
-    def setAccessDotEntity_typekey(value: Entity): Self = StObject.set(x, "Access.Entity_typekey", value.asInstanceOf[js.Any])
+    inline def setAccessDotEntity_typekey(value: Entity): Self = StObject.set(x, "Access.Entity_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
+    inline def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperations(value: Operations): Self = StObject.set(x, "Operations", value.asInstanceOf[js.Any])
+    inline def setOperations(value: Operations): Self = StObject.set(x, "Operations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
   }
 }

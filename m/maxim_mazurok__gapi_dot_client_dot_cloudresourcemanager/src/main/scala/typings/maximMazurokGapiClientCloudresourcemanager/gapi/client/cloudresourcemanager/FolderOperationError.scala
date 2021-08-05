@@ -11,19 +11,15 @@ trait FolderOperationError extends StObject {
 }
 object FolderOperationError {
   
-  @scala.inline
-  def apply(): FolderOperationError = {
+  inline def apply(): FolderOperationError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FolderOperationError]
   }
   
-  @scala.inline
-  implicit class FolderOperationErrorMutableBuilder[Self <: FolderOperationError] (val x: Self) extends AnyVal {
+  extension [Self <: FolderOperationError](x: Self) {
     
-    @scala.inline
-    def setErrorMessageId(value: String): Self = StObject.set(x, "errorMessageId", value.asInstanceOf[js.Any])
+    inline def setErrorMessageId(value: String): Self = StObject.set(x, "errorMessageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageIdUndefined: Self = StObject.set(x, "errorMessageId", js.undefined)
+    inline def setErrorMessageIdUndefined: Self = StObject.set(x, "errorMessageId", js.undefined)
   }
 }

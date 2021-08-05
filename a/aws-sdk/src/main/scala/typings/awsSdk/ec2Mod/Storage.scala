@@ -13,19 +13,15 @@ trait Storage extends StObject {
 }
 object Storage {
   
-  @scala.inline
-  def apply(): Storage = {
+  inline def apply(): Storage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Storage]
   }
   
-  @scala.inline
-  implicit class StorageMutableBuilder[Self <: Storage] (val x: Self) extends AnyVal {
+  extension [Self <: Storage](x: Self) {
     
-    @scala.inline
-    def setS3(value: S3Storage): Self = StObject.set(x, "S3", value.asInstanceOf[js.Any])
+    inline def setS3(value: S3Storage): Self = StObject.set(x, "S3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3Undefined: Self = StObject.set(x, "S3", js.undefined)
+    inline def setS3Undefined: Self = StObject.set(x, "S3", js.undefined)
   }
 }

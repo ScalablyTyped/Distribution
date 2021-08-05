@@ -13,19 +13,15 @@ trait ModifyDBProxyTargetGroupResponse extends StObject {
 }
 object ModifyDBProxyTargetGroupResponse {
   
-  @scala.inline
-  def apply(): ModifyDBProxyTargetGroupResponse = {
+  inline def apply(): ModifyDBProxyTargetGroupResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyDBProxyTargetGroupResponse]
   }
   
-  @scala.inline
-  implicit class ModifyDBProxyTargetGroupResponseMutableBuilder[Self <: ModifyDBProxyTargetGroupResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyDBProxyTargetGroupResponse](x: Self) {
     
-    @scala.inline
-    def setDBProxyTargetGroup(value: DBProxyTargetGroup): Self = StObject.set(x, "DBProxyTargetGroup", value.asInstanceOf[js.Any])
+    inline def setDBProxyTargetGroup(value: DBProxyTargetGroup): Self = StObject.set(x, "DBProxyTargetGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBProxyTargetGroupUndefined: Self = StObject.set(x, "DBProxyTargetGroup", js.undefined)
+    inline def setDBProxyTargetGroupUndefined: Self = StObject.set(x, "DBProxyTargetGroup", js.undefined)
   }
 }

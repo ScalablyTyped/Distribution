@@ -19,8 +19,7 @@ trait EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData extends StO
 }
 object EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Resources: js.Array[Active],
     itemsPerPage: Double,
     schemas: js.Array[String],
@@ -31,28 +30,20 @@ object EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData {
     __obj.asInstanceOf[EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData]
   }
   
-  @scala.inline
-  implicit class EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseDataMutableBuilder[Self <: EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData](x: Self) {
     
-    @scala.inline
-    def setItemsPerPage(value: Double): Self = StObject.set(x, "itemsPerPage", value.asInstanceOf[js.Any])
+    inline def setItemsPerPage(value: Double): Self = StObject.set(x, "itemsPerPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResources(value: js.Array[Active]): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: js.Array[Active]): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesVarargs(value: Active*): Self = StObject.set(x, "Resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: Active*): Self = StObject.set(x, "Resources", js.Array(value :_*))
     
-    @scala.inline
-    def setSchemas(value: js.Array[String]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
+    inline def setSchemas(value: js.Array[String]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemasVarargs(value: String*): Self = StObject.set(x, "schemas", js.Array(value :_*))
+    inline def setSchemasVarargs(value: String*): Self = StObject.set(x, "schemas", js.Array(value :_*))
     
-    @scala.inline
-    def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+    inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalResults(value: Double): Self = StObject.set(x, "totalResults", value.asInstanceOf[js.Any])
+    inline def setTotalResults(value: Double): Self = StObject.set(x, "totalResults", value.asInstanceOf[js.Any])
   }
 }

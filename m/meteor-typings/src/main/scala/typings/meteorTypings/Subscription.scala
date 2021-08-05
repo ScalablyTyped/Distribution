@@ -28,8 +28,7 @@ trait Subscription extends StObject {
 }
 object Subscription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     added: (String, String, js.Object) => Unit,
     changed: (String, String, js.Object) => Unit,
     connection: Connection,
@@ -44,34 +43,24 @@ object Subscription {
     __obj.asInstanceOf[Subscription]
   }
   
-  @scala.inline
-  implicit class SubscriptionMutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
+  extension [Self <: Subscription](x: Self) {
     
-    @scala.inline
-    def setAdded(value: (String, String, js.Object) => Unit): Self = StObject.set(x, "added", js.Any.fromFunction3(value))
+    inline def setAdded(value: (String, String, js.Object) => Unit): Self = StObject.set(x, "added", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setChanged(value: (String, String, js.Object) => Unit): Self = StObject.set(x, "changed", js.Any.fromFunction3(value))
+    inline def setChanged(value: (String, String, js.Object) => Unit): Self = StObject.set(x, "changed", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnStop(value: js.Function => Unit): Self = StObject.set(x, "onStop", js.Any.fromFunction1(value))
+    inline def setOnStop(value: js.Function => Unit): Self = StObject.set(x, "onStop", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReady(value: () => Unit): Self = StObject.set(x, "ready", js.Any.fromFunction0(value))
+    inline def setReady(value: () => Unit): Self = StObject.set(x, "ready", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoved(value: (String, String) => Unit): Self = StObject.set(x, "removed", js.Any.fromFunction2(value))
+    inline def setRemoved(value: (String, String) => Unit): Self = StObject.set(x, "removed", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+    inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
   }
 }

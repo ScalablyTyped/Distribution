@@ -11,7 +11,7 @@ class FakeTexture ()
   extends StObject
      with typings.phaser.spine.FakeTexture {
   
-  /* CompleteClass */
+  /* protected */ /* CompleteClass */
   var _image: HTMLImageElement = js.native
   
   /* CompleteClass */

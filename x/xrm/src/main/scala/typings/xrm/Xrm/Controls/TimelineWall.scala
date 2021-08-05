@@ -19,8 +19,7 @@ trait TimelineWall
 }
 object TimelineWall {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getControlType: () => ControlType | String,
     getLabel: () => String,
     getName: () => String,
@@ -33,10 +32,8 @@ object TimelineWall {
     __obj.asInstanceOf[TimelineWall]
   }
   
-  @scala.inline
-  implicit class TimelineWallMutableBuilder[Self <: TimelineWall] (val x: Self) extends AnyVal {
+  extension [Self <: TimelineWall](x: Self) {
     
-    @scala.inline
-    def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
+    inline def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
   }
 }

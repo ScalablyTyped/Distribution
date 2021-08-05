@@ -35,19 +35,14 @@ object cliMod {
   trait ExitCode extends StObject
   object ExitCode {
     
-    @scala.inline
-    def CompileError: `4` = 4.asInstanceOf[`4`]
+    inline def CompileError: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def NoInputFiles: `2` = 2.asInstanceOf[`2`]
+    inline def NoInputFiles: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def NoOutput: `3` = 3.asInstanceOf[`3`]
+    inline def NoOutput: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def OptionError: `1` = 1.asInstanceOf[`1`]
+    inline def OptionError: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def OutputError: `5` = 5.asInstanceOf[`5`]
+    inline def OutputError: `5` = 5.asInstanceOf[`5`]
   }
 }

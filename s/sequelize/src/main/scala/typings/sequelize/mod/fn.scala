@@ -14,17 +14,14 @@ trait fn extends StObject {
 }
 object fn {
   
-  @scala.inline
-  def apply(clone_ : fnStatic): fn = {
+  inline def apply(clone_ : fnStatic): fn = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("clone")(clone_.asInstanceOf[js.Any])
     __obj.asInstanceOf[fn]
   }
   
-  @scala.inline
-  implicit class fnMutableBuilder[Self <: fn] (val x: Self) extends AnyVal {
+  extension [Self <: fn](x: Self) {
     
-    @scala.inline
-    def setClone_(value: fnStatic): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
+    inline def setClone_(value: fnStatic): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
   }
 }

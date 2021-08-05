@@ -32,8 +32,7 @@ trait CreateHarvestJobRequest extends StObject {
 }
 object CreateHarvestJobRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     EndTime: string,
     Id: string,
     OriginEndpointId: string,
@@ -44,22 +43,16 @@ object CreateHarvestJobRequest {
     __obj.asInstanceOf[CreateHarvestJobRequest]
   }
   
-  @scala.inline
-  implicit class CreateHarvestJobRequestMutableBuilder[Self <: CreateHarvestJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateHarvestJobRequest](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: string): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: string): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginEndpointId(value: string): Self = StObject.set(x, "OriginEndpointId", value.asInstanceOf[js.Any])
+    inline def setOriginEndpointId(value: string): Self = StObject.set(x, "OriginEndpointId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3Destination(value: S3Destination): Self = StObject.set(x, "S3Destination", value.asInstanceOf[js.Any])
+    inline def setS3Destination(value: S3Destination): Self = StObject.set(x, "S3Destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTime(value: string): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: string): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
   }
 }

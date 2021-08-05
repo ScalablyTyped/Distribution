@@ -47,49 +47,35 @@ trait Safe extends StObject {
 }
 object Safe {
   
-  @scala.inline
-  def apply(): Safe = {
+  inline def apply(): Safe = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Safe]
   }
   
-  @scala.inline
-  implicit class SafeMutableBuilder[Self <: Safe] (val x: Self) extends AnyVal {
+  extension [Self <: Safe](x: Self) {
     
-    @scala.inline
-    def setAllow(value: SafeAllow): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
+    inline def setAllow(value: SafeAllow): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowUndefined: Self = StObject.set(x, "allow", js.undefined)
+    inline def setAllowUndefined: Self = StObject.set(x, "allow", js.undefined)
     
-    @scala.inline
-    def setSafeProtocols(value: SafeProtocols): Self = StObject.set(x, "safeProtocols", value.asInstanceOf[js.Any])
+    inline def setSafeProtocols(value: SafeProtocols): Self = StObject.set(x, "safeProtocols", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSafeProtocolsUndefined: Self = StObject.set(x, "safeProtocols", js.undefined)
+    inline def setSafeProtocolsUndefined: Self = StObject.set(x, "safeProtocols", js.undefined)
     
-    @scala.inline
-    def setSafeRequire(value: SafeRequire): Self = StObject.set(x, "safeRequire", value.asInstanceOf[js.Any])
+    inline def setSafeRequire(value: SafeRequire): Self = StObject.set(x, "safeRequire", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSafeRequireUndefined: Self = StObject.set(x, "safeRequire", js.undefined)
+    inline def setSafeRequireUndefined: Self = StObject.set(x, "safeRequire", js.undefined)
     
-    @scala.inline
-    def setSafeStyles(value: SafeStyles): Self = StObject.set(x, "safeStyles", value.asInstanceOf[js.Any])
+    inline def setSafeStyles(value: SafeStyles): Self = StObject.set(x, "safeStyles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSafeStylesUndefined: Self = StObject.set(x, "safeStyles", js.undefined)
+    inline def setSafeStylesUndefined: Self = StObject.set(x, "safeStyles", js.undefined)
     
-    @scala.inline
-    def setSizeMax(value: Double): Self = StObject.set(x, "sizeMax", value.asInstanceOf[js.Any])
+    inline def setSizeMax(value: Double): Self = StObject.set(x, "sizeMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeMaxUndefined: Self = StObject.set(x, "sizeMax", js.undefined)
+    inline def setSizeMaxUndefined: Self = StObject.set(x, "sizeMax", js.undefined)
     
-    @scala.inline
-    def setSizeMin(value: Double): Self = StObject.set(x, "sizeMin", value.asInstanceOf[js.Any])
+    inline def setSizeMin(value: Double): Self = StObject.set(x, "sizeMin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeMinUndefined: Self = StObject.set(x, "sizeMin", js.undefined)
+    inline def setSizeMinUndefined: Self = StObject.set(x, "sizeMin", js.undefined)
   }
 }

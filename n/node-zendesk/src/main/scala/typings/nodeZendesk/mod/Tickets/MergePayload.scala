@@ -15,37 +15,27 @@ trait MergePayload extends StObject {
 }
 object MergePayload {
   
-  @scala.inline
-  def apply(ids: js.Array[ZendeskID]): MergePayload = {
+  inline def apply(ids: js.Array[ZendeskID]): MergePayload = {
     val __obj = js.Dynamic.literal(ids = ids.asInstanceOf[js.Any])
     __obj.asInstanceOf[MergePayload]
   }
   
-  @scala.inline
-  implicit class MergePayloadMutableBuilder[Self <: MergePayload] (val x: Self) extends AnyVal {
+  extension [Self <: MergePayload](x: Self) {
     
-    @scala.inline
-    def setIds(value: js.Array[ZendeskID]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+    inline def setIds(value: js.Array[ZendeskID]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdsVarargs(value: ZendeskID*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: ZendeskID*): Self = StObject.set(x, "ids", js.Array(value :_*))
     
-    @scala.inline
-    def setSource_comment(value: String): Self = StObject.set(x, "source_comment", value.asInstanceOf[js.Any])
+    inline def setSource_comment(value: String): Self = StObject.set(x, "source_comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource_commentNull: Self = StObject.set(x, "source_comment", null)
+    inline def setSource_commentNull: Self = StObject.set(x, "source_comment", null)
     
-    @scala.inline
-    def setSource_commentUndefined: Self = StObject.set(x, "source_comment", js.undefined)
+    inline def setSource_commentUndefined: Self = StObject.set(x, "source_comment", js.undefined)
     
-    @scala.inline
-    def setTarget_comment(value: String): Self = StObject.set(x, "target_comment", value.asInstanceOf[js.Any])
+    inline def setTarget_comment(value: String): Self = StObject.set(x, "target_comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget_commentNull: Self = StObject.set(x, "target_comment", null)
+    inline def setTarget_commentNull: Self = StObject.set(x, "target_comment", null)
     
-    @scala.inline
-    def setTarget_commentUndefined: Self = StObject.set(x, "target_comment", js.undefined)
+    inline def setTarget_commentUndefined: Self = StObject.set(x, "target_comment", js.undefined)
   }
 }

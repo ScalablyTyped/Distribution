@@ -14,8 +14,7 @@ trait IPixelRectangleGeometry
 }
 object IPixelRectangleGeometry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     equals_ : IPixelGeometry => Boolean,
     events: IEventManager[js.Object],
     getBounds: () => js.Array[js.Array[Double]] | Null,
@@ -31,13 +30,10 @@ object IPixelRectangleGeometry {
     __obj.asInstanceOf[IPixelRectangleGeometry]
   }
   
-  @scala.inline
-  implicit class IPixelRectangleGeometryMutableBuilder[Self <: IPixelRectangleGeometry] (val x: Self) extends AnyVal {
+  extension [Self <: IPixelRectangleGeometry](x: Self) {
     
-    @scala.inline
-    def setGetClosest(value: js.Array[Double] => js.Object): Self = StObject.set(x, "getClosest", js.Any.fromFunction1(value))
+    inline def setGetClosest(value: js.Array[Double] => js.Object): Self = StObject.set(x, "getClosest", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCoordinates(value: () => js.Array[js.Array[Double]]): Self = StObject.set(x, "getCoordinates", js.Any.fromFunction0(value))
+    inline def setGetCoordinates(value: () => js.Array[js.Array[Double]]): Self = StObject.set(x, "getCoordinates", js.Any.fromFunction0(value))
   }
 }

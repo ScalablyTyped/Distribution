@@ -13,16 +13,13 @@ trait RunInstancesMonitoringEnabled extends StObject {
 }
 object RunInstancesMonitoringEnabled {
   
-  @scala.inline
-  def apply(Enabled: Boolean): RunInstancesMonitoringEnabled = {
+  inline def apply(Enabled: Boolean): RunInstancesMonitoringEnabled = {
     val __obj = js.Dynamic.literal(Enabled = Enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunInstancesMonitoringEnabled]
   }
   
-  @scala.inline
-  implicit class RunInstancesMonitoringEnabledMutableBuilder[Self <: RunInstancesMonitoringEnabled] (val x: Self) extends AnyVal {
+  extension [Self <: RunInstancesMonitoringEnabled](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
   }
 }

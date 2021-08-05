@@ -40,8 +40,7 @@ object clouddebuggerMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         Clouddebugger
       ] = js.native
-    @scala.inline
-    def v2_=(
+    inline def v2_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -83,8 +82,7 @@ object clouddebuggerMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -128,9 +126,7 @@ object clouddebuggerMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def clouddebugger(options: Options): Clouddebugger = ^.asInstanceOf[js.Dynamic].applyDynamic("clouddebugger")(options.asInstanceOf[js.Any]).asInstanceOf[Clouddebugger]
+  inline def clouddebugger(options: Options): Clouddebugger = ^.asInstanceOf[js.Dynamic].applyDynamic("clouddebugger")(options.asInstanceOf[js.Any]).asInstanceOf[Clouddebugger]
   
-  @scala.inline
-  def clouddebugger_v2(version: v2): Clouddebugger = ^.asInstanceOf[js.Dynamic].applyDynamic("clouddebugger")(version.asInstanceOf[js.Any]).asInstanceOf[Clouddebugger]
+  inline def clouddebugger_v2(version: v2): Clouddebugger = ^.asInstanceOf[js.Dynamic].applyDynamic("clouddebugger")(version.asInstanceOf[js.Any]).asInstanceOf[Clouddebugger]
 }

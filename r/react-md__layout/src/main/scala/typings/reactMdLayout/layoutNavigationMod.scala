@@ -85,62 +85,44 @@ object layoutNavigationMod {
   }
   object LayoutNavigationProps {
     
-    @scala.inline
-    def apply[T /* <: BaseTreeItem */](): LayoutNavigationProps[T] = {
+    inline def apply[T /* <: BaseTreeItem */](): LayoutNavigationProps[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LayoutNavigationProps[T]]
     }
     
-    @scala.inline
-    implicit class LayoutNavigationPropsMutableBuilder[Self <: LayoutNavigationProps[?], T /* <: BaseTreeItem */] (val x: Self & LayoutNavigationProps[T]) extends AnyVal {
+    extension [Self <: LayoutNavigationProps[?], T /* <: BaseTreeItem */](x: Self & LayoutNavigationProps[T]) {
       
-      @scala.inline
-      def setCloseNav(value: ReactNode): Self = StObject.set(x, "closeNav", value.asInstanceOf[js.Any])
+      inline def setCloseNav(value: ReactNode): Self = StObject.set(x, "closeNav", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseNavProps(value: PropsWithRef[LayoutCloseNavigationButtonProps, HTMLButtonElement]): Self = StObject.set(x, "closeNavProps", value.asInstanceOf[js.Any])
+      inline def setCloseNavProps(value: PropsWithRef[LayoutCloseNavigationButtonProps, HTMLButtonElement]): Self = StObject.set(x, "closeNavProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseNavPropsUndefined: Self = StObject.set(x, "closeNavProps", js.undefined)
+      inline def setCloseNavPropsUndefined: Self = StObject.set(x, "closeNavProps", js.undefined)
       
-      @scala.inline
-      def setCloseNavUndefined: Self = StObject.set(x, "closeNav", js.undefined)
+      inline def setCloseNavUndefined: Self = StObject.set(x, "closeNav", js.undefined)
       
-      @scala.inline
-      def setHeader(value: ReactNode): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: ReactNode): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderProps(value: PropsWithRef[LayoutNavigationHeaderProps, HTMLDivElement]): Self = StObject.set(x, "headerProps", value.asInstanceOf[js.Any])
+      inline def setHeaderProps(value: PropsWithRef[LayoutNavigationHeaderProps, HTMLDivElement]): Self = StObject.set(x, "headerProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderPropsUndefined: Self = StObject.set(x, "headerProps", js.undefined)
+      inline def setHeaderPropsUndefined: Self = StObject.set(x, "headerProps", js.undefined)
       
-      @scala.inline
-      def setHeaderTitle(value: ReactNode): Self = StObject.set(x, "headerTitle", value.asInstanceOf[js.Any])
+      inline def setHeaderTitle(value: ReactNode): Self = StObject.set(x, "headerTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderTitleProps(value: PropsWithRef[PropsWithRef[AppBarProps, HTMLDivElement], HTMLDivElement]): Self = StObject.set(x, "headerTitleProps", value.asInstanceOf[js.Any])
+      inline def setHeaderTitleProps(value: PropsWithRef[PropsWithRef[AppBarProps, HTMLDivElement], HTMLDivElement]): Self = StObject.set(x, "headerTitleProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderTitlePropsUndefined: Self = StObject.set(x, "headerTitleProps", js.undefined)
+      inline def setHeaderTitlePropsUndefined: Self = StObject.set(x, "headerTitleProps", js.undefined)
       
-      @scala.inline
-      def setHeaderTitleUndefined: Self = StObject.set(x, "headerTitle", js.undefined)
+      inline def setHeaderTitleUndefined: Self = StObject.set(x, "headerTitle", js.undefined)
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setTreeProps(value: LayoutTreeProps[T]): Self = StObject.set(x, "treeProps", value.asInstanceOf[js.Any])
+      inline def setTreeProps(value: LayoutTreeProps[T]): Self = StObject.set(x, "treeProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTreePropsUndefined: Self = StObject.set(x, "treeProps", js.undefined)
+      inline def setTreePropsUndefined: Self = StObject.set(x, "treeProps", js.undefined)
     }
   }
   

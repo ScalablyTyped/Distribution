@@ -13,16 +13,13 @@ trait DeleteAccessPointInput extends StObject {
 }
 object DeleteAccessPointInput {
   
-  @scala.inline
-  def apply(LoadBalancerName: AccessPointName): DeleteAccessPointInput = {
+  inline def apply(LoadBalancerName: AccessPointName): DeleteAccessPointInput = {
     val __obj = js.Dynamic.literal(LoadBalancerName = LoadBalancerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAccessPointInput]
   }
   
-  @scala.inline
-  implicit class DeleteAccessPointInputMutableBuilder[Self <: DeleteAccessPointInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAccessPointInput](x: Self) {
     
-    @scala.inline
-    def setLoadBalancerName(value: AccessPointName): Self = StObject.set(x, "LoadBalancerName", value.asInstanceOf[js.Any])
+    inline def setLoadBalancerName(value: AccessPointName): Self = StObject.set(x, "LoadBalancerName", value.asInstanceOf[js.Any])
   }
 }

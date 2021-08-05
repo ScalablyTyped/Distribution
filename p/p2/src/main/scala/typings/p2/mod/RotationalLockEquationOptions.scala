@@ -10,19 +10,15 @@ trait RotationalLockEquationOptions extends StObject {
 }
 object RotationalLockEquationOptions {
   
-  @scala.inline
-  def apply(): RotationalLockEquationOptions = {
+  inline def apply(): RotationalLockEquationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RotationalLockEquationOptions]
   }
   
-  @scala.inline
-  implicit class RotationalLockEquationOptionsMutableBuilder[Self <: RotationalLockEquationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RotationalLockEquationOptions](x: Self) {
     
-    @scala.inline
-    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+    inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
   }
 }

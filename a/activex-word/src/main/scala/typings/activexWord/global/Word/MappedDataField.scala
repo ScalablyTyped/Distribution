@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.MappedDataField")
 @js.native
-class MappedDataField protected ()
+/* private */ class MappedDataField ()
   extends StObject
      with typings.activexWord.Word.MappedDataField {
   
@@ -34,7 +34,7 @@ class MappedDataField protected ()
   /* CompleteClass */
   override val Value: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.MappedDataField_typekey")
   var WordDotMappedDataField_typekey: typings.activexWord.Word.MappedDataField = js.native
 }

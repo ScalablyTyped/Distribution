@@ -11,19 +11,15 @@ trait Highlighter extends StObject {
 }
 object Highlighter {
   
-  @scala.inline
-  def apply(): Highlighter = {
+  inline def apply(): Highlighter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Highlighter]
   }
   
-  @scala.inline
-  implicit class HighlighterMutableBuilder[Self <: Highlighter] (val x: Self) extends AnyVal {
+  extension [Self <: Highlighter](x: Self) {
     
-    @scala.inline
-    def setHighlighter(value: HighlighterJSON): Self = StObject.set(x, "highlighter", value.asInstanceOf[js.Any])
+    inline def setHighlighter(value: HighlighterJSON): Self = StObject.set(x, "highlighter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlighterUndefined: Self = StObject.set(x, "highlighter", js.undefined)
+    inline def setHighlighterUndefined: Self = StObject.set(x, "highlighter", js.undefined)
   }
 }

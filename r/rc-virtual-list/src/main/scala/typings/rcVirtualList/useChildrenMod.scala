@@ -14,8 +14,7 @@ object useChildrenMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](
+  inline def default[T](
     list: js.Array[T],
     startIndex: Double,
     endIndex: Double,

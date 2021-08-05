@@ -199,170 +199,117 @@ trait MUIDataTableColumnOptions extends StObject {
 }
 object MUIDataTableColumnOptions {
   
-  @scala.inline
-  def apply(): MUIDataTableColumnOptions = {
+  inline def apply(): MUIDataTableColumnOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MUIDataTableColumnOptions]
   }
   
-  @scala.inline
-  implicit class MUIDataTableColumnOptionsMutableBuilder[Self <: MUIDataTableColumnOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MUIDataTableColumnOptions](x: Self) {
     
-    @scala.inline
-    def setCustomBodyRender(
+    inline def setCustomBodyRender(
       value: (/* value */ js.Any, /* tableMeta */ MUIDataTableMeta, /* updateValue */ js.Function1[/* value */ String, Unit]) => String | ReactNode
     ): Self = StObject.set(x, "customBodyRender", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCustomBodyRenderLite(value: (/* dataIndex */ Double, /* rowIndex */ Double) => String | ReactNode): Self = StObject.set(x, "customBodyRenderLite", js.Any.fromFunction2(value))
+    inline def setCustomBodyRenderLite(value: (/* dataIndex */ Double, /* rowIndex */ Double) => String | ReactNode): Self = StObject.set(x, "customBodyRenderLite", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCustomBodyRenderLiteUndefined: Self = StObject.set(x, "customBodyRenderLite", js.undefined)
+    inline def setCustomBodyRenderLiteUndefined: Self = StObject.set(x, "customBodyRenderLite", js.undefined)
     
-    @scala.inline
-    def setCustomBodyRenderUndefined: Self = StObject.set(x, "customBodyRender", js.undefined)
+    inline def setCustomBodyRenderUndefined: Self = StObject.set(x, "customBodyRender", js.undefined)
     
-    @scala.inline
-    def setCustomFilterListOptions(value: MUIDataTableCustomFilterListOptions): Self = StObject.set(x, "customFilterListOptions", value.asInstanceOf[js.Any])
+    inline def setCustomFilterListOptions(value: MUIDataTableCustomFilterListOptions): Self = StObject.set(x, "customFilterListOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomFilterListOptionsUndefined: Self = StObject.set(x, "customFilterListOptions", js.undefined)
+    inline def setCustomFilterListOptionsUndefined: Self = StObject.set(x, "customFilterListOptions", js.undefined)
     
-    @scala.inline
-    def setCustomFilterListRender(value: /* value */ js.Any => String): Self = StObject.set(x, "customFilterListRender", js.Any.fromFunction1(value))
+    inline def setCustomFilterListRender(value: /* value */ js.Any => String): Self = StObject.set(x, "customFilterListRender", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCustomFilterListRenderUndefined: Self = StObject.set(x, "customFilterListRender", js.undefined)
+    inline def setCustomFilterListRenderUndefined: Self = StObject.set(x, "customFilterListRender", js.undefined)
     
-    @scala.inline
-    def setCustomHeadLabelRender(value: (/* dataIndex */ Double, /* rowIndex */ Double) => String | ReactNode): Self = StObject.set(x, "customHeadLabelRender", js.Any.fromFunction2(value))
+    inline def setCustomHeadLabelRender(value: (/* dataIndex */ Double, /* rowIndex */ Double) => String | ReactNode): Self = StObject.set(x, "customHeadLabelRender", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCustomHeadLabelRenderUndefined: Self = StObject.set(x, "customHeadLabelRender", js.undefined)
+    inline def setCustomHeadLabelRenderUndefined: Self = StObject.set(x, "customHeadLabelRender", js.undefined)
     
-    @scala.inline
-    def setCustomHeadRender(
+    inline def setCustomHeadRender(
       value: (/* columnMeta */ MUIDataTableCustomHeadRenderer, /* handleToggleColumn */ js.Function1[/* columnIndex */ Double, Unit], /* sortOrder */ MUISortOptions) => String | ReactNode
     ): Self = StObject.set(x, "customHeadRender", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCustomHeadRenderUndefined: Self = StObject.set(x, "customHeadRender", js.undefined)
+    inline def setCustomHeadRenderUndefined: Self = StObject.set(x, "customHeadRender", js.undefined)
     
-    @scala.inline
-    def setDisplay(value: Display): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    inline def setDisplay(value: Display): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+    inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
-    @scala.inline
-    def setDownload(value: Boolean): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+    inline def setDownload(value: Boolean): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
+    inline def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
     
-    @scala.inline
-    def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
+    inline def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
+    inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
     
-    @scala.inline
-    def setEmpty(value: Boolean): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
+    inline def setEmpty(value: Boolean): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
+    inline def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
     
-    @scala.inline
-    def setFilter(value: Boolean): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: Boolean): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterList(value: js.Array[String]): Self = StObject.set(x, "filterList", value.asInstanceOf[js.Any])
+    inline def setFilterList(value: js.Array[String]): Self = StObject.set(x, "filterList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterListUndefined: Self = StObject.set(x, "filterList", js.undefined)
+    inline def setFilterListUndefined: Self = StObject.set(x, "filterList", js.undefined)
     
-    @scala.inline
-    def setFilterListVarargs(value: String*): Self = StObject.set(x, "filterList", js.Array(value :_*))
+    inline def setFilterListVarargs(value: String*): Self = StObject.set(x, "filterList", js.Array(value :_*))
     
-    @scala.inline
-    def setFilterOptions(value: MUIDataTableFilterOptions): Self = StObject.set(x, "filterOptions", value.asInstanceOf[js.Any])
+    inline def setFilterOptions(value: MUIDataTableFilterOptions): Self = StObject.set(x, "filterOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterOptionsUndefined: Self = StObject.set(x, "filterOptions", js.undefined)
+    inline def setFilterOptionsUndefined: Self = StObject.set(x, "filterOptions", js.undefined)
     
-    @scala.inline
-    def setFilterType(value: FilterType): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
+    inline def setFilterType(value: FilterType): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
+    inline def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
+    inline def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
+    inline def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
     
-    @scala.inline
-    def setPrint(value: Boolean): Self = StObject.set(x, "print", value.asInstanceOf[js.Any])
+    inline def setPrint(value: Boolean): Self = StObject.set(x, "print", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintUndefined: Self = StObject.set(x, "print", js.undefined)
+    inline def setPrintUndefined: Self = StObject.set(x, "print", js.undefined)
     
-    @scala.inline
-    def setSearchable(value: Boolean): Self = StObject.set(x, "searchable", value.asInstanceOf[js.Any])
+    inline def setSearchable(value: Boolean): Self = StObject.set(x, "searchable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchableUndefined: Self = StObject.set(x, "searchable", js.undefined)
+    inline def setSearchableUndefined: Self = StObject.set(x, "searchable", js.undefined)
     
-    @scala.inline
-    def setSetCellHeaderProps(value: /* columnMeta */ MUIDataTableCustomHeadRenderer => js.Object): Self = StObject.set(x, "setCellHeaderProps", js.Any.fromFunction1(value))
+    inline def setSetCellHeaderProps(value: /* columnMeta */ MUIDataTableCustomHeadRenderer => js.Object): Self = StObject.set(x, "setCellHeaderProps", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetCellHeaderPropsUndefined: Self = StObject.set(x, "setCellHeaderProps", js.undefined)
+    inline def setSetCellHeaderPropsUndefined: Self = StObject.set(x, "setCellHeaderProps", js.undefined)
     
-    @scala.inline
-    def setSetCellProps(value: (/* cellValue */ String, /* rowIndex */ Double, /* columnIndex */ Double) => js.Object): Self = StObject.set(x, "setCellProps", js.Any.fromFunction3(value))
+    inline def setSetCellProps(value: (/* cellValue */ String, /* rowIndex */ Double, /* columnIndex */ Double) => js.Object): Self = StObject.set(x, "setCellProps", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSetCellPropsUndefined: Self = StObject.set(x, "setCellProps", js.undefined)
+    inline def setSetCellPropsUndefined: Self = StObject.set(x, "setCellProps", js.undefined)
     
-    @scala.inline
-    def setSort(value: Boolean): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: Boolean): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortCompare(value: /* order */ asc | desc => js.Function2[/* obj1 */ DataAny, /* obj2 */ DataAny, Double]): Self = StObject.set(x, "sortCompare", js.Any.fromFunction1(value))
+    inline def setSortCompare(value: /* order */ asc | desc => js.Function2[/* obj1 */ DataAny, /* obj2 */ DataAny, Double]): Self = StObject.set(x, "sortCompare", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSortCompareUndefined: Self = StObject.set(x, "sortCompare", js.undefined)
+    inline def setSortCompareUndefined: Self = StObject.set(x, "sortCompare", js.undefined)
     
-    @scala.inline
-    def setSortDescFirst(value: Boolean): Self = StObject.set(x, "sortDescFirst", value.asInstanceOf[js.Any])
+    inline def setSortDescFirst(value: Boolean): Self = StObject.set(x, "sortDescFirst", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortDescFirstUndefined: Self = StObject.set(x, "sortDescFirst", js.undefined)
+    inline def setSortDescFirstUndefined: Self = StObject.set(x, "sortDescFirst", js.undefined)
     
-    @scala.inline
-    def setSortDirection(value: asc | desc | none): Self = StObject.set(x, "sortDirection", value.asInstanceOf[js.Any])
+    inline def setSortDirection(value: asc | desc | none): Self = StObject.set(x, "sortDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortDirectionUndefined: Self = StObject.set(x, "sortDirection", js.undefined)
+    inline def setSortDirectionUndefined: Self = StObject.set(x, "sortDirection", js.undefined)
     
-    @scala.inline
-    def setSortThirdClickReset(value: Boolean): Self = StObject.set(x, "sortThirdClickReset", value.asInstanceOf[js.Any])
+    inline def setSortThirdClickReset(value: Boolean): Self = StObject.set(x, "sortThirdClickReset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortThirdClickResetUndefined: Self = StObject.set(x, "sortThirdClickReset", js.undefined)
+    inline def setSortThirdClickResetUndefined: Self = StObject.set(x, "sortThirdClickReset", js.undefined)
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    @scala.inline
-    def setViewColumns(value: Boolean): Self = StObject.set(x, "viewColumns", value.asInstanceOf[js.Any])
+    inline def setViewColumns(value: Boolean): Self = StObject.set(x, "viewColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewColumnsUndefined: Self = StObject.set(x, "viewColumns", js.undefined)
+    inline def setViewColumnsUndefined: Self = StObject.set(x, "viewColumns", js.undefined)
   }
 }

@@ -12,25 +12,19 @@ trait Multi extends StObject {
 }
 object Multi {
   
-  @scala.inline
-  def apply(): Multi = {
+  inline def apply(): Multi = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Multi]
   }
   
-  @scala.inline
-  implicit class MultiMutableBuilder[Self <: Multi] (val x: Self) extends AnyVal {
+  extension [Self <: Multi](x: Self) {
     
-    @scala.inline
-    def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
+    inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
+    inline def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
     
-    @scala.inline
-    def setUpsert(value: Boolean): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
+    inline def setUpsert(value: Boolean): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpsertUndefined: Self = StObject.set(x, "upsert", js.undefined)
+    inline def setUpsertUndefined: Self = StObject.set(x, "upsert", js.undefined)
   }
 }

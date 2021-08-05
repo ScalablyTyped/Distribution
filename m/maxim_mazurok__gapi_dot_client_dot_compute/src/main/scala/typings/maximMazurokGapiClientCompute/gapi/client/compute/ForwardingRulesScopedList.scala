@@ -15,28 +15,21 @@ trait ForwardingRulesScopedList extends StObject {
 }
 object ForwardingRulesScopedList {
   
-  @scala.inline
-  def apply(): ForwardingRulesScopedList = {
+  inline def apply(): ForwardingRulesScopedList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ForwardingRulesScopedList]
   }
   
-  @scala.inline
-  implicit class ForwardingRulesScopedListMutableBuilder[Self <: ForwardingRulesScopedList] (val x: Self) extends AnyVal {
+  extension [Self <: ForwardingRulesScopedList](x: Self) {
     
-    @scala.inline
-    def setForwardingRules(value: js.Array[ForwardingRule]): Self = StObject.set(x, "forwardingRules", value.asInstanceOf[js.Any])
+    inline def setForwardingRules(value: js.Array[ForwardingRule]): Self = StObject.set(x, "forwardingRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardingRulesUndefined: Self = StObject.set(x, "forwardingRules", js.undefined)
+    inline def setForwardingRulesUndefined: Self = StObject.set(x, "forwardingRules", js.undefined)
     
-    @scala.inline
-    def setForwardingRulesVarargs(value: ForwardingRule*): Self = StObject.set(x, "forwardingRules", js.Array(value :_*))
+    inline def setForwardingRulesVarargs(value: ForwardingRule*): Self = StObject.set(x, "forwardingRules", js.Array(value :_*))
     
-    @scala.inline
-    def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+    inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

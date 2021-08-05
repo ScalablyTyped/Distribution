@@ -13,16 +13,13 @@ trait DynamicComponentGetViewStrategy extends StObject {
 }
 object DynamicComponentGetViewStrategy {
   
-  @scala.inline
-  def apply(getViewStrategy: () => String | ViewStrategy_): DynamicComponentGetViewStrategy = {
+  inline def apply(getViewStrategy: () => String | ViewStrategy_): DynamicComponentGetViewStrategy = {
     val __obj = js.Dynamic.literal(getViewStrategy = js.Any.fromFunction0(getViewStrategy))
     __obj.asInstanceOf[DynamicComponentGetViewStrategy]
   }
   
-  @scala.inline
-  implicit class DynamicComponentGetViewStrategyMutableBuilder[Self <: DynamicComponentGetViewStrategy] (val x: Self) extends AnyVal {
+  extension [Self <: DynamicComponentGetViewStrategy](x: Self) {
     
-    @scala.inline
-    def setGetViewStrategy(value: () => String | ViewStrategy_): Self = StObject.set(x, "getViewStrategy", js.Any.fromFunction0(value))
+    inline def setGetViewStrategy(value: () => String | ViewStrategy_): Self = StObject.set(x, "getViewStrategy", js.Any.fromFunction0(value))
   }
 }

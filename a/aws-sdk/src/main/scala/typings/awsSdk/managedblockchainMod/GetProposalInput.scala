@@ -18,19 +18,15 @@ trait GetProposalInput extends StObject {
 }
 object GetProposalInput {
   
-  @scala.inline
-  def apply(NetworkId: ResourceIdString, ProposalId: ResourceIdString): GetProposalInput = {
+  inline def apply(NetworkId: ResourceIdString, ProposalId: ResourceIdString): GetProposalInput = {
     val __obj = js.Dynamic.literal(NetworkId = NetworkId.asInstanceOf[js.Any], ProposalId = ProposalId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetProposalInput]
   }
   
-  @scala.inline
-  implicit class GetProposalInputMutableBuilder[Self <: GetProposalInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetProposalInput](x: Self) {
     
-    @scala.inline
-    def setNetworkId(value: ResourceIdString): Self = StObject.set(x, "NetworkId", value.asInstanceOf[js.Any])
+    inline def setNetworkId(value: ResourceIdString): Self = StObject.set(x, "NetworkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProposalId(value: ResourceIdString): Self = StObject.set(x, "ProposalId", value.asInstanceOf[js.Any])
+    inline def setProposalId(value: ResourceIdString): Self = StObject.set(x, "ProposalId", value.asInstanceOf[js.Any])
   }
 }

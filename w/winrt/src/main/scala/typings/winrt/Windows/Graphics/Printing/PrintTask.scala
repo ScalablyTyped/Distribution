@@ -10,8 +10,7 @@ trait PrintTask
      with IPrintTask
 object PrintTask {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     oncompleted: js.Any,
     onpreviewing: js.Any,
     onprogressing: js.Any,

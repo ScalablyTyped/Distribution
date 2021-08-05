@@ -58,8 +58,7 @@ trait XDispatch
 }
 object XDispatch {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addStatusListener: (XStatusListener, URL) => Unit,
     dispatch: (URL, SeqEquiv[PropertyValue]) => Unit,
@@ -71,16 +70,12 @@ object XDispatch {
     __obj.asInstanceOf[XDispatch]
   }
   
-  @scala.inline
-  implicit class XDispatchMutableBuilder[Self <: XDispatch] (val x: Self) extends AnyVal {
+  extension [Self <: XDispatch](x: Self) {
     
-    @scala.inline
-    def setAddStatusListener(value: (XStatusListener, URL) => Unit): Self = StObject.set(x, "addStatusListener", js.Any.fromFunction2(value))
+    inline def setAddStatusListener(value: (XStatusListener, URL) => Unit): Self = StObject.set(x, "addStatusListener", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDispatch(value: (URL, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "dispatch", js.Any.fromFunction2(value))
+    inline def setDispatch(value: (URL, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "dispatch", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemoveStatusListener(value: (XStatusListener, URL) => Unit): Self = StObject.set(x, "removeStatusListener", js.Any.fromFunction2(value))
+    inline def setRemoveStatusListener(value: (XStatusListener, URL) => Unit): Self = StObject.set(x, "removeStatusListener", js.Any.fromFunction2(value))
   }
 }

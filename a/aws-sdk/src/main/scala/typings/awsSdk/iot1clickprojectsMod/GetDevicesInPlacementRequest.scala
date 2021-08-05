@@ -18,19 +18,15 @@ trait GetDevicesInPlacementRequest extends StObject {
 }
 object GetDevicesInPlacementRequest {
   
-  @scala.inline
-  def apply(placementName: PlacementName, projectName: ProjectName): GetDevicesInPlacementRequest = {
+  inline def apply(placementName: PlacementName, projectName: ProjectName): GetDevicesInPlacementRequest = {
     val __obj = js.Dynamic.literal(placementName = placementName.asInstanceOf[js.Any], projectName = projectName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDevicesInPlacementRequest]
   }
   
-  @scala.inline
-  implicit class GetDevicesInPlacementRequestMutableBuilder[Self <: GetDevicesInPlacementRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDevicesInPlacementRequest](x: Self) {
     
-    @scala.inline
-    def setPlacementName(value: PlacementName): Self = StObject.set(x, "placementName", value.asInstanceOf[js.Any])
+    inline def setPlacementName(value: PlacementName): Self = StObject.set(x, "placementName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectName(value: ProjectName): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
+    inline def setProjectName(value: ProjectName): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
   }
 }

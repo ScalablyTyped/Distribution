@@ -10,19 +10,15 @@ trait NotifyMethods extends StObject {
 }
 object NotifyMethods {
   
-  @scala.inline
-  def apply(): NotifyMethods = {
+  inline def apply(): NotifyMethods = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NotifyMethods]
   }
   
-  @scala.inline
-  implicit class NotifyMethodsMutableBuilder[Self <: NotifyMethods] (val x: Self) extends AnyVal {
+  extension [Self <: NotifyMethods](x: Self) {
     
-    @scala.inline
-    def setRemove(value: () => js.Any): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+    inline def setRemove(value: () => js.Any): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+    inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
   }
 }

@@ -25,25 +25,19 @@ trait InstanceSaveOptions
 }
 object InstanceSaveOptions {
   
-  @scala.inline
-  def apply(): InstanceSaveOptions = {
+  inline def apply(): InstanceSaveOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceSaveOptions]
   }
   
-  @scala.inline
-  implicit class InstanceSaveOptionsMutableBuilder[Self <: InstanceSaveOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceSaveOptions](x: Self) {
     
-    @scala.inline
-    def setHooks(value: Boolean): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
+    inline def setHooks(value: Boolean): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
+    inline def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
     
-    @scala.inline
-    def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+    inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+    inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
   }
 }

@@ -19,25 +19,19 @@ trait Syntax extends StObject {
 }
 object Syntax {
   
-  @scala.inline
-  def apply(): Syntax = {
+  inline def apply(): Syntax = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Syntax]
   }
   
-  @scala.inline
-  implicit class SyntaxMutableBuilder[Self <: Syntax] (val x: Self) extends AnyVal {
+  extension [Self <: Syntax](x: Self) {
     
-    @scala.inline
-    def setParse(value: (/* css */ ParserInput, /* opts */ js.UndefOr[PickProcessOptionsmapfrom]) => Root_): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
+    inline def setParse(value: (/* css */ ParserInput, /* opts */ js.UndefOr[PickProcessOptionsmapfrom]) => Root_): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
+    inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
     
-    @scala.inline
-    def setStringify(value: (/* node */ Node, /* builder */ Builder) => Unit): Self = StObject.set(x, "stringify", js.Any.fromFunction2(value))
+    inline def setStringify(value: (/* node */ Node, /* builder */ Builder) => Unit): Self = StObject.set(x, "stringify", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStringifyUndefined: Self = StObject.set(x, "stringify", js.undefined)
+    inline def setStringifyUndefined: Self = StObject.set(x, "stringify", js.undefined)
   }
 }

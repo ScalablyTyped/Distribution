@@ -13,17 +13,14 @@ object anon {
   }
   object Sync {
     
-    @scala.inline
-    def apply(): Sync = {
+    inline def apply(): Sync = {
       val __obj = js.Dynamic.literal(sync = true)
       __obj.asInstanceOf[Sync]
     }
     
-    @scala.inline
-    implicit class SyncMutableBuilder[Self <: Sync] (val x: Self) extends AnyVal {
+    extension [Self <: Sync](x: Self) {
       
-      @scala.inline
-      def setSync(value: `true`): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+      inline def setSync(value: `true`): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
     }
   }
 }

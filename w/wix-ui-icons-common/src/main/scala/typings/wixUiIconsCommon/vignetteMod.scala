@@ -22,20 +22,16 @@ object vignetteMod extends Shortcut {
   }
   object VignetteProps {
     
-    @scala.inline
-    def apply(): VignetteProps = {
+    inline def apply(): VignetteProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VignetteProps]
     }
     
-    @scala.inline
-    implicit class VignettePropsMutableBuilder[Self <: VignetteProps] (val x: Self) extends AnyVal {
+    extension [Self <: VignetteProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

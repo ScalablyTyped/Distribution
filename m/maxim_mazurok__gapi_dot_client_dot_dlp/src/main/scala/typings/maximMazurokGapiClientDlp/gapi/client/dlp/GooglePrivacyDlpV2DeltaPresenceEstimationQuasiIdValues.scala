@@ -18,28 +18,21 @@ trait GooglePrivacyDlpV2DeltaPresenceEstimationQuasiIdValues extends StObject {
 }
 object GooglePrivacyDlpV2DeltaPresenceEstimationQuasiIdValues {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2DeltaPresenceEstimationQuasiIdValues = {
+  inline def apply(): GooglePrivacyDlpV2DeltaPresenceEstimationQuasiIdValues = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2DeltaPresenceEstimationQuasiIdValues]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2DeltaPresenceEstimationQuasiIdValuesMutableBuilder[Self <: GooglePrivacyDlpV2DeltaPresenceEstimationQuasiIdValues] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2DeltaPresenceEstimationQuasiIdValues](x: Self) {
     
-    @scala.inline
-    def setEstimatedProbability(value: Double): Self = StObject.set(x, "estimatedProbability", value.asInstanceOf[js.Any])
+    inline def setEstimatedProbability(value: Double): Self = StObject.set(x, "estimatedProbability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedProbabilityUndefined: Self = StObject.set(x, "estimatedProbability", js.undefined)
+    inline def setEstimatedProbabilityUndefined: Self = StObject.set(x, "estimatedProbability", js.undefined)
     
-    @scala.inline
-    def setQuasiIdsValues(value: js.Array[GooglePrivacyDlpV2Value]): Self = StObject.set(x, "quasiIdsValues", value.asInstanceOf[js.Any])
+    inline def setQuasiIdsValues(value: js.Array[GooglePrivacyDlpV2Value]): Self = StObject.set(x, "quasiIdsValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuasiIdsValuesUndefined: Self = StObject.set(x, "quasiIdsValues", js.undefined)
+    inline def setQuasiIdsValuesUndefined: Self = StObject.set(x, "quasiIdsValues", js.undefined)
     
-    @scala.inline
-    def setQuasiIdsValuesVarargs(value: GooglePrivacyDlpV2Value*): Self = StObject.set(x, "quasiIdsValues", js.Array(value :_*))
+    inline def setQuasiIdsValuesVarargs(value: GooglePrivacyDlpV2Value*): Self = StObject.set(x, "quasiIdsValues", js.Array(value :_*))
   }
 }

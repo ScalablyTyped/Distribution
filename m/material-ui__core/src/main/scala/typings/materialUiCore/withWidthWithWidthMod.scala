@@ -14,20 +14,14 @@ object withWidthWithWidthMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): PropInjector[WithWidth, WithWidthProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[PropInjector[WithWidth, WithWidthProps]]
-  @scala.inline
-  def default(options: WithWidthOptions): PropInjector[WithWidth, WithWidthProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[PropInjector[WithWidth, WithWidthProps]]
+  inline def default(): PropInjector[WithWidth, WithWidthProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[PropInjector[WithWidth, WithWidthProps]]
+  inline def default(options: WithWidthOptions): PropInjector[WithWidth, WithWidthProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[PropInjector[WithWidth, WithWidthProps]]
   
-  @scala.inline
-  def isWidthDown(breakpoint: Breakpoint, screenWidth: Breakpoint): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isWidthDown")(breakpoint.asInstanceOf[js.Any], screenWidth.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def isWidthDown(breakpoint: Breakpoint, screenWidth: Breakpoint, inclusive: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isWidthDown")(breakpoint.asInstanceOf[js.Any], screenWidth.asInstanceOf[js.Any], inclusive.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isWidthDown(breakpoint: Breakpoint, screenWidth: Breakpoint): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isWidthDown")(breakpoint.asInstanceOf[js.Any], screenWidth.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isWidthDown(breakpoint: Breakpoint, screenWidth: Breakpoint, inclusive: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isWidthDown")(breakpoint.asInstanceOf[js.Any], screenWidth.asInstanceOf[js.Any], inclusive.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isWidthUp(breakpoint: Breakpoint, screenWidth: Breakpoint): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isWidthUp")(breakpoint.asInstanceOf[js.Any], screenWidth.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def isWidthUp(breakpoint: Breakpoint, screenWidth: Breakpoint, inclusive: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isWidthUp")(breakpoint.asInstanceOf[js.Any], screenWidth.asInstanceOf[js.Any], inclusive.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isWidthUp(breakpoint: Breakpoint, screenWidth: Breakpoint): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isWidthUp")(breakpoint.asInstanceOf[js.Any], screenWidth.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isWidthUp(breakpoint: Breakpoint, screenWidth: Breakpoint, inclusive: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isWidthUp")(breakpoint.asInstanceOf[js.Any], screenWidth.asInstanceOf[js.Any], inclusive.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   trait WithWidth extends StObject {
     
@@ -35,17 +29,14 @@ object withWidthWithWidthMod {
   }
   object WithWidth {
     
-    @scala.inline
-    def apply(width: Breakpoint): WithWidth = {
+    inline def apply(width: Breakpoint): WithWidth = {
       val __obj = js.Dynamic.literal(width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[WithWidth]
     }
     
-    @scala.inline
-    implicit class WithWidthMutableBuilder[Self <: WithWidth] (val x: Self) extends AnyVal {
+    extension [Self <: WithWidth](x: Self) {
       
-      @scala.inline
-      def setWidth(value: Breakpoint): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Breakpoint): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -61,38 +52,28 @@ object withWidthWithWidthMod {
   }
   object WithWidthOptions {
     
-    @scala.inline
-    def apply(): WithWidthOptions = {
+    inline def apply(): WithWidthOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WithWidthOptions]
     }
     
-    @scala.inline
-    implicit class WithWidthOptionsMutableBuilder[Self <: WithWidthOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WithWidthOptions](x: Self) {
       
-      @scala.inline
-      def setInitialWidth(value: Breakpoint): Self = StObject.set(x, "initialWidth", value.asInstanceOf[js.Any])
+      inline def setInitialWidth(value: Breakpoint): Self = StObject.set(x, "initialWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialWidthUndefined: Self = StObject.set(x, "initialWidth", js.undefined)
+      inline def setInitialWidthUndefined: Self = StObject.set(x, "initialWidth", js.undefined)
       
-      @scala.inline
-      def setNoSSR(value: Boolean): Self = StObject.set(x, "noSSR", value.asInstanceOf[js.Any])
+      inline def setNoSSR(value: Boolean): Self = StObject.set(x, "noSSR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoSSRUndefined: Self = StObject.set(x, "noSSR", js.undefined)
+      inline def setNoSSRUndefined: Self = StObject.set(x, "noSSR", js.undefined)
       
-      @scala.inline
-      def setResizeInterval(value: Double): Self = StObject.set(x, "resizeInterval", value.asInstanceOf[js.Any])
+      inline def setResizeInterval(value: Double): Self = StObject.set(x, "resizeInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeIntervalUndefined: Self = StObject.set(x, "resizeInterval", js.undefined)
+      inline def setResizeIntervalUndefined: Self = StObject.set(x, "resizeInterval", js.undefined)
       
-      @scala.inline
-      def setWithTheme(value: Boolean): Self = StObject.set(x, "withTheme", value.asInstanceOf[js.Any])
+      inline def setWithTheme(value: Boolean): Self = StObject.set(x, "withTheme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithThemeUndefined: Self = StObject.set(x, "withTheme", js.undefined)
+      inline def setWithThemeUndefined: Self = StObject.set(x, "withTheme", js.undefined)
     }
   }
   
@@ -105,32 +86,24 @@ object withWidthWithWidthMod {
   }
   object WithWidthProps {
     
-    @scala.inline
-    def apply(): WithWidthProps = {
+    inline def apply(): WithWidthProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WithWidthProps]
     }
     
-    @scala.inline
-    implicit class WithWidthPropsMutableBuilder[Self <: WithWidthProps] (val x: Self) extends AnyVal {
+    extension [Self <: WithWidthProps](x: Self) {
       
-      @scala.inline
-      def setInnerRef(value: Ref[js.Any] | RefObject[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      inline def setInnerRef(value: Ref[js.Any] | RefObject[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      inline def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
+      inline def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
       
-      @scala.inline
-      def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
+      inline def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Breakpoint): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Breakpoint): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
 }

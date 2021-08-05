@@ -68,8 +68,7 @@ trait ApplicationViewTitleBar extends StObject {
 }
 object ApplicationViewTitleBar {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     backgroundColor: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Color */ js.Any,
     buttonBackgroundColor: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Color */ js.Any,
     buttonForegroundColor: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Color */ js.Any,
@@ -87,66 +86,53 @@ object ApplicationViewTitleBar {
     __obj.asInstanceOf[ApplicationViewTitleBar]
   }
   
-  @scala.inline
-  implicit class ApplicationViewTitleBarMutableBuilder[Self <: ApplicationViewTitleBar] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationViewTitleBar](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(
+    inline def setBackgroundColor(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Color */ js.Any
     ): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonBackgroundColor(
+    inline def setButtonBackgroundColor(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Color */ js.Any
     ): Self = StObject.set(x, "buttonBackgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonForegroundColor(
+    inline def setButtonForegroundColor(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Color */ js.Any
     ): Self = StObject.set(x, "buttonForegroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonHoverBackgroundColor(
+    inline def setButtonHoverBackgroundColor(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Color */ js.Any
     ): Self = StObject.set(x, "buttonHoverBackgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonHoverForegroundColor(
+    inline def setButtonHoverForegroundColor(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Color */ js.Any
     ): Self = StObject.set(x, "buttonHoverForegroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonInactiveBackgroundColor(
+    inline def setButtonInactiveBackgroundColor(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Color */ js.Any
     ): Self = StObject.set(x, "buttonInactiveBackgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonInactiveForegroundColor(
+    inline def setButtonInactiveForegroundColor(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Color */ js.Any
     ): Self = StObject.set(x, "buttonInactiveForegroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonPressedBackgroundColor(
+    inline def setButtonPressedBackgroundColor(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Color */ js.Any
     ): Self = StObject.set(x, "buttonPressedBackgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonPressedForegroundColor(
+    inline def setButtonPressedForegroundColor(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Color */ js.Any
     ): Self = StObject.set(x, "buttonPressedForegroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForegroundColor(
+    inline def setForegroundColor(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Color */ js.Any
     ): Self = StObject.set(x, "foregroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInactiveBackgroundColor(
+    inline def setInactiveBackgroundColor(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Color */ js.Any
     ): Self = StObject.set(x, "inactiveBackgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInactiveForegroundColor(
+    inline def setInactiveForegroundColor(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Color */ js.Any
     ): Self = StObject.set(x, "inactiveForegroundColor", value.asInstanceOf[js.Any])
   }

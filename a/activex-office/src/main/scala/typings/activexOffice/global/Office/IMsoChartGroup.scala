@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.IMsoChartGroup")
 @js.native
-class IMsoChartGroup protected ()
+/* private */ class IMsoChartGroup ()
   extends StObject
      with typings.activexOffice.Office.IMsoChartGroup

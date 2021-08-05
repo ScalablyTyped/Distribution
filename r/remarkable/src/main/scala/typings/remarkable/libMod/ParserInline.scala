@@ -16,8 +16,7 @@ trait ParserInline extends StObject {
 }
 object ParserInline {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parse: (String, Options, Env, js.Array[Token]) => Unit,
     skipToken: StateInline => Unit,
     tokenize: StateInline => Unit,
@@ -27,19 +26,14 @@ object ParserInline {
     __obj.asInstanceOf[ParserInline]
   }
   
-  @scala.inline
-  implicit class ParserInlineMutableBuilder[Self <: ParserInline] (val x: Self) extends AnyVal {
+  extension [Self <: ParserInline](x: Self) {
     
-    @scala.inline
-    def setParse(value: (String, Options, Env, js.Array[Token]) => Unit): Self = StObject.set(x, "parse", js.Any.fromFunction4(value))
+    inline def setParse(value: (String, Options, Env, js.Array[Token]) => Unit): Self = StObject.set(x, "parse", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setSkipToken(value: StateInline => Unit): Self = StObject.set(x, "skipToken", js.Any.fromFunction1(value))
+    inline def setSkipToken(value: StateInline => Unit): Self = StObject.set(x, "skipToken", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTokenize(value: StateInline => Unit): Self = StObject.set(x, "tokenize", js.Any.fromFunction1(value))
+    inline def setTokenize(value: StateInline => Unit): Self = StObject.set(x, "tokenize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValidateLink(value: String => Boolean): Self = StObject.set(x, "validateLink", js.Any.fromFunction1(value))
+    inline def setValidateLink(value: String => Boolean): Self = StObject.set(x, "validateLink", js.Any.fromFunction1(value))
   }
 }

@@ -26,8 +26,7 @@ trait ReGeocodePoi extends StObject {
 }
 object ReGeocodePoi {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     address: String,
     businessArea: String,
     direction: String,
@@ -43,34 +42,24 @@ object ReGeocodePoi {
     __obj.asInstanceOf[ReGeocodePoi]
   }
   
-  @scala.inline
-  implicit class ReGeocodePoiMutableBuilder[Self <: ReGeocodePoi] (val x: Self) extends AnyVal {
+  extension [Self <: ReGeocodePoi](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBusinessArea(value: String): Self = StObject.set(x, "businessArea", value.asInstanceOf[js.Any])
+    inline def setBusinessArea(value: String): Self = StObject.set(x, "businessArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: LngLat): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: LngLat): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTel(value: String): Self = StObject.set(x, "tel", value.asInstanceOf[js.Any])
+    inline def setTel(value: String): Self = StObject.set(x, "tel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

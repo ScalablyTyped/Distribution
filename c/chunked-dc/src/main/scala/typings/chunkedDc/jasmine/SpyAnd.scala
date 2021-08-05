@@ -26,8 +26,7 @@ trait SpyAnd extends StObject {
 }
 object SpyAnd {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     callFake: js.Function => Spy,
     callThrough: () => Spy,
     returnValue: js.Any => Spy,
@@ -39,25 +38,18 @@ object SpyAnd {
     __obj.asInstanceOf[SpyAnd]
   }
   
-  @scala.inline
-  implicit class SpyAndMutableBuilder[Self <: SpyAnd] (val x: Self) extends AnyVal {
+  extension [Self <: SpyAnd](x: Self) {
     
-    @scala.inline
-    def setCallFake(value: js.Function => Spy): Self = StObject.set(x, "callFake", js.Any.fromFunction1(value))
+    inline def setCallFake(value: js.Function => Spy): Self = StObject.set(x, "callFake", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCallThrough(value: () => Spy): Self = StObject.set(x, "callThrough", js.Any.fromFunction0(value))
+    inline def setCallThrough(value: () => Spy): Self = StObject.set(x, "callThrough", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReturnValue(value: js.Any => Spy): Self = StObject.set(x, "returnValue", js.Any.fromFunction1(value))
+    inline def setReturnValue(value: js.Any => Spy): Self = StObject.set(x, "returnValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReturnValues(value: /* repeated */ js.Any => Spy): Self = StObject.set(x, "returnValues", js.Any.fromFunction1(value))
+    inline def setReturnValues(value: /* repeated */ js.Any => Spy): Self = StObject.set(x, "returnValues", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStub(value: () => Spy): Self = StObject.set(x, "stub", js.Any.fromFunction0(value))
+    inline def setStub(value: () => Spy): Self = StObject.set(x, "stub", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setThrowError(value: String => Spy): Self = StObject.set(x, "throwError", js.Any.fromFunction1(value))
+    inline def setThrowError(value: String => Spy): Self = StObject.set(x, "throwError", js.Any.fromFunction1(value))
   }
 }

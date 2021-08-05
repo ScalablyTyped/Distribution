@@ -13,19 +13,15 @@ trait DeleteDeviceResponse extends StObject {
 }
 object DeleteDeviceResponse {
   
-  @scala.inline
-  def apply(): DeleteDeviceResponse = {
+  inline def apply(): DeleteDeviceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteDeviceResponse]
   }
   
-  @scala.inline
-  implicit class DeleteDeviceResponseMutableBuilder[Self <: DeleteDeviceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDeviceResponse](x: Self) {
     
-    @scala.inline
-    def setDevice(value: Device): Self = StObject.set(x, "Device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: Device): Self = StObject.set(x, "Device", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceUndefined: Self = StObject.set(x, "Device", js.undefined)
+    inline def setDeviceUndefined: Self = StObject.set(x, "Device", js.undefined)
   }
 }

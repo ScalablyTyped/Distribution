@@ -85,104 +85,72 @@ object interactions {
   }
   object IAbstract {
     
-    @scala.inline
-    def apply(): IAbstract = {
+    inline def apply(): IAbstract = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IAbstract]
     }
     
-    @scala.inline
-    implicit class IAbstractMutableBuilder[Self <: IAbstract] (val x: Self) extends AnyVal {
+    extension [Self <: IAbstract](x: Self) {
       
-      @scala.inline
-      def setChart(value: IAbstractChart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
+      inline def setChart(value: IAbstractChart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChartUndefined: Self = StObject.set(x, "chart", js.undefined)
+      inline def setChartUndefined: Self = StObject.set(x, "chart", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setGesture(value: String): Self = StObject.set(x, "gesture", value.asInstanceOf[js.Any])
+      inline def setGesture(value: String): Self = StObject.set(x, "gesture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGestureUndefined: Self = StObject.set(x, "gesture", js.undefined)
+      inline def setGestureUndefined: Self = StObject.set(x, "gesture", js.undefined)
       
-      @scala.inline
-      def setGetChart(value: () => IAbstractChart): Self = StObject.set(x, "getChart", js.Any.fromFunction0(value))
+      inline def setGetChart(value: () => IAbstractChart): Self = StObject.set(x, "getChart", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetChartUndefined: Self = StObject.set(x, "getChart", js.undefined)
+      inline def setGetChartUndefined: Self = StObject.set(x, "getChart", js.undefined)
       
-      @scala.inline
-      def setGetEnabled(value: () => Boolean): Self = StObject.set(x, "getEnabled", js.Any.fromFunction0(value))
+      inline def setGetEnabled(value: () => Boolean): Self = StObject.set(x, "getEnabled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetEnabledUndefined: Self = StObject.set(x, "getEnabled", js.undefined)
+      inline def setGetEnabledUndefined: Self = StObject.set(x, "getEnabled", js.undefined)
       
-      @scala.inline
-      def setGetGesture(value: () => String): Self = StObject.set(x, "getGesture", js.Any.fromFunction0(value))
+      inline def setGetGesture(value: () => String): Self = StObject.set(x, "getGesture", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetGestureUndefined: Self = StObject.set(x, "getGesture", js.undefined)
+      inline def setGetGestureUndefined: Self = StObject.set(x, "getGesture", js.undefined)
       
-      @scala.inline
-      def setGetItemForEvent(value: /* e */ js.UndefOr[Event] => js.Any): Self = StObject.set(x, "getItemForEvent", js.Any.fromFunction1(value))
+      inline def setGetItemForEvent(value: /* e */ js.UndefOr[Event] => js.Any): Self = StObject.set(x, "getItemForEvent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetItemForEventUndefined: Self = StObject.set(x, "getItemForEvent", js.undefined)
+      inline def setGetItemForEventUndefined: Self = StObject.set(x, "getItemForEvent", js.undefined)
       
-      @scala.inline
-      def setGetItemsForEvent(value: /* e */ js.UndefOr[Event] => Array): Self = StObject.set(x, "getItemsForEvent", js.Any.fromFunction1(value))
+      inline def setGetItemsForEvent(value: /* e */ js.UndefOr[Event] => Array): Self = StObject.set(x, "getItemsForEvent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetItemsForEventUndefined: Self = StObject.set(x, "getItemsForEvent", js.undefined)
+      inline def setGetItemsForEventUndefined: Self = StObject.set(x, "getItemsForEvent", js.undefined)
       
-      @scala.inline
-      def setInitialize(value: () => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction0(value))
+      inline def setInitialize(value: () => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInitializeUndefined: Self = StObject.set(x, "initialize", js.undefined)
+      inline def setInitializeUndefined: Self = StObject.set(x, "initialize", js.undefined)
       
-      @scala.inline
-      def setOnGesture(value: () => Unit): Self = StObject.set(x, "onGesture", js.Any.fromFunction0(value))
+      inline def setOnGesture(value: () => Unit): Self = StObject.set(x, "onGesture", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnGestureUndefined: Self = StObject.set(x, "onGesture", js.undefined)
+      inline def setOnGestureUndefined: Self = StObject.set(x, "onGesture", js.undefined)
       
-      @scala.inline
-      def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
+      inline def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
+      inline def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
       
-      @scala.inline
-      def setSetChart(value: /* chart */ js.UndefOr[IAbstractChart] => Unit): Self = StObject.set(x, "setChart", js.Any.fromFunction1(value))
+      inline def setSetChart(value: /* chart */ js.UndefOr[IAbstractChart] => Unit): Self = StObject.set(x, "setChart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetChartUndefined: Self = StObject.set(x, "setChart", js.undefined)
+      inline def setSetChartUndefined: Self = StObject.set(x, "setChart", js.undefined)
       
-      @scala.inline
-      def setSetEnabled(value: /* enabled */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setEnabled", js.Any.fromFunction1(value))
+      inline def setSetEnabled(value: /* enabled */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setEnabled", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetEnabledUndefined: Self = StObject.set(x, "setEnabled", js.undefined)
+      inline def setSetEnabledUndefined: Self = StObject.set(x, "setEnabled", js.undefined)
       
-      @scala.inline
-      def setSetGesture(value: /* gesture */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setGesture", js.Any.fromFunction1(value))
+      inline def setSetGesture(value: /* gesture */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setGesture", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetGestureUndefined: Self = StObject.set(x, "setGesture", js.undefined)
+      inline def setSetGestureUndefined: Self = StObject.set(x, "setGesture", js.undefined)
       
-      @scala.inline
-      def setThrottleGap(value: Double): Self = StObject.set(x, "throttleGap", value.asInstanceOf[js.Any])
+      inline def setThrottleGap(value: Double): Self = StObject.set(x, "throttleGap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrottleGapUndefined: Self = StObject.set(x, "throttleGap", js.undefined)
+      inline def setThrottleGapUndefined: Self = StObject.set(x, "throttleGap", js.undefined)
     }
   }
   
@@ -221,50 +189,36 @@ object interactions {
   }
   object ICrossZoom {
     
-    @scala.inline
-    def apply(): ICrossZoom = {
+    inline def apply(): ICrossZoom = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICrossZoom]
     }
     
-    @scala.inline
-    implicit class ICrossZoomMutableBuilder[Self <: ICrossZoom] (val x: Self) extends AnyVal {
+    extension [Self <: ICrossZoom](x: Self) {
       
-      @scala.inline
-      def setAxes(value: js.Any): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
+      inline def setAxes(value: js.Any): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
+      inline def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
       
-      @scala.inline
-      def setGetAxes(value: () => js.Any): Self = StObject.set(x, "getAxes", js.Any.fromFunction0(value))
+      inline def setGetAxes(value: () => js.Any): Self = StObject.set(x, "getAxes", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAxesUndefined: Self = StObject.set(x, "getAxes", js.undefined)
+      inline def setGetAxesUndefined: Self = StObject.set(x, "getAxes", js.undefined)
       
-      @scala.inline
-      def setGetUndoButton(value: () => js.Any): Self = StObject.set(x, "getUndoButton", js.Any.fromFunction0(value))
+      inline def setGetUndoButton(value: () => js.Any): Self = StObject.set(x, "getUndoButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetUndoButtonUndefined: Self = StObject.set(x, "getUndoButton", js.undefined)
+      inline def setGetUndoButtonUndefined: Self = StObject.set(x, "getUndoButton", js.undefined)
       
-      @scala.inline
-      def setOnGesture(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onGesture", js.Any.fromFunction1(value))
+      inline def setOnGesture(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onGesture", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnGestureUndefined: Self = StObject.set(x, "onGesture", js.undefined)
+      inline def setOnGestureUndefined: Self = StObject.set(x, "onGesture", js.undefined)
       
-      @scala.inline
-      def setSetAxes(value: /* axes */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setAxes", js.Any.fromFunction1(value))
+      inline def setSetAxes(value: /* axes */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setAxes", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetAxesUndefined: Self = StObject.set(x, "setAxes", js.undefined)
+      inline def setSetAxesUndefined: Self = StObject.set(x, "setAxes", js.undefined)
       
-      @scala.inline
-      def setSetUndoButton(value: /* undoButton */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setUndoButton", js.Any.fromFunction1(value))
+      inline def setSetUndoButton(value: /* undoButton */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setUndoButton", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetUndoButtonUndefined: Self = StObject.set(x, "setUndoButton", js.undefined)
+      inline def setSetUndoButtonUndefined: Self = StObject.set(x, "setUndoButton", js.undefined)
     }
   }
   
@@ -306,56 +260,40 @@ object interactions {
   }
   object ICrosshair {
     
-    @scala.inline
-    def apply(): ICrosshair = {
+    inline def apply(): ICrosshair = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICrosshair]
     }
     
-    @scala.inline
-    implicit class ICrosshairMutableBuilder[Self <: ICrosshair] (val x: Self) extends AnyVal {
+    extension [Self <: ICrosshair](x: Self) {
       
-      @scala.inline
-      def setAxes(value: js.Any): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
+      inline def setAxes(value: js.Any): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
+      inline def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
       
-      @scala.inline
-      def setGetAxes(value: () => js.Any): Self = StObject.set(x, "getAxes", js.Any.fromFunction0(value))
+      inline def setGetAxes(value: () => js.Any): Self = StObject.set(x, "getAxes", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAxesUndefined: Self = StObject.set(x, "getAxes", js.undefined)
+      inline def setGetAxesUndefined: Self = StObject.set(x, "getAxes", js.undefined)
       
-      @scala.inline
-      def setGetLines(value: () => js.Any): Self = StObject.set(x, "getLines", js.Any.fromFunction0(value))
+      inline def setGetLines(value: () => js.Any): Self = StObject.set(x, "getLines", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLinesUndefined: Self = StObject.set(x, "getLines", js.undefined)
+      inline def setGetLinesUndefined: Self = StObject.set(x, "getLines", js.undefined)
       
-      @scala.inline
-      def setLines(value: js.Any): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+      inline def setLines(value: js.Any): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
+      inline def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
       
-      @scala.inline
-      def setOnGesture(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onGesture", js.Any.fromFunction1(value))
+      inline def setOnGesture(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onGesture", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnGestureUndefined: Self = StObject.set(x, "onGesture", js.undefined)
+      inline def setOnGestureUndefined: Self = StObject.set(x, "onGesture", js.undefined)
       
-      @scala.inline
-      def setSetAxes(value: /* axes */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setAxes", js.Any.fromFunction1(value))
+      inline def setSetAxes(value: /* axes */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setAxes", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetAxesUndefined: Self = StObject.set(x, "setAxes", js.undefined)
+      inline def setSetAxesUndefined: Self = StObject.set(x, "setAxes", js.undefined)
       
-      @scala.inline
-      def setSetLines(value: /* lines */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setLines", js.Any.fromFunction1(value))
+      inline def setSetLines(value: /* lines */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setLines", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetLinesUndefined: Self = StObject.set(x, "setLines", js.undefined)
+      inline def setSetLinesUndefined: Self = StObject.set(x, "setLines", js.undefined)
     }
   }
   
@@ -380,22 +318,18 @@ object interactions {
   }
   object IItemHighlight {
     
-    @scala.inline
-    def apply(): IItemHighlight = {
+    inline def apply(): IItemHighlight = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IItemHighlight]
     }
     
-    @scala.inline
-    implicit class IItemHighlightMutableBuilder[Self <: IItemHighlight] (val x: Self) extends AnyVal {
+    extension [Self <: IItemHighlight](x: Self) {
       
-      @scala.inline
-      def setOnGesture(
+      inline def setOnGesture(
         value: (/* series */ js.UndefOr[js.Any], /* item */ js.UndefOr[js.Any], /* e */ js.UndefOr[js.Any]) => Unit
       ): Self = StObject.set(x, "onGesture", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnGestureUndefined: Self = StObject.set(x, "onGesture", js.undefined)
+      inline def setOnGestureUndefined: Self = StObject.set(x, "onGesture", js.undefined)
     }
   }
   
@@ -427,38 +361,28 @@ object interactions {
   }
   object IItemInfo {
     
-    @scala.inline
-    def apply(): IItemInfo = {
+    inline def apply(): IItemInfo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IItemInfo]
     }
     
-    @scala.inline
-    implicit class IItemInfoMutableBuilder[Self <: IItemInfo] (val x: Self) extends AnyVal {
+    extension [Self <: IItemInfo](x: Self) {
       
-      @scala.inline
-      def setGetPanel(value: () => js.Any): Self = StObject.set(x, "getPanel", js.Any.fromFunction0(value))
+      inline def setGetPanel(value: () => js.Any): Self = StObject.set(x, "getPanel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPanelUndefined: Self = StObject.set(x, "getPanel", js.undefined)
+      inline def setGetPanelUndefined: Self = StObject.set(x, "getPanel", js.undefined)
       
-      @scala.inline
-      def setOnGesture(value: (/* series */ js.UndefOr[js.Any], /* item */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "onGesture", js.Any.fromFunction2(value))
+      inline def setOnGesture(value: (/* series */ js.UndefOr[js.Any], /* item */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "onGesture", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnGestureUndefined: Self = StObject.set(x, "onGesture", js.undefined)
+      inline def setOnGestureUndefined: Self = StObject.set(x, "onGesture", js.undefined)
       
-      @scala.inline
-      def setPanel(value: js.Any): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
+      inline def setPanel(value: js.Any): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanelUndefined: Self = StObject.set(x, "panel", js.undefined)
+      inline def setPanelUndefined: Self = StObject.set(x, "panel", js.undefined)
       
-      @scala.inline
-      def setSetPanel(value: /* panel */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setPanel", js.Any.fromFunction1(value))
+      inline def setSetPanel(value: /* panel */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setPanel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetPanelUndefined: Self = StObject.set(x, "setPanel", js.undefined)
+      inline def setSetPanelUndefined: Self = StObject.set(x, "setPanel", js.undefined)
     }
   }
   
@@ -563,134 +487,92 @@ object interactions {
   }
   object IPanZoom {
     
-    @scala.inline
-    def apply(): IPanZoom = {
+    inline def apply(): IPanZoom = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IPanZoom]
     }
     
-    @scala.inline
-    implicit class IPanZoomMutableBuilder[Self <: IPanZoom] (val x: Self) extends AnyVal {
+    extension [Self <: IPanZoom](x: Self) {
       
-      @scala.inline
-      def setAxes(value: js.Any): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
+      inline def setAxes(value: js.Any): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
+      inline def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
       
-      @scala.inline
-      def setGetAxes(value: () => js.Any): Self = StObject.set(x, "getAxes", js.Any.fromFunction0(value))
+      inline def setGetAxes(value: () => js.Any): Self = StObject.set(x, "getAxes", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAxesUndefined: Self = StObject.set(x, "getAxes", js.undefined)
+      inline def setGetAxesUndefined: Self = StObject.set(x, "getAxes", js.undefined)
       
-      @scala.inline
-      def setGetHideLabelInGesture(value: () => Boolean): Self = StObject.set(x, "getHideLabelInGesture", js.Any.fromFunction0(value))
+      inline def setGetHideLabelInGesture(value: () => Boolean): Self = StObject.set(x, "getHideLabelInGesture", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetHideLabelInGestureUndefined: Self = StObject.set(x, "getHideLabelInGesture", js.undefined)
+      inline def setGetHideLabelInGestureUndefined: Self = StObject.set(x, "getHideLabelInGesture", js.undefined)
       
-      @scala.inline
-      def setGetMaxZoom(value: () => js.Any): Self = StObject.set(x, "getMaxZoom", js.Any.fromFunction0(value))
+      inline def setGetMaxZoom(value: () => js.Any): Self = StObject.set(x, "getMaxZoom", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMaxZoomUndefined: Self = StObject.set(x, "getMaxZoom", js.undefined)
+      inline def setGetMaxZoomUndefined: Self = StObject.set(x, "getMaxZoom", js.undefined)
       
-      @scala.inline
-      def setGetMinZoom(value: () => js.Any): Self = StObject.set(x, "getMinZoom", js.Any.fromFunction0(value))
+      inline def setGetMinZoom(value: () => js.Any): Self = StObject.set(x, "getMinZoom", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMinZoomUndefined: Self = StObject.set(x, "getMinZoom", js.undefined)
+      inline def setGetMinZoomUndefined: Self = StObject.set(x, "getMinZoom", js.undefined)
       
-      @scala.inline
-      def setGetModeToggleButton(value: () => js.Any): Self = StObject.set(x, "getModeToggleButton", js.Any.fromFunction0(value))
+      inline def setGetModeToggleButton(value: () => js.Any): Self = StObject.set(x, "getModeToggleButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetModeToggleButtonUndefined: Self = StObject.set(x, "getModeToggleButton", js.undefined)
+      inline def setGetModeToggleButtonUndefined: Self = StObject.set(x, "getModeToggleButton", js.undefined)
       
-      @scala.inline
-      def setGetPanGesture(value: () => String): Self = StObject.set(x, "getPanGesture", js.Any.fromFunction0(value))
+      inline def setGetPanGesture(value: () => String): Self = StObject.set(x, "getPanGesture", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPanGestureUndefined: Self = StObject.set(x, "getPanGesture", js.undefined)
+      inline def setGetPanGestureUndefined: Self = StObject.set(x, "getPanGesture", js.undefined)
       
-      @scala.inline
-      def setGetShowOverflowArrows(value: () => Boolean): Self = StObject.set(x, "getShowOverflowArrows", js.Any.fromFunction0(value))
+      inline def setGetShowOverflowArrows(value: () => Boolean): Self = StObject.set(x, "getShowOverflowArrows", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetShowOverflowArrowsUndefined: Self = StObject.set(x, "getShowOverflowArrows", js.undefined)
+      inline def setGetShowOverflowArrowsUndefined: Self = StObject.set(x, "getShowOverflowArrows", js.undefined)
       
-      @scala.inline
-      def setGetZoomOnPanGesture(value: () => Boolean): Self = StObject.set(x, "getZoomOnPanGesture", js.Any.fromFunction0(value))
+      inline def setGetZoomOnPanGesture(value: () => Boolean): Self = StObject.set(x, "getZoomOnPanGesture", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetZoomOnPanGestureUndefined: Self = StObject.set(x, "getZoomOnPanGesture", js.undefined)
+      inline def setGetZoomOnPanGestureUndefined: Self = StObject.set(x, "getZoomOnPanGesture", js.undefined)
       
-      @scala.inline
-      def setOnGesture(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onGesture", js.Any.fromFunction1(value))
+      inline def setOnGesture(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onGesture", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnGestureUndefined: Self = StObject.set(x, "onGesture", js.undefined)
+      inline def setOnGestureUndefined: Self = StObject.set(x, "onGesture", js.undefined)
       
-      @scala.inline
-      def setOverflowArrowOptions(value: js.Any): Self = StObject.set(x, "overflowArrowOptions", value.asInstanceOf[js.Any])
+      inline def setOverflowArrowOptions(value: js.Any): Self = StObject.set(x, "overflowArrowOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflowArrowOptionsUndefined: Self = StObject.set(x, "overflowArrowOptions", js.undefined)
+      inline def setOverflowArrowOptionsUndefined: Self = StObject.set(x, "overflowArrowOptions", js.undefined)
       
-      @scala.inline
-      def setSetAxes(value: /* axes */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setAxes", js.Any.fromFunction1(value))
+      inline def setSetAxes(value: /* axes */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setAxes", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetAxesUndefined: Self = StObject.set(x, "setAxes", js.undefined)
+      inline def setSetAxesUndefined: Self = StObject.set(x, "setAxes", js.undefined)
       
-      @scala.inline
-      def setSetHideLabelInGesture(value: /* hideLabelInGesture */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setHideLabelInGesture", js.Any.fromFunction1(value))
+      inline def setSetHideLabelInGesture(value: /* hideLabelInGesture */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setHideLabelInGesture", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetHideLabelInGestureUndefined: Self = StObject.set(x, "setHideLabelInGesture", js.undefined)
+      inline def setSetHideLabelInGestureUndefined: Self = StObject.set(x, "setHideLabelInGesture", js.undefined)
       
-      @scala.inline
-      def setSetMaxZoom(value: /* maxZoom */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setMaxZoom", js.Any.fromFunction1(value))
+      inline def setSetMaxZoom(value: /* maxZoom */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setMaxZoom", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetMaxZoomUndefined: Self = StObject.set(x, "setMaxZoom", js.undefined)
+      inline def setSetMaxZoomUndefined: Self = StObject.set(x, "setMaxZoom", js.undefined)
       
-      @scala.inline
-      def setSetMinZoom(value: /* minZoom */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setMinZoom", js.Any.fromFunction1(value))
+      inline def setSetMinZoom(value: /* minZoom */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setMinZoom", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetMinZoomUndefined: Self = StObject.set(x, "setMinZoom", js.undefined)
+      inline def setSetMinZoomUndefined: Self = StObject.set(x, "setMinZoom", js.undefined)
       
-      @scala.inline
-      def setSetModeToggleButton(value: /* modeToggleButton */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setModeToggleButton", js.Any.fromFunction1(value))
+      inline def setSetModeToggleButton(value: /* modeToggleButton */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setModeToggleButton", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetModeToggleButtonUndefined: Self = StObject.set(x, "setModeToggleButton", js.undefined)
+      inline def setSetModeToggleButtonUndefined: Self = StObject.set(x, "setModeToggleButton", js.undefined)
       
-      @scala.inline
-      def setSetPanGesture(value: /* panGesture */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setPanGesture", js.Any.fromFunction1(value))
+      inline def setSetPanGesture(value: /* panGesture */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setPanGesture", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetPanGestureUndefined: Self = StObject.set(x, "setPanGesture", js.undefined)
+      inline def setSetPanGestureUndefined: Self = StObject.set(x, "setPanGesture", js.undefined)
       
-      @scala.inline
-      def setSetShowOverflowArrows(value: /* showOverflowArrows */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setShowOverflowArrows", js.Any.fromFunction1(value))
+      inline def setSetShowOverflowArrows(value: /* showOverflowArrows */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setShowOverflowArrows", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetShowOverflowArrowsUndefined: Self = StObject.set(x, "setShowOverflowArrows", js.undefined)
+      inline def setSetShowOverflowArrowsUndefined: Self = StObject.set(x, "setShowOverflowArrows", js.undefined)
       
-      @scala.inline
-      def setSetZoomOnPanGesture(value: /* zoomOnPanGesture */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setZoomOnPanGesture", js.Any.fromFunction1(value))
+      inline def setSetZoomOnPanGesture(value: /* zoomOnPanGesture */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setZoomOnPanGesture", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetZoomOnPanGestureUndefined: Self = StObject.set(x, "setZoomOnPanGesture", js.undefined)
+      inline def setSetZoomOnPanGestureUndefined: Self = StObject.set(x, "setZoomOnPanGesture", js.undefined)
       
-      @scala.inline
-      def setShowOverflowArrows(value: Boolean): Self = StObject.set(x, "showOverflowArrows", value.asInstanceOf[js.Any])
+      inline def setShowOverflowArrows(value: Boolean): Self = StObject.set(x, "showOverflowArrows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowOverflowArrowsUndefined: Self = StObject.set(x, "showOverflowArrows", js.undefined)
+      inline def setShowOverflowArrowsUndefined: Self = StObject.set(x, "showOverflowArrows", js.undefined)
     }
   }
   
@@ -706,20 +588,16 @@ object interactions {
   }
   object IRotate {
     
-    @scala.inline
-    def apply(): IRotate = {
+    inline def apply(): IRotate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IRotate]
     }
     
-    @scala.inline
-    implicit class IRotateMutableBuilder[Self <: IRotate] (val x: Self) extends AnyVal {
+    extension [Self <: IRotate](x: Self) {
       
-      @scala.inline
-      def setOnGesture(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onGesture", js.Any.fromFunction1(value))
+      inline def setOnGesture(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onGesture", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnGestureUndefined: Self = StObject.set(x, "onGesture", js.undefined)
+      inline def setOnGestureUndefined: Self = StObject.set(x, "onGesture", js.undefined)
     }
   }
   

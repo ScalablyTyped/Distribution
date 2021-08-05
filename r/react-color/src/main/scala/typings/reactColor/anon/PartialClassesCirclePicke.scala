@@ -11,19 +11,15 @@ trait PartialClassesCirclePicke extends StObject {
 }
 object PartialClassesCirclePicke {
   
-  @scala.inline
-  def apply(): PartialClassesCirclePicke = {
+  inline def apply(): PartialClassesCirclePicke = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassesCirclePicke]
   }
   
-  @scala.inline
-  implicit class PartialClassesCirclePickeMutableBuilder[Self <: PartialClassesCirclePicke] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassesCirclePicke](x: Self) {
     
-    @scala.inline
-    def setDefault(value: PartialCirclePickerStyles): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: PartialCirclePickerStyles): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
   }
 }

@@ -18,28 +18,21 @@ trait ListActivatedRulesInRuleGroupResponse extends StObject {
 }
 object ListActivatedRulesInRuleGroupResponse {
   
-  @scala.inline
-  def apply(): ListActivatedRulesInRuleGroupResponse = {
+  inline def apply(): ListActivatedRulesInRuleGroupResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListActivatedRulesInRuleGroupResponse]
   }
   
-  @scala.inline
-  implicit class ListActivatedRulesInRuleGroupResponseMutableBuilder[Self <: ListActivatedRulesInRuleGroupResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListActivatedRulesInRuleGroupResponse](x: Self) {
     
-    @scala.inline
-    def setActivatedRules(value: ActivatedRules): Self = StObject.set(x, "ActivatedRules", value.asInstanceOf[js.Any])
+    inline def setActivatedRules(value: ActivatedRules): Self = StObject.set(x, "ActivatedRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivatedRulesUndefined: Self = StObject.set(x, "ActivatedRules", js.undefined)
+    inline def setActivatedRulesUndefined: Self = StObject.set(x, "ActivatedRules", js.undefined)
     
-    @scala.inline
-    def setActivatedRulesVarargs(value: ActivatedRule*): Self = StObject.set(x, "ActivatedRules", js.Array(value :_*))
+    inline def setActivatedRulesVarargs(value: ActivatedRule*): Self = StObject.set(x, "ActivatedRules", js.Array(value :_*))
     
-    @scala.inline
-    def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
+    inline def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
+    inline def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
   }
 }

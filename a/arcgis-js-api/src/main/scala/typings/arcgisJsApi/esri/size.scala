@@ -41,8 +41,7 @@ trait size extends StObject {
 }
 object size {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createAgeRenderer: sizeCreateAgeRendererParams => js.Promise[sizeAgeRendererResult],
     createClassBreaksRenderer: sizeCreateClassBreaksRendererParams => js.Promise[sizeClassBreaksRendererResult],
     createContinuousRenderer: sizeCreateContinuousRendererParams => js.Promise[sizeContinuousRendererResult],
@@ -52,19 +51,14 @@ object size {
     __obj.asInstanceOf[size]
   }
   
-  @scala.inline
-  implicit class sizeMutableBuilder[Self <: size] (val x: Self) extends AnyVal {
+  extension [Self <: size](x: Self) {
     
-    @scala.inline
-    def setCreateAgeRenderer(value: sizeCreateAgeRendererParams => js.Promise[sizeAgeRendererResult]): Self = StObject.set(x, "createAgeRenderer", js.Any.fromFunction1(value))
+    inline def setCreateAgeRenderer(value: sizeCreateAgeRendererParams => js.Promise[sizeAgeRendererResult]): Self = StObject.set(x, "createAgeRenderer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateClassBreaksRenderer(value: sizeCreateClassBreaksRendererParams => js.Promise[sizeClassBreaksRendererResult]): Self = StObject.set(x, "createClassBreaksRenderer", js.Any.fromFunction1(value))
+    inline def setCreateClassBreaksRenderer(value: sizeCreateClassBreaksRendererParams => js.Promise[sizeClassBreaksRendererResult]): Self = StObject.set(x, "createClassBreaksRenderer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateContinuousRenderer(value: sizeCreateContinuousRendererParams => js.Promise[sizeContinuousRendererResult]): Self = StObject.set(x, "createContinuousRenderer", js.Any.fromFunction1(value))
+    inline def setCreateContinuousRenderer(value: sizeCreateContinuousRendererParams => js.Promise[sizeContinuousRendererResult]): Self = StObject.set(x, "createContinuousRenderer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateVisualVariables(value: sizeCreateVisualVariablesParams => js.Promise[sizeVisualVariableResult]): Self = StObject.set(x, "createVisualVariables", js.Any.fromFunction1(value))
+    inline def setCreateVisualVariables(value: sizeCreateVisualVariablesParams => js.Promise[sizeVisualVariableResult]): Self = StObject.set(x, "createVisualVariables", js.Any.fromFunction1(value))
   }
 }

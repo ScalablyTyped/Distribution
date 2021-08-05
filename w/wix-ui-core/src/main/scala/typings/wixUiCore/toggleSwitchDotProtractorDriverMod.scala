@@ -25,8 +25,7 @@ object toggleSwitchDotProtractorDriverMod {
   }
   object ToggleSwitchDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       checked: () => js.Promise[Boolean],
       click: () => js.Promise[Unit],
       element: () => ElementFinder,
@@ -36,17 +35,13 @@ object toggleSwitchDotProtractorDriverMod {
       __obj.asInstanceOf[ToggleSwitchDriver]
     }
     
-    @scala.inline
-    implicit class ToggleSwitchDriverMutableBuilder[Self <: ToggleSwitchDriver] (val x: Self) extends AnyVal {
+    extension [Self <: ToggleSwitchDriver](x: Self) {
       
-      @scala.inline
-      def setChecked(value: () => js.Promise[Boolean]): Self = StObject.set(x, "checked", js.Any.fromFunction0(value))
+      inline def setChecked(value: () => js.Promise[Boolean]): Self = StObject.set(x, "checked", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClick(value: () => js.Promise[Unit]): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
+      inline def setClick(value: () => js.Promise[Unit]): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
+      inline def setIsDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
     }
   }
 }

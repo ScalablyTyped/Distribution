@@ -55,37 +55,27 @@ trait SchemaEventTrigger extends StObject {
 }
 object SchemaEventTrigger {
   
-  @scala.inline
-  def apply(): SchemaEventTrigger = {
+  inline def apply(): SchemaEventTrigger = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEventTrigger]
   }
   
-  @scala.inline
-  implicit class SchemaEventTriggerMutableBuilder[Self <: SchemaEventTrigger] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaEventTrigger](x: Self) {
     
-    @scala.inline
-    def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
+    inline def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTypeUndefined: Self = StObject.set(x, "eventType", js.undefined)
+    inline def setEventTypeUndefined: Self = StObject.set(x, "eventType", js.undefined)
     
-    @scala.inline
-    def setFailurePolicy(value: SchemaFailurePolicy): Self = StObject.set(x, "failurePolicy", value.asInstanceOf[js.Any])
+    inline def setFailurePolicy(value: SchemaFailurePolicy): Self = StObject.set(x, "failurePolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailurePolicyUndefined: Self = StObject.set(x, "failurePolicy", js.undefined)
+    inline def setFailurePolicyUndefined: Self = StObject.set(x, "failurePolicy", js.undefined)
     
-    @scala.inline
-    def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
-    @scala.inline
-    def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+    inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
   }
 }

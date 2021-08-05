@@ -27,8 +27,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def attachTo(root: HTMLElement): typings.materialFormField.componentMod.MDCFormField = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialFormField.componentMod.MDCFormField]
+    inline def attachTo(root: HTMLElement): typings.materialFormField.componentMod.MDCFormField = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialFormField.componentMod.MDCFormField]
   }
   
   @JSImport("@material/form-field", "MDCFormFieldFoundation")
@@ -47,8 +46,7 @@ object mod {
     @JSImport("@material/form-field", "cssClasses.ROOT")
     @js.native
     def ROOT: String = js.native
-    @scala.inline
-    def ROOT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT")(x.asInstanceOf[js.Any])
+    inline def ROOT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT")(x.asInstanceOf[js.Any])
   }
   
   object strings {
@@ -60,7 +58,6 @@ object mod {
     @JSImport("@material/form-field", "strings.LABEL_SELECTOR")
     @js.native
     def LABEL_SELECTOR: String = js.native
-    @scala.inline
-    def LABEL_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LABEL_SELECTOR")(x.asInstanceOf[js.Any])
+    inline def LABEL_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LABEL_SELECTOR")(x.asInstanceOf[js.Any])
   }
 }

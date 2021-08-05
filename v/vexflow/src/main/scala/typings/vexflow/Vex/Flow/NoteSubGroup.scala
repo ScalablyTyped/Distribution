@@ -14,8 +14,7 @@ trait NoteSubGroup
 }
 object NoteSubGroup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alignSubNotesWithNote: (js.Array[Note], Note) => Unit,
     draw: () => Unit,
     getCategory: () => String,
@@ -40,10 +39,8 @@ object NoteSubGroup {
     __obj.asInstanceOf[NoteSubGroup]
   }
   
-  @scala.inline
-  implicit class NoteSubGroupMutableBuilder[Self <: NoteSubGroup] (val x: Self) extends AnyVal {
+  extension [Self <: NoteSubGroup](x: Self) {
     
-    @scala.inline
-    def setPreFormat(value: () => Unit): Self = StObject.set(x, "preFormat", js.Any.fromFunction0(value))
+    inline def setPreFormat(value: () => Unit): Self = StObject.set(x, "preFormat", js.Any.fromFunction0(value))
   }
 }

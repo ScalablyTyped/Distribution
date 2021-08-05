@@ -20,20 +20,16 @@ object iFilterMod {
   }
   object IDoesFilterPassParams {
     
-    @scala.inline
-    def apply(data: js.Any, node: RowNode): IDoesFilterPassParams = {
+    inline def apply(data: js.Any, node: RowNode): IDoesFilterPassParams = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDoesFilterPassParams]
     }
     
-    @scala.inline
-    implicit class IDoesFilterPassParamsMutableBuilder[Self <: IDoesFilterPassParams] (val x: Self) extends AnyVal {
+    extension [Self <: IDoesFilterPassParams](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode(value: RowNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: RowNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     }
   }
   
@@ -87,8 +83,7 @@ object iFilterMod {
   }
   object IFilter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       doesFilterPass: IDoesFilterPassParams => Boolean,
       getModel: () => js.Any,
       isFilterActive: () => Boolean,
@@ -98,44 +93,31 @@ object iFilterMod {
       __obj.asInstanceOf[IFilter]
     }
     
-    @scala.inline
-    implicit class IFilterMutableBuilder[Self <: IFilter] (val x: Self) extends AnyVal {
+    extension [Self <: IFilter](x: Self) {
       
-      @scala.inline
-      def setDoesFilterPass(value: IDoesFilterPassParams => Boolean): Self = StObject.set(x, "doesFilterPass", js.Any.fromFunction1(value))
+      inline def setDoesFilterPass(value: IDoesFilterPassParams => Boolean): Self = StObject.set(x, "doesFilterPass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetFrameworkComponentInstance(value: () => js.Any): Self = StObject.set(x, "getFrameworkComponentInstance", js.Any.fromFunction0(value))
+      inline def setGetFrameworkComponentInstance(value: () => js.Any): Self = StObject.set(x, "getFrameworkComponentInstance", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFrameworkComponentInstanceUndefined: Self = StObject.set(x, "getFrameworkComponentInstance", js.undefined)
+      inline def setGetFrameworkComponentInstanceUndefined: Self = StObject.set(x, "getFrameworkComponentInstance", js.undefined)
       
-      @scala.inline
-      def setGetModel(value: () => js.Any): Self = StObject.set(x, "getModel", js.Any.fromFunction0(value))
+      inline def setGetModel(value: () => js.Any): Self = StObject.set(x, "getModel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetModelAsString(value: /* model */ js.Any => String): Self = StObject.set(x, "getModelAsString", js.Any.fromFunction1(value))
+      inline def setGetModelAsString(value: /* model */ js.Any => String): Self = StObject.set(x, "getModelAsString", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetModelAsStringUndefined: Self = StObject.set(x, "getModelAsString", js.undefined)
+      inline def setGetModelAsStringUndefined: Self = StObject.set(x, "getModelAsString", js.undefined)
       
-      @scala.inline
-      def setIsFilterActive(value: () => Boolean): Self = StObject.set(x, "isFilterActive", js.Any.fromFunction0(value))
+      inline def setIsFilterActive(value: () => Boolean): Self = StObject.set(x, "isFilterActive", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnFloatingFilterChanged(value: /* change */ js.Any => Unit): Self = StObject.set(x, "onFloatingFilterChanged", js.Any.fromFunction1(value))
+      inline def setOnFloatingFilterChanged(value: /* change */ js.Any => Unit): Self = StObject.set(x, "onFloatingFilterChanged", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFloatingFilterChangedUndefined: Self = StObject.set(x, "onFloatingFilterChanged", js.undefined)
+      inline def setOnFloatingFilterChangedUndefined: Self = StObject.set(x, "onFloatingFilterChanged", js.undefined)
       
-      @scala.inline
-      def setOnNewRowsLoaded(value: () => Unit): Self = StObject.set(x, "onNewRowsLoaded", js.Any.fromFunction0(value))
+      inline def setOnNewRowsLoaded(value: () => Unit): Self = StObject.set(x, "onNewRowsLoaded", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnNewRowsLoadedUndefined: Self = StObject.set(x, "onNewRowsLoaded", js.undefined)
+      inline def setOnNewRowsLoadedUndefined: Self = StObject.set(x, "onNewRowsLoaded", js.undefined)
       
-      @scala.inline
-      def setSetModel(value: js.Any => Unit): Self = StObject.set(x, "setModel", js.Any.fromFunction1(value))
+      inline def setSetModel(value: js.Any => Unit): Self = StObject.set(x, "setModel", js.Any.fromFunction1(value))
     }
   }
   
@@ -145,8 +127,7 @@ object iFilterMod {
        with IComponent[IFilterParams]
   object IFilterComp {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       doesFilterPass: IDoesFilterPassParams => Boolean,
       getGui: () => HTMLElement,
       getModel: () => js.Any,
@@ -193,8 +174,7 @@ object iFilterMod {
   }
   object IFilterParams {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       $scope: js.Any,
       colDef: ColDef,
       column: Column,
@@ -209,74 +189,51 @@ object iFilterMod {
       __obj.asInstanceOf[IFilterParams]
     }
     
-    @scala.inline
-    implicit class IFilterParamsMutableBuilder[Self <: IFilterParams] (val x: Self) extends AnyVal {
+    extension [Self <: IFilterParams](x: Self) {
       
-      @scala.inline
-      def set$scope(value: js.Any): Self = StObject.set(x, "$scope", value.asInstanceOf[js.Any])
+      inline def set$scope(value: js.Any): Self = StObject.set(x, "$scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplyButton(value: Boolean): Self = StObject.set(x, "applyButton", value.asInstanceOf[js.Any])
+      inline def setApplyButton(value: Boolean): Self = StObject.set(x, "applyButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplyButtonUndefined: Self = StObject.set(x, "applyButton", js.undefined)
+      inline def setApplyButtonUndefined: Self = StObject.set(x, "applyButton", js.undefined)
       
-      @scala.inline
-      def setClearButton(value: Boolean): Self = StObject.set(x, "clearButton", value.asInstanceOf[js.Any])
+      inline def setClearButton(value: Boolean): Self = StObject.set(x, "clearButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearButtonUndefined: Self = StObject.set(x, "clearButton", js.undefined)
+      inline def setClearButtonUndefined: Self = StObject.set(x, "clearButton", js.undefined)
       
-      @scala.inline
-      def setColDef(value: ColDef): Self = StObject.set(x, "colDef", value.asInstanceOf[js.Any])
+      inline def setColDef(value: ColDef): Self = StObject.set(x, "colDef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumn(value: Column): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Column): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultOption(value: String): Self = StObject.set(x, "defaultOption", value.asInstanceOf[js.Any])
+      inline def setDefaultOption(value: String): Self = StObject.set(x, "defaultOption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultOptionUndefined: Self = StObject.set(x, "defaultOption", js.undefined)
+      inline def setDefaultOptionUndefined: Self = StObject.set(x, "defaultOption", js.undefined)
       
-      @scala.inline
-      def setDoesRowPassOtherFilter(value: RowNode => Boolean): Self = StObject.set(x, "doesRowPassOtherFilter", js.Any.fromFunction1(value))
+      inline def setDoesRowPassOtherFilter(value: RowNode => Boolean): Self = StObject.set(x, "doesRowPassOtherFilter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilterChangedCallback(value: () => Unit): Self = StObject.set(x, "filterChangedCallback", js.Any.fromFunction0(value))
+      inline def setFilterChangedCallback(value: () => Unit): Self = StObject.set(x, "filterChangedCallback", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFilterModifiedCallback(value: () => Unit): Self = StObject.set(x, "filterModifiedCallback", js.Any.fromFunction0(value))
+      inline def setFilterModifiedCallback(value: () => Unit): Self = StObject.set(x, "filterModifiedCallback", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFilterOptions(value: js.Array[String]): Self = StObject.set(x, "filterOptions", value.asInstanceOf[js.Any])
+      inline def setFilterOptions(value: js.Array[String]): Self = StObject.set(x, "filterOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterOptionsUndefined: Self = StObject.set(x, "filterOptions", js.undefined)
+      inline def setFilterOptionsUndefined: Self = StObject.set(x, "filterOptions", js.undefined)
       
-      @scala.inline
-      def setFilterOptionsVarargs(value: String*): Self = StObject.set(x, "filterOptions", js.Array(value :_*))
+      inline def setFilterOptionsVarargs(value: String*): Self = StObject.set(x, "filterOptions", js.Array(value :_*))
       
-      @scala.inline
-      def setNewRowsAction(value: String): Self = StObject.set(x, "newRowsAction", value.asInstanceOf[js.Any])
+      inline def setNewRowsAction(value: String): Self = StObject.set(x, "newRowsAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewRowsActionUndefined: Self = StObject.set(x, "newRowsAction", js.undefined)
+      inline def setNewRowsActionUndefined: Self = StObject.set(x, "newRowsAction", js.undefined)
       
-      @scala.inline
-      def setRowModel(value: IRowModel): Self = StObject.set(x, "rowModel", value.asInstanceOf[js.Any])
+      inline def setRowModel(value: IRowModel): Self = StObject.set(x, "rowModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextFormatter(value: /* from */ String => String): Self = StObject.set(x, "textFormatter", js.Any.fromFunction1(value))
+      inline def setTextFormatter(value: /* from */ String => String): Self = StObject.set(x, "textFormatter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTextFormatterUndefined: Self = StObject.set(x, "textFormatter", js.undefined)
+      inline def setTextFormatterUndefined: Self = StObject.set(x, "textFormatter", js.undefined)
       
-      @scala.inline
-      def setValueGetter(value: RowNode => js.Any): Self = StObject.set(x, "valueGetter", js.Any.fromFunction1(value))
+      inline def setValueGetter(value: RowNode => js.Any): Self = StObject.set(x, "valueGetter", js.Any.fromFunction1(value))
     }
   }
   
@@ -286,17 +243,14 @@ object iFilterMod {
   }
   object SerializedFilter {
     
-    @scala.inline
-    def apply(filterType: String): SerializedFilter = {
+    inline def apply(filterType: String): SerializedFilter = {
       val __obj = js.Dynamic.literal(filterType = filterType.asInstanceOf[js.Any])
       __obj.asInstanceOf[SerializedFilter]
     }
     
-    @scala.inline
-    implicit class SerializedFilterMutableBuilder[Self <: SerializedFilter] (val x: Self) extends AnyVal {
+    extension [Self <: SerializedFilter](x: Self) {
       
-      @scala.inline
-      def setFilterType(value: String): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
+      inline def setFilterType(value: String): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
     }
   }
 }

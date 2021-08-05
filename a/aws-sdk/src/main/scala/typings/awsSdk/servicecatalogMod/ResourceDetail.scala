@@ -33,43 +33,31 @@ trait ResourceDetail extends StObject {
 }
 object ResourceDetail {
   
-  @scala.inline
-  def apply(): ResourceDetail = {
+  inline def apply(): ResourceDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceDetail]
   }
   
-  @scala.inline
-  implicit class ResourceDetailMutableBuilder[Self <: ResourceDetail] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceDetail](x: Self) {
     
-    @scala.inline
-    def setARN(value: ResourceDetailARN): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
+    inline def setARN(value: ResourceDetailARN): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setARNUndefined: Self = StObject.set(x, "ARN", js.undefined)
+    inline def setARNUndefined: Self = StObject.set(x, "ARN", js.undefined)
     
-    @scala.inline
-    def setCreatedTime(value: ResourceDetailCreatedTime): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: ResourceDetailCreatedTime): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
+    inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
-    @scala.inline
-    def setDescription(value: ResourceDetailDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: ResourceDetailDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setId(value: ResourceDetailId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: ResourceDetailId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setName(value: ResourceDetailName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceDetailName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

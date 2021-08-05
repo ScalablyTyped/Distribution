@@ -27,28 +27,20 @@ object RuleOperator {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def CONTAINS: `1` = 1.asInstanceOf[`1`]
+    inline def CONTAINS: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def CONTAINSNOT: `2` = 2.asInstanceOf[`2`]
+    inline def CONTAINSNOT: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def EQUAL: `5` = 5.asInstanceOf[`5`]
+    inline def EQUAL: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def GREATEREQUAL: `3` = 3.asInstanceOf[`3`]
+    inline def GREATEREQUAL: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def LESSEQUAL: `4` = 4.asInstanceOf[`4`]
+    inline def LESSEQUAL: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def NOTEQUAL: `6` = 6.asInstanceOf[`6`]
+    inline def NOTEQUAL: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def VALUE_FALSE: `8` = 8.asInstanceOf[`8`]
+    inline def VALUE_FALSE: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def VALUE_TRUE: `7` = 7.asInstanceOf[`7`]
+    inline def VALUE_TRUE: `7` = 7.asInstanceOf[`7`]
   }
 }

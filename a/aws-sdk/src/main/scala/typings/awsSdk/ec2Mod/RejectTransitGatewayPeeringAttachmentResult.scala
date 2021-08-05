@@ -13,19 +13,15 @@ trait RejectTransitGatewayPeeringAttachmentResult extends StObject {
 }
 object RejectTransitGatewayPeeringAttachmentResult {
   
-  @scala.inline
-  def apply(): RejectTransitGatewayPeeringAttachmentResult = {
+  inline def apply(): RejectTransitGatewayPeeringAttachmentResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RejectTransitGatewayPeeringAttachmentResult]
   }
   
-  @scala.inline
-  implicit class RejectTransitGatewayPeeringAttachmentResultMutableBuilder[Self <: RejectTransitGatewayPeeringAttachmentResult] (val x: Self) extends AnyVal {
+  extension [Self <: RejectTransitGatewayPeeringAttachmentResult](x: Self) {
     
-    @scala.inline
-    def setTransitGatewayPeeringAttachment(value: TransitGatewayPeeringAttachment): Self = StObject.set(x, "TransitGatewayPeeringAttachment", value.asInstanceOf[js.Any])
+    inline def setTransitGatewayPeeringAttachment(value: TransitGatewayPeeringAttachment): Self = StObject.set(x, "TransitGatewayPeeringAttachment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitGatewayPeeringAttachmentUndefined: Self = StObject.set(x, "TransitGatewayPeeringAttachment", js.undefined)
+    inline def setTransitGatewayPeeringAttachmentUndefined: Self = StObject.set(x, "TransitGatewayPeeringAttachment", js.undefined)
   }
 }

@@ -11,15 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FlowPredicateKind extends StObject
 object FlowPredicateKind {
   
-  @scala.inline
-  def DeclaredPredicate(value: ExpressionKind): typings.astTypes.namedTypesMod.namedTypes.DeclaredPredicate = {
+  inline def DeclaredPredicate(value: ExpressionKind): typings.astTypes.namedTypesMod.namedTypes.DeclaredPredicate = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("DeclaredPredicate")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.DeclaredPredicate]
   }
   
-  @scala.inline
-  def InferredPredicate(): typings.astTypes.namedTypesMod.namedTypes.InferredPredicate = {
+  inline def InferredPredicate(): typings.astTypes.namedTypesMod.namedTypes.InferredPredicate = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("InferredPredicate")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.InferredPredicate]

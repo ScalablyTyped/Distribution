@@ -13,16 +13,13 @@ trait GetResolverRuleAssociationRequest extends StObject {
 }
 object GetResolverRuleAssociationRequest {
   
-  @scala.inline
-  def apply(ResolverRuleAssociationId: ResourceId): GetResolverRuleAssociationRequest = {
+  inline def apply(ResolverRuleAssociationId: ResourceId): GetResolverRuleAssociationRequest = {
     val __obj = js.Dynamic.literal(ResolverRuleAssociationId = ResolverRuleAssociationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResolverRuleAssociationRequest]
   }
   
-  @scala.inline
-  implicit class GetResolverRuleAssociationRequestMutableBuilder[Self <: GetResolverRuleAssociationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetResolverRuleAssociationRequest](x: Self) {
     
-    @scala.inline
-    def setResolverRuleAssociationId(value: ResourceId): Self = StObject.set(x, "ResolverRuleAssociationId", value.asInstanceOf[js.Any])
+    inline def setResolverRuleAssociationId(value: ResourceId): Self = StObject.set(x, "ResolverRuleAssociationId", value.asInstanceOf[js.Any])
   }
 }

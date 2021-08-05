@@ -22,55 +22,39 @@ trait DefsReverseArrowOptions extends StObject {
 }
 object DefsReverseArrowOptions {
   
-  @scala.inline
-  def apply(): DefsReverseArrowOptions = {
+  inline def apply(): DefsReverseArrowOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DefsReverseArrowOptions]
   }
   
-  @scala.inline
-  implicit class DefsReverseArrowOptionsMutableBuilder[Self <: DefsReverseArrowOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DefsReverseArrowOptions](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setMarkerHeight(value: Double): Self = StObject.set(x, "markerHeight", value.asInstanceOf[js.Any])
+    inline def setMarkerHeight(value: Double): Self = StObject.set(x, "markerHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerHeightUndefined: Self = StObject.set(x, "markerHeight", js.undefined)
+    inline def setMarkerHeightUndefined: Self = StObject.set(x, "markerHeight", js.undefined)
     
-    @scala.inline
-    def setMarkerWidth(value: Double): Self = StObject.set(x, "markerWidth", value.asInstanceOf[js.Any])
+    inline def setMarkerWidth(value: Double): Self = StObject.set(x, "markerWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerWidthUndefined: Self = StObject.set(x, "markerWidth", js.undefined)
+    inline def setMarkerWidthUndefined: Self = StObject.set(x, "markerWidth", js.undefined)
     
-    @scala.inline
-    def setRefX(value: Double): Self = StObject.set(x, "refX", value.asInstanceOf[js.Any])
+    inline def setRefX(value: Double): Self = StObject.set(x, "refX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefXUndefined: Self = StObject.set(x, "refX", js.undefined)
+    inline def setRefXUndefined: Self = StObject.set(x, "refX", js.undefined)
     
-    @scala.inline
-    def setRefY(value: Double): Self = StObject.set(x, "refY", value.asInstanceOf[js.Any])
+    inline def setRefY(value: Double): Self = StObject.set(x, "refY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefYUndefined: Self = StObject.set(x, "refY", js.undefined)
+    inline def setRefYUndefined: Self = StObject.set(x, "refY", js.undefined)
     
-    @scala.inline
-    def setRender(value: Boolean): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+    inline def setRender(value: Boolean): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+    inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     
-    @scala.inline
-    def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+    inline def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
+    inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
   }
 }

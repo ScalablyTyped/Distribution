@@ -13,8 +13,7 @@ object deprecatedMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def deprecationWarning(
+  inline def deprecationWarning(
     config: Record[String, js.Any],
     option: String,
     deprecatedOptions: DeprecatedOptions,

@@ -12,25 +12,19 @@ trait CellPlusColor extends StObject {
 }
 object CellPlusColor {
   
-  @scala.inline
-  def apply(): CellPlusColor = {
+  inline def apply(): CellPlusColor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CellPlusColor]
   }
   
-  @scala.inline
-  implicit class CellPlusColorMutableBuilder[Self <: CellPlusColor] (val x: Self) extends AnyVal {
+  extension [Self <: CellPlusColor](x: Self) {
     
-    @scala.inline
-    def setCellPlusColor(value: String): Self = StObject.set(x, "cellPlusColor", value.asInstanceOf[js.Any])
+    inline def setCellPlusColor(value: String): Self = StObject.set(x, "cellPlusColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellPlusColorUndefined: Self = StObject.set(x, "cellPlusColor", js.undefined)
+    inline def setCellPlusColorUndefined: Self = StObject.set(x, "cellPlusColor", js.undefined)
     
-    @scala.inline
-    def setMaximumTrackTintColor(value: String): Self = StObject.set(x, "maximumTrackTintColor", value.asInstanceOf[js.Any])
+    inline def setMaximumTrackTintColor(value: String): Self = StObject.set(x, "maximumTrackTintColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumTrackTintColorUndefined: Self = StObject.set(x, "maximumTrackTintColor", js.undefined)
+    inline def setMaximumTrackTintColorUndefined: Self = StObject.set(x, "maximumTrackTintColor", js.undefined)
   }
 }

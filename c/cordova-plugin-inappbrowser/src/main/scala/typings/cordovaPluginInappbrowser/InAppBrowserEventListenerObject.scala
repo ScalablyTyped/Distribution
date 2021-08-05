@@ -10,16 +10,13 @@ trait InAppBrowserEventListenerObject extends StObject {
 }
 object InAppBrowserEventListenerObject {
   
-  @scala.inline
-  def apply(handleEvent: InAppBrowserEvent => Unit): InAppBrowserEventListenerObject = {
+  inline def apply(handleEvent: InAppBrowserEvent => Unit): InAppBrowserEventListenerObject = {
     val __obj = js.Dynamic.literal(handleEvent = js.Any.fromFunction1(handleEvent))
     __obj.asInstanceOf[InAppBrowserEventListenerObject]
   }
   
-  @scala.inline
-  implicit class InAppBrowserEventListenerObjectMutableBuilder[Self <: InAppBrowserEventListenerObject] (val x: Self) extends AnyVal {
+  extension [Self <: InAppBrowserEventListenerObject](x: Self) {
     
-    @scala.inline
-    def setHandleEvent(value: InAppBrowserEvent => Unit): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
+    inline def setHandleEvent(value: InAppBrowserEvent => Unit): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
   }
 }

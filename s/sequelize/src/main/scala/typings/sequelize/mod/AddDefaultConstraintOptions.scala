@@ -16,29 +16,22 @@ trait AddDefaultConstraintOptions
 }
 object AddDefaultConstraintOptions {
   
-  @scala.inline
-  def apply(): AddDefaultConstraintOptions = {
+  inline def apply(): AddDefaultConstraintOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("default")
     __obj.asInstanceOf[AddDefaultConstraintOptions]
   }
   
-  @scala.inline
-  implicit class AddDefaultConstraintOptionsMutableBuilder[Self <: AddDefaultConstraintOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AddDefaultConstraintOptions](x: Self) {
     
-    @scala.inline
-    def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.sequelize.sequelizeStrings.default): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.sequelize.sequelizeStrings.default): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

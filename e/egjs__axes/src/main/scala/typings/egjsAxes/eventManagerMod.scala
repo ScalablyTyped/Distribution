@@ -13,9 +13,9 @@ object eventManagerMod {
   class EventManager protected () extends StObject {
     def this(axes: js.Any, axm: js.Any) = this()
     
-    var axes: js.Any = js.native
+    /* private */ var axes: js.Any = js.native
     
-    var axm: js.Any = js.native
+    /* private */ var axm: js.Any = js.native
     
     /* private */ def createUserControll(pos: js.Any, duration: js.Any): js.Any = js.native
     

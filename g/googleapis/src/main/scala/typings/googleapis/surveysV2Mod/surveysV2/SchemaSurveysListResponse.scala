@@ -23,40 +23,29 @@ trait SchemaSurveysListResponse extends StObject {
 }
 object SchemaSurveysListResponse {
   
-  @scala.inline
-  def apply(): SchemaSurveysListResponse = {
+  inline def apply(): SchemaSurveysListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSurveysListResponse]
   }
   
-  @scala.inline
-  implicit class SchemaSurveysListResponseMutableBuilder[Self <: SchemaSurveysListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSurveysListResponse](x: Self) {
     
-    @scala.inline
-    def setPageInfo(value: SchemaPageInfo): Self = StObject.set(x, "pageInfo", value.asInstanceOf[js.Any])
+    inline def setPageInfo(value: SchemaPageInfo): Self = StObject.set(x, "pageInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageInfoUndefined: Self = StObject.set(x, "pageInfo", js.undefined)
+    inline def setPageInfoUndefined: Self = StObject.set(x, "pageInfo", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
     
-    @scala.inline
-    def setResources(value: js.Array[SchemaSurvey]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: js.Array[SchemaSurvey]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
+    inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
-    @scala.inline
-    def setResourcesVarargs(value: SchemaSurvey*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: SchemaSurvey*): Self = StObject.set(x, "resources", js.Array(value :_*))
     
-    @scala.inline
-    def setTokenPagination(value: SchemaTokenPagination): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
+    inline def setTokenPagination(value: SchemaTokenPagination): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenPaginationUndefined: Self = StObject.set(x, "tokenPagination", js.undefined)
+    inline def setTokenPaginationUndefined: Self = StObject.set(x, "tokenPagination", js.undefined)
   }
 }

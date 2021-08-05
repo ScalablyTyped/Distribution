@@ -12,12 +12,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def listen(server: Server): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("listen")(server.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def listen(server: Server, port: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(server.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def listen(server: Server, port: Double, options: Env): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(server.asInstanceOf[js.Any], port.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def listen(server: Server, port: Unit, options: Env): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(server.asInstanceOf[js.Any], port.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def listen(server: Server): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("listen")(server.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def listen(server: Server, port: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(server.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def listen(server: Server, port: Double, options: Env): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(server.asInstanceOf[js.Any], port.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def listen(server: Server, port: Unit, options: Env): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(server.asInstanceOf[js.Any], port.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

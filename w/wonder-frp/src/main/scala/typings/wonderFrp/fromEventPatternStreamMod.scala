@@ -12,9 +12,9 @@ object fromEventPatternStreamMod {
   class FromEventPatternStream protected () extends BaseStream {
     def this(addHandler: js.Function, removeHandler: js.Function) = this()
     
-    var _addHandler: js.Any = js.native
+    /* private */ var _addHandler: js.Any = js.native
     
-    var _removeHandler: js.Any = js.native
+    /* private */ var _removeHandler: js.Any = js.native
   }
   /* static members */
   object FromEventPatternStream {
@@ -23,7 +23,6 @@ object fromEventPatternStreamMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(addHandler: js.Function, removeHandler: js.Function): FromEventPatternStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(addHandler.asInstanceOf[js.Any], removeHandler.asInstanceOf[js.Any])).asInstanceOf[FromEventPatternStream]
+    inline def create(addHandler: js.Function, removeHandler: js.Function): FromEventPatternStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(addHandler.asInstanceOf[js.Any], removeHandler.asInstanceOf[js.Any])).asInstanceOf[FromEventPatternStream]
   }
 }

@@ -8,7 +8,7 @@ trait SourceUnit
   extends StObject
      with AST {
   
-  var _fileName: js.Any
+  /* private */ var _fileName: js.Any
   
   var endOfFileTokenLeadingComments: js.Array[Comment]
   
@@ -18,8 +18,7 @@ trait SourceUnit
 }
 object SourceUnit {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _fileName: js.Any,
@@ -48,22 +47,16 @@ object SourceUnit {
     __obj.asInstanceOf[SourceUnit]
   }
   
-  @scala.inline
-  implicit class SourceUnitMutableBuilder[Self <: SourceUnit] (val x: Self) extends AnyVal {
+  extension [Self <: SourceUnit](x: Self) {
     
-    @scala.inline
-    def setEndOfFileTokenLeadingComments(value: js.Array[Comment]): Self = StObject.set(x, "endOfFileTokenLeadingComments", value.asInstanceOf[js.Any])
+    inline def setEndOfFileTokenLeadingComments(value: js.Array[Comment]): Self = StObject.set(x, "endOfFileTokenLeadingComments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndOfFileTokenLeadingCommentsVarargs(value: Comment*): Self = StObject.set(x, "endOfFileTokenLeadingComments", js.Array(value :_*))
+    inline def setEndOfFileTokenLeadingCommentsVarargs(value: Comment*): Self = StObject.set(x, "endOfFileTokenLeadingComments", js.Array(value :_*))
     
-    @scala.inline
-    def setModuleElements(value: ISyntaxList2): Self = StObject.set(x, "moduleElements", value.asInstanceOf[js.Any])
+    inline def setModuleElements(value: ISyntaxList2): Self = StObject.set(x, "moduleElements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructuralEquals(value: (SourceUnit, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (SourceUnit, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set_fileName(value: js.Any): Self = StObject.set(x, "_fileName", value.asInstanceOf[js.Any])
+    inline def set_fileName(value: js.Any): Self = StObject.set(x, "_fileName", value.asInstanceOf[js.Any])
   }
 }

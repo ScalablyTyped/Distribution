@@ -134,8 +134,7 @@ object shortcutsMod {
   }
   object ShortcutsScreenProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       restoreAllDefaultShortcuts: js.Function,
       restoreDefaultShortcut: js.Function,
       setShortcut: js.Function,
@@ -145,20 +144,15 @@ object shortcutsMod {
       __obj.asInstanceOf[ShortcutsScreenProps]
     }
     
-    @scala.inline
-    implicit class ShortcutsScreenPropsMutableBuilder[Self <: ShortcutsScreenProps] (val x: Self) extends AnyVal {
+    extension [Self <: ShortcutsScreenProps](x: Self) {
       
-      @scala.inline
-      def setRestoreAllDefaultShortcuts(value: js.Function): Self = StObject.set(x, "restoreAllDefaultShortcuts", value.asInstanceOf[js.Any])
+      inline def setRestoreAllDefaultShortcuts(value: js.Function): Self = StObject.set(x, "restoreAllDefaultShortcuts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestoreDefaultShortcut(value: js.Function): Self = StObject.set(x, "restoreDefaultShortcut", value.asInstanceOf[js.Any])
+      inline def setRestoreDefaultShortcut(value: js.Function): Self = StObject.set(x, "restoreDefaultShortcut", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetShortcut(value: js.Function): Self = StObject.set(x, "setShortcut", value.asInstanceOf[js.Any])
+      inline def setSetShortcut(value: js.Function): Self = StObject.set(x, "setShortcut", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortcutKeys(value: RecordFeatureany): Self = StObject.set(x, "shortcutKeys", value.asInstanceOf[js.Any])
+      inline def setShortcutKeys(value: RecordFeatureany): Self = StObject.set(x, "shortcutKeys", value.asInstanceOf[js.Any])
     }
   }
   
@@ -172,23 +166,18 @@ object shortcutsMod {
   }
   object ShortcutsScreenState {
     
-    @scala.inline
-    def apply(activeFeature: Feature, shortcutKeys: RecordFeatureany, successField: Feature): ShortcutsScreenState = {
+    inline def apply(activeFeature: Feature, shortcutKeys: RecordFeatureany, successField: Feature): ShortcutsScreenState = {
       val __obj = js.Dynamic.literal(activeFeature = activeFeature.asInstanceOf[js.Any], shortcutKeys = shortcutKeys.asInstanceOf[js.Any], successField = successField.asInstanceOf[js.Any])
       __obj.asInstanceOf[ShortcutsScreenState]
     }
     
-    @scala.inline
-    implicit class ShortcutsScreenStateMutableBuilder[Self <: ShortcutsScreenState] (val x: Self) extends AnyVal {
+    extension [Self <: ShortcutsScreenState](x: Self) {
       
-      @scala.inline
-      def setActiveFeature(value: Feature): Self = StObject.set(x, "activeFeature", value.asInstanceOf[js.Any])
+      inline def setActiveFeature(value: Feature): Self = StObject.set(x, "activeFeature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortcutKeys(value: RecordFeatureany): Self = StObject.set(x, "shortcutKeys", value.asInstanceOf[js.Any])
+      inline def setShortcutKeys(value: RecordFeatureany): Self = StObject.set(x, "shortcutKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccessField(value: Feature): Self = StObject.set(x, "successField", value.asInstanceOf[js.Any])
+      inline def setSuccessField(value: Feature): Self = StObject.set(x, "successField", value.asInstanceOf[js.Any])
     }
   }
   
@@ -200,13 +189,10 @@ object shortcutsMod {
   trait ValidationStates extends StObject
   object ValidationStates {
     
-    @scala.inline
-    def error: typings.storybookUi.storybookUiStrings.error = "error".asInstanceOf[typings.storybookUi.storybookUiStrings.error]
+    inline def error: typings.storybookUi.storybookUiStrings.error = "error".asInstanceOf[typings.storybookUi.storybookUiStrings.error]
     
-    @scala.inline
-    def valid: typings.storybookUi.storybookUiStrings.valid = "valid".asInstanceOf[typings.storybookUi.storybookUiStrings.valid]
+    inline def valid: typings.storybookUi.storybookUiStrings.valid = "valid".asInstanceOf[typings.storybookUi.storybookUiStrings.valid]
     
-    @scala.inline
-    def warn: typings.storybookUi.storybookUiStrings.warn = "warn".asInstanceOf[typings.storybookUi.storybookUiStrings.warn]
+    inline def warn: typings.storybookUi.storybookUiStrings.warn = "warn".asInstanceOf[typings.storybookUi.storybookUiStrings.warn]
   }
 }

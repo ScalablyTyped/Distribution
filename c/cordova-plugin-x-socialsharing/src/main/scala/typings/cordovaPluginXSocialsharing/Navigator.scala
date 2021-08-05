@@ -12,16 +12,13 @@ trait Navigator extends StObject {
 }
 object Navigator {
   
-  @scala.inline
-  def apply(share: /* shareData */ SocialSharingW3CData => js.Promise[SocialSharingResult]): Navigator = {
+  inline def apply(share: /* shareData */ SocialSharingW3CData => js.Promise[SocialSharingResult]): Navigator = {
     val __obj = js.Dynamic.literal(share = js.Any.fromFunction1(share))
     __obj.asInstanceOf[Navigator]
   }
   
-  @scala.inline
-  implicit class NavigatorMutableBuilder[Self <: Navigator] (val x: Self) extends AnyVal {
+  extension [Self <: Navigator](x: Self) {
     
-    @scala.inline
-    def setShare(value: /* shareData */ SocialSharingW3CData => js.Promise[SocialSharingResult]): Self = StObject.set(x, "share", js.Any.fromFunction1(value))
+    inline def setShare(value: /* shareData */ SocialSharingW3CData => js.Promise[SocialSharingResult]): Self = StObject.set(x, "share", js.Any.fromFunction1(value))
   }
 }

@@ -14,16 +14,13 @@ trait IndexLike
 }
 object IndexLike {
   
-  @scala.inline
-  def apply(id: String): IndexLike = {
+  inline def apply(id: String): IndexLike = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexLike]
   }
   
-  @scala.inline
-  implicit class IndexLikeMutableBuilder[Self <: IndexLike] (val x: Self) extends AnyVal {
+  extension [Self <: IndexLike](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

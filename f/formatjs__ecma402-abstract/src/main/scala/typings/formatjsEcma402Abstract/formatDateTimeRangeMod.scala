@@ -13,8 +13,7 @@ object formatDateTimeRangeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def FormatDateTimeRange(
+  inline def FormatDateTimeRange(
     dtf: DateTimeFormat,
     x: Double,
     y: Double,

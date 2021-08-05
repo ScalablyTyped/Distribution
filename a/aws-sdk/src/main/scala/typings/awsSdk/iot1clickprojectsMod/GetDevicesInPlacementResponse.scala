@@ -13,16 +13,13 @@ trait GetDevicesInPlacementResponse extends StObject {
 }
 object GetDevicesInPlacementResponse {
   
-  @scala.inline
-  def apply(devices: DeviceMap): GetDevicesInPlacementResponse = {
+  inline def apply(devices: DeviceMap): GetDevicesInPlacementResponse = {
     val __obj = js.Dynamic.literal(devices = devices.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDevicesInPlacementResponse]
   }
   
-  @scala.inline
-  implicit class GetDevicesInPlacementResponseMutableBuilder[Self <: GetDevicesInPlacementResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetDevicesInPlacementResponse](x: Self) {
     
-    @scala.inline
-    def setDevices(value: DeviceMap): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
+    inline def setDevices(value: DeviceMap): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
   }
 }

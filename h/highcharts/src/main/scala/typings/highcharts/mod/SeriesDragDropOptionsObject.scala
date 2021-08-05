@@ -145,159 +145,109 @@ trait SeriesDragDropOptionsObject extends StObject {
 }
 object SeriesDragDropOptionsObject {
   
-  @scala.inline
-  def apply(): SeriesDragDropOptionsObject = {
+  inline def apply(): SeriesDragDropOptionsObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SeriesDragDropOptionsObject]
   }
   
-  @scala.inline
-  implicit class SeriesDragDropOptionsObjectMutableBuilder[Self <: SeriesDragDropOptionsObject] (val x: Self) extends AnyVal {
+  extension [Self <: SeriesDragDropOptionsObject](x: Self) {
     
-    @scala.inline
-    def setDragHandle(value: DragDropHandleOptionsObject): Self = StObject.set(x, "dragHandle", value.asInstanceOf[js.Any])
+    inline def setDragHandle(value: DragDropHandleOptionsObject): Self = StObject.set(x, "dragHandle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragHandleUndefined: Self = StObject.set(x, "dragHandle", js.undefined)
+    inline def setDragHandleUndefined: Self = StObject.set(x, "dragHandle", js.undefined)
     
-    @scala.inline
-    def setDragMaxX(value: Double): Self = StObject.set(x, "dragMaxX", value.asInstanceOf[js.Any])
+    inline def setDragMaxX(value: Double): Self = StObject.set(x, "dragMaxX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragMaxXUndefined: Self = StObject.set(x, "dragMaxX", js.undefined)
+    inline def setDragMaxXUndefined: Self = StObject.set(x, "dragMaxX", js.undefined)
     
-    @scala.inline
-    def setDragMaxY(value: Double): Self = StObject.set(x, "dragMaxY", value.asInstanceOf[js.Any])
+    inline def setDragMaxY(value: Double): Self = StObject.set(x, "dragMaxY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragMaxYUndefined: Self = StObject.set(x, "dragMaxY", js.undefined)
+    inline def setDragMaxYUndefined: Self = StObject.set(x, "dragMaxY", js.undefined)
     
-    @scala.inline
-    def setDragMinX(value: Double): Self = StObject.set(x, "dragMinX", value.asInstanceOf[js.Any])
+    inline def setDragMinX(value: Double): Self = StObject.set(x, "dragMinX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragMinXUndefined: Self = StObject.set(x, "dragMinX", js.undefined)
+    inline def setDragMinXUndefined: Self = StObject.set(x, "dragMinX", js.undefined)
     
-    @scala.inline
-    def setDragMinY(value: Double): Self = StObject.set(x, "dragMinY", value.asInstanceOf[js.Any])
+    inline def setDragMinY(value: Double): Self = StObject.set(x, "dragMinY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragMinYUndefined: Self = StObject.set(x, "dragMinY", js.undefined)
+    inline def setDragMinYUndefined: Self = StObject.set(x, "dragMinY", js.undefined)
     
-    @scala.inline
-    def setDragPrecisionX(value: Double): Self = StObject.set(x, "dragPrecisionX", value.asInstanceOf[js.Any])
+    inline def setDragPrecisionX(value: Double): Self = StObject.set(x, "dragPrecisionX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragPrecisionXUndefined: Self = StObject.set(x, "dragPrecisionX", js.undefined)
+    inline def setDragPrecisionXUndefined: Self = StObject.set(x, "dragPrecisionX", js.undefined)
     
-    @scala.inline
-    def setDragPrecisionY(value: Double): Self = StObject.set(x, "dragPrecisionY", value.asInstanceOf[js.Any])
+    inline def setDragPrecisionY(value: Double): Self = StObject.set(x, "dragPrecisionY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragPrecisionYUndefined: Self = StObject.set(x, "dragPrecisionY", js.undefined)
+    inline def setDragPrecisionYUndefined: Self = StObject.set(x, "dragPrecisionY", js.undefined)
     
-    @scala.inline
-    def setDragSensitivity(value: Double): Self = StObject.set(x, "dragSensitivity", value.asInstanceOf[js.Any])
+    inline def setDragSensitivity(value: Double): Self = StObject.set(x, "dragSensitivity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragSensitivityUndefined: Self = StObject.set(x, "dragSensitivity", js.undefined)
+    inline def setDragSensitivityUndefined: Self = StObject.set(x, "dragSensitivity", js.undefined)
     
-    @scala.inline
-    def setDraggableClose(value: Boolean): Self = StObject.set(x, "draggableClose", value.asInstanceOf[js.Any])
+    inline def setDraggableClose(value: Boolean): Self = StObject.set(x, "draggableClose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraggableCloseUndefined: Self = StObject.set(x, "draggableClose", js.undefined)
+    inline def setDraggableCloseUndefined: Self = StObject.set(x, "draggableClose", js.undefined)
     
-    @scala.inline
-    def setDraggableEnd(value: Boolean): Self = StObject.set(x, "draggableEnd", value.asInstanceOf[js.Any])
+    inline def setDraggableEnd(value: Boolean): Self = StObject.set(x, "draggableEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraggableEndUndefined: Self = StObject.set(x, "draggableEnd", js.undefined)
+    inline def setDraggableEndUndefined: Self = StObject.set(x, "draggableEnd", js.undefined)
     
-    @scala.inline
-    def setDraggableHigh(value: Boolean): Self = StObject.set(x, "draggableHigh", value.asInstanceOf[js.Any])
+    inline def setDraggableHigh(value: Boolean): Self = StObject.set(x, "draggableHigh", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraggableHighUndefined: Self = StObject.set(x, "draggableHigh", js.undefined)
+    inline def setDraggableHighUndefined: Self = StObject.set(x, "draggableHigh", js.undefined)
     
-    @scala.inline
-    def setDraggableLow(value: Boolean): Self = StObject.set(x, "draggableLow", value.asInstanceOf[js.Any])
+    inline def setDraggableLow(value: Boolean): Self = StObject.set(x, "draggableLow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraggableLowUndefined: Self = StObject.set(x, "draggableLow", js.undefined)
+    inline def setDraggableLowUndefined: Self = StObject.set(x, "draggableLow", js.undefined)
     
-    @scala.inline
-    def setDraggableOpen(value: Boolean): Self = StObject.set(x, "draggableOpen", value.asInstanceOf[js.Any])
+    inline def setDraggableOpen(value: Boolean): Self = StObject.set(x, "draggableOpen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraggableOpenUndefined: Self = StObject.set(x, "draggableOpen", js.undefined)
+    inline def setDraggableOpenUndefined: Self = StObject.set(x, "draggableOpen", js.undefined)
     
-    @scala.inline
-    def setDraggableQ1(value: Boolean): Self = StObject.set(x, "draggableQ1", value.asInstanceOf[js.Any])
+    inline def setDraggableQ1(value: Boolean): Self = StObject.set(x, "draggableQ1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraggableQ1Undefined: Self = StObject.set(x, "draggableQ1", js.undefined)
+    inline def setDraggableQ1Undefined: Self = StObject.set(x, "draggableQ1", js.undefined)
     
-    @scala.inline
-    def setDraggableQ3(value: Boolean): Self = StObject.set(x, "draggableQ3", value.asInstanceOf[js.Any])
+    inline def setDraggableQ3(value: Boolean): Self = StObject.set(x, "draggableQ3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraggableQ3Undefined: Self = StObject.set(x, "draggableQ3", js.undefined)
+    inline def setDraggableQ3Undefined: Self = StObject.set(x, "draggableQ3", js.undefined)
     
-    @scala.inline
-    def setDraggableStart(value: Boolean): Self = StObject.set(x, "draggableStart", value.asInstanceOf[js.Any])
+    inline def setDraggableStart(value: Boolean): Self = StObject.set(x, "draggableStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraggableStartUndefined: Self = StObject.set(x, "draggableStart", js.undefined)
+    inline def setDraggableStartUndefined: Self = StObject.set(x, "draggableStart", js.undefined)
     
-    @scala.inline
-    def setDraggableTarget(value: Boolean): Self = StObject.set(x, "draggableTarget", value.asInstanceOf[js.Any])
+    inline def setDraggableTarget(value: Boolean): Self = StObject.set(x, "draggableTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraggableTargetUndefined: Self = StObject.set(x, "draggableTarget", js.undefined)
+    inline def setDraggableTargetUndefined: Self = StObject.set(x, "draggableTarget", js.undefined)
     
-    @scala.inline
-    def setDraggableX(value: Boolean): Self = StObject.set(x, "draggableX", value.asInstanceOf[js.Any])
+    inline def setDraggableX(value: Boolean): Self = StObject.set(x, "draggableX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraggableX1(value: Boolean): Self = StObject.set(x, "draggableX1", value.asInstanceOf[js.Any])
+    inline def setDraggableX1(value: Boolean): Self = StObject.set(x, "draggableX1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraggableX1Undefined: Self = StObject.set(x, "draggableX1", js.undefined)
+    inline def setDraggableX1Undefined: Self = StObject.set(x, "draggableX1", js.undefined)
     
-    @scala.inline
-    def setDraggableX2(value: Boolean): Self = StObject.set(x, "draggableX2", value.asInstanceOf[js.Any])
+    inline def setDraggableX2(value: Boolean): Self = StObject.set(x, "draggableX2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraggableX2Undefined: Self = StObject.set(x, "draggableX2", js.undefined)
+    inline def setDraggableX2Undefined: Self = StObject.set(x, "draggableX2", js.undefined)
     
-    @scala.inline
-    def setDraggableXUndefined: Self = StObject.set(x, "draggableX", js.undefined)
+    inline def setDraggableXUndefined: Self = StObject.set(x, "draggableX", js.undefined)
     
-    @scala.inline
-    def setDraggableY(value: Boolean): Self = StObject.set(x, "draggableY", value.asInstanceOf[js.Any])
+    inline def setDraggableY(value: Boolean): Self = StObject.set(x, "draggableY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraggableYUndefined: Self = StObject.set(x, "draggableY", js.undefined)
+    inline def setDraggableYUndefined: Self = StObject.set(x, "draggableY", js.undefined)
     
-    @scala.inline
-    def setGroupBy(value: String): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
+    inline def setGroupBy(value: String): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupByUndefined: Self = StObject.set(x, "groupBy", js.undefined)
+    inline def setGroupByUndefined: Self = StObject.set(x, "groupBy", js.undefined)
     
-    @scala.inline
-    def setGuideBox(
+    inline def setGuideBox(
       value: PlotAreaDragDropGuideBoxOptions | PlotArearangeDragDropGuideBoxOptions | PlotAreasplineDragDropGuideBoxOptions | PlotAreasplinerangeDragDropGuideBoxOptions | PlotBarDragDropGuideBoxOptions | PlotBoxplotDragDropGuideBoxOptions | PlotBubbleDragDropGuideBoxOptions | PlotBulletDragDropGuideBoxOptions | PlotCandlestickDragDropGuideBoxOptions | PlotColumnDragDropGuideBoxOptions | PlotColumnpyramidDragDropGuideBoxOptions | PlotColumnrangeDragDropGuideBoxOptions | PlotDumbbellDragDropGuideBoxOptions | PlotErrorbarDragDropGuideBoxOptions | PlotFlagsDragDropGuideBoxOptions | PlotFunnel3dDragDropGuideBoxOptions | PlotGanttDragDropGuideBoxOptions | PlotHeatmapDragDropGuideBoxOptions | PlotLineDragDropGuideBoxOptions | PlotLollipopDragDropGuideBoxOptions | PlotMapbubbleDragDropGuideBoxOptions | PlotMapDragDropGuideBoxOptions | PlotMaplineDragDropGuideBoxOptions | PlotMappointDragDropGuideBoxOptions | PlotOhlcDragDropGuideBoxOptions | PlotPolygonDragDropGuideBoxOptions | PlotPyramid3dDragDropGuideBoxOptions | PlotScatterDragDropGuideBoxOptions | PlotSeriesDragDropGuideBoxOptions | PlotSplineDragDropGuideBoxOptions | PlotStreamgraphDragDropGuideBoxOptions | PlotTilemapDragDropGuideBoxOptions | PlotTimelineDragDropGuideBoxOptions | PlotVariwideDragDropGuideBoxOptions | PlotWaterfallDragDropGuideBoxOptions | PlotXrangeDragDropGuideBoxOptions | Dictionary[DragDropGuideBoxOptionsObject]
     ): Self = StObject.set(x, "guideBox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuideBoxUndefined: Self = StObject.set(x, "guideBox", js.undefined)
+    inline def setGuideBoxUndefined: Self = StObject.set(x, "guideBox", js.undefined)
     
-    @scala.inline
-    def setLiveRedraw(value: Boolean): Self = StObject.set(x, "liveRedraw", value.asInstanceOf[js.Any])
+    inline def setLiveRedraw(value: Boolean): Self = StObject.set(x, "liveRedraw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLiveRedrawUndefined: Self = StObject.set(x, "liveRedraw", js.undefined)
+    inline def setLiveRedrawUndefined: Self = StObject.set(x, "liveRedraw", js.undefined)
   }
 }

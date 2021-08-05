@@ -17,19 +17,15 @@ trait SchemaGoogleCloudDialogflowV2IntentMessageSuggestion extends StObject {
 }
 object SchemaGoogleCloudDialogflowV2IntentMessageSuggestion {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudDialogflowV2IntentMessageSuggestion = {
+  inline def apply(): SchemaGoogleCloudDialogflowV2IntentMessageSuggestion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2IntentMessageSuggestion]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2IntentMessageSuggestionMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2IntentMessageSuggestion] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudDialogflowV2IntentMessageSuggestion](x: Self) {
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

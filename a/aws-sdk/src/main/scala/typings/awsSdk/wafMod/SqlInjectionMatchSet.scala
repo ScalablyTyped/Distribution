@@ -23,28 +23,21 @@ trait SqlInjectionMatchSet extends StObject {
 }
 object SqlInjectionMatchSet {
   
-  @scala.inline
-  def apply(SqlInjectionMatchSetId: ResourceId, SqlInjectionMatchTuples: SqlInjectionMatchTuples): SqlInjectionMatchSet = {
+  inline def apply(SqlInjectionMatchSetId: ResourceId, SqlInjectionMatchTuples: SqlInjectionMatchTuples): SqlInjectionMatchSet = {
     val __obj = js.Dynamic.literal(SqlInjectionMatchSetId = SqlInjectionMatchSetId.asInstanceOf[js.Any], SqlInjectionMatchTuples = SqlInjectionMatchTuples.asInstanceOf[js.Any])
     __obj.asInstanceOf[SqlInjectionMatchSet]
   }
   
-  @scala.inline
-  implicit class SqlInjectionMatchSetMutableBuilder[Self <: SqlInjectionMatchSet] (val x: Self) extends AnyVal {
+  extension [Self <: SqlInjectionMatchSet](x: Self) {
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setSqlInjectionMatchSetId(value: ResourceId): Self = StObject.set(x, "SqlInjectionMatchSetId", value.asInstanceOf[js.Any])
+    inline def setSqlInjectionMatchSetId(value: ResourceId): Self = StObject.set(x, "SqlInjectionMatchSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSqlInjectionMatchTuples(value: SqlInjectionMatchTuples): Self = StObject.set(x, "SqlInjectionMatchTuples", value.asInstanceOf[js.Any])
+    inline def setSqlInjectionMatchTuples(value: SqlInjectionMatchTuples): Self = StObject.set(x, "SqlInjectionMatchTuples", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSqlInjectionMatchTuplesVarargs(value: SqlInjectionMatchTuple*): Self = StObject.set(x, "SqlInjectionMatchTuples", js.Array(value :_*))
+    inline def setSqlInjectionMatchTuplesVarargs(value: SqlInjectionMatchTuple*): Self = StObject.set(x, "SqlInjectionMatchTuples", js.Array(value :_*))
   }
 }

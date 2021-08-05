@@ -30,62 +30,44 @@ trait InlineQueryResultGif
 }
 object InlineQueryResultGif {
   
-  @scala.inline
-  def apply(gif_url: String, id: String): InlineQueryResultGif = {
+  inline def apply(gif_url: String, id: String): InlineQueryResultGif = {
     val __obj = js.Dynamic.literal(gif_url = gif_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("gif")
     __obj.asInstanceOf[InlineQueryResultGif]
   }
   
-  @scala.inline
-  implicit class InlineQueryResultGifMutableBuilder[Self <: InlineQueryResultGif] (val x: Self) extends AnyVal {
+  extension [Self <: InlineQueryResultGif](x: Self) {
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+    inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
-    @scala.inline
-    def setGif_duration(value: Double): Self = StObject.set(x, "gif_duration", value.asInstanceOf[js.Any])
+    inline def setGif_duration(value: Double): Self = StObject.set(x, "gif_duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGif_durationUndefined: Self = StObject.set(x, "gif_duration", js.undefined)
+    inline def setGif_durationUndefined: Self = StObject.set(x, "gif_duration", js.undefined)
     
-    @scala.inline
-    def setGif_height(value: Double): Self = StObject.set(x, "gif_height", value.asInstanceOf[js.Any])
+    inline def setGif_height(value: Double): Self = StObject.set(x, "gif_height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGif_heightUndefined: Self = StObject.set(x, "gif_height", js.undefined)
+    inline def setGif_heightUndefined: Self = StObject.set(x, "gif_height", js.undefined)
     
-    @scala.inline
-    def setGif_url(value: String): Self = StObject.set(x, "gif_url", value.asInstanceOf[js.Any])
+    inline def setGif_url(value: String): Self = StObject.set(x, "gif_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGif_width(value: Double): Self = StObject.set(x, "gif_width", value.asInstanceOf[js.Any])
+    inline def setGif_width(value: Double): Self = StObject.set(x, "gif_width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGif_widthUndefined: Self = StObject.set(x, "gif_width", js.undefined)
+    inline def setGif_widthUndefined: Self = StObject.set(x, "gif_width", js.undefined)
     
-    @scala.inline
-    def setInput_message_content(value: InputMessageContent): Self = StObject.set(x, "input_message_content", value.asInstanceOf[js.Any])
+    inline def setInput_message_content(value: InputMessageContent): Self = StObject.set(x, "input_message_content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInput_message_contentUndefined: Self = StObject.set(x, "input_message_content", js.undefined)
+    inline def setInput_message_contentUndefined: Self = StObject.set(x, "input_message_content", js.undefined)
     
-    @scala.inline
-    def setThumb_url(value: String): Self = StObject.set(x, "thumb_url", value.asInstanceOf[js.Any])
+    inline def setThumb_url(value: String): Self = StObject.set(x, "thumb_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumb_urlUndefined: Self = StObject.set(x, "thumb_url", js.undefined)
+    inline def setThumb_urlUndefined: Self = StObject.set(x, "thumb_url", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setType(value: gif): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: gif): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

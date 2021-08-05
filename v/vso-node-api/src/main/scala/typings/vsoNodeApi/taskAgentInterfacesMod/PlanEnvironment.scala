@@ -15,8 +15,7 @@ trait PlanEnvironment extends StObject {
 }
 object PlanEnvironment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     mask: js.Array[MaskHint],
     options: StringDictionary[JobOption],
     variables: StringDictionary[String]
@@ -25,19 +24,14 @@ object PlanEnvironment {
     __obj.asInstanceOf[PlanEnvironment]
   }
   
-  @scala.inline
-  implicit class PlanEnvironmentMutableBuilder[Self <: PlanEnvironment] (val x: Self) extends AnyVal {
+  extension [Self <: PlanEnvironment](x: Self) {
     
-    @scala.inline
-    def setMask(value: js.Array[MaskHint]): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+    inline def setMask(value: js.Array[MaskHint]): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaskVarargs(value: MaskHint*): Self = StObject.set(x, "mask", js.Array(value :_*))
+    inline def setMaskVarargs(value: MaskHint*): Self = StObject.set(x, "mask", js.Array(value :_*))
     
-    @scala.inline
-    def setOptions(value: StringDictionary[JobOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: StringDictionary[JobOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariables(value: StringDictionary[String]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+    inline def setVariables(value: StringDictionary[String]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
   }
 }

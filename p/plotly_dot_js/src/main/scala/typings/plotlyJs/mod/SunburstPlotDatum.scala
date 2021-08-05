@@ -38,8 +38,7 @@ trait SunburstPlotDatum extends StObject {
 }
 object SunburstPlotDatum {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     color: Double,
     curveNumber: Double,
     data: Data,
@@ -60,52 +59,36 @@ object SunburstPlotDatum {
     __obj.asInstanceOf[SunburstPlotDatum]
   }
   
-  @scala.inline
-  implicit class SunburstPlotDatumMutableBuilder[Self <: SunburstPlotDatum] (val x: Self) extends AnyVal {
+  extension [Self <: SunburstPlotDatum](x: Self) {
     
-    @scala.inline
-    def setColor(value: Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurveNumber(value: Double): Self = StObject.set(x, "curveNumber", value.asInstanceOf[js.Any])
+    inline def setCurveNumber(value: Double): Self = StObject.set(x, "curveNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntry(value: String): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
+    inline def setEntry(value: String): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullData(value: Data): Self = StObject.set(x, "fullData", value.asInstanceOf[js.Any])
+    inline def setFullData(value: Data): Self = StObject.set(x, "fullData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHovertext(value: String): Self = StObject.set(x, "hovertext", value.asInstanceOf[js.Any])
+    inline def setHovertext(value: String): Self = StObject.set(x, "hovertext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentEntry(value: Double): Self = StObject.set(x, "percentEntry", value.asInstanceOf[js.Any])
+    inline def setPercentEntry(value: Double): Self = StObject.set(x, "percentEntry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentParent(value: Double): Self = StObject.set(x, "percentParent", value.asInstanceOf[js.Any])
+    inline def setPercentParent(value: Double): Self = StObject.set(x, "percentParent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentRoot(value: Double): Self = StObject.set(x, "percentRoot", value.asInstanceOf[js.Any])
+    inline def setPercentRoot(value: Double): Self = StObject.set(x, "percentRoot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointNumber(value: Double): Self = StObject.set(x, "pointNumber", value.asInstanceOf[js.Any])
+    inline def setPointNumber(value: Double): Self = StObject.set(x, "pointNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

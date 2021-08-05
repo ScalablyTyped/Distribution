@@ -10,16 +10,13 @@ trait Replacementroom extends StObject {
 }
 object Replacementroom {
   
-  @scala.inline
-  def apply(replacement_room: String): Replacementroom = {
+  inline def apply(replacement_room: String): Replacementroom = {
     val __obj = js.Dynamic.literal(replacement_room = replacement_room.asInstanceOf[js.Any])
     __obj.asInstanceOf[Replacementroom]
   }
   
-  @scala.inline
-  implicit class ReplacementroomMutableBuilder[Self <: Replacementroom] (val x: Self) extends AnyVal {
+  extension [Self <: Replacementroom](x: Self) {
     
-    @scala.inline
-    def setReplacement_room(value: String): Self = StObject.set(x, "replacement_room", value.asInstanceOf[js.Any])
+    inline def setReplacement_room(value: String): Self = StObject.set(x, "replacement_room", value.asInstanceOf[js.Any])
   }
 }

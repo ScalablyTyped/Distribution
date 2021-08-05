@@ -18,19 +18,15 @@ trait SendTestEventNotificationRequest extends StObject {
 }
 object SendTestEventNotificationRequest {
   
-  @scala.inline
-  def apply(Notification: NotificationSpecification, TestEventType: EventType): SendTestEventNotificationRequest = {
+  inline def apply(Notification: NotificationSpecification, TestEventType: EventType): SendTestEventNotificationRequest = {
     val __obj = js.Dynamic.literal(Notification = Notification.asInstanceOf[js.Any], TestEventType = TestEventType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendTestEventNotificationRequest]
   }
   
-  @scala.inline
-  implicit class SendTestEventNotificationRequestMutableBuilder[Self <: SendTestEventNotificationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SendTestEventNotificationRequest](x: Self) {
     
-    @scala.inline
-    def setNotification(value: NotificationSpecification): Self = StObject.set(x, "Notification", value.asInstanceOf[js.Any])
+    inline def setNotification(value: NotificationSpecification): Self = StObject.set(x, "Notification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestEventType(value: EventType): Self = StObject.set(x, "TestEventType", value.asInstanceOf[js.Any])
+    inline def setTestEventType(value: EventType): Self = StObject.set(x, "TestEventType", value.asInstanceOf[js.Any])
   }
 }

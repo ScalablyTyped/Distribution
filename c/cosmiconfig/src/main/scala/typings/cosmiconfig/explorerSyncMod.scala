@@ -14,17 +14,17 @@ object explorerSyncMod {
   class ExplorerSync protected () extends ExplorerBase[ExplorerOptionsSync] {
     def this(options: ExplorerOptionsSync) = this()
     
-    var createCosmiconfigResultSync: js.Any = js.native
+    /* private */ var createCosmiconfigResultSync: js.Any = js.native
     
-    var loadFileContentSync: js.Any = js.native
+    /* private */ var loadFileContentSync: js.Any = js.native
     
-    var loadSearchPlaceSync: js.Any = js.native
+    /* private */ var loadSearchPlaceSync: js.Any = js.native
     
     def loadSync(filepath: String): CosmiconfigResult = js.native
     
-    var searchDirectorySync: js.Any = js.native
+    /* private */ var searchDirectorySync: js.Any = js.native
     
-    var searchFromDirectorySync: js.Any = js.native
+    /* private */ var searchFromDirectorySync: js.Any = js.native
     
     def searchSync(): CosmiconfigResult = js.native
     def searchSync(searchFrom: String): CosmiconfigResult = js.native

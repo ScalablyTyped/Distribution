@@ -13,16 +13,13 @@ trait DeletePlaybackKeyPairRequest extends StObject {
 }
 object DeletePlaybackKeyPairRequest {
   
-  @scala.inline
-  def apply(arn: PlaybackKeyPairArn): DeletePlaybackKeyPairRequest = {
+  inline def apply(arn: PlaybackKeyPairArn): DeletePlaybackKeyPairRequest = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeletePlaybackKeyPairRequest]
   }
   
-  @scala.inline
-  implicit class DeletePlaybackKeyPairRequestMutableBuilder[Self <: DeletePlaybackKeyPairRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeletePlaybackKeyPairRequest](x: Self) {
     
-    @scala.inline
-    def setArn(value: PlaybackKeyPairArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: PlaybackKeyPairArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
   }
 }

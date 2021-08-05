@@ -15,20 +15,16 @@ trait AnyCnameRecord
 }
 object AnyCnameRecord {
   
-  @scala.inline
-  def apply(value: String): AnyCnameRecord = {
+  inline def apply(value: String): AnyCnameRecord = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("CNAME")
     __obj.asInstanceOf[AnyCnameRecord]
   }
   
-  @scala.inline
-  implicit class AnyCnameRecordMutableBuilder[Self <: AnyCnameRecord] (val x: Self) extends AnyVal {
+  extension [Self <: AnyCnameRecord](x: Self) {
     
-    @scala.inline
-    def setType(value: CNAME): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: CNAME): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

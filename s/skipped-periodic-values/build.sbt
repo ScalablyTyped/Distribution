@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "skipped-periodic-values"
-version := "1.0-dt-20201013Z-da9ee8"
+version := "1.0-dt-20201013Z-234ab1"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

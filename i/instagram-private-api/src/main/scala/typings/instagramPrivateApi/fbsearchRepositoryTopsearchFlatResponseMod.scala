@@ -20,8 +20,7 @@ object fbsearchRepositoryTopsearchFlatResponseMod {
   }
   object FbsearchRepositoryTopsearchFlatResponseFriendshipStatus {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       following: Boolean,
       incoming_request: Boolean,
       is_bestie: Boolean,
@@ -32,23 +31,17 @@ object fbsearchRepositoryTopsearchFlatResponseMod {
       __obj.asInstanceOf[FbsearchRepositoryTopsearchFlatResponseFriendshipStatus]
     }
     
-    @scala.inline
-    implicit class FbsearchRepositoryTopsearchFlatResponseFriendshipStatusMutableBuilder[Self <: FbsearchRepositoryTopsearchFlatResponseFriendshipStatus] (val x: Self) extends AnyVal {
+    extension [Self <: FbsearchRepositoryTopsearchFlatResponseFriendshipStatus](x: Self) {
       
-      @scala.inline
-      def setFollowing(value: Boolean): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
+      inline def setFollowing(value: Boolean): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncoming_request(value: Boolean): Self = StObject.set(x, "incoming_request", value.asInstanceOf[js.Any])
+      inline def setIncoming_request(value: Boolean): Self = StObject.set(x, "incoming_request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_bestie(value: Boolean): Self = StObject.set(x, "is_bestie", value.asInstanceOf[js.Any])
+      inline def setIs_bestie(value: Boolean): Self = StObject.set(x, "is_bestie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
+      inline def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutgoing_request(value: Boolean): Self = StObject.set(x, "outgoing_request", value.asInstanceOf[js.Any])
+      inline def setOutgoing_request(value: Boolean): Self = StObject.set(x, "outgoing_request", value.asInstanceOf[js.Any])
     }
   }
   
@@ -66,8 +59,7 @@ object fbsearchRepositoryTopsearchFlatResponseMod {
   }
   object FbsearchRepositoryTopsearchFlatResponseHashtag {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       id: String,
       media_count: Double,
       name: String,
@@ -78,23 +70,17 @@ object fbsearchRepositoryTopsearchFlatResponseMod {
       __obj.asInstanceOf[FbsearchRepositoryTopsearchFlatResponseHashtag]
     }
     
-    @scala.inline
-    implicit class FbsearchRepositoryTopsearchFlatResponseHashtagMutableBuilder[Self <: FbsearchRepositoryTopsearchFlatResponseHashtag] (val x: Self) extends AnyVal {
+    extension [Self <: FbsearchRepositoryTopsearchFlatResponseHashtag](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMedia_count(value: Double): Self = StObject.set(x, "media_count", value.asInstanceOf[js.Any])
+      inline def setMedia_count(value: Double): Self = StObject.set(x, "media_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearch_result_subtitle(value: String): Self = StObject.set(x, "search_result_subtitle", value.asInstanceOf[js.Any])
+      inline def setSearch_result_subtitle(value: String): Self = StObject.set(x, "search_result_subtitle", value.asInstanceOf[js.Any])
     }
   }
   
@@ -112,35 +98,26 @@ object fbsearchRepositoryTopsearchFlatResponseMod {
   }
   object FbsearchRepositoryTopsearchFlatResponseListItem {
     
-    @scala.inline
-    def apply(position: Double): FbsearchRepositoryTopsearchFlatResponseListItem = {
+    inline def apply(position: Double): FbsearchRepositoryTopsearchFlatResponseListItem = {
       val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
       __obj.asInstanceOf[FbsearchRepositoryTopsearchFlatResponseListItem]
     }
     
-    @scala.inline
-    implicit class FbsearchRepositoryTopsearchFlatResponseListItemMutableBuilder[Self <: FbsearchRepositoryTopsearchFlatResponseListItem] (val x: Self) extends AnyVal {
+    extension [Self <: FbsearchRepositoryTopsearchFlatResponseListItem](x: Self) {
       
-      @scala.inline
-      def setHashtag(value: FbsearchRepositoryTopsearchFlatResponseHashtag): Self = StObject.set(x, "hashtag", value.asInstanceOf[js.Any])
+      inline def setHashtag(value: FbsearchRepositoryTopsearchFlatResponseHashtag): Self = StObject.set(x, "hashtag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashtagUndefined: Self = StObject.set(x, "hashtag", js.undefined)
+      inline def setHashtagUndefined: Self = StObject.set(x, "hashtag", js.undefined)
       
-      @scala.inline
-      def setPlace(value: FbsearchRepositoryTopsearchFlatResponsePlace): Self = StObject.set(x, "place", value.asInstanceOf[js.Any])
+      inline def setPlace(value: FbsearchRepositoryTopsearchFlatResponsePlace): Self = StObject.set(x, "place", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceUndefined: Self = StObject.set(x, "place", js.undefined)
+      inline def setPlaceUndefined: Self = StObject.set(x, "place", js.undefined)
       
-      @scala.inline
-      def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: FbsearchRepositoryTopsearchFlatResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: FbsearchRepositoryTopsearchFlatResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+      inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     }
   }
   
@@ -166,8 +143,7 @@ object fbsearchRepositoryTopsearchFlatResponseMod {
   }
   object FbsearchRepositoryTopsearchFlatResponseLocation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       address: String,
       city: String,
       external_source: String,
@@ -182,35 +158,25 @@ object fbsearchRepositoryTopsearchFlatResponseMod {
       __obj.asInstanceOf[FbsearchRepositoryTopsearchFlatResponseLocation]
     }
     
-    @scala.inline
-    implicit class FbsearchRepositoryTopsearchFlatResponseLocationMutableBuilder[Self <: FbsearchRepositoryTopsearchFlatResponseLocation] (val x: Self) extends AnyVal {
+    extension [Self <: FbsearchRepositoryTopsearchFlatResponseLocation](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+      inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternal_source(value: String): Self = StObject.set(x, "external_source", value.asInstanceOf[js.Any])
+      inline def setExternal_source(value: String): Self = StObject.set(x, "external_source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFacebook_places_id(value: Double): Self = StObject.set(x, "facebook_places_id", value.asInstanceOf[js.Any])
+      inline def setFacebook_places_id(value: Double): Self = StObject.set(x, "facebook_places_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
+      inline def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLng(value: Double): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
+      inline def setLng(value: Double): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+      inline def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShort_name(value: String): Self = StObject.set(x, "short_name", value.asInstanceOf[js.Any])
+      inline def setShort_name(value: String): Self = StObject.set(x, "short_name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -228,8 +194,7 @@ object fbsearchRepositoryTopsearchFlatResponseMod {
   }
   object FbsearchRepositoryTopsearchFlatResponsePlace {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       header_media: FbsearchRepositoryTopsearchFlatResponseHeaderMedia,
       location: FbsearchRepositoryTopsearchFlatResponseLocation,
       media_bundles: js.Array[js.Any],
@@ -240,26 +205,19 @@ object fbsearchRepositoryTopsearchFlatResponseMod {
       __obj.asInstanceOf[FbsearchRepositoryTopsearchFlatResponsePlace]
     }
     
-    @scala.inline
-    implicit class FbsearchRepositoryTopsearchFlatResponsePlaceMutableBuilder[Self <: FbsearchRepositoryTopsearchFlatResponsePlace] (val x: Self) extends AnyVal {
+    extension [Self <: FbsearchRepositoryTopsearchFlatResponsePlace](x: Self) {
       
-      @scala.inline
-      def setHeader_media(value: FbsearchRepositoryTopsearchFlatResponseHeaderMedia): Self = StObject.set(x, "header_media", value.asInstanceOf[js.Any])
+      inline def setHeader_media(value: FbsearchRepositoryTopsearchFlatResponseHeaderMedia): Self = StObject.set(x, "header_media", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: FbsearchRepositoryTopsearchFlatResponseLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: FbsearchRepositoryTopsearchFlatResponseLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMedia_bundles(value: js.Array[js.Any]): Self = StObject.set(x, "media_bundles", value.asInstanceOf[js.Any])
+      inline def setMedia_bundles(value: js.Array[js.Any]): Self = StObject.set(x, "media_bundles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMedia_bundlesVarargs(value: js.Any*): Self = StObject.set(x, "media_bundles", js.Array(value :_*))
+      inline def setMedia_bundlesVarargs(value: js.Any*): Self = StObject.set(x, "media_bundles", js.Array(value :_*))
       
-      @scala.inline
-      def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+      inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -277,8 +235,7 @@ object fbsearchRepositoryTopsearchFlatResponseMod {
   }
   object FbsearchRepositoryTopsearchFlatResponseRootObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clear_client_cache: Boolean,
       has_more: Boolean,
       list: js.Array[FbsearchRepositoryTopsearchFlatResponseListItem],
@@ -289,26 +246,19 @@ object fbsearchRepositoryTopsearchFlatResponseMod {
       __obj.asInstanceOf[FbsearchRepositoryTopsearchFlatResponseRootObject]
     }
     
-    @scala.inline
-    implicit class FbsearchRepositoryTopsearchFlatResponseRootObjectMutableBuilder[Self <: FbsearchRepositoryTopsearchFlatResponseRootObject] (val x: Self) extends AnyVal {
+    extension [Self <: FbsearchRepositoryTopsearchFlatResponseRootObject](x: Self) {
       
-      @scala.inline
-      def setClear_client_cache(value: Boolean): Self = StObject.set(x, "clear_client_cache", value.asInstanceOf[js.Any])
+      inline def setClear_client_cache(value: Boolean): Self = StObject.set(x, "clear_client_cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_more(value: Boolean): Self = StObject.set(x, "has_more", value.asInstanceOf[js.Any])
+      inline def setHas_more(value: Boolean): Self = StObject.set(x, "has_more", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setList(value: js.Array[FbsearchRepositoryTopsearchFlatResponseListItem]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+      inline def setList(value: js.Array[FbsearchRepositoryTopsearchFlatResponseListItem]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListVarargs(value: FbsearchRepositoryTopsearchFlatResponseListItem*): Self = StObject.set(x, "list", js.Array(value :_*))
+      inline def setListVarargs(value: FbsearchRepositoryTopsearchFlatResponseListItem*): Self = StObject.set(x, "list", js.Array(value :_*))
       
-      @scala.inline
-      def setRank_token(value: String): Self = StObject.set(x, "rank_token", value.asInstanceOf[js.Any])
+      inline def setRank_token(value: String): Self = StObject.set(x, "rank_token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -346,8 +296,7 @@ object fbsearchRepositoryTopsearchFlatResponseMod {
   }
   object FbsearchRepositoryTopsearchFlatResponseUser {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       byline: String,
       follower_count: Double,
       friendship_status: FbsearchRepositoryTopsearchFlatResponseFriendshipStatus,
@@ -364,65 +313,45 @@ object fbsearchRepositoryTopsearchFlatResponseMod {
       __obj.asInstanceOf[FbsearchRepositoryTopsearchFlatResponseUser]
     }
     
-    @scala.inline
-    implicit class FbsearchRepositoryTopsearchFlatResponseUserMutableBuilder[Self <: FbsearchRepositoryTopsearchFlatResponseUser] (val x: Self) extends AnyVal {
+    extension [Self <: FbsearchRepositoryTopsearchFlatResponseUser](x: Self) {
       
-      @scala.inline
-      def setByline(value: String): Self = StObject.set(x, "byline", value.asInstanceOf[js.Any])
+      inline def setByline(value: String): Self = StObject.set(x, "byline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollower_count(value: Double): Self = StObject.set(x, "follower_count", value.asInstanceOf[js.Any])
+      inline def setFollower_count(value: Double): Self = StObject.set(x, "follower_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFriendship_status(value: FbsearchRepositoryTopsearchFlatResponseFriendshipStatus): Self = StObject.set(x, "friendship_status", value.asInstanceOf[js.Any])
+      inline def setFriendship_status(value: FbsearchRepositoryTopsearchFlatResponseFriendshipStatus): Self = StObject.set(x, "friendship_status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
+      inline def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_anonymous_profile_picture(value: Boolean): Self = StObject.set(x, "has_anonymous_profile_picture", value.asInstanceOf[js.Any])
+      inline def setHas_anonymous_profile_picture(value: Boolean): Self = StObject.set(x, "has_anonymous_profile_picture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
+      inline def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
+      inline def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatest_reel_media(value: Double): Self = StObject.set(x, "latest_reel_media", value.asInstanceOf[js.Any])
+      inline def setLatest_reel_media(value: Double): Self = StObject.set(x, "latest_reel_media", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatest_reel_mediaUndefined: Self = StObject.set(x, "latest_reel_media", js.undefined)
+      inline def setLatest_reel_mediaUndefined: Self = StObject.set(x, "latest_reel_media", js.undefined)
       
-      @scala.inline
-      def setMutual_followers_count(value: Double): Self = StObject.set(x, "mutual_followers_count", value.asInstanceOf[js.Any])
+      inline def setMutual_followers_count(value: Double): Self = StObject.set(x, "mutual_followers_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+      inline def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_idUndefined: Self = StObject.set(x, "profile_pic_id", js.undefined)
+      inline def setProfile_pic_idUndefined: Self = StObject.set(x, "profile_pic_id", js.undefined)
       
-      @scala.inline
-      def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearch_social_context(value: String): Self = StObject.set(x, "search_social_context", value.asInstanceOf[js.Any])
+      inline def setSearch_social_context(value: String): Self = StObject.set(x, "search_social_context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearch_social_contextUndefined: Self = StObject.set(x, "search_social_context", js.undefined)
+      inline def setSearch_social_contextUndefined: Self = StObject.set(x, "search_social_context", js.undefined)
       
-      @scala.inline
-      def setSocial_context(value: String): Self = StObject.set(x, "social_context", value.asInstanceOf[js.Any])
+      inline def setSocial_context(value: String): Self = StObject.set(x, "social_context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocial_contextUndefined: Self = StObject.set(x, "social_context", js.undefined)
+      inline def setSocial_contextUndefined: Self = StObject.set(x, "social_context", js.undefined)
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
 }

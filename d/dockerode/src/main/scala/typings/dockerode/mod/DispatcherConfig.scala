@@ -10,19 +10,15 @@ trait DispatcherConfig extends StObject {
 }
 object DispatcherConfig {
   
-  @scala.inline
-  def apply(): DispatcherConfig = {
+  inline def apply(): DispatcherConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DispatcherConfig]
   }
   
-  @scala.inline
-  implicit class DispatcherConfigMutableBuilder[Self <: DispatcherConfig] (val x: Self) extends AnyVal {
+  extension [Self <: DispatcherConfig](x: Self) {
     
-    @scala.inline
-    def setHeartbeatPeriod(value: Duration): Self = StObject.set(x, "HeartbeatPeriod", value.asInstanceOf[js.Any])
+    inline def setHeartbeatPeriod(value: Duration): Self = StObject.set(x, "HeartbeatPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeartbeatPeriodUndefined: Self = StObject.set(x, "HeartbeatPeriod", js.undefined)
+    inline def setHeartbeatPeriodUndefined: Self = StObject.set(x, "HeartbeatPeriod", js.undefined)
   }
 }

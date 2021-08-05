@@ -13,19 +13,15 @@ trait DisableVpcClassicLinkDnsSupportResult extends StObject {
 }
 object DisableVpcClassicLinkDnsSupportResult {
   
-  @scala.inline
-  def apply(): DisableVpcClassicLinkDnsSupportResult = {
+  inline def apply(): DisableVpcClassicLinkDnsSupportResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisableVpcClassicLinkDnsSupportResult]
   }
   
-  @scala.inline
-  implicit class DisableVpcClassicLinkDnsSupportResultMutableBuilder[Self <: DisableVpcClassicLinkDnsSupportResult] (val x: Self) extends AnyVal {
+  extension [Self <: DisableVpcClassicLinkDnsSupportResult](x: Self) {
     
-    @scala.inline
-    def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
+    inline def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnUndefined: Self = StObject.set(x, "Return", js.undefined)
+    inline def setReturnUndefined: Self = StObject.set(x, "Return", js.undefined)
   }
 }

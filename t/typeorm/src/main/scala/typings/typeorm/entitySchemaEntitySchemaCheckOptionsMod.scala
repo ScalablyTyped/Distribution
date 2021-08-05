@@ -20,23 +20,18 @@ object entitySchemaEntitySchemaCheckOptionsMod {
   }
   object EntitySchemaCheckOptions {
     
-    @scala.inline
-    def apply(expression: String): EntitySchemaCheckOptions = {
+    inline def apply(expression: String): EntitySchemaCheckOptions = {
       val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
       __obj.asInstanceOf[EntitySchemaCheckOptions]
     }
     
-    @scala.inline
-    implicit class EntitySchemaCheckOptionsMutableBuilder[Self <: EntitySchemaCheckOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EntitySchemaCheckOptions](x: Self) {
       
-      @scala.inline
-      def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+      inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
 }

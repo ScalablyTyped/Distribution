@@ -7,14 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait _PositionResult extends StObject
 object _PositionResult {
   
-  @scala.inline
-  def Behavior(selector: String): typings.vueRouter.anon.Behavior = {
+  inline def Behavior(selector: String): typings.vueRouter.anon.Behavior = {
     val __obj = js.Dynamic.literal(selector = selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.vueRouter.anon.Behavior]
   }
   
-  @scala.inline
-  def Position(x: Double, y: Double): typings.vueRouter.routerMod.Position = {
+  inline def Position(x: Double, y: Double): typings.vueRouter.routerMod.Position = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.vueRouter.routerMod.Position]
   }

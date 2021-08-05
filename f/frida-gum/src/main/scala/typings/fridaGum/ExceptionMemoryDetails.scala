@@ -18,19 +18,15 @@ trait ExceptionMemoryDetails extends StObject {
 }
 object ExceptionMemoryDetails {
   
-  @scala.inline
-  def apply(address: NativePointer, operation: MemoryOperation): ExceptionMemoryDetails = {
+  inline def apply(address: NativePointer, operation: MemoryOperation): ExceptionMemoryDetails = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExceptionMemoryDetails]
   }
   
-  @scala.inline
-  implicit class ExceptionMemoryDetailsMutableBuilder[Self <: ExceptionMemoryDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ExceptionMemoryDetails](x: Self) {
     
-    @scala.inline
-    def setAddress(value: NativePointer): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: NativePointer): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperation(value: MemoryOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: MemoryOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
   }
 }

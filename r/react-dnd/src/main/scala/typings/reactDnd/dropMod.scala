@@ -15,13 +15,11 @@ object dropMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useDropHandler[DragObject /* <: DragObjectWithType */, DropResult, CustomProps](
+  inline def useDropHandler[DragObject /* <: DragObjectWithType */, DropResult, CustomProps](
     spec: MutableRefObject[DropTargetHookSpec[DragObject, DropResult, CustomProps]],
     monitor: DropTargetMonitor,
     connector: js.Any
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useDropHandler")(spec.asInstanceOf[js.Any], monitor.asInstanceOf[js.Any], connector.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def useDropTargetMonitor(): js.Tuple2[DropTargetMonitor, TargetConnector] = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropTargetMonitor")().asInstanceOf[js.Tuple2[DropTargetMonitor, TargetConnector]]
+  inline def useDropTargetMonitor(): js.Tuple2[DropTargetMonitor, TargetConnector] = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropTargetMonitor")().asInstanceOf[js.Tuple2[DropTargetMonitor, TargetConnector]]
 }

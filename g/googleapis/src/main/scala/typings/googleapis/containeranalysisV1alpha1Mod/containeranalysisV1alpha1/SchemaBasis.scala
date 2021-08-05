@@ -25,25 +25,19 @@ trait SchemaBasis extends StObject {
 }
 object SchemaBasis {
   
-  @scala.inline
-  def apply(): SchemaBasis = {
+  inline def apply(): SchemaBasis = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBasis]
   }
   
-  @scala.inline
-  implicit class SchemaBasisMutableBuilder[Self <: SchemaBasis] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBasis](x: Self) {
     
-    @scala.inline
-    def setFingerprint(value: SchemaFingerprint): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+    inline def setFingerprint(value: SchemaFingerprint): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
+    inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
     
-    @scala.inline
-    def setResourceUrl(value: String): Self = StObject.set(x, "resourceUrl", value.asInstanceOf[js.Any])
+    inline def setResourceUrl(value: String): Self = StObject.set(x, "resourceUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUrlUndefined: Self = StObject.set(x, "resourceUrl", js.undefined)
+    inline def setResourceUrlUndefined: Self = StObject.set(x, "resourceUrl", js.undefined)
   }
 }

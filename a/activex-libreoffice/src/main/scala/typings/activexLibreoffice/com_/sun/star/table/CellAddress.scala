@@ -18,22 +18,17 @@ trait CellAddress extends StObject {
 }
 object CellAddress {
   
-  @scala.inline
-  def apply(Column: Double, Row: Double, Sheet: Double): CellAddress = {
+  inline def apply(Column: Double, Row: Double, Sheet: Double): CellAddress = {
     val __obj = js.Dynamic.literal(Column = Column.asInstanceOf[js.Any], Row = Row.asInstanceOf[js.Any], Sheet = Sheet.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellAddress]
   }
   
-  @scala.inline
-  implicit class CellAddressMutableBuilder[Self <: CellAddress] (val x: Self) extends AnyVal {
+  extension [Self <: CellAddress](x: Self) {
     
-    @scala.inline
-    def setColumn(value: Double): Self = StObject.set(x, "Column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: Double): Self = StObject.set(x, "Column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRow(value: Double): Self = StObject.set(x, "Row", value.asInstanceOf[js.Any])
+    inline def setRow(value: Double): Self = StObject.set(x, "Row", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheet(value: Double): Self = StObject.set(x, "Sheet", value.asInstanceOf[js.Any])
+    inline def setSheet(value: Double): Self = StObject.set(x, "Sheet", value.asInstanceOf[js.Any])
   }
 }

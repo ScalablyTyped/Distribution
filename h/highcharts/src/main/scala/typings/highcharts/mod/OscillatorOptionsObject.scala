@@ -14,19 +14,15 @@ trait OscillatorOptionsObject extends StObject {
 }
 object OscillatorOptionsObject {
   
-  @scala.inline
-  def apply(): OscillatorOptionsObject = {
+  inline def apply(): OscillatorOptionsObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OscillatorOptionsObject]
   }
   
-  @scala.inline
-  implicit class OscillatorOptionsObjectMutableBuilder[Self <: OscillatorOptionsObject] (val x: Self) extends AnyVal {
+  extension [Self <: OscillatorOptionsObject](x: Self) {
     
-    @scala.inline
-    def setWaveformShape(value: String): Self = StObject.set(x, "waveformShape", value.asInstanceOf[js.Any])
+    inline def setWaveformShape(value: String): Self = StObject.set(x, "waveformShape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaveformShapeUndefined: Self = StObject.set(x, "waveformShape", js.undefined)
+    inline def setWaveformShapeUndefined: Self = StObject.set(x, "waveformShape", js.undefined)
   }
 }

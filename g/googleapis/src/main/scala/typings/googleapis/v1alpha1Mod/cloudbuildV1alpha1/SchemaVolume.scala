@@ -26,25 +26,19 @@ trait SchemaVolume extends StObject {
 }
 object SchemaVolume {
   
-  @scala.inline
-  def apply(): SchemaVolume = {
+  inline def apply(): SchemaVolume = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaVolume]
   }
   
-  @scala.inline
-  implicit class SchemaVolumeMutableBuilder[Self <: SchemaVolume] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaVolume](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
   }
 }

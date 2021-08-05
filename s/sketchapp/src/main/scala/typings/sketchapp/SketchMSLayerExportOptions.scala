@@ -19,8 +19,7 @@ trait SketchMSLayerExportOptions extends StObject {
 }
 object SketchMSLayerExportOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     exportFormats: js.Array[js.Any],
     includedLayerIds: js.Array[js.Any],
     layerOptions: Double,
@@ -30,28 +29,20 @@ object SketchMSLayerExportOptions {
     __obj.asInstanceOf[SketchMSLayerExportOptions]
   }
   
-  @scala.inline
-  implicit class SketchMSLayerExportOptionsMutableBuilder[Self <: SketchMSLayerExportOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SketchMSLayerExportOptions](x: Self) {
     
-    @scala.inline
-    def setExportFormats(value: js.Array[js.Any]): Self = StObject.set(x, "exportFormats", value.asInstanceOf[js.Any])
+    inline def setExportFormats(value: js.Array[js.Any]): Self = StObject.set(x, "exportFormats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportFormatsVarargs(value: js.Any*): Self = StObject.set(x, "exportFormats", js.Array(value :_*))
+    inline def setExportFormatsVarargs(value: js.Any*): Self = StObject.set(x, "exportFormats", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludedLayerIds(value: js.Array[js.Any]): Self = StObject.set(x, "includedLayerIds", value.asInstanceOf[js.Any])
+    inline def setIncludedLayerIds(value: js.Array[js.Any]): Self = StObject.set(x, "includedLayerIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludedLayerIdsVarargs(value: js.Any*): Self = StObject.set(x, "includedLayerIds", js.Array(value :_*))
+    inline def setIncludedLayerIdsVarargs(value: js.Any*): Self = StObject.set(x, "includedLayerIds", js.Array(value :_*))
     
-    @scala.inline
-    def setLayerOptions(value: Double): Self = StObject.set(x, "layerOptions", value.asInstanceOf[js.Any])
+    inline def setLayerOptions(value: Double): Self = StObject.set(x, "layerOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShouldTrim(value: Boolean): Self = StObject.set(x, "shouldTrim", value.asInstanceOf[js.Any])
+    inline def setShouldTrim(value: Boolean): Self = StObject.set(x, "shouldTrim", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_class(value: exportOptions): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
+    inline def set_class(value: exportOptions): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

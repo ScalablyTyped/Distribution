@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HTMLStyleSheetRule extends StObject {
   
-  @JSName("MSHTML.HTMLStyleSheetRule_typekey")
+  /* private */ @JSName("MSHTML.HTMLStyleSheetRule_typekey")
   var MSHTMLDotHTMLStyleSheetRule_typekey: HTMLStyleSheetRule
   
   val constructor: js.Any
@@ -31,8 +31,7 @@ trait HTMLStyleSheetRule extends StObject {
 }
 object HTMLStyleSheetRule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotHTMLStyleSheetRule_typekey: HTMLStyleSheetRule,
     constructor: js.Any,
     cssText: String,
@@ -51,40 +50,28 @@ object HTMLStyleSheetRule {
     __obj.asInstanceOf[HTMLStyleSheetRule]
   }
   
-  @scala.inline
-  implicit class HTMLStyleSheetRuleMutableBuilder[Self <: HTMLStyleSheetRule] (val x: Self) extends AnyVal {
+  extension [Self <: HTMLStyleSheetRule](x: Self) {
     
-    @scala.inline
-    def setConstructor(value: js.Any): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
+    inline def setConstructor(value: js.Any): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssText(value: String): Self = StObject.set(x, "cssText", value.asInstanceOf[js.Any])
+    inline def setCssText(value: String): Self = StObject.set(x, "cssText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIe9_selectorText(value: String): Self = StObject.set(x, "ie9_selectorText", value.asInstanceOf[js.Any])
+    inline def setIe9_selectorText(value: String): Self = StObject.set(x, "ie9_selectorText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotHTMLStyleSheetRule_typekey(value: HTMLStyleSheetRule): Self = StObject.set(x, "MSHTML.HTMLStyleSheetRule_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotHTMLStyleSheetRule_typekey(value: HTMLStyleSheetRule): Self = StObject.set(x, "MSHTML.HTMLStyleSheetRule_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsGetSpecificity(value: Double => Double): Self = StObject.set(x, "msGetSpecificity", js.Any.fromFunction1(value))
+    inline def setMsGetSpecificity(value: Double => Double): Self = StObject.set(x, "msGetSpecificity", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParentRule(value: IHTMLCSSRule): Self = StObject.set(x, "parentRule", value.asInstanceOf[js.Any])
+    inline def setParentRule(value: IHTMLCSSRule): Self = StObject.set(x, "parentRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentStyleSheet(value: IHTMLStyleSheet): Self = StObject.set(x, "parentStyleSheet", value.asInstanceOf[js.Any])
+    inline def setParentStyleSheet(value: IHTMLStyleSheet): Self = StObject.set(x, "parentStyleSheet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorText(value: String): Self = StObject.set(x, "selectorText", value.asInstanceOf[js.Any])
+    inline def setSelectorText(value: String): Self = StObject.set(x, "selectorText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: IHTMLRuleStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: IHTMLRuleStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

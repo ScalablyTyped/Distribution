@@ -23,31 +23,23 @@ trait SchemaGeneratedEventUIParam extends StObject {
 }
 object SchemaGeneratedEventUIParam {
   
-  @scala.inline
-  def apply(): SchemaGeneratedEventUIParam = {
+  inline def apply(): SchemaGeneratedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGeneratedEventUIParam]
   }
   
-  @scala.inline
-  implicit class SchemaGeneratedEventUIParamMutableBuilder[Self <: SchemaGeneratedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGeneratedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setSchema(value: js.Any): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: js.Any): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+    inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
   }
 }

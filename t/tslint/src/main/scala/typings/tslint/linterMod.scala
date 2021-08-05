@@ -20,34 +20,34 @@ object linterMod {
     def this(options: ILinterOptions) = this()
     def this(options: ILinterOptions, program: Program) = this()
     
-    var applyAllFixes: js.Any = js.native
+    /* private */ var applyAllFixes: js.Any = js.native
     
     /* protected */ def applyFixes(sourceFilePath: String, source: String, fixableFailures: js.Array[RuleFailure]): String = js.native
     
-    var applyRule: js.Any = js.native
+    /* private */ var applyRule: js.Any = js.native
     
-    var failures: js.Any = js.native
+    /* private */ var failures: js.Any = js.native
     
-    val fileNames: js.Any = js.native
+    /* private */ val fileNames: js.Any = js.native
     
-    var fixes: js.Any = js.native
+    /* private */ var fixes: js.Any = js.native
     
-    var getAllFailures: js.Any = js.native
+    /* private */ var getAllFailures: js.Any = js.native
     
-    var getEnabledRules: js.Any = js.native
+    /* private */ var getEnabledRules: js.Any = js.native
     
     def getResult(): LintResult = js.native
     
-    var getSourceFile: js.Any = js.native
+    /* private */ var getSourceFile: js.Any = js.native
     
     def lint(fileName: String, source: String): Unit = js.native
     def lint(fileName: String, source: String, configuration: IConfigurationFile): Unit = js.native
     
-    val options: js.Any = js.native
+    /* private */ val options: js.Any = js.native
     
-    var program: js.Any = js.native
+    /* private */ var program: js.Any = js.native
     
-    var updateProgram: js.Any = js.native
+    /* private */ var updateProgram: js.Any = js.native
   }
   /* static members */
   object Linter {
@@ -59,62 +59,44 @@ object linterMod {
     @JSImport("tslint/lib/linter", "Linter.VERSION")
     @js.native
     def VERSION: String = js.native
-    @scala.inline
-    def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
+    inline def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
     
     /**
       * Creates a TypeScript program object from a tsconfig.json file path and optional project directory.
       */
-    @scala.inline
-    def createProgram(configFile: String): Program = ^.asInstanceOf[js.Dynamic].applyDynamic("createProgram")(configFile.asInstanceOf[js.Any]).asInstanceOf[Program]
-    @scala.inline
-    def createProgram(configFile: String, projectDirectory: String): Program = (^.asInstanceOf[js.Dynamic].applyDynamic("createProgram")(configFile.asInstanceOf[js.Any], projectDirectory.asInstanceOf[js.Any])).asInstanceOf[Program]
+    inline def createProgram(configFile: String): Program = ^.asInstanceOf[js.Dynamic].applyDynamic("createProgram")(configFile.asInstanceOf[js.Any]).asInstanceOf[Program]
+    inline def createProgram(configFile: String, projectDirectory: String): Program = (^.asInstanceOf[js.Dynamic].applyDynamic("createProgram")(configFile.asInstanceOf[js.Any], projectDirectory.asInstanceOf[js.Any])).asInstanceOf[Program]
     
     @JSImport("tslint/lib/linter", "Linter.findConfiguration")
     @js.native
     def findConfiguration: FnCall = js.native
-    @scala.inline
-    def findConfiguration(configFile: String): IConfigurationLoadResult = ^.asInstanceOf[js.Dynamic].applyDynamic("findConfiguration")(configFile.asInstanceOf[js.Any]).asInstanceOf[IConfigurationLoadResult]
-    @scala.inline
-    def findConfiguration(configFile: String, inputFilePath: String): IConfigurationLoadResult = (^.asInstanceOf[js.Dynamic].applyDynamic("findConfiguration")(configFile.asInstanceOf[js.Any], inputFilePath.asInstanceOf[js.Any])).asInstanceOf[IConfigurationLoadResult]
-    @scala.inline
-    def findConfiguration(configFile: Null, inputFilePath: String): IConfigurationLoadResult = (^.asInstanceOf[js.Dynamic].applyDynamic("findConfiguration")(configFile.asInstanceOf[js.Any], inputFilePath.asInstanceOf[js.Any])).asInstanceOf[IConfigurationLoadResult]
+    inline def findConfiguration(configFile: String): IConfigurationLoadResult = ^.asInstanceOf[js.Dynamic].applyDynamic("findConfiguration")(configFile.asInstanceOf[js.Any]).asInstanceOf[IConfigurationLoadResult]
+    inline def findConfiguration(configFile: String, inputFilePath: String): IConfigurationLoadResult = (^.asInstanceOf[js.Dynamic].applyDynamic("findConfiguration")(configFile.asInstanceOf[js.Any], inputFilePath.asInstanceOf[js.Any])).asInstanceOf[IConfigurationLoadResult]
+    inline def findConfiguration(configFile: Null, inputFilePath: String): IConfigurationLoadResult = (^.asInstanceOf[js.Dynamic].applyDynamic("findConfiguration")(configFile.asInstanceOf[js.Any], inputFilePath.asInstanceOf[js.Any])).asInstanceOf[IConfigurationLoadResult]
     
     @JSImport("tslint/lib/linter", "Linter.findConfigurationPath")
     @js.native
     def findConfigurationPath: FnCallSuppliedConfigFilePathInputFilePath = js.native
-    @scala.inline
-    def findConfigurationPath(suppliedConfigFilePath: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("findConfigurationPath")(suppliedConfigFilePath.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
-    @scala.inline
-    def findConfigurationPath(suppliedConfigFilePath: String, inputFilePath: String): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("findConfigurationPath")(suppliedConfigFilePath.asInstanceOf[js.Any], inputFilePath.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
-    @scala.inline
-    def findConfigurationPath(suppliedConfigFilePath: Null, inputFilePath: String): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("findConfigurationPath")(suppliedConfigFilePath.asInstanceOf[js.Any], inputFilePath.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
-    @scala.inline
-    def findConfigurationPath_=(x: FnCallSuppliedConfigFilePathInputFilePath): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findConfigurationPath")(x.asInstanceOf[js.Any])
+    inline def findConfigurationPath(suppliedConfigFilePath: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("findConfigurationPath")(suppliedConfigFilePath.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+    inline def findConfigurationPath(suppliedConfigFilePath: String, inputFilePath: String): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("findConfigurationPath")(suppliedConfigFilePath.asInstanceOf[js.Any], inputFilePath.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+    inline def findConfigurationPath(suppliedConfigFilePath: Null, inputFilePath: String): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("findConfigurationPath")(suppliedConfigFilePath.asInstanceOf[js.Any], inputFilePath.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+    inline def findConfigurationPath_=(x: FnCallSuppliedConfigFilePathInputFilePath): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findConfigurationPath")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def findConfiguration_=(x: FnCall): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findConfiguration")(x.asInstanceOf[js.Any])
+    inline def findConfiguration_=(x: FnCall): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findConfiguration")(x.asInstanceOf[js.Any])
     
     /**
       * Returns a list of source file names from a TypeScript program. This includes all referenced
       * files and excludes declaration (".d.ts") files, as well as JSON files, to avoid problems with
       * `resolveJsonModule`.
       */
-    @scala.inline
-    def getFileNames(program: Program): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFileNames")(program.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def getFileNames(program: Program): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFileNames")(program.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
-    @scala.inline
-    def getRulesDirectories(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRulesDirectories")().asInstanceOf[js.Array[String]]
-    @scala.inline
-    def getRulesDirectories(directories: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRulesDirectories")(directories.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-    @scala.inline
-    def getRulesDirectories(directories: String, relativeTo: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRulesDirectories")(directories.asInstanceOf[js.Any], relativeTo.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-    @scala.inline
-    def getRulesDirectories(directories: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRulesDirectories")(directories.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-    @scala.inline
-    def getRulesDirectories(directories: js.Array[String], relativeTo: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRulesDirectories")(directories.asInstanceOf[js.Any], relativeTo.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-    @scala.inline
-    def getRulesDirectories(directories: Unit, relativeTo: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRulesDirectories")(directories.asInstanceOf[js.Any], relativeTo.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def getRulesDirectories(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRulesDirectories")().asInstanceOf[js.Array[String]]
+    inline def getRulesDirectories(directories: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRulesDirectories")(directories.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def getRulesDirectories(directories: String, relativeTo: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRulesDirectories")(directories.asInstanceOf[js.Any], relativeTo.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def getRulesDirectories(directories: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRulesDirectories")(directories.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def getRulesDirectories(directories: js.Array[String], relativeTo: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRulesDirectories")(directories.asInstanceOf[js.Any], relativeTo.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def getRulesDirectories(directories: Unit, relativeTo: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRulesDirectories")(directories.asInstanceOf[js.Any], relativeTo.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     @JSImport("tslint/lib/linter", "Linter.getRulesDirectories")
     @js.native
     def getRulesDirectories_FLinter: js.Function2[
@@ -123,8 +105,7 @@ object linterMod {
         js.Array[String]
       ] = js.native
     
-    @scala.inline
-    def getRulesDirectories_FLinter_=(
+    inline def getRulesDirectories_FLinter_=(
       x: js.Function2[
           /* directories */ js.UndefOr[String | js.Array[String]], 
           /* relativeTo */ js.UndefOr[String], 
@@ -132,14 +113,10 @@ object linterMod {
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getRulesDirectories")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def loadConfigurationFromPath(): IConfigurationFile = ^.asInstanceOf[js.Dynamic].applyDynamic("loadConfigurationFromPath")().asInstanceOf[IConfigurationFile]
-    @scala.inline
-    def loadConfigurationFromPath(configFilePath: String): IConfigurationFile = ^.asInstanceOf[js.Dynamic].applyDynamic("loadConfigurationFromPath")(configFilePath.asInstanceOf[js.Any]).asInstanceOf[IConfigurationFile]
-    @scala.inline
-    def loadConfigurationFromPath(configFilePath: String, _originalFilePath: String): IConfigurationFile = (^.asInstanceOf[js.Dynamic].applyDynamic("loadConfigurationFromPath")(configFilePath.asInstanceOf[js.Any], _originalFilePath.asInstanceOf[js.Any])).asInstanceOf[IConfigurationFile]
-    @scala.inline
-    def loadConfigurationFromPath(configFilePath: Unit, _originalFilePath: String): IConfigurationFile = (^.asInstanceOf[js.Dynamic].applyDynamic("loadConfigurationFromPath")(configFilePath.asInstanceOf[js.Any], _originalFilePath.asInstanceOf[js.Any])).asInstanceOf[IConfigurationFile]
+    inline def loadConfigurationFromPath(): IConfigurationFile = ^.asInstanceOf[js.Dynamic].applyDynamic("loadConfigurationFromPath")().asInstanceOf[IConfigurationFile]
+    inline def loadConfigurationFromPath(configFilePath: String): IConfigurationFile = ^.asInstanceOf[js.Dynamic].applyDynamic("loadConfigurationFromPath")(configFilePath.asInstanceOf[js.Any]).asInstanceOf[IConfigurationFile]
+    inline def loadConfigurationFromPath(configFilePath: String, _originalFilePath: String): IConfigurationFile = (^.asInstanceOf[js.Dynamic].applyDynamic("loadConfigurationFromPath")(configFilePath.asInstanceOf[js.Any], _originalFilePath.asInstanceOf[js.Any])).asInstanceOf[IConfigurationFile]
+    inline def loadConfigurationFromPath(configFilePath: Unit, _originalFilePath: String): IConfigurationFile = (^.asInstanceOf[js.Dynamic].applyDynamic("loadConfigurationFromPath")(configFilePath.asInstanceOf[js.Any], _originalFilePath.asInstanceOf[js.Any])).asInstanceOf[IConfigurationFile]
     @JSImport("tslint/lib/linter", "Linter.loadConfigurationFromPath")
     @js.native
     def loadConfigurationFromPath_FLinter: js.Function2[
@@ -148,8 +125,7 @@ object linterMod {
         IConfigurationFile
       ] = js.native
     
-    @scala.inline
-    def loadConfigurationFromPath_FLinter_=(
+    inline def loadConfigurationFromPath_FLinter_=(
       x: js.Function2[
           /* configFilePath */ js.UndefOr[String], 
           /* _originalFilePath */ js.UndefOr[String], 

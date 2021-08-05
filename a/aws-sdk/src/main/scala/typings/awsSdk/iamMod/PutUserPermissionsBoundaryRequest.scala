@@ -18,19 +18,15 @@ trait PutUserPermissionsBoundaryRequest extends StObject {
 }
 object PutUserPermissionsBoundaryRequest {
   
-  @scala.inline
-  def apply(PermissionsBoundary: arnType, UserName: userNameType): PutUserPermissionsBoundaryRequest = {
+  inline def apply(PermissionsBoundary: arnType, UserName: userNameType): PutUserPermissionsBoundaryRequest = {
     val __obj = js.Dynamic.literal(PermissionsBoundary = PermissionsBoundary.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutUserPermissionsBoundaryRequest]
   }
   
-  @scala.inline
-  implicit class PutUserPermissionsBoundaryRequestMutableBuilder[Self <: PutUserPermissionsBoundaryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutUserPermissionsBoundaryRequest](x: Self) {
     
-    @scala.inline
-    def setPermissionsBoundary(value: arnType): Self = StObject.set(x, "PermissionsBoundary", value.asInstanceOf[js.Any])
+    inline def setPermissionsBoundary(value: arnType): Self = StObject.set(x, "PermissionsBoundary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserName(value: userNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: userNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

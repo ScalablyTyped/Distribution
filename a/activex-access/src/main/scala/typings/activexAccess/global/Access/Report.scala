@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.Report")
 @js.native
-class Report protected ()
+/* private */ class Report ()
   extends StObject
      with typings.activexAccess.Access.Report

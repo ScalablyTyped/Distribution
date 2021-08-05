@@ -23,25 +23,19 @@ trait OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceRefundOption extend
 }
 object OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceRefundOption {
   
-  @scala.inline
-  def apply(): OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceRefundOption = {
+  inline def apply(): OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceRefundOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceRefundOption]
   }
   
-  @scala.inline
-  implicit class OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceRefundOptionMutableBuilder[Self <: OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceRefundOption] (val x: Self) extends AnyVal {
+  extension [Self <: OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceRefundOption](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
   }
 }

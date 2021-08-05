@@ -38,49 +38,35 @@ trait GetDiscoverySummaryResponse extends StObject {
 }
 object GetDiscoverySummaryResponse {
   
-  @scala.inline
-  def apply(): GetDiscoverySummaryResponse = {
+  inline def apply(): GetDiscoverySummaryResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDiscoverySummaryResponse]
   }
   
-  @scala.inline
-  implicit class GetDiscoverySummaryResponseMutableBuilder[Self <: GetDiscoverySummaryResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetDiscoverySummaryResponse](x: Self) {
     
-    @scala.inline
-    def setAgentSummary(value: CustomerAgentInfo): Self = StObject.set(x, "agentSummary", value.asInstanceOf[js.Any])
+    inline def setAgentSummary(value: CustomerAgentInfo): Self = StObject.set(x, "agentSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentSummaryUndefined: Self = StObject.set(x, "agentSummary", js.undefined)
+    inline def setAgentSummaryUndefined: Self = StObject.set(x, "agentSummary", js.undefined)
     
-    @scala.inline
-    def setApplications(value: Long): Self = StObject.set(x, "applications", value.asInstanceOf[js.Any])
+    inline def setApplications(value: Long): Self = StObject.set(x, "applications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationsUndefined: Self = StObject.set(x, "applications", js.undefined)
+    inline def setApplicationsUndefined: Self = StObject.set(x, "applications", js.undefined)
     
-    @scala.inline
-    def setConnectorSummary(value: CustomerConnectorInfo): Self = StObject.set(x, "connectorSummary", value.asInstanceOf[js.Any])
+    inline def setConnectorSummary(value: CustomerConnectorInfo): Self = StObject.set(x, "connectorSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectorSummaryUndefined: Self = StObject.set(x, "connectorSummary", js.undefined)
+    inline def setConnectorSummaryUndefined: Self = StObject.set(x, "connectorSummary", js.undefined)
     
-    @scala.inline
-    def setServers(value: Long): Self = StObject.set(x, "servers", value.asInstanceOf[js.Any])
+    inline def setServers(value: Long): Self = StObject.set(x, "servers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServersMappedToApplications(value: Long): Self = StObject.set(x, "serversMappedToApplications", value.asInstanceOf[js.Any])
+    inline def setServersMappedToApplications(value: Long): Self = StObject.set(x, "serversMappedToApplications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServersMappedToApplicationsUndefined: Self = StObject.set(x, "serversMappedToApplications", js.undefined)
+    inline def setServersMappedToApplicationsUndefined: Self = StObject.set(x, "serversMappedToApplications", js.undefined)
     
-    @scala.inline
-    def setServersMappedtoTags(value: Long): Self = StObject.set(x, "serversMappedtoTags", value.asInstanceOf[js.Any])
+    inline def setServersMappedtoTags(value: Long): Self = StObject.set(x, "serversMappedtoTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServersMappedtoTagsUndefined: Self = StObject.set(x, "serversMappedtoTags", js.undefined)
+    inline def setServersMappedtoTagsUndefined: Self = StObject.set(x, "serversMappedtoTags", js.undefined)
     
-    @scala.inline
-    def setServersUndefined: Self = StObject.set(x, "servers", js.undefined)
+    inline def setServersUndefined: Self = StObject.set(x, "servers", js.undefined)
   }
 }

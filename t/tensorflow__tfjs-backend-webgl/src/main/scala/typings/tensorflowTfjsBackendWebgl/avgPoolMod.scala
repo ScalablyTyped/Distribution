@@ -13,8 +13,7 @@ object avgPoolMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def avgPool(args: Attrs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
+  inline def avgPool(args: Attrs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/kernels/AvgPool", "avgPoolConfig")
   @js.native

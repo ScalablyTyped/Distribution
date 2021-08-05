@@ -15,22 +15,17 @@ trait Short extends StObject {
 }
 object Short {
   
-  @scala.inline
-  def apply(long: EraData, narrow: EraData, short: EraData): Short = {
+  inline def apply(long: EraData, narrow: EraData, short: EraData): Short = {
     val __obj = js.Dynamic.literal(long = long.asInstanceOf[js.Any], narrow = narrow.asInstanceOf[js.Any], short = short.asInstanceOf[js.Any])
     __obj.asInstanceOf[Short]
   }
   
-  @scala.inline
-  implicit class ShortMutableBuilder[Self <: Short] (val x: Self) extends AnyVal {
+  extension [Self <: Short](x: Self) {
     
-    @scala.inline
-    def setLong(value: EraData): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
+    inline def setLong(value: EraData): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNarrow(value: EraData): Self = StObject.set(x, "narrow", value.asInstanceOf[js.Any])
+    inline def setNarrow(value: EraData): Self = StObject.set(x, "narrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShort(value: EraData): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
+    inline def setShort(value: EraData): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
   }
 }

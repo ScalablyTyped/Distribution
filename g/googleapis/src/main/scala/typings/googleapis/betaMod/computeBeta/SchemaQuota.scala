@@ -32,37 +32,27 @@ trait SchemaQuota extends StObject {
 }
 object SchemaQuota {
   
-  @scala.inline
-  def apply(): SchemaQuota = {
+  inline def apply(): SchemaQuota = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaQuota]
   }
   
-  @scala.inline
-  implicit class SchemaQuotaMutableBuilder[Self <: SchemaQuota] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaQuota](x: Self) {
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setMetric(value: String): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
+    inline def setMetric(value: String): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
+    inline def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setUsage(value: Double): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
+    inline def setUsage(value: Double): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
+    inline def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
   }
 }

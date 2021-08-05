@@ -32,8 +32,7 @@ trait DefaultValue extends StObject {
 }
 object DefaultValue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     callback: ButtonTypeOnClickProp & js.UndefOr[js.Function0[js.Any]],
     hideLabel: `true` & js.UndefOr[Boolean],
     label: String,
@@ -46,55 +45,38 @@ object DefaultValue {
     __obj.asInstanceOf[DefaultValue]
   }
   
-  @scala.inline
-  implicit class DefaultValueMutableBuilder[Self <: DefaultValue] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultValue](x: Self) {
     
-    @scala.inline
-    def setCallback(value: ButtonTypeOnClickProp & js.UndefOr[js.Function0[js.Any]]): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+    inline def setCallback(value: ButtonTypeOnClickProp & js.UndefOr[js.Function0[js.Any]]): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    @scala.inline
-    def setDisableDebounce(value: Boolean): Self = StObject.set(x, "disableDebounce", value.asInstanceOf[js.Any])
+    inline def setDisableDebounce(value: Boolean): Self = StObject.set(x, "disableDebounce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableDebounceUndefined: Self = StObject.set(x, "disableDebounce", js.undefined)
+    inline def setDisableDebounceUndefined: Self = StObject.set(x, "disableDebounce", js.undefined)
     
-    @scala.inline
-    def setDisableForceUpdate(value: Boolean): Self = StObject.set(x, "disableForceUpdate", value.asInstanceOf[js.Any])
+    inline def setDisableForceUpdate(value: Boolean): Self = StObject.set(x, "disableForceUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableForceUpdateUndefined: Self = StObject.set(x, "disableForceUpdate", js.undefined)
+    inline def setDisableForceUpdateUndefined: Self = StObject.set(x, "disableForceUpdate", js.undefined)
     
-    @scala.inline
-    def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
+    inline def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
     
-    @scala.inline
-    def setHideLabel(value: `true` & js.UndefOr[Boolean]): Self = StObject.set(x, "hideLabel", value.asInstanceOf[js.Any])
+    inline def setHideLabel(value: `true` & js.UndefOr[Boolean]): Self = StObject.set(x, "hideLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsed(value: Boolean): Self = StObject.set(x, "used", value.asInstanceOf[js.Any])
+    inline def setUsed(value: Boolean): Self = StObject.set(x, "used", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsedUndefined: Self = StObject.set(x, "used", js.undefined)
+    inline def setUsedUndefined: Self = StObject.set(x, "used", js.undefined)
     
-    @scala.inline
-    def setValue(value: Unit): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Unit): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

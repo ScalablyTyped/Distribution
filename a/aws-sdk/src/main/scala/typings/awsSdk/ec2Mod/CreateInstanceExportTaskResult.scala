@@ -13,19 +13,15 @@ trait CreateInstanceExportTaskResult extends StObject {
 }
 object CreateInstanceExportTaskResult {
   
-  @scala.inline
-  def apply(): CreateInstanceExportTaskResult = {
+  inline def apply(): CreateInstanceExportTaskResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateInstanceExportTaskResult]
   }
   
-  @scala.inline
-  implicit class CreateInstanceExportTaskResultMutableBuilder[Self <: CreateInstanceExportTaskResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateInstanceExportTaskResult](x: Self) {
     
-    @scala.inline
-    def setExportTask(value: ExportTask): Self = StObject.set(x, "ExportTask", value.asInstanceOf[js.Any])
+    inline def setExportTask(value: ExportTask): Self = StObject.set(x, "ExportTask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportTaskUndefined: Self = StObject.set(x, "ExportTask", js.undefined)
+    inline def setExportTaskUndefined: Self = StObject.set(x, "ExportTask", js.undefined)
   }
 }

@@ -12,10 +12,7 @@ object transactionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def Transaction(): MethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Transaction")().asInstanceOf[MethodDecorator]
-  @scala.inline
-  def Transaction(connectionName: String): MethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Transaction")(connectionName.asInstanceOf[js.Any]).asInstanceOf[MethodDecorator]
-  @scala.inline
-  def Transaction(options: TransactionOptions): MethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Transaction")(options.asInstanceOf[js.Any]).asInstanceOf[MethodDecorator]
+  inline def Transaction(): MethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Transaction")().asInstanceOf[MethodDecorator]
+  inline def Transaction(connectionName: String): MethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Transaction")(connectionName.asInstanceOf[js.Any]).asInstanceOf[MethodDecorator]
+  inline def Transaction(options: TransactionOptions): MethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Transaction")(options.asInstanceOf[js.Any]).asInstanceOf[MethodDecorator]
 }

@@ -12,19 +12,15 @@ trait ReposDeleteEndpoint extends StObject {
 }
 object ReposDeleteEndpoint {
   
-  @scala.inline
-  def apply(owner: String, repo: String): ReposDeleteEndpoint = {
+  inline def apply(owner: String, repo: String): ReposDeleteEndpoint = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposDeleteEndpoint]
   }
   
-  @scala.inline
-  implicit class ReposDeleteEndpointMutableBuilder[Self <: ReposDeleteEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ReposDeleteEndpoint](x: Self) {
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

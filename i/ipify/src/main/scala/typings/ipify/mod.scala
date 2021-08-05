@@ -20,10 +20,8 @@ object mod {
   })();
   ```
   */
-  @scala.inline
-  def apply(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def apply(options: Options): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def apply(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[String]]
+  inline def apply(options: Options): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
   @JSImport("ipify", JSImport.Namespace)
   @js.native
@@ -46,26 +44,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
+      inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
       
-      @scala.inline
-      def setUseIPv6(value: Boolean): Self = StObject.set(x, "useIPv6", value.asInstanceOf[js.Any])
+      inline def setUseIPv6(value: Boolean): Self = StObject.set(x, "useIPv6", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseIPv6Undefined: Self = StObject.set(x, "useIPv6", js.undefined)
+      inline def setUseIPv6Undefined: Self = StObject.set(x, "useIPv6", js.undefined)
     }
   }
 }

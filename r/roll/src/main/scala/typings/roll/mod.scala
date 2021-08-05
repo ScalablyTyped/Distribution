@@ -30,11 +30,9 @@ object mod {
     @js.native
     val ^ : InvalidInputError = js.native
     
-    @scala.inline
-    implicit class InvalidInputErrorMutableBuilder[Self <: InvalidInputError] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidInputError](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.roll.rollStrings.InvalidInputError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.roll.rollStrings.InvalidInputError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -69,26 +67,20 @@ object mod {
   }
   object RollObject {
     
-    @scala.inline
-    def apply(quantity: Double, sides: Double, transformations: js.Array[RollTransformation]): RollObject = {
+    inline def apply(quantity: Double, sides: Double, transformations: js.Array[RollTransformation]): RollObject = {
       val __obj = js.Dynamic.literal(quantity = quantity.asInstanceOf[js.Any], sides = sides.asInstanceOf[js.Any], transformations = transformations.asInstanceOf[js.Any])
       __obj.asInstanceOf[RollObject]
     }
     
-    @scala.inline
-    implicit class RollObjectMutableBuilder[Self <: RollObject] (val x: Self) extends AnyVal {
+    extension [Self <: RollObject](x: Self) {
       
-      @scala.inline
-      def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+      inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSides(value: Double): Self = StObject.set(x, "sides", value.asInstanceOf[js.Any])
+      inline def setSides(value: Double): Self = StObject.set(x, "sides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformations(value: js.Array[RollTransformation]): Self = StObject.set(x, "transformations", value.asInstanceOf[js.Any])
+      inline def setTransformations(value: js.Array[RollTransformation]): Self = StObject.set(x, "transformations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformationsVarargs(value: RollTransformation*): Self = StObject.set(x, "transformations", js.Array(value :_*))
+      inline def setTransformationsVarargs(value: RollTransformation*): Self = StObject.set(x, "transformations", js.Array(value :_*))
     }
   }
   
@@ -104,32 +96,24 @@ object mod {
   }
   object RollOutput {
     
-    @scala.inline
-    def apply(calculations: js.Array[Double], input: RollObject, result: Double, rolled: js.Array[Double]): RollOutput = {
+    inline def apply(calculations: js.Array[Double], input: RollObject, result: Double, rolled: js.Array[Double]): RollOutput = {
       val __obj = js.Dynamic.literal(calculations = calculations.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], rolled = rolled.asInstanceOf[js.Any])
       __obj.asInstanceOf[RollOutput]
     }
     
-    @scala.inline
-    implicit class RollOutputMutableBuilder[Self <: RollOutput] (val x: Self) extends AnyVal {
+    extension [Self <: RollOutput](x: Self) {
       
-      @scala.inline
-      def setCalculations(value: js.Array[Double]): Self = StObject.set(x, "calculations", value.asInstanceOf[js.Any])
+      inline def setCalculations(value: js.Array[Double]): Self = StObject.set(x, "calculations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCalculationsVarargs(value: Double*): Self = StObject.set(x, "calculations", js.Array(value :_*))
+      inline def setCalculationsVarargs(value: Double*): Self = StObject.set(x, "calculations", js.Array(value :_*))
       
-      @scala.inline
-      def setInput(value: RollObject): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: RollObject): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResult(value: Double): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: Double): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRolled(value: js.Array[Double]): Self = StObject.set(x, "rolled", value.asInstanceOf[js.Any])
+      inline def setRolled(value: js.Array[Double]): Self = StObject.set(x, "rolled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRolledVarargs(value: Double*): Self = StObject.set(x, "rolled", js.Array(value :_*))
+      inline def setRolledVarargs(value: Double*): Self = StObject.set(x, "rolled", js.Array(value :_*))
     }
   }
   
@@ -147,25 +131,18 @@ object mod {
   trait RollTransformationKey extends StObject
   object RollTransformationKey {
     
-    @scala.inline
-    def add: typings.roll.rollStrings.add = "add".asInstanceOf[typings.roll.rollStrings.add]
+    inline def add: typings.roll.rollStrings.add = "add".asInstanceOf[typings.roll.rollStrings.add]
     
-    @scala.inline
-    def `best-of`: typings.roll.rollStrings.`best-of` = "best-of".asInstanceOf[typings.roll.rollStrings.`best-of`]
+    inline def `best-of`: typings.roll.rollStrings.`best-of` = "best-of".asInstanceOf[typings.roll.rollStrings.`best-of`]
     
-    @scala.inline
-    def divide: typings.roll.rollStrings.divide = "divide".asInstanceOf[typings.roll.rollStrings.divide]
+    inline def divide: typings.roll.rollStrings.divide = "divide".asInstanceOf[typings.roll.rollStrings.divide]
     
-    @scala.inline
-    def multiply: typings.roll.rollStrings.multiply = "multiply".asInstanceOf[typings.roll.rollStrings.multiply]
+    inline def multiply: typings.roll.rollStrings.multiply = "multiply".asInstanceOf[typings.roll.rollStrings.multiply]
     
-    @scala.inline
-    def subtract: typings.roll.rollStrings.subtract = "subtract".asInstanceOf[typings.roll.rollStrings.subtract]
+    inline def subtract: typings.roll.rollStrings.subtract = "subtract".asInstanceOf[typings.roll.rollStrings.subtract]
     
-    @scala.inline
-    def sum: typings.roll.rollStrings.sum = "sum".asInstanceOf[typings.roll.rollStrings.sum]
+    inline def sum: typings.roll.rollStrings.sum = "sum".asInstanceOf[typings.roll.rollStrings.sum]
     
-    @scala.inline
-    def `worst-of`: typings.roll.rollStrings.`worst-of` = "worst-of".asInstanceOf[typings.roll.rollStrings.`worst-of`]
+    inline def `worst-of`: typings.roll.rollStrings.`worst-of` = "worst-of".asInstanceOf[typings.roll.rollStrings.`worst-of`]
   }
 }

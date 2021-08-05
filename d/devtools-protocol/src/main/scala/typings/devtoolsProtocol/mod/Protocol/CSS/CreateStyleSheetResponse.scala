@@ -13,16 +13,13 @@ trait CreateStyleSheetResponse extends StObject {
 }
 object CreateStyleSheetResponse {
   
-  @scala.inline
-  def apply(styleSheetId: StyleSheetId): CreateStyleSheetResponse = {
+  inline def apply(styleSheetId: StyleSheetId): CreateStyleSheetResponse = {
     val __obj = js.Dynamic.literal(styleSheetId = styleSheetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateStyleSheetResponse]
   }
   
-  @scala.inline
-  implicit class CreateStyleSheetResponseMutableBuilder[Self <: CreateStyleSheetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateStyleSheetResponse](x: Self) {
     
-    @scala.inline
-    def setStyleSheetId(value: StyleSheetId): Self = StObject.set(x, "styleSheetId", value.asInstanceOf[js.Any])
+    inline def setStyleSheetId(value: StyleSheetId): Self = StObject.set(x, "styleSheetId", value.asInstanceOf[js.Any])
   }
 }

@@ -103,14 +103,10 @@ object mod {
   	```
   	*/
   /* static member */
-  @scala.inline
-  def mixin(emitteryPropertyName: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("mixin")(emitteryPropertyName.asInstanceOf[js.Any]).asInstanceOf[js.Function]
-  @scala.inline
-  def mixin(emitteryPropertyName: String, methodNames: js.Array[String]): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("mixin")(emitteryPropertyName.asInstanceOf[js.Any], methodNames.asInstanceOf[js.Any])).asInstanceOf[js.Function]
-  @scala.inline
-  def mixin(emitteryPropertyName: js.Symbol): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("mixin")(emitteryPropertyName.asInstanceOf[js.Any]).asInstanceOf[js.Function]
-  @scala.inline
-  def mixin(emitteryPropertyName: js.Symbol, methodNames: js.Array[String]): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("mixin")(emitteryPropertyName.asInstanceOf[js.Any], methodNames.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  inline def mixin(emitteryPropertyName: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("mixin")(emitteryPropertyName.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  inline def mixin(emitteryPropertyName: String, methodNames: js.Array[String]): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("mixin")(emitteryPropertyName.asInstanceOf[js.Any], methodNames.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  inline def mixin(emitteryPropertyName: js.Symbol): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("mixin")(emitteryPropertyName.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  inline def mixin(emitteryPropertyName: js.Symbol, methodNames: js.Array[String]): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("mixin")(emitteryPropertyName.asInstanceOf[js.Any], methodNames.asInstanceOf[js.Any])).asInstanceOf[js.Function]
   
   @js.native
   trait Emittery extends StObject {

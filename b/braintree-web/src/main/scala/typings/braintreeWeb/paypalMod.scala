@@ -131,8 +131,7 @@ object paypalMod {
   }
   object PayPalAccountDetails {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       billingAddress: PayPalBillingAddress,
       countryCode: String,
       email: String,
@@ -146,32 +145,23 @@ object paypalMod {
       __obj.asInstanceOf[PayPalAccountDetails]
     }
     
-    @scala.inline
-    implicit class PayPalAccountDetailsMutableBuilder[Self <: PayPalAccountDetails] (val x: Self) extends AnyVal {
+    extension [Self <: PayPalAccountDetails](x: Self) {
       
-      @scala.inline
-      def setBillingAddress(value: PayPalBillingAddress): Self = StObject.set(x, "billingAddress", value.asInstanceOf[js.Any])
+      inline def setBillingAddress(value: PayPalBillingAddress): Self = StObject.set(x, "billingAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
+      inline def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
+      inline def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastName(value: String): Self = StObject.set(x, "lastName", value.asInstanceOf[js.Any])
+      inline def setLastName(value: String): Self = StObject.set(x, "lastName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayerId(value: String): Self = StObject.set(x, "payerId", value.asInstanceOf[js.Any])
+      inline def setPayerId(value: String): Self = StObject.set(x, "payerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+      inline def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShippingAddress(value: PayPalShippingAddress): Self = StObject.set(x, "shippingAddress", value.asInstanceOf[js.Any])
+      inline def setShippingAddress(value: PayPalShippingAddress): Self = StObject.set(x, "shippingAddress", value.asInstanceOf[js.Any])
     }
   }
   
@@ -191,32 +181,24 @@ object paypalMod {
   }
   object PayPalBillingAddress {
     
-    @scala.inline
-    def apply(city: String, countryCode: String, line1: String, line2: String, postalCode: String, state: String): PayPalBillingAddress = {
+    inline def apply(city: String, countryCode: String, line1: String, line2: String, postalCode: String, state: String): PayPalBillingAddress = {
       val __obj = js.Dynamic.literal(city = city.asInstanceOf[js.Any], countryCode = countryCode.asInstanceOf[js.Any], line1 = line1.asInstanceOf[js.Any], line2 = line2.asInstanceOf[js.Any], postalCode = postalCode.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[PayPalBillingAddress]
     }
     
-    @scala.inline
-    implicit class PayPalBillingAddressMutableBuilder[Self <: PayPalBillingAddress] (val x: Self) extends AnyVal {
+    extension [Self <: PayPalBillingAddress](x: Self) {
       
-      @scala.inline
-      def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+      inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
+      inline def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine1(value: String): Self = StObject.set(x, "line1", value.asInstanceOf[js.Any])
+      inline def setLine1(value: String): Self = StObject.set(x, "line1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine2(value: String): Self = StObject.set(x, "line2", value.asInstanceOf[js.Any])
+      inline def setLine2(value: String): Self = StObject.set(x, "line2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
+      inline def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
@@ -238,8 +220,7 @@ object paypalMod {
   }
   object PayPalShippingAddress {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       city: String,
       countryCode: String,
       line1: String,
@@ -252,29 +233,21 @@ object paypalMod {
       __obj.asInstanceOf[PayPalShippingAddress]
     }
     
-    @scala.inline
-    implicit class PayPalShippingAddressMutableBuilder[Self <: PayPalShippingAddress] (val x: Self) extends AnyVal {
+    extension [Self <: PayPalShippingAddress](x: Self) {
       
-      @scala.inline
-      def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+      inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
+      inline def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine1(value: String): Self = StObject.set(x, "line1", value.asInstanceOf[js.Any])
+      inline def setLine1(value: String): Self = StObject.set(x, "line1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine2(value: String): Self = StObject.set(x, "line2", value.asInstanceOf[js.Any])
+      inline def setLine2(value: String): Self = StObject.set(x, "line2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
+      inline def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecipientName(value: String): Self = StObject.set(x, "recipientName", value.asInstanceOf[js.Any])
+      inline def setRecipientName(value: String): Self = StObject.set(x, "recipientName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
@@ -288,24 +261,19 @@ object paypalMod {
   }
   object PayPalTokenizePayload {
     
-    @scala.inline
-    def apply(details: PayPalAccountDetails, nonce: String, `type`: String): PayPalTokenizePayload = {
+    inline def apply(details: PayPalAccountDetails, nonce: String, `type`: String): PayPalTokenizePayload = {
       val __obj = js.Dynamic.literal(details = details.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[PayPalTokenizePayload]
     }
     
-    @scala.inline
-    implicit class PayPalTokenizePayloadMutableBuilder[Self <: PayPalTokenizePayload] (val x: Self) extends AnyVal {
+    extension [Self <: PayPalTokenizePayload](x: Self) {
       
-      @scala.inline
-      def setDetails(value: PayPalAccountDetails): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: PayPalAccountDetails): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -315,17 +283,14 @@ object paypalMod {
   }
   object PayPalTokenizeReturn {
     
-    @scala.inline
-    def apply(close: () => js.Any): PayPalTokenizeReturn = {
+    inline def apply(close: () => js.Any): PayPalTokenizeReturn = {
       val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close))
       __obj.asInstanceOf[PayPalTokenizeReturn]
     }
     
-    @scala.inline
-    implicit class PayPalTokenizeReturnMutableBuilder[Self <: PayPalTokenizeReturn] (val x: Self) extends AnyVal {
+    extension [Self <: PayPalTokenizeReturn](x: Self) {
       
-      @scala.inline
-      def setClose(value: () => js.Any): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => js.Any): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     }
   }
 }

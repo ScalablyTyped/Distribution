@@ -38,40 +38,29 @@ trait TestDNSAnswerRequest extends StObject {
 }
 object TestDNSAnswerRequest {
   
-  @scala.inline
-  def apply(HostedZoneId: ResourceId, RecordName: DNSName, RecordType: RRType): TestDNSAnswerRequest = {
+  inline def apply(HostedZoneId: ResourceId, RecordName: DNSName, RecordType: RRType): TestDNSAnswerRequest = {
     val __obj = js.Dynamic.literal(HostedZoneId = HostedZoneId.asInstanceOf[js.Any], RecordName = RecordName.asInstanceOf[js.Any], RecordType = RecordType.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestDNSAnswerRequest]
   }
   
-  @scala.inline
-  implicit class TestDNSAnswerRequestMutableBuilder[Self <: TestDNSAnswerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: TestDNSAnswerRequest](x: Self) {
     
-    @scala.inline
-    def setEDNS0ClientSubnetIP(value: IPAddress): Self = StObject.set(x, "EDNS0ClientSubnetIP", value.asInstanceOf[js.Any])
+    inline def setEDNS0ClientSubnetIP(value: IPAddress): Self = StObject.set(x, "EDNS0ClientSubnetIP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEDNS0ClientSubnetIPUndefined: Self = StObject.set(x, "EDNS0ClientSubnetIP", js.undefined)
+    inline def setEDNS0ClientSubnetIPUndefined: Self = StObject.set(x, "EDNS0ClientSubnetIP", js.undefined)
     
-    @scala.inline
-    def setEDNS0ClientSubnetMask(value: SubnetMask): Self = StObject.set(x, "EDNS0ClientSubnetMask", value.asInstanceOf[js.Any])
+    inline def setEDNS0ClientSubnetMask(value: SubnetMask): Self = StObject.set(x, "EDNS0ClientSubnetMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEDNS0ClientSubnetMaskUndefined: Self = StObject.set(x, "EDNS0ClientSubnetMask", js.undefined)
+    inline def setEDNS0ClientSubnetMaskUndefined: Self = StObject.set(x, "EDNS0ClientSubnetMask", js.undefined)
     
-    @scala.inline
-    def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
+    inline def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordName(value: DNSName): Self = StObject.set(x, "RecordName", value.asInstanceOf[js.Any])
+    inline def setRecordName(value: DNSName): Self = StObject.set(x, "RecordName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordType(value: RRType): Self = StObject.set(x, "RecordType", value.asInstanceOf[js.Any])
+    inline def setRecordType(value: RRType): Self = StObject.set(x, "RecordType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolverIP(value: IPAddress): Self = StObject.set(x, "ResolverIP", value.asInstanceOf[js.Any])
+    inline def setResolverIP(value: IPAddress): Self = StObject.set(x, "ResolverIP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolverIPUndefined: Self = StObject.set(x, "ResolverIP", js.undefined)
+    inline def setResolverIPUndefined: Self = StObject.set(x, "ResolverIP", js.undefined)
   }
 }

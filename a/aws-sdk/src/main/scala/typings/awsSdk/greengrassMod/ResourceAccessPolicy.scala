@@ -18,22 +18,17 @@ trait ResourceAccessPolicy extends StObject {
 }
 object ResourceAccessPolicy {
   
-  @scala.inline
-  def apply(ResourceId: string): ResourceAccessPolicy = {
+  inline def apply(ResourceId: string): ResourceAccessPolicy = {
     val __obj = js.Dynamic.literal(ResourceId = ResourceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceAccessPolicy]
   }
   
-  @scala.inline
-  implicit class ResourceAccessPolicyMutableBuilder[Self <: ResourceAccessPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceAccessPolicy](x: Self) {
     
-    @scala.inline
-    def setPermission(value: Permission): Self = StObject.set(x, "Permission", value.asInstanceOf[js.Any])
+    inline def setPermission(value: Permission): Self = StObject.set(x, "Permission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionUndefined: Self = StObject.set(x, "Permission", js.undefined)
+    inline def setPermissionUndefined: Self = StObject.set(x, "Permission", js.undefined)
     
-    @scala.inline
-    def setResourceId(value: string): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: string): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
   }
 }

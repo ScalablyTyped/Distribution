@@ -96,6 +96,6 @@ trait Sequence extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("PowerPoint.Sequence_typekey")
+  /* private */ @JSName("PowerPoint.Sequence_typekey")
   var PowerPointDotSequence_typekey: Sequence = js.native
 }

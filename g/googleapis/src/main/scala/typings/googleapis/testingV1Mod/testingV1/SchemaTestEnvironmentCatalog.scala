@@ -31,37 +31,27 @@ trait SchemaTestEnvironmentCatalog extends StObject {
 }
 object SchemaTestEnvironmentCatalog {
   
-  @scala.inline
-  def apply(): SchemaTestEnvironmentCatalog = {
+  inline def apply(): SchemaTestEnvironmentCatalog = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTestEnvironmentCatalog]
   }
   
-  @scala.inline
-  implicit class SchemaTestEnvironmentCatalogMutableBuilder[Self <: SchemaTestEnvironmentCatalog] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTestEnvironmentCatalog](x: Self) {
     
-    @scala.inline
-    def setAndroidDeviceCatalog(value: SchemaAndroidDeviceCatalog): Self = StObject.set(x, "androidDeviceCatalog", value.asInstanceOf[js.Any])
+    inline def setAndroidDeviceCatalog(value: SchemaAndroidDeviceCatalog): Self = StObject.set(x, "androidDeviceCatalog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidDeviceCatalogUndefined: Self = StObject.set(x, "androidDeviceCatalog", js.undefined)
+    inline def setAndroidDeviceCatalogUndefined: Self = StObject.set(x, "androidDeviceCatalog", js.undefined)
     
-    @scala.inline
-    def setIosDeviceCatalog(value: SchemaIosDeviceCatalog): Self = StObject.set(x, "iosDeviceCatalog", value.asInstanceOf[js.Any])
+    inline def setIosDeviceCatalog(value: SchemaIosDeviceCatalog): Self = StObject.set(x, "iosDeviceCatalog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIosDeviceCatalogUndefined: Self = StObject.set(x, "iosDeviceCatalog", js.undefined)
+    inline def setIosDeviceCatalogUndefined: Self = StObject.set(x, "iosDeviceCatalog", js.undefined)
     
-    @scala.inline
-    def setNetworkConfigurationCatalog(value: SchemaNetworkConfigurationCatalog): Self = StObject.set(x, "networkConfigurationCatalog", value.asInstanceOf[js.Any])
+    inline def setNetworkConfigurationCatalog(value: SchemaNetworkConfigurationCatalog): Self = StObject.set(x, "networkConfigurationCatalog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkConfigurationCatalogUndefined: Self = StObject.set(x, "networkConfigurationCatalog", js.undefined)
+    inline def setNetworkConfigurationCatalogUndefined: Self = StObject.set(x, "networkConfigurationCatalog", js.undefined)
     
-    @scala.inline
-    def setSoftwareCatalog(value: SchemaProvidedSoftwareCatalog): Self = StObject.set(x, "softwareCatalog", value.asInstanceOf[js.Any])
+    inline def setSoftwareCatalog(value: SchemaProvidedSoftwareCatalog): Self = StObject.set(x, "softwareCatalog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoftwareCatalogUndefined: Self = StObject.set(x, "softwareCatalog", js.undefined)
+    inline def setSoftwareCatalogUndefined: Self = StObject.set(x, "softwareCatalog", js.undefined)
   }
 }

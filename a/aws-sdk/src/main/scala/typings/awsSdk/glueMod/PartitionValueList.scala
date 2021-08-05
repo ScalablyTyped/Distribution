@@ -13,19 +13,15 @@ trait PartitionValueList extends StObject {
 }
 object PartitionValueList {
   
-  @scala.inline
-  def apply(Values: ValueStringList): PartitionValueList = {
+  inline def apply(Values: ValueStringList): PartitionValueList = {
     val __obj = js.Dynamic.literal(Values = Values.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartitionValueList]
   }
   
-  @scala.inline
-  implicit class PartitionValueListMutableBuilder[Self <: PartitionValueList] (val x: Self) extends AnyVal {
+  extension [Self <: PartitionValueList](x: Self) {
     
-    @scala.inline
-    def setValues(value: ValueStringList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: ValueStringList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: ValueString*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: ValueString*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

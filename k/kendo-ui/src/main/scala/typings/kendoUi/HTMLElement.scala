@@ -11,16 +11,13 @@ trait HTMLElement extends StObject {
 }
 object HTMLElement {
   
-  @scala.inline
-  def apply(kendoBindingTarget: BindingTarget): HTMLElement = {
+  inline def apply(kendoBindingTarget: BindingTarget): HTMLElement = {
     val __obj = js.Dynamic.literal(kendoBindingTarget = kendoBindingTarget.asInstanceOf[js.Any])
     __obj.asInstanceOf[HTMLElement]
   }
   
-  @scala.inline
-  implicit class HTMLElementMutableBuilder[Self <: HTMLElement] (val x: Self) extends AnyVal {
+  extension [Self <: HTMLElement](x: Self) {
     
-    @scala.inline
-    def setKendoBindingTarget(value: BindingTarget): Self = StObject.set(x, "kendoBindingTarget", value.asInstanceOf[js.Any])
+    inline def setKendoBindingTarget(value: BindingTarget): Self = StObject.set(x, "kendoBindingTarget", value.asInstanceOf[js.Any])
   }
 }

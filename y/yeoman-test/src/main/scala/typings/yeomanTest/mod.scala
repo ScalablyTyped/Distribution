@@ -18,63 +18,43 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createDummyGenerator(): typings.yeomanGenerator.mod.^[GeneratorOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDummyGenerator")().asInstanceOf[typings.yeomanGenerator.mod.^[GeneratorOptions]]
+  inline def createDummyGenerator(): typings.yeomanGenerator.mod.^[GeneratorOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDummyGenerator")().asInstanceOf[typings.yeomanGenerator.mod.^[GeneratorOptions]]
   
-  @scala.inline
-  def createGenerator(name: String, dependencies: js.Array[Dependency]): typings.yeomanGenerator.mod.^[GeneratorOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenerator")(name.asInstanceOf[js.Any], dependencies.asInstanceOf[js.Any])).asInstanceOf[typings.yeomanGenerator.mod.^[GeneratorOptions]]
-  @scala.inline
-  def createGenerator(name: String, dependencies: js.Array[Dependency], args: String): typings.yeomanGenerator.mod.^[GeneratorOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenerator")(name.asInstanceOf[js.Any], dependencies.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[typings.yeomanGenerator.mod.^[GeneratorOptions]]
-  @scala.inline
-  def createGenerator(name: String, dependencies: js.Array[Dependency], args: String, options: Dictionary[js.Any]): typings.yeomanGenerator.mod.^[GeneratorOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenerator")(name.asInstanceOf[js.Any], dependencies.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.yeomanGenerator.mod.^[GeneratorOptions]]
-  @scala.inline
-  def createGenerator(name: String, dependencies: js.Array[Dependency], args: js.Array[String]): typings.yeomanGenerator.mod.^[GeneratorOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenerator")(name.asInstanceOf[js.Any], dependencies.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[typings.yeomanGenerator.mod.^[GeneratorOptions]]
-  @scala.inline
-  def createGenerator(
+  inline def createGenerator(name: String, dependencies: js.Array[Dependency]): typings.yeomanGenerator.mod.^[GeneratorOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenerator")(name.asInstanceOf[js.Any], dependencies.asInstanceOf[js.Any])).asInstanceOf[typings.yeomanGenerator.mod.^[GeneratorOptions]]
+  inline def createGenerator(name: String, dependencies: js.Array[Dependency], args: String): typings.yeomanGenerator.mod.^[GeneratorOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenerator")(name.asInstanceOf[js.Any], dependencies.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[typings.yeomanGenerator.mod.^[GeneratorOptions]]
+  inline def createGenerator(name: String, dependencies: js.Array[Dependency], args: String, options: Dictionary[js.Any]): typings.yeomanGenerator.mod.^[GeneratorOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenerator")(name.asInstanceOf[js.Any], dependencies.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.yeomanGenerator.mod.^[GeneratorOptions]]
+  inline def createGenerator(name: String, dependencies: js.Array[Dependency], args: js.Array[String]): typings.yeomanGenerator.mod.^[GeneratorOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenerator")(name.asInstanceOf[js.Any], dependencies.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[typings.yeomanGenerator.mod.^[GeneratorOptions]]
+  inline def createGenerator(
     name: String,
     dependencies: js.Array[Dependency],
     args: js.Array[String],
     options: Dictionary[js.Any]
   ): typings.yeomanGenerator.mod.^[GeneratorOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenerator")(name.asInstanceOf[js.Any], dependencies.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.yeomanGenerator.mod.^[GeneratorOptions]]
-  @scala.inline
-  def createGenerator(name: String, dependencies: js.Array[Dependency], args: Unit, options: Dictionary[js.Any]): typings.yeomanGenerator.mod.^[GeneratorOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenerator")(name.asInstanceOf[js.Any], dependencies.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.yeomanGenerator.mod.^[GeneratorOptions]]
+  inline def createGenerator(name: String, dependencies: js.Array[Dependency], args: Unit, options: Dictionary[js.Any]): typings.yeomanGenerator.mod.^[GeneratorOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenerator")(name.asInstanceOf[js.Any], dependencies.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.yeomanGenerator.mod.^[GeneratorOptions]]
   
-  @scala.inline
-  def gruntfile(options: Dictionary[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("gruntfile")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def gruntfile(options: Dictionary[js.Any], done: js.Function1[/* repeated */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("gruntfile")(options.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def gruntfile(options: Dictionary[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("gruntfile")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def gruntfile(options: Dictionary[js.Any], done: js.Function1[/* repeated */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("gruntfile")(options.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def mockLocalConfig(generator: typings.yeomanGenerator.mod.^[GeneratorOptions], localConfig: Dictionary[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mockLocalConfig")(generator.asInstanceOf[js.Any], localConfig.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mockLocalConfig(generator: typings.yeomanGenerator.mod.^[GeneratorOptions], localConfig: Dictionary[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mockLocalConfig")(generator.asInstanceOf[js.Any], localConfig.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def mockPrompt(generator: typings.yeomanGenerator.mod.^[GeneratorOptions], answers: Answers): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mockPrompt")(generator.asInstanceOf[js.Any], answers.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mockPrompt(generator: typings.yeomanGenerator.mod.^[GeneratorOptions], answers: Answers): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mockPrompt")(generator.asInstanceOf[js.Any], answers.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def registerDependencies(env: Env, dependencies: js.Array[Dependency]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerDependencies")(env.asInstanceOf[js.Any], dependencies.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerDependencies(env: Env, dependencies: js.Array[Dependency]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerDependencies")(env.asInstanceOf[js.Any], dependencies.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def restorePrompt(generator: typings.yeomanGenerator.mod.^[GeneratorOptions]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("restorePrompt")(generator.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def restorePrompt(generator: typings.yeomanGenerator.mod.^[GeneratorOptions]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("restorePrompt")(generator.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def run(GeneratorOrNamespace: String): RunContext = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(GeneratorOrNamespace.asInstanceOf[js.Any]).asInstanceOf[RunContext]
-  @scala.inline
-  def run(GeneratorOrNamespace: String, settings: RunContextSettings): RunContext = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(GeneratorOrNamespace.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[RunContext]
-  @scala.inline
-  def run(GeneratorOrNamespace: Constructor[typings.yeomanGenerator.mod.^[GeneratorOptions]]): RunContext = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(GeneratorOrNamespace.asInstanceOf[js.Any]).asInstanceOf[RunContext]
-  @scala.inline
-  def run(
+  inline def run(GeneratorOrNamespace: String): RunContext = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(GeneratorOrNamespace.asInstanceOf[js.Any]).asInstanceOf[RunContext]
+  inline def run(GeneratorOrNamespace: String, settings: RunContextSettings): RunContext = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(GeneratorOrNamespace.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[RunContext]
+  inline def run(GeneratorOrNamespace: Constructor[typings.yeomanGenerator.mod.^[GeneratorOptions]]): RunContext = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(GeneratorOrNamespace.asInstanceOf[js.Any]).asInstanceOf[RunContext]
+  inline def run(
     GeneratorOrNamespace: Constructor[typings.yeomanGenerator.mod.^[GeneratorOptions]],
     settings: RunContextSettings
   ): RunContext = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(GeneratorOrNamespace.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[RunContext]
   
-  @scala.inline
-  def setUpTestDirectory(dir: String): js.Function1[/* done */ js.Function1[/* repeated */ js.Any, Unit], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setUpTestDirectory")(dir.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* done */ js.Function1[/* repeated */ js.Any, Unit], Unit]]
+  inline def setUpTestDirectory(dir: String): js.Function1[/* done */ js.Function1[/* repeated */ js.Any, Unit], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setUpTestDirectory")(dir.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* done */ js.Function1[/* repeated */ js.Any, Unit], Unit]]
   
-  @scala.inline
-  def testDirectory(dir: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testDirectory")(dir.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def testDirectory(dir: String, cb: js.Function1[/* error */ js.UndefOr[js.Any], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testDirectory")(dir.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def testDirectory(dir: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testDirectory")(dir.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def testDirectory(dir: String, cb: js.Function1[/* error */ js.UndefOr[js.Any], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testDirectory")(dir.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @js.native
   trait Constructor[T]
@@ -258,32 +238,24 @@ object mod {
   }
   object RunContextSettings {
     
-    @scala.inline
-    def apply(): RunContextSettings = {
+    inline def apply(): RunContextSettings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RunContextSettings]
     }
     
-    @scala.inline
-    implicit class RunContextSettingsMutableBuilder[Self <: RunContextSettings] (val x: Self) extends AnyVal {
+    extension [Self <: RunContextSettings](x: Self) {
       
-      @scala.inline
-      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+      inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
       
-      @scala.inline
-      def setResolved(value: String): Self = StObject.set(x, "resolved", value.asInstanceOf[js.Any])
+      inline def setResolved(value: String): Self = StObject.set(x, "resolved", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolvedUndefined: Self = StObject.set(x, "resolved", js.undefined)
+      inline def setResolvedUndefined: Self = StObject.set(x, "resolved", js.undefined)
       
-      @scala.inline
-      def setTmpdir(value: Boolean): Self = StObject.set(x, "tmpdir", value.asInstanceOf[js.Any])
+      inline def setTmpdir(value: Boolean): Self = StObject.set(x, "tmpdir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTmpdirUndefined: Self = StObject.set(x, "tmpdir", js.undefined)
+      inline def setTmpdirUndefined: Self = StObject.set(x, "tmpdir", js.undefined)
     }
   }
 }

@@ -28,34 +28,25 @@ trait Attribute extends StObject {
 }
 object Attribute {
   
-  @scala.inline
-  def apply(name: String): Attribute = {
+  inline def apply(name: String): Attribute = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attribute]
   }
   
-  @scala.inline
-  implicit class AttributeMutableBuilder[Self <: Attribute] (val x: Self) extends AnyVal {
+  extension [Self <: Attribute](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetId(value: String): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
+    inline def setTargetId(value: String): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetIdUndefined: Self = StObject.set(x, "targetId", js.undefined)
+    inline def setTargetIdUndefined: Self = StObject.set(x, "targetId", js.undefined)
     
-    @scala.inline
-    def setTargetType(value: TargetType): Self = StObject.set(x, "targetType", value.asInstanceOf[js.Any])
+    inline def setTargetType(value: TargetType): Self = StObject.set(x, "targetType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetTypeUndefined: Self = StObject.set(x, "targetType", js.undefined)
+    inline def setTargetTypeUndefined: Self = StObject.set(x, "targetType", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

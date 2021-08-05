@@ -14,28 +14,21 @@ trait ListAccessLevelsResponse extends StObject {
 }
 object ListAccessLevelsResponse {
   
-  @scala.inline
-  def apply(): ListAccessLevelsResponse = {
+  inline def apply(): ListAccessLevelsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListAccessLevelsResponse]
   }
   
-  @scala.inline
-  implicit class ListAccessLevelsResponseMutableBuilder[Self <: ListAccessLevelsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListAccessLevelsResponse](x: Self) {
     
-    @scala.inline
-    def setAccessLevels(value: js.Array[AccessLevel]): Self = StObject.set(x, "accessLevels", value.asInstanceOf[js.Any])
+    inline def setAccessLevels(value: js.Array[AccessLevel]): Self = StObject.set(x, "accessLevels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessLevelsUndefined: Self = StObject.set(x, "accessLevels", js.undefined)
+    inline def setAccessLevelsUndefined: Self = StObject.set(x, "accessLevels", js.undefined)
     
-    @scala.inline
-    def setAccessLevelsVarargs(value: AccessLevel*): Self = StObject.set(x, "accessLevels", js.Array(value :_*))
+    inline def setAccessLevelsVarargs(value: AccessLevel*): Self = StObject.set(x, "accessLevels", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

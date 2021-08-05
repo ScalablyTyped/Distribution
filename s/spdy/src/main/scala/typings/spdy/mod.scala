@@ -35,8 +35,7 @@ object mod {
       def this(opts: typings.node.httpMod.AgentOptions) = this()
     }
     
-    @scala.inline
-    def create(base: js.Any, options: typings.spdy.mod.agent.AgentOptions): Agent | typings.spdy.mod.agent.PlainAgent = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(base.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Agent | typings.spdy.mod.agent.PlainAgent]
+    inline def create(base: js.Any, options: typings.spdy.mod.agent.AgentOptions): Agent | typings.spdy.mod.agent.PlainAgent = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(base.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Agent | typings.spdy.mod.agent.PlainAgent]
     
     trait AgentOptions
       extends StObject
@@ -46,31 +45,24 @@ object mod {
     }
     object AgentOptions {
       
-      @scala.inline
-      def apply(): typings.spdy.mod.agent.AgentOptions = {
+      inline def apply(): typings.spdy.mod.agent.AgentOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.spdy.mod.agent.AgentOptions]
       }
       
-      @scala.inline
-      implicit class AgentOptionsMutableBuilder[Self <: typings.spdy.mod.agent.AgentOptions] (val x: Self) extends AnyVal {
+      extension [Self <: typings.spdy.mod.agent.AgentOptions](x: Self) {
         
-        @scala.inline
-        def setSpdy(value: Plain): Self = StObject.set(x, "spdy", value.asInstanceOf[js.Any])
+        inline def setSpdy(value: Plain): Self = StObject.set(x, "spdy", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpdyUndefined: Self = StObject.set(x, "spdy", js.undefined)
+        inline def setSpdyUndefined: Self = StObject.set(x, "spdy", js.undefined)
       }
     }
   }
   
-  @scala.inline
-  def createAgent(base: js.Any, options: AgentOptions): Agent_ | PlainAgent = (^.asInstanceOf[js.Dynamic].applyDynamic("createAgent")(base.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Agent_ | PlainAgent]
-  @scala.inline
-  def createAgent(options: AgentOptions): Agent_ | PlainAgent = ^.asInstanceOf[js.Dynamic].applyDynamic("createAgent")(options.asInstanceOf[js.Any]).asInstanceOf[Agent_ | PlainAgent]
+  inline def createAgent(base: js.Any, options: AgentOptions): Agent_ | PlainAgent = (^.asInstanceOf[js.Dynamic].applyDynamic("createAgent")(base.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Agent_ | PlainAgent]
+  inline def createAgent(options: AgentOptions): Agent_ | PlainAgent = ^.asInstanceOf[js.Dynamic].applyDynamic("createAgent")(options.asInstanceOf[js.Any]).asInstanceOf[Agent_ | PlainAgent]
   
-  @scala.inline
-  def createServer(
+  inline def createServer(
     base: js.Any,
     options: ServerOptions,
     handler: js.Function2[
@@ -79,16 +71,14 @@ object mod {
       Unit
     ]
   ): Server_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(base.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Server_]
-  @scala.inline
-  def createServer(
+  inline def createServer(
     handler: js.Function2[
       /* request */ IncomingMessage, 
       /* response */ typings.node.httpMod.ServerResponse, 
       Unit
     ]
   ): Server_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(handler.asInstanceOf[js.Any]).asInstanceOf[Server_]
-  @scala.inline
-  def createServer(
+  inline def createServer(
     options: ServerOptions,
     handler: js.Function2[
       /* request */ IncomingMessage, 
@@ -103,8 +93,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def onNewListener(`type`: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onNewListener")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onNewListener(`type`: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onNewListener")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   object response {
@@ -113,13 +102,10 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def end(data: js.Any, encoding: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("end")(data.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def end(data: js.Any, encoding: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("end")(data.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def writeHead(statusCode: Double, obj: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeHead")(statusCode.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def writeHead(statusCode: Double, reason: String, obj: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeHead")(statusCode.asInstanceOf[js.Any], reason.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def writeHead(statusCode: Double, obj: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeHead")(statusCode.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def writeHead(statusCode: Double, reason: String, obj: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeHead")(statusCode.asInstanceOf[js.Any], reason.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   object server {
@@ -128,8 +114,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(
+    inline def create(
       base: js.Any,
       options: typings.node.httpsMod.ServerOptions,
       handler: js.Function2[
@@ -138,16 +123,14 @@ object mod {
           Unit
         ]
     ): Server = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(base.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Server]
-    @scala.inline
-    def create(
+    inline def create(
       handler: js.Function2[
           /* request */ typings.spdy.mod.server.IncomingMessage, 
           /* response */ typings.spdy.mod.server.ServerResponse | typings.node.httpMod.ServerResponse, 
           Unit
         ]
     ): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(handler.asInstanceOf[js.Any]).asInstanceOf[Server]
-    @scala.inline
-    def create(
+    inline def create(
       options: typings.node.httpsMod.ServerOptions,
       handler: js.Function2[
           /* request */ typings.spdy.mod.server.IncomingMessage, 
@@ -171,23 +154,17 @@ object mod {
     trait Protocol extends StObject
     object Protocol {
       
-      @scala.inline
-      def h2: typings.spdy.spdyStrings.h2 = "h2".asInstanceOf[typings.spdy.spdyStrings.h2]
+      inline def h2: typings.spdy.spdyStrings.h2 = "h2".asInstanceOf[typings.spdy.spdyStrings.h2]
       
-      @scala.inline
-      def httpSlash1Dot0: typings.spdy.spdyStrings.httpSlash1Dot0 = "http/1.0".asInstanceOf[typings.spdy.spdyStrings.httpSlash1Dot0]
+      inline def httpSlash1Dot0: typings.spdy.spdyStrings.httpSlash1Dot0 = "http/1.0".asInstanceOf[typings.spdy.spdyStrings.httpSlash1Dot0]
       
-      @scala.inline
-      def httpSlash1Dot1: typings.spdy.spdyStrings.httpSlash1Dot1 = "http/1.1".asInstanceOf[typings.spdy.spdyStrings.httpSlash1Dot1]
+      inline def httpSlash1Dot1: typings.spdy.spdyStrings.httpSlash1Dot1 = "http/1.1".asInstanceOf[typings.spdy.spdyStrings.httpSlash1Dot1]
       
-      @scala.inline
-      def spdySlash2: typings.spdy.spdyStrings.spdySlash2 = "spdy/2".asInstanceOf[typings.spdy.spdyStrings.spdySlash2]
+      inline def spdySlash2: typings.spdy.spdyStrings.spdySlash2 = "spdy/2".asInstanceOf[typings.spdy.spdyStrings.spdySlash2]
       
-      @scala.inline
-      def spdySlash3: typings.spdy.spdyStrings.spdySlash3 = "spdy/3".asInstanceOf[typings.spdy.spdyStrings.spdySlash3]
+      inline def spdySlash3: typings.spdy.spdyStrings.spdySlash3 = "spdy/3".asInstanceOf[typings.spdy.spdyStrings.spdySlash3]
       
-      @scala.inline
-      def spdySlash3Dot1: typings.spdy.spdyStrings.spdySlash3Dot1 = "spdy/3.1".asInstanceOf[typings.spdy.spdyStrings.spdySlash3Dot1]
+      inline def spdySlash3Dot1: typings.spdy.spdyStrings.spdySlash3Dot1 = "spdy/3.1".asInstanceOf[typings.spdy.spdyStrings.spdySlash3Dot1]
     }
     
     trait PushOptions extends StObject {
@@ -202,38 +179,28 @@ object mod {
     }
     object PushOptions {
       
-      @scala.inline
-      def apply(): PushOptions = {
+      inline def apply(): PushOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[PushOptions]
       }
       
-      @scala.inline
-      implicit class PushOptionsMutableBuilder[Self <: PushOptions] (val x: Self) extends AnyVal {
+      extension [Self <: PushOptions](x: Self) {
         
-        @scala.inline
-        def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+        inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+        inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
         
-        @scala.inline
-        def setRequest(value: js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+        inline def setRequest(value: js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+        inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
         
-        @scala.inline
-        def setResponse(value: js.Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+        inline def setResponse(value: js.Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+        inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
         
-        @scala.inline
-        def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+        inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+        inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       }
     }
     
@@ -247,20 +214,16 @@ object mod {
     }
     object ServerOptions {
       
-      @scala.inline
-      def apply(): typings.spdy.mod.server.ServerOptions = {
+      inline def apply(): typings.spdy.mod.server.ServerOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.spdy.mod.server.ServerOptions]
       }
       
-      @scala.inline
-      implicit class ServerOptionsMutableBuilder[Self <: typings.spdy.mod.server.ServerOptions] (val x: Self) extends AnyVal {
+      extension [Self <: typings.spdy.mod.server.ServerOptions](x: Self) {
         
-        @scala.inline
-        def setSpdy(value: Connection): Self = StObject.set(x, "spdy", value.asInstanceOf[js.Any])
+        inline def setSpdy(value: Connection): Self = StObject.set(x, "spdy", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpdyUndefined: Self = StObject.set(x, "spdy", js.undefined)
+        inline def setSpdyUndefined: Self = StObject.set(x, "spdy", js.undefined)
       }
     }
     

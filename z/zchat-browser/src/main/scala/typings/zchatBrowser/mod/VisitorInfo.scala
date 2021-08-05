@@ -14,22 +14,17 @@ trait VisitorInfo extends StObject {
 }
 object VisitorInfo {
   
-  @scala.inline
-  def apply(display_name: String, email: String, phone: String): VisitorInfo = {
+  inline def apply(display_name: String, email: String, phone: String): VisitorInfo = {
     val __obj = js.Dynamic.literal(display_name = display_name.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any])
     __obj.asInstanceOf[VisitorInfo]
   }
   
-  @scala.inline
-  implicit class VisitorInfoMutableBuilder[Self <: VisitorInfo] (val x: Self) extends AnyVal {
+  extension [Self <: VisitorInfo](x: Self) {
     
-    @scala.inline
-    def setDisplay_name(value: String): Self = StObject.set(x, "display_name", value.asInstanceOf[js.Any])
+    inline def setDisplay_name(value: String): Self = StObject.set(x, "display_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+    inline def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
   }
 }

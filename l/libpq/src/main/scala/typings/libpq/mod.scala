@@ -405,23 +405,18 @@ object mod {
   }
   object NotifyMsg {
     
-    @scala.inline
-    def apply(be_pid: Double, extra: String, relname: String): NotifyMsg = {
+    inline def apply(be_pid: Double, extra: String, relname: String): NotifyMsg = {
       val __obj = js.Dynamic.literal(be_pid = be_pid.asInstanceOf[js.Any], extra = extra.asInstanceOf[js.Any], relname = relname.asInstanceOf[js.Any])
       __obj.asInstanceOf[NotifyMsg]
     }
     
-    @scala.inline
-    implicit class NotifyMsgMutableBuilder[Self <: NotifyMsg] (val x: Self) extends AnyVal {
+    extension [Self <: NotifyMsg](x: Self) {
       
-      @scala.inline
-      def setBe_pid(value: Double): Self = StObject.set(x, "be_pid", value.asInstanceOf[js.Any])
+      inline def setBe_pid(value: Double): Self = StObject.set(x, "be_pid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtra(value: String): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+      inline def setExtra(value: String): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelname(value: String): Self = StObject.set(x, "relname", value.asInstanceOf[js.Any])
+      inline def setRelname(value: String): Self = StObject.set(x, "relname", value.asInstanceOf[js.Any])
     }
   }
   
@@ -461,8 +456,7 @@ object mod {
   }
   object ResultError {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       messagePrimary: String,
       severity: String,
       sourceFile: String,
@@ -474,86 +468,59 @@ object mod {
       __obj.asInstanceOf[ResultError]
     }
     
-    @scala.inline
-    implicit class ResultErrorMutableBuilder[Self <: ResultError] (val x: Self) extends AnyVal {
+    extension [Self <: ResultError](x: Self) {
       
-      @scala.inline
-      def setConstraintName(value: String): Self = StObject.set(x, "constraintName", value.asInstanceOf[js.Any])
+      inline def setConstraintName(value: String): Self = StObject.set(x, "constraintName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConstraintNameUndefined: Self = StObject.set(x, "constraintName", js.undefined)
+      inline def setConstraintNameUndefined: Self = StObject.set(x, "constraintName", js.undefined)
       
-      @scala.inline
-      def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setDataTypeName(value: String): Self = StObject.set(x, "dataTypeName", value.asInstanceOf[js.Any])
+      inline def setDataTypeName(value: String): Self = StObject.set(x, "dataTypeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataTypeNameUndefined: Self = StObject.set(x, "dataTypeName", js.undefined)
+      inline def setDataTypeNameUndefined: Self = StObject.set(x, "dataTypeName", js.undefined)
       
-      @scala.inline
-      def setInternalPosition(value: String): Self = StObject.set(x, "internalPosition", value.asInstanceOf[js.Any])
+      inline def setInternalPosition(value: String): Self = StObject.set(x, "internalPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInternalPositionUndefined: Self = StObject.set(x, "internalPosition", js.undefined)
+      inline def setInternalPositionUndefined: Self = StObject.set(x, "internalPosition", js.undefined)
       
-      @scala.inline
-      def setInternalQuery(value: String): Self = StObject.set(x, "internalQuery", value.asInstanceOf[js.Any])
+      inline def setInternalQuery(value: String): Self = StObject.set(x, "internalQuery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInternalQueryUndefined: Self = StObject.set(x, "internalQuery", js.undefined)
+      inline def setInternalQueryUndefined: Self = StObject.set(x, "internalQuery", js.undefined)
       
-      @scala.inline
-      def setMessageDetail(value: String): Self = StObject.set(x, "messageDetail", value.asInstanceOf[js.Any])
+      inline def setMessageDetail(value: String): Self = StObject.set(x, "messageDetail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageDetailUndefined: Self = StObject.set(x, "messageDetail", js.undefined)
+      inline def setMessageDetailUndefined: Self = StObject.set(x, "messageDetail", js.undefined)
       
-      @scala.inline
-      def setMessageHint(value: String): Self = StObject.set(x, "messageHint", value.asInstanceOf[js.Any])
+      inline def setMessageHint(value: String): Self = StObject.set(x, "messageHint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageHintUndefined: Self = StObject.set(x, "messageHint", js.undefined)
+      inline def setMessageHintUndefined: Self = StObject.set(x, "messageHint", js.undefined)
       
-      @scala.inline
-      def setMessagePrimary(value: String): Self = StObject.set(x, "messagePrimary", value.asInstanceOf[js.Any])
+      inline def setMessagePrimary(value: String): Self = StObject.set(x, "messagePrimary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaName(value: String): Self = StObject.set(x, "schemaName", value.asInstanceOf[js.Any])
+      inline def setSchemaName(value: String): Self = StObject.set(x, "schemaName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaNameUndefined: Self = StObject.set(x, "schemaName", js.undefined)
+      inline def setSchemaNameUndefined: Self = StObject.set(x, "schemaName", js.undefined)
       
-      @scala.inline
-      def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+      inline def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceFile(value: String): Self = StObject.set(x, "sourceFile", value.asInstanceOf[js.Any])
+      inline def setSourceFile(value: String): Self = StObject.set(x, "sourceFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceFunction(value: String): Self = StObject.set(x, "sourceFunction", value.asInstanceOf[js.Any])
+      inline def setSourceFunction(value: String): Self = StObject.set(x, "sourceFunction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceLine(value: String): Self = StObject.set(x, "sourceLine", value.asInstanceOf[js.Any])
+      inline def setSourceLine(value: String): Self = StObject.set(x, "sourceLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSqlState(value: String): Self = StObject.set(x, "sqlState", value.asInstanceOf[js.Any])
+      inline def setSqlState(value: String): Self = StObject.set(x, "sqlState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatementPosition(value: String): Self = StObject.set(x, "statementPosition", value.asInstanceOf[js.Any])
+      inline def setStatementPosition(value: String): Self = StObject.set(x, "statementPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatementPositionUndefined: Self = StObject.set(x, "statementPosition", js.undefined)
+      inline def setStatementPositionUndefined: Self = StObject.set(x, "statementPosition", js.undefined)
       
-      @scala.inline
-      def setTableName(value: String): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: String): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableNameUndefined: Self = StObject.set(x, "tableName", js.undefined)
+      inline def setTableNameUndefined: Self = StObject.set(x, "tableName", js.undefined)
     }
   }
 }

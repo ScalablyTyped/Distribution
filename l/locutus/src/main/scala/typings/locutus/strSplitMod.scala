@@ -6,14 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object strSplitMod {
   
-  @scala.inline
-  def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  @scala.inline
-  def apply(string: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(string: js.Any, splitLength: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], splitLength.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(string: Unit, splitLength: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], splitLength.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+  inline def apply(string: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(string: js.Any, splitLength: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], splitLength.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(string: Unit, splitLength: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], splitLength.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   @JSImport("locutus/php/strings/str_split", JSImport.Namespace)
   @js.native

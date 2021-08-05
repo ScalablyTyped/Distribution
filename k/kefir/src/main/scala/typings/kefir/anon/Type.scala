@@ -16,20 +16,16 @@ trait Type[V]
 }
 object Type {
   
-  @scala.inline
-  def apply[V](value: V): Type[V] = {
+  inline def apply[V](value: V): Type[V] = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("value")
     __obj.asInstanceOf[Type[V]]
   }
   
-  @scala.inline
-  implicit class TypeMutableBuilder[Self <: Type[?], V] (val x: Self & Type[V]) extends AnyVal {
+  extension [Self <: Type[?], V](x: Self & Type[V]) {
     
-    @scala.inline
-    def setType(value: value): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: value): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: V): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: V): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

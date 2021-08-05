@@ -19,19 +19,15 @@ trait SchemaDisableServiceRequest extends StObject {
 }
 object SchemaDisableServiceRequest {
   
-  @scala.inline
-  def apply(): SchemaDisableServiceRequest = {
+  inline def apply(): SchemaDisableServiceRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDisableServiceRequest]
   }
   
-  @scala.inline
-  implicit class SchemaDisableServiceRequestMutableBuilder[Self <: SchemaDisableServiceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDisableServiceRequest](x: Self) {
     
-    @scala.inline
-    def setConsumerId(value: String): Self = StObject.set(x, "consumerId", value.asInstanceOf[js.Any])
+    inline def setConsumerId(value: String): Self = StObject.set(x, "consumerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumerIdUndefined: Self = StObject.set(x, "consumerId", js.undefined)
+    inline def setConsumerIdUndefined: Self = StObject.set(x, "consumerId", js.undefined)
   }
 }

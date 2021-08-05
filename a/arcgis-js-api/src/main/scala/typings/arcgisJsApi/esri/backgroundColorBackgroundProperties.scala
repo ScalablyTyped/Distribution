@@ -17,22 +17,17 @@ trait backgroundColorBackgroundProperties
 }
 object backgroundColorBackgroundProperties {
   
-  @scala.inline
-  def apply(): backgroundColorBackgroundProperties = {
+  inline def apply(): backgroundColorBackgroundProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[backgroundColorBackgroundProperties]
   }
   
-  @scala.inline
-  implicit class backgroundColorBackgroundPropertiesMutableBuilder[Self <: backgroundColorBackgroundProperties] (val x: Self) extends AnyVal {
+  extension [Self <: backgroundColorBackgroundProperties](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
   }
 }

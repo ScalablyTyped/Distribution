@@ -14,20 +14,16 @@ object uploadRepositoryVideoResponseMod {
   }
   object UploadRepositoryVideoResponseRootObject {
     
-    @scala.inline
-    def apply(status: String, xsharing_nonces: UploadRepositoryVideoResponseXsharingNonces): UploadRepositoryVideoResponseRootObject = {
+    inline def apply(status: String, xsharing_nonces: UploadRepositoryVideoResponseXsharingNonces): UploadRepositoryVideoResponseRootObject = {
       val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], xsharing_nonces = xsharing_nonces.asInstanceOf[js.Any])
       __obj.asInstanceOf[UploadRepositoryVideoResponseRootObject]
     }
     
-    @scala.inline
-    implicit class UploadRepositoryVideoResponseRootObjectMutableBuilder[Self <: UploadRepositoryVideoResponseRootObject] (val x: Self) extends AnyVal {
+    extension [Self <: UploadRepositoryVideoResponseRootObject](x: Self) {
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXsharing_nonces(value: UploadRepositoryVideoResponseXsharingNonces): Self = StObject.set(x, "xsharing_nonces", value.asInstanceOf[js.Any])
+      inline def setXsharing_nonces(value: UploadRepositoryVideoResponseXsharingNonces): Self = StObject.set(x, "xsharing_nonces", value.asInstanceOf[js.Any])
     }
   }
   

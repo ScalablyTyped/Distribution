@@ -12,25 +12,19 @@ trait DropDownListAnimationClose extends StObject {
 }
 object DropDownListAnimationClose {
   
-  @scala.inline
-  def apply(): DropDownListAnimationClose = {
+  inline def apply(): DropDownListAnimationClose = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DropDownListAnimationClose]
   }
   
-  @scala.inline
-  implicit class DropDownListAnimationCloseMutableBuilder[Self <: DropDownListAnimationClose] (val x: Self) extends AnyVal {
+  extension [Self <: DropDownListAnimationClose](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setEffects(value: String): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
+    inline def setEffects(value: String): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffectsUndefined: Self = StObject.set(x, "effects", js.undefined)
+    inline def setEffectsUndefined: Self = StObject.set(x, "effects", js.undefined)
   }
 }

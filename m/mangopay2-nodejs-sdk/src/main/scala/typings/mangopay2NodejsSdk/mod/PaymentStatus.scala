@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PaymentStatus extends StObject
 object PaymentStatus {
   
-  @scala.inline
-  def CANCELED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CANCELED = "CANCELED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CANCELED]
+  inline def CANCELED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CANCELED = "CANCELED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CANCELED]
   
-  @scala.inline
-  def EXPIRED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.EXPIRED = "EXPIRED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.EXPIRED]
+  inline def EXPIRED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.EXPIRED = "EXPIRED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.EXPIRED]
   
-  @scala.inline
-  def VALIDATED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.VALIDATED = "VALIDATED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.VALIDATED]
+  inline def VALIDATED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.VALIDATED = "VALIDATED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.VALIDATED]
   
-  @scala.inline
-  def WAITING: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.WAITING = "WAITING".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.WAITING]
+  inline def WAITING: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.WAITING = "WAITING".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.WAITING]
 }

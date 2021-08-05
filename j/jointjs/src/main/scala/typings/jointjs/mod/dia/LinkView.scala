@@ -171,56 +171,40 @@ object LinkView {
   }
   object InteractivityOptions {
     
-    @scala.inline
-    def apply(): InteractivityOptions = {
+    inline def apply(): InteractivityOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InteractivityOptions]
     }
     
-    @scala.inline
-    implicit class InteractivityOptionsMutableBuilder[Self <: InteractivityOptions] (val x: Self) extends AnyVal {
+    extension [Self <: InteractivityOptions](x: Self) {
       
-      @scala.inline
-      def setArrowheadMove(value: Boolean): Self = StObject.set(x, "arrowheadMove", value.asInstanceOf[js.Any])
+      inline def setArrowheadMove(value: Boolean): Self = StObject.set(x, "arrowheadMove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrowheadMoveUndefined: Self = StObject.set(x, "arrowheadMove", js.undefined)
+      inline def setArrowheadMoveUndefined: Self = StObject.set(x, "arrowheadMove", js.undefined)
       
-      @scala.inline
-      def setLabelMove(value: Boolean): Self = StObject.set(x, "labelMove", value.asInstanceOf[js.Any])
+      inline def setLabelMove(value: Boolean): Self = StObject.set(x, "labelMove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelMoveUndefined: Self = StObject.set(x, "labelMove", js.undefined)
+      inline def setLabelMoveUndefined: Self = StObject.set(x, "labelMove", js.undefined)
       
-      @scala.inline
-      def setLinkMove(value: Boolean): Self = StObject.set(x, "linkMove", value.asInstanceOf[js.Any])
+      inline def setLinkMove(value: Boolean): Self = StObject.set(x, "linkMove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkMoveUndefined: Self = StObject.set(x, "linkMove", js.undefined)
+      inline def setLinkMoveUndefined: Self = StObject.set(x, "linkMove", js.undefined)
       
-      @scala.inline
-      def setUseLinkTools(value: Boolean): Self = StObject.set(x, "useLinkTools", value.asInstanceOf[js.Any])
+      inline def setUseLinkTools(value: Boolean): Self = StObject.set(x, "useLinkTools", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseLinkToolsUndefined: Self = StObject.set(x, "useLinkTools", js.undefined)
+      inline def setUseLinkToolsUndefined: Self = StObject.set(x, "useLinkTools", js.undefined)
       
-      @scala.inline
-      def setVertexAdd(value: Boolean): Self = StObject.set(x, "vertexAdd", value.asInstanceOf[js.Any])
+      inline def setVertexAdd(value: Boolean): Self = StObject.set(x, "vertexAdd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVertexAddUndefined: Self = StObject.set(x, "vertexAdd", js.undefined)
+      inline def setVertexAddUndefined: Self = StObject.set(x, "vertexAdd", js.undefined)
       
-      @scala.inline
-      def setVertexMove(value: Boolean): Self = StObject.set(x, "vertexMove", value.asInstanceOf[js.Any])
+      inline def setVertexMove(value: Boolean): Self = StObject.set(x, "vertexMove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVertexMoveUndefined: Self = StObject.set(x, "vertexMove", js.undefined)
+      inline def setVertexMoveUndefined: Self = StObject.set(x, "vertexMove", js.undefined)
       
-      @scala.inline
-      def setVertexRemove(value: Boolean): Self = StObject.set(x, "vertexRemove", value.asInstanceOf[js.Any])
+      inline def setVertexRemove(value: Boolean): Self = StObject.set(x, "vertexRemove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVertexRemoveUndefined: Self = StObject.set(x, "vertexRemove", js.undefined)
+      inline def setVertexRemoveUndefined: Self = StObject.set(x, "vertexRemove", js.undefined)
     }
   }
   
@@ -240,44 +224,32 @@ object LinkView {
   }
   object LabelOptions {
     
-    @scala.inline
-    def apply(): LabelOptions = {
+    inline def apply(): LabelOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LabelOptions]
     }
     
-    @scala.inline
-    implicit class LabelOptionsMutableBuilder[Self <: LabelOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LabelOptions](x: Self) {
       
-      @scala.inline
-      def setAbsoluteDistance(value: Boolean): Self = StObject.set(x, "absoluteDistance", value.asInstanceOf[js.Any])
+      inline def setAbsoluteDistance(value: Boolean): Self = StObject.set(x, "absoluteDistance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbsoluteDistanceUndefined: Self = StObject.set(x, "absoluteDistance", js.undefined)
+      inline def setAbsoluteDistanceUndefined: Self = StObject.set(x, "absoluteDistance", js.undefined)
       
-      @scala.inline
-      def setAbsoluteOffset(value: Boolean): Self = StObject.set(x, "absoluteOffset", value.asInstanceOf[js.Any])
+      inline def setAbsoluteOffset(value: Boolean): Self = StObject.set(x, "absoluteOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbsoluteOffsetUndefined: Self = StObject.set(x, "absoluteOffset", js.undefined)
+      inline def setAbsoluteOffsetUndefined: Self = StObject.set(x, "absoluteOffset", js.undefined)
       
-      @scala.inline
-      def setEnsureLegibility(value: Boolean): Self = StObject.set(x, "ensureLegibility", value.asInstanceOf[js.Any])
+      inline def setEnsureLegibility(value: Boolean): Self = StObject.set(x, "ensureLegibility", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnsureLegibilityUndefined: Self = StObject.set(x, "ensureLegibility", js.undefined)
+      inline def setEnsureLegibilityUndefined: Self = StObject.set(x, "ensureLegibility", js.undefined)
       
-      @scala.inline
-      def setKeepGradient(value: Boolean): Self = StObject.set(x, "keepGradient", value.asInstanceOf[js.Any])
+      inline def setKeepGradient(value: Boolean): Self = StObject.set(x, "keepGradient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepGradientUndefined: Self = StObject.set(x, "keepGradient", js.undefined)
+      inline def setKeepGradientUndefined: Self = StObject.set(x, "keepGradient", js.undefined)
       
-      @scala.inline
-      def setReverseDistance(value: Boolean): Self = StObject.set(x, "reverseDistance", value.asInstanceOf[js.Any])
+      inline def setReverseDistance(value: Boolean): Self = StObject.set(x, "reverseDistance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReverseDistanceUndefined: Self = StObject.set(x, "reverseDistance", js.undefined)
+      inline def setReverseDistanceUndefined: Self = StObject.set(x, "reverseDistance", js.undefined)
     }
   }
   
@@ -299,50 +271,36 @@ object LinkView {
   }
   object Options {
     
-    @scala.inline
-    def apply(): typings.jointjs.mod.dia.LinkView.Options = {
+    inline def apply(): typings.jointjs.mod.dia.LinkView.Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.jointjs.mod.dia.LinkView.Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: typings.jointjs.mod.dia.LinkView.Options] (val x: Self) extends AnyVal {
+    extension [Self <: typings.jointjs.mod.dia.LinkView.Options](x: Self) {
       
-      @scala.inline
-      def setDoubleLinkTools(value: Boolean): Self = StObject.set(x, "doubleLinkTools", value.asInstanceOf[js.Any])
+      inline def setDoubleLinkTools(value: Boolean): Self = StObject.set(x, "doubleLinkTools", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDoubleLinkToolsOffset(value: Double): Self = StObject.set(x, "doubleLinkToolsOffset", value.asInstanceOf[js.Any])
+      inline def setDoubleLinkToolsOffset(value: Double): Self = StObject.set(x, "doubleLinkToolsOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDoubleLinkToolsOffsetUndefined: Self = StObject.set(x, "doubleLinkToolsOffset", js.undefined)
+      inline def setDoubleLinkToolsOffsetUndefined: Self = StObject.set(x, "doubleLinkToolsOffset", js.undefined)
       
-      @scala.inline
-      def setDoubleLinkToolsUndefined: Self = StObject.set(x, "doubleLinkTools", js.undefined)
+      inline def setDoubleLinkToolsUndefined: Self = StObject.set(x, "doubleLinkTools", js.undefined)
       
-      @scala.inline
-      def setLinkToolsOffset(value: Double): Self = StObject.set(x, "linkToolsOffset", value.asInstanceOf[js.Any])
+      inline def setLinkToolsOffset(value: Double): Self = StObject.set(x, "linkToolsOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkToolsOffsetUndefined: Self = StObject.set(x, "linkToolsOffset", js.undefined)
+      inline def setLinkToolsOffsetUndefined: Self = StObject.set(x, "linkToolsOffset", js.undefined)
       
-      @scala.inline
-      def setLongLinkLength(value: Double): Self = StObject.set(x, "longLinkLength", value.asInstanceOf[js.Any])
+      inline def setLongLinkLength(value: Double): Self = StObject.set(x, "longLinkLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongLinkLengthUndefined: Self = StObject.set(x, "longLinkLength", js.undefined)
+      inline def setLongLinkLengthUndefined: Self = StObject.set(x, "longLinkLength", js.undefined)
       
-      @scala.inline
-      def setSampleInterval(value: Double): Self = StObject.set(x, "sampleInterval", value.asInstanceOf[js.Any])
+      inline def setSampleInterval(value: Double): Self = StObject.set(x, "sampleInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSampleIntervalUndefined: Self = StObject.set(x, "sampleInterval", js.undefined)
+      inline def setSampleIntervalUndefined: Self = StObject.set(x, "sampleInterval", js.undefined)
       
-      @scala.inline
-      def setShortLinkLength(value: Double): Self = StObject.set(x, "shortLinkLength", value.asInstanceOf[js.Any])
+      inline def setShortLinkLength(value: Double): Self = StObject.set(x, "shortLinkLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortLinkLengthUndefined: Self = StObject.set(x, "shortLinkLength", js.undefined)
+      inline def setShortLinkLengthUndefined: Self = StObject.set(x, "shortLinkLength", js.undefined)
     }
   }
   

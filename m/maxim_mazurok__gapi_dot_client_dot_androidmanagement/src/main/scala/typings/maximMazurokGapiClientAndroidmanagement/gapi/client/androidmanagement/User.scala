@@ -14,19 +14,15 @@ trait User extends StObject {
 }
 object User {
   
-  @scala.inline
-  def apply(): User = {
+  inline def apply(): User = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[User]
   }
   
-  @scala.inline
-  implicit class UserMutableBuilder[Self <: User] (val x: Self) extends AnyVal {
+  extension [Self <: User](x: Self) {
     
-    @scala.inline
-    def setAccountIdentifier(value: String): Self = StObject.set(x, "accountIdentifier", value.asInstanceOf[js.Any])
+    inline def setAccountIdentifier(value: String): Self = StObject.set(x, "accountIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdentifierUndefined: Self = StObject.set(x, "accountIdentifier", js.undefined)
+    inline def setAccountIdentifierUndefined: Self = StObject.set(x, "accountIdentifier", js.undefined)
   }
 }

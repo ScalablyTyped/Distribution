@@ -14,8 +14,7 @@ trait Stroke
 }
 object Stroke {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addEndNote: Note => Stroke,
     alignSubNotesWithNote: (js.Array[Note], Note) => Unit,
     draw: () => Unit,
@@ -82,10 +81,8 @@ object Stroke {
          with Type
   }
   
-  @scala.inline
-  implicit class StrokeMutableBuilder[Self <: Stroke] (val x: Self) extends AnyVal {
+  extension [Self <: Stroke](x: Self) {
     
-    @scala.inline
-    def setAddEndNote(value: Note => Stroke): Self = StObject.set(x, "addEndNote", js.Any.fromFunction1(value))
+    inline def setAddEndNote(value: Note => Stroke): Self = StObject.set(x, "addEndNote", js.Any.fromFunction1(value))
   }
 }

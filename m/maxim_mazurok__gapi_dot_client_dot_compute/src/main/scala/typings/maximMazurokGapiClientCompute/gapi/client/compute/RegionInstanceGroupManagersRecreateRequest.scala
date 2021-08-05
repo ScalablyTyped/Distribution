@@ -11,22 +11,17 @@ trait RegionInstanceGroupManagersRecreateRequest extends StObject {
 }
 object RegionInstanceGroupManagersRecreateRequest {
   
-  @scala.inline
-  def apply(): RegionInstanceGroupManagersRecreateRequest = {
+  inline def apply(): RegionInstanceGroupManagersRecreateRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegionInstanceGroupManagersRecreateRequest]
   }
   
-  @scala.inline
-  implicit class RegionInstanceGroupManagersRecreateRequestMutableBuilder[Self <: RegionInstanceGroupManagersRecreateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RegionInstanceGroupManagersRecreateRequest](x: Self) {
     
-    @scala.inline
-    def setInstances(value: js.Array[String]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
+    inline def setInstances(value: js.Array[String]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
+    inline def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
     
-    @scala.inline
-    def setInstancesVarargs(value: String*): Self = StObject.set(x, "instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: String*): Self = StObject.set(x, "instances", js.Array(value :_*))
   }
 }

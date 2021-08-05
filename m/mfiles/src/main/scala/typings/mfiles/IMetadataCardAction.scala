@@ -20,8 +20,7 @@ trait IMetadataCardAction extends StObject {
 }
 object IMetadataCardAction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Activate: () => Unit,
     Events: IEvents,
     GetExplanation: () => String,
@@ -33,25 +32,18 @@ object IMetadataCardAction {
     __obj.asInstanceOf[IMetadataCardAction]
   }
   
-  @scala.inline
-  implicit class IMetadataCardActionMutableBuilder[Self <: IMetadataCardAction] (val x: Self) extends AnyVal {
+  extension [Self <: IMetadataCardAction](x: Self) {
     
-    @scala.inline
-    def setActivate(value: () => Unit): Self = StObject.set(x, "Activate", js.Any.fromFunction0(value))
+    inline def setActivate(value: () => Unit): Self = StObject.set(x, "Activate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEvents(value: IEvents): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: IEvents): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetExplanation(value: () => String): Self = StObject.set(x, "GetExplanation", js.Any.fromFunction0(value))
+    inline def setGetExplanation(value: () => String): Self = StObject.set(x, "GetExplanation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "GetName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "GetName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsEnabled(value: () => Boolean): Self = StObject.set(x, "IsEnabled", js.Any.fromFunction0(value))
+    inline def setIsEnabled(value: () => Boolean): Self = StObject.set(x, "IsEnabled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsVisible(value: () => Boolean): Self = StObject.set(x, "IsVisible", js.Any.fromFunction0(value))
+    inline def setIsVisible(value: () => Boolean): Self = StObject.set(x, "IsVisible", js.Any.fromFunction0(value))
   }
 }

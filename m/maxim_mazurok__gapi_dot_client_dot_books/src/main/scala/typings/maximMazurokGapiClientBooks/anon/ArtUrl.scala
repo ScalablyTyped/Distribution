@@ -16,40 +16,29 @@ trait ArtUrl extends StObject {
 }
 object ArtUrl {
   
-  @scala.inline
-  def apply(): ArtUrl = {
+  inline def apply(): ArtUrl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ArtUrl]
   }
   
-  @scala.inline
-  implicit class ArtUrlMutableBuilder[Self <: ArtUrl] (val x: Self) extends AnyVal {
+  extension [Self <: ArtUrl](x: Self) {
     
-    @scala.inline
-    def setArtUrl(value: String): Self = StObject.set(x, "artUrl", value.asInstanceOf[js.Any])
+    inline def setArtUrl(value: String): Self = StObject.set(x, "artUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtUrlUndefined: Self = StObject.set(x, "artUrl", js.undefined)
+    inline def setArtUrlUndefined: Self = StObject.set(x, "artUrl", js.undefined)
     
-    @scala.inline
-    def setGservicesKey(value: String): Self = StObject.set(x, "gservicesKey", value.asInstanceOf[js.Any])
+    inline def setGservicesKey(value: String): Self = StObject.set(x, "gservicesKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGservicesKeyUndefined: Self = StObject.set(x, "gservicesKey", js.undefined)
+    inline def setGservicesKeyUndefined: Self = StObject.set(x, "gservicesKey", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setItems(value: js.Array[Author]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[Author]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: Author*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Author*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

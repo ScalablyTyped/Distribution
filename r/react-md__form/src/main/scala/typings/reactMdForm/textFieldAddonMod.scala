@@ -26,20 +26,16 @@ object textFieldAddonMod {
   }
   object TextFieldAddonProps {
     
-    @scala.inline
-    def apply(): TextFieldAddonProps = {
+    inline def apply(): TextFieldAddonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TextFieldAddonProps]
     }
     
-    @scala.inline
-    implicit class TextFieldAddonPropsMutableBuilder[Self <: TextFieldAddonProps] (val x: Self) extends AnyVal {
+    extension [Self <: TextFieldAddonProps](x: Self) {
       
-      @scala.inline
-      def setPresentational(value: Boolean): Self = StObject.set(x, "presentational", value.asInstanceOf[js.Any])
+      inline def setPresentational(value: Boolean): Self = StObject.set(x, "presentational", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPresentationalUndefined: Self = StObject.set(x, "presentational", js.undefined)
+      inline def setPresentationalUndefined: Self = StObject.set(x, "presentational", js.undefined)
     }
   }
 }

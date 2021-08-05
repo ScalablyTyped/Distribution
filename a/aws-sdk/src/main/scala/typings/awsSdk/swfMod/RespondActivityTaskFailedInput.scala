@@ -23,28 +23,21 @@ trait RespondActivityTaskFailedInput extends StObject {
 }
 object RespondActivityTaskFailedInput {
   
-  @scala.inline
-  def apply(taskToken: TaskToken): RespondActivityTaskFailedInput = {
+  inline def apply(taskToken: TaskToken): RespondActivityTaskFailedInput = {
     val __obj = js.Dynamic.literal(taskToken = taskToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[RespondActivityTaskFailedInput]
   }
   
-  @scala.inline
-  implicit class RespondActivityTaskFailedInputMutableBuilder[Self <: RespondActivityTaskFailedInput] (val x: Self) extends AnyVal {
+  extension [Self <: RespondActivityTaskFailedInput](x: Self) {
     
-    @scala.inline
-    def setDetails(value: Data): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: Data): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    @scala.inline
-    def setReason(value: FailureReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: FailureReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
-    @scala.inline
-    def setTaskToken(value: TaskToken): Self = StObject.set(x, "taskToken", value.asInstanceOf[js.Any])
+    inline def setTaskToken(value: TaskToken): Self = StObject.set(x, "taskToken", value.asInstanceOf[js.Any])
   }
 }

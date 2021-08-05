@@ -26,20 +26,16 @@ object typesUpdateCampaignOutputMod {
   }
   object UpdateCampaignOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata, CampaignResponse: UnmarshalledCampaignResponse): UpdateCampaignOutput = {
+    inline def apply($metadata: ResponseMetadata, CampaignResponse: UnmarshalledCampaignResponse): UpdateCampaignOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], CampaignResponse = CampaignResponse.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpdateCampaignOutput]
     }
     
-    @scala.inline
-    implicit class UpdateCampaignOutputMutableBuilder[Self <: UpdateCampaignOutput] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateCampaignOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCampaignResponse(value: UnmarshalledCampaignResponse): Self = StObject.set(x, "CampaignResponse", value.asInstanceOf[js.Any])
+      inline def setCampaignResponse(value: UnmarshalledCampaignResponse): Self = StObject.set(x, "CampaignResponse", value.asInstanceOf[js.Any])
     }
   }
 }

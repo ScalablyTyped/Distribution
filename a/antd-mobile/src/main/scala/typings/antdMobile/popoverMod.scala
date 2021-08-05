@@ -31,14 +31,12 @@ object popoverMod {
     @JSImport("antd-mobile/lib/popover", "default.Item")
     @js.native
     def Item: TypeofItemInstantiable = js.native
-    @scala.inline
-    def Item_=(x: TypeofItemInstantiable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+    inline def Item_=(x: TypeofItemInstantiable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile/lib/popover", "default.defaultProps")
     @js.native
     def defaultProps: Placement = js.native
-    @scala.inline
-    def defaultProps_=(x: Placement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Placement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait PopOverPropsType
@@ -57,44 +55,32 @@ object popoverMod {
   }
   object PopOverPropsType {
     
-    @scala.inline
-    def apply(): PopOverPropsType = {
+    inline def apply(): PopOverPropsType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PopOverPropsType]
     }
     
-    @scala.inline
-    implicit class PopOverPropsTypeMutableBuilder[Self <: PopOverPropsType] (val x: Self) extends AnyVal {
+    extension [Self <: PopOverPropsType](x: Self) {
       
-      @scala.inline
-      def setMask(value: Boolean): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+      inline def setMask(value: Boolean): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
+      inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
       
-      @scala.inline
-      def setOnVisibleChange(value: /* visible */ Boolean => Unit): Self = StObject.set(x, "onVisibleChange", js.Any.fromFunction1(value))
+      inline def setOnVisibleChange(value: /* visible */ Boolean => Unit): Self = StObject.set(x, "onVisibleChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnVisibleChangeUndefined: Self = StObject.set(x, "onVisibleChange", js.undefined)
+      inline def setOnVisibleChangeUndefined: Self = StObject.set(x, "onVisibleChange", js.undefined)
       
-      @scala.inline
-      def setPlacement(value: left | right | top | bottom | topLeft | topRight | bottomLeft | bottomRight): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: left | right | top | bottom | topLeft | topRight | bottomLeft | bottomRight): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+      inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+      inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     }
   }
   

@@ -11,6 +11,5 @@ object ignoredTransitionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def registerIgnoredTransitionHook(transitionService: TransitionService): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("registerIgnoredTransitionHook")(transitionService.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  inline def registerIgnoredTransitionHook(transitionService: TransitionService): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("registerIgnoredTransitionHook")(transitionService.asInstanceOf[js.Any]).asInstanceOf[js.Function]
 }

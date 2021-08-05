@@ -18,28 +18,21 @@ trait AdminListUserAuthEventsResponse extends StObject {
 }
 object AdminListUserAuthEventsResponse {
   
-  @scala.inline
-  def apply(): AdminListUserAuthEventsResponse = {
+  inline def apply(): AdminListUserAuthEventsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AdminListUserAuthEventsResponse]
   }
   
-  @scala.inline
-  implicit class AdminListUserAuthEventsResponseMutableBuilder[Self <: AdminListUserAuthEventsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AdminListUserAuthEventsResponse](x: Self) {
     
-    @scala.inline
-    def setAuthEvents(value: AuthEventsType): Self = StObject.set(x, "AuthEvents", value.asInstanceOf[js.Any])
+    inline def setAuthEvents(value: AuthEventsType): Self = StObject.set(x, "AuthEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthEventsUndefined: Self = StObject.set(x, "AuthEvents", js.undefined)
+    inline def setAuthEventsUndefined: Self = StObject.set(x, "AuthEvents", js.undefined)
     
-    @scala.inline
-    def setAuthEventsVarargs(value: AuthEventType*): Self = StObject.set(x, "AuthEvents", js.Array(value :_*))
+    inline def setAuthEventsVarargs(value: AuthEventType*): Self = StObject.set(x, "AuthEvents", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: PaginationKey): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationKey): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

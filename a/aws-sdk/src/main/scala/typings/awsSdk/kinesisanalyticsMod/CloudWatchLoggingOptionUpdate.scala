@@ -23,28 +23,21 @@ trait CloudWatchLoggingOptionUpdate extends StObject {
 }
 object CloudWatchLoggingOptionUpdate {
   
-  @scala.inline
-  def apply(CloudWatchLoggingOptionId: Id): CloudWatchLoggingOptionUpdate = {
+  inline def apply(CloudWatchLoggingOptionId: Id): CloudWatchLoggingOptionUpdate = {
     val __obj = js.Dynamic.literal(CloudWatchLoggingOptionId = CloudWatchLoggingOptionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudWatchLoggingOptionUpdate]
   }
   
-  @scala.inline
-  implicit class CloudWatchLoggingOptionUpdateMutableBuilder[Self <: CloudWatchLoggingOptionUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: CloudWatchLoggingOptionUpdate](x: Self) {
     
-    @scala.inline
-    def setCloudWatchLoggingOptionId(value: Id): Self = StObject.set(x, "CloudWatchLoggingOptionId", value.asInstanceOf[js.Any])
+    inline def setCloudWatchLoggingOptionId(value: Id): Self = StObject.set(x, "CloudWatchLoggingOptionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogStreamARNUpdate(value: LogStreamARN): Self = StObject.set(x, "LogStreamARNUpdate", value.asInstanceOf[js.Any])
+    inline def setLogStreamARNUpdate(value: LogStreamARN): Self = StObject.set(x, "LogStreamARNUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogStreamARNUpdateUndefined: Self = StObject.set(x, "LogStreamARNUpdate", js.undefined)
+    inline def setLogStreamARNUpdateUndefined: Self = StObject.set(x, "LogStreamARNUpdate", js.undefined)
     
-    @scala.inline
-    def setRoleARNUpdate(value: RoleARN): Self = StObject.set(x, "RoleARNUpdate", value.asInstanceOf[js.Any])
+    inline def setRoleARNUpdate(value: RoleARN): Self = StObject.set(x, "RoleARNUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleARNUpdateUndefined: Self = StObject.set(x, "RoleARNUpdate", js.undefined)
+    inline def setRoleARNUpdateUndefined: Self = StObject.set(x, "RoleARNUpdate", js.undefined)
   }
 }

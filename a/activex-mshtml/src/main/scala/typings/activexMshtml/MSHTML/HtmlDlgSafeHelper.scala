@@ -9,7 +9,7 @@ trait HtmlDlgSafeHelper extends StObject {
   
   val BlockFormats: js.Any = js.native
   
-  @JSName("MSHTML.HtmlDlgSafeHelper_typekey")
+  /* private */ @JSName("MSHTML.HtmlDlgSafeHelper_typekey")
   var MSHTMLDotHtmlDlgSafeHelper_typekey: HtmlDlgSafeHelper = js.native
   
   def choosecolordlg(): js.Any = js.native

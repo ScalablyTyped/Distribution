@@ -18,16 +18,13 @@ trait Print3DTaskRequest extends StObject {
 }
 object Print3DTaskRequest {
   
-  @scala.inline
-  def apply(createTask: (String, String, Print3DTaskSourceRequestedHandler) => Print3DTask): Print3DTaskRequest = {
+  inline def apply(createTask: (String, String, Print3DTaskSourceRequestedHandler) => Print3DTask): Print3DTaskRequest = {
     val __obj = js.Dynamic.literal(createTask = js.Any.fromFunction3(createTask))
     __obj.asInstanceOf[Print3DTaskRequest]
   }
   
-  @scala.inline
-  implicit class Print3DTaskRequestMutableBuilder[Self <: Print3DTaskRequest] (val x: Self) extends AnyVal {
+  extension [Self <: Print3DTaskRequest](x: Self) {
     
-    @scala.inline
-    def setCreateTask(value: (String, String, Print3DTaskSourceRequestedHandler) => Print3DTask): Self = StObject.set(x, "createTask", js.Any.fromFunction3(value))
+    inline def setCreateTask(value: (String, String, Print3DTaskSourceRequestedHandler) => Print3DTask): Self = StObject.set(x, "createTask", js.Any.fromFunction3(value))
   }
 }

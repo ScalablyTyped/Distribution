@@ -163,11 +163,9 @@ object DescriptorProto {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def deserializeBinary(bytes: Uint8Array): ExtensionRange = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[ExtensionRange]
+    inline def deserializeBinary(bytes: Uint8Array): ExtensionRange = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[ExtensionRange]
     
-    @scala.inline
-    def deserializeBinaryFromReader(message: ExtensionRange, reader: BinaryReader): ExtensionRange = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[ExtensionRange]
+    inline def deserializeBinaryFromReader(message: ExtensionRange, reader: BinaryReader): ExtensionRange = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[ExtensionRange]
     
     @JSImport("google-protobuf/google/protobuf/descriptor_pb", "DescriptorProto.ExtensionRange.extensions")
     @js.native
@@ -176,17 +174,13 @@ object DescriptorProto {
     @JSImport("google-protobuf/google/protobuf/descriptor_pb", "DescriptorProto.ExtensionRange.extensionsBinary")
     @js.native
     def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-    @scala.inline
-    def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+    inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+    inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def serializeBinaryToWriter(message: ExtensionRange, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def serializeBinaryToWriter(message: ExtensionRange, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def toObject(includeInstance: Boolean, msg: ExtensionRange): typings.googleProtobuf.descriptorPbMod.DescriptorProto.ExtensionRange.AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[typings.googleProtobuf.descriptorPbMod.DescriptorProto.ExtensionRange.AsObject]
+    inline def toObject(includeInstance: Boolean, msg: ExtensionRange): typings.googleProtobuf.descriptorPbMod.DescriptorProto.ExtensionRange.AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[typings.googleProtobuf.descriptorPbMod.DescriptorProto.ExtensionRange.AsObject]
     
     trait AsObject extends StObject {
       
@@ -198,32 +192,24 @@ object DescriptorProto {
     }
     object AsObject {
       
-      @scala.inline
-      def apply(): typings.googleProtobuf.descriptorPbMod.DescriptorProto.ExtensionRange.AsObject = {
+      inline def apply(): typings.googleProtobuf.descriptorPbMod.DescriptorProto.ExtensionRange.AsObject = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.googleProtobuf.descriptorPbMod.DescriptorProto.ExtensionRange.AsObject]
       }
       
-      @scala.inline
-      implicit class AsObjectMutableBuilder[Self <: typings.googleProtobuf.descriptorPbMod.DescriptorProto.ExtensionRange.AsObject] (val x: Self) extends AnyVal {
+      extension [Self <: typings.googleProtobuf.descriptorPbMod.DescriptorProto.ExtensionRange.AsObject](x: Self) {
         
-        @scala.inline
-        def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+        inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+        inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
         
-        @scala.inline
-        def setOptions(value: typings.googleProtobuf.descriptorPbMod.ExtensionRangeOptions.AsObject): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+        inline def setOptions(value: typings.googleProtobuf.descriptorPbMod.ExtensionRangeOptions.AsObject): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+        inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
         
-        @scala.inline
-        def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+        inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+        inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       }
     }
   }
@@ -255,11 +241,9 @@ object DescriptorProto {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def deserializeBinary(bytes: Uint8Array): ReservedRange = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[ReservedRange]
+    inline def deserializeBinary(bytes: Uint8Array): ReservedRange = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[ReservedRange]
     
-    @scala.inline
-    def deserializeBinaryFromReader(message: ReservedRange, reader: BinaryReader): ReservedRange = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[ReservedRange]
+    inline def deserializeBinaryFromReader(message: ReservedRange, reader: BinaryReader): ReservedRange = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[ReservedRange]
     
     @JSImport("google-protobuf/google/protobuf/descriptor_pb", "DescriptorProto.ReservedRange.extensions")
     @js.native
@@ -268,17 +252,13 @@ object DescriptorProto {
     @JSImport("google-protobuf/google/protobuf/descriptor_pb", "DescriptorProto.ReservedRange.extensionsBinary")
     @js.native
     def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-    @scala.inline
-    def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+    inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+    inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def serializeBinaryToWriter(message: ReservedRange, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def serializeBinaryToWriter(message: ReservedRange, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def toObject(includeInstance: Boolean, msg: ReservedRange): typings.googleProtobuf.descriptorPbMod.DescriptorProto.ReservedRange.AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[typings.googleProtobuf.descriptorPbMod.DescriptorProto.ReservedRange.AsObject]
+    inline def toObject(includeInstance: Boolean, msg: ReservedRange): typings.googleProtobuf.descriptorPbMod.DescriptorProto.ReservedRange.AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[typings.googleProtobuf.descriptorPbMod.DescriptorProto.ReservedRange.AsObject]
     
     trait AsObject extends StObject {
       
@@ -288,35 +268,27 @@ object DescriptorProto {
     }
     object AsObject {
       
-      @scala.inline
-      def apply(): typings.googleProtobuf.descriptorPbMod.DescriptorProto.ReservedRange.AsObject = {
+      inline def apply(): typings.googleProtobuf.descriptorPbMod.DescriptorProto.ReservedRange.AsObject = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.googleProtobuf.descriptorPbMod.DescriptorProto.ReservedRange.AsObject]
       }
       
-      @scala.inline
-      implicit class AsObjectMutableBuilder[Self <: typings.googleProtobuf.descriptorPbMod.DescriptorProto.ReservedRange.AsObject] (val x: Self) extends AnyVal {
+      extension [Self <: typings.googleProtobuf.descriptorPbMod.DescriptorProto.ReservedRange.AsObject](x: Self) {
         
-        @scala.inline
-        def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+        inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+        inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
         
-        @scala.inline
-        def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+        inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+        inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       }
     }
   }
   
-  @scala.inline
-  def deserializeBinary(bytes: Uint8Array): DescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[DescriptorProto]
+  inline def deserializeBinary(bytes: Uint8Array): DescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[DescriptorProto]
   
-  @scala.inline
-  def deserializeBinaryFromReader(message: DescriptorProto, reader: BinaryReader): DescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[DescriptorProto]
+  inline def deserializeBinaryFromReader(message: DescriptorProto, reader: BinaryReader): DescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[DescriptorProto]
   
   @JSImport("google-protobuf/google/protobuf/descriptor_pb", "DescriptorProto.extensions")
   @js.native
@@ -325,17 +297,13 @@ object DescriptorProto {
   @JSImport("google-protobuf/google/protobuf/descriptor_pb", "DescriptorProto.extensionsBinary")
   @js.native
   def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-  @scala.inline
-  def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+  inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+  inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def serializeBinaryToWriter(message: DescriptorProto, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serializeBinaryToWriter(message: DescriptorProto, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def toObject(includeInstance: Boolean, msg: DescriptorProto): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+  inline def toObject(includeInstance: Boolean, msg: DescriptorProto): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
   trait AsObject extends StObject {
     
@@ -361,8 +329,7 @@ object DescriptorProto {
   }
   object AsObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       enumTypeList: js.Array[typings.googleProtobuf.descriptorPbMod.EnumDescriptorProto.AsObject],
       extensionList: js.Array[typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.AsObject],
       extensionRangeList: js.Array[typings.googleProtobuf.descriptorPbMod.DescriptorProto.ExtensionRange.AsObject],
@@ -376,68 +343,47 @@ object DescriptorProto {
       __obj.asInstanceOf[AsObject]
     }
     
-    @scala.inline
-    implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+    extension [Self <: AsObject](x: Self) {
       
-      @scala.inline
-      def setEnumTypeList(value: js.Array[typings.googleProtobuf.descriptorPbMod.EnumDescriptorProto.AsObject]): Self = StObject.set(x, "enumTypeList", value.asInstanceOf[js.Any])
+      inline def setEnumTypeList(value: js.Array[typings.googleProtobuf.descriptorPbMod.EnumDescriptorProto.AsObject]): Self = StObject.set(x, "enumTypeList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnumTypeListVarargs(value: typings.googleProtobuf.descriptorPbMod.EnumDescriptorProto.AsObject*): Self = StObject.set(x, "enumTypeList", js.Array(value :_*))
+      inline def setEnumTypeListVarargs(value: typings.googleProtobuf.descriptorPbMod.EnumDescriptorProto.AsObject*): Self = StObject.set(x, "enumTypeList", js.Array(value :_*))
       
-      @scala.inline
-      def setExtensionList(value: js.Array[typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.AsObject]): Self = StObject.set(x, "extensionList", value.asInstanceOf[js.Any])
+      inline def setExtensionList(value: js.Array[typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.AsObject]): Self = StObject.set(x, "extensionList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionListVarargs(value: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.AsObject*): Self = StObject.set(x, "extensionList", js.Array(value :_*))
+      inline def setExtensionListVarargs(value: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.AsObject*): Self = StObject.set(x, "extensionList", js.Array(value :_*))
       
-      @scala.inline
-      def setExtensionRangeList(value: js.Array[typings.googleProtobuf.descriptorPbMod.DescriptorProto.ExtensionRange.AsObject]): Self = StObject.set(x, "extensionRangeList", value.asInstanceOf[js.Any])
+      inline def setExtensionRangeList(value: js.Array[typings.googleProtobuf.descriptorPbMod.DescriptorProto.ExtensionRange.AsObject]): Self = StObject.set(x, "extensionRangeList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionRangeListVarargs(value: typings.googleProtobuf.descriptorPbMod.DescriptorProto.ExtensionRange.AsObject*): Self = StObject.set(x, "extensionRangeList", js.Array(value :_*))
+      inline def setExtensionRangeListVarargs(value: typings.googleProtobuf.descriptorPbMod.DescriptorProto.ExtensionRange.AsObject*): Self = StObject.set(x, "extensionRangeList", js.Array(value :_*))
       
-      @scala.inline
-      def setFieldList(value: js.Array[typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.AsObject]): Self = StObject.set(x, "fieldList", value.asInstanceOf[js.Any])
+      inline def setFieldList(value: js.Array[typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.AsObject]): Self = StObject.set(x, "fieldList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldListVarargs(value: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.AsObject*): Self = StObject.set(x, "fieldList", js.Array(value :_*))
+      inline def setFieldListVarargs(value: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.AsObject*): Self = StObject.set(x, "fieldList", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNestedTypeList(value: js.Array[AsObject]): Self = StObject.set(x, "nestedTypeList", value.asInstanceOf[js.Any])
+      inline def setNestedTypeList(value: js.Array[AsObject]): Self = StObject.set(x, "nestedTypeList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNestedTypeListVarargs(value: AsObject*): Self = StObject.set(x, "nestedTypeList", js.Array(value :_*))
+      inline def setNestedTypeListVarargs(value: AsObject*): Self = StObject.set(x, "nestedTypeList", js.Array(value :_*))
       
-      @scala.inline
-      def setOneofDeclList(value: js.Array[typings.googleProtobuf.descriptorPbMod.OneofDescriptorProto.AsObject]): Self = StObject.set(x, "oneofDeclList", value.asInstanceOf[js.Any])
+      inline def setOneofDeclList(value: js.Array[typings.googleProtobuf.descriptorPbMod.OneofDescriptorProto.AsObject]): Self = StObject.set(x, "oneofDeclList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOneofDeclListVarargs(value: typings.googleProtobuf.descriptorPbMod.OneofDescriptorProto.AsObject*): Self = StObject.set(x, "oneofDeclList", js.Array(value :_*))
+      inline def setOneofDeclListVarargs(value: typings.googleProtobuf.descriptorPbMod.OneofDescriptorProto.AsObject*): Self = StObject.set(x, "oneofDeclList", js.Array(value :_*))
       
-      @scala.inline
-      def setOptions(value: typings.googleProtobuf.descriptorPbMod.MessageOptions.AsObject): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: typings.googleProtobuf.descriptorPbMod.MessageOptions.AsObject): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setReservedNameList(value: js.Array[String]): Self = StObject.set(x, "reservedNameList", value.asInstanceOf[js.Any])
+      inline def setReservedNameList(value: js.Array[String]): Self = StObject.set(x, "reservedNameList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReservedNameListVarargs(value: String*): Self = StObject.set(x, "reservedNameList", js.Array(value :_*))
+      inline def setReservedNameListVarargs(value: String*): Self = StObject.set(x, "reservedNameList", js.Array(value :_*))
       
-      @scala.inline
-      def setReservedRangeList(value: js.Array[typings.googleProtobuf.descriptorPbMod.DescriptorProto.ReservedRange.AsObject]): Self = StObject.set(x, "reservedRangeList", value.asInstanceOf[js.Any])
+      inline def setReservedRangeList(value: js.Array[typings.googleProtobuf.descriptorPbMod.DescriptorProto.ReservedRange.AsObject]): Self = StObject.set(x, "reservedRangeList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReservedRangeListVarargs(value: typings.googleProtobuf.descriptorPbMod.DescriptorProto.ReservedRange.AsObject*): Self = StObject.set(x, "reservedRangeList", js.Array(value :_*))
+      inline def setReservedRangeListVarargs(value: typings.googleProtobuf.descriptorPbMod.DescriptorProto.ReservedRange.AsObject*): Self = StObject.set(x, "reservedRangeList", js.Array(value :_*))
     }
   }
 }

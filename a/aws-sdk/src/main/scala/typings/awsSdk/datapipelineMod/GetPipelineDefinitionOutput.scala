@@ -23,40 +23,29 @@ trait GetPipelineDefinitionOutput extends StObject {
 }
 object GetPipelineDefinitionOutput {
   
-  @scala.inline
-  def apply(): GetPipelineDefinitionOutput = {
+  inline def apply(): GetPipelineDefinitionOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetPipelineDefinitionOutput]
   }
   
-  @scala.inline
-  implicit class GetPipelineDefinitionOutputMutableBuilder[Self <: GetPipelineDefinitionOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetPipelineDefinitionOutput](x: Self) {
     
-    @scala.inline
-    def setParameterObjects(value: ParameterObjectList): Self = StObject.set(x, "parameterObjects", value.asInstanceOf[js.Any])
+    inline def setParameterObjects(value: ParameterObjectList): Self = StObject.set(x, "parameterObjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterObjectsUndefined: Self = StObject.set(x, "parameterObjects", js.undefined)
+    inline def setParameterObjectsUndefined: Self = StObject.set(x, "parameterObjects", js.undefined)
     
-    @scala.inline
-    def setParameterObjectsVarargs(value: ParameterObject*): Self = StObject.set(x, "parameterObjects", js.Array(value :_*))
+    inline def setParameterObjectsVarargs(value: ParameterObject*): Self = StObject.set(x, "parameterObjects", js.Array(value :_*))
     
-    @scala.inline
-    def setParameterValues(value: ParameterValueList): Self = StObject.set(x, "parameterValues", value.asInstanceOf[js.Any])
+    inline def setParameterValues(value: ParameterValueList): Self = StObject.set(x, "parameterValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterValuesUndefined: Self = StObject.set(x, "parameterValues", js.undefined)
+    inline def setParameterValuesUndefined: Self = StObject.set(x, "parameterValues", js.undefined)
     
-    @scala.inline
-    def setParameterValuesVarargs(value: ParameterValue*): Self = StObject.set(x, "parameterValues", js.Array(value :_*))
+    inline def setParameterValuesVarargs(value: ParameterValue*): Self = StObject.set(x, "parameterValues", js.Array(value :_*))
     
-    @scala.inline
-    def setPipelineObjects(value: PipelineObjectList): Self = StObject.set(x, "pipelineObjects", value.asInstanceOf[js.Any])
+    inline def setPipelineObjects(value: PipelineObjectList): Self = StObject.set(x, "pipelineObjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipelineObjectsUndefined: Self = StObject.set(x, "pipelineObjects", js.undefined)
+    inline def setPipelineObjectsUndefined: Self = StObject.set(x, "pipelineObjects", js.undefined)
     
-    @scala.inline
-    def setPipelineObjectsVarargs(value: PipelineObject*): Self = StObject.set(x, "pipelineObjects", js.Array(value :_*))
+    inline def setPipelineObjectsVarargs(value: PipelineObject*): Self = StObject.set(x, "pipelineObjects", js.Array(value :_*))
   }
 }

@@ -10,14 +10,10 @@ object ShaderUtils {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def applyAmbient(c: Color, light: Light): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyAmbient")(c.asInstanceOf[js.Any], light.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def applyAmbient(c: Color, light: Light): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyAmbient")(c.asInstanceOf[js.Any], light.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def applyDiffuse(c: Color, light: Light, lightNormal: Point, surfaceNormal: Point): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyDiffuse")(c.asInstanceOf[js.Any], light.asInstanceOf[js.Any], lightNormal.asInstanceOf[js.Any], surfaceNormal.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def applyDiffuse(c: Color, light: Light, lightNormal: Point, surfaceNormal: Point, material: Material): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyDiffuse")(c.asInstanceOf[js.Any], light.asInstanceOf[js.Any], lightNormal.asInstanceOf[js.Any], surfaceNormal.asInstanceOf[js.Any], material.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def applyDiffuse(c: Color, light: Light, lightNormal: Point, surfaceNormal: Point): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyDiffuse")(c.asInstanceOf[js.Any], light.asInstanceOf[js.Any], lightNormal.asInstanceOf[js.Any], surfaceNormal.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def applyDiffuse(c: Color, light: Light, lightNormal: Point, surfaceNormal: Point, material: Material): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyDiffuse")(c.asInstanceOf[js.Any], light.asInstanceOf[js.Any], lightNormal.asInstanceOf[js.Any], surfaceNormal.asInstanceOf[js.Any], material.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def applyDiffuseAndSpecular(c: Color, light: Light, lightNormal: Point, surfaceNormal: Point, material: Material): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyDiffuseAndSpecular")(c.asInstanceOf[js.Any], light.asInstanceOf[js.Any], lightNormal.asInstanceOf[js.Any], surfaceNormal.asInstanceOf[js.Any], material.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def applyDiffuseAndSpecular(c: Color, light: Light, lightNormal: Point, surfaceNormal: Point, material: Material): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyDiffuseAndSpecular")(c.asInstanceOf[js.Any], light.asInstanceOf[js.Any], lightNormal.asInstanceOf[js.Any], surfaceNormal.asInstanceOf[js.Any], material.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

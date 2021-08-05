@@ -15,19 +15,15 @@ trait Oauthtoken
 }
 object Oauthtoken {
   
-  @scala.inline
-  def apply(oauth_token: String, oauth_token_secret: String): Oauthtoken = {
+  inline def apply(oauth_token: String, oauth_token_secret: String): Oauthtoken = {
     val __obj = js.Dynamic.literal(oauth_token = oauth_token.asInstanceOf[js.Any], oauth_token_secret = oauth_token_secret.asInstanceOf[js.Any])
     __obj.asInstanceOf[Oauthtoken]
   }
   
-  @scala.inline
-  implicit class OauthtokenMutableBuilder[Self <: Oauthtoken] (val x: Self) extends AnyVal {
+  extension [Self <: Oauthtoken](x: Self) {
     
-    @scala.inline
-    def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
+    inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOauth_token_secret(value: String): Self = StObject.set(x, "oauth_token_secret", value.asInstanceOf[js.Any])
+    inline def setOauth_token_secret(value: String): Self = StObject.set(x, "oauth_token_secret", value.asInstanceOf[js.Any])
   }
 }

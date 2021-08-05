@@ -13,19 +13,15 @@ trait HystrixSSEStream_ extends StObject {
 }
 object HystrixSSEStream_ {
   
-  @scala.inline
-  def apply(toCommandJson: js.Any => String, toObservable: () => Observable[js.Any]): HystrixSSEStream_ = {
+  inline def apply(toCommandJson: js.Any => String, toObservable: () => Observable[js.Any]): HystrixSSEStream_ = {
     val __obj = js.Dynamic.literal(toCommandJson = js.Any.fromFunction1(toCommandJson), toObservable = js.Any.fromFunction0(toObservable))
     __obj.asInstanceOf[HystrixSSEStream_]
   }
   
-  @scala.inline
-  implicit class HystrixSSEStream_MutableBuilder[Self <: HystrixSSEStream_] (val x: Self) extends AnyVal {
+  extension [Self <: HystrixSSEStream_](x: Self) {
     
-    @scala.inline
-    def setToCommandJson(value: js.Any => String): Self = StObject.set(x, "toCommandJson", js.Any.fromFunction1(value))
+    inline def setToCommandJson(value: js.Any => String): Self = StObject.set(x, "toCommandJson", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToObservable(value: () => Observable[js.Any]): Self = StObject.set(x, "toObservable", js.Any.fromFunction0(value))
+    inline def setToObservable(value: () => Observable[js.Any]): Self = StObject.set(x, "toObservable", js.Any.fromFunction0(value))
   }
 }

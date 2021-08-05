@@ -40,8 +40,7 @@ trait SchemaSpec[N /* <: String */, M /* <: String */] extends StObject {
 }
 object SchemaSpec {
   
-  @scala.inline
-  def apply[N /* <: String */, M /* <: String */](
+  inline def apply[N /* <: String */, M /* <: String */](
     nodes: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ name in N ]: prosemirror-model.prosemirror-model.NodeSpec}
     */ typings.prosemirrorModel.prosemirrorModelStrings.SchemaSpec & TopLevel[js.Any]) | ^[NodeSpec]
@@ -50,36 +49,28 @@ object SchemaSpec {
     __obj.asInstanceOf[SchemaSpec[N, M]]
   }
   
-  @scala.inline
-  implicit class SchemaSpecMutableBuilder[Self <: SchemaSpec[?, ?], N /* <: String */, M /* <: String */] (val x: Self & (SchemaSpec[N, M])) extends AnyVal {
+  extension [Self <: SchemaSpec[?, ?], N /* <: String */, M /* <: String */](x: Self & (SchemaSpec[N, M])) {
     
-    @scala.inline
-    def setMarks(
+    inline def setMarks(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ name in M ]: prosemirror-model.prosemirror-model.MarkSpec}
       */ typings.prosemirrorModel.prosemirrorModelStrings.SchemaSpec & TopLevel[js.Any]) | ^[MarkSpec]
     ): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarksNull: Self = StObject.set(x, "marks", null)
+    inline def setMarksNull: Self = StObject.set(x, "marks", null)
     
-    @scala.inline
-    def setMarksUndefined: Self = StObject.set(x, "marks", js.undefined)
+    inline def setMarksUndefined: Self = StObject.set(x, "marks", js.undefined)
     
-    @scala.inline
-    def setNodes(
+    inline def setNodes(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ name in N ]: prosemirror-model.prosemirror-model.NodeSpec}
       */ typings.prosemirrorModel.prosemirrorModelStrings.SchemaSpec & TopLevel[js.Any]) | ^[NodeSpec]
     ): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopNode(value: String): Self = StObject.set(x, "topNode", value.asInstanceOf[js.Any])
+    inline def setTopNode(value: String): Self = StObject.set(x, "topNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopNodeNull: Self = StObject.set(x, "topNode", null)
+    inline def setTopNodeNull: Self = StObject.set(x, "topNode", null)
     
-    @scala.inline
-    def setTopNodeUndefined: Self = StObject.set(x, "topNode", js.undefined)
+    inline def setTopNodeUndefined: Self = StObject.set(x, "topNode", js.undefined)
   }
 }

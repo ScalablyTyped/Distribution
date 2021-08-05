@@ -43,46 +43,33 @@ trait CreateMLModelInput extends StObject {
 }
 object CreateMLModelInput {
   
-  @scala.inline
-  def apply(MLModelId: EntityId, MLModelType: MLModelType, TrainingDataSourceId: EntityId): CreateMLModelInput = {
+  inline def apply(MLModelId: EntityId, MLModelType: MLModelType, TrainingDataSourceId: EntityId): CreateMLModelInput = {
     val __obj = js.Dynamic.literal(MLModelId = MLModelId.asInstanceOf[js.Any], MLModelType = MLModelType.asInstanceOf[js.Any], TrainingDataSourceId = TrainingDataSourceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateMLModelInput]
   }
   
-  @scala.inline
-  implicit class CreateMLModelInputMutableBuilder[Self <: CreateMLModelInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateMLModelInput](x: Self) {
     
-    @scala.inline
-    def setMLModelId(value: EntityId): Self = StObject.set(x, "MLModelId", value.asInstanceOf[js.Any])
+    inline def setMLModelId(value: EntityId): Self = StObject.set(x, "MLModelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMLModelName(value: EntityName): Self = StObject.set(x, "MLModelName", value.asInstanceOf[js.Any])
+    inline def setMLModelName(value: EntityName): Self = StObject.set(x, "MLModelName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMLModelNameUndefined: Self = StObject.set(x, "MLModelName", js.undefined)
+    inline def setMLModelNameUndefined: Self = StObject.set(x, "MLModelName", js.undefined)
     
-    @scala.inline
-    def setMLModelType(value: MLModelType): Self = StObject.set(x, "MLModelType", value.asInstanceOf[js.Any])
+    inline def setMLModelType(value: MLModelType): Self = StObject.set(x, "MLModelType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameters(value: TrainingParameters): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: TrainingParameters): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
-    @scala.inline
-    def setRecipe(value: Recipe): Self = StObject.set(x, "Recipe", value.asInstanceOf[js.Any])
+    inline def setRecipe(value: Recipe): Self = StObject.set(x, "Recipe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipeUndefined: Self = StObject.set(x, "Recipe", js.undefined)
+    inline def setRecipeUndefined: Self = StObject.set(x, "Recipe", js.undefined)
     
-    @scala.inline
-    def setRecipeUri(value: S3Url): Self = StObject.set(x, "RecipeUri", value.asInstanceOf[js.Any])
+    inline def setRecipeUri(value: S3Url): Self = StObject.set(x, "RecipeUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipeUriUndefined: Self = StObject.set(x, "RecipeUri", js.undefined)
+    inline def setRecipeUriUndefined: Self = StObject.set(x, "RecipeUri", js.undefined)
     
-    @scala.inline
-    def setTrainingDataSourceId(value: EntityId): Self = StObject.set(x, "TrainingDataSourceId", value.asInstanceOf[js.Any])
+    inline def setTrainingDataSourceId(value: EntityId): Self = StObject.set(x, "TrainingDataSourceId", value.asInstanceOf[js.Any])
   }
 }

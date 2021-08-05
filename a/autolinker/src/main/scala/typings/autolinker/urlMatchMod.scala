@@ -26,7 +26,7 @@ object urlMatchMod {
       * @cfg {Boolean} decodePercentEncoding (required)
       * @inheritdoc Autolinker#cfg-decodePercentEncoding
       */
-    val decodePercentEncoding: js.Any = js.native
+    /* private */ val decodePercentEncoding: js.Any = js.native
     
     /**
       * Returns the url that was matched, assuming the protocol to be 'http://' if the original
@@ -65,7 +65,7 @@ object urlMatchMod {
       * is a URL that starts with '//', and will be either http:// or https://
       * based on the protocol that the site is loaded under.
       */
-    val protocolRelativeMatch: js.Any = js.native
+    /* private */ val protocolRelativeMatch: js.Any = js.native
     
     /**
       * @private
@@ -82,7 +82,7 @@ object urlMatchMod {
       * `true` if the URL is a match which already has a protocol (i.e.
       * 'http://'), `false` if the match was from a 'www' or known TLD match.
       */
-    val protocolUrlMatch: js.Any = js.native
+    /* private */ val protocolUrlMatch: js.Any = js.native
     
     /**
       * Decodes percent-encoded characters from the given `anchorText`, in
@@ -94,7 +94,7 @@ object urlMatchMod {
       * @return {String} The `anchorText`, with the percent-encoded characters
       *   decoded.
       */
-    var removePercentEncoding: js.Any = js.native
+    /* private */ var removePercentEncoding: js.Any = js.native
     
     /**
       * Removes any trailing slash from the given `anchorText`, in preparation for the text to be displayed.
@@ -104,7 +104,7 @@ object urlMatchMod {
       *   slash ('/') that may exist.
       * @return {String} The `anchorText`, with the trailing slash removed.
       */
-    var removeTrailingSlash: js.Any = js.native
+    /* private */ var removeTrailingSlash: js.Any = js.native
     
     /**
       * @private
@@ -120,7 +120,7 @@ object urlMatchMod {
       *
       * The Object form of {@link Autolinker#cfg-stripPrefix}.
       */
-    val stripPrefix: js.Any = js.native
+    /* private */ val stripPrefix: js.Any = js.native
     
     /**
       * Strips any protocol-relative '//' from the anchor text.
@@ -130,7 +130,7 @@ object urlMatchMod {
       *   protocol-relative prefix (such as stripping off "//")
       * @return {String} The `anchorText`, with the protocol-relative prefix stripped.
       */
-    var stripProtocolRelativePrefix: js.Any = js.native
+    /* private */ var stripProtocolRelativePrefix: js.Any = js.native
     
     /**
       * Strips the scheme prefix (such as "http://" or "https://") from the given
@@ -141,13 +141,13 @@ object urlMatchMod {
       *   which to strip off the url scheme.
       * @return {String} The `url`, with the scheme stripped.
       */
-    var stripSchemePrefix: js.Any = js.native
+    /* private */ var stripSchemePrefix: js.Any = js.native
     
     /**
       * @cfg {Boolean} stripTrailingSlash (required)
       * @inheritdoc Autolinker#cfg-stripTrailingSlash
       */
-    val stripTrailingSlash: js.Any = js.native
+    /* private */ val stripTrailingSlash: js.Any = js.native
     
     /**
       * Strips the 'www' prefix from the given `url`.
@@ -157,14 +157,14 @@ object urlMatchMod {
       *   which to strip off the 'www' if it exists.
       * @return {String} The `url`, with the 'www' stripped.
       */
-    var stripWwwPrefix: js.Any = js.native
+    /* private */ var stripWwwPrefix: js.Any = js.native
     
     /**
       * @cfg {String} url (required)
       *
       * The url that was matched.
       */
-    var url: js.Any = js.native
+    /* private */ var url: js.Any = js.native
     
     /**
       * @cfg {"scheme"/"www"/"tld"} urlMatchType (required)
@@ -174,7 +174,7 @@ object urlMatchMod {
       * 'http://www.google.com'), a prefixed 'www' (ex: 'www.google.com'), or
       * was matched by a known top-level domain (ex: 'google.com').
       */
-    val urlMatchType: js.Any = js.native
+    /* private */ val urlMatchType: js.Any = js.native
     
     /**
       * @private
@@ -205,8 +205,7 @@ object urlMatchMod {
   }
   object UrlMatchConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       decodePercentEncoding: Boolean,
       matchedText: String,
       offset: Double,
@@ -222,29 +221,21 @@ object urlMatchMod {
       __obj.asInstanceOf[UrlMatchConfig]
     }
     
-    @scala.inline
-    implicit class UrlMatchConfigMutableBuilder[Self <: UrlMatchConfig] (val x: Self) extends AnyVal {
+    extension [Self <: UrlMatchConfig](x: Self) {
       
-      @scala.inline
-      def setDecodePercentEncoding(value: Boolean): Self = StObject.set(x, "decodePercentEncoding", value.asInstanceOf[js.Any])
+      inline def setDecodePercentEncoding(value: Boolean): Self = StObject.set(x, "decodePercentEncoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolRelativeMatch(value: Boolean): Self = StObject.set(x, "protocolRelativeMatch", value.asInstanceOf[js.Any])
+      inline def setProtocolRelativeMatch(value: Boolean): Self = StObject.set(x, "protocolRelativeMatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolUrlMatch(value: Boolean): Self = StObject.set(x, "protocolUrlMatch", value.asInstanceOf[js.Any])
+      inline def setProtocolUrlMatch(value: Boolean): Self = StObject.set(x, "protocolUrlMatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripPrefix(value: RequiredStripPrefixConfig): Self = StObject.set(x, "stripPrefix", value.asInstanceOf[js.Any])
+      inline def setStripPrefix(value: RequiredStripPrefixConfig): Self = StObject.set(x, "stripPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripTrailingSlash(value: Boolean): Self = StObject.set(x, "stripTrailingSlash", value.asInstanceOf[js.Any])
+      inline def setStripTrailingSlash(value: Boolean): Self = StObject.set(x, "stripTrailingSlash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlMatchType(value: UrlMatchTypeOptions): Self = StObject.set(x, "urlMatchType", value.asInstanceOf[js.Any])
+      inline def setUrlMatchType(value: UrlMatchTypeOptions): Self = StObject.set(x, "urlMatchType", value.asInstanceOf[js.Any])
     }
   }
 }

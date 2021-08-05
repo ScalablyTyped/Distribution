@@ -16,23 +16,18 @@ trait TimePeriodRuleType
 }
 object TimePeriodRuleType {
   
-  @scala.inline
-  def apply(priority: Double): TimePeriodRuleType = {
+  inline def apply(priority: Double): TimePeriodRuleType = {
     val __obj = js.Dynamic.literal(priority = priority.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("timePeriod")
     __obj.asInstanceOf[TimePeriodRuleType]
   }
   
-  @scala.inline
-  implicit class TimePeriodRuleTypeMutableBuilder[Self <: TimePeriodRuleType] (val x: Self) extends AnyVal {
+  extension [Self <: TimePeriodRuleType](x: Self) {
     
-    @scala.inline
-    def setTimePeriod(value: TimePeriodTypes): Self = StObject.set(x, "timePeriod", value.asInstanceOf[js.Any])
+    inline def setTimePeriod(value: TimePeriodTypes): Self = StObject.set(x, "timePeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimePeriodUndefined: Self = StObject.set(x, "timePeriod", js.undefined)
+    inline def setTimePeriodUndefined: Self = StObject.set(x, "timePeriod", js.undefined)
     
-    @scala.inline
-    def setType(value: timePeriod): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: timePeriod): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

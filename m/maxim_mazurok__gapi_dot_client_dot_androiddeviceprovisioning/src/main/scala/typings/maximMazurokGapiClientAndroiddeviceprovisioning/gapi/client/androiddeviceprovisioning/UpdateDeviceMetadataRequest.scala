@@ -11,19 +11,15 @@ trait UpdateDeviceMetadataRequest extends StObject {
 }
 object UpdateDeviceMetadataRequest {
   
-  @scala.inline
-  def apply(): UpdateDeviceMetadataRequest = {
+  inline def apply(): UpdateDeviceMetadataRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateDeviceMetadataRequest]
   }
   
-  @scala.inline
-  implicit class UpdateDeviceMetadataRequestMutableBuilder[Self <: UpdateDeviceMetadataRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDeviceMetadataRequest](x: Self) {
     
-    @scala.inline
-    def setDeviceMetadata(value: DeviceMetadata): Self = StObject.set(x, "deviceMetadata", value.asInstanceOf[js.Any])
+    inline def setDeviceMetadata(value: DeviceMetadata): Self = StObject.set(x, "deviceMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceMetadataUndefined: Self = StObject.set(x, "deviceMetadata", js.undefined)
+    inline def setDeviceMetadataUndefined: Self = StObject.set(x, "deviceMetadata", js.undefined)
   }
 }

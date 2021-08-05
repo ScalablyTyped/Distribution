@@ -31,37 +31,27 @@ trait SchemaManagedInstanceOverride extends StObject {
 }
 object SchemaManagedInstanceOverride {
   
-  @scala.inline
-  def apply(): SchemaManagedInstanceOverride = {
+  inline def apply(): SchemaManagedInstanceOverride = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaManagedInstanceOverride]
   }
   
-  @scala.inline
-  implicit class SchemaManagedInstanceOverrideMutableBuilder[Self <: SchemaManagedInstanceOverride] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaManagedInstanceOverride](x: Self) {
     
-    @scala.inline
-    def setDisks(value: js.Array[SchemaManagedInstanceOverrideDiskOverride]): Self = StObject.set(x, "disks", value.asInstanceOf[js.Any])
+    inline def setDisks(value: js.Array[SchemaManagedInstanceOverrideDiskOverride]): Self = StObject.set(x, "disks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisksUndefined: Self = StObject.set(x, "disks", js.undefined)
+    inline def setDisksUndefined: Self = StObject.set(x, "disks", js.undefined)
     
-    @scala.inline
-    def setDisksVarargs(value: SchemaManagedInstanceOverrideDiskOverride*): Self = StObject.set(x, "disks", js.Array(value :_*))
+    inline def setDisksVarargs(value: SchemaManagedInstanceOverrideDiskOverride*): Self = StObject.set(x, "disks", js.Array(value :_*))
     
-    @scala.inline
-    def setMetadata(value: js.Array[Key]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: js.Array[Key]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setMetadataVarargs(value: Key*): Self = StObject.set(x, "metadata", js.Array(value :_*))
+    inline def setMetadataVarargs(value: Key*): Self = StObject.set(x, "metadata", js.Array(value :_*))
     
-    @scala.inline
-    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
   }
 }

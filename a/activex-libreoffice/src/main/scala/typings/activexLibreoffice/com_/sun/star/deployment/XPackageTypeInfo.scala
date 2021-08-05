@@ -70,8 +70,7 @@ trait XPackageTypeInfo extends StObject {
 }
 object XPackageTypeInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Description: String,
     FileFilter: String,
     MediaType: String,
@@ -86,34 +85,24 @@ object XPackageTypeInfo {
     __obj.asInstanceOf[XPackageTypeInfo]
   }
   
-  @scala.inline
-  implicit class XPackageTypeInfoMutableBuilder[Self <: XPackageTypeInfo] (val x: Self) extends AnyVal {
+  extension [Self <: XPackageTypeInfo](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileFilter(value: String): Self = StObject.set(x, "FileFilter", value.asInstanceOf[js.Any])
+    inline def setFileFilter(value: String): Self = StObject.set(x, "FileFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDescription(value: () => String): Self = StObject.set(x, "getDescription", js.Any.fromFunction0(value))
+    inline def setGetDescription(value: () => String): Self = StObject.set(x, "getDescription", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFileFilter(value: () => String): Self = StObject.set(x, "getFileFilter", js.Any.fromFunction0(value))
+    inline def setGetFileFilter(value: () => String): Self = StObject.set(x, "getFileFilter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIcon(value: (Boolean, Boolean) => js.Any): Self = StObject.set(x, "getIcon", js.Any.fromFunction2(value))
+    inline def setGetIcon(value: (Boolean, Boolean) => js.Any): Self = StObject.set(x, "getIcon", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetMediaType(value: () => String): Self = StObject.set(x, "getMediaType", js.Any.fromFunction0(value))
+    inline def setGetMediaType(value: () => String): Self = StObject.set(x, "getMediaType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetShortDescription(value: () => String): Self = StObject.set(x, "getShortDescription", js.Any.fromFunction0(value))
+    inline def setGetShortDescription(value: () => String): Self = StObject.set(x, "getShortDescription", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMediaType(value: String): Self = StObject.set(x, "MediaType", value.asInstanceOf[js.Any])
+    inline def setMediaType(value: String): Self = StObject.set(x, "MediaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortDescription(value: String): Self = StObject.set(x, "ShortDescription", value.asInstanceOf[js.Any])
+    inline def setShortDescription(value: String): Self = StObject.set(x, "ShortDescription", value.asInstanceOf[js.Any])
   }
 }

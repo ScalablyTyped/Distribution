@@ -24,43 +24,31 @@ trait SnapOptions extends StObject {
 }
 object SnapOptions {
   
-  @scala.inline
-  def apply(): SnapOptions = {
+  inline def apply(): SnapOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SnapOptions]
   }
   
-  @scala.inline
-  implicit class SnapOptionsMutableBuilder[Self <: SnapOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SnapOptions](x: Self) {
     
-    @scala.inline
-    def setEdge(value: Boolean): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
+    inline def setEdge(value: Boolean): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdgeUndefined: Self = StObject.set(x, "edge", js.undefined)
+    inline def setEdgeUndefined: Self = StObject.set(x, "edge", js.undefined)
     
-    @scala.inline
-    def setFeatures(value: Collection[Feature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+    inline def setFeatures(value: Collection[Feature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
+    inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
-    @scala.inline
-    def setPixelTolerance(value: Double): Self = StObject.set(x, "pixelTolerance", value.asInstanceOf[js.Any])
+    inline def setPixelTolerance(value: Double): Self = StObject.set(x, "pixelTolerance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPixelToleranceUndefined: Self = StObject.set(x, "pixelTolerance", js.undefined)
+    inline def setPixelToleranceUndefined: Self = StObject.set(x, "pixelTolerance", js.undefined)
     
-    @scala.inline
-    def setSource(value: Vector): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Vector): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setVertex(value: Boolean): Self = StObject.set(x, "vertex", value.asInstanceOf[js.Any])
+    inline def setVertex(value: Boolean): Self = StObject.set(x, "vertex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertexUndefined: Self = StObject.set(x, "vertex", js.undefined)
+    inline def setVertexUndefined: Self = StObject.set(x, "vertex", js.undefined)
   }
 }

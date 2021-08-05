@@ -20,42 +20,34 @@ trait PaddingRightProps[TLength] extends StObject {
 }
 object PaddingRightProps {
   
-  @scala.inline
-  def apply[TLength](): PaddingRightProps[TLength] = {
+  inline def apply[TLength](): PaddingRightProps[TLength] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PaddingRightProps[TLength]]
   }
   
-  @scala.inline
-  implicit class PaddingRightPropsMutableBuilder[Self <: PaddingRightProps[?], TLength] (val x: Self & PaddingRightProps[TLength]) extends AnyVal {
+  extension [Self <: PaddingRightProps[?], TLength](x: Self & PaddingRightProps[TLength]) {
     
-    @scala.inline
-    def setPaddingRight(
+    inline def setPaddingRight(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingRight<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingRightUndefined: Self = StObject.set(x, "paddingRight", js.undefined)
+    inline def setPaddingRightUndefined: Self = StObject.set(x, "paddingRight", js.undefined)
     
-    @scala.inline
-    def setPaddingRightVarargs(
+    inline def setPaddingRightVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingRight<TLength> */ js.Any)*
     ): Self = StObject.set(x, "paddingRight", js.Array(value :_*))
     
-    @scala.inline
-    def setPr(
+    inline def setPr(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingRight<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "pr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrUndefined: Self = StObject.set(x, "pr", js.undefined)
+    inline def setPrUndefined: Self = StObject.set(x, "pr", js.undefined)
     
-    @scala.inline
-    def setPrVarargs(
+    inline def setPrVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingRight<TLength> */ js.Any)*
     ): Self = StObject.set(x, "pr", js.Array(value :_*))
   }

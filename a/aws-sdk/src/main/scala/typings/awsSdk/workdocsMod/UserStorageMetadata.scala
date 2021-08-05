@@ -18,25 +18,19 @@ trait UserStorageMetadata extends StObject {
 }
 object UserStorageMetadata {
   
-  @scala.inline
-  def apply(): UserStorageMetadata = {
+  inline def apply(): UserStorageMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserStorageMetadata]
   }
   
-  @scala.inline
-  implicit class UserStorageMetadataMutableBuilder[Self <: UserStorageMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: UserStorageMetadata](x: Self) {
     
-    @scala.inline
-    def setStorageRule(value: StorageRuleType): Self = StObject.set(x, "StorageRule", value.asInstanceOf[js.Any])
+    inline def setStorageRule(value: StorageRuleType): Self = StObject.set(x, "StorageRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageRuleUndefined: Self = StObject.set(x, "StorageRule", js.undefined)
+    inline def setStorageRuleUndefined: Self = StObject.set(x, "StorageRule", js.undefined)
     
-    @scala.inline
-    def setStorageUtilizedInBytes(value: SizeType): Self = StObject.set(x, "StorageUtilizedInBytes", value.asInstanceOf[js.Any])
+    inline def setStorageUtilizedInBytes(value: SizeType): Self = StObject.set(x, "StorageUtilizedInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageUtilizedInBytesUndefined: Self = StObject.set(x, "StorageUtilizedInBytes", js.undefined)
+    inline def setStorageUtilizedInBytesUndefined: Self = StObject.set(x, "StorageUtilizedInBytes", js.undefined)
   }
 }

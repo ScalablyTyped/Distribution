@@ -10,8 +10,7 @@ trait Builder
      with IDisposable
 object Builder {
   
-  @scala.inline
-  def apply(dispose: () => scala.Unit): Builder = {
+  inline def apply(dispose: () => scala.Unit): Builder = {
     val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose))
     __obj.asInstanceOf[Builder]
   }

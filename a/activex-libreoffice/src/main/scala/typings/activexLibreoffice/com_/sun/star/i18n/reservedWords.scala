@@ -37,43 +37,30 @@ object reservedWords {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def ABOVE_WORD: `6` = 6.asInstanceOf[`6`]
+    inline def ABOVE_WORD: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def BELOW_WORD: `7` = 7.asInstanceOf[`7`]
+    inline def BELOW_WORD: `7` = 7.asInstanceOf[`7`]
     
-    @scala.inline
-    def COUNT: `12` = 12.asInstanceOf[`12`]
+    inline def COUNT: `12` = 12.asInstanceOf[`12`]
     
-    @scala.inline
-    def FALSE_WORD: `1` = 1.asInstanceOf[`1`]
+    inline def FALSE_WORD: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def QUARTER1_ABBREVIATION: `8` = 8.asInstanceOf[`8`]
+    inline def QUARTER1_ABBREVIATION: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def QUARTER1_WORD: `2` = 2.asInstanceOf[`2`]
+    inline def QUARTER1_WORD: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def QUARTER2_ABBREVIATION: `9` = 9.asInstanceOf[`9`]
+    inline def QUARTER2_ABBREVIATION: `9` = 9.asInstanceOf[`9`]
     
-    @scala.inline
-    def QUARTER2_WORD: `3` = 3.asInstanceOf[`3`]
+    inline def QUARTER2_WORD: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def QUARTER3_ABBREVIATION: `10` = 10.asInstanceOf[`10`]
+    inline def QUARTER3_ABBREVIATION: `10` = 10.asInstanceOf[`10`]
     
-    @scala.inline
-    def QUARTER3_WORD: `4` = 4.asInstanceOf[`4`]
+    inline def QUARTER3_WORD: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def QUARTER4_ABBREVIATION: `11` = 11.asInstanceOf[`11`]
+    inline def QUARTER4_ABBREVIATION: `11` = 11.asInstanceOf[`11`]
     
-    @scala.inline
-    def QUARTER4_WORD: `5` = 5.asInstanceOf[`5`]
+    inline def QUARTER4_WORD: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def TRUE_WORD: `0` = 0.asInstanceOf[`0`]
+    inline def TRUE_WORD: `0` = 0.asInstanceOf[`0`]
   }
 }

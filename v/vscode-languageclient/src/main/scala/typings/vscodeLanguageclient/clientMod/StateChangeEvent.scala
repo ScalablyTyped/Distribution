@@ -12,19 +12,15 @@ trait StateChangeEvent extends StObject {
 }
 object StateChangeEvent {
   
-  @scala.inline
-  def apply(newState: State, oldState: State): StateChangeEvent = {
+  inline def apply(newState: State, oldState: State): StateChangeEvent = {
     val __obj = js.Dynamic.literal(newState = newState.asInstanceOf[js.Any], oldState = oldState.asInstanceOf[js.Any])
     __obj.asInstanceOf[StateChangeEvent]
   }
   
-  @scala.inline
-  implicit class StateChangeEventMutableBuilder[Self <: StateChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: StateChangeEvent](x: Self) {
     
-    @scala.inline
-    def setNewState(value: State): Self = StObject.set(x, "newState", value.asInstanceOf[js.Any])
+    inline def setNewState(value: State): Self = StObject.set(x, "newState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldState(value: State): Self = StObject.set(x, "oldState", value.asInstanceOf[js.Any])
+    inline def setOldState(value: State): Self = StObject.set(x, "oldState", value.asInstanceOf[js.Any])
   }
 }

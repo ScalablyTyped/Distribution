@@ -18,28 +18,21 @@ trait ListPhoneNumbersOptedOutResponse extends StObject {
 }
 object ListPhoneNumbersOptedOutResponse {
   
-  @scala.inline
-  def apply(): ListPhoneNumbersOptedOutResponse = {
+  inline def apply(): ListPhoneNumbersOptedOutResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListPhoneNumbersOptedOutResponse]
   }
   
-  @scala.inline
-  implicit class ListPhoneNumbersOptedOutResponseMutableBuilder[Self <: ListPhoneNumbersOptedOutResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListPhoneNumbersOptedOutResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: java.lang.String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: java.lang.String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setPhoneNumbers(value: PhoneNumberList): Self = StObject.set(x, "phoneNumbers", value.asInstanceOf[js.Any])
+    inline def setPhoneNumbers(value: PhoneNumberList): Self = StObject.set(x, "phoneNumbers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneNumbersUndefined: Self = StObject.set(x, "phoneNumbers", js.undefined)
+    inline def setPhoneNumbersUndefined: Self = StObject.set(x, "phoneNumbers", js.undefined)
     
-    @scala.inline
-    def setPhoneNumbersVarargs(value: PhoneNumber*): Self = StObject.set(x, "phoneNumbers", js.Array(value :_*))
+    inline def setPhoneNumbersVarargs(value: PhoneNumber*): Self = StObject.set(x, "phoneNumbers", js.Array(value :_*))
   }
 }

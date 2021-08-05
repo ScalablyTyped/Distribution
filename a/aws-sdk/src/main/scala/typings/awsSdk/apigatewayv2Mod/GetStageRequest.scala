@@ -18,19 +18,15 @@ trait GetStageRequest extends StObject {
 }
 object GetStageRequest {
   
-  @scala.inline
-  def apply(ApiId: string, StageName: string): GetStageRequest = {
+  inline def apply(ApiId: string, StageName: string): GetStageRequest = {
     val __obj = js.Dynamic.literal(ApiId = ApiId.asInstanceOf[js.Any], StageName = StageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetStageRequest]
   }
   
-  @scala.inline
-  implicit class GetStageRequestMutableBuilder[Self <: GetStageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetStageRequest](x: Self) {
     
-    @scala.inline
-    def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
+    inline def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStageName(value: string): Self = StObject.set(x, "StageName", value.asInstanceOf[js.Any])
+    inline def setStageName(value: string): Self = StObject.set(x, "StageName", value.asInstanceOf[js.Any])
   }
 }

@@ -17,31 +17,23 @@ trait UpdateMetadataArguments extends StObject {
 }
 object UpdateMetadataArguments {
   
-  @scala.inline
-  def apply(): UpdateMetadataArguments = {
+  inline def apply(): UpdateMetadataArguments = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateMetadataArguments]
   }
   
-  @scala.inline
-  implicit class UpdateMetadataArgumentsMutableBuilder[Self <: UpdateMetadataArguments] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateMetadataArguments](x: Self) {
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
+    inline def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
     
-    @scala.inline
-    def setDeviceIdentifier(value: DeviceIdentifier): Self = StObject.set(x, "deviceIdentifier", value.asInstanceOf[js.Any])
+    inline def setDeviceIdentifier(value: DeviceIdentifier): Self = StObject.set(x, "deviceIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceIdentifierUndefined: Self = StObject.set(x, "deviceIdentifier", js.undefined)
+    inline def setDeviceIdentifierUndefined: Self = StObject.set(x, "deviceIdentifier", js.undefined)
     
-    @scala.inline
-    def setDeviceMetadata(value: DeviceMetadata): Self = StObject.set(x, "deviceMetadata", value.asInstanceOf[js.Any])
+    inline def setDeviceMetadata(value: DeviceMetadata): Self = StObject.set(x, "deviceMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceMetadataUndefined: Self = StObject.set(x, "deviceMetadata", js.undefined)
+    inline def setDeviceMetadataUndefined: Self = StObject.set(x, "deviceMetadata", js.undefined)
   }
 }

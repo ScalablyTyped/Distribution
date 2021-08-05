@@ -61,8 +61,7 @@ object WebControls {
   }
   object ControlMessage {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       customFromJson: js.Any => Boolean,
       customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
       fromJson: js.Any => Unit,
@@ -85,44 +84,31 @@ object WebControls {
       __obj.asInstanceOf[ControlMessage]
     }
     
-    @scala.inline
-    implicit class ControlMessageMutableBuilder[Self <: ControlMessage] (val x: Self) extends AnyVal {
+    extension [Self <: ControlMessage](x: Self) {
       
-      @scala.inline
-      def setGet_code(value: () => Double): Self = StObject.set(x, "get_code", js.Any.fromFunction0(value))
+      inline def setGet_code(value: () => Double): Self = StObject.set(x, "get_code", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_correlationID(value: () => String): Self = StObject.set(x, "get_correlationID", js.Any.fromFunction0(value))
+      inline def setGet_correlationID(value: () => String): Self = StObject.set(x, "get_correlationID", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_encodeDetails(value: () => Boolean): Self = StObject.set(x, "get_encodeDetails", js.Any.fromFunction0(value))
+      inline def setGet_encodeDetails(value: () => Boolean): Self = StObject.set(x, "get_encodeDetails", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_header(value: () => String): Self = StObject.set(x, "get_header", js.Any.fromFunction0(value))
+      inline def setGet_header(value: () => String): Self = StObject.set(x, "get_header", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_level(value: () => MessageLevel): Self = StObject.set(x, "get_level", js.Any.fromFunction0(value))
+      inline def setGet_level(value: () => MessageLevel): Self = StObject.set(x, "get_level", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_messageDetails(value: () => String): Self = StObject.set(x, "get_messageDetails", js.Any.fromFunction0(value))
+      inline def setGet_messageDetails(value: () => String): Self = StObject.set(x, "get_messageDetails", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_messageDetailsForViewers(value: () => String): Self = StObject.set(x, "get_messageDetailsForViewers", js.Any.fromFunction0(value))
+      inline def setGet_messageDetailsForViewers(value: () => String): Self = StObject.set(x, "get_messageDetailsForViewers", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_serverTypeId(value: () => String): Self = StObject.set(x, "get_serverTypeId", js.Any.fromFunction0(value))
+      inline def setGet_serverTypeId(value: () => String): Self = StObject.set(x, "get_serverTypeId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_showForViewerUsers(value: () => Boolean): Self = StObject.set(x, "get_showForViewerUsers", js.Any.fromFunction0(value))
+      inline def setGet_showForViewerUsers(value: () => Boolean): Self = StObject.set(x, "get_showForViewerUsers", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_showInEditModeOnly(value: () => Boolean): Self = StObject.set(x, "get_showInEditModeOnly", js.Any.fromFunction0(value))
+      inline def setGet_showInEditModeOnly(value: () => Boolean): Self = StObject.set(x, "get_showInEditModeOnly", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_stackTrace(value: () => String): Self = StObject.set(x, "get_stackTrace", js.Any.fromFunction0(value))
+      inline def setGet_stackTrace(value: () => String): Self = StObject.set(x, "get_stackTrace", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_type(value: () => String): Self = StObject.set(x, "get_type", js.Any.fromFunction0(value))
+      inline def setGet_type(value: () => String): Self = StObject.set(x, "get_type", js.Any.fromFunction0(value))
     }
   }
 }

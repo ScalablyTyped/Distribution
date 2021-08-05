@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlSpecialCellsValue extends StObject
 object XlSpecialCellsValue {
   
-  @scala.inline
-  def xlErrors: `16` = 16.asInstanceOf[`16`]
+  inline def xlErrors: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def xlLogical: `4` = 4.asInstanceOf[`4`]
+  inline def xlLogical: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def xlNumbers: `1` = 1.asInstanceOf[`1`]
+  inline def xlNumbers: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlTextValues: `2` = 2.asInstanceOf[`2`]
+  inline def xlTextValues: `2` = 2.asInstanceOf[`2`]
 }

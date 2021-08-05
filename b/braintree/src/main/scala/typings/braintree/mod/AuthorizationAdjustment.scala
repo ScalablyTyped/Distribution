@@ -21,8 +21,7 @@ trait AuthorizationAdjustment extends StObject {
 }
 object AuthorizationAdjustment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     amount: String,
     processorResponseCode: String,
     processorResponseText: String,
@@ -34,25 +33,18 @@ object AuthorizationAdjustment {
     __obj.asInstanceOf[AuthorizationAdjustment]
   }
   
-  @scala.inline
-  implicit class AuthorizationAdjustmentMutableBuilder[Self <: AuthorizationAdjustment] (val x: Self) extends AnyVal {
+  extension [Self <: AuthorizationAdjustment](x: Self) {
     
-    @scala.inline
-    def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessorResponseCode(value: String): Self = StObject.set(x, "processorResponseCode", value.asInstanceOf[js.Any])
+    inline def setProcessorResponseCode(value: String): Self = StObject.set(x, "processorResponseCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessorResponseText(value: String): Self = StObject.set(x, "processorResponseText", value.asInstanceOf[js.Any])
+    inline def setProcessorResponseText(value: String): Self = StObject.set(x, "processorResponseText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessorResponseType(value: String): Self = StObject.set(x, "processorResponseType", value.asInstanceOf[js.Any])
+    inline def setProcessorResponseType(value: String): Self = StObject.set(x, "processorResponseType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

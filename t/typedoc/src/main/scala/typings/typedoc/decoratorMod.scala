@@ -28,7 +28,6 @@ object decoratorMod {
     @JSImport("typedoc/dist/lib/serialization/serializers/decorator", "DecoratorContainerSerializer.PRIORITY")
     @js.native
     def PRIORITY: Double = js.native
-    @scala.inline
-    def PRIORITY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRIORITY")(x.asInstanceOf[js.Any])
+    inline def PRIORITY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRIORITY")(x.asInstanceOf[js.Any])
   }
 }

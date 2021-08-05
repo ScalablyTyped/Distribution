@@ -23,34 +23,25 @@ trait ListDatasetsResponse extends StObject {
 }
 object ListDatasetsResponse {
   
-  @scala.inline
-  def apply(): ListDatasetsResponse = {
+  inline def apply(): ListDatasetsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListDatasetsResponse]
   }
   
-  @scala.inline
-  implicit class ListDatasetsResponseMutableBuilder[Self <: ListDatasetsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListDatasetsResponse](x: Self) {
     
-    @scala.inline
-    def setCount(value: Integer): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Integer): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
     
-    @scala.inline
-    def setDatasets(value: DatasetList): Self = StObject.set(x, "Datasets", value.asInstanceOf[js.Any])
+    inline def setDatasets(value: DatasetList): Self = StObject.set(x, "Datasets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetsUndefined: Self = StObject.set(x, "Datasets", js.undefined)
+    inline def setDatasetsUndefined: Self = StObject.set(x, "Datasets", js.undefined)
     
-    @scala.inline
-    def setDatasetsVarargs(value: Dataset*): Self = StObject.set(x, "Datasets", js.Array(value :_*))
+    inline def setDatasetsVarargs(value: Dataset*): Self = StObject.set(x, "Datasets", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

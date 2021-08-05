@@ -139,8 +139,7 @@ object mod extends Shortcut {
   }
   object Attributes {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       language: js.Any,
       languageId: js.Any,
       maxLanguageId: js.Any,
@@ -153,29 +152,21 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Attributes]
     }
     
-    @scala.inline
-    implicit class AttributesMutableBuilder[Self <: Attributes] (val x: Self) extends AnyVal {
+    extension [Self <: Attributes](x: Self) {
       
-      @scala.inline
-      def setLanguage(value: js.Any): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: js.Any): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguageId(value: js.Any): Self = StObject.set(x, "languageId", value.asInstanceOf[js.Any])
+      inline def setLanguageId(value: js.Any): Self = StObject.set(x, "languageId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxLanguageId(value: js.Any): Self = StObject.set(x, "maxLanguageId", value.asInstanceOf[js.Any])
+      inline def setMaxLanguageId(value: js.Any): Self = StObject.set(x, "maxLanguageId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinLanguageId(value: js.Any): Self = StObject.set(x, "minLanguageId", value.asInstanceOf[js.Any])
+      inline def setMinLanguageId(value: js.Any): Self = StObject.set(x, "minLanguageId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegion(value: js.Any): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: js.Any): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScript(value: js.Any): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+      inline def setScript(value: js.Any): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTerritory(value: js.Any): Self = StObject.set(x, "territory", value.asInstanceOf[js.Any])
+      inline def setTerritory(value: js.Any): Self = StObject.set(x, "territory", value.asInstanceOf[js.Any])
     }
   }
   
@@ -362,20 +353,16 @@ object mod extends Shortcut {
   }
   object TimeDataStatic {
     
-    @scala.inline
-    def apply(allowed: () => String, preferred: () => String): TimeDataStatic = {
+    inline def apply(allowed: () => String, preferred: () => String): TimeDataStatic = {
       val __obj = js.Dynamic.literal(allowed = js.Any.fromFunction0(allowed), preferred = js.Any.fromFunction0(preferred))
       __obj.asInstanceOf[TimeDataStatic]
     }
     
-    @scala.inline
-    implicit class TimeDataStaticMutableBuilder[Self <: TimeDataStatic] (val x: Self) extends AnyVal {
+    extension [Self <: TimeDataStatic](x: Self) {
       
-      @scala.inline
-      def setAllowed(value: () => String): Self = StObject.set(x, "allowed", js.Any.fromFunction0(value))
+      inline def setAllowed(value: () => String): Self = StObject.set(x, "allowed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPreferred(value: () => String): Self = StObject.set(x, "preferred", js.Any.fromFunction0(value))
+      inline def setPreferred(value: () => String): Self = StObject.set(x, "preferred", js.Any.fromFunction0(value))
     }
   }
   
@@ -387,20 +374,16 @@ object mod extends Shortcut {
   }
   object WeekDataStatic {
     
-    @scala.inline
-    def apply(firstDay: () => String, minDays: () => Double): WeekDataStatic = {
+    inline def apply(firstDay: () => String, minDays: () => Double): WeekDataStatic = {
       val __obj = js.Dynamic.literal(firstDay = js.Any.fromFunction0(firstDay), minDays = js.Any.fromFunction0(minDays))
       __obj.asInstanceOf[WeekDataStatic]
     }
     
-    @scala.inline
-    implicit class WeekDataStaticMutableBuilder[Self <: WeekDataStatic] (val x: Self) extends AnyVal {
+    extension [Self <: WeekDataStatic](x: Self) {
       
-      @scala.inline
-      def setFirstDay(value: () => String): Self = StObject.set(x, "firstDay", js.Any.fromFunction0(value))
+      inline def setFirstDay(value: () => String): Self = StObject.set(x, "firstDay", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMinDays(value: () => Double): Self = StObject.set(x, "minDays", js.Any.fromFunction0(value))
+      inline def setMinDays(value: () => Double): Self = StObject.set(x, "minDays", js.Any.fromFunction0(value))
     }
   }
   

@@ -80,8 +80,7 @@ object usersMod {
   }
   object UserDetailSchema {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       avatar_url: String,
       created_at: Date,
       id: Double,
@@ -98,47 +97,33 @@ object usersMod {
       __obj.asInstanceOf[UserDetailSchema]
     }
     
-    @scala.inline
-    implicit class UserDetailSchemaMutableBuilder[Self <: UserDetailSchema] (val x: Self) extends AnyVal {
+    extension [Self <: UserDetailSchema](x: Self) {
       
-      @scala.inline
-      def setBio(value: String): Self = StObject.set(x, "bio", value.asInstanceOf[js.Any])
+      inline def setBio(value: String): Self = StObject.set(x, "bio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBioUndefined: Self = StObject.set(x, "bio", js.undefined)
+      inline def setBioUndefined: Self = StObject.set(x, "bio", js.undefined)
       
-      @scala.inline
-      def setCreated_at(value: Date): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+      inline def setCreated_at(value: Date): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkedin(value: String): Self = StObject.set(x, "linkedin", value.asInstanceOf[js.Any])
+      inline def setLinkedin(value: String): Self = StObject.set(x, "linkedin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
-      @scala.inline
-      def setOrganization(value: String): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
+      inline def setOrganization(value: String): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrganizationUndefined: Self = StObject.set(x, "organization", js.undefined)
+      inline def setOrganizationUndefined: Self = StObject.set(x, "organization", js.undefined)
       
-      @scala.inline
-      def setPublic_email(value: String): Self = StObject.set(x, "public_email", value.asInstanceOf[js.Any])
+      inline def setPublic_email(value: String): Self = StObject.set(x, "public_email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkype(value: String): Self = StObject.set(x, "skype", value.asInstanceOf[js.Any])
+      inline def setSkype(value: String): Self = StObject.set(x, "skype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTwitter(value: String): Self = StObject.set(x, "twitter", value.asInstanceOf[js.Any])
+      inline def setTwitter(value: String): Self = StObject.set(x, "twitter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebsite_url(value: String): Self = StObject.set(x, "website_url", value.asInstanceOf[js.Any])
+      inline def setWebsite_url(value: String): Self = StObject.set(x, "website_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebsite_urlUndefined: Self = StObject.set(x, "website_url", js.undefined)
+      inline def setWebsite_urlUndefined: Self = StObject.set(x, "website_url", js.undefined)
     }
   }
   
@@ -158,32 +143,24 @@ object usersMod {
   }
   object UserSchema {
     
-    @scala.inline
-    def apply(avatar_url: String, id: Double, name: String, state: String, username: String, web_url: String): UserSchema = {
+    inline def apply(avatar_url: String, id: Double, name: String, state: String, username: String, web_url: String): UserSchema = {
       val __obj = js.Dynamic.literal(avatar_url = avatar_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any], web_url = web_url.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserSchema]
     }
     
-    @scala.inline
-    implicit class UserSchemaMutableBuilder[Self <: UserSchema] (val x: Self) extends AnyVal {
+    extension [Self <: UserSchema](x: Self) {
       
-      @scala.inline
-      def setAvatar_url(value: String): Self = StObject.set(x, "avatar_url", value.asInstanceOf[js.Any])
+      inline def setAvatar_url(value: String): Self = StObject.set(x, "avatar_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeb_url(value: String): Self = StObject.set(x, "web_url", value.asInstanceOf[js.Any])
+      inline def setWeb_url(value: String): Self = StObject.set(x, "web_url", value.asInstanceOf[js.Any])
     }
   }
 }

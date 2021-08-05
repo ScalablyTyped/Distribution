@@ -19,19 +19,15 @@ trait StreetViewControlOptions extends StObject {
 }
 object StreetViewControlOptions {
   
-  @scala.inline
-  def apply(): StreetViewControlOptions = {
+  inline def apply(): StreetViewControlOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StreetViewControlOptions]
   }
   
-  @scala.inline
-  implicit class StreetViewControlOptionsMutableBuilder[Self <: StreetViewControlOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StreetViewControlOptions](x: Self) {
     
-    @scala.inline
-    def setPosition(value: ControlPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: ControlPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

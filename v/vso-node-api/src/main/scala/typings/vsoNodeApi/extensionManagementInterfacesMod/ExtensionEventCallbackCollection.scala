@@ -43,8 +43,7 @@ trait ExtensionEventCallbackCollection extends StObject {
 }
 object ExtensionEventCallbackCollection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     postDisable: ExtensionEventCallback,
     postEnable: ExtensionEventCallback,
     postInstall: ExtensionEventCallback,
@@ -57,28 +56,20 @@ object ExtensionEventCallbackCollection {
     __obj.asInstanceOf[ExtensionEventCallbackCollection]
   }
   
-  @scala.inline
-  implicit class ExtensionEventCallbackCollectionMutableBuilder[Self <: ExtensionEventCallbackCollection] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionEventCallbackCollection](x: Self) {
     
-    @scala.inline
-    def setPostDisable(value: ExtensionEventCallback): Self = StObject.set(x, "postDisable", value.asInstanceOf[js.Any])
+    inline def setPostDisable(value: ExtensionEventCallback): Self = StObject.set(x, "postDisable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostEnable(value: ExtensionEventCallback): Self = StObject.set(x, "postEnable", value.asInstanceOf[js.Any])
+    inline def setPostEnable(value: ExtensionEventCallback): Self = StObject.set(x, "postEnable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostInstall(value: ExtensionEventCallback): Self = StObject.set(x, "postInstall", value.asInstanceOf[js.Any])
+    inline def setPostInstall(value: ExtensionEventCallback): Self = StObject.set(x, "postInstall", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostUninstall(value: ExtensionEventCallback): Self = StObject.set(x, "postUninstall", value.asInstanceOf[js.Any])
+    inline def setPostUninstall(value: ExtensionEventCallback): Self = StObject.set(x, "postUninstall", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostUpdate(value: ExtensionEventCallback): Self = StObject.set(x, "postUpdate", value.asInstanceOf[js.Any])
+    inline def setPostUpdate(value: ExtensionEventCallback): Self = StObject.set(x, "postUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreInstall(value: ExtensionEventCallback): Self = StObject.set(x, "preInstall", value.asInstanceOf[js.Any])
+    inline def setPreInstall(value: ExtensionEventCallback): Self = StObject.set(x, "preInstall", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionCheck(value: ExtensionEventCallback): Self = StObject.set(x, "versionCheck", value.asInstanceOf[js.Any])
+    inline def setVersionCheck(value: ExtensionEventCallback): Self = StObject.set(x, "versionCheck", value.asInstanceOf[js.Any])
   }
 }

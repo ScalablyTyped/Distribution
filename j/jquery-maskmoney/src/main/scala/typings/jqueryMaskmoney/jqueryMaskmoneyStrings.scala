@@ -8,16 +8,13 @@ object jqueryMaskmoneyStrings {
   
   @js.native
   sealed trait destroy extends StObject
-  @scala.inline
-  def destroy: destroy = "destroy".asInstanceOf[destroy]
+  inline def destroy: destroy = "destroy".asInstanceOf[destroy]
   
   @js.native
   sealed trait mask extends StObject
-  @scala.inline
-  def mask: mask = "mask".asInstanceOf[mask]
+  inline def mask: mask = "mask".asInstanceOf[mask]
   
   @js.native
   sealed trait unmasked extends StObject
-  @scala.inline
-  def unmasked: unmasked = "unmasked".asInstanceOf[unmasked]
+  inline def unmasked: unmasked = "unmasked".asInstanceOf[unmasked]
 }

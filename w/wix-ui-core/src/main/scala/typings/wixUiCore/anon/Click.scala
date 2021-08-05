@@ -68,8 +68,7 @@ trait Click extends StObject {
 }
 object Click {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     blur: () => js.Any,
     click: () => js.Any,
     clickOutside: () => Unit,
@@ -105,97 +104,66 @@ object Click {
     __obj.asInstanceOf[Click]
   }
   
-  @scala.inline
-  implicit class ClickMutableBuilder[Self <: Click] (val x: Self) extends AnyVal {
+  extension [Self <: Click](x: Self) {
     
-    @scala.inline
-    def setBlur(value: () => js.Any): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
+    inline def setBlur(value: () => js.Any): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClick(value: () => js.Any): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
+    inline def setClick(value: () => js.Any): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClickOutside(value: () => Unit): Self = StObject.set(x, "clickOutside", js.Any.fromFunction0(value))
+    inline def setClickOutside(value: () => Unit): Self = StObject.set(x, "clickOutside", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDropdownContentDisplayed(value: () => Boolean): Self = StObject.set(x, "dropdownContentDisplayed", js.Any.fromFunction0(value))
+    inline def setDropdownContentDisplayed(value: () => Boolean): Self = StObject.set(x, "dropdownContentDisplayed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExists(value: () => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
+    inline def setExists(value: () => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFocus(value: () => js.Any): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+    inline def setFocus(value: () => js.Any): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetArrowElement(value: () => typings.std.Element): Self = StObject.set(x, "getArrowElement", js.Any.fromFunction0(value))
+    inline def setGetArrowElement(value: () => typings.std.Element): Self = StObject.set(x, "getArrowElement", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetArrowOffset(value: () => Bottom): Self = StObject.set(x, "getArrowOffset", js.Any.fromFunction0(value))
+    inline def setGetArrowOffset(value: () => Bottom): Self = StObject.set(x, "getArrowOffset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetContentElement(value: () => js.Any): Self = StObject.set(x, "getContentElement", js.Any.fromFunction0(value))
+    inline def setGetContentElement(value: () => js.Any): Self = StObject.set(x, "getContentElement", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetElementId(value: () => js.Any): Self = StObject.set(x, "getElementId", js.Any.fromFunction0(value))
+    inline def setGetElementId(value: () => js.Any): Self = StObject.set(x, "getElementId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetInput(value: () => js.Any): Self = StObject.set(x, "getInput", js.Any.fromFunction0(value))
+    inline def setGetInput(value: () => js.Any): Self = StObject.set(x, "getInput", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOptionsCount(value: () => js.Any): Self = StObject.set(x, "getOptionsCount", js.Any.fromFunction0(value))
+    inline def setGetOptionsCount(value: () => js.Any): Self = StObject.set(x, "getOptionsCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPlaceholder(value: () => js.Any): Self = StObject.set(x, "getPlaceholder", js.Any.fromFunction0(value))
+    inline def setGetPlaceholder(value: () => js.Any): Self = StObject.set(x, "getPlaceholder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPrefix(value: () => js.Any): Self = StObject.set(x, "getPrefix", js.Any.fromFunction0(value))
+    inline def setGetPrefix(value: () => js.Any): Self = StObject.set(x, "getPrefix", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSelectedOptionsCount(value: () => Double): Self = StObject.set(x, "getSelectedOptionsCount", js.Any.fromFunction0(value))
+    inline def setGetSelectedOptionsCount(value: () => Double): Self = StObject.set(x, "getSelectedOptionsCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSuffix(value: () => js.Any): Self = StObject.set(x, "getSuffix", js.Any.fromFunction0(value))
+    inline def setGetSuffix(value: () => js.Any): Self = StObject.set(x, "getSuffix", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTargetElement(value: () => typings.std.Element): Self = StObject.set(x, "getTargetElement", js.Any.fromFunction0(value))
+    inline def setGetTargetElement(value: () => typings.std.Element): Self = StObject.set(x, "getTargetElement", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasStyleState(value: js.Any => Boolean): Self = StObject.set(x, "hasStyleState", js.Any.fromFunction1(value))
+    inline def setHasStyleState(value: js.Any => Boolean): Self = StObject.set(x, "hasStyleState", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInlineStyles(value: () => js.Any): Self = StObject.set(x, "inlineStyles", js.Any.fromFunction0(value))
+    inline def setInlineStyles(value: () => js.Any): Self = StObject.set(x, "inlineStyles", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsContentElementExists(value: () => Boolean): Self = StObject.set(x, "isContentElementExists", js.Any.fromFunction0(value))
+    inline def setIsContentElementExists(value: () => Boolean): Self = StObject.set(x, "isContentElementExists", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsDisabled(value: () => js.Any): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
+    inline def setIsDisabled(value: () => js.Any): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsReadOnly(value: () => js.Any): Self = StObject.set(x, "isReadOnly", js.Any.fromFunction0(value))
+    inline def setIsReadOnly(value: () => js.Any): Self = StObject.set(x, "isReadOnly", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsTargetElementExists(value: () => Boolean): Self = StObject.set(x, "isTargetElementExists", js.Any.fromFunction0(value))
+    inline def setIsTargetElementExists(value: () => Boolean): Self = StObject.set(x, "isTargetElementExists", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setKeyDown(value: js.Any => js.Any): Self = StObject.set(x, "keyDown", js.Any.fromFunction1(value))
+    inline def setKeyDown(value: js.Any => js.Any): Self = StObject.set(x, "keyDown", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMouseEnter(value: () => js.Any): Self = StObject.set(x, "mouseEnter", js.Any.fromFunction0(value))
+    inline def setMouseEnter(value: () => js.Any): Self = StObject.set(x, "mouseEnter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMouseLeave(value: () => js.Any): Self = StObject.set(x, "mouseLeave", js.Any.fromFunction0(value))
+    inline def setMouseLeave(value: () => js.Any): Self = StObject.set(x, "mouseLeave", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOptionAt(value: Double => ClassName): Self = StObject.set(x, "optionAt", js.Any.fromFunction1(value))
+    inline def setOptionAt(value: Double => ClassName): Self = StObject.set(x, "optionAt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetValue(value: js.Any => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: js.Any => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTriggerMouseDownOnDropdownContent(value: () => js.Any): Self = StObject.set(x, "triggerMouseDownOnDropdownContent", js.Any.fromFunction0(value))
+    inline def setTriggerMouseDownOnDropdownContent(value: () => js.Any): Self = StObject.set(x, "triggerMouseDownOnDropdownContent", js.Any.fromFunction0(value))
   }
 }

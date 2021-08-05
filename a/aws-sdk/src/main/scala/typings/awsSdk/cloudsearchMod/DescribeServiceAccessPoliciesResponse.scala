@@ -13,16 +13,13 @@ trait DescribeServiceAccessPoliciesResponse extends StObject {
 }
 object DescribeServiceAccessPoliciesResponse {
   
-  @scala.inline
-  def apply(AccessPolicies: AccessPoliciesStatus): DescribeServiceAccessPoliciesResponse = {
+  inline def apply(AccessPolicies: AccessPoliciesStatus): DescribeServiceAccessPoliciesResponse = {
     val __obj = js.Dynamic.literal(AccessPolicies = AccessPolicies.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeServiceAccessPoliciesResponse]
   }
   
-  @scala.inline
-  implicit class DescribeServiceAccessPoliciesResponseMutableBuilder[Self <: DescribeServiceAccessPoliciesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeServiceAccessPoliciesResponse](x: Self) {
     
-    @scala.inline
-    def setAccessPolicies(value: AccessPoliciesStatus): Self = StObject.set(x, "AccessPolicies", value.asInstanceOf[js.Any])
+    inline def setAccessPolicies(value: AccessPoliciesStatus): Self = StObject.set(x, "AccessPolicies", value.asInstanceOf[js.Any])
   }
 }

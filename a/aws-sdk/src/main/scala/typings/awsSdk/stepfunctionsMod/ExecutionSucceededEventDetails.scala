@@ -18,25 +18,19 @@ trait ExecutionSucceededEventDetails extends StObject {
 }
 object ExecutionSucceededEventDetails {
   
-  @scala.inline
-  def apply(): ExecutionSucceededEventDetails = {
+  inline def apply(): ExecutionSucceededEventDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExecutionSucceededEventDetails]
   }
   
-  @scala.inline
-  implicit class ExecutionSucceededEventDetailsMutableBuilder[Self <: ExecutionSucceededEventDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ExecutionSucceededEventDetails](x: Self) {
     
-    @scala.inline
-    def setOutput(value: SensitiveData): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: SensitiveData): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputDetails(value: HistoryEventExecutionDataDetails): Self = StObject.set(x, "outputDetails", value.asInstanceOf[js.Any])
+    inline def setOutputDetails(value: HistoryEventExecutionDataDetails): Self = StObject.set(x, "outputDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputDetailsUndefined: Self = StObject.set(x, "outputDetails", js.undefined)
+    inline def setOutputDetailsUndefined: Self = StObject.set(x, "outputDetails", js.undefined)
     
-    @scala.inline
-    def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+    inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
   }
 }

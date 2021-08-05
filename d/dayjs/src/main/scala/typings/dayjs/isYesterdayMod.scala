@@ -26,17 +26,14 @@ object isYesterdayMod extends Shortcut {
     }
     object Dayjs {
       
-      @scala.inline
-      def apply(isYesterday: () => Boolean): Dayjs = {
+      inline def apply(isYesterday: () => Boolean): Dayjs = {
         val __obj = js.Dynamic.literal(isYesterday = js.Any.fromFunction0(isYesterday))
         __obj.asInstanceOf[Dayjs]
       }
       
-      @scala.inline
-      implicit class DayjsMutableBuilder[Self <: Dayjs] (val x: Self) extends AnyVal {
+      extension [Self <: Dayjs](x: Self) {
         
-        @scala.inline
-        def setIsYesterday(value: () => Boolean): Self = StObject.set(x, "isYesterday", js.Any.fromFunction0(value))
+        inline def setIsYesterday(value: () => Boolean): Self = StObject.set(x, "isYesterday", js.Any.fromFunction0(value))
       }
     }
   }

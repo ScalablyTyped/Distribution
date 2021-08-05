@@ -11,16 +11,13 @@ trait PickImplautoSuccess extends StObject {
 }
 object PickImplautoSuccess {
   
-  @scala.inline
-  def apply(autoSuccess: Boolean): PickImplautoSuccess = {
+  inline def apply(autoSuccess: Boolean): PickImplautoSuccess = {
     val __obj = js.Dynamic.literal(autoSuccess = autoSuccess.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplautoSuccess]
   }
   
-  @scala.inline
-  implicit class PickImplautoSuccessMutableBuilder[Self <: PickImplautoSuccess] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplautoSuccess](x: Self) {
     
-    @scala.inline
-    def setAutoSuccess(value: Boolean): Self = StObject.set(x, "autoSuccess", value.asInstanceOf[js.Any])
+    inline def setAutoSuccess(value: Boolean): Self = StObject.set(x, "autoSuccess", value.asInstanceOf[js.Any])
   }
 }

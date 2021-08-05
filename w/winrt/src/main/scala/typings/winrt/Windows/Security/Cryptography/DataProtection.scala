@@ -16,8 +16,7 @@ object DataProtection {
        with IDataProtectionProvider
   object DataProtectionProvider {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       protectAsync: IBuffer => IAsyncOperation[IBuffer],
       protectStreamAsync: (IInputStream, IOutputStream) => IAsyncAction,
       unprotectAsync: IBuffer => IAsyncOperation[IBuffer],
@@ -40,8 +39,7 @@ object DataProtection {
   }
   object IDataProtectionProvider {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       protectAsync: IBuffer => IAsyncOperation[IBuffer],
       protectStreamAsync: (IInputStream, IOutputStream) => IAsyncAction,
       unprotectAsync: IBuffer => IAsyncOperation[IBuffer],
@@ -51,20 +49,15 @@ object DataProtection {
       __obj.asInstanceOf[IDataProtectionProvider]
     }
     
-    @scala.inline
-    implicit class IDataProtectionProviderMutableBuilder[Self <: IDataProtectionProvider] (val x: Self) extends AnyVal {
+    extension [Self <: IDataProtectionProvider](x: Self) {
       
-      @scala.inline
-      def setProtectAsync(value: IBuffer => IAsyncOperation[IBuffer]): Self = StObject.set(x, "protectAsync", js.Any.fromFunction1(value))
+      inline def setProtectAsync(value: IBuffer => IAsyncOperation[IBuffer]): Self = StObject.set(x, "protectAsync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setProtectStreamAsync(value: (IInputStream, IOutputStream) => IAsyncAction): Self = StObject.set(x, "protectStreamAsync", js.Any.fromFunction2(value))
+      inline def setProtectStreamAsync(value: (IInputStream, IOutputStream) => IAsyncAction): Self = StObject.set(x, "protectStreamAsync", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUnprotectAsync(value: IBuffer => IAsyncOperation[IBuffer]): Self = StObject.set(x, "unprotectAsync", js.Any.fromFunction1(value))
+      inline def setUnprotectAsync(value: IBuffer => IAsyncOperation[IBuffer]): Self = StObject.set(x, "unprotectAsync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUnprotectStreamAsync(value: (IInputStream, IOutputStream) => IAsyncAction): Self = StObject.set(x, "unprotectStreamAsync", js.Any.fromFunction2(value))
+      inline def setUnprotectStreamAsync(value: (IInputStream, IOutputStream) => IAsyncAction): Self = StObject.set(x, "unprotectStreamAsync", js.Any.fromFunction2(value))
     }
   }
   
@@ -74,17 +67,14 @@ object DataProtection {
   }
   object IDataProtectionProviderFactory {
     
-    @scala.inline
-    def apply(createOverloadExplicit: String => DataProtectionProvider): IDataProtectionProviderFactory = {
+    inline def apply(createOverloadExplicit: String => DataProtectionProvider): IDataProtectionProviderFactory = {
       val __obj = js.Dynamic.literal(createOverloadExplicit = js.Any.fromFunction1(createOverloadExplicit))
       __obj.asInstanceOf[IDataProtectionProviderFactory]
     }
     
-    @scala.inline
-    implicit class IDataProtectionProviderFactoryMutableBuilder[Self <: IDataProtectionProviderFactory] (val x: Self) extends AnyVal {
+    extension [Self <: IDataProtectionProviderFactory](x: Self) {
       
-      @scala.inline
-      def setCreateOverloadExplicit(value: String => DataProtectionProvider): Self = StObject.set(x, "createOverloadExplicit", js.Any.fromFunction1(value))
+      inline def setCreateOverloadExplicit(value: String => DataProtectionProvider): Self = StObject.set(x, "createOverloadExplicit", js.Any.fromFunction1(value))
     }
   }
 }

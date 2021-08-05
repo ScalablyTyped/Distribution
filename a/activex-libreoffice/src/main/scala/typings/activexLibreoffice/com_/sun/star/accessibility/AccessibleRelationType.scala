@@ -33,37 +33,26 @@ object AccessibleRelationType {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def CONTENT_FLOWS_FROM: `1` = 1.asInstanceOf[`1`]
+    inline def CONTENT_FLOWS_FROM: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def CONTENT_FLOWS_TO: `2` = 2.asInstanceOf[`2`]
+    inline def CONTENT_FLOWS_TO: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def CONTROLLED_BY: `3` = 3.asInstanceOf[`3`]
+    inline def CONTROLLED_BY: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def CONTROLLER_FOR: `4` = 4.asInstanceOf[`4`]
+    inline def CONTROLLER_FOR: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def DESCRIBED_BY: `10` = 10.asInstanceOf[`10`]
+    inline def DESCRIBED_BY: `10` = 10.asInstanceOf[`10`]
     
-    @scala.inline
-    def INVALID: `0` = 0.asInstanceOf[`0`]
+    inline def INVALID: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def LABELED_BY: `6` = 6.asInstanceOf[`6`]
+    inline def LABELED_BY: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def LABEL_FOR: `5` = 5.asInstanceOf[`5`]
+    inline def LABEL_FOR: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def MEMBER_OF: `7` = 7.asInstanceOf[`7`]
+    inline def MEMBER_OF: `7` = 7.asInstanceOf[`7`]
     
-    @scala.inline
-    def NODE_CHILD_OF: `9` = 9.asInstanceOf[`9`]
+    inline def NODE_CHILD_OF: `9` = 9.asInstanceOf[`9`]
     
-    @scala.inline
-    def SUB_WINDOW_OF: `8` = 8.asInstanceOf[`8`]
+    inline def SUB_WINDOW_OF: `8` = 8.asInstanceOf[`8`]
   }
 }

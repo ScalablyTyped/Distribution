@@ -11,9 +11,7 @@ object SEGMENT_DIVIDERS {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def sectionSize(sectionSize: js.Any): SegmentDivider = ^.asInstanceOf[js.Dynamic].applyDynamic("sectionSize")(sectionSize.asInstanceOf[js.Any]).asInstanceOf[SegmentDivider]
+  inline def sectionSize(sectionSize: js.Any): SegmentDivider = ^.asInstanceOf[js.Dynamic].applyDynamic("sectionSize")(sectionSize.asInstanceOf[js.Any]).asInstanceOf[SegmentDivider]
   
-  @scala.inline
-  def totalSections(numSections: js.Any): SegmentDivider = ^.asInstanceOf[js.Dynamic].applyDynamic("totalSections")(numSections.asInstanceOf[js.Any]).asInstanceOf[SegmentDivider]
+  inline def totalSections(numSections: js.Any): SegmentDivider = ^.asInstanceOf[js.Dynamic].applyDynamic("totalSections")(numSections.asInstanceOf[js.Any]).asInstanceOf[SegmentDivider]
 }

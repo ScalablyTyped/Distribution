@@ -21,12 +21,9 @@ object DOM {
     * @param element The element to be added to the DOM. Usually a Canvas object.
     * @param parent The parent in which to add the element. Can be a string which is passed to `getElementById` or an actual DOM object.
     */
-  @scala.inline
-  def AddToDOM(element: HTMLElement): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("AddToDOM")(element.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
-  @scala.inline
-  def AddToDOM(element: HTMLElement, parent: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("AddToDOM")(element.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
-  @scala.inline
-  def AddToDOM(element: HTMLElement, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("AddToDOM")(element.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  inline def AddToDOM(element: HTMLElement): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("AddToDOM")(element.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  inline def AddToDOM(element: HTMLElement, parent: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("AddToDOM")(element.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  inline def AddToDOM(element: HTMLElement, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("AddToDOM")(element.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   
   /**
     * Inspects the readyState of the document. If the document is already complete then it invokes the given callback.
@@ -34,24 +31,21 @@ object DOM {
     * Called automatically by the Phaser.Game instance. Should not usually be accessed directly.
     * @param callback The callback to be invoked when the device is ready and the DOM content is loaded.
     */
-  @scala.inline
-  def DOMContentLoaded(callback: ContentLoadedCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("DOMContentLoaded")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def DOMContentLoaded(callback: ContentLoadedCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("DOMContentLoaded")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Attempts to determine the document inner height across iOS and standard devices.
     * Based on code by @tylerjpeterson
     * @param iOS Is this running on iOS?
     */
-  @scala.inline
-  def GetInnerHeight(iOS: Boolean): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetInnerHeight")(iOS.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def GetInnerHeight(iOS: Boolean): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetInnerHeight")(iOS.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Attempts to determine the screen orientation using the Orientation API.
     * @param width The width of the viewport.
     * @param height The height of the viewport.
     */
-  @scala.inline
-  def GetScreenOrientation(width: Double, height: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("GetScreenOrientation")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def GetScreenOrientation(width: Double, height: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("GetScreenOrientation")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Attempts to get the target DOM element based on the given value, which can be either
@@ -59,8 +53,7 @@ object DOM {
     * can be found it will return a reference to the document.body.
     * @param element The DOM element to look-up.
     */
-  @scala.inline
-  def GetTarget(element: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("GetTarget")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def GetTarget(element: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("GetTarget")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Takes the given data string and parses it as XML.
@@ -68,15 +61,13 @@ object DOM {
     * The parsed XML object is returned, or `null` if there was an error while parsing the data.
     * @param data The XML source stored in a string.
     */
-  @scala.inline
-  def ParseXML(data: String): DOMParser | ActiveXObject = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseXML")(data.asInstanceOf[js.Any]).asInstanceOf[DOMParser | ActiveXObject]
+  inline def ParseXML(data: String): DOMParser | ActiveXObject = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseXML")(data.asInstanceOf[js.Any]).asInstanceOf[DOMParser | ActiveXObject]
   
   /**
     * Attempts to remove the element from its parentNode in the DOM.
     * @param element The DOM element to remove from its parent node.
     */
-  @scala.inline
-  def RemoveFromDOM(element: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("RemoveFromDOM")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def RemoveFromDOM(element: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("RemoveFromDOM")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Abstracts away the use of RAF or setTimeOut for the core game update loop.

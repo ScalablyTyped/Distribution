@@ -26,8 +26,7 @@ trait PageInfo extends StObject {
 }
 object PageInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     height: Double,
     layout: String,
     mediaBox: js.Array[Double],
@@ -42,40 +41,28 @@ object PageInfo {
     __obj.asInstanceOf[PageInfo]
   }
   
-  @scala.inline
-  implicit class PageInfoMutableBuilder[Self <: PageInfo] (val x: Self) extends AnyVal {
+  extension [Self <: PageInfo](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaBox(value: js.Array[Double]): Self = StObject.set(x, "mediaBox", value.asInstanceOf[js.Any])
+    inline def setMediaBox(value: js.Array[Double]): Self = StObject.set(x, "mediaBox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaBoxVarargs(value: Double*): Self = StObject.set(x, "mediaBox", js.Array(value :_*))
+    inline def setMediaBoxVarargs(value: Double*): Self = StObject.set(x, "mediaBox", js.Array(value :_*))
     
-    @scala.inline
-    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+    inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+    inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
+    inline def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+    inline def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: js.Array[Double]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: js.Array[Double]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeVarargs(value: Double*): Self = StObject.set(x, "size", js.Array(value :_*))
+    inline def setSizeVarargs(value: Double*): Self = StObject.set(x, "size", js.Array(value :_*))
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

@@ -85,91 +85,63 @@ trait IInvoiceUpdateOptions
 }
 object IInvoiceUpdateOptions {
   
-  @scala.inline
-  def apply(): IInvoiceUpdateOptions = {
+  inline def apply(): IInvoiceUpdateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IInvoiceUpdateOptions]
   }
   
-  @scala.inline
-  implicit class IInvoiceUpdateOptionsMutableBuilder[Self <: IInvoiceUpdateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IInvoiceUpdateOptions](x: Self) {
     
-    @scala.inline
-    def setApplication_fee(value: Double): Self = StObject.set(x, "application_fee", value.asInstanceOf[js.Any])
+    inline def setApplication_fee(value: Double): Self = StObject.set(x, "application_fee", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication_feeUndefined: Self = StObject.set(x, "application_fee", js.undefined)
+    inline def setApplication_feeUndefined: Self = StObject.set(x, "application_fee", js.undefined)
     
-    @scala.inline
-    def setAuto_advance(value: Boolean): Self = StObject.set(x, "auto_advance", value.asInstanceOf[js.Any])
+    inline def setAuto_advance(value: Boolean): Self = StObject.set(x, "auto_advance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuto_advanceUndefined: Self = StObject.set(x, "auto_advance", js.undefined)
+    inline def setAuto_advanceUndefined: Self = StObject.set(x, "auto_advance", js.undefined)
     
-    @scala.inline
-    def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
+    inline def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClosedUndefined: Self = StObject.set(x, "closed", js.undefined)
+    inline def setClosedUndefined: Self = StObject.set(x, "closed", js.undefined)
     
-    @scala.inline
-    def setCustom_fields(value: js.Array[Name]): Self = StObject.set(x, "custom_fields", value.asInstanceOf[js.Any])
+    inline def setCustom_fields(value: js.Array[Name]): Self = StObject.set(x, "custom_fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustom_fieldsUndefined: Self = StObject.set(x, "custom_fields", js.undefined)
+    inline def setCustom_fieldsUndefined: Self = StObject.set(x, "custom_fields", js.undefined)
     
-    @scala.inline
-    def setCustom_fieldsVarargs(value: Name*): Self = StObject.set(x, "custom_fields", js.Array(value :_*))
+    inline def setCustom_fieldsVarargs(value: Name*): Self = StObject.set(x, "custom_fields", js.Array(value :_*))
     
-    @scala.inline
-    def setDays_until_due(value: Double): Self = StObject.set(x, "days_until_due", value.asInstanceOf[js.Any])
+    inline def setDays_until_due(value: Double): Self = StObject.set(x, "days_until_due", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDays_until_dueUndefined: Self = StObject.set(x, "days_until_due", js.undefined)
+    inline def setDays_until_dueUndefined: Self = StObject.set(x, "days_until_due", js.undefined)
     
-    @scala.inline
-    def setDefault_source(value: String): Self = StObject.set(x, "default_source", value.asInstanceOf[js.Any])
+    inline def setDefault_source(value: String): Self = StObject.set(x, "default_source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefault_sourceUndefined: Self = StObject.set(x, "default_source", js.undefined)
+    inline def setDefault_sourceUndefined: Self = StObject.set(x, "default_source", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDue_date(value: Date | Double): Self = StObject.set(x, "due_date", value.asInstanceOf[js.Any])
+    inline def setDue_date(value: Date | Double): Self = StObject.set(x, "due_date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDue_dateUndefined: Self = StObject.set(x, "due_date", js.undefined)
+    inline def setDue_dateUndefined: Self = StObject.set(x, "due_date", js.undefined)
     
-    @scala.inline
-    def setFooter(value: String): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+    inline def setFooter(value: String): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFooterNull: Self = StObject.set(x, "footer", null)
+    inline def setFooterNull: Self = StObject.set(x, "footer", null)
     
-    @scala.inline
-    def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+    inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
     
-    @scala.inline
-    def setForgiven(value: Boolean): Self = StObject.set(x, "forgiven", value.asInstanceOf[js.Any])
+    inline def setForgiven(value: Boolean): Self = StObject.set(x, "forgiven", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForgivenUndefined: Self = StObject.set(x, "forgiven", js.undefined)
+    inline def setForgivenUndefined: Self = StObject.set(x, "forgiven", js.undefined)
     
-    @scala.inline
-    def setStatement_descriptor(value: String): Self = StObject.set(x, "statement_descriptor", value.asInstanceOf[js.Any])
+    inline def setStatement_descriptor(value: String): Self = StObject.set(x, "statement_descriptor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatement_descriptorUndefined: Self = StObject.set(x, "statement_descriptor", js.undefined)
+    inline def setStatement_descriptorUndefined: Self = StObject.set(x, "statement_descriptor", js.undefined)
     
-    @scala.inline
-    def setTax_percent(value: Double): Self = StObject.set(x, "tax_percent", value.asInstanceOf[js.Any])
+    inline def setTax_percent(value: Double): Self = StObject.set(x, "tax_percent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTax_percentUndefined: Self = StObject.set(x, "tax_percent", js.undefined)
+    inline def setTax_percentUndefined: Self = StObject.set(x, "tax_percent", js.undefined)
   }
 }

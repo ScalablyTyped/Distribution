@@ -19,29 +19,23 @@ trait `match`[Params /* <: /* import warning: importer.ImportType#apply c Unsupp
 }
 object `match` {
   
-  @scala.inline
-  def apply[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  inline def apply[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
     */ typings.reactRouter.reactRouterStrings.`match` & TopLevel[js.Any] */](isExact: Boolean, params: Params, path: String, url: String): `match`[Params] = {
     val __obj = js.Dynamic.literal(isExact = isExact.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[`match`[Params]]
   }
   
-  @scala.inline
-  implicit class matchMutableBuilder[Self <: `match`[?], Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  extension [Self <: `match`[?], Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
-    */ typings.reactRouter.reactRouterStrings.`match` & TopLevel[js.Any] */] (val x: Self & `match`[Params]) extends AnyVal {
+    */ typings.reactRouter.reactRouterStrings.`match` & TopLevel[js.Any] */](x: Self & `match`[Params]) {
     
-    @scala.inline
-    def setIsExact(value: Boolean): Self = StObject.set(x, "isExact", value.asInstanceOf[js.Any])
+    inline def setIsExact(value: Boolean): Self = StObject.set(x, "isExact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParams(value: Params): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: Params): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

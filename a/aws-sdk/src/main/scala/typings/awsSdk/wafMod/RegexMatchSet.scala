@@ -23,34 +23,25 @@ trait RegexMatchSet extends StObject {
 }
 object RegexMatchSet {
   
-  @scala.inline
-  def apply(): RegexMatchSet = {
+  inline def apply(): RegexMatchSet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegexMatchSet]
   }
   
-  @scala.inline
-  implicit class RegexMatchSetMutableBuilder[Self <: RegexMatchSet] (val x: Self) extends AnyVal {
+  extension [Self <: RegexMatchSet](x: Self) {
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setRegexMatchSetId(value: ResourceId): Self = StObject.set(x, "RegexMatchSetId", value.asInstanceOf[js.Any])
+    inline def setRegexMatchSetId(value: ResourceId): Self = StObject.set(x, "RegexMatchSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegexMatchSetIdUndefined: Self = StObject.set(x, "RegexMatchSetId", js.undefined)
+    inline def setRegexMatchSetIdUndefined: Self = StObject.set(x, "RegexMatchSetId", js.undefined)
     
-    @scala.inline
-    def setRegexMatchTuples(value: RegexMatchTuples): Self = StObject.set(x, "RegexMatchTuples", value.asInstanceOf[js.Any])
+    inline def setRegexMatchTuples(value: RegexMatchTuples): Self = StObject.set(x, "RegexMatchTuples", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegexMatchTuplesUndefined: Self = StObject.set(x, "RegexMatchTuples", js.undefined)
+    inline def setRegexMatchTuplesUndefined: Self = StObject.set(x, "RegexMatchTuples", js.undefined)
     
-    @scala.inline
-    def setRegexMatchTuplesVarargs(value: RegexMatchTuple*): Self = StObject.set(x, "RegexMatchTuples", js.Array(value :_*))
+    inline def setRegexMatchTuplesVarargs(value: RegexMatchTuple*): Self = StObject.set(x, "RegexMatchTuples", js.Array(value :_*))
   }
 }

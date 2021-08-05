@@ -30,49 +30,35 @@ trait UserList extends StObject {
 }
 object UserList {
   
-  @scala.inline
-  def apply(): UserList = {
+  inline def apply(): UserList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserList]
   }
   
-  @scala.inline
-  implicit class UserListMutableBuilder[Self <: UserList] (val x: Self) extends AnyVal {
+  extension [Self <: UserList](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setMembershipDurationDays(value: String): Self = StObject.set(x, "membershipDurationDays", value.asInstanceOf[js.Any])
+    inline def setMembershipDurationDays(value: String): Self = StObject.set(x, "membershipDurationDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembershipDurationDaysUndefined: Self = StObject.set(x, "membershipDurationDays", js.undefined)
+    inline def setMembershipDurationDaysUndefined: Self = StObject.set(x, "membershipDurationDays", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setUrlRestriction(value: UrlRestriction): Self = StObject.set(x, "urlRestriction", value.asInstanceOf[js.Any])
+    inline def setUrlRestriction(value: UrlRestriction): Self = StObject.set(x, "urlRestriction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlRestrictionUndefined: Self = StObject.set(x, "urlRestriction", js.undefined)
+    inline def setUrlRestrictionUndefined: Self = StObject.set(x, "urlRestriction", js.undefined)
   }
 }

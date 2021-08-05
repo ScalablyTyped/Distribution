@@ -27,22 +27,17 @@ trait PodDisruptionBudgetSpec extends StObject {
 }
 object PodDisruptionBudgetSpec {
   
-  @scala.inline
-  def apply(maxUnavailable: Double | String, minAvailable: Double | String, selector: LabelSelector): PodDisruptionBudgetSpec = {
+  inline def apply(maxUnavailable: Double | String, minAvailable: Double | String, selector: LabelSelector): PodDisruptionBudgetSpec = {
     val __obj = js.Dynamic.literal(maxUnavailable = maxUnavailable.asInstanceOf[js.Any], minAvailable = minAvailable.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[PodDisruptionBudgetSpec]
   }
   
-  @scala.inline
-  implicit class PodDisruptionBudgetSpecMutableBuilder[Self <: PodDisruptionBudgetSpec] (val x: Self) extends AnyVal {
+  extension [Self <: PodDisruptionBudgetSpec](x: Self) {
     
-    @scala.inline
-    def setMaxUnavailable(value: Double | String): Self = StObject.set(x, "maxUnavailable", value.asInstanceOf[js.Any])
+    inline def setMaxUnavailable(value: Double | String): Self = StObject.set(x, "maxUnavailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinAvailable(value: Double | String): Self = StObject.set(x, "minAvailable", value.asInstanceOf[js.Any])
+    inline def setMinAvailable(value: Double | String): Self = StObject.set(x, "minAvailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelector(value: LabelSelector): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: LabelSelector): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
   }
 }

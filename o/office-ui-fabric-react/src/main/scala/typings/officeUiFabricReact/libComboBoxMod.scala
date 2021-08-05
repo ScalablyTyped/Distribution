@@ -23,8 +23,7 @@ object libComboBoxMod {
     @JSImport("office-ui-fabric-react/lib/ComboBox", "ComboBox.defaultProps")
     @js.native
     def defaultProps: IComboBoxProps = js.native
-    @scala.inline
-    def defaultProps_=(x: IComboBoxProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IComboBoxProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("office-ui-fabric-react/lib/ComboBox", "SelectableOptionMenuItemType")

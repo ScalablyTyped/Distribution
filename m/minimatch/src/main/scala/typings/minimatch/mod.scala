@@ -9,10 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(target: String, pattern: String): Boolean = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def apply(target: String, pattern: String, options: IOptions): Boolean = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(target: String, pattern: String): Boolean = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(target: String, pattern: String, options: IOptions): Boolean = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("minimatch", JSImport.Namespace)
   @js.native
@@ -30,34 +28,27 @@ object mod {
   @JSImport("minimatch", "Minimatch")
   @js.native
   def Minimatch: IMinimatchStatic = js.native
-  @scala.inline
-  def Minimatch_=(x: IMinimatchStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Minimatch")(x.asInstanceOf[js.Any])
+  inline def Minimatch_=(x: IMinimatchStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Minimatch")(x.asInstanceOf[js.Any])
   
   /**
     * Returns a function that tests its supplied argument, suitable for use with Array.filter
     */
-  @scala.inline
-  def filter(pattern: String): js.Function3[/* element */ String, /* indexed */ Double, /* array */ js.Array[String], Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(pattern.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* element */ String, /* indexed */ Double, /* array */ js.Array[String], Boolean]]
-  @scala.inline
-  def filter(pattern: String, options: IOptions): js.Function3[/* element */ String, /* indexed */ Double, /* array */ js.Array[String], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* element */ String, /* indexed */ Double, /* array */ js.Array[String], Boolean]]
+  inline def filter(pattern: String): js.Function3[/* element */ String, /* indexed */ Double, /* array */ js.Array[String], Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(pattern.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* element */ String, /* indexed */ Double, /* array */ js.Array[String], Boolean]]
+  inline def filter(pattern: String, options: IOptions): js.Function3[/* element */ String, /* indexed */ Double, /* array */ js.Array[String], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* element */ String, /* indexed */ Double, /* array */ js.Array[String], Boolean]]
   
   /**
     * Make a regular expression object from the pattern.
     */
-  @scala.inline
-  def makeRe(pattern: String): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("makeRe")(pattern.asInstanceOf[js.Any]).asInstanceOf[RegExp]
-  @scala.inline
-  def makeRe(pattern: String, options: IOptions): RegExp = (^.asInstanceOf[js.Dynamic].applyDynamic("makeRe")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RegExp]
+  inline def makeRe(pattern: String): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("makeRe")(pattern.asInstanceOf[js.Any]).asInstanceOf[RegExp]
+  inline def makeRe(pattern: String, options: IOptions): RegExp = (^.asInstanceOf[js.Dynamic].applyDynamic("makeRe")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RegExp]
   
   /**
     * Match against the list of files, in the style of fnmatch or glob.
     * If nothing is matched, and options.nonull is set,
     * then return a list containing the pattern itself.
     */
-  @scala.inline
-  def `match`(list: js.Array[String], pattern: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(list.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  @scala.inline
-  def `match`(list: js.Array[String], pattern: String, options: IOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(list.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def `match`(list: js.Array[String], pattern: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(list.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def `match`(list: js.Array[String], pattern: String, options: IOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(list.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   @js.native
   trait IMinimatch extends StObject {
@@ -248,80 +239,56 @@ object mod {
   }
   object IOptions {
     
-    @scala.inline
-    def apply(): IOptions = {
+    inline def apply(): IOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IOptions]
     }
     
-    @scala.inline
-    implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IOptions](x: Self) {
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setDot(value: Boolean): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
+      inline def setDot(value: Boolean): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDotUndefined: Self = StObject.set(x, "dot", js.undefined)
+      inline def setDotUndefined: Self = StObject.set(x, "dot", js.undefined)
       
-      @scala.inline
-      def setFlipNegate(value: Boolean): Self = StObject.set(x, "flipNegate", value.asInstanceOf[js.Any])
+      inline def setFlipNegate(value: Boolean): Self = StObject.set(x, "flipNegate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlipNegateUndefined: Self = StObject.set(x, "flipNegate", js.undefined)
+      inline def setFlipNegateUndefined: Self = StObject.set(x, "flipNegate", js.undefined)
       
-      @scala.inline
-      def setMatchBase(value: Boolean): Self = StObject.set(x, "matchBase", value.asInstanceOf[js.Any])
+      inline def setMatchBase(value: Boolean): Self = StObject.set(x, "matchBase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchBaseUndefined: Self = StObject.set(x, "matchBase", js.undefined)
+      inline def setMatchBaseUndefined: Self = StObject.set(x, "matchBase", js.undefined)
       
-      @scala.inline
-      def setNobrace(value: Boolean): Self = StObject.set(x, "nobrace", value.asInstanceOf[js.Any])
+      inline def setNobrace(value: Boolean): Self = StObject.set(x, "nobrace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNobraceUndefined: Self = StObject.set(x, "nobrace", js.undefined)
+      inline def setNobraceUndefined: Self = StObject.set(x, "nobrace", js.undefined)
       
-      @scala.inline
-      def setNocase(value: Boolean): Self = StObject.set(x, "nocase", value.asInstanceOf[js.Any])
+      inline def setNocase(value: Boolean): Self = StObject.set(x, "nocase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNocaseUndefined: Self = StObject.set(x, "nocase", js.undefined)
+      inline def setNocaseUndefined: Self = StObject.set(x, "nocase", js.undefined)
       
-      @scala.inline
-      def setNocomment(value: Boolean): Self = StObject.set(x, "nocomment", value.asInstanceOf[js.Any])
+      inline def setNocomment(value: Boolean): Self = StObject.set(x, "nocomment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNocommentUndefined: Self = StObject.set(x, "nocomment", js.undefined)
+      inline def setNocommentUndefined: Self = StObject.set(x, "nocomment", js.undefined)
       
-      @scala.inline
-      def setNoext(value: Boolean): Self = StObject.set(x, "noext", value.asInstanceOf[js.Any])
+      inline def setNoext(value: Boolean): Self = StObject.set(x, "noext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoextUndefined: Self = StObject.set(x, "noext", js.undefined)
+      inline def setNoextUndefined: Self = StObject.set(x, "noext", js.undefined)
       
-      @scala.inline
-      def setNoglobstar(value: Boolean): Self = StObject.set(x, "noglobstar", value.asInstanceOf[js.Any])
+      inline def setNoglobstar(value: Boolean): Self = StObject.set(x, "noglobstar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoglobstarUndefined: Self = StObject.set(x, "noglobstar", js.undefined)
+      inline def setNoglobstarUndefined: Self = StObject.set(x, "noglobstar", js.undefined)
       
-      @scala.inline
-      def setNonegate(value: Boolean): Self = StObject.set(x, "nonegate", value.asInstanceOf[js.Any])
+      inline def setNonegate(value: Boolean): Self = StObject.set(x, "nonegate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonegateUndefined: Self = StObject.set(x, "nonegate", js.undefined)
+      inline def setNonegateUndefined: Self = StObject.set(x, "nonegate", js.undefined)
       
-      @scala.inline
-      def setNonull(value: Boolean): Self = StObject.set(x, "nonull", value.asInstanceOf[js.Any])
+      inline def setNonull(value: Boolean): Self = StObject.set(x, "nonull", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonullUndefined: Self = StObject.set(x, "nonull", js.undefined)
+      inline def setNonullUndefined: Self = StObject.set(x, "nonull", js.undefined)
     }
   }
 }

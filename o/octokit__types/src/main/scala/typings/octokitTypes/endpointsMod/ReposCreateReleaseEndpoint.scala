@@ -42,52 +42,37 @@ trait ReposCreateReleaseEndpoint extends StObject {
 }
 object ReposCreateReleaseEndpoint {
   
-  @scala.inline
-  def apply(owner: String, repo: String, tag_name: String): ReposCreateReleaseEndpoint = {
+  inline def apply(owner: String, repo: String, tag_name: String): ReposCreateReleaseEndpoint = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], tag_name = tag_name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposCreateReleaseEndpoint]
   }
   
-  @scala.inline
-  implicit class ReposCreateReleaseEndpointMutableBuilder[Self <: ReposCreateReleaseEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ReposCreateReleaseEndpoint](x: Self) {
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setDraft(value: Boolean): Self = StObject.set(x, "draft", value.asInstanceOf[js.Any])
+    inline def setDraft(value: Boolean): Self = StObject.set(x, "draft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraftUndefined: Self = StObject.set(x, "draft", js.undefined)
+    inline def setDraftUndefined: Self = StObject.set(x, "draft", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrerelease(value: Boolean): Self = StObject.set(x, "prerelease", value.asInstanceOf[js.Any])
+    inline def setPrerelease(value: Boolean): Self = StObject.set(x, "prerelease", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrereleaseUndefined: Self = StObject.set(x, "prerelease", js.undefined)
+    inline def setPrereleaseUndefined: Self = StObject.set(x, "prerelease", js.undefined)
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag_name(value: String): Self = StObject.set(x, "tag_name", value.asInstanceOf[js.Any])
+    inline def setTag_name(value: String): Self = StObject.set(x, "tag_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget_commitish(value: String): Self = StObject.set(x, "target_commitish", value.asInstanceOf[js.Any])
+    inline def setTarget_commitish(value: String): Self = StObject.set(x, "target_commitish", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget_commitishUndefined: Self = StObject.set(x, "target_commitish", js.undefined)
+    inline def setTarget_commitishUndefined: Self = StObject.set(x, "target_commitish", js.undefined)
   }
 }

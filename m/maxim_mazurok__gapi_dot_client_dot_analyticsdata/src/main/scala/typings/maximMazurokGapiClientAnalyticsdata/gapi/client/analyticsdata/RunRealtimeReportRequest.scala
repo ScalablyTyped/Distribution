@@ -35,73 +35,51 @@ trait RunRealtimeReportRequest extends StObject {
 }
 object RunRealtimeReportRequest {
   
-  @scala.inline
-  def apply(): RunRealtimeReportRequest = {
+  inline def apply(): RunRealtimeReportRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RunRealtimeReportRequest]
   }
   
-  @scala.inline
-  implicit class RunRealtimeReportRequestMutableBuilder[Self <: RunRealtimeReportRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RunRealtimeReportRequest](x: Self) {
     
-    @scala.inline
-    def setDimensionFilter(value: FilterExpression): Self = StObject.set(x, "dimensionFilter", value.asInstanceOf[js.Any])
+    inline def setDimensionFilter(value: FilterExpression): Self = StObject.set(x, "dimensionFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionFilterUndefined: Self = StObject.set(x, "dimensionFilter", js.undefined)
+    inline def setDimensionFilterUndefined: Self = StObject.set(x, "dimensionFilter", js.undefined)
     
-    @scala.inline
-    def setDimensions(value: js.Array[Dimension]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: js.Array[Dimension]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
+    inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
     
-    @scala.inline
-    def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
     
-    @scala.inline
-    def setLimit(value: String): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: String): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setMetricAggregations(value: js.Array[String]): Self = StObject.set(x, "metricAggregations", value.asInstanceOf[js.Any])
+    inline def setMetricAggregations(value: js.Array[String]): Self = StObject.set(x, "metricAggregations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricAggregationsUndefined: Self = StObject.set(x, "metricAggregations", js.undefined)
+    inline def setMetricAggregationsUndefined: Self = StObject.set(x, "metricAggregations", js.undefined)
     
-    @scala.inline
-    def setMetricAggregationsVarargs(value: String*): Self = StObject.set(x, "metricAggregations", js.Array(value :_*))
+    inline def setMetricAggregationsVarargs(value: String*): Self = StObject.set(x, "metricAggregations", js.Array(value :_*))
     
-    @scala.inline
-    def setMetricFilter(value: FilterExpression): Self = StObject.set(x, "metricFilter", value.asInstanceOf[js.Any])
+    inline def setMetricFilter(value: FilterExpression): Self = StObject.set(x, "metricFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricFilterUndefined: Self = StObject.set(x, "metricFilter", js.undefined)
+    inline def setMetricFilterUndefined: Self = StObject.set(x, "metricFilter", js.undefined)
     
-    @scala.inline
-    def setMetrics(value: js.Array[Metric]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+    inline def setMetrics(value: js.Array[Metric]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
+    inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    @scala.inline
-    def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
     
-    @scala.inline
-    def setOrderBys(value: js.Array[OrderBy]): Self = StObject.set(x, "orderBys", value.asInstanceOf[js.Any])
+    inline def setOrderBys(value: js.Array[OrderBy]): Self = StObject.set(x, "orderBys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderBysUndefined: Self = StObject.set(x, "orderBys", js.undefined)
+    inline def setOrderBysUndefined: Self = StObject.set(x, "orderBys", js.undefined)
     
-    @scala.inline
-    def setOrderBysVarargs(value: OrderBy*): Self = StObject.set(x, "orderBys", js.Array(value :_*))
+    inline def setOrderBysVarargs(value: OrderBy*): Self = StObject.set(x, "orderBys", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnPropertyQuota(value: Boolean): Self = StObject.set(x, "returnPropertyQuota", value.asInstanceOf[js.Any])
+    inline def setReturnPropertyQuota(value: Boolean): Self = StObject.set(x, "returnPropertyQuota", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnPropertyQuotaUndefined: Self = StObject.set(x, "returnPropertyQuota", js.undefined)
+    inline def setReturnPropertyQuotaUndefined: Self = StObject.set(x, "returnPropertyQuota", js.undefined)
   }
 }

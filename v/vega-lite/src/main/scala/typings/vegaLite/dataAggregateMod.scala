@@ -25,11 +25,11 @@ object dataAggregateMod {
     
     def assemble(): AggregateTransform = js.native
     
-    var dimensions: js.Any = js.native
+    /* private */ var dimensions: js.Any = js.native
     
     def groupBy: Set[String] = js.native
     
-    var measures: js.Any = js.native
+    /* private */ var measures: js.Any = js.native
     
     def merge(other: AggregateNode): Boolean = js.native
   }
@@ -40,11 +40,9 @@ object dataAggregateMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def makeFromEncoding(parent: DataFlowNode, model: UnitModel): AggregateNode = (^.asInstanceOf[js.Dynamic].applyDynamic("makeFromEncoding")(parent.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[AggregateNode]
+    inline def makeFromEncoding(parent: DataFlowNode, model: UnitModel): AggregateNode = (^.asInstanceOf[js.Dynamic].applyDynamic("makeFromEncoding")(parent.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[AggregateNode]
     
-    @scala.inline
-    def makeFromTransform(parent: DataFlowNode, t: typings.vegaLite.transformMod.AggregateTransform): AggregateNode = (^.asInstanceOf[js.Dynamic].applyDynamic("makeFromTransform")(parent.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[AggregateNode]
+    inline def makeFromTransform(parent: DataFlowNode, t: typings.vegaLite.transformMod.AggregateTransform): AggregateNode = (^.asInstanceOf[js.Dynamic].applyDynamic("makeFromTransform")(parent.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[AggregateNode]
   }
   
   type Measures = Dict[PartialRecordAggregateOpS]

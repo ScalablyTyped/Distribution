@@ -13,14 +13,12 @@ object deleteMessageExceptionsUnionMod {
   trait DeleteMessageExceptionsUnion extends StObject
   object DeleteMessageExceptionsUnion {
     
-    @scala.inline
-    def InvalidIdFormat(): typings.awsSdkClientSqsNode.typesInvalidIdFormatMod.InvalidIdFormat = {
+    inline def InvalidIdFormat(): typings.awsSdkClientSqsNode.typesInvalidIdFormatMod.InvalidIdFormat = {
       val __obj = js.Dynamic.literal(name = "InvalidIdFormat")
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesInvalidIdFormatMod.InvalidIdFormat]
     }
     
-    @scala.inline
-    def ReceiptHandleIsInvalid(): typings.awsSdkClientSqsNode.typesReceiptHandleIsInvalidMod.ReceiptHandleIsInvalid = {
+    inline def ReceiptHandleIsInvalid(): typings.awsSdkClientSqsNode.typesReceiptHandleIsInvalidMod.ReceiptHandleIsInvalid = {
       val __obj = js.Dynamic.literal(name = "ReceiptHandleIsInvalid")
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesReceiptHandleIsInvalidMod.ReceiptHandleIsInvalid]
     }

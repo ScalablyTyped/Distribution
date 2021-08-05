@@ -24,55 +24,39 @@ trait RTCRtpEncodingParameters
 }
 object RTCRtpEncodingParameters {
   
-  @scala.inline
-  def apply(): RTCRtpEncodingParameters = {
+  inline def apply(): RTCRtpEncodingParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RTCRtpEncodingParameters]
   }
   
-  @scala.inline
-  implicit class RTCRtpEncodingParametersMutableBuilder[Self <: RTCRtpEncodingParameters] (val x: Self) extends AnyVal {
+  extension [Self <: RTCRtpEncodingParameters](x: Self) {
     
-    @scala.inline
-    def setActive(value: scala.Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: scala.Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    @scala.inline
-    def setCodecPayloadType(value: Double): Self = StObject.set(x, "codecPayloadType", value.asInstanceOf[js.Any])
+    inline def setCodecPayloadType(value: Double): Self = StObject.set(x, "codecPayloadType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodecPayloadTypeUndefined: Self = StObject.set(x, "codecPayloadType", js.undefined)
+    inline def setCodecPayloadTypeUndefined: Self = StObject.set(x, "codecPayloadType", js.undefined)
     
-    @scala.inline
-    def setDtx(value: RTCDtxStatus): Self = StObject.set(x, "dtx", value.asInstanceOf[js.Any])
+    inline def setDtx(value: RTCDtxStatus): Self = StObject.set(x, "dtx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDtxUndefined: Self = StObject.set(x, "dtx", js.undefined)
+    inline def setDtxUndefined: Self = StObject.set(x, "dtx", js.undefined)
     
-    @scala.inline
-    def setMaxBitrate(value: Double): Self = StObject.set(x, "maxBitrate", value.asInstanceOf[js.Any])
+    inline def setMaxBitrate(value: Double): Self = StObject.set(x, "maxBitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxBitrateUndefined: Self = StObject.set(x, "maxBitrate", js.undefined)
+    inline def setMaxBitrateUndefined: Self = StObject.set(x, "maxBitrate", js.undefined)
     
-    @scala.inline
-    def setMaxFramerate(value: Double): Self = StObject.set(x, "maxFramerate", value.asInstanceOf[js.Any])
+    inline def setMaxFramerate(value: Double): Self = StObject.set(x, "maxFramerate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxFramerateUndefined: Self = StObject.set(x, "maxFramerate", js.undefined)
+    inline def setMaxFramerateUndefined: Self = StObject.set(x, "maxFramerate", js.undefined)
     
-    @scala.inline
-    def setPtime(value: Double): Self = StObject.set(x, "ptime", value.asInstanceOf[js.Any])
+    inline def setPtime(value: Double): Self = StObject.set(x, "ptime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPtimeUndefined: Self = StObject.set(x, "ptime", js.undefined)
+    inline def setPtimeUndefined: Self = StObject.set(x, "ptime", js.undefined)
     
-    @scala.inline
-    def setScaleResolutionDownBy(value: Double): Self = StObject.set(x, "scaleResolutionDownBy", value.asInstanceOf[js.Any])
+    inline def setScaleResolutionDownBy(value: Double): Self = StObject.set(x, "scaleResolutionDownBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleResolutionDownByUndefined: Self = StObject.set(x, "scaleResolutionDownBy", js.undefined)
+    inline def setScaleResolutionDownByUndefined: Self = StObject.set(x, "scaleResolutionDownBy", js.undefined)
   }
 }

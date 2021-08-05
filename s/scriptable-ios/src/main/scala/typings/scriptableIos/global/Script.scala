@@ -25,15 +25,13 @@ object Script {
     * When the script is run from a share sheet, the `complete` function will complete execution and dismiss the presented view.
     * @see https://docs.scriptable.app/script/#complete
     */
-  @scala.inline
-  def complete(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("complete")().asInstanceOf[Unit]
+  inline def complete(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("complete")().asInstanceOf[Unit]
   
   /**
     * _Name of the script._
     * @see https://docs.scriptable.app/script/#name
     */
-  @scala.inline
-  def name(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("name")().asInstanceOf[String]
+  inline def name(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("name")().asInstanceOf[String]
   
   /**
     * _Sets output when running the script as a shortcut action._
@@ -45,14 +43,12 @@ object Script {
     * @param value - Value to provide as output.
     * @see https://docs.scriptable.app/script/#setshortcutoutput
     */
-  @scala.inline
-  def setShortcutOutput(value: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setShortcutOutput")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setShortcutOutput(value: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setShortcutOutput")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * _Sets the widget to be displayed._
     * @param widget - Widget to display.
     * @see https://docs.scriptable.app/script/#setwidget
     */
-  @scala.inline
-  def setWidget(widget: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setWidget")(widget.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setWidget(widget: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setWidget")(widget.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

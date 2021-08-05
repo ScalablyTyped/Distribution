@@ -20,14 +20,12 @@ object symbolDrawerMod {
   @js.native
   class SymbolSVGDrawer () extends SVGDrawer
   
-  @scala.inline
-  def makeSymbolCanvasDrawStep(
+  inline def makeSymbolCanvasDrawStep(
     dataset: Dataset,
     symbolProjector: js.Function0[IAccessor[SymbolFactory]],
     sizeProjector: js.Function0[IAccessor[Double]]
   ): CanvasDrawStep = (^.asInstanceOf[js.Dynamic].applyDynamic("makeSymbolCanvasDrawStep")(dataset.asInstanceOf[js.Any], symbolProjector.asInstanceOf[js.Any], sizeProjector.asInstanceOf[js.Any])).asInstanceOf[CanvasDrawStep]
-  @scala.inline
-  def makeSymbolCanvasDrawStep(
+  inline def makeSymbolCanvasDrawStep(
     dataset: Dataset,
     symbolProjector: js.Function0[IAccessor[SymbolFactory]],
     sizeProjector: js.Function0[IAccessor[Double]],

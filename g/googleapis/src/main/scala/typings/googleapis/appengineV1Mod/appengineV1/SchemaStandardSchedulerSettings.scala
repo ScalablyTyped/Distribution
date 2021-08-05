@@ -33,37 +33,27 @@ trait SchemaStandardSchedulerSettings extends StObject {
 }
 object SchemaStandardSchedulerSettings {
   
-  @scala.inline
-  def apply(): SchemaStandardSchedulerSettings = {
+  inline def apply(): SchemaStandardSchedulerSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaStandardSchedulerSettings]
   }
   
-  @scala.inline
-  implicit class SchemaStandardSchedulerSettingsMutableBuilder[Self <: SchemaStandardSchedulerSettings] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaStandardSchedulerSettings](x: Self) {
     
-    @scala.inline
-    def setMaxInstances(value: Double): Self = StObject.set(x, "maxInstances", value.asInstanceOf[js.Any])
+    inline def setMaxInstances(value: Double): Self = StObject.set(x, "maxInstances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxInstancesUndefined: Self = StObject.set(x, "maxInstances", js.undefined)
+    inline def setMaxInstancesUndefined: Self = StObject.set(x, "maxInstances", js.undefined)
     
-    @scala.inline
-    def setMinInstances(value: Double): Self = StObject.set(x, "minInstances", value.asInstanceOf[js.Any])
+    inline def setMinInstances(value: Double): Self = StObject.set(x, "minInstances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinInstancesUndefined: Self = StObject.set(x, "minInstances", js.undefined)
+    inline def setMinInstancesUndefined: Self = StObject.set(x, "minInstances", js.undefined)
     
-    @scala.inline
-    def setTargetCpuUtilization(value: Double): Self = StObject.set(x, "targetCpuUtilization", value.asInstanceOf[js.Any])
+    inline def setTargetCpuUtilization(value: Double): Self = StObject.set(x, "targetCpuUtilization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetCpuUtilizationUndefined: Self = StObject.set(x, "targetCpuUtilization", js.undefined)
+    inline def setTargetCpuUtilizationUndefined: Self = StObject.set(x, "targetCpuUtilization", js.undefined)
     
-    @scala.inline
-    def setTargetThroughputUtilization(value: Double): Self = StObject.set(x, "targetThroughputUtilization", value.asInstanceOf[js.Any])
+    inline def setTargetThroughputUtilization(value: Double): Self = StObject.set(x, "targetThroughputUtilization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetThroughputUtilizationUndefined: Self = StObject.set(x, "targetThroughputUtilization", js.undefined)
+    inline def setTargetThroughputUtilizationUndefined: Self = StObject.set(x, "targetThroughputUtilization", js.undefined)
   }
 }

@@ -14,25 +14,19 @@ trait DriveReference extends StObject {
 }
 object DriveReference {
   
-  @scala.inline
-  def apply(): DriveReference = {
+  inline def apply(): DriveReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DriveReference]
   }
   
-  @scala.inline
-  implicit class DriveReferenceMutableBuilder[Self <: DriveReference] (val x: Self) extends AnyVal {
+  extension [Self <: DriveReference](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

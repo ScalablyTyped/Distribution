@@ -51,50 +51,36 @@ object shimmerGapTypesMod {
   }
   object IShimmerGapProps {
     
-    @scala.inline
-    def apply(): IShimmerGapProps = {
+    inline def apply(): IShimmerGapProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IShimmerGapProps]
     }
     
-    @scala.inline
-    implicit class IShimmerGapPropsMutableBuilder[Self <: IShimmerGapProps] (val x: Self) extends AnyVal {
+    extension [Self <: IShimmerGapProps](x: Self) {
       
-      @scala.inline
-      def setBorderStyle(value: IRawStyle): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
+      inline def setBorderStyle(value: IRawStyle): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
+      inline def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[IShimmerGap]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[IShimmerGap]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ IShimmerGap | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ IShimmerGap | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[IShimmerGapStyleProps, IShimmerGapStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[IShimmerGapStyleProps, IShimmerGapStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: IShimmerGapStyleProps => DeepPartial[IShimmerGapStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: IShimmerGapStyleProps => DeepPartial[IShimmerGapStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -118,29 +104,22 @@ object shimmerGapTypesMod {
   }
   object IShimmerGapStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): IShimmerGapStyleProps = {
+    inline def apply(theme: ITheme): IShimmerGapStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[IShimmerGapStyleProps]
     }
     
-    @scala.inline
-    implicit class IShimmerGapStylePropsMutableBuilder[Self <: IShimmerGapStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IShimmerGapStyleProps](x: Self) {
       
-      @scala.inline
-      def setBorderStyle(value: IRawStyle): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
+      inline def setBorderStyle(value: IRawStyle): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
+      inline def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -153,23 +132,18 @@ object shimmerGapTypesMod {
   }
   object IShimmerGapStyles {
     
-    @scala.inline
-    def apply(): IShimmerGapStyles = {
+    inline def apply(): IShimmerGapStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IShimmerGapStyles]
     }
     
-    @scala.inline
-    implicit class IShimmerGapStylesMutableBuilder[Self <: IShimmerGapStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IShimmerGapStyles](x: Self) {
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
 }

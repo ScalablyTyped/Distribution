@@ -24,15 +24,11 @@ object modifiersMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def dayMatchesModifier(day: Date): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("dayMatchesModifier")(day.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-    @scala.inline
-    def dayMatchesModifier(day: Date, modifier: js.Array[Modifier]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dayMatchesModifier")(day.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def dayMatchesModifier(day: Date, modifier: Modifier): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dayMatchesModifier")(day.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def dayMatchesModifier(day: Date): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("dayMatchesModifier")(day.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def dayMatchesModifier(day: Date, modifier: js.Array[Modifier]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dayMatchesModifier")(day.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def dayMatchesModifier(day: Date, modifier: Modifier): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dayMatchesModifier")(day.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def getModifiersForDay(day: Date, modifiers: Record[String, Modifier | js.Array[Modifier]]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getModifiersForDay")(day.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def getModifiersForDay(day: Date, modifiers: Record[String, Modifier | js.Array[Modifier]]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getModifiersForDay")(day.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   }
   
   trait AfterModifier
@@ -43,17 +39,14 @@ object modifiersMod {
   }
   object AfterModifier {
     
-    @scala.inline
-    def apply(after: Date): AfterModifier = {
+    inline def apply(after: Date): AfterModifier = {
       val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any])
       __obj.asInstanceOf[AfterModifier]
     }
     
-    @scala.inline
-    implicit class AfterModifierMutableBuilder[Self <: AfterModifier] (val x: Self) extends AnyVal {
+    extension [Self <: AfterModifier](x: Self) {
       
-      @scala.inline
-      def setAfter(value: Date): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+      inline def setAfter(value: Date): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     }
   }
   
@@ -67,20 +60,16 @@ object modifiersMod {
   }
   object BeforeAfterModifier {
     
-    @scala.inline
-    def apply(after: Date, before: Date): BeforeAfterModifier = {
+    inline def apply(after: Date, before: Date): BeforeAfterModifier = {
       val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any])
       __obj.asInstanceOf[BeforeAfterModifier]
     }
     
-    @scala.inline
-    implicit class BeforeAfterModifierMutableBuilder[Self <: BeforeAfterModifier] (val x: Self) extends AnyVal {
+    extension [Self <: BeforeAfterModifier](x: Self) {
       
-      @scala.inline
-      def setAfter(value: Date): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+      inline def setAfter(value: Date): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBefore(value: Date): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+      inline def setBefore(value: Date): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     }
   }
   
@@ -92,17 +81,14 @@ object modifiersMod {
   }
   object BeforeModifier {
     
-    @scala.inline
-    def apply(before: Date): BeforeModifier = {
+    inline def apply(before: Date): BeforeModifier = {
       val __obj = js.Dynamic.literal(before = before.asInstanceOf[js.Any])
       __obj.asInstanceOf[BeforeModifier]
     }
     
-    @scala.inline
-    implicit class BeforeModifierMutableBuilder[Self <: BeforeModifier] (val x: Self) extends AnyVal {
+    extension [Self <: BeforeModifier](x: Self) {
       
-      @scala.inline
-      def setBefore(value: Date): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+      inline def setBefore(value: Date): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     }
   }
   
@@ -116,26 +102,20 @@ object modifiersMod {
   }
   object DayModifiers {
     
-    @scala.inline
-    def apply(): DayModifiers = {
+    inline def apply(): DayModifiers = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DayModifiers]
     }
     
-    @scala.inline
-    implicit class DayModifiersMutableBuilder[Self <: DayModifiers] (val x: Self) extends AnyVal {
+    extension [Self <: DayModifiers](x: Self) {
       
-      @scala.inline
-      def setOutside(value: Boolean): Self = StObject.set(x, "outside", value.asInstanceOf[js.Any])
+      inline def setOutside(value: Boolean): Self = StObject.set(x, "outside", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutsideUndefined: Self = StObject.set(x, "outside", js.undefined)
+      inline def setOutsideUndefined: Self = StObject.set(x, "outside", js.undefined)
       
-      @scala.inline
-      def setToday(value: Boolean): Self = StObject.set(x, "today", value.asInstanceOf[js.Any])
+      inline def setToday(value: Boolean): Self = StObject.set(x, "today", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTodayUndefined: Self = StObject.set(x, "today", js.undefined)
+      inline def setTodayUndefined: Self = StObject.set(x, "today", js.undefined)
     }
   }
   
@@ -147,20 +127,16 @@ object modifiersMod {
   }
   object DaysOfWeekModifier {
     
-    @scala.inline
-    def apply(daysOfWeek: js.Array[Double]): DaysOfWeekModifier = {
+    inline def apply(daysOfWeek: js.Array[Double]): DaysOfWeekModifier = {
       val __obj = js.Dynamic.literal(daysOfWeek = daysOfWeek.asInstanceOf[js.Any])
       __obj.asInstanceOf[DaysOfWeekModifier]
     }
     
-    @scala.inline
-    implicit class DaysOfWeekModifierMutableBuilder[Self <: DaysOfWeekModifier] (val x: Self) extends AnyVal {
+    extension [Self <: DaysOfWeekModifier](x: Self) {
       
-      @scala.inline
-      def setDaysOfWeek(value: js.Array[Double]): Self = StObject.set(x, "daysOfWeek", value.asInstanceOf[js.Any])
+      inline def setDaysOfWeek(value: js.Array[Double]): Self = StObject.set(x, "daysOfWeek", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDaysOfWeekVarargs(value: Double*): Self = StObject.set(x, "daysOfWeek", js.Array(value :_*))
+      inline def setDaysOfWeekVarargs(value: Double*): Self = StObject.set(x, "daysOfWeek", js.Array(value :_*))
     }
   }
   
@@ -188,38 +164,28 @@ object modifiersMod {
   }
   object Modifiers {
     
-    @scala.inline
-    def apply(): Modifiers = {
+    inline def apply(): Modifiers = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Modifiers]
     }
     
-    @scala.inline
-    implicit class ModifiersMutableBuilder[Self <: Modifiers] (val x: Self) extends AnyVal {
+    extension [Self <: Modifiers](x: Self) {
       
-      @scala.inline
-      def setOutside(value: Modifier | js.Array[Modifier]): Self = StObject.set(x, "outside", value.asInstanceOf[js.Any])
+      inline def setOutside(value: Modifier | js.Array[Modifier]): Self = StObject.set(x, "outside", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutsideFunction1(value: /* date */ Date => Boolean): Self = StObject.set(x, "outside", js.Any.fromFunction1(value))
+      inline def setOutsideFunction1(value: /* date */ Date => Boolean): Self = StObject.set(x, "outside", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOutsideUndefined: Self = StObject.set(x, "outside", js.undefined)
+      inline def setOutsideUndefined: Self = StObject.set(x, "outside", js.undefined)
       
-      @scala.inline
-      def setOutsideVarargs(value: Modifier*): Self = StObject.set(x, "outside", js.Array(value :_*))
+      inline def setOutsideVarargs(value: Modifier*): Self = StObject.set(x, "outside", js.Array(value :_*))
       
-      @scala.inline
-      def setToday(value: Modifier | js.Array[Modifier]): Self = StObject.set(x, "today", value.asInstanceOf[js.Any])
+      inline def setToday(value: Modifier | js.Array[Modifier]): Self = StObject.set(x, "today", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTodayFunction1(value: /* date */ Date => Boolean): Self = StObject.set(x, "today", js.Any.fromFunction1(value))
+      inline def setTodayFunction1(value: /* date */ Date => Boolean): Self = StObject.set(x, "today", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTodayUndefined: Self = StObject.set(x, "today", js.undefined)
+      inline def setTodayUndefined: Self = StObject.set(x, "today", js.undefined)
       
-      @scala.inline
-      def setTodayVarargs(value: Modifier*): Self = StObject.set(x, "today", js.Array(value :_*))
+      inline def setTodayVarargs(value: Modifier*): Self = StObject.set(x, "today", js.Array(value :_*))
     }
   }
   
@@ -233,52 +199,43 @@ object modifiersMod {
   }
   object RangeModifier {
     
-    @scala.inline
-    def apply(from: Date, to: Date): RangeModifier = {
+    inline def apply(from: Date, to: Date): RangeModifier = {
       val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[RangeModifier]
     }
     
-    @scala.inline
-    implicit class RangeModifierMutableBuilder[Self <: RangeModifier] (val x: Self) extends AnyVal {
+    extension [Self <: RangeModifier](x: Self) {
       
-      @scala.inline
-      def setFrom(value: Date): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: Date): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTo(value: Date): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: Date): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     }
   }
   
   trait _Modifier extends StObject
   object _Modifier {
     
-    @scala.inline
-    def AfterModifier(after: Date): typings.reactDayPicker.modifiersMod.AfterModifier = {
+    inline def AfterModifier(after: Date): typings.reactDayPicker.modifiersMod.AfterModifier = {
       val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.reactDayPicker.modifiersMod.AfterModifier]
     }
     
-    @scala.inline
-    def BeforeAfterModifier(after: Date, before: Date): typings.reactDayPicker.modifiersMod.BeforeAfterModifier = {
+    inline def BeforeAfterModifier(after: Date, before: Date): typings.reactDayPicker.modifiersMod.BeforeAfterModifier = {
       val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.reactDayPicker.modifiersMod.BeforeAfterModifier]
     }
     
-    @scala.inline
-    def BeforeModifier(before: Date): typings.reactDayPicker.modifiersMod.BeforeModifier = {
+    inline def BeforeModifier(before: Date): typings.reactDayPicker.modifiersMod.BeforeModifier = {
       val __obj = js.Dynamic.literal(before = before.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.reactDayPicker.modifiersMod.BeforeModifier]
     }
     
-    @scala.inline
-    def DaysOfWeekModifier(daysOfWeek: js.Array[Double]): typings.reactDayPicker.modifiersMod.DaysOfWeekModifier = {
+    inline def DaysOfWeekModifier(daysOfWeek: js.Array[Double]): typings.reactDayPicker.modifiersMod.DaysOfWeekModifier = {
       val __obj = js.Dynamic.literal(daysOfWeek = daysOfWeek.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.reactDayPicker.modifiersMod.DaysOfWeekModifier]
     }
     
-    @scala.inline
-    def RangeModifier(from: Date, to: Date): typings.reactDayPicker.modifiersMod.RangeModifier = {
+    inline def RangeModifier(from: Date, to: Date): typings.reactDayPicker.modifiersMod.RangeModifier = {
       val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.reactDayPicker.modifiersMod.RangeModifier]
     }

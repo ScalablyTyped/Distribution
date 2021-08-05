@@ -17,8 +17,7 @@ trait NewXMLNode extends StObject {
 }
 object NewXMLNode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     NewXMLNode: typings.activexWord.Word.XMLNode,
     OldXMLNode: typings.activexWord.Word.XMLNode,
     Reason: Double,
@@ -28,19 +27,14 @@ object NewXMLNode {
     __obj.asInstanceOf[NewXMLNode]
   }
   
-  @scala.inline
-  implicit class NewXMLNodeMutableBuilder[Self <: NewXMLNode] (val x: Self) extends AnyVal {
+  extension [Self <: NewXMLNode](x: Self) {
     
-    @scala.inline
-    def setNewXMLNode(value: typings.activexWord.Word.XMLNode): Self = StObject.set(x, "NewXMLNode", value.asInstanceOf[js.Any])
+    inline def setNewXMLNode(value: typings.activexWord.Word.XMLNode): Self = StObject.set(x, "NewXMLNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldXMLNode(value: typings.activexWord.Word.XMLNode): Self = StObject.set(x, "OldXMLNode", value.asInstanceOf[js.Any])
+    inline def setOldXMLNode(value: typings.activexWord.Word.XMLNode): Self = StObject.set(x, "OldXMLNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: Double): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: Double): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSel(value: Selection): Self = StObject.set(x, "Sel", value.asInstanceOf[js.Any])
+    inline def setSel(value: Selection): Self = StObject.set(x, "Sel", value.asInstanceOf[js.Any])
   }
 }

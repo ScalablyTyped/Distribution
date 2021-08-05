@@ -17,23 +17,18 @@ trait IntegerFormat
 }
 object IntegerFormat {
   
-  @scala.inline
-  def apply(): IntegerFormat = {
+  inline def apply(): IntegerFormat = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("integer")
     __obj.asInstanceOf[IntegerFormat]
   }
   
-  @scala.inline
-  implicit class IntegerFormatMutableBuilder[Self <: IntegerFormat] (val x: Self) extends AnyVal {
+  extension [Self <: IntegerFormat](x: Self) {
     
-    @scala.inline
-    def setFormat(value: int32 | int64): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: int32 | int64): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setType(value: integer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: integer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

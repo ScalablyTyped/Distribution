@@ -45,50 +45,36 @@ object toastMod {
   }
   object ToastMessage {
     
-    @scala.inline
-    def apply(): ToastMessage = {
+    inline def apply(): ToastMessage = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ToastMessage]
     }
     
-    @scala.inline
-    implicit class ToastMessageMutableBuilder[Self <: ToastMessage] (val x: Self) extends AnyVal {
+    extension [Self <: ToastMessage](x: Self) {
       
-      @scala.inline
-      def setClosable(value: Boolean): Self = StObject.set(x, "closable", value.asInstanceOf[js.Any])
+      inline def setClosable(value: Boolean): Self = StObject.set(x, "closable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClosableUndefined: Self = StObject.set(x, "closable", js.undefined)
+      inline def setClosableUndefined: Self = StObject.set(x, "closable", js.undefined)
       
-      @scala.inline
-      def setDetail(value: ReactNode): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+      inline def setDetail(value: ReactNode): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
+      inline def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
       
-      @scala.inline
-      def setLife(value: Double): Self = StObject.set(x, "life", value.asInstanceOf[js.Any])
+      inline def setLife(value: Double): Self = StObject.set(x, "life", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLifeUndefined: Self = StObject.set(x, "life", js.undefined)
+      inline def setLifeUndefined: Self = StObject.set(x, "life", js.undefined)
       
-      @scala.inline
-      def setSeverity(value: success | info | warn | error): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+      inline def setSeverity(value: success | info | warn | error): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
+      inline def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
       
-      @scala.inline
-      def setSticky(value: Boolean): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
+      inline def setSticky(value: Boolean): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStickyUndefined: Self = StObject.set(x, "sticky", js.undefined)
+      inline def setStickyUndefined: Self = StObject.set(x, "sticky", js.undefined)
       
-      @scala.inline
-      def setSummary(value: ReactNode): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+      inline def setSummary(value: ReactNode): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
+      inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
     }
   }
   
@@ -112,62 +98,44 @@ object toastMod {
   }
   object ToastProps {
     
-    @scala.inline
-    def apply(): ToastProps = {
+    inline def apply(): ToastProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ToastProps]
     }
     
-    @scala.inline
-    implicit class ToastPropsMutableBuilder[Self <: ToastProps] (val x: Self) extends AnyVal {
+    extension [Self <: ToastProps](x: Self) {
       
-      @scala.inline
-      def setBaseZIndex(value: Double): Self = StObject.set(x, "baseZIndex", value.asInstanceOf[js.Any])
+      inline def setBaseZIndex(value: Double): Self = StObject.set(x, "baseZIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseZIndexUndefined: Self = StObject.set(x, "baseZIndex", js.undefined)
+      inline def setBaseZIndexUndefined: Self = StObject.set(x, "baseZIndex", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: /* message */ ToastMessage => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: /* message */ ToastMessage => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOnClose(value: /* message */ ToastMessage => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+      inline def setOnClose(value: /* message */ ToastMessage => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      @scala.inline
-      def setOnRemove(value: /* message */ ToastMessage => Unit): Self = StObject.set(x, "onRemove", js.Any.fromFunction1(value))
+      inline def setOnRemove(value: /* message */ ToastMessage => Unit): Self = StObject.set(x, "onRemove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRemoveUndefined: Self = StObject.set(x, "onRemove", js.undefined)
+      inline def setOnRemoveUndefined: Self = StObject.set(x, "onRemove", js.undefined)
       
-      @scala.inline
-      def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

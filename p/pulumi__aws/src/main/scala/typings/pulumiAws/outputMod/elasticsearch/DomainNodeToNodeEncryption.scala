@@ -13,16 +13,13 @@ trait DomainNodeToNodeEncryption extends StObject {
 }
 object DomainNodeToNodeEncryption {
   
-  @scala.inline
-  def apply(enabled: Boolean): DomainNodeToNodeEncryption = {
+  inline def apply(enabled: Boolean): DomainNodeToNodeEncryption = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainNodeToNodeEncryption]
   }
   
-  @scala.inline
-  implicit class DomainNodeToNodeEncryptionMutableBuilder[Self <: DomainNodeToNodeEncryption] (val x: Self) extends AnyVal {
+  extension [Self <: DomainNodeToNodeEncryption](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }
 }

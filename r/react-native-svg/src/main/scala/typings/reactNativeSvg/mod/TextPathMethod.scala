@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TextPathMethod extends StObject
 object TextPathMethod {
   
-  @scala.inline
-  def align: typings.reactNativeSvg.reactNativeSvgStrings.align = "align".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.align]
+  inline def align: typings.reactNativeSvg.reactNativeSvgStrings.align = "align".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.align]
   
-  @scala.inline
-  def stretch: typings.reactNativeSvg.reactNativeSvgStrings.stretch = "stretch".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.stretch]
+  inline def stretch: typings.reactNativeSvg.reactNativeSvgStrings.stretch = "stretch".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.stretch]
 }

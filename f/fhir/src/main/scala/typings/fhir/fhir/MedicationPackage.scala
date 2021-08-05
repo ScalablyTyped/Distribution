@@ -28,37 +28,27 @@ trait MedicationPackage
 }
 object MedicationPackage {
   
-  @scala.inline
-  def apply(): MedicationPackage = {
+  inline def apply(): MedicationPackage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MedicationPackage]
   }
   
-  @scala.inline
-  implicit class MedicationPackageMutableBuilder[Self <: MedicationPackage] (val x: Self) extends AnyVal {
+  extension [Self <: MedicationPackage](x: Self) {
     
-    @scala.inline
-    def setBatch(value: js.Array[MedicationPackageBatch]): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
+    inline def setBatch(value: js.Array[MedicationPackageBatch]): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchUndefined: Self = StObject.set(x, "batch", js.undefined)
+    inline def setBatchUndefined: Self = StObject.set(x, "batch", js.undefined)
     
-    @scala.inline
-    def setBatchVarargs(value: MedicationPackageBatch*): Self = StObject.set(x, "batch", js.Array(value :_*))
+    inline def setBatchVarargs(value: MedicationPackageBatch*): Self = StObject.set(x, "batch", js.Array(value :_*))
     
-    @scala.inline
-    def setContainer(value: CodeableConcept): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: CodeableConcept): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setContent(value: js.Array[MedicationPackageContent]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: js.Array[MedicationPackageContent]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setContentVarargs(value: MedicationPackageContent*): Self = StObject.set(x, "content", js.Array(value :_*))
+    inline def setContentVarargs(value: MedicationPackageContent*): Self = StObject.set(x, "content", js.Array(value :_*))
   }
 }

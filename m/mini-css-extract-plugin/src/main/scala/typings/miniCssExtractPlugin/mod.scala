@@ -39,8 +39,7 @@ object mod {
   @JSImport("mini-css-extract-plugin", "loader")
   @js.native
   def loader: String = js.native
-  @scala.inline
-  def loader_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("loader")(x.asInstanceOf[js.Any])
+  inline def loader_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("loader")(x.asInstanceOf[js.Any])
   
   /**
     * Lightweight CSS extraction webpack plugin
@@ -59,19 +58,16 @@ object mod {
   }
   object MiniCssExtractPlugin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       apply: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any => Unit
     ): MiniCssExtractPlugin = {
       val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply))
       __obj.asInstanceOf[MiniCssExtractPlugin]
     }
     
-    @scala.inline
-    implicit class MiniCssExtractPluginMutableBuilder[Self <: MiniCssExtractPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: MiniCssExtractPlugin](x: Self) {
       
-      @scala.inline
-      def setApply(
+      inline def setApply(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any => Unit
       ): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     }
@@ -116,46 +112,34 @@ object mod {
   }
   object PluginOptions {
     
-    @scala.inline
-    def apply(): PluginOptions = {
+    inline def apply(): PluginOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PluginOptions]
     }
     
-    @scala.inline
-    implicit class PluginOptionsMutableBuilder[Self <: PluginOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PluginOptions](x: Self) {
       
-      @scala.inline
-      def setChunkFilename(value: String): Self = StObject.set(x, "chunkFilename", value.asInstanceOf[js.Any])
+      inline def setChunkFilename(value: String): Self = StObject.set(x, "chunkFilename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChunkFilenameUndefined: Self = StObject.set(x, "chunkFilename", js.undefined)
+      inline def setChunkFilenameUndefined: Self = StObject.set(x, "chunkFilename", js.undefined)
       
-      @scala.inline
-      def setEsModule(value: Boolean): Self = StObject.set(x, "esModule", value.asInstanceOf[js.Any])
+      inline def setEsModule(value: Boolean): Self = StObject.set(x, "esModule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEsModuleUndefined: Self = StObject.set(x, "esModule", js.undefined)
+      inline def setEsModuleUndefined: Self = StObject.set(x, "esModule", js.undefined)
       
-      @scala.inline
-      def setFilename(
+      inline def setFilename(
         value: /* import warning: importer.ImportType#apply Failed type conversion: std.Required</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration * / any>['output']['filename'] */ js.Any
       ): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setIgnoreOrder(value: Boolean): Self = StObject.set(x, "ignoreOrder", value.asInstanceOf[js.Any])
+      inline def setIgnoreOrder(value: Boolean): Self = StObject.set(x, "ignoreOrder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreOrderUndefined: Self = StObject.set(x, "ignoreOrder", js.undefined)
+      inline def setIgnoreOrderUndefined: Self = StObject.set(x, "ignoreOrder", js.undefined)
       
-      @scala.inline
-      def setLinkType(value: Boolean | textSlashcss): Self = StObject.set(x, "linkType", value.asInstanceOf[js.Any])
+      inline def setLinkType(value: Boolean | textSlashcss): Self = StObject.set(x, "linkType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkTypeUndefined: Self = StObject.set(x, "linkType", js.undefined)
+      inline def setLinkTypeUndefined: Self = StObject.set(x, "linkType", js.undefined)
     }
   }
 }

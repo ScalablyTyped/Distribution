@@ -22,46 +22,33 @@ trait MlGetCalendarEvents
 }
 object MlGetCalendarEvents {
   
-  @scala.inline
-  def apply(calendar_id: String): MlGetCalendarEvents = {
+  inline def apply(calendar_id: String): MlGetCalendarEvents = {
     val __obj = js.Dynamic.literal(calendar_id = calendar_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[MlGetCalendarEvents]
   }
   
-  @scala.inline
-  implicit class MlGetCalendarEventsMutableBuilder[Self <: MlGetCalendarEvents] (val x: Self) extends AnyVal {
+  extension [Self <: MlGetCalendarEvents](x: Self) {
     
-    @scala.inline
-    def setCalendar_id(value: String): Self = StObject.set(x, "calendar_id", value.asInstanceOf[js.Any])
+    inline def setCalendar_id(value: String): Self = StObject.set(x, "calendar_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    @scala.inline
-    def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
-    @scala.inline
-    def setJob_id(value: String): Self = StObject.set(x, "job_id", value.asInstanceOf[js.Any])
+    inline def setJob_id(value: String): Self = StObject.set(x, "job_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJob_idUndefined: Self = StObject.set(x, "job_id", js.undefined)
+    inline def setJob_idUndefined: Self = StObject.set(x, "job_id", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

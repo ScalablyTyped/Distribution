@@ -21,6 +21,5 @@ class ReferenceError ()
 }
 object ReferenceError {
   
-  @scala.inline
-  def apply: ReferenceErrorConstructor = js.Dynamic.global.selectDynamic("ReferenceError").asInstanceOf[ReferenceErrorConstructor]
+  inline def apply: ReferenceErrorConstructor = js.Dynamic.global.selectDynamic("ReferenceError").asInstanceOf[ReferenceErrorConstructor]
 }

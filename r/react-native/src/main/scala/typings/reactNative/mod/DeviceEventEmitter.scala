@@ -13,6 +13,5 @@ class DeviceEventEmitter ()
      with DeviceEventEmitterStatic
 object DeviceEventEmitter {
   
-  @scala.inline
-  def apply: DeviceEventEmitterStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("DeviceEventEmitter").asInstanceOf[DeviceEventEmitterStatic]
+  inline def apply: DeviceEventEmitterStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("DeviceEventEmitter").asInstanceOf[DeviceEventEmitterStatic]
 }

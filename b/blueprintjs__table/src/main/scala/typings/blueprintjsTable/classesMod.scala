@@ -354,23 +354,15 @@ object classesMod {
   @js.native
   val TABLE_VERTICAL_GUIDE: String = js.native
   
-  @scala.inline
-  def columnCellIndexClass(columnIndex: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("columnCellIndexClass")(columnIndex.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def columnCellIndexClass(columnIndex: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("columnCellIndexClass")(columnIndex.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def columnCellIndexClass(columnIndex: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("columnCellIndexClass")(columnIndex.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def columnCellIndexClass(columnIndex: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("columnCellIndexClass")(columnIndex.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def columnIndexClass(columnIndex: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("columnIndexClass")(columnIndex.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def columnIndexClass(columnIndex: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("columnIndexClass")(columnIndex.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def columnIndexClass(columnIndex: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("columnIndexClass")(columnIndex.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def columnIndexClass(columnIndex: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("columnIndexClass")(columnIndex.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def rowCellIndexClass(rowIndex: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rowCellIndexClass")(rowIndex.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def rowCellIndexClass(rowIndex: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rowCellIndexClass")(rowIndex.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def rowCellIndexClass(rowIndex: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rowCellIndexClass")(rowIndex.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def rowCellIndexClass(rowIndex: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rowCellIndexClass")(rowIndex.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def rowIndexClass(rowIndex: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rowIndexClass")(rowIndex.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def rowIndexClass(rowIndex: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rowIndexClass")(rowIndex.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def rowIndexClass(rowIndex: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rowIndexClass")(rowIndex.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def rowIndexClass(rowIndex: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rowIndexClass")(rowIndex.asInstanceOf[js.Any]).asInstanceOf[String]
 }

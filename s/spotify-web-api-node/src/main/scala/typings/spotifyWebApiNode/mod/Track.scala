@@ -12,25 +12,19 @@ trait Track extends StObject {
 }
 object Track {
   
-  @scala.inline
-  def apply(uri: String): Track = {
+  inline def apply(uri: String): Track = {
     val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[Track]
   }
   
-  @scala.inline
-  implicit class TrackMutableBuilder[Self <: Track] (val x: Self) extends AnyVal {
+  extension [Self <: Track](x: Self) {
     
-    @scala.inline
-    def setPositions(value: js.Array[Double]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
+    inline def setPositions(value: js.Array[Double]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionsUndefined: Self = StObject.set(x, "positions", js.undefined)
+    inline def setPositionsUndefined: Self = StObject.set(x, "positions", js.undefined)
     
-    @scala.inline
-    def setPositionsVarargs(value: Double*): Self = StObject.set(x, "positions", js.Array(value :_*))
+    inline def setPositionsVarargs(value: Double*): Self = StObject.set(x, "positions", js.Array(value :_*))
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

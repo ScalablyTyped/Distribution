@@ -16,28 +16,21 @@ trait ClusterExistsComponentTemplate
 }
 object ClusterExistsComponentTemplate {
   
-  @scala.inline
-  def apply(name: String): ClusterExistsComponentTemplate = {
+  inline def apply(name: String): ClusterExistsComponentTemplate = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterExistsComponentTemplate]
   }
   
-  @scala.inline
-  implicit class ClusterExistsComponentTemplateMutableBuilder[Self <: ClusterExistsComponentTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterExistsComponentTemplate](x: Self) {
     
-    @scala.inline
-    def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+    inline def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
+    inline def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
     
-    @scala.inline
-    def setMaster_timeout(value: String): Self = StObject.set(x, "master_timeout", value.asInstanceOf[js.Any])
+    inline def setMaster_timeout(value: String): Self = StObject.set(x, "master_timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaster_timeoutUndefined: Self = StObject.set(x, "master_timeout", js.undefined)
+    inline def setMaster_timeoutUndefined: Self = StObject.set(x, "master_timeout", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

@@ -12,6 +12,5 @@ object buttonGridStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStyles(props: IButtonGridStyleProps): IButtonGridStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IButtonGridStyles]
+  inline def getStyles(props: IButtonGridStyleProps): IButtonGridStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IButtonGridStyles]
 }

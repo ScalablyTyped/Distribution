@@ -32,26 +32,20 @@ object mod extends Shortcut {
   }
   object BBOX {
     
-    @scala.inline
-    def apply(maxX: Double, maxY: Double, minX: Double, minY: Double): BBOX = {
+    inline def apply(maxX: Double, maxY: Double, minX: Double, minY: Double): BBOX = {
       val __obj = js.Dynamic.literal(maxX = maxX.asInstanceOf[js.Any], maxY = maxY.asInstanceOf[js.Any], minX = minX.asInstanceOf[js.Any], minY = minY.asInstanceOf[js.Any])
       __obj.asInstanceOf[BBOX]
     }
     
-    @scala.inline
-    implicit class BBOXMutableBuilder[Self <: BBOX] (val x: Self) extends AnyVal {
+    extension [Self <: BBOX](x: Self) {
       
-      @scala.inline
-      def setMaxX(value: Double): Self = StObject.set(x, "maxX", value.asInstanceOf[js.Any])
+      inline def setMaxX(value: Double): Self = StObject.set(x, "maxX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxY(value: Double): Self = StObject.set(x, "maxY", value.asInstanceOf[js.Any])
+      inline def setMaxY(value: Double): Self = StObject.set(x, "maxY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinX(value: Double): Self = StObject.set(x, "minX", value.asInstanceOf[js.Any])
+      inline def setMinX(value: Double): Self = StObject.set(x, "minX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinY(value: Double): Self = StObject.set(x, "minY", value.asInstanceOf[js.Any])
+      inline def setMinY(value: Double): Self = StObject.set(x, "minY", value.asInstanceOf[js.Any])
     }
   }
   
@@ -256,8 +250,7 @@ object mod extends Shortcut {
   }
   object Glyph {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       advanceWidth: Double,
       bbox: BBOX,
       cbox: BBOX,
@@ -271,35 +264,25 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Glyph]
     }
     
-    @scala.inline
-    implicit class GlyphMutableBuilder[Self <: Glyph] (val x: Self) extends AnyVal {
+    extension [Self <: Glyph](x: Self) {
       
-      @scala.inline
-      def setAdvanceWidth(value: Double): Self = StObject.set(x, "advanceWidth", value.asInstanceOf[js.Any])
+      inline def setAdvanceWidth(value: Double): Self = StObject.set(x, "advanceWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBbox(value: BBOX): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
+      inline def setBbox(value: BBOX): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCbox(value: BBOX): Self = StObject.set(x, "cbox", value.asInstanceOf[js.Any])
+      inline def setCbox(value: BBOX): Self = StObject.set(x, "cbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodePoints(value: js.Array[Double]): Self = StObject.set(x, "codePoints", value.asInstanceOf[js.Any])
+      inline def setCodePoints(value: js.Array[Double]): Self = StObject.set(x, "codePoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodePointsVarargs(value: Double*): Self = StObject.set(x, "codePoints", js.Array(value :_*))
+      inline def setCodePointsVarargs(value: Double*): Self = StObject.set(x, "codePoints", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLigature(value: Boolean): Self = StObject.set(x, "isLigature", value.asInstanceOf[js.Any])
+      inline def setIsLigature(value: Boolean): Self = StObject.set(x, "isLigature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMark(value: Boolean): Self = StObject.set(x, "isMark", value.asInstanceOf[js.Any])
+      inline def setIsMark(value: Boolean): Self = StObject.set(x, "isMark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: Path): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: Path): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
@@ -319,26 +302,20 @@ object mod extends Shortcut {
   }
   object GlyphPosition {
     
-    @scala.inline
-    def apply(xAdvance: Double, xOffset: Double, yAdvance: Double, yOffset: Double): GlyphPosition = {
+    inline def apply(xAdvance: Double, xOffset: Double, yAdvance: Double, yOffset: Double): GlyphPosition = {
       val __obj = js.Dynamic.literal(xAdvance = xAdvance.asInstanceOf[js.Any], xOffset = xOffset.asInstanceOf[js.Any], yAdvance = yAdvance.asInstanceOf[js.Any], yOffset = yOffset.asInstanceOf[js.Any])
       __obj.asInstanceOf[GlyphPosition]
     }
     
-    @scala.inline
-    implicit class GlyphPositionMutableBuilder[Self <: GlyphPosition] (val x: Self) extends AnyVal {
+    extension [Self <: GlyphPosition](x: Self) {
       
-      @scala.inline
-      def setXAdvance(value: Double): Self = StObject.set(x, "xAdvance", value.asInstanceOf[js.Any])
+      inline def setXAdvance(value: Double): Self = StObject.set(x, "xAdvance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXOffset(value: Double): Self = StObject.set(x, "xOffset", value.asInstanceOf[js.Any])
+      inline def setXOffset(value: Double): Self = StObject.set(x, "xOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYAdvance(value: Double): Self = StObject.set(x, "yAdvance", value.asInstanceOf[js.Any])
+      inline def setYAdvance(value: Double): Self = StObject.set(x, "yAdvance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYOffset(value: Double): Self = StObject.set(x, "yOffset", value.asInstanceOf[js.Any])
+      inline def setYOffset(value: Double): Self = StObject.set(x, "yOffset", value.asInstanceOf[js.Any])
     }
   }
   
@@ -394,8 +371,7 @@ object mod extends Shortcut {
   }
   object GlyphRun {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       advanceHeight: Double,
       advanceWidth: Double,
       bbox: BBOX,
@@ -410,41 +386,29 @@ object mod extends Shortcut {
       __obj.asInstanceOf[GlyphRun]
     }
     
-    @scala.inline
-    implicit class GlyphRunMutableBuilder[Self <: GlyphRun] (val x: Self) extends AnyVal {
+    extension [Self <: GlyphRun](x: Self) {
       
-      @scala.inline
-      def setAdvanceHeight(value: Double): Self = StObject.set(x, "advanceHeight", value.asInstanceOf[js.Any])
+      inline def setAdvanceHeight(value: Double): Self = StObject.set(x, "advanceHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdvanceWidth(value: Double): Self = StObject.set(x, "advanceWidth", value.asInstanceOf[js.Any])
+      inline def setAdvanceWidth(value: Double): Self = StObject.set(x, "advanceWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBbox(value: BBOX): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
+      inline def setBbox(value: BBOX): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeatures(value: Record[String, Boolean]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+      inline def setFeatures(value: Record[String, Boolean]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlyphs(value: js.Array[Glyph]): Self = StObject.set(x, "glyphs", value.asInstanceOf[js.Any])
+      inline def setGlyphs(value: js.Array[Glyph]): Self = StObject.set(x, "glyphs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlyphsVarargs(value: Glyph*): Self = StObject.set(x, "glyphs", js.Array(value :_*))
+      inline def setGlyphsVarargs(value: Glyph*): Self = StObject.set(x, "glyphs", js.Array(value :_*))
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositions(value: js.Array[GlyphPosition]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
+      inline def setPositions(value: js.Array[GlyphPosition]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionsVarargs(value: GlyphPosition*): Self = StObject.set(x, "positions", js.Array(value :_*))
+      inline def setPositionsVarargs(value: GlyphPosition*): Self = StObject.set(x, "positions", js.Array(value :_*))
       
-      @scala.inline
-      def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+      inline def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
     }
   }
   
@@ -498,23 +462,18 @@ object mod extends Shortcut {
   }
   object PathCommand {
     
-    @scala.inline
-    def apply(args: js.Array[Double], command: moveTo | lineTo | quadraticCurveTo | bezierCurveTo | closePath): PathCommand = {
+    inline def apply(args: js.Array[Double], command: moveTo | lineTo | quadraticCurveTo | bezierCurveTo | closePath): PathCommand = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any])
       __obj.asInstanceOf[PathCommand]
     }
     
-    @scala.inline
-    implicit class PathCommandMutableBuilder[Self <: PathCommand] (val x: Self) extends AnyVal {
+    extension [Self <: PathCommand](x: Self) {
       
-      @scala.inline
-      def setArgs(value: js.Array[Double]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[Double]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsVarargs(value: Double*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: Double*): Self = StObject.set(x, "args", js.Array(value :_*))
       
-      @scala.inline
-      def setCommand(value: moveTo | lineTo | quadraticCurveTo | bezierCurveTo | closePath): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+      inline def setCommand(value: moveTo | lineTo | quadraticCurveTo | bezierCurveTo | closePath): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     }
   }
   

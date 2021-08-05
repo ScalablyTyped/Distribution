@@ -23,31 +23,23 @@ trait ListAccessKeysRequest extends StObject {
 }
 object ListAccessKeysRequest {
   
-  @scala.inline
-  def apply(): ListAccessKeysRequest = {
+  inline def apply(): ListAccessKeysRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListAccessKeysRequest]
   }
   
-  @scala.inline
-  implicit class ListAccessKeysRequestMutableBuilder[Self <: ListAccessKeysRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListAccessKeysRequest](x: Self) {
     
-    @scala.inline
-    def setMarker(value: markerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: markerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxItems(value: maxItemsType): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: maxItemsType): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
+    inline def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
     
-    @scala.inline
-    def setUserName(value: existingUserNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: existingUserNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
+    inline def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
   }
 }

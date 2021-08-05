@@ -23,31 +23,23 @@ trait CreateFieldLevelEncryptionProfileResult extends StObject {
 }
 object CreateFieldLevelEncryptionProfileResult {
   
-  @scala.inline
-  def apply(): CreateFieldLevelEncryptionProfileResult = {
+  inline def apply(): CreateFieldLevelEncryptionProfileResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateFieldLevelEncryptionProfileResult]
   }
   
-  @scala.inline
-  implicit class CreateFieldLevelEncryptionProfileResultMutableBuilder[Self <: CreateFieldLevelEncryptionProfileResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateFieldLevelEncryptionProfileResult](x: Self) {
     
-    @scala.inline
-    def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
+    inline def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
+    inline def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
     
-    @scala.inline
-    def setFieldLevelEncryptionProfile(value: FieldLevelEncryptionProfile): Self = StObject.set(x, "FieldLevelEncryptionProfile", value.asInstanceOf[js.Any])
+    inline def setFieldLevelEncryptionProfile(value: FieldLevelEncryptionProfile): Self = StObject.set(x, "FieldLevelEncryptionProfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldLevelEncryptionProfileUndefined: Self = StObject.set(x, "FieldLevelEncryptionProfile", js.undefined)
+    inline def setFieldLevelEncryptionProfileUndefined: Self = StObject.set(x, "FieldLevelEncryptionProfile", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
   }
 }

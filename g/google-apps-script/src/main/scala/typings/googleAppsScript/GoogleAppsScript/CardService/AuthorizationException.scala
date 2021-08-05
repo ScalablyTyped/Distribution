@@ -26,8 +26,7 @@ trait AuthorizationException extends StObject {
 }
 object AuthorizationException {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     printJson: () => String,
     setAuthorizationUrl: String => AuthorizationException,
     setCustomUiCallback: String => AuthorizationException,
@@ -38,22 +37,16 @@ object AuthorizationException {
     __obj.asInstanceOf[AuthorizationException]
   }
   
-  @scala.inline
-  implicit class AuthorizationExceptionMutableBuilder[Self <: AuthorizationException] (val x: Self) extends AnyVal {
+  extension [Self <: AuthorizationException](x: Self) {
     
-    @scala.inline
-    def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
+    inline def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetAuthorizationUrl(value: String => AuthorizationException): Self = StObject.set(x, "setAuthorizationUrl", js.Any.fromFunction1(value))
+    inline def setSetAuthorizationUrl(value: String => AuthorizationException): Self = StObject.set(x, "setAuthorizationUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetCustomUiCallback(value: String => AuthorizationException): Self = StObject.set(x, "setCustomUiCallback", js.Any.fromFunction1(value))
+    inline def setSetCustomUiCallback(value: String => AuthorizationException): Self = StObject.set(x, "setCustomUiCallback", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetResourceDisplayName(value: String => AuthorizationException): Self = StObject.set(x, "setResourceDisplayName", js.Any.fromFunction1(value))
+    inline def setSetResourceDisplayName(value: String => AuthorizationException): Self = StObject.set(x, "setResourceDisplayName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setThrowException(value: () => Unit): Self = StObject.set(x, "throwException", js.Any.fromFunction0(value))
+    inline def setThrowException(value: () => Unit): Self = StObject.set(x, "throwException", js.Any.fromFunction0(value))
   }
 }

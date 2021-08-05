@@ -18,19 +18,15 @@ trait QUrl extends StObject {
 }
 object QUrl {
   
-  @scala.inline
-  def apply(qName: String, qUrl: String): QUrl = {
+  inline def apply(qName: String, qUrl: String): QUrl = {
     val __obj = js.Dynamic.literal(qName = qName.asInstanceOf[js.Any], qUrl = qUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[QUrl]
   }
   
-  @scala.inline
-  implicit class QUrlMutableBuilder[Self <: QUrl] (val x: Self) extends AnyVal {
+  extension [Self <: QUrl](x: Self) {
     
-    @scala.inline
-    def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
+    inline def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQUrl(value: String): Self = StObject.set(x, "qUrl", value.asInstanceOf[js.Any])
+    inline def setQUrl(value: String): Self = StObject.set(x, "qUrl", value.asInstanceOf[js.Any])
   }
 }

@@ -43,8 +43,7 @@ trait XCheckBox
 }
 object XCheckBox {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     State: Double,
     acquire: () => Unit,
     addItemListener: XItemListener => Unit,
@@ -60,28 +59,20 @@ object XCheckBox {
     __obj.asInstanceOf[XCheckBox]
   }
   
-  @scala.inline
-  implicit class XCheckBoxMutableBuilder[Self <: XCheckBox] (val x: Self) extends AnyVal {
+  extension [Self <: XCheckBox](x: Self) {
     
-    @scala.inline
-    def setAddItemListener(value: XItemListener => Unit): Self = StObject.set(x, "addItemListener", js.Any.fromFunction1(value))
+    inline def setAddItemListener(value: XItemListener => Unit): Self = StObject.set(x, "addItemListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEnableTriState(value: Boolean => Unit): Self = StObject.set(x, "enableTriState", js.Any.fromFunction1(value))
+    inline def setEnableTriState(value: Boolean => Unit): Self = StObject.set(x, "enableTriState", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetState(value: () => Double): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    inline def setGetState(value: () => Double): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveItemListener(value: XItemListener => Unit): Self = StObject.set(x, "removeItemListener", js.Any.fromFunction1(value))
+    inline def setRemoveItemListener(value: XItemListener => Unit): Self = StObject.set(x, "removeItemListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLabel(value: String => Unit): Self = StObject.set(x, "setLabel", js.Any.fromFunction1(value))
+    inline def setSetLabel(value: String => Unit): Self = StObject.set(x, "setLabel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetState(value: Double => Unit): Self = StObject.set(x, "setState", js.Any.fromFunction1(value))
+    inline def setSetState(value: Double => Unit): Self = StObject.set(x, "setState", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setState(value: Double): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: Double): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
   }
 }

@@ -24,19 +24,15 @@ trait SchemaBuildBazelRemoteExecutionV2ExecutionPolicy extends StObject {
 }
 object SchemaBuildBazelRemoteExecutionV2ExecutionPolicy {
   
-  @scala.inline
-  def apply(): SchemaBuildBazelRemoteExecutionV2ExecutionPolicy = {
+  inline def apply(): SchemaBuildBazelRemoteExecutionV2ExecutionPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBuildBazelRemoteExecutionV2ExecutionPolicy]
   }
   
-  @scala.inline
-  implicit class SchemaBuildBazelRemoteExecutionV2ExecutionPolicyMutableBuilder[Self <: SchemaBuildBazelRemoteExecutionV2ExecutionPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBuildBazelRemoteExecutionV2ExecutionPolicy](x: Self) {
     
-    @scala.inline
-    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
   }
 }

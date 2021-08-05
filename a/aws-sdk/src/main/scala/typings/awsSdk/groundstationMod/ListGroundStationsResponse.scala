@@ -18,28 +18,21 @@ trait ListGroundStationsResponse extends StObject {
 }
 object ListGroundStationsResponse {
   
-  @scala.inline
-  def apply(): ListGroundStationsResponse = {
+  inline def apply(): ListGroundStationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListGroundStationsResponse]
   }
   
-  @scala.inline
-  implicit class ListGroundStationsResponseMutableBuilder[Self <: ListGroundStationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListGroundStationsResponse](x: Self) {
     
-    @scala.inline
-    def setGroundStationList(value: GroundStationList): Self = StObject.set(x, "groundStationList", value.asInstanceOf[js.Any])
+    inline def setGroundStationList(value: GroundStationList): Self = StObject.set(x, "groundStationList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroundStationListUndefined: Self = StObject.set(x, "groundStationList", js.undefined)
+    inline def setGroundStationListUndefined: Self = StObject.set(x, "groundStationList", js.undefined)
     
-    @scala.inline
-    def setGroundStationListVarargs(value: GroundStationData*): Self = StObject.set(x, "groundStationList", js.Array(value :_*))
+    inline def setGroundStationListVarargs(value: GroundStationData*): Self = StObject.set(x, "groundStationList", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

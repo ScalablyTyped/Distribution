@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Tag[T /* <: Context */] extends StObject
 object Tag {
   
-  @scala.inline
-  def BaseTag(
+  inline def BaseTag(
     _links: Record[String, js.Array[Dictk]],
     count: Double,
     description: String,
@@ -30,8 +29,7 @@ object Tag {
     __obj.asInstanceOf[typings.wordpressApiFetch.mod.Schema.BaseTag]
   }
   
-  @scala.inline
-  def PickBaseTagTag(
+  inline def PickBaseTagTag(
     _links: Record[String, js.Array[Dictk]],
     id: Double,
     link: String,

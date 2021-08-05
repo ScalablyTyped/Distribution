@@ -81,8 +81,7 @@ object selectorMod extends Shortcut {
   }
   object InnerSelectorProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       accessibilityIndex: Double,
       id: String,
       mode: Mode,
@@ -101,95 +100,65 @@ object selectorMod extends Shortcut {
       __obj.asInstanceOf[InnerSelectorProps]
     }
     
-    @scala.inline
-    implicit class InnerSelectorPropsMutableBuilder[Self <: InnerSelectorProps] (val x: Self) extends AnyVal {
+    extension [Self <: InnerSelectorProps](x: Self) {
       
-      @scala.inline
-      def setAccessibilityIndex(value: Double): Self = StObject.set(x, "accessibilityIndex", value.asInstanceOf[js.Any])
+      inline def setAccessibilityIndex(value: Double): Self = StObject.set(x, "accessibilityIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoComplete(value: String): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
+      inline def setAutoComplete(value: String): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
+      inline def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
       
-      @scala.inline
-      def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputRef(value: Ref[HTMLInputElement | HTMLTextAreaElement]): Self = StObject.set(x, "inputRef", value.asInstanceOf[js.Any])
+      inline def setInputRef(value: Ref[HTMLInputElement | HTMLTextAreaElement]): Self = StObject.set(x, "inputRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputRefFunction1(value: /* instance */ (HTMLInputElement | HTMLTextAreaElement) | Null => Unit): Self = StObject.set(x, "inputRef", js.Any.fromFunction1(value))
+      inline def setInputRefFunction1(value: /* instance */ (HTMLInputElement | HTMLTextAreaElement) | Null => Unit): Self = StObject.set(x, "inputRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInputRefNull: Self = StObject.set(x, "inputRef", null)
+      inline def setInputRefNull: Self = StObject.set(x, "inputRef", null)
       
-      @scala.inline
-      def setMode(value: Mode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: Mode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnInputChange(value: ChangeEvent[HTMLInputElement | HTMLTextAreaElement] => Unit): Self = StObject.set(x, "onInputChange", js.Any.fromFunction1(value))
+      inline def setOnInputChange(value: ChangeEvent[HTMLInputElement | HTMLTextAreaElement] => Unit): Self = StObject.set(x, "onInputChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnInputCompositionEnd(value: CompositionEvent[HTMLInputElement | HTMLTextAreaElement] => Unit): Self = StObject.set(x, "onInputCompositionEnd", js.Any.fromFunction1(value))
+      inline def setOnInputCompositionEnd(value: CompositionEvent[HTMLInputElement | HTMLTextAreaElement] => Unit): Self = StObject.set(x, "onInputCompositionEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnInputCompositionStart(value: CompositionEvent[HTMLInputElement | HTMLTextAreaElement] => Unit): Self = StObject.set(x, "onInputCompositionStart", js.Any.fromFunction1(value))
+      inline def setOnInputCompositionStart(value: CompositionEvent[HTMLInputElement | HTMLTextAreaElement] => Unit): Self = StObject.set(x, "onInputCompositionStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnInputKeyDown(value: KeyboardEvent[HTMLInputElement | HTMLTextAreaElement] => Unit): Self = StObject.set(x, "onInputKeyDown", js.Any.fromFunction1(value))
+      inline def setOnInputKeyDown(value: KeyboardEvent[HTMLInputElement | HTMLTextAreaElement] => Unit): Self = StObject.set(x, "onInputKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnInputMouseDown(value: MouseEvent[HTMLInputElement | HTMLTextAreaElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onInputMouseDown", js.Any.fromFunction1(value))
+      inline def setOnInputMouseDown(value: MouseEvent[HTMLInputElement | HTMLTextAreaElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onInputMouseDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnInputPaste(value: ClipboardEvent[HTMLInputElement | HTMLTextAreaElement] => Unit): Self = StObject.set(x, "onInputPaste", js.Any.fromFunction1(value))
+      inline def setOnInputPaste(value: ClipboardEvent[HTMLInputElement | HTMLTextAreaElement] => Unit): Self = StObject.set(x, "onInputPaste", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholder(value: ReactNode): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: ReactNode): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchValue(value: String): Self = StObject.set(x, "searchValue", value.asInstanceOf[js.Any])
+      inline def setSearchValue(value: String): Self = StObject.set(x, "searchValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowSearch(value: Boolean): Self = StObject.set(x, "showSearch", value.asInstanceOf[js.Any])
+      inline def setShowSearch(value: Boolean): Self = StObject.set(x, "showSearch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowSearchUndefined: Self = StObject.set(x, "showSearch", js.undefined)
+      inline def setShowSearchUndefined: Self = StObject.set(x, "showSearch", js.undefined)
       
-      @scala.inline
-      def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+      inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
+      inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
       
-      @scala.inline
-      def setValues(value: js.Array[LabelValueType]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[LabelValueType]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesVarargs(value: LabelValueType*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: LabelValueType*): Self = StObject.set(x, "values", js.Array(value :_*))
     }
   }
   
@@ -201,20 +170,16 @@ object selectorMod extends Shortcut {
   }
   object RefSelectorProps {
     
-    @scala.inline
-    def apply(blur: () => Unit, focus: () => Unit): RefSelectorProps = {
+    inline def apply(blur: () => Unit, focus: () => Unit): RefSelectorProps = {
       val __obj = js.Dynamic.literal(blur = js.Any.fromFunction0(blur), focus = js.Any.fromFunction0(focus))
       __obj.asInstanceOf[RefSelectorProps]
     }
     
-    @scala.inline
-    implicit class RefSelectorPropsMutableBuilder[Self <: RefSelectorProps] (val x: Self) extends AnyVal {
+    extension [Self <: RefSelectorProps](x: Self) {
       
-      @scala.inline
-      def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
+      inline def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+      inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     }
   }
   

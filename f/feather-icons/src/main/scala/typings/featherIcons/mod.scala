@@ -11,10 +11,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def replace(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("replace")().asInstanceOf[Unit]
-  @scala.inline
-  def replace(options: FeatherAttributes): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("replace")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def replace(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("replace")().asInstanceOf[Unit]
+  inline def replace(options: FeatherAttributes): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("replace")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type FeatherAttributes = StringDictionary[String | Double]
 }

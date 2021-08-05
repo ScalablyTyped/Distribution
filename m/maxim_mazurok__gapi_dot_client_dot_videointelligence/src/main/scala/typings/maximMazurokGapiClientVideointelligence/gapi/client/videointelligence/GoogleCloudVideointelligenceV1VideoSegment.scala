@@ -14,25 +14,19 @@ trait GoogleCloudVideointelligenceV1VideoSegment extends StObject {
 }
 object GoogleCloudVideointelligenceV1VideoSegment {
   
-  @scala.inline
-  def apply(): GoogleCloudVideointelligenceV1VideoSegment = {
+  inline def apply(): GoogleCloudVideointelligenceV1VideoSegment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1VideoSegment]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVideointelligenceV1VideoSegmentMutableBuilder[Self <: GoogleCloudVideointelligenceV1VideoSegment] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVideointelligenceV1VideoSegment](x: Self) {
     
-    @scala.inline
-    def setEndTimeOffset(value: String): Self = StObject.set(x, "endTimeOffset", value.asInstanceOf[js.Any])
+    inline def setEndTimeOffset(value: String): Self = StObject.set(x, "endTimeOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeOffsetUndefined: Self = StObject.set(x, "endTimeOffset", js.undefined)
+    inline def setEndTimeOffsetUndefined: Self = StObject.set(x, "endTimeOffset", js.undefined)
     
-    @scala.inline
-    def setStartTimeOffset(value: String): Self = StObject.set(x, "startTimeOffset", value.asInstanceOf[js.Any])
+    inline def setStartTimeOffset(value: String): Self = StObject.set(x, "startTimeOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeOffsetUndefined: Self = StObject.set(x, "startTimeOffset", js.undefined)
+    inline def setStartTimeOffsetUndefined: Self = StObject.set(x, "startTimeOffset", js.undefined)
   }
 }

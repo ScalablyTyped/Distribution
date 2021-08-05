@@ -14,25 +14,19 @@ trait BackupRetentionSettings extends StObject {
 }
 object BackupRetentionSettings {
   
-  @scala.inline
-  def apply(): BackupRetentionSettings = {
+  inline def apply(): BackupRetentionSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BackupRetentionSettings]
   }
   
-  @scala.inline
-  implicit class BackupRetentionSettingsMutableBuilder[Self <: BackupRetentionSettings] (val x: Self) extends AnyVal {
+  extension [Self <: BackupRetentionSettings](x: Self) {
     
-    @scala.inline
-    def setRetainedBackups(value: Double): Self = StObject.set(x, "retainedBackups", value.asInstanceOf[js.Any])
+    inline def setRetainedBackups(value: Double): Self = StObject.set(x, "retainedBackups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetainedBackupsUndefined: Self = StObject.set(x, "retainedBackups", js.undefined)
+    inline def setRetainedBackupsUndefined: Self = StObject.set(x, "retainedBackups", js.undefined)
     
-    @scala.inline
-    def setRetentionUnit(value: String): Self = StObject.set(x, "retentionUnit", value.asInstanceOf[js.Any])
+    inline def setRetentionUnit(value: String): Self = StObject.set(x, "retentionUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetentionUnitUndefined: Self = StObject.set(x, "retentionUnit", js.undefined)
+    inline def setRetentionUnitUndefined: Self = StObject.set(x, "retentionUnit", js.undefined)
   }
 }

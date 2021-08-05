@@ -17,8 +17,7 @@ trait ConnectionCosts extends StObject {
 }
 object ConnectionCosts {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     buffer: Int16Array,
     get: (Double, Double) => Double,
     loadConnectionCosts: Int16Array => Unit,
@@ -28,19 +27,14 @@ object ConnectionCosts {
     __obj.asInstanceOf[ConnectionCosts]
   }
   
-  @scala.inline
-  implicit class ConnectionCostsMutableBuilder[Self <: ConnectionCosts] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionCosts](x: Self) {
     
-    @scala.inline
-    def setBuffer(value: Int16Array): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+    inline def setBuffer(value: Int16Array): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGet(value: (Double, Double) => Double): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+    inline def setGet(value: (Double, Double) => Double): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLoadConnectionCosts(value: Int16Array => Unit): Self = StObject.set(x, "loadConnectionCosts", js.Any.fromFunction1(value))
+    inline def setLoadConnectionCosts(value: Int16Array => Unit): Self = StObject.set(x, "loadConnectionCosts", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPut(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "put", js.Any.fromFunction3(value))
+    inline def setPut(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "put", js.Any.fromFunction3(value))
   }
 }

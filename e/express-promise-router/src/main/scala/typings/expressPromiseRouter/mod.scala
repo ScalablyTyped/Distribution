@@ -12,8 +12,6 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Router = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Router]
-  @scala.inline
-  def default(options: RouterOptions): Router = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Router]
+  inline def default(): Router = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Router]
+  inline def default(options: RouterOptions): Router = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Router]
 }

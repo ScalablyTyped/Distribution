@@ -12,19 +12,15 @@ trait CompositionEventInit
 }
 object CompositionEventInit {
   
-  @scala.inline
-  def apply(): CompositionEventInit = {
+  inline def apply(): CompositionEventInit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CompositionEventInit]
   }
   
-  @scala.inline
-  implicit class CompositionEventInitMutableBuilder[Self <: CompositionEventInit] (val x: Self) extends AnyVal {
+  extension [Self <: CompositionEventInit](x: Self) {
     
-    @scala.inline
-    def setData(value: java.lang.String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: java.lang.String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
   }
 }

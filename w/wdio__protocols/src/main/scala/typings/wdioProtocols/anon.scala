@@ -18,23 +18,18 @@ object anon {
   }
   object RecordCommandMethodComman {
     
-    @scala.inline
-    def apply(DELETE: CommandEndpoint, GET: CommandEndpoint, POST: CommandEndpoint): RecordCommandMethodComman = {
+    inline def apply(DELETE: CommandEndpoint, GET: CommandEndpoint, POST: CommandEndpoint): RecordCommandMethodComman = {
       val __obj = js.Dynamic.literal(DELETE = DELETE.asInstanceOf[js.Any], GET = GET.asInstanceOf[js.Any], POST = POST.asInstanceOf[js.Any])
       __obj.asInstanceOf[RecordCommandMethodComman]
     }
     
-    @scala.inline
-    implicit class RecordCommandMethodCommanMutableBuilder[Self <: RecordCommandMethodComman] (val x: Self) extends AnyVal {
+    extension [Self <: RecordCommandMethodComman](x: Self) {
       
-      @scala.inline
-      def setDELETE(value: CommandEndpoint): Self = StObject.set(x, "DELETE", value.asInstanceOf[js.Any])
+      inline def setDELETE(value: CommandEndpoint): Self = StObject.set(x, "DELETE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGET(value: CommandEndpoint): Self = StObject.set(x, "GET", value.asInstanceOf[js.Any])
+      inline def setGET(value: CommandEndpoint): Self = StObject.set(x, "GET", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPOST(value: CommandEndpoint): Self = StObject.set(x, "POST", value.asInstanceOf[js.Any])
+      inline def setPOST(value: CommandEndpoint): Self = StObject.set(x, "POST", value.asInstanceOf[js.Any])
     }
   }
   
@@ -49,23 +44,18 @@ object anon {
   }
   object RecordEnvironmentsstring {
     
-    @scala.inline
-    def apply(UIAutomation: String, UiAutomator: String, XCUITest: String): RecordEnvironmentsstring = {
+    inline def apply(UIAutomation: String, UiAutomator: String, XCUITest: String): RecordEnvironmentsstring = {
       val __obj = js.Dynamic.literal(UIAutomation = UIAutomation.asInstanceOf[js.Any], UiAutomator = UiAutomator.asInstanceOf[js.Any], XCUITest = XCUITest.asInstanceOf[js.Any])
       __obj.asInstanceOf[RecordEnvironmentsstring]
     }
     
-    @scala.inline
-    implicit class RecordEnvironmentsstringMutableBuilder[Self <: RecordEnvironmentsstring] (val x: Self) extends AnyVal {
+    extension [Self <: RecordEnvironmentsstring](x: Self) {
       
-      @scala.inline
-      def setUIAutomation(value: String): Self = StObject.set(x, "UIAutomation", value.asInstanceOf[js.Any])
+      inline def setUIAutomation(value: String): Self = StObject.set(x, "UIAutomation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUiAutomator(value: String): Self = StObject.set(x, "UiAutomator", value.asInstanceOf[js.Any])
+      inline def setUiAutomator(value: String): Self = StObject.set(x, "UiAutomator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXCUITest(value: String): Self = StObject.set(x, "XCUITest", value.asInstanceOf[js.Any])
+      inline def setXCUITest(value: String): Self = StObject.set(x, "XCUITest", value.asInstanceOf[js.Any])
     }
   }
 }

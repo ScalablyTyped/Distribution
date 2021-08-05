@@ -33,8 +33,7 @@ trait PortalItemApplicationProxies
 }
 object PortalItemApplicationProxies {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -46,16 +45,12 @@ object PortalItemApplicationProxies {
     __obj.asInstanceOf[PortalItemApplicationProxies]
   }
   
-  @scala.inline
-  implicit class PortalItemApplicationProxiesMutableBuilder[Self <: PortalItemApplicationProxies] (val x: Self) extends AnyVal {
+  extension [Self <: PortalItemApplicationProxies](x: Self) {
     
-    @scala.inline
-    def setProxyId(value: String): Self = StObject.set(x, "proxyId", value.asInstanceOf[js.Any])
+    inline def setProxyId(value: String): Self = StObject.set(x, "proxyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyUrl(value: String): Self = StObject.set(x, "proxyUrl", value.asInstanceOf[js.Any])
+    inline def setProxyUrl(value: String): Self = StObject.set(x, "proxyUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUrl(value: String): Self = StObject.set(x, "sourceUrl", value.asInstanceOf[js.Any])
+    inline def setSourceUrl(value: String): Self = StObject.set(x, "sourceUrl", value.asInstanceOf[js.Any])
   }
 }

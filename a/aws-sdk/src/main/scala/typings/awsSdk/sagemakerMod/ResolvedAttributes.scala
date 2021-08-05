@@ -17,31 +17,23 @@ trait ResolvedAttributes extends StObject {
 }
 object ResolvedAttributes {
   
-  @scala.inline
-  def apply(): ResolvedAttributes = {
+  inline def apply(): ResolvedAttributes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResolvedAttributes]
   }
   
-  @scala.inline
-  implicit class ResolvedAttributesMutableBuilder[Self <: ResolvedAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: ResolvedAttributes](x: Self) {
     
-    @scala.inline
-    def setAutoMLJobObjective(value: AutoMLJobObjective): Self = StObject.set(x, "AutoMLJobObjective", value.asInstanceOf[js.Any])
+    inline def setAutoMLJobObjective(value: AutoMLJobObjective): Self = StObject.set(x, "AutoMLJobObjective", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoMLJobObjectiveUndefined: Self = StObject.set(x, "AutoMLJobObjective", js.undefined)
+    inline def setAutoMLJobObjectiveUndefined: Self = StObject.set(x, "AutoMLJobObjective", js.undefined)
     
-    @scala.inline
-    def setCompletionCriteria(value: AutoMLJobCompletionCriteria): Self = StObject.set(x, "CompletionCriteria", value.asInstanceOf[js.Any])
+    inline def setCompletionCriteria(value: AutoMLJobCompletionCriteria): Self = StObject.set(x, "CompletionCriteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletionCriteriaUndefined: Self = StObject.set(x, "CompletionCriteria", js.undefined)
+    inline def setCompletionCriteriaUndefined: Self = StObject.set(x, "CompletionCriteria", js.undefined)
     
-    @scala.inline
-    def setProblemType(value: ProblemType): Self = StObject.set(x, "ProblemType", value.asInstanceOf[js.Any])
+    inline def setProblemType(value: ProblemType): Self = StObject.set(x, "ProblemType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProblemTypeUndefined: Self = StObject.set(x, "ProblemType", js.undefined)
+    inline def setProblemTypeUndefined: Self = StObject.set(x, "ProblemType", js.undefined)
   }
 }

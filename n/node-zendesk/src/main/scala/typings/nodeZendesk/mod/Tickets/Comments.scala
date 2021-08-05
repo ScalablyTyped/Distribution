@@ -22,17 +22,14 @@ object Comments {
     }
     object ResponseModel {
       
-      @scala.inline
-      def apply(agent: Boolean, id: ZendeskID, name: String, role: Role): typings.nodeZendesk.mod.Tickets.Comments.CommentsUsers.ResponseModel = {
+      inline def apply(agent: Boolean, id: ZendeskID, name: String, role: Role): typings.nodeZendesk.mod.Tickets.Comments.CommentsUsers.ResponseModel = {
         val __obj = js.Dynamic.literal(agent = agent.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], organization_id = null, photo = null)
         __obj.asInstanceOf[typings.nodeZendesk.mod.Tickets.Comments.CommentsUsers.ResponseModel]
       }
       
-      @scala.inline
-      implicit class ResponseModelMutableBuilder[Self <: typings.nodeZendesk.mod.Tickets.Comments.CommentsUsers.ResponseModel] (val x: Self) extends AnyVal {
+      extension [Self <: typings.nodeZendesk.mod.Tickets.Comments.CommentsUsers.ResponseModel](x: Self) {
         
-        @scala.inline
-        def setRole(value: Role): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+        inline def setRole(value: Role): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -45,20 +42,16 @@ object Comments {
   }
   object ListPayload {
     
-    @scala.inline
-    def apply(comments: js.Array[typings.nodeZendesk.mod.Tickets.Comments.ResponseModel], count: Double): typings.nodeZendesk.mod.Tickets.Comments.ListPayload = {
+    inline def apply(comments: js.Array[typings.nodeZendesk.mod.Tickets.Comments.ResponseModel], count: Double): typings.nodeZendesk.mod.Tickets.Comments.ListPayload = {
       val __obj = js.Dynamic.literal(comments = comments.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], next_page = null, previous_page = null)
       __obj.asInstanceOf[typings.nodeZendesk.mod.Tickets.Comments.ListPayload]
     }
     
-    @scala.inline
-    implicit class ListPayloadMutableBuilder[Self <: typings.nodeZendesk.mod.Tickets.Comments.ListPayload] (val x: Self) extends AnyVal {
+    extension [Self <: typings.nodeZendesk.mod.Tickets.Comments.ListPayload](x: Self) {
       
-      @scala.inline
-      def setComments(value: js.Array[typings.nodeZendesk.mod.Tickets.Comments.ResponseModel]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+      inline def setComments(value: js.Array[typings.nodeZendesk.mod.Tickets.Comments.ResponseModel]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentsVarargs(value: typings.nodeZendesk.mod.Tickets.Comments.ResponseModel*): Self = StObject.set(x, "comments", js.Array(value :_*))
+      inline def setCommentsVarargs(value: typings.nodeZendesk.mod.Tickets.Comments.ResponseModel*): Self = StObject.set(x, "comments", js.Array(value :_*))
     }
   }
   
@@ -70,26 +63,20 @@ object Comments {
   }
   object Metadata {
     
-    @scala.inline
-    def apply(flag_options: js.Any): Metadata = {
+    inline def apply(flag_options: js.Any): Metadata = {
       val __obj = js.Dynamic.literal(flag_options = flag_options.asInstanceOf[js.Any])
       __obj.asInstanceOf[Metadata]
     }
     
-    @scala.inline
-    implicit class MetadataMutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
+    extension [Self <: Metadata](x: Self) {
       
-      @scala.inline
-      def setFlag_options(value: js.Any): Self = StObject.set(x, "flag_options", value.asInstanceOf[js.Any])
+      inline def setFlag_options(value: js.Any): Self = StObject.set(x, "flag_options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlags(value: js.Array[Double]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: js.Array[Double]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
+      inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
       
-      @scala.inline
-      def setFlagsVarargs(value: Double*): Self = StObject.set(x, "flags", js.Array(value :_*))
+      inline def setFlagsVarargs(value: Double*): Self = StObject.set(x, "flags", js.Array(value :_*))
     }
   }
   
@@ -103,17 +90,14 @@ object Comments {
     }
     object ResponseModel {
       
-      @scala.inline
-      def apply(id: ZendeskID, name: String): typings.nodeZendesk.mod.Tickets.Comments.Organizations.ResponseModel = {
+      inline def apply(id: ZendeskID, name: String): typings.nodeZendesk.mod.Tickets.Comments.Organizations.ResponseModel = {
         val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.nodeZendesk.mod.Tickets.Comments.Organizations.ResponseModel]
       }
       
-      @scala.inline
-      implicit class ResponseModelMutableBuilder[Self <: typings.nodeZendesk.mod.Tickets.Comments.Organizations.ResponseModel] (val x: Self) extends AnyVal {
+      extension [Self <: typings.nodeZendesk.mod.Tickets.Comments.Organizations.ResponseModel](x: Self) {
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -123,8 +107,7 @@ object Comments {
        with typings.nodeZendesk.mod.Requests.Comments.ResponseModel
   object ResponseModel {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attachments: js.Array[Model],
       author_id: ZendeskID,
       body: String,

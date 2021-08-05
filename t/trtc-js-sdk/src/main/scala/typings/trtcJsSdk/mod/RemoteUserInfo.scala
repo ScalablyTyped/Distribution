@@ -10,16 +10,13 @@ trait RemoteUserInfo extends StObject {
 }
 object RemoteUserInfo {
   
-  @scala.inline
-  def apply(userId: String): RemoteUserInfo = {
+  inline def apply(userId: String): RemoteUserInfo = {
     val __obj = js.Dynamic.literal(userId = userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteUserInfo]
   }
   
-  @scala.inline
-  implicit class RemoteUserInfoMutableBuilder[Self <: RemoteUserInfo] (val x: Self) extends AnyVal {
+  extension [Self <: RemoteUserInfo](x: Self) {
     
-    @scala.inline
-    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
   }
 }

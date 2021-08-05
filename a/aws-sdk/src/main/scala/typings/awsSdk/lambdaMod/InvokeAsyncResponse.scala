@@ -13,19 +13,15 @@ trait InvokeAsyncResponse extends StObject {
 }
 object InvokeAsyncResponse {
   
-  @scala.inline
-  def apply(): InvokeAsyncResponse = {
+  inline def apply(): InvokeAsyncResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InvokeAsyncResponse]
   }
   
-  @scala.inline
-  implicit class InvokeAsyncResponseMutableBuilder[Self <: InvokeAsyncResponse] (val x: Self) extends AnyVal {
+  extension [Self <: InvokeAsyncResponse](x: Self) {
     
-    @scala.inline
-    def setStatus(value: HttpStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: HttpStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

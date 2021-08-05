@@ -20,8 +20,7 @@ trait RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionAct
 }
 object RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionPublishMetricAction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dimensions: Input[
       js.Array[
         Input[
@@ -34,11 +33,9 @@ object RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionAc
     __obj.asInstanceOf[RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionPublishMetricAction]
   }
   
-  @scala.inline
-  implicit class RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionPublishMetricActionMutableBuilder[Self <: RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionPublishMetricAction] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionPublishMetricAction](x: Self) {
     
-    @scala.inline
-    def setDimensions(
+    inline def setDimensions(
       value: Input[
           js.Array[
             Input[
@@ -48,8 +45,7 @@ object RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionAc
         ]
     ): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionsVarargs(
+    inline def setDimensionsVarargs(
       value: (Input[
           RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionPublishMetricActionDimension
         ])*

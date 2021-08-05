@@ -15,19 +15,15 @@ trait ThemeDict
 }
 object ThemeDict {
   
-  @scala.inline
-  def apply(plain: StyleObj, root: StyleObj): ThemeDict = {
+  inline def apply(plain: StyleObj, root: StyleObj): ThemeDict = {
     val __obj = js.Dynamic.literal(plain = plain.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThemeDict]
   }
   
-  @scala.inline
-  implicit class ThemeDictMutableBuilder[Self <: ThemeDict] (val x: Self) extends AnyVal {
+  extension [Self <: ThemeDict](x: Self) {
     
-    @scala.inline
-    def setPlain(value: StyleObj): Self = StObject.set(x, "plain", value.asInstanceOf[js.Any])
+    inline def setPlain(value: StyleObj): Self = StObject.set(x, "plain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoot(value: StyleObj): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: StyleObj): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
   }
 }

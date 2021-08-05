@@ -27,32 +27,24 @@ object processCredentialsMod {
   }
   object ProcessCredentialsOptions {
     
-    @scala.inline
-    def apply(): ProcessCredentialsOptions = {
+    inline def apply(): ProcessCredentialsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProcessCredentialsOptions]
     }
     
-    @scala.inline
-    implicit class ProcessCredentialsOptionsMutableBuilder[Self <: ProcessCredentialsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ProcessCredentialsOptions](x: Self) {
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setHttpOptions(value: HTTPOptions): Self = StObject.set(x, "httpOptions", value.asInstanceOf[js.Any])
+      inline def setHttpOptions(value: HTTPOptions): Self = StObject.set(x, "httpOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpOptionsUndefined: Self = StObject.set(x, "httpOptions", js.undefined)
+      inline def setHttpOptionsUndefined: Self = StObject.set(x, "httpOptions", js.undefined)
       
-      @scala.inline
-      def setProfile(value: String): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+      inline def setProfile(value: String): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
+      inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
     }
   }
 }

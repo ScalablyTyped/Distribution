@@ -21,28 +21,21 @@ trait EnableRequest extends StObject {
 }
 object EnableRequest {
   
-  @scala.inline
-  def apply(): EnableRequest = {
+  inline def apply(): EnableRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnableRequest]
   }
   
-  @scala.inline
-  implicit class EnableRequestMutableBuilder[Self <: EnableRequest] (val x: Self) extends AnyVal {
+  extension [Self <: EnableRequest](x: Self) {
     
-    @scala.inline
-    def setHandleAuthRequests(value: Boolean): Self = StObject.set(x, "handleAuthRequests", value.asInstanceOf[js.Any])
+    inline def setHandleAuthRequests(value: Boolean): Self = StObject.set(x, "handleAuthRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandleAuthRequestsUndefined: Self = StObject.set(x, "handleAuthRequests", js.undefined)
+    inline def setHandleAuthRequestsUndefined: Self = StObject.set(x, "handleAuthRequests", js.undefined)
     
-    @scala.inline
-    def setPatterns(value: js.Array[RequestPattern]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
+    inline def setPatterns(value: js.Array[RequestPattern]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternsUndefined: Self = StObject.set(x, "patterns", js.undefined)
+    inline def setPatternsUndefined: Self = StObject.set(x, "patterns", js.undefined)
     
-    @scala.inline
-    def setPatternsVarargs(value: RequestPattern*): Self = StObject.set(x, "patterns", js.Array(value :_*))
+    inline def setPatternsVarargs(value: RequestPattern*): Self = StObject.set(x, "patterns", js.Array(value :_*))
   }
 }

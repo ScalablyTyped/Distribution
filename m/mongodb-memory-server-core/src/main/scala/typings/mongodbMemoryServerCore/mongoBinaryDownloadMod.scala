@@ -132,38 +132,28 @@ object mongoBinaryDownloadMod {
   }
   object HttpDownloadOptions {
     
-    @scala.inline
-    def apply(hostname: String, method: GET | POST, path: String, port: String): HttpDownloadOptions = {
+    inline def apply(hostname: String, method: GET | POST, path: String, port: String): HttpDownloadOptions = {
       val __obj = js.Dynamic.literal(hostname = hostname.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[HttpDownloadOptions]
     }
     
-    @scala.inline
-    implicit class HttpDownloadOptionsMutableBuilder[Self <: HttpDownloadOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HttpDownloadOptions](x: Self) {
       
-      @scala.inline
-      def setAgent(value: HttpsProxyAgent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+      inline def setAgent(value: HttpsProxyAgent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
+      inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
       
-      @scala.inline
-      def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethod(value: GET | POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: GET | POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRejectUnauthorized(value: Boolean): Self = StObject.set(x, "rejectUnauthorized", value.asInstanceOf[js.Any])
+      inline def setRejectUnauthorized(value: Boolean): Self = StObject.set(x, "rejectUnauthorized", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRejectUnauthorizedUndefined: Self = StObject.set(x, "rejectUnauthorized", js.undefined)
+      inline def setRejectUnauthorizedUndefined: Self = StObject.set(x, "rejectUnauthorized", js.undefined)
     }
   }
   
@@ -254,8 +244,7 @@ object mongoBinaryDownloadMod {
   }
   object MongoBinaryDownload {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arch: String,
       checkMD5: Boolean,
       dlProgress: DownloadProgressT,
@@ -277,62 +266,43 @@ object mongoBinaryDownloadMod {
       __obj.asInstanceOf[MongoBinaryDownload]
     }
     
-    @scala.inline
-    implicit class MongoBinaryDownloadMutableBuilder[Self <: MongoBinaryDownload] (val x: Self) extends AnyVal {
+    extension [Self <: MongoBinaryDownload](x: Self) {
       
-      @scala.inline
-      def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
+      inline def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckMD5(value: Boolean): Self = StObject.set(x, "checkMD5", value.asInstanceOf[js.Any])
+      inline def setCheckMD5(value: Boolean): Self = StObject.set(x, "checkMD5", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDlProgress(value: DownloadProgressT): Self = StObject.set(x, "dlProgress", value.asInstanceOf[js.Any])
+      inline def setDlProgress(value: DownloadProgressT): Self = StObject.set(x, "dlProgress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownload(value: String => js.Promise[String]): Self = StObject.set(x, "download", js.Any.fromFunction1(value))
+      inline def setDownload(value: String => js.Promise[String]): Self = StObject.set(x, "download", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDownloadDir(value: String): Self = StObject.set(x, "downloadDir", value.asInstanceOf[js.Any])
+      inline def setDownloadDir(value: String): Self = StObject.set(x, "downloadDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtract(value: String => js.Promise[String]): Self = StObject.set(x, "extract", js.Any.fromFunction1(value))
+      inline def setExtract(value: String => js.Promise[String]): Self = StObject.set(x, "extract", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExtractTarGz(value: (String, String, js.Function1[/* file */ String, Boolean]) => js.Promise[Unit]): Self = StObject.set(x, "extractTarGz", js.Any.fromFunction3(value))
+      inline def setExtractTarGz(value: (String, String, js.Function1[/* file */ String, Boolean]) => js.Promise[Unit]): Self = StObject.set(x, "extractTarGz", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setExtractZip(value: (String, String, js.Function1[/* file */ String, Boolean]) => js.Promise[Unit]): Self = StObject.set(x, "extractZip", js.Any.fromFunction3(value))
+      inline def setExtractZip(value: (String, String, js.Function1[/* file */ String, Boolean]) => js.Promise[Unit]): Self = StObject.set(x, "extractZip", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetMongodPath(value: () => js.Promise[String]): Self = StObject.set(x, "getMongodPath", js.Any.fromFunction0(value))
+      inline def setGetMongodPath(value: () => js.Promise[String]): Self = StObject.set(x, "getMongodPath", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHttpDownload(value: (HttpDownloadOptions, String, String) => js.Promise[String]): Self = StObject.set(x, "httpDownload", js.Any.fromFunction3(value))
+      inline def setHttpDownload(value: (HttpDownloadOptions, String, String) => js.Promise[String]): Self = StObject.set(x, "httpDownload", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setLocationExists(value: String => js.Promise[Boolean]): Self = StObject.set(x, "locationExists", js.Any.fromFunction1(value))
+      inline def setLocationExists(value: String => js.Promise[Boolean]): Self = StObject.set(x, "locationExists", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMakeMD5check(value: (String, String) => js.Promise[js.UndefOr[Boolean]]): Self = StObject.set(x, "makeMD5check", js.Any.fromFunction2(value))
+      inline def setMakeMD5check(value: (String, String) => js.Promise[js.UndefOr[Boolean]]): Self = StObject.set(x, "makeMD5check", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrintDownloadProgress(value: Length => Unit): Self = StObject.set(x, "printDownloadProgress", js.Any.fromFunction1(value))
+      inline def setPrintDownloadProgress(value: Length => Unit): Self = StObject.set(x, "printDownloadProgress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStartDownload(value: () => js.Promise[String]): Self = StObject.set(x, "startDownload", js.Any.fromFunction0(value))
+      inline def setStartDownload(value: () => js.Promise[String]): Self = StObject.set(x, "startDownload", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_downloadingUrl(value: String): Self = StObject.set(x, "_downloadingUrl", value.asInstanceOf[js.Any])
+      inline def set_downloadingUrl(value: String): Self = StObject.set(x, "_downloadingUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_downloadingUrlUndefined: Self = StObject.set(x, "_downloadingUrl", js.undefined)
+      inline def set_downloadingUrlUndefined: Self = StObject.set(x, "_downloadingUrl", js.undefined)
     }
   }
   
@@ -350,44 +320,32 @@ object mongoBinaryDownloadMod {
   }
   object MongoBinaryDownloadOpts {
     
-    @scala.inline
-    def apply(): MongoBinaryDownloadOpts = {
+    inline def apply(): MongoBinaryDownloadOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MongoBinaryDownloadOpts]
     }
     
-    @scala.inline
-    implicit class MongoBinaryDownloadOptsMutableBuilder[Self <: MongoBinaryDownloadOpts] (val x: Self) extends AnyVal {
+    extension [Self <: MongoBinaryDownloadOpts](x: Self) {
       
-      @scala.inline
-      def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
+      inline def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArchUndefined: Self = StObject.set(x, "arch", js.undefined)
+      inline def setArchUndefined: Self = StObject.set(x, "arch", js.undefined)
       
-      @scala.inline
-      def setCheckMD5(value: Boolean): Self = StObject.set(x, "checkMD5", value.asInstanceOf[js.Any])
+      inline def setCheckMD5(value: Boolean): Self = StObject.set(x, "checkMD5", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckMD5Undefined: Self = StObject.set(x, "checkMD5", js.undefined)
+      inline def setCheckMD5Undefined: Self = StObject.set(x, "checkMD5", js.undefined)
       
-      @scala.inline
-      def setDownloadDir(value: String): Self = StObject.set(x, "downloadDir", value.asInstanceOf[js.Any])
+      inline def setDownloadDir(value: String): Self = StObject.set(x, "downloadDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownloadDirUndefined: Self = StObject.set(x, "downloadDir", js.undefined)
+      inline def setDownloadDirUndefined: Self = StObject.set(x, "downloadDir", js.undefined)
       
-      @scala.inline
-      def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+      inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
 }

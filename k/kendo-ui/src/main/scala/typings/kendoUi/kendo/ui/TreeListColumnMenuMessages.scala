@@ -22,55 +22,39 @@ trait TreeListColumnMenuMessages extends StObject {
 }
 object TreeListColumnMenuMessages {
   
-  @scala.inline
-  def apply(): TreeListColumnMenuMessages = {
+  inline def apply(): TreeListColumnMenuMessages = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TreeListColumnMenuMessages]
   }
   
-  @scala.inline
-  implicit class TreeListColumnMenuMessagesMutableBuilder[Self <: TreeListColumnMenuMessages] (val x: Self) extends AnyVal {
+  extension [Self <: TreeListColumnMenuMessages](x: Self) {
     
-    @scala.inline
-    def setColumns(value: String): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: String): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setLock(value: String): Self = StObject.set(x, "lock", value.asInstanceOf[js.Any])
+    inline def setLock(value: String): Self = StObject.set(x, "lock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockUndefined: Self = StObject.set(x, "lock", js.undefined)
+    inline def setLockUndefined: Self = StObject.set(x, "lock", js.undefined)
     
-    @scala.inline
-    def setSettings(value: String): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+    inline def setSettings(value: String): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
+    inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
     
-    @scala.inline
-    def setSortAscending(value: String): Self = StObject.set(x, "sortAscending", value.asInstanceOf[js.Any])
+    inline def setSortAscending(value: String): Self = StObject.set(x, "sortAscending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortAscendingUndefined: Self = StObject.set(x, "sortAscending", js.undefined)
+    inline def setSortAscendingUndefined: Self = StObject.set(x, "sortAscending", js.undefined)
     
-    @scala.inline
-    def setSortDescending(value: String): Self = StObject.set(x, "sortDescending", value.asInstanceOf[js.Any])
+    inline def setSortDescending(value: String): Self = StObject.set(x, "sortDescending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortDescendingUndefined: Self = StObject.set(x, "sortDescending", js.undefined)
+    inline def setSortDescendingUndefined: Self = StObject.set(x, "sortDescending", js.undefined)
     
-    @scala.inline
-    def setUnlock(value: String): Self = StObject.set(x, "unlock", value.asInstanceOf[js.Any])
+    inline def setUnlock(value: String): Self = StObject.set(x, "unlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnlockUndefined: Self = StObject.set(x, "unlock", js.undefined)
+    inline def setUnlockUndefined: Self = StObject.set(x, "unlock", js.undefined)
   }
 }

@@ -30,31 +30,23 @@ trait EbuTtDDestinationSettings extends StObject {
 }
 object EbuTtDDestinationSettings {
   
-  @scala.inline
-  def apply(): EbuTtDDestinationSettings = {
+  inline def apply(): EbuTtDDestinationSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EbuTtDDestinationSettings]
   }
   
-  @scala.inline
-  implicit class EbuTtDDestinationSettingsMutableBuilder[Self <: EbuTtDDestinationSettings] (val x: Self) extends AnyVal {
+  extension [Self <: EbuTtDDestinationSettings](x: Self) {
     
-    @scala.inline
-    def setFillLineGap(value: EbuTtDFillLineGapControl): Self = StObject.set(x, "FillLineGap", value.asInstanceOf[js.Any])
+    inline def setFillLineGap(value: EbuTtDFillLineGapControl): Self = StObject.set(x, "FillLineGap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillLineGapUndefined: Self = StObject.set(x, "FillLineGap", js.undefined)
+    inline def setFillLineGapUndefined: Self = StObject.set(x, "FillLineGap", js.undefined)
     
-    @scala.inline
-    def setFontFamily(value: string): Self = StObject.set(x, "FontFamily", value.asInstanceOf[js.Any])
+    inline def setFontFamily(value: string): Self = StObject.set(x, "FontFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontFamilyUndefined: Self = StObject.set(x, "FontFamily", js.undefined)
+    inline def setFontFamilyUndefined: Self = StObject.set(x, "FontFamily", js.undefined)
     
-    @scala.inline
-    def setStyleControl(value: EbuTtDDestinationStyleControl): Self = StObject.set(x, "StyleControl", value.asInstanceOf[js.Any])
+    inline def setStyleControl(value: EbuTtDDestinationStyleControl): Self = StObject.set(x, "StyleControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleControlUndefined: Self = StObject.set(x, "StyleControl", js.undefined)
+    inline def setStyleControlUndefined: Self = StObject.set(x, "StyleControl", js.undefined)
   }
 }

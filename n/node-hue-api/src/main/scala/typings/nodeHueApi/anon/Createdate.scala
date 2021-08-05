@@ -15,24 +15,19 @@ trait Createdate extends StObject {
 }
 object Createdate {
   
-  @scala.inline
-  def apply(`create date`: Date, `last use date`: Date, name: String): Createdate = {
+  inline def apply(`create date`: Date, `last use date`: Date, name: String): Createdate = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("create date")((`create date`).asInstanceOf[js.Any])
     __obj.updateDynamic("last use date")((`last use date`).asInstanceOf[js.Any])
     __obj.asInstanceOf[Createdate]
   }
   
-  @scala.inline
-  implicit class CreatedateMutableBuilder[Self <: Createdate] (val x: Self) extends AnyVal {
+  extension [Self <: Createdate](x: Self) {
     
-    @scala.inline
-    def `setCreate date`(value: Date): Self = StObject.set(x, "create date", value.asInstanceOf[js.Any])
+    inline def `setCreate date`(value: Date): Self = StObject.set(x, "create date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setLast use date`(value: Date): Self = StObject.set(x, "last use date", value.asInstanceOf[js.Any])
+    inline def `setLast use date`(value: Date): Self = StObject.set(x, "last use date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoBroadcastState extends StObject
 object MsoBroadcastState {
   
-  @scala.inline
-  def BroadcastPaused: `2` = 2.asInstanceOf[`2`]
+  inline def BroadcastPaused: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def BroadcastStarted: `1` = 1.asInstanceOf[`1`]
+  inline def BroadcastStarted: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def NoBroadcast: `0` = 0.asInstanceOf[`0`]
+  inline def NoBroadcast: `0` = 0.asInstanceOf[`0`]
 }

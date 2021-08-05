@@ -12,19 +12,15 @@ trait NewFolder extends StObject {
 }
 object NewFolder {
   
-  @scala.inline
-  def apply(Cancel: Boolean, NewFolder: js.Any): NewFolder = {
+  inline def apply(Cancel: Boolean, NewFolder: js.Any): NewFolder = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], NewFolder = NewFolder.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewFolder]
   }
   
-  @scala.inline
-  implicit class NewFolderMutableBuilder[Self <: NewFolder] (val x: Self) extends AnyVal {
+  extension [Self <: NewFolder](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewFolder(value: js.Any): Self = StObject.set(x, "NewFolder", value.asInstanceOf[js.Any])
+    inline def setNewFolder(value: js.Any): Self = StObject.set(x, "NewFolder", value.asInstanceOf[js.Any])
   }
 }

@@ -38,49 +38,35 @@ trait Node extends StObject {
 }
 object Node {
   
-  @scala.inline
-  def apply(): Node = {
+  inline def apply(): Node = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Node]
   }
   
-  @scala.inline
-  implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
+  extension [Self <: Node](x: Self) {
     
-    @scala.inline
-    def setCrawlerDetails(value: CrawlerNodeDetails): Self = StObject.set(x, "CrawlerDetails", value.asInstanceOf[js.Any])
+    inline def setCrawlerDetails(value: CrawlerNodeDetails): Self = StObject.set(x, "CrawlerDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrawlerDetailsUndefined: Self = StObject.set(x, "CrawlerDetails", js.undefined)
+    inline def setCrawlerDetailsUndefined: Self = StObject.set(x, "CrawlerDetails", js.undefined)
     
-    @scala.inline
-    def setJobDetails(value: JobNodeDetails): Self = StObject.set(x, "JobDetails", value.asInstanceOf[js.Any])
+    inline def setJobDetails(value: JobNodeDetails): Self = StObject.set(x, "JobDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobDetailsUndefined: Self = StObject.set(x, "JobDetails", js.undefined)
+    inline def setJobDetailsUndefined: Self = StObject.set(x, "JobDetails", js.undefined)
     
-    @scala.inline
-    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setTriggerDetails(value: TriggerNodeDetails): Self = StObject.set(x, "TriggerDetails", value.asInstanceOf[js.Any])
+    inline def setTriggerDetails(value: TriggerNodeDetails): Self = StObject.set(x, "TriggerDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerDetailsUndefined: Self = StObject.set(x, "TriggerDetails", js.undefined)
+    inline def setTriggerDetailsUndefined: Self = StObject.set(x, "TriggerDetails", js.undefined)
     
-    @scala.inline
-    def setType(value: NodeType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: NodeType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
-    @scala.inline
-    def setUniqueId(value: NameString): Self = StObject.set(x, "UniqueId", value.asInstanceOf[js.Any])
+    inline def setUniqueId(value: NameString): Self = StObject.set(x, "UniqueId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueIdUndefined: Self = StObject.set(x, "UniqueId", js.undefined)
+    inline def setUniqueIdUndefined: Self = StObject.set(x, "UniqueId", js.undefined)
   }
 }

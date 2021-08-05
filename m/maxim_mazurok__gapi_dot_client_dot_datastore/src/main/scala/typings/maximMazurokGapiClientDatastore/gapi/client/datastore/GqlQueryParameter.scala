@@ -14,25 +14,19 @@ trait GqlQueryParameter extends StObject {
 }
 object GqlQueryParameter {
   
-  @scala.inline
-  def apply(): GqlQueryParameter = {
+  inline def apply(): GqlQueryParameter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GqlQueryParameter]
   }
   
-  @scala.inline
-  implicit class GqlQueryParameterMutableBuilder[Self <: GqlQueryParameter] (val x: Self) extends AnyVal {
+  extension [Self <: GqlQueryParameter](x: Self) {
     
-    @scala.inline
-    def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+    inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+    inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
-    @scala.inline
-    def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

@@ -13,25 +13,19 @@ trait PartialPickImplkeyofImplCache extends StObject {
 }
 object PartialPickImplkeyofImplCache {
   
-  @scala.inline
-  def apply(): PartialPickImplkeyofImplCache = {
+  inline def apply(): PartialPickImplkeyofImplCache = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPickImplkeyofImplCache]
   }
   
-  @scala.inline
-  implicit class PartialPickImplkeyofImplCacheMutableBuilder[Self <: PartialPickImplkeyofImplCache] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPickImplkeyofImplCache](x: Self) {
     
-    @scala.inline
-    def setCache(value: String): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: String): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+    inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
-    @scala.inline
-    def setResults(value: String): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: String): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
   }
 }

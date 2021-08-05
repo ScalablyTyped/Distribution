@@ -28,31 +28,23 @@ trait GetSegmentExportJobsRequest extends StObject {
 }
 object GetSegmentExportJobsRequest {
   
-  @scala.inline
-  def apply(ApplicationId: string, SegmentId: string): GetSegmentExportJobsRequest = {
+  inline def apply(ApplicationId: string, SegmentId: string): GetSegmentExportJobsRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], SegmentId = SegmentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSegmentExportJobsRequest]
   }
   
-  @scala.inline
-  implicit class GetSegmentExportJobsRequestMutableBuilder[Self <: GetSegmentExportJobsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetSegmentExportJobsRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSize(value: string): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: string): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
     
-    @scala.inline
-    def setSegmentId(value: string): Self = StObject.set(x, "SegmentId", value.asInstanceOf[js.Any])
+    inline def setSegmentId(value: string): Self = StObject.set(x, "SegmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToken(value: string): Self = StObject.set(x, "Token", value.asInstanceOf[js.Any])
+    inline def setToken(value: string): Self = StObject.set(x, "Token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenUndefined: Self = StObject.set(x, "Token", js.undefined)
+    inline def setTokenUndefined: Self = StObject.set(x, "Token", js.undefined)
   }
 }

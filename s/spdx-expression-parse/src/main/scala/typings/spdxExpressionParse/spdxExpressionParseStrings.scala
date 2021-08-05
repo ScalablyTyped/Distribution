@@ -8,36 +8,29 @@ object spdxExpressionParseStrings {
   
   @js.native
   sealed trait DOCUMENTREF extends StObject
-  @scala.inline
-  def DOCUMENTREF: DOCUMENTREF = "DOCUMENTREF".asInstanceOf[DOCUMENTREF]
+  inline def DOCUMENTREF: DOCUMENTREF = "DOCUMENTREF".asInstanceOf[DOCUMENTREF]
   
   @js.native
   sealed trait EXCEPTION extends StObject
-  @scala.inline
-  def EXCEPTION: EXCEPTION = "EXCEPTION".asInstanceOf[EXCEPTION]
+  inline def EXCEPTION: EXCEPTION = "EXCEPTION".asInstanceOf[EXCEPTION]
   
   @js.native
   sealed trait LICENSE extends StObject
-  @scala.inline
-  def LICENSE: LICENSE = "LICENSE".asInstanceOf[LICENSE]
+  inline def LICENSE: LICENSE = "LICENSE".asInstanceOf[LICENSE]
   
   @js.native
   sealed trait LICENSEREF extends StObject
-  @scala.inline
-  def LICENSEREF: LICENSEREF = "LICENSEREF".asInstanceOf[LICENSEREF]
+  inline def LICENSEREF: LICENSEREF = "LICENSEREF".asInstanceOf[LICENSEREF]
   
   @js.native
   sealed trait OPERATOR extends StObject
-  @scala.inline
-  def OPERATOR: OPERATOR = "OPERATOR".asInstanceOf[OPERATOR]
+  inline def OPERATOR: OPERATOR = "OPERATOR".asInstanceOf[OPERATOR]
   
   @js.native
   sealed trait and extends StObject
-  @scala.inline
-  def and: and = "and".asInstanceOf[and]
+  inline def and: and = "and".asInstanceOf[and]
   
   @js.native
   sealed trait or extends StObject
-  @scala.inline
-  def or: or = "or".asInstanceOf[or]
+  inline def or: or = "or".asInstanceOf[or]
 }

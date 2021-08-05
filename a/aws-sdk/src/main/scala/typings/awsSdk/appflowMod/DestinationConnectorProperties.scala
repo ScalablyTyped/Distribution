@@ -33,43 +33,31 @@ trait DestinationConnectorProperties extends StObject {
 }
 object DestinationConnectorProperties {
   
-  @scala.inline
-  def apply(): DestinationConnectorProperties = {
+  inline def apply(): DestinationConnectorProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DestinationConnectorProperties]
   }
   
-  @scala.inline
-  implicit class DestinationConnectorPropertiesMutableBuilder[Self <: DestinationConnectorProperties] (val x: Self) extends AnyVal {
+  extension [Self <: DestinationConnectorProperties](x: Self) {
     
-    @scala.inline
-    def setEventBridge(value: EventBridgeDestinationProperties): Self = StObject.set(x, "EventBridge", value.asInstanceOf[js.Any])
+    inline def setEventBridge(value: EventBridgeDestinationProperties): Self = StObject.set(x, "EventBridge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventBridgeUndefined: Self = StObject.set(x, "EventBridge", js.undefined)
+    inline def setEventBridgeUndefined: Self = StObject.set(x, "EventBridge", js.undefined)
     
-    @scala.inline
-    def setRedshift(value: RedshiftDestinationProperties): Self = StObject.set(x, "Redshift", value.asInstanceOf[js.Any])
+    inline def setRedshift(value: RedshiftDestinationProperties): Self = StObject.set(x, "Redshift", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedshiftUndefined: Self = StObject.set(x, "Redshift", js.undefined)
+    inline def setRedshiftUndefined: Self = StObject.set(x, "Redshift", js.undefined)
     
-    @scala.inline
-    def setS3(value: S3DestinationProperties): Self = StObject.set(x, "S3", value.asInstanceOf[js.Any])
+    inline def setS3(value: S3DestinationProperties): Self = StObject.set(x, "S3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3Undefined: Self = StObject.set(x, "S3", js.undefined)
+    inline def setS3Undefined: Self = StObject.set(x, "S3", js.undefined)
     
-    @scala.inline
-    def setSalesforce(value: SalesforceDestinationProperties): Self = StObject.set(x, "Salesforce", value.asInstanceOf[js.Any])
+    inline def setSalesforce(value: SalesforceDestinationProperties): Self = StObject.set(x, "Salesforce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSalesforceUndefined: Self = StObject.set(x, "Salesforce", js.undefined)
+    inline def setSalesforceUndefined: Self = StObject.set(x, "Salesforce", js.undefined)
     
-    @scala.inline
-    def setSnowflake(value: SnowflakeDestinationProperties): Self = StObject.set(x, "Snowflake", value.asInstanceOf[js.Any])
+    inline def setSnowflake(value: SnowflakeDestinationProperties): Self = StObject.set(x, "Snowflake", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnowflakeUndefined: Self = StObject.set(x, "Snowflake", js.undefined)
+    inline def setSnowflakeUndefined: Self = StObject.set(x, "Snowflake", js.undefined)
   }
 }

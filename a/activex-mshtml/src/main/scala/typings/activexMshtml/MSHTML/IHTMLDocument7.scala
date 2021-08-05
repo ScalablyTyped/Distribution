@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IHTMLDocument7 extends StObject {
   
-  @JSName("MSHTML.IHTMLDocument7_typekey")
+  /* private */ @JSName("MSHTML.IHTMLDocument7_typekey")
   var MSHTMLDotIHTMLDocument7_typekey: IHTMLDocument7
   
   def adoptNode(pNodeSource: IHTMLDOMNode): IHTMLDOMNode3
@@ -144,8 +144,7 @@ trait IHTMLDocument7 extends StObject {
 }
 object IHTMLDocument7 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotIHTMLDocument7_typekey: IHTMLDocument7,
     adoptNode: IHTMLDOMNode => IHTMLDOMNode3,
     all: IHTMLElementCollection,
@@ -215,196 +214,132 @@ object IHTMLDocument7 {
     __obj.asInstanceOf[IHTMLDocument7]
   }
   
-  @scala.inline
-  implicit class IHTMLDocument7MutableBuilder[Self <: IHTMLDocument7] (val x: Self) extends AnyVal {
+  extension [Self <: IHTMLDocument7](x: Self) {
     
-    @scala.inline
-    def setAdoptNode(value: IHTMLDOMNode => IHTMLDOMNode3): Self = StObject.set(x, "adoptNode", js.Any.fromFunction1(value))
+    inline def setAdoptNode(value: IHTMLDOMNode => IHTMLDOMNode3): Self = StObject.set(x, "adoptNode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAll(value: IHTMLElementCollection): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    inline def setAll(value: IHTMLElementCollection): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBody(value: IHTMLElement): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: IHTMLElement): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharacterSet(value: String): Self = StObject.set(x, "characterSet", value.asInstanceOf[js.Any])
+    inline def setCharacterSet(value: String): Self = StObject.set(x, "characterSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateAttribute(value: String => IHTMLDOMAttribute): Self = StObject.set(x, "createAttribute", js.Any.fromFunction1(value))
+    inline def setCreateAttribute(value: String => IHTMLDOMAttribute): Self = StObject.set(x, "createAttribute", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateAttributeNS(value: (js.Any, String) => IHTMLDOMAttribute): Self = StObject.set(x, "createAttributeNS", js.Any.fromFunction2(value))
+    inline def setCreateAttributeNS(value: (js.Any, String) => IHTMLDOMAttribute): Self = StObject.set(x, "createAttributeNS", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateCDATASection(value: String => IHTMLDOMNode): Self = StObject.set(x, "createCDATASection", js.Any.fromFunction1(value))
+    inline def setCreateCDATASection(value: String => IHTMLDOMNode): Self = StObject.set(x, "createCDATASection", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateElement(value: String => IHTMLElement): Self = StObject.set(x, "createElement", js.Any.fromFunction1(value))
+    inline def setCreateElement(value: String => IHTMLElement): Self = StObject.set(x, "createElement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateElementNS(value: (js.Any, String) => IHTMLElement): Self = StObject.set(x, "createElementNS", js.Any.fromFunction2(value))
+    inline def setCreateElementNS(value: (js.Any, String) => IHTMLElement): Self = StObject.set(x, "createElementNS", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateProcessingInstruction(value: (String, String) => IDOMProcessingInstruction): Self = StObject.set(x, "createProcessingInstruction", js.Any.fromFunction2(value))
+    inline def setCreateProcessingInstruction(value: (String, String) => IDOMProcessingInstruction): Self = StObject.set(x, "createProcessingInstruction", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDefaultView(value: IHTMLWindow2): Self = StObject.set(x, "defaultView", value.asInstanceOf[js.Any])
+    inline def setDefaultView(value: IHTMLWindow2): Self = StObject.set(x, "defaultView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetElementsByClassName(value: String => IHTMLElementCollection): Self = StObject.set(x, "getElementsByClassName", js.Any.fromFunction1(value))
+    inline def setGetElementsByClassName(value: String => IHTMLElementCollection): Self = StObject.set(x, "getElementsByClassName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetElementsByTagNameNS(value: (js.Any, String) => IHTMLElementCollection): Self = StObject.set(x, "getElementsByTagNameNS", js.Any.fromFunction2(value))
+    inline def setGetElementsByTagNameNS(value: (js.Any, String) => IHTMLElementCollection): Self = StObject.set(x, "getElementsByTagNameNS", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetSelection(value: () => IHTMLSelection): Self = StObject.set(x, "getSelection", js.Any.fromFunction0(value))
+    inline def setGetSelection(value: () => IHTMLSelection): Self = StObject.set(x, "getSelection", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasAttributes(value: () => Boolean): Self = StObject.set(x, "hasAttributes", js.Any.fromFunction0(value))
+    inline def setHasAttributes(value: () => Boolean): Self = StObject.set(x, "hasAttributes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHead(value: IHTMLElement): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+    inline def setHead(value: IHTMLElement): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportNode(value: (IHTMLDOMNode, Boolean) => IHTMLDOMNode3): Self = StObject.set(x, "importNode", js.Any.fromFunction2(value))
+    inline def setImportNode(value: (IHTMLDOMNode, Boolean) => IHTMLDOMNode3): Self = StObject.set(x, "importNode", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInputEncoding(value: String): Self = StObject.set(x, "inputEncoding", value.asInstanceOf[js.Any])
+    inline def setInputEncoding(value: String): Self = StObject.set(x, "inputEncoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotIHTMLDocument7_typekey(value: IHTMLDocument7): Self = StObject.set(x, "MSHTML.IHTMLDocument7_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotIHTMLDocument7_typekey(value: IHTMLDocument7): Self = StObject.set(x, "MSHTML.IHTMLDocument7_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalize(value: () => Unit): Self = StObject.set(x, "normalize", js.Any.fromFunction0(value))
+    inline def setNormalize(value: () => Unit): Self = StObject.set(x, "normalize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnabort(value: js.Any): Self = StObject.set(x, "onabort", value.asInstanceOf[js.Any])
+    inline def setOnabort(value: js.Any): Self = StObject.set(x, "onabort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnblur(value: js.Any): Self = StObject.set(x, "onblur", value.asInstanceOf[js.Any])
+    inline def setOnblur(value: js.Any): Self = StObject.set(x, "onblur", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOncanplay(value: js.Any): Self = StObject.set(x, "oncanplay", value.asInstanceOf[js.Any])
+    inline def setOncanplay(value: js.Any): Self = StObject.set(x, "oncanplay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOncanplaythrough(value: js.Any): Self = StObject.set(x, "oncanplaythrough", value.asInstanceOf[js.Any])
+    inline def setOncanplaythrough(value: js.Any): Self = StObject.set(x, "oncanplaythrough", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnchange(value: js.Any): Self = StObject.set(x, "onchange", value.asInstanceOf[js.Any])
+    inline def setOnchange(value: js.Any): Self = StObject.set(x, "onchange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOndrag(value: js.Any): Self = StObject.set(x, "ondrag", value.asInstanceOf[js.Any])
+    inline def setOndrag(value: js.Any): Self = StObject.set(x, "ondrag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOndragend(value: js.Any): Self = StObject.set(x, "ondragend", value.asInstanceOf[js.Any])
+    inline def setOndragend(value: js.Any): Self = StObject.set(x, "ondragend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOndragenter(value: js.Any): Self = StObject.set(x, "ondragenter", value.asInstanceOf[js.Any])
+    inline def setOndragenter(value: js.Any): Self = StObject.set(x, "ondragenter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOndragleave(value: js.Any): Self = StObject.set(x, "ondragleave", value.asInstanceOf[js.Any])
+    inline def setOndragleave(value: js.Any): Self = StObject.set(x, "ondragleave", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOndragover(value: js.Any): Self = StObject.set(x, "ondragover", value.asInstanceOf[js.Any])
+    inline def setOndragover(value: js.Any): Self = StObject.set(x, "ondragover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOndrop(value: js.Any): Self = StObject.set(x, "ondrop", value.asInstanceOf[js.Any])
+    inline def setOndrop(value: js.Any): Self = StObject.set(x, "ondrop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOndurationchange(value: js.Any): Self = StObject.set(x, "ondurationchange", value.asInstanceOf[js.Any])
+    inline def setOndurationchange(value: js.Any): Self = StObject.set(x, "ondurationchange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnemptied(value: js.Any): Self = StObject.set(x, "onemptied", value.asInstanceOf[js.Any])
+    inline def setOnemptied(value: js.Any): Self = StObject.set(x, "onemptied", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnended(value: js.Any): Self = StObject.set(x, "onended", value.asInstanceOf[js.Any])
+    inline def setOnended(value: js.Any): Self = StObject.set(x, "onended", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnerror(value: js.Any): Self = StObject.set(x, "onerror", value.asInstanceOf[js.Any])
+    inline def setOnerror(value: js.Any): Self = StObject.set(x, "onerror", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnfocus(value: js.Any): Self = StObject.set(x, "onfocus", value.asInstanceOf[js.Any])
+    inline def setOnfocus(value: js.Any): Self = StObject.set(x, "onfocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOninput(value: js.Any): Self = StObject.set(x, "oninput", value.asInstanceOf[js.Any])
+    inline def setOninput(value: js.Any): Self = StObject.set(x, "oninput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnload(value: js.Any): Self = StObject.set(x, "onload", value.asInstanceOf[js.Any])
+    inline def setOnload(value: js.Any): Self = StObject.set(x, "onload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnloadeddata(value: js.Any): Self = StObject.set(x, "onloadeddata", value.asInstanceOf[js.Any])
+    inline def setOnloadeddata(value: js.Any): Self = StObject.set(x, "onloadeddata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnloadedmetadata(value: js.Any): Self = StObject.set(x, "onloadedmetadata", value.asInstanceOf[js.Any])
+    inline def setOnloadedmetadata(value: js.Any): Self = StObject.set(x, "onloadedmetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnloadstart(value: js.Any): Self = StObject.set(x, "onloadstart", value.asInstanceOf[js.Any])
+    inline def setOnloadstart(value: js.Any): Self = StObject.set(x, "onloadstart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnmssitemodejumplistitemremoved(value: js.Any): Self = StObject.set(x, "onmssitemodejumplistitemremoved", value.asInstanceOf[js.Any])
+    inline def setOnmssitemodejumplistitemremoved(value: js.Any): Self = StObject.set(x, "onmssitemodejumplistitemremoved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnmsthumbnailclick(value: js.Any): Self = StObject.set(x, "onmsthumbnailclick", value.asInstanceOf[js.Any])
+    inline def setOnmsthumbnailclick(value: js.Any): Self = StObject.set(x, "onmsthumbnailclick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnpause(value: js.Any): Self = StObject.set(x, "onpause", value.asInstanceOf[js.Any])
+    inline def setOnpause(value: js.Any): Self = StObject.set(x, "onpause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnplay(value: js.Any): Self = StObject.set(x, "onplay", value.asInstanceOf[js.Any])
+    inline def setOnplay(value: js.Any): Self = StObject.set(x, "onplay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnplaying(value: js.Any): Self = StObject.set(x, "onplaying", value.asInstanceOf[js.Any])
+    inline def setOnplaying(value: js.Any): Self = StObject.set(x, "onplaying", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnprogress(value: js.Any): Self = StObject.set(x, "onprogress", value.asInstanceOf[js.Any])
+    inline def setOnprogress(value: js.Any): Self = StObject.set(x, "onprogress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnratechange(value: js.Any): Self = StObject.set(x, "onratechange", value.asInstanceOf[js.Any])
+    inline def setOnratechange(value: js.Any): Self = StObject.set(x, "onratechange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnreset(value: js.Any): Self = StObject.set(x, "onreset", value.asInstanceOf[js.Any])
+    inline def setOnreset(value: js.Any): Self = StObject.set(x, "onreset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnscroll(value: js.Any): Self = StObject.set(x, "onscroll", value.asInstanceOf[js.Any])
+    inline def setOnscroll(value: js.Any): Self = StObject.set(x, "onscroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnseeked(value: js.Any): Self = StObject.set(x, "onseeked", value.asInstanceOf[js.Any])
+    inline def setOnseeked(value: js.Any): Self = StObject.set(x, "onseeked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnseeking(value: js.Any): Self = StObject.set(x, "onseeking", value.asInstanceOf[js.Any])
+    inline def setOnseeking(value: js.Any): Self = StObject.set(x, "onseeking", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnselect(value: js.Any): Self = StObject.set(x, "onselect", value.asInstanceOf[js.Any])
+    inline def setOnselect(value: js.Any): Self = StObject.set(x, "onselect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnstalled(value: js.Any): Self = StObject.set(x, "onstalled", value.asInstanceOf[js.Any])
+    inline def setOnstalled(value: js.Any): Self = StObject.set(x, "onstalled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnsubmit(value: js.Any): Self = StObject.set(x, "onsubmit", value.asInstanceOf[js.Any])
+    inline def setOnsubmit(value: js.Any): Self = StObject.set(x, "onsubmit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnsuspend(value: js.Any): Self = StObject.set(x, "onsuspend", value.asInstanceOf[js.Any])
+    inline def setOnsuspend(value: js.Any): Self = StObject.set(x, "onsuspend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOntimeupdate(value: js.Any): Self = StObject.set(x, "ontimeupdate", value.asInstanceOf[js.Any])
+    inline def setOntimeupdate(value: js.Any): Self = StObject.set(x, "ontimeupdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnvolumechange(value: js.Any): Self = StObject.set(x, "onvolumechange", value.asInstanceOf[js.Any])
+    inline def setOnvolumechange(value: js.Any): Self = StObject.set(x, "onvolumechange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnwaiting(value: js.Any): Self = StObject.set(x, "onwaiting", value.asInstanceOf[js.Any])
+    inline def setOnwaiting(value: js.Any): Self = StObject.set(x, "onwaiting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentWindow(value: IHTMLWindow2): Self = StObject.set(x, "parentWindow", value.asInstanceOf[js.Any])
+    inline def setParentWindow(value: IHTMLWindow2): Self = StObject.set(x, "parentWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXmlEncoding(value: String): Self = StObject.set(x, "xmlEncoding", value.asInstanceOf[js.Any])
+    inline def setXmlEncoding(value: String): Self = StObject.set(x, "xmlEncoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXmlStandalone(value: Boolean): Self = StObject.set(x, "xmlStandalone", value.asInstanceOf[js.Any])
+    inline def setXmlStandalone(value: Boolean): Self = StObject.set(x, "xmlStandalone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXmlVersion(value: String): Self = StObject.set(x, "xmlVersion", value.asInstanceOf[js.Any])
+    inline def setXmlVersion(value: String): Self = StObject.set(x, "xmlVersion", value.asInstanceOf[js.Any])
   }
 }

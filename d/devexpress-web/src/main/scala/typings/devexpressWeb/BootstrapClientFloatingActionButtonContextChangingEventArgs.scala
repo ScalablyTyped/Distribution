@@ -13,16 +13,13 @@ trait BootstrapClientFloatingActionButtonContextChangingEventArgs
 }
 object BootstrapClientFloatingActionButtonContextChangingEventArgs {
   
-  @scala.inline
-  def apply(action: BootstrapClientFABAction): BootstrapClientFloatingActionButtonContextChangingEventArgs = {
+  inline def apply(action: BootstrapClientFABAction): BootstrapClientFloatingActionButtonContextChangingEventArgs = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootstrapClientFloatingActionButtonContextChangingEventArgs]
   }
   
-  @scala.inline
-  implicit class BootstrapClientFloatingActionButtonContextChangingEventArgsMutableBuilder[Self <: BootstrapClientFloatingActionButtonContextChangingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapClientFloatingActionButtonContextChangingEventArgs](x: Self) {
     
-    @scala.inline
-    def setAction(value: BootstrapClientFABAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: BootstrapClientFABAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
   }
 }

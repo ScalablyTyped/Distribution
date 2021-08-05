@@ -25,8 +25,7 @@ trait CloseEvent
 }
 object CloseEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AT_TARGET: Double,
     BUBBLING_PHASE: Double,
     CAPTURING_PHASE: Double,
@@ -53,19 +52,14 @@ object CloseEvent {
     __obj.asInstanceOf[CloseEvent]
   }
   
-  @scala.inline
-  implicit class CloseEventMutableBuilder[Self <: CloseEvent] (val x: Self) extends AnyVal {
+  extension [Self <: CloseEvent](x: Self) {
     
-    @scala.inline
-    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitCloseEvent(value: (String, Boolean, Boolean, Boolean, Double, String) => Unit): Self = StObject.set(x, "initCloseEvent", js.Any.fromFunction6(value))
+    inline def setInitCloseEvent(value: (String, Boolean, Boolean, Boolean, Double, String) => Unit): Self = StObject.set(x, "initCloseEvent", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWasClean(value: Boolean): Self = StObject.set(x, "wasClean", value.asInstanceOf[js.Any])
+    inline def setWasClean(value: Boolean): Self = StObject.set(x, "wasClean", value.asInstanceOf[js.Any])
   }
 }

@@ -18,22 +18,17 @@ trait GameServerGroupAutoScalingPolicy extends StObject {
 }
 object GameServerGroupAutoScalingPolicy {
   
-  @scala.inline
-  def apply(TargetTrackingConfiguration: TargetTrackingConfiguration): GameServerGroupAutoScalingPolicy = {
+  inline def apply(TargetTrackingConfiguration: TargetTrackingConfiguration): GameServerGroupAutoScalingPolicy = {
     val __obj = js.Dynamic.literal(TargetTrackingConfiguration = TargetTrackingConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[GameServerGroupAutoScalingPolicy]
   }
   
-  @scala.inline
-  implicit class GameServerGroupAutoScalingPolicyMutableBuilder[Self <: GameServerGroupAutoScalingPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: GameServerGroupAutoScalingPolicy](x: Self) {
     
-    @scala.inline
-    def setEstimatedInstanceWarmup(value: PositiveInteger): Self = StObject.set(x, "EstimatedInstanceWarmup", value.asInstanceOf[js.Any])
+    inline def setEstimatedInstanceWarmup(value: PositiveInteger): Self = StObject.set(x, "EstimatedInstanceWarmup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedInstanceWarmupUndefined: Self = StObject.set(x, "EstimatedInstanceWarmup", js.undefined)
+    inline def setEstimatedInstanceWarmupUndefined: Self = StObject.set(x, "EstimatedInstanceWarmup", js.undefined)
     
-    @scala.inline
-    def setTargetTrackingConfiguration(value: TargetTrackingConfiguration): Self = StObject.set(x, "TargetTrackingConfiguration", value.asInstanceOf[js.Any])
+    inline def setTargetTrackingConfiguration(value: TargetTrackingConfiguration): Self = StObject.set(x, "TargetTrackingConfiguration", value.asInstanceOf[js.Any])
   }
 }

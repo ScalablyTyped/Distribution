@@ -30,17 +30,14 @@ object typesEnhancedMetricsMod {
   }
   object EnhancedMetrics {
     
-    @scala.inline
-    def apply(): EnhancedMetrics = {
+    inline def apply(): EnhancedMetrics = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EnhancedMetrics]
     }
     
-    @scala.inline
-    implicit class EnhancedMetricsMutableBuilder[Self <: EnhancedMetrics] (val x: Self) extends AnyVal {
+    extension [Self <: EnhancedMetrics](x: Self) {
       
-      @scala.inline
-      def setShardLevelMetrics(
+      inline def setShardLevelMetrics(
         value: (js.Array[
               IncomingBytes | IncomingRecords | OutgoingBytes | OutgoingRecords | WriteProvisionedThroughputExceeded | ReadProvisionedThroughputExceeded | IteratorAgeMilliseconds | ALL | String
             ]) | (Iterable[
@@ -48,11 +45,9 @@ object typesEnhancedMetricsMod {
             ])
       ): Self = StObject.set(x, "ShardLevelMetrics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShardLevelMetricsUndefined: Self = StObject.set(x, "ShardLevelMetrics", js.undefined)
+      inline def setShardLevelMetricsUndefined: Self = StObject.set(x, "ShardLevelMetrics", js.undefined)
       
-      @scala.inline
-      def setShardLevelMetricsVarargs(
+      inline def setShardLevelMetricsVarargs(
         value: (IncomingBytes | IncomingRecords | OutgoingBytes | OutgoingRecords | WriteProvisionedThroughputExceeded | ReadProvisionedThroughputExceeded | IteratorAgeMilliseconds | ALL | String)*
       ): Self = StObject.set(x, "ShardLevelMetrics", js.Array(value :_*))
     }
@@ -74,27 +69,22 @@ object typesEnhancedMetricsMod {
   }
   object UnmarshalledEnhancedMetrics {
     
-    @scala.inline
-    def apply(): UnmarshalledEnhancedMetrics = {
+    inline def apply(): UnmarshalledEnhancedMetrics = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledEnhancedMetrics]
     }
     
-    @scala.inline
-    implicit class UnmarshalledEnhancedMetricsMutableBuilder[Self <: UnmarshalledEnhancedMetrics] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledEnhancedMetrics](x: Self) {
       
-      @scala.inline
-      def setShardLevelMetrics(
+      inline def setShardLevelMetrics(
         value: js.Array[
               IncomingBytes | IncomingRecords | OutgoingBytes | OutgoingRecords | WriteProvisionedThroughputExceeded | ReadProvisionedThroughputExceeded | IteratorAgeMilliseconds | ALL | String
             ]
       ): Self = StObject.set(x, "ShardLevelMetrics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShardLevelMetricsUndefined: Self = StObject.set(x, "ShardLevelMetrics", js.undefined)
+      inline def setShardLevelMetricsUndefined: Self = StObject.set(x, "ShardLevelMetrics", js.undefined)
       
-      @scala.inline
-      def setShardLevelMetricsVarargs(
+      inline def setShardLevelMetricsVarargs(
         value: (IncomingBytes | IncomingRecords | OutgoingBytes | OutgoingRecords | WriteProvisionedThroughputExceeded | ReadProvisionedThroughputExceeded | IteratorAgeMilliseconds | ALL | String)*
       ): Self = StObject.set(x, "ShardLevelMetrics", js.Array(value :_*))
     }

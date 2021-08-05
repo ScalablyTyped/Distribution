@@ -62,48 +62,35 @@ object Name {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def fromImplicitSha256Digest(digest: typings.ndnJs.blobMod.Blob): typings.ndnJs.nameMod.Name.Component = ^.asInstanceOf[js.Dynamic].applyDynamic("fromImplicitSha256Digest")(digest.asInstanceOf[js.Any]).asInstanceOf[typings.ndnJs.nameMod.Name.Component]
+    inline def fromImplicitSha256Digest(digest: typings.ndnJs.blobMod.Blob): typings.ndnJs.nameMod.Name.Component = ^.asInstanceOf[js.Dynamic].applyDynamic("fromImplicitSha256Digest")(digest.asInstanceOf[js.Any]).asInstanceOf[typings.ndnJs.nameMod.Name.Component]
     
     /* static member */
-    @scala.inline
-    def fromNumber(number: Double): typings.ndnJs.nameMod.Name.Component = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(number.asInstanceOf[js.Any]).asInstanceOf[typings.ndnJs.nameMod.Name.Component]
-    @scala.inline
-    def fromNumber(number: Double, `type`: Unit, otherTypeCode: Double): typings.ndnJs.nameMod.Name.Component = (^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(number.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], otherTypeCode.asInstanceOf[js.Any])).asInstanceOf[typings.ndnJs.nameMod.Name.Component]
-    @scala.inline
-    def fromNumber(number: Double, `type`: typings.ndnJs.nameMod.ComponentType): typings.ndnJs.nameMod.Name.Component = (^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(number.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.ndnJs.nameMod.Name.Component]
-    @scala.inline
-    def fromNumber(number: Double, `type`: typings.ndnJs.nameMod.ComponentType, otherTypeCode: Double): typings.ndnJs.nameMod.Name.Component = (^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(number.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], otherTypeCode.asInstanceOf[js.Any])).asInstanceOf[typings.ndnJs.nameMod.Name.Component]
+    inline def fromNumber(number: Double): typings.ndnJs.nameMod.Name.Component = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(number.asInstanceOf[js.Any]).asInstanceOf[typings.ndnJs.nameMod.Name.Component]
+    inline def fromNumber(number: Double, `type`: Unit, otherTypeCode: Double): typings.ndnJs.nameMod.Name.Component = (^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(number.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], otherTypeCode.asInstanceOf[js.Any])).asInstanceOf[typings.ndnJs.nameMod.Name.Component]
+    inline def fromNumber(number: Double, `type`: typings.ndnJs.nameMod.ComponentType): typings.ndnJs.nameMod.Name.Component = (^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(number.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.ndnJs.nameMod.Name.Component]
+    inline def fromNumber(number: Double, `type`: typings.ndnJs.nameMod.ComponentType, otherTypeCode: Double): typings.ndnJs.nameMod.Name.Component = (^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(number.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], otherTypeCode.asInstanceOf[js.Any])).asInstanceOf[typings.ndnJs.nameMod.Name.Component]
     
     /* static member */
-    @scala.inline
-    def fromNumberWithMarker(number: Double, marker: Double): typings.ndnJs.nameMod.Name.Component = (^.asInstanceOf[js.Dynamic].applyDynamic("fromNumberWithMarker")(number.asInstanceOf[js.Any], marker.asInstanceOf[js.Any])).asInstanceOf[typings.ndnJs.nameMod.Name.Component]
+    inline def fromNumberWithMarker(number: Double, marker: Double): typings.ndnJs.nameMod.Name.Component = (^.asInstanceOf[js.Dynamic].applyDynamic("fromNumberWithMarker")(number.asInstanceOf[js.Any], marker.asInstanceOf[js.Any])).asInstanceOf[typings.ndnJs.nameMod.Name.Component]
     
     /* static member */
-    @scala.inline
-    def fromParametersSha256Digest(digest: typings.ndnJs.blobMod.Blob): typings.ndnJs.nameMod.Name.Component = ^.asInstanceOf[js.Dynamic].applyDynamic("fromParametersSha256Digest")(digest.asInstanceOf[js.Any]).asInstanceOf[typings.ndnJs.nameMod.Name.Component]
+    inline def fromParametersSha256Digest(digest: typings.ndnJs.blobMod.Blob): typings.ndnJs.nameMod.Name.Component = ^.asInstanceOf[js.Dynamic].applyDynamic("fromParametersSha256Digest")(digest.asInstanceOf[js.Any]).asInstanceOf[typings.ndnJs.nameMod.Name.Component]
     
     /* static member */
-    @scala.inline
-    def fromSegment(segment: Double): typings.ndnJs.nameMod.Name.Component = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSegment")(segment.asInstanceOf[js.Any]).asInstanceOf[typings.ndnJs.nameMod.Name.Component]
+    inline def fromSegment(segment: Double): typings.ndnJs.nameMod.Name.Component = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSegment")(segment.asInstanceOf[js.Any]).asInstanceOf[typings.ndnJs.nameMod.Name.Component]
     
     /* static member */
-    @scala.inline
-    def fromSegmentOffset(segmentOffset: Double): typings.ndnJs.nameMod.Name.Component = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSegmentOffset")(segmentOffset.asInstanceOf[js.Any]).asInstanceOf[typings.ndnJs.nameMod.Name.Component]
+    inline def fromSegmentOffset(segmentOffset: Double): typings.ndnJs.nameMod.Name.Component = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSegmentOffset")(segmentOffset.asInstanceOf[js.Any]).asInstanceOf[typings.ndnJs.nameMod.Name.Component]
     
     /* static member */
-    @scala.inline
-    def fromSequenceNumber(sequenceNumber: Double): typings.ndnJs.nameMod.Name.Component = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSequenceNumber")(sequenceNumber.asInstanceOf[js.Any]).asInstanceOf[typings.ndnJs.nameMod.Name.Component]
+    inline def fromSequenceNumber(sequenceNumber: Double): typings.ndnJs.nameMod.Name.Component = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSequenceNumber")(sequenceNumber.asInstanceOf[js.Any]).asInstanceOf[typings.ndnJs.nameMod.Name.Component]
     
     /* static member */
-    @scala.inline
-    def fromTimestamp(timestamp: Double): typings.ndnJs.nameMod.Name.Component = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTimestamp")(timestamp.asInstanceOf[js.Any]).asInstanceOf[typings.ndnJs.nameMod.Name.Component]
+    inline def fromTimestamp(timestamp: Double): typings.ndnJs.nameMod.Name.Component = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTimestamp")(timestamp.asInstanceOf[js.Any]).asInstanceOf[typings.ndnJs.nameMod.Name.Component]
     
     /* static member */
-    @scala.inline
-    def fromVersion(version: Double): typings.ndnJs.nameMod.Name.Component = ^.asInstanceOf[js.Dynamic].applyDynamic("fromVersion")(version.asInstanceOf[js.Any]).asInstanceOf[typings.ndnJs.nameMod.Name.Component]
+    inline def fromVersion(version: Double): typings.ndnJs.nameMod.Name.Component = ^.asInstanceOf[js.Dynamic].applyDynamic("fromVersion")(version.asInstanceOf[js.Any]).asInstanceOf[typings.ndnJs.nameMod.Name.Component]
   }
   
-  @scala.inline
-  def fromEscapedString(uri: String): typings.ndnJs.nameMod.Name = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEscapedString")(uri.asInstanceOf[js.Any]).asInstanceOf[typings.ndnJs.nameMod.Name]
+  inline def fromEscapedString(uri: String): typings.ndnJs.nameMod.Name = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEscapedString")(uri.asInstanceOf[js.Any]).asInstanceOf[typings.ndnJs.nameMod.Name]
 }

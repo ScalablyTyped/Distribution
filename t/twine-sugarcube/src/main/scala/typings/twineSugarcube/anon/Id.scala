@@ -17,37 +17,27 @@ trait Id extends StObject {
 }
 object Id {
   
-  @scala.inline
-  def apply(): Id = {
+  inline def apply(): Id = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Id]
   }
   
-  @scala.inline
-  implicit class IdMutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
+  extension [Self <: Id](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setOwn(value: Boolean): Self = StObject.set(x, "own", value.asInstanceOf[js.Any])
+    inline def setOwn(value: Boolean): Self = StObject.set(x, "own", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnUndefined: Self = StObject.set(x, "own", js.undefined)
+    inline def setOwnUndefined: Self = StObject.set(x, "own", js.undefined)
     
-    @scala.inline
-    def setSources(value: Array[String]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
+    inline def setSources(value: Array[String]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
+    inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
-    @scala.inline
-    def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+    inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
+    inline def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
   }
 }

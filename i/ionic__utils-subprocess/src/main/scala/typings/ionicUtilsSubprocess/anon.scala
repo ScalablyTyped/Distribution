@@ -46,86 +46,60 @@ object anon {
   }
   object ForkOptionsPickSpawnOptio {
     
-    @scala.inline
-    def apply(): ForkOptionsPickSpawnOptio = {
+    inline def apply(): ForkOptionsPickSpawnOptio = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ForkOptionsPickSpawnOptio]
     }
     
-    @scala.inline
-    implicit class ForkOptionsPickSpawnOptioMutableBuilder[Self <: ForkOptionsPickSpawnOptio] (val x: Self) extends AnyVal {
+    extension [Self <: ForkOptionsPickSpawnOptio](x: Self) {
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setDetached(value: Boolean): Self = StObject.set(x, "detached", value.asInstanceOf[js.Any])
+      inline def setDetached(value: Boolean): Self = StObject.set(x, "detached", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
+      inline def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
       
-      @scala.inline
-      def setEnv(value: ProcessEnv): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: ProcessEnv): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+      inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
       
-      @scala.inline
-      def setExecArgv(value: js.Array[String]): Self = StObject.set(x, "execArgv", value.asInstanceOf[js.Any])
+      inline def setExecArgv(value: js.Array[String]): Self = StObject.set(x, "execArgv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecArgvUndefined: Self = StObject.set(x, "execArgv", js.undefined)
+      inline def setExecArgvUndefined: Self = StObject.set(x, "execArgv", js.undefined)
       
-      @scala.inline
-      def setExecArgvVarargs(value: String*): Self = StObject.set(x, "execArgv", js.Array(value :_*))
+      inline def setExecArgvVarargs(value: String*): Self = StObject.set(x, "execArgv", js.Array(value :_*))
       
-      @scala.inline
-      def setExecPath(value: String): Self = StObject.set(x, "execPath", value.asInstanceOf[js.Any])
+      inline def setExecPath(value: String): Self = StObject.set(x, "execPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecPathUndefined: Self = StObject.set(x, "execPath", js.undefined)
+      inline def setExecPathUndefined: Self = StObject.set(x, "execPath", js.undefined)
       
-      @scala.inline
-      def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
+      inline def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGidUndefined: Self = StObject.set(x, "gid", js.undefined)
+      inline def setGidUndefined: Self = StObject.set(x, "gid", js.undefined)
       
-      @scala.inline
-      def setSerialization(value: SerializationType): Self = StObject.set(x, "serialization", value.asInstanceOf[js.Any])
+      inline def setSerialization(value: SerializationType): Self = StObject.set(x, "serialization", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerializationUndefined: Self = StObject.set(x, "serialization", js.undefined)
+      inline def setSerializationUndefined: Self = StObject.set(x, "serialization", js.undefined)
       
-      @scala.inline
-      def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+      inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+      inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
       
-      @scala.inline
-      def setStdio(value: StdioOptions): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
+      inline def setStdio(value: StdioOptions): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdioUndefined: Self = StObject.set(x, "stdio", js.undefined)
+      inline def setStdioUndefined: Self = StObject.set(x, "stdio", js.undefined)
       
-      @scala.inline
-      def setStdioVarargs(value: (js.UndefOr[pipe | ipc | ignore | inherit | Stream | Double | Null])*): Self = StObject.set(x, "stdio", js.Array(value :_*))
+      inline def setStdioVarargs(value: (js.UndefOr[pipe | ipc | ignore | inherit | Stream | Double | Null])*): Self = StObject.set(x, "stdio", js.Array(value :_*))
       
-      @scala.inline
-      def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+      inline def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
+      inline def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
       
-      @scala.inline
-      def setWindowsVerbatimArguments(value: Boolean): Self = StObject.set(x, "windowsVerbatimArguments", value.asInstanceOf[js.Any])
+      inline def setWindowsVerbatimArguments(value: Boolean): Self = StObject.set(x, "windowsVerbatimArguments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowsVerbatimArgumentsUndefined: Self = StObject.set(x, "windowsVerbatimArguments", js.undefined)
+      inline def setWindowsVerbatimArgumentsUndefined: Self = StObject.set(x, "windowsVerbatimArguments", js.undefined)
     }
   }
   
@@ -200,89 +174,62 @@ object anon {
   }
   object ReadonlySpawnOptions {
     
-    @scala.inline
-    def apply(): ReadonlySpawnOptions = {
+    inline def apply(): ReadonlySpawnOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReadonlySpawnOptions]
     }
     
-    @scala.inline
-    implicit class ReadonlySpawnOptionsMutableBuilder[Self <: ReadonlySpawnOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlySpawnOptions](x: Self) {
       
-      @scala.inline
-      def setArgv0(value: String): Self = StObject.set(x, "argv0", value.asInstanceOf[js.Any])
+      inline def setArgv0(value: String): Self = StObject.set(x, "argv0", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgv0Undefined: Self = StObject.set(x, "argv0", js.undefined)
+      inline def setArgv0Undefined: Self = StObject.set(x, "argv0", js.undefined)
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setDetached(value: Boolean): Self = StObject.set(x, "detached", value.asInstanceOf[js.Any])
+      inline def setDetached(value: Boolean): Self = StObject.set(x, "detached", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
+      inline def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
       
-      @scala.inline
-      def setEnv(value: ProcessEnv): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: ProcessEnv): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+      inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
       
-      @scala.inline
-      def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
+      inline def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGidUndefined: Self = StObject.set(x, "gid", js.undefined)
+      inline def setGidUndefined: Self = StObject.set(x, "gid", js.undefined)
       
-      @scala.inline
-      def setSerialization(value: SerializationType): Self = StObject.set(x, "serialization", value.asInstanceOf[js.Any])
+      inline def setSerialization(value: SerializationType): Self = StObject.set(x, "serialization", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerializationUndefined: Self = StObject.set(x, "serialization", js.undefined)
+      inline def setSerializationUndefined: Self = StObject.set(x, "serialization", js.undefined)
       
-      @scala.inline
-      def setShell(value: Boolean | String): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
+      inline def setShell(value: Boolean | String): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShellUndefined: Self = StObject.set(x, "shell", js.undefined)
+      inline def setShellUndefined: Self = StObject.set(x, "shell", js.undefined)
       
-      @scala.inline
-      def setStdio(value: StdioOptions): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
+      inline def setStdio(value: StdioOptions): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdioUndefined: Self = StObject.set(x, "stdio", js.undefined)
+      inline def setStdioUndefined: Self = StObject.set(x, "stdio", js.undefined)
       
-      @scala.inline
-      def setStdioVarargs(value: (js.UndefOr[pipe | ipc | ignore | inherit | Stream | Double | Null])*): Self = StObject.set(x, "stdio", js.Array(value :_*))
+      inline def setStdioVarargs(value: (js.UndefOr[pipe | ipc | ignore | inherit | Stream | Double | Null])*): Self = StObject.set(x, "stdio", js.Array(value :_*))
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+      inline def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
+      inline def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
       
-      @scala.inline
-      def setWindowsHide(value: Boolean): Self = StObject.set(x, "windowsHide", value.asInstanceOf[js.Any])
+      inline def setWindowsHide(value: Boolean): Self = StObject.set(x, "windowsHide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowsHideUndefined: Self = StObject.set(x, "windowsHide", js.undefined)
+      inline def setWindowsHideUndefined: Self = StObject.set(x, "windowsHide", js.undefined)
       
-      @scala.inline
-      def setWindowsVerbatimArguments(value: Boolean): Self = StObject.set(x, "windowsVerbatimArguments", value.asInstanceOf[js.Any])
+      inline def setWindowsVerbatimArguments(value: Boolean): Self = StObject.set(x, "windowsVerbatimArguments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowsVerbatimArgumentsUndefined: Self = StObject.set(x, "windowsVerbatimArguments", js.undefined)
+      inline def setWindowsVerbatimArgumentsUndefined: Self = StObject.set(x, "windowsVerbatimArguments", js.undefined)
     }
   }
 }

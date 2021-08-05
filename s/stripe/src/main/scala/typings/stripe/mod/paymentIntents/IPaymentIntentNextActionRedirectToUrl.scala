@@ -17,20 +17,16 @@ trait IPaymentIntentNextActionRedirectToUrl extends StObject {
 }
 object IPaymentIntentNextActionRedirectToUrl {
   
-  @scala.inline
-  def apply(redirect_to_url: Returnurl): IPaymentIntentNextActionRedirectToUrl = {
+  inline def apply(redirect_to_url: Returnurl): IPaymentIntentNextActionRedirectToUrl = {
     val __obj = js.Dynamic.literal(redirect_to_url = redirect_to_url.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("redirect_to_url")
     __obj.asInstanceOf[IPaymentIntentNextActionRedirectToUrl]
   }
   
-  @scala.inline
-  implicit class IPaymentIntentNextActionRedirectToUrlMutableBuilder[Self <: IPaymentIntentNextActionRedirectToUrl] (val x: Self) extends AnyVal {
+  extension [Self <: IPaymentIntentNextActionRedirectToUrl](x: Self) {
     
-    @scala.inline
-    def setRedirect_to_url(value: Returnurl): Self = StObject.set(x, "redirect_to_url", value.asInstanceOf[js.Any])
+    inline def setRedirect_to_url(value: Returnurl): Self = StObject.set(x, "redirect_to_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: redirect_to_url): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: redirect_to_url): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

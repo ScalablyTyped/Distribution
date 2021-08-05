@@ -18,19 +18,15 @@ trait ProvideAnomalyFeedbackRequest extends StObject {
 }
 object ProvideAnomalyFeedbackRequest {
   
-  @scala.inline
-  def apply(AnomalyId: GenericString, Feedback: AnomalyFeedbackType): ProvideAnomalyFeedbackRequest = {
+  inline def apply(AnomalyId: GenericString, Feedback: AnomalyFeedbackType): ProvideAnomalyFeedbackRequest = {
     val __obj = js.Dynamic.literal(AnomalyId = AnomalyId.asInstanceOf[js.Any], Feedback = Feedback.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProvideAnomalyFeedbackRequest]
   }
   
-  @scala.inline
-  implicit class ProvideAnomalyFeedbackRequestMutableBuilder[Self <: ProvideAnomalyFeedbackRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ProvideAnomalyFeedbackRequest](x: Self) {
     
-    @scala.inline
-    def setAnomalyId(value: GenericString): Self = StObject.set(x, "AnomalyId", value.asInstanceOf[js.Any])
+    inline def setAnomalyId(value: GenericString): Self = StObject.set(x, "AnomalyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeedback(value: AnomalyFeedbackType): Self = StObject.set(x, "Feedback", value.asInstanceOf[js.Any])
+    inline def setFeedback(value: AnomalyFeedbackType): Self = StObject.set(x, "Feedback", value.asInstanceOf[js.Any])
   }
 }

@@ -15,19 +15,15 @@ trait BackgroundTransferGroup extends StObject {
 }
 object BackgroundTransferGroup {
   
-  @scala.inline
-  def apply(name: String, transferBehavior: BackgroundTransferBehavior): BackgroundTransferGroup = {
+  inline def apply(name: String, transferBehavior: BackgroundTransferBehavior): BackgroundTransferGroup = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], transferBehavior = transferBehavior.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackgroundTransferGroup]
   }
   
-  @scala.inline
-  implicit class BackgroundTransferGroupMutableBuilder[Self <: BackgroundTransferGroup] (val x: Self) extends AnyVal {
+  extension [Self <: BackgroundTransferGroup](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransferBehavior(value: BackgroundTransferBehavior): Self = StObject.set(x, "transferBehavior", value.asInstanceOf[js.Any])
+    inline def setTransferBehavior(value: BackgroundTransferBehavior): Self = StObject.set(x, "transferBehavior", value.asInstanceOf[js.Any])
   }
 }

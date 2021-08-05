@@ -10,12 +10,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def toOrdinal(number: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toOrdinal")(number.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toOrdinal(number: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toOrdinal")(number.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def toWords(number: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toWords")(number.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toWords(number: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toWords")(number.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def toWordsOrdinal(number: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toWordsOrdinal")(number.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toWordsOrdinal(number: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toWordsOrdinal")(number.asInstanceOf[js.Any]).asInstanceOf[String]
 }

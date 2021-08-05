@@ -13,76 +13,65 @@ object reactInteractiveStrings {
   sealed trait hover
     extends StObject
        with IState
-  @scala.inline
-  def hover: hover = "hover".asInstanceOf[hover]
+  inline def hover: hover = "hover".asInstanceOf[hover]
   
   @js.native
   sealed trait hoverActive
     extends StObject
        with IState
-  @scala.inline
-  def hoverActive: hoverActive = "hoverActive".asInstanceOf[hoverActive]
+  inline def hoverActive: hoverActive = "hoverActive".asInstanceOf[hoverActive]
   
   @js.native
   sealed trait keyActive
     extends StObject
        with IState
-  @scala.inline
-  def keyActive: keyActive = "keyActive".asInstanceOf[keyActive]
+  inline def keyActive: keyActive = "keyActive".asInstanceOf[keyActive]
   
   @js.native
   sealed trait keyClick
     extends StObject
        with ClickType
-  @scala.inline
-  def keyClick: keyClick = "keyClick".asInstanceOf[keyClick]
+  inline def keyClick: keyClick = "keyClick".asInstanceOf[keyClick]
   
   @js.native
   sealed trait mouse
     extends StObject
        with Focus
-  @scala.inline
-  def mouse: mouse = "mouse".asInstanceOf[mouse]
+  inline def mouse: mouse = "mouse".asInstanceOf[mouse]
   
   @js.native
   sealed trait mouseClick
     extends StObject
        with ClickType
-  @scala.inline
-  def mouseClick: mouseClick = "mouseClick".asInstanceOf[mouseClick]
+  inline def mouseClick: mouseClick = "mouseClick".asInstanceOf[mouseClick]
   
   @js.native
   sealed trait normal
     extends StObject
        with IState
-  @scala.inline
-  def normal: normal = "normal".asInstanceOf[normal]
+  inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
   sealed trait tab
     extends StObject
        with Focus
-  @scala.inline
-  def tab: tab = "tab".asInstanceOf[tab]
+  inline def tab: tab = "tab".asInstanceOf[tab]
   
   @js.native
   sealed trait tapClick
     extends StObject
        with ClickType
-  @scala.inline
-  def tapClick: tapClick = "tapClick".asInstanceOf[tapClick]
+  inline def tapClick: tapClick = "tapClick".asInstanceOf[tapClick]
   
   @js.native
   sealed trait touch
     extends StObject
        with Focus
-  @scala.inline
-  def touch: touch = "touch".asInstanceOf[touch]
+  inline def touch: touch = "touch".asInstanceOf[touch]
   
   @js.native
   sealed trait touchActive
     extends StObject
        with IState
-  @scala.inline
-  def touchActive: touchActive = "touchActive".asInstanceOf[touchActive]
+  inline def touchActive: touchActive = "touchActive".asInstanceOf[touchActive]
 }

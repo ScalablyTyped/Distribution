@@ -14,25 +14,19 @@ trait SasPortalUpdateSignedDeviceRequest extends StObject {
 }
 object SasPortalUpdateSignedDeviceRequest {
   
-  @scala.inline
-  def apply(): SasPortalUpdateSignedDeviceRequest = {
+  inline def apply(): SasPortalUpdateSignedDeviceRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SasPortalUpdateSignedDeviceRequest]
   }
   
-  @scala.inline
-  implicit class SasPortalUpdateSignedDeviceRequestMutableBuilder[Self <: SasPortalUpdateSignedDeviceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SasPortalUpdateSignedDeviceRequest](x: Self) {
     
-    @scala.inline
-    def setEncodedDevice(value: String): Self = StObject.set(x, "encodedDevice", value.asInstanceOf[js.Any])
+    inline def setEncodedDevice(value: String): Self = StObject.set(x, "encodedDevice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodedDeviceUndefined: Self = StObject.set(x, "encodedDevice", js.undefined)
+    inline def setEncodedDeviceUndefined: Self = StObject.set(x, "encodedDevice", js.undefined)
     
-    @scala.inline
-    def setInstallerId(value: String): Self = StObject.set(x, "installerId", value.asInstanceOf[js.Any])
+    inline def setInstallerId(value: String): Self = StObject.set(x, "installerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstallerIdUndefined: Self = StObject.set(x, "installerId", js.undefined)
+    inline def setInstallerIdUndefined: Self = StObject.set(x, "installerId", js.undefined)
   }
 }

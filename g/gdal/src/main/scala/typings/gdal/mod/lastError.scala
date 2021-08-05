@@ -13,14 +13,12 @@ object lastError {
   @JSImport("gdal", "lastError.message")
   @js.native
   def message: js.Any = js.native
-  @scala.inline
-  def message_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("message")(x.asInstanceOf[js.Any])
+  inline def message_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("message")(x.asInstanceOf[js.Any])
   
   @JSImport("gdal", "lastError.number")
   @js.native
   def number: js.Any = js.native
-  @scala.inline
-  def number_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("number")(x.asInstanceOf[js.Any])
+  inline def number_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("number")(x.asInstanceOf[js.Any])
   
   @JSImport("gdal", "lastError.type")
   @js.native

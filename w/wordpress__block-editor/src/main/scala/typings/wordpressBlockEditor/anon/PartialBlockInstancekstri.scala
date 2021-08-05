@@ -23,52 +23,37 @@ trait PartialBlockInstancekstri extends StObject {
 }
 object PartialBlockInstancekstri {
   
-  @scala.inline
-  def apply(): PartialBlockInstancekstri = {
+  inline def apply(): PartialBlockInstancekstri = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialBlockInstancekstri]
   }
   
-  @scala.inline
-  implicit class PartialBlockInstancekstriMutableBuilder[Self <: PartialBlockInstancekstri] (val x: Self) extends AnyVal {
+  extension [Self <: PartialBlockInstancekstri](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: StringDictionary[js.Any]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: StringDictionary[js.Any]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+    inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
-    @scala.inline
-    def setInnerBlocks(value: js.Array[BlockInstance[StringDictionary[js.Any]]]): Self = StObject.set(x, "innerBlocks", value.asInstanceOf[js.Any])
+    inline def setInnerBlocks(value: js.Array[BlockInstance[StringDictionary[js.Any]]]): Self = StObject.set(x, "innerBlocks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInnerBlocksUndefined: Self = StObject.set(x, "innerBlocks", js.undefined)
+    inline def setInnerBlocksUndefined: Self = StObject.set(x, "innerBlocks", js.undefined)
     
-    @scala.inline
-    def setInnerBlocksVarargs(value: BlockInstance[StringDictionary[js.Any]]*): Self = StObject.set(x, "innerBlocks", js.Array(value :_*))
+    inline def setInnerBlocksVarargs(value: BlockInstance[StringDictionary[js.Any]]*): Self = StObject.set(x, "innerBlocks", js.Array(value :_*))
     
-    @scala.inline
-    def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
+    inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsValidUndefined: Self = StObject.set(x, "isValid", js.undefined)
+    inline def setIsValidUndefined: Self = StObject.set(x, "isValid", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOriginalContent(value: String): Self = StObject.set(x, "originalContent", value.asInstanceOf[js.Any])
+    inline def setOriginalContent(value: String): Self = StObject.set(x, "originalContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalContentUndefined: Self = StObject.set(x, "originalContent", js.undefined)
+    inline def setOriginalContentUndefined: Self = StObject.set(x, "originalContent", js.undefined)
   }
 }

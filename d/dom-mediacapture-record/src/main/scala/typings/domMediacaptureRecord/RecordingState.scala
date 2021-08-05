@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RecordingState extends StObject
 object RecordingState {
   
-  @scala.inline
-  def inactive: typings.domMediacaptureRecord.domMediacaptureRecordStrings.inactive = "inactive".asInstanceOf[typings.domMediacaptureRecord.domMediacaptureRecordStrings.inactive]
+  inline def inactive: typings.domMediacaptureRecord.domMediacaptureRecordStrings.inactive = "inactive".asInstanceOf[typings.domMediacaptureRecord.domMediacaptureRecordStrings.inactive]
   
-  @scala.inline
-  def paused: typings.domMediacaptureRecord.domMediacaptureRecordStrings.paused = "paused".asInstanceOf[typings.domMediacaptureRecord.domMediacaptureRecordStrings.paused]
+  inline def paused: typings.domMediacaptureRecord.domMediacaptureRecordStrings.paused = "paused".asInstanceOf[typings.domMediacaptureRecord.domMediacaptureRecordStrings.paused]
   
-  @scala.inline
-  def recording: typings.domMediacaptureRecord.domMediacaptureRecordStrings.recording = "recording".asInstanceOf[typings.domMediacaptureRecord.domMediacaptureRecordStrings.recording]
+  inline def recording: typings.domMediacaptureRecord.domMediacaptureRecordStrings.recording = "recording".asInstanceOf[typings.domMediacaptureRecord.domMediacaptureRecordStrings.recording]
 }

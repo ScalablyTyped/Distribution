@@ -23,31 +23,23 @@ trait CreateDistributionWithTagsResult extends StObject {
 }
 object CreateDistributionWithTagsResult {
   
-  @scala.inline
-  def apply(): CreateDistributionWithTagsResult = {
+  inline def apply(): CreateDistributionWithTagsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateDistributionWithTagsResult]
   }
   
-  @scala.inline
-  implicit class CreateDistributionWithTagsResultMutableBuilder[Self <: CreateDistributionWithTagsResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDistributionWithTagsResult](x: Self) {
     
-    @scala.inline
-    def setDistribution(value: Distribution): Self = StObject.set(x, "Distribution", value.asInstanceOf[js.Any])
+    inline def setDistribution(value: Distribution): Self = StObject.set(x, "Distribution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributionUndefined: Self = StObject.set(x, "Distribution", js.undefined)
+    inline def setDistributionUndefined: Self = StObject.set(x, "Distribution", js.undefined)
     
-    @scala.inline
-    def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
+    inline def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
+    inline def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
   }
 }

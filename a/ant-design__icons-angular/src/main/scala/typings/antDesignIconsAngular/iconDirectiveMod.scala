@@ -28,11 +28,11 @@ object iconDirectiveMod {
     
     /* protected */ def _clearSVGElement(): Unit = js.native
     
-    var _elementRef: ElementRef[js.Any] = js.native
+    /* protected */ var _elementRef: ElementRef[js.Any] = js.native
     
     /* protected */ def _getSelfRenderMeta(): RenderMeta = js.native
     
-    var _iconService: IconService = js.native
+    /* protected */ var _iconService: IconService = js.native
     
     /**
       * Parse a icon to the standard form, an `IconDefinition` or a string like 'account-book-fill` (with a theme suffixed).
@@ -44,7 +44,7 @@ object iconDirectiveMod {
     /* protected */ def _parseIconType(`type`: String, theme: ThemeType): IconDefinition | String = js.native
     /* protected */ def _parseIconType(`type`: IconDefinition, theme: ThemeType): IconDefinition | String = js.native
     
-    var _renderer: Renderer2 = js.native
+    /* protected */ var _renderer: Renderer2 = js.native
     
     /* protected */ def _setSVGElement(svg: SVGElement): Unit = js.native
     
@@ -75,24 +75,19 @@ object iconDirectiveMod {
   }
   object RenderMeta {
     
-    @scala.inline
-    def apply(theme: ThemeType, twoToneColor: String, `type`: String | IconDefinition): RenderMeta = {
+    inline def apply(theme: ThemeType, twoToneColor: String, `type`: String | IconDefinition): RenderMeta = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any], twoToneColor = twoToneColor.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[RenderMeta]
     }
     
-    @scala.inline
-    implicit class RenderMetaMutableBuilder[Self <: RenderMeta] (val x: Self) extends AnyVal {
+    extension [Self <: RenderMeta](x: Self) {
       
-      @scala.inline
-      def setTheme(value: ThemeType): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ThemeType): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTwoToneColor(value: String): Self = StObject.set(x, "twoToneColor", value.asInstanceOf[js.Any])
+      inline def setTwoToneColor(value: String): Self = StObject.set(x, "twoToneColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String | IconDefinition): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String | IconDefinition): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

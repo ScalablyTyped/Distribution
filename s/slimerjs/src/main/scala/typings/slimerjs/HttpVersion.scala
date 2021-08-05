@@ -12,19 +12,15 @@ trait HttpVersion extends StObject {
 }
 object HttpVersion {
   
-  @scala.inline
-  def apply(major: Double, minor: Double): HttpVersion = {
+  inline def apply(major: Double, minor: Double): HttpVersion = {
     val __obj = js.Dynamic.literal(major = major.asInstanceOf[js.Any], minor = minor.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpVersion]
   }
   
-  @scala.inline
-  implicit class HttpVersionMutableBuilder[Self <: HttpVersion] (val x: Self) extends AnyVal {
+  extension [Self <: HttpVersion](x: Self) {
     
-    @scala.inline
-    def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
+    inline def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinor(value: Double): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
+    inline def setMinor(value: Double): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
   }
 }

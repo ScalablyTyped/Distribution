@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Font")
 @js.native
-class Font protected ()
+/* private */ class Font ()
   extends StObject
      with typings.activexWord.Word.Font {
   
@@ -192,7 +192,7 @@ class Font protected ()
   /* CompleteClass */
   var UnderlineColor: WdColor = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.Font_typekey")
   var WordDotFont_typekey: typings.activexWord.Word.Font = js.native
 }

@@ -215,152 +215,104 @@ object hoverCardTypesMod {
   }
   object IHoverCardProps {
     
-    @scala.inline
-    def apply(): IHoverCardProps = {
+    inline def apply(): IHoverCardProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IHoverCardProps]
     }
     
-    @scala.inline
-    implicit class IHoverCardPropsMutableBuilder[Self <: IHoverCardProps] (val x: Self) extends AnyVal {
+    extension [Self <: IHoverCardProps](x: Self) {
       
-      @scala.inline
-      def setCardDismissDelay(value: Double): Self = StObject.set(x, "cardDismissDelay", value.asInstanceOf[js.Any])
+      inline def setCardDismissDelay(value: Double): Self = StObject.set(x, "cardDismissDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCardDismissDelayUndefined: Self = StObject.set(x, "cardDismissDelay", js.undefined)
+      inline def setCardDismissDelayUndefined: Self = StObject.set(x, "cardDismissDelay", js.undefined)
       
-      @scala.inline
-      def setCardOpenDelay(value: Double): Self = StObject.set(x, "cardOpenDelay", value.asInstanceOf[js.Any])
+      inline def setCardOpenDelay(value: Double): Self = StObject.set(x, "cardOpenDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCardOpenDelayUndefined: Self = StObject.set(x, "cardOpenDelay", js.undefined)
+      inline def setCardOpenDelayUndefined: Self = StObject.set(x, "cardOpenDelay", js.undefined)
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[IHoverCard]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[IHoverCard]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ IHoverCard | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ IHoverCard | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setEventListenerTarget(value: HTMLElement | String): Self = StObject.set(x, "eventListenerTarget", value.asInstanceOf[js.Any])
+      inline def setEventListenerTarget(value: HTMLElement | String): Self = StObject.set(x, "eventListenerTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventListenerTargetNull: Self = StObject.set(x, "eventListenerTarget", null)
+      inline def setEventListenerTargetNull: Self = StObject.set(x, "eventListenerTarget", null)
       
-      @scala.inline
-      def setEventListenerTargetUndefined: Self = StObject.set(x, "eventListenerTarget", js.undefined)
+      inline def setEventListenerTargetUndefined: Self = StObject.set(x, "eventListenerTarget", js.undefined)
       
-      @scala.inline
-      def setExpandedCardOpenDelay(value: Double): Self = StObject.set(x, "expandedCardOpenDelay", value.asInstanceOf[js.Any])
+      inline def setExpandedCardOpenDelay(value: Double): Self = StObject.set(x, "expandedCardOpenDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandedCardOpenDelayUndefined: Self = StObject.set(x, "expandedCardOpenDelay", js.undefined)
+      inline def setExpandedCardOpenDelayUndefined: Self = StObject.set(x, "expandedCardOpenDelay", js.undefined)
       
-      @scala.inline
-      def setExpandingCardProps(value: IExpandingCardProps): Self = StObject.set(x, "expandingCardProps", value.asInstanceOf[js.Any])
+      inline def setExpandingCardProps(value: IExpandingCardProps): Self = StObject.set(x, "expandingCardProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandingCardPropsUndefined: Self = StObject.set(x, "expandingCardProps", js.undefined)
+      inline def setExpandingCardPropsUndefined: Self = StObject.set(x, "expandingCardProps", js.undefined)
       
-      @scala.inline
-      def setInstantOpenOnClick(value: Boolean): Self = StObject.set(x, "instantOpenOnClick", value.asInstanceOf[js.Any])
+      inline def setInstantOpenOnClick(value: Boolean): Self = StObject.set(x, "instantOpenOnClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstantOpenOnClickUndefined: Self = StObject.set(x, "instantOpenOnClick", js.undefined)
+      inline def setInstantOpenOnClickUndefined: Self = StObject.set(x, "instantOpenOnClick", js.undefined)
       
-      @scala.inline
-      def setOnCardExpand(value: () => Unit): Self = StObject.set(x, "onCardExpand", js.Any.fromFunction0(value))
+      inline def setOnCardExpand(value: () => Unit): Self = StObject.set(x, "onCardExpand", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCardExpandUndefined: Self = StObject.set(x, "onCardExpand", js.undefined)
+      inline def setOnCardExpandUndefined: Self = StObject.set(x, "onCardExpand", js.undefined)
       
-      @scala.inline
-      def setOnCardHide(value: () => Unit): Self = StObject.set(x, "onCardHide", js.Any.fromFunction0(value))
+      inline def setOnCardHide(value: () => Unit): Self = StObject.set(x, "onCardHide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCardHideUndefined: Self = StObject.set(x, "onCardHide", js.undefined)
+      inline def setOnCardHideUndefined: Self = StObject.set(x, "onCardHide", js.undefined)
       
-      @scala.inline
-      def setOnCardVisible(value: () => Unit): Self = StObject.set(x, "onCardVisible", js.Any.fromFunction0(value))
+      inline def setOnCardVisible(value: () => Unit): Self = StObject.set(x, "onCardVisible", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCardVisibleUndefined: Self = StObject.set(x, "onCardVisible", js.undefined)
+      inline def setOnCardVisibleUndefined: Self = StObject.set(x, "onCardVisible", js.undefined)
       
-      @scala.inline
-      def setOpenHotKey(value: KeyCodes): Self = StObject.set(x, "openHotKey", value.asInstanceOf[js.Any])
+      inline def setOpenHotKey(value: KeyCodes): Self = StObject.set(x, "openHotKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenHotKeyUndefined: Self = StObject.set(x, "openHotKey", js.undefined)
+      inline def setOpenHotKeyUndefined: Self = StObject.set(x, "openHotKey", js.undefined)
       
-      @scala.inline
-      def setPlainCardProps(value: IPlainCardProps): Self = StObject.set(x, "plainCardProps", value.asInstanceOf[js.Any])
+      inline def setPlainCardProps(value: IPlainCardProps): Self = StObject.set(x, "plainCardProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlainCardPropsUndefined: Self = StObject.set(x, "plainCardProps", js.undefined)
+      inline def setPlainCardPropsUndefined: Self = StObject.set(x, "plainCardProps", js.undefined)
       
-      @scala.inline
-      def setSetAriaDescribedBy(value: Boolean): Self = StObject.set(x, "setAriaDescribedBy", value.asInstanceOf[js.Any])
+      inline def setSetAriaDescribedBy(value: Boolean): Self = StObject.set(x, "setAriaDescribedBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetAriaDescribedByUndefined: Self = StObject.set(x, "setAriaDescribedBy", js.undefined)
+      inline def setSetAriaDescribedByUndefined: Self = StObject.set(x, "setAriaDescribedBy", js.undefined)
       
-      @scala.inline
-      def setSetInitialFocus(value: Boolean): Self = StObject.set(x, "setInitialFocus", value.asInstanceOf[js.Any])
+      inline def setSetInitialFocus(value: Boolean): Self = StObject.set(x, "setInitialFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetInitialFocusUndefined: Self = StObject.set(x, "setInitialFocus", js.undefined)
+      inline def setSetInitialFocusUndefined: Self = StObject.set(x, "setInitialFocus", js.undefined)
       
-      @scala.inline
-      def setShouldBlockHoverCard(value: () => Unit): Self = StObject.set(x, "shouldBlockHoverCard", js.Any.fromFunction0(value))
+      inline def setShouldBlockHoverCard(value: () => Unit): Self = StObject.set(x, "shouldBlockHoverCard", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShouldBlockHoverCardUndefined: Self = StObject.set(x, "shouldBlockHoverCard", js.undefined)
+      inline def setShouldBlockHoverCardUndefined: Self = StObject.set(x, "shouldBlockHoverCard", js.undefined)
       
-      @scala.inline
-      def setSticky(value: Boolean): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
+      inline def setSticky(value: Boolean): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStickyUndefined: Self = StObject.set(x, "sticky", js.undefined)
+      inline def setStickyUndefined: Self = StObject.set(x, "sticky", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[IHoverCardStyleProps, IHoverCardStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[IHoverCardStyleProps, IHoverCardStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: IHoverCardStyleProps => DeepPartial[IHoverCardStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: IHoverCardStyleProps => DeepPartial[IHoverCardStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTarget(value: HTMLElement | String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: HTMLElement | String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetNull: Self = StObject.set(x, "target", null)
+      inline def setTargetNull: Self = StObject.set(x, "target", null)
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setTrapFocus(value: Boolean): Self = StObject.set(x, "trapFocus", value.asInstanceOf[js.Any])
+      inline def setTrapFocus(value: Boolean): Self = StObject.set(x, "trapFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrapFocusUndefined: Self = StObject.set(x, "trapFocus", js.undefined)
+      inline def setTrapFocusUndefined: Self = StObject.set(x, "trapFocus", js.undefined)
       
-      @scala.inline
-      def setType(value: HoverCardType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: HoverCardType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -378,23 +330,18 @@ object hoverCardTypesMod {
   }
   object IHoverCardStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): IHoverCardStyleProps = {
+    inline def apply(theme: ITheme): IHoverCardStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[IHoverCardStyleProps]
     }
     
-    @scala.inline
-    implicit class IHoverCardStylePropsMutableBuilder[Self <: IHoverCardStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IHoverCardStyleProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -407,23 +354,18 @@ object hoverCardTypesMod {
   }
   object IHoverCardStyles {
     
-    @scala.inline
-    def apply(): IHoverCardStyles = {
+    inline def apply(): IHoverCardStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IHoverCardStyles]
     }
     
-    @scala.inline
-    implicit class IHoverCardStylesMutableBuilder[Self <: IHoverCardStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IHoverCardStyles](x: Self) {
       
-      @scala.inline
-      def setHost(value: IStyle): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: IStyle): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostNull: Self = StObject.set(x, "host", null)
+      inline def setHostNull: Self = StObject.set(x, "host", null)
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     }
   }
 }

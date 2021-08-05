@@ -18,22 +18,17 @@ trait ModifyClusterParameterGroupMessage extends StObject {
 }
 object ModifyClusterParameterGroupMessage {
   
-  @scala.inline
-  def apply(ParameterGroupName: String, Parameters: ParametersList): ModifyClusterParameterGroupMessage = {
+  inline def apply(ParameterGroupName: String, Parameters: ParametersList): ModifyClusterParameterGroupMessage = {
     val __obj = js.Dynamic.literal(ParameterGroupName = ParameterGroupName.asInstanceOf[js.Any], Parameters = Parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyClusterParameterGroupMessage]
   }
   
-  @scala.inline
-  implicit class ModifyClusterParameterGroupMessageMutableBuilder[Self <: ModifyClusterParameterGroupMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyClusterParameterGroupMessage](x: Self) {
     
-    @scala.inline
-    def setParameterGroupName(value: String): Self = StObject.set(x, "ParameterGroupName", value.asInstanceOf[js.Any])
+    inline def setParameterGroupName(value: String): Self = StObject.set(x, "ParameterGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameters(value: ParametersList): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ParametersList): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersVarargs(value: Parameter*): Self = StObject.set(x, "Parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: Parameter*): Self = StObject.set(x, "Parameters", js.Array(value :_*))
   }
 }

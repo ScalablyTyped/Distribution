@@ -47,8 +47,7 @@ trait SearchViewModelSearchResponse
 }
 object SearchViewModelSearchResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activeSourceIndex: Double,
     constructor: js.Function,
     errors: js.Array[Error],
@@ -62,28 +61,20 @@ object SearchViewModelSearchResponse {
     __obj.asInstanceOf[SearchViewModelSearchResponse]
   }
   
-  @scala.inline
-  implicit class SearchViewModelSearchResponseMutableBuilder[Self <: SearchViewModelSearchResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SearchViewModelSearchResponse](x: Self) {
     
-    @scala.inline
-    def setActiveSourceIndex(value: Double): Self = StObject.set(x, "activeSourceIndex", value.asInstanceOf[js.Any])
+    inline def setActiveSourceIndex(value: Double): Self = StObject.set(x, "activeSourceIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrors(value: js.Array[Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Array[Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsVarargs(value: Error*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: Error*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
-    @scala.inline
-    def setNumResults(value: Double): Self = StObject.set(x, "numResults", value.asInstanceOf[js.Any])
+    inline def setNumResults(value: Double): Self = StObject.set(x, "numResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResults(value: js.Array[SearchViewModelSearchResponseResults]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[SearchViewModelSearchResponseResults]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsVarargs(value: SearchViewModelSearchResponseResults*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: SearchViewModelSearchResponseResults*): Self = StObject.set(x, "results", js.Array(value :_*))
     
-    @scala.inline
-    def setSearchTerm(value: String): Self = StObject.set(x, "searchTerm", value.asInstanceOf[js.Any])
+    inline def setSearchTerm(value: String): Self = StObject.set(x, "searchTerm", value.asInstanceOf[js.Any])
   }
 }

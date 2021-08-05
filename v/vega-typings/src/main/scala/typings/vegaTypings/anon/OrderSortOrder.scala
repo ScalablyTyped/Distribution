@@ -14,16 +14,13 @@ trait OrderSortOrder
 }
 object OrderSortOrder {
   
-  @scala.inline
-  def apply(order: SortOrder): OrderSortOrder = {
+  inline def apply(order: SortOrder): OrderSortOrder = {
     val __obj = js.Dynamic.literal(order = order.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderSortOrder]
   }
   
-  @scala.inline
-  implicit class OrderSortOrderMutableBuilder[Self <: OrderSortOrder] (val x: Self) extends AnyVal {
+  extension [Self <: OrderSortOrder](x: Self) {
     
-    @scala.inline
-    def setOrder(value: SortOrder): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: SortOrder): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
   }
 }

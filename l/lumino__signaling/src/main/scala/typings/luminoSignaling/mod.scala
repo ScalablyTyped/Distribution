@@ -51,8 +51,7 @@ object mod {
       * This removes all signal connections and any other signal data
       * associated with the object.
       */
-    @scala.inline
-    def clearData(`object`: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearData")(`object`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def clearData(`object`: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearData")(`object`.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Remove all connections where an object is the sender or receiver.
@@ -64,8 +63,7 @@ object mod {
       * is considered the receiver. Otherwise, the `slot` is considered
       * the receiver.
       */
-    @scala.inline
-    def disconnectAll(`object`: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disconnectAll")(`object`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def disconnectAll(`object`: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disconnectAll")(`object`.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Remove all connections between a sender and receiver.
@@ -79,8 +77,7 @@ object mod {
       * is considered the receiver. Otherwise, the `slot` is considered
       * the receiver.
       */
-    @scala.inline
-    def disconnectBetween(sender: js.Any, receiver: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disconnectBetween")(sender.asInstanceOf[js.Any], receiver.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def disconnectBetween(sender: js.Any, receiver: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disconnectBetween")(sender.asInstanceOf[js.Any], receiver.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Remove all connections where the given object is the receiver.
@@ -92,16 +89,14 @@ object mod {
       * is considered the receiver. Otherwise, the `slot` is considered
       * the receiver.
       */
-    @scala.inline
-    def disconnectReceiver(receiver: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disconnectReceiver")(receiver.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def disconnectReceiver(receiver: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disconnectReceiver")(receiver.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Remove all connections where the given object is the sender.
       *
       * @param sender - The sender object of interest.
       */
-    @scala.inline
-    def disconnectSender(sender: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disconnectSender")(sender.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def disconnectSender(sender: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disconnectSender")(sender.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Get the signal exception handler.
@@ -111,8 +106,7 @@ object mod {
       * #### Notes
       * The default exception handler is `console.error`.
       */
-    @scala.inline
-    def getExceptionHandler(): ExceptionHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("getExceptionHandler")().asInstanceOf[ExceptionHandler]
+    inline def getExceptionHandler(): ExceptionHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("getExceptionHandler")().asInstanceOf[ExceptionHandler]
     
     /**
       * Set the signal exception handler.
@@ -124,8 +118,7 @@ object mod {
       * #### Notes
       * The exception handler is invoked when a slot throws an exception.
       */
-    @scala.inline
-    def setExceptionHandler(handler: ExceptionHandler): ExceptionHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("setExceptionHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[ExceptionHandler]
+    inline def setExceptionHandler(handler: ExceptionHandler): ExceptionHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("setExceptionHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[ExceptionHandler]
     
     /**
       * A type alias for the exception handler function.

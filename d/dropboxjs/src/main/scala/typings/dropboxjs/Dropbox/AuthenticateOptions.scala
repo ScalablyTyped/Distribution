@@ -11,16 +11,13 @@ trait AuthenticateOptions extends StObject {
 }
 object AuthenticateOptions {
   
-  @scala.inline
-  def apply(interactive: Boolean): AuthenticateOptions = {
+  inline def apply(interactive: Boolean): AuthenticateOptions = {
     val __obj = js.Dynamic.literal(interactive = interactive.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthenticateOptions]
   }
   
-  @scala.inline
-  implicit class AuthenticateOptionsMutableBuilder[Self <: AuthenticateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AuthenticateOptions](x: Self) {
     
-    @scala.inline
-    def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
+    inline def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
   }
 }

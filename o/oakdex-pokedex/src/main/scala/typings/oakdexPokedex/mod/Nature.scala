@@ -18,40 +18,29 @@ trait Nature extends StObject {
 }
 object Nature {
   
-  @scala.inline
-  def apply(names: Translations): Nature = {
+  inline def apply(names: Translations): Nature = {
     val __obj = js.Dynamic.literal(names = names.asInstanceOf[js.Any], decreased_stat = null, disliked_flavor = null, favorite_flavor = null, increased_stat = null)
     __obj.asInstanceOf[Nature]
   }
   
-  @scala.inline
-  implicit class NatureMutableBuilder[Self <: Nature] (val x: Self) extends AnyVal {
+  extension [Self <: Nature](x: Self) {
     
-    @scala.inline
-    def setDecreased_stat(value: String): Self = StObject.set(x, "decreased_stat", value.asInstanceOf[js.Any])
+    inline def setDecreased_stat(value: String): Self = StObject.set(x, "decreased_stat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecreased_statNull: Self = StObject.set(x, "decreased_stat", null)
+    inline def setDecreased_statNull: Self = StObject.set(x, "decreased_stat", null)
     
-    @scala.inline
-    def setDisliked_flavor(value: String): Self = StObject.set(x, "disliked_flavor", value.asInstanceOf[js.Any])
+    inline def setDisliked_flavor(value: String): Self = StObject.set(x, "disliked_flavor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisliked_flavorNull: Self = StObject.set(x, "disliked_flavor", null)
+    inline def setDisliked_flavorNull: Self = StObject.set(x, "disliked_flavor", null)
     
-    @scala.inline
-    def setFavorite_flavor(value: String): Self = StObject.set(x, "favorite_flavor", value.asInstanceOf[js.Any])
+    inline def setFavorite_flavor(value: String): Self = StObject.set(x, "favorite_flavor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFavorite_flavorNull: Self = StObject.set(x, "favorite_flavor", null)
+    inline def setFavorite_flavorNull: Self = StObject.set(x, "favorite_flavor", null)
     
-    @scala.inline
-    def setIncreased_stat(value: String): Self = StObject.set(x, "increased_stat", value.asInstanceOf[js.Any])
+    inline def setIncreased_stat(value: String): Self = StObject.set(x, "increased_stat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncreased_statNull: Self = StObject.set(x, "increased_stat", null)
+    inline def setIncreased_statNull: Self = StObject.set(x, "increased_stat", null)
     
-    @scala.inline
-    def setNames(value: Translations): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+    inline def setNames(value: Translations): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
   }
 }

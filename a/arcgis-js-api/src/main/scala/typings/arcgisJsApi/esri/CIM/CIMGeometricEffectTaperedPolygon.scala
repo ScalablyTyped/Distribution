@@ -29,35 +29,26 @@ trait CIMGeometricEffectTaperedPolygon
 }
 object CIMGeometricEffectTaperedPolygon {
   
-  @scala.inline
-  def apply(): CIMGeometricEffectTaperedPolygon = {
+  inline def apply(): CIMGeometricEffectTaperedPolygon = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMGeometricEffectTaperedPolygon")
     __obj.asInstanceOf[CIMGeometricEffectTaperedPolygon]
   }
   
-  @scala.inline
-  implicit class CIMGeometricEffectTaperedPolygonMutableBuilder[Self <: CIMGeometricEffectTaperedPolygon] (val x: Self) extends AnyVal {
+  extension [Self <: CIMGeometricEffectTaperedPolygon](x: Self) {
     
-    @scala.inline
-    def setFromWidth(value: Double): Self = StObject.set(x, "fromWidth", value.asInstanceOf[js.Any])
+    inline def setFromWidth(value: Double): Self = StObject.set(x, "fromWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromWidthUndefined: Self = StObject.set(x, "fromWidth", js.undefined)
+    inline def setFromWidthUndefined: Self = StObject.set(x, "fromWidth", js.undefined)
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
-    @scala.inline
-    def setToWidth(value: Double): Self = StObject.set(x, "toWidth", value.asInstanceOf[js.Any])
+    inline def setToWidth(value: Double): Self = StObject.set(x, "toWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToWidthUndefined: Self = StObject.set(x, "toWidth", js.undefined)
+    inline def setToWidthUndefined: Self = StObject.set(x, "toWidth", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectTaperedPolygon): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectTaperedPolygon): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

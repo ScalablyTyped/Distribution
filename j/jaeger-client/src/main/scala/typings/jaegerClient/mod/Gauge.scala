@@ -11,16 +11,13 @@ trait Gauge extends StObject {
 }
 object Gauge {
   
-  @scala.inline
-  def apply(update: Double => Unit): Gauge = {
+  inline def apply(update: Double => Unit): Gauge = {
     val __obj = js.Dynamic.literal(update = js.Any.fromFunction1(update))
     __obj.asInstanceOf[Gauge]
   }
   
-  @scala.inline
-  implicit class GaugeMutableBuilder[Self <: Gauge] (val x: Self) extends AnyVal {
+  extension [Self <: Gauge](x: Self) {
     
-    @scala.inline
-    def setUpdate(value: Double => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+    inline def setUpdate(value: Double => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
   }
 }

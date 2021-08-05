@@ -62,7 +62,6 @@ object artifactMod {
     @JSGlobal("artifact")
     @js.native
     def artifact: Artifact_ = js.native
-    @scala.inline
-    def artifact_=(x: Artifact_): Unit = js.Dynamic.global.updateDynamic("artifact")(x.asInstanceOf[js.Any])
+    inline def artifact_=(x: Artifact_): Unit = js.Dynamic.global.updateDynamic("artifact")(x.asInstanceOf[js.Any])
   }
 }

@@ -12,22 +12,17 @@ trait MessageSucceededEvent extends StObject {
 }
 object MessageSucceededEvent {
   
-  @scala.inline
-  def apply(originator: String): MessageSucceededEvent = {
+  inline def apply(originator: String): MessageSucceededEvent = {
     val __obj = js.Dynamic.literal(originator = originator.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageSucceededEvent]
   }
   
-  @scala.inline
-  implicit class MessageSucceededEventMutableBuilder[Self <: MessageSucceededEvent] (val x: Self) extends AnyVal {
+  extension [Self <: MessageSucceededEvent](x: Self) {
     
-    @scala.inline
-    def setOriginator(value: String): Self = StObject.set(x, "originator", value.asInstanceOf[js.Any])
+    inline def setOriginator(value: String): Self = StObject.set(x, "originator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: IncomingResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: IncomingResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+    inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
   }
 }

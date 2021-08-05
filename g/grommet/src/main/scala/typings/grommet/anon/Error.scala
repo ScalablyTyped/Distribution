@@ -27,49 +27,35 @@ trait Error
 }
 object Error {
   
-  @scala.inline
-  def apply(): Error = {
+  inline def apply(): Error = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Error]
   }
   
-  @scala.inline
-  implicit class ErrorMutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
+  extension [Self <: Error](x: Self) {
     
-    @scala.inline
-    def setColor(value: ColorType): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: ColorType): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setError(value: `3`): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: `3`): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setSide(value: BoxSideType): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
+    inline def setSide(value: BoxSideType): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSideUndefined: Self = StObject.set(x, "side", js.undefined)
+    inline def setSideUndefined: Self = StObject.set(x, "side", js.undefined)
     
-    @scala.inline
-    def setSize(value: BoxSizeType): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: BoxSizeType): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setStyle(value: BoxStyleType): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: BoxStyleType): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

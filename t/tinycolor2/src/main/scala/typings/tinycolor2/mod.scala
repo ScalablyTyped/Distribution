@@ -58,17 +58,14 @@ object mod extends Shortcut {
     }
     object Alpha {
       
-      @scala.inline
-      def apply(a: Double): Alpha = {
+      inline def apply(a: Double): Alpha = {
         val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any])
         __obj.asInstanceOf[Alpha]
       }
       
-      @scala.inline
-      implicit class AlphaMutableBuilder[Self <: Alpha] (val x: Self) extends AnyVal {
+      extension [Self <: Alpha](x: Self) {
         
-        @scala.inline
-        def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+        inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       }
     }
     
@@ -84,23 +81,18 @@ object mod extends Shortcut {
     }
     object HSL {
       
-      @scala.inline
-      def apply(h: Double, l: Double, s: Double): HSL = {
+      inline def apply(h: Double, l: Double, s: Double): HSL = {
         val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], l = l.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any])
         __obj.asInstanceOf[HSL]
       }
       
-      @scala.inline
-      implicit class HSLMutableBuilder[Self <: HSL] (val x: Self) extends AnyVal {
+      extension [Self <: HSL](x: Self) {
         
-        @scala.inline
-        def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+        inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setL(value: Double): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
+        inline def setL(value: Double): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setS(value: Double): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+        inline def setS(value: Double): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
       }
     }
     
@@ -112,8 +104,7 @@ object mod extends Shortcut {
          with Alpha
     object HSLA {
       
-      @scala.inline
-      def apply(a: Double, h: Double, l: Double, s: Double): HSLA = {
+      inline def apply(a: Double, h: Double, l: Double, s: Double): HSLA = {
         val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any], l = l.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any])
         __obj.asInstanceOf[HSLA]
       }
@@ -131,23 +122,18 @@ object mod extends Shortcut {
     }
     object HSV {
       
-      @scala.inline
-      def apply(h: Double, s: Double, v: Double): HSV = {
+      inline def apply(h: Double, s: Double, v: Double): HSV = {
         val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
         __obj.asInstanceOf[HSV]
       }
       
-      @scala.inline
-      implicit class HSVMutableBuilder[Self <: HSV] (val x: Self) extends AnyVal {
+      extension [Self <: HSV](x: Self) {
         
-        @scala.inline
-        def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+        inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setS(value: Double): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+        inline def setS(value: Double): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+        inline def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
       }
     }
     
@@ -161,17 +147,14 @@ object mod extends Shortcut {
     }
     object HSVA {
       
-      @scala.inline
-      def apply(a: Double, h: Double, s: Double, v: Double): HSVA = {
+      inline def apply(a: Double, h: Double, s: Double, v: Double): HSVA = {
         val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
         __obj.asInstanceOf[HSVA]
       }
       
-      @scala.inline
-      implicit class HSVAMutableBuilder[Self <: HSVA] (val x: Self) extends AnyVal {
+      extension [Self <: HSVA](x: Self) {
         
-        @scala.inline
-        def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+        inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       }
     }
     
@@ -187,23 +170,18 @@ object mod extends Shortcut {
     }
     object PRGB {
       
-      @scala.inline
-      def apply(b: String, g: String, r: String): PRGB = {
+      inline def apply(b: String, g: String, r: String): PRGB = {
         val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
         __obj.asInstanceOf[PRGB]
       }
       
-      @scala.inline
-      implicit class PRGBMutableBuilder[Self <: PRGB] (val x: Self) extends AnyVal {
+      extension [Self <: PRGB](x: Self) {
         
-        @scala.inline
-        def setB(value: String): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+        inline def setB(value: String): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setG(value: String): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
+        inline def setG(value: String): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setR(value: String): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+        inline def setR(value: String): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
       }
     }
     
@@ -215,8 +193,7 @@ object mod extends Shortcut {
          with Alpha
     object PRGBA {
       
-      @scala.inline
-      def apply(a: Double, b: String, g: String, r: String): PRGBA = {
+      inline def apply(a: Double, b: String, g: String, r: String): PRGBA = {
         val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
         __obj.asInstanceOf[PRGBA]
       }
@@ -234,23 +211,18 @@ object mod extends Shortcut {
     }
     object RGB {
       
-      @scala.inline
-      def apply(b: Double, g: Double, r: Double): RGB = {
+      inline def apply(b: Double, g: Double, r: Double): RGB = {
         val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
         __obj.asInstanceOf[RGB]
       }
       
-      @scala.inline
-      implicit class RGBMutableBuilder[Self <: RGB] (val x: Self) extends AnyVal {
+      extension [Self <: RGB](x: Self) {
         
-        @scala.inline
-        def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+        inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
+        inline def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+        inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
       }
     }
     
@@ -262,8 +234,7 @@ object mod extends Shortcut {
          with Alpha
     object RGBA {
       
-      @scala.inline
-      def apply(a: Double, b: Double, g: Double, r: Double): RGBA = {
+      inline def apply(a: Double, b: Double, g: Double, r: Double): RGBA = {
         val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
         __obj.asInstanceOf[RGBA]
       }
@@ -388,26 +359,20 @@ object mod extends Shortcut {
   }
   object ConstructorOptions {
     
-    @scala.inline
-    def apply(): ConstructorOptions = {
+    inline def apply(): ConstructorOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConstructorOptions]
     }
     
-    @scala.inline
-    implicit class ConstructorOptionsMutableBuilder[Self <: ConstructorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConstructorOptions](x: Self) {
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setGradientType(value: Boolean): Self = StObject.set(x, "gradientType", value.asInstanceOf[js.Any])
+      inline def setGradientType(value: Boolean): Self = StObject.set(x, "gradientType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGradientTypeUndefined: Self = StObject.set(x, "gradientType", js.undefined)
+      inline def setGradientTypeUndefined: Self = StObject.set(x, "gradientType", js.undefined)
     }
   }
   
@@ -669,20 +634,16 @@ object mod extends Shortcut {
   }
   object MostReadableArgs {
     
-    @scala.inline
-    def apply(): MostReadableArgs = {
+    inline def apply(): MostReadableArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MostReadableArgs]
     }
     
-    @scala.inline
-    implicit class MostReadableArgsMutableBuilder[Self <: MostReadableArgs] (val x: Self) extends AnyVal {
+    extension [Self <: MostReadableArgs](x: Self) {
       
-      @scala.inline
-      def setIncludeFallbackColors(value: Boolean): Self = StObject.set(x, "includeFallbackColors", value.asInstanceOf[js.Any])
+      inline def setIncludeFallbackColors(value: Boolean): Self = StObject.set(x, "includeFallbackColors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeFallbackColorsUndefined: Self = StObject.set(x, "includeFallbackColors", js.undefined)
+      inline def setIncludeFallbackColorsUndefined: Self = StObject.set(x, "includeFallbackColors", js.undefined)
     }
   }
   
@@ -694,26 +655,20 @@ object mod extends Shortcut {
   }
   object WCAG2Options {
     
-    @scala.inline
-    def apply(): WCAG2Options = {
+    inline def apply(): WCAG2Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WCAG2Options]
     }
     
-    @scala.inline
-    implicit class WCAG2OptionsMutableBuilder[Self <: WCAG2Options] (val x: Self) extends AnyVal {
+    extension [Self <: WCAG2Options](x: Self) {
       
-      @scala.inline
-      def setLevel(value: AA | AAA): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: AA | AAA): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      @scala.inline
-      def setSize(value: large | small): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: large | small): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -724,50 +679,42 @@ object mod extends Shortcut {
        with _ColorInput
   object _ColorInputWithoutInstance {
     
-    @scala.inline
-    def HSL(h: Double, l: Double, s: Double): typings.tinycolor2.mod.ColorFormats.HSL = {
+    inline def HSL(h: Double, l: Double, s: Double): typings.tinycolor2.mod.ColorFormats.HSL = {
       val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], l = l.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.tinycolor2.mod.ColorFormats.HSL]
     }
     
-    @scala.inline
-    def HSLA(a: Double, h: Double, l: Double, s: Double): typings.tinycolor2.mod.ColorFormats.HSLA = {
+    inline def HSLA(a: Double, h: Double, l: Double, s: Double): typings.tinycolor2.mod.ColorFormats.HSLA = {
       val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any], l = l.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.tinycolor2.mod.ColorFormats.HSLA]
     }
     
-    @scala.inline
-    def HSV(h: Double, s: Double, v: Double): typings.tinycolor2.mod.ColorFormats.HSV = {
+    inline def HSV(h: Double, s: Double, v: Double): typings.tinycolor2.mod.ColorFormats.HSV = {
       val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.tinycolor2.mod.ColorFormats.HSV]
     }
     
-    @scala.inline
-    def HSVA(a: Double, h: Double, s: Double, v: Double): typings.tinycolor2.mod.ColorFormats.HSVA = {
+    inline def HSVA(a: Double, h: Double, s: Double, v: Double): typings.tinycolor2.mod.ColorFormats.HSVA = {
       val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.tinycolor2.mod.ColorFormats.HSVA]
     }
     
-    @scala.inline
-    def PRGB(b: String, g: String, r: String): typings.tinycolor2.mod.ColorFormats.PRGB = {
+    inline def PRGB(b: String, g: String, r: String): typings.tinycolor2.mod.ColorFormats.PRGB = {
       val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.tinycolor2.mod.ColorFormats.PRGB]
     }
     
-    @scala.inline
-    def PRGBA(a: Double, b: String, g: String, r: String): typings.tinycolor2.mod.ColorFormats.PRGBA = {
+    inline def PRGBA(a: Double, b: String, g: String, r: String): typings.tinycolor2.mod.ColorFormats.PRGBA = {
       val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.tinycolor2.mod.ColorFormats.PRGBA]
     }
     
-    @scala.inline
-    def RGB(b: Double, g: Double, r: Double): typings.tinycolor2.mod.ColorFormats.RGB = {
+    inline def RGB(b: Double, g: Double, r: Double): typings.tinycolor2.mod.ColorFormats.RGB = {
       val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.tinycolor2.mod.ColorFormats.RGB]
     }
     
-    @scala.inline
-    def RGBA(a: Double, b: Double, g: Double, r: Double): typings.tinycolor2.mod.ColorFormats.RGBA = {
+    inline def RGBA(a: Double, b: Double, g: Double, r: Double): typings.tinycolor2.mod.ColorFormats.RGBA = {
       val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.tinycolor2.mod.ColorFormats.RGBA]
     }

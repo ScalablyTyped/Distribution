@@ -13,12 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CredentialMediationRequirement extends StObject
 object CredentialMediationRequirement {
   
-  @scala.inline
-  def optional: typings.std.stdStrings.optional = "optional".asInstanceOf[typings.std.stdStrings.optional]
+  inline def optional: typings.std.stdStrings.optional = "optional".asInstanceOf[typings.std.stdStrings.optional]
   
-  @scala.inline
-  def required: required_ = "required".asInstanceOf[required_]
+  inline def required: required_ = "required".asInstanceOf[required_]
   
-  @scala.inline
-  def silent: typings.std.stdStrings.silent = "silent".asInstanceOf[typings.std.stdStrings.silent]
+  inline def silent: typings.std.stdStrings.silent = "silent".asInstanceOf[typings.std.stdStrings.silent]
 }

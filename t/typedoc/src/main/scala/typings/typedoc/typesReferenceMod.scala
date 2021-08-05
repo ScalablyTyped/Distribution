@@ -18,7 +18,7 @@ object typesReferenceMod {
     def this(owner: js.Symbol) = this()
     def this(owner: Converter) = this()
     
-    var convertLiteral: js.Any = js.native
+    /* private */ var convertLiteral: js.Any = js.native
     
     def convertType(context: Context, `type`: TypeReference): js.UndefOr[Type] = js.native
     

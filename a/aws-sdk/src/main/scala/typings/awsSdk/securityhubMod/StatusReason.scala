@@ -18,22 +18,17 @@ trait StatusReason extends StObject {
 }
 object StatusReason {
   
-  @scala.inline
-  def apply(ReasonCode: NonEmptyString): StatusReason = {
+  inline def apply(ReasonCode: NonEmptyString): StatusReason = {
     val __obj = js.Dynamic.literal(ReasonCode = ReasonCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatusReason]
   }
   
-  @scala.inline
-  implicit class StatusReasonMutableBuilder[Self <: StatusReason] (val x: Self) extends AnyVal {
+  extension [Self <: StatusReason](x: Self) {
     
-    @scala.inline
-    def setDescription(value: NonEmptyString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: NonEmptyString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setReasonCode(value: NonEmptyString): Self = StObject.set(x, "ReasonCode", value.asInstanceOf[js.Any])
+    inline def setReasonCode(value: NonEmptyString): Self = StObject.set(x, "ReasonCode", value.asInstanceOf[js.Any])
   }
 }

@@ -35,49 +35,35 @@ trait ListReviewPolicyResultsForHITResponse extends StObject {
 }
 object ListReviewPolicyResultsForHITResponse {
   
-  @scala.inline
-  def apply(): ListReviewPolicyResultsForHITResponse = {
+  inline def apply(): ListReviewPolicyResultsForHITResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListReviewPolicyResultsForHITResponse]
   }
   
-  @scala.inline
-  implicit class ListReviewPolicyResultsForHITResponseMutableBuilder[Self <: ListReviewPolicyResultsForHITResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListReviewPolicyResultsForHITResponse](x: Self) {
     
-    @scala.inline
-    def setAssignmentReviewPolicy(value: ReviewPolicy): Self = StObject.set(x, "AssignmentReviewPolicy", value.asInstanceOf[js.Any])
+    inline def setAssignmentReviewPolicy(value: ReviewPolicy): Self = StObject.set(x, "AssignmentReviewPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignmentReviewPolicyUndefined: Self = StObject.set(x, "AssignmentReviewPolicy", js.undefined)
+    inline def setAssignmentReviewPolicyUndefined: Self = StObject.set(x, "AssignmentReviewPolicy", js.undefined)
     
-    @scala.inline
-    def setAssignmentReviewReport(value: ReviewReport): Self = StObject.set(x, "AssignmentReviewReport", value.asInstanceOf[js.Any])
+    inline def setAssignmentReviewReport(value: ReviewReport): Self = StObject.set(x, "AssignmentReviewReport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignmentReviewReportUndefined: Self = StObject.set(x, "AssignmentReviewReport", js.undefined)
+    inline def setAssignmentReviewReportUndefined: Self = StObject.set(x, "AssignmentReviewReport", js.undefined)
     
-    @scala.inline
-    def setHITId(value: EntityId): Self = StObject.set(x, "HITId", value.asInstanceOf[js.Any])
+    inline def setHITId(value: EntityId): Self = StObject.set(x, "HITId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHITIdUndefined: Self = StObject.set(x, "HITId", js.undefined)
+    inline def setHITIdUndefined: Self = StObject.set(x, "HITId", js.undefined)
     
-    @scala.inline
-    def setHITReviewPolicy(value: ReviewPolicy): Self = StObject.set(x, "HITReviewPolicy", value.asInstanceOf[js.Any])
+    inline def setHITReviewPolicy(value: ReviewPolicy): Self = StObject.set(x, "HITReviewPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHITReviewPolicyUndefined: Self = StObject.set(x, "HITReviewPolicy", js.undefined)
+    inline def setHITReviewPolicyUndefined: Self = StObject.set(x, "HITReviewPolicy", js.undefined)
     
-    @scala.inline
-    def setHITReviewReport(value: ReviewReport): Self = StObject.set(x, "HITReviewReport", value.asInstanceOf[js.Any])
+    inline def setHITReviewReport(value: ReviewReport): Self = StObject.set(x, "HITReviewReport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHITReviewReportUndefined: Self = StObject.set(x, "HITReviewReport", js.undefined)
+    inline def setHITReviewReportUndefined: Self = StObject.set(x, "HITReviewReport", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

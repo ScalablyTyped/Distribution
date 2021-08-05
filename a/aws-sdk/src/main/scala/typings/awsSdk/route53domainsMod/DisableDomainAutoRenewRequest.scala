@@ -13,16 +13,13 @@ trait DisableDomainAutoRenewRequest extends StObject {
 }
 object DisableDomainAutoRenewRequest {
   
-  @scala.inline
-  def apply(DomainName: DomainName): DisableDomainAutoRenewRequest = {
+  inline def apply(DomainName: DomainName): DisableDomainAutoRenewRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisableDomainAutoRenewRequest]
   }
   
-  @scala.inline
-  implicit class DisableDomainAutoRenewRequestMutableBuilder[Self <: DisableDomainAutoRenewRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisableDomainAutoRenewRequest](x: Self) {
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
   }
 }

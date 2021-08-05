@@ -18,49 +18,35 @@ trait Id extends StObject {
 }
 object Id {
   
-  @scala.inline
-  def apply(): Id = {
+  inline def apply(): Id = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Id]
   }
   
-  @scala.inline
-  implicit class IdMutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
+  extension [Self <: Id](x: Self) {
     
-    @scala.inline
-    def setId(value: js.Array[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: js.Array[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setIdVarargs(value: String*): Self = StObject.set(x, "id", js.Array(value :_*))
+    inline def setIdVarargs(value: String*): Self = StObject.set(x, "id", js.Array(value :_*))
     
-    @scala.inline
-    def setLabel(value: js.Array[String]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: js.Array[String]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setLabelVarargs(value: String*): Self = StObject.set(x, "label", js.Array(value :_*))
+    inline def setLabelVarargs(value: String*): Self = StObject.set(x, "label", js.Array(value :_*))
     
-    @scala.inline
-    def setMode(value: js.Array[replicated | global]): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: js.Array[replicated | global]): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setModeVarargs(value: (replicated | global)*): Self = StObject.set(x, "mode", js.Array(value :_*))
+    inline def setModeVarargs(value: (replicated | global)*): Self = StObject.set(x, "mode", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: js.Array[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: js.Array[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNameVarargs(value: String*): Self = StObject.set(x, "name", js.Array(value :_*))
+    inline def setNameVarargs(value: String*): Self = StObject.set(x, "name", js.Array(value :_*))
   }
 }

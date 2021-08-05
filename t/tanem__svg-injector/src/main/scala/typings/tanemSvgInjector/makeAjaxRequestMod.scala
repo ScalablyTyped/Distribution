@@ -12,8 +12,7 @@ object makeAjaxRequestMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     url: String,
     callback: js.Function2[/* error */ Error | Null, /* httpRequest */ XMLHttpRequest, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]

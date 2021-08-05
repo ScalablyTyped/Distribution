@@ -16,25 +16,19 @@ trait MinWidthProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends
 }
 object MinWidthProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): MinWidthProps[ThemeType, TVal] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): MinWidthProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MinWidthProps[ThemeType, TVal]]
   }
   
-  @scala.inline
-  implicit class MinWidthPropsMutableBuilder[Self <: MinWidthProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (MinWidthProps[ThemeType, TVal])) extends AnyVal {
+  extension [Self <: MinWidthProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (MinWidthProps[ThemeType, TVal])) {
     
-    @scala.inline
-    def setMinWidth(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+    inline def setMinWidth(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinWidthNull: Self = StObject.set(x, "minWidth", null)
+    inline def setMinWidthNull: Self = StObject.set(x, "minWidth", null)
     
-    @scala.inline
-    def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+    inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
-    @scala.inline
-    def setMinWidthVarargs(value: (TVal | Null)*): Self = StObject.set(x, "minWidth", js.Array(value :_*))
+    inline def setMinWidthVarargs(value: (TVal | Null)*): Self = StObject.set(x, "minWidth", js.Array(value :_*))
   }
 }

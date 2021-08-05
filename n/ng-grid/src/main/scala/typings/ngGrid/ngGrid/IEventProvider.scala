@@ -30,8 +30,7 @@ trait IEventProvider extends StObject {
 }
 object IEventProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     assignEvents: () => Unit,
     assignGridEventHandlers: () => Unit,
     colToMove: IColumn,
@@ -48,40 +47,28 @@ object IEventProvider {
     __obj.asInstanceOf[IEventProvider]
   }
   
-  @scala.inline
-  implicit class IEventProviderMutableBuilder[Self <: IEventProvider] (val x: Self) extends AnyVal {
+  extension [Self <: IEventProvider](x: Self) {
     
-    @scala.inline
-    def setAssignEvents(value: () => Unit): Self = StObject.set(x, "assignEvents", js.Any.fromFunction0(value))
+    inline def setAssignEvents(value: () => Unit): Self = StObject.set(x, "assignEvents", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAssignGridEventHandlers(value: () => Unit): Self = StObject.set(x, "assignGridEventHandlers", js.Any.fromFunction0(value))
+    inline def setAssignGridEventHandlers(value: () => Unit): Self = StObject.set(x, "assignGridEventHandlers", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setColToMove(value: IColumn): Self = StObject.set(x, "colToMove", value.asInstanceOf[js.Any])
+    inline def setColToMove(value: IColumn): Self = StObject.set(x, "colToMove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragOver(value: js.Any => Unit): Self = StObject.set(x, "dragOver", js.Any.fromFunction1(value))
+    inline def setDragOver(value: js.Any => Unit): Self = StObject.set(x, "dragOver", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDragStart(value: js.Any => Unit): Self = StObject.set(x, "dragStart", js.Any.fromFunction1(value))
+    inline def setDragStart(value: js.Any => Unit): Self = StObject.set(x, "dragStart", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGroupToMove(value: js.Any): Self = StObject.set(x, "groupToMove", value.asInstanceOf[js.Any])
+    inline def setGroupToMove(value: js.Any): Self = StObject.set(x, "groupToMove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnGroupDrop(value: js.Any => Unit): Self = StObject.set(x, "onGroupDrop", js.Any.fromFunction1(value))
+    inline def setOnGroupDrop(value: js.Any => Unit): Self = StObject.set(x, "onGroupDrop", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnGroupMouseDown(value: js.Any => Unit): Self = StObject.set(x, "onGroupMouseDown", js.Any.fromFunction1(value))
+    inline def setOnGroupMouseDown(value: js.Any => Unit): Self = StObject.set(x, "onGroupMouseDown", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnHeaderDrop(value: js.Any => Unit): Self = StObject.set(x, "onHeaderDrop", js.Any.fromFunction1(value))
+    inline def setOnHeaderDrop(value: js.Any => Unit): Self = StObject.set(x, "onHeaderDrop", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnHeaderMouseDown(value: js.Any => Unit): Self = StObject.set(x, "onHeaderMouseDown", js.Any.fromFunction1(value))
+    inline def setOnHeaderMouseDown(value: js.Any => Unit): Self = StObject.set(x, "onHeaderMouseDown", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDraggables(value: () => Unit): Self = StObject.set(x, "setDraggables", js.Any.fromFunction0(value))
+    inline def setSetDraggables(value: () => Unit): Self = StObject.set(x, "setDraggables", js.Any.fromFunction0(value))
   }
 }

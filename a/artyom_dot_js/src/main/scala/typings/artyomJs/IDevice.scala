@@ -12,25 +12,19 @@ trait IDevice extends StObject {
 }
 object IDevice {
   
-  @scala.inline
-  def apply(): IDevice = {
+  inline def apply(): IDevice = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDevice]
   }
   
-  @scala.inline
-  implicit class IDeviceMutableBuilder[Self <: IDevice] (val x: Self) extends AnyVal {
+  extension [Self <: IDevice](x: Self) {
     
-    @scala.inline
-    def setIsChrome(value: Boolean): Self = StObject.set(x, "isChrome", value.asInstanceOf[js.Any])
+    inline def setIsChrome(value: Boolean): Self = StObject.set(x, "isChrome", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsChromeUndefined: Self = StObject.set(x, "isChrome", js.undefined)
+    inline def setIsChromeUndefined: Self = StObject.set(x, "isChrome", js.undefined)
     
-    @scala.inline
-    def setIsMobile(value: Boolean): Self = StObject.set(x, "isMobile", value.asInstanceOf[js.Any])
+    inline def setIsMobile(value: Boolean): Self = StObject.set(x, "isMobile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMobileUndefined: Self = StObject.set(x, "isMobile", js.undefined)
+    inline def setIsMobileUndefined: Self = StObject.set(x, "isMobile", js.undefined)
   }
 }

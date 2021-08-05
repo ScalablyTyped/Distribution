@@ -13,19 +13,15 @@ trait ItemsResourceCandidate extends StObject {
 }
 object ItemsResourceCandidate {
   
-  @scala.inline
-  def apply(items: ResourceCandidate, returnValue: Double): ItemsResourceCandidate = {
+  inline def apply(items: ResourceCandidate, returnValue: Double): ItemsResourceCandidate = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemsResourceCandidate]
   }
   
-  @scala.inline
-  implicit class ItemsResourceCandidateMutableBuilder[Self <: ItemsResourceCandidate] (val x: Self) extends AnyVal {
+  extension [Self <: ItemsResourceCandidate](x: Self) {
     
-    @scala.inline
-    def setItems(value: ResourceCandidate): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: ResourceCandidate): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

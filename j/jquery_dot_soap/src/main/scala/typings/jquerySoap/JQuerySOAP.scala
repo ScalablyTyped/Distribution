@@ -58,152 +58,104 @@ object JQuerySOAP {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAppendMethodToURL(value: Boolean): Self = StObject.set(x, "appendMethodToURL", value.asInstanceOf[js.Any])
+      inline def setAppendMethodToURL(value: Boolean): Self = StObject.set(x, "appendMethodToURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppendMethodToURLUndefined: Self = StObject.set(x, "appendMethodToURL", js.undefined)
+      inline def setAppendMethodToURLUndefined: Self = StObject.set(x, "appendMethodToURL", js.undefined)
       
-      @scala.inline
-      def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
-      @scala.inline
-      def setBeforeSend(value: /* SOAPEnvelope */ SOAPEnvelope => Unit): Self = StObject.set(x, "beforeSend", js.Any.fromFunction1(value))
+      inline def setBeforeSend(value: /* SOAPEnvelope */ SOAPEnvelope => Unit): Self = StObject.set(x, "beforeSend", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBeforeSendUndefined: Self = StObject.set(x, "beforeSend", js.undefined)
+      inline def setBeforeSendUndefined: Self = StObject.set(x, "beforeSend", js.undefined)
       
-      @scala.inline
-      def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setElementName(value: String): Self = StObject.set(x, "elementName", value.asInstanceOf[js.Any])
+      inline def setElementName(value: String): Self = StObject.set(x, "elementName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementNameUndefined: Self = StObject.set(x, "elementName", js.undefined)
+      inline def setElementNameUndefined: Self = StObject.set(x, "elementName", js.undefined)
       
-      @scala.inline
-      def setEnableLogging(value: Boolean): Self = StObject.set(x, "enableLogging", value.asInstanceOf[js.Any])
+      inline def setEnableLogging(value: Boolean): Self = StObject.set(x, "enableLogging", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableLoggingUndefined: Self = StObject.set(x, "enableLogging", js.undefined)
+      inline def setEnableLoggingUndefined: Self = StObject.set(x, "enableLogging", js.undefined)
       
-      @scala.inline
-      def setEnvAttributes(value: js.Any): Self = StObject.set(x, "envAttributes", value.asInstanceOf[js.Any])
+      inline def setEnvAttributes(value: js.Any): Self = StObject.set(x, "envAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvAttributesUndefined: Self = StObject.set(x, "envAttributes", js.undefined)
+      inline def setEnvAttributesUndefined: Self = StObject.set(x, "envAttributes", js.undefined)
       
-      @scala.inline
-      def setError(value: /* SOAPResponse */ SOAPResponse => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* SOAPResponse */ SOAPResponse => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setHTTPHeaders(value: js.Object): Self = StObject.set(x, "HTTPHeaders", value.asInstanceOf[js.Any])
+      inline def setHTTPHeaders(value: js.Object): Self = StObject.set(x, "HTTPHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHTTPHeadersUndefined: Self = StObject.set(x, "HTTPHeaders", js.undefined)
+      inline def setHTTPHeadersUndefined: Self = StObject.set(x, "HTTPHeaders", js.undefined)
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setNamespaceQualifier(value: String): Self = StObject.set(x, "namespaceQualifier", value.asInstanceOf[js.Any])
+      inline def setNamespaceQualifier(value: String): Self = StObject.set(x, "namespaceQualifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceQualifierUndefined: Self = StObject.set(x, "namespaceQualifier", js.undefined)
+      inline def setNamespaceQualifierUndefined: Self = StObject.set(x, "namespaceQualifier", js.undefined)
       
-      @scala.inline
-      def setNamespaceURL(value: String): Self = StObject.set(x, "namespaceURL", value.asInstanceOf[js.Any])
+      inline def setNamespaceURL(value: String): Self = StObject.set(x, "namespaceURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceURLUndefined: Self = StObject.set(x, "namespaceURL", js.undefined)
+      inline def setNamespaceURLUndefined: Self = StObject.set(x, "namespaceURL", js.undefined)
       
-      @scala.inline
-      def setNoPrefix(value: Boolean): Self = StObject.set(x, "noPrefix", value.asInstanceOf[js.Any])
+      inline def setNoPrefix(value: Boolean): Self = StObject.set(x, "noPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoPrefixUndefined: Self = StObject.set(x, "noPrefix", js.undefined)
+      inline def setNoPrefixUndefined: Self = StObject.set(x, "noPrefix", js.undefined)
       
-      @scala.inline
-      def setRequest(value: /* SOAPEnvelope */ SOAPEnvelope => Unit): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
+      inline def setRequest(value: /* SOAPEnvelope */ SOAPEnvelope => Unit): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+      inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
       
-      @scala.inline
-      def setSOAPAction(value: String): Self = StObject.set(x, "SOAPAction", value.asInstanceOf[js.Any])
+      inline def setSOAPAction(value: String): Self = StObject.set(x, "SOAPAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSOAPActionUndefined: Self = StObject.set(x, "SOAPAction", js.undefined)
+      inline def setSOAPActionUndefined: Self = StObject.set(x, "SOAPAction", js.undefined)
       
-      @scala.inline
-      def setSOAPHeader(value: js.Object): Self = StObject.set(x, "SOAPHeader", value.asInstanceOf[js.Any])
+      inline def setSOAPHeader(value: js.Object): Self = StObject.set(x, "SOAPHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSOAPHeaderUndefined: Self = StObject.set(x, "SOAPHeader", js.undefined)
+      inline def setSOAPHeaderUndefined: Self = StObject.set(x, "SOAPHeader", js.undefined)
       
-      @scala.inline
-      def setSoap12(value: Boolean): Self = StObject.set(x, "soap12", value.asInstanceOf[js.Any])
+      inline def setSoap12(value: Boolean): Self = StObject.set(x, "soap12", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSoap12Undefined: Self = StObject.set(x, "soap12", js.undefined)
+      inline def setSoap12Undefined: Self = StObject.set(x, "soap12", js.undefined)
       
-      @scala.inline
-      def setStatusCode(value: js.Object): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: js.Object): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+      inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
       
-      @scala.inline
-      def setSuccess(value: /* SOAPResponse */ SOAPResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+      inline def setSuccess(value: /* SOAPResponse */ SOAPResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+      inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
-      @scala.inline
-      def setWss(value: js.Object): Self = StObject.set(x, "wss", value.asInstanceOf[js.Any])
+      inline def setWss(value: js.Object): Self = StObject.set(x, "wss", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWssUndefined: Self = StObject.set(x, "wss", js.undefined)
+      inline def setWssUndefined: Self = StObject.set(x, "wss", js.undefined)
     }
   }
   
@@ -285,20 +237,16 @@ object JQuerySOAP {
   }
   object SOAPResponse {
     
-    @scala.inline
-    def apply(toJSON: () => js.Any, toXML: () => XMLDocument): SOAPResponse = {
+    inline def apply(toJSON: () => js.Any, toXML: () => XMLDocument): SOAPResponse = {
       val __obj = js.Dynamic.literal(toJSON = js.Any.fromFunction0(toJSON), toXML = js.Any.fromFunction0(toXML))
       __obj.asInstanceOf[SOAPResponse]
     }
     
-    @scala.inline
-    implicit class SOAPResponseMutableBuilder[Self <: SOAPResponse] (val x: Self) extends AnyVal {
+    extension [Self <: SOAPResponse](x: Self) {
       
-      @scala.inline
-      def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToXML(value: () => XMLDocument): Self = StObject.set(x, "toXML", js.Any.fromFunction0(value))
+      inline def setToXML(value: () => XMLDocument): Self = StObject.set(x, "toXML", js.Any.fromFunction0(value))
     }
   }
 }

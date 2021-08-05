@@ -23,28 +23,21 @@ trait ListAWSDefaultServiceQuotasRequest extends StObject {
 }
 object ListAWSDefaultServiceQuotasRequest {
   
-  @scala.inline
-  def apply(ServiceCode: ServiceCode): ListAWSDefaultServiceQuotasRequest = {
+  inline def apply(ServiceCode: ServiceCode): ListAWSDefaultServiceQuotasRequest = {
     val __obj = js.Dynamic.literal(ServiceCode = ServiceCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAWSDefaultServiceQuotasRequest]
   }
   
-  @scala.inline
-  implicit class ListAWSDefaultServiceQuotasRequestMutableBuilder[Self <: ListAWSDefaultServiceQuotasRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListAWSDefaultServiceQuotasRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setServiceCode(value: ServiceCode): Self = StObject.set(x, "ServiceCode", value.asInstanceOf[js.Any])
+    inline def setServiceCode(value: ServiceCode): Self = StObject.set(x, "ServiceCode", value.asInstanceOf[js.Any])
   }
 }

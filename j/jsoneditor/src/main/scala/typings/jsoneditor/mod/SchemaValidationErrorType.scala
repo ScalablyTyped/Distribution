@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaValidationErrorType extends StObject
 object SchemaValidationErrorType {
   
-  @scala.inline
-  def customValidation: typings.jsoneditor.jsoneditorStrings.customValidation = "customValidation".asInstanceOf[typings.jsoneditor.jsoneditorStrings.customValidation]
+  inline def customValidation: typings.jsoneditor.jsoneditorStrings.customValidation = "customValidation".asInstanceOf[typings.jsoneditor.jsoneditorStrings.customValidation]
   
-  @scala.inline
-  def validation: typings.jsoneditor.jsoneditorStrings.validation = "validation".asInstanceOf[typings.jsoneditor.jsoneditorStrings.validation]
+  inline def validation: typings.jsoneditor.jsoneditorStrings.validation = "validation".asInstanceOf[typings.jsoneditor.jsoneditorStrings.validation]
 }

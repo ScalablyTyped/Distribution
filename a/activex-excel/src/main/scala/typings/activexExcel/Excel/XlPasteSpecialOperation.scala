@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlPasteSpecialOperation extends StObject
 object XlPasteSpecialOperation {
   
-  @scala.inline
-  def xlPasteSpecialOperationAdd: `2` = 2.asInstanceOf[`2`]
+  inline def xlPasteSpecialOperationAdd: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlPasteSpecialOperationDivide: `5` = 5.asInstanceOf[`5`]
+  inline def xlPasteSpecialOperationDivide: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def xlPasteSpecialOperationMultiply: `4` = 4.asInstanceOf[`4`]
+  inline def xlPasteSpecialOperationMultiply: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def xlPasteSpecialOperationNone: `-4142` = -4142.asInstanceOf[`-4142`]
+  inline def xlPasteSpecialOperationNone: `-4142` = -4142.asInstanceOf[`-4142`]
   
-  @scala.inline
-  def xlPasteSpecialOperationSubtract: `3` = 3.asInstanceOf[`3`]
+  inline def xlPasteSpecialOperationSubtract: `3` = 3.asInstanceOf[`3`]
 }

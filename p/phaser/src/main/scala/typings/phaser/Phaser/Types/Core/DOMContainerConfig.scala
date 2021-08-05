@@ -18,25 +18,19 @@ trait DOMContainerConfig extends StObject {
 }
 object DOMContainerConfig {
   
-  @scala.inline
-  def apply(): DOMContainerConfig = {
+  inline def apply(): DOMContainerConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DOMContainerConfig]
   }
   
-  @scala.inline
-  implicit class DOMContainerConfigMutableBuilder[Self <: DOMContainerConfig] (val x: Self) extends AnyVal {
+  extension [Self <: DOMContainerConfig](x: Self) {
     
-    @scala.inline
-    def setBehindCanvas(value: Boolean): Self = StObject.set(x, "behindCanvas", value.asInstanceOf[js.Any])
+    inline def setBehindCanvas(value: Boolean): Self = StObject.set(x, "behindCanvas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBehindCanvasUndefined: Self = StObject.set(x, "behindCanvas", js.undefined)
+    inline def setBehindCanvasUndefined: Self = StObject.set(x, "behindCanvas", js.undefined)
     
-    @scala.inline
-    def setCreateContainer(value: Boolean): Self = StObject.set(x, "createContainer", value.asInstanceOf[js.Any])
+    inline def setCreateContainer(value: Boolean): Self = StObject.set(x, "createContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateContainerUndefined: Self = StObject.set(x, "createContainer", js.undefined)
+    inline def setCreateContainerUndefined: Self = StObject.set(x, "createContainer", js.undefined)
   }
 }

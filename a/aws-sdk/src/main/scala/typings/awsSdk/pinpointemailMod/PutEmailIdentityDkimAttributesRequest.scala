@@ -18,22 +18,17 @@ trait PutEmailIdentityDkimAttributesRequest extends StObject {
 }
 object PutEmailIdentityDkimAttributesRequest {
   
-  @scala.inline
-  def apply(EmailIdentity: Identity): PutEmailIdentityDkimAttributesRequest = {
+  inline def apply(EmailIdentity: Identity): PutEmailIdentityDkimAttributesRequest = {
     val __obj = js.Dynamic.literal(EmailIdentity = EmailIdentity.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutEmailIdentityDkimAttributesRequest]
   }
   
-  @scala.inline
-  implicit class PutEmailIdentityDkimAttributesRequestMutableBuilder[Self <: PutEmailIdentityDkimAttributesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutEmailIdentityDkimAttributesRequest](x: Self) {
     
-    @scala.inline
-    def setEmailIdentity(value: Identity): Self = StObject.set(x, "EmailIdentity", value.asInstanceOf[js.Any])
+    inline def setEmailIdentity(value: Identity): Self = StObject.set(x, "EmailIdentity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigningEnabled(value: Enabled): Self = StObject.set(x, "SigningEnabled", value.asInstanceOf[js.Any])
+    inline def setSigningEnabled(value: Enabled): Self = StObject.set(x, "SigningEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigningEnabledUndefined: Self = StObject.set(x, "SigningEnabled", js.undefined)
+    inline def setSigningEnabledUndefined: Self = StObject.set(x, "SigningEnabled", js.undefined)
   }
 }

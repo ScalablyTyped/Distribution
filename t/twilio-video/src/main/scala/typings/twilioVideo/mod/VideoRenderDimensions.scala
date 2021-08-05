@@ -15,31 +15,23 @@ trait VideoRenderDimensions extends StObject {
 }
 object VideoRenderDimensions {
   
-  @scala.inline
-  def apply(): VideoRenderDimensions = {
+  inline def apply(): VideoRenderDimensions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VideoRenderDimensions]
   }
   
-  @scala.inline
-  implicit class VideoRenderDimensionsMutableBuilder[Self <: VideoRenderDimensions] (val x: Self) extends AnyVal {
+  extension [Self <: VideoRenderDimensions](x: Self) {
     
-    @scala.inline
-    def setHigh(value: Dimensions): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
+    inline def setHigh(value: Dimensions): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighUndefined: Self = StObject.set(x, "high", js.undefined)
+    inline def setHighUndefined: Self = StObject.set(x, "high", js.undefined)
     
-    @scala.inline
-    def setLow(value: Dimensions): Self = StObject.set(x, "low", value.asInstanceOf[js.Any])
+    inline def setLow(value: Dimensions): Self = StObject.set(x, "low", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowUndefined: Self = StObject.set(x, "low", js.undefined)
+    inline def setLowUndefined: Self = StObject.set(x, "low", js.undefined)
     
-    @scala.inline
-    def setStandard(value: Dimensions): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
+    inline def setStandard(value: Dimensions): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardUndefined: Self = StObject.set(x, "standard", js.undefined)
+    inline def setStandardUndefined: Self = StObject.set(x, "standard", js.undefined)
   }
 }

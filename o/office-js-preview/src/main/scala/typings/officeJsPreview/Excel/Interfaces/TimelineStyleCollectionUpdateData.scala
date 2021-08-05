@@ -11,22 +11,17 @@ trait TimelineStyleCollectionUpdateData extends StObject {
 }
 object TimelineStyleCollectionUpdateData {
   
-  @scala.inline
-  def apply(): TimelineStyleCollectionUpdateData = {
+  inline def apply(): TimelineStyleCollectionUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimelineStyleCollectionUpdateData]
   }
   
-  @scala.inline
-  implicit class TimelineStyleCollectionUpdateDataMutableBuilder[Self <: TimelineStyleCollectionUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: TimelineStyleCollectionUpdateData](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[TimelineStyleData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[TimelineStyleData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: TimelineStyleData*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: TimelineStyleData*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

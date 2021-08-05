@@ -97,103 +97,71 @@ trait SchemaInventorySetRequest extends StObject {
 }
 object SchemaInventorySetRequest {
   
-  @scala.inline
-  def apply(): SchemaInventorySetRequest = {
+  inline def apply(): SchemaInventorySetRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInventorySetRequest]
   }
   
-  @scala.inline
-  implicit class SchemaInventorySetRequestMutableBuilder[Self <: SchemaInventorySetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInventorySetRequest](x: Self) {
     
-    @scala.inline
-    def setAvailability(value: String): Self = StObject.set(x, "availability", value.asInstanceOf[js.Any])
+    inline def setAvailability(value: String): Self = StObject.set(x, "availability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityUndefined: Self = StObject.set(x, "availability", js.undefined)
+    inline def setAvailabilityUndefined: Self = StObject.set(x, "availability", js.undefined)
     
-    @scala.inline
-    def setCustomLabel0(value: String): Self = StObject.set(x, "customLabel0", value.asInstanceOf[js.Any])
+    inline def setCustomLabel0(value: String): Self = StObject.set(x, "customLabel0", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomLabel0Undefined: Self = StObject.set(x, "customLabel0", js.undefined)
+    inline def setCustomLabel0Undefined: Self = StObject.set(x, "customLabel0", js.undefined)
     
-    @scala.inline
-    def setCustomLabel1(value: String): Self = StObject.set(x, "customLabel1", value.asInstanceOf[js.Any])
+    inline def setCustomLabel1(value: String): Self = StObject.set(x, "customLabel1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomLabel1Undefined: Self = StObject.set(x, "customLabel1", js.undefined)
+    inline def setCustomLabel1Undefined: Self = StObject.set(x, "customLabel1", js.undefined)
     
-    @scala.inline
-    def setCustomLabel2(value: String): Self = StObject.set(x, "customLabel2", value.asInstanceOf[js.Any])
+    inline def setCustomLabel2(value: String): Self = StObject.set(x, "customLabel2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomLabel2Undefined: Self = StObject.set(x, "customLabel2", js.undefined)
+    inline def setCustomLabel2Undefined: Self = StObject.set(x, "customLabel2", js.undefined)
     
-    @scala.inline
-    def setCustomLabel3(value: String): Self = StObject.set(x, "customLabel3", value.asInstanceOf[js.Any])
+    inline def setCustomLabel3(value: String): Self = StObject.set(x, "customLabel3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomLabel3Undefined: Self = StObject.set(x, "customLabel3", js.undefined)
+    inline def setCustomLabel3Undefined: Self = StObject.set(x, "customLabel3", js.undefined)
     
-    @scala.inline
-    def setCustomLabel4(value: String): Self = StObject.set(x, "customLabel4", value.asInstanceOf[js.Any])
+    inline def setCustomLabel4(value: String): Self = StObject.set(x, "customLabel4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomLabel4Undefined: Self = StObject.set(x, "customLabel4", js.undefined)
+    inline def setCustomLabel4Undefined: Self = StObject.set(x, "customLabel4", js.undefined)
     
-    @scala.inline
-    def setInstallment(value: SchemaInstallment): Self = StObject.set(x, "installment", value.asInstanceOf[js.Any])
+    inline def setInstallment(value: SchemaInstallment): Self = StObject.set(x, "installment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstallmentUndefined: Self = StObject.set(x, "installment", js.undefined)
+    inline def setInstallmentUndefined: Self = StObject.set(x, "installment", js.undefined)
     
-    @scala.inline
-    def setInstoreProductLocation(value: String): Self = StObject.set(x, "instoreProductLocation", value.asInstanceOf[js.Any])
+    inline def setInstoreProductLocation(value: String): Self = StObject.set(x, "instoreProductLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstoreProductLocationUndefined: Self = StObject.set(x, "instoreProductLocation", js.undefined)
+    inline def setInstoreProductLocationUndefined: Self = StObject.set(x, "instoreProductLocation", js.undefined)
     
-    @scala.inline
-    def setLoyaltyPoints(value: SchemaLoyaltyPoints): Self = StObject.set(x, "loyaltyPoints", value.asInstanceOf[js.Any])
+    inline def setLoyaltyPoints(value: SchemaLoyaltyPoints): Self = StObject.set(x, "loyaltyPoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoyaltyPointsUndefined: Self = StObject.set(x, "loyaltyPoints", js.undefined)
+    inline def setLoyaltyPointsUndefined: Self = StObject.set(x, "loyaltyPoints", js.undefined)
     
-    @scala.inline
-    def setPickup(value: SchemaInventoryPickup): Self = StObject.set(x, "pickup", value.asInstanceOf[js.Any])
+    inline def setPickup(value: SchemaInventoryPickup): Self = StObject.set(x, "pickup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickupUndefined: Self = StObject.set(x, "pickup", js.undefined)
+    inline def setPickupUndefined: Self = StObject.set(x, "pickup", js.undefined)
     
-    @scala.inline
-    def setPrice(value: SchemaPrice): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
+    inline def setPrice(value: SchemaPrice): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriceUndefined: Self = StObject.set(x, "price", js.undefined)
+    inline def setPriceUndefined: Self = StObject.set(x, "price", js.undefined)
     
-    @scala.inline
-    def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
+    inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
     
-    @scala.inline
-    def setSalePrice(value: SchemaPrice): Self = StObject.set(x, "salePrice", value.asInstanceOf[js.Any])
+    inline def setSalePrice(value: SchemaPrice): Self = StObject.set(x, "salePrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSalePriceEffectiveDate(value: String): Self = StObject.set(x, "salePriceEffectiveDate", value.asInstanceOf[js.Any])
+    inline def setSalePriceEffectiveDate(value: String): Self = StObject.set(x, "salePriceEffectiveDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSalePriceEffectiveDateUndefined: Self = StObject.set(x, "salePriceEffectiveDate", js.undefined)
+    inline def setSalePriceEffectiveDateUndefined: Self = StObject.set(x, "salePriceEffectiveDate", js.undefined)
     
-    @scala.inline
-    def setSalePriceUndefined: Self = StObject.set(x, "salePrice", js.undefined)
+    inline def setSalePriceUndefined: Self = StObject.set(x, "salePrice", js.undefined)
     
-    @scala.inline
-    def setSellOnGoogleQuantity(value: Double): Self = StObject.set(x, "sellOnGoogleQuantity", value.asInstanceOf[js.Any])
+    inline def setSellOnGoogleQuantity(value: Double): Self = StObject.set(x, "sellOnGoogleQuantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSellOnGoogleQuantityUndefined: Self = StObject.set(x, "sellOnGoogleQuantity", js.undefined)
+    inline def setSellOnGoogleQuantityUndefined: Self = StObject.set(x, "sellOnGoogleQuantity", js.undefined)
   }
 }

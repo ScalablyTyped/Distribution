@@ -15,19 +15,15 @@ trait ProcessMemoryReport extends StObject {
 }
 object ProcessMemoryReport {
   
-  @scala.inline
-  def apply(privateWorkingSetUsage: Double, totalWorkingSetUsage: Double): ProcessMemoryReport = {
+  inline def apply(privateWorkingSetUsage: Double, totalWorkingSetUsage: Double): ProcessMemoryReport = {
     val __obj = js.Dynamic.literal(privateWorkingSetUsage = privateWorkingSetUsage.asInstanceOf[js.Any], totalWorkingSetUsage = totalWorkingSetUsage.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessMemoryReport]
   }
   
-  @scala.inline
-  implicit class ProcessMemoryReportMutableBuilder[Self <: ProcessMemoryReport] (val x: Self) extends AnyVal {
+  extension [Self <: ProcessMemoryReport](x: Self) {
     
-    @scala.inline
-    def setPrivateWorkingSetUsage(value: Double): Self = StObject.set(x, "privateWorkingSetUsage", value.asInstanceOf[js.Any])
+    inline def setPrivateWorkingSetUsage(value: Double): Self = StObject.set(x, "privateWorkingSetUsage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalWorkingSetUsage(value: Double): Self = StObject.set(x, "totalWorkingSetUsage", value.asInstanceOf[js.Any])
+    inline def setTotalWorkingSetUsage(value: Double): Self = StObject.set(x, "totalWorkingSetUsage", value.asInstanceOf[js.Any])
   }
 }

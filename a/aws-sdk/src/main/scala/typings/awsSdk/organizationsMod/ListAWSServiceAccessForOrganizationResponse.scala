@@ -18,28 +18,21 @@ trait ListAWSServiceAccessForOrganizationResponse extends StObject {
 }
 object ListAWSServiceAccessForOrganizationResponse {
   
-  @scala.inline
-  def apply(): ListAWSServiceAccessForOrganizationResponse = {
+  inline def apply(): ListAWSServiceAccessForOrganizationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListAWSServiceAccessForOrganizationResponse]
   }
   
-  @scala.inline
-  implicit class ListAWSServiceAccessForOrganizationResponseMutableBuilder[Self <: ListAWSServiceAccessForOrganizationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListAWSServiceAccessForOrganizationResponse](x: Self) {
     
-    @scala.inline
-    def setEnabledServicePrincipals(value: EnabledServicePrincipals): Self = StObject.set(x, "EnabledServicePrincipals", value.asInstanceOf[js.Any])
+    inline def setEnabledServicePrincipals(value: EnabledServicePrincipals): Self = StObject.set(x, "EnabledServicePrincipals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledServicePrincipalsUndefined: Self = StObject.set(x, "EnabledServicePrincipals", js.undefined)
+    inline def setEnabledServicePrincipalsUndefined: Self = StObject.set(x, "EnabledServicePrincipals", js.undefined)
     
-    @scala.inline
-    def setEnabledServicePrincipalsVarargs(value: EnabledServicePrincipal*): Self = StObject.set(x, "EnabledServicePrincipals", js.Array(value :_*))
+    inline def setEnabledServicePrincipalsVarargs(value: EnabledServicePrincipal*): Self = StObject.set(x, "EnabledServicePrincipals", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

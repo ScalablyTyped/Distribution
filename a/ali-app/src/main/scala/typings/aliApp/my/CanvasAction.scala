@@ -17,16 +17,13 @@ trait CanvasAction extends StObject {
 }
 object CanvasAction {
   
-  @scala.inline
-  def apply(addColorStop: (Double, Color) => Unit): CanvasAction = {
+  inline def apply(addColorStop: (Double, Color) => Unit): CanvasAction = {
     val __obj = js.Dynamic.literal(addColorStop = js.Any.fromFunction2(addColorStop))
     __obj.asInstanceOf[CanvasAction]
   }
   
-  @scala.inline
-  implicit class CanvasActionMutableBuilder[Self <: CanvasAction] (val x: Self) extends AnyVal {
+  extension [Self <: CanvasAction](x: Self) {
     
-    @scala.inline
-    def setAddColorStop(value: (Double, Color) => Unit): Self = StObject.set(x, "addColorStop", js.Any.fromFunction2(value))
+    inline def setAddColorStop(value: (Double, Color) => Unit): Self = StObject.set(x, "addColorStop", js.Any.fromFunction2(value))
   }
 }

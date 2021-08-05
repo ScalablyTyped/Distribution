@@ -24,25 +24,19 @@ trait ListTenantsResult extends StObject {
 }
 object ListTenantsResult {
   
-  @scala.inline
-  def apply(tenants: js.Array[Tenant]): ListTenantsResult = {
+  inline def apply(tenants: js.Array[Tenant]): ListTenantsResult = {
     val __obj = js.Dynamic.literal(tenants = tenants.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTenantsResult]
   }
   
-  @scala.inline
-  implicit class ListTenantsResultMutableBuilder[Self <: ListTenantsResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListTenantsResult](x: Self) {
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setTenants(value: js.Array[Tenant]): Self = StObject.set(x, "tenants", value.asInstanceOf[js.Any])
+    inline def setTenants(value: js.Array[Tenant]): Self = StObject.set(x, "tenants", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTenantsVarargs(value: Tenant*): Self = StObject.set(x, "tenants", js.Array(value :_*))
+    inline def setTenantsVarargs(value: Tenant*): Self = StObject.set(x, "tenants", js.Array(value :_*))
   }
 }

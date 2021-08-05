@@ -11,16 +11,13 @@ trait CastAttrs extends StObject {
 }
 object CastAttrs {
   
-  @scala.inline
-  def apply(dtype: DataType): CastAttrs = {
+  inline def apply(dtype: DataType): CastAttrs = {
     val __obj = js.Dynamic.literal(dtype = dtype.asInstanceOf[js.Any])
     __obj.asInstanceOf[CastAttrs]
   }
   
-  @scala.inline
-  implicit class CastAttrsMutableBuilder[Self <: CastAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: CastAttrs](x: Self) {
     
-    @scala.inline
-    def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+    inline def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
   }
 }

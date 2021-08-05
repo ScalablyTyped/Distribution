@@ -32,32 +32,24 @@ object mod {
   }
   object ChangeObject {
     
-    @scala.inline
-    def apply(): ChangeObject = {
+    inline def apply(): ChangeObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ChangeObject]
     }
     
-    @scala.inline
-    implicit class ChangeObjectMutableBuilder[Self <: ChangeObject] (val x: Self) extends AnyVal {
+    extension [Self <: ChangeObject](x: Self) {
       
-      @scala.inline
-      def setAdded(value: Boolean): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
+      inline def setAdded(value: Boolean): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddedUndefined: Self = StObject.set(x, "added", js.undefined)
+      inline def setAddedUndefined: Self = StObject.set(x, "added", js.undefined)
       
-      @scala.inline
-      def setRemoved(value: Boolean): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
+      inline def setRemoved(value: Boolean): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemovedUndefined: Self = StObject.set(x, "removed", js.undefined)
+      inline def setRemovedUndefined: Self = StObject.set(x, "removed", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -69,17 +61,14 @@ object mod {
   }
   object CustomPreset {
     
-    @scala.inline
-    def apply(preset: Preset): CustomPreset = {
+    inline def apply(preset: Preset): CustomPreset = {
       val __obj = js.Dynamic.literal(preset = preset.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomPreset]
     }
     
-    @scala.inline
-    implicit class CustomPresetMutableBuilder[Self <: CustomPreset] (val x: Self) extends AnyVal {
+    extension [Self <: CustomPreset](x: Self) {
       
-      @scala.inline
-      def setPreset(value: Preset): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
+      inline def setPreset(value: Preset): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
     }
   }
   
@@ -126,56 +115,40 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCompareAttributesAsJSON(value: js.Array[js.Any]): Self = StObject.set(x, "compareAttributesAsJSON", value.asInstanceOf[js.Any])
+      inline def setCompareAttributesAsJSON(value: js.Array[js.Any]): Self = StObject.set(x, "compareAttributesAsJSON", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompareAttributesAsJSONUndefined: Self = StObject.set(x, "compareAttributesAsJSON", js.undefined)
+      inline def setCompareAttributesAsJSONUndefined: Self = StObject.set(x, "compareAttributesAsJSON", js.undefined)
       
-      @scala.inline
-      def setCompareAttributesAsJSONVarargs(value: js.Any*): Self = StObject.set(x, "compareAttributesAsJSON", js.Array(value :_*))
+      inline def setCompareAttributesAsJSONVarargs(value: js.Any*): Self = StObject.set(x, "compareAttributesAsJSON", js.Array(value :_*))
       
-      @scala.inline
-      def setIgnoreAttributes(value: js.Array[String]): Self = StObject.set(x, "ignoreAttributes", value.asInstanceOf[js.Any])
+      inline def setIgnoreAttributes(value: js.Array[String]): Self = StObject.set(x, "ignoreAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreAttributesUndefined: Self = StObject.set(x, "ignoreAttributes", js.undefined)
+      inline def setIgnoreAttributesUndefined: Self = StObject.set(x, "ignoreAttributes", js.undefined)
       
-      @scala.inline
-      def setIgnoreAttributesVarargs(value: String*): Self = StObject.set(x, "ignoreAttributes", js.Array(value :_*))
+      inline def setIgnoreAttributesVarargs(value: String*): Self = StObject.set(x, "ignoreAttributes", js.Array(value :_*))
       
-      @scala.inline
-      def setIgnoreComments(value: Boolean): Self = StObject.set(x, "ignoreComments", value.asInstanceOf[js.Any])
+      inline def setIgnoreComments(value: Boolean): Self = StObject.set(x, "ignoreComments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreCommentsUndefined: Self = StObject.set(x, "ignoreComments", js.undefined)
+      inline def setIgnoreCommentsUndefined: Self = StObject.set(x, "ignoreComments", js.undefined)
       
-      @scala.inline
-      def setIgnoreDuplicateAttributes(value: Boolean): Self = StObject.set(x, "ignoreDuplicateAttributes", value.asInstanceOf[js.Any])
+      inline def setIgnoreDuplicateAttributes(value: Boolean): Self = StObject.set(x, "ignoreDuplicateAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreDuplicateAttributesUndefined: Self = StObject.set(x, "ignoreDuplicateAttributes", js.undefined)
+      inline def setIgnoreDuplicateAttributesUndefined: Self = StObject.set(x, "ignoreDuplicateAttributes", js.undefined)
       
-      @scala.inline
-      def setIgnoreEndTags(value: Boolean): Self = StObject.set(x, "ignoreEndTags", value.asInstanceOf[js.Any])
+      inline def setIgnoreEndTags(value: Boolean): Self = StObject.set(x, "ignoreEndTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreEndTagsUndefined: Self = StObject.set(x, "ignoreEndTags", js.undefined)
+      inline def setIgnoreEndTagsUndefined: Self = StObject.set(x, "ignoreEndTags", js.undefined)
       
-      @scala.inline
-      def setIgnoreWhitespaces(value: Boolean): Self = StObject.set(x, "ignoreWhitespaces", value.asInstanceOf[js.Any])
+      inline def setIgnoreWhitespaces(value: Boolean): Self = StObject.set(x, "ignoreWhitespaces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreWhitespacesUndefined: Self = StObject.set(x, "ignoreWhitespaces", js.undefined)
+      inline def setIgnoreWhitespacesUndefined: Self = StObject.set(x, "ignoreWhitespaces", js.undefined)
     }
   }
   

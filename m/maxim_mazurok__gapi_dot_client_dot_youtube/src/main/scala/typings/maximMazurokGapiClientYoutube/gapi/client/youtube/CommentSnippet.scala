@@ -58,103 +58,71 @@ trait CommentSnippet extends StObject {
 }
 object CommentSnippet {
   
-  @scala.inline
-  def apply(): CommentSnippet = {
+  inline def apply(): CommentSnippet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommentSnippet]
   }
   
-  @scala.inline
-  implicit class CommentSnippetMutableBuilder[Self <: CommentSnippet] (val x: Self) extends AnyVal {
+  extension [Self <: CommentSnippet](x: Self) {
     
-    @scala.inline
-    def setAuthorChannelId(value: CommentSnippetAuthorChannelId): Self = StObject.set(x, "authorChannelId", value.asInstanceOf[js.Any])
+    inline def setAuthorChannelId(value: CommentSnippetAuthorChannelId): Self = StObject.set(x, "authorChannelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorChannelIdUndefined: Self = StObject.set(x, "authorChannelId", js.undefined)
+    inline def setAuthorChannelIdUndefined: Self = StObject.set(x, "authorChannelId", js.undefined)
     
-    @scala.inline
-    def setAuthorChannelUrl(value: String): Self = StObject.set(x, "authorChannelUrl", value.asInstanceOf[js.Any])
+    inline def setAuthorChannelUrl(value: String): Self = StObject.set(x, "authorChannelUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorChannelUrlUndefined: Self = StObject.set(x, "authorChannelUrl", js.undefined)
+    inline def setAuthorChannelUrlUndefined: Self = StObject.set(x, "authorChannelUrl", js.undefined)
     
-    @scala.inline
-    def setAuthorDisplayName(value: String): Self = StObject.set(x, "authorDisplayName", value.asInstanceOf[js.Any])
+    inline def setAuthorDisplayName(value: String): Self = StObject.set(x, "authorDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorDisplayNameUndefined: Self = StObject.set(x, "authorDisplayName", js.undefined)
+    inline def setAuthorDisplayNameUndefined: Self = StObject.set(x, "authorDisplayName", js.undefined)
     
-    @scala.inline
-    def setAuthorProfileImageUrl(value: String): Self = StObject.set(x, "authorProfileImageUrl", value.asInstanceOf[js.Any])
+    inline def setAuthorProfileImageUrl(value: String): Self = StObject.set(x, "authorProfileImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorProfileImageUrlUndefined: Self = StObject.set(x, "authorProfileImageUrl", js.undefined)
+    inline def setAuthorProfileImageUrlUndefined: Self = StObject.set(x, "authorProfileImageUrl", js.undefined)
     
-    @scala.inline
-    def setCanRate(value: Boolean): Self = StObject.set(x, "canRate", value.asInstanceOf[js.Any])
+    inline def setCanRate(value: Boolean): Self = StObject.set(x, "canRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanRateUndefined: Self = StObject.set(x, "canRate", js.undefined)
+    inline def setCanRateUndefined: Self = StObject.set(x, "canRate", js.undefined)
     
-    @scala.inline
-    def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
+    inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
+    inline def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
     
-    @scala.inline
-    def setLikeCount(value: Double): Self = StObject.set(x, "likeCount", value.asInstanceOf[js.Any])
+    inline def setLikeCount(value: Double): Self = StObject.set(x, "likeCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLikeCountUndefined: Self = StObject.set(x, "likeCount", js.undefined)
+    inline def setLikeCountUndefined: Self = StObject.set(x, "likeCount", js.undefined)
     
-    @scala.inline
-    def setModerationStatus(value: String): Self = StObject.set(x, "moderationStatus", value.asInstanceOf[js.Any])
+    inline def setModerationStatus(value: String): Self = StObject.set(x, "moderationStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModerationStatusUndefined: Self = StObject.set(x, "moderationStatus", js.undefined)
+    inline def setModerationStatusUndefined: Self = StObject.set(x, "moderationStatus", js.undefined)
     
-    @scala.inline
-    def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+    inline def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
+    inline def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
     
-    @scala.inline
-    def setPublishedAt(value: String): Self = StObject.set(x, "publishedAt", value.asInstanceOf[js.Any])
+    inline def setPublishedAt(value: String): Self = StObject.set(x, "publishedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishedAtUndefined: Self = StObject.set(x, "publishedAt", js.undefined)
+    inline def setPublishedAtUndefined: Self = StObject.set(x, "publishedAt", js.undefined)
     
-    @scala.inline
-    def setTextDisplay(value: String): Self = StObject.set(x, "textDisplay", value.asInstanceOf[js.Any])
+    inline def setTextDisplay(value: String): Self = StObject.set(x, "textDisplay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextDisplayUndefined: Self = StObject.set(x, "textDisplay", js.undefined)
+    inline def setTextDisplayUndefined: Self = StObject.set(x, "textDisplay", js.undefined)
     
-    @scala.inline
-    def setTextOriginal(value: String): Self = StObject.set(x, "textOriginal", value.asInstanceOf[js.Any])
+    inline def setTextOriginal(value: String): Self = StObject.set(x, "textOriginal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextOriginalUndefined: Self = StObject.set(x, "textOriginal", js.undefined)
+    inline def setTextOriginalUndefined: Self = StObject.set(x, "textOriginal", js.undefined)
     
-    @scala.inline
-    def setUpdatedAt(value: String): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: String): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedAtUndefined: Self = StObject.set(x, "updatedAt", js.undefined)
+    inline def setUpdatedAtUndefined: Self = StObject.set(x, "updatedAt", js.undefined)
     
-    @scala.inline
-    def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
+    inline def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoIdUndefined: Self = StObject.set(x, "videoId", js.undefined)
+    inline def setVideoIdUndefined: Self = StObject.set(x, "videoId", js.undefined)
     
-    @scala.inline
-    def setViewerRating(value: String): Self = StObject.set(x, "viewerRating", value.asInstanceOf[js.Any])
+    inline def setViewerRating(value: String): Self = StObject.set(x, "viewerRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewerRatingUndefined: Self = StObject.set(x, "viewerRating", js.undefined)
+    inline def setViewerRatingUndefined: Self = StObject.set(x, "viewerRating", js.undefined)
   }
 }

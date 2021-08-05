@@ -68,71 +68,50 @@ object shimmerElementsGroupTypesMod {
   }
   object IShimmerElementsGroupProps {
     
-    @scala.inline
-    def apply(): IShimmerElementsGroupProps = {
+    inline def apply(): IShimmerElementsGroupProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IShimmerElementsGroupProps]
     }
     
-    @scala.inline
-    implicit class IShimmerElementsGroupPropsMutableBuilder[Self <: IShimmerElementsGroupProps] (val x: Self) extends AnyVal {
+    extension [Self <: IShimmerElementsGroupProps](x: Self) {
       
-      @scala.inline
-      def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+      inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[IShimmerElementsGroup]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[IShimmerElementsGroup]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ IShimmerElementsGroup | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ IShimmerElementsGroup | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setFlexWrap(value: Boolean): Self = StObject.set(x, "flexWrap", value.asInstanceOf[js.Any])
+      inline def setFlexWrap(value: Boolean): Self = StObject.set(x, "flexWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexWrapUndefined: Self = StObject.set(x, "flexWrap", js.undefined)
+      inline def setFlexWrapUndefined: Self = StObject.set(x, "flexWrap", js.undefined)
       
-      @scala.inline
-      def setRowHeight(value: Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
+      inline def setRowHeight(value: Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
+      inline def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
       
-      @scala.inline
-      def setShimmerElements(value: js.Array[IShimmerElement]): Self = StObject.set(x, "shimmerElements", value.asInstanceOf[js.Any])
+      inline def setShimmerElements(value: js.Array[IShimmerElement]): Self = StObject.set(x, "shimmerElements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShimmerElementsUndefined: Self = StObject.set(x, "shimmerElements", js.undefined)
+      inline def setShimmerElementsUndefined: Self = StObject.set(x, "shimmerElements", js.undefined)
       
-      @scala.inline
-      def setShimmerElementsVarargs(value: IShimmerElement*): Self = StObject.set(x, "shimmerElements", js.Array(value :_*))
+      inline def setShimmerElementsVarargs(value: IShimmerElement*): Self = StObject.set(x, "shimmerElements", js.Array(value :_*))
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[IShimmerElementsGroupStyleProps, IShimmerElementsGroupStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[IShimmerElementsGroupStyleProps, IShimmerElementsGroupStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: IShimmerElementsGroupStyleProps => DeepPartial[IShimmerElementsGroupStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: IShimmerElementsGroupStyleProps => DeepPartial[IShimmerElementsGroupStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -148,23 +127,18 @@ object shimmerElementsGroupTypesMod {
   }
   object IShimmerElementsGroupStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): IShimmerElementsGroupStyleProps = {
+    inline def apply(theme: ITheme): IShimmerElementsGroupStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[IShimmerElementsGroupStyleProps]
     }
     
-    @scala.inline
-    implicit class IShimmerElementsGroupStylePropsMutableBuilder[Self <: IShimmerElementsGroupStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IShimmerElementsGroupStyleProps](x: Self) {
       
-      @scala.inline
-      def setFlexWrap(value: Boolean): Self = StObject.set(x, "flexWrap", value.asInstanceOf[js.Any])
+      inline def setFlexWrap(value: Boolean): Self = StObject.set(x, "flexWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexWrapUndefined: Self = StObject.set(x, "flexWrap", js.undefined)
+      inline def setFlexWrapUndefined: Self = StObject.set(x, "flexWrap", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -177,23 +151,18 @@ object shimmerElementsGroupTypesMod {
   }
   object IShimmerElementsGroupStyles {
     
-    @scala.inline
-    def apply(): IShimmerElementsGroupStyles = {
+    inline def apply(): IShimmerElementsGroupStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IShimmerElementsGroupStyles]
     }
     
-    @scala.inline
-    implicit class IShimmerElementsGroupStylesMutableBuilder[Self <: IShimmerElementsGroupStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IShimmerElementsGroupStyles](x: Self) {
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
 }

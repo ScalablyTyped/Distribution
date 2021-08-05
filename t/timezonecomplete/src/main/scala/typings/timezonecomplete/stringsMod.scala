@@ -10,9 +10,7 @@ object stringsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def padLeft(s: String, width: Double, char: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("padLeft")(s.asInstanceOf[js.Any], width.asInstanceOf[js.Any], char.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def padLeft(s: String, width: Double, char: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("padLeft")(s.asInstanceOf[js.Any], width.asInstanceOf[js.Any], char.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def padRight(s: String, width: Double, char: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("padRight")(s.asInstanceOf[js.Any], width.asInstanceOf[js.Any], char.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def padRight(s: String, width: Double, char: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("padRight")(s.asInstanceOf[js.Any], width.asInstanceOf[js.Any], char.asInstanceOf[js.Any])).asInstanceOf[String]
 }

@@ -17,16 +17,13 @@ trait NamedData
 }
 object NamedData {
   
-  @scala.inline
-  def apply(name: String): NamedData = {
+  inline def apply(name: String): NamedData = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[NamedData]
   }
   
-  @scala.inline
-  implicit class NamedDataMutableBuilder[Self <: NamedData] (val x: Self) extends AnyVal {
+  extension [Self <: NamedData](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

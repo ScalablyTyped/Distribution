@@ -19,29 +19,22 @@ object anon {
   }
   object OptionsasBytestrue {
     
-    @scala.inline
-    def apply(asBytes: js.UndefOr[Boolean] & `true`): OptionsasBytestrue = {
+    inline def apply(asBytes: js.UndefOr[Boolean] & `true`): OptionsasBytestrue = {
       val __obj = js.Dynamic.literal(asBytes = asBytes.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptionsasBytestrue]
     }
     
-    @scala.inline
-    implicit class OptionsasBytestrueMutableBuilder[Self <: OptionsasBytestrue] (val x: Self) extends AnyVal {
+    extension [Self <: OptionsasBytestrue](x: Self) {
       
-      @scala.inline
-      def setAsBytes(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "asBytes", value.asInstanceOf[js.Any])
+      inline def setAsBytes(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "asBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsString(value: Boolean): Self = StObject.set(x, "asString", value.asInstanceOf[js.Any])
+      inline def setAsString(value: Boolean): Self = StObject.set(x, "asString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsStringUndefined: Self = StObject.set(x, "asString", js.undefined)
+      inline def setAsStringUndefined: Self = StObject.set(x, "asString", js.undefined)
       
-      @scala.inline
-      def setEncoding(value: binary | String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: binary | String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     }
   }
   
@@ -54,26 +47,20 @@ object anon {
   }
   object PickOptionsasStringencodi {
     
-    @scala.inline
-    def apply(): PickOptionsasStringencodi = {
+    inline def apply(): PickOptionsasStringencodi = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PickOptionsasStringencodi]
     }
     
-    @scala.inline
-    implicit class PickOptionsasStringencodiMutableBuilder[Self <: PickOptionsasStringencodi] (val x: Self) extends AnyVal {
+    extension [Self <: PickOptionsasStringencodi](x: Self) {
       
-      @scala.inline
-      def setAsString(value: Boolean): Self = StObject.set(x, "asString", value.asInstanceOf[js.Any])
+      inline def setAsString(value: Boolean): Self = StObject.set(x, "asString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsStringUndefined: Self = StObject.set(x, "asString", js.undefined)
+      inline def setAsStringUndefined: Self = StObject.set(x, "asString", js.undefined)
       
-      @scala.inline
-      def setEncoding(value: binary | String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: binary | String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     }
   }
 }

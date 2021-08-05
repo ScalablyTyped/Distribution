@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "klona"
-version := "2.0.4-5f3960"
+version := "2.0.4-209190"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

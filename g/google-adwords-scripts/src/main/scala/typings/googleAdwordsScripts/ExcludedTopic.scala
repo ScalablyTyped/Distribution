@@ -16,8 +16,7 @@ trait ExcludedTopic
 }
 object ExcludedTopic {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getAdGroup: () => AdGroup,
     getCampaign: () => Campaign,
     getId: () => Double,
@@ -28,16 +27,12 @@ object ExcludedTopic {
     __obj.asInstanceOf[ExcludedTopic]
   }
   
-  @scala.inline
-  implicit class ExcludedTopicMutableBuilder[Self <: ExcludedTopic] (val x: Self) extends AnyVal {
+  extension [Self <: ExcludedTopic](x: Self) {
     
-    @scala.inline
-    def setGetId(value: () => Double): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+    inline def setGetId(value: () => Double): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTopicId(value: () => Double): Self = StObject.set(x, "getTopicId", js.Any.fromFunction0(value))
+    inline def setGetTopicId(value: () => Double): Self = StObject.set(x, "getTopicId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+    inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
   }
 }

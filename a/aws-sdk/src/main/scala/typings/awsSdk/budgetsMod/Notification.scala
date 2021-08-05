@@ -33,8 +33,7 @@ trait Notification extends StObject {
 }
 object Notification {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ComparisonOperator: ComparisonOperator,
     NotificationType: NotificationType,
     Threshold: NotificationThreshold
@@ -43,28 +42,20 @@ object Notification {
     __obj.asInstanceOf[Notification]
   }
   
-  @scala.inline
-  implicit class NotificationMutableBuilder[Self <: Notification] (val x: Self) extends AnyVal {
+  extension [Self <: Notification](x: Self) {
     
-    @scala.inline
-    def setComparisonOperator(value: ComparisonOperator): Self = StObject.set(x, "ComparisonOperator", value.asInstanceOf[js.Any])
+    inline def setComparisonOperator(value: ComparisonOperator): Self = StObject.set(x, "ComparisonOperator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationState(value: NotificationState): Self = StObject.set(x, "NotificationState", value.asInstanceOf[js.Any])
+    inline def setNotificationState(value: NotificationState): Self = StObject.set(x, "NotificationState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationStateUndefined: Self = StObject.set(x, "NotificationState", js.undefined)
+    inline def setNotificationStateUndefined: Self = StObject.set(x, "NotificationState", js.undefined)
     
-    @scala.inline
-    def setNotificationType(value: NotificationType): Self = StObject.set(x, "NotificationType", value.asInstanceOf[js.Any])
+    inline def setNotificationType(value: NotificationType): Self = StObject.set(x, "NotificationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreshold(value: NotificationThreshold): Self = StObject.set(x, "Threshold", value.asInstanceOf[js.Any])
+    inline def setThreshold(value: NotificationThreshold): Self = StObject.set(x, "Threshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThresholdType(value: ThresholdType): Self = StObject.set(x, "ThresholdType", value.asInstanceOf[js.Any])
+    inline def setThresholdType(value: ThresholdType): Self = StObject.set(x, "ThresholdType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThresholdTypeUndefined: Self = StObject.set(x, "ThresholdType", js.undefined)
+    inline def setThresholdTypeUndefined: Self = StObject.set(x, "ThresholdType", js.undefined)
   }
 }

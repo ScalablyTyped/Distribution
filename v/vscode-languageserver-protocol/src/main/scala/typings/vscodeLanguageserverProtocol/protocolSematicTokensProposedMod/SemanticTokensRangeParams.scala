@@ -25,19 +25,15 @@ trait SemanticTokensRangeParams
 }
 object SemanticTokensRangeParams {
   
-  @scala.inline
-  def apply(range: Range, textDocument: TextDocumentIdentifier): SemanticTokensRangeParams = {
+  inline def apply(range: Range, textDocument: TextDocumentIdentifier): SemanticTokensRangeParams = {
     val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any], textDocument = textDocument.asInstanceOf[js.Any])
     __obj.asInstanceOf[SemanticTokensRangeParams]
   }
   
-  @scala.inline
-  implicit class SemanticTokensRangeParamsMutableBuilder[Self <: SemanticTokensRangeParams] (val x: Self) extends AnyVal {
+  extension [Self <: SemanticTokensRangeParams](x: Self) {
     
-    @scala.inline
-    def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextDocument(value: TextDocumentIdentifier): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
+    inline def setTextDocument(value: TextDocumentIdentifier): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
   }
 }

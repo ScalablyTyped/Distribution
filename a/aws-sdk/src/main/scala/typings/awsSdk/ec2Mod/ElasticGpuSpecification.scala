@@ -13,16 +13,13 @@ trait ElasticGpuSpecification extends StObject {
 }
 object ElasticGpuSpecification {
   
-  @scala.inline
-  def apply(Type: String): ElasticGpuSpecification = {
+  inline def apply(Type: String): ElasticGpuSpecification = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElasticGpuSpecification]
   }
   
-  @scala.inline
-  implicit class ElasticGpuSpecificationMutableBuilder[Self <: ElasticGpuSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: ElasticGpuSpecification](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

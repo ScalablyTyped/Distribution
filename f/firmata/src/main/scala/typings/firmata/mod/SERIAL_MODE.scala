@@ -14,9 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SERIAL_MODE extends StObject
 object SERIAL_MODE {
   
-  @scala.inline
-  def CONTINUOUS_READ: `0x00` = 0x00.asInstanceOf[`0x00`]
+  inline def CONTINUOUS_READ: `0x00` = 0x00.asInstanceOf[`0x00`]
   
-  @scala.inline
-  def STOP_READING: `0x01` = 0x01.asInstanceOf[`0x01`]
+  inline def STOP_READING: `0x01` = 0x01.asInstanceOf[`0x01`]
 }

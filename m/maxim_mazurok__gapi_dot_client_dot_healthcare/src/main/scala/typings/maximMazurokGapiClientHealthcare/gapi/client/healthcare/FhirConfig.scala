@@ -14,22 +14,17 @@ trait FhirConfig extends StObject {
 }
 object FhirConfig {
   
-  @scala.inline
-  def apply(): FhirConfig = {
+  inline def apply(): FhirConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FhirConfig]
   }
   
-  @scala.inline
-  implicit class FhirConfigMutableBuilder[Self <: FhirConfig] (val x: Self) extends AnyVal {
+  extension [Self <: FhirConfig](x: Self) {
     
-    @scala.inline
-    def setFieldMetadataList(value: js.Array[FieldMetadata]): Self = StObject.set(x, "fieldMetadataList", value.asInstanceOf[js.Any])
+    inline def setFieldMetadataList(value: js.Array[FieldMetadata]): Self = StObject.set(x, "fieldMetadataList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldMetadataListUndefined: Self = StObject.set(x, "fieldMetadataList", js.undefined)
+    inline def setFieldMetadataListUndefined: Self = StObject.set(x, "fieldMetadataList", js.undefined)
     
-    @scala.inline
-    def setFieldMetadataListVarargs(value: FieldMetadata*): Self = StObject.set(x, "fieldMetadataList", js.Array(value :_*))
+    inline def setFieldMetadataListVarargs(value: FieldMetadata*): Self = StObject.set(x, "fieldMetadataList", js.Array(value :_*))
   }
 }

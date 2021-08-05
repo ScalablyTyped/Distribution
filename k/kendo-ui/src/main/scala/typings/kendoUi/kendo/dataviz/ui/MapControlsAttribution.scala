@@ -10,19 +10,15 @@ trait MapControlsAttribution extends StObject {
 }
 object MapControlsAttribution {
   
-  @scala.inline
-  def apply(): MapControlsAttribution = {
+  inline def apply(): MapControlsAttribution = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapControlsAttribution]
   }
   
-  @scala.inline
-  implicit class MapControlsAttributionMutableBuilder[Self <: MapControlsAttribution] (val x: Self) extends AnyVal {
+  extension [Self <: MapControlsAttribution](x: Self) {
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

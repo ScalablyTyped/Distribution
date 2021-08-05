@@ -29,22 +29,17 @@ trait MediaInfo extends StObject {
 }
 object MediaInfo {
   
-  @scala.inline
-  def apply(altText: String, caption: String, title: String): MediaInfo = {
+  inline def apply(altText: String, caption: String, title: String): MediaInfo = {
     val __obj = js.Dynamic.literal(altText = altText.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaInfo]
   }
   
-  @scala.inline
-  implicit class MediaInfoMutableBuilder[Self <: MediaInfo] (val x: Self) extends AnyVal {
+  extension [Self <: MediaInfo](x: Self) {
     
-    @scala.inline
-    def setAltText(value: String): Self = StObject.set(x, "altText", value.asInstanceOf[js.Any])
+    inline def setAltText(value: String): Self = StObject.set(x, "altText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

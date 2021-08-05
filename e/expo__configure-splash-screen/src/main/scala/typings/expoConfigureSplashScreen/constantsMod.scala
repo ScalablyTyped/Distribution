@@ -69,14 +69,11 @@ object constantsMod {
   trait PlatformType extends StObject
   object PlatformType {
     
-    @scala.inline
-    def all: typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.all = "all".asInstanceOf[typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.all]
+    inline def all: typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.all = "all".asInstanceOf[typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.all]
     
-    @scala.inline
-    def android: typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.android = "android".asInstanceOf[typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.android]
+    inline def android: typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.android = "android".asInstanceOf[typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.android]
     
-    @scala.inline
-    def ios: typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.ios = "ios".asInstanceOf[typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.ios]
+    inline def ios: typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.ios = "ios".asInstanceOf[typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.ios]
   }
   
   /* Inlined @expo/configure-splash-screen.@expo/configure-splash-screen/build/constants.TypeFromConstObject<{ readonly CONTAIN :'contain',  readonly COVER :'cover',  readonly NATIVE :'native'}> */
@@ -88,14 +85,11 @@ object constantsMod {
   trait SplashScreenImageResizeModeType extends StObject
   object SplashScreenImageResizeModeType {
     
-    @scala.inline
-    def contain: typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.contain = "contain".asInstanceOf[typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.contain]
+    inline def contain: typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.contain = "contain".asInstanceOf[typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.contain]
     
-    @scala.inline
-    def cover: typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.cover = "cover".asInstanceOf[typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.cover]
+    inline def cover: typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.cover = "cover".asInstanceOf[typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.cover]
     
-    @scala.inline
-    def native: typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.native = "native".asInstanceOf[typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.native]
+    inline def native: typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.native = "native".asInstanceOf[typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.native]
   }
   
   /* Inlined @expo/configure-splash-screen.@expo/configure-splash-screen/build/constants.TypeFromConstObject<{ readonly DEFAULT :'default',  readonly LIGHT_CONTENT :'light-content',  readonly DARK_CONTENT :'dark-content'}> */
@@ -107,14 +101,11 @@ object constantsMod {
   trait SplashScreenStatusBarStyleType extends StObject
   object SplashScreenStatusBarStyleType {
     
-    @scala.inline
-    def default: typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.default = "default".asInstanceOf[typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.default]
+    inline def default: typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.default = "default".asInstanceOf[typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.default]
     
-    @scala.inline
-    def `dark-content`: typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.`dark-content` = "dark-content".asInstanceOf[typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.`dark-content`]
+    inline def `dark-content`: typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.`dark-content` = "dark-content".asInstanceOf[typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.`dark-content`]
     
-    @scala.inline
-    def `light-content`: typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.`light-content` = "light-content".asInstanceOf[typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.`light-content`]
+    inline def `light-content`: typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.`light-content` = "light-content".asInstanceOf[typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.`light-content`]
   }
   
   type TypeFromConstObject[T /* <: js.Object */] = /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any

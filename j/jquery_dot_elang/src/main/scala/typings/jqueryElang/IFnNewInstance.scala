@@ -13,16 +13,13 @@ trait IFnNewInstance extends StObject {
 }
 object IFnNewInstance {
   
-  @scala.inline
-  def apply(createInstance: (HTMLElement, js.Any, String) => JQuery[HTMLElement]): IFnNewInstance = {
+  inline def apply(createInstance: (HTMLElement, js.Any, String) => JQuery[HTMLElement]): IFnNewInstance = {
     val __obj = js.Dynamic.literal(createInstance = js.Any.fromFunction3(createInstance))
     __obj.asInstanceOf[IFnNewInstance]
   }
   
-  @scala.inline
-  implicit class IFnNewInstanceMutableBuilder[Self <: IFnNewInstance] (val x: Self) extends AnyVal {
+  extension [Self <: IFnNewInstance](x: Self) {
     
-    @scala.inline
-    def setCreateInstance(value: (HTMLElement, js.Any, String) => JQuery[HTMLElement]): Self = StObject.set(x, "createInstance", js.Any.fromFunction3(value))
+    inline def setCreateInstance(value: (HTMLElement, js.Any, String) => JQuery[HTMLElement]): Self = StObject.set(x, "createInstance", js.Any.fromFunction3(value))
   }
 }

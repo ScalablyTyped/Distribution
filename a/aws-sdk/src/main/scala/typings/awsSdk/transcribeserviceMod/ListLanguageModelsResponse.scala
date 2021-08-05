@@ -18,28 +18,21 @@ trait ListLanguageModelsResponse extends StObject {
 }
 object ListLanguageModelsResponse {
   
-  @scala.inline
-  def apply(): ListLanguageModelsResponse = {
+  inline def apply(): ListLanguageModelsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListLanguageModelsResponse]
   }
   
-  @scala.inline
-  implicit class ListLanguageModelsResponseMutableBuilder[Self <: ListLanguageModelsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListLanguageModelsResponse](x: Self) {
     
-    @scala.inline
-    def setModels(value: Models): Self = StObject.set(x, "Models", value.asInstanceOf[js.Any])
+    inline def setModels(value: Models): Self = StObject.set(x, "Models", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelsUndefined: Self = StObject.set(x, "Models", js.undefined)
+    inline def setModelsUndefined: Self = StObject.set(x, "Models", js.undefined)
     
-    @scala.inline
-    def setModelsVarargs(value: LanguageModel*): Self = StObject.set(x, "Models", js.Array(value :_*))
+    inline def setModelsVarargs(value: LanguageModel*): Self = StObject.set(x, "Models", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OverlayPointerEventTypes extends StObject
 object OverlayPointerEventTypes {
   
-  @scala.inline
-  def auto: typings.reactNativeModals.reactNativeModalsStrings.auto = "auto".asInstanceOf[typings.reactNativeModals.reactNativeModalsStrings.auto]
+  inline def auto: typings.reactNativeModals.reactNativeModalsStrings.auto = "auto".asInstanceOf[typings.reactNativeModals.reactNativeModalsStrings.auto]
   
-  @scala.inline
-  def none: typings.reactNativeModals.reactNativeModalsStrings.none = "none".asInstanceOf[typings.reactNativeModals.reactNativeModalsStrings.none]
+  inline def none: typings.reactNativeModals.reactNativeModalsStrings.none = "none".asInstanceOf[typings.reactNativeModals.reactNativeModalsStrings.none]
 }

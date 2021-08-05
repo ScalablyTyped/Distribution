@@ -20,25 +20,19 @@ trait IDecorationOptions extends StObject {
 }
 object IDecorationOptions {
   
-  @scala.inline
-  def apply(): IDecorationOptions = {
+  inline def apply(): IDecorationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDecorationOptions]
   }
   
-  @scala.inline
-  implicit class IDecorationOptionsMutableBuilder[Self <: IDecorationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IDecorationOptions](x: Self) {
     
-    @scala.inline
-    def setColor(value: String | ThemeColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String | ThemeColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setDarkColor(value: String | ThemeColor): Self = StObject.set(x, "darkColor", value.asInstanceOf[js.Any])
+    inline def setDarkColor(value: String | ThemeColor): Self = StObject.set(x, "darkColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDarkColorUndefined: Self = StObject.set(x, "darkColor", js.undefined)
+    inline def setDarkColorUndefined: Self = StObject.set(x, "darkColor", js.undefined)
   }
 }

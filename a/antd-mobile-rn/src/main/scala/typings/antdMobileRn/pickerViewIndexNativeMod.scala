@@ -21,7 +21,6 @@ object pickerViewIndexNativeMod {
     @JSImport("antd-mobile-rn/lib/picker-view/index.native", "default.defaultProps")
     @js.native
     def defaultProps: Cols = js.native
-    @scala.inline
-    def defaultProps_=(x: Cols): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Cols): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

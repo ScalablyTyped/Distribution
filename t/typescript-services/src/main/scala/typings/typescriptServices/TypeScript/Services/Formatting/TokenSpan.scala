@@ -10,14 +10,13 @@ trait TokenSpan
   extends StObject
      with TextSpan {
   
-  var _kind: js.Any
+  /* private */ var _kind: js.Any
   
   def kind(): SyntaxKind
 }
 object TokenSpan {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _kind: js.Any,
     _length: js.Any,
     _start: js.Any,
@@ -39,13 +38,10 @@ object TokenSpan {
     __obj.asInstanceOf[TokenSpan]
   }
   
-  @scala.inline
-  implicit class TokenSpanMutableBuilder[Self <: TokenSpan] (val x: Self) extends AnyVal {
+  extension [Self <: TokenSpan](x: Self) {
     
-    @scala.inline
-    def setKind(value: () => SyntaxKind): Self = StObject.set(x, "kind", js.Any.fromFunction0(value))
+    inline def setKind(value: () => SyntaxKind): Self = StObject.set(x, "kind", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def set_kind(value: js.Any): Self = StObject.set(x, "_kind", value.asInstanceOf[js.Any])
+    inline def set_kind(value: js.Any): Self = StObject.set(x, "_kind", value.asInstanceOf[js.Any])
   }
 }

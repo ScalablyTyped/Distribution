@@ -80,109 +80,75 @@ trait ILoadMask
 }
 object ILoadMask {
   
-  @scala.inline
-  def apply(): ILoadMask = {
+  inline def apply(): ILoadMask = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ILoadMask]
   }
   
-  @scala.inline
-  implicit class ILoadMaskMutableBuilder[Self <: ILoadMask] (val x: Self) extends AnyVal {
+  extension [Self <: ILoadMask](x: Self) {
     
-    @scala.inline
-    def setBindStore(value: /* store */ js.UndefOr[IStore] => Unit): Self = StObject.set(x, "bindStore", js.Any.fromFunction1(value))
+    inline def setBindStore(value: /* store */ js.UndefOr[IStore] => Unit): Self = StObject.set(x, "bindStore", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBindStoreUndefined: Self = StObject.set(x, "bindStore", js.undefined)
+    inline def setBindStoreUndefined: Self = StObject.set(x, "bindStore", js.undefined)
     
-    @scala.inline
-    def setCls(value: java.lang.String): Self = StObject.set(x, "cls", value.asInstanceOf[js.Any])
+    inline def setCls(value: java.lang.String): Self = StObject.set(x, "cls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClsUndefined: Self = StObject.set(x, "cls", js.undefined)
+    inline def setClsUndefined: Self = StObject.set(x, "cls", js.undefined)
     
-    @scala.inline
-    def setGetCls(value: () => java.lang.String): Self = StObject.set(x, "getCls", js.Any.fromFunction0(value))
+    inline def setGetCls(value: () => java.lang.String): Self = StObject.set(x, "getCls", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetClsUndefined: Self = StObject.set(x, "getCls", js.undefined)
+    inline def setGetClsUndefined: Self = StObject.set(x, "getCls", js.undefined)
     
-    @scala.inline
-    def setGetIndicator(value: () => Boolean): Self = StObject.set(x, "getIndicator", js.Any.fromFunction0(value))
+    inline def setGetIndicator(value: () => Boolean): Self = StObject.set(x, "getIndicator", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIndicatorUndefined: Self = StObject.set(x, "getIndicator", js.undefined)
+    inline def setGetIndicatorUndefined: Self = StObject.set(x, "getIndicator", js.undefined)
     
-    @scala.inline
-    def setGetMessage(value: () => java.lang.String): Self = StObject.set(x, "getMessage", js.Any.fromFunction0(value))
+    inline def setGetMessage(value: () => java.lang.String): Self = StObject.set(x, "getMessage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMessageCls(value: () => java.lang.String): Self = StObject.set(x, "getMessageCls", js.Any.fromFunction0(value))
+    inline def setGetMessageCls(value: () => java.lang.String): Self = StObject.set(x, "getMessageCls", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMessageClsUndefined: Self = StObject.set(x, "getMessageCls", js.undefined)
+    inline def setGetMessageClsUndefined: Self = StObject.set(x, "getMessageCls", js.undefined)
     
-    @scala.inline
-    def setGetMessageUndefined: Self = StObject.set(x, "getMessage", js.undefined)
+    inline def setGetMessageUndefined: Self = StObject.set(x, "getMessage", js.undefined)
     
-    @scala.inline
-    def setIndicator(value: Boolean): Self = StObject.set(x, "indicator", value.asInstanceOf[js.Any])
+    inline def setIndicator(value: Boolean): Self = StObject.set(x, "indicator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndicatorUndefined: Self = StObject.set(x, "indicator", js.undefined)
+    inline def setIndicatorUndefined: Self = StObject.set(x, "indicator", js.undefined)
     
-    @scala.inline
-    def setMessage(value: java.lang.String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: java.lang.String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageCls(value: java.lang.String): Self = StObject.set(x, "messageCls", value.asInstanceOf[js.Any])
+    inline def setMessageCls(value: java.lang.String): Self = StObject.set(x, "messageCls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageClsUndefined: Self = StObject.set(x, "messageCls", js.undefined)
+    inline def setMessageClsUndefined: Self = StObject.set(x, "messageCls", js.undefined)
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setMsg(value: java.lang.String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
+    inline def setMsg(value: java.lang.String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsgCls(value: java.lang.String): Self = StObject.set(x, "msgCls", value.asInstanceOf[js.Any])
+    inline def setMsgCls(value: java.lang.String): Self = StObject.set(x, "msgCls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsgClsUndefined: Self = StObject.set(x, "msgCls", js.undefined)
+    inline def setMsgClsUndefined: Self = StObject.set(x, "msgCls", js.undefined)
     
-    @scala.inline
-    def setMsgUndefined: Self = StObject.set(x, "msg", js.undefined)
+    inline def setMsgUndefined: Self = StObject.set(x, "msg", js.undefined)
     
-    @scala.inline
-    def setSetCls(value: /* cls */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setCls", js.Any.fromFunction1(value))
+    inline def setSetCls(value: /* cls */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setCls", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetClsUndefined: Self = StObject.set(x, "setCls", js.undefined)
+    inline def setSetClsUndefined: Self = StObject.set(x, "setCls", js.undefined)
     
-    @scala.inline
-    def setSetIndicator(value: /* indicator */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setIndicator", js.Any.fromFunction1(value))
+    inline def setSetIndicator(value: /* indicator */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setIndicator", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetIndicatorUndefined: Self = StObject.set(x, "setIndicator", js.undefined)
+    inline def setSetIndicatorUndefined: Self = StObject.set(x, "setIndicator", js.undefined)
     
-    @scala.inline
-    def setSetMessage(value: /* message */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setMessage", js.Any.fromFunction1(value))
+    inline def setSetMessage(value: /* message */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setMessage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMessageCls(value: /* messageCls */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setMessageCls", js.Any.fromFunction1(value))
+    inline def setSetMessageCls(value: /* messageCls */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setMessageCls", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMessageClsUndefined: Self = StObject.set(x, "setMessageCls", js.undefined)
+    inline def setSetMessageClsUndefined: Self = StObject.set(x, "setMessageCls", js.undefined)
     
-    @scala.inline
-    def setSetMessageUndefined: Self = StObject.set(x, "setMessage", js.undefined)
+    inline def setSetMessageUndefined: Self = StObject.set(x, "setMessage", js.undefined)
     
-    @scala.inline
-    def setStore(value: IStore): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+    inline def setStore(value: IStore): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
+    inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
   }
 }

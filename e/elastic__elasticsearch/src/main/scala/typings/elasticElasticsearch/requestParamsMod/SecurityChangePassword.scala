@@ -17,28 +17,21 @@ trait SecurityChangePassword[T]
 }
 object SecurityChangePassword {
   
-  @scala.inline
-  def apply[T](body: T): SecurityChangePassword[T] = {
+  inline def apply[T](body: T): SecurityChangePassword[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecurityChangePassword[T]]
   }
   
-  @scala.inline
-  implicit class SecurityChangePasswordMutableBuilder[Self <: SecurityChangePassword[?], T] (val x: Self & SecurityChangePassword[T]) extends AnyVal {
+  extension [Self <: SecurityChangePassword[?], T](x: Self & SecurityChangePassword[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefresh(value: wait_for | Boolean): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
+    inline def setRefresh(value: wait_for | Boolean): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshUndefined: Self = StObject.set(x, "refresh", js.undefined)
+    inline def setRefreshUndefined: Self = StObject.set(x, "refresh", js.undefined)
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

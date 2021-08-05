@@ -37,55 +37,39 @@ trait WiFiPropertiesBase[M /* <: ManagedObject */, S] extends StObject {
 }
 object WiFiPropertiesBase {
   
-  @scala.inline
-  def apply[M /* <: ManagedObject */, S](): WiFiPropertiesBase[M, S] = {
+  inline def apply[M /* <: ManagedObject */, S](): WiFiPropertiesBase[M, S] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WiFiPropertiesBase[M, S]]
   }
   
-  @scala.inline
-  implicit class WiFiPropertiesBaseMutableBuilder[Self <: WiFiPropertiesBase[?, ?], M /* <: ManagedObject */, S] (val x: Self & (WiFiPropertiesBase[M, S])) extends AnyVal {
+  extension [Self <: WiFiPropertiesBase[?, ?], M /* <: ManagedObject */, S](x: Self & (WiFiPropertiesBase[M, S])) {
     
-    @scala.inline
-    def setBSSID(value: String): Self = StObject.set(x, "BSSID", value.asInstanceOf[js.Any])
+    inline def setBSSID(value: String): Self = StObject.set(x, "BSSID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBSSIDUndefined: Self = StObject.set(x, "BSSID", js.undefined)
+    inline def setBSSIDUndefined: Self = StObject.set(x, "BSSID", js.undefined)
     
-    @scala.inline
-    def setFrequency(value: integer): Self = StObject.set(x, "Frequency", value.asInstanceOf[js.Any])
+    inline def setFrequency(value: integer): Self = StObject.set(x, "Frequency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrequencyUndefined: Self = StObject.set(x, "Frequency", js.undefined)
+    inline def setFrequencyUndefined: Self = StObject.set(x, "Frequency", js.undefined)
     
-    @scala.inline
-    def setHexSSID(value: S): Self = StObject.set(x, "HexSSID", value.asInstanceOf[js.Any])
+    inline def setHexSSID(value: S): Self = StObject.set(x, "HexSSID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHexSSIDUndefined: Self = StObject.set(x, "HexSSID", js.undefined)
+    inline def setHexSSIDUndefined: Self = StObject.set(x, "HexSSID", js.undefined)
     
-    @scala.inline
-    def setSSID(value: S): Self = StObject.set(x, "SSID", value.asInstanceOf[js.Any])
+    inline def setSSID(value: S): Self = StObject.set(x, "SSID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSSIDUndefined: Self = StObject.set(x, "SSID", js.undefined)
+    inline def setSSIDUndefined: Self = StObject.set(x, "SSID", js.undefined)
     
-    @scala.inline
-    def setSecurity(value: S): Self = StObject.set(x, "Security", value.asInstanceOf[js.Any])
+    inline def setSecurity(value: S): Self = StObject.set(x, "Security", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityUndefined: Self = StObject.set(x, "Security", js.undefined)
+    inline def setSecurityUndefined: Self = StObject.set(x, "Security", js.undefined)
     
-    @scala.inline
-    def setSignalStrength(value: integer): Self = StObject.set(x, "SignalStrength", value.asInstanceOf[js.Any])
+    inline def setSignalStrength(value: integer): Self = StObject.set(x, "SignalStrength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalStrengthUndefined: Self = StObject.set(x, "SignalStrength", js.undefined)
+    inline def setSignalStrengthUndefined: Self = StObject.set(x, "SignalStrength", js.undefined)
     
-    @scala.inline
-    def setTetheringState(value: String): Self = StObject.set(x, "TetheringState", value.asInstanceOf[js.Any])
+    inline def setTetheringState(value: String): Self = StObject.set(x, "TetheringState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTetheringStateUndefined: Self = StObject.set(x, "TetheringState", js.undefined)
+    inline def setTetheringStateUndefined: Self = StObject.set(x, "TetheringState", js.undefined)
   }
 }

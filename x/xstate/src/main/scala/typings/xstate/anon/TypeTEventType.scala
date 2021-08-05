@@ -10,17 +10,14 @@ trait TypeTEventType[TEventType /* <: String */] extends StObject {
 }
 object TypeTEventType {
   
-  @scala.inline
-  def apply[TEventType /* <: String */](`type`: TEventType): TypeTEventType[TEventType] = {
+  inline def apply[TEventType /* <: String */](`type`: TEventType): TypeTEventType[TEventType] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeTEventType[TEventType]]
   }
   
-  @scala.inline
-  implicit class TypeTEventTypeMutableBuilder[Self <: TypeTEventType[?], TEventType /* <: String */] (val x: Self & TypeTEventType[TEventType]) extends AnyVal {
+  extension [Self <: TypeTEventType[?], TEventType /* <: String */](x: Self & TypeTEventType[TEventType]) {
     
-    @scala.inline
-    def setType(value: TEventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TEventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

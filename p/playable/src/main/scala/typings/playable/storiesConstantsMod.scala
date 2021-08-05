@@ -20,14 +20,12 @@ object storiesConstantsMod {
     @JSImport("playable/dist/src/stories/constants", "DEFAUTL_CONFIG.framesCount")
     @js.native
     def framesCount: Double = js.native
-    @scala.inline
-    def framesCount_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("framesCount")(x.asInstanceOf[js.Any])
+    inline def framesCount_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("framesCount")(x.asInstanceOf[js.Any])
     
     @JSImport("playable/dist/src/stories/constants", "DEFAUTL_CONFIG.qualities")
     @js.native
     def qualities: js.Array[FrameSize] = js.native
-    @scala.inline
-    def qualities_=(x: js.Array[FrameSize]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("qualities")(x.asInstanceOf[js.Any])
+    inline def qualities_=(x: js.Array[FrameSize]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("qualities")(x.asInstanceOf[js.Any])
   }
   
   object MODE_OPTIONS {
@@ -39,14 +37,12 @@ object storiesConstantsMod {
     @JSImport("playable/dist/src/stories/constants", "MODE_OPTIONS.PREVIEW")
     @js.native
     def PREVIEW: String = js.native
-    @scala.inline
-    def PREVIEW_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PREVIEW")(x.asInstanceOf[js.Any])
+    inline def PREVIEW_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PREVIEW")(x.asInstanceOf[js.Any])
     
     @JSImport("playable/dist/src/stories/constants", "MODE_OPTIONS.REGULAR")
     @js.native
     def REGULAR: String = js.native
-    @scala.inline
-    def REGULAR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REGULAR")(x.asInstanceOf[js.Any])
+    inline def REGULAR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REGULAR")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("playable/dist/src/stories/constants", "RGB_HEX")

@@ -18,25 +18,19 @@ trait AwsJobExecutionsRolloutConfig extends StObject {
 }
 object AwsJobExecutionsRolloutConfig {
   
-  @scala.inline
-  def apply(): AwsJobExecutionsRolloutConfig = {
+  inline def apply(): AwsJobExecutionsRolloutConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsJobExecutionsRolloutConfig]
   }
   
-  @scala.inline
-  implicit class AwsJobExecutionsRolloutConfigMutableBuilder[Self <: AwsJobExecutionsRolloutConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AwsJobExecutionsRolloutConfig](x: Self) {
     
-    @scala.inline
-    def setExponentialRate(value: AwsJobExponentialRolloutRate): Self = StObject.set(x, "exponentialRate", value.asInstanceOf[js.Any])
+    inline def setExponentialRate(value: AwsJobExponentialRolloutRate): Self = StObject.set(x, "exponentialRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExponentialRateUndefined: Self = StObject.set(x, "exponentialRate", js.undefined)
+    inline def setExponentialRateUndefined: Self = StObject.set(x, "exponentialRate", js.undefined)
     
-    @scala.inline
-    def setMaximumPerMinute(value: MaximumPerMinute): Self = StObject.set(x, "maximumPerMinute", value.asInstanceOf[js.Any])
+    inline def setMaximumPerMinute(value: MaximumPerMinute): Self = StObject.set(x, "maximumPerMinute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumPerMinuteUndefined: Self = StObject.set(x, "maximumPerMinute", js.undefined)
+    inline def setMaximumPerMinuteUndefined: Self = StObject.set(x, "maximumPerMinute", js.undefined)
   }
 }

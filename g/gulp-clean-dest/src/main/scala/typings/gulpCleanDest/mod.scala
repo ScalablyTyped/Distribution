@@ -12,10 +12,8 @@ object mod {
     * @param destination The name of the dest directory
     * @param options Options for the cleaning process
     */
-  @scala.inline
-  def apply(destination: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(destination.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
-  @scala.inline
-  def apply(destination: String, options: Options): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  inline def apply(destination: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(destination.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def apply(destination: String, options: Options): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
   
   @JSImport("gulp-clean-dest", JSImport.Namespace)
   @js.native
@@ -35,26 +33,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+      inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
+      inline def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
     }
   }
 }

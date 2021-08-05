@@ -10,16 +10,13 @@ trait Cldbid extends StObject {
 }
 object Cldbid {
   
-  @scala.inline
-  def apply(cldbid: String): Cldbid = {
+  inline def apply(cldbid: String): Cldbid = {
     val __obj = js.Dynamic.literal(cldbid = cldbid.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cldbid]
   }
   
-  @scala.inline
-  implicit class CldbidMutableBuilder[Self <: Cldbid] (val x: Self) extends AnyVal {
+  extension [Self <: Cldbid](x: Self) {
     
-    @scala.inline
-    def setCldbid(value: String): Self = StObject.set(x, "cldbid", value.asInstanceOf[js.Any])
+    inline def setCldbid(value: String): Self = StObject.set(x, "cldbid", value.asInstanceOf[js.Any])
   }
 }

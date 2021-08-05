@@ -11,6 +11,5 @@ object getWindowScrollBarXMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(element: Element): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def default(element: Element): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

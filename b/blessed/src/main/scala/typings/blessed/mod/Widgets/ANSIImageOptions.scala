@@ -62,8 +62,7 @@ trait ANSIImageOptions
 }
 object ANSIImageOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     animate: Boolean,
     ascii: String,
     file: String,
@@ -77,31 +76,22 @@ object ANSIImageOptions {
     __obj.asInstanceOf[ANSIImageOptions]
   }
   
-  @scala.inline
-  implicit class ANSIImageOptionsMutableBuilder[Self <: ANSIImageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ANSIImageOptions](x: Self) {
     
-    @scala.inline
-    def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAscii(value: String): Self = StObject.set(x, "ascii", value.asInstanceOf[js.Any])
+    inline def setAscii(value: String): Self = StObject.set(x, "ascii", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptimization(value: mem | cpu): Self = StObject.set(x, "optimization", value.asInstanceOf[js.Any])
+    inline def setOptimization(value: mem | cpu): Self = StObject.set(x, "optimization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+    inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

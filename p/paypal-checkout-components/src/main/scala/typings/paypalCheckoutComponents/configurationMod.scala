@@ -236,8 +236,7 @@ object configurationMod {
   }
   object ButtonStyle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       color: ButtonColorOption,
       label: ButtonLabelOption,
       shape: ButtonShapeOption,
@@ -248,23 +247,17 @@ object configurationMod {
       __obj.asInstanceOf[ButtonStyle]
     }
     
-    @scala.inline
-    implicit class ButtonStyleMutableBuilder[Self <: ButtonStyle] (val x: Self) extends AnyVal {
+    extension [Self <: ButtonStyle](x: Self) {
       
-      @scala.inline
-      def setColor(value: ButtonColorOption): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: ButtonColorOption): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabel(value: ButtonLabelOption): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: ButtonLabelOption): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShape(value: ButtonShapeOption): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+      inline def setShape(value: ButtonShapeOption): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: ButtonSizeOption): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: ButtonSizeOption): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagline(value: Boolean): Self = StObject.set(x, "tagline", value.asInstanceOf[js.Any])
+      inline def setTagline(value: Boolean): Self = StObject.set(x, "tagline", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -10,19 +10,15 @@ trait InsightsServiceAccountResponseAccountDiscoveryGraph extends StObject {
 }
 object InsightsServiceAccountResponseAccountDiscoveryGraph {
   
-  @scala.inline
-  def apply(nodes: js.Array[InsightsServiceAccountResponseNodesItem]): InsightsServiceAccountResponseAccountDiscoveryGraph = {
+  inline def apply(nodes: js.Array[InsightsServiceAccountResponseNodesItem]): InsightsServiceAccountResponseAccountDiscoveryGraph = {
     val __obj = js.Dynamic.literal(nodes = nodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsightsServiceAccountResponseAccountDiscoveryGraph]
   }
   
-  @scala.inline
-  implicit class InsightsServiceAccountResponseAccountDiscoveryGraphMutableBuilder[Self <: InsightsServiceAccountResponseAccountDiscoveryGraph] (val x: Self) extends AnyVal {
+  extension [Self <: InsightsServiceAccountResponseAccountDiscoveryGraph](x: Self) {
     
-    @scala.inline
-    def setNodes(value: js.Array[InsightsServiceAccountResponseNodesItem]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: js.Array[InsightsServiceAccountResponseNodesItem]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodesVarargs(value: InsightsServiceAccountResponseNodesItem*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: InsightsServiceAccountResponseNodesItem*): Self = StObject.set(x, "nodes", js.Array(value :_*))
   }
 }

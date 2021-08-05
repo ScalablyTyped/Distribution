@@ -10,16 +10,13 @@ trait Signature extends StObject {
 }
 object Signature {
   
-  @scala.inline
-  def apply(signature: String): Signature = {
+  inline def apply(signature: String): Signature = {
     val __obj = js.Dynamic.literal(signature = signature.asInstanceOf[js.Any])
     __obj.asInstanceOf[Signature]
   }
   
-  @scala.inline
-  implicit class SignatureMutableBuilder[Self <: Signature] (val x: Self) extends AnyVal {
+  extension [Self <: Signature](x: Self) {
     
-    @scala.inline
-    def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
   }
 }

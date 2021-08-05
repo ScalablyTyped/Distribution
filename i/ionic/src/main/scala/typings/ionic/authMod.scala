@@ -37,17 +37,14 @@ object authMod {
   }
   object AuthClientDeps {
     
-    @scala.inline
-    def apply(client: IClient): AuthClientDeps = {
+    inline def apply(client: IClient): AuthClientDeps = {
       val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any])
       __obj.asInstanceOf[AuthClientDeps]
     }
     
-    @scala.inline
-    implicit class AuthClientDepsMutableBuilder[Self <: AuthClientDeps] (val x: Self) extends AnyVal {
+    extension [Self <: AuthClientDeps](x: Self) {
       
-      @scala.inline
-      def setClient(value: IClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: IClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     }
   }
   
@@ -57,17 +54,14 @@ object authMod {
   }
   object AuthConnection {
     
-    @scala.inline
-    def apply(uuid: String): AuthConnection = {
+    inline def apply(uuid: String): AuthConnection = {
       val __obj = js.Dynamic.literal(uuid = uuid.asInstanceOf[js.Any])
       __obj.asInstanceOf[AuthConnection]
     }
     
-    @scala.inline
-    implicit class AuthConnectionMutableBuilder[Self <: AuthConnection] (val x: Self) extends AnyVal {
+    extension [Self <: AuthConnection](x: Self) {
       
-      @scala.inline
-      def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+      inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     }
   }
 }

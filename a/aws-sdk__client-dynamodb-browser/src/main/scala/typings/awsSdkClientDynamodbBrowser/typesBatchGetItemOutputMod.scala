@@ -39,38 +39,28 @@ object typesBatchGetItemOutputMod {
   }
   object BatchGetItemOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): BatchGetItemOutput = {
+    inline def apply($metadata: ResponseMetadata): BatchGetItemOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[BatchGetItemOutput]
     }
     
-    @scala.inline
-    implicit class BatchGetItemOutputMutableBuilder[Self <: BatchGetItemOutput] (val x: Self) extends AnyVal {
+    extension [Self <: BatchGetItemOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsumedCapacity(value: js.Array[UnmarshalledConsumedCapacity]): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
+      inline def setConsumedCapacity(value: js.Array[UnmarshalledConsumedCapacity]): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
+      inline def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
       
-      @scala.inline
-      def setConsumedCapacityVarargs(value: UnmarshalledConsumedCapacity*): Self = StObject.set(x, "ConsumedCapacity", js.Array(value :_*))
+      inline def setConsumedCapacityVarargs(value: UnmarshalledConsumedCapacity*): Self = StObject.set(x, "ConsumedCapacity", js.Array(value :_*))
       
-      @scala.inline
-      def setResponses(value: StringDictionary[js.Array[StringDictionary[UnmarshalledAttributeValue]]]): Self = StObject.set(x, "Responses", value.asInstanceOf[js.Any])
+      inline def setResponses(value: StringDictionary[js.Array[StringDictionary[UnmarshalledAttributeValue]]]): Self = StObject.set(x, "Responses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponsesUndefined: Self = StObject.set(x, "Responses", js.undefined)
+      inline def setResponsesUndefined: Self = StObject.set(x, "Responses", js.undefined)
       
-      @scala.inline
-      def setUnprocessedKeys(value: StringDictionary[UnmarshalledKeysAndAttributes]): Self = StObject.set(x, "UnprocessedKeys", value.asInstanceOf[js.Any])
+      inline def setUnprocessedKeys(value: StringDictionary[UnmarshalledKeysAndAttributes]): Self = StObject.set(x, "UnprocessedKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnprocessedKeysUndefined: Self = StObject.set(x, "UnprocessedKeys", js.undefined)
+      inline def setUnprocessedKeysUndefined: Self = StObject.set(x, "UnprocessedKeys", js.undefined)
     }
   }
 }

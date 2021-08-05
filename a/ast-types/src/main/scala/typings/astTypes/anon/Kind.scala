@@ -33,67 +33,47 @@ trait Kind extends StObject {
 }
 object Kind {
   
-  @scala.inline
-  def apply(key: ExpressionKind, kind: constructor | method | get | set, value: FunctionKind): Kind = {
+  inline def apply(key: ExpressionKind, kind: constructor | method | get | set, value: FunctionKind): Kind = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Kind]
   }
   
-  @scala.inline
-  implicit class KindMutableBuilder[Self <: Kind] (val x: Self) extends AnyVal {
+  extension [Self <: Kind](x: Self) {
     
-    @scala.inline
-    def setComments(value: js.Array[CommentKind]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+    inline def setComments(value: js.Array[CommentKind]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentsNull: Self = StObject.set(x, "comments", null)
+    inline def setCommentsNull: Self = StObject.set(x, "comments", null)
     
-    @scala.inline
-    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+    inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
-    @scala.inline
-    def setCommentsVarargs(value: CommentKind*): Self = StObject.set(x, "comments", js.Array(value :_*))
+    inline def setCommentsVarargs(value: CommentKind*): Self = StObject.set(x, "comments", js.Array(value :_*))
     
-    @scala.inline
-    def setComputed(value: Boolean): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
+    inline def setComputed(value: Boolean): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputedUndefined: Self = StObject.set(x, "computed", js.undefined)
+    inline def setComputedUndefined: Self = StObject.set(x, "computed", js.undefined)
     
-    @scala.inline
-    def setDecorators(value: js.Array[DecoratorKind]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
+    inline def setDecorators(value: js.Array[DecoratorKind]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecoratorsNull: Self = StObject.set(x, "decorators", null)
+    inline def setDecoratorsNull: Self = StObject.set(x, "decorators", null)
     
-    @scala.inline
-    def setDecoratorsUndefined: Self = StObject.set(x, "decorators", js.undefined)
+    inline def setDecoratorsUndefined: Self = StObject.set(x, "decorators", js.undefined)
     
-    @scala.inline
-    def setDecoratorsVarargs(value: DecoratorKind*): Self = StObject.set(x, "decorators", js.Array(value :_*))
+    inline def setDecoratorsVarargs(value: DecoratorKind*): Self = StObject.set(x, "decorators", js.Array(value :_*))
     
-    @scala.inline
-    def setKey(value: ExpressionKind): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: ExpressionKind): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: constructor | method | get | set): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: constructor | method | get | set): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoc(value: SourceLocationKind): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
+    inline def setLoc(value: SourceLocationKind): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocNull: Self = StObject.set(x, "loc", null)
+    inline def setLocNull: Self = StObject.set(x, "loc", null)
     
-    @scala.inline
-    def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
+    inline def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
     
-    @scala.inline
-    def setStatic(value: Boolean): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
+    inline def setStatic(value: Boolean): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaticUndefined: Self = StObject.set(x, "static", js.undefined)
+    inline def setStaticUndefined: Self = StObject.set(x, "static", js.undefined)
     
-    @scala.inline
-    def setValue(value: FunctionKind): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: FunctionKind): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

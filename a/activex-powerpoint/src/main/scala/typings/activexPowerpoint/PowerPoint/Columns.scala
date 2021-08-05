@@ -19,6 +19,6 @@ trait Columns extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("PowerPoint.Columns_typekey")
+  /* private */ @JSName("PowerPoint.Columns_typekey")
   var PowerPointDotColumns_typekey: Columns = js.native
 }

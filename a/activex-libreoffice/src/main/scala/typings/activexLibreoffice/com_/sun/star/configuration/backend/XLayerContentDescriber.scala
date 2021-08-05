@@ -27,8 +27,7 @@ trait XLayerContentDescriber
 }
 object XLayerContentDescriber {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     describeLayer: (XLayerHandler, SeqEquiv[PropertyInfo]) => Unit,
     queryInterface: `type` => js.Any,
@@ -38,10 +37,8 @@ object XLayerContentDescriber {
     __obj.asInstanceOf[XLayerContentDescriber]
   }
   
-  @scala.inline
-  implicit class XLayerContentDescriberMutableBuilder[Self <: XLayerContentDescriber] (val x: Self) extends AnyVal {
+  extension [Self <: XLayerContentDescriber](x: Self) {
     
-    @scala.inline
-    def setDescribeLayer(value: (XLayerHandler, SeqEquiv[PropertyInfo]) => Unit): Self = StObject.set(x, "describeLayer", js.Any.fromFunction2(value))
+    inline def setDescribeLayer(value: (XLayerHandler, SeqEquiv[PropertyInfo]) => Unit): Self = StObject.set(x, "describeLayer", js.Any.fromFunction2(value))
   }
 }

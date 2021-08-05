@@ -54,8 +54,7 @@ trait typeRendererResult
 }
 object typeRendererResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     basemapId: String,
     basemapTheme: String,
     constructor: js.Function,
@@ -70,31 +69,22 @@ object typeRendererResult {
     __obj.asInstanceOf[typeRendererResult]
   }
   
-  @scala.inline
-  implicit class typeRendererResultMutableBuilder[Self <: typeRendererResult] (val x: Self) extends AnyVal {
+  extension [Self <: typeRendererResult](x: Self) {
     
-    @scala.inline
-    def setBasemapId(value: String): Self = StObject.set(x, "basemapId", value.asInstanceOf[js.Any])
+    inline def setBasemapId(value: String): Self = StObject.set(x, "basemapId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasemapTheme(value: String): Self = StObject.set(x, "basemapTheme", value.asInstanceOf[js.Any])
+    inline def setBasemapTheme(value: String): Self = StObject.set(x, "basemapTheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedUniqueValueInfos(value: js.Array[js.Any]): Self = StObject.set(x, "excludedUniqueValueInfos", value.asInstanceOf[js.Any])
+    inline def setExcludedUniqueValueInfos(value: js.Array[js.Any]): Self = StObject.set(x, "excludedUniqueValueInfos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedUniqueValueInfosVarargs(value: js.Any*): Self = StObject.set(x, "excludedUniqueValueInfos", js.Array(value :_*))
+    inline def setExcludedUniqueValueInfosVarargs(value: js.Any*): Self = StObject.set(x, "excludedUniqueValueInfos", js.Array(value :_*))
     
-    @scala.inline
-    def setRenderer(value: UniqueValueRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+    inline def setRenderer(value: UniqueValueRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeScheme(value: TypeScheme): Self = StObject.set(x, "typeScheme", value.asInstanceOf[js.Any])
+    inline def setTypeScheme(value: TypeScheme): Self = StObject.set(x, "typeScheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueValueInfos(value: js.Array[typeUniqueValueInfo]): Self = StObject.set(x, "uniqueValueInfos", value.asInstanceOf[js.Any])
+    inline def setUniqueValueInfos(value: js.Array[typeUniqueValueInfo]): Self = StObject.set(x, "uniqueValueInfos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueValueInfosVarargs(value: typeUniqueValueInfo*): Self = StObject.set(x, "uniqueValueInfos", js.Array(value :_*))
+    inline def setUniqueValueInfosVarargs(value: typeUniqueValueInfo*): Self = StObject.set(x, "uniqueValueInfos", js.Array(value :_*))
   }
 }

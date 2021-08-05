@@ -14,31 +14,23 @@ trait InsertOptions extends StObject {
 }
 object InsertOptions {
   
-  @scala.inline
-  def apply(): InsertOptions = {
+  inline def apply(): InsertOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InsertOptions]
   }
   
-  @scala.inline
-  implicit class InsertOptionsMutableBuilder[Self <: InsertOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InsertOptions](x: Self) {
     
-    @scala.inline
-    def setReturnNew(value: Boolean): Self = StObject.set(x, "returnNew", value.asInstanceOf[js.Any])
+    inline def setReturnNew(value: Boolean): Self = StObject.set(x, "returnNew", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnNewUndefined: Self = StObject.set(x, "returnNew", js.undefined)
+    inline def setReturnNewUndefined: Self = StObject.set(x, "returnNew", js.undefined)
     
-    @scala.inline
-    def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+    inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+    inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     
-    @scala.inline
-    def setWaitForSync(value: Boolean): Self = StObject.set(x, "waitForSync", value.asInstanceOf[js.Any])
+    inline def setWaitForSync(value: Boolean): Self = StObject.set(x, "waitForSync", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaitForSyncUndefined: Self = StObject.set(x, "waitForSync", js.undefined)
+    inline def setWaitForSyncUndefined: Self = StObject.set(x, "waitForSync", js.undefined)
   }
 }

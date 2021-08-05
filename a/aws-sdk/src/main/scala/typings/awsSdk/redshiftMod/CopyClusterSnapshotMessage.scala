@@ -28,31 +28,23 @@ trait CopyClusterSnapshotMessage extends StObject {
 }
 object CopyClusterSnapshotMessage {
   
-  @scala.inline
-  def apply(SourceSnapshotIdentifier: String, TargetSnapshotIdentifier: String): CopyClusterSnapshotMessage = {
+  inline def apply(SourceSnapshotIdentifier: String, TargetSnapshotIdentifier: String): CopyClusterSnapshotMessage = {
     val __obj = js.Dynamic.literal(SourceSnapshotIdentifier = SourceSnapshotIdentifier.asInstanceOf[js.Any], TargetSnapshotIdentifier = TargetSnapshotIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyClusterSnapshotMessage]
   }
   
-  @scala.inline
-  implicit class CopyClusterSnapshotMessageMutableBuilder[Self <: CopyClusterSnapshotMessage] (val x: Self) extends AnyVal {
+  extension [Self <: CopyClusterSnapshotMessage](x: Self) {
     
-    @scala.inline
-    def setManualSnapshotRetentionPeriod(value: IntegerOptional): Self = StObject.set(x, "ManualSnapshotRetentionPeriod", value.asInstanceOf[js.Any])
+    inline def setManualSnapshotRetentionPeriod(value: IntegerOptional): Self = StObject.set(x, "ManualSnapshotRetentionPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManualSnapshotRetentionPeriodUndefined: Self = StObject.set(x, "ManualSnapshotRetentionPeriod", js.undefined)
+    inline def setManualSnapshotRetentionPeriodUndefined: Self = StObject.set(x, "ManualSnapshotRetentionPeriod", js.undefined)
     
-    @scala.inline
-    def setSourceSnapshotClusterIdentifier(value: String): Self = StObject.set(x, "SourceSnapshotClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setSourceSnapshotClusterIdentifier(value: String): Self = StObject.set(x, "SourceSnapshotClusterIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceSnapshotClusterIdentifierUndefined: Self = StObject.set(x, "SourceSnapshotClusterIdentifier", js.undefined)
+    inline def setSourceSnapshotClusterIdentifierUndefined: Self = StObject.set(x, "SourceSnapshotClusterIdentifier", js.undefined)
     
-    @scala.inline
-    def setSourceSnapshotIdentifier(value: String): Self = StObject.set(x, "SourceSnapshotIdentifier", value.asInstanceOf[js.Any])
+    inline def setSourceSnapshotIdentifier(value: String): Self = StObject.set(x, "SourceSnapshotIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetSnapshotIdentifier(value: String): Self = StObject.set(x, "TargetSnapshotIdentifier", value.asInstanceOf[js.Any])
+    inline def setTargetSnapshotIdentifier(value: String): Self = StObject.set(x, "TargetSnapshotIdentifier", value.asInstanceOf[js.Any])
   }
 }

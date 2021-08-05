@@ -29,8 +29,7 @@ trait IVaultCustomApplicationManagementOperations extends StObject {
 }
 object IVaultCustomApplicationManagementOperations {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DownloadCustomApplicationBlock: (Double, Double, Double) => js.Array[Double],
     DownloadCustomApplicationBlockBegin: String => IFileDownloadSession,
     DownloadCustomApplicationBlockBegin_32bit: String => IFileDownloadSession,
@@ -46,37 +45,26 @@ object IVaultCustomApplicationManagementOperations {
     __obj.asInstanceOf[IVaultCustomApplicationManagementOperations]
   }
   
-  @scala.inline
-  implicit class IVaultCustomApplicationManagementOperationsMutableBuilder[Self <: IVaultCustomApplicationManagementOperations] (val x: Self) extends AnyVal {
+  extension [Self <: IVaultCustomApplicationManagementOperations](x: Self) {
     
-    @scala.inline
-    def setDownloadCustomApplicationBlock(value: (Double, Double, Double) => js.Array[Double]): Self = StObject.set(x, "DownloadCustomApplicationBlock", js.Any.fromFunction3(value))
+    inline def setDownloadCustomApplicationBlock(value: (Double, Double, Double) => js.Array[Double]): Self = StObject.set(x, "DownloadCustomApplicationBlock", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setDownloadCustomApplicationBlockBegin(value: String => IFileDownloadSession): Self = StObject.set(x, "DownloadCustomApplicationBlockBegin", js.Any.fromFunction1(value))
+    inline def setDownloadCustomApplicationBlockBegin(value: String => IFileDownloadSession): Self = StObject.set(x, "DownloadCustomApplicationBlockBegin", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDownloadCustomApplicationBlockBegin_32bit(value: String => IFileDownloadSession): Self = StObject.set(x, "DownloadCustomApplicationBlockBegin_32bit", js.Any.fromFunction1(value))
+    inline def setDownloadCustomApplicationBlockBegin_32bit(value: String => IFileDownloadSession): Self = StObject.set(x, "DownloadCustomApplicationBlockBegin_32bit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDownloadCustomApplicationBlock_32bit(value: (Double, Double, Double) => js.Array[Double]): Self = StObject.set(x, "DownloadCustomApplicationBlock_32bit", js.Any.fromFunction3(value))
+    inline def setDownloadCustomApplicationBlock_32bit(value: (Double, Double, Double) => js.Array[Double]): Self = StObject.set(x, "DownloadCustomApplicationBlock_32bit", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setEnableCustomApplication(value: (String, Boolean) => Unit): Self = StObject.set(x, "EnableCustomApplication", js.Any.fromFunction2(value))
+    inline def setEnableCustomApplication(value: (String, Boolean) => Unit): Self = StObject.set(x, "EnableCustomApplication", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetCustomApplication(value: String => ICustomApplication): Self = StObject.set(x, "GetCustomApplication", js.Any.fromFunction1(value))
+    inline def setGetCustomApplication(value: String => ICustomApplication): Self = StObject.set(x, "GetCustomApplication", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCustomApplications(value: () => ICustomApplications): Self = StObject.set(x, "GetCustomApplications", js.Any.fromFunction0(value))
+    inline def setGetCustomApplications(value: () => ICustomApplications): Self = StObject.set(x, "GetCustomApplications", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCustomApplicationsEx(value: MFExtApplicationPlatform => ICustomApplications): Self = StObject.set(x, "GetCustomApplicationsEx", js.Any.fromFunction1(value))
+    inline def setGetCustomApplicationsEx(value: MFExtApplicationPlatform => ICustomApplications): Self = StObject.set(x, "GetCustomApplicationsEx", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInstallCustomApplication(value: String => Unit): Self = StObject.set(x, "InstallCustomApplication", js.Any.fromFunction1(value))
+    inline def setInstallCustomApplication(value: String => Unit): Self = StObject.set(x, "InstallCustomApplication", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUninstallCustomApplication(value: String => Unit): Self = StObject.set(x, "UninstallCustomApplication", js.Any.fromFunction1(value))
+    inline def setUninstallCustomApplication(value: String => Unit): Self = StObject.set(x, "UninstallCustomApplication", js.Any.fromFunction1(value))
   }
 }

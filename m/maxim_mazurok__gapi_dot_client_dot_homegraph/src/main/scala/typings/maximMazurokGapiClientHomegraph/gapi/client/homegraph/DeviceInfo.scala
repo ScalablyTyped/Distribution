@@ -20,37 +20,27 @@ trait DeviceInfo extends StObject {
 }
 object DeviceInfo {
   
-  @scala.inline
-  def apply(): DeviceInfo = {
+  inline def apply(): DeviceInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceInfo]
   }
   
-  @scala.inline
-  implicit class DeviceInfoMutableBuilder[Self <: DeviceInfo] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceInfo](x: Self) {
     
-    @scala.inline
-    def setHwVersion(value: String): Self = StObject.set(x, "hwVersion", value.asInstanceOf[js.Any])
+    inline def setHwVersion(value: String): Self = StObject.set(x, "hwVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHwVersionUndefined: Self = StObject.set(x, "hwVersion", js.undefined)
+    inline def setHwVersionUndefined: Self = StObject.set(x, "hwVersion", js.undefined)
     
-    @scala.inline
-    def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
+    inline def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManufacturerUndefined: Self = StObject.set(x, "manufacturer", js.undefined)
+    inline def setManufacturerUndefined: Self = StObject.set(x, "manufacturer", js.undefined)
     
-    @scala.inline
-    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    @scala.inline
-    def setSwVersion(value: String): Self = StObject.set(x, "swVersion", value.asInstanceOf[js.Any])
+    inline def setSwVersion(value: String): Self = StObject.set(x, "swVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwVersionUndefined: Self = StObject.set(x, "swVersion", js.undefined)
+    inline def setSwVersionUndefined: Self = StObject.set(x, "swVersion", js.undefined)
   }
 }

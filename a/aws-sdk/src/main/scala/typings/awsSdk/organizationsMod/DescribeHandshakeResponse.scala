@@ -13,19 +13,15 @@ trait DescribeHandshakeResponse extends StObject {
 }
 object DescribeHandshakeResponse {
   
-  @scala.inline
-  def apply(): DescribeHandshakeResponse = {
+  inline def apply(): DescribeHandshakeResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeHandshakeResponse]
   }
   
-  @scala.inline
-  implicit class DescribeHandshakeResponseMutableBuilder[Self <: DescribeHandshakeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeHandshakeResponse](x: Self) {
     
-    @scala.inline
-    def setHandshake(value: Handshake): Self = StObject.set(x, "Handshake", value.asInstanceOf[js.Any])
+    inline def setHandshake(value: Handshake): Self = StObject.set(x, "Handshake", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandshakeUndefined: Self = StObject.set(x, "Handshake", js.undefined)
+    inline def setHandshakeUndefined: Self = StObject.set(x, "Handshake", js.undefined)
   }
 }

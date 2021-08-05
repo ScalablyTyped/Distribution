@@ -28,28 +28,21 @@ trait UserGameData extends StObject {
 }
 object UserGameData {
   
-  @scala.inline
-  def apply(KVDataList: js.Array[KVData], avatarUrl: String, nickname: String, openid: String): UserGameData = {
+  inline def apply(KVDataList: js.Array[KVData], avatarUrl: String, nickname: String, openid: String): UserGameData = {
     val __obj = js.Dynamic.literal(KVDataList = KVDataList.asInstanceOf[js.Any], avatarUrl = avatarUrl.asInstanceOf[js.Any], nickname = nickname.asInstanceOf[js.Any], openid = openid.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserGameData]
   }
   
-  @scala.inline
-  implicit class UserGameDataMutableBuilder[Self <: UserGameData] (val x: Self) extends AnyVal {
+  extension [Self <: UserGameData](x: Self) {
     
-    @scala.inline
-    def setAvatarUrl(value: String): Self = StObject.set(x, "avatarUrl", value.asInstanceOf[js.Any])
+    inline def setAvatarUrl(value: String): Self = StObject.set(x, "avatarUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKVDataList(value: js.Array[KVData]): Self = StObject.set(x, "KVDataList", value.asInstanceOf[js.Any])
+    inline def setKVDataList(value: js.Array[KVData]): Self = StObject.set(x, "KVDataList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKVDataListVarargs(value: KVData*): Self = StObject.set(x, "KVDataList", js.Array(value :_*))
+    inline def setKVDataListVarargs(value: KVData*): Self = StObject.set(x, "KVDataList", js.Array(value :_*))
     
-    @scala.inline
-    def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
+    inline def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenid(value: String): Self = StObject.set(x, "openid", value.asInstanceOf[js.Any])
+    inline def setOpenid(value: String): Self = StObject.set(x, "openid", value.asInstanceOf[js.Any])
   }
 }

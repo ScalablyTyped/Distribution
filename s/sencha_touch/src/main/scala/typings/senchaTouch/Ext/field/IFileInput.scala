@@ -72,91 +72,63 @@ trait IFileInput
 }
 object IFileInput {
   
-  @scala.inline
-  def apply(): IFileInput = {
+  inline def apply(): IFileInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IFileInput]
   }
   
-  @scala.inline
-  implicit class IFileInputMutableBuilder[Self <: IFileInput] (val x: Self) extends AnyVal {
+  extension [Self <: IFileInput](x: Self) {
     
-    @scala.inline
-    def setApplyCapture(value: /* value */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "applyCapture", js.Any.fromFunction1(value))
+    inline def setApplyCapture(value: /* value */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "applyCapture", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setApplyCaptureUndefined: Self = StObject.set(x, "applyCapture", js.undefined)
+    inline def setApplyCaptureUndefined: Self = StObject.set(x, "applyCapture", js.undefined)
     
-    @scala.inline
-    def setGetAccept(value: () => js.Any): Self = StObject.set(x, "getAccept", js.Any.fromFunction0(value))
+    inline def setGetAccept(value: () => js.Any): Self = StObject.set(x, "getAccept", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAcceptUndefined: Self = StObject.set(x, "getAccept", js.undefined)
+    inline def setGetAcceptUndefined: Self = StObject.set(x, "getAccept", js.undefined)
     
-    @scala.inline
-    def setGetCapture(value: () => js.Any): Self = StObject.set(x, "getCapture", js.Any.fromFunction0(value))
+    inline def setGetCapture(value: () => js.Any): Self = StObject.set(x, "getCapture", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCaptureUndefined: Self = StObject.set(x, "getCapture", js.undefined)
+    inline def setGetCaptureUndefined: Self = StObject.set(x, "getCapture", js.undefined)
     
-    @scala.inline
-    def setGetFiles(value: () => FileList): Self = StObject.set(x, "getFiles", js.Any.fromFunction0(value))
+    inline def setGetFiles(value: () => FileList): Self = StObject.set(x, "getFiles", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFilesUndefined: Self = StObject.set(x, "getFiles", js.undefined)
+    inline def setGetFilesUndefined: Self = StObject.set(x, "getFiles", js.undefined)
     
-    @scala.inline
-    def setGetMultiple(value: () => Boolean): Self = StObject.set(x, "getMultiple", js.Any.fromFunction0(value))
+    inline def setGetMultiple(value: () => Boolean): Self = StObject.set(x, "getMultiple", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMultipleUndefined: Self = StObject.set(x, "getMultiple", js.undefined)
+    inline def setGetMultipleUndefined: Self = StObject.set(x, "getMultiple", js.undefined)
     
-    @scala.inline
-    def setGetValue(value: () => String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
+    inline def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
     
-    @scala.inline
-    def setMe(value: js.Any): Self = StObject.set(x, "me", value.asInstanceOf[js.Any])
+    inline def setMe(value: js.Any): Self = StObject.set(x, "me", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeUndefined: Self = StObject.set(x, "me", js.undefined)
+    inline def setMeUndefined: Self = StObject.set(x, "me", js.undefined)
     
-    @scala.inline
-    def setNewValue(value: js.Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: js.Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
+    inline def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
     
-    @scala.inline
-    def setSetAccept(value: /* accept */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setAccept", js.Any.fromFunction1(value))
+    inline def setSetAccept(value: /* accept */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setAccept", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetAcceptUndefined: Self = StObject.set(x, "setAccept", js.undefined)
+    inline def setSetAcceptUndefined: Self = StObject.set(x, "setAccept", js.undefined)
     
-    @scala.inline
-    def setSetCapture(value: /* capture */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setCapture", js.Any.fromFunction1(value))
+    inline def setSetCapture(value: /* capture */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setCapture", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetCaptureUndefined: Self = StObject.set(x, "setCapture", js.undefined)
+    inline def setSetCaptureUndefined: Self = StObject.set(x, "setCapture", js.undefined)
     
-    @scala.inline
-    def setSetMultiple(value: /* multiple */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setMultiple", js.Any.fromFunction1(value))
+    inline def setSetMultiple(value: /* multiple */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setMultiple", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMultipleUndefined: Self = StObject.set(x, "setMultiple", js.undefined)
+    inline def setSetMultipleUndefined: Self = StObject.set(x, "setMultiple", js.undefined)
     
-    @scala.inline
-    def setSetName(value: /* name */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
+    inline def setSetName(value: /* name */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetNameUndefined: Self = StObject.set(x, "setName", js.undefined)
+    inline def setSetNameUndefined: Self = StObject.set(x, "setName", js.undefined)
     
-    @scala.inline
-    def setUpdateMultiple(value: () => Unit): Self = StObject.set(x, "updateMultiple", js.Any.fromFunction0(value))
+    inline def setUpdateMultiple(value: () => Unit): Self = StObject.set(x, "updateMultiple", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdateMultipleUndefined: Self = StObject.set(x, "updateMultiple", js.undefined)
+    inline def setUpdateMultipleUndefined: Self = StObject.set(x, "updateMultiple", js.undefined)
   }
 }

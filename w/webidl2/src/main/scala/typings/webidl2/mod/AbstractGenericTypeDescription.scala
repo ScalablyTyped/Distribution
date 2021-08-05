@@ -22,8 +22,7 @@ trait AbstractGenericTypeDescription
 }
 object AbstractGenericTypeDescription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     extAttrs: js.Array[ExtendedAttribute],
     generic: FrozenArray | ObservableArray | Promise | record | sequence | _empty,
     idlType: js.Array[IDLTypeDescription],
@@ -35,13 +34,10 @@ object AbstractGenericTypeDescription {
     __obj.asInstanceOf[AbstractGenericTypeDescription]
   }
   
-  @scala.inline
-  implicit class AbstractGenericTypeDescriptionMutableBuilder[Self <: AbstractGenericTypeDescription] (val x: Self) extends AnyVal {
+  extension [Self <: AbstractGenericTypeDescription](x: Self) {
     
-    @scala.inline
-    def setIdlType(value: js.Array[IDLTypeDescription]): Self = StObject.set(x, "idlType", value.asInstanceOf[js.Any])
+    inline def setIdlType(value: js.Array[IDLTypeDescription]): Self = StObject.set(x, "idlType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdlTypeVarargs(value: IDLTypeDescription*): Self = StObject.set(x, "idlType", js.Array(value :_*))
+    inline def setIdlTypeVarargs(value: IDLTypeDescription*): Self = StObject.set(x, "idlType", js.Array(value :_*))
   }
 }

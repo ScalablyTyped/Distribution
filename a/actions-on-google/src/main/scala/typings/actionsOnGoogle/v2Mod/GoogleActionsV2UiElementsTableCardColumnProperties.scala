@@ -19,25 +19,19 @@ trait GoogleActionsV2UiElementsTableCardColumnProperties extends StObject {
 }
 object GoogleActionsV2UiElementsTableCardColumnProperties {
   
-  @scala.inline
-  def apply(): GoogleActionsV2UiElementsTableCardColumnProperties = {
+  inline def apply(): GoogleActionsV2UiElementsTableCardColumnProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2UiElementsTableCardColumnProperties]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2UiElementsTableCardColumnPropertiesMutableBuilder[Self <: GoogleActionsV2UiElementsTableCardColumnProperties] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2UiElementsTableCardColumnProperties](x: Self) {
     
-    @scala.inline
-    def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    @scala.inline
-    def setHorizontalAlignment(value: GoogleActionsV2UiElementsTableCardColumnPropertiesHorizontalAlignment): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
+    inline def setHorizontalAlignment(value: GoogleActionsV2UiElementsTableCardColumnPropertiesHorizontalAlignment): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
+    inline def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
   }
 }

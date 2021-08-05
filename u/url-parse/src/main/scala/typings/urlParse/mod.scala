@@ -9,28 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(address: String): URLParse = ^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any]).asInstanceOf[URLParse]
-  @scala.inline
-  def apply(address: String, location: String): URLParse = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], location.asInstanceOf[js.Any])).asInstanceOf[URLParse]
-  @scala.inline
-  def apply(address: String, location: String, parser: Boolean): URLParse = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], location.asInstanceOf[js.Any], parser.asInstanceOf[js.Any])).asInstanceOf[URLParse]
-  @scala.inline
-  def apply(address: String, location: String, parser: QueryParser): URLParse = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], location.asInstanceOf[js.Any], parser.asInstanceOf[js.Any])).asInstanceOf[URLParse]
-  @scala.inline
-  def apply(address: String, location: js.Object): URLParse = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], location.asInstanceOf[js.Any])).asInstanceOf[URLParse]
-  @scala.inline
-  def apply(address: String, location: js.Object, parser: Boolean): URLParse = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], location.asInstanceOf[js.Any], parser.asInstanceOf[js.Any])).asInstanceOf[URLParse]
-  @scala.inline
-  def apply(address: String, location: js.Object, parser: QueryParser): URLParse = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], location.asInstanceOf[js.Any], parser.asInstanceOf[js.Any])).asInstanceOf[URLParse]
-  @scala.inline
-  def apply(address: String, location: Unit, parser: Boolean): URLParse = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], location.asInstanceOf[js.Any], parser.asInstanceOf[js.Any])).asInstanceOf[URLParse]
-  @scala.inline
-  def apply(address: String, location: Unit, parser: QueryParser): URLParse = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], location.asInstanceOf[js.Any], parser.asInstanceOf[js.Any])).asInstanceOf[URLParse]
-  @scala.inline
-  def apply(address: String, parser: Boolean): URLParse = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], parser.asInstanceOf[js.Any])).asInstanceOf[URLParse]
-  @scala.inline
-  def apply(address: String, parser: QueryParser): URLParse = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], parser.asInstanceOf[js.Any])).asInstanceOf[URLParse]
+  inline def apply(address: String): URLParse = ^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any]).asInstanceOf[URLParse]
+  inline def apply(address: String, location: String): URLParse = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], location.asInstanceOf[js.Any])).asInstanceOf[URLParse]
+  inline def apply(address: String, location: String, parser: Boolean): URLParse = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], location.asInstanceOf[js.Any], parser.asInstanceOf[js.Any])).asInstanceOf[URLParse]
+  inline def apply(address: String, location: String, parser: QueryParser): URLParse = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], location.asInstanceOf[js.Any], parser.asInstanceOf[js.Any])).asInstanceOf[URLParse]
+  inline def apply(address: String, location: js.Object): URLParse = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], location.asInstanceOf[js.Any])).asInstanceOf[URLParse]
+  inline def apply(address: String, location: js.Object, parser: Boolean): URLParse = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], location.asInstanceOf[js.Any], parser.asInstanceOf[js.Any])).asInstanceOf[URLParse]
+  inline def apply(address: String, location: js.Object, parser: QueryParser): URLParse = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], location.asInstanceOf[js.Any], parser.asInstanceOf[js.Any])).asInstanceOf[URLParse]
+  inline def apply(address: String, location: Unit, parser: Boolean): URLParse = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], location.asInstanceOf[js.Any], parser.asInstanceOf[js.Any])).asInstanceOf[URLParse]
+  inline def apply(address: String, location: Unit, parser: QueryParser): URLParse = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], location.asInstanceOf[js.Any], parser.asInstanceOf[js.Any])).asInstanceOf[URLParse]
+  inline def apply(address: String, parser: Boolean): URLParse = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], parser.asInstanceOf[js.Any])).asInstanceOf[URLParse]
+  inline def apply(address: String, parser: QueryParser): URLParse = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], parser.asInstanceOf[js.Any])).asInstanceOf[URLParse]
   
   @JSImport("url-parse", JSImport.Namespace)
   @js.native
@@ -55,17 +44,14 @@ object mod {
     def this(address: String, location: Unit, parser: QueryParser) = this()
   }
   
-  @scala.inline
-  def extractProtocol(url: String): Protocol = ^.asInstanceOf[js.Dynamic].applyDynamic("extractProtocol")(url.asInstanceOf[js.Any]).asInstanceOf[Protocol]
+  inline def extractProtocol(url: String): Protocol = ^.asInstanceOf[js.Dynamic].applyDynamic("extractProtocol")(url.asInstanceOf[js.Any]).asInstanceOf[Protocol]
   
-  @scala.inline
-  def location(url: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("location")(url.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  inline def location(url: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("location")(url.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
   @JSImport("url-parse", "qs")
   @js.native
   def qs: Parse = js.native
-  @scala.inline
-  def qs_=(x: Parse): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("qs")(x.asInstanceOf[js.Any])
+  inline def qs_=(x: Parse): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("qs")(x.asInstanceOf[js.Any])
   
   type QueryParser = js.Function1[/* query */ String, js.Object]
   
@@ -134,43 +120,30 @@ object mod {
   trait URLPart extends StObject
   object URLPart {
     
-    @scala.inline
-    def auth: typings.urlParse.urlParseStrings.auth = "auth".asInstanceOf[typings.urlParse.urlParseStrings.auth]
+    inline def auth: typings.urlParse.urlParseStrings.auth = "auth".asInstanceOf[typings.urlParse.urlParseStrings.auth]
     
-    @scala.inline
-    def hash: typings.urlParse.urlParseStrings.hash = "hash".asInstanceOf[typings.urlParse.urlParseStrings.hash]
+    inline def hash: typings.urlParse.urlParseStrings.hash = "hash".asInstanceOf[typings.urlParse.urlParseStrings.hash]
     
-    @scala.inline
-    def host: typings.urlParse.urlParseStrings.host = "host".asInstanceOf[typings.urlParse.urlParseStrings.host]
+    inline def host: typings.urlParse.urlParseStrings.host = "host".asInstanceOf[typings.urlParse.urlParseStrings.host]
     
-    @scala.inline
-    def hostname: typings.urlParse.urlParseStrings.hostname = "hostname".asInstanceOf[typings.urlParse.urlParseStrings.hostname]
+    inline def hostname: typings.urlParse.urlParseStrings.hostname = "hostname".asInstanceOf[typings.urlParse.urlParseStrings.hostname]
     
-    @scala.inline
-    def href: typings.urlParse.urlParseStrings.href = "href".asInstanceOf[typings.urlParse.urlParseStrings.href]
+    inline def href: typings.urlParse.urlParseStrings.href = "href".asInstanceOf[typings.urlParse.urlParseStrings.href]
     
-    @scala.inline
-    def origin: typings.urlParse.urlParseStrings.origin = "origin".asInstanceOf[typings.urlParse.urlParseStrings.origin]
+    inline def origin: typings.urlParse.urlParseStrings.origin = "origin".asInstanceOf[typings.urlParse.urlParseStrings.origin]
     
-    @scala.inline
-    def password: typings.urlParse.urlParseStrings.password = "password".asInstanceOf[typings.urlParse.urlParseStrings.password]
+    inline def password: typings.urlParse.urlParseStrings.password = "password".asInstanceOf[typings.urlParse.urlParseStrings.password]
     
-    @scala.inline
-    def pathname: typings.urlParse.urlParseStrings.pathname = "pathname".asInstanceOf[typings.urlParse.urlParseStrings.pathname]
+    inline def pathname: typings.urlParse.urlParseStrings.pathname = "pathname".asInstanceOf[typings.urlParse.urlParseStrings.pathname]
     
-    @scala.inline
-    def port: typings.urlParse.urlParseStrings.port = "port".asInstanceOf[typings.urlParse.urlParseStrings.port]
+    inline def port: typings.urlParse.urlParseStrings.port = "port".asInstanceOf[typings.urlParse.urlParseStrings.port]
     
-    @scala.inline
-    def protocol: typings.urlParse.urlParseStrings.protocol = "protocol".asInstanceOf[typings.urlParse.urlParseStrings.protocol]
+    inline def protocol: typings.urlParse.urlParseStrings.protocol = "protocol".asInstanceOf[typings.urlParse.urlParseStrings.protocol]
     
-    @scala.inline
-    def query: typings.urlParse.urlParseStrings.query = "query".asInstanceOf[typings.urlParse.urlParseStrings.query]
+    inline def query: typings.urlParse.urlParseStrings.query = "query".asInstanceOf[typings.urlParse.urlParseStrings.query]
     
-    @scala.inline
-    def slashes: typings.urlParse.urlParseStrings.slashes = "slashes".asInstanceOf[typings.urlParse.urlParseStrings.slashes]
+    inline def slashes: typings.urlParse.urlParseStrings.slashes = "slashes".asInstanceOf[typings.urlParse.urlParseStrings.slashes]
     
-    @scala.inline
-    def username: typings.urlParse.urlParseStrings.username = "username".asInstanceOf[typings.urlParse.urlParseStrings.username]
+    inline def username: typings.urlParse.urlParseStrings.username = "username".asInstanceOf[typings.urlParse.urlParseStrings.username]
   }
 }

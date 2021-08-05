@@ -49,8 +49,7 @@ trait KmlIconStyle
 }
 object KmlIconStyle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
     equals_ : KmlObject => Boolean,
@@ -81,28 +80,20 @@ object KmlIconStyle {
     __obj.asInstanceOf[KmlIconStyle]
   }
   
-  @scala.inline
-  implicit class KmlIconStyleMutableBuilder[Self <: KmlIconStyle] (val x: Self) extends AnyVal {
+  extension [Self <: KmlIconStyle](x: Self) {
     
-    @scala.inline
-    def setGetHeading(value: () => Double): Self = StObject.set(x, "getHeading", js.Any.fromFunction0(value))
+    inline def setGetHeading(value: () => Double): Self = StObject.set(x, "getHeading", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHotSpot(value: () => KmlVec2): Self = StObject.set(x, "getHotSpot", js.Any.fromFunction0(value))
+    inline def setGetHotSpot(value: () => KmlVec2): Self = StObject.set(x, "getHotSpot", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIcon(value: () => KmlIcon): Self = StObject.set(x, "getIcon", js.Any.fromFunction0(value))
+    inline def setGetIcon(value: () => KmlIcon): Self = StObject.set(x, "getIcon", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetScale(value: () => Double): Self = StObject.set(x, "getScale", js.Any.fromFunction0(value))
+    inline def setGetScale(value: () => Double): Self = StObject.set(x, "getScale", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetHeading(value: Double => Unit): Self = StObject.set(x, "setHeading", js.Any.fromFunction1(value))
+    inline def setSetHeading(value: Double => Unit): Self = StObject.set(x, "setHeading", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetIcon(value: KmlIcon => Unit): Self = StObject.set(x, "setIcon", js.Any.fromFunction1(value))
+    inline def setSetIcon(value: KmlIcon => Unit): Self = StObject.set(x, "setIcon", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetScale(value: Double => Unit): Self = StObject.set(x, "setScale", js.Any.fromFunction1(value))
+    inline def setSetScale(value: Double => Unit): Self = StObject.set(x, "setScale", js.Any.fromFunction1(value))
   }
 }

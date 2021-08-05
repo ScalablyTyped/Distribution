@@ -18,16 +18,13 @@ trait ASPxClientUploadControlDropZoneLeaveEventArgs
 }
 object ASPxClientUploadControlDropZoneLeaveEventArgs {
   
-  @scala.inline
-  def apply(dropZone: js.Any): ASPxClientUploadControlDropZoneLeaveEventArgs = {
+  inline def apply(dropZone: js.Any): ASPxClientUploadControlDropZoneLeaveEventArgs = {
     val __obj = js.Dynamic.literal(dropZone = dropZone.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientUploadControlDropZoneLeaveEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientUploadControlDropZoneLeaveEventArgsMutableBuilder[Self <: ASPxClientUploadControlDropZoneLeaveEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientUploadControlDropZoneLeaveEventArgs](x: Self) {
     
-    @scala.inline
-    def setDropZone(value: js.Any): Self = StObject.set(x, "dropZone", value.asInstanceOf[js.Any])
+    inline def setDropZone(value: js.Any): Self = StObject.set(x, "dropZone", value.asInstanceOf[js.Any])
   }
 }

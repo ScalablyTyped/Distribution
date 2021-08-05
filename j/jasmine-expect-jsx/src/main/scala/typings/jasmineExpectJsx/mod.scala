@@ -19,20 +19,16 @@ object mod {
       }
       object Matchers {
         
-        @scala.inline
-        def apply[T](toEqualJSX: Expected[T] => Boolean, toIncludeJSX: Expected[T] => Boolean): Matchers[T] = {
+        inline def apply[T](toEqualJSX: Expected[T] => Boolean, toIncludeJSX: Expected[T] => Boolean): Matchers[T] = {
           val __obj = js.Dynamic.literal(toEqualJSX = js.Any.fromFunction1(toEqualJSX), toIncludeJSX = js.Any.fromFunction1(toIncludeJSX))
           __obj.asInstanceOf[Matchers[T]]
         }
         
-        @scala.inline
-        implicit class MatchersMutableBuilder[Self <: Matchers[?], T] (val x: Self & Matchers[T]) extends AnyVal {
+        extension [Self <: Matchers[?], T](x: Self & Matchers[T]) {
           
-          @scala.inline
-          def setToEqualJSX(value: Expected[T] => Boolean): Self = StObject.set(x, "toEqualJSX", js.Any.fromFunction1(value))
+          inline def setToEqualJSX(value: Expected[T] => Boolean): Self = StObject.set(x, "toEqualJSX", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setToIncludeJSX(value: Expected[T] => Boolean): Self = StObject.set(x, "toIncludeJSX", js.Any.fromFunction1(value))
+          inline def setToIncludeJSX(value: Expected[T] => Boolean): Self = StObject.set(x, "toIncludeJSX", js.Any.fromFunction1(value))
         }
       }
     }

@@ -11,22 +11,17 @@ trait BatchCreateAdminOverridesResponse extends StObject {
 }
 object BatchCreateAdminOverridesResponse {
   
-  @scala.inline
-  def apply(): BatchCreateAdminOverridesResponse = {
+  inline def apply(): BatchCreateAdminOverridesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchCreateAdminOverridesResponse]
   }
   
-  @scala.inline
-  implicit class BatchCreateAdminOverridesResponseMutableBuilder[Self <: BatchCreateAdminOverridesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchCreateAdminOverridesResponse](x: Self) {
     
-    @scala.inline
-    def setOverrides(value: js.Array[QuotaOverride]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+    inline def setOverrides(value: js.Array[QuotaOverride]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+    inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     
-    @scala.inline
-    def setOverridesVarargs(value: QuotaOverride*): Self = StObject.set(x, "overrides", js.Array(value :_*))
+    inline def setOverridesVarargs(value: QuotaOverride*): Self = StObject.set(x, "overrides", js.Array(value :_*))
   }
 }

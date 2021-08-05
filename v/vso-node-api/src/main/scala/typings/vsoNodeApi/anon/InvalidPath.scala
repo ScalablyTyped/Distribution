@@ -22,8 +22,7 @@ trait InvalidPath extends StObject {
 }
 object InvalidPath {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     invalidPath: scala.Double,
     mergeContentNotFound: scala.Double,
     none: scala.Double,
@@ -36,28 +35,20 @@ object InvalidPath {
     __obj.asInstanceOf[InvalidPath]
   }
   
-  @scala.inline
-  implicit class InvalidPathMutableBuilder[Self <: InvalidPath] (val x: Self) extends AnyVal {
+  extension [Self <: InvalidPath](x: Self) {
     
-    @scala.inline
-    def setInvalidPath(value: scala.Double): Self = StObject.set(x, "invalidPath", value.asInstanceOf[js.Any])
+    inline def setInvalidPath(value: scala.Double): Self = StObject.set(x, "invalidPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeContentNotFound(value: scala.Double): Self = StObject.set(x, "mergeContentNotFound", value.asInstanceOf[js.Any])
+    inline def setMergeContentNotFound(value: scala.Double): Self = StObject.set(x, "mergeContentNotFound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOtherError(value: scala.Double): Self = StObject.set(x, "otherError", value.asInstanceOf[js.Any])
+    inline def setOtherError(value: scala.Double): Self = StObject.set(x, "otherError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathInUse(value: scala.Double): Self = StObject.set(x, "pathInUse", value.asInstanceOf[js.Any])
+    inline def setPathInUse(value: scala.Double): Self = StObject.set(x, "pathInUse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnknownAction(value: scala.Double): Self = StObject.set(x, "unknownAction", value.asInstanceOf[js.Any])
+    inline def setUnknownAction(value: scala.Double): Self = StObject.set(x, "unknownAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnknownMergeType(value: scala.Double): Self = StObject.set(x, "unknownMergeType", value.asInstanceOf[js.Any])
+    inline def setUnknownMergeType(value: scala.Double): Self = StObject.set(x, "unknownMergeType", value.asInstanceOf[js.Any])
   }
 }

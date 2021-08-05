@@ -18,21 +18,15 @@ trait KeyboardTypeIOS
      with _KeyboardTypeOptions
 object KeyboardTypeIOS {
   
-  @scala.inline
-  def `ascii-capable`: typings.reactNative.reactNativeStrings.`ascii-capable` = "ascii-capable".asInstanceOf[typings.reactNative.reactNativeStrings.`ascii-capable`]
+  inline def `ascii-capable`: typings.reactNative.reactNativeStrings.`ascii-capable` = "ascii-capable".asInstanceOf[typings.reactNative.reactNativeStrings.`ascii-capable`]
   
-  @scala.inline
-  def `name-phone-pad`: typings.reactNative.reactNativeStrings.`name-phone-pad` = "name-phone-pad".asInstanceOf[typings.reactNative.reactNativeStrings.`name-phone-pad`]
+  inline def `name-phone-pad`: typings.reactNative.reactNativeStrings.`name-phone-pad` = "name-phone-pad".asInstanceOf[typings.reactNative.reactNativeStrings.`name-phone-pad`]
   
-  @scala.inline
-  def `numbers-and-punctuation`: typings.reactNative.reactNativeStrings.`numbers-and-punctuation` = "numbers-and-punctuation".asInstanceOf[typings.reactNative.reactNativeStrings.`numbers-and-punctuation`]
+  inline def `numbers-and-punctuation`: typings.reactNative.reactNativeStrings.`numbers-and-punctuation` = "numbers-and-punctuation".asInstanceOf[typings.reactNative.reactNativeStrings.`numbers-and-punctuation`]
   
-  @scala.inline
-  def twitter: typings.reactNative.reactNativeStrings.twitter = "twitter".asInstanceOf[typings.reactNative.reactNativeStrings.twitter]
+  inline def twitter: typings.reactNative.reactNativeStrings.twitter = "twitter".asInstanceOf[typings.reactNative.reactNativeStrings.twitter]
   
-  @scala.inline
-  def url: url_ = "url".asInstanceOf[url_]
+  inline def url: url_ = "url".asInstanceOf[url_]
   
-  @scala.inline
-  def `web-search`: typings.reactNative.reactNativeStrings.`web-search` = "web-search".asInstanceOf[typings.reactNative.reactNativeStrings.`web-search`]
+  inline def `web-search`: typings.reactNative.reactNativeStrings.`web-search` = "web-search".asInstanceOf[typings.reactNative.reactNativeStrings.`web-search`]
 }

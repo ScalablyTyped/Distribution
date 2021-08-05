@@ -20,37 +20,27 @@ trait GenerateSshScriptRequest extends StObject {
 }
 object GenerateSshScriptRequest {
   
-  @scala.inline
-  def apply(): GenerateSshScriptRequest = {
+  inline def apply(): GenerateSshScriptRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GenerateSshScriptRequest]
   }
   
-  @scala.inline
-  implicit class GenerateSshScriptRequestMutableBuilder[Self <: GenerateSshScriptRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GenerateSshScriptRequest](x: Self) {
     
-    @scala.inline
-    def setVm(value: String): Self = StObject.set(x, "vm", value.asInstanceOf[js.Any])
+    inline def setVm(value: String): Self = StObject.set(x, "vm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmCreationConfig(value: VmCreationConfig): Self = StObject.set(x, "vmCreationConfig", value.asInstanceOf[js.Any])
+    inline def setVmCreationConfig(value: VmCreationConfig): Self = StObject.set(x, "vmCreationConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmCreationConfigUndefined: Self = StObject.set(x, "vmCreationConfig", js.undefined)
+    inline def setVmCreationConfigUndefined: Self = StObject.set(x, "vmCreationConfig", js.undefined)
     
-    @scala.inline
-    def setVmPort(value: Double): Self = StObject.set(x, "vmPort", value.asInstanceOf[js.Any])
+    inline def setVmPort(value: Double): Self = StObject.set(x, "vmPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmPortUndefined: Self = StObject.set(x, "vmPort", js.undefined)
+    inline def setVmPortUndefined: Self = StObject.set(x, "vmPort", js.undefined)
     
-    @scala.inline
-    def setVmSelectionConfig(value: VmSelectionConfig): Self = StObject.set(x, "vmSelectionConfig", value.asInstanceOf[js.Any])
+    inline def setVmSelectionConfig(value: VmSelectionConfig): Self = StObject.set(x, "vmSelectionConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmSelectionConfigUndefined: Self = StObject.set(x, "vmSelectionConfig", js.undefined)
+    inline def setVmSelectionConfigUndefined: Self = StObject.set(x, "vmSelectionConfig", js.undefined)
     
-    @scala.inline
-    def setVmUndefined: Self = StObject.set(x, "vm", js.undefined)
+    inline def setVmUndefined: Self = StObject.set(x, "vm", js.undefined)
   }
 }

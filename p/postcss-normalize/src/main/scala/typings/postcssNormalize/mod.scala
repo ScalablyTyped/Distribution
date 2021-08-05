@@ -36,32 +36,24 @@ object mod extends Shortcut {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setAllowDuplicates(value: Boolean): Self = StObject.set(x, "allowDuplicates", value.asInstanceOf[js.Any])
+        inline def setAllowDuplicates(value: Boolean): Self = StObject.set(x, "allowDuplicates", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAllowDuplicatesUndefined: Self = StObject.set(x, "allowDuplicates", js.undefined)
+        inline def setAllowDuplicatesUndefined: Self = StObject.set(x, "allowDuplicates", js.undefined)
         
-        @scala.inline
-        def setBrowsers(value: String): Self = StObject.set(x, "browsers", value.asInstanceOf[js.Any])
+        inline def setBrowsers(value: String): Self = StObject.set(x, "browsers", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBrowsersUndefined: Self = StObject.set(x, "browsers", js.undefined)
+        inline def setBrowsersUndefined: Self = StObject.set(x, "browsers", js.undefined)
         
-        @scala.inline
-        def setForceImport(value: Boolean | String): Self = StObject.set(x, "forceImport", value.asInstanceOf[js.Any])
+        inline def setForceImport(value: Boolean | String): Self = StObject.set(x, "forceImport", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setForceImportUndefined: Self = StObject.set(x, "forceImport", js.undefined)
+        inline def setForceImportUndefined: Self = StObject.set(x, "forceImport", js.undefined)
       }
     }
   }

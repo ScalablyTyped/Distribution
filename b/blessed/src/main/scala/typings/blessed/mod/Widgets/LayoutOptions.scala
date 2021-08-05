@@ -26,22 +26,17 @@ trait LayoutOptions
 }
 object LayoutOptions {
   
-  @scala.inline
-  def apply(layout: `inline` | `inline-block` | grid): LayoutOptions = {
+  inline def apply(layout: `inline` | `inline-block` | grid): LayoutOptions = {
     val __obj = js.Dynamic.literal(layout = layout.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayoutOptions]
   }
   
-  @scala.inline
-  implicit class LayoutOptionsMutableBuilder[Self <: LayoutOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LayoutOptions](x: Self) {
     
-    @scala.inline
-    def setLayout(value: `inline` | `inline-block` | grid): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: `inline` | `inline-block` | grid): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderer(value: () => Unit): Self = StObject.set(x, "renderer", js.Any.fromFunction0(value))
+    inline def setRenderer(value: () => Unit): Self = StObject.set(x, "renderer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+    inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
   }
 }

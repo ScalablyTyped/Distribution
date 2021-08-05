@@ -20,14 +20,11 @@ trait LockDepth extends StObject
 object LockDepth {
   
   /** Infinity (includes children and children's children and ...). */
-  @scala.inline
-  def INFINITY: `2` = 2.asInstanceOf[`2`]
+  inline def INFINITY: `2` = 2.asInstanceOf[`2`]
   
   /** One (includes children). */
-  @scala.inline
-  def ONE: `1` = 1.asInstanceOf[`1`]
+  inline def ONE: `1` = 1.asInstanceOf[`1`]
   
   /** Zero (includes no children). */
-  @scala.inline
-  def ZERO: `0` = 0.asInstanceOf[`0`]
+  inline def ZERO: `0` = 0.asInstanceOf[`0`]
 }

@@ -63,29 +63,22 @@ object anon {
   }
   object Req {
     
-    @scala.inline
-    def apply(req: ClientRequest, start: Double, url: URL_): Req = {
+    inline def apply(req: ClientRequest, start: Double, url: URL_): Req = {
       val __obj = js.Dynamic.literal(req = req.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[Req]
     }
     
-    @scala.inline
-    implicit class ReqMutableBuilder[Self <: Req] (val x: Self) extends AnyVal {
+    extension [Self <: Req](x: Self) {
       
-      @scala.inline
-      def setReq(value: ClientRequest): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+      inline def setReq(value: ClientRequest): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRes(value: IncomingMessage): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+      inline def setRes(value: IncomingMessage): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResUndefined: Self = StObject.set(x, "res", js.undefined)
+      inline def setResUndefined: Self = StObject.set(x, "res", js.undefined)
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: URL_): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: URL_): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

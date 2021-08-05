@@ -12,16 +12,13 @@ trait PatternParams
 }
 object PatternParams {
   
-  @scala.inline
-  def apply(pattern: String): PatternParams = {
+  inline def apply(pattern: String): PatternParams = {
     val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatternParams]
   }
   
-  @scala.inline
-  implicit class PatternParamsMutableBuilder[Self <: PatternParams] (val x: Self) extends AnyVal {
+  extension [Self <: PatternParams](x: Self) {
     
-    @scala.inline
-    def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
   }
 }

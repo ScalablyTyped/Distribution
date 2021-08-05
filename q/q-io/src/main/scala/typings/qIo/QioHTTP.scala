@@ -50,8 +50,7 @@ object QioHTTP {
   }
   object Request {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       agent: js.Any,
       body: js.Any,
       headers: Headers,
@@ -72,56 +71,39 @@ object QioHTTP {
       __obj.asInstanceOf[Request]
     }
     
-    @scala.inline
-    implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+    extension [Self <: Request](x: Self) {
       
-      @scala.inline
-      def setAgent(value: js.Any): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+      inline def setAgent(value: js.Any): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode(value: js.Any): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: js.Any): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathInfo(value: String): Self = StObject.set(x, "pathInfo", value.asInstanceOf[js.Any])
+      inline def setPathInfo(value: String): Self = StObject.set(x, "pathInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoteHost(value: String): Self = StObject.set(x, "remoteHost", value.asInstanceOf[js.Any])
+      inline def setRemoteHost(value: String): Self = StObject.set(x, "remoteHost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemotePort(value: Double): Self = StObject.set(x, "remotePort", value.asInstanceOf[js.Any])
+      inline def setRemotePort(value: Double): Self = StObject.set(x, "remotePort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+      inline def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScriptName(value: String): Self = StObject.set(x, "scriptName", value.asInstanceOf[js.Any])
+      inline def setScriptName(value: String): Self = StObject.set(x, "scriptName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: js.Array[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: js.Array[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionVarargs(value: String*): Self = StObject.set(x, "version", js.Array(value :_*))
+      inline def setVersionVarargs(value: String*): Self = StObject.set(x, "version", js.Array(value :_*))
     }
   }
   
@@ -139,29 +121,22 @@ object QioHTTP {
   }
   object Response {
     
-    @scala.inline
-    def apply(body: Reader, headers: Headers, node: js.Any, onclose: () => Unit, status: Double): Response = {
+    inline def apply(body: Reader, headers: Headers, node: js.Any, onclose: () => Unit, status: Double): Response = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], onclose = js.Any.fromFunction0(onclose), status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[Response]
     }
     
-    @scala.inline
-    implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
+    extension [Self <: Response](x: Self) {
       
-      @scala.inline
-      def setBody(value: Reader): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: Reader): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode(value: js.Any): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: js.Any): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnclose(value: () => Unit): Self = StObject.set(x, "onclose", js.Any.fromFunction0(value))
+      inline def setOnclose(value: () => Unit): Self = StObject.set(x, "onclose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
 }

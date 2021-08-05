@@ -18,8 +18,7 @@ trait Plane
 }
 object Plane {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     boundingSphereRadius: Double,
     calculateLocalInertia: (Double, Vec3) => Vec3,
     calculateWorldAABB: (Vec3, Quaternion, Double, Double) => Unit,
@@ -36,19 +35,14 @@ object Plane {
     __obj.asInstanceOf[Plane]
   }
   
-  @scala.inline
-  implicit class PlaneMutableBuilder[Self <: Plane] (val x: Self) extends AnyVal {
+  extension [Self <: Plane](x: Self) {
     
-    @scala.inline
-    def setCalculateWorldAABB(value: (Vec3, Quaternion, Double, Double) => Unit): Self = StObject.set(x, "calculateWorldAABB", js.Any.fromFunction4(value))
+    inline def setCalculateWorldAABB(value: (Vec3, Quaternion, Double, Double) => Unit): Self = StObject.set(x, "calculateWorldAABB", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setComputeWorldNormal(value: Quaternion => Unit): Self = StObject.set(x, "computeWorldNormal", js.Any.fromFunction1(value))
+    inline def setComputeWorldNormal(value: Quaternion => Unit): Self = StObject.set(x, "computeWorldNormal", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWorldNormal(value: Vec3): Self = StObject.set(x, "worldNormal", value.asInstanceOf[js.Any])
+    inline def setWorldNormal(value: Vec3): Self = StObject.set(x, "worldNormal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorldNormalNeedsUpdate(value: Boolean): Self = StObject.set(x, "worldNormalNeedsUpdate", value.asInstanceOf[js.Any])
+    inline def setWorldNormalNeedsUpdate(value: Boolean): Self = StObject.set(x, "worldNormalNeedsUpdate", value.asInstanceOf[js.Any])
   }
 }

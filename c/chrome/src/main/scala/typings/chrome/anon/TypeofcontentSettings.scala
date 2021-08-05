@@ -47,8 +47,7 @@ trait TypeofcontentSettings extends StObject {
 }
 object TypeofcontentSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     automaticDownloads: MultipleAutomaticDownloadsContentSetting,
     camera: CameraContentSetting,
     cookies: CookieContentSetting,
@@ -67,46 +66,32 @@ object TypeofcontentSettings {
     __obj.asInstanceOf[TypeofcontentSettings]
   }
   
-  @scala.inline
-  implicit class TypeofcontentSettingsMutableBuilder[Self <: TypeofcontentSettings] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofcontentSettings](x: Self) {
     
-    @scala.inline
-    def setAutomaticDownloads(value: MultipleAutomaticDownloadsContentSetting): Self = StObject.set(x, "automaticDownloads", value.asInstanceOf[js.Any])
+    inline def setAutomaticDownloads(value: MultipleAutomaticDownloadsContentSetting): Self = StObject.set(x, "automaticDownloads", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCamera(value: CameraContentSetting): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
+    inline def setCamera(value: CameraContentSetting): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCookies(value: CookieContentSetting): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
+    inline def setCookies(value: CookieContentSetting): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullscreen(value: FullscreenContentSetting): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
+    inline def setFullscreen(value: FullscreenContentSetting): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImages(value: ImagesContentSetting): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+    inline def setImages(value: ImagesContentSetting): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJavascript(value: JavascriptContentSetting): Self = StObject.set(x, "javascript", value.asInstanceOf[js.Any])
+    inline def setJavascript(value: JavascriptContentSetting): Self = StObject.set(x, "javascript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: LocationContentSetting): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: LocationContentSetting): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMicrophone(value: MicrophoneContentSetting): Self = StObject.set(x, "microphone", value.asInstanceOf[js.Any])
+    inline def setMicrophone(value: MicrophoneContentSetting): Self = StObject.set(x, "microphone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouselock(value: MouselockContentSetting): Self = StObject.set(x, "mouselock", value.asInstanceOf[js.Any])
+    inline def setMouselock(value: MouselockContentSetting): Self = StObject.set(x, "mouselock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotifications(value: NotificationsContentSetting): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
+    inline def setNotifications(value: NotificationsContentSetting): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlugins(value: PluginsContentSetting): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    inline def setPlugins(value: PluginsContentSetting): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopups(value: PopupsContentSetting): Self = StObject.set(x, "popups", value.asInstanceOf[js.Any])
+    inline def setPopups(value: PopupsContentSetting): Self = StObject.set(x, "popups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnsandboxedPlugins(value: PpapiBrokerContentSetting): Self = StObject.set(x, "unsandboxedPlugins", value.asInstanceOf[js.Any])
+    inline def setUnsandboxedPlugins(value: PpapiBrokerContentSetting): Self = StObject.set(x, "unsandboxedPlugins", value.asInstanceOf[js.Any])
   }
 }

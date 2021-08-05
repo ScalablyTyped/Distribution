@@ -168,68 +168,48 @@ object Bloodhound {
   }
   object BloodhoundOptions {
     
-    @scala.inline
-    def apply[T](datumTokenizer: T => js.Array[String], queryTokenizer: String => js.Array[String]): BloodhoundOptions[T] = {
+    inline def apply[T](datumTokenizer: T => js.Array[String], queryTokenizer: String => js.Array[String]): BloodhoundOptions[T] = {
       val __obj = js.Dynamic.literal(datumTokenizer = js.Any.fromFunction1(datumTokenizer), queryTokenizer = js.Any.fromFunction1(queryTokenizer))
       __obj.asInstanceOf[BloodhoundOptions[T]]
     }
     
-    @scala.inline
-    implicit class BloodhoundOptionsMutableBuilder[Self <: BloodhoundOptions[?], T] (val x: Self & BloodhoundOptions[T]) extends AnyVal {
+    extension [Self <: BloodhoundOptions[?], T](x: Self & BloodhoundOptions[T]) {
       
-      @scala.inline
-      def setDatumTokenizer(value: T => js.Array[String]): Self = StObject.set(x, "datumTokenizer", js.Any.fromFunction1(value))
+      inline def setDatumTokenizer(value: T => js.Array[String]): Self = StObject.set(x, "datumTokenizer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIdentify(value: /* datum */ T => Double): Self = StObject.set(x, "identify", js.Any.fromFunction1(value))
+      inline def setIdentify(value: /* datum */ T => Double): Self = StObject.set(x, "identify", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIdentifyUndefined: Self = StObject.set(x, "identify", js.undefined)
+      inline def setIdentifyUndefined: Self = StObject.set(x, "identify", js.undefined)
       
-      @scala.inline
-      def setInitialize(value: Boolean): Self = StObject.set(x, "initialize", value.asInstanceOf[js.Any])
+      inline def setInitialize(value: Boolean): Self = StObject.set(x, "initialize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitializeUndefined: Self = StObject.set(x, "initialize", js.undefined)
+      inline def setInitializeUndefined: Self = StObject.set(x, "initialize", js.undefined)
       
-      @scala.inline
-      def setLocal(value: js.Array[T] | js.Function0[js.Array[T]]): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+      inline def setLocal(value: js.Array[T] | js.Function0[js.Array[T]]): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalFunction0(value: () => js.Array[T]): Self = StObject.set(x, "local", js.Any.fromFunction0(value))
+      inline def setLocalFunction0(value: () => js.Array[T]): Self = StObject.set(x, "local", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
+      inline def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
       
-      @scala.inline
-      def setLocalVarargs(value: T*): Self = StObject.set(x, "local", js.Array(value :_*))
+      inline def setLocalVarargs(value: T*): Self = StObject.set(x, "local", js.Array(value :_*))
       
-      @scala.inline
-      def setPrefetch(value: String | PrefetchOptions[T]): Self = StObject.set(x, "prefetch", value.asInstanceOf[js.Any])
+      inline def setPrefetch(value: String | PrefetchOptions[T]): Self = StObject.set(x, "prefetch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefetchUndefined: Self = StObject.set(x, "prefetch", js.undefined)
+      inline def setPrefetchUndefined: Self = StObject.set(x, "prefetch", js.undefined)
       
-      @scala.inline
-      def setQueryTokenizer(value: String => js.Array[String]): Self = StObject.set(x, "queryTokenizer", js.Any.fromFunction1(value))
+      inline def setQueryTokenizer(value: String => js.Array[String]): Self = StObject.set(x, "queryTokenizer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemote(value: String | RemoteOptions[T]): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
+      inline def setRemote(value: String | RemoteOptions[T]): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoteUndefined: Self = StObject.set(x, "remote", js.undefined)
+      inline def setRemoteUndefined: Self = StObject.set(x, "remote", js.undefined)
       
-      @scala.inline
-      def setSorter(value: (/* a */ T, /* b */ T) => Double): Self = StObject.set(x, "sorter", js.Any.fromFunction2(value))
+      inline def setSorter(value: (/* a */ T, /* b */ T) => Double): Self = StObject.set(x, "sorter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSorterUndefined: Self = StObject.set(x, "sorter", js.undefined)
+      inline def setSorterUndefined: Self = StObject.set(x, "sorter", js.undefined)
       
-      @scala.inline
-      def setSufficient(value: Double): Self = StObject.set(x, "sufficient", value.asInstanceOf[js.Any])
+      inline def setSufficient(value: Double): Self = StObject.set(x, "sufficient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSufficientUndefined: Self = StObject.set(x, "sufficient", js.undefined)
+      inline def setSufficientUndefined: Self = StObject.set(x, "sufficient", js.undefined)
     }
   }
   
@@ -314,53 +294,38 @@ object Bloodhound {
   }
   object PrefetchOptions {
     
-    @scala.inline
-    def apply[T](url: String): PrefetchOptions[T] = {
+    inline def apply[T](url: String): PrefetchOptions[T] = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[PrefetchOptions[T]]
     }
     
-    @scala.inline
-    implicit class PrefetchOptionsMutableBuilder[Self <: PrefetchOptions[?], T] (val x: Self & PrefetchOptions[T]) extends AnyVal {
+    extension [Self <: PrefetchOptions[?], T](x: Self & PrefetchOptions[T]) {
       
-      @scala.inline
-      def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheKey(value: String): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
+      inline def setCacheKey(value: String): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheKeyUndefined: Self = StObject.set(x, "cacheKey", js.undefined)
+      inline def setCacheKeyUndefined: Self = StObject.set(x, "cacheKey", js.undefined)
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setPrepare(value: /* settings */ JQueryAjaxSettings => JQueryAjaxSettings): Self = StObject.set(x, "prepare", js.Any.fromFunction1(value))
+      inline def setPrepare(value: /* settings */ JQueryAjaxSettings => JQueryAjaxSettings): Self = StObject.set(x, "prepare", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPrepareUndefined: Self = StObject.set(x, "prepare", js.undefined)
+      inline def setPrepareUndefined: Self = StObject.set(x, "prepare", js.undefined)
       
-      @scala.inline
-      def setThumbprint(value: String): Self = StObject.set(x, "thumbprint", value.asInstanceOf[js.Any])
+      inline def setThumbprint(value: String): Self = StObject.set(x, "thumbprint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbprintUndefined: Self = StObject.set(x, "thumbprint", js.undefined)
+      inline def setThumbprintUndefined: Self = StObject.set(x, "thumbprint", js.undefined)
       
-      @scala.inline
-      def setTransform(value: /* response */ T => T): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+      inline def setTransform(value: /* response */ T => T): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       
-      @scala.inline
-      def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+      inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+      inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -427,53 +392,38 @@ object Bloodhound {
   }
   object RemoteOptions {
     
-    @scala.inline
-    def apply[T](url: String): RemoteOptions[T] = {
+    inline def apply[T](url: String): RemoteOptions[T] = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[RemoteOptions[T]]
     }
     
-    @scala.inline
-    implicit class RemoteOptionsMutableBuilder[Self <: RemoteOptions[?], T] (val x: Self & RemoteOptions[T]) extends AnyVal {
+    extension [Self <: RemoteOptions[?], T](x: Self & RemoteOptions[T]) {
       
-      @scala.inline
-      def setFilter(value: /* response */ T => T): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(value: /* response */ T => T): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setPrepare(value: (/* query */ String, /* settings */ JQueryAjaxSettings) => JQueryAjaxSettings): Self = StObject.set(x, "prepare", js.Any.fromFunction2(value))
+      inline def setPrepare(value: (/* query */ String, /* settings */ JQueryAjaxSettings) => JQueryAjaxSettings): Self = StObject.set(x, "prepare", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPrepareUndefined: Self = StObject.set(x, "prepare", js.undefined)
+      inline def setPrepareUndefined: Self = StObject.set(x, "prepare", js.undefined)
       
-      @scala.inline
-      def setRateLimitWait(value: Double): Self = StObject.set(x, "rateLimitWait", value.asInstanceOf[js.Any])
+      inline def setRateLimitWait(value: Double): Self = StObject.set(x, "rateLimitWait", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRateLimitWaitUndefined: Self = StObject.set(x, "rateLimitWait", js.undefined)
+      inline def setRateLimitWaitUndefined: Self = StObject.set(x, "rateLimitWait", js.undefined)
       
-      @scala.inline
-      def setRateLimitby(value: String): Self = StObject.set(x, "rateLimitby", value.asInstanceOf[js.Any])
+      inline def setRateLimitby(value: String): Self = StObject.set(x, "rateLimitby", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRateLimitbyUndefined: Self = StObject.set(x, "rateLimitby", js.undefined)
+      inline def setRateLimitbyUndefined: Self = StObject.set(x, "rateLimitby", js.undefined)
       
-      @scala.inline
-      def setTransform(value: /* response */ T => T): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+      inline def setTransform(value: /* response */ T => T): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWildcard(value: String): Self = StObject.set(x, "wildcard", value.asInstanceOf[js.Any])
+      inline def setWildcard(value: String): Self = StObject.set(x, "wildcard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWildcardUndefined: Self = StObject.set(x, "wildcard", js.undefined)
+      inline def setWildcardUndefined: Self = StObject.set(x, "wildcard", js.undefined)
     }
   }
   
@@ -499,23 +449,18 @@ object Bloodhound {
   }
   object Tokenizers {
     
-    @scala.inline
-    def apply(nonword: String => js.Array[String], obj: ObjTokenizer, whitespace: String => js.Array[String]): Tokenizers = {
+    inline def apply(nonword: String => js.Array[String], obj: ObjTokenizer, whitespace: String => js.Array[String]): Tokenizers = {
       val __obj = js.Dynamic.literal(nonword = js.Any.fromFunction1(nonword), obj = obj.asInstanceOf[js.Any], whitespace = js.Any.fromFunction1(whitespace))
       __obj.asInstanceOf[Tokenizers]
     }
     
-    @scala.inline
-    implicit class TokenizersMutableBuilder[Self <: Tokenizers] (val x: Self) extends AnyVal {
+    extension [Self <: Tokenizers](x: Self) {
       
-      @scala.inline
-      def setNonword(value: String => js.Array[String]): Self = StObject.set(x, "nonword", js.Any.fromFunction1(value))
+      inline def setNonword(value: String => js.Array[String]): Self = StObject.set(x, "nonword", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setObj(value: ObjTokenizer): Self = StObject.set(x, "obj", value.asInstanceOf[js.Any])
+      inline def setObj(value: ObjTokenizer): Self = StObject.set(x, "obj", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhitespace(value: String => js.Array[String]): Self = StObject.set(x, "whitespace", js.Any.fromFunction1(value))
+      inline def setWhitespace(value: String => js.Array[String]): Self = StObject.set(x, "whitespace", js.Any.fromFunction1(value))
     }
   }
 }

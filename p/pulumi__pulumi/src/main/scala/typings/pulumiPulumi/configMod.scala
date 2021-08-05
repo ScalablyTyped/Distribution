@@ -18,7 +18,7 @@ object configMod {
       *
       * @param key The key to lookup.
       */
-    var fullKey: js.Any = js.native
+    /* private */ var fullKey: js.Any = js.native
     
     /**
       * get loads an optional configuration value by its key, or undefined if it doesn't exist.
@@ -187,26 +187,20 @@ object configMod {
   }
   object NumberConfigOptions {
     
-    @scala.inline
-    def apply(): NumberConfigOptions = {
+    inline def apply(): NumberConfigOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NumberConfigOptions]
     }
     
-    @scala.inline
-    implicit class NumberConfigOptionsMutableBuilder[Self <: NumberConfigOptions] (val x: Self) extends AnyVal {
+    extension [Self <: NumberConfigOptions](x: Self) {
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     }
   }
   
@@ -234,41 +228,30 @@ object configMod {
   }
   object StringConfigOptions {
     
-    @scala.inline
-    def apply[K /* <: String */](): StringConfigOptions[K] = {
+    inline def apply[K /* <: String */](): StringConfigOptions[K] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StringConfigOptions[K]]
     }
     
-    @scala.inline
-    implicit class StringConfigOptionsMutableBuilder[Self <: StringConfigOptions[?], K /* <: String */] (val x: Self & StringConfigOptions[K]) extends AnyVal {
+    extension [Self <: StringConfigOptions[?], K /* <: String */](x: Self & StringConfigOptions[K]) {
       
-      @scala.inline
-      def setAllowedValues(value: js.Array[K]): Self = StObject.set(x, "allowedValues", value.asInstanceOf[js.Any])
+      inline def setAllowedValues(value: js.Array[K]): Self = StObject.set(x, "allowedValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedValuesUndefined: Self = StObject.set(x, "allowedValues", js.undefined)
+      inline def setAllowedValuesUndefined: Self = StObject.set(x, "allowedValues", js.undefined)
       
-      @scala.inline
-      def setAllowedValuesVarargs(value: K*): Self = StObject.set(x, "allowedValues", js.Array(value :_*))
+      inline def setAllowedValuesVarargs(value: K*): Self = StObject.set(x, "allowedValues", js.Array(value :_*))
       
-      @scala.inline
-      def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+      inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
+      inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
       
-      @scala.inline
-      def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
+      inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
+      inline def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
       
-      @scala.inline
-      def setPattern(value: String | RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+      inline def setPattern(value: String | RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+      inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     }
   }
 }

@@ -10,16 +10,13 @@ trait OauthAuthorizationsGetAuthorizationEndpoint extends StObject {
 }
 object OauthAuthorizationsGetAuthorizationEndpoint {
   
-  @scala.inline
-  def apply(authorization_id: Double): OauthAuthorizationsGetAuthorizationEndpoint = {
+  inline def apply(authorization_id: Double): OauthAuthorizationsGetAuthorizationEndpoint = {
     val __obj = js.Dynamic.literal(authorization_id = authorization_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[OauthAuthorizationsGetAuthorizationEndpoint]
   }
   
-  @scala.inline
-  implicit class OauthAuthorizationsGetAuthorizationEndpointMutableBuilder[Self <: OauthAuthorizationsGetAuthorizationEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: OauthAuthorizationsGetAuthorizationEndpoint](x: Self) {
     
-    @scala.inline
-    def setAuthorization_id(value: Double): Self = StObject.set(x, "authorization_id", value.asInstanceOf[js.Any])
+    inline def setAuthorization_id(value: Double): Self = StObject.set(x, "authorization_id", value.asInstanceOf[js.Any])
   }
 }

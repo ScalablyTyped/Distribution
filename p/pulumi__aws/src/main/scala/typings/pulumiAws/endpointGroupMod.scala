@@ -91,21 +91,16 @@ object endpointGroupMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): EndpointGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EndpointGroup]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EndpointGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EndpointGroup]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: EndpointGroupState): EndpointGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EndpointGroup]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: EndpointGroupState, opts: CustomResourceOptions): EndpointGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EndpointGroup]
+    inline def get(name: String, id: Input[ID]): EndpointGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EndpointGroup]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EndpointGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EndpointGroup]
+    inline def get(name: String, id: Input[ID], state: EndpointGroupState): EndpointGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EndpointGroup]
+    inline def get(name: String, id: Input[ID], state: EndpointGroupState, opts: CustomResourceOptions): EndpointGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EndpointGroup]
     
     /**
       * Returns true if the given object is an instance of EndpointGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/globalaccelerator/endpointGroup.EndpointGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/globalaccelerator/endpointGroup.EndpointGroup */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/globalaccelerator/endpointGroup.EndpointGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/globalaccelerator/endpointGroup.EndpointGroup */ Boolean]
   }
   
   trait EndpointGroupArgs extends StObject {
@@ -166,17 +161,14 @@ object endpointGroupMod {
   }
   object EndpointGroupArgs {
     
-    @scala.inline
-    def apply(listenerArn: Input[String]): EndpointGroupArgs = {
+    inline def apply(listenerArn: Input[String]): EndpointGroupArgs = {
       val __obj = js.Dynamic.literal(listenerArn = listenerArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[EndpointGroupArgs]
     }
     
-    @scala.inline
-    implicit class EndpointGroupArgsMutableBuilder[Self <: EndpointGroupArgs] (val x: Self) extends AnyVal {
+    extension [Self <: EndpointGroupArgs](x: Self) {
       
-      @scala.inline
-      def setEndpointConfigurations(
+      inline def setEndpointConfigurations(
         value: Input[
               js.Array[
                 Input[typings.pulumiAws.inputMod.globalaccelerator.EndpointGroupEndpointConfiguration]
@@ -184,69 +176,49 @@ object endpointGroupMod {
             ]
       ): Self = StObject.set(x, "endpointConfigurations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointConfigurationsUndefined: Self = StObject.set(x, "endpointConfigurations", js.undefined)
+      inline def setEndpointConfigurationsUndefined: Self = StObject.set(x, "endpointConfigurations", js.undefined)
       
-      @scala.inline
-      def setEndpointConfigurationsVarargs(value: Input[typings.pulumiAws.inputMod.globalaccelerator.EndpointGroupEndpointConfiguration]*): Self = StObject.set(x, "endpointConfigurations", js.Array(value :_*))
+      inline def setEndpointConfigurationsVarargs(value: Input[typings.pulumiAws.inputMod.globalaccelerator.EndpointGroupEndpointConfiguration]*): Self = StObject.set(x, "endpointConfigurations", js.Array(value :_*))
       
-      @scala.inline
-      def setEndpointGroupRegion(value: Input[String]): Self = StObject.set(x, "endpointGroupRegion", value.asInstanceOf[js.Any])
+      inline def setEndpointGroupRegion(value: Input[String]): Self = StObject.set(x, "endpointGroupRegion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointGroupRegionUndefined: Self = StObject.set(x, "endpointGroupRegion", js.undefined)
+      inline def setEndpointGroupRegionUndefined: Self = StObject.set(x, "endpointGroupRegion", js.undefined)
       
-      @scala.inline
-      def setHealthCheckIntervalSeconds(value: Input[Double]): Self = StObject.set(x, "healthCheckIntervalSeconds", value.asInstanceOf[js.Any])
+      inline def setHealthCheckIntervalSeconds(value: Input[Double]): Self = StObject.set(x, "healthCheckIntervalSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHealthCheckIntervalSecondsUndefined: Self = StObject.set(x, "healthCheckIntervalSeconds", js.undefined)
+      inline def setHealthCheckIntervalSecondsUndefined: Self = StObject.set(x, "healthCheckIntervalSeconds", js.undefined)
       
-      @scala.inline
-      def setHealthCheckPath(value: Input[String]): Self = StObject.set(x, "healthCheckPath", value.asInstanceOf[js.Any])
+      inline def setHealthCheckPath(value: Input[String]): Self = StObject.set(x, "healthCheckPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHealthCheckPathUndefined: Self = StObject.set(x, "healthCheckPath", js.undefined)
+      inline def setHealthCheckPathUndefined: Self = StObject.set(x, "healthCheckPath", js.undefined)
       
-      @scala.inline
-      def setHealthCheckPort(value: Input[Double]): Self = StObject.set(x, "healthCheckPort", value.asInstanceOf[js.Any])
+      inline def setHealthCheckPort(value: Input[Double]): Self = StObject.set(x, "healthCheckPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHealthCheckPortUndefined: Self = StObject.set(x, "healthCheckPort", js.undefined)
+      inline def setHealthCheckPortUndefined: Self = StObject.set(x, "healthCheckPort", js.undefined)
       
-      @scala.inline
-      def setHealthCheckProtocol(value: Input[String]): Self = StObject.set(x, "healthCheckProtocol", value.asInstanceOf[js.Any])
+      inline def setHealthCheckProtocol(value: Input[String]): Self = StObject.set(x, "healthCheckProtocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHealthCheckProtocolUndefined: Self = StObject.set(x, "healthCheckProtocol", js.undefined)
+      inline def setHealthCheckProtocolUndefined: Self = StObject.set(x, "healthCheckProtocol", js.undefined)
       
-      @scala.inline
-      def setListenerArn(value: Input[String]): Self = StObject.set(x, "listenerArn", value.asInstanceOf[js.Any])
+      inline def setListenerArn(value: Input[String]): Self = StObject.set(x, "listenerArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortOverrides(
+      inline def setPortOverrides(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.globalaccelerator.EndpointGroupPortOverride]]
             ]
       ): Self = StObject.set(x, "portOverrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortOverridesUndefined: Self = StObject.set(x, "portOverrides", js.undefined)
+      inline def setPortOverridesUndefined: Self = StObject.set(x, "portOverrides", js.undefined)
       
-      @scala.inline
-      def setPortOverridesVarargs(value: Input[typings.pulumiAws.inputMod.globalaccelerator.EndpointGroupPortOverride]*): Self = StObject.set(x, "portOverrides", js.Array(value :_*))
+      inline def setPortOverridesVarargs(value: Input[typings.pulumiAws.inputMod.globalaccelerator.EndpointGroupPortOverride]*): Self = StObject.set(x, "portOverrides", js.Array(value :_*))
       
-      @scala.inline
-      def setThresholdCount(value: Input[Double]): Self = StObject.set(x, "thresholdCount", value.asInstanceOf[js.Any])
+      inline def setThresholdCount(value: Input[Double]): Self = StObject.set(x, "thresholdCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThresholdCountUndefined: Self = StObject.set(x, "thresholdCount", js.undefined)
+      inline def setThresholdCountUndefined: Self = StObject.set(x, "thresholdCount", js.undefined)
       
-      @scala.inline
-      def setTrafficDialPercentage(value: Input[Double]): Self = StObject.set(x, "trafficDialPercentage", value.asInstanceOf[js.Any])
+      inline def setTrafficDialPercentage(value: Input[Double]): Self = StObject.set(x, "trafficDialPercentage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrafficDialPercentageUndefined: Self = StObject.set(x, "trafficDialPercentage", js.undefined)
+      inline def setTrafficDialPercentageUndefined: Self = StObject.set(x, "trafficDialPercentage", js.undefined)
     }
   }
   
@@ -313,23 +285,18 @@ object endpointGroupMod {
   }
   object EndpointGroupState {
     
-    @scala.inline
-    def apply(): EndpointGroupState = {
+    inline def apply(): EndpointGroupState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EndpointGroupState]
     }
     
-    @scala.inline
-    implicit class EndpointGroupStateMutableBuilder[Self <: EndpointGroupState] (val x: Self) extends AnyVal {
+    extension [Self <: EndpointGroupState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setEndpointConfigurations(
+      inline def setEndpointConfigurations(
         value: Input[
               js.Array[
                 Input[typings.pulumiAws.inputMod.globalaccelerator.EndpointGroupEndpointConfiguration]
@@ -337,72 +304,51 @@ object endpointGroupMod {
             ]
       ): Self = StObject.set(x, "endpointConfigurations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointConfigurationsUndefined: Self = StObject.set(x, "endpointConfigurations", js.undefined)
+      inline def setEndpointConfigurationsUndefined: Self = StObject.set(x, "endpointConfigurations", js.undefined)
       
-      @scala.inline
-      def setEndpointConfigurationsVarargs(value: Input[typings.pulumiAws.inputMod.globalaccelerator.EndpointGroupEndpointConfiguration]*): Self = StObject.set(x, "endpointConfigurations", js.Array(value :_*))
+      inline def setEndpointConfigurationsVarargs(value: Input[typings.pulumiAws.inputMod.globalaccelerator.EndpointGroupEndpointConfiguration]*): Self = StObject.set(x, "endpointConfigurations", js.Array(value :_*))
       
-      @scala.inline
-      def setEndpointGroupRegion(value: Input[String]): Self = StObject.set(x, "endpointGroupRegion", value.asInstanceOf[js.Any])
+      inline def setEndpointGroupRegion(value: Input[String]): Self = StObject.set(x, "endpointGroupRegion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointGroupRegionUndefined: Self = StObject.set(x, "endpointGroupRegion", js.undefined)
+      inline def setEndpointGroupRegionUndefined: Self = StObject.set(x, "endpointGroupRegion", js.undefined)
       
-      @scala.inline
-      def setHealthCheckIntervalSeconds(value: Input[Double]): Self = StObject.set(x, "healthCheckIntervalSeconds", value.asInstanceOf[js.Any])
+      inline def setHealthCheckIntervalSeconds(value: Input[Double]): Self = StObject.set(x, "healthCheckIntervalSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHealthCheckIntervalSecondsUndefined: Self = StObject.set(x, "healthCheckIntervalSeconds", js.undefined)
+      inline def setHealthCheckIntervalSecondsUndefined: Self = StObject.set(x, "healthCheckIntervalSeconds", js.undefined)
       
-      @scala.inline
-      def setHealthCheckPath(value: Input[String]): Self = StObject.set(x, "healthCheckPath", value.asInstanceOf[js.Any])
+      inline def setHealthCheckPath(value: Input[String]): Self = StObject.set(x, "healthCheckPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHealthCheckPathUndefined: Self = StObject.set(x, "healthCheckPath", js.undefined)
+      inline def setHealthCheckPathUndefined: Self = StObject.set(x, "healthCheckPath", js.undefined)
       
-      @scala.inline
-      def setHealthCheckPort(value: Input[Double]): Self = StObject.set(x, "healthCheckPort", value.asInstanceOf[js.Any])
+      inline def setHealthCheckPort(value: Input[Double]): Self = StObject.set(x, "healthCheckPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHealthCheckPortUndefined: Self = StObject.set(x, "healthCheckPort", js.undefined)
+      inline def setHealthCheckPortUndefined: Self = StObject.set(x, "healthCheckPort", js.undefined)
       
-      @scala.inline
-      def setHealthCheckProtocol(value: Input[String]): Self = StObject.set(x, "healthCheckProtocol", value.asInstanceOf[js.Any])
+      inline def setHealthCheckProtocol(value: Input[String]): Self = StObject.set(x, "healthCheckProtocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHealthCheckProtocolUndefined: Self = StObject.set(x, "healthCheckProtocol", js.undefined)
+      inline def setHealthCheckProtocolUndefined: Self = StObject.set(x, "healthCheckProtocol", js.undefined)
       
-      @scala.inline
-      def setListenerArn(value: Input[String]): Self = StObject.set(x, "listenerArn", value.asInstanceOf[js.Any])
+      inline def setListenerArn(value: Input[String]): Self = StObject.set(x, "listenerArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListenerArnUndefined: Self = StObject.set(x, "listenerArn", js.undefined)
+      inline def setListenerArnUndefined: Self = StObject.set(x, "listenerArn", js.undefined)
       
-      @scala.inline
-      def setPortOverrides(
+      inline def setPortOverrides(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.globalaccelerator.EndpointGroupPortOverride]]
             ]
       ): Self = StObject.set(x, "portOverrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortOverridesUndefined: Self = StObject.set(x, "portOverrides", js.undefined)
+      inline def setPortOverridesUndefined: Self = StObject.set(x, "portOverrides", js.undefined)
       
-      @scala.inline
-      def setPortOverridesVarargs(value: Input[typings.pulumiAws.inputMod.globalaccelerator.EndpointGroupPortOverride]*): Self = StObject.set(x, "portOverrides", js.Array(value :_*))
+      inline def setPortOverridesVarargs(value: Input[typings.pulumiAws.inputMod.globalaccelerator.EndpointGroupPortOverride]*): Self = StObject.set(x, "portOverrides", js.Array(value :_*))
       
-      @scala.inline
-      def setThresholdCount(value: Input[Double]): Self = StObject.set(x, "thresholdCount", value.asInstanceOf[js.Any])
+      inline def setThresholdCount(value: Input[Double]): Self = StObject.set(x, "thresholdCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThresholdCountUndefined: Self = StObject.set(x, "thresholdCount", js.undefined)
+      inline def setThresholdCountUndefined: Self = StObject.set(x, "thresholdCount", js.undefined)
       
-      @scala.inline
-      def setTrafficDialPercentage(value: Input[Double]): Self = StObject.set(x, "trafficDialPercentage", value.asInstanceOf[js.Any])
+      inline def setTrafficDialPercentage(value: Input[Double]): Self = StObject.set(x, "trafficDialPercentage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrafficDialPercentageUndefined: Self = StObject.set(x, "trafficDialPercentage", js.undefined)
+      inline def setTrafficDialPercentageUndefined: Self = StObject.set(x, "trafficDialPercentage", js.undefined)
     }
   }
 }

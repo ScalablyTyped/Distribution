@@ -10,19 +10,15 @@ trait BaseMenuPropsT extends StObject {
 }
 object BaseMenuPropsT {
   
-  @scala.inline
-  def apply(): BaseMenuPropsT = {
+  inline def apply(): BaseMenuPropsT = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BaseMenuPropsT]
   }
   
-  @scala.inline
-  implicit class BaseMenuPropsTMutableBuilder[Self <: BaseMenuPropsT] (val x: Self) extends AnyVal {
+  extension [Self <: BaseMenuPropsT](x: Self) {
     
-    @scala.inline
-    def setRenderAll(value: Boolean): Self = StObject.set(x, "renderAll", value.asInstanceOf[js.Any])
+    inline def setRenderAll(value: Boolean): Self = StObject.set(x, "renderAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderAllUndefined: Self = StObject.set(x, "renderAll", js.undefined)
+    inline def setRenderAllUndefined: Self = StObject.set(x, "renderAll", js.undefined)
   }
 }

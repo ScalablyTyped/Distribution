@@ -48,61 +48,43 @@ trait StackSetDriftDetectionDetails extends StObject {
 }
 object StackSetDriftDetectionDetails {
   
-  @scala.inline
-  def apply(): StackSetDriftDetectionDetails = {
+  inline def apply(): StackSetDriftDetectionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StackSetDriftDetectionDetails]
   }
   
-  @scala.inline
-  implicit class StackSetDriftDetectionDetailsMutableBuilder[Self <: StackSetDriftDetectionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: StackSetDriftDetectionDetails](x: Self) {
     
-    @scala.inline
-    def setDriftDetectionStatus(value: StackSetDriftDetectionStatus): Self = StObject.set(x, "DriftDetectionStatus", value.asInstanceOf[js.Any])
+    inline def setDriftDetectionStatus(value: StackSetDriftDetectionStatus): Self = StObject.set(x, "DriftDetectionStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDriftDetectionStatusUndefined: Self = StObject.set(x, "DriftDetectionStatus", js.undefined)
+    inline def setDriftDetectionStatusUndefined: Self = StObject.set(x, "DriftDetectionStatus", js.undefined)
     
-    @scala.inline
-    def setDriftStatus(value: StackSetDriftStatus): Self = StObject.set(x, "DriftStatus", value.asInstanceOf[js.Any])
+    inline def setDriftStatus(value: StackSetDriftStatus): Self = StObject.set(x, "DriftStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDriftStatusUndefined: Self = StObject.set(x, "DriftStatus", js.undefined)
+    inline def setDriftStatusUndefined: Self = StObject.set(x, "DriftStatus", js.undefined)
     
-    @scala.inline
-    def setDriftedStackInstancesCount(value: DriftedStackInstancesCount): Self = StObject.set(x, "DriftedStackInstancesCount", value.asInstanceOf[js.Any])
+    inline def setDriftedStackInstancesCount(value: DriftedStackInstancesCount): Self = StObject.set(x, "DriftedStackInstancesCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDriftedStackInstancesCountUndefined: Self = StObject.set(x, "DriftedStackInstancesCount", js.undefined)
+    inline def setDriftedStackInstancesCountUndefined: Self = StObject.set(x, "DriftedStackInstancesCount", js.undefined)
     
-    @scala.inline
-    def setFailedStackInstancesCount(value: FailedStackInstancesCount): Self = StObject.set(x, "FailedStackInstancesCount", value.asInstanceOf[js.Any])
+    inline def setFailedStackInstancesCount(value: FailedStackInstancesCount): Self = StObject.set(x, "FailedStackInstancesCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedStackInstancesCountUndefined: Self = StObject.set(x, "FailedStackInstancesCount", js.undefined)
+    inline def setFailedStackInstancesCountUndefined: Self = StObject.set(x, "FailedStackInstancesCount", js.undefined)
     
-    @scala.inline
-    def setInProgressStackInstancesCount(value: InProgressStackInstancesCount): Self = StObject.set(x, "InProgressStackInstancesCount", value.asInstanceOf[js.Any])
+    inline def setInProgressStackInstancesCount(value: InProgressStackInstancesCount): Self = StObject.set(x, "InProgressStackInstancesCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInProgressStackInstancesCountUndefined: Self = StObject.set(x, "InProgressStackInstancesCount", js.undefined)
+    inline def setInProgressStackInstancesCountUndefined: Self = StObject.set(x, "InProgressStackInstancesCount", js.undefined)
     
-    @scala.inline
-    def setInSyncStackInstancesCount(value: InSyncStackInstancesCount): Self = StObject.set(x, "InSyncStackInstancesCount", value.asInstanceOf[js.Any])
+    inline def setInSyncStackInstancesCount(value: InSyncStackInstancesCount): Self = StObject.set(x, "InSyncStackInstancesCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInSyncStackInstancesCountUndefined: Self = StObject.set(x, "InSyncStackInstancesCount", js.undefined)
+    inline def setInSyncStackInstancesCountUndefined: Self = StObject.set(x, "InSyncStackInstancesCount", js.undefined)
     
-    @scala.inline
-    def setLastDriftCheckTimestamp(value: Timestamp): Self = StObject.set(x, "LastDriftCheckTimestamp", value.asInstanceOf[js.Any])
+    inline def setLastDriftCheckTimestamp(value: Timestamp): Self = StObject.set(x, "LastDriftCheckTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastDriftCheckTimestampUndefined: Self = StObject.set(x, "LastDriftCheckTimestamp", js.undefined)
+    inline def setLastDriftCheckTimestampUndefined: Self = StObject.set(x, "LastDriftCheckTimestamp", js.undefined)
     
-    @scala.inline
-    def setTotalStackInstancesCount(value: TotalStackInstancesCount): Self = StObject.set(x, "TotalStackInstancesCount", value.asInstanceOf[js.Any])
+    inline def setTotalStackInstancesCount(value: TotalStackInstancesCount): Self = StObject.set(x, "TotalStackInstancesCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalStackInstancesCountUndefined: Self = StObject.set(x, "TotalStackInstancesCount", js.undefined)
+    inline def setTotalStackInstancesCountUndefined: Self = StObject.set(x, "TotalStackInstancesCount", js.undefined)
   }
 }

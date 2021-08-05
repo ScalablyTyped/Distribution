@@ -12,8 +12,7 @@ object useCellClassNameMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[DateType](
+  inline def default[DateType](
     hasCellPrefixClsGenerateConfigRangedValueHoverRangedValueIsInViewIsSameCellOffsetCellTodayValue: CellPrefixCls[DateType]
   ): js.Function1[/* currentDate */ DateType, StringDictionary[Boolean]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasCellPrefixClsGenerateConfigRangedValueHoverRangedValueIsInViewIsSameCellOffsetCellTodayValue.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* currentDate */ DateType, StringDictionary[Boolean]]]
 }

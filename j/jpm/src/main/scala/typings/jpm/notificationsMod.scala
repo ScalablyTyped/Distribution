@@ -14,6 +14,5 @@ object notificationsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def notify_(options: Data): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notify")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def notify_(options: Data): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notify")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

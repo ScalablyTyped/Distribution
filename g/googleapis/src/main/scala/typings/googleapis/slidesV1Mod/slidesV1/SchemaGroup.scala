@@ -17,22 +17,17 @@ trait SchemaGroup extends StObject {
 }
 object SchemaGroup {
   
-  @scala.inline
-  def apply(): SchemaGroup = {
+  inline def apply(): SchemaGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGroup]
   }
   
-  @scala.inline
-  implicit class SchemaGroupMutableBuilder[Self <: SchemaGroup] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGroup](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Array[SchemaPageElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[SchemaPageElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setChildrenVarargs(value: SchemaPageElement*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: SchemaPageElement*): Self = StObject.set(x, "children", js.Array(value :_*))
   }
 }

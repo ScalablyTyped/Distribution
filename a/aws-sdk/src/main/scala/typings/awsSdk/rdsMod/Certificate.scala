@@ -48,61 +48,43 @@ trait Certificate extends StObject {
 }
 object Certificate {
   
-  @scala.inline
-  def apply(): Certificate = {
+  inline def apply(): Certificate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Certificate]
   }
   
-  @scala.inline
-  implicit class CertificateMutableBuilder[Self <: Certificate] (val x: Self) extends AnyVal {
+  extension [Self <: Certificate](x: Self) {
     
-    @scala.inline
-    def setCertificateArn(value: String): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
+    inline def setCertificateArn(value: String): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateArnUndefined: Self = StObject.set(x, "CertificateArn", js.undefined)
+    inline def setCertificateArnUndefined: Self = StObject.set(x, "CertificateArn", js.undefined)
     
-    @scala.inline
-    def setCertificateIdentifier(value: String): Self = StObject.set(x, "CertificateIdentifier", value.asInstanceOf[js.Any])
+    inline def setCertificateIdentifier(value: String): Self = StObject.set(x, "CertificateIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateIdentifierUndefined: Self = StObject.set(x, "CertificateIdentifier", js.undefined)
+    inline def setCertificateIdentifierUndefined: Self = StObject.set(x, "CertificateIdentifier", js.undefined)
     
-    @scala.inline
-    def setCertificateType(value: String): Self = StObject.set(x, "CertificateType", value.asInstanceOf[js.Any])
+    inline def setCertificateType(value: String): Self = StObject.set(x, "CertificateType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateTypeUndefined: Self = StObject.set(x, "CertificateType", js.undefined)
+    inline def setCertificateTypeUndefined: Self = StObject.set(x, "CertificateType", js.undefined)
     
-    @scala.inline
-    def setCustomerOverride(value: BooleanOptional): Self = StObject.set(x, "CustomerOverride", value.asInstanceOf[js.Any])
+    inline def setCustomerOverride(value: BooleanOptional): Self = StObject.set(x, "CustomerOverride", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerOverrideUndefined: Self = StObject.set(x, "CustomerOverride", js.undefined)
+    inline def setCustomerOverrideUndefined: Self = StObject.set(x, "CustomerOverride", js.undefined)
     
-    @scala.inline
-    def setCustomerOverrideValidTill(value: TStamp): Self = StObject.set(x, "CustomerOverrideValidTill", value.asInstanceOf[js.Any])
+    inline def setCustomerOverrideValidTill(value: TStamp): Self = StObject.set(x, "CustomerOverrideValidTill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerOverrideValidTillUndefined: Self = StObject.set(x, "CustomerOverrideValidTill", js.undefined)
+    inline def setCustomerOverrideValidTillUndefined: Self = StObject.set(x, "CustomerOverrideValidTill", js.undefined)
     
-    @scala.inline
-    def setThumbprint(value: String): Self = StObject.set(x, "Thumbprint", value.asInstanceOf[js.Any])
+    inline def setThumbprint(value: String): Self = StObject.set(x, "Thumbprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbprintUndefined: Self = StObject.set(x, "Thumbprint", js.undefined)
+    inline def setThumbprintUndefined: Self = StObject.set(x, "Thumbprint", js.undefined)
     
-    @scala.inline
-    def setValidFrom(value: TStamp): Self = StObject.set(x, "ValidFrom", value.asInstanceOf[js.Any])
+    inline def setValidFrom(value: TStamp): Self = StObject.set(x, "ValidFrom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidFromUndefined: Self = StObject.set(x, "ValidFrom", js.undefined)
+    inline def setValidFromUndefined: Self = StObject.set(x, "ValidFrom", js.undefined)
     
-    @scala.inline
-    def setValidTill(value: TStamp): Self = StObject.set(x, "ValidTill", value.asInstanceOf[js.Any])
+    inline def setValidTill(value: TStamp): Self = StObject.set(x, "ValidTill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidTillUndefined: Self = StObject.set(x, "ValidTill", js.undefined)
+    inline def setValidTillUndefined: Self = StObject.set(x, "ValidTill", js.undefined)
   }
 }

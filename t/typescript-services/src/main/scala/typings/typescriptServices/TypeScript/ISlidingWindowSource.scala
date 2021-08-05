@@ -16,16 +16,13 @@ trait ISlidingWindowSource extends StObject {
 }
 object ISlidingWindowSource {
   
-  @scala.inline
-  def apply(fetchMoreItems: (js.Any, Double, js.Array[js.Any], Double, Double) => Double): ISlidingWindowSource = {
+  inline def apply(fetchMoreItems: (js.Any, Double, js.Array[js.Any], Double, Double) => Double): ISlidingWindowSource = {
     val __obj = js.Dynamic.literal(fetchMoreItems = js.Any.fromFunction5(fetchMoreItems))
     __obj.asInstanceOf[ISlidingWindowSource]
   }
   
-  @scala.inline
-  implicit class ISlidingWindowSourceMutableBuilder[Self <: ISlidingWindowSource] (val x: Self) extends AnyVal {
+  extension [Self <: ISlidingWindowSource](x: Self) {
     
-    @scala.inline
-    def setFetchMoreItems(value: (js.Any, Double, js.Array[js.Any], Double, Double) => Double): Self = StObject.set(x, "fetchMoreItems", js.Any.fromFunction5(value))
+    inline def setFetchMoreItems(value: (js.Any, Double, js.Array[js.Any], Double, Double) => Double): Self = StObject.set(x, "fetchMoreItems", js.Any.fromFunction5(value))
   }
 }

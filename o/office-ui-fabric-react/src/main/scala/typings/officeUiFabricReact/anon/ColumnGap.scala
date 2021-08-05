@@ -12,19 +12,15 @@ trait ColumnGap extends StObject {
 }
 object ColumnGap {
   
-  @scala.inline
-  def apply(columnGap: Unit, rowGap: Unit): ColumnGap = {
+  inline def apply(columnGap: Unit, rowGap: Unit): ColumnGap = {
     val __obj = js.Dynamic.literal(columnGap = columnGap.asInstanceOf[js.Any], rowGap = rowGap.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnGap]
   }
   
-  @scala.inline
-  implicit class ColumnGapMutableBuilder[Self <: ColumnGap] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnGap](x: Self) {
     
-    @scala.inline
-    def setColumnGap(value: Unit): Self = StObject.set(x, "columnGap", value.asInstanceOf[js.Any])
+    inline def setColumnGap(value: Unit): Self = StObject.set(x, "columnGap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowGap(value: Unit): Self = StObject.set(x, "rowGap", value.asInstanceOf[js.Any])
+    inline def setRowGap(value: Unit): Self = StObject.set(x, "rowGap", value.asInstanceOf[js.Any])
   }
 }

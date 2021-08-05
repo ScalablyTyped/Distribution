@@ -33,113 +33,97 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Selector extends StObject
 object Selector {
   
-  @scala.inline
-  def Adjacent(left: SubjectSelector, right: SubjectSelector): typings.esquery.mod.Adjacent = {
+  inline def Adjacent(left: SubjectSelector, right: SubjectSelector): typings.esquery.mod.Adjacent = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("adjacent")
     __obj.asInstanceOf[typings.esquery.mod.Adjacent]
   }
   
-  @scala.inline
-  def Attribute(name: String): typings.esquery.mod.Attribute = {
+  inline def Attribute(name: String): typings.esquery.mod.Attribute = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("attribute")
     __obj.asInstanceOf[typings.esquery.mod.Attribute]
   }
   
-  @scala.inline
-  def Child(left: SubjectSelector, right: SubjectSelector): typings.esquery.mod.Child = {
+  inline def Child(left: SubjectSelector, right: SubjectSelector): typings.esquery.mod.Child = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("child")
     __obj.asInstanceOf[typings.esquery.mod.Child]
   }
   
-  @scala.inline
-  def Class(name: declaration | expression | function | pattern | statement): typings.esquery.mod.Class = {
+  inline def Class(name: declaration | expression | function | pattern | statement): typings.esquery.mod.Class = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("class")
     __obj.asInstanceOf[typings.esquery.mod.Class]
   }
   
-  @scala.inline
-  def Descendant(left: SubjectSelector, right: SubjectSelector): typings.esquery.mod.Descendant = {
+  inline def Descendant(left: SubjectSelector, right: SubjectSelector): typings.esquery.mod.Descendant = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("descendant")
     __obj.asInstanceOf[typings.esquery.mod.Descendant]
   }
   
-  @scala.inline
-  def Field(name: String): typings.esquery.mod.Field = {
+  inline def Field(name: String): typings.esquery.mod.Field = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("field")
     __obj.asInstanceOf[typings.esquery.mod.Field]
   }
   
-  @scala.inline
-  def Has(selectors: js.Array[SubjectSelector]): typings.esquery.mod.Has = {
+  inline def Has(selectors: js.Array[SubjectSelector]): typings.esquery.mod.Has = {
     val __obj = js.Dynamic.literal(selectors = selectors.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("has")
     __obj.asInstanceOf[typings.esquery.mod.Has]
   }
   
-  @scala.inline
-  def Identifier(value: String): typings.esquery.mod.Identifier = {
+  inline def Identifier(value: String): typings.esquery.mod.Identifier = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("identifier")
     __obj.asInstanceOf[typings.esquery.mod.Identifier]
   }
   
-  @scala.inline
-  def Matches_(selectors: js.Array[SubjectSelector]): typings.esquery.mod.Matches_ = {
+  inline def Matches_(selectors: js.Array[SubjectSelector]): typings.esquery.mod.Matches_ = {
     val __obj = js.Dynamic.literal(selectors = selectors.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("matches")
     __obj.asInstanceOf[typings.esquery.mod.Matches_]
   }
   
-  @scala.inline
-  def Negation(selectors: js.Array[SubjectSelector]): typings.esquery.mod.Negation = {
+  inline def Negation(selectors: js.Array[SubjectSelector]): typings.esquery.mod.Negation = {
     val __obj = js.Dynamic.literal(selectors = selectors.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("not")
     __obj.asInstanceOf[typings.esquery.mod.Negation]
   }
   
-  @scala.inline
-  def NthChild(index: NumericLiteral): typings.esquery.mod.NthChild = {
+  inline def NthChild(index: NumericLiteral): typings.esquery.mod.NthChild = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("nth-child")
     __obj.asInstanceOf[typings.esquery.mod.NthChild]
   }
   
-  @scala.inline
-  def NthLastChild(index: NumericLiteral): typings.esquery.mod.NthLastChild = {
+  inline def NthLastChild(index: NumericLiteral): typings.esquery.mod.NthLastChild = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("nth-last-child")
     __obj.asInstanceOf[typings.esquery.mod.NthLastChild]
   }
   
-  @scala.inline
-  def Sequence(selectors: js.Array[SubjectSelector]): typings.esquery.mod.Sequence = {
+  inline def Sequence(selectors: js.Array[SubjectSelector]): typings.esquery.mod.Sequence = {
     val __obj = js.Dynamic.literal(selectors = selectors.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("compound")
     __obj.asInstanceOf[typings.esquery.mod.Sequence]
   }
   
-  @scala.inline
-  def Sibling(left: SubjectSelector, right: SubjectSelector): typings.esquery.mod.Sibling = {
+  inline def Sibling(left: SubjectSelector, right: SubjectSelector): typings.esquery.mod.Sibling = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("sibling")
     __obj.asInstanceOf[typings.esquery.mod.Sibling]
   }
   
-  @scala.inline
-  def Type(value: String): typings.esquery.mod.Type = {
+  inline def Type(value: String): typings.esquery.mod.Type = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("type")
     __obj.asInstanceOf[typings.esquery.mod.Type]
   }
   
-  @scala.inline
-  def Wildcard(): typings.esquery.mod.Wildcard = {
+  inline def Wildcard(): typings.esquery.mod.Wildcard = {
     val __obj = js.Dynamic.literal(value = "*")
     __obj.updateDynamic("type")("wildcard")
     __obj.asInstanceOf[typings.esquery.mod.Wildcard]

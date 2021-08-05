@@ -10,6 +10,5 @@ object formatterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def formatter(code: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatter")(code.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def formatter(code: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatter")(code.asInstanceOf[js.Any]).asInstanceOf[String]
 }

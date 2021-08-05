@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.Comments")
 @js.native
-class Comments protected ()
+/* private */ class Comments ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.Comments {
   
@@ -25,7 +25,7 @@ class Comments protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.Comments_typekey")
   var PowerPointDotComments_typekey: typings.activexPowerpoint.PowerPoint.Comments = js.native
 }

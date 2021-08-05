@@ -22,31 +22,23 @@ trait SoftPhoneOptions extends StObject {
 }
 object SoftPhoneOptions {
   
-  @scala.inline
-  def apply(): SoftPhoneOptions = {
+  inline def apply(): SoftPhoneOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SoftPhoneOptions]
   }
   
-  @scala.inline
-  implicit class SoftPhoneOptionsMutableBuilder[Self <: SoftPhoneOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SoftPhoneOptions](x: Self) {
     
-    @scala.inline
-    def setAllowFramedSoftphone(value: Boolean): Self = StObject.set(x, "allowFramedSoftphone", value.asInstanceOf[js.Any])
+    inline def setAllowFramedSoftphone(value: Boolean): Self = StObject.set(x, "allowFramedSoftphone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowFramedSoftphoneUndefined: Self = StObject.set(x, "allowFramedSoftphone", js.undefined)
+    inline def setAllowFramedSoftphoneUndefined: Self = StObject.set(x, "allowFramedSoftphone", js.undefined)
     
-    @scala.inline
-    def setDisableRingtone(value: Boolean): Self = StObject.set(x, "disableRingtone", value.asInstanceOf[js.Any])
+    inline def setDisableRingtone(value: Boolean): Self = StObject.set(x, "disableRingtone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableRingtoneUndefined: Self = StObject.set(x, "disableRingtone", js.undefined)
+    inline def setDisableRingtoneUndefined: Self = StObject.set(x, "disableRingtone", js.undefined)
     
-    @scala.inline
-    def setRingtoneUrl(value: String): Self = StObject.set(x, "ringtoneUrl", value.asInstanceOf[js.Any])
+    inline def setRingtoneUrl(value: String): Self = StObject.set(x, "ringtoneUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRingtoneUrlUndefined: Self = StObject.set(x, "ringtoneUrl", js.undefined)
+    inline def setRingtoneUrlUndefined: Self = StObject.set(x, "ringtoneUrl", js.undefined)
   }
 }

@@ -8,11 +8,9 @@ object maximMazurokGapiClientAndroidenterpriseStrings {
   
   @js.native
   sealed trait androidenterprise extends StObject
-  @scala.inline
-  def androidenterprise: androidenterprise = "androidenterprise".asInstanceOf[androidenterprise]
+  inline def androidenterprise: androidenterprise = "androidenterprise".asInstanceOf[androidenterprise]
   
   @js.native
   sealed trait v1 extends StObject
-  @scala.inline
-  def v1: v1 = "v1".asInstanceOf[v1]
+  inline def v1: v1 = "v1".asInstanceOf[v1]
 }

@@ -68,8 +68,7 @@ trait XSSFilters extends StObject {
 }
 object XSSFilters {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     inDoubleQuotedAttr: String => String,
     inHTMLComment: String => String,
     inHTMLData: String => String,
@@ -105,97 +104,66 @@ object XSSFilters {
     __obj.asInstanceOf[XSSFilters]
   }
   
-  @scala.inline
-  implicit class XSSFiltersMutableBuilder[Self <: XSSFilters] (val x: Self) extends AnyVal {
+  extension [Self <: XSSFilters](x: Self) {
     
-    @scala.inline
-    def setInDoubleQuotedAttr(value: String => String): Self = StObject.set(x, "inDoubleQuotedAttr", js.Any.fromFunction1(value))
+    inline def setInDoubleQuotedAttr(value: String => String): Self = StObject.set(x, "inDoubleQuotedAttr", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInHTMLComment(value: String => String): Self = StObject.set(x, "inHTMLComment", js.Any.fromFunction1(value))
+    inline def setInHTMLComment(value: String => String): Self = StObject.set(x, "inHTMLComment", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInHTMLData(value: String => String): Self = StObject.set(x, "inHTMLData", js.Any.fromFunction1(value))
+    inline def setInHTMLData(value: String => String): Self = StObject.set(x, "inHTMLData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInSingleQuotedAttr(value: String => String): Self = StObject.set(x, "inSingleQuotedAttr", js.Any.fromFunction1(value))
+    inline def setInSingleQuotedAttr(value: String => String): Self = StObject.set(x, "inSingleQuotedAttr", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInUnQuotedAttr(value: String => String): Self = StObject.set(x, "inUnQuotedAttr", js.Any.fromFunction1(value))
+    inline def setInUnQuotedAttr(value: String => String): Self = StObject.set(x, "inUnQuotedAttr", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUriComponentInDoubleQuotedAttr(value: String => String): Self = StObject.set(x, "uriComponentInDoubleQuotedAttr", js.Any.fromFunction1(value))
+    inline def setUriComponentInDoubleQuotedAttr(value: String => String): Self = StObject.set(x, "uriComponentInDoubleQuotedAttr", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUriComponentInHTMLComment(value: String => String): Self = StObject.set(x, "uriComponentInHTMLComment", js.Any.fromFunction1(value))
+    inline def setUriComponentInHTMLComment(value: String => String): Self = StObject.set(x, "uriComponentInHTMLComment", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUriComponentInHTMLData(value: String => String): Self = StObject.set(x, "uriComponentInHTMLData", js.Any.fromFunction1(value))
+    inline def setUriComponentInHTMLData(value: String => String): Self = StObject.set(x, "uriComponentInHTMLData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUriComponentInSingleQuotedAttr(value: String => String): Self = StObject.set(x, "uriComponentInSingleQuotedAttr", js.Any.fromFunction1(value))
+    inline def setUriComponentInSingleQuotedAttr(value: String => String): Self = StObject.set(x, "uriComponentInSingleQuotedAttr", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUriComponentInUnQuotedAttr(value: String => String): Self = StObject.set(x, "uriComponentInUnQuotedAttr", js.Any.fromFunction1(value))
+    inline def setUriComponentInUnQuotedAttr(value: String => String): Self = StObject.set(x, "uriComponentInUnQuotedAttr", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUriFragmentInDoubleQuotedAttr(value: String => String): Self = StObject.set(x, "uriFragmentInDoubleQuotedAttr", js.Any.fromFunction1(value))
+    inline def setUriFragmentInDoubleQuotedAttr(value: String => String): Self = StObject.set(x, "uriFragmentInDoubleQuotedAttr", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUriFragmentInHTMLComment(value: String => String): Self = StObject.set(x, "uriFragmentInHTMLComment", js.Any.fromFunction1(value))
+    inline def setUriFragmentInHTMLComment(value: String => String): Self = StObject.set(x, "uriFragmentInHTMLComment", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUriFragmentInHTMLData(value: String => String): Self = StObject.set(x, "uriFragmentInHTMLData", js.Any.fromFunction1(value))
+    inline def setUriFragmentInHTMLData(value: String => String): Self = StObject.set(x, "uriFragmentInHTMLData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUriFragmentInSingleQuotedAttr(value: String => String): Self = StObject.set(x, "uriFragmentInSingleQuotedAttr", js.Any.fromFunction1(value))
+    inline def setUriFragmentInSingleQuotedAttr(value: String => String): Self = StObject.set(x, "uriFragmentInSingleQuotedAttr", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUriFragmentInUnQuotedAttr(value: String => String): Self = StObject.set(x, "uriFragmentInUnQuotedAttr", js.Any.fromFunction1(value))
+    inline def setUriFragmentInUnQuotedAttr(value: String => String): Self = StObject.set(x, "uriFragmentInUnQuotedAttr", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUriInDoubleQuotedAttr(value: String => String): Self = StObject.set(x, "uriInDoubleQuotedAttr", js.Any.fromFunction1(value))
+    inline def setUriInDoubleQuotedAttr(value: String => String): Self = StObject.set(x, "uriInDoubleQuotedAttr", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUriInHTMLComment(value: String => String): Self = StObject.set(x, "uriInHTMLComment", js.Any.fromFunction1(value))
+    inline def setUriInHTMLComment(value: String => String): Self = StObject.set(x, "uriInHTMLComment", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUriInHTMLData(value: String => String): Self = StObject.set(x, "uriInHTMLData", js.Any.fromFunction1(value))
+    inline def setUriInHTMLData(value: String => String): Self = StObject.set(x, "uriInHTMLData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUriInSingleQuotedAttr(value: String => String): Self = StObject.set(x, "uriInSingleQuotedAttr", js.Any.fromFunction1(value))
+    inline def setUriInSingleQuotedAttr(value: String => String): Self = StObject.set(x, "uriInSingleQuotedAttr", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUriInUnQuotedAttr(value: String => String): Self = StObject.set(x, "uriInUnQuotedAttr", js.Any.fromFunction1(value))
+    inline def setUriInUnQuotedAttr(value: String => String): Self = StObject.set(x, "uriInUnQuotedAttr", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUriPathInDoubleQuotedAttr(value: String => String): Self = StObject.set(x, "uriPathInDoubleQuotedAttr", js.Any.fromFunction1(value))
+    inline def setUriPathInDoubleQuotedAttr(value: String => String): Self = StObject.set(x, "uriPathInDoubleQuotedAttr", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUriPathInHTMLComment(value: String => String): Self = StObject.set(x, "uriPathInHTMLComment", js.Any.fromFunction1(value))
+    inline def setUriPathInHTMLComment(value: String => String): Self = StObject.set(x, "uriPathInHTMLComment", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUriPathInHTMLData(value: String => String): Self = StObject.set(x, "uriPathInHTMLData", js.Any.fromFunction1(value))
+    inline def setUriPathInHTMLData(value: String => String): Self = StObject.set(x, "uriPathInHTMLData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUriPathInSingleQuotedAttr(value: String => String): Self = StObject.set(x, "uriPathInSingleQuotedAttr", js.Any.fromFunction1(value))
+    inline def setUriPathInSingleQuotedAttr(value: String => String): Self = StObject.set(x, "uriPathInSingleQuotedAttr", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUriPathInUnQuotedAttr(value: String => String): Self = StObject.set(x, "uriPathInUnQuotedAttr", js.Any.fromFunction1(value))
+    inline def setUriPathInUnQuotedAttr(value: String => String): Self = StObject.set(x, "uriPathInUnQuotedAttr", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUriQueryInDoubleQuotedAttr(value: String => String): Self = StObject.set(x, "uriQueryInDoubleQuotedAttr", js.Any.fromFunction1(value))
+    inline def setUriQueryInDoubleQuotedAttr(value: String => String): Self = StObject.set(x, "uriQueryInDoubleQuotedAttr", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUriQueryInHTMLComment(value: String => String): Self = StObject.set(x, "uriQueryInHTMLComment", js.Any.fromFunction1(value))
+    inline def setUriQueryInHTMLComment(value: String => String): Self = StObject.set(x, "uriQueryInHTMLComment", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUriQueryInHTMLData(value: String => String): Self = StObject.set(x, "uriQueryInHTMLData", js.Any.fromFunction1(value))
+    inline def setUriQueryInHTMLData(value: String => String): Self = StObject.set(x, "uriQueryInHTMLData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUriQueryInSingleQuotedAttr(value: String => String): Self = StObject.set(x, "uriQueryInSingleQuotedAttr", js.Any.fromFunction1(value))
+    inline def setUriQueryInSingleQuotedAttr(value: String => String): Self = StObject.set(x, "uriQueryInSingleQuotedAttr", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUriQueryInUnQuotedAttr(value: String => String): Self = StObject.set(x, "uriQueryInUnQuotedAttr", js.Any.fromFunction1(value))
+    inline def setUriQueryInUnQuotedAttr(value: String => String): Self = StObject.set(x, "uriQueryInUnQuotedAttr", js.Any.fromFunction1(value))
   }
 }

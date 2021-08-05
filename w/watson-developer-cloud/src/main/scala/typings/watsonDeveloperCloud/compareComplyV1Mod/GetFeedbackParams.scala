@@ -20,34 +20,25 @@ trait GetFeedbackParams extends StObject {
 }
 object GetFeedbackParams {
   
-  @scala.inline
-  def apply(feedback_id: String): GetFeedbackParams = {
+  inline def apply(feedback_id: String): GetFeedbackParams = {
     val __obj = js.Dynamic.literal(feedback_id = feedback_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFeedbackParams]
   }
   
-  @scala.inline
-  implicit class GetFeedbackParamsMutableBuilder[Self <: GetFeedbackParams] (val x: Self) extends AnyVal {
+  extension [Self <: GetFeedbackParams](x: Self) {
     
-    @scala.inline
-    def setFeedback_id(value: String): Self = StObject.set(x, "feedback_id", value.asInstanceOf[js.Any])
+    inline def setFeedback_id(value: String): Self = StObject.set(x, "feedback_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setModel(value: Model | String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: Model | String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
   }
 }

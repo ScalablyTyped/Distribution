@@ -36,43 +36,31 @@ trait ServerOptionsCache
 }
 object ServerOptionsCache {
   
-  @scala.inline
-  def apply(): ServerOptionsCache = {
+  inline def apply(): ServerOptionsCache = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServerOptionsCache]
   }
   
-  @scala.inline
-  implicit class ServerOptionsCacheMutableBuilder[Self <: ServerOptionsCache] (val x: Self) extends AnyVal {
+  extension [Self <: ServerOptionsCache](x: Self) {
     
-    @scala.inline
-    def setEngine(value: ClientApi[js.Any]): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
+    inline def setEngine(value: ClientApi[js.Any]): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineUndefined: Self = StObject.set(x, "engine", js.undefined)
+    inline def setEngineUndefined: Self = StObject.set(x, "engine", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPartition(value: String): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
+    inline def setPartition(value: String): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionUndefined: Self = StObject.set(x, "partition", js.undefined)
+    inline def setPartitionUndefined: Self = StObject.set(x, "partition", js.undefined)
     
-    @scala.inline
-    def setProvider(value: CacheProvider[ClientOptions]): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: CacheProvider[ClientOptions]): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
+    inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
     
-    @scala.inline
-    def setShared(value: Boolean): Self = StObject.set(x, "shared", value.asInstanceOf[js.Any])
+    inline def setShared(value: Boolean): Self = StObject.set(x, "shared", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedUndefined: Self = StObject.set(x, "shared", js.undefined)
+    inline def setSharedUndefined: Self = StObject.set(x, "shared", js.undefined)
   }
 }

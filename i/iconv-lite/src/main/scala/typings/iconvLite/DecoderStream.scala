@@ -13,19 +13,15 @@ trait DecoderStream extends StObject {
 }
 object DecoderStream {
   
-  @scala.inline
-  def apply(end: () => js.UndefOr[String], write: Buffer => String): DecoderStream = {
+  inline def apply(end: () => js.UndefOr[String], write: Buffer => String): DecoderStream = {
     val __obj = js.Dynamic.literal(end = js.Any.fromFunction0(end), write = js.Any.fromFunction1(write))
     __obj.asInstanceOf[DecoderStream]
   }
   
-  @scala.inline
-  implicit class DecoderStreamMutableBuilder[Self <: DecoderStream] (val x: Self) extends AnyVal {
+  extension [Self <: DecoderStream](x: Self) {
     
-    @scala.inline
-    def setEnd(value: () => js.UndefOr[String]): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
+    inline def setEnd(value: () => js.UndefOr[String]): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWrite(value: Buffer => String): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+    inline def setWrite(value: Buffer => String): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
   }
 }

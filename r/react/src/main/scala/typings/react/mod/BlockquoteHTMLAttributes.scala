@@ -12,19 +12,15 @@ trait BlockquoteHTMLAttributes[T]
 }
 object BlockquoteHTMLAttributes {
   
-  @scala.inline
-  def apply[T](): BlockquoteHTMLAttributes[T] = {
+  inline def apply[T](): BlockquoteHTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BlockquoteHTMLAttributes[T]]
   }
   
-  @scala.inline
-  implicit class BlockquoteHTMLAttributesMutableBuilder[Self <: BlockquoteHTMLAttributes[?], T] (val x: Self & BlockquoteHTMLAttributes[T]) extends AnyVal {
+  extension [Self <: BlockquoteHTMLAttributes[?], T](x: Self & BlockquoteHTMLAttributes[T]) {
     
-    @scala.inline
-    def setCite(value: String): Self = StObject.set(x, "cite", value.asInstanceOf[js.Any])
+    inline def setCite(value: String): Self = StObject.set(x, "cite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCiteUndefined: Self = StObject.set(x, "cite", js.undefined)
+    inline def setCiteUndefined: Self = StObject.set(x, "cite", js.undefined)
   }
 }

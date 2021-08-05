@@ -12,8 +12,6 @@ object createRequireFromPathMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createRequireFromPath(path: String): NodeRequire = ^.asInstanceOf[js.Dynamic].applyDynamic("createRequireFromPath")(path.asInstanceOf[js.Any]).asInstanceOf[NodeRequire]
-  @scala.inline
-  def createRequireFromPath(path: URL_): NodeRequire = ^.asInstanceOf[js.Dynamic].applyDynamic("createRequireFromPath")(path.asInstanceOf[js.Any]).asInstanceOf[NodeRequire]
+  inline def createRequireFromPath(path: String): NodeRequire = ^.asInstanceOf[js.Dynamic].applyDynamic("createRequireFromPath")(path.asInstanceOf[js.Any]).asInstanceOf[NodeRequire]
+  inline def createRequireFromPath(path: URL_): NodeRequire = ^.asInstanceOf[js.Dynamic].applyDynamic("createRequireFromPath")(path.asInstanceOf[js.Any]).asInstanceOf[NodeRequire]
 }

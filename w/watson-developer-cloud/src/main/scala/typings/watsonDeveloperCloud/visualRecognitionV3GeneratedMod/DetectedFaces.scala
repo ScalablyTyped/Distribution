@@ -18,31 +18,23 @@ trait DetectedFaces extends StObject {
 }
 object DetectedFaces {
   
-  @scala.inline
-  def apply(images: js.Array[ImageWithFaces], images_processed: Double): DetectedFaces = {
+  inline def apply(images: js.Array[ImageWithFaces], images_processed: Double): DetectedFaces = {
     val __obj = js.Dynamic.literal(images = images.asInstanceOf[js.Any], images_processed = images_processed.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectedFaces]
   }
   
-  @scala.inline
-  implicit class DetectedFacesMutableBuilder[Self <: DetectedFaces] (val x: Self) extends AnyVal {
+  extension [Self <: DetectedFaces](x: Self) {
     
-    @scala.inline
-    def setImages(value: js.Array[ImageWithFaces]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+    inline def setImages(value: js.Array[ImageWithFaces]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagesVarargs(value: ImageWithFaces*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: ImageWithFaces*): Self = StObject.set(x, "images", js.Array(value :_*))
     
-    @scala.inline
-    def setImages_processed(value: Double): Self = StObject.set(x, "images_processed", value.asInstanceOf[js.Any])
+    inline def setImages_processed(value: Double): Self = StObject.set(x, "images_processed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarnings(value: js.Array[WarningInfo]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+    inline def setWarnings(value: js.Array[WarningInfo]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
+    inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
     
-    @scala.inline
-    def setWarningsVarargs(value: WarningInfo*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: WarningInfo*): Self = StObject.set(x, "warnings", js.Array(value :_*))
   }
 }

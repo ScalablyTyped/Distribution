@@ -27,31 +27,23 @@ trait SchemaMemoryEvent extends StObject {
 }
 object SchemaMemoryEvent {
   
-  @scala.inline
-  def apply(): SchemaMemoryEvent = {
+  inline def apply(): SchemaMemoryEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMemoryEvent]
   }
   
-  @scala.inline
-  implicit class SchemaMemoryEventMutableBuilder[Self <: SchemaMemoryEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMemoryEvent](x: Self) {
     
-    @scala.inline
-    def setByteCount(value: String): Self = StObject.set(x, "byteCount", value.asInstanceOf[js.Any])
+    inline def setByteCount(value: String): Self = StObject.set(x, "byteCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByteCountUndefined: Self = StObject.set(x, "byteCount", js.undefined)
+    inline def setByteCountUndefined: Self = StObject.set(x, "byteCount", js.undefined)
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
+    inline def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTypeUndefined: Self = StObject.set(x, "eventType", js.undefined)
+    inline def setEventTypeUndefined: Self = StObject.set(x, "eventType", js.undefined)
   }
 }

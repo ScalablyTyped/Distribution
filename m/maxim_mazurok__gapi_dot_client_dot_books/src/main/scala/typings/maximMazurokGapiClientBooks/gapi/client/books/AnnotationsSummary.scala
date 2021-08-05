@@ -13,28 +13,21 @@ trait AnnotationsSummary extends StObject {
 }
 object AnnotationsSummary {
   
-  @scala.inline
-  def apply(): AnnotationsSummary = {
+  inline def apply(): AnnotationsSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnnotationsSummary]
   }
   
-  @scala.inline
-  implicit class AnnotationsSummaryMutableBuilder[Self <: AnnotationsSummary] (val x: Self) extends AnyVal {
+  extension [Self <: AnnotationsSummary](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLayers(value: js.Array[LayerId]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+    inline def setLayers(value: js.Array[LayerId]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
+    inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
-    @scala.inline
-    def setLayersVarargs(value: LayerId*): Self = StObject.set(x, "layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: LayerId*): Self = StObject.set(x, "layers", js.Array(value :_*))
   }
 }

@@ -29,8 +29,7 @@ object libTextFieldMod {
     @JSImport("office-ui-fabric-react/lib/TextField", "MaskedTextField.defaultProps")
     @js.native
     def defaultProps: IMaskedTextFieldProps = js.native
-    @scala.inline
-    def defaultProps_=(x: IMaskedTextFieldProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IMaskedTextFieldProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("office-ui-fabric-react/lib/TextField", "TextField")
@@ -53,7 +52,6 @@ object libTextFieldMod {
     @JSImport("office-ui-fabric-react/lib/TextField", "TextFieldBase.defaultProps")
     @js.native
     def defaultProps: ITextFieldProps = js.native
-    @scala.inline
-    def defaultProps_=(x: ITextFieldProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: ITextFieldProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

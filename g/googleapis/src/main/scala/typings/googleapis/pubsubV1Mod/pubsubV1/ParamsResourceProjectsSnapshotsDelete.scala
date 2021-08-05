@@ -25,25 +25,19 @@ trait ParamsResourceProjectsSnapshotsDelete
 }
 object ParamsResourceProjectsSnapshotsDelete {
   
-  @scala.inline
-  def apply(): ParamsResourceProjectsSnapshotsDelete = {
+  inline def apply(): ParamsResourceProjectsSnapshotsDelete = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceProjectsSnapshotsDelete]
   }
   
-  @scala.inline
-  implicit class ParamsResourceProjectsSnapshotsDeleteMutableBuilder[Self <: ParamsResourceProjectsSnapshotsDelete] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceProjectsSnapshotsDelete](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setSnapshot(value: String): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
+    inline def setSnapshot(value: String): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotUndefined: Self = StObject.set(x, "snapshot", js.undefined)
+    inline def setSnapshotUndefined: Self = StObject.set(x, "snapshot", js.undefined)
   }
 }

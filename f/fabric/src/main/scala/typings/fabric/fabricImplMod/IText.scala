@@ -589,8 +589,6 @@ object IText {
     * @param {Object} object Object to create an instance from
     * @param {function} [callback] invoked with new instance as argument
     */
-  @scala.inline
-  def fromObject(`object`: js.Any): IText = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[IText]
-  @scala.inline
-  def fromObject(`object`: js.Any, callback: js.Function): IText = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IText]
+  inline def fromObject(`object`: js.Any): IText = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[IText]
+  inline def fromObject(`object`: js.Any, callback: js.Function): IText = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IText]
 }

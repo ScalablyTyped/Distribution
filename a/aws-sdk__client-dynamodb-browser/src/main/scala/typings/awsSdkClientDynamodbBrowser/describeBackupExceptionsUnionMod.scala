@@ -13,14 +13,12 @@ object describeBackupExceptionsUnionMod {
   trait DescribeBackupExceptionsUnion extends StObject
   object DescribeBackupExceptionsUnion {
     
-    @scala.inline
-    def BackupNotFoundException(): typings.awsSdkClientDynamodbBrowser.typesBackupNotFoundExceptionMod.BackupNotFoundException = {
+    inline def BackupNotFoundException(): typings.awsSdkClientDynamodbBrowser.typesBackupNotFoundExceptionMod.BackupNotFoundException = {
       val __obj = js.Dynamic.literal(name = "BackupNotFoundException")
       __obj.asInstanceOf[typings.awsSdkClientDynamodbBrowser.typesBackupNotFoundExceptionMod.BackupNotFoundException]
     }
     
-    @scala.inline
-    def InternalServerError(): typings.awsSdkClientDynamodbBrowser.typesInternalServerErrorMod.InternalServerError = {
+    inline def InternalServerError(): typings.awsSdkClientDynamodbBrowser.typesInternalServerErrorMod.InternalServerError = {
       val __obj = js.Dynamic.literal(name = "InternalServerError")
       __obj.asInstanceOf[typings.awsSdkClientDynamodbBrowser.typesInternalServerErrorMod.InternalServerError]
     }

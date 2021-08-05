@@ -18,9 +18,9 @@ object listReelMediaViewerFeedMod {
         ] {
     def this(client: IgApiClient) = this()
     
-    var mediaId: js.Any = js.native
+    /* private */ var mediaId: js.Any = js.native
     
-    var nextMaxId: js.Any = js.native
+    /* private */ var nextMaxId: js.Any = js.native
     
     def request(): js.Promise[ListReelMediaViewerFeedResponseRootObject] = js.native
   }

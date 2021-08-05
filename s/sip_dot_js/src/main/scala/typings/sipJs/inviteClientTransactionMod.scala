@@ -26,13 +26,13 @@ object inviteClientTransactionMod {
       */
     def this(request: OutgoingRequestMessage, transport: Transport, user: ClientTransactionUser) = this()
     
-    var B: js.Any = js.native
+    /* private */ var B: js.Any = js.native
     
-    var D: js.Any = js.native
+    /* private */ var D: js.Any = js.native
     
-    var M: js.Any = js.native
+    /* private */ var M: js.Any = js.native
     
-    var ack: js.Any = js.native
+    /* private */ var ack: js.Any = js.native
     
     /**
       * ACK a 2xx final response.
@@ -59,13 +59,13 @@ object inviteClientTransactionMod {
       * If key exists but value is undefined, a 2xx was received but the ACK not yet sent.
       * Otherwise, a 2xx was not (yet) received for this transaction.
       */
-    var ackRetransmissionCache: js.Any = js.native
+    /* private */ var ackRetransmissionCache: js.Any = js.native
     
     /**
       * Execute a state transition.
       * @param newState - New state.
       */
-    var stateTransition: js.Any = js.native
+    /* private */ var stateTransition: js.Any = js.native
     
     /**
       * When timer A fires, the client transaction MUST retransmit the
@@ -79,7 +79,7 @@ object inviteClientTransactionMod {
       * transaction is in the "Calling" state.
       * https://tools.ietf.org/html/rfc3261#section-17.1.1.2
       */
-    var timerA: js.Any = js.native
+    /* private */ var timerA: js.Any = js.native
     
     /**
       * If the client transaction is still in the "Calling" state when timer
@@ -87,20 +87,20 @@ object inviteClientTransactionMod {
       * has occurred.  The client transaction MUST NOT generate an ACK.
       * https://tools.ietf.org/html/rfc3261#section-17.1.1.2
       */
-    var timerB: js.Any = js.native
+    /* private */ var timerB: js.Any = js.native
     
     /**
       * If Timer D fires while the client transaction is in the "Completed" state,
       * the client transaction MUST move to the "Terminated" state.
       * https://tools.ietf.org/html/rfc6026#section-8.4
       */
-    var timerD: js.Any = js.native
+    /* private */ var timerD: js.Any = js.native
     
     /**
       * If Timer M fires while the client transaction is in the "Accepted"
       * state, the client transaction MUST move to the "Terminated" state.
       * https://tools.ietf.org/html/rfc6026#section-8.4
       */
-    var timerM: js.Any = js.native
+    /* private */ var timerM: js.Any = js.native
   }
 }

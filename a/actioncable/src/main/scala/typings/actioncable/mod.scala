@@ -11,8 +11,6 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createConsumer(): Cable = ^.asInstanceOf[js.Dynamic].applyDynamic("createConsumer")().asInstanceOf[Cable]
-  @scala.inline
-  def createConsumer(url: String): Cable = ^.asInstanceOf[js.Dynamic].applyDynamic("createConsumer")(url.asInstanceOf[js.Any]).asInstanceOf[Cable]
+  inline def createConsumer(): Cable = ^.asInstanceOf[js.Dynamic].applyDynamic("createConsumer")().asInstanceOf[Cable]
+  inline def createConsumer(url: String): Cable = ^.asInstanceOf[js.Dynamic].applyDynamic("createConsumer")(url.asInstanceOf[js.Any]).asInstanceOf[Cable]
 }

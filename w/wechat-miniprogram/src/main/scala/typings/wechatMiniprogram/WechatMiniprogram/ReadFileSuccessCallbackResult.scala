@@ -14,19 +14,15 @@ trait ReadFileSuccessCallbackResult extends StObject {
 }
 object ReadFileSuccessCallbackResult {
   
-  @scala.inline
-  def apply(data: String | ArrayBuffer, errMsg: String): ReadFileSuccessCallbackResult = {
+  inline def apply(data: String | ArrayBuffer, errMsg: String): ReadFileSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadFileSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class ReadFileSuccessCallbackResultMutableBuilder[Self <: ReadFileSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: ReadFileSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setData(value: String | ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

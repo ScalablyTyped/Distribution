@@ -23,49 +23,35 @@ trait SpineGameObjectConfig
 }
 object SpineGameObjectConfig {
   
-  @scala.inline
-  def apply(): SpineGameObjectConfig = {
+  inline def apply(): SpineGameObjectConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SpineGameObjectConfig]
   }
   
-  @scala.inline
-  implicit class SpineGameObjectConfigMutableBuilder[Self <: SpineGameObjectConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SpineGameObjectConfig](x: Self) {
     
-    @scala.inline
-    def setAnimationName(value: String): Self = StObject.set(x, "animationName", value.asInstanceOf[js.Any])
+    inline def setAnimationName(value: String): Self = StObject.set(x, "animationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationNameUndefined: Self = StObject.set(x, "animationName", js.undefined)
+    inline def setAnimationNameUndefined: Self = StObject.set(x, "animationName", js.undefined)
     
-    @scala.inline
-    def setAttachmentName(value: String): Self = StObject.set(x, "attachmentName", value.asInstanceOf[js.Any])
+    inline def setAttachmentName(value: String): Self = StObject.set(x, "attachmentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentNameUndefined: Self = StObject.set(x, "attachmentName", js.undefined)
+    inline def setAttachmentNameUndefined: Self = StObject.set(x, "attachmentName", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+    inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+    inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
     
-    @scala.inline
-    def setSkinName(value: String): Self = StObject.set(x, "skinName", value.asInstanceOf[js.Any])
+    inline def setSkinName(value: String): Self = StObject.set(x, "skinName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkinNameUndefined: Self = StObject.set(x, "skinName", js.undefined)
+    inline def setSkinNameUndefined: Self = StObject.set(x, "skinName", js.undefined)
     
-    @scala.inline
-    def setSlotName(value: String): Self = StObject.set(x, "slotName", value.asInstanceOf[js.Any])
+    inline def setSlotName(value: String): Self = StObject.set(x, "slotName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlotNameUndefined: Self = StObject.set(x, "slotName", js.undefined)
+    inline def setSlotNameUndefined: Self = StObject.set(x, "slotName", js.undefined)
   }
 }

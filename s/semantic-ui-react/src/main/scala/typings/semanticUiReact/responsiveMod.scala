@@ -21,35 +21,30 @@ object responsiveMod {
     @JSImport("semantic-ui-react/dist/commonjs/addons/Responsive", "default.onlyComputer")
     @js.native
     def onlyComputer: ResponsiveWidthShorthand = js.native
-    @scala.inline
-    def onlyComputer_=(x: ResponsiveWidthShorthand): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onlyComputer")(x.asInstanceOf[js.Any])
+    inline def onlyComputer_=(x: ResponsiveWidthShorthand): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onlyComputer")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("semantic-ui-react/dist/commonjs/addons/Responsive", "default.onlyLargeScreen")
     @js.native
     def onlyLargeScreen: ResponsiveWidthShorthand = js.native
-    @scala.inline
-    def onlyLargeScreen_=(x: ResponsiveWidthShorthand): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onlyLargeScreen")(x.asInstanceOf[js.Any])
+    inline def onlyLargeScreen_=(x: ResponsiveWidthShorthand): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onlyLargeScreen")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("semantic-ui-react/dist/commonjs/addons/Responsive", "default.onlyMobile")
     @js.native
     def onlyMobile: ResponsiveWidthShorthand = js.native
-    @scala.inline
-    def onlyMobile_=(x: ResponsiveWidthShorthand): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onlyMobile")(x.asInstanceOf[js.Any])
+    inline def onlyMobile_=(x: ResponsiveWidthShorthand): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onlyMobile")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("semantic-ui-react/dist/commonjs/addons/Responsive", "default.onlyTablet")
     @js.native
     def onlyTablet: ResponsiveWidthShorthand = js.native
-    @scala.inline
-    def onlyTablet_=(x: ResponsiveWidthShorthand): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onlyTablet")(x.asInstanceOf[js.Any])
+    inline def onlyTablet_=(x: ResponsiveWidthShorthand): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onlyTablet")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("semantic-ui-react/dist/commonjs/addons/Responsive", "default.onlyWidescreen")
     @js.native
     def onlyWidescreen: ResponsiveWidthShorthand = js.native
-    @scala.inline
-    def onlyWidescreen_=(x: ResponsiveWidthShorthand): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onlyWidescreen")(x.asInstanceOf[js.Any])
+    inline def onlyWidescreen_=(x: ResponsiveWidthShorthand): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onlyWidescreen")(x.asInstanceOf[js.Any])
   }
 }

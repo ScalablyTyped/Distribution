@@ -12,19 +12,15 @@ trait LinearSpringOptions
 }
 object LinearSpringOptions {
   
-  @scala.inline
-  def apply(): LinearSpringOptions = {
+  inline def apply(): LinearSpringOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LinearSpringOptions]
   }
   
-  @scala.inline
-  implicit class LinearSpringOptionsMutableBuilder[Self <: LinearSpringOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LinearSpringOptions](x: Self) {
     
-    @scala.inline
-    def setRestLength(value: Double): Self = StObject.set(x, "restLength", value.asInstanceOf[js.Any])
+    inline def setRestLength(value: Double): Self = StObject.set(x, "restLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestLengthUndefined: Self = StObject.set(x, "restLength", js.undefined)
+    inline def setRestLengthUndefined: Self = StObject.set(x, "restLength", js.undefined)
   }
 }

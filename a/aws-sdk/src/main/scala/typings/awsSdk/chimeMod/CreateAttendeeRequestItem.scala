@@ -18,25 +18,19 @@ trait CreateAttendeeRequestItem extends StObject {
 }
 object CreateAttendeeRequestItem {
   
-  @scala.inline
-  def apply(ExternalUserId: ExternalUserIdType): CreateAttendeeRequestItem = {
+  inline def apply(ExternalUserId: ExternalUserIdType): CreateAttendeeRequestItem = {
     val __obj = js.Dynamic.literal(ExternalUserId = ExternalUserId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAttendeeRequestItem]
   }
   
-  @scala.inline
-  implicit class CreateAttendeeRequestItemMutableBuilder[Self <: CreateAttendeeRequestItem] (val x: Self) extends AnyVal {
+  extension [Self <: CreateAttendeeRequestItem](x: Self) {
     
-    @scala.inline
-    def setExternalUserId(value: ExternalUserIdType): Self = StObject.set(x, "ExternalUserId", value.asInstanceOf[js.Any])
+    inline def setExternalUserId(value: ExternalUserIdType): Self = StObject.set(x, "ExternalUserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: AttendeeTagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: AttendeeTagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

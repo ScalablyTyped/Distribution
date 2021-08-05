@@ -18,28 +18,21 @@ trait DescribeBucketsResponse extends StObject {
 }
 object DescribeBucketsResponse {
   
-  @scala.inline
-  def apply(): DescribeBucketsResponse = {
+  inline def apply(): DescribeBucketsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeBucketsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeBucketsResponseMutableBuilder[Self <: DescribeBucketsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeBucketsResponse](x: Self) {
     
-    @scala.inline
-    def setBuckets(value: listOfBucketMetadata): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
+    inline def setBuckets(value: listOfBucketMetadata): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketsUndefined: Self = StObject.set(x, "buckets", js.undefined)
+    inline def setBucketsUndefined: Self = StObject.set(x, "buckets", js.undefined)
     
-    @scala.inline
-    def setBucketsVarargs(value: BucketMetadata*): Self = StObject.set(x, "buckets", js.Array(value :_*))
+    inline def setBucketsVarargs(value: BucketMetadata*): Self = StObject.set(x, "buckets", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

@@ -12,19 +12,15 @@ trait IOCRPageResult extends StObject {
 }
 object IOCRPageResult {
   
-  @scala.inline
-  def apply(OCRZoneResults: IOCRZoneResults, PageNum: Double): IOCRPageResult = {
+  inline def apply(OCRZoneResults: IOCRZoneResults, PageNum: Double): IOCRPageResult = {
     val __obj = js.Dynamic.literal(OCRZoneResults = OCRZoneResults.asInstanceOf[js.Any], PageNum = PageNum.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOCRPageResult]
   }
   
-  @scala.inline
-  implicit class IOCRPageResultMutableBuilder[Self <: IOCRPageResult] (val x: Self) extends AnyVal {
+  extension [Self <: IOCRPageResult](x: Self) {
     
-    @scala.inline
-    def setOCRZoneResults(value: IOCRZoneResults): Self = StObject.set(x, "OCRZoneResults", value.asInstanceOf[js.Any])
+    inline def setOCRZoneResults(value: IOCRZoneResults): Self = StObject.set(x, "OCRZoneResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageNum(value: Double): Self = StObject.set(x, "PageNum", value.asInstanceOf[js.Any])
+    inline def setPageNum(value: Double): Self = StObject.set(x, "PageNum", value.asInstanceOf[js.Any])
   }
 }

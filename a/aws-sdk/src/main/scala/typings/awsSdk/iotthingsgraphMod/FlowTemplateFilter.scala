@@ -18,22 +18,17 @@ trait FlowTemplateFilter extends StObject {
 }
 object FlowTemplateFilter {
   
-  @scala.inline
-  def apply(name: FlowTemplateFilterName, value: FlowTemplateFilterValues): FlowTemplateFilter = {
+  inline def apply(name: FlowTemplateFilterName, value: FlowTemplateFilterValues): FlowTemplateFilter = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowTemplateFilter]
   }
   
-  @scala.inline
-  implicit class FlowTemplateFilterMutableBuilder[Self <: FlowTemplateFilter] (val x: Self) extends AnyVal {
+  extension [Self <: FlowTemplateFilter](x: Self) {
     
-    @scala.inline
-    def setName(value: FlowTemplateFilterName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: FlowTemplateFilterName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: FlowTemplateFilterValues): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: FlowTemplateFilterValues): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueVarargs(value: FlowTemplateFilterValue*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: FlowTemplateFilterValue*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

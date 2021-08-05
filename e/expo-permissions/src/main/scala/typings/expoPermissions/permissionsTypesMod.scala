@@ -36,17 +36,14 @@ object permissionsTypesMod {
   }
   object PermissionDetailsLocationAndroid {
     
-    @scala.inline
-    def apply(accuracy: fine | coarse | none): PermissionDetailsLocationAndroid = {
+    inline def apply(accuracy: fine | coarse | none): PermissionDetailsLocationAndroid = {
       val __obj = js.Dynamic.literal(accuracy = accuracy.asInstanceOf[js.Any])
       __obj.asInstanceOf[PermissionDetailsLocationAndroid]
     }
     
-    @scala.inline
-    implicit class PermissionDetailsLocationAndroidMutableBuilder[Self <: PermissionDetailsLocationAndroid] (val x: Self) extends AnyVal {
+    extension [Self <: PermissionDetailsLocationAndroid](x: Self) {
       
-      @scala.inline
-      def setAccuracy(value: fine | coarse | none): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
+      inline def setAccuracy(value: fine | coarse | none): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     }
   }
   
@@ -62,32 +59,24 @@ object permissionsTypesMod {
   }
   object PermissionInfo {
     
-    @scala.inline
-    def apply(canAskAgain: Boolean, expires: PermissionExpiration, granted: Boolean, status: PermissionStatus): PermissionInfo = {
+    inline def apply(canAskAgain: Boolean, expires: PermissionExpiration, granted: Boolean, status: PermissionStatus): PermissionInfo = {
       val __obj = js.Dynamic.literal(canAskAgain = canAskAgain.asInstanceOf[js.Any], expires = expires.asInstanceOf[js.Any], granted = granted.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[PermissionInfo]
     }
     
-    @scala.inline
-    implicit class PermissionInfoMutableBuilder[Self <: PermissionInfo] (val x: Self) extends AnyVal {
+    extension [Self <: PermissionInfo](x: Self) {
       
-      @scala.inline
-      def setAccessPrivileges(value: all | limited | none): Self = StObject.set(x, "accessPrivileges", value.asInstanceOf[js.Any])
+      inline def setAccessPrivileges(value: all | limited | none): Self = StObject.set(x, "accessPrivileges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessPrivilegesUndefined: Self = StObject.set(x, "accessPrivileges", js.undefined)
+      inline def setAccessPrivilegesUndefined: Self = StObject.set(x, "accessPrivileges", js.undefined)
       
-      @scala.inline
-      def setAndroid(value: PermissionDetailsLocationAndroid): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
+      inline def setAndroid(value: PermissionDetailsLocationAndroid): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAndroidUndefined: Self = StObject.set(x, "android", js.undefined)
+      inline def setAndroidUndefined: Self = StObject.set(x, "android", js.undefined)
       
-      @scala.inline
-      def setScope(value: whenInUse | always | none): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: whenInUse | always | none): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     }
   }
   
@@ -101,8 +90,7 @@ object permissionsTypesMod {
   }
   object PermissionResponse {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       canAskAgain: Boolean,
       expires: PermissionExpiration,
       granted: Boolean,
@@ -113,11 +101,9 @@ object permissionsTypesMod {
       __obj.asInstanceOf[PermissionResponse]
     }
     
-    @scala.inline
-    implicit class PermissionResponseMutableBuilder[Self <: PermissionResponse] (val x: Self) extends AnyVal {
+    extension [Self <: PermissionResponse](x: Self) {
       
-      @scala.inline
-      def setPermissions(value: PermissionMap): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+      inline def setPermissions(value: PermissionMap): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     }
   }
   
@@ -137,37 +123,26 @@ object permissionsTypesMod {
   trait PermissionType extends StObject
   object PermissionType {
     
-    @scala.inline
-    def audioRecording: typings.expoPermissions.expoPermissionsStrings.audioRecording = "audioRecording".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.audioRecording]
+    inline def audioRecording: typings.expoPermissions.expoPermissionsStrings.audioRecording = "audioRecording".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.audioRecording]
     
-    @scala.inline
-    def calendar: typings.expoPermissions.expoPermissionsStrings.calendar = "calendar".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.calendar]
+    inline def calendar: typings.expoPermissions.expoPermissionsStrings.calendar = "calendar".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.calendar]
     
-    @scala.inline
-    def camera: typings.expoPermissions.expoPermissionsStrings.camera = "camera".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.camera]
+    inline def camera: typings.expoPermissions.expoPermissionsStrings.camera = "camera".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.camera]
     
-    @scala.inline
-    def cameraRoll: typings.expoPermissions.expoPermissionsStrings.cameraRoll = "cameraRoll".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.cameraRoll]
+    inline def cameraRoll: typings.expoPermissions.expoPermissionsStrings.cameraRoll = "cameraRoll".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.cameraRoll]
     
-    @scala.inline
-    def contacts: typings.expoPermissions.expoPermissionsStrings.contacts = "contacts".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.contacts]
+    inline def contacts: typings.expoPermissions.expoPermissionsStrings.contacts = "contacts".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.contacts]
     
-    @scala.inline
-    def location: typings.expoPermissions.expoPermissionsStrings.location = "location".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.location]
+    inline def location: typings.expoPermissions.expoPermissionsStrings.location = "location".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.location]
     
-    @scala.inline
-    def motion: typings.expoPermissions.expoPermissionsStrings.motion = "motion".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.motion]
+    inline def motion: typings.expoPermissions.expoPermissionsStrings.motion = "motion".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.motion]
     
-    @scala.inline
-    def notifications: typings.expoPermissions.expoPermissionsStrings.notifications = "notifications".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.notifications]
+    inline def notifications: typings.expoPermissions.expoPermissionsStrings.notifications = "notifications".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.notifications]
     
-    @scala.inline
-    def reminders: typings.expoPermissions.expoPermissionsStrings.reminders = "reminders".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.reminders]
+    inline def reminders: typings.expoPermissions.expoPermissionsStrings.reminders = "reminders".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.reminders]
     
-    @scala.inline
-    def systemBrightness: typings.expoPermissions.expoPermissionsStrings.systemBrightness = "systemBrightness".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.systemBrightness]
+    inline def systemBrightness: typings.expoPermissions.expoPermissionsStrings.systemBrightness = "systemBrightness".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.systemBrightness]
     
-    @scala.inline
-    def userFacingNotifications: typings.expoPermissions.expoPermissionsStrings.userFacingNotifications = "userFacingNotifications".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.userFacingNotifications]
+    inline def userFacingNotifications: typings.expoPermissions.expoPermissionsStrings.userFacingNotifications = "userFacingNotifications".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.userFacingNotifications]
   }
 }

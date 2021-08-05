@@ -15,18 +15,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParityType extends StObject
 object ParityType {
   
-  @scala.inline
-  def even: typings.domSerial.domSerialStrings.even = "even".asInstanceOf[typings.domSerial.domSerialStrings.even]
+  inline def even: typings.domSerial.domSerialStrings.even = "even".asInstanceOf[typings.domSerial.domSerialStrings.even]
   
-  @scala.inline
-  def mark: typings.domSerial.domSerialStrings.mark = "mark".asInstanceOf[typings.domSerial.domSerialStrings.mark]
+  inline def mark: typings.domSerial.domSerialStrings.mark = "mark".asInstanceOf[typings.domSerial.domSerialStrings.mark]
   
-  @scala.inline
-  def none: typings.domSerial.domSerialStrings.none = "none".asInstanceOf[typings.domSerial.domSerialStrings.none]
+  inline def none: typings.domSerial.domSerialStrings.none = "none".asInstanceOf[typings.domSerial.domSerialStrings.none]
   
-  @scala.inline
-  def odd: typings.domSerial.domSerialStrings.odd = "odd".asInstanceOf[typings.domSerial.domSerialStrings.odd]
+  inline def odd: typings.domSerial.domSerialStrings.odd = "odd".asInstanceOf[typings.domSerial.domSerialStrings.odd]
   
-  @scala.inline
-  def space: typings.domSerial.domSerialStrings.space = "space".asInstanceOf[typings.domSerial.domSerialStrings.space]
+  inline def space: typings.domSerial.domSerialStrings.space = "space".asInstanceOf[typings.domSerial.domSerialStrings.space]
 }

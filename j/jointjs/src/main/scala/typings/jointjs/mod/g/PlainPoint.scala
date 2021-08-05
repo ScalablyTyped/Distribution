@@ -12,19 +12,15 @@ trait PlainPoint extends StObject {
 }
 object PlainPoint {
   
-  @scala.inline
-  def apply(x: Double, y: Double): PlainPoint = {
+  inline def apply(x: Double, y: Double): PlainPoint = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlainPoint]
   }
   
-  @scala.inline
-  implicit class PlainPointMutableBuilder[Self <: PlainPoint] (val x: Self) extends AnyVal {
+  extension [Self <: PlainPoint](x: Self) {
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

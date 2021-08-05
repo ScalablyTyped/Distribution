@@ -37,8 +37,7 @@ trait BootstrapClientFABAction
 }
 object BootstrapClientFABAction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetActionIconCssClass: () => String,
     GetActionItem: Double => ASPxClientFABActionItem,
     GetActionItemByName: String => ASPxClientFABActionItem,
@@ -65,43 +64,30 @@ object BootstrapClientFABAction {
     __obj.asInstanceOf[BootstrapClientFABAction]
   }
   
-  @scala.inline
-  implicit class BootstrapClientFABActionMutableBuilder[Self <: BootstrapClientFABAction] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapClientFABAction](x: Self) {
     
-    @scala.inline
-    def setGetActionIconCssClass(value: () => String): Self = StObject.set(x, "GetActionIconCssClass", js.Any.fromFunction0(value))
+    inline def setGetActionIconCssClass(value: () => String): Self = StObject.set(x, "GetActionIconCssClass", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetBadgeCssClass(value: () => String): Self = StObject.set(x, "GetBadgeCssClass", js.Any.fromFunction0(value))
+    inline def setGetBadgeCssClass(value: () => String): Self = StObject.set(x, "GetBadgeCssClass", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetBadgeIconCssClass(value: () => String): Self = StObject.set(x, "GetBadgeIconCssClass", js.Any.fromFunction0(value))
+    inline def setGetBadgeIconCssClass(value: () => String): Self = StObject.set(x, "GetBadgeIconCssClass", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetBadgeText(value: () => String): Self = StObject.set(x, "GetBadgeText", js.Any.fromFunction0(value))
+    inline def setGetBadgeText(value: () => String): Self = StObject.set(x, "GetBadgeText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCollapseIconCssClass(value: () => String): Self = StObject.set(x, "GetCollapseIconCssClass", js.Any.fromFunction0(value))
+    inline def setGetCollapseIconCssClass(value: () => String): Self = StObject.set(x, "GetCollapseIconCssClass", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetExpandIconCssClass(value: () => String): Self = StObject.set(x, "GetExpandIconCssClass", js.Any.fromFunction0(value))
+    inline def setGetExpandIconCssClass(value: () => String): Self = StObject.set(x, "GetExpandIconCssClass", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetActionIconCssClass(value: String => Unit): Self = StObject.set(x, "SetActionIconCssClass", js.Any.fromFunction1(value))
+    inline def setSetActionIconCssClass(value: String => Unit): Self = StObject.set(x, "SetActionIconCssClass", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetBadgeCssClass(value: String => Unit): Self = StObject.set(x, "SetBadgeCssClass", js.Any.fromFunction1(value))
+    inline def setSetBadgeCssClass(value: String => Unit): Self = StObject.set(x, "SetBadgeCssClass", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetBadgeIconCssClass(value: String => Unit): Self = StObject.set(x, "SetBadgeIconCssClass", js.Any.fromFunction1(value))
+    inline def setSetBadgeIconCssClass(value: String => Unit): Self = StObject.set(x, "SetBadgeIconCssClass", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetBadgeText(value: String => Unit): Self = StObject.set(x, "SetBadgeText", js.Any.fromFunction1(value))
+    inline def setSetBadgeText(value: String => Unit): Self = StObject.set(x, "SetBadgeText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetCollapseIconCssClass(value: String => Unit): Self = StObject.set(x, "SetCollapseIconCssClass", js.Any.fromFunction1(value))
+    inline def setSetCollapseIconCssClass(value: String => Unit): Self = StObject.set(x, "SetCollapseIconCssClass", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetExpandIconCssClass(value: String => Unit): Self = StObject.set(x, "SetExpandIconCssClass", js.Any.fromFunction1(value))
+    inline def setSetExpandIconCssClass(value: String => Unit): Self = StObject.set(x, "SetExpandIconCssClass", js.Any.fromFunction1(value))
   }
 }

@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object filesRmMod {
   
-  @scala.inline
-  def apply(clientOptions: ClientOptions): js.Function1[
+  inline def apply(clientOptions: ClientOptions): js.Function1[
     /* args */ (js.Tuple2[
       /* a1 */ String, 
       /* options */ js.UndefOr[

@@ -13,22 +13,17 @@ trait QFormatSpec extends StObject {
 }
 object QFormatSpec {
   
-  @scala.inline
-  def apply(qFormatSpec: String, qPreview: js.Array[IDataRecord]): QFormatSpec = {
+  inline def apply(qFormatSpec: String, qPreview: js.Array[IDataRecord]): QFormatSpec = {
     val __obj = js.Dynamic.literal(qFormatSpec = qFormatSpec.asInstanceOf[js.Any], qPreview = qPreview.asInstanceOf[js.Any])
     __obj.asInstanceOf[QFormatSpec]
   }
   
-  @scala.inline
-  implicit class QFormatSpecMutableBuilder[Self <: QFormatSpec] (val x: Self) extends AnyVal {
+  extension [Self <: QFormatSpec](x: Self) {
     
-    @scala.inline
-    def setQFormatSpec(value: String): Self = StObject.set(x, "qFormatSpec", value.asInstanceOf[js.Any])
+    inline def setQFormatSpec(value: String): Self = StObject.set(x, "qFormatSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQPreview(value: js.Array[IDataRecord]): Self = StObject.set(x, "qPreview", value.asInstanceOf[js.Any])
+    inline def setQPreview(value: js.Array[IDataRecord]): Self = StObject.set(x, "qPreview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQPreviewVarargs(value: IDataRecord*): Self = StObject.set(x, "qPreview", js.Array(value :_*))
+    inline def setQPreviewVarargs(value: IDataRecord*): Self = StObject.set(x, "qPreview", js.Array(value :_*))
   }
 }

@@ -12,25 +12,19 @@ trait KeyboardOptions extends StObject {
 }
 object KeyboardOptions {
   
-  @scala.inline
-  def apply(): KeyboardOptions = {
+  inline def apply(): KeyboardOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KeyboardOptions]
   }
   
-  @scala.inline
-  implicit class KeyboardOptionsMutableBuilder[Self <: KeyboardOptions] (val x: Self) extends AnyVal {
+  extension [Self <: KeyboardOptions](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setOnlyInViewport(value: Boolean): Self = StObject.set(x, "onlyInViewport", value.asInstanceOf[js.Any])
+    inline def setOnlyInViewport(value: Boolean): Self = StObject.set(x, "onlyInViewport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlyInViewportUndefined: Self = StObject.set(x, "onlyInViewport", js.undefined)
+    inline def setOnlyInViewportUndefined: Self = StObject.set(x, "onlyInViewport", js.undefined)
   }
 }

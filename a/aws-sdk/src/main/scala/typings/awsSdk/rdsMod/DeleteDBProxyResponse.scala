@@ -13,19 +13,15 @@ trait DeleteDBProxyResponse extends StObject {
 }
 object DeleteDBProxyResponse {
   
-  @scala.inline
-  def apply(): DeleteDBProxyResponse = {
+  inline def apply(): DeleteDBProxyResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteDBProxyResponse]
   }
   
-  @scala.inline
-  implicit class DeleteDBProxyResponseMutableBuilder[Self <: DeleteDBProxyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDBProxyResponse](x: Self) {
     
-    @scala.inline
-    def setDBProxy(value: DBProxy): Self = StObject.set(x, "DBProxy", value.asInstanceOf[js.Any])
+    inline def setDBProxy(value: DBProxy): Self = StObject.set(x, "DBProxy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBProxyUndefined: Self = StObject.set(x, "DBProxy", js.undefined)
+    inline def setDBProxyUndefined: Self = StObject.set(x, "DBProxy", js.undefined)
   }
 }

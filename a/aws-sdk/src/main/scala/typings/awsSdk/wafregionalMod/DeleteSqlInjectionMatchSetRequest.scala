@@ -18,19 +18,15 @@ trait DeleteSqlInjectionMatchSetRequest extends StObject {
 }
 object DeleteSqlInjectionMatchSetRequest {
   
-  @scala.inline
-  def apply(ChangeToken: ChangeToken, SqlInjectionMatchSetId: ResourceId): DeleteSqlInjectionMatchSetRequest = {
+  inline def apply(ChangeToken: ChangeToken, SqlInjectionMatchSetId: ResourceId): DeleteSqlInjectionMatchSetRequest = {
     val __obj = js.Dynamic.literal(ChangeToken = ChangeToken.asInstanceOf[js.Any], SqlInjectionMatchSetId = SqlInjectionMatchSetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteSqlInjectionMatchSetRequest]
   }
   
-  @scala.inline
-  implicit class DeleteSqlInjectionMatchSetRequestMutableBuilder[Self <: DeleteSqlInjectionMatchSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSqlInjectionMatchSetRequest](x: Self) {
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSqlInjectionMatchSetId(value: ResourceId): Self = StObject.set(x, "SqlInjectionMatchSetId", value.asInstanceOf[js.Any])
+    inline def setSqlInjectionMatchSetId(value: ResourceId): Self = StObject.set(x, "SqlInjectionMatchSetId", value.asInstanceOf[js.Any])
   }
 }

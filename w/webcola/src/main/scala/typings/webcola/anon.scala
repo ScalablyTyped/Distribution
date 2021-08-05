@@ -29,23 +29,18 @@ object anon {
   }
   object ArrowStart {
     
-    @scala.inline
-    def apply(arrowStart: Point, sourceIntersection: Point, targetIntersection: Point): ArrowStart = {
+    inline def apply(arrowStart: Point, sourceIntersection: Point, targetIntersection: Point): ArrowStart = {
       val __obj = js.Dynamic.literal(arrowStart = arrowStart.asInstanceOf[js.Any], sourceIntersection = sourceIntersection.asInstanceOf[js.Any], targetIntersection = targetIntersection.asInstanceOf[js.Any])
       __obj.asInstanceOf[ArrowStart]
     }
     
-    @scala.inline
-    implicit class ArrowStartMutableBuilder[Self <: ArrowStart] (val x: Self) extends AnyVal {
+    extension [Self <: ArrowStart](x: Self) {
       
-      @scala.inline
-      def setArrowStart(value: Point): Self = StObject.set(x, "arrowStart", value.asInstanceOf[js.Any])
+      inline def setArrowStart(value: Point): Self = StObject.set(x, "arrowStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceIntersection(value: Point): Self = StObject.set(x, "sourceIntersection", value.asInstanceOf[js.Any])
+      inline def setSourceIntersection(value: Point): Self = StObject.set(x, "sourceIntersection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetIntersection(value: Point): Self = StObject.set(x, "targetIntersection", value.asInstanceOf[js.Any])
+      inline def setTargetIntersection(value: Point): Self = StObject.set(x, "targetIntersection", value.asInstanceOf[js.Any])
     }
   }
   
@@ -57,20 +52,16 @@ object anon {
   }
   object Arrowpath {
     
-    @scala.inline
-    def apply(arrowpath: String, routepath: String): Arrowpath = {
+    inline def apply(arrowpath: String, routepath: String): Arrowpath = {
       val __obj = js.Dynamic.literal(arrowpath = arrowpath.asInstanceOf[js.Any], routepath = routepath.asInstanceOf[js.Any])
       __obj.asInstanceOf[Arrowpath]
     }
     
-    @scala.inline
-    implicit class ArrowpathMutableBuilder[Self <: Arrowpath] (val x: Self) extends AnyVal {
+    extension [Self <: Arrowpath](x: Self) {
       
-      @scala.inline
-      def setArrowpath(value: String): Self = StObject.set(x, "arrowpath", value.asInstanceOf[js.Any])
+      inline def setArrowpath(value: String): Self = StObject.set(x, "arrowpath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoutepath(value: String): Self = StObject.set(x, "routepath", value.asInstanceOf[js.Any])
+      inline def setRoutepath(value: String): Self = StObject.set(x, "routepath", value.asInstanceOf[js.Any])
     }
   }
   
@@ -82,20 +73,16 @@ object anon {
   }
   object Cola {
     
-    @scala.inline
-    def apply(cola: Layout, powerGraph: js.Any): Cola = {
+    inline def apply(cola: Layout, powerGraph: js.Any): Cola = {
       val __obj = js.Dynamic.literal(cola = cola.asInstanceOf[js.Any], powerGraph = powerGraph.asInstanceOf[js.Any])
       __obj.asInstanceOf[Cola]
     }
     
-    @scala.inline
-    implicit class ColaMutableBuilder[Self <: Cola] (val x: Self) extends AnyVal {
+    extension [Self <: Cola](x: Self) {
       
-      @scala.inline
-      def setCola(value: Layout): Self = StObject.set(x, "cola", value.asInstanceOf[js.Any])
+      inline def setCola(value: Layout): Self = StObject.set(x, "cola", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPowerGraph(value: js.Any): Self = StObject.set(x, "powerGraph", value.asInstanceOf[js.Any])
+      inline def setPowerGraph(value: js.Any): Self = StObject.set(x, "powerGraph", value.asInstanceOf[js.Any])
     }
   }
   
@@ -109,23 +96,18 @@ object anon {
   }
   object Constraint {
     
-    @scala.inline
-    def apply(constraint: typings.webcola.vpscMod.Constraint, lb: Block, rb: Block): Constraint = {
+    inline def apply(constraint: typings.webcola.vpscMod.Constraint, lb: Block, rb: Block): Constraint = {
       val __obj = js.Dynamic.literal(constraint = constraint.asInstanceOf[js.Any], lb = lb.asInstanceOf[js.Any], rb = rb.asInstanceOf[js.Any])
       __obj.asInstanceOf[Constraint]
     }
     
-    @scala.inline
-    implicit class ConstraintMutableBuilder[Self <: Constraint] (val x: Self) extends AnyVal {
+    extension [Self <: Constraint](x: Self) {
       
-      @scala.inline
-      def setConstraint(value: typings.webcola.vpscMod.Constraint): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
+      inline def setConstraint(value: typings.webcola.vpscMod.Constraint): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLb(value: Block): Self = StObject.set(x, "lb", value.asInstanceOf[js.Any])
+      inline def setLb(value: Block): Self = StObject.set(x, "lb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRb(value: Block): Self = StObject.set(x, "rb", value.asInstanceOf[js.Any])
+      inline def setRb(value: Block): Self = StObject.set(x, "rb", value.asInstanceOf[js.Any])
     }
   }
   
@@ -137,20 +119,16 @@ object anon {
   }
   object DesiredCenter {
     
-    @scala.inline
-    def apply(desiredCenter: Double, size: Double): DesiredCenter = {
+    inline def apply(desiredCenter: Double, size: Double): DesiredCenter = {
       val __obj = js.Dynamic.literal(desiredCenter = desiredCenter.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[DesiredCenter]
     }
     
-    @scala.inline
-    implicit class DesiredCenterMutableBuilder[Self <: DesiredCenter] (val x: Self) extends AnyVal {
+    extension [Self <: DesiredCenter](x: Self) {
       
-      @scala.inline
-      def setDesiredCenter(value: Double): Self = StObject.set(x, "desiredCenter", value.asInstanceOf[js.Any])
+      inline def setDesiredCenter(value: Double): Self = StObject.set(x, "desiredCenter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
   
@@ -162,26 +140,20 @@ object anon {
   }
   object E {
     
-    @scala.inline
-    def apply(E: js.Array[VisibilityEdge], V: js.Array[VisibilityVertex]): E = {
+    inline def apply(E: js.Array[VisibilityEdge], V: js.Array[VisibilityVertex]): E = {
       val __obj = js.Dynamic.literal(E = E.asInstanceOf[js.Any], V = V.asInstanceOf[js.Any])
       __obj.asInstanceOf[E]
     }
     
-    @scala.inline
-    implicit class EMutableBuilder[Self <: E] (val x: Self) extends AnyVal {
+    extension [Self <: E](x: Self) {
       
-      @scala.inline
-      def setE(value: js.Array[VisibilityEdge]): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
+      inline def setE(value: js.Array[VisibilityEdge]): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEVarargs(value: VisibilityEdge*): Self = StObject.set(x, "E", js.Array(value :_*))
+      inline def setEVarargs(value: VisibilityEdge*): Self = StObject.set(x, "E", js.Array(value :_*))
       
-      @scala.inline
-      def setV(value: js.Array[VisibilityVertex]): Self = StObject.set(x, "V", value.asInstanceOf[js.Any])
+      inline def setV(value: js.Array[VisibilityVertex]): Self = StObject.set(x, "V", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVVarargs(value: VisibilityVertex*): Self = StObject.set(x, "V", js.Array(value :_*))
+      inline def setVVarargs(value: VisibilityVertex*): Self = StObject.set(x, "V", js.Array(value :_*))
     }
   }
   
@@ -214,26 +186,20 @@ object anon {
   }
   object Groups {
     
-    @scala.inline
-    def apply(groups: js.Array[js.Any], powerEdges: js.Array[PowerEdge]): Groups = {
+    inline def apply(groups: js.Array[js.Any], powerEdges: js.Array[PowerEdge]): Groups = {
       val __obj = js.Dynamic.literal(groups = groups.asInstanceOf[js.Any], powerEdges = powerEdges.asInstanceOf[js.Any])
       __obj.asInstanceOf[Groups]
     }
     
-    @scala.inline
-    implicit class GroupsMutableBuilder[Self <: Groups] (val x: Self) extends AnyVal {
+    extension [Self <: Groups](x: Self) {
       
-      @scala.inline
-      def setGroups(value: js.Array[js.Any]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+      inline def setGroups(value: js.Array[js.Any]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupsVarargs(value: js.Any*): Self = StObject.set(x, "groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: js.Any*): Self = StObject.set(x, "groups", js.Array(value :_*))
       
-      @scala.inline
-      def setPowerEdges(value: js.Array[PowerEdge]): Self = StObject.set(x, "powerEdges", value.asInstanceOf[js.Any])
+      inline def setPowerEdges(value: js.Array[PowerEdge]): Self = StObject.set(x, "powerEdges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPowerEdgesVarargs(value: PowerEdge*): Self = StObject.set(x, "powerEdges", js.Array(value :_*))
+      inline def setPowerEdgesVarargs(value: PowerEdge*): Self = StObject.set(x, "powerEdges", js.Array(value :_*))
     }
   }
   
@@ -245,26 +211,20 @@ object anon {
   }
   object Links {
     
-    @scala.inline
-    def apply(links: js.Array[Link[Node]], nodes: js.Array[Node]): Links = {
+    inline def apply(links: js.Array[Link[Node]], nodes: js.Array[Node]): Links = {
       val __obj = js.Dynamic.literal(links = links.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
       __obj.asInstanceOf[Links]
     }
     
-    @scala.inline
-    implicit class LinksMutableBuilder[Self <: Links] (val x: Self) extends AnyVal {
+    extension [Self <: Links](x: Self) {
       
-      @scala.inline
-      def setLinks(value: js.Array[Link[Node]]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+      inline def setLinks(value: js.Array[Link[Node]]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinksVarargs(value: Link[Node]*): Self = StObject.set(x, "links", js.Array(value :_*))
+      inline def setLinksVarargs(value: Link[Node]*): Self = StObject.set(x, "links", js.Array(value :_*))
       
-      @scala.inline
-      def setNodes(value: js.Array[Node]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      inline def setNodes(value: js.Array[Node]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+      inline def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value :_*))
     }
   }
   
@@ -278,26 +238,20 @@ object anon {
   }
   object LowerBound {
     
-    @scala.inline
-    def apply(lowerBound: Double, newCenters: js.Array[Double], upperBound: Double): LowerBound = {
+    inline def apply(lowerBound: Double, newCenters: js.Array[Double], upperBound: Double): LowerBound = {
       val __obj = js.Dynamic.literal(lowerBound = lowerBound.asInstanceOf[js.Any], newCenters = newCenters.asInstanceOf[js.Any], upperBound = upperBound.asInstanceOf[js.Any])
       __obj.asInstanceOf[LowerBound]
     }
     
-    @scala.inline
-    implicit class LowerBoundMutableBuilder[Self <: LowerBound] (val x: Self) extends AnyVal {
+    extension [Self <: LowerBound](x: Self) {
       
-      @scala.inline
-      def setLowerBound(value: Double): Self = StObject.set(x, "lowerBound", value.asInstanceOf[js.Any])
+      inline def setLowerBound(value: Double): Self = StObject.set(x, "lowerBound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewCenters(value: js.Array[Double]): Self = StObject.set(x, "newCenters", value.asInstanceOf[js.Any])
+      inline def setNewCenters(value: js.Array[Double]): Self = StObject.set(x, "newCenters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewCentersVarargs(value: Double*): Self = StObject.set(x, "newCenters", js.Array(value :_*))
+      inline def setNewCentersVarargs(value: Double*): Self = StObject.set(x, "newCenters", js.Array(value :_*))
       
-      @scala.inline
-      def setUpperBound(value: Double): Self = StObject.set(x, "upperBound", value.asInstanceOf[js.Any])
+      inline def setUpperBound(value: Double): Self = StObject.set(x, "upperBound", value.asInstanceOf[js.Any])
     }
   }
   
@@ -309,20 +263,16 @@ object anon {
   }
   object T1 {
     
-    @scala.inline
-    def apply(t1: Double, t2: Double): T1 = {
+    inline def apply(t1: Double, t2: Double): T1 = {
       val __obj = js.Dynamic.literal(t1 = t1.asInstanceOf[js.Any], t2 = t2.asInstanceOf[js.Any])
       __obj.asInstanceOf[T1]
     }
     
-    @scala.inline
-    implicit class T1MutableBuilder[Self <: T1] (val x: Self) extends AnyVal {
+    extension [Self <: T1](x: Self) {
       
-      @scala.inline
-      def setT1(value: Double): Self = StObject.set(x, "t1", value.asInstanceOf[js.Any])
+      inline def setT1(value: Double): Self = StObject.set(x, "t1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setT2(value: Double): Self = StObject.set(x, "t2", value.asInstanceOf[js.Any])
+      inline def setT2(value: Double): Self = StObject.set(x, "t2", value.asInstanceOf[js.Any])
     }
   }
   
@@ -334,20 +284,16 @@ object anon {
   }
   object X {
     
-    @scala.inline
-    def apply(x: Double, y: Double): X = {
+    inline def apply(x: Double, y: Double): X = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[X]
     }
     
-    @scala.inline
-    implicit class XMutableBuilder[Self <: X] (val x: Self) extends AnyVal {
+    extension [Self <: X](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

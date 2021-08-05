@@ -39,49 +39,35 @@ trait SearchRulesOptions extends StObject {
 }
 object SearchRulesOptions {
   
-  @scala.inline
-  def apply(): SearchRulesOptions = {
+  inline def apply(): SearchRulesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchRulesOptions]
   }
   
-  @scala.inline
-  implicit class SearchRulesOptionsMutableBuilder[Self <: SearchRulesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SearchRulesOptions](x: Self) {
     
-    @scala.inline
-    def setAnchoring(value: String): Self = StObject.set(x, "anchoring", value.asInstanceOf[js.Any])
+    inline def setAnchoring(value: String): Self = StObject.set(x, "anchoring", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchoringUndefined: Self = StObject.set(x, "anchoring", js.undefined)
+    inline def setAnchoringUndefined: Self = StObject.set(x, "anchoring", js.undefined)
     
-    @scala.inline
-    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setHitsPerPage(value: Double): Self = StObject.set(x, "hitsPerPage", value.asInstanceOf[js.Any])
+    inline def setHitsPerPage(value: Double): Self = StObject.set(x, "hitsPerPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHitsPerPageUndefined: Self = StObject.set(x, "hitsPerPage", js.undefined)
+    inline def setHitsPerPageUndefined: Self = StObject.set(x, "hitsPerPage", js.undefined)
     
-    @scala.inline
-    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

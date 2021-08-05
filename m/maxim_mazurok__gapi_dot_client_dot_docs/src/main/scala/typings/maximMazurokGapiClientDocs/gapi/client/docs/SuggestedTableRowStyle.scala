@@ -17,25 +17,19 @@ trait SuggestedTableRowStyle extends StObject {
 }
 object SuggestedTableRowStyle {
   
-  @scala.inline
-  def apply(): SuggestedTableRowStyle = {
+  inline def apply(): SuggestedTableRowStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SuggestedTableRowStyle]
   }
   
-  @scala.inline
-  implicit class SuggestedTableRowStyleMutableBuilder[Self <: SuggestedTableRowStyle] (val x: Self) extends AnyVal {
+  extension [Self <: SuggestedTableRowStyle](x: Self) {
     
-    @scala.inline
-    def setTableRowStyle(value: TableRowStyle): Self = StObject.set(x, "tableRowStyle", value.asInstanceOf[js.Any])
+    inline def setTableRowStyle(value: TableRowStyle): Self = StObject.set(x, "tableRowStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableRowStyleSuggestionState(value: TableRowStyleSuggestionState): Self = StObject.set(x, "tableRowStyleSuggestionState", value.asInstanceOf[js.Any])
+    inline def setTableRowStyleSuggestionState(value: TableRowStyleSuggestionState): Self = StObject.set(x, "tableRowStyleSuggestionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableRowStyleSuggestionStateUndefined: Self = StObject.set(x, "tableRowStyleSuggestionState", js.undefined)
+    inline def setTableRowStyleSuggestionStateUndefined: Self = StObject.set(x, "tableRowStyleSuggestionState", js.undefined)
     
-    @scala.inline
-    def setTableRowStyleUndefined: Self = StObject.set(x, "tableRowStyle", js.undefined)
+    inline def setTableRowStyleUndefined: Self = StObject.set(x, "tableRowStyle", js.undefined)
   }
 }

@@ -11,19 +11,15 @@ trait DuplicateSheetResponse extends StObject {
 }
 object DuplicateSheetResponse {
   
-  @scala.inline
-  def apply(): DuplicateSheetResponse = {
+  inline def apply(): DuplicateSheetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DuplicateSheetResponse]
   }
   
-  @scala.inline
-  implicit class DuplicateSheetResponseMutableBuilder[Self <: DuplicateSheetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DuplicateSheetResponse](x: Self) {
     
-    @scala.inline
-    def setProperties(value: SheetProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: SheetProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
   }
 }

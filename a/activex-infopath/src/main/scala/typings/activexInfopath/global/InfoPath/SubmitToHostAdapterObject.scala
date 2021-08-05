@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.SubmitToHostAdapterObject")
 @js.native
-class SubmitToHostAdapterObject protected ()
+/* private */ class SubmitToHostAdapterObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.SubmitToHostAdapterObject {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("InfoPath.SubmitToHostAdapterObject_typekey")
   var InfoPathDotSubmitToHostAdapterObject_typekey: typings.activexInfopath.InfoPath.SubmitToHostAdapterObject = js.native
   

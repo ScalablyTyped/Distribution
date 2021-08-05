@@ -13,19 +13,15 @@ trait EsamManifestConfirmConditionNotification extends StObject {
 }
 object EsamManifestConfirmConditionNotification {
   
-  @scala.inline
-  def apply(): EsamManifestConfirmConditionNotification = {
+  inline def apply(): EsamManifestConfirmConditionNotification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EsamManifestConfirmConditionNotification]
   }
   
-  @scala.inline
-  implicit class EsamManifestConfirmConditionNotificationMutableBuilder[Self <: EsamManifestConfirmConditionNotification] (val x: Self) extends AnyVal {
+  extension [Self <: EsamManifestConfirmConditionNotification](x: Self) {
     
-    @scala.inline
-    def setMccXml(value: stringPatternSNManifestConfirmConditionNotificationNS): Self = StObject.set(x, "MccXml", value.asInstanceOf[js.Any])
+    inline def setMccXml(value: stringPatternSNManifestConfirmConditionNotificationNS): Self = StObject.set(x, "MccXml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMccXmlUndefined: Self = StObject.set(x, "MccXml", js.undefined)
+    inline def setMccXmlUndefined: Self = StObject.set(x, "MccXml", js.undefined)
   }
 }

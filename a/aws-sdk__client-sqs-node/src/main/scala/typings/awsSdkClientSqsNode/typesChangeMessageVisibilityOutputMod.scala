@@ -20,17 +20,14 @@ object typesChangeMessageVisibilityOutputMod {
   }
   object ChangeMessageVisibilityOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): ChangeMessageVisibilityOutput = {
+    inline def apply($metadata: ResponseMetadata): ChangeMessageVisibilityOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChangeMessageVisibilityOutput]
     }
     
-    @scala.inline
-    implicit class ChangeMessageVisibilityOutputMutableBuilder[Self <: ChangeMessageVisibilityOutput] (val x: Self) extends AnyVal {
+    extension [Self <: ChangeMessageVisibilityOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }
   }
 }

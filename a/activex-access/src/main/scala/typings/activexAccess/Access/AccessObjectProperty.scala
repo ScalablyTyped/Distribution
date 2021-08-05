@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AccessObjectProperty extends StObject {
   
-  @JSName("Access.AccessObjectProperty_typekey")
+  /* private */ @JSName("Access.AccessObjectProperty_typekey")
   var AccessDotAccessObjectProperty_typekey: AccessObjectProperty
   
   def IsMemberSafe(dispid: Double): Boolean
@@ -19,8 +19,7 @@ trait AccessObjectProperty extends StObject {
 }
 object AccessObjectProperty {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessDotAccessObjectProperty_typekey: AccessObjectProperty,
     IsMemberSafe: Double => Boolean,
     Name: String,
@@ -32,22 +31,16 @@ object AccessObjectProperty {
     __obj.asInstanceOf[AccessObjectProperty]
   }
   
-  @scala.inline
-  implicit class AccessObjectPropertyMutableBuilder[Self <: AccessObjectProperty] (val x: Self) extends AnyVal {
+  extension [Self <: AccessObjectProperty](x: Self) {
     
-    @scala.inline
-    def setAccessDotAccessObjectProperty_typekey(value: AccessObjectProperty): Self = StObject.set(x, "Access.AccessObjectProperty_typekey", value.asInstanceOf[js.Any])
+    inline def setAccessDotAccessObjectProperty_typekey(value: AccessObjectProperty): Self = StObject.set(x, "Access.AccessObjectProperty_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
+    inline def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_Value(value: js.Any): Self = StObject.set(x, "_Value", value.asInstanceOf[js.Any])
+    inline def set_Value(value: js.Any): Self = StObject.set(x, "_Value", value.asInstanceOf[js.Any])
   }
 }

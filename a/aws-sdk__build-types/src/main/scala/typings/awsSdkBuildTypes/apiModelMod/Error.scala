@@ -14,31 +14,23 @@ trait Error extends StObject {
 }
 object Error {
   
-  @scala.inline
-  def apply(): Error = {
+  inline def apply(): Error = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Error]
   }
   
-  @scala.inline
-  implicit class ErrorMutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
+  extension [Self <: Error](x: Self) {
     
-    @scala.inline
-    def setCode(value: java.lang.String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: java.lang.String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setHttpStatusCode(value: scala.Double): Self = StObject.set(x, "httpStatusCode", value.asInstanceOf[js.Any])
+    inline def setHttpStatusCode(value: scala.Double): Self = StObject.set(x, "httpStatusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpStatusCodeUndefined: Self = StObject.set(x, "httpStatusCode", js.undefined)
+    inline def setHttpStatusCodeUndefined: Self = StObject.set(x, "httpStatusCode", js.undefined)
     
-    @scala.inline
-    def setSenderFault(value: scala.Boolean): Self = StObject.set(x, "senderFault", value.asInstanceOf[js.Any])
+    inline def setSenderFault(value: scala.Boolean): Self = StObject.set(x, "senderFault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSenderFaultUndefined: Self = StObject.set(x, "senderFault", js.undefined)
+    inline def setSenderFaultUndefined: Self = StObject.set(x, "senderFault", js.undefined)
   }
 }

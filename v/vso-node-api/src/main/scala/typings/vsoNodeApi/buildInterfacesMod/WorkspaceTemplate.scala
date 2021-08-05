@@ -34,8 +34,7 @@ trait WorkspaceTemplate extends StObject {
 }
 object WorkspaceTemplate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     definitionUri: String,
     lastModifiedBy: String,
     lastModifiedDate: Date,
@@ -46,25 +45,18 @@ object WorkspaceTemplate {
     __obj.asInstanceOf[WorkspaceTemplate]
   }
   
-  @scala.inline
-  implicit class WorkspaceTemplateMutableBuilder[Self <: WorkspaceTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: WorkspaceTemplate](x: Self) {
     
-    @scala.inline
-    def setDefinitionUri(value: String): Self = StObject.set(x, "definitionUri", value.asInstanceOf[js.Any])
+    inline def setDefinitionUri(value: String): Self = StObject.set(x, "definitionUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedBy(value: String): Self = StObject.set(x, "lastModifiedBy", value.asInstanceOf[js.Any])
+    inline def setLastModifiedBy(value: String): Self = StObject.set(x, "lastModifiedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedDate(value: Date): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: Date): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMappings(value: js.Array[WorkspaceMapping]): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
+    inline def setMappings(value: js.Array[WorkspaceMapping]): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMappingsVarargs(value: WorkspaceMapping*): Self = StObject.set(x, "mappings", js.Array(value :_*))
+    inline def setMappingsVarargs(value: WorkspaceMapping*): Self = StObject.set(x, "mappings", js.Array(value :_*))
     
-    @scala.inline
-    def setWorkspaceId(value: Double): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
+    inline def setWorkspaceId(value: Double): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
   }
 }

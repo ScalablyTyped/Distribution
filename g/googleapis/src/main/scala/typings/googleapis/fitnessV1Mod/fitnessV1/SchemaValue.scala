@@ -38,40 +38,29 @@ trait SchemaValue extends StObject {
 }
 object SchemaValue {
   
-  @scala.inline
-  def apply(): SchemaValue = {
+  inline def apply(): SchemaValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaValue]
   }
   
-  @scala.inline
-  implicit class SchemaValueMutableBuilder[Self <: SchemaValue] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaValue](x: Self) {
     
-    @scala.inline
-    def setFpVal(value: Double): Self = StObject.set(x, "fpVal", value.asInstanceOf[js.Any])
+    inline def setFpVal(value: Double): Self = StObject.set(x, "fpVal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFpValUndefined: Self = StObject.set(x, "fpVal", js.undefined)
+    inline def setFpValUndefined: Self = StObject.set(x, "fpVal", js.undefined)
     
-    @scala.inline
-    def setIntVal(value: Double): Self = StObject.set(x, "intVal", value.asInstanceOf[js.Any])
+    inline def setIntVal(value: Double): Self = StObject.set(x, "intVal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntValUndefined: Self = StObject.set(x, "intVal", js.undefined)
+    inline def setIntValUndefined: Self = StObject.set(x, "intVal", js.undefined)
     
-    @scala.inline
-    def setMapVal(value: js.Array[SchemaValueMapValEntry]): Self = StObject.set(x, "mapVal", value.asInstanceOf[js.Any])
+    inline def setMapVal(value: js.Array[SchemaValueMapValEntry]): Self = StObject.set(x, "mapVal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapValUndefined: Self = StObject.set(x, "mapVal", js.undefined)
+    inline def setMapValUndefined: Self = StObject.set(x, "mapVal", js.undefined)
     
-    @scala.inline
-    def setMapValVarargs(value: SchemaValueMapValEntry*): Self = StObject.set(x, "mapVal", js.Array(value :_*))
+    inline def setMapValVarargs(value: SchemaValueMapValEntry*): Self = StObject.set(x, "mapVal", js.Array(value :_*))
     
-    @scala.inline
-    def setStringVal(value: String): Self = StObject.set(x, "stringVal", value.asInstanceOf[js.Any])
+    inline def setStringVal(value: String): Self = StObject.set(x, "stringVal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringValUndefined: Self = StObject.set(x, "stringVal", js.undefined)
+    inline def setStringValUndefined: Self = StObject.set(x, "stringVal", js.undefined)
   }
 }

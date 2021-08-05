@@ -22,23 +22,18 @@ object typesGetBucketCorsOutputMod {
   }
   object GetBucketCorsOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): GetBucketCorsOutput = {
+    inline def apply($metadata: ResponseMetadata): GetBucketCorsOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetBucketCorsOutput]
     }
     
-    @scala.inline
-    implicit class GetBucketCorsOutputMutableBuilder[Self <: GetBucketCorsOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetBucketCorsOutput](x: Self) {
       
-      @scala.inline
-      def setCORSRules(value: js.Array[UnmarshalledCORSRule]): Self = StObject.set(x, "CORSRules", value.asInstanceOf[js.Any])
+      inline def setCORSRules(value: js.Array[UnmarshalledCORSRule]): Self = StObject.set(x, "CORSRules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCORSRulesUndefined: Self = StObject.set(x, "CORSRules", js.undefined)
+      inline def setCORSRulesUndefined: Self = StObject.set(x, "CORSRules", js.undefined)
       
-      @scala.inline
-      def setCORSRulesVarargs(value: UnmarshalledCORSRule*): Self = StObject.set(x, "CORSRules", js.Array(value :_*))
+      inline def setCORSRulesVarargs(value: UnmarshalledCORSRule*): Self = StObject.set(x, "CORSRules", js.Array(value :_*))
     }
   }
 }

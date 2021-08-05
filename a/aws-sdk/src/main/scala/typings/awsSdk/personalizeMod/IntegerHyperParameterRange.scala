@@ -23,31 +23,23 @@ trait IntegerHyperParameterRange extends StObject {
 }
 object IntegerHyperParameterRange {
   
-  @scala.inline
-  def apply(): IntegerHyperParameterRange = {
+  inline def apply(): IntegerHyperParameterRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IntegerHyperParameterRange]
   }
   
-  @scala.inline
-  implicit class IntegerHyperParameterRangeMutableBuilder[Self <: IntegerHyperParameterRange] (val x: Self) extends AnyVal {
+  extension [Self <: IntegerHyperParameterRange](x: Self) {
     
-    @scala.inline
-    def setMaxValue(value: IntegerMaxValue): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: IntegerMaxValue): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
+    inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     
-    @scala.inline
-    def setMinValue(value: IntegerMinValue): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: IntegerMinValue): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
+    inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
     
-    @scala.inline
-    def setName(value: ParameterName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ParameterName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

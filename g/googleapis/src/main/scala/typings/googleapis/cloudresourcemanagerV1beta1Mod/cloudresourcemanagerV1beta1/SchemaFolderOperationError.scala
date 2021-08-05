@@ -16,19 +16,15 @@ trait SchemaFolderOperationError extends StObject {
 }
 object SchemaFolderOperationError {
   
-  @scala.inline
-  def apply(): SchemaFolderOperationError = {
+  inline def apply(): SchemaFolderOperationError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFolderOperationError]
   }
   
-  @scala.inline
-  implicit class SchemaFolderOperationErrorMutableBuilder[Self <: SchemaFolderOperationError] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFolderOperationError](x: Self) {
     
-    @scala.inline
-    def setErrorMessageId(value: String): Self = StObject.set(x, "errorMessageId", value.asInstanceOf[js.Any])
+    inline def setErrorMessageId(value: String): Self = StObject.set(x, "errorMessageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageIdUndefined: Self = StObject.set(x, "errorMessageId", js.undefined)
+    inline def setErrorMessageIdUndefined: Self = StObject.set(x, "errorMessageId", js.undefined)
   }
 }

@@ -12,6 +12,5 @@ object wonkaOperatorTakeUntilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def takeUntil[A](signal: Source[js.Any]): Operator[A, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("takeUntil")(signal.asInstanceOf[js.Any]).asInstanceOf[Operator[A, A]]
+  inline def takeUntil[A](signal: Source[js.Any]): Operator[A, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("takeUntil")(signal.asInstanceOf[js.Any]).asInstanceOf[Operator[A, A]]
 }

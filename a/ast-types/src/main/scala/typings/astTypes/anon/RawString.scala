@@ -12,19 +12,15 @@ trait RawString extends StObject {
 }
 object RawString {
   
-  @scala.inline
-  def apply(raw: String, rawValue: String): RawString = {
+  inline def apply(raw: String, rawValue: String): RawString = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], rawValue = rawValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[RawString]
   }
   
-  @scala.inline
-  implicit class RawStringMutableBuilder[Self <: RawString] (val x: Self) extends AnyVal {
+  extension [Self <: RawString](x: Self) {
     
-    @scala.inline
-    def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawValue(value: String): Self = StObject.set(x, "rawValue", value.asInstanceOf[js.Any])
+    inline def setRawValue(value: String): Self = StObject.set(x, "rawValue", value.asInstanceOf[js.Any])
   }
 }

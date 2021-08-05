@@ -36,8 +36,7 @@ object StaticOrDynamicString {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.StaticOrDynamicString = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.StaticOrDynamicString]
+  inline def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.StaticOrDynamicString = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.StaticOrDynamicString]
   
   /**
     * Creates and returns a new StaticOrDynamicString instance in the SDK and on the server.
@@ -48,8 +47,7 @@ object StaticOrDynamicString {
     *  6.0.0 to 7.2.0
     */
   /* static member */
-  @scala.inline
-  def createInLinkButtonUnderAddress(container: typings.mendixmodelsdk.pagesMod.pages.LinkButton): typings.mendixmodelsdk.pagesMod.pages.StaticOrDynamicString = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLinkButtonUnderAddress")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.StaticOrDynamicString]
+  inline def createInLinkButtonUnderAddress(container: typings.mendixmodelsdk.pagesMod.pages.LinkButton): typings.mendixmodelsdk.pagesMod.pages.StaticOrDynamicString = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLinkButtonUnderAddress")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.StaticOrDynamicString]
   
   /**
     * Creates and returns a new StaticOrDynamicString instance in the SDK and on the server.
@@ -60,20 +58,17 @@ object StaticOrDynamicString {
     *  7.3.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInOpenLinkClientActionUnderAddress(container: typings.mendixmodelsdk.pagesMod.pages.OpenLinkClientAction): typings.mendixmodelsdk.pagesMod.pages.StaticOrDynamicString = ^.asInstanceOf[js.Dynamic].applyDynamic("createInOpenLinkClientActionUnderAddress")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.StaticOrDynamicString]
+  inline def createInOpenLinkClientActionUnderAddress(container: typings.mendixmodelsdk.pagesMod.pages.OpenLinkClientAction): typings.mendixmodelsdk.pagesMod.pages.StaticOrDynamicString = ^.asInstanceOf[js.Dynamic].applyDynamic("createInOpenLinkClientActionUnderAddress")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.StaticOrDynamicString]
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.StaticOrDynamicString.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.StaticOrDynamicString.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

@@ -30,6 +30,5 @@ object DisplayObject {
     * @param {object} source - The source of properties and methods to mix in.
     */
   /* static member */
-  @scala.inline
-  def mixin(source: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mixin")(source.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def mixin(source: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mixin")(source.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

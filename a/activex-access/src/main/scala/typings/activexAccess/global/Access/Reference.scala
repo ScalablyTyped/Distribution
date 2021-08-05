@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.Reference")
 @js.native
-class Reference protected ()
+/* private */ class Reference ()
   extends StObject
      with typings.activexAccess.Access.Reference {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Access.Reference_typekey")
   var AccessDotReference_typekey: typings.activexAccess.Access.Reference = js.native
   

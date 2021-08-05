@@ -21,25 +21,19 @@ trait SchemaSuffix extends StObject {
 }
 object SchemaSuffix {
   
-  @scala.inline
-  def apply(): SchemaSuffix = {
+  inline def apply(): SchemaSuffix = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSuffix]
   }
   
-  @scala.inline
-  implicit class SchemaSuffixMutableBuilder[Self <: SchemaSuffix] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSuffix](x: Self) {
     
-    @scala.inline
-    def setCustomSuffix(value: String): Self = StObject.set(x, "customSuffix", value.asInstanceOf[js.Any])
+    inline def setCustomSuffix(value: String): Self = StObject.set(x, "customSuffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomSuffixUndefined: Self = StObject.set(x, "customSuffix", js.undefined)
+    inline def setCustomSuffixUndefined: Self = StObject.set(x, "customSuffix", js.undefined)
     
-    @scala.inline
-    def setOption(value: String): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
+    inline def setOption(value: String): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionUndefined: Self = StObject.set(x, "option", js.undefined)
+    inline def setOptionUndefined: Self = StObject.set(x, "option", js.undefined)
   }
 }

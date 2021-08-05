@@ -10,10 +10,8 @@ object countMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def count[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("count")().asInstanceOf[js.Any]
-  @scala.inline
-  def count[T](
+  inline def count[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("count")().asInstanceOf[js.Any]
+  inline def count[T](
     predicate: js.Function3[
       /* value */ T, 
       /* index */ Double, 

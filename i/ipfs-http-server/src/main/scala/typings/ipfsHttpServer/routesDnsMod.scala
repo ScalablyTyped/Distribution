@@ -11,24 +11,20 @@ object routesDnsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def handler(request: js.Any, h: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("handler")(request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def handler(request: js.Any, h: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("handler")(request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
   @JSImport("ipfs-http-server/dist/src/api/routes/dns", "method")
   @js.native
   def method: String = js.native
-  @scala.inline
-  def method_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("method")(x.asInstanceOf[js.Any])
+  inline def method_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("method")(x.asInstanceOf[js.Any])
   
   @JSImport("ipfs-http-server/dist/src/api/routes/dns", "options")
   @js.native
   def options: Validate = js.native
-  @scala.inline
-  def options_=(x: Validate): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("options")(x.asInstanceOf[js.Any])
+  inline def options_=(x: Validate): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("options")(x.asInstanceOf[js.Any])
   
   @JSImport("ipfs-http-server/dist/src/api/routes/dns", "path")
   @js.native
   def path: String = js.native
-  @scala.inline
-  def path_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("path")(x.asInstanceOf[js.Any])
+  inline def path_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("path")(x.asInstanceOf[js.Any])
 }

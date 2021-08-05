@@ -24,8 +24,7 @@ trait ILookups extends StObject {
 }
 object ILookups {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Add: (Double, ILookup) => Unit,
     Clone: () => ILookups,
     CloneFrom: ILookups => Unit,
@@ -39,31 +38,22 @@ object ILookups {
     __obj.asInstanceOf[ILookups]
   }
   
-  @scala.inline
-  implicit class ILookupsMutableBuilder[Self <: ILookups] (val x: Self) extends AnyVal {
+  extension [Self <: ILookups](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (Double, ILookup) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (Double, ILookup) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setClone(value: () => ILookups): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => ILookups): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCloneFrom(value: ILookups => Unit): Self = StObject.set(x, "CloneFrom", js.Any.fromFunction1(value))
+    inline def setCloneFrom(value: ILookups => Unit): Self = StObject.set(x, "CloneFrom", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetLookupByItem(value: Double => ILookup): Self = StObject.set(x, "GetLookupByItem", js.Any.fromFunction1(value))
+    inline def setGetLookupByItem(value: Double => ILookup): Self = StObject.set(x, "GetLookupByItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetLookupIndexByItem(value: Double => Double): Self = StObject.set(x, "GetLookupIndexByItem", js.Any.fromFunction1(value))
+    inline def setGetLookupIndexByItem(value: Double => Double): Self = StObject.set(x, "GetLookupIndexByItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setItem(value: Double => ILookup): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => ILookup): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove(value: Double => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: Double => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
   }
 }

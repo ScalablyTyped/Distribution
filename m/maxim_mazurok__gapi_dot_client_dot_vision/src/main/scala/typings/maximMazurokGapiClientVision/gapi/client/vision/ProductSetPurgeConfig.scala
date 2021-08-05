@@ -11,19 +11,15 @@ trait ProductSetPurgeConfig extends StObject {
 }
 object ProductSetPurgeConfig {
   
-  @scala.inline
-  def apply(): ProductSetPurgeConfig = {
+  inline def apply(): ProductSetPurgeConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProductSetPurgeConfig]
   }
   
-  @scala.inline
-  implicit class ProductSetPurgeConfigMutableBuilder[Self <: ProductSetPurgeConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ProductSetPurgeConfig](x: Self) {
     
-    @scala.inline
-    def setProductSetId(value: String): Self = StObject.set(x, "productSetId", value.asInstanceOf[js.Any])
+    inline def setProductSetId(value: String): Self = StObject.set(x, "productSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductSetIdUndefined: Self = StObject.set(x, "productSetId", js.undefined)
+    inline def setProductSetIdUndefined: Self = StObject.set(x, "productSetId", js.undefined)
   }
 }

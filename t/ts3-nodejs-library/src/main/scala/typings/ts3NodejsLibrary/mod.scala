@@ -210,41 +210,34 @@ object mod {
       * connects via a Promise wrapper
       * @param config config options to connect
       */
-    @scala.inline
-    def connect(config: PartialConnectionParams): js.Promise[typings.ts3NodejsLibrary.teamSpeakMod.TeamSpeak] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.ts3NodejsLibrary.teamSpeakMod.TeamSpeak]]
+    inline def connect(config: PartialConnectionParams): js.Promise[typings.ts3NodejsLibrary.teamSpeakMod.TeamSpeak] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.ts3NodejsLibrary.teamSpeakMod.TeamSpeak]]
     
     /**
       * filters an array with given filter
       * @param array the array which should get filtered
       * @param filter filter object
       */
-    @scala.inline
-    def filter[T /* <: ResponseEntry */](array: js.Array[T], filter: Partial[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(array.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+    inline def filter[T /* <: ResponseEntry */](array: js.Array[T], filter: Partial[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(array.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
     
     /**
       * retrieves the first element of an array
       * @param input the response input
       */
-    @scala.inline
-    def singleResponse[T](input: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("singleResponse")(input.asInstanceOf[js.Any]).asInstanceOf[T]
-    @scala.inline
-    def singleResponse[T](input: js.Array[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("singleResponse")(input.asInstanceOf[js.Any]).asInstanceOf[T]
+    inline def singleResponse[T](input: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("singleResponse")(input.asInstanceOf[js.Any]).asInstanceOf[T]
+    inline def singleResponse[T](input: js.Array[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("singleResponse")(input.asInstanceOf[js.Any]).asInstanceOf[T]
     
     /**
       * Transforms an Input to an Array
       * @param input input data which should be converted to an array
       */
-    @scala.inline
-    def toArray[T](input: T): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
-    @scala.inline
-    def toArray[T](input: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+    inline def toArray[T](input: T): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+    inline def toArray[T](input: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
     
     /**
       * waits a set time of ms
       * @param time time in ms to wait
       */
-    @scala.inline
-    def wait(time: Double): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("wait")(time.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    inline def wait(time: Double): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("wait")(time.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   }
   
   @JSImport("ts3-nodejs-library/lib", "TeamSpeakChannel")
@@ -261,14 +254,11 @@ object mod {
     val ^ : js.Any = js.native
     
     /** retrieves the client id from a string or teamspeak client */
-    @scala.inline
-    def getId[T /* <: ChannelType */](): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")().asInstanceOf[js.UndefOr[String]]
-    @scala.inline
-    def getId[T /* <: ChannelType */](channel: T): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+    inline def getId[T /* <: ChannelType */](): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")().asInstanceOf[js.UndefOr[String]]
+    inline def getId[T /* <: ChannelType */](channel: T): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
     
     /** retrieves the clients from an array */
-    @scala.inline
-    def getMultipleIds(channels: MultiChannelType): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMultipleIds")(channels.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def getMultipleIds(channels: MultiChannelType): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMultipleIds")(channels.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   }
   
   @JSImport("ts3-nodejs-library/lib", "TeamSpeakChannelGroup")
@@ -285,14 +275,11 @@ object mod {
     val ^ : js.Any = js.native
     
     /** retrieves the client id from a string or teamspeak client */
-    @scala.inline
-    def getId[T /* <: GroupType */](): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")().asInstanceOf[js.UndefOr[String]]
-    @scala.inline
-    def getId[T /* <: GroupType */](channel: T): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+    inline def getId[T /* <: GroupType */](): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")().asInstanceOf[js.UndefOr[String]]
+    inline def getId[T /* <: GroupType */](channel: T): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
     
     /** retrieves the clients from an array */
-    @scala.inline
-    def getMultipleIds(client: MultiGroupType): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMultipleIds")(client.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def getMultipleIds(client: MultiGroupType): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMultipleIds")(client.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   }
   
   @JSImport("ts3-nodejs-library/lib", "TeamSpeakClient")
@@ -309,34 +296,25 @@ object mod {
     val ^ : js.Any = js.native
     
     /** retrieves the client dbid from a string or teamspeak client */
-    @scala.inline
-    def getDbid[T /* <: ClientType */](): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDbid")().asInstanceOf[js.UndefOr[String]]
-    @scala.inline
-    def getDbid[T /* <: ClientType */](client: T): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDbid")(client.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+    inline def getDbid[T /* <: ClientType */](): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDbid")().asInstanceOf[js.UndefOr[String]]
+    inline def getDbid[T /* <: ClientType */](client: T): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDbid")(client.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
     
     /** retrieves the client id from a string or teamspeak client */
-    @scala.inline
-    def getId[T /* <: ClientType */](): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")().asInstanceOf[js.UndefOr[String]]
-    @scala.inline
-    def getId[T /* <: ClientType */](client: T): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")(client.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+    inline def getId[T /* <: ClientType */](): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")().asInstanceOf[js.UndefOr[String]]
+    inline def getId[T /* <: ClientType */](client: T): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")(client.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
     
     /** retrieves the clients from an array */
-    @scala.inline
-    def getMultipleDbids(client: MultiClientType): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMultipleDbids")(client.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def getMultipleDbids(client: MultiClientType): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMultipleDbids")(client.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
     /** retrieves the clients from an array */
-    @scala.inline
-    def getMultipleIds(client: MultiClientType): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMultipleIds")(client.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def getMultipleIds(client: MultiClientType): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMultipleIds")(client.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
     /** retrieves the clients from an array */
-    @scala.inline
-    def getMultipleUids(client: MultiClientType): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMultipleUids")(client.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def getMultipleUids(client: MultiClientType): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMultipleUids")(client.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
     /** retrieves the client dbid from a string or teamspeak client */
-    @scala.inline
-    def getUid[T /* <: ClientType */](): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUid")().asInstanceOf[js.UndefOr[String]]
-    @scala.inline
-    def getUid[T /* <: ClientType */](client: T): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUid")(client.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+    inline def getUid[T /* <: ClientType */](): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUid")().asInstanceOf[js.UndefOr[String]]
+    inline def getUid[T /* <: ClientType */](client: T): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUid")(client.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   }
   
   @JSImport("ts3-nodejs-library/lib", "TeamSpeakServer")
@@ -353,14 +331,11 @@ object mod {
     val ^ : js.Any = js.native
     
     /** retrieves the client id from a string or teamspeak client */
-    @scala.inline
-    def getId[T /* <: ServerType */](): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")().asInstanceOf[js.UndefOr[String]]
-    @scala.inline
-    def getId[T /* <: ServerType */](server: T): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")(server.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+    inline def getId[T /* <: ServerType */](): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")().asInstanceOf[js.UndefOr[String]]
+    inline def getId[T /* <: ServerType */](server: T): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")(server.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
     
     /** retrieves the clients from an array */
-    @scala.inline
-    def getMultipleIds(servers: MultiServerType): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMultipleIds")(servers.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def getMultipleIds(servers: MultiServerType): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMultipleIds")(servers.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   }
   
   @JSImport("ts3-nodejs-library/lib", "TeamSpeakServerGroup")
@@ -377,14 +352,11 @@ object mod {
     val ^ : js.Any = js.native
     
     /** retrieves the client id from a string or teamspeak client */
-    @scala.inline
-    def getId[T /* <: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType */](): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")().asInstanceOf[js.UndefOr[String]]
-    @scala.inline
-    def getId[T /* <: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType */](group: T): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")(group.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+    inline def getId[T /* <: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType */](): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")().asInstanceOf[js.UndefOr[String]]
+    inline def getId[T /* <: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType */](group: T): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")(group.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
     
     /** retrieves the clients from an array */
-    @scala.inline
-    def getMultipleIds(groups: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.MultiGroupType): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMultipleIds")(groups.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def getMultipleIds(groups: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.MultiGroupType): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMultipleIds")(groups.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   }
   
   @JSImport("ts3-nodejs-library/lib", "TextMessageTargetMode")

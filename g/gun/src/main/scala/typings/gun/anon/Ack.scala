@@ -24,8 +24,7 @@ trait Ack extends StObject {
 }
 object Ack {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     get: String,
     on: js.Tuple3[js.Any, js.Any, js.Any] => js.Any,
     put: Alias,
@@ -36,25 +35,18 @@ object Ack {
     __obj.asInstanceOf[Ack]
   }
   
-  @scala.inline
-  implicit class AckMutableBuilder[Self <: Ack] (val x: Self) extends AnyVal {
+  extension [Self <: Ack](x: Self) {
     
-    @scala.inline
-    def setAck(value: `2`): Self = StObject.set(x, "ack", value.asInstanceOf[js.Any])
+    inline def setAck(value: `2`): Self = StObject.set(x, "ack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGet(value: String): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: String): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOn(value: js.Tuple3[js.Any, js.Any, js.Any] => js.Any): Self = StObject.set(x, "on", js.Any.fromFunction1(value))
+    inline def setOn(value: js.Tuple3[js.Any, js.Any, js.Any] => js.Any): Self = StObject.set(x, "on", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPut(value: Alias): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
+    inline def setPut(value: Alias): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSea(value: CryptoKeyPair): Self = StObject.set(x, "sea", value.asInstanceOf[js.Any])
+    inline def setSea(value: CryptoKeyPair): Self = StObject.set(x, "sea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoul(value: String): Self = StObject.set(x, "soul", value.asInstanceOf[js.Any])
+    inline def setSoul(value: String): Self = StObject.set(x, "soul", value.asInstanceOf[js.Any])
   }
 }

@@ -33,43 +33,31 @@ trait SavingsPlansUtilizationDetail extends StObject {
 }
 object SavingsPlansUtilizationDetail {
   
-  @scala.inline
-  def apply(): SavingsPlansUtilizationDetail = {
+  inline def apply(): SavingsPlansUtilizationDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SavingsPlansUtilizationDetail]
   }
   
-  @scala.inline
-  implicit class SavingsPlansUtilizationDetailMutableBuilder[Self <: SavingsPlansUtilizationDetail] (val x: Self) extends AnyVal {
+  extension [Self <: SavingsPlansUtilizationDetail](x: Self) {
     
-    @scala.inline
-    def setAmortizedCommitment(value: SavingsPlansAmortizedCommitment): Self = StObject.set(x, "AmortizedCommitment", value.asInstanceOf[js.Any])
+    inline def setAmortizedCommitment(value: SavingsPlansAmortizedCommitment): Self = StObject.set(x, "AmortizedCommitment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmortizedCommitmentUndefined: Self = StObject.set(x, "AmortizedCommitment", js.undefined)
+    inline def setAmortizedCommitmentUndefined: Self = StObject.set(x, "AmortizedCommitment", js.undefined)
     
-    @scala.inline
-    def setAttributes(value: Attributes): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Attributes): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
-    @scala.inline
-    def setSavings(value: SavingsPlansSavings): Self = StObject.set(x, "Savings", value.asInstanceOf[js.Any])
+    inline def setSavings(value: SavingsPlansSavings): Self = StObject.set(x, "Savings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSavingsPlanArn(value: SavingsPlanArn): Self = StObject.set(x, "SavingsPlanArn", value.asInstanceOf[js.Any])
+    inline def setSavingsPlanArn(value: SavingsPlanArn): Self = StObject.set(x, "SavingsPlanArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSavingsPlanArnUndefined: Self = StObject.set(x, "SavingsPlanArn", js.undefined)
+    inline def setSavingsPlanArnUndefined: Self = StObject.set(x, "SavingsPlanArn", js.undefined)
     
-    @scala.inline
-    def setSavingsUndefined: Self = StObject.set(x, "Savings", js.undefined)
+    inline def setSavingsUndefined: Self = StObject.set(x, "Savings", js.undefined)
     
-    @scala.inline
-    def setUtilization(value: SavingsPlansUtilization): Self = StObject.set(x, "Utilization", value.asInstanceOf[js.Any])
+    inline def setUtilization(value: SavingsPlansUtilization): Self = StObject.set(x, "Utilization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtilizationUndefined: Self = StObject.set(x, "Utilization", js.undefined)
+    inline def setUtilizationUndefined: Self = StObject.set(x, "Utilization", js.undefined)
   }
 }

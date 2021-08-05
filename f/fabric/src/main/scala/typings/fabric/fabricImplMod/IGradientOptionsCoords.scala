@@ -20,49 +20,35 @@ trait IGradientOptionsCoords extends StObject {
 }
 object IGradientOptionsCoords {
   
-  @scala.inline
-  def apply(): IGradientOptionsCoords = {
+  inline def apply(): IGradientOptionsCoords = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IGradientOptionsCoords]
   }
   
-  @scala.inline
-  implicit class IGradientOptionsCoordsMutableBuilder[Self <: IGradientOptionsCoords] (val x: Self) extends AnyVal {
+  extension [Self <: IGradientOptionsCoords](x: Self) {
     
-    @scala.inline
-    def setR1(value: Double): Self = StObject.set(x, "r1", value.asInstanceOf[js.Any])
+    inline def setR1(value: Double): Self = StObject.set(x, "r1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR1Undefined: Self = StObject.set(x, "r1", js.undefined)
+    inline def setR1Undefined: Self = StObject.set(x, "r1", js.undefined)
     
-    @scala.inline
-    def setR2(value: Double): Self = StObject.set(x, "r2", value.asInstanceOf[js.Any])
+    inline def setR2(value: Double): Self = StObject.set(x, "r2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR2Undefined: Self = StObject.set(x, "r2", js.undefined)
+    inline def setR2Undefined: Self = StObject.set(x, "r2", js.undefined)
     
-    @scala.inline
-    def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
+    inline def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX1Undefined: Self = StObject.set(x, "x1", js.undefined)
+    inline def setX1Undefined: Self = StObject.set(x, "x1", js.undefined)
     
-    @scala.inline
-    def setX2(value: Double): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
+    inline def setX2(value: Double): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX2Undefined: Self = StObject.set(x, "x2", js.undefined)
+    inline def setX2Undefined: Self = StObject.set(x, "x2", js.undefined)
     
-    @scala.inline
-    def setY1(value: Double): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
+    inline def setY1(value: Double): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY1Undefined: Self = StObject.set(x, "y1", js.undefined)
+    inline def setY1Undefined: Self = StObject.set(x, "y1", js.undefined)
     
-    @scala.inline
-    def setY2(value: Double): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
+    inline def setY2(value: Double): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY2Undefined: Self = StObject.set(x, "y2", js.undefined)
+    inline def setY2Undefined: Self = StObject.set(x, "y2", js.undefined)
   }
 }

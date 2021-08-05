@@ -40,53 +40,38 @@ object resizingOptionsMod {
   }
   object ResizingOptions {
     
-    @scala.inline
-    def apply(): ResizingOptions = {
+    inline def apply(): ResizingOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ResizingOptions]
     }
     
-    @scala.inline
-    implicit class ResizingOptionsMutableBuilder[Self <: ResizingOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ResizingOptions](x: Self) {
       
-      @scala.inline
-      def setResizable(value: Boolean): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
+      inline def setResizable(value: Boolean): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
+      inline def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
       
-      @scala.inline
-      def setResizable_addLastColumn(value: Boolean): Self = StObject.set(x, "resizable_addLastColumn", value.asInstanceOf[js.Any])
+      inline def setResizable_addLastColumn(value: Boolean): Self = StObject.set(x, "resizable_addLastColumn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizable_addLastColumnUndefined: Self = StObject.set(x, "resizable_addLastColumn", js.undefined)
+      inline def setResizable_addLastColumnUndefined: Self = StObject.set(x, "resizable_addLastColumn", js.undefined)
       
-      @scala.inline
-      def setResizable_includeFooter(value: Boolean): Self = StObject.set(x, "resizable_includeFooter", value.asInstanceOf[js.Any])
+      inline def setResizable_includeFooter(value: Boolean): Self = StObject.set(x, "resizable_includeFooter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizable_includeFooterUndefined: Self = StObject.set(x, "resizable_includeFooter", js.undefined)
+      inline def setResizable_includeFooterUndefined: Self = StObject.set(x, "resizable_includeFooter", js.undefined)
       
-      @scala.inline
-      def setResizable_targetLast(value: Boolean): Self = StObject.set(x, "resizable_targetLast", value.asInstanceOf[js.Any])
+      inline def setResizable_targetLast(value: Boolean): Self = StObject.set(x, "resizable_targetLast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizable_targetLastUndefined: Self = StObject.set(x, "resizable_targetLast", js.undefined)
+      inline def setResizable_targetLastUndefined: Self = StObject.set(x, "resizable_targetLast", js.undefined)
       
-      @scala.inline
-      def setResizable_throttle(value: Boolean | Double): Self = StObject.set(x, "resizable_throttle", value.asInstanceOf[js.Any])
+      inline def setResizable_throttle(value: Boolean | Double): Self = StObject.set(x, "resizable_throttle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizable_throttleUndefined: Self = StObject.set(x, "resizable_throttle", js.undefined)
+      inline def setResizable_throttleUndefined: Self = StObject.set(x, "resizable_throttle", js.undefined)
       
-      @scala.inline
-      def setResizable_widths(value: js.Array[String]): Self = StObject.set(x, "resizable_widths", value.asInstanceOf[js.Any])
+      inline def setResizable_widths(value: js.Array[String]): Self = StObject.set(x, "resizable_widths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizable_widthsUndefined: Self = StObject.set(x, "resizable_widths", js.undefined)
+      inline def setResizable_widthsUndefined: Self = StObject.set(x, "resizable_widths", js.undefined)
       
-      @scala.inline
-      def setResizable_widthsVarargs(value: String*): Self = StObject.set(x, "resizable_widths", js.Array(value :_*))
+      inline def setResizable_widthsVarargs(value: String*): Self = StObject.set(x, "resizable_widths", js.Array(value :_*))
     }
   }
 }

@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleMsTouchSelect extends StObject
 object styleMsTouchSelect {
   
-  @scala.inline
-  def styleMsTouchSelectGrippers: `0` = 0.asInstanceOf[`0`]
+  inline def styleMsTouchSelectGrippers: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleMsTouchSelectNone: `1` = 1.asInstanceOf[`1`]
+  inline def styleMsTouchSelectNone: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def styleMsTouchSelectNotSet: `2` = 2.asInstanceOf[`2`]
+  inline def styleMsTouchSelectNotSet: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def styleMsTouchSelect_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleMsTouchSelect_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

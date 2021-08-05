@@ -79,8 +79,7 @@ trait XAnimatedImages
 }
 object XAnimatedImages {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AutoRepeat: Boolean,
     ImageSetCount: Double,
     ScaleMode: Double,
@@ -100,34 +99,24 @@ object XAnimatedImages {
     __obj.asInstanceOf[XAnimatedImages]
   }
   
-  @scala.inline
-  implicit class XAnimatedImagesMutableBuilder[Self <: XAnimatedImages] (val x: Self) extends AnyVal {
+  extension [Self <: XAnimatedImages](x: Self) {
     
-    @scala.inline
-    def setAutoRepeat(value: Boolean): Self = StObject.set(x, "AutoRepeat", value.asInstanceOf[js.Any])
+    inline def setAutoRepeat(value: Boolean): Self = StObject.set(x, "AutoRepeat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetImageSet(value: Double => SafeArray[String]): Self = StObject.set(x, "getImageSet", js.Any.fromFunction1(value))
+    inline def setGetImageSet(value: Double => SafeArray[String]): Self = StObject.set(x, "getImageSet", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetImageSetCount(value: () => Double): Self = StObject.set(x, "getImageSetCount", js.Any.fromFunction0(value))
+    inline def setGetImageSetCount(value: () => Double): Self = StObject.set(x, "getImageSetCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setImageSetCount(value: Double): Self = StObject.set(x, "ImageSetCount", value.asInstanceOf[js.Any])
+    inline def setImageSetCount(value: Double): Self = StObject.set(x, "ImageSetCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertImageSet(value: (Double, SeqEquiv[String]) => Unit): Self = StObject.set(x, "insertImageSet", js.Any.fromFunction2(value))
+    inline def setInsertImageSet(value: (Double, SeqEquiv[String]) => Unit): Self = StObject.set(x, "insertImageSet", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemoveImageSet(value: Double => Unit): Self = StObject.set(x, "removeImageSet", js.Any.fromFunction1(value))
+    inline def setRemoveImageSet(value: Double => Unit): Self = StObject.set(x, "removeImageSet", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReplaceImageSet(value: (Double, SeqEquiv[String]) => Unit): Self = StObject.set(x, "replaceImageSet", js.Any.fromFunction2(value))
+    inline def setReplaceImageSet(value: (Double, SeqEquiv[String]) => Unit): Self = StObject.set(x, "replaceImageSet", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setScaleMode(value: Double): Self = StObject.set(x, "ScaleMode", value.asInstanceOf[js.Any])
+    inline def setScaleMode(value: Double): Self = StObject.set(x, "ScaleMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepTime(value: Double): Self = StObject.set(x, "StepTime", value.asInstanceOf[js.Any])
+    inline def setStepTime(value: Double): Self = StObject.set(x, "StepTime", value.asInstanceOf[js.Any])
   }
 }

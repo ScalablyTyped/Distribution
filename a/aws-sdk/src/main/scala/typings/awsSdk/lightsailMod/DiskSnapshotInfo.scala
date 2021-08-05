@@ -13,19 +13,15 @@ trait DiskSnapshotInfo extends StObject {
 }
 object DiskSnapshotInfo {
   
-  @scala.inline
-  def apply(): DiskSnapshotInfo = {
+  inline def apply(): DiskSnapshotInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DiskSnapshotInfo]
   }
   
-  @scala.inline
-  implicit class DiskSnapshotInfoMutableBuilder[Self <: DiskSnapshotInfo] (val x: Self) extends AnyVal {
+  extension [Self <: DiskSnapshotInfo](x: Self) {
     
-    @scala.inline
-    def setSizeInGb(value: integer): Self = StObject.set(x, "sizeInGb", value.asInstanceOf[js.Any])
+    inline def setSizeInGb(value: integer): Self = StObject.set(x, "sizeInGb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeInGbUndefined: Self = StObject.set(x, "sizeInGb", js.undefined)
+    inline def setSizeInGbUndefined: Self = StObject.set(x, "sizeInGb", js.undefined)
   }
 }

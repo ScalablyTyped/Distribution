@@ -12,8 +12,6 @@ object columnsObjectIdColumnMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ObjectIdColumn(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ObjectIdColumn")().asInstanceOf[PropertyDecorator]
-  @scala.inline
-  def ObjectIdColumn(options: ColumnOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ObjectIdColumn")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  inline def ObjectIdColumn(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ObjectIdColumn")().asInstanceOf[PropertyDecorator]
+  inline def ObjectIdColumn(options: ColumnOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ObjectIdColumn")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
 }

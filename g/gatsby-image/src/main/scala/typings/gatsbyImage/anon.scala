@@ -19,26 +19,20 @@ object anon {
   }
   object ObjectFit {
     
-    @scala.inline
-    def apply(): ObjectFit = {
+    inline def apply(): ObjectFit = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ObjectFit]
     }
     
-    @scala.inline
-    implicit class ObjectFitMutableBuilder[Self <: ObjectFit] (val x: Self) extends AnyVal {
+    extension [Self <: ObjectFit](x: Self) {
       
-      @scala.inline
-      def setObjectFit(value: fill | contain | cover | none | `scale-down`): Self = StObject.set(x, "objectFit", value.asInstanceOf[js.Any])
+      inline def setObjectFit(value: fill | contain | cover | none | `scale-down`): Self = StObject.set(x, "objectFit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectFitUndefined: Self = StObject.set(x, "objectFit", js.undefined)
+      inline def setObjectFitUndefined: Self = StObject.set(x, "objectFit", js.undefined)
       
-      @scala.inline
-      def setObjectPosition(value: String): Self = StObject.set(x, "objectPosition", value.asInstanceOf[js.Any])
+      inline def setObjectPosition(value: String): Self = StObject.set(x, "objectPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectPositionUndefined: Self = StObject.set(x, "objectPosition", js.undefined)
+      inline def setObjectPositionUndefined: Self = StObject.set(x, "objectPosition", js.undefined)
     }
   }
   
@@ -48,17 +42,14 @@ object anon {
   }
   object WasCached {
     
-    @scala.inline
-    def apply(wasCached: Boolean): WasCached = {
+    inline def apply(wasCached: Boolean): WasCached = {
       val __obj = js.Dynamic.literal(wasCached = wasCached.asInstanceOf[js.Any])
       __obj.asInstanceOf[WasCached]
     }
     
-    @scala.inline
-    implicit class WasCachedMutableBuilder[Self <: WasCached] (val x: Self) extends AnyVal {
+    extension [Self <: WasCached](x: Self) {
       
-      @scala.inline
-      def setWasCached(value: Boolean): Self = StObject.set(x, "wasCached", value.asInstanceOf[js.Any])
+      inline def setWasCached(value: Boolean): Self = StObject.set(x, "wasCached", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -27,8 +27,7 @@ trait Driver
      with XDropCatalog
 object Driver {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MajorVersion: Double,
     MinorVersion: Double,
     acceptsURL: String => Boolean,

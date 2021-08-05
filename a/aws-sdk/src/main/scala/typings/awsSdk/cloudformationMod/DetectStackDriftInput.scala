@@ -18,25 +18,19 @@ trait DetectStackDriftInput extends StObject {
 }
 object DetectStackDriftInput {
   
-  @scala.inline
-  def apply(StackName: StackNameOrId): DetectStackDriftInput = {
+  inline def apply(StackName: StackNameOrId): DetectStackDriftInput = {
     val __obj = js.Dynamic.literal(StackName = StackName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectStackDriftInput]
   }
   
-  @scala.inline
-  implicit class DetectStackDriftInputMutableBuilder[Self <: DetectStackDriftInput] (val x: Self) extends AnyVal {
+  extension [Self <: DetectStackDriftInput](x: Self) {
     
-    @scala.inline
-    def setLogicalResourceIds(value: LogicalResourceIds): Self = StObject.set(x, "LogicalResourceIds", value.asInstanceOf[js.Any])
+    inline def setLogicalResourceIds(value: LogicalResourceIds): Self = StObject.set(x, "LogicalResourceIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogicalResourceIdsUndefined: Self = StObject.set(x, "LogicalResourceIds", js.undefined)
+    inline def setLogicalResourceIdsUndefined: Self = StObject.set(x, "LogicalResourceIds", js.undefined)
     
-    @scala.inline
-    def setLogicalResourceIdsVarargs(value: LogicalResourceId*): Self = StObject.set(x, "LogicalResourceIds", js.Array(value :_*))
+    inline def setLogicalResourceIdsVarargs(value: LogicalResourceId*): Self = StObject.set(x, "LogicalResourceIds", js.Array(value :_*))
     
-    @scala.inline
-    def setStackName(value: StackNameOrId): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
+    inline def setStackName(value: StackNameOrId): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
   }
 }

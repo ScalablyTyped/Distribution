@@ -13,19 +13,15 @@ trait CreateIpGroupResult extends StObject {
 }
 object CreateIpGroupResult {
   
-  @scala.inline
-  def apply(): CreateIpGroupResult = {
+  inline def apply(): CreateIpGroupResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateIpGroupResult]
   }
   
-  @scala.inline
-  implicit class CreateIpGroupResultMutableBuilder[Self <: CreateIpGroupResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateIpGroupResult](x: Self) {
     
-    @scala.inline
-    def setGroupId(value: IpGroupId): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: IpGroupId): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupIdUndefined: Self = StObject.set(x, "GroupId", js.undefined)
+    inline def setGroupIdUndefined: Self = StObject.set(x, "GroupId", js.undefined)
   }
 }

@@ -10,9 +10,7 @@ object gameStatusMod {
   object global {
     
     /** MindUnit display */
-    @scala.inline
-    def updateGameScore(): Unit = js.Dynamic.global.applyDynamic("updateGameScore")().asInstanceOf[Unit]
-    @scala.inline
-    def updateGameScore(data: jqXHR[js.Any]): Unit = js.Dynamic.global.applyDynamic("updateGameScore")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def updateGameScore(): Unit = js.Dynamic.global.applyDynamic("updateGameScore")().asInstanceOf[Unit]
+    inline def updateGameScore(data: jqXHR[js.Any]): Unit = js.Dynamic.global.applyDynamic("updateGameScore")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

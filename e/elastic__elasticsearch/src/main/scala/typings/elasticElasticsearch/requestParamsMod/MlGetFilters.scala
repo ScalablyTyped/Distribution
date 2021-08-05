@@ -16,31 +16,23 @@ trait MlGetFilters
 }
 object MlGetFilters {
   
-  @scala.inline
-  def apply(): MlGetFilters = {
+  inline def apply(): MlGetFilters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MlGetFilters]
   }
   
-  @scala.inline
-  implicit class MlGetFiltersMutableBuilder[Self <: MlGetFilters] (val x: Self) extends AnyVal {
+  extension [Self <: MlGetFilters](x: Self) {
     
-    @scala.inline
-    def setFilter_id(value: String): Self = StObject.set(x, "filter_id", value.asInstanceOf[js.Any])
+    inline def setFilter_id(value: String): Self = StObject.set(x, "filter_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilter_idUndefined: Self = StObject.set(x, "filter_id", js.undefined)
+    inline def setFilter_idUndefined: Self = StObject.set(x, "filter_id", js.undefined)
     
-    @scala.inline
-    def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

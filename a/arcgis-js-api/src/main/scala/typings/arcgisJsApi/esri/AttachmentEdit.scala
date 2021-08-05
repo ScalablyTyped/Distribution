@@ -26,8 +26,7 @@ trait AttachmentEdit
 }
 object AttachmentEdit {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attachment: AttachmentEditAttachment,
     constructor: js.Function,
     feature: Graphic | Double | String,
@@ -38,13 +37,10 @@ object AttachmentEdit {
     __obj.asInstanceOf[AttachmentEdit]
   }
   
-  @scala.inline
-  implicit class AttachmentEditMutableBuilder[Self <: AttachmentEdit] (val x: Self) extends AnyVal {
+  extension [Self <: AttachmentEdit](x: Self) {
     
-    @scala.inline
-    def setAttachment(value: AttachmentEditAttachment): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
+    inline def setAttachment(value: AttachmentEditAttachment): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeature(value: Graphic | Double | String): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
+    inline def setFeature(value: Graphic | Double | String): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
   }
 }

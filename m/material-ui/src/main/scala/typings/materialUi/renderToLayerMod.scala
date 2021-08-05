@@ -31,32 +31,24 @@ object renderToLayerMod {
   }
   object RenderToLayerProps {
     
-    @scala.inline
-    def apply(open: Boolean, render: js.Function): RenderToLayerProps = {
+    inline def apply(open: Boolean, render: js.Function): RenderToLayerProps = {
       val __obj = js.Dynamic.literal(open = open.asInstanceOf[js.Any], render = render.asInstanceOf[js.Any])
       __obj.asInstanceOf[RenderToLayerProps]
     }
     
-    @scala.inline
-    implicit class RenderToLayerPropsMutableBuilder[Self <: RenderToLayerProps] (val x: Self) extends AnyVal {
+    extension [Self <: RenderToLayerProps](x: Self) {
       
-      @scala.inline
-      def setComponentClickAway(value: js.Function): Self = StObject.set(x, "componentClickAway", value.asInstanceOf[js.Any])
+      inline def setComponentClickAway(value: js.Function): Self = StObject.set(x, "componentClickAway", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentClickAwayUndefined: Self = StObject.set(x, "componentClickAway", js.undefined)
+      inline def setComponentClickAwayUndefined: Self = StObject.set(x, "componentClickAway", js.undefined)
       
-      @scala.inline
-      def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRender(value: js.Function): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+      inline def setRender(value: js.Function): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseLayerForClickAway(value: Boolean): Self = StObject.set(x, "useLayerForClickAway", value.asInstanceOf[js.Any])
+      inline def setUseLayerForClickAway(value: Boolean): Self = StObject.set(x, "useLayerForClickAway", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseLayerForClickAwayUndefined: Self = StObject.set(x, "useLayerForClickAway", js.undefined)
+      inline def setUseLayerForClickAwayUndefined: Self = StObject.set(x, "useLayerForClickAway", js.undefined)
     }
   }
 }

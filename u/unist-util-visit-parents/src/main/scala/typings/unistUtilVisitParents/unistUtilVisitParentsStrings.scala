@@ -8,6 +8,5 @@ object unistUtilVisitParentsStrings {
   
   @js.native
   sealed trait skip extends StObject
-  @scala.inline
-  def skip: skip = "skip".asInstanceOf[skip]
+  inline def skip: skip = "skip".asInstanceOf[skip]
 }

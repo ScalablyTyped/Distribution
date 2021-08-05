@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-md__elevation"
-version := "2.4.2-25368a"
+version := "2.4.2-9a2886"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

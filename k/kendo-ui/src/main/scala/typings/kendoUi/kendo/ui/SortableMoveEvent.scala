@@ -19,37 +19,27 @@ trait SortableMoveEvent
 }
 object SortableMoveEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Sortable): SortableMoveEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Sortable): SortableMoveEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[SortableMoveEvent]
   }
   
-  @scala.inline
-  implicit class SortableMoveEventMutableBuilder[Self <: SortableMoveEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SortableMoveEvent](x: Self) {
     
-    @scala.inline
-    def setDraggableEvent(value: js.Any): Self = StObject.set(x, "draggableEvent", value.asInstanceOf[js.Any])
+    inline def setDraggableEvent(value: js.Any): Self = StObject.set(x, "draggableEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraggableEventUndefined: Self = StObject.set(x, "draggableEvent", js.undefined)
+    inline def setDraggableEventUndefined: Self = StObject.set(x, "draggableEvent", js.undefined)
     
-    @scala.inline
-    def setItem(value: JQuery): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: JQuery): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
-    @scala.inline
-    def setList(value: Sortable): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+    inline def setList(value: Sortable): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListUndefined: Self = StObject.set(x, "list", js.undefined)
+    inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
     
-    @scala.inline
-    def setTarget(value: JQuery): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: JQuery): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

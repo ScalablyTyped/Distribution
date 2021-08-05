@@ -21,25 +21,19 @@ trait Readonlynameexecutenexttr
 }
 object Readonlynameexecutenexttr {
   
-  @scala.inline
-  def apply(response: GraphQLResponse, transactionID: Double): Readonlynameexecutenexttr = {
+  inline def apply(response: GraphQLResponse, transactionID: Double): Readonlynameexecutenexttr = {
     val __obj = js.Dynamic.literal(name = "execute.next", response = response.asInstanceOf[js.Any], transactionID = transactionID.asInstanceOf[js.Any])
     __obj.asInstanceOf[Readonlynameexecutenexttr]
   }
   
-  @scala.inline
-  implicit class ReadonlynameexecutenexttrMutableBuilder[Self <: Readonlynameexecutenexttr] (val x: Self) extends AnyVal {
+  extension [Self <: Readonlynameexecutenexttr](x: Self) {
     
-    @scala.inline
-    def setName(value: executeDotnext): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: executeDotnext): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: GraphQLResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: GraphQLResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseVarargs(value: GraphQLSingularResponse*): Self = StObject.set(x, "response", js.Array(value :_*))
+    inline def setResponseVarargs(value: GraphQLSingularResponse*): Self = StObject.set(x, "response", js.Array(value :_*))
     
-    @scala.inline
-    def setTransactionID(value: Double): Self = StObject.set(x, "transactionID", value.asInstanceOf[js.Any])
+    inline def setTransactionID(value: Double): Self = StObject.set(x, "transactionID", value.asInstanceOf[js.Any])
   }
 }

@@ -31,34 +31,25 @@ trait ToolbarAndroidAction extends StObject {
 }
 object ToolbarAndroidAction {
   
-  @scala.inline
-  def apply(title: String): ToolbarAndroidAction = {
+  inline def apply(title: String): ToolbarAndroidAction = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolbarAndroidAction]
   }
   
-  @scala.inline
-  implicit class ToolbarAndroidActionMutableBuilder[Self <: ToolbarAndroidAction] (val x: Self) extends AnyVal {
+  extension [Self <: ToolbarAndroidAction](x: Self) {
     
-    @scala.inline
-    def setIcon(value: ImageURISource): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: ImageURISource): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setShow(value: always | ifRoom | never): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: always | ifRoom | never): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
-    @scala.inline
-    def setShowWithText(value: Boolean): Self = StObject.set(x, "showWithText", value.asInstanceOf[js.Any])
+    inline def setShowWithText(value: Boolean): Self = StObject.set(x, "showWithText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowWithTextUndefined: Self = StObject.set(x, "showWithText", js.undefined)
+    inline def setShowWithTextUndefined: Self = StObject.set(x, "showWithText", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

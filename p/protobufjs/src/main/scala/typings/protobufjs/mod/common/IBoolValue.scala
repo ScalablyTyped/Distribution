@@ -11,19 +11,15 @@ trait IBoolValue extends StObject {
 }
 object IBoolValue {
   
-  @scala.inline
-  def apply(): IBoolValue = {
+  inline def apply(): IBoolValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IBoolValue]
   }
   
-  @scala.inline
-  implicit class IBoolValueMutableBuilder[Self <: IBoolValue] (val x: Self) extends AnyVal {
+  extension [Self <: IBoolValue](x: Self) {
     
-    @scala.inline
-    def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

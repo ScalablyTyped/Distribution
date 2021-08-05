@@ -19,7 +19,7 @@ object testBackendMod {
        with ITestBackend {
     def this(manager: DragDropManager) = this()
     
-    var actions: js.Any = js.native
+    /* private */ var actions: js.Any = js.native
     
     def connectDragPreview(): Unsubscribe = js.native
     

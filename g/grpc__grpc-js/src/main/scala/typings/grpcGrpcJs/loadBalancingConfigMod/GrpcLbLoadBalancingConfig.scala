@@ -15,19 +15,15 @@ trait GrpcLbLoadBalancingConfig
 }
 object GrpcLbLoadBalancingConfig {
   
-  @scala.inline
-  def apply(grpclb: GrpcLbConfig): GrpcLbLoadBalancingConfig = {
+  inline def apply(grpclb: GrpcLbConfig): GrpcLbLoadBalancingConfig = {
     val __obj = js.Dynamic.literal(grpclb = grpclb.asInstanceOf[js.Any], name = "grpclb")
     __obj.asInstanceOf[GrpcLbLoadBalancingConfig]
   }
   
-  @scala.inline
-  implicit class GrpcLbLoadBalancingConfigMutableBuilder[Self <: GrpcLbLoadBalancingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GrpcLbLoadBalancingConfig](x: Self) {
     
-    @scala.inline
-    def setGrpclb(value: GrpcLbConfig): Self = StObject.set(x, "grpclb", value.asInstanceOf[js.Any])
+    inline def setGrpclb(value: GrpcLbConfig): Self = StObject.set(x, "grpclb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: grpclb): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: grpclb): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

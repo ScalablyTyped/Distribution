@@ -23,31 +23,23 @@ trait JobDetails extends StObject {
 }
 object JobDetails {
   
-  @scala.inline
-  def apply(): JobDetails = {
+  inline def apply(): JobDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobDetails]
   }
   
-  @scala.inline
-  implicit class JobDetailsMutableBuilder[Self <: JobDetails] (val x: Self) extends AnyVal {
+  extension [Self <: JobDetails](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setData(value: JobData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: JobData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setId(value: JobId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: JobId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

@@ -18,28 +18,21 @@ trait ListRoutingProfilesResponse extends StObject {
 }
 object ListRoutingProfilesResponse {
   
-  @scala.inline
-  def apply(): ListRoutingProfilesResponse = {
+  inline def apply(): ListRoutingProfilesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListRoutingProfilesResponse]
   }
   
-  @scala.inline
-  implicit class ListRoutingProfilesResponseMutableBuilder[Self <: ListRoutingProfilesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListRoutingProfilesResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setRoutingProfileSummaryList(value: RoutingProfileSummaryList): Self = StObject.set(x, "RoutingProfileSummaryList", value.asInstanceOf[js.Any])
+    inline def setRoutingProfileSummaryList(value: RoutingProfileSummaryList): Self = StObject.set(x, "RoutingProfileSummaryList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutingProfileSummaryListUndefined: Self = StObject.set(x, "RoutingProfileSummaryList", js.undefined)
+    inline def setRoutingProfileSummaryListUndefined: Self = StObject.set(x, "RoutingProfileSummaryList", js.undefined)
     
-    @scala.inline
-    def setRoutingProfileSummaryListVarargs(value: RoutingProfileSummary*): Self = StObject.set(x, "RoutingProfileSummaryList", js.Array(value :_*))
+    inline def setRoutingProfileSummaryListVarargs(value: RoutingProfileSummary*): Self = StObject.set(x, "RoutingProfileSummaryList", js.Array(value :_*))
   }
 }

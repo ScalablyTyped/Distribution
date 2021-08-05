@@ -10,16 +10,13 @@ trait Tooltip extends StObject {
 }
 object Tooltip {
   
-  @scala.inline
-  def apply(tooltip: Start): Tooltip = {
+  inline def apply(tooltip: Start): Tooltip = {
     val __obj = js.Dynamic.literal(tooltip = tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tooltip]
   }
   
-  @scala.inline
-  implicit class TooltipMutableBuilder[Self <: Tooltip] (val x: Self) extends AnyVal {
+  extension [Self <: Tooltip](x: Self) {
     
-    @scala.inline
-    def setTooltip(value: Start): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: Start): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
   }
 }

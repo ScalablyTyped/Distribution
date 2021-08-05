@@ -16,37 +16,27 @@ trait GID extends StObject {
 }
 object GID {
   
-  @scala.inline
-  def apply(): GID = {
+  inline def apply(): GID = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GID]
   }
   
-  @scala.inline
-  implicit class GIDMutableBuilder[Self <: GID] (val x: Self) extends AnyVal {
+  extension [Self <: GID](x: Self) {
     
-    @scala.inline
-    def setGID(value: String): Self = StObject.set(x, "GID", value.asInstanceOf[js.Any])
+    inline def setGID(value: String): Self = StObject.set(x, "GID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGIDUndefined: Self = StObject.set(x, "GID", js.undefined)
+    inline def setGIDUndefined: Self = StObject.set(x, "GID", js.undefined)
     
-    @scala.inline
-    def setMode(value: Double): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: Double): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "Mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "Mode", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setUID(value: String): Self = StObject.set(x, "UID", value.asInstanceOf[js.Any])
+    inline def setUID(value: String): Self = StObject.set(x, "UID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUIDUndefined: Self = StObject.set(x, "UID", js.undefined)
+    inline def setUIDUndefined: Self = StObject.set(x, "UID", js.undefined)
   }
 }

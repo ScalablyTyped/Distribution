@@ -10,16 +10,13 @@ trait VssJsonCollectionWrapperBase extends StObject {
 }
 object VssJsonCollectionWrapperBase {
   
-  @scala.inline
-  def apply(count: Double): VssJsonCollectionWrapperBase = {
+  inline def apply(count: Double): VssJsonCollectionWrapperBase = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
     __obj.asInstanceOf[VssJsonCollectionWrapperBase]
   }
   
-  @scala.inline
-  implicit class VssJsonCollectionWrapperBaseMutableBuilder[Self <: VssJsonCollectionWrapperBase] (val x: Self) extends AnyVal {
+  extension [Self <: VssJsonCollectionWrapperBase](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
   }
 }

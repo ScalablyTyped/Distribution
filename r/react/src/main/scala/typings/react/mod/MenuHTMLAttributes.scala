@@ -12,19 +12,15 @@ trait MenuHTMLAttributes[T]
 }
 object MenuHTMLAttributes {
   
-  @scala.inline
-  def apply[T](): MenuHTMLAttributes[T] = {
+  inline def apply[T](): MenuHTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MenuHTMLAttributes[T]]
   }
   
-  @scala.inline
-  implicit class MenuHTMLAttributesMutableBuilder[Self <: MenuHTMLAttributes[?], T] (val x: Self & MenuHTMLAttributes[T]) extends AnyVal {
+  extension [Self <: MenuHTMLAttributes[?], T](x: Self & MenuHTMLAttributes[T]) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

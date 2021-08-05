@@ -14,25 +14,19 @@ trait Projection
 }
 object Projection {
   
-  @scala.inline
-  def apply(x: Double, y: Double): Projection = {
+  inline def apply(x: Double, y: Double): Projection = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[Projection]
   }
   
-  @scala.inline
-  implicit class ProjectionMutableBuilder[Self <: Projection] (val x: Self) extends AnyVal {
+  extension [Self <: Projection](x: Self) {
     
-    @scala.inline
-    def setD(value: Double): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
+    inline def setD(value: Double): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDUndefined: Self = StObject.set(x, "d", js.undefined)
+    inline def setDUndefined: Self = StObject.set(x, "d", js.undefined)
     
-    @scala.inline
-    def setT(value: Double): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+    inline def setT(value: Double): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTUndefined: Self = StObject.set(x, "t", js.undefined)
+    inline def setTUndefined: Self = StObject.set(x, "t", js.undefined)
   }
 }

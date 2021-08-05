@@ -17,34 +17,25 @@ trait ClusteringMetrics extends StObject {
 }
 object ClusteringMetrics {
   
-  @scala.inline
-  def apply(): ClusteringMetrics = {
+  inline def apply(): ClusteringMetrics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClusteringMetrics]
   }
   
-  @scala.inline
-  implicit class ClusteringMetricsMutableBuilder[Self <: ClusteringMetrics] (val x: Self) extends AnyVal {
+  extension [Self <: ClusteringMetrics](x: Self) {
     
-    @scala.inline
-    def setClusters(value: js.Array[Cluster]): Self = StObject.set(x, "clusters", value.asInstanceOf[js.Any])
+    inline def setClusters(value: js.Array[Cluster]): Self = StObject.set(x, "clusters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClustersUndefined: Self = StObject.set(x, "clusters", js.undefined)
+    inline def setClustersUndefined: Self = StObject.set(x, "clusters", js.undefined)
     
-    @scala.inline
-    def setClustersVarargs(value: Cluster*): Self = StObject.set(x, "clusters", js.Array(value :_*))
+    inline def setClustersVarargs(value: Cluster*): Self = StObject.set(x, "clusters", js.Array(value :_*))
     
-    @scala.inline
-    def setDaviesBouldinIndex(value: Double): Self = StObject.set(x, "daviesBouldinIndex", value.asInstanceOf[js.Any])
+    inline def setDaviesBouldinIndex(value: Double): Self = StObject.set(x, "daviesBouldinIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDaviesBouldinIndexUndefined: Self = StObject.set(x, "daviesBouldinIndex", js.undefined)
+    inline def setDaviesBouldinIndexUndefined: Self = StObject.set(x, "daviesBouldinIndex", js.undefined)
     
-    @scala.inline
-    def setMeanSquaredDistance(value: Double): Self = StObject.set(x, "meanSquaredDistance", value.asInstanceOf[js.Any])
+    inline def setMeanSquaredDistance(value: Double): Self = StObject.set(x, "meanSquaredDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeanSquaredDistanceUndefined: Self = StObject.set(x, "meanSquaredDistance", js.undefined)
+    inline def setMeanSquaredDistanceUndefined: Self = StObject.set(x, "meanSquaredDistance", js.undefined)
   }
 }

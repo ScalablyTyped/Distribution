@@ -42,8 +42,7 @@ trait ChampionDto extends StObject {
 }
 object ChampionDto {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allytips: js.Array[String],
     blurb: String,
     enemytips: js.Array[String],
@@ -66,76 +65,52 @@ object ChampionDto {
     __obj.asInstanceOf[ChampionDto]
   }
   
-  @scala.inline
-  implicit class ChampionDtoMutableBuilder[Self <: ChampionDto] (val x: Self) extends AnyVal {
+  extension [Self <: ChampionDto](x: Self) {
     
-    @scala.inline
-    def setAllytips(value: js.Array[String]): Self = StObject.set(x, "allytips", value.asInstanceOf[js.Any])
+    inline def setAllytips(value: js.Array[String]): Self = StObject.set(x, "allytips", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllytipsVarargs(value: String*): Self = StObject.set(x, "allytips", js.Array(value :_*))
+    inline def setAllytipsVarargs(value: String*): Self = StObject.set(x, "allytips", js.Array(value :_*))
     
-    @scala.inline
-    def setBlurb(value: String): Self = StObject.set(x, "blurb", value.asInstanceOf[js.Any])
+    inline def setBlurb(value: String): Self = StObject.set(x, "blurb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnemytips(value: js.Array[String]): Self = StObject.set(x, "enemytips", value.asInstanceOf[js.Any])
+    inline def setEnemytips(value: js.Array[String]): Self = StObject.set(x, "enemytips", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnemytipsVarargs(value: String*): Self = StObject.set(x, "enemytips", js.Array(value :_*))
+    inline def setEnemytipsVarargs(value: String*): Self = StObject.set(x, "enemytips", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage(value: ImageDto): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: ImageDto): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfo(value: InfoDto): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: InfoDto): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLore(value: String): Self = StObject.set(x, "lore", value.asInstanceOf[js.Any])
+    inline def setLore(value: String): Self = StObject.set(x, "lore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartype(value: String): Self = StObject.set(x, "partype", value.asInstanceOf[js.Any])
+    inline def setPartype(value: String): Self = StObject.set(x, "partype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassive(value: PassiveDto): Self = StObject.set(x, "passive", value.asInstanceOf[js.Any])
+    inline def setPassive(value: PassiveDto): Self = StObject.set(x, "passive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommended(value: js.Array[RecommendedDto]): Self = StObject.set(x, "recommended", value.asInstanceOf[js.Any])
+    inline def setRecommended(value: js.Array[RecommendedDto]): Self = StObject.set(x, "recommended", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommendedVarargs(value: RecommendedDto*): Self = StObject.set(x, "recommended", js.Array(value :_*))
+    inline def setRecommendedVarargs(value: RecommendedDto*): Self = StObject.set(x, "recommended", js.Array(value :_*))
     
-    @scala.inline
-    def setSkins(value: js.Array[SkinDto]): Self = StObject.set(x, "skins", value.asInstanceOf[js.Any])
+    inline def setSkins(value: js.Array[SkinDto]): Self = StObject.set(x, "skins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkinsVarargs(value: SkinDto*): Self = StObject.set(x, "skins", js.Array(value :_*))
+    inline def setSkinsVarargs(value: SkinDto*): Self = StObject.set(x, "skins", js.Array(value :_*))
     
-    @scala.inline
-    def setSpells(value: js.Array[ChampionSpellDto]): Self = StObject.set(x, "spells", value.asInstanceOf[js.Any])
+    inline def setSpells(value: js.Array[ChampionSpellDto]): Self = StObject.set(x, "spells", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpellsVarargs(value: ChampionSpellDto*): Self = StObject.set(x, "spells", js.Array(value :_*))
+    inline def setSpellsVarargs(value: ChampionSpellDto*): Self = StObject.set(x, "spells", js.Array(value :_*))
     
-    @scala.inline
-    def setStats(value: StatsDto): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+    inline def setStats(value: StatsDto): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

@@ -49,8 +49,7 @@ trait HierarchyAccess
 }
 object HierarchyAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementNames: SafeArray[String],
     ElementType: `type`,
     Properties: SafeArray[Property],
@@ -82,10 +81,8 @@ object HierarchyAccess {
     __obj.asInstanceOf[HierarchyAccess]
   }
   
-  @scala.inline
-  implicit class HierarchyAccessMutableBuilder[Self <: HierarchyAccess] (val x: Self) extends AnyVal {
+  extension [Self <: HierarchyAccess](x: Self) {
     
-    @scala.inline
-    def setGetPropertyStates(value: SeqEquiv[String] => SafeArray[PropertyState]): Self = StObject.set(x, "getPropertyStates", js.Any.fromFunction1(value))
+    inline def setGetPropertyStates(value: SeqEquiv[String] => SafeArray[PropertyState]): Self = StObject.set(x, "getPropertyStates", js.Any.fromFunction1(value))
   }
 }

@@ -10,19 +10,15 @@ trait StopBuildBatchOutput extends StObject {
 }
 object StopBuildBatchOutput {
   
-  @scala.inline
-  def apply(): StopBuildBatchOutput = {
+  inline def apply(): StopBuildBatchOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StopBuildBatchOutput]
   }
   
-  @scala.inline
-  implicit class StopBuildBatchOutputMutableBuilder[Self <: StopBuildBatchOutput] (val x: Self) extends AnyVal {
+  extension [Self <: StopBuildBatchOutput](x: Self) {
     
-    @scala.inline
-    def setBuildBatch(value: BuildBatch): Self = StObject.set(x, "buildBatch", value.asInstanceOf[js.Any])
+    inline def setBuildBatch(value: BuildBatch): Self = StObject.set(x, "buildBatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildBatchUndefined: Self = StObject.set(x, "buildBatch", js.undefined)
+    inline def setBuildBatchUndefined: Self = StObject.set(x, "buildBatch", js.undefined)
   }
 }

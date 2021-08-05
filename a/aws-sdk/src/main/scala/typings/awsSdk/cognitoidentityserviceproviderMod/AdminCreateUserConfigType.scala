@@ -23,31 +23,23 @@ trait AdminCreateUserConfigType extends StObject {
 }
 object AdminCreateUserConfigType {
   
-  @scala.inline
-  def apply(): AdminCreateUserConfigType = {
+  inline def apply(): AdminCreateUserConfigType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AdminCreateUserConfigType]
   }
   
-  @scala.inline
-  implicit class AdminCreateUserConfigTypeMutableBuilder[Self <: AdminCreateUserConfigType] (val x: Self) extends AnyVal {
+  extension [Self <: AdminCreateUserConfigType](x: Self) {
     
-    @scala.inline
-    def setAllowAdminCreateUserOnly(value: BooleanType): Self = StObject.set(x, "AllowAdminCreateUserOnly", value.asInstanceOf[js.Any])
+    inline def setAllowAdminCreateUserOnly(value: BooleanType): Self = StObject.set(x, "AllowAdminCreateUserOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowAdminCreateUserOnlyUndefined: Self = StObject.set(x, "AllowAdminCreateUserOnly", js.undefined)
+    inline def setAllowAdminCreateUserOnlyUndefined: Self = StObject.set(x, "AllowAdminCreateUserOnly", js.undefined)
     
-    @scala.inline
-    def setInviteMessageTemplate(value: MessageTemplateType): Self = StObject.set(x, "InviteMessageTemplate", value.asInstanceOf[js.Any])
+    inline def setInviteMessageTemplate(value: MessageTemplateType): Self = StObject.set(x, "InviteMessageTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInviteMessageTemplateUndefined: Self = StObject.set(x, "InviteMessageTemplate", js.undefined)
+    inline def setInviteMessageTemplateUndefined: Self = StObject.set(x, "InviteMessageTemplate", js.undefined)
     
-    @scala.inline
-    def setUnusedAccountValidityDays(value: AdminCreateUserUnusedAccountValidityDaysType): Self = StObject.set(x, "UnusedAccountValidityDays", value.asInstanceOf[js.Any])
+    inline def setUnusedAccountValidityDays(value: AdminCreateUserUnusedAccountValidityDaysType): Self = StObject.set(x, "UnusedAccountValidityDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnusedAccountValidityDaysUndefined: Self = StObject.set(x, "UnusedAccountValidityDays", js.undefined)
+    inline def setUnusedAccountValidityDaysUndefined: Self = StObject.set(x, "UnusedAccountValidityDays", js.undefined)
   }
 }

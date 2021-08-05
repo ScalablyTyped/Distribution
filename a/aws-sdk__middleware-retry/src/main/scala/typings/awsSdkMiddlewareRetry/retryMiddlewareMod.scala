@@ -16,11 +16,9 @@ object retryMiddlewareMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getRetryPlugin(options: RetryResolvedConfig): Pluggable[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRetryPlugin")(options.asInstanceOf[js.Any]).asInstanceOf[Pluggable[js.Any, js.Any]]
+  inline def getRetryPlugin(options: RetryResolvedConfig): Pluggable[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRetryPlugin")(options.asInstanceOf[js.Any]).asInstanceOf[Pluggable[js.Any, js.Any]]
   
-  @scala.inline
-  def retryMiddleware(options: RetryResolvedConfig): js.Function1[
+  inline def retryMiddleware(options: RetryResolvedConfig): js.Function1[
     /* next */ FinalizeHandler[js.Any, MetadataBearer], 
     FinalizeHandler[js.Any, MetadataBearer]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("retryMiddleware")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[

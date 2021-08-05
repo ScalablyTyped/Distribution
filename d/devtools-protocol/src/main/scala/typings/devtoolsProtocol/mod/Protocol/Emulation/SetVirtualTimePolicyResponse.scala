@@ -13,16 +13,13 @@ trait SetVirtualTimePolicyResponse extends StObject {
 }
 object SetVirtualTimePolicyResponse {
   
-  @scala.inline
-  def apply(virtualTimeTicksBase: Double): SetVirtualTimePolicyResponse = {
+  inline def apply(virtualTimeTicksBase: Double): SetVirtualTimePolicyResponse = {
     val __obj = js.Dynamic.literal(virtualTimeTicksBase = virtualTimeTicksBase.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetVirtualTimePolicyResponse]
   }
   
-  @scala.inline
-  implicit class SetVirtualTimePolicyResponseMutableBuilder[Self <: SetVirtualTimePolicyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SetVirtualTimePolicyResponse](x: Self) {
     
-    @scala.inline
-    def setVirtualTimeTicksBase(value: Double): Self = StObject.set(x, "virtualTimeTicksBase", value.asInstanceOf[js.Any])
+    inline def setVirtualTimeTicksBase(value: Double): Self = StObject.set(x, "virtualTimeTicksBase", value.asInstanceOf[js.Any])
   }
 }

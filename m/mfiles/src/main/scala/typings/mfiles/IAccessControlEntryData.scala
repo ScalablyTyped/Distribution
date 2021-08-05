@@ -23,8 +23,7 @@ trait IAccessControlEntryData extends StObject {
 }
 object IAccessControlEntryData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AttachObjectsPermission: MFPermission,
     ChangePermissionsPermission: MFPermission,
     Clone: () => IAccessControlEntryData,
@@ -37,28 +36,20 @@ object IAccessControlEntryData {
     __obj.asInstanceOf[IAccessControlEntryData]
   }
   
-  @scala.inline
-  implicit class IAccessControlEntryDataMutableBuilder[Self <: IAccessControlEntryData] (val x: Self) extends AnyVal {
+  extension [Self <: IAccessControlEntryData](x: Self) {
     
-    @scala.inline
-    def setAttachObjectsPermission(value: MFPermission): Self = StObject.set(x, "AttachObjectsPermission", value.asInstanceOf[js.Any])
+    inline def setAttachObjectsPermission(value: MFPermission): Self = StObject.set(x, "AttachObjectsPermission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangePermissionsPermission(value: MFPermission): Self = StObject.set(x, "ChangePermissionsPermission", value.asInstanceOf[js.Any])
+    inline def setChangePermissionsPermission(value: MFPermission): Self = StObject.set(x, "ChangePermissionsPermission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClone(value: () => IAccessControlEntryData): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IAccessControlEntryData): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDeletePermission(value: MFPermission): Self = StObject.set(x, "DeletePermission", value.asInstanceOf[js.Any])
+    inline def setDeletePermission(value: MFPermission): Self = StObject.set(x, "DeletePermission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditPermission(value: MFPermission): Self = StObject.set(x, "EditPermission", value.asInstanceOf[js.Any])
+    inline def setEditPermission(value: MFPermission): Self = StObject.set(x, "EditPermission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadPermission(value: MFPermission): Self = StObject.set(x, "ReadPermission", value.asInstanceOf[js.Any])
+    inline def setReadPermission(value: MFPermission): Self = StObject.set(x, "ReadPermission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetAllPermissions(value: MFPermission => Unit): Self = StObject.set(x, "SetAllPermissions", js.Any.fromFunction1(value))
+    inline def setSetAllPermissions(value: MFPermission => Unit): Self = StObject.set(x, "SetAllPermissions", js.Any.fromFunction1(value))
   }
 }

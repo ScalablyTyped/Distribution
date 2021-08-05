@@ -24,27 +24,22 @@ trait TemplateDocumentFields extends StObject {
 }
 object TemplateDocumentFields {
   
-  @scala.inline
-  def apply(): TemplateDocumentFields = {
+  inline def apply(): TemplateDocumentFields = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TemplateDocumentFields]
   }
   
-  @scala.inline
-  implicit class TemplateDocumentFieldsMutableBuilder[Self <: TemplateDocumentFields] (val x: Self) extends AnyVal {
+  extension [Self <: TemplateDocumentFields](x: Self) {
     
-    @scala.inline
-    def setDocumentFields(
+    inline def setDocumentFields(
       value: js.Array[
           /* A name-value pair that describes an item and provides a value for the item. */ NameValue
         ]
     ): Self = StObject.set(x, "documentFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentFieldsUndefined: Self = StObject.set(x, "documentFields", js.undefined)
+    inline def setDocumentFieldsUndefined: Self = StObject.set(x, "documentFields", js.undefined)
     
-    @scala.inline
-    def setDocumentFieldsVarargs(
+    inline def setDocumentFieldsVarargs(
       value: (/* A name-value pair that describes an item and provides a value for the item. */ NameValue)*
     ): Self = StObject.set(x, "documentFields", js.Array(value :_*))
   }

@@ -23,19 +23,15 @@ trait ASPxClientFloatingActionButtonActionCollapsingEventArgs
 }
 object ASPxClientFloatingActionButtonActionCollapsingEventArgs {
   
-  @scala.inline
-  def apply(collapseReason: ASPxClientFloatingActionButtonCollapseReason, contextName: String): ASPxClientFloatingActionButtonActionCollapsingEventArgs = {
+  inline def apply(collapseReason: ASPxClientFloatingActionButtonCollapseReason, contextName: String): ASPxClientFloatingActionButtonActionCollapsingEventArgs = {
     val __obj = js.Dynamic.literal(collapseReason = collapseReason.asInstanceOf[js.Any], contextName = contextName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientFloatingActionButtonActionCollapsingEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientFloatingActionButtonActionCollapsingEventArgsMutableBuilder[Self <: ASPxClientFloatingActionButtonActionCollapsingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientFloatingActionButtonActionCollapsingEventArgs](x: Self) {
     
-    @scala.inline
-    def setCollapseReason(value: ASPxClientFloatingActionButtonCollapseReason): Self = StObject.set(x, "collapseReason", value.asInstanceOf[js.Any])
+    inline def setCollapseReason(value: ASPxClientFloatingActionButtonCollapseReason): Self = StObject.set(x, "collapseReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextName(value: String): Self = StObject.set(x, "contextName", value.asInstanceOf[js.Any])
+    inline def setContextName(value: String): Self = StObject.set(x, "contextName", value.asInstanceOf[js.Any])
   }
 }

@@ -11,22 +11,17 @@ trait GoogleCloudMlV1StudyConfigParameterSpecCategoricalValueSpec extends StObje
 }
 object GoogleCloudMlV1StudyConfigParameterSpecCategoricalValueSpec {
   
-  @scala.inline
-  def apply(): GoogleCloudMlV1StudyConfigParameterSpecCategoricalValueSpec = {
+  inline def apply(): GoogleCloudMlV1StudyConfigParameterSpecCategoricalValueSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMlV1StudyConfigParameterSpecCategoricalValueSpec]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMlV1StudyConfigParameterSpecCategoricalValueSpecMutableBuilder[Self <: GoogleCloudMlV1StudyConfigParameterSpecCategoricalValueSpec] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMlV1StudyConfigParameterSpecCategoricalValueSpec](x: Self) {
     
-    @scala.inline
-    def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

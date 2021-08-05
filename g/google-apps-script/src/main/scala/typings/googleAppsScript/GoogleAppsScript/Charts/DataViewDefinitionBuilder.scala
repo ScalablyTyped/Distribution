@@ -53,19 +53,15 @@ trait DataViewDefinitionBuilder extends StObject {
 }
 object DataViewDefinitionBuilder {
   
-  @scala.inline
-  def apply(build: () => DataViewDefinition, setColumns: js.Array[js.Any] => DataViewDefinitionBuilder): DataViewDefinitionBuilder = {
+  inline def apply(build: () => DataViewDefinition, setColumns: js.Array[js.Any] => DataViewDefinitionBuilder): DataViewDefinitionBuilder = {
     val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), setColumns = js.Any.fromFunction1(setColumns))
     __obj.asInstanceOf[DataViewDefinitionBuilder]
   }
   
-  @scala.inline
-  implicit class DataViewDefinitionBuilderMutableBuilder[Self <: DataViewDefinitionBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: DataViewDefinitionBuilder](x: Self) {
     
-    @scala.inline
-    def setBuild(value: () => DataViewDefinition): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
+    inline def setBuild(value: () => DataViewDefinition): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetColumns(value: js.Array[js.Any] => DataViewDefinitionBuilder): Self = StObject.set(x, "setColumns", js.Any.fromFunction1(value))
+    inline def setSetColumns(value: js.Array[js.Any] => DataViewDefinitionBuilder): Self = StObject.set(x, "setColumns", js.Any.fromFunction1(value))
   }
 }

@@ -14,8 +14,7 @@ object flattenConcurrentlyAtMostMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](n: Double): js.Function1[/* ins */ Stream[Stream[T] | MemoryStream[T]], Stream[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(n.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ins */ Stream[Stream[T] | MemoryStream[T]], Stream[T]]]
+  inline def default[T](n: Double): js.Function1[/* ins */ Stream[Stream[T] | MemoryStream[T]], Stream[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(n.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ins */ Stream[Stream[T] | MemoryStream[T]], Stream[T]]]
   
   @JSImport("xstream/extra/flattenConcurrentlyAtMost", "FlattenConcAMOperator")
   @js.native
@@ -27,17 +26,17 @@ object flattenConcurrentlyAtMostMod {
     /* CompleteClass */
     override def _c(): Unit = js.native
     
-    var _d: js.Any = js.native
+    /* private */ var _d: js.Any = js.native
     
     /* CompleteClass */
     override def _e(err: js.Any): Unit = js.native
     
-    var _l: js.Any = js.native
+    /* private */ var _l: js.Any = js.native
     
     /* CompleteClass */
     override def _n(v: Stream[T]): Unit = js.native
     
-    var _seq: js.Any = js.native
+    /* private */ var _seq: js.Any = js.native
     
     /* CompleteClass */
     override def _start(listener: InternalListener[T]): Unit = js.native

@@ -14,22 +14,17 @@ trait TopFilterEvent extends StObject {
 }
 object TopFilterEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: TopFilter): TopFilterEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: TopFilter): TopFilterEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopFilterEvent]
   }
   
-  @scala.inline
-  implicit class TopFilterEventMutableBuilder[Self <: TopFilterEvent] (val x: Self) extends AnyVal {
+  extension [Self <: TopFilterEvent](x: Self) {
     
-    @scala.inline
-    def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
+    inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
+    inline def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSender(value: TopFilter): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: TopFilter): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
   }
 }

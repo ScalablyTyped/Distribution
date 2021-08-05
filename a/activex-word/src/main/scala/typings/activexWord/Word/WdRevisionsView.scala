@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdRevisionsView extends StObject
 object WdRevisionsView {
   
-  @scala.inline
-  def wdRevisionsViewFinal: `0` = 0.asInstanceOf[`0`]
+  inline def wdRevisionsViewFinal: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdRevisionsViewOriginal: `1` = 1.asInstanceOf[`1`]
+  inline def wdRevisionsViewOriginal: `1` = 1.asInstanceOf[`1`]
 }

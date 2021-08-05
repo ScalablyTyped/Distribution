@@ -20,23 +20,18 @@ object indexedDbMod {
   }
   object IndexedImpl {
     
-    @scala.inline
-    def apply(DOMException: DOMException, IDBKeyRange: IDBKeyRange, indexedDB: IDBFactory): IndexedImpl = {
+    inline def apply(DOMException: DOMException, IDBKeyRange: IDBKeyRange, indexedDB: IDBFactory): IndexedImpl = {
       val __obj = js.Dynamic.literal(DOMException = DOMException.asInstanceOf[js.Any], IDBKeyRange = IDBKeyRange.asInstanceOf[js.Any], indexedDB = indexedDB.asInstanceOf[js.Any])
       __obj.asInstanceOf[IndexedImpl]
     }
     
-    @scala.inline
-    implicit class IndexedImplMutableBuilder[Self <: IndexedImpl] (val x: Self) extends AnyVal {
+    extension [Self <: IndexedImpl](x: Self) {
       
-      @scala.inline
-      def setDOMException(value: DOMException): Self = StObject.set(x, "DOMException", value.asInstanceOf[js.Any])
+      inline def setDOMException(value: DOMException): Self = StObject.set(x, "DOMException", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIDBKeyRange(value: IDBKeyRange): Self = StObject.set(x, "IDBKeyRange", value.asInstanceOf[js.Any])
+      inline def setIDBKeyRange(value: IDBKeyRange): Self = StObject.set(x, "IDBKeyRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexedDB(value: IDBFactory): Self = StObject.set(x, "indexedDB", value.asInstanceOf[js.Any])
+      inline def setIndexedDB(value: IDBFactory): Self = StObject.set(x, "indexedDB", value.asInstanceOf[js.Any])
     }
   }
 }

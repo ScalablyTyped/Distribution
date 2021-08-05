@@ -18,31 +18,23 @@ trait projectIdstringnumberundeDictkey
 }
 object projectIdstringnumberundeDictkey {
   
-  @scala.inline
-  def apply(): projectIdstringnumberundeDictkey = {
+  inline def apply(): projectIdstringnumberundeDictkey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[projectIdstringnumberundeDictkey]
   }
   
-  @scala.inline
-  implicit class projectIdstringnumberundeDictkeyMutableBuilder[Self <: projectIdstringnumberundeDictkey] (val x: Self) extends AnyVal {
+  extension [Self <: projectIdstringnumberundeDictkey](x: Self) {
     
-    @scala.inline
-    def setGroupId(value: String | Double): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: String | Double): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
+    inline def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String | Double): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String | Double): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
-    @scala.inline
-    def setSudo(value: String | Double): Self = StObject.set(x, "sudo", value.asInstanceOf[js.Any])
+    inline def setSudo(value: String | Double): Self = StObject.set(x, "sudo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSudoUndefined: Self = StObject.set(x, "sudo", js.undefined)
+    inline def setSudoUndefined: Self = StObject.set(x, "sudo", js.undefined)
   }
 }

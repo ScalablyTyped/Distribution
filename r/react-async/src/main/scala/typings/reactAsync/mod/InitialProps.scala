@@ -13,28 +13,21 @@ trait InitialProps[T] extends StObject {
 }
 object InitialProps {
   
-  @scala.inline
-  def apply[T](): InitialProps[T] = {
+  inline def apply[T](): InitialProps[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InitialProps[T]]
   }
   
-  @scala.inline
-  implicit class InitialPropsMutableBuilder[Self <: InitialProps[?], T] (val x: Self & InitialProps[T]) extends AnyVal {
+  extension [Self <: InitialProps[?], T](x: Self & InitialProps[T]) {
     
-    @scala.inline
-    def setChildren(value: InitialChildren[T]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: InitialChildren[T]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenFunction1(value: /* state */ AsyncInitial[T, AbstractState[T]] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+    inline def setChildrenFunction1(value: /* state */ AsyncInitial[T, AbstractState[T]] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setPersist(value: Boolean): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
+    inline def setPersist(value: Boolean): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersistUndefined: Self = StObject.set(x, "persist", js.undefined)
+    inline def setPersistUndefined: Self = StObject.set(x, "persist", js.undefined)
   }
 }

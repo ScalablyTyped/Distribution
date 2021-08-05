@@ -10,16 +10,13 @@ trait FileUrl extends StObject {
 }
 object FileUrl {
   
-  @scala.inline
-  def apply(fileUrl: String): FileUrl = {
+  inline def apply(fileUrl: String): FileUrl = {
     val __obj = js.Dynamic.literal(fileUrl = fileUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileUrl]
   }
   
-  @scala.inline
-  implicit class FileUrlMutableBuilder[Self <: FileUrl] (val x: Self) extends AnyVal {
+  extension [Self <: FileUrl](x: Self) {
     
-    @scala.inline
-    def setFileUrl(value: String): Self = StObject.set(x, "fileUrl", value.asInstanceOf[js.Any])
+    inline def setFileUrl(value: String): Self = StObject.set(x, "fileUrl", value.asInstanceOf[js.Any])
   }
 }

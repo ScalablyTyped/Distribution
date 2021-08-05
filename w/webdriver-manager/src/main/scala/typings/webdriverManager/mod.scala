@@ -24,50 +24,42 @@ object mod {
     @JSImport("webdriver-manager/built/lib/binaries", "AndroidSDK.DEFAULT_API_LEVELS")
     @js.native
     def DEFAULT_API_LEVELS: String = js.native
-    @scala.inline
-    def DEFAULT_API_LEVELS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_API_LEVELS")(x.asInstanceOf[js.Any])
+    inline def DEFAULT_API_LEVELS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_API_LEVELS")(x.asInstanceOf[js.Any])
     
     @JSImport("webdriver-manager/built/lib/binaries", "AndroidSDK.DEFAULT_ARCHITECTURES")
     @js.native
     def DEFAULT_ARCHITECTURES: String = js.native
-    @scala.inline
-    def DEFAULT_ARCHITECTURES_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_ARCHITECTURES")(x.asInstanceOf[js.Any])
+    inline def DEFAULT_ARCHITECTURES_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_ARCHITECTURES")(x.asInstanceOf[js.Any])
     
     @JSImport("webdriver-manager/built/lib/binaries", "AndroidSDK.DEFAULT_PLATFORMS")
     @js.native
     def DEFAULT_PLATFORMS: String = js.native
-    @scala.inline
-    def DEFAULT_PLATFORMS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_PLATFORMS")(x.asInstanceOf[js.Any])
+    inline def DEFAULT_PLATFORMS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_PLATFORMS")(x.asInstanceOf[js.Any])
     
     @JSImport("webdriver-manager/built/lib/binaries", "AndroidSDK.VERSIONS")
     @js.native
     def VERSIONS: NumberDictionary[String] = js.native
-    @scala.inline
-    def VERSIONS_=(x: NumberDictionary[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSIONS")(x.asInstanceOf[js.Any])
+    inline def VERSIONS_=(x: NumberDictionary[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSIONS")(x.asInstanceOf[js.Any])
     
     @JSImport("webdriver-manager/built/lib/binaries", "AndroidSDK.id")
     @js.native
     def id: String = js.native
-    @scala.inline
-    def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
+    inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
     
     @JSImport("webdriver-manager/built/lib/binaries", "AndroidSDK.isDefault")
     @js.native
     def isDefault: Boolean = js.native
-    @scala.inline
-    def isDefault_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isDefault")(x.asInstanceOf[js.Any])
+    inline def isDefault_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isDefault")(x.asInstanceOf[js.Any])
     
     @JSImport("webdriver-manager/built/lib/binaries", "AndroidSDK.os")
     @js.native
     def os: js.Array[OS] = js.native
-    @scala.inline
-    def os_=(x: js.Array[OS]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("os")(x.asInstanceOf[js.Any])
+    inline def os_=(x: js.Array[OS]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("os")(x.asInstanceOf[js.Any])
     
     @JSImport("webdriver-manager/built/lib/binaries", "AndroidSDK.versionDefault")
     @js.native
     def versionDefault: String = js.native
-    @scala.inline
-    def versionDefault_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionDefault")(x.asInstanceOf[js.Any])
+    inline def versionDefault_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionDefault")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("webdriver-manager/built/lib/binaries", "Appium")
@@ -86,26 +78,22 @@ object mod {
     @JSImport("webdriver-manager/built/lib/binaries", "Appium.id")
     @js.native
     def id: String = js.native
-    @scala.inline
-    def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
+    inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
     
     @JSImport("webdriver-manager/built/lib/binaries", "Appium.isDefault")
     @js.native
     def isDefault: Boolean = js.native
-    @scala.inline
-    def isDefault_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isDefault")(x.asInstanceOf[js.Any])
+    inline def isDefault_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isDefault")(x.asInstanceOf[js.Any])
     
     @JSImport("webdriver-manager/built/lib/binaries", "Appium.os")
     @js.native
     def os: js.Array[OS] = js.native
-    @scala.inline
-    def os_=(x: js.Array[OS]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("os")(x.asInstanceOf[js.Any])
+    inline def os_=(x: js.Array[OS]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("os")(x.asInstanceOf[js.Any])
     
     @JSImport("webdriver-manager/built/lib/binaries", "Appium.versionDefault")
     @js.native
     def versionDefault: String = js.native
-    @scala.inline
-    def versionDefault_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionDefault")(x.asInstanceOf[js.Any])
+    inline def versionDefault_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionDefault")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("webdriver-manager/built/lib/binaries", "Binary")
@@ -124,8 +112,7 @@ object mod {
     @JSImport("webdriver-manager/built/lib/binaries", "Binary.os")
     @js.native
     def os: js.Array[OS] = js.native
-    @scala.inline
-    def os_=(x: js.Array[OS]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("os")(x.asInstanceOf[js.Any])
+    inline def os_=(x: js.Array[OS]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("os")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("webdriver-manager/built/lib/binaries", "ChromeDriver")
@@ -144,26 +131,22 @@ object mod {
     @JSImport("webdriver-manager/built/lib/binaries", "ChromeDriver.id")
     @js.native
     def id: String = js.native
-    @scala.inline
-    def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
+    inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
     
     @JSImport("webdriver-manager/built/lib/binaries", "ChromeDriver.isDefault")
     @js.native
     def isDefault: Boolean = js.native
-    @scala.inline
-    def isDefault_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isDefault")(x.asInstanceOf[js.Any])
+    inline def isDefault_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isDefault")(x.asInstanceOf[js.Any])
     
     @JSImport("webdriver-manager/built/lib/binaries", "ChromeDriver.os")
     @js.native
     def os: js.Array[OS] = js.native
-    @scala.inline
-    def os_=(x: js.Array[OS]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("os")(x.asInstanceOf[js.Any])
+    inline def os_=(x: js.Array[OS]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("os")(x.asInstanceOf[js.Any])
     
     @JSImport("webdriver-manager/built/lib/binaries", "ChromeDriver.versionDefault")
     @js.native
     def versionDefault: String = js.native
-    @scala.inline
-    def versionDefault_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionDefault")(x.asInstanceOf[js.Any])
+    inline def versionDefault_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionDefault")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("webdriver-manager/built/lib/binaries", "GeckoDriver")
@@ -182,32 +165,27 @@ object mod {
     @JSImport("webdriver-manager/built/lib/binaries", "GeckoDriver.id")
     @js.native
     def id: String = js.native
-    @scala.inline
-    def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
+    inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
     
     @JSImport("webdriver-manager/built/lib/binaries", "GeckoDriver.isDefault")
     @js.native
     def isDefault: Boolean = js.native
-    @scala.inline
-    def isDefault_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isDefault")(x.asInstanceOf[js.Any])
+    inline def isDefault_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isDefault")(x.asInstanceOf[js.Any])
     
     @JSImport("webdriver-manager/built/lib/binaries", "GeckoDriver.os")
     @js.native
     def os: js.Array[OS] = js.native
-    @scala.inline
-    def os_=(x: js.Array[OS]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("os")(x.asInstanceOf[js.Any])
+    inline def os_=(x: js.Array[OS]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("os")(x.asInstanceOf[js.Any])
     
     @JSImport("webdriver-manager/built/lib/binaries", "GeckoDriver.suffixes")
     @js.native
     def suffixes: js.Any = js.native
-    @scala.inline
-    def suffixes_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("suffixes")(x.asInstanceOf[js.Any])
+    inline def suffixes_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("suffixes")(x.asInstanceOf[js.Any])
     
     @JSImport("webdriver-manager/built/lib/binaries", "GeckoDriver.versionDefault")
     @js.native
     def versionDefault: String = js.native
-    @scala.inline
-    def versionDefault_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionDefault")(x.asInstanceOf[js.Any])
+    inline def versionDefault_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionDefault")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("webdriver-manager/built/lib/binaries", "IEDriver")
@@ -226,32 +204,27 @@ object mod {
     @JSImport("webdriver-manager/built/lib/binaries", "IEDriver.id")
     @js.native
     def id: String = js.native
-    @scala.inline
-    def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
+    inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
     
     @JSImport("webdriver-manager/built/lib/binaries", "IEDriver.isDefault32")
     @js.native
     def isDefault32: Boolean = js.native
-    @scala.inline
-    def isDefault32_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isDefault32")(x.asInstanceOf[js.Any])
+    inline def isDefault32_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isDefault32")(x.asInstanceOf[js.Any])
     
     @JSImport("webdriver-manager/built/lib/binaries", "IEDriver.isDefault64")
     @js.native
     def isDefault64: Boolean = js.native
-    @scala.inline
-    def isDefault64_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isDefault64")(x.asInstanceOf[js.Any])
+    inline def isDefault64_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isDefault64")(x.asInstanceOf[js.Any])
     
     @JSImport("webdriver-manager/built/lib/binaries", "IEDriver.os")
     @js.native
     def os: js.Array[OS] = js.native
-    @scala.inline
-    def os_=(x: js.Array[OS]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("os")(x.asInstanceOf[js.Any])
+    inline def os_=(x: js.Array[OS]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("os")(x.asInstanceOf[js.Any])
     
     @JSImport("webdriver-manager/built/lib/binaries", "IEDriver.versionDefault")
     @js.native
     def versionDefault: String = js.native
-    @scala.inline
-    def versionDefault_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionDefault")(x.asInstanceOf[js.Any])
+    inline def versionDefault_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionDefault")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("webdriver-manager/built/lib/binaries", "OS")
@@ -284,25 +257,21 @@ object mod {
     @JSImport("webdriver-manager/built/lib/binaries", "Standalone.id")
     @js.native
     def id: String = js.native
-    @scala.inline
-    def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
+    inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
     
     @JSImport("webdriver-manager/built/lib/binaries", "Standalone.isDefault")
     @js.native
     def isDefault: Boolean = js.native
-    @scala.inline
-    def isDefault_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isDefault")(x.asInstanceOf[js.Any])
+    inline def isDefault_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isDefault")(x.asInstanceOf[js.Any])
     
     @JSImport("webdriver-manager/built/lib/binaries", "Standalone.os")
     @js.native
     def os: js.Array[OS] = js.native
-    @scala.inline
-    def os_=(x: js.Array[OS]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("os")(x.asInstanceOf[js.Any])
+    inline def os_=(x: js.Array[OS]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("os")(x.asInstanceOf[js.Any])
     
     @JSImport("webdriver-manager/built/lib/binaries", "Standalone.versionDefault")
     @js.native
     def versionDefault: String = js.native
-    @scala.inline
-    def versionDefault_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionDefault")(x.asInstanceOf[js.Any])
+    inline def versionDefault_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionDefault")(x.asInstanceOf[js.Any])
   }
 }

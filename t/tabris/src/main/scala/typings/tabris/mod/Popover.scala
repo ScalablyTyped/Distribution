@@ -79,6 +79,5 @@ object Popover {
     * given JSX element from `any` to an actual Popover.
     * @param popover The popover to open
     */
-  @scala.inline
-  def open(popover: Popover): Popover = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(popover.asInstanceOf[js.Any]).asInstanceOf[Popover]
+  inline def open(popover: Popover): Popover = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(popover.asInstanceOf[js.Any]).asInstanceOf[Popover]
 }

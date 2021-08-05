@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait svgMarkerUnits extends StObject
 object svgMarkerUnits {
   
-  @scala.inline
-  def SVG_MARKERUNITS_STROKEWIDTH: `2` = 2.asInstanceOf[`2`]
+  inline def SVG_MARKERUNITS_STROKEWIDTH: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def SVG_MARKERUNITS_UNKNOWN: `0` = 0.asInstanceOf[`0`]
+  inline def SVG_MARKERUNITS_UNKNOWN: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def SVG_MARKERUNITS_USERSPACEONUSE: `1` = 1.asInstanceOf[`1`]
+  inline def SVG_MARKERUNITS_USERSPACEONUSE: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def svgMarkerUnits_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def svgMarkerUnits_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

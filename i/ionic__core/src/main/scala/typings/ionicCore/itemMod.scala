@@ -34,9 +34,9 @@ object itemMod {
       */
     var button: Boolean = js.native
     
-    var canActivate: js.Any = js.native
+    /* private */ var canActivate: js.Any = js.native
     
-    var clickListener: js.Any = js.native
+    /* private */ var clickListener: js.Any = js.native
     
     /**
       * The color to use from your application's color palette.
@@ -51,7 +51,7 @@ object itemMod {
     @JSName("componentDidUpdate")
     def componentDidUpdate_MItem(): Unit = js.native
     
-    var delegateFocus: js.Any = js.native
+    /* private */ var delegateFocus: js.Any = js.native
     
     /**
       * If `true`, a detail arrow will appear on the item. Defaults to `false` unless the `mode`
@@ -72,19 +72,19 @@ object itemMod {
     
     var el: HTMLIonItemElement = js.native
     
-    var getFirstInput: js.Any = js.native
+    /* private */ var getFirstInput: js.Any = js.native
     
-    var hasCover: js.Any = js.native
+    /* private */ var hasCover: js.Any = js.native
     
-    var isClickable: js.Any = js.native
+    /* private */ var isClickable: js.Any = js.native
     
     def itemStyle(ev: CustomEvent[StyleEventDetail]): Unit = js.native
     
-    var itemStyles: js.Any = js.native
+    /* private */ var itemStyles: js.Any = js.native
     
     def labelColorChanged(ev: CustomEvent[String]): Unit = js.native
     
-    var labelColorStyles: js.Any = js.native
+    /* private */ var labelColorStyles: js.Any = js.native
     
     /**
       * How the bottom border should be displayed on the item.
@@ -108,7 +108,7 @@ object itemMod {
       */
     var routerDirection: RouterDirection = js.native
     
-    var setMultipleInputs: js.Any = js.native
+    /* private */ var setMultipleInputs: js.Any = js.native
     
     /* CompleteClass */
     var `type`: submit | reset | button = js.native

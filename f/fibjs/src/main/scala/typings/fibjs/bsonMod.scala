@@ -16,9 +16,7 @@ object bsonMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def decode(data: ClassBuffer): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(data.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  inline def decode(data: ClassBuffer): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(data.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
-  @scala.inline
-  def encode(data: js.Object): ClassBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(data.asInstanceOf[js.Any]).asInstanceOf[ClassBuffer]
+  inline def encode(data: js.Object): ClassBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(data.asInstanceOf[js.Any]).asInstanceOf[ClassBuffer]
 }

@@ -18,26 +18,20 @@ object mod {
   }
   object StyleHTMLAttributes {
     
-    @scala.inline
-    def apply[T](): StyleHTMLAttributes[T] = {
+    inline def apply[T](): StyleHTMLAttributes[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StyleHTMLAttributes[T]]
     }
     
-    @scala.inline
-    implicit class StyleHTMLAttributesMutableBuilder[Self <: StyleHTMLAttributes[?], T] (val x: Self & StyleHTMLAttributes[T]) extends AnyVal {
+    extension [Self <: StyleHTMLAttributes[?], T](x: Self & StyleHTMLAttributes[T]) {
       
-      @scala.inline
-      def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+      inline def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
+      inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
       
-      @scala.inline
-      def setJsx(value: Boolean): Self = StObject.set(x, "jsx", value.asInstanceOf[js.Any])
+      inline def setJsx(value: Boolean): Self = StObject.set(x, "jsx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsxUndefined: Self = StObject.set(x, "jsx", js.undefined)
+      inline def setJsxUndefined: Self = StObject.set(x, "jsx", js.undefined)
     }
   }
 }

@@ -22,49 +22,35 @@ trait ITestResult extends StObject {
 }
 object ITestResult {
   
-  @scala.inline
-  def apply(): ITestResult = {
+  inline def apply(): ITestResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITestResult]
   }
   
-  @scala.inline
-  implicit class ITestResultMutableBuilder[Self <: ITestResult] (val x: Self) extends AnyVal {
+  extension [Self <: ITestResult](x: Self) {
     
-    @scala.inline
-    def setDuration(value: IDuration): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: IDuration): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationNull: Self = StObject.set(x, "duration", null)
+    inline def setDurationNull: Self = StObject.set(x, "duration", null)
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageNull: Self = StObject.set(x, "message", null)
+    inline def setMessageNull: Self = StObject.set(x, "message", null)
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusNull: Self = StObject.set(x, "status", null)
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setWillBeRetried(value: Boolean): Self = StObject.set(x, "willBeRetried", value.asInstanceOf[js.Any])
+    inline def setWillBeRetried(value: Boolean): Self = StObject.set(x, "willBeRetried", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWillBeRetriedNull: Self = StObject.set(x, "willBeRetried", null)
+    inline def setWillBeRetriedNull: Self = StObject.set(x, "willBeRetried", null)
     
-    @scala.inline
-    def setWillBeRetriedUndefined: Self = StObject.set(x, "willBeRetried", js.undefined)
+    inline def setWillBeRetriedUndefined: Self = StObject.set(x, "willBeRetried", js.undefined)
   }
 }

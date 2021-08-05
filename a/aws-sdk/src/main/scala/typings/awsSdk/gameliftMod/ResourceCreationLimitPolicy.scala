@@ -18,25 +18,19 @@ trait ResourceCreationLimitPolicy extends StObject {
 }
 object ResourceCreationLimitPolicy {
   
-  @scala.inline
-  def apply(): ResourceCreationLimitPolicy = {
+  inline def apply(): ResourceCreationLimitPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceCreationLimitPolicy]
   }
   
-  @scala.inline
-  implicit class ResourceCreationLimitPolicyMutableBuilder[Self <: ResourceCreationLimitPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceCreationLimitPolicy](x: Self) {
     
-    @scala.inline
-    def setNewGameSessionsPerCreator(value: WholeNumber): Self = StObject.set(x, "NewGameSessionsPerCreator", value.asInstanceOf[js.Any])
+    inline def setNewGameSessionsPerCreator(value: WholeNumber): Self = StObject.set(x, "NewGameSessionsPerCreator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewGameSessionsPerCreatorUndefined: Self = StObject.set(x, "NewGameSessionsPerCreator", js.undefined)
+    inline def setNewGameSessionsPerCreatorUndefined: Self = StObject.set(x, "NewGameSessionsPerCreator", js.undefined)
     
-    @scala.inline
-    def setPolicyPeriodInMinutes(value: WholeNumber): Self = StObject.set(x, "PolicyPeriodInMinutes", value.asInstanceOf[js.Any])
+    inline def setPolicyPeriodInMinutes(value: WholeNumber): Self = StObject.set(x, "PolicyPeriodInMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyPeriodInMinutesUndefined: Self = StObject.set(x, "PolicyPeriodInMinutes", js.undefined)
+    inline def setPolicyPeriodInMinutesUndefined: Self = StObject.set(x, "PolicyPeriodInMinutes", js.undefined)
   }
 }

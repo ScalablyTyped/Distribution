@@ -17,40 +17,29 @@ trait GroupEncodeEntry
 }
 object GroupEncodeEntry {
   
-  @scala.inline
-  def apply(): GroupEncodeEntry = {
+  inline def apply(): GroupEncodeEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GroupEncodeEntry]
   }
   
-  @scala.inline
-  implicit class GroupEncodeEntryMutableBuilder[Self <: GroupEncodeEntry] (val x: Self) extends AnyVal {
+  extension [Self <: GroupEncodeEntry](x: Self) {
     
-    @scala.inline
-    def setClip(value: ProductionRule[BooleanValueRef]): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
+    inline def setClip(value: ProductionRule[BooleanValueRef]): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
+    inline def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
     
-    @scala.inline
-    def setClipVarargs(value: (Test & BooleanValueRef)*): Self = StObject.set(x, "clip", js.Array(value :_*))
+    inline def setClipVarargs(value: (Test & BooleanValueRef)*): Self = StObject.set(x, "clip", js.Array(value :_*))
     
-    @scala.inline
-    def setStrokeForeground(value: ProductionRule[BooleanValueRef]): Self = StObject.set(x, "strokeForeground", value.asInstanceOf[js.Any])
+    inline def setStrokeForeground(value: ProductionRule[BooleanValueRef]): Self = StObject.set(x, "strokeForeground", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeForegroundUndefined: Self = StObject.set(x, "strokeForeground", js.undefined)
+    inline def setStrokeForegroundUndefined: Self = StObject.set(x, "strokeForeground", js.undefined)
     
-    @scala.inline
-    def setStrokeForegroundVarargs(value: (Test & BooleanValueRef)*): Self = StObject.set(x, "strokeForeground", js.Array(value :_*))
+    inline def setStrokeForegroundVarargs(value: (Test & BooleanValueRef)*): Self = StObject.set(x, "strokeForeground", js.Array(value :_*))
     
-    @scala.inline
-    def setStrokeOffset(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "strokeOffset", value.asInstanceOf[js.Any])
+    inline def setStrokeOffset(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "strokeOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeOffsetUndefined: Self = StObject.set(x, "strokeOffset", js.undefined)
+    inline def setStrokeOffsetUndefined: Self = StObject.set(x, "strokeOffset", js.undefined)
     
-    @scala.inline
-    def setStrokeOffsetVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "strokeOffset", js.Array(value :_*))
+    inline def setStrokeOffsetVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "strokeOffset", js.Array(value :_*))
   }
 }

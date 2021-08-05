@@ -15,17 +15,14 @@ object typesMod {
   }
   object Detector {
     
-    @scala.inline
-    def apply(detect: ResourceDetectionConfigWithLogger => js.Promise[Resource]): Detector = {
+    inline def apply(detect: ResourceDetectionConfigWithLogger => js.Promise[Resource]): Detector = {
       val __obj = js.Dynamic.literal(detect = js.Any.fromFunction1(detect))
       __obj.asInstanceOf[Detector]
     }
     
-    @scala.inline
-    implicit class DetectorMutableBuilder[Self <: Detector] (val x: Self) extends AnyVal {
+    extension [Self <: Detector](x: Self) {
       
-      @scala.inline
-      def setDetect(value: ResourceDetectionConfigWithLogger => js.Promise[Resource]): Self = StObject.set(x, "detect", js.Any.fromFunction1(value))
+      inline def setDetect(value: ResourceDetectionConfigWithLogger => js.Promise[Resource]): Self = StObject.set(x, "detect", js.Any.fromFunction1(value))
     }
   }
   

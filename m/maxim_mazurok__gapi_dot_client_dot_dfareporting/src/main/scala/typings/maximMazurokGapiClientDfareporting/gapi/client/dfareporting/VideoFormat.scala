@@ -23,43 +23,31 @@ trait VideoFormat extends StObject {
 }
 object VideoFormat {
   
-  @scala.inline
-  def apply(): VideoFormat = {
+  inline def apply(): VideoFormat = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VideoFormat]
   }
   
-  @scala.inline
-  implicit class VideoFormatMutableBuilder[Self <: VideoFormat] (val x: Self) extends AnyVal {
+  extension [Self <: VideoFormat](x: Self) {
     
-    @scala.inline
-    def setFileType(value: String): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
+    inline def setFileType(value: String): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
+    inline def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setResolution(value: Size): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
+    inline def setResolution(value: Size): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
+    inline def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
     
-    @scala.inline
-    def setTargetBitRate(value: Double): Self = StObject.set(x, "targetBitRate", value.asInstanceOf[js.Any])
+    inline def setTargetBitRate(value: Double): Self = StObject.set(x, "targetBitRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetBitRateUndefined: Self = StObject.set(x, "targetBitRate", js.undefined)
+    inline def setTargetBitRateUndefined: Self = StObject.set(x, "targetBitRate", js.undefined)
   }
 }

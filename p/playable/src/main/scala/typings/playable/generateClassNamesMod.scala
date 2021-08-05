@@ -12,6 +12,5 @@ object generateClassNamesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(rules: ICSSRules): IStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(rules.asInstanceOf[js.Any]).asInstanceOf[IStyles]
+  inline def default(rules: ICSSRules): IStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(rules.asInstanceOf[js.Any]).asInstanceOf[IStyles]
 }

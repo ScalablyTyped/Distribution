@@ -18,22 +18,17 @@ trait BatchDisassociateApprovalRuleTemplateFromRepositoriesInput extends StObjec
 }
 object BatchDisassociateApprovalRuleTemplateFromRepositoriesInput {
   
-  @scala.inline
-  def apply(approvalRuleTemplateName: ApprovalRuleTemplateName, repositoryNames: RepositoryNameList): BatchDisassociateApprovalRuleTemplateFromRepositoriesInput = {
+  inline def apply(approvalRuleTemplateName: ApprovalRuleTemplateName, repositoryNames: RepositoryNameList): BatchDisassociateApprovalRuleTemplateFromRepositoriesInput = {
     val __obj = js.Dynamic.literal(approvalRuleTemplateName = approvalRuleTemplateName.asInstanceOf[js.Any], repositoryNames = repositoryNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchDisassociateApprovalRuleTemplateFromRepositoriesInput]
   }
   
-  @scala.inline
-  implicit class BatchDisassociateApprovalRuleTemplateFromRepositoriesInputMutableBuilder[Self <: BatchDisassociateApprovalRuleTemplateFromRepositoriesInput] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDisassociateApprovalRuleTemplateFromRepositoriesInput](x: Self) {
     
-    @scala.inline
-    def setApprovalRuleTemplateName(value: ApprovalRuleTemplateName): Self = StObject.set(x, "approvalRuleTemplateName", value.asInstanceOf[js.Any])
+    inline def setApprovalRuleTemplateName(value: ApprovalRuleTemplateName): Self = StObject.set(x, "approvalRuleTemplateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryNames(value: RepositoryNameList): Self = StObject.set(x, "repositoryNames", value.asInstanceOf[js.Any])
+    inline def setRepositoryNames(value: RepositoryNameList): Self = StObject.set(x, "repositoryNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryNamesVarargs(value: RepositoryName*): Self = StObject.set(x, "repositoryNames", js.Array(value :_*))
+    inline def setRepositoryNamesVarargs(value: RepositoryName*): Self = StObject.set(x, "repositoryNames", js.Array(value :_*))
   }
 }

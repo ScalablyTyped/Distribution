@@ -15,19 +15,15 @@ trait TypeofDetailButton extends StObject {
 }
 object TypeofDetailButton {
   
-  @scala.inline
-  def apply(extend: js.Object => DetailButton, fn: DetailButton): TypeofDetailButton = {
+  inline def apply(extend: js.Object => DetailButton, fn: DetailButton): TypeofDetailButton = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofDetailButton]
   }
   
-  @scala.inline
-  implicit class TypeofDetailButtonMutableBuilder[Self <: TypeofDetailButton] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofDetailButton](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => DetailButton): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => DetailButton): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: DetailButton): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: DetailButton): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

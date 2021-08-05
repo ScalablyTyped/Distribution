@@ -13,19 +13,15 @@ trait DeregisterTransitGatewayResponse extends StObject {
 }
 object DeregisterTransitGatewayResponse {
   
-  @scala.inline
-  def apply(): DeregisterTransitGatewayResponse = {
+  inline def apply(): DeregisterTransitGatewayResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeregisterTransitGatewayResponse]
   }
   
-  @scala.inline
-  implicit class DeregisterTransitGatewayResponseMutableBuilder[Self <: DeregisterTransitGatewayResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeregisterTransitGatewayResponse](x: Self) {
     
-    @scala.inline
-    def setTransitGatewayRegistration(value: TransitGatewayRegistration): Self = StObject.set(x, "TransitGatewayRegistration", value.asInstanceOf[js.Any])
+    inline def setTransitGatewayRegistration(value: TransitGatewayRegistration): Self = StObject.set(x, "TransitGatewayRegistration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitGatewayRegistrationUndefined: Self = StObject.set(x, "TransitGatewayRegistration", js.undefined)
+    inline def setTransitGatewayRegistrationUndefined: Self = StObject.set(x, "TransitGatewayRegistration", js.undefined)
   }
 }

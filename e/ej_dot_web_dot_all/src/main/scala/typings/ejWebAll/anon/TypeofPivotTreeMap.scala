@@ -15,19 +15,15 @@ trait TypeofPivotTreeMap extends StObject {
 }
 object TypeofPivotTreeMap {
   
-  @scala.inline
-  def apply(Locale: js.Any, fn: PivotTreeMap): TypeofPivotTreeMap = {
+  inline def apply(Locale: js.Any, fn: PivotTreeMap): TypeofPivotTreeMap = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofPivotTreeMap]
   }
   
-  @scala.inline
-  implicit class TypeofPivotTreeMapMutableBuilder[Self <: TypeofPivotTreeMap] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofPivotTreeMap](x: Self) {
     
-    @scala.inline
-    def setFn(value: PivotTreeMap): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: PivotTreeMap): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TransitionEventType extends StObject
 object TransitionEventType {
   
-  @scala.inline
-  def animationend: typings.weixinApp.weixinAppStrings.animationend = "animationend".asInstanceOf[typings.weixinApp.weixinAppStrings.animationend]
+  inline def animationend: typings.weixinApp.weixinAppStrings.animationend = "animationend".asInstanceOf[typings.weixinApp.weixinAppStrings.animationend]
   
-  @scala.inline
-  def animationiteration: typings.weixinApp.weixinAppStrings.animationiteration = "animationiteration".asInstanceOf[typings.weixinApp.weixinAppStrings.animationiteration]
+  inline def animationiteration: typings.weixinApp.weixinAppStrings.animationiteration = "animationiteration".asInstanceOf[typings.weixinApp.weixinAppStrings.animationiteration]
   
-  @scala.inline
-  def animationstart: typings.weixinApp.weixinAppStrings.animationstart = "animationstart".asInstanceOf[typings.weixinApp.weixinAppStrings.animationstart]
+  inline def animationstart: typings.weixinApp.weixinAppStrings.animationstart = "animationstart".asInstanceOf[typings.weixinApp.weixinAppStrings.animationstart]
   
-  @scala.inline
-  def transitionend: typings.weixinApp.weixinAppStrings.transitionend = "transitionend".asInstanceOf[typings.weixinApp.weixinAppStrings.transitionend]
+  inline def transitionend: typings.weixinApp.weixinAppStrings.transitionend = "transitionend".asInstanceOf[typings.weixinApp.weixinAppStrings.transitionend]
 }

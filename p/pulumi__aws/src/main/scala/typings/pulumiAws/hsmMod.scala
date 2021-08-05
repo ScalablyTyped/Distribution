@@ -75,21 +75,16 @@ object hsmMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Hsm = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Hsm]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Hsm = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hsm]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: HsmState): Hsm = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Hsm]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: HsmState, opts: CustomResourceOptions): Hsm = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hsm]
+    inline def get(name: String, id: Input[ID]): Hsm = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Hsm]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Hsm = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hsm]
+    inline def get(name: String, id: Input[ID], state: HsmState): Hsm = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Hsm]
+    inline def get(name: String, id: Input[ID], state: HsmState, opts: CustomResourceOptions): Hsm = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hsm]
     
     /**
       * Returns true if the given object is an instance of Hsm.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudhsmv2/hsm.Hsm */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudhsmv2/hsm.Hsm */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudhsmv2/hsm.Hsm */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudhsmv2/hsm.Hsm */ Boolean]
   }
   
   trait HsmArgs extends StObject {
@@ -116,35 +111,26 @@ object hsmMod {
   }
   object HsmArgs {
     
-    @scala.inline
-    def apply(clusterId: Input[String]): HsmArgs = {
+    inline def apply(clusterId: Input[String]): HsmArgs = {
       val __obj = js.Dynamic.literal(clusterId = clusterId.asInstanceOf[js.Any])
       __obj.asInstanceOf[HsmArgs]
     }
     
-    @scala.inline
-    implicit class HsmArgsMutableBuilder[Self <: HsmArgs] (val x: Self) extends AnyVal {
+    extension [Self <: HsmArgs](x: Self) {
       
-      @scala.inline
-      def setAvailabilityZone(value: Input[String]): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
+      inline def setAvailabilityZone(value: Input[String]): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailabilityZoneUndefined: Self = StObject.set(x, "availabilityZone", js.undefined)
+      inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "availabilityZone", js.undefined)
       
-      @scala.inline
-      def setClusterId(value: Input[String]): Self = StObject.set(x, "clusterId", value.asInstanceOf[js.Any])
+      inline def setClusterId(value: Input[String]): Self = StObject.set(x, "clusterId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpAddress(value: Input[String]): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
+      inline def setIpAddress(value: Input[String]): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
+      inline def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
       
-      @scala.inline
-      def setSubnetId(value: Input[String]): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
+      inline def setSubnetId(value: Input[String]): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetIdUndefined: Self = StObject.set(x, "subnetId", js.undefined)
+      inline def setSubnetIdUndefined: Self = StObject.set(x, "subnetId", js.undefined)
     }
   }
   
@@ -187,56 +173,40 @@ object hsmMod {
   }
   object HsmState {
     
-    @scala.inline
-    def apply(): HsmState = {
+    inline def apply(): HsmState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HsmState]
     }
     
-    @scala.inline
-    implicit class HsmStateMutableBuilder[Self <: HsmState] (val x: Self) extends AnyVal {
+    extension [Self <: HsmState](x: Self) {
       
-      @scala.inline
-      def setAvailabilityZone(value: Input[String]): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
+      inline def setAvailabilityZone(value: Input[String]): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailabilityZoneUndefined: Self = StObject.set(x, "availabilityZone", js.undefined)
+      inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "availabilityZone", js.undefined)
       
-      @scala.inline
-      def setClusterId(value: Input[String]): Self = StObject.set(x, "clusterId", value.asInstanceOf[js.Any])
+      inline def setClusterId(value: Input[String]): Self = StObject.set(x, "clusterId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterIdUndefined: Self = StObject.set(x, "clusterId", js.undefined)
+      inline def setClusterIdUndefined: Self = StObject.set(x, "clusterId", js.undefined)
       
-      @scala.inline
-      def setHsmEniId(value: Input[String]): Self = StObject.set(x, "hsmEniId", value.asInstanceOf[js.Any])
+      inline def setHsmEniId(value: Input[String]): Self = StObject.set(x, "hsmEniId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHsmEniIdUndefined: Self = StObject.set(x, "hsmEniId", js.undefined)
+      inline def setHsmEniIdUndefined: Self = StObject.set(x, "hsmEniId", js.undefined)
       
-      @scala.inline
-      def setHsmId(value: Input[String]): Self = StObject.set(x, "hsmId", value.asInstanceOf[js.Any])
+      inline def setHsmId(value: Input[String]): Self = StObject.set(x, "hsmId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHsmIdUndefined: Self = StObject.set(x, "hsmId", js.undefined)
+      inline def setHsmIdUndefined: Self = StObject.set(x, "hsmId", js.undefined)
       
-      @scala.inline
-      def setHsmState(value: Input[String]): Self = StObject.set(x, "hsmState", value.asInstanceOf[js.Any])
+      inline def setHsmState(value: Input[String]): Self = StObject.set(x, "hsmState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHsmStateUndefined: Self = StObject.set(x, "hsmState", js.undefined)
+      inline def setHsmStateUndefined: Self = StObject.set(x, "hsmState", js.undefined)
       
-      @scala.inline
-      def setIpAddress(value: Input[String]): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
+      inline def setIpAddress(value: Input[String]): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
+      inline def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
       
-      @scala.inline
-      def setSubnetId(value: Input[String]): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
+      inline def setSubnetId(value: Input[String]): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetIdUndefined: Self = StObject.set(x, "subnetId", js.undefined)
+      inline def setSubnetIdUndefined: Self = StObject.set(x, "subnetId", js.undefined)
     }
   }
 }

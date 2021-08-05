@@ -28,25 +28,19 @@ trait ConfigMapProjection extends StObject {
 }
 object ConfigMapProjection {
   
-  @scala.inline
-  def apply(items: js.Array[KeyToPath], name: String, optional: Boolean): ConfigMapProjection = {
+  inline def apply(items: js.Array[KeyToPath], name: String, optional: Boolean): ConfigMapProjection = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigMapProjection]
   }
   
-  @scala.inline
-  implicit class ConfigMapProjectionMutableBuilder[Self <: ConfigMapProjection] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigMapProjection](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[KeyToPath]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[KeyToPath]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: KeyToPath*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: KeyToPath*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
   }
 }

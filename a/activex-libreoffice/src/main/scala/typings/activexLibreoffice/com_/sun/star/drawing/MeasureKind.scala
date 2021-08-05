@@ -18,8 +18,7 @@ trait MeasureKind extends StObject
 object MeasureKind {
   
   /** use the radius measurement. This option cannot be used from the GUI Interface. */
-  @scala.inline
-  def RADIUS: `1` = 1.asInstanceOf[`1`]
+  inline def RADIUS: `1` = 1.asInstanceOf[`1`]
   
   /**
     * the graphic is rendered in the default color style of the output device,
@@ -28,6 +27,5 @@ object MeasureKind {
     *
     * use the length measurement.
     */
-  @scala.inline
-  def STANDARD: `0` = 0.asInstanceOf[`0`]
+  inline def STANDARD: `0` = 0.asInstanceOf[`0`]
 }

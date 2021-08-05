@@ -14,25 +14,19 @@ trait SyncResponse extends StObject {
 }
 object SyncResponse {
   
-  @scala.inline
-  def apply(): SyncResponse = {
+  inline def apply(): SyncResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SyncResponse]
   }
   
-  @scala.inline
-  implicit class SyncResponseMutableBuilder[Self <: SyncResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SyncResponse](x: Self) {
     
-    @scala.inline
-    def setPayload(value: SyncResponsePayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: SyncResponsePayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
   }
 }

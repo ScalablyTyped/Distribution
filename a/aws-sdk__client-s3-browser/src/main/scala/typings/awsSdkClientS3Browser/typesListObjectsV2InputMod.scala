@@ -116,109 +116,76 @@ object typesListObjectsV2InputMod {
   }
   object ListObjectsV2Input {
     
-    @scala.inline
-    def apply(Bucket: String): ListObjectsV2Input = {
+    inline def apply(Bucket: String): ListObjectsV2Input = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListObjectsV2Input]
     }
     
-    @scala.inline
-    implicit class ListObjectsV2InputMutableBuilder[Self <: ListObjectsV2Input] (val x: Self) extends AnyVal {
+    extension [Self <: ListObjectsV2Input](x: Self) {
       
-      @scala.inline
-      def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
+      inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
+      inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
-      @scala.inline
-      def set$bucketEndpoint(value: String): Self = StObject.set(x, "$bucketEndpoint", value.asInstanceOf[js.Any])
+      inline def set$bucketEndpoint(value: String): Self = StObject.set(x, "$bucketEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$bucketEndpointUndefined: Self = StObject.set(x, "$bucketEndpoint", js.undefined)
+      inline def set$bucketEndpointUndefined: Self = StObject.set(x, "$bucketEndpoint", js.undefined)
       
-      @scala.inline
-      def set$forcePathStyle(value: Boolean): Self = StObject.set(x, "$forcePathStyle", value.asInstanceOf[js.Any])
+      inline def set$forcePathStyle(value: Boolean): Self = StObject.set(x, "$forcePathStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$forcePathStyleUndefined: Self = StObject.set(x, "$forcePathStyle", js.undefined)
+      inline def set$forcePathStyleUndefined: Self = StObject.set(x, "$forcePathStyle", js.undefined)
       
-      @scala.inline
-      def set$httpOptions(
+      inline def set$httpOptions(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
+      inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
       
-      @scala.inline
-      def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
+      inline def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
+      inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
-      @scala.inline
-      def set$useAccelerateEndpoint(value: Boolean): Self = StObject.set(x, "$useAccelerateEndpoint", value.asInstanceOf[js.Any])
+      inline def set$useAccelerateEndpoint(value: Boolean): Self = StObject.set(x, "$useAccelerateEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$useAccelerateEndpointUndefined: Self = StObject.set(x, "$useAccelerateEndpoint", js.undefined)
+      inline def set$useAccelerateEndpointUndefined: Self = StObject.set(x, "$useAccelerateEndpoint", js.undefined)
       
-      @scala.inline
-      def set$useDualstackEndpoint(value: Boolean): Self = StObject.set(x, "$useDualstackEndpoint", value.asInstanceOf[js.Any])
+      inline def set$useDualstackEndpoint(value: Boolean): Self = StObject.set(x, "$useDualstackEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$useDualstackEndpointUndefined: Self = StObject.set(x, "$useDualstackEndpoint", js.undefined)
+      inline def set$useDualstackEndpointUndefined: Self = StObject.set(x, "$useDualstackEndpoint", js.undefined)
       
-      @scala.inline
-      def setBucket(value: String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContinuationToken(value: String): Self = StObject.set(x, "ContinuationToken", value.asInstanceOf[js.Any])
+      inline def setContinuationToken(value: String): Self = StObject.set(x, "ContinuationToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContinuationTokenUndefined: Self = StObject.set(x, "ContinuationToken", js.undefined)
+      inline def setContinuationTokenUndefined: Self = StObject.set(x, "ContinuationToken", js.undefined)
       
-      @scala.inline
-      def setDelimiter(value: String): Self = StObject.set(x, "Delimiter", value.asInstanceOf[js.Any])
+      inline def setDelimiter(value: String): Self = StObject.set(x, "Delimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelimiterUndefined: Self = StObject.set(x, "Delimiter", js.undefined)
+      inline def setDelimiterUndefined: Self = StObject.set(x, "Delimiter", js.undefined)
       
-      @scala.inline
-      def setEncodingType(value: url | String): Self = StObject.set(x, "EncodingType", value.asInstanceOf[js.Any])
+      inline def setEncodingType(value: url | String): Self = StObject.set(x, "EncodingType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingTypeUndefined: Self = StObject.set(x, "EncodingType", js.undefined)
+      inline def setEncodingTypeUndefined: Self = StObject.set(x, "EncodingType", js.undefined)
       
-      @scala.inline
-      def setFetchOwner(value: Boolean): Self = StObject.set(x, "FetchOwner", value.asInstanceOf[js.Any])
+      inline def setFetchOwner(value: Boolean): Self = StObject.set(x, "FetchOwner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFetchOwnerUndefined: Self = StObject.set(x, "FetchOwner", js.undefined)
+      inline def setFetchOwnerUndefined: Self = StObject.set(x, "FetchOwner", js.undefined)
       
-      @scala.inline
-      def setMaxKeys(value: Double): Self = StObject.set(x, "MaxKeys", value.asInstanceOf[js.Any])
+      inline def setMaxKeys(value: Double): Self = StObject.set(x, "MaxKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxKeysUndefined: Self = StObject.set(x, "MaxKeys", js.undefined)
+      inline def setMaxKeysUndefined: Self = StObject.set(x, "MaxKeys", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
       
-      @scala.inline
-      def setRequestPayer(value: requester_ | String): Self = StObject.set(x, "RequestPayer", value.asInstanceOf[js.Any])
+      inline def setRequestPayer(value: requester_ | String): Self = StObject.set(x, "RequestPayer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestPayerUndefined: Self = StObject.set(x, "RequestPayer", js.undefined)
+      inline def setRequestPayerUndefined: Self = StObject.set(x, "RequestPayer", js.undefined)
       
-      @scala.inline
-      def setStartAfter(value: String): Self = StObject.set(x, "StartAfter", value.asInstanceOf[js.Any])
+      inline def setStartAfter(value: String): Self = StObject.set(x, "StartAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartAfterUndefined: Self = StObject.set(x, "StartAfter", js.undefined)
+      inline def setStartAfterUndefined: Self = StObject.set(x, "StartAfter", js.undefined)
     }
   }
 }

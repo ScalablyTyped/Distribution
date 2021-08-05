@@ -18,22 +18,17 @@ trait DeleteReportGroupInput extends StObject {
 }
 object DeleteReportGroupInput {
   
-  @scala.inline
-  def apply(arn: NonEmptyString): DeleteReportGroupInput = {
+  inline def apply(arn: NonEmptyString): DeleteReportGroupInput = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteReportGroupInput]
   }
   
-  @scala.inline
-  implicit class DeleteReportGroupInputMutableBuilder[Self <: DeleteReportGroupInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteReportGroupInput](x: Self) {
     
-    @scala.inline
-    def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteReports(value: Boolean): Self = StObject.set(x, "deleteReports", value.asInstanceOf[js.Any])
+    inline def setDeleteReports(value: Boolean): Self = StObject.set(x, "deleteReports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteReportsUndefined: Self = StObject.set(x, "deleteReports", js.undefined)
+    inline def setDeleteReportsUndefined: Self = StObject.set(x, "deleteReports", js.undefined)
   }
 }

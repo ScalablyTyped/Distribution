@@ -47,41 +47,30 @@ object workersMod {
   }
   object CreateWorkerProps {
     
-    @scala.inline
-    def apply(name: String, phone: String, teams: String): CreateWorkerProps = {
+    inline def apply(name: String, phone: String, teams: String): CreateWorkerProps = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], teams = teams.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateWorkerProps]
     }
     
-    @scala.inline
-    implicit class CreateWorkerPropsMutableBuilder[Self <: CreateWorkerProps] (val x: Self) extends AnyVal {
+    extension [Self <: CreateWorkerProps](x: Self) {
       
-      @scala.inline
-      def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
+      inline def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCapacityUndefined: Self = StObject.set(x, "capacity", js.undefined)
+      inline def setCapacityUndefined: Self = StObject.set(x, "capacity", js.undefined)
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+      inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+      inline def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeams(value: String): Self = StObject.set(x, "teams", value.asInstanceOf[js.Any])
+      inline def setTeams(value: String): Self = StObject.set(x, "teams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVehicle(value: Vehicle): Self = StObject.set(x, "vehicle", value.asInstanceOf[js.Any])
+      inline def setVehicle(value: Vehicle): Self = StObject.set(x, "vehicle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVehicleUndefined: Self = StObject.set(x, "vehicle", js.undefined)
+      inline def setVehicleUndefined: Self = StObject.set(x, "vehicle", js.undefined)
     }
   }
   
@@ -92,20 +81,16 @@ object workersMod {
   }
   object GetWorkerByLocationProps {
     
-    @scala.inline
-    def apply(): GetWorkerByLocationProps = {
+    inline def apply(): GetWorkerByLocationProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetWorkerByLocationProps]
     }
     
-    @scala.inline
-    implicit class GetWorkerByLocationPropsMutableBuilder[Self <: GetWorkerByLocationProps] (val x: Self) extends AnyVal {
+    extension [Self <: GetWorkerByLocationProps](x: Self) {
       
-      @scala.inline
-      def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+      inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     }
   }
   
@@ -128,38 +113,28 @@ object workersMod {
   }
   object GetWorkerQueryProps {
     
-    @scala.inline
-    def apply(): GetWorkerQueryProps = {
+    inline def apply(): GetWorkerQueryProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetWorkerQueryProps]
     }
     
-    @scala.inline
-    implicit class GetWorkerQueryPropsMutableBuilder[Self <: GetWorkerQueryProps] (val x: Self) extends AnyVal {
+    extension [Self <: GetWorkerQueryProps](x: Self) {
       
-      @scala.inline
-      def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setPhones(value: String): Self = StObject.set(x, "phones", value.asInstanceOf[js.Any])
+      inline def setPhones(value: String): Self = StObject.set(x, "phones", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhonesUndefined: Self = StObject.set(x, "phones", js.undefined)
+      inline def setPhonesUndefined: Self = StObject.set(x, "phones", js.undefined)
       
-      @scala.inline
-      def setStates(value: String): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
+      inline def setStates(value: String): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)
+      inline def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)
       
-      @scala.inline
-      def setTeams(value: String): Self = StObject.set(x, "teams", value.asInstanceOf[js.Any])
+      inline def setTeams(value: String): Self = StObject.set(x, "teams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeamsUndefined: Self = StObject.set(x, "teams", js.undefined)
+      inline def setTeamsUndefined: Self = StObject.set(x, "teams", js.undefined)
     }
   }
   
@@ -207,8 +182,7 @@ object workersMod {
   }
   object OnfleetWorker {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       accountStatus: String,
       capacity: Double,
       displayName: String,
@@ -230,89 +204,61 @@ object workersMod {
       __obj.asInstanceOf[OnfleetWorker]
     }
     
-    @scala.inline
-    implicit class OnfleetWorkerMutableBuilder[Self <: OnfleetWorker] (val x: Self) extends AnyVal {
+    extension [Self <: OnfleetWorker](x: Self) {
       
-      @scala.inline
-      def setAccountStatus(value: String): Self = StObject.set(x, "accountStatus", value.asInstanceOf[js.Any])
+      inline def setAccountStatus(value: String): Self = StObject.set(x, "accountStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveTask(value: String): Self = StObject.set(x, "activeTask", value.asInstanceOf[js.Any])
+      inline def setActiveTask(value: String): Self = StObject.set(x, "activeTask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveTaskNull: Self = StObject.set(x, "activeTask", null)
+      inline def setActiveTaskNull: Self = StObject.set(x, "activeTask", null)
       
-      @scala.inline
-      def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
+      inline def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayTime(value: Double): Self = StObject.set(x, "delayTime", value.asInstanceOf[js.Any])
+      inline def setDelayTime(value: Double): Self = StObject.set(x, "delayTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayTimeNull: Self = StObject.set(x, "delayTime", null)
+      inline def setDelayTimeNull: Self = StObject.set(x, "delayTime", null)
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
+      inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageUrlNull: Self = StObject.set(x, "imageUrl", null)
+      inline def setImageUrlNull: Self = StObject.set(x, "imageUrl", null)
       
-      @scala.inline
-      def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: js.Array[OnfleetMetadata]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: js.Array[OnfleetMetadata]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataVarargs(value: OnfleetMetadata*): Self = StObject.set(x, "metadata", js.Array(value :_*))
+      inline def setMetadataVarargs(value: OnfleetMetadata*): Self = StObject.set(x, "metadata", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnDuty(value: Boolean): Self = StObject.set(x, "onDuty", value.asInstanceOf[js.Any])
+      inline def setOnDuty(value: Boolean): Self = StObject.set(x, "onDuty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrganization(value: String): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
+      inline def setOrganization(value: String): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+      inline def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTasks(value: js.Array[String]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
+      inline def setTasks(value: js.Array[String]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTasksVarargs(value: String*): Self = StObject.set(x, "tasks", js.Array(value :_*))
+      inline def setTasksVarargs(value: String*): Self = StObject.set(x, "tasks", js.Array(value :_*))
       
-      @scala.inline
-      def setTeams(value: js.Array[String]): Self = StObject.set(x, "teams", value.asInstanceOf[js.Any])
+      inline def setTeams(value: js.Array[String]): Self = StObject.set(x, "teams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeamsVarargs(value: String*): Self = StObject.set(x, "teams", js.Array(value :_*))
+      inline def setTeamsVarargs(value: String*): Self = StObject.set(x, "teams", js.Array(value :_*))
       
-      @scala.inline
-      def setTimeCreated(value: Double): Self = StObject.set(x, "timeCreated", value.asInstanceOf[js.Any])
+      inline def setTimeCreated(value: Double): Self = StObject.set(x, "timeCreated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeLastModified(value: Double): Self = StObject.set(x, "timeLastModified", value.asInstanceOf[js.Any])
+      inline def setTimeLastModified(value: Double): Self = StObject.set(x, "timeLastModified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeLastSeen(value: Double): Self = StObject.set(x, "timeLastSeen", value.asInstanceOf[js.Any])
+      inline def setTimeLastSeen(value: Double): Self = StObject.set(x, "timeLastSeen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserData(value: AppVersion): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
+      inline def setUserData(value: AppVersion): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVehicle(value: Vehicle): Self = StObject.set(x, "vehicle", value.asInstanceOf[js.Any])
+      inline def setVehicle(value: Vehicle): Self = StObject.set(x, "vehicle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVehicleNull: Self = StObject.set(x, "vehicle", null)
+      inline def setVehicleNull: Self = StObject.set(x, "vehicle", null)
     }
   }
   
@@ -332,50 +278,36 @@ object workersMod {
   }
   object UpdateWorkerProps {
     
-    @scala.inline
-    def apply(): UpdateWorkerProps = {
+    inline def apply(): UpdateWorkerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UpdateWorkerProps]
     }
     
-    @scala.inline
-    implicit class UpdateWorkerPropsMutableBuilder[Self <: UpdateWorkerProps] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateWorkerProps](x: Self) {
       
-      @scala.inline
-      def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
+      inline def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCapacityUndefined: Self = StObject.set(x, "capacity", js.undefined)
+      inline def setCapacityUndefined: Self = StObject.set(x, "capacity", js.undefined)
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+      inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: OnfleetMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: OnfleetMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setTeams(value: String): Self = StObject.set(x, "teams", value.asInstanceOf[js.Any])
+      inline def setTeams(value: String): Self = StObject.set(x, "teams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeamsUndefined: Self = StObject.set(x, "teams", js.undefined)
+      inline def setTeamsUndefined: Self = StObject.set(x, "teams", js.undefined)
       
-      @scala.inline
-      def setVehicle(value: Vehicle): Self = StObject.set(x, "vehicle", value.asInstanceOf[js.Any])
+      inline def setVehicle(value: Vehicle): Self = StObject.set(x, "vehicle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVehicleUndefined: Self = StObject.set(x, "vehicle", js.undefined)
+      inline def setVehicleUndefined: Self = StObject.set(x, "vehicle", js.undefined)
     }
   }
   
@@ -391,36 +323,27 @@ object workersMod {
   }
   object Vehicle {
     
-    @scala.inline
-    def apply(`type`: BICYCLE | CAR | MOTORCYCLE | TRUCK): Vehicle = {
+    inline def apply(`type`: BICYCLE | CAR | MOTORCYCLE | TRUCK): Vehicle = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Vehicle]
     }
     
-    @scala.inline
-    implicit class VehicleMutableBuilder[Self <: Vehicle] (val x: Self) extends AnyVal {
+    extension [Self <: Vehicle](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setLicensePlate(value: String): Self = StObject.set(x, "licensePlate", value.asInstanceOf[js.Any])
+      inline def setLicensePlate(value: String): Self = StObject.set(x, "licensePlate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLicensePlateUndefined: Self = StObject.set(x, "licensePlate", js.undefined)
+      inline def setLicensePlateUndefined: Self = StObject.set(x, "licensePlate", js.undefined)
       
-      @scala.inline
-      def setType(value: BICYCLE | CAR | MOTORCYCLE | TRUCK): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: BICYCLE | CAR | MOTORCYCLE | TRUCK): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -456,26 +379,20 @@ object workersMod {
   }
   object WorkerSchedule {
     
-    @scala.inline
-    def apply(date: String, shifts: js.Array[js.Tuple2[Double, Double]], timezone: String): WorkerSchedule = {
+    inline def apply(date: String, shifts: js.Array[js.Tuple2[Double, Double]], timezone: String): WorkerSchedule = {
       val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], shifts = shifts.asInstanceOf[js.Any], timezone = timezone.asInstanceOf[js.Any])
       __obj.asInstanceOf[WorkerSchedule]
     }
     
-    @scala.inline
-    implicit class WorkerScheduleMutableBuilder[Self <: WorkerSchedule] (val x: Self) extends AnyVal {
+    extension [Self <: WorkerSchedule](x: Self) {
       
-      @scala.inline
-      def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShifts(value: js.Array[js.Tuple2[Double, Double]]): Self = StObject.set(x, "shifts", value.asInstanceOf[js.Any])
+      inline def setShifts(value: js.Array[js.Tuple2[Double, Double]]): Self = StObject.set(x, "shifts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShiftsVarargs(value: (js.Tuple2[Double, Double])*): Self = StObject.set(x, "shifts", js.Array(value :_*))
+      inline def setShiftsVarargs(value: (js.Tuple2[Double, Double])*): Self = StObject.set(x, "shifts", js.Array(value :_*))
       
-      @scala.inline
-      def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
+      inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     }
   }
 }

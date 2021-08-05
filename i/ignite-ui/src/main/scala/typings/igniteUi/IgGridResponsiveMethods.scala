@@ -18,19 +18,15 @@ trait IgGridResponsiveMethods extends StObject {
 }
 object IgGridResponsiveMethods {
   
-  @scala.inline
-  def apply(destroy: () => Unit, getCurrentResponsiveMode: () => Unit): IgGridResponsiveMethods = {
+  inline def apply(destroy: () => Unit, getCurrentResponsiveMode: () => Unit): IgGridResponsiveMethods = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), getCurrentResponsiveMode = js.Any.fromFunction0(getCurrentResponsiveMode))
     __obj.asInstanceOf[IgGridResponsiveMethods]
   }
   
-  @scala.inline
-  implicit class IgGridResponsiveMethodsMutableBuilder[Self <: IgGridResponsiveMethods] (val x: Self) extends AnyVal {
+  extension [Self <: IgGridResponsiveMethods](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCurrentResponsiveMode(value: () => Unit): Self = StObject.set(x, "getCurrentResponsiveMode", js.Any.fromFunction0(value))
+    inline def setGetCurrentResponsiveMode(value: () => Unit): Self = StObject.set(x, "getCurrentResponsiveMode", js.Any.fromFunction0(value))
   }
 }

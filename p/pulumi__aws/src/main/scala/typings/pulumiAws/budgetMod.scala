@@ -103,21 +103,16 @@ object budgetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Budget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Budget]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Budget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Budget]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: BudgetState): Budget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Budget]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: BudgetState, opts: CustomResourceOptions): Budget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Budget]
+    inline def get(name: String, id: Input[ID]): Budget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Budget]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Budget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Budget]
+    inline def get(name: String, id: Input[ID], state: BudgetState): Budget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Budget]
+    inline def get(name: String, id: Input[ID], state: BudgetState, opts: CustomResourceOptions): Budget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Budget]
     
     /**
       * Returns true if the given object is an instance of Budget.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/budgets/budget.Budget */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/budgets/budget.Budget */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/budgets/budget.Budget */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/budgets/budget.Budget */ Boolean]
   }
   
   trait BudgetArgs extends StObject {
@@ -184,8 +179,7 @@ object budgetMod {
   }
   object BudgetArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       budgetType: Input[String],
       limitAmount: Input[String],
       limitUnit: Input[String],
@@ -196,68 +190,47 @@ object budgetMod {
       __obj.asInstanceOf[BudgetArgs]
     }
     
-    @scala.inline
-    implicit class BudgetArgsMutableBuilder[Self <: BudgetArgs] (val x: Self) extends AnyVal {
+    extension [Self <: BudgetArgs](x: Self) {
       
-      @scala.inline
-      def setAccountId(value: Input[String]): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+      inline def setAccountId(value: Input[String]): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+      inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
       
-      @scala.inline
-      def setBudgetType(value: Input[String]): Self = StObject.set(x, "budgetType", value.asInstanceOf[js.Any])
+      inline def setBudgetType(value: Input[String]): Self = StObject.set(x, "budgetType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCostFilters(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "costFilters", value.asInstanceOf[js.Any])
+      inline def setCostFilters(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "costFilters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCostFiltersUndefined: Self = StObject.set(x, "costFilters", js.undefined)
+      inline def setCostFiltersUndefined: Self = StObject.set(x, "costFilters", js.undefined)
       
-      @scala.inline
-      def setCostTypes(value: Input[typings.pulumiAws.inputMod.budgets.BudgetCostTypes]): Self = StObject.set(x, "costTypes", value.asInstanceOf[js.Any])
+      inline def setCostTypes(value: Input[typings.pulumiAws.inputMod.budgets.BudgetCostTypes]): Self = StObject.set(x, "costTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCostTypesUndefined: Self = StObject.set(x, "costTypes", js.undefined)
+      inline def setCostTypesUndefined: Self = StObject.set(x, "costTypes", js.undefined)
       
-      @scala.inline
-      def setLimitAmount(value: Input[String]): Self = StObject.set(x, "limitAmount", value.asInstanceOf[js.Any])
+      inline def setLimitAmount(value: Input[String]): Self = StObject.set(x, "limitAmount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUnit(value: Input[String]): Self = StObject.set(x, "limitUnit", value.asInstanceOf[js.Any])
+      inline def setLimitUnit(value: Input[String]): Self = StObject.set(x, "limitUnit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
+      inline def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
+      inline def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNotifications(value: Input[js.Array[Input[typings.pulumiAws.inputMod.budgets.BudgetNotification]]]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
+      inline def setNotifications(value: Input[js.Array[Input[typings.pulumiAws.inputMod.budgets.BudgetNotification]]]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotificationsUndefined: Self = StObject.set(x, "notifications", js.undefined)
+      inline def setNotificationsUndefined: Self = StObject.set(x, "notifications", js.undefined)
       
-      @scala.inline
-      def setNotificationsVarargs(value: Input[typings.pulumiAws.inputMod.budgets.BudgetNotification]*): Self = StObject.set(x, "notifications", js.Array(value :_*))
+      inline def setNotificationsVarargs(value: Input[typings.pulumiAws.inputMod.budgets.BudgetNotification]*): Self = StObject.set(x, "notifications", js.Array(value :_*))
       
-      @scala.inline
-      def setTimePeriodEnd(value: Input[String]): Self = StObject.set(x, "timePeriodEnd", value.asInstanceOf[js.Any])
+      inline def setTimePeriodEnd(value: Input[String]): Self = StObject.set(x, "timePeriodEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimePeriodEndUndefined: Self = StObject.set(x, "timePeriodEnd", js.undefined)
+      inline def setTimePeriodEndUndefined: Self = StObject.set(x, "timePeriodEnd", js.undefined)
       
-      @scala.inline
-      def setTimePeriodStart(value: Input[String]): Self = StObject.set(x, "timePeriodStart", value.asInstanceOf[js.Any])
+      inline def setTimePeriodStart(value: Input[String]): Self = StObject.set(x, "timePeriodStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeUnit(value: Input[String]): Self = StObject.set(x, "timeUnit", value.asInstanceOf[js.Any])
+      inline def setTimeUnit(value: Input[String]): Self = StObject.set(x, "timeUnit", value.asInstanceOf[js.Any])
     }
   }
   
@@ -325,89 +298,62 @@ object budgetMod {
   }
   object BudgetState {
     
-    @scala.inline
-    def apply(): BudgetState = {
+    inline def apply(): BudgetState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BudgetState]
     }
     
-    @scala.inline
-    implicit class BudgetStateMutableBuilder[Self <: BudgetState] (val x: Self) extends AnyVal {
+    extension [Self <: BudgetState](x: Self) {
       
-      @scala.inline
-      def setAccountId(value: Input[String]): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+      inline def setAccountId(value: Input[String]): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+      inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
       
-      @scala.inline
-      def setBudgetType(value: Input[String]): Self = StObject.set(x, "budgetType", value.asInstanceOf[js.Any])
+      inline def setBudgetType(value: Input[String]): Self = StObject.set(x, "budgetType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBudgetTypeUndefined: Self = StObject.set(x, "budgetType", js.undefined)
+      inline def setBudgetTypeUndefined: Self = StObject.set(x, "budgetType", js.undefined)
       
-      @scala.inline
-      def setCostFilters(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "costFilters", value.asInstanceOf[js.Any])
+      inline def setCostFilters(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "costFilters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCostFiltersUndefined: Self = StObject.set(x, "costFilters", js.undefined)
+      inline def setCostFiltersUndefined: Self = StObject.set(x, "costFilters", js.undefined)
       
-      @scala.inline
-      def setCostTypes(value: Input[typings.pulumiAws.inputMod.budgets.BudgetCostTypes]): Self = StObject.set(x, "costTypes", value.asInstanceOf[js.Any])
+      inline def setCostTypes(value: Input[typings.pulumiAws.inputMod.budgets.BudgetCostTypes]): Self = StObject.set(x, "costTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCostTypesUndefined: Self = StObject.set(x, "costTypes", js.undefined)
+      inline def setCostTypesUndefined: Self = StObject.set(x, "costTypes", js.undefined)
       
-      @scala.inline
-      def setLimitAmount(value: Input[String]): Self = StObject.set(x, "limitAmount", value.asInstanceOf[js.Any])
+      inline def setLimitAmount(value: Input[String]): Self = StObject.set(x, "limitAmount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitAmountUndefined: Self = StObject.set(x, "limitAmount", js.undefined)
+      inline def setLimitAmountUndefined: Self = StObject.set(x, "limitAmount", js.undefined)
       
-      @scala.inline
-      def setLimitUnit(value: Input[String]): Self = StObject.set(x, "limitUnit", value.asInstanceOf[js.Any])
+      inline def setLimitUnit(value: Input[String]): Self = StObject.set(x, "limitUnit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUnitUndefined: Self = StObject.set(x, "limitUnit", js.undefined)
+      inline def setLimitUnitUndefined: Self = StObject.set(x, "limitUnit", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
+      inline def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
+      inline def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNotifications(value: Input[js.Array[Input[typings.pulumiAws.inputMod.budgets.BudgetNotification]]]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
+      inline def setNotifications(value: Input[js.Array[Input[typings.pulumiAws.inputMod.budgets.BudgetNotification]]]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotificationsUndefined: Self = StObject.set(x, "notifications", js.undefined)
+      inline def setNotificationsUndefined: Self = StObject.set(x, "notifications", js.undefined)
       
-      @scala.inline
-      def setNotificationsVarargs(value: Input[typings.pulumiAws.inputMod.budgets.BudgetNotification]*): Self = StObject.set(x, "notifications", js.Array(value :_*))
+      inline def setNotificationsVarargs(value: Input[typings.pulumiAws.inputMod.budgets.BudgetNotification]*): Self = StObject.set(x, "notifications", js.Array(value :_*))
       
-      @scala.inline
-      def setTimePeriodEnd(value: Input[String]): Self = StObject.set(x, "timePeriodEnd", value.asInstanceOf[js.Any])
+      inline def setTimePeriodEnd(value: Input[String]): Self = StObject.set(x, "timePeriodEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimePeriodEndUndefined: Self = StObject.set(x, "timePeriodEnd", js.undefined)
+      inline def setTimePeriodEndUndefined: Self = StObject.set(x, "timePeriodEnd", js.undefined)
       
-      @scala.inline
-      def setTimePeriodStart(value: Input[String]): Self = StObject.set(x, "timePeriodStart", value.asInstanceOf[js.Any])
+      inline def setTimePeriodStart(value: Input[String]): Self = StObject.set(x, "timePeriodStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimePeriodStartUndefined: Self = StObject.set(x, "timePeriodStart", js.undefined)
+      inline def setTimePeriodStartUndefined: Self = StObject.set(x, "timePeriodStart", js.undefined)
       
-      @scala.inline
-      def setTimeUnit(value: Input[String]): Self = StObject.set(x, "timeUnit", value.asInstanceOf[js.Any])
+      inline def setTimeUnit(value: Input[String]): Self = StObject.set(x, "timeUnit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeUnitUndefined: Self = StObject.set(x, "timeUnit", js.undefined)
+      inline def setTimeUnitUndefined: Self = StObject.set(x, "timeUnit", js.undefined)
     }
   }
 }

@@ -14,20 +14,16 @@ trait Offset extends StObject {
 }
 object Offset {
   
-  @scala.inline
-  def apply(offset: Double, `type`: up | down): Offset = {
+  inline def apply(offset: Double, `type`: up | down): Offset = {
     val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Offset]
   }
   
-  @scala.inline
-  implicit class OffsetMutableBuilder[Self <: Offset] (val x: Self) extends AnyVal {
+  extension [Self <: Offset](x: Self) {
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: up | down): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: up | down): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

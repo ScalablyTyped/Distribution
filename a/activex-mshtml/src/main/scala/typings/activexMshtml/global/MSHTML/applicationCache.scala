@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.applicationCache")
 @js.native
-class applicationCache protected ()
+/* private */ class applicationCache ()
   extends StObject
      with typings.activexMshtml.MSHTML.applicationCache {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.applicationCache_typekey")
   var MSHTMLDotapplicationCache_typekey: typings.activexMshtml.MSHTML.applicationCache = js.native
   

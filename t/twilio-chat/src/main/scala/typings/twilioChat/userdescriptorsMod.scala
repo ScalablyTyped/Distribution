@@ -20,9 +20,9 @@ object userdescriptorsMod {
     
     def getUserDescriptor(identity: String): js.Promise[UserDescriptor] = js.native
     
-    var services: js.Any = js.native
+    /* private */ var services: js.Any = js.native
     
-    var url: js.Any = js.native
+    /* private */ var url: js.Any = js.native
   }
   
   trait UserDescriptorsServices extends StObject {
@@ -33,20 +33,16 @@ object userdescriptorsMod {
   }
   object UserDescriptorsServices {
     
-    @scala.inline
-    def apply(network: Network, users: Users): UserDescriptorsServices = {
+    inline def apply(network: Network, users: Users): UserDescriptorsServices = {
       val __obj = js.Dynamic.literal(network = network.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserDescriptorsServices]
     }
     
-    @scala.inline
-    implicit class UserDescriptorsServicesMutableBuilder[Self <: UserDescriptorsServices] (val x: Self) extends AnyVal {
+    extension [Self <: UserDescriptorsServices](x: Self) {
       
-      @scala.inline
-      def setNetwork(value: Network): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+      inline def setNetwork(value: Network): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsers(value: Users): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+      inline def setUsers(value: Users): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -157,8 +157,7 @@ trait VideoDeviceController extends StObject {
 }
 object VideoDeviceController {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     advancedPhotoControl: AdvancedPhotoControl,
     backlightCompensation: MediaDeviceControl,
     brightness: MediaDeviceControl,
@@ -202,121 +201,82 @@ object VideoDeviceController {
     __obj.asInstanceOf[VideoDeviceController]
   }
   
-  @scala.inline
-  implicit class VideoDeviceControllerMutableBuilder[Self <: VideoDeviceController] (val x: Self) extends AnyVal {
+  extension [Self <: VideoDeviceController](x: Self) {
     
-    @scala.inline
-    def setAdvancedPhotoControl(value: AdvancedPhotoControl): Self = StObject.set(x, "advancedPhotoControl", value.asInstanceOf[js.Any])
+    inline def setAdvancedPhotoControl(value: AdvancedPhotoControl): Self = StObject.set(x, "advancedPhotoControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBacklightCompensation(value: MediaDeviceControl): Self = StObject.set(x, "backlightCompensation", value.asInstanceOf[js.Any])
+    inline def setBacklightCompensation(value: MediaDeviceControl): Self = StObject.set(x, "backlightCompensation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrightness(value: MediaDeviceControl): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
+    inline def setBrightness(value: MediaDeviceControl): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContrast(value: MediaDeviceControl): Self = StObject.set(x, "contrast", value.asInstanceOf[js.Any])
+    inline def setContrast(value: MediaDeviceControl): Self = StObject.set(x, "contrast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesiredOptimization(value: MediaCaptureOptimization): Self = StObject.set(x, "desiredOptimization", value.asInstanceOf[js.Any])
+    inline def setDesiredOptimization(value: MediaCaptureOptimization): Self = StObject.set(x, "desiredOptimization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExposure(value: MediaDeviceControl): Self = StObject.set(x, "exposure", value.asInstanceOf[js.Any])
+    inline def setExposure(value: MediaDeviceControl): Self = StObject.set(x, "exposure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExposureCompensationControl(value: ExposureCompensationControl): Self = StObject.set(x, "exposureCompensationControl", value.asInstanceOf[js.Any])
+    inline def setExposureCompensationControl(value: ExposureCompensationControl): Self = StObject.set(x, "exposureCompensationControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExposureControl(value: ExposureControl): Self = StObject.set(x, "exposureControl", value.asInstanceOf[js.Any])
+    inline def setExposureControl(value: ExposureControl): Self = StObject.set(x, "exposureControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExposurePriorityVideoControl(value: ExposurePriorityVideoControl): Self = StObject.set(x, "exposurePriorityVideoControl", value.asInstanceOf[js.Any])
+    inline def setExposurePriorityVideoControl(value: ExposurePriorityVideoControl): Self = StObject.set(x, "exposurePriorityVideoControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlashControl(value: FlashControl): Self = StObject.set(x, "flashControl", value.asInstanceOf[js.Any])
+    inline def setFlashControl(value: FlashControl): Self = StObject.set(x, "flashControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocus(value: MediaDeviceControl): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+    inline def setFocus(value: MediaDeviceControl): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusControl(value: FocusControl): Self = StObject.set(x, "focusControl", value.asInstanceOf[js.Any])
+    inline def setFocusControl(value: FocusControl): Self = StObject.set(x, "focusControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAvailableMediaStreamProperties(value: MediaStreamType => IVectorView[IMediaEncodingProperties]): Self = StObject.set(x, "getAvailableMediaStreamProperties", js.Any.fromFunction1(value))
+    inline def setGetAvailableMediaStreamProperties(value: MediaStreamType => IVectorView[IMediaEncodingProperties]): Self = StObject.set(x, "getAvailableMediaStreamProperties", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDeviceProperty(value: String => js.Any): Self = StObject.set(x, "getDeviceProperty", js.Any.fromFunction1(value))
+    inline def setGetDeviceProperty(value: String => js.Any): Self = StObject.set(x, "getDeviceProperty", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetMediaStreamProperties(value: MediaStreamType => IMediaEncodingProperties): Self = StObject.set(x, "getMediaStreamProperties", js.Any.fromFunction1(value))
+    inline def setGetMediaStreamProperties(value: MediaStreamType => IMediaEncodingProperties): Self = StObject.set(x, "getMediaStreamProperties", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHdrVideoControl(value: HdrVideoControl): Self = StObject.set(x, "hdrVideoControl", value.asInstanceOf[js.Any])
+    inline def setHdrVideoControl(value: HdrVideoControl): Self = StObject.set(x, "hdrVideoControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHue(value: MediaDeviceControl): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
+    inline def setHue(value: MediaDeviceControl): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsoSpeedControl(value: IsoSpeedControl): Self = StObject.set(x, "isoSpeedControl", value.asInstanceOf[js.Any])
+    inline def setIsoSpeedControl(value: IsoSpeedControl): Self = StObject.set(x, "isoSpeedControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowLagPhoto(value: LowLagPhotoControl): Self = StObject.set(x, "lowLagPhoto", value.asInstanceOf[js.Any])
+    inline def setLowLagPhoto(value: LowLagPhotoControl): Self = StObject.set(x, "lowLagPhoto", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowLagPhotoSequence(value: LowLagPhotoSequenceControl): Self = StObject.set(x, "lowLagPhotoSequence", value.asInstanceOf[js.Any])
+    inline def setLowLagPhotoSequence(value: LowLagPhotoSequenceControl): Self = StObject.set(x, "lowLagPhotoSequence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpticalImageStabilizationControl(value: OpticalImageStabilizationControl): Self = StObject.set(x, "opticalImageStabilizationControl", value.asInstanceOf[js.Any])
+    inline def setOpticalImageStabilizationControl(value: OpticalImageStabilizationControl): Self = StObject.set(x, "opticalImageStabilizationControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPan(value: MediaDeviceControl): Self = StObject.set(x, "pan", value.asInstanceOf[js.Any])
+    inline def setPan(value: MediaDeviceControl): Self = StObject.set(x, "pan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhotoConfirmationControl(value: PhotoConfirmationControl): Self = StObject.set(x, "photoConfirmationControl", value.asInstanceOf[js.Any])
+    inline def setPhotoConfirmationControl(value: PhotoConfirmationControl): Self = StObject.set(x, "photoConfirmationControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryUse(value: CaptureUse): Self = StObject.set(x, "primaryUse", value.asInstanceOf[js.Any])
+    inline def setPrimaryUse(value: CaptureUse): Self = StObject.set(x, "primaryUse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionsOfInterestControl(value: RegionsOfInterestControl): Self = StObject.set(x, "regionsOfInterestControl", value.asInstanceOf[js.Any])
+    inline def setRegionsOfInterestControl(value: RegionsOfInterestControl): Self = StObject.set(x, "regionsOfInterestControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoll(value: MediaDeviceControl): Self = StObject.set(x, "roll", value.asInstanceOf[js.Any])
+    inline def setRoll(value: MediaDeviceControl): Self = StObject.set(x, "roll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSceneModeControl(value: SceneModeControl): Self = StObject.set(x, "sceneModeControl", value.asInstanceOf[js.Any])
+    inline def setSceneModeControl(value: SceneModeControl): Self = StObject.set(x, "sceneModeControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetDeviceProperty(value: (String, js.Any) => Unit): Self = StObject.set(x, "setDeviceProperty", js.Any.fromFunction2(value))
+    inline def setSetDeviceProperty(value: (String, js.Any) => Unit): Self = StObject.set(x, "setDeviceProperty", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetMediaStreamPropertiesAsync(value: (MediaStreamType, IMediaEncodingProperties) => IPromiseWithIAsyncAction): Self = StObject.set(x, "setMediaStreamPropertiesAsync", js.Any.fromFunction2(value))
+    inline def setSetMediaStreamPropertiesAsync(value: (MediaStreamType, IMediaEncodingProperties) => IPromiseWithIAsyncAction): Self = StObject.set(x, "setMediaStreamPropertiesAsync", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTilt(value: MediaDeviceControl): Self = StObject.set(x, "tilt", value.asInstanceOf[js.Any])
+    inline def setTilt(value: MediaDeviceControl): Self = StObject.set(x, "tilt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTorchControl(value: TorchControl): Self = StObject.set(x, "torchControl", value.asInstanceOf[js.Any])
+    inline def setTorchControl(value: TorchControl): Self = StObject.set(x, "torchControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTryGetPowerlineFrequency(value: () => ReturnValueBoolean): Self = StObject.set(x, "tryGetPowerlineFrequency", js.Any.fromFunction0(value))
+    inline def setTryGetPowerlineFrequency(value: () => ReturnValueBoolean): Self = StObject.set(x, "tryGetPowerlineFrequency", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTrySetPowerlineFrequency(value: PowerlineFrequency => Boolean): Self = StObject.set(x, "trySetPowerlineFrequency", js.Any.fromFunction1(value))
+    inline def setTrySetPowerlineFrequency(value: PowerlineFrequency => Boolean): Self = StObject.set(x, "trySetPowerlineFrequency", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVariablePhotoSequenceController(value: VariablePhotoSequenceController): Self = StObject.set(x, "variablePhotoSequenceController", value.asInstanceOf[js.Any])
+    inline def setVariablePhotoSequenceController(value: VariablePhotoSequenceController): Self = StObject.set(x, "variablePhotoSequenceController", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhiteBalance(value: MediaDeviceControl): Self = StObject.set(x, "whiteBalance", value.asInstanceOf[js.Any])
+    inline def setWhiteBalance(value: MediaDeviceControl): Self = StObject.set(x, "whiteBalance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhiteBalanceControl(value: WhiteBalanceControl): Self = StObject.set(x, "whiteBalanceControl", value.asInstanceOf[js.Any])
+    inline def setWhiteBalanceControl(value: WhiteBalanceControl): Self = StObject.set(x, "whiteBalanceControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoom(value: MediaDeviceControl): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    inline def setZoom(value: MediaDeviceControl): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomControl(value: ZoomControl): Self = StObject.set(x, "zoomControl", value.asInstanceOf[js.Any])
+    inline def setZoomControl(value: ZoomControl): Self = StObject.set(x, "zoomControl", value.asInstanceOf[js.Any])
   }
 }

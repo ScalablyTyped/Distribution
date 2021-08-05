@@ -28,37 +28,27 @@ trait HlsInputSettings extends StObject {
 }
 object HlsInputSettings {
   
-  @scala.inline
-  def apply(): HlsInputSettings = {
+  inline def apply(): HlsInputSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HlsInputSettings]
   }
   
-  @scala.inline
-  implicit class HlsInputSettingsMutableBuilder[Self <: HlsInputSettings] (val x: Self) extends AnyVal {
+  extension [Self <: HlsInputSettings](x: Self) {
     
-    @scala.inline
-    def setBandwidth(value: integerMin0): Self = StObject.set(x, "Bandwidth", value.asInstanceOf[js.Any])
+    inline def setBandwidth(value: integerMin0): Self = StObject.set(x, "Bandwidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBandwidthUndefined: Self = StObject.set(x, "Bandwidth", js.undefined)
+    inline def setBandwidthUndefined: Self = StObject.set(x, "Bandwidth", js.undefined)
     
-    @scala.inline
-    def setBufferSegments(value: integerMin0): Self = StObject.set(x, "BufferSegments", value.asInstanceOf[js.Any])
+    inline def setBufferSegments(value: integerMin0): Self = StObject.set(x, "BufferSegments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBufferSegmentsUndefined: Self = StObject.set(x, "BufferSegments", js.undefined)
+    inline def setBufferSegmentsUndefined: Self = StObject.set(x, "BufferSegments", js.undefined)
     
-    @scala.inline
-    def setRetries(value: integerMin0): Self = StObject.set(x, "Retries", value.asInstanceOf[js.Any])
+    inline def setRetries(value: integerMin0): Self = StObject.set(x, "Retries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetriesUndefined: Self = StObject.set(x, "Retries", js.undefined)
+    inline def setRetriesUndefined: Self = StObject.set(x, "Retries", js.undefined)
     
-    @scala.inline
-    def setRetryInterval(value: integerMin0): Self = StObject.set(x, "RetryInterval", value.asInstanceOf[js.Any])
+    inline def setRetryInterval(value: integerMin0): Self = StObject.set(x, "RetryInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryIntervalUndefined: Self = StObject.set(x, "RetryInterval", js.undefined)
+    inline def setRetryIntervalUndefined: Self = StObject.set(x, "RetryInterval", js.undefined)
   }
 }

@@ -12,17 +12,14 @@ trait WindowEvent
 }
 object WindowEvent {
   
-  @scala.inline
-  def apply(name: String, topic: String, `type`: OpenFinApplicationEventType, uuid: String): WindowEvent = {
+  inline def apply(name: String, topic: String, `type`: OpenFinApplicationEventType, uuid: String): WindowEvent = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowEvent]
   }
   
-  @scala.inline
-  implicit class WindowEventMutableBuilder[Self <: WindowEvent] (val x: Self) extends AnyVal {
+  extension [Self <: WindowEvent](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

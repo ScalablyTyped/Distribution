@@ -15,7 +15,7 @@ object ngTableSorterRowControllerMod {
   class NgTableSorterRowController[T] protected () extends StObject {
     def this($scope: ITableScope[T]) = this()
     
-    @JSName("$scope")
+    /* private */ @JSName("$scope")
     var $scope: js.Any = js.native
     
     def sortBy($column: IColumnDef, event: IAugmentedMouseEvent): Unit = js.native
@@ -30,8 +30,7 @@ object ngTableSorterRowControllerMod {
     @JSImport("ng-table/src/browser/ngTableSorterRowController", "NgTableSorterRowController.$inject")
     @js.native
     def $inject: js.Array[String] = js.native
-    @scala.inline
-    def $inject_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$inject")(x.asInstanceOf[js.Any])
+    inline def $inject_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$inject")(x.asInstanceOf[js.Any])
   }
   
   trait IAugmentedMouseEvent
@@ -44,8 +43,7 @@ object ngTableSorterRowControllerMod {
   }
   object IAugmentedMouseEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ctrlKey: Boolean,
       currentScope: IScope,
       defaultPrevented: Boolean,
@@ -58,14 +56,11 @@ object ngTableSorterRowControllerMod {
       __obj.asInstanceOf[IAugmentedMouseEvent]
     }
     
-    @scala.inline
-    implicit class IAugmentedMouseEventMutableBuilder[Self <: IAugmentedMouseEvent] (val x: Self) extends AnyVal {
+    extension [Self <: IAugmentedMouseEvent](x: Self) {
       
-      @scala.inline
-      def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
+      inline def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
+      inline def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
     }
   }
 }

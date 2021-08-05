@@ -25,19 +25,15 @@ trait KiiServerCodeExecResult extends StObject {
 }
 object KiiServerCodeExecResult {
   
-  @scala.inline
-  def apply(getExecutedSteps: () => Double, getReturnedValue: () => js.Any): KiiServerCodeExecResult = {
+  inline def apply(getExecutedSteps: () => Double, getReturnedValue: () => js.Any): KiiServerCodeExecResult = {
     val __obj = js.Dynamic.literal(getExecutedSteps = js.Any.fromFunction0(getExecutedSteps), getReturnedValue = js.Any.fromFunction0(getReturnedValue))
     __obj.asInstanceOf[KiiServerCodeExecResult]
   }
   
-  @scala.inline
-  implicit class KiiServerCodeExecResultMutableBuilder[Self <: KiiServerCodeExecResult] (val x: Self) extends AnyVal {
+  extension [Self <: KiiServerCodeExecResult](x: Self) {
     
-    @scala.inline
-    def setGetExecutedSteps(value: () => Double): Self = StObject.set(x, "getExecutedSteps", js.Any.fromFunction0(value))
+    inline def setGetExecutedSteps(value: () => Double): Self = StObject.set(x, "getExecutedSteps", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetReturnedValue(value: () => js.Any): Self = StObject.set(x, "getReturnedValue", js.Any.fromFunction0(value))
+    inline def setGetReturnedValue(value: () => js.Any): Self = StObject.set(x, "getReturnedValue", js.Any.fromFunction0(value))
   }
 }

@@ -48,52 +48,37 @@ trait Annotation
 }
 object Annotation {
   
-  @scala.inline
-  def apply(text: String): Annotation = {
+  inline def apply(text: String): Annotation = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Annotation]
   }
   
-  @scala.inline
-  implicit class AnnotationMutableBuilder[Self <: Annotation] (val x: Self) extends AnyVal {
+  extension [Self <: Annotation](x: Self) {
     
-    @scala.inline
-    def setAuthorReference(value: Reference): Self = StObject.set(x, "authorReference", value.asInstanceOf[js.Any])
+    inline def setAuthorReference(value: Reference): Self = StObject.set(x, "authorReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorReferenceUndefined: Self = StObject.set(x, "authorReference", js.undefined)
+    inline def setAuthorReferenceUndefined: Self = StObject.set(x, "authorReference", js.undefined)
     
-    @scala.inline
-    def setAuthorString(value: String): Self = StObject.set(x, "authorString", value.asInstanceOf[js.Any])
+    inline def setAuthorString(value: String): Self = StObject.set(x, "authorString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorStringUndefined: Self = StObject.set(x, "authorString", js.undefined)
+    inline def setAuthorStringUndefined: Self = StObject.set(x, "authorString", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime(value: dateTime): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: dateTime): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+    inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
     
-    @scala.inline
-    def set_authorString(value: Element): Self = StObject.set(x, "_authorString", value.asInstanceOf[js.Any])
+    inline def set_authorString(value: Element): Self = StObject.set(x, "_authorString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_authorStringUndefined: Self = StObject.set(x, "_authorString", js.undefined)
+    inline def set_authorStringUndefined: Self = StObject.set(x, "_authorString", js.undefined)
     
-    @scala.inline
-    def set_text(value: Element): Self = StObject.set(x, "_text", value.asInstanceOf[js.Any])
+    inline def set_text(value: Element): Self = StObject.set(x, "_text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_textUndefined: Self = StObject.set(x, "_text", js.undefined)
+    inline def set_textUndefined: Self = StObject.set(x, "_text", js.undefined)
     
-    @scala.inline
-    def set_time(value: Element): Self = StObject.set(x, "_time", value.asInstanceOf[js.Any])
+    inline def set_time(value: Element): Self = StObject.set(x, "_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_timeUndefined: Self = StObject.set(x, "_time", js.undefined)
+    inline def set_timeUndefined: Self = StObject.set(x, "_time", js.undefined)
   }
 }

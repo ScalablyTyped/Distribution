@@ -15,19 +15,15 @@ trait CreateAudioDeviceInputNodeResult extends StObject {
 }
 object CreateAudioDeviceInputNodeResult {
   
-  @scala.inline
-  def apply(deviceInputNode: AudioDeviceInputNode, status: AudioDeviceNodeCreationStatus): CreateAudioDeviceInputNodeResult = {
+  inline def apply(deviceInputNode: AudioDeviceInputNode, status: AudioDeviceNodeCreationStatus): CreateAudioDeviceInputNodeResult = {
     val __obj = js.Dynamic.literal(deviceInputNode = deviceInputNode.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAudioDeviceInputNodeResult]
   }
   
-  @scala.inline
-  implicit class CreateAudioDeviceInputNodeResultMutableBuilder[Self <: CreateAudioDeviceInputNodeResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateAudioDeviceInputNodeResult](x: Self) {
     
-    @scala.inline
-    def setDeviceInputNode(value: AudioDeviceInputNode): Self = StObject.set(x, "deviceInputNode", value.asInstanceOf[js.Any])
+    inline def setDeviceInputNode(value: AudioDeviceInputNode): Self = StObject.set(x, "deviceInputNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: AudioDeviceNodeCreationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: AudioDeviceNodeCreationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

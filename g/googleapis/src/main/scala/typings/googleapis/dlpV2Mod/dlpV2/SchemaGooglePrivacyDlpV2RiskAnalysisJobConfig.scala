@@ -28,34 +28,25 @@ trait SchemaGooglePrivacyDlpV2RiskAnalysisJobConfig extends StObject {
 }
 object SchemaGooglePrivacyDlpV2RiskAnalysisJobConfig {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2RiskAnalysisJobConfig = {
+  inline def apply(): SchemaGooglePrivacyDlpV2RiskAnalysisJobConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2RiskAnalysisJobConfig]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2RiskAnalysisJobConfigMutableBuilder[Self <: SchemaGooglePrivacyDlpV2RiskAnalysisJobConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2RiskAnalysisJobConfig](x: Self) {
     
-    @scala.inline
-    def setActions(value: js.Array[SchemaGooglePrivacyDlpV2Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: js.Array[SchemaGooglePrivacyDlpV2Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+    inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    @scala.inline
-    def setActionsVarargs(value: SchemaGooglePrivacyDlpV2Action*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: SchemaGooglePrivacyDlpV2Action*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
-    @scala.inline
-    def setPrivacyMetric(value: SchemaGooglePrivacyDlpV2PrivacyMetric): Self = StObject.set(x, "privacyMetric", value.asInstanceOf[js.Any])
+    inline def setPrivacyMetric(value: SchemaGooglePrivacyDlpV2PrivacyMetric): Self = StObject.set(x, "privacyMetric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivacyMetricUndefined: Self = StObject.set(x, "privacyMetric", js.undefined)
+    inline def setPrivacyMetricUndefined: Self = StObject.set(x, "privacyMetric", js.undefined)
     
-    @scala.inline
-    def setSourceTable(value: SchemaGooglePrivacyDlpV2BigQueryTable): Self = StObject.set(x, "sourceTable", value.asInstanceOf[js.Any])
+    inline def setSourceTable(value: SchemaGooglePrivacyDlpV2BigQueryTable): Self = StObject.set(x, "sourceTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceTableUndefined: Self = StObject.set(x, "sourceTable", js.undefined)
+    inline def setSourceTableUndefined: Self = StObject.set(x, "sourceTable", js.undefined)
   }
 }

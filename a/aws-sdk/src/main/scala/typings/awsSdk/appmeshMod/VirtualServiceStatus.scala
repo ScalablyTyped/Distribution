@@ -13,16 +13,13 @@ trait VirtualServiceStatus extends StObject {
 }
 object VirtualServiceStatus {
   
-  @scala.inline
-  def apply(status: VirtualServiceStatusCode): VirtualServiceStatus = {
+  inline def apply(status: VirtualServiceStatusCode): VirtualServiceStatus = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualServiceStatus]
   }
   
-  @scala.inline
-  implicit class VirtualServiceStatusMutableBuilder[Self <: VirtualServiceStatus] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualServiceStatus](x: Self) {
     
-    @scala.inline
-    def setStatus(value: VirtualServiceStatusCode): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: VirtualServiceStatusCode): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

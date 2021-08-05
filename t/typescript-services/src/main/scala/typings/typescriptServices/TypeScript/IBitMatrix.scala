@@ -14,8 +14,7 @@ trait IBitMatrix extends StObject {
 }
 object IBitMatrix {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     release: () => Unit,
     setValueAt: (Double, Double, Boolean) => Unit,
     valueAt: (Double, Double) => Boolean
@@ -24,16 +23,12 @@ object IBitMatrix {
     __obj.asInstanceOf[IBitMatrix]
   }
   
-  @scala.inline
-  implicit class IBitMatrixMutableBuilder[Self <: IBitMatrix] (val x: Self) extends AnyVal {
+  extension [Self <: IBitMatrix](x: Self) {
     
-    @scala.inline
-    def setRelease(value: () => Unit): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
+    inline def setRelease(value: () => Unit): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetValueAt(value: (Double, Double, Boolean) => Unit): Self = StObject.set(x, "setValueAt", js.Any.fromFunction3(value))
+    inline def setSetValueAt(value: (Double, Double, Boolean) => Unit): Self = StObject.set(x, "setValueAt", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setValueAt(value: (Double, Double) => Boolean): Self = StObject.set(x, "valueAt", js.Any.fromFunction2(value))
+    inline def setValueAt(value: (Double, Double) => Boolean): Self = StObject.set(x, "valueAt", js.Any.fromFunction2(value))
   }
 }

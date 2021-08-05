@@ -11,8 +11,7 @@ object generateDocgenCodeBlockMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(options: GeneratorOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(options: GeneratorOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
   trait GeneratorOptions extends StObject {
     
@@ -30,8 +29,7 @@ object generateDocgenCodeBlockMod {
   }
   object GeneratorOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       componentDocs: js.Array[ComponentDoc],
       filename: String,
       setDisplayName: Boolean,
@@ -42,32 +40,23 @@ object generateDocgenCodeBlockMod {
       __obj.asInstanceOf[GeneratorOptions]
     }
     
-    @scala.inline
-    implicit class GeneratorOptionsMutableBuilder[Self <: GeneratorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GeneratorOptions](x: Self) {
       
-      @scala.inline
-      def setComponentDocs(value: js.Array[ComponentDoc]): Self = StObject.set(x, "componentDocs", value.asInstanceOf[js.Any])
+      inline def setComponentDocs(value: js.Array[ComponentDoc]): Self = StObject.set(x, "componentDocs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentDocsVarargs(value: ComponentDoc*): Self = StObject.set(x, "componentDocs", js.Array(value :_*))
+      inline def setComponentDocsVarargs(value: ComponentDoc*): Self = StObject.set(x, "componentDocs", js.Array(value :_*))
       
-      @scala.inline
-      def setDocgenCollectionName(value: String): Self = StObject.set(x, "docgenCollectionName", value.asInstanceOf[js.Any])
+      inline def setDocgenCollectionName(value: String): Self = StObject.set(x, "docgenCollectionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocgenCollectionNameNull: Self = StObject.set(x, "docgenCollectionName", null)
+      inline def setDocgenCollectionNameNull: Self = StObject.set(x, "docgenCollectionName", null)
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetDisplayName(value: Boolean): Self = StObject.set(x, "setDisplayName", value.asInstanceOf[js.Any])
+      inline def setSetDisplayName(value: Boolean): Self = StObject.set(x, "setDisplayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypePropName(value: String): Self = StObject.set(x, "typePropName", value.asInstanceOf[js.Any])
+      inline def setTypePropName(value: String): Self = StObject.set(x, "typePropName", value.asInstanceOf[js.Any])
     }
   }
 }

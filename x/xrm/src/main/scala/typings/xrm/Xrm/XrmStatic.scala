@@ -63,8 +63,7 @@ trait XrmStatic extends StObject {
 }
 object XrmStatic {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Device: Device,
     Encoding: Encoding,
     Mobile: Mobile,
@@ -78,31 +77,22 @@ object XrmStatic {
     __obj.asInstanceOf[XrmStatic]
   }
   
-  @scala.inline
-  implicit class XrmStaticMutableBuilder[Self <: XrmStatic] (val x: Self) extends AnyVal {
+  extension [Self <: XrmStatic](x: Self) {
     
-    @scala.inline
-    def setDevice(value: Device): Self = StObject.set(x, "Device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: Device): Self = StObject.set(x, "Device", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncoding(value: Encoding): Self = StObject.set(x, "Encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: Encoding): Self = StObject.set(x, "Encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMobile(value: Mobile): Self = StObject.set(x, "Mobile", value.asInstanceOf[js.Any])
+    inline def setMobile(value: Mobile): Self = StObject.set(x, "Mobile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigation(value: Navigation): Self = StObject.set(x, "Navigation", value.asInstanceOf[js.Any])
+    inline def setNavigation(value: Navigation): Self = StObject.set(x, "Navigation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPage(value: Page): Self = StObject.set(x, "Page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Page): Self = StObject.set(x, "Page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPanel(value: Panel): Self = StObject.set(x, "Panel", value.asInstanceOf[js.Any])
+    inline def setPanel(value: Panel): Self = StObject.set(x, "Panel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtility(value: Utility): Self = StObject.set(x, "Utility", value.asInstanceOf[js.Any])
+    inline def setUtility(value: Utility): Self = StObject.set(x, "Utility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebApi(value: WebApi): Self = StObject.set(x, "WebApi", value.asInstanceOf[js.Any])
+    inline def setWebApi(value: WebApi): Self = StObject.set(x, "WebApi", value.asInstanceOf[js.Any])
   }
 }

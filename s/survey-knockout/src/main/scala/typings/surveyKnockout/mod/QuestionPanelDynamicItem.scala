@@ -45,12 +45,10 @@ object QuestionPanelDynamicItem {
   @JSImport("survey-knockout", "QuestionPanelDynamicItem.IndexVariableName")
   @js.native
   def IndexVariableName: String = js.native
-  @scala.inline
-  def IndexVariableName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IndexVariableName")(x.asInstanceOf[js.Any])
+  inline def IndexVariableName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IndexVariableName")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "QuestionPanelDynamicItem.ItemVariableName")
   @js.native
   def ItemVariableName: String = js.native
-  @scala.inline
-  def ItemVariableName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ItemVariableName")(x.asInstanceOf[js.Any])
+  inline def ItemVariableName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ItemVariableName")(x.asInstanceOf[js.Any])
 }

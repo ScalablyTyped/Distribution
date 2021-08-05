@@ -20,19 +20,15 @@ trait SchemaGoogleDatastoreAdminV1beta1ExportEntitiesResponse extends StObject {
 }
 object SchemaGoogleDatastoreAdminV1beta1ExportEntitiesResponse {
   
-  @scala.inline
-  def apply(): SchemaGoogleDatastoreAdminV1beta1ExportEntitiesResponse = {
+  inline def apply(): SchemaGoogleDatastoreAdminV1beta1ExportEntitiesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleDatastoreAdminV1beta1ExportEntitiesResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleDatastoreAdminV1beta1ExportEntitiesResponseMutableBuilder[Self <: SchemaGoogleDatastoreAdminV1beta1ExportEntitiesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleDatastoreAdminV1beta1ExportEntitiesResponse](x: Self) {
     
-    @scala.inline
-    def setOutputUrl(value: String): Self = StObject.set(x, "outputUrl", value.asInstanceOf[js.Any])
+    inline def setOutputUrl(value: String): Self = StObject.set(x, "outputUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputUrlUndefined: Self = StObject.set(x, "outputUrl", js.undefined)
+    inline def setOutputUrlUndefined: Self = StObject.set(x, "outputUrl", js.undefined)
   }
 }

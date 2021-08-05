@@ -24,19 +24,16 @@ object spaceBeforeFunctionParenRuleMod {
     @JSImport("tslint/lib/rules/spaceBeforeFunctionParenRule", "Rule.INVALID_WHITESPACE_ERROR")
     @js.native
     def INVALID_WHITESPACE_ERROR: String = js.native
-    @scala.inline
-    def INVALID_WHITESPACE_ERROR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_WHITESPACE_ERROR")(x.asInstanceOf[js.Any])
+    inline def INVALID_WHITESPACE_ERROR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_WHITESPACE_ERROR")(x.asInstanceOf[js.Any])
     
     @JSImport("tslint/lib/rules/spaceBeforeFunctionParenRule", "Rule.MISSING_WHITESPACE_ERROR")
     @js.native
     def MISSING_WHITESPACE_ERROR: String = js.native
-    @scala.inline
-    def MISSING_WHITESPACE_ERROR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MISSING_WHITESPACE_ERROR")(x.asInstanceOf[js.Any])
+    inline def MISSING_WHITESPACE_ERROR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MISSING_WHITESPACE_ERROR")(x.asInstanceOf[js.Any])
     
     @JSImport("tslint/lib/rules/spaceBeforeFunctionParenRule", "Rule.metadata")
     @js.native
     def metadata: IRuleMetadata = js.native
-    @scala.inline
-    def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    inline def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
 }

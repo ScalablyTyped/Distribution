@@ -32,8 +32,7 @@ trait XDataFormatTranslator
 }
 object XDataFormatTranslator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getDataFlavorFromSystemDataType: js.Any => DataFlavor,
     getSystemDataTypeFromDataFlavor: DataFlavor => js.Any,
@@ -44,13 +43,10 @@ object XDataFormatTranslator {
     __obj.asInstanceOf[XDataFormatTranslator]
   }
   
-  @scala.inline
-  implicit class XDataFormatTranslatorMutableBuilder[Self <: XDataFormatTranslator] (val x: Self) extends AnyVal {
+  extension [Self <: XDataFormatTranslator](x: Self) {
     
-    @scala.inline
-    def setGetDataFlavorFromSystemDataType(value: js.Any => DataFlavor): Self = StObject.set(x, "getDataFlavorFromSystemDataType", js.Any.fromFunction1(value))
+    inline def setGetDataFlavorFromSystemDataType(value: js.Any => DataFlavor): Self = StObject.set(x, "getDataFlavorFromSystemDataType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSystemDataTypeFromDataFlavor(value: DataFlavor => js.Any): Self = StObject.set(x, "getSystemDataTypeFromDataFlavor", js.Any.fromFunction1(value))
+    inline def setGetSystemDataTypeFromDataFlavor(value: DataFlavor => js.Any): Self = StObject.set(x, "getSystemDataTypeFromDataFlavor", js.Any.fromFunction1(value))
   }
 }

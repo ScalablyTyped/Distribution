@@ -18,22 +18,17 @@ trait DatasetContentDeliveryRule extends StObject {
 }
 object DatasetContentDeliveryRule {
   
-  @scala.inline
-  def apply(destination: DatasetContentDeliveryDestination): DatasetContentDeliveryRule = {
+  inline def apply(destination: DatasetContentDeliveryDestination): DatasetContentDeliveryRule = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatasetContentDeliveryRule]
   }
   
-  @scala.inline
-  implicit class DatasetContentDeliveryRuleMutableBuilder[Self <: DatasetContentDeliveryRule] (val x: Self) extends AnyVal {
+  extension [Self <: DatasetContentDeliveryRule](x: Self) {
     
-    @scala.inline
-    def setDestination(value: DatasetContentDeliveryDestination): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: DatasetContentDeliveryDestination): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntryName(value: EntryName): Self = StObject.set(x, "entryName", value.asInstanceOf[js.Any])
+    inline def setEntryName(value: EntryName): Self = StObject.set(x, "entryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntryNameUndefined: Self = StObject.set(x, "entryName", js.undefined)
+    inline def setEntryNameUndefined: Self = StObject.set(x, "entryName", js.undefined)
   }
 }

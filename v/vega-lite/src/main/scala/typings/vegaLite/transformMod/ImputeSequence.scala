@@ -25,28 +25,21 @@ trait ImputeSequence extends StObject {
 }
 object ImputeSequence {
   
-  @scala.inline
-  def apply(stop: Double): ImputeSequence = {
+  inline def apply(stop: Double): ImputeSequence = {
     val __obj = js.Dynamic.literal(stop = stop.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImputeSequence]
   }
   
-  @scala.inline
-  implicit class ImputeSequenceMutableBuilder[Self <: ImputeSequence] (val x: Self) extends AnyVal {
+  extension [Self <: ImputeSequence](x: Self) {
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    @scala.inline
-    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
-    @scala.inline
-    def setStop(value: Double): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
+    inline def setStop(value: Double): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
   }
 }

@@ -64,6 +64,5 @@ trait App extends StObject {
 }
 object App {
   
-  @scala.inline
-  def apply: AppStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("App").asInstanceOf[AppStatic]
+  inline def apply: AppStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("App").asInstanceOf[AppStatic]
 }

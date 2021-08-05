@@ -17,6 +17,5 @@ object lineDrawerMod {
   @js.native
   class LineSVGDrawer () extends SVGDrawer
   
-  @scala.inline
-  def makeLineCanvasDrawStep(d3LineFactory: js.Function0[Line_[js.Any]]): CanvasDrawStep = ^.asInstanceOf[js.Dynamic].applyDynamic("makeLineCanvasDrawStep")(d3LineFactory.asInstanceOf[js.Any]).asInstanceOf[CanvasDrawStep]
+  inline def makeLineCanvasDrawStep(d3LineFactory: js.Function0[Line_[js.Any]]): CanvasDrawStep = ^.asInstanceOf[js.Dynamic].applyDynamic("makeLineCanvasDrawStep")(d3LineFactory.asInstanceOf[js.Any]).asInstanceOf[CanvasDrawStep]
 }

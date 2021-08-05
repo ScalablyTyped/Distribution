@@ -11,6 +11,5 @@ object makeSourceEnvelopeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(data: String, uri: String): IEnvelope = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(data.asInstanceOf[js.Any], uri.asInstanceOf[js.Any])).asInstanceOf[IEnvelope]
+  inline def default(data: String, uri: String): IEnvelope = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(data.asInstanceOf[js.Any], uri.asInstanceOf[js.Any])).asInstanceOf[IEnvelope]
 }

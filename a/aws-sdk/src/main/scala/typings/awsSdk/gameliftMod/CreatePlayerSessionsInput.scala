@@ -23,28 +23,21 @@ trait CreatePlayerSessionsInput extends StObject {
 }
 object CreatePlayerSessionsInput {
   
-  @scala.inline
-  def apply(GameSessionId: ArnStringModel, PlayerIds: PlayerIdList): CreatePlayerSessionsInput = {
+  inline def apply(GameSessionId: ArnStringModel, PlayerIds: PlayerIdList): CreatePlayerSessionsInput = {
     val __obj = js.Dynamic.literal(GameSessionId = GameSessionId.asInstanceOf[js.Any], PlayerIds = PlayerIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePlayerSessionsInput]
   }
   
-  @scala.inline
-  implicit class CreatePlayerSessionsInputMutableBuilder[Self <: CreatePlayerSessionsInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePlayerSessionsInput](x: Self) {
     
-    @scala.inline
-    def setGameSessionId(value: ArnStringModel): Self = StObject.set(x, "GameSessionId", value.asInstanceOf[js.Any])
+    inline def setGameSessionId(value: ArnStringModel): Self = StObject.set(x, "GameSessionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerDataMap(value: PlayerDataMap): Self = StObject.set(x, "PlayerDataMap", value.asInstanceOf[js.Any])
+    inline def setPlayerDataMap(value: PlayerDataMap): Self = StObject.set(x, "PlayerDataMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerDataMapUndefined: Self = StObject.set(x, "PlayerDataMap", js.undefined)
+    inline def setPlayerDataMapUndefined: Self = StObject.set(x, "PlayerDataMap", js.undefined)
     
-    @scala.inline
-    def setPlayerIds(value: PlayerIdList): Self = StObject.set(x, "PlayerIds", value.asInstanceOf[js.Any])
+    inline def setPlayerIds(value: PlayerIdList): Self = StObject.set(x, "PlayerIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerIdsVarargs(value: NonZeroAndMaxString*): Self = StObject.set(x, "PlayerIds", js.Array(value :_*))
+    inline def setPlayerIdsVarargs(value: NonZeroAndMaxString*): Self = StObject.set(x, "PlayerIds", js.Array(value :_*))
   }
 }

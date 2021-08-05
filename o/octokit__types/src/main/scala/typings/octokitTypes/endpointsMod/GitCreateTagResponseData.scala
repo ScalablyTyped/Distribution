@@ -27,8 +27,7 @@ trait GitCreateTagResponseData extends StObject {
 }
 object GitCreateTagResponseData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     message: String,
     node_id: String,
     `object`: ShaType,
@@ -43,31 +42,22 @@ object GitCreateTagResponseData {
     __obj.asInstanceOf[GitCreateTagResponseData]
   }
   
-  @scala.inline
-  implicit class GitCreateTagResponseDataMutableBuilder[Self <: GitCreateTagResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: GitCreateTagResponseData](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
+    inline def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObject(value: ShaType): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: ShaType): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
+    inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagger(value: DateEmail): Self = StObject.set(x, "tagger", value.asInstanceOf[js.Any])
+    inline def setTagger(value: DateEmail): Self = StObject.set(x, "tagger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerification(value: Payload): Self = StObject.set(x, "verification", value.asInstanceOf[js.Any])
+    inline def setVerification(value: Payload): Self = StObject.set(x, "verification", value.asInstanceOf[js.Any])
   }
 }

@@ -30,8 +30,7 @@ trait FlashXMLUI extends StObject {
 }
 object FlashXMLUI {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accept: () => js.Any,
     cancel: () => js.Any,
     get: () => js.Any,
@@ -48,40 +47,28 @@ object FlashXMLUI {
     __obj.asInstanceOf[FlashXMLUI]
   }
   
-  @scala.inline
-  implicit class FlashXMLUIMutableBuilder[Self <: FlashXMLUI] (val x: Self) extends AnyVal {
+  extension [Self <: FlashXMLUI](x: Self) {
     
-    @scala.inline
-    def setAccept(value: () => js.Any): Self = StObject.set(x, "accept", js.Any.fromFunction0(value))
+    inline def setAccept(value: () => js.Any): Self = StObject.set(x, "accept", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCancel(value: () => js.Any): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+    inline def setCancel(value: () => js.Any): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet(value: () => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+    inline def setGet(value: () => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetControlItemElement(value: () => js.Any): Self = StObject.set(x, "getControlItemElement", js.Any.fromFunction0(value))
+    inline def setGetControlItemElement(value: () => js.Any): Self = StObject.set(x, "getControlItemElement", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEnabled(value: () => js.Any): Self = StObject.set(x, "getEnabled", js.Any.fromFunction0(value))
+    inline def setGetEnabled(value: () => js.Any): Self = StObject.set(x, "getEnabled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetVisible(value: () => js.Any): Self = StObject.set(x, "getVisible", js.Any.fromFunction0(value))
+    inline def setGetVisible(value: () => js.Any): Self = StObject.set(x, "getVisible", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet(value: () => js.Any): Self = StObject.set(x, "set", js.Any.fromFunction0(value))
+    inline def setSet(value: () => js.Any): Self = StObject.set(x, "set", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetControItemElement(value: () => js.Any): Self = StObject.set(x, "setControItemElement", js.Any.fromFunction0(value))
+    inline def setSetControItemElement(value: () => js.Any): Self = StObject.set(x, "setControItemElement", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetControItemElements(value: () => js.Any): Self = StObject.set(x, "setControItemElements", js.Any.fromFunction0(value))
+    inline def setSetControItemElements(value: () => js.Any): Self = StObject.set(x, "setControItemElements", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetEnabled(value: () => js.Any): Self = StObject.set(x, "setEnabled", js.Any.fromFunction0(value))
+    inline def setSetEnabled(value: () => js.Any): Self = StObject.set(x, "setEnabled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetVisible(value: () => js.Any): Self = StObject.set(x, "setVisible", js.Any.fromFunction0(value))
+    inline def setSetVisible(value: () => js.Any): Self = StObject.set(x, "setVisible", js.Any.fromFunction0(value))
   }
 }

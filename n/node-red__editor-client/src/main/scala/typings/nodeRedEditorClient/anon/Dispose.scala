@@ -20,34 +20,25 @@ trait Dispose extends StObject {
 }
 object Dispose {
   
-  @scala.inline
-  def apply(target: JQuery[HTMLElement]): Dispose = {
+  inline def apply(target: JQuery[HTMLElement]): Dispose = {
     val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dispose]
   }
   
-  @scala.inline
-  implicit class DisposeMutableBuilder[Self <: Dispose] (val x: Self) extends AnyVal {
+  extension [Self <: Dispose](x: Self) {
     
-    @scala.inline
-    def setAlign(value: right | left): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: right | left): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    @scala.inline
-    def setDispose(value: Boolean): Self = StObject.set(x, "dispose", value.asInstanceOf[js.Any])
+    inline def setDispose(value: Boolean): Self = StObject.set(x, "dispose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisposeUndefined: Self = StObject.set(x, "dispose", js.undefined)
+    inline def setDisposeUndefined: Self = StObject.set(x, "dispose", js.undefined)
     
-    @scala.inline
-    def setOffset(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setTarget(value: JQuery[HTMLElement]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: JQuery[HTMLElement]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

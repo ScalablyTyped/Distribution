@@ -16,37 +16,27 @@ trait Position extends StObject {
 }
 object Position {
   
-  @scala.inline
-  def apply(): Position = {
+  inline def apply(): Position = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Position]
   }
   
-  @scala.inline
-  implicit class PositionMutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
+  extension [Self <: Position](x: Self) {
     
-    @scala.inline
-    def setAdjustMapMargin(value: Boolean): Self = StObject.set(x, "adjustMapMargin", value.asInstanceOf[js.Any])
+    inline def setAdjustMapMargin(value: Boolean): Self = StObject.set(x, "adjustMapMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdjustMapMarginUndefined: Self = StObject.set(x, "adjustMapMargin", js.undefined)
+    inline def setAdjustMapMarginUndefined: Self = StObject.set(x, "adjustMapMargin", js.undefined)
     
-    @scala.inline
-    def setPosition(value: Bottom): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Bottom): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setScaleLine(value: Boolean): Self = StObject.set(x, "scaleLine", value.asInstanceOf[js.Any])
+    inline def setScaleLine(value: Boolean): Self = StObject.set(x, "scaleLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleLineUndefined: Self = StObject.set(x, "scaleLine", js.undefined)
+    inline def setScaleLineUndefined: Self = StObject.set(x, "scaleLine", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

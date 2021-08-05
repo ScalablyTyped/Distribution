@@ -18,16 +18,13 @@ trait ASPxClientFileManagerItemCopiedEventArgs
 }
 object ASPxClientFileManagerItemCopiedEventArgs {
   
-  @scala.inline
-  def apply(fullName: String, isFolder: Boolean, name: String, oldFolderFullName: String): ASPxClientFileManagerItemCopiedEventArgs = {
+  inline def apply(fullName: String, isFolder: Boolean, name: String, oldFolderFullName: String): ASPxClientFileManagerItemCopiedEventArgs = {
     val __obj = js.Dynamic.literal(fullName = fullName.asInstanceOf[js.Any], isFolder = isFolder.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], oldFolderFullName = oldFolderFullName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientFileManagerItemCopiedEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientFileManagerItemCopiedEventArgsMutableBuilder[Self <: ASPxClientFileManagerItemCopiedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientFileManagerItemCopiedEventArgs](x: Self) {
     
-    @scala.inline
-    def setOldFolderFullName(value: String): Self = StObject.set(x, "oldFolderFullName", value.asInstanceOf[js.Any])
+    inline def setOldFolderFullName(value: String): Self = StObject.set(x, "oldFolderFullName", value.asInstanceOf[js.Any])
   }
 }

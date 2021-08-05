@@ -10,16 +10,13 @@ trait Bearer extends StObject {
 }
 object Bearer {
   
-  @scala.inline
-  def apply(bearer: String): Bearer = {
+  inline def apply(bearer: String): Bearer = {
     val __obj = js.Dynamic.literal(bearer = bearer.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bearer]
   }
   
-  @scala.inline
-  implicit class BearerMutableBuilder[Self <: Bearer] (val x: Self) extends AnyVal {
+  extension [Self <: Bearer](x: Self) {
     
-    @scala.inline
-    def setBearer(value: String): Self = StObject.set(x, "bearer", value.asInstanceOf[js.Any])
+    inline def setBearer(value: String): Self = StObject.set(x, "bearer", value.asInstanceOf[js.Any])
   }
 }

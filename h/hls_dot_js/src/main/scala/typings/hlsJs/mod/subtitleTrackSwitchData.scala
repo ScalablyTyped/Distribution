@@ -10,16 +10,13 @@ trait subtitleTrackSwitchData extends StObject {
 }
 object subtitleTrackSwitchData {
   
-  @scala.inline
-  def apply(id: String): subtitleTrackSwitchData = {
+  inline def apply(id: String): subtitleTrackSwitchData = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[subtitleTrackSwitchData]
   }
   
-  @scala.inline
-  implicit class subtitleTrackSwitchDataMutableBuilder[Self <: subtitleTrackSwitchData] (val x: Self) extends AnyVal {
+  extension [Self <: subtitleTrackSwitchData](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

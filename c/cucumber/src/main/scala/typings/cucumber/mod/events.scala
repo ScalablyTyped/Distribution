@@ -15,20 +15,16 @@ object events {
   }
   object Event {
     
-    @scala.inline
-    def apply(data: js.Any, name: String): Event = {
+    inline def apply(data: js.Any, name: String): Event = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Event]
     }
     
-    @scala.inline
-    implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
+    extension [Self <: Event](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -55,8 +51,7 @@ object events {
   }
   object FeaturePayload {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       description: String,
       keyword: String,
       line: Double,
@@ -69,35 +64,25 @@ object events {
       __obj.asInstanceOf[FeaturePayload]
     }
     
-    @scala.inline
-    implicit class FeaturePayloadMutableBuilder[Self <: FeaturePayload] (val x: Self) extends AnyVal {
+    extension [Self <: FeaturePayload](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
+      inline def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScenarios(value: js.Array[Scenario]): Self = StObject.set(x, "scenarios", value.asInstanceOf[js.Any])
+      inline def setScenarios(value: js.Array[Scenario]): Self = StObject.set(x, "scenarios", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScenariosVarargs(value: Scenario*): Self = StObject.set(x, "scenarios", js.Array(value :_*))
+      inline def setScenariosVarargs(value: Scenario*): Self = StObject.set(x, "scenarios", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
       
-      @scala.inline
-      def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     }
   }
   
@@ -109,17 +94,14 @@ object events {
   }
   object FeaturesPayload {
     
-    @scala.inline
-    def apply(getFeatures: () => js.Array[js.Any]): FeaturesPayload = {
+    inline def apply(getFeatures: () => js.Array[js.Any]): FeaturesPayload = {
       val __obj = js.Dynamic.literal(getFeatures = js.Any.fromFunction0(getFeatures))
       __obj.asInstanceOf[FeaturesPayload]
     }
     
-    @scala.inline
-    implicit class FeaturesPayloadMutableBuilder[Self <: FeaturesPayload] (val x: Self) extends AnyVal {
+    extension [Self <: FeaturesPayload](x: Self) {
       
-      @scala.inline
-      def setGetFeatures(value: () => js.Array[js.Any]): Self = StObject.set(x, "getFeatures", js.Any.fromFunction0(value))
+      inline def setGetFeatures(value: () => js.Array[js.Any]): Self = StObject.set(x, "getFeatures", js.Any.fromFunction0(value))
     }
   }
   
@@ -139,8 +121,7 @@ object events {
   }
   object FeaturesResultPayload {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       duration: Double,
       scenarioResults: js.Array[js.Any],
       stepsResults: js.Array[js.Any],
@@ -151,29 +132,21 @@ object events {
       __obj.asInstanceOf[FeaturesResultPayload]
     }
     
-    @scala.inline
-    implicit class FeaturesResultPayloadMutableBuilder[Self <: FeaturesResultPayload] (val x: Self) extends AnyVal {
+    extension [Self <: FeaturesResultPayload](x: Self) {
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScenarioResults(value: js.Array[js.Any]): Self = StObject.set(x, "scenarioResults", value.asInstanceOf[js.Any])
+      inline def setScenarioResults(value: js.Array[js.Any]): Self = StObject.set(x, "scenarioResults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScenarioResultsVarargs(value: js.Any*): Self = StObject.set(x, "scenarioResults", js.Array(value :_*))
+      inline def setScenarioResultsVarargs(value: js.Any*): Self = StObject.set(x, "scenarioResults", js.Array(value :_*))
       
-      @scala.inline
-      def setStepsResults(value: js.Array[js.Any]): Self = StObject.set(x, "stepsResults", value.asInstanceOf[js.Any])
+      inline def setStepsResults(value: js.Array[js.Any]): Self = StObject.set(x, "stepsResults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepsResultsVarargs(value: js.Any*): Self = StObject.set(x, "stepsResults", js.Array(value :_*))
+      inline def setStepsResultsVarargs(value: js.Any*): Self = StObject.set(x, "stepsResults", js.Array(value :_*))
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     }
   }
   
@@ -203,8 +176,7 @@ object events {
   }
   object ScenarioPayload {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       description: String,
       exception: Error,
       feature: Feature,
@@ -220,47 +192,33 @@ object events {
       __obj.asInstanceOf[ScenarioPayload]
     }
     
-    @scala.inline
-    implicit class ScenarioPayloadMutableBuilder[Self <: ScenarioPayload] (val x: Self) extends AnyVal {
+    extension [Self <: ScenarioPayload](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setException(value: Error): Self = StObject.set(x, "exception", value.asInstanceOf[js.Any])
+      inline def setException(value: Error): Self = StObject.set(x, "exception", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeature(value: Feature): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
+      inline def setFeature(value: Feature): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
+      inline def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLines(value: js.Array[Double]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+      inline def setLines(value: js.Array[Double]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinesVarargs(value: Double*): Self = StObject.set(x, "lines", js.Array(value :_*))
+      inline def setLinesVarargs(value: Double*): Self = StObject.set(x, "lines", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSteps(value: js.Array[Step]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+      inline def setSteps(value: js.Array[Step]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepsVarargs(value: Step*): Self = StObject.set(x, "steps", js.Array(value :_*))
+      inline def setStepsVarargs(value: Step*): Self = StObject.set(x, "steps", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
       
-      @scala.inline
-      def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     }
   }
   
@@ -280,8 +238,7 @@ object events {
   }
   object ScenarioResultPayload {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       duration: js.Any,
       failureException: Error,
       scenario: Scenario,
@@ -292,26 +249,19 @@ object events {
       __obj.asInstanceOf[ScenarioResultPayload]
     }
     
-    @scala.inline
-    implicit class ScenarioResultPayloadMutableBuilder[Self <: ScenarioResultPayload] (val x: Self) extends AnyVal {
+    extension [Self <: ScenarioResultPayload](x: Self) {
       
-      @scala.inline
-      def setDuration(value: js.Any): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: js.Any): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailureException(value: Error): Self = StObject.set(x, "failureException", value.asInstanceOf[js.Any])
+      inline def setFailureException(value: Error): Self = StObject.set(x, "failureException", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScenario(value: Scenario): Self = StObject.set(x, "scenario", value.asInstanceOf[js.Any])
+      inline def setScenario(value: Scenario): Self = StObject.set(x, "scenario", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepResults(value: js.Array[js.Any]): Self = StObject.set(x, "stepResults", value.asInstanceOf[js.Any])
+      inline def setStepResults(value: js.Array[js.Any]): Self = StObject.set(x, "stepResults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepResultsVarargs(value: js.Any*): Self = StObject.set(x, "stepResults", js.Array(value :_*))
+      inline def setStepResultsVarargs(value: js.Any*): Self = StObject.set(x, "stepResults", js.Array(value :_*))
     }
   }
   
@@ -337,8 +287,7 @@ object events {
   }
   object StepPayload {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arguments: js.Any,
       isBackground: Boolean,
       keyword: String,
@@ -352,32 +301,23 @@ object events {
       __obj.asInstanceOf[StepPayload]
     }
     
-    @scala.inline
-    implicit class StepPayloadMutableBuilder[Self <: StepPayload] (val x: Self) extends AnyVal {
+    extension [Self <: StepPayload](x: Self) {
       
-      @scala.inline
-      def setArguments(value: js.Any): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+      inline def setArguments(value: js.Any): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBackground(value: Boolean): Self = StObject.set(x, "isBackground", value.asInstanceOf[js.Any])
+      inline def setIsBackground(value: Boolean): Self = StObject.set(x, "isBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
+      inline def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeywordType(value: String): Self = StObject.set(x, "keywordType", value.asInstanceOf[js.Any])
+      inline def setKeywordType(value: String): Self = StObject.set(x, "keywordType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScenario(value: Scenario): Self = StObject.set(x, "scenario", value.asInstanceOf[js.Any])
+      inline def setScenario(value: Scenario): Self = StObject.set(x, "scenario", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     }
   }
   
@@ -401,8 +341,7 @@ object events {
   }
   object StepResultPayload {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ambiguousStepDefinitions: js.Any,
       attachments: js.Array[js.Any],
       duration: js.Any,
@@ -415,32 +354,23 @@ object events {
       __obj.asInstanceOf[StepResultPayload]
     }
     
-    @scala.inline
-    implicit class StepResultPayloadMutableBuilder[Self <: StepResultPayload] (val x: Self) extends AnyVal {
+    extension [Self <: StepResultPayload](x: Self) {
       
-      @scala.inline
-      def setAmbiguousStepDefinitions(value: js.Any): Self = StObject.set(x, "ambiguousStepDefinitions", value.asInstanceOf[js.Any])
+      inline def setAmbiguousStepDefinitions(value: js.Any): Self = StObject.set(x, "ambiguousStepDefinitions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachments(value: js.Array[js.Any]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
+      inline def setAttachments(value: js.Array[js.Any]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachmentsVarargs(value: js.Any*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+      inline def setAttachmentsVarargs(value: js.Any*): Self = StObject.set(x, "attachments", js.Array(value :_*))
       
-      @scala.inline
-      def setDuration(value: js.Any): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: js.Any): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailureException(value: Error): Self = StObject.set(x, "failureException", value.asInstanceOf[js.Any])
+      inline def setFailureException(value: Error): Self = StObject.set(x, "failureException", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStep(value: Step): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: Step): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepDefinition(value: StepDefinition): Self = StObject.set(x, "stepDefinition", value.asInstanceOf[js.Any])
+      inline def setStepDefinition(value: StepDefinition): Self = StObject.set(x, "stepDefinition", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -23,19 +23,15 @@ trait ASPxClientReportDesignerDialogEventArgs
 }
 object ASPxClientReportDesignerDialogEventArgs {
   
-  @scala.inline
-  def apply(Report: js.Any, Url: String): ASPxClientReportDesignerDialogEventArgs = {
+  inline def apply(Report: js.Any, Url: String): ASPxClientReportDesignerDialogEventArgs = {
     val __obj = js.Dynamic.literal(Report = Report.asInstanceOf[js.Any], Url = Url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientReportDesignerDialogEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientReportDesignerDialogEventArgsMutableBuilder[Self <: ASPxClientReportDesignerDialogEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientReportDesignerDialogEventArgs](x: Self) {
     
-    @scala.inline
-    def setReport(value: js.Any): Self = StObject.set(x, "Report", value.asInstanceOf[js.Any])
+    inline def setReport(value: js.Any): Self = StObject.set(x, "Report", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
   }
 }

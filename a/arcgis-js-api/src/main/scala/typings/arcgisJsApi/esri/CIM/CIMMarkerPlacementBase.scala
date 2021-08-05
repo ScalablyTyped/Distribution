@@ -15,23 +15,18 @@ trait CIMMarkerPlacementBase extends StObject {
 }
 object CIMMarkerPlacementBase {
   
-  @scala.inline
-  def apply(`type`: String): CIMMarkerPlacementBase = {
+  inline def apply(`type`: String): CIMMarkerPlacementBase = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CIMMarkerPlacementBase]
   }
   
-  @scala.inline
-  implicit class CIMMarkerPlacementBaseMutableBuilder[Self <: CIMMarkerPlacementBase] (val x: Self) extends AnyVal {
+  extension [Self <: CIMMarkerPlacementBase](x: Self) {
     
-    @scala.inline
-    def setPrimitiveName(value: String): Self = StObject.set(x, "primitiveName", value.asInstanceOf[js.Any])
+    inline def setPrimitiveName(value: String): Self = StObject.set(x, "primitiveName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimitiveNameUndefined: Self = StObject.set(x, "primitiveName", js.undefined)
+    inline def setPrimitiveNameUndefined: Self = StObject.set(x, "primitiveName", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

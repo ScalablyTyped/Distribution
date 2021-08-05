@@ -16,11 +16,9 @@ object personalAccessTokenMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def wrapPersonalAccessToken(http: AxiosInstance, data: PersonalAccessTokenProp): PersonalAccessToken = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapPersonalAccessToken")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[PersonalAccessToken]
+  inline def wrapPersonalAccessToken(http: AxiosInstance, data: PersonalAccessTokenProp): PersonalAccessToken = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapPersonalAccessToken")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[PersonalAccessToken]
   
-  @scala.inline
-  def wrapPersonalAccessTokenCollection(http: AxiosInstance, data: CollectionProp[PersonalAccessTokenProp]): Collection[PersonalAccessToken, PersonalAccessTokenProp] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapPersonalAccessTokenCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[PersonalAccessToken, PersonalAccessTokenProp]]
+  inline def wrapPersonalAccessTokenCollection(http: AxiosInstance, data: CollectionProp[PersonalAccessTokenProp]): Collection[PersonalAccessToken, PersonalAccessTokenProp] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapPersonalAccessTokenCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[PersonalAccessToken, PersonalAccessTokenProp]]
   
   /* Inlined std.Pick<contentful-management.contentful-management/dist/typings/entities/personal-access-token.PersonalAccessToken, 'name' | 'scopes'> */
   trait CreatePersonalAccessTokenProps extends StObject {
@@ -31,23 +29,18 @@ object personalAccessTokenMod {
   }
   object CreatePersonalAccessTokenProps {
     
-    @scala.inline
-    def apply(name: String, scopes: js.Array[content_management_manage]): CreatePersonalAccessTokenProps = {
+    inline def apply(name: String, scopes: js.Array[content_management_manage]): CreatePersonalAccessTokenProps = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], scopes = scopes.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreatePersonalAccessTokenProps]
     }
     
-    @scala.inline
-    implicit class CreatePersonalAccessTokenPropsMutableBuilder[Self <: CreatePersonalAccessTokenProps] (val x: Self) extends AnyVal {
+    extension [Self <: CreatePersonalAccessTokenProps](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopes(value: js.Array[content_management_manage]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+      inline def setScopes(value: js.Array[content_management_manage]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopesVarargs(value: content_management_manage*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: content_management_manage*): Self = StObject.set(x, "scopes", js.Array(value :_*))
     }
   }
   
@@ -77,8 +70,7 @@ object personalAccessTokenMod {
   }
   object PersonalAccessToken {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       name: String,
       revoke: () => js.Promise[PersonalAccessToken],
       scopes: js.Array[content_management_manage],
@@ -89,11 +81,9 @@ object personalAccessTokenMod {
       __obj.asInstanceOf[PersonalAccessToken]
     }
     
-    @scala.inline
-    implicit class PersonalAccessTokenMutableBuilder[Self <: PersonalAccessToken] (val x: Self) extends AnyVal {
+    extension [Self <: PersonalAccessToken](x: Self) {
       
-      @scala.inline
-      def setRevoke(value: () => js.Promise[PersonalAccessToken]): Self = StObject.set(x, "revoke", js.Any.fromFunction0(value))
+      inline def setRevoke(value: () => js.Promise[PersonalAccessToken]): Self = StObject.set(x, "revoke", js.Any.fromFunction0(value))
     }
   }
   
@@ -111,38 +101,28 @@ object personalAccessTokenMod {
   }
   object PersonalAccessTokenProp {
     
-    @scala.inline
-    def apply(name: String, scopes: js.Array[content_management_manage], sys: MetaSysProps): PersonalAccessTokenProp = {
+    inline def apply(name: String, scopes: js.Array[content_management_manage], sys: MetaSysProps): PersonalAccessTokenProp = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], scopes = scopes.asInstanceOf[js.Any], sys = sys.asInstanceOf[js.Any], revokedAt = null)
       __obj.asInstanceOf[PersonalAccessTokenProp]
     }
     
-    @scala.inline
-    implicit class PersonalAccessTokenPropMutableBuilder[Self <: PersonalAccessTokenProp] (val x: Self) extends AnyVal {
+    extension [Self <: PersonalAccessTokenProp](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevokedAt(value: String): Self = StObject.set(x, "revokedAt", value.asInstanceOf[js.Any])
+      inline def setRevokedAt(value: String): Self = StObject.set(x, "revokedAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevokedAtNull: Self = StObject.set(x, "revokedAt", null)
+      inline def setRevokedAtNull: Self = StObject.set(x, "revokedAt", null)
       
-      @scala.inline
-      def setScopes(value: js.Array[content_management_manage]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+      inline def setScopes(value: js.Array[content_management_manage]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopesVarargs(value: content_management_manage*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: content_management_manage*): Self = StObject.set(x, "scopes", js.Array(value :_*))
       
-      @scala.inline
-      def setSys(value: MetaSysProps): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
+      inline def setSys(value: MetaSysProps): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+      inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
     }
   }
 }

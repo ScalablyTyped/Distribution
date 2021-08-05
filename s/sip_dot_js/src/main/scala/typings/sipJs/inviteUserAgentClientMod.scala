@@ -18,13 +18,13 @@ object inviteUserAgentClientMod {
     def this(core: UserAgentCore, message: OutgoingRequestMessage) = this()
     def this(core: UserAgentCore, message: OutgoingRequestMessage, delegate: OutgoingInviteRequestDelegate) = this()
     
-    var confirmedDialogAcks: js.Any = js.native
+    /* private */ var confirmedDialogAcks: js.Any = js.native
     
-    var confirmedDialogs: js.Any = js.native
+    /* private */ var confirmedDialogs: js.Any = js.native
     
     @JSName("delegate")
     var delegate_InviteUserAgentClient: js.UndefOr[OutgoingInviteRequestDelegate] = js.native
     
-    var earlyDialogs: js.Any = js.native
+    /* private */ var earlyDialogs: js.Any = js.native
   }
 }

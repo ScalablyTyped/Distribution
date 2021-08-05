@@ -24,7 +24,7 @@ object astPathMod {
     def parentOf(): js.UndefOr[T] = js.native
     def parentOf(node: T): js.UndefOr[T] = js.native
     
-    var path: js.Any = js.native
+    /* private */ var path: js.Any = js.native
     
     def pop(): T = js.native
     

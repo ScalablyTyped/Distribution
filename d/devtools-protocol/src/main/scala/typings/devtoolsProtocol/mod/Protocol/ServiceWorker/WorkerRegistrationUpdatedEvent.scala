@@ -10,19 +10,15 @@ trait WorkerRegistrationUpdatedEvent extends StObject {
 }
 object WorkerRegistrationUpdatedEvent {
   
-  @scala.inline
-  def apply(registrations: js.Array[ServiceWorkerRegistration]): WorkerRegistrationUpdatedEvent = {
+  inline def apply(registrations: js.Array[ServiceWorkerRegistration]): WorkerRegistrationUpdatedEvent = {
     val __obj = js.Dynamic.literal(registrations = registrations.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkerRegistrationUpdatedEvent]
   }
   
-  @scala.inline
-  implicit class WorkerRegistrationUpdatedEventMutableBuilder[Self <: WorkerRegistrationUpdatedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: WorkerRegistrationUpdatedEvent](x: Self) {
     
-    @scala.inline
-    def setRegistrations(value: js.Array[ServiceWorkerRegistration]): Self = StObject.set(x, "registrations", value.asInstanceOf[js.Any])
+    inline def setRegistrations(value: js.Array[ServiceWorkerRegistration]): Self = StObject.set(x, "registrations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistrationsVarargs(value: ServiceWorkerRegistration*): Self = StObject.set(x, "registrations", js.Array(value :_*))
+    inline def setRegistrationsVarargs(value: ServiceWorkerRegistration*): Self = StObject.set(x, "registrations", js.Array(value :_*))
   }
 }

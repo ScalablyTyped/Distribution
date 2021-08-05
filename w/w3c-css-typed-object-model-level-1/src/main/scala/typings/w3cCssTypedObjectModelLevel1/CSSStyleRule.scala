@@ -10,16 +10,13 @@ trait CSSStyleRule extends StObject {
 }
 object CSSStyleRule {
   
-  @scala.inline
-  def apply(styleMap: StylePropertyMap): CSSStyleRule = {
+  inline def apply(styleMap: StylePropertyMap): CSSStyleRule = {
     val __obj = js.Dynamic.literal(styleMap = styleMap.asInstanceOf[js.Any])
     __obj.asInstanceOf[CSSStyleRule]
   }
   
-  @scala.inline
-  implicit class CSSStyleRuleMutableBuilder[Self <: CSSStyleRule] (val x: Self) extends AnyVal {
+  extension [Self <: CSSStyleRule](x: Self) {
     
-    @scala.inline
-    def setStyleMap(value: StylePropertyMap): Self = StObject.set(x, "styleMap", value.asInstanceOf[js.Any])
+    inline def setStyleMap(value: StylePropertyMap): Self = StObject.set(x, "styleMap", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait CrossRegionCopyRetainRule extends StObject {
 }
 object CrossRegionCopyRetainRule {
   
-  @scala.inline
-  def apply(): CrossRegionCopyRetainRule = {
+  inline def apply(): CrossRegionCopyRetainRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CrossRegionCopyRetainRule]
   }
   
-  @scala.inline
-  implicit class CrossRegionCopyRetainRuleMutableBuilder[Self <: CrossRegionCopyRetainRule] (val x: Self) extends AnyVal {
+  extension [Self <: CrossRegionCopyRetainRule](x: Self) {
     
-    @scala.inline
-    def setInterval(value: Interval): Self = StObject.set(x, "Interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Interval): Self = StObject.set(x, "Interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUndefined: Self = StObject.set(x, "Interval", js.undefined)
+    inline def setIntervalUndefined: Self = StObject.set(x, "Interval", js.undefined)
     
-    @scala.inline
-    def setIntervalUnit(value: RetentionIntervalUnitValues): Self = StObject.set(x, "IntervalUnit", value.asInstanceOf[js.Any])
+    inline def setIntervalUnit(value: RetentionIntervalUnitValues): Self = StObject.set(x, "IntervalUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUnitUndefined: Self = StObject.set(x, "IntervalUnit", js.undefined)
+    inline def setIntervalUnitUndefined: Self = StObject.set(x, "IntervalUnit", js.undefined)
   }
 }

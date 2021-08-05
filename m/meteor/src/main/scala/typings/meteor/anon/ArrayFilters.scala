@@ -15,34 +15,25 @@ trait ArrayFilters extends StObject {
 }
 object ArrayFilters {
   
-  @scala.inline
-  def apply(): ArrayFilters = {
+  inline def apply(): ArrayFilters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ArrayFilters]
   }
   
-  @scala.inline
-  implicit class ArrayFiltersMutableBuilder[Self <: ArrayFilters] (val x: Self) extends AnyVal {
+  extension [Self <: ArrayFilters](x: Self) {
     
-    @scala.inline
-    def setArrayFilters(value: js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "arrayFilters", value.asInstanceOf[js.Any])
+    inline def setArrayFilters(value: js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "arrayFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrayFiltersUndefined: Self = StObject.set(x, "arrayFilters", js.undefined)
+    inline def setArrayFiltersUndefined: Self = StObject.set(x, "arrayFilters", js.undefined)
     
-    @scala.inline
-    def setArrayFiltersVarargs(value: StringDictionary[js.Any]*): Self = StObject.set(x, "arrayFilters", js.Array(value :_*))
+    inline def setArrayFiltersVarargs(value: StringDictionary[js.Any]*): Self = StObject.set(x, "arrayFilters", js.Array(value :_*))
     
-    @scala.inline
-    def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
+    inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
+    inline def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
     
-    @scala.inline
-    def setUpsert(value: Boolean): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
+    inline def setUpsert(value: Boolean): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpsertUndefined: Self = StObject.set(x, "upsert", js.undefined)
+    inline def setUpsertUndefined: Self = StObject.set(x, "upsert", js.undefined)
   }
 }

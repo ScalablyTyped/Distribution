@@ -113,109 +113,75 @@ trait WMSSublayerProperties extends StObject {
 }
 object WMSSublayerProperties {
   
-  @scala.inline
-  def apply(): WMSSublayerProperties = {
+  inline def apply(): WMSSublayerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WMSSublayerProperties]
   }
   
-  @scala.inline
-  implicit class WMSSublayerPropertiesMutableBuilder[Self <: WMSSublayerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: WMSSublayerProperties](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setFullExtent(value: ExtentProperties): Self = StObject.set(x, "fullExtent", value.asInstanceOf[js.Any])
+    inline def setFullExtent(value: ExtentProperties): Self = StObject.set(x, "fullExtent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullExtentUndefined: Self = StObject.set(x, "fullExtent", js.undefined)
+    inline def setFullExtentUndefined: Self = StObject.set(x, "fullExtent", js.undefined)
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLayer(value: WMSLayerProperties): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: WMSLayerProperties): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
+    inline def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
     
-    @scala.inline
-    def setLegendEnabled(value: Boolean): Self = StObject.set(x, "legendEnabled", value.asInstanceOf[js.Any])
+    inline def setLegendEnabled(value: Boolean): Self = StObject.set(x, "legendEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendEnabledUndefined: Self = StObject.set(x, "legendEnabled", js.undefined)
+    inline def setLegendEnabledUndefined: Self = StObject.set(x, "legendEnabled", js.undefined)
     
-    @scala.inline
-    def setLegendUrl(value: String): Self = StObject.set(x, "legendUrl", value.asInstanceOf[js.Any])
+    inline def setLegendUrl(value: String): Self = StObject.set(x, "legendUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendUrlUndefined: Self = StObject.set(x, "legendUrl", js.undefined)
+    inline def setLegendUrlUndefined: Self = StObject.set(x, "legendUrl", js.undefined)
     
-    @scala.inline
-    def setMaxScale(value: Double): Self = StObject.set(x, "maxScale", value.asInstanceOf[js.Any])
+    inline def setMaxScale(value: Double): Self = StObject.set(x, "maxScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxScaleUndefined: Self = StObject.set(x, "maxScale", js.undefined)
+    inline def setMaxScaleUndefined: Self = StObject.set(x, "maxScale", js.undefined)
     
-    @scala.inline
-    def setMinScale(value: Double): Self = StObject.set(x, "minScale", value.asInstanceOf[js.Any])
+    inline def setMinScale(value: Double): Self = StObject.set(x, "minScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinScaleUndefined: Self = StObject.set(x, "minScale", js.undefined)
+    inline def setMinScaleUndefined: Self = StObject.set(x, "minScale", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPopupEnabled(value: Boolean): Self = StObject.set(x, "popupEnabled", value.asInstanceOf[js.Any])
+    inline def setPopupEnabled(value: Boolean): Self = StObject.set(x, "popupEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopupEnabledUndefined: Self = StObject.set(x, "popupEnabled", js.undefined)
+    inline def setPopupEnabledUndefined: Self = StObject.set(x, "popupEnabled", js.undefined)
     
-    @scala.inline
-    def setQueryable(value: Boolean): Self = StObject.set(x, "queryable", value.asInstanceOf[js.Any])
+    inline def setQueryable(value: Boolean): Self = StObject.set(x, "queryable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryableUndefined: Self = StObject.set(x, "queryable", js.undefined)
+    inline def setQueryableUndefined: Self = StObject.set(x, "queryable", js.undefined)
     
-    @scala.inline
-    def setSpatialReferences(value: js.Array[Double]): Self = StObject.set(x, "spatialReferences", value.asInstanceOf[js.Any])
+    inline def setSpatialReferences(value: js.Array[Double]): Self = StObject.set(x, "spatialReferences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpatialReferencesUndefined: Self = StObject.set(x, "spatialReferences", js.undefined)
+    inline def setSpatialReferencesUndefined: Self = StObject.set(x, "spatialReferences", js.undefined)
     
-    @scala.inline
-    def setSpatialReferencesVarargs(value: Double*): Self = StObject.set(x, "spatialReferences", js.Array(value :_*))
+    inline def setSpatialReferencesVarargs(value: Double*): Self = StObject.set(x, "spatialReferences", js.Array(value :_*))
     
-    @scala.inline
-    def setSublayers(value: CollectionProperties[WMSSublayerProperties]): Self = StObject.set(x, "sublayers", value.asInstanceOf[js.Any])
+    inline def setSublayers(value: CollectionProperties[WMSSublayerProperties]): Self = StObject.set(x, "sublayers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSublayersUndefined: Self = StObject.set(x, "sublayers", js.undefined)
+    inline def setSublayersUndefined: Self = StObject.set(x, "sublayers", js.undefined)
     
-    @scala.inline
-    def setSublayersVarargs(value: WMSSublayerProperties*): Self = StObject.set(x, "sublayers", js.Array(value :_*))
+    inline def setSublayersVarargs(value: WMSSublayerProperties*): Self = StObject.set(x, "sublayers", js.Array(value :_*))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

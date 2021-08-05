@@ -33,40 +33,29 @@ trait ModelPackageContainerDefinition extends StObject {
 }
 object ModelPackageContainerDefinition {
   
-  @scala.inline
-  def apply(Image: ContainerImage): ModelPackageContainerDefinition = {
+  inline def apply(Image: ContainerImage): ModelPackageContainerDefinition = {
     val __obj = js.Dynamic.literal(Image = Image.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelPackageContainerDefinition]
   }
   
-  @scala.inline
-  implicit class ModelPackageContainerDefinitionMutableBuilder[Self <: ModelPackageContainerDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: ModelPackageContainerDefinition](x: Self) {
     
-    @scala.inline
-    def setContainerHostname(value: ContainerHostname): Self = StObject.set(x, "ContainerHostname", value.asInstanceOf[js.Any])
+    inline def setContainerHostname(value: ContainerHostname): Self = StObject.set(x, "ContainerHostname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerHostnameUndefined: Self = StObject.set(x, "ContainerHostname", js.undefined)
+    inline def setContainerHostnameUndefined: Self = StObject.set(x, "ContainerHostname", js.undefined)
     
-    @scala.inline
-    def setImage(value: ContainerImage): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
+    inline def setImage(value: ContainerImage): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageDigest(value: ImageDigest): Self = StObject.set(x, "ImageDigest", value.asInstanceOf[js.Any])
+    inline def setImageDigest(value: ImageDigest): Self = StObject.set(x, "ImageDigest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageDigestUndefined: Self = StObject.set(x, "ImageDigest", js.undefined)
+    inline def setImageDigestUndefined: Self = StObject.set(x, "ImageDigest", js.undefined)
     
-    @scala.inline
-    def setModelDataUrl(value: Url): Self = StObject.set(x, "ModelDataUrl", value.asInstanceOf[js.Any])
+    inline def setModelDataUrl(value: Url): Self = StObject.set(x, "ModelDataUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelDataUrlUndefined: Self = StObject.set(x, "ModelDataUrl", js.undefined)
+    inline def setModelDataUrlUndefined: Self = StObject.set(x, "ModelDataUrl", js.undefined)
     
-    @scala.inline
-    def setProductId(value: ProductId): Self = StObject.set(x, "ProductId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: ProductId): Self = StObject.set(x, "ProductId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductIdUndefined: Self = StObject.set(x, "ProductId", js.undefined)
+    inline def setProductIdUndefined: Self = StObject.set(x, "ProductId", js.undefined)
   }
 }

@@ -18,32 +18,24 @@ object interfacesMod {
   }
   object CommonProps {
     
-    @scala.inline
-    def apply(): CommonProps = {
+    inline def apply(): CommonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CommonProps]
     }
     
-    @scala.inline
-    implicit class CommonPropsMutableBuilder[Self <: CommonProps] (val x: Self) extends AnyVal {
+    extension [Self <: CommonProps](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setCss(value: String | PrecompiledCss): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+      inline def setCss(value: String | PrecompiledCss): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
+      inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
       
-      @scala.inline
-      def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+      inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
     }
   }
   
@@ -55,20 +47,16 @@ object interfacesMod {
   }
   object LengthObject {
     
-    @scala.inline
-    def apply(unit: String, value: Double): LengthObject = {
+    inline def apply(unit: String, value: Double): LengthObject = {
       val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[LengthObject]
     }
     
-    @scala.inline
-    implicit class LengthObjectMutableBuilder[Self <: LengthObject] (val x: Self) extends AnyVal {
+    extension [Self <: LengthObject](x: Self) {
       
-      @scala.inline
-      def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+      inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -84,26 +72,20 @@ object interfacesMod {
   }
   object LoaderHeightWidthProps {
     
-    @scala.inline
-    def apply(): LoaderHeightWidthProps = {
+    inline def apply(): LoaderHeightWidthProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LoaderHeightWidthProps]
     }
     
-    @scala.inline
-    implicit class LoaderHeightWidthPropsMutableBuilder[Self <: LoaderHeightWidthProps] (val x: Self) extends AnyVal {
+    extension [Self <: LoaderHeightWidthProps](x: Self) {
       
-      @scala.inline
-      def setHeight(value: LengthType): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: LengthType): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setWidth(value: LengthType): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: LengthType): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -117,26 +99,20 @@ object interfacesMod {
   }
   object LoaderHeightWidthRadiusProps {
     
-    @scala.inline
-    def apply(): LoaderHeightWidthRadiusProps = {
+    inline def apply(): LoaderHeightWidthRadiusProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LoaderHeightWidthRadiusProps]
     }
     
-    @scala.inline
-    implicit class LoaderHeightWidthRadiusPropsMutableBuilder[Self <: LoaderHeightWidthRadiusProps] (val x: Self) extends AnyVal {
+    extension [Self <: LoaderHeightWidthRadiusProps](x: Self) {
       
-      @scala.inline
-      def setMargin(value: LengthType): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: LengthType): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+      inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      @scala.inline
-      def setRadius(value: LengthType): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: LengthType): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+      inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     }
   }
   
@@ -148,20 +124,16 @@ object interfacesMod {
   }
   object LoaderSizeMarginProps {
     
-    @scala.inline
-    def apply(): LoaderSizeMarginProps = {
+    inline def apply(): LoaderSizeMarginProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LoaderSizeMarginProps]
     }
     
-    @scala.inline
-    implicit class LoaderSizeMarginPropsMutableBuilder[Self <: LoaderSizeMarginProps] (val x: Self) extends AnyVal {
+    extension [Self <: LoaderSizeMarginProps](x: Self) {
       
-      @scala.inline
-      def setMargin(value: LengthType): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: LengthType): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+      inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     }
   }
   
@@ -173,20 +145,16 @@ object interfacesMod {
   }
   object LoaderSizeProps {
     
-    @scala.inline
-    def apply(): LoaderSizeProps = {
+    inline def apply(): LoaderSizeProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LoaderSizeProps]
     }
     
-    @scala.inline
-    implicit class LoaderSizePropsMutableBuilder[Self <: LoaderSizeProps] (val x: Self) extends AnyVal {
+    extension [Self <: LoaderSizeProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: LengthType): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: LengthType): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -198,20 +166,16 @@ object interfacesMod {
   }
   object PrecompiledCss {
     
-    @scala.inline
-    def apply(name: String, styles: String): PrecompiledCss = {
+    inline def apply(name: String, styles: String): PrecompiledCss = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
       __obj.asInstanceOf[PrecompiledCss]
     }
     
-    @scala.inline
-    implicit class PrecompiledCssMutableBuilder[Self <: PrecompiledCss] (val x: Self) extends AnyVal {
+    extension [Self <: PrecompiledCss](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyles(value: String): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: String): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     }
   }
   

@@ -28,31 +28,23 @@ trait CreateBackendEnvironmentRequest extends StObject {
 }
 object CreateBackendEnvironmentRequest {
   
-  @scala.inline
-  def apply(appId: AppId, environmentName: EnvironmentName): CreateBackendEnvironmentRequest = {
+  inline def apply(appId: AppId, environmentName: EnvironmentName): CreateBackendEnvironmentRequest = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], environmentName = environmentName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateBackendEnvironmentRequest]
   }
   
-  @scala.inline
-  implicit class CreateBackendEnvironmentRequestMutableBuilder[Self <: CreateBackendEnvironmentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateBackendEnvironmentRequest](x: Self) {
     
-    @scala.inline
-    def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentArtifacts(value: DeploymentArtifacts): Self = StObject.set(x, "deploymentArtifacts", value.asInstanceOf[js.Any])
+    inline def setDeploymentArtifacts(value: DeploymentArtifacts): Self = StObject.set(x, "deploymentArtifacts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentArtifactsUndefined: Self = StObject.set(x, "deploymentArtifacts", js.undefined)
+    inline def setDeploymentArtifactsUndefined: Self = StObject.set(x, "deploymentArtifacts", js.undefined)
     
-    @scala.inline
-    def setEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "environmentName", value.asInstanceOf[js.Any])
+    inline def setEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "environmentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackName(value: StackName): Self = StObject.set(x, "stackName", value.asInstanceOf[js.Any])
+    inline def setStackName(value: StackName): Self = StObject.set(x, "stackName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackNameUndefined: Self = StObject.set(x, "stackName", js.undefined)
+    inline def setStackNameUndefined: Self = StObject.set(x, "stackName", js.undefined)
   }
 }

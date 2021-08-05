@@ -13,19 +13,15 @@ trait SwanIdTask extends StObject {
 }
 object SwanIdTask {
   
-  @scala.inline
-  def apply(data: Swanid, errno: String): SwanIdTask = {
+  inline def apply(data: Swanid, errno: String): SwanIdTask = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], errno = errno.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwanIdTask]
   }
   
-  @scala.inline
-  implicit class SwanIdTaskMutableBuilder[Self <: SwanIdTask] (val x: Self) extends AnyVal {
+  extension [Self <: SwanIdTask](x: Self) {
     
-    @scala.inline
-    def setData(value: Swanid): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Swanid): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrno(value: String): Self = StObject.set(x, "errno", value.asInstanceOf[js.Any])
+    inline def setErrno(value: String): Self = StObject.set(x, "errno", value.asInstanceOf[js.Any])
   }
 }

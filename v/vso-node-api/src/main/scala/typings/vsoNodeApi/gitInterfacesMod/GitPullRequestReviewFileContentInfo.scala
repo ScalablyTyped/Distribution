@@ -20,22 +20,17 @@ trait GitPullRequestReviewFileContentInfo extends StObject {
 }
 object GitPullRequestReviewFileContentInfo {
   
-  @scala.inline
-  def apply(_links: js.Any, path: String, sHA1Hash: String): GitPullRequestReviewFileContentInfo = {
+  inline def apply(_links: js.Any, path: String, sHA1Hash: String): GitPullRequestReviewFileContentInfo = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], sHA1Hash = sHA1Hash.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitPullRequestReviewFileContentInfo]
   }
   
-  @scala.inline
-  implicit class GitPullRequestReviewFileContentInfoMutableBuilder[Self <: GitPullRequestReviewFileContentInfo] (val x: Self) extends AnyVal {
+  extension [Self <: GitPullRequestReviewFileContentInfo](x: Self) {
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSHA1Hash(value: String): Self = StObject.set(x, "sHA1Hash", value.asInstanceOf[js.Any])
+    inline def setSHA1Hash(value: String): Self = StObject.set(x, "sHA1Hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

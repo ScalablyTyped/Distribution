@@ -13,19 +13,15 @@ trait DescribeConfigurationsRequest extends StObject {
 }
 object DescribeConfigurationsRequest {
   
-  @scala.inline
-  def apply(configurationIds: ConfigurationIdList): DescribeConfigurationsRequest = {
+  inline def apply(configurationIds: ConfigurationIdList): DescribeConfigurationsRequest = {
     val __obj = js.Dynamic.literal(configurationIds = configurationIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeConfigurationsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeConfigurationsRequestMutableBuilder[Self <: DescribeConfigurationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeConfigurationsRequest](x: Self) {
     
-    @scala.inline
-    def setConfigurationIds(value: ConfigurationIdList): Self = StObject.set(x, "configurationIds", value.asInstanceOf[js.Any])
+    inline def setConfigurationIds(value: ConfigurationIdList): Self = StObject.set(x, "configurationIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationIdsVarargs(value: ConfigurationId*): Self = StObject.set(x, "configurationIds", js.Array(value :_*))
+    inline def setConfigurationIdsVarargs(value: ConfigurationId*): Self = StObject.set(x, "configurationIds", js.Array(value :_*))
   }
 }

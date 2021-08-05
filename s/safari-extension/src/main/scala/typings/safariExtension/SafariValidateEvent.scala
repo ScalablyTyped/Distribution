@@ -15,8 +15,7 @@ trait SafariValidateEvent
 }
 object SafariValidateEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bubbles: Boolean,
     cancelable: Boolean,
     command: String,
@@ -34,10 +33,8 @@ object SafariValidateEvent {
     __obj.asInstanceOf[SafariValidateEvent]
   }
   
-  @scala.inline
-  implicit class SafariValidateEventMutableBuilder[Self <: SafariValidateEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SafariValidateEvent](x: Self) {
     
-    @scala.inline
-    def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
   }
 }

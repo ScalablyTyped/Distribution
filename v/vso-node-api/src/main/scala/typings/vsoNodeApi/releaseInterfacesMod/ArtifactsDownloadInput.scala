@@ -10,19 +10,15 @@ trait ArtifactsDownloadInput extends StObject {
 }
 object ArtifactsDownloadInput {
   
-  @scala.inline
-  def apply(downloadInputs: js.Array[ArtifactDownloadInputBase]): ArtifactsDownloadInput = {
+  inline def apply(downloadInputs: js.Array[ArtifactDownloadInputBase]): ArtifactsDownloadInput = {
     val __obj = js.Dynamic.literal(downloadInputs = downloadInputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArtifactsDownloadInput]
   }
   
-  @scala.inline
-  implicit class ArtifactsDownloadInputMutableBuilder[Self <: ArtifactsDownloadInput] (val x: Self) extends AnyVal {
+  extension [Self <: ArtifactsDownloadInput](x: Self) {
     
-    @scala.inline
-    def setDownloadInputs(value: js.Array[ArtifactDownloadInputBase]): Self = StObject.set(x, "downloadInputs", value.asInstanceOf[js.Any])
+    inline def setDownloadInputs(value: js.Array[ArtifactDownloadInputBase]): Self = StObject.set(x, "downloadInputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadInputsVarargs(value: ArtifactDownloadInputBase*): Self = StObject.set(x, "downloadInputs", js.Array(value :_*))
+    inline def setDownloadInputsVarargs(value: ArtifactDownloadInputBase*): Self = StObject.set(x, "downloadInputs", js.Array(value :_*))
   }
 }

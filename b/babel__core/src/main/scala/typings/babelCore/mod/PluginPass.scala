@@ -21,31 +21,23 @@ trait PluginPass
 }
 object PluginPass {
   
-  @scala.inline
-  def apply(cwd: String, file: BabelFile, filename: String, key: String): PluginPass = {
+  inline def apply(cwd: String, file: BabelFile, filename: String, key: String): PluginPass = {
     val __obj = js.Dynamic.literal(cwd = cwd.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginPass]
   }
   
-  @scala.inline
-  implicit class PluginPassMutableBuilder[Self <: PluginPass] (val x: Self) extends AnyVal {
+  extension [Self <: PluginPass](x: Self) {
     
-    @scala.inline
-    def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+    inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFile(value: BabelFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: BabelFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpts(value: PluginOptions): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
+    inline def setOpts(value: PluginOptions): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptsUndefined: Self = StObject.set(x, "opts", js.undefined)
+    inline def setOptsUndefined: Self = StObject.set(x, "opts", js.undefined)
   }
 }

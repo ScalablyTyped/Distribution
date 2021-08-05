@@ -10,22 +10,17 @@ trait SpinnerStyle extends StObject {
 }
 object SpinnerStyle {
   
-  @scala.inline
-  def apply(): SpinnerStyle = {
+  inline def apply(): SpinnerStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SpinnerStyle]
   }
   
-  @scala.inline
-  implicit class SpinnerStyleMutableBuilder[Self <: SpinnerStyle] (val x: Self) extends AnyVal {
+  extension [Self <: SpinnerStyle](x: Self) {
     
-    @scala.inline
-    def setStrokeColor(value: js.Array[String]): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
+    inline def setStrokeColor(value: js.Array[String]): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
+    inline def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
     
-    @scala.inline
-    def setStrokeColorVarargs(value: String*): Self = StObject.set(x, "strokeColor", js.Array(value :_*))
+    inline def setStrokeColorVarargs(value: String*): Self = StObject.set(x, "strokeColor", js.Array(value :_*))
   }
 }

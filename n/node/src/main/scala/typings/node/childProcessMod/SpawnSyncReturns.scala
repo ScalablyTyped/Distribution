@@ -24,46 +24,33 @@ trait SpawnSyncReturns[T] extends StObject {
 }
 object SpawnSyncReturns {
   
-  @scala.inline
-  def apply[T](output: js.Array[String], pid: Double, stderr: T, stdout: T): SpawnSyncReturns[T] = {
+  inline def apply[T](output: js.Array[String], pid: Double, stderr: T, stdout: T): SpawnSyncReturns[T] = {
     val __obj = js.Dynamic.literal(output = output.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], stderr = stderr.asInstanceOf[js.Any], stdout = stdout.asInstanceOf[js.Any], signal = null, status = null)
     __obj.asInstanceOf[SpawnSyncReturns[T]]
   }
   
-  @scala.inline
-  implicit class SpawnSyncReturnsMutableBuilder[Self <: SpawnSyncReturns[?], T] (val x: Self & SpawnSyncReturns[T]) extends AnyVal {
+  extension [Self <: SpawnSyncReturns[?], T](x: Self & SpawnSyncReturns[T]) {
     
-    @scala.inline
-    def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setOutput(value: js.Array[String]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: js.Array[String]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputVarargs(value: String*): Self = StObject.set(x, "output", js.Array(value :_*))
+    inline def setOutputVarargs(value: String*): Self = StObject.set(x, "output", js.Array(value :_*))
     
-    @scala.inline
-    def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
+    inline def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignal(value: Signals): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    inline def setSignal(value: Signals): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalNull: Self = StObject.set(x, "signal", null)
+    inline def setSignalNull: Self = StObject.set(x, "signal", null)
     
-    @scala.inline
-    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusNull: Self = StObject.set(x, "status", null)
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
     
-    @scala.inline
-    def setStderr(value: T): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
+    inline def setStderr(value: T): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStdout(value: T): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+    inline def setStdout(value: T): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
   }
 }

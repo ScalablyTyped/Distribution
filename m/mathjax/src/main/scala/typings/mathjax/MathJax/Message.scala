@@ -41,8 +41,7 @@ trait Message extends StObject {
 }
 object Message {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Clear: (Double, Double) => Unit,
     File: String => Double,
     Log: () => String,
@@ -54,25 +53,18 @@ object Message {
     __obj.asInstanceOf[Message]
   }
   
-  @scala.inline
-  implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
+  extension [Self <: Message](x: Self) {
     
-    @scala.inline
-    def setClear(value: (Double, Double) => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction2(value))
+    inline def setClear(value: (Double, Double) => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFile(value: String => Double): Self = StObject.set(x, "File", js.Any.fromFunction1(value))
+    inline def setFile(value: String => Double): Self = StObject.set(x, "File", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFilterText(value: (String, Double) => String): Self = StObject.set(x, "filterText", js.Any.fromFunction2(value))
+    inline def setFilterText(value: (String, Double) => String): Self = StObject.set(x, "filterText", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLog(value: () => String): Self = StObject.set(x, "Log", js.Any.fromFunction0(value))
+    inline def setLog(value: () => String): Self = StObject.set(x, "Log", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemove(value: () => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction0(value))
+    inline def setRemove(value: () => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet(value: (String, Double, Double) => Double): Self = StObject.set(x, "Set", js.Any.fromFunction3(value))
+    inline def setSet(value: (String, Double, Double) => Double): Self = StObject.set(x, "Set", js.Any.fromFunction3(value))
   }
 }

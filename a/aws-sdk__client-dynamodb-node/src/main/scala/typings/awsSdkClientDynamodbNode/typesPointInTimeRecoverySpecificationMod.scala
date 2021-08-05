@@ -15,17 +15,14 @@ object typesPointInTimeRecoverySpecificationMod {
   }
   object PointInTimeRecoverySpecification {
     
-    @scala.inline
-    def apply(PointInTimeRecoveryEnabled: Boolean): PointInTimeRecoverySpecification = {
+    inline def apply(PointInTimeRecoveryEnabled: Boolean): PointInTimeRecoverySpecification = {
       val __obj = js.Dynamic.literal(PointInTimeRecoveryEnabled = PointInTimeRecoveryEnabled.asInstanceOf[js.Any])
       __obj.asInstanceOf[PointInTimeRecoverySpecification]
     }
     
-    @scala.inline
-    implicit class PointInTimeRecoverySpecificationMutableBuilder[Self <: PointInTimeRecoverySpecification] (val x: Self) extends AnyVal {
+    extension [Self <: PointInTimeRecoverySpecification](x: Self) {
       
-      @scala.inline
-      def setPointInTimeRecoveryEnabled(value: Boolean): Self = StObject.set(x, "PointInTimeRecoveryEnabled", value.asInstanceOf[js.Any])
+      inline def setPointInTimeRecoveryEnabled(value: Boolean): Self = StObject.set(x, "PointInTimeRecoveryEnabled", value.asInstanceOf[js.Any])
     }
   }
   

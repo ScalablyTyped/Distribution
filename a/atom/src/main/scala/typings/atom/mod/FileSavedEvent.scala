@@ -11,16 +11,13 @@ trait FileSavedEvent extends StObject {
 }
 object FileSavedEvent {
   
-  @scala.inline
-  def apply(path: String): FileSavedEvent = {
+  inline def apply(path: String): FileSavedEvent = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileSavedEvent]
   }
   
-  @scala.inline
-  implicit class FileSavedEventMutableBuilder[Self <: FileSavedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: FileSavedEvent](x: Self) {
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

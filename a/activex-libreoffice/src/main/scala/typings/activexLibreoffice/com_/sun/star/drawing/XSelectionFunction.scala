@@ -32,8 +32,7 @@ trait XSelectionFunction
      with XSelectionChangeListener
 object XSelectionFunction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ImplementationName: String,
     SupportedServiceNames: SafeArray[String],
     acquire: () => Unit,

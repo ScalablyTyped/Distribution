@@ -15,25 +15,19 @@ trait CategoriesOptions extends StObject {
 }
 object CategoriesOptions {
   
-  @scala.inline
-  def apply(): CategoriesOptions = {
+  inline def apply(): CategoriesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CategoriesOptions]
   }
   
-  @scala.inline
-  implicit class CategoriesOptionsMutableBuilder[Self <: CategoriesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CategoriesOptions](x: Self) {
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
   }
 }

@@ -27,43 +27,31 @@ trait DescribeAuditSuppressionResponse extends StObject {
 }
 object DescribeAuditSuppressionResponse {
   
-  @scala.inline
-  def apply(): DescribeAuditSuppressionResponse = {
+  inline def apply(): DescribeAuditSuppressionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAuditSuppressionResponse]
   }
   
-  @scala.inline
-  implicit class DescribeAuditSuppressionResponseMutableBuilder[Self <: DescribeAuditSuppressionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAuditSuppressionResponse](x: Self) {
     
-    @scala.inline
-    def setCheckName(value: AuditCheckName): Self = StObject.set(x, "checkName", value.asInstanceOf[js.Any])
+    inline def setCheckName(value: AuditCheckName): Self = StObject.set(x, "checkName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckNameUndefined: Self = StObject.set(x, "checkName", js.undefined)
+    inline def setCheckNameUndefined: Self = StObject.set(x, "checkName", js.undefined)
     
-    @scala.inline
-    def setDescription(value: AuditDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: AuditDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setExpirationDate(value: Timestamp): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
+    inline def setExpirationDate(value: Timestamp): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationDateUndefined: Self = StObject.set(x, "expirationDate", js.undefined)
+    inline def setExpirationDateUndefined: Self = StObject.set(x, "expirationDate", js.undefined)
     
-    @scala.inline
-    def setResourceIdentifier(value: ResourceIdentifier): Self = StObject.set(x, "resourceIdentifier", value.asInstanceOf[js.Any])
+    inline def setResourceIdentifier(value: ResourceIdentifier): Self = StObject.set(x, "resourceIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdentifierUndefined: Self = StObject.set(x, "resourceIdentifier", js.undefined)
+    inline def setResourceIdentifierUndefined: Self = StObject.set(x, "resourceIdentifier", js.undefined)
     
-    @scala.inline
-    def setSuppressIndefinitely(value: SuppressIndefinitely): Self = StObject.set(x, "suppressIndefinitely", value.asInstanceOf[js.Any])
+    inline def setSuppressIndefinitely(value: SuppressIndefinitely): Self = StObject.set(x, "suppressIndefinitely", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuppressIndefinitelyUndefined: Self = StObject.set(x, "suppressIndefinitely", js.undefined)
+    inline def setSuppressIndefinitelyUndefined: Self = StObject.set(x, "suppressIndefinitely", js.undefined)
   }
 }

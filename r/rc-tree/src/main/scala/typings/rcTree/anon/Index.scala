@@ -21,8 +21,7 @@ trait Index extends StObject {
 }
 object Index {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     index: Double,
     key: typings.rcTree.interfaceMod.Key,
     level: Double,
@@ -34,25 +33,18 @@ object Index {
     __obj.asInstanceOf[Index]
   }
   
-  @scala.inline
-  implicit class IndexMutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
+  extension [Self <: Index](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: typings.rcTree.interfaceMod.Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: typings.rcTree.interfaceMod.Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode(value: DataNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: DataNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentPos(value: String | Double): Self = StObject.set(x, "parentPos", value.asInstanceOf[js.Any])
+    inline def setParentPos(value: String | Double): Self = StObject.set(x, "parentPos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPos(value: String): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+    inline def setPos(value: String): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
   }
 }

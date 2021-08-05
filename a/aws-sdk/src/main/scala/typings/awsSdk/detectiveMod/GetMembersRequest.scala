@@ -18,22 +18,17 @@ trait GetMembersRequest extends StObject {
 }
 object GetMembersRequest {
   
-  @scala.inline
-  def apply(AccountIds: AccountIdList, GraphArn: GraphArn): GetMembersRequest = {
+  inline def apply(AccountIds: AccountIdList, GraphArn: GraphArn): GetMembersRequest = {
     val __obj = js.Dynamic.literal(AccountIds = AccountIds.asInstanceOf[js.Any], GraphArn = GraphArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMembersRequest]
   }
   
-  @scala.inline
-  implicit class GetMembersRequestMutableBuilder[Self <: GetMembersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetMembersRequest](x: Self) {
     
-    @scala.inline
-    def setAccountIds(value: AccountIdList): Self = StObject.set(x, "AccountIds", value.asInstanceOf[js.Any])
+    inline def setAccountIds(value: AccountIdList): Self = StObject.set(x, "AccountIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "AccountIds", js.Array(value :_*))
+    inline def setAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "AccountIds", js.Array(value :_*))
     
-    @scala.inline
-    def setGraphArn(value: GraphArn): Self = StObject.set(x, "GraphArn", value.asInstanceOf[js.Any])
+    inline def setGraphArn(value: GraphArn): Self = StObject.set(x, "GraphArn", value.asInstanceOf[js.Any])
   }
 }

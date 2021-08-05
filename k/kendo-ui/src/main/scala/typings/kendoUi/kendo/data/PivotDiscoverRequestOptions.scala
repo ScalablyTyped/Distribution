@@ -10,16 +10,13 @@ trait PivotDiscoverRequestOptions extends StObject {
 }
 object PivotDiscoverRequestOptions {
   
-  @scala.inline
-  def apply(data: PivotDiscoverRequestDataOptions): PivotDiscoverRequestOptions = {
+  inline def apply(data: PivotDiscoverRequestDataOptions): PivotDiscoverRequestOptions = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotDiscoverRequestOptions]
   }
   
-  @scala.inline
-  implicit class PivotDiscoverRequestOptionsMutableBuilder[Self <: PivotDiscoverRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PivotDiscoverRequestOptions](x: Self) {
     
-    @scala.inline
-    def setData(value: PivotDiscoverRequestDataOptions): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: PivotDiscoverRequestDataOptions): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

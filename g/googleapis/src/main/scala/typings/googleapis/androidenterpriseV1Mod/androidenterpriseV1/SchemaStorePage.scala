@@ -39,43 +39,31 @@ trait SchemaStorePage extends StObject {
 }
 object SchemaStorePage {
   
-  @scala.inline
-  def apply(): SchemaStorePage = {
+  inline def apply(): SchemaStorePage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaStorePage]
   }
   
-  @scala.inline
-  implicit class SchemaStorePageMutableBuilder[Self <: SchemaStorePage] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaStorePage](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLink(value: js.Array[String]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: js.Array[String]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+    inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
-    @scala.inline
-    def setLinkVarargs(value: String*): Self = StObject.set(x, "link", js.Array(value :_*))
+    inline def setLinkVarargs(value: String*): Self = StObject.set(x, "link", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: js.Array[SchemaLocalizedText]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: js.Array[SchemaLocalizedText]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNameVarargs(value: SchemaLocalizedText*): Self = StObject.set(x, "name", js.Array(value :_*))
+    inline def setNameVarargs(value: SchemaLocalizedText*): Self = StObject.set(x, "name", js.Array(value :_*))
   }
 }

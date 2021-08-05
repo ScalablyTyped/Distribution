@@ -9,6 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 sealed trait CullFace extends StObject
 object CullFace {
   
-  @scala.inline
-  def apply(value: scala.Nothing): js.UndefOr[CullFace & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("CullFace")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[CullFace & scala.Nothing]]
+  inline def apply(value: scala.Nothing): js.UndefOr[CullFace & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("CullFace")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[CullFace & scala.Nothing]]
 }

@@ -59,8 +59,7 @@ object typesDisableEnhancedMonitoringInputMod {
   }
   object DisableEnhancedMonitoringInput {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ShardLevelMetrics: (js.Array[
           IncomingBytes | IncomingRecords | OutgoingBytes | OutgoingRecords | WriteProvisionedThroughputExceeded | ReadProvisionedThroughputExceeded | IteratorAgeMilliseconds | ALL | String
         ]) | (Iterable[
@@ -72,31 +71,23 @@ object typesDisableEnhancedMonitoringInputMod {
       __obj.asInstanceOf[DisableEnhancedMonitoringInput]
     }
     
-    @scala.inline
-    implicit class DisableEnhancedMonitoringInputMutableBuilder[Self <: DisableEnhancedMonitoringInput] (val x: Self) extends AnyVal {
+    extension [Self <: DisableEnhancedMonitoringInput](x: Self) {
       
-      @scala.inline
-      def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
+      inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
+      inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
-      @scala.inline
-      def set$httpOptions(
+      inline def set$httpOptions(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
+      inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
       
-      @scala.inline
-      def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
+      inline def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
+      inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
-      @scala.inline
-      def setShardLevelMetrics(
+      inline def setShardLevelMetrics(
         value: (js.Array[
               IncomingBytes | IncomingRecords | OutgoingBytes | OutgoingRecords | WriteProvisionedThroughputExceeded | ReadProvisionedThroughputExceeded | IteratorAgeMilliseconds | ALL | String
             ]) | (Iterable[
@@ -104,13 +95,11 @@ object typesDisableEnhancedMonitoringInputMod {
             ])
       ): Self = StObject.set(x, "ShardLevelMetrics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShardLevelMetricsVarargs(
+      inline def setShardLevelMetricsVarargs(
         value: (IncomingBytes | IncomingRecords | OutgoingBytes | OutgoingRecords | WriteProvisionedThroughputExceeded | ReadProvisionedThroughputExceeded | IteratorAgeMilliseconds | ALL | String)*
       ): Self = StObject.set(x, "ShardLevelMetrics", js.Array(value :_*))
       
-      @scala.inline
-      def setStreamName(value: String): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
+      inline def setStreamName(value: String): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
     }
   }
 }

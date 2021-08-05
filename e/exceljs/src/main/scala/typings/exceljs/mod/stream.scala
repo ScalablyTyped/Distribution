@@ -88,8 +88,7 @@ object stream {
     }
     object ArchiverZipOptions {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         comment: String,
         forceLocalTime: Boolean,
         forceZip64: Boolean,
@@ -100,23 +99,17 @@ object stream {
         __obj.asInstanceOf[ArchiverZipOptions]
       }
       
-      @scala.inline
-      implicit class ArchiverZipOptionsMutableBuilder[Self <: ArchiverZipOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ArchiverZipOptions](x: Self) {
         
-        @scala.inline
-        def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+        inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setForceLocalTime(value: Boolean): Self = StObject.set(x, "forceLocalTime", value.asInstanceOf[js.Any])
+        inline def setForceLocalTime(value: Boolean): Self = StObject.set(x, "forceLocalTime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setForceZip64(value: Boolean): Self = StObject.set(x, "forceZip64", value.asInstanceOf[js.Any])
+        inline def setForceZip64(value: Boolean): Self = StObject.set(x, "forceZip64", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStore(value: Boolean): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+        inline def setStore(value: Boolean): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setZlib(value: PartialZlibOptions): Self = StObject.set(x, "zlib", value.asInstanceOf[js.Any])
+        inline def setZlib(value: PartialZlibOptions): Self = StObject.set(x, "zlib", value.asInstanceOf[js.Any])
       }
     }
     
@@ -149,44 +142,32 @@ object stream {
     }
     object WorkbookStreamReaderOptions {
       
-      @scala.inline
-      def apply(): WorkbookStreamReaderOptions = {
+      inline def apply(): WorkbookStreamReaderOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[WorkbookStreamReaderOptions]
       }
       
-      @scala.inline
-      implicit class WorkbookStreamReaderOptionsMutableBuilder[Self <: WorkbookStreamReaderOptions] (val x: Self) extends AnyVal {
+      extension [Self <: WorkbookStreamReaderOptions](x: Self) {
         
-        @scala.inline
-        def setEntries(value: emit | ignore): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+        inline def setEntries(value: emit | ignore): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
+        inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
         
-        @scala.inline
-        def setHyperlinks(value: cache | emit | ignore): Self = StObject.set(x, "hyperlinks", value.asInstanceOf[js.Any])
+        inline def setHyperlinks(value: cache | emit | ignore): Self = StObject.set(x, "hyperlinks", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHyperlinksUndefined: Self = StObject.set(x, "hyperlinks", js.undefined)
+        inline def setHyperlinksUndefined: Self = StObject.set(x, "hyperlinks", js.undefined)
         
-        @scala.inline
-        def setSharedStrings(value: cache | emit | ignore): Self = StObject.set(x, "sharedStrings", value.asInstanceOf[js.Any])
+        inline def setSharedStrings(value: cache | emit | ignore): Self = StObject.set(x, "sharedStrings", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSharedStringsUndefined: Self = StObject.set(x, "sharedStrings", js.undefined)
+        inline def setSharedStringsUndefined: Self = StObject.set(x, "sharedStrings", js.undefined)
         
-        @scala.inline
-        def setStyles(value: cache | ignore): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+        inline def setStyles(value: cache | ignore): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+        inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
         
-        @scala.inline
-        def setWorksheets(value: emit | ignore): Self = StObject.set(x, "worksheets", value.asInstanceOf[js.Any])
+        inline def setWorksheets(value: emit | ignore): Self = StObject.set(x, "worksheets", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWorksheetsUndefined: Self = StObject.set(x, "worksheets", js.undefined)
+        inline def setWorksheetsUndefined: Self = StObject.set(x, "worksheets", js.undefined)
       }
     }
     
@@ -202,8 +183,7 @@ object stream {
     }
     object WorkbookStreamWriterOptions {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         filename: String,
         stream: Stream,
         useSharedStrings: Boolean,
@@ -214,11 +194,9 @@ object stream {
         __obj.asInstanceOf[WorkbookStreamWriterOptions]
       }
       
-      @scala.inline
-      implicit class WorkbookStreamWriterOptionsMutableBuilder[Self <: WorkbookStreamWriterOptions] (val x: Self) extends AnyVal {
+      extension [Self <: WorkbookStreamWriterOptions](x: Self) {
         
-        @scala.inline
-        def setZip(value: PartialArchiverZipOptions): Self = StObject.set(x, "zip", value.asInstanceOf[js.Any])
+        inline def setZip(value: PartialArchiverZipOptions): Self = StObject.set(x, "zip", value.asInstanceOf[js.Any])
       }
     }
     
@@ -247,26 +225,20 @@ object stream {
     }
     object WorkbookWriterOptions {
       
-      @scala.inline
-      def apply(filename: String, stream: Stream, useSharedStrings: Boolean, useStyles: Boolean): WorkbookWriterOptions = {
+      inline def apply(filename: String, stream: Stream, useSharedStrings: Boolean, useStyles: Boolean): WorkbookWriterOptions = {
         val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any], stream = stream.asInstanceOf[js.Any], useSharedStrings = useSharedStrings.asInstanceOf[js.Any], useStyles = useStyles.asInstanceOf[js.Any])
         __obj.asInstanceOf[WorkbookWriterOptions]
       }
       
-      @scala.inline
-      implicit class WorkbookWriterOptionsMutableBuilder[Self <: WorkbookWriterOptions] (val x: Self) extends AnyVal {
+      extension [Self <: WorkbookWriterOptions](x: Self) {
         
-        @scala.inline
-        def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+        inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStream(value: Stream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+        inline def setStream(value: Stream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUseSharedStrings(value: Boolean): Self = StObject.set(x, "useSharedStrings", value.asInstanceOf[js.Any])
+        inline def setUseSharedStrings(value: Boolean): Self = StObject.set(x, "useSharedStrings", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUseStyles(value: Boolean): Self = StObject.set(x, "useStyles", value.asInstanceOf[js.Any])
+        inline def setUseStyles(value: Boolean): Self = StObject.set(x, "useStyles", value.asInstanceOf[js.Any])
       }
     }
     
@@ -282,26 +254,20 @@ object stream {
     }
     object WorksheetReaderOptions {
       
-      @scala.inline
-      def apply(entry: Stream, id: Double, options: WorkbookStreamReaderOptions, workbook: Workbook): WorksheetReaderOptions = {
+      inline def apply(entry: Stream, id: Double, options: WorkbookStreamReaderOptions, workbook: Workbook): WorksheetReaderOptions = {
         val __obj = js.Dynamic.literal(entry = entry.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], workbook = workbook.asInstanceOf[js.Any])
         __obj.asInstanceOf[WorksheetReaderOptions]
       }
       
-      @scala.inline
-      implicit class WorksheetReaderOptionsMutableBuilder[Self <: WorksheetReaderOptions] (val x: Self) extends AnyVal {
+      extension [Self <: WorksheetReaderOptions](x: Self) {
         
-        @scala.inline
-        def setEntry(value: Stream): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
+        inline def setEntry(value: Stream): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOptions(value: WorkbookStreamReaderOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+        inline def setOptions(value: WorkbookStreamReaderOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWorkbook(value: Workbook): Self = StObject.set(x, "workbook", value.asInstanceOf[js.Any])
+        inline def setWorkbook(value: Workbook): Self = StObject.set(x, "workbook", value.asInstanceOf[js.Any])
       }
     }
     
@@ -337,8 +303,7 @@ object stream {
     }
     object ZlibOptions {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         chunkSize: Double,
         dictionary: Buffer | TypedArray | DataView | ArrayBuffer,
         finishFlush: Double,
@@ -352,32 +317,23 @@ object stream {
         __obj.asInstanceOf[ZlibOptions]
       }
       
-      @scala.inline
-      implicit class ZlibOptionsMutableBuilder[Self <: ZlibOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ZlibOptions](x: Self) {
         
-        @scala.inline
-        def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
+        inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDictionary(value: Buffer | TypedArray | DataView | ArrayBuffer): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
+        inline def setDictionary(value: Buffer | TypedArray | DataView | ArrayBuffer): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFinishFlush(value: Double): Self = StObject.set(x, "finishFlush", value.asInstanceOf[js.Any])
+        inline def setFinishFlush(value: Double): Self = StObject.set(x, "finishFlush", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFlush(value: Double): Self = StObject.set(x, "flush", value.asInstanceOf[js.Any])
+        inline def setFlush(value: Double): Self = StObject.set(x, "flush", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+        inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMemLevel(value: Double): Self = StObject.set(x, "memLevel", value.asInstanceOf[js.Any])
+        inline def setMemLevel(value: Double): Self = StObject.set(x, "memLevel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStrategy(value: Double): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
+        inline def setStrategy(value: Double): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWindowBits(value: Double): Self = StObject.set(x, "windowBits", value.asInstanceOf[js.Any])
+        inline def setWindowBits(value: Double): Self = StObject.set(x, "windowBits", value.asInstanceOf[js.Any])
       }
     }
   }

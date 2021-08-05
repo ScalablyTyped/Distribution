@@ -18,25 +18,19 @@ trait ListVirtualGatewaysOutput extends StObject {
 }
 object ListVirtualGatewaysOutput {
   
-  @scala.inline
-  def apply(virtualGateways: VirtualGatewayList): ListVirtualGatewaysOutput = {
+  inline def apply(virtualGateways: VirtualGatewayList): ListVirtualGatewaysOutput = {
     val __obj = js.Dynamic.literal(virtualGateways = virtualGateways.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListVirtualGatewaysOutput]
   }
   
-  @scala.inline
-  implicit class ListVirtualGatewaysOutputMutableBuilder[Self <: ListVirtualGatewaysOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListVirtualGatewaysOutput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setVirtualGateways(value: VirtualGatewayList): Self = StObject.set(x, "virtualGateways", value.asInstanceOf[js.Any])
+    inline def setVirtualGateways(value: VirtualGatewayList): Self = StObject.set(x, "virtualGateways", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualGatewaysVarargs(value: VirtualGatewayRef*): Self = StObject.set(x, "virtualGateways", js.Array(value :_*))
+    inline def setVirtualGatewaysVarargs(value: VirtualGatewayRef*): Self = StObject.set(x, "virtualGateways", js.Array(value :_*))
   }
 }

@@ -18,20 +18,16 @@ object mod {
     }
     object DataWithPermissions {
       
-      @scala.inline
-      def apply(): DataWithPermissions = {
+      inline def apply(): DataWithPermissions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[DataWithPermissions]
       }
       
-      @scala.inline
-      implicit class DataWithPermissionsMutableBuilder[Self <: DataWithPermissions] (val x: Self) extends AnyVal {
+      extension [Self <: DataWithPermissions](x: Self) {
         
-        @scala.inline
-        def setPermissions(value: Except): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+        inline def setPermissions(value: Except): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
+        inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
       }
     }
     
@@ -42,20 +38,16 @@ object mod {
     }
     object IPermissionState {
       
-      @scala.inline
-      def apply(): IPermissionState = {
+      inline def apply(): IPermissionState = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IPermissionState]
       }
       
-      @scala.inline
-      implicit class IPermissionStateMutableBuilder[Self <: IPermissionState] (val x: Self) extends AnyVal {
+      extension [Self <: IPermissionState](x: Self) {
         
-        @scala.inline
-        def setData(value: js.Any | DataWithPermissions): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        inline def setData(value: js.Any | DataWithPermissions): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+        inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       }
     }
     
@@ -69,28 +61,22 @@ object mod {
     }
     object Permission {
       
-      @scala.inline
-      def apply(permissionName: String, validatePermission: () => IPromise[js.Any]): Permission = {
+      inline def apply(permissionName: String, validatePermission: () => IPromise[js.Any]): Permission = {
         val __obj = js.Dynamic.literal(permissionName = permissionName.asInstanceOf[js.Any], validatePermission = js.Any.fromFunction0(validatePermission))
         __obj.asInstanceOf[Permission]
       }
       
-      @scala.inline
-      implicit class PermissionMutableBuilder[Self <: Permission] (val x: Self) extends AnyVal {
+      extension [Self <: Permission](x: Self) {
         
-        @scala.inline
-        def setPermissionName(value: String): Self = StObject.set(x, "permissionName", value.asInstanceOf[js.Any])
+        inline def setPermissionName(value: String): Self = StObject.set(x, "permissionName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValidatePermission(value: () => IPromise[js.Any]): Self = StObject.set(x, "validatePermission", js.Any.fromFunction0(value))
+        inline def setValidatePermission(value: () => IPromise[js.Any]): Self = StObject.set(x, "validatePermission", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setValidationFunction(
+        inline def setValidationFunction(
           value: (/* permissionName */ js.UndefOr[String], /* transitionProperties */ js.UndefOr[TransitionProperties]) => Boolean | IPromise[js.Any]
         ): Self = StObject.set(x, "validationFunction", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setValidationFunctionUndefined: Self = StObject.set(x, "validationFunction", js.undefined)
+        inline def setValidationFunctionUndefined: Self = StObject.set(x, "validationFunction", js.undefined)
       }
     }
     
@@ -106,31 +92,24 @@ object mod {
     }
     object PermissionRedirectConfigation {
       
-      @scala.inline
-      def apply(state: String): PermissionRedirectConfigation = {
+      inline def apply(state: String): PermissionRedirectConfigation = {
         val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
         __obj.asInstanceOf[PermissionRedirectConfigation]
       }
       
-      @scala.inline
-      implicit class PermissionRedirectConfigationMutableBuilder[Self <: PermissionRedirectConfigation] (val x: Self) extends AnyVal {
+      extension [Self <: PermissionRedirectConfigation](x: Self) {
         
-        @scala.inline
-        def setOptions(
+        inline def setOptions(
           value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ui.IStateOptions */ js.Any
         ): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+        inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
         
-        @scala.inline
-        def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+        inline def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+        inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
         
-        @scala.inline
-        def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+        inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       }
     }
     
@@ -196,8 +175,7 @@ object mod {
     }
     object PermissionStore {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         clearStore: () => Unit,
         defineManyPermissions: (js.Array[String], PermissionValidationFunction) => Unit,
         definePermission: (String, PermissionValidationFunction) => Unit,
@@ -210,29 +188,21 @@ object mod {
         __obj.asInstanceOf[PermissionStore]
       }
       
-      @scala.inline
-      implicit class PermissionStoreMutableBuilder[Self <: PermissionStore] (val x: Self) extends AnyVal {
+      extension [Self <: PermissionStore](x: Self) {
         
-        @scala.inline
-        def setClearStore(value: () => Unit): Self = StObject.set(x, "clearStore", js.Any.fromFunction0(value))
+        inline def setClearStore(value: () => Unit): Self = StObject.set(x, "clearStore", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setDefineManyPermissions(value: (js.Array[String], PermissionValidationFunction) => Unit): Self = StObject.set(x, "defineManyPermissions", js.Any.fromFunction2(value))
+        inline def setDefineManyPermissions(value: (js.Array[String], PermissionValidationFunction) => Unit): Self = StObject.set(x, "defineManyPermissions", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setDefinePermission(value: (String, PermissionValidationFunction) => Unit): Self = StObject.set(x, "definePermission", js.Any.fromFunction2(value))
+        inline def setDefinePermission(value: (String, PermissionValidationFunction) => Unit): Self = StObject.set(x, "definePermission", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setGetPermissionDefinition(value: String => Permission): Self = StObject.set(x, "getPermissionDefinition", js.Any.fromFunction1(value))
+        inline def setGetPermissionDefinition(value: String => Permission): Self = StObject.set(x, "getPermissionDefinition", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setGetStore(value: () => StringDictionary[Permission]): Self = StObject.set(x, "getStore", js.Any.fromFunction0(value))
+        inline def setGetStore(value: () => StringDictionary[Permission]): Self = StObject.set(x, "getStore", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setHasPermissionDefinition(value: String => Boolean): Self = StObject.set(x, "hasPermissionDefinition", js.Any.fromFunction1(value))
+        inline def setHasPermissionDefinition(value: String => Boolean): Self = StObject.set(x, "hasPermissionDefinition", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setRemovePermissionDefinition(value: String => Unit): Self = StObject.set(x, "removePermissionDefinition", js.Any.fromFunction1(value))
+        inline def setRemovePermissionDefinition(value: String => Unit): Self = StObject.set(x, "removePermissionDefinition", js.Any.fromFunction1(value))
       }
     }
     
@@ -254,34 +224,26 @@ object mod {
     }
     object Role {
       
-      @scala.inline
-      def apply(permissionNames: js.Array[String], roleName: String, validateRole: () => IPromise[js.Any]): Role = {
+      inline def apply(permissionNames: js.Array[String], roleName: String, validateRole: () => IPromise[js.Any]): Role = {
         val __obj = js.Dynamic.literal(permissionNames = permissionNames.asInstanceOf[js.Any], roleName = roleName.asInstanceOf[js.Any], validateRole = js.Any.fromFunction0(validateRole))
         __obj.asInstanceOf[Role]
       }
       
-      @scala.inline
-      implicit class RoleMutableBuilder[Self <: Role] (val x: Self) extends AnyVal {
+      extension [Self <: Role](x: Self) {
         
-        @scala.inline
-        def setPermissionNames(value: js.Array[String]): Self = StObject.set(x, "permissionNames", value.asInstanceOf[js.Any])
+        inline def setPermissionNames(value: js.Array[String]): Self = StObject.set(x, "permissionNames", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPermissionNamesVarargs(value: String*): Self = StObject.set(x, "permissionNames", js.Array(value :_*))
+        inline def setPermissionNamesVarargs(value: String*): Self = StObject.set(x, "permissionNames", js.Array(value :_*))
         
-        @scala.inline
-        def setRoleName(value: String): Self = StObject.set(x, "roleName", value.asInstanceOf[js.Any])
+        inline def setRoleName(value: String): Self = StObject.set(x, "roleName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValidateRole(value: () => IPromise[js.Any]): Self = StObject.set(x, "validateRole", js.Any.fromFunction0(value))
+        inline def setValidateRole(value: () => IPromise[js.Any]): Self = StObject.set(x, "validateRole", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setValidationFunction(
+        inline def setValidationFunction(
           value: (/* roleName */ js.UndefOr[String], /* transitionProperties */ js.UndefOr[TransitionProperties]) => Boolean | IPromise[js.Any]
         ): Self = StObject.set(x, "validationFunction", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setValidationFunctionUndefined: Self = StObject.set(x, "validationFunction", js.undefined)
+        inline def setValidationFunctionUndefined: Self = StObject.set(x, "validationFunction", js.undefined)
       }
     }
     
@@ -376,54 +338,42 @@ object mod {
     }
     object TransitionProperties {
       
-      @scala.inline
-      def apply(): TransitionProperties = {
+      inline def apply(): TransitionProperties = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TransitionProperties]
       }
       
-      @scala.inline
-      implicit class TransitionPropertiesMutableBuilder[Self <: TransitionProperties] (val x: Self) extends AnyVal {
+      extension [Self <: TransitionProperties](x: Self) {
         
-        @scala.inline
-        def setFromParams(
+        inline def setFromParams(
           value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ui.IStateParamsService */ js.Any
         ): Self = StObject.set(x, "fromParams", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFromParamsUndefined: Self = StObject.set(x, "fromParams", js.undefined)
+        inline def setFromParamsUndefined: Self = StObject.set(x, "fromParams", js.undefined)
         
-        @scala.inline
-        def setFromState(
+        inline def setFromState(
           value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ui.IState */ js.Any
         ): Self = StObject.set(x, "fromState", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFromStateUndefined: Self = StObject.set(x, "fromState", js.undefined)
+        inline def setFromStateUndefined: Self = StObject.set(x, "fromState", js.undefined)
         
-        @scala.inline
-        def setOptions(
+        inline def setOptions(
           value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ui.IStateOptions */ js.Any
         ): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+        inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
         
-        @scala.inline
-        def setToParams(
+        inline def setToParams(
           value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ui.IStateParamsService */ js.Any
         ): Self = StObject.set(x, "toParams", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setToParamsUndefined: Self = StObject.set(x, "toParams", js.undefined)
+        inline def setToParamsUndefined: Self = StObject.set(x, "toParams", js.undefined)
         
-        @scala.inline
-        def setToState(
+        inline def setToState(
           value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ui.IState */ js.Any
         ): Self = StObject.set(x, "toState", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setToStateUndefined: Self = StObject.set(x, "toState", js.undefined)
+        inline def setToStateUndefined: Self = StObject.set(x, "toState", js.undefined)
       }
     }
   }

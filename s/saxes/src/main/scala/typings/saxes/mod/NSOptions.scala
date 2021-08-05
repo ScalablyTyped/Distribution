@@ -25,31 +25,23 @@ trait NSOptions extends StObject {
 }
 object NSOptions {
   
-  @scala.inline
-  def apply(): NSOptions = {
+  inline def apply(): NSOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NSOptions]
   }
   
-  @scala.inline
-  implicit class NSOptionsMutableBuilder[Self <: NSOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NSOptions](x: Self) {
     
-    @scala.inline
-    def setAdditionalNamespaces(value: Record[String, String]): Self = StObject.set(x, "additionalNamespaces", value.asInstanceOf[js.Any])
+    inline def setAdditionalNamespaces(value: Record[String, String]): Self = StObject.set(x, "additionalNamespaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalNamespacesUndefined: Self = StObject.set(x, "additionalNamespaces", js.undefined)
+    inline def setAdditionalNamespacesUndefined: Self = StObject.set(x, "additionalNamespaces", js.undefined)
     
-    @scala.inline
-    def setResolvePrefix(value: /* prefix */ String => js.UndefOr[String]): Self = StObject.set(x, "resolvePrefix", js.Any.fromFunction1(value))
+    inline def setResolvePrefix(value: /* prefix */ String => js.UndefOr[String]): Self = StObject.set(x, "resolvePrefix", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResolvePrefixUndefined: Self = StObject.set(x, "resolvePrefix", js.undefined)
+    inline def setResolvePrefixUndefined: Self = StObject.set(x, "resolvePrefix", js.undefined)
     
-    @scala.inline
-    def setXmlns(value: Boolean): Self = StObject.set(x, "xmlns", value.asInstanceOf[js.Any])
+    inline def setXmlns(value: Boolean): Self = StObject.set(x, "xmlns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXmlnsUndefined: Self = StObject.set(x, "xmlns", js.undefined)
+    inline def setXmlnsUndefined: Self = StObject.set(x, "xmlns", js.undefined)
   }
 }

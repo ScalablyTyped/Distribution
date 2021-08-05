@@ -28,28 +28,21 @@ trait DeleteColumnStatisticsForTableRequest extends StObject {
 }
 object DeleteColumnStatisticsForTableRequest {
   
-  @scala.inline
-  def apply(ColumnName: NameString, DatabaseName: NameString, TableName: NameString): DeleteColumnStatisticsForTableRequest = {
+  inline def apply(ColumnName: NameString, DatabaseName: NameString, TableName: NameString): DeleteColumnStatisticsForTableRequest = {
     val __obj = js.Dynamic.literal(ColumnName = ColumnName.asInstanceOf[js.Any], DatabaseName = DatabaseName.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteColumnStatisticsForTableRequest]
   }
   
-  @scala.inline
-  implicit class DeleteColumnStatisticsForTableRequestMutableBuilder[Self <: DeleteColumnStatisticsForTableRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteColumnStatisticsForTableRequest](x: Self) {
     
-    @scala.inline
-    def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
+    inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
+    inline def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
-    @scala.inline
-    def setColumnName(value: NameString): Self = StObject.set(x, "ColumnName", value.asInstanceOf[js.Any])
+    inline def setColumnName(value: NameString): Self = StObject.set(x, "ColumnName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableName(value: NameString): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: NameString): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
   }
 }

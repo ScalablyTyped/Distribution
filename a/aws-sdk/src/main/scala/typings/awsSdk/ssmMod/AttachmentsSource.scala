@@ -23,34 +23,25 @@ trait AttachmentsSource extends StObject {
 }
 object AttachmentsSource {
   
-  @scala.inline
-  def apply(): AttachmentsSource = {
+  inline def apply(): AttachmentsSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AttachmentsSource]
   }
   
-  @scala.inline
-  implicit class AttachmentsSourceMutableBuilder[Self <: AttachmentsSource] (val x: Self) extends AnyVal {
+  extension [Self <: AttachmentsSource](x: Self) {
     
-    @scala.inline
-    def setKey(value: AttachmentsSourceKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: AttachmentsSourceKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
-    @scala.inline
-    def setName(value: AttachmentIdentifier): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: AttachmentIdentifier): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setValues(value: AttachmentsSourceValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: AttachmentsSourceValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: AttachmentsSourceValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: AttachmentsSourceValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

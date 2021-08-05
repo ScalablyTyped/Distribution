@@ -62,23 +62,18 @@ object samplingResultMod {
   }
   object SamplingResult {
     
-    @scala.inline
-    def apply(decision: SamplingDecision): SamplingResult = {
+    inline def apply(decision: SamplingDecision): SamplingResult = {
       val __obj = js.Dynamic.literal(decision = decision.asInstanceOf[js.Any])
       __obj.asInstanceOf[SamplingResult]
     }
     
-    @scala.inline
-    implicit class SamplingResultMutableBuilder[Self <: SamplingResult] (val x: Self) extends AnyVal {
+    extension [Self <: SamplingResult](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: js.Object): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: js.Object): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setDecision(value: SamplingDecision): Self = StObject.set(x, "decision", value.asInstanceOf[js.Any])
+      inline def setDecision(value: SamplingDecision): Self = StObject.set(x, "decision", value.asInstanceOf[js.Any])
     }
   }
 }

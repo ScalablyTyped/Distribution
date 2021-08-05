@@ -95,23 +95,18 @@ object mod extends Shortcut {
   }
   object Bitmap {
     
-    @scala.inline
-    def apply(data: Buffer, height: Double, width: Double): Bitmap = {
+    inline def apply(data: Buffer, height: Double, width: Double): Bitmap = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Bitmap]
     }
     
-    @scala.inline
-    implicit class BitmapMutableBuilder[Self <: Bitmap] (val x: Self) extends AnyVal {
+    extension [Self <: Bitmap](x: Self) {
       
-      @scala.inline
-      def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -125,23 +120,18 @@ object mod extends Shortcut {
   }
   object BlendMode {
     
-    @scala.inline
-    def apply(mode: String, opacityDest: Double, opacitySource: Double): BlendMode = {
+    inline def apply(mode: String, opacityDest: Double, opacitySource: Double): BlendMode = {
       val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], opacityDest = opacityDest.asInstanceOf[js.Any], opacitySource = opacitySource.asInstanceOf[js.Any])
       __obj.asInstanceOf[BlendMode]
     }
     
-    @scala.inline
-    implicit class BlendModeMutableBuilder[Self <: BlendMode] (val x: Self) extends AnyVal {
+    extension [Self <: BlendMode](x: Self) {
       
-      @scala.inline
-      def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacityDest(value: Double): Self = StObject.set(x, "opacityDest", value.asInstanceOf[js.Any])
+      inline def setOpacityDest(value: Double): Self = StObject.set(x, "opacityDest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacitySource(value: Double): Self = StObject.set(x, "opacitySource", value.asInstanceOf[js.Any])
+      inline def setOpacitySource(value: Double): Self = StObject.set(x, "opacitySource", value.asInstanceOf[js.Any])
     }
   }
   
@@ -153,14 +143,11 @@ object mod extends Shortcut {
   trait ChangeName extends StObject
   object ChangeName {
     
-    @scala.inline
-    def background: typings.jimp.jimpStrings.background = "background".asInstanceOf[typings.jimp.jimpStrings.background]
+    inline def background: typings.jimp.jimpStrings.background = "background".asInstanceOf[typings.jimp.jimpStrings.background]
     
-    @scala.inline
-    def crop: typings.jimp.jimpStrings.crop = "crop".asInstanceOf[typings.jimp.jimpStrings.crop]
+    inline def crop: typings.jimp.jimpStrings.crop = "crop".asInstanceOf[typings.jimp.jimpStrings.crop]
     
-    @scala.inline
-    def scan: typings.jimp.jimpStrings.scan = "scan".asInstanceOf[typings.jimp.jimpStrings.scan]
+    inline def scan: typings.jimp.jimpStrings.scan = "scan".asInstanceOf[typings.jimp.jimpStrings.scan]
   }
   
   trait ColorAction extends StObject {
@@ -172,20 +159,16 @@ object mod extends Shortcut {
   }
   object ColorAction {
     
-    @scala.inline
-    def apply(apply: ColorActionName, params: js.Any): ColorAction = {
+    inline def apply(apply: ColorActionName, params: js.Any): ColorAction = {
       val __obj = js.Dynamic.literal(apply = apply.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
       __obj.asInstanceOf[ColorAction]
     }
     
-    @scala.inline
-    implicit class ColorActionMutableBuilder[Self <: ColorAction] (val x: Self) extends AnyVal {
+    extension [Self <: ColorAction](x: Self) {
       
-      @scala.inline
-      def setApply(value: ColorActionName): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
+      inline def setApply(value: ColorActionName): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     }
   }
   
@@ -202,29 +185,21 @@ object mod extends Shortcut {
   trait ColorActionName extends StObject
   object ColorActionName {
     
-    @scala.inline
-    def blue: typings.jimp.jimpStrings.blue = "blue".asInstanceOf[typings.jimp.jimpStrings.blue]
+    inline def blue: typings.jimp.jimpStrings.blue = "blue".asInstanceOf[typings.jimp.jimpStrings.blue]
     
-    @scala.inline
-    def green: typings.jimp.jimpStrings.green = "green".asInstanceOf[typings.jimp.jimpStrings.green]
+    inline def green: typings.jimp.jimpStrings.green = "green".asInstanceOf[typings.jimp.jimpStrings.green]
     
-    @scala.inline
-    def hue: typings.jimp.jimpStrings.hue = "hue".asInstanceOf[typings.jimp.jimpStrings.hue]
+    inline def hue: typings.jimp.jimpStrings.hue = "hue".asInstanceOf[typings.jimp.jimpStrings.hue]
     
-    @scala.inline
-    def mix: typings.jimp.jimpStrings.mix = "mix".asInstanceOf[typings.jimp.jimpStrings.mix]
+    inline def mix: typings.jimp.jimpStrings.mix = "mix".asInstanceOf[typings.jimp.jimpStrings.mix]
     
-    @scala.inline
-    def red: typings.jimp.jimpStrings.red = "red".asInstanceOf[typings.jimp.jimpStrings.red]
+    inline def red: typings.jimp.jimpStrings.red = "red".asInstanceOf[typings.jimp.jimpStrings.red]
     
-    @scala.inline
-    def shade: typings.jimp.jimpStrings.shade = "shade".asInstanceOf[typings.jimp.jimpStrings.shade]
+    inline def shade: typings.jimp.jimpStrings.shade = "shade".asInstanceOf[typings.jimp.jimpStrings.shade]
     
-    @scala.inline
-    def tint: typings.jimp.jimpStrings.tint = "tint".asInstanceOf[typings.jimp.jimpStrings.tint]
+    inline def tint: typings.jimp.jimpStrings.tint = "tint".asInstanceOf[typings.jimp.jimpStrings.tint]
     
-    @scala.inline
-    def xor: typings.jimp.jimpStrings.xor = "xor".asInstanceOf[typings.jimp.jimpStrings.xor]
+    inline def xor: typings.jimp.jimpStrings.xor = "xor".asInstanceOf[typings.jimp.jimpStrings.xor]
   }
   
   /**
@@ -837,8 +812,7 @@ object mod extends Shortcut {
   }
   object Font {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       chars: StringDictionary[FontChar],
       common: FontCommon,
       info: FontInfo,
@@ -849,26 +823,19 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Font]
     }
     
-    @scala.inline
-    implicit class FontMutableBuilder[Self <: Font] (val x: Self) extends AnyVal {
+    extension [Self <: Font](x: Self) {
       
-      @scala.inline
-      def setChars(value: StringDictionary[FontChar]): Self = StObject.set(x, "chars", value.asInstanceOf[js.Any])
+      inline def setChars(value: StringDictionary[FontChar]): Self = StObject.set(x, "chars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommon(value: FontCommon): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
+      inline def setCommon(value: FontCommon): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfo(value: FontInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: FontInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKernings(value: StringDictionary[StringDictionary[Double]]): Self = StObject.set(x, "kernings", value.asInstanceOf[js.Any])
+      inline def setKernings(value: StringDictionary[StringDictionary[Double]]): Self = StObject.set(x, "kernings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages(value: js.Array[String]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+      inline def setPages(value: js.Array[String]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPagesVarargs(value: String*): Self = StObject.set(x, "pages", js.Array(value :_*))
+      inline def setPagesVarargs(value: String*): Self = StObject.set(x, "pages", js.Array(value :_*))
     }
   }
   
@@ -899,8 +866,7 @@ object mod extends Shortcut {
   }
   object FontChar {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       chnl: Double,
       height: Double,
       id: Double,
@@ -916,38 +882,27 @@ object mod extends Shortcut {
       __obj.asInstanceOf[FontChar]
     }
     
-    @scala.inline
-    implicit class FontCharMutableBuilder[Self <: FontChar] (val x: Self) extends AnyVal {
+    extension [Self <: FontChar](x: Self) {
       
-      @scala.inline
-      def setChnl(value: Double): Self = StObject.set(x, "chnl", value.asInstanceOf[js.Any])
+      inline def setChnl(value: Double): Self = StObject.set(x, "chnl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXadvance(value: Double): Self = StObject.set(x, "xadvance", value.asInstanceOf[js.Any])
+      inline def setXadvance(value: Double): Self = StObject.set(x, "xadvance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXoffset(value: Double): Self = StObject.set(x, "xoffset", value.asInstanceOf[js.Any])
+      inline def setXoffset(value: Double): Self = StObject.set(x, "xoffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYoffset(value: Double): Self = StObject.set(x, "yoffset", value.asInstanceOf[js.Any])
+      inline def setYoffset(value: Double): Self = StObject.set(x, "yoffset", value.asInstanceOf[js.Any])
     }
   }
   
@@ -978,8 +933,7 @@ object mod extends Shortcut {
   }
   object FontCommon {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       alphaChnl: Double,
       base: Double,
       blueChnl: Double,
@@ -995,38 +949,27 @@ object mod extends Shortcut {
       __obj.asInstanceOf[FontCommon]
     }
     
-    @scala.inline
-    implicit class FontCommonMutableBuilder[Self <: FontCommon] (val x: Self) extends AnyVal {
+    extension [Self <: FontCommon](x: Self) {
       
-      @scala.inline
-      def setAlphaChnl(value: Double): Self = StObject.set(x, "alphaChnl", value.asInstanceOf[js.Any])
+      inline def setAlphaChnl(value: Double): Self = StObject.set(x, "alphaChnl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase(value: Double): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: Double): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlueChnl(value: Double): Self = StObject.set(x, "blueChnl", value.asInstanceOf[js.Any])
+      inline def setBlueChnl(value: Double): Self = StObject.set(x, "blueChnl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreenChnl(value: Double): Self = StObject.set(x, "greenChnl", value.asInstanceOf[js.Any])
+      inline def setGreenChnl(value: Double): Self = StObject.set(x, "greenChnl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+      inline def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPacked(value: Double): Self = StObject.set(x, "packed", value.asInstanceOf[js.Any])
+      inline def setPacked(value: Double): Self = StObject.set(x, "packed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages(value: Double): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+      inline def setPages(value: Double): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedChnl(value: Double): Self = StObject.set(x, "redChnl", value.asInstanceOf[js.Any])
+      inline def setRedChnl(value: Double): Self = StObject.set(x, "redChnl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleH(value: Double): Self = StObject.set(x, "scaleH", value.asInstanceOf[js.Any])
+      inline def setScaleH(value: Double): Self = StObject.set(x, "scaleH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleW(value: Double): Self = StObject.set(x, "scaleW", value.asInstanceOf[js.Any])
+      inline def setScaleW(value: Double): Self = StObject.set(x, "scaleW", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1059,8 +1002,7 @@ object mod extends Shortcut {
   }
   object FontInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       aa: Double,
       bold: Double,
       charset: String,
@@ -1077,41 +1019,29 @@ object mod extends Shortcut {
       __obj.asInstanceOf[FontInfo]
     }
     
-    @scala.inline
-    implicit class FontInfoMutableBuilder[Self <: FontInfo] (val x: Self) extends AnyVal {
+    extension [Self <: FontInfo](x: Self) {
       
-      @scala.inline
-      def setAa(value: Double): Self = StObject.set(x, "aa", value.asInstanceOf[js.Any])
+      inline def setAa(value: Double): Self = StObject.set(x, "aa", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBold(value: Double): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
+      inline def setBold(value: Double): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
+      inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFace(value: String): Self = StObject.set(x, "face", value.asInstanceOf[js.Any])
+      inline def setFace(value: String): Self = StObject.set(x, "face", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItalic(value: Double): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
+      inline def setItalic(value: Double): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPadding(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmooth(value: Double): Self = StObject.set(x, "smooth", value.asInstanceOf[js.Any])
+      inline def setSmooth(value: Double): Self = StObject.set(x, "smooth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpacing(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+      inline def setSpacing(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStretchH(value: Double): Self = StObject.set(x, "stretchH", value.asInstanceOf[js.Any])
+      inline def setStretchH(value: Double): Self = StObject.set(x, "stretchH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnicode(value: Double): Self = StObject.set(x, "unicode", value.asInstanceOf[js.Any])
+      inline def setUnicode(value: Double): Self = StObject.set(x, "unicode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1139,32 +1069,23 @@ object mod extends Shortcut {
   trait ListenableName extends StObject
   object ListenableName {
     
-    @scala.inline
-    def any: typings.jimp.jimpStrings.any = "any".asInstanceOf[typings.jimp.jimpStrings.any]
+    inline def any: typings.jimp.jimpStrings.any = "any".asInstanceOf[typings.jimp.jimpStrings.any]
     
-    @scala.inline
-    def background: typings.jimp.jimpStrings.background = "background".asInstanceOf[typings.jimp.jimpStrings.background]
+    inline def background: typings.jimp.jimpStrings.background = "background".asInstanceOf[typings.jimp.jimpStrings.background]
     
-    @scala.inline
-    def `before-change`: typings.jimp.jimpStrings.`before-change` = "before-change".asInstanceOf[typings.jimp.jimpStrings.`before-change`]
+    inline def `before-change`: typings.jimp.jimpStrings.`before-change` = "before-change".asInstanceOf[typings.jimp.jimpStrings.`before-change`]
     
-    @scala.inline
-    def `before-clone`: typings.jimp.jimpStrings.`before-clone` = "before-clone".asInstanceOf[typings.jimp.jimpStrings.`before-clone`]
+    inline def `before-clone`: typings.jimp.jimpStrings.`before-clone` = "before-clone".asInstanceOf[typings.jimp.jimpStrings.`before-clone`]
     
-    @scala.inline
-    def changed: typings.jimp.jimpStrings.changed = "changed".asInstanceOf[typings.jimp.jimpStrings.changed]
+    inline def changed: typings.jimp.jimpStrings.changed = "changed".asInstanceOf[typings.jimp.jimpStrings.changed]
     
-    @scala.inline
-    def cloned: typings.jimp.jimpStrings.cloned = "cloned".asInstanceOf[typings.jimp.jimpStrings.cloned]
+    inline def cloned: typings.jimp.jimpStrings.cloned = "cloned".asInstanceOf[typings.jimp.jimpStrings.cloned]
     
-    @scala.inline
-    def crop: typings.jimp.jimpStrings.crop = "crop".asInstanceOf[typings.jimp.jimpStrings.crop]
+    inline def crop: typings.jimp.jimpStrings.crop = "crop".asInstanceOf[typings.jimp.jimpStrings.crop]
     
-    @scala.inline
-    def initialized: typings.jimp.jimpStrings.initialized = "initialized".asInstanceOf[typings.jimp.jimpStrings.initialized]
+    inline def initialized: typings.jimp.jimpStrings.initialized = "initialized".asInstanceOf[typings.jimp.jimpStrings.initialized]
     
-    @scala.inline
-    def scan: typings.jimp.jimpStrings.scan = "scan".asInstanceOf[typings.jimp.jimpStrings.scan]
+    inline def scan: typings.jimp.jimpStrings.scan = "scan".asInstanceOf[typings.jimp.jimpStrings.scan]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -1174,14 +1095,12 @@ object mod extends Shortcut {
   trait ListenerData[T /* <: ListenableName */] extends StObject
   object ListenerData {
     
-    @scala.inline
-    def Dictkey[T /* <: ListenableName */](eventName: `before-change` | changed, methodName: T): typings.jimp.anon.Dictkey[T] = {
+    inline def Dictkey[T /* <: ListenableName */](eventName: `before-change` | changed, methodName: T): typings.jimp.anon.Dictkey[T] = {
       val __obj = js.Dynamic.literal(eventName = eventName.asInstanceOf[js.Any], methodName = methodName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.jimp.anon.Dictkey[T]]
     }
     
-    @scala.inline
-    def EventName[T /* <: ListenableName */](eventName: T, methodName: clone | ChangeName | constructor): typings.jimp.anon.EventName[T] = {
+    inline def EventName[T /* <: ListenableName */](eventName: T, methodName: clone | ChangeName | constructor): typings.jimp.anon.EventName[T] = {
       val __obj = js.Dynamic.literal(eventName = eventName.asInstanceOf[js.Any], methodName = methodName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.jimp.anon.EventName[T]]
     }
@@ -1202,23 +1121,18 @@ object mod extends Shortcut {
   }
   object RGB {
     
-    @scala.inline
-    def apply(b: Double, g: Double, r: Double): RGB = {
+    inline def apply(b: Double, g: Double, r: Double): RGB = {
       val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
       __obj.asInstanceOf[RGB]
     }
     
-    @scala.inline
-    implicit class RGBMutableBuilder[Self <: RGB] (val x: Self) extends AnyVal {
+    extension [Self <: RGB](x: Self) {
       
-      @scala.inline
-      def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+      inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
+      inline def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+      inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1237,26 +1151,20 @@ object mod extends Shortcut {
   }
   object RGBA {
     
-    @scala.inline
-    def apply(a: Double, b: Double, g: Double, r: Double): RGBA = {
+    inline def apply(a: Double, b: Double, g: Double, r: Double): RGBA = {
       val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
       __obj.asInstanceOf[RGBA]
     }
     
-    @scala.inline
-    implicit class RGBAMutableBuilder[Self <: RGBA] (val x: Self) extends AnyVal {
+    extension [Self <: RGBA](x: Self) {
       
-      @scala.inline
-      def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+      inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+      inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
+      inline def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+      inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1270,26 +1178,20 @@ object mod extends Shortcut {
   }
   object URLOptions {
     
-    @scala.inline
-    def apply(headers: StringDictionary[js.Any], url: String): URLOptions = {
+    inline def apply(headers: StringDictionary[js.Any], url: String): URLOptions = {
       val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[URLOptions]
     }
     
-    @scala.inline
-    implicit class URLOptionsMutableBuilder[Self <: URLOptions] (val x: Self) extends AnyVal {
+    extension [Self <: URLOptions](x: Self) {
       
-      @scala.inline
-      def setCompression(value: Boolean): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+      inline def setCompression(value: Boolean): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
+      inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   

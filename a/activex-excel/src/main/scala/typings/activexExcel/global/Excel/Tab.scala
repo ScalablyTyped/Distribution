@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Tab")
 @js.native
-class Tab protected ()
+/* private */ class Tab ()
   extends StObject
      with typings.activexExcel.Excel.Tab {
   
@@ -26,7 +26,7 @@ class Tab protected ()
   /* CompleteClass */
   override val Creator: XlCreator = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.Tab_typekey")
   var ExcelDotTab_typekey: typings.activexExcel.Excel.Tab = js.native
   

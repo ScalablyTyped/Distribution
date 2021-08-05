@@ -14,26 +14,20 @@ trait ArtifactDetail extends StObject {
 }
 object ArtifactDetail {
   
-  @scala.inline
-  def apply(displayName: String, fragments: js.Array[js.Any], `type`: String): ArtifactDetail = {
+  inline def apply(displayName: String, fragments: js.Array[js.Any], `type`: String): ArtifactDetail = {
     val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], fragments = fragments.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArtifactDetail]
   }
   
-  @scala.inline
-  implicit class ArtifactDetailMutableBuilder[Self <: ArtifactDetail] (val x: Self) extends AnyVal {
+  extension [Self <: ArtifactDetail](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFragments(value: js.Array[js.Any]): Self = StObject.set(x, "fragments", value.asInstanceOf[js.Any])
+    inline def setFragments(value: js.Array[js.Any]): Self = StObject.set(x, "fragments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFragmentsVarargs(value: js.Any*): Self = StObject.set(x, "fragments", js.Array(value :_*))
+    inline def setFragmentsVarargs(value: js.Any*): Self = StObject.set(x, "fragments", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

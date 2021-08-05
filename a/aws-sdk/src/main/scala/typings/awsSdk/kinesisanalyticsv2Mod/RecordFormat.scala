@@ -18,22 +18,17 @@ trait RecordFormat extends StObject {
 }
 object RecordFormat {
   
-  @scala.inline
-  def apply(RecordFormatType: RecordFormatType): RecordFormat = {
+  inline def apply(RecordFormatType: RecordFormatType): RecordFormat = {
     val __obj = js.Dynamic.literal(RecordFormatType = RecordFormatType.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecordFormat]
   }
   
-  @scala.inline
-  implicit class RecordFormatMutableBuilder[Self <: RecordFormat] (val x: Self) extends AnyVal {
+  extension [Self <: RecordFormat](x: Self) {
     
-    @scala.inline
-    def setMappingParameters(value: MappingParameters): Self = StObject.set(x, "MappingParameters", value.asInstanceOf[js.Any])
+    inline def setMappingParameters(value: MappingParameters): Self = StObject.set(x, "MappingParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMappingParametersUndefined: Self = StObject.set(x, "MappingParameters", js.undefined)
+    inline def setMappingParametersUndefined: Self = StObject.set(x, "MappingParameters", js.undefined)
     
-    @scala.inline
-    def setRecordFormatType(value: RecordFormatType): Self = StObject.set(x, "RecordFormatType", value.asInstanceOf[js.Any])
+    inline def setRecordFormatType(value: RecordFormatType): Self = StObject.set(x, "RecordFormatType", value.asInstanceOf[js.Any])
   }
 }

@@ -11,55 +11,47 @@ object mojiStrings {
   sealed trait HE
     extends StObject
        with Mojisyu
-  @scala.inline
-  def HE: HE = "HE".asInstanceOf[HE]
+  inline def HE: HE = "HE".asInstanceOf[HE]
   
   @js.native
   sealed trait HG
     extends StObject
        with Mojisyu
-  @scala.inline
-  def HG: HG = "HG".asInstanceOf[HG]
+  inline def HG: HG = "HG".asInstanceOf[HG]
   
   @js.native
   sealed trait HK
     extends StObject
        with Mojisyu
-  @scala.inline
-  def HK: HK = "HK".asInstanceOf[HK]
+  inline def HK: HK = "HK".asInstanceOf[HK]
   
   @js.native
   sealed trait HS
     extends StObject
        with Mojisyu
-  @scala.inline
-  def HS: HS = "HS".asInstanceOf[HS]
+  inline def HS: HS = "HS".asInstanceOf[HS]
   
   @js.native
   sealed trait KK
     extends StObject
        with Mojisyu
-  @scala.inline
-  def KK: KK = "KK".asInstanceOf[KK]
+  inline def KK: KK = "KK".asInstanceOf[KK]
   
   @js.native
   sealed trait ZE
     extends StObject
        with Mojisyu
-  @scala.inline
-  def ZE: ZE = "ZE".asInstanceOf[ZE]
+  inline def ZE: ZE = "ZE".asInstanceOf[ZE]
   
   @js.native
   sealed trait ZK
     extends StObject
        with Mojisyu
-  @scala.inline
-  def ZK: ZK = "ZK".asInstanceOf[ZK]
+  inline def ZK: ZK = "ZK".asInstanceOf[ZK]
   
   @js.native
   sealed trait ZS
     extends StObject
        with Mojisyu
-  @scala.inline
-  def ZS: ZS = "ZS".asInstanceOf[ZS]
+  inline def ZS: ZS = "ZS".asInstanceOf[ZS]
 }

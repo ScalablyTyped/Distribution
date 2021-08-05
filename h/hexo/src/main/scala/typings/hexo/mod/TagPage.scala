@@ -12,16 +12,13 @@ trait TagPage
 }
 object TagPage {
   
-  @scala.inline
-  def apply(tag: String): TagPage = {
+  inline def apply(tag: String): TagPage = {
     val __obj = js.Dynamic.literal(tag = tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagPage]
   }
   
-  @scala.inline
-  implicit class TagPageMutableBuilder[Self <: TagPage] (val x: Self) extends AnyVal {
+  extension [Self <: TagPage](x: Self) {
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
   }
 }

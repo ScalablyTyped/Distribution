@@ -13,25 +13,19 @@ trait BasicReporterOptions extends StObject {
 }
 object BasicReporterOptions {
   
-  @scala.inline
-  def apply(): BasicReporterOptions = {
+  inline def apply(): BasicReporterOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BasicReporterOptions]
   }
   
-  @scala.inline
-  implicit class BasicReporterOptionsMutableBuilder[Self <: BasicReporterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BasicReporterOptions](x: Self) {
     
-    @scala.inline
-    def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
+    inline def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
+    inline def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
     
-    @scala.inline
-    def setFormatOptions(value: InspectOptions): Self = StObject.set(x, "formatOptions", value.asInstanceOf[js.Any])
+    inline def setFormatOptions(value: InspectOptions): Self = StObject.set(x, "formatOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatOptionsUndefined: Self = StObject.set(x, "formatOptions", js.undefined)
+    inline def setFormatOptionsUndefined: Self = StObject.set(x, "formatOptions", js.undefined)
   }
 }

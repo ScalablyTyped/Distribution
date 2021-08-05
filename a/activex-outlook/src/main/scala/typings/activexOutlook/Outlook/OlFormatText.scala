@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object OlFormatText {
   
-  @scala.inline
-  def olFormatTextText: `1` = 1.asInstanceOf[`1`]
+  inline def olFormatTextText: `1` = 1.asInstanceOf[`1`]
 }

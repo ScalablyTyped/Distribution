@@ -18,19 +18,15 @@ trait CSSComputedStyleProperty extends StObject {
 }
 object CSSComputedStyleProperty {
   
-  @scala.inline
-  def apply(name: String, value: String): CSSComputedStyleProperty = {
+  inline def apply(name: String, value: String): CSSComputedStyleProperty = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CSSComputedStyleProperty]
   }
   
-  @scala.inline
-  implicit class CSSComputedStylePropertyMutableBuilder[Self <: CSSComputedStyleProperty] (val x: Self) extends AnyVal {
+  extension [Self <: CSSComputedStyleProperty](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

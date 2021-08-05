@@ -23,31 +23,23 @@ trait SmartHomeAppliance extends StObject {
 }
 object SmartHomeAppliance {
   
-  @scala.inline
-  def apply(): SmartHomeAppliance = {
+  inline def apply(): SmartHomeAppliance = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SmartHomeAppliance]
   }
   
-  @scala.inline
-  implicit class SmartHomeApplianceMutableBuilder[Self <: SmartHomeAppliance] (val x: Self) extends AnyVal {
+  extension [Self <: SmartHomeAppliance](x: Self) {
     
-    @scala.inline
-    def setDescription(value: ApplianceDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: ApplianceDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setFriendlyName(value: ApplianceFriendlyName): Self = StObject.set(x, "FriendlyName", value.asInstanceOf[js.Any])
+    inline def setFriendlyName(value: ApplianceFriendlyName): Self = StObject.set(x, "FriendlyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFriendlyNameUndefined: Self = StObject.set(x, "FriendlyName", js.undefined)
+    inline def setFriendlyNameUndefined: Self = StObject.set(x, "FriendlyName", js.undefined)
     
-    @scala.inline
-    def setManufacturerName(value: ApplianceManufacturerName): Self = StObject.set(x, "ManufacturerName", value.asInstanceOf[js.Any])
+    inline def setManufacturerName(value: ApplianceManufacturerName): Self = StObject.set(x, "ManufacturerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManufacturerNameUndefined: Self = StObject.set(x, "ManufacturerName", js.undefined)
+    inline def setManufacturerNameUndefined: Self = StObject.set(x, "ManufacturerName", js.undefined)
   }
 }

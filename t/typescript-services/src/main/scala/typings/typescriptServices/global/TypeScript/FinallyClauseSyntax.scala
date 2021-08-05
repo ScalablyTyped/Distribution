@@ -93,6 +93,5 @@ object FinallyClauseSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create1(): typings.typescriptServices.TypeScript.FinallyClauseSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")().asInstanceOf[typings.typescriptServices.TypeScript.FinallyClauseSyntax]
+  inline def create1(): typings.typescriptServices.TypeScript.FinallyClauseSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")().asInstanceOf[typings.typescriptServices.TypeScript.FinallyClauseSyntax]
 }

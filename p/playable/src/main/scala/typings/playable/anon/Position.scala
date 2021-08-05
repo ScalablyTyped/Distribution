@@ -12,19 +12,15 @@ trait Position extends StObject {
 }
 object Position {
   
-  @scala.inline
-  def apply(): Position = {
+  inline def apply(): Position = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Position]
   }
   
-  @scala.inline
-  implicit class PositionMutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
+  extension [Self <: Position](x: Self) {
     
-    @scala.inline
-    def setPosition(value: left | right): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: left | right): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

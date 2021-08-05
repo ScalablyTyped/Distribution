@@ -16,25 +16,19 @@ trait AvatarPairProps extends StObject {
 }
 object AvatarPairProps {
   
-  @scala.inline
-  def apply(collaborators: js.Array[Name]): AvatarPairProps = {
+  inline def apply(collaborators: js.Array[Name]): AvatarPairProps = {
     val __obj = js.Dynamic.literal(collaborators = collaborators.asInstanceOf[js.Any])
     __obj.asInstanceOf[AvatarPairProps]
   }
   
-  @scala.inline
-  implicit class AvatarPairPropsMutableBuilder[Self <: AvatarPairProps] (val x: Self) extends AnyVal {
+  extension [Self <: AvatarPairProps](x: Self) {
     
-    @scala.inline
-    def setCollaborators(value: js.Array[Name]): Self = StObject.set(x, "collaborators", value.asInstanceOf[js.Any])
+    inline def setCollaborators(value: js.Array[Name]): Self = StObject.set(x, "collaborators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollaboratorsVarargs(value: Name*): Self = StObject.set(x, "collaborators", js.Array(value :_*))
+    inline def setCollaboratorsVarargs(value: Name*): Self = StObject.set(x, "collaborators", js.Array(value :_*))
     
-    @scala.inline
-    def setSize(value: md | lg | fit): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: md | lg | fit): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

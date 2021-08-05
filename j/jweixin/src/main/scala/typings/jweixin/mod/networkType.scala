@@ -15,15 +15,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait networkType extends StObject
 object networkType {
   
-  @scala.inline
-  def `2g`: typings.jweixin.jweixinStrings.`2g` = "2g".asInstanceOf[typings.jweixin.jweixinStrings.`2g`]
+  inline def `2g`: typings.jweixin.jweixinStrings.`2g` = "2g".asInstanceOf[typings.jweixin.jweixinStrings.`2g`]
   
-  @scala.inline
-  def `3g`: typings.jweixin.jweixinStrings.`3g` = "3g".asInstanceOf[typings.jweixin.jweixinStrings.`3g`]
+  inline def `3g`: typings.jweixin.jweixinStrings.`3g` = "3g".asInstanceOf[typings.jweixin.jweixinStrings.`3g`]
   
-  @scala.inline
-  def `4g`: typings.jweixin.jweixinStrings.`4g` = "4g".asInstanceOf[typings.jweixin.jweixinStrings.`4g`]
+  inline def `4g`: typings.jweixin.jweixinStrings.`4g` = "4g".asInstanceOf[typings.jweixin.jweixinStrings.`4g`]
   
-  @scala.inline
-  def wifi: typings.jweixin.jweixinStrings.wifi = "wifi".asInstanceOf[typings.jweixin.jweixinStrings.wifi]
+  inline def wifi: typings.jweixin.jweixinStrings.wifi = "wifi".asInstanceOf[typings.jweixin.jweixinStrings.wifi]
 }

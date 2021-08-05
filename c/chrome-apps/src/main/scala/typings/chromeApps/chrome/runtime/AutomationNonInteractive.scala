@@ -18,31 +18,23 @@ trait AutomationNonInteractive
 }
 object AutomationNonInteractive {
   
-  @scala.inline
-  def apply(): AutomationNonInteractive = {
+  inline def apply(): AutomationNonInteractive = {
     val __obj = js.Dynamic.literal(interact = false)
     __obj.asInstanceOf[AutomationNonInteractive]
   }
   
-  @scala.inline
-  implicit class AutomationNonInteractiveMutableBuilder[Self <: AutomationNonInteractive] (val x: Self) extends AnyVal {
+  extension [Self <: AutomationNonInteractive](x: Self) {
     
-    @scala.inline
-    def setDesktop(value: `false`): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
+    inline def setDesktop(value: `false`): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesktopUndefined: Self = StObject.set(x, "desktop", js.undefined)
+    inline def setDesktopUndefined: Self = StObject.set(x, "desktop", js.undefined)
     
-    @scala.inline
-    def setInteract(value: `false`): Self = StObject.set(x, "interact", value.asInstanceOf[js.Any])
+    inline def setInteract(value: `false`): Self = StObject.set(x, "interact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatches(value: js.Array[String | UrlMatches]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+    inline def setMatches(value: js.Array[String | UrlMatches]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
+    inline def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
     
-    @scala.inline
-    def setMatchesVarargs(value: (String | UrlMatches)*): Self = StObject.set(x, "matches", js.Array(value :_*))
+    inline def setMatchesVarargs(value: (String | UrlMatches)*): Self = StObject.set(x, "matches", js.Array(value :_*))
   }
 }

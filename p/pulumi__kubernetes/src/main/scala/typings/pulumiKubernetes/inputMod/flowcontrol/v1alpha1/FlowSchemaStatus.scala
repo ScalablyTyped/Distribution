@@ -17,22 +17,17 @@ trait FlowSchemaStatus extends StObject {
 }
 object FlowSchemaStatus {
   
-  @scala.inline
-  def apply(): FlowSchemaStatus = {
+  inline def apply(): FlowSchemaStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FlowSchemaStatus]
   }
   
-  @scala.inline
-  implicit class FlowSchemaStatusMutableBuilder[Self <: FlowSchemaStatus] (val x: Self) extends AnyVal {
+  extension [Self <: FlowSchemaStatus](x: Self) {
     
-    @scala.inline
-    def setConditions(value: Input[js.Array[Input[FlowSchemaCondition]]]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+    inline def setConditions(value: Input[js.Array[Input[FlowSchemaCondition]]]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
+    inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
-    @scala.inline
-    def setConditionsVarargs(value: Input[FlowSchemaCondition]*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: Input[FlowSchemaCondition]*): Self = StObject.set(x, "conditions", js.Array(value :_*))
   }
 }

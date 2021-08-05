@@ -18,19 +18,15 @@ trait INxMetaTitleDescriptionTag
 }
 object INxMetaTitleDescriptionTag {
   
-  @scala.inline
-  def apply(description: String, tags: js.Array[String], title: String): INxMetaTitleDescriptionTag = {
+  inline def apply(description: String, tags: js.Array[String], title: String): INxMetaTitleDescriptionTag = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxMetaTitleDescriptionTag]
   }
   
-  @scala.inline
-  implicit class INxMetaTitleDescriptionTagMutableBuilder[Self <: INxMetaTitleDescriptionTag] (val x: Self) extends AnyVal {
+  extension [Self <: INxMetaTitleDescriptionTag](x: Self) {
     
-    @scala.inline
-    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

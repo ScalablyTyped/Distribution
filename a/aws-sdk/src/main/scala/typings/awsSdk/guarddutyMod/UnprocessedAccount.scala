@@ -18,19 +18,15 @@ trait UnprocessedAccount extends StObject {
 }
 object UnprocessedAccount {
   
-  @scala.inline
-  def apply(AccountId: AccountId, Result: String): UnprocessedAccount = {
+  inline def apply(AccountId: AccountId, Result: String): UnprocessedAccount = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], Result = Result.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnprocessedAccount]
   }
   
-  @scala.inline
-  implicit class UnprocessedAccountMutableBuilder[Self <: UnprocessedAccount] (val x: Self) extends AnyVal {
+  extension [Self <: UnprocessedAccount](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: String): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
+    inline def setResult(value: String): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
   }
 }

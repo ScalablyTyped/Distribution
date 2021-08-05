@@ -16,31 +16,23 @@ trait TreeListColumnReorderEvent
 }
 object TreeListColumnReorderEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: TreeList): TreeListColumnReorderEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: TreeList): TreeListColumnReorderEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeListColumnReorderEvent]
   }
   
-  @scala.inline
-  implicit class TreeListColumnReorderEventMutableBuilder[Self <: TreeListColumnReorderEvent] (val x: Self) extends AnyVal {
+  extension [Self <: TreeListColumnReorderEvent](x: Self) {
     
-    @scala.inline
-    def setColumn(value: js.Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: js.Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+    inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
     
-    @scala.inline
-    def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
+    inline def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewIndexUndefined: Self = StObject.set(x, "newIndex", js.undefined)
+    inline def setNewIndexUndefined: Self = StObject.set(x, "newIndex", js.undefined)
     
-    @scala.inline
-    def setOldIndex(value: Double): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
+    inline def setOldIndex(value: Double): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldIndexUndefined: Self = StObject.set(x, "oldIndex", js.undefined)
+    inline def setOldIndexUndefined: Self = StObject.set(x, "oldIndex", js.undefined)
   }
 }

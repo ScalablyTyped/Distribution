@@ -14,8 +14,7 @@ trait MicroTask
 }
 object MicroTask {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     callback: js.Function,
     cancelScheduleRequest: () => Unit,
     invoke: js.Function,
@@ -29,10 +28,8 @@ object MicroTask {
     __obj.asInstanceOf[MicroTask]
   }
   
-  @scala.inline
-  implicit class MicroTaskMutableBuilder[Self <: MicroTask] (val x: Self) extends AnyVal {
+  extension [Self <: MicroTask](x: Self) {
     
-    @scala.inline
-    def setType(value: microTask): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: microTask): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

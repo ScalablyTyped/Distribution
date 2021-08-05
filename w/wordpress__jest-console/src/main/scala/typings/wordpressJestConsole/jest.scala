@@ -50,8 +50,7 @@ object jest {
   }
   object Matchers {
     
-    @scala.inline
-    def apply[R, T](
+    inline def apply[R, T](
       toHaveErrored: () => R,
       toHaveErroredWith: /* repeated */ js.Any => R,
       toHaveInformed: () => R,
@@ -65,32 +64,23 @@ object jest {
       __obj.asInstanceOf[Matchers[R, T]]
     }
     
-    @scala.inline
-    implicit class MatchersMutableBuilder[Self <: Matchers[?, ?], R, T] (val x: Self & (Matchers[R, T])) extends AnyVal {
+    extension [Self <: Matchers[?, ?], R, T](x: Self & (Matchers[R, T])) {
       
-      @scala.inline
-      def setToHaveErrored(value: () => R): Self = StObject.set(x, "toHaveErrored", js.Any.fromFunction0(value))
+      inline def setToHaveErrored(value: () => R): Self = StObject.set(x, "toHaveErrored", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToHaveErroredWith(value: /* repeated */ js.Any => R): Self = StObject.set(x, "toHaveErroredWith", js.Any.fromFunction1(value))
+      inline def setToHaveErroredWith(value: /* repeated */ js.Any => R): Self = StObject.set(x, "toHaveErroredWith", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToHaveInformed(value: () => R): Self = StObject.set(x, "toHaveInformed", js.Any.fromFunction0(value))
+      inline def setToHaveInformed(value: () => R): Self = StObject.set(x, "toHaveInformed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToHaveInformedWith(value: /* repeated */ js.Any => R): Self = StObject.set(x, "toHaveInformedWith", js.Any.fromFunction1(value))
+      inline def setToHaveInformedWith(value: /* repeated */ js.Any => R): Self = StObject.set(x, "toHaveInformedWith", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToHaveLogged(value: () => R): Self = StObject.set(x, "toHaveLogged", js.Any.fromFunction0(value))
+      inline def setToHaveLogged(value: () => R): Self = StObject.set(x, "toHaveLogged", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToHaveLoggedWith(value: /* repeated */ js.Any => R): Self = StObject.set(x, "toHaveLoggedWith", js.Any.fromFunction1(value))
+      inline def setToHaveLoggedWith(value: /* repeated */ js.Any => R): Self = StObject.set(x, "toHaveLoggedWith", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToHaveWarned(value: () => R): Self = StObject.set(x, "toHaveWarned", js.Any.fromFunction0(value))
+      inline def setToHaveWarned(value: () => R): Self = StObject.set(x, "toHaveWarned", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToHaveWarnedWith(value: /* repeated */ js.Any => R): Self = StObject.set(x, "toHaveWarnedWith", js.Any.fromFunction1(value))
+      inline def setToHaveWarnedWith(value: /* repeated */ js.Any => R): Self = StObject.set(x, "toHaveWarnedWith", js.Any.fromFunction1(value))
     }
   }
 }

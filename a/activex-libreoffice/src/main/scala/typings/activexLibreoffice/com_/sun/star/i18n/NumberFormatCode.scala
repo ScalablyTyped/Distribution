@@ -23,8 +23,7 @@ trait NumberFormatCode extends StObject {
 }
 object NumberFormatCode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Code: String,
     Default: Boolean,
     DefaultName: String,
@@ -37,28 +36,20 @@ object NumberFormatCode {
     __obj.asInstanceOf[NumberFormatCode]
   }
   
-  @scala.inline
-  implicit class NumberFormatCodeMutableBuilder[Self <: NumberFormatCode] (val x: Self) extends AnyVal {
+  extension [Self <: NumberFormatCode](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefault(value: Boolean): Self = StObject.set(x, "Default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: Boolean): Self = StObject.set(x, "Default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultName(value: String): Self = StObject.set(x, "DefaultName", value.asInstanceOf[js.Any])
+    inline def setDefaultName(value: String): Self = StObject.set(x, "DefaultName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameID(value: String): Self = StObject.set(x, "NameID", value.asInstanceOf[js.Any])
+    inline def setNameID(value: String): Self = StObject.set(x, "NameID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsage(value: Double): Self = StObject.set(x, "Usage", value.asInstanceOf[js.Any])
+    inline def setUsage(value: Double): Self = StObject.set(x, "Usage", value.asInstanceOf[js.Any])
   }
 }

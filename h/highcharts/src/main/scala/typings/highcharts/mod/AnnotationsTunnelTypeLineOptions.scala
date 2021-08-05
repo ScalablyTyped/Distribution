@@ -12,25 +12,19 @@ trait AnnotationsTunnelTypeLineOptions extends StObject {
 }
 object AnnotationsTunnelTypeLineOptions {
   
-  @scala.inline
-  def apply(): AnnotationsTunnelTypeLineOptions = {
+  inline def apply(): AnnotationsTunnelTypeLineOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnnotationsTunnelTypeLineOptions]
   }
   
-  @scala.inline
-  implicit class AnnotationsTunnelTypeLineOptionsMutableBuilder[Self <: AnnotationsTunnelTypeLineOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AnnotationsTunnelTypeLineOptions](x: Self) {
     
-    @scala.inline
-    def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
-    @scala.inline
-    def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+    inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
+    inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
   }
 }

@@ -8,6 +8,5 @@ object d3HierarchyStrings {
   
   @js.native
   sealed trait _empty extends StObject
-  @scala.inline
-  def _empty: _empty = "".asInstanceOf[_empty]
+  inline def _empty: _empty = "".asInstanceOf[_empty]
 }

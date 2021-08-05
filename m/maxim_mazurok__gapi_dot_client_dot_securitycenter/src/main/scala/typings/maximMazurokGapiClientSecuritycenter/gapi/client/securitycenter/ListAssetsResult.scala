@@ -14,25 +14,19 @@ trait ListAssetsResult extends StObject {
 }
 object ListAssetsResult {
   
-  @scala.inline
-  def apply(): ListAssetsResult = {
+  inline def apply(): ListAssetsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListAssetsResult]
   }
   
-  @scala.inline
-  implicit class ListAssetsResultMutableBuilder[Self <: ListAssetsResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListAssetsResult](x: Self) {
     
-    @scala.inline
-    def setAsset(value: Asset): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
+    inline def setAsset(value: Asset): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetUndefined: Self = StObject.set(x, "asset", js.undefined)
+    inline def setAssetUndefined: Self = StObject.set(x, "asset", js.undefined)
     
-    @scala.inline
-    def setStateChange(value: String): Self = StObject.set(x, "stateChange", value.asInstanceOf[js.Any])
+    inline def setStateChange(value: String): Self = StObject.set(x, "stateChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateChangeUndefined: Self = StObject.set(x, "stateChange", js.undefined)
+    inline def setStateChangeUndefined: Self = StObject.set(x, "stateChange", js.undefined)
   }
 }

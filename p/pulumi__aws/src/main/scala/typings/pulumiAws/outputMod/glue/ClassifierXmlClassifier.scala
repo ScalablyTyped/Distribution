@@ -18,19 +18,15 @@ trait ClassifierXmlClassifier extends StObject {
 }
 object ClassifierXmlClassifier {
   
-  @scala.inline
-  def apply(classification: String, rowTag: String): ClassifierXmlClassifier = {
+  inline def apply(classification: String, rowTag: String): ClassifierXmlClassifier = {
     val __obj = js.Dynamic.literal(classification = classification.asInstanceOf[js.Any], rowTag = rowTag.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassifierXmlClassifier]
   }
   
-  @scala.inline
-  implicit class ClassifierXmlClassifierMutableBuilder[Self <: ClassifierXmlClassifier] (val x: Self) extends AnyVal {
+  extension [Self <: ClassifierXmlClassifier](x: Self) {
     
-    @scala.inline
-    def setClassification(value: String): Self = StObject.set(x, "classification", value.asInstanceOf[js.Any])
+    inline def setClassification(value: String): Self = StObject.set(x, "classification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowTag(value: String): Self = StObject.set(x, "rowTag", value.asInstanceOf[js.Any])
+    inline def setRowTag(value: String): Self = StObject.set(x, "rowTag", value.asInstanceOf[js.Any])
   }
 }

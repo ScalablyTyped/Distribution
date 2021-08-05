@@ -27,18 +27,13 @@ object utilsMod {
     * @param authHeader
     * @returns {any}
     */
-  @scala.inline
-  def extractAccessToken(authHeader: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractAccessToken")(authHeader.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def extractAccessToken(authHeader: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractAccessToken")(authHeader.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
-  @scala.inline
-  def extractClientCredentials(options: CredentialsClientConfig): CredentialsClientConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("extractClientCredentials")(options.asInstanceOf[js.Any]).asInstanceOf[CredentialsClientConfig]
-  @scala.inline
-  def extractClientCredentials(options: CredentialsUserClientConfig): CredentialsClientConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("extractClientCredentials")(options.asInstanceOf[js.Any]).asInstanceOf[CredentialsClientConfig]
+  inline def extractClientCredentials(options: CredentialsClientConfig): CredentialsClientConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("extractClientCredentials")(options.asInstanceOf[js.Any]).asInstanceOf[CredentialsClientConfig]
+  inline def extractClientCredentials(options: CredentialsUserClientConfig): CredentialsClientConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("extractClientCredentials")(options.asInstanceOf[js.Any]).asInstanceOf[CredentialsClientConfig]
   
-  @scala.inline
-  def extractUserCredentials(options: CredentialsUserClientConfig): CredentialsUserConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("extractUserCredentials")(options.asInstanceOf[js.Any]).asInstanceOf[CredentialsUserConfig]
-  @scala.inline
-  def extractUserCredentials(options: CredentialsUserConfig): CredentialsUserConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("extractUserCredentials")(options.asInstanceOf[js.Any]).asInstanceOf[CredentialsUserConfig]
+  inline def extractUserCredentials(options: CredentialsUserClientConfig): CredentialsUserConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("extractUserCredentials")(options.asInstanceOf[js.Any]).asInstanceOf[CredentialsUserConfig]
+  inline def extractUserCredentials(options: CredentialsUserConfig): CredentialsUserConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("extractUserCredentials")(options.asInstanceOf[js.Any]).asInstanceOf[CredentialsUserConfig]
   
   /**
     * Returns a basic authentication header value with the given credentials
@@ -47,8 +42,7 @@ object utilsMod {
     * @param clientSecret
     * @returns {string}
     */
-  @scala.inline
-  def getBasicAuthHeaderValue(clientId: String, clientSecret: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getBasicAuthHeaderValue")(clientId.asInstanceOf[js.Any], clientSecret.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getBasicAuthHeaderValue(clientId: String, clientSecret: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getBasicAuthHeaderValue")(clientId.asInstanceOf[js.Any], clientSecret.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Returns a promise containing the file content as json object.
@@ -57,8 +51,7 @@ object utilsMod {
     * @param fileName
     * @returns {Promise<any>}
     */
-  @scala.inline
-  def getFileDataAsObject(filePath: String, fileName: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFileDataAsObject")(filePath.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def getFileDataAsObject(filePath: String, fileName: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFileDataAsObject")(filePath.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
   /**
     * Returns the value of a specified header field from a request
@@ -67,26 +60,19 @@ object utilsMod {
     * @param field The name of the field to return
     * @returns {string} The value of the header field
     */
-  @scala.inline
-  def getHeaderValue(req: Request_[ParamsDictionary, js.Any, js.Any, Query], fieldName: String): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getHeaderValue")(req.asInstanceOf[js.Any], fieldName.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  inline def getHeaderValue(req: Request_[ParamsDictionary, js.Any, js.Any, Query], fieldName: String): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getHeaderValue")(req.asInstanceOf[js.Any], fieldName.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
   
-  @scala.inline
-  def isAuthorizationCodeGrantConfig(config: OAuthConfig): /* is authmosphere.authmosphere/lib/src/types/OAuthConfig.AuthorizationCodeGrantConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAuthorizationCodeGrantConfig")(config.asInstanceOf[js.Any]).asInstanceOf[/* is authmosphere.authmosphere/lib/src/types/OAuthConfig.AuthorizationCodeGrantConfig */ Boolean]
+  inline def isAuthorizationCodeGrantConfig(config: OAuthConfig): /* is authmosphere.authmosphere/lib/src/types/OAuthConfig.AuthorizationCodeGrantConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAuthorizationCodeGrantConfig")(config.asInstanceOf[js.Any]).asInstanceOf[/* is authmosphere.authmosphere/lib/src/types/OAuthConfig.AuthorizationCodeGrantConfig */ Boolean]
   
-  @scala.inline
-  def isCredentialsClientConfig(options: Record[String, js.Any]): /* is authmosphere.authmosphere/lib/src/types/OAuthConfig.CredentialsClientConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCredentialsClientConfig")(options.asInstanceOf[js.Any]).asInstanceOf[/* is authmosphere.authmosphere/lib/src/types/OAuthConfig.CredentialsClientConfig */ Boolean]
+  inline def isCredentialsClientConfig(options: Record[String, js.Any]): /* is authmosphere.authmosphere/lib/src/types/OAuthConfig.CredentialsClientConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCredentialsClientConfig")(options.asInstanceOf[js.Any]).asInstanceOf[/* is authmosphere.authmosphere/lib/src/types/OAuthConfig.CredentialsClientConfig */ Boolean]
   
-  @scala.inline
-  def isCredentialsDirConfig(options: Record[String, js.Any]): /* is authmosphere.authmosphere/lib/src/types/OAuthConfig.CredentialsDirConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCredentialsDirConfig")(options.asInstanceOf[js.Any]).asInstanceOf[/* is authmosphere.authmosphere/lib/src/types/OAuthConfig.CredentialsDirConfig */ Boolean]
+  inline def isCredentialsDirConfig(options: Record[String, js.Any]): /* is authmosphere.authmosphere/lib/src/types/OAuthConfig.CredentialsDirConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCredentialsDirConfig")(options.asInstanceOf[js.Any]).asInstanceOf[/* is authmosphere.authmosphere/lib/src/types/OAuthConfig.CredentialsDirConfig */ Boolean]
   
-  @scala.inline
-  def isCredentialsUserConfig(options: Record[String, js.Any]): /* is authmosphere.authmosphere/lib/src/types/OAuthConfig.CredentialsUserConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCredentialsUserConfig")(options.asInstanceOf[js.Any]).asInstanceOf[/* is authmosphere.authmosphere/lib/src/types/OAuthConfig.CredentialsUserConfig */ Boolean]
+  inline def isCredentialsUserConfig(options: Record[String, js.Any]): /* is authmosphere.authmosphere/lib/src/types/OAuthConfig.CredentialsUserConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCredentialsUserConfig")(options.asInstanceOf[js.Any]).asInstanceOf[/* is authmosphere.authmosphere/lib/src/types/OAuthConfig.CredentialsUserConfig */ Boolean]
   
-  @scala.inline
-  def isPasswordGrantNoCredentialsDir(options: Record[String, js.Any]): /* is authmosphere.authmosphere/lib/src/types/OAuthConfig.CredentialsUserClientConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPasswordGrantNoCredentialsDir")(options.asInstanceOf[js.Any]).asInstanceOf[/* is authmosphere.authmosphere/lib/src/types/OAuthConfig.CredentialsUserClientConfig */ Boolean]
+  inline def isPasswordGrantNoCredentialsDir(options: Record[String, js.Any]): /* is authmosphere.authmosphere/lib/src/types/OAuthConfig.CredentialsUserClientConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPasswordGrantNoCredentialsDir")(options.asInstanceOf[js.Any]).asInstanceOf[/* is authmosphere.authmosphere/lib/src/types/OAuthConfig.CredentialsUserClientConfig */ Boolean]
   
-  @scala.inline
-  def isRefreshGrantConfig(config: OAuthConfig): /* is authmosphere.authmosphere/lib/src/types/OAuthConfig.RefreshGrantConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRefreshGrantConfig")(config.asInstanceOf[js.Any]).asInstanceOf[/* is authmosphere.authmosphere/lib/src/types/OAuthConfig.RefreshGrantConfig */ Boolean]
+  inline def isRefreshGrantConfig(config: OAuthConfig): /* is authmosphere.authmosphere/lib/src/types/OAuthConfig.RefreshGrantConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRefreshGrantConfig")(config.asInstanceOf[js.Any]).asInstanceOf[/* is authmosphere.authmosphere/lib/src/types/OAuthConfig.RefreshGrantConfig */ Boolean]
   
   @JSImport("authmosphere/lib/src/utils", "rejectRequest")
   @js.native
@@ -108,14 +94,12 @@ object utilsMod {
     * @param req
     * @returns {function(any): undefined}
     */
-  @scala.inline
-  def setTokeninfo(req: Request_[ParamsDictionary, js.Any, js.Any, Query]): js.Function1[/* data */ Token[Record[String, js.Any]], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setTokeninfo")(req.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* data */ Token[Record[String, js.Any]], Unit]]
+  inline def setTokeninfo(req: Request_[ParamsDictionary, js.Any, js.Any, Query]): js.Function1[/* data */ Token[Record[String, js.Any]], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setTokeninfo")(req.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* data */ Token[Record[String, js.Any]], Unit]]
   
   /**
     * Validates options object and throws TypeError if mandatory options is not specified.
     *
     * @param options
     */
-  @scala.inline
-  def validateOAuthConfig(options: OAuthConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateOAuthConfig")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def validateOAuthConfig(options: OAuthConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateOAuthConfig")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -20,10 +20,10 @@ object subscriptionMod {
     def this(unsubscribe: js.Function0[Unit]) = this()
     
     /** @internal */
-    var _parentOrParents: Subscription | js.Array[Subscription] = js.native
+    /* protected */ var _parentOrParents: Subscription | js.Array[Subscription] = js.native
     
     /** @internal */
-    var _subscriptions: js.Any = js.native
+    /* private */ var _subscriptions: js.Any = js.native
     
     /**
       * Adds a tear down to be called during the unsubscribe() of this
@@ -72,7 +72,6 @@ object subscriptionMod {
     @JSImport("rxjs/internal/Subscription", "Subscription.EMPTY")
     @js.native
     def EMPTY: Subscription = js.native
-    @scala.inline
-    def EMPTY_=(x: Subscription): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMPTY")(x.asInstanceOf[js.Any])
+    inline def EMPTY_=(x: Subscription): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMPTY")(x.asInstanceOf[js.Any])
   }
 }

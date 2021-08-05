@@ -13,11 +13,11 @@ object queueMod {
     def this(_items: js.Array[T], _limit: Double) = this()
     def this(_items: Unit, _limit: Double) = this()
     
-    var _evictListeners: js.Any = js.native
+    /* private */ var _evictListeners: js.Any = js.native
     
-    var _items: js.Any = js.native
+    /* private */ var _items: js.Any = js.native
     
-    var _limit: js.Any = js.native
+    /* private */ var _limit: js.Any = js.native
     
     def clear(): js.Array[T] = js.native
     

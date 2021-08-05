@@ -23,8 +23,7 @@ trait XOLESimpleStorage
      with XClassifiedObject
 object XOLESimpleStorage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ClassID: SafeArray[Double],
     ClassName: String,
     ElementNames: SafeArray[String],

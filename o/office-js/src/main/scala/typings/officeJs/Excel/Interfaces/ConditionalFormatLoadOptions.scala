@@ -192,139 +192,95 @@ trait ConditionalFormatLoadOptions extends StObject {
 }
 object ConditionalFormatLoadOptions {
   
-  @scala.inline
-  def apply(): ConditionalFormatLoadOptions = {
+  inline def apply(): ConditionalFormatLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConditionalFormatLoadOptions]
   }
   
-  @scala.inline
-  implicit class ConditionalFormatLoadOptionsMutableBuilder[Self <: ConditionalFormatLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionalFormatLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setCellValue(value: CellValueConditionalFormatLoadOptions): Self = StObject.set(x, "cellValue", value.asInstanceOf[js.Any])
+    inline def setCellValue(value: CellValueConditionalFormatLoadOptions): Self = StObject.set(x, "cellValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellValueOrNullObject(value: CellValueConditionalFormatLoadOptions): Self = StObject.set(x, "cellValueOrNullObject", value.asInstanceOf[js.Any])
+    inline def setCellValueOrNullObject(value: CellValueConditionalFormatLoadOptions): Self = StObject.set(x, "cellValueOrNullObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellValueOrNullObjectUndefined: Self = StObject.set(x, "cellValueOrNullObject", js.undefined)
+    inline def setCellValueOrNullObjectUndefined: Self = StObject.set(x, "cellValueOrNullObject", js.undefined)
     
-    @scala.inline
-    def setCellValueUndefined: Self = StObject.set(x, "cellValue", js.undefined)
+    inline def setCellValueUndefined: Self = StObject.set(x, "cellValue", js.undefined)
     
-    @scala.inline
-    def setColorScale(value: ColorScaleConditionalFormatLoadOptions): Self = StObject.set(x, "colorScale", value.asInstanceOf[js.Any])
+    inline def setColorScale(value: ColorScaleConditionalFormatLoadOptions): Self = StObject.set(x, "colorScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorScaleOrNullObject(value: ColorScaleConditionalFormatLoadOptions): Self = StObject.set(x, "colorScaleOrNullObject", value.asInstanceOf[js.Any])
+    inline def setColorScaleOrNullObject(value: ColorScaleConditionalFormatLoadOptions): Self = StObject.set(x, "colorScaleOrNullObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorScaleOrNullObjectUndefined: Self = StObject.set(x, "colorScaleOrNullObject", js.undefined)
+    inline def setColorScaleOrNullObjectUndefined: Self = StObject.set(x, "colorScaleOrNullObject", js.undefined)
     
-    @scala.inline
-    def setColorScaleUndefined: Self = StObject.set(x, "colorScale", js.undefined)
+    inline def setColorScaleUndefined: Self = StObject.set(x, "colorScale", js.undefined)
     
-    @scala.inline
-    def setCustom(value: CustomConditionalFormatLoadOptions): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: CustomConditionalFormatLoadOptions): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomOrNullObject(value: CustomConditionalFormatLoadOptions): Self = StObject.set(x, "customOrNullObject", value.asInstanceOf[js.Any])
+    inline def setCustomOrNullObject(value: CustomConditionalFormatLoadOptions): Self = StObject.set(x, "customOrNullObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomOrNullObjectUndefined: Self = StObject.set(x, "customOrNullObject", js.undefined)
+    inline def setCustomOrNullObjectUndefined: Self = StObject.set(x, "customOrNullObject", js.undefined)
     
-    @scala.inline
-    def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+    inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
-    @scala.inline
-    def setDataBar(value: DataBarConditionalFormatLoadOptions): Self = StObject.set(x, "dataBar", value.asInstanceOf[js.Any])
+    inline def setDataBar(value: DataBarConditionalFormatLoadOptions): Self = StObject.set(x, "dataBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataBarOrNullObject(value: DataBarConditionalFormatLoadOptions): Self = StObject.set(x, "dataBarOrNullObject", value.asInstanceOf[js.Any])
+    inline def setDataBarOrNullObject(value: DataBarConditionalFormatLoadOptions): Self = StObject.set(x, "dataBarOrNullObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataBarOrNullObjectUndefined: Self = StObject.set(x, "dataBarOrNullObject", js.undefined)
+    inline def setDataBarOrNullObjectUndefined: Self = StObject.set(x, "dataBarOrNullObject", js.undefined)
     
-    @scala.inline
-    def setDataBarUndefined: Self = StObject.set(x, "dataBar", js.undefined)
+    inline def setDataBarUndefined: Self = StObject.set(x, "dataBar", js.undefined)
     
-    @scala.inline
-    def setIconSet(value: IconSetConditionalFormatLoadOptions): Self = StObject.set(x, "iconSet", value.asInstanceOf[js.Any])
+    inline def setIconSet(value: IconSetConditionalFormatLoadOptions): Self = StObject.set(x, "iconSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconSetOrNullObject(value: IconSetConditionalFormatLoadOptions): Self = StObject.set(x, "iconSetOrNullObject", value.asInstanceOf[js.Any])
+    inline def setIconSetOrNullObject(value: IconSetConditionalFormatLoadOptions): Self = StObject.set(x, "iconSetOrNullObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconSetOrNullObjectUndefined: Self = StObject.set(x, "iconSetOrNullObject", js.undefined)
+    inline def setIconSetOrNullObjectUndefined: Self = StObject.set(x, "iconSetOrNullObject", js.undefined)
     
-    @scala.inline
-    def setIconSetUndefined: Self = StObject.set(x, "iconSet", js.undefined)
+    inline def setIconSetUndefined: Self = StObject.set(x, "iconSet", js.undefined)
     
-    @scala.inline
-    def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setPreset(value: PresetCriteriaConditionalFormatLoadOptions): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
+    inline def setPreset(value: PresetCriteriaConditionalFormatLoadOptions): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPresetOrNullObject(value: PresetCriteriaConditionalFormatLoadOptions): Self = StObject.set(x, "presetOrNullObject", value.asInstanceOf[js.Any])
+    inline def setPresetOrNullObject(value: PresetCriteriaConditionalFormatLoadOptions): Self = StObject.set(x, "presetOrNullObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPresetOrNullObjectUndefined: Self = StObject.set(x, "presetOrNullObject", js.undefined)
+    inline def setPresetOrNullObjectUndefined: Self = StObject.set(x, "presetOrNullObject", js.undefined)
     
-    @scala.inline
-    def setPresetUndefined: Self = StObject.set(x, "preset", js.undefined)
+    inline def setPresetUndefined: Self = StObject.set(x, "preset", js.undefined)
     
-    @scala.inline
-    def setPriority(value: Boolean): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Boolean): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
-    @scala.inline
-    def setStopIfTrue(value: Boolean): Self = StObject.set(x, "stopIfTrue", value.asInstanceOf[js.Any])
+    inline def setStopIfTrue(value: Boolean): Self = StObject.set(x, "stopIfTrue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopIfTrueUndefined: Self = StObject.set(x, "stopIfTrue", js.undefined)
+    inline def setStopIfTrueUndefined: Self = StObject.set(x, "stopIfTrue", js.undefined)
     
-    @scala.inline
-    def setTextComparison(value: TextConditionalFormatLoadOptions): Self = StObject.set(x, "textComparison", value.asInstanceOf[js.Any])
+    inline def setTextComparison(value: TextConditionalFormatLoadOptions): Self = StObject.set(x, "textComparison", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextComparisonOrNullObject(value: TextConditionalFormatLoadOptions): Self = StObject.set(x, "textComparisonOrNullObject", value.asInstanceOf[js.Any])
+    inline def setTextComparisonOrNullObject(value: TextConditionalFormatLoadOptions): Self = StObject.set(x, "textComparisonOrNullObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextComparisonOrNullObjectUndefined: Self = StObject.set(x, "textComparisonOrNullObject", js.undefined)
+    inline def setTextComparisonOrNullObjectUndefined: Self = StObject.set(x, "textComparisonOrNullObject", js.undefined)
     
-    @scala.inline
-    def setTextComparisonUndefined: Self = StObject.set(x, "textComparison", js.undefined)
+    inline def setTextComparisonUndefined: Self = StObject.set(x, "textComparison", js.undefined)
     
-    @scala.inline
-    def setTopBottom(value: TopBottomConditionalFormatLoadOptions): Self = StObject.set(x, "topBottom", value.asInstanceOf[js.Any])
+    inline def setTopBottom(value: TopBottomConditionalFormatLoadOptions): Self = StObject.set(x, "topBottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopBottomOrNullObject(value: TopBottomConditionalFormatLoadOptions): Self = StObject.set(x, "topBottomOrNullObject", value.asInstanceOf[js.Any])
+    inline def setTopBottomOrNullObject(value: TopBottomConditionalFormatLoadOptions): Self = StObject.set(x, "topBottomOrNullObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopBottomOrNullObjectUndefined: Self = StObject.set(x, "topBottomOrNullObject", js.undefined)
+    inline def setTopBottomOrNullObjectUndefined: Self = StObject.set(x, "topBottomOrNullObject", js.undefined)
     
-    @scala.inline
-    def setTopBottomUndefined: Self = StObject.set(x, "topBottom", js.undefined)
+    inline def setTopBottomUndefined: Self = StObject.set(x, "topBottom", js.undefined)
     
-    @scala.inline
-    def setType(value: Boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

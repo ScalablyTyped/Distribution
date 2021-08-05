@@ -12,19 +12,15 @@ trait Limits extends StObject {
 }
 object Limits {
   
-  @scala.inline
-  def apply(MaximumPartitionCount: MaximumPartitionCount, MaximumReplicationCount: MaximumReplicationCount): Limits = {
+  inline def apply(MaximumPartitionCount: MaximumPartitionCount, MaximumReplicationCount: MaximumReplicationCount): Limits = {
     val __obj = js.Dynamic.literal(MaximumPartitionCount = MaximumPartitionCount.asInstanceOf[js.Any], MaximumReplicationCount = MaximumReplicationCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[Limits]
   }
   
-  @scala.inline
-  implicit class LimitsMutableBuilder[Self <: Limits] (val x: Self) extends AnyVal {
+  extension [Self <: Limits](x: Self) {
     
-    @scala.inline
-    def setMaximumPartitionCount(value: MaximumPartitionCount): Self = StObject.set(x, "MaximumPartitionCount", value.asInstanceOf[js.Any])
+    inline def setMaximumPartitionCount(value: MaximumPartitionCount): Self = StObject.set(x, "MaximumPartitionCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumReplicationCount(value: MaximumReplicationCount): Self = StObject.set(x, "MaximumReplicationCount", value.asInstanceOf[js.Any])
+    inline def setMaximumReplicationCount(value: MaximumReplicationCount): Self = StObject.set(x, "MaximumReplicationCount", value.asInstanceOf[js.Any])
   }
 }

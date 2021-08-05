@@ -16,27 +16,21 @@ trait Type extends StObject {
 }
 object Type {
   
-  @scala.inline
-  def apply(`type`: find | where, `val`: js.Any): Type = {
+  inline def apply(`type`: find | where, `val`: js.Any): Type = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.updateDynamic("val")(`val`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Type]
   }
   
-  @scala.inline
-  implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
+  extension [Self <: Type](x: Self) {
     
-    @scala.inline
-    def setType(value: find | where): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: find | where): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUid(value: String | Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+    inline def setUid(value: String | Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
+    inline def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
     
-    @scala.inline
-    def setVal(value: js.Any): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+    inline def setVal(value: js.Any): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
   }
 }

@@ -24,8 +24,7 @@ trait HidBooleanControl extends StObject {
 }
 object HidBooleanControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     controlDescription: HidBooleanControlDescription,
     id: Double,
     isActive: Boolean,
@@ -36,22 +35,16 @@ object HidBooleanControl {
     __obj.asInstanceOf[HidBooleanControl]
   }
   
-  @scala.inline
-  implicit class HidBooleanControlMutableBuilder[Self <: HidBooleanControl] (val x: Self) extends AnyVal {
+  extension [Self <: HidBooleanControl](x: Self) {
     
-    @scala.inline
-    def setControlDescription(value: HidBooleanControlDescription): Self = StObject.set(x, "controlDescription", value.asInstanceOf[js.Any])
+    inline def setControlDescription(value: HidBooleanControlDescription): Self = StObject.set(x, "controlDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+    inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageId(value: Double): Self = StObject.set(x, "usageId", value.asInstanceOf[js.Any])
+    inline def setUsageId(value: Double): Self = StObject.set(x, "usageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsagePage(value: Double): Self = StObject.set(x, "usagePage", value.asInstanceOf[js.Any])
+    inline def setUsagePage(value: Double): Self = StObject.set(x, "usagePage", value.asInstanceOf[js.Any])
   }
 }

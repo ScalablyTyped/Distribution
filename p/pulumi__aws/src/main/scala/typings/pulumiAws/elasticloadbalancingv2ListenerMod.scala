@@ -77,21 +77,16 @@ object elasticloadbalancingv2ListenerMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Listener = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Listener]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Listener = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Listener]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ListenerState): Listener = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Listener]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ListenerState, opts: CustomResourceOptions): Listener = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Listener]
+    inline def get(name: String, id: Input[ID]): Listener = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Listener]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Listener = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Listener]
+    inline def get(name: String, id: Input[ID], state: ListenerState): Listener = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Listener]
+    inline def get(name: String, id: Input[ID], state: ListenerState, opts: CustomResourceOptions): Listener = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Listener]
     
     /**
       * Returns true if the given object is an instance of Listener.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticloadbalancingv2/listener.Listener */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elasticloadbalancingv2/listener.Listener */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticloadbalancingv2/listener.Listener */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elasticloadbalancingv2/listener.Listener */ Boolean]
   }
   
   trait ListenerArgs extends StObject {
@@ -130,8 +125,7 @@ object elasticloadbalancingv2ListenerMod {
   }
   object ListenerArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       defaultActions: Input[
           js.Array[Input[typings.pulumiAws.inputMod.elasticloadbalancingv2.ListenerDefaultAction]]
         ],
@@ -142,42 +136,31 @@ object elasticloadbalancingv2ListenerMod {
       __obj.asInstanceOf[ListenerArgs]
     }
     
-    @scala.inline
-    implicit class ListenerArgsMutableBuilder[Self <: ListenerArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ListenerArgs](x: Self) {
       
-      @scala.inline
-      def setCertificateArn(value: Input[String]): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
+      inline def setCertificateArn(value: Input[String]): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificateArnUndefined: Self = StObject.set(x, "certificateArn", js.undefined)
+      inline def setCertificateArnUndefined: Self = StObject.set(x, "certificateArn", js.undefined)
       
-      @scala.inline
-      def setDefaultActions(
+      inline def setDefaultActions(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.elasticloadbalancingv2.ListenerDefaultAction]]
             ]
       ): Self = StObject.set(x, "defaultActions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultActionsVarargs(value: Input[typings.pulumiAws.inputMod.elasticloadbalancingv2.ListenerDefaultAction]*): Self = StObject.set(x, "defaultActions", js.Array(value :_*))
+      inline def setDefaultActionsVarargs(value: Input[typings.pulumiAws.inputMod.elasticloadbalancingv2.ListenerDefaultAction]*): Self = StObject.set(x, "defaultActions", js.Array(value :_*))
       
-      @scala.inline
-      def setLoadBalancerArn(value: Input[String]): Self = StObject.set(x, "loadBalancerArn", value.asInstanceOf[js.Any])
+      inline def setLoadBalancerArn(value: Input[String]): Self = StObject.set(x, "loadBalancerArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Input[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Input[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocol(value: Input[String]): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: Input[String]): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+      inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
       
-      @scala.inline
-      def setSslPolicy(value: Input[String]): Self = StObject.set(x, "sslPolicy", value.asInstanceOf[js.Any])
+      inline def setSslPolicy(value: Input[String]): Self = StObject.set(x, "sslPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSslPolicyUndefined: Self = StObject.set(x, "sslPolicy", js.undefined)
+      inline def setSslPolicyUndefined: Self = StObject.set(x, "sslPolicy", js.undefined)
     }
   }
   
@@ -224,63 +207,46 @@ object elasticloadbalancingv2ListenerMod {
   }
   object ListenerState {
     
-    @scala.inline
-    def apply(): ListenerState = {
+    inline def apply(): ListenerState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListenerState]
     }
     
-    @scala.inline
-    implicit class ListenerStateMutableBuilder[Self <: ListenerState] (val x: Self) extends AnyVal {
+    extension [Self <: ListenerState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setCertificateArn(value: Input[String]): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
+      inline def setCertificateArn(value: Input[String]): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificateArnUndefined: Self = StObject.set(x, "certificateArn", js.undefined)
+      inline def setCertificateArnUndefined: Self = StObject.set(x, "certificateArn", js.undefined)
       
-      @scala.inline
-      def setDefaultActions(
+      inline def setDefaultActions(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.elasticloadbalancingv2.ListenerDefaultAction]]
             ]
       ): Self = StObject.set(x, "defaultActions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultActionsUndefined: Self = StObject.set(x, "defaultActions", js.undefined)
+      inline def setDefaultActionsUndefined: Self = StObject.set(x, "defaultActions", js.undefined)
       
-      @scala.inline
-      def setDefaultActionsVarargs(value: Input[typings.pulumiAws.inputMod.elasticloadbalancingv2.ListenerDefaultAction]*): Self = StObject.set(x, "defaultActions", js.Array(value :_*))
+      inline def setDefaultActionsVarargs(value: Input[typings.pulumiAws.inputMod.elasticloadbalancingv2.ListenerDefaultAction]*): Self = StObject.set(x, "defaultActions", js.Array(value :_*))
       
-      @scala.inline
-      def setLoadBalancerArn(value: Input[String]): Self = StObject.set(x, "loadBalancerArn", value.asInstanceOf[js.Any])
+      inline def setLoadBalancerArn(value: Input[String]): Self = StObject.set(x, "loadBalancerArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadBalancerArnUndefined: Self = StObject.set(x, "loadBalancerArn", js.undefined)
+      inline def setLoadBalancerArnUndefined: Self = StObject.set(x, "loadBalancerArn", js.undefined)
       
-      @scala.inline
-      def setPort(value: Input[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Input[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setProtocol(value: Input[String]): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: Input[String]): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+      inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
       
-      @scala.inline
-      def setSslPolicy(value: Input[String]): Self = StObject.set(x, "sslPolicy", value.asInstanceOf[js.Any])
+      inline def setSslPolicy(value: Input[String]): Self = StObject.set(x, "sslPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSslPolicyUndefined: Self = StObject.set(x, "sslPolicy", js.undefined)
+      inline def setSslPolicyUndefined: Self = StObject.set(x, "sslPolicy", js.undefined)
     }
   }
 }

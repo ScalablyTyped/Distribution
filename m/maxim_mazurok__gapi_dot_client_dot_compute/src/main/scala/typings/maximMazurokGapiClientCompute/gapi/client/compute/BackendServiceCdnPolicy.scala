@@ -21,34 +21,25 @@ trait BackendServiceCdnPolicy extends StObject {
 }
 object BackendServiceCdnPolicy {
   
-  @scala.inline
-  def apply(): BackendServiceCdnPolicy = {
+  inline def apply(): BackendServiceCdnPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BackendServiceCdnPolicy]
   }
   
-  @scala.inline
-  implicit class BackendServiceCdnPolicyMutableBuilder[Self <: BackendServiceCdnPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: BackendServiceCdnPolicy](x: Self) {
     
-    @scala.inline
-    def setCacheKeyPolicy(value: CacheKeyPolicy): Self = StObject.set(x, "cacheKeyPolicy", value.asInstanceOf[js.Any])
+    inline def setCacheKeyPolicy(value: CacheKeyPolicy): Self = StObject.set(x, "cacheKeyPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheKeyPolicyUndefined: Self = StObject.set(x, "cacheKeyPolicy", js.undefined)
+    inline def setCacheKeyPolicyUndefined: Self = StObject.set(x, "cacheKeyPolicy", js.undefined)
     
-    @scala.inline
-    def setSignedUrlCacheMaxAgeSec(value: String): Self = StObject.set(x, "signedUrlCacheMaxAgeSec", value.asInstanceOf[js.Any])
+    inline def setSignedUrlCacheMaxAgeSec(value: String): Self = StObject.set(x, "signedUrlCacheMaxAgeSec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignedUrlCacheMaxAgeSecUndefined: Self = StObject.set(x, "signedUrlCacheMaxAgeSec", js.undefined)
+    inline def setSignedUrlCacheMaxAgeSecUndefined: Self = StObject.set(x, "signedUrlCacheMaxAgeSec", js.undefined)
     
-    @scala.inline
-    def setSignedUrlKeyNames(value: js.Array[String]): Self = StObject.set(x, "signedUrlKeyNames", value.asInstanceOf[js.Any])
+    inline def setSignedUrlKeyNames(value: js.Array[String]): Self = StObject.set(x, "signedUrlKeyNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignedUrlKeyNamesUndefined: Self = StObject.set(x, "signedUrlKeyNames", js.undefined)
+    inline def setSignedUrlKeyNamesUndefined: Self = StObject.set(x, "signedUrlKeyNames", js.undefined)
     
-    @scala.inline
-    def setSignedUrlKeyNamesVarargs(value: String*): Self = StObject.set(x, "signedUrlKeyNames", js.Array(value :_*))
+    inline def setSignedUrlKeyNamesVarargs(value: String*): Self = StObject.set(x, "signedUrlKeyNames", js.Array(value :_*))
   }
 }

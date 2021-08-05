@@ -40,64 +40,45 @@ trait ProfileParams extends StObject {
 }
 object ProfileParams {
   
-  @scala.inline
-  def apply(content: Content | String): ProfileParams = {
+  inline def apply(content: Content | String): ProfileParams = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProfileParams]
   }
   
-  @scala.inline
-  implicit class ProfileParamsMutableBuilder[Self <: ProfileParams] (val x: Self) extends AnyVal {
+  extension [Self <: ProfileParams](x: Self) {
     
-    @scala.inline
-    def setAccept_language(value: AcceptLanguage | String): Self = StObject.set(x, "accept_language", value.asInstanceOf[js.Any])
+    inline def setAccept_language(value: AcceptLanguage | String): Self = StObject.set(x, "accept_language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccept_languageUndefined: Self = StObject.set(x, "accept_language", js.undefined)
+    inline def setAccept_languageUndefined: Self = StObject.set(x, "accept_language", js.undefined)
     
-    @scala.inline
-    def setConsumption_preferences(value: Boolean): Self = StObject.set(x, "consumption_preferences", value.asInstanceOf[js.Any])
+    inline def setConsumption_preferences(value: Boolean): Self = StObject.set(x, "consumption_preferences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumption_preferencesUndefined: Self = StObject.set(x, "consumption_preferences", js.undefined)
+    inline def setConsumption_preferencesUndefined: Self = StObject.set(x, "consumption_preferences", js.undefined)
     
-    @scala.inline
-    def setContent(value: Content | String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: Content | String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent_language(value: ContentLanguage | String): Self = StObject.set(x, "content_language", value.asInstanceOf[js.Any])
+    inline def setContent_language(value: ContentLanguage | String): Self = StObject.set(x, "content_language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent_languageUndefined: Self = StObject.set(x, "content_language", js.undefined)
+    inline def setContent_languageUndefined: Self = StObject.set(x, "content_language", js.undefined)
     
-    @scala.inline
-    def setContent_type(value: ContentType | String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
+    inline def setContent_type(value: ContentType | String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent_typeUndefined: Self = StObject.set(x, "content_type", js.undefined)
+    inline def setContent_typeUndefined: Self = StObject.set(x, "content_type", js.undefined)
     
-    @scala.inline
-    def setCsv_headers(value: Boolean): Self = StObject.set(x, "csv_headers", value.asInstanceOf[js.Any])
+    inline def setCsv_headers(value: Boolean): Self = StObject.set(x, "csv_headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCsv_headersUndefined: Self = StObject.set(x, "csv_headers", js.undefined)
+    inline def setCsv_headersUndefined: Self = StObject.set(x, "csv_headers", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setRaw_scores(value: Boolean): Self = StObject.set(x, "raw_scores", value.asInstanceOf[js.Any])
+    inline def setRaw_scores(value: Boolean): Self = StObject.set(x, "raw_scores", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRaw_scoresUndefined: Self = StObject.set(x, "raw_scores", js.undefined)
+    inline def setRaw_scoresUndefined: Self = StObject.set(x, "raw_scores", js.undefined)
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
   }
 }

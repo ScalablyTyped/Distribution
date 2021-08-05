@@ -18,25 +18,19 @@ trait JobScopeTerm extends StObject {
 }
 object JobScopeTerm {
   
-  @scala.inline
-  def apply(): JobScopeTerm = {
+  inline def apply(): JobScopeTerm = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobScopeTerm]
   }
   
-  @scala.inline
-  implicit class JobScopeTermMutableBuilder[Self <: JobScopeTerm] (val x: Self) extends AnyVal {
+  extension [Self <: JobScopeTerm](x: Self) {
     
-    @scala.inline
-    def setSimpleScopeTerm(value: SimpleScopeTerm): Self = StObject.set(x, "simpleScopeTerm", value.asInstanceOf[js.Any])
+    inline def setSimpleScopeTerm(value: SimpleScopeTerm): Self = StObject.set(x, "simpleScopeTerm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSimpleScopeTermUndefined: Self = StObject.set(x, "simpleScopeTerm", js.undefined)
+    inline def setSimpleScopeTermUndefined: Self = StObject.set(x, "simpleScopeTerm", js.undefined)
     
-    @scala.inline
-    def setTagScopeTerm(value: TagScopeTerm): Self = StObject.set(x, "tagScopeTerm", value.asInstanceOf[js.Any])
+    inline def setTagScopeTerm(value: TagScopeTerm): Self = StObject.set(x, "tagScopeTerm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagScopeTermUndefined: Self = StObject.set(x, "tagScopeTerm", js.undefined)
+    inline def setTagScopeTermUndefined: Self = StObject.set(x, "tagScopeTerm", js.undefined)
   }
 }

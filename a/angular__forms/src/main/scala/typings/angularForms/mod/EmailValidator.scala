@@ -10,9 +10,9 @@ class EmailValidator ()
   extends StObject
      with Validator {
   
-  var _enabled: js.Any = js.native
+  /* private */ var _enabled: js.Any = js.native
   
-  var _onChange: js.Any = js.native
+  /* private */ var _onChange: js.Any = js.native
   
   /**
     * @description

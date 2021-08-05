@@ -18,22 +18,17 @@ trait DetectorModelDefinition extends StObject {
 }
 object DetectorModelDefinition {
   
-  @scala.inline
-  def apply(initialStateName: StateName, states: States): DetectorModelDefinition = {
+  inline def apply(initialStateName: StateName, states: States): DetectorModelDefinition = {
     val __obj = js.Dynamic.literal(initialStateName = initialStateName.asInstanceOf[js.Any], states = states.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectorModelDefinition]
   }
   
-  @scala.inline
-  implicit class DetectorModelDefinitionMutableBuilder[Self <: DetectorModelDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: DetectorModelDefinition](x: Self) {
     
-    @scala.inline
-    def setInitialStateName(value: StateName): Self = StObject.set(x, "initialStateName", value.asInstanceOf[js.Any])
+    inline def setInitialStateName(value: StateName): Self = StObject.set(x, "initialStateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStates(value: States): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
+    inline def setStates(value: States): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatesVarargs(value: State*): Self = StObject.set(x, "states", js.Array(value :_*))
+    inline def setStatesVarargs(value: State*): Self = StObject.set(x, "states", js.Array(value :_*))
   }
 }

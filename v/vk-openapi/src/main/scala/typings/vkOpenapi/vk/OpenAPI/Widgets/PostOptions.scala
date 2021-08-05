@@ -10,19 +10,15 @@ trait PostOptions extends StObject {
 }
 object PostOptions {
   
-  @scala.inline
-  def apply(): PostOptions = {
+  inline def apply(): PostOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PostOptions]
   }
   
-  @scala.inline
-  implicit class PostOptionsMutableBuilder[Self <: PostOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PostOptions](x: Self) {
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

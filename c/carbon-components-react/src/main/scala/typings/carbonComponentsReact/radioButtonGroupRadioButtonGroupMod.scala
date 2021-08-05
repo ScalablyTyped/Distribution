@@ -52,67 +52,48 @@ object radioButtonGroupRadioButtonGroupMod {
   }
   object RadioButtonGroupProps {
     
-    @scala.inline
-    def apply(name: String): RadioButtonGroupProps = {
+    inline def apply(name: String): RadioButtonGroupProps = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[RadioButtonGroupProps]
     }
     
-    @scala.inline
-    implicit class RadioButtonGroupPropsMutableBuilder[Self <: RadioButtonGroupProps] (val x: Self) extends AnyVal {
+    extension [Self <: RadioButtonGroupProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDefaultSelected(value: RadioButtonValue): Self = StObject.set(x, "defaultSelected", value.asInstanceOf[js.Any])
+      inline def setDefaultSelected(value: RadioButtonValue): Self = StObject.set(x, "defaultSelected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultSelectedUndefined: Self = StObject.set(x, "defaultSelected", js.undefined)
+      inline def setDefaultSelectedUndefined: Self = StObject.set(x, "defaultSelected", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setLabelPosition(value: left | right): Self = StObject.set(x, "labelPosition", value.asInstanceOf[js.Any])
+      inline def setLabelPosition(value: left | right): Self = StObject.set(x, "labelPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelPositionUndefined: Self = StObject.set(x, "labelPosition", js.undefined)
+      inline def setLabelPositionUndefined: Self = StObject.set(x, "labelPosition", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnChange(
+      inline def setOnChange(
         value: (/* newSelection */ RadioButtonValue, /* name */ String, /* event */ ChangeEvent[HTMLInputElement]) => Unit
       ): Self = StObject.set(x, "onChange", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOrientation(value: horizontal | vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+      inline def setOrientation(value: horizontal | vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+      inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
       
-      @scala.inline
-      def setValueSelected(value: RadioButtonValue): Self = StObject.set(x, "valueSelected", value.asInstanceOf[js.Any])
+      inline def setValueSelected(value: RadioButtonValue): Self = StObject.set(x, "valueSelected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueSelectedUndefined: Self = StObject.set(x, "valueSelected", js.undefined)
+      inline def setValueSelectedUndefined: Self = StObject.set(x, "valueSelected", js.undefined)
     }
   }
 }

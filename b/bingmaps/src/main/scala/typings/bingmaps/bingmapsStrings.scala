@@ -8,11 +8,9 @@ object bingmapsStrings {
   
   @js.native
   sealed trait meters extends StObject
-  @scala.inline
-  def meters: meters = "meters".asInstanceOf[meters]
+  inline def meters: meters = "meters".asInstanceOf[meters]
   
   @js.native
   sealed trait pixel extends StObject
-  @scala.inline
-  def pixel: pixel = "pixel".asInstanceOf[pixel]
+  inline def pixel: pixel = "pixel".asInstanceOf[pixel]
 }

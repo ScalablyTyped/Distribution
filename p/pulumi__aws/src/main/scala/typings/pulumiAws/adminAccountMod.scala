@@ -47,21 +47,16 @@ object adminAccountMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): AdminAccount = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[AdminAccount]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): AdminAccount = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AdminAccount]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AdminAccountState): AdminAccount = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AdminAccount]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AdminAccountState, opts: CustomResourceOptions): AdminAccount = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AdminAccount]
+    inline def get(name: String, id: Input[ID]): AdminAccount = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[AdminAccount]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): AdminAccount = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AdminAccount]
+    inline def get(name: String, id: Input[ID], state: AdminAccountState): AdminAccount = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AdminAccount]
+    inline def get(name: String, id: Input[ID], state: AdminAccountState, opts: CustomResourceOptions): AdminAccount = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AdminAccount]
     
     /**
       * Returns true if the given object is an instance of AdminAccount.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/fms/adminAccount.AdminAccount */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/fms/adminAccount.AdminAccount */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/fms/adminAccount.AdminAccount */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/fms/adminAccount.AdminAccount */ Boolean]
   }
   
   trait AdminAccountArgs extends StObject {
@@ -73,20 +68,16 @@ object adminAccountMod {
   }
   object AdminAccountArgs {
     
-    @scala.inline
-    def apply(): AdminAccountArgs = {
+    inline def apply(): AdminAccountArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AdminAccountArgs]
     }
     
-    @scala.inline
-    implicit class AdminAccountArgsMutableBuilder[Self <: AdminAccountArgs] (val x: Self) extends AnyVal {
+    extension [Self <: AdminAccountArgs](x: Self) {
       
-      @scala.inline
-      def setAccountId(value: Input[String]): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+      inline def setAccountId(value: Input[String]): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+      inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     }
   }
   
@@ -99,20 +90,16 @@ object adminAccountMod {
   }
   object AdminAccountState {
     
-    @scala.inline
-    def apply(): AdminAccountState = {
+    inline def apply(): AdminAccountState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AdminAccountState]
     }
     
-    @scala.inline
-    implicit class AdminAccountStateMutableBuilder[Self <: AdminAccountState] (val x: Self) extends AnyVal {
+    extension [Self <: AdminAccountState](x: Self) {
       
-      @scala.inline
-      def setAccountId(value: Input[String]): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+      inline def setAccountId(value: Input[String]): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+      inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     }
   }
 }

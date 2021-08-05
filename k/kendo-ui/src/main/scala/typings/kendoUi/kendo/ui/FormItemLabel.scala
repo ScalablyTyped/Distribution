@@ -14,31 +14,23 @@ trait FormItemLabel extends StObject {
 }
 object FormItemLabel {
   
-  @scala.inline
-  def apply(): FormItemLabel = {
+  inline def apply(): FormItemLabel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FormItemLabel]
   }
   
-  @scala.inline
-  implicit class FormItemLabelMutableBuilder[Self <: FormItemLabel] (val x: Self) extends AnyVal {
+  extension [Self <: FormItemLabel](x: Self) {
     
-    @scala.inline
-    def setEncoded(value: Boolean): Self = StObject.set(x, "encoded", value.asInstanceOf[js.Any])
+    inline def setEncoded(value: Boolean): Self = StObject.set(x, "encoded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodedUndefined: Self = StObject.set(x, "encoded", js.undefined)
+    inline def setEncodedUndefined: Self = StObject.set(x, "encoded", js.undefined)
     
-    @scala.inline
-    def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
+    inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

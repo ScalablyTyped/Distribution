@@ -23,22 +23,17 @@ trait MappingDetails extends StObject {
 }
 object MappingDetails {
   
-  @scala.inline
-  def apply(localPath: String, mappingType: String, serverPath: String): MappingDetails = {
+  inline def apply(localPath: String, mappingType: String, serverPath: String): MappingDetails = {
     val __obj = js.Dynamic.literal(localPath = localPath.asInstanceOf[js.Any], mappingType = mappingType.asInstanceOf[js.Any], serverPath = serverPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[MappingDetails]
   }
   
-  @scala.inline
-  implicit class MappingDetailsMutableBuilder[Self <: MappingDetails] (val x: Self) extends AnyVal {
+  extension [Self <: MappingDetails](x: Self) {
     
-    @scala.inline
-    def setLocalPath(value: String): Self = StObject.set(x, "localPath", value.asInstanceOf[js.Any])
+    inline def setLocalPath(value: String): Self = StObject.set(x, "localPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMappingType(value: String): Self = StObject.set(x, "mappingType", value.asInstanceOf[js.Any])
+    inline def setMappingType(value: String): Self = StObject.set(x, "mappingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerPath(value: String): Self = StObject.set(x, "serverPath", value.asInstanceOf[js.Any])
+    inline def setServerPath(value: String): Self = StObject.set(x, "serverPath", value.asInstanceOf[js.Any])
   }
 }

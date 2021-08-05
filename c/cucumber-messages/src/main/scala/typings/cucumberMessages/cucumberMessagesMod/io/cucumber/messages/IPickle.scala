@@ -43,85 +43,59 @@ trait IPickle extends StObject {
 }
 object IPickle {
   
-  @scala.inline
-  def apply(): IPickle = {
+  inline def apply(): IPickle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPickle]
   }
   
-  @scala.inline
-  implicit class IPickleMutableBuilder[Self <: IPickle] (val x: Self) extends AnyVal {
+  extension [Self <: IPickle](x: Self) {
     
-    @scala.inline
-    def setAstNodeIds(value: js.Array[String]): Self = StObject.set(x, "astNodeIds", value.asInstanceOf[js.Any])
+    inline def setAstNodeIds(value: js.Array[String]): Self = StObject.set(x, "astNodeIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAstNodeIdsNull: Self = StObject.set(x, "astNodeIds", null)
+    inline def setAstNodeIdsNull: Self = StObject.set(x, "astNodeIds", null)
     
-    @scala.inline
-    def setAstNodeIdsUndefined: Self = StObject.set(x, "astNodeIds", js.undefined)
+    inline def setAstNodeIdsUndefined: Self = StObject.set(x, "astNodeIds", js.undefined)
     
-    @scala.inline
-    def setAstNodeIdsVarargs(value: String*): Self = StObject.set(x, "astNodeIds", js.Array(value :_*))
+    inline def setAstNodeIdsVarargs(value: String*): Self = StObject.set(x, "astNodeIds", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdNull: Self = StObject.set(x, "id", null)
+    inline def setIdNull: Self = StObject.set(x, "id", null)
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageNull: Self = StObject.set(x, "language", null)
+    inline def setLanguageNull: Self = StObject.set(x, "language", null)
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSteps(value: js.Array[IPickleStep]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+    inline def setSteps(value: js.Array[IPickleStep]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepsNull: Self = StObject.set(x, "steps", null)
+    inline def setStepsNull: Self = StObject.set(x, "steps", null)
     
-    @scala.inline
-    def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
+    inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
     
-    @scala.inline
-    def setStepsVarargs(value: IPickleStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: IPickleStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
     
-    @scala.inline
-    def setTags(value: js.Array[IPickleTag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[IPickleTag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsNull: Self = StObject.set(x, "tags", null)
+    inline def setTagsNull: Self = StObject.set(x, "tags", null)
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: IPickleTag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: IPickleTag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriNull: Self = StObject.set(x, "uri", null)
+    inline def setUriNull: Self = StObject.set(x, "uri", null)
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

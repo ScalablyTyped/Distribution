@@ -38,52 +38,37 @@ trait UpdateNotificationRuleRequest extends StObject {
 }
 object UpdateNotificationRuleRequest {
   
-  @scala.inline
-  def apply(Arn: NotificationRuleArn): UpdateNotificationRuleRequest = {
+  inline def apply(Arn: NotificationRuleArn): UpdateNotificationRuleRequest = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateNotificationRuleRequest]
   }
   
-  @scala.inline
-  implicit class UpdateNotificationRuleRequestMutableBuilder[Self <: UpdateNotificationRuleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateNotificationRuleRequest](x: Self) {
     
-    @scala.inline
-    def setArn(value: NotificationRuleArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: NotificationRuleArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailType(value: DetailType): Self = StObject.set(x, "DetailType", value.asInstanceOf[js.Any])
+    inline def setDetailType(value: DetailType): Self = StObject.set(x, "DetailType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailTypeUndefined: Self = StObject.set(x, "DetailType", js.undefined)
+    inline def setDetailTypeUndefined: Self = StObject.set(x, "DetailType", js.undefined)
     
-    @scala.inline
-    def setEventTypeIds(value: EventTypeIds): Self = StObject.set(x, "EventTypeIds", value.asInstanceOf[js.Any])
+    inline def setEventTypeIds(value: EventTypeIds): Self = StObject.set(x, "EventTypeIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTypeIdsUndefined: Self = StObject.set(x, "EventTypeIds", js.undefined)
+    inline def setEventTypeIdsUndefined: Self = StObject.set(x, "EventTypeIds", js.undefined)
     
-    @scala.inline
-    def setEventTypeIdsVarargs(value: EventTypeId*): Self = StObject.set(x, "EventTypeIds", js.Array(value :_*))
+    inline def setEventTypeIdsVarargs(value: EventTypeId*): Self = StObject.set(x, "EventTypeIds", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: NotificationRuleName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NotificationRuleName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setStatus(value: NotificationRuleStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: NotificationRuleStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setTargets(value: Targets): Self = StObject.set(x, "Targets", value.asInstanceOf[js.Any])
+    inline def setTargets(value: Targets): Self = StObject.set(x, "Targets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetsUndefined: Self = StObject.set(x, "Targets", js.undefined)
+    inline def setTargetsUndefined: Self = StObject.set(x, "Targets", js.undefined)
     
-    @scala.inline
-    def setTargetsVarargs(value: Target*): Self = StObject.set(x, "Targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: Target*): Self = StObject.set(x, "Targets", js.Array(value :_*))
   }
 }

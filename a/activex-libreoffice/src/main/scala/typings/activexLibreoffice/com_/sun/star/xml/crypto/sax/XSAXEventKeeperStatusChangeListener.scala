@@ -35,8 +35,7 @@ trait XSAXEventKeeperStatusChangeListener
 }
 object XSAXEventKeeperStatusChangeListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     blockingStatusChanged: Boolean => Unit,
     bufferStatusChanged: Boolean => Unit,
@@ -48,16 +47,12 @@ object XSAXEventKeeperStatusChangeListener {
     __obj.asInstanceOf[XSAXEventKeeperStatusChangeListener]
   }
   
-  @scala.inline
-  implicit class XSAXEventKeeperStatusChangeListenerMutableBuilder[Self <: XSAXEventKeeperStatusChangeListener] (val x: Self) extends AnyVal {
+  extension [Self <: XSAXEventKeeperStatusChangeListener](x: Self) {
     
-    @scala.inline
-    def setBlockingStatusChanged(value: Boolean => Unit): Self = StObject.set(x, "blockingStatusChanged", js.Any.fromFunction1(value))
+    inline def setBlockingStatusChanged(value: Boolean => Unit): Self = StObject.set(x, "blockingStatusChanged", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBufferStatusChanged(value: Boolean => Unit): Self = StObject.set(x, "bufferStatusChanged", js.Any.fromFunction1(value))
+    inline def setBufferStatusChanged(value: Boolean => Unit): Self = StObject.set(x, "bufferStatusChanged", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCollectionStatusChanged(value: Boolean => Unit): Self = StObject.set(x, "collectionStatusChanged", js.Any.fromFunction1(value))
+    inline def setCollectionStatusChanged(value: Boolean => Unit): Self = StObject.set(x, "collectionStatusChanged", js.Any.fromFunction1(value))
   }
 }

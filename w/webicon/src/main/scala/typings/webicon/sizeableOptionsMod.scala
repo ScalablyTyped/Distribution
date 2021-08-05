@@ -27,30 +27,24 @@ object sizeableOptionsMod {
   }
   object SizeableOptions {
     
-    @scala.inline
-    def apply(): SizeableOptions = {
+    inline def apply(): SizeableOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SizeableOptions]
     }
     
-    @scala.inline
-    implicit class SizeableOptionsMutableBuilder[Self <: SizeableOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SizeableOptions](x: Self) {
       
-      @scala.inline
-      def setSize(
+      inline def setSize(
         value: /* import warning: importer.ImportType#apply Failed type conversion: this['iconSize'] */ js.Any
       ): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setSvgIconSize(
+      inline def setSvgIconSize(
         value: /* import warning: importer.ImportType#apply Failed type conversion: this['iconSize'] */ js.Any
       ): Self = StObject.set(x, "svgIconSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSvgIconSizeUndefined: Self = StObject.set(x, "svgIconSize", js.undefined)
+      inline def setSvgIconSizeUndefined: Self = StObject.set(x, "svgIconSize", js.undefined)
     }
   }
 }

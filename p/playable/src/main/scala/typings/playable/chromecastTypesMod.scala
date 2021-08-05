@@ -15,17 +15,14 @@ object chromecastTypesMod {
   }
   object IChromecastDebugInfo {
     
-    @scala.inline
-    def apply(currentTime: Double, duration: Double, output: String, src: String): IChromecastDebugInfo = {
+    inline def apply(currentTime: Double, duration: Double, output: String, src: String): IChromecastDebugInfo = {
       val __obj = js.Dynamic.literal(currentTime = currentTime.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
       __obj.asInstanceOf[IChromecastDebugInfo]
     }
     
-    @scala.inline
-    implicit class IChromecastDebugInfoMutableBuilder[Self <: IChromecastDebugInfo] (val x: Self) extends AnyVal {
+    extension [Self <: IChromecastDebugInfo](x: Self) {
       
-      @scala.inline
-      def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     }
   }
 }

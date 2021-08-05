@@ -49,42 +49,32 @@ object srcDaemonMod {
   }
   object Daemon {
     
-    @scala.inline
-    def apply(start: () => js.Promise[Daemon], stop: () => js.Promise[Daemon]): Daemon = {
+    inline def apply(start: () => js.Promise[Daemon], stop: () => js.Promise[Daemon]): Daemon = {
       val __obj = js.Dynamic.literal(start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop))
       __obj.asInstanceOf[Daemon]
     }
     
-    @scala.inline
-    implicit class DaemonMutableBuilder[Self <: Daemon] (val x: Self) extends AnyVal {
+    extension [Self <: Daemon](x: Self) {
       
-      @scala.inline
-      def setStart(value: () => js.Promise[Daemon]): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+      inline def setStart(value: () => js.Promise[Daemon]): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStop(value: () => js.Promise[Daemon]): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      inline def setStop(value: () => js.Promise[Daemon]): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_httpApi(
+      inline def set_httpApi(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_src */ js.Any
       ): Self = StObject.set(x, "_httpApi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_httpApiUndefined: Self = StObject.set(x, "_httpApi", js.undefined)
+      inline def set_httpApiUndefined: Self = StObject.set(x, "_httpApi", js.undefined)
       
-      @scala.inline
-      def set_httpGateway(
+      inline def set_httpGateway(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_src */ js.Any
       ): Self = StObject.set(x, "_httpGateway", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_httpGatewayUndefined: Self = StObject.set(x, "_httpGateway", js.undefined)
+      inline def set_httpGatewayUndefined: Self = StObject.set(x, "_httpGateway", js.undefined)
       
-      @scala.inline
-      def set_ipfs(value: AddAll): Self = StObject.set(x, "_ipfs", value.asInstanceOf[js.Any])
+      inline def set_ipfs(value: AddAll): Self = StObject.set(x, "_ipfs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_ipfsUndefined: Self = StObject.set(x, "_ipfs", js.undefined)
+      inline def set_ipfsUndefined: Self = StObject.set(x, "_ipfs", js.undefined)
     }
   }
 }

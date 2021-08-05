@@ -18,25 +18,19 @@ trait BatchDetectSentimentResponse extends StObject {
 }
 object BatchDetectSentimentResponse {
   
-  @scala.inline
-  def apply(ErrorList: BatchItemErrorList, ResultList: ListOfDetectSentimentResult): BatchDetectSentimentResponse = {
+  inline def apply(ErrorList: BatchItemErrorList, ResultList: ListOfDetectSentimentResult): BatchDetectSentimentResponse = {
     val __obj = js.Dynamic.literal(ErrorList = ErrorList.asInstanceOf[js.Any], ResultList = ResultList.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchDetectSentimentResponse]
   }
   
-  @scala.inline
-  implicit class BatchDetectSentimentResponseMutableBuilder[Self <: BatchDetectSentimentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDetectSentimentResponse](x: Self) {
     
-    @scala.inline
-    def setErrorList(value: BatchItemErrorList): Self = StObject.set(x, "ErrorList", value.asInstanceOf[js.Any])
+    inline def setErrorList(value: BatchItemErrorList): Self = StObject.set(x, "ErrorList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorListVarargs(value: BatchItemError*): Self = StObject.set(x, "ErrorList", js.Array(value :_*))
+    inline def setErrorListVarargs(value: BatchItemError*): Self = StObject.set(x, "ErrorList", js.Array(value :_*))
     
-    @scala.inline
-    def setResultList(value: ListOfDetectSentimentResult): Self = StObject.set(x, "ResultList", value.asInstanceOf[js.Any])
+    inline def setResultList(value: ListOfDetectSentimentResult): Self = StObject.set(x, "ResultList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultListVarargs(value: BatchDetectSentimentItemResult*): Self = StObject.set(x, "ResultList", js.Array(value :_*))
+    inline def setResultListVarargs(value: BatchDetectSentimentItemResult*): Self = StObject.set(x, "ResultList", js.Array(value :_*))
   }
 }

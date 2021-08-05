@@ -58,79 +58,55 @@ trait JobSettings extends StObject {
 }
 object JobSettings {
   
-  @scala.inline
-  def apply(): JobSettings = {
+  inline def apply(): JobSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobSettings]
   }
   
-  @scala.inline
-  implicit class JobSettingsMutableBuilder[Self <: JobSettings] (val x: Self) extends AnyVal {
+  extension [Self <: JobSettings](x: Self) {
     
-    @scala.inline
-    def setAdAvailOffset(value: integerMinNegative1000Max1000): Self = StObject.set(x, "AdAvailOffset", value.asInstanceOf[js.Any])
+    inline def setAdAvailOffset(value: integerMinNegative1000Max1000): Self = StObject.set(x, "AdAvailOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdAvailOffsetUndefined: Self = StObject.set(x, "AdAvailOffset", js.undefined)
+    inline def setAdAvailOffsetUndefined: Self = StObject.set(x, "AdAvailOffset", js.undefined)
     
-    @scala.inline
-    def setAvailBlanking(value: AvailBlanking): Self = StObject.set(x, "AvailBlanking", value.asInstanceOf[js.Any])
+    inline def setAvailBlanking(value: AvailBlanking): Self = StObject.set(x, "AvailBlanking", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailBlankingUndefined: Self = StObject.set(x, "AvailBlanking", js.undefined)
+    inline def setAvailBlankingUndefined: Self = StObject.set(x, "AvailBlanking", js.undefined)
     
-    @scala.inline
-    def setEsam(value: EsamSettings): Self = StObject.set(x, "Esam", value.asInstanceOf[js.Any])
+    inline def setEsam(value: EsamSettings): Self = StObject.set(x, "Esam", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEsamUndefined: Self = StObject.set(x, "Esam", js.undefined)
+    inline def setEsamUndefined: Self = StObject.set(x, "Esam", js.undefined)
     
-    @scala.inline
-    def setInputs(value: listOfInput): Self = StObject.set(x, "Inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: listOfInput): Self = StObject.set(x, "Inputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputsUndefined: Self = StObject.set(x, "Inputs", js.undefined)
+    inline def setInputsUndefined: Self = StObject.set(x, "Inputs", js.undefined)
     
-    @scala.inline
-    def setInputsVarargs(value: Input*): Self = StObject.set(x, "Inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: Input*): Self = StObject.set(x, "Inputs", js.Array(value :_*))
     
-    @scala.inline
-    def setMotionImageInserter(value: MotionImageInserter): Self = StObject.set(x, "MotionImageInserter", value.asInstanceOf[js.Any])
+    inline def setMotionImageInserter(value: MotionImageInserter): Self = StObject.set(x, "MotionImageInserter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMotionImageInserterUndefined: Self = StObject.set(x, "MotionImageInserter", js.undefined)
+    inline def setMotionImageInserterUndefined: Self = StObject.set(x, "MotionImageInserter", js.undefined)
     
-    @scala.inline
-    def setNielsenConfiguration(value: NielsenConfiguration): Self = StObject.set(x, "NielsenConfiguration", value.asInstanceOf[js.Any])
+    inline def setNielsenConfiguration(value: NielsenConfiguration): Self = StObject.set(x, "NielsenConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNielsenConfigurationUndefined: Self = StObject.set(x, "NielsenConfiguration", js.undefined)
+    inline def setNielsenConfigurationUndefined: Self = StObject.set(x, "NielsenConfiguration", js.undefined)
     
-    @scala.inline
-    def setNielsenNonLinearWatermark(value: NielsenNonLinearWatermarkSettings): Self = StObject.set(x, "NielsenNonLinearWatermark", value.asInstanceOf[js.Any])
+    inline def setNielsenNonLinearWatermark(value: NielsenNonLinearWatermarkSettings): Self = StObject.set(x, "NielsenNonLinearWatermark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNielsenNonLinearWatermarkUndefined: Self = StObject.set(x, "NielsenNonLinearWatermark", js.undefined)
+    inline def setNielsenNonLinearWatermarkUndefined: Self = StObject.set(x, "NielsenNonLinearWatermark", js.undefined)
     
-    @scala.inline
-    def setOutputGroups(value: listOfOutputGroup): Self = StObject.set(x, "OutputGroups", value.asInstanceOf[js.Any])
+    inline def setOutputGroups(value: listOfOutputGroup): Self = StObject.set(x, "OutputGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputGroupsUndefined: Self = StObject.set(x, "OutputGroups", js.undefined)
+    inline def setOutputGroupsUndefined: Self = StObject.set(x, "OutputGroups", js.undefined)
     
-    @scala.inline
-    def setOutputGroupsVarargs(value: OutputGroup*): Self = StObject.set(x, "OutputGroups", js.Array(value :_*))
+    inline def setOutputGroupsVarargs(value: OutputGroup*): Self = StObject.set(x, "OutputGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setTimecodeConfig(value: TimecodeConfig): Self = StObject.set(x, "TimecodeConfig", value.asInstanceOf[js.Any])
+    inline def setTimecodeConfig(value: TimecodeConfig): Self = StObject.set(x, "TimecodeConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimecodeConfigUndefined: Self = StObject.set(x, "TimecodeConfig", js.undefined)
+    inline def setTimecodeConfigUndefined: Self = StObject.set(x, "TimecodeConfig", js.undefined)
     
-    @scala.inline
-    def setTimedMetadataInsertion(value: TimedMetadataInsertion): Self = StObject.set(x, "TimedMetadataInsertion", value.asInstanceOf[js.Any])
+    inline def setTimedMetadataInsertion(value: TimedMetadataInsertion): Self = StObject.set(x, "TimedMetadataInsertion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimedMetadataInsertionUndefined: Self = StObject.set(x, "TimedMetadataInsertion", js.undefined)
+    inline def setTimedMetadataInsertionUndefined: Self = StObject.set(x, "TimedMetadataInsertion", js.undefined)
   }
 }

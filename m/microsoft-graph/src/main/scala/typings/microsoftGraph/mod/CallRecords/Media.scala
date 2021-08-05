@@ -27,70 +27,49 @@ trait Media extends StObject {
 }
 object Media {
   
-  @scala.inline
-  def apply(): Media = {
+  inline def apply(): Media = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Media]
   }
   
-  @scala.inline
-  implicit class MediaMutableBuilder[Self <: Media] (val x: Self) extends AnyVal {
+  extension [Self <: Media](x: Self) {
     
-    @scala.inline
-    def setCalleeDevice(value: NullableOption[DeviceInfo]): Self = StObject.set(x, "calleeDevice", value.asInstanceOf[js.Any])
+    inline def setCalleeDevice(value: NullableOption[DeviceInfo]): Self = StObject.set(x, "calleeDevice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalleeDeviceNull: Self = StObject.set(x, "calleeDevice", null)
+    inline def setCalleeDeviceNull: Self = StObject.set(x, "calleeDevice", null)
     
-    @scala.inline
-    def setCalleeDeviceUndefined: Self = StObject.set(x, "calleeDevice", js.undefined)
+    inline def setCalleeDeviceUndefined: Self = StObject.set(x, "calleeDevice", js.undefined)
     
-    @scala.inline
-    def setCalleeNetwork(value: NullableOption[NetworkInfo]): Self = StObject.set(x, "calleeNetwork", value.asInstanceOf[js.Any])
+    inline def setCalleeNetwork(value: NullableOption[NetworkInfo]): Self = StObject.set(x, "calleeNetwork", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalleeNetworkNull: Self = StObject.set(x, "calleeNetwork", null)
+    inline def setCalleeNetworkNull: Self = StObject.set(x, "calleeNetwork", null)
     
-    @scala.inline
-    def setCalleeNetworkUndefined: Self = StObject.set(x, "calleeNetwork", js.undefined)
+    inline def setCalleeNetworkUndefined: Self = StObject.set(x, "calleeNetwork", js.undefined)
     
-    @scala.inline
-    def setCallerDevice(value: NullableOption[DeviceInfo]): Self = StObject.set(x, "callerDevice", value.asInstanceOf[js.Any])
+    inline def setCallerDevice(value: NullableOption[DeviceInfo]): Self = StObject.set(x, "callerDevice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallerDeviceNull: Self = StObject.set(x, "callerDevice", null)
+    inline def setCallerDeviceNull: Self = StObject.set(x, "callerDevice", null)
     
-    @scala.inline
-    def setCallerDeviceUndefined: Self = StObject.set(x, "callerDevice", js.undefined)
+    inline def setCallerDeviceUndefined: Self = StObject.set(x, "callerDevice", js.undefined)
     
-    @scala.inline
-    def setCallerNetwork(value: NullableOption[NetworkInfo]): Self = StObject.set(x, "callerNetwork", value.asInstanceOf[js.Any])
+    inline def setCallerNetwork(value: NullableOption[NetworkInfo]): Self = StObject.set(x, "callerNetwork", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallerNetworkNull: Self = StObject.set(x, "callerNetwork", null)
+    inline def setCallerNetworkNull: Self = StObject.set(x, "callerNetwork", null)
     
-    @scala.inline
-    def setCallerNetworkUndefined: Self = StObject.set(x, "callerNetwork", js.undefined)
+    inline def setCallerNetworkUndefined: Self = StObject.set(x, "callerNetwork", js.undefined)
     
-    @scala.inline
-    def setLabel(value: NullableOption[String]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: NullableOption[String]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelNull: Self = StObject.set(x, "label", null)
+    inline def setLabelNull: Self = StObject.set(x, "label", null)
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setStreams(value: NullableOption[js.Array[MediaStream]]): Self = StObject.set(x, "streams", value.asInstanceOf[js.Any])
+    inline def setStreams(value: NullableOption[js.Array[MediaStream]]): Self = StObject.set(x, "streams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamsNull: Self = StObject.set(x, "streams", null)
+    inline def setStreamsNull: Self = StObject.set(x, "streams", null)
     
-    @scala.inline
-    def setStreamsUndefined: Self = StObject.set(x, "streams", js.undefined)
+    inline def setStreamsUndefined: Self = StObject.set(x, "streams", js.undefined)
     
-    @scala.inline
-    def setStreamsVarargs(value: MediaStream*): Self = StObject.set(x, "streams", js.Array(value :_*))
+    inline def setStreamsVarargs(value: MediaStream*): Self = StObject.set(x, "streams", js.Array(value :_*))
   }
 }

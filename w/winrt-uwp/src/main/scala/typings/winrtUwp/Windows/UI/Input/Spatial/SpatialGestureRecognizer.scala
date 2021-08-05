@@ -67,8 +67,7 @@ trait SpatialGestureRecognizer extends StObject {
 }
 object SpatialGestureRecognizer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addEventListener: js.Any,
     cancelPendingGestures: js.Any,
     captureInteraction: js.Any,
@@ -94,67 +93,46 @@ object SpatialGestureRecognizer {
     __obj.asInstanceOf[SpatialGestureRecognizer]
   }
   
-  @scala.inline
-  implicit class SpatialGestureRecognizerMutableBuilder[Self <: SpatialGestureRecognizer] (val x: Self) extends AnyVal {
+  extension [Self <: SpatialGestureRecognizer](x: Self) {
     
-    @scala.inline
-    def setAddEventListener(value: js.Any): Self = StObject.set(x, "addEventListener", value.asInstanceOf[js.Any])
+    inline def setAddEventListener(value: js.Any): Self = StObject.set(x, "addEventListener", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelPendingGestures(value: js.Any): Self = StObject.set(x, "cancelPendingGestures", value.asInstanceOf[js.Any])
+    inline def setCancelPendingGestures(value: js.Any): Self = StObject.set(x, "cancelPendingGestures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptureInteraction(value: js.Any): Self = StObject.set(x, "captureInteraction", value.asInstanceOf[js.Any])
+    inline def setCaptureInteraction(value: js.Any): Self = StObject.set(x, "captureInteraction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGestureSettings(value: js.Any): Self = StObject.set(x, "gestureSettings", value.asInstanceOf[js.Any])
+    inline def setGestureSettings(value: js.Any): Self = StObject.set(x, "gestureSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnholdcanceled(value: js.Any): Self = StObject.set(x, "onholdcanceled", value.asInstanceOf[js.Any])
+    inline def setOnholdcanceled(value: js.Any): Self = StObject.set(x, "onholdcanceled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnholdcompleted(value: js.Any): Self = StObject.set(x, "onholdcompleted", value.asInstanceOf[js.Any])
+    inline def setOnholdcompleted(value: js.Any): Self = StObject.set(x, "onholdcompleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnholdstarted(value: js.Any): Self = StObject.set(x, "onholdstarted", value.asInstanceOf[js.Any])
+    inline def setOnholdstarted(value: js.Any): Self = StObject.set(x, "onholdstarted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnmanipulationcanceled(value: js.Any): Self = StObject.set(x, "onmanipulationcanceled", value.asInstanceOf[js.Any])
+    inline def setOnmanipulationcanceled(value: js.Any): Self = StObject.set(x, "onmanipulationcanceled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnmanipulationcompleted(value: js.Any): Self = StObject.set(x, "onmanipulationcompleted", value.asInstanceOf[js.Any])
+    inline def setOnmanipulationcompleted(value: js.Any): Self = StObject.set(x, "onmanipulationcompleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnmanipulationstarted(value: js.Any): Self = StObject.set(x, "onmanipulationstarted", value.asInstanceOf[js.Any])
+    inline def setOnmanipulationstarted(value: js.Any): Self = StObject.set(x, "onmanipulationstarted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnmanipulationupdated(value: js.Any): Self = StObject.set(x, "onmanipulationupdated", value.asInstanceOf[js.Any])
+    inline def setOnmanipulationupdated(value: js.Any): Self = StObject.set(x, "onmanipulationupdated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnnavigationcanceled(value: js.Any): Self = StObject.set(x, "onnavigationcanceled", value.asInstanceOf[js.Any])
+    inline def setOnnavigationcanceled(value: js.Any): Self = StObject.set(x, "onnavigationcanceled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnnavigationcompleted(value: js.Any): Self = StObject.set(x, "onnavigationcompleted", value.asInstanceOf[js.Any])
+    inline def setOnnavigationcompleted(value: js.Any): Self = StObject.set(x, "onnavigationcompleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnnavigationstarted(value: js.Any): Self = StObject.set(x, "onnavigationstarted", value.asInstanceOf[js.Any])
+    inline def setOnnavigationstarted(value: js.Any): Self = StObject.set(x, "onnavigationstarted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnnavigationupdated(value: js.Any): Self = StObject.set(x, "onnavigationupdated", value.asInstanceOf[js.Any])
+    inline def setOnnavigationupdated(value: js.Any): Self = StObject.set(x, "onnavigationupdated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnrecognitionended(value: js.Any): Self = StObject.set(x, "onrecognitionended", value.asInstanceOf[js.Any])
+    inline def setOnrecognitionended(value: js.Any): Self = StObject.set(x, "onrecognitionended", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnrecognitionstarted(value: js.Any): Self = StObject.set(x, "onrecognitionstarted", value.asInstanceOf[js.Any])
+    inline def setOnrecognitionstarted(value: js.Any): Self = StObject.set(x, "onrecognitionstarted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOntapped(value: js.Any): Self = StObject.set(x, "ontapped", value.asInstanceOf[js.Any])
+    inline def setOntapped(value: js.Any): Self = StObject.set(x, "ontapped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveEventListener(value: js.Any): Self = StObject.set(x, "removeEventListener", value.asInstanceOf[js.Any])
+    inline def setRemoveEventListener(value: js.Any): Self = StObject.set(x, "removeEventListener", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrySetGestureSettings(value: js.Any): Self = StObject.set(x, "trySetGestureSettings", value.asInstanceOf[js.Any])
+    inline def setTrySetGestureSettings(value: js.Any): Self = StObject.set(x, "trySetGestureSettings", value.asInstanceOf[js.Any])
   }
 }

@@ -30,50 +30,36 @@ object noticeIconTabMod {
   }
   object NoticeIconData {
     
-    @scala.inline
-    def apply(): NoticeIconData = {
+    inline def apply(): NoticeIconData = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NoticeIconData]
     }
     
-    @scala.inline
-    implicit class NoticeIconDataMutableBuilder[Self <: NoticeIconData] (val x: Self) extends AnyVal {
+    extension [Self <: NoticeIconData](x: Self) {
       
-      @scala.inline
-      def setAvatar(value: String | ReactNode): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
+      inline def setAvatar(value: String | ReactNode): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvatarUndefined: Self = StObject.set(x, "avatar", js.undefined)
+      inline def setAvatarUndefined: Self = StObject.set(x, "avatar", js.undefined)
       
-      @scala.inline
-      def setDatetime(value: ReactNode): Self = StObject.set(x, "datetime", value.asInstanceOf[js.Any])
+      inline def setDatetime(value: ReactNode): Self = StObject.set(x, "datetime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatetimeUndefined: Self = StObject.set(x, "datetime", js.undefined)
+      inline def setDatetimeUndefined: Self = StObject.set(x, "datetime", js.undefined)
       
-      @scala.inline
-      def setDescription(value: ReactNode): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: ReactNode): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setExtra(value: ReactNode): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+      inline def setExtra(value: ReactNode): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
+      inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -111,92 +97,64 @@ object noticeIconTabMod {
   }
   object NoticeIconTabProps {
     
-    @scala.inline
-    def apply(locale: js.Any, onClear: js.Any => Unit, onClick: js.Any => Unit, onViewMore: js.Any => Unit): NoticeIconTabProps = {
+    inline def apply(locale: js.Any, onClear: js.Any => Unit, onClick: js.Any => Unit, onViewMore: js.Any => Unit): NoticeIconTabProps = {
       val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any], onClear = js.Any.fromFunction1(onClear), onClick = js.Any.fromFunction1(onClick), onViewMore = js.Any.fromFunction1(onViewMore))
       __obj.asInstanceOf[NoticeIconTabProps]
     }
     
-    @scala.inline
-    implicit class NoticeIconTabPropsMutableBuilder[Self <: NoticeIconTabProps] (val x: Self) extends AnyVal {
+    extension [Self <: NoticeIconTabProps](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+      inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      @scala.inline
-      def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setEmptyImage(value: String): Self = StObject.set(x, "emptyImage", value.asInstanceOf[js.Any])
+      inline def setEmptyImage(value: String): Self = StObject.set(x, "emptyImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmptyImageUndefined: Self = StObject.set(x, "emptyImage", js.undefined)
+      inline def setEmptyImageUndefined: Self = StObject.set(x, "emptyImage", js.undefined)
       
-      @scala.inline
-      def setEmptyText(value: ReactNode): Self = StObject.set(x, "emptyText", value.asInstanceOf[js.Any])
+      inline def setEmptyText(value: ReactNode): Self = StObject.set(x, "emptyText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmptyTextUndefined: Self = StObject.set(x, "emptyText", js.undefined)
+      inline def setEmptyTextUndefined: Self = StObject.set(x, "emptyText", js.undefined)
       
-      @scala.inline
-      def setList(value: js.Array[NoticeIconData]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+      inline def setList(value: js.Array[NoticeIconData]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListUndefined: Self = StObject.set(x, "list", js.undefined)
+      inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
       
-      @scala.inline
-      def setListVarargs(value: NoticeIconData*): Self = StObject.set(x, "list", js.Array(value :_*))
+      inline def setListVarargs(value: NoticeIconData*): Self = StObject.set(x, "list", js.Array(value :_*))
       
-      @scala.inline
-      def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOnClear(value: js.Any => Unit): Self = StObject.set(x, "onClear", js.Any.fromFunction1(value))
+      inline def setOnClear(value: js.Any => Unit): Self = StObject.set(x, "onClear", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClick(value: js.Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: js.Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnViewMore(value: js.Any => Unit): Self = StObject.set(x, "onViewMore", js.Any.fromFunction1(value))
+      inline def setOnViewMore(value: js.Any => Unit): Self = StObject.set(x, "onViewMore", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShowClear(value: Boolean): Self = StObject.set(x, "showClear", value.asInstanceOf[js.Any])
+      inline def setShowClear(value: Boolean): Self = StObject.set(x, "showClear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowClearUndefined: Self = StObject.set(x, "showClear", js.undefined)
+      inline def setShowClearUndefined: Self = StObject.set(x, "showClear", js.undefined)
       
-      @scala.inline
-      def setShowViewMore(value: Boolean): Self = StObject.set(x, "showViewMore", value.asInstanceOf[js.Any])
+      inline def setShowViewMore(value: Boolean): Self = StObject.set(x, "showViewMore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowViewMoreUndefined: Self = StObject.set(x, "showViewMore", js.undefined)
+      inline def setShowViewMoreUndefined: Self = StObject.set(x, "showViewMore", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
 }

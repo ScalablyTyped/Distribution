@@ -23,31 +23,23 @@ trait VirtualGatewayClientPolicyTls extends StObject {
 }
 object VirtualGatewayClientPolicyTls {
   
-  @scala.inline
-  def apply(validation: VirtualGatewayTlsValidationContext): VirtualGatewayClientPolicyTls = {
+  inline def apply(validation: VirtualGatewayTlsValidationContext): VirtualGatewayClientPolicyTls = {
     val __obj = js.Dynamic.literal(validation = validation.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualGatewayClientPolicyTls]
   }
   
-  @scala.inline
-  implicit class VirtualGatewayClientPolicyTlsMutableBuilder[Self <: VirtualGatewayClientPolicyTls] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualGatewayClientPolicyTls](x: Self) {
     
-    @scala.inline
-    def setEnforce(value: Boolean): Self = StObject.set(x, "enforce", value.asInstanceOf[js.Any])
+    inline def setEnforce(value: Boolean): Self = StObject.set(x, "enforce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnforceUndefined: Self = StObject.set(x, "enforce", js.undefined)
+    inline def setEnforceUndefined: Self = StObject.set(x, "enforce", js.undefined)
     
-    @scala.inline
-    def setPorts(value: PortSet): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
+    inline def setPorts(value: PortSet): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
+    inline def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
     
-    @scala.inline
-    def setPortsVarargs(value: PortNumber*): Self = StObject.set(x, "ports", js.Array(value :_*))
+    inline def setPortsVarargs(value: PortNumber*): Self = StObject.set(x, "ports", js.Array(value :_*))
     
-    @scala.inline
-    def setValidation(value: VirtualGatewayTlsValidationContext): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
+    inline def setValidation(value: VirtualGatewayTlsValidationContext): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
   }
 }

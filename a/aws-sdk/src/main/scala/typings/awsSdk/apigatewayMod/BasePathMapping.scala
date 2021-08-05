@@ -23,31 +23,23 @@ trait BasePathMapping extends StObject {
 }
 object BasePathMapping {
   
-  @scala.inline
-  def apply(): BasePathMapping = {
+  inline def apply(): BasePathMapping = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BasePathMapping]
   }
   
-  @scala.inline
-  implicit class BasePathMappingMutableBuilder[Self <: BasePathMapping] (val x: Self) extends AnyVal {
+  extension [Self <: BasePathMapping](x: Self) {
     
-    @scala.inline
-    def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
+    inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
+    inline def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
     
-    @scala.inline
-    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
+    inline def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestApiIdUndefined: Self = StObject.set(x, "restApiId", js.undefined)
+    inline def setRestApiIdUndefined: Self = StObject.set(x, "restApiId", js.undefined)
     
-    @scala.inline
-    def setStage(value: String): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
+    inline def setStage(value: String): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStageUndefined: Self = StObject.set(x, "stage", js.undefined)
+    inline def setStageUndefined: Self = StObject.set(x, "stage", js.undefined)
   }
 }

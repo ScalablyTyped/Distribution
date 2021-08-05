@@ -21,20 +21,17 @@ object LabelPosition {
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LabelPosition.AfterControl")
   @js.native
   def AfterControl: LabelPosition = js.native
-  @scala.inline
-  def AfterControl_=(x: LabelPosition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AfterControl")(x.asInstanceOf[js.Any])
+  inline def AfterControl_=(x: LabelPosition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AfterControl")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LabelPosition.BeforeControl")
   @js.native
   def BeforeControl: LabelPosition = js.native
-  @scala.inline
-  def BeforeControl_=(x: LabelPosition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BeforeControl")(x.asInstanceOf[js.Any])
+  inline def BeforeControl_=(x: LabelPosition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BeforeControl")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LabelPosition.Default")
   @js.native
   def Default: LabelPosition = js.native
-  @scala.inline
-  def Default_=(x: LabelPosition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
+  inline def Default_=(x: LabelPosition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
 }

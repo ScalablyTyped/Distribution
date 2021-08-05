@@ -22,8 +22,7 @@ trait Transaction extends StObject {
 }
 object Transaction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attach: Builder => js.Promise[js.Array[js.Object]],
     begin: js.Array[Table] => js.Promise[Unit],
     commit: () => js.Promise[Unit],
@@ -35,25 +34,18 @@ object Transaction {
     __obj.asInstanceOf[Transaction]
   }
   
-  @scala.inline
-  implicit class TransactionMutableBuilder[Self <: Transaction] (val x: Self) extends AnyVal {
+  extension [Self <: Transaction](x: Self) {
     
-    @scala.inline
-    def setAttach(value: Builder => js.Promise[js.Array[js.Object]]): Self = StObject.set(x, "attach", js.Any.fromFunction1(value))
+    inline def setAttach(value: Builder => js.Promise[js.Array[js.Object]]): Self = StObject.set(x, "attach", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBegin(value: js.Array[Table] => js.Promise[Unit]): Self = StObject.set(x, "begin", js.Any.fromFunction1(value))
+    inline def setBegin(value: js.Array[Table] => js.Promise[Unit]): Self = StObject.set(x, "begin", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCommit(value: () => js.Promise[Unit]): Self = StObject.set(x, "commit", js.Any.fromFunction0(value))
+    inline def setCommit(value: () => js.Promise[Unit]): Self = StObject.set(x, "commit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExec(value: js.Array[Builder] => js.Promise[js.Array[js.Array[js.Object]]]): Self = StObject.set(x, "exec", js.Any.fromFunction1(value))
+    inline def setExec(value: js.Array[Builder] => js.Promise[js.Array[js.Array[js.Object]]]): Self = StObject.set(x, "exec", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRollback(value: () => js.Promise[Unit]): Self = StObject.set(x, "rollback", js.Any.fromFunction0(value))
+    inline def setRollback(value: () => js.Promise[Unit]): Self = StObject.set(x, "rollback", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStats(value: () => TransactionStats): Self = StObject.set(x, "stats", js.Any.fromFunction0(value))
+    inline def setStats(value: () => TransactionStats): Self = StObject.set(x, "stats", js.Any.fromFunction0(value))
   }
 }

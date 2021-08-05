@@ -19,43 +19,31 @@ trait GanttResources extends StObject {
 }
 object GanttResources {
   
-  @scala.inline
-  def apply(): GanttResources = {
+  inline def apply(): GanttResources = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GanttResources]
   }
   
-  @scala.inline
-  implicit class GanttResourcesMutableBuilder[Self <: GanttResources] (val x: Self) extends AnyVal {
+  extension [Self <: GanttResources](x: Self) {
     
-    @scala.inline
-    def setDataColorField(value: String): Self = StObject.set(x, "dataColorField", value.asInstanceOf[js.Any])
+    inline def setDataColorField(value: String): Self = StObject.set(x, "dataColorField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataColorFieldUndefined: Self = StObject.set(x, "dataColorField", js.undefined)
+    inline def setDataColorFieldUndefined: Self = StObject.set(x, "dataColorField", js.undefined)
     
-    @scala.inline
-    def setDataFormatField(value: String): Self = StObject.set(x, "dataFormatField", value.asInstanceOf[js.Any])
+    inline def setDataFormatField(value: String): Self = StObject.set(x, "dataFormatField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataFormatFieldUndefined: Self = StObject.set(x, "dataFormatField", js.undefined)
+    inline def setDataFormatFieldUndefined: Self = StObject.set(x, "dataFormatField", js.undefined)
     
-    @scala.inline
-    def setDataSource(value: js.Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: js.Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
-    @scala.inline
-    def setDataTextField(value: String): Self = StObject.set(x, "dataTextField", value.asInstanceOf[js.Any])
+    inline def setDataTextField(value: String): Self = StObject.set(x, "dataTextField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataTextFieldUndefined: Self = StObject.set(x, "dataTextField", js.undefined)
+    inline def setDataTextFieldUndefined: Self = StObject.set(x, "dataTextField", js.undefined)
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
   }
 }

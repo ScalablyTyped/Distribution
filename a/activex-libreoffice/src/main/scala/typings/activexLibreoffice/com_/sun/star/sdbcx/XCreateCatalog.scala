@@ -22,8 +22,7 @@ trait XCreateCatalog
 }
 object XCreateCatalog {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createCatalog: SeqEquiv[PropertyValue] => Unit,
     queryInterface: `type` => js.Any,
@@ -33,10 +32,8 @@ object XCreateCatalog {
     __obj.asInstanceOf[XCreateCatalog]
   }
   
-  @scala.inline
-  implicit class XCreateCatalogMutableBuilder[Self <: XCreateCatalog] (val x: Self) extends AnyVal {
+  extension [Self <: XCreateCatalog](x: Self) {
     
-    @scala.inline
-    def setCreateCatalog(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "createCatalog", js.Any.fromFunction1(value))
+    inline def setCreateCatalog(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "createCatalog", js.Any.fromFunction1(value))
   }
 }

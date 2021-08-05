@@ -15,17 +15,14 @@ object identifiableMod {
   }
   object Identifiable {
     
-    @scala.inline
-    def apply(id: String): Identifiable = {
+    inline def apply(id: String): Identifiable = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[Identifiable]
     }
     
-    @scala.inline
-    implicit class IdentifiableMutableBuilder[Self <: Identifiable] (val x: Self) extends AnyVal {
+    extension [Self <: Identifiable](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -37,43 +37,31 @@ trait SchemaLeaderboardConfigurationDetail extends StObject {
 }
 object SchemaLeaderboardConfigurationDetail {
   
-  @scala.inline
-  def apply(): SchemaLeaderboardConfigurationDetail = {
+  inline def apply(): SchemaLeaderboardConfigurationDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLeaderboardConfigurationDetail]
   }
   
-  @scala.inline
-  implicit class SchemaLeaderboardConfigurationDetailMutableBuilder[Self <: SchemaLeaderboardConfigurationDetail] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLeaderboardConfigurationDetail](x: Self) {
     
-    @scala.inline
-    def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
+    inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
+    inline def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setName(value: SchemaLocalizedStringBundle): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: SchemaLocalizedStringBundle): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setScoreFormat(value: SchemaGamesNumberFormatConfiguration): Self = StObject.set(x, "scoreFormat", value.asInstanceOf[js.Any])
+    inline def setScoreFormat(value: SchemaGamesNumberFormatConfiguration): Self = StObject.set(x, "scoreFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreFormatUndefined: Self = StObject.set(x, "scoreFormat", js.undefined)
+    inline def setScoreFormatUndefined: Self = StObject.set(x, "scoreFormat", js.undefined)
     
-    @scala.inline
-    def setSortRank(value: Double): Self = StObject.set(x, "sortRank", value.asInstanceOf[js.Any])
+    inline def setSortRank(value: Double): Self = StObject.set(x, "sortRank", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortRankUndefined: Self = StObject.set(x, "sortRank", js.undefined)
+    inline def setSortRankUndefined: Self = StObject.set(x, "sortRank", js.undefined)
   }
 }

@@ -22,20 +22,16 @@ object typesGetBucketLoggingOutputMod {
   }
   object GetBucketLoggingOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): GetBucketLoggingOutput = {
+    inline def apply($metadata: ResponseMetadata): GetBucketLoggingOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetBucketLoggingOutput]
     }
     
-    @scala.inline
-    implicit class GetBucketLoggingOutputMutableBuilder[Self <: GetBucketLoggingOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetBucketLoggingOutput](x: Self) {
       
-      @scala.inline
-      def setLoggingEnabled(value: UnmarshalledLoggingEnabled): Self = StObject.set(x, "LoggingEnabled", value.asInstanceOf[js.Any])
+      inline def setLoggingEnabled(value: UnmarshalledLoggingEnabled): Self = StObject.set(x, "LoggingEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggingEnabledUndefined: Self = StObject.set(x, "LoggingEnabled", js.undefined)
+      inline def setLoggingEnabledUndefined: Self = StObject.set(x, "LoggingEnabled", js.undefined)
     }
   }
 }

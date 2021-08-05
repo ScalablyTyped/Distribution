@@ -16,20 +16,16 @@ object anon {
   }
   object CancelText {
     
-    @scala.inline
-    def apply(cancelText: String, okText: String): CancelText = {
+    inline def apply(cancelText: String, okText: String): CancelText = {
       val __obj = js.Dynamic.literal(cancelText = cancelText.asInstanceOf[js.Any], okText = okText.asInstanceOf[js.Any])
       __obj.asInstanceOf[CancelText]
     }
     
-    @scala.inline
-    implicit class CancelTextMutableBuilder[Self <: CancelText] (val x: Self) extends AnyVal {
+    extension [Self <: CancelText](x: Self) {
       
-      @scala.inline
-      def setCancelText(value: String): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
+      inline def setCancelText(value: String): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOkText(value: String): Self = StObject.set(x, "okText", value.asInstanceOf[js.Any])
+      inline def setOkText(value: String): Self = StObject.set(x, "okText", value.asInstanceOf[js.Any])
     }
   }
   
@@ -45,8 +41,7 @@ object anon {
   }
   object Id {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       id: String,
       message: String,
       options: ConfirmToastrOptions | ConfirmToastrCustomOptions,
@@ -56,20 +51,15 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    @scala.inline
-    implicit class IdMutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
+    extension [Self <: Id](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: ConfirmToastrOptions | ConfirmToastrCustomOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: ConfirmToastrOptions | ConfirmToastrCustomOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+      inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -22,20 +22,16 @@ object chevronLeftCircleMod extends Shortcut {
   }
   object ChevronLeftCircleProps {
     
-    @scala.inline
-    def apply(): ChevronLeftCircleProps = {
+    inline def apply(): ChevronLeftCircleProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ChevronLeftCircleProps]
     }
     
-    @scala.inline
-    implicit class ChevronLeftCirclePropsMutableBuilder[Self <: ChevronLeftCircleProps] (val x: Self) extends AnyVal {
+    extension [Self <: ChevronLeftCircleProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

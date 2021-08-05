@@ -19,20 +19,16 @@ trait BreakStatement_
 }
 object BreakStatement_ {
   
-  @scala.inline
-  def apply(end: Double, label: Identifier_, loc: SourceLocation, start: Double): BreakStatement_ = {
+  inline def apply(end: Double, label: Identifier_, loc: SourceLocation, start: Double): BreakStatement_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("BreakStatement")
     __obj.asInstanceOf[BreakStatement_]
   }
   
-  @scala.inline
-  implicit class BreakStatement_MutableBuilder[Self <: BreakStatement_] (val x: Self) extends AnyVal {
+  extension [Self <: BreakStatement_](x: Self) {
     
-    @scala.inline
-    def setLabel(value: Identifier_): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: Identifier_): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: BreakStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: BreakStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

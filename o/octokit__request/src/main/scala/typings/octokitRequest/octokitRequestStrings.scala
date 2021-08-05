@@ -8,16 +8,13 @@ object octokitRequestStrings {
   
   @js.native
   sealed trait error extends StObject
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait follow extends StObject
-  @scala.inline
-  def follow: follow = "follow".asInstanceOf[follow]
+  inline def follow: follow = "follow".asInstanceOf[follow]
   
   @js.native
   sealed trait manual extends StObject
-  @scala.inline
-  def manual: manual = "manual".asInstanceOf[manual]
+  inline def manual: manual = "manual".asInstanceOf[manual]
 }

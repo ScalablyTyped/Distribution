@@ -16,11 +16,9 @@ object organizationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def wrapOrganization(http: AxiosInstance, data: OrganizationProp): Organization = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapOrganization")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Organization]
+  inline def wrapOrganization(http: AxiosInstance, data: OrganizationProp): Organization = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapOrganization")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Organization]
   
-  @scala.inline
-  def wrapOrganizationCollection(http: AxiosInstance, data: CollectionProp[OrganizationProp]): Collection[Organization, OrganizationProp] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapOrganizationCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[Organization, OrganizationProp]]
+  inline def wrapOrganizationCollection(http: AxiosInstance, data: CollectionProp[OrganizationProp]): Collection[Organization, OrganizationProp] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapOrganizationCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[Organization, OrganizationProp]]
   
   type Organization = DefaultElements[OrganizationProp] & OrganizationProp & ContentfulOrganizationAPI
   
@@ -38,20 +36,16 @@ object organizationMod {
   }
   object OrganizationProp {
     
-    @scala.inline
-    def apply(name: String, sys: MetaSysProps): OrganizationProp = {
+    inline def apply(name: String, sys: MetaSysProps): OrganizationProp = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], sys = sys.asInstanceOf[js.Any])
       __obj.asInstanceOf[OrganizationProp]
     }
     
-    @scala.inline
-    implicit class OrganizationPropMutableBuilder[Self <: OrganizationProp] (val x: Self) extends AnyVal {
+    extension [Self <: OrganizationProp](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSys(value: MetaSysProps): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
+      inline def setSys(value: MetaSysProps): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
     }
   }
 }

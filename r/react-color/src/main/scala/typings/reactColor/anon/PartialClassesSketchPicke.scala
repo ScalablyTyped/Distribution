@@ -11,19 +11,15 @@ trait PartialClassesSketchPicke extends StObject {
 }
 object PartialClassesSketchPicke {
   
-  @scala.inline
-  def apply(): PartialClassesSketchPicke = {
+  inline def apply(): PartialClassesSketchPicke = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassesSketchPicke]
   }
   
-  @scala.inline
-  implicit class PartialClassesSketchPickeMutableBuilder[Self <: PartialClassesSketchPicke] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassesSketchPicke](x: Self) {
     
-    @scala.inline
-    def setDefault(value: PartialSketchPickerStyles): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: PartialSketchPickerStyles): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
   }
 }

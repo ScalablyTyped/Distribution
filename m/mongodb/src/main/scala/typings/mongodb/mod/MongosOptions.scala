@@ -21,25 +21,19 @@ trait MongosOptions
 }
 object MongosOptions {
   
-  @scala.inline
-  def apply(): MongosOptions = {
+  inline def apply(): MongosOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MongosOptions]
   }
   
-  @scala.inline
-  implicit class MongosOptionsMutableBuilder[Self <: MongosOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MongosOptions](x: Self) {
     
-    @scala.inline
-    def setAcceptableLatencyMS(value: scala.Double): Self = StObject.set(x, "acceptableLatencyMS", value.asInstanceOf[js.Any])
+    inline def setAcceptableLatencyMS(value: scala.Double): Self = StObject.set(x, "acceptableLatencyMS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptableLatencyMSUndefined: Self = StObject.set(x, "acceptableLatencyMS", js.undefined)
+    inline def setAcceptableLatencyMSUndefined: Self = StObject.set(x, "acceptableLatencyMS", js.undefined)
     
-    @scala.inline
-    def setSocketOptions(value: SocketOptions): Self = StObject.set(x, "socketOptions", value.asInstanceOf[js.Any])
+    inline def setSocketOptions(value: SocketOptions): Self = StObject.set(x, "socketOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSocketOptionsUndefined: Self = StObject.set(x, "socketOptions", js.undefined)
+    inline def setSocketOptionsUndefined: Self = StObject.set(x, "socketOptions", js.undefined)
   }
 }

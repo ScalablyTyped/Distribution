@@ -18,37 +18,27 @@ trait ToolbarOptions[T] extends StObject {
 }
 object ToolbarOptions {
   
-  @scala.inline
-  def apply[T](): ToolbarOptions[T] = {
+  inline def apply[T](): ToolbarOptions[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ToolbarOptions[T]]
   }
   
-  @scala.inline
-  implicit class ToolbarOptionsMutableBuilder[Self <: ToolbarOptions[?], T] (val x: Self & ToolbarOptions[T]) extends AnyVal {
+  extension [Self <: ToolbarOptions[?], T](x: Self & ToolbarOptions[T]) {
     
-    @scala.inline
-    def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
-    @scala.inline
-    def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    @scala.inline
-    def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    @scala.inline
-    def setToolbarOptions(value: dxToolbarOptions): Self = StObject.set(x, "toolbarOptions", value.asInstanceOf[js.Any])
+    inline def setToolbarOptions(value: dxToolbarOptions): Self = StObject.set(x, "toolbarOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolbarOptionsUndefined: Self = StObject.set(x, "toolbarOptions", js.undefined)
+    inline def setToolbarOptionsUndefined: Self = StObject.set(x, "toolbarOptions", js.undefined)
   }
 }

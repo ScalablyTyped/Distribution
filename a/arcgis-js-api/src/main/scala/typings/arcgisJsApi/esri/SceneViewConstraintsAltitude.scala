@@ -26,8 +26,7 @@ trait SceneViewConstraintsAltitude
 }
 object SceneViewConstraintsAltitude {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -39,19 +38,14 @@ object SceneViewConstraintsAltitude {
     __obj.asInstanceOf[SceneViewConstraintsAltitude]
   }
   
-  @scala.inline
-  implicit class SceneViewConstraintsAltitudeMutableBuilder[Self <: SceneViewConstraintsAltitude] (val x: Self) extends AnyVal {
+  extension [Self <: SceneViewConstraintsAltitude](x: Self) {
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
   }
 }

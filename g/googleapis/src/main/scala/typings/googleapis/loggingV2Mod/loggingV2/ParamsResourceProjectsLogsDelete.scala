@@ -31,25 +31,19 @@ trait ParamsResourceProjectsLogsDelete
 }
 object ParamsResourceProjectsLogsDelete {
   
-  @scala.inline
-  def apply(): ParamsResourceProjectsLogsDelete = {
+  inline def apply(): ParamsResourceProjectsLogsDelete = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceProjectsLogsDelete]
   }
   
-  @scala.inline
-  implicit class ParamsResourceProjectsLogsDeleteMutableBuilder[Self <: ParamsResourceProjectsLogsDelete] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceProjectsLogsDelete](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setLogName(value: String): Self = StObject.set(x, "logName", value.asInstanceOf[js.Any])
+    inline def setLogName(value: String): Self = StObject.set(x, "logName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogNameUndefined: Self = StObject.set(x, "logName", js.undefined)
+    inline def setLogNameUndefined: Self = StObject.set(x, "logName", js.undefined)
   }
 }

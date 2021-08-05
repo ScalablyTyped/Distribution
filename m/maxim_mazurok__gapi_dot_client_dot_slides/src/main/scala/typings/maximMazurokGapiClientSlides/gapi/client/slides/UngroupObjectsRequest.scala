@@ -14,22 +14,17 @@ trait UngroupObjectsRequest extends StObject {
 }
 object UngroupObjectsRequest {
   
-  @scala.inline
-  def apply(): UngroupObjectsRequest = {
+  inline def apply(): UngroupObjectsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UngroupObjectsRequest]
   }
   
-  @scala.inline
-  implicit class UngroupObjectsRequestMutableBuilder[Self <: UngroupObjectsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UngroupObjectsRequest](x: Self) {
     
-    @scala.inline
-    def setObjectIds(value: js.Array[String]): Self = StObject.set(x, "objectIds", value.asInstanceOf[js.Any])
+    inline def setObjectIds(value: js.Array[String]): Self = StObject.set(x, "objectIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdsUndefined: Self = StObject.set(x, "objectIds", js.undefined)
+    inline def setObjectIdsUndefined: Self = StObject.set(x, "objectIds", js.undefined)
     
-    @scala.inline
-    def setObjectIdsVarargs(value: String*): Self = StObject.set(x, "objectIds", js.Array(value :_*))
+    inline def setObjectIdsVarargs(value: String*): Self = StObject.set(x, "objectIds", js.Array(value :_*))
   }
 }

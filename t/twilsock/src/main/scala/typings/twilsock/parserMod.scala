@@ -19,13 +19,10 @@ object parserMod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def createPacket(header: Header): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("createPacket")(header.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
-    @scala.inline
-    def createPacket(header: Header, payloadString: String): ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("createPacket")(header.asInstanceOf[js.Any], payloadString.asInstanceOf[js.Any])).asInstanceOf[ArrayBuffer]
+    inline def createPacket(header: Header): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("createPacket")(header.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
+    inline def createPacket(header: Header, payloadString: String): ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("createPacket")(header.asInstanceOf[js.Any], payloadString.asInstanceOf[js.Any])).asInstanceOf[ArrayBuffer]
     
     /* static member */
-    @scala.inline
-    def parse(message: ArrayBufferLike): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(message.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def parse(message: ArrayBufferLike): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(message.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
 }

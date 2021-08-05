@@ -10,16 +10,13 @@ trait SessionResource extends StObject {
 }
 object SessionResource {
   
-  @scala.inline
-  def apply(searchapplications: SearchapplicationsResource): SessionResource = {
+  inline def apply(searchapplications: SearchapplicationsResource): SessionResource = {
     val __obj = js.Dynamic.literal(searchapplications = searchapplications.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionResource]
   }
   
-  @scala.inline
-  implicit class SessionResourceMutableBuilder[Self <: SessionResource] (val x: Self) extends AnyVal {
+  extension [Self <: SessionResource](x: Self) {
     
-    @scala.inline
-    def setSearchapplications(value: SearchapplicationsResource): Self = StObject.set(x, "searchapplications", value.asInstanceOf[js.Any])
+    inline def setSearchapplications(value: SearchapplicationsResource): Self = StObject.set(x, "searchapplications", value.asInstanceOf[js.Any])
   }
 }

@@ -12,8 +12,7 @@ trait Current extends StObject {
 }
 object Current {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     current: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api/dist/modules/versions.Versions & @storybook/api.@storybook/api/dist/modules/versions.UnknownEntries['current'] */ js.Any,
     latest: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api/dist/modules/versions.Versions & @storybook/api.@storybook/api/dist/modules/versions.UnknownEntries['latest'] */ js.Any
   ): Current = {
@@ -21,16 +20,13 @@ object Current {
     __obj.asInstanceOf[Current]
   }
   
-  @scala.inline
-  implicit class CurrentMutableBuilder[Self <: Current] (val x: Self) extends AnyVal {
+  extension [Self <: Current](x: Self) {
     
-    @scala.inline
-    def setCurrent(
+    inline def setCurrent(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api/dist/modules/versions.Versions & @storybook/api.@storybook/api/dist/modules/versions.UnknownEntries['current'] */ js.Any
     ): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatest(
+    inline def setLatest(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api/dist/modules/versions.Versions & @storybook/api.@storybook/api/dist/modules/versions.UnknownEntries['latest'] */ js.Any
     ): Self = StObject.set(x, "latest", value.asInstanceOf[js.Any])
   }

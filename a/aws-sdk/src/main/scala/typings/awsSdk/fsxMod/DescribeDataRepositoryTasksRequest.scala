@@ -22,43 +22,31 @@ trait DescribeDataRepositoryTasksRequest extends StObject {
 }
 object DescribeDataRepositoryTasksRequest {
   
-  @scala.inline
-  def apply(): DescribeDataRepositoryTasksRequest = {
+  inline def apply(): DescribeDataRepositoryTasksRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeDataRepositoryTasksRequest]
   }
   
-  @scala.inline
-  implicit class DescribeDataRepositoryTasksRequestMutableBuilder[Self <: DescribeDataRepositoryTasksRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDataRepositoryTasksRequest](x: Self) {
     
-    @scala.inline
-    def setFilters(value: DataRepositoryTaskFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: DataRepositoryTaskFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: DataRepositoryTaskFilter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: DataRepositoryTaskFilter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTaskIds(value: TaskIds): Self = StObject.set(x, "TaskIds", value.asInstanceOf[js.Any])
+    inline def setTaskIds(value: TaskIds): Self = StObject.set(x, "TaskIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskIdsUndefined: Self = StObject.set(x, "TaskIds", js.undefined)
+    inline def setTaskIdsUndefined: Self = StObject.set(x, "TaskIds", js.undefined)
     
-    @scala.inline
-    def setTaskIdsVarargs(value: TaskId*): Self = StObject.set(x, "TaskIds", js.Array(value :_*))
+    inline def setTaskIdsVarargs(value: TaskId*): Self = StObject.set(x, "TaskIds", js.Array(value :_*))
   }
 }

@@ -55,17 +55,17 @@ object textToSpeechClientMod {
   class TextToSpeechClient () extends StObject {
     def this(opts: ClientOptions) = this()
     
-    var _defaults: js.Any = js.native
+    /* private */ var _defaults: js.Any = js.native
     
-    var _gaxGrpc: js.Any = js.native
+    /* private */ var _gaxGrpc: js.Any = js.native
     
-    var _gaxModule: js.Any = js.native
+    /* private */ var _gaxModule: js.Any = js.native
     
-    var _opts: js.Any = js.native
+    /* private */ var _opts: js.Any = js.native
     
-    var _protos: js.Any = js.native
+    /* private */ var _protos: js.Any = js.native
     
-    var _terminated: js.Any = js.native
+    /* private */ var _terminated: js.Any = js.native
     
     var auth: GoogleAuth = js.native
     

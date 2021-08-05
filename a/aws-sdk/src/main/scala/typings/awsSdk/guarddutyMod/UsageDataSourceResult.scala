@@ -18,25 +18,19 @@ trait UsageDataSourceResult extends StObject {
 }
 object UsageDataSourceResult {
   
-  @scala.inline
-  def apply(): UsageDataSourceResult = {
+  inline def apply(): UsageDataSourceResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UsageDataSourceResult]
   }
   
-  @scala.inline
-  implicit class UsageDataSourceResultMutableBuilder[Self <: UsageDataSourceResult] (val x: Self) extends AnyVal {
+  extension [Self <: UsageDataSourceResult](x: Self) {
     
-    @scala.inline
-    def setDataSource(value: DataSource): Self = StObject.set(x, "DataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: DataSource): Self = StObject.set(x, "DataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceUndefined: Self = StObject.set(x, "DataSource", js.undefined)
+    inline def setDataSourceUndefined: Self = StObject.set(x, "DataSource", js.undefined)
     
-    @scala.inline
-    def setTotal(value: Total): Self = StObject.set(x, "Total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Total): Self = StObject.set(x, "Total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalUndefined: Self = StObject.set(x, "Total", js.undefined)
+    inline def setTotalUndefined: Self = StObject.set(x, "Total", js.undefined)
   }
 }

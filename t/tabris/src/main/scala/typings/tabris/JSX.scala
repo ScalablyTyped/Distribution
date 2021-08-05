@@ -19,17 +19,14 @@ object JSX {
   }
   object ElementAttributesProperty {
     
-    @scala.inline
-    def apply(jsxAttributes: js.Any): ElementAttributesProperty = {
+    inline def apply(jsxAttributes: js.Any): ElementAttributesProperty = {
       val __obj = js.Dynamic.literal(jsxAttributes = jsxAttributes.asInstanceOf[js.Any])
       __obj.asInstanceOf[ElementAttributesProperty]
     }
     
-    @scala.inline
-    implicit class ElementAttributesPropertyMutableBuilder[Self <: ElementAttributesProperty] (val x: Self) extends AnyVal {
+    extension [Self <: ElementAttributesProperty](x: Self) {
       
-      @scala.inline
-      def setJsxAttributes(value: js.Any): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
+      inline def setJsxAttributes(value: js.Any): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
     }
   }
   
@@ -39,20 +36,16 @@ object JSX {
   }
   object ElementChildrenAttribute {
     
-    @scala.inline
-    def apply(): ElementChildrenAttribute = {
+    inline def apply(): ElementChildrenAttribute = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ElementChildrenAttribute]
     }
     
-    @scala.inline
-    implicit class ElementChildrenAttributeMutableBuilder[Self <: ElementChildrenAttribute] (val x: Self) extends AnyVal {
+    extension [Self <: ElementChildrenAttribute](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
   
@@ -86,8 +79,7 @@ object JSX {
   }
   object IntrinsicElements {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       a: Href,
       b: TextColor,
       big: TextColor,
@@ -103,38 +95,27 @@ object JSX {
       __obj.asInstanceOf[IntrinsicElements]
     }
     
-    @scala.inline
-    implicit class IntrinsicElementsMutableBuilder[Self <: IntrinsicElements] (val x: Self) extends AnyVal {
+    extension [Self <: IntrinsicElements](x: Self) {
       
-      @scala.inline
-      def setA(value: Href): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+      inline def setA(value: Href): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setB(value: TextColor): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+      inline def setB(value: TextColor): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBig(value: TextColor): Self = StObject.set(x, "big", value.asInstanceOf[js.Any])
+      inline def setBig(value: TextColor): Self = StObject.set(x, "big", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBr(value: `2`): Self = StObject.set(x, "br", value.asInstanceOf[js.Any])
+      inline def setBr(value: `2`): Self = StObject.set(x, "br", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDel(value: TextColor): Self = StObject.set(x, "del", value.asInstanceOf[js.Any])
+      inline def setDel(value: TextColor): Self = StObject.set(x, "del", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setI(value: TextColor): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
+      inline def setI(value: TextColor): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIns(value: TextColor): Self = StObject.set(x, "ins", value.asInstanceOf[js.Any])
+      inline def setIns(value: TextColor): Self = StObject.set(x, "ins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmall(value: TextColor): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
+      inline def setSmall(value: TextColor): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpan(value: TextColor): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
+      inline def setSpan(value: TextColor): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrong(value: TextColor): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
+      inline def setStrong(value: TextColor): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
     }
   }
   

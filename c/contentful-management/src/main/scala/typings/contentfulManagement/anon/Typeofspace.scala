@@ -17,8 +17,7 @@ trait Typeofspace extends StObject {
 }
 object Typeofspace {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     wrapSpace: (AxiosInstance, SpaceProps) => Space,
     wrapSpaceCollection: (AxiosInstance, CollectionProp[SpaceProps]) => Collection[Space, SpaceProps]
   ): Typeofspace = {
@@ -26,13 +25,10 @@ object Typeofspace {
     __obj.asInstanceOf[Typeofspace]
   }
   
-  @scala.inline
-  implicit class TypeofspaceMutableBuilder[Self <: Typeofspace] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofspace](x: Self) {
     
-    @scala.inline
-    def setWrapSpace(value: (AxiosInstance, SpaceProps) => Space): Self = StObject.set(x, "wrapSpace", js.Any.fromFunction2(value))
+    inline def setWrapSpace(value: (AxiosInstance, SpaceProps) => Space): Self = StObject.set(x, "wrapSpace", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWrapSpaceCollection(value: (AxiosInstance, CollectionProp[SpaceProps]) => Collection[Space, SpaceProps]): Self = StObject.set(x, "wrapSpaceCollection", js.Any.fromFunction2(value))
+    inline def setWrapSpaceCollection(value: (AxiosInstance, CollectionProp[SpaceProps]) => Collection[Space, SpaceProps]): Self = StObject.set(x, "wrapSpaceCollection", js.Any.fromFunction2(value))
   }
 }

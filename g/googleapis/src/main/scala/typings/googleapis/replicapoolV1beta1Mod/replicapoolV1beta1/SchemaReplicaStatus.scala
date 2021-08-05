@@ -38,43 +38,31 @@ trait SchemaReplicaStatus extends StObject {
 }
 object SchemaReplicaStatus {
   
-  @scala.inline
-  def apply(): SchemaReplicaStatus = {
+  inline def apply(): SchemaReplicaStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaReplicaStatus]
   }
   
-  @scala.inline
-  implicit class SchemaReplicaStatusMutableBuilder[Self <: SchemaReplicaStatus] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaReplicaStatus](x: Self) {
     
-    @scala.inline
-    def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setTemplateVersion(value: String): Self = StObject.set(x, "templateVersion", value.asInstanceOf[js.Any])
+    inline def setTemplateVersion(value: String): Self = StObject.set(x, "templateVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateVersionUndefined: Self = StObject.set(x, "templateVersion", js.undefined)
+    inline def setTemplateVersionUndefined: Self = StObject.set(x, "templateVersion", js.undefined)
     
-    @scala.inline
-    def setVmLink(value: String): Self = StObject.set(x, "vmLink", value.asInstanceOf[js.Any])
+    inline def setVmLink(value: String): Self = StObject.set(x, "vmLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmLinkUndefined: Self = StObject.set(x, "vmLink", js.undefined)
+    inline def setVmLinkUndefined: Self = StObject.set(x, "vmLink", js.undefined)
     
-    @scala.inline
-    def setVmStartTime(value: String): Self = StObject.set(x, "vmStartTime", value.asInstanceOf[js.Any])
+    inline def setVmStartTime(value: String): Self = StObject.set(x, "vmStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmStartTimeUndefined: Self = StObject.set(x, "vmStartTime", js.undefined)
+    inline def setVmStartTimeUndefined: Self = StObject.set(x, "vmStartTime", js.undefined)
   }
 }

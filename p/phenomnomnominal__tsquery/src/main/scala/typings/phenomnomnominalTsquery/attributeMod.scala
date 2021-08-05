@@ -12,6 +12,5 @@ object attributeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def attribute(node: Node, selector: TSQuerySelectorNode): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("attribute")(node.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def attribute(node: Node, selector: TSQuerySelectorNode): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("attribute")(node.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

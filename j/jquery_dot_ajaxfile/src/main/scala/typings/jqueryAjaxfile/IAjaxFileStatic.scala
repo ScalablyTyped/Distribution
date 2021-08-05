@@ -12,8 +12,7 @@ trait IAjaxFileStatic extends StObject {
 }
 object IAjaxFileStatic {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DataType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DataType */ js.Any,
     send: IOption => IAjaxFilePromise[js.Any]
   ): IAjaxFileStatic = {
@@ -21,13 +20,10 @@ object IAjaxFileStatic {
     __obj.asInstanceOf[IAjaxFileStatic]
   }
   
-  @scala.inline
-  implicit class IAjaxFileStaticMutableBuilder[Self <: IAjaxFileStatic] (val x: Self) extends AnyVal {
+  extension [Self <: IAjaxFileStatic](x: Self) {
     
-    @scala.inline
-    def setDataType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DataType */ js.Any): Self = StObject.set(x, "DataType", value.asInstanceOf[js.Any])
+    inline def setDataType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DataType */ js.Any): Self = StObject.set(x, "DataType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSend(value: IOption => IAjaxFilePromise[js.Any]): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
+    inline def setSend(value: IOption => IAjaxFilePromise[js.Any]): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
   }
 }

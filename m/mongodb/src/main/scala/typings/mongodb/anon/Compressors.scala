@@ -13,22 +13,17 @@ trait Compressors extends StObject {
 }
 object Compressors {
   
-  @scala.inline
-  def apply(): Compressors = {
+  inline def apply(): Compressors = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Compressors]
   }
   
-  @scala.inline
-  implicit class CompressorsMutableBuilder[Self <: Compressors] (val x: Self) extends AnyVal {
+  extension [Self <: Compressors](x: Self) {
     
-    @scala.inline
-    def setCompressors(value: js.Array[snappy | zlib]): Self = StObject.set(x, "compressors", value.asInstanceOf[js.Any])
+    inline def setCompressors(value: js.Array[snappy | zlib]): Self = StObject.set(x, "compressors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompressorsUndefined: Self = StObject.set(x, "compressors", js.undefined)
+    inline def setCompressorsUndefined: Self = StObject.set(x, "compressors", js.undefined)
     
-    @scala.inline
-    def setCompressorsVarargs(value: (snappy | zlib)*): Self = StObject.set(x, "compressors", js.Array(value :_*))
+    inline def setCompressorsVarargs(value: (snappy | zlib)*): Self = StObject.set(x, "compressors", js.Array(value :_*))
   }
 }

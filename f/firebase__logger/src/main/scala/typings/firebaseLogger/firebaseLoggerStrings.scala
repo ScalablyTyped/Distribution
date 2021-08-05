@@ -11,41 +11,35 @@ object firebaseLoggerStrings {
   sealed trait debug
     extends StObject
        with LogLevelString
-  @scala.inline
-  def debug: debug = "debug".asInstanceOf[debug]
+  inline def debug: debug = "debug".asInstanceOf[debug]
   
   @js.native
   sealed trait error
     extends StObject
        with LogLevelString
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait info
     extends StObject
        with LogLevelString
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
+  inline def info: info = "info".asInstanceOf[info]
   
   @js.native
   sealed trait silent
     extends StObject
        with LogLevelString
-  @scala.inline
-  def silent: silent = "silent".asInstanceOf[silent]
+  inline def silent: silent = "silent".asInstanceOf[silent]
   
   @js.native
   sealed trait verbose
     extends StObject
        with LogLevelString
-  @scala.inline
-  def verbose: verbose = "verbose".asInstanceOf[verbose]
+  inline def verbose: verbose = "verbose".asInstanceOf[verbose]
   
   @js.native
   sealed trait warn
     extends StObject
        with LogLevelString
-  @scala.inline
-  def warn: warn = "warn".asInstanceOf[warn]
+  inline def warn: warn = "warn".asInstanceOf[warn]
 }

@@ -23,31 +23,23 @@ trait BulkDeploymentMetrics extends StObject {
 }
 object BulkDeploymentMetrics {
   
-  @scala.inline
-  def apply(): BulkDeploymentMetrics = {
+  inline def apply(): BulkDeploymentMetrics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BulkDeploymentMetrics]
   }
   
-  @scala.inline
-  implicit class BulkDeploymentMetricsMutableBuilder[Self <: BulkDeploymentMetrics] (val x: Self) extends AnyVal {
+  extension [Self <: BulkDeploymentMetrics](x: Self) {
     
-    @scala.inline
-    def setInvalidInputRecords(value: integer): Self = StObject.set(x, "InvalidInputRecords", value.asInstanceOf[js.Any])
+    inline def setInvalidInputRecords(value: integer): Self = StObject.set(x, "InvalidInputRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalidInputRecordsUndefined: Self = StObject.set(x, "InvalidInputRecords", js.undefined)
+    inline def setInvalidInputRecordsUndefined: Self = StObject.set(x, "InvalidInputRecords", js.undefined)
     
-    @scala.inline
-    def setRecordsProcessed(value: integer): Self = StObject.set(x, "RecordsProcessed", value.asInstanceOf[js.Any])
+    inline def setRecordsProcessed(value: integer): Self = StObject.set(x, "RecordsProcessed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordsProcessedUndefined: Self = StObject.set(x, "RecordsProcessed", js.undefined)
+    inline def setRecordsProcessedUndefined: Self = StObject.set(x, "RecordsProcessed", js.undefined)
     
-    @scala.inline
-    def setRetryAttempts(value: integer): Self = StObject.set(x, "RetryAttempts", value.asInstanceOf[js.Any])
+    inline def setRetryAttempts(value: integer): Self = StObject.set(x, "RetryAttempts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryAttemptsUndefined: Self = StObject.set(x, "RetryAttempts", js.undefined)
+    inline def setRetryAttemptsUndefined: Self = StObject.set(x, "RetryAttempts", js.undefined)
   }
 }

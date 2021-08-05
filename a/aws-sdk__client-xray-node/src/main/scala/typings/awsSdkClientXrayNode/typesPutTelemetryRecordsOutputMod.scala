@@ -20,17 +20,14 @@ object typesPutTelemetryRecordsOutputMod {
   }
   object PutTelemetryRecordsOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): PutTelemetryRecordsOutput = {
+    inline def apply($metadata: ResponseMetadata): PutTelemetryRecordsOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[PutTelemetryRecordsOutput]
     }
     
-    @scala.inline
-    implicit class PutTelemetryRecordsOutputMutableBuilder[Self <: PutTelemetryRecordsOutput] (val x: Self) extends AnyVal {
+    extension [Self <: PutTelemetryRecordsOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }
   }
 }

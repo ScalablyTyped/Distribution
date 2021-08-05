@@ -26,8 +26,7 @@ trait TagFeedResponseLocation extends StObject {
 }
 object TagFeedResponseLocation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     address: String,
     city: String,
     external_source: String,
@@ -42,34 +41,24 @@ object TagFeedResponseLocation {
     __obj.asInstanceOf[TagFeedResponseLocation]
   }
   
-  @scala.inline
-  implicit class TagFeedResponseLocationMutableBuilder[Self <: TagFeedResponseLocation] (val x: Self) extends AnyVal {
+  extension [Self <: TagFeedResponseLocation](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+    inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternal_source(value: String): Self = StObject.set(x, "external_source", value.asInstanceOf[js.Any])
+    inline def setExternal_source(value: String): Self = StObject.set(x, "external_source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacebook_places_id(value: String | Double): Self = StObject.set(x, "facebook_places_id", value.asInstanceOf[js.Any])
+    inline def setFacebook_places_id(value: String | Double): Self = StObject.set(x, "facebook_places_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLat(value: Double | String): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
+    inline def setLat(value: Double | String): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLng(value: Double | String): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
+    inline def setLng(value: Double | String): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPk(value: Double | String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+    inline def setPk(value: Double | String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShort_name(value: String): Self = StObject.set(x, "short_name", value.asInstanceOf[js.Any])
+    inline def setShort_name(value: String): Self = StObject.set(x, "short_name", value.asInstanceOf[js.Any])
   }
 }

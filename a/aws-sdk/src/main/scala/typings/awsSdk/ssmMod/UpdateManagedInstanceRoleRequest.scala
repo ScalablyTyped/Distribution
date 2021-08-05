@@ -18,19 +18,15 @@ trait UpdateManagedInstanceRoleRequest extends StObject {
 }
 object UpdateManagedInstanceRoleRequest {
   
-  @scala.inline
-  def apply(IamRole: IamRole, InstanceId: ManagedInstanceId): UpdateManagedInstanceRoleRequest = {
+  inline def apply(IamRole: IamRole, InstanceId: ManagedInstanceId): UpdateManagedInstanceRoleRequest = {
     val __obj = js.Dynamic.literal(IamRole = IamRole.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateManagedInstanceRoleRequest]
   }
   
-  @scala.inline
-  implicit class UpdateManagedInstanceRoleRequestMutableBuilder[Self <: UpdateManagedInstanceRoleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateManagedInstanceRoleRequest](x: Self) {
     
-    @scala.inline
-    def setIamRole(value: IamRole): Self = StObject.set(x, "IamRole", value.asInstanceOf[js.Any])
+    inline def setIamRole(value: IamRole): Self = StObject.set(x, "IamRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceId(value: ManagedInstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: ManagedInstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
   }
 }

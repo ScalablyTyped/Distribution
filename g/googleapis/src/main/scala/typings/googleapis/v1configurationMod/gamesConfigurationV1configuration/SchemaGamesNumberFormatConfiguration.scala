@@ -38,37 +38,27 @@ trait SchemaGamesNumberFormatConfiguration extends StObject {
 }
 object SchemaGamesNumberFormatConfiguration {
   
-  @scala.inline
-  def apply(): SchemaGamesNumberFormatConfiguration = {
+  inline def apply(): SchemaGamesNumberFormatConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGamesNumberFormatConfiguration]
   }
   
-  @scala.inline
-  implicit class SchemaGamesNumberFormatConfigurationMutableBuilder[Self <: SchemaGamesNumberFormatConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGamesNumberFormatConfiguration](x: Self) {
     
-    @scala.inline
-    def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
+    inline def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
+    inline def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
     
-    @scala.inline
-    def setNumDecimalPlaces(value: Double): Self = StObject.set(x, "numDecimalPlaces", value.asInstanceOf[js.Any])
+    inline def setNumDecimalPlaces(value: Double): Self = StObject.set(x, "numDecimalPlaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumDecimalPlacesUndefined: Self = StObject.set(x, "numDecimalPlaces", js.undefined)
+    inline def setNumDecimalPlacesUndefined: Self = StObject.set(x, "numDecimalPlaces", js.undefined)
     
-    @scala.inline
-    def setNumberFormatType(value: String): Self = StObject.set(x, "numberFormatType", value.asInstanceOf[js.Any])
+    inline def setNumberFormatType(value: String): Self = StObject.set(x, "numberFormatType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberFormatTypeUndefined: Self = StObject.set(x, "numberFormatType", js.undefined)
+    inline def setNumberFormatTypeUndefined: Self = StObject.set(x, "numberFormatType", js.undefined)
     
-    @scala.inline
-    def setSuffix(value: SchemaGamesNumberAffixConfiguration): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+    inline def setSuffix(value: SchemaGamesNumberAffixConfiguration): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+    inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
   }
 }

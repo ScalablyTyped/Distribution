@@ -17,16 +17,13 @@ trait UidIdentifier
 }
 object UidIdentifier {
   
-  @scala.inline
-  def apply(uid: String): UidIdentifier = {
+  inline def apply(uid: String): UidIdentifier = {
     val __obj = js.Dynamic.literal(uid = uid.asInstanceOf[js.Any])
     __obj.asInstanceOf[UidIdentifier]
   }
   
-  @scala.inline
-  implicit class UidIdentifierMutableBuilder[Self <: UidIdentifier] (val x: Self) extends AnyVal {
+  extension [Self <: UidIdentifier](x: Self) {
     
-    @scala.inline
-    def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+    inline def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
   }
 }

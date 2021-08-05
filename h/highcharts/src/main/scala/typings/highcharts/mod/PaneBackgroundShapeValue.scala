@@ -13,12 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PaneBackgroundShapeValue extends StObject
 object PaneBackgroundShapeValue {
   
-  @scala.inline
-  def arc: typings.highcharts.highchartsStrings.arc = "arc".asInstanceOf[typings.highcharts.highchartsStrings.arc]
+  inline def arc: typings.highcharts.highchartsStrings.arc = "arc".asInstanceOf[typings.highcharts.highchartsStrings.arc]
   
-  @scala.inline
-  def circle: typings.highcharts.highchartsStrings.circle = "circle".asInstanceOf[typings.highcharts.highchartsStrings.circle]
+  inline def circle: typings.highcharts.highchartsStrings.circle = "circle".asInstanceOf[typings.highcharts.highchartsStrings.circle]
   
-  @scala.inline
-  def solid: solid_ = "solid".asInstanceOf[solid_]
+  inline def solid: solid_ = "solid".asInstanceOf[solid_]
 }

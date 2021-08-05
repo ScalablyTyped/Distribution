@@ -14,10 +14,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def config(): DotenvSafeConfigOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("config")().asInstanceOf[DotenvSafeConfigOutput]
-  @scala.inline
-  def config(options: DotenvSafeOptions): DotenvSafeConfigOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(options.asInstanceOf[js.Any]).asInstanceOf[DotenvSafeConfigOutput]
+  inline def config(): DotenvSafeConfigOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("config")().asInstanceOf[DotenvSafeConfigOutput]
+  inline def config(options: DotenvSafeOptions): DotenvSafeConfigOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(options.asInstanceOf[js.Any]).asInstanceOf[DotenvSafeConfigOutput]
   
   trait DotenvSafeConfigOutput
     extends StObject
@@ -30,17 +28,14 @@ object mod {
   }
   object DotenvSafeConfigOutput {
     
-    @scala.inline
-    def apply(required: DotenvParseOutput): DotenvSafeConfigOutput = {
+    inline def apply(required: DotenvParseOutput): DotenvSafeConfigOutput = {
       val __obj = js.Dynamic.literal(required = required.asInstanceOf[js.Any])
       __obj.asInstanceOf[DotenvSafeConfigOutput]
     }
     
-    @scala.inline
-    implicit class DotenvSafeConfigOutputMutableBuilder[Self <: DotenvSafeConfigOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DotenvSafeConfigOutput](x: Self) {
       
-      @scala.inline
-      def setRequired(value: DotenvParseOutput): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: DotenvParseOutput): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     }
   }
   
@@ -68,32 +63,24 @@ object mod {
   }
   object DotenvSafeOptions {
     
-    @scala.inline
-    def apply(): DotenvSafeOptions = {
+    inline def apply(): DotenvSafeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DotenvSafeOptions]
     }
     
-    @scala.inline
-    implicit class DotenvSafeOptionsMutableBuilder[Self <: DotenvSafeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DotenvSafeOptions](x: Self) {
       
-      @scala.inline
-      def setAllowEmptyValues(value: Boolean): Self = StObject.set(x, "allowEmptyValues", value.asInstanceOf[js.Any])
+      inline def setAllowEmptyValues(value: Boolean): Self = StObject.set(x, "allowEmptyValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowEmptyValuesUndefined: Self = StObject.set(x, "allowEmptyValues", js.undefined)
+      inline def setAllowEmptyValuesUndefined: Self = StObject.set(x, "allowEmptyValues", js.undefined)
       
-      @scala.inline
-      def setExample(value: String): Self = StObject.set(x, "example", value.asInstanceOf[js.Any])
+      inline def setExample(value: String): Self = StObject.set(x, "example", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExampleUndefined: Self = StObject.set(x, "example", js.undefined)
+      inline def setExampleUndefined: Self = StObject.set(x, "example", js.undefined)
       
-      @scala.inline
-      def setSample(value: String): Self = StObject.set(x, "sample", value.asInstanceOf[js.Any])
+      inline def setSample(value: String): Self = StObject.set(x, "sample", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSampleUndefined: Self = StObject.set(x, "sample", js.undefined)
+      inline def setSampleUndefined: Self = StObject.set(x, "sample", js.undefined)
     }
   }
   
@@ -113,23 +100,18 @@ object mod {
   }
   object MissingEnvVarsError {
     
-    @scala.inline
-    def apply(message: String, missing: js.Array[String], name: String, sample: String): MissingEnvVarsError = {
+    inline def apply(message: String, missing: js.Array[String], name: String, sample: String): MissingEnvVarsError = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], missing = missing.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], sample = sample.asInstanceOf[js.Any])
       __obj.asInstanceOf[MissingEnvVarsError]
     }
     
-    @scala.inline
-    implicit class MissingEnvVarsErrorMutableBuilder[Self <: MissingEnvVarsError] (val x: Self) extends AnyVal {
+    extension [Self <: MissingEnvVarsError](x: Self) {
       
-      @scala.inline
-      def setMissing(value: js.Array[String]): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
+      inline def setMissing(value: js.Array[String]): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMissingVarargs(value: String*): Self = StObject.set(x, "missing", js.Array(value :_*))
+      inline def setMissingVarargs(value: String*): Self = StObject.set(x, "missing", js.Array(value :_*))
       
-      @scala.inline
-      def setSample(value: String): Self = StObject.set(x, "sample", value.asInstanceOf[js.Any])
+      inline def setSample(value: String): Self = StObject.set(x, "sample", value.asInstanceOf[js.Any])
     }
   }
 }

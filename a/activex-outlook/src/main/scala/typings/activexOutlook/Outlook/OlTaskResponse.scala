@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlTaskResponse extends StObject
 object OlTaskResponse {
   
-  @scala.inline
-  def olTaskAccept: `2` = 2.asInstanceOf[`2`]
+  inline def olTaskAccept: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def olTaskAssign: `1` = 1.asInstanceOf[`1`]
+  inline def olTaskAssign: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olTaskDecline: `3` = 3.asInstanceOf[`3`]
+  inline def olTaskDecline: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def olTaskSimple: `0` = 0.asInstanceOf[`0`]
+  inline def olTaskSimple: `0` = 0.asInstanceOf[`0`]
 }

@@ -13,16 +13,13 @@ trait PluginConvertEllipseToCircle
 }
 object PluginConvertEllipseToCircle {
   
-  @scala.inline
-  def apply(convertEllipseToCircle: Boolean | js.Object): PluginConvertEllipseToCircle = {
+  inline def apply(convertEllipseToCircle: Boolean | js.Object): PluginConvertEllipseToCircle = {
     val __obj = js.Dynamic.literal(convertEllipseToCircle = convertEllipseToCircle.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginConvertEllipseToCircle]
   }
   
-  @scala.inline
-  implicit class PluginConvertEllipseToCircleMutableBuilder[Self <: PluginConvertEllipseToCircle] (val x: Self) extends AnyVal {
+  extension [Self <: PluginConvertEllipseToCircle](x: Self) {
     
-    @scala.inline
-    def setConvertEllipseToCircle(value: Boolean | js.Object): Self = StObject.set(x, "convertEllipseToCircle", value.asInstanceOf[js.Any])
+    inline def setConvertEllipseToCircle(value: Boolean | js.Object): Self = StObject.set(x, "convertEllipseToCircle", value.asInstanceOf[js.Any])
   }
 }

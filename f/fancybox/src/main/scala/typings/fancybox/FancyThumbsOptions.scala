@@ -30,37 +30,27 @@ trait FancyThumbsOptions extends StObject {
 }
 object FancyThumbsOptions {
   
-  @scala.inline
-  def apply(): FancyThumbsOptions = {
+  inline def apply(): FancyThumbsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FancyThumbsOptions]
   }
   
-  @scala.inline
-  implicit class FancyThumbsOptionsMutableBuilder[Self <: FancyThumbsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FancyThumbsOptions](x: Self) {
     
-    @scala.inline
-    def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
+    inline def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoStartUndefined: Self = StObject.set(x, "autoStart", js.undefined)
+    inline def setAutoStartUndefined: Self = StObject.set(x, "autoStart", js.undefined)
     
-    @scala.inline
-    def setAxis(value: typings.fancybox.fancyboxStrings.x | y): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: typings.fancybox.fancyboxStrings.x | y): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+    inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
-    @scala.inline
-    def setHideOnClose(value: Boolean): Self = StObject.set(x, "hideOnClose", value.asInstanceOf[js.Any])
+    inline def setHideOnClose(value: Boolean): Self = StObject.set(x, "hideOnClose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideOnCloseUndefined: Self = StObject.set(x, "hideOnClose", js.undefined)
+    inline def setHideOnCloseUndefined: Self = StObject.set(x, "hideOnClose", js.undefined)
     
-    @scala.inline
-    def setParentEl(value: String): Self = StObject.set(x, "parentEl", value.asInstanceOf[js.Any])
+    inline def setParentEl(value: String): Self = StObject.set(x, "parentEl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentElUndefined: Self = StObject.set(x, "parentEl", js.undefined)
+    inline def setParentElUndefined: Self = StObject.set(x, "parentEl", js.undefined)
   }
 }

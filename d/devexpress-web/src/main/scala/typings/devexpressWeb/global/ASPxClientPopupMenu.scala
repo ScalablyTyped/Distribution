@@ -193,6 +193,5 @@ object ASPxClientPopupMenu {
     * @param obj The client object to be type cast.
     */
   /* static member */
-  @scala.inline
-  def Cast(obj: js.Any): typings.devexpressWeb.ASPxClientPopupMenu = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ASPxClientPopupMenu]
+  inline def Cast(obj: js.Any): typings.devexpressWeb.ASPxClientPopupMenu = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ASPxClientPopupMenu]
 }

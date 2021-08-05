@@ -22,7 +22,7 @@ object groupMod {
   class Group () extends ComponentContainer {
     def this(components: js.Array[Component]) = this()
     
-    var _components: js.Any = js.native
+    /* private */ var _components: js.Any = js.native
     
     /**
       * Adds a Component to this Group.

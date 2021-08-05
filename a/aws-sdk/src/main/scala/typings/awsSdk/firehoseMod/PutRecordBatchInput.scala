@@ -18,22 +18,17 @@ trait PutRecordBatchInput extends StObject {
 }
 object PutRecordBatchInput {
   
-  @scala.inline
-  def apply(DeliveryStreamName: DeliveryStreamName, Records: PutRecordBatchRequestEntryList): PutRecordBatchInput = {
+  inline def apply(DeliveryStreamName: DeliveryStreamName, Records: PutRecordBatchRequestEntryList): PutRecordBatchInput = {
     val __obj = js.Dynamic.literal(DeliveryStreamName = DeliveryStreamName.asInstanceOf[js.Any], Records = Records.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutRecordBatchInput]
   }
   
-  @scala.inline
-  implicit class PutRecordBatchInputMutableBuilder[Self <: PutRecordBatchInput] (val x: Self) extends AnyVal {
+  extension [Self <: PutRecordBatchInput](x: Self) {
     
-    @scala.inline
-    def setDeliveryStreamName(value: DeliveryStreamName): Self = StObject.set(x, "DeliveryStreamName", value.asInstanceOf[js.Any])
+    inline def setDeliveryStreamName(value: DeliveryStreamName): Self = StObject.set(x, "DeliveryStreamName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecords(value: PutRecordBatchRequestEntryList): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
+    inline def setRecords(value: PutRecordBatchRequestEntryList): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordsVarargs(value: Record*): Self = StObject.set(x, "Records", js.Array(value :_*))
+    inline def setRecordsVarargs(value: Record*): Self = StObject.set(x, "Records", js.Array(value :_*))
   }
 }

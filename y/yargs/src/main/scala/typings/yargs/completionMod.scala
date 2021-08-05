@@ -15,8 +15,7 @@ object completionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def completion(yargs: YargsInstance, usage: UsageInstance, command: CommandInstance): CompletionInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("completion")(yargs.asInstanceOf[js.Any], usage.asInstanceOf[js.Any], command.asInstanceOf[js.Any])).asInstanceOf[CompletionInstance]
+  inline def completion(yargs: YargsInstance, usage: UsageInstance, command: CommandInstance): CompletionInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("completion")(yargs.asInstanceOf[js.Any], usage.asInstanceOf[js.Any], command.asInstanceOf[js.Any])).asInstanceOf[CompletionInstance]
   
   type AsyncCompletionFunction = js.Function3[
     /* current */ String, 
@@ -41,8 +40,7 @@ object completionMod {
   }
   object CompletionInstance {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       completionKey: String,
       generateCompletionScript: (String, String) => String,
       getCompletion: (js.Array[String], js.Function1[/* completions */ js.Array[String], js.Any]) => js.Any,
@@ -53,23 +51,17 @@ object completionMod {
       __obj.asInstanceOf[CompletionInstance]
     }
     
-    @scala.inline
-    implicit class CompletionInstanceMutableBuilder[Self <: CompletionInstance] (val x: Self) extends AnyVal {
+    extension [Self <: CompletionInstance](x: Self) {
       
-      @scala.inline
-      def setCompletionKey(value: String): Self = StObject.set(x, "completionKey", value.asInstanceOf[js.Any])
+      inline def setCompletionKey(value: String): Self = StObject.set(x, "completionKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenerateCompletionScript(value: (String, String) => String): Self = StObject.set(x, "generateCompletionScript", js.Any.fromFunction2(value))
+      inline def setGenerateCompletionScript(value: (String, String) => String): Self = StObject.set(x, "generateCompletionScript", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetCompletion(value: (js.Array[String], js.Function1[/* completions */ js.Array[String], js.Any]) => js.Any): Self = StObject.set(x, "getCompletion", js.Any.fromFunction2(value))
+      inline def setGetCompletion(value: (js.Array[String], js.Function1[/* completions */ js.Array[String], js.Any]) => js.Any): Self = StObject.set(x, "getCompletion", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRegisterFunction(value: CompletionFunction => Unit): Self = StObject.set(x, "registerFunction", js.Any.fromFunction1(value))
+      inline def setRegisterFunction(value: CompletionFunction => Unit): Self = StObject.set(x, "registerFunction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetParsed(value: DetailedArguments => Unit): Self = StObject.set(x, "setParsed", js.Any.fromFunction1(value))
+      inline def setSetParsed(value: DetailedArguments => Unit): Self = StObject.set(x, "setParsed", js.Any.fromFunction1(value))
     }
   }
   

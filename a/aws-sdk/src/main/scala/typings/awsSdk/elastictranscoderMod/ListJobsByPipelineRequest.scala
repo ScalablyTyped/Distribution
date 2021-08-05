@@ -23,28 +23,21 @@ trait ListJobsByPipelineRequest extends StObject {
 }
 object ListJobsByPipelineRequest {
   
-  @scala.inline
-  def apply(PipelineId: Id): ListJobsByPipelineRequest = {
+  inline def apply(PipelineId: Id): ListJobsByPipelineRequest = {
     val __obj = js.Dynamic.literal(PipelineId = PipelineId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListJobsByPipelineRequest]
   }
   
-  @scala.inline
-  implicit class ListJobsByPipelineRequestMutableBuilder[Self <: ListJobsByPipelineRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListJobsByPipelineRequest](x: Self) {
     
-    @scala.inline
-    def setAscending(value: Ascending): Self = StObject.set(x, "Ascending", value.asInstanceOf[js.Any])
+    inline def setAscending(value: Ascending): Self = StObject.set(x, "Ascending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAscendingUndefined: Self = StObject.set(x, "Ascending", js.undefined)
+    inline def setAscendingUndefined: Self = StObject.set(x, "Ascending", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: Id): Self = StObject.set(x, "PageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: Id): Self = StObject.set(x, "PageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "PageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "PageToken", js.undefined)
     
-    @scala.inline
-    def setPipelineId(value: Id): Self = StObject.set(x, "PipelineId", value.asInstanceOf[js.Any])
+    inline def setPipelineId(value: Id): Self = StObject.set(x, "PipelineId", value.asInstanceOf[js.Any])
   }
 }

@@ -16,8 +16,7 @@ trait FetchStrategy
 }
 object FetchStrategy {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FromLocalCache: FetchStrategySymbol,
     FromServer: FetchStrategySymbol,
     contains: js.Any => Boolean,
@@ -29,13 +28,10 @@ object FetchStrategy {
     __obj.asInstanceOf[FetchStrategy]
   }
   
-  @scala.inline
-  implicit class FetchStrategyMutableBuilder[Self <: FetchStrategy] (val x: Self) extends AnyVal {
+  extension [Self <: FetchStrategy](x: Self) {
     
-    @scala.inline
-    def setFromLocalCache(value: FetchStrategySymbol): Self = StObject.set(x, "FromLocalCache", value.asInstanceOf[js.Any])
+    inline def setFromLocalCache(value: FetchStrategySymbol): Self = StObject.set(x, "FromLocalCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromServer(value: FetchStrategySymbol): Self = StObject.set(x, "FromServer", value.asInstanceOf[js.Any])
+    inline def setFromServer(value: FetchStrategySymbol): Self = StObject.set(x, "FromServer", value.asInstanceOf[js.Any])
   }
 }

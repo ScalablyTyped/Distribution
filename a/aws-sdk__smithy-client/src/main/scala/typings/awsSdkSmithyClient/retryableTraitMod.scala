@@ -15,20 +15,16 @@ object retryableTraitMod {
   }
   object RetryableTrait {
     
-    @scala.inline
-    def apply(): RetryableTrait = {
+    inline def apply(): RetryableTrait = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RetryableTrait]
     }
     
-    @scala.inline
-    implicit class RetryableTraitMutableBuilder[Self <: RetryableTrait] (val x: Self) extends AnyVal {
+    extension [Self <: RetryableTrait](x: Self) {
       
-      @scala.inline
-      def setThrottling(value: Boolean): Self = StObject.set(x, "throttling", value.asInstanceOf[js.Any])
+      inline def setThrottling(value: Boolean): Self = StObject.set(x, "throttling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrottlingUndefined: Self = StObject.set(x, "throttling", js.undefined)
+      inline def setThrottlingUndefined: Self = StObject.set(x, "throttling", js.undefined)
     }
   }
 }

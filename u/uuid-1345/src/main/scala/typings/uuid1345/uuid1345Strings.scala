@@ -8,16 +8,13 @@ object uuid1345Strings {
   
   @js.native
   sealed trait ascii extends StObject
-  @scala.inline
-  def ascii: ascii = "ascii".asInstanceOf[ascii]
+  inline def ascii: ascii = "ascii".asInstanceOf[ascii]
   
   @js.native
   sealed trait binary extends StObject
-  @scala.inline
-  def binary: binary = "binary".asInstanceOf[binary]
+  inline def binary: binary = "binary".asInstanceOf[binary]
   
   @js.native
   sealed trait `object` extends StObject
-  @scala.inline
-  def `object`: `object` = "object".asInstanceOf[`object`]
+  inline def `object`: `object` = "object".asInstanceOf[`object`]
 }

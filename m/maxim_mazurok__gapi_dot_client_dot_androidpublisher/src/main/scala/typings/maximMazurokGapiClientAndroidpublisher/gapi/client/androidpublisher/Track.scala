@@ -14,28 +14,21 @@ trait Track extends StObject {
 }
 object Track {
   
-  @scala.inline
-  def apply(): Track = {
+  inline def apply(): Track = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Track]
   }
   
-  @scala.inline
-  implicit class TrackMutableBuilder[Self <: Track] (val x: Self) extends AnyVal {
+  extension [Self <: Track](x: Self) {
     
-    @scala.inline
-    def setReleases(value: js.Array[TrackRelease]): Self = StObject.set(x, "releases", value.asInstanceOf[js.Any])
+    inline def setReleases(value: js.Array[TrackRelease]): Self = StObject.set(x, "releases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleasesUndefined: Self = StObject.set(x, "releases", js.undefined)
+    inline def setReleasesUndefined: Self = StObject.set(x, "releases", js.undefined)
     
-    @scala.inline
-    def setReleasesVarargs(value: TrackRelease*): Self = StObject.set(x, "releases", js.Array(value :_*))
+    inline def setReleasesVarargs(value: TrackRelease*): Self = StObject.set(x, "releases", js.Array(value :_*))
     
-    @scala.inline
-    def setTrack(value: String): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+    inline def setTrack(value: String): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
+    inline def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
   }
 }

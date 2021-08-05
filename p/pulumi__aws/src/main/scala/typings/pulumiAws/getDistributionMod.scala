@@ -12,10 +12,8 @@ object getDistributionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getDistribution(args: GetDistributionArgs): js.Promise[GetDistributionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDistribution")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetDistributionResult]]
-  @scala.inline
-  def getDistribution(args: GetDistributionArgs, opts: InvokeOptions): js.Promise[GetDistributionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDistribution")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetDistributionResult]]
+  inline def getDistribution(args: GetDistributionArgs): js.Promise[GetDistributionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDistribution")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetDistributionResult]]
+  inline def getDistribution(args: GetDistributionArgs, opts: InvokeOptions): js.Promise[GetDistributionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDistribution")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetDistributionResult]]
   
   trait GetDistributionArgs extends StObject {
     
@@ -28,23 +26,18 @@ object getDistributionMod {
   }
   object GetDistributionArgs {
     
-    @scala.inline
-    def apply(id: String): GetDistributionArgs = {
+    inline def apply(id: String): GetDistributionArgs = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetDistributionArgs]
     }
     
-    @scala.inline
-    implicit class GetDistributionArgsMutableBuilder[Self <: GetDistributionArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetDistributionArgs](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -103,8 +96,7 @@ object getDistributionMod {
   }
   object GetDistributionResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arn: String,
       domainName: String,
       enabled: Boolean,
@@ -119,41 +111,29 @@ object getDistributionMod {
       __obj.asInstanceOf[GetDistributionResult]
     }
     
-    @scala.inline
-    implicit class GetDistributionResultMutableBuilder[Self <: GetDistributionResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetDistributionResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainName(value: String): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+      inline def setDomainName(value: String): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+      inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostedZoneId(value: String): Self = StObject.set(x, "hostedZoneId", value.asInstanceOf[js.Any])
+      inline def setHostedZoneId(value: String): Self = StObject.set(x, "hostedZoneId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInProgressValidationBatches(value: Double): Self = StObject.set(x, "inProgressValidationBatches", value.asInstanceOf[js.Any])
+      inline def setInProgressValidationBatches(value: Double): Self = StObject.set(x, "inProgressValidationBatches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastModifiedTime(value: String): Self = StObject.set(x, "lastModifiedTime", value.asInstanceOf[js.Any])
+      inline def setLastModifiedTime(value: String): Self = StObject.set(x, "lastModifiedTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

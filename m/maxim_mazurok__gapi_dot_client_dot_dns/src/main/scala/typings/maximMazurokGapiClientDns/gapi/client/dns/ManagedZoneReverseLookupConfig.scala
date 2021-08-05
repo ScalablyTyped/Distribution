@@ -10,19 +10,15 @@ trait ManagedZoneReverseLookupConfig extends StObject {
 }
 object ManagedZoneReverseLookupConfig {
   
-  @scala.inline
-  def apply(): ManagedZoneReverseLookupConfig = {
+  inline def apply(): ManagedZoneReverseLookupConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ManagedZoneReverseLookupConfig]
   }
   
-  @scala.inline
-  implicit class ManagedZoneReverseLookupConfigMutableBuilder[Self <: ManagedZoneReverseLookupConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ManagedZoneReverseLookupConfig](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

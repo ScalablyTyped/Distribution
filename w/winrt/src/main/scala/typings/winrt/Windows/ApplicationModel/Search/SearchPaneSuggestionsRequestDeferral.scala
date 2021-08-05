@@ -9,8 +9,7 @@ trait SearchPaneSuggestionsRequestDeferral
      with ISearchPaneSuggestionsRequestDeferral
 object SearchPaneSuggestionsRequestDeferral {
   
-  @scala.inline
-  def apply(complete: () => Unit): SearchPaneSuggestionsRequestDeferral = {
+  inline def apply(complete: () => Unit): SearchPaneSuggestionsRequestDeferral = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
     __obj.asInstanceOf[SearchPaneSuggestionsRequestDeferral]
   }

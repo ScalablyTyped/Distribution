@@ -56,8 +56,7 @@ trait XStatisticDisplay
 }
 object XStatisticDisplay {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DownBar: XPropertySet,
     MinMaxLine: XPropertySet,
     UpBar: XPropertySet,
@@ -72,25 +71,18 @@ object XStatisticDisplay {
     __obj.asInstanceOf[XStatisticDisplay]
   }
   
-  @scala.inline
-  implicit class XStatisticDisplayMutableBuilder[Self <: XStatisticDisplay] (val x: Self) extends AnyVal {
+  extension [Self <: XStatisticDisplay](x: Self) {
     
-    @scala.inline
-    def setDownBar(value: XPropertySet): Self = StObject.set(x, "DownBar", value.asInstanceOf[js.Any])
+    inline def setDownBar(value: XPropertySet): Self = StObject.set(x, "DownBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDownBar(value: () => XPropertySet): Self = StObject.set(x, "getDownBar", js.Any.fromFunction0(value))
+    inline def setGetDownBar(value: () => XPropertySet): Self = StObject.set(x, "getDownBar", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMinMaxLine(value: () => XPropertySet): Self = StObject.set(x, "getMinMaxLine", js.Any.fromFunction0(value))
+    inline def setGetMinMaxLine(value: () => XPropertySet): Self = StObject.set(x, "getMinMaxLine", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUpBar(value: () => XPropertySet): Self = StObject.set(x, "getUpBar", js.Any.fromFunction0(value))
+    inline def setGetUpBar(value: () => XPropertySet): Self = StObject.set(x, "getUpBar", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMinMaxLine(value: XPropertySet): Self = StObject.set(x, "MinMaxLine", value.asInstanceOf[js.Any])
+    inline def setMinMaxLine(value: XPropertySet): Self = StObject.set(x, "MinMaxLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpBar(value: XPropertySet): Self = StObject.set(x, "UpBar", value.asInstanceOf[js.Any])
+    inline def setUpBar(value: XPropertySet): Self = StObject.set(x, "UpBar", value.asInstanceOf[js.Any])
   }
 }

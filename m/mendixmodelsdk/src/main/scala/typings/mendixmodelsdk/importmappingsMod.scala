@@ -87,22 +87,19 @@ object importmappingsMod {
         * Expects one argument, the projects.IFolderBase in which this unit is contained.
         */
       /* static member */
-      @scala.inline
-      def createIn(container: IFolderBase): ImportMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ImportMapping]
+      inline def createIn(container: IFolderBase): ImportMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ImportMapping]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/importmappings", "importmappings.ImportMapping.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
-      @scala.inline
-      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/importmappings", "importmappings.ImportMapping.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
-      @scala.inline
-      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     /**
@@ -132,8 +129,7 @@ object importmappingsMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @scala.inline
-      def create(model: IModel): ImportObjectMappingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ImportObjectMappingElement]
+      inline def create(model: IModel): ImportObjectMappingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ImportObjectMappingElement]
       
       /**
         * Creates and returns a new ImportObjectMappingElement instance in the SDK and on the server.
@@ -141,8 +137,7 @@ object importmappingsMod {
         * of the parent mappings.MappingDocument element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInMappingDocumentUnderRootMappingElements(container: MappingDocument): ImportObjectMappingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMappingDocumentUnderRootMappingElements")(container.asInstanceOf[js.Any]).asInstanceOf[ImportObjectMappingElement]
+      inline def createInMappingDocumentUnderRootMappingElements(container: MappingDocument): ImportObjectMappingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMappingDocumentUnderRootMappingElements")(container.asInstanceOf[js.Any]).asInstanceOf[ImportObjectMappingElement]
       
       /**
         * Creates and returns a new ImportObjectMappingElement instance in the SDK and on the server.
@@ -150,22 +145,19 @@ object importmappingsMod {
         * of the parent mappings.ObjectMappingElement element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInObjectMappingElementUnderChildren(container: ObjectMappingElement): ImportObjectMappingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createInObjectMappingElementUnderChildren")(container.asInstanceOf[js.Any]).asInstanceOf[ImportObjectMappingElement]
+      inline def createInObjectMappingElementUnderChildren(container: ObjectMappingElement): ImportObjectMappingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createInObjectMappingElementUnderChildren")(container.asInstanceOf[js.Any]).asInstanceOf[ImportObjectMappingElement]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/importmappings", "importmappings.ImportObjectMappingElement.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
-      @scala.inline
-      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/importmappings", "importmappings.ImportObjectMappingElement.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
-      @scala.inline
-      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     /**
@@ -195,8 +187,7 @@ object importmappingsMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @scala.inline
-      def create(model: IModel): ImportValueMappingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ImportValueMappingElement]
+      inline def create(model: IModel): ImportValueMappingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ImportValueMappingElement]
       
       /**
         * Creates and returns a new ImportValueMappingElement instance in the SDK and on the server.
@@ -204,22 +195,19 @@ object importmappingsMod {
         * of the parent mappings.ObjectMappingElement element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createIn(container: ObjectMappingElement): ImportValueMappingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ImportValueMappingElement]
+      inline def createIn(container: ObjectMappingElement): ImportValueMappingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ImportValueMappingElement]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/importmappings", "importmappings.ImportValueMappingElement.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
-      @scala.inline
-      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/importmappings", "importmappings.ImportValueMappingElement.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
-      @scala.inline
-      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     /**

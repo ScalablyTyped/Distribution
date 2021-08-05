@@ -19,19 +19,15 @@ trait b2RayCastOutput extends StObject {
 }
 object b2RayCastOutput {
   
-  @scala.inline
-  def apply(fraction: Double, normal: b2Vec2): b2RayCastOutput = {
+  inline def apply(fraction: Double, normal: b2Vec2): b2RayCastOutput = {
     val __obj = js.Dynamic.literal(fraction = fraction.asInstanceOf[js.Any], normal = normal.asInstanceOf[js.Any])
     __obj.asInstanceOf[b2RayCastOutput]
   }
   
-  @scala.inline
-  implicit class b2RayCastOutputMutableBuilder[Self <: b2RayCastOutput] (val x: Self) extends AnyVal {
+  extension [Self <: b2RayCastOutput](x: Self) {
     
-    @scala.inline
-    def setFraction(value: Double): Self = StObject.set(x, "fraction", value.asInstanceOf[js.Any])
+    inline def setFraction(value: Double): Self = StObject.set(x, "fraction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormal(value: b2Vec2): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
+    inline def setNormal(value: b2Vec2): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
   }
 }

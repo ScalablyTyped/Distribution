@@ -25,8 +25,7 @@ object Menu {
   @JSImport("antd", "Menu.Divider")
   @js.native
   def Divider: FC[DividerProps] = js.native
-  @scala.inline
-  def Divider_=(x: FC[DividerProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Divider")(x.asInstanceOf[js.Any])
+  inline def Divider_=(x: FC[DividerProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Divider")(x.asInstanceOf[js.Any])
   
   @JSImport("antd", "Menu.Item")
   @js.native
@@ -35,15 +34,12 @@ object Menu {
   @JSImport("antd", "Menu.ItemGroup")
   @js.native
   def ItemGroup: TypeofItemGroup & Instantiable0[typings.rcMenu.mod.ItemGroup] = js.native
-  @scala.inline
-  def ItemGroup_=(x: TypeofItemGroup & Instantiable0[ItemGroup]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ItemGroup")(x.asInstanceOf[js.Any])
+  inline def ItemGroup_=(x: TypeofItemGroup & Instantiable0[ItemGroup]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ItemGroup")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def Item_=(x: TypeofItem): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+  inline def Item_=(x: TypeofItem): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
   
   @JSImport("antd", "Menu.SubMenu")
   @js.native
   def SubMenu: Instantiable0[typings.antd.subMenuMod.default] & TypeofSubMenu = js.native
-  @scala.inline
-  def SubMenu_=(x: Instantiable0[typings.antd.subMenuMod.default] & TypeofSubMenu): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SubMenu")(x.asInstanceOf[js.Any])
+  inline def SubMenu_=(x: Instantiable0[typings.antd.subMenuMod.default] & TypeofSubMenu): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SubMenu")(x.asInstanceOf[js.Any])
 }

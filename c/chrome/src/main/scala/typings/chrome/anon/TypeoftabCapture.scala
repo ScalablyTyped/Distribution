@@ -18,8 +18,7 @@ trait TypeoftabCapture extends StObject {
 }
 object TypeoftabCapture {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     capture: (CaptureOptions, js.Function1[/* stream */ MediaStream | Null, Unit]) => Unit,
     getCapturedTabs: js.Function1[/* result */ js.Array[CaptureInfo], Unit] => Unit,
     onStatusChanged: CaptureStatusChangedEvent
@@ -28,16 +27,12 @@ object TypeoftabCapture {
     __obj.asInstanceOf[TypeoftabCapture]
   }
   
-  @scala.inline
-  implicit class TypeoftabCaptureMutableBuilder[Self <: TypeoftabCapture] (val x: Self) extends AnyVal {
+  extension [Self <: TypeoftabCapture](x: Self) {
     
-    @scala.inline
-    def setCapture(value: (CaptureOptions, js.Function1[/* stream */ MediaStream | Null, Unit]) => Unit): Self = StObject.set(x, "capture", js.Any.fromFunction2(value))
+    inline def setCapture(value: (CaptureOptions, js.Function1[/* stream */ MediaStream | Null, Unit]) => Unit): Self = StObject.set(x, "capture", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetCapturedTabs(value: js.Function1[/* result */ js.Array[CaptureInfo], Unit] => Unit): Self = StObject.set(x, "getCapturedTabs", js.Any.fromFunction1(value))
+    inline def setGetCapturedTabs(value: js.Function1[/* result */ js.Array[CaptureInfo], Unit] => Unit): Self = StObject.set(x, "getCapturedTabs", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnStatusChanged(value: CaptureStatusChangedEvent): Self = StObject.set(x, "onStatusChanged", value.asInstanceOf[js.Any])
+    inline def setOnStatusChanged(value: CaptureStatusChangedEvent): Self = StObject.set(x, "onStatusChanged", value.asInstanceOf[js.Any])
   }
 }

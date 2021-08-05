@@ -25,8 +25,7 @@ object checkboxDotProtractorDriverMod {
   }
   object CheckboxDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => ElementFinder,
       isChecked: () => js.Promise[Boolean],
@@ -36,17 +35,13 @@ object checkboxDotProtractorDriverMod {
       __obj.asInstanceOf[CheckboxDriver]
     }
     
-    @scala.inline
-    implicit class CheckboxDriverMutableBuilder[Self <: CheckboxDriver] (val x: Self) extends AnyVal {
+    extension [Self <: CheckboxDriver](x: Self) {
       
-      @scala.inline
-      def setClick(value: () => js.Promise[Unit]): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
+      inline def setClick(value: () => js.Promise[Unit]): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsChecked(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isChecked", js.Any.fromFunction0(value))
+      inline def setIsChecked(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isChecked", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
+      inline def setIsDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
     }
   }
 }

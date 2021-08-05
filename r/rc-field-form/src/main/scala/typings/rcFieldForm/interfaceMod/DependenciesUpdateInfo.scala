@@ -20,23 +20,18 @@ trait DependenciesUpdateInfo
 }
 object DependenciesUpdateInfo {
   
-  @scala.inline
-  def apply(relatedFields: js.Array[InternalNamePath]): DependenciesUpdateInfo = {
+  inline def apply(relatedFields: js.Array[InternalNamePath]): DependenciesUpdateInfo = {
     val __obj = js.Dynamic.literal(relatedFields = relatedFields.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("dependenciesUpdate")
     __obj.asInstanceOf[DependenciesUpdateInfo]
   }
   
-  @scala.inline
-  implicit class DependenciesUpdateInfoMutableBuilder[Self <: DependenciesUpdateInfo] (val x: Self) extends AnyVal {
+  extension [Self <: DependenciesUpdateInfo](x: Self) {
     
-    @scala.inline
-    def setRelatedFields(value: js.Array[InternalNamePath]): Self = StObject.set(x, "relatedFields", value.asInstanceOf[js.Any])
+    inline def setRelatedFields(value: js.Array[InternalNamePath]): Self = StObject.set(x, "relatedFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedFieldsVarargs(value: InternalNamePath*): Self = StObject.set(x, "relatedFields", js.Array(value :_*))
+    inline def setRelatedFieldsVarargs(value: InternalNamePath*): Self = StObject.set(x, "relatedFields", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: dependenciesUpdate): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: dependenciesUpdate): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -23,28 +23,21 @@ trait ListRolePoliciesRequest extends StObject {
 }
 object ListRolePoliciesRequest {
   
-  @scala.inline
-  def apply(RoleName: roleNameType): ListRolePoliciesRequest = {
+  inline def apply(RoleName: roleNameType): ListRolePoliciesRequest = {
     val __obj = js.Dynamic.literal(RoleName = RoleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListRolePoliciesRequest]
   }
   
-  @scala.inline
-  implicit class ListRolePoliciesRequestMutableBuilder[Self <: ListRolePoliciesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListRolePoliciesRequest](x: Self) {
     
-    @scala.inline
-    def setMarker(value: markerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: markerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxItems(value: maxItemsType): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: maxItemsType): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
+    inline def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
     
-    @scala.inline
-    def setRoleName(value: roleNameType): Self = StObject.set(x, "RoleName", value.asInstanceOf[js.Any])
+    inline def setRoleName(value: roleNameType): Self = StObject.set(x, "RoleName", value.asInstanceOf[js.Any])
   }
 }

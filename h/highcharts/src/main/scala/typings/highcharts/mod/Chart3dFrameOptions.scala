@@ -48,61 +48,43 @@ trait Chart3dFrameOptions extends StObject {
 }
 object Chart3dFrameOptions {
   
-  @scala.inline
-  def apply(): Chart3dFrameOptions = {
+  inline def apply(): Chart3dFrameOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Chart3dFrameOptions]
   }
   
-  @scala.inline
-  implicit class Chart3dFrameOptionsMutableBuilder[Self <: Chart3dFrameOptions] (val x: Self) extends AnyVal {
+  extension [Self <: Chart3dFrameOptions](x: Self) {
     
-    @scala.inline
-    def setBack(value: Chart3dFrameBackOptions): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
+    inline def setBack(value: Chart3dFrameBackOptions): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackUndefined: Self = StObject.set(x, "back", js.undefined)
+    inline def setBackUndefined: Self = StObject.set(x, "back", js.undefined)
     
-    @scala.inline
-    def setBottom(value: Chart3dFrameBottomOptions): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    inline def setBottom(value: Chart3dFrameBottomOptions): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+    inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
     
-    @scala.inline
-    def setFront(value: Chart3dFrameFrontOptions): Self = StObject.set(x, "front", value.asInstanceOf[js.Any])
+    inline def setFront(value: Chart3dFrameFrontOptions): Self = StObject.set(x, "front", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrontUndefined: Self = StObject.set(x, "front", js.undefined)
+    inline def setFrontUndefined: Self = StObject.set(x, "front", js.undefined)
     
-    @scala.inline
-    def setLeft(value: Chart3dFrameLeftOptions): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Chart3dFrameLeftOptions): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
-    @scala.inline
-    def setRight(value: Chart3dFrameRightOptions): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Chart3dFrameRightOptions): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+    inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setTop(value: Chart3dFrameTopOptions): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Chart3dFrameTopOptions): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
-    @scala.inline
-    def setVisible(value: String): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: String): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

@@ -20,49 +20,35 @@ trait MessageStoreUrl extends StObject {
 }
 object MessageStoreUrl {
   
-  @scala.inline
-  def apply(): MessageStoreUrl = {
+  inline def apply(): MessageStoreUrl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MessageStoreUrl]
   }
   
-  @scala.inline
-  implicit class MessageStoreUrlMutableBuilder[Self <: MessageStoreUrl] (val x: Self) extends AnyVal {
+  extension [Self <: MessageStoreUrl](x: Self) {
     
-    @scala.inline
-    def setMessageStoreUrl(value: String): Self = StObject.set(x, "messageStoreUrl", value.asInstanceOf[js.Any])
+    inline def setMessageStoreUrl(value: String): Self = StObject.set(x, "messageStoreUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageStoreUrlUndefined: Self = StObject.set(x, "messageStoreUrl", js.undefined)
+    inline def setMessageStoreUrlUndefined: Self = StObject.set(x, "messageStoreUrl", js.undefined)
     
-    @scala.inline
-    def setNoteStoreUrl(value: String): Self = StObject.set(x, "noteStoreUrl", value.asInstanceOf[js.Any])
+    inline def setNoteStoreUrl(value: String): Self = StObject.set(x, "noteStoreUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoteStoreUrlUndefined: Self = StObject.set(x, "noteStoreUrl", js.undefined)
+    inline def setNoteStoreUrlUndefined: Self = StObject.set(x, "noteStoreUrl", js.undefined)
     
-    @scala.inline
-    def setUserStoreUrl(value: String): Self = StObject.set(x, "userStoreUrl", value.asInstanceOf[js.Any])
+    inline def setUserStoreUrl(value: String): Self = StObject.set(x, "userStoreUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserStoreUrlUndefined: Self = StObject.set(x, "userStoreUrl", js.undefined)
+    inline def setUserStoreUrlUndefined: Self = StObject.set(x, "userStoreUrl", js.undefined)
     
-    @scala.inline
-    def setUserWebSocketUrl(value: String): Self = StObject.set(x, "userWebSocketUrl", value.asInstanceOf[js.Any])
+    inline def setUserWebSocketUrl(value: String): Self = StObject.set(x, "userWebSocketUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserWebSocketUrlUndefined: Self = StObject.set(x, "userWebSocketUrl", js.undefined)
+    inline def setUserWebSocketUrlUndefined: Self = StObject.set(x, "userWebSocketUrl", js.undefined)
     
-    @scala.inline
-    def setUtilityUrl(value: String): Self = StObject.set(x, "utilityUrl", value.asInstanceOf[js.Any])
+    inline def setUtilityUrl(value: String): Self = StObject.set(x, "utilityUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtilityUrlUndefined: Self = StObject.set(x, "utilityUrl", js.undefined)
+    inline def setUtilityUrlUndefined: Self = StObject.set(x, "utilityUrl", js.undefined)
     
-    @scala.inline
-    def setWebApiUrlPrefix(value: String): Self = StObject.set(x, "webApiUrlPrefix", value.asInstanceOf[js.Any])
+    inline def setWebApiUrlPrefix(value: String): Self = StObject.set(x, "webApiUrlPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebApiUrlPrefixUndefined: Self = StObject.set(x, "webApiUrlPrefix", js.undefined)
+    inline def setWebApiUrlPrefixUndefined: Self = StObject.set(x, "webApiUrlPrefix", js.undefined)
   }
 }

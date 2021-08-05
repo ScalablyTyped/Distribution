@@ -23,27 +23,21 @@ object reportMod {
   }
   object ReportProps {
     
-    @scala.inline
-    def apply(empty: String, items: js.Array[Result], `type`: RuleType): ReportProps = {
+    inline def apply(empty: String, items: js.Array[Result], `type`: RuleType): ReportProps = {
       val __obj = js.Dynamic.literal(empty = empty.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReportProps]
     }
     
-    @scala.inline
-    implicit class ReportPropsMutableBuilder[Self <: ReportProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReportProps](x: Self) {
       
-      @scala.inline
-      def setEmpty(value: String): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
+      inline def setEmpty(value: String): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItems(value: js.Array[Result]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[Result]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: Result*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: Result*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: RuleType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: RuleType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

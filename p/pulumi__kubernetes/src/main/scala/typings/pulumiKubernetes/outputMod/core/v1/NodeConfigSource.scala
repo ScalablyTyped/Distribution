@@ -16,16 +16,13 @@ trait NodeConfigSource extends StObject {
 }
 object NodeConfigSource {
   
-  @scala.inline
-  def apply(configMap: ConfigMapNodeConfigSource): NodeConfigSource = {
+  inline def apply(configMap: ConfigMapNodeConfigSource): NodeConfigSource = {
     val __obj = js.Dynamic.literal(configMap = configMap.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeConfigSource]
   }
   
-  @scala.inline
-  implicit class NodeConfigSourceMutableBuilder[Self <: NodeConfigSource] (val x: Self) extends AnyVal {
+  extension [Self <: NodeConfigSource](x: Self) {
     
-    @scala.inline
-    def setConfigMap(value: ConfigMapNodeConfigSource): Self = StObject.set(x, "configMap", value.asInstanceOf[js.Any])
+    inline def setConfigMap(value: ConfigMapNodeConfigSource): Self = StObject.set(x, "configMap", value.asInstanceOf[js.Any])
   }
 }

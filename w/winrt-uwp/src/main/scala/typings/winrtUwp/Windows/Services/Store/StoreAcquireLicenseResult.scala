@@ -16,19 +16,15 @@ trait StoreAcquireLicenseResult extends StObject {
 }
 object StoreAcquireLicenseResult {
   
-  @scala.inline
-  def apply(extendedError: WinRTError, storePackageLicense: StorePackageLicense): StoreAcquireLicenseResult = {
+  inline def apply(extendedError: WinRTError, storePackageLicense: StorePackageLicense): StoreAcquireLicenseResult = {
     val __obj = js.Dynamic.literal(extendedError = extendedError.asInstanceOf[js.Any], storePackageLicense = storePackageLicense.asInstanceOf[js.Any])
     __obj.asInstanceOf[StoreAcquireLicenseResult]
   }
   
-  @scala.inline
-  implicit class StoreAcquireLicenseResultMutableBuilder[Self <: StoreAcquireLicenseResult] (val x: Self) extends AnyVal {
+  extension [Self <: StoreAcquireLicenseResult](x: Self) {
     
-    @scala.inline
-    def setExtendedError(value: WinRTError): Self = StObject.set(x, "extendedError", value.asInstanceOf[js.Any])
+    inline def setExtendedError(value: WinRTError): Self = StObject.set(x, "extendedError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorePackageLicense(value: StorePackageLicense): Self = StObject.set(x, "storePackageLicense", value.asInstanceOf[js.Any])
+    inline def setStorePackageLicense(value: StorePackageLicense): Self = StObject.set(x, "storePackageLicense", value.asInstanceOf[js.Any])
   }
 }

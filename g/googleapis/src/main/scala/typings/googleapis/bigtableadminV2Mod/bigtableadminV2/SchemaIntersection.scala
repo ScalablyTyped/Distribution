@@ -16,22 +16,17 @@ trait SchemaIntersection extends StObject {
 }
 object SchemaIntersection {
   
-  @scala.inline
-  def apply(): SchemaIntersection = {
+  inline def apply(): SchemaIntersection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaIntersection]
   }
   
-  @scala.inline
-  implicit class SchemaIntersectionMutableBuilder[Self <: SchemaIntersection] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaIntersection](x: Self) {
     
-    @scala.inline
-    def setRules(value: js.Array[SchemaGcRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: js.Array[SchemaGcRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+    inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    @scala.inline
-    def setRulesVarargs(value: SchemaGcRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: SchemaGcRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
   }
 }

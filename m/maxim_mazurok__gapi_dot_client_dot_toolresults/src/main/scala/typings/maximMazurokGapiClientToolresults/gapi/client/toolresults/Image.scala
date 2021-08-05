@@ -20,37 +20,27 @@ trait Image extends StObject {
 }
 object Image {
   
-  @scala.inline
-  def apply(): Image = {
+  inline def apply(): Image = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Image]
   }
   
-  @scala.inline
-  implicit class ImageMutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
+  extension [Self <: Image](x: Self) {
     
-    @scala.inline
-    def setError(value: Status): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Status): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setSourceImage(value: ToolOutputReference): Self = StObject.set(x, "sourceImage", value.asInstanceOf[js.Any])
+    inline def setSourceImage(value: ToolOutputReference): Self = StObject.set(x, "sourceImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceImageUndefined: Self = StObject.set(x, "sourceImage", js.undefined)
+    inline def setSourceImageUndefined: Self = StObject.set(x, "sourceImage", js.undefined)
     
-    @scala.inline
-    def setStepId(value: String): Self = StObject.set(x, "stepId", value.asInstanceOf[js.Any])
+    inline def setStepId(value: String): Self = StObject.set(x, "stepId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepIdUndefined: Self = StObject.set(x, "stepId", js.undefined)
+    inline def setStepIdUndefined: Self = StObject.set(x, "stepId", js.undefined)
     
-    @scala.inline
-    def setThumbnail(value: Thumbnail): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+    inline def setThumbnail(value: Thumbnail): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
+    inline def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
   }
 }

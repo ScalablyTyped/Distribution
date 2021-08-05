@@ -13,19 +13,15 @@ trait City extends StObject {
 }
 object City {
   
-  @scala.inline
-  def apply(): City = {
+  inline def apply(): City = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[City]
   }
   
-  @scala.inline
-  implicit class CityMutableBuilder[Self <: City] (val x: Self) extends AnyVal {
+  extension [Self <: City](x: Self) {
     
-    @scala.inline
-    def setCityName(value: String): Self = StObject.set(x, "CityName", value.asInstanceOf[js.Any])
+    inline def setCityName(value: String): Self = StObject.set(x, "CityName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCityNameUndefined: Self = StObject.set(x, "CityName", js.undefined)
+    inline def setCityNameUndefined: Self = StObject.set(x, "CityName", js.undefined)
   }
 }

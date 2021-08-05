@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** FaxActivity Class */
 trait FaxActivity extends StObject {
   
-  @JSName("FAXCOMEXLib.FaxActivity_typekey")
+  /* private */ @JSName("FAXCOMEXLib.FaxActivity_typekey")
   var FAXCOMEXLibDotFaxActivity_typekey: FaxActivity
   
   /** Number of incoming messages */
@@ -27,8 +27,7 @@ trait FaxActivity extends StObject {
 }
 object FaxActivity {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FAXCOMEXLibDotFaxActivity_typekey: FaxActivity,
     IncomingMessages: Double,
     OutgoingMessages: Double,
@@ -41,25 +40,18 @@ object FaxActivity {
     __obj.asInstanceOf[FaxActivity]
   }
   
-  @scala.inline
-  implicit class FaxActivityMutableBuilder[Self <: FaxActivity] (val x: Self) extends AnyVal {
+  extension [Self <: FaxActivity](x: Self) {
     
-    @scala.inline
-    def setFAXCOMEXLibDotFaxActivity_typekey(value: FaxActivity): Self = StObject.set(x, "FAXCOMEXLib.FaxActivity_typekey", value.asInstanceOf[js.Any])
+    inline def setFAXCOMEXLibDotFaxActivity_typekey(value: FaxActivity): Self = StObject.set(x, "FAXCOMEXLib.FaxActivity_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncomingMessages(value: Double): Self = StObject.set(x, "IncomingMessages", value.asInstanceOf[js.Any])
+    inline def setIncomingMessages(value: Double): Self = StObject.set(x, "IncomingMessages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutgoingMessages(value: Double): Self = StObject.set(x, "OutgoingMessages", value.asInstanceOf[js.Any])
+    inline def setOutgoingMessages(value: Double): Self = StObject.set(x, "OutgoingMessages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueuedMessages(value: Double): Self = StObject.set(x, "QueuedMessages", value.asInstanceOf[js.Any])
+    inline def setQueuedMessages(value: Double): Self = StObject.set(x, "QueuedMessages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefresh(value: () => Unit): Self = StObject.set(x, "Refresh", js.Any.fromFunction0(value))
+    inline def setRefresh(value: () => Unit): Self = StObject.set(x, "Refresh", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRoutingMessages(value: Double): Self = StObject.set(x, "RoutingMessages", value.asInstanceOf[js.Any])
+    inline def setRoutingMessages(value: Double): Self = StObject.set(x, "RoutingMessages", value.asInstanceOf[js.Any])
   }
 }

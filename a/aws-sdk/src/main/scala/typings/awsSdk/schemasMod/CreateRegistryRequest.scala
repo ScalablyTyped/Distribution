@@ -23,28 +23,21 @@ trait CreateRegistryRequest extends StObject {
 }
 object CreateRegistryRequest {
   
-  @scala.inline
-  def apply(RegistryName: string): CreateRegistryRequest = {
+  inline def apply(RegistryName: string): CreateRegistryRequest = {
     val __obj = js.Dynamic.literal(RegistryName = RegistryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRegistryRequest]
   }
   
-  @scala.inline
-  implicit class CreateRegistryRequestMutableBuilder[Self <: CreateRegistryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateRegistryRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: stringMin0Max256): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: stringMin0Max256): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setRegistryName(value: string): Self = StObject.set(x, "RegistryName", value.asInstanceOf[js.Any])
+    inline def setRegistryName(value: string): Self = StObject.set(x, "RegistryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

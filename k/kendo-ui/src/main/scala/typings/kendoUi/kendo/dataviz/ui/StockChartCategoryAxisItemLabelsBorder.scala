@@ -14,31 +14,23 @@ trait StockChartCategoryAxisItemLabelsBorder extends StObject {
 }
 object StockChartCategoryAxisItemLabelsBorder {
   
-  @scala.inline
-  def apply(): StockChartCategoryAxisItemLabelsBorder = {
+  inline def apply(): StockChartCategoryAxisItemLabelsBorder = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StockChartCategoryAxisItemLabelsBorder]
   }
   
-  @scala.inline
-  implicit class StockChartCategoryAxisItemLabelsBorderMutableBuilder[Self <: StockChartCategoryAxisItemLabelsBorder] (val x: Self) extends AnyVal {
+  extension [Self <: StockChartCategoryAxisItemLabelsBorder](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setDashType(value: String): Self = StObject.set(x, "dashType", value.asInstanceOf[js.Any])
+    inline def setDashType(value: String): Self = StObject.set(x, "dashType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashTypeUndefined: Self = StObject.set(x, "dashType", js.undefined)
+    inline def setDashTypeUndefined: Self = StObject.set(x, "dashType", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

@@ -24,37 +24,27 @@ trait Symbol extends StObject {
 }
 object Symbol {
   
-  @scala.inline
-  def apply(): Symbol = {
+  inline def apply(): Symbol = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Symbol]
   }
   
-  @scala.inline
-  implicit class SymbolMutableBuilder[Self <: Symbol] (val x: Self) extends AnyVal {
+  extension [Self <: Symbol](x: Self) {
     
-    @scala.inline
-    def setBoundingBox(value: BoundingPoly): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
+    inline def setBoundingBox(value: BoundingPoly): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundingBoxUndefined: Self = StObject.set(x, "boundingBox", js.undefined)
+    inline def setBoundingBoxUndefined: Self = StObject.set(x, "boundingBox", js.undefined)
     
-    @scala.inline
-    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
     
-    @scala.inline
-    def setProperty(value: TextProperty): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: TextProperty): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+    inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

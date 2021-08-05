@@ -13,8 +13,7 @@ object expoLocalizationMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getLocalizationAsync(): js.Promise[Localization] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalizationAsync")().asInstanceOf[js.Promise[Localization]]
+    inline def getLocalizationAsync(): js.Promise[Localization] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalizationAsync")().asInstanceOf[js.Promise[Localization]]
     
     @JSImport("expo-localization/build/ExpoLocalization", "default.isRTL")
     @js.native

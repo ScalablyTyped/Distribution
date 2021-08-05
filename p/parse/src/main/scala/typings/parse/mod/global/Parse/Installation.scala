@@ -40,6 +40,5 @@ trait Installation[T /* <: Attributes */]
 }
 object Installation {
   
-  @scala.inline
-  def apply: InstallationConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("Installation").asInstanceOf[InstallationConstructor]
+  inline def apply: InstallationConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("Installation").asInstanceOf[InstallationConstructor]
 }

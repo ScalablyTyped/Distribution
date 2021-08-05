@@ -16,8 +16,7 @@ object configMod {
   @js.native
   val config: IConfig = js.native
   
-  @scala.inline
-  def setConfig(conf: PartialIConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setConfig")(conf.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setConfig(conf: PartialIConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setConfig")(conf.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait IConfig extends StObject {
     
@@ -25,17 +24,14 @@ object configMod {
   }
   object IConfig {
     
-    @scala.inline
-    def apply(onError: Error => Unit): IConfig = {
+    inline def apply(onError: Error => Unit): IConfig = {
       val __obj = js.Dynamic.literal(onError = js.Any.fromFunction1(onError))
       __obj.asInstanceOf[IConfig]
     }
     
-    @scala.inline
-    implicit class IConfigMutableBuilder[Self <: IConfig] (val x: Self) extends AnyVal {
+    extension [Self <: IConfig](x: Self) {
       
-      @scala.inline
-      def setOnError(value: Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     }
   }
 }

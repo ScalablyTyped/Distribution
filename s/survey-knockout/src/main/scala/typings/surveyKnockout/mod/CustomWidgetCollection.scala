@@ -48,6 +48,5 @@ object CustomWidgetCollection {
   @JSImport("survey-knockout", "CustomWidgetCollection.Instance")
   @js.native
   def Instance: CustomWidgetCollection = js.native
-  @scala.inline
-  def Instance_=(x: CustomWidgetCollection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Instance")(x.asInstanceOf[js.Any])
+  inline def Instance_=(x: CustomWidgetCollection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Instance")(x.asInstanceOf[js.Any])
 }

@@ -21,8 +21,7 @@ trait Diffuse extends StObject {
 }
 object Diffuse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     diffuse: IUniform,
     map: IUniform,
     opacity: IUniform,
@@ -34,25 +33,18 @@ object Diffuse {
     __obj.asInstanceOf[Diffuse]
   }
   
-  @scala.inline
-  implicit class DiffuseMutableBuilder[Self <: Diffuse] (val x: Self) extends AnyVal {
+  extension [Self <: Diffuse](x: Self) {
     
-    @scala.inline
-    def setDiffuse(value: IUniform): Self = StObject.set(x, "diffuse", value.asInstanceOf[js.Any])
+    inline def setDiffuse(value: IUniform): Self = StObject.set(x, "diffuse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMap(value: IUniform): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: IUniform): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacity(value: IUniform): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: IUniform): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScale(value: IUniform): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: IUniform): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: IUniform): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: IUniform): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUvTransform(value: IUniform): Self = StObject.set(x, "uvTransform", value.asInstanceOf[js.Any])
+    inline def setUvTransform(value: IUniform): Self = StObject.set(x, "uvTransform", value.asInstanceOf[js.Any])
   }
 }

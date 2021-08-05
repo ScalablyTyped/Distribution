@@ -48,58 +48,41 @@ trait InsightRuleMetricDatapoint extends StObject {
 }
 object InsightRuleMetricDatapoint {
   
-  @scala.inline
-  def apply(Timestamp: Timestamp): InsightRuleMetricDatapoint = {
+  inline def apply(Timestamp: Timestamp): InsightRuleMetricDatapoint = {
     val __obj = js.Dynamic.literal(Timestamp = Timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsightRuleMetricDatapoint]
   }
   
-  @scala.inline
-  implicit class InsightRuleMetricDatapointMutableBuilder[Self <: InsightRuleMetricDatapoint] (val x: Self) extends AnyVal {
+  extension [Self <: InsightRuleMetricDatapoint](x: Self) {
     
-    @scala.inline
-    def setAverage(value: InsightRuleUnboundDouble): Self = StObject.set(x, "Average", value.asInstanceOf[js.Any])
+    inline def setAverage(value: InsightRuleUnboundDouble): Self = StObject.set(x, "Average", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAverageUndefined: Self = StObject.set(x, "Average", js.undefined)
+    inline def setAverageUndefined: Self = StObject.set(x, "Average", js.undefined)
     
-    @scala.inline
-    def setMaxContributorValue(value: InsightRuleUnboundDouble): Self = StObject.set(x, "MaxContributorValue", value.asInstanceOf[js.Any])
+    inline def setMaxContributorValue(value: InsightRuleUnboundDouble): Self = StObject.set(x, "MaxContributorValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxContributorValueUndefined: Self = StObject.set(x, "MaxContributorValue", js.undefined)
+    inline def setMaxContributorValueUndefined: Self = StObject.set(x, "MaxContributorValue", js.undefined)
     
-    @scala.inline
-    def setMaximum(value: InsightRuleUnboundDouble): Self = StObject.set(x, "Maximum", value.asInstanceOf[js.Any])
+    inline def setMaximum(value: InsightRuleUnboundDouble): Self = StObject.set(x, "Maximum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumUndefined: Self = StObject.set(x, "Maximum", js.undefined)
+    inline def setMaximumUndefined: Self = StObject.set(x, "Maximum", js.undefined)
     
-    @scala.inline
-    def setMinimum(value: InsightRuleUnboundDouble): Self = StObject.set(x, "Minimum", value.asInstanceOf[js.Any])
+    inline def setMinimum(value: InsightRuleUnboundDouble): Self = StObject.set(x, "Minimum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumUndefined: Self = StObject.set(x, "Minimum", js.undefined)
+    inline def setMinimumUndefined: Self = StObject.set(x, "Minimum", js.undefined)
     
-    @scala.inline
-    def setSampleCount(value: InsightRuleUnboundDouble): Self = StObject.set(x, "SampleCount", value.asInstanceOf[js.Any])
+    inline def setSampleCount(value: InsightRuleUnboundDouble): Self = StObject.set(x, "SampleCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleCountUndefined: Self = StObject.set(x, "SampleCount", js.undefined)
+    inline def setSampleCountUndefined: Self = StObject.set(x, "SampleCount", js.undefined)
     
-    @scala.inline
-    def setSum(value: InsightRuleUnboundDouble): Self = StObject.set(x, "Sum", value.asInstanceOf[js.Any])
+    inline def setSum(value: InsightRuleUnboundDouble): Self = StObject.set(x, "Sum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSumUndefined: Self = StObject.set(x, "Sum", js.undefined)
+    inline def setSumUndefined: Self = StObject.set(x, "Sum", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueContributors(value: InsightRuleUnboundDouble): Self = StObject.set(x, "UniqueContributors", value.asInstanceOf[js.Any])
+    inline def setUniqueContributors(value: InsightRuleUnboundDouble): Self = StObject.set(x, "UniqueContributors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueContributorsUndefined: Self = StObject.set(x, "UniqueContributors", js.undefined)
+    inline def setUniqueContributorsUndefined: Self = StObject.set(x, "UniqueContributors", js.undefined)
   }
 }

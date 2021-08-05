@@ -10,8 +10,7 @@ trait Mode
      with ModeDetails
 object Mode {
   
-  @scala.inline
-  def apply(): Mode = {
+  inline def apply(): Mode = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Mode]
   }

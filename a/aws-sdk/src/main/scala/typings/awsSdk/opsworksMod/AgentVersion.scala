@@ -18,25 +18,19 @@ trait AgentVersion extends StObject {
 }
 object AgentVersion {
   
-  @scala.inline
-  def apply(): AgentVersion = {
+  inline def apply(): AgentVersion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AgentVersion]
   }
   
-  @scala.inline
-  implicit class AgentVersionMutableBuilder[Self <: AgentVersion] (val x: Self) extends AnyVal {
+  extension [Self <: AgentVersion](x: Self) {
     
-    @scala.inline
-    def setConfigurationManager(value: StackConfigurationManager): Self = StObject.set(x, "ConfigurationManager", value.asInstanceOf[js.Any])
+    inline def setConfigurationManager(value: StackConfigurationManager): Self = StObject.set(x, "ConfigurationManager", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationManagerUndefined: Self = StObject.set(x, "ConfigurationManager", js.undefined)
+    inline def setConfigurationManagerUndefined: Self = StObject.set(x, "ConfigurationManager", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

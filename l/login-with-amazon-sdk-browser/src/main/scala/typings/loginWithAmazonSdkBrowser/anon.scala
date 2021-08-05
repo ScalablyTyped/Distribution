@@ -12,17 +12,14 @@ object anon {
   }
   object Essential {
     
-    @scala.inline
-    def apply(essential: Boolean): Essential = {
+    inline def apply(essential: Boolean): Essential = {
       val __obj = js.Dynamic.literal(essential = essential.asInstanceOf[js.Any])
       __obj.asInstanceOf[Essential]
     }
     
-    @scala.inline
-    implicit class EssentialMutableBuilder[Self <: Essential] (val x: Self) extends AnyVal {
+    extension [Self <: Essential](x: Self) {
       
-      @scala.inline
-      def setEssential(value: Boolean): Self = StObject.set(x, "essential", value.asInstanceOf[js.Any])
+      inline def setEssential(value: Boolean): Self = StObject.set(x, "essential", value.asInstanceOf[js.Any])
     }
   }
 }

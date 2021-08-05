@@ -12,19 +12,15 @@ trait Nested extends StObject {
 }
 object Nested {
   
-  @scala.inline
-  def apply(): Nested = {
+  inline def apply(): Nested = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Nested]
   }
   
-  @scala.inline
-  implicit class NestedMutableBuilder[Self <: Nested] (val x: Self) extends AnyVal {
+  extension [Self <: Nested](x: Self) {
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
   }
 }

@@ -15,28 +15,21 @@ trait DescribeComponentResponse extends StObject {
 }
 object DescribeComponentResponse {
   
-  @scala.inline
-  def apply(): DescribeComponentResponse = {
+  inline def apply(): DescribeComponentResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeComponentResponse]
   }
   
-  @scala.inline
-  implicit class DescribeComponentResponseMutableBuilder[Self <: DescribeComponentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeComponentResponse](x: Self) {
     
-    @scala.inline
-    def setApplicationComponent(value: ApplicationComponent): Self = StObject.set(x, "ApplicationComponent", value.asInstanceOf[js.Any])
+    inline def setApplicationComponent(value: ApplicationComponent): Self = StObject.set(x, "ApplicationComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationComponentUndefined: Self = StObject.set(x, "ApplicationComponent", js.undefined)
+    inline def setApplicationComponentUndefined: Self = StObject.set(x, "ApplicationComponent", js.undefined)
     
-    @scala.inline
-    def setResourceList(value: ResourceList): Self = StObject.set(x, "ResourceList", value.asInstanceOf[js.Any])
+    inline def setResourceList(value: ResourceList): Self = StObject.set(x, "ResourceList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceListUndefined: Self = StObject.set(x, "ResourceList", js.undefined)
+    inline def setResourceListUndefined: Self = StObject.set(x, "ResourceList", js.undefined)
     
-    @scala.inline
-    def setResourceListVarargs(value: ResourceARN*): Self = StObject.set(x, "ResourceList", js.Array(value :_*))
+    inline def setResourceListVarargs(value: ResourceARN*): Self = StObject.set(x, "ResourceList", js.Array(value :_*))
   }
 }

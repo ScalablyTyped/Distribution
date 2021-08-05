@@ -16,7 +16,7 @@ object loaderViewMod {
   trait LoaderView
     extends typings.playable.viewMod.default[ILoaderViewStyles] {
     
-    @JSName("_$rootElement")
+    /* private */ @JSName("_$rootElement")
     var _$rootElement: js.Any = js.native
     
     def destroy(): Unit = js.native

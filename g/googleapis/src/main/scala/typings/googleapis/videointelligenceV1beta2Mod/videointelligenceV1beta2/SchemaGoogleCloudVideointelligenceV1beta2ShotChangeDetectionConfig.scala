@@ -18,19 +18,15 @@ trait SchemaGoogleCloudVideointelligenceV1beta2ShotChangeDetectionConfig extends
 }
 object SchemaGoogleCloudVideointelligenceV1beta2ShotChangeDetectionConfig {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudVideointelligenceV1beta2ShotChangeDetectionConfig = {
+  inline def apply(): SchemaGoogleCloudVideointelligenceV1beta2ShotChangeDetectionConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudVideointelligenceV1beta2ShotChangeDetectionConfig]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudVideointelligenceV1beta2ShotChangeDetectionConfigMutableBuilder[Self <: SchemaGoogleCloudVideointelligenceV1beta2ShotChangeDetectionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudVideointelligenceV1beta2ShotChangeDetectionConfig](x: Self) {
     
-    @scala.inline
-    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
   }
 }

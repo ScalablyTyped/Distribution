@@ -27,8 +27,7 @@ trait GraphicObjectCount
 }
 object GraphicObjectCount {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
     AnchorTypes: SafeArray[TextContentAnchorType],
@@ -58,10 +57,8 @@ object GraphicObjectCount {
     __obj.asInstanceOf[GraphicObjectCount]
   }
   
-  @scala.inline
-  implicit class GraphicObjectCountMutableBuilder[Self <: GraphicObjectCount] (val x: Self) extends AnyVal {
+  extension [Self <: GraphicObjectCount](x: Self) {
     
-    @scala.inline
-    def setNumberingType(value: Double): Self = StObject.set(x, "NumberingType", value.asInstanceOf[js.Any])
+    inline def setNumberingType(value: Double): Self = StObject.set(x, "NumberingType", value.asInstanceOf[js.Any])
   }
 }

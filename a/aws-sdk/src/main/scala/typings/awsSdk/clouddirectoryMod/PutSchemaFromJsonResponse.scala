@@ -13,19 +13,15 @@ trait PutSchemaFromJsonResponse extends StObject {
 }
 object PutSchemaFromJsonResponse {
   
-  @scala.inline
-  def apply(): PutSchemaFromJsonResponse = {
+  inline def apply(): PutSchemaFromJsonResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutSchemaFromJsonResponse]
   }
   
-  @scala.inline
-  implicit class PutSchemaFromJsonResponseMutableBuilder[Self <: PutSchemaFromJsonResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PutSchemaFromJsonResponse](x: Self) {
     
-    @scala.inline
-    def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
   }
 }

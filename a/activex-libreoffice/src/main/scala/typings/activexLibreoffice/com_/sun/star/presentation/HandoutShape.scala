@@ -34,8 +34,7 @@ trait HandoutShape
      with typings.activexLibreoffice.com_.sun.star.drawing.PageShape
 object HandoutShape {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Bookmark: String,
     DimColor: Color,
     DimHide: Boolean,

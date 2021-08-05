@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.ThemeFontScheme")
 @js.native
-class ThemeFontScheme protected ()
+/* private */ class ThemeFontScheme ()
   extends StObject
      with typings.activexOffice.Office.ThemeFontScheme {
   
@@ -33,7 +33,7 @@ class ThemeFontScheme protected ()
   @JSName("MinorFont")
   override val MinorFont_Original: ThemeFonts = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.ThemeFontScheme_typekey")
   var OfficeDotThemeFontScheme_typekey: typings.activexOffice.Office.ThemeFontScheme = js.native
   

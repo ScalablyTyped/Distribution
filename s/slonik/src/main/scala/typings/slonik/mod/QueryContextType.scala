@@ -54,8 +54,7 @@ trait QueryContextType extends StObject {
 }
 object QueryContextType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     connectionId: String,
     log: LoggerType,
     originalQuery: QueryType,
@@ -68,43 +67,30 @@ object QueryContextType {
     __obj.asInstanceOf[QueryContextType]
   }
   
-  @scala.inline
-  implicit class QueryContextTypeMutableBuilder[Self <: QueryContextType] (val x: Self) extends AnyVal {
+  extension [Self <: QueryContextType](x: Self) {
     
-    @scala.inline
-    def setConnectionId(value: String): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
+    inline def setConnectionId(value: String): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLog(value: LoggerType): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+    inline def setLog(value: LoggerType): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalQuery(value: QueryType): Self = StObject.set(x, "originalQuery", value.asInstanceOf[js.Any])
+    inline def setOriginalQuery(value: QueryType): Self = StObject.set(x, "originalQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoolId(value: String): Self = StObject.set(x, "poolId", value.asInstanceOf[js.Any])
+    inline def setPoolId(value: String): Self = StObject.set(x, "poolId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryId(value: QueryIdType): Self = StObject.set(x, "queryId", value.asInstanceOf[js.Any])
+    inline def setQueryId(value: QueryIdType): Self = StObject.set(x, "queryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryInputTime(value: Double): Self = StObject.set(x, "queryInputTime", value.asInstanceOf[js.Any])
+    inline def setQueryInputTime(value: Double): Self = StObject.set(x, "queryInputTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSandbox(value: Record[String, js.Any]): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
+    inline def setSandbox(value: Record[String, js.Any]): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackTrace(value: js.Array[CallSiteType]): Self = StObject.set(x, "stackTrace", value.asInstanceOf[js.Any])
+    inline def setStackTrace(value: js.Array[CallSiteType]): Self = StObject.set(x, "stackTrace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackTraceNull: Self = StObject.set(x, "stackTrace", null)
+    inline def setStackTraceNull: Self = StObject.set(x, "stackTrace", null)
     
-    @scala.inline
-    def setStackTraceVarargs(value: CallSiteType*): Self = StObject.set(x, "stackTrace", js.Array(value :_*))
+    inline def setStackTraceVarargs(value: CallSiteType*): Self = StObject.set(x, "stackTrace", js.Array(value :_*))
     
-    @scala.inline
-    def setTransactionId(value: String): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
+    inline def setTransactionId(value: String): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionIdUndefined: Self = StObject.set(x, "transactionId", js.undefined)
+    inline def setTransactionIdUndefined: Self = StObject.set(x, "transactionId", js.undefined)
   }
 }

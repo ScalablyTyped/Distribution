@@ -13,19 +13,15 @@ trait UpdateDevicePoolResult extends StObject {
 }
 object UpdateDevicePoolResult {
   
-  @scala.inline
-  def apply(): UpdateDevicePoolResult = {
+  inline def apply(): UpdateDevicePoolResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateDevicePoolResult]
   }
   
-  @scala.inline
-  implicit class UpdateDevicePoolResultMutableBuilder[Self <: UpdateDevicePoolResult] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDevicePoolResult](x: Self) {
     
-    @scala.inline
-    def setDevicePool(value: DevicePool): Self = StObject.set(x, "devicePool", value.asInstanceOf[js.Any])
+    inline def setDevicePool(value: DevicePool): Self = StObject.set(x, "devicePool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevicePoolUndefined: Self = StObject.set(x, "devicePool", js.undefined)
+    inline def setDevicePoolUndefined: Self = StObject.set(x, "devicePool", js.undefined)
   }
 }

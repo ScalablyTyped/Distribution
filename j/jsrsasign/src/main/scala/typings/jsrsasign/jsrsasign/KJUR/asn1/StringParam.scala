@@ -10,16 +10,13 @@ trait StringParam extends StObject {
 }
 object StringParam {
   
-  @scala.inline
-  def apply(str: String): StringParam = {
+  inline def apply(str: String): StringParam = {
     val __obj = js.Dynamic.literal(str = str.asInstanceOf[js.Any])
     __obj.asInstanceOf[StringParam]
   }
   
-  @scala.inline
-  implicit class StringParamMutableBuilder[Self <: StringParam] (val x: Self) extends AnyVal {
+  extension [Self <: StringParam](x: Self) {
     
-    @scala.inline
-    def setStr(value: String): Self = StObject.set(x, "str", value.asInstanceOf[js.Any])
+    inline def setStr(value: String): Self = StObject.set(x, "str", value.asInstanceOf[js.Any])
   }
 }

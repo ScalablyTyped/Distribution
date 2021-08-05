@@ -39,38 +39,27 @@ object sharedPropsMod {
   trait CategoryName extends StObject
   object CategoryName {
     
-    @scala.inline
-    def activity: typings.emojiMart.emojiMartStrings.activity = "activity".asInstanceOf[typings.emojiMart.emojiMartStrings.activity]
+    inline def activity: typings.emojiMart.emojiMartStrings.activity = "activity".asInstanceOf[typings.emojiMart.emojiMartStrings.activity]
     
-    @scala.inline
-    def custom: typings.emojiMart.emojiMartStrings.custom = "custom".asInstanceOf[typings.emojiMart.emojiMartStrings.custom]
+    inline def custom: typings.emojiMart.emojiMartStrings.custom = "custom".asInstanceOf[typings.emojiMart.emojiMartStrings.custom]
     
-    @scala.inline
-    def flags: typings.emojiMart.emojiMartStrings.flags = "flags".asInstanceOf[typings.emojiMart.emojiMartStrings.flags]
+    inline def flags: typings.emojiMart.emojiMartStrings.flags = "flags".asInstanceOf[typings.emojiMart.emojiMartStrings.flags]
     
-    @scala.inline
-    def foods: typings.emojiMart.emojiMartStrings.foods = "foods".asInstanceOf[typings.emojiMart.emojiMartStrings.foods]
+    inline def foods: typings.emojiMart.emojiMartStrings.foods = "foods".asInstanceOf[typings.emojiMart.emojiMartStrings.foods]
     
-    @scala.inline
-    def nature: typings.emojiMart.emojiMartStrings.nature = "nature".asInstanceOf[typings.emojiMart.emojiMartStrings.nature]
+    inline def nature: typings.emojiMart.emojiMartStrings.nature = "nature".asInstanceOf[typings.emojiMart.emojiMartStrings.nature]
     
-    @scala.inline
-    def objects: typings.emojiMart.emojiMartStrings.objects = "objects".asInstanceOf[typings.emojiMart.emojiMartStrings.objects]
+    inline def objects: typings.emojiMart.emojiMartStrings.objects = "objects".asInstanceOf[typings.emojiMart.emojiMartStrings.objects]
     
-    @scala.inline
-    def people: typings.emojiMart.emojiMartStrings.people = "people".asInstanceOf[typings.emojiMart.emojiMartStrings.people]
+    inline def people: typings.emojiMart.emojiMartStrings.people = "people".asInstanceOf[typings.emojiMart.emojiMartStrings.people]
     
-    @scala.inline
-    def places: typings.emojiMart.emojiMartStrings.places = "places".asInstanceOf[typings.emojiMart.emojiMartStrings.places]
+    inline def places: typings.emojiMart.emojiMartStrings.places = "places".asInstanceOf[typings.emojiMart.emojiMartStrings.places]
     
-    @scala.inline
-    def recent: typings.emojiMart.emojiMartStrings.recent = "recent".asInstanceOf[typings.emojiMart.emojiMartStrings.recent]
+    inline def recent: typings.emojiMart.emojiMartStrings.recent = "recent".asInstanceOf[typings.emojiMart.emojiMartStrings.recent]
     
-    @scala.inline
-    def search: typings.emojiMart.emojiMartStrings.search = "search".asInstanceOf[typings.emojiMart.emojiMartStrings.search]
+    inline def search: typings.emojiMart.emojiMartStrings.search = "search".asInstanceOf[typings.emojiMart.emojiMartStrings.search]
     
-    @scala.inline
-    def symbols: typings.emojiMart.emojiMartStrings.symbols = "symbols".asInstanceOf[typings.emojiMart.emojiMartStrings.symbols]
+    inline def symbols: typings.emojiMart.emojiMartStrings.symbols = "symbols".asInstanceOf[typings.emojiMart.emojiMartStrings.symbols]
   }
   
   trait CustomIcons extends StObject {
@@ -79,17 +68,14 @@ object sharedPropsMod {
   }
   object CustomIcons {
     
-    @scala.inline
-    def apply(categories: RecordCategoryNameReactNo): CustomIcons = {
+    inline def apply(categories: RecordCategoryNameReactNo): CustomIcons = {
       val __obj = js.Dynamic.literal(categories = categories.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomIcons]
     }
     
-    @scala.inline
-    implicit class CustomIconsMutableBuilder[Self <: CustomIcons] (val x: Self) extends AnyVal {
+    extension [Self <: CustomIcons](x: Self) {
       
-      @scala.inline
-      def setCategories(value: RecordCategoryNameReactNo): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+      inline def setCategories(value: RecordCategoryNameReactNo): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     }
   }
   
@@ -147,104 +133,72 @@ object sharedPropsMod {
   }
   object EmojiProps {
     
-    @scala.inline
-    def apply(emoji: String | EmojiData, size: Double): EmojiProps = {
+    inline def apply(emoji: String | EmojiData, size: Double): EmojiProps = {
       val __obj = js.Dynamic.literal(emoji = emoji.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[EmojiProps]
     }
     
-    @scala.inline
-    implicit class EmojiPropsMutableBuilder[Self <: EmojiProps] (val x: Self) extends AnyVal {
+    extension [Self <: EmojiProps](x: Self) {
       
-      @scala.inline
-      def setBackgroundImageFn(value: (/* set */ EmojiSet, /* sheetSize */ EmojiSheetSize) => String): Self = StObject.set(x, "backgroundImageFn", js.Any.fromFunction2(value))
+      inline def setBackgroundImageFn(value: (/* set */ EmojiSet, /* sheetSize */ EmojiSheetSize) => String): Self = StObject.set(x, "backgroundImageFn", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBackgroundImageFnUndefined: Self = StObject.set(x, "backgroundImageFn", js.undefined)
+      inline def setBackgroundImageFnUndefined: Self = StObject.set(x, "backgroundImageFn", js.undefined)
       
-      @scala.inline
-      def setEmoji(value: String | EmojiData): Self = StObject.set(x, "emoji", value.asInstanceOf[js.Any])
+      inline def setEmoji(value: String | EmojiData): Self = StObject.set(x, "emoji", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallback(value: (/* emoji */ EmojiData, EmojiProps) => (Component[js.Object, js.Object, js.Any]) | Element): Self = StObject.set(x, "fallback", js.Any.fromFunction2(value))
+      inline def setFallback(value: (/* emoji */ EmojiData, EmojiProps) => (Component[js.Object, js.Object, js.Any]) | Element): Self = StObject.set(x, "fallback", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+      inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
       
-      @scala.inline
-      def setForceSize(value: Boolean): Self = StObject.set(x, "forceSize", value.asInstanceOf[js.Any])
+      inline def setForceSize(value: Boolean): Self = StObject.set(x, "forceSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceSizeUndefined: Self = StObject.set(x, "forceSize", js.undefined)
+      inline def setForceSizeUndefined: Self = StObject.set(x, "forceSize", js.undefined)
       
-      @scala.inline
-      def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      inline def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+      inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
       
-      @scala.inline
-      def setNative(value: Boolean): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
+      inline def setNative(value: Boolean): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNativeUndefined: Self = StObject.set(x, "native", js.undefined)
+      inline def setNativeUndefined: Self = StObject.set(x, "native", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: (/* emoji */ EmojiData, /* e */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
+      inline def setOnClick(value: (/* emoji */ EmojiData, /* e */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOnLeave(value: (/* emoji */ EmojiData, /* e */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onLeave", js.Any.fromFunction2(value))
+      inline def setOnLeave(value: (/* emoji */ EmojiData, /* e */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onLeave", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnLeaveUndefined: Self = StObject.set(x, "onLeave", js.undefined)
+      inline def setOnLeaveUndefined: Self = StObject.set(x, "onLeave", js.undefined)
       
-      @scala.inline
-      def setOnOver(value: (/* emoji */ EmojiData, /* e */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onOver", js.Any.fromFunction2(value))
+      inline def setOnOver(value: (/* emoji */ EmojiData, /* e */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onOver", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnOverUndefined: Self = StObject.set(x, "onOver", js.undefined)
+      inline def setOnOverUndefined: Self = StObject.set(x, "onOver", js.undefined)
       
-      @scala.inline
-      def setSet(value: EmojiSet): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
+      inline def setSet(value: EmojiSet): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
+      inline def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
       
-      @scala.inline
-      def setSheetColumns(value: Double): Self = StObject.set(x, "sheetColumns", value.asInstanceOf[js.Any])
+      inline def setSheetColumns(value: Double): Self = StObject.set(x, "sheetColumns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSheetColumnsUndefined: Self = StObject.set(x, "sheetColumns", js.undefined)
+      inline def setSheetColumnsUndefined: Self = StObject.set(x, "sheetColumns", js.undefined)
       
-      @scala.inline
-      def setSheetRows(value: Double): Self = StObject.set(x, "sheetRows", value.asInstanceOf[js.Any])
+      inline def setSheetRows(value: Double): Self = StObject.set(x, "sheetRows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSheetRowsUndefined: Self = StObject.set(x, "sheetRows", js.undefined)
+      inline def setSheetRowsUndefined: Self = StObject.set(x, "sheetRows", js.undefined)
       
-      @scala.inline
-      def setSheetSize(value: EmojiSheetSize): Self = StObject.set(x, "sheetSize", value.asInstanceOf[js.Any])
+      inline def setSheetSize(value: EmojiSheetSize): Self = StObject.set(x, "sheetSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSheetSizeUndefined: Self = StObject.set(x, "sheetSize", js.undefined)
+      inline def setSheetSizeUndefined: Self = StObject.set(x, "sheetSize", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkin(value: EmojiSkin): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
+      inline def setSkin(value: EmojiSkin): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
+      inline def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
       
-      @scala.inline
-      def setTooltip(value: Boolean): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+      inline def setTooltip(value: Boolean): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+      inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     }
   }
   
@@ -259,23 +213,17 @@ object sharedPropsMod {
   trait EmojiSet extends StObject
   object EmojiSet {
     
-    @scala.inline
-    def apple: typings.emojiMart.emojiMartStrings.apple = "apple".asInstanceOf[typings.emojiMart.emojiMartStrings.apple]
+    inline def apple: typings.emojiMart.emojiMartStrings.apple = "apple".asInstanceOf[typings.emojiMart.emojiMartStrings.apple]
     
-    @scala.inline
-    def emojione: typings.emojiMart.emojiMartStrings.emojione = "emojione".asInstanceOf[typings.emojiMart.emojiMartStrings.emojione]
+    inline def emojione: typings.emojiMart.emojiMartStrings.emojione = "emojione".asInstanceOf[typings.emojiMart.emojiMartStrings.emojione]
     
-    @scala.inline
-    def facebook: typings.emojiMart.emojiMartStrings.facebook = "facebook".asInstanceOf[typings.emojiMart.emojiMartStrings.facebook]
+    inline def facebook: typings.emojiMart.emojiMartStrings.facebook = "facebook".asInstanceOf[typings.emojiMart.emojiMartStrings.facebook]
     
-    @scala.inline
-    def google: typings.emojiMart.emojiMartStrings.google = "google".asInstanceOf[typings.emojiMart.emojiMartStrings.google]
+    inline def google: typings.emojiMart.emojiMartStrings.google = "google".asInstanceOf[typings.emojiMart.emojiMartStrings.google]
     
-    @scala.inline
-    def messenger: typings.emojiMart.emojiMartStrings.messenger = "messenger".asInstanceOf[typings.emojiMart.emojiMartStrings.messenger]
+    inline def messenger: typings.emojiMart.emojiMartStrings.messenger = "messenger".asInstanceOf[typings.emojiMart.emojiMartStrings.messenger]
     
-    @scala.inline
-    def twitter: typings.emojiMart.emojiMartStrings.twitter = "twitter".asInstanceOf[typings.emojiMart.emojiMartStrings.twitter]
+    inline def twitter: typings.emojiMart.emojiMartStrings.twitter = "twitter".asInstanceOf[typings.emojiMart.emojiMartStrings.twitter]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -287,17 +235,13 @@ object sharedPropsMod {
   trait EmojiSheetSize extends StObject
   object EmojiSheetSize {
     
-    @scala.inline
-    def `16`: typings.emojiMart.emojiMartNumbers.`16` = 16.asInstanceOf[typings.emojiMart.emojiMartNumbers.`16`]
+    inline def `16`: typings.emojiMart.emojiMartNumbers.`16` = 16.asInstanceOf[typings.emojiMart.emojiMartNumbers.`16`]
     
-    @scala.inline
-    def `20`: typings.emojiMart.emojiMartNumbers.`20` = 20.asInstanceOf[typings.emojiMart.emojiMartNumbers.`20`]
+    inline def `20`: typings.emojiMart.emojiMartNumbers.`20` = 20.asInstanceOf[typings.emojiMart.emojiMartNumbers.`20`]
     
-    @scala.inline
-    def `32`: typings.emojiMart.emojiMartNumbers.`32` = 32.asInstanceOf[typings.emojiMart.emojiMartNumbers.`32`]
+    inline def `32`: typings.emojiMart.emojiMartNumbers.`32` = 32.asInstanceOf[typings.emojiMart.emojiMartNumbers.`32`]
     
-    @scala.inline
-    def `64`: typings.emojiMart.emojiMartNumbers.`64` = 64.asInstanceOf[typings.emojiMart.emojiMartNumbers.`64`]
+    inline def `64`: typings.emojiMart.emojiMartNumbers.`64` = 64.asInstanceOf[typings.emojiMart.emojiMartNumbers.`64`]
   }
   
   trait I18n extends StObject {
@@ -312,26 +256,20 @@ object sharedPropsMod {
   }
   object I18n {
     
-    @scala.inline
-    def apply(categories: RecordCategoryNamestring, notfound: String, search: String, skintext: String): I18n = {
+    inline def apply(categories: RecordCategoryNamestring, notfound: String, search: String, skintext: String): I18n = {
       val __obj = js.Dynamic.literal(categories = categories.asInstanceOf[js.Any], notfound = notfound.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], skintext = skintext.asInstanceOf[js.Any])
       __obj.asInstanceOf[I18n]
     }
     
-    @scala.inline
-    implicit class I18nMutableBuilder[Self <: I18n] (val x: Self) extends AnyVal {
+    extension [Self <: I18n](x: Self) {
       
-      @scala.inline
-      def setCategories(value: RecordCategoryNamestring): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+      inline def setCategories(value: RecordCategoryNamestring): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotfound(value: String): Self = StObject.set(x, "notfound", value.asInstanceOf[js.Any])
+      inline def setNotfound(value: String): Self = StObject.set(x, "notfound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkintext(value: String): Self = StObject.set(x, "skintext", value.asInstanceOf[js.Any])
+      inline def setSkintext(value: String): Self = StObject.set(x, "skintext", value.asInstanceOf[js.Any])
     }
   }
   
@@ -346,32 +284,24 @@ object sharedPropsMod {
   }
   object PartialI18n {
     
-    @scala.inline
-    def apply(): PartialI18n = {
+    inline def apply(): PartialI18n = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialI18n]
     }
     
-    @scala.inline
-    implicit class PartialI18nMutableBuilder[Self <: PartialI18n] (val x: Self) extends AnyVal {
+    extension [Self <: PartialI18n](x: Self) {
       
-      @scala.inline
-      def setCategories(value: PartialRecordCategoryName): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+      inline def setCategories(value: PartialRecordCategoryName): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
+      inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
       
-      @scala.inline
-      def setNotfound(value: String): Self = StObject.set(x, "notfound", value.asInstanceOf[js.Any])
+      inline def setNotfound(value: String): Self = StObject.set(x, "notfound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotfoundUndefined: Self = StObject.set(x, "notfound", js.undefined)
+      inline def setNotfoundUndefined: Self = StObject.set(x, "notfound", js.undefined)
       
-      @scala.inline
-      def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+      inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
     }
   }
   
@@ -447,218 +377,148 @@ object sharedPropsMod {
   }
   object PickerProps {
     
-    @scala.inline
-    def apply(): PickerProps = {
+    inline def apply(): PickerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PickerProps]
     }
     
-    @scala.inline
-    implicit class PickerPropsMutableBuilder[Self <: PickerProps] (val x: Self) extends AnyVal {
+    extension [Self <: PickerProps](x: Self) {
       
-      @scala.inline
-      def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
       
-      @scala.inline
-      def setBackgroundImageFn(value: (/* set */ EmojiSet, /* sheetSize */ EmojiSheetSize) => String): Self = StObject.set(x, "backgroundImageFn", js.Any.fromFunction2(value))
+      inline def setBackgroundImageFn(value: (/* set */ EmojiSet, /* sheetSize */ EmojiSheetSize) => String): Self = StObject.set(x, "backgroundImageFn", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBackgroundImageFnUndefined: Self = StObject.set(x, "backgroundImageFn", js.undefined)
+      inline def setBackgroundImageFnUndefined: Self = StObject.set(x, "backgroundImageFn", js.undefined)
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setCustom(value: js.Array[CustomEmoji]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+      inline def setCustom(value: js.Array[CustomEmoji]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+      inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
       
-      @scala.inline
-      def setCustomVarargs(value: CustomEmoji*): Self = StObject.set(x, "custom", js.Array(value :_*))
+      inline def setCustomVarargs(value: CustomEmoji*): Self = StObject.set(x, "custom", js.Array(value :_*))
       
-      @scala.inline
-      def setDefaultSkin(value: EmojiSkin): Self = StObject.set(x, "defaultSkin", value.asInstanceOf[js.Any])
+      inline def setDefaultSkin(value: EmojiSkin): Self = StObject.set(x, "defaultSkin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultSkinUndefined: Self = StObject.set(x, "defaultSkin", js.undefined)
+      inline def setDefaultSkinUndefined: Self = StObject.set(x, "defaultSkin", js.undefined)
       
-      @scala.inline
-      def setEmoji(value: String): Self = StObject.set(x, "emoji", value.asInstanceOf[js.Any])
+      inline def setEmoji(value: String): Self = StObject.set(x, "emoji", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmojiSize(value: Double): Self = StObject.set(x, "emojiSize", value.asInstanceOf[js.Any])
+      inline def setEmojiSize(value: Double): Self = StObject.set(x, "emojiSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmojiSizeUndefined: Self = StObject.set(x, "emojiSize", js.undefined)
+      inline def setEmojiSizeUndefined: Self = StObject.set(x, "emojiSize", js.undefined)
       
-      @scala.inline
-      def setEmojiTooltip(value: Boolean): Self = StObject.set(x, "emojiTooltip", value.asInstanceOf[js.Any])
+      inline def setEmojiTooltip(value: Boolean): Self = StObject.set(x, "emojiTooltip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmojiTooltipUndefined: Self = StObject.set(x, "emojiTooltip", js.undefined)
+      inline def setEmojiTooltipUndefined: Self = StObject.set(x, "emojiTooltip", js.undefined)
       
-      @scala.inline
-      def setEmojiUndefined: Self = StObject.set(x, "emoji", js.undefined)
+      inline def setEmojiUndefined: Self = StObject.set(x, "emoji", js.undefined)
       
-      @scala.inline
-      def setEmojisToShowFilter(value: /* emoji */ EmojiData => Boolean): Self = StObject.set(x, "emojisToShowFilter", js.Any.fromFunction1(value))
+      inline def setEmojisToShowFilter(value: /* emoji */ EmojiData => Boolean): Self = StObject.set(x, "emojisToShowFilter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEmojisToShowFilterUndefined: Self = StObject.set(x, "emojisToShowFilter", js.undefined)
+      inline def setEmojisToShowFilterUndefined: Self = StObject.set(x, "emojisToShowFilter", js.undefined)
       
-      @scala.inline
-      def setEnableFrequentEmojiSort(value: Boolean): Self = StObject.set(x, "enableFrequentEmojiSort", value.asInstanceOf[js.Any])
+      inline def setEnableFrequentEmojiSort(value: Boolean): Self = StObject.set(x, "enableFrequentEmojiSort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableFrequentEmojiSortUndefined: Self = StObject.set(x, "enableFrequentEmojiSort", js.undefined)
+      inline def setEnableFrequentEmojiSortUndefined: Self = StObject.set(x, "enableFrequentEmojiSort", js.undefined)
       
-      @scala.inline
-      def setExclude(value: js.Array[CategoryName]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: js.Array[CategoryName]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+      inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      @scala.inline
-      def setExcludeVarargs(value: CategoryName*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: CategoryName*): Self = StObject.set(x, "exclude", js.Array(value :_*))
       
-      @scala.inline
-      def setI18n(value: PartialI18n): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
+      inline def setI18n(value: PartialI18n): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setI18nUndefined: Self = StObject.set(x, "i18n", js.undefined)
+      inline def setI18nUndefined: Self = StObject.set(x, "i18n", js.undefined)
       
-      @scala.inline
-      def setIcons(value: CustomIcons): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+      inline def setIcons(value: CustomIcons): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
+      inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
       
-      @scala.inline
-      def setInclude(value: js.Array[CategoryName]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: js.Array[CategoryName]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+      inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      @scala.inline
-      def setIncludeVarargs(value: CategoryName*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: CategoryName*): Self = StObject.set(x, "include", js.Array(value :_*))
       
-      @scala.inline
-      def setNative(value: Boolean): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
+      inline def setNative(value: Boolean): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNativeUndefined: Self = StObject.set(x, "native", js.undefined)
+      inline def setNativeUndefined: Self = StObject.set(x, "native", js.undefined)
       
-      @scala.inline
-      def setNotFound(value: () => Component[js.Object, js.Object, js.Any]): Self = StObject.set(x, "notFound", js.Any.fromFunction0(value))
+      inline def setNotFound(value: () => Component[js.Object, js.Object, js.Any]): Self = StObject.set(x, "notFound", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNotFoundEmoji(value: String): Self = StObject.set(x, "notFoundEmoji", value.asInstanceOf[js.Any])
+      inline def setNotFoundEmoji(value: String): Self = StObject.set(x, "notFoundEmoji", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotFoundEmojiUndefined: Self = StObject.set(x, "notFoundEmoji", js.undefined)
+      inline def setNotFoundEmojiUndefined: Self = StObject.set(x, "notFoundEmoji", js.undefined)
       
-      @scala.inline
-      def setNotFoundUndefined: Self = StObject.set(x, "notFound", js.undefined)
+      inline def setNotFoundUndefined: Self = StObject.set(x, "notFound", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: (/* emoji */ EmojiData, /* e */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
+      inline def setOnClick(value: (/* emoji */ EmojiData, /* e */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOnSelect(value: /* emoji */ EmojiData => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+      inline def setOnSelect(value: /* emoji */ EmojiData => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
+      inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
-      @scala.inline
-      def setOnSkinChange(value: /* skin */ EmojiSkin => Unit): Self = StObject.set(x, "onSkinChange", js.Any.fromFunction1(value))
+      inline def setOnSkinChange(value: /* skin */ EmojiSkin => Unit): Self = StObject.set(x, "onSkinChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSkinChangeUndefined: Self = StObject.set(x, "onSkinChange", js.undefined)
+      inline def setOnSkinChangeUndefined: Self = StObject.set(x, "onSkinChange", js.undefined)
       
-      @scala.inline
-      def setPerLine(value: Double): Self = StObject.set(x, "perLine", value.asInstanceOf[js.Any])
+      inline def setPerLine(value: Double): Self = StObject.set(x, "perLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPerLineUndefined: Self = StObject.set(x, "perLine", js.undefined)
+      inline def setPerLineUndefined: Self = StObject.set(x, "perLine", js.undefined)
       
-      @scala.inline
-      def setRecent(value: js.Array[String]): Self = StObject.set(x, "recent", value.asInstanceOf[js.Any])
+      inline def setRecent(value: js.Array[String]): Self = StObject.set(x, "recent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecentUndefined: Self = StObject.set(x, "recent", js.undefined)
+      inline def setRecentUndefined: Self = StObject.set(x, "recent", js.undefined)
       
-      @scala.inline
-      def setRecentVarargs(value: String*): Self = StObject.set(x, "recent", js.Array(value :_*))
+      inline def setRecentVarargs(value: String*): Self = StObject.set(x, "recent", js.Array(value :_*))
       
-      @scala.inline
-      def setSet(value: EmojiSet): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
+      inline def setSet(value: EmojiSet): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
+      inline def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
       
-      @scala.inline
-      def setSheetSize(value: EmojiSheetSize): Self = StObject.set(x, "sheetSize", value.asInstanceOf[js.Any])
+      inline def setSheetSize(value: EmojiSheetSize): Self = StObject.set(x, "sheetSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSheetSizeUndefined: Self = StObject.set(x, "sheetSize", js.undefined)
+      inline def setSheetSizeUndefined: Self = StObject.set(x, "sheetSize", js.undefined)
       
-      @scala.inline
-      def setShowPreview(value: Boolean): Self = StObject.set(x, "showPreview", value.asInstanceOf[js.Any])
+      inline def setShowPreview(value: Boolean): Self = StObject.set(x, "showPreview", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowPreviewUndefined: Self = StObject.set(x, "showPreview", js.undefined)
+      inline def setShowPreviewUndefined: Self = StObject.set(x, "showPreview", js.undefined)
       
-      @scala.inline
-      def setShowSkinTones(value: Boolean): Self = StObject.set(x, "showSkinTones", value.asInstanceOf[js.Any])
+      inline def setShowSkinTones(value: Boolean): Self = StObject.set(x, "showSkinTones", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowSkinTonesUndefined: Self = StObject.set(x, "showSkinTones", js.undefined)
+      inline def setShowSkinTonesUndefined: Self = StObject.set(x, "showSkinTones", js.undefined)
       
-      @scala.inline
-      def setSkin(value: EmojiSkin): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
+      inline def setSkin(value: EmojiSkin): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkinEmoji(value: String): Self = StObject.set(x, "skinEmoji", value.asInstanceOf[js.Any])
+      inline def setSkinEmoji(value: String): Self = StObject.set(x, "skinEmoji", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkinEmojiUndefined: Self = StObject.set(x, "skinEmoji", js.undefined)
+      inline def setSkinEmojiUndefined: Self = StObject.set(x, "skinEmoji", js.undefined)
       
-      @scala.inline
-      def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
+      inline def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTheme(value: auto | light | dark): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: auto | light | dark): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setUseButton(value: Boolean): Self = StObject.set(x, "useButton", value.asInstanceOf[js.Any])
+      inline def setUseButton(value: Boolean): Self = StObject.set(x, "useButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseButtonUndefined: Self = StObject.set(x, "useButton", js.undefined)
+      inline def setUseButtonUndefined: Self = StObject.set(x, "useButton", js.undefined)
     }
   }
 }

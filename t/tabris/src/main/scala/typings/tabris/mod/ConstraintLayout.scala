@@ -23,6 +23,5 @@ object ConstraintLayout {
   @JSImport("tabris", "ConstraintLayout.default")
   @js.native
   def default: ConstraintLayout = js.native
-  @scala.inline
-  def default_=(x: ConstraintLayout): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: ConstraintLayout): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

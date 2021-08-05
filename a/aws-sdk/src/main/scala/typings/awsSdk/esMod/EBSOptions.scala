@@ -28,37 +28,27 @@ trait EBSOptions extends StObject {
 }
 object EBSOptions {
   
-  @scala.inline
-  def apply(): EBSOptions = {
+  inline def apply(): EBSOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EBSOptions]
   }
   
-  @scala.inline
-  implicit class EBSOptionsMutableBuilder[Self <: EBSOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EBSOptions](x: Self) {
     
-    @scala.inline
-    def setEBSEnabled(value: Boolean): Self = StObject.set(x, "EBSEnabled", value.asInstanceOf[js.Any])
+    inline def setEBSEnabled(value: Boolean): Self = StObject.set(x, "EBSEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEBSEnabledUndefined: Self = StObject.set(x, "EBSEnabled", js.undefined)
+    inline def setEBSEnabledUndefined: Self = StObject.set(x, "EBSEnabled", js.undefined)
     
-    @scala.inline
-    def setIops(value: IntegerClass): Self = StObject.set(x, "Iops", value.asInstanceOf[js.Any])
+    inline def setIops(value: IntegerClass): Self = StObject.set(x, "Iops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIopsUndefined: Self = StObject.set(x, "Iops", js.undefined)
+    inline def setIopsUndefined: Self = StObject.set(x, "Iops", js.undefined)
     
-    @scala.inline
-    def setVolumeSize(value: IntegerClass): Self = StObject.set(x, "VolumeSize", value.asInstanceOf[js.Any])
+    inline def setVolumeSize(value: IntegerClass): Self = StObject.set(x, "VolumeSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeSizeUndefined: Self = StObject.set(x, "VolumeSize", js.undefined)
+    inline def setVolumeSizeUndefined: Self = StObject.set(x, "VolumeSize", js.undefined)
     
-    @scala.inline
-    def setVolumeType(value: VolumeType): Self = StObject.set(x, "VolumeType", value.asInstanceOf[js.Any])
+    inline def setVolumeType(value: VolumeType): Self = StObject.set(x, "VolumeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeTypeUndefined: Self = StObject.set(x, "VolumeType", js.undefined)
+    inline def setVolumeTypeUndefined: Self = StObject.set(x, "VolumeType", js.undefined)
   }
 }

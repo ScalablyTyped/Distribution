@@ -33,41 +33,30 @@ trait ScheduleRunTest extends StObject {
 }
 object ScheduleRunTest {
   
-  @scala.inline
-  def apply(`type`: TestType): ScheduleRunTest = {
+  inline def apply(`type`: TestType): ScheduleRunTest = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScheduleRunTest]
   }
   
-  @scala.inline
-  implicit class ScheduleRunTestMutableBuilder[Self <: ScheduleRunTest] (val x: Self) extends AnyVal {
+  extension [Self <: ScheduleRunTest](x: Self) {
     
-    @scala.inline
-    def setFilter(value: Filter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: Filter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setParameters(value: TestParameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: TestParameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setTestPackageArn(value: AmazonResourceName): Self = StObject.set(x, "testPackageArn", value.asInstanceOf[js.Any])
+    inline def setTestPackageArn(value: AmazonResourceName): Self = StObject.set(x, "testPackageArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestPackageArnUndefined: Self = StObject.set(x, "testPackageArn", js.undefined)
+    inline def setTestPackageArnUndefined: Self = StObject.set(x, "testPackageArn", js.undefined)
     
-    @scala.inline
-    def setTestSpecArn(value: AmazonResourceName): Self = StObject.set(x, "testSpecArn", value.asInstanceOf[js.Any])
+    inline def setTestSpecArn(value: AmazonResourceName): Self = StObject.set(x, "testSpecArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestSpecArnUndefined: Self = StObject.set(x, "testSpecArn", js.undefined)
+    inline def setTestSpecArnUndefined: Self = StObject.set(x, "testSpecArn", js.undefined)
     
-    @scala.inline
-    def setType(value: TestType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TestType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -19,8 +19,7 @@ trait Enumerable extends StObject {
 }
 object Enumerable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     configurable: Boolean,
     enumerable: Boolean,
     initializer: () => js.Function & IAction,
@@ -31,22 +30,16 @@ object Enumerable {
     __obj.asInstanceOf[Enumerable]
   }
   
-  @scala.inline
-  implicit class EnumerableMutableBuilder[Self <: Enumerable] (val x: Self) extends AnyVal {
+  extension [Self <: Enumerable](x: Self) {
     
-    @scala.inline
-    def setConfigurable(value: Boolean): Self = StObject.set(x, "configurable", value.asInstanceOf[js.Any])
+    inline def setConfigurable(value: Boolean): Self = StObject.set(x, "configurable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnumerable(value: Boolean): Self = StObject.set(x, "enumerable", value.asInstanceOf[js.Any])
+    inline def setEnumerable(value: Boolean): Self = StObject.set(x, "enumerable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitializer(value: () => js.Function & IAction): Self = StObject.set(x, "initializer", js.Any.fromFunction0(value))
+    inline def setInitializer(value: () => js.Function & IAction): Self = StObject.set(x, "initializer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setValue(value: Unit): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Unit): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWritable(value: Boolean): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
+    inline def setWritable(value: Boolean): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
   }
 }

@@ -12,13 +12,13 @@ object rowNodeBlockLoaderMod {
   class RowNodeBlockLoader protected () extends StObject {
     def this(maxConcurrentRequests: Double) = this()
     
-    var active: js.Any = js.native
+    /* private */ var active: js.Any = js.native
     
-    var activeBlockLoadsCount: js.Any = js.native
+    /* private */ var activeBlockLoadsCount: js.Any = js.native
     
     def addBlock(block: RowNodeBlock): Unit = js.native
     
-    var blocks: js.Any = js.native
+    /* private */ var blocks: js.Any = js.native
     
     def checkBlockToLoad(): Unit = js.native
     
@@ -28,9 +28,9 @@ object rowNodeBlockLoaderMod {
     
     def loadComplete(): Unit = js.native
     
-    var logger: js.Any = js.native
+    /* private */ var logger: js.Any = js.native
     
-    var maxConcurrentRequests: js.Any = js.native
+    /* private */ var maxConcurrentRequests: js.Any = js.native
     
     /* private */ def printCacheStatus(): js.Any = js.native
     

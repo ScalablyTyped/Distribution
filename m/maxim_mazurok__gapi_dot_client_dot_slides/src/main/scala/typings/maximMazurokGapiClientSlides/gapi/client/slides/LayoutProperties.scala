@@ -17,31 +17,23 @@ trait LayoutProperties extends StObject {
 }
 object LayoutProperties {
   
-  @scala.inline
-  def apply(): LayoutProperties = {
+  inline def apply(): LayoutProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LayoutProperties]
   }
   
-  @scala.inline
-  implicit class LayoutPropertiesMutableBuilder[Self <: LayoutProperties] (val x: Self) extends AnyVal {
+  extension [Self <: LayoutProperties](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setMasterObjectId(value: String): Self = StObject.set(x, "masterObjectId", value.asInstanceOf[js.Any])
+    inline def setMasterObjectId(value: String): Self = StObject.set(x, "masterObjectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterObjectIdUndefined: Self = StObject.set(x, "masterObjectId", js.undefined)
+    inline def setMasterObjectIdUndefined: Self = StObject.set(x, "masterObjectId", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

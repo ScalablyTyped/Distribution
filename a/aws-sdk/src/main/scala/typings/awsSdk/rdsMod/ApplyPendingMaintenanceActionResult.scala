@@ -10,19 +10,15 @@ trait ApplyPendingMaintenanceActionResult extends StObject {
 }
 object ApplyPendingMaintenanceActionResult {
   
-  @scala.inline
-  def apply(): ApplyPendingMaintenanceActionResult = {
+  inline def apply(): ApplyPendingMaintenanceActionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApplyPendingMaintenanceActionResult]
   }
   
-  @scala.inline
-  implicit class ApplyPendingMaintenanceActionResultMutableBuilder[Self <: ApplyPendingMaintenanceActionResult] (val x: Self) extends AnyVal {
+  extension [Self <: ApplyPendingMaintenanceActionResult](x: Self) {
     
-    @scala.inline
-    def setResourcePendingMaintenanceActions(value: ResourcePendingMaintenanceActions): Self = StObject.set(x, "ResourcePendingMaintenanceActions", value.asInstanceOf[js.Any])
+    inline def setResourcePendingMaintenanceActions(value: ResourcePendingMaintenanceActions): Self = StObject.set(x, "ResourcePendingMaintenanceActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcePendingMaintenanceActionsUndefined: Self = StObject.set(x, "ResourcePendingMaintenanceActions", js.undefined)
+    inline def setResourcePendingMaintenanceActionsUndefined: Self = StObject.set(x, "ResourcePendingMaintenanceActions", js.undefined)
   }
 }

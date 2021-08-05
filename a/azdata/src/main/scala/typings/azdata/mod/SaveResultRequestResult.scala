@@ -10,16 +10,13 @@ trait SaveResultRequestResult extends StObject {
 }
 object SaveResultRequestResult {
   
-  @scala.inline
-  def apply(messages: String): SaveResultRequestResult = {
+  inline def apply(messages: String): SaveResultRequestResult = {
     val __obj = js.Dynamic.literal(messages = messages.asInstanceOf[js.Any])
     __obj.asInstanceOf[SaveResultRequestResult]
   }
   
-  @scala.inline
-  implicit class SaveResultRequestResultMutableBuilder[Self <: SaveResultRequestResult] (val x: Self) extends AnyVal {
+  extension [Self <: SaveResultRequestResult](x: Self) {
     
-    @scala.inline
-    def setMessages(value: String): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: String): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait Number extends StObject {
 }
 object Number {
   
-  @scala.inline
-  def apply(comparator: CSSProperties, number: CSSProperties): Number = {
+  inline def apply(comparator: CSSProperties, number: CSSProperties): Number = {
     val __obj = js.Dynamic.literal(comparator = comparator.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any])
     __obj.asInstanceOf[Number]
   }
   
-  @scala.inline
-  implicit class NumberMutableBuilder[Self <: Number] (val x: Self) extends AnyVal {
+  extension [Self <: Number](x: Self) {
     
-    @scala.inline
-    def setComparator(value: CSSProperties): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
+    inline def setComparator(value: CSSProperties): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumber(value: CSSProperties): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: CSSProperties): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
   }
 }

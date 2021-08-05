@@ -14,28 +14,21 @@ trait Classes extends StObject {
 }
 object Classes {
   
-  @scala.inline
-  def apply(): Classes = {
+  inline def apply(): Classes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Classes]
   }
   
-  @scala.inline
-  implicit class ClassesMutableBuilder[Self <: Classes] (val x: Self) extends AnyVal {
+  extension [Self <: Classes](x: Self) {
     
-    @scala.inline
-    def setClasses(value: js.Array[String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    inline def setClasses(value: js.Array[String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+    inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
-    @scala.inline
-    def setClassesVarargs(value: String*): Self = StObject.set(x, "classes", js.Array(value :_*))
+    inline def setClassesVarargs(value: String*): Self = StObject.set(x, "classes", js.Array(value :_*))
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
   }
 }

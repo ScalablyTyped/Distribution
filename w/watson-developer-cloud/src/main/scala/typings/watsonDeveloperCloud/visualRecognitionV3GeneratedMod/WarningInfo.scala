@@ -15,19 +15,15 @@ trait WarningInfo extends StObject {
 }
 object WarningInfo {
   
-  @scala.inline
-  def apply(description: String, warning_id: String): WarningInfo = {
+  inline def apply(description: String, warning_id: String): WarningInfo = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], warning_id = warning_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[WarningInfo]
   }
   
-  @scala.inline
-  implicit class WarningInfoMutableBuilder[Self <: WarningInfo] (val x: Self) extends AnyVal {
+  extension [Self <: WarningInfo](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarning_id(value: String): Self = StObject.set(x, "warning_id", value.asInstanceOf[js.Any])
+    inline def setWarning_id(value: String): Self = StObject.set(x, "warning_id", value.asInstanceOf[js.Any])
   }
 }

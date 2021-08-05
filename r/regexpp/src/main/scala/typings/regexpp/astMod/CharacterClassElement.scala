@@ -16,8 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CharacterClassElement extends StObject
 object CharacterClassElement {
   
-  @scala.inline
-  def Character(
+  inline def Character(
     end: Double,
     parent: Alternative | Quantifier | CharacterClass | CharacterClassRange,
     raw: String,
@@ -29,15 +28,13 @@ object CharacterClassElement {
     __obj.asInstanceOf[typings.regexpp.astMod.Character]
   }
   
-  @scala.inline
-  def CharacterClassRange(end: Double, max: Character, min: Character, parent: CharacterClass, raw: String, start: Double): typings.regexpp.astMod.CharacterClassRange = {
+  inline def CharacterClassRange(end: Double, max: Character, min: Character, parent: CharacterClass, raw: String, start: Double): typings.regexpp.astMod.CharacterClassRange = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("CharacterClassRange")
     __obj.asInstanceOf[typings.regexpp.astMod.CharacterClassRange]
   }
   
-  @scala.inline
-  def EscapeCharacterSet(
+  inline def EscapeCharacterSet(
     end: Double,
     kind: digit | space | word,
     negate: Boolean,
@@ -50,8 +47,7 @@ object CharacterClassElement {
     __obj.asInstanceOf[typings.regexpp.astMod.EscapeCharacterSet]
   }
   
-  @scala.inline
-  def UnicodePropertyCharacterSet(
+  inline def UnicodePropertyCharacterSet(
     end: Double,
     key: String,
     negate: Boolean,

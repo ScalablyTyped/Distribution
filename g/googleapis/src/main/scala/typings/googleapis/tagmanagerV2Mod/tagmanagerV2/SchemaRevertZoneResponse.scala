@@ -18,19 +18,15 @@ trait SchemaRevertZoneResponse extends StObject {
 }
 object SchemaRevertZoneResponse {
   
-  @scala.inline
-  def apply(): SchemaRevertZoneResponse = {
+  inline def apply(): SchemaRevertZoneResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRevertZoneResponse]
   }
   
-  @scala.inline
-  implicit class SchemaRevertZoneResponseMutableBuilder[Self <: SchemaRevertZoneResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRevertZoneResponse](x: Self) {
     
-    @scala.inline
-    def setZone(value: SchemaZone): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+    inline def setZone(value: SchemaZone): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
+    inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }
 }

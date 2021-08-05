@@ -10,16 +10,13 @@ trait IpfsAny extends StObject {
 }
 object IpfsAny {
   
-  @scala.inline
-  def apply(ipfs: js.Any): IpfsAny = {
+  inline def apply(ipfs: js.Any): IpfsAny = {
     val __obj = js.Dynamic.literal(ipfs = ipfs.asInstanceOf[js.Any])
     __obj.asInstanceOf[IpfsAny]
   }
   
-  @scala.inline
-  implicit class IpfsAnyMutableBuilder[Self <: IpfsAny] (val x: Self) extends AnyVal {
+  extension [Self <: IpfsAny](x: Self) {
     
-    @scala.inline
-    def setIpfs(value: js.Any): Self = StObject.set(x, "ipfs", value.asInstanceOf[js.Any])
+    inline def setIpfs(value: js.Any): Self = StObject.set(x, "ipfs", value.asInstanceOf[js.Any])
   }
 }

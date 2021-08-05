@@ -22,31 +22,23 @@ trait RelativeTimeFormatOptions extends StObject {
 }
 object RelativeTimeFormatOptions {
   
-  @scala.inline
-  def apply(): RelativeTimeFormatOptions = {
+  inline def apply(): RelativeTimeFormatOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RelativeTimeFormatOptions]
   }
   
-  @scala.inline
-  implicit class RelativeTimeFormatOptionsMutableBuilder[Self <: RelativeTimeFormatOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RelativeTimeFormatOptions](x: Self) {
     
-    @scala.inline
-    def setLocaleMatcher(value: RelativeTimeFormatLocaleMatcher): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
+    inline def setLocaleMatcher(value: RelativeTimeFormatLocaleMatcher): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
+    inline def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
     
-    @scala.inline
-    def setNumeric(value: RelativeTimeFormatNumeric): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
+    inline def setNumeric(value: RelativeTimeFormatNumeric): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumericUndefined: Self = StObject.set(x, "numeric", js.undefined)
+    inline def setNumericUndefined: Self = StObject.set(x, "numeric", js.undefined)
     
-    @scala.inline
-    def setStyle(value: RelativeTimeFormatStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: RelativeTimeFormatStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

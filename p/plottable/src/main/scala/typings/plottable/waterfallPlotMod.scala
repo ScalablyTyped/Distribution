@@ -15,15 +15,15 @@ object waterfallPlotMod {
     
     /* private */ def _calculateSubtotalsAndExtent(dataset: js.Any): js.Any = js.native
     
-    var _connectorArea: js.Any = js.native
+    /* private */ var _connectorArea: js.Any = js.native
     
-    var _connectorsEnabled: js.Any = js.native
+    /* private */ var _connectorsEnabled: js.Any = js.native
     
     /* private */ def _drawConnectors(): js.Any = js.native
     
-    var _extent: js.Any = js.native
+    /* private */ var _extent: js.Any = js.native
     
-    var _subtotals: js.Any = js.native
+    /* private */ var _subtotals: js.Any = js.native
     
     /* private */ def _updateSubtotals(): js.Any = js.native
     
@@ -63,37 +63,31 @@ object waterfallPlotMod {
     @JSImport("plottable/build/src/plots/waterfallPlot", "Waterfall._BAR_DECLINE_CLASS")
     @js.native
     def _BAR_DECLINE_CLASS: js.Any = js.native
-    @scala.inline
-    def _BAR_DECLINE_CLASS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BAR_DECLINE_CLASS")(x.asInstanceOf[js.Any])
+    inline def _BAR_DECLINE_CLASS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BAR_DECLINE_CLASS")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/plots/waterfallPlot", "Waterfall._BAR_GROWTH_CLASS")
     @js.native
     def _BAR_GROWTH_CLASS: js.Any = js.native
-    @scala.inline
-    def _BAR_GROWTH_CLASS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BAR_GROWTH_CLASS")(x.asInstanceOf[js.Any])
+    inline def _BAR_GROWTH_CLASS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BAR_GROWTH_CLASS")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/plots/waterfallPlot", "Waterfall._BAR_TOTAL_CLASS")
     @js.native
     def _BAR_TOTAL_CLASS: js.Any = js.native
-    @scala.inline
-    def _BAR_TOTAL_CLASS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BAR_TOTAL_CLASS")(x.asInstanceOf[js.Any])
+    inline def _BAR_TOTAL_CLASS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BAR_TOTAL_CLASS")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/plots/waterfallPlot", "Waterfall._CONNECTOR_AREA_CLASS")
     @js.native
     def _CONNECTOR_AREA_CLASS: js.Any = js.native
-    @scala.inline
-    def _CONNECTOR_AREA_CLASS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CONNECTOR_AREA_CLASS")(x.asInstanceOf[js.Any])
+    inline def _CONNECTOR_AREA_CLASS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CONNECTOR_AREA_CLASS")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/plots/waterfallPlot", "Waterfall._CONNECTOR_CLASS")
     @js.native
     def _CONNECTOR_CLASS: js.Any = js.native
-    @scala.inline
-    def _CONNECTOR_CLASS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CONNECTOR_CLASS")(x.asInstanceOf[js.Any])
+    inline def _CONNECTOR_CLASS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CONNECTOR_CLASS")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/plots/waterfallPlot", "Waterfall._TOTAL_KEY")
     @js.native
     def _TOTAL_KEY: js.Any = js.native
-    @scala.inline
-    def _TOTAL_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TOTAL_KEY")(x.asInstanceOf[js.Any])
+    inline def _TOTAL_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TOTAL_KEY")(x.asInstanceOf[js.Any])
   }
 }

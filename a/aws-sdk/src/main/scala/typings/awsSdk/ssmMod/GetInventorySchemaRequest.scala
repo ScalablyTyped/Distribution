@@ -33,43 +33,31 @@ trait GetInventorySchemaRequest extends StObject {
 }
 object GetInventorySchemaRequest {
   
-  @scala.inline
-  def apply(): GetInventorySchemaRequest = {
+  inline def apply(): GetInventorySchemaRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetInventorySchemaRequest]
   }
   
-  @scala.inline
-  implicit class GetInventorySchemaRequestMutableBuilder[Self <: GetInventorySchemaRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetInventorySchemaRequest](x: Self) {
     
-    @scala.inline
-    def setAggregator(value: AggregatorSchemaOnly): Self = StObject.set(x, "Aggregator", value.asInstanceOf[js.Any])
+    inline def setAggregator(value: AggregatorSchemaOnly): Self = StObject.set(x, "Aggregator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregatorUndefined: Self = StObject.set(x, "Aggregator", js.undefined)
+    inline def setAggregatorUndefined: Self = StObject.set(x, "Aggregator", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: GetInventorySchemaMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: GetInventorySchemaMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSubType(value: IsSubTypeSchema): Self = StObject.set(x, "SubType", value.asInstanceOf[js.Any])
+    inline def setSubType(value: IsSubTypeSchema): Self = StObject.set(x, "SubType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubTypeUndefined: Self = StObject.set(x, "SubType", js.undefined)
+    inline def setSubTypeUndefined: Self = StObject.set(x, "SubType", js.undefined)
     
-    @scala.inline
-    def setTypeName(value: InventoryItemTypeNameFilter): Self = StObject.set(x, "TypeName", value.asInstanceOf[js.Any])
+    inline def setTypeName(value: InventoryItemTypeNameFilter): Self = StObject.set(x, "TypeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeNameUndefined: Self = StObject.set(x, "TypeName", js.undefined)
+    inline def setTypeNameUndefined: Self = StObject.set(x, "TypeName", js.undefined)
   }
 }

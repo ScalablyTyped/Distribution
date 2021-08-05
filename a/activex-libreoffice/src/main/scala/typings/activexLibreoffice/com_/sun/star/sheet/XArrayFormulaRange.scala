@@ -25,8 +25,7 @@ trait XArrayFormulaRange
 }
 object XArrayFormulaRange {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ArrayFormula: String,
     acquire: () => Unit,
     getArrayFormula: () => String,
@@ -38,16 +37,12 @@ object XArrayFormulaRange {
     __obj.asInstanceOf[XArrayFormulaRange]
   }
   
-  @scala.inline
-  implicit class XArrayFormulaRangeMutableBuilder[Self <: XArrayFormulaRange] (val x: Self) extends AnyVal {
+  extension [Self <: XArrayFormulaRange](x: Self) {
     
-    @scala.inline
-    def setArrayFormula(value: String): Self = StObject.set(x, "ArrayFormula", value.asInstanceOf[js.Any])
+    inline def setArrayFormula(value: String): Self = StObject.set(x, "ArrayFormula", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetArrayFormula(value: () => String): Self = StObject.set(x, "getArrayFormula", js.Any.fromFunction0(value))
+    inline def setGetArrayFormula(value: () => String): Self = StObject.set(x, "getArrayFormula", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetArrayFormula(value: String => Unit): Self = StObject.set(x, "setArrayFormula", js.Any.fromFunction1(value))
+    inline def setSetArrayFormula(value: String => Unit): Self = StObject.set(x, "setArrayFormula", js.Any.fromFunction1(value))
   }
 }

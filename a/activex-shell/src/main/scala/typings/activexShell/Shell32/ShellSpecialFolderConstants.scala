@@ -87,117 +87,79 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ShellSpecialFolderConstants extends StObject
 object ShellSpecialFolderConstants {
   
-  @scala.inline
-  def ssfALTSTARTUP: `29` = 29.asInstanceOf[`29`]
+  inline def ssfALTSTARTUP: `29` = 29.asInstanceOf[`29`]
   
-  @scala.inline
-  def ssfAPPDATA: `26` = 26.asInstanceOf[`26`]
+  inline def ssfAPPDATA: `26` = 26.asInstanceOf[`26`]
   
-  @scala.inline
-  def ssfBITBUCKET: `10` = 10.asInstanceOf[`10`]
+  inline def ssfBITBUCKET: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def ssfCOMMONALTSTARTUP: `30` = 30.asInstanceOf[`30`]
+  inline def ssfCOMMONALTSTARTUP: `30` = 30.asInstanceOf[`30`]
   
-  @scala.inline
-  def ssfCOMMONAPPDATA: `35` = 35.asInstanceOf[`35`]
+  inline def ssfCOMMONAPPDATA: `35` = 35.asInstanceOf[`35`]
   
-  @scala.inline
-  def ssfCOMMONDESKTOPDIR: `25` = 25.asInstanceOf[`25`]
+  inline def ssfCOMMONDESKTOPDIR: `25` = 25.asInstanceOf[`25`]
   
-  @scala.inline
-  def ssfCOMMONFAVORITES: `31` = 31.asInstanceOf[`31`]
+  inline def ssfCOMMONFAVORITES: `31` = 31.asInstanceOf[`31`]
   
-  @scala.inline
-  def ssfCOMMONPROGRAMS: `23` = 23.asInstanceOf[`23`]
+  inline def ssfCOMMONPROGRAMS: `23` = 23.asInstanceOf[`23`]
   
-  @scala.inline
-  def ssfCOMMONSTARTMENU: `22` = 22.asInstanceOf[`22`]
+  inline def ssfCOMMONSTARTMENU: `22` = 22.asInstanceOf[`22`]
   
-  @scala.inline
-  def ssfCOMMONSTARTUP: `24` = 24.asInstanceOf[`24`]
+  inline def ssfCOMMONSTARTUP: `24` = 24.asInstanceOf[`24`]
   
-  @scala.inline
-  def ssfCONTROLS: `3` = 3.asInstanceOf[`3`]
+  inline def ssfCONTROLS: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def ssfCOOKIES: `33` = 33.asInstanceOf[`33`]
+  inline def ssfCOOKIES: `33` = 33.asInstanceOf[`33`]
   
-  @scala.inline
-  def ssfDESKTOP: `0` = 0.asInstanceOf[`0`]
+  inline def ssfDESKTOP: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def ssfDESKTOPDIRECTORY: `16` = 16.asInstanceOf[`16`]
+  inline def ssfDESKTOPDIRECTORY: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def ssfDRIVES: `17` = 17.asInstanceOf[`17`]
+  inline def ssfDRIVES: `17` = 17.asInstanceOf[`17`]
   
-  @scala.inline
-  def ssfFAVORITES: `6` = 6.asInstanceOf[`6`]
+  inline def ssfFAVORITES: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def ssfFONTS: `20` = 20.asInstanceOf[`20`]
+  inline def ssfFONTS: `20` = 20.asInstanceOf[`20`]
   
-  @scala.inline
-  def ssfHISTORY: `34` = 34.asInstanceOf[`34`]
+  inline def ssfHISTORY: `34` = 34.asInstanceOf[`34`]
   
-  @scala.inline
-  def ssfINTERNETCACHE: `32` = 32.asInstanceOf[`32`]
+  inline def ssfINTERNETCACHE: `32` = 32.asInstanceOf[`32`]
   
-  @scala.inline
-  def ssfLOCALAPPDATA: `28` = 28.asInstanceOf[`28`]
+  inline def ssfLOCALAPPDATA: `28` = 28.asInstanceOf[`28`]
   
-  @scala.inline
-  def ssfMYPICTURES: `39` = 39.asInstanceOf[`39`]
+  inline def ssfMYPICTURES: `39` = 39.asInstanceOf[`39`]
   
-  @scala.inline
-  def ssfNETHOOD: `19` = 19.asInstanceOf[`19`]
+  inline def ssfNETHOOD: `19` = 19.asInstanceOf[`19`]
   
-  @scala.inline
-  def ssfNETWORK: `18` = 18.asInstanceOf[`18`]
+  inline def ssfNETWORK: `18` = 18.asInstanceOf[`18`]
   
-  @scala.inline
-  def ssfPERSONAL: `5` = 5.asInstanceOf[`5`]
+  inline def ssfPERSONAL: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def ssfPRINTERS: `4` = 4.asInstanceOf[`4`]
+  inline def ssfPRINTERS: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def ssfPRINTHOOD: `27` = 27.asInstanceOf[`27`]
+  inline def ssfPRINTHOOD: `27` = 27.asInstanceOf[`27`]
   
-  @scala.inline
-  def ssfPROFILE: `40` = 40.asInstanceOf[`40`]
+  inline def ssfPROFILE: `40` = 40.asInstanceOf[`40`]
   
-  @scala.inline
-  def ssfPROGRAMFILES: `38` = 38.asInstanceOf[`38`]
+  inline def ssfPROGRAMFILES: `38` = 38.asInstanceOf[`38`]
   
-  @scala.inline
-  def ssfPROGRAMFILESx86: `48` = 48.asInstanceOf[`48`]
+  inline def ssfPROGRAMFILESx86: `48` = 48.asInstanceOf[`48`]
   
-  @scala.inline
-  def ssfPROGRAMS: `2` = 2.asInstanceOf[`2`]
+  inline def ssfPROGRAMS: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def ssfRECENT: `8` = 8.asInstanceOf[`8`]
+  inline def ssfRECENT: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def ssfSENDTO: `9` = 9.asInstanceOf[`9`]
+  inline def ssfSENDTO: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def ssfSTARTMENU: `11` = 11.asInstanceOf[`11`]
+  inline def ssfSTARTMENU: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def ssfSTARTUP: `7` = 7.asInstanceOf[`7`]
+  inline def ssfSTARTUP: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def ssfSYSTEM: `37` = 37.asInstanceOf[`37`]
+  inline def ssfSYSTEM: `37` = 37.asInstanceOf[`37`]
   
-  @scala.inline
-  def ssfSYSTEMx86: `41` = 41.asInstanceOf[`41`]
+  inline def ssfSYSTEMx86: `41` = 41.asInstanceOf[`41`]
   
-  @scala.inline
-  def ssfTEMPLATES: `21` = 21.asInstanceOf[`21`]
+  inline def ssfTEMPLATES: `21` = 21.asInstanceOf[`21`]
   
-  @scala.inline
-  def ssfWINDOWS: `36` = 36.asInstanceOf[`36`]
+  inline def ssfWINDOWS: `36` = 36.asInstanceOf[`36`]
 }

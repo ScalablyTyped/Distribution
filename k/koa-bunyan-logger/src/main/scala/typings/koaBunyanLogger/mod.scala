@@ -12,29 +12,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware[DefaultState, DefaultContext]]
-  @scala.inline
-  def apply(logger: typings.bunyan.mod.^): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(logger.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def apply(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def apply(logger: typings.bunyan.mod.^): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(logger.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
   
   @JSImport("koa-bunyan-logger", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def requestIdContext(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestIdContext")().asInstanceOf[Middleware[DefaultState, DefaultContext]]
-  @scala.inline
-  def requestIdContext(opts: RequestIdContextOptions): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestIdContext")(opts.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def requestIdContext(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestIdContext")().asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def requestIdContext(opts: RequestIdContextOptions): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestIdContext")(opts.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
   
-  @scala.inline
-  def requestLogger(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestLogger")().asInstanceOf[Middleware[DefaultState, DefaultContext]]
-  @scala.inline
-  def requestLogger(opts: RequestLoggerOptions): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestLogger")(opts.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def requestLogger(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestLogger")().asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def requestLogger(opts: RequestLoggerOptions): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestLogger")(opts.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
   
-  @scala.inline
-  def timeContext(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("timeContext")().asInstanceOf[Middleware[DefaultState, DefaultContext]]
-  @scala.inline
-  def timeContext(opts: TimeContextOptions): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("timeContext")(opts.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def timeContext(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("timeContext")().asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def timeContext(opts: TimeContextOptions): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("timeContext")(opts.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
   
   trait RequestData extends StObject {
     
@@ -42,17 +34,14 @@ object mod {
   }
   object RequestData {
     
-    @scala.inline
-    def apply(req: Request): RequestData = {
+    inline def apply(req: Request): RequestData = {
       val __obj = js.Dynamic.literal(req = req.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequestData]
     }
     
-    @scala.inline
-    implicit class RequestDataMutableBuilder[Self <: RequestData] (val x: Self) extends AnyVal {
+    extension [Self <: RequestData](x: Self) {
       
-      @scala.inline
-      def setReq(value: Request): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+      inline def setReq(value: Request): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
     }
   }
   
@@ -68,38 +57,28 @@ object mod {
   }
   object RequestIdContextOptions {
     
-    @scala.inline
-    def apply(): RequestIdContextOptions = {
+    inline def apply(): RequestIdContextOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RequestIdContextOptions]
     }
     
-    @scala.inline
-    implicit class RequestIdContextOptionsMutableBuilder[Self <: RequestIdContextOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RequestIdContextOptions](x: Self) {
       
-      @scala.inline
-      def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+      inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+      inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
       
-      @scala.inline
-      def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setProp(value: String): Self = StObject.set(x, "prop", value.asInstanceOf[js.Any])
+      inline def setProp(value: String): Self = StObject.set(x, "prop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropUndefined: Self = StObject.set(x, "prop", js.undefined)
+      inline def setPropUndefined: Self = StObject.set(x, "prop", js.undefined)
       
-      @scala.inline
-      def setRequestProp(value: String): Self = StObject.set(x, "requestProp", value.asInstanceOf[js.Any])
+      inline def setRequestProp(value: String): Self = StObject.set(x, "requestProp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestPropUndefined: Self = StObject.set(x, "requestProp", js.undefined)
+      inline def setRequestPropUndefined: Self = StObject.set(x, "requestProp", js.undefined)
     }
   }
   
@@ -123,65 +102,46 @@ object mod {
   }
   object RequestLoggerOptions {
     
-    @scala.inline
-    def apply(): RequestLoggerOptions = {
+    inline def apply(): RequestLoggerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RequestLoggerOptions]
     }
     
-    @scala.inline
-    implicit class RequestLoggerOptionsMutableBuilder[Self <: RequestLoggerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RequestLoggerOptions](x: Self) {
       
-      @scala.inline
-      def setDurationField(value: String): Self = StObject.set(x, "durationField", value.asInstanceOf[js.Any])
+      inline def setDurationField(value: String): Self = StObject.set(x, "durationField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationFieldUndefined: Self = StObject.set(x, "durationField", js.undefined)
+      inline def setDurationFieldUndefined: Self = StObject.set(x, "durationField", js.undefined)
       
-      @scala.inline
-      def setFormatRequestMessage(value: /* requestData */ RequestData => String): Self = StObject.set(x, "formatRequestMessage", js.Any.fromFunction1(value))
+      inline def setFormatRequestMessage(value: /* requestData */ RequestData => String): Self = StObject.set(x, "formatRequestMessage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFormatRequestMessageUndefined: Self = StObject.set(x, "formatRequestMessage", js.undefined)
+      inline def setFormatRequestMessageUndefined: Self = StObject.set(x, "formatRequestMessage", js.undefined)
       
-      @scala.inline
-      def setFormatResponseMessage(value: /* responseData */ ResponseData => String): Self = StObject.set(x, "formatResponseMessage", js.Any.fromFunction1(value))
+      inline def setFormatResponseMessage(value: /* responseData */ ResponseData => String): Self = StObject.set(x, "formatResponseMessage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFormatResponseMessageUndefined: Self = StObject.set(x, "formatResponseMessage", js.undefined)
+      inline def setFormatResponseMessageUndefined: Self = StObject.set(x, "formatResponseMessage", js.undefined)
       
-      @scala.inline
-      def setIgnorePath(value: js.Array[String]): Self = StObject.set(x, "ignorePath", value.asInstanceOf[js.Any])
+      inline def setIgnorePath(value: js.Array[String]): Self = StObject.set(x, "ignorePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnorePathUndefined: Self = StObject.set(x, "ignorePath", js.undefined)
+      inline def setIgnorePathUndefined: Self = StObject.set(x, "ignorePath", js.undefined)
       
-      @scala.inline
-      def setIgnorePathVarargs(value: String*): Self = StObject.set(x, "ignorePath", js.Array(value :_*))
+      inline def setIgnorePathVarargs(value: String*): Self = StObject.set(x, "ignorePath", js.Array(value :_*))
       
-      @scala.inline
-      def setLevelFn(value: (/* status */ Double, /* err */ Error) => String): Self = StObject.set(x, "levelFn", js.Any.fromFunction2(value))
+      inline def setLevelFn(value: (/* status */ Double, /* err */ Error) => String): Self = StObject.set(x, "levelFn", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLevelFnUndefined: Self = StObject.set(x, "levelFn", js.undefined)
+      inline def setLevelFnUndefined: Self = StObject.set(x, "levelFn", js.undefined)
       
-      @scala.inline
-      def setUpdateLogFields(value: /* data */ RequestData => RequestData): Self = StObject.set(x, "updateLogFields", js.Any.fromFunction1(value))
+      inline def setUpdateLogFields(value: /* data */ RequestData => RequestData): Self = StObject.set(x, "updateLogFields", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpdateLogFieldsUndefined: Self = StObject.set(x, "updateLogFields", js.undefined)
+      inline def setUpdateLogFieldsUndefined: Self = StObject.set(x, "updateLogFields", js.undefined)
       
-      @scala.inline
-      def setUpdateRequestLogFields(value: /* requestData */ RequestData => RequestData): Self = StObject.set(x, "updateRequestLogFields", js.Any.fromFunction1(value))
+      inline def setUpdateRequestLogFields(value: /* requestData */ RequestData => RequestData): Self = StObject.set(x, "updateRequestLogFields", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpdateRequestLogFieldsUndefined: Self = StObject.set(x, "updateRequestLogFields", js.undefined)
+      inline def setUpdateRequestLogFieldsUndefined: Self = StObject.set(x, "updateRequestLogFields", js.undefined)
       
-      @scala.inline
-      def setUpdateResponseLogFields(value: /* responseData */ ResponseData => ResponseData): Self = StObject.set(x, "updateResponseLogFields", js.Any.fromFunction1(value))
+      inline def setUpdateResponseLogFields(value: /* responseData */ ResponseData => ResponseData): Self = StObject.set(x, "updateResponseLogFields", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpdateResponseLogFieldsUndefined: Self = StObject.set(x, "updateResponseLogFields", js.undefined)
+      inline def setUpdateResponseLogFieldsUndefined: Self = StObject.set(x, "updateResponseLogFields", js.undefined)
     }
   }
   
@@ -193,20 +153,16 @@ object mod {
   }
   object ResponseData {
     
-    @scala.inline
-    def apply(req: Request, res: Response): ResponseData = {
+    inline def apply(req: Request, res: Response): ResponseData = {
       val __obj = js.Dynamic.literal(req = req.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResponseData]
     }
     
-    @scala.inline
-    implicit class ResponseDataMutableBuilder[Self <: ResponseData] (val x: Self) extends AnyVal {
+    extension [Self <: ResponseData](x: Self) {
       
-      @scala.inline
-      def setReq(value: Request): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+      inline def setReq(value: Request): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRes(value: Response): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+      inline def setRes(value: Response): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
     }
   }
   
@@ -218,26 +174,20 @@ object mod {
   }
   object TimeContextOptions {
     
-    @scala.inline
-    def apply(): TimeContextOptions = {
+    inline def apply(): TimeContextOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TimeContextOptions]
     }
     
-    @scala.inline
-    implicit class TimeContextOptionsMutableBuilder[Self <: TimeContextOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TimeContextOptions](x: Self) {
       
-      @scala.inline
-      def setLogLevel(value: String): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+      inline def setLogLevel(value: String): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
+      inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
       
-      @scala.inline
-      def setUpdateLogFields(value: /* fields */ js.Any => js.Any): Self = StObject.set(x, "updateLogFields", js.Any.fromFunction1(value))
+      inline def setUpdateLogFields(value: /* fields */ js.Any => js.Any): Self = StObject.set(x, "updateLogFields", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpdateLogFieldsUndefined: Self = StObject.set(x, "updateLogFields", js.undefined)
+      inline def setUpdateLogFieldsUndefined: Self = StObject.set(x, "updateLogFields", js.undefined)
     }
   }
   
@@ -251,17 +201,14 @@ object mod {
     }
     object BaseContext {
       
-      @scala.inline
-      def apply(log: typings.bunyan.mod.^): BaseContext = {
+      inline def apply(log: typings.bunyan.mod.^): BaseContext = {
         val __obj = js.Dynamic.literal(log = log.asInstanceOf[js.Any])
         __obj.asInstanceOf[BaseContext]
       }
       
-      @scala.inline
-      implicit class BaseContextMutableBuilder[Self <: BaseContext] (val x: Self) extends AnyVal {
+      extension [Self <: BaseContext](x: Self) {
         
-        @scala.inline
-        def setLog(value: typings.bunyan.mod.^): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+        inline def setLog(value: typings.bunyan.mod.^): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       }
     }
   }

@@ -44,10 +44,8 @@ object mod {
   // 🐶
   ```
   */
-  @scala.inline
-  def apply(excludePatterns: js.Array[String | RegExp | (js.Function1[/* output */ String, Boolean])]): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].apply(excludePatterns.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
-  @scala.inline
-  def apply(
+  inline def apply(excludePatterns: js.Array[String | RegExp | (js.Function1[/* output */ String, Boolean])]): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].apply(excludePatterns.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+  inline def apply(
     excludePatterns: js.Array[String | RegExp | (js.Function1[/* output */ String, Boolean])],
     options: Options
   ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].apply(excludePatterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
@@ -86,8 +84,7 @@ object mod {
   }
   object Console {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       debug: (/* message */ js.UndefOr[js.Any], /* repeated */ js.Any) => Unit,
       error: (/* message */ js.UndefOr[js.Any], /* repeated */ js.Any) => Unit,
       info: (/* message */ js.UndefOr[js.Any], /* repeated */ js.Any) => Unit,
@@ -98,23 +95,17 @@ object mod {
       __obj.asInstanceOf[Console]
     }
     
-    @scala.inline
-    implicit class ConsoleMutableBuilder[Self <: Console] (val x: Self) extends AnyVal {
+    extension [Self <: Console](x: Self) {
       
-      @scala.inline
-      def setDebug(value: (/* message */ js.UndefOr[js.Any], /* repeated */ js.Any) => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction2(value))
+      inline def setDebug(value: (/* message */ js.UndefOr[js.Any], /* repeated */ js.Any) => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setError(value: (/* message */ js.UndefOr[js.Any], /* repeated */ js.Any) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
+      inline def setError(value: (/* message */ js.UndefOr[js.Any], /* repeated */ js.Any) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInfo(value: (/* message */ js.UndefOr[js.Any], /* repeated */ js.Any) => Unit): Self = StObject.set(x, "info", js.Any.fromFunction2(value))
+      inline def setInfo(value: (/* message */ js.UndefOr[js.Any], /* repeated */ js.Any) => Unit): Self = StObject.set(x, "info", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLog(value: (/* message */ js.UndefOr[js.Any], /* repeated */ js.Any) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
+      inline def setLog(value: (/* message */ js.UndefOr[js.Any], /* repeated */ js.Any) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWarn(value: (/* message */ js.UndefOr[js.Any], /* repeated */ js.Any) => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction2(value))
+      inline def setWarn(value: (/* message */ js.UndefOr[js.Any], /* repeated */ js.Any) => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction2(value))
     }
   }
   
@@ -134,29 +125,22 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setConsole(value: Console): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
+      inline def setConsole(value: Console): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsoleUndefined: Self = StObject.set(x, "console", js.undefined)
+      inline def setConsoleUndefined: Self = StObject.set(x, "console", js.undefined)
       
-      @scala.inline
-      def setMethods(value: js.Array[log | debug | info | warn | error]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      inline def setMethods(value: js.Array[log | debug | info | warn | error]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
+      inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
       
-      @scala.inline
-      def setMethodsVarargs(value: (log | debug | info | warn | error)*): Self = StObject.set(x, "methods", js.Array(value :_*))
+      inline def setMethodsVarargs(value: (log | debug | info | warn | error)*): Self = StObject.set(x, "methods", js.Array(value :_*))
     }
   }
 }

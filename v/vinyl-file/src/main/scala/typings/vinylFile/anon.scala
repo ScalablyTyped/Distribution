@@ -14,26 +14,20 @@ object anon {
   }
   object Contents {
     
-    @scala.inline
-    def apply(): Contents = {
+    inline def apply(): Contents = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Contents]
     }
     
-    @scala.inline
-    implicit class ContentsMutableBuilder[Self <: Contents] (val x: Self) extends AnyVal {
+    extension [Self <: Contents](x: Self) {
       
-      @scala.inline
-      def setContents(value: Boolean): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      inline def setContents(value: Boolean): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
+      inline def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
       
-      @scala.inline
-      def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
+      inline def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeepUndefined: Self = StObject.set(x, "deep", js.undefined)
+      inline def setDeepUndefined: Self = StObject.set(x, "deep", js.undefined)
     }
   }
 }

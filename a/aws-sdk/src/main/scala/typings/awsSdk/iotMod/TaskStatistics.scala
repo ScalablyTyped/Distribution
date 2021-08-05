@@ -43,55 +43,39 @@ trait TaskStatistics extends StObject {
 }
 object TaskStatistics {
   
-  @scala.inline
-  def apply(): TaskStatistics = {
+  inline def apply(): TaskStatistics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TaskStatistics]
   }
   
-  @scala.inline
-  implicit class TaskStatisticsMutableBuilder[Self <: TaskStatistics] (val x: Self) extends AnyVal {
+  extension [Self <: TaskStatistics](x: Self) {
     
-    @scala.inline
-    def setCanceledChecks(value: CanceledChecksCount): Self = StObject.set(x, "canceledChecks", value.asInstanceOf[js.Any])
+    inline def setCanceledChecks(value: CanceledChecksCount): Self = StObject.set(x, "canceledChecks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanceledChecksUndefined: Self = StObject.set(x, "canceledChecks", js.undefined)
+    inline def setCanceledChecksUndefined: Self = StObject.set(x, "canceledChecks", js.undefined)
     
-    @scala.inline
-    def setCompliantChecks(value: CompliantChecksCount): Self = StObject.set(x, "compliantChecks", value.asInstanceOf[js.Any])
+    inline def setCompliantChecks(value: CompliantChecksCount): Self = StObject.set(x, "compliantChecks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompliantChecksUndefined: Self = StObject.set(x, "compliantChecks", js.undefined)
+    inline def setCompliantChecksUndefined: Self = StObject.set(x, "compliantChecks", js.undefined)
     
-    @scala.inline
-    def setFailedChecks(value: FailedChecksCount): Self = StObject.set(x, "failedChecks", value.asInstanceOf[js.Any])
+    inline def setFailedChecks(value: FailedChecksCount): Self = StObject.set(x, "failedChecks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedChecksUndefined: Self = StObject.set(x, "failedChecks", js.undefined)
+    inline def setFailedChecksUndefined: Self = StObject.set(x, "failedChecks", js.undefined)
     
-    @scala.inline
-    def setInProgressChecks(value: InProgressChecksCount): Self = StObject.set(x, "inProgressChecks", value.asInstanceOf[js.Any])
+    inline def setInProgressChecks(value: InProgressChecksCount): Self = StObject.set(x, "inProgressChecks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInProgressChecksUndefined: Self = StObject.set(x, "inProgressChecks", js.undefined)
+    inline def setInProgressChecksUndefined: Self = StObject.set(x, "inProgressChecks", js.undefined)
     
-    @scala.inline
-    def setNonCompliantChecks(value: NonCompliantChecksCount): Self = StObject.set(x, "nonCompliantChecks", value.asInstanceOf[js.Any])
+    inline def setNonCompliantChecks(value: NonCompliantChecksCount): Self = StObject.set(x, "nonCompliantChecks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonCompliantChecksUndefined: Self = StObject.set(x, "nonCompliantChecks", js.undefined)
+    inline def setNonCompliantChecksUndefined: Self = StObject.set(x, "nonCompliantChecks", js.undefined)
     
-    @scala.inline
-    def setTotalChecks(value: TotalChecksCount): Self = StObject.set(x, "totalChecks", value.asInstanceOf[js.Any])
+    inline def setTotalChecks(value: TotalChecksCount): Self = StObject.set(x, "totalChecks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalChecksUndefined: Self = StObject.set(x, "totalChecks", js.undefined)
+    inline def setTotalChecksUndefined: Self = StObject.set(x, "totalChecks", js.undefined)
     
-    @scala.inline
-    def setWaitingForDataCollectionChecks(value: WaitingForDataCollectionChecksCount): Self = StObject.set(x, "waitingForDataCollectionChecks", value.asInstanceOf[js.Any])
+    inline def setWaitingForDataCollectionChecks(value: WaitingForDataCollectionChecksCount): Self = StObject.set(x, "waitingForDataCollectionChecks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaitingForDataCollectionChecksUndefined: Self = StObject.set(x, "waitingForDataCollectionChecks", js.undefined)
+    inline def setWaitingForDataCollectionChecksUndefined: Self = StObject.set(x, "waitingForDataCollectionChecks", js.undefined)
   }
 }

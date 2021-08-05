@@ -12,6 +12,5 @@ object ionLifeCycleHOCMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def withIonLifeCycle(WrappedComponent: ComponentType[js.Any]): Instantiable = ^.asInstanceOf[js.Dynamic].applyDynamic("withIonLifeCycle")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[Instantiable]
+  inline def withIonLifeCycle(WrappedComponent: ComponentType[js.Any]): Instantiable = ^.asInstanceOf[js.Dynamic].applyDynamic("withIonLifeCycle")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[Instantiable]
 }

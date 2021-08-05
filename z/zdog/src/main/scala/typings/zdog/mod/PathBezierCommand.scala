@@ -13,16 +13,13 @@ trait PathBezierCommand
 }
 object PathBezierCommand {
   
-  @scala.inline
-  def apply(bezier: js.Tuple3[VectorOptions, VectorOptions, VectorOptions]): PathBezierCommand = {
+  inline def apply(bezier: js.Tuple3[VectorOptions, VectorOptions, VectorOptions]): PathBezierCommand = {
     val __obj = js.Dynamic.literal(bezier = bezier.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathBezierCommand]
   }
   
-  @scala.inline
-  implicit class PathBezierCommandMutableBuilder[Self <: PathBezierCommand] (val x: Self) extends AnyVal {
+  extension [Self <: PathBezierCommand](x: Self) {
     
-    @scala.inline
-    def setBezier(value: js.Tuple3[VectorOptions, VectorOptions, VectorOptions]): Self = StObject.set(x, "bezier", value.asInstanceOf[js.Any])
+    inline def setBezier(value: js.Tuple3[VectorOptions, VectorOptions, VectorOptions]): Self = StObject.set(x, "bezier", value.asInstanceOf[js.Any])
   }
 }

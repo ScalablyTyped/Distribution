@@ -16,37 +16,27 @@ trait NavigationStackRouterConfig extends StObject {
 }
 object NavigationStackRouterConfig {
   
-  @scala.inline
-  def apply(): NavigationStackRouterConfig = {
+  inline def apply(): NavigationStackRouterConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NavigationStackRouterConfig]
   }
   
-  @scala.inline
-  implicit class NavigationStackRouterConfigMutableBuilder[Self <: NavigationStackRouterConfig] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationStackRouterConfig](x: Self) {
     
-    @scala.inline
-    def setInitialRouteKey(value: String): Self = StObject.set(x, "initialRouteKey", value.asInstanceOf[js.Any])
+    inline def setInitialRouteKey(value: String): Self = StObject.set(x, "initialRouteKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialRouteKeyUndefined: Self = StObject.set(x, "initialRouteKey", js.undefined)
+    inline def setInitialRouteKeyUndefined: Self = StObject.set(x, "initialRouteKey", js.undefined)
     
-    @scala.inline
-    def setInitialRouteName(value: String): Self = StObject.set(x, "initialRouteName", value.asInstanceOf[js.Any])
+    inline def setInitialRouteName(value: String): Self = StObject.set(x, "initialRouteName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialRouteNameUndefined: Self = StObject.set(x, "initialRouteName", js.undefined)
+    inline def setInitialRouteNameUndefined: Self = StObject.set(x, "initialRouteName", js.undefined)
     
-    @scala.inline
-    def setInitialRouteParams(value: NavigationParams): Self = StObject.set(x, "initialRouteParams", value.asInstanceOf[js.Any])
+    inline def setInitialRouteParams(value: NavigationParams): Self = StObject.set(x, "initialRouteParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialRouteParamsUndefined: Self = StObject.set(x, "initialRouteParams", js.undefined)
+    inline def setInitialRouteParamsUndefined: Self = StObject.set(x, "initialRouteParams", js.undefined)
     
-    @scala.inline
-    def setPaths(value: NavigationPathsConfig): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+    inline def setPaths(value: NavigationPathsConfig): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
+    inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
   }
 }

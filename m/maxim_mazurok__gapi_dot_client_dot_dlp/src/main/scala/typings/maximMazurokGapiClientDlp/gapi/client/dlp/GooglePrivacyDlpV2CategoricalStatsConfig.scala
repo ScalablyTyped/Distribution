@@ -14,19 +14,15 @@ trait GooglePrivacyDlpV2CategoricalStatsConfig extends StObject {
 }
 object GooglePrivacyDlpV2CategoricalStatsConfig {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2CategoricalStatsConfig = {
+  inline def apply(): GooglePrivacyDlpV2CategoricalStatsConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2CategoricalStatsConfig]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2CategoricalStatsConfigMutableBuilder[Self <: GooglePrivacyDlpV2CategoricalStatsConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2CategoricalStatsConfig](x: Self) {
     
-    @scala.inline
-    def setField(value: GooglePrivacyDlpV2FieldId): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: GooglePrivacyDlpV2FieldId): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
   }
 }

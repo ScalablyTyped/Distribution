@@ -23,31 +23,23 @@ trait Scte35SpliceInsert extends StObject {
 }
 object Scte35SpliceInsert {
   
-  @scala.inline
-  def apply(): Scte35SpliceInsert = {
+  inline def apply(): Scte35SpliceInsert = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Scte35SpliceInsert]
   }
   
-  @scala.inline
-  implicit class Scte35SpliceInsertMutableBuilder[Self <: Scte35SpliceInsert] (val x: Self) extends AnyVal {
+  extension [Self <: Scte35SpliceInsert](x: Self) {
     
-    @scala.inline
-    def setAdAvailOffset(value: integerMinNegative1000Max1000): Self = StObject.set(x, "AdAvailOffset", value.asInstanceOf[js.Any])
+    inline def setAdAvailOffset(value: integerMinNegative1000Max1000): Self = StObject.set(x, "AdAvailOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdAvailOffsetUndefined: Self = StObject.set(x, "AdAvailOffset", js.undefined)
+    inline def setAdAvailOffsetUndefined: Self = StObject.set(x, "AdAvailOffset", js.undefined)
     
-    @scala.inline
-    def setNoRegionalBlackoutFlag(value: Scte35SpliceInsertNoRegionalBlackoutBehavior): Self = StObject.set(x, "NoRegionalBlackoutFlag", value.asInstanceOf[js.Any])
+    inline def setNoRegionalBlackoutFlag(value: Scte35SpliceInsertNoRegionalBlackoutBehavior): Self = StObject.set(x, "NoRegionalBlackoutFlag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoRegionalBlackoutFlagUndefined: Self = StObject.set(x, "NoRegionalBlackoutFlag", js.undefined)
+    inline def setNoRegionalBlackoutFlagUndefined: Self = StObject.set(x, "NoRegionalBlackoutFlag", js.undefined)
     
-    @scala.inline
-    def setWebDeliveryAllowedFlag(value: Scte35SpliceInsertWebDeliveryAllowedBehavior): Self = StObject.set(x, "WebDeliveryAllowedFlag", value.asInstanceOf[js.Any])
+    inline def setWebDeliveryAllowedFlag(value: Scte35SpliceInsertWebDeliveryAllowedBehavior): Self = StObject.set(x, "WebDeliveryAllowedFlag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebDeliveryAllowedFlagUndefined: Self = StObject.set(x, "WebDeliveryAllowedFlag", js.undefined)
+    inline def setWebDeliveryAllowedFlagUndefined: Self = StObject.set(x, "WebDeliveryAllowedFlag", js.undefined)
   }
 }

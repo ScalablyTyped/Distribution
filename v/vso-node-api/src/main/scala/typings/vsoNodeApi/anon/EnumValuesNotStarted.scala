@@ -10,16 +10,13 @@ trait EnumValuesNotStarted extends StObject {
 }
 object EnumValuesNotStarted {
   
-  @scala.inline
-  def apply(enumValues: NotStarted): EnumValuesNotStarted = {
+  inline def apply(enumValues: NotStarted): EnumValuesNotStarted = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesNotStarted]
   }
   
-  @scala.inline
-  implicit class EnumValuesNotStartedMutableBuilder[Self <: EnumValuesNotStarted] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesNotStarted](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: NotStarted): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: NotStarted): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

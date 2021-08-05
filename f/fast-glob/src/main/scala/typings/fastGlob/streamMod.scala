@@ -17,7 +17,7 @@ object streamMod {
   trait ProviderStream
     extends typings.fastGlob.providerMod.default[Readable] {
     
-    var _reader: typings.fastGlob.readersStreamMod.default = js.native
+    /* protected */ var _reader: typings.fastGlob.readersStreamMod.default = js.native
     
     def api(root: String, task: Task, options: ReaderOptions): Readable = js.native
   }

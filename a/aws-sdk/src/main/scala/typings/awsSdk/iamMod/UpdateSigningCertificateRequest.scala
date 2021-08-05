@@ -23,25 +23,19 @@ trait UpdateSigningCertificateRequest extends StObject {
 }
 object UpdateSigningCertificateRequest {
   
-  @scala.inline
-  def apply(CertificateId: certificateIdType, Status: statusType): UpdateSigningCertificateRequest = {
+  inline def apply(CertificateId: certificateIdType, Status: statusType): UpdateSigningCertificateRequest = {
     val __obj = js.Dynamic.literal(CertificateId = CertificateId.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateSigningCertificateRequest]
   }
   
-  @scala.inline
-  implicit class UpdateSigningCertificateRequestMutableBuilder[Self <: UpdateSigningCertificateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateSigningCertificateRequest](x: Self) {
     
-    @scala.inline
-    def setCertificateId(value: certificateIdType): Self = StObject.set(x, "CertificateId", value.asInstanceOf[js.Any])
+    inline def setCertificateId(value: certificateIdType): Self = StObject.set(x, "CertificateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: statusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: statusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserName(value: existingUserNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: existingUserNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
+    inline def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
   }
 }

@@ -18,27 +18,21 @@ trait WebAclRuleStatementAndStatementStatementXssMatchStatement extends StObject
 }
 object WebAclRuleStatementAndStatementStatementXssMatchStatement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     textTransformations: js.Array[WebAclRuleStatementAndStatementStatementXssMatchStatementTextTransformation]
   ): WebAclRuleStatementAndStatementStatementXssMatchStatement = {
     val __obj = js.Dynamic.literal(textTransformations = textTransformations.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebAclRuleStatementAndStatementStatementXssMatchStatement]
   }
   
-  @scala.inline
-  implicit class WebAclRuleStatementAndStatementStatementXssMatchStatementMutableBuilder[Self <: WebAclRuleStatementAndStatementStatementXssMatchStatement] (val x: Self) extends AnyVal {
+  extension [Self <: WebAclRuleStatementAndStatementStatementXssMatchStatement](x: Self) {
     
-    @scala.inline
-    def setFieldToMatch(value: WebAclRuleStatementAndStatementStatementXssMatchStatementFieldToMatch): Self = StObject.set(x, "fieldToMatch", value.asInstanceOf[js.Any])
+    inline def setFieldToMatch(value: WebAclRuleStatementAndStatementStatementXssMatchStatementFieldToMatch): Self = StObject.set(x, "fieldToMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldToMatchUndefined: Self = StObject.set(x, "fieldToMatch", js.undefined)
+    inline def setFieldToMatchUndefined: Self = StObject.set(x, "fieldToMatch", js.undefined)
     
-    @scala.inline
-    def setTextTransformations(value: js.Array[WebAclRuleStatementAndStatementStatementXssMatchStatementTextTransformation]): Self = StObject.set(x, "textTransformations", value.asInstanceOf[js.Any])
+    inline def setTextTransformations(value: js.Array[WebAclRuleStatementAndStatementStatementXssMatchStatementTextTransformation]): Self = StObject.set(x, "textTransformations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextTransformationsVarargs(value: WebAclRuleStatementAndStatementStatementXssMatchStatementTextTransformation*): Self = StObject.set(x, "textTransformations", js.Array(value :_*))
+    inline def setTextTransformationsVarargs(value: WebAclRuleStatementAndStatementStatementXssMatchStatementTextTransformation*): Self = StObject.set(x, "textTransformations", js.Array(value :_*))
   }
 }

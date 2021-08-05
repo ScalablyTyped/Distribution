@@ -35,9 +35,7 @@ object treeBuilderMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(repo: Repository): js.Promise[Treebuilder] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Treebuilder]]
-    @scala.inline
-    def create(repo: Repository, source: Tree): js.Promise[Treebuilder] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Treebuilder]]
+    inline def create(repo: Repository): js.Promise[Treebuilder] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Treebuilder]]
+    inline def create(repo: Repository, source: Tree): js.Promise[Treebuilder] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Treebuilder]]
   }
 }

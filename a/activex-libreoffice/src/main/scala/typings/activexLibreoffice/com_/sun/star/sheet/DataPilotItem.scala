@@ -30,8 +30,7 @@ trait DataPilotItem
 }
 object DataPilotItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     IsHidden: Boolean,
     Name: String,
     Position: Double,
@@ -54,16 +53,12 @@ object DataPilotItem {
     __obj.asInstanceOf[DataPilotItem]
   }
   
-  @scala.inline
-  implicit class DataPilotItemMutableBuilder[Self <: DataPilotItem] (val x: Self) extends AnyVal {
+  extension [Self <: DataPilotItem](x: Self) {
     
-    @scala.inline
-    def setIsHidden(value: Boolean): Self = StObject.set(x, "IsHidden", value.asInstanceOf[js.Any])
+    inline def setIsHidden(value: Boolean): Self = StObject.set(x, "IsHidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowDetail(value: Boolean): Self = StObject.set(x, "ShowDetail", value.asInstanceOf[js.Any])
+    inline def setShowDetail(value: Boolean): Self = StObject.set(x, "ShowDetail", value.asInstanceOf[js.Any])
   }
 }

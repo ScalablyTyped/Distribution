@@ -76,73 +76,51 @@ trait SchemaVideoContentDetails extends StObject {
 }
 object SchemaVideoContentDetails {
   
-  @scala.inline
-  def apply(): SchemaVideoContentDetails = {
+  inline def apply(): SchemaVideoContentDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaVideoContentDetails]
   }
   
-  @scala.inline
-  implicit class SchemaVideoContentDetailsMutableBuilder[Self <: SchemaVideoContentDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaVideoContentDetails](x: Self) {
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+    inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
-    @scala.inline
-    def setContentRating(value: SchemaContentRating): Self = StObject.set(x, "contentRating", value.asInstanceOf[js.Any])
+    inline def setContentRating(value: SchemaContentRating): Self = StObject.set(x, "contentRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentRatingUndefined: Self = StObject.set(x, "contentRating", js.undefined)
+    inline def setContentRatingUndefined: Self = StObject.set(x, "contentRating", js.undefined)
     
-    @scala.inline
-    def setCountryRestriction(value: SchemaAccessPolicy): Self = StObject.set(x, "countryRestriction", value.asInstanceOf[js.Any])
+    inline def setCountryRestriction(value: SchemaAccessPolicy): Self = StObject.set(x, "countryRestriction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryRestrictionUndefined: Self = StObject.set(x, "countryRestriction", js.undefined)
+    inline def setCountryRestrictionUndefined: Self = StObject.set(x, "countryRestriction", js.undefined)
     
-    @scala.inline
-    def setDefinition(value: String): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
+    inline def setDefinition(value: String): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinitionUndefined: Self = StObject.set(x, "definition", js.undefined)
+    inline def setDefinitionUndefined: Self = StObject.set(x, "definition", js.undefined)
     
-    @scala.inline
-    def setDimension(value: String): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
+    inline def setDimension(value: String): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionUndefined: Self = StObject.set(x, "dimension", js.undefined)
+    inline def setDimensionUndefined: Self = StObject.set(x, "dimension", js.undefined)
     
-    @scala.inline
-    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setHasCustomThumbnail(value: Boolean): Self = StObject.set(x, "hasCustomThumbnail", value.asInstanceOf[js.Any])
+    inline def setHasCustomThumbnail(value: Boolean): Self = StObject.set(x, "hasCustomThumbnail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasCustomThumbnailUndefined: Self = StObject.set(x, "hasCustomThumbnail", js.undefined)
+    inline def setHasCustomThumbnailUndefined: Self = StObject.set(x, "hasCustomThumbnail", js.undefined)
     
-    @scala.inline
-    def setLicensedContent(value: Boolean): Self = StObject.set(x, "licensedContent", value.asInstanceOf[js.Any])
+    inline def setLicensedContent(value: Boolean): Self = StObject.set(x, "licensedContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicensedContentUndefined: Self = StObject.set(x, "licensedContent", js.undefined)
+    inline def setLicensedContentUndefined: Self = StObject.set(x, "licensedContent", js.undefined)
     
-    @scala.inline
-    def setProjection(value: String): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+    inline def setProjection(value: String): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+    inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
     
-    @scala.inline
-    def setRegionRestriction(value: SchemaVideoContentDetailsRegionRestriction): Self = StObject.set(x, "regionRestriction", value.asInstanceOf[js.Any])
+    inline def setRegionRestriction(value: SchemaVideoContentDetailsRegionRestriction): Self = StObject.set(x, "regionRestriction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionRestrictionUndefined: Self = StObject.set(x, "regionRestriction", js.undefined)
+    inline def setRegionRestrictionUndefined: Self = StObject.set(x, "regionRestriction", js.undefined)
   }
 }

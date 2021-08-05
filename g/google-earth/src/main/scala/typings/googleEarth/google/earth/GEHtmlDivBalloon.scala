@@ -26,8 +26,7 @@ trait GEHtmlDivBalloon
 }
 object GEHtmlDivBalloon {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getBackgroundColor: () => String,
     getCloseButtonEnabled: () => Boolean,
     getContentDiv: () => HTMLDivElement,
@@ -53,13 +52,10 @@ object GEHtmlDivBalloon {
     __obj.asInstanceOf[GEHtmlDivBalloon]
   }
   
-  @scala.inline
-  implicit class GEHtmlDivBalloonMutableBuilder[Self <: GEHtmlDivBalloon] (val x: Self) extends AnyVal {
+  extension [Self <: GEHtmlDivBalloon](x: Self) {
     
-    @scala.inline
-    def setGetContentDiv(value: () => HTMLDivElement): Self = StObject.set(x, "getContentDiv", js.Any.fromFunction0(value))
+    inline def setGetContentDiv(value: () => HTMLDivElement): Self = StObject.set(x, "getContentDiv", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetContentDiv(value: HTMLElement => Unit): Self = StObject.set(x, "setContentDiv", js.Any.fromFunction1(value))
+    inline def setSetContentDiv(value: HTMLElement => Unit): Self = StObject.set(x, "setContentDiv", js.Any.fromFunction1(value))
   }
 }

@@ -16,25 +16,19 @@ trait ModMoveDJ extends StObject {
 }
 object ModMoveDJ {
   
-  @scala.inline
-  def apply(index: Double, moderator: String, old: Double, userID: String): ModMoveDJ = {
+  inline def apply(index: Double, moderator: String, old: Double, userID: String): ModMoveDJ = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], moderator = moderator.asInstanceOf[js.Any], old = old.asInstanceOf[js.Any], userID = userID.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModMoveDJ]
   }
   
-  @scala.inline
-  implicit class ModMoveDJMutableBuilder[Self <: ModMoveDJ] (val x: Self) extends AnyVal {
+  extension [Self <: ModMoveDJ](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModerator(value: String): Self = StObject.set(x, "moderator", value.asInstanceOf[js.Any])
+    inline def setModerator(value: String): Self = StObject.set(x, "moderator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOld(value: Double): Self = StObject.set(x, "old", value.asInstanceOf[js.Any])
+    inline def setOld(value: Double): Self = StObject.set(x, "old", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserID(value: String): Self = StObject.set(x, "userID", value.asInstanceOf[js.Any])
+    inline def setUserID(value: String): Self = StObject.set(x, "userID", value.asInstanceOf[js.Any])
   }
 }

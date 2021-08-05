@@ -21,8 +21,7 @@ trait ISharedFileInfo extends StObject {
 }
 object ISharedFileInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ChangeTimeUtc: Date,
     Clone: () => ISharedFileInfo,
     Extension: String,
@@ -34,25 +33,18 @@ object ISharedFileInfo {
     __obj.asInstanceOf[ISharedFileInfo]
   }
   
-  @scala.inline
-  implicit class ISharedFileInfoMutableBuilder[Self <: ISharedFileInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ISharedFileInfo](x: Self) {
     
-    @scala.inline
-    def setChangeTimeUtc(value: Date): Self = StObject.set(x, "ChangeTimeUtc", value.asInstanceOf[js.Any])
+    inline def setChangeTimeUtc(value: Date): Self = StObject.set(x, "ChangeTimeUtc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClone(value: () => ISharedFileInfo): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => ISharedFileInfo): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExtension(value: String): Self = StObject.set(x, "Extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: String): Self = StObject.set(x, "Extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogicalSize(value: Double): Self = StObject.set(x, "LogicalSize", value.asInstanceOf[js.Any])
+    inline def setLogicalSize(value: Double): Self = StObject.set(x, "LogicalSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogicalSize_32bit(value: Double): Self = StObject.set(x, "LogicalSize_32bit", value.asInstanceOf[js.Any])
+    inline def setLogicalSize_32bit(value: Double): Self = StObject.set(x, "LogicalSize_32bit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
   }
 }

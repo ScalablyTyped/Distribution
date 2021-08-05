@@ -14,20 +14,16 @@ object anon {
   }
   object CurrSt {
     
-    @scala.inline
-    def apply(currSt: String, dragOnEdge: Boolean): CurrSt = {
+    inline def apply(currSt: String, dragOnEdge: Boolean): CurrSt = {
       val __obj = js.Dynamic.literal(currSt = currSt.asInstanceOf[js.Any], dragOnEdge = dragOnEdge.asInstanceOf[js.Any])
       __obj.asInstanceOf[CurrSt]
     }
     
-    @scala.inline
-    implicit class CurrStMutableBuilder[Self <: CurrSt] (val x: Self) extends AnyVal {
+    extension [Self <: CurrSt](x: Self) {
       
-      @scala.inline
-      def setCurrSt(value: String): Self = StObject.set(x, "currSt", value.asInstanceOf[js.Any])
+      inline def setCurrSt(value: String): Self = StObject.set(x, "currSt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragOnEdge(value: Boolean): Self = StObject.set(x, "dragOnEdge", value.asInstanceOf[js.Any])
+      inline def setDragOnEdge(value: Boolean): Self = StObject.set(x, "dragOnEdge", value.asInstanceOf[js.Any])
     }
   }
 }

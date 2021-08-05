@@ -45,7 +45,7 @@ object menuButtonMod {
       */
     var menu: js.UndefOr[String] = js.native
     
-    var onClick: js.Any = js.native
+    /* private */ var onClick: js.Any = js.native
     
     @JSName("render")
     def render_MMenuButton(): js.Any = js.native

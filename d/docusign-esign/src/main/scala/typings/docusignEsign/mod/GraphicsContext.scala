@@ -25,31 +25,23 @@ trait GraphicsContext extends StObject {
 }
 object GraphicsContext {
   
-  @scala.inline
-  def apply(): GraphicsContext = {
+  inline def apply(): GraphicsContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GraphicsContext]
   }
   
-  @scala.inline
-  implicit class GraphicsContextMutableBuilder[Self <: GraphicsContext] (val x: Self) extends AnyVal {
+  extension [Self <: GraphicsContext](x: Self) {
     
-    @scala.inline
-    def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
+    inline def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
+    inline def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
     
-    @scala.inline
-    def setLineColor(value: String): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
+    inline def setLineColor(value: String): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
+    inline def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
     
-    @scala.inline
-    def setLineWeight(value: String): Self = StObject.set(x, "lineWeight", value.asInstanceOf[js.Any])
+    inline def setLineWeight(value: String): Self = StObject.set(x, "lineWeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineWeightUndefined: Self = StObject.set(x, "lineWeight", js.undefined)
+    inline def setLineWeightUndefined: Self = StObject.set(x, "lineWeight", js.undefined)
   }
 }

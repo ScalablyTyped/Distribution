@@ -29,55 +29,39 @@ trait WorkbookSortField extends StObject {
 }
 object WorkbookSortField {
   
-  @scala.inline
-  def apply(): WorkbookSortField = {
+  inline def apply(): WorkbookSortField = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkbookSortField]
   }
   
-  @scala.inline
-  implicit class WorkbookSortFieldMutableBuilder[Self <: WorkbookSortField] (val x: Self) extends AnyVal {
+  extension [Self <: WorkbookSortField](x: Self) {
     
-    @scala.inline
-    def setAscending(value: Boolean): Self = StObject.set(x, "ascending", value.asInstanceOf[js.Any])
+    inline def setAscending(value: Boolean): Self = StObject.set(x, "ascending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAscendingUndefined: Self = StObject.set(x, "ascending", js.undefined)
+    inline def setAscendingUndefined: Self = StObject.set(x, "ascending", js.undefined)
     
-    @scala.inline
-    def setColor(value: NullableOption[String]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: NullableOption[String]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorNull: Self = StObject.set(x, "color", null)
+    inline def setColorNull: Self = StObject.set(x, "color", null)
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setDataOption(value: String): Self = StObject.set(x, "dataOption", value.asInstanceOf[js.Any])
+    inline def setDataOption(value: String): Self = StObject.set(x, "dataOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataOptionUndefined: Self = StObject.set(x, "dataOption", js.undefined)
+    inline def setDataOptionUndefined: Self = StObject.set(x, "dataOption", js.undefined)
     
-    @scala.inline
-    def setIcon(value: NullableOption[WorkbookIcon]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: NullableOption[WorkbookIcon]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconNull: Self = StObject.set(x, "icon", null)
+    inline def setIconNull: Self = StObject.set(x, "icon", null)
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setSortOn(value: String): Self = StObject.set(x, "sortOn", value.asInstanceOf[js.Any])
+    inline def setSortOn(value: String): Self = StObject.set(x, "sortOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortOnUndefined: Self = StObject.set(x, "sortOn", js.undefined)
+    inline def setSortOnUndefined: Self = StObject.set(x, "sortOn", js.undefined)
   }
 }

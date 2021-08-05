@@ -16,8 +16,7 @@ trait LastFetchTs extends StObject {
 }
 object LastFetchTs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     broadcastId: String,
     lastFetchTs: Double | String,
     lastSeenTs: Double | String,
@@ -27,19 +26,14 @@ object LastFetchTs {
     __obj.asInstanceOf[LastFetchTs]
   }
   
-  @scala.inline
-  implicit class LastFetchTsMutableBuilder[Self <: LastFetchTs] (val x: Self) extends AnyVal {
+  extension [Self <: LastFetchTs](x: Self) {
     
-    @scala.inline
-    def setBroadcastId(value: String): Self = StObject.set(x, "broadcastId", value.asInstanceOf[js.Any])
+    inline def setBroadcastId(value: String): Self = StObject.set(x, "broadcastId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastFetchTs(value: Double | String): Self = StObject.set(x, "lastFetchTs", value.asInstanceOf[js.Any])
+    inline def setLastFetchTs(value: Double | String): Self = StObject.set(x, "lastFetchTs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastSeenTs(value: Double | String): Self = StObject.set(x, "lastSeenTs", value.asInstanceOf[js.Any])
+    inline def setLastSeenTs(value: Double | String): Self = StObject.set(x, "lastSeenTs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastTotalCount(value: Double | String): Self = StObject.set(x, "lastTotalCount", value.asInstanceOf[js.Any])
+    inline def setLastTotalCount(value: Double | String): Self = StObject.set(x, "lastTotalCount", value.asInstanceOf[js.Any])
   }
 }

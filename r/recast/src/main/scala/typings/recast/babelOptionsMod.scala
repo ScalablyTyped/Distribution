@@ -14,10 +14,8 @@ object babelOptionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): ParserOptionspluginsArray = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[ParserOptionspluginsArray]
-  @scala.inline
-  def default(options: Overrides): ParserOptionspluginsArray = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[ParserOptionspluginsArray]
+  inline def default(): ParserOptionspluginsArray = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[ParserOptionspluginsArray]
+  inline def default(options: Overrides): ParserOptionspluginsArray = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[ParserOptionspluginsArray]
   
   /* Inlined std.Partial<{  sourceType :@babel/parser.@babel/parser.ParserOptions['sourceType'],   strictMode :@babel/parser.@babel/parser.ParserOptions['strictMode']}> */
   trait Overrides extends StObject {
@@ -28,26 +26,20 @@ object babelOptionsMod {
   }
   object Overrides {
     
-    @scala.inline
-    def apply(): Overrides = {
+    inline def apply(): Overrides = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Overrides]
     }
     
-    @scala.inline
-    implicit class OverridesMutableBuilder[Self <: Overrides] (val x: Self) extends AnyVal {
+    extension [Self <: Overrides](x: Self) {
       
-      @scala.inline
-      def setSourceType(value: script | module | unambiguous): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
+      inline def setSourceType(value: script | module | unambiguous): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
+      inline def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
       
-      @scala.inline
-      def setStrictMode(value: Boolean): Self = StObject.set(x, "strictMode", value.asInstanceOf[js.Any])
+      inline def setStrictMode(value: Boolean): Self = StObject.set(x, "strictMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictModeUndefined: Self = StObject.set(x, "strictMode", js.undefined)
+      inline def setStrictModeUndefined: Self = StObject.set(x, "strictMode", js.undefined)
     }
   }
 }

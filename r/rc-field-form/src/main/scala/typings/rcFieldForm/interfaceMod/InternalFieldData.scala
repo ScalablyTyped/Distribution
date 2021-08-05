@@ -12,8 +12,7 @@ trait InternalFieldData
 }
 object InternalFieldData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     errors: js.Array[String],
     name: InternalNamePath,
     touched: Boolean,
@@ -24,10 +23,8 @@ object InternalFieldData {
     __obj.asInstanceOf[InternalFieldData]
   }
   
-  @scala.inline
-  implicit class InternalFieldDataMutableBuilder[Self <: InternalFieldData] (val x: Self) extends AnyVal {
+  extension [Self <: InternalFieldData](x: Self) {
     
-    @scala.inline
-    def setValue(value: StoreValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: StoreValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

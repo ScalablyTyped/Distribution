@@ -139,8 +139,7 @@ trait XSimpleFileAccess
 }
 object XSimpleFileAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     copy: (String, String) => Unit,
     createFolder: String => Unit,
@@ -165,55 +164,38 @@ object XSimpleFileAccess {
     __obj.asInstanceOf[XSimpleFileAccess]
   }
   
-  @scala.inline
-  implicit class XSimpleFileAccessMutableBuilder[Self <: XSimpleFileAccess] (val x: Self) extends AnyVal {
+  extension [Self <: XSimpleFileAccess](x: Self) {
     
-    @scala.inline
-    def setCopy(value: (String, String) => Unit): Self = StObject.set(x, "copy", js.Any.fromFunction2(value))
+    inline def setCopy(value: (String, String) => Unit): Self = StObject.set(x, "copy", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateFolder(value: String => Unit): Self = StObject.set(x, "createFolder", js.Any.fromFunction1(value))
+    inline def setCreateFolder(value: String => Unit): Self = StObject.set(x, "createFolder", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExists(value: String => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction1(value))
+    inline def setExists(value: String => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetContentType(value: String => String): Self = StObject.set(x, "getContentType", js.Any.fromFunction1(value))
+    inline def setGetContentType(value: String => String): Self = StObject.set(x, "getContentType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDateTimeModified(value: String => DateTime): Self = StObject.set(x, "getDateTimeModified", js.Any.fromFunction1(value))
+    inline def setGetDateTimeModified(value: String => DateTime): Self = StObject.set(x, "getDateTimeModified", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetFolderContents(value: (String, Boolean) => SafeArray[String]): Self = StObject.set(x, "getFolderContents", js.Any.fromFunction2(value))
+    inline def setGetFolderContents(value: (String, Boolean) => SafeArray[String]): Self = StObject.set(x, "getFolderContents", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetSize(value: String => Double): Self = StObject.set(x, "getSize", js.Any.fromFunction1(value))
+    inline def setGetSize(value: String => Double): Self = StObject.set(x, "getSize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsFolder(value: String => Boolean): Self = StObject.set(x, "isFolder", js.Any.fromFunction1(value))
+    inline def setIsFolder(value: String => Boolean): Self = StObject.set(x, "isFolder", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsReadOnly(value: String => Boolean): Self = StObject.set(x, "isReadOnly", js.Any.fromFunction1(value))
+    inline def setIsReadOnly(value: String => Boolean): Self = StObject.set(x, "isReadOnly", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setKill(value: String => Unit): Self = StObject.set(x, "kill", js.Any.fromFunction1(value))
+    inline def setKill(value: String => Unit): Self = StObject.set(x, "kill", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMove(value: (String, String) => Unit): Self = StObject.set(x, "move", js.Any.fromFunction2(value))
+    inline def setMove(value: (String, String) => Unit): Self = StObject.set(x, "move", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOpenFileRead(value: String => XInputStream): Self = StObject.set(x, "openFileRead", js.Any.fromFunction1(value))
+    inline def setOpenFileRead(value: String => XInputStream): Self = StObject.set(x, "openFileRead", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOpenFileReadWrite(value: String => XStream): Self = StObject.set(x, "openFileReadWrite", js.Any.fromFunction1(value))
+    inline def setOpenFileReadWrite(value: String => XStream): Self = StObject.set(x, "openFileReadWrite", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOpenFileWrite(value: String => XOutputStream): Self = StObject.set(x, "openFileWrite", js.Any.fromFunction1(value))
+    inline def setOpenFileWrite(value: String => XOutputStream): Self = StObject.set(x, "openFileWrite", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetInteractionHandler(value: XInteractionHandler => Unit): Self = StObject.set(x, "setInteractionHandler", js.Any.fromFunction1(value))
+    inline def setSetInteractionHandler(value: XInteractionHandler => Unit): Self = StObject.set(x, "setInteractionHandler", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetReadOnly(value: (String, Boolean) => Unit): Self = StObject.set(x, "setReadOnly", js.Any.fromFunction2(value))
+    inline def setSetReadOnly(value: (String, Boolean) => Unit): Self = StObject.set(x, "setReadOnly", js.Any.fromFunction2(value))
   }
 }

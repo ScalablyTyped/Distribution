@@ -23,31 +23,23 @@ trait AuthorizeOptions extends StObject {
 }
 object AuthorizeOptions {
   
-  @scala.inline
-  def apply(): AuthorizeOptions = {
+  inline def apply(): AuthorizeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuthorizeOptions]
   }
   
-  @scala.inline
-  implicit class AuthorizeOptionsMutableBuilder[Self <: AuthorizeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AuthorizeOptions](x: Self) {
     
-    @scala.inline
-    def setAllowEmptyState(value: Boolean): Self = StObject.set(x, "allowEmptyState", value.asInstanceOf[js.Any])
+    inline def setAllowEmptyState(value: Boolean): Self = StObject.set(x, "allowEmptyState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowEmptyStateUndefined: Self = StObject.set(x, "allowEmptyState", js.undefined)
+    inline def setAllowEmptyStateUndefined: Self = StObject.set(x, "allowEmptyState", js.undefined)
     
-    @scala.inline
-    def setAuthenticateHandler(value: js.Object): Self = StObject.set(x, "authenticateHandler", value.asInstanceOf[js.Any])
+    inline def setAuthenticateHandler(value: js.Object): Self = StObject.set(x, "authenticateHandler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticateHandlerUndefined: Self = StObject.set(x, "authenticateHandler", js.undefined)
+    inline def setAuthenticateHandlerUndefined: Self = StObject.set(x, "authenticateHandler", js.undefined)
     
-    @scala.inline
-    def setAuthorizationCodeLifetime(value: Double): Self = StObject.set(x, "authorizationCodeLifetime", value.asInstanceOf[js.Any])
+    inline def setAuthorizationCodeLifetime(value: Double): Self = StObject.set(x, "authorizationCodeLifetime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizationCodeLifetimeUndefined: Self = StObject.set(x, "authorizationCodeLifetime", js.undefined)
+    inline def setAuthorizationCodeLifetimeUndefined: Self = StObject.set(x, "authorizationCodeLifetime", js.undefined)
   }
 }

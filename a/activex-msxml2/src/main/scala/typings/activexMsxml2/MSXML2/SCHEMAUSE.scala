@@ -16,12 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SCHEMAUSE extends StObject
 object SCHEMAUSE {
   
-  @scala.inline
-  def SCHEMAUSE_OPTIONAL: `0` = 0.asInstanceOf[`0`]
+  inline def SCHEMAUSE_OPTIONAL: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def SCHEMAUSE_PROHIBITED: `1` = 1.asInstanceOf[`1`]
+  inline def SCHEMAUSE_PROHIBITED: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def SCHEMAUSE_REQUIRED: `2` = 2.asInstanceOf[`2`]
+  inline def SCHEMAUSE_REQUIRED: `2` = 2.asInstanceOf[`2`]
 }

@@ -24,11 +24,11 @@ class ɵNgSelectMultipleOption protected ()
      with OnDestroy {
   def this(_element: ElementRef[js.Any], _renderer: Renderer2, _select: SelectMultipleControlValueAccessor) = this()
   
-  var _element: js.Any = js.native
+  /* private */ var _element: js.Any = js.native
   
-  var _renderer: js.Any = js.native
+  /* private */ var _renderer: js.Any = js.native
   
-  var _select: js.Any = js.native
+  /* private */ var _select: js.Any = js.native
   
   var id: String = js.native
   

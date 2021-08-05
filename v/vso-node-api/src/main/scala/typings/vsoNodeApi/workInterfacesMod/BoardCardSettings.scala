@@ -11,16 +11,13 @@ trait BoardCardSettings extends StObject {
 }
 object BoardCardSettings {
   
-  @scala.inline
-  def apply(cards: StringDictionary[js.Array[FieldSetting]]): BoardCardSettings = {
+  inline def apply(cards: StringDictionary[js.Array[FieldSetting]]): BoardCardSettings = {
     val __obj = js.Dynamic.literal(cards = cards.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoardCardSettings]
   }
   
-  @scala.inline
-  implicit class BoardCardSettingsMutableBuilder[Self <: BoardCardSettings] (val x: Self) extends AnyVal {
+  extension [Self <: BoardCardSettings](x: Self) {
     
-    @scala.inline
-    def setCards(value: StringDictionary[js.Array[FieldSetting]]): Self = StObject.set(x, "cards", value.asInstanceOf[js.Any])
+    inline def setCards(value: StringDictionary[js.Array[FieldSetting]]): Self = StObject.set(x, "cards", value.asInstanceOf[js.Any])
   }
 }

@@ -38,8 +38,7 @@ trait Panel[T] extends StObject {
 }
 object Panel {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     destroy: () => Unit,
     getItem: () => T,
     getPriority: () => Double,
@@ -54,34 +53,24 @@ object Panel {
     __obj.asInstanceOf[Panel[T]]
   }
   
-  @scala.inline
-  implicit class PanelMutableBuilder[Self <: Panel[?], T] (val x: Self & Panel[T]) extends AnyVal {
+  extension [Self <: Panel[?], T](x: Self & Panel[T]) {
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetItem(value: () => T): Self = StObject.set(x, "getItem", js.Any.fromFunction0(value))
+    inline def setGetItem(value: () => T): Self = StObject.set(x, "getItem", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPriority(value: () => Double): Self = StObject.set(x, "getPriority", js.Any.fromFunction0(value))
+    inline def setGetPriority(value: () => Double): Self = StObject.set(x, "getPriority", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsVisible(value: () => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
+    inline def setIsVisible(value: () => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnDidChangeVisible(value: js.Function1[/* visible */ Boolean, Unit] => Disposable): Self = StObject.set(x, "onDidChangeVisible", js.Any.fromFunction1(value))
+    inline def setOnDidChangeVisible(value: js.Function1[/* visible */ Boolean, Unit] => Disposable): Self = StObject.set(x, "onDidChangeVisible", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDidDestroy(value: js.Function1[/* panel */ Panel[T], Unit] => Disposable): Self = StObject.set(x, "onDidDestroy", js.Any.fromFunction1(value))
+    inline def setOnDidDestroy(value: js.Function1[/* panel */ Panel[T], Unit] => Disposable): Self = StObject.set(x, "onDidDestroy", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }
 }

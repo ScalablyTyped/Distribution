@@ -9,10 +9,8 @@ object dateFnsIsFirstDayOfMonthMod {
   
   object default {
     
-    @scala.inline
-    def apply(date: Double): Boolean = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-    @scala.inline
-    def apply(date: Date): Boolean = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def apply(date: Double): Boolean = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def apply(date: Date): Boolean = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     @JSImport("date-fns/isFirstDayOfMonth", JSImport.Default)
     @js.native

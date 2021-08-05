@@ -16,40 +16,29 @@ trait Lowenergy extends StObject {
 }
 object Lowenergy {
   
-  @scala.inline
-  def apply(): Lowenergy = {
+  inline def apply(): Lowenergy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Lowenergy]
   }
   
-  @scala.inline
-  implicit class LowenergyMutableBuilder[Self <: Lowenergy] (val x: Self) extends AnyVal {
+  extension [Self <: Lowenergy](x: Self) {
     
-    @scala.inline
-    def setLow_energy(value: Boolean): Self = StObject.set(x, "low_energy", value.asInstanceOf[js.Any])
+    inline def setLow_energy(value: Boolean): Self = StObject.set(x, "low_energy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLow_energyUndefined: Self = StObject.set(x, "low_energy", js.undefined)
+    inline def setLow_energyUndefined: Self = StObject.set(x, "low_energy", js.undefined)
     
-    @scala.inline
-    def setPeripheral(value: Boolean): Self = StObject.set(x, "peripheral", value.asInstanceOf[js.Any])
+    inline def setPeripheral(value: Boolean): Self = StObject.set(x, "peripheral", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeripheralUndefined: Self = StObject.set(x, "peripheral", js.undefined)
+    inline def setPeripheralUndefined: Self = StObject.set(x, "peripheral", js.undefined)
     
-    @scala.inline
-    def setSocket(value: Boolean): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
+    inline def setSocket(value: Boolean): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSocketUndefined: Self = StObject.set(x, "socket", js.undefined)
+    inline def setSocketUndefined: Self = StObject.set(x, "socket", js.undefined)
     
-    @scala.inline
-    def setUuids(value: js.Array[String]): Self = StObject.set(x, "uuids", value.asInstanceOf[js.Any])
+    inline def setUuids(value: js.Array[String]): Self = StObject.set(x, "uuids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUuidsUndefined: Self = StObject.set(x, "uuids", js.undefined)
+    inline def setUuidsUndefined: Self = StObject.set(x, "uuids", js.undefined)
     
-    @scala.inline
-    def setUuidsVarargs(value: String*): Self = StObject.set(x, "uuids", js.Array(value :_*))
+    inline def setUuidsVarargs(value: String*): Self = StObject.set(x, "uuids", js.Array(value :_*))
   }
 }

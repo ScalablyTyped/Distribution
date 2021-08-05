@@ -13,8 +13,7 @@ trait ReindexOrByQueryResponseSlice
 }
 object ReindexOrByQueryResponseSlice {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     batches: Double,
     deleted: Double,
     noops: Double,
@@ -31,10 +30,8 @@ object ReindexOrByQueryResponseSlice {
     __obj.asInstanceOf[ReindexOrByQueryResponseSlice]
   }
   
-  @scala.inline
-  implicit class ReindexOrByQueryResponseSliceMutableBuilder[Self <: ReindexOrByQueryResponseSlice] (val x: Self) extends AnyVal {
+  extension [Self <: ReindexOrByQueryResponseSlice](x: Self) {
     
-    @scala.inline
-    def setSlice_id(value: Double): Self = StObject.set(x, "slice_id", value.asInstanceOf[js.Any])
+    inline def setSlice_id(value: Double): Self = StObject.set(x, "slice_id", value.asInstanceOf[js.Any])
   }
 }

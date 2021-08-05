@@ -37,20 +37,17 @@ object constantsMod {
     @JSImport("@material/tab-scroller/constants", "cssClasses.ANIMATING")
     @js.native
     def ANIMATING: String = js.native
-    @scala.inline
-    def ANIMATING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ANIMATING")(x.asInstanceOf[js.Any])
+    inline def ANIMATING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ANIMATING")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/tab-scroller/constants", "cssClasses.SCROLL_AREA_SCROLL")
     @js.native
     def SCROLL_AREA_SCROLL: String = js.native
-    @scala.inline
-    def SCROLL_AREA_SCROLL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SCROLL_AREA_SCROLL")(x.asInstanceOf[js.Any])
+    inline def SCROLL_AREA_SCROLL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SCROLL_AREA_SCROLL")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/tab-scroller/constants", "cssClasses.SCROLL_TEST")
     @js.native
     def SCROLL_TEST: String = js.native
-    @scala.inline
-    def SCROLL_TEST_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SCROLL_TEST")(x.asInstanceOf[js.Any])
+    inline def SCROLL_TEST_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SCROLL_TEST")(x.asInstanceOf[js.Any])
   }
   
   object strings {
@@ -62,13 +59,11 @@ object constantsMod {
     @JSImport("@material/tab-scroller/constants", "strings.AREA_SELECTOR")
     @js.native
     def AREA_SELECTOR: String = js.native
-    @scala.inline
-    def AREA_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AREA_SELECTOR")(x.asInstanceOf[js.Any])
+    inline def AREA_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AREA_SELECTOR")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/tab-scroller/constants", "strings.CONTENT_SELECTOR")
     @js.native
     def CONTENT_SELECTOR: String = js.native
-    @scala.inline
-    def CONTENT_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONTENT_SELECTOR")(x.asInstanceOf[js.Any])
+    inline def CONTENT_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONTENT_SELECTOR")(x.asInstanceOf[js.Any])
   }
 }

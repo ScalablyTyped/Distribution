@@ -22,19 +22,15 @@ trait DescribeConfigurationRevisionRequest extends StObject {
 }
 object DescribeConfigurationRevisionRequest {
   
-  @scala.inline
-  def apply(Arn: string, Revision: long): DescribeConfigurationRevisionRequest = {
+  inline def apply(Arn: string, Revision: long): DescribeConfigurationRevisionRequest = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], Revision = Revision.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeConfigurationRevisionRequest]
   }
   
-  @scala.inline
-  implicit class DescribeConfigurationRevisionRequestMutableBuilder[Self <: DescribeConfigurationRevisionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeConfigurationRevisionRequest](x: Self) {
     
-    @scala.inline
-    def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevision(value: long): Self = StObject.set(x, "Revision", value.asInstanceOf[js.Any])
+    inline def setRevision(value: long): Self = StObject.set(x, "Revision", value.asInstanceOf[js.Any])
   }
 }

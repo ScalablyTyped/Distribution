@@ -21,20 +21,16 @@ object anon {
   }
   object Disable {
     
-    @scala.inline
-    def apply(disable: () => Api, enable: () => Api): Disable = {
+    inline def apply(disable: () => Api, enable: () => Api): Disable = {
       val __obj = js.Dynamic.literal(disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable))
       __obj.asInstanceOf[Disable]
     }
     
-    @scala.inline
-    implicit class DisableMutableBuilder[Self <: Disable] (val x: Self) extends AnyVal {
+    extension [Self <: Disable](x: Self) {
       
-      @scala.inline
-      def setDisable(value: () => Api): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
+      inline def setDisable(value: () => Api): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnable(value: () => Api): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
+      inline def setEnable(value: () => Api): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     }
   }
 }

@@ -12,19 +12,15 @@ trait SpeechRecognitionAlternative extends StObject {
 }
 object SpeechRecognitionAlternative {
   
-  @scala.inline
-  def apply(confidence: Double, transcript: java.lang.String): SpeechRecognitionAlternative = {
+  inline def apply(confidence: Double, transcript: java.lang.String): SpeechRecognitionAlternative = {
     val __obj = js.Dynamic.literal(confidence = confidence.asInstanceOf[js.Any], transcript = transcript.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpeechRecognitionAlternative]
   }
   
-  @scala.inline
-  implicit class SpeechRecognitionAlternativeMutableBuilder[Self <: SpeechRecognitionAlternative] (val x: Self) extends AnyVal {
+  extension [Self <: SpeechRecognitionAlternative](x: Self) {
     
-    @scala.inline
-    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranscript(value: java.lang.String): Self = StObject.set(x, "transcript", value.asInstanceOf[js.Any])
+    inline def setTranscript(value: java.lang.String): Self = StObject.set(x, "transcript", value.asInstanceOf[js.Any])
   }
 }

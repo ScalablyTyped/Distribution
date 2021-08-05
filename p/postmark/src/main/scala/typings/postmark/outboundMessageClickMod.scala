@@ -39,8 +39,7 @@ object outboundMessageClickMod {
   }
   object ClickEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ClickLocation: LinkClickLocation,
       Client: ClientDetails,
       Geo: GeoLocation,
@@ -59,47 +58,33 @@ object outboundMessageClickMod {
       __obj.asInstanceOf[ClickEvent]
     }
     
-    @scala.inline
-    implicit class ClickEventMutableBuilder[Self <: ClickEvent] (val x: Self) extends AnyVal {
+    extension [Self <: ClickEvent](x: Self) {
       
-      @scala.inline
-      def setClickLocation(value: LinkClickLocation): Self = StObject.set(x, "ClickLocation", value.asInstanceOf[js.Any])
+      inline def setClickLocation(value: LinkClickLocation): Self = StObject.set(x, "ClickLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClient(value: ClientDetails): Self = StObject.set(x, "Client", value.asInstanceOf[js.Any])
+      inline def setClient(value: ClientDetails): Self = StObject.set(x, "Client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeo(value: GeoLocation): Self = StObject.set(x, "Geo", value.asInstanceOf[js.Any])
+      inline def setGeo(value: GeoLocation): Self = StObject.set(x, "Geo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageID(value: String): Self = StObject.set(x, "MessageID", value.asInstanceOf[js.Any])
+      inline def setMessageID(value: String): Self = StObject.set(x, "MessageID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageStream(value: String): Self = StObject.set(x, "MessageStream", value.asInstanceOf[js.Any])
+      inline def setMessageStream(value: String): Self = StObject.set(x, "MessageStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOS(value: ClientDetails): Self = StObject.set(x, "OS", value.asInstanceOf[js.Any])
+      inline def setOS(value: ClientDetails): Self = StObject.set(x, "OS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalLink(value: String): Self = StObject.set(x, "OriginalLink", value.asInstanceOf[js.Any])
+      inline def setOriginalLink(value: String): Self = StObject.set(x, "OriginalLink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatform(value: String): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: String): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReceivedAt(value: String): Self = StObject.set(x, "ReceivedAt", value.asInstanceOf[js.Any])
+      inline def setReceivedAt(value: String): Self = StObject.set(x, "ReceivedAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecipient(value: String): Self = StObject.set(x, "Recipient", value.asInstanceOf[js.Any])
+      inline def setRecipient(value: String): Self = StObject.set(x, "Recipient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecordType(value: String): Self = StObject.set(x, "RecordType", value.asInstanceOf[js.Any])
+      inline def setRecordType(value: String): Self = StObject.set(x, "RecordType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserAgent(value: String): Self = StObject.set(x, "UserAgent", value.asInstanceOf[js.Any])
+      inline def setUserAgent(value: String): Self = StObject.set(x, "UserAgent", value.asInstanceOf[js.Any])
     }
   }
   
@@ -111,23 +96,18 @@ object outboundMessageClickMod {
   }
   object OutboundMessageClicks {
     
-    @scala.inline
-    def apply(Clicks: js.Array[ClickEvent], TotalCount: Double): OutboundMessageClicks = {
+    inline def apply(Clicks: js.Array[ClickEvent], TotalCount: Double): OutboundMessageClicks = {
       val __obj = js.Dynamic.literal(Clicks = Clicks.asInstanceOf[js.Any], TotalCount = TotalCount.asInstanceOf[js.Any])
       __obj.asInstanceOf[OutboundMessageClicks]
     }
     
-    @scala.inline
-    implicit class OutboundMessageClicksMutableBuilder[Self <: OutboundMessageClicks] (val x: Self) extends AnyVal {
+    extension [Self <: OutboundMessageClicks](x: Self) {
       
-      @scala.inline
-      def setClicks(value: js.Array[ClickEvent]): Self = StObject.set(x, "Clicks", value.asInstanceOf[js.Any])
+      inline def setClicks(value: js.Array[ClickEvent]): Self = StObject.set(x, "Clicks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClicksVarargs(value: ClickEvent*): Self = StObject.set(x, "Clicks", js.Array(value :_*))
+      inline def setClicksVarargs(value: ClickEvent*): Self = StObject.set(x, "Clicks", js.Array(value :_*))
       
-      @scala.inline
-      def setTotalCount(value: Double): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
+      inline def setTotalCount(value: Double): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -92,8 +92,7 @@ trait Adcode extends StObject {
 }
 object Adcode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     adcode: String,
     adname: String,
     citycode: String,
@@ -111,76 +110,52 @@ object Adcode {
     __obj.asInstanceOf[Adcode]
   }
   
-  @scala.inline
-  implicit class AdcodeMutableBuilder[Self <: Adcode] (val x: Self) extends AnyVal {
+  extension [Self <: Adcode](x: Self) {
     
-    @scala.inline
-    def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
+    inline def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdname(value: String): Self = StObject.set(x, "adname", value.asInstanceOf[js.Any])
+    inline def setAdname(value: String): Self = StObject.set(x, "adname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCitycode(value: String): Self = StObject.set(x, "citycode", value.asInstanceOf[js.Any])
+    inline def setCitycode(value: String): Self = StObject.set(x, "citycode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCityname(value: String): Self = StObject.set(x, "cityname", value.asInstanceOf[js.Any])
+    inline def setCityname(value: String): Self = StObject.set(x, "cityname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscount(value: Boolean): Self = StObject.set(x, "discount", value.asInstanceOf[js.Any])
+    inline def setDiscount(value: Boolean): Self = StObject.set(x, "discount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscounts(value: js.Array[Discount]): Self = StObject.set(x, "discounts", value.asInstanceOf[js.Any])
+    inline def setDiscounts(value: js.Array[Discount]): Self = StObject.set(x, "discounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscountsUndefined: Self = StObject.set(x, "discounts", js.undefined)
+    inline def setDiscountsUndefined: Self = StObject.set(x, "discounts", js.undefined)
     
-    @scala.inline
-    def setDiscountsVarargs(value: Discount*): Self = StObject.set(x, "discounts", js.Array(value :_*))
+    inline def setDiscountsVarargs(value: Discount*): Self = StObject.set(x, "discounts", js.Array(value :_*))
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntr_location(value: LngLat): Self = StObject.set(x, "entr_location", value.asInstanceOf[js.Any])
+    inline def setEntr_location(value: LngLat): Self = StObject.set(x, "entr_location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntr_locationNull: Self = StObject.set(x, "entr_location", null)
+    inline def setEntr_locationNull: Self = StObject.set(x, "entr_location", null)
     
-    @scala.inline
-    def setExit_location(value: LngLat): Self = StObject.set(x, "exit_location", value.asInstanceOf[js.Any])
+    inline def setExit_location(value: LngLat): Self = StObject.set(x, "exit_location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExit_locationNull: Self = StObject.set(x, "exit_location", null)
+    inline def setExit_locationNull: Self = StObject.set(x, "exit_location", null)
     
-    @scala.inline
-    def setGroupbuy(value: Boolean): Self = StObject.set(x, "groupbuy", value.asInstanceOf[js.Any])
+    inline def setGroupbuy(value: Boolean): Self = StObject.set(x, "groupbuy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupbuys(value: js.Array[Groupbuy]): Self = StObject.set(x, "groupbuys", value.asInstanceOf[js.Any])
+    inline def setGroupbuys(value: js.Array[Groupbuy]): Self = StObject.set(x, "groupbuys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupbuysUndefined: Self = StObject.set(x, "groupbuys", js.undefined)
+    inline def setGroupbuysUndefined: Self = StObject.set(x, "groupbuys", js.undefined)
     
-    @scala.inline
-    def setGroupbuysVarargs(value: Groupbuy*): Self = StObject.set(x, "groupbuys", js.Array(value :_*))
+    inline def setGroupbuysVarargs(value: Groupbuy*): Self = StObject.set(x, "groupbuys", js.Array(value :_*))
     
-    @scala.inline
-    def setPcode(value: String): Self = StObject.set(x, "pcode", value.asInstanceOf[js.Any])
+    inline def setPcode(value: String): Self = StObject.set(x, "pcode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhotos(value: js.Array[PoiPhoto]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
+    inline def setPhotos(value: js.Array[PoiPhoto]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhotosVarargs(value: PoiPhoto*): Self = StObject.set(x, "photos", js.Array(value :_*))
+    inline def setPhotosVarargs(value: PoiPhoto*): Self = StObject.set(x, "photos", js.Array(value :_*))
     
-    @scala.inline
-    def setPname(value: String): Self = StObject.set(x, "pname", value.asInstanceOf[js.Any])
+    inline def setPname(value: String): Self = StObject.set(x, "pname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostcode(value: String): Self = StObject.set(x, "postcode", value.asInstanceOf[js.Any])
+    inline def setPostcode(value: String): Self = StObject.set(x, "postcode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebsite(value: String): Self = StObject.set(x, "website", value.asInstanceOf[js.Any])
+    inline def setWebsite(value: String): Self = StObject.set(x, "website", value.asInstanceOf[js.Any])
   }
 }

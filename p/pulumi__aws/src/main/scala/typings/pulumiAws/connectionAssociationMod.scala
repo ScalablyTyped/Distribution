@@ -50,21 +50,16 @@ object connectionAssociationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ConnectionAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ConnectionAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ConnectionAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ConnectionAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ConnectionAssociationState): ConnectionAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ConnectionAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ConnectionAssociationState, opts: CustomResourceOptions): ConnectionAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ConnectionAssociation]
+    inline def get(name: String, id: Input[ID]): ConnectionAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ConnectionAssociation]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ConnectionAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ConnectionAssociation]
+    inline def get(name: String, id: Input[ID], state: ConnectionAssociationState): ConnectionAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ConnectionAssociation]
+    inline def get(name: String, id: Input[ID], state: ConnectionAssociationState, opts: CustomResourceOptions): ConnectionAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ConnectionAssociation]
     
     /**
       * Returns true if the given object is an instance of ConnectionAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/connectionAssociation.ConnectionAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directconnect/connectionAssociation.ConnectionAssociation */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/connectionAssociation.ConnectionAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directconnect/connectionAssociation.ConnectionAssociation */ Boolean]
   }
   
   trait ConnectionAssociationArgs extends StObject {
@@ -81,20 +76,16 @@ object connectionAssociationMod {
   }
   object ConnectionAssociationArgs {
     
-    @scala.inline
-    def apply(connectionId: Input[String], lagId: Input[String]): ConnectionAssociationArgs = {
+    inline def apply(connectionId: Input[String], lagId: Input[String]): ConnectionAssociationArgs = {
       val __obj = js.Dynamic.literal(connectionId = connectionId.asInstanceOf[js.Any], lagId = lagId.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConnectionAssociationArgs]
     }
     
-    @scala.inline
-    implicit class ConnectionAssociationArgsMutableBuilder[Self <: ConnectionAssociationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectionAssociationArgs](x: Self) {
       
-      @scala.inline
-      def setConnectionId(value: Input[String]): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
+      inline def setConnectionId(value: Input[String]): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLagId(value: Input[String]): Self = StObject.set(x, "lagId", value.asInstanceOf[js.Any])
+      inline def setLagId(value: Input[String]): Self = StObject.set(x, "lagId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -112,26 +103,20 @@ object connectionAssociationMod {
   }
   object ConnectionAssociationState {
     
-    @scala.inline
-    def apply(): ConnectionAssociationState = {
+    inline def apply(): ConnectionAssociationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConnectionAssociationState]
     }
     
-    @scala.inline
-    implicit class ConnectionAssociationStateMutableBuilder[Self <: ConnectionAssociationState] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectionAssociationState](x: Self) {
       
-      @scala.inline
-      def setConnectionId(value: Input[String]): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
+      inline def setConnectionId(value: Input[String]): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionIdUndefined: Self = StObject.set(x, "connectionId", js.undefined)
+      inline def setConnectionIdUndefined: Self = StObject.set(x, "connectionId", js.undefined)
       
-      @scala.inline
-      def setLagId(value: Input[String]): Self = StObject.set(x, "lagId", value.asInstanceOf[js.Any])
+      inline def setLagId(value: Input[String]): Self = StObject.set(x, "lagId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLagIdUndefined: Self = StObject.set(x, "lagId", js.undefined)
+      inline def setLagIdUndefined: Self = StObject.set(x, "lagId", js.undefined)
     }
   }
 }

@@ -16,8 +16,7 @@ trait XTextAppendAndConvert
      with XTextConvert
 object XTextAppendAndConvert {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     End: XTextRange,
     Start: XTextRange,
     String: String,

@@ -18,22 +18,17 @@ trait ForgetDeviceRequest extends StObject {
 }
 object ForgetDeviceRequest {
   
-  @scala.inline
-  def apply(DeviceKey: DeviceKeyType): ForgetDeviceRequest = {
+  inline def apply(DeviceKey: DeviceKeyType): ForgetDeviceRequest = {
     val __obj = js.Dynamic.literal(DeviceKey = DeviceKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ForgetDeviceRequest]
   }
   
-  @scala.inline
-  implicit class ForgetDeviceRequestMutableBuilder[Self <: ForgetDeviceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ForgetDeviceRequest](x: Self) {
     
-    @scala.inline
-    def setAccessToken(value: TokenModelType): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
+    inline def setAccessToken(value: TokenModelType): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessTokenUndefined: Self = StObject.set(x, "AccessToken", js.undefined)
+    inline def setAccessTokenUndefined: Self = StObject.set(x, "AccessToken", js.undefined)
     
-    @scala.inline
-    def setDeviceKey(value: DeviceKeyType): Self = StObject.set(x, "DeviceKey", value.asInstanceOf[js.Any])
+    inline def setDeviceKey(value: DeviceKeyType): Self = StObject.set(x, "DeviceKey", value.asInstanceOf[js.Any])
   }
 }

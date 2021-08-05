@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ActivationStateType extends StObject
 object ActivationStateType {
   
-  @scala.inline
-  def Activated: typings.chromeApps.chromeAppsStrings.Activated = "Activated".asInstanceOf[typings.chromeApps.chromeAppsStrings.Activated]
+  inline def Activated: typings.chromeApps.chromeAppsStrings.Activated = "Activated".asInstanceOf[typings.chromeApps.chromeAppsStrings.Activated]
   
-  @scala.inline
-  def Activating: typings.chromeApps.chromeAppsStrings.Activating = "Activating".asInstanceOf[typings.chromeApps.chromeAppsStrings.Activating]
+  inline def Activating: typings.chromeApps.chromeAppsStrings.Activating = "Activating".asInstanceOf[typings.chromeApps.chromeAppsStrings.Activating]
   
-  @scala.inline
-  def NotActivated: typings.chromeApps.chromeAppsStrings.NotActivated = "NotActivated".asInstanceOf[typings.chromeApps.chromeAppsStrings.NotActivated]
+  inline def NotActivated: typings.chromeApps.chromeAppsStrings.NotActivated = "NotActivated".asInstanceOf[typings.chromeApps.chromeAppsStrings.NotActivated]
   
-  @scala.inline
-  def PartiallyActivated: typings.chromeApps.chromeAppsStrings.PartiallyActivated = "PartiallyActivated".asInstanceOf[typings.chromeApps.chromeAppsStrings.PartiallyActivated]
+  inline def PartiallyActivated: typings.chromeApps.chromeAppsStrings.PartiallyActivated = "PartiallyActivated".asInstanceOf[typings.chromeApps.chromeAppsStrings.PartiallyActivated]
 }

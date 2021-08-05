@@ -49,8 +49,7 @@ trait DatabaseName
 }
 object DatabaseName {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
     AnchorTypes: SafeArray[TextContentAnchorType],
@@ -87,22 +86,16 @@ object DatabaseName {
     __obj.asInstanceOf[DatabaseName]
   }
   
-  @scala.inline
-  implicit class DatabaseNameMutableBuilder[Self <: DatabaseName] (val x: Self) extends AnyVal {
+  extension [Self <: DatabaseName](x: Self) {
     
-    @scala.inline
-    def setDataBaseName(value: String): Self = StObject.set(x, "DataBaseName", value.asInstanceOf[js.Any])
+    inline def setDataBaseName(value: String): Self = StObject.set(x, "DataBaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataBaseResource(value: String): Self = StObject.set(x, "DataBaseResource", value.asInstanceOf[js.Any])
+    inline def setDataBaseResource(value: String): Self = StObject.set(x, "DataBaseResource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataBaseURL(value: String): Self = StObject.set(x, "DataBaseURL", value.asInstanceOf[js.Any])
+    inline def setDataBaseURL(value: String): Self = StObject.set(x, "DataBaseURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataCommandType(value: Double): Self = StObject.set(x, "DataCommandType", value.asInstanceOf[js.Any])
+    inline def setDataCommandType(value: Double): Self = StObject.set(x, "DataCommandType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataTableName(value: String): Self = StObject.set(x, "DataTableName", value.asInstanceOf[js.Any])
+    inline def setDataTableName(value: String): Self = StObject.set(x, "DataTableName", value.asInstanceOf[js.Any])
   }
 }

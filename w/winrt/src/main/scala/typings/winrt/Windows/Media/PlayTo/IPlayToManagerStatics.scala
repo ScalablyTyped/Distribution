@@ -12,19 +12,15 @@ trait IPlayToManagerStatics extends StObject {
 }
 object IPlayToManagerStatics {
   
-  @scala.inline
-  def apply(getForCurrentView: () => PlayToManager, showPlayToUI: () => Unit): IPlayToManagerStatics = {
+  inline def apply(getForCurrentView: () => PlayToManager, showPlayToUI: () => Unit): IPlayToManagerStatics = {
     val __obj = js.Dynamic.literal(getForCurrentView = js.Any.fromFunction0(getForCurrentView), showPlayToUI = js.Any.fromFunction0(showPlayToUI))
     __obj.asInstanceOf[IPlayToManagerStatics]
   }
   
-  @scala.inline
-  implicit class IPlayToManagerStaticsMutableBuilder[Self <: IPlayToManagerStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IPlayToManagerStatics](x: Self) {
     
-    @scala.inline
-    def setGetForCurrentView(value: () => PlayToManager): Self = StObject.set(x, "getForCurrentView", js.Any.fromFunction0(value))
+    inline def setGetForCurrentView(value: () => PlayToManager): Self = StObject.set(x, "getForCurrentView", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShowPlayToUI(value: () => Unit): Self = StObject.set(x, "showPlayToUI", js.Any.fromFunction0(value))
+    inline def setShowPlayToUI(value: () => Unit): Self = StObject.set(x, "showPlayToUI", js.Any.fromFunction0(value))
   }
 }

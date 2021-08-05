@@ -77,18 +77,15 @@ object mod {
     @JSImport("react-form", "Form.childContextTypes")
     @js.native
     def childContextTypes: FormApiValidator = js.native
-    @scala.inline
-    def childContextTypes_=(x: FormApiValidator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
+    inline def childContextTypes_=(x: FormApiValidator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("react-form", "Form.defaultProps")
     @js.native
     def defaultProps: FormProps = js.native
-    @scala.inline
-    def defaultProps_=(x: FormProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: FormProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def FormField(component: ComponentType[js.Any]): ComponentClass[js.Any, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("FormField")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[js.Any, ComponentState]]
+  inline def FormField(component: ComponentType[js.Any]): ComponentClass[js.Any, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("FormField")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[js.Any, ComponentState]]
   
   @JSImport("react-form", "NestedForm")
   @js.native
@@ -188,8 +185,7 @@ object mod {
   }
   object FieldApi {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getError: () => FormError,
       getFieldName: () => String,
       getSuccess: () => FormError,
@@ -206,41 +202,29 @@ object mod {
       __obj.asInstanceOf[FieldApi]
     }
     
-    @scala.inline
-    implicit class FieldApiMutableBuilder[Self <: FieldApi] (val x: Self) extends AnyVal {
+    extension [Self <: FieldApi](x: Self) {
       
-      @scala.inline
-      def setGetError(value: () => FormError): Self = StObject.set(x, "getError", js.Any.fromFunction0(value))
+      inline def setGetError(value: () => FormError): Self = StObject.set(x, "getError", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFieldName(value: () => String): Self = StObject.set(x, "getFieldName", js.Any.fromFunction0(value))
+      inline def setGetFieldName(value: () => String): Self = StObject.set(x, "getFieldName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSuccess(value: () => FormError): Self = StObject.set(x, "getSuccess", js.Any.fromFunction0(value))
+      inline def setGetSuccess(value: () => FormError): Self = StObject.set(x, "getSuccess", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTouched(value: () => Boolean): Self = StObject.set(x, "getTouched", js.Any.fromFunction0(value))
+      inline def setGetTouched(value: () => Boolean): Self = StObject.set(x, "getTouched", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetValue(value: () => FormValue): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+      inline def setGetValue(value: () => FormValue): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetWarning(value: () => FormError): Self = StObject.set(x, "getWarning", js.Any.fromFunction0(value))
+      inline def setGetWarning(value: () => FormError): Self = StObject.set(x, "getWarning", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetError(value: FormError => Unit): Self = StObject.set(x, "setError", js.Any.fromFunction1(value))
+      inline def setSetError(value: FormError => Unit): Self = StObject.set(x, "setError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetSuccess(value: FormError => Unit): Self = StObject.set(x, "setSuccess", js.Any.fromFunction1(value))
+      inline def setSetSuccess(value: FormError => Unit): Self = StObject.set(x, "setSuccess", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetTouched(value: Boolean => Unit): Self = StObject.set(x, "setTouched", js.Any.fromFunction1(value))
+      inline def setSetTouched(value: Boolean => Unit): Self = StObject.set(x, "setTouched", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetValue(value: FormValue => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+      inline def setSetValue(value: FormValue => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetWarning(value: FormError => Unit): Self = StObject.set(x, "setWarning", js.Any.fromFunction1(value))
+      inline def setSetWarning(value: FormError => Unit): Self = StObject.set(x, "setWarning", js.Any.fromFunction1(value))
     }
   }
   
@@ -256,41 +240,30 @@ object mod {
   }
   object FieldProps {
     
-    @scala.inline
-    def apply(): FieldProps = {
+    inline def apply(): FieldProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FieldProps]
     }
     
-    @scala.inline
-    implicit class FieldPropsMutableBuilder[Self <: FieldProps] (val x: Self) extends AnyVal {
+    extension [Self <: FieldProps](x: Self) {
       
-      @scala.inline
-      def setErrorBefore(value: Boolean): Self = StObject.set(x, "errorBefore", value.asInstanceOf[js.Any])
+      inline def setErrorBefore(value: Boolean): Self = StObject.set(x, "errorBefore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorBeforeUndefined: Self = StObject.set(x, "errorBefore", js.undefined)
+      inline def setErrorBeforeUndefined: Self = StObject.set(x, "errorBefore", js.undefined)
       
-      @scala.inline
-      def setField(value: String | (js.Array[js.Array[ReactText] | ReactText | String])): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+      inline def setField(value: String | (js.Array[js.Array[ReactText] | ReactText | String])): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+      inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
       
-      @scala.inline
-      def setFieldVarargs(value: (js.Array[ReactText] | ReactText | String)*): Self = StObject.set(x, "field", js.Array(value :_*))
+      inline def setFieldVarargs(value: (js.Array[ReactText] | ReactText | String)*): Self = StObject.set(x, "field", js.Array(value :_*))
       
-      @scala.inline
-      def setIsForm(value: Boolean): Self = StObject.set(x, "isForm", value.asInstanceOf[js.Any])
+      inline def setIsForm(value: Boolean): Self = StObject.set(x, "isForm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFormUndefined: Self = StObject.set(x, "isForm", js.undefined)
+      inline def setIsFormUndefined: Self = StObject.set(x, "isForm", js.undefined)
       
-      @scala.inline
-      def setShowErrors(value: Boolean): Self = StObject.set(x, "showErrors", value.asInstanceOf[js.Any])
+      inline def setShowErrors(value: Boolean): Self = StObject.set(x, "showErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowErrorsUndefined: Self = StObject.set(x, "showErrors", js.undefined)
+      inline def setShowErrorsUndefined: Self = StObject.set(x, "showErrors", js.undefined)
     }
   }
   
@@ -350,8 +323,7 @@ object mod {
   }
   object FormApi {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addValue: (String, js.Any) => Unit,
       asyncValidations: Double,
       errors: FormErrors,
@@ -382,83 +354,57 @@ object mod {
       __obj.asInstanceOf[FormApi]
     }
     
-    @scala.inline
-    implicit class FormApiMutableBuilder[Self <: FormApi] (val x: Self) extends AnyVal {
+    extension [Self <: FormApi](x: Self) {
       
-      @scala.inline
-      def setAddValue(value: (String, js.Any) => Unit): Self = StObject.set(x, "addValue", js.Any.fromFunction2(value))
+      inline def setAddValue(value: (String, js.Any) => Unit): Self = StObject.set(x, "addValue", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAsyncValidations(value: Double): Self = StObject.set(x, "asyncValidations", value.asInstanceOf[js.Any])
+      inline def setAsyncValidations(value: Double): Self = StObject.set(x, "asyncValidations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrors(value: FormErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: FormErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetFormState(value: () => FormState): Self = StObject.set(x, "getFormState", js.Any.fromFunction0(value))
+      inline def setGetFormState(value: () => FormState): Self = StObject.set(x, "getFormState", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveValue(value: (String, Double) => Unit): Self = StObject.set(x, "removeValue", js.Any.fromFunction2(value))
+      inline def setRemoveValue(value: (String, Double) => Unit): Self = StObject.set(x, "removeValue", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setResetAll(value: () => Unit): Self = StObject.set(x, "resetAll", js.Any.fromFunction0(value))
+      inline def setResetAll(value: () => Unit): Self = StObject.set(x, "resetAll", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetAllTouched(value: StringDictionary[Boolean] => Unit): Self = StObject.set(x, "setAllTouched", js.Any.fromFunction1(value))
+      inline def setSetAllTouched(value: StringDictionary[Boolean] => Unit): Self = StObject.set(x, "setAllTouched", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetAllValues(value: FormValues => Unit): Self = StObject.set(x, "setAllValues", js.Any.fromFunction1(value))
+      inline def setSetAllValues(value: FormValues => Unit): Self = StObject.set(x, "setAllValues", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetError(value: (String, String) => Unit): Self = StObject.set(x, "setError", js.Any.fromFunction2(value))
+      inline def setSetError(value: (String, String) => Unit): Self = StObject.set(x, "setError", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetFormState(value: FormState => Unit): Self = StObject.set(x, "setFormState", js.Any.fromFunction1(value))
+      inline def setSetFormState(value: FormState => Unit): Self = StObject.set(x, "setFormState", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetSuccess(value: (String, String) => Unit): Self = StObject.set(x, "setSuccess", js.Any.fromFunction2(value))
+      inline def setSetSuccess(value: (String, String) => Unit): Self = StObject.set(x, "setSuccess", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetTouched(value: (String, Boolean) => Unit): Self = StObject.set(x, "setTouched", js.Any.fromFunction2(value))
+      inline def setSetTouched(value: (String, Boolean) => Unit): Self = StObject.set(x, "setTouched", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetValue(value: (String, js.Any) => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
+      inline def setSetValue(value: (String, js.Any) => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetWarning(value: (String, String) => Unit): Self = StObject.set(x, "setWarning", js.Any.fromFunction2(value))
+      inline def setSetWarning(value: (String, String) => Unit): Self = StObject.set(x, "setWarning", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSubmitForm(value: SyntheticEvent[js.Any, Event] => Unit): Self = StObject.set(x, "submitForm", js.Any.fromFunction1(value))
+      inline def setSubmitForm(value: SyntheticEvent[js.Any, Event] => Unit): Self = StObject.set(x, "submitForm", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSubmits(value: Double): Self = StObject.set(x, "submits", value.asInstanceOf[js.Any])
+      inline def setSubmits(value: Double): Self = StObject.set(x, "submits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubmitted(value: Boolean): Self = StObject.set(x, "submitted", value.asInstanceOf[js.Any])
+      inline def setSubmitted(value: Boolean): Self = StObject.set(x, "submitted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccesses(value: FormErrors): Self = StObject.set(x, "successes", value.asInstanceOf[js.Any])
+      inline def setSuccesses(value: FormErrors): Self = StObject.set(x, "successes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwapValues(value: (String, Double, Double) => Unit): Self = StObject.set(x, "swapValues", js.Any.fromFunction3(value))
+      inline def setSwapValues(value: (String, Double, Double) => Unit): Self = StObject.set(x, "swapValues", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setTouched(value: Touched): Self = StObject.set(x, "touched", value.asInstanceOf[js.Any])
+      inline def setTouched(value: Touched): Self = StObject.set(x, "touched", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidating(value: StringDictionary[Boolean]): Self = StObject.set(x, "validating", value.asInstanceOf[js.Any])
+      inline def setValidating(value: StringDictionary[Boolean]): Self = StObject.set(x, "validating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidationFailed(value: StringDictionary[Boolean]): Self = StObject.set(x, "validationFailed", value.asInstanceOf[js.Any])
+      inline def setValidationFailed(value: StringDictionary[Boolean]): Self = StObject.set(x, "validationFailed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidationFailures(value: Double): Self = StObject.set(x, "validationFailures", value.asInstanceOf[js.Any])
+      inline def setValidationFailures(value: Double): Self = StObject.set(x, "validationFailures", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: FormValues): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: FormValues): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarnings(value: FormErrors): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+      inline def setWarnings(value: FormErrors): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     }
   }
   
@@ -468,17 +414,14 @@ object mod {
   }
   object FormContext {
     
-    @scala.inline
-    def apply(formApi: FormApi): FormContext = {
+    inline def apply(formApi: FormApi): FormContext = {
       val __obj = js.Dynamic.literal(formApi = formApi.asInstanceOf[js.Any])
       __obj.asInstanceOf[FormContext]
     }
     
-    @scala.inline
-    implicit class FormContextMutableBuilder[Self <: FormContext] (val x: Self) extends AnyVal {
+    extension [Self <: FormContext](x: Self) {
       
-      @scala.inline
-      def setFormApi(value: FormApi): Self = StObject.set(x, "formApi", value.asInstanceOf[js.Any])
+      inline def setFormApi(value: FormApi): Self = StObject.set(x, "formApi", value.asInstanceOf[js.Any])
     }
   }
   
@@ -539,8 +482,7 @@ object mod {
   }
   object FormFunctionProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addValue: (String, js.Any) => Unit,
       asyncValidations: Double,
       errors: FormErrors,
@@ -572,74 +514,51 @@ object mod {
       __obj.asInstanceOf[FormFunctionProps]
     }
     
-    @scala.inline
-    implicit class FormFunctionPropsMutableBuilder[Self <: FormFunctionProps] (val x: Self) extends AnyVal {
+    extension [Self <: FormFunctionProps](x: Self) {
       
-      @scala.inline
-      def setAddValue(value: (String, js.Any) => Unit): Self = StObject.set(x, "addValue", js.Any.fromFunction2(value))
+      inline def setAddValue(value: (String, js.Any) => Unit): Self = StObject.set(x, "addValue", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAsyncValidations(value: Double): Self = StObject.set(x, "asyncValidations", value.asInstanceOf[js.Any])
+      inline def setAsyncValidations(value: Double): Self = StObject.set(x, "asyncValidations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetFormState(value: () => FormState): Self = StObject.set(x, "getFormState", js.Any.fromFunction0(value))
+      inline def setGetFormState(value: () => FormState): Self = StObject.set(x, "getFormState", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveValue(value: (String, Double) => Unit): Self = StObject.set(x, "removeValue", js.Any.fromFunction2(value))
+      inline def setRemoveValue(value: (String, Double) => Unit): Self = StObject.set(x, "removeValue", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setResetAll(value: () => Unit): Self = StObject.set(x, "resetAll", js.Any.fromFunction0(value))
+      inline def setResetAll(value: () => Unit): Self = StObject.set(x, "resetAll", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetAllTouched(value: StringDictionary[Boolean] => Unit): Self = StObject.set(x, "setAllTouched", js.Any.fromFunction1(value))
+      inline def setSetAllTouched(value: StringDictionary[Boolean] => Unit): Self = StObject.set(x, "setAllTouched", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetAllValues(value: FormValues => Unit): Self = StObject.set(x, "setAllValues", js.Any.fromFunction1(value))
+      inline def setSetAllValues(value: FormValues => Unit): Self = StObject.set(x, "setAllValues", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetError(value: (String, String) => Unit): Self = StObject.set(x, "setError", js.Any.fromFunction2(value))
+      inline def setSetError(value: (String, String) => Unit): Self = StObject.set(x, "setError", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetFormState(value: FormState => Unit): Self = StObject.set(x, "setFormState", js.Any.fromFunction1(value))
+      inline def setSetFormState(value: FormState => Unit): Self = StObject.set(x, "setFormState", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetSuccess(value: (String, String) => Unit): Self = StObject.set(x, "setSuccess", js.Any.fromFunction2(value))
+      inline def setSetSuccess(value: (String, String) => Unit): Self = StObject.set(x, "setSuccess", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetTouched(value: (String, Boolean) => Unit): Self = StObject.set(x, "setTouched", js.Any.fromFunction2(value))
+      inline def setSetTouched(value: (String, Boolean) => Unit): Self = StObject.set(x, "setTouched", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetValue(value: (String, js.Any) => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
+      inline def setSetValue(value: (String, js.Any) => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetWarning(value: (String, String) => Unit): Self = StObject.set(x, "setWarning", js.Any.fromFunction2(value))
+      inline def setSetWarning(value: (String, String) => Unit): Self = StObject.set(x, "setWarning", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSubmitForm(value: SyntheticEvent[js.Any, Event] => Unit): Self = StObject.set(x, "submitForm", js.Any.fromFunction1(value))
+      inline def setSubmitForm(value: SyntheticEvent[js.Any, Event] => Unit): Self = StObject.set(x, "submitForm", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSubmits(value: Double): Self = StObject.set(x, "submits", value.asInstanceOf[js.Any])
+      inline def setSubmits(value: Double): Self = StObject.set(x, "submits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubmitted(value: Boolean): Self = StObject.set(x, "submitted", value.asInstanceOf[js.Any])
+      inline def setSubmitted(value: Boolean): Self = StObject.set(x, "submitted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccesses(value: FormErrors): Self = StObject.set(x, "successes", value.asInstanceOf[js.Any])
+      inline def setSuccesses(value: FormErrors): Self = StObject.set(x, "successes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwapValues(value: (String, Double, Double) => Unit): Self = StObject.set(x, "swapValues", js.Any.fromFunction3(value))
+      inline def setSwapValues(value: (String, Double, Double) => Unit): Self = StObject.set(x, "swapValues", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setValidating(value: StringDictionary[Boolean]): Self = StObject.set(x, "validating", value.asInstanceOf[js.Any])
+      inline def setValidating(value: StringDictionary[Boolean]): Self = StObject.set(x, "validating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidationFailed(value: StringDictionary[Boolean]): Self = StObject.set(x, "validationFailed", value.asInstanceOf[js.Any])
+      inline def setValidationFailed(value: StringDictionary[Boolean]): Self = StObject.set(x, "validationFailed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidationFailures(value: Double): Self = StObject.set(x, "validationFailures", value.asInstanceOf[js.Any])
+      inline def setValidationFailures(value: Double): Self = StObject.set(x, "validationFailures", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarnings(value: FormErrors): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+      inline def setWarnings(value: FormErrors): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     }
   }
   
@@ -686,112 +605,78 @@ object mod {
   }
   object FormProps {
     
-    @scala.inline
-    def apply(): FormProps = {
+    inline def apply(): FormProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FormProps]
     }
     
-    @scala.inline
-    implicit class FormPropsMutableBuilder[Self <: FormProps] (val x: Self) extends AnyVal {
+    extension [Self <: FormProps](x: Self) {
       
-      @scala.inline
-      def setAsyncValidators(value: StringDictionary[js.Function1[/* value */ FormValue, js.Promise[js.Any]]]): Self = StObject.set(x, "asyncValidators", value.asInstanceOf[js.Any])
+      inline def setAsyncValidators(value: StringDictionary[js.Function1[/* value */ FormValue, js.Promise[js.Any]]]): Self = StObject.set(x, "asyncValidators", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsyncValidatorsUndefined: Self = StObject.set(x, "asyncValidators", js.undefined)
+      inline def setAsyncValidatorsUndefined: Self = StObject.set(x, "asyncValidators", js.undefined)
       
-      @scala.inline
-      def setComponent(value: ReactType[typings.reactForm.anon.FormApi]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ReactType[typings.reactForm.anon.FormApi]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      @scala.inline
-      def setDefaultValues(value: FormValues): Self = StObject.set(x, "defaultValues", value.asInstanceOf[js.Any])
+      inline def setDefaultValues(value: FormValues): Self = StObject.set(x, "defaultValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValuesUndefined: Self = StObject.set(x, "defaultValues", js.undefined)
+      inline def setDefaultValuesUndefined: Self = StObject.set(x, "defaultValues", js.undefined)
       
-      @scala.inline
-      def setDontPreventDefault(value: Boolean): Self = StObject.set(x, "dontPreventDefault", value.asInstanceOf[js.Any])
+      inline def setDontPreventDefault(value: Boolean): Self = StObject.set(x, "dontPreventDefault", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDontPreventDefaultUndefined: Self = StObject.set(x, "dontPreventDefault", js.undefined)
+      inline def setDontPreventDefaultUndefined: Self = StObject.set(x, "dontPreventDefault", js.undefined)
       
-      @scala.inline
-      def setDontValidateOnMount(value: Boolean): Self = StObject.set(x, "dontValidateOnMount", value.asInstanceOf[js.Any])
+      inline def setDontValidateOnMount(value: Boolean): Self = StObject.set(x, "dontValidateOnMount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDontValidateOnMountUndefined: Self = StObject.set(x, "dontValidateOnMount", js.undefined)
+      inline def setDontValidateOnMountUndefined: Self = StObject.set(x, "dontValidateOnMount", js.undefined)
       
-      @scala.inline
-      def setFormDidUpdate(value: /* formState */ FormState => Unit): Self = StObject.set(x, "formDidUpdate", js.Any.fromFunction1(value))
+      inline def setFormDidUpdate(value: /* formState */ FormState => Unit): Self = StObject.set(x, "formDidUpdate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFormDidUpdateUndefined: Self = StObject.set(x, "formDidUpdate", js.undefined)
+      inline def setFormDidUpdateUndefined: Self = StObject.set(x, "formDidUpdate", js.undefined)
       
-      @scala.inline
-      def setGetApi(value: /* formApi */ FormApi => Unit): Self = StObject.set(x, "getApi", js.Any.fromFunction1(value))
+      inline def setGetApi(value: /* formApi */ FormApi => Unit): Self = StObject.set(x, "getApi", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetApiUndefined: Self = StObject.set(x, "getApi", js.undefined)
+      inline def setGetApiUndefined: Self = StObject.set(x, "getApi", js.undefined)
       
-      @scala.inline
-      def setOnSubmit(
+      inline def setOnSubmit(
         value: (/* values */ FormValues, /* submissionEvent */ SyntheticEvent[js.Any, Event], /* formApi */ FormApi) => Unit
       ): Self = StObject.set(x, "onSubmit", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnSubmitFailure(value: (/* errors */ FormErrors, /* formApi */ FormApi) => Unit): Self = StObject.set(x, "onSubmitFailure", js.Any.fromFunction2(value))
+      inline def setOnSubmitFailure(value: (/* errors */ FormErrors, /* formApi */ FormApi) => Unit): Self = StObject.set(x, "onSubmitFailure", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnSubmitFailureUndefined: Self = StObject.set(x, "onSubmitFailure", js.undefined)
+      inline def setOnSubmitFailureUndefined: Self = StObject.set(x, "onSubmitFailure", js.undefined)
       
-      @scala.inline
-      def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
+      inline def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
       
-      @scala.inline
-      def setPreSubmit(value: (/* values */ FormValues, /* formApi */ FormApi) => FormValues): Self = StObject.set(x, "preSubmit", js.Any.fromFunction2(value))
+      inline def setPreSubmit(value: (/* values */ FormValues, /* formApi */ FormApi) => FormValues): Self = StObject.set(x, "preSubmit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPreSubmitUndefined: Self = StObject.set(x, "preSubmit", js.undefined)
+      inline def setPreSubmitUndefined: Self = StObject.set(x, "preSubmit", js.undefined)
       
-      @scala.inline
-      def setPreValidate(value: /* values */ FormValues => FormValues): Self = StObject.set(x, "preValidate", js.Any.fromFunction1(value))
+      inline def setPreValidate(value: /* values */ FormValues => FormValues): Self = StObject.set(x, "preValidate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPreValidateUndefined: Self = StObject.set(x, "preValidate", js.undefined)
+      inline def setPreValidateUndefined: Self = StObject.set(x, "preValidate", js.undefined)
       
-      @scala.inline
-      def setRender(value: /* formApi */ FormApi => RenderReturn): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      inline def setRender(value: /* formApi */ FormApi => RenderReturn): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+      inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       
-      @scala.inline
-      def setValidateError(value: /* values */ FormValues => FormErrors): Self = StObject.set(x, "validateError", js.Any.fromFunction1(value))
+      inline def setValidateError(value: /* values */ FormValues => FormErrors): Self = StObject.set(x, "validateError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValidateErrorUndefined: Self = StObject.set(x, "validateError", js.undefined)
+      inline def setValidateErrorUndefined: Self = StObject.set(x, "validateError", js.undefined)
       
-      @scala.inline
-      def setValidateOnSubmit(value: Boolean): Self = StObject.set(x, "validateOnSubmit", value.asInstanceOf[js.Any])
+      inline def setValidateOnSubmit(value: Boolean): Self = StObject.set(x, "validateOnSubmit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateOnSubmitUndefined: Self = StObject.set(x, "validateOnSubmit", js.undefined)
+      inline def setValidateOnSubmitUndefined: Self = StObject.set(x, "validateOnSubmit", js.undefined)
       
-      @scala.inline
-      def setValidateSuccess(value: (/* values */ FormValues, /* errors */ FormErrors) => FormErrors): Self = StObject.set(x, "validateSuccess", js.Any.fromFunction2(value))
+      inline def setValidateSuccess(value: (/* values */ FormValues, /* errors */ FormErrors) => FormErrors): Self = StObject.set(x, "validateSuccess", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setValidateSuccessUndefined: Self = StObject.set(x, "validateSuccess", js.undefined)
+      inline def setValidateSuccessUndefined: Self = StObject.set(x, "validateSuccess", js.undefined)
       
-      @scala.inline
-      def setValidateWarning(value: /* values */ FormValues => FormErrors): Self = StObject.set(x, "validateWarning", js.Any.fromFunction1(value))
+      inline def setValidateWarning(value: /* values */ FormValues => FormErrors): Self = StObject.set(x, "validateWarning", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValidateWarningUndefined: Self = StObject.set(x, "validateWarning", js.undefined)
+      inline def setValidateWarningUndefined: Self = StObject.set(x, "validateWarning", js.undefined)
     }
   }
   
@@ -809,32 +694,24 @@ object mod {
   }
   object FormState {
     
-    @scala.inline
-    def apply(errors: FormErrors, nestedErrors: NestedErrors, touched: Touched, values: FormValues): FormState = {
+    inline def apply(errors: FormErrors, nestedErrors: NestedErrors, touched: Touched, values: FormValues): FormState = {
       val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], nestedErrors = nestedErrors.asInstanceOf[js.Any], touched = touched.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
       __obj.asInstanceOf[FormState]
     }
     
-    @scala.inline
-    implicit class FormStateMutableBuilder[Self <: FormState] (val x: Self) extends AnyVal {
+    extension [Self <: FormState](x: Self) {
       
-      @scala.inline
-      def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
+      inline def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirtyUndefined: Self = StObject.set(x, "dirty", js.undefined)
+      inline def setDirtyUndefined: Self = StObject.set(x, "dirty", js.undefined)
       
-      @scala.inline
-      def setErrors(value: FormErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: FormErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNestedErrors(value: NestedErrors): Self = StObject.set(x, "nestedErrors", value.asInstanceOf[js.Any])
+      inline def setNestedErrors(value: NestedErrors): Self = StObject.set(x, "nestedErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouched(value: Touched): Self = StObject.set(x, "touched", value.asInstanceOf[js.Any])
+      inline def setTouched(value: Touched): Self = StObject.set(x, "touched", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: FormValues): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: FormValues): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     }
   }
   
@@ -847,8 +724,7 @@ object mod {
        with /* key */ StringDictionary[T | Nested[T]]
   object Nested {
     
-    @scala.inline
-    def apply[T](): Nested[T] = {
+    inline def apply[T](): Nested[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Nested[T]]
     }
@@ -862,17 +738,14 @@ object mod {
   }
   object RadioGroupContext {
     
-    @scala.inline
-    def apply(group: FieldApi): RadioGroupContext = {
+    inline def apply(group: FieldApi): RadioGroupContext = {
       val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any])
       __obj.asInstanceOf[RadioGroupContext]
     }
     
-    @scala.inline
-    implicit class RadioGroupContextMutableBuilder[Self <: RadioGroupContext] (val x: Self) extends AnyVal {
+    extension [Self <: RadioGroupContext](x: Self) {
       
-      @scala.inline
-      def setGroup(value: FieldApi): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      inline def setGroup(value: FieldApi): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     }
   }
   
@@ -889,20 +762,16 @@ object mod {
   }
   object SelectProps {
     
-    @scala.inline
-    def apply(options: SelectOptions): SelectProps = {
+    inline def apply(options: SelectOptions): SelectProps = {
       val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[SelectProps]
     }
     
-    @scala.inline
-    implicit class SelectPropsMutableBuilder[Self <: SelectProps] (val x: Self) extends AnyVal {
+    extension [Self <: SelectProps](x: Self) {
       
-      @scala.inline
-      def setOptions(value: SelectOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: SelectOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsVarargs(value: Label*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: Label*): Self = StObject.set(x, "options", js.Array(value :_*))
     }
   }
   
@@ -918,32 +787,24 @@ object mod {
   }
   object StyledProps {
     
-    @scala.inline
-    def apply(): StyledProps = {
+    inline def apply(): StyledProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StyledProps]
     }
     
-    @scala.inline
-    implicit class StyledPropsMutableBuilder[Self <: StyledProps] (val x: Self) extends AnyVal {
+    extension [Self <: StyledProps](x: Self) {
       
-      @scala.inline
-      def setMessageBefore(value: Boolean): Self = StObject.set(x, "messageBefore", value.asInstanceOf[js.Any])
+      inline def setMessageBefore(value: Boolean): Self = StObject.set(x, "messageBefore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageBeforeUndefined: Self = StObject.set(x, "messageBefore", js.undefined)
+      inline def setMessageBeforeUndefined: Self = StObject.set(x, "messageBefore", js.undefined)
       
-      @scala.inline
-      def setNoMessage(value: Boolean): Self = StObject.set(x, "noMessage", value.asInstanceOf[js.Any])
+      inline def setNoMessage(value: Boolean): Self = StObject.set(x, "noMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoMessageUndefined: Self = StObject.set(x, "noMessage", js.undefined)
+      inline def setNoMessageUndefined: Self = StObject.set(x, "noMessage", js.undefined)
       
-      @scala.inline
-      def setTouchValidation(value: Boolean): Self = StObject.set(x, "touchValidation", value.asInstanceOf[js.Any])
+      inline def setTouchValidation(value: Boolean): Self = StObject.set(x, "touchValidation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchValidationUndefined: Self = StObject.set(x, "touchValidation", js.undefined)
+      inline def setTouchValidationUndefined: Self = StObject.set(x, "touchValidation", js.undefined)
     }
   }
   

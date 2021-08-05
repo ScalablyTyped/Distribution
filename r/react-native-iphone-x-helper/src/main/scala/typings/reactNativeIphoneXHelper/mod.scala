@@ -10,19 +10,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getBottomSpace(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getBottomSpace")().asInstanceOf[Double]
+  inline def getBottomSpace(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getBottomSpace")().asInstanceOf[Double]
   
-  @scala.inline
-  def getStatusBarHeight(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStatusBarHeight")().asInstanceOf[Double]
-  @scala.inline
-  def getStatusBarHeight(safe: Boolean): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStatusBarHeight")(safe.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getStatusBarHeight(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStatusBarHeight")().asInstanceOf[Double]
+  inline def getStatusBarHeight(safe: Boolean): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStatusBarHeight")(safe.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def ifIphoneX[T](iphoneXVal: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("ifIphoneX")(iphoneXVal.asInstanceOf[js.Any]).asInstanceOf[T]
-  @scala.inline
-  def ifIphoneX[T, U](iphoneXVal: T, regularVal: U): T | U = (^.asInstanceOf[js.Dynamic].applyDynamic("ifIphoneX")(iphoneXVal.asInstanceOf[js.Any], regularVal.asInstanceOf[js.Any])).asInstanceOf[T | U]
+  inline def ifIphoneX[T](iphoneXVal: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("ifIphoneX")(iphoneXVal.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def ifIphoneX[T, U](iphoneXVal: T, regularVal: U): T | U = (^.asInstanceOf[js.Dynamic].applyDynamic("ifIphoneX")(iphoneXVal.asInstanceOf[js.Any], regularVal.asInstanceOf[js.Any])).asInstanceOf[T | U]
   
-  @scala.inline
-  def isIphoneX(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIphoneX")().asInstanceOf[Boolean]
+  inline def isIphoneX(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIphoneX")().asInstanceOf[Boolean]
 }

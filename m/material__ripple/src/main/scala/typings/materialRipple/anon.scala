@@ -26,8 +26,7 @@ object anon {
   }
   object BGFOCUSED {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       BG_FOCUSED: String,
       FG_ACTIVATION: String,
       FG_DEACTIVATION: String,
@@ -38,23 +37,17 @@ object anon {
       __obj.asInstanceOf[BGFOCUSED]
     }
     
-    @scala.inline
-    implicit class BGFOCUSEDMutableBuilder[Self <: BGFOCUSED] (val x: Self) extends AnyVal {
+    extension [Self <: BGFOCUSED](x: Self) {
       
-      @scala.inline
-      def setBG_FOCUSED(value: String): Self = StObject.set(x, "BG_FOCUSED", value.asInstanceOf[js.Any])
+      inline def setBG_FOCUSED(value: String): Self = StObject.set(x, "BG_FOCUSED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFG_ACTIVATION(value: String): Self = StObject.set(x, "FG_ACTIVATION", value.asInstanceOf[js.Any])
+      inline def setFG_ACTIVATION(value: String): Self = StObject.set(x, "FG_ACTIVATION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFG_DEACTIVATION(value: String): Self = StObject.set(x, "FG_DEACTIVATION", value.asInstanceOf[js.Any])
+      inline def setFG_DEACTIVATION(value: String): Self = StObject.set(x, "FG_DEACTIVATION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setROOT(value: String): Self = StObject.set(x, "ROOT", value.asInstanceOf[js.Any])
+      inline def setROOT(value: String): Self = StObject.set(x, "ROOT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUNBOUNDED(value: String): Self = StObject.set(x, "UNBOUNDED", value.asInstanceOf[js.Any])
+      inline def setUNBOUNDED(value: String): Self = StObject.set(x, "UNBOUNDED", value.asInstanceOf[js.Any])
     }
   }
   
@@ -72,8 +65,7 @@ object anon {
   }
   object DEACTIVATIONTIMEOUTMS {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       DEACTIVATION_TIMEOUT_MS: Double,
       FG_DEACTIVATION_MS: Double,
       INITIAL_ORIGIN_SCALE: Double,
@@ -84,23 +76,17 @@ object anon {
       __obj.asInstanceOf[DEACTIVATIONTIMEOUTMS]
     }
     
-    @scala.inline
-    implicit class DEACTIVATIONTIMEOUTMSMutableBuilder[Self <: DEACTIVATIONTIMEOUTMS] (val x: Self) extends AnyVal {
+    extension [Self <: DEACTIVATIONTIMEOUTMS](x: Self) {
       
-      @scala.inline
-      def setDEACTIVATION_TIMEOUT_MS(value: Double): Self = StObject.set(x, "DEACTIVATION_TIMEOUT_MS", value.asInstanceOf[js.Any])
+      inline def setDEACTIVATION_TIMEOUT_MS(value: Double): Self = StObject.set(x, "DEACTIVATION_TIMEOUT_MS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFG_DEACTIVATION_MS(value: Double): Self = StObject.set(x, "FG_DEACTIVATION_MS", value.asInstanceOf[js.Any])
+      inline def setFG_DEACTIVATION_MS(value: Double): Self = StObject.set(x, "FG_DEACTIVATION_MS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setINITIAL_ORIGIN_SCALE(value: Double): Self = StObject.set(x, "INITIAL_ORIGIN_SCALE", value.asInstanceOf[js.Any])
+      inline def setINITIAL_ORIGIN_SCALE(value: Double): Self = StObject.set(x, "INITIAL_ORIGIN_SCALE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPADDING(value: Double): Self = StObject.set(x, "PADDING", value.asInstanceOf[js.Any])
+      inline def setPADDING(value: Double): Self = StObject.set(x, "PADDING", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTAP_DELAY_MS(value: Double): Self = StObject.set(x, "TAP_DELAY_MS", value.asInstanceOf[js.Any])
+      inline def setTAP_DELAY_MS(value: Double): Self = StObject.set(x, "TAP_DELAY_MS", value.asInstanceOf[js.Any])
     }
   }
   
@@ -149,110 +135,76 @@ object anon {
   }
   object PartialMDCRippleAdapter {
     
-    @scala.inline
-    def apply(): PartialMDCRippleAdapter = {
+    inline def apply(): PartialMDCRippleAdapter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialMDCRippleAdapter]
     }
     
-    @scala.inline
-    implicit class PartialMDCRippleAdapterMutableBuilder[Self <: PartialMDCRippleAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: PartialMDCRippleAdapter](x: Self) {
       
-      @scala.inline
-      def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
+      inline def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddClassUndefined: Self = StObject.set(x, "addClass", js.undefined)
+      inline def setAddClassUndefined: Self = StObject.set(x, "addClass", js.undefined)
       
-      @scala.inline
-      def setBrowserSupportsCssVars(value: () => Boolean): Self = StObject.set(x, "browserSupportsCssVars", js.Any.fromFunction0(value))
+      inline def setBrowserSupportsCssVars(value: () => Boolean): Self = StObject.set(x, "browserSupportsCssVars", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setBrowserSupportsCssVarsUndefined: Self = StObject.set(x, "browserSupportsCssVars", js.undefined)
+      inline def setBrowserSupportsCssVarsUndefined: Self = StObject.set(x, "browserSupportsCssVars", js.undefined)
       
-      @scala.inline
-      def setComputeBoundingRect(value: () => ClientRect): Self = StObject.set(x, "computeBoundingRect", js.Any.fromFunction0(value))
+      inline def setComputeBoundingRect(value: () => ClientRect): Self = StObject.set(x, "computeBoundingRect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setComputeBoundingRectUndefined: Self = StObject.set(x, "computeBoundingRect", js.undefined)
+      inline def setComputeBoundingRectUndefined: Self = StObject.set(x, "computeBoundingRect", js.undefined)
       
-      @scala.inline
-      def setContainsEventTarget(value: /* target */ EventTarget | Null => Boolean): Self = StObject.set(x, "containsEventTarget", js.Any.fromFunction1(value))
+      inline def setContainsEventTarget(value: /* target */ EventTarget | Null => Boolean): Self = StObject.set(x, "containsEventTarget", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setContainsEventTargetUndefined: Self = StObject.set(x, "containsEventTarget", js.undefined)
+      inline def setContainsEventTargetUndefined: Self = StObject.set(x, "containsEventTarget", js.undefined)
       
-      @scala.inline
-      def setDeregisterDocumentInteractionHandler(value: (/* evtType */ EventType, /* handler */ SpecificEventListener[EventType]) => Unit): Self = StObject.set(x, "deregisterDocumentInteractionHandler", js.Any.fromFunction2(value))
+      inline def setDeregisterDocumentInteractionHandler(value: (/* evtType */ EventType, /* handler */ SpecificEventListener[EventType]) => Unit): Self = StObject.set(x, "deregisterDocumentInteractionHandler", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDeregisterDocumentInteractionHandlerUndefined: Self = StObject.set(x, "deregisterDocumentInteractionHandler", js.undefined)
+      inline def setDeregisterDocumentInteractionHandlerUndefined: Self = StObject.set(x, "deregisterDocumentInteractionHandler", js.undefined)
       
-      @scala.inline
-      def setDeregisterInteractionHandler(value: (/* evtType */ EventType, /* handler */ SpecificEventListener[EventType]) => Unit): Self = StObject.set(x, "deregisterInteractionHandler", js.Any.fromFunction2(value))
+      inline def setDeregisterInteractionHandler(value: (/* evtType */ EventType, /* handler */ SpecificEventListener[EventType]) => Unit): Self = StObject.set(x, "deregisterInteractionHandler", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDeregisterInteractionHandlerUndefined: Self = StObject.set(x, "deregisterInteractionHandler", js.undefined)
+      inline def setDeregisterInteractionHandlerUndefined: Self = StObject.set(x, "deregisterInteractionHandler", js.undefined)
       
-      @scala.inline
-      def setDeregisterResizeHandler(value: /* handler */ SpecificEventListener[resize] => Unit): Self = StObject.set(x, "deregisterResizeHandler", js.Any.fromFunction1(value))
+      inline def setDeregisterResizeHandler(value: /* handler */ SpecificEventListener[resize] => Unit): Self = StObject.set(x, "deregisterResizeHandler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDeregisterResizeHandlerUndefined: Self = StObject.set(x, "deregisterResizeHandler", js.undefined)
+      inline def setDeregisterResizeHandlerUndefined: Self = StObject.set(x, "deregisterResizeHandler", js.undefined)
       
-      @scala.inline
-      def setGetWindowPageOffset(value: () => MDCRipplePoint): Self = StObject.set(x, "getWindowPageOffset", js.Any.fromFunction0(value))
+      inline def setGetWindowPageOffset(value: () => MDCRipplePoint): Self = StObject.set(x, "getWindowPageOffset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetWindowPageOffsetUndefined: Self = StObject.set(x, "getWindowPageOffset", js.undefined)
+      inline def setGetWindowPageOffsetUndefined: Self = StObject.set(x, "getWindowPageOffset", js.undefined)
       
-      @scala.inline
-      def setIsSurfaceActive(value: () => Boolean): Self = StObject.set(x, "isSurfaceActive", js.Any.fromFunction0(value))
+      inline def setIsSurfaceActive(value: () => Boolean): Self = StObject.set(x, "isSurfaceActive", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsSurfaceActiveUndefined: Self = StObject.set(x, "isSurfaceActive", js.undefined)
+      inline def setIsSurfaceActiveUndefined: Self = StObject.set(x, "isSurfaceActive", js.undefined)
       
-      @scala.inline
-      def setIsSurfaceDisabled(value: () => Boolean): Self = StObject.set(x, "isSurfaceDisabled", js.Any.fromFunction0(value))
+      inline def setIsSurfaceDisabled(value: () => Boolean): Self = StObject.set(x, "isSurfaceDisabled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsSurfaceDisabledUndefined: Self = StObject.set(x, "isSurfaceDisabled", js.undefined)
+      inline def setIsSurfaceDisabledUndefined: Self = StObject.set(x, "isSurfaceDisabled", js.undefined)
       
-      @scala.inline
-      def setIsUnbounded(value: () => Boolean): Self = StObject.set(x, "isUnbounded", js.Any.fromFunction0(value))
+      inline def setIsUnbounded(value: () => Boolean): Self = StObject.set(x, "isUnbounded", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsUnboundedUndefined: Self = StObject.set(x, "isUnbounded", js.undefined)
+      inline def setIsUnboundedUndefined: Self = StObject.set(x, "isUnbounded", js.undefined)
       
-      @scala.inline
-      def setRegisterDocumentInteractionHandler(value: (/* evtType */ EventType, /* handler */ SpecificEventListener[EventType]) => Unit): Self = StObject.set(x, "registerDocumentInteractionHandler", js.Any.fromFunction2(value))
+      inline def setRegisterDocumentInteractionHandler(value: (/* evtType */ EventType, /* handler */ SpecificEventListener[EventType]) => Unit): Self = StObject.set(x, "registerDocumentInteractionHandler", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRegisterDocumentInteractionHandlerUndefined: Self = StObject.set(x, "registerDocumentInteractionHandler", js.undefined)
+      inline def setRegisterDocumentInteractionHandlerUndefined: Self = StObject.set(x, "registerDocumentInteractionHandler", js.undefined)
       
-      @scala.inline
-      def setRegisterInteractionHandler(value: (/* evtType */ EventType, /* handler */ SpecificEventListener[EventType]) => Unit): Self = StObject.set(x, "registerInteractionHandler", js.Any.fromFunction2(value))
+      inline def setRegisterInteractionHandler(value: (/* evtType */ EventType, /* handler */ SpecificEventListener[EventType]) => Unit): Self = StObject.set(x, "registerInteractionHandler", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRegisterInteractionHandlerUndefined: Self = StObject.set(x, "registerInteractionHandler", js.undefined)
+      inline def setRegisterInteractionHandlerUndefined: Self = StObject.set(x, "registerInteractionHandler", js.undefined)
       
-      @scala.inline
-      def setRegisterResizeHandler(value: /* handler */ SpecificEventListener[resize] => Unit): Self = StObject.set(x, "registerResizeHandler", js.Any.fromFunction1(value))
+      inline def setRegisterResizeHandler(value: /* handler */ SpecificEventListener[resize] => Unit): Self = StObject.set(x, "registerResizeHandler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegisterResizeHandlerUndefined: Self = StObject.set(x, "registerResizeHandler", js.undefined)
+      inline def setRegisterResizeHandlerUndefined: Self = StObject.set(x, "registerResizeHandler", js.undefined)
       
-      @scala.inline
-      def setRemoveClass(value: /* className */ String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
+      inline def setRemoveClass(value: /* className */ String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveClassUndefined: Self = StObject.set(x, "removeClass", js.undefined)
+      inline def setRemoveClassUndefined: Self = StObject.set(x, "removeClass", js.undefined)
       
-      @scala.inline
-      def setUpdateCssVariable(value: (/* varName */ String, /* value */ String | Null) => Unit): Self = StObject.set(x, "updateCssVariable", js.Any.fromFunction2(value))
+      inline def setUpdateCssVariable(value: (/* varName */ String, /* value */ String | Null) => Unit): Self = StObject.set(x, "updateCssVariable", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUpdateCssVariableUndefined: Self = StObject.set(x, "updateCssVariable", js.undefined)
+      inline def setUpdateCssVariableUndefined: Self = StObject.set(x, "updateCssVariable", js.undefined)
     }
   }
   
@@ -272,8 +224,7 @@ object anon {
   }
   object VARFGSCALE {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       VAR_FG_SCALE: String,
       VAR_FG_SIZE: String,
       VAR_FG_TRANSLATE_END: String,
@@ -285,26 +236,19 @@ object anon {
       __obj.asInstanceOf[VARFGSCALE]
     }
     
-    @scala.inline
-    implicit class VARFGSCALEMutableBuilder[Self <: VARFGSCALE] (val x: Self) extends AnyVal {
+    extension [Self <: VARFGSCALE](x: Self) {
       
-      @scala.inline
-      def setVAR_FG_SCALE(value: String): Self = StObject.set(x, "VAR_FG_SCALE", value.asInstanceOf[js.Any])
+      inline def setVAR_FG_SCALE(value: String): Self = StObject.set(x, "VAR_FG_SCALE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVAR_FG_SIZE(value: String): Self = StObject.set(x, "VAR_FG_SIZE", value.asInstanceOf[js.Any])
+      inline def setVAR_FG_SIZE(value: String): Self = StObject.set(x, "VAR_FG_SIZE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVAR_FG_TRANSLATE_END(value: String): Self = StObject.set(x, "VAR_FG_TRANSLATE_END", value.asInstanceOf[js.Any])
+      inline def setVAR_FG_TRANSLATE_END(value: String): Self = StObject.set(x, "VAR_FG_TRANSLATE_END", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVAR_FG_TRANSLATE_START(value: String): Self = StObject.set(x, "VAR_FG_TRANSLATE_START", value.asInstanceOf[js.Any])
+      inline def setVAR_FG_TRANSLATE_START(value: String): Self = StObject.set(x, "VAR_FG_TRANSLATE_START", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVAR_LEFT(value: String): Self = StObject.set(x, "VAR_LEFT", value.asInstanceOf[js.Any])
+      inline def setVAR_LEFT(value: String): Self = StObject.set(x, "VAR_LEFT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVAR_TOP(value: String): Self = StObject.set(x, "VAR_TOP", value.asInstanceOf[js.Any])
+      inline def setVAR_TOP(value: String): Self = StObject.set(x, "VAR_TOP", value.asInstanceOf[js.Any])
     }
   }
 }

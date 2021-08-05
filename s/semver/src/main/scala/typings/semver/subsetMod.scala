@@ -10,22 +10,14 @@ object subsetMod {
   /**
     * Return true if the subRange range is entirely contained by the superRange range.
     */
-  @scala.inline
-  def apply(sub: String, dom: String): Boolean = (^.asInstanceOf[js.Dynamic].apply(sub.asInstanceOf[js.Any], dom.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def apply(sub: String, dom: String, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].apply(sub.asInstanceOf[js.Any], dom.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def apply(sub: String, dom: typings.semver.rangeMod.^): Boolean = (^.asInstanceOf[js.Dynamic].apply(sub.asInstanceOf[js.Any], dom.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def apply(sub: String, dom: typings.semver.rangeMod.^, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].apply(sub.asInstanceOf[js.Any], dom.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def apply(sub: typings.semver.rangeMod.^, dom: String): Boolean = (^.asInstanceOf[js.Dynamic].apply(sub.asInstanceOf[js.Any], dom.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def apply(sub: typings.semver.rangeMod.^, dom: String, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].apply(sub.asInstanceOf[js.Any], dom.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def apply(sub: typings.semver.rangeMod.^, dom: typings.semver.rangeMod.^): Boolean = (^.asInstanceOf[js.Dynamic].apply(sub.asInstanceOf[js.Any], dom.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def apply(sub: typings.semver.rangeMod.^, dom: typings.semver.rangeMod.^, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].apply(sub.asInstanceOf[js.Any], dom.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(sub: String, dom: String): Boolean = (^.asInstanceOf[js.Dynamic].apply(sub.asInstanceOf[js.Any], dom.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(sub: String, dom: String, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].apply(sub.asInstanceOf[js.Any], dom.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(sub: String, dom: typings.semver.rangeMod.^): Boolean = (^.asInstanceOf[js.Dynamic].apply(sub.asInstanceOf[js.Any], dom.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(sub: String, dom: typings.semver.rangeMod.^, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].apply(sub.asInstanceOf[js.Any], dom.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(sub: typings.semver.rangeMod.^, dom: String): Boolean = (^.asInstanceOf[js.Dynamic].apply(sub.asInstanceOf[js.Any], dom.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(sub: typings.semver.rangeMod.^, dom: String, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].apply(sub.asInstanceOf[js.Any], dom.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(sub: typings.semver.rangeMod.^, dom: typings.semver.rangeMod.^): Boolean = (^.asInstanceOf[js.Dynamic].apply(sub.asInstanceOf[js.Any], dom.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(sub: typings.semver.rangeMod.^, dom: typings.semver.rangeMod.^, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].apply(sub.asInstanceOf[js.Any], dom.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("semver/ranges/subset", JSImport.Namespace)
   @js.native

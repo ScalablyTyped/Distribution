@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DistTag extends StObject
 object DistTag {
   
-  @scala.inline
-  def canary: typings.ionic.ionicStrings.canary = "canary".asInstanceOf[typings.ionic.ionicStrings.canary]
+  inline def canary: typings.ionic.ionicStrings.canary = "canary".asInstanceOf[typings.ionic.ionicStrings.canary]
   
-  @scala.inline
-  def latest: typings.ionic.ionicStrings.latest = "latest".asInstanceOf[typings.ionic.ionicStrings.latest]
+  inline def latest: typings.ionic.ionicStrings.latest = "latest".asInstanceOf[typings.ionic.ionicStrings.latest]
   
-  @scala.inline
-  def testing: typings.ionic.ionicStrings.testing = "testing".asInstanceOf[typings.ionic.ionicStrings.testing]
+  inline def testing: typings.ionic.ionicStrings.testing = "testing".asInstanceOf[typings.ionic.ionicStrings.testing]
 }

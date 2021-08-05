@@ -10,6 +10,5 @@ object extendedEncodeUriComponentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def extendedEncodeURIComponent(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extendedEncodeURIComponent")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def extendedEncodeURIComponent(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extendedEncodeURIComponent")(str.asInstanceOf[js.Any]).asInstanceOf[String]
 }

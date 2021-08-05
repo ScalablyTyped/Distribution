@@ -12,19 +12,15 @@ trait RefCount extends StObject {
 }
 object RefCount {
   
-  @scala.inline
-  def apply(RefCount: Double, Size: Double): RefCount = {
+  inline def apply(RefCount: Double, Size: Double): RefCount = {
     val __obj = js.Dynamic.literal(RefCount = RefCount.asInstanceOf[js.Any], Size = Size.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefCount]
   }
   
-  @scala.inline
-  implicit class RefCountMutableBuilder[Self <: RefCount] (val x: Self) extends AnyVal {
+  extension [Self <: RefCount](x: Self) {
     
-    @scala.inline
-    def setRefCount(value: Double): Self = StObject.set(x, "RefCount", value.asInstanceOf[js.Any])
+    inline def setRefCount(value: Double): Self = StObject.set(x, "RefCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
   }
 }

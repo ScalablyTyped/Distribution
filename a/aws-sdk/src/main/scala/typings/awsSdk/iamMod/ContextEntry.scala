@@ -23,34 +23,25 @@ trait ContextEntry extends StObject {
 }
 object ContextEntry {
   
-  @scala.inline
-  def apply(): ContextEntry = {
+  inline def apply(): ContextEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContextEntry]
   }
   
-  @scala.inline
-  implicit class ContextEntryMutableBuilder[Self <: ContextEntry] (val x: Self) extends AnyVal {
+  extension [Self <: ContextEntry](x: Self) {
     
-    @scala.inline
-    def setContextKeyName(value: ContextKeyNameType): Self = StObject.set(x, "ContextKeyName", value.asInstanceOf[js.Any])
+    inline def setContextKeyName(value: ContextKeyNameType): Self = StObject.set(x, "ContextKeyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextKeyNameUndefined: Self = StObject.set(x, "ContextKeyName", js.undefined)
+    inline def setContextKeyNameUndefined: Self = StObject.set(x, "ContextKeyName", js.undefined)
     
-    @scala.inline
-    def setContextKeyType(value: ContextKeyTypeEnum): Self = StObject.set(x, "ContextKeyType", value.asInstanceOf[js.Any])
+    inline def setContextKeyType(value: ContextKeyTypeEnum): Self = StObject.set(x, "ContextKeyType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextKeyTypeUndefined: Self = StObject.set(x, "ContextKeyType", js.undefined)
+    inline def setContextKeyTypeUndefined: Self = StObject.set(x, "ContextKeyType", js.undefined)
     
-    @scala.inline
-    def setContextKeyValues(value: ContextKeyValueListType): Self = StObject.set(x, "ContextKeyValues", value.asInstanceOf[js.Any])
+    inline def setContextKeyValues(value: ContextKeyValueListType): Self = StObject.set(x, "ContextKeyValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextKeyValuesUndefined: Self = StObject.set(x, "ContextKeyValues", js.undefined)
+    inline def setContextKeyValuesUndefined: Self = StObject.set(x, "ContextKeyValues", js.undefined)
     
-    @scala.inline
-    def setContextKeyValuesVarargs(value: ContextKeyValueType*): Self = StObject.set(x, "ContextKeyValues", js.Array(value :_*))
+    inline def setContextKeyValuesVarargs(value: ContextKeyValueType*): Self = StObject.set(x, "ContextKeyValues", js.Array(value :_*))
   }
 }

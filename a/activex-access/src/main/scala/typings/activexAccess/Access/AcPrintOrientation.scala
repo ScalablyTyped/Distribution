@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcPrintOrientation extends StObject
 object AcPrintOrientation {
   
-  @scala.inline
-  def acPRORLandscape: `2` = 2.asInstanceOf[`2`]
+  inline def acPRORLandscape: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def acPRORPortrait: `1` = 1.asInstanceOf[`1`]
+  inline def acPRORPortrait: `1` = 1.asInstanceOf[`1`]
 }

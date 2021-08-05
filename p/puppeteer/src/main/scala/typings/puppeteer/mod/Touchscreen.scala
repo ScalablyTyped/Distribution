@@ -15,16 +15,13 @@ trait Touchscreen extends StObject {
 }
 object Touchscreen {
   
-  @scala.inline
-  def apply(tap: (Double, Double) => js.Promise[Unit]): Touchscreen = {
+  inline def apply(tap: (Double, Double) => js.Promise[Unit]): Touchscreen = {
     val __obj = js.Dynamic.literal(tap = js.Any.fromFunction2(tap))
     __obj.asInstanceOf[Touchscreen]
   }
   
-  @scala.inline
-  implicit class TouchscreenMutableBuilder[Self <: Touchscreen] (val x: Self) extends AnyVal {
+  extension [Self <: Touchscreen](x: Self) {
     
-    @scala.inline
-    def setTap(value: (Double, Double) => js.Promise[Unit]): Self = StObject.set(x, "tap", js.Any.fromFunction2(value))
+    inline def setTap(value: (Double, Double) => js.Promise[Unit]): Self = StObject.set(x, "tap", js.Any.fromFunction2(value))
   }
 }

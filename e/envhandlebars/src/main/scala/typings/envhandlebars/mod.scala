@@ -11,16 +11,11 @@ object mod {
   /**
     * A simple templating utility, akin to envsubst, but using Handlebars for more complex logic.
     */
-  @scala.inline
-  def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
-  @scala.inline
-  def apply(cb: EnvHandlebarsCallback): Unit = ^.asInstanceOf[js.Dynamic].apply(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def apply(opts: Unit, cb: EnvHandlebarsCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(opts: Options): Unit = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def apply(opts: Options, cb: EnvHandlebarsCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
+  inline def apply(cb: EnvHandlebarsCallback): Unit = ^.asInstanceOf[js.Dynamic].apply(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(opts: Unit, cb: EnvHandlebarsCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(opts: Options): Unit = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(opts: Options, cb: EnvHandlebarsCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("envhandlebars", JSImport.Namespace)
   @js.native
@@ -71,70 +66,52 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setArrayEnabled(value: Boolean): Self = StObject.set(x, "arrayEnabled", value.asInstanceOf[js.Any])
+      inline def setArrayEnabled(value: Boolean): Self = StObject.set(x, "arrayEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayEnabledUndefined: Self = StObject.set(x, "arrayEnabled", js.undefined)
+      inline def setArrayEnabledUndefined: Self = StObject.set(x, "arrayEnabled", js.undefined)
       
-      @scala.inline
-      def setArrayVarPrefix(value: Boolean): Self = StObject.set(x, "arrayVarPrefix", value.asInstanceOf[js.Any])
+      inline def setArrayVarPrefix(value: Boolean): Self = StObject.set(x, "arrayVarPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayVarPrefixUndefined: Self = StObject.set(x, "arrayVarPrefix", js.undefined)
+      inline def setArrayVarPrefixUndefined: Self = StObject.set(x, "arrayVarPrefix", js.undefined)
       
-      @scala.inline
-      def setEnv(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof process.env */ js.Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof process.env */ js.Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+      inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
       
-      @scala.inline
-      def setExit(
+      inline def setExit(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof process.exit */ js.Any
       ): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
+      inline def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
       
-      @scala.inline
-      def setExtendHandlebars(value: /* Handlebars */ TypeofH => Unit): Self = StObject.set(x, "extendHandlebars", js.Any.fromFunction1(value))
+      inline def setExtendHandlebars(value: /* Handlebars */ TypeofH => Unit): Self = StObject.set(x, "extendHandlebars", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExtendHandlebarsUndefined: Self = StObject.set(x, "extendHandlebars", js.undefined)
+      inline def setExtendHandlebarsUndefined: Self = StObject.set(x, "extendHandlebars", js.undefined)
       
-      @scala.inline
-      def setStderr(
+      inline def setStderr(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof process.stderr */ js.Any
       ): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
+      inline def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
       
-      @scala.inline
-      def setStdin(
+      inline def setStdin(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof process.stdin */ js.Any
       ): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdinUndefined: Self = StObject.set(x, "stdin", js.undefined)
+      inline def setStdinUndefined: Self = StObject.set(x, "stdin", js.undefined)
       
-      @scala.inline
-      def setStout(
+      inline def setStout(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof process.stdout */ js.Any
       ): Self = StObject.set(x, "stout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoutUndefined: Self = StObject.set(x, "stout", js.undefined)
+      inline def setStoutUndefined: Self = StObject.set(x, "stout", js.undefined)
     }
   }
 }

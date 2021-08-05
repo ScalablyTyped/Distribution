@@ -40,40 +40,29 @@ trait LoessTransform
 }
 object LoessTransform {
   
-  @scala.inline
-  def apply(loess: FieldName, on: FieldName): LoessTransform = {
+  inline def apply(loess: FieldName, on: FieldName): LoessTransform = {
     val __obj = js.Dynamic.literal(loess = loess.asInstanceOf[js.Any], on = on.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoessTransform]
   }
   
-  @scala.inline
-  implicit class LoessTransformMutableBuilder[Self <: LoessTransform] (val x: Self) extends AnyVal {
+  extension [Self <: LoessTransform](x: Self) {
     
-    @scala.inline
-    def setAs(value: js.Tuple2[FieldName, FieldName]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def setAs(value: js.Tuple2[FieldName, FieldName]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+    inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
-    @scala.inline
-    def setBandwidth(value: Double): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
+    inline def setBandwidth(value: Double): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBandwidthUndefined: Self = StObject.set(x, "bandwidth", js.undefined)
+    inline def setBandwidthUndefined: Self = StObject.set(x, "bandwidth", js.undefined)
     
-    @scala.inline
-    def setGroupby(value: js.Array[FieldName]): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
+    inline def setGroupby(value: js.Array[FieldName]): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
+    inline def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
     
-    @scala.inline
-    def setGroupbyVarargs(value: FieldName*): Self = StObject.set(x, "groupby", js.Array(value :_*))
+    inline def setGroupbyVarargs(value: FieldName*): Self = StObject.set(x, "groupby", js.Array(value :_*))
     
-    @scala.inline
-    def setLoess(value: FieldName): Self = StObject.set(x, "loess", value.asInstanceOf[js.Any])
+    inline def setLoess(value: FieldName): Self = StObject.set(x, "loess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOn(value: FieldName): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+    inline def setOn(value: FieldName): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
   }
 }

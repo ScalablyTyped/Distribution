@@ -16,8 +16,7 @@ trait ASPxDesignerSaveDialog
 }
 object ASPxDesignerSaveDialog {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     buttons: js.Array[js.Any],
     cancel: () => Unit,
     customize: (String, ASPxDesignerDialogModel) => Unit,
@@ -37,16 +36,12 @@ object ASPxDesignerSaveDialog {
     __obj.asInstanceOf[ASPxDesignerSaveDialog]
   }
   
-  @scala.inline
-  implicit class ASPxDesignerSaveDialogMutableBuilder[Self <: ASPxDesignerSaveDialog] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxDesignerSaveDialog](x: Self) {
     
-    @scala.inline
-    def setNotSave(value: () => Unit): Self = StObject.set(x, "notSave", js.Any.fromFunction0(value))
+    inline def setNotSave(value: () => Unit): Self = StObject.set(x, "notSave", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSave(value: String => Unit): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
+    inline def setSave(value: String => Unit): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSaveReportDialog(value: ASPxDesignerSaveAsDialog): Self = StObject.set(x, "saveReportDialog", value.asInstanceOf[js.Any])
+    inline def setSaveReportDialog(value: ASPxDesignerSaveAsDialog): Self = StObject.set(x, "saveReportDialog", value.asInstanceOf[js.Any])
   }
 }

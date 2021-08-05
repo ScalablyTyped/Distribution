@@ -26,8 +26,7 @@ trait XGroupsSupplier
 }
 object XGroupsSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Groups: XNameAccess,
     acquire: () => Unit,
     getGroups: () => XNameAccess,
@@ -38,13 +37,10 @@ object XGroupsSupplier {
     __obj.asInstanceOf[XGroupsSupplier]
   }
   
-  @scala.inline
-  implicit class XGroupsSupplierMutableBuilder[Self <: XGroupsSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XGroupsSupplier](x: Self) {
     
-    @scala.inline
-    def setGetGroups(value: () => XNameAccess): Self = StObject.set(x, "getGroups", js.Any.fromFunction0(value))
+    inline def setGetGroups(value: () => XNameAccess): Self = StObject.set(x, "getGroups", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGroups(value: XNameAccess): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: XNameAccess): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
   }
 }

@@ -10,19 +10,15 @@ trait PauseClusterResult extends StObject {
 }
 object PauseClusterResult {
   
-  @scala.inline
-  def apply(): PauseClusterResult = {
+  inline def apply(): PauseClusterResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PauseClusterResult]
   }
   
-  @scala.inline
-  implicit class PauseClusterResultMutableBuilder[Self <: PauseClusterResult] (val x: Self) extends AnyVal {
+  extension [Self <: PauseClusterResult](x: Self) {
     
-    @scala.inline
-    def setCluster(value: Cluster): Self = StObject.set(x, "Cluster", value.asInstanceOf[js.Any])
+    inline def setCluster(value: Cluster): Self = StObject.set(x, "Cluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterUndefined: Self = StObject.set(x, "Cluster", js.undefined)
+    inline def setClusterUndefined: Self = StObject.set(x, "Cluster", js.undefined)
   }
 }

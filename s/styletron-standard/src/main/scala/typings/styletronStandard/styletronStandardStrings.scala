@@ -8,6 +8,5 @@ object styletronStandardStrings {
   
   @js.native
   sealed trait StyleObject extends StObject
-  @scala.inline
-  def StyleObject: StyleObject = "StyleObject".asInstanceOf[StyleObject]
+  inline def StyleObject: StyleObject = "StyleObject".asInstanceOf[StyleObject]
 }

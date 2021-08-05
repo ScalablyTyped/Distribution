@@ -13,19 +13,15 @@ trait Animation extends StObject {
 }
 object Animation {
   
-  @scala.inline
-  def apply(animation: TimelineAnimationOptions, focus: Boolean): Animation = {
+  inline def apply(animation: TimelineAnimationOptions, focus: Boolean): Animation = {
     val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], focus = focus.asInstanceOf[js.Any])
     __obj.asInstanceOf[Animation]
   }
   
-  @scala.inline
-  implicit class AnimationMutableBuilder[Self <: Animation] (val x: Self) extends AnyVal {
+  extension [Self <: Animation](x: Self) {
     
-    @scala.inline
-    def setAnimation(value: TimelineAnimationOptions): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: TimelineAnimationOptions): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+    inline def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
   }
 }

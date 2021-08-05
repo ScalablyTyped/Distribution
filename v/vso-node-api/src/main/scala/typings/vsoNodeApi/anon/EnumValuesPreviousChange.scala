@@ -10,16 +10,13 @@ trait EnumValuesPreviousChange extends StObject {
 }
 object EnumValuesPreviousChange {
   
-  @scala.inline
-  def apply(enumValues: PreviousChange): EnumValuesPreviousChange = {
+  inline def apply(enumValues: PreviousChange): EnumValuesPreviousChange = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesPreviousChange]
   }
   
-  @scala.inline
-  implicit class EnumValuesPreviousChangeMutableBuilder[Self <: EnumValuesPreviousChange] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesPreviousChange](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: PreviousChange): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: PreviousChange): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

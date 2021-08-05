@@ -28,8 +28,7 @@ object commentGroupMod extends Shortcut {
        with /* key */ StringDictionary[js.Any]
   object CommentGroupProps {
     
-    @scala.inline
-    def apply(): CommentGroupProps = {
+    inline def apply(): CommentGroupProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CommentGroupProps]
     }
@@ -63,62 +62,44 @@ object commentGroupMod extends Shortcut {
   }
   object StrictCommentGroupProps {
     
-    @scala.inline
-    def apply(): StrictCommentGroupProps = {
+    inline def apply(): StrictCommentGroupProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictCommentGroupProps]
     }
     
-    @scala.inline
-    implicit class StrictCommentGroupPropsMutableBuilder[Self <: StrictCommentGroupProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictCommentGroupProps](x: Self) {
       
-      @scala.inline
-      def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+      inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
+      inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
       
-      @scala.inline
-      def setContent(value: SemanticShorthandContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: SemanticShorthandContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setMinimal(value: Boolean): Self = StObject.set(x, "minimal", value.asInstanceOf[js.Any])
+      inline def setMinimal(value: Boolean): Self = StObject.set(x, "minimal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimalUndefined: Self = StObject.set(x, "minimal", js.undefined)
+      inline def setMinimalUndefined: Self = StObject.set(x, "minimal", js.undefined)
       
-      @scala.inline
-      def setSize(value: mini | tiny | small | large | big | huge | massive): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: mini | tiny | small | large | big | huge | massive): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setThreaded(value: Boolean): Self = StObject.set(x, "threaded", value.asInstanceOf[js.Any])
+      inline def setThreaded(value: Boolean): Self = StObject.set(x, "threaded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThreadedUndefined: Self = StObject.set(x, "threaded", js.undefined)
+      inline def setThreadedUndefined: Self = StObject.set(x, "threaded", js.undefined)
     }
   }
   

@@ -70,63 +70,45 @@ object betterSqlite3BetterSqlite3ConnectionOptionsMod {
   }
   object BetterSqlite3ConnectionOptions {
     
-    @scala.inline
-    def apply(database: String): BetterSqlite3ConnectionOptions = {
+    inline def apply(database: String): BetterSqlite3ConnectionOptions = {
       val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("better-sqlite3")
       __obj.asInstanceOf[BetterSqlite3ConnectionOptions]
     }
     
-    @scala.inline
-    implicit class BetterSqlite3ConnectionOptionsMutableBuilder[Self <: BetterSqlite3ConnectionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BetterSqlite3ConnectionOptions](x: Self) {
       
-      @scala.inline
-      def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+      inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileMustExist(value: Boolean): Self = StObject.set(x, "fileMustExist", value.asInstanceOf[js.Any])
+      inline def setFileMustExist(value: Boolean): Self = StObject.set(x, "fileMustExist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileMustExistUndefined: Self = StObject.set(x, "fileMustExist", js.undefined)
+      inline def setFileMustExistUndefined: Self = StObject.set(x, "fileMustExist", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setPrepareDatabase(value: /* db */ js.Any => Unit | js.Promise[Unit]): Self = StObject.set(x, "prepareDatabase", js.Any.fromFunction1(value))
+      inline def setPrepareDatabase(value: /* db */ js.Any => Unit | js.Promise[Unit]): Self = StObject.set(x, "prepareDatabase", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPrepareDatabaseUndefined: Self = StObject.set(x, "prepareDatabase", js.undefined)
+      inline def setPrepareDatabaseUndefined: Self = StObject.set(x, "prepareDatabase", js.undefined)
       
-      @scala.inline
-      def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
+      inline def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadonlyUndefined: Self = StObject.set(x, "readonly", js.undefined)
+      inline def setReadonlyUndefined: Self = StObject.set(x, "readonly", js.undefined)
       
-      @scala.inline
-      def setStatementCacheSize(value: Double): Self = StObject.set(x, "statementCacheSize", value.asInstanceOf[js.Any])
+      inline def setStatementCacheSize(value: Double): Self = StObject.set(x, "statementCacheSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatementCacheSizeUndefined: Self = StObject.set(x, "statementCacheSize", js.undefined)
+      inline def setStatementCacheSizeUndefined: Self = StObject.set(x, "statementCacheSize", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setType(value: `better-sqlite3`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: `better-sqlite3`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerbose(value: js.Function): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: js.Function): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     }
   }
 }

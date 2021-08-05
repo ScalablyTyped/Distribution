@@ -53,61 +53,43 @@ trait DefineAggregateOptions extends StObject {
 }
 object DefineAggregateOptions {
   
-  @scala.inline
-  def apply(): DefineAggregateOptions = {
+  inline def apply(): DefineAggregateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DefineAggregateOptions]
   }
   
-  @scala.inline
-  implicit class DefineAggregateOptionsMutableBuilder[Self <: DefineAggregateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DefineAggregateOptions](x: Self) {
     
-    @scala.inline
-    def setApplyLastEvent(value: Boolean): Self = StObject.set(x, "applyLastEvent", value.asInstanceOf[js.Any])
+    inline def setApplyLastEvent(value: Boolean): Self = StObject.set(x, "applyLastEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplyLastEventUndefined: Self = StObject.set(x, "applyLastEvent", js.undefined)
+    inline def setApplyLastEventUndefined: Self = StObject.set(x, "applyLastEvent", js.undefined)
     
-    @scala.inline
-    def setDefaultCommandPayload(value: String): Self = StObject.set(x, "defaultCommandPayload", value.asInstanceOf[js.Any])
+    inline def setDefaultCommandPayload(value: String): Self = StObject.set(x, "defaultCommandPayload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultCommandPayloadUndefined: Self = StObject.set(x, "defaultCommandPayload", js.undefined)
+    inline def setDefaultCommandPayloadUndefined: Self = StObject.set(x, "defaultCommandPayload", js.undefined)
     
-    @scala.inline
-    def setDefaultEventPayload(value: String): Self = StObject.set(x, "defaultEventPayload", value.asInstanceOf[js.Any])
+    inline def setDefaultEventPayload(value: String): Self = StObject.set(x, "defaultEventPayload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultEventPayloadUndefined: Self = StObject.set(x, "defaultEventPayload", js.undefined)
+    inline def setDefaultEventPayloadUndefined: Self = StObject.set(x, "defaultEventPayload", js.undefined)
     
-    @scala.inline
-    def setDefaultPreConditionPayload(value: String): Self = StObject.set(x, "defaultPreConditionPayload", value.asInstanceOf[js.Any])
+    inline def setDefaultPreConditionPayload(value: String): Self = StObject.set(x, "defaultPreConditionPayload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultPreConditionPayloadUndefined: Self = StObject.set(x, "defaultPreConditionPayload", js.undefined)
+    inline def setDefaultPreConditionPayloadUndefined: Self = StObject.set(x, "defaultPreConditionPayload", js.undefined)
     
-    @scala.inline
-    def setDisablePersistence(value: Boolean): Self = StObject.set(x, "disablePersistence", value.asInstanceOf[js.Any])
+    inline def setDisablePersistence(value: Boolean): Self = StObject.set(x, "disablePersistence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisablePersistenceUndefined: Self = StObject.set(x, "disablePersistence", js.undefined)
+    inline def setDisablePersistenceUndefined: Self = StObject.set(x, "disablePersistence", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSkipHistory(value: Boolean): Self = StObject.set(x, "skipHistory", value.asInstanceOf[js.Any])
+    inline def setSkipHistory(value: Boolean): Self = StObject.set(x, "skipHistory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipHistoryUndefined: Self = StObject.set(x, "skipHistory", js.undefined)
+    inline def setSkipHistoryUndefined: Self = StObject.set(x, "skipHistory", js.undefined)
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

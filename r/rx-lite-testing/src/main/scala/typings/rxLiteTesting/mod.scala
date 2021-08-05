@@ -41,34 +41,26 @@ object mod {
     @JSImport("rx-lite-testing", "ReactiveTest.created")
     @js.native
     def created: Double = js.native
-    @scala.inline
-    def created_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("created")(x.asInstanceOf[js.Any])
+    inline def created_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("created")(x.asInstanceOf[js.Any])
     
     @JSImport("rx-lite-testing", "ReactiveTest.disposed")
     @js.native
     def disposed: Double = js.native
-    @scala.inline
-    def disposed_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disposed")(x.asInstanceOf[js.Any])
+    inline def disposed_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disposed")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def onCompleted(ticks: Double): typings.rxLiteTesting.Rx.Recorded = ^.asInstanceOf[js.Dynamic].applyDynamic("onCompleted")(ticks.asInstanceOf[js.Any]).asInstanceOf[typings.rxLiteTesting.Rx.Recorded]
+    inline def onCompleted(ticks: Double): typings.rxLiteTesting.Rx.Recorded = ^.asInstanceOf[js.Dynamic].applyDynamic("onCompleted")(ticks.asInstanceOf[js.Any]).asInstanceOf[typings.rxLiteTesting.Rx.Recorded]
     
-    @scala.inline
-    def onError(ticks: Double, exception: js.Any): typings.rxLiteTesting.Rx.Recorded = (^.asInstanceOf[js.Dynamic].applyDynamic("onError")(ticks.asInstanceOf[js.Any], exception.asInstanceOf[js.Any])).asInstanceOf[typings.rxLiteTesting.Rx.Recorded]
+    inline def onError(ticks: Double, exception: js.Any): typings.rxLiteTesting.Rx.Recorded = (^.asInstanceOf[js.Dynamic].applyDynamic("onError")(ticks.asInstanceOf[js.Any], exception.asInstanceOf[js.Any])).asInstanceOf[typings.rxLiteTesting.Rx.Recorded]
     
-    @scala.inline
-    def onNext(ticks: Double, value: js.Any): typings.rxLiteTesting.Rx.Recorded = (^.asInstanceOf[js.Dynamic].applyDynamic("onNext")(ticks.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.rxLiteTesting.Rx.Recorded]
+    inline def onNext(ticks: Double, value: js.Any): typings.rxLiteTesting.Rx.Recorded = (^.asInstanceOf[js.Dynamic].applyDynamic("onNext")(ticks.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.rxLiteTesting.Rx.Recorded]
     
-    @scala.inline
-    def subscribe(subscribeAt: Double): typings.rxLiteTesting.Rx.Subscription = ^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(subscribeAt.asInstanceOf[js.Any]).asInstanceOf[typings.rxLiteTesting.Rx.Subscription]
-    @scala.inline
-    def subscribe(subscribeAt: Double, unsubscribeAt: Double): typings.rxLiteTesting.Rx.Subscription = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(subscribeAt.asInstanceOf[js.Any], unsubscribeAt.asInstanceOf[js.Any])).asInstanceOf[typings.rxLiteTesting.Rx.Subscription]
+    inline def subscribe(subscribeAt: Double): typings.rxLiteTesting.Rx.Subscription = ^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(subscribeAt.asInstanceOf[js.Any]).asInstanceOf[typings.rxLiteTesting.Rx.Subscription]
+    inline def subscribe(subscribeAt: Double, unsubscribeAt: Double): typings.rxLiteTesting.Rx.Subscription = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(subscribeAt.asInstanceOf[js.Any], unsubscribeAt.asInstanceOf[js.Any])).asInstanceOf[typings.rxLiteTesting.Rx.Subscription]
     
     @JSImport("rx-lite-testing", "ReactiveTest.subscribed")
     @js.native
     def subscribed: Double = js.native
-    @scala.inline
-    def subscribed_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("subscribed")(x.asInstanceOf[js.Any])
+    inline def subscribed_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("subscribed")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("rx-lite-testing", "Recorded")

@@ -18,19 +18,15 @@ trait TempThumbPath extends StObject {
 }
 object TempThumbPath {
   
-  @scala.inline
-  def apply(tempThumbPath: String, tempVideoPath: String): TempThumbPath = {
+  inline def apply(tempThumbPath: String, tempVideoPath: String): TempThumbPath = {
     val __obj = js.Dynamic.literal(tempThumbPath = tempThumbPath.asInstanceOf[js.Any], tempVideoPath = tempVideoPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[TempThumbPath]
   }
   
-  @scala.inline
-  implicit class TempThumbPathMutableBuilder[Self <: TempThumbPath] (val x: Self) extends AnyVal {
+  extension [Self <: TempThumbPath](x: Self) {
     
-    @scala.inline
-    def setTempThumbPath(value: String): Self = StObject.set(x, "tempThumbPath", value.asInstanceOf[js.Any])
+    inline def setTempThumbPath(value: String): Self = StObject.set(x, "tempThumbPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTempVideoPath(value: String): Self = StObject.set(x, "tempVideoPath", value.asInstanceOf[js.Any])
+    inline def setTempVideoPath(value: String): Self = StObject.set(x, "tempVideoPath", value.asInstanceOf[js.Any])
   }
 }

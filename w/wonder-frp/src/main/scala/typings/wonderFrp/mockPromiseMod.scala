@@ -14,9 +14,9 @@ object mockPromiseMod {
   class MockPromise protected () extends StObject {
     def this(scheduler: TestScheduler, messages: js.Array[Record]) = this()
     
-    var _messages: js.Any = js.native
+    /* private */ var _messages: js.Any = js.native
     
-    var _scheduler: js.Any = js.native
+    /* private */ var _scheduler: js.Any = js.native
     
     def `then`(successCb: js.Function, errorCb: js.Function, observer: IObserver): Unit = js.native
   }
@@ -27,7 +27,6 @@ object mockPromiseMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(scheduler: TestScheduler, messages: js.Array[Record]): MockPromise = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(scheduler.asInstanceOf[js.Any], messages.asInstanceOf[js.Any])).asInstanceOf[MockPromise]
+    inline def create(scheduler: TestScheduler, messages: js.Array[Record]): MockPromise = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(scheduler.asInstanceOf[js.Any], messages.asInstanceOf[js.Any])).asInstanceOf[MockPromise]
   }
 }

@@ -18,19 +18,15 @@ trait Ssml extends StObject {
 }
 object Ssml {
   
-  @scala.inline
-  def apply(Locale: Locale, Value: SsmlValue): Ssml = {
+  inline def apply(Locale: Locale, Value: SsmlValue): Ssml = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ssml]
   }
   
-  @scala.inline
-  implicit class SsmlMutableBuilder[Self <: Ssml] (val x: Self) extends AnyVal {
+  extension [Self <: Ssml](x: Self) {
     
-    @scala.inline
-    def setLocale(value: Locale): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Locale): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: SsmlValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: SsmlValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

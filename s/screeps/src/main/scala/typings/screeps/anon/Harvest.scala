@@ -10,16 +10,13 @@ trait Harvest extends StObject {
 }
 object Harvest {
   
-  @scala.inline
-  def apply(): Harvest = {
+  inline def apply(): Harvest = {
     val __obj = js.Dynamic.literal(harvest = 3)
     __obj.asInstanceOf[Harvest]
   }
   
-  @scala.inline
-  implicit class HarvestMutableBuilder[Self <: Harvest] (val x: Self) extends AnyVal {
+  extension [Self <: Harvest](x: Self) {
     
-    @scala.inline
-    def setHarvest(value: typings.screeps.screepsNumbers.`3`): Self = StObject.set(x, "harvest", value.asInstanceOf[js.Any])
+    inline def setHarvest(value: typings.screeps.screepsNumbers.`3`): Self = StObject.set(x, "harvest", value.asInstanceOf[js.Any])
   }
 }

@@ -11,15 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(name: String, values: ThemeMap): ThemeSet = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[ThemeSet]
+  inline def apply(name: String, values: ThemeMap): ThemeSet = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[ThemeSet]
   
   @JSImport("styled-theming", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def variants[TProp /* <: String */, TVariant /* <: String */](name: String, prop: TProp, values: VariantMap[TVariant]): VariantSet[TProp, TVariant] = (^.asInstanceOf[js.Dynamic].applyDynamic("variants")(name.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[VariantSet[TProp, TVariant]]
+  inline def variants[TProp /* <: String */, TVariant /* <: String */](name: String, prop: TProp, values: VariantMap[TVariant]): VariantSet[TProp, TVariant] = (^.asInstanceOf[js.Dynamic].applyDynamic("variants")(name.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[VariantSet[TProp, TVariant]]
   
   type ThemeMap = StringDictionary[ThemeValue]
   

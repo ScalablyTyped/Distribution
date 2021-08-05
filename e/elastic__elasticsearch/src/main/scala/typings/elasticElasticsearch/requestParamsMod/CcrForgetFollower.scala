@@ -14,19 +14,15 @@ trait CcrForgetFollower[T]
 }
 object CcrForgetFollower {
   
-  @scala.inline
-  def apply[T](body: T, index: String): CcrForgetFollower[T] = {
+  inline def apply[T](body: T, index: String): CcrForgetFollower[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
     __obj.asInstanceOf[CcrForgetFollower[T]]
   }
   
-  @scala.inline
-  implicit class CcrForgetFollowerMutableBuilder[Self <: CcrForgetFollower[?], T] (val x: Self & CcrForgetFollower[T]) extends AnyVal {
+  extension [Self <: CcrForgetFollower[?], T](x: Self & CcrForgetFollower[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
   }
 }

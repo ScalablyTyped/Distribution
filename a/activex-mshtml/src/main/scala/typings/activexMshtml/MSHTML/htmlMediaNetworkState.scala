@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait htmlMediaNetworkState extends StObject
 object htmlMediaNetworkState {
   
-  @scala.inline
-  def htmlMediaNetworkStateEmpty: `0` = 0.asInstanceOf[`0`]
+  inline def htmlMediaNetworkStateEmpty: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def htmlMediaNetworkStateIdle: `1` = 1.asInstanceOf[`1`]
+  inline def htmlMediaNetworkStateIdle: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def htmlMediaNetworkStateLoading: `2` = 2.asInstanceOf[`2`]
+  inline def htmlMediaNetworkStateLoading: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def htmlMediaNetworkStateNoSource: `3` = 3.asInstanceOf[`3`]
+  inline def htmlMediaNetworkStateNoSource: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def htmlMediaNetworkState_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def htmlMediaNetworkState_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

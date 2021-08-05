@@ -19,10 +19,10 @@ object buttonsMod {
     def this(props: IButtonProps & AnchorHTMLAttributes[HTMLAnchorElement]) = this()
     def this(props: IButtonProps & AnchorHTMLAttributes[HTMLAnchorElement], context: js.Any) = this()
     
-    @JSName("buttonRef")
+    /* protected */ @JSName("buttonRef")
     var buttonRef_AnchorButton: HTMLAnchorElement | IRefObject[HTMLAnchorElement] | Null = js.native
     
-    var handleRef: IRefObject[HTMLAnchorElement] | (js.Function1[/* ref */ HTMLAnchorElement | Null, Unit]) = js.native
+    /* protected */ var handleRef: IRefObject[HTMLAnchorElement] | (js.Function1[/* ref */ HTMLAnchorElement | Null, Unit]) = js.native
   }
   /* static members */
   object AnchorButton {
@@ -34,8 +34,7 @@ object buttonsMod {
     @JSImport("@blueprintjs/core/lib/esm/components/button/buttons", "AnchorButton.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@blueprintjs/core/lib/esm/components/button/buttons", "Button")
@@ -44,10 +43,10 @@ object buttonsMod {
     def this(props: IButtonProps & ButtonHTMLAttributes[HTMLButtonElement]) = this()
     def this(props: IButtonProps & ButtonHTMLAttributes[HTMLButtonElement], context: js.Any) = this()
     
-    @JSName("buttonRef")
+    /* protected */ @JSName("buttonRef")
     var buttonRef_Button: HTMLButtonElement | IRefObject[HTMLButtonElement] | Null = js.native
     
-    var handleRef: IRefObject[HTMLButtonElement] | (js.Function1[/* ref */ HTMLButtonElement | Null, Unit]) = js.native
+    /* protected */ var handleRef: IRefObject[HTMLButtonElement] | (js.Function1[/* ref */ HTMLButtonElement | Null, Unit]) = js.native
   }
   /* static members */
   object Button {
@@ -59,7 +58,6 @@ object buttonsMod {
     @JSImport("@blueprintjs/core/lib/esm/components/button/buttons", "Button.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
 }

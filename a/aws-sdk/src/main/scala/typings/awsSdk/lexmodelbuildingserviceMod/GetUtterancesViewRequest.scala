@@ -23,25 +23,19 @@ trait GetUtterancesViewRequest extends StObject {
 }
 object GetUtterancesViewRequest {
   
-  @scala.inline
-  def apply(botName: BotName, botVersions: BotVersions, statusType: StatusType): GetUtterancesViewRequest = {
+  inline def apply(botName: BotName, botVersions: BotVersions, statusType: StatusType): GetUtterancesViewRequest = {
     val __obj = js.Dynamic.literal(botName = botName.asInstanceOf[js.Any], botVersions = botVersions.asInstanceOf[js.Any], statusType = statusType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUtterancesViewRequest]
   }
   
-  @scala.inline
-  implicit class GetUtterancesViewRequestMutableBuilder[Self <: GetUtterancesViewRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetUtterancesViewRequest](x: Self) {
     
-    @scala.inline
-    def setBotName(value: BotName): Self = StObject.set(x, "botName", value.asInstanceOf[js.Any])
+    inline def setBotName(value: BotName): Self = StObject.set(x, "botName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBotVersions(value: BotVersions): Self = StObject.set(x, "botVersions", value.asInstanceOf[js.Any])
+    inline def setBotVersions(value: BotVersions): Self = StObject.set(x, "botVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBotVersionsVarargs(value: Version*): Self = StObject.set(x, "botVersions", js.Array(value :_*))
+    inline def setBotVersionsVarargs(value: Version*): Self = StObject.set(x, "botVersions", js.Array(value :_*))
     
-    @scala.inline
-    def setStatusType(value: StatusType): Self = StObject.set(x, "statusType", value.asInstanceOf[js.Any])
+    inline def setStatusType(value: StatusType): Self = StObject.set(x, "statusType", value.asInstanceOf[js.Any])
   }
 }

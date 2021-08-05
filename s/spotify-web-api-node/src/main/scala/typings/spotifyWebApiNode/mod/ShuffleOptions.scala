@@ -12,19 +12,15 @@ trait ShuffleOptions
 }
 object ShuffleOptions {
   
-  @scala.inline
-  def apply(): ShuffleOptions = {
+  inline def apply(): ShuffleOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShuffleOptions]
   }
   
-  @scala.inline
-  implicit class ShuffleOptionsMutableBuilder[Self <: ShuffleOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ShuffleOptions](x: Self) {
     
-    @scala.inline
-    def setState(value: Boolean): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: Boolean): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

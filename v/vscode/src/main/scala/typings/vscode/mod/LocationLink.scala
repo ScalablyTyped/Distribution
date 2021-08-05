@@ -31,31 +31,23 @@ trait LocationLink extends StObject {
 }
 object LocationLink {
   
-  @scala.inline
-  def apply(targetRange: Range, targetUri: Uri): LocationLink = {
+  inline def apply(targetRange: Range, targetUri: Uri): LocationLink = {
     val __obj = js.Dynamic.literal(targetRange = targetRange.asInstanceOf[js.Any], targetUri = targetUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationLink]
   }
   
-  @scala.inline
-  implicit class LocationLinkMutableBuilder[Self <: LocationLink] (val x: Self) extends AnyVal {
+  extension [Self <: LocationLink](x: Self) {
     
-    @scala.inline
-    def setOriginSelectionRange(value: Range): Self = StObject.set(x, "originSelectionRange", value.asInstanceOf[js.Any])
+    inline def setOriginSelectionRange(value: Range): Self = StObject.set(x, "originSelectionRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginSelectionRangeUndefined: Self = StObject.set(x, "originSelectionRange", js.undefined)
+    inline def setOriginSelectionRangeUndefined: Self = StObject.set(x, "originSelectionRange", js.undefined)
     
-    @scala.inline
-    def setTargetRange(value: Range): Self = StObject.set(x, "targetRange", value.asInstanceOf[js.Any])
+    inline def setTargetRange(value: Range): Self = StObject.set(x, "targetRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetSelectionRange(value: Range): Self = StObject.set(x, "targetSelectionRange", value.asInstanceOf[js.Any])
+    inline def setTargetSelectionRange(value: Range): Self = StObject.set(x, "targetSelectionRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetSelectionRangeUndefined: Self = StObject.set(x, "targetSelectionRange", js.undefined)
+    inline def setTargetSelectionRangeUndefined: Self = StObject.set(x, "targetSelectionRange", js.undefined)
     
-    @scala.inline
-    def setTargetUri(value: Uri): Self = StObject.set(x, "targetUri", value.asInstanceOf[js.Any])
+    inline def setTargetUri(value: Uri): Self = StObject.set(x, "targetUri", value.asInstanceOf[js.Any])
   }
 }

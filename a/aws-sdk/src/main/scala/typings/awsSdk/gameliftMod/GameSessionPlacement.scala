@@ -98,130 +98,89 @@ trait GameSessionPlacement extends StObject {
 }
 object GameSessionPlacement {
   
-  @scala.inline
-  def apply(): GameSessionPlacement = {
+  inline def apply(): GameSessionPlacement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GameSessionPlacement]
   }
   
-  @scala.inline
-  implicit class GameSessionPlacementMutableBuilder[Self <: GameSessionPlacement] (val x: Self) extends AnyVal {
+  extension [Self <: GameSessionPlacement](x: Self) {
     
-    @scala.inline
-    def setDnsName(value: DnsName): Self = StObject.set(x, "DnsName", value.asInstanceOf[js.Any])
+    inline def setDnsName(value: DnsName): Self = StObject.set(x, "DnsName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDnsNameUndefined: Self = StObject.set(x, "DnsName", js.undefined)
+    inline def setDnsNameUndefined: Self = StObject.set(x, "DnsName", js.undefined)
     
-    @scala.inline
-    def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
-    @scala.inline
-    def setGameProperties(value: GamePropertyList): Self = StObject.set(x, "GameProperties", value.asInstanceOf[js.Any])
+    inline def setGameProperties(value: GamePropertyList): Self = StObject.set(x, "GameProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGamePropertiesUndefined: Self = StObject.set(x, "GameProperties", js.undefined)
+    inline def setGamePropertiesUndefined: Self = StObject.set(x, "GameProperties", js.undefined)
     
-    @scala.inline
-    def setGamePropertiesVarargs(value: GameProperty*): Self = StObject.set(x, "GameProperties", js.Array(value :_*))
+    inline def setGamePropertiesVarargs(value: GameProperty*): Self = StObject.set(x, "GameProperties", js.Array(value :_*))
     
-    @scala.inline
-    def setGameSessionArn(value: NonZeroAndMaxString): Self = StObject.set(x, "GameSessionArn", value.asInstanceOf[js.Any])
+    inline def setGameSessionArn(value: NonZeroAndMaxString): Self = StObject.set(x, "GameSessionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameSessionArnUndefined: Self = StObject.set(x, "GameSessionArn", js.undefined)
+    inline def setGameSessionArnUndefined: Self = StObject.set(x, "GameSessionArn", js.undefined)
     
-    @scala.inline
-    def setGameSessionData(value: GameSessionData): Self = StObject.set(x, "GameSessionData", value.asInstanceOf[js.Any])
+    inline def setGameSessionData(value: GameSessionData): Self = StObject.set(x, "GameSessionData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameSessionDataUndefined: Self = StObject.set(x, "GameSessionData", js.undefined)
+    inline def setGameSessionDataUndefined: Self = StObject.set(x, "GameSessionData", js.undefined)
     
-    @scala.inline
-    def setGameSessionId(value: NonZeroAndMaxString): Self = StObject.set(x, "GameSessionId", value.asInstanceOf[js.Any])
+    inline def setGameSessionId(value: NonZeroAndMaxString): Self = StObject.set(x, "GameSessionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameSessionIdUndefined: Self = StObject.set(x, "GameSessionId", js.undefined)
+    inline def setGameSessionIdUndefined: Self = StObject.set(x, "GameSessionId", js.undefined)
     
-    @scala.inline
-    def setGameSessionName(value: NonZeroAndMaxString): Self = StObject.set(x, "GameSessionName", value.asInstanceOf[js.Any])
+    inline def setGameSessionName(value: NonZeroAndMaxString): Self = StObject.set(x, "GameSessionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameSessionNameUndefined: Self = StObject.set(x, "GameSessionName", js.undefined)
+    inline def setGameSessionNameUndefined: Self = StObject.set(x, "GameSessionName", js.undefined)
     
-    @scala.inline
-    def setGameSessionQueueName(value: GameSessionQueueName): Self = StObject.set(x, "GameSessionQueueName", value.asInstanceOf[js.Any])
+    inline def setGameSessionQueueName(value: GameSessionQueueName): Self = StObject.set(x, "GameSessionQueueName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameSessionQueueNameUndefined: Self = StObject.set(x, "GameSessionQueueName", js.undefined)
+    inline def setGameSessionQueueNameUndefined: Self = StObject.set(x, "GameSessionQueueName", js.undefined)
     
-    @scala.inline
-    def setGameSessionRegion(value: NonZeroAndMaxString): Self = StObject.set(x, "GameSessionRegion", value.asInstanceOf[js.Any])
+    inline def setGameSessionRegion(value: NonZeroAndMaxString): Self = StObject.set(x, "GameSessionRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameSessionRegionUndefined: Self = StObject.set(x, "GameSessionRegion", js.undefined)
+    inline def setGameSessionRegionUndefined: Self = StObject.set(x, "GameSessionRegion", js.undefined)
     
-    @scala.inline
-    def setIpAddress(value: IpAddress): Self = StObject.set(x, "IpAddress", value.asInstanceOf[js.Any])
+    inline def setIpAddress(value: IpAddress): Self = StObject.set(x, "IpAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddressUndefined: Self = StObject.set(x, "IpAddress", js.undefined)
+    inline def setIpAddressUndefined: Self = StObject.set(x, "IpAddress", js.undefined)
     
-    @scala.inline
-    def setMatchmakerData(value: MatchmakerData): Self = StObject.set(x, "MatchmakerData", value.asInstanceOf[js.Any])
+    inline def setMatchmakerData(value: MatchmakerData): Self = StObject.set(x, "MatchmakerData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchmakerDataUndefined: Self = StObject.set(x, "MatchmakerData", js.undefined)
+    inline def setMatchmakerDataUndefined: Self = StObject.set(x, "MatchmakerData", js.undefined)
     
-    @scala.inline
-    def setMaximumPlayerSessionCount(value: WholeNumber): Self = StObject.set(x, "MaximumPlayerSessionCount", value.asInstanceOf[js.Any])
+    inline def setMaximumPlayerSessionCount(value: WholeNumber): Self = StObject.set(x, "MaximumPlayerSessionCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumPlayerSessionCountUndefined: Self = StObject.set(x, "MaximumPlayerSessionCount", js.undefined)
+    inline def setMaximumPlayerSessionCountUndefined: Self = StObject.set(x, "MaximumPlayerSessionCount", js.undefined)
     
-    @scala.inline
-    def setPlacedPlayerSessions(value: PlacedPlayerSessionList): Self = StObject.set(x, "PlacedPlayerSessions", value.asInstanceOf[js.Any])
+    inline def setPlacedPlayerSessions(value: PlacedPlayerSessionList): Self = StObject.set(x, "PlacedPlayerSessions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacedPlayerSessionsUndefined: Self = StObject.set(x, "PlacedPlayerSessions", js.undefined)
+    inline def setPlacedPlayerSessionsUndefined: Self = StObject.set(x, "PlacedPlayerSessions", js.undefined)
     
-    @scala.inline
-    def setPlacedPlayerSessionsVarargs(value: PlacedPlayerSession*): Self = StObject.set(x, "PlacedPlayerSessions", js.Array(value :_*))
+    inline def setPlacedPlayerSessionsVarargs(value: PlacedPlayerSession*): Self = StObject.set(x, "PlacedPlayerSessions", js.Array(value :_*))
     
-    @scala.inline
-    def setPlacementId(value: IdStringModel): Self = StObject.set(x, "PlacementId", value.asInstanceOf[js.Any])
+    inline def setPlacementId(value: IdStringModel): Self = StObject.set(x, "PlacementId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacementIdUndefined: Self = StObject.set(x, "PlacementId", js.undefined)
+    inline def setPlacementIdUndefined: Self = StObject.set(x, "PlacementId", js.undefined)
     
-    @scala.inline
-    def setPlayerLatencies(value: PlayerLatencyList): Self = StObject.set(x, "PlayerLatencies", value.asInstanceOf[js.Any])
+    inline def setPlayerLatencies(value: PlayerLatencyList): Self = StObject.set(x, "PlayerLatencies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerLatenciesUndefined: Self = StObject.set(x, "PlayerLatencies", js.undefined)
+    inline def setPlayerLatenciesUndefined: Self = StObject.set(x, "PlayerLatencies", js.undefined)
     
-    @scala.inline
-    def setPlayerLatenciesVarargs(value: PlayerLatency*): Self = StObject.set(x, "PlayerLatencies", js.Array(value :_*))
+    inline def setPlayerLatenciesVarargs(value: PlayerLatency*): Self = StObject.set(x, "PlayerLatencies", js.Array(value :_*))
     
-    @scala.inline
-    def setPort(value: PortNumber): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
+    inline def setPort(value: PortNumber): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
-    @scala.inline
-    def setStatus(value: GameSessionPlacementState): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: GameSessionPlacementState): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

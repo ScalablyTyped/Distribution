@@ -23,34 +23,25 @@ trait DetectLabelsResponse extends StObject {
 }
 object DetectLabelsResponse {
   
-  @scala.inline
-  def apply(): DetectLabelsResponse = {
+  inline def apply(): DetectLabelsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DetectLabelsResponse]
   }
   
-  @scala.inline
-  implicit class DetectLabelsResponseMutableBuilder[Self <: DetectLabelsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DetectLabelsResponse](x: Self) {
     
-    @scala.inline
-    def setLabelModelVersion(value: String): Self = StObject.set(x, "LabelModelVersion", value.asInstanceOf[js.Any])
+    inline def setLabelModelVersion(value: String): Self = StObject.set(x, "LabelModelVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelModelVersionUndefined: Self = StObject.set(x, "LabelModelVersion", js.undefined)
+    inline def setLabelModelVersionUndefined: Self = StObject.set(x, "LabelModelVersion", js.undefined)
     
-    @scala.inline
-    def setLabels(value: Labels): Self = StObject.set(x, "Labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: Labels): Self = StObject.set(x, "Labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "Labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "Labels", js.undefined)
     
-    @scala.inline
-    def setLabelsVarargs(value: Label*): Self = StObject.set(x, "Labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: Label*): Self = StObject.set(x, "Labels", js.Array(value :_*))
     
-    @scala.inline
-    def setOrientationCorrection(value: OrientationCorrection): Self = StObject.set(x, "OrientationCorrection", value.asInstanceOf[js.Any])
+    inline def setOrientationCorrection(value: OrientationCorrection): Self = StObject.set(x, "OrientationCorrection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientationCorrectionUndefined: Self = StObject.set(x, "OrientationCorrection", js.undefined)
+    inline def setOrientationCorrectionUndefined: Self = StObject.set(x, "OrientationCorrection", js.undefined)
   }
 }

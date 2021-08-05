@@ -17,8 +17,7 @@ trait ParametersProjectsAddCollaboratorEndpoint extends StObject {
 }
 object ParametersProjectsAddCollaboratorEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ProjectsAddCollaboratorEndpoint,
     request: ProjectsAddCollaboratorRequestOptions,
     response: OctokitResponse[js.Any]
@@ -27,16 +26,12 @@ object ParametersProjectsAddCollaboratorEndpoint {
     __obj.asInstanceOf[ParametersProjectsAddCollaboratorEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersProjectsAddCollaboratorEndpointMutableBuilder[Self <: ParametersProjectsAddCollaboratorEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersProjectsAddCollaboratorEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ProjectsAddCollaboratorEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ProjectsAddCollaboratorEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ProjectsAddCollaboratorRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ProjectsAddCollaboratorRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

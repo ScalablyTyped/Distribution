@@ -18,25 +18,19 @@ trait ListSchedulesResponse extends StObject {
 }
 object ListSchedulesResponse {
   
-  @scala.inline
-  def apply(Schedules: ScheduleList): ListSchedulesResponse = {
+  inline def apply(Schedules: ScheduleList): ListSchedulesResponse = {
     val __obj = js.Dynamic.literal(Schedules = Schedules.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSchedulesResponse]
   }
   
-  @scala.inline
-  implicit class ListSchedulesResponseMutableBuilder[Self <: ListSchedulesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListSchedulesResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSchedules(value: ScheduleList): Self = StObject.set(x, "Schedules", value.asInstanceOf[js.Any])
+    inline def setSchedules(value: ScheduleList): Self = StObject.set(x, "Schedules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchedulesVarargs(value: Schedule*): Self = StObject.set(x, "Schedules", js.Array(value :_*))
+    inline def setSchedulesVarargs(value: Schedule*): Self = StObject.set(x, "Schedules", js.Array(value :_*))
   }
 }

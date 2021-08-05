@@ -29,33 +29,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PpColorSchemeIndex extends StObject
 object PpColorSchemeIndex {
   
-  @scala.inline
-  def ppAccent1: `6` = 6.asInstanceOf[`6`]
+  inline def ppAccent1: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def ppAccent2: `7` = 7.asInstanceOf[`7`]
+  inline def ppAccent2: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def ppAccent3: `8` = 8.asInstanceOf[`8`]
+  inline def ppAccent3: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def ppBackground: `1` = 1.asInstanceOf[`1`]
+  inline def ppBackground: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def ppFill: `5` = 5.asInstanceOf[`5`]
+  inline def ppFill: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def ppForeground: `2` = 2.asInstanceOf[`2`]
+  inline def ppForeground: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def ppNotSchemeColor: `0` = 0.asInstanceOf[`0`]
+  inline def ppNotSchemeColor: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def ppSchemeColorMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def ppSchemeColorMixed: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def ppShadow: `3` = 3.asInstanceOf[`3`]
+  inline def ppShadow: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def ppTitle: `4` = 4.asInstanceOf[`4`]
+  inline def ppTitle: `4` = 4.asInstanceOf[`4`]
 }

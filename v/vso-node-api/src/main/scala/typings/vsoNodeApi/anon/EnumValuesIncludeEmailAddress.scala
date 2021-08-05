@@ -10,16 +10,13 @@ trait EnumValuesIncludeEmailAddress extends StObject {
 }
 object EnumValuesIncludeEmailAddress {
   
-  @scala.inline
-  def apply(enumValues: IncludeEmailAddress): EnumValuesIncludeEmailAddress = {
+  inline def apply(enumValues: IncludeEmailAddress): EnumValuesIncludeEmailAddress = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesIncludeEmailAddress]
   }
   
-  @scala.inline
-  implicit class EnumValuesIncludeEmailAddressMutableBuilder[Self <: EnumValuesIncludeEmailAddress] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesIncludeEmailAddress](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: IncludeEmailAddress): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: IncludeEmailAddress): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

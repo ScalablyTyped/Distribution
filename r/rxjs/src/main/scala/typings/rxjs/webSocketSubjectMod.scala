@@ -30,16 +30,16 @@ object webSocketSubjectMod {
     def this(urlConfigOrSource: Observable[T], destination: Observer[T]) = this()
     def this(urlConfigOrSource: WebSocketSubjectConfig[T], destination: Observer[T]) = this()
     
-    var _config: js.Any = js.native
+    /* private */ var _config: js.Any = js.native
     
-    var _connectSocket: js.Any = js.native
+    /* private */ var _connectSocket: js.Any = js.native
     
     /** @deprecated This is an internal implementation detail, do not use. */
     var _output: Subject[T] = js.native
     
-    var _resetState: js.Any = js.native
+    /* private */ var _resetState: js.Any = js.native
     
-    var _socket: js.Any = js.native
+    /* private */ var _socket: js.Any = js.native
     
     /**
       * Creates an {@link Observable}, that when subscribed to, sends a message,
@@ -119,74 +119,52 @@ object webSocketSubjectMod {
   }
   object WebSocketSubjectConfig {
     
-    @scala.inline
-    def apply[T](url: String): WebSocketSubjectConfig[T] = {
+    inline def apply[T](url: String): WebSocketSubjectConfig[T] = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebSocketSubjectConfig[T]]
     }
     
-    @scala.inline
-    implicit class WebSocketSubjectConfigMutableBuilder[Self <: WebSocketSubjectConfig[?], T] (val x: Self & WebSocketSubjectConfig[T]) extends AnyVal {
+    extension [Self <: WebSocketSubjectConfig[?], T](x: Self & WebSocketSubjectConfig[T]) {
       
-      @scala.inline
-      def setBinaryType(value: blob | arraybuffer): Self = StObject.set(x, "binaryType", value.asInstanceOf[js.Any])
+      inline def setBinaryType(value: blob | arraybuffer): Self = StObject.set(x, "binaryType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinaryTypeUndefined: Self = StObject.set(x, "binaryType", js.undefined)
+      inline def setBinaryTypeUndefined: Self = StObject.set(x, "binaryType", js.undefined)
       
-      @scala.inline
-      def setCloseObserver(value: NextObserver[CloseEvent]): Self = StObject.set(x, "closeObserver", value.asInstanceOf[js.Any])
+      inline def setCloseObserver(value: NextObserver[CloseEvent]): Self = StObject.set(x, "closeObserver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseObserverUndefined: Self = StObject.set(x, "closeObserver", js.undefined)
+      inline def setCloseObserverUndefined: Self = StObject.set(x, "closeObserver", js.undefined)
       
-      @scala.inline
-      def setClosingObserver(value: NextObserver[Unit]): Self = StObject.set(x, "closingObserver", value.asInstanceOf[js.Any])
+      inline def setClosingObserver(value: NextObserver[Unit]): Self = StObject.set(x, "closingObserver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClosingObserverUndefined: Self = StObject.set(x, "closingObserver", js.undefined)
+      inline def setClosingObserverUndefined: Self = StObject.set(x, "closingObserver", js.undefined)
       
-      @scala.inline
-      def setDeserializer(value: /* e */ MessageEvent[js.Any] => T): Self = StObject.set(x, "deserializer", js.Any.fromFunction1(value))
+      inline def setDeserializer(value: /* e */ MessageEvent[js.Any] => T): Self = StObject.set(x, "deserializer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDeserializerUndefined: Self = StObject.set(x, "deserializer", js.undefined)
+      inline def setDeserializerUndefined: Self = StObject.set(x, "deserializer", js.undefined)
       
-      @scala.inline
-      def setOpenObserver(value: NextObserver[Event]): Self = StObject.set(x, "openObserver", value.asInstanceOf[js.Any])
+      inline def setOpenObserver(value: NextObserver[Event]): Self = StObject.set(x, "openObserver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenObserverUndefined: Self = StObject.set(x, "openObserver", js.undefined)
+      inline def setOpenObserverUndefined: Self = StObject.set(x, "openObserver", js.undefined)
       
-      @scala.inline
-      def setProtocol(value: String | js.Array[String]): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String | js.Array[String]): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+      inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
       
-      @scala.inline
-      def setProtocolVarargs(value: String*): Self = StObject.set(x, "protocol", js.Array(value :_*))
+      inline def setProtocolVarargs(value: String*): Self = StObject.set(x, "protocol", js.Array(value :_*))
       
-      @scala.inline
-      def setResultSelector(value: /* e */ MessageEvent[js.Any] => T): Self = StObject.set(x, "resultSelector", js.Any.fromFunction1(value))
+      inline def setResultSelector(value: /* e */ MessageEvent[js.Any] => T): Self = StObject.set(x, "resultSelector", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResultSelectorUndefined: Self = StObject.set(x, "resultSelector", js.undefined)
+      inline def setResultSelectorUndefined: Self = StObject.set(x, "resultSelector", js.undefined)
       
-      @scala.inline
-      def setSerializer(value: /* value */ T => WebSocketMessage): Self = StObject.set(x, "serializer", js.Any.fromFunction1(value))
+      inline def setSerializer(value: /* value */ T => WebSocketMessage): Self = StObject.set(x, "serializer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSerializerUndefined: Self = StObject.set(x, "serializer", js.undefined)
+      inline def setSerializerUndefined: Self = StObject.set(x, "serializer", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebSocketCtor(value: Instantiable): Self = StObject.set(x, "WebSocketCtor", value.asInstanceOf[js.Any])
+      inline def setWebSocketCtor(value: Instantiable): Self = StObject.set(x, "WebSocketCtor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebSocketCtorUndefined: Self = StObject.set(x, "WebSocketCtor", js.undefined)
+      inline def setWebSocketCtorUndefined: Self = StObject.set(x, "WebSocketCtor", js.undefined)
     }
   }
 }

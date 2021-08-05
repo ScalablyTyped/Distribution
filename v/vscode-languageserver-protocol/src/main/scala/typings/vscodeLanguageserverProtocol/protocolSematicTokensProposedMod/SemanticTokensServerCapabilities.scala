@@ -10,16 +10,13 @@ trait SemanticTokensServerCapabilities extends StObject {
 }
 object SemanticTokensServerCapabilities {
   
-  @scala.inline
-  def apply(semanticTokensProvider: SemanticTokensOptions | SemanticTokensRegistrationOptions): SemanticTokensServerCapabilities = {
+  inline def apply(semanticTokensProvider: SemanticTokensOptions | SemanticTokensRegistrationOptions): SemanticTokensServerCapabilities = {
     val __obj = js.Dynamic.literal(semanticTokensProvider = semanticTokensProvider.asInstanceOf[js.Any])
     __obj.asInstanceOf[SemanticTokensServerCapabilities]
   }
   
-  @scala.inline
-  implicit class SemanticTokensServerCapabilitiesMutableBuilder[Self <: SemanticTokensServerCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: SemanticTokensServerCapabilities](x: Self) {
     
-    @scala.inline
-    def setSemanticTokensProvider(value: SemanticTokensOptions | SemanticTokensRegistrationOptions): Self = StObject.set(x, "semanticTokensProvider", value.asInstanceOf[js.Any])
+    inline def setSemanticTokensProvider(value: SemanticTokensOptions | SemanticTokensRegistrationOptions): Self = StObject.set(x, "semanticTokensProvider", value.asInstanceOf[js.Any])
   }
 }

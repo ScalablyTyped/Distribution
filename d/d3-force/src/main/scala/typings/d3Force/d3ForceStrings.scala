@@ -8,11 +8,9 @@ object d3ForceStrings {
   
   @js.native
   sealed trait end extends StObject
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
+  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
   sealed trait tick extends StObject
-  @scala.inline
-  def tick: tick = "tick".asInstanceOf[tick]
+  inline def tick: tick = "tick".asInstanceOf[tick]
 }

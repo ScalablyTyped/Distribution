@@ -12,16 +12,13 @@ trait `0` extends StObject {
 }
 object `0` {
   
-  @scala.inline
-  def apply(update: (HTMLElement, js.Function0[MaybeSubscribable[String]]) => Unit): `0` = {
+  inline def apply(update: (HTMLElement, js.Function0[MaybeSubscribable[String]]) => Unit): `0` = {
     val __obj = js.Dynamic.literal(update = js.Any.fromFunction2(update))
     __obj.asInstanceOf[`0`]
   }
   
-  @scala.inline
-  implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+  extension [Self <: `0`](x: Self) {
     
-    @scala.inline
-    def setUpdate(value: (HTMLElement, js.Function0[MaybeSubscribable[String]]) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+    inline def setUpdate(value: (HTMLElement, js.Function0[MaybeSubscribable[String]]) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
   }
 }

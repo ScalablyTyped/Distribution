@@ -13,19 +13,15 @@ trait BatchGetCrawlersRequest extends StObject {
 }
 object BatchGetCrawlersRequest {
   
-  @scala.inline
-  def apply(CrawlerNames: CrawlerNameList): BatchGetCrawlersRequest = {
+  inline def apply(CrawlerNames: CrawlerNameList): BatchGetCrawlersRequest = {
     val __obj = js.Dynamic.literal(CrawlerNames = CrawlerNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGetCrawlersRequest]
   }
   
-  @scala.inline
-  implicit class BatchGetCrawlersRequestMutableBuilder[Self <: BatchGetCrawlersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetCrawlersRequest](x: Self) {
     
-    @scala.inline
-    def setCrawlerNames(value: CrawlerNameList): Self = StObject.set(x, "CrawlerNames", value.asInstanceOf[js.Any])
+    inline def setCrawlerNames(value: CrawlerNameList): Self = StObject.set(x, "CrawlerNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrawlerNamesVarargs(value: NameString*): Self = StObject.set(x, "CrawlerNames", js.Array(value :_*))
+    inline def setCrawlerNamesVarargs(value: NameString*): Self = StObject.set(x, "CrawlerNames", js.Array(value :_*))
   }
 }

@@ -10,16 +10,13 @@ trait IssueAddedEvent extends StObject {
 }
 object IssueAddedEvent {
   
-  @scala.inline
-  def apply(issue: InspectorIssue): IssueAddedEvent = {
+  inline def apply(issue: InspectorIssue): IssueAddedEvent = {
     val __obj = js.Dynamic.literal(issue = issue.asInstanceOf[js.Any])
     __obj.asInstanceOf[IssueAddedEvent]
   }
   
-  @scala.inline
-  implicit class IssueAddedEventMutableBuilder[Self <: IssueAddedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: IssueAddedEvent](x: Self) {
     
-    @scala.inline
-    def setIssue(value: InspectorIssue): Self = StObject.set(x, "issue", value.asInstanceOf[js.Any])
+    inline def setIssue(value: InspectorIssue): Self = StObject.set(x, "issue", value.asInstanceOf[js.Any])
   }
 }

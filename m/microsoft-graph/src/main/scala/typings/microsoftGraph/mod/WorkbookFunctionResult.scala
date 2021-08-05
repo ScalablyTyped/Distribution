@@ -14,31 +14,23 @@ trait WorkbookFunctionResult
 }
 object WorkbookFunctionResult {
   
-  @scala.inline
-  def apply(): WorkbookFunctionResult = {
+  inline def apply(): WorkbookFunctionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkbookFunctionResult]
   }
   
-  @scala.inline
-  implicit class WorkbookFunctionResultMutableBuilder[Self <: WorkbookFunctionResult] (val x: Self) extends AnyVal {
+  extension [Self <: WorkbookFunctionResult](x: Self) {
     
-    @scala.inline
-    def setError(value: NullableOption[String]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: NullableOption[String]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorNull: Self = StObject.set(x, "error", null)
+    inline def setErrorNull: Self = StObject.set(x, "error", null)
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setValue(value: NullableOption[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: NullableOption[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueNull: Self = StObject.set(x, "value", null)
+    inline def setValueNull: Self = StObject.set(x, "value", null)
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

@@ -16,31 +16,23 @@ trait GoogleApiAvailabilityType extends StObject {
 }
 object GoogleApiAvailabilityType {
   
-  @scala.inline
-  def apply(isAvailable: Boolean, status: Double): GoogleApiAvailabilityType = {
+  inline def apply(isAvailable: Boolean, status: Double): GoogleApiAvailabilityType = {
     val __obj = js.Dynamic.literal(isAvailable = isAvailable.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleApiAvailabilityType]
   }
   
-  @scala.inline
-  implicit class GoogleApiAvailabilityTypeMutableBuilder[Self <: GoogleApiAvailabilityType] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleApiAvailabilityType](x: Self) {
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setIsAvailable(value: Boolean): Self = StObject.set(x, "isAvailable", value.asInstanceOf[js.Any])
+    inline def setIsAvailable(value: Boolean): Self = StObject.set(x, "isAvailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsUserResolvableError(value: Boolean): Self = StObject.set(x, "isUserResolvableError", value.asInstanceOf[js.Any])
+    inline def setIsUserResolvableError(value: Boolean): Self = StObject.set(x, "isUserResolvableError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsUserResolvableErrorUndefined: Self = StObject.set(x, "isUserResolvableError", js.undefined)
+    inline def setIsUserResolvableErrorUndefined: Self = StObject.set(x, "isUserResolvableError", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

@@ -8,16 +8,13 @@ object reactAuthKitStrings {
   
   @js.native
   sealed trait Bearer extends StObject
-  @scala.inline
-  def Bearer: Bearer = "Bearer".asInstanceOf[Bearer]
+  inline def Bearer: Bearer = "Bearer".asInstanceOf[Bearer]
   
   @js.native
   sealed trait cookie extends StObject
-  @scala.inline
-  def cookie: cookie = "cookie".asInstanceOf[cookie]
+  inline def cookie: cookie = "cookie".asInstanceOf[cookie]
   
   @js.native
   sealed trait localstorage extends StObject
-  @scala.inline
-  def localstorage: localstorage = "localstorage".asInstanceOf[localstorage]
+  inline def localstorage: localstorage = "localstorage".asInstanceOf[localstorage]
 }

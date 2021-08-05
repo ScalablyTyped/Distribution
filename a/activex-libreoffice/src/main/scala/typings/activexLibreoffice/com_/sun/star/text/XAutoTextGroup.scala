@@ -33,8 +33,7 @@ trait XAutoTextGroup
 }
 object XAutoTextGroup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementNames: SafeArray[String],
     ElementType: `type`,
     Titles: SafeArray[String],
@@ -55,22 +54,16 @@ object XAutoTextGroup {
     __obj.asInstanceOf[XAutoTextGroup]
   }
   
-  @scala.inline
-  implicit class XAutoTextGroupMutableBuilder[Self <: XAutoTextGroup] (val x: Self) extends AnyVal {
+  extension [Self <: XAutoTextGroup](x: Self) {
     
-    @scala.inline
-    def setGetTitles(value: () => SafeArray[String]): Self = StObject.set(x, "getTitles", js.Any.fromFunction0(value))
+    inline def setGetTitles(value: () => SafeArray[String]): Self = StObject.set(x, "getTitles", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInsertNewByName(value: (String, String, XTextRange) => XAutoTextEntry): Self = StObject.set(x, "insertNewByName", js.Any.fromFunction3(value))
+    inline def setInsertNewByName(value: (String, String, XTextRange) => XAutoTextEntry): Self = StObject.set(x, "insertNewByName", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRemoveByName(value: String => Unit): Self = StObject.set(x, "removeByName", js.Any.fromFunction1(value))
+    inline def setRemoveByName(value: String => Unit): Self = StObject.set(x, "removeByName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenameByName(value: (String, String, String) => Unit): Self = StObject.set(x, "renameByName", js.Any.fromFunction3(value))
+    inline def setRenameByName(value: (String, String, String) => Unit): Self = StObject.set(x, "renameByName", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setTitles(value: SafeArray[String]): Self = StObject.set(x, "Titles", value.asInstanceOf[js.Any])
+    inline def setTitles(value: SafeArray[String]): Self = StObject.set(x, "Titles", value.asInstanceOf[js.Any])
   }
 }

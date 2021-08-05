@@ -256,8 +256,7 @@ object commonTypesMod {
   }
   object IgResponse {
     
-    @scala.inline
-    def apply[Body](
+    inline def apply[Body](
       _destroy: (/* error */ Error, /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit]) => Unit,
       _read: /* size */ Double => Unit,
       aborted: Boolean,
@@ -316,231 +315,157 @@ object commonTypesMod {
       __obj.asInstanceOf[IgResponse[Body]]
     }
     
-    @scala.inline
-    implicit class IgResponseMutableBuilder[Self <: IgResponse[?], Body] (val x: Self & IgResponse[Body]) extends AnyVal {
+    extension [Self <: IgResponse[?], Body](x: Self & IgResponse[Body]) {
       
-      @scala.inline
-      def setAborted(value: Boolean): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
+      inline def setAborted(value: Boolean): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddListener(value: (close, /* listener */ js.Function0[Unit]) => IgResponse[Body]): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
+      inline def setAddListener(value: (close, /* listener */ js.Function0[Unit]) => IgResponse[Body]): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBody(value: Body): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: Body): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaseless(value: Caseless): Self = StObject.set(x, "caseless", value.asInstanceOf[js.Any])
+      inline def setCaseless(value: Caseless): Self = StObject.set(x, "caseless", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      inline def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnection(value: Socket): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+      inline def setConnection(value: Socket): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConstructor(value: /* socket */ Socket => js.Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
+      inline def setConstructor(value: /* socket */ Socket => js.Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDestroyed(value: Boolean): Self = StObject.set(x, "destroyed", value.asInstanceOf[js.Any])
+      inline def setDestroyed(value: Boolean): Self = StObject.set(x, "destroyed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElapsedTime(value: Double): Self = StObject.set(x, "elapsedTime", value.asInstanceOf[js.Any])
+      inline def setElapsedTime(value: Double): Self = StObject.set(x, "elapsedTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElapsedTimeUndefined: Self = StObject.set(x, "elapsedTime", js.undefined)
+      inline def setElapsedTimeUndefined: Self = StObject.set(x, "elapsedTime", js.undefined)
       
-      @scala.inline
-      def setEmit(value: close => Boolean): Self = StObject.set(x, "emit", js.Any.fromFunction1(value))
+      inline def setEmit(value: close => Boolean): Self = StObject.set(x, "emit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEventNames(value: () => js.Array[String | js.Symbol]): Self = StObject.set(x, "eventNames", js.Any.fromFunction0(value))
+      inline def setEventNames(value: () => js.Array[String | js.Symbol]): Self = StObject.set(x, "eventNames", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMaxListeners(value: () => Double): Self = StObject.set(x, "getMaxListeners", js.Any.fromFunction0(value))
+      inline def setGetMaxListeners(value: () => Double): Self = StObject.set(x, "getMaxListeners", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHeaders(value: IncomingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: IncomingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpVersion(value: String): Self = StObject.set(x, "httpVersion", value.asInstanceOf[js.Any])
+      inline def setHttpVersion(value: String): Self = StObject.set(x, "httpVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpVersionMajor(value: Double): Self = StObject.set(x, "httpVersionMajor", value.asInstanceOf[js.Any])
+      inline def setHttpVersionMajor(value: Double): Self = StObject.set(x, "httpVersionMajor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpVersionMinor(value: Double): Self = StObject.set(x, "httpVersionMinor", value.asInstanceOf[js.Any])
+      inline def setHttpVersionMinor(value: Double): Self = StObject.set(x, "httpVersionMinor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPaused(value: () => Boolean): Self = StObject.set(x, "isPaused", js.Any.fromFunction0(value))
+      inline def setIsPaused(value: () => Boolean): Self = StObject.set(x, "isPaused", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setListenerCount(value: /* event */ String => Double): Self = StObject.set(x, "listenerCount", js.Any.fromFunction1(value))
+      inline def setListenerCount(value: /* event */ String => Double): Self = StObject.set(x, "listenerCount", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setListeners(value: /* event */ String => js.Array[js.Function]): Self = StObject.set(x, "listeners", js.Any.fromFunction1(value))
+      inline def setListeners(value: /* event */ String => js.Array[js.Function]): Self = StObject.set(x, "listeners", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setOff(
+      inline def setOff(
         value: (/* event */ String, /* listener */ js.Function1[/* repeated */ js.Any, Unit]) => IgResponse[Body]
       ): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOn(value: (close, /* listener */ js.Function0[Unit]) => IgResponse[Body]): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      inline def setOn(value: (close, /* listener */ js.Function0[Unit]) => IgResponse[Body]): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnce(value: (close, /* listener */ js.Function0[Unit]) => IgResponse[Body]): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
+      inline def setOnce(value: (close, /* listener */ js.Function0[Unit]) => IgResponse[Body]): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPause(value: () => IgResponse[Body]): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
+      inline def setPause(value: () => IgResponse[Body]): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPipe(value: /* destination */ WritableStream => WritableStream): Self = StObject.set(x, "pipe", js.Any.fromFunction1(value))
+      inline def setPipe(value: /* destination */ WritableStream => WritableStream): Self = StObject.set(x, "pipe", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPrependListener(value: (close, /* listener */ js.Function0[Unit]) => IgResponse[Body]): Self = StObject.set(x, "prependListener", js.Any.fromFunction2(value))
+      inline def setPrependListener(value: (close, /* listener */ js.Function0[Unit]) => IgResponse[Body]): Self = StObject.set(x, "prependListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPrependOnceListener(value: (close, /* listener */ js.Function0[Unit]) => IgResponse[Body]): Self = StObject.set(x, "prependOnceListener", js.Any.fromFunction2(value))
+      inline def setPrependOnceListener(value: (close, /* listener */ js.Function0[Unit]) => IgResponse[Body]): Self = StObject.set(x, "prependOnceListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPush(value: /* chunk */ js.Any => Boolean): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+      inline def setPush(value: /* chunk */ js.Any => Boolean): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRawHeaders(value: js.Array[String]): Self = StObject.set(x, "rawHeaders", value.asInstanceOf[js.Any])
+      inline def setRawHeaders(value: js.Array[String]): Self = StObject.set(x, "rawHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawHeadersVarargs(value: String*): Self = StObject.set(x, "rawHeaders", js.Array(value :_*))
+      inline def setRawHeadersVarargs(value: String*): Self = StObject.set(x, "rawHeaders", js.Array(value :_*))
       
-      @scala.inline
-      def setRawListeners(value: /* event */ String => js.Array[js.Function]): Self = StObject.set(x, "rawListeners", js.Any.fromFunction1(value))
+      inline def setRawListeners(value: /* event */ String => js.Array[js.Function]): Self = StObject.set(x, "rawListeners", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRawTrailers(value: js.Array[String]): Self = StObject.set(x, "rawTrailers", value.asInstanceOf[js.Any])
+      inline def setRawTrailers(value: js.Array[String]): Self = StObject.set(x, "rawTrailers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawTrailersVarargs(value: String*): Self = StObject.set(x, "rawTrailers", js.Array(value :_*))
+      inline def setRawTrailersVarargs(value: String*): Self = StObject.set(x, "rawTrailers", js.Array(value :_*))
       
-      @scala.inline
-      def setRead(value: () => js.Any): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
+      inline def setRead(value: () => js.Any): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReadable(value: Boolean): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
+      inline def setReadable(value: Boolean): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadableEncoding(value: BufferEncoding): Self = StObject.set(x, "readableEncoding", value.asInstanceOf[js.Any])
+      inline def setReadableEncoding(value: BufferEncoding): Self = StObject.set(x, "readableEncoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadableEncodingNull: Self = StObject.set(x, "readableEncoding", null)
+      inline def setReadableEncodingNull: Self = StObject.set(x, "readableEncoding", null)
       
-      @scala.inline
-      def setReadableEncodingUndefined: Self = StObject.set(x, "readableEncoding", js.undefined)
+      inline def setReadableEncodingUndefined: Self = StObject.set(x, "readableEncoding", js.undefined)
       
-      @scala.inline
-      def setReadableEnded(value: Boolean): Self = StObject.set(x, "readableEnded", value.asInstanceOf[js.Any])
+      inline def setReadableEnded(value: Boolean): Self = StObject.set(x, "readableEnded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadableFlowing(value: Boolean): Self = StObject.set(x, "readableFlowing", value.asInstanceOf[js.Any])
+      inline def setReadableFlowing(value: Boolean): Self = StObject.set(x, "readableFlowing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadableFlowingNull: Self = StObject.set(x, "readableFlowing", null)
+      inline def setReadableFlowingNull: Self = StObject.set(x, "readableFlowing", null)
       
-      @scala.inline
-      def setReadableFlowingUndefined: Self = StObject.set(x, "readableFlowing", js.undefined)
+      inline def setReadableFlowingUndefined: Self = StObject.set(x, "readableFlowing", js.undefined)
       
-      @scala.inline
-      def setReadableHighWaterMark(value: Double): Self = StObject.set(x, "readableHighWaterMark", value.asInstanceOf[js.Any])
+      inline def setReadableHighWaterMark(value: Double): Self = StObject.set(x, "readableHighWaterMark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadableLength(value: Double): Self = StObject.set(x, "readableLength", value.asInstanceOf[js.Any])
+      inline def setReadableLength(value: Double): Self = StObject.set(x, "readableLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadableObjectMode(value: Boolean): Self = StObject.set(x, "readableObjectMode", value.asInstanceOf[js.Any])
+      inline def setReadableObjectMode(value: Boolean): Self = StObject.set(x, "readableObjectMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveAllListeners(value: () => IgResponse[Body]): Self = StObject.set(x, "removeAllListeners", js.Any.fromFunction0(value))
+      inline def setRemoveAllListeners(value: () => IgResponse[Body]): Self = StObject.set(x, "removeAllListeners", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveListener(value: (close, /* listener */ js.Function0[Unit]) => IgResponse[Body]): Self = StObject.set(x, "removeListener", js.Any.fromFunction2(value))
+      inline def setRemoveListener(value: (close, /* listener */ js.Function0[Unit]) => IgResponse[Body]): Self = StObject.set(x, "removeListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRequest(value: Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResume(value: () => IgResponse[Body]): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
+      inline def setResume(value: () => IgResponse[Body]): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetEncoding(value: /* encoding */ BufferEncoding => IgResponse[Body]): Self = StObject.set(x, "setEncoding", js.Any.fromFunction1(value))
+      inline def setSetEncoding(value: /* encoding */ BufferEncoding => IgResponse[Body]): Self = StObject.set(x, "setEncoding", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetMaxListeners(value: /* n */ Double => IgResponse[Body]): Self = StObject.set(x, "setMaxListeners", js.Any.fromFunction1(value))
+      inline def setSetMaxListeners(value: /* n */ Double => IgResponse[Body]): Self = StObject.set(x, "setMaxListeners", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetTimeout(value: /* msecs */ Double => IgResponse[Body]): Self = StObject.set(x, "setTimeout", js.Any.fromFunction1(value))
+      inline def setSetTimeout(value: /* msecs */ Double => IgResponse[Body]): Self = StObject.set(x, "setTimeout", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSocket(value: Socket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
+      inline def setSocket(value: Socket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
+      inline def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimingPhases(value: Dns): Self = StObject.set(x, "timingPhases", value.asInstanceOf[js.Any])
+      inline def setTimingPhases(value: Dns): Self = StObject.set(x, "timingPhases", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimingPhasesUndefined: Self = StObject.set(x, "timingPhases", js.undefined)
+      inline def setTimingPhasesUndefined: Self = StObject.set(x, "timingPhases", js.undefined)
       
-      @scala.inline
-      def setTimingStart(value: Double): Self = StObject.set(x, "timingStart", value.asInstanceOf[js.Any])
+      inline def setTimingStart(value: Double): Self = StObject.set(x, "timingStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimingStartUndefined: Self = StObject.set(x, "timingStart", js.undefined)
+      inline def setTimingStartUndefined: Self = StObject.set(x, "timingStart", js.undefined)
       
-      @scala.inline
-      def setTimings(value: Connect): Self = StObject.set(x, "timings", value.asInstanceOf[js.Any])
+      inline def setTimings(value: Connect): Self = StObject.set(x, "timings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimingsUndefined: Self = StObject.set(x, "timings", js.undefined)
+      inline def setTimingsUndefined: Self = StObject.set(x, "timings", js.undefined)
       
-      @scala.inline
-      def setToJSON(value: () => ResponseAsJSON): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => ResponseAsJSON): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTrailers(value: Dict[String]): Self = StObject.set(x, "trailers", value.asInstanceOf[js.Any])
+      inline def setTrailers(value: Dict[String]): Self = StObject.set(x, "trailers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnpipe(value: () => IgResponse[Body]): Self = StObject.set(x, "unpipe", js.Any.fromFunction0(value))
+      inline def setUnpipe(value: () => IgResponse[Body]): Self = StObject.set(x, "unpipe", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUnshift(value: /* chunk */ js.Any => Unit): Self = StObject.set(x, "unshift", js.Any.fromFunction1(value))
+      inline def setUnshift(value: /* chunk */ js.Any => Unit): Self = StObject.set(x, "unshift", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
-      @scala.inline
-      def setWrap(value: /* oldStream */ ReadableStream => IgResponse[Body]): Self = StObject.set(x, "wrap", js.Any.fromFunction1(value))
+      inline def setWrap(value: /* oldStream */ ReadableStream => IgResponse[Body]): Self = StObject.set(x, "wrap", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_destroy(
+      inline def set_destroy(
         value: (/* error */ Error, /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit]) => Unit
       ): Self = StObject.set(x, "_destroy", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def set_read(value: /* size */ Double => Unit): Self = StObject.set(x, "_read", js.Any.fromFunction1(value))
+      inline def set_read(value: /* size */ Double => Unit): Self = StObject.set(x, "_read", js.Any.fromFunction1(value))
     }
   }
   

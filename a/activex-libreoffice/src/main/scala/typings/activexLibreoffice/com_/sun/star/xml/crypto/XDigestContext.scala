@@ -30,8 +30,7 @@ trait XDigestContext
 }
 object XDigestContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     finalizeDigestAndDispose: () => SafeArray[Double],
     queryInterface: `type` => js.Any,
@@ -42,13 +41,10 @@ object XDigestContext {
     __obj.asInstanceOf[XDigestContext]
   }
   
-  @scala.inline
-  implicit class XDigestContextMutableBuilder[Self <: XDigestContext] (val x: Self) extends AnyVal {
+  extension [Self <: XDigestContext](x: Self) {
     
-    @scala.inline
-    def setFinalizeDigestAndDispose(value: () => SafeArray[Double]): Self = StObject.set(x, "finalizeDigestAndDispose", js.Any.fromFunction0(value))
+    inline def setFinalizeDigestAndDispose(value: () => SafeArray[Double]): Self = StObject.set(x, "finalizeDigestAndDispose", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdateDigest(value: SeqEquiv[Double] => Unit): Self = StObject.set(x, "updateDigest", js.Any.fromFunction1(value))
+    inline def setUpdateDigest(value: SeqEquiv[Double] => Unit): Self = StObject.set(x, "updateDigest", js.Any.fromFunction1(value))
   }
 }

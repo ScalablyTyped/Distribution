@@ -18,28 +18,21 @@ trait TCPFlagField extends StObject {
 }
 object TCPFlagField {
   
-  @scala.inline
-  def apply(Flags: Flags): TCPFlagField = {
+  inline def apply(Flags: Flags): TCPFlagField = {
     val __obj = js.Dynamic.literal(Flags = Flags.asInstanceOf[js.Any])
     __obj.asInstanceOf[TCPFlagField]
   }
   
-  @scala.inline
-  implicit class TCPFlagFieldMutableBuilder[Self <: TCPFlagField] (val x: Self) extends AnyVal {
+  extension [Self <: TCPFlagField](x: Self) {
     
-    @scala.inline
-    def setFlags(value: Flags): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: Flags): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlagsVarargs(value: TCPFlag*): Self = StObject.set(x, "Flags", js.Array(value :_*))
+    inline def setFlagsVarargs(value: TCPFlag*): Self = StObject.set(x, "Flags", js.Array(value :_*))
     
-    @scala.inline
-    def setMasks(value: Flags): Self = StObject.set(x, "Masks", value.asInstanceOf[js.Any])
+    inline def setMasks(value: Flags): Self = StObject.set(x, "Masks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasksUndefined: Self = StObject.set(x, "Masks", js.undefined)
+    inline def setMasksUndefined: Self = StObject.set(x, "Masks", js.undefined)
     
-    @scala.inline
-    def setMasksVarargs(value: TCPFlag*): Self = StObject.set(x, "Masks", js.Array(value :_*))
+    inline def setMasksVarargs(value: TCPFlag*): Self = StObject.set(x, "Masks", js.Array(value :_*))
   }
 }

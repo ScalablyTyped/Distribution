@@ -17,7 +17,7 @@ object queryBuilderReturningResultsEntityUpdatorMod {
   class ReturningResultsEntityUpdator protected () extends StObject {
     def this(queryRunner: QueryRunner, expressionMap: QueryExpressionMap) = this()
     
-    var expressionMap: QueryExpressionMap = js.native
+    /* protected */ var expressionMap: QueryExpressionMap = js.native
     
     /**
       * Columns we need to be returned from the database when we insert entity.
@@ -34,7 +34,7 @@ object queryBuilderReturningResultsEntityUpdatorMod {
       */
     def insert(insertResult: InsertResult, entities: js.Array[ObjectLiteral]): js.Promise[Unit] = js.native
     
-    var queryRunner: QueryRunner = js.native
+    /* protected */ var queryRunner: QueryRunner = js.native
     
     /**
       * Updates entities with a special columns after updation query execution.

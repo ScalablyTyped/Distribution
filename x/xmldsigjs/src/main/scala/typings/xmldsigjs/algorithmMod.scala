@@ -70,23 +70,18 @@ object algorithmMod {
   }
   object IAlgorithm {
     
-    @scala.inline
-    def apply(algorithm: Algorithm, getAlgorithmName: () => String, namespaceURI: String): IAlgorithm = {
+    inline def apply(algorithm: Algorithm, getAlgorithmName: () => String, namespaceURI: String): IAlgorithm = {
       val __obj = js.Dynamic.literal(algorithm = algorithm.asInstanceOf[js.Any], getAlgorithmName = js.Any.fromFunction0(getAlgorithmName), namespaceURI = namespaceURI.asInstanceOf[js.Any])
       __obj.asInstanceOf[IAlgorithm]
     }
     
-    @scala.inline
-    implicit class IAlgorithmMutableBuilder[Self <: IAlgorithm] (val x: Self) extends AnyVal {
+    extension [Self <: IAlgorithm](x: Self) {
       
-      @scala.inline
-      def setAlgorithm(value: Algorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+      inline def setAlgorithm(value: Algorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetAlgorithmName(value: () => String): Self = StObject.set(x, "getAlgorithmName", js.Any.fromFunction0(value))
+      inline def setGetAlgorithmName(value: () => String): Self = StObject.set(x, "getAlgorithmName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNamespaceURI(value: String): Self = StObject.set(x, "namespaceURI", value.asInstanceOf[js.Any])
+      inline def setNamespaceURI(value: String): Self = StObject.set(x, "namespaceURI", value.asInstanceOf[js.Any])
     }
   }
   

@@ -33,8 +33,7 @@ trait XConfirmDeleteBroadcaster
 }
 object XConfirmDeleteBroadcaster {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addConfirmDeleteListener: XConfirmDeleteListener => Unit,
     queryInterface: `type` => js.Any,
@@ -45,13 +44,10 @@ object XConfirmDeleteBroadcaster {
     __obj.asInstanceOf[XConfirmDeleteBroadcaster]
   }
   
-  @scala.inline
-  implicit class XConfirmDeleteBroadcasterMutableBuilder[Self <: XConfirmDeleteBroadcaster] (val x: Self) extends AnyVal {
+  extension [Self <: XConfirmDeleteBroadcaster](x: Self) {
     
-    @scala.inline
-    def setAddConfirmDeleteListener(value: XConfirmDeleteListener => Unit): Self = StObject.set(x, "addConfirmDeleteListener", js.Any.fromFunction1(value))
+    inline def setAddConfirmDeleteListener(value: XConfirmDeleteListener => Unit): Self = StObject.set(x, "addConfirmDeleteListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveConfirmDeleteListener(value: XConfirmDeleteListener => Unit): Self = StObject.set(x, "removeConfirmDeleteListener", js.Any.fromFunction1(value))
+    inline def setRemoveConfirmDeleteListener(value: XConfirmDeleteListener => Unit): Self = StObject.set(x, "removeConfirmDeleteListener", js.Any.fromFunction1(value))
   }
 }

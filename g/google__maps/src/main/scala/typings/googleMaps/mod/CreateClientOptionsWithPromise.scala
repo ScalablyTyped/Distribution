@@ -14,16 +14,13 @@ trait CreateClientOptionsWithPromise
 }
 object CreateClientOptionsWithPromise {
   
-  @scala.inline
-  def apply(Promise: PromiseConstructor, key: String): CreateClientOptionsWithPromise = {
+  inline def apply(Promise: PromiseConstructor, key: String): CreateClientOptionsWithPromise = {
     val __obj = js.Dynamic.literal(Promise = Promise.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateClientOptionsWithPromise]
   }
   
-  @scala.inline
-  implicit class CreateClientOptionsWithPromiseMutableBuilder[Self <: CreateClientOptionsWithPromise] (val x: Self) extends AnyVal {
+  extension [Self <: CreateClientOptionsWithPromise](x: Self) {
     
-    @scala.inline
-    def setPromise(value: PromiseConstructor): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
+    inline def setPromise(value: PromiseConstructor): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
   }
 }

@@ -20,46 +20,33 @@ trait AudioWorkletNodeOptions
 }
 object AudioWorkletNodeOptions {
   
-  @scala.inline
-  def apply(): AudioWorkletNodeOptions = {
+  inline def apply(): AudioWorkletNodeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AudioWorkletNodeOptions]
   }
   
-  @scala.inline
-  implicit class AudioWorkletNodeOptionsMutableBuilder[Self <: AudioWorkletNodeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AudioWorkletNodeOptions](x: Self) {
     
-    @scala.inline
-    def setNumberOfInputs(value: Double): Self = StObject.set(x, "numberOfInputs", value.asInstanceOf[js.Any])
+    inline def setNumberOfInputs(value: Double): Self = StObject.set(x, "numberOfInputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfInputsUndefined: Self = StObject.set(x, "numberOfInputs", js.undefined)
+    inline def setNumberOfInputsUndefined: Self = StObject.set(x, "numberOfInputs", js.undefined)
     
-    @scala.inline
-    def setNumberOfOutputs(value: Double): Self = StObject.set(x, "numberOfOutputs", value.asInstanceOf[js.Any])
+    inline def setNumberOfOutputs(value: Double): Self = StObject.set(x, "numberOfOutputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfOutputsUndefined: Self = StObject.set(x, "numberOfOutputs", js.undefined)
+    inline def setNumberOfOutputsUndefined: Self = StObject.set(x, "numberOfOutputs", js.undefined)
     
-    @scala.inline
-    def setOutputChannelCount(value: js.Array[Double]): Self = StObject.set(x, "outputChannelCount", value.asInstanceOf[js.Any])
+    inline def setOutputChannelCount(value: js.Array[Double]): Self = StObject.set(x, "outputChannelCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputChannelCountUndefined: Self = StObject.set(x, "outputChannelCount", js.undefined)
+    inline def setOutputChannelCountUndefined: Self = StObject.set(x, "outputChannelCount", js.undefined)
     
-    @scala.inline
-    def setOutputChannelCountVarargs(value: Double*): Self = StObject.set(x, "outputChannelCount", js.Array(value :_*))
+    inline def setOutputChannelCountVarargs(value: Double*): Self = StObject.set(x, "outputChannelCount", js.Array(value :_*))
     
-    @scala.inline
-    def setParameterData(value: Record[java.lang.String, Double]): Self = StObject.set(x, "parameterData", value.asInstanceOf[js.Any])
+    inline def setParameterData(value: Record[java.lang.String, Double]): Self = StObject.set(x, "parameterData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterDataUndefined: Self = StObject.set(x, "parameterData", js.undefined)
+    inline def setParameterDataUndefined: Self = StObject.set(x, "parameterData", js.undefined)
     
-    @scala.inline
-    def setProcessorOptions(value: js.Any): Self = StObject.set(x, "processorOptions", value.asInstanceOf[js.Any])
+    inline def setProcessorOptions(value: js.Any): Self = StObject.set(x, "processorOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessorOptionsUndefined: Self = StObject.set(x, "processorOptions", js.undefined)
+    inline def setProcessorOptionsUndefined: Self = StObject.set(x, "processorOptions", js.undefined)
   }
 }

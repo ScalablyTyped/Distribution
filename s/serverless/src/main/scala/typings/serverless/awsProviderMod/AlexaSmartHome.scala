@@ -12,22 +12,17 @@ trait AlexaSmartHome extends StObject {
 }
 object AlexaSmartHome {
   
-  @scala.inline
-  def apply(appId: String): AlexaSmartHome = {
+  inline def apply(appId: String): AlexaSmartHome = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlexaSmartHome]
   }
   
-  @scala.inline
-  implicit class AlexaSmartHomeMutableBuilder[Self <: AlexaSmartHome] (val x: Self) extends AnyVal {
+  extension [Self <: AlexaSmartHome](x: Self) {
     
-    @scala.inline
-    def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
   }
 }

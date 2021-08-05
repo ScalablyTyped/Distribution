@@ -18,19 +18,15 @@ trait ContinueWithAuthRequest extends StObject {
 }
 object ContinueWithAuthRequest {
   
-  @scala.inline
-  def apply(authChallengeResponse: AuthChallengeResponse, requestId: RequestId): ContinueWithAuthRequest = {
+  inline def apply(authChallengeResponse: AuthChallengeResponse, requestId: RequestId): ContinueWithAuthRequest = {
     val __obj = js.Dynamic.literal(authChallengeResponse = authChallengeResponse.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContinueWithAuthRequest]
   }
   
-  @scala.inline
-  implicit class ContinueWithAuthRequestMutableBuilder[Self <: ContinueWithAuthRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ContinueWithAuthRequest](x: Self) {
     
-    @scala.inline
-    def setAuthChallengeResponse(value: AuthChallengeResponse): Self = StObject.set(x, "authChallengeResponse", value.asInstanceOf[js.Any])
+    inline def setAuthChallengeResponse(value: AuthChallengeResponse): Self = StObject.set(x, "authChallengeResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
   }
 }

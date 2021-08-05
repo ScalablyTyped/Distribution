@@ -13,16 +13,13 @@ trait RegisterStreamConsumerOutput extends StObject {
 }
 object RegisterStreamConsumerOutput {
   
-  @scala.inline
-  def apply(Consumer: Consumer): RegisterStreamConsumerOutput = {
+  inline def apply(Consumer: Consumer): RegisterStreamConsumerOutput = {
     val __obj = js.Dynamic.literal(Consumer = Consumer.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterStreamConsumerOutput]
   }
   
-  @scala.inline
-  implicit class RegisterStreamConsumerOutputMutableBuilder[Self <: RegisterStreamConsumerOutput] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterStreamConsumerOutput](x: Self) {
     
-    @scala.inline
-    def setConsumer(value: Consumer): Self = StObject.set(x, "Consumer", value.asInstanceOf[js.Any])
+    inline def setConsumer(value: Consumer): Self = StObject.set(x, "Consumer", value.asInstanceOf[js.Any])
   }
 }

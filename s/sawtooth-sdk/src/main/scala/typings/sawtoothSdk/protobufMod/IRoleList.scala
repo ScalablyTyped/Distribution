@@ -11,25 +11,19 @@ trait IRoleList extends StObject {
 }
 object IRoleList {
   
-  @scala.inline
-  def apply(): IRoleList = {
+  inline def apply(): IRoleList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IRoleList]
   }
   
-  @scala.inline
-  implicit class IRoleListMutableBuilder[Self <: IRoleList] (val x: Self) extends AnyVal {
+  extension [Self <: IRoleList](x: Self) {
     
-    @scala.inline
-    def setRoles(value: js.Array[IRole]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
+    inline def setRoles(value: js.Array[IRole]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRolesNull: Self = StObject.set(x, "roles", null)
+    inline def setRolesNull: Self = StObject.set(x, "roles", null)
     
-    @scala.inline
-    def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
+    inline def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
     
-    @scala.inline
-    def setRolesVarargs(value: IRole*): Self = StObject.set(x, "roles", js.Array(value :_*))
+    inline def setRolesVarargs(value: IRole*): Self = StObject.set(x, "roles", js.Array(value :_*))
   }
 }

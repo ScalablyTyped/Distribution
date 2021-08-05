@@ -29,25 +29,19 @@ trait RuleUsage extends StObject {
 }
 object RuleUsage {
   
-  @scala.inline
-  def apply(endOffset: Double, startOffset: Double, styleSheetId: StyleSheetId, used: Boolean): RuleUsage = {
+  inline def apply(endOffset: Double, startOffset: Double, styleSheetId: StyleSheetId, used: Boolean): RuleUsage = {
     val __obj = js.Dynamic.literal(endOffset = endOffset.asInstanceOf[js.Any], startOffset = startOffset.asInstanceOf[js.Any], styleSheetId = styleSheetId.asInstanceOf[js.Any], used = used.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleUsage]
   }
   
-  @scala.inline
-  implicit class RuleUsageMutableBuilder[Self <: RuleUsage] (val x: Self) extends AnyVal {
+  extension [Self <: RuleUsage](x: Self) {
     
-    @scala.inline
-    def setEndOffset(value: Double): Self = StObject.set(x, "endOffset", value.asInstanceOf[js.Any])
+    inline def setEndOffset(value: Double): Self = StObject.set(x, "endOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartOffset(value: Double): Self = StObject.set(x, "startOffset", value.asInstanceOf[js.Any])
+    inline def setStartOffset(value: Double): Self = StObject.set(x, "startOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleSheetId(value: StyleSheetId): Self = StObject.set(x, "styleSheetId", value.asInstanceOf[js.Any])
+    inline def setStyleSheetId(value: StyleSheetId): Self = StObject.set(x, "styleSheetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsed(value: Boolean): Self = StObject.set(x, "used", value.asInstanceOf[js.Any])
+    inline def setUsed(value: Boolean): Self = StObject.set(x, "used", value.asInstanceOf[js.Any])
   }
 }

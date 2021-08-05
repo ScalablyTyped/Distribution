@@ -23,34 +23,25 @@ trait AcceptReservedInstancesExchangeQuoteRequest extends StObject {
 }
 object AcceptReservedInstancesExchangeQuoteRequest {
   
-  @scala.inline
-  def apply(ReservedInstanceIds: ReservedInstanceIdSet): AcceptReservedInstancesExchangeQuoteRequest = {
+  inline def apply(ReservedInstanceIds: ReservedInstanceIdSet): AcceptReservedInstancesExchangeQuoteRequest = {
     val __obj = js.Dynamic.literal(ReservedInstanceIds = ReservedInstanceIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcceptReservedInstancesExchangeQuoteRequest]
   }
   
-  @scala.inline
-  implicit class AcceptReservedInstancesExchangeQuoteRequestMutableBuilder[Self <: AcceptReservedInstancesExchangeQuoteRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AcceptReservedInstancesExchangeQuoteRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setReservedInstanceIds(value: ReservedInstanceIdSet): Self = StObject.set(x, "ReservedInstanceIds", value.asInstanceOf[js.Any])
+    inline def setReservedInstanceIds(value: ReservedInstanceIdSet): Self = StObject.set(x, "ReservedInstanceIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedInstanceIdsVarargs(value: ReservationId*): Self = StObject.set(x, "ReservedInstanceIds", js.Array(value :_*))
+    inline def setReservedInstanceIdsVarargs(value: ReservationId*): Self = StObject.set(x, "ReservedInstanceIds", js.Array(value :_*))
     
-    @scala.inline
-    def setTargetConfigurations(value: TargetConfigurationRequestSet): Self = StObject.set(x, "TargetConfigurations", value.asInstanceOf[js.Any])
+    inline def setTargetConfigurations(value: TargetConfigurationRequestSet): Self = StObject.set(x, "TargetConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetConfigurationsUndefined: Self = StObject.set(x, "TargetConfigurations", js.undefined)
+    inline def setTargetConfigurationsUndefined: Self = StObject.set(x, "TargetConfigurations", js.undefined)
     
-    @scala.inline
-    def setTargetConfigurationsVarargs(value: TargetConfigurationRequest*): Self = StObject.set(x, "TargetConfigurations", js.Array(value :_*))
+    inline def setTargetConfigurationsVarargs(value: TargetConfigurationRequest*): Self = StObject.set(x, "TargetConfigurations", js.Array(value :_*))
   }
 }

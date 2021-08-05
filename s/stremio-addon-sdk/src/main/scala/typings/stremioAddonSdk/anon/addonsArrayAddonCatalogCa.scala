@@ -28,37 +28,27 @@ trait addonsArrayAddonCatalogCa extends StObject {
 }
 object addonsArrayAddonCatalogCa {
   
-  @scala.inline
-  def apply(addons: js.Array[AddonCatalog]): addonsArrayAddonCatalogCa = {
+  inline def apply(addons: js.Array[AddonCatalog]): addonsArrayAddonCatalogCa = {
     val __obj = js.Dynamic.literal(addons = addons.asInstanceOf[js.Any])
     __obj.asInstanceOf[addonsArrayAddonCatalogCa]
   }
   
-  @scala.inline
-  implicit class addonsArrayAddonCatalogCaMutableBuilder[Self <: addonsArrayAddonCatalogCa] (val x: Self) extends AnyVal {
+  extension [Self <: addonsArrayAddonCatalogCa](x: Self) {
     
-    @scala.inline
-    def setAddons(value: js.Array[AddonCatalog]): Self = StObject.set(x, "addons", value.asInstanceOf[js.Any])
+    inline def setAddons(value: js.Array[AddonCatalog]): Self = StObject.set(x, "addons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddonsVarargs(value: AddonCatalog*): Self = StObject.set(x, "addons", js.Array(value :_*))
+    inline def setAddonsVarargs(value: AddonCatalog*): Self = StObject.set(x, "addons", js.Array(value :_*))
     
-    @scala.inline
-    def setCacheMaxAge(value: Double): Self = StObject.set(x, "cacheMaxAge", value.asInstanceOf[js.Any])
+    inline def setCacheMaxAge(value: Double): Self = StObject.set(x, "cacheMaxAge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheMaxAgeUndefined: Self = StObject.set(x, "cacheMaxAge", js.undefined)
+    inline def setCacheMaxAgeUndefined: Self = StObject.set(x, "cacheMaxAge", js.undefined)
     
-    @scala.inline
-    def setStaleError(value: Double): Self = StObject.set(x, "staleError", value.asInstanceOf[js.Any])
+    inline def setStaleError(value: Double): Self = StObject.set(x, "staleError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaleErrorUndefined: Self = StObject.set(x, "staleError", js.undefined)
+    inline def setStaleErrorUndefined: Self = StObject.set(x, "staleError", js.undefined)
     
-    @scala.inline
-    def setStaleRevalidate(value: Double): Self = StObject.set(x, "staleRevalidate", value.asInstanceOf[js.Any])
+    inline def setStaleRevalidate(value: Double): Self = StObject.set(x, "staleRevalidate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaleRevalidateUndefined: Self = StObject.set(x, "staleRevalidate", js.undefined)
+    inline def setStaleRevalidateUndefined: Self = StObject.set(x, "staleRevalidate", js.undefined)
   }
 }

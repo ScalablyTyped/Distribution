@@ -10,19 +10,15 @@ trait RebalanceSlotsInGlobalReplicationGroupResult extends StObject {
 }
 object RebalanceSlotsInGlobalReplicationGroupResult {
   
-  @scala.inline
-  def apply(): RebalanceSlotsInGlobalReplicationGroupResult = {
+  inline def apply(): RebalanceSlotsInGlobalReplicationGroupResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RebalanceSlotsInGlobalReplicationGroupResult]
   }
   
-  @scala.inline
-  implicit class RebalanceSlotsInGlobalReplicationGroupResultMutableBuilder[Self <: RebalanceSlotsInGlobalReplicationGroupResult] (val x: Self) extends AnyVal {
+  extension [Self <: RebalanceSlotsInGlobalReplicationGroupResult](x: Self) {
     
-    @scala.inline
-    def setGlobalReplicationGroup(value: GlobalReplicationGroup): Self = StObject.set(x, "GlobalReplicationGroup", value.asInstanceOf[js.Any])
+    inline def setGlobalReplicationGroup(value: GlobalReplicationGroup): Self = StObject.set(x, "GlobalReplicationGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalReplicationGroupUndefined: Self = StObject.set(x, "GlobalReplicationGroup", js.undefined)
+    inline def setGlobalReplicationGroupUndefined: Self = StObject.set(x, "GlobalReplicationGroup", js.undefined)
   }
 }

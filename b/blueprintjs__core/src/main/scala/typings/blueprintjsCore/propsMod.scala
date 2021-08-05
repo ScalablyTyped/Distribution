@@ -30,14 +30,10 @@ object propsMod {
   @js.native
   val DISPLAYNAME_PREFIX: /* "Blueprint3" */ String = js.native
   
-  @scala.inline
-  def removeNonHTMLProps(props: StringDictionary[js.Any]): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeNonHTMLProps")(props.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def removeNonHTMLProps(props: StringDictionary[js.Any], invalidProps: js.Array[String]): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeNonHTMLProps")(props.asInstanceOf[js.Any], invalidProps.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def removeNonHTMLProps(props: StringDictionary[js.Any], invalidProps: js.Array[String], shouldMerge: Boolean): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeNonHTMLProps")(props.asInstanceOf[js.Any], invalidProps.asInstanceOf[js.Any], shouldMerge.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def removeNonHTMLProps(props: StringDictionary[js.Any], invalidProps: Unit, shouldMerge: Boolean): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeNonHTMLProps")(props.asInstanceOf[js.Any], invalidProps.asInstanceOf[js.Any], shouldMerge.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def removeNonHTMLProps(props: StringDictionary[js.Any]): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeNonHTMLProps")(props.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def removeNonHTMLProps(props: StringDictionary[js.Any], invalidProps: js.Array[String]): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeNonHTMLProps")(props.asInstanceOf[js.Any], invalidProps.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def removeNonHTMLProps(props: StringDictionary[js.Any], invalidProps: js.Array[String], shouldMerge: Boolean): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeNonHTMLProps")(props.asInstanceOf[js.Any], invalidProps.asInstanceOf[js.Any], shouldMerge.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def removeNonHTMLProps(props: StringDictionary[js.Any], invalidProps: Unit, shouldMerge: Boolean): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeNonHTMLProps")(props.asInstanceOf[js.Any], invalidProps.asInstanceOf[js.Any], shouldMerge.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   type HTMLDivProps = HTMLAttributes[HTMLDivElement]
   
@@ -62,41 +58,30 @@ object propsMod {
   }
   object IActionProps {
     
-    @scala.inline
-    def apply(): IActionProps = {
+    inline def apply(): IActionProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IActionProps]
     }
     
-    @scala.inline
-    implicit class IActionPropsMutableBuilder[Self <: IActionProps] (val x: Self) extends AnyVal {
+    extension [Self <: IActionProps](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setIcon(value: IconName | MaybeElement): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: IconName | MaybeElement): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconNull: Self = StObject.set(x, "icon", null)
+      inline def setIconNull: Self = StObject.set(x, "icon", null)
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setText(value: ReactNode): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: ReactNode): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
   
@@ -113,32 +98,24 @@ object propsMod {
   }
   object IControlledProps {
     
-    @scala.inline
-    def apply(): IControlledProps = {
+    inline def apply(): IControlledProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IControlledProps]
     }
     
-    @scala.inline
-    implicit class IControlledPropsMutableBuilder[Self <: IControlledProps] (val x: Self) extends AnyVal {
+    extension [Self <: IControlledProps](x: Self) {
       
-      @scala.inline
-      def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: FormEvent[HTMLElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: FormEvent[HTMLElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -149,23 +126,18 @@ object propsMod {
   }
   object IElementRefProps {
     
-    @scala.inline
-    def apply[E /* <: HTMLElement */](): IElementRefProps[E] = {
+    inline def apply[E /* <: HTMLElement */](): IElementRefProps[E] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IElementRefProps[E]]
     }
     
-    @scala.inline
-    implicit class IElementRefPropsMutableBuilder[Self <: IElementRefProps[?], E /* <: HTMLElement */] (val x: Self & IElementRefProps[E]) extends AnyVal {
+    extension [Self <: IElementRefProps[?], E /* <: HTMLElement */](x: Self & IElementRefProps[E]) {
       
-      @scala.inline
-      def setElementRef(value: IRef[E]): Self = StObject.set(x, "elementRef", value.asInstanceOf[js.Any])
+      inline def setElementRef(value: IRef[E]): Self = StObject.set(x, "elementRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementRefFunction1(value: /* ref */ E | Null => js.Any): Self = StObject.set(x, "elementRef", js.Any.fromFunction1(value))
+      inline def setElementRefFunction1(value: /* ref */ E | Null => js.Any): Self = StObject.set(x, "elementRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setElementRefUndefined: Self = StObject.set(x, "elementRef", js.undefined)
+      inline def setElementRefUndefined: Self = StObject.set(x, "elementRef", js.undefined)
     }
   }
   
@@ -176,20 +148,16 @@ object propsMod {
   }
   object IIntentProps {
     
-    @scala.inline
-    def apply(): IIntentProps = {
+    inline def apply(): IIntentProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IIntentProps]
     }
     
-    @scala.inline
-    implicit class IIntentPropsMutableBuilder[Self <: IIntentProps] (val x: Self) extends AnyVal {
+    extension [Self <: IIntentProps](x: Self) {
       
-      @scala.inline
-      def setIntent(value: Intent): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
+      inline def setIntent(value: Intent): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntentUndefined: Self = StObject.set(x, "intent", js.undefined)
+      inline def setIntentUndefined: Self = StObject.set(x, "intent", js.undefined)
     }
   }
   
@@ -203,26 +171,20 @@ object propsMod {
   }
   object ILinkProps {
     
-    @scala.inline
-    def apply(): ILinkProps = {
+    inline def apply(): ILinkProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ILinkProps]
     }
     
-    @scala.inline
-    implicit class ILinkPropsMutableBuilder[Self <: ILinkProps] (val x: Self) extends AnyVal {
+    extension [Self <: ILinkProps](x: Self) {
       
-      @scala.inline
-      def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+      inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }
   }
   
@@ -241,29 +203,22 @@ object propsMod {
   }
   object IOptionProps {
     
-    @scala.inline
-    def apply(value: String | Double): IOptionProps = {
+    inline def apply(value: String | Double): IOptionProps = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[IOptionProps]
     }
     
-    @scala.inline
-    implicit class IOptionPropsMutableBuilder[Self <: IOptionProps] (val x: Self) extends AnyVal {
+    extension [Self <: IOptionProps](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -274,20 +229,16 @@ object propsMod {
   }
   object IProps {
     
-    @scala.inline
-    def apply(): IProps = {
+    inline def apply(): IProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IProps]
     }
     
-    @scala.inline
-    implicit class IPropsMutableBuilder[Self <: IProps] (val x: Self) extends AnyVal {
+    extension [Self <: IProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     }
   }
   

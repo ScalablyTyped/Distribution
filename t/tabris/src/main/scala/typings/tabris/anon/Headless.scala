@@ -10,19 +10,15 @@ trait Headless extends StObject {
 }
 object Headless {
   
-  @scala.inline
-  def apply(): Headless = {
+  inline def apply(): Headless = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Headless]
   }
   
-  @scala.inline
-  implicit class HeadlessMutableBuilder[Self <: Headless] (val x: Self) extends AnyVal {
+  extension [Self <: Headless](x: Self) {
     
-    @scala.inline
-    def setHeadless(value: Boolean): Self = StObject.set(x, "headless", value.asInstanceOf[js.Any])
+    inline def setHeadless(value: Boolean): Self = StObject.set(x, "headless", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadlessUndefined: Self = StObject.set(x, "headless", js.undefined)
+    inline def setHeadlessUndefined: Self = StObject.set(x, "headless", js.undefined)
   }
 }

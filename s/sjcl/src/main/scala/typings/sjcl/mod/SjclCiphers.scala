@@ -11,16 +11,13 @@ trait SjclCiphers extends StObject {
 }
 object SjclCiphers {
   
-  @scala.inline
-  def apply(aes: SjclCipherStatic): SjclCiphers = {
+  inline def apply(aes: SjclCipherStatic): SjclCiphers = {
     val __obj = js.Dynamic.literal(aes = aes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SjclCiphers]
   }
   
-  @scala.inline
-  implicit class SjclCiphersMutableBuilder[Self <: SjclCiphers] (val x: Self) extends AnyVal {
+  extension [Self <: SjclCiphers](x: Self) {
     
-    @scala.inline
-    def setAes(value: SjclCipherStatic): Self = StObject.set(x, "aes", value.asInstanceOf[js.Any])
+    inline def setAes(value: SjclCipherStatic): Self = StObject.set(x, "aes", value.asInstanceOf[js.Any])
   }
 }

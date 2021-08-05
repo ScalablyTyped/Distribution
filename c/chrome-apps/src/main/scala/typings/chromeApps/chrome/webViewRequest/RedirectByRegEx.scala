@@ -15,23 +15,19 @@ trait RedirectByRegEx
   
   val instanceType: String
   
-  val typeGuard: typings.chromeApps.chromeAppsStrings.RedirectByRegEx
+  /* protected */ val typeGuard: typings.chromeApps.chromeAppsStrings.RedirectByRegEx
 }
 object RedirectByRegEx {
   
-  @scala.inline
-  def apply(instanceType: String): RedirectByRegEx = {
+  inline def apply(instanceType: String): RedirectByRegEx = {
     val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = "RedirectByRegEx")
     __obj.asInstanceOf[RedirectByRegEx]
   }
   
-  @scala.inline
-  implicit class RedirectByRegExMutableBuilder[Self <: RedirectByRegEx] (val x: Self) extends AnyVal {
+  extension [Self <: RedirectByRegEx](x: Self) {
     
-    @scala.inline
-    def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeGuard(value: typings.chromeApps.chromeAppsStrings.RedirectByRegEx): Self = StObject.set(x, "typeGuard", value.asInstanceOf[js.Any])
+    inline def setTypeGuard(value: typings.chromeApps.chromeAppsStrings.RedirectByRegEx): Self = StObject.set(x, "typeGuard", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait IExpressionResult extends StObject {
 }
 object IExpressionResult {
   
-  @scala.inline
-  def apply(qBadFieldNames: js.Array[INxRange]): IExpressionResult = {
+  inline def apply(qBadFieldNames: js.Array[INxRange]): IExpressionResult = {
     val __obj = js.Dynamic.literal(qBadFieldNames = qBadFieldNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[IExpressionResult]
   }
   
-  @scala.inline
-  implicit class IExpressionResultMutableBuilder[Self <: IExpressionResult] (val x: Self) extends AnyVal {
+  extension [Self <: IExpressionResult](x: Self) {
     
-    @scala.inline
-    def setQBadFieldNames(value: js.Array[INxRange]): Self = StObject.set(x, "qBadFieldNames", value.asInstanceOf[js.Any])
+    inline def setQBadFieldNames(value: js.Array[INxRange]): Self = StObject.set(x, "qBadFieldNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQBadFieldNamesVarargs(value: INxRange*): Self = StObject.set(x, "qBadFieldNames", js.Array(value :_*))
+    inline def setQBadFieldNamesVarargs(value: INxRange*): Self = StObject.set(x, "qBadFieldNames", js.Array(value :_*))
   }
 }

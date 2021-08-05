@@ -12,16 +12,13 @@ trait SharedWebCredentials
 }
 object SharedWebCredentials {
   
-  @scala.inline
-  def apply(password: String, server: String, service: String, storage: String, username: String): SharedWebCredentials = {
+  inline def apply(password: String, server: String, service: String, storage: String, username: String): SharedWebCredentials = {
     val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], storage = storage.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharedWebCredentials]
   }
   
-  @scala.inline
-  implicit class SharedWebCredentialsMutableBuilder[Self <: SharedWebCredentials] (val x: Self) extends AnyVal {
+  extension [Self <: SharedWebCredentials](x: Self) {
     
-    @scala.inline
-    def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    inline def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
   }
 }

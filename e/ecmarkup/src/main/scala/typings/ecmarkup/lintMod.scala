@@ -13,6 +13,5 @@ object lintMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def lint(report: js.Function1[/* err */ Warning, Unit], sourceText: String, spec: Spec, document: Document): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lint")(report.asInstanceOf[js.Any], sourceText.asInstanceOf[js.Any], spec.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def lint(report: js.Function1[/* err */ Warning, Unit], sourceText: String, spec: Spec, document: Document): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lint")(report.asInstanceOf[js.Any], sourceText.asInstanceOf[js.Any], spec.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

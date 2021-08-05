@@ -59,55 +59,39 @@ trait PictureFillSymbolProperties
 }
 object PictureFillSymbolProperties {
   
-  @scala.inline
-  def apply(): PictureFillSymbolProperties = {
+  inline def apply(): PictureFillSymbolProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PictureFillSymbolProperties]
   }
   
-  @scala.inline
-  implicit class PictureFillSymbolPropertiesMutableBuilder[Self <: PictureFillSymbolProperties] (val x: Self) extends AnyVal {
+  extension [Self <: PictureFillSymbolProperties](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
-    @scala.inline
-    def setXoffset(value: Double | String): Self = StObject.set(x, "xoffset", value.asInstanceOf[js.Any])
+    inline def setXoffset(value: Double | String): Self = StObject.set(x, "xoffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXoffsetUndefined: Self = StObject.set(x, "xoffset", js.undefined)
+    inline def setXoffsetUndefined: Self = StObject.set(x, "xoffset", js.undefined)
     
-    @scala.inline
-    def setXscale(value: Double): Self = StObject.set(x, "xscale", value.asInstanceOf[js.Any])
+    inline def setXscale(value: Double): Self = StObject.set(x, "xscale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXscaleUndefined: Self = StObject.set(x, "xscale", js.undefined)
+    inline def setXscaleUndefined: Self = StObject.set(x, "xscale", js.undefined)
     
-    @scala.inline
-    def setYoffset(value: Double | String): Self = StObject.set(x, "yoffset", value.asInstanceOf[js.Any])
+    inline def setYoffset(value: Double | String): Self = StObject.set(x, "yoffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYoffsetUndefined: Self = StObject.set(x, "yoffset", js.undefined)
+    inline def setYoffsetUndefined: Self = StObject.set(x, "yoffset", js.undefined)
     
-    @scala.inline
-    def setYscale(value: Double): Self = StObject.set(x, "yscale", value.asInstanceOf[js.Any])
+    inline def setYscale(value: Double): Self = StObject.set(x, "yscale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYscaleUndefined: Self = StObject.set(x, "yscale", js.undefined)
+    inline def setYscaleUndefined: Self = StObject.set(x, "yscale", js.undefined)
   }
 }

@@ -18,37 +18,27 @@ trait DotProps
 }
 object DotProps {
   
-  @scala.inline
-  def apply(): DotProps = {
+  inline def apply(): DotProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DotProps]
   }
   
-  @scala.inline
-  implicit class DotPropsMutableBuilder[Self <: DotProps] (val x: Self) extends AnyVal {
+  extension [Self <: DotProps](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setCx(value: Double): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
+    inline def setCx(value: Double): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCxUndefined: Self = StObject.set(x, "cx", js.undefined)
+    inline def setCxUndefined: Self = StObject.set(x, "cx", js.undefined)
     
-    @scala.inline
-    def setCy(value: Double): Self = StObject.set(x, "cy", value.asInstanceOf[js.Any])
+    inline def setCy(value: Double): Self = StObject.set(x, "cy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCyUndefined: Self = StObject.set(x, "cy", js.undefined)
+    inline def setCyUndefined: Self = StObject.set(x, "cy", js.undefined)
     
-    @scala.inline
-    def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+    inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRUndefined: Self = StObject.set(x, "r", js.undefined)
+    inline def setRUndefined: Self = StObject.set(x, "r", js.undefined)
   }
 }

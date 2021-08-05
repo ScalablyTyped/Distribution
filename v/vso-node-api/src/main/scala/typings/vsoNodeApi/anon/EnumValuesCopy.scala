@@ -10,16 +10,13 @@ trait EnumValuesCopy extends StObject {
 }
 object EnumValuesCopy {
   
-  @scala.inline
-  def apply(enumValues: Copy): EnumValuesCopy = {
+  inline def apply(enumValues: Copy): EnumValuesCopy = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesCopy]
   }
   
-  @scala.inline
-  implicit class EnumValuesCopyMutableBuilder[Self <: EnumValuesCopy] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesCopy](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: Copy): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: Copy): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

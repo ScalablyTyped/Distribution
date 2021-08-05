@@ -29,31 +29,23 @@ trait MediaInfoProperties extends StObject {
 }
 object MediaInfoProperties {
   
-  @scala.inline
-  def apply(): MediaInfoProperties = {
+  inline def apply(): MediaInfoProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MediaInfoProperties]
   }
   
-  @scala.inline
-  implicit class MediaInfoPropertiesMutableBuilder[Self <: MediaInfoProperties] (val x: Self) extends AnyVal {
+  extension [Self <: MediaInfoProperties](x: Self) {
     
-    @scala.inline
-    def setAltText(value: String): Self = StObject.set(x, "altText", value.asInstanceOf[js.Any])
+    inline def setAltText(value: String): Self = StObject.set(x, "altText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltTextUndefined: Self = StObject.set(x, "altText", js.undefined)
+    inline def setAltTextUndefined: Self = StObject.set(x, "altText", js.undefined)
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+    inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

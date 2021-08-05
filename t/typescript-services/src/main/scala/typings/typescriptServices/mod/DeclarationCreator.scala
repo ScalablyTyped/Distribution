@@ -10,8 +10,7 @@ object DeclarationCreator {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(
+  inline def create(
     document: typings.typescriptServices.TypeScript.Document,
     semanticInfoChain: typings.typescriptServices.TypeScript.SemanticInfoChain,
     compilationSettings: typings.typescriptServices.TypeScript.ImmutableCompilationSettings

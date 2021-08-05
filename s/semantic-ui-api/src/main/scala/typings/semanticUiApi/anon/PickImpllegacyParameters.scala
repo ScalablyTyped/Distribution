@@ -11,16 +11,13 @@ trait PickImpllegacyParameters extends StObject {
 }
 object PickImpllegacyParameters {
   
-  @scala.inline
-  def apply(legacyParameters: String): PickImpllegacyParameters = {
+  inline def apply(legacyParameters: String): PickImpllegacyParameters = {
     val __obj = js.Dynamic.literal(legacyParameters = legacyParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpllegacyParameters]
   }
   
-  @scala.inline
-  implicit class PickImpllegacyParametersMutableBuilder[Self <: PickImpllegacyParameters] (val x: Self) extends AnyVal {
+  extension [Self <: PickImpllegacyParameters](x: Self) {
     
-    @scala.inline
-    def setLegacyParameters(value: String): Self = StObject.set(x, "legacyParameters", value.asInstanceOf[js.Any])
+    inline def setLegacyParameters(value: String): Self = StObject.set(x, "legacyParameters", value.asInstanceOf[js.Any])
   }
 }

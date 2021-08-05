@@ -38,46 +38,33 @@ trait ConceptMapGroupElement
 }
 object ConceptMapGroupElement {
   
-  @scala.inline
-  def apply(): ConceptMapGroupElement = {
+  inline def apply(): ConceptMapGroupElement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConceptMapGroupElement]
   }
   
-  @scala.inline
-  implicit class ConceptMapGroupElementMutableBuilder[Self <: ConceptMapGroupElement] (val x: Self) extends AnyVal {
+  extension [Self <: ConceptMapGroupElement](x: Self) {
     
-    @scala.inline
-    def setCode(value: code): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: code): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    inline def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+    inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
-    @scala.inline
-    def setTarget(value: js.Array[ConceptMapGroupElementTarget]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: js.Array[ConceptMapGroupElementTarget]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    @scala.inline
-    def setTargetVarargs(value: ConceptMapGroupElementTarget*): Self = StObject.set(x, "target", js.Array(value :_*))
+    inline def setTargetVarargs(value: ConceptMapGroupElementTarget*): Self = StObject.set(x, "target", js.Array(value :_*))
     
-    @scala.inline
-    def set_code(value: Element): Self = StObject.set(x, "_code", value.asInstanceOf[js.Any])
+    inline def set_code(value: Element): Self = StObject.set(x, "_code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_codeUndefined: Self = StObject.set(x, "_code", js.undefined)
+    inline def set_codeUndefined: Self = StObject.set(x, "_code", js.undefined)
     
-    @scala.inline
-    def set_display(value: Element): Self = StObject.set(x, "_display", value.asInstanceOf[js.Any])
+    inline def set_display(value: Element): Self = StObject.set(x, "_display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_displayUndefined: Self = StObject.set(x, "_display", js.undefined)
+    inline def set_displayUndefined: Self = StObject.set(x, "_display", js.undefined)
   }
 }

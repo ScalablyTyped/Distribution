@@ -12,25 +12,19 @@ trait ClassAttr extends StObject {
 }
 object ClassAttr {
   
-  @scala.inline
-  def apply(): ClassAttr = {
+  inline def apply(): ClassAttr = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClassAttr]
   }
   
-  @scala.inline
-  implicit class ClassAttrMutableBuilder[Self <: ClassAttr] (val x: Self) extends AnyVal {
+  extension [Self <: ClassAttr](x: Self) {
     
-    @scala.inline
-    def setClassAttr(value: String): Self = StObject.set(x, "classAttr", value.asInstanceOf[js.Any])
+    inline def setClassAttr(value: String): Self = StObject.set(x, "classAttr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassAttrUndefined: Self = StObject.set(x, "classAttr", js.undefined)
+    inline def setClassAttrUndefined: Self = StObject.set(x, "classAttr", js.undefined)
     
-    @scala.inline
-    def setStyleAttr(value: String): Self = StObject.set(x, "styleAttr", value.asInstanceOf[js.Any])
+    inline def setStyleAttr(value: String): Self = StObject.set(x, "styleAttr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleAttrUndefined: Self = StObject.set(x, "styleAttr", js.undefined)
+    inline def setStyleAttrUndefined: Self = StObject.set(x, "styleAttr", js.undefined)
   }
 }

@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XRReferenceSpaceType extends StObject
 object XRReferenceSpaceType {
   
-  @scala.inline
-  def `bounded-floor`: typings.webxr.webxrStrings.`bounded-floor` = "bounded-floor".asInstanceOf[typings.webxr.webxrStrings.`bounded-floor`]
+  inline def `bounded-floor`: typings.webxr.webxrStrings.`bounded-floor` = "bounded-floor".asInstanceOf[typings.webxr.webxrStrings.`bounded-floor`]
   
-  @scala.inline
-  def local: typings.webxr.webxrStrings.local = "local".asInstanceOf[typings.webxr.webxrStrings.local]
+  inline def local: typings.webxr.webxrStrings.local = "local".asInstanceOf[typings.webxr.webxrStrings.local]
   
-  @scala.inline
-  def `local-floor`: typings.webxr.webxrStrings.`local-floor` = "local-floor".asInstanceOf[typings.webxr.webxrStrings.`local-floor`]
+  inline def `local-floor`: typings.webxr.webxrStrings.`local-floor` = "local-floor".asInstanceOf[typings.webxr.webxrStrings.`local-floor`]
   
-  @scala.inline
-  def unbounded: typings.webxr.webxrStrings.unbounded = "unbounded".asInstanceOf[typings.webxr.webxrStrings.unbounded]
+  inline def unbounded: typings.webxr.webxrStrings.unbounded = "unbounded".asInstanceOf[typings.webxr.webxrStrings.unbounded]
   
-  @scala.inline
-  def viewer: typings.webxr.webxrStrings.viewer = "viewer".asInstanceOf[typings.webxr.webxrStrings.viewer]
+  inline def viewer: typings.webxr.webxrStrings.viewer = "viewer".asInstanceOf[typings.webxr.webxrStrings.viewer]
 }

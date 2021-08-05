@@ -43,55 +43,39 @@ trait DescribeDBLogFilesMessage extends StObject {
 }
 object DescribeDBLogFilesMessage {
   
-  @scala.inline
-  def apply(DBInstanceIdentifier: String): DescribeDBLogFilesMessage = {
+  inline def apply(DBInstanceIdentifier: String): DescribeDBLogFilesMessage = {
     val __obj = js.Dynamic.literal(DBInstanceIdentifier = DBInstanceIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDBLogFilesMessage]
   }
   
-  @scala.inline
-  implicit class DescribeDBLogFilesMessageMutableBuilder[Self <: DescribeDBLogFilesMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDBLogFilesMessage](x: Self) {
     
-    @scala.inline
-    def setDBInstanceIdentifier(value: String): Self = StObject.set(x, "DBInstanceIdentifier", value.asInstanceOf[js.Any])
+    inline def setDBInstanceIdentifier(value: String): Self = StObject.set(x, "DBInstanceIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileLastWritten(value: Long): Self = StObject.set(x, "FileLastWritten", value.asInstanceOf[js.Any])
+    inline def setFileLastWritten(value: Long): Self = StObject.set(x, "FileLastWritten", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileLastWrittenUndefined: Self = StObject.set(x, "FileLastWritten", js.undefined)
+    inline def setFileLastWrittenUndefined: Self = StObject.set(x, "FileLastWritten", js.undefined)
     
-    @scala.inline
-    def setFileSize(value: Long): Self = StObject.set(x, "FileSize", value.asInstanceOf[js.Any])
+    inline def setFileSize(value: Long): Self = StObject.set(x, "FileSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSizeUndefined: Self = StObject.set(x, "FileSize", js.undefined)
+    inline def setFileSizeUndefined: Self = StObject.set(x, "FileSize", js.undefined)
     
-    @scala.inline
-    def setFilenameContains(value: String): Self = StObject.set(x, "FilenameContains", value.asInstanceOf[js.Any])
+    inline def setFilenameContains(value: String): Self = StObject.set(x, "FilenameContains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilenameContainsUndefined: Self = StObject.set(x, "FilenameContains", js.undefined)
+    inline def setFilenameContainsUndefined: Self = StObject.set(x, "FilenameContains", js.undefined)
     
-    @scala.inline
-    def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
+    inline def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
+    inline def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
   }
 }

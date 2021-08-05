@@ -13,16 +13,13 @@ trait DeregisterVolumeRequest extends StObject {
 }
 object DeregisterVolumeRequest {
   
-  @scala.inline
-  def apply(VolumeId: String): DeregisterVolumeRequest = {
+  inline def apply(VolumeId: String): DeregisterVolumeRequest = {
     val __obj = js.Dynamic.literal(VolumeId = VolumeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeregisterVolumeRequest]
   }
   
-  @scala.inline
-  implicit class DeregisterVolumeRequestMutableBuilder[Self <: DeregisterVolumeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeregisterVolumeRequest](x: Self) {
     
-    @scala.inline
-    def setVolumeId(value: String): Self = StObject.set(x, "VolumeId", value.asInstanceOf[js.Any])
+    inline def setVolumeId(value: String): Self = StObject.set(x, "VolumeId", value.asInstanceOf[js.Any])
   }
 }

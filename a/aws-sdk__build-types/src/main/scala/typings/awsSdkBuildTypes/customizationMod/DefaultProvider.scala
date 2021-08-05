@@ -24,20 +24,16 @@ trait DefaultProvider extends StObject {
 }
 object DefaultProvider {
   
-  @scala.inline
-  def apply(expression: String): DefaultProvider = {
+  inline def apply(expression: String): DefaultProvider = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("provider")
     __obj.asInstanceOf[DefaultProvider]
   }
   
-  @scala.inline
-  implicit class DefaultProviderMutableBuilder[Self <: DefaultProvider] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultProvider](x: Self) {
     
-    @scala.inline
-    def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: provider): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: provider): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

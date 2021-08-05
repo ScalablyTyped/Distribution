@@ -10,16 +10,13 @@ trait threeDSecureOptions extends StObject {
 }
 object threeDSecureOptions {
   
-  @scala.inline
-  def apply(amount: String): threeDSecureOptions = {
+  inline def apply(amount: String): threeDSecureOptions = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any])
     __obj.asInstanceOf[threeDSecureOptions]
   }
   
-  @scala.inline
-  implicit class threeDSecureOptionsMutableBuilder[Self <: threeDSecureOptions] (val x: Self) extends AnyVal {
+  extension [Self <: threeDSecureOptions](x: Self) {
     
-    @scala.inline
-    def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
   }
 }

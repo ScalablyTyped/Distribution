@@ -16,37 +16,27 @@ trait FederatedId extends StObject {
 }
 object FederatedId {
   
-  @scala.inline
-  def apply(): FederatedId = {
+  inline def apply(): FederatedId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FederatedId]
   }
   
-  @scala.inline
-  implicit class FederatedIdMutableBuilder[Self <: FederatedId] (val x: Self) extends AnyVal {
+  extension [Self <: FederatedId](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setFederatedId(value: String): Self = StObject.set(x, "federatedId", value.asInstanceOf[js.Any])
+    inline def setFederatedId(value: String): Self = StObject.set(x, "federatedId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFederatedIdUndefined: Self = StObject.set(x, "federatedId", js.undefined)
+    inline def setFederatedIdUndefined: Self = StObject.set(x, "federatedId", js.undefined)
     
-    @scala.inline
-    def setPhotoUrl(value: String): Self = StObject.set(x, "photoUrl", value.asInstanceOf[js.Any])
+    inline def setPhotoUrl(value: String): Self = StObject.set(x, "photoUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhotoUrlUndefined: Self = StObject.set(x, "photoUrl", js.undefined)
+    inline def setPhotoUrlUndefined: Self = StObject.set(x, "photoUrl", js.undefined)
     
-    @scala.inline
-    def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
+    inline def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderIdUndefined: Self = StObject.set(x, "providerId", js.undefined)
+    inline def setProviderIdUndefined: Self = StObject.set(x, "providerId", js.undefined)
   }
 }

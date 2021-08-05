@@ -38,52 +38,37 @@ trait GetLabelDetectionResponse extends StObject {
 }
 object GetLabelDetectionResponse {
   
-  @scala.inline
-  def apply(): GetLabelDetectionResponse = {
+  inline def apply(): GetLabelDetectionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetLabelDetectionResponse]
   }
   
-  @scala.inline
-  implicit class GetLabelDetectionResponseMutableBuilder[Self <: GetLabelDetectionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetLabelDetectionResponse](x: Self) {
     
-    @scala.inline
-    def setJobStatus(value: VideoJobStatus): Self = StObject.set(x, "JobStatus", value.asInstanceOf[js.Any])
+    inline def setJobStatus(value: VideoJobStatus): Self = StObject.set(x, "JobStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobStatusUndefined: Self = StObject.set(x, "JobStatus", js.undefined)
+    inline def setJobStatusUndefined: Self = StObject.set(x, "JobStatus", js.undefined)
     
-    @scala.inline
-    def setLabelModelVersion(value: String): Self = StObject.set(x, "LabelModelVersion", value.asInstanceOf[js.Any])
+    inline def setLabelModelVersion(value: String): Self = StObject.set(x, "LabelModelVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelModelVersionUndefined: Self = StObject.set(x, "LabelModelVersion", js.undefined)
+    inline def setLabelModelVersionUndefined: Self = StObject.set(x, "LabelModelVersion", js.undefined)
     
-    @scala.inline
-    def setLabels(value: LabelDetections): Self = StObject.set(x, "Labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: LabelDetections): Self = StObject.set(x, "Labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "Labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "Labels", js.undefined)
     
-    @scala.inline
-    def setLabelsVarargs(value: LabelDetection*): Self = StObject.set(x, "Labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: LabelDetection*): Self = StObject.set(x, "Labels", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setStatusMessage(value: StatusMessage): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
+    inline def setStatusMessage(value: StatusMessage): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
+    inline def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
     
-    @scala.inline
-    def setVideoMetadata(value: VideoMetadata): Self = StObject.set(x, "VideoMetadata", value.asInstanceOf[js.Any])
+    inline def setVideoMetadata(value: VideoMetadata): Self = StObject.set(x, "VideoMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoMetadataUndefined: Self = StObject.set(x, "VideoMetadata", js.undefined)
+    inline def setVideoMetadataUndefined: Self = StObject.set(x, "VideoMetadata", js.undefined)
   }
 }

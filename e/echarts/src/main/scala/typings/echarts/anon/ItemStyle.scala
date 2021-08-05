@@ -18,25 +18,19 @@ trait ItemStyle extends StObject {
 }
 object ItemStyle {
   
-  @scala.inline
-  def apply(): ItemStyle = {
+  inline def apply(): ItemStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ItemStyle]
   }
   
-  @scala.inline
-  implicit class ItemStyleMutableBuilder[Self <: ItemStyle] (val x: Self) extends AnyVal {
+  extension [Self <: ItemStyle](x: Self) {
     
-    @scala.inline
-    def setItemStyle(value: BarBorderWidth): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
+    inline def setItemStyle(value: BarBorderWidth): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
+    inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
     
-    @scala.inline
-    def setLabel(value: BorderRadius): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: BorderRadius): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }
 }

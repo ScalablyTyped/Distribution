@@ -12,16 +12,13 @@ trait CSSRulePlugin
 }
 object CSSRulePlugin {
   
-  @scala.inline
-  def apply(activate: js.Array[js.Any] => Boolean, getRule: String => js.Object): CSSRulePlugin = {
+  inline def apply(activate: js.Array[js.Any] => Boolean, getRule: String => js.Object): CSSRulePlugin = {
     val __obj = js.Dynamic.literal(activate = js.Any.fromFunction1(activate), getRule = js.Any.fromFunction1(getRule))
     __obj.asInstanceOf[CSSRulePlugin]
   }
   
-  @scala.inline
-  implicit class CSSRulePluginMutableBuilder[Self <: CSSRulePlugin] (val x: Self) extends AnyVal {
+  extension [Self <: CSSRulePlugin](x: Self) {
     
-    @scala.inline
-    def setGetRule(value: String => js.Object): Self = StObject.set(x, "getRule", js.Any.fromFunction1(value))
+    inline def setGetRule(value: String => js.Object): Self = StObject.set(x, "getRule", js.Any.fromFunction1(value))
   }
 }

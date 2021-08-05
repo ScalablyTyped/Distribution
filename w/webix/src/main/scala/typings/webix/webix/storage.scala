@@ -14,22 +14,17 @@ trait storage extends StObject {
 }
 object storage {
   
-  @scala.inline
-  def apply(cookie: cookie, local: local, session: session): storage = {
+  inline def apply(cookie: cookie, local: local, session: session): storage = {
     val __obj = js.Dynamic.literal(cookie = cookie.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any])
     __obj.asInstanceOf[storage]
   }
   
-  @scala.inline
-  implicit class storageMutableBuilder[Self <: storage] (val x: Self) extends AnyVal {
+  extension [Self <: storage](x: Self) {
     
-    @scala.inline
-    def setCookie(value: cookie): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
+    inline def setCookie(value: cookie): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocal(value: local): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+    inline def setLocal(value: local): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+    inline def setSession(value: session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
   }
 }

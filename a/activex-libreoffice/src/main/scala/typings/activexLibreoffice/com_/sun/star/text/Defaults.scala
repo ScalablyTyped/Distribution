@@ -47,8 +47,7 @@ trait Defaults
 }
 object Defaults {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BorderDistance: Double,
     BottomBorder: BorderLine,
     BottomBorderDistance: Double,
@@ -210,10 +209,8 @@ object Defaults {
     __obj.asInstanceOf[Defaults]
   }
   
-  @scala.inline
-  implicit class DefaultsMutableBuilder[Self <: Defaults] (val x: Self) extends AnyVal {
+  extension [Self <: Defaults](x: Self) {
     
-    @scala.inline
-    def setTabStopDistance(value: Double): Self = StObject.set(x, "TabStopDistance", value.asInstanceOf[js.Any])
+    inline def setTabStopDistance(value: Double): Self = StObject.set(x, "TabStopDistance", value.asInstanceOf[js.Any])
   }
 }

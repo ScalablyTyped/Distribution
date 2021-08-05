@@ -15,20 +15,15 @@ object serializationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def circularDependencyToException(request: Request): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("circularDependencyToException")(request.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def circularDependencyToException(request: Request): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("circularDependencyToException")(request.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def getFunctionName(v: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFunctionName")(v.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getFunctionName(v: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFunctionName")(v.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def getServiceIdentifierAsString(serviceIdentifier: ServiceIdentifier[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getServiceIdentifierAsString")(serviceIdentifier.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getServiceIdentifierAsString(serviceIdentifier: ServiceIdentifier[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getServiceIdentifierAsString")(serviceIdentifier.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def listMetadataForTarget(serviceIdentifierString: String, target: Target): String = (^.asInstanceOf[js.Dynamic].applyDynamic("listMetadataForTarget")(serviceIdentifierString.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def listMetadataForTarget(serviceIdentifierString: String, target: Target): String = (^.asInstanceOf[js.Dynamic].applyDynamic("listMetadataForTarget")(serviceIdentifierString.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def listRegisteredBindingsForServiceIdentifier(
+  inline def listRegisteredBindingsForServiceIdentifier(
     container: Container,
     serviceIdentifier: String,
     getBindings: js.Function2[

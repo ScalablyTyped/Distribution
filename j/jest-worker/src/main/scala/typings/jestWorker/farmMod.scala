@@ -18,49 +18,49 @@ object farmMod {
       computeWorkerKey: js.UndefOr[js.Function2[/* method */ String, /* repeated */ js.Any, String | Null]]
     ) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _cacheKeys: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _callback: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _computeWorkerKey: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _enqueue: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _getNextTask: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _isLocked: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _last: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _lock: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _locks: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _numOfWorkers: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _offset: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _process: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _push: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _queue: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _unlock: js.Any = js.native
     
     /* CompleteClass */
@@ -69,42 +69,41 @@ object farmMod {
   
   trait Farm extends StObject {
     
-    var _cacheKeys: js.Any
+    /* private */ var _cacheKeys: js.Any
     
-    var _callback: js.Any
+    /* private */ var _callback: js.Any
     
-    var _computeWorkerKey: js.Any
+    /* private */ var _computeWorkerKey: js.Any
     
-    var _enqueue: js.Any
+    /* private */ var _enqueue: js.Any
     
-    var _getNextTask: js.Any
+    /* private */ var _getNextTask: js.Any
     
-    var _isLocked: js.Any
+    /* private */ var _isLocked: js.Any
     
-    var _last: js.Any
+    /* private */ var _last: js.Any
     
-    var _lock: js.Any
+    /* private */ var _lock: js.Any
     
-    var _locks: js.Any
+    /* private */ var _locks: js.Any
     
-    var _numOfWorkers: js.Any
+    /* private */ var _numOfWorkers: js.Any
     
-    var _offset: js.Any
+    /* private */ var _offset: js.Any
     
-    var _process: js.Any
+    /* private */ var _process: js.Any
     
-    var _push: js.Any
+    /* private */ var _push: js.Any
     
-    var _queue: js.Any
+    /* private */ var _queue: js.Any
     
-    var _unlock: js.Any
+    /* private */ var _unlock: js.Any
     
     def doWork(method: String, args: js.Any*): js.Promise[js.Any]
   }
   object Farm {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _cacheKeys: js.Any,
       _callback: js.Any,
       _computeWorkerKey: js.Any,
@@ -126,56 +125,39 @@ object farmMod {
       __obj.asInstanceOf[Farm]
     }
     
-    @scala.inline
-    implicit class FarmMutableBuilder[Self <: Farm] (val x: Self) extends AnyVal {
+    extension [Self <: Farm](x: Self) {
       
-      @scala.inline
-      def setDoWork(value: (String, /* repeated */ js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "doWork", js.Any.fromFunction2(value))
+      inline def setDoWork(value: (String, /* repeated */ js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "doWork", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def set_cacheKeys(value: js.Any): Self = StObject.set(x, "_cacheKeys", value.asInstanceOf[js.Any])
+      inline def set_cacheKeys(value: js.Any): Self = StObject.set(x, "_cacheKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_callback(value: js.Any): Self = StObject.set(x, "_callback", value.asInstanceOf[js.Any])
+      inline def set_callback(value: js.Any): Self = StObject.set(x, "_callback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_computeWorkerKey(value: js.Any): Self = StObject.set(x, "_computeWorkerKey", value.asInstanceOf[js.Any])
+      inline def set_computeWorkerKey(value: js.Any): Self = StObject.set(x, "_computeWorkerKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_enqueue(value: js.Any): Self = StObject.set(x, "_enqueue", value.asInstanceOf[js.Any])
+      inline def set_enqueue(value: js.Any): Self = StObject.set(x, "_enqueue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_getNextTask(value: js.Any): Self = StObject.set(x, "_getNextTask", value.asInstanceOf[js.Any])
+      inline def set_getNextTask(value: js.Any): Self = StObject.set(x, "_getNextTask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_isLocked(value: js.Any): Self = StObject.set(x, "_isLocked", value.asInstanceOf[js.Any])
+      inline def set_isLocked(value: js.Any): Self = StObject.set(x, "_isLocked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_last(value: js.Any): Self = StObject.set(x, "_last", value.asInstanceOf[js.Any])
+      inline def set_last(value: js.Any): Self = StObject.set(x, "_last", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_lock(value: js.Any): Self = StObject.set(x, "_lock", value.asInstanceOf[js.Any])
+      inline def set_lock(value: js.Any): Self = StObject.set(x, "_lock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_locks(value: js.Any): Self = StObject.set(x, "_locks", value.asInstanceOf[js.Any])
+      inline def set_locks(value: js.Any): Self = StObject.set(x, "_locks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_numOfWorkers(value: js.Any): Self = StObject.set(x, "_numOfWorkers", value.asInstanceOf[js.Any])
+      inline def set_numOfWorkers(value: js.Any): Self = StObject.set(x, "_numOfWorkers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_offset(value: js.Any): Self = StObject.set(x, "_offset", value.asInstanceOf[js.Any])
+      inline def set_offset(value: js.Any): Self = StObject.set(x, "_offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_process(value: js.Any): Self = StObject.set(x, "_process", value.asInstanceOf[js.Any])
+      inline def set_process(value: js.Any): Self = StObject.set(x, "_process", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_push(value: js.Any): Self = StObject.set(x, "_push", value.asInstanceOf[js.Any])
+      inline def set_push(value: js.Any): Self = StObject.set(x, "_push", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_queue(value: js.Any): Self = StObject.set(x, "_queue", value.asInstanceOf[js.Any])
+      inline def set_queue(value: js.Any): Self = StObject.set(x, "_queue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_unlock(value: js.Any): Self = StObject.set(x, "_unlock", value.asInstanceOf[js.Any])
+      inline def set_unlock(value: js.Any): Self = StObject.set(x, "_unlock", value.asInstanceOf[js.Any])
     }
   }
 }

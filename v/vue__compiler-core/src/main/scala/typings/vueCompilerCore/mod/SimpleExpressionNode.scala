@@ -39,47 +39,34 @@ trait SimpleExpressionNode
 }
 object SimpleExpressionNode {
   
-  @scala.inline
-  def apply(content: String, isConstant: Boolean, isStatic: Boolean, loc: SourceLocation): SimpleExpressionNode = {
+  inline def apply(content: String, isConstant: Boolean, isStatic: Boolean, loc: SourceLocation): SimpleExpressionNode = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], isConstant = isConstant.asInstanceOf[js.Any], isStatic = isStatic.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(4)
     __obj.asInstanceOf[SimpleExpressionNode]
   }
   
-  @scala.inline
-  implicit class SimpleExpressionNodeMutableBuilder[Self <: SimpleExpressionNode] (val x: Self) extends AnyVal {
+  extension [Self <: SimpleExpressionNode](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoisted(value: JSChildNode): Self = StObject.set(x, "hoisted", value.asInstanceOf[js.Any])
+    inline def setHoisted(value: JSChildNode): Self = StObject.set(x, "hoisted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoistedUndefined: Self = StObject.set(x, "hoisted", js.undefined)
+    inline def setHoistedUndefined: Self = StObject.set(x, "hoisted", js.undefined)
     
-    @scala.inline
-    def setIdentifiers(value: js.Array[String]): Self = StObject.set(x, "identifiers", value.asInstanceOf[js.Any])
+    inline def setIdentifiers(value: js.Array[String]): Self = StObject.set(x, "identifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifiersUndefined: Self = StObject.set(x, "identifiers", js.undefined)
+    inline def setIdentifiersUndefined: Self = StObject.set(x, "identifiers", js.undefined)
     
-    @scala.inline
-    def setIdentifiersVarargs(value: String*): Self = StObject.set(x, "identifiers", js.Array(value :_*))
+    inline def setIdentifiersVarargs(value: String*): Self = StObject.set(x, "identifiers", js.Array(value :_*))
     
-    @scala.inline
-    def setIsConstant(value: Boolean): Self = StObject.set(x, "isConstant", value.asInstanceOf[js.Any])
+    inline def setIsConstant(value: Boolean): Self = StObject.set(x, "isConstant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRuntimeConstant(value: Boolean): Self = StObject.set(x, "isRuntimeConstant", value.asInstanceOf[js.Any])
+    inline def setIsRuntimeConstant(value: Boolean): Self = StObject.set(x, "isRuntimeConstant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRuntimeConstantUndefined: Self = StObject.set(x, "isRuntimeConstant", js.undefined)
+    inline def setIsRuntimeConstantUndefined: Self = StObject.set(x, "isRuntimeConstant", js.undefined)
     
-    @scala.inline
-    def setIsStatic(value: Boolean): Self = StObject.set(x, "isStatic", value.asInstanceOf[js.Any])
+    inline def setIsStatic(value: Boolean): Self = StObject.set(x, "isStatic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `4`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `4`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

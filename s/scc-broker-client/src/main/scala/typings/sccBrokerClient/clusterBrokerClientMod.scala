@@ -110,20 +110,16 @@ object clusterBrokerClientMod {
   }
   object MessageData {
     
-    @scala.inline
-    def apply(channelName: String, packet: js.Any): MessageData = {
+    inline def apply(channelName: String, packet: js.Any): MessageData = {
       val __obj = js.Dynamic.literal(channelName = channelName.asInstanceOf[js.Any], packet = packet.asInstanceOf[js.Any])
       __obj.asInstanceOf[MessageData]
     }
     
-    @scala.inline
-    implicit class MessageDataMutableBuilder[Self <: MessageData] (val x: Self) extends AnyVal {
+    extension [Self <: MessageData](x: Self) {
       
-      @scala.inline
-      def setChannelName(value: String): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
+      inline def setChannelName(value: String): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPacket(value: js.Any): Self = StObject.set(x, "packet", value.asInstanceOf[js.Any])
+      inline def setPacket(value: js.Any): Self = StObject.set(x, "packet", value.asInstanceOf[js.Any])
     }
   }
   
@@ -133,20 +129,16 @@ object clusterBrokerClientMod {
   }
   object UpdateBrokersData {
     
-    @scala.inline
-    def apply(brokerURIs: js.Array[String]): UpdateBrokersData = {
+    inline def apply(brokerURIs: js.Array[String]): UpdateBrokersData = {
       val __obj = js.Dynamic.literal(brokerURIs = brokerURIs.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpdateBrokersData]
     }
     
-    @scala.inline
-    implicit class UpdateBrokersDataMutableBuilder[Self <: UpdateBrokersData] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateBrokersData](x: Self) {
       
-      @scala.inline
-      def setBrokerURIs(value: js.Array[String]): Self = StObject.set(x, "brokerURIs", value.asInstanceOf[js.Any])
+      inline def setBrokerURIs(value: js.Array[String]): Self = StObject.set(x, "brokerURIs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrokerURIsVarargs(value: String*): Self = StObject.set(x, "brokerURIs", js.Array(value :_*))
+      inline def setBrokerURIsVarargs(value: String*): Self = StObject.set(x, "brokerURIs", js.Array(value :_*))
     }
   }
   
@@ -158,20 +150,16 @@ object clusterBrokerClientMod {
   }
   object UpdateWorkersData {
     
-    @scala.inline
-    def apply(sourceWorkerURI: String, workerURIs: String): UpdateWorkersData = {
+    inline def apply(sourceWorkerURI: String, workerURIs: String): UpdateWorkersData = {
       val __obj = js.Dynamic.literal(sourceWorkerURI = sourceWorkerURI.asInstanceOf[js.Any], workerURIs = workerURIs.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpdateWorkersData]
     }
     
-    @scala.inline
-    implicit class UpdateWorkersDataMutableBuilder[Self <: UpdateWorkersData] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateWorkersData](x: Self) {
       
-      @scala.inline
-      def setSourceWorkerURI(value: String): Self = StObject.set(x, "sourceWorkerURI", value.asInstanceOf[js.Any])
+      inline def setSourceWorkerURI(value: String): Self = StObject.set(x, "sourceWorkerURI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkerURIs(value: String): Self = StObject.set(x, "workerURIs", value.asInstanceOf[js.Any])
+      inline def setWorkerURIs(value: String): Self = StObject.set(x, "workerURIs", value.asInstanceOf[js.Any])
     }
   }
 }

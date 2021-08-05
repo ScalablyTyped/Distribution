@@ -10,16 +10,13 @@ trait IMouseDevice extends StObject {
 }
 object IMouseDevice {
   
-  @scala.inline
-  def apply(onmousemoved: js.Any): IMouseDevice = {
+  inline def apply(onmousemoved: js.Any): IMouseDevice = {
     val __obj = js.Dynamic.literal(onmousemoved = onmousemoved.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMouseDevice]
   }
   
-  @scala.inline
-  implicit class IMouseDeviceMutableBuilder[Self <: IMouseDevice] (val x: Self) extends AnyVal {
+  extension [Self <: IMouseDevice](x: Self) {
     
-    @scala.inline
-    def setOnmousemoved(value: js.Any): Self = StObject.set(x, "onmousemoved", value.asInstanceOf[js.Any])
+    inline def setOnmousemoved(value: js.Any): Self = StObject.set(x, "onmousemoved", value.asInstanceOf[js.Any])
   }
 }

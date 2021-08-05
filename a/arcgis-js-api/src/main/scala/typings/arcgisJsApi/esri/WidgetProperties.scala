@@ -30,31 +30,23 @@ trait WidgetProperties extends StObject {
 }
 object WidgetProperties {
   
-  @scala.inline
-  def apply(): WidgetProperties = {
+  inline def apply(): WidgetProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WidgetProperties]
   }
   
-  @scala.inline
-  implicit class WidgetPropertiesMutableBuilder[Self <: WidgetProperties] (val x: Self) extends AnyVal {
+  extension [Self <: WidgetProperties](x: Self) {
     
-    @scala.inline
-    def setContainer(value: String | HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: String | HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }
 }

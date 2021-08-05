@@ -12,25 +12,19 @@ trait SchedulerMessagesRecurrenceEditorDaily extends StObject {
 }
 object SchedulerMessagesRecurrenceEditorDaily {
   
-  @scala.inline
-  def apply(): SchedulerMessagesRecurrenceEditorDaily = {
+  inline def apply(): SchedulerMessagesRecurrenceEditorDaily = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchedulerMessagesRecurrenceEditorDaily]
   }
   
-  @scala.inline
-  implicit class SchedulerMessagesRecurrenceEditorDailyMutableBuilder[Self <: SchedulerMessagesRecurrenceEditorDaily] (val x: Self) extends AnyVal {
+  extension [Self <: SchedulerMessagesRecurrenceEditorDaily](x: Self) {
     
-    @scala.inline
-    def setInterval(value: String): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: String): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
-    @scala.inline
-    def setRepeatEvery(value: String): Self = StObject.set(x, "repeatEvery", value.asInstanceOf[js.Any])
+    inline def setRepeatEvery(value: String): Self = StObject.set(x, "repeatEvery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeatEveryUndefined: Self = StObject.set(x, "repeatEvery", js.undefined)
+    inline def setRepeatEveryUndefined: Self = StObject.set(x, "repeatEvery", js.undefined)
   }
 }

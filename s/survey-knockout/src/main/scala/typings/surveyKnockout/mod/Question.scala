@@ -46,7 +46,7 @@ class Question protected ()
   
   def afterRenderQuestionElement(el: js.Any): Unit = js.native
   
-  var allowNotifyValueChanged: Boolean = js.native
+  /* protected */ var allowNotifyValueChanged: Boolean = js.native
   
   val ariaRole: String = js.native
   
@@ -428,7 +428,7 @@ class Question protected ()
   
   val isReady: Boolean = js.native
   
-  var isReadyValue: Boolean = js.native
+  /* protected */ var isReadyValue: Boolean = js.native
   
   val isRequireTextAfterTitle: Boolean = js.native
   
@@ -452,7 +452,7 @@ class Question protected ()
   
   val locCommentText: LocalizableString = js.native
   
-  var locNotificationInData: Boolean = js.native
+  /* protected */ var locNotificationInData: Boolean = js.native
   
   var locOwner: ILocalizableOwner = js.native
   
@@ -651,7 +651,7 @@ class Question protected ()
     */
   var titleLocation: String = js.native
   
-  val titlePattern: String = js.native
+  /* protected */ val titlePattern: String = js.native
   
   def unbindValue(): Unit = js.native
   

@@ -16,16 +16,13 @@ trait DateFormat
 }
 object DateFormat {
   
-  @scala.inline
-  def apply(format: (DataTable, Double) => Unit, formatValue: Date => String): DateFormat = {
+  inline def apply(format: (DataTable, Double) => Unit, formatValue: Date => String): DateFormat = {
     val __obj = js.Dynamic.literal(format = js.Any.fromFunction2(format), formatValue = js.Any.fromFunction1(formatValue))
     __obj.asInstanceOf[DateFormat]
   }
   
-  @scala.inline
-  implicit class DateFormatMutableBuilder[Self <: DateFormat] (val x: Self) extends AnyVal {
+  extension [Self <: DateFormat](x: Self) {
     
-    @scala.inline
-    def setFormatValue(value: Date => String): Self = StObject.set(x, "formatValue", js.Any.fromFunction1(value))
+    inline def setFormatValue(value: Date => String): Self = StObject.set(x, "formatValue", js.Any.fromFunction1(value))
   }
 }

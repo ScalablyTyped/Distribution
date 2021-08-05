@@ -11,17 +11,14 @@ trait SimpleRequest extends StObject {
 }
 object SimpleRequest {
   
-  @scala.inline
-  def apply(`operation-attributes-tag`: Attributescharset): SimpleRequest = {
+  inline def apply(`operation-attributes-tag`: Attributescharset): SimpleRequest = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("operation-attributes-tag")(`operation-attributes-tag`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleRequest]
   }
   
-  @scala.inline
-  implicit class SimpleRequestMutableBuilder[Self <: SimpleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SimpleRequest](x: Self) {
     
-    @scala.inline
-    def `setOperation-attributes-tag`(value: Attributescharset): Self = StObject.set(x, "operation-attributes-tag", value.asInstanceOf[js.Any])
+    inline def `setOperation-attributes-tag`(value: Attributescharset): Self = StObject.set(x, "operation-attributes-tag", value.asInstanceOf[js.Any])
   }
 }

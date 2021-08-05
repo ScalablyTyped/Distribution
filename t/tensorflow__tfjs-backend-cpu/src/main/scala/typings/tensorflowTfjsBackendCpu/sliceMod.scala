@@ -15,15 +15,13 @@ object sliceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def slice(args: AttrsSliceAttrs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("slice")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
+  inline def slice(args: AttrsSliceAttrs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("slice")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
   
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/Slice", "sliceConfig")
   @js.native
   val sliceConfig: KernelConfig = js.native
   
-  @scala.inline
-  def sliceImpl(
+  inline def sliceImpl(
     vals: TypedArray,
     begin: js.Array[Double],
     size: js.Array[Double],

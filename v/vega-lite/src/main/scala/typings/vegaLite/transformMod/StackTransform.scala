@@ -44,40 +44,29 @@ trait StackTransform
 }
 object StackTransform {
   
-  @scala.inline
-  def apply(as: FieldName | (js.Tuple2[FieldName, FieldName]), groupby: js.Array[FieldName], stack: FieldName): StackTransform = {
+  inline def apply(as: FieldName | (js.Tuple2[FieldName, FieldName]), groupby: js.Array[FieldName], stack: FieldName): StackTransform = {
     val __obj = js.Dynamic.literal(as = as.asInstanceOf[js.Any], groupby = groupby.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackTransform]
   }
   
-  @scala.inline
-  implicit class StackTransformMutableBuilder[Self <: StackTransform] (val x: Self) extends AnyVal {
+  extension [Self <: StackTransform](x: Self) {
     
-    @scala.inline
-    def setAs(value: FieldName | (js.Tuple2[FieldName, FieldName])): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def setAs(value: FieldName | (js.Tuple2[FieldName, FieldName])): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupby(value: js.Array[FieldName]): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
+    inline def setGroupby(value: js.Array[FieldName]): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupbyVarargs(value: FieldName*): Self = StObject.set(x, "groupby", js.Array(value :_*))
+    inline def setGroupbyVarargs(value: FieldName*): Self = StObject.set(x, "groupby", js.Array(value :_*))
     
-    @scala.inline
-    def setOffset(value: zero | center | normalize): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: zero | center | normalize): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setSort(value: js.Array[SortField]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: js.Array[SortField]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    @scala.inline
-    def setSortVarargs(value: SortField*): Self = StObject.set(x, "sort", js.Array(value :_*))
+    inline def setSortVarargs(value: SortField*): Self = StObject.set(x, "sort", js.Array(value :_*))
     
-    @scala.inline
-    def setStack(value: FieldName): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    inline def setStack(value: FieldName): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
   }
 }

@@ -28,46 +28,33 @@ trait ImageContext extends StObject {
 }
 object ImageContext {
   
-  @scala.inline
-  def apply(): ImageContext = {
+  inline def apply(): ImageContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImageContext]
   }
   
-  @scala.inline
-  implicit class ImageContextMutableBuilder[Self <: ImageContext] (val x: Self) extends AnyVal {
+  extension [Self <: ImageContext](x: Self) {
     
-    @scala.inline
-    def setCropHintsParams(value: CropHintsParams): Self = StObject.set(x, "cropHintsParams", value.asInstanceOf[js.Any])
+    inline def setCropHintsParams(value: CropHintsParams): Self = StObject.set(x, "cropHintsParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCropHintsParamsUndefined: Self = StObject.set(x, "cropHintsParams", js.undefined)
+    inline def setCropHintsParamsUndefined: Self = StObject.set(x, "cropHintsParams", js.undefined)
     
-    @scala.inline
-    def setLanguageHints(value: js.Array[String]): Self = StObject.set(x, "languageHints", value.asInstanceOf[js.Any])
+    inline def setLanguageHints(value: js.Array[String]): Self = StObject.set(x, "languageHints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageHintsUndefined: Self = StObject.set(x, "languageHints", js.undefined)
+    inline def setLanguageHintsUndefined: Self = StObject.set(x, "languageHints", js.undefined)
     
-    @scala.inline
-    def setLanguageHintsVarargs(value: String*): Self = StObject.set(x, "languageHints", js.Array(value :_*))
+    inline def setLanguageHintsVarargs(value: String*): Self = StObject.set(x, "languageHints", js.Array(value :_*))
     
-    @scala.inline
-    def setLatLongRect(value: LatLongRect): Self = StObject.set(x, "latLongRect", value.asInstanceOf[js.Any])
+    inline def setLatLongRect(value: LatLongRect): Self = StObject.set(x, "latLongRect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatLongRectUndefined: Self = StObject.set(x, "latLongRect", js.undefined)
+    inline def setLatLongRectUndefined: Self = StObject.set(x, "latLongRect", js.undefined)
     
-    @scala.inline
-    def setProductSearchParams(value: ProductSearchParams): Self = StObject.set(x, "productSearchParams", value.asInstanceOf[js.Any])
+    inline def setProductSearchParams(value: ProductSearchParams): Self = StObject.set(x, "productSearchParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductSearchParamsUndefined: Self = StObject.set(x, "productSearchParams", js.undefined)
+    inline def setProductSearchParamsUndefined: Self = StObject.set(x, "productSearchParams", js.undefined)
     
-    @scala.inline
-    def setWebDetectionParams(value: WebDetectionParams): Self = StObject.set(x, "webDetectionParams", value.asInstanceOf[js.Any])
+    inline def setWebDetectionParams(value: WebDetectionParams): Self = StObject.set(x, "webDetectionParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebDetectionParamsUndefined: Self = StObject.set(x, "webDetectionParams", js.undefined)
+    inline def setWebDetectionParamsUndefined: Self = StObject.set(x, "webDetectionParams", js.undefined)
   }
 }

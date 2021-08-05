@@ -25,11 +25,11 @@ object renderermapMod {
     def this(values: Unit, fallback: CellRenderer) = this()
     def this(values: Values, fallback: CellRenderer) = this()
     
-    var _changed: js.Any = js.native
+    /* private */ var _changed: js.Any = js.native
     
-    var _fallback: js.Any = js.native
+    /* private */ var _fallback: js.Any = js.native
     
-    var _values: js.Any = js.native
+    /* private */ var _values: js.Any = js.native
     
     /**
       * A signal emitted when the renderer map has changed.
@@ -83,50 +83,36 @@ object renderermapMod {
     }
     object Values {
       
-      @scala.inline
-      def apply(): Values = {
+      inline def apply(): Values = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Values]
       }
       
-      @scala.inline
-      implicit class ValuesMutableBuilder[Self <: Values] (val x: Self) extends AnyVal {
+      extension [Self <: Values](x: Self) {
         
-        @scala.inline
-        def setBody(value: Resolver | CellRenderer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+        inline def setBody(value: Resolver | CellRenderer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBodyFunction1(value: /* config */ CellConfig => js.UndefOr[CellRenderer]): Self = StObject.set(x, "body", js.Any.fromFunction1(value))
+        inline def setBodyFunction1(value: /* config */ CellConfig => js.UndefOr[CellRenderer]): Self = StObject.set(x, "body", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+        inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
         
-        @scala.inline
-        def `setColumn-header`(value: Resolver | CellRenderer): Self = StObject.set(x, "column-header", value.asInstanceOf[js.Any])
+        inline def `setColumn-header`(value: Resolver | CellRenderer): Self = StObject.set(x, "column-header", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setColumn-headerFunction1`(value: /* config */ CellConfig => js.UndefOr[CellRenderer]): Self = StObject.set(x, "column-header", js.Any.fromFunction1(value))
+        inline def `setColumn-headerFunction1`(value: /* config */ CellConfig => js.UndefOr[CellRenderer]): Self = StObject.set(x, "column-header", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def `setColumn-headerUndefined`: Self = StObject.set(x, "column-header", js.undefined)
+        inline def `setColumn-headerUndefined`: Self = StObject.set(x, "column-header", js.undefined)
         
-        @scala.inline
-        def `setCorner-header`(value: Resolver | CellRenderer): Self = StObject.set(x, "corner-header", value.asInstanceOf[js.Any])
+        inline def `setCorner-header`(value: Resolver | CellRenderer): Self = StObject.set(x, "corner-header", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setCorner-headerFunction1`(value: /* config */ CellConfig => js.UndefOr[CellRenderer]): Self = StObject.set(x, "corner-header", js.Any.fromFunction1(value))
+        inline def `setCorner-headerFunction1`(value: /* config */ CellConfig => js.UndefOr[CellRenderer]): Self = StObject.set(x, "corner-header", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def `setCorner-headerUndefined`: Self = StObject.set(x, "corner-header", js.undefined)
+        inline def `setCorner-headerUndefined`: Self = StObject.set(x, "corner-header", js.undefined)
         
-        @scala.inline
-        def `setRow-header`(value: Resolver | CellRenderer): Self = StObject.set(x, "row-header", value.asInstanceOf[js.Any])
+        inline def `setRow-header`(value: Resolver | CellRenderer): Self = StObject.set(x, "row-header", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setRow-headerFunction1`(value: /* config */ CellConfig => js.UndefOr[CellRenderer]): Self = StObject.set(x, "row-header", js.Any.fromFunction1(value))
+        inline def `setRow-headerFunction1`(value: /* config */ CellConfig => js.UndefOr[CellRenderer]): Self = StObject.set(x, "row-header", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def `setRow-headerUndefined`: Self = StObject.set(x, "row-header", js.undefined)
+        inline def `setRow-headerUndefined`: Self = StObject.set(x, "row-header", js.undefined)
       }
     }
   }

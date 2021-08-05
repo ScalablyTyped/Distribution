@@ -17,16 +17,13 @@ trait IFilePickerResult extends StObject {
 }
 object IFilePickerResult {
   
-  @scala.inline
-  def apply(data: Files): IFilePickerResult = {
+  inline def apply(data: Files): IFilePickerResult = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFilePickerResult]
   }
   
-  @scala.inline
-  implicit class IFilePickerResultMutableBuilder[Self <: IFilePickerResult] (val x: Self) extends AnyVal {
+  extension [Self <: IFilePickerResult](x: Self) {
     
-    @scala.inline
-    def setData(value: Files): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Files): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

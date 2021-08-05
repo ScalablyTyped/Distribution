@@ -13,22 +13,17 @@ trait RebootRelationalDatabaseResult extends StObject {
 }
 object RebootRelationalDatabaseResult {
   
-  @scala.inline
-  def apply(): RebootRelationalDatabaseResult = {
+  inline def apply(): RebootRelationalDatabaseResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RebootRelationalDatabaseResult]
   }
   
-  @scala.inline
-  implicit class RebootRelationalDatabaseResultMutableBuilder[Self <: RebootRelationalDatabaseResult] (val x: Self) extends AnyVal {
+  extension [Self <: RebootRelationalDatabaseResult](x: Self) {
     
-    @scala.inline
-    def setOperations(value: OperationList): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+    inline def setOperations(value: OperationList): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
+    inline def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
     
-    @scala.inline
-    def setOperationsVarargs(value: Operation*): Self = StObject.set(x, "operations", js.Array(value :_*))
+    inline def setOperationsVarargs(value: Operation*): Self = StObject.set(x, "operations", js.Array(value :_*))
   }
 }

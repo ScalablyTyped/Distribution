@@ -53,8 +53,7 @@ object rectMod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def wrappingRect(params: DstRect): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("wrappingRect")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def wrappingRect(params: DstRect): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("wrappingRect")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait AbsoluteOptions
     extends StObject
@@ -70,32 +69,24 @@ object rectMod {
   }
   object AbsoluteOptions {
     
-    @scala.inline
-    def apply(height: Double, width: Double): AbsoluteOptions = {
+    inline def apply(height: Double, width: Double): AbsoluteOptions = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[AbsoluteOptions]
     }
     
-    @scala.inline
-    implicit class AbsoluteOptionsMutableBuilder[Self <: AbsoluteOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AbsoluteOptions](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }
   }
   
@@ -106,14 +97,12 @@ object rectMod {
   trait Options extends StObject
   object Options {
     
-    @scala.inline
-    def AbsoluteOptions(height: Double, width: Double): typings.terminalKit.rectMod.AbsoluteOptions = {
+    inline def AbsoluteOptions(height: Double, width: Double): typings.terminalKit.rectMod.AbsoluteOptions = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.terminalKit.rectMod.AbsoluteOptions]
     }
     
-    @scala.inline
-    def Region(xmax: Double, xmin: Double, ymax: Double, ymin: Double): typings.terminalKit.rectMod.Region = {
+    inline def Region(xmax: Double, xmin: Double, ymax: Double, ymin: Double): typings.terminalKit.rectMod.Region = {
       val __obj = js.Dynamic.literal(xmax = xmax.asInstanceOf[js.Any], xmin = xmin.asInstanceOf[js.Any], ymax = ymax.asInstanceOf[js.Any], ymin = ymin.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.terminalKit.rectMod.Region]
     }
@@ -141,8 +130,7 @@ object rectMod {
   }
   object Rect {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clip: (Rect, Double, Double, Boolean) => Unit,
       height: Double,
       isNull: Boolean,
@@ -157,35 +145,25 @@ object rectMod {
       __obj.asInstanceOf[Rect]
     }
     
-    @scala.inline
-    implicit class RectMutableBuilder[Self <: Rect] (val x: Self) extends AnyVal {
+    extension [Self <: Rect](x: Self) {
       
-      @scala.inline
-      def setClip(value: (Rect, Double, Double, Boolean) => Unit): Self = StObject.set(x, "clip", js.Any.fromFunction4(value))
+      inline def setClip(value: (Rect, Double, Double, Boolean) => Unit): Self = StObject.set(x, "clip", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsNull(value: Boolean): Self = StObject.set(x, "isNull", value.asInstanceOf[js.Any])
+      inline def setIsNull(value: Boolean): Self = StObject.set(x, "isNull", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSet(value: Region => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+      inline def setSet(value: Region => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXmax(value: Double): Self = StObject.set(x, "xmax", value.asInstanceOf[js.Any])
+      inline def setXmax(value: Double): Self = StObject.set(x, "xmax", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXmin(value: Double): Self = StObject.set(x, "xmin", value.asInstanceOf[js.Any])
+      inline def setXmin(value: Double): Self = StObject.set(x, "xmin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYmax(value: Double): Self = StObject.set(x, "ymax", value.asInstanceOf[js.Any])
+      inline def setYmax(value: Double): Self = StObject.set(x, "ymax", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYmin(value: Double): Self = StObject.set(x, "ymin", value.asInstanceOf[js.Any])
+      inline def setYmin(value: Double): Self = StObject.set(x, "ymin", value.asInstanceOf[js.Any])
     }
   }
   
@@ -203,26 +181,20 @@ object rectMod {
   }
   object Region {
     
-    @scala.inline
-    def apply(xmax: Double, xmin: Double, ymax: Double, ymin: Double): Region = {
+    inline def apply(xmax: Double, xmin: Double, ymax: Double, ymin: Double): Region = {
       val __obj = js.Dynamic.literal(xmax = xmax.asInstanceOf[js.Any], xmin = xmin.asInstanceOf[js.Any], ymax = ymax.asInstanceOf[js.Any], ymin = ymin.asInstanceOf[js.Any])
       __obj.asInstanceOf[Region]
     }
     
-    @scala.inline
-    implicit class RegionMutableBuilder[Self <: Region] (val x: Self) extends AnyVal {
+    extension [Self <: Region](x: Self) {
       
-      @scala.inline
-      def setXmax(value: Double): Self = StObject.set(x, "xmax", value.asInstanceOf[js.Any])
+      inline def setXmax(value: Double): Self = StObject.set(x, "xmax", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXmin(value: Double): Self = StObject.set(x, "xmin", value.asInstanceOf[js.Any])
+      inline def setXmin(value: Double): Self = StObject.set(x, "xmin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYmax(value: Double): Self = StObject.set(x, "ymax", value.asInstanceOf[js.Any])
+      inline def setYmax(value: Double): Self = StObject.set(x, "ymax", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYmin(value: Double): Self = StObject.set(x, "ymin", value.asInstanceOf[js.Any])
+      inline def setYmin(value: Double): Self = StObject.set(x, "ymin", value.asInstanceOf[js.Any])
     }
   }
 }

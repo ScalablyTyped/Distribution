@@ -60,21 +60,16 @@ object identityNotificationTopicMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): IdentityNotificationTopic = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[IdentityNotificationTopic]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): IdentityNotificationTopic = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IdentityNotificationTopic]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: IdentityNotificationTopicState): IdentityNotificationTopic = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[IdentityNotificationTopic]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: IdentityNotificationTopicState, opts: CustomResourceOptions): IdentityNotificationTopic = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IdentityNotificationTopic]
+    inline def get(name: String, id: Input[ID]): IdentityNotificationTopic = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[IdentityNotificationTopic]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): IdentityNotificationTopic = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IdentityNotificationTopic]
+    inline def get(name: String, id: Input[ID], state: IdentityNotificationTopicState): IdentityNotificationTopic = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[IdentityNotificationTopic]
+    inline def get(name: String, id: Input[ID], state: IdentityNotificationTopicState, opts: CustomResourceOptions): IdentityNotificationTopic = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IdentityNotificationTopic]
     
     /**
       * Returns true if the given object is an instance of IdentityNotificationTopic.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/identityNotificationTopic.IdentityNotificationTopic */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ses/identityNotificationTopic.IdentityNotificationTopic */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/identityNotificationTopic.IdentityNotificationTopic */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ses/identityNotificationTopic.IdentityNotificationTopic */ Boolean]
   }
   
   trait IdentityNotificationTopicArgs extends StObject {
@@ -101,32 +96,24 @@ object identityNotificationTopicMod {
   }
   object IdentityNotificationTopicArgs {
     
-    @scala.inline
-    def apply(identity: Input[String], notificationType: Input[String]): IdentityNotificationTopicArgs = {
+    inline def apply(identity: Input[String], notificationType: Input[String]): IdentityNotificationTopicArgs = {
       val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], notificationType = notificationType.asInstanceOf[js.Any])
       __obj.asInstanceOf[IdentityNotificationTopicArgs]
     }
     
-    @scala.inline
-    implicit class IdentityNotificationTopicArgsMutableBuilder[Self <: IdentityNotificationTopicArgs] (val x: Self) extends AnyVal {
+    extension [Self <: IdentityNotificationTopicArgs](x: Self) {
       
-      @scala.inline
-      def setIdentity(value: Input[String]): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      inline def setIdentity(value: Input[String]): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeOriginalHeaders(value: Input[Boolean]): Self = StObject.set(x, "includeOriginalHeaders", value.asInstanceOf[js.Any])
+      inline def setIncludeOriginalHeaders(value: Input[Boolean]): Self = StObject.set(x, "includeOriginalHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeOriginalHeadersUndefined: Self = StObject.set(x, "includeOriginalHeaders", js.undefined)
+      inline def setIncludeOriginalHeadersUndefined: Self = StObject.set(x, "includeOriginalHeaders", js.undefined)
       
-      @scala.inline
-      def setNotificationType(value: Input[String]): Self = StObject.set(x, "notificationType", value.asInstanceOf[js.Any])
+      inline def setNotificationType(value: Input[String]): Self = StObject.set(x, "notificationType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopicArn(value: Input[String]): Self = StObject.set(x, "topicArn", value.asInstanceOf[js.Any])
+      inline def setTopicArn(value: Input[String]): Self = StObject.set(x, "topicArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopicArnUndefined: Self = StObject.set(x, "topicArn", js.undefined)
+      inline def setTopicArnUndefined: Self = StObject.set(x, "topicArn", js.undefined)
     }
   }
   
@@ -154,38 +141,28 @@ object identityNotificationTopicMod {
   }
   object IdentityNotificationTopicState {
     
-    @scala.inline
-    def apply(): IdentityNotificationTopicState = {
+    inline def apply(): IdentityNotificationTopicState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IdentityNotificationTopicState]
     }
     
-    @scala.inline
-    implicit class IdentityNotificationTopicStateMutableBuilder[Self <: IdentityNotificationTopicState] (val x: Self) extends AnyVal {
+    extension [Self <: IdentityNotificationTopicState](x: Self) {
       
-      @scala.inline
-      def setIdentity(value: Input[String]): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      inline def setIdentity(value: Input[String]): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
+      inline def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
       
-      @scala.inline
-      def setIncludeOriginalHeaders(value: Input[Boolean]): Self = StObject.set(x, "includeOriginalHeaders", value.asInstanceOf[js.Any])
+      inline def setIncludeOriginalHeaders(value: Input[Boolean]): Self = StObject.set(x, "includeOriginalHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeOriginalHeadersUndefined: Self = StObject.set(x, "includeOriginalHeaders", js.undefined)
+      inline def setIncludeOriginalHeadersUndefined: Self = StObject.set(x, "includeOriginalHeaders", js.undefined)
       
-      @scala.inline
-      def setNotificationType(value: Input[String]): Self = StObject.set(x, "notificationType", value.asInstanceOf[js.Any])
+      inline def setNotificationType(value: Input[String]): Self = StObject.set(x, "notificationType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotificationTypeUndefined: Self = StObject.set(x, "notificationType", js.undefined)
+      inline def setNotificationTypeUndefined: Self = StObject.set(x, "notificationType", js.undefined)
       
-      @scala.inline
-      def setTopicArn(value: Input[String]): Self = StObject.set(x, "topicArn", value.asInstanceOf[js.Any])
+      inline def setTopicArn(value: Input[String]): Self = StObject.set(x, "topicArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopicArnUndefined: Self = StObject.set(x, "topicArn", js.undefined)
+      inline def setTopicArnUndefined: Self = StObject.set(x, "topicArn", js.undefined)
     }
   }
 }

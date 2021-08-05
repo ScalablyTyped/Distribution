@@ -18,13 +18,10 @@ object makeClientMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def loadPackageDefinition(packageDef: PackageDefinition): GrpcObject = ^.asInstanceOf[js.Dynamic].applyDynamic("loadPackageDefinition")(packageDef.asInstanceOf[js.Any]).asInstanceOf[GrpcObject]
+  inline def loadPackageDefinition(packageDef: PackageDefinition): GrpcObject = ^.asInstanceOf[js.Dynamic].applyDynamic("loadPackageDefinition")(packageDef.asInstanceOf[js.Any]).asInstanceOf[GrpcObject]
   
-  @scala.inline
-  def makeClientConstructor(methods: js.Object, serviceName: String): ServiceClientConstructor = (^.asInstanceOf[js.Dynamic].applyDynamic("makeClientConstructor")(methods.asInstanceOf[js.Any], serviceName.asInstanceOf[js.Any])).asInstanceOf[ServiceClientConstructor]
-  @scala.inline
-  def makeClientConstructor(methods: js.Object, serviceName: String, classOptions: js.Object): ServiceClientConstructor = (^.asInstanceOf[js.Dynamic].applyDynamic("makeClientConstructor")(methods.asInstanceOf[js.Any], serviceName.asInstanceOf[js.Any], classOptions.asInstanceOf[js.Any])).asInstanceOf[ServiceClientConstructor]
+  inline def makeClientConstructor(methods: js.Object, serviceName: String): ServiceClientConstructor = (^.asInstanceOf[js.Dynamic].applyDynamic("makeClientConstructor")(methods.asInstanceOf[js.Any], serviceName.asInstanceOf[js.Any])).asInstanceOf[ServiceClientConstructor]
+  inline def makeClientConstructor(methods: js.Object, serviceName: String, classOptions: js.Object): ServiceClientConstructor = (^.asInstanceOf[js.Dynamic].applyDynamic("makeClientConstructor")(methods.asInstanceOf[js.Any], serviceName.asInstanceOf[js.Any], classOptions.asInstanceOf[js.Any])).asInstanceOf[ServiceClientConstructor]
   
   trait ClientMethodDefinition[RequestType, ResponseType] extends StObject {
     
@@ -46,8 +43,7 @@ object makeClientMod {
   }
   object ClientMethodDefinition {
     
-    @scala.inline
-    def apply[RequestType, ResponseType](
+    inline def apply[RequestType, ResponseType](
       path: String,
       requestSerialize: RequestType => Buffer,
       requestStream: Boolean,
@@ -58,29 +54,21 @@ object makeClientMod {
       __obj.asInstanceOf[ClientMethodDefinition[RequestType, ResponseType]]
     }
     
-    @scala.inline
-    implicit class ClientMethodDefinitionMutableBuilder[Self <: ClientMethodDefinition[?, ?], RequestType, ResponseType] (val x: Self & (ClientMethodDefinition[RequestType, ResponseType])) extends AnyVal {
+    extension [Self <: ClientMethodDefinition[?, ?], RequestType, ResponseType](x: Self & (ClientMethodDefinition[RequestType, ResponseType])) {
       
-      @scala.inline
-      def setOriginalName(value: String): Self = StObject.set(x, "originalName", value.asInstanceOf[js.Any])
+      inline def setOriginalName(value: String): Self = StObject.set(x, "originalName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalNameUndefined: Self = StObject.set(x, "originalName", js.undefined)
+      inline def setOriginalNameUndefined: Self = StObject.set(x, "originalName", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestSerialize(value: RequestType => Buffer): Self = StObject.set(x, "requestSerialize", js.Any.fromFunction1(value))
+      inline def setRequestSerialize(value: RequestType => Buffer): Self = StObject.set(x, "requestSerialize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRequestStream(value: Boolean): Self = StObject.set(x, "requestStream", value.asInstanceOf[js.Any])
+      inline def setRequestStream(value: Boolean): Self = StObject.set(x, "requestStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseDeserialize(value: /* bytes */ Buffer => ResponseType): Self = StObject.set(x, "responseDeserialize", js.Any.fromFunction1(value))
+      inline def setResponseDeserialize(value: /* bytes */ Buffer => ResponseType): Self = StObject.set(x, "responseDeserialize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResponseStream(value: Boolean): Self = StObject.set(x, "responseStream", value.asInstanceOf[js.Any])
+      inline def setResponseStream(value: Boolean): Self = StObject.set(x, "responseStream", value.asInstanceOf[js.Any])
     }
   }
   
@@ -91,8 +79,7 @@ object makeClientMod {
        with /* index */ StringDictionary[GrpcObject | ServiceClientConstructor | ProtobufTypeDefinition]
   object GrpcObject {
     
-    @scala.inline
-    def apply(): GrpcObject = {
+    inline def apply(): GrpcObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GrpcObject]
     }
@@ -113,8 +100,7 @@ object makeClientMod {
   }
   object MethodDefinition {
     
-    @scala.inline
-    def apply[RequestType, ResponseType](
+    inline def apply[RequestType, ResponseType](
       path: String,
       requestDeserialize: /* bytes */ Buffer => RequestType,
       requestSerialize: RequestType => Buffer,
@@ -127,14 +113,11 @@ object makeClientMod {
       __obj.asInstanceOf[MethodDefinition[RequestType, ResponseType]]
     }
     
-    @scala.inline
-    implicit class MethodDefinitionMutableBuilder[Self <: MethodDefinition[?, ?], RequestType, ResponseType] (val x: Self & (MethodDefinition[RequestType, ResponseType])) extends AnyVal {
+    extension [Self <: MethodDefinition[?, ?], RequestType, ResponseType](x: Self & (MethodDefinition[RequestType, ResponseType])) {
       
-      @scala.inline
-      def setRequestDeserialize(value: /* bytes */ Buffer => RequestType): Self = StObject.set(x, "requestDeserialize", js.Any.fromFunction1(value))
+      inline def setRequestDeserialize(value: /* bytes */ Buffer => RequestType): Self = StObject.set(x, "requestDeserialize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResponseSerialize(value: ResponseType => Buffer): Self = StObject.set(x, "responseSerialize", js.Any.fromFunction1(value))
+      inline def setResponseSerialize(value: ResponseType => Buffer): Self = StObject.set(x, "responseSerialize", js.Any.fromFunction1(value))
     }
   }
   
@@ -150,27 +133,21 @@ object makeClientMod {
   }
   object ProtobufTypeDefinition {
     
-    @scala.inline
-    def apply(fileDescriptorProtos: js.Array[Buffer], format: String, `type`: js.Object): ProtobufTypeDefinition = {
+    inline def apply(fileDescriptorProtos: js.Array[Buffer], format: String, `type`: js.Object): ProtobufTypeDefinition = {
       val __obj = js.Dynamic.literal(fileDescriptorProtos = fileDescriptorProtos.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProtobufTypeDefinition]
     }
     
-    @scala.inline
-    implicit class ProtobufTypeDefinitionMutableBuilder[Self <: ProtobufTypeDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: ProtobufTypeDefinition](x: Self) {
       
-      @scala.inline
-      def setFileDescriptorProtos(value: js.Array[Buffer]): Self = StObject.set(x, "fileDescriptorProtos", value.asInstanceOf[js.Any])
+      inline def setFileDescriptorProtos(value: js.Array[Buffer]): Self = StObject.set(x, "fileDescriptorProtos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileDescriptorProtosVarargs(value: Buffer*): Self = StObject.set(x, "fileDescriptorProtos", js.Array(value :_*))
+      inline def setFileDescriptorProtosVarargs(value: Buffer*): Self = StObject.set(x, "fileDescriptorProtos", js.Array(value :_*))
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: js.Object): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: js.Object): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -196,8 +173,7 @@ object makeClientMod {
   }
   object ServerMethodDefinition {
     
-    @scala.inline
-    def apply[RequestType, ResponseType](
+    inline def apply[RequestType, ResponseType](
       path: String,
       requestDeserialize: /* bytes */ Buffer => RequestType,
       requestStream: Boolean,
@@ -208,29 +184,21 @@ object makeClientMod {
       __obj.asInstanceOf[ServerMethodDefinition[RequestType, ResponseType]]
     }
     
-    @scala.inline
-    implicit class ServerMethodDefinitionMutableBuilder[Self <: ServerMethodDefinition[?, ?], RequestType, ResponseType] (val x: Self & (ServerMethodDefinition[RequestType, ResponseType])) extends AnyVal {
+    extension [Self <: ServerMethodDefinition[?, ?], RequestType, ResponseType](x: Self & (ServerMethodDefinition[RequestType, ResponseType])) {
       
-      @scala.inline
-      def setOriginalName(value: String): Self = StObject.set(x, "originalName", value.asInstanceOf[js.Any])
+      inline def setOriginalName(value: String): Self = StObject.set(x, "originalName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalNameUndefined: Self = StObject.set(x, "originalName", js.undefined)
+      inline def setOriginalNameUndefined: Self = StObject.set(x, "originalName", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestDeserialize(value: /* bytes */ Buffer => RequestType): Self = StObject.set(x, "requestDeserialize", js.Any.fromFunction1(value))
+      inline def setRequestDeserialize(value: /* bytes */ Buffer => RequestType): Self = StObject.set(x, "requestDeserialize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRequestStream(value: Boolean): Self = StObject.set(x, "requestStream", value.asInstanceOf[js.Any])
+      inline def setRequestStream(value: Boolean): Self = StObject.set(x, "requestStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseSerialize(value: ResponseType => Buffer): Self = StObject.set(x, "responseSerialize", js.Any.fromFunction1(value))
+      inline def setResponseSerialize(value: ResponseType => Buffer): Self = StObject.set(x, "responseSerialize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResponseStream(value: Boolean): Self = StObject.set(x, "responseStream", value.asInstanceOf[js.Any])
+      inline def setResponseStream(value: Boolean): Self = StObject.set(x, "responseStream", value.asInstanceOf[js.Any])
     }
   }
   

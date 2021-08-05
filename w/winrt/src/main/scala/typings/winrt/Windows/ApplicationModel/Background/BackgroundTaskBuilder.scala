@@ -9,8 +9,7 @@ trait BackgroundTaskBuilder
      with IBackgroundTaskBuilder
 object BackgroundTaskBuilder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addCondition: IBackgroundCondition => Unit,
     name: String,
     register: () => BackgroundTaskRegistration,

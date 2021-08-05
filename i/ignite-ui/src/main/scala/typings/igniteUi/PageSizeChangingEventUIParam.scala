@@ -23,31 +23,23 @@ trait PageSizeChangingEventUIParam extends StObject {
 }
 object PageSizeChangingEventUIParam {
   
-  @scala.inline
-  def apply(): PageSizeChangingEventUIParam = {
+  inline def apply(): PageSizeChangingEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PageSizeChangingEventUIParam]
   }
   
-  @scala.inline
-  implicit class PageSizeChangingEventUIParamMutableBuilder[Self <: PageSizeChangingEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: PageSizeChangingEventUIParam](x: Self) {
     
-    @scala.inline
-    def setCurrentPageSize(value: Double): Self = StObject.set(x, "currentPageSize", value.asInstanceOf[js.Any])
+    inline def setCurrentPageSize(value: Double): Self = StObject.set(x, "currentPageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentPageSizeUndefined: Self = StObject.set(x, "currentPageSize", js.undefined)
+    inline def setCurrentPageSizeUndefined: Self = StObject.set(x, "currentPageSize", js.undefined)
     
-    @scala.inline
-    def setNewPageSize(value: Double): Self = StObject.set(x, "newPageSize", value.asInstanceOf[js.Any])
+    inline def setNewPageSize(value: Double): Self = StObject.set(x, "newPageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewPageSizeUndefined: Self = StObject.set(x, "newPageSize", js.undefined)
+    inline def setNewPageSizeUndefined: Self = StObject.set(x, "newPageSize", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

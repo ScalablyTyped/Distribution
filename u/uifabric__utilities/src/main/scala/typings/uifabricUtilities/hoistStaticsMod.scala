@@ -10,6 +10,5 @@ object hoistStaticsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def hoistStatics[TSource /* <: js.Object */, TDest](source: TSource, dest: TDest): TDest = (^.asInstanceOf[js.Dynamic].applyDynamic("hoistStatics")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[TDest]
+  inline def hoistStatics[TSource /* <: js.Object */, TDest](source: TSource, dest: TDest): TDest = (^.asInstanceOf[js.Dynamic].applyDynamic("hoistStatics")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[TDest]
 }

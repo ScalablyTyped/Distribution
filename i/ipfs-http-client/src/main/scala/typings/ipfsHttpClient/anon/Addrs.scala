@@ -13,22 +13,17 @@ trait Addrs extends StObject {
 }
 object Addrs {
   
-  @scala.inline
-  def apply(addrs: js.Array[^], id: String): Addrs = {
+  inline def apply(addrs: js.Array[^], id: String): Addrs = {
     val __obj = js.Dynamic.literal(addrs = addrs.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Addrs]
   }
   
-  @scala.inline
-  implicit class AddrsMutableBuilder[Self <: Addrs] (val x: Self) extends AnyVal {
+  extension [Self <: Addrs](x: Self) {
     
-    @scala.inline
-    def setAddrs(value: js.Array[^]): Self = StObject.set(x, "addrs", value.asInstanceOf[js.Any])
+    inline def setAddrs(value: js.Array[^]): Self = StObject.set(x, "addrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddrsVarargs(value: ^ *): Self = StObject.set(x, "addrs", js.Array(value :_*))
+    inline def setAddrsVarargs(value: ^ *): Self = StObject.set(x, "addrs", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

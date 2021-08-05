@@ -18,19 +18,15 @@ trait FragmentSelector extends StObject {
 }
 object FragmentSelector {
   
-  @scala.inline
-  def apply(FragmentSelectorType: FragmentSelectorType, TimestampRange: TimestampRange): FragmentSelector = {
+  inline def apply(FragmentSelectorType: FragmentSelectorType, TimestampRange: TimestampRange): FragmentSelector = {
     val __obj = js.Dynamic.literal(FragmentSelectorType = FragmentSelectorType.asInstanceOf[js.Any], TimestampRange = TimestampRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[FragmentSelector]
   }
   
-  @scala.inline
-  implicit class FragmentSelectorMutableBuilder[Self <: FragmentSelector] (val x: Self) extends AnyVal {
+  extension [Self <: FragmentSelector](x: Self) {
     
-    @scala.inline
-    def setFragmentSelectorType(value: FragmentSelectorType): Self = StObject.set(x, "FragmentSelectorType", value.asInstanceOf[js.Any])
+    inline def setFragmentSelectorType(value: FragmentSelectorType): Self = StObject.set(x, "FragmentSelectorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampRange(value: TimestampRange): Self = StObject.set(x, "TimestampRange", value.asInstanceOf[js.Any])
+    inline def setTimestampRange(value: TimestampRange): Self = StObject.set(x, "TimestampRange", value.asInstanceOf[js.Any])
   }
 }

@@ -23,31 +23,23 @@ trait DeclarationNewProps extends StObject {
 }
 object DeclarationNewProps {
   
-  @scala.inline
-  def apply(): DeclarationNewProps = {
+  inline def apply(): DeclarationNewProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeclarationNewProps]
   }
   
-  @scala.inline
-  implicit class DeclarationNewPropsMutableBuilder[Self <: DeclarationNewProps] (val x: Self) extends AnyVal {
+  extension [Self <: DeclarationNewProps](x: Self) {
     
-    @scala.inline
-    def setProp(value: String): Self = StObject.set(x, "prop", value.asInstanceOf[js.Any])
+    inline def setProp(value: String): Self = StObject.set(x, "prop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropUndefined: Self = StObject.set(x, "prop", js.undefined)
+    inline def setPropUndefined: Self = StObject.set(x, "prop", js.undefined)
     
-    @scala.inline
-    def setRaws(value: DeclarationRaws): Self = StObject.set(x, "raws", value.asInstanceOf[js.Any])
+    inline def setRaws(value: DeclarationRaws): Self = StObject.set(x, "raws", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawsUndefined: Self = StObject.set(x, "raws", js.undefined)
+    inline def setRawsUndefined: Self = StObject.set(x, "raws", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

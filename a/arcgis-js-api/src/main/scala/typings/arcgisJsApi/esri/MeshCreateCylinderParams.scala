@@ -60,8 +60,7 @@ trait MeshCreateCylinderParams
 }
 object MeshCreateCylinderParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -70,39 +69,28 @@ object MeshCreateCylinderParams {
     __obj.asInstanceOf[MeshCreateCylinderParams]
   }
   
-  @scala.inline
-  implicit class MeshCreateCylinderParamsMutableBuilder[Self <: MeshCreateCylinderParams] (val x: Self) extends AnyVal {
+  extension [Self <: MeshCreateCylinderParams](x: Self) {
     
-    @scala.inline
-    def setDensificationFactor(value: Double): Self = StObject.set(x, "densificationFactor", value.asInstanceOf[js.Any])
+    inline def setDensificationFactor(value: Double): Self = StObject.set(x, "densificationFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDensificationFactorUndefined: Self = StObject.set(x, "densificationFactor", js.undefined)
+    inline def setDensificationFactorUndefined: Self = StObject.set(x, "densificationFactor", js.undefined)
     
-    @scala.inline
-    def setGeographic(value: Boolean): Self = StObject.set(x, "geographic", value.asInstanceOf[js.Any])
+    inline def setGeographic(value: Boolean): Self = StObject.set(x, "geographic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeographicUndefined: Self = StObject.set(x, "geographic", js.undefined)
+    inline def setGeographicUndefined: Self = StObject.set(x, "geographic", js.undefined)
     
-    @scala.inline
-    def setMaterial(value: MeshMaterial): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
+    inline def setMaterial(value: MeshMaterial): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
+    inline def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double | MeshCreateCylinderParamsSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double | MeshCreateCylinderParamsSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setUnit(
+    inline def setUnit(
       value: millimeters | centimeters | decimeters | meters_ | kilometers_ | inches | feet_ | yards | miles_ | `nautical-miles` | `us-feet`
     ): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+    inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
   }
 }

@@ -16,19 +16,15 @@ trait PhoneTrigger extends StObject {
 }
 object PhoneTrigger {
   
-  @scala.inline
-  def apply(oneShot: Boolean, triggerType: PhoneTriggerType): PhoneTrigger = {
+  inline def apply(oneShot: Boolean, triggerType: PhoneTriggerType): PhoneTrigger = {
     val __obj = js.Dynamic.literal(oneShot = oneShot.asInstanceOf[js.Any], triggerType = triggerType.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhoneTrigger]
   }
   
-  @scala.inline
-  implicit class PhoneTriggerMutableBuilder[Self <: PhoneTrigger] (val x: Self) extends AnyVal {
+  extension [Self <: PhoneTrigger](x: Self) {
     
-    @scala.inline
-    def setOneShot(value: Boolean): Self = StObject.set(x, "oneShot", value.asInstanceOf[js.Any])
+    inline def setOneShot(value: Boolean): Self = StObject.set(x, "oneShot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerType(value: PhoneTriggerType): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
+    inline def setTriggerType(value: PhoneTriggerType): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
   }
 }

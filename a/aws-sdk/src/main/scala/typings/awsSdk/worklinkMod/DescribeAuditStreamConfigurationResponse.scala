@@ -13,19 +13,15 @@ trait DescribeAuditStreamConfigurationResponse extends StObject {
 }
 object DescribeAuditStreamConfigurationResponse {
   
-  @scala.inline
-  def apply(): DescribeAuditStreamConfigurationResponse = {
+  inline def apply(): DescribeAuditStreamConfigurationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAuditStreamConfigurationResponse]
   }
   
-  @scala.inline
-  implicit class DescribeAuditStreamConfigurationResponseMutableBuilder[Self <: DescribeAuditStreamConfigurationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAuditStreamConfigurationResponse](x: Self) {
     
-    @scala.inline
-    def setAuditStreamArn(value: AuditStreamArn): Self = StObject.set(x, "AuditStreamArn", value.asInstanceOf[js.Any])
+    inline def setAuditStreamArn(value: AuditStreamArn): Self = StObject.set(x, "AuditStreamArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuditStreamArnUndefined: Self = StObject.set(x, "AuditStreamArn", js.undefined)
+    inline def setAuditStreamArnUndefined: Self = StObject.set(x, "AuditStreamArn", js.undefined)
   }
 }

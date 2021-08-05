@@ -13,16 +13,13 @@ trait DescribeAppInstanceUserRequest extends StObject {
 }
 object DescribeAppInstanceUserRequest {
   
-  @scala.inline
-  def apply(AppInstanceUserArn: ChimeArn): DescribeAppInstanceUserRequest = {
+  inline def apply(AppInstanceUserArn: ChimeArn): DescribeAppInstanceUserRequest = {
     val __obj = js.Dynamic.literal(AppInstanceUserArn = AppInstanceUserArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAppInstanceUserRequest]
   }
   
-  @scala.inline
-  implicit class DescribeAppInstanceUserRequestMutableBuilder[Self <: DescribeAppInstanceUserRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAppInstanceUserRequest](x: Self) {
     
-    @scala.inline
-    def setAppInstanceUserArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceUserArn", value.asInstanceOf[js.Any])
+    inline def setAppInstanceUserArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceUserArn", value.asInstanceOf[js.Any])
   }
 }

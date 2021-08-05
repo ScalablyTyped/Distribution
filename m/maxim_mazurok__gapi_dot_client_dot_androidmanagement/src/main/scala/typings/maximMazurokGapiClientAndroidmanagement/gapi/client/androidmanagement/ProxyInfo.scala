@@ -20,40 +20,29 @@ trait ProxyInfo extends StObject {
 }
 object ProxyInfo {
   
-  @scala.inline
-  def apply(): ProxyInfo = {
+  inline def apply(): ProxyInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProxyInfo]
   }
   
-  @scala.inline
-  implicit class ProxyInfoMutableBuilder[Self <: ProxyInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ProxyInfo](x: Self) {
     
-    @scala.inline
-    def setExcludedHosts(value: js.Array[String]): Self = StObject.set(x, "excludedHosts", value.asInstanceOf[js.Any])
+    inline def setExcludedHosts(value: js.Array[String]): Self = StObject.set(x, "excludedHosts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedHostsUndefined: Self = StObject.set(x, "excludedHosts", js.undefined)
+    inline def setExcludedHostsUndefined: Self = StObject.set(x, "excludedHosts", js.undefined)
     
-    @scala.inline
-    def setExcludedHostsVarargs(value: String*): Self = StObject.set(x, "excludedHosts", js.Array(value :_*))
+    inline def setExcludedHostsVarargs(value: String*): Self = StObject.set(x, "excludedHosts", js.Array(value :_*))
     
-    @scala.inline
-    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    @scala.inline
-    def setPacUri(value: String): Self = StObject.set(x, "pacUri", value.asInstanceOf[js.Any])
+    inline def setPacUri(value: String): Self = StObject.set(x, "pacUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPacUriUndefined: Self = StObject.set(x, "pacUri", js.undefined)
+    inline def setPacUriUndefined: Self = StObject.set(x, "pacUri", js.undefined)
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
   }
 }

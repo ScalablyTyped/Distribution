@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class BindingTable () extends StObject {
   
-  var addReferenceToSymbol: js.Any = js.native
+  /* private */ var addReferenceToSymbol: js.Any = js.native
   
   def getAncestor(node: Unit, kind: SyntaxKind): js.UndefOr[Node2[SyntaxKind]] = js.native
   def getAncestor(node: Node2[SyntaxKind], kind: SyntaxKind): js.UndefOr[Node2[SyntaxKind]] = js.native
@@ -38,20 +38,20 @@ class BindingTable () extends StObject {
   
   def isEmpty: Boolean = js.native
   
-  var nodeParents: js.Any = js.native
+  /* private */ var nodeParents: js.Any = js.native
   
-  var nodeSymbols: js.Any = js.native
+  /* private */ var nodeSymbols: js.Any = js.native
   
   def resolveSymbol(location: Unit, name: String, meaning: SymbolKind): js.UndefOr[Symbol2] = js.native
   def resolveSymbol(location: Unit, name: Unit, meaning: SymbolKind): js.UndefOr[Symbol2] = js.native
   def resolveSymbol(location: Node2[SyntaxKind], name: String, meaning: SymbolKind): js.UndefOr[Symbol2] = js.native
   def resolveSymbol(location: Node2[SyntaxKind], name: Unit, meaning: SymbolKind): js.UndefOr[Symbol2] = js.native
   
-  var setSymbolForNode: js.Any = js.native
+  /* private */ var setSymbolForNode: js.Any = js.native
   
-  var symbolDeclarations: js.Any = js.native
+  /* private */ var symbolDeclarations: js.Any = js.native
   
-  var symbolLocals: js.Any = js.native
+  /* private */ var symbolLocals: js.Any = js.native
   
-  var symbolReferences: js.Any = js.native
+  /* private */ var symbolReferences: js.Any = js.native
 }

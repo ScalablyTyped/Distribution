@@ -14,25 +14,19 @@ trait TabStop extends StObject {
 }
 object TabStop {
   
-  @scala.inline
-  def apply(): TabStop = {
+  inline def apply(): TabStop = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TabStop]
   }
   
-  @scala.inline
-  implicit class TabStopMutableBuilder[Self <: TabStop] (val x: Self) extends AnyVal {
+  extension [Self <: TabStop](x: Self) {
     
-    @scala.inline
-    def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+    inline def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
+    inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Dimension): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Dimension): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
   }
 }

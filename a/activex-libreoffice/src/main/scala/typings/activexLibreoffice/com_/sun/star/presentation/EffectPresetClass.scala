@@ -25,25 +25,18 @@ object EffectPresetClass {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def CUSTOM: `0` = 0.asInstanceOf[`0`]
+    inline def CUSTOM: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def EMPHASIS: `3` = 3.asInstanceOf[`3`]
+    inline def EMPHASIS: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def ENTRANCE: `1` = 1.asInstanceOf[`1`]
+    inline def ENTRANCE: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def EXIT: `2` = 2.asInstanceOf[`2`]
+    inline def EXIT: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def MEDIACALL: `6` = 6.asInstanceOf[`6`]
+    inline def MEDIACALL: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def MOTIONPATH: `4` = 4.asInstanceOf[`4`]
+    inline def MOTIONPATH: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def OLEACTION: `5` = 5.asInstanceOf[`5`]
+    inline def OLEACTION: `5` = 5.asInstanceOf[`5`]
   }
 }

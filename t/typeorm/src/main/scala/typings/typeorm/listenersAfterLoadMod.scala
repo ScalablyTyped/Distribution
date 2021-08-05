@@ -11,6 +11,5 @@ object listenersAfterLoadMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def AfterLoad(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("AfterLoad")().asInstanceOf[PropertyDecorator]
+  inline def AfterLoad(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("AfterLoad")().asInstanceOf[PropertyDecorator]
 }

@@ -18,19 +18,15 @@ trait DisassociatePhoneNumberFromUserRequest extends StObject {
 }
 object DisassociatePhoneNumberFromUserRequest {
   
-  @scala.inline
-  def apply(AccountId: String, UserId: String): DisassociatePhoneNumberFromUserRequest = {
+  inline def apply(AccountId: String, UserId: String): DisassociatePhoneNumberFromUserRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], UserId = UserId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociatePhoneNumberFromUserRequest]
   }
   
-  @scala.inline
-  implicit class DisassociatePhoneNumberFromUserRequestMutableBuilder[Self <: DisassociatePhoneNumberFromUserRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociatePhoneNumberFromUserRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserId(value: String): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: String): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
   }
 }

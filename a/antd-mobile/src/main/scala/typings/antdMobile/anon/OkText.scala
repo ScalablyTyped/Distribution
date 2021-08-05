@@ -14,22 +14,17 @@ trait OkText extends StObject {
 }
 object OkText {
   
-  @scala.inline
-  def apply(dismissText: String, extra: String, okText: String): OkText = {
+  inline def apply(dismissText: String, extra: String, okText: String): OkText = {
     val __obj = js.Dynamic.literal(dismissText = dismissText.asInstanceOf[js.Any], extra = extra.asInstanceOf[js.Any], okText = okText.asInstanceOf[js.Any])
     __obj.asInstanceOf[OkText]
   }
   
-  @scala.inline
-  implicit class OkTextMutableBuilder[Self <: OkText] (val x: Self) extends AnyVal {
+  extension [Self <: OkText](x: Self) {
     
-    @scala.inline
-    def setDismissText(value: String): Self = StObject.set(x, "dismissText", value.asInstanceOf[js.Any])
+    inline def setDismissText(value: String): Self = StObject.set(x, "dismissText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtra(value: String): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+    inline def setExtra(value: String): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOkText(value: String): Self = StObject.set(x, "okText", value.asInstanceOf[js.Any])
+    inline def setOkText(value: String): Self = StObject.set(x, "okText", value.asInstanceOf[js.Any])
   }
 }

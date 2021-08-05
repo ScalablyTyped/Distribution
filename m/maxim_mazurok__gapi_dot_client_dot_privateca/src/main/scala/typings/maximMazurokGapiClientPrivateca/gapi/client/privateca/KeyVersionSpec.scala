@@ -17,25 +17,19 @@ trait KeyVersionSpec extends StObject {
 }
 object KeyVersionSpec {
   
-  @scala.inline
-  def apply(): KeyVersionSpec = {
+  inline def apply(): KeyVersionSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KeyVersionSpec]
   }
   
-  @scala.inline
-  implicit class KeyVersionSpecMutableBuilder[Self <: KeyVersionSpec] (val x: Self) extends AnyVal {
+  extension [Self <: KeyVersionSpec](x: Self) {
     
-    @scala.inline
-    def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+    inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
+    inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
     
-    @scala.inline
-    def setCloudKmsKeyVersion(value: String): Self = StObject.set(x, "cloudKmsKeyVersion", value.asInstanceOf[js.Any])
+    inline def setCloudKmsKeyVersion(value: String): Self = StObject.set(x, "cloudKmsKeyVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudKmsKeyVersionUndefined: Self = StObject.set(x, "cloudKmsKeyVersion", js.undefined)
+    inline def setCloudKmsKeyVersionUndefined: Self = StObject.set(x, "cloudKmsKeyVersion", js.undefined)
   }
 }

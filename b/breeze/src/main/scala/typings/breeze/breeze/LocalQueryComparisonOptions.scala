@@ -10,16 +10,13 @@ trait LocalQueryComparisonOptions extends StObject {
 }
 object LocalQueryComparisonOptions {
   
-  @scala.inline
-  def apply(setAsDefault: () => Unit): LocalQueryComparisonOptions = {
+  inline def apply(setAsDefault: () => Unit): LocalQueryComparisonOptions = {
     val __obj = js.Dynamic.literal(setAsDefault = js.Any.fromFunction0(setAsDefault))
     __obj.asInstanceOf[LocalQueryComparisonOptions]
   }
   
-  @scala.inline
-  implicit class LocalQueryComparisonOptionsMutableBuilder[Self <: LocalQueryComparisonOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LocalQueryComparisonOptions](x: Self) {
     
-    @scala.inline
-    def setSetAsDefault(value: () => Unit): Self = StObject.set(x, "setAsDefault", js.Any.fromFunction0(value))
+    inline def setSetAsDefault(value: () => Unit): Self = StObject.set(x, "setAsDefault", js.Any.fromFunction0(value))
   }
 }

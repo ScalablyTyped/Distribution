@@ -14,31 +14,23 @@ trait Place extends StObject {
 }
 object Place {
   
-  @scala.inline
-  def apply(): Place = {
+  inline def apply(): Place = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Place]
   }
   
-  @scala.inline
-  implicit class PlaceMutableBuilder[Self <: Place] (val x: Self) extends AnyVal {
+  extension [Self <: Place](x: Self) {
     
-    @scala.inline
-    def setLocation(value: LatLng | LatLngLiteral): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: LatLng | LatLngLiteral): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setPlaceId(value: String): Self = StObject.set(x, "placeId", value.asInstanceOf[js.Any])
+    inline def setPlaceId(value: String): Self = StObject.set(x, "placeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceIdUndefined: Self = StObject.set(x, "placeId", js.undefined)
+    inline def setPlaceIdUndefined: Self = StObject.set(x, "placeId", js.undefined)
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

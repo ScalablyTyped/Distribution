@@ -11,12 +11,9 @@ object onEnterExitRetainMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def registerOnEnterHook(transitionService: TransitionService): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("registerOnEnterHook")(transitionService.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  inline def registerOnEnterHook(transitionService: TransitionService): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("registerOnEnterHook")(transitionService.asInstanceOf[js.Any]).asInstanceOf[js.Function]
   
-  @scala.inline
-  def registerOnExitHook(transitionService: TransitionService): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("registerOnExitHook")(transitionService.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  inline def registerOnExitHook(transitionService: TransitionService): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("registerOnExitHook")(transitionService.asInstanceOf[js.Any]).asInstanceOf[js.Function]
   
-  @scala.inline
-  def registerOnRetainHook(transitionService: TransitionService): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("registerOnRetainHook")(transitionService.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  inline def registerOnRetainHook(transitionService: TransitionService): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("registerOnRetainHook")(transitionService.asInstanceOf[js.Any]).asInstanceOf[js.Function]
 }

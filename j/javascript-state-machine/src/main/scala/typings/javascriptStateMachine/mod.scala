@@ -26,21 +26,18 @@ object mod {
     @JSImport("javascript-state-machine", "Error.INVALID_CALLBACK")
     @js.native
     def INVALID_CALLBACK: Double = js.native
-    @scala.inline
-    def INVALID_CALLBACK_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_CALLBACK")(x.asInstanceOf[js.Any])
+    inline def INVALID_CALLBACK_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_CALLBACK")(x.asInstanceOf[js.Any])
     
     @JSImport("javascript-state-machine", "Error.INVALID_TRANSITION")
     @js.native
     def INVALID_TRANSITION: Double = js.native
-    @scala.inline
-    def INVALID_TRANSITION_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_TRANSITION")(x.asInstanceOf[js.Any])
+    inline def INVALID_TRANSITION_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_TRANSITION")(x.asInstanceOf[js.Any])
     
     // = 100, caller tried to fire an event that was innapropriate in the current state
     @JSImport("javascript-state-machine", "Error.PENDING_TRANSITION")
     @js.native
     def PENDING_TRANSITION: Double = js.native
-    @scala.inline
-    def PENDING_TRANSITION_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PENDING_TRANSITION")(x.asInstanceOf[js.Any])
+    inline def PENDING_TRANSITION_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PENDING_TRANSITION")(x.asInstanceOf[js.Any])
   }
   
   object Result {
@@ -53,28 +50,24 @@ object mod {
     @JSImport("javascript-state-machine", "Result.CANCELLED")
     @js.native
     def CANCELLED: Double = js.native
-    @scala.inline
-    def CANCELLED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CANCELLED")(x.asInstanceOf[js.Any])
+    inline def CANCELLED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CANCELLED")(x.asInstanceOf[js.Any])
     
     // = 1, the event transitioned successfully from one state to another
     @JSImport("javascript-state-machine", "Result.NOTRANSITION")
     @js.native
     def NOTRANSITION: Double = js.native
-    @scala.inline
-    def NOTRANSITION_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOTRANSITION")(x.asInstanceOf[js.Any])
+    inline def NOTRANSITION_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOTRANSITION")(x.asInstanceOf[js.Any])
     
     // = 3, the event was cancelled by the caller in a beforeEvent callback
     @JSImport("javascript-state-machine", "Result.PENDING")
     @js.native
     def PENDING: Double = js.native
-    @scala.inline
-    def PENDING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PENDING")(x.asInstanceOf[js.Any])
+    inline def PENDING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PENDING")(x.asInstanceOf[js.Any])
     
     @JSImport("javascript-state-machine", "Result.SUCCEEDED")
     @js.native
     def SUCCEEDED: Double = js.native
-    @scala.inline
-    def SUCCEEDED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUCCEEDED")(x.asInstanceOf[js.Any])
+    inline def SUCCEEDED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUCCEEDED")(x.asInstanceOf[js.Any])
   }
   
   trait StateMachine extends StObject {
@@ -128,8 +121,7 @@ object mod {
   }
   object StateMachine {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       can: /* evt */ String => Boolean,
       cannot: /* evt */ String => Boolean,
       current: String,
@@ -162,21 +154,18 @@ object mod {
       @JSImport("javascript-state-machine", "StateMachine.Error.INVALID_CALLBACK")
       @js.native
       def INVALID_CALLBACK: Double = js.native
-      @scala.inline
-      def INVALID_CALLBACK_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_CALLBACK")(x.asInstanceOf[js.Any])
+      inline def INVALID_CALLBACK_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_CALLBACK")(x.asInstanceOf[js.Any])
       
       @JSImport("javascript-state-machine", "StateMachine.Error.INVALID_TRANSITION")
       @js.native
       def INVALID_TRANSITION: Double = js.native
-      @scala.inline
-      def INVALID_TRANSITION_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_TRANSITION")(x.asInstanceOf[js.Any])
+      inline def INVALID_TRANSITION_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_TRANSITION")(x.asInstanceOf[js.Any])
       
       // = 100, caller tried to fire an event that was innapropriate in the current state
       @JSImport("javascript-state-machine", "StateMachine.Error.PENDING_TRANSITION")
       @js.native
       def PENDING_TRANSITION: Double = js.native
-      @scala.inline
-      def PENDING_TRANSITION_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PENDING_TRANSITION")(x.asInstanceOf[js.Any])
+      inline def PENDING_TRANSITION_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PENDING_TRANSITION")(x.asInstanceOf[js.Any])
     }
     
     // = 'async'
@@ -190,28 +179,24 @@ object mod {
       @JSImport("javascript-state-machine", "StateMachine.Result.CANCELLED")
       @js.native
       def CANCELLED: Double = js.native
-      @scala.inline
-      def CANCELLED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CANCELLED")(x.asInstanceOf[js.Any])
+      inline def CANCELLED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CANCELLED")(x.asInstanceOf[js.Any])
       
       // = 1, the event transitioned successfully from one state to another
       @JSImport("javascript-state-machine", "StateMachine.Result.NOTRANSITION")
       @js.native
       def NOTRANSITION: Double = js.native
-      @scala.inline
-      def NOTRANSITION_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOTRANSITION")(x.asInstanceOf[js.Any])
+      inline def NOTRANSITION_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOTRANSITION")(x.asInstanceOf[js.Any])
       
       // = 3, the event was cancelled by the caller in a beforeEvent callback
       @JSImport("javascript-state-machine", "StateMachine.Result.PENDING")
       @js.native
       def PENDING: Double = js.native
-      @scala.inline
-      def PENDING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PENDING")(x.asInstanceOf[js.Any])
+      inline def PENDING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PENDING")(x.asInstanceOf[js.Any])
       
       @JSImport("javascript-state-machine", "StateMachine.Result.SUCCEEDED")
       @js.native
       def SUCCEEDED: Double = js.native
-      @scala.inline
-      def SUCCEEDED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUCCEEDED")(x.asInstanceOf[js.Any])
+      inline def SUCCEEDED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUCCEEDED")(x.asInstanceOf[js.Any])
     }
     
     @JSImport("javascript-state-machine", "StateMachine.VERSION")
@@ -223,39 +208,28 @@ object mod {
     @js.native
     val WILDCARD: String = js.native
     
-    @scala.inline
-    def create(config: StateMachineConfig): StateMachine = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any]).asInstanceOf[StateMachine]
-    @scala.inline
-    def create(config: StateMachineConfig, target: StateMachine): StateMachine = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[StateMachine]
+    inline def create(config: StateMachineConfig): StateMachine = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any]).asInstanceOf[StateMachine]
+    inline def create(config: StateMachineConfig, target: StateMachine): StateMachine = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[StateMachine]
     
-    @scala.inline
-    implicit class StateMachineMutableBuilder[Self <: StateMachine] (val x: Self) extends AnyVal {
+    extension [Self <: StateMachine](x: Self) {
       
-      @scala.inline
-      def setCan(value: /* evt */ String => Boolean): Self = StObject.set(x, "can", js.Any.fromFunction1(value))
+      inline def setCan(value: /* evt */ String => Boolean): Self = StObject.set(x, "can", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCannot(value: /* evt */ String => Boolean): Self = StObject.set(x, "cannot", js.Any.fromFunction1(value))
+      inline def setCannot(value: /* evt */ String => Boolean): Self = StObject.set(x, "cannot", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCurrent(value: String): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: String): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(
+      inline def setError(
         value: (/* eventName */ js.UndefOr[String], /* from */ js.UndefOr[String], /* to */ js.UndefOr[String], /* args */ js.UndefOr[js.Array[js.Any]], /* errorCode */ js.UndefOr[Double], /* errorMessage */ js.UndefOr[String], /* ex */ js.UndefOr[Error]) => Unit
       ): Self = StObject.set(x, "error", js.Any.fromFunction7(value))
       
-      @scala.inline
-      def setIs(value: /* state */ String => Boolean): Self = StObject.set(x, "is", js.Any.fromFunction1(value))
+      inline def setIs(value: /* state */ String => Boolean): Self = StObject.set(x, "is", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsFinished(value: /* state */ String => Boolean): Self = StObject.set(x, "isFinished", js.Any.fromFunction1(value))
+      inline def setIsFinished(value: /* state */ String => Boolean): Self = StObject.set(x, "isFinished", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTransition(value: StateMachineTransition): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+      inline def setTransition(value: StateMachineTransition): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitions(value: () => js.Array[String]): Self = StObject.set(x, "transitions", js.Any.fromFunction0(value))
+      inline def setTransitions(value: () => js.Array[String]): Self = StObject.set(x, "transitions", js.Any.fromFunction0(value))
     }
   }
   
@@ -267,10 +241,8 @@ object mod {
   @js.native
   val WILDCARD: String = js.native
   
-  @scala.inline
-  def create(config: StateMachineConfig): StateMachine = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any]).asInstanceOf[StateMachine]
-  @scala.inline
-  def create(config: StateMachineConfig, target: StateMachine): StateMachine = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[StateMachine]
+  inline def create(config: StateMachineConfig): StateMachine = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any]).asInstanceOf[StateMachine]
+  inline def create(config: StateMachineConfig, target: StateMachine): StateMachine = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[StateMachine]
   
   type StateMachineCan = js.Function1[/* evt */ String, Boolean]
   
@@ -299,17 +271,14 @@ object mod {
   }
   object StateMachineConfig {
     
-    @scala.inline
-    def apply(): StateMachineConfig = {
+    inline def apply(): StateMachineConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StateMachineConfig]
     }
     
-    @scala.inline
-    implicit class StateMachineConfigMutableBuilder[Self <: StateMachineConfig] (val x: Self) extends AnyVal {
+    extension [Self <: StateMachineConfig](x: Self) {
       
-      @scala.inline
-      def setCallbacks(
+      inline def setCallbacks(
         value: StringDictionary[
               js.Function4[
                 /* event */ js.UndefOr[String], 
@@ -321,37 +290,27 @@ object mod {
             ]
       ): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallbacksUndefined: Self = StObject.set(x, "callbacks", js.undefined)
+      inline def setCallbacksUndefined: Self = StObject.set(x, "callbacks", js.undefined)
       
-      @scala.inline
-      def setError(
+      inline def setError(
         value: (/* eventName */ js.UndefOr[String], /* from */ js.UndefOr[String], /* to */ js.UndefOr[String], /* args */ js.UndefOr[js.Array[js.Any]], /* errorCode */ js.UndefOr[Double], /* errorMessage */ js.UndefOr[String], /* ex */ js.UndefOr[Error]) => Unit
       ): Self = StObject.set(x, "error", js.Any.fromFunction7(value))
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setEvents(value: js.Array[StateMachineEventDef]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: js.Array[StateMachineEventDef]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+      inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
-      @scala.inline
-      def setEventsVarargs(value: StateMachineEventDef*): Self = StObject.set(x, "events", js.Array(value :_*))
+      inline def setEventsVarargs(value: StateMachineEventDef*): Self = StObject.set(x, "events", js.Array(value :_*))
       
-      @scala.inline
-      def setInitial(value: js.Any): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
+      inline def setInitial(value: js.Any): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
+      inline def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
       
-      @scala.inline
-      def setTarget(value: StateMachine): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: StateMachine): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }
   }
   
@@ -383,23 +342,18 @@ object mod {
   }
   object StateMachineEventDef {
     
-    @scala.inline
-    def apply(from: js.Any, name: String, to: String): StateMachineEventDef = {
+    inline def apply(from: js.Any, name: String, to: String): StateMachineEventDef = {
       val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[StateMachineEventDef]
     }
     
-    @scala.inline
-    implicit class StateMachineEventDefMutableBuilder[Self <: StateMachineEventDef] (val x: Self) extends AnyVal {
+    extension [Self <: StateMachineEventDef](x: Self) {
       
-      @scala.inline
-      def setFrom(value: js.Any): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: js.Any): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     }
   }
   

@@ -31,40 +31,29 @@ trait SchemaDataTransfersListResponse extends StObject {
 }
 object SchemaDataTransfersListResponse {
   
-  @scala.inline
-  def apply(): SchemaDataTransfersListResponse = {
+  inline def apply(): SchemaDataTransfersListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDataTransfersListResponse]
   }
   
-  @scala.inline
-  implicit class SchemaDataTransfersListResponseMutableBuilder[Self <: SchemaDataTransfersListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDataTransfersListResponse](x: Self) {
     
-    @scala.inline
-    def setDataTransfers(value: js.Array[SchemaDataTransfer]): Self = StObject.set(x, "dataTransfers", value.asInstanceOf[js.Any])
+    inline def setDataTransfers(value: js.Array[SchemaDataTransfer]): Self = StObject.set(x, "dataTransfers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataTransfersUndefined: Self = StObject.set(x, "dataTransfers", js.undefined)
+    inline def setDataTransfersUndefined: Self = StObject.set(x, "dataTransfers", js.undefined)
     
-    @scala.inline
-    def setDataTransfersVarargs(value: SchemaDataTransfer*): Self = StObject.set(x, "dataTransfers", js.Array(value :_*))
+    inline def setDataTransfersVarargs(value: SchemaDataTransfer*): Self = StObject.set(x, "dataTransfers", js.Array(value :_*))
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

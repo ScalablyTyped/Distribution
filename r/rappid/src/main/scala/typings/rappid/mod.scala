@@ -52,23 +52,18 @@ object mod {
     }
     object Handle {
       
-      @scala.inline
-      def apply(icon: String, name: String, position: String): Handle = {
+      inline def apply(icon: String, name: String, position: String): Handle = {
         val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
         __obj.asInstanceOf[Handle]
       }
       
-      @scala.inline
-      implicit class HandleMutableBuilder[Self <: Handle] (val x: Self) extends AnyVal {
+      extension [Self <: Handle](x: Self) {
         
-        @scala.inline
-        def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+        inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+        inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       }
     }
   }

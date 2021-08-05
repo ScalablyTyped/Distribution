@@ -20,8 +20,7 @@ trait Framebuffer extends StObject {
 }
 object Framebuffer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bind: () => Unit,
     color: WebGLTexture,
     dispose: () => Unit,
@@ -32,22 +31,16 @@ object Framebuffer {
     __obj.asInstanceOf[Framebuffer]
   }
   
-  @scala.inline
-  implicit class FramebufferMutableBuilder[Self <: Framebuffer] (val x: Self) extends AnyVal {
+  extension [Self <: Framebuffer](x: Self) {
     
-    @scala.inline
-    def setBind(value: () => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction0(value))
+    inline def setBind(value: () => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setColor(value: WebGLTexture): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: WebGLTexture): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHandle(value: WebGLFramebuffer): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+    inline def setHandle(value: WebGLFramebuffer): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncSize(value: (Double, Double) => Unit): Self = StObject.set(x, "syncSize", js.Any.fromFunction2(value))
+    inline def setSyncSize(value: (Double, Double) => Unit): Self = StObject.set(x, "syncSize", js.Any.fromFunction2(value))
   }
 }

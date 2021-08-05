@@ -20,26 +20,20 @@ object argValueMod {
   }
   object ArgValueProps {
     
-    @scala.inline
-    def apply(): ArgValueProps = {
+    inline def apply(): ArgValueProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ArgValueProps]
     }
     
-    @scala.inline
-    implicit class ArgValuePropsMutableBuilder[Self <: ArgValueProps] (val x: Self) extends AnyVal {
+    extension [Self <: ArgValueProps](x: Self) {
       
-      @scala.inline
-      def setInitialExpandedArgs(value: Boolean): Self = StObject.set(x, "initialExpandedArgs", value.asInstanceOf[js.Any])
+      inline def setInitialExpandedArgs(value: Boolean): Self = StObject.set(x, "initialExpandedArgs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialExpandedArgsUndefined: Self = StObject.set(x, "initialExpandedArgs", js.undefined)
+      inline def setInitialExpandedArgsUndefined: Self = StObject.set(x, "initialExpandedArgs", js.undefined)
       
-      @scala.inline
-      def setValue(value: PropSummaryValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: PropSummaryValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

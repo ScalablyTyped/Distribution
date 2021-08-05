@@ -32,8 +32,7 @@ trait GitForkSyncRequest extends StObject {
 }
 object GitForkSyncRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     detailedStatus: GitForkOperationStatusDetail,
     operationId: Double,
@@ -45,28 +44,20 @@ object GitForkSyncRequest {
     __obj.asInstanceOf[GitForkSyncRequest]
   }
   
-  @scala.inline
-  implicit class GitForkSyncRequestMutableBuilder[Self <: GitForkSyncRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GitForkSyncRequest](x: Self) {
     
-    @scala.inline
-    def setDetailedStatus(value: GitForkOperationStatusDetail): Self = StObject.set(x, "detailedStatus", value.asInstanceOf[js.Any])
+    inline def setDetailedStatus(value: GitForkOperationStatusDetail): Self = StObject.set(x, "detailedStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationId(value: Double): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
+    inline def setOperationId(value: Double): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: GlobalGitRepositoryKey): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: GlobalGitRepositoryKey): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceToTargetRefs(value: js.Array[SourceToTargetRef]): Self = StObject.set(x, "sourceToTargetRefs", value.asInstanceOf[js.Any])
+    inline def setSourceToTargetRefs(value: js.Array[SourceToTargetRef]): Self = StObject.set(x, "sourceToTargetRefs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceToTargetRefsVarargs(value: SourceToTargetRef*): Self = StObject.set(x, "sourceToTargetRefs", js.Array(value :_*))
+    inline def setSourceToTargetRefsVarargs(value: SourceToTargetRef*): Self = StObject.set(x, "sourceToTargetRefs", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: GitAsyncOperationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: GitAsyncOperationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

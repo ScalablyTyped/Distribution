@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LogicalBooleanOperatorType extends StObject
 object LogicalBooleanOperatorType {
   
-  @scala.inline
-  def AND: typings.slonik.slonikStrings.AND = "AND".asInstanceOf[typings.slonik.slonikStrings.AND]
+  inline def AND: typings.slonik.slonikStrings.AND = "AND".asInstanceOf[typings.slonik.slonikStrings.AND]
   
-  @scala.inline
-  def OR: typings.slonik.slonikStrings.OR = "OR".asInstanceOf[typings.slonik.slonikStrings.OR]
+  inline def OR: typings.slonik.slonikStrings.OR = "OR".asInstanceOf[typings.slonik.slonikStrings.OR]
 }

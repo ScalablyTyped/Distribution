@@ -53,8 +53,7 @@ object mod {
   }
   object CollapseCallbackArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       containerHeight: Double,
       contentHeight: Double,
       isFullyClosed: Boolean,
@@ -65,23 +64,17 @@ object mod {
       __obj.asInstanceOf[CollapseCallbackArgs]
     }
     
-    @scala.inline
-    implicit class CollapseCallbackArgsMutableBuilder[Self <: CollapseCallbackArgs] (val x: Self) extends AnyVal {
+    extension [Self <: CollapseCallbackArgs](x: Self) {
       
-      @scala.inline
-      def setContainerHeight(value: Double): Self = StObject.set(x, "containerHeight", value.asInstanceOf[js.Any])
+      inline def setContainerHeight(value: Double): Self = StObject.set(x, "containerHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentHeight(value: Double): Self = StObject.set(x, "contentHeight", value.asInstanceOf[js.Any])
+      inline def setContentHeight(value: Double): Self = StObject.set(x, "contentHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFullyClosed(value: Boolean): Self = StObject.set(x, "isFullyClosed", value.asInstanceOf[js.Any])
+      inline def setIsFullyClosed(value: Boolean): Self = StObject.set(x, "isFullyClosed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFullyOpened(value: Boolean): Self = StObject.set(x, "isFullyOpened", value.asInstanceOf[js.Any])
+      inline def setIsFullyOpened(value: Boolean): Self = StObject.set(x, "isFullyOpened", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOpened(value: Boolean): Self = StObject.set(x, "isOpened", value.asInstanceOf[js.Any])
+      inline def setIsOpened(value: Boolean): Self = StObject.set(x, "isOpened", value.asInstanceOf[js.Any])
     }
   }
   
@@ -113,53 +106,38 @@ object mod {
   }
   object CollapseProps {
     
-    @scala.inline
-    def apply(isOpened: Boolean): CollapseProps = {
+    inline def apply(isOpened: Boolean): CollapseProps = {
       val __obj = js.Dynamic.literal(isOpened = isOpened.asInstanceOf[js.Any])
       __obj.asInstanceOf[CollapseProps]
     }
     
-    @scala.inline
-    implicit class CollapsePropsMutableBuilder[Self <: CollapseProps] (val x: Self) extends AnyVal {
+    extension [Self <: CollapseProps](x: Self) {
       
-      @scala.inline
-      def setCheckTimeout(value: Double): Self = StObject.set(x, "checkTimeout", value.asInstanceOf[js.Any])
+      inline def setCheckTimeout(value: Double): Self = StObject.set(x, "checkTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckTimeoutUndefined: Self = StObject.set(x, "checkTimeout", js.undefined)
+      inline def setCheckTimeoutUndefined: Self = StObject.set(x, "checkTimeout", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setInitialStyle(value: Height): Self = StObject.set(x, "initialStyle", value.asInstanceOf[js.Any])
+      inline def setInitialStyle(value: Height): Self = StObject.set(x, "initialStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialStyleUndefined: Self = StObject.set(x, "initialStyle", js.undefined)
+      inline def setInitialStyleUndefined: Self = StObject.set(x, "initialStyle", js.undefined)
       
-      @scala.inline
-      def setIsOpened(value: Boolean): Self = StObject.set(x, "isOpened", value.asInstanceOf[js.Any])
+      inline def setIsOpened(value: Boolean): Self = StObject.set(x, "isOpened", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnRest(value: /* args */ CollapseCallbackArgs => Unit): Self = StObject.set(x, "onRest", js.Any.fromFunction1(value))
+      inline def setOnRest(value: /* args */ CollapseCallbackArgs => Unit): Self = StObject.set(x, "onRest", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRestUndefined: Self = StObject.set(x, "onRest", js.undefined)
+      inline def setOnRestUndefined: Self = StObject.set(x, "onRest", js.undefined)
       
-      @scala.inline
-      def setOnWork(value: /* args */ CollapseCallbackArgs => Unit): Self = StObject.set(x, "onWork", js.Any.fromFunction1(value))
+      inline def setOnWork(value: /* args */ CollapseCallbackArgs => Unit): Self = StObject.set(x, "onWork", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnWorkUndefined: Self = StObject.set(x, "onWork", js.undefined)
+      inline def setOnWorkUndefined: Self = StObject.set(x, "onWork", js.undefined)
       
-      @scala.inline
-      def setTheme(value: typings.reactCollapse.anon.Collapse): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: typings.reactCollapse.anon.Collapse): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
 }

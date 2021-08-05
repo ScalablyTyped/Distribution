@@ -30,70 +30,49 @@ trait NewRowIndex extends StObject {
 }
 object NewRowIndex {
   
-  @scala.inline
-  def apply(): NewRowIndex = {
+  inline def apply(): NewRowIndex = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NewRowIndex]
   }
   
-  @scala.inline
-  implicit class NewRowIndexMutableBuilder[Self <: NewRowIndex] (val x: Self) extends AnyVal {
+  extension [Self <: NewRowIndex](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
-    @scala.inline
-    def setComponent(value: dxDataGrid): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: dxDataGrid): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
-    @scala.inline
-    def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    @scala.inline
-    def setEvent(value: event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
-    @scala.inline
-    def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    @scala.inline
-    def setNewRowIndex(value: Double): Self = StObject.set(x, "newRowIndex", value.asInstanceOf[js.Any])
+    inline def setNewRowIndex(value: Double): Self = StObject.set(x, "newRowIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewRowIndexUndefined: Self = StObject.set(x, "newRowIndex", js.undefined)
+    inline def setNewRowIndexUndefined: Self = StObject.set(x, "newRowIndex", js.undefined)
     
-    @scala.inline
-    def setPrevRowIndex(value: Double): Self = StObject.set(x, "prevRowIndex", value.asInstanceOf[js.Any])
+    inline def setPrevRowIndex(value: Double): Self = StObject.set(x, "prevRowIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevRowIndexUndefined: Self = StObject.set(x, "prevRowIndex", js.undefined)
+    inline def setPrevRowIndexUndefined: Self = StObject.set(x, "prevRowIndex", js.undefined)
     
-    @scala.inline
-    def setRowElement(value: dxElement): Self = StObject.set(x, "rowElement", value.asInstanceOf[js.Any])
+    inline def setRowElement(value: dxElement): Self = StObject.set(x, "rowElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowElementUndefined: Self = StObject.set(x, "rowElement", js.undefined)
+    inline def setRowElementUndefined: Self = StObject.set(x, "rowElement", js.undefined)
     
-    @scala.inline
-    def setRows(value: js.Array[dxDataGridRowObject]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[dxDataGridRowObject]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    @scala.inline
-    def setRowsVarargs(value: dxDataGridRowObject*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: dxDataGridRowObject*): Self = StObject.set(x, "rows", js.Array(value :_*))
   }
 }

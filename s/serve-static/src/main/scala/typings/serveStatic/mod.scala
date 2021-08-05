@@ -16,10 +16,8 @@ object mod {
     * The file to serve will be determined by combining req.url with the provided root directory.
     * When a file is not found, instead of sending a 404 response, this module will instead call next() to move on to the next middleware, allowing for stacking and fall-backs.
     */
-  @scala.inline
-  def apply[R /* <: ServerResponse */](root: String): RequestHandler[R] = ^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[R]]
-  @scala.inline
-  def apply[R /* <: ServerResponse */](root: String, options: ServeStaticOptions[R]): RequestHandler[R] = (^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[R]]
+  inline def apply[R /* <: ServerResponse */](root: String): RequestHandler[R] = ^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[R]]
+  inline def apply[R /* <: ServerResponse */](root: String, options: ServeStaticOptions[R]): RequestHandler[R] = (^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[R]]
   
   @JSImport("serve-static", JSImport.Namespace)
   @js.native
@@ -31,16 +29,12 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def define(mimes: TypeMap): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(mimes.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def define(mimes: TypeMap, force: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(mimes.asInstanceOf[js.Any], force.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def define(mimes: TypeMap): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(mimes.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def define(mimes: TypeMap, force: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(mimes.asInstanceOf[js.Any], force.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def getExtension(mime: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtension")(mime.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def getExtension(mime: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtension")(mime.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     
-    @scala.inline
-    def getType(path: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getType")(path.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def getType(path: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getType")(path.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   type RequestHandler[R /* <: ServerResponse */] = js.Function3[/* request */ IncomingMessage, /* response */ R, /* next */ js.Function0[Unit], js.Any]
@@ -129,86 +123,60 @@ object mod {
   }
   object ServeStaticOptions {
     
-    @scala.inline
-    def apply[R /* <: ServerResponse */](): ServeStaticOptions[R] = {
+    inline def apply[R /* <: ServerResponse */](): ServeStaticOptions[R] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ServeStaticOptions[R]]
     }
     
-    @scala.inline
-    implicit class ServeStaticOptionsMutableBuilder[Self <: ServeStaticOptions[?], R /* <: ServerResponse */] (val x: Self & ServeStaticOptions[R]) extends AnyVal {
+    extension [Self <: ServeStaticOptions[?], R /* <: ServerResponse */](x: Self & ServeStaticOptions[R]) {
       
-      @scala.inline
-      def setCacheControl(value: Boolean): Self = StObject.set(x, "cacheControl", value.asInstanceOf[js.Any])
+      inline def setCacheControl(value: Boolean): Self = StObject.set(x, "cacheControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheControlUndefined: Self = StObject.set(x, "cacheControl", js.undefined)
+      inline def setCacheControlUndefined: Self = StObject.set(x, "cacheControl", js.undefined)
       
-      @scala.inline
-      def setDotfiles(value: String): Self = StObject.set(x, "dotfiles", value.asInstanceOf[js.Any])
+      inline def setDotfiles(value: String): Self = StObject.set(x, "dotfiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDotfilesUndefined: Self = StObject.set(x, "dotfiles", js.undefined)
+      inline def setDotfilesUndefined: Self = StObject.set(x, "dotfiles", js.undefined)
       
-      @scala.inline
-      def setEtag(value: Boolean): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+      inline def setEtag(value: Boolean): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+      inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
       
-      @scala.inline
-      def setExtensions(value: js.Array[String] | `false`): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: js.Array[String] | `false`): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+      inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      @scala.inline
-      def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
       
-      @scala.inline
-      def setFallthrough(value: Boolean): Self = StObject.set(x, "fallthrough", value.asInstanceOf[js.Any])
+      inline def setFallthrough(value: Boolean): Self = StObject.set(x, "fallthrough", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallthroughUndefined: Self = StObject.set(x, "fallthrough", js.undefined)
+      inline def setFallthroughUndefined: Self = StObject.set(x, "fallthrough", js.undefined)
       
-      @scala.inline
-      def setImmutable(value: Boolean): Self = StObject.set(x, "immutable", value.asInstanceOf[js.Any])
+      inline def setImmutable(value: Boolean): Self = StObject.set(x, "immutable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImmutableUndefined: Self = StObject.set(x, "immutable", js.undefined)
+      inline def setImmutableUndefined: Self = StObject.set(x, "immutable", js.undefined)
       
-      @scala.inline
-      def setIndex(value: Boolean | String | js.Array[String]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Boolean | String | js.Array[String]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
+      inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
       
-      @scala.inline
-      def setLastModified(value: Boolean): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
+      inline def setLastModified(value: Boolean): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastModifiedUndefined: Self = StObject.set(x, "lastModified", js.undefined)
+      inline def setLastModifiedUndefined: Self = StObject.set(x, "lastModified", js.undefined)
       
-      @scala.inline
-      def setMaxAge(value: Double | String): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      inline def setMaxAge(value: Double | String): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+      inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
       
-      @scala.inline
-      def setRedirect(value: Boolean): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
+      inline def setRedirect(value: Boolean): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
+      inline def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
       
-      @scala.inline
-      def setSetHeaders(value: (/* res */ R, /* path */ String, /* stat */ js.Any) => js.Any): Self = StObject.set(x, "setHeaders", js.Any.fromFunction3(value))
+      inline def setSetHeaders(value: (/* res */ R, /* path */ String, /* stat */ js.Any) => js.Any): Self = StObject.set(x, "setHeaders", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSetHeadersUndefined: Self = StObject.set(x, "setHeaders", js.undefined)
+      inline def setSetHeadersUndefined: Self = StObject.set(x, "setHeaders", js.undefined)
     }
   }
 }

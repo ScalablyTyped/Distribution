@@ -20,9 +20,9 @@ object selectCellEditorMod {
     @JSName("afterGuiAttached")
     def afterGuiAttached_MSelectCellEditor(): Unit = js.native
     
-    var eSelect: js.Any = js.native
+    /* private */ var eSelect: js.Any = js.native
     
-    var focusAfterAttached: js.Any = js.native
+    /* private */ var focusAfterAttached: js.Any = js.native
     
     @JSName("focusIn")
     def focusIn_MSelectCellEditor(): Unit = js.native
@@ -31,12 +31,12 @@ object selectCellEditorMod {
     /* CompleteClass */
     override def getValue(): js.Any = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
     @JSName("init")
     def init_MSelectCellEditor(params: ISelectCellEditorParams): Unit = js.native
     
-    var valueFormatterService: js.Any = js.native
+    /* private */ var valueFormatterService: js.Any = js.native
   }
   
   @js.native

@@ -20,8 +20,7 @@ trait GetGithubActionsBillingUser extends StObject {
 }
 object GetGithubActionsBillingUser {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getGithubActionsBillingOrg: `651`,
     getGithubActionsBillingUser: `652`,
     getGithubPackagesBillingOrg: `653`,
@@ -33,25 +32,18 @@ object GetGithubActionsBillingUser {
     __obj.asInstanceOf[GetGithubActionsBillingUser]
   }
   
-  @scala.inline
-  implicit class GetGithubActionsBillingUserMutableBuilder[Self <: GetGithubActionsBillingUser] (val x: Self) extends AnyVal {
+  extension [Self <: GetGithubActionsBillingUser](x: Self) {
     
-    @scala.inline
-    def setGetGithubActionsBillingOrg(value: `651`): Self = StObject.set(x, "getGithubActionsBillingOrg", value.asInstanceOf[js.Any])
+    inline def setGetGithubActionsBillingOrg(value: `651`): Self = StObject.set(x, "getGithubActionsBillingOrg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetGithubActionsBillingUser(value: `652`): Self = StObject.set(x, "getGithubActionsBillingUser", value.asInstanceOf[js.Any])
+    inline def setGetGithubActionsBillingUser(value: `652`): Self = StObject.set(x, "getGithubActionsBillingUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetGithubPackagesBillingOrg(value: `653`): Self = StObject.set(x, "getGithubPackagesBillingOrg", value.asInstanceOf[js.Any])
+    inline def setGetGithubPackagesBillingOrg(value: `653`): Self = StObject.set(x, "getGithubPackagesBillingOrg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetGithubPackagesBillingUser(value: `654`): Self = StObject.set(x, "getGithubPackagesBillingUser", value.asInstanceOf[js.Any])
+    inline def setGetGithubPackagesBillingUser(value: `654`): Self = StObject.set(x, "getGithubPackagesBillingUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetSharedStorageBillingOrg(value: `655`): Self = StObject.set(x, "getSharedStorageBillingOrg", value.asInstanceOf[js.Any])
+    inline def setGetSharedStorageBillingOrg(value: `655`): Self = StObject.set(x, "getSharedStorageBillingOrg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetSharedStorageBillingUser(value: `656`): Self = StObject.set(x, "getSharedStorageBillingUser", value.asInstanceOf[js.Any])
+    inline def setGetSharedStorageBillingUser(value: `656`): Self = StObject.set(x, "getSharedStorageBillingUser", value.asInstanceOf[js.Any])
   }
 }

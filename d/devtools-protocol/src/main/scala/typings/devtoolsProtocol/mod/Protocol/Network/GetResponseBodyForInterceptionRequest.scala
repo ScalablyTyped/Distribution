@@ -13,16 +13,13 @@ trait GetResponseBodyForInterceptionRequest extends StObject {
 }
 object GetResponseBodyForInterceptionRequest {
   
-  @scala.inline
-  def apply(interceptionId: InterceptionId): GetResponseBodyForInterceptionRequest = {
+  inline def apply(interceptionId: InterceptionId): GetResponseBodyForInterceptionRequest = {
     val __obj = js.Dynamic.literal(interceptionId = interceptionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResponseBodyForInterceptionRequest]
   }
   
-  @scala.inline
-  implicit class GetResponseBodyForInterceptionRequestMutableBuilder[Self <: GetResponseBodyForInterceptionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetResponseBodyForInterceptionRequest](x: Self) {
     
-    @scala.inline
-    def setInterceptionId(value: InterceptionId): Self = StObject.set(x, "interceptionId", value.asInstanceOf[js.Any])
+    inline def setInterceptionId(value: InterceptionId): Self = StObject.set(x, "interceptionId", value.asInstanceOf[js.Any])
   }
 }

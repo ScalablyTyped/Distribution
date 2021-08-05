@@ -12,19 +12,15 @@ trait MaterialIndexStart extends StObject {
 }
 object MaterialIndexStart {
   
-  @scala.inline
-  def apply(materialIndex: Double, start: Double): MaterialIndexStart = {
+  inline def apply(materialIndex: Double, start: Double): MaterialIndexStart = {
     val __obj = js.Dynamic.literal(materialIndex = materialIndex.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaterialIndexStart]
   }
   
-  @scala.inline
-  implicit class MaterialIndexStartMutableBuilder[Self <: MaterialIndexStart] (val x: Self) extends AnyVal {
+  extension [Self <: MaterialIndexStart](x: Self) {
     
-    @scala.inline
-    def setMaterialIndex(value: Double): Self = StObject.set(x, "materialIndex", value.asInstanceOf[js.Any])
+    inline def setMaterialIndex(value: Double): Self = StObject.set(x, "materialIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

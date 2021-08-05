@@ -49,8 +49,7 @@ object selectionMod {
   @js.native
   val VL_SELECTION_RESOLVE: /* "vlSelectionResolve" */ String = js.native
   
-  @scala.inline
-  def forEachSelection(
+  inline def forEachSelection(
     model: Model,
     cb: js.Function2[
       /* selCmpt */ SelectionComponent[SelectionType], 
@@ -59,13 +58,10 @@ object selectionMod {
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachSelection")(model.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def requiresSelectionId(model: Model): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("requiresSelectionId")(model.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def requiresSelectionId(model: Model): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("requiresSelectionId")(model.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def unitName(model: Model): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unitName")(model.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def unitName(model: Model, hasEscape: Escape): String = (^.asInstanceOf[js.Dynamic].applyDynamic("unitName")(model.asInstanceOf[js.Any], hasEscape.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def unitName(model: Model): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unitName")(model.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def unitName(model: Model, hasEscape: Escape): String = (^.asInstanceOf[js.Dynamic].applyDynamic("unitName")(model.asInstanceOf[js.Any], hasEscape.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait SelectionCompiler[T /* <: SelectionType */] extends StObject {
     
@@ -93,8 +89,7 @@ object selectionMod {
   }
   object SelectionCompiler {
     
-    @scala.inline
-    def apply[T /* <: SelectionType */](
+    inline def apply[T /* <: SelectionType */](
       modifyExpr: (UnitModel, SelectionComponent[T]) => String,
       signals: (UnitModel, SelectionComponent[T]) => js.Array[NewSignal]
     ): SelectionCompiler[T] = {
@@ -102,30 +97,23 @@ object selectionMod {
       __obj.asInstanceOf[SelectionCompiler[T]]
     }
     
-    @scala.inline
-    implicit class SelectionCompilerMutableBuilder[Self <: SelectionCompiler[?], T /* <: SelectionType */] (val x: Self & SelectionCompiler[T]) extends AnyVal {
+    extension [Self <: SelectionCompiler[?], T /* <: SelectionType */](x: Self & SelectionCompiler[T]) {
       
-      @scala.inline
-      def setMarks(
+      inline def setMarks(
         value: (/* model */ UnitModel, /* selCmpt */ SelectionComponent[T], /* marks */ js.Array[js.Any]) => js.Array[js.Any]
       ): Self = StObject.set(x, "marks", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setMarksUndefined: Self = StObject.set(x, "marks", js.undefined)
+      inline def setMarksUndefined: Self = StObject.set(x, "marks", js.undefined)
       
-      @scala.inline
-      def setModifyExpr(value: (UnitModel, SelectionComponent[T]) => String): Self = StObject.set(x, "modifyExpr", js.Any.fromFunction2(value))
+      inline def setModifyExpr(value: (UnitModel, SelectionComponent[T]) => String): Self = StObject.set(x, "modifyExpr", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSignals(value: (UnitModel, SelectionComponent[T]) => js.Array[NewSignal]): Self = StObject.set(x, "signals", js.Any.fromFunction2(value))
+      inline def setSignals(value: (UnitModel, SelectionComponent[T]) => js.Array[NewSignal]): Self = StObject.set(x, "signals", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTopLevelSignals(
+      inline def setTopLevelSignals(
         value: (/* model */ Model, /* selCmpt */ SelectionComponent[T], /* signals */ js.Array[NewSignal]) => js.Array[NewSignal]
       ): Self = StObject.set(x, "topLevelSignals", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setTopLevelSignalsUndefined: Self = StObject.set(x, "topLevelSignals", js.undefined)
+      inline def setTopLevelSignalsUndefined: Self = StObject.set(x, "topLevelSignals", js.undefined)
     }
   }
   
@@ -165,8 +153,7 @@ object selectionMod {
   }
   object SelectionComponent {
     
-    @scala.inline
-    def apply[T /* <: SelectionType */](
+    inline def apply[T /* <: SelectionType */](
       empty: all | none,
       events: js.Array[Stream],
       materialized: OutputNode,
@@ -179,95 +166,65 @@ object selectionMod {
       __obj.asInstanceOf[SelectionComponent[T]]
     }
     
-    @scala.inline
-    implicit class SelectionComponentMutableBuilder[Self <: SelectionComponent[?], T /* <: SelectionType */] (val x: Self & SelectionComponent[T]) extends AnyVal {
+    extension [Self <: SelectionComponent[?], T /* <: SelectionType */](x: Self & SelectionComponent[T]) {
       
-      @scala.inline
-      def setBind(value: scales | Binding | Dict[Binding] | LegendBinding): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
+      inline def setBind(value: scales | Binding | Dict[Binding] | LegendBinding): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBindUndefined: Self = StObject.set(x, "bind", js.undefined)
+      inline def setBindUndefined: Self = StObject.set(x, "bind", js.undefined)
       
-      @scala.inline
-      def setClear(value: js.Any): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
+      inline def setClear(value: js.Any): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
+      inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
       
-      @scala.inline
-      def setEmpty(value: all | none): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
+      inline def setEmpty(value: all | none): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvents(value: js.Array[Stream]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: js.Array[Stream]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsVarargs(value: Stream*): Self = StObject.set(x, "events", js.Array(value :_*))
+      inline def setEventsVarargs(value: Stream*): Self = StObject.set(x, "events", js.Array(value :_*))
       
-      @scala.inline
-      def setInit(value: js.Array[SelectionInit | js.Array[SelectionInit] | SelectionInitInterval]): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
+      inline def setInit(value: js.Array[SelectionInit | js.Array[SelectionInit] | SelectionInitInterval]): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+      inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
       
-      @scala.inline
-      def setInitVarargs(value: (SelectionInit | js.Array[SelectionInit] | SelectionInitInterval)*): Self = StObject.set(x, "init", js.Array(value :_*))
+      inline def setInitVarargs(value: (SelectionInit | js.Array[SelectionInit] | SelectionInitInterval)*): Self = StObject.set(x, "init", js.Array(value :_*))
       
-      @scala.inline
-      def setMark(value: BrushConfig): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
+      inline def setMark(value: BrushConfig): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkUndefined: Self = StObject.set(x, "mark", js.undefined)
+      inline def setMarkUndefined: Self = StObject.set(x, "mark", js.undefined)
       
-      @scala.inline
-      def setMaterialized(value: OutputNode): Self = StObject.set(x, "materialized", value.asInstanceOf[js.Any])
+      inline def setMaterialized(value: OutputNode): Self = StObject.set(x, "materialized", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNearest(value: js.Any): Self = StObject.set(x, "nearest", value.asInstanceOf[js.Any])
+      inline def setNearest(value: js.Any): Self = StObject.set(x, "nearest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNearestUndefined: Self = StObject.set(x, "nearest", js.undefined)
+      inline def setNearestUndefined: Self = StObject.set(x, "nearest", js.undefined)
       
-      @scala.inline
-      def setProject(value: SelectionProjectionComponent): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: SelectionProjectionComponent): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+      inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
       
-      @scala.inline
-      def setResolve(value: SelectionResolution): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
+      inline def setResolve(value: SelectionResolution): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScales(value: js.Array[SelectionProjection]): Self = StObject.set(x, "scales", value.asInstanceOf[js.Any])
+      inline def setScales(value: js.Array[SelectionProjection]): Self = StObject.set(x, "scales", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScalesUndefined: Self = StObject.set(x, "scales", js.undefined)
+      inline def setScalesUndefined: Self = StObject.set(x, "scales", js.undefined)
       
-      @scala.inline
-      def setScalesVarargs(value: SelectionProjection*): Self = StObject.set(x, "scales", js.Array(value :_*))
+      inline def setScalesVarargs(value: SelectionProjection*): Self = StObject.set(x, "scales", js.Array(value :_*))
       
-      @scala.inline
-      def setToggle(value: js.Any): Self = StObject.set(x, "toggle", value.asInstanceOf[js.Any])
+      inline def setToggle(value: js.Any): Self = StObject.set(x, "toggle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
+      inline def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
       
-      @scala.inline
-      def setTranslate(value: js.Any): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+      inline def setTranslate(value: js.Any): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
+      inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
       
-      @scala.inline
-      def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoom(value: js.Any): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+      inline def setZoom(value: js.Any): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
+      inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
     }
   }
 }

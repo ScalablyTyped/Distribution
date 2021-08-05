@@ -12,19 +12,15 @@ trait WebExtensionManifestTelemetryPublicKey extends StObject {
 }
 object WebExtensionManifestTelemetryPublicKey {
   
-  @scala.inline
-  def apply(id: String, key: WebExtensionManifestTelemetryPublicKeyKey): WebExtensionManifestTelemetryPublicKey = {
+  inline def apply(id: String, key: WebExtensionManifestTelemetryPublicKeyKey): WebExtensionManifestTelemetryPublicKey = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebExtensionManifestTelemetryPublicKey]
   }
   
-  @scala.inline
-  implicit class WebExtensionManifestTelemetryPublicKeyMutableBuilder[Self <: WebExtensionManifestTelemetryPublicKey] (val x: Self) extends AnyVal {
+  extension [Self <: WebExtensionManifestTelemetryPublicKey](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: WebExtensionManifestTelemetryPublicKeyKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: WebExtensionManifestTelemetryPublicKeyKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

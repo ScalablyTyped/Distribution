@@ -13,19 +13,15 @@ trait DeleteLocalGatewayRouteTableVpcAssociationResult extends StObject {
 }
 object DeleteLocalGatewayRouteTableVpcAssociationResult {
   
-  @scala.inline
-  def apply(): DeleteLocalGatewayRouteTableVpcAssociationResult = {
+  inline def apply(): DeleteLocalGatewayRouteTableVpcAssociationResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteLocalGatewayRouteTableVpcAssociationResult]
   }
   
-  @scala.inline
-  implicit class DeleteLocalGatewayRouteTableVpcAssociationResultMutableBuilder[Self <: DeleteLocalGatewayRouteTableVpcAssociationResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteLocalGatewayRouteTableVpcAssociationResult](x: Self) {
     
-    @scala.inline
-    def setLocalGatewayRouteTableVpcAssociation(value: LocalGatewayRouteTableVpcAssociation): Self = StObject.set(x, "LocalGatewayRouteTableVpcAssociation", value.asInstanceOf[js.Any])
+    inline def setLocalGatewayRouteTableVpcAssociation(value: LocalGatewayRouteTableVpcAssociation): Self = StObject.set(x, "LocalGatewayRouteTableVpcAssociation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalGatewayRouteTableVpcAssociationUndefined: Self = StObject.set(x, "LocalGatewayRouteTableVpcAssociation", js.undefined)
+    inline def setLocalGatewayRouteTableVpcAssociationUndefined: Self = StObject.set(x, "LocalGatewayRouteTableVpcAssociation", js.undefined)
   }
 }

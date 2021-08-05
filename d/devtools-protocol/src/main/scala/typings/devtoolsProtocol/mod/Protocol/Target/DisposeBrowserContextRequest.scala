@@ -11,16 +11,13 @@ trait DisposeBrowserContextRequest extends StObject {
 }
 object DisposeBrowserContextRequest {
   
-  @scala.inline
-  def apply(browserContextId: BrowserContextID): DisposeBrowserContextRequest = {
+  inline def apply(browserContextId: BrowserContextID): DisposeBrowserContextRequest = {
     val __obj = js.Dynamic.literal(browserContextId = browserContextId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisposeBrowserContextRequest]
   }
   
-  @scala.inline
-  implicit class DisposeBrowserContextRequestMutableBuilder[Self <: DisposeBrowserContextRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisposeBrowserContextRequest](x: Self) {
     
-    @scala.inline
-    def setBrowserContextId(value: BrowserContextID): Self = StObject.set(x, "browserContextId", value.asInstanceOf[js.Any])
+    inline def setBrowserContextId(value: BrowserContextID): Self = StObject.set(x, "browserContextId", value.asInstanceOf[js.Any])
   }
 }

@@ -12,22 +12,17 @@ trait Association extends StObject {
 }
 object Association {
   
-  @scala.inline
-  def apply(identifier: String): Association = {
+  inline def apply(identifier: String): Association = {
     val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[Association]
   }
   
-  @scala.inline
-  implicit class AssociationMutableBuilder[Self <: Association] (val x: Self) extends AnyVal {
+  extension [Self <: Association](x: Self) {
     
-    @scala.inline
-    def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }
 }

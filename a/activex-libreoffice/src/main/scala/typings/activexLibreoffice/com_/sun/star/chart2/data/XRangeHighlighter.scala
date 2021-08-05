@@ -26,8 +26,7 @@ trait XRangeHighlighter
 }
 object XRangeHighlighter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     SelectedRanges: SafeArray[HighlightedRange],
     acquire: () => Unit,
     addSelectionChangeListener: XSelectionChangeListener => Unit,
@@ -40,19 +39,14 @@ object XRangeHighlighter {
     __obj.asInstanceOf[XRangeHighlighter]
   }
   
-  @scala.inline
-  implicit class XRangeHighlighterMutableBuilder[Self <: XRangeHighlighter] (val x: Self) extends AnyVal {
+  extension [Self <: XRangeHighlighter](x: Self) {
     
-    @scala.inline
-    def setAddSelectionChangeListener(value: XSelectionChangeListener => Unit): Self = StObject.set(x, "addSelectionChangeListener", js.Any.fromFunction1(value))
+    inline def setAddSelectionChangeListener(value: XSelectionChangeListener => Unit): Self = StObject.set(x, "addSelectionChangeListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSelectedRanges(value: () => SafeArray[HighlightedRange]): Self = StObject.set(x, "getSelectedRanges", js.Any.fromFunction0(value))
+    inline def setGetSelectedRanges(value: () => SafeArray[HighlightedRange]): Self = StObject.set(x, "getSelectedRanges", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveSelectionChangeListener(value: XSelectionChangeListener => Unit): Self = StObject.set(x, "removeSelectionChangeListener", js.Any.fromFunction1(value))
+    inline def setRemoveSelectionChangeListener(value: XSelectionChangeListener => Unit): Self = StObject.set(x, "removeSelectionChangeListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSelectedRanges(value: SafeArray[HighlightedRange]): Self = StObject.set(x, "SelectedRanges", value.asInstanceOf[js.Any])
+    inline def setSelectedRanges(value: SafeArray[HighlightedRange]): Self = StObject.set(x, "SelectedRanges", value.asInstanceOf[js.Any])
   }
 }

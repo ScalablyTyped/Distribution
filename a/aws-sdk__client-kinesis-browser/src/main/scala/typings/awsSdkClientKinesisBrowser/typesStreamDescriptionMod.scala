@@ -72,8 +72,7 @@ object typesStreamDescriptionMod {
   }
   object StreamDescription {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       EnhancedMonitoring: js.Array[EnhancedMetrics] | Iterable[EnhancedMetrics],
       HasMoreShards: Boolean,
       RetentionPeriodHours: Double,
@@ -87,50 +86,35 @@ object typesStreamDescriptionMod {
       __obj.asInstanceOf[StreamDescription]
     }
     
-    @scala.inline
-    implicit class StreamDescriptionMutableBuilder[Self <: StreamDescription] (val x: Self) extends AnyVal {
+    extension [Self <: StreamDescription](x: Self) {
       
-      @scala.inline
-      def setEncryptionType(value: NONE | KMS | String): Self = StObject.set(x, "EncryptionType", value.asInstanceOf[js.Any])
+      inline def setEncryptionType(value: NONE | KMS | String): Self = StObject.set(x, "EncryptionType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionTypeUndefined: Self = StObject.set(x, "EncryptionType", js.undefined)
+      inline def setEncryptionTypeUndefined: Self = StObject.set(x, "EncryptionType", js.undefined)
       
-      @scala.inline
-      def setEnhancedMonitoring(value: js.Array[EnhancedMetrics] | Iterable[EnhancedMetrics]): Self = StObject.set(x, "EnhancedMonitoring", value.asInstanceOf[js.Any])
+      inline def setEnhancedMonitoring(value: js.Array[EnhancedMetrics] | Iterable[EnhancedMetrics]): Self = StObject.set(x, "EnhancedMonitoring", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnhancedMonitoringVarargs(value: EnhancedMetrics*): Self = StObject.set(x, "EnhancedMonitoring", js.Array(value :_*))
+      inline def setEnhancedMonitoringVarargs(value: EnhancedMetrics*): Self = StObject.set(x, "EnhancedMonitoring", js.Array(value :_*))
       
-      @scala.inline
-      def setHasMoreShards(value: Boolean): Self = StObject.set(x, "HasMoreShards", value.asInstanceOf[js.Any])
+      inline def setHasMoreShards(value: Boolean): Self = StObject.set(x, "HasMoreShards", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyId(value: String): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
+      inline def setKeyId(value: String): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
+      inline def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
       
-      @scala.inline
-      def setRetentionPeriodHours(value: Double): Self = StObject.set(x, "RetentionPeriodHours", value.asInstanceOf[js.Any])
+      inline def setRetentionPeriodHours(value: Double): Self = StObject.set(x, "RetentionPeriodHours", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShards(value: js.Array[Shard] | Iterable[Shard]): Self = StObject.set(x, "Shards", value.asInstanceOf[js.Any])
+      inline def setShards(value: js.Array[Shard] | Iterable[Shard]): Self = StObject.set(x, "Shards", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShardsVarargs(value: Shard*): Self = StObject.set(x, "Shards", js.Array(value :_*))
+      inline def setShardsVarargs(value: Shard*): Self = StObject.set(x, "Shards", js.Array(value :_*))
       
-      @scala.inline
-      def setStreamARN(value: String): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
+      inline def setStreamARN(value: String): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamCreationTimestamp(value: Date | String | Double): Self = StObject.set(x, "StreamCreationTimestamp", value.asInstanceOf[js.Any])
+      inline def setStreamCreationTimestamp(value: Date | String | Double): Self = StObject.set(x, "StreamCreationTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamName(value: String): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
+      inline def setStreamName(value: String): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamStatus(value: CREATING | DELETING | ACTIVE | UPDATING | String): Self = StObject.set(x, "StreamStatus", value.asInstanceOf[js.Any])
+      inline def setStreamStatus(value: CREATING | DELETING | ACTIVE | UPDATING | String): Self = StObject.set(x, "StreamStatus", value.asInstanceOf[js.Any])
     }
   }
   
@@ -158,8 +142,7 @@ object typesStreamDescriptionMod {
   }
   object UnmarshalledStreamDescription {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       EnhancedMonitoring: js.Array[UnmarshalledEnhancedMetrics],
       HasMoreShards: Boolean,
       RetentionPeriodHours: Double,
@@ -173,23 +156,17 @@ object typesStreamDescriptionMod {
       __obj.asInstanceOf[UnmarshalledStreamDescription]
     }
     
-    @scala.inline
-    implicit class UnmarshalledStreamDescriptionMutableBuilder[Self <: UnmarshalledStreamDescription] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledStreamDescription](x: Self) {
       
-      @scala.inline
-      def setEnhancedMonitoring(value: js.Array[UnmarshalledEnhancedMetrics]): Self = StObject.set(x, "EnhancedMonitoring", value.asInstanceOf[js.Any])
+      inline def setEnhancedMonitoring(value: js.Array[UnmarshalledEnhancedMetrics]): Self = StObject.set(x, "EnhancedMonitoring", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnhancedMonitoringVarargs(value: UnmarshalledEnhancedMetrics*): Self = StObject.set(x, "EnhancedMonitoring", js.Array(value :_*))
+      inline def setEnhancedMonitoringVarargs(value: UnmarshalledEnhancedMetrics*): Self = StObject.set(x, "EnhancedMonitoring", js.Array(value :_*))
       
-      @scala.inline
-      def setShards(value: js.Array[UnmarshalledShard]): Self = StObject.set(x, "Shards", value.asInstanceOf[js.Any])
+      inline def setShards(value: js.Array[UnmarshalledShard]): Self = StObject.set(x, "Shards", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShardsVarargs(value: UnmarshalledShard*): Self = StObject.set(x, "Shards", js.Array(value :_*))
+      inline def setShardsVarargs(value: UnmarshalledShard*): Self = StObject.set(x, "Shards", js.Array(value :_*))
       
-      @scala.inline
-      def setStreamCreationTimestamp(value: Date): Self = StObject.set(x, "StreamCreationTimestamp", value.asInstanceOf[js.Any])
+      inline def setStreamCreationTimestamp(value: Date): Self = StObject.set(x, "StreamCreationTimestamp", value.asInstanceOf[js.Any])
     }
   }
 }

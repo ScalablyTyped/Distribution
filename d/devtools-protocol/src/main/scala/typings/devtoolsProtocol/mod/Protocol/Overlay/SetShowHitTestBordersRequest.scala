@@ -13,16 +13,13 @@ trait SetShowHitTestBordersRequest extends StObject {
 }
 object SetShowHitTestBordersRequest {
   
-  @scala.inline
-  def apply(show: Boolean): SetShowHitTestBordersRequest = {
+  inline def apply(show: Boolean): SetShowHitTestBordersRequest = {
     val __obj = js.Dynamic.literal(show = show.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetShowHitTestBordersRequest]
   }
   
-  @scala.inline
-  implicit class SetShowHitTestBordersRequestMutableBuilder[Self <: SetShowHitTestBordersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetShowHitTestBordersRequest](x: Self) {
     
-    @scala.inline
-    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
   }
 }

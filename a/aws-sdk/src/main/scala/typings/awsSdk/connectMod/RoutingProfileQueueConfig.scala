@@ -23,22 +23,17 @@ trait RoutingProfileQueueConfig extends StObject {
 }
 object RoutingProfileQueueConfig {
   
-  @scala.inline
-  def apply(Delay: Delay, Priority: Priority, QueueReference: RoutingProfileQueueReference): RoutingProfileQueueConfig = {
+  inline def apply(Delay: Delay, Priority: Priority, QueueReference: RoutingProfileQueueReference): RoutingProfileQueueConfig = {
     val __obj = js.Dynamic.literal(Delay = Delay.asInstanceOf[js.Any], Priority = Priority.asInstanceOf[js.Any], QueueReference = QueueReference.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoutingProfileQueueConfig]
   }
   
-  @scala.inline
-  implicit class RoutingProfileQueueConfigMutableBuilder[Self <: RoutingProfileQueueConfig] (val x: Self) extends AnyVal {
+  extension [Self <: RoutingProfileQueueConfig](x: Self) {
     
-    @scala.inline
-    def setDelay(value: Delay): Self = StObject.set(x, "Delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Delay): Self = StObject.set(x, "Delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriority(value: Priority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Priority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueReference(value: RoutingProfileQueueReference): Self = StObject.set(x, "QueueReference", value.asInstanceOf[js.Any])
+    inline def setQueueReference(value: RoutingProfileQueueReference): Self = StObject.set(x, "QueueReference", value.asInstanceOf[js.Any])
   }
 }

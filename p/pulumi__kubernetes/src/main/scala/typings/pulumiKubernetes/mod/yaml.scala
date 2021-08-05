@@ -21,8 +21,8 @@ object yaml {
   @js.native
   abstract class CollectionComponentResource protected ()
     extends typings.pulumiKubernetes.yamlMod.CollectionComponentResource {
-    protected def this(resourceType: String, name: String, config: js.Any) = this()
-    protected def this(resourceType: String, name: String, config: js.Any, opts: ComponentResourceOptions) = this()
+    /* protected */ def this(resourceType: String, name: String, config: js.Any) = this()
+    /* protected */ def this(resourceType: String, name: String, config: js.Any, opts: ComponentResourceOptions) = this()
   }
   
   @JSImport("@pulumi/kubernetes", "yaml.ConfigFile")
@@ -57,8 +57,6 @@ object yaml {
     def this(name: String, config: ConfigGroupOpts, opts: ComponentResourceOptions) = this()
   }
   
-  @scala.inline
-  def parse(config: ConfigGroupOpts): Output_[StringDictionary[CustomResource]] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(config.asInstanceOf[js.Any]).asInstanceOf[Output_[StringDictionary[CustomResource]]]
-  @scala.inline
-  def parse(config: ConfigGroupOpts, opts: CustomResourceOptions): Output_[StringDictionary[CustomResource]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(config.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Output_[StringDictionary[CustomResource]]]
+  inline def parse(config: ConfigGroupOpts): Output_[StringDictionary[CustomResource]] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(config.asInstanceOf[js.Any]).asInstanceOf[Output_[StringDictionary[CustomResource]]]
+  inline def parse(config: ConfigGroupOpts, opts: CustomResourceOptions): Output_[StringDictionary[CustomResource]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(config.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Output_[StringDictionary[CustomResource]]]
 }

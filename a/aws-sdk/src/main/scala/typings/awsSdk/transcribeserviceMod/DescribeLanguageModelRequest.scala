@@ -13,16 +13,13 @@ trait DescribeLanguageModelRequest extends StObject {
 }
 object DescribeLanguageModelRequest {
   
-  @scala.inline
-  def apply(ModelName: ModelName): DescribeLanguageModelRequest = {
+  inline def apply(ModelName: ModelName): DescribeLanguageModelRequest = {
     val __obj = js.Dynamic.literal(ModelName = ModelName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeLanguageModelRequest]
   }
   
-  @scala.inline
-  implicit class DescribeLanguageModelRequestMutableBuilder[Self <: DescribeLanguageModelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeLanguageModelRequest](x: Self) {
     
-    @scala.inline
-    def setModelName(value: ModelName): Self = StObject.set(x, "ModelName", value.asInstanceOf[js.Any])
+    inline def setModelName(value: ModelName): Self = StObject.set(x, "ModelName", value.asInstanceOf[js.Any])
   }
 }

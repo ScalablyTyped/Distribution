@@ -16,22 +16,17 @@ trait Annotation extends StObject {
 }
 object Annotation {
   
-  @scala.inline
-  def apply(description: String, tags: js.Array[Tag]): Annotation = {
+  inline def apply(description: String, tags: js.Array[Tag]): Annotation = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[Annotation]
   }
   
-  @scala.inline
-  implicit class AnnotationMutableBuilder[Self <: Annotation] (val x: Self) extends AnyVal {
+  extension [Self <: Annotation](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

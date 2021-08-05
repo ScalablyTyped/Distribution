@@ -18,31 +18,23 @@ trait DescribeClustersRequest extends StObject {
 }
 object DescribeClustersRequest {
   
-  @scala.inline
-  def apply(): DescribeClustersRequest = {
+  inline def apply(): DescribeClustersRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeClustersRequest]
   }
   
-  @scala.inline
-  implicit class DescribeClustersRequestMutableBuilder[Self <: DescribeClustersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeClustersRequest](x: Self) {
     
-    @scala.inline
-    def setClusters(value: StringList): Self = StObject.set(x, "clusters", value.asInstanceOf[js.Any])
+    inline def setClusters(value: StringList): Self = StObject.set(x, "clusters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClustersUndefined: Self = StObject.set(x, "clusters", js.undefined)
+    inline def setClustersUndefined: Self = StObject.set(x, "clusters", js.undefined)
     
-    @scala.inline
-    def setClustersVarargs(value: String*): Self = StObject.set(x, "clusters", js.Array(value :_*))
+    inline def setClustersVarargs(value: String*): Self = StObject.set(x, "clusters", js.Array(value :_*))
     
-    @scala.inline
-    def setInclude(value: ClusterFieldList): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    inline def setInclude(value: ClusterFieldList): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+    inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
-    @scala.inline
-    def setIncludeVarargs(value: ClusterField*): Self = StObject.set(x, "include", js.Array(value :_*))
+    inline def setIncludeVarargs(value: ClusterField*): Self = StObject.set(x, "include", js.Array(value :_*))
   }
 }

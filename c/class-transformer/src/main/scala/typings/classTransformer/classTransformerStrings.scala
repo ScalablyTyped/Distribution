@@ -8,16 +8,13 @@ object classTransformerStrings {
   
   @js.native
   sealed trait excludeAll extends StObject
-  @scala.inline
-  def excludeAll: excludeAll = "excludeAll".asInstanceOf[excludeAll]
+  inline def excludeAll: excludeAll = "excludeAll".asInstanceOf[excludeAll]
   
   @js.native
   sealed trait exposeAll extends StObject
-  @scala.inline
-  def exposeAll: exposeAll = "exposeAll".asInstanceOf[exposeAll]
+  inline def exposeAll: exposeAll = "exposeAll".asInstanceOf[exposeAll]
   
   @js.native
   sealed trait none extends StObject
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  inline def none: none = "none".asInstanceOf[none]
 }

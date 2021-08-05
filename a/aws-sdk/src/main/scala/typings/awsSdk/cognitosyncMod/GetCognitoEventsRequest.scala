@@ -13,16 +13,13 @@ trait GetCognitoEventsRequest extends StObject {
 }
 object GetCognitoEventsRequest {
   
-  @scala.inline
-  def apply(IdentityPoolId: IdentityPoolId): GetCognitoEventsRequest = {
+  inline def apply(IdentityPoolId: IdentityPoolId): GetCognitoEventsRequest = {
     val __obj = js.Dynamic.literal(IdentityPoolId = IdentityPoolId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCognitoEventsRequest]
   }
   
-  @scala.inline
-  implicit class GetCognitoEventsRequestMutableBuilder[Self <: GetCognitoEventsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetCognitoEventsRequest](x: Self) {
     
-    @scala.inline
-    def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
+    inline def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
   }
 }

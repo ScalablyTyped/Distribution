@@ -12,19 +12,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class NgIf[T] protected () extends StObject {
   def this(_viewContainer: ViewContainerRef, templateRef: TemplateRef[NgIfContext[T]]) = this()
   
-  var _context: js.Any = js.native
+  /* private */ var _context: js.Any = js.native
   
-  var _elseTemplateRef: js.Any = js.native
+  /* private */ var _elseTemplateRef: js.Any = js.native
   
-  var _elseViewRef: js.Any = js.native
+  /* private */ var _elseViewRef: js.Any = js.native
   
-  var _thenTemplateRef: js.Any = js.native
+  /* private */ var _thenTemplateRef: js.Any = js.native
   
-  var _thenViewRef: js.Any = js.native
+  /* private */ var _thenViewRef: js.Any = js.native
   
-  var _updateView: js.Any = js.native
+  /* private */ var _updateView: js.Any = js.native
   
-  var _viewContainer: js.Any = js.native
+  /* private */ var _viewContainer: js.Any = js.native
   
   /**
     * A template to show if the condition expression evaluates to false.
@@ -54,8 +54,7 @@ object NgIf {
     * The presence of this method is a signal to the Ivy template type-check compiler that the
     * `NgIf` structural directive renders its template with a specific context type.
     */
-  @scala.inline
-  def ngTemplateContextGuard[T](dir: NgIf[T], ctx: js.Any): /* is @angular/common.@angular/common.NgIfContext<std.Exclude<T, false | 0 | '' | null | undefined>> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ngTemplateContextGuard")(dir.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[/* is @angular/common.@angular/common.NgIfContext<std.Exclude<T, false | 0 | '' | null | undefined>> */ Boolean]
+  inline def ngTemplateContextGuard[T](dir: NgIf[T], ctx: js.Any): /* is @angular/common.@angular/common.NgIfContext<std.Exclude<T, false | 0 | '' | null | undefined>> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ngTemplateContextGuard")(dir.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[/* is @angular/common.@angular/common.NgIfContext<std.Exclude<T, false | 0 | '' | null | undefined>> */ Boolean]
   
   /**
     * Assert the correct type of the expression bound to the `ngIf` input within the template.
@@ -68,6 +67,5 @@ object NgIf {
   @JSImport("@angular/common", "NgIf.ngTemplateGuard_ngIf")
   @js.native
   def ngTemplateGuard_ngIf: binding = js.native
-  @scala.inline
-  def ngTemplateGuard_ngIf_=(x: binding): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngTemplateGuard_ngIf")(x.asInstanceOf[js.Any])
+  inline def ngTemplateGuard_ngIf_=(x: binding): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngTemplateGuard_ngIf")(x.asInstanceOf[js.Any])
 }

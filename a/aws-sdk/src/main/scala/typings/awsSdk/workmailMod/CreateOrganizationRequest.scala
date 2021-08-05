@@ -38,49 +38,35 @@ trait CreateOrganizationRequest extends StObject {
 }
 object CreateOrganizationRequest {
   
-  @scala.inline
-  def apply(Alias: OrganizationName): CreateOrganizationRequest = {
+  inline def apply(Alias: OrganizationName): CreateOrganizationRequest = {
     val __obj = js.Dynamic.literal(Alias = Alias.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateOrganizationRequest]
   }
   
-  @scala.inline
-  implicit class CreateOrganizationRequestMutableBuilder[Self <: CreateOrganizationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateOrganizationRequest](x: Self) {
     
-    @scala.inline
-    def setAlias(value: OrganizationName): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
+    inline def setAlias(value: OrganizationName): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientToken(value: IdempotencyClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: IdempotencyClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
     
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
+    inline def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
     
-    @scala.inline
-    def setDomains(value: Domains): Self = StObject.set(x, "Domains", value.asInstanceOf[js.Any])
+    inline def setDomains(value: Domains): Self = StObject.set(x, "Domains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainsUndefined: Self = StObject.set(x, "Domains", js.undefined)
+    inline def setDomainsUndefined: Self = StObject.set(x, "Domains", js.undefined)
     
-    @scala.inline
-    def setDomainsVarargs(value: Domain*): Self = StObject.set(x, "Domains", js.Array(value :_*))
+    inline def setDomainsVarargs(value: Domain*): Self = StObject.set(x, "Domains", js.Array(value :_*))
     
-    @scala.inline
-    def setEnableInteroperability(value: Boolean): Self = StObject.set(x, "EnableInteroperability", value.asInstanceOf[js.Any])
+    inline def setEnableInteroperability(value: Boolean): Self = StObject.set(x, "EnableInteroperability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableInteroperabilityUndefined: Self = StObject.set(x, "EnableInteroperability", js.undefined)
+    inline def setEnableInteroperabilityUndefined: Self = StObject.set(x, "EnableInteroperability", js.undefined)
     
-    @scala.inline
-    def setKmsKeyArn(value: KmsKeyArn): Self = StObject.set(x, "KmsKeyArn", value.asInstanceOf[js.Any])
+    inline def setKmsKeyArn(value: KmsKeyArn): Self = StObject.set(x, "KmsKeyArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyArnUndefined: Self = StObject.set(x, "KmsKeyArn", js.undefined)
+    inline def setKmsKeyArnUndefined: Self = StObject.set(x, "KmsKeyArn", js.undefined)
   }
 }

@@ -18,22 +18,17 @@ trait DocumentRequires extends StObject {
 }
 object DocumentRequires {
   
-  @scala.inline
-  def apply(Name: DocumentARN): DocumentRequires = {
+  inline def apply(Name: DocumentARN): DocumentRequires = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentRequires]
   }
   
-  @scala.inline
-  implicit class DocumentRequiresMutableBuilder[Self <: DocumentRequires] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentRequires](x: Self) {
     
-    @scala.inline
-    def setName(value: DocumentARN): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: DocumentARN): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: DocumentVersion): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: DocumentVersion): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

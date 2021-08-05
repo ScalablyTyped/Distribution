@@ -40,8 +40,7 @@ trait Nested extends StObject {
 }
 object Nested {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contain: Include,
     contains: Include,
     include: Include,
@@ -53,25 +52,18 @@ object Nested {
     __obj.asInstanceOf[Nested]
   }
   
-  @scala.inline
-  implicit class NestedMutableBuilder[Self <: Nested] (val x: Self) extends AnyVal {
+  extension [Self <: Nested](x: Self) {
     
-    @scala.inline
-    def setContain(value: Include): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
+    inline def setContain(value: Include): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContains(value: Include): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
+    inline def setContains(value: Include): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInclude(value: Include): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    inline def setInclude(value: Include): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludes(value: Include): Self = StObject.set(x, "includes", value.asInstanceOf[js.Any])
+    inline def setIncludes(value: Include): Self = StObject.set(x, "includes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembers(value: (/* set */ js.Array[js.Any], /* message */ js.UndefOr[String]) => Assertion): Self = StObject.set(x, "members", js.Any.fromFunction2(value))
+    inline def setMembers(value: (/* set */ js.Array[js.Any], /* message */ js.UndefOr[String]) => Assertion): Self = StObject.set(x, "members", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setProperty(value: Property): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: Property): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
   }
 }

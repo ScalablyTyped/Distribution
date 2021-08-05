@@ -11,8 +11,7 @@ object visitorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def visit(node: Node, observer: Observer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("visit")(node.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def visit(node: Node, observer: Observer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("visit")(node.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait Observer extends StObject {
     
@@ -22,26 +21,20 @@ object visitorMod {
   }
   object Observer {
     
-    @scala.inline
-    def apply(): Observer = {
+    inline def apply(): Observer = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Observer]
     }
     
-    @scala.inline
-    implicit class ObserverMutableBuilder[Self <: Observer] (val x: Self) extends AnyVal {
+    extension [Self <: Observer](x: Self) {
       
-      @scala.inline
-      def setEnter(value: /* node */ Node => Unit): Self = StObject.set(x, "enter", js.Any.fromFunction1(value))
+      inline def setEnter(value: /* node */ Node => Unit): Self = StObject.set(x, "enter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
+      inline def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
       
-      @scala.inline
-      def setExit(value: /* node */ Node => Unit): Self = StObject.set(x, "exit", js.Any.fromFunction1(value))
+      inline def setExit(value: /* node */ Node => Unit): Self = StObject.set(x, "exit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
+      inline def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
     }
   }
 }

@@ -95,8 +95,7 @@ trait UITableCell extends StObject {
 }
 object UITableCell {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     centerAligned: () => Unit,
     dismissOnTap: Boolean,
     leftAligned: () => Unit,
@@ -112,37 +111,26 @@ object UITableCell {
     __obj.asInstanceOf[UITableCell]
   }
   
-  @scala.inline
-  implicit class UITableCellMutableBuilder[Self <: UITableCell] (val x: Self) extends AnyVal {
+  extension [Self <: UITableCell](x: Self) {
     
-    @scala.inline
-    def setCenterAligned(value: () => Unit): Self = StObject.set(x, "centerAligned", js.Any.fromFunction0(value))
+    inline def setCenterAligned(value: () => Unit): Self = StObject.set(x, "centerAligned", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDismissOnTap(value: Boolean): Self = StObject.set(x, "dismissOnTap", value.asInstanceOf[js.Any])
+    inline def setDismissOnTap(value: Boolean): Self = StObject.set(x, "dismissOnTap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftAligned(value: () => Unit): Self = StObject.set(x, "leftAligned", js.Any.fromFunction0(value))
+    inline def setLeftAligned(value: () => Unit): Self = StObject.set(x, "leftAligned", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnTap(value: () => Unit): Self = StObject.set(x, "onTap", js.Any.fromFunction0(value))
+    inline def setOnTap(value: () => Unit): Self = StObject.set(x, "onTap", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRightAligned(value: () => Unit): Self = StObject.set(x, "rightAligned", js.Any.fromFunction0(value))
+    inline def setRightAligned(value: () => Unit): Self = StObject.set(x, "rightAligned", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSubtitleColor(value: Color): Self = StObject.set(x, "subtitleColor", value.asInstanceOf[js.Any])
+    inline def setSubtitleColor(value: Color): Self = StObject.set(x, "subtitleColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtitleFont(value: Font): Self = StObject.set(x, "subtitleFont", value.asInstanceOf[js.Any])
+    inline def setSubtitleFont(value: Font): Self = StObject.set(x, "subtitleFont", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleColor(value: Color): Self = StObject.set(x, "titleColor", value.asInstanceOf[js.Any])
+    inline def setTitleColor(value: Color): Self = StObject.set(x, "titleColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleFont(value: Font): Self = StObject.set(x, "titleFont", value.asInstanceOf[js.Any])
+    inline def setTitleFont(value: Font): Self = StObject.set(x, "titleFont", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthWeight(value: Double): Self = StObject.set(x, "widthWeight", value.asInstanceOf[js.Any])
+    inline def setWidthWeight(value: Double): Self = StObject.set(x, "widthWeight", value.asInstanceOf[js.Any])
   }
 }

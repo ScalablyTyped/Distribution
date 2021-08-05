@@ -15,17 +15,13 @@ object coreMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def highlight(value: String, name: String): js.Array[RefractorNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("highlight")(value.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Array[RefractorNode]]
+  inline def highlight(value: String, name: String): js.Array[RefractorNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("highlight")(value.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Array[RefractorNode]]
   
-  @scala.inline
-  def listLanguages(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("listLanguages")().asInstanceOf[js.Array[String]]
+  inline def listLanguages(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("listLanguages")().asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def register(syntax: RefractorSyntax): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(syntax.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def register(syntax: RefractorSyntax): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(syntax.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def registered(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("registered")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def registered(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("registered")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   object AST {
     
@@ -43,24 +39,19 @@ object coreMod {
     }
     object Element {
       
-      @scala.inline
-      def apply(children: js.Array[RefractorNode], properties: Properties, tagName: String): Element = {
+      inline def apply(children: js.Array[RefractorNode], properties: Properties, tagName: String): Element = {
         val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any])
         __obj.updateDynamic("type")("element")
         __obj.asInstanceOf[Element]
       }
       
-      @scala.inline
-      implicit class ElementMutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
+      extension [Self <: Element](x: Self) {
         
-        @scala.inline
-        def setProperties(value: Properties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+        inline def setProperties(value: Properties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+        inline def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setType(value: element): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: element): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
@@ -72,23 +63,18 @@ object coreMod {
     }
     object Properties {
       
-      @scala.inline
-      def apply(): Properties = {
+      inline def apply(): Properties = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Properties]
       }
       
-      @scala.inline
-      implicit class PropertiesMutableBuilder[Self <: Properties] (val x: Self) extends AnyVal {
+      extension [Self <: Properties](x: Self) {
         
-        @scala.inline
-        def setClassName(value: js.Array[String]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+        inline def setClassName(value: js.Array[String]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+        inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
         
-        @scala.inline
-        def setClassNameVarargs(value: String*): Self = StObject.set(x, "className", js.Array(value :_*))
+        inline def setClassNameVarargs(value: String*): Self = StObject.set(x, "className", js.Array(value :_*))
       }
     }
     
@@ -98,8 +84,7 @@ object coreMod {
          with RefractorNode
     object Text {
       
-      @scala.inline
-      def apply(`type`: String, value: String): Text = {
+      inline def apply(`type`: String, value: String): Text = {
         val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[Text]
@@ -114,18 +99,15 @@ object coreMod {
       }
       object Node {
         
-        @scala.inline
-        def apply(`type`: String): Node = {
+        inline def apply(`type`: String): Node = {
           val __obj = js.Dynamic.literal()
           __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
           __obj.asInstanceOf[Node]
         }
         
-        @scala.inline
-        implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
+        extension [Self <: Node](x: Self) {
           
-          @scala.inline
-          def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+          inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         }
       }
       
@@ -137,21 +119,17 @@ object coreMod {
       }
       object Parent {
         
-        @scala.inline
-        def apply(children: js.Array[RefractorNode], `type`: String): Parent = {
+        inline def apply(children: js.Array[RefractorNode], `type`: String): Parent = {
           val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
           __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
           __obj.asInstanceOf[Parent]
         }
         
-        @scala.inline
-        implicit class ParentMutableBuilder[Self <: Parent] (val x: Self) extends AnyVal {
+        extension [Self <: Parent](x: Self) {
           
-          @scala.inline
-          def setChildren(value: js.Array[RefractorNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+          inline def setChildren(value: js.Array[RefractorNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setChildrenVarargs(value: RefractorNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+          inline def setChildrenVarargs(value: RefractorNode*): Self = StObject.set(x, "children", js.Array(value :_*))
         }
       }
       
@@ -163,18 +141,15 @@ object coreMod {
       }
       object Text {
         
-        @scala.inline
-        def apply(`type`: String, value: String): typings.refractor.coreMod.AST.Unist.Text = {
+        inline def apply(`type`: String, value: String): typings.refractor.coreMod.AST.Unist.Text = {
           val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
           __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.refractor.coreMod.AST.Unist.Text]
         }
         
-        @scala.inline
-        implicit class TextMutableBuilder[Self <: typings.refractor.coreMod.AST.Unist.Text] (val x: Self) extends AnyVal {
+        extension [Self <: typings.refractor.coreMod.AST.Unist.Text](x: Self) {
           
-          @scala.inline
-          def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+          inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         }
       }
     }
@@ -187,15 +162,13 @@ object coreMod {
   trait RefractorNode extends StObject
   object RefractorNode {
     
-    @scala.inline
-    def Element(children: js.Array[RefractorNode], properties: Properties, tagName: String): typings.refractor.coreMod.AST.Element = {
+    inline def Element(children: js.Array[RefractorNode], properties: Properties, tagName: String): typings.refractor.coreMod.AST.Element = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("element")
       __obj.asInstanceOf[typings.refractor.coreMod.AST.Element]
     }
     
-    @scala.inline
-    def Text(`type`: String, value: String): typings.refractor.coreMod.AST.Text = {
+    inline def Text(`type`: String, value: String): typings.refractor.coreMod.AST.Text = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.refractor.coreMod.AST.Text]

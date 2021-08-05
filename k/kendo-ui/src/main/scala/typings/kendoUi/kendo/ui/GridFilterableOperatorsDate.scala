@@ -25,61 +25,43 @@ trait GridFilterableOperatorsDate extends StObject {
 }
 object GridFilterableOperatorsDate {
   
-  @scala.inline
-  def apply(): GridFilterableOperatorsDate = {
+  inline def apply(): GridFilterableOperatorsDate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridFilterableOperatorsDate]
   }
   
-  @scala.inline
-  implicit class GridFilterableOperatorsDateMutableBuilder[Self <: GridFilterableOperatorsDate] (val x: Self) extends AnyVal {
+  extension [Self <: GridFilterableOperatorsDate](x: Self) {
     
-    @scala.inline
-    def setEq_(value: String): Self = StObject.set(x, "eq", value.asInstanceOf[js.Any])
+    inline def setEq_(value: String): Self = StObject.set(x, "eq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEq_Undefined: Self = StObject.set(x, "eq", js.undefined)
+    inline def setEq_Undefined: Self = StObject.set(x, "eq", js.undefined)
     
-    @scala.inline
-    def setGt(value: String): Self = StObject.set(x, "gt", value.asInstanceOf[js.Any])
+    inline def setGt(value: String): Self = StObject.set(x, "gt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGtUndefined: Self = StObject.set(x, "gt", js.undefined)
+    inline def setGtUndefined: Self = StObject.set(x, "gt", js.undefined)
     
-    @scala.inline
-    def setGte(value: String): Self = StObject.set(x, "gte", value.asInstanceOf[js.Any])
+    inline def setGte(value: String): Self = StObject.set(x, "gte", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGteUndefined: Self = StObject.set(x, "gte", js.undefined)
+    inline def setGteUndefined: Self = StObject.set(x, "gte", js.undefined)
     
-    @scala.inline
-    def setIsnotnull(value: String): Self = StObject.set(x, "isnotnull", value.asInstanceOf[js.Any])
+    inline def setIsnotnull(value: String): Self = StObject.set(x, "isnotnull", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsnotnullUndefined: Self = StObject.set(x, "isnotnull", js.undefined)
+    inline def setIsnotnullUndefined: Self = StObject.set(x, "isnotnull", js.undefined)
     
-    @scala.inline
-    def setIsnull(value: String): Self = StObject.set(x, "isnull", value.asInstanceOf[js.Any])
+    inline def setIsnull(value: String): Self = StObject.set(x, "isnull", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsnullUndefined: Self = StObject.set(x, "isnull", js.undefined)
+    inline def setIsnullUndefined: Self = StObject.set(x, "isnull", js.undefined)
     
-    @scala.inline
-    def setLt(value: String): Self = StObject.set(x, "lt", value.asInstanceOf[js.Any])
+    inline def setLt(value: String): Self = StObject.set(x, "lt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLtUndefined: Self = StObject.set(x, "lt", js.undefined)
+    inline def setLtUndefined: Self = StObject.set(x, "lt", js.undefined)
     
-    @scala.inline
-    def setLte(value: String): Self = StObject.set(x, "lte", value.asInstanceOf[js.Any])
+    inline def setLte(value: String): Self = StObject.set(x, "lte", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLteUndefined: Self = StObject.set(x, "lte", js.undefined)
+    inline def setLteUndefined: Self = StObject.set(x, "lte", js.undefined)
     
-    @scala.inline
-    def setNeq(value: String): Self = StObject.set(x, "neq", value.asInstanceOf[js.Any])
+    inline def setNeq(value: String): Self = StObject.set(x, "neq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeqUndefined: Self = StObject.set(x, "neq", js.undefined)
+    inline def setNeqUndefined: Self = StObject.set(x, "neq", js.undefined)
   }
 }

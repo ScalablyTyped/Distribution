@@ -28,8 +28,7 @@ trait Nuke
 }
 object Nuke {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     effects: js.Array[RoomObjectEffect],
     id: Id[Nuke],
     launchRoomName: String,
@@ -40,16 +39,12 @@ object Nuke {
     __obj.asInstanceOf[Nuke]
   }
   
-  @scala.inline
-  implicit class NukeMutableBuilder[Self <: Nuke] (val x: Self) extends AnyVal {
+  extension [Self <: Nuke](x: Self) {
     
-    @scala.inline
-    def setId(value: Id[Nuke]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Id[Nuke]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchRoomName(value: String): Self = StObject.set(x, "launchRoomName", value.asInstanceOf[js.Any])
+    inline def setLaunchRoomName(value: String): Self = StObject.set(x, "launchRoomName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeToLand(value: Double): Self = StObject.set(x, "timeToLand", value.asInstanceOf[js.Any])
+    inline def setTimeToLand(value: Double): Self = StObject.set(x, "timeToLand", value.asInstanceOf[js.Any])
   }
 }

@@ -51,15 +51,13 @@ object uishellMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def Content[E /* <: js.Object */](props: FCProps[ContentProps[E]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def Content[E /* <: js.Object */](props: FCProps[ContentProps[E]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   @JSImport("carbon-components-react/lib/components/UIShell", "Header")
   @js.native
   val Header: FC[HeaderProps] = js.native
   
-  @scala.inline
-  def HeaderContainer[RP](props: FCProps[HeaderContainerProps[RP]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("HeaderContainer")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def HeaderContainer[RP](props: FCProps[HeaderContainerProps[RP]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("HeaderContainer")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   @JSImport("carbon-components-react/lib/components/UIShell", "HeaderGlobalAction")
   @js.native
@@ -69,18 +67,15 @@ object uishellMod {
   @js.native
   val HeaderGlobalBar: FC[HeaderGlobalBarProps] = js.native
   
-  @scala.inline
-  def HeaderMenu[RP](props: HeaderMenuProps[RP]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("HeaderMenu")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def HeaderMenu[RP](props: HeaderMenuProps[RP]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("HeaderMenu")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   @JSImport("carbon-components-react/lib/components/UIShell", "HeaderMenuButton")
   @js.native
   val HeaderMenuButton: FC[HeaderMenuButtonProps] = js.native
   
-  @scala.inline
-  def HeaderMenuItem[E /* <: js.Object */, R](props: ForwardRefProps[R, HeaderMenuItemProps[E]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("HeaderMenuItem")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def HeaderMenuItem[E /* <: js.Object */, R](props: ForwardRefProps[R, HeaderMenuItemProps[E]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("HeaderMenuItem")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def HeaderName[E /* <: js.Object */](props: FCProps[HeaderNameProps[E]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("HeaderName")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def HeaderName[E /* <: js.Object */](props: FCProps[HeaderNameProps[E]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("HeaderName")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   @JSImport("carbon-components-react/lib/components/UIShell", "HeaderNavigation")
   @js.native
@@ -122,8 +117,7 @@ object uishellMod {
   @js.native
   val SideNavItems: FC[SideNavItemsProps] = js.native
   
-  @scala.inline
-  def SideNavLink[E /* <: js.Object */](props: ForwardRefProps[HTMLElement, SideNavLinkProps[E]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SideNavLink")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def SideNavLink[E /* <: js.Object */](props: ForwardRefProps[HTMLElement, SideNavLinkProps[E]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SideNavLink")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   @JSImport("carbon-components-react/lib/components/UIShell", "SideNavLinkText")
   @js.native
@@ -133,8 +127,7 @@ object uishellMod {
   @js.native
   val SideNavMenu: ForwardRefReturn[HTMLButtonElement, SideNavMenuProps] = js.native
   
-  @scala.inline
-  def SideNavMenuItem[E /* <: js.Object */, R](props: ForwardRefProps[R, SideNavMenuItemProps[E]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SideNavMenuItem")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def SideNavMenuItem[E /* <: js.Object */, R](props: ForwardRefProps[R, SideNavMenuItemProps[E]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SideNavMenuItem")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   @JSImport("carbon-components-react/lib/components/UIShell", "SideNavSwitcher")
   @js.native
@@ -152,11 +145,9 @@ object uishellMod {
   @js.native
   val SwitcherDivider: FC[SwitcherDividerProps] = js.native
   
-  @scala.inline
-  def SwitcherItem[E /* <: js.Object */, R](props: ForwardRefProps[R, SwitcherItemProps[E]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SwitcherItem")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def SwitcherItem[E /* <: js.Object */, R](props: ForwardRefProps[R, SwitcherItemProps[E]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SwitcherItem")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def createCustomSideNavLink_element[E /* <: js.Object */](
+  inline def createCustomSideNavLink_element[E /* <: js.Object */](
     element: /* import warning: importer.ImportType#apply Failed type conversion: carbon-components-react.carbon-components-react/lib/components/UIShell/SideNavLink.SideNavLinkProps<carbon-components-react.carbon-components-react/typings/shared.ReactAnchorAttr<std.HTMLAnchorElement>>['element'] */ js.Any
   ): SideNavLinkFC[Omit[E, element]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createCustomSideNavLink")(element.asInstanceOf[js.Any]).asInstanceOf[SideNavLinkFC[Omit[E, element]]]
 }

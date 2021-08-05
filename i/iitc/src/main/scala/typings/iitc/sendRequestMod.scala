@@ -9,8 +9,7 @@ object sendRequestMod {
   
   object global {
     
-    @scala.inline
-    def outOfDateUserPrompt(): Unit = js.Dynamic.global.applyDynamic("outOfDateUserPrompt")().asInstanceOf[Unit]
+    inline def outOfDateUserPrompt(): Unit = js.Dynamic.global.applyDynamic("outOfDateUserPrompt")().asInstanceOf[Unit]
     
     /**
       * posts AJAX request to Ingress API.
@@ -20,8 +19,7 @@ object sendRequestMod {
       * @param successCallback method to call on success. See jQuery API docs for available arguments: http://api.jquery.com/jQuery.ajax/
       * @param errorCallback see above. Additionally it is logged if the request failed.
       */
-    @scala.inline
-    def postAjax(
+    inline def postAjax(
       action: String,
       data: js.Any,
       successCallback: js.Function3[/* data */ js.Any, /* textStatus */ String, /* jqXHR */ jqXHR[js.Any], Unit],

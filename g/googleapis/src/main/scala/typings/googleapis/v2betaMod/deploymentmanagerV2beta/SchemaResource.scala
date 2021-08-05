@@ -72,88 +72,61 @@ trait SchemaResource extends StObject {
 }
 object SchemaResource {
   
-  @scala.inline
-  def apply(): SchemaResource = {
+  inline def apply(): SchemaResource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaResource]
   }
   
-  @scala.inline
-  implicit class SchemaResourceMutableBuilder[Self <: SchemaResource] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaResource](x: Self) {
     
-    @scala.inline
-    def setAccessControl(value: SchemaResourceAccessControl): Self = StObject.set(x, "accessControl", value.asInstanceOf[js.Any])
+    inline def setAccessControl(value: SchemaResourceAccessControl): Self = StObject.set(x, "accessControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessControlUndefined: Self = StObject.set(x, "accessControl", js.undefined)
+    inline def setAccessControlUndefined: Self = StObject.set(x, "accessControl", js.undefined)
     
-    @scala.inline
-    def setFinalProperties(value: String): Self = StObject.set(x, "finalProperties", value.asInstanceOf[js.Any])
+    inline def setFinalProperties(value: String): Self = StObject.set(x, "finalProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalPropertiesUndefined: Self = StObject.set(x, "finalProperties", js.undefined)
+    inline def setFinalPropertiesUndefined: Self = StObject.set(x, "finalProperties", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setInsertTime(value: String): Self = StObject.set(x, "insertTime", value.asInstanceOf[js.Any])
+    inline def setInsertTime(value: String): Self = StObject.set(x, "insertTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertTimeUndefined: Self = StObject.set(x, "insertTime", js.undefined)
+    inline def setInsertTimeUndefined: Self = StObject.set(x, "insertTime", js.undefined)
     
-    @scala.inline
-    def setManifest(value: String): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
+    inline def setManifest(value: String): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManifestUndefined: Self = StObject.set(x, "manifest", js.undefined)
+    inline def setManifestUndefined: Self = StObject.set(x, "manifest", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setProperties(value: String): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: String): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUpdate(value: SchemaResourceUpdate): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: SchemaResourceUpdate): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
     
-    @scala.inline
-    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+    inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    @scala.inline
-    def setWarnings(value: js.Array[Code]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+    inline def setWarnings(value: js.Array[Code]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
+    inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
     
-    @scala.inline
-    def setWarningsVarargs(value: Code*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: Code*): Self = StObject.set(x, "warnings", js.Array(value :_*))
   }
 }

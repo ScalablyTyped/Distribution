@@ -21,37 +21,27 @@ trait JQNumericRangeSliderOptions
 }
 object JQNumericRangeSliderOptions {
   
-  @scala.inline
-  def apply(): JQNumericRangeSliderOptions = {
+  inline def apply(): JQNumericRangeSliderOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JQNumericRangeSliderOptions]
   }
   
-  @scala.inline
-  implicit class JQNumericRangeSliderOptionsMutableBuilder[Self <: JQNumericRangeSliderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: JQNumericRangeSliderOptions](x: Self) {
     
-    @scala.inline
-    def setBounds(value: JQRangeSliderNumericRange): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: JQRangeSliderNumericRange): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
+    inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
     
-    @scala.inline
-    def setDefaultValues(value: JQRangeSliderNumericRange): Self = StObject.set(x, "defaultValues", value.asInstanceOf[js.Any])
+    inline def setDefaultValues(value: JQRangeSliderNumericRange): Self = StObject.set(x, "defaultValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValuesUndefined: Self = StObject.set(x, "defaultValues", js.undefined)
+    inline def setDefaultValuesUndefined: Self = StObject.set(x, "defaultValues", js.undefined)
     
-    @scala.inline
-    def setFormatter(value: /* int */ Double => String): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
+    inline def setFormatter(value: /* int */ Double => String): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
+    inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
     
-    @scala.inline
-    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
   }
 }

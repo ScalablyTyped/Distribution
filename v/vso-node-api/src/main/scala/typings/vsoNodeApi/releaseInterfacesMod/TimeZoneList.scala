@@ -12,22 +12,17 @@ trait TimeZoneList extends StObject {
 }
 object TimeZoneList {
   
-  @scala.inline
-  def apply(utcTimeZone: TimeZone, validTimeZones: js.Array[TimeZone]): TimeZoneList = {
+  inline def apply(utcTimeZone: TimeZone, validTimeZones: js.Array[TimeZone]): TimeZoneList = {
     val __obj = js.Dynamic.literal(utcTimeZone = utcTimeZone.asInstanceOf[js.Any], validTimeZones = validTimeZones.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeZoneList]
   }
   
-  @scala.inline
-  implicit class TimeZoneListMutableBuilder[Self <: TimeZoneList] (val x: Self) extends AnyVal {
+  extension [Self <: TimeZoneList](x: Self) {
     
-    @scala.inline
-    def setUtcTimeZone(value: TimeZone): Self = StObject.set(x, "utcTimeZone", value.asInstanceOf[js.Any])
+    inline def setUtcTimeZone(value: TimeZone): Self = StObject.set(x, "utcTimeZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidTimeZones(value: js.Array[TimeZone]): Self = StObject.set(x, "validTimeZones", value.asInstanceOf[js.Any])
+    inline def setValidTimeZones(value: js.Array[TimeZone]): Self = StObject.set(x, "validTimeZones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidTimeZonesVarargs(value: TimeZone*): Self = StObject.set(x, "validTimeZones", js.Array(value :_*))
+    inline def setValidTimeZonesVarargs(value: TimeZone*): Self = StObject.set(x, "validTimeZones", js.Array(value :_*))
   }
 }

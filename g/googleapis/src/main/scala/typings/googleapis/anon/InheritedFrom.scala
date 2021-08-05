@@ -16,37 +16,27 @@ trait InheritedFrom extends StObject {
 }
 object InheritedFrom {
   
-  @scala.inline
-  def apply(): InheritedFrom = {
+  inline def apply(): InheritedFrom = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InheritedFrom]
   }
   
-  @scala.inline
-  implicit class InheritedFromMutableBuilder[Self <: InheritedFrom] (val x: Self) extends AnyVal {
+  extension [Self <: InheritedFrom](x: Self) {
     
-    @scala.inline
-    def setInherited(value: Boolean): Self = StObject.set(x, "inherited", value.asInstanceOf[js.Any])
+    inline def setInherited(value: Boolean): Self = StObject.set(x, "inherited", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInheritedFrom(value: String): Self = StObject.set(x, "inheritedFrom", value.asInstanceOf[js.Any])
+    inline def setInheritedFrom(value: String): Self = StObject.set(x, "inheritedFrom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInheritedFromUndefined: Self = StObject.set(x, "inheritedFrom", js.undefined)
+    inline def setInheritedFromUndefined: Self = StObject.set(x, "inheritedFrom", js.undefined)
     
-    @scala.inline
-    def setInheritedUndefined: Self = StObject.set(x, "inherited", js.undefined)
+    inline def setInheritedUndefined: Self = StObject.set(x, "inherited", js.undefined)
     
-    @scala.inline
-    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
-    @scala.inline
-    def setTeamDrivePermissionType(value: String): Self = StObject.set(x, "teamDrivePermissionType", value.asInstanceOf[js.Any])
+    inline def setTeamDrivePermissionType(value: String): Self = StObject.set(x, "teamDrivePermissionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeamDrivePermissionTypeUndefined: Self = StObject.set(x, "teamDrivePermissionType", js.undefined)
+    inline def setTeamDrivePermissionTypeUndefined: Self = StObject.set(x, "teamDrivePermissionType", js.undefined)
   }
 }

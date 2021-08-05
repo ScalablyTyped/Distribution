@@ -22,8 +22,7 @@ object wrapperMod {
     @JSImport("@storybook/react-native/dist/preview/components/OnDeviceUI/addons/wrapper", "default.defaultProps")
     @js.native
     def defaultProps: AddonSelected = js.native
-    @scala.inline
-    def defaultProps_=(x: AddonSelected): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: AddonSelected): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait Props extends StObject {
@@ -34,20 +33,16 @@ object wrapperMod {
   }
   object Props {
     
-    @scala.inline
-    def apply(addonSelected: String, panels: Collection): Props = {
+    inline def apply(addonSelected: String, panels: Collection): Props = {
       val __obj = js.Dynamic.literal(addonSelected = addonSelected.asInstanceOf[js.Any], panels = panels.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setAddonSelected(value: String): Self = StObject.set(x, "addonSelected", value.asInstanceOf[js.Any])
+      inline def setAddonSelected(value: String): Self = StObject.set(x, "addonSelected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanels(value: Collection): Self = StObject.set(x, "panels", value.asInstanceOf[js.Any])
+      inline def setPanels(value: Collection): Self = StObject.set(x, "panels", value.asInstanceOf[js.Any])
     }
   }
   

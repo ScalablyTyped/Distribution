@@ -12,17 +12,14 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply(handleEvent: js.Object => Unit): `0` = {
+    inline def apply(handleEvent: js.Object => Unit): `0` = {
       val __obj = js.Dynamic.literal(handleEvent = js.Any.fromFunction1(handleEvent))
       __obj.asInstanceOf[`0`]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+    extension [Self <: `0`](x: Self) {
       
-      @scala.inline
-      def setHandleEvent(value: js.Object => Unit): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
+      inline def setHandleEvent(value: js.Object => Unit): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
     }
   }
   
@@ -32,17 +29,14 @@ object anon {
   }
   object HandleEvent {
     
-    @scala.inline
-    def apply(handleEvent: js.Object => Boolean): HandleEvent = {
+    inline def apply(handleEvent: js.Object => Boolean): HandleEvent = {
       val __obj = js.Dynamic.literal(handleEvent = js.Any.fromFunction1(handleEvent))
       __obj.asInstanceOf[HandleEvent]
     }
     
-    @scala.inline
-    implicit class HandleEventMutableBuilder[Self <: HandleEvent] (val x: Self) extends AnyVal {
+    extension [Self <: HandleEvent](x: Self) {
       
-      @scala.inline
-      def setHandleEvent(value: js.Object => Boolean): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
+      inline def setHandleEvent(value: js.Object => Boolean): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
     }
   }
   
@@ -64,8 +58,7 @@ object anon {
   }
   object Rotation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       rotation: Double,
       scaleX: Double,
       scaleY: Double,
@@ -78,29 +71,21 @@ object anon {
       __obj.asInstanceOf[Rotation]
     }
     
-    @scala.inline
-    implicit class RotationMutableBuilder[Self <: Rotation] (val x: Self) extends AnyVal {
+    extension [Self <: Rotation](x: Self) {
       
-      @scala.inline
-      def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+      inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
+      inline def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleY(value: Double): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
+      inline def setScaleY(value: Double): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkewX(value: Double): Self = StObject.set(x, "skewX", value.asInstanceOf[js.Any])
+      inline def setSkewX(value: Double): Self = StObject.set(x, "skewX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkewY(value: Double): Self = StObject.set(x, "skewY", value.asInstanceOf[js.Any])
+      inline def setSkewY(value: Double): Self = StObject.set(x, "skewY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

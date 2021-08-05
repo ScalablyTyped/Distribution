@@ -27,8 +27,7 @@ object global {
           * This method must always be called first. While is always executes synchronously, callbacks are allowed for the purposes of method chaining.
           */
         /* static member */
-        @scala.inline
-        def initialize(config: initializeConfig): typings.fmWebsync.fm.websync.client = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(config.asInstanceOf[js.Any]).asInstanceOf[typings.fmWebsync.fm.websync.client]
+        inline def initialize(config: initializeConfig): typings.fmWebsync.fm.websync.client = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(config.asInstanceOf[js.Any]).asInstanceOf[typings.fmWebsync.fm.websync.client]
       }
     }
   }

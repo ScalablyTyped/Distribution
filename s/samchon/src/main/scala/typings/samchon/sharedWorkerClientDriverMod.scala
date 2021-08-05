@@ -38,6 +38,6 @@ object sharedWorkerClientDriverMod {
     /**
       * @hidden
       */
-    var listening_ : js.Any = js.native
+    /* private */ var listening_ : js.Any = js.native
   }
 }

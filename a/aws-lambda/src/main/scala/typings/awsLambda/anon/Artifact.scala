@@ -36,8 +36,7 @@ trait Artifact extends StObject {
 }
 object Artifact {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     artifact: Location,
     `build-complete`: Boolean,
     `build-number`: Double,
@@ -64,55 +63,38 @@ object Artifact {
     __obj.asInstanceOf[Artifact]
   }
   
-  @scala.inline
-  implicit class ArtifactMutableBuilder[Self <: Artifact] (val x: Self) extends AnyVal {
+  extension [Self <: Artifact](x: Self) {
     
-    @scala.inline
-    def setArtifact(value: Location): Self = StObject.set(x, "artifact", value.asInstanceOf[js.Any])
+    inline def setArtifact(value: Location): Self = StObject.set(x, "artifact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setBuild-complete`(value: Boolean): Self = StObject.set(x, "build-complete", value.asInstanceOf[js.Any])
+    inline def `setBuild-complete`(value: Boolean): Self = StObject.set(x, "build-complete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setBuild-number`(value: Double): Self = StObject.set(x, "build-number", value.asInstanceOf[js.Any])
+    inline def `setBuild-number`(value: Double): Self = StObject.set(x, "build-number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setBuild-start-time`(value: String): Self = StObject.set(x, "build-start-time", value.asInstanceOf[js.Any])
+    inline def `setBuild-start-time`(value: String): Self = StObject.set(x, "build-start-time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCache(value: Type): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: Type): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironment(value: Computetype): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: Computetype): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitiator(value: String): Self = StObject.set(x, "initiator", value.asInstanceOf[js.Any])
+    inline def setInitiator(value: String): Self = StObject.set(x, "initiator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogs(value: Deeplink): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
+    inline def setLogs(value: Deeplink): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhases(value: js.Array[Durationinseconds]): Self = StObject.set(x, "phases", value.asInstanceOf[js.Any])
+    inline def setPhases(value: js.Array[Durationinseconds]): Self = StObject.set(x, "phases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhasesVarargs(value: Durationinseconds*): Self = StObject.set(x, "phases", js.Array(value :_*))
+    inline def setPhasesVarargs(value: Durationinseconds*): Self = StObject.set(x, "phases", js.Array(value :_*))
     
-    @scala.inline
-    def `setProject-file-system-locations`(value: js.Array[js.Any]): Self = StObject.set(x, "project-file-system-locations", value.asInstanceOf[js.Any])
+    inline def `setProject-file-system-locations`(value: js.Array[js.Any]): Self = StObject.set(x, "project-file-system-locations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setProject-file-system-locationsVarargs`(value: js.Any*): Self = StObject.set(x, "project-file-system-locations", js.Array(value :_*))
+    inline def `setProject-file-system-locationsVarargs`(value: js.Any*): Self = StObject.set(x, "project-file-system-locations", js.Array(value :_*))
     
-    @scala.inline
-    def `setQueued-timeout-in-minutes`(value: Double): Self = StObject.set(x, "queued-timeout-in-minutes", value.asInstanceOf[js.Any])
+    inline def `setQueued-timeout-in-minutes`(value: Double): Self = StObject.set(x, "queued-timeout-in-minutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: Buildspec): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Buildspec): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setSource-version`(value: String): Self = StObject.set(x, "source-version", value.asInstanceOf[js.Any])
+    inline def `setSource-version`(value: String): Self = StObject.set(x, "source-version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setTimeout-in-minutes`(value: Double): Self = StObject.set(x, "timeout-in-minutes", value.asInstanceOf[js.Any])
+    inline def `setTimeout-in-minutes`(value: Double): Self = StObject.set(x, "timeout-in-minutes", value.asInstanceOf[js.Any])
   }
 }

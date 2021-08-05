@@ -17,8 +17,7 @@ trait IPanoramaConnectionArrow
 }
 object IPanoramaConnectionArrow {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getConnectedPanorama: () => js.Promise[IPanorama],
     getDirection: () => js.Array[Double],
     getPanorama: () => IPanorama,
@@ -28,16 +27,12 @@ object IPanoramaConnectionArrow {
     __obj.asInstanceOf[IPanoramaConnectionArrow]
   }
   
-  @scala.inline
-  implicit class IPanoramaConnectionArrowMutableBuilder[Self <: IPanoramaConnectionArrow] (val x: Self) extends AnyVal {
+  extension [Self <: IPanoramaConnectionArrow](x: Self) {
     
-    @scala.inline
-    def setGetDirection(value: () => js.Array[Double]): Self = StObject.set(x, "getDirection", js.Any.fromFunction0(value))
+    inline def setGetDirection(value: () => js.Array[Double]): Self = StObject.set(x, "getDirection", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPanorama(value: () => IPanorama): Self = StObject.set(x, "getPanorama", js.Any.fromFunction0(value))
+    inline def setGetPanorama(value: () => IPanorama): Self = StObject.set(x, "getPanorama", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setProperties(value: Manager): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Manager): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
   }
 }

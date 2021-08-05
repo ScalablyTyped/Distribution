@@ -24,19 +24,15 @@ trait FormattingOptions
 }
 object FormattingOptions {
   
-  @scala.inline
-  def apply(insertSpaces: Boolean, tabSize: Double): FormattingOptions = {
+  inline def apply(insertSpaces: Boolean, tabSize: Double): FormattingOptions = {
     val __obj = js.Dynamic.literal(insertSpaces = insertSpaces.asInstanceOf[js.Any], tabSize = tabSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormattingOptions]
   }
   
-  @scala.inline
-  implicit class FormattingOptionsMutableBuilder[Self <: FormattingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FormattingOptions](x: Self) {
     
-    @scala.inline
-    def setInsertSpaces(value: Boolean): Self = StObject.set(x, "insertSpaces", value.asInstanceOf[js.Any])
+    inline def setInsertSpaces(value: Boolean): Self = StObject.set(x, "insertSpaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabSize(value: Double): Self = StObject.set(x, "tabSize", value.asInstanceOf[js.Any])
+    inline def setTabSize(value: Double): Self = StObject.set(x, "tabSize", value.asInstanceOf[js.Any])
   }
 }

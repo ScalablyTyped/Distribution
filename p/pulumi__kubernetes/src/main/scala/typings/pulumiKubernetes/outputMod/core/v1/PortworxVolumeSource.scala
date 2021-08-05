@@ -26,22 +26,17 @@ trait PortworxVolumeSource extends StObject {
 }
 object PortworxVolumeSource {
   
-  @scala.inline
-  def apply(fsType: String, readOnly: Boolean, volumeID: String): PortworxVolumeSource = {
+  inline def apply(fsType: String, readOnly: Boolean, volumeID: String): PortworxVolumeSource = {
     val __obj = js.Dynamic.literal(fsType = fsType.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any], volumeID = volumeID.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortworxVolumeSource]
   }
   
-  @scala.inline
-  implicit class PortworxVolumeSourceMutableBuilder[Self <: PortworxVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: PortworxVolumeSource](x: Self) {
     
-    @scala.inline
-    def setFsType(value: String): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
+    inline def setFsType(value: String): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeID(value: String): Self = StObject.set(x, "volumeID", value.asInstanceOf[js.Any])
+    inline def setVolumeID(value: String): Self = StObject.set(x, "volumeID", value.asInstanceOf[js.Any])
   }
 }

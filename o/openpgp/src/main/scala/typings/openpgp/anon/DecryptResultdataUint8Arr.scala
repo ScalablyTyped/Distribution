@@ -18,8 +18,7 @@ trait DecryptResultdataUint8Arr extends StObject {
 }
 object DecryptResultdataUint8Arr {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     data: (String | (ReadableStream[String | Uint8Array]) | NodeStream | Uint8Array) & (Uint8Array | ReadableStream[Uint8Array] | NodeStream),
     filename: String,
     signatures: js.Array[Valid]
@@ -28,21 +27,16 @@ object DecryptResultdataUint8Arr {
     __obj.asInstanceOf[DecryptResultdataUint8Arr]
   }
   
-  @scala.inline
-  implicit class DecryptResultdataUint8ArrMutableBuilder[Self <: DecryptResultdataUint8Arr] (val x: Self) extends AnyVal {
+  extension [Self <: DecryptResultdataUint8Arr](x: Self) {
     
-    @scala.inline
-    def setData(
+    inline def setData(
       value: (String | (ReadableStream[String | Uint8Array]) | NodeStream | Uint8Array) & (Uint8Array | ReadableStream[Uint8Array] | NodeStream)
     ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatures(value: js.Array[Valid]): Self = StObject.set(x, "signatures", value.asInstanceOf[js.Any])
+    inline def setSignatures(value: js.Array[Valid]): Self = StObject.set(x, "signatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignaturesVarargs(value: Valid*): Self = StObject.set(x, "signatures", js.Array(value :_*))
+    inline def setSignaturesVarargs(value: Valid*): Self = StObject.set(x, "signatures", js.Array(value :_*))
   }
 }

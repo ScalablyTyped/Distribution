@@ -13,19 +13,15 @@ trait GetTestGridSessionResult extends StObject {
 }
 object GetTestGridSessionResult {
   
-  @scala.inline
-  def apply(): GetTestGridSessionResult = {
+  inline def apply(): GetTestGridSessionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetTestGridSessionResult]
   }
   
-  @scala.inline
-  implicit class GetTestGridSessionResultMutableBuilder[Self <: GetTestGridSessionResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetTestGridSessionResult](x: Self) {
     
-    @scala.inline
-    def setTestGridSession(value: TestGridSession): Self = StObject.set(x, "testGridSession", value.asInstanceOf[js.Any])
+    inline def setTestGridSession(value: TestGridSession): Self = StObject.set(x, "testGridSession", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestGridSessionUndefined: Self = StObject.set(x, "testGridSession", js.undefined)
+    inline def setTestGridSessionUndefined: Self = StObject.set(x, "testGridSession", js.undefined)
   }
 }

@@ -23,31 +23,23 @@ trait RemovePermissionRequest extends StObject {
 }
 object RemovePermissionRequest {
   
-  @scala.inline
-  def apply(): RemovePermissionRequest = {
+  inline def apply(): RemovePermissionRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RemovePermissionRequest]
   }
   
-  @scala.inline
-  implicit class RemovePermissionRequestMutableBuilder[Self <: RemovePermissionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RemovePermissionRequest](x: Self) {
     
-    @scala.inline
-    def setEventBusName(value: NonPartnerEventBusName): Self = StObject.set(x, "EventBusName", value.asInstanceOf[js.Any])
+    inline def setEventBusName(value: NonPartnerEventBusName): Self = StObject.set(x, "EventBusName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventBusNameUndefined: Self = StObject.set(x, "EventBusName", js.undefined)
+    inline def setEventBusNameUndefined: Self = StObject.set(x, "EventBusName", js.undefined)
     
-    @scala.inline
-    def setRemoveAllPermissions(value: Boolean): Self = StObject.set(x, "RemoveAllPermissions", value.asInstanceOf[js.Any])
+    inline def setRemoveAllPermissions(value: Boolean): Self = StObject.set(x, "RemoveAllPermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveAllPermissionsUndefined: Self = StObject.set(x, "RemoveAllPermissions", js.undefined)
+    inline def setRemoveAllPermissionsUndefined: Self = StObject.set(x, "RemoveAllPermissions", js.undefined)
     
-    @scala.inline
-    def setStatementId(value: StatementId): Self = StObject.set(x, "StatementId", value.asInstanceOf[js.Any])
+    inline def setStatementId(value: StatementId): Self = StObject.set(x, "StatementId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatementIdUndefined: Self = StObject.set(x, "StatementId", js.undefined)
+    inline def setStatementIdUndefined: Self = StObject.set(x, "StatementId", js.undefined)
   }
 }

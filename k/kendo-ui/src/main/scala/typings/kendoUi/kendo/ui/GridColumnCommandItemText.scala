@@ -14,31 +14,23 @@ trait GridColumnCommandItemText extends StObject {
 }
 object GridColumnCommandItemText {
   
-  @scala.inline
-  def apply(): GridColumnCommandItemText = {
+  inline def apply(): GridColumnCommandItemText = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridColumnCommandItemText]
   }
   
-  @scala.inline
-  implicit class GridColumnCommandItemTextMutableBuilder[Self <: GridColumnCommandItemText] (val x: Self) extends AnyVal {
+  extension [Self <: GridColumnCommandItemText](x: Self) {
     
-    @scala.inline
-    def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
-    @scala.inline
-    def setEdit(value: String): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
+    inline def setEdit(value: String): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditUndefined: Self = StObject.set(x, "edit", js.undefined)
+    inline def setEditUndefined: Self = StObject.set(x, "edit", js.undefined)
     
-    @scala.inline
-    def setUpdate(value: String): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: String): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+    inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

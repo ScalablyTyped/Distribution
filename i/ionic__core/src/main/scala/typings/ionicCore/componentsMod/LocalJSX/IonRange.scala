@@ -94,109 +94,75 @@ trait IonRange extends StObject {
 }
 object IonRange {
   
-  @scala.inline
-  def apply(): IonRange = {
+  inline def apply(): IonRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IonRange]
   }
   
-  @scala.inline
-  implicit class IonRangeMutableBuilder[Self <: IonRange] (val x: Self) extends AnyVal {
+  extension [Self <: IonRange](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setDebounce(value: Double): Self = StObject.set(x, "debounce", value.asInstanceOf[js.Any])
+    inline def setDebounce(value: Double): Self = StObject.set(x, "debounce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebounceUndefined: Self = StObject.set(x, "debounce", js.undefined)
+    inline def setDebounceUndefined: Self = StObject.set(x, "debounce", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setDualKnobs(value: Boolean): Self = StObject.set(x, "dualKnobs", value.asInstanceOf[js.Any])
+    inline def setDualKnobs(value: Boolean): Self = StObject.set(x, "dualKnobs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDualKnobsUndefined: Self = StObject.set(x, "dualKnobs", js.undefined)
+    inline def setDualKnobsUndefined: Self = StObject.set(x, "dualKnobs", js.undefined)
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setMode(value: ios | md): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: ios | md): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOnIonBlur(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonBlur", js.Any.fromFunction1(value))
+    inline def setOnIonBlur(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonBlur", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnIonBlurUndefined: Self = StObject.set(x, "onIonBlur", js.undefined)
+    inline def setOnIonBlurUndefined: Self = StObject.set(x, "onIonBlur", js.undefined)
     
-    @scala.inline
-    def setOnIonChange(value: /* event */ CustomEvent[RangeChangeEventDetail] => Unit): Self = StObject.set(x, "onIonChange", js.Any.fromFunction1(value))
+    inline def setOnIonChange(value: /* event */ CustomEvent[RangeChangeEventDetail] => Unit): Self = StObject.set(x, "onIonChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnIonChangeUndefined: Self = StObject.set(x, "onIonChange", js.undefined)
+    inline def setOnIonChangeUndefined: Self = StObject.set(x, "onIonChange", js.undefined)
     
-    @scala.inline
-    def setOnIonFocus(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonFocus", js.Any.fromFunction1(value))
+    inline def setOnIonFocus(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonFocus", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnIonFocusUndefined: Self = StObject.set(x, "onIonFocus", js.undefined)
+    inline def setOnIonFocusUndefined: Self = StObject.set(x, "onIonFocus", js.undefined)
     
-    @scala.inline
-    def setPin(value: Boolean): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
+    inline def setPin(value: Boolean): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPinUndefined: Self = StObject.set(x, "pin", js.undefined)
+    inline def setPinUndefined: Self = StObject.set(x, "pin", js.undefined)
     
-    @scala.inline
-    def setSnaps(value: Boolean): Self = StObject.set(x, "snaps", value.asInstanceOf[js.Any])
+    inline def setSnaps(value: Boolean): Self = StObject.set(x, "snaps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapsUndefined: Self = StObject.set(x, "snaps", js.undefined)
+    inline def setSnapsUndefined: Self = StObject.set(x, "snaps", js.undefined)
     
-    @scala.inline
-    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
-    @scala.inline
-    def setTicks(value: Boolean): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
+    inline def setTicks(value: Boolean): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
+    inline def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
     
-    @scala.inline
-    def setValue(value: RangeValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: RangeValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

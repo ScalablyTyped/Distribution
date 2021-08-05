@@ -46,43 +46,31 @@ trait ParamsResourceScoresSubmit
 }
 object ParamsResourceScoresSubmit {
   
-  @scala.inline
-  def apply(): ParamsResourceScoresSubmit = {
+  inline def apply(): ParamsResourceScoresSubmit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceScoresSubmit]
   }
   
-  @scala.inline
-  implicit class ParamsResourceScoresSubmitMutableBuilder[Self <: ParamsResourceScoresSubmit] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceScoresSubmit](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setLeaderboardId(value: String): Self = StObject.set(x, "leaderboardId", value.asInstanceOf[js.Any])
+    inline def setLeaderboardId(value: String): Self = StObject.set(x, "leaderboardId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeaderboardIdUndefined: Self = StObject.set(x, "leaderboardId", js.undefined)
+    inline def setLeaderboardIdUndefined: Self = StObject.set(x, "leaderboardId", js.undefined)
     
-    @scala.inline
-    def setScore(value: String): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setScore(value: String): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreTag(value: String): Self = StObject.set(x, "scoreTag", value.asInstanceOf[js.Any])
+    inline def setScoreTag(value: String): Self = StObject.set(x, "scoreTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreTagUndefined: Self = StObject.set(x, "scoreTag", js.undefined)
+    inline def setScoreTagUndefined: Self = StObject.set(x, "scoreTag", js.undefined)
     
-    @scala.inline
-    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
+    inline def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
   }
 }

@@ -11,22 +11,17 @@ trait RowColumnPivotHierarchyCollectionUpdateData extends StObject {
 }
 object RowColumnPivotHierarchyCollectionUpdateData {
   
-  @scala.inline
-  def apply(): RowColumnPivotHierarchyCollectionUpdateData = {
+  inline def apply(): RowColumnPivotHierarchyCollectionUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RowColumnPivotHierarchyCollectionUpdateData]
   }
   
-  @scala.inline
-  implicit class RowColumnPivotHierarchyCollectionUpdateDataMutableBuilder[Self <: RowColumnPivotHierarchyCollectionUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: RowColumnPivotHierarchyCollectionUpdateData](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[RowColumnPivotHierarchyData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[RowColumnPivotHierarchyData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: RowColumnPivotHierarchyData*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: RowColumnPivotHierarchyData*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

@@ -19,8 +19,7 @@ trait TextContentCollection
      with XContainer
 object TextContentCollection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementNames: SafeArray[String],
     ElementType: `type`,
     acquire: () => Unit,

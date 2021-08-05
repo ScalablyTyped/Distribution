@@ -14,25 +14,19 @@ trait AccountIdentifier extends StObject {
 }
 object AccountIdentifier {
   
-  @scala.inline
-  def apply(): AccountIdentifier = {
+  inline def apply(): AccountIdentifier = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountIdentifier]
   }
   
-  @scala.inline
-  implicit class AccountIdentifierMutableBuilder[Self <: AccountIdentifier] (val x: Self) extends AnyVal {
+  extension [Self <: AccountIdentifier](x: Self) {
     
-    @scala.inline
-    def setAggregatorId(value: String): Self = StObject.set(x, "aggregatorId", value.asInstanceOf[js.Any])
+    inline def setAggregatorId(value: String): Self = StObject.set(x, "aggregatorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregatorIdUndefined: Self = StObject.set(x, "aggregatorId", js.undefined)
+    inline def setAggregatorIdUndefined: Self = StObject.set(x, "aggregatorId", js.undefined)
     
-    @scala.inline
-    def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
+    inline def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
+    inline def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
   }
 }

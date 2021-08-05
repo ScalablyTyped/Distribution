@@ -12,16 +12,13 @@ trait isAdGroupChild
 }
 object isAdGroupChild {
   
-  @scala.inline
-  def apply(getAdGroup: () => AdGroup, getCampaign: () => Campaign): isAdGroupChild = {
+  inline def apply(getAdGroup: () => AdGroup, getCampaign: () => Campaign): isAdGroupChild = {
     val __obj = js.Dynamic.literal(getAdGroup = js.Any.fromFunction0(getAdGroup), getCampaign = js.Any.fromFunction0(getCampaign))
     __obj.asInstanceOf[isAdGroupChild]
   }
   
-  @scala.inline
-  implicit class isAdGroupChildMutableBuilder[Self <: isAdGroupChild] (val x: Self) extends AnyVal {
+  extension [Self <: isAdGroupChild](x: Self) {
     
-    @scala.inline
-    def setGetAdGroup(value: () => AdGroup): Self = StObject.set(x, "getAdGroup", js.Any.fromFunction0(value))
+    inline def setGetAdGroup(value: () => AdGroup): Self = StObject.set(x, "getAdGroup", js.Any.fromFunction0(value))
   }
 }

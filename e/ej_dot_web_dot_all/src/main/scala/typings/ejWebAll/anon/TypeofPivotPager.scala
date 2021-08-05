@@ -15,19 +15,15 @@ trait TypeofPivotPager extends StObject {
 }
 object TypeofPivotPager {
   
-  @scala.inline
-  def apply(Locale: js.Any, fn: PivotPager): TypeofPivotPager = {
+  inline def apply(Locale: js.Any, fn: PivotPager): TypeofPivotPager = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofPivotPager]
   }
   
-  @scala.inline
-  implicit class TypeofPivotPagerMutableBuilder[Self <: TypeofPivotPager] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofPivotPager](x: Self) {
     
-    @scala.inline
-    def setFn(value: PivotPager): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: PivotPager): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

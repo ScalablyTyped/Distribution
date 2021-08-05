@@ -22,22 +22,16 @@ object AudioTrack {
   trait Kind extends StObject
   object Kind {
     
-    @scala.inline
-    def alternative: typings.videoJs.videoJsStrings.alternative = "alternative".asInstanceOf[typings.videoJs.videoJsStrings.alternative]
+    inline def alternative: typings.videoJs.videoJsStrings.alternative = "alternative".asInstanceOf[typings.videoJs.videoJsStrings.alternative]
     
-    @scala.inline
-    def commentary: typings.videoJs.videoJsStrings.commentary = "commentary".asInstanceOf[typings.videoJs.videoJsStrings.commentary]
+    inline def commentary: typings.videoJs.videoJsStrings.commentary = "commentary".asInstanceOf[typings.videoJs.videoJsStrings.commentary]
     
-    @scala.inline
-    def descriptions: typings.videoJs.videoJsStrings.descriptions = "descriptions".asInstanceOf[typings.videoJs.videoJsStrings.descriptions]
+    inline def descriptions: typings.videoJs.videoJsStrings.descriptions = "descriptions".asInstanceOf[typings.videoJs.videoJsStrings.descriptions]
     
-    @scala.inline
-    def main: typings.videoJs.videoJsStrings.main = "main".asInstanceOf[typings.videoJs.videoJsStrings.main]
+    inline def main: typings.videoJs.videoJsStrings.main = "main".asInstanceOf[typings.videoJs.videoJsStrings.main]
     
-    @scala.inline
-    def `main-desc`: typings.videoJs.videoJsStrings.`main-desc` = "main-desc".asInstanceOf[typings.videoJs.videoJsStrings.`main-desc`]
+    inline def `main-desc`: typings.videoJs.videoJsStrings.`main-desc` = "main-desc".asInstanceOf[typings.videoJs.videoJsStrings.`main-desc`]
     
-    @scala.inline
-    def translation: typings.videoJs.videoJsStrings.translation = "translation".asInstanceOf[typings.videoJs.videoJsStrings.translation]
+    inline def translation: typings.videoJs.videoJsStrings.translation = "translation".asInstanceOf[typings.videoJs.videoJsStrings.translation]
   }
 }

@@ -13,7 +13,7 @@ object paramTypesMod {
     
     def _flushTypeQueue(): Unit = js.native
     
-    var defaultTypes: js.Any = js.native
+    /* private */ var defaultTypes: js.Any = js.native
     
     def dispose(): Unit = js.native
     
@@ -65,8 +65,7 @@ object paramTypesMod {
     @JSImport("@uirouter/core/lib/params/paramTypes", "ParamTypes.any")
     @js.native
     def any: ParamTypeDefinition = js.native
-    @scala.inline
-    def any_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("any")(x.asInstanceOf[js.Any])
+    inline def any_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("any")(x.asInstanceOf[js.Any])
     
     /**
       * Built-in parameter type: `bool`
@@ -91,8 +90,7 @@ object paramTypesMod {
     @JSImport("@uirouter/core/lib/params/paramTypes", "ParamTypes.bool")
     @js.native
     def bool: ParamTypeDefinition = js.native
-    @scala.inline
-    def bool_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bool")(x.asInstanceOf[js.Any])
+    inline def bool_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bool")(x.asInstanceOf[js.Any])
     
     /**
       * Built-in parameter type: `date`
@@ -121,8 +119,7 @@ object paramTypesMod {
     @JSImport("@uirouter/core/lib/params/paramTypes", "ParamTypes.date")
     @js.native
     def date: ParamTypeDefinition = js.native
-    @scala.inline
-    def date_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("date")(x.asInstanceOf[js.Any])
+    inline def date_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("date")(x.asInstanceOf[js.Any])
     
     /**
       * Built-in parameter type: `hash`
@@ -133,8 +130,7 @@ object paramTypesMod {
     @JSImport("@uirouter/core/lib/params/paramTypes", "ParamTypes.hash")
     @js.native
     def hash: ParamTypeDefinition = js.native
-    @scala.inline
-    def hash_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hash")(x.asInstanceOf[js.Any])
+    inline def hash_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hash")(x.asInstanceOf[js.Any])
     
     /**
       * Built-in parameter type: `int`
@@ -159,8 +155,7 @@ object paramTypesMod {
     @JSImport("@uirouter/core/lib/params/paramTypes", "ParamTypes.int")
     @js.native
     def int: ParamTypeDefinition = js.native
-    @scala.inline
-    def int_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("int")(x.asInstanceOf[js.Any])
+    inline def int_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("int")(x.asInstanceOf[js.Any])
     
     /**
       * Built-in parameter type: `json`
@@ -184,8 +179,7 @@ object paramTypesMod {
     @JSImport("@uirouter/core/lib/params/paramTypes", "ParamTypes.json")
     @js.native
     def json: ParamTypeDefinition = js.native
-    @scala.inline
-    def json_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("json")(x.asInstanceOf[js.Any])
+    inline def json_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("json")(x.asInstanceOf[js.Any])
     
     /**
       * Built-in parameter type: `path`
@@ -205,8 +199,7 @@ object paramTypesMod {
     @JSImport("@uirouter/core/lib/params/paramTypes", "ParamTypes.path")
     @js.native
     def path: ParamTypeDefinition = js.native
-    @scala.inline
-    def path_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("path")(x.asInstanceOf[js.Any])
+    inline def path_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("path")(x.asInstanceOf[js.Any])
     
     /**
       * Built-in parameter type: `query`
@@ -221,8 +214,7 @@ object paramTypesMod {
     @JSImport("@uirouter/core/lib/params/paramTypes", "ParamTypes.query")
     @js.native
     def query: ParamTypeDefinition = js.native
-    @scala.inline
-    def query_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("query")(x.asInstanceOf[js.Any])
+    inline def query_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("query")(x.asInstanceOf[js.Any])
     
     /**
       * Built-in parameter type: `string`
@@ -233,7 +225,6 @@ object paramTypesMod {
     @JSImport("@uirouter/core/lib/params/paramTypes", "ParamTypes.string")
     @js.native
     def string: ParamTypeDefinition = js.native
-    @scala.inline
-    def string_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("string")(x.asInstanceOf[js.Any])
+    inline def string_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("string")(x.asInstanceOf[js.Any])
   }
 }

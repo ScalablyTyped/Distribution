@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait USBRequestType extends StObject
 object USBRequestType {
   
-  @scala.inline
-  def `class`: typings.w3cWebUsb.w3cWebUsbStrings.`class` = "class".asInstanceOf[typings.w3cWebUsb.w3cWebUsbStrings.`class`]
+  inline def `class`: typings.w3cWebUsb.w3cWebUsbStrings.`class` = "class".asInstanceOf[typings.w3cWebUsb.w3cWebUsbStrings.`class`]
   
-  @scala.inline
-  def standard: typings.w3cWebUsb.w3cWebUsbStrings.standard = "standard".asInstanceOf[typings.w3cWebUsb.w3cWebUsbStrings.standard]
+  inline def standard: typings.w3cWebUsb.w3cWebUsbStrings.standard = "standard".asInstanceOf[typings.w3cWebUsb.w3cWebUsbStrings.standard]
   
-  @scala.inline
-  def vendor: typings.w3cWebUsb.w3cWebUsbStrings.vendor = "vendor".asInstanceOf[typings.w3cWebUsb.w3cWebUsbStrings.vendor]
+  inline def vendor: typings.w3cWebUsb.w3cWebUsbStrings.vendor = "vendor".asInstanceOf[typings.w3cWebUsb.w3cWebUsbStrings.vendor]
 }

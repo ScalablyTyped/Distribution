@@ -104,103 +104,71 @@ trait SchemaConversion extends StObject {
 }
 object SchemaConversion {
   
-  @scala.inline
-  def apply(): SchemaConversion = {
+  inline def apply(): SchemaConversion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaConversion]
   }
   
-  @scala.inline
-  implicit class SchemaConversionMutableBuilder[Self <: SchemaConversion] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaConversion](x: Self) {
     
-    @scala.inline
-    def setChildDirectedTreatment(value: Boolean): Self = StObject.set(x, "childDirectedTreatment", value.asInstanceOf[js.Any])
+    inline def setChildDirectedTreatment(value: Boolean): Self = StObject.set(x, "childDirectedTreatment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildDirectedTreatmentUndefined: Self = StObject.set(x, "childDirectedTreatment", js.undefined)
+    inline def setChildDirectedTreatmentUndefined: Self = StObject.set(x, "childDirectedTreatment", js.undefined)
     
-    @scala.inline
-    def setCustomVariables(value: js.Array[SchemaCustomFloodlightVariable]): Self = StObject.set(x, "customVariables", value.asInstanceOf[js.Any])
+    inline def setCustomVariables(value: js.Array[SchemaCustomFloodlightVariable]): Self = StObject.set(x, "customVariables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomVariablesUndefined: Self = StObject.set(x, "customVariables", js.undefined)
+    inline def setCustomVariablesUndefined: Self = StObject.set(x, "customVariables", js.undefined)
     
-    @scala.inline
-    def setCustomVariablesVarargs(value: SchemaCustomFloodlightVariable*): Self = StObject.set(x, "customVariables", js.Array(value :_*))
+    inline def setCustomVariablesVarargs(value: SchemaCustomFloodlightVariable*): Self = StObject.set(x, "customVariables", js.Array(value :_*))
     
-    @scala.inline
-    def setEncryptedUserId(value: String): Self = StObject.set(x, "encryptedUserId", value.asInstanceOf[js.Any])
+    inline def setEncryptedUserId(value: String): Self = StObject.set(x, "encryptedUserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptedUserIdCandidates(value: js.Array[String]): Self = StObject.set(x, "encryptedUserIdCandidates", value.asInstanceOf[js.Any])
+    inline def setEncryptedUserIdCandidates(value: js.Array[String]): Self = StObject.set(x, "encryptedUserIdCandidates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptedUserIdCandidatesUndefined: Self = StObject.set(x, "encryptedUserIdCandidates", js.undefined)
+    inline def setEncryptedUserIdCandidatesUndefined: Self = StObject.set(x, "encryptedUserIdCandidates", js.undefined)
     
-    @scala.inline
-    def setEncryptedUserIdCandidatesVarargs(value: String*): Self = StObject.set(x, "encryptedUserIdCandidates", js.Array(value :_*))
+    inline def setEncryptedUserIdCandidatesVarargs(value: String*): Self = StObject.set(x, "encryptedUserIdCandidates", js.Array(value :_*))
     
-    @scala.inline
-    def setEncryptedUserIdUndefined: Self = StObject.set(x, "encryptedUserId", js.undefined)
+    inline def setEncryptedUserIdUndefined: Self = StObject.set(x, "encryptedUserId", js.undefined)
     
-    @scala.inline
-    def setFloodlightActivityId(value: String): Self = StObject.set(x, "floodlightActivityId", value.asInstanceOf[js.Any])
+    inline def setFloodlightActivityId(value: String): Self = StObject.set(x, "floodlightActivityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloodlightActivityIdUndefined: Self = StObject.set(x, "floodlightActivityId", js.undefined)
+    inline def setFloodlightActivityIdUndefined: Self = StObject.set(x, "floodlightActivityId", js.undefined)
     
-    @scala.inline
-    def setFloodlightConfigurationId(value: String): Self = StObject.set(x, "floodlightConfigurationId", value.asInstanceOf[js.Any])
+    inline def setFloodlightConfigurationId(value: String): Self = StObject.set(x, "floodlightConfigurationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloodlightConfigurationIdUndefined: Self = StObject.set(x, "floodlightConfigurationId", js.undefined)
+    inline def setFloodlightConfigurationIdUndefined: Self = StObject.set(x, "floodlightConfigurationId", js.undefined)
     
-    @scala.inline
-    def setGclid(value: String): Self = StObject.set(x, "gclid", value.asInstanceOf[js.Any])
+    inline def setGclid(value: String): Self = StObject.set(x, "gclid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGclidUndefined: Self = StObject.set(x, "gclid", js.undefined)
+    inline def setGclidUndefined: Self = StObject.set(x, "gclid", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLimitAdTracking(value: Boolean): Self = StObject.set(x, "limitAdTracking", value.asInstanceOf[js.Any])
+    inline def setLimitAdTracking(value: Boolean): Self = StObject.set(x, "limitAdTracking", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitAdTrackingUndefined: Self = StObject.set(x, "limitAdTracking", js.undefined)
+    inline def setLimitAdTrackingUndefined: Self = StObject.set(x, "limitAdTracking", js.undefined)
     
-    @scala.inline
-    def setMobileDeviceId(value: String): Self = StObject.set(x, "mobileDeviceId", value.asInstanceOf[js.Any])
+    inline def setMobileDeviceId(value: String): Self = StObject.set(x, "mobileDeviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMobileDeviceIdUndefined: Self = StObject.set(x, "mobileDeviceId", js.undefined)
+    inline def setMobileDeviceIdUndefined: Self = StObject.set(x, "mobileDeviceId", js.undefined)
     
-    @scala.inline
-    def setOrdinal(value: String): Self = StObject.set(x, "ordinal", value.asInstanceOf[js.Any])
+    inline def setOrdinal(value: String): Self = StObject.set(x, "ordinal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrdinalUndefined: Self = StObject.set(x, "ordinal", js.undefined)
+    inline def setOrdinalUndefined: Self = StObject.set(x, "ordinal", js.undefined)
     
-    @scala.inline
-    def setQuantity(value: String): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: String): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
+    inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
     
-    @scala.inline
-    def setTimestampMicros(value: String): Self = StObject.set(x, "timestampMicros", value.asInstanceOf[js.Any])
+    inline def setTimestampMicros(value: String): Self = StObject.set(x, "timestampMicros", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampMicrosUndefined: Self = StObject.set(x, "timestampMicros", js.undefined)
+    inline def setTimestampMicrosUndefined: Self = StObject.set(x, "timestampMicros", js.undefined)
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

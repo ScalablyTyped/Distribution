@@ -15,19 +15,15 @@ trait SearchBarAndroid
 }
 object SearchBarAndroid {
   
-  @scala.inline
-  def apply(): SearchBarAndroid = {
+  inline def apply(): SearchBarAndroid = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchBarAndroid]
   }
   
-  @scala.inline
-  implicit class SearchBarAndroidMutableBuilder[Self <: SearchBarAndroid] (val x: Self) extends AnyVal {
+  extension [Self <: SearchBarAndroid](x: Self) {
     
-    @scala.inline
-    def setCancelIcon(value: IconNode): Self = StObject.set(x, "cancelIcon", value.asInstanceOf[js.Any])
+    inline def setCancelIcon(value: IconNode): Self = StObject.set(x, "cancelIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelIconUndefined: Self = StObject.set(x, "cancelIcon", js.undefined)
+    inline def setCancelIconUndefined: Self = StObject.set(x, "cancelIcon", js.undefined)
   }
 }

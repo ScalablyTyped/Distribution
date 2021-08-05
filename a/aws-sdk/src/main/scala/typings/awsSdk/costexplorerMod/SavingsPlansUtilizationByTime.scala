@@ -25,31 +25,23 @@ trait SavingsPlansUtilizationByTime extends StObject {
 }
 object SavingsPlansUtilizationByTime {
   
-  @scala.inline
-  def apply(TimePeriod: DateInterval, Utilization: SavingsPlansUtilization): SavingsPlansUtilizationByTime = {
+  inline def apply(TimePeriod: DateInterval, Utilization: SavingsPlansUtilization): SavingsPlansUtilizationByTime = {
     val __obj = js.Dynamic.literal(TimePeriod = TimePeriod.asInstanceOf[js.Any], Utilization = Utilization.asInstanceOf[js.Any])
     __obj.asInstanceOf[SavingsPlansUtilizationByTime]
   }
   
-  @scala.inline
-  implicit class SavingsPlansUtilizationByTimeMutableBuilder[Self <: SavingsPlansUtilizationByTime] (val x: Self) extends AnyVal {
+  extension [Self <: SavingsPlansUtilizationByTime](x: Self) {
     
-    @scala.inline
-    def setAmortizedCommitment(value: SavingsPlansAmortizedCommitment): Self = StObject.set(x, "AmortizedCommitment", value.asInstanceOf[js.Any])
+    inline def setAmortizedCommitment(value: SavingsPlansAmortizedCommitment): Self = StObject.set(x, "AmortizedCommitment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmortizedCommitmentUndefined: Self = StObject.set(x, "AmortizedCommitment", js.undefined)
+    inline def setAmortizedCommitmentUndefined: Self = StObject.set(x, "AmortizedCommitment", js.undefined)
     
-    @scala.inline
-    def setSavings(value: SavingsPlansSavings): Self = StObject.set(x, "Savings", value.asInstanceOf[js.Any])
+    inline def setSavings(value: SavingsPlansSavings): Self = StObject.set(x, "Savings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSavingsUndefined: Self = StObject.set(x, "Savings", js.undefined)
+    inline def setSavingsUndefined: Self = StObject.set(x, "Savings", js.undefined)
     
-    @scala.inline
-    def setTimePeriod(value: DateInterval): Self = StObject.set(x, "TimePeriod", value.asInstanceOf[js.Any])
+    inline def setTimePeriod(value: DateInterval): Self = StObject.set(x, "TimePeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtilization(value: SavingsPlansUtilization): Self = StObject.set(x, "Utilization", value.asInstanceOf[js.Any])
+    inline def setUtilization(value: SavingsPlansUtilization): Self = StObject.set(x, "Utilization", value.asInstanceOf[js.Any])
   }
 }

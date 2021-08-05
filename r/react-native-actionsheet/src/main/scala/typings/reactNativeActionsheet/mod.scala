@@ -58,65 +58,46 @@ object mod {
   }
   object ActionSheetCustomProps {
     
-    @scala.inline
-    def apply(onPress: Double => Unit, options: js.Array[ReactNode]): ActionSheetCustomProps = {
+    inline def apply(onPress: Double => Unit, options: js.Array[ReactNode]): ActionSheetCustomProps = {
       val __obj = js.Dynamic.literal(onPress = js.Any.fromFunction1(onPress), options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[ActionSheetCustomProps]
     }
     
-    @scala.inline
-    implicit class ActionSheetCustomPropsMutableBuilder[Self <: ActionSheetCustomProps] (val x: Self) extends AnyVal {
+    extension [Self <: ActionSheetCustomProps](x: Self) {
       
-      @scala.inline
-      def setButtonUnderlayColor(value: String): Self = StObject.set(x, "buttonUnderlayColor", value.asInstanceOf[js.Any])
+      inline def setButtonUnderlayColor(value: String): Self = StObject.set(x, "buttonUnderlayColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonUnderlayColorUndefined: Self = StObject.set(x, "buttonUnderlayColor", js.undefined)
+      inline def setButtonUnderlayColorUndefined: Self = StObject.set(x, "buttonUnderlayColor", js.undefined)
       
-      @scala.inline
-      def setCancelButtonIndex(value: Double): Self = StObject.set(x, "cancelButtonIndex", value.asInstanceOf[js.Any])
+      inline def setCancelButtonIndex(value: Double): Self = StObject.set(x, "cancelButtonIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelButtonIndexUndefined: Self = StObject.set(x, "cancelButtonIndex", js.undefined)
+      inline def setCancelButtonIndexUndefined: Self = StObject.set(x, "cancelButtonIndex", js.undefined)
       
-      @scala.inline
-      def setDestructiveButtonIndex(value: Double): Self = StObject.set(x, "destructiveButtonIndex", value.asInstanceOf[js.Any])
+      inline def setDestructiveButtonIndex(value: Double): Self = StObject.set(x, "destructiveButtonIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestructiveButtonIndexUndefined: Self = StObject.set(x, "destructiveButtonIndex", js.undefined)
+      inline def setDestructiveButtonIndexUndefined: Self = StObject.set(x, "destructiveButtonIndex", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setOnPress(value: Double => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
+      inline def setOnPress(value: Double => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOptions(value: js.Array[ReactNode]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Array[ReactNode]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsVarargs(value: ReactNode*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: ReactNode*): Self = StObject.set(x, "options", js.Array(value :_*))
       
-      @scala.inline
-      def setStyles(value: js.Object): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: js.Object): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTintColor(value: String): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
+      inline def setTintColor(value: String): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
+      inline def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
       
-      @scala.inline
-      def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -138,53 +119,38 @@ object mod {
   }
   object ActionSheetProps {
     
-    @scala.inline
-    def apply(onPress: Double => Unit, options: js.Array[String]): ActionSheetProps = {
+    inline def apply(onPress: Double => Unit, options: js.Array[String]): ActionSheetProps = {
       val __obj = js.Dynamic.literal(onPress = js.Any.fromFunction1(onPress), options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[ActionSheetProps]
     }
     
-    @scala.inline
-    implicit class ActionSheetPropsMutableBuilder[Self <: ActionSheetProps] (val x: Self) extends AnyVal {
+    extension [Self <: ActionSheetProps](x: Self) {
       
-      @scala.inline
-      def setCancelButtonIndex(value: Double): Self = StObject.set(x, "cancelButtonIndex", value.asInstanceOf[js.Any])
+      inline def setCancelButtonIndex(value: Double): Self = StObject.set(x, "cancelButtonIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelButtonIndexUndefined: Self = StObject.set(x, "cancelButtonIndex", js.undefined)
+      inline def setCancelButtonIndexUndefined: Self = StObject.set(x, "cancelButtonIndex", js.undefined)
       
-      @scala.inline
-      def setDestructiveButtonIndex(value: Double): Self = StObject.set(x, "destructiveButtonIndex", value.asInstanceOf[js.Any])
+      inline def setDestructiveButtonIndex(value: Double): Self = StObject.set(x, "destructiveButtonIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestructiveButtonIndexUndefined: Self = StObject.set(x, "destructiveButtonIndex", js.undefined)
+      inline def setDestructiveButtonIndexUndefined: Self = StObject.set(x, "destructiveButtonIndex", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setOnPress(value: Double => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
+      inline def setOnPress(value: Double => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOptions(value: js.Array[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Array[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value :_*))
       
-      @scala.inline
-      def setTintColor(value: String): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
+      inline def setTintColor(value: String): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
+      inline def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
 }

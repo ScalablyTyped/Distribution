@@ -14,37 +14,27 @@ trait ITokenInfo extends StObject {
 }
 object ITokenInfo {
   
-  @scala.inline
-  def apply(): ITokenInfo = {
+  inline def apply(): ITokenInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITokenInfo]
   }
   
-  @scala.inline
-  implicit class ITokenInfoMutableBuilder[Self <: ITokenInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ITokenInfo](x: Self) {
     
-    @scala.inline
-    def setLeadingTrivia(value: js.Array[ISyntaxTrivia]): Self = StObject.set(x, "leadingTrivia", value.asInstanceOf[js.Any])
+    inline def setLeadingTrivia(value: js.Array[ISyntaxTrivia]): Self = StObject.set(x, "leadingTrivia", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeadingTriviaUndefined: Self = StObject.set(x, "leadingTrivia", js.undefined)
+    inline def setLeadingTriviaUndefined: Self = StObject.set(x, "leadingTrivia", js.undefined)
     
-    @scala.inline
-    def setLeadingTriviaVarargs(value: ISyntaxTrivia*): Self = StObject.set(x, "leadingTrivia", js.Array(value :_*))
+    inline def setLeadingTriviaVarargs(value: ISyntaxTrivia*): Self = StObject.set(x, "leadingTrivia", js.Array(value :_*))
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setTrailingTrivia(value: js.Array[ISyntaxTrivia]): Self = StObject.set(x, "trailingTrivia", value.asInstanceOf[js.Any])
+    inline def setTrailingTrivia(value: js.Array[ISyntaxTrivia]): Self = StObject.set(x, "trailingTrivia", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrailingTriviaUndefined: Self = StObject.set(x, "trailingTrivia", js.undefined)
+    inline def setTrailingTriviaUndefined: Self = StObject.set(x, "trailingTrivia", js.undefined)
     
-    @scala.inline
-    def setTrailingTriviaVarargs(value: ISyntaxTrivia*): Self = StObject.set(x, "trailingTrivia", js.Array(value :_*))
+    inline def setTrailingTriviaVarargs(value: ISyntaxTrivia*): Self = StObject.set(x, "trailingTrivia", js.Array(value :_*))
   }
 }

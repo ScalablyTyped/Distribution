@@ -31,28 +31,22 @@ object paddingSerializationMod {
   }
   object ZeroPadding2DLayerConfig {
     
-    @scala.inline
-    def apply(): ZeroPadding2DLayerConfig = {
+    inline def apply(): ZeroPadding2DLayerConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ZeroPadding2DLayerConfig]
     }
     
-    @scala.inline
-    implicit class ZeroPadding2DLayerConfigMutableBuilder[Self <: ZeroPadding2DLayerConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ZeroPadding2DLayerConfig](x: Self) {
       
-      @scala.inline
-      def setData_format(value: DataFormatSerialization): Self = StObject.set(x, "data_format", value.asInstanceOf[js.Any])
+      inline def setData_format(value: DataFormatSerialization): Self = StObject.set(x, "data_format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData_formatUndefined: Self = StObject.set(x, "data_format", js.undefined)
+      inline def setData_formatUndefined: Self = StObject.set(x, "data_format", js.undefined)
       
-      @scala.inline
-      def setPadding(
+      inline def setPadding(
         value: Double | (js.Tuple2[Double | (js.Tuple2[Double, Double]), Double | (js.Tuple2[Double, Double])])
       ): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     }
   }
   

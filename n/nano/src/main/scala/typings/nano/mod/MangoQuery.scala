@@ -49,88 +49,61 @@ trait MangoQuery extends StObject {
 }
 object MangoQuery {
   
-  @scala.inline
-  def apply(selector: MangoSelector): MangoQuery = {
+  inline def apply(selector: MangoSelector): MangoQuery = {
     val __obj = js.Dynamic.literal(selector = selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[MangoQuery]
   }
   
-  @scala.inline
-  implicit class MangoQueryMutableBuilder[Self <: MangoQuery] (val x: Self) extends AnyVal {
+  extension [Self <: MangoQuery](x: Self) {
     
-    @scala.inline
-    def setBookmark(value: String): Self = StObject.set(x, "bookmark", value.asInstanceOf[js.Any])
+    inline def setBookmark(value: String): Self = StObject.set(x, "bookmark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBookmarkUndefined: Self = StObject.set(x, "bookmark", js.undefined)
+    inline def setBookmarkUndefined: Self = StObject.set(x, "bookmark", js.undefined)
     
-    @scala.inline
-    def setExecution_stats(value: Boolean): Self = StObject.set(x, "execution_stats", value.asInstanceOf[js.Any])
+    inline def setExecution_stats(value: Boolean): Self = StObject.set(x, "execution_stats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecution_statsUndefined: Self = StObject.set(x, "execution_stats", js.undefined)
+    inline def setExecution_statsUndefined: Self = StObject.set(x, "execution_stats", js.undefined)
     
-    @scala.inline
-    def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+    inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRUndefined: Self = StObject.set(x, "r", js.undefined)
+    inline def setRUndefined: Self = StObject.set(x, "r", js.undefined)
     
-    @scala.inline
-    def setSelector(value: MangoSelector): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: MangoSelector): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+    inline def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+    inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
     
-    @scala.inline
-    def setSort(value: js.Array[SortOrder]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: js.Array[SortOrder]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    @scala.inline
-    def setSortVarargs(value: SortOrder*): Self = StObject.set(x, "sort", js.Array(value :_*))
+    inline def setSortVarargs(value: SortOrder*): Self = StObject.set(x, "sort", js.Array(value :_*))
     
-    @scala.inline
-    def setStable(value: Boolean): Self = StObject.set(x, "stable", value.asInstanceOf[js.Any])
+    inline def setStable(value: Boolean): Self = StObject.set(x, "stable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStableUndefined: Self = StObject.set(x, "stable", js.undefined)
+    inline def setStableUndefined: Self = StObject.set(x, "stable", js.undefined)
     
-    @scala.inline
-    def setStale(value: ok | `false`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
+    inline def setStale(value: ok | `false`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaleUndefined: Self = StObject.set(x, "stale", js.undefined)
+    inline def setStaleUndefined: Self = StObject.set(x, "stale", js.undefined)
     
-    @scala.inline
-    def setUpdate(value: Boolean): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: Boolean): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+    inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     
-    @scala.inline
-    def setUse_index(value: String | (js.Tuple2[String, String])): Self = StObject.set(x, "use_index", value.asInstanceOf[js.Any])
+    inline def setUse_index(value: String | (js.Tuple2[String, String])): Self = StObject.set(x, "use_index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUse_indexUndefined: Self = StObject.set(x, "use_index", js.undefined)
+    inline def setUse_indexUndefined: Self = StObject.set(x, "use_index", js.undefined)
   }
 }

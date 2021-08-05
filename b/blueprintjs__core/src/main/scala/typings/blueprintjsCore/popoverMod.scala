@@ -24,7 +24,7 @@ object popoverMod {
     def this(props: IPopoverProps) = this()
     def this(props: IPopoverProps, context: js.Any) = this()
     
-    var cancelOpenTimeout: js.Any = js.native
+    /* private */ var cancelOpenTimeout: js.Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MPopover(): Unit = js.native
@@ -32,35 +32,35 @@ object popoverMod {
     @JSName("componentDidUpdate")
     def componentDidUpdate_MPopover(props: IPopoverProps, state: IPopoverState): Unit = js.native
     
-    var getIsOpen: js.Any = js.native
+    /* private */ var getIsOpen: js.Any = js.native
     
-    var getPopperModifiers: js.Any = js.native
+    /* private */ var getPopperModifiers: js.Any = js.native
     
-    var handleMouseEnter: js.Any = js.native
+    /* private */ var handleMouseEnter: js.Any = js.native
     
-    var handleMouseLeave: js.Any = js.native
+    /* private */ var handleMouseLeave: js.Any = js.native
     
-    var handleOverlayClose: js.Any = js.native
+    /* private */ var handleOverlayClose: js.Any = js.native
     
-    var handlePopoverClick: js.Any = js.native
+    /* private */ var handlePopoverClick: js.Any = js.native
     
-    var handleTargetBlur: js.Any = js.native
+    /* private */ var handleTargetBlur: js.Any = js.native
     
-    var handleTargetClick: js.Any = js.native
+    /* private */ var handleTargetClick: js.Any = js.native
     
-    var handleTargetFocus: js.Any = js.native
+    /* private */ var handleTargetFocus: js.Any = js.native
     
-    var isArrowEnabled: js.Any = js.native
+    /* private */ var isArrowEnabled: js.Any = js.native
     
-    var isControlled: js.Any = js.native
+    /* private */ var isControlled: js.Any = js.native
     
-    var isElementInPopover: js.Any = js.native
+    /* private */ var isElementInPopover: js.Any = js.native
     
-    var isHoverInteractionKind: js.Any = js.native
+    /* private */ var isHoverInteractionKind: js.Any = js.native
     
-    var isMouseInTargetOrPopover: js.Any = js.native
+    /* private */ var isMouseInTargetOrPopover: js.Any = js.native
     
-    var lostFocusOnSamePage: js.Any = js.native
+    /* private */ var lostFocusOnSamePage: js.Any = js.native
     
     /**
       * DOM element that contains the popover.
@@ -69,15 +69,15 @@ object popoverMod {
       */
     var popoverElement: HTMLElement | Null = js.native
     
-    var popoverRef: js.Any = js.native
+    /* private */ var popoverRef: js.Any = js.native
     
-    var popperScheduleUpdate: js.Any = js.native
+    /* private */ var popperScheduleUpdate: js.Any = js.native
     
-    var refHandlers: js.Any = js.native
+    /* private */ var refHandlers: js.Any = js.native
     
-    var renderPopover: js.Any = js.native
+    /* private */ var renderPopover: js.Any = js.native
     
-    var renderTarget: js.Any = js.native
+    /* private */ var renderTarget: js.Any = js.native
     
     /**
       * Instance method to instruct the `Popover` to recompute its position.
@@ -89,17 +89,17 @@ object popoverMod {
       */
     def reposition(): js.UndefOr[Unit] = js.native
     
-    var setOpenState: js.Any = js.native
+    /* private */ var setOpenState: js.Any = js.native
     
     /** DOM element that contains the target. */
     var targetElement: HTMLElement | Null = js.native
     
-    var understandChildren: js.Any = js.native
+    /* private */ var understandChildren: js.Any = js.native
     
-    var updateDarkParent: js.Any = js.native
+    /* private */ var updateDarkParent: js.Any = js.native
     
     /** Popper modifier that updates React state (for style properties) based on latest data. */
-    var updatePopoverState: js.Any = js.native
+    /* private */ var updatePopoverState: js.Any = js.native
     
     /* protected */ def validateProps(props: IPopoverPropschildrenReac): Unit = js.native
   }
@@ -113,14 +113,12 @@ object popoverMod {
     @JSImport("@blueprintjs/core/lib/esm/components/popover/popover", "Popover.defaultProps")
     @js.native
     def defaultProps: IPopoverProps = js.native
-    @scala.inline
-    def defaultProps_=(x: IPopoverProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IPopoverProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/popover/popover", "Popover.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   /* Inlined {  CLICK :'click',   CLICK_TARGET_ONLY :'click-target',   HOVER :'hover',   HOVER_TARGET_ONLY :'hover-target'}[keyof {  CLICK :'click',   CLICK_TARGET_ONLY :'click-target',   HOVER :'hover',   HOVER_TARGET_ONLY :'hover-target'}] */
@@ -140,26 +138,22 @@ object popoverMod {
     @JSImport("@blueprintjs/core/lib/esm/components/popover/popover", "PopoverInteractionKind.CLICK")
     @js.native
     def CLICK: click = js.native
-    @scala.inline
-    def CLICK_=(x: click): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLICK")(x.asInstanceOf[js.Any])
+    inline def CLICK_=(x: click): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLICK")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/popover/popover", "PopoverInteractionKind.CLICK_TARGET_ONLY")
     @js.native
     def CLICK_TARGET_ONLY: `click-target` = js.native
-    @scala.inline
-    def CLICK_TARGET_ONLY_=(x: `click-target`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLICK_TARGET_ONLY")(x.asInstanceOf[js.Any])
+    inline def CLICK_TARGET_ONLY_=(x: `click-target`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLICK_TARGET_ONLY")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/popover/popover", "PopoverInteractionKind.HOVER")
     @js.native
     def HOVER: hover = js.native
-    @scala.inline
-    def HOVER_=(x: hover): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HOVER")(x.asInstanceOf[js.Any])
+    inline def HOVER_=(x: hover): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HOVER")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/popover/popover", "PopoverInteractionKind.HOVER_TARGET_ONLY")
     @js.native
     def HOVER_TARGET_ONLY: `hover-target` = js.native
-    @scala.inline
-    def HOVER_TARGET_ONLY_=(x: `hover-target`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HOVER_TARGET_ONLY")(x.asInstanceOf[js.Any])
+    inline def HOVER_TARGET_ONLY_=(x: `hover-target`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HOVER_TARGET_ONLY")(x.asInstanceOf[js.Any])
   }
   
   trait IPopoverProps
@@ -211,56 +205,40 @@ object popoverMod {
   }
   object IPopoverProps {
     
-    @scala.inline
-    def apply(): IPopoverProps = {
+    inline def apply(): IPopoverProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IPopoverProps]
     }
     
-    @scala.inline
-    implicit class IPopoverPropsMutableBuilder[Self <: IPopoverProps] (val x: Self) extends AnyVal {
+    extension [Self <: IPopoverProps](x: Self) {
       
-      @scala.inline
-      def setBackdropProps(value: HTMLProps[HTMLDivElement]): Self = StObject.set(x, "backdropProps", value.asInstanceOf[js.Any])
+      inline def setBackdropProps(value: HTMLProps[HTMLDivElement]): Self = StObject.set(x, "backdropProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackdropPropsUndefined: Self = StObject.set(x, "backdropProps", js.undefined)
+      inline def setBackdropPropsUndefined: Self = StObject.set(x, "backdropProps", js.undefined)
       
-      @scala.inline
-      def setContent(value: String | Element): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String | Element): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      inline def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+      inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
-      @scala.inline
-      def setHasBackdrop(value: Boolean): Self = StObject.set(x, "hasBackdrop", value.asInstanceOf[js.Any])
+      inline def setHasBackdrop(value: Boolean): Self = StObject.set(x, "hasBackdrop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasBackdropUndefined: Self = StObject.set(x, "hasBackdrop", js.undefined)
+      inline def setHasBackdropUndefined: Self = StObject.set(x, "hasBackdrop", js.undefined)
       
-      @scala.inline
-      def setInteractionKind(value: PopoverInteractionKind): Self = StObject.set(x, "interactionKind", value.asInstanceOf[js.Any])
+      inline def setInteractionKind(value: PopoverInteractionKind): Self = StObject.set(x, "interactionKind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInteractionKindUndefined: Self = StObject.set(x, "interactionKind", js.undefined)
+      inline def setInteractionKindUndefined: Self = StObject.set(x, "interactionKind", js.undefined)
       
-      @scala.inline
-      def setPopoverRef(value: /* ref */ HTMLElement | Null => Unit): Self = StObject.set(x, "popoverRef", js.Any.fromFunction1(value))
+      inline def setPopoverRef(value: /* ref */ HTMLElement | Null => Unit): Self = StObject.set(x, "popoverRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPopoverRefUndefined: Self = StObject.set(x, "popoverRef", js.undefined)
+      inline def setPopoverRefUndefined: Self = StObject.set(x, "popoverRef", js.undefined)
       
-      @scala.inline
-      def setTarget(value: String | Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String | Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }
   }
   
@@ -274,23 +252,18 @@ object popoverMod {
   }
   object IPopoverState {
     
-    @scala.inline
-    def apply(hasDarkParent: Boolean, isOpen: Boolean, transformOrigin: String): IPopoverState = {
+    inline def apply(hasDarkParent: Boolean, isOpen: Boolean, transformOrigin: String): IPopoverState = {
       val __obj = js.Dynamic.literal(hasDarkParent = hasDarkParent.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], transformOrigin = transformOrigin.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPopoverState]
     }
     
-    @scala.inline
-    implicit class IPopoverStateMutableBuilder[Self <: IPopoverState] (val x: Self) extends AnyVal {
+    extension [Self <: IPopoverState](x: Self) {
       
-      @scala.inline
-      def setHasDarkParent(value: Boolean): Self = StObject.set(x, "hasDarkParent", value.asInstanceOf[js.Any])
+      inline def setHasDarkParent(value: Boolean): Self = StObject.set(x, "hasDarkParent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+      inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformOrigin(value: String): Self = StObject.set(x, "transformOrigin", value.asInstanceOf[js.Any])
+      inline def setTransformOrigin(value: String): Self = StObject.set(x, "transformOrigin", value.asInstanceOf[js.Any])
     }
   }
 }

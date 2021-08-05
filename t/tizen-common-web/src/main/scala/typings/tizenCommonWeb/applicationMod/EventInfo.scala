@@ -25,19 +25,15 @@ trait EventInfo extends StObject {
 }
 object EventInfo {
   
-  @scala.inline
-  def apply(appId: ApplicationId, name: String): EventInfo = {
+  inline def apply(appId: ApplicationId, name: String): EventInfo = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventInfo]
   }
   
-  @scala.inline
-  implicit class EventInfoMutableBuilder[Self <: EventInfo] (val x: Self) extends AnyVal {
+  extension [Self <: EventInfo](x: Self) {
     
-    @scala.inline
-    def setAppId(value: ApplicationId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: ApplicationId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

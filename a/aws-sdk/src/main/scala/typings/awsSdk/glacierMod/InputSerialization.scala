@@ -13,19 +13,15 @@ trait InputSerialization extends StObject {
 }
 object InputSerialization {
   
-  @scala.inline
-  def apply(): InputSerialization = {
+  inline def apply(): InputSerialization = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InputSerialization]
   }
   
-  @scala.inline
-  implicit class InputSerializationMutableBuilder[Self <: InputSerialization] (val x: Self) extends AnyVal {
+  extension [Self <: InputSerialization](x: Self) {
     
-    @scala.inline
-    def setCsv(value: CSVInput): Self = StObject.set(x, "csv", value.asInstanceOf[js.Any])
+    inline def setCsv(value: CSVInput): Self = StObject.set(x, "csv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCsvUndefined: Self = StObject.set(x, "csv", js.undefined)
+    inline def setCsvUndefined: Self = StObject.set(x, "csv", js.undefined)
   }
 }

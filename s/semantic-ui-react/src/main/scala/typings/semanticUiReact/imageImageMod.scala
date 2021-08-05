@@ -42,8 +42,7 @@ object imageImageMod extends Shortcut {
        with /* key */ StringDictionary[js.Any]
   object ImageProps {
     
-    @scala.inline
-    def apply(): ImageProps = {
+    inline def apply(): ImageProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ImageProps]
     }
@@ -119,156 +118,108 @@ object imageImageMod extends Shortcut {
   }
   object StrictImageProps {
     
-    @scala.inline
-    def apply(): StrictImageProps = {
+    inline def apply(): StrictImageProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictImageProps]
     }
     
-    @scala.inline
-    implicit class StrictImagePropsMutableBuilder[Self <: StrictImageProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictImageProps](x: Self) {
       
-      @scala.inline
-      def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setAvatar(value: Boolean): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
+      inline def setAvatar(value: Boolean): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvatarUndefined: Self = StObject.set(x, "avatar", js.undefined)
+      inline def setAvatarUndefined: Self = StObject.set(x, "avatar", js.undefined)
       
-      @scala.inline
-      def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
+      inline def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderedUndefined: Self = StObject.set(x, "bordered", js.undefined)
+      inline def setBorderedUndefined: Self = StObject.set(x, "bordered", js.undefined)
       
-      @scala.inline
-      def setCentered(value: Boolean): Self = StObject.set(x, "centered", value.asInstanceOf[js.Any])
+      inline def setCentered(value: Boolean): Self = StObject.set(x, "centered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCenteredUndefined: Self = StObject.set(x, "centered", js.undefined)
+      inline def setCenteredUndefined: Self = StObject.set(x, "centered", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setCircular(value: Boolean): Self = StObject.set(x, "circular", value.asInstanceOf[js.Any])
+      inline def setCircular(value: Boolean): Self = StObject.set(x, "circular", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCircularUndefined: Self = StObject.set(x, "circular", js.undefined)
+      inline def setCircularUndefined: Self = StObject.set(x, "circular", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setContent(value: SemanticShorthandContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: SemanticShorthandContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setDimmer(value: SemanticShorthandItem[DimmerProps]): Self = StObject.set(x, "dimmer", value.asInstanceOf[js.Any])
+      inline def setDimmer(value: SemanticShorthandItem[DimmerProps]): Self = StObject.set(x, "dimmer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDimmerFunction3(
+      inline def setDimmerFunction3(
         value: (/* component */ ElementType[DimmerProps], DimmerProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
       ): Self = StObject.set(x, "dimmer", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setDimmerUndefined: Self = StObject.set(x, "dimmer", js.undefined)
+      inline def setDimmerUndefined: Self = StObject.set(x, "dimmer", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setFloated(value: SemanticFLOATS): Self = StObject.set(x, "floated", value.asInstanceOf[js.Any])
+      inline def setFloated(value: SemanticFLOATS): Self = StObject.set(x, "floated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFloatedUndefined: Self = StObject.set(x, "floated", js.undefined)
+      inline def setFloatedUndefined: Self = StObject.set(x, "floated", js.undefined)
       
-      @scala.inline
-      def setFluid(value: Boolean): Self = StObject.set(x, "fluid", value.asInstanceOf[js.Any])
+      inline def setFluid(value: Boolean): Self = StObject.set(x, "fluid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFluidUndefined: Self = StObject.set(x, "fluid", js.undefined)
+      inline def setFluidUndefined: Self = StObject.set(x, "fluid", js.undefined)
       
-      @scala.inline
-      def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+      inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
       
-      @scala.inline
-      def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+      inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
       
-      @scala.inline
-      def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+      inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
+      inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
       
-      @scala.inline
-      def setLabel(value: SemanticShorthandItem[LabelProps]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: SemanticShorthandItem[LabelProps]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelFunction3(
+      inline def setLabelFunction3(
         value: (/* component */ ElementType[LabelProps], LabelProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
       ): Self = StObject.set(x, "label", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setRounded(value: Boolean): Self = StObject.set(x, "rounded", value.asInstanceOf[js.Any])
+      inline def setRounded(value: Boolean): Self = StObject.set(x, "rounded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoundedUndefined: Self = StObject.set(x, "rounded", js.undefined)
+      inline def setRoundedUndefined: Self = StObject.set(x, "rounded", js.undefined)
       
-      @scala.inline
-      def setSize(value: SemanticSIZES): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: SemanticSIZES): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setSpaced(value: Boolean | left | right): Self = StObject.set(x, "spaced", value.asInstanceOf[js.Any])
+      inline def setSpaced(value: Boolean | left | right): Self = StObject.set(x, "spaced", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpacedUndefined: Self = StObject.set(x, "spaced", js.undefined)
+      inline def setSpacedUndefined: Self = StObject.set(x, "spaced", js.undefined)
       
-      @scala.inline
-      def setUi(value: Boolean): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
+      inline def setUi(value: Boolean): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUiUndefined: Self = StObject.set(x, "ui", js.undefined)
+      inline def setUiUndefined: Self = StObject.set(x, "ui", js.undefined)
       
-      @scala.inline
-      def setVerticalAlign(value: SemanticVERTICALALIGNMENTS): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+      inline def setVerticalAlign(value: SemanticVERTICALALIGNMENTS): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
+      inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
       
-      @scala.inline
-      def setWrapped(value: Boolean): Self = StObject.set(x, "wrapped", value.asInstanceOf[js.Any])
+      inline def setWrapped(value: Boolean): Self = StObject.set(x, "wrapped", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrappedUndefined: Self = StObject.set(x, "wrapped", js.undefined)
+      inline def setWrappedUndefined: Self = StObject.set(x, "wrapped", js.undefined)
     }
   }
   

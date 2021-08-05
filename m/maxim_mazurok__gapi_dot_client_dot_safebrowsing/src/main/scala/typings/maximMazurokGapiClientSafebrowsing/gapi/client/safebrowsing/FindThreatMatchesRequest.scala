@@ -14,25 +14,19 @@ trait FindThreatMatchesRequest extends StObject {
 }
 object FindThreatMatchesRequest {
   
-  @scala.inline
-  def apply(): FindThreatMatchesRequest = {
+  inline def apply(): FindThreatMatchesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FindThreatMatchesRequest]
   }
   
-  @scala.inline
-  implicit class FindThreatMatchesRequestMutableBuilder[Self <: FindThreatMatchesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: FindThreatMatchesRequest](x: Self) {
     
-    @scala.inline
-    def setClient(value: ClientInfo): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+    inline def setClient(value: ClientInfo): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
+    inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
     
-    @scala.inline
-    def setThreatInfo(value: ThreatInfo): Self = StObject.set(x, "threatInfo", value.asInstanceOf[js.Any])
+    inline def setThreatInfo(value: ThreatInfo): Self = StObject.set(x, "threatInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreatInfoUndefined: Self = StObject.set(x, "threatInfo", js.undefined)
+    inline def setThreatInfoUndefined: Self = StObject.set(x, "threatInfo", js.undefined)
   }
 }

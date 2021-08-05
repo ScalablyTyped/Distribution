@@ -12,6 +12,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createConsoleLogger(logLevel: LogLevelType): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("createConsoleLogger")(logLevel.asInstanceOf[js.Any]).asInstanceOf[Logger]
+  inline def createConsoleLogger(logLevel: LogLevelType): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("createConsoleLogger")(logLevel.asInstanceOf[js.Any]).asInstanceOf[Logger]
 }

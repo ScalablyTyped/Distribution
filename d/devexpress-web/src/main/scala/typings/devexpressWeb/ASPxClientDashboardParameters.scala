@@ -28,8 +28,7 @@ trait ASPxClientDashboardParameters extends StObject {
 }
 object ASPxClientDashboardParameters {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetParameterByIndex: Double => ASPxClientDashboardParameter,
     GetParameterByName: String => ASPxClientDashboardParameter,
     GetParameterList: () => js.Array[ASPxClientDashboardParameter]
@@ -38,16 +37,12 @@ object ASPxClientDashboardParameters {
     __obj.asInstanceOf[ASPxClientDashboardParameters]
   }
   
-  @scala.inline
-  implicit class ASPxClientDashboardParametersMutableBuilder[Self <: ASPxClientDashboardParameters] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientDashboardParameters](x: Self) {
     
-    @scala.inline
-    def setGetParameterByIndex(value: Double => ASPxClientDashboardParameter): Self = StObject.set(x, "GetParameterByIndex", js.Any.fromFunction1(value))
+    inline def setGetParameterByIndex(value: Double => ASPxClientDashboardParameter): Self = StObject.set(x, "GetParameterByIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetParameterByName(value: String => ASPxClientDashboardParameter): Self = StObject.set(x, "GetParameterByName", js.Any.fromFunction1(value))
+    inline def setGetParameterByName(value: String => ASPxClientDashboardParameter): Self = StObject.set(x, "GetParameterByName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetParameterList(value: () => js.Array[ASPxClientDashboardParameter]): Self = StObject.set(x, "GetParameterList", js.Any.fromFunction0(value))
+    inline def setGetParameterList(value: () => js.Array[ASPxClientDashboardParameter]): Self = StObject.set(x, "GetParameterList", js.Any.fromFunction0(value))
   }
 }

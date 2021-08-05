@@ -12,22 +12,17 @@ trait MaxAttrs extends StObject {
 }
 object MaxAttrs {
   
-  @scala.inline
-  def apply(keepDims: Boolean, reductionIndices: Double | js.Array[Double]): MaxAttrs = {
+  inline def apply(keepDims: Boolean, reductionIndices: Double | js.Array[Double]): MaxAttrs = {
     val __obj = js.Dynamic.literal(keepDims = keepDims.asInstanceOf[js.Any], reductionIndices = reductionIndices.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaxAttrs]
   }
   
-  @scala.inline
-  implicit class MaxAttrsMutableBuilder[Self <: MaxAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: MaxAttrs](x: Self) {
     
-    @scala.inline
-    def setKeepDims(value: Boolean): Self = StObject.set(x, "keepDims", value.asInstanceOf[js.Any])
+    inline def setKeepDims(value: Boolean): Self = StObject.set(x, "keepDims", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReductionIndices(value: Double | js.Array[Double]): Self = StObject.set(x, "reductionIndices", value.asInstanceOf[js.Any])
+    inline def setReductionIndices(value: Double | js.Array[Double]): Self = StObject.set(x, "reductionIndices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReductionIndicesVarargs(value: Double*): Self = StObject.set(x, "reductionIndices", js.Array(value :_*))
+    inline def setReductionIndicesVarargs(value: Double*): Self = StObject.set(x, "reductionIndices", js.Array(value :_*))
   }
 }

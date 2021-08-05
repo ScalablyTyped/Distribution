@@ -10,6 +10,5 @@ object normalizePagePathMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def normalizePagePath(page: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizePagePath")(page.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def normalizePagePath(page: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizePagePath")(page.asInstanceOf[js.Any]).asInstanceOf[String]
 }

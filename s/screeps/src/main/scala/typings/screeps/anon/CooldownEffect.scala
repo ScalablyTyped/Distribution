@@ -33,8 +33,7 @@ trait CooldownEffect extends StObject {
 }
 object CooldownEffect {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     effect: js.Tuple5[`0.2`, `0.4`, `0.6`, `0.8`, `1.0`],
     level: js.Tuple5[
       typings.screeps.screepsNumbers.`0`, 
@@ -48,20 +47,15 @@ object CooldownEffect {
     __obj.asInstanceOf[CooldownEffect]
   }
   
-  @scala.inline
-  implicit class CooldownEffectMutableBuilder[Self <: CooldownEffect] (val x: Self) extends AnyVal {
+  extension [Self <: CooldownEffect](x: Self) {
     
-    @scala.inline
-    def setClassName(value: operator): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: operator): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCooldown(value: `50`): Self = StObject.set(x, "cooldown", value.asInstanceOf[js.Any])
+    inline def setCooldown(value: `50`): Self = StObject.set(x, "cooldown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffect(value: js.Tuple5[`0.2`, `0.4`, `0.6`, `0.8`, `1.0`]): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
+    inline def setEffect(value: js.Tuple5[`0.2`, `0.4`, `0.6`, `0.8`, `1.0`]): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevel(
+    inline def setLevel(
       value: js.Tuple5[
           typings.screeps.screepsNumbers.`0`, 
           typings.screeps.screepsNumbers.`2`, 
@@ -71,10 +65,8 @@ object CooldownEffect {
         ]
     ): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOps(value: typings.screeps.screepsNumbers.`2`): Self = StObject.set(x, "ops", value.asInstanceOf[js.Any])
+    inline def setOps(value: typings.screeps.screepsNumbers.`2`): Self = StObject.set(x, "ops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: typings.screeps.screepsNumbers.`3`): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: typings.screeps.screepsNumbers.`3`): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
   }
 }

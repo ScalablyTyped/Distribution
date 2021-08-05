@@ -22,8 +22,7 @@ trait ForStatement
 }
 object ForStatement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -54,25 +53,18 @@ object ForStatement {
     __obj.asInstanceOf[ForStatement]
   }
   
-  @scala.inline
-  implicit class ForStatementMutableBuilder[Self <: ForStatement] (val x: Self) extends AnyVal {
+  extension [Self <: ForStatement](x: Self) {
     
-    @scala.inline
-    def setCondition(value: AST): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: AST): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncrementor(value: AST): Self = StObject.set(x, "incrementor", value.asInstanceOf[js.Any])
+    inline def setIncrementor(value: AST): Self = StObject.set(x, "incrementor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitializer(value: AST): Self = StObject.set(x, "initializer", value.asInstanceOf[js.Any])
+    inline def setInitializer(value: AST): Self = StObject.set(x, "initializer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatement(value: AST): Self = StObject.set(x, "statement", value.asInstanceOf[js.Any])
+    inline def setStatement(value: AST): Self = StObject.set(x, "statement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructuralEquals(value: (ForStatement, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (ForStatement, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setVariableDeclaration(value: VariableDeclaration): Self = StObject.set(x, "variableDeclaration", value.asInstanceOf[js.Any])
+    inline def setVariableDeclaration(value: VariableDeclaration): Self = StObject.set(x, "variableDeclaration", value.asInstanceOf[js.Any])
   }
 }

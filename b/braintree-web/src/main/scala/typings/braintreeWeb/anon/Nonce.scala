@@ -10,16 +10,13 @@ trait Nonce extends StObject {
 }
 object Nonce {
   
-  @scala.inline
-  def apply(nonce: String): Nonce = {
+  inline def apply(nonce: String): Nonce = {
     val __obj = js.Dynamic.literal(nonce = nonce.asInstanceOf[js.Any])
     __obj.asInstanceOf[Nonce]
   }
   
-  @scala.inline
-  implicit class NonceMutableBuilder[Self <: Nonce] (val x: Self) extends AnyVal {
+  extension [Self <: Nonce](x: Self) {
     
-    @scala.inline
-    def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
   }
 }

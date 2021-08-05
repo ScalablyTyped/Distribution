@@ -14,17 +14,14 @@ trait ImportDefaultSpecifier
 }
 object ImportDefaultSpecifier {
   
-  @scala.inline
-  def apply(local: Identifier): ImportDefaultSpecifier = {
+  inline def apply(local: Identifier): ImportDefaultSpecifier = {
     val __obj = js.Dynamic.literal(local = local.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ImportDefaultSpecifier")
     __obj.asInstanceOf[ImportDefaultSpecifier]
   }
   
-  @scala.inline
-  implicit class ImportDefaultSpecifierMutableBuilder[Self <: ImportDefaultSpecifier] (val x: Self) extends AnyVal {
+  extension [Self <: ImportDefaultSpecifier](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.estree.estreeStrings.ImportDefaultSpecifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estree.estreeStrings.ImportDefaultSpecifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

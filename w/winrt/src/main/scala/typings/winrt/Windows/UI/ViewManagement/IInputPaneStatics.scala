@@ -10,16 +10,13 @@ trait IInputPaneStatics extends StObject {
 }
 object IInputPaneStatics {
   
-  @scala.inline
-  def apply(getForCurrentView: () => InputPane): IInputPaneStatics = {
+  inline def apply(getForCurrentView: () => InputPane): IInputPaneStatics = {
     val __obj = js.Dynamic.literal(getForCurrentView = js.Any.fromFunction0(getForCurrentView))
     __obj.asInstanceOf[IInputPaneStatics]
   }
   
-  @scala.inline
-  implicit class IInputPaneStaticsMutableBuilder[Self <: IInputPaneStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IInputPaneStatics](x: Self) {
     
-    @scala.inline
-    def setGetForCurrentView(value: () => InputPane): Self = StObject.set(x, "getForCurrentView", js.Any.fromFunction0(value))
+    inline def setGetForCurrentView(value: () => InputPane): Self = StObject.set(x, "getForCurrentView", js.Any.fromFunction0(value))
   }
 }

@@ -14,25 +14,19 @@ trait WatcherAckWatch
 }
 object WatcherAckWatch {
   
-  @scala.inline
-  def apply(watch_id: String): WatcherAckWatch = {
+  inline def apply(watch_id: String): WatcherAckWatch = {
     val __obj = js.Dynamic.literal(watch_id = watch_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[WatcherAckWatch]
   }
   
-  @scala.inline
-  implicit class WatcherAckWatchMutableBuilder[Self <: WatcherAckWatch] (val x: Self) extends AnyVal {
+  extension [Self <: WatcherAckWatch](x: Self) {
     
-    @scala.inline
-    def setAction_id(value: String | js.Array[String]): Self = StObject.set(x, "action_id", value.asInstanceOf[js.Any])
+    inline def setAction_id(value: String | js.Array[String]): Self = StObject.set(x, "action_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAction_idUndefined: Self = StObject.set(x, "action_id", js.undefined)
+    inline def setAction_idUndefined: Self = StObject.set(x, "action_id", js.undefined)
     
-    @scala.inline
-    def setAction_idVarargs(value: String*): Self = StObject.set(x, "action_id", js.Array(value :_*))
+    inline def setAction_idVarargs(value: String*): Self = StObject.set(x, "action_id", js.Array(value :_*))
     
-    @scala.inline
-    def setWatch_id(value: String): Self = StObject.set(x, "watch_id", value.asInstanceOf[js.Any])
+    inline def setWatch_id(value: String): Self = StObject.set(x, "watch_id", value.asInstanceOf[js.Any])
   }
 }

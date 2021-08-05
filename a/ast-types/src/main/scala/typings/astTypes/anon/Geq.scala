@@ -15,22 +15,17 @@ trait Geq extends StObject {
 }
 object Geq {
   
-  @scala.inline
-  def apply(defaults: EmptyArray, geq: js.Any => Type[js.Any], isPrimitive: Type[js.Any]): Geq = {
+  inline def apply(defaults: EmptyArray, geq: js.Any => Type[js.Any], isPrimitive: Type[js.Any]): Geq = {
     val __obj = js.Dynamic.literal(defaults = defaults.asInstanceOf[js.Any], geq = js.Any.fromFunction1(geq), isPrimitive = isPrimitive.asInstanceOf[js.Any])
     __obj.asInstanceOf[Geq]
   }
   
-  @scala.inline
-  implicit class GeqMutableBuilder[Self <: Geq] (val x: Self) extends AnyVal {
+  extension [Self <: Geq](x: Self) {
     
-    @scala.inline
-    def setDefaults(value: EmptyArray): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+    inline def setDefaults(value: EmptyArray): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeq(value: js.Any => Type[js.Any]): Self = StObject.set(x, "geq", js.Any.fromFunction1(value))
+    inline def setGeq(value: js.Any => Type[js.Any]): Self = StObject.set(x, "geq", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsPrimitive(value: Type[js.Any]): Self = StObject.set(x, "isPrimitive", value.asInstanceOf[js.Any])
+    inline def setIsPrimitive(value: Type[js.Any]): Self = StObject.set(x, "isPrimitive", value.asInstanceOf[js.Any])
   }
 }

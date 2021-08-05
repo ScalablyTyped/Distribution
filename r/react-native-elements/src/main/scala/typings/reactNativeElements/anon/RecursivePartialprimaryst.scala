@@ -20,43 +20,31 @@ trait RecursivePartialprimaryst extends StObject {
 }
 object RecursivePartialprimaryst {
   
-  @scala.inline
-  def apply(): RecursivePartialprimaryst = {
+  inline def apply(): RecursivePartialprimaryst = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecursivePartialprimaryst]
   }
   
-  @scala.inline
-  implicit class RecursivePartialprimarystMutableBuilder[Self <: RecursivePartialprimaryst] (val x: Self) extends AnyVal {
+  extension [Self <: RecursivePartialprimaryst](x: Self) {
     
-    @scala.inline
-    def setError(value: RecursivePartial[String]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: RecursivePartial[String]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setPrimary(value: RecursivePartial[String]): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+    inline def setPrimary(value: RecursivePartial[String]): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
+    inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
     
-    @scala.inline
-    def setSecondary(value: RecursivePartial[String]): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
+    inline def setSecondary(value: RecursivePartial[String]): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
+    inline def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
     
-    @scala.inline
-    def setSuccess(value: RecursivePartial[String]): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: RecursivePartial[String]): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
-    @scala.inline
-    def setWarning(value: RecursivePartial[String]): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: RecursivePartial[String]): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+    inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

@@ -18,22 +18,17 @@ trait StreamSpecification extends StObject {
 }
 object StreamSpecification {
   
-  @scala.inline
-  def apply(StreamEnabled: StreamEnabled): StreamSpecification = {
+  inline def apply(StreamEnabled: StreamEnabled): StreamSpecification = {
     val __obj = js.Dynamic.literal(StreamEnabled = StreamEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamSpecification]
   }
   
-  @scala.inline
-  implicit class StreamSpecificationMutableBuilder[Self <: StreamSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: StreamSpecification](x: Self) {
     
-    @scala.inline
-    def setStreamEnabled(value: StreamEnabled): Self = StObject.set(x, "StreamEnabled", value.asInstanceOf[js.Any])
+    inline def setStreamEnabled(value: StreamEnabled): Self = StObject.set(x, "StreamEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamViewType(value: StreamViewType): Self = StObject.set(x, "StreamViewType", value.asInstanceOf[js.Any])
+    inline def setStreamViewType(value: StreamViewType): Self = StObject.set(x, "StreamViewType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamViewTypeUndefined: Self = StObject.set(x, "StreamViewType", js.undefined)
+    inline def setStreamViewTypeUndefined: Self = StObject.set(x, "StreamViewType", js.undefined)
   }
 }

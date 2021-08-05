@@ -21,49 +21,35 @@ trait Email extends StObject {
 }
 object Email {
   
-  @scala.inline
-  def apply(): Email = {
+  inline def apply(): Email = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Email]
   }
   
-  @scala.inline
-  implicit class EmailMutableBuilder[Self <: Email] (val x: Self) extends AnyVal {
+  extension [Self <: Email](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailNull: Self = StObject.set(x, "email", null)
+    inline def setEmailNull: Self = StObject.set(x, "email", null)
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setFromEmail(value: String): Self = StObject.set(x, "fromEmail", value.asInstanceOf[js.Any])
+    inline def setFromEmail(value: String): Self = StObject.set(x, "fromEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromEmailNull: Self = StObject.set(x, "fromEmail", null)
+    inline def setFromEmailNull: Self = StObject.set(x, "fromEmail", null)
     
-    @scala.inline
-    def setFromEmailUndefined: Self = StObject.set(x, "fromEmail", js.undefined)
+    inline def setFromEmailUndefined: Self = StObject.set(x, "fromEmail", js.undefined)
     
-    @scala.inline
-    def setMultiFactorInfo(value: MultiFactorInfo): Self = StObject.set(x, "multiFactorInfo", value.asInstanceOf[js.Any])
+    inline def setMultiFactorInfo(value: MultiFactorInfo): Self = StObject.set(x, "multiFactorInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiFactorInfoNull: Self = StObject.set(x, "multiFactorInfo", null)
+    inline def setMultiFactorInfoNull: Self = StObject.set(x, "multiFactorInfo", null)
     
-    @scala.inline
-    def setMultiFactorInfoUndefined: Self = StObject.set(x, "multiFactorInfo", js.undefined)
+    inline def setMultiFactorInfoUndefined: Self = StObject.set(x, "multiFactorInfo", js.undefined)
     
-    @scala.inline
-    def setPreviousEmail(value: String): Self = StObject.set(x, "previousEmail", value.asInstanceOf[js.Any])
+    inline def setPreviousEmail(value: String): Self = StObject.set(x, "previousEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousEmailNull: Self = StObject.set(x, "previousEmail", null)
+    inline def setPreviousEmailNull: Self = StObject.set(x, "previousEmail", null)
     
-    @scala.inline
-    def setPreviousEmailUndefined: Self = StObject.set(x, "previousEmail", js.undefined)
+    inline def setPreviousEmailUndefined: Self = StObject.set(x, "previousEmail", js.undefined)
   }
 }

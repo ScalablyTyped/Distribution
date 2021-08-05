@@ -18,8 +18,7 @@ trait TokenContext extends StObject {
 }
 object TokenContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     active: Boolean,
     onBlur: js.Any => Unit,
     onClick: js.Any => Unit,
@@ -30,22 +29,16 @@ object TokenContext {
     __obj.asInstanceOf[TokenContext]
   }
   
-  @scala.inline
-  implicit class TokenContextMutableBuilder[Self <: TokenContext] (val x: Self) extends AnyVal {
+  extension [Self <: TokenContext](x: Self) {
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnBlur(value: js.Any => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+    inline def setOnBlur(value: js.Any => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnClick(value: js.Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: js.Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnFocus(value: js.Any => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+    inline def setOnFocus(value: js.Any => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnKeyDown(value: js.Any => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+    inline def setOnKeyDown(value: js.Any => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
   }
 }

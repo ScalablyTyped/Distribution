@@ -41,44 +41,32 @@ object bearerStrategyMod {
   }
   object IBearerStrategyOption {
     
-    @scala.inline
-    def apply(clientID: String, identityMetadata: String): IBearerStrategyOption = {
+    inline def apply(clientID: String, identityMetadata: String): IBearerStrategyOption = {
       val __obj = js.Dynamic.literal(clientID = clientID.asInstanceOf[js.Any], identityMetadata = identityMetadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[IBearerStrategyOption]
     }
     
-    @scala.inline
-    implicit class IBearerStrategyOptionMutableBuilder[Self <: IBearerStrategyOption] (val x: Self) extends AnyVal {
+    extension [Self <: IBearerStrategyOption](x: Self) {
       
-      @scala.inline
-      def setAllowMultiAudiencesInToken(value: Boolean): Self = StObject.set(x, "allowMultiAudiencesInToken", value.asInstanceOf[js.Any])
+      inline def setAllowMultiAudiencesInToken(value: Boolean): Self = StObject.set(x, "allowMultiAudiencesInToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowMultiAudiencesInTokenUndefined: Self = StObject.set(x, "allowMultiAudiencesInToken", js.undefined)
+      inline def setAllowMultiAudiencesInTokenUndefined: Self = StObject.set(x, "allowMultiAudiencesInToken", js.undefined)
       
-      @scala.inline
-      def setAudience(value: String | js.Array[String]): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
+      inline def setAudience(value: String | js.Array[String]): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
+      inline def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
       
-      @scala.inline
-      def setAudienceVarargs(value: String*): Self = StObject.set(x, "audience", js.Array(value :_*))
+      inline def setAudienceVarargs(value: String*): Self = StObject.set(x, "audience", js.Array(value :_*))
       
-      @scala.inline
-      def setPolicyName(value: String): Self = StObject.set(x, "policyName", value.asInstanceOf[js.Any])
+      inline def setPolicyName(value: String): Self = StObject.set(x, "policyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyNameUndefined: Self = StObject.set(x, "policyName", js.undefined)
+      inline def setPolicyNameUndefined: Self = StObject.set(x, "policyName", js.undefined)
       
-      @scala.inline
-      def setScope(value: js.Array[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: js.Array[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      @scala.inline
-      def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
     }
   }
   
@@ -90,17 +78,14 @@ object bearerStrategyMod {
   }
   object IBearerStrategyOptionWithRequest {
     
-    @scala.inline
-    def apply(clientID: String, identityMetadata: String, passReqToCallback: Boolean): IBearerStrategyOptionWithRequest = {
+    inline def apply(clientID: String, identityMetadata: String, passReqToCallback: Boolean): IBearerStrategyOptionWithRequest = {
       val __obj = js.Dynamic.literal(clientID = clientID.asInstanceOf[js.Any], identityMetadata = identityMetadata.asInstanceOf[js.Any], passReqToCallback = passReqToCallback.asInstanceOf[js.Any])
       __obj.asInstanceOf[IBearerStrategyOptionWithRequest]
     }
     
-    @scala.inline
-    implicit class IBearerStrategyOptionWithRequestMutableBuilder[Self <: IBearerStrategyOptionWithRequest] (val x: Self) extends AnyVal {
+    extension [Self <: IBearerStrategyOptionWithRequest](x: Self) {
       
-      @scala.inline
-      def setPassReqToCallback(value: Boolean): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
+      inline def setPassReqToCallback(value: Boolean): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
     }
   }
   

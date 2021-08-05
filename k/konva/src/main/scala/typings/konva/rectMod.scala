@@ -31,23 +31,18 @@ object rectMod {
   }
   object RectConfig {
     
-    @scala.inline
-    def apply(): RectConfig = {
+    inline def apply(): RectConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RectConfig]
     }
     
-    @scala.inline
-    implicit class RectConfigMutableBuilder[Self <: RectConfig] (val x: Self) extends AnyVal {
+    extension [Self <: RectConfig](x: Self) {
       
-      @scala.inline
-      def setCornerRadius(value: Double | js.Array[Double]): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
+      inline def setCornerRadius(value: Double | js.Array[Double]): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCornerRadiusUndefined: Self = StObject.set(x, "cornerRadius", js.undefined)
+      inline def setCornerRadiusUndefined: Self = StObject.set(x, "cornerRadius", js.undefined)
       
-      @scala.inline
-      def setCornerRadiusVarargs(value: Double*): Self = StObject.set(x, "cornerRadius", js.Array(value :_*))
+      inline def setCornerRadiusVarargs(value: Double*): Self = StObject.set(x, "cornerRadius", js.Array(value :_*))
     }
   }
 }

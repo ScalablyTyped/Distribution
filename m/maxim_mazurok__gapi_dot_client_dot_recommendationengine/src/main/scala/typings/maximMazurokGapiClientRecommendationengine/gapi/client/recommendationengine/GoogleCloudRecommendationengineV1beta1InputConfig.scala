@@ -20,37 +20,27 @@ trait GoogleCloudRecommendationengineV1beta1InputConfig extends StObject {
 }
 object GoogleCloudRecommendationengineV1beta1InputConfig {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommendationengineV1beta1InputConfig = {
+  inline def apply(): GoogleCloudRecommendationengineV1beta1InputConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1InputConfig]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1InputConfigMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1InputConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommendationengineV1beta1InputConfig](x: Self) {
     
-    @scala.inline
-    def setBigQuerySource(value: GoogleCloudRecommendationengineV1beta1BigQuerySource): Self = StObject.set(x, "bigQuerySource", value.asInstanceOf[js.Any])
+    inline def setBigQuerySource(value: GoogleCloudRecommendationengineV1beta1BigQuerySource): Self = StObject.set(x, "bigQuerySource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBigQuerySourceUndefined: Self = StObject.set(x, "bigQuerySource", js.undefined)
+    inline def setBigQuerySourceUndefined: Self = StObject.set(x, "bigQuerySource", js.undefined)
     
-    @scala.inline
-    def setCatalogInlineSource(value: GoogleCloudRecommendationengineV1beta1CatalogInlineSource): Self = StObject.set(x, "catalogInlineSource", value.asInstanceOf[js.Any])
+    inline def setCatalogInlineSource(value: GoogleCloudRecommendationengineV1beta1CatalogInlineSource): Self = StObject.set(x, "catalogInlineSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogInlineSourceUndefined: Self = StObject.set(x, "catalogInlineSource", js.undefined)
+    inline def setCatalogInlineSourceUndefined: Self = StObject.set(x, "catalogInlineSource", js.undefined)
     
-    @scala.inline
-    def setGcsSource(value: GoogleCloudRecommendationengineV1beta1GcsSource): Self = StObject.set(x, "gcsSource", value.asInstanceOf[js.Any])
+    inline def setGcsSource(value: GoogleCloudRecommendationengineV1beta1GcsSource): Self = StObject.set(x, "gcsSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcsSourceUndefined: Self = StObject.set(x, "gcsSource", js.undefined)
+    inline def setGcsSourceUndefined: Self = StObject.set(x, "gcsSource", js.undefined)
     
-    @scala.inline
-    def setUserEventInlineSource(value: GoogleCloudRecommendationengineV1beta1UserEventInlineSource): Self = StObject.set(x, "userEventInlineSource", value.asInstanceOf[js.Any])
+    inline def setUserEventInlineSource(value: GoogleCloudRecommendationengineV1beta1UserEventInlineSource): Self = StObject.set(x, "userEventInlineSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserEventInlineSourceUndefined: Self = StObject.set(x, "userEventInlineSource", js.undefined)
+    inline def setUserEventInlineSourceUndefined: Self = StObject.set(x, "userEventInlineSource", js.undefined)
   }
 }

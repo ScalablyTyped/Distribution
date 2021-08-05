@@ -21,8 +21,7 @@ trait Geopoint extends StObject {
 }
 object Geopoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     altitudeReferenceSystem: AltitudeReferenceSystem,
     geoshapeType: GeoshapeType,
     position: BasicGeoposition,
@@ -32,19 +31,14 @@ object Geopoint {
     __obj.asInstanceOf[Geopoint]
   }
   
-  @scala.inline
-  implicit class GeopointMutableBuilder[Self <: Geopoint] (val x: Self) extends AnyVal {
+  extension [Self <: Geopoint](x: Self) {
     
-    @scala.inline
-    def setAltitudeReferenceSystem(value: AltitudeReferenceSystem): Self = StObject.set(x, "altitudeReferenceSystem", value.asInstanceOf[js.Any])
+    inline def setAltitudeReferenceSystem(value: AltitudeReferenceSystem): Self = StObject.set(x, "altitudeReferenceSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeoshapeType(value: GeoshapeType): Self = StObject.set(x, "geoshapeType", value.asInstanceOf[js.Any])
+    inline def setGeoshapeType(value: GeoshapeType): Self = StObject.set(x, "geoshapeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: BasicGeoposition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: BasicGeoposition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpatialReferenceId(value: Double): Self = StObject.set(x, "spatialReferenceId", value.asInstanceOf[js.Any])
+    inline def setSpatialReferenceId(value: Double): Self = StObject.set(x, "spatialReferenceId", value.asInstanceOf[js.Any])
   }
 }

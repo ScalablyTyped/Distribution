@@ -61,64 +61,45 @@ trait SetSelectedDataOptions extends StObject {
 }
 object SetSelectedDataOptions {
   
-  @scala.inline
-  def apply(): SetSelectedDataOptions = {
+  inline def apply(): SetSelectedDataOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SetSelectedDataOptions]
   }
   
-  @scala.inline
-  implicit class SetSelectedDataOptionsMutableBuilder[Self <: SetSelectedDataOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SetSelectedDataOptions](x: Self) {
     
-    @scala.inline
-    def setAsyncContext(value: js.Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
+    inline def setAsyncContext(value: js.Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsyncContextUndefined: Self = StObject.set(x, "asyncContext", js.undefined)
+    inline def setAsyncContextUndefined: Self = StObject.set(x, "asyncContext", js.undefined)
     
-    @scala.inline
-    def setCellFormat(value: js.Array[RangeFormatConfiguration]): Self = StObject.set(x, "cellFormat", value.asInstanceOf[js.Any])
+    inline def setCellFormat(value: js.Array[RangeFormatConfiguration]): Self = StObject.set(x, "cellFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellFormatUndefined: Self = StObject.set(x, "cellFormat", js.undefined)
+    inline def setCellFormatUndefined: Self = StObject.set(x, "cellFormat", js.undefined)
     
-    @scala.inline
-    def setCellFormatVarargs(value: RangeFormatConfiguration*): Self = StObject.set(x, "cellFormat", js.Array(value :_*))
+    inline def setCellFormatVarargs(value: RangeFormatConfiguration*): Self = StObject.set(x, "cellFormat", js.Array(value :_*))
     
-    @scala.inline
-    def setCoercionType(value: CoercionType | String): Self = StObject.set(x, "coercionType", value.asInstanceOf[js.Any])
+    inline def setCoercionType(value: CoercionType | String): Self = StObject.set(x, "coercionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoercionTypeUndefined: Self = StObject.set(x, "coercionType", js.undefined)
+    inline def setCoercionTypeUndefined: Self = StObject.set(x, "coercionType", js.undefined)
     
-    @scala.inline
-    def setImageHeight(value: Double): Self = StObject.set(x, "imageHeight", value.asInstanceOf[js.Any])
+    inline def setImageHeight(value: Double): Self = StObject.set(x, "imageHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageHeightUndefined: Self = StObject.set(x, "imageHeight", js.undefined)
+    inline def setImageHeightUndefined: Self = StObject.set(x, "imageHeight", js.undefined)
     
-    @scala.inline
-    def setImageLeft(value: Double): Self = StObject.set(x, "imageLeft", value.asInstanceOf[js.Any])
+    inline def setImageLeft(value: Double): Self = StObject.set(x, "imageLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageLeftUndefined: Self = StObject.set(x, "imageLeft", js.undefined)
+    inline def setImageLeftUndefined: Self = StObject.set(x, "imageLeft", js.undefined)
     
-    @scala.inline
-    def setImageTop(value: Double): Self = StObject.set(x, "imageTop", value.asInstanceOf[js.Any])
+    inline def setImageTop(value: Double): Self = StObject.set(x, "imageTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageTopUndefined: Self = StObject.set(x, "imageTop", js.undefined)
+    inline def setImageTopUndefined: Self = StObject.set(x, "imageTop", js.undefined)
     
-    @scala.inline
-    def setImageWidth(value: Double): Self = StObject.set(x, "imageWidth", value.asInstanceOf[js.Any])
+    inline def setImageWidth(value: Double): Self = StObject.set(x, "imageWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageWidthUndefined: Self = StObject.set(x, "imageWidth", js.undefined)
+    inline def setImageWidthUndefined: Self = StObject.set(x, "imageWidth", js.undefined)
     
-    @scala.inline
-    def setTableOptions(value: js.Object): Self = StObject.set(x, "tableOptions", value.asInstanceOf[js.Any])
+    inline def setTableOptions(value: js.Object): Self = StObject.set(x, "tableOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableOptionsUndefined: Self = StObject.set(x, "tableOptions", js.undefined)
+    inline def setTableOptionsUndefined: Self = StObject.set(x, "tableOptions", js.undefined)
   }
 }

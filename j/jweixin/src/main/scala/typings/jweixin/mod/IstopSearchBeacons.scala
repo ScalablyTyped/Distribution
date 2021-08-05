@@ -14,16 +14,13 @@ trait IstopSearchBeacons
 }
 object IstopSearchBeacons {
   
-  @scala.inline
-  def apply(complete: js.Any => Unit): IstopSearchBeacons = {
+  inline def apply(complete: js.Any => Unit): IstopSearchBeacons = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction1(complete))
     __obj.asInstanceOf[IstopSearchBeacons]
   }
   
-  @scala.inline
-  implicit class IstopSearchBeaconsMutableBuilder[Self <: IstopSearchBeacons] (val x: Self) extends AnyVal {
+  extension [Self <: IstopSearchBeacons](x: Self) {
     
-    @scala.inline
-    def setComplete(value: js.Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+    inline def setComplete(value: js.Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
   }
 }

@@ -48,64 +48,45 @@ trait CapabilityStatementMessaging
 }
 object CapabilityStatementMessaging {
   
-  @scala.inline
-  def apply(): CapabilityStatementMessaging = {
+  inline def apply(): CapabilityStatementMessaging = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CapabilityStatementMessaging]
   }
   
-  @scala.inline
-  implicit class CapabilityStatementMessagingMutableBuilder[Self <: CapabilityStatementMessaging] (val x: Self) extends AnyVal {
+  extension [Self <: CapabilityStatementMessaging](x: Self) {
     
-    @scala.inline
-    def setDocumentation(value: String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
+    inline def setDocumentation(value: String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
+    inline def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
     
-    @scala.inline
-    def setEndpoint(value: js.Array[CapabilityStatementMessagingEndpoint]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpoint(value: js.Array[CapabilityStatementMessagingEndpoint]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
+    inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
     
-    @scala.inline
-    def setEndpointVarargs(value: CapabilityStatementMessagingEndpoint*): Self = StObject.set(x, "endpoint", js.Array(value :_*))
+    inline def setEndpointVarargs(value: CapabilityStatementMessagingEndpoint*): Self = StObject.set(x, "endpoint", js.Array(value :_*))
     
-    @scala.inline
-    def setEvent(value: js.Array[CapabilityStatementMessagingEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: js.Array[CapabilityStatementMessagingEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
-    @scala.inline
-    def setEventVarargs(value: CapabilityStatementMessagingEvent*): Self = StObject.set(x, "event", js.Array(value :_*))
+    inline def setEventVarargs(value: CapabilityStatementMessagingEvent*): Self = StObject.set(x, "event", js.Array(value :_*))
     
-    @scala.inline
-    def setReliableCache(value: unsignedInt): Self = StObject.set(x, "reliableCache", value.asInstanceOf[js.Any])
+    inline def setReliableCache(value: unsignedInt): Self = StObject.set(x, "reliableCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReliableCacheUndefined: Self = StObject.set(x, "reliableCache", js.undefined)
+    inline def setReliableCacheUndefined: Self = StObject.set(x, "reliableCache", js.undefined)
     
-    @scala.inline
-    def setSupportedMessage(value: js.Array[CapabilityStatementMessagingSupportedMessage]): Self = StObject.set(x, "supportedMessage", value.asInstanceOf[js.Any])
+    inline def setSupportedMessage(value: js.Array[CapabilityStatementMessagingSupportedMessage]): Self = StObject.set(x, "supportedMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedMessageUndefined: Self = StObject.set(x, "supportedMessage", js.undefined)
+    inline def setSupportedMessageUndefined: Self = StObject.set(x, "supportedMessage", js.undefined)
     
-    @scala.inline
-    def setSupportedMessageVarargs(value: CapabilityStatementMessagingSupportedMessage*): Self = StObject.set(x, "supportedMessage", js.Array(value :_*))
+    inline def setSupportedMessageVarargs(value: CapabilityStatementMessagingSupportedMessage*): Self = StObject.set(x, "supportedMessage", js.Array(value :_*))
     
-    @scala.inline
-    def set_documentation(value: Element): Self = StObject.set(x, "_documentation", value.asInstanceOf[js.Any])
+    inline def set_documentation(value: Element): Self = StObject.set(x, "_documentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_documentationUndefined: Self = StObject.set(x, "_documentation", js.undefined)
+    inline def set_documentationUndefined: Self = StObject.set(x, "_documentation", js.undefined)
     
-    @scala.inline
-    def set_reliableCache(value: Element): Self = StObject.set(x, "_reliableCache", value.asInstanceOf[js.Any])
+    inline def set_reliableCache(value: Element): Self = StObject.set(x, "_reliableCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_reliableCacheUndefined: Self = StObject.set(x, "_reliableCache", js.undefined)
+    inline def set_reliableCacheUndefined: Self = StObject.set(x, "_reliableCache", js.undefined)
   }
 }

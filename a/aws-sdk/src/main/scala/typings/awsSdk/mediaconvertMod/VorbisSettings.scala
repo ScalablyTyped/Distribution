@@ -23,31 +23,23 @@ trait VorbisSettings extends StObject {
 }
 object VorbisSettings {
   
-  @scala.inline
-  def apply(): VorbisSettings = {
+  inline def apply(): VorbisSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VorbisSettings]
   }
   
-  @scala.inline
-  implicit class VorbisSettingsMutableBuilder[Self <: VorbisSettings] (val x: Self) extends AnyVal {
+  extension [Self <: VorbisSettings](x: Self) {
     
-    @scala.inline
-    def setChannels(value: integerMin1Max2): Self = StObject.set(x, "Channels", value.asInstanceOf[js.Any])
+    inline def setChannels(value: integerMin1Max2): Self = StObject.set(x, "Channels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelsUndefined: Self = StObject.set(x, "Channels", js.undefined)
+    inline def setChannelsUndefined: Self = StObject.set(x, "Channels", js.undefined)
     
-    @scala.inline
-    def setSampleRate(value: integerMin22050Max48000): Self = StObject.set(x, "SampleRate", value.asInstanceOf[js.Any])
+    inline def setSampleRate(value: integerMin22050Max48000): Self = StObject.set(x, "SampleRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleRateUndefined: Self = StObject.set(x, "SampleRate", js.undefined)
+    inline def setSampleRateUndefined: Self = StObject.set(x, "SampleRate", js.undefined)
     
-    @scala.inline
-    def setVbrQuality(value: integerMinNegative1Max10): Self = StObject.set(x, "VbrQuality", value.asInstanceOf[js.Any])
+    inline def setVbrQuality(value: integerMinNegative1Max10): Self = StObject.set(x, "VbrQuality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVbrQualityUndefined: Self = StObject.set(x, "VbrQuality", js.undefined)
+    inline def setVbrQualityUndefined: Self = StObject.set(x, "VbrQuality", js.undefined)
   }
 }

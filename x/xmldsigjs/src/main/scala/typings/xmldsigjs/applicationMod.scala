@@ -17,8 +17,7 @@ object applicationMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def isNodePlugin(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNodePlugin")().asInstanceOf[Boolean]
+    inline def isNodePlugin(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNodePlugin")().asInstanceOf[Boolean]
     
     /**
       * Sets crypto engine for the current Application
@@ -26,8 +25,7 @@ object applicationMod {
       * @param  {Crypto} crypto
       * @returns void
       */
-    @scala.inline
-    def setEngine(name: String, crypto: Crypto): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setEngine")(name.asInstanceOf[js.Any], crypto.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setEngine(name: String, crypto: Crypto): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setEngine")(name.asInstanceOf[js.Any], crypto.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @js.native

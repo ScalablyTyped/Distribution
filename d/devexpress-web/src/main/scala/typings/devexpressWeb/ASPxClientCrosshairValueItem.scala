@@ -21,19 +21,15 @@ trait ASPxClientCrosshairValueItem extends StObject {
 }
 object ASPxClientCrosshairValueItem {
   
-  @scala.inline
-  def apply(pointIndex: Double, value: Double): ASPxClientCrosshairValueItem = {
+  inline def apply(pointIndex: Double, value: Double): ASPxClientCrosshairValueItem = {
     val __obj = js.Dynamic.literal(pointIndex = pointIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientCrosshairValueItem]
   }
   
-  @scala.inline
-  implicit class ASPxClientCrosshairValueItemMutableBuilder[Self <: ASPxClientCrosshairValueItem] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientCrosshairValueItem](x: Self) {
     
-    @scala.inline
-    def setPointIndex(value: Double): Self = StObject.set(x, "pointIndex", value.asInstanceOf[js.Any])
+    inline def setPointIndex(value: Double): Self = StObject.set(x, "pointIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

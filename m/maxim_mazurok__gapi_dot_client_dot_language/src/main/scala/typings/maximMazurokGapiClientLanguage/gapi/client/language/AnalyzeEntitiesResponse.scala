@@ -17,28 +17,21 @@ trait AnalyzeEntitiesResponse extends StObject {
 }
 object AnalyzeEntitiesResponse {
   
-  @scala.inline
-  def apply(): AnalyzeEntitiesResponse = {
+  inline def apply(): AnalyzeEntitiesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnalyzeEntitiesResponse]
   }
   
-  @scala.inline
-  implicit class AnalyzeEntitiesResponseMutableBuilder[Self <: AnalyzeEntitiesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AnalyzeEntitiesResponse](x: Self) {
     
-    @scala.inline
-    def setEntities(value: js.Array[Entity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
+    inline def setEntities(value: js.Array[Entity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
+    inline def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
     
-    @scala.inline
-    def setEntitiesVarargs(value: Entity*): Self = StObject.set(x, "entities", js.Array(value :_*))
+    inline def setEntitiesVarargs(value: Entity*): Self = StObject.set(x, "entities", js.Array(value :_*))
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
   }
 }

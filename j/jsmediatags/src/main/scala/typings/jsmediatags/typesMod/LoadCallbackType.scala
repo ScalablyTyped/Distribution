@@ -12,22 +12,17 @@ trait LoadCallbackType extends StObject {
 }
 object LoadCallbackType {
   
-  @scala.inline
-  def apply(onSuccess: () => Unit): LoadCallbackType = {
+  inline def apply(onSuccess: () => Unit): LoadCallbackType = {
     val __obj = js.Dynamic.literal(onSuccess = js.Any.fromFunction0(onSuccess))
     __obj.asInstanceOf[LoadCallbackType]
   }
   
-  @scala.inline
-  implicit class LoadCallbackTypeMutableBuilder[Self <: LoadCallbackType] (val x: Self) extends AnyVal {
+  extension [Self <: LoadCallbackType](x: Self) {
     
-    @scala.inline
-    def setOnError(value: /* error */ jsmediatagsError => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    inline def setOnError(value: /* error */ jsmediatagsError => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+    inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
-    @scala.inline
-    def setOnSuccess(value: () => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction0(value))
+    inline def setOnSuccess(value: () => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction0(value))
   }
 }

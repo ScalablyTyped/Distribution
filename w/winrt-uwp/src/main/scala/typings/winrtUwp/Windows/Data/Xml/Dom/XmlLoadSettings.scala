@@ -24,8 +24,7 @@ trait XmlLoadSettings extends StObject {
 }
 object XmlLoadSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     elementContentWhiteSpace: Boolean,
     maxElementDepth: Double,
     prohibitDtd: Boolean,
@@ -36,22 +35,16 @@ object XmlLoadSettings {
     __obj.asInstanceOf[XmlLoadSettings]
   }
   
-  @scala.inline
-  implicit class XmlLoadSettingsMutableBuilder[Self <: XmlLoadSettings] (val x: Self) extends AnyVal {
+  extension [Self <: XmlLoadSettings](x: Self) {
     
-    @scala.inline
-    def setElementContentWhiteSpace(value: Boolean): Self = StObject.set(x, "elementContentWhiteSpace", value.asInstanceOf[js.Any])
+    inline def setElementContentWhiteSpace(value: Boolean): Self = StObject.set(x, "elementContentWhiteSpace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxElementDepth(value: Double): Self = StObject.set(x, "maxElementDepth", value.asInstanceOf[js.Any])
+    inline def setMaxElementDepth(value: Double): Self = StObject.set(x, "maxElementDepth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProhibitDtd(value: Boolean): Self = StObject.set(x, "prohibitDtd", value.asInstanceOf[js.Any])
+    inline def setProhibitDtd(value: Boolean): Self = StObject.set(x, "prohibitDtd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolveExternals(value: Boolean): Self = StObject.set(x, "resolveExternals", value.asInstanceOf[js.Any])
+    inline def setResolveExternals(value: Boolean): Self = StObject.set(x, "resolveExternals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidateOnParse(value: Boolean): Self = StObject.set(x, "validateOnParse", value.asInstanceOf[js.Any])
+    inline def setValidateOnParse(value: Boolean): Self = StObject.set(x, "validateOnParse", value.asInstanceOf[js.Any])
   }
 }

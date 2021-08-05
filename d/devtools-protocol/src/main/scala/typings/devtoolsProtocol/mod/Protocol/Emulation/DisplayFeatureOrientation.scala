@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DisplayFeatureOrientation extends StObject
 object DisplayFeatureOrientation {
   
-  @scala.inline
-  def Horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  inline def Horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
-  @scala.inline
-  def Vertical: vertical = "vertical".asInstanceOf[vertical]
+  inline def Vertical: vertical = "vertical".asInstanceOf[vertical]
 }

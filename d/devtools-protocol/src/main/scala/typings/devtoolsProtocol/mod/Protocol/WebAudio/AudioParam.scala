@@ -24,8 +24,7 @@ trait AudioParam extends StObject {
 }
 object AudioParam {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contextId: GraphObjectId,
     defaultValue: Double,
     maxValue: Double,
@@ -39,31 +38,22 @@ object AudioParam {
     __obj.asInstanceOf[AudioParam]
   }
   
-  @scala.inline
-  implicit class AudioParamMutableBuilder[Self <: AudioParam] (val x: Self) extends AnyVal {
+  extension [Self <: AudioParam](x: Self) {
     
-    @scala.inline
-    def setContextId(value: GraphObjectId): Self = StObject.set(x, "contextId", value.asInstanceOf[js.Any])
+    inline def setContextId(value: GraphObjectId): Self = StObject.set(x, "contextId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValue(value: Double): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: Double): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeId(value: GraphObjectId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: GraphObjectId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamId(value: GraphObjectId): Self = StObject.set(x, "paramId", value.asInstanceOf[js.Any])
+    inline def setParamId(value: GraphObjectId): Self = StObject.set(x, "paramId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamType(value: ParamType): Self = StObject.set(x, "paramType", value.asInstanceOf[js.Any])
+    inline def setParamType(value: ParamType): Self = StObject.set(x, "paramType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRate(value: AutomationRate): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
+    inline def setRate(value: AutomationRate): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
   }
 }

@@ -23,22 +23,17 @@ trait SharePrincipal extends StObject {
 }
 object SharePrincipal {
   
-  @scala.inline
-  def apply(Id: IdType, Role: RoleType, Type: PrincipalType): SharePrincipal = {
+  inline def apply(Id: IdType, Role: RoleType, Type: PrincipalType): SharePrincipal = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], Role = Role.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharePrincipal]
   }
   
-  @scala.inline
-  implicit class SharePrincipalMutableBuilder[Self <: SharePrincipal] (val x: Self) extends AnyVal {
+  extension [Self <: SharePrincipal](x: Self) {
     
-    @scala.inline
-    def setId(value: IdType): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: IdType): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRole(value: RoleType): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
+    inline def setRole(value: RoleType): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: PrincipalType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: PrincipalType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

@@ -15,6 +15,6 @@ object ie11Sha256Mod {
        with Hash {
     def this(secret: SourceData) = this()
     
-    var operation: js.Any = js.native
+    /* private */ var operation: js.Any = js.native
   }
 }

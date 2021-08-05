@@ -12,19 +12,15 @@ trait DefineAnalysisSchemeRequest extends StObject {
 }
 object DefineAnalysisSchemeRequest {
   
-  @scala.inline
-  def apply(AnalysisScheme: AnalysisScheme, DomainName: DomainName): DefineAnalysisSchemeRequest = {
+  inline def apply(AnalysisScheme: AnalysisScheme, DomainName: DomainName): DefineAnalysisSchemeRequest = {
     val __obj = js.Dynamic.literal(AnalysisScheme = AnalysisScheme.asInstanceOf[js.Any], DomainName = DomainName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefineAnalysisSchemeRequest]
   }
   
-  @scala.inline
-  implicit class DefineAnalysisSchemeRequestMutableBuilder[Self <: DefineAnalysisSchemeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DefineAnalysisSchemeRequest](x: Self) {
     
-    @scala.inline
-    def setAnalysisScheme(value: AnalysisScheme): Self = StObject.set(x, "AnalysisScheme", value.asInstanceOf[js.Any])
+    inline def setAnalysisScheme(value: AnalysisScheme): Self = StObject.set(x, "AnalysisScheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
   }
 }

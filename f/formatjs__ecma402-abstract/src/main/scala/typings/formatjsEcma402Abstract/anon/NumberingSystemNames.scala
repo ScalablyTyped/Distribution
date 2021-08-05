@@ -25,8 +25,7 @@ trait NumberingSystemNames extends StObject {
 }
 object NumberingSystemNames {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     availableLocales: Set[String],
     currencyDigitsData: Record[String, Double],
     getDefaultLocale: () => String,
@@ -38,28 +37,20 @@ object NumberingSystemNames {
     __obj.asInstanceOf[NumberingSystemNames]
   }
   
-  @scala.inline
-  implicit class NumberingSystemNamesMutableBuilder[Self <: NumberingSystemNames] (val x: Self) extends AnyVal {
+  extension [Self <: NumberingSystemNames](x: Self) {
     
-    @scala.inline
-    def setAvailableLocales(value: Set[String]): Self = StObject.set(x, "availableLocales", value.asInstanceOf[js.Any])
+    inline def setAvailableLocales(value: Set[String]): Self = StObject.set(x, "availableLocales", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyDigitsData(value: Record[String, Double]): Self = StObject.set(x, "currencyDigitsData", value.asInstanceOf[js.Any])
+    inline def setCurrencyDigitsData(value: Record[String, Double]): Self = StObject.set(x, "currencyDigitsData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDefaultLocale(value: () => String): Self = StObject.set(x, "getDefaultLocale", js.Any.fromFunction0(value))
+    inline def setGetDefaultLocale(value: () => String): Self = StObject.set(x, "getDefaultLocale", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetInternalSlots(value: NumberFormat => NumberFormatInternal): Self = StObject.set(x, "getInternalSlots", js.Any.fromFunction1(value))
+    inline def setGetInternalSlots(value: NumberFormat => NumberFormatInternal): Self = StObject.set(x, "getInternalSlots", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLocaleData(value: Record[String, js.UndefOr[NumberFormatLocaleInternalData]]): Self = StObject.set(x, "localeData", value.asInstanceOf[js.Any])
+    inline def setLocaleData(value: Record[String, js.UndefOr[NumberFormatLocaleInternalData]]): Self = StObject.set(x, "localeData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberingSystemNames(value: js.Array[String]): Self = StObject.set(x, "numberingSystemNames", value.asInstanceOf[js.Any])
+    inline def setNumberingSystemNames(value: js.Array[String]): Self = StObject.set(x, "numberingSystemNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberingSystemNamesVarargs(value: String*): Self = StObject.set(x, "numberingSystemNames", js.Array(value :_*))
+    inline def setNumberingSystemNamesVarargs(value: String*): Self = StObject.set(x, "numberingSystemNames", js.Array(value :_*))
   }
 }

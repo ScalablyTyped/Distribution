@@ -8,11 +8,9 @@ object mysticateaSpyStrings {
   
   @js.native
   sealed trait `return` extends StObject
-  @scala.inline
-  def `return`: `return` = "return".asInstanceOf[`return`]
+  inline def `return`: `return` = "return".asInstanceOf[`return`]
   
   @js.native
   sealed trait `throw` extends StObject
-  @scala.inline
-  def `throw`: `throw` = "throw".asInstanceOf[`throw`]
+  inline def `throw`: `throw` = "throw".asInstanceOf[`throw`]
 }

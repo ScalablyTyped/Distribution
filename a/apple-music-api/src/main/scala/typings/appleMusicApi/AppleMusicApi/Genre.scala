@@ -18,20 +18,16 @@ trait Genre
 }
 object Genre {
   
-  @scala.inline
-  def apply(attributes: Name, id: String): Genre = {
+  inline def apply(attributes: Name, id: String): Genre = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("genres")
     __obj.asInstanceOf[Genre]
   }
   
-  @scala.inline
-  implicit class GenreMutableBuilder[Self <: Genre] (val x: Self) extends AnyVal {
+  extension [Self <: Genre](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: Name): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Name): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: genres): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: genres): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

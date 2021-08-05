@@ -29,30 +29,30 @@ object radioGroupMod {
     
     var el: HTMLElement = js.native
     
-    var getRadios: js.Any = js.native
+    /* private */ var getRadios: js.Any = js.native
     
-    var inputId: js.Any = js.native
+    /* private */ var inputId: js.Any = js.native
     
     /**
       * Emitted when the value has changed.
       */
     var ionChange: EventEmitter[RadioGroupChangeEventDetail] = js.native
     
-    var labelId: js.Any = js.native
+    /* private */ var labelId: js.Any = js.native
     
     /**
       * The name of the control, which is submitted with the form data.
       */
     var name: String = js.native
     
-    var onClick: js.Any = js.native
+    /* private */ var onClick: js.Any = js.native
     
     def onKeydown(ev: js.Any): Unit = js.native
     
     @JSName("render")
     def render_MRadioGroup(): js.Any = js.native
     
-    var setRadioTabindex: js.Any = js.native
+    /* private */ var setRadioTabindex: js.Any = js.native
     
     /**
       * the value of the radio group.

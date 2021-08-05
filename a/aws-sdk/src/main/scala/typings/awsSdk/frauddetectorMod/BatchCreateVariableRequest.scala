@@ -18,28 +18,21 @@ trait BatchCreateVariableRequest extends StObject {
 }
 object BatchCreateVariableRequest {
   
-  @scala.inline
-  def apply(variableEntries: VariableEntryList): BatchCreateVariableRequest = {
+  inline def apply(variableEntries: VariableEntryList): BatchCreateVariableRequest = {
     val __obj = js.Dynamic.literal(variableEntries = variableEntries.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchCreateVariableRequest]
   }
   
-  @scala.inline
-  implicit class BatchCreateVariableRequestMutableBuilder[Self <: BatchCreateVariableRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchCreateVariableRequest](x: Self) {
     
-    @scala.inline
-    def setTags(value: tagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: tagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setVariableEntries(value: VariableEntryList): Self = StObject.set(x, "variableEntries", value.asInstanceOf[js.Any])
+    inline def setVariableEntries(value: VariableEntryList): Self = StObject.set(x, "variableEntries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariableEntriesVarargs(value: VariableEntry*): Self = StObject.set(x, "variableEntries", js.Array(value :_*))
+    inline def setVariableEntriesVarargs(value: VariableEntry*): Self = StObject.set(x, "variableEntries", js.Array(value :_*))
   }
 }

@@ -10,19 +10,15 @@ trait PanOptions extends StObject {
 }
 object PanOptions {
   
-  @scala.inline
-  def apply(): PanOptions = {
+  inline def apply(): PanOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PanOptions]
   }
   
-  @scala.inline
-  implicit class PanOptionsMutableBuilder[Self <: PanOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PanOptions](x: Self) {
     
-    @scala.inline
-    def setNoAnimation(value: Boolean): Self = StObject.set(x, "noAnimation", value.asInstanceOf[js.Any])
+    inline def setNoAnimation(value: Boolean): Self = StObject.set(x, "noAnimation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoAnimationUndefined: Self = StObject.set(x, "noAnimation", js.undefined)
+    inline def setNoAnimationUndefined: Self = StObject.set(x, "noAnimation", js.undefined)
   }
 }

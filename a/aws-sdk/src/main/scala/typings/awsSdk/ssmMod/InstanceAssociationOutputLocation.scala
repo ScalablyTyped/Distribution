@@ -13,19 +13,15 @@ trait InstanceAssociationOutputLocation extends StObject {
 }
 object InstanceAssociationOutputLocation {
   
-  @scala.inline
-  def apply(): InstanceAssociationOutputLocation = {
+  inline def apply(): InstanceAssociationOutputLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceAssociationOutputLocation]
   }
   
-  @scala.inline
-  implicit class InstanceAssociationOutputLocationMutableBuilder[Self <: InstanceAssociationOutputLocation] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceAssociationOutputLocation](x: Self) {
     
-    @scala.inline
-    def setS3Location(value: S3OutputLocation): Self = StObject.set(x, "S3Location", value.asInstanceOf[js.Any])
+    inline def setS3Location(value: S3OutputLocation): Self = StObject.set(x, "S3Location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3LocationUndefined: Self = StObject.set(x, "S3Location", js.undefined)
+    inline def setS3LocationUndefined: Self = StObject.set(x, "S3Location", js.undefined)
   }
 }

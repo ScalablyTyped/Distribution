@@ -16,19 +16,15 @@ trait Scenic extends StObject {
 }
 object Scenic {
   
-  @scala.inline
-  def apply(scenic: typings.amapJsApiPlaceSearch.AMap.PlaceSearch.Scenic): Scenic = {
+  inline def apply(scenic: typings.amapJsApiPlaceSearch.AMap.PlaceSearch.Scenic): Scenic = {
     val __obj = js.Dynamic.literal(deep_type = "SCENIC", scenic = scenic.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scenic]
   }
   
-  @scala.inline
-  implicit class ScenicMutableBuilder[Self <: Scenic] (val x: Self) extends AnyVal {
+  extension [Self <: Scenic](x: Self) {
     
-    @scala.inline
-    def setDeep_type(value: SCENIC): Self = StObject.set(x, "deep_type", value.asInstanceOf[js.Any])
+    inline def setDeep_type(value: SCENIC): Self = StObject.set(x, "deep_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScenic(value: typings.amapJsApiPlaceSearch.AMap.PlaceSearch.Scenic): Self = StObject.set(x, "scenic", value.asInstanceOf[js.Any])
+    inline def setScenic(value: typings.amapJsApiPlaceSearch.AMap.PlaceSearch.Scenic): Self = StObject.set(x, "scenic", value.asInstanceOf[js.Any])
   }
 }

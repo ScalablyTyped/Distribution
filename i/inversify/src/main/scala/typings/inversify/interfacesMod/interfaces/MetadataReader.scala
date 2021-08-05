@@ -12,8 +12,7 @@ trait MetadataReader extends StObject {
 }
 object MetadataReader {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getConstructorMetadata: js.Function => ConstructorMetadata,
     getPropertiesMetadata: js.Function => MetadataMap
   ): MetadataReader = {
@@ -21,13 +20,10 @@ object MetadataReader {
     __obj.asInstanceOf[MetadataReader]
   }
   
-  @scala.inline
-  implicit class MetadataReaderMutableBuilder[Self <: MetadataReader] (val x: Self) extends AnyVal {
+  extension [Self <: MetadataReader](x: Self) {
     
-    @scala.inline
-    def setGetConstructorMetadata(value: js.Function => ConstructorMetadata): Self = StObject.set(x, "getConstructorMetadata", js.Any.fromFunction1(value))
+    inline def setGetConstructorMetadata(value: js.Function => ConstructorMetadata): Self = StObject.set(x, "getConstructorMetadata", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPropertiesMetadata(value: js.Function => MetadataMap): Self = StObject.set(x, "getPropertiesMetadata", js.Any.fromFunction1(value))
+    inline def setGetPropertiesMetadata(value: js.Function => MetadataMap): Self = StObject.set(x, "getPropertiesMetadata", js.Any.fromFunction1(value))
   }
 }

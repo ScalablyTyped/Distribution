@@ -18,22 +18,17 @@ trait QualityLevel extends StObject {
 }
 object QualityLevel {
   
-  @scala.inline
-  def apply(level: Level, mode: auto | manual, reason: auto | api | (`initial choice`)): QualityLevel = {
+  inline def apply(level: Level, mode: auto | manual, reason: auto | api | (`initial choice`)): QualityLevel = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[QualityLevel]
   }
   
-  @scala.inline
-  implicit class QualityLevelMutableBuilder[Self <: QualityLevel] (val x: Self) extends AnyVal {
+  extension [Self <: QualityLevel](x: Self) {
     
-    @scala.inline
-    def setLevel(value: Level): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Level): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: auto | manual): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: auto | manual): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: auto | api | (`initial choice`)): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: auto | api | (`initial choice`)): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }
 }

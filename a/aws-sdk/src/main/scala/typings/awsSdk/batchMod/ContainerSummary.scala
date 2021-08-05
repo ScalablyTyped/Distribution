@@ -18,25 +18,19 @@ trait ContainerSummary extends StObject {
 }
 object ContainerSummary {
   
-  @scala.inline
-  def apply(): ContainerSummary = {
+  inline def apply(): ContainerSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContainerSummary]
   }
   
-  @scala.inline
-  implicit class ContainerSummaryMutableBuilder[Self <: ContainerSummary] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerSummary](x: Self) {
     
-    @scala.inline
-    def setExitCode(value: Integer): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
+    inline def setExitCode(value: Integer): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExitCodeUndefined: Self = StObject.set(x, "exitCode", js.undefined)
+    inline def setExitCodeUndefined: Self = StObject.set(x, "exitCode", js.undefined)
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
   }
 }

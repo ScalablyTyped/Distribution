@@ -19,22 +19,17 @@ trait ContactWebsite extends StObject {
 }
 object ContactWebsite {
   
-  @scala.inline
-  def apply(description: String, rawValue: js.Any, uri: Uri): ContactWebsite = {
+  inline def apply(description: String, rawValue: js.Any, uri: Uri): ContactWebsite = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], rawValue = rawValue.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContactWebsite]
   }
   
-  @scala.inline
-  implicit class ContactWebsiteMutableBuilder[Self <: ContactWebsite] (val x: Self) extends AnyVal {
+  extension [Self <: ContactWebsite](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawValue(value: js.Any): Self = StObject.set(x, "rawValue", value.asInstanceOf[js.Any])
+    inline def setRawValue(value: js.Any): Self = StObject.set(x, "rawValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

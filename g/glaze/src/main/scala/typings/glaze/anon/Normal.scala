@@ -25,31 +25,23 @@ trait Normal extends StObject {
 }
 object Normal {
   
-  @scala.inline
-  def apply(): Normal = {
+  inline def apply(): Normal = {
     val __obj = js.Dynamic.literal(normal = 0, tight = "-0.025em", tighter = "-0.05em", wide = ".025em", wider = ".05em", widest = ".1em")
     __obj.asInstanceOf[Normal]
   }
   
-  @scala.inline
-  implicit class NormalMutableBuilder[Self <: Normal] (val x: Self) extends AnyVal {
+  extension [Self <: Normal](x: Self) {
     
-    @scala.inline
-    def setNormal(value: typings.glaze.glazeNumbers.`0`): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
+    inline def setNormal(value: typings.glaze.glazeNumbers.`0`): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTight(value: `-0Dot025em`): Self = StObject.set(x, "tight", value.asInstanceOf[js.Any])
+    inline def setTight(value: `-0Dot025em`): Self = StObject.set(x, "tight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTighter(value: `-0Dot05em`): Self = StObject.set(x, "tighter", value.asInstanceOf[js.Any])
+    inline def setTighter(value: `-0Dot05em`): Self = StObject.set(x, "tighter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWide(value: Dot025em): Self = StObject.set(x, "wide", value.asInstanceOf[js.Any])
+    inline def setWide(value: Dot025em): Self = StObject.set(x, "wide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWider(value: Dot05em): Self = StObject.set(x, "wider", value.asInstanceOf[js.Any])
+    inline def setWider(value: Dot05em): Self = StObject.set(x, "wider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidest(value: Dot1em): Self = StObject.set(x, "widest", value.asInstanceOf[js.Any])
+    inline def setWidest(value: Dot1em): Self = StObject.set(x, "widest", value.asInstanceOf[js.Any])
   }
 }

@@ -73,82 +73,57 @@ trait ElasticsearchDestinationConfiguration extends StObject {
 }
 object ElasticsearchDestinationConfiguration {
   
-  @scala.inline
-  def apply(IndexName: ElasticsearchIndexName, RoleARN: RoleARN, S3Configuration: S3DestinationConfiguration): ElasticsearchDestinationConfiguration = {
+  inline def apply(IndexName: ElasticsearchIndexName, RoleARN: RoleARN, S3Configuration: S3DestinationConfiguration): ElasticsearchDestinationConfiguration = {
     val __obj = js.Dynamic.literal(IndexName = IndexName.asInstanceOf[js.Any], RoleARN = RoleARN.asInstanceOf[js.Any], S3Configuration = S3Configuration.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElasticsearchDestinationConfiguration]
   }
   
-  @scala.inline
-  implicit class ElasticsearchDestinationConfigurationMutableBuilder[Self <: ElasticsearchDestinationConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ElasticsearchDestinationConfiguration](x: Self) {
     
-    @scala.inline
-    def setBufferingHints(value: ElasticsearchBufferingHints): Self = StObject.set(x, "BufferingHints", value.asInstanceOf[js.Any])
+    inline def setBufferingHints(value: ElasticsearchBufferingHints): Self = StObject.set(x, "BufferingHints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBufferingHintsUndefined: Self = StObject.set(x, "BufferingHints", js.undefined)
+    inline def setBufferingHintsUndefined: Self = StObject.set(x, "BufferingHints", js.undefined)
     
-    @scala.inline
-    def setCloudWatchLoggingOptions(value: CloudWatchLoggingOptions): Self = StObject.set(x, "CloudWatchLoggingOptions", value.asInstanceOf[js.Any])
+    inline def setCloudWatchLoggingOptions(value: CloudWatchLoggingOptions): Self = StObject.set(x, "CloudWatchLoggingOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudWatchLoggingOptionsUndefined: Self = StObject.set(x, "CloudWatchLoggingOptions", js.undefined)
+    inline def setCloudWatchLoggingOptionsUndefined: Self = StObject.set(x, "CloudWatchLoggingOptions", js.undefined)
     
-    @scala.inline
-    def setClusterEndpoint(value: ElasticsearchClusterEndpoint): Self = StObject.set(x, "ClusterEndpoint", value.asInstanceOf[js.Any])
+    inline def setClusterEndpoint(value: ElasticsearchClusterEndpoint): Self = StObject.set(x, "ClusterEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterEndpointUndefined: Self = StObject.set(x, "ClusterEndpoint", js.undefined)
+    inline def setClusterEndpointUndefined: Self = StObject.set(x, "ClusterEndpoint", js.undefined)
     
-    @scala.inline
-    def setDomainARN(value: ElasticsearchDomainARN): Self = StObject.set(x, "DomainARN", value.asInstanceOf[js.Any])
+    inline def setDomainARN(value: ElasticsearchDomainARN): Self = StObject.set(x, "DomainARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainARNUndefined: Self = StObject.set(x, "DomainARN", js.undefined)
+    inline def setDomainARNUndefined: Self = StObject.set(x, "DomainARN", js.undefined)
     
-    @scala.inline
-    def setIndexName(value: ElasticsearchIndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
+    inline def setIndexName(value: ElasticsearchIndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexRotationPeriod(value: ElasticsearchIndexRotationPeriod): Self = StObject.set(x, "IndexRotationPeriod", value.asInstanceOf[js.Any])
+    inline def setIndexRotationPeriod(value: ElasticsearchIndexRotationPeriod): Self = StObject.set(x, "IndexRotationPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexRotationPeriodUndefined: Self = StObject.set(x, "IndexRotationPeriod", js.undefined)
+    inline def setIndexRotationPeriodUndefined: Self = StObject.set(x, "IndexRotationPeriod", js.undefined)
     
-    @scala.inline
-    def setProcessingConfiguration(value: ProcessingConfiguration): Self = StObject.set(x, "ProcessingConfiguration", value.asInstanceOf[js.Any])
+    inline def setProcessingConfiguration(value: ProcessingConfiguration): Self = StObject.set(x, "ProcessingConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessingConfigurationUndefined: Self = StObject.set(x, "ProcessingConfiguration", js.undefined)
+    inline def setProcessingConfigurationUndefined: Self = StObject.set(x, "ProcessingConfiguration", js.undefined)
     
-    @scala.inline
-    def setRetryOptions(value: ElasticsearchRetryOptions): Self = StObject.set(x, "RetryOptions", value.asInstanceOf[js.Any])
+    inline def setRetryOptions(value: ElasticsearchRetryOptions): Self = StObject.set(x, "RetryOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryOptionsUndefined: Self = StObject.set(x, "RetryOptions", js.undefined)
+    inline def setRetryOptionsUndefined: Self = StObject.set(x, "RetryOptions", js.undefined)
     
-    @scala.inline
-    def setRoleARN(value: RoleARN): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
+    inline def setRoleARN(value: RoleARN): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3BackupMode(value: ElasticsearchS3BackupMode): Self = StObject.set(x, "S3BackupMode", value.asInstanceOf[js.Any])
+    inline def setS3BackupMode(value: ElasticsearchS3BackupMode): Self = StObject.set(x, "S3BackupMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3BackupModeUndefined: Self = StObject.set(x, "S3BackupMode", js.undefined)
+    inline def setS3BackupModeUndefined: Self = StObject.set(x, "S3BackupMode", js.undefined)
     
-    @scala.inline
-    def setS3Configuration(value: S3DestinationConfiguration): Self = StObject.set(x, "S3Configuration", value.asInstanceOf[js.Any])
+    inline def setS3Configuration(value: S3DestinationConfiguration): Self = StObject.set(x, "S3Configuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeName(value: ElasticsearchTypeName): Self = StObject.set(x, "TypeName", value.asInstanceOf[js.Any])
+    inline def setTypeName(value: ElasticsearchTypeName): Self = StObject.set(x, "TypeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeNameUndefined: Self = StObject.set(x, "TypeName", js.undefined)
+    inline def setTypeNameUndefined: Self = StObject.set(x, "TypeName", js.undefined)
     
-    @scala.inline
-    def setVpcConfiguration(value: VpcConfiguration): Self = StObject.set(x, "VpcConfiguration", value.asInstanceOf[js.Any])
+    inline def setVpcConfiguration(value: VpcConfiguration): Self = StObject.set(x, "VpcConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcConfigurationUndefined: Self = StObject.set(x, "VpcConfiguration", js.undefined)
+    inline def setVpcConfigurationUndefined: Self = StObject.set(x, "VpcConfiguration", js.undefined)
   }
 }

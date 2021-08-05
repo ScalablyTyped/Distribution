@@ -61,17 +61,14 @@ object oleautomation {
   }
   object Currency {
     
-    @scala.inline
-    def apply(Value: Double): Currency = {
+    inline def apply(Value: Double): Currency = {
       val __obj = js.Dynamic.literal(Value = Value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Currency]
     }
     
-    @scala.inline
-    implicit class CurrencyMutableBuilder[Self <: Currency] (val x: Self) extends AnyVal {
+    extension [Self <: Currency](x: Self) {
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -92,17 +89,14 @@ object oleautomation {
   }
   object Date {
     
-    @scala.inline
-    def apply(Value: Double): Date = {
+    inline def apply(Value: Double): Date = {
       val __obj = js.Dynamic.literal(Value = Value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Date]
     }
     
-    @scala.inline
-    implicit class DateMutableBuilder[Self <: Date] (val x: Self) extends AnyVal {
+    extension [Self <: Date](x: Self) {
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -129,29 +123,22 @@ object oleautomation {
   }
   object Decimal {
     
-    @scala.inline
-    def apply(HighValue: Double, LowValue: Double, MiddleValue: Double, Scale: Double, Sign: Double): Decimal = {
+    inline def apply(HighValue: Double, LowValue: Double, MiddleValue: Double, Scale: Double, Sign: Double): Decimal = {
       val __obj = js.Dynamic.literal(HighValue = HighValue.asInstanceOf[js.Any], LowValue = LowValue.asInstanceOf[js.Any], MiddleValue = MiddleValue.asInstanceOf[js.Any], Scale = Scale.asInstanceOf[js.Any], Sign = Sign.asInstanceOf[js.Any])
       __obj.asInstanceOf[Decimal]
     }
     
-    @scala.inline
-    implicit class DecimalMutableBuilder[Self <: Decimal] (val x: Self) extends AnyVal {
+    extension [Self <: Decimal](x: Self) {
       
-      @scala.inline
-      def setHighValue(value: Double): Self = StObject.set(x, "HighValue", value.asInstanceOf[js.Any])
+      inline def setHighValue(value: Double): Self = StObject.set(x, "HighValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLowValue(value: Double): Self = StObject.set(x, "LowValue", value.asInstanceOf[js.Any])
+      inline def setLowValue(value: Double): Self = StObject.set(x, "LowValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMiddleValue(value: Double): Self = StObject.set(x, "MiddleValue", value.asInstanceOf[js.Any])
+      inline def setMiddleValue(value: Double): Self = StObject.set(x, "MiddleValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScale(value: Double): Self = StObject.set(x, "Scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: Double): Self = StObject.set(x, "Scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSign(value: Double): Self = StObject.set(x, "Sign", value.asInstanceOf[js.Any])
+      inline def setSign(value: Double): Self = StObject.set(x, "Sign", value.asInstanceOf[js.Any])
     }
   }
   
@@ -186,20 +173,16 @@ object oleautomation {
   }
   object NamedArgument {
     
-    @scala.inline
-    def apply(Name: String, Value: js.Any): NamedArgument = {
+    inline def apply(Name: String, Value: js.Any): NamedArgument = {
       val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
       __obj.asInstanceOf[NamedArgument]
     }
     
-    @scala.inline
-    implicit class NamedArgumentMutableBuilder[Self <: NamedArgument] (val x: Self) extends AnyVal {
+    extension [Self <: NamedArgument](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -222,17 +205,14 @@ object oleautomation {
   }
   object PropertyPutArgument {
     
-    @scala.inline
-    def apply(Value: js.Any): PropertyPutArgument = {
+    inline def apply(Value: js.Any): PropertyPutArgument = {
       val __obj = js.Dynamic.literal(Value = Value.asInstanceOf[js.Any])
       __obj.asInstanceOf[PropertyPutArgument]
     }
     
-    @scala.inline
-    implicit class PropertyPutArgumentMutableBuilder[Self <: PropertyPutArgument] (val x: Self) extends AnyVal {
+    extension [Self <: PropertyPutArgument](x: Self) {
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -252,17 +232,14 @@ object oleautomation {
   }
   object SCode {
     
-    @scala.inline
-    def apply(Value: Double): SCode = {
+    inline def apply(Value: Double): SCode = {
       val __obj = js.Dynamic.literal(Value = Value.asInstanceOf[js.Any])
       __obj.asInstanceOf[SCode]
     }
     
-    @scala.inline
-    implicit class SCodeMutableBuilder[Self <: SCode] (val x: Self) extends AnyVal {
+    extension [Self <: SCode](x: Self) {
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     }
   }
   

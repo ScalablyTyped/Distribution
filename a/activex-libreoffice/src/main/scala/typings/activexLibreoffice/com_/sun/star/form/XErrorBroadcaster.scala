@@ -24,8 +24,7 @@ trait XErrorBroadcaster
 }
 object XErrorBroadcaster {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addErrorListener: XErrorListener => Unit,
     queryInterface: `type` => js.Any,
@@ -36,13 +35,10 @@ object XErrorBroadcaster {
     __obj.asInstanceOf[XErrorBroadcaster]
   }
   
-  @scala.inline
-  implicit class XErrorBroadcasterMutableBuilder[Self <: XErrorBroadcaster] (val x: Self) extends AnyVal {
+  extension [Self <: XErrorBroadcaster](x: Self) {
     
-    @scala.inline
-    def setAddErrorListener(value: XErrorListener => Unit): Self = StObject.set(x, "addErrorListener", js.Any.fromFunction1(value))
+    inline def setAddErrorListener(value: XErrorListener => Unit): Self = StObject.set(x, "addErrorListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveErrorListener(value: XErrorListener => Unit): Self = StObject.set(x, "removeErrorListener", js.Any.fromFunction1(value))
+    inline def setRemoveErrorListener(value: XErrorListener => Unit): Self = StObject.set(x, "removeErrorListener", js.Any.fromFunction1(value))
   }
 }

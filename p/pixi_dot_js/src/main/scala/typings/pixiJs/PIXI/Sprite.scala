@@ -43,7 +43,7 @@ trait Sprite
     * @member {number} PIXI.Sprite#_cachedTint
     * @default 0xFFFFFF
     */
-  var _cachedTint: Double = js.native
+  /* protected */ var _cachedTint: Double = js.native
   
   /**
     * The height of the sprite (this is initially set by the texture)
@@ -51,7 +51,7 @@ trait Sprite
     * @protected
     * @member {number} PIXI.Sprite#_height
     */
-  var _height: Double = js.native
+  /* protected */ var _height: Double = js.native
   
   /**
     * When the texture is updated, this event will fire to update the scale and frame
@@ -66,7 +66,7 @@ trait Sprite
     * @protected
     * @member {number} PIXI.Sprite#_width
     */
-  var _width: Double = js.native
+  /* protected */ var _width: Double = js.native
   
   /**
     * The anchor sets the origin point of the sprite. The default value is taken from the {@link PIXI.Texture|Texture}

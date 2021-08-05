@@ -18,23 +18,18 @@ trait ClassDeclaration
 }
 object ClassDeclaration {
   
-  @scala.inline
-  def apply(body: ClassBody): ClassDeclaration = {
+  inline def apply(body: ClassBody): ClassDeclaration = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = null)
     __obj.updateDynamic("type")("ClassDeclaration")
     __obj.asInstanceOf[ClassDeclaration]
   }
   
-  @scala.inline
-  implicit class ClassDeclarationMutableBuilder[Self <: ClassDeclaration] (val x: Self) extends AnyVal {
+  extension [Self <: ClassDeclaration](x: Self) {
     
-    @scala.inline
-    def setId(value: Identifier): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Identifier): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdNull: Self = StObject.set(x, "id", null)
+    inline def setIdNull: Self = StObject.set(x, "id", null)
     
-    @scala.inline
-    def setType(value: typings.estree.estreeStrings.ClassDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estree.estreeStrings.ClassDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

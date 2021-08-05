@@ -33,43 +33,31 @@ trait UtteranceData extends StObject {
 }
 object UtteranceData {
   
-  @scala.inline
-  def apply(): UtteranceData = {
+  inline def apply(): UtteranceData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UtteranceData]
   }
   
-  @scala.inline
-  implicit class UtteranceDataMutableBuilder[Self <: UtteranceData] (val x: Self) extends AnyVal {
+  extension [Self <: UtteranceData](x: Self) {
     
-    @scala.inline
-    def setCount(value: Count): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Count): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setDistinctUsers(value: Count): Self = StObject.set(x, "distinctUsers", value.asInstanceOf[js.Any])
+    inline def setDistinctUsers(value: Count): Self = StObject.set(x, "distinctUsers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistinctUsersUndefined: Self = StObject.set(x, "distinctUsers", js.undefined)
+    inline def setDistinctUsersUndefined: Self = StObject.set(x, "distinctUsers", js.undefined)
     
-    @scala.inline
-    def setFirstUtteredDate(value: Timestamp): Self = StObject.set(x, "firstUtteredDate", value.asInstanceOf[js.Any])
+    inline def setFirstUtteredDate(value: Timestamp): Self = StObject.set(x, "firstUtteredDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstUtteredDateUndefined: Self = StObject.set(x, "firstUtteredDate", js.undefined)
+    inline def setFirstUtteredDateUndefined: Self = StObject.set(x, "firstUtteredDate", js.undefined)
     
-    @scala.inline
-    def setLastUtteredDate(value: Timestamp): Self = StObject.set(x, "lastUtteredDate", value.asInstanceOf[js.Any])
+    inline def setLastUtteredDate(value: Timestamp): Self = StObject.set(x, "lastUtteredDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUtteredDateUndefined: Self = StObject.set(x, "lastUtteredDate", js.undefined)
+    inline def setLastUtteredDateUndefined: Self = StObject.set(x, "lastUtteredDate", js.undefined)
     
-    @scala.inline
-    def setUtteranceString(value: UtteranceString): Self = StObject.set(x, "utteranceString", value.asInstanceOf[js.Any])
+    inline def setUtteranceString(value: UtteranceString): Self = StObject.set(x, "utteranceString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtteranceStringUndefined: Self = StObject.set(x, "utteranceString", js.undefined)
+    inline def setUtteranceStringUndefined: Self = StObject.set(x, "utteranceString", js.undefined)
   }
 }

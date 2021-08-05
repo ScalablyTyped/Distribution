@@ -12,8 +12,7 @@ trait GetMenuPropsOptions
      with GetPropsWithRefKey
 object GetMenuPropsOptions {
   
-  @scala.inline
-  def apply(): GetMenuPropsOptions = {
+  inline def apply(): GetMenuPropsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetMenuPropsOptions]
   }

@@ -11,6 +11,5 @@ object maquetteBooleans {
   sealed trait `false`
     extends StObject
        with _VNodeChild
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
+  inline def `false`: `false` = false.asInstanceOf[`false`]
 }

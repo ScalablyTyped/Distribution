@@ -38,8 +38,7 @@ trait CreditFinancingOptions extends StObject {
 }
 object CreditFinancingOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cartAmountImmutable: Boolean,
     monthlyPayment: CurrencyAmount,
     payerAcceptance: Boolean,
@@ -51,25 +50,18 @@ object CreditFinancingOptions {
     __obj.asInstanceOf[CreditFinancingOptions]
   }
   
-  @scala.inline
-  implicit class CreditFinancingOptionsMutableBuilder[Self <: CreditFinancingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CreditFinancingOptions](x: Self) {
     
-    @scala.inline
-    def setCartAmountImmutable(value: Boolean): Self = StObject.set(x, "cartAmountImmutable", value.asInstanceOf[js.Any])
+    inline def setCartAmountImmutable(value: Boolean): Self = StObject.set(x, "cartAmountImmutable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonthlyPayment(value: CurrencyAmount): Self = StObject.set(x, "monthlyPayment", value.asInstanceOf[js.Any])
+    inline def setMonthlyPayment(value: CurrencyAmount): Self = StObject.set(x, "monthlyPayment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayerAcceptance(value: Boolean): Self = StObject.set(x, "payerAcceptance", value.asInstanceOf[js.Any])
+    inline def setPayerAcceptance(value: Boolean): Self = StObject.set(x, "payerAcceptance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerm(value: Double): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
+    inline def setTerm(value: Double): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalCost(value: CurrencyAmount): Self = StObject.set(x, "totalCost", value.asInstanceOf[js.Any])
+    inline def setTotalCost(value: CurrencyAmount): Self = StObject.set(x, "totalCost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalInterest(value: CurrencyAmount): Self = StObject.set(x, "totalInterest", value.asInstanceOf[js.Any])
+    inline def setTotalInterest(value: CurrencyAmount): Self = StObject.set(x, "totalInterest", value.asInstanceOf[js.Any])
   }
 }

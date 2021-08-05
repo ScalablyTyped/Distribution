@@ -27,9 +27,9 @@ object nonInviteClientTransactionMod {
       */
     def this(request: OutgoingRequestMessage, transport: Transport, user: ClientTransactionUser) = this()
     
-    var F: js.Any = js.native
+    /* private */ var F: js.Any = js.native
     
-    var K: js.Any = js.native
+    /* private */ var K: js.Any = js.native
     
     /**
       * The client transaction SHOULD inform the TU that a transport failure has occurred,
@@ -44,7 +44,7 @@ object nonInviteClientTransactionMod {
       * Execute a state transition.
       * @param newState - New state.
       */
-    var stateTransition: js.Any = js.native
+    /* private */ var stateTransition: js.Any = js.native
     
     /**
       * If Timer F fires while the client transaction is still in the
@@ -54,13 +54,13 @@ object nonInviteClientTransactionMod {
       * a timeout, and the client transaction MUST transition to the terminated state.
       * https://tools.ietf.org/html/rfc3261#section-17.1.2.2
       */
-    var timerF: js.Any = js.native
+    /* private */ var timerF: js.Any = js.native
     
     /**
       * If Timer K fires while in this (COMPLETED) state, the client transaction
       * MUST transition to the "Terminated" state.
       * https://tools.ietf.org/html/rfc3261#section-17.1.2.2
       */
-    var timerK: js.Any = js.native
+    /* private */ var timerK: js.Any = js.native
   }
 }

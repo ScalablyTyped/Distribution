@@ -20,8 +20,7 @@ trait IInkStroke extends StObject {
 }
 object IInkStroke {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     boundingRect: Rect,
     drawingAttributes: InkDrawingAttributes,
     getRenderingSegments: () => IVectorView[InkStrokeRenderingSegment],
@@ -32,22 +31,16 @@ object IInkStroke {
     __obj.asInstanceOf[IInkStroke]
   }
   
-  @scala.inline
-  implicit class IInkStrokeMutableBuilder[Self <: IInkStroke] (val x: Self) extends AnyVal {
+  extension [Self <: IInkStroke](x: Self) {
     
-    @scala.inline
-    def setBoundingRect(value: Rect): Self = StObject.set(x, "boundingRect", value.asInstanceOf[js.Any])
+    inline def setBoundingRect(value: Rect): Self = StObject.set(x, "boundingRect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrawingAttributes(value: InkDrawingAttributes): Self = StObject.set(x, "drawingAttributes", value.asInstanceOf[js.Any])
+    inline def setDrawingAttributes(value: InkDrawingAttributes): Self = StObject.set(x, "drawingAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetRenderingSegments(value: () => IVectorView[InkStrokeRenderingSegment]): Self = StObject.set(x, "getRenderingSegments", js.Any.fromFunction0(value))
+    inline def setGetRenderingSegments(value: () => IVectorView[InkStrokeRenderingSegment]): Self = StObject.set(x, "getRenderingSegments", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRecognized(value: Boolean): Self = StObject.set(x, "recognized", value.asInstanceOf[js.Any])
+    inline def setRecognized(value: Boolean): Self = StObject.set(x, "recognized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
   }
 }

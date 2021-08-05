@@ -13,19 +13,15 @@ trait ListPhoneNumbersOptedOutInput extends StObject {
 }
 object ListPhoneNumbersOptedOutInput {
   
-  @scala.inline
-  def apply(): ListPhoneNumbersOptedOutInput = {
+  inline def apply(): ListPhoneNumbersOptedOutInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListPhoneNumbersOptedOutInput]
   }
   
-  @scala.inline
-  implicit class ListPhoneNumbersOptedOutInputMutableBuilder[Self <: ListPhoneNumbersOptedOutInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListPhoneNumbersOptedOutInput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: java.lang.String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: java.lang.String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

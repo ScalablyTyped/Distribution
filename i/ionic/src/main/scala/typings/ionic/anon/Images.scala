@@ -15,28 +15,21 @@ trait Images extends StObject {
 }
 object Images {
   
-  @scala.inline
-  def apply(images: js.Array[ResourcesImageConfig], nodeAttributes: js.Array[String], nodeName: String): Images = {
+  inline def apply(images: js.Array[ResourcesImageConfig], nodeAttributes: js.Array[String], nodeName: String): Images = {
     val __obj = js.Dynamic.literal(images = images.asInstanceOf[js.Any], nodeAttributes = nodeAttributes.asInstanceOf[js.Any], nodeName = nodeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Images]
   }
   
-  @scala.inline
-  implicit class ImagesMutableBuilder[Self <: Images] (val x: Self) extends AnyVal {
+  extension [Self <: Images](x: Self) {
     
-    @scala.inline
-    def setImages(value: js.Array[ResourcesImageConfig]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+    inline def setImages(value: js.Array[ResourcesImageConfig]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagesVarargs(value: ResourcesImageConfig*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: ResourcesImageConfig*): Self = StObject.set(x, "images", js.Array(value :_*))
     
-    @scala.inline
-    def setNodeAttributes(value: js.Array[String]): Self = StObject.set(x, "nodeAttributes", value.asInstanceOf[js.Any])
+    inline def setNodeAttributes(value: js.Array[String]): Self = StObject.set(x, "nodeAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeAttributesVarargs(value: String*): Self = StObject.set(x, "nodeAttributes", js.Array(value :_*))
+    inline def setNodeAttributesVarargs(value: String*): Self = StObject.set(x, "nodeAttributes", js.Array(value :_*))
     
-    @scala.inline
-    def setNodeName(value: String): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
+    inline def setNodeName(value: String): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
   }
 }

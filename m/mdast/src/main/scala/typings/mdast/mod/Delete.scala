@@ -18,23 +18,18 @@ trait Delete
 }
 object Delete {
   
-  @scala.inline
-  def apply(children: js.Array[PhrasingContent]): Delete = {
+  inline def apply(children: js.Array[PhrasingContent]): Delete = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("delete")
     __obj.asInstanceOf[Delete]
   }
   
-  @scala.inline
-  implicit class DeleteMutableBuilder[Self <: Delete] (val x: Self) extends AnyVal {
+  extension [Self <: Delete](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Array[PhrasingContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[PhrasingContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVarargs(value: PhrasingContent*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: PhrasingContent*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: delete): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: delete): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

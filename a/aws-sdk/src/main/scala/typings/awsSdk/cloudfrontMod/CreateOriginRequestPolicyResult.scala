@@ -23,31 +23,23 @@ trait CreateOriginRequestPolicyResult extends StObject {
 }
 object CreateOriginRequestPolicyResult {
   
-  @scala.inline
-  def apply(): CreateOriginRequestPolicyResult = {
+  inline def apply(): CreateOriginRequestPolicyResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateOriginRequestPolicyResult]
   }
   
-  @scala.inline
-  implicit class CreateOriginRequestPolicyResultMutableBuilder[Self <: CreateOriginRequestPolicyResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateOriginRequestPolicyResult](x: Self) {
     
-    @scala.inline
-    def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
+    inline def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
+    inline def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
     
-    @scala.inline
-    def setOriginRequestPolicy(value: OriginRequestPolicy): Self = StObject.set(x, "OriginRequestPolicy", value.asInstanceOf[js.Any])
+    inline def setOriginRequestPolicy(value: OriginRequestPolicy): Self = StObject.set(x, "OriginRequestPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginRequestPolicyUndefined: Self = StObject.set(x, "OriginRequestPolicy", js.undefined)
+    inline def setOriginRequestPolicyUndefined: Self = StObject.set(x, "OriginRequestPolicy", js.undefined)
   }
 }

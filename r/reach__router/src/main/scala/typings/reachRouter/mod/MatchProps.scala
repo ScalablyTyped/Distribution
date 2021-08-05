@@ -13,19 +13,15 @@ trait MatchProps[TParams] extends StObject {
 }
 object MatchProps {
   
-  @scala.inline
-  def apply[TParams](children: /* props */ MatchRenderProps[TParams] => ReactNode, path: String): MatchProps[TParams] = {
+  inline def apply[TParams](children: /* props */ MatchRenderProps[TParams] => ReactNode, path: String): MatchProps[TParams] = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatchProps[TParams]]
   }
   
-  @scala.inline
-  implicit class MatchPropsMutableBuilder[Self <: MatchProps[?], TParams] (val x: Self & MatchProps[TParams]) extends AnyVal {
+  extension [Self <: MatchProps[?], TParams](x: Self & MatchProps[TParams]) {
     
-    @scala.inline
-    def setChildren(value: /* props */ MatchRenderProps[TParams] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+    inline def setChildren(value: /* props */ MatchRenderProps[TParams] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

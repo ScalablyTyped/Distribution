@@ -26,8 +26,7 @@ trait XStyleFamiliesSupplier
 }
 object XStyleFamiliesSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     StyleFamilies: XNameAccess,
     acquire: () => Unit,
     getStyleFamilies: () => XNameAccess,
@@ -38,13 +37,10 @@ object XStyleFamiliesSupplier {
     __obj.asInstanceOf[XStyleFamiliesSupplier]
   }
   
-  @scala.inline
-  implicit class XStyleFamiliesSupplierMutableBuilder[Self <: XStyleFamiliesSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XStyleFamiliesSupplier](x: Self) {
     
-    @scala.inline
-    def setGetStyleFamilies(value: () => XNameAccess): Self = StObject.set(x, "getStyleFamilies", js.Any.fromFunction0(value))
+    inline def setGetStyleFamilies(value: () => XNameAccess): Self = StObject.set(x, "getStyleFamilies", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStyleFamilies(value: XNameAccess): Self = StObject.set(x, "StyleFamilies", value.asInstanceOf[js.Any])
+    inline def setStyleFamilies(value: XNameAccess): Self = StObject.set(x, "StyleFamilies", value.asInstanceOf[js.Any])
   }
 }

@@ -23,46 +23,33 @@ trait GooglePrivacyDlpV2RedactImageRequest extends StObject {
 }
 object GooglePrivacyDlpV2RedactImageRequest {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2RedactImageRequest = {
+  inline def apply(): GooglePrivacyDlpV2RedactImageRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2RedactImageRequest]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2RedactImageRequestMutableBuilder[Self <: GooglePrivacyDlpV2RedactImageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2RedactImageRequest](x: Self) {
     
-    @scala.inline
-    def setByteItem(value: GooglePrivacyDlpV2ByteContentItem): Self = StObject.set(x, "byteItem", value.asInstanceOf[js.Any])
+    inline def setByteItem(value: GooglePrivacyDlpV2ByteContentItem): Self = StObject.set(x, "byteItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByteItemUndefined: Self = StObject.set(x, "byteItem", js.undefined)
+    inline def setByteItemUndefined: Self = StObject.set(x, "byteItem", js.undefined)
     
-    @scala.inline
-    def setImageRedactionConfigs(value: js.Array[GooglePrivacyDlpV2ImageRedactionConfig]): Self = StObject.set(x, "imageRedactionConfigs", value.asInstanceOf[js.Any])
+    inline def setImageRedactionConfigs(value: js.Array[GooglePrivacyDlpV2ImageRedactionConfig]): Self = StObject.set(x, "imageRedactionConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageRedactionConfigsUndefined: Self = StObject.set(x, "imageRedactionConfigs", js.undefined)
+    inline def setImageRedactionConfigsUndefined: Self = StObject.set(x, "imageRedactionConfigs", js.undefined)
     
-    @scala.inline
-    def setImageRedactionConfigsVarargs(value: GooglePrivacyDlpV2ImageRedactionConfig*): Self = StObject.set(x, "imageRedactionConfigs", js.Array(value :_*))
+    inline def setImageRedactionConfigsVarargs(value: GooglePrivacyDlpV2ImageRedactionConfig*): Self = StObject.set(x, "imageRedactionConfigs", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludeFindings(value: Boolean): Self = StObject.set(x, "includeFindings", value.asInstanceOf[js.Any])
+    inline def setIncludeFindings(value: Boolean): Self = StObject.set(x, "includeFindings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeFindingsUndefined: Self = StObject.set(x, "includeFindings", js.undefined)
+    inline def setIncludeFindingsUndefined: Self = StObject.set(x, "includeFindings", js.undefined)
     
-    @scala.inline
-    def setInspectConfig(value: GooglePrivacyDlpV2InspectConfig): Self = StObject.set(x, "inspectConfig", value.asInstanceOf[js.Any])
+    inline def setInspectConfig(value: GooglePrivacyDlpV2InspectConfig): Self = StObject.set(x, "inspectConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInspectConfigUndefined: Self = StObject.set(x, "inspectConfig", js.undefined)
+    inline def setInspectConfigUndefined: Self = StObject.set(x, "inspectConfig", js.undefined)
     
-    @scala.inline
-    def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
+    inline def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
+    inline def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
   }
 }

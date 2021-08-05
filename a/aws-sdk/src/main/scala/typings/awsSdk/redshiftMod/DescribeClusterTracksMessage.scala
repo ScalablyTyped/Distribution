@@ -23,31 +23,23 @@ trait DescribeClusterTracksMessage extends StObject {
 }
 object DescribeClusterTracksMessage {
   
-  @scala.inline
-  def apply(): DescribeClusterTracksMessage = {
+  inline def apply(): DescribeClusterTracksMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeClusterTracksMessage]
   }
   
-  @scala.inline
-  implicit class DescribeClusterTracksMessageMutableBuilder[Self <: DescribeClusterTracksMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeClusterTracksMessage](x: Self) {
     
-    @scala.inline
-    def setMaintenanceTrackName(value: String): Self = StObject.set(x, "MaintenanceTrackName", value.asInstanceOf[js.Any])
+    inline def setMaintenanceTrackName(value: String): Self = StObject.set(x, "MaintenanceTrackName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaintenanceTrackNameUndefined: Self = StObject.set(x, "MaintenanceTrackName", js.undefined)
+    inline def setMaintenanceTrackNameUndefined: Self = StObject.set(x, "MaintenanceTrackName", js.undefined)
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
+    inline def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
+    inline def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
   }
 }

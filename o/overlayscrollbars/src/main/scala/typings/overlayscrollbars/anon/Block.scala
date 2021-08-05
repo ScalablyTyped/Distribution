@@ -26,34 +26,25 @@ trait Block
 }
 object Block {
   
-  @scala.inline
-  def apply(el: HTMLElement | JQuery): Block = {
+  inline def apply(el: HTMLElement | JQuery): Block = {
     val __obj = js.Dynamic.literal(el = el.asInstanceOf[js.Any])
     __obj.asInstanceOf[Block]
   }
   
-  @scala.inline
-  implicit class BlockMutableBuilder[Self <: Block] (val x: Self) extends AnyVal {
+  extension [Self <: Block](x: Self) {
     
-    @scala.inline
-    def setBlock(value: BlockBehavior | XY | (js.Tuple2[BlockBehavior, BlockBehavior])): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+    inline def setBlock(value: BlockBehavior | XY | (js.Tuple2[BlockBehavior, BlockBehavior])): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
+    inline def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
     
-    @scala.inline
-    def setEl(value: HTMLElement | JQuery): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
+    inline def setEl(value: HTMLElement | JQuery): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMargin(value: Margin | Bottom | (js.Tuple2[Margin, Margin]) | (js.Tuple4[Margin, Margin, Margin, Margin])): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: Margin | Bottom | (js.Tuple2[Margin, Margin]) | (js.Tuple4[Margin, Margin, Margin, Margin])): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
-    @scala.inline
-    def setScroll(value: ScrollBehavior | Y | (js.Tuple2[ScrollBehavior, ScrollBehavior])): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
+    inline def setScroll(value: ScrollBehavior | Y | (js.Tuple2[ScrollBehavior, ScrollBehavior])): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
+    inline def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
   }
 }

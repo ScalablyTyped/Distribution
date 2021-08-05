@@ -18,8 +18,6 @@ object mod {
   @js.native
   val ENV_IMDS_DISABLED: /* "AWS_EC2_METADATA_DISABLED" */ String = js.native
   
-  @scala.inline
-  def defaultProvider(): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultProvider")().asInstanceOf[CredentialProvider]
-  @scala.inline
-  def defaultProvider(init: FromIniInit & RemoteProviderInit & FromProcessInit): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultProvider")(init.asInstanceOf[js.Any]).asInstanceOf[CredentialProvider]
+  inline def defaultProvider(): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultProvider")().asInstanceOf[CredentialProvider]
+  inline def defaultProvider(init: FromIniInit & RemoteProviderInit & FromProcessInit): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultProvider")(init.asInstanceOf[js.Any]).asInstanceOf[CredentialProvider]
 }

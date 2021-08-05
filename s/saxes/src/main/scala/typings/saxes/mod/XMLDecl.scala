@@ -17,31 +17,23 @@ trait XMLDecl extends StObject {
 }
 object XMLDecl {
   
-  @scala.inline
-  def apply(): XMLDecl = {
+  inline def apply(): XMLDecl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[XMLDecl]
   }
   
-  @scala.inline
-  implicit class XMLDeclMutableBuilder[Self <: XMLDecl] (val x: Self) extends AnyVal {
+  extension [Self <: XMLDecl](x: Self) {
     
-    @scala.inline
-    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
-    @scala.inline
-    def setStandalone(value: String): Self = StObject.set(x, "standalone", value.asInstanceOf[js.Any])
+    inline def setStandalone(value: String): Self = StObject.set(x, "standalone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandaloneUndefined: Self = StObject.set(x, "standalone", js.undefined)
+    inline def setStandaloneUndefined: Self = StObject.set(x, "standalone", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

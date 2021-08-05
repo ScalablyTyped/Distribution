@@ -12,22 +12,17 @@ trait IdentityContainer
 }
 object IdentityContainer {
   
-  @scala.inline
-  def apply(): IdentityContainer = {
+  inline def apply(): IdentityContainer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IdentityContainer]
   }
   
-  @scala.inline
-  implicit class IdentityContainerMutableBuilder[Self <: IdentityContainer] (val x: Self) extends AnyVal {
+  extension [Self <: IdentityContainer](x: Self) {
     
-    @scala.inline
-    def setConditionalAccess(value: NullableOption[ConditionalAccessRoot]): Self = StObject.set(x, "conditionalAccess", value.asInstanceOf[js.Any])
+    inline def setConditionalAccess(value: NullableOption[ConditionalAccessRoot]): Self = StObject.set(x, "conditionalAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionalAccessNull: Self = StObject.set(x, "conditionalAccess", null)
+    inline def setConditionalAccessNull: Self = StObject.set(x, "conditionalAccess", null)
     
-    @scala.inline
-    def setConditionalAccessUndefined: Self = StObject.set(x, "conditionalAccess", js.undefined)
+    inline def setConditionalAccessUndefined: Self = StObject.set(x, "conditionalAccess", js.undefined)
   }
 }

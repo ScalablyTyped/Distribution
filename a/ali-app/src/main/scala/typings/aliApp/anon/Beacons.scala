@@ -11,19 +11,15 @@ trait Beacons extends StObject {
 }
 object Beacons {
   
-  @scala.inline
-  def apply(beacons: js.Array[Beacon]): Beacons = {
+  inline def apply(beacons: js.Array[Beacon]): Beacons = {
     val __obj = js.Dynamic.literal(beacons = beacons.asInstanceOf[js.Any])
     __obj.asInstanceOf[Beacons]
   }
   
-  @scala.inline
-  implicit class BeaconsMutableBuilder[Self <: Beacons] (val x: Self) extends AnyVal {
+  extension [Self <: Beacons](x: Self) {
     
-    @scala.inline
-    def setBeacons(value: js.Array[Beacon]): Self = StObject.set(x, "beacons", value.asInstanceOf[js.Any])
+    inline def setBeacons(value: js.Array[Beacon]): Self = StObject.set(x, "beacons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeaconsVarargs(value: Beacon*): Self = StObject.set(x, "beacons", js.Array(value :_*))
+    inline def setBeaconsVarargs(value: Beacon*): Self = StObject.set(x, "beacons", js.Array(value :_*))
   }
 }

@@ -304,7 +304,7 @@ trait Board extends EventEmitter {
   // TODO untested --- TWW
   def sysexResponse(commandByte: Double, handler: js.Function1[/* data */ js.Array[Double], Unit]): Unit = js.native
   
-  var transport: typings.serialport.mod.^ = js.native
+  /* protected */ var transport: typings.serialport.mod.^ = js.native
   
   var version: Version = js.native
 }

@@ -13,8 +13,6 @@ object svgMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(element: SVGElement): Styler = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[Styler]
-  @scala.inline
-  def default(element: SVGPathElement): Styler = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[Styler]
+  inline def default(element: SVGElement): Styler = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[Styler]
+  inline def default(element: SVGPathElement): Styler = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[Styler]
 }

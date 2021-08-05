@@ -13,10 +13,8 @@ object mod {
   /**
     * Creates new ignore manager.
     */
-  @scala.inline
-  def default(): Ignore = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Ignore]
-  @scala.inline
-  def default(options: Options): Ignore = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Ignore]
+  inline def default(): Ignore = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Ignore]
+  inline def default(options: Options): Ignore = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Ignore]
   
   @js.native
   trait Ignore extends StObject {
@@ -63,20 +61,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setIgnorecase(value: Boolean): Self = StObject.set(x, "ignorecase", value.asInstanceOf[js.Any])
+      inline def setIgnorecase(value: Boolean): Self = StObject.set(x, "ignorecase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnorecaseUndefined: Self = StObject.set(x, "ignorecase", js.undefined)
+      inline def setIgnorecaseUndefined: Self = StObject.set(x, "ignorecase", js.undefined)
     }
   }
 }

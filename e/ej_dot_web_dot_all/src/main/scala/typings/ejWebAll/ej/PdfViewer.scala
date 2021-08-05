@@ -393,32 +393,24 @@ object PdfViewer {
   }
   object AfterPrintEventArgs {
     
-    @scala.inline
-    def apply(): AfterPrintEventArgs = {
+    inline def apply(): AfterPrintEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AfterPrintEventArgs]
     }
     
-    @scala.inline
-    implicit class AfterPrintEventArgsMutableBuilder[Self <: AfterPrintEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: AfterPrintEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -442,38 +434,28 @@ object PdfViewer {
   }
   object AjaxRequestFailureEventArgs {
     
-    @scala.inline
-    def apply(): AjaxRequestFailureEventArgs = {
+    inline def apply(): AjaxRequestFailureEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AjaxRequestFailureEventArgs]
     }
     
-    @scala.inline
-    implicit class AjaxRequestFailureEventArgsMutableBuilder[Self <: AjaxRequestFailureEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: AjaxRequestFailureEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -497,38 +479,28 @@ object PdfViewer {
   }
   object AjaxRequestSuccessEventArgs {
     
-    @scala.inline
-    def apply(): AjaxRequestSuccessEventArgs = {
+    inline def apply(): AjaxRequestSuccessEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AjaxRequestSuccessEventArgs]
     }
     
-    @scala.inline
-    implicit class AjaxRequestSuccessEventArgsMutableBuilder[Self <: AjaxRequestSuccessEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: AjaxRequestSuccessEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setResponseData(value: String): Self = StObject.set(x, "responseData", value.asInstanceOf[js.Any])
+      inline def setResponseData(value: String): Self = StObject.set(x, "responseData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseDataUndefined: Self = StObject.set(x, "responseData", js.undefined)
+      inline def setResponseDataUndefined: Self = StObject.set(x, "responseData", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -568,65 +540,46 @@ object PdfViewer {
   }
   object AnnotationAddEventArgs {
     
-    @scala.inline
-    def apply(): AnnotationAddEventArgs = {
+    inline def apply(): AnnotationAddEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AnnotationAddEventArgs]
     }
     
-    @scala.inline
-    implicit class AnnotationAddEventArgsMutableBuilder[Self <: AnnotationAddEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: AnnotationAddEventArgs](x: Self) {
       
-      @scala.inline
-      def setAnnotationBound(value: js.Array[js.Any]): Self = StObject.set(x, "annotationBound", value.asInstanceOf[js.Any])
+      inline def setAnnotationBound(value: js.Array[js.Any]): Self = StObject.set(x, "annotationBound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnnotationBoundUndefined: Self = StObject.set(x, "annotationBound", js.undefined)
+      inline def setAnnotationBoundUndefined: Self = StObject.set(x, "annotationBound", js.undefined)
       
-      @scala.inline
-      def setAnnotationBoundVarargs(value: js.Any*): Self = StObject.set(x, "annotationBound", js.Array(value :_*))
+      inline def setAnnotationBoundVarargs(value: js.Any*): Self = StObject.set(x, "annotationBound", js.Array(value :_*))
       
-      @scala.inline
-      def setAnnotationID(value: Double): Self = StObject.set(x, "annotationID", value.asInstanceOf[js.Any])
+      inline def setAnnotationID(value: Double): Self = StObject.set(x, "annotationID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnnotationIDUndefined: Self = StObject.set(x, "annotationID", js.undefined)
+      inline def setAnnotationIDUndefined: Self = StObject.set(x, "annotationID", js.undefined)
       
-      @scala.inline
-      def setAnnotationSettings(value: js.Any): Self = StObject.set(x, "annotationSettings", value.asInstanceOf[js.Any])
+      inline def setAnnotationSettings(value: js.Any): Self = StObject.set(x, "annotationSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnnotationSettingsUndefined: Self = StObject.set(x, "annotationSettings", js.undefined)
+      inline def setAnnotationSettingsUndefined: Self = StObject.set(x, "annotationSettings", js.undefined)
       
-      @scala.inline
-      def setAnnotationType(value: String): Self = StObject.set(x, "annotationType", value.asInstanceOf[js.Any])
+      inline def setAnnotationType(value: String): Self = StObject.set(x, "annotationType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnnotationTypeUndefined: Self = StObject.set(x, "annotationType", js.undefined)
+      inline def setAnnotationTypeUndefined: Self = StObject.set(x, "annotationType", js.undefined)
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setPageID(value: Double): Self = StObject.set(x, "pageID", value.asInstanceOf[js.Any])
+      inline def setPageID(value: Double): Self = StObject.set(x, "pageID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageIDUndefined: Self = StObject.set(x, "pageID", js.undefined)
+      inline def setPageIDUndefined: Self = StObject.set(x, "pageID", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -650,38 +603,28 @@ object PdfViewer {
   }
   object AnnotationContextMenu {
     
-    @scala.inline
-    def apply(): AnnotationContextMenu = {
+    inline def apply(): AnnotationContextMenu = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AnnotationContextMenu]
     }
     
-    @scala.inline
-    implicit class AnnotationContextMenuMutableBuilder[Self <: AnnotationContextMenu] (val x: Self) extends AnyVal {
+    extension [Self <: AnnotationContextMenu](x: Self) {
       
-      @scala.inline
-      def setIsDeleteEnable(value: Boolean): Self = StObject.set(x, "isDeleteEnable", value.asInstanceOf[js.Any])
+      inline def setIsDeleteEnable(value: Boolean): Self = StObject.set(x, "isDeleteEnable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDeleteEnableUndefined: Self = StObject.set(x, "isDeleteEnable", js.undefined)
+      inline def setIsDeleteEnableUndefined: Self = StObject.set(x, "isDeleteEnable", js.undefined)
       
-      @scala.inline
-      def setIsEnable(value: Boolean): Self = StObject.set(x, "isEnable", value.asInstanceOf[js.Any])
+      inline def setIsEnable(value: Boolean): Self = StObject.set(x, "isEnable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEnableUndefined: Self = StObject.set(x, "isEnable", js.undefined)
+      inline def setIsEnableUndefined: Self = StObject.set(x, "isEnable", js.undefined)
       
-      @scala.inline
-      def setIsPopupEnable(value: Boolean): Self = StObject.set(x, "isPopupEnable", value.asInstanceOf[js.Any])
+      inline def setIsPopupEnable(value: Boolean): Self = StObject.set(x, "isPopupEnable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPopupEnableUndefined: Self = StObject.set(x, "isPopupEnable", js.undefined)
+      inline def setIsPopupEnableUndefined: Self = StObject.set(x, "isPopupEnable", js.undefined)
       
-      @scala.inline
-      def setIsPropertiesEnable(value: Boolean): Self = StObject.set(x, "isPropertiesEnable", value.asInstanceOf[js.Any])
+      inline def setIsPropertiesEnable(value: Boolean): Self = StObject.set(x, "isPropertiesEnable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPropertiesEnableUndefined: Self = StObject.set(x, "isPropertiesEnable", js.undefined)
+      inline def setIsPropertiesEnableUndefined: Self = StObject.set(x, "isPropertiesEnable", js.undefined)
     }
   }
   
@@ -721,62 +664,44 @@ object PdfViewer {
   }
   object AnnotationPropertiesChangeEventArgs {
     
-    @scala.inline
-    def apply(): AnnotationPropertiesChangeEventArgs = {
+    inline def apply(): AnnotationPropertiesChangeEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AnnotationPropertiesChangeEventArgs]
     }
     
-    @scala.inline
-    implicit class AnnotationPropertiesChangeEventArgsMutableBuilder[Self <: AnnotationPropertiesChangeEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: AnnotationPropertiesChangeEventArgs](x: Self) {
       
-      @scala.inline
-      def setAnnotationID(value: Double): Self = StObject.set(x, "annotationID", value.asInstanceOf[js.Any])
+      inline def setAnnotationID(value: Double): Self = StObject.set(x, "annotationID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnnotationIDUndefined: Self = StObject.set(x, "annotationID", js.undefined)
+      inline def setAnnotationIDUndefined: Self = StObject.set(x, "annotationID", js.undefined)
       
-      @scala.inline
-      def setAnnotationType(value: String): Self = StObject.set(x, "annotationType", value.asInstanceOf[js.Any])
+      inline def setAnnotationType(value: String): Self = StObject.set(x, "annotationType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnnotationTypeUndefined: Self = StObject.set(x, "annotationType", js.undefined)
+      inline def setAnnotationTypeUndefined: Self = StObject.set(x, "annotationType", js.undefined)
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setIsColorChanged(value: Boolean): Self = StObject.set(x, "isColorChanged", value.asInstanceOf[js.Any])
+      inline def setIsColorChanged(value: Boolean): Self = StObject.set(x, "isColorChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsColorChangedUndefined: Self = StObject.set(x, "isColorChanged", js.undefined)
+      inline def setIsColorChangedUndefined: Self = StObject.set(x, "isColorChanged", js.undefined)
       
-      @scala.inline
-      def setIsOpacityChanged(value: Boolean): Self = StObject.set(x, "isOpacityChanged", value.asInstanceOf[js.Any])
+      inline def setIsOpacityChanged(value: Boolean): Self = StObject.set(x, "isOpacityChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOpacityChangedUndefined: Self = StObject.set(x, "isOpacityChanged", js.undefined)
+      inline def setIsOpacityChangedUndefined: Self = StObject.set(x, "isOpacityChanged", js.undefined)
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setPageID(value: Double): Self = StObject.set(x, "pageID", value.asInstanceOf[js.Any])
+      inline def setPageID(value: Double): Self = StObject.set(x, "pageID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageIDUndefined: Self = StObject.set(x, "pageID", js.undefined)
+      inline def setPageIDUndefined: Self = StObject.set(x, "pageID", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -808,50 +733,36 @@ object PdfViewer {
   }
   object AnnotationRemoveEventArgs {
     
-    @scala.inline
-    def apply(): AnnotationRemoveEventArgs = {
+    inline def apply(): AnnotationRemoveEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AnnotationRemoveEventArgs]
     }
     
-    @scala.inline
-    implicit class AnnotationRemoveEventArgsMutableBuilder[Self <: AnnotationRemoveEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: AnnotationRemoveEventArgs](x: Self) {
       
-      @scala.inline
-      def setAnnotationID(value: Double): Self = StObject.set(x, "annotationID", value.asInstanceOf[js.Any])
+      inline def setAnnotationID(value: Double): Self = StObject.set(x, "annotationID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnnotationIDUndefined: Self = StObject.set(x, "annotationID", js.undefined)
+      inline def setAnnotationIDUndefined: Self = StObject.set(x, "annotationID", js.undefined)
       
-      @scala.inline
-      def setAnnotationType(value: String): Self = StObject.set(x, "annotationType", value.asInstanceOf[js.Any])
+      inline def setAnnotationType(value: String): Self = StObject.set(x, "annotationType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnnotationTypeUndefined: Self = StObject.set(x, "annotationType", js.undefined)
+      inline def setAnnotationTypeUndefined: Self = StObject.set(x, "annotationType", js.undefined)
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setPageID(value: Double): Self = StObject.set(x, "pageID", value.asInstanceOf[js.Any])
+      inline def setPageID(value: Double): Self = StObject.set(x, "pageID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageIDUndefined: Self = StObject.set(x, "pageID", js.undefined)
+      inline def setPageIDUndefined: Self = StObject.set(x, "pageID", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -871,32 +782,24 @@ object PdfViewer {
   }
   object BeforePrintEventArgs {
     
-    @scala.inline
-    def apply(): BeforePrintEventArgs = {
+    inline def apply(): BeforePrintEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BeforePrintEventArgs]
     }
     
-    @scala.inline
-    implicit class BeforePrintEventArgsMutableBuilder[Self <: BeforePrintEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: BeforePrintEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -920,38 +823,28 @@ object PdfViewer {
   }
   object BufferEndEventArgs {
     
-    @scala.inline
-    def apply(): BufferEndEventArgs = {
+    inline def apply(): BufferEndEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BufferEndEventArgs]
     }
     
-    @scala.inline
-    implicit class BufferEndEventArgsMutableBuilder[Self <: BufferEndEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: BufferEndEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setIsBuffering(value: Boolean): Self = StObject.set(x, "isBuffering", value.asInstanceOf[js.Any])
+      inline def setIsBuffering(value: Boolean): Self = StObject.set(x, "isBuffering", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBufferingUndefined: Self = StObject.set(x, "isBuffering", js.undefined)
+      inline def setIsBufferingUndefined: Self = StObject.set(x, "isBuffering", js.undefined)
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -975,38 +868,28 @@ object PdfViewer {
   }
   object BufferStartEventArgs {
     
-    @scala.inline
-    def apply(): BufferStartEventArgs = {
+    inline def apply(): BufferStartEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BufferStartEventArgs]
     }
     
-    @scala.inline
-    implicit class BufferStartEventArgsMutableBuilder[Self <: BufferStartEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: BufferStartEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setIsBuffering(value: Boolean): Self = StObject.set(x, "isBuffering", value.asInstanceOf[js.Any])
+      inline def setIsBuffering(value: Boolean): Self = StObject.set(x, "isBuffering", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBufferingUndefined: Self = StObject.set(x, "isBuffering", js.undefined)
+      inline def setIsBufferingUndefined: Self = StObject.set(x, "isBuffering", js.undefined)
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -1026,32 +909,24 @@ object PdfViewer {
   }
   object DestroyEventArgs {
     
-    @scala.inline
-    def apply(): DestroyEventArgs = {
+    inline def apply(): DestroyEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DestroyEventArgs]
     }
     
-    @scala.inline
-    implicit class DestroyEventArgsMutableBuilder[Self <: DestroyEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: DestroyEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -1075,38 +950,28 @@ object PdfViewer {
   }
   object DocumentLoadEventArgs {
     
-    @scala.inline
-    def apply(): DocumentLoadEventArgs = {
+    inline def apply(): DocumentLoadEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DocumentLoadEventArgs]
     }
     
-    @scala.inline
-    implicit class DocumentLoadEventArgsMutableBuilder[Self <: DocumentLoadEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: DocumentLoadEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+      inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -1126,32 +991,24 @@ object PdfViewer {
   }
   object DocumentUnloadEventArgs {
     
-    @scala.inline
-    def apply(): DocumentUnloadEventArgs = {
+    inline def apply(): DocumentUnloadEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DocumentUnloadEventArgs]
     }
     
-    @scala.inline
-    implicit class DocumentUnloadEventArgsMutableBuilder[Self <: DocumentUnloadEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: DocumentUnloadEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -1179,44 +1036,32 @@ object PdfViewer {
   }
   object DownloadEndEventArgs {
     
-    @scala.inline
-    def apply(): DownloadEndEventArgs = {
+    inline def apply(): DownloadEndEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DownloadEndEventArgs]
     }
     
-    @scala.inline
-    implicit class DownloadEndEventArgsMutableBuilder[Self <: DownloadEndEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: DownloadEndEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+      inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -1244,44 +1089,32 @@ object PdfViewer {
   }
   object DownloadStartEventArgs {
     
-    @scala.inline
-    def apply(): DownloadStartEventArgs = {
+    inline def apply(): DownloadStartEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DownloadStartEventArgs]
     }
     
-    @scala.inline
-    implicit class DownloadStartEventArgsMutableBuilder[Self <: DownloadStartEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: DownloadStartEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+      inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -1313,50 +1146,36 @@ object PdfViewer {
   }
   object HighlightSettings {
     
-    @scala.inline
-    def apply(): HighlightSettings = {
+    inline def apply(): HighlightSettings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HighlightSettings]
     }
     
-    @scala.inline
-    implicit class HighlightSettingsMutableBuilder[Self <: HighlightSettings] (val x: Self) extends AnyVal {
+    extension [Self <: HighlightSettings](x: Self) {
       
-      @scala.inline
-      def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+      inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
+      inline def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setIsLocked(value: Boolean): Self = StObject.set(x, "isLocked", value.asInstanceOf[js.Any])
+      inline def setIsLocked(value: Boolean): Self = StObject.set(x, "isLocked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLockedUndefined: Self = StObject.set(x, "isLocked", js.undefined)
+      inline def setIsLockedUndefined: Self = StObject.set(x, "isLocked", js.undefined)
       
-      @scala.inline
-      def setModifiedDate(value: String): Self = StObject.set(x, "modifiedDate", value.asInstanceOf[js.Any])
+      inline def setModifiedDate(value: String): Self = StObject.set(x, "modifiedDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModifiedDateUndefined: Self = StObject.set(x, "modifiedDate", js.undefined)
+      inline def setModifiedDateUndefined: Self = StObject.set(x, "modifiedDate", js.undefined)
       
-      @scala.inline
-      def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+      inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      @scala.inline
-      def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+      inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+      inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     }
   }
   
@@ -1380,38 +1199,28 @@ object PdfViewer {
   }
   object HyperlinkClickEventArgs {
     
-    @scala.inline
-    def apply(): HyperlinkClickEventArgs = {
+    inline def apply(): HyperlinkClickEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HyperlinkClickEventArgs]
     }
     
-    @scala.inline
-    implicit class HyperlinkClickEventArgsMutableBuilder[Self <: HyperlinkClickEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: HyperlinkClickEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setHyperlink(value: String): Self = StObject.set(x, "hyperlink", value.asInstanceOf[js.Any])
+      inline def setHyperlink(value: String): Self = StObject.set(x, "hyperlink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHyperlinkUndefined: Self = StObject.set(x, "hyperlink", js.undefined)
+      inline def setHyperlinkUndefined: Self = StObject.set(x, "hyperlink", js.undefined)
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -1627,326 +1436,220 @@ object PdfViewer {
   }
   object Model {
     
-    @scala.inline
-    def apply(): typings.ejWebAll.ej.PdfViewer.Model = {
+    inline def apply(): typings.ejWebAll.ej.PdfViewer.Model = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.ejWebAll.ej.PdfViewer.Model]
     }
     
-    @scala.inline
-    implicit class ModelMutableBuilder[Self <: typings.ejWebAll.ej.PdfViewer.Model] (val x: Self) extends AnyVal {
+    extension [Self <: typings.ejWebAll.ej.PdfViewer.Model](x: Self) {
       
-      @scala.inline
-      def setAfterPrint(value: /* e */ AfterPrintEventArgs => Unit): Self = StObject.set(x, "afterPrint", js.Any.fromFunction1(value))
+      inline def setAfterPrint(value: /* e */ AfterPrintEventArgs => Unit): Self = StObject.set(x, "afterPrint", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAfterPrintUndefined: Self = StObject.set(x, "afterPrint", js.undefined)
+      inline def setAfterPrintUndefined: Self = StObject.set(x, "afterPrint", js.undefined)
       
-      @scala.inline
-      def setAjaxRequestFailure(value: /* e */ AjaxRequestFailureEventArgs => Unit): Self = StObject.set(x, "ajaxRequestFailure", js.Any.fromFunction1(value))
+      inline def setAjaxRequestFailure(value: /* e */ AjaxRequestFailureEventArgs => Unit): Self = StObject.set(x, "ajaxRequestFailure", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAjaxRequestFailureUndefined: Self = StObject.set(x, "ajaxRequestFailure", js.undefined)
+      inline def setAjaxRequestFailureUndefined: Self = StObject.set(x, "ajaxRequestFailure", js.undefined)
       
-      @scala.inline
-      def setAjaxRequestSuccess(value: /* e */ AjaxRequestSuccessEventArgs => Unit): Self = StObject.set(x, "ajaxRequestSuccess", js.Any.fromFunction1(value))
+      inline def setAjaxRequestSuccess(value: /* e */ AjaxRequestSuccessEventArgs => Unit): Self = StObject.set(x, "ajaxRequestSuccess", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAjaxRequestSuccessUndefined: Self = StObject.set(x, "ajaxRequestSuccess", js.undefined)
+      inline def setAjaxRequestSuccessUndefined: Self = StObject.set(x, "ajaxRequestSuccess", js.undefined)
       
-      @scala.inline
-      def setAllowClientBuffering(value: Boolean): Self = StObject.set(x, "allowClientBuffering", value.asInstanceOf[js.Any])
+      inline def setAllowClientBuffering(value: Boolean): Self = StObject.set(x, "allowClientBuffering", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowClientBufferingUndefined: Self = StObject.set(x, "allowClientBuffering", js.undefined)
+      inline def setAllowClientBufferingUndefined: Self = StObject.set(x, "allowClientBuffering", js.undefined)
       
-      @scala.inline
-      def setAnnotationAdd(value: /* e */ AnnotationAddEventArgs => Unit): Self = StObject.set(x, "annotationAdd", js.Any.fromFunction1(value))
+      inline def setAnnotationAdd(value: /* e */ AnnotationAddEventArgs => Unit): Self = StObject.set(x, "annotationAdd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAnnotationAddUndefined: Self = StObject.set(x, "annotationAdd", js.undefined)
+      inline def setAnnotationAddUndefined: Self = StObject.set(x, "annotationAdd", js.undefined)
       
-      @scala.inline
-      def setAnnotationContextMenu(value: AnnotationContextMenu): Self = StObject.set(x, "annotationContextMenu", value.asInstanceOf[js.Any])
+      inline def setAnnotationContextMenu(value: AnnotationContextMenu): Self = StObject.set(x, "annotationContextMenu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnnotationContextMenuUndefined: Self = StObject.set(x, "annotationContextMenu", js.undefined)
+      inline def setAnnotationContextMenuUndefined: Self = StObject.set(x, "annotationContextMenu", js.undefined)
       
-      @scala.inline
-      def setAnnotationPropertiesChange(value: /* e */ AnnotationPropertiesChangeEventArgs => Unit): Self = StObject.set(x, "annotationPropertiesChange", js.Any.fromFunction1(value))
+      inline def setAnnotationPropertiesChange(value: /* e */ AnnotationPropertiesChangeEventArgs => Unit): Self = StObject.set(x, "annotationPropertiesChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAnnotationPropertiesChangeUndefined: Self = StObject.set(x, "annotationPropertiesChange", js.undefined)
+      inline def setAnnotationPropertiesChangeUndefined: Self = StObject.set(x, "annotationPropertiesChange", js.undefined)
       
-      @scala.inline
-      def setAnnotationRemove(value: /* e */ AnnotationRemoveEventArgs => Unit): Self = StObject.set(x, "annotationRemove", js.Any.fromFunction1(value))
+      inline def setAnnotationRemove(value: /* e */ AnnotationRemoveEventArgs => Unit): Self = StObject.set(x, "annotationRemove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAnnotationRemoveUndefined: Self = StObject.set(x, "annotationRemove", js.undefined)
+      inline def setAnnotationRemoveUndefined: Self = StObject.set(x, "annotationRemove", js.undefined)
       
-      @scala.inline
-      def setAnnotationType(value: AnnotationType | String): Self = StObject.set(x, "annotationType", value.asInstanceOf[js.Any])
+      inline def setAnnotationType(value: AnnotationType | String): Self = StObject.set(x, "annotationType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnnotationTypeUndefined: Self = StObject.set(x, "annotationType", js.undefined)
+      inline def setAnnotationTypeUndefined: Self = StObject.set(x, "annotationType", js.undefined)
       
-      @scala.inline
-      def setBeforePrint(value: /* e */ BeforePrintEventArgs => Unit): Self = StObject.set(x, "beforePrint", js.Any.fromFunction1(value))
+      inline def setBeforePrint(value: /* e */ BeforePrintEventArgs => Unit): Self = StObject.set(x, "beforePrint", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBeforePrintUndefined: Self = StObject.set(x, "beforePrint", js.undefined)
+      inline def setBeforePrintUndefined: Self = StObject.set(x, "beforePrint", js.undefined)
       
-      @scala.inline
-      def setBufferEnd(value: /* e */ BufferEndEventArgs => Unit): Self = StObject.set(x, "bufferEnd", js.Any.fromFunction1(value))
+      inline def setBufferEnd(value: /* e */ BufferEndEventArgs => Unit): Self = StObject.set(x, "bufferEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBufferEndUndefined: Self = StObject.set(x, "bufferEnd", js.undefined)
+      inline def setBufferEndUndefined: Self = StObject.set(x, "bufferEnd", js.undefined)
       
-      @scala.inline
-      def setBufferStart(value: /* e */ BufferStartEventArgs => Unit): Self = StObject.set(x, "bufferStart", js.Any.fromFunction1(value))
+      inline def setBufferStart(value: /* e */ BufferStartEventArgs => Unit): Self = StObject.set(x, "bufferStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBufferStartUndefined: Self = StObject.set(x, "bufferStart", js.undefined)
+      inline def setBufferStartUndefined: Self = StObject.set(x, "bufferStart", js.undefined)
       
-      @scala.inline
-      def setBufferingMode(value: BufferingMode | String): Self = StObject.set(x, "bufferingMode", value.asInstanceOf[js.Any])
+      inline def setBufferingMode(value: BufferingMode | String): Self = StObject.set(x, "bufferingMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBufferingModeUndefined: Self = StObject.set(x, "bufferingMode", js.undefined)
+      inline def setBufferingModeUndefined: Self = StObject.set(x, "bufferingMode", js.undefined)
       
-      @scala.inline
-      def setCurrentPageNumber(value: Double): Self = StObject.set(x, "currentPageNumber", value.asInstanceOf[js.Any])
+      inline def setCurrentPageNumber(value: Double): Self = StObject.set(x, "currentPageNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentPageNumberUndefined: Self = StObject.set(x, "currentPageNumber", js.undefined)
+      inline def setCurrentPageNumberUndefined: Self = StObject.set(x, "currentPageNumber", js.undefined)
       
-      @scala.inline
-      def setDestroy(value: /* e */ DestroyEventArgs => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
+      inline def setDestroy(value: /* e */ DestroyEventArgs => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+      inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
-      @scala.inline
-      def setDocumentLoad(value: /* e */ DocumentLoadEventArgs => Unit): Self = StObject.set(x, "documentLoad", js.Any.fromFunction1(value))
+      inline def setDocumentLoad(value: /* e */ DocumentLoadEventArgs => Unit): Self = StObject.set(x, "documentLoad", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDocumentLoadUndefined: Self = StObject.set(x, "documentLoad", js.undefined)
+      inline def setDocumentLoadUndefined: Self = StObject.set(x, "documentLoad", js.undefined)
       
-      @scala.inline
-      def setDocumentPath(value: String): Self = StObject.set(x, "documentPath", value.asInstanceOf[js.Any])
+      inline def setDocumentPath(value: String): Self = StObject.set(x, "documentPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentPathUndefined: Self = StObject.set(x, "documentPath", js.undefined)
+      inline def setDocumentPathUndefined: Self = StObject.set(x, "documentPath", js.undefined)
       
-      @scala.inline
-      def setDocumentUnload(value: /* e */ DocumentUnloadEventArgs => Unit): Self = StObject.set(x, "documentUnload", js.Any.fromFunction1(value))
+      inline def setDocumentUnload(value: /* e */ DocumentUnloadEventArgs => Unit): Self = StObject.set(x, "documentUnload", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDocumentUnloadUndefined: Self = StObject.set(x, "documentUnload", js.undefined)
+      inline def setDocumentUnloadUndefined: Self = StObject.set(x, "documentUnload", js.undefined)
       
-      @scala.inline
-      def setDownloadEnd(value: /* e */ DownloadEndEventArgs => Unit): Self = StObject.set(x, "downloadEnd", js.Any.fromFunction1(value))
+      inline def setDownloadEnd(value: /* e */ DownloadEndEventArgs => Unit): Self = StObject.set(x, "downloadEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDownloadEndUndefined: Self = StObject.set(x, "downloadEnd", js.undefined)
+      inline def setDownloadEndUndefined: Self = StObject.set(x, "downloadEnd", js.undefined)
       
-      @scala.inline
-      def setDownloadStart(value: /* e */ DownloadStartEventArgs => Unit): Self = StObject.set(x, "downloadStart", js.Any.fromFunction1(value))
+      inline def setDownloadStart(value: /* e */ DownloadStartEventArgs => Unit): Self = StObject.set(x, "downloadStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDownloadStartUndefined: Self = StObject.set(x, "downloadStart", js.undefined)
+      inline def setDownloadStartUndefined: Self = StObject.set(x, "downloadStart", js.undefined)
       
-      @scala.inline
-      def setEnableHighlightAnnotation(value: Boolean): Self = StObject.set(x, "enableHighlightAnnotation", value.asInstanceOf[js.Any])
+      inline def setEnableHighlightAnnotation(value: Boolean): Self = StObject.set(x, "enableHighlightAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableHighlightAnnotationUndefined: Self = StObject.set(x, "enableHighlightAnnotation", js.undefined)
+      inline def setEnableHighlightAnnotationUndefined: Self = StObject.set(x, "enableHighlightAnnotation", js.undefined)
       
-      @scala.inline
-      def setEnableHyperlink(value: Boolean): Self = StObject.set(x, "enableHyperlink", value.asInstanceOf[js.Any])
+      inline def setEnableHyperlink(value: Boolean): Self = StObject.set(x, "enableHyperlink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableHyperlinkUndefined: Self = StObject.set(x, "enableHyperlink", js.undefined)
+      inline def setEnableHyperlinkUndefined: Self = StObject.set(x, "enableHyperlink", js.undefined)
       
-      @scala.inline
-      def setEnableSignature(value: Boolean): Self = StObject.set(x, "enableSignature", value.asInstanceOf[js.Any])
+      inline def setEnableSignature(value: Boolean): Self = StObject.set(x, "enableSignature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableSignatureUndefined: Self = StObject.set(x, "enableSignature", js.undefined)
+      inline def setEnableSignatureUndefined: Self = StObject.set(x, "enableSignature", js.undefined)
       
-      @scala.inline
-      def setEnableStrikethroughAnnotation(value: Boolean): Self = StObject.set(x, "enableStrikethroughAnnotation", value.asInstanceOf[js.Any])
+      inline def setEnableStrikethroughAnnotation(value: Boolean): Self = StObject.set(x, "enableStrikethroughAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableStrikethroughAnnotationUndefined: Self = StObject.set(x, "enableStrikethroughAnnotation", js.undefined)
+      inline def setEnableStrikethroughAnnotationUndefined: Self = StObject.set(x, "enableStrikethroughAnnotation", js.undefined)
       
-      @scala.inline
-      def setEnableTextMarkupAnnotations(value: Boolean): Self = StObject.set(x, "enableTextMarkupAnnotations", value.asInstanceOf[js.Any])
+      inline def setEnableTextMarkupAnnotations(value: Boolean): Self = StObject.set(x, "enableTextMarkupAnnotations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableTextMarkupAnnotationsUndefined: Self = StObject.set(x, "enableTextMarkupAnnotations", js.undefined)
+      inline def setEnableTextMarkupAnnotationsUndefined: Self = StObject.set(x, "enableTextMarkupAnnotations", js.undefined)
       
-      @scala.inline
-      def setEnableTextSelection(value: Boolean): Self = StObject.set(x, "enableTextSelection", value.asInstanceOf[js.Any])
+      inline def setEnableTextSelection(value: Boolean): Self = StObject.set(x, "enableTextSelection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableTextSelectionUndefined: Self = StObject.set(x, "enableTextSelection", js.undefined)
+      inline def setEnableTextSelectionUndefined: Self = StObject.set(x, "enableTextSelection", js.undefined)
       
-      @scala.inline
-      def setEnableUnderlineAnnotation(value: Boolean): Self = StObject.set(x, "enableUnderlineAnnotation", value.asInstanceOf[js.Any])
+      inline def setEnableUnderlineAnnotation(value: Boolean): Self = StObject.set(x, "enableUnderlineAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableUnderlineAnnotationUndefined: Self = StObject.set(x, "enableUnderlineAnnotation", js.undefined)
+      inline def setEnableUnderlineAnnotationUndefined: Self = StObject.set(x, "enableUnderlineAnnotation", js.undefined)
       
-      @scala.inline
-      def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+      inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
       
-      @scala.inline
-      def setHighlightSettings(value: HighlightSettings): Self = StObject.set(x, "highlightSettings", value.asInstanceOf[js.Any])
+      inline def setHighlightSettings(value: HighlightSettings): Self = StObject.set(x, "highlightSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlightSettingsUndefined: Self = StObject.set(x, "highlightSettings", js.undefined)
+      inline def setHighlightSettingsUndefined: Self = StObject.set(x, "highlightSettings", js.undefined)
       
-      @scala.inline
-      def setHyperlinkClick(value: /* e */ HyperlinkClickEventArgs => Unit): Self = StObject.set(x, "hyperlinkClick", js.Any.fromFunction1(value))
+      inline def setHyperlinkClick(value: /* e */ HyperlinkClickEventArgs => Unit): Self = StObject.set(x, "hyperlinkClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHyperlinkClickUndefined: Self = StObject.set(x, "hyperlinkClick", js.undefined)
+      inline def setHyperlinkClickUndefined: Self = StObject.set(x, "hyperlinkClick", js.undefined)
       
-      @scala.inline
-      def setHyperlinkOpenState(value: LinkTarget | String): Self = StObject.set(x, "hyperlinkOpenState", value.asInstanceOf[js.Any])
+      inline def setHyperlinkOpenState(value: LinkTarget | String): Self = StObject.set(x, "hyperlinkOpenState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHyperlinkOpenStateUndefined: Self = StObject.set(x, "hyperlinkOpenState", js.undefined)
+      inline def setHyperlinkOpenStateUndefined: Self = StObject.set(x, "hyperlinkOpenState", js.undefined)
       
-      @scala.inline
-      def setInteractionMode(value: InteractionMode | String): Self = StObject.set(x, "interactionMode", value.asInstanceOf[js.Any])
+      inline def setInteractionMode(value: InteractionMode | String): Self = StObject.set(x, "interactionMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInteractionModeUndefined: Self = StObject.set(x, "interactionMode", js.undefined)
+      inline def setInteractionModeUndefined: Self = StObject.set(x, "interactionMode", js.undefined)
       
-      @scala.inline
-      def setIsDocumentEdited(value: Boolean): Self = StObject.set(x, "isDocumentEdited", value.asInstanceOf[js.Any])
+      inline def setIsDocumentEdited(value: Boolean): Self = StObject.set(x, "isDocumentEdited", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDocumentEditedUndefined: Self = StObject.set(x, "isDocumentEdited", js.undefined)
+      inline def setIsDocumentEditedUndefined: Self = StObject.set(x, "isDocumentEdited", js.undefined)
       
-      @scala.inline
-      def setIsResponsive(value: Boolean): Self = StObject.set(x, "isResponsive", value.asInstanceOf[js.Any])
+      inline def setIsResponsive(value: Boolean): Self = StObject.set(x, "isResponsive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsResponsiveUndefined: Self = StObject.set(x, "isResponsive", js.undefined)
+      inline def setIsResponsiveUndefined: Self = StObject.set(x, "isResponsive", js.undefined)
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      @scala.inline
-      def setPageChange(value: /* e */ PageChangeEventArgs => Unit): Self = StObject.set(x, "pageChange", js.Any.fromFunction1(value))
+      inline def setPageChange(value: /* e */ PageChangeEventArgs => Unit): Self = StObject.set(x, "pageChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPageChangeUndefined: Self = StObject.set(x, "pageChange", js.undefined)
+      inline def setPageChangeUndefined: Self = StObject.set(x, "pageChange", js.undefined)
       
-      @scala.inline
-      def setPageClick(value: /* e */ PageClickEventArgs => Unit): Self = StObject.set(x, "pageClick", js.Any.fromFunction1(value))
+      inline def setPageClick(value: /* e */ PageClickEventArgs => Unit): Self = StObject.set(x, "pageClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPageClickUndefined: Self = StObject.set(x, "pageClick", js.undefined)
+      inline def setPageClickUndefined: Self = StObject.set(x, "pageClick", js.undefined)
       
-      @scala.inline
-      def setPageCount(value: Double): Self = StObject.set(x, "pageCount", value.asInstanceOf[js.Any])
+      inline def setPageCount(value: Double): Self = StObject.set(x, "pageCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageCountUndefined: Self = StObject.set(x, "pageCount", js.undefined)
+      inline def setPageCountUndefined: Self = StObject.set(x, "pageCount", js.undefined)
       
-      @scala.inline
-      def setPdfService(value: PdfService | String): Self = StObject.set(x, "pdfService", value.asInstanceOf[js.Any])
+      inline def setPdfService(value: PdfService | String): Self = StObject.set(x, "pdfService", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPdfServiceUndefined: Self = StObject.set(x, "pdfService", js.undefined)
+      inline def setPdfServiceUndefined: Self = StObject.set(x, "pdfService", js.undefined)
       
-      @scala.inline
-      def setServerActionSettings(value: ServerActionSettings): Self = StObject.set(x, "serverActionSettings", value.asInstanceOf[js.Any])
+      inline def setServerActionSettings(value: ServerActionSettings): Self = StObject.set(x, "serverActionSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerActionSettingsUndefined: Self = StObject.set(x, "serverActionSettings", js.undefined)
+      inline def setServerActionSettingsUndefined: Self = StObject.set(x, "serverActionSettings", js.undefined)
       
-      @scala.inline
-      def setServiceUrl(value: String): Self = StObject.set(x, "serviceUrl", value.asInstanceOf[js.Any])
+      inline def setServiceUrl(value: String): Self = StObject.set(x, "serviceUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceUrlUndefined: Self = StObject.set(x, "serviceUrl", js.undefined)
+      inline def setServiceUrlUndefined: Self = StObject.set(x, "serviceUrl", js.undefined)
       
-      @scala.inline
-      def setSignatureAdd(value: /* e */ SignatureAddEventArgs => Unit): Self = StObject.set(x, "signatureAdd", js.Any.fromFunction1(value))
+      inline def setSignatureAdd(value: /* e */ SignatureAddEventArgs => Unit): Self = StObject.set(x, "signatureAdd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSignatureAddUndefined: Self = StObject.set(x, "signatureAdd", js.undefined)
+      inline def setSignatureAddUndefined: Self = StObject.set(x, "signatureAdd", js.undefined)
       
-      @scala.inline
-      def setSignatureDelete(value: /* e */ SignatureDeleteEventArgs => Unit): Self = StObject.set(x, "signatureDelete", js.Any.fromFunction1(value))
+      inline def setSignatureDelete(value: /* e */ SignatureDeleteEventArgs => Unit): Self = StObject.set(x, "signatureDelete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSignatureDeleteUndefined: Self = StObject.set(x, "signatureDelete", js.undefined)
+      inline def setSignatureDeleteUndefined: Self = StObject.set(x, "signatureDelete", js.undefined)
       
-      @scala.inline
-      def setSignaturePropertiesChange(value: /* e */ SignaturePropertiesChangeEventArgs => Unit): Self = StObject.set(x, "signaturePropertiesChange", js.Any.fromFunction1(value))
+      inline def setSignaturePropertiesChange(value: /* e */ SignaturePropertiesChangeEventArgs => Unit): Self = StObject.set(x, "signaturePropertiesChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSignaturePropertiesChangeUndefined: Self = StObject.set(x, "signaturePropertiesChange", js.undefined)
+      inline def setSignaturePropertiesChangeUndefined: Self = StObject.set(x, "signaturePropertiesChange", js.undefined)
       
-      @scala.inline
-      def setSignatureResize(value: /* e */ SignatureResizeEventArgs => Unit): Self = StObject.set(x, "signatureResize", js.Any.fromFunction1(value))
+      inline def setSignatureResize(value: /* e */ SignatureResizeEventArgs => Unit): Self = StObject.set(x, "signatureResize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSignatureResizeUndefined: Self = StObject.set(x, "signatureResize", js.undefined)
+      inline def setSignatureResizeUndefined: Self = StObject.set(x, "signatureResize", js.undefined)
       
-      @scala.inline
-      def setSignatureSettings(value: SignatureSettings): Self = StObject.set(x, "signatureSettings", value.asInstanceOf[js.Any])
+      inline def setSignatureSettings(value: SignatureSettings): Self = StObject.set(x, "signatureSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignatureSettingsUndefined: Self = StObject.set(x, "signatureSettings", js.undefined)
+      inline def setSignatureSettingsUndefined: Self = StObject.set(x, "signatureSettings", js.undefined)
       
-      @scala.inline
-      def setStrikethroughSettings(value: StrikethroughSettings): Self = StObject.set(x, "strikethroughSettings", value.asInstanceOf[js.Any])
+      inline def setStrikethroughSettings(value: StrikethroughSettings): Self = StObject.set(x, "strikethroughSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrikethroughSettingsUndefined: Self = StObject.set(x, "strikethroughSettings", js.undefined)
+      inline def setStrikethroughSettingsUndefined: Self = StObject.set(x, "strikethroughSettings", js.undefined)
       
-      @scala.inline
-      def setTextSelectionContextMenu(value: TextSelectionContextMenu): Self = StObject.set(x, "textSelectionContextMenu", value.asInstanceOf[js.Any])
+      inline def setTextSelectionContextMenu(value: TextSelectionContextMenu): Self = StObject.set(x, "textSelectionContextMenu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextSelectionContextMenuUndefined: Self = StObject.set(x, "textSelectionContextMenu", js.undefined)
+      inline def setTextSelectionContextMenuUndefined: Self = StObject.set(x, "textSelectionContextMenu", js.undefined)
       
-      @scala.inline
-      def setToolbarSettings(value: ToolbarSettings): Self = StObject.set(x, "toolbarSettings", value.asInstanceOf[js.Any])
+      inline def setToolbarSettings(value: ToolbarSettings): Self = StObject.set(x, "toolbarSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToolbarSettingsUndefined: Self = StObject.set(x, "toolbarSettings", js.undefined)
+      inline def setToolbarSettingsUndefined: Self = StObject.set(x, "toolbarSettings", js.undefined)
       
-      @scala.inline
-      def setUnderlineSettings(value: UnderlineSettings): Self = StObject.set(x, "underlineSettings", value.asInstanceOf[js.Any])
+      inline def setUnderlineSettings(value: UnderlineSettings): Self = StObject.set(x, "underlineSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnderlineSettingsUndefined: Self = StObject.set(x, "underlineSettings", js.undefined)
+      inline def setUnderlineSettingsUndefined: Self = StObject.set(x, "underlineSettings", js.undefined)
       
-      @scala.inline
-      def setZoomChange(value: /* e */ ZoomChangeEventArgs => Unit): Self = StObject.set(x, "zoomChange", js.Any.fromFunction1(value))
+      inline def setZoomChange(value: /* e */ ZoomChangeEventArgs => Unit): Self = StObject.set(x, "zoomChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setZoomChangeUndefined: Self = StObject.set(x, "zoomChange", js.undefined)
+      inline def setZoomChangeUndefined: Self = StObject.set(x, "zoomChange", js.undefined)
       
-      @scala.inline
-      def setZoomPercentage(value: Double): Self = StObject.set(x, "zoomPercentage", value.asInstanceOf[js.Any])
+      inline def setZoomPercentage(value: Double): Self = StObject.set(x, "zoomPercentage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomPercentageUndefined: Self = StObject.set(x, "zoomPercentage", js.undefined)
+      inline def setZoomPercentageUndefined: Self = StObject.set(x, "zoomPercentage", js.undefined)
     }
   }
   
@@ -1970,38 +1673,28 @@ object PdfViewer {
   }
   object PageChangeEventArgs {
     
-    @scala.inline
-    def apply(): PageChangeEventArgs = {
+    inline def apply(): PageChangeEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PageChangeEventArgs]
     }
     
-    @scala.inline
-    implicit class PageChangeEventArgsMutableBuilder[Self <: PageChangeEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: PageChangeEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setCurrentPageNumber(value: Double): Self = StObject.set(x, "currentPageNumber", value.asInstanceOf[js.Any])
+      inline def setCurrentPageNumber(value: Double): Self = StObject.set(x, "currentPageNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentPageNumberUndefined: Self = StObject.set(x, "currentPageNumber", js.undefined)
+      inline def setCurrentPageNumberUndefined: Self = StObject.set(x, "currentPageNumber", js.undefined)
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -2029,44 +1722,32 @@ object PdfViewer {
   }
   object PageClickEventArgs {
     
-    @scala.inline
-    def apply(): PageClickEventArgs = {
+    inline def apply(): PageClickEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PageClickEventArgs]
     }
     
-    @scala.inline
-    implicit class PageClickEventArgsMutableBuilder[Self <: PageClickEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: PageClickEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+      inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
+      inline def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
       
-      @scala.inline
-      def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+      inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
+      inline def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -2090,38 +1771,28 @@ object PdfViewer {
   }
   object ServerActionSettings {
     
-    @scala.inline
-    def apply(): ServerActionSettings = {
+    inline def apply(): ServerActionSettings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ServerActionSettings]
     }
     
-    @scala.inline
-    implicit class ServerActionSettingsMutableBuilder[Self <: ServerActionSettings] (val x: Self) extends AnyVal {
+    extension [Self <: ServerActionSettings](x: Self) {
       
-      @scala.inline
-      def setDownload(value: String): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+      inline def setDownload(value: String): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
+      inline def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
       
-      @scala.inline
-      def setFileUpload(value: String): Self = StObject.set(x, "fileUpload", value.asInstanceOf[js.Any])
+      inline def setFileUpload(value: String): Self = StObject.set(x, "fileUpload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileUploadUndefined: Self = StObject.set(x, "fileUpload", js.undefined)
+      inline def setFileUploadUndefined: Self = StObject.set(x, "fileUpload", js.undefined)
       
-      @scala.inline
-      def setLoad(value: String): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
+      inline def setLoad(value: String): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
+      inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
       
-      @scala.inline
-      def setPrint(value: String): Self = StObject.set(x, "print", value.asInstanceOf[js.Any])
+      inline def setPrint(value: String): Self = StObject.set(x, "print", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrintUndefined: Self = StObject.set(x, "print", js.undefined)
+      inline def setPrintUndefined: Self = StObject.set(x, "print", js.undefined)
     }
   }
   
@@ -2153,53 +1824,38 @@ object PdfViewer {
   }
   object SignatureAddEventArgs {
     
-    @scala.inline
-    def apply(): SignatureAddEventArgs = {
+    inline def apply(): SignatureAddEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SignatureAddEventArgs]
     }
     
-    @scala.inline
-    implicit class SignatureAddEventArgsMutableBuilder[Self <: SignatureAddEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: SignatureAddEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
+      inline def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageNumberUndefined: Self = StObject.set(x, "pageNumber", js.undefined)
+      inline def setPageNumberUndefined: Self = StObject.set(x, "pageNumber", js.undefined)
       
-      @scala.inline
-      def setSignatureBound(value: js.Array[js.Any]): Self = StObject.set(x, "signatureBound", value.asInstanceOf[js.Any])
+      inline def setSignatureBound(value: js.Array[js.Any]): Self = StObject.set(x, "signatureBound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignatureBoundUndefined: Self = StObject.set(x, "signatureBound", js.undefined)
+      inline def setSignatureBoundUndefined: Self = StObject.set(x, "signatureBound", js.undefined)
       
-      @scala.inline
-      def setSignatureBoundVarargs(value: js.Any*): Self = StObject.set(x, "signatureBound", js.Array(value :_*))
+      inline def setSignatureBoundVarargs(value: js.Any*): Self = StObject.set(x, "signatureBound", js.Array(value :_*))
       
-      @scala.inline
-      def setSignatureSettings(value: js.Any): Self = StObject.set(x, "signatureSettings", value.asInstanceOf[js.Any])
+      inline def setSignatureSettings(value: js.Any): Self = StObject.set(x, "signatureSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignatureSettingsUndefined: Self = StObject.set(x, "signatureSettings", js.undefined)
+      inline def setSignatureSettingsUndefined: Self = StObject.set(x, "signatureSettings", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -2223,38 +1879,28 @@ object PdfViewer {
   }
   object SignatureDeleteEventArgs {
     
-    @scala.inline
-    def apply(): SignatureDeleteEventArgs = {
+    inline def apply(): SignatureDeleteEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SignatureDeleteEventArgs]
     }
     
-    @scala.inline
-    implicit class SignatureDeleteEventArgsMutableBuilder[Self <: SignatureDeleteEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: SignatureDeleteEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
+      inline def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageNumberUndefined: Self = StObject.set(x, "pageNumber", js.undefined)
+      inline def setPageNumberUndefined: Self = StObject.set(x, "pageNumber", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -2302,74 +1948,52 @@ object PdfViewer {
   }
   object SignaturePropertiesChangeEventArgs {
     
-    @scala.inline
-    def apply(): SignaturePropertiesChangeEventArgs = {
+    inline def apply(): SignaturePropertiesChangeEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SignaturePropertiesChangeEventArgs]
     }
     
-    @scala.inline
-    implicit class SignaturePropertiesChangeEventArgsMutableBuilder[Self <: SignaturePropertiesChangeEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: SignaturePropertiesChangeEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setCurrentColor(value: String): Self = StObject.set(x, "currentColor", value.asInstanceOf[js.Any])
+      inline def setCurrentColor(value: String): Self = StObject.set(x, "currentColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentColorUndefined: Self = StObject.set(x, "currentColor", js.undefined)
+      inline def setCurrentColorUndefined: Self = StObject.set(x, "currentColor", js.undefined)
       
-      @scala.inline
-      def setCurrentOpacity(value: Double): Self = StObject.set(x, "currentOpacity", value.asInstanceOf[js.Any])
+      inline def setCurrentOpacity(value: Double): Self = StObject.set(x, "currentOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentOpacityUndefined: Self = StObject.set(x, "currentOpacity", js.undefined)
+      inline def setCurrentOpacityUndefined: Self = StObject.set(x, "currentOpacity", js.undefined)
       
-      @scala.inline
-      def setIsColorChange(value: Boolean): Self = StObject.set(x, "isColorChange", value.asInstanceOf[js.Any])
+      inline def setIsColorChange(value: Boolean): Self = StObject.set(x, "isColorChange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsColorChangeUndefined: Self = StObject.set(x, "isColorChange", js.undefined)
+      inline def setIsColorChangeUndefined: Self = StObject.set(x, "isColorChange", js.undefined)
       
-      @scala.inline
-      def setIsOpacityChange(value: Boolean): Self = StObject.set(x, "isOpacityChange", value.asInstanceOf[js.Any])
+      inline def setIsOpacityChange(value: Boolean): Self = StObject.set(x, "isOpacityChange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOpacityChangeUndefined: Self = StObject.set(x, "isOpacityChange", js.undefined)
+      inline def setIsOpacityChangeUndefined: Self = StObject.set(x, "isOpacityChange", js.undefined)
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setPageID(value: Double): Self = StObject.set(x, "pageID", value.asInstanceOf[js.Any])
+      inline def setPageID(value: Double): Self = StObject.set(x, "pageID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageIDUndefined: Self = StObject.set(x, "pageID", js.undefined)
+      inline def setPageIDUndefined: Self = StObject.set(x, "pageID", js.undefined)
       
-      @scala.inline
-      def setPreviousColor(value: String): Self = StObject.set(x, "previousColor", value.asInstanceOf[js.Any])
+      inline def setPreviousColor(value: String): Self = StObject.set(x, "previousColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousColorUndefined: Self = StObject.set(x, "previousColor", js.undefined)
+      inline def setPreviousColorUndefined: Self = StObject.set(x, "previousColor", js.undefined)
       
-      @scala.inline
-      def setPreviousOpacity(value: Double): Self = StObject.set(x, "previousOpacity", value.asInstanceOf[js.Any])
+      inline def setPreviousOpacity(value: Double): Self = StObject.set(x, "previousOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousOpacityUndefined: Self = StObject.set(x, "previousOpacity", js.undefined)
+      inline def setPreviousOpacityUndefined: Self = StObject.set(x, "previousOpacity", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -2405,62 +2029,44 @@ object PdfViewer {
   }
   object SignatureResizeEventArgs {
     
-    @scala.inline
-    def apply(): SignatureResizeEventArgs = {
+    inline def apply(): SignatureResizeEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SignatureResizeEventArgs]
     }
     
-    @scala.inline
-    implicit class SignatureResizeEventArgsMutableBuilder[Self <: SignatureResizeEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: SignatureResizeEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
+      inline def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageNumberUndefined: Self = StObject.set(x, "pageNumber", js.undefined)
+      inline def setPageNumberUndefined: Self = StObject.set(x, "pageNumber", js.undefined)
       
-      @scala.inline
-      def setSignatureCurrentBound(value: js.Array[js.Any]): Self = StObject.set(x, "signatureCurrentBound", value.asInstanceOf[js.Any])
+      inline def setSignatureCurrentBound(value: js.Array[js.Any]): Self = StObject.set(x, "signatureCurrentBound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignatureCurrentBoundUndefined: Self = StObject.set(x, "signatureCurrentBound", js.undefined)
+      inline def setSignatureCurrentBoundUndefined: Self = StObject.set(x, "signatureCurrentBound", js.undefined)
       
-      @scala.inline
-      def setSignatureCurrentBoundVarargs(value: js.Any*): Self = StObject.set(x, "signatureCurrentBound", js.Array(value :_*))
+      inline def setSignatureCurrentBoundVarargs(value: js.Any*): Self = StObject.set(x, "signatureCurrentBound", js.Array(value :_*))
       
-      @scala.inline
-      def setSignaturePreviousBound(value: js.Array[js.Any]): Self = StObject.set(x, "signaturePreviousBound", value.asInstanceOf[js.Any])
+      inline def setSignaturePreviousBound(value: js.Array[js.Any]): Self = StObject.set(x, "signaturePreviousBound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignaturePreviousBoundUndefined: Self = StObject.set(x, "signaturePreviousBound", js.undefined)
+      inline def setSignaturePreviousBoundUndefined: Self = StObject.set(x, "signaturePreviousBound", js.undefined)
       
-      @scala.inline
-      def setSignaturePreviousBoundVarargs(value: js.Any*): Self = StObject.set(x, "signaturePreviousBound", js.Array(value :_*))
+      inline def setSignaturePreviousBoundVarargs(value: js.Any*): Self = StObject.set(x, "signaturePreviousBound", js.Array(value :_*))
       
-      @scala.inline
-      def setSignatureSettings(value: js.Any): Self = StObject.set(x, "signatureSettings", value.asInstanceOf[js.Any])
+      inline def setSignatureSettings(value: js.Any): Self = StObject.set(x, "signatureSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignatureSettingsUndefined: Self = StObject.set(x, "signatureSettings", js.undefined)
+      inline def setSignatureSettingsUndefined: Self = StObject.set(x, "signatureSettings", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -2476,26 +2082,20 @@ object PdfViewer {
   }
   object SignatureSettings {
     
-    @scala.inline
-    def apply(): SignatureSettings = {
+    inline def apply(): SignatureSettings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SignatureSettings]
     }
     
-    @scala.inline
-    implicit class SignatureSettingsMutableBuilder[Self <: SignatureSettings] (val x: Self) extends AnyVal {
+    extension [Self <: SignatureSettings](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+      inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     }
   }
   
@@ -2527,50 +2127,36 @@ object PdfViewer {
   }
   object StrikethroughSettings {
     
-    @scala.inline
-    def apply(): StrikethroughSettings = {
+    inline def apply(): StrikethroughSettings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrikethroughSettings]
     }
     
-    @scala.inline
-    implicit class StrikethroughSettingsMutableBuilder[Self <: StrikethroughSettings] (val x: Self) extends AnyVal {
+    extension [Self <: StrikethroughSettings](x: Self) {
       
-      @scala.inline
-      def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+      inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
+      inline def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setIsLocked(value: Boolean): Self = StObject.set(x, "isLocked", value.asInstanceOf[js.Any])
+      inline def setIsLocked(value: Boolean): Self = StObject.set(x, "isLocked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLockedUndefined: Self = StObject.set(x, "isLocked", js.undefined)
+      inline def setIsLockedUndefined: Self = StObject.set(x, "isLocked", js.undefined)
       
-      @scala.inline
-      def setModifiedDate(value: String): Self = StObject.set(x, "modifiedDate", value.asInstanceOf[js.Any])
+      inline def setModifiedDate(value: String): Self = StObject.set(x, "modifiedDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModifiedDateUndefined: Self = StObject.set(x, "modifiedDate", js.undefined)
+      inline def setModifiedDateUndefined: Self = StObject.set(x, "modifiedDate", js.undefined)
       
-      @scala.inline
-      def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+      inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      @scala.inline
-      def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+      inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+      inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     }
   }
   
@@ -2598,44 +2184,32 @@ object PdfViewer {
   }
   object TextSelectionContextMenu {
     
-    @scala.inline
-    def apply(): TextSelectionContextMenu = {
+    inline def apply(): TextSelectionContextMenu = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TextSelectionContextMenu]
     }
     
-    @scala.inline
-    implicit class TextSelectionContextMenuMutableBuilder[Self <: TextSelectionContextMenu] (val x: Self) extends AnyVal {
+    extension [Self <: TextSelectionContextMenu](x: Self) {
       
-      @scala.inline
-      def setIsCopyEnable(value: Boolean): Self = StObject.set(x, "isCopyEnable", value.asInstanceOf[js.Any])
+      inline def setIsCopyEnable(value: Boolean): Self = StObject.set(x, "isCopyEnable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCopyEnableUndefined: Self = StObject.set(x, "isCopyEnable", js.undefined)
+      inline def setIsCopyEnableUndefined: Self = StObject.set(x, "isCopyEnable", js.undefined)
       
-      @scala.inline
-      def setIsEnable(value: Boolean): Self = StObject.set(x, "isEnable", value.asInstanceOf[js.Any])
+      inline def setIsEnable(value: Boolean): Self = StObject.set(x, "isEnable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEnableUndefined: Self = StObject.set(x, "isEnable", js.undefined)
+      inline def setIsEnableUndefined: Self = StObject.set(x, "isEnable", js.undefined)
       
-      @scala.inline
-      def setIsHighlightEnable(value: Boolean): Self = StObject.set(x, "isHighlightEnable", value.asInstanceOf[js.Any])
+      inline def setIsHighlightEnable(value: Boolean): Self = StObject.set(x, "isHighlightEnable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHighlightEnableUndefined: Self = StObject.set(x, "isHighlightEnable", js.undefined)
+      inline def setIsHighlightEnableUndefined: Self = StObject.set(x, "isHighlightEnable", js.undefined)
       
-      @scala.inline
-      def setIsSearchEnable(value: Boolean): Self = StObject.set(x, "isSearchEnable", value.asInstanceOf[js.Any])
+      inline def setIsSearchEnable(value: Boolean): Self = StObject.set(x, "isSearchEnable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSearchEnableUndefined: Self = StObject.set(x, "isSearchEnable", js.undefined)
+      inline def setIsSearchEnableUndefined: Self = StObject.set(x, "isSearchEnable", js.undefined)
       
-      @scala.inline
-      def setIsStrikeoutEnable(value: Boolean): Self = StObject.set(x, "isStrikeoutEnable", value.asInstanceOf[js.Any])
+      inline def setIsStrikeoutEnable(value: Boolean): Self = StObject.set(x, "isStrikeoutEnable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsStrikeoutEnableUndefined: Self = StObject.set(x, "isStrikeoutEnable", js.undefined)
+      inline def setIsStrikeoutEnableUndefined: Self = StObject.set(x, "isStrikeoutEnable", js.undefined)
     }
   }
   
@@ -2651,26 +2225,20 @@ object PdfViewer {
   }
   object ToolbarSettings {
     
-    @scala.inline
-    def apply(): ToolbarSettings = {
+    inline def apply(): ToolbarSettings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ToolbarSettings]
     }
     
-    @scala.inline
-    implicit class ToolbarSettingsMutableBuilder[Self <: ToolbarSettings] (val x: Self) extends AnyVal {
+    extension [Self <: ToolbarSettings](x: Self) {
       
-      @scala.inline
-      def setShowToolTip(value: Boolean): Self = StObject.set(x, "showToolTip", value.asInstanceOf[js.Any])
+      inline def setShowToolTip(value: Boolean): Self = StObject.set(x, "showToolTip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowToolTipUndefined: Self = StObject.set(x, "showToolTip", js.undefined)
+      inline def setShowToolTipUndefined: Self = StObject.set(x, "showToolTip", js.undefined)
       
-      @scala.inline
-      def setToolbarItem(value: ToolbarItems | String): Self = StObject.set(x, "toolbarItem", value.asInstanceOf[js.Any])
+      inline def setToolbarItem(value: ToolbarItems | String): Self = StObject.set(x, "toolbarItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToolbarItemUndefined: Self = StObject.set(x, "toolbarItem", js.undefined)
+      inline def setToolbarItemUndefined: Self = StObject.set(x, "toolbarItem", js.undefined)
     }
   }
   
@@ -2702,50 +2270,36 @@ object PdfViewer {
   }
   object UnderlineSettings {
     
-    @scala.inline
-    def apply(): UnderlineSettings = {
+    inline def apply(): UnderlineSettings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnderlineSettings]
     }
     
-    @scala.inline
-    implicit class UnderlineSettingsMutableBuilder[Self <: UnderlineSettings] (val x: Self) extends AnyVal {
+    extension [Self <: UnderlineSettings](x: Self) {
       
-      @scala.inline
-      def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+      inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
+      inline def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setIsLocked(value: Boolean): Self = StObject.set(x, "isLocked", value.asInstanceOf[js.Any])
+      inline def setIsLocked(value: Boolean): Self = StObject.set(x, "isLocked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLockedUndefined: Self = StObject.set(x, "isLocked", js.undefined)
+      inline def setIsLockedUndefined: Self = StObject.set(x, "isLocked", js.undefined)
       
-      @scala.inline
-      def setModifiedDate(value: String): Self = StObject.set(x, "modifiedDate", value.asInstanceOf[js.Any])
+      inline def setModifiedDate(value: String): Self = StObject.set(x, "modifiedDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModifiedDateUndefined: Self = StObject.set(x, "modifiedDate", js.undefined)
+      inline def setModifiedDateUndefined: Self = StObject.set(x, "modifiedDate", js.undefined)
       
-      @scala.inline
-      def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+      inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      @scala.inline
-      def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+      inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+      inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     }
   }
   
@@ -2773,44 +2327,32 @@ object PdfViewer {
   }
   object ZoomChangeEventArgs {
     
-    @scala.inline
-    def apply(): ZoomChangeEventArgs = {
+    inline def apply(): ZoomChangeEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ZoomChangeEventArgs]
     }
     
-    @scala.inline
-    implicit class ZoomChangeEventArgsMutableBuilder[Self <: ZoomChangeEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ZoomChangeEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setCurrentZoomPercentage(value: Double): Self = StObject.set(x, "currentZoomPercentage", value.asInstanceOf[js.Any])
+      inline def setCurrentZoomPercentage(value: Double): Self = StObject.set(x, "currentZoomPercentage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentZoomPercentageUndefined: Self = StObject.set(x, "currentZoomPercentage", js.undefined)
+      inline def setCurrentZoomPercentageUndefined: Self = StObject.set(x, "currentZoomPercentage", js.undefined)
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setPreviousZoomPercentage(value: Double): Self = StObject.set(x, "previousZoomPercentage", value.asInstanceOf[js.Any])
+      inline def setPreviousZoomPercentage(value: Double): Self = StObject.set(x, "previousZoomPercentage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousZoomPercentageUndefined: Self = StObject.set(x, "previousZoomPercentage", js.undefined)
+      inline def setPreviousZoomPercentageUndefined: Self = StObject.set(x, "previousZoomPercentage", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

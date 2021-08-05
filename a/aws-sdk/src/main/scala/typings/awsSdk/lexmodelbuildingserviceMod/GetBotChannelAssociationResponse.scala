@@ -53,67 +53,47 @@ trait GetBotChannelAssociationResponse extends StObject {
 }
 object GetBotChannelAssociationResponse {
   
-  @scala.inline
-  def apply(): GetBotChannelAssociationResponse = {
+  inline def apply(): GetBotChannelAssociationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetBotChannelAssociationResponse]
   }
   
-  @scala.inline
-  implicit class GetBotChannelAssociationResponseMutableBuilder[Self <: GetBotChannelAssociationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetBotChannelAssociationResponse](x: Self) {
     
-    @scala.inline
-    def setBotAlias(value: AliasName): Self = StObject.set(x, "botAlias", value.asInstanceOf[js.Any])
+    inline def setBotAlias(value: AliasName): Self = StObject.set(x, "botAlias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBotAliasUndefined: Self = StObject.set(x, "botAlias", js.undefined)
+    inline def setBotAliasUndefined: Self = StObject.set(x, "botAlias", js.undefined)
     
-    @scala.inline
-    def setBotConfiguration(value: ChannelConfigurationMap): Self = StObject.set(x, "botConfiguration", value.asInstanceOf[js.Any])
+    inline def setBotConfiguration(value: ChannelConfigurationMap): Self = StObject.set(x, "botConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBotConfigurationUndefined: Self = StObject.set(x, "botConfiguration", js.undefined)
+    inline def setBotConfigurationUndefined: Self = StObject.set(x, "botConfiguration", js.undefined)
     
-    @scala.inline
-    def setBotName(value: BotName): Self = StObject.set(x, "botName", value.asInstanceOf[js.Any])
+    inline def setBotName(value: BotName): Self = StObject.set(x, "botName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBotNameUndefined: Self = StObject.set(x, "botName", js.undefined)
+    inline def setBotNameUndefined: Self = StObject.set(x, "botName", js.undefined)
     
-    @scala.inline
-    def setCreatedDate(value: Timestamp): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: Timestamp): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
+    inline def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setFailureReason(value: String): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
+    inline def setFailureReason(value: String): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
+    inline def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
     
-    @scala.inline
-    def setName(value: BotChannelName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: BotChannelName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ChannelStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ChannelStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setType(value: ChannelType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ChannelType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

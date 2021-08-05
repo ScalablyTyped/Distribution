@@ -45,37 +45,27 @@ trait SchemaAttestorPublicKey extends StObject {
 }
 object SchemaAttestorPublicKey {
   
-  @scala.inline
-  def apply(): SchemaAttestorPublicKey = {
+  inline def apply(): SchemaAttestorPublicKey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAttestorPublicKey]
   }
   
-  @scala.inline
-  implicit class SchemaAttestorPublicKeyMutableBuilder[Self <: SchemaAttestorPublicKey] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAttestorPublicKey](x: Self) {
     
-    @scala.inline
-    def setAsciiArmoredPgpPublicKey(value: String): Self = StObject.set(x, "asciiArmoredPgpPublicKey", value.asInstanceOf[js.Any])
+    inline def setAsciiArmoredPgpPublicKey(value: String): Self = StObject.set(x, "asciiArmoredPgpPublicKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsciiArmoredPgpPublicKeyUndefined: Self = StObject.set(x, "asciiArmoredPgpPublicKey", js.undefined)
+    inline def setAsciiArmoredPgpPublicKeyUndefined: Self = StObject.set(x, "asciiArmoredPgpPublicKey", js.undefined)
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setPkixPublicKey(value: SchemaPkixPublicKey): Self = StObject.set(x, "pkixPublicKey", value.asInstanceOf[js.Any])
+    inline def setPkixPublicKey(value: SchemaPkixPublicKey): Self = StObject.set(x, "pkixPublicKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPkixPublicKeyUndefined: Self = StObject.set(x, "pkixPublicKey", js.undefined)
+    inline def setPkixPublicKeyUndefined: Self = StObject.set(x, "pkixPublicKey", js.undefined)
   }
 }

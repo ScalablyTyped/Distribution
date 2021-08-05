@@ -15,22 +15,17 @@ trait OmitEntryPropsys extends StObject {
 }
 object OmitEntryPropsys {
   
-  @scala.inline
-  def apply(fields: Record[String, js.Any]): OmitEntryPropsys = {
+  inline def apply(fields: Record[String, js.Any]): OmitEntryPropsys = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
     __obj.asInstanceOf[OmitEntryPropsys]
   }
   
-  @scala.inline
-  implicit class OmitEntryPropsysMutableBuilder[Self <: OmitEntryPropsys] (val x: Self) extends AnyVal {
+  extension [Self <: OmitEntryPropsys](x: Self) {
     
-    @scala.inline
-    def setFields(value: Record[String, js.Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: Record[String, js.Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: MetadataProps): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: MetadataProps): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
   }
 }

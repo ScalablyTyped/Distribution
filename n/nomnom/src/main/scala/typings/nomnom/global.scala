@@ -11,8 +11,7 @@ object global {
   @js.native
   def nomnom: Parser = js.native
   
-  @scala.inline
-  def nomnom_=(x: Parser): Unit = js.Dynamic.global.updateDynamic("_nomnom")(x.asInstanceOf[js.Any])
+  inline def nomnom_=(x: Parser): Unit = js.Dynamic.global.updateDynamic("_nomnom")(x.asInstanceOf[js.Any])
   
   object NomnomInternal {
     

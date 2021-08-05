@@ -26,11 +26,9 @@ object listMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[Item](props: Children & ListProps[Item]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def default[Item](props: Children & ListProps[Item]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def RawList[T](props: ListProps[T], ref: Ref[ListRef]): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("RawList")(props.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def RawList[T](props: ListProps[T], ref: Ref[ListRef]): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("RawList")(props.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[Element]
   
   trait ListProps[T]
     extends StObject
@@ -62,8 +60,7 @@ object listMod {
   }
   object ListProps {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       children: (T, /* index */ Double, /* props */ Style) => ReactNode,
       data: js.Array[T],
       itemKey: Key | (js.Function1[/* item */ T, Key])
@@ -72,65 +69,45 @@ object listMod {
       __obj.asInstanceOf[ListProps[T]]
     }
     
-    @scala.inline
-    implicit class ListPropsMutableBuilder[Self <: ListProps[?], T] (val x: Self & ListProps[T]) extends AnyVal {
+    extension [Self <: ListProps[?], T](x: Self & ListProps[T]) {
       
-      @scala.inline
-      def setChildren(value: (T, /* index */ Double, /* props */ Style) => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction3(value))
+      inline def setChildren(value: (T, /* index */ Double, /* props */ Style) => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setComponent(value: String | FC[js.Any] | (ComponentClass[js.Any, ComponentState])): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: String | FC[js.Any] | (ComponentClass[js.Any, ComponentState])): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      @scala.inline
-      def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setFullHeight(value: Boolean): Self = StObject.set(x, "fullHeight", value.asInstanceOf[js.Any])
+      inline def setFullHeight(value: Boolean): Self = StObject.set(x, "fullHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullHeightUndefined: Self = StObject.set(x, "fullHeight", js.undefined)
+      inline def setFullHeightUndefined: Self = StObject.set(x, "fullHeight", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setItemHeight(value: Double): Self = StObject.set(x, "itemHeight", value.asInstanceOf[js.Any])
+      inline def setItemHeight(value: Double): Self = StObject.set(x, "itemHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemHeightUndefined: Self = StObject.set(x, "itemHeight", js.undefined)
+      inline def setItemHeightUndefined: Self = StObject.set(x, "itemHeight", js.undefined)
       
-      @scala.inline
-      def setItemKey(value: Key | (js.Function1[/* item */ T, Key])): Self = StObject.set(x, "itemKey", value.asInstanceOf[js.Any])
+      inline def setItemKey(value: Key | (js.Function1[/* item */ T, Key])): Self = StObject.set(x, "itemKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemKeyFunction1(value: /* item */ T => Key): Self = StObject.set(x, "itemKey", js.Any.fromFunction1(value))
+      inline def setItemKeyFunction1(value: /* item */ T => Key): Self = StObject.set(x, "itemKey", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnScroll(value: UIEvent[HTMLElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+      inline def setOnScroll(value: UIEvent[HTMLElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
+      inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      @scala.inline
-      def setVirtual(value: Boolean): Self = StObject.set(x, "virtual", value.asInstanceOf[js.Any])
+      inline def setVirtual(value: Boolean): Self = StObject.set(x, "virtual", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualUndefined: Self = StObject.set(x, "virtual", js.undefined)
+      inline def setVirtualUndefined: Self = StObject.set(x, "virtual", js.undefined)
     }
   }
   
@@ -140,17 +117,14 @@ object listMod {
   }
   object ListRef {
     
-    @scala.inline
-    def apply(scrollTo: /* arg */ Double | ScrollConfig => Unit): ListRef = {
+    inline def apply(scrollTo: /* arg */ Double | ScrollConfig => Unit): ListRef = {
       val __obj = js.Dynamic.literal(scrollTo = js.Any.fromFunction1(scrollTo))
       __obj.asInstanceOf[ListRef]
     }
     
-    @scala.inline
-    implicit class ListRefMutableBuilder[Self <: ListRef] (val x: Self) extends AnyVal {
+    extension [Self <: ListRef](x: Self) {
       
-      @scala.inline
-      def setScrollTo(value: /* arg */ Double | ScrollConfig => Unit): Self = StObject.set(x, "scrollTo", js.Any.fromFunction1(value))
+      inline def setScrollTo(value: /* arg */ Double | ScrollConfig => Unit): Self = StObject.set(x, "scrollTo", js.Any.fromFunction1(value))
     }
   }
   
@@ -162,14 +136,11 @@ object listMod {
   trait ScrollAlign extends StObject
   object ScrollAlign {
     
-    @scala.inline
-    def auto: typings.rcVirtualList.rcVirtualListStrings.auto = "auto".asInstanceOf[typings.rcVirtualList.rcVirtualListStrings.auto]
+    inline def auto: typings.rcVirtualList.rcVirtualListStrings.auto = "auto".asInstanceOf[typings.rcVirtualList.rcVirtualListStrings.auto]
     
-    @scala.inline
-    def bottom: typings.rcVirtualList.rcVirtualListStrings.bottom = "bottom".asInstanceOf[typings.rcVirtualList.rcVirtualListStrings.bottom]
+    inline def bottom: typings.rcVirtualList.rcVirtualListStrings.bottom = "bottom".asInstanceOf[typings.rcVirtualList.rcVirtualListStrings.bottom]
     
-    @scala.inline
-    def top: typings.rcVirtualList.rcVirtualListStrings.top = "top".asInstanceOf[typings.rcVirtualList.rcVirtualListStrings.top]
+    inline def top: typings.rcVirtualList.rcVirtualListStrings.top = "top".asInstanceOf[typings.rcVirtualList.rcVirtualListStrings.top]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -179,14 +150,12 @@ object listMod {
   trait ScrollConfig extends StObject
   object ScrollConfig {
     
-    @scala.inline
-    def Align(index: Double): typings.rcVirtualList.anon.Align = {
+    inline def Align(index: Double): typings.rcVirtualList.anon.Align = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.rcVirtualList.anon.Align]
     }
     
-    @scala.inline
-    def Key(key: typings.react.mod.Key): typings.rcVirtualList.anon.Key = {
+    inline def Key(key: typings.react.mod.Key): typings.rcVirtualList.anon.Key = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.rcVirtualList.anon.Key]
     }

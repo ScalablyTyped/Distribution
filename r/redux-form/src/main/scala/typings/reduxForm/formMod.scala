@@ -46,22 +46,18 @@ object formMod {
   }
   object FormSubmitProp {
     
-    @scala.inline
-    def apply[FormData, P, ErrorType](): FormSubmitProp[FormData, P, ErrorType] = {
+    inline def apply[FormData, P, ErrorType](): FormSubmitProp[FormData, P, ErrorType] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FormSubmitProp[FormData, P, ErrorType]]
     }
     
-    @scala.inline
-    implicit class FormSubmitPropMutableBuilder[Self <: FormSubmitProp[?, ?, ?], FormData, P, ErrorType] (val x: Self & (FormSubmitProp[FormData, P, ErrorType])) extends AnyVal {
+    extension [Self <: FormSubmitProp[?, ?, ?], FormData, P, ErrorType](x: Self & (FormSubmitProp[FormData, P, ErrorType])) {
       
-      @scala.inline
-      def setOnSubmit(
+      inline def setOnSubmit(
         value: (FormData, /* dispatch */ Dispatch[js.Any], /* props */ DecoratedFormProps[FormData, P, ErrorType]) => Unit | (FormErrors[FormData, ErrorType]) | js.Promise[js.Any]
       ): Self = StObject.set(x, "onSubmit", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
+      inline def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
     }
   }
 }

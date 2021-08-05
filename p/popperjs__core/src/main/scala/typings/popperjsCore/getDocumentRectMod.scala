@@ -12,6 +12,5 @@ object getDocumentRectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(element: HTMLElement): Rect = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[Rect]
+  inline def default(element: HTMLElement): Rect = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[Rect]
 }

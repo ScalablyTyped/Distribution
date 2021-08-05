@@ -28,40 +28,29 @@ trait DisassociateResourceShareRequest extends StObject {
 }
 object DisassociateResourceShareRequest {
   
-  @scala.inline
-  def apply(resourceShareArn: String): DisassociateResourceShareRequest = {
+  inline def apply(resourceShareArn: String): DisassociateResourceShareRequest = {
     val __obj = js.Dynamic.literal(resourceShareArn = resourceShareArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateResourceShareRequest]
   }
   
-  @scala.inline
-  implicit class DisassociateResourceShareRequestMutableBuilder[Self <: DisassociateResourceShareRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateResourceShareRequest](x: Self) {
     
-    @scala.inline
-    def setClientToken(value: String): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: String): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
     
-    @scala.inline
-    def setPrincipals(value: PrincipalArnOrIdList): Self = StObject.set(x, "principals", value.asInstanceOf[js.Any])
+    inline def setPrincipals(value: PrincipalArnOrIdList): Self = StObject.set(x, "principals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalsUndefined: Self = StObject.set(x, "principals", js.undefined)
+    inline def setPrincipalsUndefined: Self = StObject.set(x, "principals", js.undefined)
     
-    @scala.inline
-    def setPrincipalsVarargs(value: String*): Self = StObject.set(x, "principals", js.Array(value :_*))
+    inline def setPrincipalsVarargs(value: String*): Self = StObject.set(x, "principals", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceArns(value: ResourceArnList): Self = StObject.set(x, "resourceArns", value.asInstanceOf[js.Any])
+    inline def setResourceArns(value: ResourceArnList): Self = StObject.set(x, "resourceArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceArnsUndefined: Self = StObject.set(x, "resourceArns", js.undefined)
+    inline def setResourceArnsUndefined: Self = StObject.set(x, "resourceArns", js.undefined)
     
-    @scala.inline
-    def setResourceArnsVarargs(value: String*): Self = StObject.set(x, "resourceArns", js.Array(value :_*))
+    inline def setResourceArnsVarargs(value: String*): Self = StObject.set(x, "resourceArns", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceShareArn(value: String): Self = StObject.set(x, "resourceShareArn", value.asInstanceOf[js.Any])
+    inline def setResourceShareArn(value: String): Self = StObject.set(x, "resourceShareArn", value.asInstanceOf[js.Any])
   }
 }

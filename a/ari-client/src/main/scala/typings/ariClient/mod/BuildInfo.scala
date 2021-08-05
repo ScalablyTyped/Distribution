@@ -38,31 +38,23 @@ trait BuildInfo extends StObject {
 }
 object BuildInfo {
   
-  @scala.inline
-  def apply(date: String, kernel: String, machine: String, options: String, os: String, user: String): BuildInfo = {
+  inline def apply(date: String, kernel: String, machine: String, options: String, os: String, user: String): BuildInfo = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], kernel = kernel.asInstanceOf[js.Any], machine = machine.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildInfo]
   }
   
-  @scala.inline
-  implicit class BuildInfoMutableBuilder[Self <: BuildInfo] (val x: Self) extends AnyVal {
+  extension [Self <: BuildInfo](x: Self) {
     
-    @scala.inline
-    def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKernel(value: String): Self = StObject.set(x, "kernel", value.asInstanceOf[js.Any])
+    inline def setKernel(value: String): Self = StObject.set(x, "kernel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMachine(value: String): Self = StObject.set(x, "machine", value.asInstanceOf[js.Any])
+    inline def setMachine(value: String): Self = StObject.set(x, "machine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: String): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: String): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOs(value: String): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
+    inline def setOs(value: String): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

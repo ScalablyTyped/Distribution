@@ -71,8 +71,7 @@ trait LineDiagram
 }
 object LineDiagram {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AutomaticPosition: Boolean,
     AutomaticSize: Boolean,
     ConstantErrorHigh: Double,
@@ -197,28 +196,20 @@ object LineDiagram {
     __obj.asInstanceOf[LineDiagram]
   }
   
-  @scala.inline
-  implicit class LineDiagramMutableBuilder[Self <: LineDiagram] (val x: Self) extends AnyVal {
+  extension [Self <: LineDiagram](x: Self) {
     
-    @scala.inline
-    def setLines(value: Boolean): Self = StObject.set(x, "Lines", value.asInstanceOf[js.Any])
+    inline def setLines(value: Boolean): Self = StObject.set(x, "Lines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplineOrder(value: Double): Self = StObject.set(x, "SplineOrder", value.asInstanceOf[js.Any])
+    inline def setSplineOrder(value: Double): Self = StObject.set(x, "SplineOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplineResolution(value: Double): Self = StObject.set(x, "SplineResolution", value.asInstanceOf[js.Any])
+    inline def setSplineResolution(value: Double): Self = StObject.set(x, "SplineResolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplineType(value: Double): Self = StObject.set(x, "SplineType", value.asInstanceOf[js.Any])
+    inline def setSplineType(value: Double): Self = StObject.set(x, "SplineType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolBitmapURL(value: String): Self = StObject.set(x, "SymbolBitmapURL", value.asInstanceOf[js.Any])
+    inline def setSymbolBitmapURL(value: String): Self = StObject.set(x, "SymbolBitmapURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolSize(value: Size): Self = StObject.set(x, "SymbolSize", value.asInstanceOf[js.Any])
+    inline def setSymbolSize(value: Size): Self = StObject.set(x, "SymbolSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolType(value: Double): Self = StObject.set(x, "SymbolType", value.asInstanceOf[js.Any])
+    inline def setSymbolType(value: Double): Self = StObject.set(x, "SymbolType", value.asInstanceOf[js.Any])
   }
 }

@@ -28,8 +28,7 @@ trait AnalyticsApplicationReferenceDataSources extends StObject {
 }
 object AnalyticsApplicationReferenceDataSources {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     id: String,
     s3: AnalyticsApplicationReferenceDataSourcesS3,
     schema: AnalyticsApplicationReferenceDataSourcesSchema,
@@ -39,19 +38,14 @@ object AnalyticsApplicationReferenceDataSources {
     __obj.asInstanceOf[AnalyticsApplicationReferenceDataSources]
   }
   
-  @scala.inline
-  implicit class AnalyticsApplicationReferenceDataSourcesMutableBuilder[Self <: AnalyticsApplicationReferenceDataSources] (val x: Self) extends AnyVal {
+  extension [Self <: AnalyticsApplicationReferenceDataSources](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3(value: AnalyticsApplicationReferenceDataSourcesS3): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
+    inline def setS3(value: AnalyticsApplicationReferenceDataSourcesS3): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchema(value: AnalyticsApplicationReferenceDataSourcesSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: AnalyticsApplicationReferenceDataSourcesSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableName(value: String): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: String): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
   }
 }

@@ -24,31 +24,23 @@ trait SearchPageRankOptions extends StObject {
 }
 object SearchPageRankOptions {
   
-  @scala.inline
-  def apply(): SearchPageRankOptions = {
+  inline def apply(): SearchPageRankOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchPageRankOptions]
   }
   
-  @scala.inline
-  implicit class SearchPageRankOptionsMutableBuilder[Self <: SearchPageRankOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SearchPageRankOptions](x: Self) {
     
-    @scala.inline
-    def setDampingFactor(value: Double): Self = StObject.set(x, "dampingFactor", value.asInstanceOf[js.Any])
+    inline def setDampingFactor(value: Double): Self = StObject.set(x, "dampingFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDampingFactorUndefined: Self = StObject.set(x, "dampingFactor", js.undefined)
+    inline def setDampingFactorUndefined: Self = StObject.set(x, "dampingFactor", js.undefined)
     
-    @scala.inline
-    def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
+    inline def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
+    inline def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
     
-    @scala.inline
-    def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+    inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+    inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
   }
 }

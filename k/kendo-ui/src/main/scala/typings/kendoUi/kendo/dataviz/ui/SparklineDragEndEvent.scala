@@ -14,25 +14,19 @@ trait SparklineDragEndEvent
 }
 object SparklineDragEndEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Sparkline): SparklineDragEndEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Sparkline): SparklineDragEndEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[SparklineDragEndEvent]
   }
   
-  @scala.inline
-  implicit class SparklineDragEndEventMutableBuilder[Self <: SparklineDragEndEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SparklineDragEndEvent](x: Self) {
     
-    @scala.inline
-    def setAxisRanges(value: js.Any): Self = StObject.set(x, "axisRanges", value.asInstanceOf[js.Any])
+    inline def setAxisRanges(value: js.Any): Self = StObject.set(x, "axisRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisRangesUndefined: Self = StObject.set(x, "axisRanges", js.undefined)
+    inline def setAxisRangesUndefined: Self = StObject.set(x, "axisRanges", js.undefined)
     
-    @scala.inline
-    def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+    inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
+    inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
   }
 }

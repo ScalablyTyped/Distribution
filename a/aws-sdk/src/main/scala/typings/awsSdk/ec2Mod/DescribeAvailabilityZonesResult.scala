@@ -13,22 +13,17 @@ trait DescribeAvailabilityZonesResult extends StObject {
 }
 object DescribeAvailabilityZonesResult {
   
-  @scala.inline
-  def apply(): DescribeAvailabilityZonesResult = {
+  inline def apply(): DescribeAvailabilityZonesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAvailabilityZonesResult]
   }
   
-  @scala.inline
-  implicit class DescribeAvailabilityZonesResultMutableBuilder[Self <: DescribeAvailabilityZonesResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAvailabilityZonesResult](x: Self) {
     
-    @scala.inline
-    def setAvailabilityZones(value: AvailabilityZoneList): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZones(value: AvailabilityZoneList): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
+    inline def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
     
-    @scala.inline
-    def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
+    inline def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
   }
 }

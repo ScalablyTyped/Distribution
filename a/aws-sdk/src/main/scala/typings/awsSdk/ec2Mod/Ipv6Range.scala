@@ -18,25 +18,19 @@ trait Ipv6Range extends StObject {
 }
 object Ipv6Range {
   
-  @scala.inline
-  def apply(): Ipv6Range = {
+  inline def apply(): Ipv6Range = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Ipv6Range]
   }
   
-  @scala.inline
-  implicit class Ipv6RangeMutableBuilder[Self <: Ipv6Range] (val x: Self) extends AnyVal {
+  extension [Self <: Ipv6Range](x: Self) {
     
-    @scala.inline
-    def setCidrIpv6(value: String): Self = StObject.set(x, "CidrIpv6", value.asInstanceOf[js.Any])
+    inline def setCidrIpv6(value: String): Self = StObject.set(x, "CidrIpv6", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidrIpv6Undefined: Self = StObject.set(x, "CidrIpv6", js.undefined)
+    inline def setCidrIpv6Undefined: Self = StObject.set(x, "CidrIpv6", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
   }
 }

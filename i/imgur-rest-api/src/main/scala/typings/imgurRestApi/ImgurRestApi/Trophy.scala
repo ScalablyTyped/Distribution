@@ -24,8 +24,7 @@ trait Trophy extends StObject {
 }
 object Trophy {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     data: String,
     data_link: String,
     datetime: Double,
@@ -39,31 +38,22 @@ object Trophy {
     __obj.asInstanceOf[Trophy]
   }
   
-  @scala.inline
-  implicit class TrophyMutableBuilder[Self <: Trophy] (val x: Self) extends AnyVal {
+  extension [Self <: Trophy](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData_link(value: String): Self = StObject.set(x, "data_link", value.asInstanceOf[js.Any])
+    inline def setData_link(value: String): Self = StObject.set(x, "data_link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatetime(value: Double): Self = StObject.set(x, "datetime", value.asInstanceOf[js.Any])
+    inline def setDatetime(value: Double): Self = StObject.set(x, "datetime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName_clean(value: String): Self = StObject.set(x, "name_clean", value.asInstanceOf[js.Any])
+    inline def setName_clean(value: String): Self = StObject.set(x, "name_clean", value.asInstanceOf[js.Any])
   }
 }

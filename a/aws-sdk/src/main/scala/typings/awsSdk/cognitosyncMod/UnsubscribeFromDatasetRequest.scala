@@ -28,8 +28,7 @@ trait UnsubscribeFromDatasetRequest extends StObject {
 }
 object UnsubscribeFromDatasetRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DatasetName: DatasetName,
     DeviceId: DeviceId,
     IdentityId: IdentityId,
@@ -39,19 +38,14 @@ object UnsubscribeFromDatasetRequest {
     __obj.asInstanceOf[UnsubscribeFromDatasetRequest]
   }
   
-  @scala.inline
-  implicit class UnsubscribeFromDatasetRequestMutableBuilder[Self <: UnsubscribeFromDatasetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UnsubscribeFromDatasetRequest](x: Self) {
     
-    @scala.inline
-    def setDatasetName(value: DatasetName): Self = StObject.set(x, "DatasetName", value.asInstanceOf[js.Any])
+    inline def setDatasetName(value: DatasetName): Self = StObject.set(x, "DatasetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceId(value: DeviceId): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: DeviceId): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityId(value: IdentityId): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
+    inline def setIdentityId(value: IdentityId): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
+    inline def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
   }
 }

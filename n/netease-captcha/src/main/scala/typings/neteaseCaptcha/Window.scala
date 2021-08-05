@@ -14,21 +14,17 @@ trait Window extends StObject {
 }
 object Window {
   
-  @scala.inline
-  def apply(): Window = {
+  inline def apply(): Window = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Window]
   }
   
-  @scala.inline
-  implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+  extension [Self <: Window](x: Self) {
     
-    @scala.inline
-    def setInitNECaptcha(
+    inline def setInitNECaptcha(
       value: (/* config */ Config, /* onLoad */ js.UndefOr[onLoad], /* onError */ js.UndefOr[onError]) => Unit
     ): Self = StObject.set(x, "initNECaptcha", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setInitNECaptchaUndefined: Self = StObject.set(x, "initNECaptcha", js.undefined)
+    inline def setInitNECaptchaUndefined: Self = StObject.set(x, "initNECaptcha", js.undefined)
   }
 }

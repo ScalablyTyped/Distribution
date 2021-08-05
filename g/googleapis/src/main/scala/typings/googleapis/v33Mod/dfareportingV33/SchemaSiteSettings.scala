@@ -55,49 +55,35 @@ trait SchemaSiteSettings extends StObject {
 }
 object SchemaSiteSettings {
   
-  @scala.inline
-  def apply(): SchemaSiteSettings = {
+  inline def apply(): SchemaSiteSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSiteSettings]
   }
   
-  @scala.inline
-  implicit class SchemaSiteSettingsMutableBuilder[Self <: SchemaSiteSettings] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSiteSettings](x: Self) {
     
-    @scala.inline
-    def setActiveViewOptOut(value: Boolean): Self = StObject.set(x, "activeViewOptOut", value.asInstanceOf[js.Any])
+    inline def setActiveViewOptOut(value: Boolean): Self = StObject.set(x, "activeViewOptOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveViewOptOutUndefined: Self = StObject.set(x, "activeViewOptOut", js.undefined)
+    inline def setActiveViewOptOutUndefined: Self = StObject.set(x, "activeViewOptOut", js.undefined)
     
-    @scala.inline
-    def setAdBlockingOptOut(value: Boolean): Self = StObject.set(x, "adBlockingOptOut", value.asInstanceOf[js.Any])
+    inline def setAdBlockingOptOut(value: Boolean): Self = StObject.set(x, "adBlockingOptOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdBlockingOptOutUndefined: Self = StObject.set(x, "adBlockingOptOut", js.undefined)
+    inline def setAdBlockingOptOutUndefined: Self = StObject.set(x, "adBlockingOptOut", js.undefined)
     
-    @scala.inline
-    def setDisableNewCookie(value: Boolean): Self = StObject.set(x, "disableNewCookie", value.asInstanceOf[js.Any])
+    inline def setDisableNewCookie(value: Boolean): Self = StObject.set(x, "disableNewCookie", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableNewCookieUndefined: Self = StObject.set(x, "disableNewCookie", js.undefined)
+    inline def setDisableNewCookieUndefined: Self = StObject.set(x, "disableNewCookie", js.undefined)
     
-    @scala.inline
-    def setTagSetting(value: SchemaTagSetting): Self = StObject.set(x, "tagSetting", value.asInstanceOf[js.Any])
+    inline def setTagSetting(value: SchemaTagSetting): Self = StObject.set(x, "tagSetting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagSettingUndefined: Self = StObject.set(x, "tagSetting", js.undefined)
+    inline def setTagSettingUndefined: Self = StObject.set(x, "tagSetting", js.undefined)
     
-    @scala.inline
-    def setVideoActiveViewOptOutTemplate(value: Boolean): Self = StObject.set(x, "videoActiveViewOptOutTemplate", value.asInstanceOf[js.Any])
+    inline def setVideoActiveViewOptOutTemplate(value: Boolean): Self = StObject.set(x, "videoActiveViewOptOutTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoActiveViewOptOutTemplateUndefined: Self = StObject.set(x, "videoActiveViewOptOutTemplate", js.undefined)
+    inline def setVideoActiveViewOptOutTemplateUndefined: Self = StObject.set(x, "videoActiveViewOptOutTemplate", js.undefined)
     
-    @scala.inline
-    def setVpaidAdapterChoiceTemplate(value: String): Self = StObject.set(x, "vpaidAdapterChoiceTemplate", value.asInstanceOf[js.Any])
+    inline def setVpaidAdapterChoiceTemplate(value: String): Self = StObject.set(x, "vpaidAdapterChoiceTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpaidAdapterChoiceTemplateUndefined: Self = StObject.set(x, "vpaidAdapterChoiceTemplate", js.undefined)
+    inline def setVpaidAdapterChoiceTemplateUndefined: Self = StObject.set(x, "vpaidAdapterChoiceTemplate", js.undefined)
   }
 }

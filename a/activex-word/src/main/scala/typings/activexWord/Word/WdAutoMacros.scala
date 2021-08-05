@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdAutoMacros extends StObject
 object WdAutoMacros {
   
-  @scala.inline
-  def wdAutoClose: `3` = 3.asInstanceOf[`3`]
+  inline def wdAutoClose: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def wdAutoExec: `0` = 0.asInstanceOf[`0`]
+  inline def wdAutoExec: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdAutoExit: `4` = 4.asInstanceOf[`4`]
+  inline def wdAutoExit: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def wdAutoNew: `1` = 1.asInstanceOf[`1`]
+  inline def wdAutoNew: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdAutoOpen: `2` = 2.asInstanceOf[`2`]
+  inline def wdAutoOpen: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdAutoSync: `5` = 5.asInstanceOf[`5`]
+  inline def wdAutoSync: `5` = 5.asInstanceOf[`5`]
 }

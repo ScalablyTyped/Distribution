@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.SmartTagAction")
 @js.native
-class SmartTagAction protected ()
+/* private */ class SmartTagAction ()
   extends StObject
      with typings.activexExcel.Excel.SmartTagAction {
   
@@ -24,7 +24,7 @@ class SmartTagAction protected ()
   /* CompleteClass */
   override val Creator: XlCreator = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.SmartTagAction_typekey")
   var ExcelDotSmartTagAction_typekey: typings.activexExcel.Excel.SmartTagAction = js.native
   

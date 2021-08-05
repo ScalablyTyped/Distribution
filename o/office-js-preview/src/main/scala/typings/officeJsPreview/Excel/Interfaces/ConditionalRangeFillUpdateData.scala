@@ -17,19 +17,15 @@ trait ConditionalRangeFillUpdateData extends StObject {
 }
 object ConditionalRangeFillUpdateData {
   
-  @scala.inline
-  def apply(): ConditionalRangeFillUpdateData = {
+  inline def apply(): ConditionalRangeFillUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConditionalRangeFillUpdateData]
   }
   
-  @scala.inline
-  implicit class ConditionalRangeFillUpdateDataMutableBuilder[Self <: ConditionalRangeFillUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionalRangeFillUpdateData](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
   }
 }

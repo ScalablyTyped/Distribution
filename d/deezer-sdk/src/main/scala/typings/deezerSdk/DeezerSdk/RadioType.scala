@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RadioType extends StObject
 object RadioType {
   
-  @scala.inline
-  def artist: typings.deezerSdk.deezerSdkStrings.artist = "artist".asInstanceOf[typings.deezerSdk.deezerSdkStrings.artist]
+  inline def artist: typings.deezerSdk.deezerSdkStrings.artist = "artist".asInstanceOf[typings.deezerSdk.deezerSdkStrings.artist]
   
-  @scala.inline
-  def radio: typings.deezerSdk.deezerSdkStrings.radio = "radio".asInstanceOf[typings.deezerSdk.deezerSdkStrings.radio]
+  inline def radio: typings.deezerSdk.deezerSdkStrings.radio = "radio".asInstanceOf[typings.deezerSdk.deezerSdkStrings.radio]
   
-  @scala.inline
-  def user: typings.deezerSdk.deezerSdkStrings.user = "user".asInstanceOf[typings.deezerSdk.deezerSdkStrings.user]
+  inline def user: typings.deezerSdk.deezerSdkStrings.user = "user".asInstanceOf[typings.deezerSdk.deezerSdkStrings.user]
 }

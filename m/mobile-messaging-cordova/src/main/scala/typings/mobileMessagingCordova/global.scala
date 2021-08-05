@@ -10,6 +10,5 @@ object global {
   @JSGlobal("MobileMessaging")
   @js.native
   def MobileMessaging: Api = js.native
-  @scala.inline
-  def MobileMessaging_=(x: Api): Unit = js.Dynamic.global.updateDynamic("MobileMessaging")(x.asInstanceOf[js.Any])
+  inline def MobileMessaging_=(x: Api): Unit = js.Dynamic.global.updateDynamic("MobileMessaging")(x.asInstanceOf[js.Any])
 }

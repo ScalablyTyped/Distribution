@@ -30,8 +30,7 @@ trait PathConstraintData
 }
 object PathConstraintData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bones: js.Array[BoneData],
     name: String,
     offsetRotation: Double,
@@ -50,40 +49,28 @@ object PathConstraintData {
     __obj.asInstanceOf[PathConstraintData]
   }
   
-  @scala.inline
-  implicit class PathConstraintDataMutableBuilder[Self <: PathConstraintData] (val x: Self) extends AnyVal {
+  extension [Self <: PathConstraintData](x: Self) {
     
-    @scala.inline
-    def setBones(value: js.Array[BoneData]): Self = StObject.set(x, "bones", value.asInstanceOf[js.Any])
+    inline def setBones(value: js.Array[BoneData]): Self = StObject.set(x, "bones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBonesVarargs(value: BoneData*): Self = StObject.set(x, "bones", js.Array(value :_*))
+    inline def setBonesVarargs(value: BoneData*): Self = StObject.set(x, "bones", js.Array(value :_*))
     
-    @scala.inline
-    def setOffsetRotation(value: Double): Self = StObject.set(x, "offsetRotation", value.asInstanceOf[js.Any])
+    inline def setOffsetRotation(value: Double): Self = StObject.set(x, "offsetRotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionMode(value: PositionMode): Self = StObject.set(x, "positionMode", value.asInstanceOf[js.Any])
+    inline def setPositionMode(value: PositionMode): Self = StObject.set(x, "positionMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotateMix(value: Double): Self = StObject.set(x, "rotateMix", value.asInstanceOf[js.Any])
+    inline def setRotateMix(value: Double): Self = StObject.set(x, "rotateMix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotateMode(value: RotateMode): Self = StObject.set(x, "rotateMode", value.asInstanceOf[js.Any])
+    inline def setRotateMode(value: RotateMode): Self = StObject.set(x, "rotateMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+    inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpacingMode(value: SpacingMode): Self = StObject.set(x, "spacingMode", value.asInstanceOf[js.Any])
+    inline def setSpacingMode(value: SpacingMode): Self = StObject.set(x, "spacingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: SlotData): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: SlotData): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslateMix(value: Double): Self = StObject.set(x, "translateMix", value.asInstanceOf[js.Any])
+    inline def setTranslateMix(value: Double): Self = StObject.set(x, "translateMix", value.asInstanceOf[js.Any])
   }
 }

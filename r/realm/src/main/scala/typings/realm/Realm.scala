@@ -292,8 +292,7 @@ object Realm {
   }
   object App {
     
-    @scala.inline
-    def apply[FunctionsFactoryType /* <: js.Object */, CustomDataType /* <: js.Object */](
+    inline def apply[FunctionsFactoryType /* <: js.Object */, CustomDataType /* <: js.Object */](
       allUsers: Record[String, User[FunctionsFactoryType, CustomDataType]],
       emailPasswordAuth: EmailPasswordAuth,
       id: String,
@@ -370,21 +369,17 @@ object Realm {
       }
       object AuthError {
         
-        @scala.inline
-        def apply(code: Double, `type`: String): AuthError = {
+        inline def apply(code: Double, `type`: String): AuthError = {
           val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
           __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
           __obj.asInstanceOf[AuthError]
         }
         
-        @scala.inline
-        implicit class AuthErrorMutableBuilder[Self <: AuthError] (val x: Self) extends AnyVal {
+        extension [Self <: AuthError](x: Self) {
           
-          @scala.inline
-          def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+          inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+          inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         }
       }
       
@@ -402,32 +397,23 @@ object Realm {
       trait LogLevel extends StObject
       object LogLevel {
         
-        @scala.inline
-        def all: typings.realm.realmStrings.all = "all".asInstanceOf[typings.realm.realmStrings.all]
+        inline def all: typings.realm.realmStrings.all = "all".asInstanceOf[typings.realm.realmStrings.all]
         
-        @scala.inline
-        def debug: typings.realm.realmStrings.debug = "debug".asInstanceOf[typings.realm.realmStrings.debug]
+        inline def debug: typings.realm.realmStrings.debug = "debug".asInstanceOf[typings.realm.realmStrings.debug]
         
-        @scala.inline
-        def detail: typings.realm.realmStrings.detail = "detail".asInstanceOf[typings.realm.realmStrings.detail]
+        inline def detail: typings.realm.realmStrings.detail = "detail".asInstanceOf[typings.realm.realmStrings.detail]
         
-        @scala.inline
-        def error: typings.realm.realmStrings.error = "error".asInstanceOf[typings.realm.realmStrings.error]
+        inline def error: typings.realm.realmStrings.error = "error".asInstanceOf[typings.realm.realmStrings.error]
         
-        @scala.inline
-        def fatal: typings.realm.realmStrings.fatal = "fatal".asInstanceOf[typings.realm.realmStrings.fatal]
+        inline def fatal: typings.realm.realmStrings.fatal = "fatal".asInstanceOf[typings.realm.realmStrings.fatal]
         
-        @scala.inline
-        def info: typings.realm.realmStrings.info = "info".asInstanceOf[typings.realm.realmStrings.info]
+        inline def info: typings.realm.realmStrings.info = "info".asInstanceOf[typings.realm.realmStrings.info]
         
-        @scala.inline
-        def off: typings.realm.realmStrings.off = "off".asInstanceOf[typings.realm.realmStrings.off]
+        inline def off: typings.realm.realmStrings.off = "off".asInstanceOf[typings.realm.realmStrings.off]
         
-        @scala.inline
-        def trace: typings.realm.realmStrings.trace = "trace".asInstanceOf[typings.realm.realmStrings.trace]
+        inline def trace: typings.realm.realmStrings.trace = "trace".asInstanceOf[typings.realm.realmStrings.trace]
         
-        @scala.inline
-        def warn: typings.realm.realmStrings.warn = "warn".asInstanceOf[typings.realm.realmStrings.warn]
+        inline def warn: typings.realm.realmStrings.warn = "warn".asInstanceOf[typings.realm.realmStrings.warn]
       }
       
       @js.native
@@ -465,32 +451,23 @@ object Realm {
       }
     }
     
-    @scala.inline
-    implicit class AppMutableBuilder[Self <: App[?, ?], FunctionsFactoryType /* <: js.Object */, CustomDataType /* <: js.Object */] (val x: Self & (App[FunctionsFactoryType, CustomDataType])) extends AnyVal {
+    extension [Self <: App[?, ?], FunctionsFactoryType /* <: js.Object */, CustomDataType /* <: js.Object */](x: Self & (App[FunctionsFactoryType, CustomDataType])) {
       
-      @scala.inline
-      def setAllUsers(value: Record[String, User[FunctionsFactoryType, CustomDataType]]): Self = StObject.set(x, "allUsers", value.asInstanceOf[js.Any])
+      inline def setAllUsers(value: Record[String, User[FunctionsFactoryType, CustomDataType]]): Self = StObject.set(x, "allUsers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentUser(value: User[FunctionsFactoryType, CustomDataType]): Self = StObject.set(x, "currentUser", value.asInstanceOf[js.Any])
+      inline def setCurrentUser(value: User[FunctionsFactoryType, CustomDataType]): Self = StObject.set(x, "currentUser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentUserNull: Self = StObject.set(x, "currentUser", null)
+      inline def setCurrentUserNull: Self = StObject.set(x, "currentUser", null)
       
-      @scala.inline
-      def setEmailPasswordAuth(value: EmailPasswordAuth): Self = StObject.set(x, "emailPasswordAuth", value.asInstanceOf[js.Any])
+      inline def setEmailPasswordAuth(value: EmailPasswordAuth): Self = StObject.set(x, "emailPasswordAuth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogIn(value: Credentials[js.Object] => js.Promise[User[FunctionsFactoryType, CustomDataType]]): Self = StObject.set(x, "logIn", js.Any.fromFunction1(value))
+      inline def setLogIn(value: Credentials[js.Object] => js.Promise[User[FunctionsFactoryType, CustomDataType]]): Self = StObject.set(x, "logIn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveUser(value: User[FunctionsFactoryType, CustomDataType] => js.Promise[Unit]): Self = StObject.set(x, "removeUser", js.Any.fromFunction1(value))
+      inline def setRemoveUser(value: User[FunctionsFactoryType, CustomDataType] => js.Promise[Unit]): Self = StObject.set(x, "removeUser", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSwitchUser(value: User[FunctionsFactoryType, CustomDataType] => Unit): Self = StObject.set(x, "switchUser", js.Any.fromFunction1(value))
+      inline def setSwitchUser(value: User[FunctionsFactoryType, CustomDataType] => Unit): Self = StObject.set(x, "switchUser", js.Any.fromFunction1(value))
     }
   }
   
@@ -611,29 +588,22 @@ object Realm {
   }
   object AppConfiguration {
     
-    @scala.inline
-    def apply(id: String): AppConfiguration = {
+    inline def apply(id: String): AppConfiguration = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[AppConfiguration]
     }
     
-    @scala.inline
-    implicit class AppConfigurationMutableBuilder[Self <: AppConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: AppConfiguration](x: Self) {
       
-      @scala.inline
-      def setApp(value: LocalAppConfiguration): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+      inline def setApp(value: LocalAppConfiguration): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
+      inline def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
       
-      @scala.inline
-      def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+      inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
+      inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -666,26 +636,20 @@ object Realm {
     }
     object ApiKey {
       
-      @scala.inline
-      def apply(_id: String, disabled: Boolean, key: String, name: String): ApiKey = {
+      inline def apply(_id: String, disabled: Boolean, key: String, name: String): ApiKey = {
         val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
         __obj.asInstanceOf[ApiKey]
       }
       
-      @scala.inline
-      implicit class ApiKeyMutableBuilder[Self <: ApiKey] (val x: Self) extends AnyVal {
+      extension [Self <: ApiKey](x: Self) {
         
-        @scala.inline
-        def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+        inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+        inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+        inline def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
       }
     }
     
@@ -736,8 +700,7 @@ object Realm {
     }
     object ApiKeyAuth {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         create: String => js.Promise[ApiKey],
         delete: String => js.Promise[Unit],
         disable: String => js.Promise[Unit],
@@ -749,26 +712,19 @@ object Realm {
         __obj.asInstanceOf[ApiKeyAuth]
       }
       
-      @scala.inline
-      implicit class ApiKeyAuthMutableBuilder[Self <: ApiKeyAuth] (val x: Self) extends AnyVal {
+      extension [Self <: ApiKeyAuth](x: Self) {
         
-        @scala.inline
-        def setCreate(value: String => js.Promise[ApiKey]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+        inline def setCreate(value: String => js.Promise[ApiKey]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setDelete(value: String => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
+        inline def setDelete(value: String => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setDisable(value: String => js.Promise[Unit]): Self = StObject.set(x, "disable", js.Any.fromFunction1(value))
+        inline def setDisable(value: String => js.Promise[Unit]): Self = StObject.set(x, "disable", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setEnable(value: String => js.Promise[Unit]): Self = StObject.set(x, "enable", js.Any.fromFunction1(value))
+        inline def setEnable(value: String => js.Promise[Unit]): Self = StObject.set(x, "enable", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setFetch(value: String => js.Promise[ApiKey]): Self = StObject.set(x, "fetch", js.Any.fromFunction1(value))
+        inline def setFetch(value: String => js.Promise[ApiKey]): Self = StObject.set(x, "fetch", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setFetchAll(value: () => js.Promise[js.Array[ApiKey]]): Self = StObject.set(x, "fetchAll", js.Any.fromFunction0(value))
+        inline def setFetchAll(value: () => js.Promise[js.Array[ApiKey]]): Self = StObject.set(x, "fetchAll", js.Any.fromFunction0(value))
       }
     }
     
@@ -827,8 +783,7 @@ object Realm {
     }
     object EmailPasswordAuth {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         callResetPasswordFunction: (String, String, /* repeated */ js.Any) => js.Promise[Unit],
         confirmUser: (String, String) => js.Promise[Unit],
         registerUser: (String, String) => js.Promise[Unit],
@@ -840,26 +795,19 @@ object Realm {
         __obj.asInstanceOf[EmailPasswordAuth]
       }
       
-      @scala.inline
-      implicit class EmailPasswordAuthMutableBuilder[Self <: EmailPasswordAuth] (val x: Self) extends AnyVal {
+      extension [Self <: EmailPasswordAuth](x: Self) {
         
-        @scala.inline
-        def setCallResetPasswordFunction(value: (String, String, /* repeated */ js.Any) => js.Promise[Unit]): Self = StObject.set(x, "callResetPasswordFunction", js.Any.fromFunction3(value))
+        inline def setCallResetPasswordFunction(value: (String, String, /* repeated */ js.Any) => js.Promise[Unit]): Self = StObject.set(x, "callResetPasswordFunction", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setConfirmUser(value: (String, String) => js.Promise[Unit]): Self = StObject.set(x, "confirmUser", js.Any.fromFunction2(value))
+        inline def setConfirmUser(value: (String, String) => js.Promise[Unit]): Self = StObject.set(x, "confirmUser", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setRegisterUser(value: (String, String) => js.Promise[Unit]): Self = StObject.set(x, "registerUser", js.Any.fromFunction2(value))
+        inline def setRegisterUser(value: (String, String) => js.Promise[Unit]): Self = StObject.set(x, "registerUser", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setResendConfirmationEmail(value: String => js.Promise[Unit]): Self = StObject.set(x, "resendConfirmationEmail", js.Any.fromFunction1(value))
+        inline def setResendConfirmationEmail(value: String => js.Promise[Unit]): Self = StObject.set(x, "resendConfirmationEmail", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setResetPassword(value: (String, String, String) => js.Promise[Unit]): Self = StObject.set(x, "resetPassword", js.Any.fromFunction3(value))
+        inline def setResetPassword(value: (String, String, String) => js.Promise[Unit]): Self = StObject.set(x, "resetPassword", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setSendResetPasswordEmail(value: String => js.Promise[Unit]): Self = StObject.set(x, "sendResetPasswordEmail", js.Any.fromFunction1(value))
+        inline def setSendResetPasswordEmail(value: String => js.Promise[Unit]): Self = StObject.set(x, "sendResetPasswordEmail", js.Any.fromFunction1(value))
       }
     }
   }
@@ -877,20 +825,16 @@ object Realm {
   }
   object AuthProviders {
     
-    @scala.inline
-    def apply(apiKey: ApiKeyAuth, emailPassword: EmailPasswordAuth): AuthProviders = {
+    inline def apply(apiKey: ApiKeyAuth, emailPassword: EmailPasswordAuth): AuthProviders = {
       val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any], emailPassword = emailPassword.asInstanceOf[js.Any])
       __obj.asInstanceOf[AuthProviders]
     }
     
-    @scala.inline
-    implicit class AuthProvidersMutableBuilder[Self <: AuthProviders] (val x: Self) extends AnyVal {
+    extension [Self <: AuthProviders](x: Self) {
       
-      @scala.inline
-      def setApiKey(value: ApiKeyAuth): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
+      inline def setApiKey(value: ApiKeyAuth): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailPassword(value: EmailPasswordAuth): Self = StObject.set(x, "emailPassword", value.asInstanceOf[js.Any])
+      inline def setEmailPassword(value: EmailPasswordAuth): Self = StObject.set(x, "emailPassword", value.asInstanceOf[js.Any])
     }
   }
   
@@ -919,8 +863,7 @@ object Realm {
   }
   object BaseFunctionsFactory {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       callFunction: (String, /* repeated */ js.Any) => js.Promise[js.Any],
       callFunctionStreaming: (String, /* repeated */ js.Any) => js.Promise[AsyncIterable[Uint8Array]]
     ): BaseFunctionsFactory = {
@@ -928,14 +871,11 @@ object Realm {
       __obj.asInstanceOf[BaseFunctionsFactory]
     }
     
-    @scala.inline
-    implicit class BaseFunctionsFactoryMutableBuilder[Self <: BaseFunctionsFactory] (val x: Self) extends AnyVal {
+    extension [Self <: BaseFunctionsFactory](x: Self) {
       
-      @scala.inline
-      def setCallFunction(value: (String, /* repeated */ js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "callFunction", js.Any.fromFunction2(value))
+      inline def setCallFunction(value: (String, /* repeated */ js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "callFunction", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCallFunctionStreaming(value: (String, /* repeated */ js.Any) => js.Promise[AsyncIterable[Uint8Array]]): Self = StObject.set(x, "callFunctionStreaming", js.Any.fromFunction2(value))
+      inline def setCallFunctionStreaming(value: (String, /* repeated */ js.Any) => js.Promise[AsyncIterable[Uint8Array]]): Self = StObject.set(x, "callFunctionStreaming", js.Any.fromFunction2(value))
     }
   }
   
@@ -1031,8 +971,7 @@ object Realm {
   }
   object CollectionChangeSet {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       deletions: js.Array[Double],
       insertions: js.Array[Double],
       newModifications: js.Array[Double],
@@ -1042,32 +981,23 @@ object Realm {
       __obj.asInstanceOf[CollectionChangeSet]
     }
     
-    @scala.inline
-    implicit class CollectionChangeSetMutableBuilder[Self <: CollectionChangeSet] (val x: Self) extends AnyVal {
+    extension [Self <: CollectionChangeSet](x: Self) {
       
-      @scala.inline
-      def setDeletions(value: js.Array[Double]): Self = StObject.set(x, "deletions", value.asInstanceOf[js.Any])
+      inline def setDeletions(value: js.Array[Double]): Self = StObject.set(x, "deletions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeletionsVarargs(value: Double*): Self = StObject.set(x, "deletions", js.Array(value :_*))
+      inline def setDeletionsVarargs(value: Double*): Self = StObject.set(x, "deletions", js.Array(value :_*))
       
-      @scala.inline
-      def setInsertions(value: js.Array[Double]): Self = StObject.set(x, "insertions", value.asInstanceOf[js.Any])
+      inline def setInsertions(value: js.Array[Double]): Self = StObject.set(x, "insertions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsertionsVarargs(value: Double*): Self = StObject.set(x, "insertions", js.Array(value :_*))
+      inline def setInsertionsVarargs(value: Double*): Self = StObject.set(x, "insertions", js.Array(value :_*))
       
-      @scala.inline
-      def setNewModifications(value: js.Array[Double]): Self = StObject.set(x, "newModifications", value.asInstanceOf[js.Any])
+      inline def setNewModifications(value: js.Array[Double]): Self = StObject.set(x, "newModifications", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewModificationsVarargs(value: Double*): Self = StObject.set(x, "newModifications", js.Array(value :_*))
+      inline def setNewModificationsVarargs(value: Double*): Self = StObject.set(x, "newModifications", js.Array(value :_*))
       
-      @scala.inline
-      def setOldModifications(value: js.Array[Double]): Self = StObject.set(x, "oldModifications", value.asInstanceOf[js.Any])
+      inline def setOldModifications(value: js.Array[Double]): Self = StObject.set(x, "oldModifications", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldModificationsVarargs(value: Double*): Self = StObject.set(x, "oldModifications", js.Array(value :_*))
+      inline def setOldModificationsVarargs(value: Double*): Self = StObject.set(x, "oldModifications", js.Array(value :_*))
     }
   }
   
@@ -1103,89 +1033,62 @@ object Realm {
   }
   object Configuration {
     
-    @scala.inline
-    def apply(): Configuration = {
+    inline def apply(): Configuration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Configuration]
     }
     
-    @scala.inline
-    implicit class ConfigurationMutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
+    extension [Self <: Configuration](x: Self) {
       
-      @scala.inline
-      def setDeleteRealmIfMigrationNeeded(value: Boolean): Self = StObject.set(x, "deleteRealmIfMigrationNeeded", value.asInstanceOf[js.Any])
+      inline def setDeleteRealmIfMigrationNeeded(value: Boolean): Self = StObject.set(x, "deleteRealmIfMigrationNeeded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleteRealmIfMigrationNeededUndefined: Self = StObject.set(x, "deleteRealmIfMigrationNeeded", js.undefined)
+      inline def setDeleteRealmIfMigrationNeededUndefined: Self = StObject.set(x, "deleteRealmIfMigrationNeeded", js.undefined)
       
-      @scala.inline
-      def setDisableFormatUpgrade(value: Boolean): Self = StObject.set(x, "disableFormatUpgrade", value.asInstanceOf[js.Any])
+      inline def setDisableFormatUpgrade(value: Boolean): Self = StObject.set(x, "disableFormatUpgrade", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableFormatUpgradeUndefined: Self = StObject.set(x, "disableFormatUpgrade", js.undefined)
+      inline def setDisableFormatUpgradeUndefined: Self = StObject.set(x, "disableFormatUpgrade", js.undefined)
       
-      @scala.inline
-      def setEncryptionKey(value: ArrayBuffer | ArrayBufferView | Int8Array): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
+      inline def setEncryptionKey(value: ArrayBuffer | ArrayBufferView | Int8Array): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionKeyUndefined: Self = StObject.set(x, "encryptionKey", js.undefined)
+      inline def setEncryptionKeyUndefined: Self = StObject.set(x, "encryptionKey", js.undefined)
       
-      @scala.inline
-      def setFifoFilesFallbackPath(value: String): Self = StObject.set(x, "fifoFilesFallbackPath", value.asInstanceOf[js.Any])
+      inline def setFifoFilesFallbackPath(value: String): Self = StObject.set(x, "fifoFilesFallbackPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFifoFilesFallbackPathUndefined: Self = StObject.set(x, "fifoFilesFallbackPath", js.undefined)
+      inline def setFifoFilesFallbackPathUndefined: Self = StObject.set(x, "fifoFilesFallbackPath", js.undefined)
       
-      @scala.inline
-      def setInMemory(value: Boolean): Self = StObject.set(x, "inMemory", value.asInstanceOf[js.Any])
+      inline def setInMemory(value: Boolean): Self = StObject.set(x, "inMemory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInMemoryUndefined: Self = StObject.set(x, "inMemory", js.undefined)
+      inline def setInMemoryUndefined: Self = StObject.set(x, "inMemory", js.undefined)
       
-      @scala.inline
-      def setMigration(value: (/* oldRealm */ Realm, /* newRealm */ Realm) => Unit): Self = StObject.set(x, "migration", js.Any.fromFunction2(value))
+      inline def setMigration(value: (/* oldRealm */ Realm, /* newRealm */ Realm) => Unit): Self = StObject.set(x, "migration", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMigrationUndefined: Self = StObject.set(x, "migration", js.undefined)
+      inline def setMigrationUndefined: Self = StObject.set(x, "migration", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+      inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+      inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
-      @scala.inline
-      def setSchema(value: js.Array[ObjectClass | ObjectSchema]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: js.Array[ObjectClass | ObjectSchema]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+      inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
       
-      @scala.inline
-      def setSchemaVarargs(value: (ObjectClass | ObjectSchema)*): Self = StObject.set(x, "schema", js.Array(value :_*))
+      inline def setSchemaVarargs(value: (ObjectClass | ObjectSchema)*): Self = StObject.set(x, "schema", js.Array(value :_*))
       
-      @scala.inline
-      def setSchemaVersion(value: Double): Self = StObject.set(x, "schemaVersion", value.asInstanceOf[js.Any])
+      inline def setSchemaVersion(value: Double): Self = StObject.set(x, "schemaVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaVersionUndefined: Self = StObject.set(x, "schemaVersion", js.undefined)
+      inline def setSchemaVersionUndefined: Self = StObject.set(x, "schemaVersion", js.undefined)
       
-      @scala.inline
-      def setShouldCompactOnLaunch(value: (/* totalBytes */ Double, /* usedBytes */ Double) => Boolean): Self = StObject.set(x, "shouldCompactOnLaunch", js.Any.fromFunction2(value))
+      inline def setShouldCompactOnLaunch(value: (/* totalBytes */ Double, /* usedBytes */ Double) => Boolean): Self = StObject.set(x, "shouldCompactOnLaunch", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setShouldCompactOnLaunchUndefined: Self = StObject.set(x, "shouldCompactOnLaunch", js.undefined)
+      inline def setShouldCompactOnLaunchUndefined: Self = StObject.set(x, "shouldCompactOnLaunch", js.undefined)
       
-      @scala.inline
-      def setSync(value: SyncConfiguration): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+      inline def setSync(value: SyncConfiguration): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
+      inline def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
     }
   }
   
@@ -1214,8 +1117,7 @@ object Realm {
   }
   object Credentials {
     
-    @scala.inline
-    def apply[PayloadType /* <: js.Object */](payload: PayloadType, providerName: String, providerType: String): Credentials[PayloadType] = {
+    inline def apply[PayloadType /* <: js.Object */](payload: PayloadType, providerName: String, providerType: String): Credentials[PayloadType] = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any], providerName = providerName.asInstanceOf[js.Any], providerType = providerType.asInstanceOf[js.Any])
       __obj.asInstanceOf[Credentials[PayloadType]]
     }
@@ -1237,17 +1139,14 @@ object Realm {
     }
     object ApiKeyPayload {
       
-      @scala.inline
-      def apply(key: String): ApiKeyPayload = {
+      inline def apply(key: String): ApiKeyPayload = {
         val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
         __obj.asInstanceOf[ApiKeyPayload]
       }
       
-      @scala.inline
-      implicit class ApiKeyPayloadMutableBuilder[Self <: ApiKeyPayload] (val x: Self) extends AnyVal {
+      extension [Self <: ApiKeyPayload](x: Self) {
         
-        @scala.inline
-        def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+        inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       }
     }
     
@@ -1263,31 +1162,24 @@ object Realm {
     }
     object ApplePayload {
       
-      @scala.inline
-      def apply(id_token: String): ApplePayload = {
+      inline def apply(id_token: String): ApplePayload = {
         val __obj = js.Dynamic.literal(id_token = id_token.asInstanceOf[js.Any])
         __obj.asInstanceOf[ApplePayload]
       }
       
-      @scala.inline
-      implicit class ApplePayloadMutableBuilder[Self <: ApplePayload] (val x: Self) extends AnyVal {
+      extension [Self <: ApplePayload](x: Self) {
         
-        @scala.inline
-        def setId_token(value: String): Self = StObject.set(x, "id_token", value.asInstanceOf[js.Any])
+        inline def setId_token(value: String): Self = StObject.set(x, "id_token", value.asInstanceOf[js.Any])
       }
     }
     
-    @scala.inline
-    implicit class CredentialsMutableBuilder[Self <: Credentials[?], PayloadType /* <: js.Object */] (val x: Self & Credentials[PayloadType]) extends AnyVal {
+    extension [Self <: Credentials[?], PayloadType /* <: js.Object */](x: Self & Credentials[PayloadType]) {
       
-      @scala.inline
-      def setPayload(value: PayloadType): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: PayloadType): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProviderName(value: String): Self = StObject.set(x, "providerName", value.asInstanceOf[js.Any])
+      inline def setProviderName(value: String): Self = StObject.set(x, "providerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProviderType(value: String): Self = StObject.set(x, "providerType", value.asInstanceOf[js.Any])
+      inline def setProviderType(value: String): Self = StObject.set(x, "providerType", value.asInstanceOf[js.Any])
     }
     
     /**
@@ -1308,20 +1200,16 @@ object Realm {
     }
     object EmailPasswordPayload {
       
-      @scala.inline
-      def apply(password: String, username: String): EmailPasswordPayload = {
+      inline def apply(password: String, username: String): EmailPasswordPayload = {
         val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
         __obj.asInstanceOf[EmailPasswordPayload]
       }
       
-      @scala.inline
-      implicit class EmailPasswordPayloadMutableBuilder[Self <: EmailPasswordPayload] (val x: Self) extends AnyVal {
+      extension [Self <: EmailPasswordPayload](x: Self) {
         
-        @scala.inline
-        def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+        inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+        inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       }
     }
     
@@ -1337,17 +1225,14 @@ object Realm {
     }
     object FacebookPayload {
       
-      @scala.inline
-      def apply(accessToken: String): FacebookPayload = {
+      inline def apply(accessToken: String): FacebookPayload = {
         val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any])
         __obj.asInstanceOf[FacebookPayload]
       }
       
-      @scala.inline
-      implicit class FacebookPayloadMutableBuilder[Self <: FacebookPayload] (val x: Self) extends AnyVal {
+      extension [Self <: FacebookPayload](x: Self) {
         
-        @scala.inline
-        def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+        inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       }
     }
     
@@ -1368,17 +1253,14 @@ object Realm {
     }
     object GooglePayload {
       
-      @scala.inline
-      def apply(authCode: String): GooglePayload = {
+      inline def apply(authCode: String): GooglePayload = {
         val __obj = js.Dynamic.literal(authCode = authCode.asInstanceOf[js.Any])
         __obj.asInstanceOf[GooglePayload]
       }
       
-      @scala.inline
-      implicit class GooglePayloadMutableBuilder[Self <: GooglePayload] (val x: Self) extends AnyVal {
+      extension [Self <: GooglePayload](x: Self) {
         
-        @scala.inline
-        def setAuthCode(value: String): Self = StObject.set(x, "authCode", value.asInstanceOf[js.Any])
+        inline def setAuthCode(value: String): Self = StObject.set(x, "authCode", value.asInstanceOf[js.Any])
       }
     }
     
@@ -1394,17 +1276,14 @@ object Realm {
     }
     object JWTPayload {
       
-      @scala.inline
-      def apply(token: String): JWTPayload = {
+      inline def apply(token: String): JWTPayload = {
         val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any])
         __obj.asInstanceOf[JWTPayload]
       }
       
-      @scala.inline
-      implicit class JWTPayloadMutableBuilder[Self <: JWTPayload] (val x: Self) extends AnyVal {
+      extension [Self <: JWTPayload](x: Self) {
         
-        @scala.inline
-        def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+        inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       }
     }
     
@@ -1422,17 +1301,14 @@ object Realm {
     }
     object OAuth2RedirectPayload {
       
-      @scala.inline
-      def apply(redirectUrl: String): OAuth2RedirectPayload = {
+      inline def apply(redirectUrl: String): OAuth2RedirectPayload = {
         val __obj = js.Dynamic.literal(redirectUrl = redirectUrl.asInstanceOf[js.Any])
         __obj.asInstanceOf[OAuth2RedirectPayload]
       }
       
-      @scala.inline
-      implicit class OAuth2RedirectPayloadMutableBuilder[Self <: OAuth2RedirectPayload] (val x: Self) extends AnyVal {
+      extension [Self <: OAuth2RedirectPayload](x: Self) {
         
-        @scala.inline
-        def setRedirectUrl(value: String): Self = StObject.set(x, "redirectUrl", value.asInstanceOf[js.Any])
+        inline def setRedirectUrl(value: String): Self = StObject.set(x, "redirectUrl", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -1449,8 +1325,7 @@ object Realm {
   /* name */ StringDictionary[RealmFunction[js.Any, js.Array[js.Any]]]
   object DefaultFunctionsFactory {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       callFunction: (String, /* repeated */ js.Any) => js.Promise[js.Any],
       callFunctionStreaming: (String, /* repeated */ js.Any) => js.Promise[AsyncIterable[Uint8Array]]
     ): DefaultFunctionsFactory = {
@@ -1515,26 +1390,20 @@ object Realm {
   }
   object LocalAppConfiguration {
     
-    @scala.inline
-    def apply(): LocalAppConfiguration = {
+    inline def apply(): LocalAppConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LocalAppConfiguration]
     }
     
-    @scala.inline
-    implicit class LocalAppConfigurationMutableBuilder[Self <: LocalAppConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: LocalAppConfiguration](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -1597,8 +1466,7 @@ object Realm {
   }
   object Object {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _objectId: () => String,
       addListener: ObjectChangeCallback => Unit,
       entries: () => js.Array[js.Tuple2[String, js.Any]],
@@ -1615,41 +1483,29 @@ object Realm {
       __obj.asInstanceOf[Object]
     }
     
-    @scala.inline
-    implicit class ObjectMutableBuilder[Self <: Object] (val x: Self) extends AnyVal {
+    extension [Self <: Object](x: Self) {
       
-      @scala.inline
-      def setAddListener(value: ObjectChangeCallback => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
+      inline def setAddListener(value: ObjectChangeCallback => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEntries(value: () => js.Array[js.Tuple2[String, js.Any]]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))
+      inline def setEntries(value: () => js.Array[js.Tuple2[String, js.Any]]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
+      inline def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setKeys(value: () => js.Array[String]): Self = StObject.set(x, "keys", js.Any.fromFunction0(value))
+      inline def setKeys(value: () => js.Array[String]): Self = StObject.set(x, "keys", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLinkingObjects(value: (String, String) => Results[js.Any & Object]): Self = StObject.set(x, "linkingObjects", js.Any.fromFunction2(value))
+      inline def setLinkingObjects(value: (String, String) => Results[js.Any & Object]): Self = StObject.set(x, "linkingObjects", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLinkingObjectsCount(value: () => Double): Self = StObject.set(x, "linkingObjectsCount", js.Any.fromFunction0(value))
+      inline def setLinkingObjectsCount(value: () => Double): Self = StObject.set(x, "linkingObjectsCount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setObjectSchema(value: () => ObjectSchema): Self = StObject.set(x, "objectSchema", js.Any.fromFunction0(value))
+      inline def setObjectSchema(value: () => ObjectSchema): Self = StObject.set(x, "objectSchema", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveAllListeners(value: () => Unit): Self = StObject.set(x, "removeAllListeners", js.Any.fromFunction0(value))
+      inline def setRemoveAllListeners(value: () => Unit): Self = StObject.set(x, "removeAllListeners", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveListener(value: ObjectChangeCallback => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction1(value))
+      inline def setRemoveListener(value: ObjectChangeCallback => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_objectId(value: () => String): Self = StObject.set(x, "_objectId", js.Any.fromFunction0(value))
+      inline def set_objectId(value: () => String): Self = StObject.set(x, "_objectId", js.Any.fromFunction0(value))
     }
   }
   
@@ -1663,23 +1519,18 @@ object Realm {
   }
   object ObjectChangeSet {
     
-    @scala.inline
-    def apply(changedProperties: js.Array[String], deleted: Boolean): ObjectChangeSet = {
+    inline def apply(changedProperties: js.Array[String], deleted: Boolean): ObjectChangeSet = {
       val __obj = js.Dynamic.literal(changedProperties = changedProperties.asInstanceOf[js.Any], deleted = deleted.asInstanceOf[js.Any])
       __obj.asInstanceOf[ObjectChangeSet]
     }
     
-    @scala.inline
-    implicit class ObjectChangeSetMutableBuilder[Self <: ObjectChangeSet] (val x: Self) extends AnyVal {
+    extension [Self <: ObjectChangeSet](x: Self) {
       
-      @scala.inline
-      def setChangedProperties(value: js.Array[String]): Self = StObject.set(x, "changedProperties", value.asInstanceOf[js.Any])
+      inline def setChangedProperties(value: js.Array[String]): Self = StObject.set(x, "changedProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChangedPropertiesVarargs(value: String*): Self = StObject.set(x, "changedProperties", js.Array(value :_*))
+      inline def setChangedPropertiesVarargs(value: String*): Self = StObject.set(x, "changedProperties", js.Array(value :_*))
       
-      @scala.inline
-      def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
+      inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1693,17 +1544,14 @@ object Realm {
   }
   object ObjectClass {
     
-    @scala.inline
-    def apply(schema: ObjectSchema): ObjectClass = {
+    inline def apply(schema: ObjectSchema): ObjectClass = {
       val __obj = js.Dynamic.literal(schema = schema.asInstanceOf[js.Any])
       __obj.asInstanceOf[ObjectClass]
     }
     
-    @scala.inline
-    implicit class ObjectClassMutableBuilder[Self <: ObjectClass] (val x: Self) extends AnyVal {
+    extension [Self <: ObjectClass](x: Self) {
       
-      @scala.inline
-      def setSchema(value: ObjectSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: ObjectSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1730,32 +1578,24 @@ object Realm {
   }
   object ObjectSchema {
     
-    @scala.inline
-    def apply(name: String, properties: PropertiesTypes): ObjectSchema = {
+    inline def apply(name: String, properties: PropertiesTypes): ObjectSchema = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
       __obj.asInstanceOf[ObjectSchema]
     }
     
-    @scala.inline
-    implicit class ObjectSchemaMutableBuilder[Self <: ObjectSchema] (val x: Self) extends AnyVal {
+    extension [Self <: ObjectSchema](x: Self) {
       
-      @scala.inline
-      def setEmbedded(value: Boolean): Self = StObject.set(x, "embedded", value.asInstanceOf[js.Any])
+      inline def setEmbedded(value: Boolean): Self = StObject.set(x, "embedded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmbeddedUndefined: Self = StObject.set(x, "embedded", js.undefined)
+      inline def setEmbeddedUndefined: Self = StObject.set(x, "embedded", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryKey(value: String): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
+      inline def setPrimaryKey(value: String): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryKeyUndefined: Self = StObject.set(x, "primaryKey", js.undefined)
+      inline def setPrimaryKeyUndefined: Self = StObject.set(x, "primaryKey", js.undefined)
       
-      @scala.inline
-      def setProperties(value: PropertiesTypes): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: PropertiesTypes): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1781,54 +1621,39 @@ object Realm {
   }
   object ObjectSchemaProperty {
     
-    @scala.inline
-    def apply(`type`: PropertyType): ObjectSchemaProperty = {
+    inline def apply(`type`: PropertyType): ObjectSchemaProperty = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ObjectSchemaProperty]
     }
     
-    @scala.inline
-    implicit class ObjectSchemaPropertyMutableBuilder[Self <: ObjectSchemaProperty] (val x: Self) extends AnyVal {
+    extension [Self <: ObjectSchemaProperty](x: Self) {
       
-      @scala.inline
-      def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setIndexed(value: Boolean): Self = StObject.set(x, "indexed", value.asInstanceOf[js.Any])
+      inline def setIndexed(value: Boolean): Self = StObject.set(x, "indexed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexedUndefined: Self = StObject.set(x, "indexed", js.undefined)
+      inline def setIndexedUndefined: Self = StObject.set(x, "indexed", js.undefined)
       
-      @scala.inline
-      def setMapTo(value: String): Self = StObject.set(x, "mapTo", value.asInstanceOf[js.Any])
+      inline def setMapTo(value: String): Self = StObject.set(x, "mapTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapToUndefined: Self = StObject.set(x, "mapTo", js.undefined)
+      inline def setMapToUndefined: Self = StObject.set(x, "mapTo", js.undefined)
       
-      @scala.inline
-      def setObjectType(value: String): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
+      inline def setObjectType(value: String): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectTypeUndefined: Self = StObject.set(x, "objectType", js.undefined)
+      inline def setObjectTypeUndefined: Self = StObject.set(x, "objectType", js.undefined)
       
-      @scala.inline
-      def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+      inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
+      inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
       
-      @scala.inline
-      def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+      inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+      inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
       
-      @scala.inline
-      def setType(value: PropertyType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: PropertyType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1842,18 +1667,15 @@ object Realm {
   }
   object ObjectType {
     
-    @scala.inline
-    def apply(`type`: ObjectClass): ObjectType = {
+    inline def apply(`type`: ObjectClass): ObjectType = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ObjectType]
     }
     
-    @scala.inline
-    implicit class ObjectTypeMutableBuilder[Self <: ObjectType] (val x: Self) extends AnyVal {
+    extension [Self <: ObjectType](x: Self) {
       
-      @scala.inline
-      def setType(value: ObjectClass): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ObjectClass): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1867,30 +1689,23 @@ object Realm {
   }
   object OpenRealmBehaviorConfiguration {
     
-    @scala.inline
-    def apply(`type`: OpenRealmBehaviorType): OpenRealmBehaviorConfiguration = {
+    inline def apply(`type`: OpenRealmBehaviorType): OpenRealmBehaviorConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[OpenRealmBehaviorConfiguration]
     }
     
-    @scala.inline
-    implicit class OpenRealmBehaviorConfigurationMutableBuilder[Self <: OpenRealmBehaviorConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: OpenRealmBehaviorConfiguration](x: Self) {
       
-      @scala.inline
-      def setTimeOut(value: Double): Self = StObject.set(x, "timeOut", value.asInstanceOf[js.Any])
+      inline def setTimeOut(value: Double): Self = StObject.set(x, "timeOut", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeOutBehavior(value: OpenRealmTimeOutBehavior): Self = StObject.set(x, "timeOutBehavior", value.asInstanceOf[js.Any])
+      inline def setTimeOutBehavior(value: OpenRealmTimeOutBehavior): Self = StObject.set(x, "timeOutBehavior", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeOutBehaviorUndefined: Self = StObject.set(x, "timeOutBehavior", js.undefined)
+      inline def setTimeOutBehaviorUndefined: Self = StObject.set(x, "timeOutBehavior", js.undefined)
       
-      @scala.inline
-      def setTimeOutUndefined: Self = StObject.set(x, "timeOut", js.undefined)
+      inline def setTimeOutUndefined: Self = StObject.set(x, "timeOut", js.undefined)
       
-      @scala.inline
-      def setType(value: OpenRealmBehaviorType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: OpenRealmBehaviorType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1901,11 +1716,9 @@ object Realm {
   trait OpenRealmBehaviorType extends StObject
   object OpenRealmBehaviorType {
     
-    @scala.inline
-    def DownloadBeforeOpen: downloadBeforeOpen = "downloadBeforeOpen".asInstanceOf[downloadBeforeOpen]
+    inline def DownloadBeforeOpen: downloadBeforeOpen = "downloadBeforeOpen".asInstanceOf[downloadBeforeOpen]
     
-    @scala.inline
-    def OpenImmediately: openImmediately = "openImmediately".asInstanceOf[openImmediately]
+    inline def OpenImmediately: openImmediately = "openImmediately".asInstanceOf[openImmediately]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -1915,11 +1728,9 @@ object Realm {
   trait OpenRealmTimeOutBehavior extends StObject
   object OpenRealmTimeOutBehavior {
     
-    @scala.inline
-    def OpenLocalRealm: openLocalRealm = "openLocalRealm".asInstanceOf[openLocalRealm]
+    inline def OpenLocalRealm: openLocalRealm = "openLocalRealm".asInstanceOf[openLocalRealm]
     
-    @scala.inline
-    def ThrowException: throwException = "throwException".asInstanceOf[throwException]
+    inline def ThrowException: throwException = "throwException".asInstanceOf[throwException]
   }
   
   /* Inlined parent std.Partial<realm.Realm.Configuration> */
@@ -1951,89 +1762,62 @@ object Realm {
   }
   object PartialConfiguration {
     
-    @scala.inline
-    def apply(): PartialConfiguration = {
+    inline def apply(): PartialConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialConfiguration]
     }
     
-    @scala.inline
-    implicit class PartialConfigurationMutableBuilder[Self <: PartialConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: PartialConfiguration](x: Self) {
       
-      @scala.inline
-      def setDeleteRealmIfMigrationNeeded(value: Boolean): Self = StObject.set(x, "deleteRealmIfMigrationNeeded", value.asInstanceOf[js.Any])
+      inline def setDeleteRealmIfMigrationNeeded(value: Boolean): Self = StObject.set(x, "deleteRealmIfMigrationNeeded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleteRealmIfMigrationNeededUndefined: Self = StObject.set(x, "deleteRealmIfMigrationNeeded", js.undefined)
+      inline def setDeleteRealmIfMigrationNeededUndefined: Self = StObject.set(x, "deleteRealmIfMigrationNeeded", js.undefined)
       
-      @scala.inline
-      def setDisableFormatUpgrade(value: Boolean): Self = StObject.set(x, "disableFormatUpgrade", value.asInstanceOf[js.Any])
+      inline def setDisableFormatUpgrade(value: Boolean): Self = StObject.set(x, "disableFormatUpgrade", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableFormatUpgradeUndefined: Self = StObject.set(x, "disableFormatUpgrade", js.undefined)
+      inline def setDisableFormatUpgradeUndefined: Self = StObject.set(x, "disableFormatUpgrade", js.undefined)
       
-      @scala.inline
-      def setEncryptionKey(value: ArrayBuffer | ArrayBufferView | Int8Array): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
+      inline def setEncryptionKey(value: ArrayBuffer | ArrayBufferView | Int8Array): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionKeyUndefined: Self = StObject.set(x, "encryptionKey", js.undefined)
+      inline def setEncryptionKeyUndefined: Self = StObject.set(x, "encryptionKey", js.undefined)
       
-      @scala.inline
-      def setFifoFilesFallbackPath(value: String): Self = StObject.set(x, "fifoFilesFallbackPath", value.asInstanceOf[js.Any])
+      inline def setFifoFilesFallbackPath(value: String): Self = StObject.set(x, "fifoFilesFallbackPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFifoFilesFallbackPathUndefined: Self = StObject.set(x, "fifoFilesFallbackPath", js.undefined)
+      inline def setFifoFilesFallbackPathUndefined: Self = StObject.set(x, "fifoFilesFallbackPath", js.undefined)
       
-      @scala.inline
-      def setInMemory(value: Boolean): Self = StObject.set(x, "inMemory", value.asInstanceOf[js.Any])
+      inline def setInMemory(value: Boolean): Self = StObject.set(x, "inMemory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInMemoryUndefined: Self = StObject.set(x, "inMemory", js.undefined)
+      inline def setInMemoryUndefined: Self = StObject.set(x, "inMemory", js.undefined)
       
-      @scala.inline
-      def setMigration(value: (/* oldRealm */ Realm, /* newRealm */ Realm) => Unit): Self = StObject.set(x, "migration", js.Any.fromFunction2(value))
+      inline def setMigration(value: (/* oldRealm */ Realm, /* newRealm */ Realm) => Unit): Self = StObject.set(x, "migration", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMigrationUndefined: Self = StObject.set(x, "migration", js.undefined)
+      inline def setMigrationUndefined: Self = StObject.set(x, "migration", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+      inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+      inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
-      @scala.inline
-      def setSchema(value: js.Array[ObjectClass | ObjectSchema]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: js.Array[ObjectClass | ObjectSchema]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+      inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
       
-      @scala.inline
-      def setSchemaVarargs(value: (ObjectClass | ObjectSchema)*): Self = StObject.set(x, "schema", js.Array(value :_*))
+      inline def setSchemaVarargs(value: (ObjectClass | ObjectSchema)*): Self = StObject.set(x, "schema", js.Array(value :_*))
       
-      @scala.inline
-      def setSchemaVersion(value: Double): Self = StObject.set(x, "schemaVersion", value.asInstanceOf[js.Any])
+      inline def setSchemaVersion(value: Double): Self = StObject.set(x, "schemaVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaVersionUndefined: Self = StObject.set(x, "schemaVersion", js.undefined)
+      inline def setSchemaVersionUndefined: Self = StObject.set(x, "schemaVersion", js.undefined)
       
-      @scala.inline
-      def setShouldCompactOnLaunch(value: (/* totalBytes */ Double, /* usedBytes */ Double) => Boolean): Self = StObject.set(x, "shouldCompactOnLaunch", js.Any.fromFunction2(value))
+      inline def setShouldCompactOnLaunch(value: (/* totalBytes */ Double, /* usedBytes */ Double) => Boolean): Self = StObject.set(x, "shouldCompactOnLaunch", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setShouldCompactOnLaunchUndefined: Self = StObject.set(x, "shouldCompactOnLaunch", js.undefined)
+      inline def setShouldCompactOnLaunchUndefined: Self = StObject.set(x, "shouldCompactOnLaunch", js.undefined)
       
-      @scala.inline
-      def setSync(value: SyncConfiguration): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+      inline def setSync(value: SyncConfiguration): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
+      inline def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
     }
   }
   
@@ -2044,11 +1828,9 @@ object Realm {
   trait ProgressDirection extends StObject
   object ProgressDirection {
     
-    @scala.inline
-    def download: typings.realm.realmStrings.download = "download".asInstanceOf[typings.realm.realmStrings.download]
+    inline def download: typings.realm.realmStrings.download = "download".asInstanceOf[typings.realm.realmStrings.download]
     
-    @scala.inline
-    def upload: typings.realm.realmStrings.upload = "upload".asInstanceOf[typings.realm.realmStrings.upload]
+    inline def upload: typings.realm.realmStrings.upload = "upload".asInstanceOf[typings.realm.realmStrings.upload]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -2058,11 +1840,9 @@ object Realm {
   trait ProgressMode extends StObject
   object ProgressMode {
     
-    @scala.inline
-    def forCurrentlyOutstandingWork: typings.realm.realmStrings.forCurrentlyOutstandingWork = "forCurrentlyOutstandingWork".asInstanceOf[typings.realm.realmStrings.forCurrentlyOutstandingWork]
+    inline def forCurrentlyOutstandingWork: typings.realm.realmStrings.forCurrentlyOutstandingWork = "forCurrentlyOutstandingWork".asInstanceOf[typings.realm.realmStrings.forCurrentlyOutstandingWork]
     
-    @scala.inline
-    def reportIndefinitely: typings.realm.realmStrings.reportIndefinitely = "reportIndefinitely".asInstanceOf[typings.realm.realmStrings.reportIndefinitely]
+    inline def reportIndefinitely: typings.realm.realmStrings.reportIndefinitely = "reportIndefinitely".asInstanceOf[typings.realm.realmStrings.reportIndefinitely]
   }
   
   type ProgressNotificationCallback = js.Function2[/* transferred */ Double, /* transferable */ Double, Unit]
@@ -2243,56 +2023,40 @@ object Realm {
       }
       object RequestOptions {
         
-        @scala.inline
-        def apply(): RequestOptions = {
+        inline def apply(): RequestOptions = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[RequestOptions]
         }
         
-        @scala.inline
-        implicit class RequestOptionsMutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
+        extension [Self <: RequestOptions](x: Self) {
           
-          @scala.inline
-          def setAuthUrl(value: String): Self = StObject.set(x, "authUrl", value.asInstanceOf[js.Any])
+          inline def setAuthUrl(value: String): Self = StObject.set(x, "authUrl", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAuthUrlUndefined: Self = StObject.set(x, "authUrl", js.undefined)
+          inline def setAuthUrlUndefined: Self = StObject.set(x, "authUrl", js.undefined)
           
-          @scala.inline
-          def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+          inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+          inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
           
-          @scala.inline
-          def setCookies(value: StringDictionary[String]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
+          inline def setCookies(value: StringDictionary[String]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCookiesUndefined: Self = StObject.set(x, "cookies", js.undefined)
+          inline def setCookiesUndefined: Self = StObject.set(x, "cookies", js.undefined)
           
-          @scala.inline
-          def setEncodeBodyAsJSON(value: Boolean): Self = StObject.set(x, "encodeBodyAsJSON", value.asInstanceOf[js.Any])
+          inline def setEncodeBodyAsJSON(value: Boolean): Self = StObject.set(x, "encodeBodyAsJSON", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setEncodeBodyAsJSONUndefined: Self = StObject.set(x, "encodeBodyAsJSON", js.undefined)
+          inline def setEncodeBodyAsJSONUndefined: Self = StObject.set(x, "encodeBodyAsJSON", js.undefined)
           
-          @scala.inline
-          def setFollowRedirects(value: Boolean): Self = StObject.set(x, "followRedirects", value.asInstanceOf[js.Any])
+          inline def setFollowRedirects(value: Boolean): Self = StObject.set(x, "followRedirects", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setFollowRedirectsUndefined: Self = StObject.set(x, "followRedirects", js.undefined)
+          inline def setFollowRedirectsUndefined: Self = StObject.set(x, "followRedirects", js.undefined)
           
-          @scala.inline
-          def setForm(value: Boolean): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+          inline def setForm(value: Boolean): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
+          inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
           
-          @scala.inline
-          def setHeaders(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+          inline def setHeaders(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+          inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
         }
       }
       
@@ -2328,8 +2092,7 @@ object Realm {
       }
       object Response {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           body: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Binary */ js.Any,
           contentLength: Double,
           headers: StringDictionary[js.Array[String]],
@@ -2340,25 +2103,19 @@ object Realm {
           __obj.asInstanceOf[Response]
         }
         
-        @scala.inline
-        implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
+        extension [Self <: Response](x: Self) {
           
-          @scala.inline
-          def setBody(
+          inline def setBody(
             value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Binary */ js.Any
           ): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setContentLength(value: Double): Self = StObject.set(x, "contentLength", value.asInstanceOf[js.Any])
+          inline def setContentLength(value: Double): Self = StObject.set(x, "contentLength", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setHeaders(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+          inline def setHeaders(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+          inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+          inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
         }
       }
     }
@@ -2378,8 +2135,7 @@ object Realm {
     }
     object MongoDB {
       
-      @scala.inline
-      def apply(db: String => MongoDBDatabase): MongoDB = {
+      inline def apply(db: String => MongoDBDatabase): MongoDB = {
         val __obj = js.Dynamic.literal(db = js.Any.fromFunction1(db))
         __obj.asInstanceOf[MongoDB]
       }
@@ -2419,8 +2175,7 @@ object Realm {
       }
       object BaseChangeEvent {
         
-        @scala.inline
-        def apply[T /* <: OperationType */](
+        inline def apply[T /* <: OperationType */](
           _id: ChangeEventId,
           clusterTime: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any,
           operationType: T
@@ -2429,33 +2184,25 @@ object Realm {
           __obj.asInstanceOf[BaseChangeEvent[T]]
         }
         
-        @scala.inline
-        implicit class BaseChangeEventMutableBuilder[Self <: BaseChangeEvent[?], T /* <: OperationType */] (val x: Self & BaseChangeEvent[T]) extends AnyVal {
+        extension [Self <: BaseChangeEvent[?], T /* <: OperationType */](x: Self & BaseChangeEvent[T]) {
           
-          @scala.inline
-          def setClusterTime(
+          inline def setClusterTime(
             value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any
           ): Self = StObject.set(x, "clusterTime", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLsid(value: js.Object): Self = StObject.set(x, "lsid", value.asInstanceOf[js.Any])
+          inline def setLsid(value: js.Object): Self = StObject.set(x, "lsid", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLsidUndefined: Self = StObject.set(x, "lsid", js.undefined)
+          inline def setLsidUndefined: Self = StObject.set(x, "lsid", js.undefined)
           
-          @scala.inline
-          def setOperationType(value: T): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
+          inline def setOperationType(value: T): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTxnNumber(
+          inline def setTxnNumber(
             value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any
           ): Self = StObject.set(x, "txnNumber", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTxnNumberUndefined: Self = StObject.set(x, "txnNumber", js.undefined)
+          inline def setTxnNumberUndefined: Self = StObject.set(x, "txnNumber", js.undefined)
           
-          @scala.inline
-          def set_id(value: ChangeEventId): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+          inline def set_id(value: ChangeEventId): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
         }
       }
       
@@ -2493,20 +2240,16 @@ object Realm {
       }
       object CountOptions {
         
-        @scala.inline
-        def apply(): CountOptions = {
+        inline def apply(): CountOptions = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[CountOptions]
         }
         
-        @scala.inline
-        implicit class CountOptionsMutableBuilder[Self <: CountOptions] (val x: Self) extends AnyVal {
+        extension [Self <: CountOptions](x: Self) {
           
-          @scala.inline
-          def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+          inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+          inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
         }
       }
       
@@ -2528,8 +2271,7 @@ object Realm {
       }
       object DeleteEvent {
         
-        @scala.inline
-        def apply[T /* <: Document[js.Any] */](
+        inline def apply[T /* <: Document[js.Any] */](
           _id: ChangeEventId,
           clusterTime: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any,
           documentKey: DocumentKey[
@@ -2541,18 +2283,15 @@ object Realm {
           __obj.asInstanceOf[DeleteEvent[T]]
         }
         
-        @scala.inline
-        implicit class DeleteEventMutableBuilder[Self <: DeleteEvent[?], T /* <: Document[js.Any] */] (val x: Self & DeleteEvent[T]) extends AnyVal {
+        extension [Self <: DeleteEvent[?], T /* <: Document[js.Any] */](x: Self & DeleteEvent[T]) {
           
-          @scala.inline
-          def setDocumentKey(
+          inline def setDocumentKey(
             value: DocumentKey[
                       /* import warning: importer.ImportType#apply Failed type conversion: T['_id'] */ js.Any
                     ]
           ): Self = StObject.set(x, "documentKey", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNs(value: DocumentNamespace): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
+          inline def setNs(value: DocumentNamespace): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
         }
       }
       
@@ -2568,17 +2307,14 @@ object Realm {
       }
       object DeleteResult {
         
-        @scala.inline
-        def apply(deletedCount: Double): DeleteResult = {
+        inline def apply(deletedCount: Double): DeleteResult = {
           val __obj = js.Dynamic.literal(deletedCount = deletedCount.asInstanceOf[js.Any])
           __obj.asInstanceOf[DeleteResult]
         }
         
-        @scala.inline
-        implicit class DeleteResultMutableBuilder[Self <: DeleteResult] (val x: Self) extends AnyVal {
+        extension [Self <: DeleteResult](x: Self) {
           
-          @scala.inline
-          def setDeletedCount(value: Double): Self = StObject.set(x, "deletedCount", value.asInstanceOf[js.Any])
+          inline def setDeletedCount(value: Double): Self = StObject.set(x, "deletedCount", value.asInstanceOf[js.Any])
         }
       }
       
@@ -2594,17 +2330,14 @@ object Realm {
       }
       object Document {
         
-        @scala.inline
-        def apply[IdType](_id: IdType): Document[IdType] = {
+        inline def apply[IdType](_id: IdType): Document[IdType] = {
           val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any])
           __obj.asInstanceOf[Document[IdType]]
         }
         
-        @scala.inline
-        implicit class DocumentMutableBuilder[Self <: Document[?], IdType] (val x: Self & Document[IdType]) extends AnyVal {
+        extension [Self <: Document[?], IdType](x: Self & Document[IdType]) {
           
-          @scala.inline
-          def set_id(value: IdType): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+          inline def set_id(value: IdType): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
         }
       }
       
@@ -2627,20 +2360,16 @@ object Realm {
       }
       object DocumentNamespace {
         
-        @scala.inline
-        def apply(coll: String, db: String): DocumentNamespace = {
+        inline def apply(coll: String, db: String): DocumentNamespace = {
           val __obj = js.Dynamic.literal(coll = coll.asInstanceOf[js.Any], db = db.asInstanceOf[js.Any])
           __obj.asInstanceOf[DocumentNamespace]
         }
         
-        @scala.inline
-        implicit class DocumentNamespaceMutableBuilder[Self <: DocumentNamespace] (val x: Self) extends AnyVal {
+        extension [Self <: DocumentNamespace](x: Self) {
           
-          @scala.inline
-          def setColl(value: String): Self = StObject.set(x, "coll", value.asInstanceOf[js.Any])
+          inline def setColl(value: String): Self = StObject.set(x, "coll", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDb(value: String): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
+          inline def setDb(value: String): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
         }
       }
       
@@ -2657,8 +2386,7 @@ object Realm {
       }
       object DropDatabaseEvent {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           _id: ChangeEventId,
           clusterTime: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any,
           ns: OmitDocumentNamespacecoll
@@ -2667,11 +2395,9 @@ object Realm {
           __obj.asInstanceOf[DropDatabaseEvent]
         }
         
-        @scala.inline
-        implicit class DropDatabaseEventMutableBuilder[Self <: DropDatabaseEvent] (val x: Self) extends AnyVal {
+        extension [Self <: DropDatabaseEvent](x: Self) {
           
-          @scala.inline
-          def setNs(value: OmitDocumentNamespacecoll): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
+          inline def setNs(value: OmitDocumentNamespacecoll): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
         }
       }
       
@@ -2688,8 +2414,7 @@ object Realm {
       }
       object DropEvent {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           _id: ChangeEventId,
           clusterTime: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any,
           ns: DocumentNamespace
@@ -2698,11 +2423,9 @@ object Realm {
           __obj.asInstanceOf[DropEvent]
         }
         
-        @scala.inline
-        implicit class DropEventMutableBuilder[Self <: DropEvent] (val x: Self) extends AnyVal {
+        extension [Self <: DropEvent](x: Self) {
           
-          @scala.inline
-          def setNs(value: DocumentNamespace): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
+          inline def setNs(value: DocumentNamespace): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
         }
       }
       
@@ -2734,26 +2457,20 @@ object Realm {
       }
       object FindOneAndModifyOptions {
         
-        @scala.inline
-        def apply(): FindOneAndModifyOptions = {
+        inline def apply(): FindOneAndModifyOptions = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[FindOneAndModifyOptions]
         }
         
-        @scala.inline
-        implicit class FindOneAndModifyOptionsMutableBuilder[Self <: FindOneAndModifyOptions] (val x: Self) extends AnyVal {
+        extension [Self <: FindOneAndModifyOptions](x: Self) {
           
-          @scala.inline
-          def setReturnNewDocument(value: Boolean): Self = StObject.set(x, "returnNewDocument", value.asInstanceOf[js.Any])
+          inline def setReturnNewDocument(value: Boolean): Self = StObject.set(x, "returnNewDocument", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setReturnNewDocumentUndefined: Self = StObject.set(x, "returnNewDocument", js.undefined)
+          inline def setReturnNewDocumentUndefined: Self = StObject.set(x, "returnNewDocument", js.undefined)
           
-          @scala.inline
-          def setUpsert(value: Boolean): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
+          inline def setUpsert(value: Boolean): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setUpsertUndefined: Self = StObject.set(x, "upsert", js.undefined)
+          inline def setUpsertUndefined: Self = StObject.set(x, "upsert", js.undefined)
         }
       }
       
@@ -2775,26 +2492,20 @@ object Realm {
       }
       object FindOneOptions {
         
-        @scala.inline
-        def apply(): FindOneOptions = {
+        inline def apply(): FindOneOptions = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[FindOneOptions]
         }
         
-        @scala.inline
-        implicit class FindOneOptionsMutableBuilder[Self <: FindOneOptions] (val x: Self) extends AnyVal {
+        extension [Self <: FindOneOptions](x: Self) {
           
-          @scala.inline
-          def setProjection(value: js.Object): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+          inline def setProjection(value: js.Object): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+          inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
           
-          @scala.inline
-          def setSort(value: js.Object): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+          inline def setSort(value: js.Object): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+          inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
         }
       }
       
@@ -2812,20 +2523,16 @@ object Realm {
       }
       object FindOptions {
         
-        @scala.inline
-        def apply(): FindOptions = {
+        inline def apply(): FindOptions = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[FindOptions]
         }
         
-        @scala.inline
-        implicit class FindOptionsMutableBuilder[Self <: FindOptions] (val x: Self) extends AnyVal {
+        extension [Self <: FindOptions](x: Self) {
           
-          @scala.inline
-          def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+          inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+          inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
         }
       }
       
@@ -2850,8 +2557,7 @@ object Realm {
       }
       object InsertEvent {
         
-        @scala.inline
-        def apply[T /* <: Document[js.Any] */](
+        inline def apply[T /* <: Document[js.Any] */](
           _id: ChangeEventId,
           clusterTime: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any,
           documentKey: DocumentKey[
@@ -2864,21 +2570,17 @@ object Realm {
           __obj.asInstanceOf[InsertEvent[T]]
         }
         
-        @scala.inline
-        implicit class InsertEventMutableBuilder[Self <: InsertEvent[?], T /* <: Document[js.Any] */] (val x: Self & InsertEvent[T]) extends AnyVal {
+        extension [Self <: InsertEvent[?], T /* <: Document[js.Any] */](x: Self & InsertEvent[T]) {
           
-          @scala.inline
-          def setDocumentKey(
+          inline def setDocumentKey(
             value: DocumentKey[
                       /* import warning: importer.ImportType#apply Failed type conversion: T['_id'] */ js.Any
                     ]
           ): Self = StObject.set(x, "documentKey", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setFullDocument(value: T): Self = StObject.set(x, "fullDocument", value.asInstanceOf[js.Any])
+          inline def setFullDocument(value: T): Self = StObject.set(x, "fullDocument", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNs(value: DocumentNamespace): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
+          inline def setNs(value: DocumentNamespace): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
         }
       }
       
@@ -2894,20 +2596,16 @@ object Realm {
       }
       object InsertManyResult {
         
-        @scala.inline
-        def apply[IdType](insertedIds: js.Array[IdType]): InsertManyResult[IdType] = {
+        inline def apply[IdType](insertedIds: js.Array[IdType]): InsertManyResult[IdType] = {
           val __obj = js.Dynamic.literal(insertedIds = insertedIds.asInstanceOf[js.Any])
           __obj.asInstanceOf[InsertManyResult[IdType]]
         }
         
-        @scala.inline
-        implicit class InsertManyResultMutableBuilder[Self <: InsertManyResult[?], IdType] (val x: Self & InsertManyResult[IdType]) extends AnyVal {
+        extension [Self <: InsertManyResult[?], IdType](x: Self & InsertManyResult[IdType]) {
           
-          @scala.inline
-          def setInsertedIds(value: js.Array[IdType]): Self = StObject.set(x, "insertedIds", value.asInstanceOf[js.Any])
+          inline def setInsertedIds(value: js.Array[IdType]): Self = StObject.set(x, "insertedIds", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setInsertedIdsVarargs(value: IdType*): Self = StObject.set(x, "insertedIds", js.Array(value :_*))
+          inline def setInsertedIdsVarargs(value: IdType*): Self = StObject.set(x, "insertedIds", js.Array(value :_*))
         }
       }
       
@@ -2923,17 +2621,14 @@ object Realm {
       }
       object InsertOneResult {
         
-        @scala.inline
-        def apply[IdType](insertedId: IdType): InsertOneResult[IdType] = {
+        inline def apply[IdType](insertedId: IdType): InsertOneResult[IdType] = {
           val __obj = js.Dynamic.literal(insertedId = insertedId.asInstanceOf[js.Any])
           __obj.asInstanceOf[InsertOneResult[IdType]]
         }
         
-        @scala.inline
-        implicit class InsertOneResultMutableBuilder[Self <: InsertOneResult[?], IdType] (val x: Self & InsertOneResult[IdType]) extends AnyVal {
+        extension [Self <: InsertOneResult[?], IdType](x: Self & InsertOneResult[IdType]) {
           
-          @scala.inline
-          def setInsertedId(value: IdType): Self = StObject.set(x, "insertedId", value.asInstanceOf[js.Any])
+          inline def setInsertedId(value: IdType): Self = StObject.set(x, "insertedId", value.asInstanceOf[js.Any])
         }
       }
       
@@ -3140,11 +2835,9 @@ object Realm {
         def watch(options: Ids[T]): AsyncGenerator[ChangeEvent[T], js.Any, js.Any] = js.native
       }
       
-      @scala.inline
-      implicit class MongoDBMutableBuilder[Self <: MongoDB] (val x: Self) extends AnyVal {
+      extension [Self <: MongoDB](x: Self) {
         
-        @scala.inline
-        def setDb(value: String => MongoDBDatabase): Self = StObject.set(x, "db", js.Any.fromFunction1(value))
+        inline def setDb(value: String => MongoDBDatabase): Self = StObject.set(x, "db", js.Any.fromFunction1(value))
       }
       
       /**
@@ -3168,29 +2861,21 @@ object Realm {
       trait OperationType extends StObject
       object OperationType {
         
-        @scala.inline
-        def delete: typings.realm.realmStrings.delete = "delete".asInstanceOf[typings.realm.realmStrings.delete]
+        inline def delete: typings.realm.realmStrings.delete = "delete".asInstanceOf[typings.realm.realmStrings.delete]
         
-        @scala.inline
-        def drop: typings.realm.realmStrings.drop = "drop".asInstanceOf[typings.realm.realmStrings.drop]
+        inline def drop: typings.realm.realmStrings.drop = "drop".asInstanceOf[typings.realm.realmStrings.drop]
         
-        @scala.inline
-        def dropDatabase: typings.realm.realmStrings.dropDatabase = "dropDatabase".asInstanceOf[typings.realm.realmStrings.dropDatabase]
+        inline def dropDatabase: typings.realm.realmStrings.dropDatabase = "dropDatabase".asInstanceOf[typings.realm.realmStrings.dropDatabase]
         
-        @scala.inline
-        def insert: typings.realm.realmStrings.insert = "insert".asInstanceOf[typings.realm.realmStrings.insert]
+        inline def insert: typings.realm.realmStrings.insert = "insert".asInstanceOf[typings.realm.realmStrings.insert]
         
-        @scala.inline
-        def invalidate: typings.realm.realmStrings.invalidate = "invalidate".asInstanceOf[typings.realm.realmStrings.invalidate]
+        inline def invalidate: typings.realm.realmStrings.invalidate = "invalidate".asInstanceOf[typings.realm.realmStrings.invalidate]
         
-        @scala.inline
-        def rename: typings.realm.realmStrings.rename = "rename".asInstanceOf[typings.realm.realmStrings.rename]
+        inline def rename: typings.realm.realmStrings.rename = "rename".asInstanceOf[typings.realm.realmStrings.rename]
         
-        @scala.inline
-        def replace: typings.realm.realmStrings.replace = "replace".asInstanceOf[typings.realm.realmStrings.replace]
+        inline def replace: typings.realm.realmStrings.replace = "replace".asInstanceOf[typings.realm.realmStrings.replace]
         
-        @scala.inline
-        def update: typings.realm.realmStrings.update = "update".asInstanceOf[typings.realm.realmStrings.update]
+        inline def update: typings.realm.realmStrings.update = "update".asInstanceOf[typings.realm.realmStrings.update]
       }
       
       /**
@@ -3209,8 +2894,7 @@ object Realm {
       }
       object RenameEvent {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           _id: ChangeEventId,
           clusterTime: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any,
           ns: DocumentNamespace,
@@ -3220,14 +2904,11 @@ object Realm {
           __obj.asInstanceOf[RenameEvent]
         }
         
-        @scala.inline
-        implicit class RenameEventMutableBuilder[Self <: RenameEvent] (val x: Self) extends AnyVal {
+        extension [Self <: RenameEvent](x: Self) {
           
-          @scala.inline
-          def setNs(value: DocumentNamespace): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
+          inline def setNs(value: DocumentNamespace): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTo(value: DocumentNamespace): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+          inline def setTo(value: DocumentNamespace): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
         }
       }
       
@@ -3252,8 +2933,7 @@ object Realm {
       }
       object ReplaceEvent {
         
-        @scala.inline
-        def apply[T /* <: Document[js.Any] */](
+        inline def apply[T /* <: Document[js.Any] */](
           _id: ChangeEventId,
           clusterTime: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any,
           documentKey: DocumentKey[
@@ -3266,21 +2946,17 @@ object Realm {
           __obj.asInstanceOf[ReplaceEvent[T]]
         }
         
-        @scala.inline
-        implicit class ReplaceEventMutableBuilder[Self <: ReplaceEvent[?], T /* <: Document[js.Any] */] (val x: Self & ReplaceEvent[T]) extends AnyVal {
+        extension [Self <: ReplaceEvent[?], T /* <: Document[js.Any] */](x: Self & ReplaceEvent[T]) {
           
-          @scala.inline
-          def setDocumentKey(
+          inline def setDocumentKey(
             value: DocumentKey[
                       /* import warning: importer.ImportType#apply Failed type conversion: T['_id'] */ js.Any
                     ]
           ): Self = StObject.set(x, "documentKey", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setFullDocument(value: T): Self = StObject.set(x, "fullDocument", value.asInstanceOf[js.Any])
+          inline def setFullDocument(value: T): Self = StObject.set(x, "fullDocument", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNs(value: DocumentNamespace): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
+          inline def setNs(value: DocumentNamespace): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
         }
       }
       
@@ -3302,23 +2978,18 @@ object Realm {
       }
       object UpdateDescription {
         
-        @scala.inline
-        def apply(removedFields: js.Array[String], updatedFields: Record[String, js.Any]): UpdateDescription = {
+        inline def apply(removedFields: js.Array[String], updatedFields: Record[String, js.Any]): UpdateDescription = {
           val __obj = js.Dynamic.literal(removedFields = removedFields.asInstanceOf[js.Any], updatedFields = updatedFields.asInstanceOf[js.Any])
           __obj.asInstanceOf[UpdateDescription]
         }
         
-        @scala.inline
-        implicit class UpdateDescriptionMutableBuilder[Self <: UpdateDescription] (val x: Self) extends AnyVal {
+        extension [Self <: UpdateDescription](x: Self) {
           
-          @scala.inline
-          def setRemovedFields(value: js.Array[String]): Self = StObject.set(x, "removedFields", value.asInstanceOf[js.Any])
+          inline def setRemovedFields(value: js.Array[String]): Self = StObject.set(x, "removedFields", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRemovedFieldsVarargs(value: String*): Self = StObject.set(x, "removedFields", js.Array(value :_*))
+          inline def setRemovedFieldsVarargs(value: String*): Self = StObject.set(x, "removedFields", js.Array(value :_*))
           
-          @scala.inline
-          def setUpdatedFields(value: Record[String, js.Any]): Self = StObject.set(x, "updatedFields", value.asInstanceOf[js.Any])
+          inline def setUpdatedFields(value: Record[String, js.Any]): Self = StObject.set(x, "updatedFields", value.asInstanceOf[js.Any])
         }
       }
       
@@ -3348,8 +3019,7 @@ object Realm {
       }
       object UpdateEvent {
         
-        @scala.inline
-        def apply[T /* <: Document[js.Any] */](
+        inline def apply[T /* <: Document[js.Any] */](
           _id: ChangeEventId,
           clusterTime: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any,
           documentKey: DocumentKey[
@@ -3362,27 +3032,21 @@ object Realm {
           __obj.asInstanceOf[UpdateEvent[T]]
         }
         
-        @scala.inline
-        implicit class UpdateEventMutableBuilder[Self <: UpdateEvent[?], T /* <: Document[js.Any] */] (val x: Self & UpdateEvent[T]) extends AnyVal {
+        extension [Self <: UpdateEvent[?], T /* <: Document[js.Any] */](x: Self & UpdateEvent[T]) {
           
-          @scala.inline
-          def setDocumentKey(
+          inline def setDocumentKey(
             value: DocumentKey[
                       /* import warning: importer.ImportType#apply Failed type conversion: T['_id'] */ js.Any
                     ]
           ): Self = StObject.set(x, "documentKey", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setFullDocument(value: T): Self = StObject.set(x, "fullDocument", value.asInstanceOf[js.Any])
+          inline def setFullDocument(value: T): Self = StObject.set(x, "fullDocument", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setFullDocumentUndefined: Self = StObject.set(x, "fullDocument", js.undefined)
+          inline def setFullDocumentUndefined: Self = StObject.set(x, "fullDocument", js.undefined)
           
-          @scala.inline
-          def setNs(value: DocumentNamespace): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
+          inline def setNs(value: DocumentNamespace): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setUpdateDescription(value: UpdateDescription): Self = StObject.set(x, "updateDescription", value.asInstanceOf[js.Any])
+          inline def setUpdateDescription(value: UpdateDescription): Self = StObject.set(x, "updateDescription", value.asInstanceOf[js.Any])
         }
       }
       
@@ -3398,20 +3062,16 @@ object Realm {
       }
       object UpdateOptions {
         
-        @scala.inline
-        def apply(): UpdateOptions = {
+        inline def apply(): UpdateOptions = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[UpdateOptions]
         }
         
-        @scala.inline
-        implicit class UpdateOptionsMutableBuilder[Self <: UpdateOptions] (val x: Self) extends AnyVal {
+        extension [Self <: UpdateOptions](x: Self) {
           
-          @scala.inline
-          def setUpsert(value: Boolean): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
+          inline def setUpsert(value: Boolean): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setUpsertUndefined: Self = StObject.set(x, "upsert", js.undefined)
+          inline def setUpsertUndefined: Self = StObject.set(x, "upsert", js.undefined)
         }
       }
       
@@ -3439,34 +3099,27 @@ object Realm {
       }
       object UpdateResult {
         
-        @scala.inline
-        def apply[IdType](matchedCount: Double, modifiedCount: Double): UpdateResult[IdType] = {
+        inline def apply[IdType](matchedCount: Double, modifiedCount: Double): UpdateResult[IdType] = {
           val __obj = js.Dynamic.literal(matchedCount = matchedCount.asInstanceOf[js.Any], modifiedCount = modifiedCount.asInstanceOf[js.Any])
           __obj.asInstanceOf[UpdateResult[IdType]]
         }
         
-        @scala.inline
-        implicit class UpdateResultMutableBuilder[Self <: UpdateResult[?], IdType] (val x: Self & UpdateResult[IdType]) extends AnyVal {
+        extension [Self <: UpdateResult[?], IdType](x: Self & UpdateResult[IdType]) {
           
-          @scala.inline
-          def setMatchedCount(value: Double): Self = StObject.set(x, "matchedCount", value.asInstanceOf[js.Any])
+          inline def setMatchedCount(value: Double): Self = StObject.set(x, "matchedCount", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setModifiedCount(value: Double): Self = StObject.set(x, "modifiedCount", value.asInstanceOf[js.Any])
+          inline def setModifiedCount(value: Double): Self = StObject.set(x, "modifiedCount", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setUpsertedId(value: IdType): Self = StObject.set(x, "upsertedId", value.asInstanceOf[js.Any])
+          inline def setUpsertedId(value: IdType): Self = StObject.set(x, "upsertedId", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setUpsertedIdUndefined: Self = StObject.set(x, "upsertedId", js.undefined)
+          inline def setUpsertedIdUndefined: Self = StObject.set(x, "upsertedId", js.undefined)
         }
       }
       
       trait _ChangeEvent[T /* <: Document[js.Any] */] extends StObject
       object _ChangeEvent {
         
-        @scala.inline
-        def DeleteEvent[T /* <: Document[js.Any] */](
+        inline def DeleteEvent[T /* <: Document[js.Any] */](
           _id: ChangeEventId,
           clusterTime: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any,
           documentKey: DocumentKey[
@@ -3478,8 +3131,7 @@ object Realm {
           __obj.asInstanceOf[typings.realm.Realm.Services.MongoDB.DeleteEvent[T]]
         }
         
-        @scala.inline
-        def DropDatabaseEvent(
+        inline def DropDatabaseEvent(
           _id: ChangeEventId,
           clusterTime: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any,
           ns: OmitDocumentNamespacecoll
@@ -3488,8 +3140,7 @@ object Realm {
           __obj.asInstanceOf[typings.realm.Realm.Services.MongoDB.DropDatabaseEvent]
         }
         
-        @scala.inline
-        def DropEvent(
+        inline def DropEvent(
           _id: ChangeEventId,
           clusterTime: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any,
           ns: DocumentNamespace
@@ -3498,8 +3149,7 @@ object Realm {
           __obj.asInstanceOf[typings.realm.Realm.Services.MongoDB.DropEvent]
         }
         
-        @scala.inline
-        def InsertEvent[T /* <: Document[js.Any] */](
+        inline def InsertEvent[T /* <: Document[js.Any] */](
           _id: ChangeEventId,
           clusterTime: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any,
           documentKey: DocumentKey[
@@ -3512,8 +3162,7 @@ object Realm {
           __obj.asInstanceOf[typings.realm.Realm.Services.MongoDB.InsertEvent[T]]
         }
         
-        @scala.inline
-        def RenameEvent(
+        inline def RenameEvent(
           _id: ChangeEventId,
           clusterTime: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any,
           ns: DocumentNamespace,
@@ -3523,8 +3172,7 @@ object Realm {
           __obj.asInstanceOf[typings.realm.Realm.Services.MongoDB.RenameEvent]
         }
         
-        @scala.inline
-        def ReplaceEvent[T /* <: Document[js.Any] */](
+        inline def ReplaceEvent[T /* <: Document[js.Any] */](
           _id: ChangeEventId,
           clusterTime: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any,
           documentKey: DocumentKey[
@@ -3537,8 +3185,7 @@ object Realm {
           __obj.asInstanceOf[typings.realm.Realm.Services.MongoDB.ReplaceEvent[T]]
         }
         
-        @scala.inline
-        def UpdateEvent[T /* <: Document[js.Any] */](
+        inline def UpdateEvent[T /* <: Document[js.Any] */](
           _id: ChangeEventId,
           clusterTime: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any,
           documentKey: DocumentKey[
@@ -3568,17 +3215,14 @@ object Realm {
     }
     object MongoDBDatabase {
       
-      @scala.inline
-      def apply(collection: String => MongoDBCollection[js.Any]): MongoDBDatabase = {
+      inline def apply(collection: String => MongoDBCollection[js.Any]): MongoDBDatabase = {
         val __obj = js.Dynamic.literal(collection = js.Any.fromFunction1(collection))
         __obj.asInstanceOf[MongoDBDatabase]
       }
       
-      @scala.inline
-      implicit class MongoDBDatabaseMutableBuilder[Self <: MongoDBDatabase] (val x: Self) extends AnyVal {
+      extension [Self <: MongoDBDatabase](x: Self) {
         
-        @scala.inline
-        def setCollection(value: String => MongoDBCollection[js.Any]): Self = StObject.set(x, "collection", js.Any.fromFunction1(value))
+        inline def setCollection(value: String => MongoDBCollection[js.Any]): Self = StObject.set(x, "collection", js.Any.fromFunction1(value))
       }
     }
     
@@ -3601,20 +3245,16 @@ object Realm {
     }
     object Push {
       
-      @scala.inline
-      def apply(deregister: () => js.Promise[Unit], register: String => js.Promise[Unit]): Push = {
+      inline def apply(deregister: () => js.Promise[Unit], register: String => js.Promise[Unit]): Push = {
         val __obj = js.Dynamic.literal(deregister = js.Any.fromFunction0(deregister), register = js.Any.fromFunction1(register))
         __obj.asInstanceOf[Push]
       }
       
-      @scala.inline
-      implicit class PushMutableBuilder[Self <: Push] (val x: Self) extends AnyVal {
+      extension [Self <: Push](x: Self) {
         
-        @scala.inline
-        def setDeregister(value: () => js.Promise[Unit]): Self = StObject.set(x, "deregister", js.Any.fromFunction0(value))
+        inline def setDeregister(value: () => js.Promise[Unit]): Self = StObject.set(x, "deregister", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setRegister(value: String => js.Promise[Unit]): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
+        inline def setRegister(value: String => js.Promise[Unit]): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
       }
     }
   }
@@ -3627,14 +3267,11 @@ object Realm {
   trait SessionStopPolicy extends StObject
   object SessionStopPolicy {
     
-    @scala.inline
-    def AfterUpload: `after-upload` = "after-upload".asInstanceOf[`after-upload`]
+    inline def AfterUpload: `after-upload` = "after-upload".asInstanceOf[`after-upload`]
     
-    @scala.inline
-    def Immediately: immediately = "immediately".asInstanceOf[immediately]
+    inline def Immediately: immediately = "immediately".asInstanceOf[immediately]
     
-    @scala.inline
-    def Never: never = "never".asInstanceOf[never]
+    inline def Never: never = "never".asInstanceOf[never]
   }
   
   /**
@@ -3661,55 +3298,40 @@ object Realm {
   }
   object SyncConfiguration {
     
-    @scala.inline
-    def apply(user: User[DefaultFunctionsFactory, js.Any]): SyncConfiguration = {
+    inline def apply(user: User[DefaultFunctionsFactory, js.Any]): SyncConfiguration = {
       val __obj = js.Dynamic.literal(user = user.asInstanceOf[js.Any], partitionValue = null)
       __obj.asInstanceOf[SyncConfiguration]
     }
     
-    @scala.inline
-    implicit class SyncConfigurationMutableBuilder[Self <: SyncConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: SyncConfiguration](x: Self) {
       
-      @scala.inline
-      def setCustomHttpHeaders(value: StringDictionary[String]): Self = StObject.set(x, "customHttpHeaders", value.asInstanceOf[js.Any])
+      inline def setCustomHttpHeaders(value: StringDictionary[String]): Self = StObject.set(x, "customHttpHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomHttpHeadersUndefined: Self = StObject.set(x, "customHttpHeaders", js.undefined)
+      inline def setCustomHttpHeadersUndefined: Self = StObject.set(x, "customHttpHeaders", js.undefined)
       
-      @scala.inline
-      def setError(value: (/* session */ Session, /* error */ SyncError) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
+      inline def setError(value: (/* session */ Session, /* error */ SyncError) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setExistingRealmFileBehavior(value: OpenRealmBehaviorConfiguration): Self = StObject.set(x, "existingRealmFileBehavior", value.asInstanceOf[js.Any])
+      inline def setExistingRealmFileBehavior(value: OpenRealmBehaviorConfiguration): Self = StObject.set(x, "existingRealmFileBehavior", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExistingRealmFileBehaviorUndefined: Self = StObject.set(x, "existingRealmFileBehavior", js.undefined)
+      inline def setExistingRealmFileBehaviorUndefined: Self = StObject.set(x, "existingRealmFileBehavior", js.undefined)
       
-      @scala.inline
-      def setNewRealmFileBehavior(value: OpenRealmBehaviorConfiguration): Self = StObject.set(x, "newRealmFileBehavior", value.asInstanceOf[js.Any])
+      inline def setNewRealmFileBehavior(value: OpenRealmBehaviorConfiguration): Self = StObject.set(x, "newRealmFileBehavior", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewRealmFileBehaviorUndefined: Self = StObject.set(x, "newRealmFileBehavior", js.undefined)
+      inline def setNewRealmFileBehaviorUndefined: Self = StObject.set(x, "newRealmFileBehavior", js.undefined)
       
-      @scala.inline
-      def setPartitionValue(
+      inline def setPartitionValue(
         value: String | Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectId */ js.Any)
       ): Self = StObject.set(x, "partitionValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartitionValueNull: Self = StObject.set(x, "partitionValue", null)
+      inline def setPartitionValueNull: Self = StObject.set(x, "partitionValue", null)
       
-      @scala.inline
-      def setUser(value: User[DefaultFunctionsFactory, js.Any]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: User[DefaultFunctionsFactory, js.Any]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_sessionStopPolicy(value: SessionStopPolicy): Self = StObject.set(x, "_sessionStopPolicy", value.asInstanceOf[js.Any])
+      inline def set_sessionStopPolicy(value: SessionStopPolicy): Self = StObject.set(x, "_sessionStopPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_sessionStopPolicyUndefined: Self = StObject.set(x, "_sessionStopPolicy", js.undefined)
+      inline def set_sessionStopPolicyUndefined: Self = StObject.set(x, "_sessionStopPolicy", js.undefined)
     }
   }
   
@@ -3727,32 +3349,24 @@ object Realm {
   }
   object SyncError {
     
-    @scala.inline
-    def apply(code: Double, isFatal: Boolean, message: String, name: String): SyncError = {
+    inline def apply(code: Double, isFatal: Boolean, message: String, name: String): SyncError = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], isFatal = isFatal.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[SyncError]
     }
     
-    @scala.inline
-    implicit class SyncErrorMutableBuilder[Self <: SyncError] (val x: Self) extends AnyVal {
+    extension [Self <: SyncError](x: Self) {
       
-      @scala.inline
-      def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+      inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+      inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
       
-      @scala.inline
-      def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFatal(value: Boolean): Self = StObject.set(x, "isFatal", value.asInstanceOf[js.Any])
+      inline def setIsFatal(value: Boolean): Self = StObject.set(x, "isFatal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -3886,8 +3500,7 @@ object Realm {
   }
   object User {
     
-    @scala.inline
-    def apply[FunctionsFactoryType /* <: js.Object */, CustomDataType /* <: js.Object */](
+    inline def apply[FunctionsFactoryType /* <: js.Object */, CustomDataType /* <: js.Object */](
       apiKeys: ApiKeyAuth,
       callFunction: (String, /* repeated */ js.Any) => js.Promise[js.Any],
       customData: CustomDataType,
@@ -3908,74 +3521,51 @@ object Realm {
       __obj.asInstanceOf[User[FunctionsFactoryType, CustomDataType]]
     }
     
-    @scala.inline
-    implicit class UserMutableBuilder[Self <: User[?, ?], FunctionsFactoryType /* <: js.Object */, CustomDataType /* <: js.Object */] (val x: Self & (User[FunctionsFactoryType, CustomDataType])) extends AnyVal {
+    extension [Self <: User[?, ?], FunctionsFactoryType /* <: js.Object */, CustomDataType /* <: js.Object */](x: Self & (User[FunctionsFactoryType, CustomDataType])) {
       
-      @scala.inline
-      def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+      inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessTokenNull: Self = StObject.set(x, "accessToken", null)
+      inline def setAccessTokenNull: Self = StObject.set(x, "accessToken", null)
       
-      @scala.inline
-      def setApiKeys(value: ApiKeyAuth): Self = StObject.set(x, "apiKeys", value.asInstanceOf[js.Any])
+      inline def setApiKeys(value: ApiKeyAuth): Self = StObject.set(x, "apiKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallFunction(value: (String, /* repeated */ js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "callFunction", js.Any.fromFunction2(value))
+      inline def setCallFunction(value: (String, /* repeated */ js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "callFunction", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCustomData(value: CustomDataType): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+      inline def setCustomData(value: CustomDataType): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+      inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceIdNull: Self = StObject.set(x, "deviceId", null)
+      inline def setDeviceIdNull: Self = StObject.set(x, "deviceId", null)
       
-      @scala.inline
-      def setFunctions(value: FunctionsFactoryType & BaseFunctionsFactory): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
+      inline def setFunctions(value: FunctionsFactoryType & BaseFunctionsFactory): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentities(value: js.Array[UserIdentity]): Self = StObject.set(x, "identities", value.asInstanceOf[js.Any])
+      inline def setIdentities(value: js.Array[UserIdentity]): Self = StObject.set(x, "identities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentitiesVarargs(value: UserIdentity*): Self = StObject.set(x, "identities", js.Array(value :_*))
+      inline def setIdentitiesVarargs(value: UserIdentity*): Self = StObject.set(x, "identities", js.Array(value :_*))
       
-      @scala.inline
-      def setIsLoggedIn(value: Boolean): Self = StObject.set(x, "isLoggedIn", value.asInstanceOf[js.Any])
+      inline def setIsLoggedIn(value: Boolean): Self = StObject.set(x, "isLoggedIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkCredentials(value: Credentials[js.Object] => js.Promise[Unit]): Self = StObject.set(x, "linkCredentials", js.Any.fromFunction1(value))
+      inline def setLinkCredentials(value: Credentials[js.Object] => js.Promise[Unit]): Self = StObject.set(x, "linkCredentials", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLogOut(value: () => js.Promise[Unit]): Self = StObject.set(x, "logOut", js.Any.fromFunction0(value))
+      inline def setLogOut(value: () => js.Promise[Unit]): Self = StObject.set(x, "logOut", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMongoClient(value: String => MongoDB): Self = StObject.set(x, "mongoClient", js.Any.fromFunction1(value))
+      inline def setMongoClient(value: String => MongoDB): Self = StObject.set(x, "mongoClient", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setProfile(value: UserProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+      inline def setProfile(value: UserProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProviderType(value: String): Self = StObject.set(x, "providerType", value.asInstanceOf[js.Any])
+      inline def setProviderType(value: String): Self = StObject.set(x, "providerType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPush(value: String => Push): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+      inline def setPush(value: String => Push): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRefreshCustomData(value: () => js.Promise[CustomDataType]): Self = StObject.set(x, "refreshCustomData", js.Any.fromFunction0(value))
+      inline def setRefreshCustomData(value: () => js.Promise[CustomDataType]): Self = StObject.set(x, "refreshCustomData", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
+      inline def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefreshTokenNull: Self = StObject.set(x, "refreshToken", null)
+      inline def setRefreshTokenNull: Self = StObject.set(x, "refreshToken", null)
       
-      @scala.inline
-      def setState(value: UserState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: UserState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
@@ -3997,20 +3587,16 @@ object Realm {
   }
   object UserIdentity {
     
-    @scala.inline
-    def apply(providerType: String, userId: String): UserIdentity = {
+    inline def apply(providerType: String, userId: String): UserIdentity = {
       val __obj = js.Dynamic.literal(providerType = providerType.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserIdentity]
     }
     
-    @scala.inline
-    implicit class UserIdentityMutableBuilder[Self <: UserIdentity] (val x: Self) extends AnyVal {
+    extension [Self <: UserIdentity](x: Self) {
       
-      @scala.inline
-      def setProviderType(value: String): Self = StObject.set(x, "providerType", value.asInstanceOf[js.Any])
+      inline def setProviderType(value: String): Self = StObject.set(x, "providerType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+      inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -4076,72 +3662,51 @@ object Realm {
   }
   object UserProfile {
     
-    @scala.inline
-    def apply(`type`: UserType): UserProfile = {
+    inline def apply(`type`: UserType): UserProfile = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserProfile]
     }
     
-    @scala.inline
-    implicit class UserProfileMutableBuilder[Self <: UserProfile] (val x: Self) extends AnyVal {
+    extension [Self <: UserProfile](x: Self) {
       
-      @scala.inline
-      def setBirthday(value: String): Self = StObject.set(x, "birthday", value.asInstanceOf[js.Any])
+      inline def setBirthday(value: String): Self = StObject.set(x, "birthday", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBirthdayUndefined: Self = StObject.set(x, "birthday", js.undefined)
+      inline def setBirthdayUndefined: Self = StObject.set(x, "birthday", js.undefined)
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+      inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
       
-      @scala.inline
-      def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
+      inline def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstNameUndefined: Self = StObject.set(x, "firstName", js.undefined)
+      inline def setFirstNameUndefined: Self = StObject.set(x, "firstName", js.undefined)
       
-      @scala.inline
-      def setGender(value: String): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
+      inline def setGender(value: String): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenderUndefined: Self = StObject.set(x, "gender", js.undefined)
+      inline def setGenderUndefined: Self = StObject.set(x, "gender", js.undefined)
       
-      @scala.inline
-      def setLastName(value: String): Self = StObject.set(x, "lastName", value.asInstanceOf[js.Any])
+      inline def setLastName(value: String): Self = StObject.set(x, "lastName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastNameUndefined: Self = StObject.set(x, "lastName", js.undefined)
+      inline def setLastNameUndefined: Self = StObject.set(x, "lastName", js.undefined)
       
-      @scala.inline
-      def setMaxAge(value: String): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      inline def setMaxAge(value: String): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+      inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
       
-      @scala.inline
-      def setMinAge(value: String): Self = StObject.set(x, "minAge", value.asInstanceOf[js.Any])
+      inline def setMinAge(value: String): Self = StObject.set(x, "minAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinAgeUndefined: Self = StObject.set(x, "minAge", js.undefined)
+      inline def setMinAgeUndefined: Self = StObject.set(x, "minAge", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPictureUrl(value: String): Self = StObject.set(x, "pictureUrl", value.asInstanceOf[js.Any])
+      inline def setPictureUrl(value: String): Self = StObject.set(x, "pictureUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPictureUrlUndefined: Self = StObject.set(x, "pictureUrl", js.undefined)
+      inline def setPictureUrlUndefined: Self = StObject.set(x, "pictureUrl", js.undefined)
       
-      @scala.inline
-      def setType(value: UserType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: UserType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

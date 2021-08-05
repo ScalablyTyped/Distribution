@@ -17,31 +17,23 @@ trait Resource extends StObject {
 }
 object Resource {
   
-  @scala.inline
-  def apply(): Resource = {
+  inline def apply(): Resource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Resource]
   }
   
-  @scala.inline
-  implicit class ResourceMutableBuilder[Self <: Resource] (val x: Self) extends AnyVal {
+  extension [Self <: Resource](x: Self) {
     
-    @scala.inline
-    def setContentHash(value: Hash): Self = StObject.set(x, "contentHash", value.asInstanceOf[js.Any])
+    inline def setContentHash(value: Hash): Self = StObject.set(x, "contentHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentHashUndefined: Self = StObject.set(x, "contentHash", js.undefined)
+    inline def setContentHashUndefined: Self = StObject.set(x, "contentHash", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

@@ -38,43 +38,31 @@ trait UpdateFilterRequest extends StObject {
 }
 object UpdateFilterRequest {
   
-  @scala.inline
-  def apply(DetectorId: DetectorId, FilterName: String): UpdateFilterRequest = {
+  inline def apply(DetectorId: DetectorId, FilterName: String): UpdateFilterRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId.asInstanceOf[js.Any], FilterName = FilterName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateFilterRequest]
   }
   
-  @scala.inline
-  implicit class UpdateFilterRequestMutableBuilder[Self <: UpdateFilterRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateFilterRequest](x: Self) {
     
-    @scala.inline
-    def setAction(value: FilterAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: FilterAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
     
-    @scala.inline
-    def setDescription(value: FilterDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: FilterDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
+    inline def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterName(value: String): Self = StObject.set(x, "FilterName", value.asInstanceOf[js.Any])
+    inline def setFilterName(value: String): Self = StObject.set(x, "FilterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingCriteria(value: FindingCriteria): Self = StObject.set(x, "FindingCriteria", value.asInstanceOf[js.Any])
+    inline def setFindingCriteria(value: FindingCriteria): Self = StObject.set(x, "FindingCriteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingCriteriaUndefined: Self = StObject.set(x, "FindingCriteria", js.undefined)
+    inline def setFindingCriteriaUndefined: Self = StObject.set(x, "FindingCriteria", js.undefined)
     
-    @scala.inline
-    def setRank(value: FilterRank): Self = StObject.set(x, "Rank", value.asInstanceOf[js.Any])
+    inline def setRank(value: FilterRank): Self = StObject.set(x, "Rank", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRankUndefined: Self = StObject.set(x, "Rank", js.undefined)
+    inline def setRankUndefined: Self = StObject.set(x, "Rank", js.undefined)
   }
 }

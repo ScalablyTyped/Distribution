@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.SVGCircleElement")
 @js.native
-class SVGCircleElement protected ()
+/* private */ class SVGCircleElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.SVGCircleElement {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.SVGCircleElement_typekey")
   var MSHTMLDotSVGCircleElement_typekey: typings.activexMshtml.MSHTML.SVGCircleElement = js.native
   

@@ -23,19 +23,15 @@ trait ASPxClientVerticalGridBatchEditRecordRecoveringEventArgs
 }
 object ASPxClientVerticalGridBatchEditRecordRecoveringEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, recordValues: js.Any, visibleIndex: Double): ASPxClientVerticalGridBatchEditRecordRecoveringEventArgs = {
+  inline def apply(cancel: Boolean, recordValues: js.Any, visibleIndex: Double): ASPxClientVerticalGridBatchEditRecordRecoveringEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], recordValues = recordValues.asInstanceOf[js.Any], visibleIndex = visibleIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientVerticalGridBatchEditRecordRecoveringEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientVerticalGridBatchEditRecordRecoveringEventArgsMutableBuilder[Self <: ASPxClientVerticalGridBatchEditRecordRecoveringEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientVerticalGridBatchEditRecordRecoveringEventArgs](x: Self) {
     
-    @scala.inline
-    def setRecordValues(value: js.Any): Self = StObject.set(x, "recordValues", value.asInstanceOf[js.Any])
+    inline def setRecordValues(value: js.Any): Self = StObject.set(x, "recordValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
+    inline def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
   }
 }

@@ -23,28 +23,21 @@ trait DescribeInterconnectLoaRequest extends StObject {
 }
 object DescribeInterconnectLoaRequest {
   
-  @scala.inline
-  def apply(interconnectId: InterconnectId): DescribeInterconnectLoaRequest = {
+  inline def apply(interconnectId: InterconnectId): DescribeInterconnectLoaRequest = {
     val __obj = js.Dynamic.literal(interconnectId = interconnectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeInterconnectLoaRequest]
   }
   
-  @scala.inline
-  implicit class DescribeInterconnectLoaRequestMutableBuilder[Self <: DescribeInterconnectLoaRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeInterconnectLoaRequest](x: Self) {
     
-    @scala.inline
-    def setInterconnectId(value: InterconnectId): Self = StObject.set(x, "interconnectId", value.asInstanceOf[js.Any])
+    inline def setInterconnectId(value: InterconnectId): Self = StObject.set(x, "interconnectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoaContentType(value: LoaContentType): Self = StObject.set(x, "loaContentType", value.asInstanceOf[js.Any])
+    inline def setLoaContentType(value: LoaContentType): Self = StObject.set(x, "loaContentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoaContentTypeUndefined: Self = StObject.set(x, "loaContentType", js.undefined)
+    inline def setLoaContentTypeUndefined: Self = StObject.set(x, "loaContentType", js.undefined)
     
-    @scala.inline
-    def setProviderName(value: ProviderName): Self = StObject.set(x, "providerName", value.asInstanceOf[js.Any])
+    inline def setProviderName(value: ProviderName): Self = StObject.set(x, "providerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderNameUndefined: Self = StObject.set(x, "providerName", js.undefined)
+    inline def setProviderNameUndefined: Self = StObject.set(x, "providerName", js.undefined)
   }
 }

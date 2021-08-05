@@ -57,54 +57,39 @@ object postgresConnectionOptionsMod {
   }
   object PostgresConnectionOptions {
     
-    @scala.inline
-    def apply(): PostgresConnectionOptions = {
+    inline def apply(): PostgresConnectionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("postgres")
       __obj.asInstanceOf[PostgresConnectionOptions]
     }
     
-    @scala.inline
-    implicit class PostgresConnectionOptionsMutableBuilder[Self <: PostgresConnectionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PostgresConnectionOptions](x: Self) {
       
-      @scala.inline
-      def setConnectTimeoutMS(value: Double): Self = StObject.set(x, "connectTimeoutMS", value.asInstanceOf[js.Any])
+      inline def setConnectTimeoutMS(value: Double): Self = StObject.set(x, "connectTimeoutMS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectTimeoutMSUndefined: Self = StObject.set(x, "connectTimeoutMS", js.undefined)
+      inline def setConnectTimeoutMSUndefined: Self = StObject.set(x, "connectTimeoutMS", js.undefined)
       
-      @scala.inline
-      def setLogNotifications(value: Boolean): Self = StObject.set(x, "logNotifications", value.asInstanceOf[js.Any])
+      inline def setLogNotifications(value: Boolean): Self = StObject.set(x, "logNotifications", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogNotificationsUndefined: Self = StObject.set(x, "logNotifications", js.undefined)
+      inline def setLogNotificationsUndefined: Self = StObject.set(x, "logNotifications", js.undefined)
       
-      @scala.inline
-      def setPoolErrorHandler(value: /* err */ js.Any => js.Any): Self = StObject.set(x, "poolErrorHandler", js.Any.fromFunction1(value))
+      inline def setPoolErrorHandler(value: /* err */ js.Any => js.Any): Self = StObject.set(x, "poolErrorHandler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPoolErrorHandlerUndefined: Self = StObject.set(x, "poolErrorHandler", js.undefined)
+      inline def setPoolErrorHandlerUndefined: Self = StObject.set(x, "poolErrorHandler", js.undefined)
       
-      @scala.inline
-      def setReplication(value: MasterSlaves): Self = StObject.set(x, "replication", value.asInstanceOf[js.Any])
+      inline def setReplication(value: MasterSlaves): Self = StObject.set(x, "replication", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicationUndefined: Self = StObject.set(x, "replication", js.undefined)
+      inline def setReplicationUndefined: Self = StObject.set(x, "replication", js.undefined)
       
-      @scala.inline
-      def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+      inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
       
-      @scala.inline
-      def setType(value: postgres): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: postgres): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUuidExtension(value: pgcrypto | `uuid-ossp`): Self = StObject.set(x, "uuidExtension", value.asInstanceOf[js.Any])
+      inline def setUuidExtension(value: pgcrypto | `uuid-ossp`): Self = StObject.set(x, "uuidExtension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUuidExtensionUndefined: Self = StObject.set(x, "uuidExtension", js.undefined)
+      inline def setUuidExtensionUndefined: Self = StObject.set(x, "uuidExtension", js.undefined)
     }
   }
 }

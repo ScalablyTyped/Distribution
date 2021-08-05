@@ -24,25 +24,19 @@ trait SchemaReason extends StObject {
 }
 object SchemaReason {
   
-  @scala.inline
-  def apply(): SchemaReason = {
+  inline def apply(): SchemaReason = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaReason]
   }
   
-  @scala.inline
-  implicit class SchemaReasonMutableBuilder[Self <: SchemaReason] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaReason](x: Self) {
     
-    @scala.inline
-    def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

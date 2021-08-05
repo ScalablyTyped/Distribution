@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gray-percentage"
-version := "2.0-dt-20190927Z-09f5a4"
+version := "2.0-dt-20190927Z-6c3e79"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

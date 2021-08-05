@@ -11,16 +11,13 @@ trait TempFilesData extends StObject {
 }
 object TempFilesData {
   
-  @scala.inline
-  def apply(tempFilePaths: String): TempFilesData = {
+  inline def apply(tempFilePaths: String): TempFilesData = {
     val __obj = js.Dynamic.literal(tempFilePaths = tempFilePaths.asInstanceOf[js.Any])
     __obj.asInstanceOf[TempFilesData]
   }
   
-  @scala.inline
-  implicit class TempFilesDataMutableBuilder[Self <: TempFilesData] (val x: Self) extends AnyVal {
+  extension [Self <: TempFilesData](x: Self) {
     
-    @scala.inline
-    def setTempFilePaths(value: String): Self = StObject.set(x, "tempFilePaths", value.asInstanceOf[js.Any])
+    inline def setTempFilePaths(value: String): Self = StObject.set(x, "tempFilePaths", value.asInstanceOf[js.Any])
   }
 }

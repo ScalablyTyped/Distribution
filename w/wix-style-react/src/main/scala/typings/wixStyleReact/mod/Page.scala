@@ -24,30 +24,25 @@ object Page {
   @JSImport("wix-style-react", "Page.Content")
   @js.native
   def Content: SFC[ContentProps] = js.native
-  @scala.inline
-  def Content_=(x: SFC[ContentProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Content")(x.asInstanceOf[js.Any])
+  inline def Content_=(x: SFC[ContentProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Content")(x.asInstanceOf[js.Any])
   
   @JSImport("wix-style-react", "Page.FixedContent")
   @js.native
   def FixedContent: SFC[FixedContentProps] = js.native
-  @scala.inline
-  def FixedContent_=(x: SFC[FixedContentProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FixedContent")(x.asInstanceOf[js.Any])
+  inline def FixedContent_=(x: SFC[FixedContentProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FixedContent")(x.asInstanceOf[js.Any])
   
   @JSImport("wix-style-react", "Page.Header")
   @js.native
   def Header: Instantiable0[typings.wixStyleReact.pageHeaderMod.default] = js.native
-  @scala.inline
-  def Header_=(x: Instantiable0[typings.wixStyleReact.pageHeaderMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Header")(x.asInstanceOf[js.Any])
+  inline def Header_=(x: Instantiable0[typings.wixStyleReact.pageHeaderMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Header")(x.asInstanceOf[js.Any])
   
   @JSImport("wix-style-react", "Page.Sticky")
   @js.native
   def Sticky: SFC[StickyProps] = js.native
-  @scala.inline
-  def Sticky_=(x: SFC[StickyProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Sticky")(x.asInstanceOf[js.Any])
+  inline def Sticky_=(x: SFC[StickyProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Sticky")(x.asInstanceOf[js.Any])
   
   @JSImport("wix-style-react", "Page.Tail")
   @js.native
   def Tail: SFC[TailProps] = js.native
-  @scala.inline
-  def Tail_=(x: SFC[TailProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tail")(x.asInstanceOf[js.Any])
+  inline def Tail_=(x: SFC[TailProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tail")(x.asInstanceOf[js.Any])
 }

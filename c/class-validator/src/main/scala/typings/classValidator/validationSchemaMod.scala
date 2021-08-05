@@ -25,8 +25,7 @@ object validationSchemaMod {
   }
   object ValidationSchema {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       name: String,
       properties: /**
       * Name of the object's property to be validated which holds an array of validation constraints.
@@ -37,14 +36,11 @@ object validationSchemaMod {
       __obj.asInstanceOf[ValidationSchema]
     }
     
-    @scala.inline
-    implicit class ValidationSchemaMutableBuilder[Self <: ValidationSchema] (val x: Self) extends AnyVal {
+    extension [Self <: ValidationSchema](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperties(
+      inline def setProperties(
         value: /**
         * Name of the object's property to be validated which holds an array of validation constraints.
         */

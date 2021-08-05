@@ -37,32 +37,24 @@ object mod {
   }
   object ConnectOptions {
     
-    @scala.inline
-    def apply(): ConnectOptions = {
+    inline def apply(): ConnectOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConnectOptions]
     }
     
-    @scala.inline
-    implicit class ConnectOptionsMutableBuilder[Self <: ConnectOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectOptions](x: Self) {
       
-      @scala.inline
-      def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
+      inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
+      inline def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
       
-      @scala.inline
-      def setRetry_factor(value: Double): Self = StObject.set(x, "retry_factor", value.asInstanceOf[js.Any])
+      inline def setRetry_factor(value: Double): Self = StObject.set(x, "retry_factor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetry_factorUndefined: Self = StObject.set(x, "retry_factor", js.undefined)
+      inline def setRetry_factorUndefined: Self = StObject.set(x, "retry_factor", js.undefined)
       
-      @scala.inline
-      def setRetry_minTimeout(value: Double): Self = StObject.set(x, "retry_minTimeout", value.asInstanceOf[js.Any])
+      inline def setRetry_minTimeout(value: Double): Self = StObject.set(x, "retry_minTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetry_minTimeoutUndefined: Self = StObject.set(x, "retry_minTimeout", js.undefined)
+      inline def setRetry_minTimeoutUndefined: Self = StObject.set(x, "retry_minTimeout", js.undefined)
     }
   }
   
@@ -78,32 +70,24 @@ object mod {
   }
   object FastGetTransferOptions {
     
-    @scala.inline
-    def apply(): FastGetTransferOptions = {
+    inline def apply(): FastGetTransferOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FastGetTransferOptions]
     }
     
-    @scala.inline
-    implicit class FastGetTransferOptionsMutableBuilder[Self <: FastGetTransferOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FastGetTransferOptions](x: Self) {
       
-      @scala.inline
-      def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
+      inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
+      inline def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
       
-      @scala.inline
-      def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
+      inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConcurrencyUndefined: Self = StObject.set(x, "concurrency", js.undefined)
+      inline def setConcurrencyUndefined: Self = StObject.set(x, "concurrency", js.undefined)
       
-      @scala.inline
-      def setStep(value: (/* totalTransferred */ Double, /* chunk */ Double, /* total */ Double) => Unit): Self = StObject.set(x, "step", js.Any.fromFunction3(value))
+      inline def setStep(value: (/* totalTransferred */ Double, /* chunk */ Double, /* total */ Double) => Unit): Self = StObject.set(x, "step", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+      inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     }
   }
   
@@ -113,8 +97,7 @@ object mod {
        with ModeOption
   object FastPutTransferOptions {
     
-    @scala.inline
-    def apply(): FastPutTransferOptions = {
+    inline def apply(): FastPutTransferOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FastPutTransferOptions]
     }
@@ -140,8 +123,7 @@ object mod {
   }
   object FileInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       accessTime: Double,
       group: Double,
       modifyTime: Double,
@@ -156,32 +138,23 @@ object mod {
       __obj.asInstanceOf[FileInfo]
     }
     
-    @scala.inline
-    implicit class FileInfoMutableBuilder[Self <: FileInfo] (val x: Self) extends AnyVal {
+    extension [Self <: FileInfo](x: Self) {
       
-      @scala.inline
-      def setAccessTime(value: Double): Self = StObject.set(x, "accessTime", value.asInstanceOf[js.Any])
+      inline def setAccessTime(value: Double): Self = StObject.set(x, "accessTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroup(value: Double): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      inline def setGroup(value: Double): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModifyTime(value: Double): Self = StObject.set(x, "modifyTime", value.asInstanceOf[js.Any])
+      inline def setModifyTime(value: Double): Self = StObject.set(x, "modifyTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwner(value: Double): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+      inline def setOwner(value: Double): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRights(value: Group): Self = StObject.set(x, "rights", value.asInstanceOf[js.Any])
+      inline def setRights(value: Group): Self = StObject.set(x, "rights", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -215,8 +188,7 @@ object mod {
   }
   object FileStats {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       accessTime: Double,
       gid: Double,
       isBlockDevice: Boolean,
@@ -235,47 +207,33 @@ object mod {
       __obj.asInstanceOf[FileStats]
     }
     
-    @scala.inline
-    implicit class FileStatsMutableBuilder[Self <: FileStats] (val x: Self) extends AnyVal {
+    extension [Self <: FileStats](x: Self) {
       
-      @scala.inline
-      def setAccessTime(value: Double): Self = StObject.set(x, "accessTime", value.asInstanceOf[js.Any])
+      inline def setAccessTime(value: Double): Self = StObject.set(x, "accessTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
+      inline def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBlockDevice(value: Boolean): Self = StObject.set(x, "isBlockDevice", value.asInstanceOf[js.Any])
+      inline def setIsBlockDevice(value: Boolean): Self = StObject.set(x, "isBlockDevice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCharacterDevice(value: Boolean): Self = StObject.set(x, "isCharacterDevice", value.asInstanceOf[js.Any])
+      inline def setIsCharacterDevice(value: Boolean): Self = StObject.set(x, "isCharacterDevice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDirectory(value: Boolean): Self = StObject.set(x, "isDirectory", value.asInstanceOf[js.Any])
+      inline def setIsDirectory(value: Boolean): Self = StObject.set(x, "isDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFIFO(value: Boolean): Self = StObject.set(x, "isFIFO", value.asInstanceOf[js.Any])
+      inline def setIsFIFO(value: Boolean): Self = StObject.set(x, "isFIFO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFile(value: Boolean): Self = StObject.set(x, "isFile", value.asInstanceOf[js.Any])
+      inline def setIsFile(value: Boolean): Self = StObject.set(x, "isFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSocket(value: Boolean): Self = StObject.set(x, "isSocket", value.asInstanceOf[js.Any])
+      inline def setIsSocket(value: Boolean): Self = StObject.set(x, "isSocket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSymbolicLink(value: Boolean): Self = StObject.set(x, "isSymbolicLink", value.asInstanceOf[js.Any])
+      inline def setIsSymbolicLink(value: Boolean): Self = StObject.set(x, "isSymbolicLink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModifyTime(value: Double): Self = StObject.set(x, "modifyTime", value.asInstanceOf[js.Any])
+      inline def setModifyTime(value: Double): Self = StObject.set(x, "modifyTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+      inline def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -287,23 +245,18 @@ object mod {
   }
   object GetTransferOptions {
     
-    @scala.inline
-    def apply(): GetTransferOptions = {
+    inline def apply(): GetTransferOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetTransferOptions]
     }
     
-    @scala.inline
-    implicit class GetTransferOptionsMutableBuilder[Self <: GetTransferOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GetTransferOptions](x: Self) {
       
-      @scala.inline
-      def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+      inline def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandleNull: Self = StObject.set(x, "handle", null)
+      inline def setHandleNull: Self = StObject.set(x, "handle", null)
       
-      @scala.inline
-      def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
+      inline def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
     }
   }
   
@@ -313,20 +266,16 @@ object mod {
   }
   object ModeOption {
     
-    @scala.inline
-    def apply(): ModeOption = {
+    inline def apply(): ModeOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ModeOption]
     }
     
-    @scala.inline
-    implicit class ModeOptionMutableBuilder[Self <: ModeOption] (val x: Self) extends AnyVal {
+    extension [Self <: ModeOption](x: Self) {
       
-      @scala.inline
-      def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     }
   }
   
@@ -342,35 +291,26 @@ object mod {
   }
   object TransferOptions {
     
-    @scala.inline
-    def apply(): TransferOptions = {
+    inline def apply(): TransferOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TransferOptions]
     }
     
-    @scala.inline
-    implicit class TransferOptionsMutableBuilder[Self <: TransferOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TransferOptions](x: Self) {
       
-      @scala.inline
-      def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
+      inline def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoCloseUndefined: Self = StObject.set(x, "autoClose", js.undefined)
+      inline def setAutoCloseUndefined: Self = StObject.set(x, "autoClose", js.undefined)
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingNull: Self = StObject.set(x, "encoding", null)
+      inline def setEncodingNull: Self = StObject.set(x, "encoding", null)
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setFlags(value: w | a): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: w | a): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
+      inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
     }
   }
   

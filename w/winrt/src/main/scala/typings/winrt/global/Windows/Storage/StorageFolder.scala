@@ -26,6 +26,5 @@ object StorageFolder {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getFolderFromPathAsync(path: String): IAsyncOperation[typings.winrt.Windows.Storage.StorageFolder] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFolderFromPathAsync")(path.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Storage.StorageFolder]]
+  inline def getFolderFromPathAsync(path: String): IAsyncOperation[typings.winrt.Windows.Storage.StorageFolder] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFolderFromPathAsync")(path.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Storage.StorageFolder]]
 }

@@ -58,70 +58,49 @@ trait ConfigRule extends StObject {
 }
 object ConfigRule {
   
-  @scala.inline
-  def apply(Source: Source): ConfigRule = {
+  inline def apply(Source: Source): ConfigRule = {
     val __obj = js.Dynamic.literal(Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigRule]
   }
   
-  @scala.inline
-  implicit class ConfigRuleMutableBuilder[Self <: ConfigRule] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigRule](x: Self) {
     
-    @scala.inline
-    def setConfigRuleArn(value: StringWithCharLimit256): Self = StObject.set(x, "ConfigRuleArn", value.asInstanceOf[js.Any])
+    inline def setConfigRuleArn(value: StringWithCharLimit256): Self = StObject.set(x, "ConfigRuleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigRuleArnUndefined: Self = StObject.set(x, "ConfigRuleArn", js.undefined)
+    inline def setConfigRuleArnUndefined: Self = StObject.set(x, "ConfigRuleArn", js.undefined)
     
-    @scala.inline
-    def setConfigRuleId(value: StringWithCharLimit64): Self = StObject.set(x, "ConfigRuleId", value.asInstanceOf[js.Any])
+    inline def setConfigRuleId(value: StringWithCharLimit64): Self = StObject.set(x, "ConfigRuleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigRuleIdUndefined: Self = StObject.set(x, "ConfigRuleId", js.undefined)
+    inline def setConfigRuleIdUndefined: Self = StObject.set(x, "ConfigRuleId", js.undefined)
     
-    @scala.inline
-    def setConfigRuleName(value: ConfigRuleName): Self = StObject.set(x, "ConfigRuleName", value.asInstanceOf[js.Any])
+    inline def setConfigRuleName(value: ConfigRuleName): Self = StObject.set(x, "ConfigRuleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigRuleNameUndefined: Self = StObject.set(x, "ConfigRuleName", js.undefined)
+    inline def setConfigRuleNameUndefined: Self = StObject.set(x, "ConfigRuleName", js.undefined)
     
-    @scala.inline
-    def setConfigRuleState(value: ConfigRuleState): Self = StObject.set(x, "ConfigRuleState", value.asInstanceOf[js.Any])
+    inline def setConfigRuleState(value: ConfigRuleState): Self = StObject.set(x, "ConfigRuleState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigRuleStateUndefined: Self = StObject.set(x, "ConfigRuleState", js.undefined)
+    inline def setConfigRuleStateUndefined: Self = StObject.set(x, "ConfigRuleState", js.undefined)
     
-    @scala.inline
-    def setCreatedBy(value: StringWithCharLimit256): Self = StObject.set(x, "CreatedBy", value.asInstanceOf[js.Any])
+    inline def setCreatedBy(value: StringWithCharLimit256): Self = StObject.set(x, "CreatedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedByUndefined: Self = StObject.set(x, "CreatedBy", js.undefined)
+    inline def setCreatedByUndefined: Self = StObject.set(x, "CreatedBy", js.undefined)
     
-    @scala.inline
-    def setDescription(value: EmptiableStringWithCharLimit256): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: EmptiableStringWithCharLimit256): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setInputParameters(value: StringWithCharLimit1024): Self = StObject.set(x, "InputParameters", value.asInstanceOf[js.Any])
+    inline def setInputParameters(value: StringWithCharLimit1024): Self = StObject.set(x, "InputParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputParametersUndefined: Self = StObject.set(x, "InputParameters", js.undefined)
+    inline def setInputParametersUndefined: Self = StObject.set(x, "InputParameters", js.undefined)
     
-    @scala.inline
-    def setMaximumExecutionFrequency(value: MaximumExecutionFrequency): Self = StObject.set(x, "MaximumExecutionFrequency", value.asInstanceOf[js.Any])
+    inline def setMaximumExecutionFrequency(value: MaximumExecutionFrequency): Self = StObject.set(x, "MaximumExecutionFrequency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumExecutionFrequencyUndefined: Self = StObject.set(x, "MaximumExecutionFrequency", js.undefined)
+    inline def setMaximumExecutionFrequencyUndefined: Self = StObject.set(x, "MaximumExecutionFrequency", js.undefined)
     
-    @scala.inline
-    def setScope(value: Scope): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: Scope): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "Scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "Scope", js.undefined)
     
-    @scala.inline
-    def setSource(value: Source): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Source): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
   }
 }

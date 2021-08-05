@@ -11,6 +11,5 @@ object useRefCacheMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useRefCache[T](cacheable: T): MutableRefObject[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRefCache")(cacheable.asInstanceOf[js.Any]).asInstanceOf[MutableRefObject[T]]
+  inline def useRefCache[T](cacheable: T): MutableRefObject[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRefCache")(cacheable.asInstanceOf[js.Any]).asInstanceOf[MutableRefObject[T]]
 }

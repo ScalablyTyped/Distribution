@@ -18,19 +18,15 @@ trait TaskOrchestrationPlanGroupReference extends StObject {
 }
 object TaskOrchestrationPlanGroupReference {
   
-  @scala.inline
-  def apply(planGroup: String, projectId: String): TaskOrchestrationPlanGroupReference = {
+  inline def apply(planGroup: String, projectId: String): TaskOrchestrationPlanGroupReference = {
     val __obj = js.Dynamic.literal(planGroup = planGroup.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskOrchestrationPlanGroupReference]
   }
   
-  @scala.inline
-  implicit class TaskOrchestrationPlanGroupReferenceMutableBuilder[Self <: TaskOrchestrationPlanGroupReference] (val x: Self) extends AnyVal {
+  extension [Self <: TaskOrchestrationPlanGroupReference](x: Self) {
     
-    @scala.inline
-    def setPlanGroup(value: String): Self = StObject.set(x, "planGroup", value.asInstanceOf[js.Any])
+    inline def setPlanGroup(value: String): Self = StObject.set(x, "planGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
   }
 }

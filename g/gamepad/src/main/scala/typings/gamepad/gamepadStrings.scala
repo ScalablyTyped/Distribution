@@ -8,26 +8,21 @@ object gamepadStrings {
   
   @js.native
   sealed trait attach extends StObject
-  @scala.inline
-  def attach: attach = "attach".asInstanceOf[attach]
+  inline def attach: attach = "attach".asInstanceOf[attach]
   
   @js.native
   sealed trait down extends StObject
-  @scala.inline
-  def down: down = "down".asInstanceOf[down]
+  inline def down: down = "down".asInstanceOf[down]
   
   @js.native
   sealed trait move extends StObject
-  @scala.inline
-  def move: move = "move".asInstanceOf[move]
+  inline def move: move = "move".asInstanceOf[move]
   
   @js.native
   sealed trait remove extends StObject
-  @scala.inline
-  def remove: remove = "remove".asInstanceOf[remove]
+  inline def remove: remove = "remove".asInstanceOf[remove]
   
   @js.native
   sealed trait up extends StObject
-  @scala.inline
-  def up: up = "up".asInstanceOf[up]
+  inline def up: up = "up".asInstanceOf[up]
 }

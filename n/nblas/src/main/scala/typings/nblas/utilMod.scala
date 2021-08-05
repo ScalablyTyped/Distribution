@@ -13,6 +13,5 @@ object utilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def prefix(x: FloatArray): d | s = ^.asInstanceOf[js.Dynamic].applyDynamic("prefix")(x.asInstanceOf[js.Any]).asInstanceOf[d | s]
+  inline def prefix(x: FloatArray): d | s = ^.asInstanceOf[js.Dynamic].applyDynamic("prefix")(x.asInstanceOf[js.Any]).asInstanceOf[d | s]
 }

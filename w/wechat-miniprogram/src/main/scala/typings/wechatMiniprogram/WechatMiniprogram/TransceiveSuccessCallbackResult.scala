@@ -13,19 +13,15 @@ trait TransceiveSuccessCallbackResult extends StObject {
 }
 object TransceiveSuccessCallbackResult {
   
-  @scala.inline
-  def apply(data: ArrayBuffer, errMsg: String): TransceiveSuccessCallbackResult = {
+  inline def apply(data: ArrayBuffer, errMsg: String): TransceiveSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransceiveSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class TransceiveSuccessCallbackResultMutableBuilder[Self <: TransceiveSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: TransceiveSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

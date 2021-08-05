@@ -14,25 +14,19 @@ trait ClusterPendingTasksParams
 }
 object ClusterPendingTasksParams {
   
-  @scala.inline
-  def apply(): ClusterPendingTasksParams = {
+  inline def apply(): ClusterPendingTasksParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClusterPendingTasksParams]
   }
   
-  @scala.inline
-  implicit class ClusterPendingTasksParamsMutableBuilder[Self <: ClusterPendingTasksParams] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterPendingTasksParams](x: Self) {
     
-    @scala.inline
-    def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+    inline def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
+    inline def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
     
-    @scala.inline
-    def setMasterTimeout(value: TimeSpan): Self = StObject.set(x, "masterTimeout", value.asInstanceOf[js.Any])
+    inline def setMasterTimeout(value: TimeSpan): Self = StObject.set(x, "masterTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterTimeoutUndefined: Self = StObject.set(x, "masterTimeout", js.undefined)
+    inline def setMasterTimeoutUndefined: Self = StObject.set(x, "masterTimeout", js.undefined)
   }
 }

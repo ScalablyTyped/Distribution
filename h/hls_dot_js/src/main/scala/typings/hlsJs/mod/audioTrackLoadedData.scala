@@ -14,22 +14,17 @@ trait audioTrackLoadedData extends StObject {
 }
 object audioTrackLoadedData {
   
-  @scala.inline
-  def apply(details: LevelDetails, id: String, stats: Stats): audioTrackLoadedData = {
+  inline def apply(details: LevelDetails, id: String, stats: Stats): audioTrackLoadedData = {
     val __obj = js.Dynamic.literal(details = details.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any])
     __obj.asInstanceOf[audioTrackLoadedData]
   }
   
-  @scala.inline
-  implicit class audioTrackLoadedDataMutableBuilder[Self <: audioTrackLoadedData] (val x: Self) extends AnyVal {
+  extension [Self <: audioTrackLoadedData](x: Self) {
     
-    @scala.inline
-    def setDetails(value: LevelDetails): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: LevelDetails): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStats(value: Stats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+    inline def setStats(value: Stats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
   }
 }

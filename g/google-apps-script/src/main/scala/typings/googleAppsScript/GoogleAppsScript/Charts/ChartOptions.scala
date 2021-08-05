@@ -19,16 +19,13 @@ trait ChartOptions extends StObject {
 }
 object ChartOptions {
   
-  @scala.inline
-  def apply(get: String => js.Any): ChartOptions = {
+  inline def apply(get: String => js.Any): ChartOptions = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
     __obj.asInstanceOf[ChartOptions]
   }
   
-  @scala.inline
-  implicit class ChartOptionsMutableBuilder[Self <: ChartOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChartOptions](x: Self) {
     
-    @scala.inline
-    def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
   }
 }

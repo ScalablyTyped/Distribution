@@ -18,6 +18,5 @@ object HeaderList {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isHeaderList(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHeaderList")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isHeaderList(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHeaderList")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

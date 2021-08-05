@@ -95,8 +95,7 @@ object MeasureCommon {
     var viewportIndex2d: Double = js.native
   }
   
-  @scala.inline
-  def getSnapResultPosition(
+  inline def getSnapResultPosition(
     pick: typings.forgeViewer.Autodesk.Viewing.MeasureCommon.SnapResult,
     viewer: typings.forgeViewer.Autodesk.Viewing.Viewer3D
   ): Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("getSnapResultPosition")(pick.asInstanceOf[js.Any], viewer.asInstanceOf[js.Any])).asInstanceOf[Vector3]

@@ -8,6 +8,5 @@ object aceStrings {
   
   @js.native
   sealed trait change extends StObject
-  @scala.inline
-  def change: change = "change".asInstanceOf[change]
+  inline def change: change = "change".asInstanceOf[change]
 }

@@ -12,41 +12,35 @@ object unlCoreStrings {
   sealed trait E
     extends StObject
        with Direction
-  @scala.inline
-  def E: E = "E".asInstanceOf[E]
+  inline def E: E = "E".asInstanceOf[E]
   
   @js.native
   sealed trait N
     extends StObject
        with Direction
-  @scala.inline
-  def N: N = "N".asInstanceOf[N]
+  inline def N: N = "N".asInstanceOf[N]
   
   @js.native
   sealed trait S
     extends StObject
        with Direction
-  @scala.inline
-  def S: S = "S".asInstanceOf[S]
+  inline def S: S = "S".asInstanceOf[S]
   
   @js.native
   sealed trait W
     extends StObject
        with Direction
-  @scala.inline
-  def W: W = "W".asInstanceOf[W]
+  inline def W: W = "W".asInstanceOf[W]
   
   @js.native
   sealed trait floor
     extends StObject
        with ElevationType
-  @scala.inline
-  def floor: floor = "floor".asInstanceOf[floor]
+  inline def floor: floor = "floor".asInstanceOf[floor]
   
   @js.native
   sealed trait heightincm
     extends StObject
        with ElevationType
-  @scala.inline
-  def heightincm: heightincm = "heightincm".asInstanceOf[heightincm]
+  inline def heightincm: heightincm = "heightincm".asInstanceOf[heightincm]
 }

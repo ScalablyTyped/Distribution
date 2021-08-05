@@ -13,17 +13,12 @@ object functionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def deleteInstallation(dependencies: FirebaseDependencies): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteInstallation")(dependencies.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def deleteInstallation(dependencies: FirebaseDependencies): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteInstallation")(dependencies.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def getId(dependencies: FirebaseDependencies): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")(dependencies.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def getId(dependencies: FirebaseDependencies): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")(dependencies.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def getToken(dependencies: FirebaseDependencies): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getToken")(dependencies.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def getToken(dependencies: FirebaseDependencies, forceRefresh: Boolean): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getToken")(dependencies.asInstanceOf[js.Any], forceRefresh.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def getToken(dependencies: FirebaseDependencies): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getToken")(dependencies.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def getToken(dependencies: FirebaseDependencies, forceRefresh: Boolean): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getToken")(dependencies.asInstanceOf[js.Any], forceRefresh.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def onIdChange(hasAppConfig: FirebaseDependencies, callback: IdChangeCallbackFn): IdChangeUnsubscribeFn = (^.asInstanceOf[js.Dynamic].applyDynamic("onIdChange")(hasAppConfig.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IdChangeUnsubscribeFn]
+  inline def onIdChange(hasAppConfig: FirebaseDependencies, callback: IdChangeCallbackFn): IdChangeUnsubscribeFn = (^.asInstanceOf[js.Dynamic].applyDynamic("onIdChange")(hasAppConfig.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IdChangeUnsubscribeFn]
 }

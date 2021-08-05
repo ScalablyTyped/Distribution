@@ -31,36 +31,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleMsTouchAction extends StObject
 object styleMsTouchAction {
   
-  @scala.inline
-  def styleMsTouchActionAuto: `1` = 1.asInstanceOf[`1`]
+  inline def styleMsTouchActionAuto: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def styleMsTouchActionCrossSlideX: `64` = 64.asInstanceOf[`64`]
+  inline def styleMsTouchActionCrossSlideX: `64` = 64.asInstanceOf[`64`]
   
-  @scala.inline
-  def styleMsTouchActionCrossSlideY: `128` = 128.asInstanceOf[`128`]
+  inline def styleMsTouchActionCrossSlideY: `128` = 128.asInstanceOf[`128`]
   
-  @scala.inline
-  def styleMsTouchActionDoubleTapZoom: `4` = 4.asInstanceOf[`4`]
+  inline def styleMsTouchActionDoubleTapZoom: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def styleMsTouchActionManipulation: `2` = 2.asInstanceOf[`2`]
+  inline def styleMsTouchActionManipulation: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def styleMsTouchActionNone: `0` = 0.asInstanceOf[`0`]
+  inline def styleMsTouchActionNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleMsTouchActionNotSet: `-1` = -1.asInstanceOf[`-1`]
+  inline def styleMsTouchActionNotSet: `-1` = -1.asInstanceOf[`-1`]
   
-  @scala.inline
-  def styleMsTouchActionPanX: `8` = 8.asInstanceOf[`8`]
+  inline def styleMsTouchActionPanX: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def styleMsTouchActionPanY: `16` = 16.asInstanceOf[`16`]
+  inline def styleMsTouchActionPanY: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def styleMsTouchActionPinchZoom: `32` = 32.asInstanceOf[`32`]
+  inline def styleMsTouchActionPinchZoom: `32` = 32.asInstanceOf[`32`]
   
-  @scala.inline
-  def styleMsTouchAction_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleMsTouchAction_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

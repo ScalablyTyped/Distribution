@@ -24,6 +24,5 @@ object ChatMessageBlocking {
     * @return An async action indicating that the operation has completed.
     */
   /* static member */
-  @scala.inline
-  def markMessageAsBlockedAsync(localChatMessageId: String, blocked: Boolean): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("markMessageAsBlockedAsync")(localChatMessageId.asInstanceOf[js.Any], blocked.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
+  inline def markMessageAsBlockedAsync(localChatMessageId: String, blocked: Boolean): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("markMessageAsBlockedAsync")(localChatMessageId.asInstanceOf[js.Any], blocked.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
 }

@@ -24,6 +24,5 @@ object Pager {
   @JSImport("react-bootstrap", "Pager.Item")
   @js.native
   def Item: Instantiable0[typings.reactBootstrap.pagerItemMod.^] = js.native
-  @scala.inline
-  def Item_=(x: Instantiable0[typings.reactBootstrap.pagerItemMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+  inline def Item_=(x: Instantiable0[typings.reactBootstrap.pagerItemMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
 }

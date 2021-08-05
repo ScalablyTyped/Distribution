@@ -16,19 +16,15 @@ trait SchemaFileIODetails extends StObject {
 }
 object SchemaFileIODetails {
   
-  @scala.inline
-  def apply(): SchemaFileIODetails = {
+  inline def apply(): SchemaFileIODetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFileIODetails]
   }
   
-  @scala.inline
-  implicit class SchemaFileIODetailsMutableBuilder[Self <: SchemaFileIODetails] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFileIODetails](x: Self) {
     
-    @scala.inline
-    def setFilePattern(value: String): Self = StObject.set(x, "filePattern", value.asInstanceOf[js.Any])
+    inline def setFilePattern(value: String): Self = StObject.set(x, "filePattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilePatternUndefined: Self = StObject.set(x, "filePattern", js.undefined)
+    inline def setFilePatternUndefined: Self = StObject.set(x, "filePattern", js.undefined)
   }
 }

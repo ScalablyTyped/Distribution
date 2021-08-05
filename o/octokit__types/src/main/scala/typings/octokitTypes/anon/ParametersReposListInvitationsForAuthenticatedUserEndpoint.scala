@@ -18,8 +18,7 @@ trait ParametersReposListInvitationsForAuthenticatedUserEndpoint extends StObjec
 }
 object ParametersReposListInvitationsForAuthenticatedUserEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ReposListInvitationsForAuthenticatedUserEndpoint,
     request: ReposListInvitationsForAuthenticatedUserRequestOptions,
     response: OctokitResponse[ReposListInvitationsForAuthenticatedUserResponseData]
@@ -28,16 +27,12 @@ object ParametersReposListInvitationsForAuthenticatedUserEndpoint {
     __obj.asInstanceOf[ParametersReposListInvitationsForAuthenticatedUserEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersReposListInvitationsForAuthenticatedUserEndpointMutableBuilder[Self <: ParametersReposListInvitationsForAuthenticatedUserEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersReposListInvitationsForAuthenticatedUserEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ReposListInvitationsForAuthenticatedUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ReposListInvitationsForAuthenticatedUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ReposListInvitationsForAuthenticatedUserRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ReposListInvitationsForAuthenticatedUserRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReposListInvitationsForAuthenticatedUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ReposListInvitationsForAuthenticatedUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

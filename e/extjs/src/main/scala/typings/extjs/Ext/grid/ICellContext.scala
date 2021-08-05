@@ -14,19 +14,15 @@ trait ICellContext
 }
 object ICellContext {
   
-  @scala.inline
-  def apply(): ICellContext = {
+  inline def apply(): ICellContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ICellContext]
   }
   
-  @scala.inline
-  implicit class ICellContextMutableBuilder[Self <: ICellContext] (val x: Self) extends AnyVal {
+  extension [Self <: ICellContext](x: Self) {
     
-    @scala.inline
-    def setIsCellContext(value: Boolean): Self = StObject.set(x, "isCellContext", value.asInstanceOf[js.Any])
+    inline def setIsCellContext(value: Boolean): Self = StObject.set(x, "isCellContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCellContextUndefined: Self = StObject.set(x, "isCellContext", js.undefined)
+    inline def setIsCellContextUndefined: Self = StObject.set(x, "isCellContext", js.undefined)
   }
 }

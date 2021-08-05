@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.InlineShape")
 @js.native
-class InlineShape protected ()
+/* private */ class InlineShape ()
   extends StObject
      with typings.activexWord.Word.InlineShape {
   
@@ -135,7 +135,7 @@ class InlineShape protected ()
   /* CompleteClass */
   var Width: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.InlineShape_typekey")
   var WordDotInlineShape_typekey: typings.activexWord.Word.InlineShape = js.native
 }

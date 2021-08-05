@@ -14,26 +14,20 @@ object anon {
   }
   object Mimetype {
     
-    @scala.inline
-    def apply(): Mimetype = {
+    inline def apply(): Mimetype = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Mimetype]
     }
     
-    @scala.inline
-    implicit class MimetypeMutableBuilder[Self <: Mimetype] (val x: Self) extends AnyVal {
+    extension [Self <: Mimetype](x: Self) {
       
-      @scala.inline
-      def setMimetype(value: String): Self = StObject.set(x, "mimetype", value.asInstanceOf[js.Any])
+      inline def setMimetype(value: String): Self = StObject.set(x, "mimetype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMimetypeUndefined: Self = StObject.set(x, "mimetype", js.undefined)
+      inline def setMimetypeUndefined: Self = StObject.set(x, "mimetype", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

@@ -14,22 +14,17 @@ trait IMprMetaData extends StObject {
 }
 object IMprMetaData {
   
-  @scala.inline
-  def apply(_BuildVersion: String, _ProductVersion: String, _SchemaHash: String): IMprMetaData = {
+  inline def apply(_BuildVersion: String, _ProductVersion: String, _SchemaHash: String): IMprMetaData = {
     val __obj = js.Dynamic.literal(_BuildVersion = _BuildVersion.asInstanceOf[js.Any], _ProductVersion = _ProductVersion.asInstanceOf[js.Any], _SchemaHash = _SchemaHash.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMprMetaData]
   }
   
-  @scala.inline
-  implicit class IMprMetaDataMutableBuilder[Self <: IMprMetaData] (val x: Self) extends AnyVal {
+  extension [Self <: IMprMetaData](x: Self) {
     
-    @scala.inline
-    def set_BuildVersion(value: String): Self = StObject.set(x, "_BuildVersion", value.asInstanceOf[js.Any])
+    inline def set_BuildVersion(value: String): Self = StObject.set(x, "_BuildVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_ProductVersion(value: String): Self = StObject.set(x, "_ProductVersion", value.asInstanceOf[js.Any])
+    inline def set_ProductVersion(value: String): Self = StObject.set(x, "_ProductVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_SchemaHash(value: String): Self = StObject.set(x, "_SchemaHash", value.asInstanceOf[js.Any])
+    inline def set_SchemaHash(value: String): Self = StObject.set(x, "_SchemaHash", value.asInstanceOf[js.Any])
   }
 }

@@ -12,19 +12,15 @@ trait Create extends StObject {
 }
 object Create {
   
-  @scala.inline
-  def apply(create: Boolean, overwrite: Boolean): Create = {
+  inline def apply(create: Boolean, overwrite: Boolean): Create = {
     val __obj = js.Dynamic.literal(create = create.asInstanceOf[js.Any], overwrite = overwrite.asInstanceOf[js.Any])
     __obj.asInstanceOf[Create]
   }
   
-  @scala.inline
-  implicit class CreateMutableBuilder[Self <: Create] (val x: Self) extends AnyVal {
+  extension [Self <: Create](x: Self) {
     
-    @scala.inline
-    def setCreate(value: Boolean): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+    inline def setCreate(value: Boolean): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
+    inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
   }
 }

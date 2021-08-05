@@ -39,17 +39,14 @@ object iab {
     }
     object CreativeData {
       
-      @scala.inline
-      def apply(AdParameters: String): CreativeData = {
+      inline def apply(AdParameters: String): CreativeData = {
         val __obj = js.Dynamic.literal(AdParameters = AdParameters.asInstanceOf[js.Any])
         __obj.asInstanceOf[CreativeData]
       }
       
-      @scala.inline
-      implicit class CreativeDataMutableBuilder[Self <: CreativeData] (val x: Self) extends AnyVal {
+      extension [Self <: CreativeData](x: Self) {
         
-        @scala.inline
-        def setAdParameters(value: String): Self = StObject.set(x, "AdParameters", value.asInstanceOf[js.Any])
+        inline def setAdParameters(value: String): Self = StObject.set(x, "AdParameters", value.asInstanceOf[js.Any])
       }
     }
     
@@ -72,23 +69,18 @@ object iab {
     }
     object EnvironmentVars {
       
-      @scala.inline
-      def apply(slot: HTMLElement, videoSlot: HTMLVideoElement, videoSlotCanAutoPlay: Boolean): EnvironmentVars = {
+      inline def apply(slot: HTMLElement, videoSlot: HTMLVideoElement, videoSlotCanAutoPlay: Boolean): EnvironmentVars = {
         val __obj = js.Dynamic.literal(slot = slot.asInstanceOf[js.Any], videoSlot = videoSlot.asInstanceOf[js.Any], videoSlotCanAutoPlay = videoSlotCanAutoPlay.asInstanceOf[js.Any])
         __obj.asInstanceOf[EnvironmentVars]
       }
       
-      @scala.inline
-      implicit class EnvironmentVarsMutableBuilder[Self <: EnvironmentVars] (val x: Self) extends AnyVal {
+      extension [Self <: EnvironmentVars](x: Self) {
         
-        @scala.inline
-        def setSlot(value: HTMLElement): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
+        inline def setSlot(value: HTMLElement): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVideoSlot(value: HTMLVideoElement): Self = StObject.set(x, "videoSlot", value.asInstanceOf[js.Any])
+        inline def setVideoSlot(value: HTMLVideoElement): Self = StObject.set(x, "videoSlot", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVideoSlotCanAutoPlay(value: Boolean): Self = StObject.set(x, "videoSlotCanAutoPlay", value.asInstanceOf[js.Any])
+        inline def setVideoSlotCanAutoPlay(value: Boolean): Self = StObject.set(x, "videoSlotCanAutoPlay", value.asInstanceOf[js.Any])
       }
     }
     
@@ -194,8 +186,7 @@ object iab {
     }
     object EventsMap {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         AdClickThru: (String, String, Boolean) => Unit,
         AdDurationChange: () => Unit,
         AdError: String => Unit,
@@ -227,86 +218,59 @@ object iab {
         __obj.asInstanceOf[EventsMap]
       }
       
-      @scala.inline
-      implicit class EventsMapMutableBuilder[Self <: EventsMap] (val x: Self) extends AnyVal {
+      extension [Self <: EventsMap](x: Self) {
         
-        @scala.inline
-        def setAdClickThru(value: (String, String, Boolean) => Unit): Self = StObject.set(x, "AdClickThru", js.Any.fromFunction3(value))
+        inline def setAdClickThru(value: (String, String, Boolean) => Unit): Self = StObject.set(x, "AdClickThru", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setAdDurationChange(value: () => Unit): Self = StObject.set(x, "AdDurationChange", js.Any.fromFunction0(value))
+        inline def setAdDurationChange(value: () => Unit): Self = StObject.set(x, "AdDurationChange", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAdError(value: String => Unit): Self = StObject.set(x, "AdError", js.Any.fromFunction1(value))
+        inline def setAdError(value: String => Unit): Self = StObject.set(x, "AdError", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setAdExpandedChange(value: () => Unit): Self = StObject.set(x, "AdExpandedChange", js.Any.fromFunction0(value))
+        inline def setAdExpandedChange(value: () => Unit): Self = StObject.set(x, "AdExpandedChange", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAdImpression(value: () => Unit): Self = StObject.set(x, "AdImpression", js.Any.fromFunction0(value))
+        inline def setAdImpression(value: () => Unit): Self = StObject.set(x, "AdImpression", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAdInteraction(value: String => Unit): Self = StObject.set(x, "AdInteraction", js.Any.fromFunction1(value))
+        inline def setAdInteraction(value: String => Unit): Self = StObject.set(x, "AdInteraction", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setAdLinearChange(value: () => Unit): Self = StObject.set(x, "AdLinearChange", js.Any.fromFunction0(value))
+        inline def setAdLinearChange(value: () => Unit): Self = StObject.set(x, "AdLinearChange", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAdLoaded(value: () => Unit): Self = StObject.set(x, "AdLoaded", js.Any.fromFunction0(value))
+        inline def setAdLoaded(value: () => Unit): Self = StObject.set(x, "AdLoaded", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAdLog(value: String => Unit): Self = StObject.set(x, "AdLog", js.Any.fromFunction1(value))
+        inline def setAdLog(value: String => Unit): Self = StObject.set(x, "AdLog", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setAdPaused(value: () => Unit): Self = StObject.set(x, "AdPaused", js.Any.fromFunction0(value))
+        inline def setAdPaused(value: () => Unit): Self = StObject.set(x, "AdPaused", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAdPlaying(value: () => Unit): Self = StObject.set(x, "AdPlaying", js.Any.fromFunction0(value))
+        inline def setAdPlaying(value: () => Unit): Self = StObject.set(x, "AdPlaying", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAdRemainingTimeChange(value: () => Unit): Self = StObject.set(x, "AdRemainingTimeChange", js.Any.fromFunction0(value))
+        inline def setAdRemainingTimeChange(value: () => Unit): Self = StObject.set(x, "AdRemainingTimeChange", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAdSizeChange(value: () => Unit): Self = StObject.set(x, "AdSizeChange", js.Any.fromFunction0(value))
+        inline def setAdSizeChange(value: () => Unit): Self = StObject.set(x, "AdSizeChange", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAdSkippableStateChange(value: () => Unit): Self = StObject.set(x, "AdSkippableStateChange", js.Any.fromFunction0(value))
+        inline def setAdSkippableStateChange(value: () => Unit): Self = StObject.set(x, "AdSkippableStateChange", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAdSkipped(value: () => Unit): Self = StObject.set(x, "AdSkipped", js.Any.fromFunction0(value))
+        inline def setAdSkipped(value: () => Unit): Self = StObject.set(x, "AdSkipped", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAdStarted(value: () => Unit): Self = StObject.set(x, "AdStarted", js.Any.fromFunction0(value))
+        inline def setAdStarted(value: () => Unit): Self = StObject.set(x, "AdStarted", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAdStopped(value: () => Unit): Self = StObject.set(x, "AdStopped", js.Any.fromFunction0(value))
+        inline def setAdStopped(value: () => Unit): Self = StObject.set(x, "AdStopped", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAdUserAcceptInvitation(value: () => Unit): Self = StObject.set(x, "AdUserAcceptInvitation", js.Any.fromFunction0(value))
+        inline def setAdUserAcceptInvitation(value: () => Unit): Self = StObject.set(x, "AdUserAcceptInvitation", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAdUserClose(value: () => Unit): Self = StObject.set(x, "AdUserClose", js.Any.fromFunction0(value))
+        inline def setAdUserClose(value: () => Unit): Self = StObject.set(x, "AdUserClose", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAdUserMinimize(value: () => Unit): Self = StObject.set(x, "AdUserMinimize", js.Any.fromFunction0(value))
+        inline def setAdUserMinimize(value: () => Unit): Self = StObject.set(x, "AdUserMinimize", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAdVideoComplete(value: () => Unit): Self = StObject.set(x, "AdVideoComplete", js.Any.fromFunction0(value))
+        inline def setAdVideoComplete(value: () => Unit): Self = StObject.set(x, "AdVideoComplete", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAdVideoFirstQuartile(value: () => Unit): Self = StObject.set(x, "AdVideoFirstQuartile", js.Any.fromFunction0(value))
+        inline def setAdVideoFirstQuartile(value: () => Unit): Self = StObject.set(x, "AdVideoFirstQuartile", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAdVideoMidpoint(value: () => Unit): Self = StObject.set(x, "AdVideoMidpoint", js.Any.fromFunction0(value))
+        inline def setAdVideoMidpoint(value: () => Unit): Self = StObject.set(x, "AdVideoMidpoint", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAdVideoStart(value: () => Unit): Self = StObject.set(x, "AdVideoStart", js.Any.fromFunction0(value))
+        inline def setAdVideoStart(value: () => Unit): Self = StObject.set(x, "AdVideoStart", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAdVideoThirdQuartile(value: () => Unit): Self = StObject.set(x, "AdVideoThirdQuartile", js.Any.fromFunction0(value))
+        inline def setAdVideoThirdQuartile(value: () => Unit): Self = StObject.set(x, "AdVideoThirdQuartile", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAdVolumeChange(value: () => Unit): Self = StObject.set(x, "AdVolumeChange", js.Any.fromFunction0(value))
+        inline def setAdVolumeChange(value: () => Unit): Self = StObject.set(x, "AdVolumeChange", js.Any.fromFunction0(value))
       }
     }
     
@@ -342,83 +306,57 @@ object iab {
     trait EventsNames extends StObject
     object EventsNames {
       
-      @scala.inline
-      def AdClickThru: typings.iabVpaid.iabVpaidStrings.AdClickThru = "AdClickThru".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdClickThru]
+      inline def AdClickThru: typings.iabVpaid.iabVpaidStrings.AdClickThru = "AdClickThru".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdClickThru]
       
-      @scala.inline
-      def AdDurationChange: typings.iabVpaid.iabVpaidStrings.AdDurationChange = "AdDurationChange".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdDurationChange]
+      inline def AdDurationChange: typings.iabVpaid.iabVpaidStrings.AdDurationChange = "AdDurationChange".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdDurationChange]
       
-      @scala.inline
-      def AdError: typings.iabVpaid.iabVpaidStrings.AdError = "AdError".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdError]
+      inline def AdError: typings.iabVpaid.iabVpaidStrings.AdError = "AdError".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdError]
       
-      @scala.inline
-      def AdExpandedChange: typings.iabVpaid.iabVpaidStrings.AdExpandedChange = "AdExpandedChange".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdExpandedChange]
+      inline def AdExpandedChange: typings.iabVpaid.iabVpaidStrings.AdExpandedChange = "AdExpandedChange".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdExpandedChange]
       
-      @scala.inline
-      def AdImpression: typings.iabVpaid.iabVpaidStrings.AdImpression = "AdImpression".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdImpression]
+      inline def AdImpression: typings.iabVpaid.iabVpaidStrings.AdImpression = "AdImpression".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdImpression]
       
-      @scala.inline
-      def AdInteraction: typings.iabVpaid.iabVpaidStrings.AdInteraction = "AdInteraction".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdInteraction]
+      inline def AdInteraction: typings.iabVpaid.iabVpaidStrings.AdInteraction = "AdInteraction".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdInteraction]
       
-      @scala.inline
-      def AdLinearChange: typings.iabVpaid.iabVpaidStrings.AdLinearChange = "AdLinearChange".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdLinearChange]
+      inline def AdLinearChange: typings.iabVpaid.iabVpaidStrings.AdLinearChange = "AdLinearChange".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdLinearChange]
       
-      @scala.inline
-      def AdLoaded: typings.iabVpaid.iabVpaidStrings.AdLoaded = "AdLoaded".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdLoaded]
+      inline def AdLoaded: typings.iabVpaid.iabVpaidStrings.AdLoaded = "AdLoaded".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdLoaded]
       
-      @scala.inline
-      def AdLog: typings.iabVpaid.iabVpaidStrings.AdLog = "AdLog".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdLog]
+      inline def AdLog: typings.iabVpaid.iabVpaidStrings.AdLog = "AdLog".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdLog]
       
-      @scala.inline
-      def AdPaused: typings.iabVpaid.iabVpaidStrings.AdPaused = "AdPaused".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdPaused]
+      inline def AdPaused: typings.iabVpaid.iabVpaidStrings.AdPaused = "AdPaused".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdPaused]
       
-      @scala.inline
-      def AdPlaying: typings.iabVpaid.iabVpaidStrings.AdPlaying = "AdPlaying".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdPlaying]
+      inline def AdPlaying: typings.iabVpaid.iabVpaidStrings.AdPlaying = "AdPlaying".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdPlaying]
       
-      @scala.inline
-      def AdRemainingTimeChange: typings.iabVpaid.iabVpaidStrings.AdRemainingTimeChange = "AdRemainingTimeChange".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdRemainingTimeChange]
+      inline def AdRemainingTimeChange: typings.iabVpaid.iabVpaidStrings.AdRemainingTimeChange = "AdRemainingTimeChange".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdRemainingTimeChange]
       
-      @scala.inline
-      def AdSizeChange: typings.iabVpaid.iabVpaidStrings.AdSizeChange = "AdSizeChange".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdSizeChange]
+      inline def AdSizeChange: typings.iabVpaid.iabVpaidStrings.AdSizeChange = "AdSizeChange".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdSizeChange]
       
-      @scala.inline
-      def AdSkippableStateChange: typings.iabVpaid.iabVpaidStrings.AdSkippableStateChange = "AdSkippableStateChange".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdSkippableStateChange]
+      inline def AdSkippableStateChange: typings.iabVpaid.iabVpaidStrings.AdSkippableStateChange = "AdSkippableStateChange".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdSkippableStateChange]
       
-      @scala.inline
-      def AdSkipped: typings.iabVpaid.iabVpaidStrings.AdSkipped = "AdSkipped".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdSkipped]
+      inline def AdSkipped: typings.iabVpaid.iabVpaidStrings.AdSkipped = "AdSkipped".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdSkipped]
       
-      @scala.inline
-      def AdStarted: typings.iabVpaid.iabVpaidStrings.AdStarted = "AdStarted".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdStarted]
+      inline def AdStarted: typings.iabVpaid.iabVpaidStrings.AdStarted = "AdStarted".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdStarted]
       
-      @scala.inline
-      def AdStopped: typings.iabVpaid.iabVpaidStrings.AdStopped = "AdStopped".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdStopped]
+      inline def AdStopped: typings.iabVpaid.iabVpaidStrings.AdStopped = "AdStopped".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdStopped]
       
-      @scala.inline
-      def AdUserAcceptInvitation: typings.iabVpaid.iabVpaidStrings.AdUserAcceptInvitation = "AdUserAcceptInvitation".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdUserAcceptInvitation]
+      inline def AdUserAcceptInvitation: typings.iabVpaid.iabVpaidStrings.AdUserAcceptInvitation = "AdUserAcceptInvitation".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdUserAcceptInvitation]
       
-      @scala.inline
-      def AdUserClose: typings.iabVpaid.iabVpaidStrings.AdUserClose = "AdUserClose".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdUserClose]
+      inline def AdUserClose: typings.iabVpaid.iabVpaidStrings.AdUserClose = "AdUserClose".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdUserClose]
       
-      @scala.inline
-      def AdUserMinimize: typings.iabVpaid.iabVpaidStrings.AdUserMinimize = "AdUserMinimize".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdUserMinimize]
+      inline def AdUserMinimize: typings.iabVpaid.iabVpaidStrings.AdUserMinimize = "AdUserMinimize".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdUserMinimize]
       
-      @scala.inline
-      def AdVideoComplete: typings.iabVpaid.iabVpaidStrings.AdVideoComplete = "AdVideoComplete".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdVideoComplete]
+      inline def AdVideoComplete: typings.iabVpaid.iabVpaidStrings.AdVideoComplete = "AdVideoComplete".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdVideoComplete]
       
-      @scala.inline
-      def AdVideoFirstQuartile: typings.iabVpaid.iabVpaidStrings.AdVideoFirstQuartile = "AdVideoFirstQuartile".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdVideoFirstQuartile]
+      inline def AdVideoFirstQuartile: typings.iabVpaid.iabVpaidStrings.AdVideoFirstQuartile = "AdVideoFirstQuartile".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdVideoFirstQuartile]
       
-      @scala.inline
-      def AdVideoMidpoint: typings.iabVpaid.iabVpaidStrings.AdVideoMidpoint = "AdVideoMidpoint".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdVideoMidpoint]
+      inline def AdVideoMidpoint: typings.iabVpaid.iabVpaidStrings.AdVideoMidpoint = "AdVideoMidpoint".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdVideoMidpoint]
       
-      @scala.inline
-      def AdVideoStart: typings.iabVpaid.iabVpaidStrings.AdVideoStart = "AdVideoStart".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdVideoStart]
+      inline def AdVideoStart: typings.iabVpaid.iabVpaidStrings.AdVideoStart = "AdVideoStart".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdVideoStart]
       
-      @scala.inline
-      def AdVideoThirdQuartile: typings.iabVpaid.iabVpaidStrings.AdVideoThirdQuartile = "AdVideoThirdQuartile".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdVideoThirdQuartile]
+      inline def AdVideoThirdQuartile: typings.iabVpaid.iabVpaidStrings.AdVideoThirdQuartile = "AdVideoThirdQuartile".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdVideoThirdQuartile]
       
-      @scala.inline
-      def AdVolumeChange: typings.iabVpaid.iabVpaidStrings.AdVolumeChange = "AdVolumeChange".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdVolumeChange]
+      inline def AdVolumeChange: typings.iabVpaid.iabVpaidStrings.AdVolumeChange = "AdVolumeChange".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdVolumeChange]
     }
     
     trait ParameterizedEventsMap extends StObject {
@@ -433,8 +371,7 @@ object iab {
     }
     object ParameterizedEventsMap {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         AdClickThru: (String, String, Boolean) => Unit,
         AdError: String => Unit,
         AdInteraction: String => Unit,
@@ -444,20 +381,15 @@ object iab {
         __obj.asInstanceOf[ParameterizedEventsMap]
       }
       
-      @scala.inline
-      implicit class ParameterizedEventsMapMutableBuilder[Self <: ParameterizedEventsMap] (val x: Self) extends AnyVal {
+      extension [Self <: ParameterizedEventsMap](x: Self) {
         
-        @scala.inline
-        def setAdClickThru(value: (String, String, Boolean) => Unit): Self = StObject.set(x, "AdClickThru", js.Any.fromFunction3(value))
+        inline def setAdClickThru(value: (String, String, Boolean) => Unit): Self = StObject.set(x, "AdClickThru", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setAdError(value: String => Unit): Self = StObject.set(x, "AdError", js.Any.fromFunction1(value))
+        inline def setAdError(value: String => Unit): Self = StObject.set(x, "AdError", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setAdInteraction(value: String => Unit): Self = StObject.set(x, "AdInteraction", js.Any.fromFunction1(value))
+        inline def setAdInteraction(value: String => Unit): Self = StObject.set(x, "AdInteraction", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setAdLog(value: String => Unit): Self = StObject.set(x, "AdLog", js.Any.fromFunction1(value))
+        inline def setAdLog(value: String => Unit): Self = StObject.set(x, "AdLog", js.Any.fromFunction1(value))
       }
     }
     
@@ -488,71 +420,49 @@ object iab {
     trait SimpleEvents extends StObject
     object SimpleEvents {
       
-      @scala.inline
-      def AdDurationChange: typings.iabVpaid.iabVpaidStrings.AdDurationChange = "AdDurationChange".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdDurationChange]
+      inline def AdDurationChange: typings.iabVpaid.iabVpaidStrings.AdDurationChange = "AdDurationChange".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdDurationChange]
       
-      @scala.inline
-      def AdExpandedChange: typings.iabVpaid.iabVpaidStrings.AdExpandedChange = "AdExpandedChange".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdExpandedChange]
+      inline def AdExpandedChange: typings.iabVpaid.iabVpaidStrings.AdExpandedChange = "AdExpandedChange".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdExpandedChange]
       
-      @scala.inline
-      def AdImpression: typings.iabVpaid.iabVpaidStrings.AdImpression = "AdImpression".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdImpression]
+      inline def AdImpression: typings.iabVpaid.iabVpaidStrings.AdImpression = "AdImpression".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdImpression]
       
-      @scala.inline
-      def AdLinearChange: typings.iabVpaid.iabVpaidStrings.AdLinearChange = "AdLinearChange".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdLinearChange]
+      inline def AdLinearChange: typings.iabVpaid.iabVpaidStrings.AdLinearChange = "AdLinearChange".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdLinearChange]
       
-      @scala.inline
-      def AdLoaded: typings.iabVpaid.iabVpaidStrings.AdLoaded = "AdLoaded".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdLoaded]
+      inline def AdLoaded: typings.iabVpaid.iabVpaidStrings.AdLoaded = "AdLoaded".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdLoaded]
       
-      @scala.inline
-      def AdPaused: typings.iabVpaid.iabVpaidStrings.AdPaused = "AdPaused".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdPaused]
+      inline def AdPaused: typings.iabVpaid.iabVpaidStrings.AdPaused = "AdPaused".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdPaused]
       
-      @scala.inline
-      def AdPlaying: typings.iabVpaid.iabVpaidStrings.AdPlaying = "AdPlaying".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdPlaying]
+      inline def AdPlaying: typings.iabVpaid.iabVpaidStrings.AdPlaying = "AdPlaying".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdPlaying]
       
-      @scala.inline
-      def AdRemainingTimeChange: typings.iabVpaid.iabVpaidStrings.AdRemainingTimeChange = "AdRemainingTimeChange".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdRemainingTimeChange]
+      inline def AdRemainingTimeChange: typings.iabVpaid.iabVpaidStrings.AdRemainingTimeChange = "AdRemainingTimeChange".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdRemainingTimeChange]
       
-      @scala.inline
-      def AdSizeChange: typings.iabVpaid.iabVpaidStrings.AdSizeChange = "AdSizeChange".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdSizeChange]
+      inline def AdSizeChange: typings.iabVpaid.iabVpaidStrings.AdSizeChange = "AdSizeChange".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdSizeChange]
       
-      @scala.inline
-      def AdSkippableStateChange: typings.iabVpaid.iabVpaidStrings.AdSkippableStateChange = "AdSkippableStateChange".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdSkippableStateChange]
+      inline def AdSkippableStateChange: typings.iabVpaid.iabVpaidStrings.AdSkippableStateChange = "AdSkippableStateChange".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdSkippableStateChange]
       
-      @scala.inline
-      def AdSkipped: typings.iabVpaid.iabVpaidStrings.AdSkipped = "AdSkipped".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdSkipped]
+      inline def AdSkipped: typings.iabVpaid.iabVpaidStrings.AdSkipped = "AdSkipped".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdSkipped]
       
-      @scala.inline
-      def AdStarted: typings.iabVpaid.iabVpaidStrings.AdStarted = "AdStarted".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdStarted]
+      inline def AdStarted: typings.iabVpaid.iabVpaidStrings.AdStarted = "AdStarted".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdStarted]
       
-      @scala.inline
-      def AdStopped: typings.iabVpaid.iabVpaidStrings.AdStopped = "AdStopped".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdStopped]
+      inline def AdStopped: typings.iabVpaid.iabVpaidStrings.AdStopped = "AdStopped".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdStopped]
       
-      @scala.inline
-      def AdUserAcceptInvitation: typings.iabVpaid.iabVpaidStrings.AdUserAcceptInvitation = "AdUserAcceptInvitation".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdUserAcceptInvitation]
+      inline def AdUserAcceptInvitation: typings.iabVpaid.iabVpaidStrings.AdUserAcceptInvitation = "AdUserAcceptInvitation".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdUserAcceptInvitation]
       
-      @scala.inline
-      def AdUserClose: typings.iabVpaid.iabVpaidStrings.AdUserClose = "AdUserClose".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdUserClose]
+      inline def AdUserClose: typings.iabVpaid.iabVpaidStrings.AdUserClose = "AdUserClose".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdUserClose]
       
-      @scala.inline
-      def AdUserMinimize: typings.iabVpaid.iabVpaidStrings.AdUserMinimize = "AdUserMinimize".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdUserMinimize]
+      inline def AdUserMinimize: typings.iabVpaid.iabVpaidStrings.AdUserMinimize = "AdUserMinimize".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdUserMinimize]
       
-      @scala.inline
-      def AdVideoComplete: typings.iabVpaid.iabVpaidStrings.AdVideoComplete = "AdVideoComplete".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdVideoComplete]
+      inline def AdVideoComplete: typings.iabVpaid.iabVpaidStrings.AdVideoComplete = "AdVideoComplete".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdVideoComplete]
       
-      @scala.inline
-      def AdVideoFirstQuartile: typings.iabVpaid.iabVpaidStrings.AdVideoFirstQuartile = "AdVideoFirstQuartile".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdVideoFirstQuartile]
+      inline def AdVideoFirstQuartile: typings.iabVpaid.iabVpaidStrings.AdVideoFirstQuartile = "AdVideoFirstQuartile".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdVideoFirstQuartile]
       
-      @scala.inline
-      def AdVideoMidpoint: typings.iabVpaid.iabVpaidStrings.AdVideoMidpoint = "AdVideoMidpoint".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdVideoMidpoint]
+      inline def AdVideoMidpoint: typings.iabVpaid.iabVpaidStrings.AdVideoMidpoint = "AdVideoMidpoint".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdVideoMidpoint]
       
-      @scala.inline
-      def AdVideoStart: typings.iabVpaid.iabVpaidStrings.AdVideoStart = "AdVideoStart".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdVideoStart]
+      inline def AdVideoStart: typings.iabVpaid.iabVpaidStrings.AdVideoStart = "AdVideoStart".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdVideoStart]
       
-      @scala.inline
-      def AdVideoThirdQuartile: typings.iabVpaid.iabVpaidStrings.AdVideoThirdQuartile = "AdVideoThirdQuartile".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdVideoThirdQuartile]
+      inline def AdVideoThirdQuartile: typings.iabVpaid.iabVpaidStrings.AdVideoThirdQuartile = "AdVideoThirdQuartile".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdVideoThirdQuartile]
       
-      @scala.inline
-      def AdVolumeChange: typings.iabVpaid.iabVpaidStrings.AdVolumeChange = "AdVolumeChange".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdVolumeChange]
+      inline def AdVolumeChange: typings.iabVpaid.iabVpaidStrings.AdVolumeChange = "AdVolumeChange".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdVolumeChange]
     }
     
     /* Inlined {[ K in iab-vpaid.iab.vpaid.SimpleEvents ]: (): void} */
@@ -648,8 +558,7 @@ object iab {
     }
     object SimpleEventsMap {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         AdDurationChange: () => Unit,
         AdExpandedChange: () => Unit,
         AdImpression: () => Unit,
@@ -677,74 +586,51 @@ object iab {
         __obj.asInstanceOf[SimpleEventsMap]
       }
       
-      @scala.inline
-      implicit class SimpleEventsMapMutableBuilder[Self <: SimpleEventsMap] (val x: Self) extends AnyVal {
+      extension [Self <: SimpleEventsMap](x: Self) {
         
-        @scala.inline
-        def setAdDurationChange(value: () => Unit): Self = StObject.set(x, "AdDurationChange", js.Any.fromFunction0(value))
+        inline def setAdDurationChange(value: () => Unit): Self = StObject.set(x, "AdDurationChange", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAdExpandedChange(value: () => Unit): Self = StObject.set(x, "AdExpandedChange", js.Any.fromFunction0(value))
+        inline def setAdExpandedChange(value: () => Unit): Self = StObject.set(x, "AdExpandedChange", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAdImpression(value: () => Unit): Self = StObject.set(x, "AdImpression", js.Any.fromFunction0(value))
+        inline def setAdImpression(value: () => Unit): Self = StObject.set(x, "AdImpression", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAdLinearChange(value: () => Unit): Self = StObject.set(x, "AdLinearChange", js.Any.fromFunction0(value))
+        inline def setAdLinearChange(value: () => Unit): Self = StObject.set(x, "AdLinearChange", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAdLoaded(value: () => Unit): Self = StObject.set(x, "AdLoaded", js.Any.fromFunction0(value))
+        inline def setAdLoaded(value: () => Unit): Self = StObject.set(x, "AdLoaded", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAdPaused(value: () => Unit): Self = StObject.set(x, "AdPaused", js.Any.fromFunction0(value))
+        inline def setAdPaused(value: () => Unit): Self = StObject.set(x, "AdPaused", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAdPlaying(value: () => Unit): Self = StObject.set(x, "AdPlaying", js.Any.fromFunction0(value))
+        inline def setAdPlaying(value: () => Unit): Self = StObject.set(x, "AdPlaying", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAdRemainingTimeChange(value: () => Unit): Self = StObject.set(x, "AdRemainingTimeChange", js.Any.fromFunction0(value))
+        inline def setAdRemainingTimeChange(value: () => Unit): Self = StObject.set(x, "AdRemainingTimeChange", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAdSizeChange(value: () => Unit): Self = StObject.set(x, "AdSizeChange", js.Any.fromFunction0(value))
+        inline def setAdSizeChange(value: () => Unit): Self = StObject.set(x, "AdSizeChange", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAdSkippableStateChange(value: () => Unit): Self = StObject.set(x, "AdSkippableStateChange", js.Any.fromFunction0(value))
+        inline def setAdSkippableStateChange(value: () => Unit): Self = StObject.set(x, "AdSkippableStateChange", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAdSkipped(value: () => Unit): Self = StObject.set(x, "AdSkipped", js.Any.fromFunction0(value))
+        inline def setAdSkipped(value: () => Unit): Self = StObject.set(x, "AdSkipped", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAdStarted(value: () => Unit): Self = StObject.set(x, "AdStarted", js.Any.fromFunction0(value))
+        inline def setAdStarted(value: () => Unit): Self = StObject.set(x, "AdStarted", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAdStopped(value: () => Unit): Self = StObject.set(x, "AdStopped", js.Any.fromFunction0(value))
+        inline def setAdStopped(value: () => Unit): Self = StObject.set(x, "AdStopped", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAdUserAcceptInvitation(value: () => Unit): Self = StObject.set(x, "AdUserAcceptInvitation", js.Any.fromFunction0(value))
+        inline def setAdUserAcceptInvitation(value: () => Unit): Self = StObject.set(x, "AdUserAcceptInvitation", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAdUserClose(value: () => Unit): Self = StObject.set(x, "AdUserClose", js.Any.fromFunction0(value))
+        inline def setAdUserClose(value: () => Unit): Self = StObject.set(x, "AdUserClose", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAdUserMinimize(value: () => Unit): Self = StObject.set(x, "AdUserMinimize", js.Any.fromFunction0(value))
+        inline def setAdUserMinimize(value: () => Unit): Self = StObject.set(x, "AdUserMinimize", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAdVideoComplete(value: () => Unit): Self = StObject.set(x, "AdVideoComplete", js.Any.fromFunction0(value))
+        inline def setAdVideoComplete(value: () => Unit): Self = StObject.set(x, "AdVideoComplete", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAdVideoFirstQuartile(value: () => Unit): Self = StObject.set(x, "AdVideoFirstQuartile", js.Any.fromFunction0(value))
+        inline def setAdVideoFirstQuartile(value: () => Unit): Self = StObject.set(x, "AdVideoFirstQuartile", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAdVideoMidpoint(value: () => Unit): Self = StObject.set(x, "AdVideoMidpoint", js.Any.fromFunction0(value))
+        inline def setAdVideoMidpoint(value: () => Unit): Self = StObject.set(x, "AdVideoMidpoint", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAdVideoStart(value: () => Unit): Self = StObject.set(x, "AdVideoStart", js.Any.fromFunction0(value))
+        inline def setAdVideoStart(value: () => Unit): Self = StObject.set(x, "AdVideoStart", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAdVideoThirdQuartile(value: () => Unit): Self = StObject.set(x, "AdVideoThirdQuartile", js.Any.fromFunction0(value))
+        inline def setAdVideoThirdQuartile(value: () => Unit): Self = StObject.set(x, "AdVideoThirdQuartile", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAdVolumeChange(value: () => Unit): Self = StObject.set(x, "AdVolumeChange", js.Any.fromFunction0(value))
+        inline def setAdVolumeChange(value: () => Unit): Self = StObject.set(x, "AdVolumeChange", js.Any.fromFunction0(value))
       }
     }
     
@@ -757,14 +643,11 @@ object iab {
     trait ViewMode extends StObject
     object ViewMode {
       
-      @scala.inline
-      def fullscreen: typings.iabVpaid.iabVpaidStrings.fullscreen = "fullscreen".asInstanceOf[typings.iabVpaid.iabVpaidStrings.fullscreen]
+      inline def fullscreen: typings.iabVpaid.iabVpaidStrings.fullscreen = "fullscreen".asInstanceOf[typings.iabVpaid.iabVpaidStrings.fullscreen]
       
-      @scala.inline
-      def normal: typings.iabVpaid.iabVpaidStrings.normal = "normal".asInstanceOf[typings.iabVpaid.iabVpaidStrings.normal]
+      inline def normal: typings.iabVpaid.iabVpaidStrings.normal = "normal".asInstanceOf[typings.iabVpaid.iabVpaidStrings.normal]
       
-      @scala.inline
-      def thumbnail: typings.iabVpaid.iabVpaidStrings.thumbnail = "thumbnail".asInstanceOf[typings.iabVpaid.iabVpaidStrings.thumbnail]
+      inline def thumbnail: typings.iabVpaid.iabVpaidStrings.thumbnail = "thumbnail".asInstanceOf[typings.iabVpaid.iabVpaidStrings.thumbnail]
     }
     
     /**

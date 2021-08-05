@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(decodedData: String): EncodedData = ^.asInstanceOf[js.Dynamic].apply(decodedData.asInstanceOf[js.Any]).asInstanceOf[EncodedData]
+  inline def apply(decodedData: String): EncodedData = ^.asInstanceOf[js.Dynamic].apply(decodedData.asInstanceOf[js.Any]).asInstanceOf[EncodedData]
   
   @JSImport("btoa-lite", JSImport.Namespace)
   @js.native

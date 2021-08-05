@@ -25,8 +25,7 @@ object featureListUniDriverMod {
   }
   object FeatureListUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -41,26 +40,19 @@ object featureListUniDriverMod {
       __obj.asInstanceOf[FeatureListUniDriver]
     }
     
-    @scala.inline
-    implicit class FeatureListUniDriverMutableBuilder[Self <: FeatureListUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: FeatureListUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetFeatureText(value: () => js.Promise[String]): Self = StObject.set(x, "getFeatureText", js.Any.fromFunction0(value))
+      inline def setGetFeatureText(value: () => js.Promise[String]): Self = StObject.set(x, "getFeatureText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFeatureTitle(value: () => js.Promise[String]): Self = StObject.set(x, "getFeatureTitle", js.Any.fromFunction0(value))
+      inline def setGetFeatureTitle(value: () => js.Promise[String]): Self = StObject.set(x, "getFeatureTitle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetNumberOfFeatures(value: () => js.Promise[Double]): Self = StObject.set(x, "getNumberOfFeatures", js.Any.fromFunction0(value))
+      inline def setGetNumberOfFeatures(value: () => js.Promise[Double]): Self = StObject.set(x, "getNumberOfFeatures", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasFeatureImage(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasFeatureImage", js.Any.fromFunction0(value))
+      inline def setHasFeatureImage(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasFeatureImage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasFeatureText(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasFeatureText", js.Any.fromFunction0(value))
+      inline def setHasFeatureText(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasFeatureText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasFeatureTitle(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasFeatureTitle", js.Any.fromFunction0(value))
+      inline def setHasFeatureTitle(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasFeatureTitle", js.Any.fromFunction0(value))
     }
   }
 }

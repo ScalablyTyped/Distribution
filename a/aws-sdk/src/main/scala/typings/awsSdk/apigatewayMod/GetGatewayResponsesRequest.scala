@@ -23,28 +23,21 @@ trait GetGatewayResponsesRequest extends StObject {
 }
 object GetGatewayResponsesRequest {
   
-  @scala.inline
-  def apply(restApiId: String): GetGatewayResponsesRequest = {
+  inline def apply(restApiId: String): GetGatewayResponsesRequest = {
     val __obj = js.Dynamic.literal(restApiId = restApiId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetGatewayResponsesRequest]
   }
   
-  @scala.inline
-  implicit class GetGatewayResponsesRequestMutableBuilder[Self <: GetGatewayResponsesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetGatewayResponsesRequest](x: Self) {
     
-    @scala.inline
-    def setLimit(value: NullableInteger): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: NullableInteger): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
+    inline def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
   }
 }

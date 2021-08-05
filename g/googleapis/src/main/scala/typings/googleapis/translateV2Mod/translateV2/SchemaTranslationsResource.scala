@@ -28,31 +28,23 @@ trait SchemaTranslationsResource extends StObject {
 }
 object SchemaTranslationsResource {
   
-  @scala.inline
-  def apply(): SchemaTranslationsResource = {
+  inline def apply(): SchemaTranslationsResource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTranslationsResource]
   }
   
-  @scala.inline
-  implicit class SchemaTranslationsResourceMutableBuilder[Self <: SchemaTranslationsResource] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTranslationsResource](x: Self) {
     
-    @scala.inline
-    def setDetectedSourceLanguage(value: String): Self = StObject.set(x, "detectedSourceLanguage", value.asInstanceOf[js.Any])
+    inline def setDetectedSourceLanguage(value: String): Self = StObject.set(x, "detectedSourceLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectedSourceLanguageUndefined: Self = StObject.set(x, "detectedSourceLanguage", js.undefined)
+    inline def setDetectedSourceLanguageUndefined: Self = StObject.set(x, "detectedSourceLanguage", js.undefined)
     
-    @scala.inline
-    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    @scala.inline
-    def setTranslatedText(value: String): Self = StObject.set(x, "translatedText", value.asInstanceOf[js.Any])
+    inline def setTranslatedText(value: String): Self = StObject.set(x, "translatedText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslatedTextUndefined: Self = StObject.set(x, "translatedText", js.undefined)
+    inline def setTranslatedTextUndefined: Self = StObject.set(x, "translatedText", js.undefined)
   }
 }

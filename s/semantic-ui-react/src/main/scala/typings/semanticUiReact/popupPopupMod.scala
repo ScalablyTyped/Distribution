@@ -75,23 +75,18 @@ object popupPopupMod extends Shortcut {
   }
   object PopperOffsetsFunctionParams {
     
-    @scala.inline
-    def apply(placement: Placement, popper: Rect, reference: Rect): PopperOffsetsFunctionParams = {
+    inline def apply(placement: Placement, popper: Rect, reference: Rect): PopperOffsetsFunctionParams = {
       val __obj = js.Dynamic.literal(placement = placement.asInstanceOf[js.Any], popper = popper.asInstanceOf[js.Any], reference = reference.asInstanceOf[js.Any])
       __obj.asInstanceOf[PopperOffsetsFunctionParams]
     }
     
-    @scala.inline
-    implicit class PopperOffsetsFunctionParamsMutableBuilder[Self <: PopperOffsetsFunctionParams] (val x: Self) extends AnyVal {
+    extension [Self <: PopperOffsetsFunctionParams](x: Self) {
       
-      @scala.inline
-      def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopper(value: Rect): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
+      inline def setPopper(value: Rect): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReference(value: Rect): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+      inline def setReference(value: Rect): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
     }
   }
   
@@ -111,8 +106,7 @@ object popupPopupMod extends Shortcut {
        with /* key */ StringDictionary[js.Any]
   object PopupProps {
     
-    @scala.inline
-    def apply(): PopupProps = {
+    inline def apply(): PopupProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PopupProps]
     }
@@ -242,207 +236,144 @@ object popupPopupMod extends Shortcut {
   }
   object StrictPopupProps {
     
-    @scala.inline
-    def apply(): StrictPopupProps = {
+    inline def apply(): StrictPopupProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictPopupProps]
     }
     
-    @scala.inline
-    implicit class StrictPopupPropsMutableBuilder[Self <: StrictPopupProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictPopupProps](x: Self) {
       
-      @scala.inline
-      def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setBasic(value: Boolean): Self = StObject.set(x, "basic", value.asInstanceOf[js.Any])
+      inline def setBasic(value: Boolean): Self = StObject.set(x, "basic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasicUndefined: Self = StObject.set(x, "basic", js.undefined)
+      inline def setBasicUndefined: Self = StObject.set(x, "basic", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setContent(value: SemanticShorthandItem[PopupContentProps]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: SemanticShorthandItem[PopupContentProps]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentFunction3(
+      inline def setContentFunction3(
         value: (/* component */ ElementType[PopupContentProps], PopupContentProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
       ): Self = StObject.set(x, "content", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setContext(value: Document | Window | HTMLElement | RefObject[HTMLElement]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Document | Window | HTMLElement | RefObject[HTMLElement]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setEventsEnabled(value: Boolean): Self = StObject.set(x, "eventsEnabled", value.asInstanceOf[js.Any])
+      inline def setEventsEnabled(value: Boolean): Self = StObject.set(x, "eventsEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsEnabledUndefined: Self = StObject.set(x, "eventsEnabled", js.undefined)
+      inline def setEventsEnabledUndefined: Self = StObject.set(x, "eventsEnabled", js.undefined)
       
-      @scala.inline
-      def setFlowing(value: Boolean): Self = StObject.set(x, "flowing", value.asInstanceOf[js.Any])
+      inline def setFlowing(value: Boolean): Self = StObject.set(x, "flowing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlowingUndefined: Self = StObject.set(x, "flowing", js.undefined)
+      inline def setFlowingUndefined: Self = StObject.set(x, "flowing", js.undefined)
       
-      @scala.inline
-      def setHeader(value: SemanticShorthandItem[PopupHeaderProps]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: SemanticShorthandItem[PopupHeaderProps]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderFunction3(
+      inline def setHeaderFunction3(
         value: (/* component */ ElementType[PopupHeaderProps], PopupHeaderProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
       ): Self = StObject.set(x, "header", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setHideOnScroll(value: Boolean): Self = StObject.set(x, "hideOnScroll", value.asInstanceOf[js.Any])
+      inline def setHideOnScroll(value: Boolean): Self = StObject.set(x, "hideOnScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideOnScrollUndefined: Self = StObject.set(x, "hideOnScroll", js.undefined)
+      inline def setHideOnScrollUndefined: Self = StObject.set(x, "hideOnScroll", js.undefined)
       
-      @scala.inline
-      def setHoverable(value: Boolean): Self = StObject.set(x, "hoverable", value.asInstanceOf[js.Any])
+      inline def setHoverable(value: Boolean): Self = StObject.set(x, "hoverable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoverableUndefined: Self = StObject.set(x, "hoverable", js.undefined)
+      inline def setHoverableUndefined: Self = StObject.set(x, "hoverable", js.undefined)
       
-      @scala.inline
-      def setInverted(value: Boolean): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
+      inline def setInverted(value: Boolean): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvertedUndefined: Self = StObject.set(x, "inverted", js.undefined)
+      inline def setInvertedUndefined: Self = StObject.set(x, "inverted", js.undefined)
       
-      @scala.inline
-      def setOffset(value: (js.Tuple2[Double, js.UndefOr[Double]]) | PopperOffsetsFunction): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: (js.Tuple2[Double, js.UndefOr[Double]]) | PopperOffsetsFunction): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetFunction1(
+      inline def setOffsetFunction1(
         value: /* params */ PopperOffsetsFunctionParams => js.Tuple2[js.UndefOr[Double], js.UndefOr[Double]]
       ): Self = StObject.set(x, "offset", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setOn(value: hover | click | focus | (js.Array[hover | click | focus])): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+      inline def setOn(value: hover | click | focus | (js.Array[hover | click | focus])): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClose(value: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ PopupProps) => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction2(value))
+      inline def setOnClose(value: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ PopupProps) => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      @scala.inline
-      def setOnMount(value: (/* nothing */ Null, /* data */ PopupProps) => Unit): Self = StObject.set(x, "onMount", js.Any.fromFunction2(value))
+      inline def setOnMount(value: (/* nothing */ Null, /* data */ PopupProps) => Unit): Self = StObject.set(x, "onMount", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnMountUndefined: Self = StObject.set(x, "onMount", js.undefined)
+      inline def setOnMountUndefined: Self = StObject.set(x, "onMount", js.undefined)
       
-      @scala.inline
-      def setOnOpen(value: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ PopupProps) => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction2(value))
+      inline def setOnOpen(value: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ PopupProps) => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
+      inline def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
       
-      @scala.inline
-      def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
+      inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
       
-      @scala.inline
-      def setOnUnmount(value: (/* nothing */ Null, /* data */ PopupProps) => Unit): Self = StObject.set(x, "onUnmount", js.Any.fromFunction2(value))
+      inline def setOnUnmount(value: (/* nothing */ Null, /* data */ PopupProps) => Unit): Self = StObject.set(x, "onUnmount", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnUnmountUndefined: Self = StObject.set(x, "onUnmount", js.undefined)
+      inline def setOnUnmountUndefined: Self = StObject.set(x, "onUnmount", js.undefined)
       
-      @scala.inline
-      def setOnVarargs(value: (hover | click | focus)*): Self = StObject.set(x, "on", js.Array(value :_*))
+      inline def setOnVarargs(value: (hover | click | focus)*): Self = StObject.set(x, "on", js.Array(value :_*))
       
-      @scala.inline
-      def setPinned(value: Boolean): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
+      inline def setPinned(value: Boolean): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPinnedUndefined: Self = StObject.set(x, "pinned", js.undefined)
+      inline def setPinnedUndefined: Self = StObject.set(x, "pinned", js.undefined)
       
-      @scala.inline
-      def setPopper(value: SemanticShorthandItem[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
+      inline def setPopper(value: SemanticShorthandItem[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopperDependencies(value: js.Array[js.Any]): Self = StObject.set(x, "popperDependencies", value.asInstanceOf[js.Any])
+      inline def setPopperDependencies(value: js.Array[js.Any]): Self = StObject.set(x, "popperDependencies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopperDependenciesUndefined: Self = StObject.set(x, "popperDependencies", js.undefined)
+      inline def setPopperDependenciesUndefined: Self = StObject.set(x, "popperDependencies", js.undefined)
       
-      @scala.inline
-      def setPopperDependenciesVarargs(value: js.Any*): Self = StObject.set(x, "popperDependencies", js.Array(value :_*))
+      inline def setPopperDependenciesVarargs(value: js.Any*): Self = StObject.set(x, "popperDependencies", js.Array(value :_*))
       
-      @scala.inline
-      def setPopperFunction3(
+      inline def setPopperFunction3(
         value: (/* component */ ElementType[HTMLAttributes[HTMLDivElement]], HTMLAttributes[HTMLDivElement], /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
       ): Self = StObject.set(x, "popper", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPopperModifiers(value: js.Array[js.Any]): Self = StObject.set(x, "popperModifiers", value.asInstanceOf[js.Any])
+      inline def setPopperModifiers(value: js.Array[js.Any]): Self = StObject.set(x, "popperModifiers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopperModifiersUndefined: Self = StObject.set(x, "popperModifiers", js.undefined)
+      inline def setPopperModifiersUndefined: Self = StObject.set(x, "popperModifiers", js.undefined)
       
-      @scala.inline
-      def setPopperModifiersVarargs(value: js.Any*): Self = StObject.set(x, "popperModifiers", js.Array(value :_*))
+      inline def setPopperModifiersVarargs(value: js.Any*): Self = StObject.set(x, "popperModifiers", js.Array(value :_*))
       
-      @scala.inline
-      def setPopperUndefined: Self = StObject.set(x, "popper", js.undefined)
+      inline def setPopperUndefined: Self = StObject.set(x, "popper", js.undefined)
       
-      @scala.inline
-      def setPosition(
+      inline def setPosition(
         value: (`top left`) | (`top right`) | (`bottom right`) | (`bottom left`) | (`right center`) | (`left center`) | (`top center`) | (`bottom center`)
       ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionFixed(value: Boolean): Self = StObject.set(x, "positionFixed", value.asInstanceOf[js.Any])
+      inline def setPositionFixed(value: Boolean): Self = StObject.set(x, "positionFixed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionFixedUndefined: Self = StObject.set(x, "positionFixed", js.undefined)
+      inline def setPositionFixedUndefined: Self = StObject.set(x, "positionFixed", js.undefined)
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setSize(value: mini | tiny | small | large | huge): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: mini | tiny | small | large | huge): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setWide(value: Boolean | very): Self = StObject.set(x, "wide", value.asInstanceOf[js.Any])
+      inline def setWide(value: Boolean | very): Self = StObject.set(x, "wide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWideUndefined: Self = StObject.set(x, "wide", js.undefined)
+      inline def setWideUndefined: Self = StObject.set(x, "wide", js.undefined)
     }
   }
   

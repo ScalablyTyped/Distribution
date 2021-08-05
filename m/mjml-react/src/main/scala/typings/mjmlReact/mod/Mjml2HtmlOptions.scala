@@ -24,49 +24,35 @@ trait Mjml2HtmlOptions extends StObject {
 }
 object Mjml2HtmlOptions {
   
-  @scala.inline
-  def apply(): Mjml2HtmlOptions = {
+  inline def apply(): Mjml2HtmlOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Mjml2HtmlOptions]
   }
   
-  @scala.inline
-  implicit class Mjml2HtmlOptionsMutableBuilder[Self <: Mjml2HtmlOptions] (val x: Self) extends AnyVal {
+  extension [Self <: Mjml2HtmlOptions](x: Self) {
     
-    @scala.inline
-    def setBeautify(value: Boolean): Self = StObject.set(x, "beautify", value.asInstanceOf[js.Any])
+    inline def setBeautify(value: Boolean): Self = StObject.set(x, "beautify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeautifyUndefined: Self = StObject.set(x, "beautify", js.undefined)
+    inline def setBeautifyUndefined: Self = StObject.set(x, "beautify", js.undefined)
     
-    @scala.inline
-    def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
+    inline def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
     
-    @scala.inline
-    def setFonts(value: StringDictionary[String]): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
+    inline def setFonts(value: StringDictionary[String]): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontsUndefined: Self = StObject.set(x, "fonts", js.undefined)
+    inline def setFontsUndefined: Self = StObject.set(x, "fonts", js.undefined)
     
-    @scala.inline
-    def setKeepComments(value: Boolean): Self = StObject.set(x, "keepComments", value.asInstanceOf[js.Any])
+    inline def setKeepComments(value: Boolean): Self = StObject.set(x, "keepComments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepCommentsUndefined: Self = StObject.set(x, "keepComments", js.undefined)
+    inline def setKeepCommentsUndefined: Self = StObject.set(x, "keepComments", js.undefined)
     
-    @scala.inline
-    def setMinify(value: Boolean): Self = StObject.set(x, "minify", value.asInstanceOf[js.Any])
+    inline def setMinify(value: Boolean): Self = StObject.set(x, "minify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinifyUndefined: Self = StObject.set(x, "minify", js.undefined)
+    inline def setMinifyUndefined: Self = StObject.set(x, "minify", js.undefined)
     
-    @scala.inline
-    def setValidationLevel(value: strict | soft | skip): Self = StObject.set(x, "validationLevel", value.asInstanceOf[js.Any])
+    inline def setValidationLevel(value: strict | soft | skip): Self = StObject.set(x, "validationLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationLevelUndefined: Self = StObject.set(x, "validationLevel", js.undefined)
+    inline def setValidationLevelUndefined: Self = StObject.set(x, "validationLevel", js.undefined)
   }
 }

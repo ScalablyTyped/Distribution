@@ -110,7 +110,7 @@ object urlConfigMod {
       */
     def protocol(): String = js.native
     
-    var router: js.Any = js.native
+    /* private */ var router: js.Any = js.native
     
     /**
       * Defines whether URLs should match trailing slashes, or not (the default behavior).

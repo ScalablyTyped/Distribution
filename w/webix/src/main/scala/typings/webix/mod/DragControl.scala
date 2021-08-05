@@ -56,6 +56,5 @@ trait DragControl extends StObject {
 }
 object DragControl {
   
-  @scala.inline
-  def apply: DragControl = ^.asInstanceOf[js.Dynamic].selectDynamic("DragControl").asInstanceOf[DragControl]
+  inline def apply: DragControl = ^.asInstanceOf[js.Dynamic].selectDynamic("DragControl").asInstanceOf[DragControl]
 }

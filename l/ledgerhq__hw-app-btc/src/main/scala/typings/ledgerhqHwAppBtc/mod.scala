@@ -28,14 +28,11 @@ object mod {
   trait AddressFormat extends StObject
   object AddressFormat {
     
-    @scala.inline
-    def bech32: typings.ledgerhqHwAppBtc.ledgerhqHwAppBtcStrings.bech32 = "bech32".asInstanceOf[typings.ledgerhqHwAppBtc.ledgerhqHwAppBtcStrings.bech32]
+    inline def bech32: typings.ledgerhqHwAppBtc.ledgerhqHwAppBtcStrings.bech32 = "bech32".asInstanceOf[typings.ledgerhqHwAppBtc.ledgerhqHwAppBtcStrings.bech32]
     
-    @scala.inline
-    def legacy: typings.ledgerhqHwAppBtc.ledgerhqHwAppBtcStrings.legacy = "legacy".asInstanceOf[typings.ledgerhqHwAppBtc.ledgerhqHwAppBtcStrings.legacy]
+    inline def legacy: typings.ledgerhqHwAppBtc.ledgerhqHwAppBtcStrings.legacy = "legacy".asInstanceOf[typings.ledgerhqHwAppBtc.ledgerhqHwAppBtcStrings.legacy]
     
-    @scala.inline
-    def p2sh: typings.ledgerhqHwAppBtc.ledgerhqHwAppBtcStrings.p2sh = "p2sh".asInstanceOf[typings.ledgerhqHwAppBtc.ledgerhqHwAppBtcStrings.p2sh]
+    inline def p2sh: typings.ledgerhqHwAppBtc.ledgerhqHwAppBtcStrings.p2sh = "p2sh".asInstanceOf[typings.ledgerhqHwAppBtc.ledgerhqHwAppBtcStrings.p2sh]
   }
   
   @js.native
@@ -253,8 +250,7 @@ object mod {
   }
   object CreateTransactionArg {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       associatedKeysets: js.Array[String],
       inputs: js.Array[js.Tuple4[Transaction, Double, String | Null, Double | Null]],
       outputScriptHex: String
@@ -263,92 +259,63 @@ object mod {
       __obj.asInstanceOf[CreateTransactionArg]
     }
     
-    @scala.inline
-    implicit class CreateTransactionArgMutableBuilder[Self <: CreateTransactionArg] (val x: Self) extends AnyVal {
+    extension [Self <: CreateTransactionArg](x: Self) {
       
-      @scala.inline
-      def setAdditionals(value: js.Array[String]): Self = StObject.set(x, "additionals", value.asInstanceOf[js.Any])
+      inline def setAdditionals(value: js.Array[String]): Self = StObject.set(x, "additionals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalsUndefined: Self = StObject.set(x, "additionals", js.undefined)
+      inline def setAdditionalsUndefined: Self = StObject.set(x, "additionals", js.undefined)
       
-      @scala.inline
-      def setAdditionalsVarargs(value: String*): Self = StObject.set(x, "additionals", js.Array(value :_*))
+      inline def setAdditionalsVarargs(value: String*): Self = StObject.set(x, "additionals", js.Array(value :_*))
       
-      @scala.inline
-      def setAssociatedKeysets(value: js.Array[String]): Self = StObject.set(x, "associatedKeysets", value.asInstanceOf[js.Any])
+      inline def setAssociatedKeysets(value: js.Array[String]): Self = StObject.set(x, "associatedKeysets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssociatedKeysetsVarargs(value: String*): Self = StObject.set(x, "associatedKeysets", js.Array(value :_*))
+      inline def setAssociatedKeysetsVarargs(value: String*): Self = StObject.set(x, "associatedKeysets", js.Array(value :_*))
       
-      @scala.inline
-      def setChangePath(value: String): Self = StObject.set(x, "changePath", value.asInstanceOf[js.Any])
+      inline def setChangePath(value: String): Self = StObject.set(x, "changePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChangePathUndefined: Self = StObject.set(x, "changePath", js.undefined)
+      inline def setChangePathUndefined: Self = StObject.set(x, "changePath", js.undefined)
       
-      @scala.inline
-      def setExpiryHeight(value: Buffer): Self = StObject.set(x, "expiryHeight", value.asInstanceOf[js.Any])
+      inline def setExpiryHeight(value: Buffer): Self = StObject.set(x, "expiryHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiryHeightUndefined: Self = StObject.set(x, "expiryHeight", js.undefined)
+      inline def setExpiryHeightUndefined: Self = StObject.set(x, "expiryHeight", js.undefined)
       
-      @scala.inline
-      def setInitialTimestamp(value: Double): Self = StObject.set(x, "initialTimestamp", value.asInstanceOf[js.Any])
+      inline def setInitialTimestamp(value: Double): Self = StObject.set(x, "initialTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialTimestampUndefined: Self = StObject.set(x, "initialTimestamp", js.undefined)
+      inline def setInitialTimestampUndefined: Self = StObject.set(x, "initialTimestamp", js.undefined)
       
-      @scala.inline
-      def setInputs(value: js.Array[js.Tuple4[Transaction, Double, String | Null, Double | Null]]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+      inline def setInputs(value: js.Array[js.Tuple4[Transaction, Double, String | Null, Double | Null]]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputsVarargs(value: (js.Tuple4[Transaction, Double, String | Null, Double | Null])*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+      inline def setInputsVarargs(value: (js.Tuple4[Transaction, Double, String | Null, Double | Null])*): Self = StObject.set(x, "inputs", js.Array(value :_*))
       
-      @scala.inline
-      def setLockTime(value: Double): Self = StObject.set(x, "lockTime", value.asInstanceOf[js.Any])
+      inline def setLockTime(value: Double): Self = StObject.set(x, "lockTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLockTimeUndefined: Self = StObject.set(x, "lockTime", js.undefined)
+      inline def setLockTimeUndefined: Self = StObject.set(x, "lockTime", js.undefined)
       
-      @scala.inline
-      def setOnDeviceSignatureGranted(value: () => Unit): Self = StObject.set(x, "onDeviceSignatureGranted", js.Any.fromFunction0(value))
+      inline def setOnDeviceSignatureGranted(value: () => Unit): Self = StObject.set(x, "onDeviceSignatureGranted", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnDeviceSignatureGrantedUndefined: Self = StObject.set(x, "onDeviceSignatureGranted", js.undefined)
+      inline def setOnDeviceSignatureGrantedUndefined: Self = StObject.set(x, "onDeviceSignatureGranted", js.undefined)
       
-      @scala.inline
-      def setOnDeviceSignatureRequested(value: () => Unit): Self = StObject.set(x, "onDeviceSignatureRequested", js.Any.fromFunction0(value))
+      inline def setOnDeviceSignatureRequested(value: () => Unit): Self = StObject.set(x, "onDeviceSignatureRequested", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnDeviceSignatureRequestedUndefined: Self = StObject.set(x, "onDeviceSignatureRequested", js.undefined)
+      inline def setOnDeviceSignatureRequestedUndefined: Self = StObject.set(x, "onDeviceSignatureRequested", js.undefined)
       
-      @scala.inline
-      def setOnDeviceStreaming(value: /* hasProgressTotalIndex */ Index => Unit): Self = StObject.set(x, "onDeviceStreaming", js.Any.fromFunction1(value))
+      inline def setOnDeviceStreaming(value: /* hasProgressTotalIndex */ Index => Unit): Self = StObject.set(x, "onDeviceStreaming", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDeviceStreamingUndefined: Self = StObject.set(x, "onDeviceStreaming", js.undefined)
+      inline def setOnDeviceStreamingUndefined: Self = StObject.set(x, "onDeviceStreaming", js.undefined)
       
-      @scala.inline
-      def setOutputScriptHex(value: String): Self = StObject.set(x, "outputScriptHex", value.asInstanceOf[js.Any])
+      inline def setOutputScriptHex(value: String): Self = StObject.set(x, "outputScriptHex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegwit(value: Boolean): Self = StObject.set(x, "segwit", value.asInstanceOf[js.Any])
+      inline def setSegwit(value: Boolean): Self = StObject.set(x, "segwit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegwitUndefined: Self = StObject.set(x, "segwit", js.undefined)
+      inline def setSegwitUndefined: Self = StObject.set(x, "segwit", js.undefined)
       
-      @scala.inline
-      def setSigHashType(value: Double): Self = StObject.set(x, "sigHashType", value.asInstanceOf[js.Any])
+      inline def setSigHashType(value: Double): Self = StObject.set(x, "sigHashType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSigHashTypeUndefined: Self = StObject.set(x, "sigHashType", js.undefined)
+      inline def setSigHashTypeUndefined: Self = StObject.set(x, "sigHashType", js.undefined)
       
-      @scala.inline
-      def setUseTrustedInputForSegwit(value: Boolean): Self = StObject.set(x, "useTrustedInputForSegwit", value.asInstanceOf[js.Any])
+      inline def setUseTrustedInputForSegwit(value: Boolean): Self = StObject.set(x, "useTrustedInputForSegwit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseTrustedInputForSegwitUndefined: Self = StObject.set(x, "useTrustedInputForSegwit", js.undefined)
+      inline def setUseTrustedInputForSegwitUndefined: Self = StObject.set(x, "useTrustedInputForSegwit", js.undefined)
     }
   }
   
@@ -371,8 +338,7 @@ object mod {
   }
   object SignP2SHTransactionArg {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       associatedKeysets: js.Array[String],
       inputs: js.Array[js.Tuple4[Transaction, Double, String | Null, Double | Null]],
       outputScriptHex: String
@@ -381,47 +347,33 @@ object mod {
       __obj.asInstanceOf[SignP2SHTransactionArg]
     }
     
-    @scala.inline
-    implicit class SignP2SHTransactionArgMutableBuilder[Self <: SignP2SHTransactionArg] (val x: Self) extends AnyVal {
+    extension [Self <: SignP2SHTransactionArg](x: Self) {
       
-      @scala.inline
-      def setAssociatedKeysets(value: js.Array[String]): Self = StObject.set(x, "associatedKeysets", value.asInstanceOf[js.Any])
+      inline def setAssociatedKeysets(value: js.Array[String]): Self = StObject.set(x, "associatedKeysets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssociatedKeysetsVarargs(value: String*): Self = StObject.set(x, "associatedKeysets", js.Array(value :_*))
+      inline def setAssociatedKeysetsVarargs(value: String*): Self = StObject.set(x, "associatedKeysets", js.Array(value :_*))
       
-      @scala.inline
-      def setInputs(value: js.Array[js.Tuple4[Transaction, Double, String | Null, Double | Null]]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+      inline def setInputs(value: js.Array[js.Tuple4[Transaction, Double, String | Null, Double | Null]]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputsVarargs(value: (js.Tuple4[Transaction, Double, String | Null, Double | Null])*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+      inline def setInputsVarargs(value: (js.Tuple4[Transaction, Double, String | Null, Double | Null])*): Self = StObject.set(x, "inputs", js.Array(value :_*))
       
-      @scala.inline
-      def setLockTime(value: Double): Self = StObject.set(x, "lockTime", value.asInstanceOf[js.Any])
+      inline def setLockTime(value: Double): Self = StObject.set(x, "lockTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLockTimeUndefined: Self = StObject.set(x, "lockTime", js.undefined)
+      inline def setLockTimeUndefined: Self = StObject.set(x, "lockTime", js.undefined)
       
-      @scala.inline
-      def setOutputScriptHex(value: String): Self = StObject.set(x, "outputScriptHex", value.asInstanceOf[js.Any])
+      inline def setOutputScriptHex(value: String): Self = StObject.set(x, "outputScriptHex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegwit(value: Boolean): Self = StObject.set(x, "segwit", value.asInstanceOf[js.Any])
+      inline def setSegwit(value: Boolean): Self = StObject.set(x, "segwit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegwitUndefined: Self = StObject.set(x, "segwit", js.undefined)
+      inline def setSegwitUndefined: Self = StObject.set(x, "segwit", js.undefined)
       
-      @scala.inline
-      def setSigHashType(value: Double): Self = StObject.set(x, "sigHashType", value.asInstanceOf[js.Any])
+      inline def setSigHashType(value: Double): Self = StObject.set(x, "sigHashType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSigHashTypeUndefined: Self = StObject.set(x, "sigHashType", js.undefined)
+      inline def setSigHashTypeUndefined: Self = StObject.set(x, "sigHashType", js.undefined)
       
-      @scala.inline
-      def setTransactionVersion(value: Double): Self = StObject.set(x, "transactionVersion", value.asInstanceOf[js.Any])
+      inline def setTransactionVersion(value: Double): Self = StObject.set(x, "transactionVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransactionVersionUndefined: Self = StObject.set(x, "transactionVersion", js.undefined)
+      inline def setTransactionVersionUndefined: Self = StObject.set(x, "transactionVersion", js.undefined)
     }
   }
   
@@ -447,68 +399,48 @@ object mod {
   }
   object Transaction {
     
-    @scala.inline
-    def apply(inputs: js.Array[TransactionInput], version: Buffer): Transaction = {
+    inline def apply(inputs: js.Array[TransactionInput], version: Buffer): Transaction = {
       val __obj = js.Dynamic.literal(inputs = inputs.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[Transaction]
     }
     
-    @scala.inline
-    implicit class TransactionMutableBuilder[Self <: Transaction] (val x: Self) extends AnyVal {
+    extension [Self <: Transaction](x: Self) {
       
-      @scala.inline
-      def setExtraData(value: Buffer): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
+      inline def setExtraData(value: Buffer): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraDataUndefined: Self = StObject.set(x, "extraData", js.undefined)
+      inline def setExtraDataUndefined: Self = StObject.set(x, "extraData", js.undefined)
       
-      @scala.inline
-      def setInputs(value: js.Array[TransactionInput]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+      inline def setInputs(value: js.Array[TransactionInput]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputsVarargs(value: TransactionInput*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+      inline def setInputsVarargs(value: TransactionInput*): Self = StObject.set(x, "inputs", js.Array(value :_*))
       
-      @scala.inline
-      def setLocktime(value: Buffer): Self = StObject.set(x, "locktime", value.asInstanceOf[js.Any])
+      inline def setLocktime(value: Buffer): Self = StObject.set(x, "locktime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocktimeUndefined: Self = StObject.set(x, "locktime", js.undefined)
+      inline def setLocktimeUndefined: Self = StObject.set(x, "locktime", js.undefined)
       
-      @scala.inline
-      def setNExpiryHeight(value: Buffer): Self = StObject.set(x, "nExpiryHeight", value.asInstanceOf[js.Any])
+      inline def setNExpiryHeight(value: Buffer): Self = StObject.set(x, "nExpiryHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNExpiryHeightUndefined: Self = StObject.set(x, "nExpiryHeight", js.undefined)
+      inline def setNExpiryHeightUndefined: Self = StObject.set(x, "nExpiryHeight", js.undefined)
       
-      @scala.inline
-      def setNVersionGroupId(value: Buffer): Self = StObject.set(x, "nVersionGroupId", value.asInstanceOf[js.Any])
+      inline def setNVersionGroupId(value: Buffer): Self = StObject.set(x, "nVersionGroupId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNVersionGroupIdUndefined: Self = StObject.set(x, "nVersionGroupId", js.undefined)
+      inline def setNVersionGroupIdUndefined: Self = StObject.set(x, "nVersionGroupId", js.undefined)
       
-      @scala.inline
-      def setOutputs(value: js.Array[TransactionOutput]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
+      inline def setOutputs(value: js.Array[TransactionOutput]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
+      inline def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
       
-      @scala.inline
-      def setOutputsVarargs(value: TransactionOutput*): Self = StObject.set(x, "outputs", js.Array(value :_*))
+      inline def setOutputsVarargs(value: TransactionOutput*): Self = StObject.set(x, "outputs", js.Array(value :_*))
       
-      @scala.inline
-      def setTimestamp(value: Buffer): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Buffer): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+      inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
       
-      @scala.inline
-      def setVersion(value: Buffer): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Buffer): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWitness(value: Buffer): Self = StObject.set(x, "witness", value.asInstanceOf[js.Any])
+      inline def setWitness(value: Buffer): Self = StObject.set(x, "witness", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWitnessUndefined: Self = StObject.set(x, "witness", js.undefined)
+      inline def setWitnessUndefined: Self = StObject.set(x, "witness", js.undefined)
     }
   }
   
@@ -524,29 +456,22 @@ object mod {
   }
   object TransactionInput {
     
-    @scala.inline
-    def apply(prevout: Buffer, script: Buffer, sequence: Buffer): TransactionInput = {
+    inline def apply(prevout: Buffer, script: Buffer, sequence: Buffer): TransactionInput = {
       val __obj = js.Dynamic.literal(prevout = prevout.asInstanceOf[js.Any], script = script.asInstanceOf[js.Any], sequence = sequence.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransactionInput]
     }
     
-    @scala.inline
-    implicit class TransactionInputMutableBuilder[Self <: TransactionInput] (val x: Self) extends AnyVal {
+    extension [Self <: TransactionInput](x: Self) {
       
-      @scala.inline
-      def setPrevout(value: Buffer): Self = StObject.set(x, "prevout", value.asInstanceOf[js.Any])
+      inline def setPrevout(value: Buffer): Self = StObject.set(x, "prevout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScript(value: Buffer): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+      inline def setScript(value: Buffer): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSequence(value: Buffer): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
+      inline def setSequence(value: Buffer): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTree(value: Buffer): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
+      inline def setTree(value: Buffer): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTreeUndefined: Self = StObject.set(x, "tree", js.undefined)
+      inline def setTreeUndefined: Self = StObject.set(x, "tree", js.undefined)
     }
   }
   
@@ -558,20 +483,16 @@ object mod {
   }
   object TransactionOutput {
     
-    @scala.inline
-    def apply(amount: Buffer, script: Buffer): TransactionOutput = {
+    inline def apply(amount: Buffer, script: Buffer): TransactionOutput = {
       val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], script = script.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransactionOutput]
     }
     
-    @scala.inline
-    implicit class TransactionOutputMutableBuilder[Self <: TransactionOutput] (val x: Self) extends AnyVal {
+    extension [Self <: TransactionOutput](x: Self) {
       
-      @scala.inline
-      def setAmount(value: Buffer): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+      inline def setAmount(value: Buffer): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScript(value: Buffer): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+      inline def setScript(value: Buffer): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
     }
   }
 }

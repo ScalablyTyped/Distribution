@@ -11,16 +11,13 @@ trait `0` extends StObject {
 }
 object `0` {
   
-  @scala.inline
-  def apply(): `0` = {
+  inline def apply(): `0` = {
     val __obj = js.Dynamic.literal(action = "callout-press")
     __obj.asInstanceOf[`0`]
   }
   
-  @scala.inline
-  implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+  extension [Self <: `0`](x: Self) {
     
-    @scala.inline
-    def setAction(value: `callout-press`): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: `callout-press`): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
   }
 }

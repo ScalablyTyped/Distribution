@@ -18,10 +18,10 @@ object jsSha256Mod {
     
     def digestSync(): Uint8Array = js.native
     
-    var error: js.Any = js.native
+    /* private */ var error: js.Any = js.native
     
-    val hash: js.Any = js.native
+    /* private */ val hash: js.Any = js.native
     
-    val outer: js.Any = js.native
+    /* private */ val outer: js.Any = js.native
   }
 }

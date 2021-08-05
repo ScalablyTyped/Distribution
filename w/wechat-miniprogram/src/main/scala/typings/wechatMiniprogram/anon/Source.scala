@@ -28,22 +28,17 @@ trait Source extends StObject {
 }
 object Source {
   
-  @scala.inline
-  def apply(source: touch | `touch-out-of-bounds` | `out-of-bounds` | friction | _empty, x: Double, y: Double): Source = {
+  inline def apply(source: touch | `touch-out-of-bounds` | `out-of-bounds` | friction | _empty, x: Double, y: Double): Source = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[Source]
   }
   
-  @scala.inline
-  implicit class SourceMutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
+  extension [Self <: Source](x: Self) {
     
-    @scala.inline
-    def setSource(value: touch | `touch-out-of-bounds` | `out-of-bounds` | friction | _empty): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: touch | `touch-out-of-bounds` | `out-of-bounds` | friction | _empty): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

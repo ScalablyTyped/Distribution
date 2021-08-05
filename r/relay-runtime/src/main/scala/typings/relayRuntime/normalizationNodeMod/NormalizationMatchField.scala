@@ -25,8 +25,7 @@ trait NormalizationMatchField
 }
 object NormalizationMatchField {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     args: js.Array[NormalizationArgument],
     kind: String,
     matchesByType: StringDictionary[FragmentName],
@@ -36,40 +35,28 @@ object NormalizationMatchField {
     __obj.asInstanceOf[NormalizationMatchField]
   }
   
-  @scala.inline
-  implicit class NormalizationMatchFieldMutableBuilder[Self <: NormalizationMatchField] (val x: Self) extends AnyVal {
+  extension [Self <: NormalizationMatchField](x: Self) {
     
-    @scala.inline
-    def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+    inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasNull: Self = StObject.set(x, "alias", null)
+    inline def setAliasNull: Self = StObject.set(x, "alias", null)
     
-    @scala.inline
-    def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+    inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
     
-    @scala.inline
-    def setArgs(value: js.Array[NormalizationArgument]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[NormalizationArgument]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsVarargs(value: NormalizationArgument*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: NormalizationArgument*): Self = StObject.set(x, "args", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchesByType(value: StringDictionary[FragmentName]): Self = StObject.set(x, "matchesByType", value.asInstanceOf[js.Any])
+    inline def setMatchesByType(value: StringDictionary[FragmentName]): Self = StObject.set(x, "matchesByType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageKey(value: String): Self = StObject.set(x, "storageKey", value.asInstanceOf[js.Any])
+    inline def setStorageKey(value: String): Self = StObject.set(x, "storageKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageKeyNull: Self = StObject.set(x, "storageKey", null)
+    inline def setStorageKeyNull: Self = StObject.set(x, "storageKey", null)
     
-    @scala.inline
-    def setStorageKeyUndefined: Self = StObject.set(x, "storageKey", js.undefined)
+    inline def setStorageKeyUndefined: Self = StObject.set(x, "storageKey", js.undefined)
   }
 }

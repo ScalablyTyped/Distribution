@@ -28,25 +28,19 @@ trait ASPxClientAppointmentDragEventArgs
 }
 object ASPxClientAppointmentDragEventArgs {
   
-  @scala.inline
-  def apply(allow: Boolean, dragInformation: js.Array[ASPxClientAppointmentDragInfo], mouseEvent: js.Any): ASPxClientAppointmentDragEventArgs = {
+  inline def apply(allow: Boolean, dragInformation: js.Array[ASPxClientAppointmentDragInfo], mouseEvent: js.Any): ASPxClientAppointmentDragEventArgs = {
     val __obj = js.Dynamic.literal(allow = allow.asInstanceOf[js.Any], dragInformation = dragInformation.asInstanceOf[js.Any], mouseEvent = mouseEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientAppointmentDragEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientAppointmentDragEventArgsMutableBuilder[Self <: ASPxClientAppointmentDragEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientAppointmentDragEventArgs](x: Self) {
     
-    @scala.inline
-    def setAllow(value: Boolean): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
+    inline def setAllow(value: Boolean): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragInformation(value: js.Array[ASPxClientAppointmentDragInfo]): Self = StObject.set(x, "dragInformation", value.asInstanceOf[js.Any])
+    inline def setDragInformation(value: js.Array[ASPxClientAppointmentDragInfo]): Self = StObject.set(x, "dragInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragInformationVarargs(value: ASPxClientAppointmentDragInfo*): Self = StObject.set(x, "dragInformation", js.Array(value :_*))
+    inline def setDragInformationVarargs(value: ASPxClientAppointmentDragInfo*): Self = StObject.set(x, "dragInformation", js.Array(value :_*))
     
-    @scala.inline
-    def setMouseEvent(value: js.Any): Self = StObject.set(x, "mouseEvent", value.asInstanceOf[js.Any])
+    inline def setMouseEvent(value: js.Any): Self = StObject.set(x, "mouseEvent", value.asInstanceOf[js.Any])
   }
 }

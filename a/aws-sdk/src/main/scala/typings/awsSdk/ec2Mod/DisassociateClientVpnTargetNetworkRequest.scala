@@ -23,25 +23,19 @@ trait DisassociateClientVpnTargetNetworkRequest extends StObject {
 }
 object DisassociateClientVpnTargetNetworkRequest {
   
-  @scala.inline
-  def apply(AssociationId: ClientVpnAssociationId, ClientVpnEndpointId: ClientVpnEndpointId): DisassociateClientVpnTargetNetworkRequest = {
+  inline def apply(AssociationId: ClientVpnAssociationId, ClientVpnEndpointId: ClientVpnEndpointId): DisassociateClientVpnTargetNetworkRequest = {
     val __obj = js.Dynamic.literal(AssociationId = AssociationId.asInstanceOf[js.Any], ClientVpnEndpointId = ClientVpnEndpointId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateClientVpnTargetNetworkRequest]
   }
   
-  @scala.inline
-  implicit class DisassociateClientVpnTargetNetworkRequestMutableBuilder[Self <: DisassociateClientVpnTargetNetworkRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateClientVpnTargetNetworkRequest](x: Self) {
     
-    @scala.inline
-    def setAssociationId(value: ClientVpnAssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
+    inline def setAssociationId(value: ClientVpnAssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientVpnEndpointId(value: ClientVpnEndpointId): Self = StObject.set(x, "ClientVpnEndpointId", value.asInstanceOf[js.Any])
+    inline def setClientVpnEndpointId(value: ClientVpnEndpointId): Self = StObject.set(x, "ClientVpnEndpointId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
   }
 }

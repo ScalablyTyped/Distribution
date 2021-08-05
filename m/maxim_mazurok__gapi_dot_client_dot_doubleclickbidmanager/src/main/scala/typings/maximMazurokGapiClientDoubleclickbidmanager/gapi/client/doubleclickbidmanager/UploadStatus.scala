@@ -14,31 +14,23 @@ trait UploadStatus extends StObject {
 }
 object UploadStatus {
   
-  @scala.inline
-  def apply(): UploadStatus = {
+  inline def apply(): UploadStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UploadStatus]
   }
   
-  @scala.inline
-  implicit class UploadStatusMutableBuilder[Self <: UploadStatus] (val x: Self) extends AnyVal {
+  extension [Self <: UploadStatus](x: Self) {
     
-    @scala.inline
-    def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    @scala.inline
-    def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
-    @scala.inline
-    def setRowStatus(value: js.Array[RowStatus]): Self = StObject.set(x, "rowStatus", value.asInstanceOf[js.Any])
+    inline def setRowStatus(value: js.Array[RowStatus]): Self = StObject.set(x, "rowStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowStatusUndefined: Self = StObject.set(x, "rowStatus", js.undefined)
+    inline def setRowStatusUndefined: Self = StObject.set(x, "rowStatus", js.undefined)
     
-    @scala.inline
-    def setRowStatusVarargs(value: RowStatus*): Self = StObject.set(x, "rowStatus", js.Array(value :_*))
+    inline def setRowStatusVarargs(value: RowStatus*): Self = StObject.set(x, "rowStatus", js.Array(value :_*))
   }
 }

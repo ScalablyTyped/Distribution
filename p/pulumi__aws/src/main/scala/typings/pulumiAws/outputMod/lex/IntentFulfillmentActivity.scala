@@ -20,23 +20,18 @@ trait IntentFulfillmentActivity extends StObject {
 }
 object IntentFulfillmentActivity {
   
-  @scala.inline
-  def apply(`type`: String): IntentFulfillmentActivity = {
+  inline def apply(`type`: String): IntentFulfillmentActivity = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntentFulfillmentActivity]
   }
   
-  @scala.inline
-  implicit class IntentFulfillmentActivityMutableBuilder[Self <: IntentFulfillmentActivity] (val x: Self) extends AnyVal {
+  extension [Self <: IntentFulfillmentActivity](x: Self) {
     
-    @scala.inline
-    def setCodeHook(value: IntentFulfillmentActivityCodeHook): Self = StObject.set(x, "codeHook", value.asInstanceOf[js.Any])
+    inline def setCodeHook(value: IntentFulfillmentActivityCodeHook): Self = StObject.set(x, "codeHook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeHookUndefined: Self = StObject.set(x, "codeHook", js.undefined)
+    inline def setCodeHookUndefined: Self = StObject.set(x, "codeHook", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

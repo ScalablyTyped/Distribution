@@ -64,67 +64,47 @@ trait JQueryStickyOptions extends StObject {
 }
 object JQueryStickyOptions {
   
-  @scala.inline
-  def apply(): JQueryStickyOptions = {
+  inline def apply(): JQueryStickyOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JQueryStickyOptions]
   }
   
-  @scala.inline
-  implicit class JQueryStickyOptionsMutableBuilder[Self <: JQueryStickyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryStickyOptions](x: Self) {
     
-    @scala.inline
-    def setBottomSpacing(value: Double): Self = StObject.set(x, "bottomSpacing", value.asInstanceOf[js.Any])
+    inline def setBottomSpacing(value: Double): Self = StObject.set(x, "bottomSpacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBottomSpacingUndefined: Self = StObject.set(x, "bottomSpacing", js.undefined)
+    inline def setBottomSpacingUndefined: Self = StObject.set(x, "bottomSpacing", js.undefined)
     
-    @scala.inline
-    def setCenter(value: Boolean): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: Boolean): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
+    inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setGetWidthFrom(value: String): Self = StObject.set(x, "getWidthFrom", value.asInstanceOf[js.Any])
+    inline def setGetWidthFrom(value: String): Self = StObject.set(x, "getWidthFrom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetWidthFromUndefined: Self = StObject.set(x, "getWidthFrom", js.undefined)
+    inline def setGetWidthFromUndefined: Self = StObject.set(x, "getWidthFrom", js.undefined)
     
-    @scala.inline
-    def setResponsiveWidth(value: Boolean): Self = StObject.set(x, "responsiveWidth", value.asInstanceOf[js.Any])
+    inline def setResponsiveWidth(value: Boolean): Self = StObject.set(x, "responsiveWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponsiveWidthUndefined: Self = StObject.set(x, "responsiveWidth", js.undefined)
+    inline def setResponsiveWidthUndefined: Self = StObject.set(x, "responsiveWidth", js.undefined)
     
-    @scala.inline
-    def setTopSpacing(value: Double): Self = StObject.set(x, "topSpacing", value.asInstanceOf[js.Any])
+    inline def setTopSpacing(value: Double): Self = StObject.set(x, "topSpacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopSpacingUndefined: Self = StObject.set(x, "topSpacing", js.undefined)
+    inline def setTopSpacingUndefined: Self = StObject.set(x, "topSpacing", js.undefined)
     
-    @scala.inline
-    def setWidthFromWrapper(value: Boolean): Self = StObject.set(x, "widthFromWrapper", value.asInstanceOf[js.Any])
+    inline def setWidthFromWrapper(value: Boolean): Self = StObject.set(x, "widthFromWrapper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthFromWrapperUndefined: Self = StObject.set(x, "widthFromWrapper", js.undefined)
+    inline def setWidthFromWrapperUndefined: Self = StObject.set(x, "widthFromWrapper", js.undefined)
     
-    @scala.inline
-    def setWrapperClassName(value: String): Self = StObject.set(x, "wrapperClassName", value.asInstanceOf[js.Any])
+    inline def setWrapperClassName(value: String): Self = StObject.set(x, "wrapperClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrapperClassNameUndefined: Self = StObject.set(x, "wrapperClassName", js.undefined)
+    inline def setWrapperClassNameUndefined: Self = StObject.set(x, "wrapperClassName", js.undefined)
     
-    @scala.inline
-    def setZIndex(value: String): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    inline def setZIndex(value: String): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

@@ -31,38 +31,28 @@ object colorPickerPanelMod {
   }
   object ColorPickerPanelProps {
     
-    @scala.inline
-    def apply(): ColorPickerPanelProps = {
+    inline def apply(): ColorPickerPanelProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ColorPickerPanelProps]
     }
     
-    @scala.inline
-    implicit class ColorPickerPanelPropsMutableBuilder[Self <: ColorPickerPanelProps] (val x: Self) extends AnyVal {
+    extension [Self <: ColorPickerPanelProps](x: Self) {
       
-      @scala.inline
-      def setAppendTo(value: js.Any): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
+      inline def setAppendTo(value: js.Any): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
+      inline def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+      inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
+      inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
+      inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     }
   }
 }

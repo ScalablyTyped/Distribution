@@ -18,22 +18,17 @@ trait BatchUpdateObjectAttributes extends StObject {
 }
 object BatchUpdateObjectAttributes {
   
-  @scala.inline
-  def apply(AttributeUpdates: ObjectAttributeUpdateList, ObjectReference: ObjectReference): BatchUpdateObjectAttributes = {
+  inline def apply(AttributeUpdates: ObjectAttributeUpdateList, ObjectReference: ObjectReference): BatchUpdateObjectAttributes = {
     val __obj = js.Dynamic.literal(AttributeUpdates = AttributeUpdates.asInstanceOf[js.Any], ObjectReference = ObjectReference.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchUpdateObjectAttributes]
   }
   
-  @scala.inline
-  implicit class BatchUpdateObjectAttributesMutableBuilder[Self <: BatchUpdateObjectAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: BatchUpdateObjectAttributes](x: Self) {
     
-    @scala.inline
-    def setAttributeUpdates(value: ObjectAttributeUpdateList): Self = StObject.set(x, "AttributeUpdates", value.asInstanceOf[js.Any])
+    inline def setAttributeUpdates(value: ObjectAttributeUpdateList): Self = StObject.set(x, "AttributeUpdates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeUpdatesVarargs(value: ObjectAttributeUpdate*): Self = StObject.set(x, "AttributeUpdates", js.Array(value :_*))
+    inline def setAttributeUpdatesVarargs(value: ObjectAttributeUpdate*): Self = StObject.set(x, "AttributeUpdates", js.Array(value :_*))
     
-    @scala.inline
-    def setObjectReference(value: ObjectReference): Self = StObject.set(x, "ObjectReference", value.asInstanceOf[js.Any])
+    inline def setObjectReference(value: ObjectReference): Self = StObject.set(x, "ObjectReference", value.asInstanceOf[js.Any])
   }
 }

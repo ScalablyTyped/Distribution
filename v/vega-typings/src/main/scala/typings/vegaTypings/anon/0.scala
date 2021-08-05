@@ -15,16 +15,13 @@ trait `0`
 }
 object `0` {
   
-  @scala.inline
-  def apply(value: LinearGradient | RadialGradient): `0` = {
+  inline def apply(value: LinearGradient | RadialGradient): `0` = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[`0`]
   }
   
-  @scala.inline
-  implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+  extension [Self <: `0`](x: Self) {
     
-    @scala.inline
-    def setValue(value: LinearGradient | RadialGradient): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: LinearGradient | RadialGradient): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

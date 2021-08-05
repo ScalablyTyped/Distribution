@@ -33,37 +33,27 @@ trait CreateHostedZoneRequest extends StObject {
 }
 object CreateHostedZoneRequest {
   
-  @scala.inline
-  def apply(CallerReference: Nonce, Name: DNSName): CreateHostedZoneRequest = {
+  inline def apply(CallerReference: Nonce, Name: DNSName): CreateHostedZoneRequest = {
     val __obj = js.Dynamic.literal(CallerReference = CallerReference.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateHostedZoneRequest]
   }
   
-  @scala.inline
-  implicit class CreateHostedZoneRequestMutableBuilder[Self <: CreateHostedZoneRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateHostedZoneRequest](x: Self) {
     
-    @scala.inline
-    def setCallerReference(value: Nonce): Self = StObject.set(x, "CallerReference", value.asInstanceOf[js.Any])
+    inline def setCallerReference(value: Nonce): Self = StObject.set(x, "CallerReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelegationSetId(value: ResourceId): Self = StObject.set(x, "DelegationSetId", value.asInstanceOf[js.Any])
+    inline def setDelegationSetId(value: ResourceId): Self = StObject.set(x, "DelegationSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelegationSetIdUndefined: Self = StObject.set(x, "DelegationSetId", js.undefined)
+    inline def setDelegationSetIdUndefined: Self = StObject.set(x, "DelegationSetId", js.undefined)
     
-    @scala.inline
-    def setHostedZoneConfig(value: HostedZoneConfig): Self = StObject.set(x, "HostedZoneConfig", value.asInstanceOf[js.Any])
+    inline def setHostedZoneConfig(value: HostedZoneConfig): Self = StObject.set(x, "HostedZoneConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostedZoneConfigUndefined: Self = StObject.set(x, "HostedZoneConfig", js.undefined)
+    inline def setHostedZoneConfigUndefined: Self = StObject.set(x, "HostedZoneConfig", js.undefined)
     
-    @scala.inline
-    def setName(value: DNSName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: DNSName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVPC(value: VPC): Self = StObject.set(x, "VPC", value.asInstanceOf[js.Any])
+    inline def setVPC(value: VPC): Self = StObject.set(x, "VPC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVPCUndefined: Self = StObject.set(x, "VPC", js.undefined)
+    inline def setVPCUndefined: Self = StObject.set(x, "VPC", js.undefined)
   }
 }

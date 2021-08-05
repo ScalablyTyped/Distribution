@@ -13,19 +13,15 @@ trait GridLineOptionsWithAxis
 }
 object GridLineOptionsWithAxis {
   
-  @scala.inline
-  def apply(value: String | Double | Date): GridLineOptionsWithAxis = {
+  inline def apply(value: String | Double | Date): GridLineOptionsWithAxis = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridLineOptionsWithAxis]
   }
   
-  @scala.inline
-  implicit class GridLineOptionsWithAxisMutableBuilder[Self <: GridLineOptionsWithAxis] (val x: Self) extends AnyVal {
+  extension [Self <: GridLineOptionsWithAxis](x: Self) {
     
-    @scala.inline
-    def setAxis(value: AxisName): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: AxisName): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+    inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
   }
 }

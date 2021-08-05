@@ -28,8 +28,7 @@ trait XGraphicObject
 }
 object XGraphicObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Graphic: XGraphic,
     UniqueID: String,
     acquire: () => Unit,
@@ -40,13 +39,10 @@ object XGraphicObject {
     __obj.asInstanceOf[XGraphicObject]
   }
   
-  @scala.inline
-  implicit class XGraphicObjectMutableBuilder[Self <: XGraphicObject] (val x: Self) extends AnyVal {
+  extension [Self <: XGraphicObject](x: Self) {
     
-    @scala.inline
-    def setGraphic(value: XGraphic): Self = StObject.set(x, "Graphic", value.asInstanceOf[js.Any])
+    inline def setGraphic(value: XGraphic): Self = StObject.set(x, "Graphic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueID(value: String): Self = StObject.set(x, "UniqueID", value.asInstanceOf[js.Any])
+    inline def setUniqueID(value: String): Self = StObject.set(x, "UniqueID", value.asInstanceOf[js.Any])
   }
 }

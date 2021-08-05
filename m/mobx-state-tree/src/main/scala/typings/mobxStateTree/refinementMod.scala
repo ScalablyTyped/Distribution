@@ -11,11 +11,9 @@ object refinementMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isRefinementType[IT /* <: IAnyType */](`type`: IT): /* is IT */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRefinementType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is IT */ Boolean]
+  inline def isRefinementType[IT /* <: IAnyType */](`type`: IT): /* is IT */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRefinementType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is IT */ Boolean]
   
-  @scala.inline
-  def refinement_CreationType[IT /* <: IAnyType */](
+  inline def refinement_CreationType[IT /* <: IAnyType */](
     name: String,
     `type`: IT,
     predicate: js.Function1[
@@ -23,8 +21,7 @@ object refinementMod {
       Boolean
     ]
   ): IT = (^.asInstanceOf[js.Dynamic].applyDynamic("refinement")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[IT]
-  @scala.inline
-  def refinement_CreationType[IT /* <: IAnyType */](
+  inline def refinement_CreationType[IT /* <: IAnyType */](
     name: String,
     `type`: IT,
     predicate: js.Function1[
@@ -33,8 +30,7 @@ object refinementMod {
     ],
     message: String
   ): IT = (^.asInstanceOf[js.Dynamic].applyDynamic("refinement")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[IT]
-  @scala.inline
-  def refinement_CreationType[IT /* <: IAnyType */](
+  inline def refinement_CreationType[IT /* <: IAnyType */](
     name: String,
     `type`: IT,
     predicate: js.Function1[
@@ -46,16 +42,14 @@ object refinementMod {
       String
     ]
   ): IT = (^.asInstanceOf[js.Dynamic].applyDynamic("refinement")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[IT]
-  @scala.inline
-  def refinement_CreationType[IT /* <: IAnyType */](
+  inline def refinement_CreationType[IT /* <: IAnyType */](
     `type`: IT,
     predicate: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: IT['CreationType'] */ /* snapshot */ js.Any, 
       Boolean
     ]
   ): IT = (^.asInstanceOf[js.Dynamic].applyDynamic("refinement")(`type`.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[IT]
-  @scala.inline
-  def refinement_CreationType[IT /* <: IAnyType */](
+  inline def refinement_CreationType[IT /* <: IAnyType */](
     `type`: IT,
     predicate: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: IT['CreationType'] */ /* snapshot */ js.Any, 
@@ -63,8 +57,7 @@ object refinementMod {
     ],
     message: String
   ): IT = (^.asInstanceOf[js.Dynamic].applyDynamic("refinement")(`type`.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[IT]
-  @scala.inline
-  def refinement_CreationType[IT /* <: IAnyType */](
+  inline def refinement_CreationType[IT /* <: IAnyType */](
     `type`: IT,
     predicate: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: IT['CreationType'] */ /* snapshot */ js.Any, 

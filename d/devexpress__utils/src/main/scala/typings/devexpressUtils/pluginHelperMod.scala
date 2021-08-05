@@ -18,25 +18,19 @@ object pluginHelperMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getActiveXObject(name: String): ActiveXObject | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveXObject")(name.asInstanceOf[js.Any]).asInstanceOf[ActiveXObject | Null]
+    inline def getActiveXObject(name: String): ActiveXObject | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveXObject")(name.asInstanceOf[js.Any]).asInstanceOf[ActiveXObject | Null]
     
-    @scala.inline
-    def getNavigatorPlugin(name: String): Plugin | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getNavigatorPlugin")(name.asInstanceOf[js.Any]).asInstanceOf[Plugin | Null]
+    inline def getNavigatorPlugin(name: String): Plugin | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getNavigatorPlugin")(name.asInstanceOf[js.Any]).asInstanceOf[Plugin | Null]
     
-    @scala.inline
-    def getPdfPlugin(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getPdfPlugin")().asInstanceOf[js.Any]
+    inline def getPdfPlugin(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getPdfPlugin")().asInstanceOf[js.Any]
     
-    @scala.inline
-    def getVersion(): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getVersion")().asInstanceOf[Double | Null]
+    inline def getVersion(): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getVersion")().asInstanceOf[Double | Null]
     
-    @scala.inline
-    def isInstalled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstalled")().asInstanceOf[Boolean]
+    inline def isInstalled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstalled")().asInstanceOf[Boolean]
     
     @JSImport("@devexpress/utils/lib/pdf/plugin-helper", "PdfPluginHelper.plugin")
     @js.native
     def plugin: js.Any = js.native
-    @scala.inline
-    def plugin_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("plugin")(x.asInstanceOf[js.Any])
+    inline def plugin_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("plugin")(x.asInstanceOf[js.Any])
   }
 }

@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(string: String, index: js.Array[Double]): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  @scala.inline
-  def apply(string: String, index: js.Array[Double], options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], index.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def apply(string: String, index: js.Array[Double]): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def apply(string: String, index: js.Array[Double], options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], index.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   /**
   Split a string at one or more indices.
   @param string - String to be split.
@@ -27,10 +25,8 @@ object mod {
   //=> ['unicorn', 'rainbow']
   ```
   */
-  @scala.inline
-  def apply(string: String, index: Double): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  @scala.inline
-  def apply(string: String, index: Double, options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], index.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def apply(string: String, index: Double): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def apply(string: String, index: Double, options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], index.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   @JSImport("split-at", JSImport.Namespace)
   @js.native
@@ -47,20 +43,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setRemove(value: Boolean): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+      inline def setRemove(value: Boolean): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+      inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     }
   }
 }

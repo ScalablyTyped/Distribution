@@ -10,8 +10,7 @@ trait ScanOutput
      with typings.awsSdkClientDynamodbBrowser.typesScanOutputMod.ScanOutput
 object ScanOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): ScanOutput = {
+  inline def apply($metadata: ResponseMetadata): ScanOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScanOutput]
   }

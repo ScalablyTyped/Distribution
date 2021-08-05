@@ -20,8 +20,7 @@ trait `675` extends StObject {
 }
 object `675` {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: RequestParameters & (Omit[CodesOfConductGetForRepoEndpoint, baseUrl | headers | mediaType]),
     response: OctokitResponse[CodesOfConductGetForRepoResponseData]
   ): `675` = {
@@ -29,13 +28,10 @@ object `675` {
     __obj.asInstanceOf[`675`]
   }
   
-  @scala.inline
-  implicit class `675MutableBuilder`[Self <: `675`] (val x: Self) extends AnyVal {
+  extension [Self <: `675`](x: Self) {
     
-    @scala.inline
-    def setParameters(value: RequestParameters & (Omit[CodesOfConductGetForRepoEndpoint, baseUrl | headers | mediaType])): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: RequestParameters & (Omit[CodesOfConductGetForRepoEndpoint, baseUrl | headers | mediaType])): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[CodesOfConductGetForRepoResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[CodesOfConductGetForRepoResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

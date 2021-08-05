@@ -26,28 +26,21 @@ trait SchemaGoogleCloudVideointelligenceV1SpeechTranscription extends StObject {
 }
 object SchemaGoogleCloudVideointelligenceV1SpeechTranscription {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudVideointelligenceV1SpeechTranscription = {
+  inline def apply(): SchemaGoogleCloudVideointelligenceV1SpeechTranscription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudVideointelligenceV1SpeechTranscription]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudVideointelligenceV1SpeechTranscriptionMutableBuilder[Self <: SchemaGoogleCloudVideointelligenceV1SpeechTranscription] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudVideointelligenceV1SpeechTranscription](x: Self) {
     
-    @scala.inline
-    def setAlternatives(value: js.Array[SchemaGoogleCloudVideointelligenceV1SpeechRecognitionAlternative]): Self = StObject.set(x, "alternatives", value.asInstanceOf[js.Any])
+    inline def setAlternatives(value: js.Array[SchemaGoogleCloudVideointelligenceV1SpeechRecognitionAlternative]): Self = StObject.set(x, "alternatives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlternativesUndefined: Self = StObject.set(x, "alternatives", js.undefined)
+    inline def setAlternativesUndefined: Self = StObject.set(x, "alternatives", js.undefined)
     
-    @scala.inline
-    def setAlternativesVarargs(value: SchemaGoogleCloudVideointelligenceV1SpeechRecognitionAlternative*): Self = StObject.set(x, "alternatives", js.Array(value :_*))
+    inline def setAlternativesVarargs(value: SchemaGoogleCloudVideointelligenceV1SpeechRecognitionAlternative*): Self = StObject.set(x, "alternatives", js.Array(value :_*))
     
-    @scala.inline
-    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
   }
 }

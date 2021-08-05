@@ -26,47 +26,34 @@ object pushOptionsMod {
   }
   object PushOptions {
     
-    @scala.inline
-    def apply(): PushOptions = {
+    inline def apply(): PushOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PushOptions]
     }
     
-    @scala.inline
-    implicit class PushOptionsMutableBuilder[Self <: PushOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PushOptions](x: Self) {
       
-      @scala.inline
-      def setCallbacks(value: RemoteCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
+      inline def setCallbacks(value: RemoteCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallbacksUndefined: Self = StObject.set(x, "callbacks", js.undefined)
+      inline def setCallbacksUndefined: Self = StObject.set(x, "callbacks", js.undefined)
       
-      @scala.inline
-      def setCustomHeaders(value: Strarray | String | js.Array[String]): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
+      inline def setCustomHeaders(value: Strarray | String | js.Array[String]): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomHeadersUndefined: Self = StObject.set(x, "customHeaders", js.undefined)
+      inline def setCustomHeadersUndefined: Self = StObject.set(x, "customHeaders", js.undefined)
       
-      @scala.inline
-      def setCustomHeadersVarargs(value: String*): Self = StObject.set(x, "customHeaders", js.Array(value :_*))
+      inline def setCustomHeadersVarargs(value: String*): Self = StObject.set(x, "customHeaders", js.Array(value :_*))
       
-      @scala.inline
-      def setPbParallelism(value: Double): Self = StObject.set(x, "pbParallelism", value.asInstanceOf[js.Any])
+      inline def setPbParallelism(value: Double): Self = StObject.set(x, "pbParallelism", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPbParallelismUndefined: Self = StObject.set(x, "pbParallelism", js.undefined)
+      inline def setPbParallelismUndefined: Self = StObject.set(x, "pbParallelism", js.undefined)
       
-      @scala.inline
-      def setProxyOpts(value: ProxyOptions): Self = StObject.set(x, "proxyOpts", value.asInstanceOf[js.Any])
+      inline def setProxyOpts(value: ProxyOptions): Self = StObject.set(x, "proxyOpts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyOptsUndefined: Self = StObject.set(x, "proxyOpts", js.undefined)
+      inline def setProxyOptsUndefined: Self = StObject.set(x, "proxyOpts", js.undefined)
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
 }

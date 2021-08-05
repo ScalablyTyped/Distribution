@@ -13,16 +13,13 @@ trait LoggingOptions extends StObject {
 }
 object LoggingOptions {
   
-  @scala.inline
-  def apply(level: LoggingLevel): LoggingOptions = {
+  inline def apply(level: LoggingLevel): LoggingOptions = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoggingOptions]
   }
   
-  @scala.inline
-  implicit class LoggingOptionsMutableBuilder[Self <: LoggingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LoggingOptions](x: Self) {
     
-    @scala.inline
-    def setLevel(value: LoggingLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: LoggingLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
   }
 }

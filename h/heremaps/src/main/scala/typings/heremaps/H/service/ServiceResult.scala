@@ -26,31 +26,23 @@ trait ServiceResult
 }
 object ServiceResult {
   
-  @scala.inline
-  def apply(): ServiceResult = {
+  inline def apply(): ServiceResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServiceResult]
   }
   
-  @scala.inline
-  implicit class ServiceResultMutableBuilder[Self <: ServiceResult] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceResult](x: Self) {
     
-    @scala.inline
-    def setResponse(value: Isolines): Self = StObject.set(x, "Response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: Isolines): Self = StObject.set(x, "Response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseUndefined: Self = StObject.set(x, "Response", js.undefined)
+    inline def setResponseUndefined: Self = StObject.set(x, "Response", js.undefined)
     
-    @scala.inline
-    def setResults(value: Items): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: Items): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    @scala.inline
-    def setSearch(value: Context): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    inline def setSearch(value: Context): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+    inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
   }
 }

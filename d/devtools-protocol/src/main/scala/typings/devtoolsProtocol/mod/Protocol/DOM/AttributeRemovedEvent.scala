@@ -18,19 +18,15 @@ trait AttributeRemovedEvent extends StObject {
 }
 object AttributeRemovedEvent {
   
-  @scala.inline
-  def apply(name: String, nodeId: NodeId): AttributeRemovedEvent = {
+  inline def apply(name: String, nodeId: NodeId): AttributeRemovedEvent = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], nodeId = nodeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttributeRemovedEvent]
   }
   
-  @scala.inline
-  implicit class AttributeRemovedEventMutableBuilder[Self <: AttributeRemovedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: AttributeRemovedEvent](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
   }
 }

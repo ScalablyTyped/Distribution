@@ -31,13 +31,13 @@ object drawerSidebarMod {
   trait DrawerSidebar
     extends PureComponent[Props, js.Object, js.Any] {
     
-    var getLabel: js.Any = js.native
+    /* private */ var getLabel: js.Any = js.native
     
-    var getScreenOptions: js.Any = js.native
+    /* private */ var getScreenOptions: js.Any = js.native
     
-    var handleItemPress: js.Any = js.native
+    /* private */ var handleItemPress: js.Any = js.native
     
-    var renderIcon: js.Any = js.native
+    /* private */ var renderIcon: js.Any = js.native
   }
   
   trait Props extends StObject {
@@ -60,8 +60,7 @@ object drawerSidebarMod {
   }
   object Props {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       descriptors: SceneDescriptorMap,
       drawerOpenProgress: Node,
       drawerPosition: left | right,
@@ -71,44 +70,31 @@ object drawerSidebarMod {
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setContentComponent(value: ComponentType[DrawerContentComponentProps]): Self = StObject.set(x, "contentComponent", value.asInstanceOf[js.Any])
+      inline def setContentComponent(value: ComponentType[DrawerContentComponentProps]): Self = StObject.set(x, "contentComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentComponentUndefined: Self = StObject.set(x, "contentComponent", js.undefined)
+      inline def setContentComponentUndefined: Self = StObject.set(x, "contentComponent", js.undefined)
       
-      @scala.inline
-      def setContentOptions(value: js.Object): Self = StObject.set(x, "contentOptions", value.asInstanceOf[js.Any])
+      inline def setContentOptions(value: js.Object): Self = StObject.set(x, "contentOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentOptionsUndefined: Self = StObject.set(x, "contentOptions", js.undefined)
+      inline def setContentOptionsUndefined: Self = StObject.set(x, "contentOptions", js.undefined)
       
-      @scala.inline
-      def setDescriptors(value: SceneDescriptorMap): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
+      inline def setDescriptors(value: SceneDescriptorMap): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawerOpenProgress(value: Node): Self = StObject.set(x, "drawerOpenProgress", value.asInstanceOf[js.Any])
+      inline def setDrawerOpenProgress(value: Node): Self = StObject.set(x, "drawerOpenProgress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawerPosition(value: left | right): Self = StObject.set(x, "drawerPosition", value.asInstanceOf[js.Any])
+      inline def setDrawerPosition(value: left | right): Self = StObject.set(x, "drawerPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavigation(value: NavigationScreenProp[NavigationDrawerState, NavigationParams]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
+      inline def setNavigation(value: NavigationScreenProp[NavigationDrawerState, NavigationParams]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenProps(value: js.Any): Self = StObject.set(x, "screenProps", value.asInstanceOf[js.Any])
+      inline def setScreenProps(value: js.Any): Self = StObject.set(x, "screenProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenPropsUndefined: Self = StObject.set(x, "screenProps", js.undefined)
+      inline def setScreenPropsUndefined: Self = StObject.set(x, "screenProps", js.undefined)
       
-      @scala.inline
-      def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

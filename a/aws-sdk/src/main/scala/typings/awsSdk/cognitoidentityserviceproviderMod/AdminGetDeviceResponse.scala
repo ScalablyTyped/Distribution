@@ -13,16 +13,13 @@ trait AdminGetDeviceResponse extends StObject {
 }
 object AdminGetDeviceResponse {
   
-  @scala.inline
-  def apply(Device: DeviceType): AdminGetDeviceResponse = {
+  inline def apply(Device: DeviceType): AdminGetDeviceResponse = {
     val __obj = js.Dynamic.literal(Device = Device.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdminGetDeviceResponse]
   }
   
-  @scala.inline
-  implicit class AdminGetDeviceResponseMutableBuilder[Self <: AdminGetDeviceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AdminGetDeviceResponse](x: Self) {
     
-    @scala.inline
-    def setDevice(value: DeviceType): Self = StObject.set(x, "Device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: DeviceType): Self = StObject.set(x, "Device", value.asInstanceOf[js.Any])
   }
 }

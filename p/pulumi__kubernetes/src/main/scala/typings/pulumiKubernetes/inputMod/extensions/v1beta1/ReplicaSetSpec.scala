@@ -34,37 +34,27 @@ trait ReplicaSetSpec extends StObject {
 }
 object ReplicaSetSpec {
   
-  @scala.inline
-  def apply(): ReplicaSetSpec = {
+  inline def apply(): ReplicaSetSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReplicaSetSpec]
   }
   
-  @scala.inline
-  implicit class ReplicaSetSpecMutableBuilder[Self <: ReplicaSetSpec] (val x: Self) extends AnyVal {
+  extension [Self <: ReplicaSetSpec](x: Self) {
     
-    @scala.inline
-    def setMinReadySeconds(value: Input[Double]): Self = StObject.set(x, "minReadySeconds", value.asInstanceOf[js.Any])
+    inline def setMinReadySeconds(value: Input[Double]): Self = StObject.set(x, "minReadySeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinReadySecondsUndefined: Self = StObject.set(x, "minReadySeconds", js.undefined)
+    inline def setMinReadySecondsUndefined: Self = StObject.set(x, "minReadySeconds", js.undefined)
     
-    @scala.inline
-    def setReplicas(value: Input[Double]): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
+    inline def setReplicas(value: Input[Double]): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicasUndefined: Self = StObject.set(x, "replicas", js.undefined)
+    inline def setReplicasUndefined: Self = StObject.set(x, "replicas", js.undefined)
     
-    @scala.inline
-    def setSelector(value: Input[LabelSelector]): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: Input[LabelSelector]): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+    inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
-    @scala.inline
-    def setTemplate(value: Input[PodTemplateSpec]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: Input[PodTemplateSpec]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
   }
 }

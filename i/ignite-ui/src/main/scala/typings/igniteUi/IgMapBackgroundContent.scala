@@ -51,49 +51,35 @@ trait IgMapBackgroundContent
 }
 object IgMapBackgroundContent {
   
-  @scala.inline
-  def apply(): IgMapBackgroundContent = {
+  inline def apply(): IgMapBackgroundContent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgMapBackgroundContent]
   }
   
-  @scala.inline
-  implicit class IgMapBackgroundContentMutableBuilder[Self <: IgMapBackgroundContent] (val x: Self) extends AnyVal {
+  extension [Self <: IgMapBackgroundContent](x: Self) {
     
-    @scala.inline
-    def setBingUrl(value: String): Self = StObject.set(x, "bingUrl", value.asInstanceOf[js.Any])
+    inline def setBingUrl(value: String): Self = StObject.set(x, "bingUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBingUrlUndefined: Self = StObject.set(x, "bingUrl", js.undefined)
+    inline def setBingUrlUndefined: Self = StObject.set(x, "bingUrl", js.undefined)
     
-    @scala.inline
-    def setImagerySet(value: String): Self = StObject.set(x, "imagerySet", value.asInstanceOf[js.Any])
+    inline def setImagerySet(value: String): Self = StObject.set(x, "imagerySet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagerySetUndefined: Self = StObject.set(x, "imagerySet", js.undefined)
+    inline def setImagerySetUndefined: Self = StObject.set(x, "imagerySet", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setParameter(value: String): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
+    inline def setParameter(value: String): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
+    inline def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
     
-    @scala.inline
-    def setTilePath(value: String): Self = StObject.set(x, "tilePath", value.asInstanceOf[js.Any])
+    inline def setTilePath(value: String): Self = StObject.set(x, "tilePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTilePathUndefined: Self = StObject.set(x, "tilePath", js.undefined)
+    inline def setTilePathUndefined: Self = StObject.set(x, "tilePath", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

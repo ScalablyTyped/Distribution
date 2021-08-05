@@ -11,16 +11,13 @@ trait HandleObj[TTarget, TData] extends StObject {
 }
 object HandleObj {
   
-  @scala.inline
-  def apply[TTarget, TData](handleObj: HandleObject[TTarget, TData]): HandleObj[TTarget, TData] = {
+  inline def apply[TTarget, TData](handleObj: HandleObject[TTarget, TData]): HandleObj[TTarget, TData] = {
     val __obj = js.Dynamic.literal(handleObj = handleObj.asInstanceOf[js.Any])
     __obj.asInstanceOf[HandleObj[TTarget, TData]]
   }
   
-  @scala.inline
-  implicit class HandleObjMutableBuilder[Self <: HandleObj[?, ?], TTarget, TData] (val x: Self & (HandleObj[TTarget, TData])) extends AnyVal {
+  extension [Self <: HandleObj[?, ?], TTarget, TData](x: Self & (HandleObj[TTarget, TData])) {
     
-    @scala.inline
-    def setHandleObj(value: HandleObject[TTarget, TData]): Self = StObject.set(x, "handleObj", value.asInstanceOf[js.Any])
+    inline def setHandleObj(value: HandleObject[TTarget, TData]): Self = StObject.set(x, "handleObj", value.asInstanceOf[js.Any])
   }
 }

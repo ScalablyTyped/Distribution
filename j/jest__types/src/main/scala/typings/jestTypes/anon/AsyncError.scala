@@ -21,25 +21,19 @@ trait AsyncError
 }
 object AsyncError {
   
-  @scala.inline
-  def apply(asyncError: typings.std.Error, blockName: typings.jestTypes.circusMod.BlockName, mode: BlockMode): AsyncError = {
+  inline def apply(asyncError: typings.std.Error, blockName: typings.jestTypes.circusMod.BlockName, mode: BlockMode): AsyncError = {
     val __obj = js.Dynamic.literal(asyncError = asyncError.asInstanceOf[js.Any], blockName = blockName.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], name = "start_describe_definition")
     __obj.asInstanceOf[AsyncError]
   }
   
-  @scala.inline
-  implicit class AsyncErrorMutableBuilder[Self <: AsyncError] (val x: Self) extends AnyVal {
+  extension [Self <: AsyncError](x: Self) {
     
-    @scala.inline
-    def setAsyncError(value: typings.std.Error): Self = StObject.set(x, "asyncError", value.asInstanceOf[js.Any])
+    inline def setAsyncError(value: typings.std.Error): Self = StObject.set(x, "asyncError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockName(value: typings.jestTypes.circusMod.BlockName): Self = StObject.set(x, "blockName", value.asInstanceOf[js.Any])
+    inline def setBlockName(value: typings.jestTypes.circusMod.BlockName): Self = StObject.set(x, "blockName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: BlockMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: BlockMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: start_describe_definition): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: start_describe_definition): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

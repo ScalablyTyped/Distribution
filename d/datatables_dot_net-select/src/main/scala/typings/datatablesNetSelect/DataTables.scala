@@ -18,17 +18,14 @@ object DataTables {
   }
   object Api {
     
-    @scala.inline
-    def apply(select: Style): Api = {
+    inline def apply(select: Style): Api = {
       val __obj = js.Dynamic.literal(select = select.asInstanceOf[js.Any])
       __obj.asInstanceOf[Api]
     }
     
-    @scala.inline
-    implicit class ApiMutableBuilder[Self <: Api] (val x: Self) extends AnyVal {
+    extension [Self <: Api](x: Self) {
       
-      @scala.inline
-      def setSelect(value: Style): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+      inline def setSelect(value: Style): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     }
   }
   
@@ -46,20 +43,16 @@ object DataTables {
   }
   object CellMethods {
     
-    @scala.inline
-    def apply(deselect: () => Api, select: () => Api): CellMethods = {
+    inline def apply(deselect: () => Api, select: () => Api): CellMethods = {
       val __obj = js.Dynamic.literal(deselect = js.Any.fromFunction0(deselect), select = js.Any.fromFunction0(select))
       __obj.asInstanceOf[CellMethods]
     }
     
-    @scala.inline
-    implicit class CellMethodsMutableBuilder[Self <: CellMethods] (val x: Self) extends AnyVal {
+    extension [Self <: CellMethods](x: Self) {
       
-      @scala.inline
-      def setDeselect(value: () => Api): Self = StObject.set(x, "deselect", js.Any.fromFunction0(value))
+      inline def setDeselect(value: () => Api): Self = StObject.set(x, "deselect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSelect(value: () => Api): Self = StObject.set(x, "select", js.Any.fromFunction0(value))
+      inline def setSelect(value: () => Api): Self = StObject.set(x, "select", js.Any.fromFunction0(value))
     }
   }
   
@@ -77,20 +70,16 @@ object DataTables {
   }
   object CellsMethods {
     
-    @scala.inline
-    def apply(deselect: () => Api, select: () => Api): CellsMethods = {
+    inline def apply(deselect: () => Api, select: () => Api): CellsMethods = {
       val __obj = js.Dynamic.literal(deselect = js.Any.fromFunction0(deselect), select = js.Any.fromFunction0(select))
       __obj.asInstanceOf[CellsMethods]
     }
     
-    @scala.inline
-    implicit class CellsMethodsMutableBuilder[Self <: CellsMethods] (val x: Self) extends AnyVal {
+    extension [Self <: CellsMethods](x: Self) {
       
-      @scala.inline
-      def setDeselect(value: () => Api): Self = StObject.set(x, "deselect", js.Any.fromFunction0(value))
+      inline def setDeselect(value: () => Api): Self = StObject.set(x, "deselect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSelect(value: () => Api): Self = StObject.set(x, "select", js.Any.fromFunction0(value))
+      inline def setSelect(value: () => Api): Self = StObject.set(x, "select", js.Any.fromFunction0(value))
     }
   }
   
@@ -108,20 +97,16 @@ object DataTables {
   }
   object RowMethods {
     
-    @scala.inline
-    def apply(deselect: () => Api, select: () => Api): RowMethods = {
+    inline def apply(deselect: () => Api, select: () => Api): RowMethods = {
       val __obj = js.Dynamic.literal(deselect = js.Any.fromFunction0(deselect), select = js.Any.fromFunction0(select))
       __obj.asInstanceOf[RowMethods]
     }
     
-    @scala.inline
-    implicit class RowMethodsMutableBuilder[Self <: RowMethods] (val x: Self) extends AnyVal {
+    extension [Self <: RowMethods](x: Self) {
       
-      @scala.inline
-      def setDeselect(value: () => Api): Self = StObject.set(x, "deselect", js.Any.fromFunction0(value))
+      inline def setDeselect(value: () => Api): Self = StObject.set(x, "deselect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSelect(value: () => Api): Self = StObject.set(x, "select", js.Any.fromFunction0(value))
+      inline def setSelect(value: () => Api): Self = StObject.set(x, "select", js.Any.fromFunction0(value))
     }
   }
   
@@ -139,20 +124,16 @@ object DataTables {
   }
   object RowsMethods {
     
-    @scala.inline
-    def apply(deselect: () => Api, select: () => Api): RowsMethods = {
+    inline def apply(deselect: () => Api, select: () => Api): RowsMethods = {
       val __obj = js.Dynamic.literal(deselect = js.Any.fromFunction0(deselect), select = js.Any.fromFunction0(select))
       __obj.asInstanceOf[RowsMethods]
     }
     
-    @scala.inline
-    implicit class RowsMethodsMutableBuilder[Self <: RowsMethods] (val x: Self) extends AnyVal {
+    extension [Self <: RowsMethods](x: Self) {
       
-      @scala.inline
-      def setDeselect(value: () => Api): Self = StObject.set(x, "deselect", js.Any.fromFunction0(value))
+      inline def setDeselect(value: () => Api): Self = StObject.set(x, "deselect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSelect(value: () => Api): Self = StObject.set(x, "select", js.Any.fromFunction0(value))
+      inline def setSelect(value: () => Api): Self = StObject.set(x, "select", js.Any.fromFunction0(value))
     }
   }
   
@@ -190,50 +171,36 @@ object DataTables {
   }
   object SelectSettings {
     
-    @scala.inline
-    def apply(): SelectSettings = {
+    inline def apply(): SelectSettings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SelectSettings]
     }
     
-    @scala.inline
-    implicit class SelectSettingsMutableBuilder[Self <: SelectSettings] (val x: Self) extends AnyVal {
+    extension [Self <: SelectSettings](x: Self) {
       
-      @scala.inline
-      def setBlurable(value: Boolean): Self = StObject.set(x, "blurable", value.asInstanceOf[js.Any])
+      inline def setBlurable(value: Boolean): Self = StObject.set(x, "blurable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlurableUndefined: Self = StObject.set(x, "blurable", js.undefined)
+      inline def setBlurableUndefined: Self = StObject.set(x, "blurable", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setInfo(value: Boolean): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: Boolean): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
+      inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
       
-      @scala.inline
-      def setItems(value: String): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: String): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      @scala.inline
-      def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+      inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+      inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
       
-      @scala.inline
-      def setStyle(value: api | single | multi | os | multiPlussignshift): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: api | single | multi | os | multiPlussignshift): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -246,20 +213,16 @@ object DataTables {
   }
   object Settings {
     
-    @scala.inline
-    def apply(): Settings = {
+    inline def apply(): Settings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Settings]
     }
     
-    @scala.inline
-    implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
+    extension [Self <: Settings](x: Self) {
       
-      @scala.inline
-      def setSelect(value: Boolean | String | SelectSettings): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+      inline def setSelect(value: Boolean | String | SelectSettings): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+      inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     }
   }
 }

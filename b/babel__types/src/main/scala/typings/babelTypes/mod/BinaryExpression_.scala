@@ -44,8 +44,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object BinaryExpression_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     left: Expression | PrivateName_,
     operator: Plussign | `-_` | Slash | Percentsign | Asterisk | AsteriskAsterisk | Ampersand | Verticalline | GreaterthansignGreaterthansign | GreaterthansignGreaterthansignGreaterthansign | LessthansignLessthansign | typings.babelTypes.babelTypesStrings.^ | EqualssignEqualssign | EqualssignEqualssignEqualssign | ExclamationmarkEqualssign | ExclamationmarkEqualssignEqualssign | in | instanceof | Greaterthansign | Lessthansign | GreaterthansignEqualssign | LessthansignEqualssign,
     right: Expression
@@ -55,21 +54,16 @@ object BinaryExpression_ {
     __obj.asInstanceOf[BinaryExpression_]
   }
   
-  @scala.inline
-  implicit class BinaryExpression_MutableBuilder[Self <: BinaryExpression_] (val x: Self) extends AnyVal {
+  extension [Self <: BinaryExpression_](x: Self) {
     
-    @scala.inline
-    def setLeft(value: Expression | PrivateName_): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Expression | PrivateName_): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperator(
+    inline def setOperator(
       value: Plussign | `-_` | Slash | Percentsign | Asterisk | AsteriskAsterisk | Ampersand | Verticalline | GreaterthansignGreaterthansign | GreaterthansignGreaterthansignGreaterthansign | LessthansignLessthansign | typings.babelTypes.babelTypesStrings.^ | EqualssignEqualssign | EqualssignEqualssignEqualssign | ExclamationmarkEqualssign | ExclamationmarkEqualssignEqualssign | in | instanceof | Greaterthansign | Lessthansign | GreaterthansignEqualssign | LessthansignEqualssign
     ): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: Expression): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Expression): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: BinaryExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: BinaryExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

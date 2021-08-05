@@ -23,20 +23,16 @@ object dropdownOptionProtractorDriverMod {
   }
   object DropdownOptionDriver {
     
-    @scala.inline
-    def apply(click: () => js.Promise[Unit], element: () => ElementFinder, getText: () => js.Promise[String]): DropdownOptionDriver = {
+    inline def apply(click: () => js.Promise[Unit], element: () => ElementFinder, getText: () => js.Promise[String]): DropdownOptionDriver = {
       val __obj = js.Dynamic.literal(click = js.Any.fromFunction0(click), element = js.Any.fromFunction0(element), getText = js.Any.fromFunction0(getText))
       __obj.asInstanceOf[DropdownOptionDriver]
     }
     
-    @scala.inline
-    implicit class DropdownOptionDriverMutableBuilder[Self <: DropdownOptionDriver] (val x: Self) extends AnyVal {
+    extension [Self <: DropdownOptionDriver](x: Self) {
       
-      @scala.inline
-      def setClick(value: () => js.Promise[Unit]): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
+      inline def setClick(value: () => js.Promise[Unit]): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetText(value: () => js.Promise[String]): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+      inline def setGetText(value: () => js.Promise[String]): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
     }
   }
 }

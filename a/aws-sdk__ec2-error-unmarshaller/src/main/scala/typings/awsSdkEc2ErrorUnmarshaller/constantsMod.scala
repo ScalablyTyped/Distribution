@@ -21,23 +21,18 @@ object constantsMod {
   }
   object ParsedLegacyErrorResponse {
     
-    @scala.inline
-    def apply($metadata: RequestId): ParsedLegacyErrorResponse = {
+    inline def apply($metadata: RequestId): ParsedLegacyErrorResponse = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParsedLegacyErrorResponse]
     }
     
-    @scala.inline
-    implicit class ParsedLegacyErrorResponseMutableBuilder[Self <: ParsedLegacyErrorResponse] (val x: Self) extends AnyVal {
+    extension [Self <: ParsedLegacyErrorResponse](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: RequestId): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: RequestId): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrors(value: Error): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: Error): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
+      inline def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
     }
   }
 }

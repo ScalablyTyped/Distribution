@@ -73,77 +73,55 @@ trait QuotaLimit extends StObject {
 }
 object QuotaLimit {
   
-  @scala.inline
-  def apply(): QuotaLimit = {
+  inline def apply(): QuotaLimit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QuotaLimit]
   }
   
-  @scala.inline
-  implicit class QuotaLimitMutableBuilder[Self <: QuotaLimit] (val x: Self) extends AnyVal {
+  extension [Self <: QuotaLimit](x: Self) {
     
-    @scala.inline
-    def setDefaultLimit(value: String): Self = StObject.set(x, "defaultLimit", value.asInstanceOf[js.Any])
+    inline def setDefaultLimit(value: String): Self = StObject.set(x, "defaultLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultLimitUndefined: Self = StObject.set(x, "defaultLimit", js.undefined)
+    inline def setDefaultLimitUndefined: Self = StObject.set(x, "defaultLimit", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setFreeTier(value: String): Self = StObject.set(x, "freeTier", value.asInstanceOf[js.Any])
+    inline def setFreeTier(value: String): Self = StObject.set(x, "freeTier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFreeTierUndefined: Self = StObject.set(x, "freeTier", js.undefined)
+    inline def setFreeTierUndefined: Self = StObject.set(x, "freeTier", js.undefined)
     
-    @scala.inline
-    def setMaxLimit(value: String): Self = StObject.set(x, "maxLimit", value.asInstanceOf[js.Any])
+    inline def setMaxLimit(value: String): Self = StObject.set(x, "maxLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxLimitUndefined: Self = StObject.set(x, "maxLimit", js.undefined)
+    inline def setMaxLimitUndefined: Self = StObject.set(x, "maxLimit", js.undefined)
     
-    @scala.inline
-    def setMetric(value: String): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
+    inline def setMetric(value: String): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
+    inline def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+    inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     
-    @scala.inline
-    def setValues(
+    inline def setValues(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientServicemanagement.maximMazurokGapiClientServicemanagementStrings.QuotaLimit & TopLevel[js.Any]
     ): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
   }
 }

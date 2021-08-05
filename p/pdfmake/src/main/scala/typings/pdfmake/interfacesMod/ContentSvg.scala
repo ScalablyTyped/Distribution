@@ -19,34 +19,25 @@ trait ContentSvg
 }
 object ContentSvg {
   
-  @scala.inline
-  def apply(svg: String): ContentSvg = {
+  inline def apply(svg: String): ContentSvg = {
     val __obj = js.Dynamic.literal(svg = svg.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentSvg]
   }
   
-  @scala.inline
-  implicit class ContentSvgMutableBuilder[Self <: ContentSvg] (val x: Self) extends AnyVal {
+  extension [Self <: ContentSvg](x: Self) {
     
-    @scala.inline
-    def setFit(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
+    inline def setFit(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFitUndefined: Self = StObject.set(x, "fit", js.undefined)
+    inline def setFitUndefined: Self = StObject.set(x, "fit", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setSvg(value: String): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
+    inline def setSvg(value: String): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

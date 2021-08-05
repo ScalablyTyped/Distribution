@@ -25,8 +25,7 @@ trait XInputSequenceChecker
 }
 object XInputSequenceChecker {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     checkInputSequence: (String, Double, String, Double) => Boolean,
     queryInterface: `type` => js.Any,
@@ -36,10 +35,8 @@ object XInputSequenceChecker {
     __obj.asInstanceOf[XInputSequenceChecker]
   }
   
-  @scala.inline
-  implicit class XInputSequenceCheckerMutableBuilder[Self <: XInputSequenceChecker] (val x: Self) extends AnyVal {
+  extension [Self <: XInputSequenceChecker](x: Self) {
     
-    @scala.inline
-    def setCheckInputSequence(value: (String, Double, String, Double) => Boolean): Self = StObject.set(x, "checkInputSequence", js.Any.fromFunction4(value))
+    inline def setCheckInputSequence(value: (String, Double, String, Double) => Boolean): Self = StObject.set(x, "checkInputSequence", js.Any.fromFunction4(value))
   }
 }

@@ -48,43 +48,31 @@ trait TeamsUpdateLegacyEndpoint extends StObject {
 }
 object TeamsUpdateLegacyEndpoint {
   
-  @scala.inline
-  def apply(name: String, team_id: Double): TeamsUpdateLegacyEndpoint = {
+  inline def apply(name: String, team_id: Double): TeamsUpdateLegacyEndpoint = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], team_id = team_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamsUpdateLegacyEndpoint]
   }
   
-  @scala.inline
-  implicit class TeamsUpdateLegacyEndpointMutableBuilder[Self <: TeamsUpdateLegacyEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: TeamsUpdateLegacyEndpoint](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent_team_id(value: Double): Self = StObject.set(x, "parent_team_id", value.asInstanceOf[js.Any])
+    inline def setParent_team_id(value: Double): Self = StObject.set(x, "parent_team_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent_team_idUndefined: Self = StObject.set(x, "parent_team_id", js.undefined)
+    inline def setParent_team_idUndefined: Self = StObject.set(x, "parent_team_id", js.undefined)
     
-    @scala.inline
-    def setPermission(value: pull | push | admin): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
+    inline def setPermission(value: pull | push | admin): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
+    inline def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
     
-    @scala.inline
-    def setPrivacy(value: secret | closed): Self = StObject.set(x, "privacy", value.asInstanceOf[js.Any])
+    inline def setPrivacy(value: secret | closed): Self = StObject.set(x, "privacy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivacyUndefined: Self = StObject.set(x, "privacy", js.undefined)
+    inline def setPrivacyUndefined: Self = StObject.set(x, "privacy", js.undefined)
     
-    @scala.inline
-    def setTeam_id(value: Double): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
+    inline def setTeam_id(value: Double): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
   }
 }

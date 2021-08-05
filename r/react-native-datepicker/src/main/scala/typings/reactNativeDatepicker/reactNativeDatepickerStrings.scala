@@ -8,31 +8,25 @@ object reactNativeDatepickerStrings {
   
   @js.native
   sealed trait default extends StObject
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
+  inline def default: default = "default".asInstanceOf[default]
   
   @js.native
   sealed trait calendar extends StObject
-  @scala.inline
-  def calendar: calendar = "calendar".asInstanceOf[calendar]
+  inline def calendar: calendar = "calendar".asInstanceOf[calendar]
   
   @js.native
   sealed trait date extends StObject
-  @scala.inline
-  def date: date = "date".asInstanceOf[date]
+  inline def date: date = "date".asInstanceOf[date]
   
   @js.native
   sealed trait datetime extends StObject
-  @scala.inline
-  def datetime: datetime = "datetime".asInstanceOf[datetime]
+  inline def datetime: datetime = "datetime".asInstanceOf[datetime]
   
   @js.native
   sealed trait spinner extends StObject
-  @scala.inline
-  def spinner: spinner = "spinner".asInstanceOf[spinner]
+  inline def spinner: spinner = "spinner".asInstanceOf[spinner]
   
   @js.native
   sealed trait time extends StObject
-  @scala.inline
-  def time: time = "time".asInstanceOf[time]
+  inline def time: time = "time".asInstanceOf[time]
 }

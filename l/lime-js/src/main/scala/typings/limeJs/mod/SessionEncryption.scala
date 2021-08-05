@@ -17,13 +17,11 @@ object SessionEncryption {
   @JSImport("lime-js", "SessionEncryption.none")
   @js.native
   def none: String = js.native
-  @scala.inline
-  def none_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
+  inline def none_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("lime-js", "SessionEncryption.tls")
   @js.native
   def tls: String = js.native
-  @scala.inline
-  def tls_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tls")(x.asInstanceOf[js.Any])
+  inline def tls_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tls")(x.asInstanceOf[js.Any])
 }

@@ -28,25 +28,19 @@ trait WebApiTagDefinition extends StObject {
 }
 object WebApiTagDefinition {
   
-  @scala.inline
-  def apply(active: Boolean, id: String, name: String, url: String): WebApiTagDefinition = {
+  inline def apply(active: Boolean, id: String, name: String, url: String): WebApiTagDefinition = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebApiTagDefinition]
   }
   
-  @scala.inline
-  implicit class WebApiTagDefinitionMutableBuilder[Self <: WebApiTagDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: WebApiTagDefinition](x: Self) {
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

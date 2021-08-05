@@ -17,16 +17,13 @@ trait CameraPopoverHandle extends StObject {
 }
 object CameraPopoverHandle {
   
-  @scala.inline
-  def apply(setPosition: CameraPopoverOptions => Unit): CameraPopoverHandle = {
+  inline def apply(setPosition: CameraPopoverOptions => Unit): CameraPopoverHandle = {
     val __obj = js.Dynamic.literal(setPosition = js.Any.fromFunction1(setPosition))
     __obj.asInstanceOf[CameraPopoverHandle]
   }
   
-  @scala.inline
-  implicit class CameraPopoverHandleMutableBuilder[Self <: CameraPopoverHandle] (val x: Self) extends AnyVal {
+  extension [Self <: CameraPopoverHandle](x: Self) {
     
-    @scala.inline
-    def setSetPosition(value: CameraPopoverOptions => Unit): Self = StObject.set(x, "setPosition", js.Any.fromFunction1(value))
+    inline def setSetPosition(value: CameraPopoverOptions => Unit): Self = StObject.set(x, "setPosition", js.Any.fromFunction1(value))
   }
 }

@@ -14,8 +14,7 @@ trait StringOptions
 }
 object StringOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alpha: Boolean,
     casing: upper | lower,
     length: Double,
@@ -27,10 +26,8 @@ object StringOptions {
     __obj.asInstanceOf[StringOptions]
   }
   
-  @scala.inline
-  implicit class StringOptionsMutableBuilder[Self <: StringOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StringOptions](x: Self) {
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
   }
 }

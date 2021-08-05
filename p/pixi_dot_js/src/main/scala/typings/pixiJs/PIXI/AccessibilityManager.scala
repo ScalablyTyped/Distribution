@@ -70,8 +70,7 @@ trait AccessibilityManager extends StObject {
 }
 object AccessibilityManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     capHitArea: Rectangle => Unit,
     debug: Boolean,
     destroy: () => Unit,
@@ -84,28 +83,20 @@ object AccessibilityManager {
     __obj.asInstanceOf[AccessibilityManager]
   }
   
-  @scala.inline
-  implicit class AccessibilityManagerMutableBuilder[Self <: AccessibilityManager] (val x: Self) extends AnyVal {
+  extension [Self <: AccessibilityManager](x: Self) {
     
-    @scala.inline
-    def setCapHitArea(value: Rectangle => Unit): Self = StObject.set(x, "capHitArea", js.Any.fromFunction1(value))
+    inline def setCapHitArea(value: Rectangle => Unit): Self = StObject.set(x, "capHitArea", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+    inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMobileAccessibility(value: Boolean): Self = StObject.set(x, "isMobileAccessibility", value.asInstanceOf[js.Any])
+    inline def setIsMobileAccessibility(value: Boolean): Self = StObject.set(x, "isMobileAccessibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderer(value: AbstractRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+    inline def setRenderer(value: AbstractRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateDebugHTML(value: HTMLElement => Unit): Self = StObject.set(x, "updateDebugHTML", js.Any.fromFunction1(value))
+    inline def setUpdateDebugHTML(value: HTMLElement => Unit): Self = StObject.set(x, "updateDebugHTML", js.Any.fromFunction1(value))
   }
 }

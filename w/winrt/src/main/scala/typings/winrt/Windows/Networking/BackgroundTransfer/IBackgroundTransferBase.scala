@@ -21,8 +21,7 @@ trait IBackgroundTransferBase extends StObject {
 }
 object IBackgroundTransferBase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     costPolicy: BackgroundTransferCostPolicy,
     group: String,
     method: String,
@@ -34,25 +33,18 @@ object IBackgroundTransferBase {
     __obj.asInstanceOf[IBackgroundTransferBase]
   }
   
-  @scala.inline
-  implicit class IBackgroundTransferBaseMutableBuilder[Self <: IBackgroundTransferBase] (val x: Self) extends AnyVal {
+  extension [Self <: IBackgroundTransferBase](x: Self) {
     
-    @scala.inline
-    def setCostPolicy(value: BackgroundTransferCostPolicy): Self = StObject.set(x, "costPolicy", value.asInstanceOf[js.Any])
+    inline def setCostPolicy(value: BackgroundTransferCostPolicy): Self = StObject.set(x, "costPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyCredential(value: PasswordCredential): Self = StObject.set(x, "proxyCredential", value.asInstanceOf[js.Any])
+    inline def setProxyCredential(value: PasswordCredential): Self = StObject.set(x, "proxyCredential", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerCredential(value: PasswordCredential): Self = StObject.set(x, "serverCredential", value.asInstanceOf[js.Any])
+    inline def setServerCredential(value: PasswordCredential): Self = StObject.set(x, "serverCredential", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetRequestHeader(value: (String, String) => Unit): Self = StObject.set(x, "setRequestHeader", js.Any.fromFunction2(value))
+    inline def setSetRequestHeader(value: (String, String) => Unit): Self = StObject.set(x, "setRequestHeader", js.Any.fromFunction2(value))
   }
 }

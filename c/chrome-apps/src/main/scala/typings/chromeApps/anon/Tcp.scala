@@ -20,31 +20,23 @@ trait Tcp extends StObject {
 }
 object Tcp {
   
-  @scala.inline
-  def apply(): Tcp = {
+  inline def apply(): Tcp = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Tcp]
   }
   
-  @scala.inline
-  implicit class TcpMutableBuilder[Self <: Tcp] (val x: Self) extends AnyVal {
+  extension [Self <: Tcp](x: Self) {
     
-    @scala.inline
-    def setTcp(value: SocketTcpPermission): Self = StObject.set(x, "tcp", value.asInstanceOf[js.Any])
+    inline def setTcp(value: SocketTcpPermission): Self = StObject.set(x, "tcp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTcpServer(value: SocketTcpServerPermission): Self = StObject.set(x, "tcpServer", value.asInstanceOf[js.Any])
+    inline def setTcpServer(value: SocketTcpServerPermission): Self = StObject.set(x, "tcpServer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTcpServerUndefined: Self = StObject.set(x, "tcpServer", js.undefined)
+    inline def setTcpServerUndefined: Self = StObject.set(x, "tcpServer", js.undefined)
     
-    @scala.inline
-    def setTcpUndefined: Self = StObject.set(x, "tcp", js.undefined)
+    inline def setTcpUndefined: Self = StObject.set(x, "tcp", js.undefined)
     
-    @scala.inline
-    def setUdp(value: SocketUdpPermission): Self = StObject.set(x, "udp", value.asInstanceOf[js.Any])
+    inline def setUdp(value: SocketUdpPermission): Self = StObject.set(x, "udp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUdpUndefined: Self = StObject.set(x, "udp", js.undefined)
+    inline def setUdpUndefined: Self = StObject.set(x, "udp", js.undefined)
   }
 }

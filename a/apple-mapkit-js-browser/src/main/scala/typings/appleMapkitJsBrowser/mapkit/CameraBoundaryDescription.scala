@@ -21,25 +21,19 @@ trait CameraBoundaryDescription extends StObject {
 }
 object CameraBoundaryDescription {
   
-  @scala.inline
-  def apply(): CameraBoundaryDescription = {
+  inline def apply(): CameraBoundaryDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CameraBoundaryDescription]
   }
   
-  @scala.inline
-  implicit class CameraBoundaryDescriptionMutableBuilder[Self <: CameraBoundaryDescription] (val x: Self) extends AnyVal {
+  extension [Self <: CameraBoundaryDescription](x: Self) {
     
-    @scala.inline
-    def setMapRect(value: MapRect): Self = StObject.set(x, "mapRect", value.asInstanceOf[js.Any])
+    inline def setMapRect(value: MapRect): Self = StObject.set(x, "mapRect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapRectUndefined: Self = StObject.set(x, "mapRect", js.undefined)
+    inline def setMapRectUndefined: Self = StObject.set(x, "mapRect", js.undefined)
     
-    @scala.inline
-    def setRegion(value: CoordinateRegion): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: CoordinateRegion): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
   }
 }

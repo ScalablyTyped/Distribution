@@ -13,22 +13,17 @@ trait FlexLayout extends StObject {
 }
 object FlexLayout {
   
-  @scala.inline
-  def apply($getSize: js.Array[js.Any], render: () => Unit): FlexLayout = {
+  inline def apply($getSize: js.Array[js.Any], render: () => Unit): FlexLayout = {
     val __obj = js.Dynamic.literal($getSize = $getSize.asInstanceOf[js.Any], render = js.Any.fromFunction0(render))
     __obj.asInstanceOf[FlexLayout]
   }
   
-  @scala.inline
-  implicit class FlexLayoutMutableBuilder[Self <: FlexLayout] (val x: Self) extends AnyVal {
+  extension [Self <: FlexLayout](x: Self) {
     
-    @scala.inline
-    def set$getSize(value: js.Array[js.Any]): Self = StObject.set(x, "$getSize", value.asInstanceOf[js.Any])
+    inline def set$getSize(value: js.Array[js.Any]): Self = StObject.set(x, "$getSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$getSizeVarargs(value: js.Any*): Self = StObject.set(x, "$getSize", js.Array(value :_*))
+    inline def set$getSizeVarargs(value: js.Any*): Self = StObject.set(x, "$getSize", js.Array(value :_*))
     
-    @scala.inline
-    def setRender(value: () => Unit): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
+    inline def setRender(value: () => Unit): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
   }
 }

@@ -22,26 +22,20 @@ trait Data
 }
 object Data {
   
-  @scala.inline
-  def apply(data: StringDictionary[js.Any], description: String, name: ExtensionID): Data = {
+  inline def apply(data: StringDictionary[js.Any], description: String, name: ExtensionID): Data = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("storage")
     __obj.asInstanceOf[Data]
   }
   
-  @scala.inline
-  implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+  extension [Self <: Data](x: Self) {
     
-    @scala.inline
-    def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: ExtensionID): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ExtensionID): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: storage): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: storage): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -28,37 +28,27 @@ trait Part extends StObject {
 }
 object Part {
   
-  @scala.inline
-  def apply(): Part = {
+  inline def apply(): Part = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Part]
   }
   
-  @scala.inline
-  implicit class PartMutableBuilder[Self <: Part] (val x: Self) extends AnyVal {
+  extension [Self <: Part](x: Self) {
     
-    @scala.inline
-    def setETag(value: ETag): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
+    inline def setETag(value: ETag): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
+    inline def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
     
-    @scala.inline
-    def setLastModified(value: LastModified): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
+    inline def setLastModified(value: LastModified): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
+    inline def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
     
-    @scala.inline
-    def setPartNumber(value: PartNumber): Self = StObject.set(x, "PartNumber", value.asInstanceOf[js.Any])
+    inline def setPartNumber(value: PartNumber): Self = StObject.set(x, "PartNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartNumberUndefined: Self = StObject.set(x, "PartNumber", js.undefined)
+    inline def setPartNumberUndefined: Self = StObject.set(x, "PartNumber", js.undefined)
     
-    @scala.inline
-    def setSize(value: Size): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Size): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "Size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "Size", js.undefined)
   }
 }

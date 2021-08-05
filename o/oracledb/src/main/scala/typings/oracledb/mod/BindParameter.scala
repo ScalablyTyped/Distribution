@@ -46,43 +46,31 @@ trait BindParameter extends StObject {
 }
 object BindParameter {
   
-  @scala.inline
-  def apply(): BindParameter = {
+  inline def apply(): BindParameter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BindParameter]
   }
   
-  @scala.inline
-  implicit class BindParameterMutableBuilder[Self <: BindParameter] (val x: Self) extends AnyVal {
+  extension [Self <: BindParameter](x: Self) {
     
-    @scala.inline
-    def setDir(value: Double): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+    inline def setDir(value: Double): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+    inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
     
-    @scala.inline
-    def setMaxArraySize(value: Double): Self = StObject.set(x, "maxArraySize", value.asInstanceOf[js.Any])
+    inline def setMaxArraySize(value: Double): Self = StObject.set(x, "maxArraySize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxArraySizeUndefined: Self = StObject.set(x, "maxArraySize", js.undefined)
+    inline def setMaxArraySizeUndefined: Self = StObject.set(x, "maxArraySize", js.undefined)
     
-    @scala.inline
-    def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+    inline def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
+    inline def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
     
-    @scala.inline
-    def setType(value: Double | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setVal(value: js.Any): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+    inline def setVal(value: js.Any): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValUndefined: Self = StObject.set(x, "val", js.undefined)
+    inline def setValUndefined: Self = StObject.set(x, "val", js.undefined)
   }
 }

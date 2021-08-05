@@ -13,17 +13,14 @@ trait `0` extends StObject {
 }
 object `0` {
   
-  @scala.inline
-  def apply(`type`: none | single | per_room): `0` = {
+  inline def apply(`type`: none | single | per_room): `0` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`0`]
   }
   
-  @scala.inline
-  implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+  extension [Self <: `0`](x: Self) {
     
-    @scala.inline
-    def setType(value: none | single | per_room): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: none | single | per_room): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

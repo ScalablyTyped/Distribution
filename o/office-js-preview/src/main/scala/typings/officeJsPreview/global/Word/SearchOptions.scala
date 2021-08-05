@@ -40,6 +40,5 @@ object SearchOptions {
     * Create a new instance of Word.SearchOptions object
     */
   /* static member */
-  @scala.inline
-  def newObject(context: ClientRequestContext): typings.officeJsPreview.Word.SearchOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("newObject")(context.asInstanceOf[js.Any]).asInstanceOf[typings.officeJsPreview.Word.SearchOptions]
+  inline def newObject(context: ClientRequestContext): typings.officeJsPreview.Word.SearchOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("newObject")(context.asInstanceOf[js.Any]).asInstanceOf[typings.officeJsPreview.Word.SearchOptions]
 }

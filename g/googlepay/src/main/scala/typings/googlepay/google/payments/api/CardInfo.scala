@@ -48,25 +48,19 @@ trait CardInfo extends StObject {
 }
 object CardInfo {
   
-  @scala.inline
-  def apply(cardDetails: String, cardNetwork: CardNetwork): CardInfo = {
+  inline def apply(cardDetails: String, cardNetwork: CardNetwork): CardInfo = {
     val __obj = js.Dynamic.literal(cardDetails = cardDetails.asInstanceOf[js.Any], cardNetwork = cardNetwork.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardInfo]
   }
   
-  @scala.inline
-  implicit class CardInfoMutableBuilder[Self <: CardInfo] (val x: Self) extends AnyVal {
+  extension [Self <: CardInfo](x: Self) {
     
-    @scala.inline
-    def setBillingAddress(value: Address): Self = StObject.set(x, "billingAddress", value.asInstanceOf[js.Any])
+    inline def setBillingAddress(value: Address): Self = StObject.set(x, "billingAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillingAddressUndefined: Self = StObject.set(x, "billingAddress", js.undefined)
+    inline def setBillingAddressUndefined: Self = StObject.set(x, "billingAddress", js.undefined)
     
-    @scala.inline
-    def setCardDetails(value: String): Self = StObject.set(x, "cardDetails", value.asInstanceOf[js.Any])
+    inline def setCardDetails(value: String): Self = StObject.set(x, "cardDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardNetwork(value: CardNetwork): Self = StObject.set(x, "cardNetwork", value.asInstanceOf[js.Any])
+    inline def setCardNetwork(value: CardNetwork): Self = StObject.set(x, "cardNetwork", value.asInstanceOf[js.Any])
   }
 }

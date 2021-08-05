@@ -10,10 +10,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def linkify(source: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("linkify")(source.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def linkify(source: String, options: LinkifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("linkify")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def linkify(source: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("linkify")(source.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def linkify(source: String, options: LinkifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("linkify")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait LinkifyOptions extends StObject {
     
@@ -23,26 +21,20 @@ object mod {
   }
   object LinkifyOptions {
     
-    @scala.inline
-    def apply(): LinkifyOptions = {
+    inline def apply(): LinkifyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LinkifyOptions]
     }
     
-    @scala.inline
-    implicit class LinkifyOptionsMutableBuilder[Self <: LinkifyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LinkifyOptions](x: Self) {
       
-      @scala.inline
-      def setRepository(value: String): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+      inline def setRepository(value: String): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
+      inline def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
       
-      @scala.inline
-      def setStrong(value: Boolean): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
+      inline def setStrong(value: Boolean): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrongUndefined: Self = StObject.set(x, "strong", js.undefined)
+      inline def setStrongUndefined: Self = StObject.set(x, "strong", js.undefined)
     }
   }
 }

@@ -13,19 +13,15 @@ trait ListQueueTagsResult extends StObject {
 }
 object ListQueueTagsResult {
   
-  @scala.inline
-  def apply(): ListQueueTagsResult = {
+  inline def apply(): ListQueueTagsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListQueueTagsResult]
   }
   
-  @scala.inline
-  implicit class ListQueueTagsResultMutableBuilder[Self <: ListQueueTagsResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListQueueTagsResult](x: Self) {
     
-    @scala.inline
-    def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

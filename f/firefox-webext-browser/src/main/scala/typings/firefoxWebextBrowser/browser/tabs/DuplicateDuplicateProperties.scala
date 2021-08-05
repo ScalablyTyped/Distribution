@@ -18,25 +18,19 @@ trait DuplicateDuplicateProperties extends StObject {
 }
 object DuplicateDuplicateProperties {
   
-  @scala.inline
-  def apply(): DuplicateDuplicateProperties = {
+  inline def apply(): DuplicateDuplicateProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DuplicateDuplicateProperties]
   }
   
-  @scala.inline
-  implicit class DuplicateDuplicatePropertiesMutableBuilder[Self <: DuplicateDuplicateProperties] (val x: Self) extends AnyVal {
+  extension [Self <: DuplicateDuplicateProperties](x: Self) {
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
   }
 }

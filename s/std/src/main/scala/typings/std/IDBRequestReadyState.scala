@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IDBRequestReadyState extends StObject
 object IDBRequestReadyState {
   
-  @scala.inline
-  def done: typings.std.stdStrings.done = "done".asInstanceOf[typings.std.stdStrings.done]
+  inline def done: typings.std.stdStrings.done = "done".asInstanceOf[typings.std.stdStrings.done]
   
-  @scala.inline
-  def pending: typings.std.stdStrings.pending = "pending".asInstanceOf[typings.std.stdStrings.pending]
+  inline def pending: typings.std.stdStrings.pending = "pending".asInstanceOf[typings.std.stdStrings.pending]
 }

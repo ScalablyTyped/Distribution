@@ -24,8 +24,7 @@ trait UnixSocket extends StObject {
 }
 object UnixSocket {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Flags: String,
     Inode: String,
     Num: String,
@@ -39,31 +38,22 @@ object UnixSocket {
     __obj.asInstanceOf[UnixSocket]
   }
   
-  @scala.inline
-  implicit class UnixSocketMutableBuilder[Self <: UnixSocket] (val x: Self) extends AnyVal {
+  extension [Self <: UnixSocket](x: Self) {
     
-    @scala.inline
-    def setFlags(value: String): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: String): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInode(value: String): Self = StObject.set(x, "Inode", value.asInstanceOf[js.Any])
+    inline def setInode(value: String): Self = StObject.set(x, "Inode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNum(value: String): Self = StObject.set(x, "Num", value.asInstanceOf[js.Any])
+    inline def setNum(value: String): Self = StObject.set(x, "Num", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocol(value: String): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: String): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefCount(value: String): Self = StObject.set(x, "RefCount", value.asInstanceOf[js.Any])
+    inline def setRefCount(value: String): Self = StObject.set(x, "RefCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSt(value: String): Self = StObject.set(x, "St", value.asInstanceOf[js.Any])
+    inline def setSt(value: String): Self = StObject.set(x, "St", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

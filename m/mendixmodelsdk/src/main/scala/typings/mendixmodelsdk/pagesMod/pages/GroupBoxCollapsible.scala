@@ -21,20 +21,17 @@ object GroupBoxCollapsible {
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GroupBoxCollapsible.No")
   @js.native
   def No: GroupBoxCollapsible = js.native
-  @scala.inline
-  def No_=(x: GroupBoxCollapsible): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("No")(x.asInstanceOf[js.Any])
+  inline def No_=(x: GroupBoxCollapsible): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("No")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GroupBoxCollapsible.YesInitiallyCollapsed")
   @js.native
   def YesInitiallyCollapsed: GroupBoxCollapsible = js.native
-  @scala.inline
-  def YesInitiallyCollapsed_=(x: GroupBoxCollapsible): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("YesInitiallyCollapsed")(x.asInstanceOf[js.Any])
+  inline def YesInitiallyCollapsed_=(x: GroupBoxCollapsible): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("YesInitiallyCollapsed")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GroupBoxCollapsible.YesInitiallyExpanded")
   @js.native
   def YesInitiallyExpanded: GroupBoxCollapsible = js.native
-  @scala.inline
-  def YesInitiallyExpanded_=(x: GroupBoxCollapsible): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("YesInitiallyExpanded")(x.asInstanceOf[js.Any])
+  inline def YesInitiallyExpanded_=(x: GroupBoxCollapsible): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("YesInitiallyExpanded")(x.asInstanceOf[js.Any])
 }

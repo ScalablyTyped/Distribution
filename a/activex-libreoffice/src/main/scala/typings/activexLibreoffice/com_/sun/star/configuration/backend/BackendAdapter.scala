@@ -18,8 +18,7 @@ trait BackendAdapter
      with XInitialization
 object BackendAdapter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdminEntity: String,
     OwnerEntity: String,
     acquire: () => Unit,

@@ -34,88 +34,61 @@ trait CrossOriginLoginOptions extends StObject {
 }
 object CrossOriginLoginOptions {
   
-  @scala.inline
-  def apply(password: String): CrossOriginLoginOptions = {
+  inline def apply(password: String): CrossOriginLoginOptions = {
     val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any])
     __obj.asInstanceOf[CrossOriginLoginOptions]
   }
   
-  @scala.inline
-  implicit class CrossOriginLoginOptionsMutableBuilder[Self <: CrossOriginLoginOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CrossOriginLoginOptions](x: Self) {
     
-    @scala.inline
-    def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
+    inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
+    inline def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
     
-    @scala.inline
-    def setClientID(value: String): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
+    inline def setClientID(value: String): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientIDUndefined: Self = StObject.set(x, "clientID", js.undefined)
+    inline def setClientIDUndefined: Self = StObject.set(x, "clientID", js.undefined)
     
-    @scala.inline
-    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
+    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRealm(value: String): Self = StObject.set(x, "realm", value.asInstanceOf[js.Any])
+    inline def setRealm(value: String): Self = StObject.set(x, "realm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRealmUndefined: Self = StObject.set(x, "realm", js.undefined)
+    inline def setRealmUndefined: Self = StObject.set(x, "realm", js.undefined)
     
-    @scala.inline
-    def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
+    inline def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectUriUndefined: Self = StObject.set(x, "redirectUri", js.undefined)
+    inline def setRedirectUriUndefined: Self = StObject.set(x, "redirectUri", js.undefined)
     
-    @scala.inline
-    def setResponseMode(value: String): Self = StObject.set(x, "responseMode", value.asInstanceOf[js.Any])
+    inline def setResponseMode(value: String): Self = StObject.set(x, "responseMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseModeUndefined: Self = StObject.set(x, "responseMode", js.undefined)
+    inline def setResponseModeUndefined: Self = StObject.set(x, "responseMode", js.undefined)
     
-    @scala.inline
-    def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+    inline def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
+    inline def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
     
-    @scala.inline
-    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

@@ -14,22 +14,17 @@ trait ChangeReport extends StObject {
 }
 object ChangeReport {
   
-  @scala.inline
-  def apply(): ChangeReport = {
+  inline def apply(): ChangeReport = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChangeReport]
   }
   
-  @scala.inline
-  implicit class ChangeReportMutableBuilder[Self <: ChangeReport] (val x: Self) extends AnyVal {
+  extension [Self <: ChangeReport](x: Self) {
     
-    @scala.inline
-    def setConfigChanges(value: js.Array[ConfigChange]): Self = StObject.set(x, "configChanges", value.asInstanceOf[js.Any])
+    inline def setConfigChanges(value: js.Array[ConfigChange]): Self = StObject.set(x, "configChanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigChangesUndefined: Self = StObject.set(x, "configChanges", js.undefined)
+    inline def setConfigChangesUndefined: Self = StObject.set(x, "configChanges", js.undefined)
     
-    @scala.inline
-    def setConfigChangesVarargs(value: ConfigChange*): Self = StObject.set(x, "configChanges", js.Array(value :_*))
+    inline def setConfigChangesVarargs(value: ConfigChange*): Self = StObject.set(x, "configChanges", js.Array(value :_*))
   }
 }

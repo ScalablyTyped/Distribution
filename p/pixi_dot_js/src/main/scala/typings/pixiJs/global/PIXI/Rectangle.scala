@@ -50,6 +50,5 @@ object Rectangle {
   @JSGlobal("PIXI.Rectangle.EMPTY")
   @js.native
   def EMPTY: typings.pixiJs.PIXI.Rectangle = js.native
-  @scala.inline
-  def EMPTY_=(x: typings.pixiJs.PIXI.Rectangle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMPTY")(x.asInstanceOf[js.Any])
+  inline def EMPTY_=(x: typings.pixiJs.PIXI.Rectangle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMPTY")(x.asInstanceOf[js.Any])
 }

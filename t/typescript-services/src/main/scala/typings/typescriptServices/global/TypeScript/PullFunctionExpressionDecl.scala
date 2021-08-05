@@ -49,16 +49,16 @@ class PullFunctionExpressionDecl protected ()
   /* CompleteClass */
   var childDeclValueCache: IIndexable[js.Array[typings.typescriptServices.TypeScript.PullDecl]] = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var childDecls: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var containerDecl: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var declDisplayName: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var declGroups: js.Any = js.native
   
   /* CompleteClass */
@@ -73,11 +73,11 @@ class PullFunctionExpressionDecl protected ()
   /* CompleteClass */
   var flags: typings.typescriptServices.TypeScript.PullElementFlags = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var functionExpressionName: js.Any = js.native
   
-  /* CompleteClass */
-  /* private */ override def getChildDeclCache(declKind: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def getChildDeclCache(declKind: js.Any): js.Any = js.native
   
   /* CompleteClass */
   override def getChildDecls(): js.Array[typings.typescriptServices.TypeScript.PullDecl] = js.native
@@ -139,10 +139,10 @@ class PullFunctionExpressionDecl protected ()
   /* CompleteClass */
   var name: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var parentDecl: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var parentPath: js.Any = js.native
   
   /* CompleteClass */
@@ -166,9 +166,9 @@ class PullFunctionExpressionDecl protected ()
   /* CompleteClass */
   override def setValueDecl(valDecl: typings.typescriptServices.TypeScript.PullDecl): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var synthesizedValDecl: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var typeParameters: js.Any = js.native
 }

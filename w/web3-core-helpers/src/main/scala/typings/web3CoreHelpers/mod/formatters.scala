@@ -14,59 +14,41 @@ object formatters {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def inputAddressFormatter(address: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("inputAddressFormatter")(address.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def inputAddressFormatter(address: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("inputAddressFormatter")(address.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def inputBlockNumberFormatter(blockNumber: String): String | Double = ^.asInstanceOf[js.Dynamic].applyDynamic("inputBlockNumberFormatter")(blockNumber.asInstanceOf[js.Any]).asInstanceOf[String | Double]
-  @scala.inline
-  def inputBlockNumberFormatter(blockNumber: Double): String | Double = ^.asInstanceOf[js.Dynamic].applyDynamic("inputBlockNumberFormatter")(blockNumber.asInstanceOf[js.Any]).asInstanceOf[String | Double]
+  inline def inputBlockNumberFormatter(blockNumber: String): String | Double = ^.asInstanceOf[js.Dynamic].applyDynamic("inputBlockNumberFormatter")(blockNumber.asInstanceOf[js.Any]).asInstanceOf[String | Double]
+  inline def inputBlockNumberFormatter(blockNumber: Double): String | Double = ^.asInstanceOf[js.Dynamic].applyDynamic("inputBlockNumberFormatter")(blockNumber.asInstanceOf[js.Any]).asInstanceOf[String | Double]
   
-  @scala.inline
-  def inputCallFormatter(txObject: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("inputCallFormatter")(txObject.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def inputCallFormatter(txObject: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("inputCallFormatter")(txObject.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def inputDefaultBlockNumberFormatter(blockNumber: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("inputDefaultBlockNumberFormatter")(blockNumber.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def inputDefaultBlockNumberFormatter(blockNumber: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("inputDefaultBlockNumberFormatter")(blockNumber.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def inputLogFormatter(log: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("inputLogFormatter")(log.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def inputLogFormatter(log: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("inputLogFormatter")(log.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def inputPostFormatter(post: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("inputPostFormatter")(post.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def inputPostFormatter(post: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("inputPostFormatter")(post.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def inputSignFormatter(data: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("inputSignFormatter")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def inputSignFormatter(data: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("inputSignFormatter")(data.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def inputTransactionFormatter(txObject: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("inputTransactionFormatter")(txObject.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def inputTransactionFormatter(txObject: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("inputTransactionFormatter")(txObject.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def isPredefinedBlockNumber(blockNumber: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPredefinedBlockNumber")(blockNumber.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isPredefinedBlockNumber(blockNumber: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPredefinedBlockNumber")(blockNumber.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def outputBigNumberFormatter(number: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("outputBigNumberFormatter")(number.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def outputBigNumberFormatter(number: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("outputBigNumberFormatter")(number.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def outputBlockFormatter(block: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("outputBlockFormatter")(block.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def outputBlockFormatter(block: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("outputBlockFormatter")(block.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def outputLogFormatter(log: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("outputLogFormatter")(log.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def outputLogFormatter(log: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("outputLogFormatter")(log.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   // TODO: Create Post interface
-  @scala.inline
-  def outputPostFormatter(post: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("outputPostFormatter")(post.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def outputPostFormatter(post: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("outputPostFormatter")(post.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   // TODO: Create Post interface
-  @scala.inline
-  def outputSyncingFormatter(result: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("outputSyncingFormatter")(result.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def outputSyncingFormatter(result: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("outputSyncingFormatter")(result.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def outputTransactionFormatter(receipt: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("outputTransactionFormatter")(receipt.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def outputTransactionFormatter(receipt: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("outputTransactionFormatter")(receipt.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def outputTransactionReceiptFormatter(receipt: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("outputTransactionReceiptFormatter")(receipt.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def outputTransactionReceiptFormatter(receipt: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("outputTransactionReceiptFormatter")(receipt.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   // TODO: Create Block interface
-  @scala.inline
-  def txInputFormatter(txObject: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("txInputFormatter")(txObject.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def txInputFormatter(txObject: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("txInputFormatter")(txObject.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

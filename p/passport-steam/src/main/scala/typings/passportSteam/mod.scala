@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(options: js.Any, validate: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], validate.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(options: js.Any, validate: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], validate.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   @JSImport("passport-steam", JSImport.Namespace)
   @js.native
@@ -22,8 +21,7 @@ object mod {
     
     object authenticate {
       
-      @scala.inline
-      def apply(req: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def apply(req: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       @JSImport("passport-steam", "prototype.authenticate")
       @js.native
@@ -32,8 +30,7 @@ object mod {
     
     object loadAssociation {
       
-      @scala.inline
-      def apply(fn: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def apply(fn: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       @JSImport("passport-steam", "prototype.loadAssociation")
       @js.native
@@ -42,8 +39,7 @@ object mod {
     
     object loadDiscoveredInfo {
       
-      @scala.inline
-      def apply(fn: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def apply(fn: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       @JSImport("passport-steam", "prototype.loadDiscoveredInfo")
       @js.native
@@ -52,8 +48,7 @@ object mod {
     
     object loadDiscoveredInformation {
       
-      @scala.inline
-      def apply(fn: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def apply(fn: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       @JSImport("passport-steam", "prototype.loadDiscoveredInformation")
       @js.native
@@ -62,8 +57,7 @@ object mod {
     
     object saveAssociation {
       
-      @scala.inline
-      def apply(fn: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def apply(fn: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       @JSImport("passport-steam", "prototype.saveAssociation")
       @js.native
@@ -72,8 +66,7 @@ object mod {
     
     object saveDiscoveredInfo {
       
-      @scala.inline
-      def apply(fn: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def apply(fn: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       @JSImport("passport-steam", "prototype.saveDiscoveredInfo")
       @js.native
@@ -82,8 +75,7 @@ object mod {
     
     object saveDiscoveredInformation {
       
-      @scala.inline
-      def apply(fn: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def apply(fn: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       @JSImport("passport-steam", "prototype.saveDiscoveredInformation")
       @js.native

@@ -19,8 +19,7 @@ trait DataProvider
 }
 object DataProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     IncludeHiddenCells: Boolean,
     RangeSelection: XRangeSelection,
     acquire: () => Unit,
@@ -40,10 +39,8 @@ object DataProvider {
     __obj.asInstanceOf[DataProvider]
   }
   
-  @scala.inline
-  implicit class DataProviderMutableBuilder[Self <: DataProvider] (val x: Self) extends AnyVal {
+  extension [Self <: DataProvider](x: Self) {
     
-    @scala.inline
-    def setIncludeHiddenCells(value: Boolean): Self = StObject.set(x, "IncludeHiddenCells", value.asInstanceOf[js.Any])
+    inline def setIncludeHiddenCells(value: Boolean): Self = StObject.set(x, "IncludeHiddenCells", value.asInstanceOf[js.Any])
   }
 }

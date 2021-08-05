@@ -13,16 +13,13 @@ trait StopConfigurationRecorderRequest extends StObject {
 }
 object StopConfigurationRecorderRequest {
   
-  @scala.inline
-  def apply(ConfigurationRecorderName: RecorderName): StopConfigurationRecorderRequest = {
+  inline def apply(ConfigurationRecorderName: RecorderName): StopConfigurationRecorderRequest = {
     val __obj = js.Dynamic.literal(ConfigurationRecorderName = ConfigurationRecorderName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopConfigurationRecorderRequest]
   }
   
-  @scala.inline
-  implicit class StopConfigurationRecorderRequestMutableBuilder[Self <: StopConfigurationRecorderRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StopConfigurationRecorderRequest](x: Self) {
     
-    @scala.inline
-    def setConfigurationRecorderName(value: RecorderName): Self = StObject.set(x, "ConfigurationRecorderName", value.asInstanceOf[js.Any])
+    inline def setConfigurationRecorderName(value: RecorderName): Self = StObject.set(x, "ConfigurationRecorderName", value.asInstanceOf[js.Any])
   }
 }

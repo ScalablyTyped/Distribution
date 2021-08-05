@@ -35,22 +35,16 @@ object notificationSettingsMod {
   trait NotificationSettingLevel extends StObject
   object NotificationSettingLevel {
     
-    @scala.inline
-    def custom: typings.gitlab.gitlabStrings.custom = "custom".asInstanceOf[typings.gitlab.gitlabStrings.custom]
+    inline def custom: typings.gitlab.gitlabStrings.custom = "custom".asInstanceOf[typings.gitlab.gitlabStrings.custom]
     
-    @scala.inline
-    def disabled: typings.gitlab.gitlabStrings.disabled = "disabled".asInstanceOf[typings.gitlab.gitlabStrings.disabled]
+    inline def disabled: typings.gitlab.gitlabStrings.disabled = "disabled".asInstanceOf[typings.gitlab.gitlabStrings.disabled]
     
-    @scala.inline
-    def global: typings.gitlab.gitlabStrings.global = "global".asInstanceOf[typings.gitlab.gitlabStrings.global]
+    inline def global: typings.gitlab.gitlabStrings.global = "global".asInstanceOf[typings.gitlab.gitlabStrings.global]
     
-    @scala.inline
-    def mention: typings.gitlab.gitlabStrings.mention = "mention".asInstanceOf[typings.gitlab.gitlabStrings.mention]
+    inline def mention: typings.gitlab.gitlabStrings.mention = "mention".asInstanceOf[typings.gitlab.gitlabStrings.mention]
     
-    @scala.inline
-    def participating: typings.gitlab.gitlabStrings.participating = "participating".asInstanceOf[typings.gitlab.gitlabStrings.participating]
+    inline def participating: typings.gitlab.gitlabStrings.participating = "participating".asInstanceOf[typings.gitlab.gitlabStrings.participating]
     
-    @scala.inline
-    def watch: typings.gitlab.gitlabStrings.watch = "watch".asInstanceOf[typings.gitlab.gitlabStrings.watch]
+    inline def watch: typings.gitlab.gitlabStrings.watch = "watch".asInstanceOf[typings.gitlab.gitlabStrings.watch]
   }
 }

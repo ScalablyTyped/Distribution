@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParameterAttributesEnum extends StObject
 object ParameterAttributesEnum {
   
-  @scala.inline
-  def adParamLong: `128` = 128.asInstanceOf[`128`]
+  inline def adParamLong: `128` = 128.asInstanceOf[`128`]
   
-  @scala.inline
-  def adParamNullable: `64` = 64.asInstanceOf[`64`]
+  inline def adParamNullable: `64` = 64.asInstanceOf[`64`]
   
-  @scala.inline
-  def adParamSigned: `16` = 16.asInstanceOf[`16`]
+  inline def adParamSigned: `16` = 16.asInstanceOf[`16`]
 }

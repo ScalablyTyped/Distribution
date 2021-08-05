@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlArrowHeadStyle extends StObject
 object XlArrowHeadStyle {
   
-  @scala.inline
-  def xlArrowHeadStyleClosed: `3` = 3.asInstanceOf[`3`]
+  inline def xlArrowHeadStyleClosed: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def xlArrowHeadStyleDoubleClosed: `5` = 5.asInstanceOf[`5`]
+  inline def xlArrowHeadStyleDoubleClosed: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def xlArrowHeadStyleDoubleOpen: `4` = 4.asInstanceOf[`4`]
+  inline def xlArrowHeadStyleDoubleOpen: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def xlArrowHeadStyleNone: `-4142` = -4142.asInstanceOf[`-4142`]
+  inline def xlArrowHeadStyleNone: `-4142` = -4142.asInstanceOf[`-4142`]
   
-  @scala.inline
-  def xlArrowHeadStyleOpen: `2` = 2.asInstanceOf[`2`]
+  inline def xlArrowHeadStyleOpen: `2` = 2.asInstanceOf[`2`]
 }

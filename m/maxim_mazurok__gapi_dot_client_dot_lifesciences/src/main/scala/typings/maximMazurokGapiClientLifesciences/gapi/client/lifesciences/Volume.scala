@@ -23,37 +23,27 @@ trait Volume extends StObject {
 }
 object Volume {
   
-  @scala.inline
-  def apply(): Volume = {
+  inline def apply(): Volume = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Volume]
   }
   
-  @scala.inline
-  implicit class VolumeMutableBuilder[Self <: Volume] (val x: Self) extends AnyVal {
+  extension [Self <: Volume](x: Self) {
     
-    @scala.inline
-    def setExistingDisk(value: ExistingDisk): Self = StObject.set(x, "existingDisk", value.asInstanceOf[js.Any])
+    inline def setExistingDisk(value: ExistingDisk): Self = StObject.set(x, "existingDisk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExistingDiskUndefined: Self = StObject.set(x, "existingDisk", js.undefined)
+    inline def setExistingDiskUndefined: Self = StObject.set(x, "existingDisk", js.undefined)
     
-    @scala.inline
-    def setNfsMount(value: NFSMount): Self = StObject.set(x, "nfsMount", value.asInstanceOf[js.Any])
+    inline def setNfsMount(value: NFSMount): Self = StObject.set(x, "nfsMount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNfsMountUndefined: Self = StObject.set(x, "nfsMount", js.undefined)
+    inline def setNfsMountUndefined: Self = StObject.set(x, "nfsMount", js.undefined)
     
-    @scala.inline
-    def setPersistentDisk(value: PersistentDisk): Self = StObject.set(x, "persistentDisk", value.asInstanceOf[js.Any])
+    inline def setPersistentDisk(value: PersistentDisk): Self = StObject.set(x, "persistentDisk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersistentDiskUndefined: Self = StObject.set(x, "persistentDisk", js.undefined)
+    inline def setPersistentDiskUndefined: Self = StObject.set(x, "persistentDisk", js.undefined)
     
-    @scala.inline
-    def setVolume(value: String): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+    inline def setVolume(value: String): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
+    inline def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
   }
 }

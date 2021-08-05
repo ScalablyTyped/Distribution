@@ -33,85 +33,59 @@ trait Platform
 }
 object Platform {
   
-  @scala.inline
-  def apply(): Platform = {
+  inline def apply(): Platform = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Platform]
   }
   
-  @scala.inline
-  implicit class PlatformMutableBuilder[Self <: Platform] (val x: Self) extends AnyVal {
+  extension [Self <: Platform](x: Self) {
     
-    @scala.inline
-    def setApi_name(value: String): Self = StObject.set(x, "api_name", value.asInstanceOf[js.Any])
+    inline def setApi_name(value: String): Self = StObject.set(x, "api_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApi_nameUndefined: Self = StObject.set(x, "api_name", js.undefined)
+    inline def setApi_nameUndefined: Self = StObject.set(x, "api_name", js.undefined)
     
-    @scala.inline
-    def setAutomation_backend(value: String): Self = StObject.set(x, "automation_backend", value.asInstanceOf[js.Any])
+    inline def setAutomation_backend(value: String): Self = StObject.set(x, "automation_backend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutomation_backendUndefined: Self = StObject.set(x, "automation_backend", js.undefined)
+    inline def setAutomation_backendUndefined: Self = StObject.set(x, "automation_backend", js.undefined)
     
-    @scala.inline
-    def setDeprecated_backend_versions(value: js.Array[String]): Self = StObject.set(x, "deprecated_backend_versions", value.asInstanceOf[js.Any])
+    inline def setDeprecated_backend_versions(value: js.Array[String]): Self = StObject.set(x, "deprecated_backend_versions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeprecated_backend_versionsUndefined: Self = StObject.set(x, "deprecated_backend_versions", js.undefined)
+    inline def setDeprecated_backend_versionsUndefined: Self = StObject.set(x, "deprecated_backend_versions", js.undefined)
     
-    @scala.inline
-    def setDeprecated_backend_versionsVarargs(value: String*): Self = StObject.set(x, "deprecated_backend_versions", js.Array(value :_*))
+    inline def setDeprecated_backend_versionsVarargs(value: String*): Self = StObject.set(x, "deprecated_backend_versions", js.Array(value :_*))
     
-    @scala.inline
-    def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
+    inline def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
     
-    @scala.inline
-    def setLatest_stable_version(value: String): Self = StObject.set(x, "latest_stable_version", value.asInstanceOf[js.Any])
+    inline def setLatest_stable_version(value: String): Self = StObject.set(x, "latest_stable_version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatest_stable_versionUndefined: Self = StObject.set(x, "latest_stable_version", js.undefined)
+    inline def setLatest_stable_versionUndefined: Self = StObject.set(x, "latest_stable_version", js.undefined)
     
-    @scala.inline
-    def setLong_name(value: String): Self = StObject.set(x, "long_name", value.asInstanceOf[js.Any])
+    inline def setLong_name(value: String): Self = StObject.set(x, "long_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLong_nameUndefined: Self = StObject.set(x, "long_name", js.undefined)
+    inline def setLong_nameUndefined: Self = StObject.set(x, "long_name", js.undefined)
     
-    @scala.inline
-    def setLong_version(value: String): Self = StObject.set(x, "long_version", value.asInstanceOf[js.Any])
+    inline def setLong_version(value: String): Self = StObject.set(x, "long_version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLong_versionUndefined: Self = StObject.set(x, "long_version", js.undefined)
+    inline def setLong_versionUndefined: Self = StObject.set(x, "long_version", js.undefined)
     
-    @scala.inline
-    def setOs(value: String): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
+    inline def setOs(value: String): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOsUndefined: Self = StObject.set(x, "os", js.undefined)
+    inline def setOsUndefined: Self = StObject.set(x, "os", js.undefined)
     
-    @scala.inline
-    def setRecommended_backend_version(value: String): Self = StObject.set(x, "recommended_backend_version", value.asInstanceOf[js.Any])
+    inline def setRecommended_backend_version(value: String): Self = StObject.set(x, "recommended_backend_version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommended_backend_versionUndefined: Self = StObject.set(x, "recommended_backend_version", js.undefined)
+    inline def setRecommended_backend_versionUndefined: Self = StObject.set(x, "recommended_backend_version", js.undefined)
     
-    @scala.inline
-    def setShort_version(value: String): Self = StObject.set(x, "short_version", value.asInstanceOf[js.Any])
+    inline def setShort_version(value: String): Self = StObject.set(x, "short_version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShort_versionUndefined: Self = StObject.set(x, "short_version", js.undefined)
+    inline def setShort_versionUndefined: Self = StObject.set(x, "short_version", js.undefined)
     
-    @scala.inline
-    def setSupported_backend_versions(value: js.Array[String]): Self = StObject.set(x, "supported_backend_versions", value.asInstanceOf[js.Any])
+    inline def setSupported_backend_versions(value: js.Array[String]): Self = StObject.set(x, "supported_backend_versions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupported_backend_versionsUndefined: Self = StObject.set(x, "supported_backend_versions", js.undefined)
+    inline def setSupported_backend_versionsUndefined: Self = StObject.set(x, "supported_backend_versions", js.undefined)
     
-    @scala.inline
-    def setSupported_backend_versionsVarargs(value: String*): Self = StObject.set(x, "supported_backend_versions", js.Array(value :_*))
+    inline def setSupported_backend_versionsVarargs(value: String*): Self = StObject.set(x, "supported_backend_versions", js.Array(value :_*))
   }
 }

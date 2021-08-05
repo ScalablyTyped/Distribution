@@ -18,25 +18,19 @@ trait CreateCachediSCSIVolumeOutput extends StObject {
 }
 object CreateCachediSCSIVolumeOutput {
   
-  @scala.inline
-  def apply(): CreateCachediSCSIVolumeOutput = {
+  inline def apply(): CreateCachediSCSIVolumeOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateCachediSCSIVolumeOutput]
   }
   
-  @scala.inline
-  implicit class CreateCachediSCSIVolumeOutputMutableBuilder[Self <: CreateCachediSCSIVolumeOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCachediSCSIVolumeOutput](x: Self) {
     
-    @scala.inline
-    def setTargetARN(value: TargetARN): Self = StObject.set(x, "TargetARN", value.asInstanceOf[js.Any])
+    inline def setTargetARN(value: TargetARN): Self = StObject.set(x, "TargetARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetARNUndefined: Self = StObject.set(x, "TargetARN", js.undefined)
+    inline def setTargetARNUndefined: Self = StObject.set(x, "TargetARN", js.undefined)
     
-    @scala.inline
-    def setVolumeARN(value: VolumeARN): Self = StObject.set(x, "VolumeARN", value.asInstanceOf[js.Any])
+    inline def setVolumeARN(value: VolumeARN): Self = StObject.set(x, "VolumeARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeARNUndefined: Self = StObject.set(x, "VolumeARN", js.undefined)
+    inline def setVolumeARNUndefined: Self = StObject.set(x, "VolumeARN", js.undefined)
   }
 }

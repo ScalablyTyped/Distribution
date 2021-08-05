@@ -17,8 +17,7 @@ object switcherItemMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[E /* <: js.Object */, R](props: ForwardRefProps[R, SwitcherItemProps[E]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default[E /* <: js.Object */, R](props: ForwardRefProps[R, SwitcherItemProps[E]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   type SwitcherItemProps[E /* <: js.Object */] = (Omit[LinkProps[E, E], tabIndex]) & SwitcherItemPropsBase
   
@@ -32,26 +31,20 @@ object switcherItemMod {
   }
   object SwitcherItemPropsBase {
     
-    @scala.inline
-    def apply(): SwitcherItemPropsBase = {
+    inline def apply(): SwitcherItemPropsBase = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SwitcherItemPropsBase]
     }
     
-    @scala.inline
-    implicit class SwitcherItemPropsBaseMutableBuilder[Self <: SwitcherItemPropsBase] (val x: Self) extends AnyVal {
+    extension [Self <: SwitcherItemPropsBase](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
+      inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
+      inline def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
     }
   }
 }

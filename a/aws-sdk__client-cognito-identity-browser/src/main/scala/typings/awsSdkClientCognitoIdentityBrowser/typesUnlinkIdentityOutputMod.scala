@@ -20,17 +20,14 @@ object typesUnlinkIdentityOutputMod {
   }
   object UnlinkIdentityOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): UnlinkIdentityOutput = {
+    inline def apply($metadata: ResponseMetadata): UnlinkIdentityOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnlinkIdentityOutput]
     }
     
-    @scala.inline
-    implicit class UnlinkIdentityOutputMutableBuilder[Self <: UnlinkIdentityOutput] (val x: Self) extends AnyVal {
+    extension [Self <: UnlinkIdentityOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }
   }
 }

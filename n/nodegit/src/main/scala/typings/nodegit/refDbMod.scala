@@ -22,7 +22,6 @@ object refDbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def open(repo: Repository): js.Promise[Refdb] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Refdb]]
+    inline def open(repo: Repository): js.Promise[Refdb] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Refdb]]
   }
 }

@@ -18,26 +18,20 @@ object IOSTContract {
   }
   object Block {
     
-    @scala.inline
-    def apply(number: Double, parent_hash: String, time: Double, witness: String): Block = {
+    inline def apply(number: Double, parent_hash: String, time: Double, witness: String): Block = {
       val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any], parent_hash = parent_hash.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], witness = witness.asInstanceOf[js.Any])
       __obj.asInstanceOf[Block]
     }
     
-    @scala.inline
-    implicit class BlockMutableBuilder[Self <: Block] (val x: Self) extends AnyVal {
+    extension [Self <: Block](x: Self) {
       
-      @scala.inline
-      def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent_hash(value: String): Self = StObject.set(x, "parent_hash", value.asInstanceOf[js.Any])
+      inline def setParent_hash(value: String): Self = StObject.set(x, "parent_hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWitness(value: String): Self = StObject.set(x, "witness", value.asInstanceOf[js.Any])
+      inline def setWitness(value: String): Self = StObject.set(x, "witness", value.asInstanceOf[js.Any])
     }
   }
   
@@ -85,8 +79,7 @@ object IOSTContract {
   }
   object GlobalStorage {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       globalGet: (String, String) => String | Null,
       globalHas: (String, String) => Boolean,
       globalMapGet: (String, String, String) => String | Null,
@@ -98,26 +91,19 @@ object IOSTContract {
       __obj.asInstanceOf[GlobalStorage]
     }
     
-    @scala.inline
-    implicit class GlobalStorageMutableBuilder[Self <: GlobalStorage] (val x: Self) extends AnyVal {
+    extension [Self <: GlobalStorage](x: Self) {
       
-      @scala.inline
-      def setGlobalGet(value: (String, String) => String | Null): Self = StObject.set(x, "globalGet", js.Any.fromFunction2(value))
+      inline def setGlobalGet(value: (String, String) => String | Null): Self = StObject.set(x, "globalGet", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGlobalHas(value: (String, String) => Boolean): Self = StObject.set(x, "globalHas", js.Any.fromFunction2(value))
+      inline def setGlobalHas(value: (String, String) => Boolean): Self = StObject.set(x, "globalHas", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGlobalMapGet(value: (String, String, String) => String | Null): Self = StObject.set(x, "globalMapGet", js.Any.fromFunction3(value))
+      inline def setGlobalMapGet(value: (String, String, String) => String | Null): Self = StObject.set(x, "globalMapGet", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGlobalMapHas(value: (String, String, String) => Boolean): Self = StObject.set(x, "globalMapHas", js.Any.fromFunction3(value))
+      inline def setGlobalMapHas(value: (String, String, String) => Boolean): Self = StObject.set(x, "globalMapHas", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGlobalMapKeys(value: (String, String) => js.Array[String]): Self = StObject.set(x, "globalMapKeys", js.Any.fromFunction2(value))
+      inline def setGlobalMapKeys(value: (String, String) => js.Array[String]): Self = StObject.set(x, "globalMapKeys", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGlobalMapLen(value: (String, String) => Double): Self = StObject.set(x, "globalMapLen", js.Any.fromFunction2(value))
+      inline def setGlobalMapLen(value: (String, String) => Double): Self = StObject.set(x, "globalMapLen", js.Any.fromFunction2(value))
     }
   }
   
@@ -129,20 +115,16 @@ object IOSTContract {
   }
   object IOSTCrypto {
     
-    @scala.inline
-    def apply(sha3: String => String, verify: (String, String, String, String) => Double): IOSTCrypto = {
+    inline def apply(sha3: String => String, verify: (String, String, String, String) => Double): IOSTCrypto = {
       val __obj = js.Dynamic.literal(sha3 = js.Any.fromFunction1(sha3), verify = js.Any.fromFunction4(verify))
       __obj.asInstanceOf[IOSTCrypto]
     }
     
-    @scala.inline
-    implicit class IOSTCryptoMutableBuilder[Self <: IOSTCrypto] (val x: Self) extends AnyVal {
+    extension [Self <: IOSTCrypto](x: Self) {
       
-      @scala.inline
-      def setSha3(value: String => String): Self = StObject.set(x, "sha3", js.Any.fromFunction1(value))
+      inline def setSha3(value: String => String): Self = StObject.set(x, "sha3", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVerify(value: (String, String, String, String) => Double): Self = StObject.set(x, "verify", js.Any.fromFunction4(value))
+      inline def setVerify(value: (String, String, String, String) => Double): Self = StObject.set(x, "verify", js.Any.fromFunction4(value))
     }
   }
   
@@ -196,8 +178,7 @@ object IOSTContract {
   }
   object Tx {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       auth_list: js.Object,
       expiration: Double,
       gas_limit: Double,
@@ -210,29 +191,21 @@ object IOSTContract {
       __obj.asInstanceOf[Tx]
     }
     
-    @scala.inline
-    implicit class TxMutableBuilder[Self <: Tx] (val x: Self) extends AnyVal {
+    extension [Self <: Tx](x: Self) {
       
-      @scala.inline
-      def setAuth_list(value: js.Object): Self = StObject.set(x, "auth_list", value.asInstanceOf[js.Any])
+      inline def setAuth_list(value: js.Object): Self = StObject.set(x, "auth_list", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiration(value: Double): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
+      inline def setExpiration(value: Double): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGas_limit(value: Double): Self = StObject.set(x, "gas_limit", value.asInstanceOf[js.Any])
+      inline def setGas_limit(value: Double): Self = StObject.set(x, "gas_limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGas_ratio(value: Double): Self = StObject.set(x, "gas_ratio", value.asInstanceOf[js.Any])
+      inline def setGas_ratio(value: Double): Self = StObject.set(x, "gas_ratio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublisher(value: String): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
+      inline def setPublisher(value: String): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     }
   }
 }

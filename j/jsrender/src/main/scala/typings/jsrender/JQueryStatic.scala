@@ -56,22 +56,17 @@ trait JQueryStatic extends StObject {
 }
 object JQueryStatic {
   
-  @scala.inline
-  def apply(render: StringDictionary[TemplateRender], templates: Templates, views: Views): JQueryStatic = {
+  inline def apply(render: StringDictionary[TemplateRender], templates: Templates, views: Views): JQueryStatic = {
     val __obj = js.Dynamic.literal(render = render.asInstanceOf[js.Any], templates = templates.asInstanceOf[js.Any], views = views.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  @scala.inline
-  implicit class JQueryStaticMutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryStatic](x: Self) {
     
-    @scala.inline
-    def setRender(value: StringDictionary[TemplateRender]): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+    inline def setRender(value: StringDictionary[TemplateRender]): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplates(value: Templates): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
+    inline def setTemplates(value: Templates): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViews(value: Views): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+    inline def setViews(value: Views): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
   }
 }

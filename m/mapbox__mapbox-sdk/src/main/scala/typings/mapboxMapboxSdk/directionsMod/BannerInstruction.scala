@@ -33,40 +33,29 @@ trait BannerInstruction extends StObject {
 }
 object BannerInstruction {
   
-  @scala.inline
-  def apply(distanceAlongGeometry: Double, primary: Instruction): BannerInstruction = {
+  inline def apply(distanceAlongGeometry: Double, primary: Instruction): BannerInstruction = {
     val __obj = js.Dynamic.literal(distanceAlongGeometry = distanceAlongGeometry.asInstanceOf[js.Any], primary = primary.asInstanceOf[js.Any])
     __obj.asInstanceOf[BannerInstruction]
   }
   
-  @scala.inline
-  implicit class BannerInstructionMutableBuilder[Self <: BannerInstruction] (val x: Self) extends AnyVal {
+  extension [Self <: BannerInstruction](x: Self) {
     
-    @scala.inline
-    def setDistanceAlongGeometry(value: Double): Self = StObject.set(x, "distanceAlongGeometry", value.asInstanceOf[js.Any])
+    inline def setDistanceAlongGeometry(value: Double): Self = StObject.set(x, "distanceAlongGeometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimary(value: Instruction): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+    inline def setPrimary(value: Instruction): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondary(value: js.Array[Instruction]): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
+    inline def setSecondary(value: js.Array[Instruction]): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
+    inline def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
     
-    @scala.inline
-    def setSecondaryVarargs(value: Instruction*): Self = StObject.set(x, "secondary", js.Array(value :_*))
+    inline def setSecondaryVarargs(value: Instruction*): Self = StObject.set(x, "secondary", js.Array(value :_*))
     
-    @scala.inline
-    def setSub(value: Sub): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
+    inline def setSub(value: Sub): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubUndefined: Self = StObject.set(x, "sub", js.undefined)
+    inline def setSubUndefined: Self = StObject.set(x, "sub", js.undefined)
     
-    @scala.inline
-    def setThen(value: js.Any): Self = StObject.set(x, "then", value.asInstanceOf[js.Any])
+    inline def setThen(value: js.Any): Self = StObject.set(x, "then", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThenUndefined: Self = StObject.set(x, "then", js.undefined)
+    inline def setThenUndefined: Self = StObject.set(x, "then", js.undefined)
   }
 }

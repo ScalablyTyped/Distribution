@@ -35,8 +35,7 @@ trait ChartShape
      with typings.activexLibreoffice.com_.sun.star.drawing.OLE2Shape
 object ChartShape {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Bookmark: String,
     CLSID: String,
     DimColor: Color,

@@ -46,8 +46,7 @@ trait ModelStructurePanel
 }
 object ModelStructurePanel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addClass: (String, String) => Boolean,
     addEventListener: (js.Object, String, js.Function0[Unit]) => Unit,
     addVisibilityListener: js.Function1[/* state */ Boolean, Unit] => Unit,
@@ -98,52 +97,36 @@ object ModelStructurePanel {
     __obj.asInstanceOf[ModelStructurePanel]
   }
   
-  @scala.inline
-  implicit class ModelStructurePanelMutableBuilder[Self <: ModelStructurePanel] (val x: Self) extends AnyVal {
+  extension [Self <: ModelStructurePanel](x: Self) {
     
-    @scala.inline
-    def setAddClass(value: (String, String) => Boolean): Self = StObject.set(x, "addClass", js.Any.fromFunction2(value))
+    inline def setAddClass(value: (String, String) => Boolean): Self = StObject.set(x, "addClass", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetNodeClass(value: js.Object => String): Self = StObject.set(x, "getNodeClass", js.Any.fromFunction1(value))
+    inline def setGetNodeClass(value: js.Object => String): Self = StObject.set(x, "getNodeClass", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetNodeLabel(value: js.Object => String): Self = StObject.set(x, "getNodeLabel", js.Any.fromFunction1(value))
+    inline def setGetNodeLabel(value: js.Object => String): Self = StObject.set(x, "getNodeLabel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsGroupCollapsed(value: js.Object => Boolean): Self = StObject.set(x, "isGroupCollapsed", js.Any.fromFunction1(value))
+    inline def setIsGroupCollapsed(value: js.Object => Boolean): Self = StObject.set(x, "isGroupCollapsed", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsGroupNode(value: js.Object => Boolean): Self = StObject.set(x, "isGroupNode", js.Any.fromFunction1(value))
+    inline def setIsGroupNode(value: js.Object => Boolean): Self = StObject.set(x, "isGroupNode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnClick(value: (js.Object, Event) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
+    inline def setOnClick(value: (js.Object, Event) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnDoubleClick(value: (js.Object, Event) => Unit): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction2(value))
+    inline def setOnDoubleClick(value: (js.Object, Event) => Unit): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnHover(value: (js.Object, Event) => Unit): Self = StObject.set(x, "onHover", js.Any.fromFunction2(value))
+    inline def setOnHover(value: (js.Object, Event) => Unit): Self = StObject.set(x, "onHover", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnIconClick(value: (js.Object, Event) => Unit): Self = StObject.set(x, "onIconClick", js.Any.fromFunction2(value))
+    inline def setOnIconClick(value: (js.Object, Event) => Unit): Self = StObject.set(x, "onIconClick", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnRightClick(value: (js.Object, Event) => Unit): Self = StObject.set(x, "onRightClick", js.Any.fromFunction2(value))
+    inline def setOnRightClick(value: (js.Object, Event) => Unit): Self = StObject.set(x, "onRightClick", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemoveClass(value: (String, String) => Boolean): Self = StObject.set(x, "removeClass", js.Any.fromFunction2(value))
+    inline def setRemoveClass(value: (String, String) => Boolean): Self = StObject.set(x, "removeClass", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetGroupCollapsed(value: (js.Object, Boolean) => Unit): Self = StObject.set(x, "setGroupCollapsed", js.Any.fromFunction2(value))
+    inline def setSetGroupCollapsed(value: (js.Object, Boolean) => Unit): Self = StObject.set(x, "setGroupCollapsed", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetModel(value: (js.Object, String) => Unit): Self = StObject.set(x, "setModel", js.Any.fromFunction2(value))
+    inline def setSetModel(value: (js.Object, String) => Unit): Self = StObject.set(x, "setModel", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetSelection(value: js.Array[Model] => Unit): Self = StObject.set(x, "setSelection", js.Any.fromFunction1(value))
+    inline def setSetSelection(value: js.Array[Model] => Unit): Self = StObject.set(x, "setSelection", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShouldInclude(value: Model => Boolean): Self = StObject.set(x, "shouldInclude", js.Any.fromFunction1(value))
+    inline def setShouldInclude(value: Model => Boolean): Self = StObject.set(x, "shouldInclude", js.Any.fromFunction1(value))
   }
 }

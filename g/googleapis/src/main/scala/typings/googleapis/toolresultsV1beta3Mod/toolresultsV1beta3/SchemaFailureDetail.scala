@@ -35,43 +35,31 @@ trait SchemaFailureDetail extends StObject {
 }
 object SchemaFailureDetail {
   
-  @scala.inline
-  def apply(): SchemaFailureDetail = {
+  inline def apply(): SchemaFailureDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFailureDetail]
   }
   
-  @scala.inline
-  implicit class SchemaFailureDetailMutableBuilder[Self <: SchemaFailureDetail] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFailureDetail](x: Self) {
     
-    @scala.inline
-    def setCrashed(value: Boolean): Self = StObject.set(x, "crashed", value.asInstanceOf[js.Any])
+    inline def setCrashed(value: Boolean): Self = StObject.set(x, "crashed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrashedUndefined: Self = StObject.set(x, "crashed", js.undefined)
+    inline def setCrashedUndefined: Self = StObject.set(x, "crashed", js.undefined)
     
-    @scala.inline
-    def setNotInstalled(value: Boolean): Self = StObject.set(x, "notInstalled", value.asInstanceOf[js.Any])
+    inline def setNotInstalled(value: Boolean): Self = StObject.set(x, "notInstalled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotInstalledUndefined: Self = StObject.set(x, "notInstalled", js.undefined)
+    inline def setNotInstalledUndefined: Self = StObject.set(x, "notInstalled", js.undefined)
     
-    @scala.inline
-    def setOtherNativeCrash(value: Boolean): Self = StObject.set(x, "otherNativeCrash", value.asInstanceOf[js.Any])
+    inline def setOtherNativeCrash(value: Boolean): Self = StObject.set(x, "otherNativeCrash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOtherNativeCrashUndefined: Self = StObject.set(x, "otherNativeCrash", js.undefined)
+    inline def setOtherNativeCrashUndefined: Self = StObject.set(x, "otherNativeCrash", js.undefined)
     
-    @scala.inline
-    def setTimedOut(value: Boolean): Self = StObject.set(x, "timedOut", value.asInstanceOf[js.Any])
+    inline def setTimedOut(value: Boolean): Self = StObject.set(x, "timedOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimedOutUndefined: Self = StObject.set(x, "timedOut", js.undefined)
+    inline def setTimedOutUndefined: Self = StObject.set(x, "timedOut", js.undefined)
     
-    @scala.inline
-    def setUnableToCrawl(value: Boolean): Self = StObject.set(x, "unableToCrawl", value.asInstanceOf[js.Any])
+    inline def setUnableToCrawl(value: Boolean): Self = StObject.set(x, "unableToCrawl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnableToCrawlUndefined: Self = StObject.set(x, "unableToCrawl", js.undefined)
+    inline def setUnableToCrawlUndefined: Self = StObject.set(x, "unableToCrawl", js.undefined)
   }
 }

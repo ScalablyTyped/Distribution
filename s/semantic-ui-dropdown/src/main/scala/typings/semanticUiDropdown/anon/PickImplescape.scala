@@ -11,16 +11,13 @@ trait PickImplescape extends StObject {
 }
 object PickImplescape {
   
-  @scala.inline
-  def apply(escape: Double): PickImplescape = {
+  inline def apply(escape: Double): PickImplescape = {
     val __obj = js.Dynamic.literal(escape = escape.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplescape]
   }
   
-  @scala.inline
-  implicit class PickImplescapeMutableBuilder[Self <: PickImplescape] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplescape](x: Self) {
     
-    @scala.inline
-    def setEscape(value: Double): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
+    inline def setEscape(value: Double): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
   }
 }

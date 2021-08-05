@@ -27,43 +27,31 @@ trait NetworkConfig extends StObject {
 }
 object NetworkConfig {
   
-  @scala.inline
-  def apply(): NetworkConfig = {
+  inline def apply(): NetworkConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NetworkConfig]
   }
   
-  @scala.inline
-  implicit class NetworkConfigMutableBuilder[Self <: NetworkConfig] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkConfig](x: Self) {
     
-    @scala.inline
-    def setIpAddresses(value: js.Array[String]): Self = StObject.set(x, "ipAddresses", value.asInstanceOf[js.Any])
+    inline def setIpAddresses(value: js.Array[String]): Self = StObject.set(x, "ipAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddressesUndefined: Self = StObject.set(x, "ipAddresses", js.undefined)
+    inline def setIpAddressesUndefined: Self = StObject.set(x, "ipAddresses", js.undefined)
     
-    @scala.inline
-    def setIpAddressesVarargs(value: String*): Self = StObject.set(x, "ipAddresses", js.Array(value :_*))
+    inline def setIpAddressesVarargs(value: String*): Self = StObject.set(x, "ipAddresses", js.Array(value :_*))
     
-    @scala.inline
-    def setModes(value: js.Array[String]): Self = StObject.set(x, "modes", value.asInstanceOf[js.Any])
+    inline def setModes(value: js.Array[String]): Self = StObject.set(x, "modes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModesUndefined: Self = StObject.set(x, "modes", js.undefined)
+    inline def setModesUndefined: Self = StObject.set(x, "modes", js.undefined)
     
-    @scala.inline
-    def setModesVarargs(value: String*): Self = StObject.set(x, "modes", js.Array(value :_*))
+    inline def setModesVarargs(value: String*): Self = StObject.set(x, "modes", js.Array(value :_*))
     
-    @scala.inline
-    def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+    inline def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
+    inline def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
     
-    @scala.inline
-    def setReservedIpRange(value: String): Self = StObject.set(x, "reservedIpRange", value.asInstanceOf[js.Any])
+    inline def setReservedIpRange(value: String): Self = StObject.set(x, "reservedIpRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedIpRangeUndefined: Self = StObject.set(x, "reservedIpRange", js.undefined)
+    inline def setReservedIpRangeUndefined: Self = StObject.set(x, "reservedIpRange", js.undefined)
   }
 }

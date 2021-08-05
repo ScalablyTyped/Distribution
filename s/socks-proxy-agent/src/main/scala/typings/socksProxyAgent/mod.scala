@@ -9,10 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(opts: String): default = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[default]
-  @scala.inline
-  def apply(opts: SocksProxyAgentOptions): default = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[default]
+  inline def apply(opts: String): default = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[default]
+  inline def apply(opts: SocksProxyAgentOptions): default = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[default]
   
   @JSImport("socks-proxy-agent", JSImport.Namespace)
   @js.native
@@ -39,32 +37,24 @@ object mod {
   }
   object BaseSocksProxyAgentOptions {
     
-    @scala.inline
-    def apply(): BaseSocksProxyAgentOptions = {
+    inline def apply(): BaseSocksProxyAgentOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BaseSocksProxyAgentOptions]
     }
     
-    @scala.inline
-    implicit class BaseSocksProxyAgentOptionsMutableBuilder[Self <: BaseSocksProxyAgentOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BaseSocksProxyAgentOptions](x: Self) {
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostNull: Self = StObject.set(x, "host", null)
+      inline def setHostNull: Self = StObject.set(x, "host", null)
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setPort(value: String | Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: String | Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortNull: Self = StObject.set(x, "port", null)
+      inline def setPortNull: Self = StObject.set(x, "port", null)
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     }
   }
   
@@ -75,8 +65,7 @@ object mod {
        with BaseSocksProxyAgentOptions
   object SocksProxyAgentOptions {
     
-    @scala.inline
-    def apply(): SocksProxyAgentOptions = {
+    inline def apply(): SocksProxyAgentOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SocksProxyAgentOptions]
     }

@@ -23,31 +23,23 @@ trait ErrorHandlingConfig extends StObject {
 }
 object ErrorHandlingConfig {
   
-  @scala.inline
-  def apply(): ErrorHandlingConfig = {
+  inline def apply(): ErrorHandlingConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ErrorHandlingConfig]
   }
   
-  @scala.inline
-  implicit class ErrorHandlingConfigMutableBuilder[Self <: ErrorHandlingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorHandlingConfig](x: Self) {
     
-    @scala.inline
-    def setBucketName(value: BucketName): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
+    inline def setBucketName(value: BucketName): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketNameUndefined: Self = StObject.set(x, "bucketName", js.undefined)
+    inline def setBucketNameUndefined: Self = StObject.set(x, "bucketName", js.undefined)
     
-    @scala.inline
-    def setBucketPrefix(value: BucketPrefix): Self = StObject.set(x, "bucketPrefix", value.asInstanceOf[js.Any])
+    inline def setBucketPrefix(value: BucketPrefix): Self = StObject.set(x, "bucketPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketPrefixUndefined: Self = StObject.set(x, "bucketPrefix", js.undefined)
+    inline def setBucketPrefixUndefined: Self = StObject.set(x, "bucketPrefix", js.undefined)
     
-    @scala.inline
-    def setFailOnFirstDestinationError(value: Boolean): Self = StObject.set(x, "failOnFirstDestinationError", value.asInstanceOf[js.Any])
+    inline def setFailOnFirstDestinationError(value: Boolean): Self = StObject.set(x, "failOnFirstDestinationError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailOnFirstDestinationErrorUndefined: Self = StObject.set(x, "failOnFirstDestinationError", js.undefined)
+    inline def setFailOnFirstDestinationErrorUndefined: Self = StObject.set(x, "failOnFirstDestinationError", js.undefined)
   }
 }

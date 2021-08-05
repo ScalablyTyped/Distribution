@@ -12,10 +12,8 @@ object getLogGroupMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getLogGroup(args: GetLogGroupArgs): js.Promise[GetLogGroupResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLogGroup")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetLogGroupResult]]
-  @scala.inline
-  def getLogGroup(args: GetLogGroupArgs, opts: InvokeOptions): js.Promise[GetLogGroupResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLogGroup")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLogGroupResult]]
+  inline def getLogGroup(args: GetLogGroupArgs): js.Promise[GetLogGroupResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLogGroup")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetLogGroupResult]]
+  inline def getLogGroup(args: GetLogGroupArgs, opts: InvokeOptions): js.Promise[GetLogGroupResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLogGroup")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLogGroupResult]]
   
   trait GetLogGroupArgs extends StObject {
     
@@ -31,23 +29,18 @@ object getLogGroupMod {
   }
   object GetLogGroupArgs {
     
-    @scala.inline
-    def apply(name: String): GetLogGroupArgs = {
+    inline def apply(name: String): GetLogGroupArgs = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetLogGroupArgs]
     }
     
-    @scala.inline
-    implicit class GetLogGroupArgsMutableBuilder[Self <: GetLogGroupArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetLogGroupArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -87,8 +80,7 @@ object getLogGroupMod {
   }
   object GetLogGroupResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arn: String,
       creationTime: Double,
       id: String,
@@ -101,29 +93,21 @@ object getLogGroupMod {
       __obj.asInstanceOf[GetLogGroupResult]
     }
     
-    @scala.inline
-    implicit class GetLogGroupResultMutableBuilder[Self <: GetLogGroupResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetLogGroupResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreationTime(value: Double): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+      inline def setCreationTime(value: Double): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyId(value: String): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
+      inline def setKmsKeyId(value: String): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetentionInDays(value: Double): Self = StObject.set(x, "retentionInDays", value.asInstanceOf[js.Any])
+      inline def setRetentionInDays(value: Double): Self = StObject.set(x, "retentionInDays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     }
   }
 }

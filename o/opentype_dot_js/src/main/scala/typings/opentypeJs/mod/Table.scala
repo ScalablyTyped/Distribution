@@ -21,8 +21,7 @@ trait Table
 }
 object Table {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     encode: () => js.Array[Double],
     fields: js.Array[Field],
     sizeOf: () => Double,
@@ -33,28 +32,20 @@ object Table {
     __obj.asInstanceOf[Table]
   }
   
-  @scala.inline
-  implicit class TableMutableBuilder[Self <: Table] (val x: Self) extends AnyVal {
+  extension [Self <: Table](x: Self) {
     
-    @scala.inline
-    def setEncode(value: () => js.Array[Double]): Self = StObject.set(x, "encode", js.Any.fromFunction0(value))
+    inline def setEncode(value: () => js.Array[Double]): Self = StObject.set(x, "encode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFields(value: js.Array[Field]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[Field]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsVarargs(value: Field*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: Field*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setSizeOf(value: () => Double): Self = StObject.set(x, "sizeOf", js.Any.fromFunction0(value))
+    inline def setSizeOf(value: () => Double): Self = StObject.set(x, "sizeOf", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTableName(value: String): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: String): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTables(value: js.Array[Table]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
+    inline def setTables(value: js.Array[Table]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTablesVarargs(value: Table*): Self = StObject.set(x, "tables", js.Array(value :_*))
+    inline def setTablesVarargs(value: Table*): Self = StObject.set(x, "tables", js.Array(value :_*))
   }
 }

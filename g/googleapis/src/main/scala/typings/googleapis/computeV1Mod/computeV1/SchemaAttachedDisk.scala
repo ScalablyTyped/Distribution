@@ -119,97 +119,67 @@ trait SchemaAttachedDisk extends StObject {
 }
 object SchemaAttachedDisk {
   
-  @scala.inline
-  def apply(): SchemaAttachedDisk = {
+  inline def apply(): SchemaAttachedDisk = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAttachedDisk]
   }
   
-  @scala.inline
-  implicit class SchemaAttachedDiskMutableBuilder[Self <: SchemaAttachedDisk] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAttachedDisk](x: Self) {
     
-    @scala.inline
-    def setAutoDelete(value: Boolean): Self = StObject.set(x, "autoDelete", value.asInstanceOf[js.Any])
+    inline def setAutoDelete(value: Boolean): Self = StObject.set(x, "autoDelete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoDeleteUndefined: Self = StObject.set(x, "autoDelete", js.undefined)
+    inline def setAutoDeleteUndefined: Self = StObject.set(x, "autoDelete", js.undefined)
     
-    @scala.inline
-    def setBoot(value: Boolean): Self = StObject.set(x, "boot", value.asInstanceOf[js.Any])
+    inline def setBoot(value: Boolean): Self = StObject.set(x, "boot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBootUndefined: Self = StObject.set(x, "boot", js.undefined)
+    inline def setBootUndefined: Self = StObject.set(x, "boot", js.undefined)
     
-    @scala.inline
-    def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
+    inline def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceNameUndefined: Self = StObject.set(x, "deviceName", js.undefined)
+    inline def setDeviceNameUndefined: Self = StObject.set(x, "deviceName", js.undefined)
     
-    @scala.inline
-    def setDiskEncryptionKey(value: SchemaCustomerEncryptionKey): Self = StObject.set(x, "diskEncryptionKey", value.asInstanceOf[js.Any])
+    inline def setDiskEncryptionKey(value: SchemaCustomerEncryptionKey): Self = StObject.set(x, "diskEncryptionKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskEncryptionKeyUndefined: Self = StObject.set(x, "diskEncryptionKey", js.undefined)
+    inline def setDiskEncryptionKeyUndefined: Self = StObject.set(x, "diskEncryptionKey", js.undefined)
     
-    @scala.inline
-    def setGuestOsFeatures(value: js.Array[SchemaGuestOsFeature]): Self = StObject.set(x, "guestOsFeatures", value.asInstanceOf[js.Any])
+    inline def setGuestOsFeatures(value: js.Array[SchemaGuestOsFeature]): Self = StObject.set(x, "guestOsFeatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuestOsFeaturesUndefined: Self = StObject.set(x, "guestOsFeatures", js.undefined)
+    inline def setGuestOsFeaturesUndefined: Self = StObject.set(x, "guestOsFeatures", js.undefined)
     
-    @scala.inline
-    def setGuestOsFeaturesVarargs(value: SchemaGuestOsFeature*): Self = StObject.set(x, "guestOsFeatures", js.Array(value :_*))
+    inline def setGuestOsFeaturesVarargs(value: SchemaGuestOsFeature*): Self = StObject.set(x, "guestOsFeatures", js.Array(value :_*))
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setInitializeParams(value: SchemaAttachedDiskInitializeParams): Self = StObject.set(x, "initializeParams", value.asInstanceOf[js.Any])
+    inline def setInitializeParams(value: SchemaAttachedDiskInitializeParams): Self = StObject.set(x, "initializeParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitializeParamsUndefined: Self = StObject.set(x, "initializeParams", js.undefined)
+    inline def setInitializeParamsUndefined: Self = StObject.set(x, "initializeParams", js.undefined)
     
-    @scala.inline
-    def setInterface(value: String): Self = StObject.set(x, "interface", value.asInstanceOf[js.Any])
+    inline def setInterface(value: String): Self = StObject.set(x, "interface", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterfaceUndefined: Self = StObject.set(x, "interface", js.undefined)
+    inline def setInterfaceUndefined: Self = StObject.set(x, "interface", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLicenses(value: js.Array[String]): Self = StObject.set(x, "licenses", value.asInstanceOf[js.Any])
+    inline def setLicenses(value: js.Array[String]): Self = StObject.set(x, "licenses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicensesUndefined: Self = StObject.set(x, "licenses", js.undefined)
+    inline def setLicensesUndefined: Self = StObject.set(x, "licenses", js.undefined)
     
-    @scala.inline
-    def setLicensesVarargs(value: String*): Self = StObject.set(x, "licenses", js.Array(value :_*))
+    inline def setLicensesVarargs(value: String*): Self = StObject.set(x, "licenses", js.Array(value :_*))
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

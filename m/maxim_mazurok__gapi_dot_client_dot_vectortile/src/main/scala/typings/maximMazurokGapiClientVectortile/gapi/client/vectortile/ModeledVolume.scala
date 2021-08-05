@@ -14,28 +14,21 @@ trait ModeledVolume extends StObject {
 }
 object ModeledVolume {
   
-  @scala.inline
-  def apply(): ModeledVolume = {
+  inline def apply(): ModeledVolume = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModeledVolume]
   }
   
-  @scala.inline
-  implicit class ModeledVolumeMutableBuilder[Self <: ModeledVolume] (val x: Self) extends AnyVal {
+  extension [Self <: ModeledVolume](x: Self) {
     
-    @scala.inline
-    def setStrips(value: js.Array[TriangleStrip]): Self = StObject.set(x, "strips", value.asInstanceOf[js.Any])
+    inline def setStrips(value: js.Array[TriangleStrip]): Self = StObject.set(x, "strips", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStripsUndefined: Self = StObject.set(x, "strips", js.undefined)
+    inline def setStripsUndefined: Self = StObject.set(x, "strips", js.undefined)
     
-    @scala.inline
-    def setStripsVarargs(value: TriangleStrip*): Self = StObject.set(x, "strips", js.Array(value :_*))
+    inline def setStripsVarargs(value: TriangleStrip*): Self = StObject.set(x, "strips", js.Array(value :_*))
     
-    @scala.inline
-    def setVertexOffsets(value: Vertex3DList): Self = StObject.set(x, "vertexOffsets", value.asInstanceOf[js.Any])
+    inline def setVertexOffsets(value: Vertex3DList): Self = StObject.set(x, "vertexOffsets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertexOffsetsUndefined: Self = StObject.set(x, "vertexOffsets", js.undefined)
+    inline def setVertexOffsetsUndefined: Self = StObject.set(x, "vertexOffsets", js.undefined)
   }
 }

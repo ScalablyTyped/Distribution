@@ -18,8 +18,7 @@ trait IntrospectionSchema extends StObject {
 }
 object IntrospectionSchema {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     directives: js.Array[IntrospectionDirective],
     queryType: IntrospectionNamedTypeRef,
     types: js.Array[IntrospectionType]
@@ -28,34 +27,24 @@ object IntrospectionSchema {
     __obj.asInstanceOf[IntrospectionSchema]
   }
   
-  @scala.inline
-  implicit class IntrospectionSchemaMutableBuilder[Self <: IntrospectionSchema] (val x: Self) extends AnyVal {
+  extension [Self <: IntrospectionSchema](x: Self) {
     
-    @scala.inline
-    def setDirectives(value: js.Array[IntrospectionDirective]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
+    inline def setDirectives(value: js.Array[IntrospectionDirective]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectivesVarargs(value: IntrospectionDirective*): Self = StObject.set(x, "directives", js.Array(value :_*))
+    inline def setDirectivesVarargs(value: IntrospectionDirective*): Self = StObject.set(x, "directives", js.Array(value :_*))
     
-    @scala.inline
-    def setMutationType(value: IntrospectionNamedTypeRef): Self = StObject.set(x, "mutationType", value.asInstanceOf[js.Any])
+    inline def setMutationType(value: IntrospectionNamedTypeRef): Self = StObject.set(x, "mutationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMutationTypeUndefined: Self = StObject.set(x, "mutationType", js.undefined)
+    inline def setMutationTypeUndefined: Self = StObject.set(x, "mutationType", js.undefined)
     
-    @scala.inline
-    def setQueryType(value: IntrospectionNamedTypeRef): Self = StObject.set(x, "queryType", value.asInstanceOf[js.Any])
+    inline def setQueryType(value: IntrospectionNamedTypeRef): Self = StObject.set(x, "queryType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionType(value: IntrospectionNamedTypeRef): Self = StObject.set(x, "subscriptionType", value.asInstanceOf[js.Any])
+    inline def setSubscriptionType(value: IntrospectionNamedTypeRef): Self = StObject.set(x, "subscriptionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionTypeUndefined: Self = StObject.set(x, "subscriptionType", js.undefined)
+    inline def setSubscriptionTypeUndefined: Self = StObject.set(x, "subscriptionType", js.undefined)
     
-    @scala.inline
-    def setTypes(value: js.Array[IntrospectionType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: js.Array[IntrospectionType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesVarargs(value: IntrospectionType*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: IntrospectionType*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

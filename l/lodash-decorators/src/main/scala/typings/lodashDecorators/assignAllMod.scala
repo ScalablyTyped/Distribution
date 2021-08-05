@@ -10,11 +10,8 @@ object assignAllMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def assignAll[T, U](to: T, from: U): T = (^.asInstanceOf[js.Dynamic].applyDynamic("assignAll")(to.asInstanceOf[js.Any], from.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def assignAll[T, U](to: T, from: U, excludes: js.Array[String]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("assignAll")(to.asInstanceOf[js.Any], from.asInstanceOf[js.Any], excludes.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def assignAll[T, U](to: T, from: U): T = (^.asInstanceOf[js.Dynamic].applyDynamic("assignAll")(to.asInstanceOf[js.Any], from.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def assignAll[T, U](to: T, from: U, excludes: js.Array[String]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("assignAll")(to.asInstanceOf[js.Any], from.asInstanceOf[js.Any], excludes.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @scala.inline
-  def assignProperty[T, U](to: T, from: U, prop: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assignProperty")(to.asInstanceOf[js.Any], from.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def assignProperty[T, U](to: T, from: U, prop: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assignProperty")(to.asInstanceOf[js.Any], from.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

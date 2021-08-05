@@ -15,19 +15,15 @@ trait SubscriptionsSetting extends StObject {
 }
 object SubscriptionsSetting {
   
-  @scala.inline
-  def apply(itemSettings: IAnyObject, mainSwitch: Boolean): SubscriptionsSetting = {
+  inline def apply(itemSettings: IAnyObject, mainSwitch: Boolean): SubscriptionsSetting = {
     val __obj = js.Dynamic.literal(itemSettings = itemSettings.asInstanceOf[js.Any], mainSwitch = mainSwitch.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriptionsSetting]
   }
   
-  @scala.inline
-  implicit class SubscriptionsSettingMutableBuilder[Self <: SubscriptionsSetting] (val x: Self) extends AnyVal {
+  extension [Self <: SubscriptionsSetting](x: Self) {
     
-    @scala.inline
-    def setItemSettings(value: IAnyObject): Self = StObject.set(x, "itemSettings", value.asInstanceOf[js.Any])
+    inline def setItemSettings(value: IAnyObject): Self = StObject.set(x, "itemSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMainSwitch(value: Boolean): Self = StObject.set(x, "mainSwitch", value.asInstanceOf[js.Any])
+    inline def setMainSwitch(value: Boolean): Self = StObject.set(x, "mainSwitch", value.asInstanceOf[js.Any])
   }
 }

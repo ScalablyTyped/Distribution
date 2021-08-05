@@ -41,8 +41,7 @@ object typesSamplingStatisticsDocumentMod {
   }
   object SamplingStatisticsDocument {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ClientID: String,
       RequestCount: Double,
       RuleName: String,
@@ -53,29 +52,21 @@ object typesSamplingStatisticsDocumentMod {
       __obj.asInstanceOf[SamplingStatisticsDocument]
     }
     
-    @scala.inline
-    implicit class SamplingStatisticsDocumentMutableBuilder[Self <: SamplingStatisticsDocument] (val x: Self) extends AnyVal {
+    extension [Self <: SamplingStatisticsDocument](x: Self) {
       
-      @scala.inline
-      def setBorrowCount(value: Double): Self = StObject.set(x, "BorrowCount", value.asInstanceOf[js.Any])
+      inline def setBorrowCount(value: Double): Self = StObject.set(x, "BorrowCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorrowCountUndefined: Self = StObject.set(x, "BorrowCount", js.undefined)
+      inline def setBorrowCountUndefined: Self = StObject.set(x, "BorrowCount", js.undefined)
       
-      @scala.inline
-      def setClientID(value: String): Self = StObject.set(x, "ClientID", value.asInstanceOf[js.Any])
+      inline def setClientID(value: String): Self = StObject.set(x, "ClientID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestCount(value: Double): Self = StObject.set(x, "RequestCount", value.asInstanceOf[js.Any])
+      inline def setRequestCount(value: Double): Self = StObject.set(x, "RequestCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuleName(value: String): Self = StObject.set(x, "RuleName", value.asInstanceOf[js.Any])
+      inline def setRuleName(value: String): Self = StObject.set(x, "RuleName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSampledCount(value: Double): Self = StObject.set(x, "SampledCount", value.asInstanceOf[js.Any])
+      inline def setSampledCount(value: Double): Self = StObject.set(x, "SampledCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: Date | String | Double): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Date | String | Double): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     }
   }
   
@@ -91,17 +82,14 @@ object typesSamplingStatisticsDocumentMod {
   }
   object UnmarshalledSamplingStatisticsDocument {
     
-    @scala.inline
-    def apply(ClientID: String, RequestCount: Double, RuleName: String, SampledCount: Double, Timestamp: Date): UnmarshalledSamplingStatisticsDocument = {
+    inline def apply(ClientID: String, RequestCount: Double, RuleName: String, SampledCount: Double, Timestamp: Date): UnmarshalledSamplingStatisticsDocument = {
       val __obj = js.Dynamic.literal(ClientID = ClientID.asInstanceOf[js.Any], RequestCount = RequestCount.asInstanceOf[js.Any], RuleName = RuleName.asInstanceOf[js.Any], SampledCount = SampledCount.asInstanceOf[js.Any], Timestamp = Timestamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnmarshalledSamplingStatisticsDocument]
     }
     
-    @scala.inline
-    implicit class UnmarshalledSamplingStatisticsDocumentMutableBuilder[Self <: UnmarshalledSamplingStatisticsDocument] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledSamplingStatisticsDocument](x: Self) {
       
-      @scala.inline
-      def setTimestamp(value: Date): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Date): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     }
   }
 }

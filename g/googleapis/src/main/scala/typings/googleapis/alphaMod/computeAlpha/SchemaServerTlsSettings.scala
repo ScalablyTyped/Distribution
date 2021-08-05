@@ -32,34 +32,25 @@ trait SchemaServerTlsSettings extends StObject {
 }
 object SchemaServerTlsSettings {
   
-  @scala.inline
-  def apply(): SchemaServerTlsSettings = {
+  inline def apply(): SchemaServerTlsSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaServerTlsSettings]
   }
   
-  @scala.inline
-  implicit class SchemaServerTlsSettingsMutableBuilder[Self <: SchemaServerTlsSettings] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaServerTlsSettings](x: Self) {
     
-    @scala.inline
-    def setProxyTlsContext(value: SchemaTlsContext): Self = StObject.set(x, "proxyTlsContext", value.asInstanceOf[js.Any])
+    inline def setProxyTlsContext(value: SchemaTlsContext): Self = StObject.set(x, "proxyTlsContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyTlsContextUndefined: Self = StObject.set(x, "proxyTlsContext", js.undefined)
+    inline def setProxyTlsContextUndefined: Self = StObject.set(x, "proxyTlsContext", js.undefined)
     
-    @scala.inline
-    def setSubjectAltNames(value: js.Array[String]): Self = StObject.set(x, "subjectAltNames", value.asInstanceOf[js.Any])
+    inline def setSubjectAltNames(value: js.Array[String]): Self = StObject.set(x, "subjectAltNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectAltNamesUndefined: Self = StObject.set(x, "subjectAltNames", js.undefined)
+    inline def setSubjectAltNamesUndefined: Self = StObject.set(x, "subjectAltNames", js.undefined)
     
-    @scala.inline
-    def setSubjectAltNamesVarargs(value: String*): Self = StObject.set(x, "subjectAltNames", js.Array(value :_*))
+    inline def setSubjectAltNamesVarargs(value: String*): Self = StObject.set(x, "subjectAltNames", js.Array(value :_*))
     
-    @scala.inline
-    def setTlsMode(value: String): Self = StObject.set(x, "tlsMode", value.asInstanceOf[js.Any])
+    inline def setTlsMode(value: String): Self = StObject.set(x, "tlsMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTlsModeUndefined: Self = StObject.set(x, "tlsMode", js.undefined)
+    inline def setTlsModeUndefined: Self = StObject.set(x, "tlsMode", js.undefined)
   }
 }

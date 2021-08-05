@@ -13,17 +13,14 @@ trait UseSelectStateChangeOptions[Item]
 }
 object UseSelectStateChangeOptions {
   
-  @scala.inline
-  def apply[Item](changes: Partial[UseSelectState[Item]], `type`: UseSelectStateChangeTypes): UseSelectStateChangeOptions[Item] = {
+  inline def apply[Item](changes: Partial[UseSelectState[Item]], `type`: UseSelectStateChangeTypes): UseSelectStateChangeOptions[Item] = {
     val __obj = js.Dynamic.literal(changes = changes.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseSelectStateChangeOptions[Item]]
   }
   
-  @scala.inline
-  implicit class UseSelectStateChangeOptionsMutableBuilder[Self <: UseSelectStateChangeOptions[?], Item] (val x: Self & UseSelectStateChangeOptions[Item]) extends AnyVal {
+  extension [Self <: UseSelectStateChangeOptions[?], Item](x: Self & UseSelectStateChangeOptions[Item]) {
     
-    @scala.inline
-    def setChanges(value: Partial[UseSelectState[Item]]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
+    inline def setChanges(value: Partial[UseSelectState[Item]]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
   }
 }

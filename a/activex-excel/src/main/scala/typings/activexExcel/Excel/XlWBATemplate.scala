@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlWBATemplate extends StObject
 object XlWBATemplate {
   
-  @scala.inline
-  def xlWBATChart: `-4109` = -4109.asInstanceOf[`-4109`]
+  inline def xlWBATChart: `-4109` = -4109.asInstanceOf[`-4109`]
   
-  @scala.inline
-  def xlWBATExcel4IntlMacroSheet: `4` = 4.asInstanceOf[`4`]
+  inline def xlWBATExcel4IntlMacroSheet: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def xlWBATExcel4MacroSheet: `3` = 3.asInstanceOf[`3`]
+  inline def xlWBATExcel4MacroSheet: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def xlWBATWorksheet: `-4167` = -4167.asInstanceOf[`-4167`]
+  inline def xlWBATWorksheet: `-4167` = -4167.asInstanceOf[`-4167`]
 }

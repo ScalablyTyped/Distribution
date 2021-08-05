@@ -13,16 +13,13 @@ trait ProtectionGroupPatternTypeLimits extends StObject {
 }
 object ProtectionGroupPatternTypeLimits {
   
-  @scala.inline
-  def apply(ArbitraryPatternLimits: ProtectionGroupArbitraryPatternLimits): ProtectionGroupPatternTypeLimits = {
+  inline def apply(ArbitraryPatternLimits: ProtectionGroupArbitraryPatternLimits): ProtectionGroupPatternTypeLimits = {
     val __obj = js.Dynamic.literal(ArbitraryPatternLimits = ArbitraryPatternLimits.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProtectionGroupPatternTypeLimits]
   }
   
-  @scala.inline
-  implicit class ProtectionGroupPatternTypeLimitsMutableBuilder[Self <: ProtectionGroupPatternTypeLimits] (val x: Self) extends AnyVal {
+  extension [Self <: ProtectionGroupPatternTypeLimits](x: Self) {
     
-    @scala.inline
-    def setArbitraryPatternLimits(value: ProtectionGroupArbitraryPatternLimits): Self = StObject.set(x, "ArbitraryPatternLimits", value.asInstanceOf[js.Any])
+    inline def setArbitraryPatternLimits(value: ProtectionGroupArbitraryPatternLimits): Self = StObject.set(x, "ArbitraryPatternLimits", value.asInstanceOf[js.Any])
   }
 }

@@ -40,6 +40,5 @@ object EventArgs {
   @JSGlobal("Sys.EventArgs.Empty")
   @js.native
   def Empty: typings.microsoftAjax.Sys.EventArgs = js.native
-  @scala.inline
-  def Empty_=(x: typings.microsoftAjax.Sys.EventArgs): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Empty")(x.asInstanceOf[js.Any])
+  inline def Empty_=(x: typings.microsoftAjax.Sys.EventArgs): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Empty")(x.asInstanceOf[js.Any])
 }

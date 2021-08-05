@@ -151,47 +151,34 @@ object events {
   }
   object Rule {
     
-    @scala.inline
-    def apply[T /* <: js.Object */, K /* <: js.Object */](actions: js.Array[K], conditions: js.Array[T]): Rule[T, K] = {
+    inline def apply[T /* <: js.Object */, K /* <: js.Object */](actions: js.Array[K], conditions: js.Array[T]): Rule[T, K] = {
       val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], conditions = conditions.asInstanceOf[js.Any])
       __obj.asInstanceOf[Rule[T, K]]
     }
     
-    @scala.inline
-    implicit class RuleMutableBuilder[Self <: Rule[?, ?], T /* <: js.Object */, K /* <: js.Object */] (val x: Self & (Rule[T, K])) extends AnyVal {
+    extension [Self <: Rule[?, ?], T /* <: js.Object */, K /* <: js.Object */](x: Self & (Rule[T, K])) {
       
-      @scala.inline
-      def setActions(value: js.Array[K]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: js.Array[K]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionsVarargs(value: K*): Self = StObject.set(x, "actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: K*): Self = StObject.set(x, "actions", js.Array(value :_*))
       
-      @scala.inline
-      def setConditions(value: js.Array[T]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+      inline def setConditions(value: js.Array[T]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConditionsVarargs(value: T*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+      inline def setConditionsVarargs(value: T*): Self = StObject.set(x, "conditions", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setPriority(value: integer): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: integer): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
       
-      @scala.inline
-      def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     }
   }
   
@@ -283,140 +270,96 @@ object events {
   }
   object UrlFilter {
     
-    @scala.inline
-    def apply(): UrlFilter = {
+    inline def apply(): UrlFilter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UrlFilter]
     }
     
-    @scala.inline
-    implicit class UrlFilterMutableBuilder[Self <: UrlFilter] (val x: Self) extends AnyVal {
+    extension [Self <: UrlFilter](x: Self) {
       
-      @scala.inline
-      def setHostContains(value: String): Self = StObject.set(x, "hostContains", value.asInstanceOf[js.Any])
+      inline def setHostContains(value: String): Self = StObject.set(x, "hostContains", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostContainsUndefined: Self = StObject.set(x, "hostContains", js.undefined)
+      inline def setHostContainsUndefined: Self = StObject.set(x, "hostContains", js.undefined)
       
-      @scala.inline
-      def setHostEquals(value: String): Self = StObject.set(x, "hostEquals", value.asInstanceOf[js.Any])
+      inline def setHostEquals(value: String): Self = StObject.set(x, "hostEquals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostEqualsUndefined: Self = StObject.set(x, "hostEquals", js.undefined)
+      inline def setHostEqualsUndefined: Self = StObject.set(x, "hostEquals", js.undefined)
       
-      @scala.inline
-      def setHostPrefix(value: String): Self = StObject.set(x, "hostPrefix", value.asInstanceOf[js.Any])
+      inline def setHostPrefix(value: String): Self = StObject.set(x, "hostPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostPrefixUndefined: Self = StObject.set(x, "hostPrefix", js.undefined)
+      inline def setHostPrefixUndefined: Self = StObject.set(x, "hostPrefix", js.undefined)
       
-      @scala.inline
-      def setHostSuffix(value: String): Self = StObject.set(x, "hostSuffix", value.asInstanceOf[js.Any])
+      inline def setHostSuffix(value: String): Self = StObject.set(x, "hostSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostSuffixUndefined: Self = StObject.set(x, "hostSuffix", js.undefined)
+      inline def setHostSuffixUndefined: Self = StObject.set(x, "hostSuffix", js.undefined)
       
-      @scala.inline
-      def setOriginAndPathMatches(value: String): Self = StObject.set(x, "originAndPathMatches", value.asInstanceOf[js.Any])
+      inline def setOriginAndPathMatches(value: String): Self = StObject.set(x, "originAndPathMatches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginAndPathMatchesUndefined: Self = StObject.set(x, "originAndPathMatches", js.undefined)
+      inline def setOriginAndPathMatchesUndefined: Self = StObject.set(x, "originAndPathMatches", js.undefined)
       
-      @scala.inline
-      def setPathContains(value: String): Self = StObject.set(x, "pathContains", value.asInstanceOf[js.Any])
+      inline def setPathContains(value: String): Self = StObject.set(x, "pathContains", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathContainsUndefined: Self = StObject.set(x, "pathContains", js.undefined)
+      inline def setPathContainsUndefined: Self = StObject.set(x, "pathContains", js.undefined)
       
-      @scala.inline
-      def setPathEquals(value: String): Self = StObject.set(x, "pathEquals", value.asInstanceOf[js.Any])
+      inline def setPathEquals(value: String): Self = StObject.set(x, "pathEquals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathEqualsUndefined: Self = StObject.set(x, "pathEquals", js.undefined)
+      inline def setPathEqualsUndefined: Self = StObject.set(x, "pathEquals", js.undefined)
       
-      @scala.inline
-      def setPathPrefix(value: String): Self = StObject.set(x, "pathPrefix", value.asInstanceOf[js.Any])
+      inline def setPathPrefix(value: String): Self = StObject.set(x, "pathPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathPrefixUndefined: Self = StObject.set(x, "pathPrefix", js.undefined)
+      inline def setPathPrefixUndefined: Self = StObject.set(x, "pathPrefix", js.undefined)
       
-      @scala.inline
-      def setPathSuffix(value: String): Self = StObject.set(x, "pathSuffix", value.asInstanceOf[js.Any])
+      inline def setPathSuffix(value: String): Self = StObject.set(x, "pathSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathSuffixUndefined: Self = StObject.set(x, "pathSuffix", js.undefined)
+      inline def setPathSuffixUndefined: Self = StObject.set(x, "pathSuffix", js.undefined)
       
-      @scala.inline
-      def setPorts(value: js.Array[integer | js.Array[integer]]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
+      inline def setPorts(value: js.Array[integer | js.Array[integer]]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
+      inline def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
       
-      @scala.inline
-      def setPortsVarargs(value: (integer | js.Array[integer])*): Self = StObject.set(x, "ports", js.Array(value :_*))
+      inline def setPortsVarargs(value: (integer | js.Array[integer])*): Self = StObject.set(x, "ports", js.Array(value :_*))
       
-      @scala.inline
-      def setQueryContains(value: String): Self = StObject.set(x, "queryContains", value.asInstanceOf[js.Any])
+      inline def setQueryContains(value: String): Self = StObject.set(x, "queryContains", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryContainsUndefined: Self = StObject.set(x, "queryContains", js.undefined)
+      inline def setQueryContainsUndefined: Self = StObject.set(x, "queryContains", js.undefined)
       
-      @scala.inline
-      def setQueryEquals(value: String): Self = StObject.set(x, "queryEquals", value.asInstanceOf[js.Any])
+      inline def setQueryEquals(value: String): Self = StObject.set(x, "queryEquals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryEqualsUndefined: Self = StObject.set(x, "queryEquals", js.undefined)
+      inline def setQueryEqualsUndefined: Self = StObject.set(x, "queryEquals", js.undefined)
       
-      @scala.inline
-      def setQueryPrefix(value: String): Self = StObject.set(x, "queryPrefix", value.asInstanceOf[js.Any])
+      inline def setQueryPrefix(value: String): Self = StObject.set(x, "queryPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryPrefixUndefined: Self = StObject.set(x, "queryPrefix", js.undefined)
+      inline def setQueryPrefixUndefined: Self = StObject.set(x, "queryPrefix", js.undefined)
       
-      @scala.inline
-      def setQuerySuffix(value: String): Self = StObject.set(x, "querySuffix", value.asInstanceOf[js.Any])
+      inline def setQuerySuffix(value: String): Self = StObject.set(x, "querySuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuerySuffixUndefined: Self = StObject.set(x, "querySuffix", js.undefined)
+      inline def setQuerySuffixUndefined: Self = StObject.set(x, "querySuffix", js.undefined)
       
-      @scala.inline
-      def setSchemes(value: js.Array[String]): Self = StObject.set(x, "schemes", value.asInstanceOf[js.Any])
+      inline def setSchemes(value: js.Array[String]): Self = StObject.set(x, "schemes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemesUndefined: Self = StObject.set(x, "schemes", js.undefined)
+      inline def setSchemesUndefined: Self = StObject.set(x, "schemes", js.undefined)
       
-      @scala.inline
-      def setSchemesVarargs(value: String*): Self = StObject.set(x, "schemes", js.Array(value :_*))
+      inline def setSchemesVarargs(value: String*): Self = StObject.set(x, "schemes", js.Array(value :_*))
       
-      @scala.inline
-      def setUrlContains(value: String): Self = StObject.set(x, "urlContains", value.asInstanceOf[js.Any])
+      inline def setUrlContains(value: String): Self = StObject.set(x, "urlContains", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlContainsUndefined: Self = StObject.set(x, "urlContains", js.undefined)
+      inline def setUrlContainsUndefined: Self = StObject.set(x, "urlContains", js.undefined)
       
-      @scala.inline
-      def setUrlEquals(value: String): Self = StObject.set(x, "urlEquals", value.asInstanceOf[js.Any])
+      inline def setUrlEquals(value: String): Self = StObject.set(x, "urlEquals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlEqualsUndefined: Self = StObject.set(x, "urlEquals", js.undefined)
+      inline def setUrlEqualsUndefined: Self = StObject.set(x, "urlEquals", js.undefined)
       
-      @scala.inline
-      def setUrlMatches(value: String): Self = StObject.set(x, "urlMatches", value.asInstanceOf[js.Any])
+      inline def setUrlMatches(value: String): Self = StObject.set(x, "urlMatches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlMatchesUndefined: Self = StObject.set(x, "urlMatches", js.undefined)
+      inline def setUrlMatchesUndefined: Self = StObject.set(x, "urlMatches", js.undefined)
       
-      @scala.inline
-      def setUrlPrefix(value: String): Self = StObject.set(x, "urlPrefix", value.asInstanceOf[js.Any])
+      inline def setUrlPrefix(value: String): Self = StObject.set(x, "urlPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlPrefixUndefined: Self = StObject.set(x, "urlPrefix", js.undefined)
+      inline def setUrlPrefixUndefined: Self = StObject.set(x, "urlPrefix", js.undefined)
       
-      @scala.inline
-      def setUrlSuffix(value: String): Self = StObject.set(x, "urlSuffix", value.asInstanceOf[js.Any])
+      inline def setUrlSuffix(value: String): Self = StObject.set(x, "urlSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlSuffixUndefined: Self = StObject.set(x, "urlSuffix", js.undefined)
+      inline def setUrlSuffixUndefined: Self = StObject.set(x, "urlSuffix", js.undefined)
     }
   }
 }

@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SimpleLineSymbolStyle extends StObject
 object SimpleLineSymbolStyle {
   
-  @scala.inline
-  def esriSLSDash: typings.arcgisRestApi.arcgisRestApiStrings.esriSLSDash = "esriSLSDash".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSLSDash]
+  inline def esriSLSDash: typings.arcgisRestApi.arcgisRestApiStrings.esriSLSDash = "esriSLSDash".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSLSDash]
   
-  @scala.inline
-  def esriSLSDashDot: typings.arcgisRestApi.arcgisRestApiStrings.esriSLSDashDot = "esriSLSDashDot".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSLSDashDot]
+  inline def esriSLSDashDot: typings.arcgisRestApi.arcgisRestApiStrings.esriSLSDashDot = "esriSLSDashDot".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSLSDashDot]
   
-  @scala.inline
-  def esriSLSDashDotDot: typings.arcgisRestApi.arcgisRestApiStrings.esriSLSDashDotDot = "esriSLSDashDotDot".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSLSDashDotDot]
+  inline def esriSLSDashDotDot: typings.arcgisRestApi.arcgisRestApiStrings.esriSLSDashDotDot = "esriSLSDashDotDot".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSLSDashDotDot]
   
-  @scala.inline
-  def esriSLSDot: typings.arcgisRestApi.arcgisRestApiStrings.esriSLSDot = "esriSLSDot".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSLSDot]
+  inline def esriSLSDot: typings.arcgisRestApi.arcgisRestApiStrings.esriSLSDot = "esriSLSDot".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSLSDot]
   
-  @scala.inline
-  def esriSLSNull: typings.arcgisRestApi.arcgisRestApiStrings.esriSLSNull = "esriSLSNull".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSLSNull]
+  inline def esriSLSNull: typings.arcgisRestApi.arcgisRestApiStrings.esriSLSNull = "esriSLSNull".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSLSNull]
   
-  @scala.inline
-  def esriSLSSolid: typings.arcgisRestApi.arcgisRestApiStrings.esriSLSSolid = "esriSLSSolid".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSLSSolid]
+  inline def esriSLSSolid: typings.arcgisRestApi.arcgisRestApiStrings.esriSLSSolid = "esriSLSSolid".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSLSSolid]
 }

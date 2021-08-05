@@ -14,25 +14,19 @@ trait PickISearchBoxPropsdisabl extends StObject {
 }
 object PickISearchBoxPropsdisabl {
   
-  @scala.inline
-  def apply(): PickISearchBoxPropsdisabl = {
+  inline def apply(): PickISearchBoxPropsdisabl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PickISearchBoxPropsdisabl]
   }
   
-  @scala.inline
-  implicit class PickISearchBoxPropsdisablMutableBuilder[Self <: PickISearchBoxPropsdisabl] (val x: Self) extends AnyVal {
+  extension [Self <: PickISearchBoxPropsdisabl](x: Self) {
     
-    @scala.inline
-    def setClearButtonProps(value: IButtonProps): Self = StObject.set(x, "clearButtonProps", value.asInstanceOf[js.Any])
+    inline def setClearButtonProps(value: IButtonProps): Self = StObject.set(x, "clearButtonProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearButtonPropsUndefined: Self = StObject.set(x, "clearButtonProps", js.undefined)
+    inline def setClearButtonPropsUndefined: Self = StObject.set(x, "clearButtonProps", js.undefined)
     
-    @scala.inline
-    def setDisableAnimation(value: Boolean): Self = StObject.set(x, "disableAnimation", value.asInstanceOf[js.Any])
+    inline def setDisableAnimation(value: Boolean): Self = StObject.set(x, "disableAnimation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableAnimationUndefined: Self = StObject.set(x, "disableAnimation", js.undefined)
+    inline def setDisableAnimationUndefined: Self = StObject.set(x, "disableAnimation", js.undefined)
   }
 }

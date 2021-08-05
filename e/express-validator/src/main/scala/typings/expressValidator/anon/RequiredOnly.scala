@@ -10,16 +10,13 @@ trait RequiredOnly extends StObject {
 }
 object RequiredOnly {
   
-  @scala.inline
-  def apply(requiredOnly: Boolean): RequiredOnly = {
+  inline def apply(requiredOnly: Boolean): RequiredOnly = {
     val __obj = js.Dynamic.literal(requiredOnly = requiredOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequiredOnly]
   }
   
-  @scala.inline
-  implicit class RequiredOnlyMutableBuilder[Self <: RequiredOnly] (val x: Self) extends AnyVal {
+  extension [Self <: RequiredOnly](x: Self) {
     
-    @scala.inline
-    def setRequiredOnly(value: Boolean): Self = StObject.set(x, "requiredOnly", value.asInstanceOf[js.Any])
+    inline def setRequiredOnly(value: Boolean): Self = StObject.set(x, "requiredOnly", value.asInstanceOf[js.Any])
   }
 }

@@ -13,8 +13,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[S /* <: js.Object */](source: S, patches: MultipleTopLevelPatch[S]*): S = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], patches.asInstanceOf[js.Any])).asInstanceOf[S]
+  inline def default[S /* <: js.Object */](source: S, patches: MultipleTopLevelPatch[S]*): S = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], patches.asInstanceOf[js.Any])).asInstanceOf[S]
   
   type ArrayPatch[T] = ObjectPatch[Record[Double, js.Any]]
   

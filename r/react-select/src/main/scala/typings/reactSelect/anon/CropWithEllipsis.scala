@@ -10,16 +10,13 @@ trait CropWithEllipsis extends StObject {
 }
 object CropWithEllipsis {
   
-  @scala.inline
-  def apply(cropWithEllipsis: Boolean): CropWithEllipsis = {
+  inline def apply(cropWithEllipsis: Boolean): CropWithEllipsis = {
     val __obj = js.Dynamic.literal(cropWithEllipsis = cropWithEllipsis.asInstanceOf[js.Any])
     __obj.asInstanceOf[CropWithEllipsis]
   }
   
-  @scala.inline
-  implicit class CropWithEllipsisMutableBuilder[Self <: CropWithEllipsis] (val x: Self) extends AnyVal {
+  extension [Self <: CropWithEllipsis](x: Self) {
     
-    @scala.inline
-    def setCropWithEllipsis(value: Boolean): Self = StObject.set(x, "cropWithEllipsis", value.asInstanceOf[js.Any])
+    inline def setCropWithEllipsis(value: Boolean): Self = StObject.set(x, "cropWithEllipsis", value.asInstanceOf[js.Any])
   }
 }

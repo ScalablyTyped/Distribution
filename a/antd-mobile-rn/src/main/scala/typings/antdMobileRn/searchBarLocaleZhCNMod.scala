@@ -15,7 +15,6 @@ object searchBarLocaleZhCNMod {
     @JSImport("antd-mobile-rn/lib/search-bar/locale/zh_CN", "default.cancelText")
     @js.native
     def cancelText: String = js.native
-    @scala.inline
-    def cancelText_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cancelText")(x.asInstanceOf[js.Any])
+    inline def cancelText_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cancelText")(x.asInstanceOf[js.Any])
   }
 }

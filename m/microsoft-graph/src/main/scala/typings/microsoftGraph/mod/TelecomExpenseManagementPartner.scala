@@ -25,49 +25,35 @@ trait TelecomExpenseManagementPartner
 }
 object TelecomExpenseManagementPartner {
   
-  @scala.inline
-  def apply(): TelecomExpenseManagementPartner = {
+  inline def apply(): TelecomExpenseManagementPartner = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TelecomExpenseManagementPartner]
   }
   
-  @scala.inline
-  implicit class TelecomExpenseManagementPartnerMutableBuilder[Self <: TelecomExpenseManagementPartner] (val x: Self) extends AnyVal {
+  extension [Self <: TelecomExpenseManagementPartner](x: Self) {
     
-    @scala.inline
-    def setAppAuthorized(value: Boolean): Self = StObject.set(x, "appAuthorized", value.asInstanceOf[js.Any])
+    inline def setAppAuthorized(value: Boolean): Self = StObject.set(x, "appAuthorized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppAuthorizedUndefined: Self = StObject.set(x, "appAuthorized", js.undefined)
+    inline def setAppAuthorizedUndefined: Self = StObject.set(x, "appAuthorized", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setLastConnectionDateTime(value: String): Self = StObject.set(x, "lastConnectionDateTime", value.asInstanceOf[js.Any])
+    inline def setLastConnectionDateTime(value: String): Self = StObject.set(x, "lastConnectionDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastConnectionDateTimeUndefined: Self = StObject.set(x, "lastConnectionDateTime", js.undefined)
+    inline def setLastConnectionDateTimeUndefined: Self = StObject.set(x, "lastConnectionDateTime", js.undefined)
     
-    @scala.inline
-    def setUrl(value: NullableOption[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: NullableOption[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlNull: Self = StObject.set(x, "url", null)
+    inline def setUrlNull: Self = StObject.set(x, "url", null)
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

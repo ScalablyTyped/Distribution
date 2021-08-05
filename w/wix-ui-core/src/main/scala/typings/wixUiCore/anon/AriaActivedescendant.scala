@@ -12,19 +12,15 @@ trait AriaActivedescendant extends StObject {
 }
 object AriaActivedescendant {
   
-  @scala.inline
-  def apply(ariaActivedescendant: js.Any, ariaExpanded: Boolean): AriaActivedescendant = {
+  inline def apply(ariaActivedescendant: js.Any, ariaExpanded: Boolean): AriaActivedescendant = {
     val __obj = js.Dynamic.literal(ariaActivedescendant = ariaActivedescendant.asInstanceOf[js.Any], ariaExpanded = ariaExpanded.asInstanceOf[js.Any])
     __obj.asInstanceOf[AriaActivedescendant]
   }
   
-  @scala.inline
-  implicit class AriaActivedescendantMutableBuilder[Self <: AriaActivedescendant] (val x: Self) extends AnyVal {
+  extension [Self <: AriaActivedescendant](x: Self) {
     
-    @scala.inline
-    def setAriaActivedescendant(value: js.Any): Self = StObject.set(x, "ariaActivedescendant", value.asInstanceOf[js.Any])
+    inline def setAriaActivedescendant(value: js.Any): Self = StObject.set(x, "ariaActivedescendant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAriaExpanded(value: Boolean): Self = StObject.set(x, "ariaExpanded", value.asInstanceOf[js.Any])
+    inline def setAriaExpanded(value: Boolean): Self = StObject.set(x, "ariaExpanded", value.asInstanceOf[js.Any])
   }
 }

@@ -19,10 +19,8 @@ object componentsPluralMod {
   /* Inlined react.react.FC<react-intl.react-intl/src/components/injectIntl.WithIntlProps<react-intl.react-intl/src/components/plural.Props>> & {  WrappedComponent :react.react.ComponentType<react-intl.react-intl/src/components/plural.Props>} */
   object default {
     
-    @scala.inline
-    def apply(props: PropsWithChildren[WithIntlProps[Props]]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-    @scala.inline
-    def apply(props: PropsWithChildren[WithIntlProps[Props]], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    inline def apply(props: PropsWithChildren[WithIntlProps[Props]]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    inline def apply(props: PropsWithChildren[WithIntlProps[Props]], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
     
     @JSImport("react-intl/src/components/plural", JSImport.Default)
     @js.native
@@ -31,32 +29,27 @@ object componentsPluralMod {
     @JSImport("react-intl/src/components/plural", "default.WrappedComponent")
     @js.native
     def WrappedComponent: ComponentType[Props] = js.native
-    @scala.inline
-    def WrappedComponent_=(x: ComponentType[Props]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WrappedComponent")(x.asInstanceOf[js.Any])
+    inline def WrappedComponent_=(x: ComponentType[Props]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WrappedComponent")(x.asInstanceOf[js.Any])
     
     @JSImport("react-intl/src/components/plural", "default.contextTypes")
     @js.native
     def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-    @scala.inline
-    def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("react-intl/src/components/plural", "default.defaultProps")
     @js.native
     def defaultProps: js.UndefOr[Partial[WithIntlProps[Props]]] = js.native
-    @scala.inline
-    def defaultProps_=(x: js.UndefOr[Partial[WithIntlProps[Props]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: js.UndefOr[Partial[WithIntlProps[Props]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("react-intl/src/components/plural", "default.displayName")
     @js.native
     def displayName: js.UndefOr[String] = js.native
-    @scala.inline
-    def displayName_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
     @JSImport("react-intl/src/components/plural", "default.propTypes")
     @js.native
     def propTypes: js.UndefOr[WeakValidationMap[WithIntlProps[Props]]] = js.native
-    @scala.inline
-    def propTypes_=(x: js.UndefOr[WeakValidationMap[WithIntlProps[Props]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: js.UndefOr[WeakValidationMap[WithIntlProps[Props]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -84,62 +77,44 @@ object componentsPluralMod {
   }
   object Props {
     
-    @scala.inline
-    def apply(intl: IntlShape, value: Double): Props = {
+    inline def apply(intl: IntlShape, value: Double): Props = {
       val __obj = js.Dynamic.literal(intl = intl.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setChildren(value: /* value */ ReactNode => ReactElement | Null): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: /* value */ ReactNode => ReactElement | Null): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setFew(value: ReactNode): Self = StObject.set(x, "few", value.asInstanceOf[js.Any])
+      inline def setFew(value: ReactNode): Self = StObject.set(x, "few", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFewUndefined: Self = StObject.set(x, "few", js.undefined)
+      inline def setFewUndefined: Self = StObject.set(x, "few", js.undefined)
       
-      @scala.inline
-      def setIntl(value: IntlShape): Self = StObject.set(x, "intl", value.asInstanceOf[js.Any])
+      inline def setIntl(value: IntlShape): Self = StObject.set(x, "intl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMany(value: ReactNode): Self = StObject.set(x, "many", value.asInstanceOf[js.Any])
+      inline def setMany(value: ReactNode): Self = StObject.set(x, "many", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManyUndefined: Self = StObject.set(x, "many", js.undefined)
+      inline def setManyUndefined: Self = StObject.set(x, "many", js.undefined)
       
-      @scala.inline
-      def setOne(value: ReactNode): Self = StObject.set(x, "one", value.asInstanceOf[js.Any])
+      inline def setOne(value: ReactNode): Self = StObject.set(x, "one", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOneUndefined: Self = StObject.set(x, "one", js.undefined)
+      inline def setOneUndefined: Self = StObject.set(x, "one", js.undefined)
       
-      @scala.inline
-      def setOther(value: ReactNode): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
+      inline def setOther(value: ReactNode): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOtherUndefined: Self = StObject.set(x, "other", js.undefined)
+      inline def setOtherUndefined: Self = StObject.set(x, "other", js.undefined)
       
-      @scala.inline
-      def setTwo(value: ReactNode): Self = StObject.set(x, "two", value.asInstanceOf[js.Any])
+      inline def setTwo(value: ReactNode): Self = StObject.set(x, "two", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTwoUndefined: Self = StObject.set(x, "two", js.undefined)
+      inline def setTwoUndefined: Self = StObject.set(x, "two", js.undefined)
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZero(value: ReactNode): Self = StObject.set(x, "zero", value.asInstanceOf[js.Any])
+      inline def setZero(value: ReactNode): Self = StObject.set(x, "zero", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZeroUndefined: Self = StObject.set(x, "zero", js.undefined)
+      inline def setZeroUndefined: Self = StObject.set(x, "zero", js.undefined)
     }
   }
 }

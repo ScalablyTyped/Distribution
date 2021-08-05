@@ -10,8 +10,7 @@ trait SearchPaneQueryLinguisticDetails
      with ISearchPaneQueryLinguisticDetails
 object SearchPaneQueryLinguisticDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     queryTextAlternatives: IVectorView[String],
     queryTextCompositionLength: Double,
     queryTextCompositionStart: Double

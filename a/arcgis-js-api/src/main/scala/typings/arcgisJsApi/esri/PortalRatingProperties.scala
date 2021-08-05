@@ -22,25 +22,19 @@ trait PortalRatingProperties extends StObject {
 }
 object PortalRatingProperties {
   
-  @scala.inline
-  def apply(): PortalRatingProperties = {
+  inline def apply(): PortalRatingProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PortalRatingProperties]
   }
   
-  @scala.inline
-  implicit class PortalRatingPropertiesMutableBuilder[Self <: PortalRatingProperties] (val x: Self) extends AnyVal {
+  extension [Self <: PortalRatingProperties](x: Self) {
     
-    @scala.inline
-    def setCreated(value: DateProperties): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: DateProperties): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+    inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
-    @scala.inline
-    def setRating(value: Double): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
+    inline def setRating(value: Double): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRatingUndefined: Self = StObject.set(x, "rating", js.undefined)
+    inline def setRatingUndefined: Self = StObject.set(x, "rating", js.undefined)
   }
 }

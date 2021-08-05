@@ -11,19 +11,15 @@ trait GoogleCloudVideointelligenceV1ExplicitContentDetectionConfig extends StObj
 }
 object GoogleCloudVideointelligenceV1ExplicitContentDetectionConfig {
   
-  @scala.inline
-  def apply(): GoogleCloudVideointelligenceV1ExplicitContentDetectionConfig = {
+  inline def apply(): GoogleCloudVideointelligenceV1ExplicitContentDetectionConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1ExplicitContentDetectionConfig]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVideointelligenceV1ExplicitContentDetectionConfigMutableBuilder[Self <: GoogleCloudVideointelligenceV1ExplicitContentDetectionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVideointelligenceV1ExplicitContentDetectionConfig](x: Self) {
     
-    @scala.inline
-    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
   }
 }

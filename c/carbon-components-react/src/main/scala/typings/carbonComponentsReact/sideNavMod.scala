@@ -49,92 +49,64 @@ object sideNavMod extends Shortcut {
   }
   object SideNavProps {
     
-    @scala.inline
-    def apply(): SideNavProps = {
+    inline def apply(): SideNavProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SideNavProps]
     }
     
-    @scala.inline
-    implicit class SideNavPropsMutableBuilder[Self <: SideNavProps] (val x: Self) extends AnyVal {
+    extension [Self <: SideNavProps](x: Self) {
       
-      @scala.inline
-      def setAddFocusListeners(value: Boolean): Self = StObject.set(x, "addFocusListeners", value.asInstanceOf[js.Any])
+      inline def setAddFocusListeners(value: Boolean): Self = StObject.set(x, "addFocusListeners", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddFocusListenersUndefined: Self = StObject.set(x, "addFocusListeners", js.undefined)
+      inline def setAddFocusListenersUndefined: Self = StObject.set(x, "addFocusListeners", js.undefined)
       
-      @scala.inline
-      def setAddMouseListeners(value: Boolean): Self = StObject.set(x, "addMouseListeners", value.asInstanceOf[js.Any])
+      inline def setAddMouseListeners(value: Boolean): Self = StObject.set(x, "addMouseListeners", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddMouseListenersUndefined: Self = StObject.set(x, "addMouseListeners", js.undefined)
+      inline def setAddMouseListenersUndefined: Self = StObject.set(x, "addMouseListeners", js.undefined)
       
-      @scala.inline
-      def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
+      inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
+      inline def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
       
-      @scala.inline
-      def `setAria-labelledby`(value: String): Self = StObject.set(x, "aria-labelledby", value.asInstanceOf[js.Any])
+      inline def `setAria-labelledby`(value: String): Self = StObject.set(x, "aria-labelledby", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-labelledbyUndefined`: Self = StObject.set(x, "aria-labelledby", js.undefined)
+      inline def `setAria-labelledbyUndefined`: Self = StObject.set(x, "aria-labelledby", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDefaultExpanded(value: Boolean): Self = StObject.set(x, "defaultExpanded", value.asInstanceOf[js.Any])
+      inline def setDefaultExpanded(value: Boolean): Self = StObject.set(x, "defaultExpanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultExpandedUndefined: Self = StObject.set(x, "defaultExpanded", js.undefined)
+      inline def setDefaultExpandedUndefined: Self = StObject.set(x, "defaultExpanded", js.undefined)
       
-      @scala.inline
-      def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+      inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
+      inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
       
-      @scala.inline
-      def setIsChildOfHeader(value: Boolean): Self = StObject.set(x, "isChildOfHeader", value.asInstanceOf[js.Any])
+      inline def setIsChildOfHeader(value: Boolean): Self = StObject.set(x, "isChildOfHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsChildOfHeaderUndefined: Self = StObject.set(x, "isChildOfHeader", js.undefined)
+      inline def setIsChildOfHeaderUndefined: Self = StObject.set(x, "isChildOfHeader", js.undefined)
       
-      @scala.inline
-      def setIsFixedNav(value: Boolean): Self = StObject.set(x, "isFixedNav", value.asInstanceOf[js.Any])
+      inline def setIsFixedNav(value: Boolean): Self = StObject.set(x, "isFixedNav", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFixedNavUndefined: Self = StObject.set(x, "isFixedNav", js.undefined)
+      inline def setIsFixedNavUndefined: Self = StObject.set(x, "isFixedNav", js.undefined)
       
-      @scala.inline
-      def setIsPersistent(value: Boolean): Self = StObject.set(x, "isPersistent", value.asInstanceOf[js.Any])
+      inline def setIsPersistent(value: Boolean): Self = StObject.set(x, "isPersistent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPersistentUndefined: Self = StObject.set(x, "isPersistent", js.undefined)
+      inline def setIsPersistentUndefined: Self = StObject.set(x, "isPersistent", js.undefined)
       
-      @scala.inline
-      def setIsRail(value: Boolean): Self = StObject.set(x, "isRail", value.asInstanceOf[js.Any])
+      inline def setIsRail(value: Boolean): Self = StObject.set(x, "isRail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRailUndefined: Self = StObject.set(x, "isRail", js.undefined)
+      inline def setIsRailUndefined: Self = StObject.set(x, "isRail", js.undefined)
       
-      @scala.inline
-      def setOnToggle(value: (/* event */ FocusEvent[HTMLElement], /* focus */ Boolean) => Unit): Self = StObject.set(x, "onToggle", js.Any.fromFunction2(value))
+      inline def setOnToggle(value: (/* event */ FocusEvent[HTMLElement], /* focus */ Boolean) => Unit): Self = StObject.set(x, "onToggle", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnToggleUndefined: Self = StObject.set(x, "onToggle", js.undefined)
+      inline def setOnToggleUndefined: Self = StObject.set(x, "onToggle", js.undefined)
     }
   }
   
@@ -147,11 +119,9 @@ object sideNavMod extends Shortcut {
        with _CarbonTranslationKey
   object SideNavTranslationKey {
     
-    @scala.inline
-    def carbonDotsidenavDotstateDotclosed: typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDotsidenavDotstateDotclosed = "carbon.sidenav.state.closed".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDotsidenavDotstateDotclosed]
+    inline def carbonDotsidenavDotstateDotclosed: typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDotsidenavDotstateDotclosed = "carbon.sidenav.state.closed".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDotsidenavDotstateDotclosed]
     
-    @scala.inline
-    def carbonDotsidenavDotstateDotopen: typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDotsidenavDotstateDotopen = "carbon.sidenav.state.open".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDotsidenavDotstateDotopen]
+    inline def carbonDotsidenavDotstateDotopen: typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDotsidenavDotstateDotopen = "carbon.sidenav.state.open".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDotsidenavDotstateDotopen]
   }
   
   type _To = ForwardRefReturn[HTMLElement, SideNavProps]

@@ -11,19 +11,15 @@ trait WhereNowParameters extends StObject {
 }
 object WhereNowParameters {
   
-  @scala.inline
-  def apply(): WhereNowParameters = {
+  inline def apply(): WhereNowParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WhereNowParameters]
   }
   
-  @scala.inline
-  implicit class WhereNowParametersMutableBuilder[Self <: WhereNowParameters] (val x: Self) extends AnyVal {
+  extension [Self <: WhereNowParameters](x: Self) {
     
-    @scala.inline
-    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
+    inline def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
   }
 }

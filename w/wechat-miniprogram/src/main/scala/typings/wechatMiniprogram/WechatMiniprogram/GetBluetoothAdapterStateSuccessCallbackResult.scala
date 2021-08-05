@@ -16,22 +16,17 @@ trait GetBluetoothAdapterStateSuccessCallbackResult extends StObject {
 }
 object GetBluetoothAdapterStateSuccessCallbackResult {
   
-  @scala.inline
-  def apply(available: Boolean, discovering: Boolean, errMsg: String): GetBluetoothAdapterStateSuccessCallbackResult = {
+  inline def apply(available: Boolean, discovering: Boolean, errMsg: String): GetBluetoothAdapterStateSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(available = available.asInstanceOf[js.Any], discovering = discovering.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBluetoothAdapterStateSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class GetBluetoothAdapterStateSuccessCallbackResultMutableBuilder[Self <: GetBluetoothAdapterStateSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetBluetoothAdapterStateSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setAvailable(value: Boolean): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
+    inline def setAvailable(value: Boolean): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscovering(value: Boolean): Self = StObject.set(x, "discovering", value.asInstanceOf[js.Any])
+    inline def setDiscovering(value: Boolean): Self = StObject.set(x, "discovering", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

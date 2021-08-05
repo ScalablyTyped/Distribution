@@ -19,16 +19,13 @@ trait TerritoryPattern extends StObject {
 }
 object TerritoryPattern {
   
-  @scala.inline
-  def apply(children: Double): TerritoryPattern = {
+  inline def apply(children: Double): TerritoryPattern = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.asInstanceOf[TerritoryPattern]
   }
   
-  @scala.inline
-  implicit class TerritoryPatternMutableBuilder[Self <: TerritoryPattern] (val x: Self) extends AnyVal {
+  extension [Self <: TerritoryPattern](x: Self) {
     
-    @scala.inline
-    def setChildren(value: Double): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Double): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
   }
 }

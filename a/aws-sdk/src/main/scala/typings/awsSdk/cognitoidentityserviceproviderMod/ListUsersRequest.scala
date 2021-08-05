@@ -33,43 +33,31 @@ trait ListUsersRequest extends StObject {
 }
 object ListUsersRequest {
   
-  @scala.inline
-  def apply(UserPoolId: UserPoolIdType): ListUsersRequest = {
+  inline def apply(UserPoolId: UserPoolIdType): ListUsersRequest = {
     val __obj = js.Dynamic.literal(UserPoolId = UserPoolId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListUsersRequest]
   }
   
-  @scala.inline
-  implicit class ListUsersRequestMutableBuilder[Self <: ListUsersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListUsersRequest](x: Self) {
     
-    @scala.inline
-    def setAttributesToGet(value: SearchedAttributeNamesListType): Self = StObject.set(x, "AttributesToGet", value.asInstanceOf[js.Any])
+    inline def setAttributesToGet(value: SearchedAttributeNamesListType): Self = StObject.set(x, "AttributesToGet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesToGetUndefined: Self = StObject.set(x, "AttributesToGet", js.undefined)
+    inline def setAttributesToGetUndefined: Self = StObject.set(x, "AttributesToGet", js.undefined)
     
-    @scala.inline
-    def setAttributesToGetVarargs(value: AttributeNameType*): Self = StObject.set(x, "AttributesToGet", js.Array(value :_*))
+    inline def setAttributesToGetVarargs(value: AttributeNameType*): Self = StObject.set(x, "AttributesToGet", js.Array(value :_*))
     
-    @scala.inline
-    def setFilter(value: UserFilterType): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: UserFilterType): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
     
-    @scala.inline
-    def setLimit(value: QueryLimitType): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: QueryLimitType): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setPaginationToken(value: SearchPaginationTokenType): Self = StObject.set(x, "PaginationToken", value.asInstanceOf[js.Any])
+    inline def setPaginationToken(value: SearchPaginationTokenType): Self = StObject.set(x, "PaginationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaginationTokenUndefined: Self = StObject.set(x, "PaginationToken", js.undefined)
+    inline def setPaginationTokenUndefined: Self = StObject.set(x, "PaginationToken", js.undefined)
     
-    @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
+    inline def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
   }
 }

@@ -19,22 +19,17 @@ trait MediaPlayerFailedEventArgs extends StObject {
 }
 object MediaPlayerFailedEventArgs {
   
-  @scala.inline
-  def apply(error: MediaPlayerError, errorMessage: String, extendedErrorCode: WinRTError): MediaPlayerFailedEventArgs = {
+  inline def apply(error: MediaPlayerError, errorMessage: String, extendedErrorCode: WinRTError): MediaPlayerFailedEventArgs = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], extendedErrorCode = extendedErrorCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaPlayerFailedEventArgs]
   }
   
-  @scala.inline
-  implicit class MediaPlayerFailedEventArgsMutableBuilder[Self <: MediaPlayerFailedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: MediaPlayerFailedEventArgs](x: Self) {
     
-    @scala.inline
-    def setError(value: MediaPlayerError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: MediaPlayerError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendedErrorCode(value: WinRTError): Self = StObject.set(x, "extendedErrorCode", value.asInstanceOf[js.Any])
+    inline def setExtendedErrorCode(value: WinRTError): Self = StObject.set(x, "extendedErrorCode", value.asInstanceOf[js.Any])
   }
 }

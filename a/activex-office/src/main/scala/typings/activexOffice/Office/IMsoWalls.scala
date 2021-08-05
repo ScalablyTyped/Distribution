@@ -22,7 +22,7 @@ trait IMsoWalls extends StObject {
   
   val Name: String
   
-  @JSName("Office.IMsoWalls_typekey")
+  /* private */ @JSName("Office.IMsoWalls_typekey")
   var OfficeDotIMsoWalls_typekey: IMsoWalls
   
   val Parent: js.Any
@@ -39,8 +39,7 @@ trait IMsoWalls extends StObject {
 }
 object IMsoWalls {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Border: IMsoBorder,
     ClearFormats: () => js.Any,
@@ -62,52 +61,36 @@ object IMsoWalls {
     __obj.asInstanceOf[IMsoWalls]
   }
   
-  @scala.inline
-  implicit class IMsoWallsMutableBuilder[Self <: IMsoWalls] (val x: Self) extends AnyVal {
+  extension [Self <: IMsoWalls](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorder(value: IMsoBorder): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: IMsoBorder): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearFormats(value: () => js.Any): Self = StObject.set(x, "ClearFormats", js.Any.fromFunction0(value))
+    inline def setClearFormats(value: () => js.Any): Self = StObject.set(x, "ClearFormats", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFill(value: ChartFillFormat): Self = StObject.set(x, "Fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: ChartFillFormat): Self = StObject.set(x, "Fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: IMsoChartFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: IMsoChartFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterior(value: IMsoInterior): Self = StObject.set(x, "Interior", value.asInstanceOf[js.Any])
+    inline def setInterior(value: IMsoInterior): Self = StObject.set(x, "Interior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotIMsoWalls_typekey(value: IMsoWalls): Self = StObject.set(x, "Office.IMsoWalls_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotIMsoWalls_typekey(value: IMsoWalls): Self = StObject.set(x, "Office.IMsoWalls_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaste(value: () => Unit): Self = StObject.set(x, "Paste", js.Any.fromFunction0(value))
+    inline def setPaste(value: () => Unit): Self = StObject.set(x, "Paste", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPictureType(value: js.Any): Self = StObject.set(x, "PictureType", value.asInstanceOf[js.Any])
+    inline def setPictureType(value: js.Any): Self = StObject.set(x, "PictureType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPictureUnit(value: js.Any): Self = StObject.set(x, "PictureUnit", value.asInstanceOf[js.Any])
+    inline def setPictureUnit(value: js.Any): Self = StObject.set(x, "PictureUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelect(value: () => js.Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
+    inline def setSelect(value: () => js.Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setThickness(value: Double): Self = StObject.set(x, "Thickness", value.asInstanceOf[js.Any])
+    inline def setThickness(value: Double): Self = StObject.set(x, "Thickness", value.asInstanceOf[js.Any])
   }
 }

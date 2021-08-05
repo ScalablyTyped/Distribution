@@ -19,40 +19,29 @@ trait DrawerHeaderProps extends StObject {
 }
 object DrawerHeaderProps {
   
-  @scala.inline
-  def apply(): DrawerHeaderProps = {
+  inline def apply(): DrawerHeaderProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DrawerHeaderProps]
   }
   
-  @scala.inline
-  implicit class DrawerHeaderPropsMutableBuilder[Self <: DrawerHeaderProps] (val x: Self) extends AnyVal {
+  extension [Self <: DrawerHeaderProps](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    @scala.inline
-    def setChildren(value: Element): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Element): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setImage(value: js.Array[Image]): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: js.Array[Image]): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
-    @scala.inline
-    def setImageVarargs(value: Image*): Self = StObject.set(x, "image", js.Array(value :_*))
+    inline def setImageVarargs(value: Image*): Self = StObject.set(x, "image", js.Array(value :_*))
     
-    @scala.inline
-    def setStyle(value: ContainerContentContainer): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: ContainerContentContainer): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

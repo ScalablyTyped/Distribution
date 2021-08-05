@@ -12,20 +12,16 @@ object anon {
   }
   object Multiline {
     
-    @scala.inline
-    def apply(): Multiline = {
+    inline def apply(): Multiline = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Multiline]
     }
     
-    @scala.inline
-    implicit class MultilineMutableBuilder[Self <: Multiline] (val x: Self) extends AnyVal {
+    extension [Self <: Multiline](x: Self) {
       
-      @scala.inline
-      def setMultiline(value: Boolean): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
+      inline def setMultiline(value: Boolean): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultilineUndefined: Self = StObject.set(x, "multiline", js.undefined)
+      inline def setMultilineUndefined: Self = StObject.set(x, "multiline", js.undefined)
     }
   }
 }

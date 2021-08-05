@@ -23,6 +23,5 @@ trait VRenderStack extends StObject {
 }
 object VRenderStack {
   
-  @scala.inline
-  def apply: VRenderStack = ^.asInstanceOf[js.Dynamic].selectDynamic("VRenderStack").asInstanceOf[VRenderStack]
+  inline def apply: VRenderStack = ^.asInstanceOf[js.Dynamic].selectDynamic("VRenderStack").asInstanceOf[VRenderStack]
 }

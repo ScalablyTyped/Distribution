@@ -28,8 +28,7 @@ trait CreatePublishingDestinationRequest extends StObject {
 }
 object CreatePublishingDestinationRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DestinationProperties: DestinationProperties,
     DestinationType: DestinationType,
     DetectorId: DetectorId
@@ -38,22 +37,16 @@ object CreatePublishingDestinationRequest {
     __obj.asInstanceOf[CreatePublishingDestinationRequest]
   }
   
-  @scala.inline
-  implicit class CreatePublishingDestinationRequestMutableBuilder[Self <: CreatePublishingDestinationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePublishingDestinationRequest](x: Self) {
     
-    @scala.inline
-    def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
     
-    @scala.inline
-    def setDestinationProperties(value: DestinationProperties): Self = StObject.set(x, "DestinationProperties", value.asInstanceOf[js.Any])
+    inline def setDestinationProperties(value: DestinationProperties): Self = StObject.set(x, "DestinationProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationType(value: DestinationType): Self = StObject.set(x, "DestinationType", value.asInstanceOf[js.Any])
+    inline def setDestinationType(value: DestinationType): Self = StObject.set(x, "DestinationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
+    inline def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
   }
 }

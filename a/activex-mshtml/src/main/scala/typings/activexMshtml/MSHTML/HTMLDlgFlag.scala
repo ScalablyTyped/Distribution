@@ -17,27 +17,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HTMLDlgFlag extends StObject
 object HTMLDlgFlag {
   
-  @scala.inline
-  def HTMLDlgFlag0: `0` = 0.asInstanceOf[`0`]
+  inline def HTMLDlgFlag0: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def HTMLDlgFlag1: `1` = 1.asInstanceOf[`1`]
+  inline def HTMLDlgFlag1: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def HTMLDlgFlagNo: `0` = 0.asInstanceOf[`0`]
+  inline def HTMLDlgFlagNo: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def HTMLDlgFlagNotSet: `-1` = -1.asInstanceOf[`-1`]
+  inline def HTMLDlgFlagNotSet: `-1` = -1.asInstanceOf[`-1`]
   
-  @scala.inline
-  def HTMLDlgFlagOff: `0` = 0.asInstanceOf[`0`]
+  inline def HTMLDlgFlagOff: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def HTMLDlgFlagOn: `1` = 1.asInstanceOf[`1`]
+  inline def HTMLDlgFlagOn: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def HTMLDlgFlagYes: `1` = 1.asInstanceOf[`1`]
+  inline def HTMLDlgFlagYes: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def HTMLDlgFlag_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def HTMLDlgFlag_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

@@ -70,8 +70,7 @@ trait KmlLatLonAltBox
 }
 object KmlLatLonAltBox {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
     equals_ : KmlObject => Boolean,
@@ -110,28 +109,20 @@ object KmlLatLonAltBox {
     __obj.asInstanceOf[KmlLatLonAltBox]
   }
   
-  @scala.inline
-  implicit class KmlLatLonAltBoxMutableBuilder[Self <: KmlLatLonAltBox] (val x: Self) extends AnyVal {
+  extension [Self <: KmlLatLonAltBox](x: Self) {
     
-    @scala.inline
-    def setGetAltitudeMode(value: () => KmlAltitudeModeEnum): Self = StObject.set(x, "getAltitudeMode", js.Any.fromFunction0(value))
+    inline def setGetAltitudeMode(value: () => KmlAltitudeModeEnum): Self = StObject.set(x, "getAltitudeMode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMaxAltitude(value: () => Double): Self = StObject.set(x, "getMaxAltitude", js.Any.fromFunction0(value))
+    inline def setGetMaxAltitude(value: () => Double): Self = StObject.set(x, "getMaxAltitude", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMinAltitude(value: () => Double): Self = StObject.set(x, "getMinAltitude", js.Any.fromFunction0(value))
+    inline def setGetMinAltitude(value: () => Double): Self = StObject.set(x, "getMinAltitude", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetAltBox(value: (Double, Double, Double, Double, Double, Double, Double, KmlAltitudeModeEnum) => Unit): Self = StObject.set(x, "setAltBox", js.Any.fromFunction8(value))
+    inline def setSetAltBox(value: (Double, Double, Double, Double, Double, Double, Double, KmlAltitudeModeEnum) => Unit): Self = StObject.set(x, "setAltBox", js.Any.fromFunction8(value))
     
-    @scala.inline
-    def setSetAltitudeMode(value: KmlAltitudeModeEnum => Double): Self = StObject.set(x, "setAltitudeMode", js.Any.fromFunction1(value))
+    inline def setSetAltitudeMode(value: KmlAltitudeModeEnum => Double): Self = StObject.set(x, "setAltitudeMode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMaxAltitude(value: Double => Unit): Self = StObject.set(x, "setMaxAltitude", js.Any.fromFunction1(value))
+    inline def setSetMaxAltitude(value: Double => Unit): Self = StObject.set(x, "setMaxAltitude", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMinAltitude(value: Double => Unit): Self = StObject.set(x, "setMinAltitude", js.Any.fromFunction1(value))
+    inline def setSetMinAltitude(value: Double => Unit): Self = StObject.set(x, "setMinAltitude", js.Any.fromFunction1(value))
   }
 }

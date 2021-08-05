@@ -87,8 +87,7 @@ trait XDebugging
 }
 object XDebugging {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     StackTrace: SafeArray[String],
     acquire: () => Unit,
     clearAllBreakPoints: String => Unit,
@@ -111,49 +110,34 @@ object XDebugging {
     __obj.asInstanceOf[XDebugging]
   }
   
-  @scala.inline
-  implicit class XDebuggingMutableBuilder[Self <: XDebugging] (val x: Self) extends AnyVal {
+  extension [Self <: XDebugging](x: Self) {
     
-    @scala.inline
-    def setClearAllBreakPoints(value: String => Unit): Self = StObject.set(x, "clearAllBreakPoints", js.Any.fromFunction1(value))
+    inline def setClearAllBreakPoints(value: String => Unit): Self = StObject.set(x, "clearAllBreakPoints", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDoContinue(value: () => Unit): Self = StObject.set(x, "doContinue", js.Any.fromFunction0(value))
+    inline def setDoContinue(value: () => Unit): Self = StObject.set(x, "doContinue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDumpVariable(value: (String, Double) => String): Self = StObject.set(x, "dumpVariable", js.Any.fromFunction2(value))
+    inline def setDumpVariable(value: (String, Double) => String): Self = StObject.set(x, "dumpVariable", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEval(value: (String, Double) => String): Self = StObject.set(x, "eval", js.Any.fromFunction2(value))
+    inline def setEval(value: (String, Double) => String): Self = StObject.set(x, "eval", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetContextInformation(value: Double => ContextInformation): Self = StObject.set(x, "getContextInformation", js.Any.fromFunction1(value))
+    inline def setGetContextInformation(value: Double => ContextInformation): Self = StObject.set(x, "getContextInformation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetStackTrace(value: () => SafeArray[String]): Self = StObject.set(x, "getStackTrace", js.Any.fromFunction0(value))
+    inline def setGetStackTrace(value: () => SafeArray[String]): Self = StObject.set(x, "getStackTrace", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsVariable(value: (String, Double) => Boolean): Self = StObject.set(x, "isVariable", js.Any.fromFunction2(value))
+    inline def setIsVariable(value: (String, Double) => Boolean): Self = StObject.set(x, "isVariable", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetBreakPoint(value: (String, Double, Boolean) => Double): Self = StObject.set(x, "setBreakPoint", js.Any.fromFunction3(value))
+    inline def setSetBreakPoint(value: (String, Double, Boolean) => Double): Self = StObject.set(x, "setBreakPoint", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSetVariable(value: (String, String, Double) => Unit): Self = StObject.set(x, "setVariable", js.Any.fromFunction3(value))
+    inline def setSetVariable(value: (String, String, Double) => Unit): Self = StObject.set(x, "setVariable", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setStackTrace(value: SafeArray[String]): Self = StObject.set(x, "StackTrace", value.asInstanceOf[js.Any])
+    inline def setStackTrace(value: SafeArray[String]): Self = StObject.set(x, "StackTrace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepIn(value: () => Unit): Self = StObject.set(x, "stepIn", js.Any.fromFunction0(value))
+    inline def setStepIn(value: () => Unit): Self = StObject.set(x, "stepIn", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStepOut(value: () => Unit): Self = StObject.set(x, "stepOut", js.Any.fromFunction0(value))
+    inline def setStepOut(value: () => Unit): Self = StObject.set(x, "stepOut", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStepOver(value: () => Unit): Self = StObject.set(x, "stepOver", js.Any.fromFunction0(value))
+    inline def setStepOver(value: () => Unit): Self = StObject.set(x, "stepOver", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+    inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
   }
 }

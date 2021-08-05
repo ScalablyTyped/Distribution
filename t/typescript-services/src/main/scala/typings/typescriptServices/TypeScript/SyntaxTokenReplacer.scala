@@ -8,14 +8,13 @@ trait SyntaxTokenReplacer
   extends StObject
      with SyntaxRewriter {
   
-  var token1: js.Any
+  /* private */ var token1: js.Any
   
-  var token2: js.Any
+  /* private */ var token2: js.Any
 }
 object SyntaxTokenReplacer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     token1: js.Any,
     token2: js.Any,
     visitArgumentList: ArgumentListSyntax => js.Any,
@@ -113,13 +112,10 @@ object SyntaxTokenReplacer {
     __obj.asInstanceOf[SyntaxTokenReplacer]
   }
   
-  @scala.inline
-  implicit class SyntaxTokenReplacerMutableBuilder[Self <: SyntaxTokenReplacer] (val x: Self) extends AnyVal {
+  extension [Self <: SyntaxTokenReplacer](x: Self) {
     
-    @scala.inline
-    def setToken1(value: js.Any): Self = StObject.set(x, "token1", value.asInstanceOf[js.Any])
+    inline def setToken1(value: js.Any): Self = StObject.set(x, "token1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToken2(value: js.Any): Self = StObject.set(x, "token2", value.asInstanceOf[js.Any])
+    inline def setToken2(value: js.Any): Self = StObject.set(x, "token2", value.asInstanceOf[js.Any])
   }
 }

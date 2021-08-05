@@ -48,7 +48,7 @@ trait Page extends StObject {
   
   var KeepScrollBarsVisible: fmScrollBars = js.native
   
-  @JSName("MSForms.Page_typekey")
+  /* private */ @JSName("MSForms.Page_typekey")
   var MSFormsDotPage_typekey: Page = js.native
   
   var Name: String = js.native

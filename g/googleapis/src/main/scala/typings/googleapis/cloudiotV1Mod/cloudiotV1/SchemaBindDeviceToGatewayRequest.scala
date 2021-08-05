@@ -24,25 +24,19 @@ trait SchemaBindDeviceToGatewayRequest extends StObject {
 }
 object SchemaBindDeviceToGatewayRequest {
   
-  @scala.inline
-  def apply(): SchemaBindDeviceToGatewayRequest = {
+  inline def apply(): SchemaBindDeviceToGatewayRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBindDeviceToGatewayRequest]
   }
   
-  @scala.inline
-  implicit class SchemaBindDeviceToGatewayRequestMutableBuilder[Self <: SchemaBindDeviceToGatewayRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBindDeviceToGatewayRequest](x: Self) {
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
+    inline def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
     
-    @scala.inline
-    def setGatewayId(value: String): Self = StObject.set(x, "gatewayId", value.asInstanceOf[js.Any])
+    inline def setGatewayId(value: String): Self = StObject.set(x, "gatewayId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayIdUndefined: Self = StObject.set(x, "gatewayId", js.undefined)
+    inline def setGatewayIdUndefined: Self = StObject.set(x, "gatewayId", js.undefined)
   }
 }

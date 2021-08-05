@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("vscode", "CodeActionKind")
 @js.native
 class CodeActionKind protected () extends StObject {
-  protected def this(value: String) = this()
+  /* private */ def this(value: String) = this()
   
   /**
     * Create a new kind by appending a more specific selector to the current kind.

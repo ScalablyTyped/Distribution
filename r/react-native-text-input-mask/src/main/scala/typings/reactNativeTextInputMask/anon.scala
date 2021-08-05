@@ -18,26 +18,20 @@ object anon {
   }
   object ContentSize {
     
-    @scala.inline
-    def apply(contentSize: Height, eventCount: Double, target: Double, text: String): ContentSize = {
+    inline def apply(contentSize: Height, eventCount: Double, target: Double, text: String): ContentSize = {
       val __obj = js.Dynamic.literal(contentSize = contentSize.asInstanceOf[js.Any], eventCount = eventCount.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[ContentSize]
     }
     
-    @scala.inline
-    implicit class ContentSizeMutableBuilder[Self <: ContentSize] (val x: Self) extends AnyVal {
+    extension [Self <: ContentSize](x: Self) {
       
-      @scala.inline
-      def setContentSize(value: Height): Self = StObject.set(x, "contentSize", value.asInstanceOf[js.Any])
+      inline def setContentSize(value: Height): Self = StObject.set(x, "contentSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventCount(value: Double): Self = StObject.set(x, "eventCount", value.asInstanceOf[js.Any])
+      inline def setEventCount(value: Double): Self = StObject.set(x, "eventCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: Double): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Double): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -47,17 +41,14 @@ object anon {
   }
   object ContentSizeHeight {
     
-    @scala.inline
-    def apply(contentSize: Height): ContentSizeHeight = {
+    inline def apply(contentSize: Height): ContentSizeHeight = {
       val __obj = js.Dynamic.literal(contentSize = contentSize.asInstanceOf[js.Any])
       __obj.asInstanceOf[ContentSizeHeight]
     }
     
-    @scala.inline
-    implicit class ContentSizeHeightMutableBuilder[Self <: ContentSizeHeight] (val x: Self) extends AnyVal {
+    extension [Self <: ContentSizeHeight](x: Self) {
       
-      @scala.inline
-      def setContentSize(value: Height): Self = StObject.set(x, "contentSize", value.asInstanceOf[js.Any])
+      inline def setContentSize(value: Height): Self = StObject.set(x, "contentSize", value.asInstanceOf[js.Any])
     }
   }
   
@@ -69,23 +60,18 @@ object anon {
   }
   object End {
     
-    @scala.inline
-    def apply(start: Double): End = {
+    inline def apply(start: Double): End = {
       val __obj = js.Dynamic.literal(start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[End]
     }
     
-    @scala.inline
-    implicit class EndMutableBuilder[Self <: End] (val x: Self) extends AnyVal {
+    extension [Self <: End](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
   
@@ -97,20 +83,16 @@ object anon {
   }
   object Height {
     
-    @scala.inline
-    def apply(height: Double, width: Double): Height = {
+    inline def apply(height: Double, width: Double): Height = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Height]
     }
     
-    @scala.inline
-    implicit class HeightMutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
+    extension [Self <: Height](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -120,17 +102,14 @@ object anon {
   }
   object NativeEvent {
     
-    @scala.inline
-    def apply(nativeEvent: ContentSize): NativeEvent = {
+    inline def apply(nativeEvent: ContentSize): NativeEvent = {
       val __obj = js.Dynamic.literal(nativeEvent = nativeEvent.asInstanceOf[js.Any])
       __obj.asInstanceOf[NativeEvent]
     }
     
-    @scala.inline
-    implicit class NativeEventMutableBuilder[Self <: NativeEvent] (val x: Self) extends AnyVal {
+    extension [Self <: NativeEvent](x: Self) {
       
-      @scala.inline
-      def setNativeEvent(value: ContentSize): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
+      inline def setNativeEvent(value: ContentSize): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
     }
   }
   
@@ -140,17 +119,14 @@ object anon {
   }
   object NativeEventContentSizeHeight {
     
-    @scala.inline
-    def apply(nativeEvent: ContentSizeHeight): NativeEventContentSizeHeight = {
+    inline def apply(nativeEvent: ContentSizeHeight): NativeEventContentSizeHeight = {
       val __obj = js.Dynamic.literal(nativeEvent = nativeEvent.asInstanceOf[js.Any])
       __obj.asInstanceOf[NativeEventContentSizeHeight]
     }
     
-    @scala.inline
-    implicit class NativeEventContentSizeHeightMutableBuilder[Self <: NativeEventContentSizeHeight] (val x: Self) extends AnyVal {
+    extension [Self <: NativeEventContentSizeHeight](x: Self) {
       
-      @scala.inline
-      def setNativeEvent(value: ContentSizeHeight): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
+      inline def setNativeEvent(value: ContentSizeHeight): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
     }
   }
   
@@ -160,17 +136,14 @@ object anon {
   }
   object NativeEventText {
     
-    @scala.inline
-    def apply(nativeEvent: Text): NativeEventText = {
+    inline def apply(nativeEvent: Text): NativeEventText = {
       val __obj = js.Dynamic.literal(nativeEvent = nativeEvent.asInstanceOf[js.Any])
       __obj.asInstanceOf[NativeEventText]
     }
     
-    @scala.inline
-    implicit class NativeEventTextMutableBuilder[Self <: NativeEventText] (val x: Self) extends AnyVal {
+    extension [Self <: NativeEventText](x: Self) {
       
-      @scala.inline
-      def setNativeEvent(value: Text): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
+      inline def setNativeEvent(value: Text): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
     }
   }
   
@@ -180,17 +153,14 @@ object anon {
   }
   object Text {
     
-    @scala.inline
-    def apply(text: String): Text = {
+    inline def apply(text: String): Text = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[Text]
     }
     
-    @scala.inline
-    implicit class TextMutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
+    extension [Self <: Text](x: Self) {
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
 }

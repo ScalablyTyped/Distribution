@@ -88,8 +88,7 @@ object mod {
   }
   object UndertakerRegistry {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       get: String => js.Any,
       init: js.Any => Unit,
       set: (String, js.Any) => js.Any,
@@ -99,20 +98,15 @@ object mod {
       __obj.asInstanceOf[UndertakerRegistry]
     }
     
-    @scala.inline
-    implicit class UndertakerRegistryMutableBuilder[Self <: UndertakerRegistry] (val x: Self) extends AnyVal {
+    extension [Self <: UndertakerRegistry](x: Self) {
       
-      @scala.inline
-      def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInit(value: js.Any => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+      inline def setInit(value: js.Any => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet(value: (String, js.Any) => js.Any): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (String, js.Any) => js.Any): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTasks(value: () => StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "tasks", js.Any.fromFunction0(value))
+      inline def setTasks(value: () => StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "tasks", js.Any.fromFunction0(value))
     }
   }
 }

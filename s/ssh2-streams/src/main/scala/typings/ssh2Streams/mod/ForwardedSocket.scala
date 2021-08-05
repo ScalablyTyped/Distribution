@@ -10,16 +10,13 @@ trait ForwardedSocket extends StObject {
 }
 object ForwardedSocket {
   
-  @scala.inline
-  def apply(socketPath: String): ForwardedSocket = {
+  inline def apply(socketPath: String): ForwardedSocket = {
     val __obj = js.Dynamic.literal(socketPath = socketPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[ForwardedSocket]
   }
   
-  @scala.inline
-  implicit class ForwardedSocketMutableBuilder[Self <: ForwardedSocket] (val x: Self) extends AnyVal {
+  extension [Self <: ForwardedSocket](x: Self) {
     
-    @scala.inline
-    def setSocketPath(value: String): Self = StObject.set(x, "socketPath", value.asInstanceOf[js.Any])
+    inline def setSocketPath(value: String): Self = StObject.set(x, "socketPath", value.asInstanceOf[js.Any])
   }
 }

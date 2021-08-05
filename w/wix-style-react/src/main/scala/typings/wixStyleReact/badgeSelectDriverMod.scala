@@ -15,17 +15,14 @@ object badgeSelectDriverMod {
   }
   object BadgeSelectDriver {
     
-    @scala.inline
-    def apply(clickAtOption: Double => Unit, exists: () => Boolean): BadgeSelectDriver = {
+    inline def apply(clickAtOption: Double => Unit, exists: () => Boolean): BadgeSelectDriver = {
       val __obj = js.Dynamic.literal(clickAtOption = js.Any.fromFunction1(clickAtOption), exists = js.Any.fromFunction0(exists))
       __obj.asInstanceOf[BadgeSelectDriver]
     }
     
-    @scala.inline
-    implicit class BadgeSelectDriverMutableBuilder[Self <: BadgeSelectDriver] (val x: Self) extends AnyVal {
+    extension [Self <: BadgeSelectDriver](x: Self) {
       
-      @scala.inline
-      def setClickAtOption(value: Double => Unit): Self = StObject.set(x, "clickAtOption", js.Any.fromFunction1(value))
+      inline def setClickAtOption(value: Double => Unit): Self = StObject.set(x, "clickAtOption", js.Any.fromFunction1(value))
     }
   }
 }

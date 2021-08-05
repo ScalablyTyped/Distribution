@@ -20,19 +20,14 @@ object rules {
   @js.native
   val ^ : typings.webix.webix.rules = js.native
   
-  @scala.inline
-  implicit class rulesMutableBuilder[Self <: rules] (val x: Self) extends AnyVal {
+  extension [Self <: rules](x: Self) {
     
-    @scala.inline
-    def setIsChecked(value: () => Boolean): Self = StObject.set(x, "isChecked", js.Any.fromFunction0(value))
+    inline def setIsChecked(value: () => Boolean): Self = StObject.set(x, "isChecked", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsEmail(value: () => Boolean): Self = StObject.set(x, "isEmail", js.Any.fromFunction0(value))
+    inline def setIsEmail(value: () => Boolean): Self = StObject.set(x, "isEmail", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsNotEmpty(value: () => Boolean): Self = StObject.set(x, "isNotEmpty", js.Any.fromFunction0(value))
+    inline def setIsNotEmpty(value: () => Boolean): Self = StObject.set(x, "isNotEmpty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsNumber(value: () => Boolean): Self = StObject.set(x, "isNumber", js.Any.fromFunction0(value))
+    inline def setIsNumber(value: () => Boolean): Self = StObject.set(x, "isNumber", js.Any.fromFunction0(value))
   }
 }

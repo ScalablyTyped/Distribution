@@ -34,8 +34,7 @@ trait FlashPresetPanel extends StObject {
 }
 object FlashPresetPanel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addNewItem: () => js.Any,
     applyPreset: () => js.Any,
     deleteFolder: () => js.Any,
@@ -54,46 +53,32 @@ object FlashPresetPanel {
     __obj.asInstanceOf[FlashPresetPanel]
   }
   
-  @scala.inline
-  implicit class FlashPresetPanelMutableBuilder[Self <: FlashPresetPanel] (val x: Self) extends AnyVal {
+  extension [Self <: FlashPresetPanel](x: Self) {
     
-    @scala.inline
-    def setAddNewItem(value: () => js.Any): Self = StObject.set(x, "addNewItem", js.Any.fromFunction0(value))
+    inline def setAddNewItem(value: () => js.Any): Self = StObject.set(x, "addNewItem", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setApplyPreset(value: () => js.Any): Self = StObject.set(x, "applyPreset", js.Any.fromFunction0(value))
+    inline def setApplyPreset(value: () => js.Any): Self = StObject.set(x, "applyPreset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDeleteFolder(value: () => js.Any): Self = StObject.set(x, "deleteFolder", js.Any.fromFunction0(value))
+    inline def setDeleteFolder(value: () => js.Any): Self = StObject.set(x, "deleteFolder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDeleteItem(value: () => js.Any): Self = StObject.set(x, "deleteItem", js.Any.fromFunction0(value))
+    inline def setDeleteItem(value: () => js.Any): Self = StObject.set(x, "deleteItem", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExpandFolder(value: () => js.Any): Self = StObject.set(x, "expandFolder", js.Any.fromFunction0(value))
+    inline def setExpandFolder(value: () => js.Any): Self = StObject.set(x, "expandFolder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExportItem(value: () => js.Any): Self = StObject.set(x, "exportItem", js.Any.fromFunction0(value))
+    inline def setExportItem(value: () => js.Any): Self = StObject.set(x, "exportItem", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFindItemIndex(value: () => js.Any): Self = StObject.set(x, "findItemIndex", js.Any.fromFunction0(value))
+    inline def setFindItemIndex(value: () => js.Any): Self = StObject.set(x, "findItemIndex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSelectedItems(value: () => js.Any): Self = StObject.set(x, "getSelectedItems", js.Any.fromFunction0(value))
+    inline def setGetSelectedItems(value: () => js.Any): Self = StObject.set(x, "getSelectedItems", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setImportItem(value: () => js.Any): Self = StObject.set(x, "importItem", js.Any.fromFunction0(value))
+    inline def setImportItem(value: () => js.Any): Self = StObject.set(x, "importItem", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMoveToFolder(value: () => js.Any): Self = StObject.set(x, "moveToFolder", js.Any.fromFunction0(value))
+    inline def setMoveToFolder(value: () => js.Any): Self = StObject.set(x, "moveToFolder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewFolder(value: () => js.Any): Self = StObject.set(x, "newFolder", js.Any.fromFunction0(value))
+    inline def setNewFolder(value: () => js.Any): Self = StObject.set(x, "newFolder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRenameItem(value: () => js.Any): Self = StObject.set(x, "renameItem", js.Any.fromFunction0(value))
+    inline def setRenameItem(value: () => js.Any): Self = StObject.set(x, "renameItem", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSelectItem(value: () => js.Any): Self = StObject.set(x, "selectItem", js.Any.fromFunction0(value))
+    inline def setSelectItem(value: () => js.Any): Self = StObject.set(x, "selectItem", js.Any.fromFunction0(value))
   }
 }

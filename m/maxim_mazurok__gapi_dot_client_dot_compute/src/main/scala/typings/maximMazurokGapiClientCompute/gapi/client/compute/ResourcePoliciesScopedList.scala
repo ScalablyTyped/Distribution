@@ -15,28 +15,21 @@ trait ResourcePoliciesScopedList extends StObject {
 }
 object ResourcePoliciesScopedList {
   
-  @scala.inline
-  def apply(): ResourcePoliciesScopedList = {
+  inline def apply(): ResourcePoliciesScopedList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourcePoliciesScopedList]
   }
   
-  @scala.inline
-  implicit class ResourcePoliciesScopedListMutableBuilder[Self <: ResourcePoliciesScopedList] (val x: Self) extends AnyVal {
+  extension [Self <: ResourcePoliciesScopedList](x: Self) {
     
-    @scala.inline
-    def setResourcePolicies(value: js.Array[ResourcePolicy]): Self = StObject.set(x, "resourcePolicies", value.asInstanceOf[js.Any])
+    inline def setResourcePolicies(value: js.Array[ResourcePolicy]): Self = StObject.set(x, "resourcePolicies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcePoliciesUndefined: Self = StObject.set(x, "resourcePolicies", js.undefined)
+    inline def setResourcePoliciesUndefined: Self = StObject.set(x, "resourcePolicies", js.undefined)
     
-    @scala.inline
-    def setResourcePoliciesVarargs(value: ResourcePolicy*): Self = StObject.set(x, "resourcePolicies", js.Array(value :_*))
+    inline def setResourcePoliciesVarargs(value: ResourcePolicy*): Self = StObject.set(x, "resourcePolicies", js.Array(value :_*))
     
-    @scala.inline
-    def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+    inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

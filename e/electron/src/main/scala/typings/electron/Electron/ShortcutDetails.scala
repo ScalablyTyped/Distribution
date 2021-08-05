@@ -46,52 +46,37 @@ trait ShortcutDetails extends StObject {
 }
 object ShortcutDetails {
   
-  @scala.inline
-  def apply(target: String): ShortcutDetails = {
+  inline def apply(target: String): ShortcutDetails = {
     val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShortcutDetails]
   }
   
-  @scala.inline
-  implicit class ShortcutDetailsMutableBuilder[Self <: ShortcutDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ShortcutDetails](x: Self) {
     
-    @scala.inline
-    def setAppUserModelId(value: String): Self = StObject.set(x, "appUserModelId", value.asInstanceOf[js.Any])
+    inline def setAppUserModelId(value: String): Self = StObject.set(x, "appUserModelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppUserModelIdUndefined: Self = StObject.set(x, "appUserModelId", js.undefined)
+    inline def setAppUserModelIdUndefined: Self = StObject.set(x, "appUserModelId", js.undefined)
     
-    @scala.inline
-    def setArgs(value: String): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: String): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+    inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    @scala.inline
-    def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+    inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+    inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconIndex(value: Double): Self = StObject.set(x, "iconIndex", value.asInstanceOf[js.Any])
+    inline def setIconIndex(value: Double): Self = StObject.set(x, "iconIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconIndexUndefined: Self = StObject.set(x, "iconIndex", js.undefined)
+    inline def setIconIndexUndefined: Self = StObject.set(x, "iconIndex", js.undefined)
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

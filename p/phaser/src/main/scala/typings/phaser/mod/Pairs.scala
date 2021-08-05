@@ -27,6 +27,5 @@ object Pairs {
     * @return {pairs} pairs
     */
   /* static member */
-  @scala.inline
-  def clear(pairs: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(pairs.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def clear(pairs: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(pairs.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

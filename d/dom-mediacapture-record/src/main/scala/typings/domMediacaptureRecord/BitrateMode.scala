@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BitrateMode extends StObject
 object BitrateMode {
   
-  @scala.inline
-  def cbr: typings.domMediacaptureRecord.domMediacaptureRecordStrings.cbr = "cbr".asInstanceOf[typings.domMediacaptureRecord.domMediacaptureRecordStrings.cbr]
+  inline def cbr: typings.domMediacaptureRecord.domMediacaptureRecordStrings.cbr = "cbr".asInstanceOf[typings.domMediacaptureRecord.domMediacaptureRecordStrings.cbr]
   
-  @scala.inline
-  def vbr: typings.domMediacaptureRecord.domMediacaptureRecordStrings.vbr = "vbr".asInstanceOf[typings.domMediacaptureRecord.domMediacaptureRecordStrings.vbr]
+  inline def vbr: typings.domMediacaptureRecord.domMediacaptureRecordStrings.vbr = "vbr".asInstanceOf[typings.domMediacaptureRecord.domMediacaptureRecordStrings.vbr]
 }

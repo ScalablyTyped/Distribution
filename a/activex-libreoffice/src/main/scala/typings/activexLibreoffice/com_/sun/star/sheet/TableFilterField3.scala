@@ -22,25 +22,19 @@ trait TableFilterField3 extends StObject {
 }
 object TableFilterField3 {
   
-  @scala.inline
-  def apply(Connection: FilterConnection, Field: Double, Operator: Double, Values: SafeArray[FilterFieldValue]): TableFilterField3 = {
+  inline def apply(Connection: FilterConnection, Field: Double, Operator: Double, Values: SafeArray[FilterFieldValue]): TableFilterField3 = {
     val __obj = js.Dynamic.literal(Connection = Connection.asInstanceOf[js.Any], Field = Field.asInstanceOf[js.Any], Operator = Operator.asInstanceOf[js.Any], Values = Values.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableFilterField3]
   }
   
-  @scala.inline
-  implicit class TableFilterField3MutableBuilder[Self <: TableFilterField3] (val x: Self) extends AnyVal {
+  extension [Self <: TableFilterField3](x: Self) {
     
-    @scala.inline
-    def setConnection(value: FilterConnection): Self = StObject.set(x, "Connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: FilterConnection): Self = StObject.set(x, "Connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setField(value: Double): Self = StObject.set(x, "Field", value.asInstanceOf[js.Any])
+    inline def setField(value: Double): Self = StObject.set(x, "Field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperator(value: Double): Self = StObject.set(x, "Operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: Double): Self = StObject.set(x, "Operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: SafeArray[FilterFieldValue]): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: SafeArray[FilterFieldValue]): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
   }
 }

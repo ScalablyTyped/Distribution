@@ -16,8 +16,7 @@ object mod {
     * direction('?') // => 'neutral'
     * ```
     */
-  @scala.inline
-  def apply(value: String): Direction = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Direction]
+  inline def apply(value: String): Direction = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Direction]
   
   @JSImport("direction", JSImport.Namespace)
   @js.native
@@ -31,13 +30,10 @@ object mod {
   trait Direction extends StObject
   object Direction {
     
-    @scala.inline
-    def ltr: typings.direction.directionStrings.ltr = "ltr".asInstanceOf[typings.direction.directionStrings.ltr]
+    inline def ltr: typings.direction.directionStrings.ltr = "ltr".asInstanceOf[typings.direction.directionStrings.ltr]
     
-    @scala.inline
-    def neutral: typings.direction.directionStrings.neutral = "neutral".asInstanceOf[typings.direction.directionStrings.neutral]
+    inline def neutral: typings.direction.directionStrings.neutral = "neutral".asInstanceOf[typings.direction.directionStrings.neutral]
     
-    @scala.inline
-    def rtl: typings.direction.directionStrings.rtl = "rtl".asInstanceOf[typings.direction.directionStrings.rtl]
+    inline def rtl: typings.direction.directionStrings.rtl = "rtl".asInstanceOf[typings.direction.directionStrings.rtl]
   }
 }

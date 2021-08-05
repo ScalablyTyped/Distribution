@@ -33,8 +33,7 @@ trait ExternalRenderer
 }
 object ExternalRenderer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -43,25 +42,18 @@ object ExternalRenderer {
     __obj.asInstanceOf[ExternalRenderer]
   }
   
-  @scala.inline
-  implicit class ExternalRendererMutableBuilder[Self <: ExternalRenderer] (val x: Self) extends AnyVal {
+  extension [Self <: ExternalRenderer](x: Self) {
     
-    @scala.inline
-    def setDispose(value: /* context */ js.UndefOr[RenderContext] => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction1(value))
+    inline def setDispose(value: /* context */ js.UndefOr[RenderContext] => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDisposeUndefined: Self = StObject.set(x, "dispose", js.undefined)
+    inline def setDisposeUndefined: Self = StObject.set(x, "dispose", js.undefined)
     
-    @scala.inline
-    def setRender(value: /* context */ js.UndefOr[RenderContext] => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+    inline def setRender(value: /* context */ js.UndefOr[RenderContext] => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+    inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     
-    @scala.inline
-    def setSetup(value: /* context */ js.UndefOr[RenderContext] => Unit): Self = StObject.set(x, "setup", js.Any.fromFunction1(value))
+    inline def setSetup(value: /* context */ js.UndefOr[RenderContext] => Unit): Self = StObject.set(x, "setup", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetupUndefined: Self = StObject.set(x, "setup", js.undefined)
+    inline def setSetupUndefined: Self = StObject.set(x, "setup", js.undefined)
   }
 }

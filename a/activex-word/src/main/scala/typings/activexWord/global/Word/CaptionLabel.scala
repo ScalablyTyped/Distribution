@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.CaptionLabel")
 @js.native
-class CaptionLabel protected ()
+/* private */ class CaptionLabel ()
   extends StObject
      with typings.activexWord.Word.CaptionLabel {
   
@@ -50,7 +50,7 @@ class CaptionLabel protected ()
   /* CompleteClass */
   var Separator: WdSeparatorType = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.CaptionLabel_typekey")
   var WordDotCaptionLabel_typekey: typings.activexWord.Word.CaptionLabel = js.native
 }

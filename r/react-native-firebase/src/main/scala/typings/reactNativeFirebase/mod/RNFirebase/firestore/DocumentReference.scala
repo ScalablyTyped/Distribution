@@ -78,23 +78,18 @@ object DocumentReference {
   }
   object Observer {
     
-    @scala.inline
-    def apply(next: /* documentSnapshot */ DocumentSnapshot => Unit): Observer = {
+    inline def apply(next: /* documentSnapshot */ DocumentSnapshot => Unit): Observer = {
       val __obj = js.Dynamic.literal(next = js.Any.fromFunction1(next))
       __obj.asInstanceOf[Observer]
     }
     
-    @scala.inline
-    implicit class ObserverMutableBuilder[Self <: Observer] (val x: Self) extends AnyVal {
+    extension [Self <: Observer](x: Self) {
       
-      @scala.inline
-      def setError(value: /* err */ SnapshotError => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* err */ SnapshotError => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setNext(value: /* documentSnapshot */ DocumentSnapshot => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
+      inline def setNext(value: /* documentSnapshot */ DocumentSnapshot => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
     }
   }
   

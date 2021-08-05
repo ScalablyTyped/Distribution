@@ -29,8 +29,7 @@ trait PipeableFoldableWithIndex1[F /* <: /* import warning: transforms.QualifyRe
 }
 object PipeableFoldableWithIndex1 {
   
-  @scala.inline
-  def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, I](
+  inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, I](
     foldMap: Monoid[js.Any] => js.Function1[
       /* f */ js.Function1[/* a */ js.Any, js.Any], 
       js.Function1[
@@ -66,11 +65,9 @@ object PipeableFoldableWithIndex1 {
     __obj.asInstanceOf[PipeableFoldableWithIndex1[F, I]]
   }
   
-  @scala.inline
-  implicit class PipeableFoldableWithIndex1MutableBuilder[Self <: PipeableFoldableWithIndex1[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, I] (val x: Self & (PipeableFoldableWithIndex1[F, I])) extends AnyVal {
+  extension [Self <: PipeableFoldableWithIndex1[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, I](x: Self & (PipeableFoldableWithIndex1[F, I])) {
     
-    @scala.inline
-    def setFoldMapWithIndex(
+    inline def setFoldMapWithIndex(
       value: Monoid[js.Any] => js.Function1[
           /* f */ js.Function2[/* i */ I, /* a */ js.Any, js.Any], 
           js.Function1[
@@ -80,16 +77,14 @@ object PipeableFoldableWithIndex1 {
         ]
     ): Self = StObject.set(x, "foldMapWithIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReduceRightWithIndex(
+    inline def setReduceRightWithIndex(
       value: (js.Any, js.Function3[/* i */ I, js.Any, js.Any, js.Any]) => js.Function1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ /* fa */ js.Any, 
           js.Any
         ]
     ): Self = StObject.set(x, "reduceRightWithIndex", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setReduceWithIndex(
+    inline def setReduceWithIndex(
       value: (js.Any, js.Function3[/* i */ I, js.Any, js.Any, js.Any]) => js.Function1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ /* fa */ js.Any, 
           js.Any

@@ -13,22 +13,17 @@ trait Claims extends StObject {
 }
 object Claims {
   
-  @scala.inline
-  def apply(claims: StringDictionary[String | Double | Boolean | js.Array[String]], scopes: js.Array[String]): Claims = {
+  inline def apply(claims: StringDictionary[String | Double | Boolean | js.Array[String]], scopes: js.Array[String]): Claims = {
     val __obj = js.Dynamic.literal(claims = claims.asInstanceOf[js.Any], scopes = scopes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Claims]
   }
   
-  @scala.inline
-  implicit class ClaimsMutableBuilder[Self <: Claims] (val x: Self) extends AnyVal {
+  extension [Self <: Claims](x: Self) {
     
-    @scala.inline
-    def setClaims(value: StringDictionary[String | Double | Boolean | js.Array[String]]): Self = StObject.set(x, "claims", value.asInstanceOf[js.Any])
+    inline def setClaims(value: StringDictionary[String | Double | Boolean | js.Array[String]]): Self = StObject.set(x, "claims", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+    inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+    inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
   }
 }

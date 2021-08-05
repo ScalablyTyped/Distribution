@@ -87,89 +87,62 @@ object typesKeyMetadataMod {
   }
   object KeyMetadata {
     
-    @scala.inline
-    def apply(KeyId: String): KeyMetadata = {
+    inline def apply(KeyId: String): KeyMetadata = {
       val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeyMetadata]
     }
     
-    @scala.inline
-    implicit class KeyMetadataMutableBuilder[Self <: KeyMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: KeyMetadata](x: Self) {
       
-      @scala.inline
-      def setAWSAccountId(value: String): Self = StObject.set(x, "AWSAccountId", value.asInstanceOf[js.Any])
+      inline def setAWSAccountId(value: String): Self = StObject.set(x, "AWSAccountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAWSAccountIdUndefined: Self = StObject.set(x, "AWSAccountId", js.undefined)
+      inline def setAWSAccountIdUndefined: Self = StObject.set(x, "AWSAccountId", js.undefined)
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
       
-      @scala.inline
-      def setCreationDate(value: Date | String | Double): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+      inline def setCreationDate(value: Date | String | Double): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
+      inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
       
-      @scala.inline
-      def setDeletionDate(value: Date | String | Double): Self = StObject.set(x, "DeletionDate", value.asInstanceOf[js.Any])
+      inline def setDeletionDate(value: Date | String | Double): Self = StObject.set(x, "DeletionDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeletionDateUndefined: Self = StObject.set(x, "DeletionDate", js.undefined)
+      inline def setDeletionDateUndefined: Self = StObject.set(x, "DeletionDate", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
       
-      @scala.inline
-      def setExpirationModel(value: KEY_MATERIAL_EXPIRES | KEY_MATERIAL_DOES_NOT_EXPIRE | String): Self = StObject.set(x, "ExpirationModel", value.asInstanceOf[js.Any])
+      inline def setExpirationModel(value: KEY_MATERIAL_EXPIRES | KEY_MATERIAL_DOES_NOT_EXPIRE | String): Self = StObject.set(x, "ExpirationModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpirationModelUndefined: Self = StObject.set(x, "ExpirationModel", js.undefined)
+      inline def setExpirationModelUndefined: Self = StObject.set(x, "ExpirationModel", js.undefined)
       
-      @scala.inline
-      def setKeyId(value: String): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
+      inline def setKeyId(value: String): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyManager(value: AWS | CUSTOMER | String): Self = StObject.set(x, "KeyManager", value.asInstanceOf[js.Any])
+      inline def setKeyManager(value: AWS | CUSTOMER | String): Self = StObject.set(x, "KeyManager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyManagerUndefined: Self = StObject.set(x, "KeyManager", js.undefined)
+      inline def setKeyManagerUndefined: Self = StObject.set(x, "KeyManager", js.undefined)
       
-      @scala.inline
-      def setKeyState(value: Enabled | Disabled | PendingDeletion | PendingImport | String): Self = StObject.set(x, "KeyState", value.asInstanceOf[js.Any])
+      inline def setKeyState(value: Enabled | Disabled | PendingDeletion | PendingImport | String): Self = StObject.set(x, "KeyState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyStateUndefined: Self = StObject.set(x, "KeyState", js.undefined)
+      inline def setKeyStateUndefined: Self = StObject.set(x, "KeyState", js.undefined)
       
-      @scala.inline
-      def setKeyUsage(value: ENCRYPT_DECRYPT | String): Self = StObject.set(x, "KeyUsage", value.asInstanceOf[js.Any])
+      inline def setKeyUsage(value: ENCRYPT_DECRYPT | String): Self = StObject.set(x, "KeyUsage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUsageUndefined: Self = StObject.set(x, "KeyUsage", js.undefined)
+      inline def setKeyUsageUndefined: Self = StObject.set(x, "KeyUsage", js.undefined)
       
-      @scala.inline
-      def setOrigin(value: AWS_KMS | EXTERNAL | String): Self = StObject.set(x, "Origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: AWS_KMS | EXTERNAL | String): Self = StObject.set(x, "Origin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginUndefined: Self = StObject.set(x, "Origin", js.undefined)
+      inline def setOriginUndefined: Self = StObject.set(x, "Origin", js.undefined)
       
-      @scala.inline
-      def setValidTo(value: Date | String | Double): Self = StObject.set(x, "ValidTo", value.asInstanceOf[js.Any])
+      inline def setValidTo(value: Date | String | Double): Self = StObject.set(x, "ValidTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidToUndefined: Self = StObject.set(x, "ValidTo", js.undefined)
+      inline def setValidToUndefined: Self = StObject.set(x, "ValidTo", js.undefined)
     }
   }
   
@@ -197,32 +170,24 @@ object typesKeyMetadataMod {
   }
   object UnmarshalledKeyMetadata {
     
-    @scala.inline
-    def apply(KeyId: String): UnmarshalledKeyMetadata = {
+    inline def apply(KeyId: String): UnmarshalledKeyMetadata = {
       val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnmarshalledKeyMetadata]
     }
     
-    @scala.inline
-    implicit class UnmarshalledKeyMetadataMutableBuilder[Self <: UnmarshalledKeyMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledKeyMetadata](x: Self) {
       
-      @scala.inline
-      def setCreationDate(value: Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+      inline def setCreationDate(value: Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
+      inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
       
-      @scala.inline
-      def setDeletionDate(value: Date): Self = StObject.set(x, "DeletionDate", value.asInstanceOf[js.Any])
+      inline def setDeletionDate(value: Date): Self = StObject.set(x, "DeletionDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeletionDateUndefined: Self = StObject.set(x, "DeletionDate", js.undefined)
+      inline def setDeletionDateUndefined: Self = StObject.set(x, "DeletionDate", js.undefined)
       
-      @scala.inline
-      def setValidTo(value: Date): Self = StObject.set(x, "ValidTo", value.asInstanceOf[js.Any])
+      inline def setValidTo(value: Date): Self = StObject.set(x, "ValidTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidToUndefined: Self = StObject.set(x, "ValidTo", js.undefined)
+      inline def setValidToUndefined: Self = StObject.set(x, "ValidTo", js.undefined)
     }
   }
 }

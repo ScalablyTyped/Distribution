@@ -16,8 +16,7 @@ trait IRandomAccessStreamReferenceStatics extends StObject {
 }
 object IRandomAccessStreamReferenceStatics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createFromFile: IStorageFile => RandomAccessStreamReference,
     createFromStream: IRandomAccessStream => RandomAccessStreamReference,
     createFromUri: Uri => RandomAccessStreamReference
@@ -26,16 +25,12 @@ object IRandomAccessStreamReferenceStatics {
     __obj.asInstanceOf[IRandomAccessStreamReferenceStatics]
   }
   
-  @scala.inline
-  implicit class IRandomAccessStreamReferenceStaticsMutableBuilder[Self <: IRandomAccessStreamReferenceStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IRandomAccessStreamReferenceStatics](x: Self) {
     
-    @scala.inline
-    def setCreateFromFile(value: IStorageFile => RandomAccessStreamReference): Self = StObject.set(x, "createFromFile", js.Any.fromFunction1(value))
+    inline def setCreateFromFile(value: IStorageFile => RandomAccessStreamReference): Self = StObject.set(x, "createFromFile", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateFromStream(value: IRandomAccessStream => RandomAccessStreamReference): Self = StObject.set(x, "createFromStream", js.Any.fromFunction1(value))
+    inline def setCreateFromStream(value: IRandomAccessStream => RandomAccessStreamReference): Self = StObject.set(x, "createFromStream", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateFromUri(value: Uri => RandomAccessStreamReference): Self = StObject.set(x, "createFromUri", js.Any.fromFunction1(value))
+    inline def setCreateFromUri(value: Uri => RandomAccessStreamReference): Self = StObject.set(x, "createFromUri", js.Any.fromFunction1(value))
   }
 }

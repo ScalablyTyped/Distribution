@@ -15,19 +15,15 @@ trait LineOfSightTargetProperties extends StObject {
 }
 object LineOfSightTargetProperties {
   
-  @scala.inline
-  def apply(): LineOfSightTargetProperties = {
+  inline def apply(): LineOfSightTargetProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LineOfSightTargetProperties]
   }
   
-  @scala.inline
-  implicit class LineOfSightTargetPropertiesMutableBuilder[Self <: LineOfSightTargetProperties] (val x: Self) extends AnyVal {
+  extension [Self <: LineOfSightTargetProperties](x: Self) {
     
-    @scala.inline
-    def setLocation(value: PointProperties): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: PointProperties): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
   }
 }

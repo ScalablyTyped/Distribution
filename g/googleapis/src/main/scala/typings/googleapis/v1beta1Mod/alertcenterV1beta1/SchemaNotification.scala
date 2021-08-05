@@ -17,19 +17,15 @@ trait SchemaNotification extends StObject {
 }
 object SchemaNotification {
   
-  @scala.inline
-  def apply(): SchemaNotification = {
+  inline def apply(): SchemaNotification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaNotification]
   }
   
-  @scala.inline
-  implicit class SchemaNotificationMutableBuilder[Self <: SchemaNotification] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaNotification](x: Self) {
     
-    @scala.inline
-    def setCloudPubsubTopic(value: SchemaCloudPubsubTopic): Self = StObject.set(x, "cloudPubsubTopic", value.asInstanceOf[js.Any])
+    inline def setCloudPubsubTopic(value: SchemaCloudPubsubTopic): Self = StObject.set(x, "cloudPubsubTopic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudPubsubTopicUndefined: Self = StObject.set(x, "cloudPubsubTopic", js.undefined)
+    inline def setCloudPubsubTopicUndefined: Self = StObject.set(x, "cloudPubsubTopic", js.undefined)
   }
 }

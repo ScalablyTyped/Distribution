@@ -13,19 +13,15 @@ trait SkipWaitTimeForInstanceTerminationInput extends StObject {
 }
 object SkipWaitTimeForInstanceTerminationInput {
   
-  @scala.inline
-  def apply(): SkipWaitTimeForInstanceTerminationInput = {
+  inline def apply(): SkipWaitTimeForInstanceTerminationInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SkipWaitTimeForInstanceTerminationInput]
   }
   
-  @scala.inline
-  implicit class SkipWaitTimeForInstanceTerminationInputMutableBuilder[Self <: SkipWaitTimeForInstanceTerminationInput] (val x: Self) extends AnyVal {
+  extension [Self <: SkipWaitTimeForInstanceTerminationInput](x: Self) {
     
-    @scala.inline
-    def setDeploymentId(value: DeploymentId): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
+    inline def setDeploymentId(value: DeploymentId): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentIdUndefined: Self = StObject.set(x, "deploymentId", js.undefined)
+    inline def setDeploymentIdUndefined: Self = StObject.set(x, "deploymentId", js.undefined)
   }
 }

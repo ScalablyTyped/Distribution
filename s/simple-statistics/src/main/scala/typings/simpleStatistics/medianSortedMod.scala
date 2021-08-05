@@ -10,6 +10,5 @@ object medianSortedMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(sorted: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(sorted.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def default(sorted: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(sorted.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

@@ -28,28 +28,21 @@ trait ClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification extends StOb
 }
 object ClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification {
   
-  @scala.inline
-  def apply(allocationStrategy: String, timeoutAction: String, timeoutDurationMinutes: Double): ClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification = {
+  inline def apply(allocationStrategy: String, timeoutAction: String, timeoutDurationMinutes: Double): ClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification = {
     val __obj = js.Dynamic.literal(allocationStrategy = allocationStrategy.asInstanceOf[js.Any], timeoutAction = timeoutAction.asInstanceOf[js.Any], timeoutDurationMinutes = timeoutDurationMinutes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification]
   }
   
-  @scala.inline
-  implicit class ClusterCoreInstanceFleetLaunchSpecificationsSpotSpecificationMutableBuilder[Self <: ClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification](x: Self) {
     
-    @scala.inline
-    def setAllocationStrategy(value: String): Self = StObject.set(x, "allocationStrategy", value.asInstanceOf[js.Any])
+    inline def setAllocationStrategy(value: String): Self = StObject.set(x, "allocationStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockDurationMinutes(value: Double): Self = StObject.set(x, "blockDurationMinutes", value.asInstanceOf[js.Any])
+    inline def setBlockDurationMinutes(value: Double): Self = StObject.set(x, "blockDurationMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockDurationMinutesUndefined: Self = StObject.set(x, "blockDurationMinutes", js.undefined)
+    inline def setBlockDurationMinutesUndefined: Self = StObject.set(x, "blockDurationMinutes", js.undefined)
     
-    @scala.inline
-    def setTimeoutAction(value: String): Self = StObject.set(x, "timeoutAction", value.asInstanceOf[js.Any])
+    inline def setTimeoutAction(value: String): Self = StObject.set(x, "timeoutAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutDurationMinutes(value: Double): Self = StObject.set(x, "timeoutDurationMinutes", value.asInstanceOf[js.Any])
+    inline def setTimeoutDurationMinutes(value: Double): Self = StObject.set(x, "timeoutDurationMinutes", value.asInstanceOf[js.Any])
   }
 }

@@ -12,7 +12,7 @@ object sparseSnapshotTreeMod {
   @js.native
   class SparseSnapshotTree () extends StObject {
     
-    val children: js.Any = js.native
+    /* private */ val children: js.Any = js.native
     
     /**
       * Gets the node stored at the given path if one exists.
@@ -55,6 +55,6 @@ object sparseSnapshotTreeMod {
       */
     def remember(path: Path, data: Node): Unit = js.native
     
-    var value: js.Any = js.native
+    /* private */ var value: js.Any = js.native
   }
 }

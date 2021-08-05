@@ -13,25 +13,19 @@ trait PartialColor extends StObject {
 }
 object PartialColor {
   
-  @scala.inline
-  def apply(): PartialColor = {
+  inline def apply(): PartialColor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialColor]
   }
   
-  @scala.inline
-  implicit class PartialColorMutableBuilder[Self <: PartialColor] (val x: Self) extends AnyVal {
+  extension [Self <: PartialColor](x: Self) {
     
-    @scala.inline
-    def setArgb(value: String): Self = StObject.set(x, "argb", value.asInstanceOf[js.Any])
+    inline def setArgb(value: String): Self = StObject.set(x, "argb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgbUndefined: Self = StObject.set(x, "argb", js.undefined)
+    inline def setArgbUndefined: Self = StObject.set(x, "argb", js.undefined)
     
-    @scala.inline
-    def setTheme(value: Double): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: Double): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

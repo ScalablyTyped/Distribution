@@ -12,22 +12,17 @@ trait AppString extends StObject {
 }
 object AppString {
   
-  @scala.inline
-  def apply(app: String): AppString = {
+  inline def apply(app: String): AppString = {
     val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppString]
   }
   
-  @scala.inline
-  implicit class AppStringMutableBuilder[Self <: AppString] (val x: Self) extends AnyVal {
+  extension [Self <: AppString](x: Self) {
     
-    @scala.inline
-    def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+    inline def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppArgs(value: String): Self = StObject.set(x, "appArgs", value.asInstanceOf[js.Any])
+    inline def setAppArgs(value: String): Self = StObject.set(x, "appArgs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppArgsUndefined: Self = StObject.set(x, "appArgs", js.undefined)
+    inline def setAppArgsUndefined: Self = StObject.set(x, "appArgs", js.undefined)
   }
 }

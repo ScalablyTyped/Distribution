@@ -26,8 +26,7 @@ object MediaStreamSample {
     * @return The sample created from the data in buffer.
     */
   /* static member */
-  @scala.inline
-  def createFromBuffer(buffer: IBuffer, timestamp: Double): typings.winrtUwp.Windows.Media.Core.MediaStreamSample = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromBuffer")(buffer.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.Media.Core.MediaStreamSample]
+  inline def createFromBuffer(buffer: IBuffer, timestamp: Double): typings.winrtUwp.Windows.Media.Core.MediaStreamSample = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromBuffer")(buffer.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.Media.Core.MediaStreamSample]
   
   /**
     * Asynchronously creates a MediaStreamSample from an IInputStream .
@@ -37,6 +36,5 @@ object MediaStreamSample {
     * @return When this method completes, it returns the new file as a MediaStreamSample .
     */
   /* static member */
-  @scala.inline
-  def createFromStreamAsync(stream: IInputStream, count: Double, timestamp: Double): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Core.MediaStreamSample] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromStreamAsync")(stream.asInstanceOf[js.Any], count.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Core.MediaStreamSample]]
+  inline def createFromStreamAsync(stream: IInputStream, count: Double, timestamp: Double): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Core.MediaStreamSample] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromStreamAsync")(stream.asInstanceOf[js.Any], count.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Core.MediaStreamSample]]
 }

@@ -18,25 +18,19 @@ trait ModifyLoadBalancerAttributesOutput extends StObject {
 }
 object ModifyLoadBalancerAttributesOutput {
   
-  @scala.inline
-  def apply(): ModifyLoadBalancerAttributesOutput = {
+  inline def apply(): ModifyLoadBalancerAttributesOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyLoadBalancerAttributesOutput]
   }
   
-  @scala.inline
-  implicit class ModifyLoadBalancerAttributesOutputMutableBuilder[Self <: ModifyLoadBalancerAttributesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyLoadBalancerAttributesOutput](x: Self) {
     
-    @scala.inline
-    def setLoadBalancerAttributes(value: LoadBalancerAttributes): Self = StObject.set(x, "LoadBalancerAttributes", value.asInstanceOf[js.Any])
+    inline def setLoadBalancerAttributes(value: LoadBalancerAttributes): Self = StObject.set(x, "LoadBalancerAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadBalancerAttributesUndefined: Self = StObject.set(x, "LoadBalancerAttributes", js.undefined)
+    inline def setLoadBalancerAttributesUndefined: Self = StObject.set(x, "LoadBalancerAttributes", js.undefined)
     
-    @scala.inline
-    def setLoadBalancerName(value: AccessPointName): Self = StObject.set(x, "LoadBalancerName", value.asInstanceOf[js.Any])
+    inline def setLoadBalancerName(value: AccessPointName): Self = StObject.set(x, "LoadBalancerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadBalancerNameUndefined: Self = StObject.set(x, "LoadBalancerName", js.undefined)
+    inline def setLoadBalancerNameUndefined: Self = StObject.set(x, "LoadBalancerName", js.undefined)
   }
 }

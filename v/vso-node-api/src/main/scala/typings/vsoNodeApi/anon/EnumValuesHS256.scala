@@ -10,16 +10,13 @@ trait EnumValuesHS256 extends StObject {
 }
 object EnumValuesHS256 {
   
-  @scala.inline
-  def apply(enumValues: HS256): EnumValuesHS256 = {
+  inline def apply(enumValues: HS256): EnumValuesHS256 = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesHS256]
   }
   
-  @scala.inline
-  implicit class EnumValuesHS256MutableBuilder[Self <: EnumValuesHS256] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesHS256](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: HS256): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: HS256): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait IgnoreOwnVariables extends StObject {
 }
 object IgnoreOwnVariables {
   
-  @scala.inline
-  def apply(ignoreOwnVariables: Boolean): IgnoreOwnVariables = {
+  inline def apply(ignoreOwnVariables: Boolean): IgnoreOwnVariables = {
     val __obj = js.Dynamic.literal(ignoreOwnVariables = ignoreOwnVariables.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgnoreOwnVariables]
   }
   
-  @scala.inline
-  implicit class IgnoreOwnVariablesMutableBuilder[Self <: IgnoreOwnVariables] (val x: Self) extends AnyVal {
+  extension [Self <: IgnoreOwnVariables](x: Self) {
     
-    @scala.inline
-    def setIgnoreOwnVariables(value: Boolean): Self = StObject.set(x, "ignoreOwnVariables", value.asInstanceOf[js.Any])
+    inline def setIgnoreOwnVariables(value: Boolean): Self = StObject.set(x, "ignoreOwnVariables", value.asInstanceOf[js.Any])
   }
 }

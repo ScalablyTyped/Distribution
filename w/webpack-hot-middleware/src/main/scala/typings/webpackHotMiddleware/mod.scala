@@ -9,12 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.ICompiler */ js.Any
   ): NextHandleFunction & EventStream = ^.asInstanceOf[js.Dynamic].apply(compiler.asInstanceOf[js.Any]).asInstanceOf[NextHandleFunction & EventStream]
-  @scala.inline
-  def apply(
+  inline def apply(
     compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.ICompiler */ js.Any,
     options: MiddlewareOptions
   ): NextHandleFunction & EventStream = (^.asInstanceOf[js.Dynamic].apply(compiler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[NextHandleFunction & EventStream]
@@ -51,86 +49,60 @@ object mod {
   }
   object ClientOptions {
     
-    @scala.inline
-    def apply(): ClientOptions = {
+    inline def apply(): ClientOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientOptions]
     }
     
-    @scala.inline
-    implicit class ClientOptionsMutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ClientOptions](x: Self) {
       
-      @scala.inline
-      def setAnsiColors(value: StringDictionary[js.Any]): Self = StObject.set(x, "ansiColors", value.asInstanceOf[js.Any])
+      inline def setAnsiColors(value: StringDictionary[js.Any]): Self = StObject.set(x, "ansiColors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnsiColorsUndefined: Self = StObject.set(x, "ansiColors", js.undefined)
+      inline def setAnsiColorsUndefined: Self = StObject.set(x, "ansiColors", js.undefined)
       
-      @scala.inline
-      def setAutoConnect(value: Boolean): Self = StObject.set(x, "autoConnect", value.asInstanceOf[js.Any])
+      inline def setAutoConnect(value: Boolean): Self = StObject.set(x, "autoConnect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoConnectUndefined: Self = StObject.set(x, "autoConnect", js.undefined)
+      inline def setAutoConnectUndefined: Self = StObject.set(x, "autoConnect", js.undefined)
       
-      @scala.inline
-      def setDynamicPublicPath(value: Boolean): Self = StObject.set(x, "dynamicPublicPath", value.asInstanceOf[js.Any])
+      inline def setDynamicPublicPath(value: Boolean): Self = StObject.set(x, "dynamicPublicPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDynamicPublicPathUndefined: Self = StObject.set(x, "dynamicPublicPath", js.undefined)
+      inline def setDynamicPublicPathUndefined: Self = StObject.set(x, "dynamicPublicPath", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNoInfo(value: Boolean): Self = StObject.set(x, "noInfo", value.asInstanceOf[js.Any])
+      inline def setNoInfo(value: Boolean): Self = StObject.set(x, "noInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoInfoUndefined: Self = StObject.set(x, "noInfo", js.undefined)
+      inline def setNoInfoUndefined: Self = StObject.set(x, "noInfo", js.undefined)
       
-      @scala.inline
-      def setOverlay(value: Boolean): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+      inline def setOverlay(value: Boolean): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayStyles(value: StringDictionary[js.Any]): Self = StObject.set(x, "overlayStyles", value.asInstanceOf[js.Any])
+      inline def setOverlayStyles(value: StringDictionary[js.Any]): Self = StObject.set(x, "overlayStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayStylesUndefined: Self = StObject.set(x, "overlayStyles", js.undefined)
+      inline def setOverlayStylesUndefined: Self = StObject.set(x, "overlayStyles", js.undefined)
       
-      @scala.inline
-      def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
+      inline def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
       
-      @scala.inline
-      def setOverlayWarnings(value: Boolean): Self = StObject.set(x, "overlayWarnings", value.asInstanceOf[js.Any])
+      inline def setOverlayWarnings(value: Boolean): Self = StObject.set(x, "overlayWarnings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayWarningsUndefined: Self = StObject.set(x, "overlayWarnings", js.undefined)
+      inline def setOverlayWarningsUndefined: Self = StObject.set(x, "overlayWarnings", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
+      inline def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
+      inline def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
       
-      @scala.inline
-      def setReload(value: Boolean): Self = StObject.set(x, "reload", value.asInstanceOf[js.Any])
+      inline def setReload(value: Boolean): Self = StObject.set(x, "reload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReloadUndefined: Self = StObject.set(x, "reload", js.undefined)
+      inline def setReloadUndefined: Self = StObject.set(x, "reload", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -142,20 +114,16 @@ object mod {
   }
   object EventStream {
     
-    @scala.inline
-    def apply(close: () => Unit, publish: js.Any => Unit): EventStream = {
+    inline def apply(close: () => Unit, publish: js.Any => Unit): EventStream = {
       val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), publish = js.Any.fromFunction1(publish))
       __obj.asInstanceOf[EventStream]
     }
     
-    @scala.inline
-    implicit class EventStreamMutableBuilder[Self <: EventStream] (val x: Self) extends AnyVal {
+    extension [Self <: EventStream](x: Self) {
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPublish(value: js.Any => Unit): Self = StObject.set(x, "publish", js.Any.fromFunction1(value))
+      inline def setPublish(value: js.Any => Unit): Self = StObject.set(x, "publish", js.Any.fromFunction1(value))
     }
   }
   
@@ -176,32 +144,24 @@ object mod {
   }
   object MiddlewareOptions {
     
-    @scala.inline
-    def apply(): MiddlewareOptions = {
+    inline def apply(): MiddlewareOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MiddlewareOptions]
     }
     
-    @scala.inline
-    implicit class MiddlewareOptionsMutableBuilder[Self <: MiddlewareOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MiddlewareOptions](x: Self) {
       
-      @scala.inline
-      def setHeartbeat(value: Double): Self = StObject.set(x, "heartbeat", value.asInstanceOf[js.Any])
+      inline def setHeartbeat(value: Double): Self = StObject.set(x, "heartbeat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeartbeatUndefined: Self = StObject.set(x, "heartbeat", js.undefined)
+      inline def setHeartbeatUndefined: Self = StObject.set(x, "heartbeat", js.undefined)
       
-      @scala.inline
-      def setLog(value: `false` | Logger): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: `false` | Logger): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+      inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     }
   }
 }

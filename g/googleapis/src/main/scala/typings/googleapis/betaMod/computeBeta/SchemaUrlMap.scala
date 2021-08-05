@@ -91,88 +91,61 @@ trait SchemaUrlMap extends StObject {
 }
 object SchemaUrlMap {
   
-  @scala.inline
-  def apply(): SchemaUrlMap = {
+  inline def apply(): SchemaUrlMap = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUrlMap]
   }
   
-  @scala.inline
-  implicit class SchemaUrlMapMutableBuilder[Self <: SchemaUrlMap] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUrlMap](x: Self) {
     
-    @scala.inline
-    def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimestampUndefined: Self = StObject.set(x, "creationTimestamp", js.undefined)
+    inline def setCreationTimestampUndefined: Self = StObject.set(x, "creationTimestamp", js.undefined)
     
-    @scala.inline
-    def setDefaultService(value: String): Self = StObject.set(x, "defaultService", value.asInstanceOf[js.Any])
+    inline def setDefaultService(value: String): Self = StObject.set(x, "defaultService", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultServiceUndefined: Self = StObject.set(x, "defaultService", js.undefined)
+    inline def setDefaultServiceUndefined: Self = StObject.set(x, "defaultService", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+    inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
+    inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
     
-    @scala.inline
-    def setHostRules(value: js.Array[SchemaHostRule]): Self = StObject.set(x, "hostRules", value.asInstanceOf[js.Any])
+    inline def setHostRules(value: js.Array[SchemaHostRule]): Self = StObject.set(x, "hostRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostRulesUndefined: Self = StObject.set(x, "hostRules", js.undefined)
+    inline def setHostRulesUndefined: Self = StObject.set(x, "hostRules", js.undefined)
     
-    @scala.inline
-    def setHostRulesVarargs(value: SchemaHostRule*): Self = StObject.set(x, "hostRules", js.Array(value :_*))
+    inline def setHostRulesVarargs(value: SchemaHostRule*): Self = StObject.set(x, "hostRules", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPathMatchers(value: js.Array[SchemaPathMatcher]): Self = StObject.set(x, "pathMatchers", value.asInstanceOf[js.Any])
+    inline def setPathMatchers(value: js.Array[SchemaPathMatcher]): Self = StObject.set(x, "pathMatchers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathMatchersUndefined: Self = StObject.set(x, "pathMatchers", js.undefined)
+    inline def setPathMatchersUndefined: Self = StObject.set(x, "pathMatchers", js.undefined)
     
-    @scala.inline
-    def setPathMatchersVarargs(value: SchemaPathMatcher*): Self = StObject.set(x, "pathMatchers", js.Array(value :_*))
+    inline def setPathMatchersVarargs(value: SchemaPathMatcher*): Self = StObject.set(x, "pathMatchers", js.Array(value :_*))
     
-    @scala.inline
-    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+    inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+    inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
-    @scala.inline
-    def setTests(value: js.Array[SchemaUrlMapTest]): Self = StObject.set(x, "tests", value.asInstanceOf[js.Any])
+    inline def setTests(value: js.Array[SchemaUrlMapTest]): Self = StObject.set(x, "tests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestsUndefined: Self = StObject.set(x, "tests", js.undefined)
+    inline def setTestsUndefined: Self = StObject.set(x, "tests", js.undefined)
     
-    @scala.inline
-    def setTestsVarargs(value: SchemaUrlMapTest*): Self = StObject.set(x, "tests", js.Array(value :_*))
+    inline def setTestsVarargs(value: SchemaUrlMapTest*): Self = StObject.set(x, "tests", js.Array(value :_*))
   }
 }

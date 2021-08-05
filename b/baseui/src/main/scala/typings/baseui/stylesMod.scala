@@ -11,8 +11,7 @@ object stylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def expandBorderStyles(
+  inline def expandBorderStyles(
     borderStyles: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Border */ js.Any
   ): StyleObject = ^.asInstanceOf[js.Dynamic].applyDynamic("expandBorderStyles")(borderStyles.asInstanceOf[js.Any]).asInstanceOf[StyleObject]
 }

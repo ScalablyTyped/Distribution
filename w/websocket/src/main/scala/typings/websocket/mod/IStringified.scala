@@ -10,17 +10,14 @@ trait IStringified extends StObject {
 }
 object IStringified {
   
-  @scala.inline
-  def apply(toString_ : /* repeated */ js.Any => String): IStringified = {
+  inline def apply(toString_ : /* repeated */ js.Any => String): IStringified = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("toString")(js.Any.fromFunction1(toString_))
     __obj.asInstanceOf[IStringified]
   }
   
-  @scala.inline
-  implicit class IStringifiedMutableBuilder[Self <: IStringified] (val x: Self) extends AnyVal {
+  extension [Self <: IStringified](x: Self) {
     
-    @scala.inline
-    def setToString_(value: /* repeated */ js.Any => String): Self = StObject.set(x, "toString", js.Any.fromFunction1(value))
+    inline def setToString_(value: /* repeated */ js.Any => String): Self = StObject.set(x, "toString", js.Any.fromFunction1(value))
   }
 }

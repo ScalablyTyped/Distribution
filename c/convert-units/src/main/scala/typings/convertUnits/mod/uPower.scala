@@ -16,18 +16,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait uPower extends StObject
 object uPower {
   
-  @scala.inline
-  def GW: typings.convertUnits.convertUnitsStrings.GW = "GW".asInstanceOf[typings.convertUnits.convertUnitsStrings.GW]
+  inline def GW: typings.convertUnits.convertUnitsStrings.GW = "GW".asInstanceOf[typings.convertUnits.convertUnitsStrings.GW]
   
-  @scala.inline
-  def MW: typings.convertUnits.convertUnitsStrings.MW = "MW".asInstanceOf[typings.convertUnits.convertUnitsStrings.MW]
+  inline def MW: typings.convertUnits.convertUnitsStrings.MW = "MW".asInstanceOf[typings.convertUnits.convertUnitsStrings.MW]
   
-  @scala.inline
-  def W: typings.convertUnits.convertUnitsStrings.W = "W".asInstanceOf[typings.convertUnits.convertUnitsStrings.W]
+  inline def W: typings.convertUnits.convertUnitsStrings.W = "W".asInstanceOf[typings.convertUnits.convertUnitsStrings.W]
   
-  @scala.inline
-  def kW: typings.convertUnits.convertUnitsStrings.kW = "kW".asInstanceOf[typings.convertUnits.convertUnitsStrings.kW]
+  inline def kW: typings.convertUnits.convertUnitsStrings.kW = "kW".asInstanceOf[typings.convertUnits.convertUnitsStrings.kW]
   
-  @scala.inline
-  def mW: mW_ = "mW".asInstanceOf[mW_]
+  inline def mW: mW_ = "mW".asInstanceOf[mW_]
 }

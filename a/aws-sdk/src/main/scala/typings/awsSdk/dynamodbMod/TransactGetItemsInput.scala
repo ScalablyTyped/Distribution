@@ -18,25 +18,19 @@ trait TransactGetItemsInput extends StObject {
 }
 object TransactGetItemsInput {
   
-  @scala.inline
-  def apply(TransactItems: TransactGetItemList): TransactGetItemsInput = {
+  inline def apply(TransactItems: TransactGetItemList): TransactGetItemsInput = {
     val __obj = js.Dynamic.literal(TransactItems = TransactItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransactGetItemsInput]
   }
   
-  @scala.inline
-  implicit class TransactGetItemsInputMutableBuilder[Self <: TransactGetItemsInput] (val x: Self) extends AnyVal {
+  extension [Self <: TransactGetItemsInput](x: Self) {
     
-    @scala.inline
-    def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = StObject.set(x, "ReturnConsumedCapacity", value.asInstanceOf[js.Any])
+    inline def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = StObject.set(x, "ReturnConsumedCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnConsumedCapacityUndefined: Self = StObject.set(x, "ReturnConsumedCapacity", js.undefined)
+    inline def setReturnConsumedCapacityUndefined: Self = StObject.set(x, "ReturnConsumedCapacity", js.undefined)
     
-    @scala.inline
-    def setTransactItems(value: TransactGetItemList): Self = StObject.set(x, "TransactItems", value.asInstanceOf[js.Any])
+    inline def setTransactItems(value: TransactGetItemList): Self = StObject.set(x, "TransactItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactItemsVarargs(value: TransactGetItem*): Self = StObject.set(x, "TransactItems", js.Array(value :_*))
+    inline def setTransactItemsVarargs(value: TransactGetItem*): Self = StObject.set(x, "TransactItems", js.Array(value :_*))
   }
 }

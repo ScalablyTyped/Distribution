@@ -9,23 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(buffer: Buffer): ImagesStatic = ^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any]).asInstanceOf[ImagesStatic]
-  @scala.inline
-  def apply(buffer: Buffer, start: Double): ImagesStatic = (^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[ImagesStatic]
-  @scala.inline
-  def apply(buffer: Buffer, start: Double, end: Double): ImagesStatic = (^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[ImagesStatic]
-  @scala.inline
-  def apply(buffer: Buffer, start: Unit, end: Double): ImagesStatic = (^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[ImagesStatic]
-  @scala.inline
-  def apply(file: String): ImagesStatic = ^.asInstanceOf[js.Dynamic].apply(file.asInstanceOf[js.Any]).asInstanceOf[ImagesStatic]
-  @scala.inline
-  def apply(image: ImagesStatic): ImagesStatic = ^.asInstanceOf[js.Dynamic].apply(image.asInstanceOf[js.Any]).asInstanceOf[ImagesStatic]
+  inline def apply(buffer: Buffer): ImagesStatic = ^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any]).asInstanceOf[ImagesStatic]
+  inline def apply(buffer: Buffer, start: Double): ImagesStatic = (^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[ImagesStatic]
+  inline def apply(buffer: Buffer, start: Double, end: Double): ImagesStatic = (^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[ImagesStatic]
+  inline def apply(buffer: Buffer, start: Unit, end: Double): ImagesStatic = (^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[ImagesStatic]
+  inline def apply(file: String): ImagesStatic = ^.asInstanceOf[js.Dynamic].apply(file.asInstanceOf[js.Any]).asInstanceOf[ImagesStatic]
+  inline def apply(image: ImagesStatic): ImagesStatic = ^.asInstanceOf[js.Dynamic].apply(image.asInstanceOf[js.Any]).asInstanceOf[ImagesStatic]
   // tslint:disable-line unified-signatures
-  @scala.inline
-  def apply(image: ImagesStatic, x: Double, y: Double, width: Double, height: Double): ImagesStatic = (^.asInstanceOf[js.Dynamic].apply(image.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[ImagesStatic]
-  @scala.inline
-  def apply(width: Double, height: Double): ImagesStatic = (^.asInstanceOf[js.Dynamic].apply(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[ImagesStatic]
+  inline def apply(image: ImagesStatic, x: Double, y: Double, width: Double, height: Double): ImagesStatic = (^.asInstanceOf[js.Dynamic].apply(image.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[ImagesStatic]
+  inline def apply(width: Double, height: Double): ImagesStatic = (^.asInstanceOf[js.Dynamic].apply(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[ImagesStatic]
   
   @JSImport("images", JSImport.Namespace)
   @js.native
@@ -88,22 +80,16 @@ object mod {
   trait SupportType extends StObject
   object SupportType {
     
-    @scala.inline
-    def bmp: typings.images.imagesStrings.bmp = "bmp".asInstanceOf[typings.images.imagesStrings.bmp]
+    inline def bmp: typings.images.imagesStrings.bmp = "bmp".asInstanceOf[typings.images.imagesStrings.bmp]
     
-    @scala.inline
-    def gif: typings.images.imagesStrings.gif = "gif".asInstanceOf[typings.images.imagesStrings.gif]
+    inline def gif: typings.images.imagesStrings.gif = "gif".asInstanceOf[typings.images.imagesStrings.gif]
     
-    @scala.inline
-    def jpg: typings.images.imagesStrings.jpg = "jpg".asInstanceOf[typings.images.imagesStrings.jpg]
+    inline def jpg: typings.images.imagesStrings.jpg = "jpg".asInstanceOf[typings.images.imagesStrings.jpg]
     
-    @scala.inline
-    def png: typings.images.imagesStrings.png = "png".asInstanceOf[typings.images.imagesStrings.png]
+    inline def png: typings.images.imagesStrings.png = "png".asInstanceOf[typings.images.imagesStrings.png]
     
-    @scala.inline
-    def raw: typings.images.imagesStrings.raw = "raw".asInstanceOf[typings.images.imagesStrings.raw]
+    inline def raw: typings.images.imagesStrings.raw = "raw".asInstanceOf[typings.images.imagesStrings.raw]
     
-    @scala.inline
-    def webp: typings.images.imagesStrings.webp = "webp".asInstanceOf[typings.images.imagesStrings.webp]
+    inline def webp: typings.images.imagesStrings.webp = "webp".asInstanceOf[typings.images.imagesStrings.webp]
   }
 }

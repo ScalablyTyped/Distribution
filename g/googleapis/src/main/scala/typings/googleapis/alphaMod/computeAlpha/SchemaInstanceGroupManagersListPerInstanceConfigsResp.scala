@@ -28,34 +28,25 @@ trait SchemaInstanceGroupManagersListPerInstanceConfigsResp extends StObject {
 }
 object SchemaInstanceGroupManagersListPerInstanceConfigsResp {
   
-  @scala.inline
-  def apply(): SchemaInstanceGroupManagersListPerInstanceConfigsResp = {
+  inline def apply(): SchemaInstanceGroupManagersListPerInstanceConfigsResp = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInstanceGroupManagersListPerInstanceConfigsResp]
   }
   
-  @scala.inline
-  implicit class SchemaInstanceGroupManagersListPerInstanceConfigsRespMutableBuilder[Self <: SchemaInstanceGroupManagersListPerInstanceConfigsResp] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInstanceGroupManagersListPerInstanceConfigsResp](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[SchemaPerInstanceConfig]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[SchemaPerInstanceConfig]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: SchemaPerInstanceConfig*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: SchemaPerInstanceConfig*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+    inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

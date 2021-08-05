@@ -57,28 +57,22 @@ object baseModelMod {
   }
   object BaseModelListener {
     
-    @scala.inline
-    def apply(): BaseModelListener = {
+    inline def apply(): BaseModelListener = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BaseModelListener]
     }
     
-    @scala.inline
-    implicit class BaseModelListenerMutableBuilder[Self <: BaseModelListener] (val x: Self) extends AnyVal {
+    extension [Self <: BaseModelListener](x: Self) {
       
-      @scala.inline
-      def setEntityRemoved(
+      inline def setEntityRemoved(
         value: /* event */ BaseEvent[BaseModel[BaseEntity[BaseListener[js.Any]], BaseModelListener]] => Unit
       ): Self = StObject.set(x, "entityRemoved", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEntityRemovedUndefined: Self = StObject.set(x, "entityRemoved", js.undefined)
+      inline def setEntityRemovedUndefined: Self = StObject.set(x, "entityRemoved", js.undefined)
       
-      @scala.inline
-      def setSelectionChanged(value: /* event */ BaseEventBaseModelBaseEnt => Unit): Self = StObject.set(x, "selectionChanged", js.Any.fromFunction1(value))
+      inline def setSelectionChanged(value: /* event */ BaseEventBaseModelBaseEnt => Unit): Self = StObject.set(x, "selectionChanged", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSelectionChangedUndefined: Self = StObject.set(x, "selectionChanged", js.undefined)
+      inline def setSelectionChangedUndefined: Self = StObject.set(x, "selectionChanged", js.undefined)
     }
   }
 }

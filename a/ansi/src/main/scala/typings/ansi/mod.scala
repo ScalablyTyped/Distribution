@@ -8,10 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(stream: Stream): Cursor = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[Cursor]
-  @scala.inline
-  def apply(stream: Stream, options: CursorOptions): Cursor = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Cursor]
+  inline def apply(stream: Stream): Cursor = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[Cursor]
+  inline def apply(stream: Stream, options: CursorOptions): Cursor = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Cursor]
   
   @JSImport("ansi", JSImport.Namespace)
   @js.native
@@ -238,20 +236,16 @@ object mod {
   }
   object CursorOptions {
     
-    @scala.inline
-    def apply(buffering: Boolean, enabled: Boolean): CursorOptions = {
+    inline def apply(buffering: Boolean, enabled: Boolean): CursorOptions = {
       val __obj = js.Dynamic.literal(buffering = buffering.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any])
       __obj.asInstanceOf[CursorOptions]
     }
     
-    @scala.inline
-    implicit class CursorOptionsMutableBuilder[Self <: CursorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CursorOptions](x: Self) {
       
-      @scala.inline
-      def setBuffering(value: Boolean): Self = StObject.set(x, "buffering", value.asInstanceOf[js.Any])
+      inline def setBuffering(value: Boolean): Self = StObject.set(x, "buffering", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     }
   }
 }

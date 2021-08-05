@@ -19,19 +19,15 @@ trait SchemaAppBundle extends StObject {
 }
 object SchemaAppBundle {
   
-  @scala.inline
-  def apply(): SchemaAppBundle = {
+  inline def apply(): SchemaAppBundle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAppBundle]
   }
   
-  @scala.inline
-  implicit class SchemaAppBundleMutableBuilder[Self <: SchemaAppBundle] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAppBundle](x: Self) {
     
-    @scala.inline
-    def setBundleLocation(value: SchemaFileReference): Self = StObject.set(x, "bundleLocation", value.asInstanceOf[js.Any])
+    inline def setBundleLocation(value: SchemaFileReference): Self = StObject.set(x, "bundleLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBundleLocationUndefined: Self = StObject.set(x, "bundleLocation", js.undefined)
+    inline def setBundleLocationUndefined: Self = StObject.set(x, "bundleLocation", js.undefined)
   }
 }

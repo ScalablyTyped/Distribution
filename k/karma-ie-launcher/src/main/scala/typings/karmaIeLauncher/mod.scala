@@ -14,20 +14,16 @@ object mod {
   }
   object CustomLauncher {
     
-    @scala.inline
-    def apply(): CustomLauncher = {
+    inline def apply(): CustomLauncher = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CustomLauncher]
     }
     
-    @scala.inline
-    implicit class CustomLauncherMutableBuilder[Self <: CustomLauncher] (val x: Self) extends AnyVal {
+    extension [Self <: CustomLauncher](x: Self) {
       
-      @scala.inline
-      def `setX-ua-compatible`(value: String): Self = StObject.set(x, "x-ua-compatible", value.asInstanceOf[js.Any])
+      inline def `setX-ua-compatible`(value: String): Self = StObject.set(x, "x-ua-compatible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setX-ua-compatibleUndefined`: Self = StObject.set(x, "x-ua-compatible", js.undefined)
+      inline def `setX-ua-compatibleUndefined`: Self = StObject.set(x, "x-ua-compatible", js.undefined)
     }
   }
 }

@@ -23,28 +23,21 @@ trait UpdateRequestValidatorRequest extends StObject {
 }
 object UpdateRequestValidatorRequest {
   
-  @scala.inline
-  def apply(requestValidatorId: String, restApiId: String): UpdateRequestValidatorRequest = {
+  inline def apply(requestValidatorId: String, restApiId: String): UpdateRequestValidatorRequest = {
     val __obj = js.Dynamic.literal(requestValidatorId = requestValidatorId.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRequestValidatorRequest]
   }
   
-  @scala.inline
-  implicit class UpdateRequestValidatorRequestMutableBuilder[Self <: UpdateRequestValidatorRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateRequestValidatorRequest](x: Self) {
     
-    @scala.inline
-    def setPatchOperations(value: ListOfPatchOperation): Self = StObject.set(x, "patchOperations", value.asInstanceOf[js.Any])
+    inline def setPatchOperations(value: ListOfPatchOperation): Self = StObject.set(x, "patchOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatchOperationsUndefined: Self = StObject.set(x, "patchOperations", js.undefined)
+    inline def setPatchOperationsUndefined: Self = StObject.set(x, "patchOperations", js.undefined)
     
-    @scala.inline
-    def setPatchOperationsVarargs(value: PatchOperation*): Self = StObject.set(x, "patchOperations", js.Array(value :_*))
+    inline def setPatchOperationsVarargs(value: PatchOperation*): Self = StObject.set(x, "patchOperations", js.Array(value :_*))
     
-    @scala.inline
-    def setRequestValidatorId(value: String): Self = StObject.set(x, "requestValidatorId", value.asInstanceOf[js.Any])
+    inline def setRequestValidatorId(value: String): Self = StObject.set(x, "requestValidatorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
+    inline def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
   }
 }

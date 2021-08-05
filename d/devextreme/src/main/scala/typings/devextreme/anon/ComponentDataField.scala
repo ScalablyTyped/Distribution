@@ -18,37 +18,27 @@ trait ComponentDataField extends StObject {
 }
 object ComponentDataField {
   
-  @scala.inline
-  def apply(): ComponentDataField = {
+  inline def apply(): ComponentDataField = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ComponentDataField]
   }
   
-  @scala.inline
-  implicit class ComponentDataFieldMutableBuilder[Self <: ComponentDataField] (val x: Self) extends AnyVal {
+  extension [Self <: ComponentDataField](x: Self) {
     
-    @scala.inline
-    def setComponent(value: dxForm): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: dxForm): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
-    @scala.inline
-    def setDataField(value: String): Self = StObject.set(x, "dataField", value.asInstanceOf[js.Any])
+    inline def setDataField(value: String): Self = StObject.set(x, "dataField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataFieldUndefined: Self = StObject.set(x, "dataField", js.undefined)
+    inline def setDataFieldUndefined: Self = StObject.set(x, "dataField", js.undefined)
     
-    @scala.inline
-    def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    @scala.inline
-    def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
   }
 }

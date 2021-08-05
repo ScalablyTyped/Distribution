@@ -20,40 +20,29 @@ trait TransformCaller extends StObject {
 }
 object TransformCaller {
   
-  @scala.inline
-  def apply(name: String): TransformCaller = {
+  inline def apply(name: String): TransformCaller = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransformCaller]
   }
   
-  @scala.inline
-  implicit class TransformCallerMutableBuilder[Self <: TransformCaller] (val x: Self) extends AnyVal {
+  extension [Self <: TransformCaller](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsDynamicImport(value: Boolean): Self = StObject.set(x, "supportsDynamicImport", value.asInstanceOf[js.Any])
+    inline def setSupportsDynamicImport(value: Boolean): Self = StObject.set(x, "supportsDynamicImport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsDynamicImportUndefined: Self = StObject.set(x, "supportsDynamicImport", js.undefined)
+    inline def setSupportsDynamicImportUndefined: Self = StObject.set(x, "supportsDynamicImport", js.undefined)
     
-    @scala.inline
-    def setSupportsExportNamespaceFrom(value: Boolean): Self = StObject.set(x, "supportsExportNamespaceFrom", value.asInstanceOf[js.Any])
+    inline def setSupportsExportNamespaceFrom(value: Boolean): Self = StObject.set(x, "supportsExportNamespaceFrom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsExportNamespaceFromUndefined: Self = StObject.set(x, "supportsExportNamespaceFrom", js.undefined)
+    inline def setSupportsExportNamespaceFromUndefined: Self = StObject.set(x, "supportsExportNamespaceFrom", js.undefined)
     
-    @scala.inline
-    def setSupportsStaticESM(value: Boolean): Self = StObject.set(x, "supportsStaticESM", value.asInstanceOf[js.Any])
+    inline def setSupportsStaticESM(value: Boolean): Self = StObject.set(x, "supportsStaticESM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsStaticESMUndefined: Self = StObject.set(x, "supportsStaticESM", js.undefined)
+    inline def setSupportsStaticESMUndefined: Self = StObject.set(x, "supportsStaticESM", js.undefined)
     
-    @scala.inline
-    def setSupportsTopLevelAwait(value: Boolean): Self = StObject.set(x, "supportsTopLevelAwait", value.asInstanceOf[js.Any])
+    inline def setSupportsTopLevelAwait(value: Boolean): Self = StObject.set(x, "supportsTopLevelAwait", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsTopLevelAwaitUndefined: Self = StObject.set(x, "supportsTopLevelAwait", js.undefined)
+    inline def setSupportsTopLevelAwaitUndefined: Self = StObject.set(x, "supportsTopLevelAwait", js.undefined)
   }
 }

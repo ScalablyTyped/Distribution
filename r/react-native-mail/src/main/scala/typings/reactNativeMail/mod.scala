@@ -13,8 +13,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def mail(options: Attachment, callback: js.Function2[/* error */ String, /* event */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mail")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def mail(options: Attachment, callback: js.Function2[/* error */ String, /* event */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mail")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   object Mailer {
@@ -23,7 +22,6 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def mail(options: Attachment, callback: js.Function2[/* error */ String, /* event */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mail")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def mail(options: Attachment, callback: js.Function2[/* error */ String, /* event */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mail")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

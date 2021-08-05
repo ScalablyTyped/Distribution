@@ -10,19 +10,15 @@ trait UseResizeColumnsOptions[D /* <: js.Object */] extends StObject {
 }
 object UseResizeColumnsOptions {
   
-  @scala.inline
-  def apply[D /* <: js.Object */](): UseResizeColumnsOptions[D] = {
+  inline def apply[D /* <: js.Object */](): UseResizeColumnsOptions[D] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UseResizeColumnsOptions[D]]
   }
   
-  @scala.inline
-  implicit class UseResizeColumnsOptionsMutableBuilder[Self <: UseResizeColumnsOptions[?], D /* <: js.Object */] (val x: Self & UseResizeColumnsOptions[D]) extends AnyVal {
+  extension [Self <: UseResizeColumnsOptions[?], D /* <: js.Object */](x: Self & UseResizeColumnsOptions[D]) {
     
-    @scala.inline
-    def setDisableResizing(value: Boolean): Self = StObject.set(x, "disableResizing", value.asInstanceOf[js.Any])
+    inline def setDisableResizing(value: Boolean): Self = StObject.set(x, "disableResizing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableResizingUndefined: Self = StObject.set(x, "disableResizing", js.undefined)
+    inline def setDisableResizingUndefined: Self = StObject.set(x, "disableResizing", js.undefined)
   }
 }

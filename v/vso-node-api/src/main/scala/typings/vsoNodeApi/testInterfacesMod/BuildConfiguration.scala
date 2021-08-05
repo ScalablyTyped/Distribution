@@ -28,8 +28,7 @@ trait BuildConfiguration extends StObject {
 }
 object BuildConfiguration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     branchName: String,
     buildDefinitionId: Double,
     flavor: String,
@@ -45,37 +44,26 @@ object BuildConfiguration {
     __obj.asInstanceOf[BuildConfiguration]
   }
   
-  @scala.inline
-  implicit class BuildConfigurationMutableBuilder[Self <: BuildConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: BuildConfiguration](x: Self) {
     
-    @scala.inline
-    def setBranchName(value: String): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
+    inline def setBranchName(value: String): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildDefinitionId(value: Double): Self = StObject.set(x, "buildDefinitionId", value.asInstanceOf[js.Any])
+    inline def setBuildDefinitionId(value: Double): Self = StObject.set(x, "buildDefinitionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlavor(value: String): Self = StObject.set(x, "flavor", value.asInstanceOf[js.Any])
+    inline def setFlavor(value: String): Self = StObject.set(x, "flavor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProject(value: ShallowReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: ShallowReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryId(value: Double): Self = StObject.set(x, "repositoryId", value.asInstanceOf[js.Any])
+    inline def setRepositoryId(value: Double): Self = StObject.set(x, "repositoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceVersion(value: String): Self = StObject.set(x, "sourceVersion", value.asInstanceOf[js.Any])
+    inline def setSourceVersion(value: String): Self = StObject.set(x, "sourceVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

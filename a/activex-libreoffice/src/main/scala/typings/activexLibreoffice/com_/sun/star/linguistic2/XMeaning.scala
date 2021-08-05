@@ -29,8 +29,7 @@ trait XMeaning
 }
 object XMeaning {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Meaning: String,
     acquire: () => Unit,
     getMeaning: () => String,
@@ -42,16 +41,12 @@ object XMeaning {
     __obj.asInstanceOf[XMeaning]
   }
   
-  @scala.inline
-  implicit class XMeaningMutableBuilder[Self <: XMeaning] (val x: Self) extends AnyVal {
+  extension [Self <: XMeaning](x: Self) {
     
-    @scala.inline
-    def setGetMeaning(value: () => String): Self = StObject.set(x, "getMeaning", js.Any.fromFunction0(value))
+    inline def setGetMeaning(value: () => String): Self = StObject.set(x, "getMeaning", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMeaning(value: String): Self = StObject.set(x, "Meaning", value.asInstanceOf[js.Any])
+    inline def setMeaning(value: String): Self = StObject.set(x, "Meaning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuerySynonyms(value: () => SafeArray[String]): Self = StObject.set(x, "querySynonyms", js.Any.fromFunction0(value))
+    inline def setQuerySynonyms(value: () => SafeArray[String]): Self = StObject.set(x, "querySynonyms", js.Any.fromFunction0(value))
   }
 }

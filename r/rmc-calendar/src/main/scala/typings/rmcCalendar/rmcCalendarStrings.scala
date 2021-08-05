@@ -8,31 +8,25 @@ object rmcCalendarStrings {
   
   @js.native
   sealed trait horizontal extends StObject
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
   sealed trait normal extends StObject
-  @scala.inline
-  def normal: normal = "normal".asInstanceOf[normal]
+  inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
   sealed trait one extends StObject
-  @scala.inline
-  def one: one = "one".asInstanceOf[one]
+  inline def one: one = "one".asInstanceOf[one]
   
   @js.native
   sealed trait range extends StObject
-  @scala.inline
-  def range: range = "range".asInstanceOf[range]
+  inline def range: range = "range".asInstanceOf[range]
   
   @js.native
   sealed trait vertical extends StObject
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
+  inline def vertical: vertical = "vertical".asInstanceOf[vertical]
   
   @js.native
   sealed trait xl extends StObject
-  @scala.inline
-  def xl: xl = "xl".asInstanceOf[xl]
+  inline def xl: xl = "xl".asInstanceOf[xl]
 }

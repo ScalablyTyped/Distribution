@@ -21,8 +21,7 @@ trait IKeyDerivationParametersStatics extends StObject {
 }
 object IKeyDerivationParametersStatics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     buildForPbkdf2: (IBuffer, Double) => KeyDerivationParameters,
     buildForSP800108: (IBuffer, IBuffer) => KeyDerivationParameters,
     buildForSP80056a: (IBuffer, IBuffer, IBuffer, IBuffer, IBuffer) => KeyDerivationParameters
@@ -31,16 +30,12 @@ object IKeyDerivationParametersStatics {
     __obj.asInstanceOf[IKeyDerivationParametersStatics]
   }
   
-  @scala.inline
-  implicit class IKeyDerivationParametersStaticsMutableBuilder[Self <: IKeyDerivationParametersStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IKeyDerivationParametersStatics](x: Self) {
     
-    @scala.inline
-    def setBuildForPbkdf2(value: (IBuffer, Double) => KeyDerivationParameters): Self = StObject.set(x, "buildForPbkdf2", js.Any.fromFunction2(value))
+    inline def setBuildForPbkdf2(value: (IBuffer, Double) => KeyDerivationParameters): Self = StObject.set(x, "buildForPbkdf2", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBuildForSP800108(value: (IBuffer, IBuffer) => KeyDerivationParameters): Self = StObject.set(x, "buildForSP800108", js.Any.fromFunction2(value))
+    inline def setBuildForSP800108(value: (IBuffer, IBuffer) => KeyDerivationParameters): Self = StObject.set(x, "buildForSP800108", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBuildForSP80056a(value: (IBuffer, IBuffer, IBuffer, IBuffer, IBuffer) => KeyDerivationParameters): Self = StObject.set(x, "buildForSP80056a", js.Any.fromFunction5(value))
+    inline def setBuildForSP80056a(value: (IBuffer, IBuffer, IBuffer, IBuffer, IBuffer) => KeyDerivationParameters): Self = StObject.set(x, "buildForSP80056a", js.Any.fromFunction5(value))
   }
 }

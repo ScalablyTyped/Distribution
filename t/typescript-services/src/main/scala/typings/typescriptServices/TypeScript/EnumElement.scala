@@ -14,8 +14,7 @@ trait EnumElement
 }
 object EnumElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -43,13 +42,10 @@ object EnumElement {
     __obj.asInstanceOf[EnumElement]
   }
   
-  @scala.inline
-  implicit class EnumElementMutableBuilder[Self <: EnumElement] (val x: Self) extends AnyVal {
+  extension [Self <: EnumElement](x: Self) {
     
-    @scala.inline
-    def setEqualsValueClause(value: EqualsValueClause): Self = StObject.set(x, "equalsValueClause", value.asInstanceOf[js.Any])
+    inline def setEqualsValueClause(value: EqualsValueClause): Self = StObject.set(x, "equalsValueClause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyName(value: IASTToken): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
+    inline def setPropertyName(value: IASTToken): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait RegExpConstructor extends StObject {
 }
 object RegExpConstructor {
   
-  @scala.inline
-  def apply(escape: java.lang.String => java.lang.String): RegExpConstructor = {
+  inline def apply(escape: java.lang.String => java.lang.String): RegExpConstructor = {
     val __obj = js.Dynamic.literal(escape = js.Any.fromFunction1(escape))
     __obj.asInstanceOf[RegExpConstructor]
   }
   
-  @scala.inline
-  implicit class RegExpConstructorMutableBuilder[Self <: RegExpConstructor] (val x: Self) extends AnyVal {
+  extension [Self <: RegExpConstructor](x: Self) {
     
-    @scala.inline
-    def setEscape(value: java.lang.String => java.lang.String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
+    inline def setEscape(value: java.lang.String => java.lang.String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
   }
 }

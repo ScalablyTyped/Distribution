@@ -246,14 +246,11 @@ object gapi {
       trait CollaborativeObjectType extends StObject
       object CollaborativeObjectType {
         
-        @scala.inline
-        def EditableString: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.EditableString = "EditableString".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.EditableString]
+        inline def EditableString: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.EditableString = "EditableString".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.EditableString]
         
-        @scala.inline
-        def List: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.List = "List".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.List]
+        inline def List: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.List = "List".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.List]
         
-        @scala.inline
-        def Map: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.Map = "Map".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.Map]
+        inline def Map: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.Map = "Map".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.Map]
       }
       
       @js.native
@@ -322,8 +319,7 @@ object gapi {
       }
       object Collaborator {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           color: String,
           displayName: String,
           isAnonymous: Boolean,
@@ -337,32 +333,23 @@ object gapi {
           __obj.asInstanceOf[Collaborator]
         }
         
-        @scala.inline
-        implicit class CollaboratorMutableBuilder[Self <: Collaborator] (val x: Self) extends AnyVal {
+        extension [Self <: Collaborator](x: Self) {
           
-          @scala.inline
-          def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+          inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+          inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setIsAnonymous(value: Boolean): Self = StObject.set(x, "isAnonymous", value.asInstanceOf[js.Any])
+          inline def setIsAnonymous(value: Boolean): Self = StObject.set(x, "isAnonymous", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setIsMe(value: Boolean): Self = StObject.set(x, "isMe", value.asInstanceOf[js.Any])
+          inline def setIsMe(value: Boolean): Self = StObject.set(x, "isMe", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPermissionId(value: String): Self = StObject.set(x, "permissionId", value.asInstanceOf[js.Any])
+          inline def setPermissionId(value: String): Self = StObject.set(x, "permissionId", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPhotoUrl(value: String): Self = StObject.set(x, "photoUrl", value.asInstanceOf[js.Any])
+          inline def setPhotoUrl(value: String): Self = StObject.set(x, "photoUrl", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
+          inline def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+          inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
         }
       }
       
@@ -434,24 +421,19 @@ object gapi {
       }
       object Error {
         
-        @scala.inline
-        def apply(isFatal: Boolean, message: String, `type`: ErrorType): Error = {
+        inline def apply(isFatal: Boolean, message: String, `type`: ErrorType): Error = {
           val __obj = js.Dynamic.literal(isFatal = isFatal.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
           __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
           __obj.asInstanceOf[Error]
         }
         
-        @scala.inline
-        implicit class ErrorMutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
+        extension [Self <: Error](x: Self) {
           
-          @scala.inline
-          def setIsFatal(value: Boolean): Self = StObject.set(x, "isFatal", value.asInstanceOf[js.Any])
+          inline def setIsFatal(value: Boolean): Self = StObject.set(x, "isFatal", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+          inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setType(value: ErrorType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+          inline def setType(value: ErrorType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         }
       }
       
@@ -473,44 +455,31 @@ object gapi {
       trait ErrorType extends StObject
       object ErrorType {
         
-        @scala.inline
-        def client_error: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.client_error = "client_error".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.client_error]
+        inline def client_error: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.client_error = "client_error".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.client_error]
         
-        @scala.inline
-        def concurrent_creation: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.concurrent_creation = "concurrent_creation".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.concurrent_creation]
+        inline def concurrent_creation: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.concurrent_creation = "concurrent_creation".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.concurrent_creation]
         
-        @scala.inline
-        def fatal_network_error: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.fatal_network_error = "fatal_network_error".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.fatal_network_error]
+        inline def fatal_network_error: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.fatal_network_error = "fatal_network_error".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.fatal_network_error]
         
-        @scala.inline
-        def forbidden: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.forbidden = "forbidden".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.forbidden]
+        inline def forbidden: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.forbidden = "forbidden".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.forbidden]
         
-        @scala.inline
-        def invalid_compound_operation: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.invalid_compound_operation = "invalid_compound_operation".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.invalid_compound_operation]
+        inline def invalid_compound_operation: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.invalid_compound_operation = "invalid_compound_operation".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.invalid_compound_operation]
         
-        @scala.inline
-        def invalid_element_type: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.invalid_element_type = "invalid_element_type".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.invalid_element_type]
+        inline def invalid_element_type: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.invalid_element_type = "invalid_element_type".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.invalid_element_type]
         
-        @scala.inline
-        def invalid_json_syntax: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.invalid_json_syntax = "invalid_json_syntax".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.invalid_json_syntax]
+        inline def invalid_json_syntax: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.invalid_json_syntax = "invalid_json_syntax".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.invalid_json_syntax]
         
-        @scala.inline
-        def missing_property: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.missing_property = "missing_property".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.missing_property]
+        inline def missing_property: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.missing_property = "missing_property".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.missing_property]
         
-        @scala.inline
-        def no_write_permission: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.no_write_permission = "no_write_permission".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.no_write_permission]
+        inline def no_write_permission: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.no_write_permission = "no_write_permission".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.no_write_permission]
         
-        @scala.inline
-        def not_found: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.not_found = "not_found".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.not_found]
+        inline def not_found: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.not_found = "not_found".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.not_found]
         
-        @scala.inline
-        def server_error: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.server_error = "server_error".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.server_error]
+        inline def server_error: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.server_error = "server_error".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.server_error]
         
-        @scala.inline
-        def token_refresh_required: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.token_refresh_required = "token_refresh_required".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.token_refresh_required]
+        inline def token_refresh_required: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.token_refresh_required = "token_refresh_required".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.token_refresh_required]
         
-        @scala.inline
-        def unexpected_element: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.unexpected_element = "unexpected_element".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.unexpected_element]
+        inline def unexpected_element: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.unexpected_element = "unexpected_element".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.unexpected_element]
       }
       
       /* Rewritten from type alias, can be one of: 
@@ -531,44 +500,31 @@ object gapi {
       trait EventType extends StObject
       object EventType {
         
-        @scala.inline
-        def attribute_changed: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.attribute_changed = "attribute_changed".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.attribute_changed]
+        inline def attribute_changed: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.attribute_changed = "attribute_changed".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.attribute_changed]
         
-        @scala.inline
-        def collaborator_joined: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.collaborator_joined = "collaborator_joined".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.collaborator_joined]
+        inline def collaborator_joined: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.collaborator_joined = "collaborator_joined".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.collaborator_joined]
         
-        @scala.inline
-        def collaborator_left: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.collaborator_left = "collaborator_left".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.collaborator_left]
+        inline def collaborator_left: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.collaborator_left = "collaborator_left".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.collaborator_left]
         
-        @scala.inline
-        def document_save_state_changed: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.document_save_state_changed = "document_save_state_changed".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.document_save_state_changed]
+        inline def document_save_state_changed: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.document_save_state_changed = "document_save_state_changed".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.document_save_state_changed]
         
-        @scala.inline
-        def object_changed: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.object_changed = "object_changed".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.object_changed]
+        inline def object_changed: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.object_changed = "object_changed".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.object_changed]
         
-        @scala.inline
-        def reference_shifted: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.reference_shifted = "reference_shifted".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.reference_shifted]
+        inline def reference_shifted: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.reference_shifted = "reference_shifted".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.reference_shifted]
         
-        @scala.inline
-        def text_deleted: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.text_deleted = "text_deleted".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.text_deleted]
+        inline def text_deleted: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.text_deleted = "text_deleted".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.text_deleted]
         
-        @scala.inline
-        def text_inserted: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.text_inserted = "text_inserted".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.text_inserted]
+        inline def text_inserted: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.text_inserted = "text_inserted".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.text_inserted]
         
-        @scala.inline
-        def undo_redo_state_changed: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.undo_redo_state_changed = "undo_redo_state_changed".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.undo_redo_state_changed]
+        inline def undo_redo_state_changed: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.undo_redo_state_changed = "undo_redo_state_changed".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.undo_redo_state_changed]
         
-        @scala.inline
-        def value_changed: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.value_changed = "value_changed".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.value_changed]
+        inline def value_changed: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.value_changed = "value_changed".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.value_changed]
         
-        @scala.inline
-        def values_added: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.values_added = "values_added".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.values_added]
+        inline def values_added: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.values_added = "values_added".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.values_added]
         
-        @scala.inline
-        def values_removed: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.values_removed = "values_removed".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.values_removed]
+        inline def values_removed: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.values_removed = "values_removed".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.values_removed]
         
-        @scala.inline
-        def values_set: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.values_set = "values_set".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.values_set]
+        inline def values_set: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.values_set = "values_set".asInstanceOf[typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.values_set]
       }
       
       type GoogEventHandler = (js.Function1[(/* e */ Event) | (/* evt */ ObjectChangedEvent), Unit]) | EventListener
@@ -786,23 +742,18 @@ object gapi {
         }
         object Binding {
           
-          @scala.inline
-          def apply(collaborativeObject: CollaborativeObject, domElement: Element, unbind: () => Unit): Binding = {
+          inline def apply(collaborativeObject: CollaborativeObject, domElement: Element, unbind: () => Unit): Binding = {
             val __obj = js.Dynamic.literal(collaborativeObject = collaborativeObject.asInstanceOf[js.Any], domElement = domElement.asInstanceOf[js.Any], unbind = js.Any.fromFunction0(unbind))
             __obj.asInstanceOf[Binding]
           }
           
-          @scala.inline
-          implicit class BindingMutableBuilder[Self <: Binding] (val x: Self) extends AnyVal {
+          extension [Self <: Binding](x: Self) {
             
-            @scala.inline
-            def setCollaborativeObject(value: CollaborativeObject): Self = StObject.set(x, "collaborativeObject", value.asInstanceOf[js.Any])
+            inline def setCollaborativeObject(value: CollaborativeObject): Self = StObject.set(x, "collaborativeObject", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setDomElement(value: Element): Self = StObject.set(x, "domElement", value.asInstanceOf[js.Any])
+            inline def setDomElement(value: Element): Self = StObject.set(x, "domElement", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setUnbind(value: () => Unit): Self = StObject.set(x, "unbind", js.Any.fromFunction0(value))
+            inline def setUnbind(value: () => Unit): Self = StObject.set(x, "unbind", js.Any.fromFunction0(value))
           }
         }
       }

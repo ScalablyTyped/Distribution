@@ -31,31 +31,23 @@ trait ParamsResourceAclGet
 }
 object ParamsResourceAclGet {
   
-  @scala.inline
-  def apply(): ParamsResourceAclGet = {
+  inline def apply(): ParamsResourceAclGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceAclGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceAclGetMutableBuilder[Self <: ParamsResourceAclGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceAclGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setCalendarId(value: String): Self = StObject.set(x, "calendarId", value.asInstanceOf[js.Any])
+    inline def setCalendarId(value: String): Self = StObject.set(x, "calendarId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalendarIdUndefined: Self = StObject.set(x, "calendarId", js.undefined)
+    inline def setCalendarIdUndefined: Self = StObject.set(x, "calendarId", js.undefined)
     
-    @scala.inline
-    def setRuleId(value: String): Self = StObject.set(x, "ruleId", value.asInstanceOf[js.Any])
+    inline def setRuleId(value: String): Self = StObject.set(x, "ruleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleIdUndefined: Self = StObject.set(x, "ruleId", js.undefined)
+    inline def setRuleIdUndefined: Self = StObject.set(x, "ruleId", js.undefined)
   }
 }

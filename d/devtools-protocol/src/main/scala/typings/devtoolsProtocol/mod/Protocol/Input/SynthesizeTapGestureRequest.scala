@@ -35,37 +35,27 @@ trait SynthesizeTapGestureRequest extends StObject {
 }
 object SynthesizeTapGestureRequest {
   
-  @scala.inline
-  def apply(x: Double, y: Double): SynthesizeTapGestureRequest = {
+  inline def apply(x: Double, y: Double): SynthesizeTapGestureRequest = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[SynthesizeTapGestureRequest]
   }
   
-  @scala.inline
-  implicit class SynthesizeTapGestureRequestMutableBuilder[Self <: SynthesizeTapGestureRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SynthesizeTapGestureRequest](x: Self) {
     
-    @scala.inline
-    def setDuration(value: integer): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: integer): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setGestureSourceType(value: GestureSourceType): Self = StObject.set(x, "gestureSourceType", value.asInstanceOf[js.Any])
+    inline def setGestureSourceType(value: GestureSourceType): Self = StObject.set(x, "gestureSourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGestureSourceTypeUndefined: Self = StObject.set(x, "gestureSourceType", js.undefined)
+    inline def setGestureSourceTypeUndefined: Self = StObject.set(x, "gestureSourceType", js.undefined)
     
-    @scala.inline
-    def setTapCount(value: integer): Self = StObject.set(x, "tapCount", value.asInstanceOf[js.Any])
+    inline def setTapCount(value: integer): Self = StObject.set(x, "tapCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTapCountUndefined: Self = StObject.set(x, "tapCount", js.undefined)
+    inline def setTapCountUndefined: Self = StObject.set(x, "tapCount", js.undefined)
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

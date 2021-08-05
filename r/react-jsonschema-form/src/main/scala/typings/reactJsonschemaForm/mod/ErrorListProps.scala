@@ -19,8 +19,7 @@ trait ErrorListProps extends StObject {
 }
 object ErrorListProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     errorSchema: FormValidation,
     errors: js.Array[AjvError],
     formContext: js.Any,
@@ -31,25 +30,18 @@ object ErrorListProps {
     __obj.asInstanceOf[ErrorListProps]
   }
   
-  @scala.inline
-  implicit class ErrorListPropsMutableBuilder[Self <: ErrorListProps] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorListProps](x: Self) {
     
-    @scala.inline
-    def setErrorSchema(value: FormValidation): Self = StObject.set(x, "errorSchema", value.asInstanceOf[js.Any])
+    inline def setErrorSchema(value: FormValidation): Self = StObject.set(x, "errorSchema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrors(value: js.Array[AjvError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Array[AjvError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsVarargs(value: AjvError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: AjvError*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
-    @scala.inline
-    def setFormContext(value: js.Any): Self = StObject.set(x, "formContext", value.asInstanceOf[js.Any])
+    inline def setFormContext(value: js.Any): Self = StObject.set(x, "formContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchema(value: JSONSchema6): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: JSONSchema6): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUiSchema(value: UiSchema): Self = StObject.set(x, "uiSchema", value.asInstanceOf[js.Any])
+    inline def setUiSchema(value: UiSchema): Self = StObject.set(x, "uiSchema", value.asInstanceOf[js.Any])
   }
 }

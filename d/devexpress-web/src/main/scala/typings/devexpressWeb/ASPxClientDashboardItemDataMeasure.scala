@@ -37,28 +37,21 @@ trait ASPxClientDashboardItemDataMeasure extends StObject {
 }
 object ASPxClientDashboardItemDataMeasure {
   
-  @scala.inline
-  def apply(DataMember: String, Format: js.Any => String, Id: String, Name: String, SummaryType: String): ASPxClientDashboardItemDataMeasure = {
+  inline def apply(DataMember: String, Format: js.Any => String, Id: String, Name: String, SummaryType: String): ASPxClientDashboardItemDataMeasure = {
     val __obj = js.Dynamic.literal(DataMember = DataMember.asInstanceOf[js.Any], Format = js.Any.fromFunction1(Format), Id = Id.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], SummaryType = SummaryType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientDashboardItemDataMeasure]
   }
   
-  @scala.inline
-  implicit class ASPxClientDashboardItemDataMeasureMutableBuilder[Self <: ASPxClientDashboardItemDataMeasure] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientDashboardItemDataMeasure](x: Self) {
     
-    @scala.inline
-    def setDataMember(value: String): Self = StObject.set(x, "DataMember", value.asInstanceOf[js.Any])
+    inline def setDataMember(value: String): Self = StObject.set(x, "DataMember", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: js.Any => String): Self = StObject.set(x, "Format", js.Any.fromFunction1(value))
+    inline def setFormat(value: js.Any => String): Self = StObject.set(x, "Format", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryType(value: String): Self = StObject.set(x, "SummaryType", value.asInstanceOf[js.Any])
+    inline def setSummaryType(value: String): Self = StObject.set(x, "SummaryType", value.asInstanceOf[js.Any])
   }
 }

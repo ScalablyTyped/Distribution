@@ -21,8 +21,7 @@ trait PhoneCallHistoryEntryAddress extends StObject {
 }
 object PhoneCallHistoryEntryAddress {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contactId: String,
     displayName: String,
     rawAddress: String,
@@ -32,19 +31,14 @@ object PhoneCallHistoryEntryAddress {
     __obj.asInstanceOf[PhoneCallHistoryEntryAddress]
   }
   
-  @scala.inline
-  implicit class PhoneCallHistoryEntryAddressMutableBuilder[Self <: PhoneCallHistoryEntryAddress] (val x: Self) extends AnyVal {
+  extension [Self <: PhoneCallHistoryEntryAddress](x: Self) {
     
-    @scala.inline
-    def setContactId(value: String): Self = StObject.set(x, "contactId", value.asInstanceOf[js.Any])
+    inline def setContactId(value: String): Self = StObject.set(x, "contactId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawAddress(value: String): Self = StObject.set(x, "rawAddress", value.asInstanceOf[js.Any])
+    inline def setRawAddress(value: String): Self = StObject.set(x, "rawAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawAddressKind(value: PhoneCallHistoryEntryRawAddressKind): Self = StObject.set(x, "rawAddressKind", value.asInstanceOf[js.Any])
+    inline def setRawAddressKind(value: PhoneCallHistoryEntryRawAddressKind): Self = StObject.set(x, "rawAddressKind", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait GetDiskRequest extends StObject {
 }
 object GetDiskRequest {
   
-  @scala.inline
-  def apply(diskName: ResourceName): GetDiskRequest = {
+  inline def apply(diskName: ResourceName): GetDiskRequest = {
     val __obj = js.Dynamic.literal(diskName = diskName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDiskRequest]
   }
   
-  @scala.inline
-  implicit class GetDiskRequestMutableBuilder[Self <: GetDiskRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDiskRequest](x: Self) {
     
-    @scala.inline
-    def setDiskName(value: ResourceName): Self = StObject.set(x, "diskName", value.asInstanceOf[js.Any])
+    inline def setDiskName(value: ResourceName): Self = StObject.set(x, "diskName", value.asInstanceOf[js.Any])
   }
 }

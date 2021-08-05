@@ -16,31 +16,23 @@ trait axes extends StObject {
 }
 object axes {
   
-  @scala.inline
-  def apply(xaxis: axis, yaxis: axis): axes = {
+  inline def apply(xaxis: axis, yaxis: axis): axes = {
     val __obj = js.Dynamic.literal(xaxis = xaxis.asInstanceOf[js.Any], yaxis = yaxis.asInstanceOf[js.Any])
     __obj.asInstanceOf[axes]
   }
   
-  @scala.inline
-  implicit class axesMutableBuilder[Self <: axes] (val x: Self) extends AnyVal {
+  extension [Self <: axes](x: Self) {
     
-    @scala.inline
-    def setX2axis(value: axis): Self = StObject.set(x, "x2axis", value.asInstanceOf[js.Any])
+    inline def setX2axis(value: axis): Self = StObject.set(x, "x2axis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX2axisUndefined: Self = StObject.set(x, "x2axis", js.undefined)
+    inline def setX2axisUndefined: Self = StObject.set(x, "x2axis", js.undefined)
     
-    @scala.inline
-    def setXaxis(value: axis): Self = StObject.set(x, "xaxis", value.asInstanceOf[js.Any])
+    inline def setXaxis(value: axis): Self = StObject.set(x, "xaxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY2axis(value: axis): Self = StObject.set(x, "y2axis", value.asInstanceOf[js.Any])
+    inline def setY2axis(value: axis): Self = StObject.set(x, "y2axis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY2axisUndefined: Self = StObject.set(x, "y2axis", js.undefined)
+    inline def setY2axisUndefined: Self = StObject.set(x, "y2axis", js.undefined)
     
-    @scala.inline
-    def setYaxis(value: axis): Self = StObject.set(x, "yaxis", value.asInstanceOf[js.Any])
+    inline def setYaxis(value: axis): Self = StObject.set(x, "yaxis", value.asInstanceOf[js.Any])
   }
 }

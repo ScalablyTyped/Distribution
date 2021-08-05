@@ -12,19 +12,15 @@ trait CreditCardExpiration extends StObject {
 }
 object CreditCardExpiration {
   
-  @scala.inline
-  def apply(month: String, year: String): CreditCardExpiration = {
+  inline def apply(month: String, year: String): CreditCardExpiration = {
     val __obj = js.Dynamic.literal(month = month.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreditCardExpiration]
   }
   
-  @scala.inline
-  implicit class CreditCardExpirationMutableBuilder[Self <: CreditCardExpiration] (val x: Self) extends AnyVal {
+  extension [Self <: CreditCardExpiration](x: Self) {
     
-    @scala.inline
-    def setMonth(value: String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+    inline def setMonth(value: String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYear(value: String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+    inline def setYear(value: String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
   }
 }

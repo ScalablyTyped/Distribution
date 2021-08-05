@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlActionType extends StObject
 object XlActionType {
   
-  @scala.inline
-  def xlActionTypeDrillthrough: `256` = 256.asInstanceOf[`256`]
+  inline def xlActionTypeDrillthrough: `256` = 256.asInstanceOf[`256`]
   
-  @scala.inline
-  def xlActionTypeReport: `128` = 128.asInstanceOf[`128`]
+  inline def xlActionTypeReport: `128` = 128.asInstanceOf[`128`]
   
-  @scala.inline
-  def xlActionTypeRowset: `16` = 16.asInstanceOf[`16`]
+  inline def xlActionTypeRowset: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def xlActionTypeUrl: `1` = 1.asInstanceOf[`1`]
+  inline def xlActionTypeUrl: `1` = 1.asInstanceOf[`1`]
 }

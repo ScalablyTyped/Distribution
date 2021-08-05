@@ -15,6 +15,6 @@ object indexedFilterMod {
        with NodeFilter {
     def this(index_ : Index) = this()
     
-    val index_ : js.Any = js.native
+    /* private */ val index_ : js.Any = js.native
   }
 }

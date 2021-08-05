@@ -39,53 +39,38 @@ object anon {
   }
   object Body {
     
-    @scala.inline
-    def apply(url: String): Body = {
+    inline def apply(url: String): Body = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[Body]
     }
     
-    @scala.inline
-    implicit class BodyMutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
+    extension [Self <: Body](x: Self) {
       
-      @scala.inline
-      def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setClength(value: Double): Self = StObject.set(x, "clength", value.asInstanceOf[js.Any])
+      inline def setClength(value: Double): Self = StObject.set(x, "clength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClengthUndefined: Self = StObject.set(x, "clength", js.undefined)
+      inline def setClengthUndefined: Self = StObject.set(x, "clength", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: IncomingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: IncomingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setParams(value: Record[String, js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Record[String, js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setQuery(value: Record[String, js.Any]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Record[String, js.Any]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
-      @scala.inline
-      def setRoute_path(value: String): Self = StObject.set(x, "route_path", value.asInstanceOf[js.Any])
+      inline def setRoute_path(value: String): Self = StObject.set(x, "route_path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoute_pathUndefined: Self = StObject.set(x, "route_path", js.undefined)
+      inline def setRoute_pathUndefined: Self = StObject.set(x, "route_path", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -99,23 +84,18 @@ object anon {
   }
   object Bucketcurrent {
     
-    @scala.inline
-    def apply(bucket_current: Double, bucket_duration: Double, length: Double): Bucketcurrent = {
+    inline def apply(bucket_current: Double, bucket_duration: Double, length: Double): Bucketcurrent = {
       val __obj = js.Dynamic.literal(bucket_current = bucket_current.asInstanceOf[js.Any], bucket_duration = bucket_duration.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any])
       __obj.asInstanceOf[Bucketcurrent]
     }
     
-    @scala.inline
-    implicit class BucketcurrentMutableBuilder[Self <: Bucketcurrent] (val x: Self) extends AnyVal {
+    extension [Self <: Bucketcurrent](x: Self) {
       
-      @scala.inline
-      def setBucket_current(value: Double): Self = StObject.set(x, "bucket_current", value.asInstanceOf[js.Any])
+      inline def setBucket_current(value: Double): Self = StObject.set(x, "bucket_current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBucket_duration(value: Double): Self = StObject.set(x, "bucket_duration", value.asInstanceOf[js.Any])
+      inline def setBucket_duration(value: Double): Self = StObject.set(x, "bucket_duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
@@ -133,36 +113,27 @@ object anon {
   }
   object Class {
     
-    @scala.inline
-    def apply(`class`: String, code: String, phrase: String): Class = {
+    inline def apply(`class`: String, code: String, phrase: String): Class = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], phrase = phrase.asInstanceOf[js.Any])
       __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Class]
     }
     
-    @scala.inline
-    implicit class ClassMutableBuilder[Self <: Class] (val x: Self) extends AnyVal {
+    extension [Self <: Class](x: Self) {
       
-      @scala.inline
-      def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+      inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClength(value: Double): Self = StObject.set(x, "clength", value.asInstanceOf[js.Any])
+      inline def setClength(value: Double): Self = StObject.set(x, "clength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClengthUndefined: Self = StObject.set(x, "clength", js.undefined)
+      inline def setClengthUndefined: Self = StObject.set(x, "clength", js.undefined)
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: OutgoingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: OutgoingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setPhrase(value: String): Self = StObject.set(x, "phrase", value.asInstanceOf[js.Any])
+      inline def setPhrase(value: String): Self = StObject.set(x, "phrase", value.asInstanceOf[js.Any])
     }
   }
   
@@ -184,50 +155,36 @@ object anon {
   }
   object Deprecated {
     
-    @scala.inline
-    def apply(path: String, query: String): Deprecated = {
+    inline def apply(path: String, query: String): Deprecated = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
       __obj.asInstanceOf[Deprecated]
     }
     
-    @scala.inline
-    implicit class DeprecatedMutableBuilder[Self <: Deprecated] (val x: Self) extends AnyVal {
+    extension [Self <: Deprecated](x: Self) {
       
-      @scala.inline
-      def setDeprecated(value: String): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
+      inline def setDeprecated(value: String): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
+      inline def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
       
-      @scala.inline
-      def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
+      inline def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
+      inline def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
       
-      @scala.inline
-      def setParams(value: String): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: String): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwagger(value: String): Self = StObject.set(x, "swagger", value.asInstanceOf[js.Any])
+      inline def setSwagger(value: String): Self = StObject.set(x, "swagger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwaggerUndefined: Self = StObject.set(x, "swagger", js.undefined)
+      inline def setSwaggerUndefined: Self = StObject.set(x, "swagger", js.undefined)
       
-      @scala.inline
-      def setTags(value: String): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: String): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -243,26 +200,20 @@ object anon {
   }
   object Hostname {
     
-    @scala.inline
-    def apply(hostname: String, ip: String, name: String, version: String): Hostname = {
+    inline def apply(hostname: String, ip: String, name: String, version: String): Hostname = {
       val __obj = js.Dynamic.literal(hostname = hostname.asInstanceOf[js.Any], ip = ip.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[Hostname]
     }
     
-    @scala.inline
-    implicit class HostnameMutableBuilder[Self <: Hostname] (val x: Self) extends AnyVal {
+    extension [Self <: Hostname](x: Self) {
       
-      @scala.inline
-      def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+      inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -287,8 +238,7 @@ object anon {
   }
   object RecordHTTPMethodAPIOperat {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       DELETE: APIOperationDefinition,
       GET: APIOperationDefinition,
       HEAD: APIOperationDefinition,
@@ -302,32 +252,23 @@ object anon {
       __obj.asInstanceOf[RecordHTTPMethodAPIOperat]
     }
     
-    @scala.inline
-    implicit class RecordHTTPMethodAPIOperatMutableBuilder[Self <: RecordHTTPMethodAPIOperat] (val x: Self) extends AnyVal {
+    extension [Self <: RecordHTTPMethodAPIOperat](x: Self) {
       
-      @scala.inline
-      def setDELETE(value: APIOperationDefinition): Self = StObject.set(x, "DELETE", value.asInstanceOf[js.Any])
+      inline def setDELETE(value: APIOperationDefinition): Self = StObject.set(x, "DELETE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGET(value: APIOperationDefinition): Self = StObject.set(x, "GET", value.asInstanceOf[js.Any])
+      inline def setGET(value: APIOperationDefinition): Self = StObject.set(x, "GET", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHEAD(value: APIOperationDefinition): Self = StObject.set(x, "HEAD", value.asInstanceOf[js.Any])
+      inline def setHEAD(value: APIOperationDefinition): Self = StObject.set(x, "HEAD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOPTIONS(value: APIOperationDefinition): Self = StObject.set(x, "OPTIONS", value.asInstanceOf[js.Any])
+      inline def setOPTIONS(value: APIOperationDefinition): Self = StObject.set(x, "OPTIONS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPATCH(value: APIOperationDefinition): Self = StObject.set(x, "PATCH", value.asInstanceOf[js.Any])
+      inline def setPATCH(value: APIOperationDefinition): Self = StObject.set(x, "PATCH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPOST(value: APIOperationDefinition): Self = StObject.set(x, "POST", value.asInstanceOf[js.Any])
+      inline def setPOST(value: APIOperationDefinition): Self = StObject.set(x, "POST", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPUT(value: APIOperationDefinition): Self = StObject.set(x, "PUT", value.asInstanceOf[js.Any])
+      inline def setPUT(value: APIOperationDefinition): Self = StObject.set(x, "PUT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTRACE(value: APIOperationDefinition): Self = StObject.set(x, "TRACE", value.asInstanceOf[js.Any])
+      inline def setTRACE(value: APIOperationDefinition): Self = StObject.set(x, "TRACE", value.asInstanceOf[js.Any])
     }
   }
   
@@ -352,8 +293,7 @@ object anon {
   }
   object RecordHTTPMethodAPIOperatDELETE {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       DELETE: APIOperationStats,
       GET: APIOperationStats,
       HEAD: APIOperationStats,
@@ -367,32 +307,23 @@ object anon {
       __obj.asInstanceOf[RecordHTTPMethodAPIOperatDELETE]
     }
     
-    @scala.inline
-    implicit class RecordHTTPMethodAPIOperatDELETEMutableBuilder[Self <: RecordHTTPMethodAPIOperatDELETE] (val x: Self) extends AnyVal {
+    extension [Self <: RecordHTTPMethodAPIOperatDELETE](x: Self) {
       
-      @scala.inline
-      def setDELETE(value: APIOperationStats): Self = StObject.set(x, "DELETE", value.asInstanceOf[js.Any])
+      inline def setDELETE(value: APIOperationStats): Self = StObject.set(x, "DELETE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGET(value: APIOperationStats): Self = StObject.set(x, "GET", value.asInstanceOf[js.Any])
+      inline def setGET(value: APIOperationStats): Self = StObject.set(x, "GET", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHEAD(value: APIOperationStats): Self = StObject.set(x, "HEAD", value.asInstanceOf[js.Any])
+      inline def setHEAD(value: APIOperationStats): Self = StObject.set(x, "HEAD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOPTIONS(value: APIOperationStats): Self = StObject.set(x, "OPTIONS", value.asInstanceOf[js.Any])
+      inline def setOPTIONS(value: APIOperationStats): Self = StObject.set(x, "OPTIONS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPATCH(value: APIOperationStats): Self = StObject.set(x, "PATCH", value.asInstanceOf[js.Any])
+      inline def setPATCH(value: APIOperationStats): Self = StObject.set(x, "PATCH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPOST(value: APIOperationStats): Self = StObject.set(x, "POST", value.asInstanceOf[js.Any])
+      inline def setPOST(value: APIOperationStats): Self = StObject.set(x, "POST", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPUT(value: APIOperationStats): Self = StObject.set(x, "PUT", value.asInstanceOf[js.Any])
+      inline def setPUT(value: APIOperationStats): Self = StObject.set(x, "PUT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTRACE(value: APIOperationStats): Self = StObject.set(x, "TRACE", value.asInstanceOf[js.Any])
+      inline def setTRACE(value: APIOperationStats): Self = StObject.set(x, "TRACE", value.asInstanceOf[js.Any])
     }
   }
   
@@ -417,8 +348,7 @@ object anon {
   }
   object RecordHTTPMethodReqResSta {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       DELETE: ReqResStats,
       GET: ReqResStats,
       HEAD: ReqResStats,
@@ -432,32 +362,23 @@ object anon {
       __obj.asInstanceOf[RecordHTTPMethodReqResSta]
     }
     
-    @scala.inline
-    implicit class RecordHTTPMethodReqResStaMutableBuilder[Self <: RecordHTTPMethodReqResSta] (val x: Self) extends AnyVal {
+    extension [Self <: RecordHTTPMethodReqResSta](x: Self) {
       
-      @scala.inline
-      def setDELETE(value: ReqResStats): Self = StObject.set(x, "DELETE", value.asInstanceOf[js.Any])
+      inline def setDELETE(value: ReqResStats): Self = StObject.set(x, "DELETE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGET(value: ReqResStats): Self = StObject.set(x, "GET", value.asInstanceOf[js.Any])
+      inline def setGET(value: ReqResStats): Self = StObject.set(x, "GET", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHEAD(value: ReqResStats): Self = StObject.set(x, "HEAD", value.asInstanceOf[js.Any])
+      inline def setHEAD(value: ReqResStats): Self = StObject.set(x, "HEAD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOPTIONS(value: ReqResStats): Self = StObject.set(x, "OPTIONS", value.asInstanceOf[js.Any])
+      inline def setOPTIONS(value: ReqResStats): Self = StObject.set(x, "OPTIONS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPATCH(value: ReqResStats): Self = StObject.set(x, "PATCH", value.asInstanceOf[js.Any])
+      inline def setPATCH(value: ReqResStats): Self = StObject.set(x, "PATCH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPOST(value: ReqResStats): Self = StObject.set(x, "POST", value.asInstanceOf[js.Any])
+      inline def setPOST(value: ReqResStats): Self = StObject.set(x, "POST", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPUT(value: ReqResStats): Self = StObject.set(x, "PUT", value.asInstanceOf[js.Any])
+      inline def setPUT(value: ReqResStats): Self = StObject.set(x, "PUT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTRACE(value: ReqResStats): Self = StObject.set(x, "TRACE", value.asInstanceOf[js.Any])
+      inline def setTRACE(value: ReqResStats): Self = StObject.set(x, "TRACE", value.asInstanceOf[js.Any])
     }
   }
   
@@ -474,26 +395,20 @@ object anon {
   }
   object RecordHTTPMethodSubsetReq {
     
-    @scala.inline
-    def apply(DELETE: ReqResStats, GET: ReqResStats, POST: ReqResStats, PUT: ReqResStats): RecordHTTPMethodSubsetReq = {
+    inline def apply(DELETE: ReqResStats, GET: ReqResStats, POST: ReqResStats, PUT: ReqResStats): RecordHTTPMethodSubsetReq = {
       val __obj = js.Dynamic.literal(DELETE = DELETE.asInstanceOf[js.Any], GET = GET.asInstanceOf[js.Any], POST = POST.asInstanceOf[js.Any], PUT = PUT.asInstanceOf[js.Any])
       __obj.asInstanceOf[RecordHTTPMethodSubsetReq]
     }
     
-    @scala.inline
-    implicit class RecordHTTPMethodSubsetReqMutableBuilder[Self <: RecordHTTPMethodSubsetReq] (val x: Self) extends AnyVal {
+    extension [Self <: RecordHTTPMethodSubsetReq](x: Self) {
       
-      @scala.inline
-      def setDELETE(value: ReqResStats): Self = StObject.set(x, "DELETE", value.asInstanceOf[js.Any])
+      inline def setDELETE(value: ReqResStats): Self = StObject.set(x, "DELETE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGET(value: ReqResStats): Self = StObject.set(x, "GET", value.asInstanceOf[js.Any])
+      inline def setGET(value: ReqResStats): Self = StObject.set(x, "GET", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPOST(value: ReqResStats): Self = StObject.set(x, "POST", value.asInstanceOf[js.Any])
+      inline def setPOST(value: ReqResStats): Self = StObject.set(x, "POST", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPUT(value: ReqResStats): Self = StObject.set(x, "PUT", value.asInstanceOf[js.Any])
+      inline def setPUT(value: ReqResStats): Self = StObject.set(x, "PUT", value.asInstanceOf[js.Any])
     }
   }
   
@@ -505,20 +420,16 @@ object anon {
   }
   object Request {
     
-    @scala.inline
-    def apply(request: Body, response: Class): Request = {
+    inline def apply(request: Body, response: Class): Request = {
       val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
       __obj.asInstanceOf[Request]
     }
     
-    @scala.inline
-    implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+    extension [Self <: Request](x: Self) {
       
-      @scala.inline
-      def setRequest(value: Body): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: Body): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse(value: Class): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: Class): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
   }
   

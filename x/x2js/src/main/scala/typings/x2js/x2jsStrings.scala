@@ -8,21 +8,17 @@ object x2jsStrings {
   
   @js.native
   sealed trait none extends StObject
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait `object` extends StObject
-  @scala.inline
-  def `object`: `object` = "object".asInstanceOf[`object`]
+  inline def `object`: `object` = "object".asInstanceOf[`object`]
   
   @js.native
   sealed trait property extends StObject
-  @scala.inline
-  def property: property = "property".asInstanceOf[property]
+  inline def property: property = "property".asInstanceOf[property]
   
   @js.native
   sealed trait text extends StObject
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
+  inline def text: text = "text".asInstanceOf[text]
 }

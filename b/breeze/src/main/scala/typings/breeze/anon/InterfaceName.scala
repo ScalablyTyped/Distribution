@@ -12,19 +12,15 @@ trait InterfaceName extends StObject {
 }
 object InterfaceName {
   
-  @scala.inline
-  def apply(interfaceName: String, isDefault: Boolean): InterfaceName = {
+  inline def apply(interfaceName: String, isDefault: Boolean): InterfaceName = {
     val __obj = js.Dynamic.literal(interfaceName = interfaceName.asInstanceOf[js.Any], isDefault = isDefault.asInstanceOf[js.Any])
     __obj.asInstanceOf[InterfaceName]
   }
   
-  @scala.inline
-  implicit class InterfaceNameMutableBuilder[Self <: InterfaceName] (val x: Self) extends AnyVal {
+  extension [Self <: InterfaceName](x: Self) {
     
-    @scala.inline
-    def setInterfaceName(value: String): Self = StObject.set(x, "interfaceName", value.asInstanceOf[js.Any])
+    inline def setInterfaceName(value: String): Self = StObject.set(x, "interfaceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
+    inline def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
   }
 }

@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UriEndpointState extends StObject
 object UriEndpointState {
   
-  @scala.inline
-  def PAUSE: typings.kurentoClient.kurentoClientStrings.PAUSE = "PAUSE".asInstanceOf[typings.kurentoClient.kurentoClientStrings.PAUSE]
+  inline def PAUSE: typings.kurentoClient.kurentoClientStrings.PAUSE = "PAUSE".asInstanceOf[typings.kurentoClient.kurentoClientStrings.PAUSE]
   
-  @scala.inline
-  def START: typings.kurentoClient.kurentoClientStrings.START = "START".asInstanceOf[typings.kurentoClient.kurentoClientStrings.START]
+  inline def START: typings.kurentoClient.kurentoClientStrings.START = "START".asInstanceOf[typings.kurentoClient.kurentoClientStrings.START]
   
-  @scala.inline
-  def STOP: typings.kurentoClient.kurentoClientStrings.STOP = "STOP".asInstanceOf[typings.kurentoClient.kurentoClientStrings.STOP]
+  inline def STOP: typings.kurentoClient.kurentoClientStrings.STOP = "STOP".asInstanceOf[typings.kurentoClient.kurentoClientStrings.STOP]
 }

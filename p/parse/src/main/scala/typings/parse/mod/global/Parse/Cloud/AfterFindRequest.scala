@@ -14,8 +14,7 @@ trait AfterFindRequest
 }
 object AfterFindRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     headers: js.Any,
     ip: String,
     log: js.Any,
@@ -28,13 +27,10 @@ object AfterFindRequest {
     __obj.asInstanceOf[AfterFindRequest]
   }
   
-  @scala.inline
-  implicit class AfterFindRequestMutableBuilder[Self <: AfterFindRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AfterFindRequest](x: Self) {
     
-    @scala.inline
-    def setObjects(value: js.Array[Object[Attributes]]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
+    inline def setObjects(value: js.Array[Object[Attributes]]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectsVarargs(value: Object[Attributes]*): Self = StObject.set(x, "objects", js.Array(value :_*))
+    inline def setObjectsVarargs(value: Object[Attributes]*): Self = StObject.set(x, "objects", js.Array(value :_*))
   }
 }

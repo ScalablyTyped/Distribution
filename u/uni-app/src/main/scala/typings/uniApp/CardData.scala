@@ -28,37 +28,27 @@ trait CardData extends StObject {
 }
 object CardData {
   
-  @scala.inline
-  def apply(): CardData = {
+  inline def apply(): CardData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CardData]
   }
   
-  @scala.inline
-  implicit class CardDataMutableBuilder[Self <: CardData] (val x: Self) extends AnyVal {
+  extension [Self <: CardData](x: Self) {
     
-    @scala.inline
-    def setCardExt(value: String): Self = StObject.set(x, "cardExt", value.asInstanceOf[js.Any])
+    inline def setCardExt(value: String): Self = StObject.set(x, "cardExt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardExtUndefined: Self = StObject.set(x, "cardExt", js.undefined)
+    inline def setCardExtUndefined: Self = StObject.set(x, "cardExt", js.undefined)
     
-    @scala.inline
-    def setCardId(value: String): Self = StObject.set(x, "cardId", value.asInstanceOf[js.Any])
+    inline def setCardId(value: String): Self = StObject.set(x, "cardId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardIdUndefined: Self = StObject.set(x, "cardId", js.undefined)
+    inline def setCardIdUndefined: Self = StObject.set(x, "cardId", js.undefined)
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setIsSuccess(value: Boolean): Self = StObject.set(x, "isSuccess", value.asInstanceOf[js.Any])
+    inline def setIsSuccess(value: Boolean): Self = StObject.set(x, "isSuccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSuccessUndefined: Self = StObject.set(x, "isSuccess", js.undefined)
+    inline def setIsSuccessUndefined: Self = StObject.set(x, "isSuccess", js.undefined)
   }
 }

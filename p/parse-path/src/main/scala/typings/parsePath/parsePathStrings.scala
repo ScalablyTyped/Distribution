@@ -11,34 +11,29 @@ object parsePathStrings {
   sealed trait file
     extends StObject
        with Protocol
-  @scala.inline
-  def file: file = "file".asInstanceOf[file]
+  inline def file: file = "file".asInstanceOf[file]
   
   @js.native
   sealed trait git
     extends StObject
        with Protocol
-  @scala.inline
-  def git: git = "git".asInstanceOf[git]
+  inline def git: git = "git".asInstanceOf[git]
   
   @js.native
   sealed trait http
     extends StObject
        with Protocol
-  @scala.inline
-  def http: http = "http".asInstanceOf[http]
+  inline def http: http = "http".asInstanceOf[http]
   
   @js.native
   sealed trait https
     extends StObject
        with Protocol
-  @scala.inline
-  def https: https = "https".asInstanceOf[https]
+  inline def https: https = "https".asInstanceOf[https]
   
   @js.native
   sealed trait ssh
     extends StObject
        with Protocol
-  @scala.inline
-  def ssh: ssh = "ssh".asInstanceOf[ssh]
+  inline def ssh: ssh = "ssh".asInstanceOf[ssh]
 }

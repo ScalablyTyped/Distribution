@@ -15,19 +15,15 @@ trait ChatMessageStoreChangedEventArgs extends StObject {
 }
 object ChatMessageStoreChangedEventArgs {
   
-  @scala.inline
-  def apply(id: String, kind: ChatStoreChangedEventKind): ChatMessageStoreChangedEventArgs = {
+  inline def apply(id: String, kind: ChatStoreChangedEventKind): ChatMessageStoreChangedEventArgs = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatMessageStoreChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class ChatMessageStoreChangedEventArgsMutableBuilder[Self <: ChatMessageStoreChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ChatMessageStoreChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: ChatStoreChangedEventKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: ChatStoreChangedEventKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }
 }

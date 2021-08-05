@@ -14,31 +14,23 @@ trait Limit extends StObject {
 }
 object Limit {
   
-  @scala.inline
-  def apply(): Limit = {
+  inline def apply(): Limit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Limit]
   }
   
-  @scala.inline
-  implicit class LimitMutableBuilder[Self <: Limit] (val x: Self) extends AnyVal {
+  extension [Self <: Limit](x: Self) {
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
-    @scala.inline
-    def setStartAt(value: String): Self = StObject.set(x, "startAt", value.asInstanceOf[js.Any])
+    inline def setStartAt(value: String): Self = StObject.set(x, "startAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartAtUndefined: Self = StObject.set(x, "startAt", js.undefined)
+    inline def setStartAtUndefined: Self = StObject.set(x, "startAt", js.undefined)
   }
 }

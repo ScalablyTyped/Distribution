@@ -10,6 +10,5 @@ object imc {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def imcManager(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("imc_manager")().asInstanceOf[Double]
+  inline def imcManager(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("imc_manager")().asInstanceOf[Double]
 }

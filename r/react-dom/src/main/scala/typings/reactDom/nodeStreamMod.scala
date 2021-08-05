@@ -11,11 +11,9 @@ object nodeStreamMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def renderToStaticStream(element: ReactElement): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("renderToStaticStream")(element.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def renderToStaticStream(element: ReactElement): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("renderToStaticStream")(element.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def renderToStream(element: ReactElement): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("renderToStream")(element.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def renderToStream(element: ReactElement): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("renderToStream")(element.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSImport("react-dom/node-stream", "version")
   @js.native

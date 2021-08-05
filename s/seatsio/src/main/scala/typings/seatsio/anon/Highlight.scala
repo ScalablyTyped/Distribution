@@ -22,35 +22,26 @@ trait Highlight
 }
 object Highlight {
   
-  @scala.inline
-  def apply(): Highlight = {
+  inline def apply(): Highlight = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("noOrphanSeats")
     __obj.asInstanceOf[Highlight]
   }
   
-  @scala.inline
-  implicit class HighlightMutableBuilder[Self <: Highlight] (val x: Self) extends AnyVal {
+  extension [Self <: Highlight](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setHighlight(value: Boolean): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+    inline def setHighlight(value: Boolean): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
+    inline def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
     
-    @scala.inline
-    def setMode(value: lenient | strict): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: lenient | strict): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setType(value: noOrphanSeats): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: noOrphanSeats): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -104,8 +104,7 @@ trait XGridColumn
 }
 object XGridColumn {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ColumnWidth: Double,
     DataColumnIndex: Double,
     Flexibility: Double,
@@ -131,46 +130,32 @@ object XGridColumn {
     __obj.asInstanceOf[XGridColumn]
   }
   
-  @scala.inline
-  implicit class XGridColumnMutableBuilder[Self <: XGridColumn] (val x: Self) extends AnyVal {
+  extension [Self <: XGridColumn](x: Self) {
     
-    @scala.inline
-    def setAddGridColumnListener(value: XGridColumnListener => Unit): Self = StObject.set(x, "addGridColumnListener", js.Any.fromFunction1(value))
+    inline def setAddGridColumnListener(value: XGridColumnListener => Unit): Self = StObject.set(x, "addGridColumnListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setColumnWidth(value: Double): Self = StObject.set(x, "ColumnWidth", value.asInstanceOf[js.Any])
+    inline def setColumnWidth(value: Double): Self = StObject.set(x, "ColumnWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataColumnIndex(value: Double): Self = StObject.set(x, "DataColumnIndex", value.asInstanceOf[js.Any])
+    inline def setDataColumnIndex(value: Double): Self = StObject.set(x, "DataColumnIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlexibility(value: Double): Self = StObject.set(x, "Flexibility", value.asInstanceOf[js.Any])
+    inline def setFlexibility(value: Double): Self = StObject.set(x, "Flexibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelpText(value: String): Self = StObject.set(x, "HelpText", value.asInstanceOf[js.Any])
+    inline def setHelpText(value: String): Self = StObject.set(x, "HelpText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalAlign(value: HorizontalAlignment): Self = StObject.set(x, "HorizontalAlign", value.asInstanceOf[js.Any])
+    inline def setHorizontalAlign(value: HorizontalAlignment): Self = StObject.set(x, "HorizontalAlign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifier(value: js.Any): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: js.Any): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxWidth(value: Double): Self = StObject.set(x, "MaxWidth", value.asInstanceOf[js.Any])
+    inline def setMaxWidth(value: Double): Self = StObject.set(x, "MaxWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinWidth(value: Double): Self = StObject.set(x, "MinWidth", value.asInstanceOf[js.Any])
+    inline def setMinWidth(value: Double): Self = StObject.set(x, "MinWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveGridColumnListener(value: XGridColumnListener => Unit): Self = StObject.set(x, "removeGridColumnListener", js.Any.fromFunction1(value))
+    inline def setRemoveGridColumnListener(value: XGridColumnListener => Unit): Self = StObject.set(x, "removeGridColumnListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResizeable(value: Boolean): Self = StObject.set(x, "Resizeable", value.asInstanceOf[js.Any])
+    inline def setResizeable(value: Boolean): Self = StObject.set(x, "Resizeable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
   }
 }

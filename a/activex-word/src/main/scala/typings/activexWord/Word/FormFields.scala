@@ -20,13 +20,12 @@ trait FormFields extends StObject {
   
   var Shaded: Boolean
   
-  @JSName("Word.FormFields_typekey")
+  /* private */ @JSName("Word.FormFields_typekey")
   var WordDotFormFields_typekey: FormFields
 }
 object FormFields {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Add: (Range, WdFieldType) => FormField,
     Application: Application,
     Count: Double,
@@ -41,31 +40,22 @@ object FormFields {
     __obj.asInstanceOf[FormFields]
   }
   
-  @scala.inline
-  implicit class FormFieldsMutableBuilder[Self <: FormFields] (val x: Self) extends AnyVal {
+  extension [Self <: FormFields](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (Range, WdFieldType) => FormField): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (Range, WdFieldType) => FormField): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: js.Any => FormField): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: js.Any => FormField): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShaded(value: Boolean): Self = StObject.set(x, "Shaded", value.asInstanceOf[js.Any])
+    inline def setShaded(value: Boolean): Self = StObject.set(x, "Shaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotFormFields_typekey(value: FormFields): Self = StObject.set(x, "Word.FormFields_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotFormFields_typekey(value: FormFields): Self = StObject.set(x, "Word.FormFields_typekey", value.asInstanceOf[js.Any])
   }
 }

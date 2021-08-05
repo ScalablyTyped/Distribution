@@ -54,8 +54,7 @@ trait SelectedRowsCollection extends StObject {
 }
 object SelectedRowsCollection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activate: (js.Object, js.Object, js.Object) => Unit,
     activeRow: () => Unit,
     addSubscriber: (js.Object, js.Object) => Unit,
@@ -84,76 +83,52 @@ object SelectedRowsCollection {
     __obj.asInstanceOf[SelectedRowsCollection]
   }
   
-  @scala.inline
-  implicit class SelectedRowsCollectionMutableBuilder[Self <: SelectedRowsCollection] (val x: Self) extends AnyVal {
+  extension [Self <: SelectedRowsCollection](x: Self) {
     
-    @scala.inline
-    def setActivate(value: (js.Object, js.Object, js.Object) => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction3(value))
+    inline def setActivate(value: (js.Object, js.Object, js.Object) => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setActiveRow(value: () => Unit): Self = StObject.set(x, "activeRow", js.Any.fromFunction0(value))
+    inline def setActiveRow(value: () => Unit): Self = StObject.set(x, "activeRow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAddSubscriber(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "addSubscriber", js.Any.fromFunction2(value))
+    inline def setAddSubscriber(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "addSubscriber", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setChangeOwner(value: js.Object => Unit): Self = StObject.set(x, "changeOwner", js.Any.fromFunction1(value))
+    inline def setChangeOwner(value: js.Object => Unit): Self = StObject.set(x, "changeOwner", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCleanAll(value: js.Object => Unit): Self = StObject.set(x, "cleanAll", js.Any.fromFunction1(value))
+    inline def setCleanAll(value: js.Object => Unit): Self = StObject.set(x, "cleanAll", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClearSelection(value: js.Object => Unit): Self = StObject.set(x, "clearSelection", js.Any.fromFunction1(value))
+    inline def setClearSelection(value: js.Object => Unit): Self = StObject.set(x, "clearSelection", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDeactivate(value: js.Object => Unit): Self = StObject.set(x, "deactivate", js.Any.fromFunction1(value))
+    inline def setDeactivate(value: js.Object => Unit): Self = StObject.set(x, "deactivate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDeselect(value: (js.Object, js.Object, js.Object) => Unit): Self = StObject.set(x, "deselect", js.Any.fromFunction3(value))
+    inline def setDeselect(value: (js.Object, js.Object, js.Object) => Unit): Self = StObject.set(x, "deselect", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setDeselectAll(value: js.Object => Unit): Self = StObject.set(x, "deselectAll", js.Any.fromFunction1(value))
+    inline def setDeselectAll(value: js.Object => Unit): Self = StObject.set(x, "deselectAll", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setElementFromIdentifier(value: js.Object => Unit): Self = StObject.set(x, "elementFromIdentifier", js.Any.fromFunction1(value))
+    inline def setElementFromIdentifier(value: js.Object => Unit): Self = StObject.set(x, "elementFromIdentifier", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setElementPosition(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "elementPosition", js.Any.fromFunction2(value))
+    inline def setElementPosition(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "elementPosition", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setIsActive(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "isActive", js.Any.fromFunction2(value))
+    inline def setIsActive(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "isActive", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setIsSelected(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "isSelected", js.Any.fromFunction2(value))
+    inline def setIsSelected(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "isSelected", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnlyOneSelected(value: () => Unit): Self = StObject.set(x, "onlyOneSelected", js.Any.fromFunction0(value))
+    inline def setOnlyOneSelected(value: () => Unit): Self = StObject.set(x, "onlyOneSelected", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRangeDeselect(value: (js.Object, js.Object, js.Object) => Unit): Self = StObject.set(x, "rangeDeselect", js.Any.fromFunction3(value))
+    inline def setRangeDeselect(value: (js.Object, js.Object, js.Object) => Unit): Self = StObject.set(x, "rangeDeselect", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRangeSelect(value: (js.Object, js.Object, js.Object, js.Object, js.Object) => Unit): Self = StObject.set(x, "rangeSelect", js.Any.fromFunction5(value))
+    inline def setRangeSelect(value: (js.Object, js.Object, js.Object, js.Object, js.Object) => Unit): Self = StObject.set(x, "rangeSelect", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setRemoveSubscriber(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "removeSubscriber", js.Any.fromFunction2(value))
+    inline def setRemoveSubscriber(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "removeSubscriber", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSelect(value: (js.Object, js.Object, js.Object, js.Object) => Unit): Self = StObject.set(x, "select", js.Any.fromFunction4(value))
+    inline def setSelect(value: (js.Object, js.Object, js.Object, js.Object) => Unit): Self = StObject.set(x, "select", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setSelectedCells(value: () => Unit): Self = StObject.set(x, "selectedCells", js.Any.fromFunction0(value))
+    inline def setSelectedCells(value: () => Unit): Self = StObject.set(x, "selectedCells", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSelectedDataRows(value: () => Unit): Self = StObject.set(x, "selectedDataRows", js.Any.fromFunction0(value))
+    inline def setSelectedDataRows(value: () => Unit): Self = StObject.set(x, "selectedDataRows", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSelectedRows(value: () => Unit): Self = StObject.set(x, "selectedRows", js.Any.fromFunction0(value))
+    inline def setSelectedRows(value: () => Unit): Self = StObject.set(x, "selectedRows", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSelectionLength(value: () => Unit): Self = StObject.set(x, "selectionLength", js.Any.fromFunction0(value))
+    inline def setSelectionLength(value: () => Unit): Self = StObject.set(x, "selectionLength", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToggle(value: js.Object => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
+    inline def setToggle(value: js.Object => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
   }
 }

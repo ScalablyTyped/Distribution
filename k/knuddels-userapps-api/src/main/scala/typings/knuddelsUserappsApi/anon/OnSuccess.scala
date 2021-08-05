@@ -20,31 +20,23 @@ trait OnSuccess extends StObject {
 }
 object OnSuccess {
   
-  @scala.inline
-  def apply(): OnSuccess = {
+  inline def apply(): OnSuccess = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnSuccess]
   }
   
-  @scala.inline
-  implicit class OnSuccessMutableBuilder[Self <: OnSuccess] (val x: Self) extends AnyVal {
+  extension [Self <: OnSuccess](x: Self) {
     
-    @scala.inline
-    def setData(value: Json): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Json): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setOnFailure(value: (/* responseData */ String, /* externalServerResponse */ ExternalServerResponse) => Unit): Self = StObject.set(x, "onFailure", js.Any.fromFunction2(value))
+    inline def setOnFailure(value: (/* responseData */ String, /* externalServerResponse */ ExternalServerResponse) => Unit): Self = StObject.set(x, "onFailure", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
+    inline def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
     
-    @scala.inline
-    def setOnSuccess(value: (/* responseData */ String, /* externalServerResponse */ ExternalServerResponse) => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction2(value))
+    inline def setOnSuccess(value: (/* responseData */ String, /* externalServerResponse */ ExternalServerResponse) => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
+    inline def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
   }
 }

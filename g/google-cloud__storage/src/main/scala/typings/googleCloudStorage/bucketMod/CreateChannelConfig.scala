@@ -12,16 +12,13 @@ trait CreateChannelConfig
 }
 object CreateChannelConfig {
   
-  @scala.inline
-  def apply(address: String): CreateChannelConfig = {
+  inline def apply(address: String): CreateChannelConfig = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateChannelConfig]
   }
   
-  @scala.inline
-  implicit class CreateChannelConfigMutableBuilder[Self <: CreateChannelConfig] (val x: Self) extends AnyVal {
+  extension [Self <: CreateChannelConfig](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
   }
 }

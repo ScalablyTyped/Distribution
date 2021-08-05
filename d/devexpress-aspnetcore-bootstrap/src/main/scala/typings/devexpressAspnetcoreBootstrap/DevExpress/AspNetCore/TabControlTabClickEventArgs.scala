@@ -14,8 +14,7 @@ trait TabControlTabClickEventArgs
 }
 object TabControlTabClickEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cancel: Boolean,
     htmlElement: js.Object,
     htmlEvent: js.Object,
@@ -28,13 +27,10 @@ object TabControlTabClickEventArgs {
     __obj.asInstanceOf[TabControlTabClickEventArgs]
   }
   
-  @scala.inline
-  implicit class TabControlTabClickEventArgsMutableBuilder[Self <: TabControlTabClickEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: TabControlTabClickEventArgs](x: Self) {
     
-    @scala.inline
-    def setHtmlElement(value: js.Object): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
+    inline def setHtmlElement(value: js.Object): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlEvent(value: js.Object): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+    inline def setHtmlEvent(value: js.Object): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
   }
 }

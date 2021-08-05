@@ -12,28 +12,21 @@ trait OnlyFromCamera extends StObject {
 }
 object OnlyFromCamera {
   
-  @scala.inline
-  def apply(): OnlyFromCamera = {
+  inline def apply(): OnlyFromCamera = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnlyFromCamera]
   }
   
-  @scala.inline
-  implicit class OnlyFromCameraMutableBuilder[Self <: OnlyFromCamera] (val x: Self) extends AnyVal {
+  extension [Self <: OnlyFromCamera](x: Self) {
     
-    @scala.inline
-    def setOnlyFromCamera(value: Boolean): Self = StObject.set(x, "onlyFromCamera", value.asInstanceOf[js.Any])
+    inline def setOnlyFromCamera(value: Boolean): Self = StObject.set(x, "onlyFromCamera", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlyFromCameraUndefined: Self = StObject.set(x, "onlyFromCamera", js.undefined)
+    inline def setOnlyFromCameraUndefined: Self = StObject.set(x, "onlyFromCamera", js.undefined)
     
-    @scala.inline
-    def setScanType(value: js.Array[String]): Self = StObject.set(x, "scanType", value.asInstanceOf[js.Any])
+    inline def setScanType(value: js.Array[String]): Self = StObject.set(x, "scanType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScanTypeUndefined: Self = StObject.set(x, "scanType", js.undefined)
+    inline def setScanTypeUndefined: Self = StObject.set(x, "scanType", js.undefined)
     
-    @scala.inline
-    def setScanTypeVarargs(value: String*): Self = StObject.set(x, "scanType", js.Array(value :_*))
+    inline def setScanTypeVarargs(value: String*): Self = StObject.set(x, "scanType", js.Array(value :_*))
   }
 }

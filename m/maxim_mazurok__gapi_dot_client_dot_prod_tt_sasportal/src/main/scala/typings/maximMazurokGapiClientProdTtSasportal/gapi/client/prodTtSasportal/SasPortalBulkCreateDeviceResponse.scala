@@ -11,22 +11,17 @@ trait SasPortalBulkCreateDeviceResponse extends StObject {
 }
 object SasPortalBulkCreateDeviceResponse {
   
-  @scala.inline
-  def apply(): SasPortalBulkCreateDeviceResponse = {
+  inline def apply(): SasPortalBulkCreateDeviceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SasPortalBulkCreateDeviceResponse]
   }
   
-  @scala.inline
-  implicit class SasPortalBulkCreateDeviceResponseMutableBuilder[Self <: SasPortalBulkCreateDeviceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SasPortalBulkCreateDeviceResponse](x: Self) {
     
-    @scala.inline
-    def setDevices(value: js.Array[SasPortalDevice]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
+    inline def setDevices(value: js.Array[SasPortalDevice]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevicesUndefined: Self = StObject.set(x, "devices", js.undefined)
+    inline def setDevicesUndefined: Self = StObject.set(x, "devices", js.undefined)
     
-    @scala.inline
-    def setDevicesVarargs(value: SasPortalDevice*): Self = StObject.set(x, "devices", js.Array(value :_*))
+    inline def setDevicesVarargs(value: SasPortalDevice*): Self = StObject.set(x, "devices", js.Array(value :_*))
   }
 }

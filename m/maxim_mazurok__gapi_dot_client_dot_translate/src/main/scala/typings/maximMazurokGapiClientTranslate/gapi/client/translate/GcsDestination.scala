@@ -14,19 +14,15 @@ trait GcsDestination extends StObject {
 }
 object GcsDestination {
   
-  @scala.inline
-  def apply(): GcsDestination = {
+  inline def apply(): GcsDestination = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GcsDestination]
   }
   
-  @scala.inline
-  implicit class GcsDestinationMutableBuilder[Self <: GcsDestination] (val x: Self) extends AnyVal {
+  extension [Self <: GcsDestination](x: Self) {
     
-    @scala.inline
-    def setOutputUriPrefix(value: String): Self = StObject.set(x, "outputUriPrefix", value.asInstanceOf[js.Any])
+    inline def setOutputUriPrefix(value: String): Self = StObject.set(x, "outputUriPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputUriPrefixUndefined: Self = StObject.set(x, "outputUriPrefix", js.undefined)
+    inline def setOutputUriPrefixUndefined: Self = StObject.set(x, "outputUriPrefix", js.undefined)
   }
 }

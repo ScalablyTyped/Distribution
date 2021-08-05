@@ -10,16 +10,13 @@ trait PluginImport extends StObject {
 }
 object PluginImport {
   
-  @scala.inline
-  def apply(name: java.lang.String): PluginImport = {
+  inline def apply(name: java.lang.String): PluginImport = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginImport]
   }
   
-  @scala.inline
-  implicit class PluginImportMutableBuilder[Self <: PluginImport] (val x: Self) extends AnyVal {
+  extension [Self <: PluginImport](x: Self) {
     
-    @scala.inline
-    def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

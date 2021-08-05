@@ -15,20 +15,16 @@ object anon {
   }
   object Cols {
     
-    @scala.inline
-    def apply(cols: Double, rows: Double): Cols = {
+    inline def apply(cols: Double, rows: Double): Cols = {
       val __obj = js.Dynamic.literal(cols = cols.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
       __obj.asInstanceOf[Cols]
     }
     
-    @scala.inline
-    implicit class ColsMutableBuilder[Self <: Cols] (val x: Self) extends AnyVal {
+    extension [Self <: Cols](x: Self) {
       
-      @scala.inline
-      def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
+      inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     }
   }
   
@@ -40,20 +36,16 @@ object anon {
   }
   object DomEvent {
     
-    @scala.inline
-    def apply(domEvent: KeyboardEvent, key: String): DomEvent = {
+    inline def apply(domEvent: KeyboardEvent, key: String): DomEvent = {
       val __obj = js.Dynamic.literal(domEvent = domEvent.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[DomEvent]
     }
     
-    @scala.inline
-    implicit class DomEventMutableBuilder[Self <: DomEvent] (val x: Self) extends AnyVal {
+    extension [Self <: DomEvent](x: Self) {
       
-      @scala.inline
-      def setDomEvent(value: KeyboardEvent): Self = StObject.set(x, "domEvent", value.asInstanceOf[js.Any])
+      inline def setDomEvent(value: KeyboardEvent): Self = StObject.set(x, "domEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }
   }
   
@@ -65,20 +57,16 @@ object anon {
   }
   object End {
     
-    @scala.inline
-    def apply(end: Double, start: Double): End = {
+    inline def apply(end: Double, start: Double): End = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[End]
     }
     
-    @scala.inline
-    implicit class EndMutableBuilder[Self <: End] (val x: Self) extends AnyVal {
+    extension [Self <: End](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
 }

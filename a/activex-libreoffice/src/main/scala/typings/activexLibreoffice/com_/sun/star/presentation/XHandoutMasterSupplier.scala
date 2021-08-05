@@ -20,8 +20,7 @@ trait XHandoutMasterSupplier
 }
 object XHandoutMasterSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     HandoutMasterPage: XDrawPage,
     acquire: () => Unit,
     getHandoutMasterPage: () => XDrawPage,
@@ -32,13 +31,10 @@ object XHandoutMasterSupplier {
     __obj.asInstanceOf[XHandoutMasterSupplier]
   }
   
-  @scala.inline
-  implicit class XHandoutMasterSupplierMutableBuilder[Self <: XHandoutMasterSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XHandoutMasterSupplier](x: Self) {
     
-    @scala.inline
-    def setGetHandoutMasterPage(value: () => XDrawPage): Self = StObject.set(x, "getHandoutMasterPage", js.Any.fromFunction0(value))
+    inline def setGetHandoutMasterPage(value: () => XDrawPage): Self = StObject.set(x, "getHandoutMasterPage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHandoutMasterPage(value: XDrawPage): Self = StObject.set(x, "HandoutMasterPage", value.asInstanceOf[js.Any])
+    inline def setHandoutMasterPage(value: XDrawPage): Self = StObject.set(x, "HandoutMasterPage", value.asInstanceOf[js.Any])
   }
 }

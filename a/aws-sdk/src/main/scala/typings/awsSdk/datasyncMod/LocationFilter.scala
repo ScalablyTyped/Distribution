@@ -23,25 +23,19 @@ trait LocationFilter extends StObject {
 }
 object LocationFilter {
   
-  @scala.inline
-  def apply(Name: LocationFilterName, Operator: Operator, Values: FilterValues): LocationFilter = {
+  inline def apply(Name: LocationFilterName, Operator: Operator, Values: FilterValues): LocationFilter = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Operator = Operator.asInstanceOf[js.Any], Values = Values.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationFilter]
   }
   
-  @scala.inline
-  implicit class LocationFilterMutableBuilder[Self <: LocationFilter] (val x: Self) extends AnyVal {
+  extension [Self <: LocationFilter](x: Self) {
     
-    @scala.inline
-    def setName(value: LocationFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: LocationFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperator(value: Operator): Self = StObject.set(x, "Operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: Operator): Self = StObject.set(x, "Operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: FilterValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: FilterValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: FilterAttributeValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: FilterAttributeValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

@@ -80,21 +80,16 @@ object resourceShareAccepterMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ResourceShareAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ResourceShareAccepter]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ResourceShareAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResourceShareAccepter]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ResourceShareAccepterState): ResourceShareAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ResourceShareAccepter]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ResourceShareAccepterState, opts: CustomResourceOptions): ResourceShareAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResourceShareAccepter]
+    inline def get(name: String, id: Input[ID]): ResourceShareAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ResourceShareAccepter]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ResourceShareAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResourceShareAccepter]
+    inline def get(name: String, id: Input[ID], state: ResourceShareAccepterState): ResourceShareAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ResourceShareAccepter]
+    inline def get(name: String, id: Input[ID], state: ResourceShareAccepterState, opts: CustomResourceOptions): ResourceShareAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResourceShareAccepter]
     
     /**
       * Returns true if the given object is an instance of ResourceShareAccepter.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ram/resourceShareAccepter.ResourceShareAccepter */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ram/resourceShareAccepter.ResourceShareAccepter */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ram/resourceShareAccepter.ResourceShareAccepter */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ram/resourceShareAccepter.ResourceShareAccepter */ Boolean]
   }
   
   trait ResourceShareAccepterArgs extends StObject {
@@ -106,17 +101,14 @@ object resourceShareAccepterMod {
   }
   object ResourceShareAccepterArgs {
     
-    @scala.inline
-    def apply(shareArn: Input[String]): ResourceShareAccepterArgs = {
+    inline def apply(shareArn: Input[String]): ResourceShareAccepterArgs = {
       val __obj = js.Dynamic.literal(shareArn = shareArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResourceShareAccepterArgs]
     }
     
-    @scala.inline
-    implicit class ResourceShareAccepterArgsMutableBuilder[Self <: ResourceShareAccepterArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceShareAccepterArgs](x: Self) {
       
-      @scala.inline
-      def setShareArn(value: Input[String]): Self = StObject.set(x, "shareArn", value.asInstanceOf[js.Any])
+      inline def setShareArn(value: Input[String]): Self = StObject.set(x, "shareArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -164,65 +156,46 @@ object resourceShareAccepterMod {
   }
   object ResourceShareAccepterState {
     
-    @scala.inline
-    def apply(): ResourceShareAccepterState = {
+    inline def apply(): ResourceShareAccepterState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ResourceShareAccepterState]
     }
     
-    @scala.inline
-    implicit class ResourceShareAccepterStateMutableBuilder[Self <: ResourceShareAccepterState] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceShareAccepterState](x: Self) {
       
-      @scala.inline
-      def setInvitationArn(value: Input[String]): Self = StObject.set(x, "invitationArn", value.asInstanceOf[js.Any])
+      inline def setInvitationArn(value: Input[String]): Self = StObject.set(x, "invitationArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvitationArnUndefined: Self = StObject.set(x, "invitationArn", js.undefined)
+      inline def setInvitationArnUndefined: Self = StObject.set(x, "invitationArn", js.undefined)
       
-      @scala.inline
-      def setReceiverAccountId(value: Input[String]): Self = StObject.set(x, "receiverAccountId", value.asInstanceOf[js.Any])
+      inline def setReceiverAccountId(value: Input[String]): Self = StObject.set(x, "receiverAccountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReceiverAccountIdUndefined: Self = StObject.set(x, "receiverAccountId", js.undefined)
+      inline def setReceiverAccountIdUndefined: Self = StObject.set(x, "receiverAccountId", js.undefined)
       
-      @scala.inline
-      def setResources(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+      inline def setResources(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
+      inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
       
-      @scala.inline
-      def setResourcesVarargs(value: Input[String]*): Self = StObject.set(x, "resources", js.Array(value :_*))
+      inline def setResourcesVarargs(value: Input[String]*): Self = StObject.set(x, "resources", js.Array(value :_*))
       
-      @scala.inline
-      def setSenderAccountId(value: Input[String]): Self = StObject.set(x, "senderAccountId", value.asInstanceOf[js.Any])
+      inline def setSenderAccountId(value: Input[String]): Self = StObject.set(x, "senderAccountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSenderAccountIdUndefined: Self = StObject.set(x, "senderAccountId", js.undefined)
+      inline def setSenderAccountIdUndefined: Self = StObject.set(x, "senderAccountId", js.undefined)
       
-      @scala.inline
-      def setShareArn(value: Input[String]): Self = StObject.set(x, "shareArn", value.asInstanceOf[js.Any])
+      inline def setShareArn(value: Input[String]): Self = StObject.set(x, "shareArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShareArnUndefined: Self = StObject.set(x, "shareArn", js.undefined)
+      inline def setShareArnUndefined: Self = StObject.set(x, "shareArn", js.undefined)
       
-      @scala.inline
-      def setShareId(value: Input[String]): Self = StObject.set(x, "shareId", value.asInstanceOf[js.Any])
+      inline def setShareId(value: Input[String]): Self = StObject.set(x, "shareId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShareIdUndefined: Self = StObject.set(x, "shareId", js.undefined)
+      inline def setShareIdUndefined: Self = StObject.set(x, "shareId", js.undefined)
       
-      @scala.inline
-      def setShareName(value: Input[String]): Self = StObject.set(x, "shareName", value.asInstanceOf[js.Any])
+      inline def setShareName(value: Input[String]): Self = StObject.set(x, "shareName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShareNameUndefined: Self = StObject.set(x, "shareName", js.undefined)
+      inline def setShareNameUndefined: Self = StObject.set(x, "shareName", js.undefined)
       
-      @scala.inline
-      def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     }
   }
 }

@@ -14,28 +14,21 @@ trait CustomEventsBatchInsertRequest extends StObject {
 }
 object CustomEventsBatchInsertRequest {
   
-  @scala.inline
-  def apply(): CustomEventsBatchInsertRequest = {
+  inline def apply(): CustomEventsBatchInsertRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomEventsBatchInsertRequest]
   }
   
-  @scala.inline
-  implicit class CustomEventsBatchInsertRequestMutableBuilder[Self <: CustomEventsBatchInsertRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CustomEventsBatchInsertRequest](x: Self) {
     
-    @scala.inline
-    def setCustomEvents(value: js.Array[CustomEvent]): Self = StObject.set(x, "customEvents", value.asInstanceOf[js.Any])
+    inline def setCustomEvents(value: js.Array[CustomEvent]): Self = StObject.set(x, "customEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomEventsUndefined: Self = StObject.set(x, "customEvents", js.undefined)
+    inline def setCustomEventsUndefined: Self = StObject.set(x, "customEvents", js.undefined)
     
-    @scala.inline
-    def setCustomEventsVarargs(value: CustomEvent*): Self = StObject.set(x, "customEvents", js.Array(value :_*))
+    inline def setCustomEventsVarargs(value: CustomEvent*): Self = StObject.set(x, "customEvents", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

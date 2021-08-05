@@ -16,20 +16,16 @@ trait DirectiveLiteral_
 }
 object DirectiveLiteral_ {
   
-  @scala.inline
-  def apply(end: Double, loc: SourceLocation, start: Double, value: String): DirectiveLiteral_ = {
+  inline def apply(end: Double, loc: SourceLocation, start: Double, value: String): DirectiveLiteral_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("DirectiveLiteral")
     __obj.asInstanceOf[DirectiveLiteral_]
   }
   
-  @scala.inline
-  implicit class DirectiveLiteral_MutableBuilder[Self <: DirectiveLiteral_] (val x: Self) extends AnyVal {
+  extension [Self <: DirectiveLiteral_](x: Self) {
     
-    @scala.inline
-    def setType(value: DirectiveLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: DirectiveLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

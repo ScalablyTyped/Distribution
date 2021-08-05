@@ -17,37 +17,27 @@ trait WriteOptions extends StObject {
 }
 object WriteOptions {
   
-  @scala.inline
-  def apply(): WriteOptions = {
+  inline def apply(): WriteOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WriteOptions]
   }
   
-  @scala.inline
-  implicit class WriteOptionsMutableBuilder[Self <: WriteOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WriteOptions](x: Self) {
     
-    @scala.inline
-    def setDataProjection(value: ProjectionLike): Self = StObject.set(x, "dataProjection", value.asInstanceOf[js.Any])
+    inline def setDataProjection(value: ProjectionLike): Self = StObject.set(x, "dataProjection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataProjectionUndefined: Self = StObject.set(x, "dataProjection", js.undefined)
+    inline def setDataProjectionUndefined: Self = StObject.set(x, "dataProjection", js.undefined)
     
-    @scala.inline
-    def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
+    inline def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecimalsUndefined: Self = StObject.set(x, "decimals", js.undefined)
+    inline def setDecimalsUndefined: Self = StObject.set(x, "decimals", js.undefined)
     
-    @scala.inline
-    def setFeatureProjection(value: ProjectionLike): Self = StObject.set(x, "featureProjection", value.asInstanceOf[js.Any])
+    inline def setFeatureProjection(value: ProjectionLike): Self = StObject.set(x, "featureProjection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureProjectionUndefined: Self = StObject.set(x, "featureProjection", js.undefined)
+    inline def setFeatureProjectionUndefined: Self = StObject.set(x, "featureProjection", js.undefined)
     
-    @scala.inline
-    def setRightHanded(value: Boolean): Self = StObject.set(x, "rightHanded", value.asInstanceOf[js.Any])
+    inline def setRightHanded(value: Boolean): Self = StObject.set(x, "rightHanded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightHandedUndefined: Self = StObject.set(x, "rightHanded", js.undefined)
+    inline def setRightHandedUndefined: Self = StObject.set(x, "rightHanded", js.undefined)
   }
 }

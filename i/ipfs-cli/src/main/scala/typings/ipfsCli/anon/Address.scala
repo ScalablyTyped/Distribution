@@ -14,22 +14,17 @@ trait Address extends StObject {
 }
 object Address {
   
-  @scala.inline
-  def apply(address: js.Any, ctx: IpfsIsDaemon, timeout: js.Any): Address = {
+  inline def apply(address: js.Any, ctx: IpfsIsDaemon, timeout: js.Any): Address = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], ctx = ctx.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Address]
   }
   
-  @scala.inline
-  implicit class AddressMutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
+  extension [Self <: Address](x: Self) {
     
-    @scala.inline
-    def setAddress(value: js.Any): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: js.Any): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCtx(value: IpfsIsDaemon): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
+    inline def setCtx(value: IpfsIsDaemon): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

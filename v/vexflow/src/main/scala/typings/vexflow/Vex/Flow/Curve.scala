@@ -20,8 +20,7 @@ trait Curve extends StObject {
 }
 object Curve {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     draw: () => Boolean,
     isPartial: () => Boolean,
     renderCurve: Direction => Unit,
@@ -49,22 +48,16 @@ object Curve {
          with Position
   }
   
-  @scala.inline
-  implicit class CurveMutableBuilder[Self <: Curve] (val x: Self) extends AnyVal {
+  extension [Self <: Curve](x: Self) {
     
-    @scala.inline
-    def setDraw(value: () => Boolean): Self = StObject.set(x, "draw", js.Any.fromFunction0(value))
+    inline def setDraw(value: () => Boolean): Self = StObject.set(x, "draw", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsPartial(value: () => Boolean): Self = StObject.set(x, "isPartial", js.Any.fromFunction0(value))
+    inline def setIsPartial(value: () => Boolean): Self = StObject.set(x, "isPartial", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRenderCurve(value: Direction => Unit): Self = StObject.set(x, "renderCurve", js.Any.fromFunction1(value))
+    inline def setRenderCurve(value: Direction => Unit): Self = StObject.set(x, "renderCurve", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetContext(value: IRenderContext => Curve): Self = StObject.set(x, "setContext", js.Any.fromFunction1(value))
+    inline def setSetContext(value: IRenderContext => Curve): Self = StObject.set(x, "setContext", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetNotes(value: (Note, Note) => Curve): Self = StObject.set(x, "setNotes", js.Any.fromFunction2(value))
+    inline def setSetNotes(value: (Note, Note) => Curve): Self = StObject.set(x, "setNotes", js.Any.fromFunction2(value))
   }
 }

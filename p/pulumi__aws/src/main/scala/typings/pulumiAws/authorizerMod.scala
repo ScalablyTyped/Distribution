@@ -103,21 +103,16 @@ object authorizerMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Authorizer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Authorizer]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Authorizer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Authorizer]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AuthorizerState): Authorizer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Authorizer]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AuthorizerState, opts: CustomResourceOptions): Authorizer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Authorizer]
+    inline def get(name: String, id: Input[ID]): Authorizer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Authorizer]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Authorizer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Authorizer]
+    inline def get(name: String, id: Input[ID], state: AuthorizerState): Authorizer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Authorizer]
+    inline def get(name: String, id: Input[ID], state: AuthorizerState, opts: CustomResourceOptions): Authorizer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Authorizer]
     
     /**
       * Returns true if the given object is an instance of Authorizer.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigatewayv2/authorizer.Authorizer */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigatewayv2/authorizer.Authorizer */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigatewayv2/authorizer.Authorizer */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigatewayv2/authorizer.Authorizer */ Boolean]
   }
   
   trait AuthorizerArgs extends StObject {
@@ -186,71 +181,50 @@ object authorizerMod {
   }
   object AuthorizerArgs {
     
-    @scala.inline
-    def apply(apiId: Input[String], authorizerType: Input[String]): AuthorizerArgs = {
+    inline def apply(apiId: Input[String], authorizerType: Input[String]): AuthorizerArgs = {
       val __obj = js.Dynamic.literal(apiId = apiId.asInstanceOf[js.Any], authorizerType = authorizerType.asInstanceOf[js.Any])
       __obj.asInstanceOf[AuthorizerArgs]
     }
     
-    @scala.inline
-    implicit class AuthorizerArgsMutableBuilder[Self <: AuthorizerArgs] (val x: Self) extends AnyVal {
+    extension [Self <: AuthorizerArgs](x: Self) {
       
-      @scala.inline
-      def setApiId(value: Input[String]): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
+      inline def setApiId(value: Input[String]): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorizerCredentialsArn(value: Input[String]): Self = StObject.set(x, "authorizerCredentialsArn", value.asInstanceOf[js.Any])
+      inline def setAuthorizerCredentialsArn(value: Input[String]): Self = StObject.set(x, "authorizerCredentialsArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorizerCredentialsArnUndefined: Self = StObject.set(x, "authorizerCredentialsArn", js.undefined)
+      inline def setAuthorizerCredentialsArnUndefined: Self = StObject.set(x, "authorizerCredentialsArn", js.undefined)
       
-      @scala.inline
-      def setAuthorizerPayloadFormatVersion(value: Input[String]): Self = StObject.set(x, "authorizerPayloadFormatVersion", value.asInstanceOf[js.Any])
+      inline def setAuthorizerPayloadFormatVersion(value: Input[String]): Self = StObject.set(x, "authorizerPayloadFormatVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorizerPayloadFormatVersionUndefined: Self = StObject.set(x, "authorizerPayloadFormatVersion", js.undefined)
+      inline def setAuthorizerPayloadFormatVersionUndefined: Self = StObject.set(x, "authorizerPayloadFormatVersion", js.undefined)
       
-      @scala.inline
-      def setAuthorizerResultTtlInSeconds(value: Input[Double]): Self = StObject.set(x, "authorizerResultTtlInSeconds", value.asInstanceOf[js.Any])
+      inline def setAuthorizerResultTtlInSeconds(value: Input[Double]): Self = StObject.set(x, "authorizerResultTtlInSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorizerResultTtlInSecondsUndefined: Self = StObject.set(x, "authorizerResultTtlInSeconds", js.undefined)
+      inline def setAuthorizerResultTtlInSecondsUndefined: Self = StObject.set(x, "authorizerResultTtlInSeconds", js.undefined)
       
-      @scala.inline
-      def setAuthorizerType(value: Input[String]): Self = StObject.set(x, "authorizerType", value.asInstanceOf[js.Any])
+      inline def setAuthorizerType(value: Input[String]): Self = StObject.set(x, "authorizerType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorizerUri(value: Input[String]): Self = StObject.set(x, "authorizerUri", value.asInstanceOf[js.Any])
+      inline def setAuthorizerUri(value: Input[String]): Self = StObject.set(x, "authorizerUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorizerUriUndefined: Self = StObject.set(x, "authorizerUri", js.undefined)
+      inline def setAuthorizerUriUndefined: Self = StObject.set(x, "authorizerUri", js.undefined)
       
-      @scala.inline
-      def setEnableSimpleResponses(value: Input[Boolean]): Self = StObject.set(x, "enableSimpleResponses", value.asInstanceOf[js.Any])
+      inline def setEnableSimpleResponses(value: Input[Boolean]): Self = StObject.set(x, "enableSimpleResponses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableSimpleResponsesUndefined: Self = StObject.set(x, "enableSimpleResponses", js.undefined)
+      inline def setEnableSimpleResponsesUndefined: Self = StObject.set(x, "enableSimpleResponses", js.undefined)
       
-      @scala.inline
-      def setIdentitySources(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "identitySources", value.asInstanceOf[js.Any])
+      inline def setIdentitySources(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "identitySources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentitySourcesUndefined: Self = StObject.set(x, "identitySources", js.undefined)
+      inline def setIdentitySourcesUndefined: Self = StObject.set(x, "identitySources", js.undefined)
       
-      @scala.inline
-      def setIdentitySourcesVarargs(value: Input[String]*): Self = StObject.set(x, "identitySources", js.Array(value :_*))
+      inline def setIdentitySourcesVarargs(value: Input[String]*): Self = StObject.set(x, "identitySources", js.Array(value :_*))
       
-      @scala.inline
-      def setJwtConfiguration(value: Input[typings.pulumiAws.inputMod.apigatewayv2.AuthorizerJwtConfiguration]): Self = StObject.set(x, "jwtConfiguration", value.asInstanceOf[js.Any])
+      inline def setJwtConfiguration(value: Input[typings.pulumiAws.inputMod.apigatewayv2.AuthorizerJwtConfiguration]): Self = StObject.set(x, "jwtConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJwtConfigurationUndefined: Self = StObject.set(x, "jwtConfiguration", js.undefined)
+      inline def setJwtConfigurationUndefined: Self = StObject.set(x, "jwtConfiguration", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
   
@@ -320,77 +294,54 @@ object authorizerMod {
   }
   object AuthorizerState {
     
-    @scala.inline
-    def apply(): AuthorizerState = {
+    inline def apply(): AuthorizerState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AuthorizerState]
     }
     
-    @scala.inline
-    implicit class AuthorizerStateMutableBuilder[Self <: AuthorizerState] (val x: Self) extends AnyVal {
+    extension [Self <: AuthorizerState](x: Self) {
       
-      @scala.inline
-      def setApiId(value: Input[String]): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
+      inline def setApiId(value: Input[String]): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiIdUndefined: Self = StObject.set(x, "apiId", js.undefined)
+      inline def setApiIdUndefined: Self = StObject.set(x, "apiId", js.undefined)
       
-      @scala.inline
-      def setAuthorizerCredentialsArn(value: Input[String]): Self = StObject.set(x, "authorizerCredentialsArn", value.asInstanceOf[js.Any])
+      inline def setAuthorizerCredentialsArn(value: Input[String]): Self = StObject.set(x, "authorizerCredentialsArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorizerCredentialsArnUndefined: Self = StObject.set(x, "authorizerCredentialsArn", js.undefined)
+      inline def setAuthorizerCredentialsArnUndefined: Self = StObject.set(x, "authorizerCredentialsArn", js.undefined)
       
-      @scala.inline
-      def setAuthorizerPayloadFormatVersion(value: Input[String]): Self = StObject.set(x, "authorizerPayloadFormatVersion", value.asInstanceOf[js.Any])
+      inline def setAuthorizerPayloadFormatVersion(value: Input[String]): Self = StObject.set(x, "authorizerPayloadFormatVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorizerPayloadFormatVersionUndefined: Self = StObject.set(x, "authorizerPayloadFormatVersion", js.undefined)
+      inline def setAuthorizerPayloadFormatVersionUndefined: Self = StObject.set(x, "authorizerPayloadFormatVersion", js.undefined)
       
-      @scala.inline
-      def setAuthorizerResultTtlInSeconds(value: Input[Double]): Self = StObject.set(x, "authorizerResultTtlInSeconds", value.asInstanceOf[js.Any])
+      inline def setAuthorizerResultTtlInSeconds(value: Input[Double]): Self = StObject.set(x, "authorizerResultTtlInSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorizerResultTtlInSecondsUndefined: Self = StObject.set(x, "authorizerResultTtlInSeconds", js.undefined)
+      inline def setAuthorizerResultTtlInSecondsUndefined: Self = StObject.set(x, "authorizerResultTtlInSeconds", js.undefined)
       
-      @scala.inline
-      def setAuthorizerType(value: Input[String]): Self = StObject.set(x, "authorizerType", value.asInstanceOf[js.Any])
+      inline def setAuthorizerType(value: Input[String]): Self = StObject.set(x, "authorizerType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorizerTypeUndefined: Self = StObject.set(x, "authorizerType", js.undefined)
+      inline def setAuthorizerTypeUndefined: Self = StObject.set(x, "authorizerType", js.undefined)
       
-      @scala.inline
-      def setAuthorizerUri(value: Input[String]): Self = StObject.set(x, "authorizerUri", value.asInstanceOf[js.Any])
+      inline def setAuthorizerUri(value: Input[String]): Self = StObject.set(x, "authorizerUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorizerUriUndefined: Self = StObject.set(x, "authorizerUri", js.undefined)
+      inline def setAuthorizerUriUndefined: Self = StObject.set(x, "authorizerUri", js.undefined)
       
-      @scala.inline
-      def setEnableSimpleResponses(value: Input[Boolean]): Self = StObject.set(x, "enableSimpleResponses", value.asInstanceOf[js.Any])
+      inline def setEnableSimpleResponses(value: Input[Boolean]): Self = StObject.set(x, "enableSimpleResponses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableSimpleResponsesUndefined: Self = StObject.set(x, "enableSimpleResponses", js.undefined)
+      inline def setEnableSimpleResponsesUndefined: Self = StObject.set(x, "enableSimpleResponses", js.undefined)
       
-      @scala.inline
-      def setIdentitySources(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "identitySources", value.asInstanceOf[js.Any])
+      inline def setIdentitySources(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "identitySources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentitySourcesUndefined: Self = StObject.set(x, "identitySources", js.undefined)
+      inline def setIdentitySourcesUndefined: Self = StObject.set(x, "identitySources", js.undefined)
       
-      @scala.inline
-      def setIdentitySourcesVarargs(value: Input[String]*): Self = StObject.set(x, "identitySources", js.Array(value :_*))
+      inline def setIdentitySourcesVarargs(value: Input[String]*): Self = StObject.set(x, "identitySources", js.Array(value :_*))
       
-      @scala.inline
-      def setJwtConfiguration(value: Input[typings.pulumiAws.inputMod.apigatewayv2.AuthorizerJwtConfiguration]): Self = StObject.set(x, "jwtConfiguration", value.asInstanceOf[js.Any])
+      inline def setJwtConfiguration(value: Input[typings.pulumiAws.inputMod.apigatewayv2.AuthorizerJwtConfiguration]): Self = StObject.set(x, "jwtConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJwtConfigurationUndefined: Self = StObject.set(x, "jwtConfiguration", js.undefined)
+      inline def setJwtConfigurationUndefined: Self = StObject.set(x, "jwtConfiguration", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
 }

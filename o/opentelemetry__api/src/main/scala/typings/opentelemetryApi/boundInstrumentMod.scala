@@ -12,17 +12,14 @@ object boundInstrumentMod {
   }
   object BoundBaseObserver {
     
-    @scala.inline
-    def apply(update: Double => Unit): BoundBaseObserver = {
+    inline def apply(update: Double => Unit): BoundBaseObserver = {
       val __obj = js.Dynamic.literal(update = js.Any.fromFunction1(update))
       __obj.asInstanceOf[BoundBaseObserver]
     }
     
-    @scala.inline
-    implicit class BoundBaseObserverMutableBuilder[Self <: BoundBaseObserver] (val x: Self) extends AnyVal {
+    extension [Self <: BoundBaseObserver](x: Self) {
       
-      @scala.inline
-      def setUpdate(value: Double => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+      inline def setUpdate(value: Double => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     }
   }
   
@@ -36,17 +33,14 @@ object boundInstrumentMod {
   }
   object BoundCounter {
     
-    @scala.inline
-    def apply(add: Double => Unit): BoundCounter = {
+    inline def apply(add: Double => Unit): BoundCounter = {
       val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add))
       __obj.asInstanceOf[BoundCounter]
     }
     
-    @scala.inline
-    implicit class BoundCounterMutableBuilder[Self <: BoundCounter] (val x: Self) extends AnyVal {
+    extension [Self <: BoundCounter](x: Self) {
       
-      @scala.inline
-      def setAdd(value: Double => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+      inline def setAdd(value: Double => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     }
   }
   
@@ -60,17 +54,14 @@ object boundInstrumentMod {
   }
   object BoundValueRecorder {
     
-    @scala.inline
-    def apply(record: Double => Unit): BoundValueRecorder = {
+    inline def apply(record: Double => Unit): BoundValueRecorder = {
       val __obj = js.Dynamic.literal(record = js.Any.fromFunction1(record))
       __obj.asInstanceOf[BoundValueRecorder]
     }
     
-    @scala.inline
-    implicit class BoundValueRecorderMutableBuilder[Self <: BoundValueRecorder] (val x: Self) extends AnyVal {
+    extension [Self <: BoundValueRecorder](x: Self) {
       
-      @scala.inline
-      def setRecord(value: Double => Unit): Self = StObject.set(x, "record", js.Any.fromFunction1(value))
+      inline def setRecord(value: Double => Unit): Self = StObject.set(x, "record", js.Any.fromFunction1(value))
     }
   }
 }

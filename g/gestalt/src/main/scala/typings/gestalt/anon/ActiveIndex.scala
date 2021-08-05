@@ -15,8 +15,7 @@ trait ActiveIndex extends StObject {
 }
 object ActiveIndex {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activeIndex: Double,
     event: typings.react.mod.SyntheticEvent[MouseEvent[Element, NativeMouseEvent], typings.std.Event]
   ): ActiveIndex = {
@@ -24,13 +23,10 @@ object ActiveIndex {
     __obj.asInstanceOf[ActiveIndex]
   }
   
-  @scala.inline
-  implicit class ActiveIndexMutableBuilder[Self <: ActiveIndex] (val x: Self) extends AnyVal {
+  extension [Self <: ActiveIndex](x: Self) {
     
-    @scala.inline
-    def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
+    inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent(value: typings.react.mod.SyntheticEvent[MouseEvent[Element, NativeMouseEvent], typings.std.Event]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: typings.react.mod.SyntheticEvent[MouseEvent[Element, NativeMouseEvent], typings.std.Event]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
   }
 }

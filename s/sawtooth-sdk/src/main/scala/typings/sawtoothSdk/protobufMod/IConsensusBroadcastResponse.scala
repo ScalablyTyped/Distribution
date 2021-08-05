@@ -12,22 +12,17 @@ trait IConsensusBroadcastResponse extends StObject {
 }
 object IConsensusBroadcastResponse {
   
-  @scala.inline
-  def apply(): IConsensusBroadcastResponse = {
+  inline def apply(): IConsensusBroadcastResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IConsensusBroadcastResponse]
   }
   
-  @scala.inline
-  implicit class IConsensusBroadcastResponseMutableBuilder[Self <: IConsensusBroadcastResponse] (val x: Self) extends AnyVal {
+  extension [Self <: IConsensusBroadcastResponse](x: Self) {
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusNull: Self = StObject.set(x, "status", null)
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

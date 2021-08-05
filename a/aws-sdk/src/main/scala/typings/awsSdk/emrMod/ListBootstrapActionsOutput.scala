@@ -18,28 +18,21 @@ trait ListBootstrapActionsOutput extends StObject {
 }
 object ListBootstrapActionsOutput {
   
-  @scala.inline
-  def apply(): ListBootstrapActionsOutput = {
+  inline def apply(): ListBootstrapActionsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListBootstrapActionsOutput]
   }
   
-  @scala.inline
-  implicit class ListBootstrapActionsOutputMutableBuilder[Self <: ListBootstrapActionsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListBootstrapActionsOutput](x: Self) {
     
-    @scala.inline
-    def setBootstrapActions(value: CommandList): Self = StObject.set(x, "BootstrapActions", value.asInstanceOf[js.Any])
+    inline def setBootstrapActions(value: CommandList): Self = StObject.set(x, "BootstrapActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBootstrapActionsUndefined: Self = StObject.set(x, "BootstrapActions", js.undefined)
+    inline def setBootstrapActionsUndefined: Self = StObject.set(x, "BootstrapActions", js.undefined)
     
-    @scala.inline
-    def setBootstrapActionsVarargs(value: Command*): Self = StObject.set(x, "BootstrapActions", js.Array(value :_*))
+    inline def setBootstrapActionsVarargs(value: Command*): Self = StObject.set(x, "BootstrapActions", js.Array(value :_*))
     
-    @scala.inline
-    def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

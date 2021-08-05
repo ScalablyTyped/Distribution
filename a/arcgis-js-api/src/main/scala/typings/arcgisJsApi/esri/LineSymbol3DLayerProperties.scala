@@ -43,37 +43,27 @@ trait LineSymbol3DLayerProperties
 }
 object LineSymbol3DLayerProperties {
   
-  @scala.inline
-  def apply(): LineSymbol3DLayerProperties = {
+  inline def apply(): LineSymbol3DLayerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LineSymbol3DLayerProperties]
   }
   
-  @scala.inline
-  implicit class LineSymbol3DLayerPropertiesMutableBuilder[Self <: LineSymbol3DLayerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: LineSymbol3DLayerProperties](x: Self) {
     
-    @scala.inline
-    def setCap(value: butt | round | square): Self = StObject.set(x, "cap", value.asInstanceOf[js.Any])
+    inline def setCap(value: butt | round | square): Self = StObject.set(x, "cap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapUndefined: Self = StObject.set(x, "cap", js.undefined)
+    inline def setCapUndefined: Self = StObject.set(x, "cap", js.undefined)
     
-    @scala.inline
-    def setJoin(value: miter | round | bevel): Self = StObject.set(x, "join", value.asInstanceOf[js.Any])
+    inline def setJoin(value: miter | round | bevel): Self = StObject.set(x, "join", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJoinUndefined: Self = StObject.set(x, "join", js.undefined)
+    inline def setJoinUndefined: Self = StObject.set(x, "join", js.undefined)
     
-    @scala.inline
-    def setMaterial(value: LineSymbol3DLayerMaterialProperties): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
+    inline def setMaterial(value: LineSymbol3DLayerMaterialProperties): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
+    inline def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

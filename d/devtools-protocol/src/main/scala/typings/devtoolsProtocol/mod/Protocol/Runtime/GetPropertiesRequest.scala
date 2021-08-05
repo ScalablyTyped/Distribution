@@ -30,34 +30,25 @@ trait GetPropertiesRequest extends StObject {
 }
 object GetPropertiesRequest {
   
-  @scala.inline
-  def apply(objectId: RemoteObjectId): GetPropertiesRequest = {
+  inline def apply(objectId: RemoteObjectId): GetPropertiesRequest = {
     val __obj = js.Dynamic.literal(objectId = objectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPropertiesRequest]
   }
   
-  @scala.inline
-  implicit class GetPropertiesRequestMutableBuilder[Self <: GetPropertiesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetPropertiesRequest](x: Self) {
     
-    @scala.inline
-    def setAccessorPropertiesOnly(value: Boolean): Self = StObject.set(x, "accessorPropertiesOnly", value.asInstanceOf[js.Any])
+    inline def setAccessorPropertiesOnly(value: Boolean): Self = StObject.set(x, "accessorPropertiesOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessorPropertiesOnlyUndefined: Self = StObject.set(x, "accessorPropertiesOnly", js.undefined)
+    inline def setAccessorPropertiesOnlyUndefined: Self = StObject.set(x, "accessorPropertiesOnly", js.undefined)
     
-    @scala.inline
-    def setGeneratePreview(value: Boolean): Self = StObject.set(x, "generatePreview", value.asInstanceOf[js.Any])
+    inline def setGeneratePreview(value: Boolean): Self = StObject.set(x, "generatePreview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeneratePreviewUndefined: Self = StObject.set(x, "generatePreview", js.undefined)
+    inline def setGeneratePreviewUndefined: Self = StObject.set(x, "generatePreview", js.undefined)
     
-    @scala.inline
-    def setObjectId(value: RemoteObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: RemoteObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnProperties(value: Boolean): Self = StObject.set(x, "ownProperties", value.asInstanceOf[js.Any])
+    inline def setOwnProperties(value: Boolean): Self = StObject.set(x, "ownProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnPropertiesUndefined: Self = StObject.set(x, "ownProperties", js.undefined)
+    inline def setOwnPropertiesUndefined: Self = StObject.set(x, "ownProperties", js.undefined)
   }
 }

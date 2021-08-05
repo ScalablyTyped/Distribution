@@ -36,8 +36,7 @@ trait Team extends StObject {
 }
 object Team {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bans: js.Array[BannedChampion],
     baronKills: Double,
     dominionVictoryScore: Double,
@@ -57,52 +56,36 @@ object Team {
     __obj.asInstanceOf[Team]
   }
   
-  @scala.inline
-  implicit class TeamMutableBuilder[Self <: Team] (val x: Self) extends AnyVal {
+  extension [Self <: Team](x: Self) {
     
-    @scala.inline
-    def setBans(value: js.Array[BannedChampion]): Self = StObject.set(x, "bans", value.asInstanceOf[js.Any])
+    inline def setBans(value: js.Array[BannedChampion]): Self = StObject.set(x, "bans", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBansVarargs(value: BannedChampion*): Self = StObject.set(x, "bans", js.Array(value :_*))
+    inline def setBansVarargs(value: BannedChampion*): Self = StObject.set(x, "bans", js.Array(value :_*))
     
-    @scala.inline
-    def setBaronKills(value: Double): Self = StObject.set(x, "baronKills", value.asInstanceOf[js.Any])
+    inline def setBaronKills(value: Double): Self = StObject.set(x, "baronKills", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDominionVictoryScore(value: Double): Self = StObject.set(x, "dominionVictoryScore", value.asInstanceOf[js.Any])
+    inline def setDominionVictoryScore(value: Double): Self = StObject.set(x, "dominionVictoryScore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragonKills(value: Double): Self = StObject.set(x, "dragonKills", value.asInstanceOf[js.Any])
+    inline def setDragonKills(value: Double): Self = StObject.set(x, "dragonKills", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstBaron(value: Boolean): Self = StObject.set(x, "firstBaron", value.asInstanceOf[js.Any])
+    inline def setFirstBaron(value: Boolean): Self = StObject.set(x, "firstBaron", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstBlood(value: Boolean): Self = StObject.set(x, "firstBlood", value.asInstanceOf[js.Any])
+    inline def setFirstBlood(value: Boolean): Self = StObject.set(x, "firstBlood", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstDragon(value: Boolean): Self = StObject.set(x, "firstDragon", value.asInstanceOf[js.Any])
+    inline def setFirstDragon(value: Boolean): Self = StObject.set(x, "firstDragon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstInhibitor(value: Boolean): Self = StObject.set(x, "firstInhibitor", value.asInstanceOf[js.Any])
+    inline def setFirstInhibitor(value: Boolean): Self = StObject.set(x, "firstInhibitor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstTower(value: Boolean): Self = StObject.set(x, "firstTower", value.asInstanceOf[js.Any])
+    inline def setFirstTower(value: Boolean): Self = StObject.set(x, "firstTower", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInhibitorKills(value: Double): Self = StObject.set(x, "inhibitorKills", value.asInstanceOf[js.Any])
+    inline def setInhibitorKills(value: Double): Self = StObject.set(x, "inhibitorKills", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeamId(value: Double): Self = StObject.set(x, "teamId", value.asInstanceOf[js.Any])
+    inline def setTeamId(value: Double): Self = StObject.set(x, "teamId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTowerKills(value: Double): Self = StObject.set(x, "towerKills", value.asInstanceOf[js.Any])
+    inline def setTowerKills(value: Double): Self = StObject.set(x, "towerKills", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVilemawKills(value: Double): Self = StObject.set(x, "vilemawKills", value.asInstanceOf[js.Any])
+    inline def setVilemawKills(value: Double): Self = StObject.set(x, "vilemawKills", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWinner(value: Boolean): Self = StObject.set(x, "winner", value.asInstanceOf[js.Any])
+    inline def setWinner(value: Boolean): Self = StObject.set(x, "winner", value.asInstanceOf[js.Any])
   }
 }

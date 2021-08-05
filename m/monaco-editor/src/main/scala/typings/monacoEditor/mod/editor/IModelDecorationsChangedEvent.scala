@@ -12,19 +12,15 @@ trait IModelDecorationsChangedEvent extends StObject {
 }
 object IModelDecorationsChangedEvent {
   
-  @scala.inline
-  def apply(affectsMinimap: Boolean, affectsOverviewRuler: Boolean): IModelDecorationsChangedEvent = {
+  inline def apply(affectsMinimap: Boolean, affectsOverviewRuler: Boolean): IModelDecorationsChangedEvent = {
     val __obj = js.Dynamic.literal(affectsMinimap = affectsMinimap.asInstanceOf[js.Any], affectsOverviewRuler = affectsOverviewRuler.asInstanceOf[js.Any])
     __obj.asInstanceOf[IModelDecorationsChangedEvent]
   }
   
-  @scala.inline
-  implicit class IModelDecorationsChangedEventMutableBuilder[Self <: IModelDecorationsChangedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: IModelDecorationsChangedEvent](x: Self) {
     
-    @scala.inline
-    def setAffectsMinimap(value: Boolean): Self = StObject.set(x, "affectsMinimap", value.asInstanceOf[js.Any])
+    inline def setAffectsMinimap(value: Boolean): Self = StObject.set(x, "affectsMinimap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAffectsOverviewRuler(value: Boolean): Self = StObject.set(x, "affectsOverviewRuler", value.asInstanceOf[js.Any])
+    inline def setAffectsOverviewRuler(value: Boolean): Self = StObject.set(x, "affectsOverviewRuler", value.asInstanceOf[js.Any])
   }
 }

@@ -53,8 +53,7 @@ trait ConditionalIconCriterion extends StObject {
 }
 object ConditionalIconCriterion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     formula: String,
     operator: ConditionalIconCriterionOperator | Invalid | GreaterThan | GreaterThanOrEqual,
     `type`: ConditionalFormatIconRuleType | Invalid | Number | Percent | Formula | Percentile
@@ -64,22 +63,16 @@ object ConditionalIconCriterion {
     __obj.asInstanceOf[ConditionalIconCriterion]
   }
   
-  @scala.inline
-  implicit class ConditionalIconCriterionMutableBuilder[Self <: ConditionalIconCriterion] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionalIconCriterion](x: Self) {
     
-    @scala.inline
-    def setCustomIcon(value: Icon): Self = StObject.set(x, "customIcon", value.asInstanceOf[js.Any])
+    inline def setCustomIcon(value: Icon): Self = StObject.set(x, "customIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomIconUndefined: Self = StObject.set(x, "customIcon", js.undefined)
+    inline def setCustomIconUndefined: Self = StObject.set(x, "customIcon", js.undefined)
     
-    @scala.inline
-    def setFormula(value: String): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
+    inline def setFormula(value: String): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperator(value: ConditionalIconCriterionOperator | Invalid | GreaterThan | GreaterThanOrEqual): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: ConditionalIconCriterionOperator | Invalid | GreaterThan | GreaterThanOrEqual): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ConditionalFormatIconRuleType | Invalid | Number | Percent | Formula | Percentile): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ConditionalFormatIconRuleType | Invalid | Number | Percent | Formula | Percentile): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

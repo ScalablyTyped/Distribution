@@ -15,19 +15,15 @@ trait UpdateApnsVoipChannelRequest extends StObject {
 }
 object UpdateApnsVoipChannelRequest {
   
-  @scala.inline
-  def apply(APNSVoipChannelRequest: APNSVoipChannelRequest, ApplicationId: string): UpdateApnsVoipChannelRequest = {
+  inline def apply(APNSVoipChannelRequest: APNSVoipChannelRequest, ApplicationId: string): UpdateApnsVoipChannelRequest = {
     val __obj = js.Dynamic.literal(APNSVoipChannelRequest = APNSVoipChannelRequest.asInstanceOf[js.Any], ApplicationId = ApplicationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateApnsVoipChannelRequest]
   }
   
-  @scala.inline
-  implicit class UpdateApnsVoipChannelRequestMutableBuilder[Self <: UpdateApnsVoipChannelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateApnsVoipChannelRequest](x: Self) {
     
-    @scala.inline
-    def setAPNSVoipChannelRequest(value: APNSVoipChannelRequest): Self = StObject.set(x, "APNSVoipChannelRequest", value.asInstanceOf[js.Any])
+    inline def setAPNSVoipChannelRequest(value: APNSVoipChannelRequest): Self = StObject.set(x, "APNSVoipChannelRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
   }
 }

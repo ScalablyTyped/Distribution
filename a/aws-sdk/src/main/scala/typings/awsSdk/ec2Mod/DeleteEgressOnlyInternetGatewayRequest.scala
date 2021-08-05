@@ -18,22 +18,17 @@ trait DeleteEgressOnlyInternetGatewayRequest extends StObject {
 }
 object DeleteEgressOnlyInternetGatewayRequest {
   
-  @scala.inline
-  def apply(EgressOnlyInternetGatewayId: EgressOnlyInternetGatewayId): DeleteEgressOnlyInternetGatewayRequest = {
+  inline def apply(EgressOnlyInternetGatewayId: EgressOnlyInternetGatewayId): DeleteEgressOnlyInternetGatewayRequest = {
     val __obj = js.Dynamic.literal(EgressOnlyInternetGatewayId = EgressOnlyInternetGatewayId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteEgressOnlyInternetGatewayRequest]
   }
   
-  @scala.inline
-  implicit class DeleteEgressOnlyInternetGatewayRequestMutableBuilder[Self <: DeleteEgressOnlyInternetGatewayRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteEgressOnlyInternetGatewayRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setEgressOnlyInternetGatewayId(value: EgressOnlyInternetGatewayId): Self = StObject.set(x, "EgressOnlyInternetGatewayId", value.asInstanceOf[js.Any])
+    inline def setEgressOnlyInternetGatewayId(value: EgressOnlyInternetGatewayId): Self = StObject.set(x, "EgressOnlyInternetGatewayId", value.asInstanceOf[js.Any])
   }
 }

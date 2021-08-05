@@ -15,19 +15,15 @@ trait NamedValue extends StObject {
 }
 object NamedValue {
   
-  @scala.inline
-  def apply(Name: String, Value: js.Any): NamedValue = {
+  inline def apply(Name: String, Value: js.Any): NamedValue = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[NamedValue]
   }
   
-  @scala.inline
-  implicit class NamedValueMutableBuilder[Self <: NamedValue] (val x: Self) extends AnyVal {
+  extension [Self <: NamedValue](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

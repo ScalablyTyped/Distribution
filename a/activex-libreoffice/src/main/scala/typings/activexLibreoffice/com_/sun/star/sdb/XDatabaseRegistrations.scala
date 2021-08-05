@@ -73,8 +73,7 @@ trait XDatabaseRegistrations extends StObject {
 }
 object XDatabaseRegistrations {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     RegistrationNames: SafeArray[String],
     addDatabaseRegistrationsListener: XDatabaseRegistrationsListener => Unit,
     changeDatabaseLocation: (String, String) => Unit,
@@ -90,37 +89,26 @@ object XDatabaseRegistrations {
     __obj.asInstanceOf[XDatabaseRegistrations]
   }
   
-  @scala.inline
-  implicit class XDatabaseRegistrationsMutableBuilder[Self <: XDatabaseRegistrations] (val x: Self) extends AnyVal {
+  extension [Self <: XDatabaseRegistrations](x: Self) {
     
-    @scala.inline
-    def setAddDatabaseRegistrationsListener(value: XDatabaseRegistrationsListener => Unit): Self = StObject.set(x, "addDatabaseRegistrationsListener", js.Any.fromFunction1(value))
+    inline def setAddDatabaseRegistrationsListener(value: XDatabaseRegistrationsListener => Unit): Self = StObject.set(x, "addDatabaseRegistrationsListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChangeDatabaseLocation(value: (String, String) => Unit): Self = StObject.set(x, "changeDatabaseLocation", js.Any.fromFunction2(value))
+    inline def setChangeDatabaseLocation(value: (String, String) => Unit): Self = StObject.set(x, "changeDatabaseLocation", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetDatabaseLocation(value: String => String): Self = StObject.set(x, "getDatabaseLocation", js.Any.fromFunction1(value))
+    inline def setGetDatabaseLocation(value: String => String): Self = StObject.set(x, "getDatabaseLocation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetRegistrationNames(value: () => SafeArray[String]): Self = StObject.set(x, "getRegistrationNames", js.Any.fromFunction0(value))
+    inline def setGetRegistrationNames(value: () => SafeArray[String]): Self = StObject.set(x, "getRegistrationNames", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasRegisteredDatabase(value: String => Boolean): Self = StObject.set(x, "hasRegisteredDatabase", js.Any.fromFunction1(value))
+    inline def setHasRegisteredDatabase(value: String => Boolean): Self = StObject.set(x, "hasRegisteredDatabase", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsDatabaseRegistrationReadOnly(value: String => Boolean): Self = StObject.set(x, "isDatabaseRegistrationReadOnly", js.Any.fromFunction1(value))
+    inline def setIsDatabaseRegistrationReadOnly(value: String => Boolean): Self = StObject.set(x, "isDatabaseRegistrationReadOnly", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRegisterDatabaseLocation(value: (String, String) => Unit): Self = StObject.set(x, "registerDatabaseLocation", js.Any.fromFunction2(value))
+    inline def setRegisterDatabaseLocation(value: (String, String) => Unit): Self = StObject.set(x, "registerDatabaseLocation", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRegistrationNames(value: SafeArray[String]): Self = StObject.set(x, "RegistrationNames", value.asInstanceOf[js.Any])
+    inline def setRegistrationNames(value: SafeArray[String]): Self = StObject.set(x, "RegistrationNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveDatabaseRegistrationsListener(value: XDatabaseRegistrationsListener => Unit): Self = StObject.set(x, "removeDatabaseRegistrationsListener", js.Any.fromFunction1(value))
+    inline def setRemoveDatabaseRegistrationsListener(value: XDatabaseRegistrationsListener => Unit): Self = StObject.set(x, "removeDatabaseRegistrationsListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRevokeDatabaseLocation(value: String => Unit): Self = StObject.set(x, "revokeDatabaseLocation", js.Any.fromFunction1(value))
+    inline def setRevokeDatabaseLocation(value: String => Unit): Self = StObject.set(x, "revokeDatabaseLocation", js.Any.fromFunction1(value))
   }
 }

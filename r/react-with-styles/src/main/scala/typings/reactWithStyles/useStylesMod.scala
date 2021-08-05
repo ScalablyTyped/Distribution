@@ -13,6 +13,5 @@ object useStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[TStyles /* <: Styles */](hasStylesFn: StylesFn[TStyles]): Css[TStyles] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasStylesFn.asInstanceOf[js.Any]).asInstanceOf[Css[TStyles]]
+  inline def default[TStyles /* <: Styles */](hasStylesFn: StylesFn[TStyles]): Css[TStyles] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasStylesFn.asInstanceOf[js.Any]).asInstanceOf[Css[TStyles]]
 }

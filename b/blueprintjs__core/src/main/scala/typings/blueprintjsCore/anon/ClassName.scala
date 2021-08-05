@@ -32,8 +32,7 @@ trait ClassName[H /* <: HTMLAttributes[HTMLElement] */] extends StObject {
 }
 object ClassName {
   
-  @scala.inline
-  def apply[H /* <: HTMLAttributes[HTMLElement] */](
+  inline def apply[H /* <: HTMLAttributes[HTMLElement] */](
     className: String,
     onBlur: FocusEvent[js.Any] => Unit,
     onKeyDown: KeyboardEvent[js.Any] => Unit,
@@ -43,43 +42,32 @@ object ClassName {
     __obj.asInstanceOf[ClassName[H]]
   }
   
-  @scala.inline
-  implicit class ClassNameMutableBuilder[Self <: ClassName[?], H /* <: HTMLAttributes[HTMLElement] */] (val x: Self & ClassName[H]) extends AnyVal {
+  extension [Self <: ClassName[?], H /* <: HTMLAttributes[HTMLElement] */](x: Self & ClassName[H]) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabled(
+    inline def setDisabled(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @blueprintjs/core.@blueprintjs/core/lib/esm/components/button/abstractButton.IButtonProps & H['disabled'] */ js.Any
     ): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setOnBlur(value: FocusEvent[js.Any] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+    inline def setOnBlur(value: FocusEvent[js.Any] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnClick(
+    inline def setOnClick(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @blueprintjs/core.@blueprintjs/core/lib/esm/components/button/abstractButton.IButtonProps & H['onClick'] */ js.Any
     ): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+    inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
-    @scala.inline
-    def setOnKeyDown(value: KeyboardEvent[js.Any] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+    inline def setOnKeyDown(value: KeyboardEvent[js.Any] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnKeyUp(value: KeyboardEvent[js.Any] => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
+    inline def setOnKeyUp(value: KeyboardEvent[js.Any] => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTabIndex(
+    inline def setTabIndex(
       value: Double | (/* import warning: importer.ImportType#apply Failed type conversion: @blueprintjs/core.@blueprintjs/core/lib/esm/components/button/abstractButton.IButtonProps & H['tabIndex'] */ js.Any)
     ): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
+    inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait GetProjectResult extends StObject {
 }
 object GetProjectResult {
   
-  @scala.inline
-  def apply(): GetProjectResult = {
+  inline def apply(): GetProjectResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetProjectResult]
   }
   
-  @scala.inline
-  implicit class GetProjectResultMutableBuilder[Self <: GetProjectResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetProjectResult](x: Self) {
     
-    @scala.inline
-    def setProject(value: Project): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: Project): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+    inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
   }
 }

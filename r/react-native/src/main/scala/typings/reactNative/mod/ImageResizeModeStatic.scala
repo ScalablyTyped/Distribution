@@ -40,8 +40,7 @@ trait ImageResizeModeStatic extends StObject {
 }
 object ImageResizeModeStatic {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     center: ImageResizeMode,
     contain: ImageResizeMode,
     cover: ImageResizeMode,
@@ -52,22 +51,16 @@ object ImageResizeModeStatic {
     __obj.asInstanceOf[ImageResizeModeStatic]
   }
   
-  @scala.inline
-  implicit class ImageResizeModeStaticMutableBuilder[Self <: ImageResizeModeStatic] (val x: Self) extends AnyVal {
+  extension [Self <: ImageResizeModeStatic](x: Self) {
     
-    @scala.inline
-    def setCenter(value: ImageResizeMode): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: ImageResizeMode): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContain(value: ImageResizeMode): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
+    inline def setContain(value: ImageResizeMode): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCover(value: ImageResizeMode): Self = StObject.set(x, "cover", value.asInstanceOf[js.Any])
+    inline def setCover(value: ImageResizeMode): Self = StObject.set(x, "cover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeat(value: ImageResizeMode): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+    inline def setRepeat(value: ImageResizeMode): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStretch(value: ImageResizeMode): Self = StObject.set(x, "stretch", value.asInstanceOf[js.Any])
+    inline def setStretch(value: ImageResizeMode): Self = StObject.set(x, "stretch", value.asInstanceOf[js.Any])
   }
 }

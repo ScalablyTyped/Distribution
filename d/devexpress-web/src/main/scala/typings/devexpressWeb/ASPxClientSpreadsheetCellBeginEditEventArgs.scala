@@ -43,8 +43,7 @@ trait ASPxClientSpreadsheetCellBeginEditEventArgs
 }
 object ASPxClientSpreadsheetCellBeginEditEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cancel: Boolean,
     columnIndex: Double,
     displayText: String,
@@ -57,25 +56,18 @@ object ASPxClientSpreadsheetCellBeginEditEventArgs {
     __obj.asInstanceOf[ASPxClientSpreadsheetCellBeginEditEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientSpreadsheetCellBeginEditEventArgsMutableBuilder[Self <: ASPxClientSpreadsheetCellBeginEditEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientSpreadsheetCellBeginEditEventArgs](x: Self) {
     
-    @scala.inline
-    def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
+    inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayText(value: String): Self = StObject.set(x, "displayText", value.asInstanceOf[js.Any])
+    inline def setDisplayText(value: String): Self = StObject.set(x, "displayText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormula(value: String): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
+    inline def setFormula(value: String): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
+    inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheetName(value: String): Self = StObject.set(x, "sheetName", value.asInstanceOf[js.Any])
+    inline def setSheetName(value: String): Self = StObject.set(x, "sheetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -39,19 +39,15 @@ trait ICurrentUserResource extends StObject {
 }
 object ICurrentUserResource {
   
-  @scala.inline
-  def apply(changePassword: js.Any => IPromise[IResourcePromise], getMembershipProviderConfig: () => js.Any): ICurrentUserResource = {
+  inline def apply(changePassword: js.Any => IPromise[IResourcePromise], getMembershipProviderConfig: () => js.Any): ICurrentUserResource = {
     val __obj = js.Dynamic.literal(changePassword = js.Any.fromFunction1(changePassword), getMembershipProviderConfig = js.Any.fromFunction0(getMembershipProviderConfig))
     __obj.asInstanceOf[ICurrentUserResource]
   }
   
-  @scala.inline
-  implicit class ICurrentUserResourceMutableBuilder[Self <: ICurrentUserResource] (val x: Self) extends AnyVal {
+  extension [Self <: ICurrentUserResource](x: Self) {
     
-    @scala.inline
-    def setChangePassword(value: js.Any => IPromise[IResourcePromise]): Self = StObject.set(x, "changePassword", js.Any.fromFunction1(value))
+    inline def setChangePassword(value: js.Any => IPromise[IResourcePromise]): Self = StObject.set(x, "changePassword", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetMembershipProviderConfig(value: () => js.Any): Self = StObject.set(x, "getMembershipProviderConfig", js.Any.fromFunction0(value))
+    inline def setGetMembershipProviderConfig(value: () => js.Any): Self = StObject.set(x, "getMembershipProviderConfig", js.Any.fromFunction0(value))
   }
 }

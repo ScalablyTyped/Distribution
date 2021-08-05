@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdMultipleWordConversionsMode extends StObject
 object WdMultipleWordConversionsMode {
   
-  @scala.inline
-  def wdHangulToHanja: `0` = 0.asInstanceOf[`0`]
+  inline def wdHangulToHanja: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdHanjaToHangul: `1` = 1.asInstanceOf[`1`]
+  inline def wdHanjaToHangul: `1` = 1.asInstanceOf[`1`]
 }

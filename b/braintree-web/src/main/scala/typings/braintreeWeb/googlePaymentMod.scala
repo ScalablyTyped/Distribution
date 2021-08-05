@@ -248,30 +248,23 @@ object googlePaymentMod {
   }
   object GooglePaymentTokenizePayload {
     
-    @scala.inline
-    def apply(binData: Commercial, description: String, details: Bin, nonce: String, `type`: String): GooglePaymentTokenizePayload = {
+    inline def apply(binData: Commercial, description: String, details: Bin, nonce: String, `type`: String): GooglePaymentTokenizePayload = {
       val __obj = js.Dynamic.literal(binData = binData.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[GooglePaymentTokenizePayload]
     }
     
-    @scala.inline
-    implicit class GooglePaymentTokenizePayloadMutableBuilder[Self <: GooglePaymentTokenizePayload] (val x: Self) extends AnyVal {
+    extension [Self <: GooglePaymentTokenizePayload](x: Self) {
       
-      @scala.inline
-      def setBinData(value: Commercial): Self = StObject.set(x, "binData", value.asInstanceOf[js.Any])
+      inline def setBinData(value: Commercial): Self = StObject.set(x, "binData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetails(value: Bin): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: Bin): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -283,13 +276,10 @@ object googlePaymentMod {
   trait GooglePaymentTokenizeValues extends StObject
   object GooglePaymentTokenizeValues {
     
-    @scala.inline
-    def No: typings.braintreeWeb.braintreeWebStrings.No = "No".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.No]
+    inline def No: typings.braintreeWeb.braintreeWebStrings.No = "No".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.No]
     
-    @scala.inline
-    def Unknown: Unknown_ = "Unknown".asInstanceOf[Unknown_]
+    inline def Unknown: Unknown_ = "Unknown".asInstanceOf[Unknown_]
     
-    @scala.inline
-    def Yes: typings.braintreeWeb.braintreeWebStrings.Yes = "Yes".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.Yes]
+    inline def Yes: typings.braintreeWeb.braintreeWebStrings.Yes = "Yes".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.Yes]
   }
 }

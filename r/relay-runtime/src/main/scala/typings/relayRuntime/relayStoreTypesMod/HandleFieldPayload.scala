@@ -26,28 +26,21 @@ trait HandleFieldPayload extends StObject {
 }
 object HandleFieldPayload {
   
-  @scala.inline
-  def apply(args: Variables, dataID: DataID, fieldKey: String, handle: String, handleKey: String): HandleFieldPayload = {
+  inline def apply(args: Variables, dataID: DataID, fieldKey: String, handle: String, handleKey: String): HandleFieldPayload = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], dataID = dataID.asInstanceOf[js.Any], fieldKey = fieldKey.asInstanceOf[js.Any], handle = handle.asInstanceOf[js.Any], handleKey = handleKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[HandleFieldPayload]
   }
   
-  @scala.inline
-  implicit class HandleFieldPayloadMutableBuilder[Self <: HandleFieldPayload] (val x: Self) extends AnyVal {
+  extension [Self <: HandleFieldPayload](x: Self) {
     
-    @scala.inline
-    def setArgs(value: Variables): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: Variables): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataID(value: DataID): Self = StObject.set(x, "dataID", value.asInstanceOf[js.Any])
+    inline def setDataID(value: DataID): Self = StObject.set(x, "dataID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldKey(value: String): Self = StObject.set(x, "fieldKey", value.asInstanceOf[js.Any])
+    inline def setFieldKey(value: String): Self = StObject.set(x, "fieldKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+    inline def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandleKey(value: String): Self = StObject.set(x, "handleKey", value.asInstanceOf[js.Any])
+    inline def setHandleKey(value: String): Self = StObject.set(x, "handleKey", value.asInstanceOf[js.Any])
   }
 }

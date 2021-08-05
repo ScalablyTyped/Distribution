@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MetricType extends StObject
 object MetricType {
   
-  @scala.inline
-  def ManifestUpdate: typings.dashjs.dashjsStrings.ManifestUpdate = "ManifestUpdate".asInstanceOf[typings.dashjs.dashjsStrings.ManifestUpdate]
+  inline def ManifestUpdate: typings.dashjs.dashjsStrings.ManifestUpdate = "ManifestUpdate".asInstanceOf[typings.dashjs.dashjsStrings.ManifestUpdate]
   
-  @scala.inline
-  def RequestsQueue: typings.dashjs.dashjsStrings.RequestsQueue = "RequestsQueue".asInstanceOf[typings.dashjs.dashjsStrings.RequestsQueue]
+  inline def RequestsQueue: typings.dashjs.dashjsStrings.RequestsQueue = "RequestsQueue".asInstanceOf[typings.dashjs.dashjsStrings.RequestsQueue]
 }

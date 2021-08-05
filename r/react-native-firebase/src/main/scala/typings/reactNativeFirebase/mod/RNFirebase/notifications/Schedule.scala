@@ -16,22 +16,17 @@ trait Schedule extends StObject {
 }
 object Schedule {
   
-  @scala.inline
-  def apply(fireDate: Double): Schedule = {
+  inline def apply(fireDate: Double): Schedule = {
     val __obj = js.Dynamic.literal(fireDate = fireDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Schedule]
   }
   
-  @scala.inline
-  implicit class ScheduleMutableBuilder[Self <: Schedule] (val x: Self) extends AnyVal {
+  extension [Self <: Schedule](x: Self) {
     
-    @scala.inline
-    def setFireDate(value: Double): Self = StObject.set(x, "fireDate", value.asInstanceOf[js.Any])
+    inline def setFireDate(value: Double): Self = StObject.set(x, "fireDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeatInterval(value: minute | hour | day | week): Self = StObject.set(x, "repeatInterval", value.asInstanceOf[js.Any])
+    inline def setRepeatInterval(value: minute | hour | day | week): Self = StObject.set(x, "repeatInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeatIntervalUndefined: Self = StObject.set(x, "repeatInterval", js.undefined)
+    inline def setRepeatIntervalUndefined: Self = StObject.set(x, "repeatInterval", js.undefined)
   }
 }

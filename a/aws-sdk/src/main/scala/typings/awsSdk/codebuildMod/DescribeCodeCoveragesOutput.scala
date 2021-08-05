@@ -18,28 +18,21 @@ trait DescribeCodeCoveragesOutput extends StObject {
 }
 object DescribeCodeCoveragesOutput {
   
-  @scala.inline
-  def apply(): DescribeCodeCoveragesOutput = {
+  inline def apply(): DescribeCodeCoveragesOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeCodeCoveragesOutput]
   }
   
-  @scala.inline
-  implicit class DescribeCodeCoveragesOutputMutableBuilder[Self <: DescribeCodeCoveragesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeCodeCoveragesOutput](x: Self) {
     
-    @scala.inline
-    def setCodeCoverages(value: CodeCoverages): Self = StObject.set(x, "codeCoverages", value.asInstanceOf[js.Any])
+    inline def setCodeCoverages(value: CodeCoverages): Self = StObject.set(x, "codeCoverages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeCoveragesUndefined: Self = StObject.set(x, "codeCoverages", js.undefined)
+    inline def setCodeCoveragesUndefined: Self = StObject.set(x, "codeCoverages", js.undefined)
     
-    @scala.inline
-    def setCodeCoveragesVarargs(value: CodeCoverage*): Self = StObject.set(x, "codeCoverages", js.Array(value :_*))
+    inline def setCodeCoveragesVarargs(value: CodeCoverage*): Self = StObject.set(x, "codeCoverages", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

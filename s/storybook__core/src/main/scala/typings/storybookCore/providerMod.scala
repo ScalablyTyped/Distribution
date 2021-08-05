@@ -15,10 +15,10 @@ object providerMod {
     extends StObject
        with ReactProvider {
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var addons: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var channel: js.Any = js.native
     
     /* CompleteClass */
@@ -34,9 +34,9 @@ object providerMod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Provider * / any */ trait ReactProvider extends StObject {
     
-    var addons: js.Any
+    /* private */ var addons: js.Any
     
-    var channel: js.Any
+    /* private */ var channel: js.Any
     
     def getConfig(): Config
     
@@ -46,8 +46,7 @@ object providerMod {
   }
   object ReactProvider {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addons: js.Any,
       channel: js.Any,
       getConfig: () => Config,
@@ -58,23 +57,17 @@ object providerMod {
       __obj.asInstanceOf[ReactProvider]
     }
     
-    @scala.inline
-    implicit class ReactProviderMutableBuilder[Self <: ReactProvider] (val x: Self) extends AnyVal {
+    extension [Self <: ReactProvider](x: Self) {
       
-      @scala.inline
-      def setAddons(value: js.Any): Self = StObject.set(x, "addons", value.asInstanceOf[js.Any])
+      inline def setAddons(value: js.Any): Self = StObject.set(x, "addons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannel(value: js.Any): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      inline def setChannel(value: js.Any): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetConfig(value: () => Config): Self = StObject.set(x, "getConfig", js.Any.fromFunction0(value))
+      inline def setGetConfig(value: () => Config): Self = StObject.set(x, "getConfig", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetElements(value: Types_ => Collection): Self = StObject.set(x, "getElements", js.Any.fromFunction1(value))
+      inline def setGetElements(value: Types_ => Collection): Self = StObject.set(x, "getElements", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHandleAPI(value: js.Any => Unit): Self = StObject.set(x, "handleAPI", js.Any.fromFunction1(value))
+      inline def setHandleAPI(value: js.Any => Unit): Self = StObject.set(x, "handleAPI", js.Any.fromFunction1(value))
     }
   }
 }

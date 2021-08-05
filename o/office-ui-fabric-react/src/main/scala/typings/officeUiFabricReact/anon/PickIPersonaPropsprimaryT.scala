@@ -16,31 +16,23 @@ trait PickIPersonaPropsprimaryT extends StObject {
 }
 object PickIPersonaPropsprimaryT {
   
-  @scala.inline
-  def apply(): PickIPersonaPropsprimaryT = {
+  inline def apply(): PickIPersonaPropsprimaryT = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PickIPersonaPropsprimaryT]
   }
   
-  @scala.inline
-  implicit class PickIPersonaPropsprimaryTMutableBuilder[Self <: PickIPersonaPropsprimaryT] (val x: Self) extends AnyVal {
+  extension [Self <: PickIPersonaPropsprimaryT](x: Self) {
     
-    @scala.inline
-    def setInitialsColor(value: PersonaInitialsColor | String): Self = StObject.set(x, "initialsColor", value.asInstanceOf[js.Any])
+    inline def setInitialsColor(value: PersonaInitialsColor | String): Self = StObject.set(x, "initialsColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialsColorUndefined: Self = StObject.set(x, "initialsColor", js.undefined)
+    inline def setInitialsColorUndefined: Self = StObject.set(x, "initialsColor", js.undefined)
     
-    @scala.inline
-    def setPrimaryText(value: String): Self = StObject.set(x, "primaryText", value.asInstanceOf[js.Any])
+    inline def setPrimaryText(value: String): Self = StObject.set(x, "primaryText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryTextUndefined: Self = StObject.set(x, "primaryText", js.undefined)
+    inline def setPrimaryTextUndefined: Self = StObject.set(x, "primaryText", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

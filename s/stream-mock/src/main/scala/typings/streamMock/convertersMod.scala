@@ -12,6 +12,5 @@ object convertersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def chunk2Buffer(chunk: IChunk): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("chunk2Buffer")(chunk.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def chunk2Buffer(chunk: IChunk): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("chunk2Buffer")(chunk.asInstanceOf[js.Any]).asInstanceOf[Buffer]
 }

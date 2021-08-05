@@ -38,8 +38,7 @@ trait Heightfield
 }
 object Heightfield {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     boundingSphereRadius: Double,
     cacheEnabled: Boolean,
     calculateLocalInertia: (Double, Vec3) => Vec3,
@@ -66,52 +65,36 @@ object Heightfield {
     __obj.asInstanceOf[Heightfield]
   }
   
-  @scala.inline
-  implicit class HeightfieldMutableBuilder[Self <: Heightfield] (val x: Self) extends AnyVal {
+  extension [Self <: Heightfield](x: Self) {
     
-    @scala.inline
-    def setCacheEnabled(value: Boolean): Self = StObject.set(x, "cacheEnabled", value.asInstanceOf[js.Any])
+    inline def setCacheEnabled(value: Boolean): Self = StObject.set(x, "cacheEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: js.Array[Double]*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: js.Array[Double]*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setElementSize(value: Double): Self = StObject.set(x, "elementSize", value.asInstanceOf[js.Any])
+    inline def setElementSize(value: Double): Self = StObject.set(x, "elementSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetConvexTrianglePillar(value: (Double, Double, Boolean) => Unit): Self = StObject.set(x, "getConvexTrianglePillar", js.Any.fromFunction3(value))
+    inline def setGetConvexTrianglePillar(value: (Double, Double, Boolean) => Unit): Self = StObject.set(x, "getConvexTrianglePillar", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetIndexOfPosition(value: (Double, Double, js.Array[js.Any], Boolean) => Boolean): Self = StObject.set(x, "getIndexOfPosition", js.Any.fromFunction4(value))
+    inline def setGetIndexOfPosition(value: (Double, Double, js.Array[js.Any], Boolean) => Boolean): Self = StObject.set(x, "getIndexOfPosition", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setGetRectMinMax(value: (Double, Double, Double, Double, js.Array[js.Any]) => Unit): Self = StObject.set(x, "getRectMinMax", js.Any.fromFunction5(value))
+    inline def setGetRectMinMax(value: (Double, Double, Double, Double, js.Array[js.Any]) => Unit): Self = StObject.set(x, "getRectMinMax", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPillarConvex(value: ConvexPolyhedron): Self = StObject.set(x, "pillarConvex", value.asInstanceOf[js.Any])
+    inline def setPillarConvex(value: ConvexPolyhedron): Self = StObject.set(x, "pillarConvex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPillarOffset(value: Vec3): Self = StObject.set(x, "pillarOffset", value.asInstanceOf[js.Any])
+    inline def setPillarOffset(value: Vec3): Self = StObject.set(x, "pillarOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetHeightValueAtIndex(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "setHeightValueAtIndex", js.Any.fromFunction3(value))
+    inline def setSetHeightValueAtIndex(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "setHeightValueAtIndex", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+    inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdateMaxValue(value: () => Unit): Self = StObject.set(x, "updateMaxValue", js.Any.fromFunction0(value))
+    inline def setUpdateMaxValue(value: () => Unit): Self = StObject.set(x, "updateMaxValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdateMinValue(value: () => Unit): Self = StObject.set(x, "updateMinValue", js.Any.fromFunction0(value))
+    inline def setUpdateMinValue(value: () => Unit): Self = StObject.set(x, "updateMinValue", js.Any.fromFunction0(value))
   }
 }

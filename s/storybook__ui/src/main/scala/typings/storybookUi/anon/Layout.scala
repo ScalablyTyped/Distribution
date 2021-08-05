@@ -10,16 +10,13 @@ trait Layout extends StObject {
 }
 object Layout {
   
-  @scala.inline
-  def apply(layout: String): Layout = {
+  inline def apply(layout: String): Layout = {
     val __obj = js.Dynamic.literal(layout = layout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Layout]
   }
   
-  @scala.inline
-  implicit class LayoutMutableBuilder[Self <: Layout] (val x: Self) extends AnyVal {
+  extension [Self <: Layout](x: Self) {
     
-    @scala.inline
-    def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
   }
 }

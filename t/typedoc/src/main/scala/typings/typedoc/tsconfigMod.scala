@@ -15,7 +15,7 @@ object tsconfigMod {
     extends StObject
        with OptionsReader {
     
-    var _tryReadOptions: js.Any = js.native
+    /* private */ var _tryReadOptions: js.Any = js.native
     
     /* CompleteClass */
     var name: String = js.native

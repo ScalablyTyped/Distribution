@@ -12,28 +12,21 @@ trait Language extends StObject {
 }
 object Language {
   
-  @scala.inline
-  def apply(): Language = {
+  inline def apply(): Language = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Language]
   }
   
-  @scala.inline
-  implicit class LanguageMutableBuilder[Self <: Language] (val x: Self) extends AnyVal {
+  extension [Self <: Language](x: Self) {
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setRoute(value: js.Array[Leg]): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+    inline def setRoute(value: js.Array[Leg]): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteUndefined: Self = StObject.set(x, "route", js.undefined)
+    inline def setRouteUndefined: Self = StObject.set(x, "route", js.undefined)
     
-    @scala.inline
-    def setRouteVarargs(value: Leg*): Self = StObject.set(x, "route", js.Array(value :_*))
+    inline def setRouteVarargs(value: Leg*): Self = StObject.set(x, "route", js.Array(value :_*))
   }
 }

@@ -19,37 +19,27 @@ trait ToRelativeCalendarOptions extends StObject {
 }
 object ToRelativeCalendarOptions {
   
-  @scala.inline
-  def apply(): ToRelativeCalendarOptions = {
+  inline def apply(): ToRelativeCalendarOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ToRelativeCalendarOptions]
   }
   
-  @scala.inline
-  implicit class ToRelativeCalendarOptionsMutableBuilder[Self <: ToRelativeCalendarOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ToRelativeCalendarOptions](x: Self) {
     
-    @scala.inline
-    def setBase(value: DateTime): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    inline def setBase(value: DateTime): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+    inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setNumberingSystem(value: NumberingSystem): Self = StObject.set(x, "numberingSystem", value.asInstanceOf[js.Any])
+    inline def setNumberingSystem(value: NumberingSystem): Self = StObject.set(x, "numberingSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberingSystemUndefined: Self = StObject.set(x, "numberingSystem", js.undefined)
+    inline def setNumberingSystemUndefined: Self = StObject.set(x, "numberingSystem", js.undefined)
     
-    @scala.inline
-    def setUnit(value: ToRelativeUnit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: ToRelativeUnit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+    inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
   }
 }

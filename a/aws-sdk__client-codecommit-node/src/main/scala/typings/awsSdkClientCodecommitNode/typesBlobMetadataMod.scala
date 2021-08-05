@@ -25,32 +25,24 @@ object typesBlobMetadataMod {
   }
   object BlobMetadata {
     
-    @scala.inline
-    def apply(): BlobMetadata = {
+    inline def apply(): BlobMetadata = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BlobMetadata]
     }
     
-    @scala.inline
-    implicit class BlobMetadataMutableBuilder[Self <: BlobMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: BlobMetadata](x: Self) {
       
-      @scala.inline
-      def setBlobId(value: String): Self = StObject.set(x, "blobId", value.asInstanceOf[js.Any])
+      inline def setBlobId(value: String): Self = StObject.set(x, "blobId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlobIdUndefined: Self = StObject.set(x, "blobId", js.undefined)
+      inline def setBlobIdUndefined: Self = StObject.set(x, "blobId", js.undefined)
       
-      @scala.inline
-      def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     }
   }
   

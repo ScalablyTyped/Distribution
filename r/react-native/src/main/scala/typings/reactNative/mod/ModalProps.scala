@@ -12,8 +12,7 @@ trait ModalProps
      with ViewProps
 object ModalProps {
   
-  @scala.inline
-  def apply(): ModalProps = {
+  inline def apply(): ModalProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModalProps]
   }

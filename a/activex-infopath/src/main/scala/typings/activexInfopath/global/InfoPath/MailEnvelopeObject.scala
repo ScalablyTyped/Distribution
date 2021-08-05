@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.MailEnvelopeObject")
 @js.native
-class MailEnvelopeObject protected ()
+/* private */ class MailEnvelopeObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.MailEnvelopeObject {
   
@@ -16,7 +16,7 @@ class MailEnvelopeObject protected ()
   /* CompleteClass */
   var CC: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("InfoPath.MailEnvelopeObject_typekey")
   var InfoPathDotMailEnvelopeObject_typekey: typings.activexInfopath.InfoPath.MailEnvelopeObject = js.native
   

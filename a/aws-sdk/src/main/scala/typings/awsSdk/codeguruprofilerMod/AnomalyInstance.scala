@@ -28,31 +28,23 @@ trait AnomalyInstance extends StObject {
 }
 object AnomalyInstance {
   
-  @scala.inline
-  def apply(id: String, startTime: Timestamp): AnomalyInstance = {
+  inline def apply(id: String, startTime: Timestamp): AnomalyInstance = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnomalyInstance]
   }
   
-  @scala.inline
-  implicit class AnomalyInstanceMutableBuilder[Self <: AnomalyInstance] (val x: Self) extends AnyVal {
+  extension [Self <: AnomalyInstance](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserFeedback(value: UserFeedback): Self = StObject.set(x, "userFeedback", value.asInstanceOf[js.Any])
+    inline def setUserFeedback(value: UserFeedback): Self = StObject.set(x, "userFeedback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserFeedbackUndefined: Self = StObject.set(x, "userFeedback", js.undefined)
+    inline def setUserFeedbackUndefined: Self = StObject.set(x, "userFeedback", js.undefined)
   }
 }

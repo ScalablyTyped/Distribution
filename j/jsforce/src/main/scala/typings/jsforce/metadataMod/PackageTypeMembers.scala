@@ -12,22 +12,17 @@ trait PackageTypeMembers extends StObject {
 }
 object PackageTypeMembers {
   
-  @scala.inline
-  def apply(members: js.Array[String], name: String): PackageTypeMembers = {
+  inline def apply(members: js.Array[String], name: String): PackageTypeMembers = {
     val __obj = js.Dynamic.literal(members = members.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[PackageTypeMembers]
   }
   
-  @scala.inline
-  implicit class PackageTypeMembersMutableBuilder[Self <: PackageTypeMembers] (val x: Self) extends AnyVal {
+  extension [Self <: PackageTypeMembers](x: Self) {
     
-    @scala.inline
-    def setMembers(value: js.Array[String]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+    inline def setMembers(value: js.Array[String]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembersVarargs(value: String*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: String*): Self = StObject.set(x, "members", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

@@ -63,8 +63,7 @@ object mina {
   }
   object MinaAnimation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       duration: () => Double,
       easing: () => Double,
       id: String,
@@ -76,26 +75,19 @@ object mina {
       __obj.asInstanceOf[MinaAnimation]
     }
     
-    @scala.inline
-    implicit class MinaAnimationMutableBuilder[Self <: MinaAnimation] (val x: Self) extends AnyVal {
+    extension [Self <: MinaAnimation](x: Self) {
       
-      @scala.inline
-      def setDuration(value: () => Double): Self = StObject.set(x, "duration", js.Any.fromFunction0(value))
+      inline def setDuration(value: () => Double): Self = StObject.set(x, "duration", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEasing(value: () => Double): Self = StObject.set(x, "easing", js.Any.fromFunction0(value))
+      inline def setEasing(value: () => Double): Self = StObject.set(x, "easing", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeed(value: () => Double): Self = StObject.set(x, "speed", js.Any.fromFunction0(value))
+      inline def setSpeed(value: () => Double): Self = StObject.set(x, "speed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStatus(value: () => Double): Self = StObject.set(x, "status", js.Any.fromFunction0(value))
+      inline def setStatus(value: () => Double): Self = StObject.set(x, "status", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
     }
   }
 }

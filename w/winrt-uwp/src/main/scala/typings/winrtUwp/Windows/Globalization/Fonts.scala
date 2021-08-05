@@ -30,8 +30,7 @@ object Fonts {
   }
   object LanguageFont {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       fontFamily: String,
       fontStretch: FontStretch,
       fontStyle: FontStyle,
@@ -42,23 +41,17 @@ object Fonts {
       __obj.asInstanceOf[LanguageFont]
     }
     
-    @scala.inline
-    implicit class LanguageFontMutableBuilder[Self <: LanguageFont] (val x: Self) extends AnyVal {
+    extension [Self <: LanguageFont](x: Self) {
       
-      @scala.inline
-      def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+      inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontStretch(value: FontStretch): Self = StObject.set(x, "fontStretch", value.asInstanceOf[js.Any])
+      inline def setFontStretch(value: FontStretch): Self = StObject.set(x, "fontStretch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontStyle(value: FontStyle): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
+      inline def setFontStyle(value: FontStyle): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontWeight(value: FontWeight): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+      inline def setFontWeight(value: FontWeight): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
+      inline def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
     }
   }
   
@@ -100,8 +93,7 @@ object Fonts {
   }
   object LanguageFontGroup {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       documentAlternate1Font: LanguageFont,
       documentAlternate2Font: LanguageFont,
       documentHeadingFont: LanguageFont,
@@ -118,41 +110,29 @@ object Fonts {
       __obj.asInstanceOf[LanguageFontGroup]
     }
     
-    @scala.inline
-    implicit class LanguageFontGroupMutableBuilder[Self <: LanguageFontGroup] (val x: Self) extends AnyVal {
+    extension [Self <: LanguageFontGroup](x: Self) {
       
-      @scala.inline
-      def setDocumentAlternate1Font(value: LanguageFont): Self = StObject.set(x, "documentAlternate1Font", value.asInstanceOf[js.Any])
+      inline def setDocumentAlternate1Font(value: LanguageFont): Self = StObject.set(x, "documentAlternate1Font", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentAlternate2Font(value: LanguageFont): Self = StObject.set(x, "documentAlternate2Font", value.asInstanceOf[js.Any])
+      inline def setDocumentAlternate2Font(value: LanguageFont): Self = StObject.set(x, "documentAlternate2Font", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentHeadingFont(value: LanguageFont): Self = StObject.set(x, "documentHeadingFont", value.asInstanceOf[js.Any])
+      inline def setDocumentHeadingFont(value: LanguageFont): Self = StObject.set(x, "documentHeadingFont", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixedWidthTextFont(value: LanguageFont): Self = StObject.set(x, "fixedWidthTextFont", value.asInstanceOf[js.Any])
+      inline def setFixedWidthTextFont(value: LanguageFont): Self = StObject.set(x, "fixedWidthTextFont", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModernDocumentFont(value: LanguageFont): Self = StObject.set(x, "modernDocumentFont", value.asInstanceOf[js.Any])
+      inline def setModernDocumentFont(value: LanguageFont): Self = StObject.set(x, "modernDocumentFont", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTraditionalDocumentFont(value: LanguageFont): Self = StObject.set(x, "traditionalDocumentFont", value.asInstanceOf[js.Any])
+      inline def setTraditionalDocumentFont(value: LanguageFont): Self = StObject.set(x, "traditionalDocumentFont", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUiCaptionFont(value: LanguageFont): Self = StObject.set(x, "uiCaptionFont", value.asInstanceOf[js.Any])
+      inline def setUiCaptionFont(value: LanguageFont): Self = StObject.set(x, "uiCaptionFont", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUiHeadingFont(value: LanguageFont): Self = StObject.set(x, "uiHeadingFont", value.asInstanceOf[js.Any])
+      inline def setUiHeadingFont(value: LanguageFont): Self = StObject.set(x, "uiHeadingFont", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUiNotificationHeadingFont(value: LanguageFont): Self = StObject.set(x, "uiNotificationHeadingFont", value.asInstanceOf[js.Any])
+      inline def setUiNotificationHeadingFont(value: LanguageFont): Self = StObject.set(x, "uiNotificationHeadingFont", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUiTextFont(value: LanguageFont): Self = StObject.set(x, "uiTextFont", value.asInstanceOf[js.Any])
+      inline def setUiTextFont(value: LanguageFont): Self = StObject.set(x, "uiTextFont", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUiTitleFont(value: LanguageFont): Self = StObject.set(x, "uiTitleFont", value.asInstanceOf[js.Any])
+      inline def setUiTitleFont(value: LanguageFont): Self = StObject.set(x, "uiTitleFont", value.asInstanceOf[js.Any])
     }
   }
 }

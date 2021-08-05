@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ImageResizeMode extends StObject
 object ImageResizeMode {
   
-  @scala.inline
-  def center: typings.reactNative.reactNativeStrings.center = "center".asInstanceOf[typings.reactNative.reactNativeStrings.center]
+  inline def center: typings.reactNative.reactNativeStrings.center = "center".asInstanceOf[typings.reactNative.reactNativeStrings.center]
   
-  @scala.inline
-  def contain: typings.reactNative.reactNativeStrings.contain = "contain".asInstanceOf[typings.reactNative.reactNativeStrings.contain]
+  inline def contain: typings.reactNative.reactNativeStrings.contain = "contain".asInstanceOf[typings.reactNative.reactNativeStrings.contain]
   
-  @scala.inline
-  def cover: typings.reactNative.reactNativeStrings.cover = "cover".asInstanceOf[typings.reactNative.reactNativeStrings.cover]
+  inline def cover: typings.reactNative.reactNativeStrings.cover = "cover".asInstanceOf[typings.reactNative.reactNativeStrings.cover]
   
-  @scala.inline
-  def repeat: typings.reactNative.reactNativeStrings.repeat = "repeat".asInstanceOf[typings.reactNative.reactNativeStrings.repeat]
+  inline def repeat: typings.reactNative.reactNativeStrings.repeat = "repeat".asInstanceOf[typings.reactNative.reactNativeStrings.repeat]
   
-  @scala.inline
-  def stretch: typings.reactNative.reactNativeStrings.stretch = "stretch".asInstanceOf[typings.reactNative.reactNativeStrings.stretch]
+  inline def stretch: typings.reactNative.reactNativeStrings.stretch = "stretch".asInstanceOf[typings.reactNative.reactNativeStrings.stretch]
 }

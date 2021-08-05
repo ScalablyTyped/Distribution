@@ -10,8 +10,6 @@ object catmullRom2BezierMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(crp: js.Array[Double]): js.Array[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(crp.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[js.Any]]]
-  @scala.inline
-  def default(crp: js.Array[Double], z: Boolean): js.Array[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(crp.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[js.Any]]]
+  inline def default(crp: js.Array[Double]): js.Array[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(crp.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[js.Any]]]
+  inline def default(crp: js.Array[Double], z: Boolean): js.Array[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(crp.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[js.Any]]]
 }

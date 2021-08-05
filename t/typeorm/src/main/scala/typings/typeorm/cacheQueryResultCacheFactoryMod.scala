@@ -13,7 +13,7 @@ object cacheQueryResultCacheFactoryMod {
   class QueryResultCacheFactory protected () extends StObject {
     def this(connection: Connection) = this()
     
-    var connection: Connection = js.native
+    /* protected */ var connection: Connection = js.native
     
     /**
       * Creates a new query result cache based on connection options.

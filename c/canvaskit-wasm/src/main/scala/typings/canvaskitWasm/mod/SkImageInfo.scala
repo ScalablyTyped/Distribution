@@ -18,28 +18,21 @@ trait SkImageInfo extends StObject {
 }
 object SkImageInfo {
   
-  @scala.inline
-  def apply(alphaType: AlphaType, colorSpace: ColorSpace, colorType: ColorType, height: Double, width: Double): SkImageInfo = {
+  inline def apply(alphaType: AlphaType, colorSpace: ColorSpace, colorType: ColorType, height: Double, width: Double): SkImageInfo = {
     val __obj = js.Dynamic.literal(alphaType = alphaType.asInstanceOf[js.Any], colorSpace = colorSpace.asInstanceOf[js.Any], colorType = colorType.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[SkImageInfo]
   }
   
-  @scala.inline
-  implicit class SkImageInfoMutableBuilder[Self <: SkImageInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SkImageInfo](x: Self) {
     
-    @scala.inline
-    def setAlphaType(value: AlphaType): Self = StObject.set(x, "alphaType", value.asInstanceOf[js.Any])
+    inline def setAlphaType(value: AlphaType): Self = StObject.set(x, "alphaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorSpace(value: ColorSpace): Self = StObject.set(x, "colorSpace", value.asInstanceOf[js.Any])
+    inline def setColorSpace(value: ColorSpace): Self = StObject.set(x, "colorSpace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorType(value: ColorType): Self = StObject.set(x, "colorType", value.asInstanceOf[js.Any])
+    inline def setColorType(value: ColorType): Self = StObject.set(x, "colorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

@@ -23,28 +23,21 @@ trait RejectVpcEndpointConnectionsRequest extends StObject {
 }
 object RejectVpcEndpointConnectionsRequest {
   
-  @scala.inline
-  def apply(ServiceId: VpcEndpointServiceId, VpcEndpointIds: VpcEndpointIdList): RejectVpcEndpointConnectionsRequest = {
+  inline def apply(ServiceId: VpcEndpointServiceId, VpcEndpointIds: VpcEndpointIdList): RejectVpcEndpointConnectionsRequest = {
     val __obj = js.Dynamic.literal(ServiceId = ServiceId.asInstanceOf[js.Any], VpcEndpointIds = VpcEndpointIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[RejectVpcEndpointConnectionsRequest]
   }
   
-  @scala.inline
-  implicit class RejectVpcEndpointConnectionsRequestMutableBuilder[Self <: RejectVpcEndpointConnectionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RejectVpcEndpointConnectionsRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setServiceId(value: VpcEndpointServiceId): Self = StObject.set(x, "ServiceId", value.asInstanceOf[js.Any])
+    inline def setServiceId(value: VpcEndpointServiceId): Self = StObject.set(x, "ServiceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcEndpointIds(value: VpcEndpointIdList): Self = StObject.set(x, "VpcEndpointIds", value.asInstanceOf[js.Any])
+    inline def setVpcEndpointIds(value: VpcEndpointIdList): Self = StObject.set(x, "VpcEndpointIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcEndpointIdsVarargs(value: VpcEndpointId*): Self = StObject.set(x, "VpcEndpointIds", js.Array(value :_*))
+    inline def setVpcEndpointIdsVarargs(value: VpcEndpointId*): Self = StObject.set(x, "VpcEndpointIds", js.Array(value :_*))
   }
 }

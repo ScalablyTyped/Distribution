@@ -12,19 +12,15 @@ trait AddrsId extends StObject {
 }
 object AddrsId {
   
-  @scala.inline
-  def apply(addrs: js.Any, id: js.Any): AddrsId = {
+  inline def apply(addrs: js.Any, id: js.Any): AddrsId = {
     val __obj = js.Dynamic.literal(addrs = addrs.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddrsId]
   }
   
-  @scala.inline
-  implicit class AddrsIdMutableBuilder[Self <: AddrsId] (val x: Self) extends AnyVal {
+  extension [Self <: AddrsId](x: Self) {
     
-    @scala.inline
-    def setAddrs(value: js.Any): Self = StObject.set(x, "addrs", value.asInstanceOf[js.Any])
+    inline def setAddrs(value: js.Any): Self = StObject.set(x, "addrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

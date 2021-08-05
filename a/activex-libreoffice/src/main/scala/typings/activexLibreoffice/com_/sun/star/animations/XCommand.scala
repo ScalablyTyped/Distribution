@@ -27,8 +27,7 @@ trait XCommand
 }
 object XCommand {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Acceleration: Double,
     AutoReverse: Boolean,
     Begin: js.Any,
@@ -58,16 +57,12 @@ object XCommand {
     __obj.asInstanceOf[XCommand]
   }
   
-  @scala.inline
-  implicit class XCommandMutableBuilder[Self <: XCommand] (val x: Self) extends AnyVal {
+  extension [Self <: XCommand](x: Self) {
     
-    @scala.inline
-    def setCommand(value: Double): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: Double): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameter(value: js.Any): Self = StObject.set(x, "Parameter", value.asInstanceOf[js.Any])
+    inline def setParameter(value: js.Any): Self = StObject.set(x, "Parameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: js.Any): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: js.Any): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
   }
 }

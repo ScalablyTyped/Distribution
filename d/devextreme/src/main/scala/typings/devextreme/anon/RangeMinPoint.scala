@@ -12,25 +12,19 @@ trait RangeMinPoint extends StObject {
 }
 object RangeMinPoint {
   
-  @scala.inline
-  def apply(): RangeMinPoint = {
+  inline def apply(): RangeMinPoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RangeMinPoint]
   }
   
-  @scala.inline
-  implicit class RangeMinPointMutableBuilder[Self <: RangeMinPoint] (val x: Self) extends AnyVal {
+  extension [Self <: RangeMinPoint](x: Self) {
     
-    @scala.inline
-    def setRangeMaxPoint(value: String): Self = StObject.set(x, "rangeMaxPoint", value.asInstanceOf[js.Any])
+    inline def setRangeMaxPoint(value: String): Self = StObject.set(x, "rangeMaxPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeMaxPointUndefined: Self = StObject.set(x, "rangeMaxPoint", js.undefined)
+    inline def setRangeMaxPointUndefined: Self = StObject.set(x, "rangeMaxPoint", js.undefined)
     
-    @scala.inline
-    def setRangeMinPoint(value: String): Self = StObject.set(x, "rangeMinPoint", value.asInstanceOf[js.Any])
+    inline def setRangeMinPoint(value: String): Self = StObject.set(x, "rangeMinPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeMinPointUndefined: Self = StObject.set(x, "rangeMinPoint", js.undefined)
+    inline def setRangeMinPointUndefined: Self = StObject.set(x, "rangeMinPoint", js.undefined)
   }
 }

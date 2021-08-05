@@ -34,68 +34,54 @@ object anon {
   }
   object AllOf {
     
-    @scala.inline
-    def apply(): AllOf = {
+    inline def apply(): AllOf = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AllOf]
     }
     
-    @scala.inline
-    implicit class AllOfMutableBuilder[Self <: AllOf] (val x: Self) extends AnyVal {
+    extension [Self <: AllOf](x: Self) {
       
-      @scala.inline
-      def setAllOf(
+      inline def setAllOf(
         value: js.Array[
               /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias fast-json-stringify.fast-json-stringify.ObjectProperties */ js.Object
             ]
       ): Self = StObject.set(x, "allOf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllOfUndefined: Self = StObject.set(x, "allOf", js.undefined)
+      inline def setAllOfUndefined: Self = StObject.set(x, "allOf", js.undefined)
       
-      @scala.inline
-      def setAllOfVarargs(
+      inline def setAllOfVarargs(
         value: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias fast-json-stringify.fast-json-stringify.ObjectProperties */ js.Object)*
       ): Self = StObject.set(x, "allOf", js.Array(value :_*))
       
-      @scala.inline
-      def setAnyOf(
+      inline def setAnyOf(
         value: js.Array[
               /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias fast-json-stringify.fast-json-stringify.ObjectProperties */ js.Object
             ]
       ): Self = StObject.set(x, "anyOf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnyOfUndefined: Self = StObject.set(x, "anyOf", js.undefined)
+      inline def setAnyOfUndefined: Self = StObject.set(x, "anyOf", js.undefined)
       
-      @scala.inline
-      def setAnyOfVarargs(
+      inline def setAnyOfVarargs(
         value: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias fast-json-stringify.fast-json-stringify.ObjectProperties */ js.Object)*
       ): Self = StObject.set(x, "anyOf", js.Array(value :_*))
       
-      @scala.inline
-      def setElse(
+      inline def setElse(
         value: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias fast-json-stringify.fast-json-stringify.ObjectProperties */ js.Object
       ): Self = StObject.set(x, "else", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElseUndefined: Self = StObject.set(x, "else", js.undefined)
+      inline def setElseUndefined: Self = StObject.set(x, "else", js.undefined)
       
-      @scala.inline
-      def setIf(
+      inline def setIf(
         value: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias fast-json-stringify.fast-json-stringify.ObjectProperties */ js.Object
       ): Self = StObject.set(x, "if", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIfUndefined: Self = StObject.set(x, "if", js.undefined)
+      inline def setIfUndefined: Self = StObject.set(x, "if", js.undefined)
       
-      @scala.inline
-      def setThen(
+      inline def setThen(
         value: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias fast-json-stringify.fast-json-stringify.ObjectProperties */ js.Object
       ): Self = StObject.set(x, "then", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThenUndefined: Self = StObject.set(x, "then", js.undefined)
+      inline def setThenUndefined: Self = StObject.set(x, "then", js.undefined)
     }
   }
 }

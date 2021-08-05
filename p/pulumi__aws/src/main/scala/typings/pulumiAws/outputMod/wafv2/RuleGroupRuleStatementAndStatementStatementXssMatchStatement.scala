@@ -18,27 +18,21 @@ trait RuleGroupRuleStatementAndStatementStatementXssMatchStatement extends StObj
 }
 object RuleGroupRuleStatementAndStatementStatementXssMatchStatement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     textTransformations: js.Array[RuleGroupRuleStatementAndStatementStatementXssMatchStatementTextTransformation]
   ): RuleGroupRuleStatementAndStatementStatementXssMatchStatement = {
     val __obj = js.Dynamic.literal(textTransformations = textTransformations.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleGroupRuleStatementAndStatementStatementXssMatchStatement]
   }
   
-  @scala.inline
-  implicit class RuleGroupRuleStatementAndStatementStatementXssMatchStatementMutableBuilder[Self <: RuleGroupRuleStatementAndStatementStatementXssMatchStatement] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupRuleStatementAndStatementStatementXssMatchStatement](x: Self) {
     
-    @scala.inline
-    def setFieldToMatch(value: RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatch): Self = StObject.set(x, "fieldToMatch", value.asInstanceOf[js.Any])
+    inline def setFieldToMatch(value: RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatch): Self = StObject.set(x, "fieldToMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldToMatchUndefined: Self = StObject.set(x, "fieldToMatch", js.undefined)
+    inline def setFieldToMatchUndefined: Self = StObject.set(x, "fieldToMatch", js.undefined)
     
-    @scala.inline
-    def setTextTransformations(value: js.Array[RuleGroupRuleStatementAndStatementStatementXssMatchStatementTextTransformation]): Self = StObject.set(x, "textTransformations", value.asInstanceOf[js.Any])
+    inline def setTextTransformations(value: js.Array[RuleGroupRuleStatementAndStatementStatementXssMatchStatementTextTransformation]): Self = StObject.set(x, "textTransformations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextTransformationsVarargs(value: RuleGroupRuleStatementAndStatementStatementXssMatchStatementTextTransformation*): Self = StObject.set(x, "textTransformations", js.Array(value :_*))
+    inline def setTextTransformationsVarargs(value: RuleGroupRuleStatementAndStatementStatementXssMatchStatementTextTransformation*): Self = StObject.set(x, "textTransformations", js.Array(value :_*))
   }
 }

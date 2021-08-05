@@ -20,26 +20,20 @@ object typesQuietTimeMod {
   }
   object QuietTime {
     
-    @scala.inline
-    def apply(): QuietTime = {
+    inline def apply(): QuietTime = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[QuietTime]
     }
     
-    @scala.inline
-    implicit class QuietTimeMutableBuilder[Self <: QuietTime] (val x: Self) extends AnyVal {
+    extension [Self <: QuietTime](x: Self) {
       
-      @scala.inline
-      def setEnd(value: String): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
+      inline def setEnd(value: String): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndUndefined: Self = StObject.set(x, "End", js.undefined)
+      inline def setEndUndefined: Self = StObject.set(x, "End", js.undefined)
       
-      @scala.inline
-      def setStart(value: String): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
+      inline def setStart(value: String): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "Start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "Start", js.undefined)
     }
   }
   

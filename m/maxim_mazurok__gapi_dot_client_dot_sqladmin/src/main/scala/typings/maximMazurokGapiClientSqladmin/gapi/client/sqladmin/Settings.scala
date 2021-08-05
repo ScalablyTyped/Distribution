@@ -103,170 +103,117 @@ trait Settings extends StObject {
 }
 object Settings {
   
-  @scala.inline
-  def apply(): Settings = {
+  inline def apply(): Settings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Settings]
   }
   
-  @scala.inline
-  implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
+  extension [Self <: Settings](x: Self) {
     
-    @scala.inline
-    def setActivationPolicy(value: String): Self = StObject.set(x, "activationPolicy", value.asInstanceOf[js.Any])
+    inline def setActivationPolicy(value: String): Self = StObject.set(x, "activationPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivationPolicyUndefined: Self = StObject.set(x, "activationPolicy", js.undefined)
+    inline def setActivationPolicyUndefined: Self = StObject.set(x, "activationPolicy", js.undefined)
     
-    @scala.inline
-    def setActiveDirectoryConfig(value: SqlActiveDirectoryConfig): Self = StObject.set(x, "activeDirectoryConfig", value.asInstanceOf[js.Any])
+    inline def setActiveDirectoryConfig(value: SqlActiveDirectoryConfig): Self = StObject.set(x, "activeDirectoryConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveDirectoryConfigUndefined: Self = StObject.set(x, "activeDirectoryConfig", js.undefined)
+    inline def setActiveDirectoryConfigUndefined: Self = StObject.set(x, "activeDirectoryConfig", js.undefined)
     
-    @scala.inline
-    def setAuthorizedGaeApplications(value: js.Array[String]): Self = StObject.set(x, "authorizedGaeApplications", value.asInstanceOf[js.Any])
+    inline def setAuthorizedGaeApplications(value: js.Array[String]): Self = StObject.set(x, "authorizedGaeApplications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizedGaeApplicationsUndefined: Self = StObject.set(x, "authorizedGaeApplications", js.undefined)
+    inline def setAuthorizedGaeApplicationsUndefined: Self = StObject.set(x, "authorizedGaeApplications", js.undefined)
     
-    @scala.inline
-    def setAuthorizedGaeApplicationsVarargs(value: String*): Self = StObject.set(x, "authorizedGaeApplications", js.Array(value :_*))
+    inline def setAuthorizedGaeApplicationsVarargs(value: String*): Self = StObject.set(x, "authorizedGaeApplications", js.Array(value :_*))
     
-    @scala.inline
-    def setAvailabilityType(value: String): Self = StObject.set(x, "availabilityType", value.asInstanceOf[js.Any])
+    inline def setAvailabilityType(value: String): Self = StObject.set(x, "availabilityType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityTypeUndefined: Self = StObject.set(x, "availabilityType", js.undefined)
+    inline def setAvailabilityTypeUndefined: Self = StObject.set(x, "availabilityType", js.undefined)
     
-    @scala.inline
-    def setBackupConfiguration(value: BackupConfiguration): Self = StObject.set(x, "backupConfiguration", value.asInstanceOf[js.Any])
+    inline def setBackupConfiguration(value: BackupConfiguration): Self = StObject.set(x, "backupConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupConfigurationUndefined: Self = StObject.set(x, "backupConfiguration", js.undefined)
+    inline def setBackupConfigurationUndefined: Self = StObject.set(x, "backupConfiguration", js.undefined)
     
-    @scala.inline
-    def setCollation(value: String): Self = StObject.set(x, "collation", value.asInstanceOf[js.Any])
+    inline def setCollation(value: String): Self = StObject.set(x, "collation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollationUndefined: Self = StObject.set(x, "collation", js.undefined)
+    inline def setCollationUndefined: Self = StObject.set(x, "collation", js.undefined)
     
-    @scala.inline
-    def setCrashSafeReplicationEnabled(value: Boolean): Self = StObject.set(x, "crashSafeReplicationEnabled", value.asInstanceOf[js.Any])
+    inline def setCrashSafeReplicationEnabled(value: Boolean): Self = StObject.set(x, "crashSafeReplicationEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrashSafeReplicationEnabledUndefined: Self = StObject.set(x, "crashSafeReplicationEnabled", js.undefined)
+    inline def setCrashSafeReplicationEnabledUndefined: Self = StObject.set(x, "crashSafeReplicationEnabled", js.undefined)
     
-    @scala.inline
-    def setDataDiskSizeGb(value: String): Self = StObject.set(x, "dataDiskSizeGb", value.asInstanceOf[js.Any])
+    inline def setDataDiskSizeGb(value: String): Self = StObject.set(x, "dataDiskSizeGb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataDiskSizeGbUndefined: Self = StObject.set(x, "dataDiskSizeGb", js.undefined)
+    inline def setDataDiskSizeGbUndefined: Self = StObject.set(x, "dataDiskSizeGb", js.undefined)
     
-    @scala.inline
-    def setDataDiskType(value: String): Self = StObject.set(x, "dataDiskType", value.asInstanceOf[js.Any])
+    inline def setDataDiskType(value: String): Self = StObject.set(x, "dataDiskType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataDiskTypeUndefined: Self = StObject.set(x, "dataDiskType", js.undefined)
+    inline def setDataDiskTypeUndefined: Self = StObject.set(x, "dataDiskType", js.undefined)
     
-    @scala.inline
-    def setDatabaseFlags(value: js.Array[DatabaseFlags]): Self = StObject.set(x, "databaseFlags", value.asInstanceOf[js.Any])
+    inline def setDatabaseFlags(value: js.Array[DatabaseFlags]): Self = StObject.set(x, "databaseFlags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseFlagsUndefined: Self = StObject.set(x, "databaseFlags", js.undefined)
+    inline def setDatabaseFlagsUndefined: Self = StObject.set(x, "databaseFlags", js.undefined)
     
-    @scala.inline
-    def setDatabaseFlagsVarargs(value: DatabaseFlags*): Self = StObject.set(x, "databaseFlags", js.Array(value :_*))
+    inline def setDatabaseFlagsVarargs(value: DatabaseFlags*): Self = StObject.set(x, "databaseFlags", js.Array(value :_*))
     
-    @scala.inline
-    def setDatabaseReplicationEnabled(value: Boolean): Self = StObject.set(x, "databaseReplicationEnabled", value.asInstanceOf[js.Any])
+    inline def setDatabaseReplicationEnabled(value: Boolean): Self = StObject.set(x, "databaseReplicationEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseReplicationEnabledUndefined: Self = StObject.set(x, "databaseReplicationEnabled", js.undefined)
+    inline def setDatabaseReplicationEnabledUndefined: Self = StObject.set(x, "databaseReplicationEnabled", js.undefined)
     
-    @scala.inline
-    def setDenyMaintenancePeriods(value: js.Array[DenyMaintenancePeriod]): Self = StObject.set(x, "denyMaintenancePeriods", value.asInstanceOf[js.Any])
+    inline def setDenyMaintenancePeriods(value: js.Array[DenyMaintenancePeriod]): Self = StObject.set(x, "denyMaintenancePeriods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDenyMaintenancePeriodsUndefined: Self = StObject.set(x, "denyMaintenancePeriods", js.undefined)
+    inline def setDenyMaintenancePeriodsUndefined: Self = StObject.set(x, "denyMaintenancePeriods", js.undefined)
     
-    @scala.inline
-    def setDenyMaintenancePeriodsVarargs(value: DenyMaintenancePeriod*): Self = StObject.set(x, "denyMaintenancePeriods", js.Array(value :_*))
+    inline def setDenyMaintenancePeriodsVarargs(value: DenyMaintenancePeriod*): Self = StObject.set(x, "denyMaintenancePeriods", js.Array(value :_*))
     
-    @scala.inline
-    def setInsightsConfig(value: InsightsConfig): Self = StObject.set(x, "insightsConfig", value.asInstanceOf[js.Any])
+    inline def setInsightsConfig(value: InsightsConfig): Self = StObject.set(x, "insightsConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsightsConfigUndefined: Self = StObject.set(x, "insightsConfig", js.undefined)
+    inline def setInsightsConfigUndefined: Self = StObject.set(x, "insightsConfig", js.undefined)
     
-    @scala.inline
-    def setIpConfiguration(value: IpConfiguration): Self = StObject.set(x, "ipConfiguration", value.asInstanceOf[js.Any])
+    inline def setIpConfiguration(value: IpConfiguration): Self = StObject.set(x, "ipConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpConfigurationUndefined: Self = StObject.set(x, "ipConfiguration", js.undefined)
+    inline def setIpConfigurationUndefined: Self = StObject.set(x, "ipConfiguration", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLocationPreference(value: LocationPreference): Self = StObject.set(x, "locationPreference", value.asInstanceOf[js.Any])
+    inline def setLocationPreference(value: LocationPreference): Self = StObject.set(x, "locationPreference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationPreferenceUndefined: Self = StObject.set(x, "locationPreference", js.undefined)
+    inline def setLocationPreferenceUndefined: Self = StObject.set(x, "locationPreference", js.undefined)
     
-    @scala.inline
-    def setMaintenanceWindow(value: MaintenanceWindow): Self = StObject.set(x, "maintenanceWindow", value.asInstanceOf[js.Any])
+    inline def setMaintenanceWindow(value: MaintenanceWindow): Self = StObject.set(x, "maintenanceWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaintenanceWindowUndefined: Self = StObject.set(x, "maintenanceWindow", js.undefined)
+    inline def setMaintenanceWindowUndefined: Self = StObject.set(x, "maintenanceWindow", js.undefined)
     
-    @scala.inline
-    def setPricingPlan(value: String): Self = StObject.set(x, "pricingPlan", value.asInstanceOf[js.Any])
+    inline def setPricingPlan(value: String): Self = StObject.set(x, "pricingPlan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPricingPlanUndefined: Self = StObject.set(x, "pricingPlan", js.undefined)
+    inline def setPricingPlanUndefined: Self = StObject.set(x, "pricingPlan", js.undefined)
     
-    @scala.inline
-    def setReplicationType(value: String): Self = StObject.set(x, "replicationType", value.asInstanceOf[js.Any])
+    inline def setReplicationType(value: String): Self = StObject.set(x, "replicationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationTypeUndefined: Self = StObject.set(x, "replicationType", js.undefined)
+    inline def setReplicationTypeUndefined: Self = StObject.set(x, "replicationType", js.undefined)
     
-    @scala.inline
-    def setSettingsVersion(value: String): Self = StObject.set(x, "settingsVersion", value.asInstanceOf[js.Any])
+    inline def setSettingsVersion(value: String): Self = StObject.set(x, "settingsVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettingsVersionUndefined: Self = StObject.set(x, "settingsVersion", js.undefined)
+    inline def setSettingsVersionUndefined: Self = StObject.set(x, "settingsVersion", js.undefined)
     
-    @scala.inline
-    def setStorageAutoResize(value: Boolean): Self = StObject.set(x, "storageAutoResize", value.asInstanceOf[js.Any])
+    inline def setStorageAutoResize(value: Boolean): Self = StObject.set(x, "storageAutoResize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageAutoResizeLimit(value: String): Self = StObject.set(x, "storageAutoResizeLimit", value.asInstanceOf[js.Any])
+    inline def setStorageAutoResizeLimit(value: String): Self = StObject.set(x, "storageAutoResizeLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageAutoResizeLimitUndefined: Self = StObject.set(x, "storageAutoResizeLimit", js.undefined)
+    inline def setStorageAutoResizeLimitUndefined: Self = StObject.set(x, "storageAutoResizeLimit", js.undefined)
     
-    @scala.inline
-    def setStorageAutoResizeUndefined: Self = StObject.set(x, "storageAutoResize", js.undefined)
+    inline def setStorageAutoResizeUndefined: Self = StObject.set(x, "storageAutoResize", js.undefined)
     
-    @scala.inline
-    def setTier(value: String): Self = StObject.set(x, "tier", value.asInstanceOf[js.Any])
+    inline def setTier(value: String): Self = StObject.set(x, "tier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTierUndefined: Self = StObject.set(x, "tier", js.undefined)
+    inline def setTierUndefined: Self = StObject.set(x, "tier", js.undefined)
     
-    @scala.inline
-    def setUserLabels(
+    inline def setUserLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientSqladmin.maximMazurokGapiClientSqladminStrings.Settings & TopLevel[js.Any]
     ): Self = StObject.set(x, "userLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserLabelsUndefined: Self = StObject.set(x, "userLabels", js.undefined)
+    inline def setUserLabelsUndefined: Self = StObject.set(x, "userLabels", js.undefined)
   }
 }

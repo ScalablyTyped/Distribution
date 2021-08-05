@@ -19,22 +19,17 @@ trait BucketLifecycleRuleNoncurrentVersionTransition extends StObject {
 }
 object BucketLifecycleRuleNoncurrentVersionTransition {
   
-  @scala.inline
-  def apply(storageClass: Input[String]): BucketLifecycleRuleNoncurrentVersionTransition = {
+  inline def apply(storageClass: Input[String]): BucketLifecycleRuleNoncurrentVersionTransition = {
     val __obj = js.Dynamic.literal(storageClass = storageClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketLifecycleRuleNoncurrentVersionTransition]
   }
   
-  @scala.inline
-  implicit class BucketLifecycleRuleNoncurrentVersionTransitionMutableBuilder[Self <: BucketLifecycleRuleNoncurrentVersionTransition] (val x: Self) extends AnyVal {
+  extension [Self <: BucketLifecycleRuleNoncurrentVersionTransition](x: Self) {
     
-    @scala.inline
-    def setDays(value: Input[Double]): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
+    inline def setDays(value: Input[Double]): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDaysUndefined: Self = StObject.set(x, "days", js.undefined)
+    inline def setDaysUndefined: Self = StObject.set(x, "days", js.undefined)
     
-    @scala.inline
-    def setStorageClass(value: Input[String]): Self = StObject.set(x, "storageClass", value.asInstanceOf[js.Any])
+    inline def setStorageClass(value: Input[String]): Self = StObject.set(x, "storageClass", value.asInstanceOf[js.Any])
   }
 }

@@ -12,11 +12,8 @@ object getDocblockMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(path: NodePath[js.Any, js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any]).asInstanceOf[String | Null]
-  @scala.inline
-  def default(path: NodePath[js.Any, js.Any], hasCommentIndex: CommentIndex): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any], hasCommentIndex.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def default(path: NodePath[js.Any, js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def default(path: NodePath[js.Any, js.Any], hasCommentIndex: CommentIndex): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any], hasCommentIndex.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
-  @scala.inline
-  def parseDocblock(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDocblock")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def parseDocblock(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDocblock")(str.asInstanceOf[js.Any]).asInstanceOf[String]
 }

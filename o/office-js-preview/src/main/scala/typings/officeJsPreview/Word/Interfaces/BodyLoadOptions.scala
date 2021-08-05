@@ -108,85 +108,59 @@ trait BodyLoadOptions extends StObject {
 }
 object BodyLoadOptions {
   
-  @scala.inline
-  def apply(): BodyLoadOptions = {
+  inline def apply(): BodyLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BodyLoadOptions]
   }
   
-  @scala.inline
-  implicit class BodyLoadOptionsMutableBuilder[Self <: BodyLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BodyLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setFont(value: FontLoadOptions): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: FontLoadOptions): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
-    @scala.inline
-    def setParentBody(value: BodyLoadOptions): Self = StObject.set(x, "parentBody", value.asInstanceOf[js.Any])
+    inline def setParentBody(value: BodyLoadOptions): Self = StObject.set(x, "parentBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentBodyOrNullObject(value: BodyLoadOptions): Self = StObject.set(x, "parentBodyOrNullObject", value.asInstanceOf[js.Any])
+    inline def setParentBodyOrNullObject(value: BodyLoadOptions): Self = StObject.set(x, "parentBodyOrNullObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentBodyOrNullObjectUndefined: Self = StObject.set(x, "parentBodyOrNullObject", js.undefined)
+    inline def setParentBodyOrNullObjectUndefined: Self = StObject.set(x, "parentBodyOrNullObject", js.undefined)
     
-    @scala.inline
-    def setParentBodyUndefined: Self = StObject.set(x, "parentBody", js.undefined)
+    inline def setParentBodyUndefined: Self = StObject.set(x, "parentBody", js.undefined)
     
-    @scala.inline
-    def setParentContentControl(value: ContentControlLoadOptions): Self = StObject.set(x, "parentContentControl", value.asInstanceOf[js.Any])
+    inline def setParentContentControl(value: ContentControlLoadOptions): Self = StObject.set(x, "parentContentControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentContentControlOrNullObject(value: ContentControlLoadOptions): Self = StObject.set(x, "parentContentControlOrNullObject", value.asInstanceOf[js.Any])
+    inline def setParentContentControlOrNullObject(value: ContentControlLoadOptions): Self = StObject.set(x, "parentContentControlOrNullObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentContentControlOrNullObjectUndefined: Self = StObject.set(x, "parentContentControlOrNullObject", js.undefined)
+    inline def setParentContentControlOrNullObjectUndefined: Self = StObject.set(x, "parentContentControlOrNullObject", js.undefined)
     
-    @scala.inline
-    def setParentContentControlUndefined: Self = StObject.set(x, "parentContentControl", js.undefined)
+    inline def setParentContentControlUndefined: Self = StObject.set(x, "parentContentControl", js.undefined)
     
-    @scala.inline
-    def setParentSection(value: SectionLoadOptions): Self = StObject.set(x, "parentSection", value.asInstanceOf[js.Any])
+    inline def setParentSection(value: SectionLoadOptions): Self = StObject.set(x, "parentSection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentSectionOrNullObject(value: SectionLoadOptions): Self = StObject.set(x, "parentSectionOrNullObject", value.asInstanceOf[js.Any])
+    inline def setParentSectionOrNullObject(value: SectionLoadOptions): Self = StObject.set(x, "parentSectionOrNullObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentSectionOrNullObjectUndefined: Self = StObject.set(x, "parentSectionOrNullObject", js.undefined)
+    inline def setParentSectionOrNullObjectUndefined: Self = StObject.set(x, "parentSectionOrNullObject", js.undefined)
     
-    @scala.inline
-    def setParentSectionUndefined: Self = StObject.set(x, "parentSection", js.undefined)
+    inline def setParentSectionUndefined: Self = StObject.set(x, "parentSection", js.undefined)
     
-    @scala.inline
-    def setStyle(value: Boolean): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: Boolean): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleBuiltIn(value: Boolean): Self = StObject.set(x, "styleBuiltIn", value.asInstanceOf[js.Any])
+    inline def setStyleBuiltIn(value: Boolean): Self = StObject.set(x, "styleBuiltIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleBuiltInUndefined: Self = StObject.set(x, "styleBuiltIn", js.undefined)
+    inline def setStyleBuiltInUndefined: Self = StObject.set(x, "styleBuiltIn", js.undefined)
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setText(value: Boolean): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: Boolean): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setType(value: Boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

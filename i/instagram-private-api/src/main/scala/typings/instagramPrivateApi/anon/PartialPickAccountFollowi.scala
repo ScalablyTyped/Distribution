@@ -24,49 +24,35 @@ trait PartialPickAccountFollowi extends StObject {
 }
 object PartialPickAccountFollowi {
   
-  @scala.inline
-  def apply(): PartialPickAccountFollowi = {
+  inline def apply(): PartialPickAccountFollowi = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPickAccountFollowi]
   }
   
-  @scala.inline
-  implicit class PartialPickAccountFollowiMutableBuilder[Self <: PartialPickAccountFollowi] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPickAccountFollowi](x: Self) {
     
-    @scala.inline
-    def setEnableGroups(value: Boolean): Self = StObject.set(x, "enableGroups", value.asInstanceOf[js.Any])
+    inline def setEnableGroups(value: Boolean): Self = StObject.set(x, "enableGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableGroupsUndefined: Self = StObject.set(x, "enableGroups", js.undefined)
+    inline def setEnableGroupsUndefined: Self = StObject.set(x, "enableGroups", js.undefined)
     
-    @scala.inline
-    def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setIncludesHashtags(value: Boolean): Self = StObject.set(x, "includesHashtags", value.asInstanceOf[js.Any])
+    inline def setIncludesHashtags(value: Boolean): Self = StObject.set(x, "includesHashtags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludesHashtagsUndefined: Self = StObject.set(x, "includesHashtags", js.undefined)
+    inline def setIncludesHashtagsUndefined: Self = StObject.set(x, "includesHashtags", js.undefined)
     
-    @scala.inline
-    def setOrder(value: default | date_followed_latest | date_followed_earliest): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: default | date_followed_latest | date_followed_earliest): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setSearchSurface(value: String): Self = StObject.set(x, "searchSurface", value.asInstanceOf[js.Any])
+    inline def setSearchSurface(value: String): Self = StObject.set(x, "searchSurface", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchSurfaceUndefined: Self = StObject.set(x, "searchSurface", js.undefined)
+    inline def setSearchSurfaceUndefined: Self = StObject.set(x, "searchSurface", js.undefined)
   }
 }

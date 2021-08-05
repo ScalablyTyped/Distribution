@@ -30,23 +30,23 @@ object platformPackagerMod {
   @JSImport("app-builder-lib/out/platformPackager", "PlatformPackager")
   @js.native
   abstract class PlatformPackager[DC /* <: PlatformSpecificBuildOptions */] protected () extends StObject {
-    protected def this(info: Packager, platform: Platform) = this()
+    /* protected */ def this(info: Packager, platform: Platform) = this()
     
-    val _resourceList: js.Any = js.native
+    /* private */ val _resourceList: js.Any = js.native
     
     val appInfo: AppInfo = js.native
     
     def buildResourcesDir: String = js.native
     
-    var checkFileInPackage: js.Any = js.native
+    /* private */ var checkFileInPackage: js.Any = js.native
     
     def compression: CompressionLevel = js.native
     
     /* protected */ def computeAppOutDir(outDir: String, arch: Arch): String = js.native
     
-    var computeArtifactName: js.Any = js.native
+    /* private */ var computeArtifactName: js.Any = js.native
     
-    var computeAsarOptions: js.Any = js.native
+    /* private */ var computeAsarOptions: js.Any = js.native
     
     def computeSafeArtifactName(suggestedName: String, ext: String): String | Null = js.native
     def computeSafeArtifactName(suggestedName: String, ext: String, arch: Null, skipArchIfX64: Boolean): String | Null = js.native
@@ -73,7 +73,7 @@ object platformPackagerMod {
     
     def config: Configuration = js.native
     
-    var copyAppFiles: js.Any = js.native
+    /* private */ var copyAppFiles: js.Any = js.native
     
     def createGetFileMatchersOptions(outDir: String, arch: Arch, customBuildOptions: PlatformSpecificBuildOptions): GetFileMatchersOptions = js.native
     
@@ -255,7 +255,7 @@ object platformPackagerMod {
     
     def getElectronSrcDir(dist: String): String = js.native
     
-    var getExtraFileMatchers: js.Any = js.native
+    /* private */ var getExtraFileMatchers: js.Any = js.native
     
     def getIconPath(): js.Promise[String | Null] = js.native
     
@@ -291,7 +291,7 @@ object platformPackagerMod {
     
     def resourceList: js.Promise[js.Array[String]] = js.native
     
-    var sanityCheckPackage: js.Any = js.native
+    /* private */ var sanityCheckPackage: js.Any = js.native
     
     /* protected */ def signApp(packContext: AfterPackContext, isAsar: Boolean): js.Promise[js.Any] = js.native
   }
@@ -305,45 +305,31 @@ object platformPackagerMod {
     @JSImport("app-builder-lib/out/platformPackager", "PlatformPackager.buildAsyncTargets")
     @js.native
     def buildAsyncTargets: js.Any = js.native
-    @scala.inline
-    def buildAsyncTargets_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buildAsyncTargets")(x.asInstanceOf[js.Any])
+    inline def buildAsyncTargets_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buildAsyncTargets")(x.asInstanceOf[js.Any])
     
     @JSImport("app-builder-lib/out/platformPackager", "PlatformPackager.normalizePlatformSpecificBuildOptions")
     @js.native
     def normalizePlatformSpecificBuildOptions: js.Any = js.native
-    @scala.inline
-    def normalizePlatformSpecificBuildOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("normalizePlatformSpecificBuildOptions")(x.asInstanceOf[js.Any])
+    inline def normalizePlatformSpecificBuildOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("normalizePlatformSpecificBuildOptions")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def chooseNotNull(): js.UndefOr[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("chooseNotNull")().asInstanceOf[js.UndefOr[String | Null]]
-  @scala.inline
-  def chooseNotNull(v1: String): js.UndefOr[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("chooseNotNull")(v1.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String | Null]]
-  @scala.inline
-  def chooseNotNull(v1: String, v2: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("chooseNotNull")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
-  @scala.inline
-  def chooseNotNull(v1: Null, v2: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("chooseNotNull")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
-  @scala.inline
-  def chooseNotNull(v1: Unit, v2: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("chooseNotNull")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+  inline def chooseNotNull(): js.UndefOr[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("chooseNotNull")().asInstanceOf[js.UndefOr[String | Null]]
+  inline def chooseNotNull(v1: String): js.UndefOr[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("chooseNotNull")(v1.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String | Null]]
+  inline def chooseNotNull(v1: String, v2: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("chooseNotNull")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+  inline def chooseNotNull(v1: Null, v2: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("chooseNotNull")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+  inline def chooseNotNull(v1: Unit, v2: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("chooseNotNull")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
   
-  @scala.inline
-  def computeSafeArtifactNameIfNeeded(suggestedName: String, safeNameProducer: js.Function0[String]): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("computeSafeArtifactNameIfNeeded")(suggestedName.asInstanceOf[js.Any], safeNameProducer.asInstanceOf[js.Any])).asInstanceOf[String | Null]
-  @scala.inline
-  def computeSafeArtifactNameIfNeeded(suggestedName: Null, safeNameProducer: js.Function0[String]): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("computeSafeArtifactNameIfNeeded")(suggestedName.asInstanceOf[js.Any], safeNameProducer.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def computeSafeArtifactNameIfNeeded(suggestedName: String, safeNameProducer: js.Function0[String]): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("computeSafeArtifactNameIfNeeded")(suggestedName.asInstanceOf[js.Any], safeNameProducer.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def computeSafeArtifactNameIfNeeded(suggestedName: Null, safeNameProducer: js.Function0[String]): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("computeSafeArtifactNameIfNeeded")(suggestedName.asInstanceOf[js.Any], safeNameProducer.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
-  @scala.inline
-  def isSafeGithubName(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSafeGithubName")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isSafeGithubName(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSafeGithubName")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isSafeToUnpackElectronOnRemoteBuildServer(packager: PlatformPackager[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSafeToUnpackElectronOnRemoteBuildServer")(packager.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isSafeToUnpackElectronOnRemoteBuildServer(packager: PlatformPackager[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSafeToUnpackElectronOnRemoteBuildServer")(packager.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def normalizeExt(ext: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeExt")(ext.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def normalizeExt(ext: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeExt")(ext.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def resolveFunction[T](executor: T, name: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveFunction")(executor.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def resolveFunction[T](executor: String, name: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveFunction")(executor.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def resolveFunction[T](executor: T, name: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveFunction")(executor.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def resolveFunction[T](executor: String, name: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveFunction")(executor.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[T]
   
   /* Rewritten from type alias, can be one of: 
     - typings.appBuilderLib.appBuilderLibStrings.icns
@@ -353,14 +339,11 @@ object platformPackagerMod {
   trait IconFormat extends StObject
   object IconFormat {
     
-    @scala.inline
-    def icns: typings.appBuilderLib.appBuilderLibStrings.icns = "icns".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.icns]
+    inline def icns: typings.appBuilderLib.appBuilderLibStrings.icns = "icns".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.icns]
     
-    @scala.inline
-    def ico: typings.appBuilderLib.appBuilderLibStrings.ico = "ico".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.ico]
+    inline def ico: typings.appBuilderLib.appBuilderLibStrings.ico = "ico".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.ico]
     
-    @scala.inline
-    def set: typings.appBuilderLib.appBuilderLibStrings.set = "set".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.set]
+    inline def set: typings.appBuilderLib.appBuilderLibStrings.set = "set".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.set]
   }
   
   trait IconInfo extends StObject {
@@ -371,20 +354,16 @@ object platformPackagerMod {
   }
   object IconInfo {
     
-    @scala.inline
-    def apply(file: String, size: Double): IconInfo = {
+    inline def apply(file: String, size: Double): IconInfo = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[IconInfo]
     }
     
-    @scala.inline
-    implicit class IconInfoMutableBuilder[Self <: IconInfo] (val x: Self) extends AnyVal {
+    extension [Self <: IconInfo](x: Self) {
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
 }

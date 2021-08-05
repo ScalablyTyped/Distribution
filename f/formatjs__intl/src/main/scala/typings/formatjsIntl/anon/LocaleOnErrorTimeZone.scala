@@ -28,8 +28,7 @@ trait LocaleOnErrorTimeZone extends StObject {
 }
 object LocaleOnErrorTimeZone {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     locale: String,
     onError: /* err */ MissingTranslationError | MessageFormatError | MissingDataError | InvalidConfigError | UnsupportedFormatterError | FormatError => Unit
   ): LocaleOnErrorTimeZone = {
@@ -37,21 +36,16 @@ object LocaleOnErrorTimeZone {
     __obj.asInstanceOf[LocaleOnErrorTimeZone]
   }
   
-  @scala.inline
-  implicit class LocaleOnErrorTimeZoneMutableBuilder[Self <: LocaleOnErrorTimeZone] (val x: Self) extends AnyVal {
+  extension [Self <: LocaleOnErrorTimeZone](x: Self) {
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnError(
+    inline def setOnError(
       value: /* err */ MissingTranslationError | MessageFormatError | MissingDataError | InvalidConfigError | UnsupportedFormatterError | FormatError => Unit
     ): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
+    inline def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
+    inline def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
   }
 }

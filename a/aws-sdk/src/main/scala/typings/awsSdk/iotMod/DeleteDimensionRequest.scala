@@ -13,16 +13,13 @@ trait DeleteDimensionRequest extends StObject {
 }
 object DeleteDimensionRequest {
   
-  @scala.inline
-  def apply(name: DimensionName): DeleteDimensionRequest = {
+  inline def apply(name: DimensionName): DeleteDimensionRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDimensionRequest]
   }
   
-  @scala.inline
-  implicit class DeleteDimensionRequestMutableBuilder[Self <: DeleteDimensionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDimensionRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: DimensionName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: DimensionName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

@@ -31,8 +31,7 @@ object MM {
   }
   object Metadata {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       album: String,
       albumartist: js.Array[String],
       artist: js.Array[String],
@@ -48,50 +47,35 @@ object MM {
       __obj.asInstanceOf[Metadata]
     }
     
-    @scala.inline
-    implicit class MetadataMutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
+    extension [Self <: Metadata](x: Self) {
       
-      @scala.inline
-      def setAlbum(value: String): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
+      inline def setAlbum(value: String): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlbumartist(value: js.Array[String]): Self = StObject.set(x, "albumartist", value.asInstanceOf[js.Any])
+      inline def setAlbumartist(value: js.Array[String]): Self = StObject.set(x, "albumartist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlbumartistVarargs(value: String*): Self = StObject.set(x, "albumartist", js.Array(value :_*))
+      inline def setAlbumartistVarargs(value: String*): Self = StObject.set(x, "albumartist", js.Array(value :_*))
       
-      @scala.inline
-      def setArtist(value: js.Array[String]): Self = StObject.set(x, "artist", value.asInstanceOf[js.Any])
+      inline def setArtist(value: js.Array[String]): Self = StObject.set(x, "artist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArtistVarargs(value: String*): Self = StObject.set(x, "artist", js.Array(value :_*))
+      inline def setArtistVarargs(value: String*): Self = StObject.set(x, "artist", js.Array(value :_*))
       
-      @scala.inline
-      def setDisk(value: NoOf): Self = StObject.set(x, "disk", value.asInstanceOf[js.Any])
+      inline def setDisk(value: NoOf): Self = StObject.set(x, "disk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenre(value: js.Array[String]): Self = StObject.set(x, "genre", value.asInstanceOf[js.Any])
+      inline def setGenre(value: js.Array[String]): Self = StObject.set(x, "genre", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenreVarargs(value: String*): Self = StObject.set(x, "genre", js.Array(value :_*))
+      inline def setGenreVarargs(value: String*): Self = StObject.set(x, "genre", js.Array(value :_*))
       
-      @scala.inline
-      def setPicture(value: js.Array[Picture]): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
+      inline def setPicture(value: js.Array[Picture]): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPictureVarargs(value: Picture*): Self = StObject.set(x, "picture", js.Array(value :_*))
+      inline def setPictureVarargs(value: Picture*): Self = StObject.set(x, "picture", js.Array(value :_*))
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrack(value: NoOf): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+      inline def setTrack(value: NoOf): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYear(value: String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+      inline def setYear(value: String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
     }
   }
   
@@ -103,20 +87,16 @@ object MM {
   }
   object NoOf {
     
-    @scala.inline
-    def apply(no: Double, of: Double): NoOf = {
+    inline def apply(no: Double, of: Double): NoOf = {
       val __obj = js.Dynamic.literal(no = no.asInstanceOf[js.Any], of = of.asInstanceOf[js.Any])
       __obj.asInstanceOf[NoOf]
     }
     
-    @scala.inline
-    implicit class NoOfMutableBuilder[Self <: NoOf] (val x: Self) extends AnyVal {
+    extension [Self <: NoOf](x: Self) {
       
-      @scala.inline
-      def setNo(value: Double): Self = StObject.set(x, "no", value.asInstanceOf[js.Any])
+      inline def setNo(value: Double): Self = StObject.set(x, "no", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOf(value: Double): Self = StObject.set(x, "of", value.asInstanceOf[js.Any])
+      inline def setOf(value: Double): Self = StObject.set(x, "of", value.asInstanceOf[js.Any])
     }
   }
   
@@ -128,26 +108,20 @@ object MM {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDuration(value: Boolean): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Boolean): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
+      inline def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileSizeUndefined: Self = StObject.set(x, "fileSize", js.undefined)
+      inline def setFileSizeUndefined: Self = StObject.set(x, "fileSize", js.undefined)
     }
   }
   
@@ -159,20 +133,16 @@ object MM {
   }
   object Picture {
     
-    @scala.inline
-    def apply(data: Buffer, format: String): Picture = {
+    inline def apply(data: Buffer, format: String): Picture = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any])
       __obj.asInstanceOf[Picture]
     }
     
-    @scala.inline
-    implicit class PictureMutableBuilder[Self <: Picture] (val x: Self) extends AnyVal {
+    extension [Self <: Picture](x: Self) {
       
-      @scala.inline
-      def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     }
   }
 }

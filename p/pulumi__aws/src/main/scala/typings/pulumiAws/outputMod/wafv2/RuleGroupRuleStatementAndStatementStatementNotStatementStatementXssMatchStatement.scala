@@ -22,8 +22,7 @@ trait RuleGroupRuleStatementAndStatementStatementNotStatementStatementXssMatchSt
 }
 object RuleGroupRuleStatementAndStatementStatementNotStatementStatementXssMatchStatement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     textTransformations: js.Array[
       RuleGroupRuleStatementAndStatementStatementNotStatementStatementXssMatchStatementTextTransformation
     ]
@@ -32,26 +31,21 @@ object RuleGroupRuleStatementAndStatementStatementNotStatementStatementXssMatchS
     __obj.asInstanceOf[RuleGroupRuleStatementAndStatementStatementNotStatementStatementXssMatchStatement]
   }
   
-  @scala.inline
-  implicit class RuleGroupRuleStatementAndStatementStatementNotStatementStatementXssMatchStatementMutableBuilder[Self <: RuleGroupRuleStatementAndStatementStatementNotStatementStatementXssMatchStatement] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupRuleStatementAndStatementStatementNotStatementStatementXssMatchStatement](x: Self) {
     
-    @scala.inline
-    def setFieldToMatch(
+    inline def setFieldToMatch(
       value: RuleGroupRuleStatementAndStatementStatementNotStatementStatementXssMatchStatementFieldToMatch
     ): Self = StObject.set(x, "fieldToMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldToMatchUndefined: Self = StObject.set(x, "fieldToMatch", js.undefined)
+    inline def setFieldToMatchUndefined: Self = StObject.set(x, "fieldToMatch", js.undefined)
     
-    @scala.inline
-    def setTextTransformations(
+    inline def setTextTransformations(
       value: js.Array[
           RuleGroupRuleStatementAndStatementStatementNotStatementStatementXssMatchStatementTextTransformation
         ]
     ): Self = StObject.set(x, "textTransformations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextTransformationsVarargs(
+    inline def setTextTransformationsVarargs(
       value: RuleGroupRuleStatementAndStatementStatementNotStatementStatementXssMatchStatementTextTransformation*
     ): Self = StObject.set(x, "textTransformations", js.Array(value :_*))
   }

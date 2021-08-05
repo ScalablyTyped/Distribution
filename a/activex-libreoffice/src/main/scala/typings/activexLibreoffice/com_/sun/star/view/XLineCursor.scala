@@ -36,8 +36,7 @@ trait XLineCursor
 }
 object XLineCursor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     gotoEndOfLine: Boolean => Unit,
     gotoStartOfLine: Boolean => Unit,
@@ -50,19 +49,14 @@ object XLineCursor {
     __obj.asInstanceOf[XLineCursor]
   }
   
-  @scala.inline
-  implicit class XLineCursorMutableBuilder[Self <: XLineCursor] (val x: Self) extends AnyVal {
+  extension [Self <: XLineCursor](x: Self) {
     
-    @scala.inline
-    def setGotoEndOfLine(value: Boolean => Unit): Self = StObject.set(x, "gotoEndOfLine", js.Any.fromFunction1(value))
+    inline def setGotoEndOfLine(value: Boolean => Unit): Self = StObject.set(x, "gotoEndOfLine", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGotoStartOfLine(value: Boolean => Unit): Self = StObject.set(x, "gotoStartOfLine", js.Any.fromFunction1(value))
+    inline def setGotoStartOfLine(value: Boolean => Unit): Self = StObject.set(x, "gotoStartOfLine", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsAtEndOfLine(value: () => Boolean): Self = StObject.set(x, "isAtEndOfLine", js.Any.fromFunction0(value))
+    inline def setIsAtEndOfLine(value: () => Boolean): Self = StObject.set(x, "isAtEndOfLine", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsAtStartOfLine(value: () => Boolean): Self = StObject.set(x, "isAtStartOfLine", js.Any.fromFunction0(value))
+    inline def setIsAtStartOfLine(value: () => Boolean): Self = StObject.set(x, "isAtStartOfLine", js.Any.fromFunction0(value))
   }
 }

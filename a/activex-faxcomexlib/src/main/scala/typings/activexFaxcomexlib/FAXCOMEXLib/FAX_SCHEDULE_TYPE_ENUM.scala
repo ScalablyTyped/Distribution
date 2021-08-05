@@ -16,12 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FAX_SCHEDULE_TYPE_ENUM extends StObject
 object FAX_SCHEDULE_TYPE_ENUM {
   
-  @scala.inline
-  def fstDISCOUNT_PERIOD: `2` = 2.asInstanceOf[`2`]
+  inline def fstDISCOUNT_PERIOD: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def fstNOW: `0` = 0.asInstanceOf[`0`]
+  inline def fstNOW: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def fstSPECIFIC_TIME: `1` = 1.asInstanceOf[`1`]
+  inline def fstSPECIFIC_TIME: `1` = 1.asInstanceOf[`1`]
 }

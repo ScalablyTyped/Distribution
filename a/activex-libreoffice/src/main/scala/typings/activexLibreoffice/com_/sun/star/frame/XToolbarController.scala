@@ -47,8 +47,7 @@ trait XToolbarController
 }
 object XToolbarController {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     click: () => Unit,
     createItemWindow: XWindow => XWindow,
@@ -62,22 +61,16 @@ object XToolbarController {
     __obj.asInstanceOf[XToolbarController]
   }
   
-  @scala.inline
-  implicit class XToolbarControllerMutableBuilder[Self <: XToolbarController] (val x: Self) extends AnyVal {
+  extension [Self <: XToolbarController](x: Self) {
     
-    @scala.inline
-    def setClick(value: () => Unit): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
+    inline def setClick(value: () => Unit): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreateItemWindow(value: XWindow => XWindow): Self = StObject.set(x, "createItemWindow", js.Any.fromFunction1(value))
+    inline def setCreateItemWindow(value: XWindow => XWindow): Self = StObject.set(x, "createItemWindow", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreatePopupWindow(value: () => XWindow): Self = StObject.set(x, "createPopupWindow", js.Any.fromFunction0(value))
+    inline def setCreatePopupWindow(value: () => XWindow): Self = StObject.set(x, "createPopupWindow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDoubleClick(value: () => Unit): Self = StObject.set(x, "doubleClick", js.Any.fromFunction0(value))
+    inline def setDoubleClick(value: () => Unit): Self = StObject.set(x, "doubleClick", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExecute(value: Double => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+    inline def setExecute(value: Double => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
   }
 }

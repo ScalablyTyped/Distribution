@@ -11,6 +11,5 @@ object tryMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[In, Out](f: js.Function1[/* value */ In, Out]): js.Function1[/* value */ In, EventStream[Out]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* value */ In, EventStream[Out]]]
+  inline def default[In, Out](f: js.Function1[/* value */ In, Out]): js.Function1[/* value */ In, EventStream[Out]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* value */ In, EventStream[Out]]]
 }

@@ -90,20 +90,16 @@ object protocolCallHierarchyProposedMod {
   }
   object CallHierarchyClientCapabilities {
     
-    @scala.inline
-    def apply(): CallHierarchyClientCapabilities = {
+    inline def apply(): CallHierarchyClientCapabilities = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CallHierarchyClientCapabilities]
     }
     
-    @scala.inline
-    implicit class CallHierarchyClientCapabilitiesMutableBuilder[Self <: CallHierarchyClientCapabilities] (val x: Self) extends AnyVal {
+    extension [Self <: CallHierarchyClientCapabilities](x: Self) {
       
-      @scala.inline
-      def setTextDocument(value: CallHierarchy): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
+      inline def setTextDocument(value: CallHierarchy): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextDocumentUndefined: Self = StObject.set(x, "textDocument", js.undefined)
+      inline def setTextDocumentUndefined: Self = StObject.set(x, "textDocument", js.undefined)
     }
   }
   
@@ -122,23 +118,18 @@ object protocolCallHierarchyProposedMod {
   }
   object CallHierarchyIncomingCall {
     
-    @scala.inline
-    def apply(from: CallHierarchyItem, fromRanges: js.Array[Range]): CallHierarchyIncomingCall = {
+    inline def apply(from: CallHierarchyItem, fromRanges: js.Array[Range]): CallHierarchyIncomingCall = {
       val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], fromRanges = fromRanges.asInstanceOf[js.Any])
       __obj.asInstanceOf[CallHierarchyIncomingCall]
     }
     
-    @scala.inline
-    implicit class CallHierarchyIncomingCallMutableBuilder[Self <: CallHierarchyIncomingCall] (val x: Self) extends AnyVal {
+    extension [Self <: CallHierarchyIncomingCall](x: Self) {
       
-      @scala.inline
-      def setFrom(value: CallHierarchyItem): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: CallHierarchyItem): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromRanges(value: js.Array[Range]): Self = StObject.set(x, "fromRanges", value.asInstanceOf[js.Any])
+      inline def setFromRanges(value: js.Array[Range]): Self = StObject.set(x, "fromRanges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromRangesVarargs(value: Range*): Self = StObject.set(x, "fromRanges", js.Array(value :_*))
+      inline def setFromRangesVarargs(value: Range*): Self = StObject.set(x, "fromRanges", js.Array(value :_*))
     }
   }
   
@@ -151,17 +142,14 @@ object protocolCallHierarchyProposedMod {
   }
   object CallHierarchyIncomingCallsParams {
     
-    @scala.inline
-    def apply(item: CallHierarchyItem): CallHierarchyIncomingCallsParams = {
+    inline def apply(item: CallHierarchyItem): CallHierarchyIncomingCallsParams = {
       val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any])
       __obj.asInstanceOf[CallHierarchyIncomingCallsParams]
     }
     
-    @scala.inline
-    implicit class CallHierarchyIncomingCallsParamsMutableBuilder[Self <: CallHierarchyIncomingCallsParams] (val x: Self) extends AnyVal {
+    extension [Self <: CallHierarchyIncomingCallsParams](x: Self) {
       
-      @scala.inline
-      def setItem(value: CallHierarchyItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: CallHierarchyItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     }
   }
   
@@ -205,44 +193,32 @@ object protocolCallHierarchyProposedMod {
   }
   object CallHierarchyItem {
     
-    @scala.inline
-    def apply(kind: SymbolKind, name: String, range: Range, selectionRange: Range, uri: DocumentUri): CallHierarchyItem = {
+    inline def apply(kind: SymbolKind, name: String, range: Range, selectionRange: Range, uri: DocumentUri): CallHierarchyItem = {
       val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any], selectionRange = selectionRange.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[CallHierarchyItem]
     }
     
-    @scala.inline
-    implicit class CallHierarchyItemMutableBuilder[Self <: CallHierarchyItem] (val x: Self) extends AnyVal {
+    extension [Self <: CallHierarchyItem](x: Self) {
       
-      @scala.inline
-      def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+      inline def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
+      inline def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
       
-      @scala.inline
-      def setKind(value: SymbolKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: SymbolKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionRange(value: Range): Self = StObject.set(x, "selectionRange", value.asInstanceOf[js.Any])
+      inline def setSelectionRange(value: Range): Self = StObject.set(x, "selectionRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: js.Array[SymbolTag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[SymbolTag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTagsVarargs(value: SymbolTag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: SymbolTag*): Self = StObject.set(x, "tags", js.Array(value :_*))
       
-      @scala.inline
-      def setUri(value: DocumentUri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: DocumentUri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     }
   }
   
@@ -264,23 +240,18 @@ object protocolCallHierarchyProposedMod {
   }
   object CallHierarchyOutgoingCall {
     
-    @scala.inline
-    def apply(fromRanges: js.Array[Range], to: CallHierarchyItem): CallHierarchyOutgoingCall = {
+    inline def apply(fromRanges: js.Array[Range], to: CallHierarchyItem): CallHierarchyOutgoingCall = {
       val __obj = js.Dynamic.literal(fromRanges = fromRanges.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[CallHierarchyOutgoingCall]
     }
     
-    @scala.inline
-    implicit class CallHierarchyOutgoingCallMutableBuilder[Self <: CallHierarchyOutgoingCall] (val x: Self) extends AnyVal {
+    extension [Self <: CallHierarchyOutgoingCall](x: Self) {
       
-      @scala.inline
-      def setFromRanges(value: js.Array[Range]): Self = StObject.set(x, "fromRanges", value.asInstanceOf[js.Any])
+      inline def setFromRanges(value: js.Array[Range]): Self = StObject.set(x, "fromRanges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromRangesVarargs(value: Range*): Self = StObject.set(x, "fromRanges", js.Array(value :_*))
+      inline def setFromRangesVarargs(value: Range*): Self = StObject.set(x, "fromRanges", js.Array(value :_*))
       
-      @scala.inline
-      def setTo(value: CallHierarchyItem): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: CallHierarchyItem): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     }
   }
   
@@ -293,17 +264,14 @@ object protocolCallHierarchyProposedMod {
   }
   object CallHierarchyOutgoingCallsParams {
     
-    @scala.inline
-    def apply(item: CallHierarchyItem): CallHierarchyOutgoingCallsParams = {
+    inline def apply(item: CallHierarchyItem): CallHierarchyOutgoingCallsParams = {
       val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any])
       __obj.asInstanceOf[CallHierarchyOutgoingCallsParams]
     }
     
-    @scala.inline
-    implicit class CallHierarchyOutgoingCallsParamsMutableBuilder[Self <: CallHierarchyOutgoingCallsParams] (val x: Self) extends AnyVal {
+    extension [Self <: CallHierarchyOutgoingCallsParams](x: Self) {
       
-      @scala.inline
-      def setItem(value: CallHierarchyItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: CallHierarchyItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     }
   }
   
@@ -313,8 +281,7 @@ object protocolCallHierarchyProposedMod {
        with WorkDoneProgressParams
   object CallHierarchyPrepareParams {
     
-    @scala.inline
-    def apply(position: Position, textDocument: TextDocumentIdentifier): CallHierarchyPrepareParams = {
+    inline def apply(position: Position, textDocument: TextDocumentIdentifier): CallHierarchyPrepareParams = {
       val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any], textDocument = textDocument.asInstanceOf[js.Any])
       __obj.asInstanceOf[CallHierarchyPrepareParams]
     }
@@ -326,8 +293,7 @@ object protocolCallHierarchyProposedMod {
        with WorkDoneProgressOptions
   object CallHierarchyRegistrationOptions {
     
-    @scala.inline
-    def apply(): CallHierarchyRegistrationOptions = {
+    inline def apply(): CallHierarchyRegistrationOptions = {
       val __obj = js.Dynamic.literal(documentSelector = null)
       __obj.asInstanceOf[CallHierarchyRegistrationOptions]
     }
@@ -344,22 +310,18 @@ object protocolCallHierarchyProposedMod {
   }
   object CallHierarchyServerCapabilities {
     
-    @scala.inline
-    def apply(): CallHierarchyServerCapabilities = {
+    inline def apply(): CallHierarchyServerCapabilities = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CallHierarchyServerCapabilities]
     }
     
-    @scala.inline
-    implicit class CallHierarchyServerCapabilitiesMutableBuilder[Self <: CallHierarchyServerCapabilities] (val x: Self) extends AnyVal {
+    extension [Self <: CallHierarchyServerCapabilities](x: Self) {
       
-      @scala.inline
-      def setCallHierarchyProvider(
+      inline def setCallHierarchyProvider(
         value: Boolean | CallHierarchyOptions | (CallHierarchyRegistrationOptions & StaticRegistrationOptions)
       ): Self = StObject.set(x, "callHierarchyProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallHierarchyProviderUndefined: Self = StObject.set(x, "callHierarchyProvider", js.undefined)
+      inline def setCallHierarchyProviderUndefined: Self = StObject.set(x, "callHierarchyProvider", js.undefined)
     }
   }
 }

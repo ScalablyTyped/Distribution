@@ -8,11 +8,9 @@ object cldrjsStrings {
   
   @js.native
   sealed trait `-_` extends StObject
-  @scala.inline
-  def `-_`: `-_` = "-".asInstanceOf[`-_`]
+  inline def `-_`: `-_` = "-".asInstanceOf[`-_`]
   
   @js.native
   sealed trait _underscore extends StObject
-  @scala.inline
-  def _underscore: _underscore = "_".asInstanceOf[_underscore]
+  inline def _underscore: _underscore = "_".asInstanceOf[_underscore]
 }

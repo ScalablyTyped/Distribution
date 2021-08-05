@@ -12,6 +12,5 @@ object subscribeToIterableMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def subscribeToIterable[T](iterable: Iterable[T]): js.Function1[/* subscriber */ Subscriber[T], Subscriber[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("subscribeToIterable")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* subscriber */ Subscriber[T], Subscriber[T]]]
+  inline def subscribeToIterable[T](iterable: Iterable[T]): js.Function1[/* subscriber */ Subscriber[T], Subscriber[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("subscribeToIterable")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* subscriber */ Subscriber[T], Subscriber[T]]]
 }

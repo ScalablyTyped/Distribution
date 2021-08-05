@@ -40,8 +40,7 @@ trait MigrationsUpdateImportResponseData extends StObject {
 }
 object MigrationsUpdateImportResponseData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     authors_count: Double,
     authors_url: String,
     commit_count: Double,
@@ -63,55 +62,38 @@ object MigrationsUpdateImportResponseData {
     __obj.asInstanceOf[MigrationsUpdateImportResponseData]
   }
   
-  @scala.inline
-  implicit class MigrationsUpdateImportResponseDataMutableBuilder[Self <: MigrationsUpdateImportResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: MigrationsUpdateImportResponseData](x: Self) {
     
-    @scala.inline
-    def setAuthors_count(value: Double): Self = StObject.set(x, "authors_count", value.asInstanceOf[js.Any])
+    inline def setAuthors_count(value: Double): Self = StObject.set(x, "authors_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthors_url(value: String): Self = StObject.set(x, "authors_url", value.asInstanceOf[js.Any])
+    inline def setAuthors_url(value: String): Self = StObject.set(x, "authors_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommit_count(value: Double): Self = StObject.set(x, "commit_count", value.asInstanceOf[js.Any])
+    inline def setCommit_count(value: Double): Self = StObject.set(x, "commit_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHas_large_files(value: Boolean): Self = StObject.set(x, "has_large_files", value.asInstanceOf[js.Any])
+    inline def setHas_large_files(value: Boolean): Self = StObject.set(x, "has_large_files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
+    inline def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLarge_files_count(value: Double): Self = StObject.set(x, "large_files_count", value.asInstanceOf[js.Any])
+    inline def setLarge_files_count(value: Double): Self = StObject.set(x, "large_files_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLarge_files_size(value: Double): Self = StObject.set(x, "large_files_size", value.asInstanceOf[js.Any])
+    inline def setLarge_files_size(value: Double): Self = StObject.set(x, "large_files_size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+    inline def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepository_url(value: String): Self = StObject.set(x, "repository_url", value.asInstanceOf[js.Any])
+    inline def setRepository_url(value: String): Self = StObject.set(x, "repository_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus_text(value: String): Self = StObject.set(x, "status_text", value.asInstanceOf[js.Any])
+    inline def setStatus_text(value: String): Self = StObject.set(x, "status_text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTfvc_project(value: String): Self = StObject.set(x, "tfvc_project", value.asInstanceOf[js.Any])
+    inline def setTfvc_project(value: String): Self = StObject.set(x, "tfvc_project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUse_lfs(value: String): Self = StObject.set(x, "use_lfs", value.asInstanceOf[js.Any])
+    inline def setUse_lfs(value: String): Self = StObject.set(x, "use_lfs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVcs(value: String): Self = StObject.set(x, "vcs", value.asInstanceOf[js.Any])
+    inline def setVcs(value: String): Self = StObject.set(x, "vcs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVcs_url(value: String): Self = StObject.set(x, "vcs_url", value.asInstanceOf[js.Any])
+    inline def setVcs_url(value: String): Self = StObject.set(x, "vcs_url", value.asInstanceOf[js.Any])
   }
 }

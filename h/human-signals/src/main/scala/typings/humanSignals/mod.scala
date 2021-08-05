@@ -45,8 +45,7 @@ object mod {
   }
   object Signal {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       action: SignalAction,
       description: String,
       forced: Boolean,
@@ -59,29 +58,21 @@ object mod {
       __obj.asInstanceOf[Signal]
     }
     
-    @scala.inline
-    implicit class SignalMutableBuilder[Self <: Signal] (val x: Self) extends AnyVal {
+    extension [Self <: Signal](x: Self) {
       
-      @scala.inline
-      def setAction(value: SignalAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: SignalAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForced(value: Boolean): Self = StObject.set(x, "forced", value.asInstanceOf[js.Any])
+      inline def setForced(value: Boolean): Self = StObject.set(x, "forced", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStandard(value: SignalStandard): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
+      inline def setStandard(value: SignalStandard): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
+      inline def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
     }
   }
   
@@ -95,20 +86,15 @@ object mod {
   trait SignalAction extends StObject
   object SignalAction {
     
-    @scala.inline
-    def core: typings.humanSignals.humanSignalsStrings.core = "core".asInstanceOf[typings.humanSignals.humanSignalsStrings.core]
+    inline def core: typings.humanSignals.humanSignalsStrings.core = "core".asInstanceOf[typings.humanSignals.humanSignalsStrings.core]
     
-    @scala.inline
-    def ignore: typings.humanSignals.humanSignalsStrings.ignore = "ignore".asInstanceOf[typings.humanSignals.humanSignalsStrings.ignore]
+    inline def ignore: typings.humanSignals.humanSignalsStrings.ignore = "ignore".asInstanceOf[typings.humanSignals.humanSignalsStrings.ignore]
     
-    @scala.inline
-    def pause: typings.humanSignals.humanSignalsStrings.pause = "pause".asInstanceOf[typings.humanSignals.humanSignalsStrings.pause]
+    inline def pause: typings.humanSignals.humanSignalsStrings.pause = "pause".asInstanceOf[typings.humanSignals.humanSignalsStrings.pause]
     
-    @scala.inline
-    def terminate: typings.humanSignals.humanSignalsStrings.terminate = "terminate".asInstanceOf[typings.humanSignals.humanSignalsStrings.terminate]
+    inline def terminate: typings.humanSignals.humanSignalsStrings.terminate = "terminate".asInstanceOf[typings.humanSignals.humanSignalsStrings.terminate]
     
-    @scala.inline
-    def unpause: typings.humanSignals.humanSignalsStrings.unpause = "unpause".asInstanceOf[typings.humanSignals.humanSignalsStrings.unpause]
+    inline def unpause: typings.humanSignals.humanSignalsStrings.unpause = "unpause".asInstanceOf[typings.humanSignals.humanSignalsStrings.unpause]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -121,19 +107,14 @@ object mod {
   trait SignalStandard extends StObject
   object SignalStandard {
     
-    @scala.inline
-    def ansi: typings.humanSignals.humanSignalsStrings.ansi = "ansi".asInstanceOf[typings.humanSignals.humanSignalsStrings.ansi]
+    inline def ansi: typings.humanSignals.humanSignalsStrings.ansi = "ansi".asInstanceOf[typings.humanSignals.humanSignalsStrings.ansi]
     
-    @scala.inline
-    def bsd: typings.humanSignals.humanSignalsStrings.bsd = "bsd".asInstanceOf[typings.humanSignals.humanSignalsStrings.bsd]
+    inline def bsd: typings.humanSignals.humanSignalsStrings.bsd = "bsd".asInstanceOf[typings.humanSignals.humanSignalsStrings.bsd]
     
-    @scala.inline
-    def other: typings.humanSignals.humanSignalsStrings.other = "other".asInstanceOf[typings.humanSignals.humanSignalsStrings.other]
+    inline def other: typings.humanSignals.humanSignalsStrings.other = "other".asInstanceOf[typings.humanSignals.humanSignalsStrings.other]
     
-    @scala.inline
-    def posix: typings.humanSignals.humanSignalsStrings.posix = "posix".asInstanceOf[typings.humanSignals.humanSignalsStrings.posix]
+    inline def posix: typings.humanSignals.humanSignalsStrings.posix = "posix".asInstanceOf[typings.humanSignals.humanSignalsStrings.posix]
     
-    @scala.inline
-    def systemv: typings.humanSignals.humanSignalsStrings.systemv = "systemv".asInstanceOf[typings.humanSignals.humanSignalsStrings.systemv]
+    inline def systemv: typings.humanSignals.humanSignalsStrings.systemv = "systemv".asInstanceOf[typings.humanSignals.humanSignalsStrings.systemv]
   }
 }

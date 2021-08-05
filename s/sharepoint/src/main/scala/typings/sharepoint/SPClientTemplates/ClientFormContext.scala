@@ -40,8 +40,7 @@ trait ClientFormContext extends StObject {
 }
 object ClientFormContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     controlMode: Double,
     fieldName: String,
     fieldSchema: FieldSchemaInForm,
@@ -61,49 +60,34 @@ object ClientFormContext {
     __obj.asInstanceOf[ClientFormContext]
   }
   
-  @scala.inline
-  implicit class ClientFormContextMutableBuilder[Self <: ClientFormContext] (val x: Self) extends AnyVal {
+  extension [Self <: ClientFormContext](x: Self) {
     
-    @scala.inline
-    def setControlMode(value: Double): Self = StObject.set(x, "controlMode", value.asInstanceOf[js.Any])
+    inline def setControlMode(value: Double): Self = StObject.set(x, "controlMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
+    inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldSchema(value: FieldSchemaInForm): Self = StObject.set(x, "fieldSchema", value.asInstanceOf[js.Any])
+    inline def setFieldSchema(value: FieldSchemaInForm): Self = StObject.set(x, "fieldSchema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldValue(value: js.Any): Self = StObject.set(x, "fieldValue", value.asInstanceOf[js.Any])
+    inline def setFieldValue(value: js.Any): Self = StObject.set(x, "fieldValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemAttributes(value: ExternalListItem): Self = StObject.set(x, "itemAttributes", value.asInstanceOf[js.Any])
+    inline def setItemAttributes(value: ExternalListItem): Self = StObject.set(x, "itemAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListAttributes(value: BaseType): Self = StObject.set(x, "listAttributes", value.asInstanceOf[js.Any])
+    inline def setListAttributes(value: BaseType): Self = StObject.set(x, "listAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegisterClientValidator(value: (String, ValidatorSet) => Unit): Self = StObject.set(x, "registerClientValidator", js.Any.fromFunction2(value))
+    inline def setRegisterClientValidator(value: (String, ValidatorSet) => Unit): Self = StObject.set(x, "registerClientValidator", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRegisterFocusCallback(value: (String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "registerFocusCallback", js.Any.fromFunction2(value))
+    inline def setRegisterFocusCallback(value: (String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "registerFocusCallback", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRegisterGetValueCallback(value: (String, js.Function0[js.Any]) => Unit): Self = StObject.set(x, "registerGetValueCallback", js.Any.fromFunction2(value))
+    inline def setRegisterGetValueCallback(value: (String, js.Function0[js.Any]) => Unit): Self = StObject.set(x, "registerGetValueCallback", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRegisterHasValueChangedCallback(value: (String, js.Function1[/* eventArg */ js.UndefOr[js.Any], Unit]) => Unit): Self = StObject.set(x, "registerHasValueChangedCallback", js.Any.fromFunction2(value))
+    inline def setRegisterHasValueChangedCallback(value: (String, js.Function1[/* eventArg */ js.UndefOr[js.Any], Unit]) => Unit): Self = StObject.set(x, "registerHasValueChangedCallback", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRegisterInitCallback(value: (String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "registerInitCallback", js.Any.fromFunction2(value))
+    inline def setRegisterInitCallback(value: (String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "registerInitCallback", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRegisterValidationErrorCallback(value: (String, js.Function1[/* error */ js.Any, Unit]) => Unit): Self = StObject.set(x, "registerValidationErrorCallback", js.Any.fromFunction2(value))
+    inline def setRegisterValidationErrorCallback(value: (String, js.Function1[/* error */ js.Any, Unit]) => Unit): Self = StObject.set(x, "registerValidationErrorCallback", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUpdateControlValue(value: (String, js.Any) => Unit): Self = StObject.set(x, "updateControlValue", js.Any.fromFunction2(value))
+    inline def setUpdateControlValue(value: (String, js.Any) => Unit): Self = StObject.set(x, "updateControlValue", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWebAttributes(value: AllowScriptableWebParts): Self = StObject.set(x, "webAttributes", value.asInstanceOf[js.Any])
+    inline def setWebAttributes(value: AllowScriptableWebParts): Self = StObject.set(x, "webAttributes", value.asInstanceOf[js.Any])
   }
 }

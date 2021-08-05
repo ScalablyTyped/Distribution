@@ -16,19 +16,15 @@ trait SchemaSignBlobRequest extends StObject {
 }
 object SchemaSignBlobRequest {
   
-  @scala.inline
-  def apply(): SchemaSignBlobRequest = {
+  inline def apply(): SchemaSignBlobRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSignBlobRequest]
   }
   
-  @scala.inline
-  implicit class SchemaSignBlobRequestMutableBuilder[Self <: SchemaSignBlobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSignBlobRequest](x: Self) {
     
-    @scala.inline
-    def setBytesToSign(value: String): Self = StObject.set(x, "bytesToSign", value.asInstanceOf[js.Any])
+    inline def setBytesToSign(value: String): Self = StObject.set(x, "bytesToSign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesToSignUndefined: Self = StObject.set(x, "bytesToSign", js.undefined)
+    inline def setBytesToSignUndefined: Self = StObject.set(x, "bytesToSign", js.undefined)
   }
 }

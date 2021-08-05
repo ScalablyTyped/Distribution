@@ -29,40 +29,29 @@ trait PageTiming extends StObject {
 }
 object PageTiming {
   
-  @scala.inline
-  def apply(): PageTiming = {
+  inline def apply(): PageTiming = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PageTiming]
   }
   
-  @scala.inline
-  implicit class PageTimingMutableBuilder[Self <: PageTiming] (val x: Self) extends AnyVal {
+  extension [Self <: PageTiming](x: Self) {
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
-    @scala.inline
-    def setOnContentLoad(value: Double): Self = StObject.set(x, "onContentLoad", value.asInstanceOf[js.Any])
+    inline def setOnContentLoad(value: Double): Self = StObject.set(x, "onContentLoad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnContentLoadUndefined: Self = StObject.set(x, "onContentLoad", js.undefined)
+    inline def setOnContentLoadUndefined: Self = StObject.set(x, "onContentLoad", js.undefined)
     
-    @scala.inline
-    def setOnLoad(value: Double): Self = StObject.set(x, "onLoad", value.asInstanceOf[js.Any])
+    inline def setOnLoad(value: Double): Self = StObject.set(x, "onLoad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
+    inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
     
-    @scala.inline
-    def set_startRender(value: Double): Self = StObject.set(x, "_startRender", value.asInstanceOf[js.Any])
+    inline def set_startRender(value: Double): Self = StObject.set(x, "_startRender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_startRenderNull: Self = StObject.set(x, "_startRender", null)
+    inline def set_startRenderNull: Self = StObject.set(x, "_startRender", null)
     
-    @scala.inline
-    def set_startRenderUndefined: Self = StObject.set(x, "_startRender", js.undefined)
+    inline def set_startRenderUndefined: Self = StObject.set(x, "_startRender", js.undefined)
   }
 }

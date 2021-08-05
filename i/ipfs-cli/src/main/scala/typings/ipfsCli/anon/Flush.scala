@@ -24,8 +24,7 @@ trait Flush extends StObject {
 }
 object Flush {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ctx: IpfsAny,
     flush: js.Any,
     hashAlg: js.Any,
@@ -39,31 +38,22 @@ object Flush {
     __obj.asInstanceOf[Flush]
   }
   
-  @scala.inline
-  implicit class FlushMutableBuilder[Self <: Flush] (val x: Self) extends AnyVal {
+  extension [Self <: Flush](x: Self) {
     
-    @scala.inline
-    def setCtx(value: IpfsAny): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
+    inline def setCtx(value: IpfsAny): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlush(value: js.Any): Self = StObject.set(x, "flush", value.asInstanceOf[js.Any])
+    inline def setFlush(value: js.Any): Self = StObject.set(x, "flush", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHashAlg(value: js.Any): Self = StObject.set(x, "hashAlg", value.asInstanceOf[js.Any])
+    inline def setHashAlg(value: js.Any): Self = StObject.set(x, "hashAlg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: js.Any): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: js.Any): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: js.Any): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: js.Any): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecursive(value: js.Any): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+    inline def setRecursive(value: js.Any): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShardSplitThreshold(value: js.Any): Self = StObject.set(x, "shardSplitThreshold", value.asInstanceOf[js.Any])
+    inline def setShardSplitThreshold(value: js.Any): Self = StObject.set(x, "shardSplitThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

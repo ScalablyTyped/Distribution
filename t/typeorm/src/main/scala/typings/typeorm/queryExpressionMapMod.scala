@@ -86,7 +86,7 @@ object queryExpressionMapMod {
       */
     var comment: js.UndefOr[String] = js.native
     
-    var connection: Connection = js.native
+    /* protected */ var connection: Connection = js.native
     
     /**
       * Creates a new alias and adds it to the current expression map.

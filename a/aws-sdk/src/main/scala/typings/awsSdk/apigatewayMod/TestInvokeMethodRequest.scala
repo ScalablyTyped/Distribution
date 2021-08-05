@@ -53,58 +53,41 @@ trait TestInvokeMethodRequest extends StObject {
 }
 object TestInvokeMethodRequest {
   
-  @scala.inline
-  def apply(httpMethod: String, resourceId: String, restApiId: String): TestInvokeMethodRequest = {
+  inline def apply(httpMethod: String, resourceId: String, restApiId: String): TestInvokeMethodRequest = {
     val __obj = js.Dynamic.literal(httpMethod = httpMethod.asInstanceOf[js.Any], resourceId = resourceId.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestInvokeMethodRequest]
   }
   
-  @scala.inline
-  implicit class TestInvokeMethodRequestMutableBuilder[Self <: TestInvokeMethodRequest] (val x: Self) extends AnyVal {
+  extension [Self <: TestInvokeMethodRequest](x: Self) {
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setClientCertificateId(value: String): Self = StObject.set(x, "clientCertificateId", value.asInstanceOf[js.Any])
+    inline def setClientCertificateId(value: String): Self = StObject.set(x, "clientCertificateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientCertificateIdUndefined: Self = StObject.set(x, "clientCertificateId", js.undefined)
+    inline def setClientCertificateIdUndefined: Self = StObject.set(x, "clientCertificateId", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: MapOfStringToString): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: MapOfStringToString): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
+    inline def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiValueHeaders(value: MapOfStringToList): Self = StObject.set(x, "multiValueHeaders", value.asInstanceOf[js.Any])
+    inline def setMultiValueHeaders(value: MapOfStringToList): Self = StObject.set(x, "multiValueHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiValueHeadersUndefined: Self = StObject.set(x, "multiValueHeaders", js.undefined)
+    inline def setMultiValueHeadersUndefined: Self = StObject.set(x, "multiValueHeaders", js.undefined)
     
-    @scala.inline
-    def setPathWithQueryString(value: String): Self = StObject.set(x, "pathWithQueryString", value.asInstanceOf[js.Any])
+    inline def setPathWithQueryString(value: String): Self = StObject.set(x, "pathWithQueryString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathWithQueryStringUndefined: Self = StObject.set(x, "pathWithQueryString", js.undefined)
+    inline def setPathWithQueryStringUndefined: Self = StObject.set(x, "pathWithQueryString", js.undefined)
     
-    @scala.inline
-    def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
+    inline def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStageVariables(value: MapOfStringToString): Self = StObject.set(x, "stageVariables", value.asInstanceOf[js.Any])
+    inline def setStageVariables(value: MapOfStringToString): Self = StObject.set(x, "stageVariables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStageVariablesUndefined: Self = StObject.set(x, "stageVariables", js.undefined)
+    inline def setStageVariablesUndefined: Self = StObject.set(x, "stageVariables", js.undefined)
   }
 }

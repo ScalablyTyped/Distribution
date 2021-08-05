@@ -13,16 +13,13 @@ trait SetCommand
 }
 object SetCommand {
   
-  @scala.inline
-  def apply($set: js.Any): SetCommand = {
+  inline def apply($set: js.Any): SetCommand = {
     val __obj = js.Dynamic.literal($set = $set.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetCommand]
   }
   
-  @scala.inline
-  implicit class SetCommandMutableBuilder[Self <: SetCommand] (val x: Self) extends AnyVal {
+  extension [Self <: SetCommand](x: Self) {
     
-    @scala.inline
-    def set$set(value: js.Any): Self = StObject.set(x, "$set", value.asInstanceOf[js.Any])
+    inline def set$set(value: js.Any): Self = StObject.set(x, "$set", value.asInstanceOf[js.Any])
   }
 }

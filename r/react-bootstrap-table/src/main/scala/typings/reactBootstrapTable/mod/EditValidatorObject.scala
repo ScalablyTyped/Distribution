@@ -19,19 +19,15 @@ trait EditValidatorObject extends StObject {
 }
 object EditValidatorObject {
   
-  @scala.inline
-  def apply(isValid: Boolean, notification: Msg): EditValidatorObject = {
+  inline def apply(isValid: Boolean, notification: Msg): EditValidatorObject = {
     val __obj = js.Dynamic.literal(isValid = isValid.asInstanceOf[js.Any], notification = notification.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditValidatorObject]
   }
   
-  @scala.inline
-  implicit class EditValidatorObjectMutableBuilder[Self <: EditValidatorObject] (val x: Self) extends AnyVal {
+  extension [Self <: EditValidatorObject](x: Self) {
     
-    @scala.inline
-    def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
+    inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotification(value: Msg): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
+    inline def setNotification(value: Msg): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
   }
 }

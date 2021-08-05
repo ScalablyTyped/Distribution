@@ -18,28 +18,21 @@ trait ListCreateAccountStatusResponse extends StObject {
 }
 object ListCreateAccountStatusResponse {
   
-  @scala.inline
-  def apply(): ListCreateAccountStatusResponse = {
+  inline def apply(): ListCreateAccountStatusResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListCreateAccountStatusResponse]
   }
   
-  @scala.inline
-  implicit class ListCreateAccountStatusResponseMutableBuilder[Self <: ListCreateAccountStatusResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListCreateAccountStatusResponse](x: Self) {
     
-    @scala.inline
-    def setCreateAccountStatuses(value: CreateAccountStatuses): Self = StObject.set(x, "CreateAccountStatuses", value.asInstanceOf[js.Any])
+    inline def setCreateAccountStatuses(value: CreateAccountStatuses): Self = StObject.set(x, "CreateAccountStatuses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateAccountStatusesUndefined: Self = StObject.set(x, "CreateAccountStatuses", js.undefined)
+    inline def setCreateAccountStatusesUndefined: Self = StObject.set(x, "CreateAccountStatuses", js.undefined)
     
-    @scala.inline
-    def setCreateAccountStatusesVarargs(value: CreateAccountStatus*): Self = StObject.set(x, "CreateAccountStatuses", js.Array(value :_*))
+    inline def setCreateAccountStatusesVarargs(value: CreateAccountStatus*): Self = StObject.set(x, "CreateAccountStatuses", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

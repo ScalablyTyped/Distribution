@@ -74,36 +74,27 @@ object mod {
     def warn(message: String, rest: js.Any*): Unit = js.native
   }
   
-  @scala.inline
-  def addAppender(appender: Appender): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addAppender")(appender.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addAppender(appender: Appender): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addAppender")(appender.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def addCustomLevel(name: String, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCustomLevel")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addCustomLevel(name: String, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCustomLevel")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def clearAppenders(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAppenders")().asInstanceOf[Unit]
+  inline def clearAppenders(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAppenders")().asInstanceOf[Unit]
   
-  @scala.inline
-  def getAppenders(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppenders")().asInstanceOf[js.Any]
+  inline def getAppenders(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppenders")().asInstanceOf[js.Any]
   
-  @scala.inline
-  def getLevel(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getLevel")().asInstanceOf[Double]
+  inline def getLevel(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getLevel")().asInstanceOf[Double]
   
-  @scala.inline
-  def getLogger(id: String): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getLogger")(id.asInstanceOf[js.Any]).asInstanceOf[Logger]
+  inline def getLogger(id: String): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getLogger")(id.asInstanceOf[js.Any]).asInstanceOf[Logger]
   
   @JSImport("aurelia-logging", "logLevel")
   @js.native
   val logLevel: LogLevel_ = js.native
   
-  @scala.inline
-  def removeAppender(appender: Appender): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAppender")(appender.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def removeAppender(appender: Appender): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAppender")(appender.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def removeCustomLevel(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeCustomLevel")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def removeCustomLevel(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeCustomLevel")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setLevel(level: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setLevel(level: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait Appender extends StObject {
     
@@ -141,8 +132,7 @@ object mod {
   }
   object Appender {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       debug: (Logger, /* repeated */ js.Any) => Unit,
       error: (Logger, /* repeated */ js.Any) => Unit,
       info: (Logger, /* repeated */ js.Any) => Unit,
@@ -152,20 +142,15 @@ object mod {
       __obj.asInstanceOf[Appender]
     }
     
-    @scala.inline
-    implicit class AppenderMutableBuilder[Self <: Appender] (val x: Self) extends AnyVal {
+    extension [Self <: Appender](x: Self) {
       
-      @scala.inline
-      def setDebug(value: (Logger, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction2(value))
+      inline def setDebug(value: (Logger, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setError(value: (Logger, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
+      inline def setError(value: (Logger, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInfo(value: (Logger, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "info", js.Any.fromFunction2(value))
+      inline def setInfo(value: (Logger, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "info", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWarn(value: (Logger, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction2(value))
+      inline def setWarn(value: (Logger, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction2(value))
     }
   }
   
@@ -203,29 +188,22 @@ object mod {
   }
   object LogLevel_ {
     
-    @scala.inline
-    def apply(debug: Double, error: Double, info: Double, none: Double, warn: Double): LogLevel_ = {
+    inline def apply(debug: Double, error: Double, info: Double, none: Double, warn: Double): LogLevel_ = {
       val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], warn = warn.asInstanceOf[js.Any])
       __obj.asInstanceOf[LogLevel_]
     }
     
-    @scala.inline
-    implicit class LogLevel_MutableBuilder[Self <: LogLevel_] (val x: Self) extends AnyVal {
+    extension [Self <: LogLevel_](x: Self) {
       
-      @scala.inline
-      def setDebug(value: Double): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Double): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfo(value: Double): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: Double): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNone(value: Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+      inline def setNone(value: Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarn(value: Double): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
+      inline def setWarn(value: Double): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
     }
   }
 }

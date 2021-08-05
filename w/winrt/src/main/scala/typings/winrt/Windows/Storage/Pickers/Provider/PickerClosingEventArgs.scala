@@ -9,8 +9,7 @@ trait PickerClosingEventArgs
      with IPickerClosingEventArgs
 object PickerClosingEventArgs {
   
-  @scala.inline
-  def apply(closingOperation: PickerClosingOperation, isCanceled: Boolean): PickerClosingEventArgs = {
+  inline def apply(closingOperation: PickerClosingOperation, isCanceled: Boolean): PickerClosingEventArgs = {
     val __obj = js.Dynamic.literal(closingOperation = closingOperation.asInstanceOf[js.Any], isCanceled = isCanceled.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickerClosingEventArgs]
   }

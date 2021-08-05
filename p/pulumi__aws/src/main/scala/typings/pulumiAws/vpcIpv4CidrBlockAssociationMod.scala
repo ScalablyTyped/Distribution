@@ -50,21 +50,16 @@ object vpcIpv4CidrBlockAssociationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): VpcIpv4CidrBlockAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VpcIpv4CidrBlockAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VpcIpv4CidrBlockAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcIpv4CidrBlockAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: VpcIpv4CidrBlockAssociationState): VpcIpv4CidrBlockAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VpcIpv4CidrBlockAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: VpcIpv4CidrBlockAssociationState, opts: CustomResourceOptions): VpcIpv4CidrBlockAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcIpv4CidrBlockAssociation]
+    inline def get(name: String, id: Input[ID]): VpcIpv4CidrBlockAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VpcIpv4CidrBlockAssociation]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VpcIpv4CidrBlockAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcIpv4CidrBlockAssociation]
+    inline def get(name: String, id: Input[ID], state: VpcIpv4CidrBlockAssociationState): VpcIpv4CidrBlockAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VpcIpv4CidrBlockAssociation]
+    inline def get(name: String, id: Input[ID], state: VpcIpv4CidrBlockAssociationState, opts: CustomResourceOptions): VpcIpv4CidrBlockAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcIpv4CidrBlockAssociation]
     
     /**
       * Returns true if the given object is an instance of VpcIpv4CidrBlockAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociation */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociation */ Boolean]
   }
   
   trait VpcIpv4CidrBlockAssociationArgs extends StObject {
@@ -81,20 +76,16 @@ object vpcIpv4CidrBlockAssociationMod {
   }
   object VpcIpv4CidrBlockAssociationArgs {
     
-    @scala.inline
-    def apply(cidrBlock: Input[String], vpcId: Input[String]): VpcIpv4CidrBlockAssociationArgs = {
+    inline def apply(cidrBlock: Input[String], vpcId: Input[String]): VpcIpv4CidrBlockAssociationArgs = {
       val __obj = js.Dynamic.literal(cidrBlock = cidrBlock.asInstanceOf[js.Any], vpcId = vpcId.asInstanceOf[js.Any])
       __obj.asInstanceOf[VpcIpv4CidrBlockAssociationArgs]
     }
     
-    @scala.inline
-    implicit class VpcIpv4CidrBlockAssociationArgsMutableBuilder[Self <: VpcIpv4CidrBlockAssociationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: VpcIpv4CidrBlockAssociationArgs](x: Self) {
       
-      @scala.inline
-      def setCidrBlock(value: Input[String]): Self = StObject.set(x, "cidrBlock", value.asInstanceOf[js.Any])
+      inline def setCidrBlock(value: Input[String]): Self = StObject.set(x, "cidrBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -112,26 +103,20 @@ object vpcIpv4CidrBlockAssociationMod {
   }
   object VpcIpv4CidrBlockAssociationState {
     
-    @scala.inline
-    def apply(): VpcIpv4CidrBlockAssociationState = {
+    inline def apply(): VpcIpv4CidrBlockAssociationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VpcIpv4CidrBlockAssociationState]
     }
     
-    @scala.inline
-    implicit class VpcIpv4CidrBlockAssociationStateMutableBuilder[Self <: VpcIpv4CidrBlockAssociationState] (val x: Self) extends AnyVal {
+    extension [Self <: VpcIpv4CidrBlockAssociationState](x: Self) {
       
-      @scala.inline
-      def setCidrBlock(value: Input[String]): Self = StObject.set(x, "cidrBlock", value.asInstanceOf[js.Any])
+      inline def setCidrBlock(value: Input[String]): Self = StObject.set(x, "cidrBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCidrBlockUndefined: Self = StObject.set(x, "cidrBlock", js.undefined)
+      inline def setCidrBlockUndefined: Self = StObject.set(x, "cidrBlock", js.undefined)
       
-      @scala.inline
-      def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
+      inline def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
     }
   }
 }

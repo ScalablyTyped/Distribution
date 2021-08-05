@@ -16,19 +16,15 @@ trait SchemaGdataDiffDownloadResponse extends StObject {
 }
 object SchemaGdataDiffDownloadResponse {
   
-  @scala.inline
-  def apply(): SchemaGdataDiffDownloadResponse = {
+  inline def apply(): SchemaGdataDiffDownloadResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGdataDiffDownloadResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGdataDiffDownloadResponseMutableBuilder[Self <: SchemaGdataDiffDownloadResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGdataDiffDownloadResponse](x: Self) {
     
-    @scala.inline
-    def setObjectLocation(value: SchemaGdataCompositeMedia): Self = StObject.set(x, "objectLocation", value.asInstanceOf[js.Any])
+    inline def setObjectLocation(value: SchemaGdataCompositeMedia): Self = StObject.set(x, "objectLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectLocationUndefined: Self = StObject.set(x, "objectLocation", js.undefined)
+    inline def setObjectLocationUndefined: Self = StObject.set(x, "objectLocation", js.undefined)
   }
 }

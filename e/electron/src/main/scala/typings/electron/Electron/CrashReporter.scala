@@ -116,8 +116,7 @@ trait CrashReporter extends StObject {
 }
 object CrashReporter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addExtraParameter: (String, String) => Unit,
     getCrashesDirectory: () => String,
     getLastCrashReport: () => CrashReport,
@@ -132,34 +131,24 @@ object CrashReporter {
     __obj.asInstanceOf[CrashReporter]
   }
   
-  @scala.inline
-  implicit class CrashReporterMutableBuilder[Self <: CrashReporter] (val x: Self) extends AnyVal {
+  extension [Self <: CrashReporter](x: Self) {
     
-    @scala.inline
-    def setAddExtraParameter(value: (String, String) => Unit): Self = StObject.set(x, "addExtraParameter", js.Any.fromFunction2(value))
+    inline def setAddExtraParameter(value: (String, String) => Unit): Self = StObject.set(x, "addExtraParameter", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetCrashesDirectory(value: () => String): Self = StObject.set(x, "getCrashesDirectory", js.Any.fromFunction0(value))
+    inline def setGetCrashesDirectory(value: () => String): Self = StObject.set(x, "getCrashesDirectory", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLastCrashReport(value: () => CrashReport): Self = StObject.set(x, "getLastCrashReport", js.Any.fromFunction0(value))
+    inline def setGetLastCrashReport(value: () => CrashReport): Self = StObject.set(x, "getLastCrashReport", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetParameters(value: () => Record[String, String]): Self = StObject.set(x, "getParameters", js.Any.fromFunction0(value))
+    inline def setGetParameters(value: () => Record[String, String]): Self = StObject.set(x, "getParameters", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUploadToServer(value: () => Boolean): Self = StObject.set(x, "getUploadToServer", js.Any.fromFunction0(value))
+    inline def setGetUploadToServer(value: () => Boolean): Self = StObject.set(x, "getUploadToServer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUploadedReports(value: () => js.Array[CrashReport]): Self = StObject.set(x, "getUploadedReports", js.Any.fromFunction0(value))
+    inline def setGetUploadedReports(value: () => js.Array[CrashReport]): Self = StObject.set(x, "getUploadedReports", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveExtraParameter(value: String => Unit): Self = StObject.set(x, "removeExtraParameter", js.Any.fromFunction1(value))
+    inline def setRemoveExtraParameter(value: String => Unit): Self = StObject.set(x, "removeExtraParameter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetUploadToServer(value: Boolean => Unit): Self = StObject.set(x, "setUploadToServer", js.Any.fromFunction1(value))
+    inline def setSetUploadToServer(value: Boolean => Unit): Self = StObject.set(x, "setUploadToServer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStart(value: CrashReporterStartOptions => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+    inline def setStart(value: CrashReporterStartOptions => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
   }
 }

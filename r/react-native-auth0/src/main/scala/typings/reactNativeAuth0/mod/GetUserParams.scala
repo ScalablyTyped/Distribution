@@ -10,16 +10,13 @@ trait GetUserParams extends StObject {
 }
 object GetUserParams {
   
-  @scala.inline
-  def apply(id: String): GetUserParams = {
+  inline def apply(id: String): GetUserParams = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUserParams]
   }
   
-  @scala.inline
-  implicit class GetUserParamsMutableBuilder[Self <: GetUserParams] (val x: Self) extends AnyVal {
+  extension [Self <: GetUserParams](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

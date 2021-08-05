@@ -12,8 +12,6 @@ object codeFrameFormatterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createCodeFrameFormatter(): Formatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createCodeFrameFormatter")().asInstanceOf[Formatter]
-  @scala.inline
-  def createCodeFrameFormatter(options: BabelCodeFrameOptions): Formatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createCodeFrameFormatter")(options.asInstanceOf[js.Any]).asInstanceOf[Formatter]
+  inline def createCodeFrameFormatter(): Formatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createCodeFrameFormatter")().asInstanceOf[Formatter]
+  inline def createCodeFrameFormatter(options: BabelCodeFrameOptions): Formatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createCodeFrameFormatter")(options.asInstanceOf[js.Any]).asInstanceOf[Formatter]
 }

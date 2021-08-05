@@ -41,49 +41,34 @@ object Command {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def AUTOSCROLL: `5` = 5.asInstanceOf[`5`]
+    inline def AUTOSCROLL: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def CONTEXTMENU: `1` = 1.asInstanceOf[`1`]
+    inline def CONTEXTMENU: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def CURSORPOS: `11` = 11.asInstanceOf[`11`]
+    inline def CURSORPOS: `11` = 11.asInstanceOf[`11`]
     
-    @scala.inline
-    def ENDEXTTEXTINPUT: `9` = 9.asInstanceOf[`9`]
+    inline def ENDEXTTEXTINPUT: `9` = 9.asInstanceOf[`9`]
     
-    @scala.inline
-    def EXTTEXTINPUT: `8` = 8.asInstanceOf[`8`]
+    inline def EXTTEXTINPUT: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def HANGUL_HANJA_CONVERSION: `14` = 14.asInstanceOf[`14`]
+    inline def HANGUL_HANJA_CONVERSION: `14` = 14.asInstanceOf[`14`]
     
-    @scala.inline
-    def INPUTCONTEXTCHANGE: `10` = 10.asInstanceOf[`10`]
+    inline def INPUTCONTEXTCHANGE: `10` = 10.asInstanceOf[`10`]
     
-    @scala.inline
-    def MODKEYCHANGE: `13` = 13.asInstanceOf[`13`]
+    inline def MODKEYCHANGE: `13` = 13.asInstanceOf[`13`]
     
-    @scala.inline
-    def PASTESELECTION: `12` = 12.asInstanceOf[`12`]
+    inline def PASTESELECTION: `12` = 12.asInstanceOf[`12`]
     
-    @scala.inline
-    def STARTAUTOSCROLL: `4` = 4.asInstanceOf[`4`]
+    inline def STARTAUTOSCROLL: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def STARTDRAG: `2` = 2.asInstanceOf[`2`]
+    inline def STARTDRAG: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def STARTEXTTEXTINPUT: `7` = 7.asInstanceOf[`7`]
+    inline def STARTEXTTEXTINPUT: `7` = 7.asInstanceOf[`7`]
     
-    @scala.inline
-    def USER: `4096` = 4096.asInstanceOf[`4096`]
+    inline def USER: `4096` = 4096.asInstanceOf[`4096`]
     
-    @scala.inline
-    def VOICE: `6` = 6.asInstanceOf[`6`]
+    inline def VOICE: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def WHEEL: `3` = 3.asInstanceOf[`3`]
+    inline def WHEEL: `3` = 3.asInstanceOf[`3`]
   }
 }

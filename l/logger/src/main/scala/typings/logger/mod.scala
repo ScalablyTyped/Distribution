@@ -54,10 +54,8 @@ object mod {
     val levels: js.Tuple5[fatal, error, warn, info, debug] = js.native
   }
   
-  @scala.inline
-  def createLogger(): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("createLogger")().asInstanceOf[Logger]
-  @scala.inline
-  def createLogger(logFilePath: String): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("createLogger")(logFilePath.asInstanceOf[js.Any]).asInstanceOf[Logger]
+  inline def createLogger(): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("createLogger")().asInstanceOf[Logger]
+  inline def createLogger(logFilePath: String): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("createLogger")(logFilePath.asInstanceOf[js.Any]).asInstanceOf[Logger]
   
   @js.native
   trait Args extends StObject {
@@ -75,19 +73,14 @@ object mod {
   trait LogLevel extends StObject
   object LogLevel {
     
-    @scala.inline
-    def debug: typings.logger.loggerStrings.debug = "debug".asInstanceOf[typings.logger.loggerStrings.debug]
+    inline def debug: typings.logger.loggerStrings.debug = "debug".asInstanceOf[typings.logger.loggerStrings.debug]
     
-    @scala.inline
-    def error: typings.logger.loggerStrings.error = "error".asInstanceOf[typings.logger.loggerStrings.error]
+    inline def error: typings.logger.loggerStrings.error = "error".asInstanceOf[typings.logger.loggerStrings.error]
     
-    @scala.inline
-    def fatal: typings.logger.loggerStrings.fatal = "fatal".asInstanceOf[typings.logger.loggerStrings.fatal]
+    inline def fatal: typings.logger.loggerStrings.fatal = "fatal".asInstanceOf[typings.logger.loggerStrings.fatal]
     
-    @scala.inline
-    def info: typings.logger.loggerStrings.info = "info".asInstanceOf[typings.logger.loggerStrings.info]
+    inline def info: typings.logger.loggerStrings.info = "info".asInstanceOf[typings.logger.loggerStrings.info]
     
-    @scala.inline
-    def warn: typings.logger.loggerStrings.warn = "warn".asInstanceOf[typings.logger.loggerStrings.warn]
+    inline def warn: typings.logger.loggerStrings.warn = "warn".asInstanceOf[typings.logger.loggerStrings.warn]
   }
 }

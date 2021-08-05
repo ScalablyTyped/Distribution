@@ -17,25 +17,19 @@ trait FormatComplexity extends StObject {
 }
 object FormatComplexity {
   
-  @scala.inline
-  def apply(): FormatComplexity = {
+  inline def apply(): FormatComplexity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FormatComplexity]
   }
   
-  @scala.inline
-  implicit class FormatComplexityMutableBuilder[Self <: FormatComplexity] (val x: Self) extends AnyVal {
+  extension [Self <: FormatComplexity](x: Self) {
     
-    @scala.inline
-    def setLodHint(value: Double): Self = StObject.set(x, "lodHint", value.asInstanceOf[js.Any])
+    inline def setLodHint(value: Double): Self = StObject.set(x, "lodHint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLodHintUndefined: Self = StObject.set(x, "lodHint", js.undefined)
+    inline def setLodHintUndefined: Self = StObject.set(x, "lodHint", js.undefined)
     
-    @scala.inline
-    def setTriangleCount(value: String): Self = StObject.set(x, "triangleCount", value.asInstanceOf[js.Any])
+    inline def setTriangleCount(value: String): Self = StObject.set(x, "triangleCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriangleCountUndefined: Self = StObject.set(x, "triangleCount", js.undefined)
+    inline def setTriangleCountUndefined: Self = StObject.set(x, "triangleCount", js.undefined)
   }
 }

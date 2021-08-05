@@ -22,8 +22,7 @@ trait IIndirectPropertyID extends StObject {
 }
 object IIndirectPropertyID {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Add: (Double, IIndirectPropertyIDLevel) => Unit,
     Clone: () => IIndirectPropertyID,
     Count: Double,
@@ -36,28 +35,20 @@ object IIndirectPropertyID {
     __obj.asInstanceOf[IIndirectPropertyID]
   }
   
-  @scala.inline
-  implicit class IIndirectPropertyIDMutableBuilder[Self <: IIndirectPropertyID] (val x: Self) extends AnyVal {
+  extension [Self <: IIndirectPropertyID](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (Double, IIndirectPropertyIDLevel) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (Double, IIndirectPropertyIDLevel) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setClone(value: () => IIndirectPropertyID): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IIndirectPropertyID): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEqualTo(value: IIndirectPropertyID => Boolean): Self = StObject.set(x, "EqualTo", js.Any.fromFunction1(value))
+    inline def setEqualTo(value: IIndirectPropertyID => Boolean): Self = StObject.set(x, "EqualTo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setItem(value: Double => IIndirectPropertyIDLevel): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => IIndirectPropertyIDLevel): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove(value: Double => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: Double => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToJSON(value: () => String): Self = StObject.set(x, "ToJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => String): Self = StObject.set(x, "ToJSON", js.Any.fromFunction0(value))
   }
 }

@@ -13,19 +13,15 @@ trait NodeOriginalEvent extends StObject {
 }
 object NodeOriginalEvent {
   
-  @scala.inline
-  def apply(node: TreeNode, originalEvent: typings.std.Event): NodeOriginalEvent = {
+  inline def apply(node: TreeNode, originalEvent: typings.std.Event): NodeOriginalEvent = {
     val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeOriginalEvent]
   }
   
-  @scala.inline
-  implicit class NodeOriginalEventMutableBuilder[Self <: NodeOriginalEvent] (val x: Self) extends AnyVal {
+  extension [Self <: NodeOriginalEvent](x: Self) {
     
-    @scala.inline
-    def setNode(value: TreeNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: TreeNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalEvent(value: typings.std.Event): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+    inline def setOriginalEvent(value: typings.std.Event): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
   }
 }

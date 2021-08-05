@@ -34,8 +34,7 @@ trait BlockDevicesData extends StObject {
 }
 object BlockDevicesData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fstype: String,
     identifier: String,
     label: String,
@@ -55,46 +54,32 @@ object BlockDevicesData {
     __obj.asInstanceOf[BlockDevicesData]
   }
   
-  @scala.inline
-  implicit class BlockDevicesDataMutableBuilder[Self <: BlockDevicesData] (val x: Self) extends AnyVal {
+  extension [Self <: BlockDevicesData](x: Self) {
     
-    @scala.inline
-    def setFstype(value: String): Self = StObject.set(x, "fstype", value.asInstanceOf[js.Any])
+    inline def setFstype(value: String): Self = StObject.set(x, "fstype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMount(value: String): Self = StObject.set(x, "mount", value.asInstanceOf[js.Any])
+    inline def setMount(value: String): Self = StObject.set(x, "mount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhysical(value: String): Self = StObject.set(x, "physical", value.asInstanceOf[js.Any])
+    inline def setPhysical(value: String): Self = StObject.set(x, "physical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovable(value: Boolean): Self = StObject.set(x, "removable", value.asInstanceOf[js.Any])
+    inline def setRemovable(value: Boolean): Self = StObject.set(x, "removable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerial(value: String): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
+    inline def setSerial(value: String): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
   }
 }

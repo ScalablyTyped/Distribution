@@ -32,19 +32,15 @@ trait TableColumnSeparator extends StObject {
 }
 object TableColumnSeparator {
   
-  @scala.inline
-  def apply(IsVisible: Boolean, Position: Double): TableColumnSeparator = {
+  inline def apply(IsVisible: Boolean, Position: Double): TableColumnSeparator = {
     val __obj = js.Dynamic.literal(IsVisible = IsVisible.asInstanceOf[js.Any], Position = Position.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableColumnSeparator]
   }
   
-  @scala.inline
-  implicit class TableColumnSeparatorMutableBuilder[Self <: TableColumnSeparator] (val x: Self) extends AnyVal {
+  extension [Self <: TableColumnSeparator](x: Self) {
     
-    @scala.inline
-    def setIsVisible(value: Boolean): Self = StObject.set(x, "IsVisible", value.asInstanceOf[js.Any])
+    inline def setIsVisible(value: Boolean): Self = StObject.set(x, "IsVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
   }
 }

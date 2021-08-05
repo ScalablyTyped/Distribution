@@ -12,16 +12,13 @@ trait AllJoynProducerStoppedEventArgs extends StObject {
 }
 object AllJoynProducerStoppedEventArgs {
   
-  @scala.inline
-  def apply(status: Double): AllJoynProducerStoppedEventArgs = {
+  inline def apply(status: Double): AllJoynProducerStoppedEventArgs = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllJoynProducerStoppedEventArgs]
   }
   
-  @scala.inline
-  implicit class AllJoynProducerStoppedEventArgsMutableBuilder[Self <: AllJoynProducerStoppedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: AllJoynProducerStoppedEventArgs](x: Self) {
     
-    @scala.inline
-    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

@@ -29,28 +29,21 @@ trait RoomObject extends StObject {
 }
 object RoomObject {
   
-  @scala.inline
-  def apply(effects: js.Array[RoomObjectEffect], pos: RoomPosition): RoomObject = {
+  inline def apply(effects: js.Array[RoomObjectEffect], pos: RoomPosition): RoomObject = {
     val __obj = js.Dynamic.literal(effects = effects.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoomObject]
   }
   
-  @scala.inline
-  implicit class RoomObjectMutableBuilder[Self <: RoomObject] (val x: Self) extends AnyVal {
+  extension [Self <: RoomObject](x: Self) {
     
-    @scala.inline
-    def setEffects(value: js.Array[RoomObjectEffect]): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
+    inline def setEffects(value: js.Array[RoomObjectEffect]): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffectsVarargs(value: RoomObjectEffect*): Self = StObject.set(x, "effects", js.Array(value :_*))
+    inline def setEffectsVarargs(value: RoomObjectEffect*): Self = StObject.set(x, "effects", js.Array(value :_*))
     
-    @scala.inline
-    def setPos(value: RoomPosition): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+    inline def setPos(value: RoomPosition): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoom(value: Room): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
+    inline def setRoom(value: Room): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoomUndefined: Self = StObject.set(x, "room", js.undefined)
+    inline def setRoomUndefined: Self = StObject.set(x, "room", js.undefined)
   }
 }

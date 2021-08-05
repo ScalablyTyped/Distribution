@@ -25,8 +25,7 @@ trait NxPivotValuePoint extends StObject {
 }
 object NxPivotValuePoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qAttrExps: NxAttributeExpressionValues,
     qNum: Double,
     qText: String,
@@ -36,25 +35,18 @@ object NxPivotValuePoint {
     __obj.asInstanceOf[NxPivotValuePoint]
   }
   
-  @scala.inline
-  implicit class NxPivotValuePointMutableBuilder[Self <: NxPivotValuePoint] (val x: Self) extends AnyVal {
+  extension [Self <: NxPivotValuePoint](x: Self) {
     
-    @scala.inline
-    def setQAttrExps(value: NxAttributeExpressionValues): Self = StObject.set(x, "qAttrExps", value.asInstanceOf[js.Any])
+    inline def setQAttrExps(value: NxAttributeExpressionValues): Self = StObject.set(x, "qAttrExps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQLabel(value: String): Self = StObject.set(x, "qLabel", value.asInstanceOf[js.Any])
+    inline def setQLabel(value: String): Self = StObject.set(x, "qLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQLabelUndefined: Self = StObject.set(x, "qLabel", js.undefined)
+    inline def setQLabelUndefined: Self = StObject.set(x, "qLabel", js.undefined)
     
-    @scala.inline
-    def setQNum(value: Double): Self = StObject.set(x, "qNum", value.asInstanceOf[js.Any])
+    inline def setQNum(value: Double): Self = StObject.set(x, "qNum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQText(value: String): Self = StObject.set(x, "qText", value.asInstanceOf[js.Any])
+    inline def setQText(value: String): Self = StObject.set(x, "qText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQType(value: V | E | N | T | P | R | U): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
+    inline def setQType(value: V | E | N | T | P | R | U): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
   }
 }

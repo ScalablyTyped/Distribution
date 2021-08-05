@@ -19,22 +19,17 @@ trait ListenerDefaultActionForwardTargetGroup extends StObject {
 }
 object ListenerDefaultActionForwardTargetGroup {
   
-  @scala.inline
-  def apply(arn: Input[String]): ListenerDefaultActionForwardTargetGroup = {
+  inline def apply(arn: Input[String]): ListenerDefaultActionForwardTargetGroup = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListenerDefaultActionForwardTargetGroup]
   }
   
-  @scala.inline
-  implicit class ListenerDefaultActionForwardTargetGroupMutableBuilder[Self <: ListenerDefaultActionForwardTargetGroup] (val x: Self) extends AnyVal {
+  extension [Self <: ListenerDefaultActionForwardTargetGroup](x: Self) {
     
-    @scala.inline
-    def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeight(value: Input[Double]): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: Input[Double]): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

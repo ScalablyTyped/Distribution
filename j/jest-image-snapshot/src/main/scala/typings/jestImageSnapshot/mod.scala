@@ -20,16 +20,12 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def configureToMatchImageSnapshot(options: MatchImageSnapshotOptions): js.Function0[Message] = ^.asInstanceOf[js.Dynamic].applyDynamic("configureToMatchImageSnapshot")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Message]]
+  inline def configureToMatchImageSnapshot(options: MatchImageSnapshotOptions): js.Function0[Message] = ^.asInstanceOf[js.Dynamic].applyDynamic("configureToMatchImageSnapshot")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Message]]
   
-  @scala.inline
-  def toMatchImageSnapshot(): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("toMatchImageSnapshot")().asInstanceOf[Message]
-  @scala.inline
-  def toMatchImageSnapshot(options: MatchImageSnapshotOptions): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("toMatchImageSnapshot")(options.asInstanceOf[js.Any]).asInstanceOf[Message]
+  inline def toMatchImageSnapshot(): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("toMatchImageSnapshot")().asInstanceOf[Message]
+  inline def toMatchImageSnapshot(options: MatchImageSnapshotOptions): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("toMatchImageSnapshot")(options.asInstanceOf[js.Any]).asInstanceOf[Message]
   
-  @scala.inline
-  def updateSnapshotState[TObject, TPartial](originalSnapshotState: TObject, partialSnapshotState: TPartial): TObject & TPartial = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSnapshotState")(originalSnapshotState.asInstanceOf[js.Any], partialSnapshotState.asInstanceOf[js.Any])).asInstanceOf[TObject & TPartial]
+  inline def updateSnapshotState[TObject, TPartial](originalSnapshotState: TObject, partialSnapshotState: TPartial): TObject & TPartial = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSnapshotState")(originalSnapshotState.asInstanceOf[js.Any], partialSnapshotState.asInstanceOf[js.Any])).asInstanceOf[TObject & TPartial]
   
   trait MatchImageSnapshotOptions extends StObject {
     
@@ -124,101 +120,70 @@ object mod {
   }
   object MatchImageSnapshotOptions {
     
-    @scala.inline
-    def apply(): MatchImageSnapshotOptions = {
+    inline def apply(): MatchImageSnapshotOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MatchImageSnapshotOptions]
     }
     
-    @scala.inline
-    implicit class MatchImageSnapshotOptionsMutableBuilder[Self <: MatchImageSnapshotOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MatchImageSnapshotOptions](x: Self) {
       
-      @scala.inline
-      def setAllowSizeMismatch(value: Boolean): Self = StObject.set(x, "allowSizeMismatch", value.asInstanceOf[js.Any])
+      inline def setAllowSizeMismatch(value: Boolean): Self = StObject.set(x, "allowSizeMismatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowSizeMismatchUndefined: Self = StObject.set(x, "allowSizeMismatch", js.undefined)
+      inline def setAllowSizeMismatchUndefined: Self = StObject.set(x, "allowSizeMismatch", js.undefined)
       
-      @scala.inline
-      def setBlur(value: Double): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
+      inline def setBlur(value: Double): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
+      inline def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
       
-      @scala.inline
-      def setComparisonMethod(value: pixelmatch | ssim): Self = StObject.set(x, "comparisonMethod", value.asInstanceOf[js.Any])
+      inline def setComparisonMethod(value: pixelmatch | ssim): Self = StObject.set(x, "comparisonMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComparisonMethodUndefined: Self = StObject.set(x, "comparisonMethod", js.undefined)
+      inline def setComparisonMethodUndefined: Self = StObject.set(x, "comparisonMethod", js.undefined)
       
-      @scala.inline
-      def setCustomDiffConfig(value: PixelmatchOptions | PartialOptions): Self = StObject.set(x, "customDiffConfig", value.asInstanceOf[js.Any])
+      inline def setCustomDiffConfig(value: PixelmatchOptions | PartialOptions): Self = StObject.set(x, "customDiffConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomDiffConfigUndefined: Self = StObject.set(x, "customDiffConfig", js.undefined)
+      inline def setCustomDiffConfigUndefined: Self = StObject.set(x, "customDiffConfig", js.undefined)
       
-      @scala.inline
-      def setCustomDiffDir(value: String): Self = StObject.set(x, "customDiffDir", value.asInstanceOf[js.Any])
+      inline def setCustomDiffDir(value: String): Self = StObject.set(x, "customDiffDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomDiffDirUndefined: Self = StObject.set(x, "customDiffDir", js.undefined)
+      inline def setCustomDiffDirUndefined: Self = StObject.set(x, "customDiffDir", js.undefined)
       
-      @scala.inline
-      def setCustomSnapshotIdentifier(value: (js.Function1[/* parameters */ Counter, String]) | String): Self = StObject.set(x, "customSnapshotIdentifier", value.asInstanceOf[js.Any])
+      inline def setCustomSnapshotIdentifier(value: (js.Function1[/* parameters */ Counter, String]) | String): Self = StObject.set(x, "customSnapshotIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomSnapshotIdentifierFunction1(value: /* parameters */ Counter => String): Self = StObject.set(x, "customSnapshotIdentifier", js.Any.fromFunction1(value))
+      inline def setCustomSnapshotIdentifierFunction1(value: /* parameters */ Counter => String): Self = StObject.set(x, "customSnapshotIdentifier", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCustomSnapshotIdentifierUndefined: Self = StObject.set(x, "customSnapshotIdentifier", js.undefined)
+      inline def setCustomSnapshotIdentifierUndefined: Self = StObject.set(x, "customSnapshotIdentifier", js.undefined)
       
-      @scala.inline
-      def setCustomSnapshotsDir(value: String): Self = StObject.set(x, "customSnapshotsDir", value.asInstanceOf[js.Any])
+      inline def setCustomSnapshotsDir(value: String): Self = StObject.set(x, "customSnapshotsDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomSnapshotsDirUndefined: Self = StObject.set(x, "customSnapshotsDir", js.undefined)
+      inline def setCustomSnapshotsDirUndefined: Self = StObject.set(x, "customSnapshotsDir", js.undefined)
       
-      @scala.inline
-      def setDiffDirection(value: horizontal | vertical): Self = StObject.set(x, "diffDirection", value.asInstanceOf[js.Any])
+      inline def setDiffDirection(value: horizontal | vertical): Self = StObject.set(x, "diffDirection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiffDirectionUndefined: Self = StObject.set(x, "diffDirection", js.undefined)
+      inline def setDiffDirectionUndefined: Self = StObject.set(x, "diffDirection", js.undefined)
       
-      @scala.inline
-      def setDumpDiffToConsole(value: Boolean): Self = StObject.set(x, "dumpDiffToConsole", value.asInstanceOf[js.Any])
+      inline def setDumpDiffToConsole(value: Boolean): Self = StObject.set(x, "dumpDiffToConsole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDumpDiffToConsoleUndefined: Self = StObject.set(x, "dumpDiffToConsole", js.undefined)
+      inline def setDumpDiffToConsoleUndefined: Self = StObject.set(x, "dumpDiffToConsole", js.undefined)
       
-      @scala.inline
-      def setFailureThreshold(value: Double): Self = StObject.set(x, "failureThreshold", value.asInstanceOf[js.Any])
+      inline def setFailureThreshold(value: Double): Self = StObject.set(x, "failureThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailureThresholdType(value: pixel | percent): Self = StObject.set(x, "failureThresholdType", value.asInstanceOf[js.Any])
+      inline def setFailureThresholdType(value: pixel | percent): Self = StObject.set(x, "failureThresholdType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailureThresholdTypeUndefined: Self = StObject.set(x, "failureThresholdType", js.undefined)
+      inline def setFailureThresholdTypeUndefined: Self = StObject.set(x, "failureThresholdType", js.undefined)
       
-      @scala.inline
-      def setFailureThresholdUndefined: Self = StObject.set(x, "failureThreshold", js.undefined)
+      inline def setFailureThresholdUndefined: Self = StObject.set(x, "failureThreshold", js.undefined)
       
-      @scala.inline
-      def setNoColors(value: Boolean): Self = StObject.set(x, "noColors", value.asInstanceOf[js.Any])
+      inline def setNoColors(value: Boolean): Self = StObject.set(x, "noColors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoColorsUndefined: Self = StObject.set(x, "noColors", js.undefined)
+      inline def setNoColorsUndefined: Self = StObject.set(x, "noColors", js.undefined)
       
-      @scala.inline
-      def setRunInProcess(value: Boolean): Self = StObject.set(x, "runInProcess", value.asInstanceOf[js.Any])
+      inline def setRunInProcess(value: Boolean): Self = StObject.set(x, "runInProcess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRunInProcessUndefined: Self = StObject.set(x, "runInProcess", js.undefined)
+      inline def setRunInProcessUndefined: Self = StObject.set(x, "runInProcess", js.undefined)
       
-      @scala.inline
-      def setUpdatePassedSnapshot(value: Boolean): Self = StObject.set(x, "updatePassedSnapshot", value.asInstanceOf[js.Any])
+      inline def setUpdatePassedSnapshot(value: Boolean): Self = StObject.set(x, "updatePassedSnapshot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdatePassedSnapshotUndefined: Self = StObject.set(x, "updatePassedSnapshot", js.undefined)
+      inline def setUpdatePassedSnapshotUndefined: Self = StObject.set(x, "updatePassedSnapshot", js.undefined)
     }
   }
   

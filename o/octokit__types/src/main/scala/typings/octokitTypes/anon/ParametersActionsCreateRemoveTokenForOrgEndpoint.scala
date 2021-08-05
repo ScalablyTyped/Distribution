@@ -18,8 +18,7 @@ trait ParametersActionsCreateRemoveTokenForOrgEndpoint extends StObject {
 }
 object ParametersActionsCreateRemoveTokenForOrgEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ActionsCreateRemoveTokenForOrgEndpoint,
     request: ActionsCreateRemoveTokenForOrgRequestOptions,
     response: OctokitResponse[ActionsCreateRemoveTokenForOrgResponseData]
@@ -28,16 +27,12 @@ object ParametersActionsCreateRemoveTokenForOrgEndpoint {
     __obj.asInstanceOf[ParametersActionsCreateRemoveTokenForOrgEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersActionsCreateRemoveTokenForOrgEndpointMutableBuilder[Self <: ParametersActionsCreateRemoveTokenForOrgEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersActionsCreateRemoveTokenForOrgEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ActionsCreateRemoveTokenForOrgEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ActionsCreateRemoveTokenForOrgEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ActionsCreateRemoveTokenForOrgRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ActionsCreateRemoveTokenForOrgRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ActionsCreateRemoveTokenForOrgResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ActionsCreateRemoveTokenForOrgResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

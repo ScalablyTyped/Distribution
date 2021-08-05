@@ -52,8 +52,7 @@ trait IFileManager extends StObject {
 }
 object IFileManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clearFiles: () => Unit,
     getFiles: () => js.Array[IFile],
     setFiles: (String, js.Array[IFile]) => Unit
@@ -62,16 +61,12 @@ object IFileManager {
     __obj.asInstanceOf[IFileManager]
   }
   
-  @scala.inline
-  implicit class IFileManagerMutableBuilder[Self <: IFileManager] (val x: Self) extends AnyVal {
+  extension [Self <: IFileManager](x: Self) {
     
-    @scala.inline
-    def setClearFiles(value: () => Unit): Self = StObject.set(x, "clearFiles", js.Any.fromFunction0(value))
+    inline def setClearFiles(value: () => Unit): Self = StObject.set(x, "clearFiles", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFiles(value: () => js.Array[IFile]): Self = StObject.set(x, "getFiles", js.Any.fromFunction0(value))
+    inline def setGetFiles(value: () => js.Array[IFile]): Self = StObject.set(x, "getFiles", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetFiles(value: (String, js.Array[IFile]) => Unit): Self = StObject.set(x, "setFiles", js.Any.fromFunction2(value))
+    inline def setSetFiles(value: (String, js.Array[IFile]) => Unit): Self = StObject.set(x, "setFiles", js.Any.fromFunction2(value))
   }
 }

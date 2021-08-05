@@ -13,16 +13,13 @@ trait CreateResourceGroupResponse extends StObject {
 }
 object CreateResourceGroupResponse {
   
-  @scala.inline
-  def apply(resourceGroupArn: Arn): CreateResourceGroupResponse = {
+  inline def apply(resourceGroupArn: Arn): CreateResourceGroupResponse = {
     val __obj = js.Dynamic.literal(resourceGroupArn = resourceGroupArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateResourceGroupResponse]
   }
   
-  @scala.inline
-  implicit class CreateResourceGroupResponseMutableBuilder[Self <: CreateResourceGroupResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateResourceGroupResponse](x: Self) {
     
-    @scala.inline
-    def setResourceGroupArn(value: Arn): Self = StObject.set(x, "resourceGroupArn", value.asInstanceOf[js.Any])
+    inline def setResourceGroupArn(value: Arn): Self = StObject.set(x, "resourceGroupArn", value.asInstanceOf[js.Any])
   }
 }

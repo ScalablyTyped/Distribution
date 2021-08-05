@@ -10,16 +10,13 @@ trait ReposDeclineInvitationEndpoint extends StObject {
 }
 object ReposDeclineInvitationEndpoint {
   
-  @scala.inline
-  def apply(invitation_id: Double): ReposDeclineInvitationEndpoint = {
+  inline def apply(invitation_id: Double): ReposDeclineInvitationEndpoint = {
     val __obj = js.Dynamic.literal(invitation_id = invitation_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposDeclineInvitationEndpoint]
   }
   
-  @scala.inline
-  implicit class ReposDeclineInvitationEndpointMutableBuilder[Self <: ReposDeclineInvitationEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ReposDeclineInvitationEndpoint](x: Self) {
     
-    @scala.inline
-    def setInvitation_id(value: Double): Self = StObject.set(x, "invitation_id", value.asInstanceOf[js.Any])
+    inline def setInvitation_id(value: Double): Self = StObject.set(x, "invitation_id", value.asInstanceOf[js.Any])
   }
 }

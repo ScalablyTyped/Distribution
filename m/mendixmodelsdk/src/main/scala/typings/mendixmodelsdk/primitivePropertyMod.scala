@@ -31,7 +31,7 @@ object primitivePropertyMod {
       moreArgs: js.Any*
     ) = this()
     
-    var beforeChange: js.Any = js.native
+    /* private */ var beforeChange: js.Any = js.native
     
     def deepCopyInto(clone: Structure[IAbstractModel, IContainer | Null]): Unit = js.native
     
@@ -41,7 +41,7 @@ object primitivePropertyMod {
     
     def markCurrentValueAsDefault(): Unit = js.native
     
-    var primitiveType: js.Any = js.native
+    /* private */ var primitiveType: js.Any = js.native
     
     def set(newValue: T): Unit = js.native
     

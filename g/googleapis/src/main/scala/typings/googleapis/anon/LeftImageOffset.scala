@@ -12,25 +12,19 @@ trait LeftImageOffset extends StObject {
 }
 object LeftImageOffset {
   
-  @scala.inline
-  def apply(): LeftImageOffset = {
+  inline def apply(): LeftImageOffset = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LeftImageOffset]
   }
   
-  @scala.inline
-  implicit class LeftImageOffsetMutableBuilder[Self <: LeftImageOffset] (val x: Self) extends AnyVal {
+  extension [Self <: LeftImageOffset](x: Self) {
     
-    @scala.inline
-    def setLeftImageOffset(value: Double): Self = StObject.set(x, "leftImageOffset", value.asInstanceOf[js.Any])
+    inline def setLeftImageOffset(value: Double): Self = StObject.set(x, "leftImageOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftImageOffsetUndefined: Self = StObject.set(x, "leftImageOffset", js.undefined)
+    inline def setLeftImageOffsetUndefined: Self = StObject.set(x, "leftImageOffset", js.undefined)
     
-    @scala.inline
-    def setTopImageOffset(value: Double): Self = StObject.set(x, "topImageOffset", value.asInstanceOf[js.Any])
+    inline def setTopImageOffset(value: Double): Self = StObject.set(x, "topImageOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopImageOffsetUndefined: Self = StObject.set(x, "topImageOffset", js.undefined)
+    inline def setTopImageOffsetUndefined: Self = StObject.set(x, "topImageOffset", js.undefined)
   }
 }

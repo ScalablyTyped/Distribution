@@ -10,19 +10,15 @@ trait DriveLocationRestrict extends StObject {
 }
 object DriveLocationRestrict {
   
-  @scala.inline
-  def apply(): DriveLocationRestrict = {
+  inline def apply(): DriveLocationRestrict = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DriveLocationRestrict]
   }
   
-  @scala.inline
-  implicit class DriveLocationRestrictMutableBuilder[Self <: DriveLocationRestrict] (val x: Self) extends AnyVal {
+  extension [Self <: DriveLocationRestrict](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

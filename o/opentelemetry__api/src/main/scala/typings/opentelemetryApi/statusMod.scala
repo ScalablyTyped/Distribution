@@ -242,23 +242,18 @@ object statusMod {
   }
   object Status {
     
-    @scala.inline
-    def apply(code: CanonicalCode): Status = {
+    inline def apply(code: CanonicalCode): Status = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
       __obj.asInstanceOf[Status]
     }
     
-    @scala.inline
-    implicit class StatusMutableBuilder[Self <: Status] (val x: Self) extends AnyVal {
+    extension [Self <: Status](x: Self) {
       
-      @scala.inline
-      def setCode(value: CanonicalCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: CanonicalCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

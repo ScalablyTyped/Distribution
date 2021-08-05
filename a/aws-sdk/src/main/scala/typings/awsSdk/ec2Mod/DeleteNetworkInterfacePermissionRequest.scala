@@ -23,28 +23,21 @@ trait DeleteNetworkInterfacePermissionRequest extends StObject {
 }
 object DeleteNetworkInterfacePermissionRequest {
   
-  @scala.inline
-  def apply(NetworkInterfacePermissionId: NetworkInterfacePermissionId): DeleteNetworkInterfacePermissionRequest = {
+  inline def apply(NetworkInterfacePermissionId: NetworkInterfacePermissionId): DeleteNetworkInterfacePermissionRequest = {
     val __obj = js.Dynamic.literal(NetworkInterfacePermissionId = NetworkInterfacePermissionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteNetworkInterfacePermissionRequest]
   }
   
-  @scala.inline
-  implicit class DeleteNetworkInterfacePermissionRequestMutableBuilder[Self <: DeleteNetworkInterfacePermissionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteNetworkInterfacePermissionRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setForce(value: Boolean): Self = StObject.set(x, "Force", value.asInstanceOf[js.Any])
+    inline def setForce(value: Boolean): Self = StObject.set(x, "Force", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceUndefined: Self = StObject.set(x, "Force", js.undefined)
+    inline def setForceUndefined: Self = StObject.set(x, "Force", js.undefined)
     
-    @scala.inline
-    def setNetworkInterfacePermissionId(value: NetworkInterfacePermissionId): Self = StObject.set(x, "NetworkInterfacePermissionId", value.asInstanceOf[js.Any])
+    inline def setNetworkInterfacePermissionId(value: NetworkInterfacePermissionId): Self = StObject.set(x, "NetworkInterfacePermissionId", value.asInstanceOf[js.Any])
   }
 }

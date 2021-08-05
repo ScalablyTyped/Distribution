@@ -18,19 +18,15 @@ trait DeletePlacementRequest extends StObject {
 }
 object DeletePlacementRequest {
   
-  @scala.inline
-  def apply(placementName: PlacementName, projectName: ProjectName): DeletePlacementRequest = {
+  inline def apply(placementName: PlacementName, projectName: ProjectName): DeletePlacementRequest = {
     val __obj = js.Dynamic.literal(placementName = placementName.asInstanceOf[js.Any], projectName = projectName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeletePlacementRequest]
   }
   
-  @scala.inline
-  implicit class DeletePlacementRequestMutableBuilder[Self <: DeletePlacementRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeletePlacementRequest](x: Self) {
     
-    @scala.inline
-    def setPlacementName(value: PlacementName): Self = StObject.set(x, "placementName", value.asInstanceOf[js.Any])
+    inline def setPlacementName(value: PlacementName): Self = StObject.set(x, "placementName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectName(value: ProjectName): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
+    inline def setProjectName(value: ProjectName): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
   }
 }

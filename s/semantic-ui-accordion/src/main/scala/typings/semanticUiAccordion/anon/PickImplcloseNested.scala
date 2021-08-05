@@ -11,16 +11,13 @@ trait PickImplcloseNested extends StObject {
 }
 object PickImplcloseNested {
   
-  @scala.inline
-  def apply(closeNested: Boolean): PickImplcloseNested = {
+  inline def apply(closeNested: Boolean): PickImplcloseNested = {
     val __obj = js.Dynamic.literal(closeNested = closeNested.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplcloseNested]
   }
   
-  @scala.inline
-  implicit class PickImplcloseNestedMutableBuilder[Self <: PickImplcloseNested] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplcloseNested](x: Self) {
     
-    @scala.inline
-    def setCloseNested(value: Boolean): Self = StObject.set(x, "closeNested", value.asInstanceOf[js.Any])
+    inline def setCloseNested(value: Boolean): Self = StObject.set(x, "closeNested", value.asInstanceOf[js.Any])
   }
 }

@@ -18,37 +18,27 @@ trait SVGEllipseAttributes
 }
 object SVGEllipseAttributes {
   
-  @scala.inline
-  def apply(): SVGEllipseAttributes = {
+  inline def apply(): SVGEllipseAttributes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SVGEllipseAttributes]
   }
   
-  @scala.inline
-  implicit class SVGEllipseAttributesMutableBuilder[Self <: SVGEllipseAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: SVGEllipseAttributes](x: Self) {
     
-    @scala.inline
-    def setCx(value: String | Double): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
+    inline def setCx(value: String | Double): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCxUndefined: Self = StObject.set(x, "cx", js.undefined)
+    inline def setCxUndefined: Self = StObject.set(x, "cx", js.undefined)
     
-    @scala.inline
-    def setCy(value: String | Double): Self = StObject.set(x, "cy", value.asInstanceOf[js.Any])
+    inline def setCy(value: String | Double): Self = StObject.set(x, "cy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCyUndefined: Self = StObject.set(x, "cy", js.undefined)
+    inline def setCyUndefined: Self = StObject.set(x, "cy", js.undefined)
     
-    @scala.inline
-    def setRx(value: String | Double): Self = StObject.set(x, "rx", value.asInstanceOf[js.Any])
+    inline def setRx(value: String | Double): Self = StObject.set(x, "rx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRxUndefined: Self = StObject.set(x, "rx", js.undefined)
+    inline def setRxUndefined: Self = StObject.set(x, "rx", js.undefined)
     
-    @scala.inline
-    def setRy(value: String | Double): Self = StObject.set(x, "ry", value.asInstanceOf[js.Any])
+    inline def setRy(value: String | Double): Self = StObject.set(x, "ry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRyUndefined: Self = StObject.set(x, "ry", js.undefined)
+    inline def setRyUndefined: Self = StObject.set(x, "ry", js.undefined)
   }
 }

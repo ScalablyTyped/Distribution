@@ -25,8 +25,7 @@ object mod {
       * @param {number} intervalInSeconds
       */
     /* static member */
-    @scala.inline
-    def setDispatchInterval(intervalInSeconds: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDispatchInterval")(intervalInSeconds.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setDispatchInterval(intervalInSeconds: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDispatchInterval")(intervalInSeconds.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * When enabled the native library prevents any data from being sent to Google Analytics. This allows you to test or debug the implementation, without your test data appearing in your Google Analytics reports.
@@ -34,8 +33,7 @@ object mod {
       * @param {boolean} enabled
       */
     /* static member */
-    @scala.inline
-    def setDryRun(enabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDryRun")(enabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setDryRun(enabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDryRun")(enabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Sets if OptOut is active and disables Google Analytics. This is disabled by default. Note: This has to be set each time the App starts.
@@ -43,8 +41,7 @@ object mod {
       * @param {boolean} enabled
       */
     /* static member */
-    @scala.inline
-    def setOptOut(enabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOptOut")(enabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setOptOut(enabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOptOut")(enabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   /**
@@ -109,8 +106,7 @@ object mod {
       * @returns {Promise<boolean>}
       */
     /* static member */
-    @scala.inline
-    def boolForKey(key: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("boolForKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    inline def boolForKey(key: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("boolForKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
     
     /**
       * Retrieves a number with the given key from the opened container.
@@ -119,8 +115,7 @@ object mod {
       * @returns {Promise<number>}
       */
     /* static member */
-    @scala.inline
-    def doubleForKey(key: js.Any): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("doubleForKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
+    inline def doubleForKey(key: js.Any): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("doubleForKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
     
     /**
       * Call once to open the container for all subsequent static calls.
@@ -130,8 +125,7 @@ object mod {
       * @returns {Promise<boolean>}
       */
     /* static member */
-    @scala.inline
-    def openContainerWithId(containerId: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("openContainerWithId")(containerId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    inline def openContainerWithId(containerId: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("openContainerWithId")(containerId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
     
     /**
       * Push a datalayer event for Google Analytics through Google Tag Manager. The event must have at least one key "event" with event name.
@@ -144,8 +138,7 @@ object mod {
       * @returns {Promise<boolean>}
       */
     /* static member */
-    @scala.inline
-    def pushDataLayerEvent(event: DataLayerEvent): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("pushDataLayerEvent")(event.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    inline def pushDataLayerEvent(event: DataLayerEvent): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("pushDataLayerEvent")(event.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
     
     /**
       * Refreshes the GTM container.
@@ -156,8 +149,7 @@ object mod {
       * @returns {Promise<boolean>}
       */
     /* static member */
-    @scala.inline
-    def refreshContainer(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshContainer")().asInstanceOf[js.Promise[Boolean]]
+    inline def refreshContainer(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshContainer")().asInstanceOf[js.Promise[Boolean]]
     
     /**
       * Register Function Call tag handler
@@ -165,16 +157,14 @@ object mod {
       * @param {Function} handler
       */
     /* static member */
-    @scala.inline
-    def registerFunctionCallTagHandler(functionName: js.Any, handler: js.Any): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerFunctionCallTagHandler")(functionName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def registerFunctionCallTagHandler(functionName: js.Any, handler: js.Any): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerFunctionCallTagHandler")(functionName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
     
     /**
       * Sets logger to verbose, default is warning
       * @param {boolean} enabled
       */
     /* static member */
-    @scala.inline
-    def setVerboseLoggingEnabled(enabled: Boolean): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("setVerboseLoggingEnabled")(enabled.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    inline def setVerboseLoggingEnabled(enabled: Boolean): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("setVerboseLoggingEnabled")(enabled.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
     
     /**
       * Retrieves a string with the given key from the opened container.
@@ -183,8 +173,7 @@ object mod {
       * @returns {Promise<string>}
       */
     /* static member */
-    @scala.inline
-    def stringForKey(key: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("stringForKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+    inline def stringForKey(key: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("stringForKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   }
   
   @JSImport("react-native-google-analytics-bridge", "ProductActionEnum")

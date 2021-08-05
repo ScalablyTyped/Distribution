@@ -14,22 +14,17 @@ trait AdWordsOperation[E] extends StObject {
 }
 object AdWordsOperation {
   
-  @scala.inline
-  def apply[E](getErrors: () => js.Array[String], getResult: () => E, isSuccessful: () => Boolean): AdWordsOperation[E] = {
+  inline def apply[E](getErrors: () => js.Array[String], getResult: () => E, isSuccessful: () => Boolean): AdWordsOperation[E] = {
     val __obj = js.Dynamic.literal(getErrors = js.Any.fromFunction0(getErrors), getResult = js.Any.fromFunction0(getResult), isSuccessful = js.Any.fromFunction0(isSuccessful))
     __obj.asInstanceOf[AdWordsOperation[E]]
   }
   
-  @scala.inline
-  implicit class AdWordsOperationMutableBuilder[Self <: AdWordsOperation[?], E] (val x: Self & AdWordsOperation[E]) extends AnyVal {
+  extension [Self <: AdWordsOperation[?], E](x: Self & AdWordsOperation[E]) {
     
-    @scala.inline
-    def setGetErrors(value: () => js.Array[String]): Self = StObject.set(x, "getErrors", js.Any.fromFunction0(value))
+    inline def setGetErrors(value: () => js.Array[String]): Self = StObject.set(x, "getErrors", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetResult(value: () => E): Self = StObject.set(x, "getResult", js.Any.fromFunction0(value))
+    inline def setGetResult(value: () => E): Self = StObject.set(x, "getResult", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsSuccessful(value: () => Boolean): Self = StObject.set(x, "isSuccessful", js.Any.fromFunction0(value))
+    inline def setIsSuccessful(value: () => Boolean): Self = StObject.set(x, "isSuccessful", js.Any.fromFunction0(value))
   }
 }

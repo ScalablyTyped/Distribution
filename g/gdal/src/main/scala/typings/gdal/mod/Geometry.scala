@@ -104,22 +104,15 @@ object Geometry {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(`type`: Double): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(`type`.asInstanceOf[js.Any]).asInstanceOf[Geometry]
+  inline def create(`type`: Double): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(`type`.asInstanceOf[js.Any]).asInstanceOf[Geometry]
   
-  @scala.inline
-  def fromWKB(wkb: Double): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWKB")(wkb.asInstanceOf[js.Any]).asInstanceOf[Geometry]
-  @scala.inline
-  def fromWKB(wkb: Double, srs: SpatialReference): Geometry = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWKB")(wkb.asInstanceOf[js.Any], srs.asInstanceOf[js.Any])).asInstanceOf[Geometry]
+  inline def fromWKB(wkb: Double): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWKB")(wkb.asInstanceOf[js.Any]).asInstanceOf[Geometry]
+  inline def fromWKB(wkb: Double, srs: SpatialReference): Geometry = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWKB")(wkb.asInstanceOf[js.Any], srs.asInstanceOf[js.Any])).asInstanceOf[Geometry]
   
-  @scala.inline
-  def fromWKT(wkt: String): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWKT")(wkt.asInstanceOf[js.Any]).asInstanceOf[Geometry]
-  @scala.inline
-  def fromWKT(wkt: String, srs: SpatialReference): Geometry = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWKT")(wkt.asInstanceOf[js.Any], srs.asInstanceOf[js.Any])).asInstanceOf[Geometry]
+  inline def fromWKT(wkt: String): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWKT")(wkt.asInstanceOf[js.Any]).asInstanceOf[Geometry]
+  inline def fromWKT(wkt: String, srs: SpatialReference): Geometry = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWKT")(wkt.asInstanceOf[js.Any], srs.asInstanceOf[js.Any])).asInstanceOf[Geometry]
   
-  @scala.inline
-  def getConstructor(`type`: Double): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("getConstructor")(`type`.asInstanceOf[js.Any]).asInstanceOf[Geometry]
+  inline def getConstructor(`type`: Double): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("getConstructor")(`type`.asInstanceOf[js.Any]).asInstanceOf[Geometry]
   
-  @scala.inline
-  def getName(`type`: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getName")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getName(`type`: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getName")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -58,76 +58,53 @@ trait Connector extends StObject {
 }
 object Connector {
   
-  @scala.inline
-  def apply(): Connector = {
+  inline def apply(): Connector = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Connector]
   }
   
-  @scala.inline
-  implicit class ConnectorMutableBuilder[Self <: Connector] (val x: Self) extends AnyVal {
+  extension [Self <: Connector](x: Self) {
     
-    @scala.inline
-    def setAssociatedOn(value: Timestamp): Self = StObject.set(x, "associatedOn", value.asInstanceOf[js.Any])
+    inline def setAssociatedOn(value: Timestamp): Self = StObject.set(x, "associatedOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociatedOnUndefined: Self = StObject.set(x, "associatedOn", js.undefined)
+    inline def setAssociatedOnUndefined: Self = StObject.set(x, "associatedOn", js.undefined)
     
-    @scala.inline
-    def setCapabilityList(value: ConnectorCapabilityList): Self = StObject.set(x, "capabilityList", value.asInstanceOf[js.Any])
+    inline def setCapabilityList(value: ConnectorCapabilityList): Self = StObject.set(x, "capabilityList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapabilityListUndefined: Self = StObject.set(x, "capabilityList", js.undefined)
+    inline def setCapabilityListUndefined: Self = StObject.set(x, "capabilityList", js.undefined)
     
-    @scala.inline
-    def setCapabilityListVarargs(value: ConnectorCapability*): Self = StObject.set(x, "capabilityList", js.Array(value :_*))
+    inline def setCapabilityListVarargs(value: ConnectorCapability*): Self = StObject.set(x, "capabilityList", js.Array(value :_*))
     
-    @scala.inline
-    def setConnectorId(value: ConnectorId): Self = StObject.set(x, "connectorId", value.asInstanceOf[js.Any])
+    inline def setConnectorId(value: ConnectorId): Self = StObject.set(x, "connectorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectorIdUndefined: Self = StObject.set(x, "connectorId", js.undefined)
+    inline def setConnectorIdUndefined: Self = StObject.set(x, "connectorId", js.undefined)
     
-    @scala.inline
-    def setIpAddress(value: IpAddress): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
+    inline def setIpAddress(value: IpAddress): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
+    inline def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
     
-    @scala.inline
-    def setMacAddress(value: MacAddress): Self = StObject.set(x, "macAddress", value.asInstanceOf[js.Any])
+    inline def setMacAddress(value: MacAddress): Self = StObject.set(x, "macAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMacAddressUndefined: Self = StObject.set(x, "macAddress", js.undefined)
+    inline def setMacAddressUndefined: Self = StObject.set(x, "macAddress", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ConnectorStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ConnectorStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setVersion(value: ConnectorVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: ConnectorVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
-    @scala.inline
-    def setVmManagerId(value: VmManagerId): Self = StObject.set(x, "vmManagerId", value.asInstanceOf[js.Any])
+    inline def setVmManagerId(value: VmManagerId): Self = StObject.set(x, "vmManagerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmManagerIdUndefined: Self = StObject.set(x, "vmManagerId", js.undefined)
+    inline def setVmManagerIdUndefined: Self = StObject.set(x, "vmManagerId", js.undefined)
     
-    @scala.inline
-    def setVmManagerName(value: VmManagerName): Self = StObject.set(x, "vmManagerName", value.asInstanceOf[js.Any])
+    inline def setVmManagerName(value: VmManagerName): Self = StObject.set(x, "vmManagerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmManagerNameUndefined: Self = StObject.set(x, "vmManagerName", js.undefined)
+    inline def setVmManagerNameUndefined: Self = StObject.set(x, "vmManagerName", js.undefined)
     
-    @scala.inline
-    def setVmManagerType(value: VmManagerType): Self = StObject.set(x, "vmManagerType", value.asInstanceOf[js.Any])
+    inline def setVmManagerType(value: VmManagerType): Self = StObject.set(x, "vmManagerType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmManagerTypeUndefined: Self = StObject.set(x, "vmManagerType", js.undefined)
+    inline def setVmManagerTypeUndefined: Self = StObject.set(x, "vmManagerType", js.undefined)
   }
 }

@@ -11,14 +11,10 @@ object getHostedZoneMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getHostedZone(): js.Promise[GetHostedZoneResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getHostedZone")().asInstanceOf[js.Promise[GetHostedZoneResult]]
-  @scala.inline
-  def getHostedZone(args: Unit, opts: InvokeOptions): js.Promise[GetHostedZoneResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getHostedZone")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetHostedZoneResult]]
-  @scala.inline
-  def getHostedZone(args: GetHostedZoneArgs): js.Promise[GetHostedZoneResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getHostedZone")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetHostedZoneResult]]
-  @scala.inline
-  def getHostedZone(args: GetHostedZoneArgs, opts: InvokeOptions): js.Promise[GetHostedZoneResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getHostedZone")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetHostedZoneResult]]
+  inline def getHostedZone(): js.Promise[GetHostedZoneResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getHostedZone")().asInstanceOf[js.Promise[GetHostedZoneResult]]
+  inline def getHostedZone(args: Unit, opts: InvokeOptions): js.Promise[GetHostedZoneResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getHostedZone")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetHostedZoneResult]]
+  inline def getHostedZone(args: GetHostedZoneArgs): js.Promise[GetHostedZoneResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getHostedZone")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetHostedZoneResult]]
+  inline def getHostedZone(args: GetHostedZoneArgs, opts: InvokeOptions): js.Promise[GetHostedZoneResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getHostedZone")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetHostedZoneResult]]
   
   trait GetHostedZoneArgs extends StObject {
     
@@ -29,20 +25,16 @@ object getHostedZoneMod {
   }
   object GetHostedZoneArgs {
     
-    @scala.inline
-    def apply(): GetHostedZoneArgs = {
+    inline def apply(): GetHostedZoneArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetHostedZoneArgs]
     }
     
-    @scala.inline
-    implicit class GetHostedZoneArgsMutableBuilder[Self <: GetHostedZoneArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetHostedZoneArgs](x: Self) {
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+      inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     }
   }
   
@@ -60,23 +52,18 @@ object getHostedZoneMod {
   }
   object GetHostedZoneResult {
     
-    @scala.inline
-    def apply(id: String): GetHostedZoneResult = {
+    inline def apply(id: String): GetHostedZoneResult = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetHostedZoneResult]
     }
     
-    @scala.inline
-    implicit class GetHostedZoneResultMutableBuilder[Self <: GetHostedZoneResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetHostedZoneResult](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+      inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     }
   }
 }

@@ -18,25 +18,19 @@ trait StopDiscovererResponse extends StObject {
 }
 object StopDiscovererResponse {
   
-  @scala.inline
-  def apply(): StopDiscovererResponse = {
+  inline def apply(): StopDiscovererResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StopDiscovererResponse]
   }
   
-  @scala.inline
-  implicit class StopDiscovererResponseMutableBuilder[Self <: StopDiscovererResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StopDiscovererResponse](x: Self) {
     
-    @scala.inline
-    def setDiscovererId(value: string): Self = StObject.set(x, "DiscovererId", value.asInstanceOf[js.Any])
+    inline def setDiscovererId(value: string): Self = StObject.set(x, "DiscovererId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscovererIdUndefined: Self = StObject.set(x, "DiscovererId", js.undefined)
+    inline def setDiscovererIdUndefined: Self = StObject.set(x, "DiscovererId", js.undefined)
     
-    @scala.inline
-    def setState(value: DiscovererState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: DiscovererState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

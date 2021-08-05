@@ -14,16 +14,16 @@ object coalesceHandlerMod {
     def this(f: js.Function2[/* l */ A, /* r */ A, A], out: StreamWithSend[A]) = this()
     def this(f: Lambda2_[A, A, A], out: StreamWithSend[A]) = this()
     
-    var accum: js.Any = js.native
+    /* private */ var accum: js.Any = js.native
     
-    var accumValid: js.Any = js.native
+    /* private */ var accumValid: js.Any = js.native
     
-    var f: js.Any = js.native
+    /* private */ var f: js.Any = js.native
     
-    var out: js.Any = js.native
+    /* private */ var out: js.Any = js.native
     
     def send_(a: A): Unit = js.native
     
-    var verbose: js.Any = js.native
+    /* private */ var verbose: js.Any = js.native
   }
 }

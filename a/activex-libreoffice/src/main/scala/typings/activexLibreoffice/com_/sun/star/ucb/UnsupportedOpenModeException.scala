@@ -23,16 +23,13 @@ trait UnsupportedOpenModeException
 }
 object UnsupportedOpenModeException {
   
-  @scala.inline
-  def apply(Context: XInterface, Message: String, Mode: Double): UnsupportedOpenModeException = {
+  inline def apply(Context: XInterface, Message: String, Mode: Double): UnsupportedOpenModeException = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], Mode = Mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnsupportedOpenModeException]
   }
   
-  @scala.inline
-  implicit class UnsupportedOpenModeExceptionMutableBuilder[Self <: UnsupportedOpenModeException] (val x: Self) extends AnyVal {
+  extension [Self <: UnsupportedOpenModeException](x: Self) {
     
-    @scala.inline
-    def setMode(value: Double): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: Double): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
   }
 }

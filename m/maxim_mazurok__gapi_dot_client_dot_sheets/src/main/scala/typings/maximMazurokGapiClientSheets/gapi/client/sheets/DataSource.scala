@@ -23,40 +23,29 @@ trait DataSource extends StObject {
 }
 object DataSource {
   
-  @scala.inline
-  def apply(): DataSource = {
+  inline def apply(): DataSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSource]
   }
   
-  @scala.inline
-  implicit class DataSourceMutableBuilder[Self <: DataSource] (val x: Self) extends AnyVal {
+  extension [Self <: DataSource](x: Self) {
     
-    @scala.inline
-    def setCalculatedColumns(value: js.Array[DataSourceColumn]): Self = StObject.set(x, "calculatedColumns", value.asInstanceOf[js.Any])
+    inline def setCalculatedColumns(value: js.Array[DataSourceColumn]): Self = StObject.set(x, "calculatedColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalculatedColumnsUndefined: Self = StObject.set(x, "calculatedColumns", js.undefined)
+    inline def setCalculatedColumnsUndefined: Self = StObject.set(x, "calculatedColumns", js.undefined)
     
-    @scala.inline
-    def setCalculatedColumnsVarargs(value: DataSourceColumn*): Self = StObject.set(x, "calculatedColumns", js.Array(value :_*))
+    inline def setCalculatedColumnsVarargs(value: DataSourceColumn*): Self = StObject.set(x, "calculatedColumns", js.Array(value :_*))
     
-    @scala.inline
-    def setDataSourceId(value: String): Self = StObject.set(x, "dataSourceId", value.asInstanceOf[js.Any])
+    inline def setDataSourceId(value: String): Self = StObject.set(x, "dataSourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceIdUndefined: Self = StObject.set(x, "dataSourceId", js.undefined)
+    inline def setDataSourceIdUndefined: Self = StObject.set(x, "dataSourceId", js.undefined)
     
-    @scala.inline
-    def setSheetId(value: Double): Self = StObject.set(x, "sheetId", value.asInstanceOf[js.Any])
+    inline def setSheetId(value: Double): Self = StObject.set(x, "sheetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheetIdUndefined: Self = StObject.set(x, "sheetId", js.undefined)
+    inline def setSheetIdUndefined: Self = StObject.set(x, "sheetId", js.undefined)
     
-    @scala.inline
-    def setSpec(value: DataSourceSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+    inline def setSpec(value: DataSourceSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
+    inline def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
   }
 }

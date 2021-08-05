@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoOrientation extends StObject
 object MsoOrientation {
   
-  @scala.inline
-  def msoOrientationHorizontal: `1` = 1.asInstanceOf[`1`]
+  inline def msoOrientationHorizontal: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoOrientationMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def msoOrientationMixed: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def msoOrientationVertical: `2` = 2.asInstanceOf[`2`]
+  inline def msoOrientationVertical: `2` = 2.asInstanceOf[`2`]
 }

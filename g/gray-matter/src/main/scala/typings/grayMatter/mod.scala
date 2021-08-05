@@ -13,8 +13,7 @@ object mod {
   @JSImport("gray-matter", JSImport.Default)
   @js.native
   def default: GrayMatter = js.native
-  @scala.inline
-  def default_=(x: GrayMatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: GrayMatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   @js.native
   trait GrayMatter extends StObject {
@@ -47,35 +46,26 @@ object mod {
   }
   object GrayMatterOption {
     
-    @scala.inline
-    def apply(delims: String): GrayMatterOption = {
+    inline def apply(delims: String): GrayMatterOption = {
       val __obj = js.Dynamic.literal(delims = delims.asInstanceOf[js.Any])
       __obj.asInstanceOf[GrayMatterOption]
     }
     
-    @scala.inline
-    implicit class GrayMatterOptionMutableBuilder[Self <: GrayMatterOption] (val x: Self) extends AnyVal {
+    extension [Self <: GrayMatterOption](x: Self) {
       
-      @scala.inline
-      def setDelims(value: String): Self = StObject.set(x, "delims", value.asInstanceOf[js.Any])
+      inline def setDelims(value: String): Self = StObject.set(x, "delims", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEval(value: Boolean): Self = StObject.set(x, "eval", value.asInstanceOf[js.Any])
+      inline def setEval(value: Boolean): Self = StObject.set(x, "eval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvalUndefined: Self = StObject.set(x, "eval", js.undefined)
+      inline def setEvalUndefined: Self = StObject.set(x, "eval", js.undefined)
       
-      @scala.inline
-      def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+      inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+      inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
       
-      @scala.inline
-      def setParser(value: js.Function): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
+      inline def setParser(value: js.Function): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
+      inline def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
     }
   }
 }

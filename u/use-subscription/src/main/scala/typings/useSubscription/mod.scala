@@ -10,8 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useSubscription[T](subscription: Subscription[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useSubscription")(subscription.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def useSubscription[T](subscription: Subscription[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useSubscription")(subscription.asInstanceOf[js.Any]).asInstanceOf[T]
   
   trait Subscription[T] extends StObject {
     
@@ -28,20 +27,16 @@ object mod {
   }
   object Subscription {
     
-    @scala.inline
-    def apply[T](getCurrentValue: () => T, subscribe: js.Function0[Unit] => Unsubscribe): Subscription[T] = {
+    inline def apply[T](getCurrentValue: () => T, subscribe: js.Function0[Unit] => Unsubscribe): Subscription[T] = {
       val __obj = js.Dynamic.literal(getCurrentValue = js.Any.fromFunction0(getCurrentValue), subscribe = js.Any.fromFunction1(subscribe))
       __obj.asInstanceOf[Subscription[T]]
     }
     
-    @scala.inline
-    implicit class SubscriptionMutableBuilder[Self <: Subscription[?], T] (val x: Self & Subscription[T]) extends AnyVal {
+    extension [Self <: Subscription[?], T](x: Self & Subscription[T]) {
       
-      @scala.inline
-      def setGetCurrentValue(value: () => T): Self = StObject.set(x, "getCurrentValue", js.Any.fromFunction0(value))
+      inline def setGetCurrentValue(value: () => T): Self = StObject.set(x, "getCurrentValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSubscribe(value: js.Function0[Unit] => Unsubscribe): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
+      inline def setSubscribe(value: js.Function0[Unit] => Unsubscribe): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
     }
   }
   

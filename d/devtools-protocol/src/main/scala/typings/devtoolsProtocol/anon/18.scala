@@ -13,22 +13,17 @@ trait `18` extends StObject {
 }
 object `18` {
   
-  @scala.inline
-  def apply(paramsType: js.Array[ReleaseObjectGroupRequest], returnType: Unit): `18` = {
+  inline def apply(paramsType: js.Array[ReleaseObjectGroupRequest], returnType: Unit): `18` = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[`18`]
   }
   
-  @scala.inline
-  implicit class `18MutableBuilder`[Self <: `18`] (val x: Self) extends AnyVal {
+  extension [Self <: `18`](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[ReleaseObjectGroupRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[ReleaseObjectGroupRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: ReleaseObjectGroupRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: ReleaseObjectGroupRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

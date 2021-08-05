@@ -27,34 +27,25 @@ trait SchemaBatchUpdateDocumentResponse extends StObject {
 }
 object SchemaBatchUpdateDocumentResponse {
   
-  @scala.inline
-  def apply(): SchemaBatchUpdateDocumentResponse = {
+  inline def apply(): SchemaBatchUpdateDocumentResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBatchUpdateDocumentResponse]
   }
   
-  @scala.inline
-  implicit class SchemaBatchUpdateDocumentResponseMutableBuilder[Self <: SchemaBatchUpdateDocumentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBatchUpdateDocumentResponse](x: Self) {
     
-    @scala.inline
-    def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
+    inline def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentIdUndefined: Self = StObject.set(x, "documentId", js.undefined)
+    inline def setDocumentIdUndefined: Self = StObject.set(x, "documentId", js.undefined)
     
-    @scala.inline
-    def setReplies(value: js.Array[SchemaResponse]): Self = StObject.set(x, "replies", value.asInstanceOf[js.Any])
+    inline def setReplies(value: js.Array[SchemaResponse]): Self = StObject.set(x, "replies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepliesUndefined: Self = StObject.set(x, "replies", js.undefined)
+    inline def setRepliesUndefined: Self = StObject.set(x, "replies", js.undefined)
     
-    @scala.inline
-    def setRepliesVarargs(value: SchemaResponse*): Self = StObject.set(x, "replies", js.Array(value :_*))
+    inline def setRepliesVarargs(value: SchemaResponse*): Self = StObject.set(x, "replies", js.Array(value :_*))
     
-    @scala.inline
-    def setWriteControl(value: SchemaWriteControl): Self = StObject.set(x, "writeControl", value.asInstanceOf[js.Any])
+    inline def setWriteControl(value: SchemaWriteControl): Self = StObject.set(x, "writeControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteControlUndefined: Self = StObject.set(x, "writeControl", js.undefined)
+    inline def setWriteControlUndefined: Self = StObject.set(x, "writeControl", js.undefined)
   }
 }

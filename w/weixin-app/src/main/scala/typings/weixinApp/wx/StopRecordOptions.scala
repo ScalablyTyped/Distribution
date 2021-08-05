@@ -13,19 +13,15 @@ trait StopRecordOptions
 }
 object StopRecordOptions {
   
-  @scala.inline
-  def apply(): StopRecordOptions = {
+  inline def apply(): StopRecordOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StopRecordOptions]
   }
   
-  @scala.inline
-  implicit class StopRecordOptionsMutableBuilder[Self <: StopRecordOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StopRecordOptions](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: /* res */ RecordResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ RecordResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

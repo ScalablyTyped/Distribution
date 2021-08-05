@@ -15,9 +15,7 @@ object iosTransitionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def iosTransitionAnimation(navEl: HTMLElement, opts: TransitionOptions): Animation = (^.asInstanceOf[js.Dynamic].applyDynamic("iosTransitionAnimation")(navEl.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Animation]
+  inline def iosTransitionAnimation(navEl: HTMLElement, opts: TransitionOptions): Animation = (^.asInstanceOf[js.Dynamic].applyDynamic("iosTransitionAnimation")(navEl.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Animation]
   
-  @scala.inline
-  def shadow[T /* <: Element */](el: T): ShadowRoot | T = ^.asInstanceOf[js.Dynamic].applyDynamic("shadow")(el.asInstanceOf[js.Any]).asInstanceOf[ShadowRoot | T]
+  inline def shadow[T /* <: Element */](el: T): ShadowRoot | T = ^.asInstanceOf[js.Dynamic].applyDynamic("shadow")(el.asInstanceOf[js.Any]).asInstanceOf[ShadowRoot | T]
 }

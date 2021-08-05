@@ -23,31 +23,23 @@ trait CodeContentUpdate extends StObject {
 }
 object CodeContentUpdate {
   
-  @scala.inline
-  def apply(): CodeContentUpdate = {
+  inline def apply(): CodeContentUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CodeContentUpdate]
   }
   
-  @scala.inline
-  implicit class CodeContentUpdateMutableBuilder[Self <: CodeContentUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: CodeContentUpdate](x: Self) {
     
-    @scala.inline
-    def setS3ContentLocationUpdate(value: S3ContentLocationUpdate): Self = StObject.set(x, "S3ContentLocationUpdate", value.asInstanceOf[js.Any])
+    inline def setS3ContentLocationUpdate(value: S3ContentLocationUpdate): Self = StObject.set(x, "S3ContentLocationUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3ContentLocationUpdateUndefined: Self = StObject.set(x, "S3ContentLocationUpdate", js.undefined)
+    inline def setS3ContentLocationUpdateUndefined: Self = StObject.set(x, "S3ContentLocationUpdate", js.undefined)
     
-    @scala.inline
-    def setTextContentUpdate(value: TextContent): Self = StObject.set(x, "TextContentUpdate", value.asInstanceOf[js.Any])
+    inline def setTextContentUpdate(value: TextContent): Self = StObject.set(x, "TextContentUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextContentUpdateUndefined: Self = StObject.set(x, "TextContentUpdate", js.undefined)
+    inline def setTextContentUpdateUndefined: Self = StObject.set(x, "TextContentUpdate", js.undefined)
     
-    @scala.inline
-    def setZipFileContentUpdate(value: ZipFileContent): Self = StObject.set(x, "ZipFileContentUpdate", value.asInstanceOf[js.Any])
+    inline def setZipFileContentUpdate(value: ZipFileContent): Self = StObject.set(x, "ZipFileContentUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZipFileContentUpdateUndefined: Self = StObject.set(x, "ZipFileContentUpdate", js.undefined)
+    inline def setZipFileContentUpdateUndefined: Self = StObject.set(x, "ZipFileContentUpdate", js.undefined)
   }
 }

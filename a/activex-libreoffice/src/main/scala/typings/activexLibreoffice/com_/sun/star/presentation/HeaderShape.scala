@@ -18,8 +18,7 @@ trait HeaderShape
      with TextShape
 object HeaderShape {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Bookmark: String,
     DimColor: Color,
     DimHide: Boolean,

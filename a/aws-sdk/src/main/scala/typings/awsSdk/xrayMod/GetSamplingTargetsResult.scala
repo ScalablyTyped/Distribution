@@ -23,37 +23,27 @@ trait GetSamplingTargetsResult extends StObject {
 }
 object GetSamplingTargetsResult {
   
-  @scala.inline
-  def apply(): GetSamplingTargetsResult = {
+  inline def apply(): GetSamplingTargetsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSamplingTargetsResult]
   }
   
-  @scala.inline
-  implicit class GetSamplingTargetsResultMutableBuilder[Self <: GetSamplingTargetsResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetSamplingTargetsResult](x: Self) {
     
-    @scala.inline
-    def setLastRuleModification(value: Timestamp): Self = StObject.set(x, "LastRuleModification", value.asInstanceOf[js.Any])
+    inline def setLastRuleModification(value: Timestamp): Self = StObject.set(x, "LastRuleModification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastRuleModificationUndefined: Self = StObject.set(x, "LastRuleModification", js.undefined)
+    inline def setLastRuleModificationUndefined: Self = StObject.set(x, "LastRuleModification", js.undefined)
     
-    @scala.inline
-    def setSamplingTargetDocuments(value: SamplingTargetDocumentList): Self = StObject.set(x, "SamplingTargetDocuments", value.asInstanceOf[js.Any])
+    inline def setSamplingTargetDocuments(value: SamplingTargetDocumentList): Self = StObject.set(x, "SamplingTargetDocuments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSamplingTargetDocumentsUndefined: Self = StObject.set(x, "SamplingTargetDocuments", js.undefined)
+    inline def setSamplingTargetDocumentsUndefined: Self = StObject.set(x, "SamplingTargetDocuments", js.undefined)
     
-    @scala.inline
-    def setSamplingTargetDocumentsVarargs(value: SamplingTargetDocument*): Self = StObject.set(x, "SamplingTargetDocuments", js.Array(value :_*))
+    inline def setSamplingTargetDocumentsVarargs(value: SamplingTargetDocument*): Self = StObject.set(x, "SamplingTargetDocuments", js.Array(value :_*))
     
-    @scala.inline
-    def setUnprocessedStatistics(value: UnprocessedStatisticsList): Self = StObject.set(x, "UnprocessedStatistics", value.asInstanceOf[js.Any])
+    inline def setUnprocessedStatistics(value: UnprocessedStatisticsList): Self = StObject.set(x, "UnprocessedStatistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnprocessedStatisticsUndefined: Self = StObject.set(x, "UnprocessedStatistics", js.undefined)
+    inline def setUnprocessedStatisticsUndefined: Self = StObject.set(x, "UnprocessedStatistics", js.undefined)
     
-    @scala.inline
-    def setUnprocessedStatisticsVarargs(value: UnprocessedStatistics*): Self = StObject.set(x, "UnprocessedStatistics", js.Array(value :_*))
+    inline def setUnprocessedStatisticsVarargs(value: UnprocessedStatistics*): Self = StObject.set(x, "UnprocessedStatistics", js.Array(value :_*))
   }
 }

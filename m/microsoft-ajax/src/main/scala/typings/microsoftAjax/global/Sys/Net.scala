@@ -456,8 +456,7 @@ object Net {
   @JSGlobal("Sys.Net.WebRequestManager")
   @js.native
   def WebRequestManager: typings.microsoftAjax.Sys.Net.IWebRequestManager = js.native
-  @scala.inline
-  def WebRequestManager_=(x: typings.microsoftAjax.Sys.Net.IWebRequestManager): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WebRequestManager")(x.asInstanceOf[js.Any])
+  inline def WebRequestManager_=(x: typings.microsoftAjax.Sys.Net.IWebRequestManager): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WebRequestManager")(x.asInstanceOf[js.Any])
   
   @JSGlobal("Sys.Net.WebServiceError")
   @js.native
@@ -501,8 +500,7 @@ object Net {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def invoke(
+    inline def invoke(
       servicePath: String,
       methodName: String,
       useGet: js.UndefOr[Boolean],

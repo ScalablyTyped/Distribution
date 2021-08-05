@@ -18,25 +18,19 @@ trait InputDataConfig extends StObject {
 }
 object InputDataConfig {
   
-  @scala.inline
-  def apply(DatasetGroupArn: Arn): InputDataConfig = {
+  inline def apply(DatasetGroupArn: Arn): InputDataConfig = {
     val __obj = js.Dynamic.literal(DatasetGroupArn = DatasetGroupArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputDataConfig]
   }
   
-  @scala.inline
-  implicit class InputDataConfigMutableBuilder[Self <: InputDataConfig] (val x: Self) extends AnyVal {
+  extension [Self <: InputDataConfig](x: Self) {
     
-    @scala.inline
-    def setDatasetGroupArn(value: Arn): Self = StObject.set(x, "DatasetGroupArn", value.asInstanceOf[js.Any])
+    inline def setDatasetGroupArn(value: Arn): Self = StObject.set(x, "DatasetGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupplementaryFeatures(value: SupplementaryFeatures): Self = StObject.set(x, "SupplementaryFeatures", value.asInstanceOf[js.Any])
+    inline def setSupplementaryFeatures(value: SupplementaryFeatures): Self = StObject.set(x, "SupplementaryFeatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupplementaryFeaturesUndefined: Self = StObject.set(x, "SupplementaryFeatures", js.undefined)
+    inline def setSupplementaryFeaturesUndefined: Self = StObject.set(x, "SupplementaryFeatures", js.undefined)
     
-    @scala.inline
-    def setSupplementaryFeaturesVarargs(value: SupplementaryFeature*): Self = StObject.set(x, "SupplementaryFeatures", js.Array(value :_*))
+    inline def setSupplementaryFeaturesVarargs(value: SupplementaryFeature*): Self = StObject.set(x, "SupplementaryFeatures", js.Array(value :_*))
   }
 }

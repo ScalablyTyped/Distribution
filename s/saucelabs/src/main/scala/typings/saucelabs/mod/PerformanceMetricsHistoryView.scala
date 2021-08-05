@@ -13,22 +13,17 @@ trait PerformanceMetricsHistoryView
 }
 object PerformanceMetricsHistoryView {
   
-  @scala.inline
-  def apply(): PerformanceMetricsHistoryView = {
+  inline def apply(): PerformanceMetricsHistoryView = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PerformanceMetricsHistoryView]
   }
   
-  @scala.inline
-  implicit class PerformanceMetricsHistoryViewMutableBuilder[Self <: PerformanceMetricsHistoryView] (val x: Self) extends AnyVal {
+  extension [Self <: PerformanceMetricsHistoryView](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[PerformanceMetricsListViewItems]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[PerformanceMetricsListViewItems]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: PerformanceMetricsListViewItems*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: PerformanceMetricsListViewItems*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

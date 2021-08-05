@@ -10,17 +10,17 @@ object scrollVisibleServiceMod {
   @js.native
   class ScrollVisibleService () extends StObject {
     
-    var bodyHorizontalScrollShowing: js.Any = js.native
+    /* private */ var bodyHorizontalScrollShowing: js.Any = js.native
     
-    var columnApi: js.Any = js.native
+    /* private */ var columnApi: js.Any = js.native
     
-    var columnController: js.Any = js.native
+    /* private */ var columnController: js.Any = js.native
     
-    var eventService: js.Any = js.native
+    /* private */ var eventService: js.Any = js.native
     
-    var gridApi: js.Any = js.native
+    /* private */ var gridApi: js.Any = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
     def isBodyHorizontalScrollShowing(): Boolean = js.native
     
@@ -28,9 +28,9 @@ object scrollVisibleServiceMod {
     
     def isRightVerticalScrollShowing(): Boolean = js.native
     
-    var leftVerticalScrollShowing: js.Any = js.native
+    /* private */ var leftVerticalScrollShowing: js.Any = js.native
     
-    var rightVerticalScrollShowing: js.Any = js.native
+    /* private */ var rightVerticalScrollShowing: js.Any = js.native
     
     def setScrollsVisible(params: SetScrollsVisibleParams): Unit = js.native
   }
@@ -45,8 +45,7 @@ object scrollVisibleServiceMod {
   }
   object SetScrollsVisibleParams {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bodyHorizontalScrollShowing: Boolean,
       leftVerticalScrollShowing: Boolean,
       rightVerticalScrollShowing: Boolean
@@ -55,17 +54,13 @@ object scrollVisibleServiceMod {
       __obj.asInstanceOf[SetScrollsVisibleParams]
     }
     
-    @scala.inline
-    implicit class SetScrollsVisibleParamsMutableBuilder[Self <: SetScrollsVisibleParams] (val x: Self) extends AnyVal {
+    extension [Self <: SetScrollsVisibleParams](x: Self) {
       
-      @scala.inline
-      def setBodyHorizontalScrollShowing(value: Boolean): Self = StObject.set(x, "bodyHorizontalScrollShowing", value.asInstanceOf[js.Any])
+      inline def setBodyHorizontalScrollShowing(value: Boolean): Self = StObject.set(x, "bodyHorizontalScrollShowing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftVerticalScrollShowing(value: Boolean): Self = StObject.set(x, "leftVerticalScrollShowing", value.asInstanceOf[js.Any])
+      inline def setLeftVerticalScrollShowing(value: Boolean): Self = StObject.set(x, "leftVerticalScrollShowing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightVerticalScrollShowing(value: Boolean): Self = StObject.set(x, "rightVerticalScrollShowing", value.asInstanceOf[js.Any])
+      inline def setRightVerticalScrollShowing(value: Boolean): Self = StObject.set(x, "rightVerticalScrollShowing", value.asInstanceOf[js.Any])
     }
   }
 }

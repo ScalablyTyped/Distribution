@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StateManagementSetting extends StObject
 object StateManagementSetting {
   
-  @scala.inline
-  def allowed: typings.microsoftGraph.microsoftGraphStrings.allowed = "allowed".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allowed]
+  inline def allowed: typings.microsoftGraph.microsoftGraphStrings.allowed = "allowed".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allowed]
   
-  @scala.inline
-  def blocked: typings.microsoftGraph.microsoftGraphStrings.blocked = "blocked".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.blocked]
+  inline def blocked: typings.microsoftGraph.microsoftGraphStrings.blocked = "blocked".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.blocked]
   
-  @scala.inline
-  def notConfigured: typings.microsoftGraph.microsoftGraphStrings.notConfigured = "notConfigured".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notConfigured]
+  inline def notConfigured: typings.microsoftGraph.microsoftGraphStrings.notConfigured = "notConfigured".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notConfigured]
 }

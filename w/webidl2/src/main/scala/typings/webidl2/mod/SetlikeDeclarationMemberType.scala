@@ -15,8 +15,7 @@ trait SetlikeDeclarationMemberType
 }
 object SetlikeDeclarationMemberType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     arguments: js.Array[js.Any],
     extAttrs: js.Array[ExtendedAttribute],
     idlType: js.Array[IDLTypeDescription],
@@ -28,10 +27,8 @@ object SetlikeDeclarationMemberType {
     __obj.asInstanceOf[SetlikeDeclarationMemberType]
   }
   
-  @scala.inline
-  implicit class SetlikeDeclarationMemberTypeMutableBuilder[Self <: SetlikeDeclarationMemberType] (val x: Self) extends AnyVal {
+  extension [Self <: SetlikeDeclarationMemberType](x: Self) {
     
-    @scala.inline
-    def setType(value: setlike): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: setlike): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

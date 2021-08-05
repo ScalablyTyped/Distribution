@@ -14,22 +14,17 @@ trait hasLabels extends StObject {
 }
 object hasLabels {
   
-  @scala.inline
-  def apply(applyLabel: String => Unit, labels: () => AdWordsSelector[Label], removeLabel: String => Unit): hasLabels = {
+  inline def apply(applyLabel: String => Unit, labels: () => AdWordsSelector[Label], removeLabel: String => Unit): hasLabels = {
     val __obj = js.Dynamic.literal(applyLabel = js.Any.fromFunction1(applyLabel), labels = js.Any.fromFunction0(labels), removeLabel = js.Any.fromFunction1(removeLabel))
     __obj.asInstanceOf[hasLabels]
   }
   
-  @scala.inline
-  implicit class hasLabelsMutableBuilder[Self <: hasLabels] (val x: Self) extends AnyVal {
+  extension [Self <: hasLabels](x: Self) {
     
-    @scala.inline
-    def setApplyLabel(value: String => Unit): Self = StObject.set(x, "applyLabel", js.Any.fromFunction1(value))
+    inline def setApplyLabel(value: String => Unit): Self = StObject.set(x, "applyLabel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLabels(value: () => AdWordsSelector[Label]): Self = StObject.set(x, "labels", js.Any.fromFunction0(value))
+    inline def setLabels(value: () => AdWordsSelector[Label]): Self = StObject.set(x, "labels", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveLabel(value: String => Unit): Self = StObject.set(x, "removeLabel", js.Any.fromFunction1(value))
+    inline def setRemoveLabel(value: String => Unit): Self = StObject.set(x, "removeLabel", js.Any.fromFunction1(value))
   }
 }

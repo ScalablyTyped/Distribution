@@ -48,30 +48,23 @@ object signedInDevices {
   }
   object DeviceInfo {
     
-    @scala.inline
-    def apply(chromeVersion: String, id: String, name: String, os: OS, `type`: DeviceType): DeviceInfo = {
+    inline def apply(chromeVersion: String, id: String, name: String, os: OS, `type`: DeviceType): DeviceInfo = {
       val __obj = js.Dynamic.literal(chromeVersion = chromeVersion.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeviceInfo]
     }
     
-    @scala.inline
-    implicit class DeviceInfoMutableBuilder[Self <: DeviceInfo] (val x: Self) extends AnyVal {
+    extension [Self <: DeviceInfo](x: Self) {
       
-      @scala.inline
-      def setChromeVersion(value: String): Self = StObject.set(x, "chromeVersion", value.asInstanceOf[js.Any])
+      inline def setChromeVersion(value: String): Self = StObject.set(x, "chromeVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOs(value: OS): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
+      inline def setOs(value: OS): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: DeviceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: DeviceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -84,17 +77,13 @@ object signedInDevices {
   trait DeviceType extends StObject
   object DeviceType {
     
-    @scala.inline
-    def desktop_or_laptop: typings.chromeApps.chromeAppsStrings.desktop_or_laptop = "desktop_or_laptop".asInstanceOf[typings.chromeApps.chromeAppsStrings.desktop_or_laptop]
+    inline def desktop_or_laptop: typings.chromeApps.chromeAppsStrings.desktop_or_laptop = "desktop_or_laptop".asInstanceOf[typings.chromeApps.chromeAppsStrings.desktop_or_laptop]
     
-    @scala.inline
-    def phone: typings.chromeApps.chromeAppsStrings.phone = "phone".asInstanceOf[typings.chromeApps.chromeAppsStrings.phone]
+    inline def phone: typings.chromeApps.chromeAppsStrings.phone = "phone".asInstanceOf[typings.chromeApps.chromeAppsStrings.phone]
     
-    @scala.inline
-    def tablet: typings.chromeApps.chromeAppsStrings.tablet = "tablet".asInstanceOf[typings.chromeApps.chromeAppsStrings.tablet]
+    inline def tablet: typings.chromeApps.chromeAppsStrings.tablet = "tablet".asInstanceOf[typings.chromeApps.chromeAppsStrings.tablet]
     
-    @scala.inline
-    def unknown: unknown__ = "unknown".asInstanceOf[unknown__]
+    inline def unknown: unknown__ = "unknown".asInstanceOf[unknown__]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -109,25 +98,18 @@ object signedInDevices {
   trait OS extends StObject
   object OS {
     
-    @scala.inline
-    def android: android_ = "android".asInstanceOf[android_]
+    inline def android: android_ = "android".asInstanceOf[android_]
     
-    @scala.inline
-    def chrome_os: typings.chromeApps.chromeAppsStrings.chrome_os = "chrome_os".asInstanceOf[typings.chromeApps.chromeAppsStrings.chrome_os]
+    inline def chrome_os: typings.chromeApps.chromeAppsStrings.chrome_os = "chrome_os".asInstanceOf[typings.chromeApps.chromeAppsStrings.chrome_os]
     
-    @scala.inline
-    def ios: typings.chromeApps.chromeAppsStrings.ios = "ios".asInstanceOf[typings.chromeApps.chromeAppsStrings.ios]
+    inline def ios: typings.chromeApps.chromeAppsStrings.ios = "ios".asInstanceOf[typings.chromeApps.chromeAppsStrings.ios]
     
-    @scala.inline
-    def linux: linux_ = "linux".asInstanceOf[linux_]
+    inline def linux: linux_ = "linux".asInstanceOf[linux_]
     
-    @scala.inline
-    def mac: mac_ = "mac".asInstanceOf[mac_]
+    inline def mac: mac_ = "mac".asInstanceOf[mac_]
     
-    @scala.inline
-    def unknown: unknown__ = "unknown".asInstanceOf[unknown__]
+    inline def unknown: unknown__ = "unknown".asInstanceOf[unknown__]
     
-    @scala.inline
-    def win: win_ = "win".asInstanceOf[win_]
+    inline def win: win_ = "win".asInstanceOf[win_]
   }
 }

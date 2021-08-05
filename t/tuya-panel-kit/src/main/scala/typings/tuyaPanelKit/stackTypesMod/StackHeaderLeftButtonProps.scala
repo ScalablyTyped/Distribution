@@ -98,115 +98,79 @@ trait StackHeaderLeftButtonProps extends StObject {
 }
 object StackHeaderLeftButtonProps {
   
-  @scala.inline
-  def apply(): StackHeaderLeftButtonProps = {
+  inline def apply(): StackHeaderLeftButtonProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StackHeaderLeftButtonProps]
   }
   
-  @scala.inline
-  implicit class StackHeaderLeftButtonPropsMutableBuilder[Self <: StackHeaderLeftButtonProps] (val x: Self) extends AnyVal {
+  extension [Self <: StackHeaderLeftButtonProps](x: Self) {
     
-    @scala.inline
-    def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
+    inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
+    inline def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
     
-    @scala.inline
-    def setAllowFontScaling(value: Boolean): Self = StObject.set(x, "allowFontScaling", value.asInstanceOf[js.Any])
+    inline def setAllowFontScaling(value: Boolean): Self = StObject.set(x, "allowFontScaling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowFontScalingUndefined: Self = StObject.set(x, "allowFontScaling", js.undefined)
+    inline def setAllowFontScalingUndefined: Self = StObject.set(x, "allowFontScaling", js.undefined)
     
-    @scala.inline
-    def setBackImage(value: /* props */ TintColorString => ReactNode): Self = StObject.set(x, "backImage", js.Any.fromFunction1(value))
+    inline def setBackImage(value: /* props */ TintColorString => ReactNode): Self = StObject.set(x, "backImage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBackImageUndefined: Self = StObject.set(x, "backImage", js.undefined)
+    inline def setBackImageUndefined: Self = StObject.set(x, "backImage", js.undefined)
     
-    @scala.inline
-    def setCanGoBack(value: Boolean): Self = StObject.set(x, "canGoBack", value.asInstanceOf[js.Any])
+    inline def setCanGoBack(value: Boolean): Self = StObject.set(x, "canGoBack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanGoBackUndefined: Self = StObject.set(x, "canGoBack", js.undefined)
+    inline def setCanGoBackUndefined: Self = StObject.set(x, "canGoBack", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelStyle(value: WithAnimatedValue[StyleProp[TextStyle]]): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
+    inline def setLabelStyle(value: WithAnimatedValue[StyleProp[TextStyle]]): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelStyleNull: Self = StObject.set(x, "labelStyle", null)
+    inline def setLabelStyleNull: Self = StObject.set(x, "labelStyle", null)
     
-    @scala.inline
-    def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
+    inline def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setLabelVisible(value: Boolean): Self = StObject.set(x, "labelVisible", value.asInstanceOf[js.Any])
+    inline def setLabelVisible(value: Boolean): Self = StObject.set(x, "labelVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelVisibleUndefined: Self = StObject.set(x, "labelVisible", js.undefined)
+    inline def setLabelVisibleUndefined: Self = StObject.set(x, "labelVisible", js.undefined)
     
-    @scala.inline
-    def setOnLabelLayout(value: /* e */ LayoutChangeEvent => Unit): Self = StObject.set(x, "onLabelLayout", js.Any.fromFunction1(value))
+    inline def setOnLabelLayout(value: /* e */ LayoutChangeEvent => Unit): Self = StObject.set(x, "onLabelLayout", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnLabelLayoutUndefined: Self = StObject.set(x, "onLabelLayout", js.undefined)
+    inline def setOnLabelLayoutUndefined: Self = StObject.set(x, "onLabelLayout", js.undefined)
     
-    @scala.inline
-    def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
+    inline def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
+    inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
     
-    @scala.inline
-    def setPressColorAndroid(value: String): Self = StObject.set(x, "pressColorAndroid", value.asInstanceOf[js.Any])
+    inline def setPressColorAndroid(value: String): Self = StObject.set(x, "pressColorAndroid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPressColorAndroidUndefined: Self = StObject.set(x, "pressColorAndroid", js.undefined)
+    inline def setPressColorAndroidUndefined: Self = StObject.set(x, "pressColorAndroid", js.undefined)
     
-    @scala.inline
-    def setScreenLayout(value: Layout): Self = StObject.set(x, "screenLayout", value.asInstanceOf[js.Any])
+    inline def setScreenLayout(value: Layout): Self = StObject.set(x, "screenLayout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenLayoutUndefined: Self = StObject.set(x, "screenLayout", js.undefined)
+    inline def setScreenLayoutUndefined: Self = StObject.set(x, "screenLayout", js.undefined)
     
-    @scala.inline
-    def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleNull: Self = StObject.set(x, "style", null)
+    inline def setStyleNull: Self = StObject.set(x, "style", null)
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setTintColor(value: String): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
+    inline def setTintColor(value: String): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
+    inline def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
     
-    @scala.inline
-    def setTitleLayout(value: Layout): Self = StObject.set(x, "titleLayout", value.asInstanceOf[js.Any])
+    inline def setTitleLayout(value: Layout): Self = StObject.set(x, "titleLayout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleLayoutUndefined: Self = StObject.set(x, "titleLayout", js.undefined)
+    inline def setTitleLayoutUndefined: Self = StObject.set(x, "titleLayout", js.undefined)
     
-    @scala.inline
-    def setTruncatedLabel(value: String): Self = StObject.set(x, "truncatedLabel", value.asInstanceOf[js.Any])
+    inline def setTruncatedLabel(value: String): Self = StObject.set(x, "truncatedLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTruncatedLabelUndefined: Self = StObject.set(x, "truncatedLabel", js.undefined)
+    inline def setTruncatedLabelUndefined: Self = StObject.set(x, "truncatedLabel", js.undefined)
   }
 }

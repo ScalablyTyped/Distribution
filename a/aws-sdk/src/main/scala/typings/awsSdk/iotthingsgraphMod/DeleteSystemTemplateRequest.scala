@@ -13,16 +13,13 @@ trait DeleteSystemTemplateRequest extends StObject {
 }
 object DeleteSystemTemplateRequest {
   
-  @scala.inline
-  def apply(id: Urn): DeleteSystemTemplateRequest = {
+  inline def apply(id: Urn): DeleteSystemTemplateRequest = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteSystemTemplateRequest]
   }
   
-  @scala.inline
-  implicit class DeleteSystemTemplateRequestMutableBuilder[Self <: DeleteSystemTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSystemTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: Urn): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Urn): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait GetVaultAccessPolicyOutput extends StObject {
 }
 object GetVaultAccessPolicyOutput {
   
-  @scala.inline
-  def apply(): GetVaultAccessPolicyOutput = {
+  inline def apply(): GetVaultAccessPolicyOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetVaultAccessPolicyOutput]
   }
   
-  @scala.inline
-  implicit class GetVaultAccessPolicyOutputMutableBuilder[Self <: GetVaultAccessPolicyOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetVaultAccessPolicyOutput](x: Self) {
     
-    @scala.inline
-    def setPolicy(value: VaultAccessPolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: VaultAccessPolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+    inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
   }
 }

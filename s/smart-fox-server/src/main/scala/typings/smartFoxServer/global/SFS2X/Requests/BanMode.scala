@@ -20,13 +20,11 @@ object BanMode {
   @JSGlobal("SFS2X.Requests.BanMode.BY_ADDRESS")
   @js.native
   def BY_ADDRESS: Double = js.native
-  @scala.inline
-  def BY_ADDRESS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BY_ADDRESS")(x.asInstanceOf[js.Any])
+  inline def BY_ADDRESS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BY_ADDRESS")(x.asInstanceOf[js.Any])
   
   /** @type {number} User is banned by name. */
   @JSGlobal("SFS2X.Requests.BanMode.BY_NAME")
   @js.native
   def BY_NAME: Double = js.native
-  @scala.inline
-  def BY_NAME_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BY_NAME")(x.asInstanceOf[js.Any])
+  inline def BY_NAME_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BY_NAME")(x.asInstanceOf[js.Any])
 }

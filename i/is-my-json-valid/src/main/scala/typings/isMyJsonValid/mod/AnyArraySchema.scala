@@ -10,8 +10,7 @@ trait AnyArraySchema
      with _AnySchema
 object AnyArraySchema {
   
-  @scala.inline
-  def apply(items: AnySchema): AnyArraySchema = {
+  inline def apply(items: AnySchema): AnyArraySchema = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("array")
     __obj.asInstanceOf[AnyArraySchema]

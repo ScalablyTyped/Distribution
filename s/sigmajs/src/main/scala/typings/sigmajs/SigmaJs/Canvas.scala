@@ -17,8 +17,7 @@ trait Canvas extends StObject {
 }
 object Canvas {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     edges: StringDictionary[
       js.Function4[/* edge */ Edge, /* source */ Node, /* target */ Node, /* repeated */ js.Any, Unit]
     ],
@@ -29,20 +28,16 @@ object Canvas {
     __obj.asInstanceOf[Canvas]
   }
   
-  @scala.inline
-  implicit class CanvasMutableBuilder[Self <: Canvas] (val x: Self) extends AnyVal {
+  extension [Self <: Canvas](x: Self) {
     
-    @scala.inline
-    def setEdges(
+    inline def setEdges(
       value: StringDictionary[
           js.Function4[/* edge */ Edge, /* source */ Node, /* target */ Node, /* repeated */ js.Any, Unit]
         ]
     ): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabels(value: StringDictionary[js.Function2[/* node */ Node, /* repeated */ js.Any, Unit]]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: StringDictionary[js.Function2[/* node */ Node, /* repeated */ js.Any, Unit]]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodes(value: StringDictionary[js.Function2[/* node */ Node, /* repeated */ js.Any, Unit]]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: StringDictionary[js.Function2[/* node */ Node, /* repeated */ js.Any, Unit]]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait StartEditing extends StObject {
 }
 object StartEditing {
   
-  @scala.inline
-  def apply(startEditing: (Double, Double) => Unit): StartEditing = {
+  inline def apply(startEditing: (Double, Double) => Unit): StartEditing = {
     val __obj = js.Dynamic.literal(startEditing = js.Any.fromFunction2(startEditing))
     __obj.asInstanceOf[StartEditing]
   }
   
-  @scala.inline
-  implicit class StartEditingMutableBuilder[Self <: StartEditing] (val x: Self) extends AnyVal {
+  extension [Self <: StartEditing](x: Self) {
     
-    @scala.inline
-    def setStartEditing(value: (Double, Double) => Unit): Self = StObject.set(x, "startEditing", js.Any.fromFunction2(value))
+    inline def setStartEditing(value: (Double, Double) => Unit): Self = StObject.set(x, "startEditing", js.Any.fromFunction2(value))
   }
 }

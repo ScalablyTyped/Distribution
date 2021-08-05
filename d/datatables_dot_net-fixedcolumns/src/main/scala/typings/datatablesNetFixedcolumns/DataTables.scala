@@ -22,17 +22,14 @@ object DataTables {
   }
   object Api {
     
-    @scala.inline
-    def apply(fixedColumns: () => FixedColumnsMethods): Api = {
+    inline def apply(fixedColumns: () => FixedColumnsMethods): Api = {
       val __obj = js.Dynamic.literal(fixedColumns = js.Any.fromFunction0(fixedColumns))
       __obj.asInstanceOf[Api]
     }
     
-    @scala.inline
-    implicit class ApiMutableBuilder[Self <: Api] (val x: Self) extends AnyVal {
+    extension [Self <: Api](x: Self) {
       
-      @scala.inline
-      def setFixedColumns(value: () => FixedColumnsMethods): Self = StObject.set(x, "fixedColumns", js.Any.fromFunction0(value))
+      inline def setFixedColumns(value: () => FixedColumnsMethods): Self = StObject.set(x, "fixedColumns", js.Any.fromFunction0(value))
     }
   }
   
@@ -46,17 +43,14 @@ object DataTables {
   }
   object CellMethods {
     
-    @scala.inline
-    def apply(fixedNode: () => Node): CellMethods = {
+    inline def apply(fixedNode: () => Node): CellMethods = {
       val __obj = js.Dynamic.literal(fixedNode = js.Any.fromFunction0(fixedNode))
       __obj.asInstanceOf[CellMethods]
     }
     
-    @scala.inline
-    implicit class CellMethodsMutableBuilder[Self <: CellMethods] (val x: Self) extends AnyVal {
+    extension [Self <: CellMethods](x: Self) {
       
-      @scala.inline
-      def setFixedNode(value: () => Node): Self = StObject.set(x, "fixedNode", js.Any.fromFunction0(value))
+      inline def setFixedNode(value: () => Node): Self = StObject.set(x, "fixedNode", js.Any.fromFunction0(value))
     }
   }
   
@@ -71,17 +65,14 @@ object DataTables {
   }
   object CellsMethods {
     
-    @scala.inline
-    def apply(fixedNodes: () => Api): CellsMethods = {
+    inline def apply(fixedNodes: () => Api): CellsMethods = {
       val __obj = js.Dynamic.literal(fixedNodes = js.Any.fromFunction0(fixedNodes))
       __obj.asInstanceOf[CellsMethods]
     }
     
-    @scala.inline
-    implicit class CellsMethodsMutableBuilder[Self <: CellsMethods] (val x: Self) extends AnyVal {
+    extension [Self <: CellsMethods](x: Self) {
       
-      @scala.inline
-      def setFixedNodes(value: () => Api): Self = StObject.set(x, "fixedNodes", js.Any.fromFunction0(value))
+      inline def setFixedNodes(value: () => Api): Self = StObject.set(x, "fixedNodes", js.Any.fromFunction0(value))
     }
   }
   
@@ -146,32 +137,24 @@ object DataTables {
   }
   object FixedColumnsSettings {
     
-    @scala.inline
-    def apply(): FixedColumnsSettings = {
+    inline def apply(): FixedColumnsSettings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FixedColumnsSettings]
     }
     
-    @scala.inline
-    implicit class FixedColumnsSettingsMutableBuilder[Self <: FixedColumnsSettings] (val x: Self) extends AnyVal {
+    extension [Self <: FixedColumnsSettings](x: Self) {
       
-      @scala.inline
-      def setHeightMatch(value: none | semiauto | auto): Self = StObject.set(x, "heightMatch", value.asInstanceOf[js.Any])
+      inline def setHeightMatch(value: none | semiauto | auto): Self = StObject.set(x, "heightMatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightMatchUndefined: Self = StObject.set(x, "heightMatch", js.undefined)
+      inline def setHeightMatchUndefined: Self = StObject.set(x, "heightMatch", js.undefined)
       
-      @scala.inline
-      def setLeftColumns(value: Double): Self = StObject.set(x, "leftColumns", value.asInstanceOf[js.Any])
+      inline def setLeftColumns(value: Double): Self = StObject.set(x, "leftColumns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftColumnsUndefined: Self = StObject.set(x, "leftColumns", js.undefined)
+      inline def setLeftColumnsUndefined: Self = StObject.set(x, "leftColumns", js.undefined)
       
-      @scala.inline
-      def setRightColumns(value: Double): Self = StObject.set(x, "rightColumns", value.asInstanceOf[js.Any])
+      inline def setRightColumns(value: Double): Self = StObject.set(x, "rightColumns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightColumnsUndefined: Self = StObject.set(x, "rightColumns", js.undefined)
+      inline def setRightColumnsUndefined: Self = StObject.set(x, "rightColumns", js.undefined)
     }
   }
   
@@ -185,17 +168,14 @@ object DataTables {
   }
   object RowsMethods {
     
-    @scala.inline
-    def apply(recalcHeight: () => Api): RowsMethods = {
+    inline def apply(recalcHeight: () => Api): RowsMethods = {
       val __obj = js.Dynamic.literal(recalcHeight = js.Any.fromFunction0(recalcHeight))
       __obj.asInstanceOf[RowsMethods]
     }
     
-    @scala.inline
-    implicit class RowsMethodsMutableBuilder[Self <: RowsMethods] (val x: Self) extends AnyVal {
+    extension [Self <: RowsMethods](x: Self) {
       
-      @scala.inline
-      def setRecalcHeight(value: () => Api): Self = StObject.set(x, "recalcHeight", js.Any.fromFunction0(value))
+      inline def setRecalcHeight(value: () => Api): Self = StObject.set(x, "recalcHeight", js.Any.fromFunction0(value))
     }
   }
   
@@ -209,20 +189,16 @@ object DataTables {
   }
   object Settings {
     
-    @scala.inline
-    def apply(): Settings = {
+    inline def apply(): Settings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Settings]
     }
     
-    @scala.inline
-    implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
+    extension [Self <: Settings](x: Self) {
       
-      @scala.inline
-      def setFixedColumns(value: Boolean | FixedColumnsSettings): Self = StObject.set(x, "fixedColumns", value.asInstanceOf[js.Any])
+      inline def setFixedColumns(value: Boolean | FixedColumnsSettings): Self = StObject.set(x, "fixedColumns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixedColumnsUndefined: Self = StObject.set(x, "fixedColumns", js.undefined)
+      inline def setFixedColumnsUndefined: Self = StObject.set(x, "fixedColumns", js.undefined)
     }
   }
 }

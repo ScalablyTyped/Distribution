@@ -78,8 +78,6 @@ object MouseConstraint {
     * @return {MouseConstraint} A new MouseConstraint
     */
   /* static member */
-  @scala.inline
-  def create(engine: typings.phaser.MatterJS.Engine): typings.phaser.MatterJS.MouseConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(engine.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.MatterJS.MouseConstraint]
-  @scala.inline
-  def create(engine: typings.phaser.MatterJS.Engine, options: IMouseConstraintDefinition): typings.phaser.MatterJS.MouseConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(engine.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.MouseConstraint]
+  inline def create(engine: typings.phaser.MatterJS.Engine): typings.phaser.MatterJS.MouseConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(engine.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.MatterJS.MouseConstraint]
+  inline def create(engine: typings.phaser.MatterJS.Engine, options: IMouseConstraintDefinition): typings.phaser.MatterJS.MouseConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(engine.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.MouseConstraint]
 }

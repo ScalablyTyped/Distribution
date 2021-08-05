@@ -13,16 +13,13 @@ trait GetScriptSourceReturnType extends StObject {
 }
 object GetScriptSourceReturnType {
   
-  @scala.inline
-  def apply(scriptSource: String): GetScriptSourceReturnType = {
+  inline def apply(scriptSource: String): GetScriptSourceReturnType = {
     val __obj = js.Dynamic.literal(scriptSource = scriptSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetScriptSourceReturnType]
   }
   
-  @scala.inline
-  implicit class GetScriptSourceReturnTypeMutableBuilder[Self <: GetScriptSourceReturnType] (val x: Self) extends AnyVal {
+  extension [Self <: GetScriptSourceReturnType](x: Self) {
     
-    @scala.inline
-    def setScriptSource(value: String): Self = StObject.set(x, "scriptSource", value.asInstanceOf[js.Any])
+    inline def setScriptSource(value: String): Self = StObject.set(x, "scriptSource", value.asInstanceOf[js.Any])
   }
 }

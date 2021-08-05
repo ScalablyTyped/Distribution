@@ -52,55 +52,39 @@ trait WritingOptions
 }
 object WritingOptions {
   
-  @scala.inline
-  def apply(): WritingOptions = {
+  inline def apply(): WritingOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WritingOptions]
   }
   
-  @scala.inline
-  implicit class WritingOptionsMutableBuilder[Self <: WritingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WritingOptions](x: Self) {
     
-    @scala.inline
-    def setBookSST(value: Boolean): Self = StObject.set(x, "bookSST", value.asInstanceOf[js.Any])
+    inline def setBookSST(value: Boolean): Self = StObject.set(x, "bookSST", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBookSSTUndefined: Self = StObject.set(x, "bookSST", js.undefined)
+    inline def setBookSSTUndefined: Self = StObject.set(x, "bookSST", js.undefined)
     
-    @scala.inline
-    def setBookType(value: BookType): Self = StObject.set(x, "bookType", value.asInstanceOf[js.Any])
+    inline def setBookType(value: BookType): Self = StObject.set(x, "bookType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBookTypeUndefined: Self = StObject.set(x, "bookType", js.undefined)
+    inline def setBookTypeUndefined: Self = StObject.set(x, "bookType", js.undefined)
     
-    @scala.inline
-    def setCompression(value: Boolean): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+    inline def setCompression(value: Boolean): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
+    inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
     
-    @scala.inline
-    def setIgnoreEC(value: Boolean): Self = StObject.set(x, "ignoreEC", value.asInstanceOf[js.Any])
+    inline def setIgnoreEC(value: Boolean): Self = StObject.set(x, "ignoreEC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreECUndefined: Self = StObject.set(x, "ignoreEC", js.undefined)
+    inline def setIgnoreECUndefined: Self = StObject.set(x, "ignoreEC", js.undefined)
     
-    @scala.inline
-    def setProps(value: Properties): Self = StObject.set(x, "Props", value.asInstanceOf[js.Any])
+    inline def setProps(value: Properties): Self = StObject.set(x, "Props", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropsUndefined: Self = StObject.set(x, "Props", js.undefined)
+    inline def setPropsUndefined: Self = StObject.set(x, "Props", js.undefined)
     
-    @scala.inline
-    def setSheet(value: String): Self = StObject.set(x, "sheet", value.asInstanceOf[js.Any])
+    inline def setSheet(value: String): Self = StObject.set(x, "sheet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheetUndefined: Self = StObject.set(x, "sheet", js.undefined)
+    inline def setSheetUndefined: Self = StObject.set(x, "sheet", js.undefined)
     
-    @scala.inline
-    def setType(value: base64 | binary | buffer | file | array | string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: base64 | binary | buffer | file | array | string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

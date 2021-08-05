@@ -19,18 +19,15 @@ object mod {
   }
   object MimosOptions {
     
-    @scala.inline
-    def apply(`override`: StringDictionary[MimosOptionsValue]): MimosOptions = {
+    inline def apply(`override`: StringDictionary[MimosOptionsValue]): MimosOptions = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("override")(`override`.asInstanceOf[js.Any])
       __obj.asInstanceOf[MimosOptions]
     }
     
-    @scala.inline
-    implicit class MimosOptionsMutableBuilder[Self <: MimosOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MimosOptions](x: Self) {
       
-      @scala.inline
-      def setOverride(value: StringDictionary[MimosOptionsValue]): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
+      inline def setOverride(value: StringDictionary[MimosOptionsValue]): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
     }
   }
   
@@ -46,26 +43,20 @@ object mod {
   }
   object MimosOptionsValue {
     
-    @scala.inline
-    def apply(): MimosOptionsValue = {
+    inline def apply(): MimosOptionsValue = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MimosOptionsValue]
     }
     
-    @scala.inline
-    implicit class MimosOptionsValueMutableBuilder[Self <: MimosOptionsValue] (val x: Self) extends AnyVal {
+    extension [Self <: MimosOptionsValue](x: Self) {
       
-      @scala.inline
-      def setPredicate(value: MimosOptionsValue => MimosOptionsValue): Self = StObject.set(x, "predicate", js.Any.fromFunction1(value))
+      inline def setPredicate(value: MimosOptionsValue => MimosOptionsValue): Self = StObject.set(x, "predicate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPredicateUndefined: Self = StObject.set(x, "predicate", js.undefined)
+      inline def setPredicateUndefined: Self = StObject.set(x, "predicate", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

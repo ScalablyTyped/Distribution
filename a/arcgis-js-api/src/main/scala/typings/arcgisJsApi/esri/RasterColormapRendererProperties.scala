@@ -15,22 +15,17 @@ trait RasterColormapRendererProperties extends StObject {
 }
 object RasterColormapRendererProperties {
   
-  @scala.inline
-  def apply(): RasterColormapRendererProperties = {
+  inline def apply(): RasterColormapRendererProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RasterColormapRendererProperties]
   }
   
-  @scala.inline
-  implicit class RasterColormapRendererPropertiesMutableBuilder[Self <: RasterColormapRendererProperties] (val x: Self) extends AnyVal {
+  extension [Self <: RasterColormapRendererProperties](x: Self) {
     
-    @scala.inline
-    def setColormapInfos(value: js.Array[ColormapInfoProperties]): Self = StObject.set(x, "colormapInfos", value.asInstanceOf[js.Any])
+    inline def setColormapInfos(value: js.Array[ColormapInfoProperties]): Self = StObject.set(x, "colormapInfos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColormapInfosUndefined: Self = StObject.set(x, "colormapInfos", js.undefined)
+    inline def setColormapInfosUndefined: Self = StObject.set(x, "colormapInfos", js.undefined)
     
-    @scala.inline
-    def setColormapInfosVarargs(value: ColormapInfoProperties*): Self = StObject.set(x, "colormapInfos", js.Array(value :_*))
+    inline def setColormapInfosVarargs(value: ColormapInfoProperties*): Self = StObject.set(x, "colormapInfos", js.Array(value :_*))
   }
 }

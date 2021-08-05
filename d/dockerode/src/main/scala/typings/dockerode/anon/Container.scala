@@ -52,142 +52,99 @@ trait Container extends StObject {
 }
 object Container {
   
-  @scala.inline
-  def apply(): Container = {
+  inline def apply(): Container = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Container]
   }
   
-  @scala.inline
-  implicit class ContainerMutableBuilder[Self <: Container] (val x: Self) extends AnyVal {
+  extension [Self <: Container](x: Self) {
     
-    @scala.inline
-    def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    @scala.inline
-    def setContainer(value: js.Array[String]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: js.Array[String]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setContainerVarargs(value: String*): Self = StObject.set(x, "container", js.Array(value :_*))
+    inline def setContainerVarargs(value: String*): Self = StObject.set(x, "container", js.Array(value :_*))
     
-    @scala.inline
-    def setDaemon(value: js.Array[String]): Self = StObject.set(x, "daemon", value.asInstanceOf[js.Any])
+    inline def setDaemon(value: js.Array[String]): Self = StObject.set(x, "daemon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDaemonUndefined: Self = StObject.set(x, "daemon", js.undefined)
+    inline def setDaemonUndefined: Self = StObject.set(x, "daemon", js.undefined)
     
-    @scala.inline
-    def setDaemonVarargs(value: String*): Self = StObject.set(x, "daemon", js.Array(value :_*))
+    inline def setDaemonVarargs(value: String*): Self = StObject.set(x, "daemon", js.Array(value :_*))
     
-    @scala.inline
-    def setEvent(value: js.Array[String]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: js.Array[String]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
-    @scala.inline
-    def setEventVarargs(value: String*): Self = StObject.set(x, "event", js.Array(value :_*))
+    inline def setEventVarargs(value: String*): Self = StObject.set(x, "event", js.Array(value :_*))
     
-    @scala.inline
-    def setImage(value: js.Array[String]): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: js.Array[String]): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
-    @scala.inline
-    def setImageVarargs(value: String*): Self = StObject.set(x, "image", js.Array(value :_*))
+    inline def setImageVarargs(value: String*): Self = StObject.set(x, "image", js.Array(value :_*))
     
-    @scala.inline
-    def setLabel(value: js.Array[String]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: js.Array[String]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setLabelVarargs(value: String*): Self = StObject.set(x, "label", js.Array(value :_*))
+    inline def setLabelVarargs(value: String*): Self = StObject.set(x, "label", js.Array(value :_*))
     
-    @scala.inline
-    def setNetwork(value: js.Array[String]): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+    inline def setNetwork(value: js.Array[String]): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
+    inline def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
     
-    @scala.inline
-    def setNetworkVarargs(value: String*): Self = StObject.set(x, "network", js.Array(value :_*))
+    inline def setNetworkVarargs(value: String*): Self = StObject.set(x, "network", js.Array(value :_*))
     
-    @scala.inline
-    def setNode(value: js.Array[String]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: js.Array[String]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+    inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
     
-    @scala.inline
-    def setNodeVarargs(value: String*): Self = StObject.set(x, "node", js.Array(value :_*))
+    inline def setNodeVarargs(value: String*): Self = StObject.set(x, "node", js.Array(value :_*))
     
-    @scala.inline
-    def setPlugin(value: js.Array[String]): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+    inline def setPlugin(value: js.Array[String]): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
+    inline def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
     
-    @scala.inline
-    def setPluginVarargs(value: String*): Self = StObject.set(x, "plugin", js.Array(value :_*))
+    inline def setPluginVarargs(value: String*): Self = StObject.set(x, "plugin", js.Array(value :_*))
     
-    @scala.inline
-    def setScope(value: js.Array[local | swarm]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: js.Array[local | swarm]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    @scala.inline
-    def setScopeVarargs(value: (local | swarm)*): Self = StObject.set(x, "scope", js.Array(value :_*))
+    inline def setScopeVarargs(value: (local | swarm)*): Self = StObject.set(x, "scope", js.Array(value :_*))
     
-    @scala.inline
-    def setSecret(value: js.Array[String]): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+    inline def setSecret(value: js.Array[String]): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
+    inline def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
     
-    @scala.inline
-    def setSecretVarargs(value: String*): Self = StObject.set(x, "secret", js.Array(value :_*))
+    inline def setSecretVarargs(value: String*): Self = StObject.set(x, "secret", js.Array(value :_*))
     
-    @scala.inline
-    def setService(value: js.Array[String]): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    inline def setService(value: js.Array[String]): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+    inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
     
-    @scala.inline
-    def setServiceVarargs(value: String*): Self = StObject.set(x, "service", js.Array(value :_*))
+    inline def setServiceVarargs(value: String*): Self = StObject.set(x, "service", js.Array(value :_*))
     
-    @scala.inline
-    def setType(
+    inline def setType(
       value: js.Array[
           container | image | volume | network | daemon | plugin | service | node | secret | config
         ]
     ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setTypeVarargs(
+    inline def setTypeVarargs(
       value: (container | image | volume | network | daemon | plugin | service | node | secret | config)*
     ): Self = StObject.set(x, "type", js.Array(value :_*))
     
-    @scala.inline
-    def setVolume(value: js.Array[String]): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+    inline def setVolume(value: js.Array[String]): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
+    inline def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
     
-    @scala.inline
-    def setVolumeVarargs(value: String*): Self = StObject.set(x, "volume", js.Array(value :_*))
+    inline def setVolumeVarargs(value: String*): Self = StObject.set(x, "volume", js.Array(value :_*))
   }
 }

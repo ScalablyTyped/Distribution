@@ -14,25 +14,19 @@ trait GoogleDevtoolsRemoteworkersV1test2Blob extends StObject {
 }
 object GoogleDevtoolsRemoteworkersV1test2Blob {
   
-  @scala.inline
-  def apply(): GoogleDevtoolsRemoteworkersV1test2Blob = {
+  inline def apply(): GoogleDevtoolsRemoteworkersV1test2Blob = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleDevtoolsRemoteworkersV1test2Blob]
   }
   
-  @scala.inline
-  implicit class GoogleDevtoolsRemoteworkersV1test2BlobMutableBuilder[Self <: GoogleDevtoolsRemoteworkersV1test2Blob] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleDevtoolsRemoteworkersV1test2Blob](x: Self) {
     
-    @scala.inline
-    def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+    inline def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
+    inline def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
     
-    @scala.inline
-    def setDigest(value: GoogleDevtoolsRemoteworkersV1test2Digest): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
+    inline def setDigest(value: GoogleDevtoolsRemoteworkersV1test2Digest): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
+    inline def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
   }
 }

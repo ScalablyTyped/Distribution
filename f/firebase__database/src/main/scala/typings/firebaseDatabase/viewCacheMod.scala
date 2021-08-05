@@ -18,7 +18,7 @@ object viewCacheMod {
       */
     def this(eventCache_ : CacheNode, serverCache_ : CacheNode) = this()
     
-    val eventCache_ : js.Any = js.native
+    /* private */ val eventCache_ : js.Any = js.native
     
     /**
       * @return {?Node}
@@ -40,7 +40,7 @@ object viewCacheMod {
       */
     def getServerCache(): CacheNode = js.native
     
-    val serverCache_ : js.Any = js.native
+    /* private */ val serverCache_ : js.Any = js.native
     
     /**
       * @param {!Node} eventSnap
@@ -72,7 +72,6 @@ object viewCacheMod {
     @JSImport("@firebase/database/dist/src/core/view/ViewCache", "ViewCache.Empty")
     @js.native
     def Empty: ViewCache = js.native
-    @scala.inline
-    def Empty_=(x: ViewCache): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Empty")(x.asInstanceOf[js.Any])
+    inline def Empty_=(x: ViewCache): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Empty")(x.asInstanceOf[js.Any])
   }
 }

@@ -24,7 +24,7 @@ trait WebOptions extends StObject {
   
   var OrganizeInFolder: MsoTriState
   
-  @JSName("PowerPoint.WebOptions_typekey")
+  /* private */ @JSName("PowerPoint.WebOptions_typekey")
   var PowerPointDotWebOptions_typekey: WebOptions
   
   var RelyOnVML: MsoTriState
@@ -43,8 +43,7 @@ trait WebOptions extends StObject {
 }
 object WebOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AllowPNG: MsoTriState,
     Encoding: MsoEncoding,
     FolderSuffix: String,
@@ -66,52 +65,36 @@ object WebOptions {
     __obj.asInstanceOf[WebOptions]
   }
   
-  @scala.inline
-  implicit class WebOptionsMutableBuilder[Self <: WebOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WebOptions](x: Self) {
     
-    @scala.inline
-    def setAllowPNG(value: MsoTriState): Self = StObject.set(x, "AllowPNG", value.asInstanceOf[js.Any])
+    inline def setAllowPNG(value: MsoTriState): Self = StObject.set(x, "AllowPNG", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncoding(value: MsoEncoding): Self = StObject.set(x, "Encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: MsoEncoding): Self = StObject.set(x, "Encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFolderSuffix(value: String): Self = StObject.set(x, "FolderSuffix", value.asInstanceOf[js.Any])
+    inline def setFolderSuffix(value: String): Self = StObject.set(x, "FolderSuffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameColors(value: PpFrameColors): Self = StObject.set(x, "FrameColors", value.asInstanceOf[js.Any])
+    inline def setFrameColors(value: PpFrameColors): Self = StObject.set(x, "FrameColors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHTMLVersion(value: PpHTMLVersion): Self = StObject.set(x, "HTMLVersion", value.asInstanceOf[js.Any])
+    inline def setHTMLVersion(value: PpHTMLVersion): Self = StObject.set(x, "HTMLVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeNavigation(value: MsoTriState): Self = StObject.set(x, "IncludeNavigation", value.asInstanceOf[js.Any])
+    inline def setIncludeNavigation(value: MsoTriState): Self = StObject.set(x, "IncludeNavigation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizeInFolder(value: MsoTriState): Self = StObject.set(x, "OrganizeInFolder", value.asInstanceOf[js.Any])
+    inline def setOrganizeInFolder(value: MsoTriState): Self = StObject.set(x, "OrganizeInFolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotWebOptions_typekey(value: WebOptions): Self = StObject.set(x, "PowerPoint.WebOptions_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotWebOptions_typekey(value: WebOptions): Self = StObject.set(x, "PowerPoint.WebOptions_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelyOnVML(value: MsoTriState): Self = StObject.set(x, "RelyOnVML", value.asInstanceOf[js.Any])
+    inline def setRelyOnVML(value: MsoTriState): Self = StObject.set(x, "RelyOnVML", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResizeGraphics(value: MsoTriState): Self = StObject.set(x, "ResizeGraphics", value.asInstanceOf[js.Any])
+    inline def setResizeGraphics(value: MsoTriState): Self = StObject.set(x, "ResizeGraphics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenSize(value: MsoScreenSize): Self = StObject.set(x, "ScreenSize", value.asInstanceOf[js.Any])
+    inline def setScreenSize(value: MsoScreenSize): Self = StObject.set(x, "ScreenSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowSlideAnimation(value: MsoTriState): Self = StObject.set(x, "ShowSlideAnimation", value.asInstanceOf[js.Any])
+    inline def setShowSlideAnimation(value: MsoTriState): Self = StObject.set(x, "ShowSlideAnimation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetBrowser(value: MsoTargetBrowser): Self = StObject.set(x, "TargetBrowser", value.asInstanceOf[js.Any])
+    inline def setTargetBrowser(value: MsoTargetBrowser): Self = StObject.set(x, "TargetBrowser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseDefaultFolderSuffix(value: () => Unit): Self = StObject.set(x, "UseDefaultFolderSuffix", js.Any.fromFunction0(value))
+    inline def setUseDefaultFolderSuffix(value: () => Unit): Self = StObject.set(x, "UseDefaultFolderSuffix", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUseLongFileNames(value: MsoTriState): Self = StObject.set(x, "UseLongFileNames", value.asInstanceOf[js.Any])
+    inline def setUseLongFileNames(value: MsoTriState): Self = StObject.set(x, "UseLongFileNames", value.asInstanceOf[js.Any])
   }
 }

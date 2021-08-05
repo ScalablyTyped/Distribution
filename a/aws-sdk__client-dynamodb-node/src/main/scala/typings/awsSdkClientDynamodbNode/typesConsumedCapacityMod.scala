@@ -39,44 +39,32 @@ object typesConsumedCapacityMod {
   }
   object ConsumedCapacity {
     
-    @scala.inline
-    def apply(): ConsumedCapacity = {
+    inline def apply(): ConsumedCapacity = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConsumedCapacity]
     }
     
-    @scala.inline
-    implicit class ConsumedCapacityMutableBuilder[Self <: ConsumedCapacity] (val x: Self) extends AnyVal {
+    extension [Self <: ConsumedCapacity](x: Self) {
       
-      @scala.inline
-      def setCapacityUnits(value: Double): Self = StObject.set(x, "CapacityUnits", value.asInstanceOf[js.Any])
+      inline def setCapacityUnits(value: Double): Self = StObject.set(x, "CapacityUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCapacityUnitsUndefined: Self = StObject.set(x, "CapacityUnits", js.undefined)
+      inline def setCapacityUnitsUndefined: Self = StObject.set(x, "CapacityUnits", js.undefined)
       
-      @scala.inline
-      def setGlobalSecondaryIndexes(value: StringDictionary[Capacity] | (Iterable[js.Tuple2[String, Capacity]])): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
+      inline def setGlobalSecondaryIndexes(value: StringDictionary[Capacity] | (Iterable[js.Tuple2[String, Capacity]])): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexes", js.undefined)
+      inline def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexes", js.undefined)
       
-      @scala.inline
-      def setLocalSecondaryIndexes(value: StringDictionary[Capacity] | (Iterable[js.Tuple2[String, Capacity]])): Self = StObject.set(x, "LocalSecondaryIndexes", value.asInstanceOf[js.Any])
+      inline def setLocalSecondaryIndexes(value: StringDictionary[Capacity] | (Iterable[js.Tuple2[String, Capacity]])): Self = StObject.set(x, "LocalSecondaryIndexes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalSecondaryIndexesUndefined: Self = StObject.set(x, "LocalSecondaryIndexes", js.undefined)
+      inline def setLocalSecondaryIndexesUndefined: Self = StObject.set(x, "LocalSecondaryIndexes", js.undefined)
       
-      @scala.inline
-      def setTable(value: Capacity): Self = StObject.set(x, "Table", value.asInstanceOf[js.Any])
+      inline def setTable(value: Capacity): Self = StObject.set(x, "Table", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableName(value: String): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: String): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
+      inline def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
       
-      @scala.inline
-      def setTableUndefined: Self = StObject.set(x, "Table", js.undefined)
+      inline def setTableUndefined: Self = StObject.set(x, "Table", js.undefined)
     }
   }
   
@@ -104,32 +92,24 @@ object typesConsumedCapacityMod {
   }
   object UnmarshalledConsumedCapacity {
     
-    @scala.inline
-    def apply(): UnmarshalledConsumedCapacity = {
+    inline def apply(): UnmarshalledConsumedCapacity = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledConsumedCapacity]
     }
     
-    @scala.inline
-    implicit class UnmarshalledConsumedCapacityMutableBuilder[Self <: UnmarshalledConsumedCapacity] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledConsumedCapacity](x: Self) {
       
-      @scala.inline
-      def setGlobalSecondaryIndexes(value: StringDictionary[UnmarshalledCapacity]): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
+      inline def setGlobalSecondaryIndexes(value: StringDictionary[UnmarshalledCapacity]): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexes", js.undefined)
+      inline def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexes", js.undefined)
       
-      @scala.inline
-      def setLocalSecondaryIndexes(value: StringDictionary[UnmarshalledCapacity]): Self = StObject.set(x, "LocalSecondaryIndexes", value.asInstanceOf[js.Any])
+      inline def setLocalSecondaryIndexes(value: StringDictionary[UnmarshalledCapacity]): Self = StObject.set(x, "LocalSecondaryIndexes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalSecondaryIndexesUndefined: Self = StObject.set(x, "LocalSecondaryIndexes", js.undefined)
+      inline def setLocalSecondaryIndexesUndefined: Self = StObject.set(x, "LocalSecondaryIndexes", js.undefined)
       
-      @scala.inline
-      def setTable(value: UnmarshalledCapacity): Self = StObject.set(x, "Table", value.asInstanceOf[js.Any])
+      inline def setTable(value: UnmarshalledCapacity): Self = StObject.set(x, "Table", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableUndefined: Self = StObject.set(x, "Table", js.undefined)
+      inline def setTableUndefined: Self = StObject.set(x, "Table", js.undefined)
     }
   }
 }

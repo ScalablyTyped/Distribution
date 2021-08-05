@@ -29,22 +29,17 @@ trait RecurrenceTimeZone extends StObject {
 }
 object RecurrenceTimeZone {
   
-  @scala.inline
-  def apply(name: typings.officeJs.Office.MailboxEnums.RecurrenceTimeZone | String): RecurrenceTimeZone = {
+  inline def apply(name: typings.officeJs.Office.MailboxEnums.RecurrenceTimeZone | String): RecurrenceTimeZone = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecurrenceTimeZone]
   }
   
-  @scala.inline
-  implicit class RecurrenceTimeZoneMutableBuilder[Self <: RecurrenceTimeZone] (val x: Self) extends AnyVal {
+  extension [Self <: RecurrenceTimeZone](x: Self) {
     
-    @scala.inline
-    def setName(value: typings.officeJs.Office.MailboxEnums.RecurrenceTimeZone | String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: typings.officeJs.Office.MailboxEnums.RecurrenceTimeZone | String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
   }
 }

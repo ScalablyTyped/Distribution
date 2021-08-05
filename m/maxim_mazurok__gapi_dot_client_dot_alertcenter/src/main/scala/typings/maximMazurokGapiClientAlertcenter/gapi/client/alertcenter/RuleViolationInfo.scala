@@ -39,79 +39,55 @@ trait RuleViolationInfo extends StObject {
 }
 object RuleViolationInfo {
   
-  @scala.inline
-  def apply(): RuleViolationInfo = {
+  inline def apply(): RuleViolationInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RuleViolationInfo]
   }
   
-  @scala.inline
-  implicit class RuleViolationInfoMutableBuilder[Self <: RuleViolationInfo] (val x: Self) extends AnyVal {
+  extension [Self <: RuleViolationInfo](x: Self) {
     
-    @scala.inline
-    def setDataSource(value: String): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: String): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
-    @scala.inline
-    def setMatchInfo(value: js.Array[MatchInfo]): Self = StObject.set(x, "matchInfo", value.asInstanceOf[js.Any])
+    inline def setMatchInfo(value: js.Array[MatchInfo]): Self = StObject.set(x, "matchInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchInfoUndefined: Self = StObject.set(x, "matchInfo", js.undefined)
+    inline def setMatchInfoUndefined: Self = StObject.set(x, "matchInfo", js.undefined)
     
-    @scala.inline
-    def setMatchInfoVarargs(value: MatchInfo*): Self = StObject.set(x, "matchInfo", js.Array(value :_*))
+    inline def setMatchInfoVarargs(value: MatchInfo*): Self = StObject.set(x, "matchInfo", js.Array(value :_*))
     
-    @scala.inline
-    def setRecipients(value: js.Array[String]): Self = StObject.set(x, "recipients", value.asInstanceOf[js.Any])
+    inline def setRecipients(value: js.Array[String]): Self = StObject.set(x, "recipients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipientsUndefined: Self = StObject.set(x, "recipients", js.undefined)
+    inline def setRecipientsUndefined: Self = StObject.set(x, "recipients", js.undefined)
     
-    @scala.inline
-    def setRecipientsVarargs(value: String*): Self = StObject.set(x, "recipients", js.Array(value :_*))
+    inline def setRecipientsVarargs(value: String*): Self = StObject.set(x, "recipients", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceInfo(value: ResourceInfo): Self = StObject.set(x, "resourceInfo", value.asInstanceOf[js.Any])
+    inline def setResourceInfo(value: ResourceInfo): Self = StObject.set(x, "resourceInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceInfoUndefined: Self = StObject.set(x, "resourceInfo", js.undefined)
+    inline def setResourceInfoUndefined: Self = StObject.set(x, "resourceInfo", js.undefined)
     
-    @scala.inline
-    def setRuleInfo(value: RuleInfo): Self = StObject.set(x, "ruleInfo", value.asInstanceOf[js.Any])
+    inline def setRuleInfo(value: RuleInfo): Self = StObject.set(x, "ruleInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleInfoUndefined: Self = StObject.set(x, "ruleInfo", js.undefined)
+    inline def setRuleInfoUndefined: Self = StObject.set(x, "ruleInfo", js.undefined)
     
-    @scala.inline
-    def setSuppressedActionTypes(value: js.Array[String]): Self = StObject.set(x, "suppressedActionTypes", value.asInstanceOf[js.Any])
+    inline def setSuppressedActionTypes(value: js.Array[String]): Self = StObject.set(x, "suppressedActionTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuppressedActionTypesUndefined: Self = StObject.set(x, "suppressedActionTypes", js.undefined)
+    inline def setSuppressedActionTypesUndefined: Self = StObject.set(x, "suppressedActionTypes", js.undefined)
     
-    @scala.inline
-    def setSuppressedActionTypesVarargs(value: String*): Self = StObject.set(x, "suppressedActionTypes", js.Array(value :_*))
+    inline def setSuppressedActionTypesVarargs(value: String*): Self = StObject.set(x, "suppressedActionTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setTrigger(value: String): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+    inline def setTrigger(value: String): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
+    inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
     
-    @scala.inline
-    def setTriggeredActionTypes(value: js.Array[String]): Self = StObject.set(x, "triggeredActionTypes", value.asInstanceOf[js.Any])
+    inline def setTriggeredActionTypes(value: js.Array[String]): Self = StObject.set(x, "triggeredActionTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggeredActionTypesUndefined: Self = StObject.set(x, "triggeredActionTypes", js.undefined)
+    inline def setTriggeredActionTypesUndefined: Self = StObject.set(x, "triggeredActionTypes", js.undefined)
     
-    @scala.inline
-    def setTriggeredActionTypesVarargs(value: String*): Self = StObject.set(x, "triggeredActionTypes", js.Array(value :_*))
+    inline def setTriggeredActionTypesVarargs(value: String*): Self = StObject.set(x, "triggeredActionTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setTriggeringUserEmail(value: String): Self = StObject.set(x, "triggeringUserEmail", value.asInstanceOf[js.Any])
+    inline def setTriggeringUserEmail(value: String): Self = StObject.set(x, "triggeringUserEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggeringUserEmailUndefined: Self = StObject.set(x, "triggeringUserEmail", js.undefined)
+    inline def setTriggeringUserEmailUndefined: Self = StObject.set(x, "triggeringUserEmail", js.undefined)
   }
 }

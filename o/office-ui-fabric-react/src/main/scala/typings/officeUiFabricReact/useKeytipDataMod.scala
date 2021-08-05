@@ -11,8 +11,7 @@ object useKeytipDataMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useKeytipData(options: KeytipDataOptions): IKeytipData = ^.asInstanceOf[js.Dynamic].applyDynamic("useKeytipData")(options.asInstanceOf[js.Any]).asInstanceOf[IKeytipData]
+  inline def useKeytipData(options: KeytipDataOptions): IKeytipData = ^.asInstanceOf[js.Dynamic].applyDynamic("useKeytipData")(options.asInstanceOf[js.Any]).asInstanceOf[IKeytipData]
   
   trait IKeytipData extends StObject {
     
@@ -22,26 +21,20 @@ object useKeytipDataMod {
   }
   object IKeytipData {
     
-    @scala.inline
-    def apply(): IKeytipData = {
+    inline def apply(): IKeytipData = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IKeytipData]
     }
     
-    @scala.inline
-    implicit class IKeytipDataMutableBuilder[Self <: IKeytipData] (val x: Self) extends AnyVal {
+    extension [Self <: IKeytipData](x: Self) {
       
-      @scala.inline
-      def setAriaDescribedBy(value: String): Self = StObject.set(x, "ariaDescribedBy", value.asInstanceOf[js.Any])
+      inline def setAriaDescribedBy(value: String): Self = StObject.set(x, "ariaDescribedBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaDescribedByUndefined: Self = StObject.set(x, "ariaDescribedBy", js.undefined)
+      inline def setAriaDescribedByUndefined: Self = StObject.set(x, "ariaDescribedBy", js.undefined)
       
-      @scala.inline
-      def setKeytipId(value: String): Self = StObject.set(x, "keytipId", value.asInstanceOf[js.Any])
+      inline def setKeytipId(value: String): Self = StObject.set(x, "keytipId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeytipIdUndefined: Self = StObject.set(x, "keytipId", js.undefined)
+      inline def setKeytipIdUndefined: Self = StObject.set(x, "keytipId", js.undefined)
     }
   }
 }

@@ -26,8 +26,7 @@ trait ColorSizeSliderViewModelStopInfo
 }
 object ColorSizeSliderViewModelStopInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     color: Color_,
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -38,13 +37,10 @@ object ColorSizeSliderViewModelStopInfo {
     __obj.asInstanceOf[ColorSizeSliderViewModelStopInfo]
   }
   
-  @scala.inline
-  implicit class ColorSizeSliderViewModelStopInfoMutableBuilder[Self <: ColorSizeSliderViewModelStopInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ColorSizeSliderViewModelStopInfo](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
   }
 }

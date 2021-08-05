@@ -10,11 +10,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def setup(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")().asInstanceOf[Unit]
+  inline def setup(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")().asInstanceOf[Unit]
   
-  @scala.inline
-  def speak(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("speak")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def speak(message: String, ariaLive: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("speak")(message.asInstanceOf[js.Any], ariaLive.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def speak(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("speak")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def speak(message: String, ariaLive: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("speak")(message.asInstanceOf[js.Any], ariaLive.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

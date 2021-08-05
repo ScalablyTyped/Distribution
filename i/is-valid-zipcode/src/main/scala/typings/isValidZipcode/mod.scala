@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(zipcode: String): Boolean = ^.asInstanceOf[js.Dynamic].apply(zipcode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def apply(zipcode: String, country: String): Boolean = (^.asInstanceOf[js.Dynamic].apply(zipcode.asInstanceOf[js.Any], country.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(zipcode: String): Boolean = ^.asInstanceOf[js.Dynamic].apply(zipcode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def apply(zipcode: String, country: String): Boolean = (^.asInstanceOf[js.Dynamic].apply(zipcode.asInstanceOf[js.Any], country.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("is-valid-zipcode", JSImport.Namespace)
   @js.native

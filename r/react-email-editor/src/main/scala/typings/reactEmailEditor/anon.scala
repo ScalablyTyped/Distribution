@@ -13,17 +13,14 @@ object anon {
   }
   object Dock {
     
-    @scala.inline
-    def apply(dock: DockPosition): Dock = {
+    inline def apply(dock: DockPosition): Dock = {
       val __obj = js.Dynamic.literal(dock = dock.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dock]
     }
     
-    @scala.inline
-    implicit class DockMutableBuilder[Self <: Dock] (val x: Self) extends AnyVal {
+    extension [Self <: Dock](x: Self) {
       
-      @scala.inline
-      def setDock(value: DockPosition): Self = StObject.set(x, "dock", value.asInstanceOf[js.Any])
+      inline def setDock(value: DockPosition): Self = StObject.set(x, "dock", value.asInstanceOf[js.Any])
     }
   }
   
@@ -35,26 +32,20 @@ object anon {
   }
   object Rows {
     
-    @scala.inline
-    def apply(rows: js.Array[js.Object]): Rows = {
+    inline def apply(rows: js.Array[js.Object]): Rows = {
       val __obj = js.Dynamic.literal(rows = rows.asInstanceOf[js.Any])
       __obj.asInstanceOf[Rows]
     }
     
-    @scala.inline
-    implicit class RowsMutableBuilder[Self <: Rows] (val x: Self) extends AnyVal {
+    extension [Self <: Rows](x: Self) {
       
-      @scala.inline
-      def setRows(value: js.Array[js.Object]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      inline def setRows(value: js.Array[js.Object]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowsVarargs(value: js.Object*): Self = StObject.set(x, "rows", js.Array(value :_*))
+      inline def setRowsVarargs(value: js.Object*): Self = StObject.set(x, "rows", js.Array(value :_*))
       
-      @scala.inline
-      def setValues(value: js.Object): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Object): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+      inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     }
   }
   
@@ -64,20 +55,16 @@ object anon {
   }
   object Tools {
     
-    @scala.inline
-    def apply(): Tools = {
+    inline def apply(): Tools = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Tools]
     }
     
-    @scala.inline
-    implicit class ToolsMutableBuilder[Self <: Tools] (val x: Self) extends AnyVal {
+    extension [Self <: Tools](x: Self) {
       
-      @scala.inline
-      def setTools(value: Dock): Self = StObject.set(x, "tools", value.asInstanceOf[js.Any])
+      inline def setTools(value: Dock): Self = StObject.set(x, "tools", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToolsUndefined: Self = StObject.set(x, "tools", js.undefined)
+      inline def setToolsUndefined: Self = StObject.set(x, "tools", js.undefined)
     }
   }
 }

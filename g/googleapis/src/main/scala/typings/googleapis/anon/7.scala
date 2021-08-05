@@ -10,19 +10,15 @@ trait `7` extends StObject {
 }
 object `7` {
   
-  @scala.inline
-  def apply(): `7` = {
+  inline def apply(): `7` = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`7`]
   }
   
-  @scala.inline
-  implicit class `7MutableBuilder`[Self <: `7`] (val x: Self) extends AnyVal {
+  extension [Self <: `7`](x: Self) {
     
-    @scala.inline
-    def setTotalItems(value: Double): Self = StObject.set(x, "totalItems", value.asInstanceOf[js.Any])
+    inline def setTotalItems(value: Double): Self = StObject.set(x, "totalItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalItemsUndefined: Self = StObject.set(x, "totalItems", js.undefined)
+    inline def setTotalItemsUndefined: Self = StObject.set(x, "totalItems", js.undefined)
   }
 }

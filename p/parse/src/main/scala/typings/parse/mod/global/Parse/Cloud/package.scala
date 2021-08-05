@@ -5,10 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def afterDelete(arg1: js.Any): scala.Unit = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("afterDelete")(arg1.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-@scala.inline
-def afterDelete(
+inline def afterDelete(arg1: js.Any): scala.Unit = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("afterDelete")(arg1.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def afterDelete(
   arg1: js.Any,
   func: js.Function1[
   /* request */ typings.parse.mod.global.Parse.Cloud.AfterDeleteRequest, 
@@ -16,48 +14,38 @@ def afterDelete(
 ]
 ): scala.Unit = (typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("afterDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 
-@scala.inline
-def afterDeleteFile(): scala.Unit = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("afterDeleteFile")().asInstanceOf[scala.Unit]
-@scala.inline
-def afterDeleteFile(
+inline def afterDeleteFile(): scala.Unit = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("afterDeleteFile")().asInstanceOf[scala.Unit]
+inline def afterDeleteFile(
   func: js.Function1[
   /* request */ typings.parse.mod.global.Parse.Cloud.FileTriggerRequest, 
   js.Thenable[scala.Unit] | scala.Unit
 ]
 ): scala.Unit = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("afterDeleteFile")(func.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
 
-@scala.inline
-def afterFind(arg1: js.Any): scala.Unit = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("afterFind")(arg1.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-@scala.inline
-def afterFind(
+inline def afterFind(arg1: js.Any): scala.Unit = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("afterFind")(arg1.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def afterFind(
   arg1: js.Any,
   func: js.Function1[/* request */ typings.parse.mod.global.Parse.Cloud.AfterFindRequest, js.Any]
 ): scala.Unit = (typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("afterFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 
-@scala.inline
-def afterLogin(): scala.Unit = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("afterLogin")().asInstanceOf[scala.Unit]
-@scala.inline
-def afterLogin(
+inline def afterLogin(): scala.Unit = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("afterLogin")().asInstanceOf[scala.Unit]
+inline def afterLogin(
   func: js.Function1[
   /* request */ typings.parse.mod.global.Parse.Cloud.TriggerRequest, 
   js.Thenable[scala.Unit] | scala.Unit
 ]
 ): scala.Unit = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("afterLogin")(func.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
 
-@scala.inline
-def afterLogout(): scala.Unit = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("afterLogout")().asInstanceOf[scala.Unit]
-@scala.inline
-def afterLogout(
+inline def afterLogout(): scala.Unit = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("afterLogout")().asInstanceOf[scala.Unit]
+inline def afterLogout(
   func: js.Function1[
   /* request */ typings.parse.mod.global.Parse.Cloud.TriggerRequest, 
   js.Thenable[scala.Unit] | scala.Unit
 ]
 ): scala.Unit = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("afterLogout")(func.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
 
-@scala.inline
-def afterSave(arg1: js.Any): scala.Unit = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("afterSave")(arg1.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-@scala.inline
-def afterSave(
+inline def afterSave(arg1: js.Any): scala.Unit = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("afterSave")(arg1.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def afterSave(
   arg1: js.Any,
   func: js.Function1[
   /* request */ typings.parse.mod.global.Parse.Cloud.AfterSaveRequest, 
@@ -65,20 +53,16 @@ def afterSave(
 ]
 ): scala.Unit = (typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("afterSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 
-@scala.inline
-def afterSaveFile(): scala.Unit = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("afterSaveFile")().asInstanceOf[scala.Unit]
-@scala.inline
-def afterSaveFile(
+inline def afterSaveFile(): scala.Unit = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("afterSaveFile")().asInstanceOf[scala.Unit]
+inline def afterSaveFile(
   func: js.Function1[
   /* request */ typings.parse.mod.global.Parse.Cloud.FileTriggerRequest, 
   js.Thenable[scala.Unit] | scala.Unit
 ]
 ): scala.Unit = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("afterSaveFile")(func.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
 
-@scala.inline
-def beforeDelete(arg1: js.Any): scala.Unit = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("beforeDelete")(arg1.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-@scala.inline
-def beforeDelete(
+inline def beforeDelete(arg1: js.Any): scala.Unit = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("beforeDelete")(arg1.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def beforeDelete(
   arg1: js.Any,
   func: js.Function1[
   /* request */ typings.parse.mod.global.Parse.Cloud.BeforeDeleteRequest, 
@@ -86,20 +70,16 @@ def beforeDelete(
 ]
 ): scala.Unit = (typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("beforeDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 
-@scala.inline
-def beforeDeleteFile(): scala.Unit = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("beforeDeleteFile")().asInstanceOf[scala.Unit]
-@scala.inline
-def beforeDeleteFile(
+inline def beforeDeleteFile(): scala.Unit = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("beforeDeleteFile")().asInstanceOf[scala.Unit]
+inline def beforeDeleteFile(
   func: js.Function1[
   /* request */ typings.parse.mod.global.Parse.Cloud.FileTriggerRequest, 
   js.Thenable[scala.Unit] | scala.Unit
 ]
 ): scala.Unit = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("beforeDeleteFile")(func.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
 
-@scala.inline
-def beforeFind(arg1: js.Any): scala.Unit = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("beforeFind")(arg1.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-@scala.inline
-def beforeFind(
+inline def beforeFind(arg1: js.Any): scala.Unit = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("beforeFind")(arg1.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def beforeFind(
   arg1: js.Any,
   func: js.Function1[
   /* request */ typings.parse.mod.global.Parse.Cloud.BeforeFindRequest, 
@@ -109,20 +89,16 @@ def beforeFind(
 ]
 ): scala.Unit = (typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("beforeFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 
-@scala.inline
-def beforeLogin(): scala.Unit = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("beforeLogin")().asInstanceOf[scala.Unit]
-@scala.inline
-def beforeLogin(
+inline def beforeLogin(): scala.Unit = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("beforeLogin")().asInstanceOf[scala.Unit]
+inline def beforeLogin(
   func: js.Function1[
   /* request */ typings.parse.mod.global.Parse.Cloud.TriggerRequest, 
   js.Thenable[scala.Unit] | scala.Unit
 ]
 ): scala.Unit = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("beforeLogin")(func.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
 
-@scala.inline
-def beforeSave(arg1: js.Any): scala.Unit = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("beforeSave")(arg1.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-@scala.inline
-def beforeSave(
+inline def beforeSave(arg1: js.Any): scala.Unit = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("beforeSave")(arg1.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def beforeSave(
   arg1: js.Any,
   func: js.Function1[
   /* request */ typings.parse.mod.global.Parse.Cloud.BeforeSaveRequest, 
@@ -130,18 +106,15 @@ def beforeSave(
 ]
 ): scala.Unit = (typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("beforeSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 
-@scala.inline
-def beforeSaveFile(): scala.Unit = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("beforeSaveFile")().asInstanceOf[scala.Unit]
-@scala.inline
-def beforeSaveFile(
+inline def beforeSaveFile(): scala.Unit = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("beforeSaveFile")().asInstanceOf[scala.Unit]
+inline def beforeSaveFile(
   func: js.Function1[
   /* request */ typings.parse.mod.global.Parse.Cloud.FileTriggerRequest, 
   js.Thenable[typings.parse.mod.global.Parse.File] | scala.Unit
 ]
 ): scala.Unit = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("beforeSaveFile")(func.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
 
-@scala.inline
-def define(
+inline def define(
   name: java.lang.String,
   func: js.Function1[
   /* request */ typings.parse.mod.global.Parse.Cloud.FunctionRequest[typings.parse.mod.global.Parse.Cloud.Params], 
@@ -149,8 +122,7 @@ def define(
 ]
 ): scala.Unit = (typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 
-@scala.inline
-def define_0[T /* <: js.Function1[
+inline def define_0[T /* <: js.Function1[
 /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ P in keyof std.Parameters<T>[0] ]: std.Parameters<T>[0][P]}
   */ /* param */ typings.parse.parseStrings.define & org.scalablytyped.runtime.TopLevel[typings.std.Parameters[T]], 
@@ -164,8 +136,7 @@ js.Any] */](
 ]
 ): scala.Unit = (typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 
-@scala.inline
-def define_T_Function0Any[T /* <: js.Function0[js.Any] */](
+inline def define_T_Function0Any[T /* <: js.Function0[js.Any] */](
   name: java.lang.String,
   func: js.Function1[
   /* request */ typings.parse.mod.global.Parse.Cloud.FunctionRequest[js.Object], 
@@ -178,23 +149,18 @@ def define_T_Function0Any[T /* <: js.Function0[js.Any] */](
   * @param jobStatusId The Id of Job Status.
   * @returns Status of Job.
   */
-@scala.inline
-def getJobStatus(jobStatusId: java.lang.String): js.Promise[typings.parse.mod.global.Parse.Object[typings.parse.mod.global.Parse.Attributes]] = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("getJobStatus")(jobStatusId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.parse.mod.global.Parse.Object[typings.parse.mod.global.Parse.Attributes]]]
+inline def getJobStatus(jobStatusId: java.lang.String): js.Promise[typings.parse.mod.global.Parse.Object[typings.parse.mod.global.Parse.Attributes]] = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("getJobStatus")(jobStatusId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.parse.mod.global.Parse.Object[typings.parse.mod.global.Parse.Attributes]]]
 
 /**
   * Gets data for the current set of cloud jobs.
   * @returns A promise that will be resolved with the result of the function.
   */
-@scala.inline
-def getJobsData(): js.Promise[typings.parse.mod.global.Parse.Object[typings.parse.mod.global.Parse.Attributes]] = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("getJobsData")().asInstanceOf[js.Promise[typings.parse.mod.global.Parse.Object[typings.parse.mod.global.Parse.Attributes]]]
+inline def getJobsData(): js.Promise[typings.parse.mod.global.Parse.Object[typings.parse.mod.global.Parse.Attributes]] = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("getJobsData")().asInstanceOf[js.Promise[typings.parse.mod.global.Parse.Object[typings.parse.mod.global.Parse.Attributes]]]
 
-@scala.inline
-def httpRequest(options: typings.parse.mod.global.Parse.Cloud.HTTPOptions): js.Promise[typings.parse.mod.global.Parse.Cloud.HttpResponse] = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("httpRequest")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.parse.mod.global.Parse.Cloud.HttpResponse]]
+inline def httpRequest(options: typings.parse.mod.global.Parse.Cloud.HTTPOptions): js.Promise[typings.parse.mod.global.Parse.Cloud.HttpResponse] = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("httpRequest")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.parse.mod.global.Parse.Cloud.HttpResponse]]
 
-@scala.inline
-def job(name: java.lang.String): typings.parse.mod.global.Parse.Cloud.HttpResponse = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("job")(name.asInstanceOf[js.Any]).asInstanceOf[typings.parse.mod.global.Parse.Cloud.HttpResponse]
-@scala.inline
-def job(
+inline def job(name: java.lang.String): typings.parse.mod.global.Parse.Cloud.HttpResponse = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("job")(name.asInstanceOf[js.Any]).asInstanceOf[typings.parse.mod.global.Parse.Cloud.HttpResponse]
+inline def job(
   name: java.lang.String,
   func: js.Function1[
   /* request */ typings.parse.mod.global.Parse.Cloud.JobRequest, 
@@ -202,23 +168,17 @@ def job(
 ]
 ): typings.parse.mod.global.Parse.Cloud.HttpResponse = (typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("job")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[typings.parse.mod.global.Parse.Cloud.HttpResponse]
 
-@scala.inline
-def run(name: java.lang.String): js.Promise[js.Any] = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
-@scala.inline
-def run(name: java.lang.String, data: scala.Unit, options: typings.parse.mod.global.Parse.Cloud.RunOptions): js.Promise[js.Any] = (typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-@scala.inline
-def run(name: java.lang.String, data: typings.parse.mod.global.Parse.Cloud.Params): js.Promise[js.Any] = (typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-@scala.inline
-def run(
+inline def run(name: java.lang.String): js.Promise[js.Any] = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+inline def run(name: java.lang.String, data: scala.Unit, options: typings.parse.mod.global.Parse.Cloud.RunOptions): js.Promise[js.Any] = (typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+inline def run(name: java.lang.String, data: typings.parse.mod.global.Parse.Cloud.Params): js.Promise[js.Any] = (typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+inline def run(
   name: java.lang.String,
   data: typings.parse.mod.global.Parse.Cloud.Params,
   options: typings.parse.mod.global.Parse.Cloud.RunOptions
 ): js.Promise[js.Any] = (typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-@scala.inline
-def run[T /* <: js.Function0[js.Any] */](name: java.lang.String, data: scala.Null, options: typings.parse.mod.global.Parse.Cloud.RunOptions): js.Promise[typings.std.ReturnType[T]] = (typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.std.ReturnType[T]]]
+inline def run[T /* <: js.Function0[js.Any] */](name: java.lang.String, data: scala.Null, options: typings.parse.mod.global.Parse.Cloud.RunOptions): js.Promise[typings.std.ReturnType[T]] = (typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.std.ReturnType[T]]]
 
-@scala.inline
-def run_0[T /* <: js.Function1[
+inline def run_0[T /* <: js.Function1[
 /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ P in keyof std.Parameters<T>[0] ]: std.Parameters<T>[0][P]}
   */ /* param */ typings.parse.parseStrings.run & org.scalablytyped.runtime.TopLevel[typings.std.Parameters[T]], 
@@ -226,8 +186,7 @@ js.Any] */](
   name: java.lang.String,
   data: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<T>[0] */ js.Any
 ): js.Promise[typings.std.ReturnType[T]] = (typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.std.ReturnType[T]]]
-@scala.inline
-def run_0[T /* <: js.Function1[
+inline def run_0[T /* <: js.Function1[
 /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ P in keyof std.Parameters<T>[0] ]: std.Parameters<T>[0][P]}
   */ /* param */ typings.parse.parseStrings.run & org.scalablytyped.runtime.TopLevel[typings.std.Parameters[T]], 
@@ -237,10 +196,8 @@ js.Any] */](
   options: typings.parse.mod.global.Parse.Cloud.RunOptions
 ): js.Promise[typings.std.ReturnType[T]] = (typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.std.ReturnType[T]]]
 
-@scala.inline
-def run_T_Function0Any[T /* <: js.Function0[js.Any] */](name: java.lang.String): js.Promise[typings.std.ReturnType[T]] = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.std.ReturnType[T]]]
-@scala.inline
-def run_T_Function0Any[T /* <: js.Function0[js.Any] */](name: java.lang.String, data: scala.Unit, options: typings.parse.mod.global.Parse.Cloud.RunOptions): js.Promise[typings.std.ReturnType[T]] = (typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.std.ReturnType[T]]]
+inline def run_T_Function0Any[T /* <: js.Function0[js.Any] */](name: java.lang.String): js.Promise[typings.std.ReturnType[T]] = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.std.ReturnType[T]]]
+inline def run_T_Function0Any[T /* <: js.Function0[js.Any] */](name: java.lang.String, data: scala.Unit, options: typings.parse.mod.global.Parse.Cloud.RunOptions): js.Promise[typings.std.ReturnType[T]] = (typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.std.ReturnType[T]]]
 
 /**
   * Starts a given cloud job, which will process asynchronously.
@@ -248,11 +205,9 @@ def run_T_Function0Any[T /* <: js.Function0[js.Any] */](name: java.lang.String, 
   * @param data The parameters to send to the cloud function.
   * @returns A promise that will be resolved with the jobStatusId of the job.
   */
-@scala.inline
-def startJob(jobName: java.lang.String, data: js.Any): js.Promise[java.lang.String] = (typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("startJob")(jobName.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[java.lang.String]]
+inline def startJob(jobName: java.lang.String, data: js.Any): js.Promise[java.lang.String] = (typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("startJob")(jobName.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[java.lang.String]]
 
-@scala.inline
-def useMasterKey(): scala.Unit = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("useMasterKey")().asInstanceOf[scala.Unit]
+inline def useMasterKey(): scala.Unit = typings.parse.mod.global.Parse.Cloud.^.asInstanceOf[js.Dynamic].applyDynamic("useMasterKey")().asInstanceOf[scala.Unit]
 
 type AfterDeleteRequest = typings.parse.mod.global.Parse.Cloud.TriggerRequest
 

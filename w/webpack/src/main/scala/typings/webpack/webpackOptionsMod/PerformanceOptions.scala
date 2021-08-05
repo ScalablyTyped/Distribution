@@ -31,37 +31,27 @@ trait PerformanceOptions extends StObject {
 }
 object PerformanceOptions {
   
-  @scala.inline
-  def apply(): PerformanceOptions = {
+  inline def apply(): PerformanceOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PerformanceOptions]
   }
   
-  @scala.inline
-  implicit class PerformanceOptionsMutableBuilder[Self <: PerformanceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PerformanceOptions](x: Self) {
     
-    @scala.inline
-    def setAssetFilter(value: js.Function): Self = StObject.set(x, "assetFilter", value.asInstanceOf[js.Any])
+    inline def setAssetFilter(value: js.Function): Self = StObject.set(x, "assetFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetFilterUndefined: Self = StObject.set(x, "assetFilter", js.undefined)
+    inline def setAssetFilterUndefined: Self = StObject.set(x, "assetFilter", js.undefined)
     
-    @scala.inline
-    def setHints(value: `false` | warning | error): Self = StObject.set(x, "hints", value.asInstanceOf[js.Any])
+    inline def setHints(value: `false` | warning | error): Self = StObject.set(x, "hints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHintsUndefined: Self = StObject.set(x, "hints", js.undefined)
+    inline def setHintsUndefined: Self = StObject.set(x, "hints", js.undefined)
     
-    @scala.inline
-    def setMaxAssetSize(value: Double): Self = StObject.set(x, "maxAssetSize", value.asInstanceOf[js.Any])
+    inline def setMaxAssetSize(value: Double): Self = StObject.set(x, "maxAssetSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxAssetSizeUndefined: Self = StObject.set(x, "maxAssetSize", js.undefined)
+    inline def setMaxAssetSizeUndefined: Self = StObject.set(x, "maxAssetSize", js.undefined)
     
-    @scala.inline
-    def setMaxEntrypointSize(value: Double): Self = StObject.set(x, "maxEntrypointSize", value.asInstanceOf[js.Any])
+    inline def setMaxEntrypointSize(value: Double): Self = StObject.set(x, "maxEntrypointSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxEntrypointSizeUndefined: Self = StObject.set(x, "maxEntrypointSize", js.undefined)
+    inline def setMaxEntrypointSizeUndefined: Self = StObject.set(x, "maxEntrypointSize", js.undefined)
   }
 }

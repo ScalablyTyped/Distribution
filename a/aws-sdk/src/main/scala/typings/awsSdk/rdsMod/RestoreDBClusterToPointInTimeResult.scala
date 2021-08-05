@@ -10,19 +10,15 @@ trait RestoreDBClusterToPointInTimeResult extends StObject {
 }
 object RestoreDBClusterToPointInTimeResult {
   
-  @scala.inline
-  def apply(): RestoreDBClusterToPointInTimeResult = {
+  inline def apply(): RestoreDBClusterToPointInTimeResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RestoreDBClusterToPointInTimeResult]
   }
   
-  @scala.inline
-  implicit class RestoreDBClusterToPointInTimeResultMutableBuilder[Self <: RestoreDBClusterToPointInTimeResult] (val x: Self) extends AnyVal {
+  extension [Self <: RestoreDBClusterToPointInTimeResult](x: Self) {
     
-    @scala.inline
-    def setDBCluster(value: DBCluster): Self = StObject.set(x, "DBCluster", value.asInstanceOf[js.Any])
+    inline def setDBCluster(value: DBCluster): Self = StObject.set(x, "DBCluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBClusterUndefined: Self = StObject.set(x, "DBCluster", js.undefined)
+    inline def setDBClusterUndefined: Self = StObject.set(x, "DBCluster", js.undefined)
   }
 }

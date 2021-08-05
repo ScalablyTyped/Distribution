@@ -19,10 +19,8 @@ object mod {
   @js.native
   val ENV_CREDENTIALS_PATH: /* "AWS_SHARED_CREDENTIALS_FILE" */ String = js.native
   
-  @scala.inline
-  def loadSharedConfigFiles(): js.Promise[SharedConfigFiles] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadSharedConfigFiles")().asInstanceOf[js.Promise[SharedConfigFiles]]
-  @scala.inline
-  def loadSharedConfigFiles(init: SharedConfigInit): js.Promise[SharedConfigFiles] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadSharedConfigFiles")(init.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SharedConfigFiles]]
+  inline def loadSharedConfigFiles(): js.Promise[SharedConfigFiles] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadSharedConfigFiles")().asInstanceOf[js.Promise[SharedConfigFiles]]
+  inline def loadSharedConfigFiles(init: SharedConfigInit): js.Promise[SharedConfigFiles] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadSharedConfigFiles")(init.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SharedConfigFiles]]
   
   type ParsedIniData = StringDictionary[Profile]
   
@@ -36,20 +34,16 @@ object mod {
   }
   object SharedConfigFiles {
     
-    @scala.inline
-    def apply(configFile: ParsedIniData, credentialsFile: ParsedIniData): SharedConfigFiles = {
+    inline def apply(configFile: ParsedIniData, credentialsFile: ParsedIniData): SharedConfigFiles = {
       val __obj = js.Dynamic.literal(configFile = configFile.asInstanceOf[js.Any], credentialsFile = credentialsFile.asInstanceOf[js.Any])
       __obj.asInstanceOf[SharedConfigFiles]
     }
     
-    @scala.inline
-    implicit class SharedConfigFilesMutableBuilder[Self <: SharedConfigFiles] (val x: Self) extends AnyVal {
+    extension [Self <: SharedConfigFiles](x: Self) {
       
-      @scala.inline
-      def setConfigFile(value: ParsedIniData): Self = StObject.set(x, "configFile", value.asInstanceOf[js.Any])
+      inline def setConfigFile(value: ParsedIniData): Self = StObject.set(x, "configFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCredentialsFile(value: ParsedIniData): Self = StObject.set(x, "credentialsFile", value.asInstanceOf[js.Any])
+      inline def setCredentialsFile(value: ParsedIniData): Self = StObject.set(x, "credentialsFile", value.asInstanceOf[js.Any])
     }
   }
   
@@ -71,26 +65,20 @@ object mod {
   }
   object SharedConfigInit {
     
-    @scala.inline
-    def apply(): SharedConfigInit = {
+    inline def apply(): SharedConfigInit = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SharedConfigInit]
     }
     
-    @scala.inline
-    implicit class SharedConfigInitMutableBuilder[Self <: SharedConfigInit] (val x: Self) extends AnyVal {
+    extension [Self <: SharedConfigInit](x: Self) {
       
-      @scala.inline
-      def setConfigFilepath(value: String): Self = StObject.set(x, "configFilepath", value.asInstanceOf[js.Any])
+      inline def setConfigFilepath(value: String): Self = StObject.set(x, "configFilepath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigFilepathUndefined: Self = StObject.set(x, "configFilepath", js.undefined)
+      inline def setConfigFilepathUndefined: Self = StObject.set(x, "configFilepath", js.undefined)
       
-      @scala.inline
-      def setFilepath(value: String): Self = StObject.set(x, "filepath", value.asInstanceOf[js.Any])
+      inline def setFilepath(value: String): Self = StObject.set(x, "filepath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilepathUndefined: Self = StObject.set(x, "filepath", js.undefined)
+      inline def setFilepathUndefined: Self = StObject.set(x, "filepath", js.undefined)
     }
   }
 }

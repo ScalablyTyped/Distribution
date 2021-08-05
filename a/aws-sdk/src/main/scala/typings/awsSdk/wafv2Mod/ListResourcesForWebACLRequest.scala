@@ -18,22 +18,17 @@ trait ListResourcesForWebACLRequest extends StObject {
 }
 object ListResourcesForWebACLRequest {
   
-  @scala.inline
-  def apply(WebACLArn: ResourceArn): ListResourcesForWebACLRequest = {
+  inline def apply(WebACLArn: ResourceArn): ListResourcesForWebACLRequest = {
     val __obj = js.Dynamic.literal(WebACLArn = WebACLArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListResourcesForWebACLRequest]
   }
   
-  @scala.inline
-  implicit class ListResourcesForWebACLRequestMutableBuilder[Self <: ListResourcesForWebACLRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListResourcesForWebACLRequest](x: Self) {
     
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
     
-    @scala.inline
-    def setWebACLArn(value: ResourceArn): Self = StObject.set(x, "WebACLArn", value.asInstanceOf[js.Any])
+    inline def setWebACLArn(value: ResourceArn): Self = StObject.set(x, "WebACLArn", value.asInstanceOf[js.Any])
   }
 }

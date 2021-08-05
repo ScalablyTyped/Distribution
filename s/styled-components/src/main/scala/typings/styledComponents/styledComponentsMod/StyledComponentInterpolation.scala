@@ -14,8 +14,7 @@ trait StyledComponentInterpolation
      with _InterpolationValue
 object StyledComponentInterpolation {
   
-  @scala.inline
-  def PickStyledComponentBasean(
+  inline def PickStyledComponentBasean(
     DollarDollartypeof: js.Symbol,
     withComponent: /* component */ AnyStyledComponent => StyledComponent[
       StyledComponentInnerComponent[AnyStyledComponent], 
@@ -29,8 +28,7 @@ object StyledComponentInterpolation {
     __obj.asInstanceOf[typings.styledComponents.anon.PickStyledComponentBasean]
   }
   
-  @scala.inline
-  def PickStyledComponentBaseanDefaultProps(
+  inline def PickStyledComponentBaseanDefaultProps(
     DollarDollartypeof: js.Symbol,
     withComponent: /* component */ AnyStyledComponent => StyledComponent[
       StyledComponentInnerComponent[AnyStyledComponent], 

@@ -22,17 +22,14 @@ object contextMod extends Shortcut {
   }
   object TriggerContextProps {
     
-    @scala.inline
-    def apply(onPopupMouseDown: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): TriggerContextProps = {
+    inline def apply(onPopupMouseDown: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): TriggerContextProps = {
       val __obj = js.Dynamic.literal(onPopupMouseDown = js.Any.fromFunction1(onPopupMouseDown))
       __obj.asInstanceOf[TriggerContextProps]
     }
     
-    @scala.inline
-    implicit class TriggerContextPropsMutableBuilder[Self <: TriggerContextProps] (val x: Self) extends AnyVal {
+    extension [Self <: TriggerContextProps](x: Self) {
       
-      @scala.inline
-      def setOnPopupMouseDown(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onPopupMouseDown", js.Any.fromFunction1(value))
+      inline def setOnPopupMouseDown(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onPopupMouseDown", js.Any.fromFunction1(value))
     }
   }
   

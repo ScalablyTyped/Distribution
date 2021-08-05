@@ -16,8 +16,7 @@ trait PaintStyle
 }
 object PaintStyle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     description: String,
     id: String,
     key: String,
@@ -31,16 +30,12 @@ object PaintStyle {
     __obj.asInstanceOf[PaintStyle]
   }
   
-  @scala.inline
-  implicit class PaintStyleMutableBuilder[Self <: PaintStyle] (val x: Self) extends AnyVal {
+  extension [Self <: PaintStyle](x: Self) {
     
-    @scala.inline
-    def setPaints(value: js.Array[Paint]): Self = StObject.set(x, "paints", value.asInstanceOf[js.Any])
+    inline def setPaints(value: js.Array[Paint]): Self = StObject.set(x, "paints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaintsVarargs(value: Paint*): Self = StObject.set(x, "paints", js.Array(value :_*))
+    inline def setPaintsVarargs(value: Paint*): Self = StObject.set(x, "paints", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: PAINT): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: PAINT): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

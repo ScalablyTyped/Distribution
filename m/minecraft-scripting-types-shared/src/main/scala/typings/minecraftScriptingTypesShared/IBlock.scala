@@ -31,25 +31,19 @@ trait IBlock
 }
 object IBlock {
   
-  @scala.inline
-  def apply(__identifier__ : String, block_position: VectorXYZ, ticking_area: ITickingArea): IBlock = {
+  inline def apply(__identifier__ : String, block_position: VectorXYZ, ticking_area: ITickingArea): IBlock = {
     val __obj = js.Dynamic.literal(__identifier__ = __identifier__.asInstanceOf[js.Any], __type__ = "block", block_position = block_position.asInstanceOf[js.Any], ticking_area = ticking_area.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBlock]
   }
   
-  @scala.inline
-  implicit class IBlockMutableBuilder[Self <: IBlock] (val x: Self) extends AnyVal {
+  extension [Self <: IBlock](x: Self) {
     
-    @scala.inline
-    def setBlock_position(value: VectorXYZ): Self = StObject.set(x, "block_position", value.asInstanceOf[js.Any])
+    inline def setBlock_position(value: VectorXYZ): Self = StObject.set(x, "block_position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTicking_area(value: ITickingArea): Self = StObject.set(x, "ticking_area", value.asInstanceOf[js.Any])
+    inline def setTicking_area(value: ITickingArea): Self = StObject.set(x, "ticking_area", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__identifier__(value: String): Self = StObject.set(x, "__identifier__", value.asInstanceOf[js.Any])
+    inline def set__identifier__(value: String): Self = StObject.set(x, "__identifier__", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__type__(value: block): Self = StObject.set(x, "__type__", value.asInstanceOf[js.Any])
+    inline def set__type__(value: block): Self = StObject.set(x, "__type__", value.asInstanceOf[js.Any])
   }
 }

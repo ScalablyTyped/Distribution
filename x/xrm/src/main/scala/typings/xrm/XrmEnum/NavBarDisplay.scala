@@ -19,12 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NavBarDisplay extends StObject
 object NavBarDisplay {
   
-  @scala.inline
-  def Entity: entity = "entity".asInstanceOf[entity]
+  inline def Entity: entity = "entity".asInstanceOf[entity]
   
-  @scala.inline
-  def Off: off = "off".asInstanceOf[off]
+  inline def Off: off = "off".asInstanceOf[off]
   
-  @scala.inline
-  def On: on = "on".asInstanceOf[on]
+  inline def On: on = "on".asInstanceOf[on]
 }

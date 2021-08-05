@@ -17,10 +17,8 @@ object configLoaderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def loadConfig[T](hasEnvironmentVariableSelectorConfigFileSelectorDefaultValue: LoadedConfigSelectors[T]): Provider[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadConfig")(hasEnvironmentVariableSelectorConfigFileSelectorDefaultValue.asInstanceOf[js.Any]).asInstanceOf[Provider[T]]
-  @scala.inline
-  def loadConfig[T](
+  inline def loadConfig[T](hasEnvironmentVariableSelectorConfigFileSelectorDefaultValue: LoadedConfigSelectors[T]): Provider[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadConfig")(hasEnvironmentVariableSelectorConfigFileSelectorDefaultValue.asInstanceOf[js.Any]).asInstanceOf[Provider[T]]
+  inline def loadConfig[T](
     hasEnvironmentVariableSelectorConfigFileSelectorDefaultValue: LoadedConfigSelectors[T],
     configuration: LocalConfigOptions
   ): Provider[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadConfig")(hasEnvironmentVariableSelectorConfigFileSelectorDefaultValue.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[Provider[T]]
@@ -58,8 +56,7 @@ object configLoaderMod {
   }
   object LoadedConfigSelectors {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       configFileSelector: /* profile */ Profile => js.UndefOr[T],
       default: FromStaticConfig[T],
       environmentVariableSelector: /* env */ ProcessEnv => js.UndefOr[T]
@@ -68,20 +65,15 @@ object configLoaderMod {
       __obj.asInstanceOf[LoadedConfigSelectors[T]]
     }
     
-    @scala.inline
-    implicit class LoadedConfigSelectorsMutableBuilder[Self <: LoadedConfigSelectors[?], T] (val x: Self & LoadedConfigSelectors[T]) extends AnyVal {
+    extension [Self <: LoadedConfigSelectors[?], T](x: Self & LoadedConfigSelectors[T]) {
       
-      @scala.inline
-      def setConfigFileSelector(value: /* profile */ Profile => js.UndefOr[T]): Self = StObject.set(x, "configFileSelector", js.Any.fromFunction1(value))
+      inline def setConfigFileSelector(value: /* profile */ Profile => js.UndefOr[T]): Self = StObject.set(x, "configFileSelector", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDefault(value: FromStaticConfig[T]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: FromStaticConfig[T]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultFunction0(value: () => T): Self = StObject.set(x, "default", js.Any.fromFunction0(value))
+      inline def setDefaultFunction0(value: () => T): Self = StObject.set(x, "default", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnvironmentVariableSelector(value: /* env */ ProcessEnv => js.UndefOr[T]): Self = StObject.set(x, "environmentVariableSelector", js.Any.fromFunction1(value))
+      inline def setEnvironmentVariableSelector(value: /* env */ ProcessEnv => js.UndefOr[T]): Self = StObject.set(x, "environmentVariableSelector", js.Any.fromFunction1(value))
     }
   }
   

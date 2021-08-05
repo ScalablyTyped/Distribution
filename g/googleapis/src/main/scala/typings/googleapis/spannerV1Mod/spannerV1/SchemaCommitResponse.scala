@@ -16,19 +16,15 @@ trait SchemaCommitResponse extends StObject {
 }
 object SchemaCommitResponse {
   
-  @scala.inline
-  def apply(): SchemaCommitResponse = {
+  inline def apply(): SchemaCommitResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCommitResponse]
   }
   
-  @scala.inline
-  implicit class SchemaCommitResponseMutableBuilder[Self <: SchemaCommitResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCommitResponse](x: Self) {
     
-    @scala.inline
-    def setCommitTimestamp(value: String): Self = StObject.set(x, "commitTimestamp", value.asInstanceOf[js.Any])
+    inline def setCommitTimestamp(value: String): Self = StObject.set(x, "commitTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitTimestampUndefined: Self = StObject.set(x, "commitTimestamp", js.undefined)
+    inline def setCommitTimestampUndefined: Self = StObject.set(x, "commitTimestamp", js.undefined)
   }
 }

@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PpMediaTaskStatus extends StObject
 object PpMediaTaskStatus {
   
-  @scala.inline
-  def ppMediaTaskStatusDone: `3` = 3.asInstanceOf[`3`]
+  inline def ppMediaTaskStatusDone: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def ppMediaTaskStatusFailed: `4` = 4.asInstanceOf[`4`]
+  inline def ppMediaTaskStatusFailed: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def ppMediaTaskStatusInProgress: `1` = 1.asInstanceOf[`1`]
+  inline def ppMediaTaskStatusInProgress: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def ppMediaTaskStatusNone: `0` = 0.asInstanceOf[`0`]
+  inline def ppMediaTaskStatusNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def ppMediaTaskStatusQueued: `2` = 2.asInstanceOf[`2`]
+  inline def ppMediaTaskStatusQueued: `2` = 2.asInstanceOf[`2`]
 }

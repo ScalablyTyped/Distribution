@@ -27,56 +27,40 @@ trait ExportUsersJob
 }
 object ExportUsersJob {
   
-  @scala.inline
-  def apply(id: String, status: JobStatus): ExportUsersJob = {
+  inline def apply(id: String, status: JobStatus): ExportUsersJob = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("users_export")
     __obj.asInstanceOf[ExportUsersJob]
   }
   
-  @scala.inline
-  implicit class ExportUsersJobMutableBuilder[Self <: ExportUsersJob] (val x: Self) extends AnyVal {
+  extension [Self <: ExportUsersJob](x: Self) {
     
-    @scala.inline
-    def setConnection_id(value: String): Self = StObject.set(x, "connection_id", value.asInstanceOf[js.Any])
+    inline def setConnection_id(value: String): Self = StObject.set(x, "connection_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnection_idUndefined: Self = StObject.set(x, "connection_id", js.undefined)
+    inline def setConnection_idUndefined: Self = StObject.set(x, "connection_id", js.undefined)
     
-    @scala.inline
-    def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+    inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreated_atUndefined: Self = StObject.set(x, "created_at", js.undefined)
+    inline def setCreated_atUndefined: Self = StObject.set(x, "created_at", js.undefined)
     
-    @scala.inline
-    def setFields(value: js.Array[ExportUserField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[ExportUserField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: ExportUserField*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: ExportUserField*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setFormat(value: JobFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: JobFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setStatus(value: JobStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: JobStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: users_export): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: users_export): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

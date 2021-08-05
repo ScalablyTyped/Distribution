@@ -54,8 +54,7 @@ object html {
   }
   object HTMLFormatConfiguration {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       contentUnformatted: String,
       endWithNewline: Boolean,
       extraLiners: String,
@@ -73,44 +72,31 @@ object html {
       __obj.asInstanceOf[HTMLFormatConfiguration]
     }
     
-    @scala.inline
-    implicit class HTMLFormatConfigurationMutableBuilder[Self <: HTMLFormatConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: HTMLFormatConfiguration](x: Self) {
       
-      @scala.inline
-      def setContentUnformatted(value: String): Self = StObject.set(x, "contentUnformatted", value.asInstanceOf[js.Any])
+      inline def setContentUnformatted(value: String): Self = StObject.set(x, "contentUnformatted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndWithNewline(value: Boolean): Self = StObject.set(x, "endWithNewline", value.asInstanceOf[js.Any])
+      inline def setEndWithNewline(value: Boolean): Self = StObject.set(x, "endWithNewline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraLiners(value: String): Self = StObject.set(x, "extraLiners", value.asInstanceOf[js.Any])
+      inline def setExtraLiners(value: String): Self = StObject.set(x, "extraLiners", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentHandlebars(value: Boolean): Self = StObject.set(x, "indentHandlebars", value.asInstanceOf[js.Any])
+      inline def setIndentHandlebars(value: Boolean): Self = StObject.set(x, "indentHandlebars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentInnerHtml(value: Boolean): Self = StObject.set(x, "indentInnerHtml", value.asInstanceOf[js.Any])
+      inline def setIndentInnerHtml(value: Boolean): Self = StObject.set(x, "indentInnerHtml", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsertSpaces(value: Boolean): Self = StObject.set(x, "insertSpaces", value.asInstanceOf[js.Any])
+      inline def setInsertSpaces(value: Boolean): Self = StObject.set(x, "insertSpaces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxPreserveNewLines(value: Double): Self = StObject.set(x, "maxPreserveNewLines", value.asInstanceOf[js.Any])
+      inline def setMaxPreserveNewLines(value: Double): Self = StObject.set(x, "maxPreserveNewLines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveNewLines(value: Boolean): Self = StObject.set(x, "preserveNewLines", value.asInstanceOf[js.Any])
+      inline def setPreserveNewLines(value: Boolean): Self = StObject.set(x, "preserveNewLines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabSize(value: Double): Self = StObject.set(x, "tabSize", value.asInstanceOf[js.Any])
+      inline def setTabSize(value: Double): Self = StObject.set(x, "tabSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnformatted(value: String): Self = StObject.set(x, "unformatted", value.asInstanceOf[js.Any])
+      inline def setUnformatted(value: String): Self = StObject.set(x, "unformatted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapAttributes(value: auto | force | `force-aligned` | `force-expand-multiline`): Self = StObject.set(x, "wrapAttributes", value.asInstanceOf[js.Any])
+      inline def setWrapAttributes(value: auto | force | `force-aligned` | `force-expand-multiline`): Self = StObject.set(x, "wrapAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapLineLength(value: Double): Self = StObject.set(x, "wrapLineLength", value.asInstanceOf[js.Any])
+      inline def setWrapLineLength(value: Double): Self = StObject.set(x, "wrapLineLength", value.asInstanceOf[js.Any])
     }
   }
   
@@ -193,86 +179,60 @@ object html {
   }
   object ModeConfiguration {
     
-    @scala.inline
-    def apply(): ModeConfiguration = {
+    inline def apply(): ModeConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ModeConfiguration]
     }
     
-    @scala.inline
-    implicit class ModeConfigurationMutableBuilder[Self <: ModeConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: ModeConfiguration](x: Self) {
       
-      @scala.inline
-      def setColors(value: Boolean): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: Boolean): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+      inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
       
-      @scala.inline
-      def setCompletionItems(value: Boolean): Self = StObject.set(x, "completionItems", value.asInstanceOf[js.Any])
+      inline def setCompletionItems(value: Boolean): Self = StObject.set(x, "completionItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompletionItemsUndefined: Self = StObject.set(x, "completionItems", js.undefined)
+      inline def setCompletionItemsUndefined: Self = StObject.set(x, "completionItems", js.undefined)
       
-      @scala.inline
-      def setDiagnostics(value: Boolean): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
+      inline def setDiagnostics(value: Boolean): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiagnosticsUndefined: Self = StObject.set(x, "diagnostics", js.undefined)
+      inline def setDiagnosticsUndefined: Self = StObject.set(x, "diagnostics", js.undefined)
       
-      @scala.inline
-      def setDocumentFormattingEdits(value: Boolean): Self = StObject.set(x, "documentFormattingEdits", value.asInstanceOf[js.Any])
+      inline def setDocumentFormattingEdits(value: Boolean): Self = StObject.set(x, "documentFormattingEdits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentFormattingEditsUndefined: Self = StObject.set(x, "documentFormattingEdits", js.undefined)
+      inline def setDocumentFormattingEditsUndefined: Self = StObject.set(x, "documentFormattingEdits", js.undefined)
       
-      @scala.inline
-      def setDocumentHighlights(value: Boolean): Self = StObject.set(x, "documentHighlights", value.asInstanceOf[js.Any])
+      inline def setDocumentHighlights(value: Boolean): Self = StObject.set(x, "documentHighlights", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentHighlightsUndefined: Self = StObject.set(x, "documentHighlights", js.undefined)
+      inline def setDocumentHighlightsUndefined: Self = StObject.set(x, "documentHighlights", js.undefined)
       
-      @scala.inline
-      def setDocumentRangeFormattingEdits(value: Boolean): Self = StObject.set(x, "documentRangeFormattingEdits", value.asInstanceOf[js.Any])
+      inline def setDocumentRangeFormattingEdits(value: Boolean): Self = StObject.set(x, "documentRangeFormattingEdits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentRangeFormattingEditsUndefined: Self = StObject.set(x, "documentRangeFormattingEdits", js.undefined)
+      inline def setDocumentRangeFormattingEditsUndefined: Self = StObject.set(x, "documentRangeFormattingEdits", js.undefined)
       
-      @scala.inline
-      def setDocumentSymbols(value: Boolean): Self = StObject.set(x, "documentSymbols", value.asInstanceOf[js.Any])
+      inline def setDocumentSymbols(value: Boolean): Self = StObject.set(x, "documentSymbols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentSymbolsUndefined: Self = StObject.set(x, "documentSymbols", js.undefined)
+      inline def setDocumentSymbolsUndefined: Self = StObject.set(x, "documentSymbols", js.undefined)
       
-      @scala.inline
-      def setFoldingRanges(value: Boolean): Self = StObject.set(x, "foldingRanges", value.asInstanceOf[js.Any])
+      inline def setFoldingRanges(value: Boolean): Self = StObject.set(x, "foldingRanges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFoldingRangesUndefined: Self = StObject.set(x, "foldingRanges", js.undefined)
+      inline def setFoldingRangesUndefined: Self = StObject.set(x, "foldingRanges", js.undefined)
       
-      @scala.inline
-      def setHovers(value: Boolean): Self = StObject.set(x, "hovers", value.asInstanceOf[js.Any])
+      inline def setHovers(value: Boolean): Self = StObject.set(x, "hovers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoversUndefined: Self = StObject.set(x, "hovers", js.undefined)
+      inline def setHoversUndefined: Self = StObject.set(x, "hovers", js.undefined)
       
-      @scala.inline
-      def setLinks(value: Boolean): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+      inline def setLinks(value: Boolean): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
+      inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
       
-      @scala.inline
-      def setRename(value: Boolean): Self = StObject.set(x, "rename", value.asInstanceOf[js.Any])
+      inline def setRename(value: Boolean): Self = StObject.set(x, "rename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenameUndefined: Self = StObject.set(x, "rename", js.undefined)
+      inline def setRenameUndefined: Self = StObject.set(x, "rename", js.undefined)
       
-      @scala.inline
-      def setSelectionRanges(value: Boolean): Self = StObject.set(x, "selectionRanges", value.asInstanceOf[js.Any])
+      inline def setSelectionRanges(value: Boolean): Self = StObject.set(x, "selectionRanges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionRangesUndefined: Self = StObject.set(x, "selectionRanges", js.undefined)
+      inline def setSelectionRangesUndefined: Self = StObject.set(x, "selectionRanges", js.undefined)
     }
   }
   
@@ -290,26 +250,20 @@ object html {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setFormat(value: HTMLFormatConfiguration): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: HTMLFormatConfiguration): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setSuggest(value: CompletionConfiguration): Self = StObject.set(x, "suggest", value.asInstanceOf[js.Any])
+      inline def setSuggest(value: CompletionConfiguration): Self = StObject.set(x, "suggest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuggestUndefined: Self = StObject.set(x, "suggest", js.undefined)
+      inline def setSuggestUndefined: Self = StObject.set(x, "suggest", js.undefined)
     }
   }
 }

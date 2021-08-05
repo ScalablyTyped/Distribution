@@ -12,16 +12,13 @@ trait PosPrinterStatusUpdatedEventArgs extends StObject {
 }
 object PosPrinterStatusUpdatedEventArgs {
   
-  @scala.inline
-  def apply(status: PosPrinterStatus): PosPrinterStatusUpdatedEventArgs = {
+  inline def apply(status: PosPrinterStatus): PosPrinterStatusUpdatedEventArgs = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[PosPrinterStatusUpdatedEventArgs]
   }
   
-  @scala.inline
-  implicit class PosPrinterStatusUpdatedEventArgsMutableBuilder[Self <: PosPrinterStatusUpdatedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: PosPrinterStatusUpdatedEventArgs](x: Self) {
     
-    @scala.inline
-    def setStatus(value: PosPrinterStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: PosPrinterStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

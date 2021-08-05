@@ -12,8 +12,7 @@ object locationHelperMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[Props](config: LocationHelperConfig[Props]): LocationHelper[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[LocationHelper[Props]]
+  inline def default[Props](config: LocationHelperConfig[Props]): LocationHelper[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[LocationHelper[Props]]
   
   trait LocationHelper[Props] extends StObject {
     
@@ -23,8 +22,7 @@ object locationHelperMod {
   }
   object LocationHelper {
     
-    @scala.inline
-    def apply[Props](
+    inline def apply[Props](
       createRedirectLoc: (Props, String) => LocationDescriptorObject[LocationState],
       getRedirectQueryParam: Props => String
     ): LocationHelper[Props] = {
@@ -32,14 +30,11 @@ object locationHelperMod {
       __obj.asInstanceOf[LocationHelper[Props]]
     }
     
-    @scala.inline
-    implicit class LocationHelperMutableBuilder[Self <: LocationHelper[?], Props] (val x: Self & LocationHelper[Props]) extends AnyVal {
+    extension [Self <: LocationHelper[?], Props](x: Self & LocationHelper[Props]) {
       
-      @scala.inline
-      def setCreateRedirectLoc(value: (Props, String) => LocationDescriptorObject[LocationState]): Self = StObject.set(x, "createRedirectLoc", js.Any.fromFunction2(value))
+      inline def setCreateRedirectLoc(value: (Props, String) => LocationDescriptorObject[LocationState]): Self = StObject.set(x, "createRedirectLoc", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetRedirectQueryParam(value: Props => String): Self = StObject.set(x, "getRedirectQueryParam", js.Any.fromFunction1(value))
+      inline def setGetRedirectQueryParam(value: Props => String): Self = StObject.set(x, "getRedirectQueryParam", js.Any.fromFunction1(value))
     }
   }
   
@@ -51,26 +46,20 @@ object locationHelperMod {
   }
   object LocationHelperConfig {
     
-    @scala.inline
-    def apply[Props](): LocationHelperConfig[Props] = {
+    inline def apply[Props](): LocationHelperConfig[Props] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LocationHelperConfig[Props]]
     }
     
-    @scala.inline
-    implicit class LocationHelperConfigMutableBuilder[Self <: LocationHelperConfig[?], Props] (val x: Self & LocationHelperConfig[Props]) extends AnyVal {
+    extension [Self <: LocationHelperConfig[?], Props](x: Self & LocationHelperConfig[Props]) {
       
-      @scala.inline
-      def setLocationSelector(value: /* props */ Props => LocationDescriptorObject[LocationState]): Self = StObject.set(x, "locationSelector", js.Any.fromFunction1(value))
+      inline def setLocationSelector(value: /* props */ Props => LocationDescriptorObject[LocationState]): Self = StObject.set(x, "locationSelector", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLocationSelectorUndefined: Self = StObject.set(x, "locationSelector", js.undefined)
+      inline def setLocationSelectorUndefined: Self = StObject.set(x, "locationSelector", js.undefined)
       
-      @scala.inline
-      def setRedirectQueryParamName(value: String): Self = StObject.set(x, "redirectQueryParamName", value.asInstanceOf[js.Any])
+      inline def setRedirectQueryParamName(value: String): Self = StObject.set(x, "redirectQueryParamName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectQueryParamNameUndefined: Self = StObject.set(x, "redirectQueryParamName", js.undefined)
+      inline def setRedirectQueryParamNameUndefined: Self = StObject.set(x, "redirectQueryParamName", js.undefined)
     }
   }
 }

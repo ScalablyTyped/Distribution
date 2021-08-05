@@ -10,16 +10,13 @@ trait DragNodeHighlight extends StObject {
 }
 object DragNodeHighlight {
   
-  @scala.inline
-  def apply(dragNodeHighlight: Boolean): DragNodeHighlight = {
+  inline def apply(dragNodeHighlight: Boolean): DragNodeHighlight = {
     val __obj = js.Dynamic.literal(dragNodeHighlight = dragNodeHighlight.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragNodeHighlight]
   }
   
-  @scala.inline
-  implicit class DragNodeHighlightMutableBuilder[Self <: DragNodeHighlight] (val x: Self) extends AnyVal {
+  extension [Self <: DragNodeHighlight](x: Self) {
     
-    @scala.inline
-    def setDragNodeHighlight(value: Boolean): Self = StObject.set(x, "dragNodeHighlight", value.asInstanceOf[js.Any])
+    inline def setDragNodeHighlight(value: Boolean): Self = StObject.set(x, "dragNodeHighlight", value.asInstanceOf[js.Any])
   }
 }

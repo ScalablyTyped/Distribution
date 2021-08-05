@@ -43,52 +43,36 @@ object Type {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def AUTHOR: `8` = 8.asInstanceOf[`8`]
+    inline def AUTHOR: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def DATE: `0` = 0.asInstanceOf[`0`]
+    inline def DATE: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def DOCINFO_TITLE: `10` = 10.asInstanceOf[`10`]
+    inline def DOCINFO_TITLE: `10` = 10.asInstanceOf[`10`]
     
-    @scala.inline
-    def EXTENDED_FILE: `7` = 7.asInstanceOf[`7`]
+    inline def EXTENDED_FILE: `7` = 7.asInstanceOf[`7`]
     
-    @scala.inline
-    def EXTENDED_TIME: `6` = 6.asInstanceOf[`6`]
+    inline def EXTENDED_TIME: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def MEASURE: `9` = 9.asInstanceOf[`9`]
+    inline def MEASURE: `9` = 9.asInstanceOf[`9`]
     
-    @scala.inline
-    def PAGE: `2` = 2.asInstanceOf[`2`]
+    inline def PAGE: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def PAGES: `3` = 3.asInstanceOf[`3`]
+    inline def PAGES: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def PAGE_NAME: `14` = 14.asInstanceOf[`14`]
+    inline def PAGE_NAME: `14` = 14.asInstanceOf[`14`]
     
-    @scala.inline
-    def PRESENTATION_DATE_TIME: `13` = 13.asInstanceOf[`13`]
+    inline def PRESENTATION_DATE_TIME: `13` = 13.asInstanceOf[`13`]
     
-    @scala.inline
-    def PRESENTATION_FOOTER: `12` = 12.asInstanceOf[`12`]
+    inline def PRESENTATION_FOOTER: `12` = 12.asInstanceOf[`12`]
     
-    @scala.inline
-    def PRESENTATION_HEADER: `11` = 11.asInstanceOf[`11`]
+    inline def PRESENTATION_HEADER: `11` = 11.asInstanceOf[`11`]
     
-    @scala.inline
-    def TABLE: `5` = 5.asInstanceOf[`5`]
+    inline def TABLE: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def TIME: `4` = 4.asInstanceOf[`4`]
+    inline def TIME: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def UNSPECIFIED: `-1` = -1.asInstanceOf[`-1`]
+    inline def UNSPECIFIED: `-1` = -1.asInstanceOf[`-1`]
     
-    @scala.inline
-    def URL: `1` = 1.asInstanceOf[`1`]
+    inline def URL: `1` = 1.asInstanceOf[`1`]
   }
 }

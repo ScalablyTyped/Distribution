@@ -51,50 +51,36 @@ object mod {
   }
   object BriefReporterOptions {
     
-    @scala.inline
-    def apply(): BriefReporterOptions = {
+    inline def apply(): BriefReporterOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BriefReporterOptions]
     }
     
-    @scala.inline
-    implicit class BriefReporterOptionsMutableBuilder[Self <: BriefReporterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BriefReporterOptions](x: Self) {
       
-      @scala.inline
-      def setEarlyErrorReport(value: Boolean): Self = StObject.set(x, "earlyErrorReport", value.asInstanceOf[js.Any])
+      inline def setEarlyErrorReport(value: Boolean): Self = StObject.set(x, "earlyErrorReport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEarlyErrorReportUndefined: Self = StObject.set(x, "earlyErrorReport", js.undefined)
+      inline def setEarlyErrorReportUndefined: Self = StObject.set(x, "earlyErrorReport", js.undefined)
       
-      @scala.inline
-      def setOmitExternalStackFrames(value: Boolean): Self = StObject.set(x, "omitExternalStackFrames", value.asInstanceOf[js.Any])
+      inline def setOmitExternalStackFrames(value: Boolean): Self = StObject.set(x, "omitExternalStackFrames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOmitExternalStackFramesUndefined: Self = StObject.set(x, "omitExternalStackFrames", js.undefined)
+      inline def setOmitExternalStackFramesUndefined: Self = StObject.set(x, "omitExternalStackFrames", js.undefined)
       
-      @scala.inline
-      def setRenderOnRunCompleteOnly(value: Boolean): Self = StObject.set(x, "renderOnRunCompleteOnly", value.asInstanceOf[js.Any])
+      inline def setRenderOnRunCompleteOnly(value: Boolean): Self = StObject.set(x, "renderOnRunCompleteOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderOnRunCompleteOnlyUndefined: Self = StObject.set(x, "renderOnRunCompleteOnly", js.undefined)
+      inline def setRenderOnRunCompleteOnlyUndefined: Self = StObject.set(x, "renderOnRunCompleteOnly", js.undefined)
       
-      @scala.inline
-      def setSuppressBrowserLogs(value: Boolean): Self = StObject.set(x, "suppressBrowserLogs", value.asInstanceOf[js.Any])
+      inline def setSuppressBrowserLogs(value: Boolean): Self = StObject.set(x, "suppressBrowserLogs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressBrowserLogsUndefined: Self = StObject.set(x, "suppressBrowserLogs", js.undefined)
+      inline def setSuppressBrowserLogsUndefined: Self = StObject.set(x, "suppressBrowserLogs", js.undefined)
       
-      @scala.inline
-      def setSuppressErrorHighlighting(value: Boolean): Self = StObject.set(x, "suppressErrorHighlighting", value.asInstanceOf[js.Any])
+      inline def setSuppressErrorHighlighting(value: Boolean): Self = StObject.set(x, "suppressErrorHighlighting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressErrorHighlightingUndefined: Self = StObject.set(x, "suppressErrorHighlighting", js.undefined)
+      inline def setSuppressErrorHighlightingUndefined: Self = StObject.set(x, "suppressErrorHighlighting", js.undefined)
       
-      @scala.inline
-      def setSuppressErrorReport(value: Boolean): Self = StObject.set(x, "suppressErrorReport", value.asInstanceOf[js.Any])
+      inline def setSuppressErrorReport(value: Boolean): Self = StObject.set(x, "suppressErrorReport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressErrorReportUndefined: Self = StObject.set(x, "suppressErrorReport", js.undefined)
+      inline def setSuppressErrorReportUndefined: Self = StObject.set(x, "suppressErrorReport", js.undefined)
     }
   }
   
@@ -108,20 +94,16 @@ object mod {
   }
   object ConfigOptions {
     
-    @scala.inline
-    def apply(): ConfigOptions = {
+    inline def apply(): ConfigOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    @scala.inline
-    implicit class ConfigOptionsMutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigOptions](x: Self) {
       
-      @scala.inline
-      def setBriefReporter(value: BriefReporterOptions): Self = StObject.set(x, "briefReporter", value.asInstanceOf[js.Any])
+      inline def setBriefReporter(value: BriefReporterOptions): Self = StObject.set(x, "briefReporter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBriefReporterUndefined: Self = StObject.set(x, "briefReporter", js.undefined)
+      inline def setBriefReporterUndefined: Self = StObject.set(x, "briefReporter", js.undefined)
     }
   }
 }

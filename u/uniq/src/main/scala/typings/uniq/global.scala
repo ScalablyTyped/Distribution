@@ -9,6 +9,5 @@ object global {
   @JSGlobal("uniq")
   @js.native
   def uniq: Uniq = js.native
-  @scala.inline
-  def uniq_=(x: Uniq): Unit = js.Dynamic.global.updateDynamic("uniq")(x.asInstanceOf[js.Any])
+  inline def uniq_=(x: Uniq): Unit = js.Dynamic.global.updateDynamic("uniq")(x.asInstanceOf[js.Any])
 }

@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def Async: typings.reactAsync.mod.GenericAsync = typings.reactAsync.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Async").asInstanceOf[typings.reactAsync.mod.GenericAsync]
+inline def Async: typings.reactAsync.mod.GenericAsync = typings.reactAsync.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Async").asInstanceOf[typings.reactAsync.mod.GenericAsync]
 type Async[T] = typings.react.mod.Component[
 typings.reactAsync.mod.AsyncProps[T], 
 typings.reactAsync.mod.AsyncState[T, typings.reactAsync.mod.AbstractState[T]], 
@@ -16,17 +15,12 @@ js.Any]
   * createInstance allows you to create instances of Async that are bound to a specific promise.
   * A unique instance also uses its own React context for better nesting capability.
   */
-@scala.inline
-def createInstance[T](): typings.reactAsync.mod.AsyncConstructor[T] = typings.reactAsync.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")().asInstanceOf[typings.reactAsync.mod.AsyncConstructor[T]]
-@scala.inline
-def createInstance[T](defaultOptions: scala.Unit, displayName: java.lang.String): typings.reactAsync.mod.AsyncConstructor[T] = (typings.reactAsync.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(defaultOptions.asInstanceOf[js.Any], displayName.asInstanceOf[js.Any])).asInstanceOf[typings.reactAsync.mod.AsyncConstructor[T]]
-@scala.inline
-def createInstance[T](defaultOptions: typings.reactAsync.mod.AsyncProps[T]): typings.reactAsync.mod.AsyncConstructor[T] = typings.reactAsync.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(defaultOptions.asInstanceOf[js.Any]).asInstanceOf[typings.reactAsync.mod.AsyncConstructor[T]]
-@scala.inline
-def createInstance[T](defaultOptions: typings.reactAsync.mod.AsyncProps[T], displayName: java.lang.String): typings.reactAsync.mod.AsyncConstructor[T] = (typings.reactAsync.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(defaultOptions.asInstanceOf[js.Any], displayName.asInstanceOf[js.Any])).asInstanceOf[typings.reactAsync.mod.AsyncConstructor[T]]
+inline def createInstance[T](): typings.reactAsync.mod.AsyncConstructor[T] = typings.reactAsync.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")().asInstanceOf[typings.reactAsync.mod.AsyncConstructor[T]]
+inline def createInstance[T](defaultOptions: scala.Unit, displayName: java.lang.String): typings.reactAsync.mod.AsyncConstructor[T] = (typings.reactAsync.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(defaultOptions.asInstanceOf[js.Any], displayName.asInstanceOf[js.Any])).asInstanceOf[typings.reactAsync.mod.AsyncConstructor[T]]
+inline def createInstance[T](defaultOptions: typings.reactAsync.mod.AsyncProps[T]): typings.reactAsync.mod.AsyncConstructor[T] = typings.reactAsync.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(defaultOptions.asInstanceOf[js.Any]).asInstanceOf[typings.reactAsync.mod.AsyncConstructor[T]]
+inline def createInstance[T](defaultOptions: typings.reactAsync.mod.AsyncProps[T], displayName: java.lang.String): typings.reactAsync.mod.AsyncConstructor[T] = (typings.reactAsync.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(defaultOptions.asInstanceOf[js.Any], displayName.asInstanceOf[js.Any])).asInstanceOf[typings.reactAsync.mod.AsyncConstructor[T]]
 
-@scala.inline
-def dispatchMiddleware[T](
+inline def dispatchMiddleware[T](
   dispatch: js.Function2[
   /* action */ typings.reactAsync.mod.AsyncAction[T], 
   /* repeated */ js.Any, 
@@ -44,11 +38,9 @@ scala.Unit]]
   * Universal global scope object. In the browser this is `self`, in Node.js and React Native it's `global`.
   * This file is excluded from coverage reporting because these globals are environment-specific so we can't test them all.
   */
-@scala.inline
-def globalScope: typings.reactAsync.mod.GlobalScope_ = typings.reactAsync.mod.^.asInstanceOf[js.Dynamic].selectDynamic("globalScope").asInstanceOf[typings.reactAsync.mod.GlobalScope_]
+inline def globalScope: typings.reactAsync.mod.GlobalScope_ = typings.reactAsync.mod.^.asInstanceOf[js.Dynamic].selectDynamic("globalScope").asInstanceOf[typings.reactAsync.mod.GlobalScope_]
 
-@scala.inline
-def init[T](hasInitialValuePromisePromiseFn: typings.reactAsync.anon.InitialValue[T]): (typings.reactAsync.mod.AsyncInitial[
+inline def init[T](hasInitialValuePromisePromiseFn: typings.reactAsync.anon.InitialValue[T]): (typings.reactAsync.mod.AsyncInitial[
 T, 
 typings.std.Pick[
   typings.reactAsync.mod.AbstractState[T], 
@@ -90,11 +82,9 @@ typings.std.Pick[
   typings.reactAsync.reactAsyncStrings.initialValue | typings.reactAsync.reactAsyncStrings.counter | typings.reactAsync.reactAsyncStrings.promise
 ]])]
 
-@scala.inline
-def neverSettle: js.Promise[scala.Nothing] = typings.reactAsync.mod.^.asInstanceOf[js.Dynamic].selectDynamic("neverSettle").asInstanceOf[js.Promise[scala.Nothing]]
+inline def neverSettle: js.Promise[scala.Nothing] = typings.reactAsync.mod.^.asInstanceOf[js.Dynamic].selectDynamic("neverSettle").asInstanceOf[js.Promise[scala.Nothing]]
 
-@scala.inline
-def reducer[T](
+inline def reducer[T](
   state: (typings.reactAsync.mod.AsyncFulfilled[
   T, 
   typings.std.Pick[
@@ -164,13 +154,10 @@ typings.std.Pick[
 ]])]
 
 /* was `typeof useAsync` */
-@scala.inline
-def useAsync[T](options: typings.reactAsync.mod.AsyncOptions[T]): typings.reactAsync.mod.AsyncState[T, typings.reactAsync.mod.AbstractState[T]] = typings.reactAsync.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useAsync")(options.asInstanceOf[js.Any]).asInstanceOf[typings.reactAsync.mod.AsyncState[T, typings.reactAsync.mod.AbstractState[T]]]
+inline def useAsync[T](options: typings.reactAsync.mod.AsyncOptions[T]): typings.reactAsync.mod.AsyncState[T, typings.reactAsync.mod.AbstractState[T]] = typings.reactAsync.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useAsync")(options.asInstanceOf[js.Any]).asInstanceOf[typings.reactAsync.mod.AsyncState[T, typings.reactAsync.mod.AbstractState[T]]]
 /* was `typeof useAsync` */
-@scala.inline
-def useAsync[T](promiseFn: typings.reactAsync.mod.PromiseFn[T]): typings.reactAsync.mod.AsyncState[T, typings.reactAsync.mod.AbstractState[T]] = typings.reactAsync.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useAsync")(promiseFn.asInstanceOf[js.Any]).asInstanceOf[typings.reactAsync.mod.AsyncState[T, typings.reactAsync.mod.AbstractState[T]]]
-@scala.inline
-def useAsync[T](promiseFn: typings.reactAsync.mod.PromiseFn[T], options: typings.reactAsync.mod.AsyncOptions[T]): typings.reactAsync.mod.AsyncState[T, typings.reactAsync.mod.AbstractState[T]] = (typings.reactAsync.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useAsync")(promiseFn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.reactAsync.mod.AsyncState[T, typings.reactAsync.mod.AbstractState[T]]]
+inline def useAsync[T](promiseFn: typings.reactAsync.mod.PromiseFn[T]): typings.reactAsync.mod.AsyncState[T, typings.reactAsync.mod.AbstractState[T]] = typings.reactAsync.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useAsync")(promiseFn.asInstanceOf[js.Any]).asInstanceOf[typings.reactAsync.mod.AsyncState[T, typings.reactAsync.mod.AbstractState[T]]]
+inline def useAsync[T](promiseFn: typings.reactAsync.mod.PromiseFn[T], options: typings.reactAsync.mod.AsyncOptions[T]): typings.reactAsync.mod.AsyncState[T, typings.reactAsync.mod.AbstractState[T]] = (typings.reactAsync.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useAsync")(promiseFn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.reactAsync.mod.AsyncState[T, typings.reactAsync.mod.AbstractState[T]]]
 
 /**
   *
@@ -180,10 +167,8 @@ def useAsync[T](promiseFn: typings.reactAsync.mod.PromiseFn[T], options: typings
   * @returns {AsyncState<T, FetchRun<T>>}
   */
 /* was `typeof useAsyncFetch` */
-@scala.inline
-def useFetch[T](resource: typings.std.RequestInfo, init: typings.std.RequestInit): typings.reactAsync.mod.AsyncState[T, typings.reactAsync.mod.FetchRun[T]] = (typings.reactAsync.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useFetch")(resource.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[typings.reactAsync.mod.AsyncState[T, typings.reactAsync.mod.FetchRun[T]]]
-@scala.inline
-def useFetch[T](
+inline def useFetch[T](resource: typings.std.RequestInfo, init: typings.std.RequestInit): typings.reactAsync.mod.AsyncState[T, typings.reactAsync.mod.FetchRun[T]] = (typings.reactAsync.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useFetch")(resource.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[typings.reactAsync.mod.AsyncState[T, typings.reactAsync.mod.FetchRun[T]]]
+inline def useFetch[T](
   resource: typings.std.RequestInfo,
   init: typings.std.RequestInit,
   hasDeferJsonOptions: typings.reactAsync.mod.FetchOptions[T]

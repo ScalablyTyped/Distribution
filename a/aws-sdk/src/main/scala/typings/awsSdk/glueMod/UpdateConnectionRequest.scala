@@ -23,25 +23,19 @@ trait UpdateConnectionRequest extends StObject {
 }
 object UpdateConnectionRequest {
   
-  @scala.inline
-  def apply(ConnectionInput: ConnectionInput, Name: NameString): UpdateConnectionRequest = {
+  inline def apply(ConnectionInput: ConnectionInput, Name: NameString): UpdateConnectionRequest = {
     val __obj = js.Dynamic.literal(ConnectionInput = ConnectionInput.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateConnectionRequest]
   }
   
-  @scala.inline
-  implicit class UpdateConnectionRequestMutableBuilder[Self <: UpdateConnectionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateConnectionRequest](x: Self) {
     
-    @scala.inline
-    def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
+    inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
+    inline def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
-    @scala.inline
-    def setConnectionInput(value: ConnectionInput): Self = StObject.set(x, "ConnectionInput", value.asInstanceOf[js.Any])
+    inline def setConnectionInput(value: ConnectionInput): Self = StObject.set(x, "ConnectionInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

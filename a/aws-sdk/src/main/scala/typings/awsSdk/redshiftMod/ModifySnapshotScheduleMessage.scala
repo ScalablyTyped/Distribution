@@ -18,22 +18,17 @@ trait ModifySnapshotScheduleMessage extends StObject {
 }
 object ModifySnapshotScheduleMessage {
   
-  @scala.inline
-  def apply(ScheduleDefinitions: ScheduleDefinitionList, ScheduleIdentifier: String): ModifySnapshotScheduleMessage = {
+  inline def apply(ScheduleDefinitions: ScheduleDefinitionList, ScheduleIdentifier: String): ModifySnapshotScheduleMessage = {
     val __obj = js.Dynamic.literal(ScheduleDefinitions = ScheduleDefinitions.asInstanceOf[js.Any], ScheduleIdentifier = ScheduleIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifySnapshotScheduleMessage]
   }
   
-  @scala.inline
-  implicit class ModifySnapshotScheduleMessageMutableBuilder[Self <: ModifySnapshotScheduleMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ModifySnapshotScheduleMessage](x: Self) {
     
-    @scala.inline
-    def setScheduleDefinitions(value: ScheduleDefinitionList): Self = StObject.set(x, "ScheduleDefinitions", value.asInstanceOf[js.Any])
+    inline def setScheduleDefinitions(value: ScheduleDefinitionList): Self = StObject.set(x, "ScheduleDefinitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleDefinitionsVarargs(value: String*): Self = StObject.set(x, "ScheduleDefinitions", js.Array(value :_*))
+    inline def setScheduleDefinitionsVarargs(value: String*): Self = StObject.set(x, "ScheduleDefinitions", js.Array(value :_*))
     
-    @scala.inline
-    def setScheduleIdentifier(value: String): Self = StObject.set(x, "ScheduleIdentifier", value.asInstanceOf[js.Any])
+    inline def setScheduleIdentifier(value: String): Self = StObject.set(x, "ScheduleIdentifier", value.asInstanceOf[js.Any])
   }
 }

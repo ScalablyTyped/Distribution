@@ -18,25 +18,19 @@ trait ColumnError extends StObject {
 }
 object ColumnError {
   
-  @scala.inline
-  def apply(): ColumnError = {
+  inline def apply(): ColumnError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColumnError]
   }
   
-  @scala.inline
-  implicit class ColumnErrorMutableBuilder[Self <: ColumnError] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnError](x: Self) {
     
-    @scala.inline
-    def setColumnName(value: NameString): Self = StObject.set(x, "ColumnName", value.asInstanceOf[js.Any])
+    inline def setColumnName(value: NameString): Self = StObject.set(x, "ColumnName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnNameUndefined: Self = StObject.set(x, "ColumnName", js.undefined)
+    inline def setColumnNameUndefined: Self = StObject.set(x, "ColumnName", js.undefined)
     
-    @scala.inline
-    def setError(value: ErrorDetail): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
+    inline def setError(value: ErrorDetail): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
   }
 }

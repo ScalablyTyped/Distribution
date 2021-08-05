@@ -15,8 +15,7 @@ trait Validation extends StObject {
 }
 object Validation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     errorFilter: (String, String, String) => Unit,
     messages: StringDictionary[String],
     overrideMessages: Boolean
@@ -25,16 +24,12 @@ object Validation {
     __obj.asInstanceOf[Validation]
   }
   
-  @scala.inline
-  implicit class ValidationMutableBuilder[Self <: Validation] (val x: Self) extends AnyVal {
+  extension [Self <: Validation](x: Self) {
     
-    @scala.inline
-    def setErrorFilter(value: (String, String, String) => Unit): Self = StObject.set(x, "errorFilter", js.Any.fromFunction3(value))
+    inline def setErrorFilter(value: (String, String, String) => Unit): Self = StObject.set(x, "errorFilter", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setMessages(value: StringDictionary[String]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: StringDictionary[String]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrideMessages(value: Boolean): Self = StObject.set(x, "overrideMessages", value.asInstanceOf[js.Any])
+    inline def setOverrideMessages(value: Boolean): Self = StObject.set(x, "overrideMessages", value.asInstanceOf[js.Any])
   }
 }

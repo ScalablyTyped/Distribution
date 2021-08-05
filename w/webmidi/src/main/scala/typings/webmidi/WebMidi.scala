@@ -84,17 +84,14 @@ object WebMidi {
   }
   object MIDIConnectionEventInit {
     
-    @scala.inline
-    def apply(port: MIDIPort): MIDIConnectionEventInit = {
+    inline def apply(port: MIDIPort): MIDIConnectionEventInit = {
       val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[MIDIConnectionEventInit]
     }
     
-    @scala.inline
-    implicit class MIDIConnectionEventInitMutableBuilder[Self <: MIDIConnectionEventInit] (val x: Self) extends AnyVal {
+    extension [Self <: MIDIConnectionEventInit](x: Self) {
       
-      @scala.inline
-      def setPort(value: MIDIPort): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: MIDIPort): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     }
   }
   
@@ -165,20 +162,16 @@ object WebMidi {
   }
   object MIDIMessageEventInit {
     
-    @scala.inline
-    def apply(data: Uint8Array, receivedTime: Double): MIDIMessageEventInit = {
+    inline def apply(data: Uint8Array, receivedTime: Double): MIDIMessageEventInit = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], receivedTime = receivedTime.asInstanceOf[js.Any])
       __obj.asInstanceOf[MIDIMessageEventInit]
     }
     
-    @scala.inline
-    implicit class MIDIMessageEventInitMutableBuilder[Self <: MIDIMessageEventInit] (val x: Self) extends AnyVal {
+    extension [Self <: MIDIMessageEventInit](x: Self) {
       
-      @scala.inline
-      def setData(value: Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReceivedTime(value: Double): Self = StObject.set(x, "receivedTime", value.asInstanceOf[js.Any])
+      inline def setReceivedTime(value: Double): Self = StObject.set(x, "receivedTime", value.asInstanceOf[js.Any])
     }
   }
   
@@ -192,17 +185,14 @@ object WebMidi {
   }
   object MIDIOptions {
     
-    @scala.inline
-    def apply(sysex: Boolean): MIDIOptions = {
+    inline def apply(sysex: Boolean): MIDIOptions = {
       val __obj = js.Dynamic.literal(sysex = sysex.asInstanceOf[js.Any])
       __obj.asInstanceOf[MIDIOptions]
     }
     
-    @scala.inline
-    implicit class MIDIOptionsMutableBuilder[Self <: MIDIOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MIDIOptions](x: Self) {
       
-      @scala.inline
-      def setSysex(value: Boolean): Self = StObject.set(x, "sysex", value.asInstanceOf[js.Any])
+      inline def setSysex(value: Boolean): Self = StObject.set(x, "sysex", value.asInstanceOf[js.Any])
     }
   }
   
@@ -342,14 +332,11 @@ object WebMidi {
   trait MIDIPortConnectionState extends StObject
   object MIDIPortConnectionState {
     
-    @scala.inline
-    def closed: typings.webmidi.webmidiStrings.closed = "closed".asInstanceOf[typings.webmidi.webmidiStrings.closed]
+    inline def closed: typings.webmidi.webmidiStrings.closed = "closed".asInstanceOf[typings.webmidi.webmidiStrings.closed]
     
-    @scala.inline
-    def open: typings.webmidi.webmidiStrings.open = "open".asInstanceOf[typings.webmidi.webmidiStrings.open]
+    inline def open: typings.webmidi.webmidiStrings.open = "open".asInstanceOf[typings.webmidi.webmidiStrings.open]
     
-    @scala.inline
-    def pending: typings.webmidi.webmidiStrings.pending = "pending".asInstanceOf[typings.webmidi.webmidiStrings.pending]
+    inline def pending: typings.webmidi.webmidiStrings.pending = "pending".asInstanceOf[typings.webmidi.webmidiStrings.pending]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -359,11 +346,9 @@ object WebMidi {
   trait MIDIPortDeviceState extends StObject
   object MIDIPortDeviceState {
     
-    @scala.inline
-    def connected: typings.webmidi.webmidiStrings.connected = "connected".asInstanceOf[typings.webmidi.webmidiStrings.connected]
+    inline def connected: typings.webmidi.webmidiStrings.connected = "connected".asInstanceOf[typings.webmidi.webmidiStrings.connected]
     
-    @scala.inline
-    def disconnected: typings.webmidi.webmidiStrings.disconnected = "disconnected".asInstanceOf[typings.webmidi.webmidiStrings.disconnected]
+    inline def disconnected: typings.webmidi.webmidiStrings.disconnected = "disconnected".asInstanceOf[typings.webmidi.webmidiStrings.disconnected]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -373,10 +358,8 @@ object WebMidi {
   trait MIDIPortType extends StObject
   object MIDIPortType {
     
-    @scala.inline
-    def input: typings.webmidi.webmidiStrings.input = "input".asInstanceOf[typings.webmidi.webmidiStrings.input]
+    inline def input: typings.webmidi.webmidiStrings.input = "input".asInstanceOf[typings.webmidi.webmidiStrings.input]
     
-    @scala.inline
-    def output: typings.webmidi.webmidiStrings.output = "output".asInstanceOf[typings.webmidi.webmidiStrings.output]
+    inline def output: typings.webmidi.webmidiStrings.output = "output".asInstanceOf[typings.webmidi.webmidiStrings.output]
   }
 }

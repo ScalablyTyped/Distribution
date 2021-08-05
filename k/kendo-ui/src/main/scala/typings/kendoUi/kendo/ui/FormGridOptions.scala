@@ -12,25 +12,19 @@ trait FormGridOptions extends StObject {
 }
 object FormGridOptions {
   
-  @scala.inline
-  def apply(): FormGridOptions = {
+  inline def apply(): FormGridOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FormGridOptions]
   }
   
-  @scala.inline
-  implicit class FormGridOptionsMutableBuilder[Self <: FormGridOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FormGridOptions](x: Self) {
     
-    @scala.inline
-    def setCols(value: String | Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
+    inline def setCols(value: String | Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
+    inline def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
     
-    @scala.inline
-    def setGutter(value: String | Double): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
+    inline def setGutter(value: String | Double): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGutterUndefined: Self = StObject.set(x, "gutter", js.undefined)
+    inline def setGutterUndefined: Self = StObject.set(x, "gutter", js.undefined)
   }
 }

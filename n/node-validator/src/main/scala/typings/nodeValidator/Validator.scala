@@ -18,8 +18,7 @@ object Validator {
   }
   object IsObjectValidator {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       validate: (/* value */ js.Any, /* onError */ js.Function3[/* message */ String, /* childName */ String, /* childValie */ js.Any, Unit]) => Unit,
       withCustom: ValidateFn => IsObjectValidator,
       withOptional: (String, Validatable) => IsObjectValidator,
@@ -29,17 +28,13 @@ object Validator {
       __obj.asInstanceOf[IsObjectValidator]
     }
     
-    @scala.inline
-    implicit class IsObjectValidatorMutableBuilder[Self <: IsObjectValidator] (val x: Self) extends AnyVal {
+    extension [Self <: IsObjectValidator](x: Self) {
       
-      @scala.inline
-      def setWithCustom(value: ValidateFn => IsObjectValidator): Self = StObject.set(x, "withCustom", js.Any.fromFunction1(value))
+      inline def setWithCustom(value: ValidateFn => IsObjectValidator): Self = StObject.set(x, "withCustom", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWithOptional(value: (String, Validatable) => IsObjectValidator): Self = StObject.set(x, "withOptional", js.Any.fromFunction2(value))
+      inline def setWithOptional(value: (String, Validatable) => IsObjectValidator): Self = StObject.set(x, "withOptional", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWithRequired(value: (String, Validatable) => IsObjectValidator): Self = StObject.set(x, "withRequired", js.Any.fromFunction2(value))
+      inline def setWithRequired(value: (String, Validatable) => IsObjectValidator): Self = StObject.set(x, "withRequired", js.Any.fromFunction2(value))
     }
   }
   
@@ -54,19 +49,16 @@ object Validator {
   }
   object Validatable {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       validate: (/* value */ js.Any, /* onError */ js.Function3[/* message */ String, /* childName */ String, /* childValie */ js.Any, Unit]) => Unit
     ): Validatable = {
       val __obj = js.Dynamic.literal(validate = js.Any.fromFunction2(validate))
       __obj.asInstanceOf[Validatable]
     }
     
-    @scala.inline
-    implicit class ValidatableMutableBuilder[Self <: Validatable] (val x: Self) extends AnyVal {
+    extension [Self <: Validatable](x: Self) {
       
-      @scala.inline
-      def setValidate(
+      inline def setValidate(
         value: (/* value */ js.Any, /* onError */ js.Function3[/* message */ String, /* childName */ String, /* childValie */ js.Any, Unit]) => Unit
       ): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
     }

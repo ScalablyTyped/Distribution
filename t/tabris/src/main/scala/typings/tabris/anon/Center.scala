@@ -17,37 +17,27 @@ trait Center extends StObject {
 }
 object Center {
   
-  @scala.inline
-  def apply(): Center = {
+  inline def apply(): Center = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Center]
   }
   
-  @scala.inline
-  implicit class CenterMutableBuilder[Self <: Center] (val x: Self) extends AnyVal {
+  extension [Self <: Center](x: Self) {
     
-    @scala.inline
-    def setCenter(value: `true`): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: `true`): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
+    inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
-    @scala.inline
-    def setStretch(value: `true`): Self = StObject.set(x, "stretch", value.asInstanceOf[js.Any])
+    inline def setStretch(value: `true`): Self = StObject.set(x, "stretch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStretchUndefined: Self = StObject.set(x, "stretch", js.undefined)
+    inline def setStretchUndefined: Self = StObject.set(x, "stretch", js.undefined)
     
-    @scala.inline
-    def setStretchX(value: `true`): Self = StObject.set(x, "stretchX", value.asInstanceOf[js.Any])
+    inline def setStretchX(value: `true`): Self = StObject.set(x, "stretchX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStretchXUndefined: Self = StObject.set(x, "stretchX", js.undefined)
+    inline def setStretchXUndefined: Self = StObject.set(x, "stretchX", js.undefined)
     
-    @scala.inline
-    def setStretchY(value: `true`): Self = StObject.set(x, "stretchY", value.asInstanceOf[js.Any])
+    inline def setStretchY(value: `true`): Self = StObject.set(x, "stretchY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStretchYUndefined: Self = StObject.set(x, "stretchY", js.undefined)
+    inline def setStretchYUndefined: Self = StObject.set(x, "stretchY", js.undefined)
   }
 }

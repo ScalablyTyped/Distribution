@@ -12,19 +12,15 @@ trait Auth0ParseHashError
 }
 object Auth0ParseHashError {
   
-  @scala.inline
-  def apply(error: LibErrorCodes | SpecErrorCodes | String): Auth0ParseHashError = {
+  inline def apply(error: LibErrorCodes | SpecErrorCodes | String): Auth0ParseHashError = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[Auth0ParseHashError]
   }
   
-  @scala.inline
-  implicit class Auth0ParseHashErrorMutableBuilder[Self <: Auth0ParseHashError] (val x: Self) extends AnyVal {
+  extension [Self <: Auth0ParseHashError](x: Self) {
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

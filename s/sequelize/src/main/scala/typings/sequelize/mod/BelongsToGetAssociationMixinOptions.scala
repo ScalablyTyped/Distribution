@@ -23,19 +23,15 @@ trait BelongsToGetAssociationMixinOptions extends StObject {
 }
 object BelongsToGetAssociationMixinOptions {
   
-  @scala.inline
-  def apply(): BelongsToGetAssociationMixinOptions = {
+  inline def apply(): BelongsToGetAssociationMixinOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BelongsToGetAssociationMixinOptions]
   }
   
-  @scala.inline
-  implicit class BelongsToGetAssociationMixinOptionsMutableBuilder[Self <: BelongsToGetAssociationMixinOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BelongsToGetAssociationMixinOptions](x: Self) {
     
-    @scala.inline
-    def setScope(value: String | Boolean): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: String | Boolean): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
   }
 }

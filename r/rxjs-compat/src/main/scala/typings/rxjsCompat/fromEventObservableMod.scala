@@ -18,26 +18,22 @@ object fromEventObservableMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create[T](
+    inline def create[T](
       target: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EventTargetLike<T> */ js.Any,
       eventName: String
     ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def create[T](
+    inline def create[T](
       target: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EventTargetLike<T> */ js.Any,
       eventName: String,
       options: EventListenerOptions
     ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def create[T](
+    inline def create[T](
       target: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EventTargetLike<T> */ js.Any,
       eventName: String,
       options: EventListenerOptions,
       selector: js.Function1[/* repeated */ js.Any, T]
     ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], options.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def create[T](
+    inline def create[T](
       target: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EventTargetLike<T> */ js.Any,
       eventName: String,
       selector: js.Function1[/* repeated */ js.Any, T]

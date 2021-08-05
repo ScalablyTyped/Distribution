@@ -18,25 +18,19 @@ trait FederatedAuthenticationRequest extends StObject {
 }
 object FederatedAuthenticationRequest {
   
-  @scala.inline
-  def apply(): FederatedAuthenticationRequest = {
+  inline def apply(): FederatedAuthenticationRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FederatedAuthenticationRequest]
   }
   
-  @scala.inline
-  implicit class FederatedAuthenticationRequestMutableBuilder[Self <: FederatedAuthenticationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: FederatedAuthenticationRequest](x: Self) {
     
-    @scala.inline
-    def setSAMLProviderArn(value: String): Self = StObject.set(x, "SAMLProviderArn", value.asInstanceOf[js.Any])
+    inline def setSAMLProviderArn(value: String): Self = StObject.set(x, "SAMLProviderArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSAMLProviderArnUndefined: Self = StObject.set(x, "SAMLProviderArn", js.undefined)
+    inline def setSAMLProviderArnUndefined: Self = StObject.set(x, "SAMLProviderArn", js.undefined)
     
-    @scala.inline
-    def setSelfServiceSAMLProviderArn(value: String): Self = StObject.set(x, "SelfServiceSAMLProviderArn", value.asInstanceOf[js.Any])
+    inline def setSelfServiceSAMLProviderArn(value: String): Self = StObject.set(x, "SelfServiceSAMLProviderArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfServiceSAMLProviderArnUndefined: Self = StObject.set(x, "SelfServiceSAMLProviderArn", js.undefined)
+    inline def setSelfServiceSAMLProviderArnUndefined: Self = StObject.set(x, "SelfServiceSAMLProviderArn", js.undefined)
   }
 }

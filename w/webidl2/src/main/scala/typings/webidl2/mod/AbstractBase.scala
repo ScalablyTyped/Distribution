@@ -17,32 +17,24 @@ trait AbstractBase extends StObject {
 }
 object AbstractBase {
   
-  @scala.inline
-  def apply(extAttrs: js.Array[ExtendedAttribute]): AbstractBase = {
+  inline def apply(extAttrs: js.Array[ExtendedAttribute]): AbstractBase = {
     val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], parent = null)
     __obj.updateDynamic("type")(null)
     __obj.asInstanceOf[AbstractBase]
   }
   
-  @scala.inline
-  implicit class AbstractBaseMutableBuilder[Self <: AbstractBase] (val x: Self) extends AnyVal {
+  extension [Self <: AbstractBase](x: Self) {
     
-    @scala.inline
-    def setExtAttrs(value: js.Array[ExtendedAttribute]): Self = StObject.set(x, "extAttrs", value.asInstanceOf[js.Any])
+    inline def setExtAttrs(value: js.Array[ExtendedAttribute]): Self = StObject.set(x, "extAttrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtAttrsVarargs(value: ExtendedAttribute*): Self = StObject.set(x, "extAttrs", js.Array(value :_*))
+    inline def setExtAttrsVarargs(value: ExtendedAttribute*): Self = StObject.set(x, "extAttrs", js.Array(value :_*))
     
-    @scala.inline
-    def setParent(value: AbstractBase): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: AbstractBase): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentNull: Self = StObject.set(x, "parent", null)
+    inline def setParentNull: Self = StObject.set(x, "parent", null)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeNull: Self = StObject.set(x, "type", null)
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
   }
 }

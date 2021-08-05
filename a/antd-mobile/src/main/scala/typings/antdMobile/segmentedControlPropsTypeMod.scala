@@ -22,53 +22,38 @@ object segmentedControlPropsTypeMod {
   }
   object SegmentedControlPropsType {
     
-    @scala.inline
-    def apply(): SegmentedControlPropsType = {
+    inline def apply(): SegmentedControlPropsType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SegmentedControlPropsType]
     }
     
-    @scala.inline
-    implicit class SegmentedControlPropsTypeMutableBuilder[Self <: SegmentedControlPropsType] (val x: Self) extends AnyVal {
+    extension [Self <: SegmentedControlPropsType](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* e */ js.Any => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* e */ js.Any => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnValueChange(value: /* value */ String => Unit): Self = StObject.set(x, "onValueChange", js.Any.fromFunction1(value))
+      inline def setOnValueChange(value: /* value */ String => Unit): Self = StObject.set(x, "onValueChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnValueChangeUndefined: Self = StObject.set(x, "onValueChange", js.undefined)
+      inline def setOnValueChangeUndefined: Self = StObject.set(x, "onValueChange", js.undefined)
       
-      @scala.inline
-      def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
+      inline def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedIndexUndefined: Self = StObject.set(x, "selectedIndex", js.undefined)
+      inline def setSelectedIndexUndefined: Self = StObject.set(x, "selectedIndex", js.undefined)
       
-      @scala.inline
-      def setTintColor(value: String): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
+      inline def setTintColor(value: String): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
+      inline def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
       
-      @scala.inline
-      def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+      inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       
-      @scala.inline
-      def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
     }
   }
 }

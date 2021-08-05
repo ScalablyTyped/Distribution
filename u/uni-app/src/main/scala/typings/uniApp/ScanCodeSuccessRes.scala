@@ -28,37 +28,27 @@ trait ScanCodeSuccessRes extends StObject {
 }
 object ScanCodeSuccessRes {
   
-  @scala.inline
-  def apply(): ScanCodeSuccessRes = {
+  inline def apply(): ScanCodeSuccessRes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScanCodeSuccessRes]
   }
   
-  @scala.inline
-  implicit class ScanCodeSuccessResMutableBuilder[Self <: ScanCodeSuccessRes] (val x: Self) extends AnyVal {
+  extension [Self <: ScanCodeSuccessRes](x: Self) {
     
-    @scala.inline
-    def setCharSet(value: String): Self = StObject.set(x, "charSet", value.asInstanceOf[js.Any])
+    inline def setCharSet(value: String): Self = StObject.set(x, "charSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharSetUndefined: Self = StObject.set(x, "charSet", js.undefined)
+    inline def setCharSetUndefined: Self = StObject.set(x, "charSet", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     
-    @scala.inline
-    def setScanType(value: String): Self = StObject.set(x, "scanType", value.asInstanceOf[js.Any])
+    inline def setScanType(value: String): Self = StObject.set(x, "scanType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScanTypeUndefined: Self = StObject.set(x, "scanType", js.undefined)
+    inline def setScanTypeUndefined: Self = StObject.set(x, "scanType", js.undefined)
   }
 }

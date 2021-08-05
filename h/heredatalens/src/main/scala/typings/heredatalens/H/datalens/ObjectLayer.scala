@@ -53,20 +53,16 @@ object ObjectLayer {
   }
   object Clustering {
     
-    @scala.inline
-    def apply(options: Zoom => ClusteringOptions, rowToDataPoint: Row => DataPoint): Clustering = {
+    inline def apply(options: Zoom => ClusteringOptions, rowToDataPoint: Row => DataPoint): Clustering = {
       val __obj = js.Dynamic.literal(options = js.Any.fromFunction1(options), rowToDataPoint = js.Any.fromFunction1(rowToDataPoint))
       __obj.asInstanceOf[Clustering]
     }
     
-    @scala.inline
-    implicit class ClusteringMutableBuilder[Self <: Clustering] (val x: Self) extends AnyVal {
+    extension [Self <: Clustering](x: Self) {
       
-      @scala.inline
-      def setOptions(value: Zoom => ClusteringOptions): Self = StObject.set(x, "options", js.Any.fromFunction1(value))
+      inline def setOptions(value: Zoom => ClusteringOptions): Self = StObject.set(x, "options", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRowToDataPoint(value: Row => DataPoint): Self = StObject.set(x, "rowToDataPoint", js.Any.fromFunction1(value))
+      inline def setRowToDataPoint(value: Row => DataPoint): Self = StObject.set(x, "rowToDataPoint", js.Any.fromFunction1(value))
     }
   }
   
@@ -97,35 +93,26 @@ object ObjectLayer {
   }
   object ObjectStyleOptions {
     
-    @scala.inline
-    def apply(icon: Icon): ObjectStyleOptions = {
+    inline def apply(icon: Icon): ObjectStyleOptions = {
       val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any])
       __obj.asInstanceOf[ObjectStyleOptions]
     }
     
-    @scala.inline
-    implicit class ObjectStyleOptionsMutableBuilder[Self <: ObjectStyleOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ObjectStyleOptions](x: Self) {
       
-      @scala.inline
-      def setArrows(value: typings.heremaps.H.map.ArrowStyle.Options): Self = StObject.set(x, "arrows", value.asInstanceOf[js.Any])
+      inline def setArrows(value: typings.heremaps.H.map.ArrowStyle.Options): Self = StObject.set(x, "arrows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrowsUndefined: Self = StObject.set(x, "arrows", js.undefined)
+      inline def setArrowsUndefined: Self = StObject.set(x, "arrows", js.undefined)
       
-      @scala.inline
-      def setIcon(value: Icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: Icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: typings.heremaps.H.map.SpatialStyle.Options): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: typings.heremaps.H.map.SpatialStyle.Options): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+      inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+      inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     }
   }
   
@@ -159,41 +146,30 @@ object ObjectLayer {
   }
   object Options {
     
-    @scala.inline
-    def apply(rowToMapObject: (Row, Zoom) => Object): Options = {
+    inline def apply(rowToMapObject: (Row, Zoom) => Object): Options = {
       val __obj = js.Dynamic.literal(rowToMapObject = js.Any.fromFunction2(rowToMapObject))
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setClustering(value: Clustering): Self = StObject.set(x, "clustering", value.asInstanceOf[js.Any])
+      inline def setClustering(value: Clustering): Self = StObject.set(x, "clustering", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusteringUndefined: Self = StObject.set(x, "clustering", js.undefined)
+      inline def setClusteringUndefined: Self = StObject.set(x, "clustering", js.undefined)
       
-      @scala.inline
-      def setDataDomains(value: DataDomains): Self = StObject.set(x, "dataDomains", value.asInstanceOf[js.Any])
+      inline def setDataDomains(value: DataDomains): Self = StObject.set(x, "dataDomains", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataDomainsUndefined: Self = StObject.set(x, "dataDomains", js.undefined)
+      inline def setDataDomainsUndefined: Self = StObject.set(x, "dataDomains", js.undefined)
       
-      @scala.inline
-      def setDataToRows(value: /* data */ Data => js.Array[Row]): Self = StObject.set(x, "dataToRows", js.Any.fromFunction1(value))
+      inline def setDataToRows(value: /* data */ Data => js.Array[Row]): Self = StObject.set(x, "dataToRows", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDataToRowsUndefined: Self = StObject.set(x, "dataToRows", js.undefined)
+      inline def setDataToRowsUndefined: Self = StObject.set(x, "dataToRows", js.undefined)
       
-      @scala.inline
-      def setRowToMapObject(value: (Row, Zoom) => Object): Self = StObject.set(x, "rowToMapObject", js.Any.fromFunction2(value))
+      inline def setRowToMapObject(value: (Row, Zoom) => Object): Self = StObject.set(x, "rowToMapObject", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRowToStyle(value: (/* row */ Row, /* z */ Zoom, /* styleState */ StyleState) => ObjectStyleOptions): Self = StObject.set(x, "rowToStyle", js.Any.fromFunction3(value))
+      inline def setRowToStyle(value: (/* row */ Row, /* z */ Zoom, /* styleState */ StyleState) => ObjectStyleOptions): Self = StObject.set(x, "rowToStyle", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRowToStyleUndefined: Self = StObject.set(x, "rowToStyle", js.undefined)
+      inline def setRowToStyleUndefined: Self = StObject.set(x, "rowToStyle", js.undefined)
     }
   }
   
@@ -214,26 +190,20 @@ object ObjectLayer {
   }
   object Row {
     
-    @scala.inline
-    def apply(getPosition: () => Point, isCluster: () => Boolean, lat: Double, lng: Double): Row = {
+    inline def apply(getPosition: () => Point, isCluster: () => Boolean, lat: Double, lng: Double): Row = {
       val __obj = js.Dynamic.literal(getPosition = js.Any.fromFunction0(getPosition), isCluster = js.Any.fromFunction0(isCluster), lat = lat.asInstanceOf[js.Any], lng = lng.asInstanceOf[js.Any])
       __obj.asInstanceOf[Row]
     }
     
-    @scala.inline
-    implicit class RowMutableBuilder[Self <: Row] (val x: Self) extends AnyVal {
+    extension [Self <: Row](x: Self) {
       
-      @scala.inline
-      def setGetPosition(value: () => Point): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
+      inline def setGetPosition(value: () => Point): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsCluster(value: () => Boolean): Self = StObject.set(x, "isCluster", js.Any.fromFunction0(value))
+      inline def setIsCluster(value: () => Boolean): Self = StObject.set(x, "isCluster", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
+      inline def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLng(value: Double): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
+      inline def setLng(value: Double): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
     }
   }
   

@@ -13,19 +13,15 @@ trait CreateOrganizationalUnitResponse extends StObject {
 }
 object CreateOrganizationalUnitResponse {
   
-  @scala.inline
-  def apply(): CreateOrganizationalUnitResponse = {
+  inline def apply(): CreateOrganizationalUnitResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateOrganizationalUnitResponse]
   }
   
-  @scala.inline
-  implicit class CreateOrganizationalUnitResponseMutableBuilder[Self <: CreateOrganizationalUnitResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateOrganizationalUnitResponse](x: Self) {
     
-    @scala.inline
-    def setOrganizationalUnit(value: OrganizationalUnit): Self = StObject.set(x, "OrganizationalUnit", value.asInstanceOf[js.Any])
+    inline def setOrganizationalUnit(value: OrganizationalUnit): Self = StObject.set(x, "OrganizationalUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationalUnitUndefined: Self = StObject.set(x, "OrganizationalUnit", js.undefined)
+    inline def setOrganizationalUnitUndefined: Self = StObject.set(x, "OrganizationalUnit", js.undefined)
   }
 }

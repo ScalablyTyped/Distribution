@@ -15,19 +15,15 @@ trait PlotColumnDataLabelsAnimationOptions extends StObject {
 }
 object PlotColumnDataLabelsAnimationOptions {
   
-  @scala.inline
-  def apply(): PlotColumnDataLabelsAnimationOptions = {
+  inline def apply(): PlotColumnDataLabelsAnimationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotColumnDataLabelsAnimationOptions]
   }
   
-  @scala.inline
-  implicit class PlotColumnDataLabelsAnimationOptionsMutableBuilder[Self <: PlotColumnDataLabelsAnimationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotColumnDataLabelsAnimationOptions](x: Self) {
     
-    @scala.inline
-    def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
+    inline def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
+    inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
   }
 }

@@ -80,8 +80,7 @@ object Cache {
   }
   object BaseCache {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       add: (String, js.Any) => BaseCache,
       destroy: () => Unit,
       entries: Map[String, js.Any],
@@ -96,35 +95,25 @@ object Cache {
       __obj.asInstanceOf[BaseCache]
     }
     
-    @scala.inline
-    implicit class BaseCacheMutableBuilder[Self <: BaseCache] (val x: Self) extends AnyVal {
+    extension [Self <: BaseCache](x: Self) {
       
-      @scala.inline
-      def setAdd(value: (String, js.Any) => BaseCache): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+      inline def setAdd(value: (String, js.Any) => BaseCache): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEntries(value: Map[String, js.Any]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+      inline def setEntries(value: Map[String, js.Any]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvents(value: EventEmitter): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: EventEmitter): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExists(value: String => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction1(value))
+      inline def setExists(value: String => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetKeys(value: () => js.Array[String]): Self = StObject.set(x, "getKeys", js.Any.fromFunction0(value))
+      inline def setGetKeys(value: () => js.Array[String]): Self = StObject.set(x, "getKeys", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+      inline def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemove(value: String => BaseCache): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+      inline def setRemove(value: String => BaseCache): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     }
   }
   
@@ -175,7 +164,7 @@ object Cache {
     /**
       * A reference to the Phaser.Game instance that owns this CacheManager.
       */
-    var game: Game
+    /* protected */ var game: Game
     
     /**
       * A Cache storing all html files, typically added via the Loader.
@@ -225,8 +214,7 @@ object Cache {
   }
   object CacheManager {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addCustom: String => BaseCache,
       audio: BaseCache,
       binary: BaseCache,
@@ -248,56 +236,39 @@ object Cache {
       __obj.asInstanceOf[CacheManager]
     }
     
-    @scala.inline
-    implicit class CacheManagerMutableBuilder[Self <: CacheManager] (val x: Self) extends AnyVal {
+    extension [Self <: CacheManager](x: Self) {
       
-      @scala.inline
-      def setAddCustom(value: String => BaseCache): Self = StObject.set(x, "addCustom", js.Any.fromFunction1(value))
+      inline def setAddCustom(value: String => BaseCache): Self = StObject.set(x, "addCustom", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAudio(value: BaseCache): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+      inline def setAudio(value: BaseCache): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinary(value: BaseCache): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
+      inline def setBinary(value: BaseCache): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBitmapFont(value: BaseCache): Self = StObject.set(x, "bitmapFont", value.asInstanceOf[js.Any])
+      inline def setBitmapFont(value: BaseCache): Self = StObject.set(x, "bitmapFont", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustom(value: StringDictionary[BaseCache]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+      inline def setCustom(value: StringDictionary[BaseCache]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGame(value: Game): Self = StObject.set(x, "game", value.asInstanceOf[js.Any])
+      inline def setGame(value: Game): Self = StObject.set(x, "game", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtml(value: BaseCache): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      inline def setHtml(value: BaseCache): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJson(value: BaseCache): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: BaseCache): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObj(value: BaseCache): Self = StObject.set(x, "obj", value.asInstanceOf[js.Any])
+      inline def setObj(value: BaseCache): Self = StObject.set(x, "obj", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhysics(value: BaseCache): Self = StObject.set(x, "physics", value.asInstanceOf[js.Any])
+      inline def setPhysics(value: BaseCache): Self = StObject.set(x, "physics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShader(value: BaseCache): Self = StObject.set(x, "shader", value.asInstanceOf[js.Any])
+      inline def setShader(value: BaseCache): Self = StObject.set(x, "shader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: BaseCache): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: BaseCache): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTilemap(value: BaseCache): Self = StObject.set(x, "tilemap", value.asInstanceOf[js.Any])
+      inline def setTilemap(value: BaseCache): Self = StObject.set(x, "tilemap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVideo(value: BaseCache): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+      inline def setVideo(value: BaseCache): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXml(value: BaseCache): Self = StObject.set(x, "xml", value.asInstanceOf[js.Any])
+      inline def setXml(value: BaseCache): Self = StObject.set(x, "xml", value.asInstanceOf[js.Any])
     }
   }
 }

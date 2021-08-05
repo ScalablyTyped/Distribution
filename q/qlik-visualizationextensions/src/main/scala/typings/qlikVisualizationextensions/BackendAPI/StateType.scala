@@ -17,27 +17,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StateType extends StObject
 object StateType {
   
-  @scala.inline
-  def A: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.A = "A".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.A]
+  inline def A: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.A = "A".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.A]
   
-  @scala.inline
-  def D: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.D = "D".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.D]
+  inline def D: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.D = "D".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.D]
   
-  @scala.inline
-  def L: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.L = "L".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.L]
+  inline def L: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.L = "L".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.L]
   
-  @scala.inline
-  def O: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.O = "O".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.O]
+  inline def O: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.O = "O".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.O]
   
-  @scala.inline
-  def S: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.S = "S".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.S]
+  inline def S: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.S = "S".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.S]
   
-  @scala.inline
-  def X: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.X = "X".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.X]
+  inline def X: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.X = "X".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.X]
   
-  @scala.inline
-  def XL: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.XL = "XL".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.XL]
+  inline def XL: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.XL = "XL".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.XL]
   
-  @scala.inline
-  def XS: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.XS = "XS".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.XS]
+  inline def XS: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.XS = "XS".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.XS]
 }

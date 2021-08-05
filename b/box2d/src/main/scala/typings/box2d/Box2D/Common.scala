@@ -94,8 +94,7 @@ object Common {
     }
     object b2Mat22 {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         Abs: () => Unit,
         AddM: b2Mat22 => Unit,
         Copy: () => b2Mat22,
@@ -114,47 +113,33 @@ object Common {
         __obj.asInstanceOf[b2Mat22]
       }
       
-      @scala.inline
-      implicit class b2Mat22MutableBuilder[Self <: b2Mat22] (val x: Self) extends AnyVal {
+      extension [Self <: b2Mat22](x: Self) {
         
-        @scala.inline
-        def setAbs(value: () => Unit): Self = StObject.set(x, "Abs", js.Any.fromFunction0(value))
+        inline def setAbs(value: () => Unit): Self = StObject.set(x, "Abs", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAddM(value: b2Mat22 => Unit): Self = StObject.set(x, "AddM", js.Any.fromFunction1(value))
+        inline def setAddM(value: b2Mat22 => Unit): Self = StObject.set(x, "AddM", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setCol1(value: b2Vec2): Self = StObject.set(x, "col1", value.asInstanceOf[js.Any])
+        inline def setCol1(value: b2Vec2): Self = StObject.set(x, "col1", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCol2(value: b2Vec2): Self = StObject.set(x, "col2", value.asInstanceOf[js.Any])
+        inline def setCol2(value: b2Vec2): Self = StObject.set(x, "col2", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCopy(value: () => b2Mat22): Self = StObject.set(x, "Copy", js.Any.fromFunction0(value))
+        inline def setCopy(value: () => b2Mat22): Self = StObject.set(x, "Copy", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetAngle(value: () => Double): Self = StObject.set(x, "GetAngle", js.Any.fromFunction0(value))
+        inline def setGetAngle(value: () => Double): Self = StObject.set(x, "GetAngle", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetInverse(value: b2Mat22 => b2Mat22): Self = StObject.set(x, "GetInverse", js.Any.fromFunction1(value))
+        inline def setGetInverse(value: b2Mat22 => b2Mat22): Self = StObject.set(x, "GetInverse", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSet(value: Double => Unit): Self = StObject.set(x, "Set", js.Any.fromFunction1(value))
+        inline def setSet(value: Double => Unit): Self = StObject.set(x, "Set", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetIdentity(value: () => Unit): Self = StObject.set(x, "SetIdentity", js.Any.fromFunction0(value))
+        inline def setSetIdentity(value: () => Unit): Self = StObject.set(x, "SetIdentity", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setSetM(value: b2Mat22 => Unit): Self = StObject.set(x, "SetM", js.Any.fromFunction1(value))
+        inline def setSetM(value: b2Mat22 => Unit): Self = StObject.set(x, "SetM", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetVV(value: (b2Vec2, b2Vec2) => Unit): Self = StObject.set(x, "SetVV", js.Any.fromFunction2(value))
+        inline def setSetVV(value: (b2Vec2, b2Vec2) => Unit): Self = StObject.set(x, "SetVV", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setSetZero(value: () => Unit): Self = StObject.set(x, "SetZero", js.Any.fromFunction0(value))
+        inline def setSetZero(value: () => Unit): Self = StObject.set(x, "SetZero", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setSolve(value: (b2Vec2, Double, Double) => b2Vec2): Self = StObject.set(x, "Solve", js.Any.fromFunction3(value))
+        inline def setSolve(value: (b2Vec2, Double, Double) => b2Vec2): Self = StObject.set(x, "Solve", js.Any.fromFunction3(value))
       }
     }
     
@@ -232,8 +217,7 @@ object Common {
     }
     object b2Mat33 {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         AddM: b2Mat33 => Unit,
         Copy: () => b2Mat33,
         SetIdentity: () => Unit,
@@ -250,41 +234,29 @@ object Common {
         __obj.asInstanceOf[b2Mat33]
       }
       
-      @scala.inline
-      implicit class b2Mat33MutableBuilder[Self <: b2Mat33] (val x: Self) extends AnyVal {
+      extension [Self <: b2Mat33](x: Self) {
         
-        @scala.inline
-        def setAddM(value: b2Mat33 => Unit): Self = StObject.set(x, "AddM", js.Any.fromFunction1(value))
+        inline def setAddM(value: b2Mat33 => Unit): Self = StObject.set(x, "AddM", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setCol1(value: b2Vec3): Self = StObject.set(x, "col1", value.asInstanceOf[js.Any])
+        inline def setCol1(value: b2Vec3): Self = StObject.set(x, "col1", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCol2(value: b2Vec3): Self = StObject.set(x, "col2", value.asInstanceOf[js.Any])
+        inline def setCol2(value: b2Vec3): Self = StObject.set(x, "col2", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCol3(value: b2Vec3): Self = StObject.set(x, "col3", value.asInstanceOf[js.Any])
+        inline def setCol3(value: b2Vec3): Self = StObject.set(x, "col3", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCopy(value: () => b2Mat33): Self = StObject.set(x, "Copy", js.Any.fromFunction0(value))
+        inline def setCopy(value: () => b2Mat33): Self = StObject.set(x, "Copy", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setSetIdentity(value: () => Unit): Self = StObject.set(x, "SetIdentity", js.Any.fromFunction0(value))
+        inline def setSetIdentity(value: () => Unit): Self = StObject.set(x, "SetIdentity", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setSetM(value: b2Mat33 => Unit): Self = StObject.set(x, "SetM", js.Any.fromFunction1(value))
+        inline def setSetM(value: b2Mat33 => Unit): Self = StObject.set(x, "SetM", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetVVV(value: (b2Vec3, b2Vec3, b2Vec3) => Unit): Self = StObject.set(x, "SetVVV", js.Any.fromFunction3(value))
+        inline def setSetVVV(value: (b2Vec3, b2Vec3, b2Vec3) => Unit): Self = StObject.set(x, "SetVVV", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setSetZero(value: () => Unit): Self = StObject.set(x, "SetZero", js.Any.fromFunction0(value))
+        inline def setSetZero(value: () => Unit): Self = StObject.set(x, "SetZero", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setSolve22(value: (b2Vec2, Double, Double) => b2Vec2): Self = StObject.set(x, "Solve22", js.Any.fromFunction3(value))
+        inline def setSolve22(value: (b2Vec2, Double, Double) => b2Vec2): Self = StObject.set(x, "Solve22", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setSolve33(value: (b2Vec3, Double, Double, Double) => b2Vec3): Self = StObject.set(x, "Solve33", js.Any.fromFunction4(value))
+        inline def setSolve33(value: (b2Vec3, Double, Double, Double) => b2Vec3): Self = StObject.set(x, "Solve33", js.Any.fromFunction4(value))
       }
     }
     
@@ -348,8 +320,7 @@ object Common {
     }
     object b2Sweep {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         Advance: Double => Unit,
         Copy: () => b2Sweep,
         GetTransform: (b2Transform, Double) => Unit,
@@ -365,38 +336,27 @@ object Common {
         __obj.asInstanceOf[b2Sweep]
       }
       
-      @scala.inline
-      implicit class b2SweepMutableBuilder[Self <: b2Sweep] (val x: Self) extends AnyVal {
+      extension [Self <: b2Sweep](x: Self) {
         
-        @scala.inline
-        def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+        inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setA0(value: Double): Self = StObject.set(x, "a0", value.asInstanceOf[js.Any])
+        inline def setA0(value: Double): Self = StObject.set(x, "a0", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAdvance(value: Double => Unit): Self = StObject.set(x, "Advance", js.Any.fromFunction1(value))
+        inline def setAdvance(value: Double => Unit): Self = StObject.set(x, "Advance", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setC(value: b2Vec2): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
+        inline def setC(value: b2Vec2): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setC0(value: b2Vec2): Self = StObject.set(x, "c0", value.asInstanceOf[js.Any])
+        inline def setC0(value: b2Vec2): Self = StObject.set(x, "c0", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCopy(value: () => b2Sweep): Self = StObject.set(x, "Copy", js.Any.fromFunction0(value))
+        inline def setCopy(value: () => b2Sweep): Self = StObject.set(x, "Copy", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetTransform(value: (b2Transform, Double) => Unit): Self = StObject.set(x, "GetTransform", js.Any.fromFunction2(value))
+        inline def setGetTransform(value: (b2Transform, Double) => Unit): Self = StObject.set(x, "GetTransform", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setLocalCenter(value: b2Vec2): Self = StObject.set(x, "localCenter", value.asInstanceOf[js.Any])
+        inline def setLocalCenter(value: b2Vec2): Self = StObject.set(x, "localCenter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSet(value: b2Sweep => Unit): Self = StObject.set(x, "Set", js.Any.fromFunction1(value))
+        inline def setSet(value: b2Sweep => Unit): Self = StObject.set(x, "Set", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setT0(value: b2Vec2): Self = StObject.set(x, "t0", value.asInstanceOf[js.Any])
+        inline def setT0(value: b2Vec2): Self = StObject.set(x, "t0", value.asInstanceOf[js.Any])
       }
     }
     
@@ -438,8 +398,7 @@ object Common {
     }
     object b2Transform {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         GetAngle: () => Double,
         Initialize: (b2Vec2, b2Mat22) => Unit,
         R: b2Mat22,
@@ -451,26 +410,19 @@ object Common {
         __obj.asInstanceOf[b2Transform]
       }
       
-      @scala.inline
-      implicit class b2TransformMutableBuilder[Self <: b2Transform] (val x: Self) extends AnyVal {
+      extension [Self <: b2Transform](x: Self) {
         
-        @scala.inline
-        def setGetAngle(value: () => Double): Self = StObject.set(x, "GetAngle", js.Any.fromFunction0(value))
+        inline def setGetAngle(value: () => Double): Self = StObject.set(x, "GetAngle", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setInitialize(value: (b2Vec2, b2Mat22) => Unit): Self = StObject.set(x, "Initialize", js.Any.fromFunction2(value))
+        inline def setInitialize(value: (b2Vec2, b2Mat22) => Unit): Self = StObject.set(x, "Initialize", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setPosition(value: b2Vec2): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+        inline def setPosition(value: b2Vec2): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setR(value: b2Mat22): Self = StObject.set(x, "R", value.asInstanceOf[js.Any])
+        inline def setR(value: b2Mat22): Self = StObject.set(x, "R", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSet(value: b2Transform => Unit): Self = StObject.set(x, "Set", js.Any.fromFunction1(value))
+        inline def setSet(value: b2Transform => Unit): Self = StObject.set(x, "Set", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetIdentity(value: () => Unit): Self = StObject.set(x, "SetIdentity", js.Any.fromFunction0(value))
+        inline def setSetIdentity(value: () => Unit): Self = StObject.set(x, "SetIdentity", js.Any.fromFunction0(value))
       }
     }
     
@@ -722,29 +674,22 @@ object Common {
   }
   object b2Color {
     
-    @scala.inline
-    def apply(Set: (Double, Double, Double) => Unit, b: Double, color: Double, g: Double, r: Double): b2Color = {
+    inline def apply(Set: (Double, Double, Double) => Unit, b: Double, color: Double, g: Double, r: Double): b2Color = {
       val __obj = js.Dynamic.literal(Set = js.Any.fromFunction3(Set), b = b.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
       __obj.asInstanceOf[b2Color]
     }
     
-    @scala.inline
-    implicit class b2ColorMutableBuilder[Self <: b2Color] (val x: Self) extends AnyVal {
+    extension [Self <: b2Color](x: Self) {
       
-      @scala.inline
-      def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+      inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColor(value: Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
+      inline def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+      inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSet(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "Set", js.Any.fromFunction3(value))
+      inline def setSet(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "Set", js.Any.fromFunction3(value))
     }
   }
   

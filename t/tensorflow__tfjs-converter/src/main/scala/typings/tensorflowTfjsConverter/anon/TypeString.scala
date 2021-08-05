@@ -12,20 +12,16 @@ trait TypeString extends StObject {
 }
 object TypeString {
   
-  @scala.inline
-  def apply(items: Type, `type`: String): TypeString = {
+  inline def apply(items: Type, `type`: String): TypeString = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeString]
   }
   
-  @scala.inline
-  implicit class TypeStringMutableBuilder[Self <: TypeString] (val x: Self) extends AnyVal {
+  extension [Self <: TypeString](x: Self) {
     
-    @scala.inline
-    def setItems(value: Type): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: Type): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -27,34 +27,25 @@ trait AxisTickLineCfg extends StObject {
 }
 object AxisTickLineCfg {
   
-  @scala.inline
-  def apply(): AxisTickLineCfg = {
+  inline def apply(): AxisTickLineCfg = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AxisTickLineCfg]
   }
   
-  @scala.inline
-  implicit class AxisTickLineCfgMutableBuilder[Self <: AxisTickLineCfg] (val x: Self) extends AnyVal {
+  extension [Self <: AxisTickLineCfg](x: Self) {
     
-    @scala.inline
-    def setAlignTick(value: Boolean): Self = StObject.set(x, "alignTick", value.asInstanceOf[js.Any])
+    inline def setAlignTick(value: Boolean): Self = StObject.set(x, "alignTick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignTickUndefined: Self = StObject.set(x, "alignTick", js.undefined)
+    inline def setAlignTickUndefined: Self = StObject.set(x, "alignTick", js.undefined)
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
-    @scala.inline
-    def setStyle(value: ShapeAttrs | ShapeAttrsCallback): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: ShapeAttrs | ShapeAttrsCallback): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleFunction3(value: (/* item */ js.Any, /* index */ Double, /* items */ js.Array[js.Any]) => ShapeAttrs): Self = StObject.set(x, "style", js.Any.fromFunction3(value))
+    inline def setStyleFunction3(value: (/* item */ js.Any, /* index */ Double, /* items */ js.Array[js.Any]) => ShapeAttrs): Self = StObject.set(x, "style", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

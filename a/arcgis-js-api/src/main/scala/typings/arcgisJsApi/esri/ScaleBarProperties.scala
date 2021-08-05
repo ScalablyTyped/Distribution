@@ -43,37 +43,27 @@ trait ScaleBarProperties
 }
 object ScaleBarProperties {
   
-  @scala.inline
-  def apply(): ScaleBarProperties = {
+  inline def apply(): ScaleBarProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScaleBarProperties]
   }
   
-  @scala.inline
-  implicit class ScaleBarPropertiesMutableBuilder[Self <: ScaleBarProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ScaleBarProperties](x: Self) {
     
-    @scala.inline
-    def setStyle(value: ruler | line): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: ruler | line): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setUnit(value: `non-metric` | metric | dual): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: `non-metric` | metric | dual): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+    inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     
-    @scala.inline
-    def setView(value: MapViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewModel(value: ScaleBarViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
+    inline def setViewModel(value: ScaleBarViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
+    inline def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

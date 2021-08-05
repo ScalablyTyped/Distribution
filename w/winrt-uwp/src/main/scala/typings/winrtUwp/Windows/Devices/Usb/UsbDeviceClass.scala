@@ -18,22 +18,17 @@ trait UsbDeviceClass extends StObject {
 }
 object UsbDeviceClass {
   
-  @scala.inline
-  def apply(classCode: Double, protocolCode: Double, subclassCode: Double): UsbDeviceClass = {
+  inline def apply(classCode: Double, protocolCode: Double, subclassCode: Double): UsbDeviceClass = {
     val __obj = js.Dynamic.literal(classCode = classCode.asInstanceOf[js.Any], protocolCode = protocolCode.asInstanceOf[js.Any], subclassCode = subclassCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsbDeviceClass]
   }
   
-  @scala.inline
-  implicit class UsbDeviceClassMutableBuilder[Self <: UsbDeviceClass] (val x: Self) extends AnyVal {
+  extension [Self <: UsbDeviceClass](x: Self) {
     
-    @scala.inline
-    def setClassCode(value: Double): Self = StObject.set(x, "classCode", value.asInstanceOf[js.Any])
+    inline def setClassCode(value: Double): Self = StObject.set(x, "classCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolCode(value: Double): Self = StObject.set(x, "protocolCode", value.asInstanceOf[js.Any])
+    inline def setProtocolCode(value: Double): Self = StObject.set(x, "protocolCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubclassCode(value: Double): Self = StObject.set(x, "subclassCode", value.asInstanceOf[js.Any])
+    inline def setSubclassCode(value: Double): Self = StObject.set(x, "subclassCode", value.asInstanceOf[js.Any])
   }
 }

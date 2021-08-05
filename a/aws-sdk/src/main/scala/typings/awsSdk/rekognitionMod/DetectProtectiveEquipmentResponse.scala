@@ -23,34 +23,25 @@ trait DetectProtectiveEquipmentResponse extends StObject {
 }
 object DetectProtectiveEquipmentResponse {
   
-  @scala.inline
-  def apply(): DetectProtectiveEquipmentResponse = {
+  inline def apply(): DetectProtectiveEquipmentResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DetectProtectiveEquipmentResponse]
   }
   
-  @scala.inline
-  implicit class DetectProtectiveEquipmentResponseMutableBuilder[Self <: DetectProtectiveEquipmentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DetectProtectiveEquipmentResponse](x: Self) {
     
-    @scala.inline
-    def setPersons(value: ProtectiveEquipmentPersons): Self = StObject.set(x, "Persons", value.asInstanceOf[js.Any])
+    inline def setPersons(value: ProtectiveEquipmentPersons): Self = StObject.set(x, "Persons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersonsUndefined: Self = StObject.set(x, "Persons", js.undefined)
+    inline def setPersonsUndefined: Self = StObject.set(x, "Persons", js.undefined)
     
-    @scala.inline
-    def setPersonsVarargs(value: ProtectiveEquipmentPerson*): Self = StObject.set(x, "Persons", js.Array(value :_*))
+    inline def setPersonsVarargs(value: ProtectiveEquipmentPerson*): Self = StObject.set(x, "Persons", js.Array(value :_*))
     
-    @scala.inline
-    def setProtectiveEquipmentModelVersion(value: String): Self = StObject.set(x, "ProtectiveEquipmentModelVersion", value.asInstanceOf[js.Any])
+    inline def setProtectiveEquipmentModelVersion(value: String): Self = StObject.set(x, "ProtectiveEquipmentModelVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtectiveEquipmentModelVersionUndefined: Self = StObject.set(x, "ProtectiveEquipmentModelVersion", js.undefined)
+    inline def setProtectiveEquipmentModelVersionUndefined: Self = StObject.set(x, "ProtectiveEquipmentModelVersion", js.undefined)
     
-    @scala.inline
-    def setSummary(value: ProtectiveEquipmentSummary): Self = StObject.set(x, "Summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: ProtectiveEquipmentSummary): Self = StObject.set(x, "Summary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryUndefined: Self = StObject.set(x, "Summary", js.undefined)
+    inline def setSummaryUndefined: Self = StObject.set(x, "Summary", js.undefined)
   }
 }

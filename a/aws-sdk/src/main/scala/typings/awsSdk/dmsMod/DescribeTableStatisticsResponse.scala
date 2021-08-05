@@ -23,34 +23,25 @@ trait DescribeTableStatisticsResponse extends StObject {
 }
 object DescribeTableStatisticsResponse {
   
-  @scala.inline
-  def apply(): DescribeTableStatisticsResponse = {
+  inline def apply(): DescribeTableStatisticsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeTableStatisticsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeTableStatisticsResponseMutableBuilder[Self <: DescribeTableStatisticsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTableStatisticsResponse](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setReplicationTaskArn(value: String): Self = StObject.set(x, "ReplicationTaskArn", value.asInstanceOf[js.Any])
+    inline def setReplicationTaskArn(value: String): Self = StObject.set(x, "ReplicationTaskArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationTaskArnUndefined: Self = StObject.set(x, "ReplicationTaskArn", js.undefined)
+    inline def setReplicationTaskArnUndefined: Self = StObject.set(x, "ReplicationTaskArn", js.undefined)
     
-    @scala.inline
-    def setTableStatistics(value: TableStatisticsList): Self = StObject.set(x, "TableStatistics", value.asInstanceOf[js.Any])
+    inline def setTableStatistics(value: TableStatisticsList): Self = StObject.set(x, "TableStatistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableStatisticsUndefined: Self = StObject.set(x, "TableStatistics", js.undefined)
+    inline def setTableStatisticsUndefined: Self = StObject.set(x, "TableStatistics", js.undefined)
     
-    @scala.inline
-    def setTableStatisticsVarargs(value: TableStatistics*): Self = StObject.set(x, "TableStatistics", js.Array(value :_*))
+    inline def setTableStatisticsVarargs(value: TableStatistics*): Self = StObject.set(x, "TableStatistics", js.Array(value :_*))
   }
 }

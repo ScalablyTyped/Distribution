@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PresenceMode extends StObject
 object PresenceMode {
   
-  @scala.inline
-  def forbidden: typings.joi.joiStrings.forbidden = "forbidden".asInstanceOf[typings.joi.joiStrings.forbidden]
+  inline def forbidden: typings.joi.joiStrings.forbidden = "forbidden".asInstanceOf[typings.joi.joiStrings.forbidden]
   
-  @scala.inline
-  def optional: typings.joi.joiStrings.optional = "optional".asInstanceOf[typings.joi.joiStrings.optional]
+  inline def optional: typings.joi.joiStrings.optional = "optional".asInstanceOf[typings.joi.joiStrings.optional]
   
-  @scala.inline
-  def required: typings.joi.joiStrings.required = "required".asInstanceOf[typings.joi.joiStrings.required]
+  inline def required: typings.joi.joiStrings.required = "required".asInstanceOf[typings.joi.joiStrings.required]
 }

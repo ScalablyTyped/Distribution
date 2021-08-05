@@ -15,8 +15,7 @@ trait NumberingRule
      with NumberingLevel
 object NumberingRule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Alignment: HorizontalAlignment,
     BulletFontName: String,
     BulletId: Double,

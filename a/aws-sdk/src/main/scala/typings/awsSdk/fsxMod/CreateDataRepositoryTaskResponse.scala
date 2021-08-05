@@ -13,19 +13,15 @@ trait CreateDataRepositoryTaskResponse extends StObject {
 }
 object CreateDataRepositoryTaskResponse {
   
-  @scala.inline
-  def apply(): CreateDataRepositoryTaskResponse = {
+  inline def apply(): CreateDataRepositoryTaskResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateDataRepositoryTaskResponse]
   }
   
-  @scala.inline
-  implicit class CreateDataRepositoryTaskResponseMutableBuilder[Self <: CreateDataRepositoryTaskResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDataRepositoryTaskResponse](x: Self) {
     
-    @scala.inline
-    def setDataRepositoryTask(value: DataRepositoryTask): Self = StObject.set(x, "DataRepositoryTask", value.asInstanceOf[js.Any])
+    inline def setDataRepositoryTask(value: DataRepositoryTask): Self = StObject.set(x, "DataRepositoryTask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataRepositoryTaskUndefined: Self = StObject.set(x, "DataRepositoryTask", js.undefined)
+    inline def setDataRepositoryTaskUndefined: Self = StObject.set(x, "DataRepositoryTask", js.undefined)
   }
 }

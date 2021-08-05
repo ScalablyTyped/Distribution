@@ -20,49 +20,35 @@ trait BoardOption extends StObject {
 }
 object BoardOption {
   
-  @scala.inline
-  def apply(): BoardOption = {
+  inline def apply(): BoardOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BoardOption]
   }
   
-  @scala.inline
-  implicit class BoardOptionMutableBuilder[Self <: BoardOption] (val x: Self) extends AnyVal {
+  extension [Self <: BoardOption](x: Self) {
     
-    @scala.inline
-    def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+    inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
-    @scala.inline
-    def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setIo(value: js.Any): Self = StObject.set(x, "io", value.asInstanceOf[js.Any])
+    inline def setIo(value: js.Any): Self = StObject.set(x, "io", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIoUndefined: Self = StObject.set(x, "io", js.undefined)
+    inline def setIoUndefined: Self = StObject.set(x, "io", js.undefined)
     
-    @scala.inline
-    def setPort(value: String | js.Any): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: String | js.Any): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
-    @scala.inline
-    def setRepl(value: Boolean): Self = StObject.set(x, "repl", value.asInstanceOf[js.Any])
+    inline def setRepl(value: Boolean): Self = StObject.set(x, "repl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplUndefined: Self = StObject.set(x, "repl", js.undefined)
+    inline def setReplUndefined: Self = StObject.set(x, "repl", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

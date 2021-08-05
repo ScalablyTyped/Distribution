@@ -28,8 +28,7 @@ trait TopicalExploreFeedResponseThumbnails extends StObject {
 }
 object TopicalExploreFeedResponseThumbnails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     max_thumbnails_per_sprite: Double,
     rendered_width: Double,
     sprite_height: Double,
@@ -45,40 +44,28 @@ object TopicalExploreFeedResponseThumbnails {
     __obj.asInstanceOf[TopicalExploreFeedResponseThumbnails]
   }
   
-  @scala.inline
-  implicit class TopicalExploreFeedResponseThumbnailsMutableBuilder[Self <: TopicalExploreFeedResponseThumbnails] (val x: Self) extends AnyVal {
+  extension [Self <: TopicalExploreFeedResponseThumbnails](x: Self) {
     
-    @scala.inline
-    def setMax_thumbnails_per_sprite(value: Double): Self = StObject.set(x, "max_thumbnails_per_sprite", value.asInstanceOf[js.Any])
+    inline def setMax_thumbnails_per_sprite(value: Double): Self = StObject.set(x, "max_thumbnails_per_sprite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRendered_width(value: Double): Self = StObject.set(x, "rendered_width", value.asInstanceOf[js.Any])
+    inline def setRendered_width(value: Double): Self = StObject.set(x, "rendered_width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSprite_height(value: Double): Self = StObject.set(x, "sprite_height", value.asInstanceOf[js.Any])
+    inline def setSprite_height(value: Double): Self = StObject.set(x, "sprite_height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSprite_urls(value: js.Array[String]): Self = StObject.set(x, "sprite_urls", value.asInstanceOf[js.Any])
+    inline def setSprite_urls(value: js.Array[String]): Self = StObject.set(x, "sprite_urls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSprite_urlsVarargs(value: String*): Self = StObject.set(x, "sprite_urls", js.Array(value :_*))
+    inline def setSprite_urlsVarargs(value: String*): Self = StObject.set(x, "sprite_urls", js.Array(value :_*))
     
-    @scala.inline
-    def setSprite_width(value: Double): Self = StObject.set(x, "sprite_width", value.asInstanceOf[js.Any])
+    inline def setSprite_width(value: Double): Self = StObject.set(x, "sprite_width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnail_duration(value: String): Self = StObject.set(x, "thumbnail_duration", value.asInstanceOf[js.Any])
+    inline def setThumbnail_duration(value: String): Self = StObject.set(x, "thumbnail_duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnail_height(value: Double): Self = StObject.set(x, "thumbnail_height", value.asInstanceOf[js.Any])
+    inline def setThumbnail_height(value: Double): Self = StObject.set(x, "thumbnail_height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnail_width(value: Double): Self = StObject.set(x, "thumbnail_width", value.asInstanceOf[js.Any])
+    inline def setThumbnail_width(value: Double): Self = StObject.set(x, "thumbnail_width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnails_per_row(value: Double): Self = StObject.set(x, "thumbnails_per_row", value.asInstanceOf[js.Any])
+    inline def setThumbnails_per_row(value: Double): Self = StObject.set(x, "thumbnails_per_row", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideo_length(value: Double): Self = StObject.set(x, "video_length", value.asInstanceOf[js.Any])
+    inline def setVideo_length(value: Double): Self = StObject.set(x, "video_length", value.asInstanceOf[js.Any])
   }
 }

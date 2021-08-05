@@ -13,25 +13,19 @@ trait MultiViewCalendarRange extends StObject {
 }
 object MultiViewCalendarRange {
   
-  @scala.inline
-  def apply(): MultiViewCalendarRange = {
+  inline def apply(): MultiViewCalendarRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MultiViewCalendarRange]
   }
   
-  @scala.inline
-  implicit class MultiViewCalendarRangeMutableBuilder[Self <: MultiViewCalendarRange] (val x: Self) extends AnyVal {
+  extension [Self <: MultiViewCalendarRange](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    @scala.inline
-    def setStart(value: Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

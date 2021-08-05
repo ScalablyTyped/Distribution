@@ -19,16 +19,13 @@ trait ViewSelectorItem extends StObject {
 }
 object ViewSelectorItem {
   
-  @scala.inline
-  def apply(getEntityReference: () => LookupValue): ViewSelectorItem = {
+  inline def apply(getEntityReference: () => LookupValue): ViewSelectorItem = {
     val __obj = js.Dynamic.literal(getEntityReference = js.Any.fromFunction0(getEntityReference))
     __obj.asInstanceOf[ViewSelectorItem]
   }
   
-  @scala.inline
-  implicit class ViewSelectorItemMutableBuilder[Self <: ViewSelectorItem] (val x: Self) extends AnyVal {
+  extension [Self <: ViewSelectorItem](x: Self) {
     
-    @scala.inline
-    def setGetEntityReference(value: () => LookupValue): Self = StObject.set(x, "getEntityReference", js.Any.fromFunction0(value))
+    inline def setGetEntityReference(value: () => LookupValue): Self = StObject.set(x, "getEntityReference", js.Any.fromFunction0(value))
   }
 }

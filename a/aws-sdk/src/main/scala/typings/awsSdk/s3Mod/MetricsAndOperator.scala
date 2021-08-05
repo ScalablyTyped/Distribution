@@ -18,28 +18,21 @@ trait MetricsAndOperator extends StObject {
 }
 object MetricsAndOperator {
   
-  @scala.inline
-  def apply(): MetricsAndOperator = {
+  inline def apply(): MetricsAndOperator = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MetricsAndOperator]
   }
   
-  @scala.inline
-  implicit class MetricsAndOperatorMutableBuilder[Self <: MetricsAndOperator] (val x: Self) extends AnyVal {
+  extension [Self <: MetricsAndOperator](x: Self) {
     
-    @scala.inline
-    def setPrefix(value: Prefix): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: Prefix): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagSet): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagSet): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

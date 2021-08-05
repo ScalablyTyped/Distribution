@@ -10,16 +10,13 @@ trait ElementCSSInlineStyle extends StObject {
 }
 object ElementCSSInlineStyle {
   
-  @scala.inline
-  def apply(attributeStyleMap: StylePropertyMap): ElementCSSInlineStyle = {
+  inline def apply(attributeStyleMap: StylePropertyMap): ElementCSSInlineStyle = {
     val __obj = js.Dynamic.literal(attributeStyleMap = attributeStyleMap.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementCSSInlineStyle]
   }
   
-  @scala.inline
-  implicit class ElementCSSInlineStyleMutableBuilder[Self <: ElementCSSInlineStyle] (val x: Self) extends AnyVal {
+  extension [Self <: ElementCSSInlineStyle](x: Self) {
     
-    @scala.inline
-    def setAttributeStyleMap(value: StylePropertyMap): Self = StObject.set(x, "attributeStyleMap", value.asInstanceOf[js.Any])
+    inline def setAttributeStyleMap(value: StylePropertyMap): Self = StObject.set(x, "attributeStyleMap", value.asInstanceOf[js.Any])
   }
 }

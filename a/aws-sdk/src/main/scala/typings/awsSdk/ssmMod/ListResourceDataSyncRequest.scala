@@ -23,31 +23,23 @@ trait ListResourceDataSyncRequest extends StObject {
 }
 object ListResourceDataSyncRequest {
   
-  @scala.inline
-  def apply(): ListResourceDataSyncRequest = {
+  inline def apply(): ListResourceDataSyncRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListResourceDataSyncRequest]
   }
   
-  @scala.inline
-  implicit class ListResourceDataSyncRequestMutableBuilder[Self <: ListResourceDataSyncRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListResourceDataSyncRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSyncType(value: ResourceDataSyncType): Self = StObject.set(x, "SyncType", value.asInstanceOf[js.Any])
+    inline def setSyncType(value: ResourceDataSyncType): Self = StObject.set(x, "SyncType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncTypeUndefined: Self = StObject.set(x, "SyncType", js.undefined)
+    inline def setSyncTypeUndefined: Self = StObject.set(x, "SyncType", js.undefined)
   }
 }

@@ -16,8 +16,7 @@ trait JsxAST
 }
 object JsxAST {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Tag: ComponentType[js.Object],
     children: js.Array[Element | String],
     props: StringDictionary[js.UndefOr[Styles | String]],
@@ -27,13 +26,10 @@ object JsxAST {
     __obj.asInstanceOf[JsxAST]
   }
   
-  @scala.inline
-  implicit class JsxASTMutableBuilder[Self <: JsxAST] (val x: Self) extends AnyVal {
+  extension [Self <: JsxAST](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Array[Element | String]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[Element | String]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVarargs(value: (Element | String)*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: (Element | String)*): Self = StObject.set(x, "children", js.Array(value :_*))
   }
 }

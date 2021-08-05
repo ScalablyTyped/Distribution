@@ -35,59 +35,42 @@ object anon {
   }
   object EOL {
     
-    @scala.inline
-    def apply(): EOL = {
+    inline def apply(): EOL = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EOL]
     }
     
-    @scala.inline
-    implicit class EOLMutableBuilder[Self <: EOL] (val x: Self) extends AnyVal {
+    extension [Self <: EOL](x: Self) {
       
-      @scala.inline
-      def setEOL(value: String): Self = StObject.set(x, "EOL", value.asInstanceOf[js.Any])
+      inline def setEOL(value: String): Self = StObject.set(x, "EOL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEOLUndefined: Self = StObject.set(x, "EOL", js.undefined)
+      inline def setEOLUndefined: Self = StObject.set(x, "EOL", js.undefined)
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingNull: Self = StObject.set(x, "encoding", null)
+      inline def setEncodingNull: Self = StObject.set(x, "encoding", null)
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setFlag(value: String): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
+      inline def setFlag(value: String): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlagUndefined: Self = StObject.set(x, "flag", js.undefined)
+      inline def setFlagUndefined: Self = StObject.set(x, "flag", js.undefined)
       
-      @scala.inline
-      def setFs(value: FS): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+      inline def setFs(value: FS): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
+      inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
       
-      @scala.inline
-      def setMode(value: String | Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: String | Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setReplacer(value: (/* key */ String, /* value */ js.Any) => js.Any): Self = StObject.set(x, "replacer", js.Any.fromFunction2(value))
+      inline def setReplacer(value: (/* key */ String, /* value */ js.Any) => js.Any): Self = StObject.set(x, "replacer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReplacerUndefined: Self = StObject.set(x, "replacer", js.undefined)
+      inline def setReplacerUndefined: Self = StObject.set(x, "replacer", js.undefined)
       
-      @scala.inline
-      def setSpaces(value: String | Double): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
+      inline def setSpaces(value: String | Double): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpacesUndefined: Self = StObject.set(x, "spaces", js.undefined)
+      inline def setSpacesUndefined: Self = StObject.set(x, "spaces", js.undefined)
     }
   }
   
@@ -105,47 +88,34 @@ object anon {
   }
   object Encoding {
     
-    @scala.inline
-    def apply(): Encoding = {
+    inline def apply(): Encoding = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Encoding]
     }
     
-    @scala.inline
-    implicit class EncodingMutableBuilder[Self <: Encoding] (val x: Self) extends AnyVal {
+    extension [Self <: Encoding](x: Self) {
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingNull: Self = StObject.set(x, "encoding", null)
+      inline def setEncodingNull: Self = StObject.set(x, "encoding", null)
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setFlag(value: String): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
+      inline def setFlag(value: String): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlagUndefined: Self = StObject.set(x, "flag", js.undefined)
+      inline def setFlagUndefined: Self = StObject.set(x, "flag", js.undefined)
       
-      @scala.inline
-      def setFs(value: FS): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+      inline def setFs(value: FS): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
+      inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
       
-      @scala.inline
-      def setReviver(value: (/* key */ js.Any, /* value */ js.Any) => js.Any): Self = StObject.set(x, "reviver", js.Any.fromFunction2(value))
+      inline def setReviver(value: (/* key */ js.Any, /* value */ js.Any) => js.Any): Self = StObject.set(x, "reviver", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReviverUndefined: Self = StObject.set(x, "reviver", js.undefined)
+      inline def setReviverUndefined: Self = StObject.set(x, "reviver", js.undefined)
       
-      @scala.inline
-      def setThrows(value: Boolean): Self = StObject.set(x, "throws", value.asInstanceOf[js.Any])
+      inline def setThrows(value: Boolean): Self = StObject.set(x, "throws", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrowsUndefined: Self = StObject.set(x, "throws", js.undefined)
+      inline def setThrowsUndefined: Self = StObject.set(x, "throws", js.undefined)
     }
   }
   

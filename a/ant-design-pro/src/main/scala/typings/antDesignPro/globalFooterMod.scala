@@ -29,41 +29,30 @@ object globalFooterMod {
   }
   object GlobalFooterProps {
     
-    @scala.inline
-    def apply(): GlobalFooterProps = {
+    inline def apply(): GlobalFooterProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GlobalFooterProps]
     }
     
-    @scala.inline
-    implicit class GlobalFooterPropsMutableBuilder[Self <: GlobalFooterProps] (val x: Self) extends AnyVal {
+    extension [Self <: GlobalFooterProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setCopyright(value: ReactNode): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
+      inline def setCopyright(value: ReactNode): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
+      inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
       
-      @scala.inline
-      def setLinks(value: js.Array[BlankTarget]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+      inline def setLinks(value: js.Array[BlankTarget]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
+      inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
       
-      @scala.inline
-      def setLinksVarargs(value: BlankTarget*): Self = StObject.set(x, "links", js.Array(value :_*))
+      inline def setLinksVarargs(value: BlankTarget*): Self = StObject.set(x, "links", js.Array(value :_*))
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

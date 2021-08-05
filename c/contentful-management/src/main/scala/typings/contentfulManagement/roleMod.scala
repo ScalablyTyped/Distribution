@@ -18,11 +18,9 @@ object roleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def wrapRole(http: AxiosInstance, data: RoleProps): Role = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapRole")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Role]
+  inline def wrapRole(http: AxiosInstance, data: RoleProps): Role = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapRole")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Role]
   
-  @scala.inline
-  def wrapRoleCollection(http: AxiosInstance, data: CollectionProp[RoleProps]): Collection[Role, RoleProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapRoleCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[Role, RoleProps]]
+  inline def wrapRoleCollection(http: AxiosInstance, data: CollectionProp[RoleProps]): Collection[Role, RoleProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapRoleCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[Role, RoleProps]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.contentfulManagement.contentfulManagementStrings.read
@@ -37,29 +35,21 @@ object roleMod {
   trait ActionType extends StObject
   object ActionType {
     
-    @scala.inline
-    def archive: typings.contentfulManagement.contentfulManagementStrings.archive = "archive".asInstanceOf[typings.contentfulManagement.contentfulManagementStrings.archive]
+    inline def archive: typings.contentfulManagement.contentfulManagementStrings.archive = "archive".asInstanceOf[typings.contentfulManagement.contentfulManagementStrings.archive]
     
-    @scala.inline
-    def create: typings.contentfulManagement.contentfulManagementStrings.create = "create".asInstanceOf[typings.contentfulManagement.contentfulManagementStrings.create]
+    inline def create: typings.contentfulManagement.contentfulManagementStrings.create = "create".asInstanceOf[typings.contentfulManagement.contentfulManagementStrings.create]
     
-    @scala.inline
-    def delete: delete_ = "delete".asInstanceOf[delete_]
+    inline def delete: delete_ = "delete".asInstanceOf[delete_]
     
-    @scala.inline
-    def publish: typings.contentfulManagement.contentfulManagementStrings.publish = "publish".asInstanceOf[typings.contentfulManagement.contentfulManagementStrings.publish]
+    inline def publish: typings.contentfulManagement.contentfulManagementStrings.publish = "publish".asInstanceOf[typings.contentfulManagement.contentfulManagementStrings.publish]
     
-    @scala.inline
-    def read: typings.contentfulManagement.contentfulManagementStrings.read = "read".asInstanceOf[typings.contentfulManagement.contentfulManagementStrings.read]
+    inline def read: typings.contentfulManagement.contentfulManagementStrings.read = "read".asInstanceOf[typings.contentfulManagement.contentfulManagementStrings.read]
     
-    @scala.inline
-    def unarchive: typings.contentfulManagement.contentfulManagementStrings.unarchive = "unarchive".asInstanceOf[typings.contentfulManagement.contentfulManagementStrings.unarchive]
+    inline def unarchive: typings.contentfulManagement.contentfulManagementStrings.unarchive = "unarchive".asInstanceOf[typings.contentfulManagement.contentfulManagementStrings.unarchive]
     
-    @scala.inline
-    def unpublish: typings.contentfulManagement.contentfulManagementStrings.unpublish = "unpublish".asInstanceOf[typings.contentfulManagement.contentfulManagementStrings.unpublish]
+    inline def unpublish: typings.contentfulManagement.contentfulManagementStrings.unpublish = "unpublish".asInstanceOf[typings.contentfulManagement.contentfulManagementStrings.unpublish]
     
-    @scala.inline
-    def update: typings.contentfulManagement.contentfulManagementStrings.update = "update".asInstanceOf[typings.contentfulManagement.contentfulManagementStrings.update]
+    inline def update: typings.contentfulManagement.contentfulManagementStrings.update = "update".asInstanceOf[typings.contentfulManagement.contentfulManagementStrings.update]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -71,17 +61,13 @@ object roleMod {
   trait ConditionType extends StObject
   object ConditionType {
     
-    @scala.inline
-    def and: typings.contentfulManagement.contentfulManagementStrings.and = "and".asInstanceOf[typings.contentfulManagement.contentfulManagementStrings.and]
+    inline def and: typings.contentfulManagement.contentfulManagementStrings.and = "and".asInstanceOf[typings.contentfulManagement.contentfulManagementStrings.and]
     
-    @scala.inline
-    def equals: typings.contentfulManagement.contentfulManagementStrings.equals = "equals".asInstanceOf[typings.contentfulManagement.contentfulManagementStrings.equals]
+    inline def equals: typings.contentfulManagement.contentfulManagementStrings.equals = "equals".asInstanceOf[typings.contentfulManagement.contentfulManagementStrings.equals]
     
-    @scala.inline
-    def not: typings.contentfulManagement.contentfulManagementStrings.not = "not".asInstanceOf[typings.contentfulManagement.contentfulManagementStrings.not]
+    inline def not: typings.contentfulManagement.contentfulManagementStrings.not = "not".asInstanceOf[typings.contentfulManagement.contentfulManagementStrings.not]
     
-    @scala.inline
-    def or: typings.contentfulManagement.contentfulManagementStrings.or = "or".asInstanceOf[typings.contentfulManagement.contentfulManagementStrings.or]
+    inline def or: typings.contentfulManagement.contentfulManagementStrings.or = "or".asInstanceOf[typings.contentfulManagement.contentfulManagementStrings.or]
   }
   
   /* Inlined {[ key in contentful-management.contentful-management/dist/typings/entities/role.ConditionType ]: std.Array<contentful-management.contentful-management/dist/typings/entities/role.ConstraintType> | any} */
@@ -98,8 +84,7 @@ object roleMod {
   }
   object ConstraintType {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       and: js.Array[ConstraintType] | js.Any,
       equals_ : js.Array[ConstraintType] | js.Any,
       not: js.Array[ConstraintType] | js.Any,
@@ -110,32 +95,23 @@ object roleMod {
       __obj.asInstanceOf[ConstraintType]
     }
     
-    @scala.inline
-    implicit class ConstraintTypeMutableBuilder[Self <: ConstraintType] (val x: Self) extends AnyVal {
+    extension [Self <: ConstraintType](x: Self) {
       
-      @scala.inline
-      def setAnd(value: js.Array[ConstraintType] | js.Any): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
+      inline def setAnd(value: js.Array[ConstraintType] | js.Any): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAndVarargs(value: ConstraintType*): Self = StObject.set(x, "and", js.Array(value :_*))
+      inline def setAndVarargs(value: ConstraintType*): Self = StObject.set(x, "and", js.Array(value :_*))
       
-      @scala.inline
-      def setEquals_(value: js.Array[ConstraintType] | js.Any): Self = StObject.set(x, "equals", value.asInstanceOf[js.Any])
+      inline def setEquals_(value: js.Array[ConstraintType] | js.Any): Self = StObject.set(x, "equals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEquals_Varargs(value: ConstraintType*): Self = StObject.set(x, "equals", js.Array(value :_*))
+      inline def setEquals_Varargs(value: ConstraintType*): Self = StObject.set(x, "equals", js.Array(value :_*))
       
-      @scala.inline
-      def setNot(value: js.Array[ConstraintType] | js.Any): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
+      inline def setNot(value: js.Array[ConstraintType] | js.Any): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotVarargs(value: ConstraintType*): Self = StObject.set(x, "not", js.Array(value :_*))
+      inline def setNotVarargs(value: ConstraintType*): Self = StObject.set(x, "not", js.Array(value :_*))
       
-      @scala.inline
-      def setOr(value: js.Array[ConstraintType] | js.Any): Self = StObject.set(x, "or", value.asInstanceOf[js.Any])
+      inline def setOr(value: js.Array[ConstraintType] | js.Any): Self = StObject.set(x, "or", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrVarargs(value: ConstraintType*): Self = StObject.set(x, "or", js.Array(value :_*))
+      inline def setOrVarargs(value: ConstraintType*): Self = StObject.set(x, "or", js.Array(value :_*))
     }
   }
   
@@ -189,8 +165,7 @@ object roleMod {
   }
   object Role {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       delete: () => js.Promise[Unit],
       name: String,
       permissions: ContentDelivery,
@@ -203,14 +178,11 @@ object roleMod {
       __obj.asInstanceOf[Role]
     }
     
-    @scala.inline
-    implicit class RoleMutableBuilder[Self <: Role] (val x: Self) extends AnyVal {
+    extension [Self <: Role](x: Self) {
       
-      @scala.inline
-      def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
+      inline def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdate(value: () => js.Promise[Role]): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+      inline def setUpdate(value: () => js.Promise[Role]): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     }
   }
   
@@ -229,29 +201,22 @@ object roleMod {
   }
   object RoleProps {
     
-    @scala.inline
-    def apply(name: String, permissions: ContentDelivery, policies: js.Array[Actions], sys: MetaSysProps): RoleProps = {
+    inline def apply(name: String, permissions: ContentDelivery, policies: js.Array[Actions], sys: MetaSysProps): RoleProps = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any], policies = policies.asInstanceOf[js.Any], sys = sys.asInstanceOf[js.Any])
       __obj.asInstanceOf[RoleProps]
     }
     
-    @scala.inline
-    implicit class RolePropsMutableBuilder[Self <: RoleProps] (val x: Self) extends AnyVal {
+    extension [Self <: RoleProps](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPermissions(value: ContentDelivery): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+      inline def setPermissions(value: ContentDelivery): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicies(value: js.Array[Actions]): Self = StObject.set(x, "policies", value.asInstanceOf[js.Any])
+      inline def setPolicies(value: js.Array[Actions]): Self = StObject.set(x, "policies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPoliciesVarargs(value: Actions*): Self = StObject.set(x, "policies", js.Array(value :_*))
+      inline def setPoliciesVarargs(value: Actions*): Self = StObject.set(x, "policies", js.Array(value :_*))
       
-      @scala.inline
-      def setSys(value: MetaSysProps): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
+      inline def setSys(value: MetaSysProps): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
     }
   }
 }

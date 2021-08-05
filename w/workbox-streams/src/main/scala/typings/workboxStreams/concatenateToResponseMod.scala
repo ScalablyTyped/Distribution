@@ -13,10 +13,8 @@ object concatenateToResponseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def concatenateToResponse(sourcePromises: js.Array[js.Promise[StreamSource]]): ConcatenateToResponseReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("concatenateToResponse")(sourcePromises.asInstanceOf[js.Any]).asInstanceOf[ConcatenateToResponseReturn]
-  @scala.inline
-  def concatenateToResponse(sourcePromises: js.Array[js.Promise[StreamSource]], headersInit: HeadersInit): ConcatenateToResponseReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("concatenateToResponse")(sourcePromises.asInstanceOf[js.Any], headersInit.asInstanceOf[js.Any])).asInstanceOf[ConcatenateToResponseReturn]
+  inline def concatenateToResponse(sourcePromises: js.Array[js.Promise[StreamSource]]): ConcatenateToResponseReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("concatenateToResponse")(sourcePromises.asInstanceOf[js.Any]).asInstanceOf[ConcatenateToResponseReturn]
+  inline def concatenateToResponse(sourcePromises: js.Array[js.Promise[StreamSource]], headersInit: HeadersInit): ConcatenateToResponseReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("concatenateToResponse")(sourcePromises.asInstanceOf[js.Any], headersInit.asInstanceOf[js.Any])).asInstanceOf[ConcatenateToResponseReturn]
   
   trait ConcatenateToResponseReturn extends StObject {
     
@@ -26,20 +24,16 @@ object concatenateToResponseMod {
   }
   object ConcatenateToResponseReturn {
     
-    @scala.inline
-    def apply(done: js.Promise[Unit], response: Response): ConcatenateToResponseReturn = {
+    inline def apply(done: js.Promise[Unit], response: Response): ConcatenateToResponseReturn = {
       val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConcatenateToResponseReturn]
     }
     
-    @scala.inline
-    implicit class ConcatenateToResponseReturnMutableBuilder[Self <: ConcatenateToResponseReturn] (val x: Self) extends AnyVal {
+    extension [Self <: ConcatenateToResponseReturn](x: Self) {
       
-      @scala.inline
-      def setDone(value: js.Promise[Unit]): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+      inline def setDone(value: js.Promise[Unit]): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse(value: Response): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: Response): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
   }
 }

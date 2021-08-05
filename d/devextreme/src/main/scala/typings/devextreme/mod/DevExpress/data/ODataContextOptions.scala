@@ -55,67 +55,47 @@ trait ODataContextOptions extends StObject {
 }
 object ODataContextOptions {
   
-  @scala.inline
-  def apply(): ODataContextOptions = {
+  inline def apply(): ODataContextOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ODataContextOptions]
   }
   
-  @scala.inline
-  implicit class ODataContextOptionsMutableBuilder[Self <: ODataContextOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ODataContextOptions](x: Self) {
     
-    @scala.inline
-    def setBeforeSend(value: /* options */ Async => js.Any): Self = StObject.set(x, "beforeSend", js.Any.fromFunction1(value))
+    inline def setBeforeSend(value: /* options */ Async => js.Any): Self = StObject.set(x, "beforeSend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBeforeSendUndefined: Self = StObject.set(x, "beforeSend", js.undefined)
+    inline def setBeforeSendUndefined: Self = StObject.set(x, "beforeSend", js.undefined)
     
-    @scala.inline
-    def setDeserializeDates(value: Boolean): Self = StObject.set(x, "deserializeDates", value.asInstanceOf[js.Any])
+    inline def setDeserializeDates(value: Boolean): Self = StObject.set(x, "deserializeDates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeserializeDatesUndefined: Self = StObject.set(x, "deserializeDates", js.undefined)
+    inline def setDeserializeDatesUndefined: Self = StObject.set(x, "deserializeDates", js.undefined)
     
-    @scala.inline
-    def setEntities(value: js.Any): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
+    inline def setEntities(value: js.Any): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
+    inline def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
     
-    @scala.inline
-    def setErrorHandler(value: /* e */ ErrorDetails => js.Any): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
+    inline def setErrorHandler(value: /* e */ ErrorDetails => js.Any): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
+    inline def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
     
-    @scala.inline
-    def setFilterToLower(value: Boolean): Self = StObject.set(x, "filterToLower", value.asInstanceOf[js.Any])
+    inline def setFilterToLower(value: Boolean): Self = StObject.set(x, "filterToLower", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterToLowerUndefined: Self = StObject.set(x, "filterToLower", js.undefined)
+    inline def setFilterToLowerUndefined: Self = StObject.set(x, "filterToLower", js.undefined)
     
-    @scala.inline
-    def setJsonp(value: Boolean): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
+    inline def setJsonp(value: Boolean): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsonpUndefined: Self = StObject.set(x, "jsonp", js.undefined)
+    inline def setJsonpUndefined: Self = StObject.set(x, "jsonp", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
-    @scala.inline
-    def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
+    inline def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
+    inline def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
   }
 }

@@ -12,8 +12,7 @@ object styleMod {
        with /* ruleOrSelector */ StringDictionary[String | Double | Styles]
   object Styles {
     
-    @scala.inline
-    def apply(): Styles = {
+    inline def apply(): Styles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Styles]
     }

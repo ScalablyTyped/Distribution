@@ -90,20 +90,16 @@ object scrollableContainerMod extends Shortcut {
   }
   object ScrollAreaData {
     
-    @scala.inline
-    def apply(area: Y, target: HTMLElement): ScrollAreaData = {
+    inline def apply(area: Y, target: HTMLElement): ScrollAreaData = {
       val __obj = js.Dynamic.literal(area = area.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScrollAreaData]
     }
     
-    @scala.inline
-    implicit class ScrollAreaDataMutableBuilder[Self <: ScrollAreaData] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollAreaData](x: Self) {
       
-      @scala.inline
-      def setArea(value: Y): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
+      inline def setArea(value: Y): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
   
@@ -117,32 +113,24 @@ object scrollableContainerMod extends Shortcut {
   }
   object ScrollableContainerProps {
     
-    @scala.inline
-    def apply(): ScrollableContainerProps = {
+    inline def apply(): ScrollableContainerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ScrollableContainerProps]
     }
     
-    @scala.inline
-    implicit class ScrollableContainerPropsMutableBuilder[Self <: ScrollableContainerProps] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollableContainerProps](x: Self) {
       
-      @scala.inline
-      def setOnScrollAreaChanged(value: /* scrollChangedData */ ScrollAreaData => Unit): Self = StObject.set(x, "onScrollAreaChanged", js.Any.fromFunction1(value))
+      inline def setOnScrollAreaChanged(value: /* scrollChangedData */ ScrollAreaData => Unit): Self = StObject.set(x, "onScrollAreaChanged", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnScrollAreaChangedUndefined: Self = StObject.set(x, "onScrollAreaChanged", js.undefined)
+      inline def setOnScrollAreaChangedUndefined: Self = StObject.set(x, "onScrollAreaChanged", js.undefined)
       
-      @scala.inline
-      def setOnScrollChanged(value: /* target */ HTMLElement => Unit): Self = StObject.set(x, "onScrollChanged", js.Any.fromFunction1(value))
+      inline def setOnScrollChanged(value: /* target */ HTMLElement => Unit): Self = StObject.set(x, "onScrollChanged", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnScrollChangedUndefined: Self = StObject.set(x, "onScrollChanged", js.undefined)
+      inline def setOnScrollChangedUndefined: Self = StObject.set(x, "onScrollChanged", js.undefined)
       
-      @scala.inline
-      def setScrollThrottleWait(value: Double): Self = StObject.set(x, "scrollThrottleWait", value.asInstanceOf[js.Any])
+      inline def setScrollThrottleWait(value: Double): Self = StObject.set(x, "scrollThrottleWait", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollThrottleWaitUndefined: Self = StObject.set(x, "scrollThrottleWait", js.undefined)
+      inline def setScrollThrottleWaitUndefined: Self = StObject.set(x, "scrollThrottleWait", js.undefined)
     }
   }
   

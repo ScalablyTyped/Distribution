@@ -18,23 +18,18 @@ trait Em
 }
 object Em {
   
-  @scala.inline
-  def apply(raw: String, text: String): Em = {
+  inline def apply(raw: String, text: String): Em = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("em")
     __obj.asInstanceOf[Em]
   }
   
-  @scala.inline
-  implicit class EmMutableBuilder[Self <: Em] (val x: Self) extends AnyVal {
+  extension [Self <: Em](x: Self) {
     
-    @scala.inline
-    def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: em): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: em): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

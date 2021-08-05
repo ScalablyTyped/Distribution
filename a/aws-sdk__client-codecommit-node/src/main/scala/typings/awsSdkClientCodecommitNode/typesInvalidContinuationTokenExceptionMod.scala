@@ -28,17 +28,14 @@ object typesInvalidContinuationTokenExceptionMod {
   }
   object InvalidContinuationTokenException {
     
-    @scala.inline
-    def apply(): InvalidContinuationTokenException = {
+    inline def apply(): InvalidContinuationTokenException = {
       val __obj = js.Dynamic.literal(name = "InvalidContinuationTokenException")
       __obj.asInstanceOf[InvalidContinuationTokenException]
     }
     
-    @scala.inline
-    implicit class InvalidContinuationTokenExceptionMutableBuilder[Self <: InvalidContinuationTokenException] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidContinuationTokenException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidContinuationTokenException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

@@ -49,44 +49,32 @@ object typesMod {
   }
   object LayoutConfiguration {
     
-    @scala.inline
-    def apply(): LayoutConfiguration = {
+    inline def apply(): LayoutConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LayoutConfiguration]
     }
     
-    @scala.inline
-    implicit class LayoutConfigurationMutableBuilder[Self <: LayoutConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: LayoutConfiguration](x: Self) {
       
-      @scala.inline
-      def setDesktopLayout(value: SupportedWideLayout): Self = StObject.set(x, "desktopLayout", value.asInstanceOf[js.Any])
+      inline def setDesktopLayout(value: SupportedWideLayout): Self = StObject.set(x, "desktopLayout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDesktopLayoutUndefined: Self = StObject.set(x, "desktopLayout", js.undefined)
+      inline def setDesktopLayoutUndefined: Self = StObject.set(x, "desktopLayout", js.undefined)
       
-      @scala.inline
-      def setLandscapeTabletLayout(value: SupportedWideLayout): Self = StObject.set(x, "landscapeTabletLayout", value.asInstanceOf[js.Any])
+      inline def setLandscapeTabletLayout(value: SupportedWideLayout): Self = StObject.set(x, "landscapeTabletLayout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLandscapeTabletLayoutUndefined: Self = StObject.set(x, "landscapeTabletLayout", js.undefined)
+      inline def setLandscapeTabletLayoutUndefined: Self = StObject.set(x, "landscapeTabletLayout", js.undefined)
       
-      @scala.inline
-      def setLargeDesktopLayout(value: SupportedWideLayout): Self = StObject.set(x, "largeDesktopLayout", value.asInstanceOf[js.Any])
+      inline def setLargeDesktopLayout(value: SupportedWideLayout): Self = StObject.set(x, "largeDesktopLayout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLargeDesktopLayoutUndefined: Self = StObject.set(x, "largeDesktopLayout", js.undefined)
+      inline def setLargeDesktopLayoutUndefined: Self = StObject.set(x, "largeDesktopLayout", js.undefined)
       
-      @scala.inline
-      def setPhoneLayout(value: SupportedPhoneLayout): Self = StObject.set(x, "phoneLayout", value.asInstanceOf[js.Any])
+      inline def setPhoneLayout(value: SupportedPhoneLayout): Self = StObject.set(x, "phoneLayout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhoneLayoutUndefined: Self = StObject.set(x, "phoneLayout", js.undefined)
+      inline def setPhoneLayoutUndefined: Self = StObject.set(x, "phoneLayout", js.undefined)
       
-      @scala.inline
-      def setTabletLayout(value: SupportedTabletLayout): Self = StObject.set(x, "tabletLayout", value.asInstanceOf[js.Any])
+      inline def setTabletLayout(value: SupportedTabletLayout): Self = StObject.set(x, "tabletLayout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabletLayoutUndefined: Self = StObject.set(x, "tabletLayout", js.undefined)
+      inline def setTabletLayoutUndefined: Self = StObject.set(x, "tabletLayout", js.undefined)
     }
   }
   
@@ -144,56 +132,40 @@ object typesMod {
   }
   object LayoutNavigationItem {
     
-    @scala.inline
-    def apply(itemId: TreeItemId): LayoutNavigationItem = {
+    inline def apply(itemId: TreeItemId): LayoutNavigationItem = {
       val __obj = js.Dynamic.literal(itemId = itemId.asInstanceOf[js.Any], parentId = null)
       __obj.asInstanceOf[LayoutNavigationItem]
     }
     
-    @scala.inline
-    implicit class LayoutNavigationItemMutableBuilder[Self <: LayoutNavigationItem] (val x: Self) extends AnyVal {
+    extension [Self <: LayoutNavigationItem](x: Self) {
       
-      @scala.inline
-      def setContentComponent(value: ElementType[js.Any]): Self = StObject.set(x, "contentComponent", value.asInstanceOf[js.Any])
+      inline def setContentComponent(value: ElementType[js.Any]): Self = StObject.set(x, "contentComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentComponentUndefined: Self = StObject.set(x, "contentComponent", js.undefined)
+      inline def setContentComponentUndefined: Self = StObject.set(x, "contentComponent", js.undefined)
       
-      @scala.inline
-      def setDivider(value: Boolean): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
+      inline def setDivider(value: Boolean): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDividerUndefined: Self = StObject.set(x, "divider", js.undefined)
+      inline def setDividerUndefined: Self = StObject.set(x, "divider", js.undefined)
       
-      @scala.inline
-      def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+      inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
       
-      @scala.inline
-      def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
       
-      @scala.inline
-      def setSubheader(value: Boolean): Self = StObject.set(x, "subheader", value.asInstanceOf[js.Any])
+      inline def setSubheader(value: Boolean): Self = StObject.set(x, "subheader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubheaderUndefined: Self = StObject.set(x, "subheader", js.undefined)
+      inline def setSubheaderUndefined: Self = StObject.set(x, "subheader", js.undefined)
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      @scala.inline
-      def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     }
   }
   
@@ -229,32 +201,24 @@ object typesMod {
   }
   object LayoutWithTitle {
     
-    @scala.inline
-    def apply(): LayoutWithTitle = {
+    inline def apply(): LayoutWithTitle = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LayoutWithTitle]
     }
     
-    @scala.inline
-    implicit class LayoutWithTitleMutableBuilder[Self <: LayoutWithTitle] (val x: Self) extends AnyVal {
+    extension [Self <: LayoutWithTitle](x: Self) {
       
-      @scala.inline
-      def setCustomTitle(value: ReactNode): Self = StObject.set(x, "customTitle", value.asInstanceOf[js.Any])
+      inline def setCustomTitle(value: ReactNode): Self = StObject.set(x, "customTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomTitleUndefined: Self = StObject.set(x, "customTitle", js.undefined)
+      inline def setCustomTitleUndefined: Self = StObject.set(x, "customTitle", js.undefined)
       
-      @scala.inline
-      def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleProps(value: PropsWithRefOmitAppBarTit): Self = StObject.set(x, "titleProps", value.asInstanceOf[js.Any])
+      inline def setTitleProps(value: PropsWithRefOmitAppBarTit): Self = StObject.set(x, "titleProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitlePropsUndefined: Self = StObject.set(x, "titleProps", js.undefined)
+      inline def setTitlePropsUndefined: Self = StObject.set(x, "titleProps", js.undefined)
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -265,11 +229,9 @@ object typesMod {
   trait SupportedPhoneLayout extends StObject
   object SupportedPhoneLayout {
     
-    @scala.inline
-    def temporary: typings.reactMdLayout.reactMdLayoutStrings.temporary = "temporary".asInstanceOf[typings.reactMdLayout.reactMdLayoutStrings.temporary]
+    inline def temporary: typings.reactMdLayout.reactMdLayoutStrings.temporary = "temporary".asInstanceOf[typings.reactMdLayout.reactMdLayoutStrings.temporary]
     
-    @scala.inline
-    def `temporary-mini`: typings.reactMdLayout.reactMdLayoutStrings.`temporary-mini` = "temporary-mini".asInstanceOf[typings.reactMdLayout.reactMdLayoutStrings.`temporary-mini`]
+    inline def `temporary-mini`: typings.reactMdLayout.reactMdLayoutStrings.`temporary-mini` = "temporary-mini".asInstanceOf[typings.reactMdLayout.reactMdLayoutStrings.`temporary-mini`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -281,17 +243,13 @@ object typesMod {
   trait SupportedTabletLayout extends StObject
   object SupportedTabletLayout {
     
-    @scala.inline
-    def temporary: typings.reactMdLayout.reactMdLayoutStrings.temporary = "temporary".asInstanceOf[typings.reactMdLayout.reactMdLayoutStrings.temporary]
+    inline def temporary: typings.reactMdLayout.reactMdLayoutStrings.temporary = "temporary".asInstanceOf[typings.reactMdLayout.reactMdLayoutStrings.temporary]
     
-    @scala.inline
-    def `temporary-mini`: typings.reactMdLayout.reactMdLayoutStrings.`temporary-mini` = "temporary-mini".asInstanceOf[typings.reactMdLayout.reactMdLayoutStrings.`temporary-mini`]
+    inline def `temporary-mini`: typings.reactMdLayout.reactMdLayoutStrings.`temporary-mini` = "temporary-mini".asInstanceOf[typings.reactMdLayout.reactMdLayoutStrings.`temporary-mini`]
     
-    @scala.inline
-    def toggleable: typings.reactMdLayout.reactMdLayoutStrings.toggleable = "toggleable".asInstanceOf[typings.reactMdLayout.reactMdLayoutStrings.toggleable]
+    inline def toggleable: typings.reactMdLayout.reactMdLayoutStrings.toggleable = "toggleable".asInstanceOf[typings.reactMdLayout.reactMdLayoutStrings.toggleable]
     
-    @scala.inline
-    def `toggleable-mini`: typings.reactMdLayout.reactMdLayoutStrings.`toggleable-mini` = "toggleable-mini".asInstanceOf[typings.reactMdLayout.reactMdLayoutStrings.`toggleable-mini`]
+    inline def `toggleable-mini`: typings.reactMdLayout.reactMdLayoutStrings.`toggleable-mini` = "toggleable-mini".asInstanceOf[typings.reactMdLayout.reactMdLayoutStrings.`toggleable-mini`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -306,25 +264,18 @@ object typesMod {
   trait SupportedWideLayout extends StObject
   object SupportedWideLayout {
     
-    @scala.inline
-    def clipped: typings.reactMdLayout.reactMdLayoutStrings.clipped = "clipped".asInstanceOf[typings.reactMdLayout.reactMdLayoutStrings.clipped]
+    inline def clipped: typings.reactMdLayout.reactMdLayoutStrings.clipped = "clipped".asInstanceOf[typings.reactMdLayout.reactMdLayoutStrings.clipped]
     
-    @scala.inline
-    def floating: typings.reactMdLayout.reactMdLayoutStrings.floating = "floating".asInstanceOf[typings.reactMdLayout.reactMdLayoutStrings.floating]
+    inline def floating: typings.reactMdLayout.reactMdLayoutStrings.floating = "floating".asInstanceOf[typings.reactMdLayout.reactMdLayoutStrings.floating]
     
-    @scala.inline
-    def `full-height`: typings.reactMdLayout.reactMdLayoutStrings.`full-height` = "full-height".asInstanceOf[typings.reactMdLayout.reactMdLayoutStrings.`full-height`]
+    inline def `full-height`: typings.reactMdLayout.reactMdLayoutStrings.`full-height` = "full-height".asInstanceOf[typings.reactMdLayout.reactMdLayoutStrings.`full-height`]
     
-    @scala.inline
-    def temporary: typings.reactMdLayout.reactMdLayoutStrings.temporary = "temporary".asInstanceOf[typings.reactMdLayout.reactMdLayoutStrings.temporary]
+    inline def temporary: typings.reactMdLayout.reactMdLayoutStrings.temporary = "temporary".asInstanceOf[typings.reactMdLayout.reactMdLayoutStrings.temporary]
     
-    @scala.inline
-    def `temporary-mini`: typings.reactMdLayout.reactMdLayoutStrings.`temporary-mini` = "temporary-mini".asInstanceOf[typings.reactMdLayout.reactMdLayoutStrings.`temporary-mini`]
+    inline def `temporary-mini`: typings.reactMdLayout.reactMdLayoutStrings.`temporary-mini` = "temporary-mini".asInstanceOf[typings.reactMdLayout.reactMdLayoutStrings.`temporary-mini`]
     
-    @scala.inline
-    def toggleable: typings.reactMdLayout.reactMdLayoutStrings.toggleable = "toggleable".asInstanceOf[typings.reactMdLayout.reactMdLayoutStrings.toggleable]
+    inline def toggleable: typings.reactMdLayout.reactMdLayoutStrings.toggleable = "toggleable".asInstanceOf[typings.reactMdLayout.reactMdLayoutStrings.toggleable]
     
-    @scala.inline
-    def `toggleable-mini`: typings.reactMdLayout.reactMdLayoutStrings.`toggleable-mini` = "toggleable-mini".asInstanceOf[typings.reactMdLayout.reactMdLayoutStrings.`toggleable-mini`]
+    inline def `toggleable-mini`: typings.reactMdLayout.reactMdLayoutStrings.`toggleable-mini` = "toggleable-mini".asInstanceOf[typings.reactMdLayout.reactMdLayoutStrings.`toggleable-mini`]
   }
 }

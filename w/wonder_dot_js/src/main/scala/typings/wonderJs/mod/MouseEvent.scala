@@ -18,6 +18,5 @@ object MouseEvent {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(event: IMouseEventData, eventName: typings.wonderJs.eventNameHandlerMod.EEventName): typings.wonderJs.mouseEventMod.MouseEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(event.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[typings.wonderJs.mouseEventMod.MouseEvent]
+  inline def create(event: IMouseEventData, eventName: typings.wonderJs.eventNameHandlerMod.EEventName): typings.wonderJs.mouseEventMod.MouseEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(event.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[typings.wonderJs.mouseEventMod.MouseEvent]
 }

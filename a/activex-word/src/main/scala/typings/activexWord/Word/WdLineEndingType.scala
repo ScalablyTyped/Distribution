@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdLineEndingType extends StObject
 object WdLineEndingType {
   
-  @scala.inline
-  def wdCRLF: `0` = 0.asInstanceOf[`0`]
+  inline def wdCRLF: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdCROnly: `1` = 1.asInstanceOf[`1`]
+  inline def wdCROnly: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdLFCR: `3` = 3.asInstanceOf[`3`]
+  inline def wdLFCR: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def wdLFOnly: `2` = 2.asInstanceOf[`2`]
+  inline def wdLFOnly: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdLSPS: `4` = 4.asInstanceOf[`4`]
+  inline def wdLSPS: `4` = 4.asInstanceOf[`4`]
 }

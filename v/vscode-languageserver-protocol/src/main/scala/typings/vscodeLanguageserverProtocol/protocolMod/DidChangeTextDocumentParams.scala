@@ -31,8 +31,7 @@ trait DidChangeTextDocumentParams extends StObject {
 }
 object DidChangeTextDocumentParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contentChanges: js.Array[TextDocumentContentChangeEvent],
     textDocument: VersionedTextDocumentIdentifier
   ): DidChangeTextDocumentParams = {
@@ -40,16 +39,12 @@ object DidChangeTextDocumentParams {
     __obj.asInstanceOf[DidChangeTextDocumentParams]
   }
   
-  @scala.inline
-  implicit class DidChangeTextDocumentParamsMutableBuilder[Self <: DidChangeTextDocumentParams] (val x: Self) extends AnyVal {
+  extension [Self <: DidChangeTextDocumentParams](x: Self) {
     
-    @scala.inline
-    def setContentChanges(value: js.Array[TextDocumentContentChangeEvent]): Self = StObject.set(x, "contentChanges", value.asInstanceOf[js.Any])
+    inline def setContentChanges(value: js.Array[TextDocumentContentChangeEvent]): Self = StObject.set(x, "contentChanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentChangesVarargs(value: TextDocumentContentChangeEvent*): Self = StObject.set(x, "contentChanges", js.Array(value :_*))
+    inline def setContentChangesVarargs(value: TextDocumentContentChangeEvent*): Self = StObject.set(x, "contentChanges", js.Array(value :_*))
     
-    @scala.inline
-    def setTextDocument(value: VersionedTextDocumentIdentifier): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
+    inline def setTextDocument(value: VersionedTextDocumentIdentifier): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
   }
 }

@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object createTaskProcessorWorker {
   
-  @scala.inline
-  def apply(workerFunction: WorkerFunction): TaskProcessorWorkerFunction = ^.asInstanceOf[js.Dynamic].apply(workerFunction.asInstanceOf[js.Any]).asInstanceOf[TaskProcessorWorkerFunction]
+  inline def apply(workerFunction: WorkerFunction): TaskProcessorWorkerFunction = ^.asInstanceOf[js.Dynamic].apply(workerFunction.asInstanceOf[js.Any]).asInstanceOf[TaskProcessorWorkerFunction]
   
   @JSImport("cesium", "createTaskProcessorWorker")
   @js.native

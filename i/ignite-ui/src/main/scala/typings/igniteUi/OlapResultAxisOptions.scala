@@ -24,28 +24,21 @@ trait OlapResultAxisOptions
 }
 object OlapResultAxisOptions {
   
-  @scala.inline
-  def apply(): OlapResultAxisOptions = {
+  inline def apply(): OlapResultAxisOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OlapResultAxisOptions]
   }
   
-  @scala.inline
-  implicit class OlapResultAxisOptionsMutableBuilder[Self <: OlapResultAxisOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OlapResultAxisOptions](x: Self) {
     
-    @scala.inline
-    def setTupleSize(value: Double): Self = StObject.set(x, "tupleSize", value.asInstanceOf[js.Any])
+    inline def setTupleSize(value: Double): Self = StObject.set(x, "tupleSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTupleSizeUndefined: Self = StObject.set(x, "tupleSize", js.undefined)
+    inline def setTupleSizeUndefined: Self = StObject.set(x, "tupleSize", js.undefined)
     
-    @scala.inline
-    def setTuples(value: js.Array[js.Any]): Self = StObject.set(x, "tuples", value.asInstanceOf[js.Any])
+    inline def setTuples(value: js.Array[js.Any]): Self = StObject.set(x, "tuples", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTuplesUndefined: Self = StObject.set(x, "tuples", js.undefined)
+    inline def setTuplesUndefined: Self = StObject.set(x, "tuples", js.undefined)
     
-    @scala.inline
-    def setTuplesVarargs(value: js.Any*): Self = StObject.set(x, "tuples", js.Array(value :_*))
+    inline def setTuplesVarargs(value: js.Any*): Self = StObject.set(x, "tuples", js.Array(value :_*))
   }
 }

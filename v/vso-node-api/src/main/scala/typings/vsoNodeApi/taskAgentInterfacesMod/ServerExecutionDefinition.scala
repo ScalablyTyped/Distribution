@@ -10,16 +10,13 @@ trait ServerExecutionDefinition extends StObject {
 }
 object ServerExecutionDefinition {
   
-  @scala.inline
-  def apply(events: JobEventsConfig): ServerExecutionDefinition = {
+  inline def apply(events: JobEventsConfig): ServerExecutionDefinition = {
     val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerExecutionDefinition]
   }
   
-  @scala.inline
-  implicit class ServerExecutionDefinitionMutableBuilder[Self <: ServerExecutionDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: ServerExecutionDefinition](x: Self) {
     
-    @scala.inline
-    def setEvents(value: JobEventsConfig): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: JobEventsConfig): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
   }
 }

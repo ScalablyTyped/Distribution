@@ -11,19 +11,15 @@ trait InsertInlineImageResponse extends StObject {
 }
 object InsertInlineImageResponse {
   
-  @scala.inline
-  def apply(): InsertInlineImageResponse = {
+  inline def apply(): InsertInlineImageResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InsertInlineImageResponse]
   }
   
-  @scala.inline
-  implicit class InsertInlineImageResponseMutableBuilder[Self <: InsertInlineImageResponse] (val x: Self) extends AnyVal {
+  extension [Self <: InsertInlineImageResponse](x: Self) {
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+    inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
   }
 }

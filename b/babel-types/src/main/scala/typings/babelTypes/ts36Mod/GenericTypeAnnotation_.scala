@@ -20,8 +20,7 @@ trait GenericTypeAnnotation_
 }
 object GenericTypeAnnotation_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     end: Double,
     id: Identifier_,
     loc: SourceLocation,
@@ -33,16 +32,12 @@ object GenericTypeAnnotation_ {
     __obj.asInstanceOf[GenericTypeAnnotation_]
   }
   
-  @scala.inline
-  implicit class GenericTypeAnnotation_MutableBuilder[Self <: GenericTypeAnnotation_] (val x: Self) extends AnyVal {
+  extension [Self <: GenericTypeAnnotation_](x: Self) {
     
-    @scala.inline
-    def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: GenericTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: GenericTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeParameters(value: TypeParameterInstantiation_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
+    inline def setTypeParameters(value: TypeParameterInstantiation_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
   }
 }

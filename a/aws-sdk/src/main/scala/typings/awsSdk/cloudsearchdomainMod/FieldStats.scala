@@ -48,61 +48,43 @@ trait FieldStats extends StObject {
 }
 object FieldStats {
   
-  @scala.inline
-  def apply(): FieldStats = {
+  inline def apply(): FieldStats = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FieldStats]
   }
   
-  @scala.inline
-  implicit class FieldStatsMutableBuilder[Self <: FieldStats] (val x: Self) extends AnyVal {
+  extension [Self <: FieldStats](x: Self) {
     
-    @scala.inline
-    def setCount(value: Long): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Long): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setMax(value: String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMean(value: String): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
+    inline def setMean(value: String): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeanUndefined: Self = StObject.set(x, "mean", js.undefined)
+    inline def setMeanUndefined: Self = StObject.set(x, "mean", js.undefined)
     
-    @scala.inline
-    def setMin(value: String): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: String): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setMissing(value: Long): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
+    inline def setMissing(value: Long): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMissingUndefined: Self = StObject.set(x, "missing", js.undefined)
+    inline def setMissingUndefined: Self = StObject.set(x, "missing", js.undefined)
     
-    @scala.inline
-    def setStddev(value: Double): Self = StObject.set(x, "stddev", value.asInstanceOf[js.Any])
+    inline def setStddev(value: Double): Self = StObject.set(x, "stddev", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStddevUndefined: Self = StObject.set(x, "stddev", js.undefined)
+    inline def setStddevUndefined: Self = StObject.set(x, "stddev", js.undefined)
     
-    @scala.inline
-    def setSum(value: Double): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
+    inline def setSum(value: Double): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSumOfSquares(value: Double): Self = StObject.set(x, "sumOfSquares", value.asInstanceOf[js.Any])
+    inline def setSumOfSquares(value: Double): Self = StObject.set(x, "sumOfSquares", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSumOfSquaresUndefined: Self = StObject.set(x, "sumOfSquares", js.undefined)
+    inline def setSumOfSquaresUndefined: Self = StObject.set(x, "sumOfSquares", js.undefined)
     
-    @scala.inline
-    def setSumUndefined: Self = StObject.set(x, "sum", js.undefined)
+    inline def setSumUndefined: Self = StObject.set(x, "sum", js.undefined)
   }
 }

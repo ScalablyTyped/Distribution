@@ -21,6 +21,5 @@ object DefaultLinkWidget {
   @JSImport("storm-react-diagrams", "DefaultLinkWidget.defaultProps")
   @js.native
   def defaultProps: DefaultLinkProps = js.native
-  @scala.inline
-  def defaultProps_=(x: DefaultLinkProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: DefaultLinkProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

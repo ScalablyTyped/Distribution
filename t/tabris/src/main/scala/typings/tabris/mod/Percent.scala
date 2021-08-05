@@ -27,14 +27,12 @@ object Percent {
     * `null` the method throws.
     * @param percentValue The value to create a Percent instance from
     */
-  @scala.inline
-  def from(percentValue: PercentValue): Percent = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(percentValue.asInstanceOf[js.Any]).asInstanceOf[Percent]
+  inline def from(percentValue: PercentValue): Percent = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(percentValue.asInstanceOf[js.Any]).asInstanceOf[Percent]
   
   /**
     * Returns true if value is a valid PercentValue. This excludes `null`. Use this to check if a value
     * will be accepted by Percent.from. This is also a valid TypeScript type guard function.
     * @param value The value to test
     */
-  @scala.inline
-  def isValidPercentValue(value: js.Any): /* is tabris.tabris.PercentValue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidPercentValue")(value.asInstanceOf[js.Any]).asInstanceOf[/* is tabris.tabris.PercentValue */ Boolean]
+  inline def isValidPercentValue(value: js.Any): /* is tabris.tabris.PercentValue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidPercentValue")(value.asInstanceOf[js.Any]).asInstanceOf[/* is tabris.tabris.PercentValue */ Boolean]
 }

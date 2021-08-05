@@ -10,8 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(options: Options): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def apply(options: Options): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
   
   @JSImport("require-all", JSImport.Namespace)
   @js.native
@@ -35,50 +34,36 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(dirname: String): Options = {
+    inline def apply(dirname: String): Options = {
       val __obj = js.Dynamic.literal(dirname = dirname.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDirname(value: String): Self = StObject.set(x, "dirname", value.asInstanceOf[js.Any])
+      inline def setDirname(value: String): Self = StObject.set(x, "dirname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeDirs(value: RegExp): Self = StObject.set(x, "excludeDirs", value.asInstanceOf[js.Any])
+      inline def setExcludeDirs(value: RegExp): Self = StObject.set(x, "excludeDirs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeDirsUndefined: Self = StObject.set(x, "excludeDirs", js.undefined)
+      inline def setExcludeDirsUndefined: Self = StObject.set(x, "excludeDirs", js.undefined)
       
-      @scala.inline
-      def setFilter(value: (js.Function2[/* name */ String, /* path */ String, js.UndefOr[String | `false`]]) | RegExp): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: (js.Function2[/* name */ String, /* path */ String, js.UndefOr[String | `false`]]) | RegExp): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterFunction2(value: (/* name */ String, /* path */ String) => js.UndefOr[String | `false`]): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
+      inline def setFilterFunction2(value: (/* name */ String, /* path */ String) => js.UndefOr[String | `false`]): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setMap(value: (/* name */ String, /* path */ String) => String): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
+      inline def setMap(value: (/* name */ String, /* path */ String) => String): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
-      @scala.inline
-      def setRecursive(value: `true` | `false`): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+      inline def setRecursive(value: `true` | `false`): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
+      inline def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
       
-      @scala.inline
-      def setResolve(value: /* module */ js.Any => js.Any): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
+      inline def setResolve(value: /* module */ js.Any => js.Any): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
+      inline def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
     }
   }
 }

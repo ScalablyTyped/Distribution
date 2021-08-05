@@ -528,8 +528,7 @@ trait GoogleMapsClientWithPromise extends StObject {
 }
 object GoogleMapsClientWithPromise {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     directions: (DirectionsRequest, /* callback */ js.UndefOr[ResponseCallback[DirectionsResponse]]) => RequestHandleWithPromise[DirectionsResponse],
     distanceMatrix: (DistanceMatrixRequest, /* callback */ js.UndefOr[ResponseCallback[DistanceMatrixResponse]]) => RequestHandleWithPromise[DistanceMatrixResponse],
     elevation: (ElevationRequest, /* callback */ js.UndefOr[ResponseCallback[ElevationResponse]]) => RequestHandleWithPromise[ElevationResponse],
@@ -555,106 +554,85 @@ object GoogleMapsClientWithPromise {
     __obj.asInstanceOf[GoogleMapsClientWithPromise]
   }
   
-  @scala.inline
-  implicit class GoogleMapsClientWithPromiseMutableBuilder[Self <: GoogleMapsClientWithPromise] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleMapsClientWithPromise](x: Self) {
     
-    @scala.inline
-    def setDirections(
+    inline def setDirections(
       value: (DirectionsRequest, /* callback */ js.UndefOr[ResponseCallback[DirectionsResponse]]) => RequestHandleWithPromise[DirectionsResponse]
     ): Self = StObject.set(x, "directions", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDistanceMatrix(
+    inline def setDistanceMatrix(
       value: (DistanceMatrixRequest, /* callback */ js.UndefOr[ResponseCallback[DistanceMatrixResponse]]) => RequestHandleWithPromise[DistanceMatrixResponse]
     ): Self = StObject.set(x, "distanceMatrix", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setElevation(
+    inline def setElevation(
       value: (ElevationRequest, /* callback */ js.UndefOr[ResponseCallback[ElevationResponse]]) => RequestHandleWithPromise[ElevationResponse]
     ): Self = StObject.set(x, "elevation", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setElevationAlongPath(
+    inline def setElevationAlongPath(
       value: (ElevationAlongPathRequest, /* callback */ js.UndefOr[ResponseCallback[ElevationResponse]]) => RequestHandleWithPromise[ElevationResponse]
     ): Self = StObject.set(x, "elevationAlongPath", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFindPlace(
+    inline def setFindPlace(
       value: (FindPlaceRequest, /* callback */ js.UndefOr[ResponseCallback[FindPlaceFromTextResponse]]) => RequestHandleWithPromise[FindPlaceFromTextResponse]
     ): Self = StObject.set(x, "findPlace", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGeocode(
+    inline def setGeocode(
       value: (GeocodingRequest, /* callback */ js.UndefOr[ResponseCallback[GeocodingResponse[GeocodingResponseStatus]]]) => RequestHandleWithPromise[GeocodingResponse[GeocodingResponseStatus]]
     ): Self = StObject.set(x, "geocode", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGeolocate(
+    inline def setGeolocate(
       value: (GeolocationRequest, /* callback */ js.UndefOr[ResponseCallback[GeolocationResponse]]) => RequestHandleWithPromise[GeolocationResponse]
     ): Self = StObject.set(x, "geolocate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setNearestRoads(
+    inline def setNearestRoads(
       value: (NearestRoadsRequest, /* callback */ js.UndefOr[ResponseCallback[NearestRoadsResponse]]) => RequestHandleWithPromise[NearestRoadsResponse]
     ): Self = StObject.set(x, "nearestRoads", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPlace(
+    inline def setPlace(
       value: (PlaceDetailsRequest, /* callback */ js.UndefOr[ResponseCallback[PlaceDetailsResponse]]) => RequestHandleWithPromise[PlaceDetailsResponse]
     ): Self = StObject.set(x, "place", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPlaces(
+    inline def setPlaces(
       value: (PlacesRequest, /* callback */ js.UndefOr[ResponseCallback[PlaceSearchResponse]]) => RequestHandleWithPromise[PlaceSearchResponse]
     ): Self = StObject.set(x, "places", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPlacesAutoComplete(
+    inline def setPlacesAutoComplete(
       value: (PlaceAutocompleteRequest, /* callback */ js.UndefOr[ResponseCallback[PlaceAutocompleteResponse]]) => RequestHandleWithPromise[PlaceAutocompleteResponse]
     ): Self = StObject.set(x, "placesAutoComplete", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPlacesNearby(
+    inline def setPlacesNearby(
       value: (PlacesNearbyRequest, /* callback */ js.UndefOr[ResponseCallback[PlaceSearchResponse]]) => RequestHandleWithPromise[PlaceSearchResponse]
     ): Self = StObject.set(x, "placesNearby", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPlacesPhoto(
+    inline def setPlacesPhoto(
       value: (PlacePhotoRequest, /* callback */ js.UndefOr[ResponseCallback[PlacePhotoResponse]]) => RequestHandleWithPromise[PlacePhotoResponse]
     ): Self = StObject.set(x, "placesPhoto", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPlacesQueryAutoComplete(
+    inline def setPlacesQueryAutoComplete(
       value: (QueryAutocompleteRequest, /* callback */ js.UndefOr[ResponseCallback[QueryAutocompleteResponse]]) => RequestHandleWithPromise[QueryAutocompleteResponse]
     ): Self = StObject.set(x, "placesQueryAutoComplete", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPlacesRadar(
+    inline def setPlacesRadar(
       value: (PlaceRadarRequest, /* callback */ js.UndefOr[ResponseCallback[PlaceSearchResponse]]) => RequestHandleWithPromise[PlaceSearchResponse]
     ): Self = StObject.set(x, "placesRadar", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setReverseGeocode(
+    inline def setReverseGeocode(
       value: (ReverseGeocodingRequest, /* callback */ js.UndefOr[ResponseCallback[ReverseGeocodingResponse]]) => RequestHandleWithPromise[ReverseGeocodingResponse]
     ): Self = StObject.set(x, "reverseGeocode", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSnapToRoads(
+    inline def setSnapToRoads(
       value: (SnapToRoadsRequest, /* callback */ js.UndefOr[ResponseCallback[SnapToRoadsResponse]]) => RequestHandleWithPromise[SnapToRoadsResponse]
     ): Self = StObject.set(x, "snapToRoads", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSnappedSpeedLimits(
+    inline def setSnappedSpeedLimits(
       value: (SnappedSpeedLimitsRequest, /* callback */ js.UndefOr[ResponseCallback[SpeedLimitsResponse]]) => RequestHandleWithPromise[SpeedLimitsResponse]
     ): Self = StObject.set(x, "snappedSpeedLimits", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSpeedLimits(
+    inline def setSpeedLimits(
       value: (SpeedLimitsRequest, /* callback */ js.UndefOr[ResponseCallback[SpeedLimitsResponse]]) => RequestHandleWithPromise[SpeedLimitsResponse]
     ): Self = StObject.set(x, "speedLimits", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTimezone(
+    inline def setTimezone(
       value: (TimeZoneRequest, /* callback */ js.UndefOr[ResponseCallback[TimeZoneResponse]]) => RequestHandleWithPromise[TimeZoneResponse]
     ): Self = StObject.set(x, "timezone", js.Any.fromFunction2(value))
   }

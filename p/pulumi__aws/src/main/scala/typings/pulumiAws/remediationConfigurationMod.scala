@@ -74,21 +74,16 @@ object remediationConfigurationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): RemediationConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[RemediationConfiguration]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): RemediationConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RemediationConfiguration]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: RemediationConfigurationState): RemediationConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RemediationConfiguration]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: RemediationConfigurationState, opts: CustomResourceOptions): RemediationConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RemediationConfiguration]
+    inline def get(name: String, id: Input[ID]): RemediationConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[RemediationConfiguration]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): RemediationConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RemediationConfiguration]
+    inline def get(name: String, id: Input[ID], state: RemediationConfigurationState): RemediationConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RemediationConfiguration]
+    inline def get(name: String, id: Input[ID], state: RemediationConfigurationState, opts: CustomResourceOptions): RemediationConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RemediationConfiguration]
     
     /**
       * Returns true if the given object is an instance of RemediationConfiguration.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cfg/remediationConfiguration.RemediationConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cfg/remediationConfiguration.RemediationConfiguration */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cfg/remediationConfiguration.RemediationConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cfg/remediationConfiguration.RemediationConfiguration */ Boolean]
   }
   
   trait RemediationConfigurationArgs extends StObject {
@@ -130,48 +125,36 @@ object remediationConfigurationMod {
   }
   object RemediationConfigurationArgs {
     
-    @scala.inline
-    def apply(configRuleName: Input[String], targetId: Input[String], targetType: Input[String]): RemediationConfigurationArgs = {
+    inline def apply(configRuleName: Input[String], targetId: Input[String], targetType: Input[String]): RemediationConfigurationArgs = {
       val __obj = js.Dynamic.literal(configRuleName = configRuleName.asInstanceOf[js.Any], targetId = targetId.asInstanceOf[js.Any], targetType = targetType.asInstanceOf[js.Any])
       __obj.asInstanceOf[RemediationConfigurationArgs]
     }
     
-    @scala.inline
-    implicit class RemediationConfigurationArgsMutableBuilder[Self <: RemediationConfigurationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: RemediationConfigurationArgs](x: Self) {
       
-      @scala.inline
-      def setConfigRuleName(value: Input[String]): Self = StObject.set(x, "configRuleName", value.asInstanceOf[js.Any])
+      inline def setConfigRuleName(value: Input[String]): Self = StObject.set(x, "configRuleName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParameters(
+      inline def setParameters(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.cfg.RemediationConfigurationParameter]]
             ]
       ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+      inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
       
-      @scala.inline
-      def setParametersVarargs(value: Input[typings.pulumiAws.inputMod.cfg.RemediationConfigurationParameter]*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+      inline def setParametersVarargs(value: Input[typings.pulumiAws.inputMod.cfg.RemediationConfigurationParameter]*): Self = StObject.set(x, "parameters", js.Array(value :_*))
       
-      @scala.inline
-      def setResourceType(value: Input[String]): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+      inline def setResourceType(value: Input[String]): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
+      inline def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
       
-      @scala.inline
-      def setTargetId(value: Input[String]): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
+      inline def setTargetId(value: Input[String]): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetType(value: Input[String]): Self = StObject.set(x, "targetType", value.asInstanceOf[js.Any])
+      inline def setTargetType(value: Input[String]): Self = StObject.set(x, "targetType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetVersion(value: Input[String]): Self = StObject.set(x, "targetVersion", value.asInstanceOf[js.Any])
+      inline def setTargetVersion(value: Input[String]): Self = StObject.set(x, "targetVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetVersionUndefined: Self = StObject.set(x, "targetVersion", js.undefined)
+      inline def setTargetVersionUndefined: Self = StObject.set(x, "targetVersion", js.undefined)
     }
   }
   
@@ -216,63 +199,46 @@ object remediationConfigurationMod {
   }
   object RemediationConfigurationState {
     
-    @scala.inline
-    def apply(): RemediationConfigurationState = {
+    inline def apply(): RemediationConfigurationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RemediationConfigurationState]
     }
     
-    @scala.inline
-    implicit class RemediationConfigurationStateMutableBuilder[Self <: RemediationConfigurationState] (val x: Self) extends AnyVal {
+    extension [Self <: RemediationConfigurationState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setConfigRuleName(value: Input[String]): Self = StObject.set(x, "configRuleName", value.asInstanceOf[js.Any])
+      inline def setConfigRuleName(value: Input[String]): Self = StObject.set(x, "configRuleName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigRuleNameUndefined: Self = StObject.set(x, "configRuleName", js.undefined)
+      inline def setConfigRuleNameUndefined: Self = StObject.set(x, "configRuleName", js.undefined)
       
-      @scala.inline
-      def setParameters(
+      inline def setParameters(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.cfg.RemediationConfigurationParameter]]
             ]
       ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+      inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
       
-      @scala.inline
-      def setParametersVarargs(value: Input[typings.pulumiAws.inputMod.cfg.RemediationConfigurationParameter]*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+      inline def setParametersVarargs(value: Input[typings.pulumiAws.inputMod.cfg.RemediationConfigurationParameter]*): Self = StObject.set(x, "parameters", js.Array(value :_*))
       
-      @scala.inline
-      def setResourceType(value: Input[String]): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+      inline def setResourceType(value: Input[String]): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
+      inline def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
       
-      @scala.inline
-      def setTargetId(value: Input[String]): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
+      inline def setTargetId(value: Input[String]): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetIdUndefined: Self = StObject.set(x, "targetId", js.undefined)
+      inline def setTargetIdUndefined: Self = StObject.set(x, "targetId", js.undefined)
       
-      @scala.inline
-      def setTargetType(value: Input[String]): Self = StObject.set(x, "targetType", value.asInstanceOf[js.Any])
+      inline def setTargetType(value: Input[String]): Self = StObject.set(x, "targetType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetTypeUndefined: Self = StObject.set(x, "targetType", js.undefined)
+      inline def setTargetTypeUndefined: Self = StObject.set(x, "targetType", js.undefined)
       
-      @scala.inline
-      def setTargetVersion(value: Input[String]): Self = StObject.set(x, "targetVersion", value.asInstanceOf[js.Any])
+      inline def setTargetVersion(value: Input[String]): Self = StObject.set(x, "targetVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetVersionUndefined: Self = StObject.set(x, "targetVersion", js.undefined)
+      inline def setTargetVersionUndefined: Self = StObject.set(x, "targetVersion", js.undefined)
     }
   }
 }

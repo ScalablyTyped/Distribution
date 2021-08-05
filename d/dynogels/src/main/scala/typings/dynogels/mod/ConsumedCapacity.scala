@@ -12,19 +12,15 @@ trait ConsumedCapacity extends StObject {
 }
 object ConsumedCapacity {
   
-  @scala.inline
-  def apply(CapacityUnits: Double, TableName: String): ConsumedCapacity = {
+  inline def apply(CapacityUnits: Double, TableName: String): ConsumedCapacity = {
     val __obj = js.Dynamic.literal(CapacityUnits = CapacityUnits.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConsumedCapacity]
   }
   
-  @scala.inline
-  implicit class ConsumedCapacityMutableBuilder[Self <: ConsumedCapacity] (val x: Self) extends AnyVal {
+  extension [Self <: ConsumedCapacity](x: Self) {
     
-    @scala.inline
-    def setCapacityUnits(value: Double): Self = StObject.set(x, "CapacityUnits", value.asInstanceOf[js.Any])
+    inline def setCapacityUnits(value: Double): Self = StObject.set(x, "CapacityUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableName(value: String): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: String): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
   }
 }

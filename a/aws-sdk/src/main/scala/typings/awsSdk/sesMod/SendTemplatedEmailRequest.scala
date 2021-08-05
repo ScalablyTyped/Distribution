@@ -63,73 +63,51 @@ trait SendTemplatedEmailRequest extends StObject {
 }
 object SendTemplatedEmailRequest {
   
-  @scala.inline
-  def apply(Destination: Destination, Source: Address, Template: TemplateName, TemplateData: TemplateData): SendTemplatedEmailRequest = {
+  inline def apply(Destination: Destination, Source: Address, Template: TemplateName, TemplateData: TemplateData): SendTemplatedEmailRequest = {
     val __obj = js.Dynamic.literal(Destination = Destination.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any], Template = Template.asInstanceOf[js.Any], TemplateData = TemplateData.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendTemplatedEmailRequest]
   }
   
-  @scala.inline
-  implicit class SendTemplatedEmailRequestMutableBuilder[Self <: SendTemplatedEmailRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SendTemplatedEmailRequest](x: Self) {
     
-    @scala.inline
-    def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
+    inline def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationSetNameUndefined: Self = StObject.set(x, "ConfigurationSetName", js.undefined)
+    inline def setConfigurationSetNameUndefined: Self = StObject.set(x, "ConfigurationSetName", js.undefined)
     
-    @scala.inline
-    def setDestination(value: Destination): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: Destination): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplyToAddresses(value: AddressList): Self = StObject.set(x, "ReplyToAddresses", value.asInstanceOf[js.Any])
+    inline def setReplyToAddresses(value: AddressList): Self = StObject.set(x, "ReplyToAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplyToAddressesUndefined: Self = StObject.set(x, "ReplyToAddresses", js.undefined)
+    inline def setReplyToAddressesUndefined: Self = StObject.set(x, "ReplyToAddresses", js.undefined)
     
-    @scala.inline
-    def setReplyToAddressesVarargs(value: Address*): Self = StObject.set(x, "ReplyToAddresses", js.Array(value :_*))
+    inline def setReplyToAddressesVarargs(value: Address*): Self = StObject.set(x, "ReplyToAddresses", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnPath(value: Address): Self = StObject.set(x, "ReturnPath", value.asInstanceOf[js.Any])
+    inline def setReturnPath(value: Address): Self = StObject.set(x, "ReturnPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnPathArn(value: AmazonResourceName): Self = StObject.set(x, "ReturnPathArn", value.asInstanceOf[js.Any])
+    inline def setReturnPathArn(value: AmazonResourceName): Self = StObject.set(x, "ReturnPathArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnPathArnUndefined: Self = StObject.set(x, "ReturnPathArn", js.undefined)
+    inline def setReturnPathArnUndefined: Self = StObject.set(x, "ReturnPathArn", js.undefined)
     
-    @scala.inline
-    def setReturnPathUndefined: Self = StObject.set(x, "ReturnPath", js.undefined)
+    inline def setReturnPathUndefined: Self = StObject.set(x, "ReturnPath", js.undefined)
     
-    @scala.inline
-    def setSource(value: Address): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Address): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceArn(value: AmazonResourceName): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
+    inline def setSourceArn(value: AmazonResourceName): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceArnUndefined: Self = StObject.set(x, "SourceArn", js.undefined)
+    inline def setSourceArnUndefined: Self = StObject.set(x, "SourceArn", js.undefined)
     
-    @scala.inline
-    def setTags(value: MessageTagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: MessageTagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: MessageTag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: MessageTag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
-    @scala.inline
-    def setTemplate(value: TemplateName): Self = StObject.set(x, "Template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: TemplateName): Self = StObject.set(x, "Template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateArn(value: AmazonResourceName): Self = StObject.set(x, "TemplateArn", value.asInstanceOf[js.Any])
+    inline def setTemplateArn(value: AmazonResourceName): Self = StObject.set(x, "TemplateArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateArnUndefined: Self = StObject.set(x, "TemplateArn", js.undefined)
+    inline def setTemplateArnUndefined: Self = StObject.set(x, "TemplateArn", js.undefined)
     
-    @scala.inline
-    def setTemplateData(value: TemplateData): Self = StObject.set(x, "TemplateData", value.asInstanceOf[js.Any])
+    inline def setTemplateData(value: TemplateData): Self = StObject.set(x, "TemplateData", value.asInstanceOf[js.Any])
   }
 }

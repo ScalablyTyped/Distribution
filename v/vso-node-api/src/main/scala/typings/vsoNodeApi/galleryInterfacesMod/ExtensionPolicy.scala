@@ -18,19 +18,15 @@ trait ExtensionPolicy extends StObject {
 }
 object ExtensionPolicy {
   
-  @scala.inline
-  def apply(install: ExtensionPolicyFlags, request: ExtensionPolicyFlags): ExtensionPolicy = {
+  inline def apply(install: ExtensionPolicyFlags, request: ExtensionPolicyFlags): ExtensionPolicy = {
     val __obj = js.Dynamic.literal(install = install.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionPolicy]
   }
   
-  @scala.inline
-  implicit class ExtensionPolicyMutableBuilder[Self <: ExtensionPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionPolicy](x: Self) {
     
-    @scala.inline
-    def setInstall(value: ExtensionPolicyFlags): Self = StObject.set(x, "install", value.asInstanceOf[js.Any])
+    inline def setInstall(value: ExtensionPolicyFlags): Self = StObject.set(x, "install", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ExtensionPolicyFlags): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ExtensionPolicyFlags): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
   }
 }

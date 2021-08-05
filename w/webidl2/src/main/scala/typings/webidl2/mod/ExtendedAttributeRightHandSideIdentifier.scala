@@ -15,20 +15,16 @@ trait ExtendedAttributeRightHandSideIdentifier
 }
 object ExtendedAttributeRightHandSideIdentifier {
   
-  @scala.inline
-  def apply(value: String): ExtendedAttributeRightHandSideIdentifier = {
+  inline def apply(value: String): ExtendedAttributeRightHandSideIdentifier = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("identifier")
     __obj.asInstanceOf[ExtendedAttributeRightHandSideIdentifier]
   }
   
-  @scala.inline
-  implicit class ExtendedAttributeRightHandSideIdentifierMutableBuilder[Self <: ExtendedAttributeRightHandSideIdentifier] (val x: Self) extends AnyVal {
+  extension [Self <: ExtendedAttributeRightHandSideIdentifier](x: Self) {
     
-    @scala.inline
-    def setType(value: identifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: identifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

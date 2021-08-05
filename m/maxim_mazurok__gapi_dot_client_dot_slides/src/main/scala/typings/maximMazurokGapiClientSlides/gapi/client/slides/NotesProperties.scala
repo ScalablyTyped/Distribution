@@ -15,19 +15,15 @@ trait NotesProperties extends StObject {
 }
 object NotesProperties {
   
-  @scala.inline
-  def apply(): NotesProperties = {
+  inline def apply(): NotesProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NotesProperties]
   }
   
-  @scala.inline
-  implicit class NotesPropertiesMutableBuilder[Self <: NotesProperties] (val x: Self) extends AnyVal {
+  extension [Self <: NotesProperties](x: Self) {
     
-    @scala.inline
-    def setSpeakerNotesObjectId(value: String): Self = StObject.set(x, "speakerNotesObjectId", value.asInstanceOf[js.Any])
+    inline def setSpeakerNotesObjectId(value: String): Self = StObject.set(x, "speakerNotesObjectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeakerNotesObjectIdUndefined: Self = StObject.set(x, "speakerNotesObjectId", js.undefined)
+    inline def setSpeakerNotesObjectIdUndefined: Self = StObject.set(x, "speakerNotesObjectId", js.undefined)
   }
 }

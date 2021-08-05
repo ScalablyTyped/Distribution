@@ -11,14 +11,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): ExtendableConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[ExtendableConfig]
-  @scala.inline
-  def default(configsDirectory: String): ExtendableConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(configsDirectory.asInstanceOf[js.Any]).asInstanceOf[ExtendableConfig]
-  @scala.inline
-  def default(configsDirectory: String, options: ConfigsOverloadOptions): ExtendableConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(configsDirectory.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExtendableConfig]
-  @scala.inline
-  def default(configsDirectory: Unit, options: ConfigsOverloadOptions): ExtendableConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(configsDirectory.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExtendableConfig]
+  inline def default(): ExtendableConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[ExtendableConfig]
+  inline def default(configsDirectory: String): ExtendableConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(configsDirectory.asInstanceOf[js.Any]).asInstanceOf[ExtendableConfig]
+  inline def default(configsDirectory: String, options: ConfigsOverloadOptions): ExtendableConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(configsDirectory.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExtendableConfig]
+  inline def default(configsDirectory: Unit, options: ConfigsOverloadOptions): ExtendableConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(configsDirectory.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExtendableConfig]
   
   trait ConfigsOverloadOptions extends StObject {
     
@@ -28,26 +24,20 @@ object mod {
   }
   object ConfigsOverloadOptions {
     
-    @scala.inline
-    def apply(): ConfigsOverloadOptions = {
+    inline def apply(): ConfigsOverloadOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigsOverloadOptions]
     }
     
-    @scala.inline
-    implicit class ConfigsOverloadOptionsMutableBuilder[Self <: ConfigsOverloadOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigsOverloadOptions](x: Self) {
       
-      @scala.inline
-      def setDefaultEnv(value: String): Self = StObject.set(x, "defaultEnv", value.asInstanceOf[js.Any])
+      inline def setDefaultEnv(value: String): Self = StObject.set(x, "defaultEnv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultEnvUndefined: Self = StObject.set(x, "defaultEnv", js.undefined)
+      inline def setDefaultEnvUndefined: Self = StObject.set(x, "defaultEnv", js.undefined)
       
-      @scala.inline
-      def setEnv(value: String): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: String): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+      inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     }
   }
   

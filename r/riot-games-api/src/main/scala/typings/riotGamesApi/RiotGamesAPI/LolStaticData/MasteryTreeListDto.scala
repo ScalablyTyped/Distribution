@@ -10,19 +10,15 @@ trait MasteryTreeListDto extends StObject {
 }
 object MasteryTreeListDto {
   
-  @scala.inline
-  def apply(masteryTreeItems: js.Array[MasteryTreeItemDto]): MasteryTreeListDto = {
+  inline def apply(masteryTreeItems: js.Array[MasteryTreeItemDto]): MasteryTreeListDto = {
     val __obj = js.Dynamic.literal(masteryTreeItems = masteryTreeItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[MasteryTreeListDto]
   }
   
-  @scala.inline
-  implicit class MasteryTreeListDtoMutableBuilder[Self <: MasteryTreeListDto] (val x: Self) extends AnyVal {
+  extension [Self <: MasteryTreeListDto](x: Self) {
     
-    @scala.inline
-    def setMasteryTreeItems(value: js.Array[MasteryTreeItemDto]): Self = StObject.set(x, "masteryTreeItems", value.asInstanceOf[js.Any])
+    inline def setMasteryTreeItems(value: js.Array[MasteryTreeItemDto]): Self = StObject.set(x, "masteryTreeItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasteryTreeItemsVarargs(value: MasteryTreeItemDto*): Self = StObject.set(x, "masteryTreeItems", js.Array(value :_*))
+    inline def setMasteryTreeItemsVarargs(value: MasteryTreeItemDto*): Self = StObject.set(x, "masteryTreeItems", js.Array(value :_*))
   }
 }

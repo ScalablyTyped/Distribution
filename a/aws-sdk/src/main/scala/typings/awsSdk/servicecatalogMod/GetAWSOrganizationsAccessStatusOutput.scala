@@ -13,19 +13,15 @@ trait GetAWSOrganizationsAccessStatusOutput extends StObject {
 }
 object GetAWSOrganizationsAccessStatusOutput {
   
-  @scala.inline
-  def apply(): GetAWSOrganizationsAccessStatusOutput = {
+  inline def apply(): GetAWSOrganizationsAccessStatusOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAWSOrganizationsAccessStatusOutput]
   }
   
-  @scala.inline
-  implicit class GetAWSOrganizationsAccessStatusOutputMutableBuilder[Self <: GetAWSOrganizationsAccessStatusOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetAWSOrganizationsAccessStatusOutput](x: Self) {
     
-    @scala.inline
-    def setAccessStatus(value: AccessStatus): Self = StObject.set(x, "AccessStatus", value.asInstanceOf[js.Any])
+    inline def setAccessStatus(value: AccessStatus): Self = StObject.set(x, "AccessStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessStatusUndefined: Self = StObject.set(x, "AccessStatus", js.undefined)
+    inline def setAccessStatusUndefined: Self = StObject.set(x, "AccessStatus", js.undefined)
   }
 }

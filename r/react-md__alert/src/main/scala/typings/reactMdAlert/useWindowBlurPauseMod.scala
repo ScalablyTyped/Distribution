@@ -11,8 +11,7 @@ object useWindowBlurPauseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useWindowBlurPause(hasStartTimerStopTimerVisibleMessageDisabled: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useWindowBlurPause")(hasStartTimerStopTimerVisibleMessageDisabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def useWindowBlurPause(hasStartTimerStopTimerVisibleMessageDisabled: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useWindowBlurPause")(hasStartTimerStopTimerVisibleMessageDisabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait Options extends StObject {
     
@@ -28,35 +27,26 @@ object useWindowBlurPauseMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(startTimer: () => Unit, stopTimer: () => Unit, visible: Boolean): Options = {
+    inline def apply(startTimer: () => Unit, stopTimer: () => Unit, visible: Boolean): Options = {
       val __obj = js.Dynamic.literal(startTimer = js.Any.fromFunction0(startTimer), stopTimer = js.Any.fromFunction0(stopTimer), visible = visible.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setStartTimer(value: () => Unit): Self = StObject.set(x, "startTimer", js.Any.fromFunction0(value))
+      inline def setStartTimer(value: () => Unit): Self = StObject.set(x, "startTimer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStopTimer(value: () => Unit): Self = StObject.set(x, "stopTimer", js.Any.fromFunction0(value))
+      inline def setStopTimer(value: () => Unit): Self = StObject.set(x, "stopTimer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     }
   }
 }

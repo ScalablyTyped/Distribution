@@ -11,19 +11,15 @@ trait GoogleCloudMlV1ContainerPort extends StObject {
 }
 object GoogleCloudMlV1ContainerPort {
   
-  @scala.inline
-  def apply(): GoogleCloudMlV1ContainerPort = {
+  inline def apply(): GoogleCloudMlV1ContainerPort = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMlV1ContainerPort]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMlV1ContainerPortMutableBuilder[Self <: GoogleCloudMlV1ContainerPort] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMlV1ContainerPort](x: Self) {
     
-    @scala.inline
-    def setContainerPort(value: Double): Self = StObject.set(x, "containerPort", value.asInstanceOf[js.Any])
+    inline def setContainerPort(value: Double): Self = StObject.set(x, "containerPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerPortUndefined: Self = StObject.set(x, "containerPort", js.undefined)
+    inline def setContainerPortUndefined: Self = StObject.set(x, "containerPort", js.undefined)
   }
 }

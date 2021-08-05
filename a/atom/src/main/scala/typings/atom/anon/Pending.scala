@@ -10,16 +10,13 @@ trait Pending extends StObject {
 }
 object Pending {
   
-  @scala.inline
-  def apply(pending: Boolean): Pending = {
+  inline def apply(pending: Boolean): Pending = {
     val __obj = js.Dynamic.literal(pending = pending.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pending]
   }
   
-  @scala.inline
-  implicit class PendingMutableBuilder[Self <: Pending] (val x: Self) extends AnyVal {
+  extension [Self <: Pending](x: Self) {
     
-    @scala.inline
-    def setPending(value: Boolean): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+    inline def setPending(value: Boolean): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
   }
 }

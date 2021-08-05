@@ -23,28 +23,21 @@ trait CreateDiscovererRequest extends StObject {
 }
 object CreateDiscovererRequest {
   
-  @scala.inline
-  def apply(SourceArn: stringMin20Max1600): CreateDiscovererRequest = {
+  inline def apply(SourceArn: stringMin20Max1600): CreateDiscovererRequest = {
     val __obj = js.Dynamic.literal(SourceArn = SourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDiscovererRequest]
   }
   
-  @scala.inline
-  implicit class CreateDiscovererRequestMutableBuilder[Self <: CreateDiscovererRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDiscovererRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: stringMin0Max256): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: stringMin0Max256): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setSourceArn(value: stringMin20Max1600): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
+    inline def setSourceArn(value: stringMin20Max1600): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

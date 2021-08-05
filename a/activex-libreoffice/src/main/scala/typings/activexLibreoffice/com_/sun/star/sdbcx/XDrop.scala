@@ -27,8 +27,7 @@ trait XDrop
 }
 object XDrop {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     dropByIndex: Double => Unit,
     dropByName: String => Unit,
@@ -39,13 +38,10 @@ object XDrop {
     __obj.asInstanceOf[XDrop]
   }
   
-  @scala.inline
-  implicit class XDropMutableBuilder[Self <: XDrop] (val x: Self) extends AnyVal {
+  extension [Self <: XDrop](x: Self) {
     
-    @scala.inline
-    def setDropByIndex(value: Double => Unit): Self = StObject.set(x, "dropByIndex", js.Any.fromFunction1(value))
+    inline def setDropByIndex(value: Double => Unit): Self = StObject.set(x, "dropByIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDropByName(value: String => Unit): Self = StObject.set(x, "dropByName", js.Any.fromFunction1(value))
+    inline def setDropByName(value: String => Unit): Self = StObject.set(x, "dropByName", js.Any.fromFunction1(value))
   }
 }

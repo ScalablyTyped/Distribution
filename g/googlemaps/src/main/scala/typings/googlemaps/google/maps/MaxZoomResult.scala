@@ -17,14 +17,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MaxZoomResult extends StObject
 object MaxZoomResult {
   
-  @scala.inline
-  def MaxZoomResultError(status: ERROR): typings.googlemaps.google.maps.MaxZoomResultError = {
+  inline def MaxZoomResultError(status: ERROR): typings.googlemaps.google.maps.MaxZoomResultError = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.googlemaps.google.maps.MaxZoomResultError]
   }
   
-  @scala.inline
-  def MaxZoomResultOk(status: OK, zoom: Double): typings.googlemaps.google.maps.MaxZoomResultOk = {
+  inline def MaxZoomResultOk(status: OK, zoom: Double): typings.googlemaps.google.maps.MaxZoomResultOk = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.googlemaps.google.maps.MaxZoomResultOk]
   }

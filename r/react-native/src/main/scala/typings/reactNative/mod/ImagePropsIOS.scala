@@ -35,37 +35,27 @@ trait ImagePropsIOS extends StObject {
 }
 object ImagePropsIOS {
   
-  @scala.inline
-  def apply(): ImagePropsIOS = {
+  inline def apply(): ImagePropsIOS = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImagePropsIOS]
   }
   
-  @scala.inline
-  implicit class ImagePropsIOSMutableBuilder[Self <: ImagePropsIOS] (val x: Self) extends AnyVal {
+  extension [Self <: ImagePropsIOS](x: Self) {
     
-    @scala.inline
-    def setBlurRadius(value: Double): Self = StObject.set(x, "blurRadius", value.asInstanceOf[js.Any])
+    inline def setBlurRadius(value: Double): Self = StObject.set(x, "blurRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlurRadiusUndefined: Self = StObject.set(x, "blurRadius", js.undefined)
+    inline def setBlurRadiusUndefined: Self = StObject.set(x, "blurRadius", js.undefined)
     
-    @scala.inline
-    def setCapInsets(value: Insets): Self = StObject.set(x, "capInsets", value.asInstanceOf[js.Any])
+    inline def setCapInsets(value: Insets): Self = StObject.set(x, "capInsets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapInsetsUndefined: Self = StObject.set(x, "capInsets", js.undefined)
+    inline def setCapInsetsUndefined: Self = StObject.set(x, "capInsets", js.undefined)
     
-    @scala.inline
-    def setOnPartialLoad(value: () => Unit): Self = StObject.set(x, "onPartialLoad", js.Any.fromFunction0(value))
+    inline def setOnPartialLoad(value: () => Unit): Self = StObject.set(x, "onPartialLoad", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnPartialLoadUndefined: Self = StObject.set(x, "onPartialLoad", js.undefined)
+    inline def setOnPartialLoadUndefined: Self = StObject.set(x, "onPartialLoad", js.undefined)
     
-    @scala.inline
-    def setOnProgress(value: /* event */ NativeSyntheticEvent[ImageProgressEventDataIOS] => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
+    inline def setOnProgress(value: /* event */ NativeSyntheticEvent[ImageProgressEventDataIOS] => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
+    inline def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
   }
 }

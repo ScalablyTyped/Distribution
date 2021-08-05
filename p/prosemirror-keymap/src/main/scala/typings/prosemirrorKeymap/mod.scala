@@ -15,9 +15,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def keydownHandler[S /* <: Schema[js.Any, js.Any] */](bindings: Keymap[S]): js.Function2[/* view */ EditorView[js.Any], /* event */ KeyboardEvent, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("keydownHandler")(bindings.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* view */ EditorView[js.Any], /* event */ KeyboardEvent, Boolean]]
+  inline def keydownHandler[S /* <: Schema[js.Any, js.Any] */](bindings: Keymap[S]): js.Function2[/* view */ EditorView[js.Any], /* event */ KeyboardEvent, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("keydownHandler")(bindings.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* view */ EditorView[js.Any], /* event */ KeyboardEvent, Boolean]]
   
-  @scala.inline
-  def keymap[S /* <: Schema[js.Any, js.Any] */](bindings: Keymap[S]): Plugin[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("keymap")(bindings.asInstanceOf[js.Any]).asInstanceOf[Plugin[js.Any, js.Any]]
+  inline def keymap[S /* <: Schema[js.Any, js.Any] */](bindings: Keymap[S]): Plugin[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("keymap")(bindings.asInstanceOf[js.Any]).asInstanceOf[Plugin[js.Any, js.Any]]
 }

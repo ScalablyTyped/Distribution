@@ -28,8 +28,7 @@ trait IDailyMotionPlayerAPI
 }
 object IDailyMotionPlayerAPI {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     currentTime: Double,
     duration: Double,
     muted: Boolean,
@@ -44,34 +43,24 @@ object IDailyMotionPlayerAPI {
     __obj.asInstanceOf[IDailyMotionPlayerAPI]
   }
   
-  @scala.inline
-  implicit class IDailyMotionPlayerAPIMutableBuilder[Self <: IDailyMotionPlayerAPI] (val x: Self) extends AnyVal {
+  extension [Self <: IDailyMotionPlayerAPI](x: Self) {
     
-    @scala.inline
-    def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
+    inline def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
+    inline def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
+    inline def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPlay(value: () => Unit): Self = StObject.set(x, "play", js.Any.fromFunction0(value))
+    inline def setPlay(value: () => Unit): Self = StObject.set(x, "play", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetCurrentTime(value: Double => Unit): Self = StObject.set(x, "setCurrentTime", js.Any.fromFunction1(value))
+    inline def setSetCurrentTime(value: Double => Unit): Self = StObject.set(x, "setCurrentTime", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMuted(value: Boolean => Unit): Self = StObject.set(x, "setMuted", js.Any.fromFunction1(value))
+    inline def setSetMuted(value: Boolean => Unit): Self = StObject.set(x, "setMuted", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetVolume(value: Double => Unit): Self = StObject.set(x, "setVolume", js.Any.fromFunction1(value))
+    inline def setSetVolume(value: Double => Unit): Self = StObject.set(x, "setVolume", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+    inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
   }
 }

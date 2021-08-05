@@ -20,17 +20,14 @@ object mod extends Shortcut {
     }
     object Template {
       
-      @scala.inline
-      def apply(expand: js.Any => String): Template = {
+      inline def apply(expand: js.Any => String): Template = {
         val __obj = js.Dynamic.literal(expand = js.Any.fromFunction1(expand))
         __obj.asInstanceOf[Template]
       }
       
-      @scala.inline
-      implicit class TemplateMutableBuilder[Self <: Template] (val x: Self) extends AnyVal {
+      extension [Self <: Template](x: Self) {
         
-        @scala.inline
-        def setExpand(value: js.Any => String): Self = StObject.set(x, "expand", js.Any.fromFunction1(value))
+        inline def setExpand(value: js.Any => String): Self = StObject.set(x, "expand", js.Any.fromFunction1(value))
       }
     }
     
@@ -40,17 +37,14 @@ object mod extends Shortcut {
     }
     object TemplateParser {
       
-      @scala.inline
-      def apply(parse: String => Template): TemplateParser = {
+      inline def apply(parse: String => Template): TemplateParser = {
         val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse))
         __obj.asInstanceOf[TemplateParser]
       }
       
-      @scala.inline
-      implicit class TemplateParserMutableBuilder[Self <: TemplateParser] (val x: Self) extends AnyVal {
+      extension [Self <: TemplateParser](x: Self) {
         
-        @scala.inline
-        def setParse(value: String => Template): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+        inline def setParse(value: String => Template): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
       }
     }
   }

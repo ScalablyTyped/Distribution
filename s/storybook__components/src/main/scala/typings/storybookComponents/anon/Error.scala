@@ -13,23 +13,18 @@ trait Error extends StObject {
 }
 object Error {
   
-  @scala.inline
-  def apply(`inline`: Boolean): Error = {
+  inline def apply(`inline`: Boolean): Error = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Error]
   }
   
-  @scala.inline
-  implicit class ErrorMutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
+  extension [Self <: Error](x: Self) {
     
-    @scala.inline
-    def setError(value: StoryError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: StoryError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+    inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
   }
 }

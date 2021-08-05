@@ -21,9 +21,8 @@ object containerMod {
     /* CompleteClass */
     override def build(): String = js.native
     
-    val children: js.Any = js.native
+    /* private */ val children: js.Any = js.native
   }
   
-  @scala.inline
-  def container(children: (String | IFragment)*): Container_ = ^.asInstanceOf[js.Dynamic].applyDynamic("container")(children.asInstanceOf[js.Any]).asInstanceOf[Container_]
+  inline def container(children: (String | IFragment)*): Container_ = ^.asInstanceOf[js.Dynamic].applyDynamic("container")(children.asInstanceOf[js.Any]).asInstanceOf[Container_]
 }

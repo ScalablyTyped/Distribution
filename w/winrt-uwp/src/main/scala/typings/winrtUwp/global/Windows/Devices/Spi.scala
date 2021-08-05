@@ -50,29 +50,25 @@ object Spi {
       @JSGlobal("Windows.Devices.Spi.Provider.ProviderSpiMode.mode0")
       @js.native
       def mode0: js.Any = js.native
-      @scala.inline
-      def mode0_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mode0")(x.asInstanceOf[js.Any])
+      inline def mode0_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mode0")(x.asInstanceOf[js.Any])
       
       /* unmapped type */
       @JSGlobal("Windows.Devices.Spi.Provider.ProviderSpiMode.mode1")
       @js.native
       def mode1: js.Any = js.native
-      @scala.inline
-      def mode1_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mode1")(x.asInstanceOf[js.Any])
+      inline def mode1_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mode1")(x.asInstanceOf[js.Any])
       
       /* unmapped type */
       @JSGlobal("Windows.Devices.Spi.Provider.ProviderSpiMode.mode2")
       @js.native
       def mode2: js.Any = js.native
-      @scala.inline
-      def mode2_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mode2")(x.asInstanceOf[js.Any])
+      inline def mode2_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mode2")(x.asInstanceOf[js.Any])
       
       /* unmapped type */
       @JSGlobal("Windows.Devices.Spi.Provider.ProviderSpiMode.mode3")
       @js.native
       def mode3: js.Any = js.native
-      @scala.inline
-      def mode3_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mode3")(x.asInstanceOf[js.Any])
+      inline def mode3_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mode3")(x.asInstanceOf[js.Any])
     }
     
     object ProviderSpiSharingMode {
@@ -84,15 +80,13 @@ object Spi {
       @JSGlobal("Windows.Devices.Spi.Provider.ProviderSpiSharingMode.exclusive")
       @js.native
       def exclusive: js.Any = js.native
-      @scala.inline
-      def exclusive_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exclusive")(x.asInstanceOf[js.Any])
+      inline def exclusive_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exclusive")(x.asInstanceOf[js.Any])
       
       /* unmapped type */
       @JSGlobal("Windows.Devices.Spi.Provider.ProviderSpiSharingMode.shared")
       @js.native
       def shared: js.Any = js.native
-      @scala.inline
-      def shared_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shared")(x.asInstanceOf[js.Any])
+      inline def shared_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shared")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -180,16 +174,14 @@ object Spi {
       * @return When the method completes successfully, it returns a list of values that represent the available SPI controllers on the system.
       */
     /* static member */
-    @scala.inline
-    def getControllersAsync(provider: ISpiProvider): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getControllersAsync")(provider.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def getControllersAsync(provider: ISpiProvider): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getControllersAsync")(provider.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
     
     /**
       * Gets the default SPI controller on the system.
       * @return The default SPI controller on the system, or null if the system has no SPI controller.
       */
     /* static member */
-    @scala.inline
-    def getDefaultAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Spi.SpiController] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultAsync")().asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Spi.SpiController]]
+    inline def getDefaultAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Spi.SpiController] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultAsync")().asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Spi.SpiController]]
   }
   
   /** Represents a device connected through the SPI bus. */
@@ -254,8 +246,7 @@ object Spi {
       * @return The SPI device requested.
       */
     /* static member */
-    @scala.inline
-    def fromIdAsync(busId: String, settings: typings.winrtUwp.Windows.Devices.Spi.SpiConnectionSettings): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Spi.SpiDevice] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(busId.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Spi.SpiDevice]]
+    inline def fromIdAsync(busId: String, settings: typings.winrtUwp.Windows.Devices.Spi.SpiConnectionSettings): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Spi.SpiDevice] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(busId.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Spi.SpiDevice]]
     
     /**
       * Retrieves the info about a certain bus.
@@ -263,24 +254,21 @@ object Spi {
       * @return The bus info requested.
       */
     /* static member */
-    @scala.inline
-    def getBusInfo(busId: String): typings.winrtUwp.Windows.Devices.Spi.SpiBusInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("getBusInfo")(busId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Spi.SpiBusInfo]
+    inline def getBusInfo(busId: String): typings.winrtUwp.Windows.Devices.Spi.SpiBusInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("getBusInfo")(busId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Spi.SpiBusInfo]
     
     /**
       * Gets all the SPI buses found on the system.
       * @return String containing all the buses found on the system.
       */
     /* static member */
-    @scala.inline
-    def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
+    inline def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
     /**
       * Gets all the SPI buses found on the system that match the input parameter.
       * @param friendlyName Input parameter specifying an identifying name for the desired bus. This usually corresponds to a name on the schematic.
       * @return String containing all the buses that have the input in the name.
       */
     /* static member */
-    @scala.inline
-    def getDeviceSelector(friendlyName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")(friendlyName.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getDeviceSelector(friendlyName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")(friendlyName.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   /** Defines the SPI communication mode. The communication mode defines the clock edge on which the master out line toggles, the master in line samples, and the signal clock's signal steady level (named SCLK). Each mode is defined with a pair of parameters called clock polarity (CPOL) and clock phase (CPHA). */

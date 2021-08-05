@@ -13,22 +13,17 @@ trait Settings extends StObject {
 }
 object Settings {
   
-  @scala.inline
-  def apply(): Settings = {
+  inline def apply(): Settings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Settings]
   }
   
-  @scala.inline
-  implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
+  extension [Self <: Settings](x: Self) {
     
-    @scala.inline
-    def setButtons(value: Boolean | (js.Array[ButtonSettings | String]) | ButtonsSettings): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: Boolean | (js.Array[ButtonSettings | String]) | ButtonsSettings): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+    inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    @scala.inline
-    def setButtonsVarargs(value: (ButtonSettings | String)*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: (ButtonSettings | String)*): Self = StObject.set(x, "buttons", js.Array(value :_*))
   }
 }

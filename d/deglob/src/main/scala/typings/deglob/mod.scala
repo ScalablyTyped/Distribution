@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(patterns: js.Array[String], cb: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(patterns: js.Array[String], opts: Options, cb: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(patterns: js.Array[String], cb: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(patterns: js.Array[String], opts: Options, cb: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("deglob", JSImport.Namespace)
   @js.native
@@ -34,53 +32,38 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setConfigKey(value: String): Self = StObject.set(x, "configKey", value.asInstanceOf[js.Any])
+      inline def setConfigKey(value: String): Self = StObject.set(x, "configKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigKeyUndefined: Self = StObject.set(x, "configKey", js.undefined)
+      inline def setConfigKeyUndefined: Self = StObject.set(x, "configKey", js.undefined)
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setGitIgnoreFile(value: String): Self = StObject.set(x, "gitIgnoreFile", value.asInstanceOf[js.Any])
+      inline def setGitIgnoreFile(value: String): Self = StObject.set(x, "gitIgnoreFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGitIgnoreFileUndefined: Self = StObject.set(x, "gitIgnoreFile", js.undefined)
+      inline def setGitIgnoreFileUndefined: Self = StObject.set(x, "gitIgnoreFile", js.undefined)
       
-      @scala.inline
-      def setIgnore(value: js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      @scala.inline
-      def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
       
-      @scala.inline
-      def setUseGitIgnore(value: Boolean): Self = StObject.set(x, "useGitIgnore", value.asInstanceOf[js.Any])
+      inline def setUseGitIgnore(value: Boolean): Self = StObject.set(x, "useGitIgnore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseGitIgnoreUndefined: Self = StObject.set(x, "useGitIgnore", js.undefined)
+      inline def setUseGitIgnoreUndefined: Self = StObject.set(x, "useGitIgnore", js.undefined)
       
-      @scala.inline
-      def setUsePackageJson(value: Boolean): Self = StObject.set(x, "usePackageJson", value.asInstanceOf[js.Any])
+      inline def setUsePackageJson(value: Boolean): Self = StObject.set(x, "usePackageJson", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsePackageJsonUndefined: Self = StObject.set(x, "usePackageJson", js.undefined)
+      inline def setUsePackageJsonUndefined: Self = StObject.set(x, "usePackageJson", js.undefined)
     }
   }
 }

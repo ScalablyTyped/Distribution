@@ -14,8 +14,7 @@ trait OutputChunk
 }
 object OutputChunk {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     code: String,
     dynamicImports: js.Array[String],
     exports: js.Array[String],
@@ -35,10 +34,8 @@ object OutputChunk {
     __obj.asInstanceOf[OutputChunk]
   }
   
-  @scala.inline
-  implicit class OutputChunkMutableBuilder[Self <: OutputChunk] (val x: Self) extends AnyVal {
+  extension [Self <: OutputChunk](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
   }
 }

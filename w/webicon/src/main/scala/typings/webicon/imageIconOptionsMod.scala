@@ -12,8 +12,7 @@ object imageIconOptionsMod {
        with Storeable
   object ImageIconOptions {
     
-    @scala.inline
-    def apply(): ImageIconOptions = {
+    inline def apply(): ImageIconOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ImageIconOptions]
     }

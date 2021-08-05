@@ -13,16 +13,13 @@ trait ExpireSessionRequest extends StObject {
 }
 object ExpireSessionRequest {
   
-  @scala.inline
-  def apply(SessionId: String): ExpireSessionRequest = {
+  inline def apply(SessionId: String): ExpireSessionRequest = {
     val __obj = js.Dynamic.literal(SessionId = SessionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpireSessionRequest]
   }
   
-  @scala.inline
-  implicit class ExpireSessionRequestMutableBuilder[Self <: ExpireSessionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ExpireSessionRequest](x: Self) {
     
-    @scala.inline
-    def setSessionId(value: String): Self = StObject.set(x, "SessionId", value.asInstanceOf[js.Any])
+    inline def setSessionId(value: String): Self = StObject.set(x, "SessionId", value.asInstanceOf[js.Any])
   }
 }

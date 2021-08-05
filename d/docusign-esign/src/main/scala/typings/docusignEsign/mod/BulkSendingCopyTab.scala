@@ -21,25 +21,19 @@ trait BulkSendingCopyTab extends StObject {
 }
 object BulkSendingCopyTab {
   
-  @scala.inline
-  def apply(): BulkSendingCopyTab = {
+  inline def apply(): BulkSendingCopyTab = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BulkSendingCopyTab]
   }
   
-  @scala.inline
-  implicit class BulkSendingCopyTabMutableBuilder[Self <: BulkSendingCopyTab] (val x: Self) extends AnyVal {
+  extension [Self <: BulkSendingCopyTab](x: Self) {
     
-    @scala.inline
-    def setInitialValue(value: String): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
+    inline def setInitialValue(value: String): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialValueUndefined: Self = StObject.set(x, "initialValue", js.undefined)
+    inline def setInitialValueUndefined: Self = StObject.set(x, "initialValue", js.undefined)
     
-    @scala.inline
-    def setTabLabel(value: String): Self = StObject.set(x, "tabLabel", value.asInstanceOf[js.Any])
+    inline def setTabLabel(value: String): Self = StObject.set(x, "tabLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabLabelUndefined: Self = StObject.set(x, "tabLabel", js.undefined)
+    inline def setTabLabelUndefined: Self = StObject.set(x, "tabLabel", js.undefined)
   }
 }

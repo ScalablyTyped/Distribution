@@ -19,8 +19,7 @@ trait BookmarkThumbnail
 }
 object BookmarkThumbnail {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -29,13 +28,10 @@ object BookmarkThumbnail {
     __obj.asInstanceOf[BookmarkThumbnail]
   }
   
-  @scala.inline
-  implicit class BookmarkThumbnailMutableBuilder[Self <: BookmarkThumbnail] (val x: Self) extends AnyVal {
+  extension [Self <: BookmarkThumbnail](x: Self) {
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

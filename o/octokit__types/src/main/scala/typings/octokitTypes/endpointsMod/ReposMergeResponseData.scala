@@ -29,8 +29,7 @@ trait ReposMergeResponseData extends StObject {
 }
 object ReposMergeResponseData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     author: Avatarurl,
     comments_url: String,
     commit: Verification,
@@ -45,37 +44,26 @@ object ReposMergeResponseData {
     __obj.asInstanceOf[ReposMergeResponseData]
   }
   
-  @scala.inline
-  implicit class ReposMergeResponseDataMutableBuilder[Self <: ReposMergeResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: ReposMergeResponseData](x: Self) {
     
-    @scala.inline
-    def setAuthor(value: Avatarurl): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: Avatarurl): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComments_url(value: String): Self = StObject.set(x, "comments_url", value.asInstanceOf[js.Any])
+    inline def setComments_url(value: String): Self = StObject.set(x, "comments_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommit(value: Verification): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+    inline def setCommit(value: Verification): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitter(value: Avatarurl): Self = StObject.set(x, "committer", value.asInstanceOf[js.Any])
+    inline def setCommitter(value: Avatarurl): Self = StObject.set(x, "committer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
+    inline def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
+    inline def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParents(value: js.Array[ShaUrl]): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
+    inline def setParents(value: js.Array[ShaUrl]): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentsVarargs(value: ShaUrl*): Self = StObject.set(x, "parents", js.Array(value :_*))
+    inline def setParentsVarargs(value: ShaUrl*): Self = StObject.set(x, "parents", js.Array(value :_*))
     
-    @scala.inline
-    def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
+    inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

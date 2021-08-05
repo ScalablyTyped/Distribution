@@ -13,19 +13,15 @@ trait ValidateMatchmakingRuleSetOutput extends StObject {
 }
 object ValidateMatchmakingRuleSetOutput {
   
-  @scala.inline
-  def apply(): ValidateMatchmakingRuleSetOutput = {
+  inline def apply(): ValidateMatchmakingRuleSetOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ValidateMatchmakingRuleSetOutput]
   }
   
-  @scala.inline
-  implicit class ValidateMatchmakingRuleSetOutputMutableBuilder[Self <: ValidateMatchmakingRuleSetOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ValidateMatchmakingRuleSetOutput](x: Self) {
     
-    @scala.inline
-    def setValid(value: BooleanModel): Self = StObject.set(x, "Valid", value.asInstanceOf[js.Any])
+    inline def setValid(value: BooleanModel): Self = StObject.set(x, "Valid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidUndefined: Self = StObject.set(x, "Valid", js.undefined)
+    inline def setValidUndefined: Self = StObject.set(x, "Valid", js.undefined)
   }
 }

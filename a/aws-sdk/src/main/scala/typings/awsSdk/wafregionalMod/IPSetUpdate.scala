@@ -18,19 +18,15 @@ trait IPSetUpdate extends StObject {
 }
 object IPSetUpdate {
   
-  @scala.inline
-  def apply(Action: ChangeAction, IPSetDescriptor: IPSetDescriptor): IPSetUpdate = {
+  inline def apply(Action: ChangeAction, IPSetDescriptor: IPSetDescriptor): IPSetUpdate = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], IPSetDescriptor = IPSetDescriptor.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPSetUpdate]
   }
   
-  @scala.inline
-  implicit class IPSetUpdateMutableBuilder[Self <: IPSetUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: IPSetUpdate](x: Self) {
     
-    @scala.inline
-    def setAction(value: ChangeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: ChangeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIPSetDescriptor(value: IPSetDescriptor): Self = StObject.set(x, "IPSetDescriptor", value.asInstanceOf[js.Any])
+    inline def setIPSetDescriptor(value: IPSetDescriptor): Self = StObject.set(x, "IPSetDescriptor", value.asInstanceOf[js.Any])
   }
 }

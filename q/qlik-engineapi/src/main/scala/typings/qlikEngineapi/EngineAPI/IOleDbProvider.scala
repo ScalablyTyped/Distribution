@@ -27,25 +27,19 @@ trait IOleDbProvider extends StObject {
 }
 object IOleDbProvider {
   
-  @scala.inline
-  def apply(qDescription: String, qName: String): IOleDbProvider = {
+  inline def apply(qDescription: String, qName: String): IOleDbProvider = {
     val __obj = js.Dynamic.literal(qDescription = qDescription.asInstanceOf[js.Any], qName = qName.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOleDbProvider]
   }
   
-  @scala.inline
-  implicit class IOleDbProviderMutableBuilder[Self <: IOleDbProvider] (val x: Self) extends AnyVal {
+  extension [Self <: IOleDbProvider](x: Self) {
     
-    @scala.inline
-    def setQBit32(value: Boolean): Self = StObject.set(x, "qBit32", value.asInstanceOf[js.Any])
+    inline def setQBit32(value: Boolean): Self = StObject.set(x, "qBit32", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQBit32Undefined: Self = StObject.set(x, "qBit32", js.undefined)
+    inline def setQBit32Undefined: Self = StObject.set(x, "qBit32", js.undefined)
     
-    @scala.inline
-    def setQDescription(value: String): Self = StObject.set(x, "qDescription", value.asInstanceOf[js.Any])
+    inline def setQDescription(value: String): Self = StObject.set(x, "qDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
+    inline def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
   }
 }

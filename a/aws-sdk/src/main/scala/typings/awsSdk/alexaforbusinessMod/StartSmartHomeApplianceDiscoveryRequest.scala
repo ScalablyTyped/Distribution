@@ -13,16 +13,13 @@ trait StartSmartHomeApplianceDiscoveryRequest extends StObject {
 }
 object StartSmartHomeApplianceDiscoveryRequest {
   
-  @scala.inline
-  def apply(RoomArn: Arn): StartSmartHomeApplianceDiscoveryRequest = {
+  inline def apply(RoomArn: Arn): StartSmartHomeApplianceDiscoveryRequest = {
     val __obj = js.Dynamic.literal(RoomArn = RoomArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartSmartHomeApplianceDiscoveryRequest]
   }
   
-  @scala.inline
-  implicit class StartSmartHomeApplianceDiscoveryRequestMutableBuilder[Self <: StartSmartHomeApplianceDiscoveryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartSmartHomeApplianceDiscoveryRequest](x: Self) {
     
-    @scala.inline
-    def setRoomArn(value: Arn): Self = StObject.set(x, "RoomArn", value.asInstanceOf[js.Any])
+    inline def setRoomArn(value: Arn): Self = StObject.set(x, "RoomArn", value.asInstanceOf[js.Any])
   }
 }

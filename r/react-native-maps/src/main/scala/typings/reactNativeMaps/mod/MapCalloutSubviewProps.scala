@@ -14,19 +14,15 @@ trait MapCalloutSubviewProps
 }
 object MapCalloutSubviewProps {
   
-  @scala.inline
-  def apply(): MapCalloutSubviewProps = {
+  inline def apply(): MapCalloutSubviewProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapCalloutSubviewProps]
   }
   
-  @scala.inline
-  implicit class MapCalloutSubviewPropsMutableBuilder[Self <: MapCalloutSubviewProps] (val x: Self) extends AnyVal {
+  extension [Self <: MapCalloutSubviewProps](x: Self) {
     
-    @scala.inline
-    def setOnPress(value: /* event */ MapEvent[`1`] => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
+    inline def setOnPress(value: /* event */ MapEvent[`1`] => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
+    inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
   }
 }

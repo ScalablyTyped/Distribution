@@ -13,22 +13,17 @@ trait BatchAssociateProjectAssetsResponse extends StObject {
 }
 object BatchAssociateProjectAssetsResponse {
   
-  @scala.inline
-  def apply(): BatchAssociateProjectAssetsResponse = {
+  inline def apply(): BatchAssociateProjectAssetsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchAssociateProjectAssetsResponse]
   }
   
-  @scala.inline
-  implicit class BatchAssociateProjectAssetsResponseMutableBuilder[Self <: BatchAssociateProjectAssetsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchAssociateProjectAssetsResponse](x: Self) {
     
-    @scala.inline
-    def setErrors(value: BatchAssociateProjectAssetsErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: BatchAssociateProjectAssetsErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    @scala.inline
-    def setErrorsVarargs(value: AssetErrorDetails*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: AssetErrorDetails*): Self = StObject.set(x, "errors", js.Array(value :_*))
   }
 }

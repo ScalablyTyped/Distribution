@@ -105,32 +105,24 @@ object mod {
   }
   object EnvironmentContext {
     
-    @scala.inline
-    def apply(): EnvironmentContext = {
+    inline def apply(): EnvironmentContext = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EnvironmentContext]
     }
     
-    @scala.inline
-    implicit class EnvironmentContextMutableBuilder[Self <: EnvironmentContext] (val x: Self) extends AnyVal {
+    extension [Self <: EnvironmentContext](x: Self) {
       
-      @scala.inline
-      def setConsole(value: Console): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
+      inline def setConsole(value: Console): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsoleUndefined: Self = StObject.set(x, "console", js.undefined)
+      inline def setConsoleUndefined: Self = StObject.set(x, "console", js.undefined)
       
-      @scala.inline
-      def setDocblockPragmas(value: Record[String, String | js.Array[String]]): Self = StObject.set(x, "docblockPragmas", value.asInstanceOf[js.Any])
+      inline def setDocblockPragmas(value: Record[String, String | js.Array[String]]): Self = StObject.set(x, "docblockPragmas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocblockPragmasUndefined: Self = StObject.set(x, "docblockPragmas", js.undefined)
+      inline def setDocblockPragmasUndefined: Self = StObject.set(x, "docblockPragmas", js.undefined)
       
-      @scala.inline
-      def setTestPath(value: Path): Self = StObject.set(x, "testPath", value.asInstanceOf[js.Any])
+      inline def setTestPath(value: Path): Self = StObject.set(x, "testPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTestPathUndefined: Self = StObject.set(x, "testPath", js.undefined)
+      inline def setTestPathUndefined: Self = StObject.set(x, "testPath", js.undefined)
     }
   }
   

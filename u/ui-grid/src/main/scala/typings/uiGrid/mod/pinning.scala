@@ -30,32 +30,24 @@ object pinning {
   }
   object IColumnDef {
     
-    @scala.inline
-    def apply(): typings.uiGrid.mod.pinning.IColumnDef = {
+    inline def apply(): typings.uiGrid.mod.pinning.IColumnDef = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.uiGrid.mod.pinning.IColumnDef]
     }
     
-    @scala.inline
-    implicit class IColumnDefMutableBuilder[Self <: typings.uiGrid.mod.pinning.IColumnDef] (val x: Self) extends AnyVal {
+    extension [Self <: typings.uiGrid.mod.pinning.IColumnDef](x: Self) {
       
-      @scala.inline
-      def setEnablePinning(value: Boolean): Self = StObject.set(x, "enablePinning", value.asInstanceOf[js.Any])
+      inline def setEnablePinning(value: Boolean): Self = StObject.set(x, "enablePinning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnablePinningUndefined: Self = StObject.set(x, "enablePinning", js.undefined)
+      inline def setEnablePinningUndefined: Self = StObject.set(x, "enablePinning", js.undefined)
       
-      @scala.inline
-      def setPinnedLeft(value: Boolean): Self = StObject.set(x, "pinnedLeft", value.asInstanceOf[js.Any])
+      inline def setPinnedLeft(value: Boolean): Self = StObject.set(x, "pinnedLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPinnedLeftUndefined: Self = StObject.set(x, "pinnedLeft", js.undefined)
+      inline def setPinnedLeftUndefined: Self = StObject.set(x, "pinnedLeft", js.undefined)
       
-      @scala.inline
-      def setPinnedRight(value: Boolean): Self = StObject.set(x, "pinnedRight", value.asInstanceOf[js.Any])
+      inline def setPinnedRight(value: Boolean): Self = StObject.set(x, "pinnedRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPinnedRightUndefined: Self = StObject.set(x, "pinnedRight", js.undefined)
+      inline def setPinnedRightUndefined: Self = StObject.set(x, "pinnedRight", js.undefined)
     }
   }
   
@@ -70,20 +62,16 @@ object pinning {
   }
   object IGridOptions {
     
-    @scala.inline
-    def apply(): typings.uiGrid.mod.pinning.IGridOptions = {
+    inline def apply(): typings.uiGrid.mod.pinning.IGridOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.uiGrid.mod.pinning.IGridOptions]
     }
     
-    @scala.inline
-    implicit class IGridOptionsMutableBuilder[Self <: typings.uiGrid.mod.pinning.IGridOptions] (val x: Self) extends AnyVal {
+    extension [Self <: typings.uiGrid.mod.pinning.IGridOptions](x: Self) {
       
-      @scala.inline
-      def setEnablePinning(value: Boolean): Self = StObject.set(x, "enablePinning", value.asInstanceOf[js.Any])
+      inline def setEnablePinning(value: Boolean): Self = StObject.set(x, "enablePinning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnablePinningUndefined: Self = StObject.set(x, "enablePinning", js.undefined)
+      inline def setEnablePinningUndefined: Self = StObject.set(x, "enablePinning", js.undefined)
     }
   }
   
@@ -107,20 +95,16 @@ object pinning {
   }
   object IGridPinningApi {
     
-    @scala.inline
-    def apply[TEntity](columnPin: (IScope, columnPinHandler) => Unit, pinColumn: (IGridColumnOf[TEntity], String) => Unit): IGridPinningApi[TEntity] = {
+    inline def apply[TEntity](columnPin: (IScope, columnPinHandler) => Unit, pinColumn: (IGridColumnOf[TEntity], String) => Unit): IGridPinningApi[TEntity] = {
       val __obj = js.Dynamic.literal(columnPin = js.Any.fromFunction2(columnPin), pinColumn = js.Any.fromFunction2(pinColumn))
       __obj.asInstanceOf[IGridPinningApi[TEntity]]
     }
     
-    @scala.inline
-    implicit class IGridPinningApiMutableBuilder[Self <: IGridPinningApi[?], TEntity] (val x: Self & IGridPinningApi[TEntity]) extends AnyVal {
+    extension [Self <: IGridPinningApi[?], TEntity](x: Self & IGridPinningApi[TEntity]) {
       
-      @scala.inline
-      def setColumnPin(value: (IScope, columnPinHandler) => Unit): Self = StObject.set(x, "columnPin", js.Any.fromFunction2(value))
+      inline def setColumnPin(value: (IScope, columnPinHandler) => Unit): Self = StObject.set(x, "columnPin", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPinColumn(value: (IGridColumnOf[TEntity], String) => Unit): Self = StObject.set(x, "pinColumn", js.Any.fromFunction2(value))
+      inline def setPinColumn(value: (IGridColumnOf[TEntity], String) => Unit): Self = StObject.set(x, "pinColumn", js.Any.fromFunction2(value))
     }
   }
   
@@ -130,17 +114,14 @@ object pinning {
   }
   object IUiGridPinningConstants {
     
-    @scala.inline
-    def apply(container: NONE): IUiGridPinningConstants = {
+    inline def apply(container: NONE): IUiGridPinningConstants = {
       val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
       __obj.asInstanceOf[IUiGridPinningConstants]
     }
     
-    @scala.inline
-    implicit class IUiGridPinningConstantsMutableBuilder[Self <: IUiGridPinningConstants] (val x: Self) extends AnyVal {
+    extension [Self <: IUiGridPinningConstants](x: Self) {
       
-      @scala.inline
-      def setContainer(value: NONE): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: NONE): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     }
   }
   

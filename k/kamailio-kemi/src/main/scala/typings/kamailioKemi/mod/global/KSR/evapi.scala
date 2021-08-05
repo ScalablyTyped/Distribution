@@ -10,21 +10,15 @@ object evapi {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def asyncRelay(sdata: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("async_relay")(sdata.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def asyncRelay(sdata: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("async_relay")(sdata.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def close(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("close")().asInstanceOf[Double]
+  inline def close(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("close")().asInstanceOf[Double]
   
-  @scala.inline
-  def relay(sdata: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("relay")(sdata.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def relay(sdata: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("relay")(sdata.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def relayMulticast(sdata: String, stag: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("relay_multicast")(sdata.asInstanceOf[js.Any], stag.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def relayMulticast(sdata: String, stag: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("relay_multicast")(sdata.asInstanceOf[js.Any], stag.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def relayUnicast(sdata: String, stag: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("relay_unicast")(sdata.asInstanceOf[js.Any], stag.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def relayUnicast(sdata: String, stag: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("relay_unicast")(sdata.asInstanceOf[js.Any], stag.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def setTag(stag: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("set_tag")(stag.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def setTag(stag: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("set_tag")(stag.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

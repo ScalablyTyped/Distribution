@@ -18,8 +18,7 @@ trait PipeableAlt2[F /* <: /* import warning: transforms.QualifyReferences#resol
 }
 object PipeableAlt2 {
   
-  @scala.inline
-  def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
+  inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
     alt: Lazy[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any
     ] => js.Function1[
@@ -31,11 +30,9 @@ object PipeableAlt2 {
     __obj.asInstanceOf[PipeableAlt2[F]]
   }
   
-  @scala.inline
-  implicit class PipeableAlt2MutableBuilder[Self <: PipeableAlt2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */] (val x: Self & PipeableAlt2[F]) extends AnyVal {
+  extension [Self <: PipeableAlt2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](x: Self & PipeableAlt2[F]) {
     
-    @scala.inline
-    def setAlt(
+    inline def setAlt(
       value: Lazy[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any
         ] => js.Function1[

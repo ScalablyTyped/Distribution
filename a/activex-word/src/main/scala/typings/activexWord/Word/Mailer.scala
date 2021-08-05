@@ -29,13 +29,12 @@ trait Mailer extends StObject {
   
   var Subject: String
   
-  @JSName("Word.Mailer_typekey")
+  /* private */ @JSName("Word.Mailer_typekey")
   var WordDotMailer_typekey: Mailer
 }
 object Mailer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     BCCRecipients: js.Any,
     CCRecipients: js.Any,
@@ -54,43 +53,30 @@ object Mailer {
     __obj.asInstanceOf[Mailer]
   }
   
-  @scala.inline
-  implicit class MailerMutableBuilder[Self <: Mailer] (val x: Self) extends AnyVal {
+  extension [Self <: Mailer](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBCCRecipients(value: js.Any): Self = StObject.set(x, "BCCRecipients", value.asInstanceOf[js.Any])
+    inline def setBCCRecipients(value: js.Any): Self = StObject.set(x, "BCCRecipients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCCRecipients(value: js.Any): Self = StObject.set(x, "CCRecipients", value.asInstanceOf[js.Any])
+    inline def setCCRecipients(value: js.Any): Self = StObject.set(x, "CCRecipients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnclosures(value: js.Any): Self = StObject.set(x, "Enclosures", value.asInstanceOf[js.Any])
+    inline def setEnclosures(value: js.Any): Self = StObject.set(x, "Enclosures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceived(value: Boolean): Self = StObject.set(x, "Received", value.asInstanceOf[js.Any])
+    inline def setReceived(value: Boolean): Self = StObject.set(x, "Received", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipients(value: js.Any): Self = StObject.set(x, "Recipients", value.asInstanceOf[js.Any])
+    inline def setRecipients(value: js.Any): Self = StObject.set(x, "Recipients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendDateTime(value: VarDate): Self = StObject.set(x, "SendDateTime", value.asInstanceOf[js.Any])
+    inline def setSendDateTime(value: VarDate): Self = StObject.set(x, "SendDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSender(value: String): Self = StObject.set(x, "Sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: String): Self = StObject.set(x, "Sender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotMailer_typekey(value: Mailer): Self = StObject.set(x, "Word.Mailer_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotMailer_typekey(value: Mailer): Self = StObject.set(x, "Word.Mailer_typekey", value.asInstanceOf[js.Any])
   }
 }

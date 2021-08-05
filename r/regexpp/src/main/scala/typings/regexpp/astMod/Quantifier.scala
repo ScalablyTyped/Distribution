@@ -26,8 +26,7 @@ trait Quantifier
 }
 object Quantifier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     element: QuantifiableElement,
     end: Double,
     greedy: Boolean,
@@ -42,25 +41,18 @@ object Quantifier {
     __obj.asInstanceOf[Quantifier]
   }
   
-  @scala.inline
-  implicit class QuantifierMutableBuilder[Self <: Quantifier] (val x: Self) extends AnyVal {
+  extension [Self <: Quantifier](x: Self) {
     
-    @scala.inline
-    def setElement(value: QuantifiableElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: QuantifiableElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGreedy(value: Boolean): Self = StObject.set(x, "greedy", value.asInstanceOf[js.Any])
+    inline def setGreedy(value: Boolean): Self = StObject.set(x, "greedy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: Alternative): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Alternative): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.regexpp.regexppStrings.Quantifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.regexpp.regexppStrings.Quantifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

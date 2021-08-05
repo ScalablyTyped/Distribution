@@ -10,16 +10,13 @@ trait Window extends StObject {
 }
 object Window {
   
-  @scala.inline
-  def apply(setContentAppend: js.Any): Window = {
+  inline def apply(setContentAppend: js.Any): Window = {
     val __obj = js.Dynamic.literal(setContentAppend = setContentAppend.asInstanceOf[js.Any])
     __obj.asInstanceOf[Window]
   }
   
-  @scala.inline
-  implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+  extension [Self <: Window](x: Self) {
     
-    @scala.inline
-    def setSetContentAppend(value: js.Any): Self = StObject.set(x, "setContentAppend", value.asInstanceOf[js.Any])
+    inline def setSetContentAppend(value: js.Any): Self = StObject.set(x, "setContentAppend", value.asInstanceOf[js.Any])
   }
 }

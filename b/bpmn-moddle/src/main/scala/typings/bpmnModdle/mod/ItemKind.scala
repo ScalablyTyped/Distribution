@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ItemKind extends StObject
 object ItemKind {
   
-  @scala.inline
-  def Information: typings.bpmnModdle.bpmnModdleStrings.Information = "Information".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.Information]
+  inline def Information: typings.bpmnModdle.bpmnModdleStrings.Information = "Information".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.Information]
   
-  @scala.inline
-  def Physical: typings.bpmnModdle.bpmnModdleStrings.Physical = "Physical".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.Physical]
+  inline def Physical: typings.bpmnModdle.bpmnModdleStrings.Physical = "Physical".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.Physical]
 }

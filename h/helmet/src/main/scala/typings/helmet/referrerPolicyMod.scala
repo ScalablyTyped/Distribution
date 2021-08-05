@@ -13,8 +13,7 @@ object referrerPolicyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): js.Function3[
+  inline def default(): js.Function3[
     /* _req */ IncomingMessage, 
     /* res */ ServerResponse, 
     /* next */ js.Function0[Unit], 
@@ -25,8 +24,7 @@ object referrerPolicyMod {
     /* next */ js.Function0[Unit], 
     Unit
   ]]
-  @scala.inline
-  def default(options: ReadonlyReferrerPolicyOpt): js.Function3[
+  inline def default(options: ReadonlyReferrerPolicyOpt): js.Function3[
     /* _req */ IncomingMessage, 
     /* res */ ServerResponse, 
     /* next */ js.Function0[Unit], 
@@ -44,23 +42,18 @@ object referrerPolicyMod {
   }
   object ReferrerPolicyOptions {
     
-    @scala.inline
-    def apply(): ReferrerPolicyOptions = {
+    inline def apply(): ReferrerPolicyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReferrerPolicyOptions]
     }
     
-    @scala.inline
-    implicit class ReferrerPolicyOptionsMutableBuilder[Self <: ReferrerPolicyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ReferrerPolicyOptions](x: Self) {
       
-      @scala.inline
-      def setPolicy(value: String | js.Array[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: String | js.Array[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+      inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
       
-      @scala.inline
-      def setPolicyVarargs(value: String*): Self = StObject.set(x, "policy", js.Array(value :_*))
+      inline def setPolicyVarargs(value: String*): Self = StObject.set(x, "policy", js.Array(value :_*))
     }
   }
 }

@@ -13,19 +13,15 @@ trait GetDirectoryLimitsResult extends StObject {
 }
 object GetDirectoryLimitsResult {
   
-  @scala.inline
-  def apply(): GetDirectoryLimitsResult = {
+  inline def apply(): GetDirectoryLimitsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDirectoryLimitsResult]
   }
   
-  @scala.inline
-  implicit class GetDirectoryLimitsResultMutableBuilder[Self <: GetDirectoryLimitsResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetDirectoryLimitsResult](x: Self) {
     
-    @scala.inline
-    def setDirectoryLimits(value: DirectoryLimits): Self = StObject.set(x, "DirectoryLimits", value.asInstanceOf[js.Any])
+    inline def setDirectoryLimits(value: DirectoryLimits): Self = StObject.set(x, "DirectoryLimits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoryLimitsUndefined: Self = StObject.set(x, "DirectoryLimits", js.undefined)
+    inline def setDirectoryLimitsUndefined: Self = StObject.set(x, "DirectoryLimits", js.undefined)
   }
 }

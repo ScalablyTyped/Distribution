@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait QueryQueryInfoScreen extends StObject
 object QueryQueryInfoScreen {
   
-  @scala.inline
-  def Application: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Application = "Application".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Application]
+  inline def Application: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Application = "Application".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Application]
   
-  @scala.inline
-  def Screen: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Screen = "Screen".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Screen]
+  inline def Screen: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Screen = "Screen".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Screen]
   
-  @scala.inline
-  def Window: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Window = "Window".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Window]
+  inline def Window: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Window = "Window".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Window]
 }

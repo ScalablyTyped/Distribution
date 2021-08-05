@@ -20,26 +20,20 @@ object anon {
   }
   object Json {
     
-    @scala.inline
-    def apply(): Json = {
+    inline def apply(): Json = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Json]
     }
     
-    @scala.inline
-    implicit class JsonMutableBuilder[Self <: Json] (val x: Self) extends AnyVal {
+    extension [Self <: Json](x: Self) {
       
-      @scala.inline
-      def setJson(value: Boolean | OptionsJson): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: Boolean | OptionsJson): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
+      inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
       
-      @scala.inline
-      def setUrlencoded(value: Boolean | OptionsUrlencoded): Self = StObject.set(x, "urlencoded", value.asInstanceOf[js.Any])
+      inline def setUrlencoded(value: Boolean | OptionsUrlencoded): Self = StObject.set(x, "urlencoded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlencodedUndefined: Self = StObject.set(x, "urlencoded", js.undefined)
+      inline def setUrlencodedUndefined: Self = StObject.set(x, "urlencoded", js.undefined)
     }
   }
   
@@ -51,23 +45,18 @@ object anon {
   }
   object Options {
     
-    @scala.inline
-    def apply(root: String): Options = {
+    inline def apply(root: String): Options = {
       val __obj = js.Dynamic.literal(root = root.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setOptions(value: ServeStaticOptions[ServerResponse]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: ServeStaticOptions[ServerResponse]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     }
   }
   
@@ -89,34 +78,26 @@ object anon {
   }
   object PartialuseioServersocketS {
     
-    @scala.inline
-    def apply(): PartialuseioServersocketS = {
+    inline def apply(): PartialuseioServersocketS = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialuseioServersocketS]
     }
     
-    @scala.inline
-    implicit class PartialuseioServersocketSMutableBuilder[Self <: PartialuseioServersocketS] (val x: Self) extends AnyVal {
+    extension [Self <: PartialuseioServersocketS](x: Self) {
       
-      @scala.inline
-      def setOnConnect(value: (/* io */ Server, /* socket */ Socket) => Unit): Self = StObject.set(x, "onConnect", js.Any.fromFunction2(value))
+      inline def setOnConnect(value: (/* io */ Server, /* socket */ Socket) => Unit): Self = StObject.set(x, "onConnect", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnConnectUndefined: Self = StObject.set(x, "onConnect", js.undefined)
+      inline def setOnConnectUndefined: Self = StObject.set(x, "onConnect", js.undefined)
       
-      @scala.inline
-      def setOnDisconnect(value: (/* io */ Server, /* socket */ Socket) => Unit): Self = StObject.set(x, "onDisconnect", js.Any.fromFunction2(value))
+      inline def setOnDisconnect(value: (/* io */ Server, /* socket */ Socket) => Unit): Self = StObject.set(x, "onDisconnect", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnDisconnectUndefined: Self = StObject.set(x, "onDisconnect", js.undefined)
+      inline def setOnDisconnectUndefined: Self = StObject.set(x, "onDisconnect", js.undefined)
       
-      @scala.inline
-      def setUse(
+      inline def setUse(
         value: (/* io */ Server, /* socket */ Socket, /* next */ js.Function1[/* err */ js.UndefOr[js.Any], Unit]) => Unit
       ): Self = StObject.set(x, "use", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
+      inline def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
     }
   }
 }

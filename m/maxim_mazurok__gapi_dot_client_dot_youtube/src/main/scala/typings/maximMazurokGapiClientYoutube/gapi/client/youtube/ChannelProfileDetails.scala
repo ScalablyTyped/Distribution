@@ -20,37 +20,27 @@ trait ChannelProfileDetails extends StObject {
 }
 object ChannelProfileDetails {
   
-  @scala.inline
-  def apply(): ChannelProfileDetails = {
+  inline def apply(): ChannelProfileDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChannelProfileDetails]
   }
   
-  @scala.inline
-  implicit class ChannelProfileDetailsMutableBuilder[Self <: ChannelProfileDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelProfileDetails](x: Self) {
     
-    @scala.inline
-    def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
+    inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
+    inline def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
     
-    @scala.inline
-    def setChannelUrl(value: String): Self = StObject.set(x, "channelUrl", value.asInstanceOf[js.Any])
+    inline def setChannelUrl(value: String): Self = StObject.set(x, "channelUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelUrlUndefined: Self = StObject.set(x, "channelUrl", js.undefined)
+    inline def setChannelUrlUndefined: Self = StObject.set(x, "channelUrl", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setProfileImageUrl(value: String): Self = StObject.set(x, "profileImageUrl", value.asInstanceOf[js.Any])
+    inline def setProfileImageUrl(value: String): Self = StObject.set(x, "profileImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileImageUrlUndefined: Self = StObject.set(x, "profileImageUrl", js.undefined)
+    inline def setProfileImageUrlUndefined: Self = StObject.set(x, "profileImageUrl", js.undefined)
   }
 }

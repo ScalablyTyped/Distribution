@@ -11,22 +11,17 @@ trait ListDataSourcesResponse extends StObject {
 }
 object ListDataSourcesResponse {
   
-  @scala.inline
-  def apply(): ListDataSourcesResponse = {
+  inline def apply(): ListDataSourcesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListDataSourcesResponse]
   }
   
-  @scala.inline
-  implicit class ListDataSourcesResponseMutableBuilder[Self <: ListDataSourcesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListDataSourcesResponse](x: Self) {
     
-    @scala.inline
-    def setDataSource(value: js.Array[DataSource]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: js.Array[DataSource]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
-    @scala.inline
-    def setDataSourceVarargs(value: DataSource*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
+    inline def setDataSourceVarargs(value: DataSource*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
   }
 }

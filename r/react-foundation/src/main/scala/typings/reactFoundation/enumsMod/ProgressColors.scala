@@ -20,24 +20,20 @@ object ProgressColors {
   @JSImport("react-foundation/enums", "ProgressColors.ALERT")
   @js.native
   def ALERT: ProgressColors = js.native
-  @scala.inline
-  def ALERT_=(x: ProgressColors): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALERT")(x.asInstanceOf[js.Any])
+  inline def ALERT_=(x: ProgressColors): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALERT")(x.asInstanceOf[js.Any])
   
   @JSImport("react-foundation/enums", "ProgressColors.SECONDARY")
   @js.native
   def SECONDARY: ProgressColors = js.native
-  @scala.inline
-  def SECONDARY_=(x: ProgressColors): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SECONDARY")(x.asInstanceOf[js.Any])
+  inline def SECONDARY_=(x: ProgressColors): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SECONDARY")(x.asInstanceOf[js.Any])
   
   @JSImport("react-foundation/enums", "ProgressColors.SUCCESS")
   @js.native
   def SUCCESS: ProgressColors = js.native
-  @scala.inline
-  def SUCCESS_=(x: ProgressColors): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUCCESS")(x.asInstanceOf[js.Any])
+  inline def SUCCESS_=(x: ProgressColors): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUCCESS")(x.asInstanceOf[js.Any])
   
   @JSImport("react-foundation/enums", "ProgressColors.WARNING")
   @js.native
   def WARNING: ProgressColors = js.native
-  @scala.inline
-  def WARNING_=(x: ProgressColors): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WARNING")(x.asInstanceOf[js.Any])
+  inline def WARNING_=(x: ProgressColors): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WARNING")(x.asInstanceOf[js.Any])
 }

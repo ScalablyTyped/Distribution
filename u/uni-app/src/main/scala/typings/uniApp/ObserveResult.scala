@@ -33,43 +33,31 @@ trait ObserveResult extends StObject {
 }
 object ObserveResult {
   
-  @scala.inline
-  def apply(): ObserveResult = {
+  inline def apply(): ObserveResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ObserveResult]
   }
   
-  @scala.inline
-  implicit class ObserveResultMutableBuilder[Self <: ObserveResult] (val x: Self) extends AnyVal {
+  extension [Self <: ObserveResult](x: Self) {
     
-    @scala.inline
-    def setBoundingClientRect(value: ObserveNodeRect): Self = StObject.set(x, "boundingClientRect", value.asInstanceOf[js.Any])
+    inline def setBoundingClientRect(value: ObserveNodeRect): Self = StObject.set(x, "boundingClientRect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundingClientRectUndefined: Self = StObject.set(x, "boundingClientRect", js.undefined)
+    inline def setBoundingClientRectUndefined: Self = StObject.set(x, "boundingClientRect", js.undefined)
     
-    @scala.inline
-    def setIntersectionRatio(value: Double): Self = StObject.set(x, "intersectionRatio", value.asInstanceOf[js.Any])
+    inline def setIntersectionRatio(value: Double): Self = StObject.set(x, "intersectionRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntersectionRatioUndefined: Self = StObject.set(x, "intersectionRatio", js.undefined)
+    inline def setIntersectionRatioUndefined: Self = StObject.set(x, "intersectionRatio", js.undefined)
     
-    @scala.inline
-    def setIntersectionRect(value: js.Any): Self = StObject.set(x, "intersectionRect", value.asInstanceOf[js.Any])
+    inline def setIntersectionRect(value: js.Any): Self = StObject.set(x, "intersectionRect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntersectionRectUndefined: Self = StObject.set(x, "intersectionRect", js.undefined)
+    inline def setIntersectionRectUndefined: Self = StObject.set(x, "intersectionRect", js.undefined)
     
-    @scala.inline
-    def setRelativeRect(value: ObserveNodeRect): Self = StObject.set(x, "relativeRect", value.asInstanceOf[js.Any])
+    inline def setRelativeRect(value: ObserveNodeRect): Self = StObject.set(x, "relativeRect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativeRectUndefined: Self = StObject.set(x, "relativeRect", js.undefined)
+    inline def setRelativeRectUndefined: Self = StObject.set(x, "relativeRect", js.undefined)
     
-    @scala.inline
-    def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+    inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
   }
 }

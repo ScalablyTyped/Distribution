@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SKELETON_TYPE extends StObject
 object SKELETON_TYPE {
   
-  @scala.inline
-  def dateTime: `1` = 1.asInstanceOf[`1`]
+  inline def dateTime: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def number: `0` = 0.asInstanceOf[`0`]
+  inline def number: `0` = 0.asInstanceOf[`0`]
 }

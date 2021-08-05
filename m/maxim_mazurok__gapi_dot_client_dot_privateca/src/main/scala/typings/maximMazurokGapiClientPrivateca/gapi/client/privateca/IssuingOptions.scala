@@ -17,25 +17,19 @@ trait IssuingOptions extends StObject {
 }
 object IssuingOptions {
   
-  @scala.inline
-  def apply(): IssuingOptions = {
+  inline def apply(): IssuingOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IssuingOptions]
   }
   
-  @scala.inline
-  implicit class IssuingOptionsMutableBuilder[Self <: IssuingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IssuingOptions](x: Self) {
     
-    @scala.inline
-    def setIncludeCaCertUrl(value: Boolean): Self = StObject.set(x, "includeCaCertUrl", value.asInstanceOf[js.Any])
+    inline def setIncludeCaCertUrl(value: Boolean): Self = StObject.set(x, "includeCaCertUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeCaCertUrlUndefined: Self = StObject.set(x, "includeCaCertUrl", js.undefined)
+    inline def setIncludeCaCertUrlUndefined: Self = StObject.set(x, "includeCaCertUrl", js.undefined)
     
-    @scala.inline
-    def setIncludeCrlAccessUrl(value: Boolean): Self = StObject.set(x, "includeCrlAccessUrl", value.asInstanceOf[js.Any])
+    inline def setIncludeCrlAccessUrl(value: Boolean): Self = StObject.set(x, "includeCrlAccessUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeCrlAccessUrlUndefined: Self = StObject.set(x, "includeCrlAccessUrl", js.undefined)
+    inline def setIncludeCrlAccessUrlUndefined: Self = StObject.set(x, "includeCrlAccessUrl", js.undefined)
   }
 }

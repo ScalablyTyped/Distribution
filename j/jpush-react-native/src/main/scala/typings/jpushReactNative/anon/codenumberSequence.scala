@@ -16,19 +16,15 @@ trait codenumberSequence extends StObject {
 }
 object codenumberSequence {
   
-  @scala.inline
-  def apply(code: Double, sequence: Double): codenumberSequence = {
+  inline def apply(code: Double, sequence: Double): codenumberSequence = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], sequence = sequence.asInstanceOf[js.Any])
     __obj.asInstanceOf[codenumberSequence]
   }
   
-  @scala.inline
-  implicit class codenumberSequenceMutableBuilder[Self <: codenumberSequence] (val x: Self) extends AnyVal {
+  extension [Self <: codenumberSequence](x: Self) {
     
-    @scala.inline
-    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSequence(value: Double): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
+    inline def setSequence(value: Double): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
   }
 }

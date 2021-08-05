@@ -36,13 +36,10 @@ object basicConstraintsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
-    @scala.inline
-    def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
+    inline def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   trait BasicConstraints extends StObject {
@@ -59,8 +56,7 @@ object basicConstraintsMod {
   }
   object BasicConstraints {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cA: Boolean,
       fromSchema: js.Any => Unit,
       pathLenConstraint: Double | Integer,
@@ -71,23 +67,17 @@ object basicConstraintsMod {
       __obj.asInstanceOf[BasicConstraints]
     }
     
-    @scala.inline
-    implicit class BasicConstraintsMutableBuilder[Self <: BasicConstraints] (val x: Self) extends AnyVal {
+    extension [Self <: BasicConstraints](x: Self) {
       
-      @scala.inline
-      def setCA(value: Boolean): Self = StObject.set(x, "cA", value.asInstanceOf[js.Any])
+      inline def setCA(value: Boolean): Self = StObject.set(x, "cA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromSchema(value: js.Any => Unit): Self = StObject.set(x, "fromSchema", js.Any.fromFunction1(value))
+      inline def setFromSchema(value: js.Any => Unit): Self = StObject.set(x, "fromSchema", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPathLenConstraint(value: Double | Integer): Self = StObject.set(x, "pathLenConstraint", value.asInstanceOf[js.Any])
+      inline def setPathLenConstraint(value: Double | Integer): Self = StObject.set(x, "pathLenConstraint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToSchema(value: () => js.Any): Self = StObject.set(x, "toSchema", js.Any.fromFunction0(value))
+      inline def setToSchema(value: () => js.Any): Self = StObject.set(x, "toSchema", js.Any.fromFunction0(value))
     }
   }
 }

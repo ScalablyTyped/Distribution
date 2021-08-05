@@ -13,16 +13,13 @@ trait IsSupportBLE extends StObject {
 }
 object IsSupportBLE {
   
-  @scala.inline
-  def apply(isSupportBLE: Boolean): IsSupportBLE = {
+  inline def apply(isSupportBLE: Boolean): IsSupportBLE = {
     val __obj = js.Dynamic.literal(isSupportBLE = isSupportBLE.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsSupportBLE]
   }
   
-  @scala.inline
-  implicit class IsSupportBLEMutableBuilder[Self <: IsSupportBLE] (val x: Self) extends AnyVal {
+  extension [Self <: IsSupportBLE](x: Self) {
     
-    @scala.inline
-    def setIsSupportBLE(value: Boolean): Self = StObject.set(x, "isSupportBLE", value.asInstanceOf[js.Any])
+    inline def setIsSupportBLE(value: Boolean): Self = StObject.set(x, "isSupportBLE", value.asInstanceOf[js.Any])
   }
 }

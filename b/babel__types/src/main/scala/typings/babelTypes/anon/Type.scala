@@ -10,17 +10,14 @@ trait Type[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union ty
 }
 object Type {
   
-  @scala.inline
-  def apply[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 242 */ js.Any */](`type`: T): Type[T] = {
+  inline def apply[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 242 */ js.Any */](`type`: T): Type[T] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Type[T]]
   }
   
-  @scala.inline
-  implicit class TypeMutableBuilder[Self <: Type[?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 242 */ js.Any */] (val x: Self & Type[T]) extends AnyVal {
+  extension [Self <: Type[?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 242 */ js.Any */](x: Self & Type[T]) {
     
-    @scala.inline
-    def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -54,8 +54,7 @@ trait XProofreader
 }
 object XProofreader {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Locales: SafeArray[Locale],
     acquire: () => Unit,
     doProofreading: (String, String, Locale, Double, Double, SeqEquiv[PropertyValue]) => ProofreadingResult,
@@ -71,19 +70,14 @@ object XProofreader {
     __obj.asInstanceOf[XProofreader]
   }
   
-  @scala.inline
-  implicit class XProofreaderMutableBuilder[Self <: XProofreader] (val x: Self) extends AnyVal {
+  extension [Self <: XProofreader](x: Self) {
     
-    @scala.inline
-    def setDoProofreading(value: (String, String, Locale, Double, Double, SeqEquiv[PropertyValue]) => ProofreadingResult): Self = StObject.set(x, "doProofreading", js.Any.fromFunction6(value))
+    inline def setDoProofreading(value: (String, String, Locale, Double, Double, SeqEquiv[PropertyValue]) => ProofreadingResult): Self = StObject.set(x, "doProofreading", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setIgnoreRule(value: (String, Locale) => Unit): Self = StObject.set(x, "ignoreRule", js.Any.fromFunction2(value))
+    inline def setIgnoreRule(value: (String, Locale) => Unit): Self = StObject.set(x, "ignoreRule", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setIsSpellChecker(value: () => Boolean): Self = StObject.set(x, "isSpellChecker", js.Any.fromFunction0(value))
+    inline def setIsSpellChecker(value: () => Boolean): Self = StObject.set(x, "isSpellChecker", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResetIgnoreRules(value: () => Unit): Self = StObject.set(x, "resetIgnoreRules", js.Any.fromFunction0(value))
+    inline def setResetIgnoreRules(value: () => Unit): Self = StObject.set(x, "resetIgnoreRules", js.Any.fromFunction0(value))
   }
 }

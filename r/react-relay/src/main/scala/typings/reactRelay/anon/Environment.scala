@@ -18,23 +18,18 @@ trait Environment
 }
 object Environment {
   
-  @scala.inline
-  def apply(environment: typings.relayRuntime.relayStoreTypesMod.Environment, fragmentIdentifier: String): Environment = {
+  inline def apply(environment: typings.relayRuntime.relayStoreTypesMod.Environment, fragmentIdentifier: String): Environment = {
     val __obj = js.Dynamic.literal(environment = environment.asInstanceOf[js.Any], fragmentIdentifier = fragmentIdentifier.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("reset")
     __obj.asInstanceOf[Environment]
   }
   
-  @scala.inline
-  implicit class EnvironmentMutableBuilder[Self <: Environment] (val x: Self) extends AnyVal {
+  extension [Self <: Environment](x: Self) {
     
-    @scala.inline
-    def setEnvironment(value: typings.relayRuntime.relayStoreTypesMod.Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: typings.relayRuntime.relayStoreTypesMod.Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFragmentIdentifier(value: String): Self = StObject.set(x, "fragmentIdentifier", value.asInstanceOf[js.Any])
+    inline def setFragmentIdentifier(value: String): Self = StObject.set(x, "fragmentIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: reset): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: reset): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

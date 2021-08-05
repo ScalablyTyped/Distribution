@@ -15,7 +15,7 @@ object headerMod {
     extends StObject
        with ComponentInterface {
     
-    var checkCollapsibleHeader: js.Any = js.native
+    /* private */ var checkCollapsibleHeader: js.Any = js.native
     
     /**
       * Describes the scroll effect that will be applied to the header
@@ -25,9 +25,9 @@ object headerMod {
       */
     var collapse: js.UndefOr[condense] = js.native
     
-    var collapsibleHeaderInitialized: js.Any = js.native
+    /* private */ var collapsibleHeaderInitialized: js.Any = js.native
     
-    var collapsibleMainHeader: js.Any = js.native
+    /* private */ var collapsibleMainHeader: js.Any = js.native
     
     @JSName("componentDidLoad")
     def componentDidLoad_MHeader(): js.Promise[Unit] = js.native
@@ -35,23 +35,23 @@ object headerMod {
     @JSName("componentDidUpdate")
     def componentDidUpdate_MHeader(): js.Promise[Unit] = js.native
     
-    var contentScrollCallback: js.Any = js.native
+    /* private */ var contentScrollCallback: js.Any = js.native
     
-    var destroyCollapsibleHeader: js.Any = js.native
+    /* private */ var destroyCollapsibleHeader: js.Any = js.native
     
     @JSName("disconnectedCallback")
     def disconnectedCallback_MHeader(): Unit = js.native
     
     var el: HTMLElement = js.native
     
-    var intersectionObserver: js.Any = js.native
+    /* private */ var intersectionObserver: js.Any = js.native
     
     @JSName("render")
     def render_MHeader(): js.Any = js.native
     
-    var scrollEl: js.Any = js.native
+    /* private */ var scrollEl: js.Any = js.native
     
-    var setupCollapsibleHeader: js.Any = js.native
+    /* private */ var setupCollapsibleHeader: js.Any = js.native
     
     /**
       * If `true`, the header will be translucent.

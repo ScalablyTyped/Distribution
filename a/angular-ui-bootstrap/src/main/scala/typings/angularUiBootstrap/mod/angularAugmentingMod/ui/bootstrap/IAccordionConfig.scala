@@ -15,19 +15,15 @@ trait IAccordionConfig extends StObject {
 }
 object IAccordionConfig {
   
-  @scala.inline
-  def apply(): IAccordionConfig = {
+  inline def apply(): IAccordionConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IAccordionConfig]
   }
   
-  @scala.inline
-  implicit class IAccordionConfigMutableBuilder[Self <: IAccordionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: IAccordionConfig](x: Self) {
     
-    @scala.inline
-    def setCloseOthers(value: Boolean): Self = StObject.set(x, "closeOthers", value.asInstanceOf[js.Any])
+    inline def setCloseOthers(value: Boolean): Self = StObject.set(x, "closeOthers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseOthersUndefined: Self = StObject.set(x, "closeOthers", js.undefined)
+    inline def setCloseOthersUndefined: Self = StObject.set(x, "closeOthers", js.undefined)
   }
 }

@@ -24,17 +24,14 @@ object typesKeyUnavailableExceptionMod {
   }
   object KeyUnavailableException {
     
-    @scala.inline
-    def apply(): KeyUnavailableException = {
+    inline def apply(): KeyUnavailableException = {
       val __obj = js.Dynamic.literal(name = "KeyUnavailableException")
       __obj.asInstanceOf[KeyUnavailableException]
     }
     
-    @scala.inline
-    implicit class KeyUnavailableExceptionMutableBuilder[Self <: KeyUnavailableException] (val x: Self) extends AnyVal {
+    extension [Self <: KeyUnavailableException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.KeyUnavailableException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.KeyUnavailableException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -47,20 +44,16 @@ object typesKeyUnavailableExceptionMod {
   }
   object KeyUnavailableExceptionDetails {
     
-    @scala.inline
-    def apply(): KeyUnavailableExceptionDetails = {
+    inline def apply(): KeyUnavailableExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KeyUnavailableExceptionDetails]
     }
     
-    @scala.inline
-    implicit class KeyUnavailableExceptionDetailsMutableBuilder[Self <: KeyUnavailableExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: KeyUnavailableExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

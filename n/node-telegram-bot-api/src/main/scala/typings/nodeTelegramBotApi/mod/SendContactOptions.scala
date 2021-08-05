@@ -14,25 +14,19 @@ trait SendContactOptions
 }
 object SendContactOptions {
   
-  @scala.inline
-  def apply(): SendContactOptions = {
+  inline def apply(): SendContactOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SendContactOptions]
   }
   
-  @scala.inline
-  implicit class SendContactOptionsMutableBuilder[Self <: SendContactOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SendContactOptions](x: Self) {
     
-    @scala.inline
-    def setLast_name(value: String): Self = StObject.set(x, "last_name", value.asInstanceOf[js.Any])
+    inline def setLast_name(value: String): Self = StObject.set(x, "last_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLast_nameUndefined: Self = StObject.set(x, "last_name", js.undefined)
+    inline def setLast_nameUndefined: Self = StObject.set(x, "last_name", js.undefined)
     
-    @scala.inline
-    def setVcard(value: String): Self = StObject.set(x, "vcard", value.asInstanceOf[js.Any])
+    inline def setVcard(value: String): Self = StObject.set(x, "vcard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVcardUndefined: Self = StObject.set(x, "vcard", js.undefined)
+    inline def setVcardUndefined: Self = StObject.set(x, "vcard", js.undefined)
   }
 }

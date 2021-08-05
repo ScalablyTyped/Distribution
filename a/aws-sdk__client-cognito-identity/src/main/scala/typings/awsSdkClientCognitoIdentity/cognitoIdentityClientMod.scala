@@ -160,136 +160,94 @@ object cognitoIdentityClientMod {
   }
   object ClientDefaults {
     
-    @scala.inline
-    def apply(): ClientDefaults = {
+    inline def apply(): ClientDefaults = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientDefaults]
     }
     
-    @scala.inline
-    implicit class ClientDefaultsMutableBuilder[Self <: ClientDefaults] (val x: Self) extends AnyVal {
+    extension [Self <: ClientDefaults](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
       
-      @scala.inline
-      def setBase64Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
+      inline def setBase64Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBase64DecoderUndefined: Self = StObject.set(x, "base64Decoder", js.undefined)
+      inline def setBase64DecoderUndefined: Self = StObject.set(x, "base64Decoder", js.undefined)
       
-      @scala.inline
-      def setBase64Encoder(value: /* input */ Uint8Array => String): Self = StObject.set(x, "base64Encoder", js.Any.fromFunction1(value))
+      inline def setBase64Encoder(value: /* input */ Uint8Array => String): Self = StObject.set(x, "base64Encoder", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBase64EncoderUndefined: Self = StObject.set(x, "base64Encoder", js.undefined)
+      inline def setBase64EncoderUndefined: Self = StObject.set(x, "base64Encoder", js.undefined)
       
-      @scala.inline
-      def setBodyLengthChecker(value: /* body */ js.Any => js.UndefOr[Double]): Self = StObject.set(x, "bodyLengthChecker", js.Any.fromFunction1(value))
+      inline def setBodyLengthChecker(value: /* body */ js.Any => js.UndefOr[Double]): Self = StObject.set(x, "bodyLengthChecker", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBodyLengthCheckerUndefined: Self = StObject.set(x, "bodyLengthChecker", js.undefined)
+      inline def setBodyLengthCheckerUndefined: Self = StObject.set(x, "bodyLengthChecker", js.undefined)
       
-      @scala.inline
-      def setCredentialDefaultProvider(value: /* input */ js.Any => Provider[Credentials]): Self = StObject.set(x, "credentialDefaultProvider", js.Any.fromFunction1(value))
+      inline def setCredentialDefaultProvider(value: /* input */ js.Any => Provider[Credentials]): Self = StObject.set(x, "credentialDefaultProvider", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCredentialDefaultProviderUndefined: Self = StObject.set(x, "credentialDefaultProvider", js.undefined)
+      inline def setCredentialDefaultProviderUndefined: Self = StObject.set(x, "credentialDefaultProvider", js.undefined)
       
-      @scala.inline
-      def setDefaultUserAgent(value: String): Self = StObject.set(x, "defaultUserAgent", value.asInstanceOf[js.Any])
+      inline def setDefaultUserAgent(value: String): Self = StObject.set(x, "defaultUserAgent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultUserAgentUndefined: Self = StObject.set(x, "defaultUserAgent", js.undefined)
+      inline def setDefaultUserAgentUndefined: Self = StObject.set(x, "defaultUserAgent", js.undefined)
       
-      @scala.inline
-      def setDisableHostPrefix(value: Boolean): Self = StObject.set(x, "disableHostPrefix", value.asInstanceOf[js.Any])
+      inline def setDisableHostPrefix(value: Boolean): Self = StObject.set(x, "disableHostPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableHostPrefixUndefined: Self = StObject.set(x, "disableHostPrefix", js.undefined)
+      inline def setDisableHostPrefixUndefined: Self = StObject.set(x, "disableHostPrefix", js.undefined)
       
-      @scala.inline
-      def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+      inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
-      @scala.inline
-      def setMaxAttempts(value: Double | Provider[Double]): Self = StObject.set(x, "maxAttempts", value.asInstanceOf[js.Any])
+      inline def setMaxAttempts(value: Double | Provider[Double]): Self = StObject.set(x, "maxAttempts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAttemptsFunction0(value: () => js.Promise[Double]): Self = StObject.set(x, "maxAttempts", js.Any.fromFunction0(value))
+      inline def setMaxAttemptsFunction0(value: () => js.Promise[Double]): Self = StObject.set(x, "maxAttempts", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMaxAttemptsUndefined: Self = StObject.set(x, "maxAttempts", js.undefined)
+      inline def setMaxAttemptsUndefined: Self = StObject.set(x, "maxAttempts", js.undefined)
       
-      @scala.inline
-      def setRegion(value: String | Provider[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String | Provider[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionFunction0(value: () => js.Promise[String]): Self = StObject.set(x, "region", js.Any.fromFunction0(value))
+      inline def setRegionFunction0(value: () => js.Promise[String]): Self = StObject.set(x, "region", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRegionInfoProvider(
+      inline def setRegionInfoProvider(
         value: (/* region */ String, /* options */ js.UndefOr[js.Any]) => js.Promise[js.UndefOr[RegionInfo]]
       ): Self = StObject.set(x, "regionInfoProvider", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRegionInfoProviderUndefined: Self = StObject.set(x, "regionInfoProvider", js.undefined)
+      inline def setRegionInfoProviderUndefined: Self = StObject.set(x, "regionInfoProvider", js.undefined)
       
-      @scala.inline
-      def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+      inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
       
-      @scala.inline
-      def setRequestHandler(value: HttpHandler): Self = StObject.set(x, "requestHandler", value.asInstanceOf[js.Any])
+      inline def setRequestHandler(value: HttpHandler): Self = StObject.set(x, "requestHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestHandlerUndefined: Self = StObject.set(x, "requestHandler", js.undefined)
+      inline def setRequestHandlerUndefined: Self = StObject.set(x, "requestHandler", js.undefined)
       
-      @scala.inline
-      def setRuntime(value: String): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
+      inline def setRuntime(value: String): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuntimeUndefined: Self = StObject.set(x, "runtime", js.undefined)
+      inline def setRuntimeUndefined: Self = StObject.set(x, "runtime", js.undefined)
       
-      @scala.inline
-      def setSha256(value: HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
+      inline def setSha256(value: HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSha256Undefined: Self = StObject.set(x, "sha256", js.undefined)
+      inline def setSha256Undefined: Self = StObject.set(x, "sha256", js.undefined)
       
-      @scala.inline
-      def setSigningName(value: String): Self = StObject.set(x, "signingName", value.asInstanceOf[js.Any])
+      inline def setSigningName(value: String): Self = StObject.set(x, "signingName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSigningNameUndefined: Self = StObject.set(x, "signingName", js.undefined)
+      inline def setSigningNameUndefined: Self = StObject.set(x, "signingName", js.undefined)
       
-      @scala.inline
-      def setStreamCollector(value: /* stream */ js.Any => js.Promise[Uint8Array]): Self = StObject.set(x, "streamCollector", js.Any.fromFunction1(value))
+      inline def setStreamCollector(value: /* stream */ js.Any => js.Promise[Uint8Array]): Self = StObject.set(x, "streamCollector", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStreamCollectorUndefined: Self = StObject.set(x, "streamCollector", js.undefined)
+      inline def setStreamCollectorUndefined: Self = StObject.set(x, "streamCollector", js.undefined)
       
-      @scala.inline
-      def setUrlParser(value: /* url */ String => Endpoint): Self = StObject.set(x, "urlParser", js.Any.fromFunction1(value))
+      inline def setUrlParser(value: /* url */ String => Endpoint): Self = StObject.set(x, "urlParser", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUrlParserUndefined: Self = StObject.set(x, "urlParser", js.undefined)
+      inline def setUrlParserUndefined: Self = StObject.set(x, "urlParser", js.undefined)
       
-      @scala.inline
-      def setUtf8Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "utf8Decoder", js.Any.fromFunction1(value))
+      inline def setUtf8Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "utf8Decoder", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUtf8DecoderUndefined: Self = StObject.set(x, "utf8Decoder", js.undefined)
+      inline def setUtf8DecoderUndefined: Self = StObject.set(x, "utf8Decoder", js.undefined)
       
-      @scala.inline
-      def setUtf8Encoder(value: /* input */ Uint8Array => String): Self = StObject.set(x, "utf8Encoder", js.Any.fromFunction1(value))
+      inline def setUtf8Encoder(value: /* input */ Uint8Array => String): Self = StObject.set(x, "utf8Encoder", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUtf8EncoderUndefined: Self = StObject.set(x, "utf8Encoder", js.undefined)
+      inline def setUtf8EncoderUndefined: Self = StObject.set(x, "utf8Encoder", js.undefined)
     }
   }
   
@@ -441,198 +399,136 @@ object cognitoIdentityClientMod {
   }
   object CognitoIdentityClientConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       requestHandler: (js.UndefOr[RequestHandler[js.Any, js.Any, HttpHandlerOptions]]) & js.UndefOr[HttpHandler]
     ): CognitoIdentityClientConfig = {
       val __obj = js.Dynamic.literal(requestHandler = requestHandler.asInstanceOf[js.Any])
       __obj.asInstanceOf[CognitoIdentityClientConfig]
     }
     
-    @scala.inline
-    implicit class CognitoIdentityClientConfigMutableBuilder[Self <: CognitoIdentityClientConfig] (val x: Self) extends AnyVal {
+    extension [Self <: CognitoIdentityClientConfig](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
       
-      @scala.inline
-      def setBase64Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
+      inline def setBase64Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBase64DecoderUndefined: Self = StObject.set(x, "base64Decoder", js.undefined)
+      inline def setBase64DecoderUndefined: Self = StObject.set(x, "base64Decoder", js.undefined)
       
-      @scala.inline
-      def setBase64Encoder(value: /* input */ Uint8Array => String): Self = StObject.set(x, "base64Encoder", js.Any.fromFunction1(value))
+      inline def setBase64Encoder(value: /* input */ Uint8Array => String): Self = StObject.set(x, "base64Encoder", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBase64EncoderUndefined: Self = StObject.set(x, "base64Encoder", js.undefined)
+      inline def setBase64EncoderUndefined: Self = StObject.set(x, "base64Encoder", js.undefined)
       
-      @scala.inline
-      def setBodyLengthChecker(value: /* body */ js.Any => js.UndefOr[Double]): Self = StObject.set(x, "bodyLengthChecker", js.Any.fromFunction1(value))
+      inline def setBodyLengthChecker(value: /* body */ js.Any => js.UndefOr[Double]): Self = StObject.set(x, "bodyLengthChecker", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBodyLengthCheckerUndefined: Self = StObject.set(x, "bodyLengthChecker", js.undefined)
+      inline def setBodyLengthCheckerUndefined: Self = StObject.set(x, "bodyLengthChecker", js.undefined)
       
-      @scala.inline
-      def setCredentialDefaultProvider(value: /* input */ js.Any => Provider[Credentials]): Self = StObject.set(x, "credentialDefaultProvider", js.Any.fromFunction1(value))
+      inline def setCredentialDefaultProvider(value: /* input */ js.Any => Provider[Credentials]): Self = StObject.set(x, "credentialDefaultProvider", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCredentialDefaultProviderUndefined: Self = StObject.set(x, "credentialDefaultProvider", js.undefined)
+      inline def setCredentialDefaultProviderUndefined: Self = StObject.set(x, "credentialDefaultProvider", js.undefined)
       
-      @scala.inline
-      def setCredentials(value: Credentials | Provider[Credentials]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: Credentials | Provider[Credentials]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCredentialsFunction0(value: () => js.Promise[Credentials]): Self = StObject.set(x, "credentials", js.Any.fromFunction0(value))
+      inline def setCredentialsFunction0(value: () => js.Promise[Credentials]): Self = StObject.set(x, "credentials", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
+      inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
       
-      @scala.inline
-      def setCustomUserAgent(value: String): Self = StObject.set(x, "customUserAgent", value.asInstanceOf[js.Any])
+      inline def setCustomUserAgent(value: String): Self = StObject.set(x, "customUserAgent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomUserAgentUndefined: Self = StObject.set(x, "customUserAgent", js.undefined)
+      inline def setCustomUserAgentUndefined: Self = StObject.set(x, "customUserAgent", js.undefined)
       
-      @scala.inline
-      def setDefaultUserAgent(value: String): Self = StObject.set(x, "defaultUserAgent", value.asInstanceOf[js.Any])
+      inline def setDefaultUserAgent(value: String): Self = StObject.set(x, "defaultUserAgent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultUserAgentUndefined: Self = StObject.set(x, "defaultUserAgent", js.undefined)
+      inline def setDefaultUserAgentUndefined: Self = StObject.set(x, "defaultUserAgent", js.undefined)
       
-      @scala.inline
-      def setDisableHostPrefix(value: Boolean): Self = StObject.set(x, "disableHostPrefix", value.asInstanceOf[js.Any])
+      inline def setDisableHostPrefix(value: Boolean): Self = StObject.set(x, "disableHostPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableHostPrefixUndefined: Self = StObject.set(x, "disableHostPrefix", js.undefined)
+      inline def setDisableHostPrefixUndefined: Self = StObject.set(x, "disableHostPrefix", js.undefined)
       
-      @scala.inline
-      def setEndpoint(value: String | Endpoint | Provider[Endpoint]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: String | Endpoint | Provider[Endpoint]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointFunction0(value: () => js.Promise[Endpoint]): Self = StObject.set(x, "endpoint", js.Any.fromFunction0(value))
+      inline def setEndpointFunction0(value: () => js.Promise[Endpoint]): Self = StObject.set(x, "endpoint", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
+      inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
       
-      @scala.inline
-      def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+      inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
-      @scala.inline
-      def setMaxAttempts(value: Double | Provider[Double]): Self = StObject.set(x, "maxAttempts", value.asInstanceOf[js.Any])
+      inline def setMaxAttempts(value: Double | Provider[Double]): Self = StObject.set(x, "maxAttempts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAttemptsFunction0(value: () => js.Promise[Double]): Self = StObject.set(x, "maxAttempts", js.Any.fromFunction0(value))
+      inline def setMaxAttemptsFunction0(value: () => js.Promise[Double]): Self = StObject.set(x, "maxAttempts", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMaxAttemptsUndefined: Self = StObject.set(x, "maxAttempts", js.undefined)
+      inline def setMaxAttemptsUndefined: Self = StObject.set(x, "maxAttempts", js.undefined)
       
-      @scala.inline
-      def setRegion(value: String | Provider[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String | Provider[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionFunction0(value: () => js.Promise[String]): Self = StObject.set(x, "region", js.Any.fromFunction0(value))
+      inline def setRegionFunction0(value: () => js.Promise[String]): Self = StObject.set(x, "region", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRegionInfoProvider(
+      inline def setRegionInfoProvider(
         value: (/* region */ String, /* options */ js.UndefOr[js.Any]) => js.Promise[js.UndefOr[RegionInfo]]
       ): Self = StObject.set(x, "regionInfoProvider", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRegionInfoProviderUndefined: Self = StObject.set(x, "regionInfoProvider", js.undefined)
+      inline def setRegionInfoProviderUndefined: Self = StObject.set(x, "regionInfoProvider", js.undefined)
       
-      @scala.inline
-      def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+      inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
       
-      @scala.inline
-      def setRequestHandler(value: (js.UndefOr[RequestHandler[js.Any, js.Any, HttpHandlerOptions]]) & js.UndefOr[HttpHandler]): Self = StObject.set(x, "requestHandler", value.asInstanceOf[js.Any])
+      inline def setRequestHandler(value: (js.UndefOr[RequestHandler[js.Any, js.Any, HttpHandlerOptions]]) & js.UndefOr[HttpHandler]): Self = StObject.set(x, "requestHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryStrategy(value: RetryStrategy): Self = StObject.set(x, "retryStrategy", value.asInstanceOf[js.Any])
+      inline def setRetryStrategy(value: RetryStrategy): Self = StObject.set(x, "retryStrategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryStrategyUndefined: Self = StObject.set(x, "retryStrategy", js.undefined)
+      inline def setRetryStrategyUndefined: Self = StObject.set(x, "retryStrategy", js.undefined)
       
-      @scala.inline
-      def setRuntime(value: String): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
+      inline def setRuntime(value: String): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuntimeUndefined: Self = StObject.set(x, "runtime", js.undefined)
+      inline def setRuntimeUndefined: Self = StObject.set(x, "runtime", js.undefined)
       
-      @scala.inline
-      def setSha256(value: HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
+      inline def setSha256(value: HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSha256Undefined: Self = StObject.set(x, "sha256", js.undefined)
+      inline def setSha256Undefined: Self = StObject.set(x, "sha256", js.undefined)
       
-      @scala.inline
-      def setSigner(value: RequestSigner | Provider[RequestSigner]): Self = StObject.set(x, "signer", value.asInstanceOf[js.Any])
+      inline def setSigner(value: RequestSigner | Provider[RequestSigner]): Self = StObject.set(x, "signer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignerFunction0(value: () => js.Promise[RequestSigner]): Self = StObject.set(x, "signer", js.Any.fromFunction0(value))
+      inline def setSignerFunction0(value: () => js.Promise[RequestSigner]): Self = StObject.set(x, "signer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSignerUndefined: Self = StObject.set(x, "signer", js.undefined)
+      inline def setSignerUndefined: Self = StObject.set(x, "signer", js.undefined)
       
-      @scala.inline
-      def setSigningEscapePath(value: Boolean): Self = StObject.set(x, "signingEscapePath", value.asInstanceOf[js.Any])
+      inline def setSigningEscapePath(value: Boolean): Self = StObject.set(x, "signingEscapePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSigningEscapePathUndefined: Self = StObject.set(x, "signingEscapePath", js.undefined)
+      inline def setSigningEscapePathUndefined: Self = StObject.set(x, "signingEscapePath", js.undefined)
       
-      @scala.inline
-      def setSigningName(value: String): Self = StObject.set(x, "signingName", value.asInstanceOf[js.Any])
+      inline def setSigningName(value: String): Self = StObject.set(x, "signingName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSigningNameUndefined: Self = StObject.set(x, "signingName", js.undefined)
+      inline def setSigningNameUndefined: Self = StObject.set(x, "signingName", js.undefined)
       
-      @scala.inline
-      def setSigningRegion(value: String): Self = StObject.set(x, "signingRegion", value.asInstanceOf[js.Any])
+      inline def setSigningRegion(value: String): Self = StObject.set(x, "signingRegion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSigningRegionUndefined: Self = StObject.set(x, "signingRegion", js.undefined)
+      inline def setSigningRegionUndefined: Self = StObject.set(x, "signingRegion", js.undefined)
       
-      @scala.inline
-      def setStreamCollector(value: /* stream */ js.Any => js.Promise[Uint8Array]): Self = StObject.set(x, "streamCollector", js.Any.fromFunction1(value))
+      inline def setStreamCollector(value: /* stream */ js.Any => js.Promise[Uint8Array]): Self = StObject.set(x, "streamCollector", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStreamCollectorUndefined: Self = StObject.set(x, "streamCollector", js.undefined)
+      inline def setStreamCollectorUndefined: Self = StObject.set(x, "streamCollector", js.undefined)
       
-      @scala.inline
-      def setSystemClockOffset(value: Double): Self = StObject.set(x, "systemClockOffset", value.asInstanceOf[js.Any])
+      inline def setSystemClockOffset(value: Double): Self = StObject.set(x, "systemClockOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSystemClockOffsetUndefined: Self = StObject.set(x, "systemClockOffset", js.undefined)
+      inline def setSystemClockOffsetUndefined: Self = StObject.set(x, "systemClockOffset", js.undefined)
       
-      @scala.inline
-      def setTls(value: Boolean): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
+      inline def setTls(value: Boolean): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
+      inline def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
       
-      @scala.inline
-      def setUrlParser(value: /* url */ String => Endpoint): Self = StObject.set(x, "urlParser", js.Any.fromFunction1(value))
+      inline def setUrlParser(value: /* url */ String => Endpoint): Self = StObject.set(x, "urlParser", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUrlParserUndefined: Self = StObject.set(x, "urlParser", js.undefined)
+      inline def setUrlParserUndefined: Self = StObject.set(x, "urlParser", js.undefined)
       
-      @scala.inline
-      def setUtf8Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "utf8Decoder", js.Any.fromFunction1(value))
+      inline def setUtf8Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "utf8Decoder", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUtf8DecoderUndefined: Self = StObject.set(x, "utf8Decoder", js.undefined)
+      inline def setUtf8DecoderUndefined: Self = StObject.set(x, "utf8Decoder", js.undefined)
       
-      @scala.inline
-      def setUtf8Encoder(value: /* input */ Uint8Array => String): Self = StObject.set(x, "utf8Encoder", js.Any.fromFunction1(value))
+      inline def setUtf8Encoder(value: /* input */ Uint8Array => String): Self = StObject.set(x, "utf8Encoder", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUtf8EncoderUndefined: Self = StObject.set(x, "utf8Encoder", js.undefined)
+      inline def setUtf8EncoderUndefined: Self = StObject.set(x, "utf8Encoder", js.undefined)
     }
   }
   
@@ -727,8 +623,7 @@ object cognitoIdentityClientMod {
   }
   object CognitoIdentityClientResolvedConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       apiVersion: String,
       base64Decoder: /* input */ String => Uint8Array,
       base64Encoder: /* input */ Uint8Array => String,
@@ -761,99 +656,69 @@ object cognitoIdentityClientMod {
       __obj.asInstanceOf[CognitoIdentityClientResolvedConfig]
     }
     
-    @scala.inline
-    implicit class CognitoIdentityClientResolvedConfigMutableBuilder[Self <: CognitoIdentityClientResolvedConfig] (val x: Self) extends AnyVal {
+    extension [Self <: CognitoIdentityClientResolvedConfig](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase64Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
+      inline def setBase64Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBase64Encoder(value: /* input */ Uint8Array => String): Self = StObject.set(x, "base64Encoder", js.Any.fromFunction1(value))
+      inline def setBase64Encoder(value: /* input */ Uint8Array => String): Self = StObject.set(x, "base64Encoder", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBodyLengthChecker(value: /* body */ js.Any => js.UndefOr[Double]): Self = StObject.set(x, "bodyLengthChecker", js.Any.fromFunction1(value))
+      inline def setBodyLengthChecker(value: /* body */ js.Any => js.UndefOr[Double]): Self = StObject.set(x, "bodyLengthChecker", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCredentialDefaultProvider(value: /* input */ js.Any => Provider[Credentials]): Self = StObject.set(x, "credentialDefaultProvider", js.Any.fromFunction1(value))
+      inline def setCredentialDefaultProvider(value: /* input */ js.Any => Provider[Credentials]): Self = StObject.set(x, "credentialDefaultProvider", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCredentials(value: () => js.Promise[Credentials]): Self = StObject.set(x, "credentials", js.Any.fromFunction0(value))
+      inline def setCredentials(value: () => js.Promise[Credentials]): Self = StObject.set(x, "credentials", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCustomUserAgent(value: String): Self = StObject.set(x, "customUserAgent", value.asInstanceOf[js.Any])
+      inline def setCustomUserAgent(value: String): Self = StObject.set(x, "customUserAgent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomUserAgentUndefined: Self = StObject.set(x, "customUserAgent", js.undefined)
+      inline def setCustomUserAgentUndefined: Self = StObject.set(x, "customUserAgent", js.undefined)
       
-      @scala.inline
-      def setDefaultUserAgent(value: String): Self = StObject.set(x, "defaultUserAgent", value.asInstanceOf[js.Any])
+      inline def setDefaultUserAgent(value: String): Self = StObject.set(x, "defaultUserAgent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableHostPrefix(value: Boolean): Self = StObject.set(x, "disableHostPrefix", value.asInstanceOf[js.Any])
+      inline def setDisableHostPrefix(value: Boolean): Self = StObject.set(x, "disableHostPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpoint(value: () => js.Promise[Endpoint]): Self = StObject.set(x, "endpoint", js.Any.fromFunction0(value))
+      inline def setEndpoint(value: () => js.Promise[Endpoint]): Self = StObject.set(x, "endpoint", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsCustomEndpoint(value: Boolean): Self = StObject.set(x, "isCustomEndpoint", value.asInstanceOf[js.Any])
+      inline def setIsCustomEndpoint(value: Boolean): Self = StObject.set(x, "isCustomEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAttempts(value: (Double | Provider[Double]) & Provider[Double]): Self = StObject.set(x, "maxAttempts", value.asInstanceOf[js.Any])
+      inline def setMaxAttempts(value: (Double | Provider[Double]) & Provider[Double]): Self = StObject.set(x, "maxAttempts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegion(value: (String | Provider[String]) & Provider[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: (String | Provider[String]) & Provider[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionInfoProvider(
+      inline def setRegionInfoProvider(
         value: (/* region */ String, /* options */ js.UndefOr[js.Any]) => js.Promise[js.UndefOr[RegionInfo]]
       ): Self = StObject.set(x, "regionInfoProvider", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRequestHandler(
+      inline def setRequestHandler(
         value: (RequestHandler[js.Any, js.Any, HttpHandlerOptions]) & HttpHandler & (RequestHandler[js.Any, js.Any, js.Object])
       ): Self = StObject.set(x, "requestHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryStrategy(value: RetryStrategy): Self = StObject.set(x, "retryStrategy", value.asInstanceOf[js.Any])
+      inline def setRetryStrategy(value: RetryStrategy): Self = StObject.set(x, "retryStrategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuntime(value: String): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
+      inline def setRuntime(value: String): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSha256(value: HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
+      inline def setSha256(value: HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSigner(value: () => js.Promise[RequestSigner]): Self = StObject.set(x, "signer", js.Any.fromFunction0(value))
+      inline def setSigner(value: () => js.Promise[RequestSigner]): Self = StObject.set(x, "signer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSigningEscapePath(value: Boolean): Self = StObject.set(x, "signingEscapePath", value.asInstanceOf[js.Any])
+      inline def setSigningEscapePath(value: Boolean): Self = StObject.set(x, "signingEscapePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSigningName(value: String): Self = StObject.set(x, "signingName", value.asInstanceOf[js.Any])
+      inline def setSigningName(value: String): Self = StObject.set(x, "signingName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamCollector(value: /* stream */ js.Any => js.Promise[Uint8Array]): Self = StObject.set(x, "streamCollector", js.Any.fromFunction1(value))
+      inline def setStreamCollector(value: /* stream */ js.Any => js.Promise[Uint8Array]): Self = StObject.set(x, "streamCollector", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSystemClockOffset(value: Double): Self = StObject.set(x, "systemClockOffset", value.asInstanceOf[js.Any])
+      inline def setSystemClockOffset(value: Double): Self = StObject.set(x, "systemClockOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTls(value: Boolean): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
+      inline def setTls(value: Boolean): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlParser(value: /* url */ String => Endpoint): Self = StObject.set(x, "urlParser", js.Any.fromFunction1(value))
+      inline def setUrlParser(value: /* url */ String => Endpoint): Self = StObject.set(x, "urlParser", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUtf8Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "utf8Decoder", js.Any.fromFunction1(value))
+      inline def setUtf8Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "utf8Decoder", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUtf8Encoder(value: /* input */ Uint8Array => String): Self = StObject.set(x, "utf8Encoder", js.Any.fromFunction1(value))
+      inline def setUtf8Encoder(value: /* input */ Uint8Array => String): Self = StObject.set(x, "utf8Encoder", js.Any.fromFunction1(value))
     }
   }
   
@@ -887,104 +752,87 @@ object cognitoIdentityClientMod {
   trait _ServiceOutputTypes extends StObject
   object _ServiceOutputTypes {
     
-    @scala.inline
-    def CreateIdentityPoolCommandOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentity.createIdentityPoolCommandMod.CreateIdentityPoolCommandOutput = {
+    inline def CreateIdentityPoolCommandOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentity.createIdentityPoolCommandMod.CreateIdentityPoolCommandOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentity.createIdentityPoolCommandMod.CreateIdentityPoolCommandOutput]
     }
     
-    @scala.inline
-    def DeleteIdentitiesCommandOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentity.deleteIdentitiesCommandMod.DeleteIdentitiesCommandOutput = {
+    inline def DeleteIdentitiesCommandOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentity.deleteIdentitiesCommandMod.DeleteIdentitiesCommandOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentity.deleteIdentitiesCommandMod.DeleteIdentitiesCommandOutput]
     }
     
-    @scala.inline
-    def DescribeIdentityCommandOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentity.describeIdentityCommandMod.DescribeIdentityCommandOutput = {
+    inline def DescribeIdentityCommandOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentity.describeIdentityCommandMod.DescribeIdentityCommandOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentity.describeIdentityCommandMod.DescribeIdentityCommandOutput]
     }
     
-    @scala.inline
-    def DescribeIdentityPoolCommandOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentity.describeIdentityPoolCommandMod.DescribeIdentityPoolCommandOutput = {
+    inline def DescribeIdentityPoolCommandOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentity.describeIdentityPoolCommandMod.DescribeIdentityPoolCommandOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentity.describeIdentityPoolCommandMod.DescribeIdentityPoolCommandOutput]
     }
     
-    @scala.inline
-    def GetCredentialsForIdentityCommandOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentity.getCredentialsForIdentityCommandMod.GetCredentialsForIdentityCommandOutput = {
+    inline def GetCredentialsForIdentityCommandOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentity.getCredentialsForIdentityCommandMod.GetCredentialsForIdentityCommandOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentity.getCredentialsForIdentityCommandMod.GetCredentialsForIdentityCommandOutput]
     }
     
-    @scala.inline
-    def GetIdCommandOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentity.getIdCommandMod.GetIdCommandOutput = {
+    inline def GetIdCommandOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentity.getIdCommandMod.GetIdCommandOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentity.getIdCommandMod.GetIdCommandOutput]
     }
     
-    @scala.inline
-    def GetIdentityPoolRolesCommandOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentity.getIdentityPoolRolesCommandMod.GetIdentityPoolRolesCommandOutput = {
+    inline def GetIdentityPoolRolesCommandOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentity.getIdentityPoolRolesCommandMod.GetIdentityPoolRolesCommandOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentity.getIdentityPoolRolesCommandMod.GetIdentityPoolRolesCommandOutput]
     }
     
-    @scala.inline
-    def GetOpenIdTokenCommandOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentity.getOpenIdTokenCommandMod.GetOpenIdTokenCommandOutput = {
+    inline def GetOpenIdTokenCommandOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentity.getOpenIdTokenCommandMod.GetOpenIdTokenCommandOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentity.getOpenIdTokenCommandMod.GetOpenIdTokenCommandOutput]
     }
     
-    @scala.inline
-    def GetOpenIdTokenForDeveloperIdentityCommandOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentity.getOpenIdTokenForDeveloperIdentityCommandMod.GetOpenIdTokenForDeveloperIdentityCommandOutput = {
+    inline def GetOpenIdTokenForDeveloperIdentityCommandOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentity.getOpenIdTokenForDeveloperIdentityCommandMod.GetOpenIdTokenForDeveloperIdentityCommandOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentity.getOpenIdTokenForDeveloperIdentityCommandMod.GetOpenIdTokenForDeveloperIdentityCommandOutput]
     }
     
-    @scala.inline
-    def ListIdentitiesCommandOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentity.listIdentitiesCommandMod.ListIdentitiesCommandOutput = {
+    inline def ListIdentitiesCommandOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentity.listIdentitiesCommandMod.ListIdentitiesCommandOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentity.listIdentitiesCommandMod.ListIdentitiesCommandOutput]
     }
     
-    @scala.inline
-    def ListIdentityPoolsCommandOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentity.listIdentityPoolsCommandMod.ListIdentityPoolsCommandOutput = {
+    inline def ListIdentityPoolsCommandOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentity.listIdentityPoolsCommandMod.ListIdentityPoolsCommandOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentity.listIdentityPoolsCommandMod.ListIdentityPoolsCommandOutput]
     }
     
-    @scala.inline
-    def ListTagsForResourceCommandOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentity.listTagsForResourceCommandMod.ListTagsForResourceCommandOutput = {
+    inline def ListTagsForResourceCommandOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentity.listTagsForResourceCommandMod.ListTagsForResourceCommandOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentity.listTagsForResourceCommandMod.ListTagsForResourceCommandOutput]
     }
     
-    @scala.inline
-    def LookupDeveloperIdentityCommandOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentity.lookupDeveloperIdentityCommandMod.LookupDeveloperIdentityCommandOutput = {
+    inline def LookupDeveloperIdentityCommandOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentity.lookupDeveloperIdentityCommandMod.LookupDeveloperIdentityCommandOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentity.lookupDeveloperIdentityCommandMod.LookupDeveloperIdentityCommandOutput]
     }
     
-    @scala.inline
-    def MergeDeveloperIdentitiesCommandOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentity.mergeDeveloperIdentitiesCommandMod.MergeDeveloperIdentitiesCommandOutput = {
+    inline def MergeDeveloperIdentitiesCommandOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentity.mergeDeveloperIdentitiesCommandMod.MergeDeveloperIdentitiesCommandOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentity.mergeDeveloperIdentitiesCommandMod.MergeDeveloperIdentitiesCommandOutput]
     }
     
-    @scala.inline
-    def TagResourceCommandOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentity.tagResourceCommandMod.TagResourceCommandOutput = {
+    inline def TagResourceCommandOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentity.tagResourceCommandMod.TagResourceCommandOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentity.tagResourceCommandMod.TagResourceCommandOutput]
     }
     
-    @scala.inline
-    def UntagResourceCommandOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentity.untagResourceCommandMod.UntagResourceCommandOutput = {
+    inline def UntagResourceCommandOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentity.untagResourceCommandMod.UntagResourceCommandOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentity.untagResourceCommandMod.UntagResourceCommandOutput]
     }
     
-    @scala.inline
-    def UpdateIdentityPoolCommandOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentity.updateIdentityPoolCommandMod.UpdateIdentityPoolCommandOutput = {
+    inline def UpdateIdentityPoolCommandOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentity.updateIdentityPoolCommandMod.UpdateIdentityPoolCommandOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentity.updateIdentityPoolCommandMod.UpdateIdentityPoolCommandOutput]
     }

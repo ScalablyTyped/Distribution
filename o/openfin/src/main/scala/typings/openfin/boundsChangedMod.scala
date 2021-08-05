@@ -24,14 +24,11 @@ object boundsChangedMod {
   trait BoundsChangeType extends StObject
   object BoundsChangeType {
     
-    @scala.inline
-    def POSITION: `0` = 0.asInstanceOf[`0`]
+    inline def POSITION: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def POSITION_AND_SIZE: `2` = 2.asInstanceOf[`2`]
+    inline def POSITION_AND_SIZE: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def SIZE: `1` = 1.asInstanceOf[`1`]
+    inline def SIZE: `1` = 1.asInstanceOf[`1`]
   }
   
   @js.native

@@ -14,25 +14,19 @@ trait Locale extends StObject {
 }
 object Locale {
   
-  @scala.inline
-  def apply(): Locale = {
+  inline def apply(): Locale = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Locale]
   }
   
-  @scala.inline
-  implicit class LocaleMutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
+  extension [Self <: Locale](x: Self) {
     
-    @scala.inline
-    def setMetadata(value: FieldMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: FieldMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

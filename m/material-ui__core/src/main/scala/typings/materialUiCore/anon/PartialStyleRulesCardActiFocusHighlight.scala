@@ -16,31 +16,23 @@ trait PartialStyleRulesCardActiFocusHighlight extends StObject {
 }
 object PartialStyleRulesCardActiFocusHighlight {
   
-  @scala.inline
-  def apply(): PartialStyleRulesCardActiFocusHighlight = {
+  inline def apply(): PartialStyleRulesCardActiFocusHighlight = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialStyleRulesCardActiFocusHighlight]
   }
   
-  @scala.inline
-  implicit class PartialStyleRulesCardActiFocusHighlightMutableBuilder[Self <: PartialStyleRulesCardActiFocusHighlight] (val x: Self) extends AnyVal {
+  extension [Self <: PartialStyleRulesCardActiFocusHighlight](x: Self) {
     
-    @scala.inline
-    def setFocusHighlight(value: CSSProperties): Self = StObject.set(x, "focusHighlight", value.asInstanceOf[js.Any])
+    inline def setFocusHighlight(value: CSSProperties): Self = StObject.set(x, "focusHighlight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusHighlightUndefined: Self = StObject.set(x, "focusHighlight", js.undefined)
+    inline def setFocusHighlightUndefined: Self = StObject.set(x, "focusHighlight", js.undefined)
     
-    @scala.inline
-    def setFocusVisible(value: CSSProperties): Self = StObject.set(x, "focusVisible", value.asInstanceOf[js.Any])
+    inline def setFocusVisible(value: CSSProperties): Self = StObject.set(x, "focusVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusVisibleUndefined: Self = StObject.set(x, "focusVisible", js.undefined)
+    inline def setFocusVisibleUndefined: Self = StObject.set(x, "focusVisible", js.undefined)
     
-    @scala.inline
-    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

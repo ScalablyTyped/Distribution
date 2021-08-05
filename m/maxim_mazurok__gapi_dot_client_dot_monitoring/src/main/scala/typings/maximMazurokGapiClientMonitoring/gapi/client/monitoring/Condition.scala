@@ -33,43 +33,31 @@ trait Condition extends StObject {
 }
 object Condition {
   
-  @scala.inline
-  def apply(): Condition = {
+  inline def apply(): Condition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Condition]
   }
   
-  @scala.inline
-  implicit class ConditionMutableBuilder[Self <: Condition] (val x: Self) extends AnyVal {
+  extension [Self <: Condition](x: Self) {
     
-    @scala.inline
-    def setConditionAbsent(value: MetricAbsence): Self = StObject.set(x, "conditionAbsent", value.asInstanceOf[js.Any])
+    inline def setConditionAbsent(value: MetricAbsence): Self = StObject.set(x, "conditionAbsent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionAbsentUndefined: Self = StObject.set(x, "conditionAbsent", js.undefined)
+    inline def setConditionAbsentUndefined: Self = StObject.set(x, "conditionAbsent", js.undefined)
     
-    @scala.inline
-    def setConditionMonitoringQueryLanguage(value: MonitoringQueryLanguageCondition): Self = StObject.set(x, "conditionMonitoringQueryLanguage", value.asInstanceOf[js.Any])
+    inline def setConditionMonitoringQueryLanguage(value: MonitoringQueryLanguageCondition): Self = StObject.set(x, "conditionMonitoringQueryLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionMonitoringQueryLanguageUndefined: Self = StObject.set(x, "conditionMonitoringQueryLanguage", js.undefined)
+    inline def setConditionMonitoringQueryLanguageUndefined: Self = StObject.set(x, "conditionMonitoringQueryLanguage", js.undefined)
     
-    @scala.inline
-    def setConditionThreshold(value: MetricThreshold): Self = StObject.set(x, "conditionThreshold", value.asInstanceOf[js.Any])
+    inline def setConditionThreshold(value: MetricThreshold): Self = StObject.set(x, "conditionThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionThresholdUndefined: Self = StObject.set(x, "conditionThreshold", js.undefined)
+    inline def setConditionThresholdUndefined: Self = StObject.set(x, "conditionThreshold", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait AggregateVersion extends StObject {
 }
 object AggregateVersion {
   
-  @scala.inline
-  def apply(version: Double): AggregateVersion = {
+  inline def apply(version: Double): AggregateVersion = {
     val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[AggregateVersion]
   }
   
-  @scala.inline
-  implicit class AggregateVersionMutableBuilder[Self <: AggregateVersion] (val x: Self) extends AnyVal {
+  extension [Self <: AggregateVersion](x: Self) {
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

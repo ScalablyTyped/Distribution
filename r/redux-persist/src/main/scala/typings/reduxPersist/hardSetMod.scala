@@ -10,6 +10,5 @@ object hardSetMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[S](inboundState: S): S = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(inboundState.asInstanceOf[js.Any]).asInstanceOf[S]
+  inline def default[S](inboundState: S): S = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(inboundState.asInstanceOf[js.Any]).asInstanceOf[S]
 }

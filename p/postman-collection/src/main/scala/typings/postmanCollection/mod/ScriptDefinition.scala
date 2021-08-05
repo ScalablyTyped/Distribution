@@ -16,34 +16,25 @@ trait ScriptDefinition
 }
 object ScriptDefinition {
   
-  @scala.inline
-  def apply(): ScriptDefinition = {
+  inline def apply(): ScriptDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScriptDefinition]
   }
   
-  @scala.inline
-  implicit class ScriptDefinitionMutableBuilder[Self <: ScriptDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: ScriptDefinition](x: Self) {
     
-    @scala.inline
-    def setExec(value: String | js.Array[String]): Self = StObject.set(x, "exec", value.asInstanceOf[js.Any])
+    inline def setExec(value: String | js.Array[String]): Self = StObject.set(x, "exec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecUndefined: Self = StObject.set(x, "exec", js.undefined)
+    inline def setExecUndefined: Self = StObject.set(x, "exec", js.undefined)
     
-    @scala.inline
-    def setExecVarargs(value: String*): Self = StObject.set(x, "exec", js.Array(value :_*))
+    inline def setExecVarargs(value: String*): Self = StObject.set(x, "exec", js.Array(value :_*))
     
-    @scala.inline
-    def setSrc(value: String | Url): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: String | Url): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+    inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -13,6 +13,5 @@ class OtherCertificateCollection ()
   extends typings.xadesjs.xmlMod.OtherCertificateCollection
 object OtherCertificateCollection {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.OtherCertificateCollection] = ^.asInstanceOf[js.Dynamic].selectDynamic("OtherCertificateCollection").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.OtherCertificateCollection]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.OtherCertificateCollection] = ^.asInstanceOf[js.Dynamic].selectDynamic("OtherCertificateCollection").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.OtherCertificateCollection]]
 }

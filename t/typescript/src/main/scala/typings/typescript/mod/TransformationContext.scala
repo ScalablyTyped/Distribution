@@ -52,8 +52,7 @@ trait TransformationContext
 }
 object TransformationContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     enableEmitNotification: SyntaxKind => Unit,
     enableSubstitution: SyntaxKind => Unit,
     endLexicalEnvironment: () => js.UndefOr[js.Array[Statement]],
@@ -75,31 +74,22 @@ object TransformationContext {
     __obj.asInstanceOf[TransformationContext]
   }
   
-  @scala.inline
-  implicit class TransformationContextMutableBuilder[Self <: TransformationContext] (val x: Self) extends AnyVal {
+  extension [Self <: TransformationContext](x: Self) {
     
-    @scala.inline
-    def setEnableEmitNotification(value: SyntaxKind => Unit): Self = StObject.set(x, "enableEmitNotification", js.Any.fromFunction1(value))
+    inline def setEnableEmitNotification(value: SyntaxKind => Unit): Self = StObject.set(x, "enableEmitNotification", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEnableSubstitution(value: SyntaxKind => Unit): Self = StObject.set(x, "enableSubstitution", js.Any.fromFunction1(value))
+    inline def setEnableSubstitution(value: SyntaxKind => Unit): Self = StObject.set(x, "enableSubstitution", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsEmitNotificationEnabled(value: Node => Boolean): Self = StObject.set(x, "isEmitNotificationEnabled", js.Any.fromFunction1(value))
+    inline def setIsEmitNotificationEnabled(value: Node => Boolean): Self = StObject.set(x, "isEmitNotificationEnabled", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsSubstitutionEnabled(value: Node => Boolean): Self = StObject.set(x, "isSubstitutionEnabled", js.Any.fromFunction1(value))
+    inline def setIsSubstitutionEnabled(value: Node => Boolean): Self = StObject.set(x, "isSubstitutionEnabled", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnEmitNode(value: (EmitHint, Node, js.Function2[/* hint */ EmitHint, /* node */ Node, Unit]) => Unit): Self = StObject.set(x, "onEmitNode", js.Any.fromFunction3(value))
+    inline def setOnEmitNode(value: (EmitHint, Node, js.Function2[/* hint */ EmitHint, /* node */ Node, Unit]) => Unit): Self = StObject.set(x, "onEmitNode", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnSubstituteNode(value: (EmitHint, Node) => Node): Self = StObject.set(x, "onSubstituteNode", js.Any.fromFunction2(value))
+    inline def setOnSubstituteNode(value: (EmitHint, Node) => Node): Self = StObject.set(x, "onSubstituteNode", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setReadEmitHelpers(value: () => js.UndefOr[js.Array[EmitHelper]]): Self = StObject.set(x, "readEmitHelpers", js.Any.fromFunction0(value))
+    inline def setReadEmitHelpers(value: () => js.UndefOr[js.Array[EmitHelper]]): Self = StObject.set(x, "readEmitHelpers", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRequestEmitHelper(value: EmitHelper => Unit): Self = StObject.set(x, "requestEmitHelper", js.Any.fromFunction1(value))
+    inline def setRequestEmitHelper(value: EmitHelper => Unit): Self = StObject.set(x, "requestEmitHelper", js.Any.fromFunction1(value))
   }
 }

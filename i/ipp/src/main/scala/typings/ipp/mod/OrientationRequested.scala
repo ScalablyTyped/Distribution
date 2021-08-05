@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OrientationRequested extends StObject
 object OrientationRequested {
   
-  @scala.inline
-  def landscape: typings.ipp.ippStrings.landscape = "landscape".asInstanceOf[typings.ipp.ippStrings.landscape]
+  inline def landscape: typings.ipp.ippStrings.landscape = "landscape".asInstanceOf[typings.ipp.ippStrings.landscape]
   
-  @scala.inline
-  def none: typings.ipp.ippStrings.none = "none".asInstanceOf[typings.ipp.ippStrings.none]
+  inline def none: typings.ipp.ippStrings.none = "none".asInstanceOf[typings.ipp.ippStrings.none]
   
-  @scala.inline
-  def portrait: typings.ipp.ippStrings.portrait = "portrait".asInstanceOf[typings.ipp.ippStrings.portrait]
+  inline def portrait: typings.ipp.ippStrings.portrait = "portrait".asInstanceOf[typings.ipp.ippStrings.portrait]
   
-  @scala.inline
-  def `reverse-landscape`: typings.ipp.ippStrings.`reverse-landscape` = "reverse-landscape".asInstanceOf[typings.ipp.ippStrings.`reverse-landscape`]
+  inline def `reverse-landscape`: typings.ipp.ippStrings.`reverse-landscape` = "reverse-landscape".asInstanceOf[typings.ipp.ippStrings.`reverse-landscape`]
   
-  @scala.inline
-  def `reverse-portrait`: typings.ipp.ippStrings.`reverse-portrait` = "reverse-portrait".asInstanceOf[typings.ipp.ippStrings.`reverse-portrait`]
+  inline def `reverse-portrait`: typings.ipp.ippStrings.`reverse-portrait` = "reverse-portrait".asInstanceOf[typings.ipp.ippStrings.`reverse-portrait`]
 }

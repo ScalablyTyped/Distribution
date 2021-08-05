@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait KeyEventName extends StObject
 object KeyEventName {
   
-  @scala.inline
-  def keydown: typings.reactHotkeys.reactHotkeysStrings.keydown = "keydown".asInstanceOf[typings.reactHotkeys.reactHotkeysStrings.keydown]
+  inline def keydown: typings.reactHotkeys.reactHotkeysStrings.keydown = "keydown".asInstanceOf[typings.reactHotkeys.reactHotkeysStrings.keydown]
   
-  @scala.inline
-  def keypress: typings.reactHotkeys.reactHotkeysStrings.keypress = "keypress".asInstanceOf[typings.reactHotkeys.reactHotkeysStrings.keypress]
+  inline def keypress: typings.reactHotkeys.reactHotkeysStrings.keypress = "keypress".asInstanceOf[typings.reactHotkeys.reactHotkeysStrings.keypress]
   
-  @scala.inline
-  def keyup: typings.reactHotkeys.reactHotkeysStrings.keyup = "keyup".asInstanceOf[typings.reactHotkeys.reactHotkeysStrings.keyup]
+  inline def keyup: typings.reactHotkeys.reactHotkeysStrings.keyup = "keyup".asInstanceOf[typings.reactHotkeys.reactHotkeysStrings.keyup]
 }

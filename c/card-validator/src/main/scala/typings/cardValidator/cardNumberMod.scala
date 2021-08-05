@@ -12,14 +12,10 @@ object cardNumberMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def cardNumber(value: String): CardNumberVerification = ^.asInstanceOf[js.Dynamic].applyDynamic("cardNumber")(value.asInstanceOf[js.Any]).asInstanceOf[CardNumberVerification]
-  @scala.inline
-  def cardNumber(value: String, options: CardNumberOptions): CardNumberVerification = (^.asInstanceOf[js.Dynamic].applyDynamic("cardNumber")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CardNumberVerification]
-  @scala.inline
-  def cardNumber(value: js.Any): CardNumberVerification = ^.asInstanceOf[js.Dynamic].applyDynamic("cardNumber")(value.asInstanceOf[js.Any]).asInstanceOf[CardNumberVerification]
-  @scala.inline
-  def cardNumber(value: js.Any, options: CardNumberOptions): CardNumberVerification = (^.asInstanceOf[js.Dynamic].applyDynamic("cardNumber")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CardNumberVerification]
+  inline def cardNumber(value: String): CardNumberVerification = ^.asInstanceOf[js.Dynamic].applyDynamic("cardNumber")(value.asInstanceOf[js.Any]).asInstanceOf[CardNumberVerification]
+  inline def cardNumber(value: String, options: CardNumberOptions): CardNumberVerification = (^.asInstanceOf[js.Dynamic].applyDynamic("cardNumber")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CardNumberVerification]
+  inline def cardNumber(value: js.Any): CardNumberVerification = ^.asInstanceOf[js.Dynamic].applyDynamic("cardNumber")(value.asInstanceOf[js.Any]).asInstanceOf[CardNumberVerification]
+  inline def cardNumber(value: js.Any, options: CardNumberOptions): CardNumberVerification = (^.asInstanceOf[js.Dynamic].applyDynamic("cardNumber")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CardNumberVerification]
   
   trait CardNumberOptions extends StObject {
     
@@ -29,26 +25,20 @@ object cardNumberMod {
   }
   object CardNumberOptions {
     
-    @scala.inline
-    def apply(): CardNumberOptions = {
+    inline def apply(): CardNumberOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CardNumberOptions]
     }
     
-    @scala.inline
-    implicit class CardNumberOptionsMutableBuilder[Self <: CardNumberOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CardNumberOptions](x: Self) {
       
-      @scala.inline
-      def setLuhnValidateUnionPay(value: Boolean): Self = StObject.set(x, "luhnValidateUnionPay", value.asInstanceOf[js.Any])
+      inline def setLuhnValidateUnionPay(value: Boolean): Self = StObject.set(x, "luhnValidateUnionPay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLuhnValidateUnionPayUndefined: Self = StObject.set(x, "luhnValidateUnionPay", js.undefined)
+      inline def setLuhnValidateUnionPayUndefined: Self = StObject.set(x, "luhnValidateUnionPay", js.undefined)
       
-      @scala.inline
-      def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+      inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
+      inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
     }
   }
   
@@ -60,20 +50,16 @@ object cardNumberMod {
   }
   object CardNumberVerification {
     
-    @scala.inline
-    def apply(isPotentiallyValid: Boolean, isValid: Boolean): CardNumberVerification = {
+    inline def apply(isPotentiallyValid: Boolean, isValid: Boolean): CardNumberVerification = {
       val __obj = js.Dynamic.literal(isPotentiallyValid = isPotentiallyValid.asInstanceOf[js.Any], isValid = isValid.asInstanceOf[js.Any], card = null)
       __obj.asInstanceOf[CardNumberVerification]
     }
     
-    @scala.inline
-    implicit class CardNumberVerificationMutableBuilder[Self <: CardNumberVerification] (val x: Self) extends AnyVal {
+    extension [Self <: CardNumberVerification](x: Self) {
       
-      @scala.inline
-      def setCard(value: CreditCardType): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
+      inline def setCard(value: CreditCardType): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCardNull: Self = StObject.set(x, "card", null)
+      inline def setCardNull: Self = StObject.set(x, "card", null)
     }
   }
   
@@ -93,8 +79,7 @@ object cardNumberMod {
   }
   object CreditCardType {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       code: Name,
       gaps: js.Array[Double],
       lengths: js.Array[Double],
@@ -107,35 +92,25 @@ object cardNumberMod {
       __obj.asInstanceOf[CreditCardType]
     }
     
-    @scala.inline
-    implicit class CreditCardTypeMutableBuilder[Self <: CreditCardType] (val x: Self) extends AnyVal {
+    extension [Self <: CreditCardType](x: Self) {
       
-      @scala.inline
-      def setCode(value: Name): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Name): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGaps(value: js.Array[Double]): Self = StObject.set(x, "gaps", value.asInstanceOf[js.Any])
+      inline def setGaps(value: js.Array[Double]): Self = StObject.set(x, "gaps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGapsVarargs(value: Double*): Self = StObject.set(x, "gaps", js.Array(value :_*))
+      inline def setGapsVarargs(value: Double*): Self = StObject.set(x, "gaps", js.Array(value :_*))
       
-      @scala.inline
-      def setLengths(value: js.Array[Double]): Self = StObject.set(x, "lengths", value.asInstanceOf[js.Any])
+      inline def setLengths(value: js.Array[Double]): Self = StObject.set(x, "lengths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLengthsVarargs(value: Double*): Self = StObject.set(x, "lengths", js.Array(value :_*))
+      inline def setLengthsVarargs(value: Double*): Self = StObject.set(x, "lengths", js.Array(value :_*))
       
-      @scala.inline
-      def setNiceType(value: String): Self = StObject.set(x, "niceType", value.asInstanceOf[js.Any])
+      inline def setNiceType(value: String): Self = StObject.set(x, "niceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatterns(value: js.Array[js.Array[Double] | Double]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
+      inline def setPatterns(value: js.Array[js.Array[Double] | Double]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatternsVarargs(value: (js.Array[Double] | Double)*): Self = StObject.set(x, "patterns", js.Array(value :_*))
+      inline def setPatternsVarargs(value: (js.Array[Double] | Double)*): Self = StObject.set(x, "patterns", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

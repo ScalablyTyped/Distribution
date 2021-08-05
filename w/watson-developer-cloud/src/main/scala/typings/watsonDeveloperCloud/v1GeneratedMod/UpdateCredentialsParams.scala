@@ -26,43 +26,31 @@ trait UpdateCredentialsParams extends StObject {
 }
 object UpdateCredentialsParams {
   
-  @scala.inline
-  def apply(credential_id: String, environment_id: String): UpdateCredentialsParams = {
+  inline def apply(credential_id: String, environment_id: String): UpdateCredentialsParams = {
     val __obj = js.Dynamic.literal(credential_id = credential_id.asInstanceOf[js.Any], environment_id = environment_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateCredentialsParams]
   }
   
-  @scala.inline
-  implicit class UpdateCredentialsParamsMutableBuilder[Self <: UpdateCredentialsParams] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateCredentialsParams](x: Self) {
     
-    @scala.inline
-    def setCredential_details(value: CredentialDetails): Self = StObject.set(x, "credential_details", value.asInstanceOf[js.Any])
+    inline def setCredential_details(value: CredentialDetails): Self = StObject.set(x, "credential_details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredential_detailsUndefined: Self = StObject.set(x, "credential_details", js.undefined)
+    inline def setCredential_detailsUndefined: Self = StObject.set(x, "credential_details", js.undefined)
     
-    @scala.inline
-    def setCredential_id(value: String): Self = StObject.set(x, "credential_id", value.asInstanceOf[js.Any])
+    inline def setCredential_id(value: String): Self = StObject.set(x, "credential_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironment_id(value: String): Self = StObject.set(x, "environment_id", value.asInstanceOf[js.Any])
+    inline def setEnvironment_id(value: String): Self = StObject.set(x, "environment_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
     
-    @scala.inline
-    def setSource_type(value: SourceType | String): Self = StObject.set(x, "source_type", value.asInstanceOf[js.Any])
+    inline def setSource_type(value: SourceType | String): Self = StObject.set(x, "source_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource_typeUndefined: Self = StObject.set(x, "source_type", js.undefined)
+    inline def setSource_typeUndefined: Self = StObject.set(x, "source_type", js.undefined)
   }
 }

@@ -22,8 +22,7 @@ trait Arrows extends StObject {
 }
 object Arrows {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     arrows: Boolean,
     autoplay: Boolean,
     cellAlign: String,
@@ -36,28 +35,20 @@ object Arrows {
     __obj.asInstanceOf[Arrows]
   }
   
-  @scala.inline
-  implicit class ArrowsMutableBuilder[Self <: Arrows] (val x: Self) extends AnyVal {
+  extension [Self <: Arrows](x: Self) {
     
-    @scala.inline
-    def setArrows(value: Boolean): Self = StObject.set(x, "arrows", value.asInstanceOf[js.Any])
+    inline def setArrows(value: Boolean): Self = StObject.set(x, "arrows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
+    inline def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellAlign(value: String): Self = StObject.set(x, "cellAlign", value.asInstanceOf[js.Any])
+    inline def setCellAlign(value: String): Self = StObject.set(x, "cellAlign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDots(value: Boolean): Self = StObject.set(x, "dots", value.asInstanceOf[js.Any])
+    inline def setDots(value: Boolean): Self = StObject.set(x, "dots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfinite(value: Boolean): Self = StObject.set(x, "infinite", value.asInstanceOf[js.Any])
+    inline def setInfinite(value: Boolean): Self = StObject.set(x, "infinite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+    inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
+    inline def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
   }
 }

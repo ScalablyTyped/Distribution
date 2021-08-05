@@ -16,19 +16,15 @@ trait SchemaListTargetingExpression extends StObject {
 }
 object SchemaListTargetingExpression {
   
-  @scala.inline
-  def apply(): SchemaListTargetingExpression = {
+  inline def apply(): SchemaListTargetingExpression = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListTargetingExpression]
   }
   
-  @scala.inline
-  implicit class SchemaListTargetingExpressionMutableBuilder[Self <: SchemaListTargetingExpression] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListTargetingExpression](x: Self) {
     
-    @scala.inline
-    def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
+    inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
   }
 }

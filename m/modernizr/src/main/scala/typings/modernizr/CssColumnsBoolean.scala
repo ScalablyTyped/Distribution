@@ -33,8 +33,7 @@ trait CssColumnsBoolean
 }
 object CssColumnsBoolean {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     breakafter: scala.Boolean,
     breakbefore: scala.Boolean,
     breakinside: scala.Boolean,
@@ -51,40 +50,28 @@ object CssColumnsBoolean {
     __obj.asInstanceOf[CssColumnsBoolean]
   }
   
-  @scala.inline
-  implicit class CssColumnsBooleanMutableBuilder[Self <: CssColumnsBoolean] (val x: Self) extends AnyVal {
+  extension [Self <: CssColumnsBoolean](x: Self) {
     
-    @scala.inline
-    def setBreakafter(value: scala.Boolean): Self = StObject.set(x, "breakafter", value.asInstanceOf[js.Any])
+    inline def setBreakafter(value: scala.Boolean): Self = StObject.set(x, "breakafter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBreakbefore(value: scala.Boolean): Self = StObject.set(x, "breakbefore", value.asInstanceOf[js.Any])
+    inline def setBreakbefore(value: scala.Boolean): Self = StObject.set(x, "breakbefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBreakinside(value: scala.Boolean): Self = StObject.set(x, "breakinside", value.asInstanceOf[js.Any])
+    inline def setBreakinside(value: scala.Boolean): Self = StObject.set(x, "breakinside", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFill(value: scala.Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: scala.Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGap(value: scala.Boolean): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
+    inline def setGap(value: scala.Boolean): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRule(value: scala.Boolean): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+    inline def setRule(value: scala.Boolean): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulecolor(value: scala.Boolean): Self = StObject.set(x, "rulecolor", value.asInstanceOf[js.Any])
+    inline def setRulecolor(value: scala.Boolean): Self = StObject.set(x, "rulecolor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulestyle(value: scala.Boolean): Self = StObject.set(x, "rulestyle", value.asInstanceOf[js.Any])
+    inline def setRulestyle(value: scala.Boolean): Self = StObject.set(x, "rulestyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulewidth(value: scala.Boolean): Self = StObject.set(x, "rulewidth", value.asInstanceOf[js.Any])
+    inline def setRulewidth(value: scala.Boolean): Self = StObject.set(x, "rulewidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpan(value: scala.Boolean): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
+    inline def setSpan(value: scala.Boolean): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: scala.Boolean): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: scala.Boolean): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

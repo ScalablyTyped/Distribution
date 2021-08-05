@@ -26,8 +26,7 @@ trait DataTable extends StObject {
 }
 object DataTable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getColumns: () => js.Array[Column],
     getData: () => js.Array[js.Any],
     getIsSummaryData: () => Boolean,
@@ -38,22 +37,16 @@ object DataTable {
     __obj.asInstanceOf[DataTable]
   }
   
-  @scala.inline
-  implicit class DataTableMutableBuilder[Self <: DataTable] (val x: Self) extends AnyVal {
+  extension [Self <: DataTable](x: Self) {
     
-    @scala.inline
-    def setGetColumns(value: () => js.Array[Column]): Self = StObject.set(x, "getColumns", js.Any.fromFunction0(value))
+    inline def setGetColumns(value: () => js.Array[Column]): Self = StObject.set(x, "getColumns", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetData(value: () => js.Array[js.Any]): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
+    inline def setGetData(value: () => js.Array[js.Any]): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIsSummaryData(value: () => Boolean): Self = StObject.set(x, "getIsSummaryData", js.Any.fromFunction0(value))
+    inline def setGetIsSummaryData(value: () => Boolean): Self = StObject.set(x, "getIsSummaryData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTotalRowCount(value: () => Double): Self = StObject.set(x, "getTotalRowCount", js.Any.fromFunction0(value))
+    inline def setGetTotalRowCount(value: () => Double): Self = StObject.set(x, "getTotalRowCount", js.Any.fromFunction0(value))
   }
 }

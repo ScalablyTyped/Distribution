@@ -144,100 +144,69 @@ trait NavigatorXAxisTitleOptions extends StObject {
 }
 object NavigatorXAxisTitleOptions {
   
-  @scala.inline
-  def apply(): NavigatorXAxisTitleOptions = {
+  inline def apply(): NavigatorXAxisTitleOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NavigatorXAxisTitleOptions]
   }
   
-  @scala.inline
-  implicit class NavigatorXAxisTitleOptionsMutableBuilder[Self <: NavigatorXAxisTitleOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NavigatorXAxisTitleOptions](x: Self) {
     
-    @scala.inline
-    def setAlign(value: AxisTitleAlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: AxisTitleAlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    @scala.inline
-    def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setPosition3d(value: chart_ | flap | typings.highcharts.highchartsStrings.offset | ortho): Self = StObject.set(x, "position3d", value.asInstanceOf[js.Any])
+    inline def setPosition3d(value: chart_ | flap | typings.highcharts.highchartsStrings.offset | ortho): Self = StObject.set(x, "position3d", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition3dNull: Self = StObject.set(x, "position3d", null)
+    inline def setPosition3dNull: Self = StObject.set(x, "position3d", null)
     
-    @scala.inline
-    def setPosition3dUndefined: Self = StObject.set(x, "position3d", js.undefined)
+    inline def setPosition3dUndefined: Self = StObject.set(x, "position3d", js.undefined)
     
-    @scala.inline
-    def setReserveSpace(value: Boolean): Self = StObject.set(x, "reserveSpace", value.asInstanceOf[js.Any])
+    inline def setReserveSpace(value: Boolean): Self = StObject.set(x, "reserveSpace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReserveSpaceUndefined: Self = StObject.set(x, "reserveSpace", js.undefined)
+    inline def setReserveSpaceUndefined: Self = StObject.set(x, "reserveSpace", js.undefined)
     
-    @scala.inline
-    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
+    inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     
-    @scala.inline
-    def setSkew3d(value: Boolean): Self = StObject.set(x, "skew3d", value.asInstanceOf[js.Any])
+    inline def setSkew3d(value: Boolean): Self = StObject.set(x, "skew3d", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkew3dNull: Self = StObject.set(x, "skew3d", null)
+    inline def setSkew3dNull: Self = StObject.set(x, "skew3d", null)
     
-    @scala.inline
-    def setSkew3dUndefined: Self = StObject.set(x, "skew3d", js.undefined)
+    inline def setSkew3dUndefined: Self = StObject.set(x, "skew3d", js.undefined)
     
-    @scala.inline
-    def setStyle(value: CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextAlign(value: AlignValue): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+    inline def setTextAlign(value: AlignValue): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
+    inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
     
-    @scala.inline
-    def setTextNull: Self = StObject.set(x, "text", null)
+    inline def setTextNull: Self = StObject.set(x, "text", null)
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setUseHTML(value: Boolean): Self = StObject.set(x, "useHTML", value.asInstanceOf[js.Any])
+    inline def setUseHTML(value: Boolean): Self = StObject.set(x, "useHTML", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseHTMLUndefined: Self = StObject.set(x, "useHTML", js.undefined)
+    inline def setUseHTMLUndefined: Self = StObject.set(x, "useHTML", js.undefined)
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

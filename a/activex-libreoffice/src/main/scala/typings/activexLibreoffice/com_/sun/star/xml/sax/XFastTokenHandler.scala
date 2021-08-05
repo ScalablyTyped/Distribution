@@ -33,8 +33,7 @@ trait XFastTokenHandler
 }
 object XFastTokenHandler {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getTokenFromUTF8: SeqEquiv[Double] => Double,
     getUTF8Identifier: Double => SafeArray[Double],
@@ -45,13 +44,10 @@ object XFastTokenHandler {
     __obj.asInstanceOf[XFastTokenHandler]
   }
   
-  @scala.inline
-  implicit class XFastTokenHandlerMutableBuilder[Self <: XFastTokenHandler] (val x: Self) extends AnyVal {
+  extension [Self <: XFastTokenHandler](x: Self) {
     
-    @scala.inline
-    def setGetTokenFromUTF8(value: SeqEquiv[Double] => Double): Self = StObject.set(x, "getTokenFromUTF8", js.Any.fromFunction1(value))
+    inline def setGetTokenFromUTF8(value: SeqEquiv[Double] => Double): Self = StObject.set(x, "getTokenFromUTF8", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetUTF8Identifier(value: Double => SafeArray[Double]): Self = StObject.set(x, "getUTF8Identifier", js.Any.fromFunction1(value))
+    inline def setGetUTF8Identifier(value: Double => SafeArray[Double]): Self = StObject.set(x, "getUTF8Identifier", js.Any.fromFunction1(value))
   }
 }

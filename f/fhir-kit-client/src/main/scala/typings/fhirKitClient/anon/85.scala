@@ -17,31 +17,23 @@ trait `85` extends StObject {
 }
 object `85` {
   
-  @scala.inline
-  def apply(id: String): `85` = {
+  inline def apply(id: String): `85` = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], resourceType = "RiskAssessment")
     __obj.asInstanceOf[`85`]
   }
   
-  @scala.inline
-  implicit class `85MutableBuilder`[Self <: `85`] (val x: Self) extends AnyVal {
+  extension [Self <: `85`](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: typings.request.mod.Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: typings.request.mod.Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: typings.request.mod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: typings.request.mod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: RiskAssessment): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: RiskAssessment): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
   }
 }

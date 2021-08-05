@@ -25,25 +25,19 @@ trait ShapeFillUpdateData extends StObject {
 }
 object ShapeFillUpdateData {
   
-  @scala.inline
-  def apply(): ShapeFillUpdateData = {
+  inline def apply(): ShapeFillUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShapeFillUpdateData]
   }
   
-  @scala.inline
-  implicit class ShapeFillUpdateDataMutableBuilder[Self <: ShapeFillUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: ShapeFillUpdateData](x: Self) {
     
-    @scala.inline
-    def setForegroundColor(value: String): Self = StObject.set(x, "foregroundColor", value.asInstanceOf[js.Any])
+    inline def setForegroundColor(value: String): Self = StObject.set(x, "foregroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForegroundColorUndefined: Self = StObject.set(x, "foregroundColor", js.undefined)
+    inline def setForegroundColorUndefined: Self = StObject.set(x, "foregroundColor", js.undefined)
     
-    @scala.inline
-    def setTransparency(value: Double): Self = StObject.set(x, "transparency", value.asInstanceOf[js.Any])
+    inline def setTransparency(value: Double): Self = StObject.set(x, "transparency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransparencyUndefined: Self = StObject.set(x, "transparency", js.undefined)
+    inline def setTransparencyUndefined: Self = StObject.set(x, "transparency", js.undefined)
   }
 }

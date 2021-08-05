@@ -14,19 +14,15 @@ trait ChooseInvoiceTitleOptions
 }
 object ChooseInvoiceTitleOptions {
   
-  @scala.inline
-  def apply(): ChooseInvoiceTitleOptions = {
+  inline def apply(): ChooseInvoiceTitleOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChooseInvoiceTitleOptions]
   }
   
-  @scala.inline
-  implicit class ChooseInvoiceTitleOptionsMutableBuilder[Self <: ChooseInvoiceTitleOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChooseInvoiceTitleOptions](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: /* res */ BankAccount => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ BankAccount => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

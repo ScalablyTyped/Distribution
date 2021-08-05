@@ -10,6 +10,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def enabled(isEnabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enabled")(isEnabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def enabled(isEnabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enabled")(isEnabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

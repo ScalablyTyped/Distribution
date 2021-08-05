@@ -22,49 +22,49 @@ object panelBaseMod {
        with IPanel {
     def this(props: IPanelProps) = this()
     
-    var _allowScrollOnPanel: js.Any = js.native
+    /* private */ var _allowScrollOnPanel: js.Any = js.native
     
-    var _allowTouchBodyScroll: js.Any = js.native
+    /* private */ var _allowTouchBodyScroll: js.Any = js.native
     
-    var _animateTo: js.Any = js.native
+    /* private */ var _animateTo: js.Any = js.native
     
-    var _animationCallback: js.Any = js.native
+    /* private */ var _animationCallback: js.Any = js.native
     
-    var _async: js.Any = js.native
+    /* private */ var _async: js.Any = js.native
     
-    var _classNames: js.Any = js.native
+    /* private */ var _classNames: js.Any = js.native
     
-    var _clearExistingAnimationTimer: js.Any = js.native
+    /* private */ var _clearExistingAnimationTimer: js.Any = js.native
     
-    var _dismissOnOuterClick: js.Any = js.native
+    /* private */ var _dismissOnOuterClick: js.Any = js.native
     
-    var _events: js.Any = js.native
+    /* private */ var _events: js.Any = js.native
     
-    var _hasCustomNavigation: js.Any = js.native
+    /* private */ var _hasCustomNavigation: js.Any = js.native
     
-    var _headerTextId: js.Any = js.native
+    /* private */ var _headerTextId: js.Any = js.native
     
-    var _onPanelClick: js.Any = js.native
+    /* private */ var _onPanelClick: js.Any = js.native
     
-    var _onRenderBody: js.Any = js.native
+    /* private */ var _onRenderBody: js.Any = js.native
     
-    var _onRenderFooter: js.Any = js.native
+    /* private */ var _onRenderFooter: js.Any = js.native
     
-    var _onRenderHeader: js.Any = js.native
+    /* private */ var _onRenderHeader: js.Any = js.native
     
-    var _onRenderNavigation: js.Any = js.native
+    /* private */ var _onRenderNavigation: js.Any = js.native
     
-    var _onRenderNavigationContent: js.Any = js.native
+    /* private */ var _onRenderNavigationContent: js.Any = js.native
     
-    var _onTransitionComplete: js.Any = js.native
+    /* private */ var _onTransitionComplete: js.Any = js.native
     
-    var _panel: js.Any = js.native
+    /* private */ var _panel: js.Any = js.native
     
-    var _scrollableContent: js.Any = js.native
+    /* private */ var _scrollableContent: js.Any = js.native
     
-    var _shouldListenForOuterClick: js.Any = js.native
+    /* private */ var _shouldListenForOuterClick: js.Any = js.native
     
-    var _updateFooterPosition: js.Any = js.native
+    /* private */ var _updateFooterPosition: js.Any = js.native
     
     def close(): Unit = js.native
     
@@ -92,11 +92,9 @@ object panelBaseMod {
     @JSImport("office-ui-fabric-react/lib/components/Panel/Panel.base", "PanelBase.defaultProps")
     @js.native
     def defaultProps: IPanelProps = js.native
-    @scala.inline
-    def defaultProps_=(x: IPanelProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IPanelProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def getDerivedStateFromProps(nextProps: ReadonlyIPanelProps, prevState: ReadonlyIPanelState): PartialIPanelState | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[PartialIPanelState | Null]
+    inline def getDerivedStateFromProps(nextProps: ReadonlyIPanelProps, prevState: ReadonlyIPanelState): PartialIPanelState | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[PartialIPanelState | Null]
   }
   
   @js.native
@@ -136,29 +134,22 @@ object panelBaseMod {
   }
   object IPanelState {
     
-    @scala.inline
-    def apply(visibility: PanelVisibilityState): IPanelState = {
+    inline def apply(visibility: PanelVisibilityState): IPanelState = {
       val __obj = js.Dynamic.literal(visibility = visibility.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPanelState]
     }
     
-    @scala.inline
-    implicit class IPanelStateMutableBuilder[Self <: IPanelState] (val x: Self) extends AnyVal {
+    extension [Self <: IPanelState](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setIsFooterSticky(value: Boolean): Self = StObject.set(x, "isFooterSticky", value.asInstanceOf[js.Any])
+      inline def setIsFooterSticky(value: Boolean): Self = StObject.set(x, "isFooterSticky", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFooterStickyUndefined: Self = StObject.set(x, "isFooterSticky", js.undefined)
+      inline def setIsFooterStickyUndefined: Self = StObject.set(x, "isFooterSticky", js.undefined)
       
-      @scala.inline
-      def setVisibility(value: PanelVisibilityState): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+      inline def setVisibility(value: PanelVisibilityState): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     }
   }
 }

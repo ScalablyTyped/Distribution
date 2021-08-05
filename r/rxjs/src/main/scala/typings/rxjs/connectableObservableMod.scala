@@ -15,14 +15,14 @@ object connectableObservableMod {
   class ConnectableObservable[T] protected () extends Observable[T] {
     def this(source: Observable[T], subjectFactory: js.Function0[Subject[T]]) = this()
     
-    var _connection: Subscription = js.native
+    /* protected */ var _connection: Subscription = js.native
     
     /** @internal */
     var _isComplete: Boolean = js.native
     
-    var _refCount: Double = js.native
+    /* protected */ var _refCount: Double = js.native
     
-    var _subject: Subject[T] = js.native
+    /* protected */ var _subject: Subject[T] = js.native
     
     def connect(): Subscription = js.native
     

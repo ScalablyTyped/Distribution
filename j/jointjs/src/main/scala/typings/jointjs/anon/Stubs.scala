@@ -10,19 +10,15 @@ trait Stubs extends StObject {
 }
 object Stubs {
   
-  @scala.inline
-  def apply(): Stubs = {
+  inline def apply(): Stubs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Stubs]
   }
   
-  @scala.inline
-  implicit class StubsMutableBuilder[Self <: Stubs] (val x: Self) extends AnyVal {
+  extension [Self <: Stubs](x: Self) {
     
-    @scala.inline
-    def setStubs(value: Double): Self = StObject.set(x, "stubs", value.asInstanceOf[js.Any])
+    inline def setStubs(value: Double): Self = StObject.set(x, "stubs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStubsUndefined: Self = StObject.set(x, "stubs", js.undefined)
+    inline def setStubsUndefined: Self = StObject.set(x, "stubs", js.undefined)
   }
 }

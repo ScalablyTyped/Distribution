@@ -14,22 +14,17 @@ trait ServiceStatus extends StObject {
 }
 object ServiceStatus {
   
-  @scala.inline
-  def apply(CompletedTasks: Double, DesiredTasks: Double, RunningTasks: Double): ServiceStatus = {
+  inline def apply(CompletedTasks: Double, DesiredTasks: Double, RunningTasks: Double): ServiceStatus = {
     val __obj = js.Dynamic.literal(CompletedTasks = CompletedTasks.asInstanceOf[js.Any], DesiredTasks = DesiredTasks.asInstanceOf[js.Any], RunningTasks = RunningTasks.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceStatus]
   }
   
-  @scala.inline
-  implicit class ServiceStatusMutableBuilder[Self <: ServiceStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceStatus](x: Self) {
     
-    @scala.inline
-    def setCompletedTasks(value: Double): Self = StObject.set(x, "CompletedTasks", value.asInstanceOf[js.Any])
+    inline def setCompletedTasks(value: Double): Self = StObject.set(x, "CompletedTasks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesiredTasks(value: Double): Self = StObject.set(x, "DesiredTasks", value.asInstanceOf[js.Any])
+    inline def setDesiredTasks(value: Double): Self = StObject.set(x, "DesiredTasks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunningTasks(value: Double): Self = StObject.set(x, "RunningTasks", value.asInstanceOf[js.Any])
+    inline def setRunningTasks(value: Double): Self = StObject.set(x, "RunningTasks", value.asInstanceOf[js.Any])
   }
 }

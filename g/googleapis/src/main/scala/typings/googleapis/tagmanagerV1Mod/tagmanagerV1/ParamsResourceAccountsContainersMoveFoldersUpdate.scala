@@ -54,70 +54,49 @@ trait ParamsResourceAccountsContainersMoveFoldersUpdate
 }
 object ParamsResourceAccountsContainersMoveFoldersUpdate {
   
-  @scala.inline
-  def apply(): ParamsResourceAccountsContainersMoveFoldersUpdate = {
+  inline def apply(): ParamsResourceAccountsContainersMoveFoldersUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceAccountsContainersMoveFoldersUpdate]
   }
   
-  @scala.inline
-  implicit class ParamsResourceAccountsContainersMoveFoldersUpdateMutableBuilder[Self <: ParamsResourceAccountsContainersMoveFoldersUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceAccountsContainersMoveFoldersUpdate](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
+    inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
+    inline def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
     
-    @scala.inline
-    def setFolderId(value: String): Self = StObject.set(x, "folderId", value.asInstanceOf[js.Any])
+    inline def setFolderId(value: String): Self = StObject.set(x, "folderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFolderIdUndefined: Self = StObject.set(x, "folderId", js.undefined)
+    inline def setFolderIdUndefined: Self = StObject.set(x, "folderId", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaFolder): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaFolder): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
-    @scala.inline
-    def setTagId(value: js.Array[String]): Self = StObject.set(x, "tagId", value.asInstanceOf[js.Any])
+    inline def setTagId(value: js.Array[String]): Self = StObject.set(x, "tagId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagIdUndefined: Self = StObject.set(x, "tagId", js.undefined)
+    inline def setTagIdUndefined: Self = StObject.set(x, "tagId", js.undefined)
     
-    @scala.inline
-    def setTagIdVarargs(value: String*): Self = StObject.set(x, "tagId", js.Array(value :_*))
+    inline def setTagIdVarargs(value: String*): Self = StObject.set(x, "tagId", js.Array(value :_*))
     
-    @scala.inline
-    def setTriggerId(value: js.Array[String]): Self = StObject.set(x, "triggerId", value.asInstanceOf[js.Any])
+    inline def setTriggerId(value: js.Array[String]): Self = StObject.set(x, "triggerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerIdUndefined: Self = StObject.set(x, "triggerId", js.undefined)
+    inline def setTriggerIdUndefined: Self = StObject.set(x, "triggerId", js.undefined)
     
-    @scala.inline
-    def setTriggerIdVarargs(value: String*): Self = StObject.set(x, "triggerId", js.Array(value :_*))
+    inline def setTriggerIdVarargs(value: String*): Self = StObject.set(x, "triggerId", js.Array(value :_*))
     
-    @scala.inline
-    def setVariableId(value: js.Array[String]): Self = StObject.set(x, "variableId", value.asInstanceOf[js.Any])
+    inline def setVariableId(value: js.Array[String]): Self = StObject.set(x, "variableId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariableIdUndefined: Self = StObject.set(x, "variableId", js.undefined)
+    inline def setVariableIdUndefined: Self = StObject.set(x, "variableId", js.undefined)
     
-    @scala.inline
-    def setVariableIdVarargs(value: String*): Self = StObject.set(x, "variableId", js.Array(value :_*))
+    inline def setVariableIdVarargs(value: String*): Self = StObject.set(x, "variableId", js.Array(value :_*))
   }
 }

@@ -13,19 +13,15 @@ trait SetShowHingeRequest extends StObject {
 }
 object SetShowHingeRequest {
   
-  @scala.inline
-  def apply(): SetShowHingeRequest = {
+  inline def apply(): SetShowHingeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SetShowHingeRequest]
   }
   
-  @scala.inline
-  implicit class SetShowHingeRequestMutableBuilder[Self <: SetShowHingeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetShowHingeRequest](x: Self) {
     
-    @scala.inline
-    def setHingeConfig(value: HingeConfig): Self = StObject.set(x, "hingeConfig", value.asInstanceOf[js.Any])
+    inline def setHingeConfig(value: HingeConfig): Self = StObject.set(x, "hingeConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHingeConfigUndefined: Self = StObject.set(x, "hingeConfig", js.undefined)
+    inline def setHingeConfigUndefined: Self = StObject.set(x, "hingeConfig", js.undefined)
   }
 }

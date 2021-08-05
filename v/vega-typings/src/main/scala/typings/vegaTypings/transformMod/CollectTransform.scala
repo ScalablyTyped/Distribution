@@ -16,20 +16,16 @@ trait CollectTransform
 }
 object CollectTransform {
   
-  @scala.inline
-  def apply(sort: Compare): CollectTransform = {
+  inline def apply(sort: Compare): CollectTransform = {
     val __obj = js.Dynamic.literal(sort = sort.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("collect")
     __obj.asInstanceOf[CollectTransform]
   }
   
-  @scala.inline
-  implicit class CollectTransformMutableBuilder[Self <: CollectTransform] (val x: Self) extends AnyVal {
+  extension [Self <: CollectTransform](x: Self) {
     
-    @scala.inline
-    def setSort(value: Compare): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: Compare): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: collect): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: collect): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

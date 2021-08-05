@@ -28,7 +28,7 @@ trait Bezier extends StObject {
   
   /* private */ def _iterate(errorThreshold: js.Any, circles: js.Any): js.Any = js.native
   
-  var _linear: js.Any = js.native
+  /* private */ var _linear: js.Any = js.native
   
   var _lut: js.Array[Point] = js.native
   

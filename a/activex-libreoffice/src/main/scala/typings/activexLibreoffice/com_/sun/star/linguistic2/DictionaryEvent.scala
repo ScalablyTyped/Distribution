@@ -37,19 +37,15 @@ trait DictionaryEvent
 }
 object DictionaryEvent {
   
-  @scala.inline
-  def apply(Source: XInterface, nEvent: Double, xDictionaryEntry: XDictionaryEntry): DictionaryEvent = {
+  inline def apply(Source: XInterface, nEvent: Double, xDictionaryEntry: XDictionaryEntry): DictionaryEvent = {
     val __obj = js.Dynamic.literal(Source = Source.asInstanceOf[js.Any], nEvent = nEvent.asInstanceOf[js.Any], xDictionaryEntry = xDictionaryEntry.asInstanceOf[js.Any])
     __obj.asInstanceOf[DictionaryEvent]
   }
   
-  @scala.inline
-  implicit class DictionaryEventMutableBuilder[Self <: DictionaryEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DictionaryEvent](x: Self) {
     
-    @scala.inline
-    def setNEvent(value: Double): Self = StObject.set(x, "nEvent", value.asInstanceOf[js.Any])
+    inline def setNEvent(value: Double): Self = StObject.set(x, "nEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXDictionaryEntry(value: XDictionaryEntry): Self = StObject.set(x, "xDictionaryEntry", value.asInstanceOf[js.Any])
+    inline def setXDictionaryEntry(value: XDictionaryEntry): Self = StObject.set(x, "xDictionaryEntry", value.asInstanceOf[js.Any])
   }
 }

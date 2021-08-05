@@ -12,8 +12,7 @@ trait CSSMathSum
 }
 object CSSMathSum {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: /* repeated */ CSSNumberish => CSSNumericValue,
     div: /* repeated */ CSSNumberish => CSSNumericValue,
     equals_ : /* repeated */ CSSNumberish => Boolean,
@@ -33,10 +32,8 @@ object CSSMathSum {
     __obj.asInstanceOf[CSSMathSum]
   }
   
-  @scala.inline
-  implicit class CSSMathSumMutableBuilder[Self <: CSSMathSum] (val x: Self) extends AnyVal {
+  extension [Self <: CSSMathSum](x: Self) {
     
-    @scala.inline
-    def setValues(value: CSSNumericArray): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: CSSNumericArray): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
   }
 }

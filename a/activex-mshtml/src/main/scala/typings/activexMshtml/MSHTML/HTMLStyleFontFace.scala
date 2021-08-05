@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HTMLStyleFontFace extends StObject {
   
-  @JSName("MSHTML.HTMLStyleFontFace_typekey")
+  /* private */ @JSName("MSHTML.HTMLStyleFontFace_typekey")
   var MSHTMLDotHTMLStyleFontFace_typekey: HTMLStyleFontFace
   
   var cssText: String
@@ -23,8 +23,7 @@ trait HTMLStyleFontFace extends StObject {
 }
 object HTMLStyleFontFace {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotHTMLStyleFontFace_typekey: HTMLStyleFontFace,
     cssText: String,
     fontsrc: String,
@@ -39,28 +38,20 @@ object HTMLStyleFontFace {
     __obj.asInstanceOf[HTMLStyleFontFace]
   }
   
-  @scala.inline
-  implicit class HTMLStyleFontFaceMutableBuilder[Self <: HTMLStyleFontFace] (val x: Self) extends AnyVal {
+  extension [Self <: HTMLStyleFontFace](x: Self) {
     
-    @scala.inline
-    def setCssText(value: String): Self = StObject.set(x, "cssText", value.asInstanceOf[js.Any])
+    inline def setCssText(value: String): Self = StObject.set(x, "cssText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontsrc(value: String): Self = StObject.set(x, "fontsrc", value.asInstanceOf[js.Any])
+    inline def setFontsrc(value: String): Self = StObject.set(x, "fontsrc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotHTMLStyleFontFace_typekey(value: HTMLStyleFontFace): Self = StObject.set(x, "MSHTML.HTMLStyleFontFace_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotHTMLStyleFontFace_typekey(value: HTMLStyleFontFace): Self = StObject.set(x, "MSHTML.HTMLStyleFontFace_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentRule(value: IHTMLCSSRule): Self = StObject.set(x, "parentRule", value.asInstanceOf[js.Any])
+    inline def setParentRule(value: IHTMLCSSRule): Self = StObject.set(x, "parentRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentStyleSheet(value: IHTMLStyleSheet): Self = StObject.set(x, "parentStyleSheet", value.asInstanceOf[js.Any])
+    inline def setParentStyleSheet(value: IHTMLStyleSheet): Self = StObject.set(x, "parentStyleSheet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: IHTMLRuleStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: IHTMLRuleStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

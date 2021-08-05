@@ -13,19 +13,15 @@ trait ListExportsInput extends StObject {
 }
 object ListExportsInput {
   
-  @scala.inline
-  def apply(): ListExportsInput = {
+  inline def apply(): ListExportsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListExportsInput]
   }
   
-  @scala.inline
-  implicit class ListExportsInputMutableBuilder[Self <: ListExportsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListExportsInput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

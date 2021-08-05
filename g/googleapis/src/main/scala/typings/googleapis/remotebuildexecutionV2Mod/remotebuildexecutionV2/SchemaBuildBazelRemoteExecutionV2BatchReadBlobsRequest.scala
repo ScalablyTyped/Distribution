@@ -16,22 +16,17 @@ trait SchemaBuildBazelRemoteExecutionV2BatchReadBlobsRequest extends StObject {
 }
 object SchemaBuildBazelRemoteExecutionV2BatchReadBlobsRequest {
   
-  @scala.inline
-  def apply(): SchemaBuildBazelRemoteExecutionV2BatchReadBlobsRequest = {
+  inline def apply(): SchemaBuildBazelRemoteExecutionV2BatchReadBlobsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBuildBazelRemoteExecutionV2BatchReadBlobsRequest]
   }
   
-  @scala.inline
-  implicit class SchemaBuildBazelRemoteExecutionV2BatchReadBlobsRequestMutableBuilder[Self <: SchemaBuildBazelRemoteExecutionV2BatchReadBlobsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBuildBazelRemoteExecutionV2BatchReadBlobsRequest](x: Self) {
     
-    @scala.inline
-    def setDigests(value: js.Array[SchemaBuildBazelRemoteExecutionV2Digest]): Self = StObject.set(x, "digests", value.asInstanceOf[js.Any])
+    inline def setDigests(value: js.Array[SchemaBuildBazelRemoteExecutionV2Digest]): Self = StObject.set(x, "digests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigestsUndefined: Self = StObject.set(x, "digests", js.undefined)
+    inline def setDigestsUndefined: Self = StObject.set(x, "digests", js.undefined)
     
-    @scala.inline
-    def setDigestsVarargs(value: SchemaBuildBazelRemoteExecutionV2Digest*): Self = StObject.set(x, "digests", js.Array(value :_*))
+    inline def setDigestsVarargs(value: SchemaBuildBazelRemoteExecutionV2Digest*): Self = StObject.set(x, "digests", js.Array(value :_*))
   }
 }

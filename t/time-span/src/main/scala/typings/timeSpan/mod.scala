@@ -22,8 +22,7 @@ object mod {
   //=> 1.7453186
   ```
   */
-  @scala.inline
-  def apply(): TimeEndFunction = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[TimeEndFunction]
+  inline def apply(): TimeEndFunction = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[TimeEndFunction]
   
   @JSImport("time-span", JSImport.Namespace)
   @js.native

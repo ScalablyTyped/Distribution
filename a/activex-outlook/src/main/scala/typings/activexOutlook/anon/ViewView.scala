@@ -10,16 +10,13 @@ trait ViewView extends StObject {
 }
 object ViewView {
   
-  @scala.inline
-  def apply(View: typings.activexOutlook.Outlook.View): ViewView = {
+  inline def apply(View: typings.activexOutlook.Outlook.View): ViewView = {
     val __obj = js.Dynamic.literal(View = View.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewView]
   }
   
-  @scala.inline
-  implicit class ViewViewMutableBuilder[Self <: ViewView] (val x: Self) extends AnyVal {
+  extension [Self <: ViewView](x: Self) {
     
-    @scala.inline
-    def setView(value: typings.activexOutlook.Outlook.View): Self = StObject.set(x, "View", value.asInstanceOf[js.Any])
+    inline def setView(value: typings.activexOutlook.Outlook.View): Self = StObject.set(x, "View", value.asInstanceOf[js.Any])
   }
 }

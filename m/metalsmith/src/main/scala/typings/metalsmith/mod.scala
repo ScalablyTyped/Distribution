@@ -19,8 +19,7 @@ object mod {
     * @link [API] https://github.com/segmentio/metalsmith#new-metalsmithdir
     * @link [Source] https://github.com/segmentio/metalsmith/blob/00b2c7aaee13fbe0f7fb3be332929a303b2df51d/lib/index.js#L30
     */
-  @scala.inline
-  def apply(directory: String): Metalsmith = ^.asInstanceOf[js.Dynamic].apply(directory.asInstanceOf[js.Any]).asInstanceOf[Metalsmith]
+  inline def apply(directory: String): Metalsmith = ^.asInstanceOf[js.Dynamic].apply(directory.asInstanceOf[js.Any]).asInstanceOf[Metalsmith]
   
   @JSImport("metalsmith", JSImport.Namespace)
   @js.native

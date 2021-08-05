@@ -12,19 +12,15 @@ trait AclGetParameters extends StObject {
 }
 object AclGetParameters {
   
-  @scala.inline
-  def apply(calendarId: String, ruleId: String): AclGetParameters = {
+  inline def apply(calendarId: String, ruleId: String): AclGetParameters = {
     val __obj = js.Dynamic.literal(calendarId = calendarId.asInstanceOf[js.Any], ruleId = ruleId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AclGetParameters]
   }
   
-  @scala.inline
-  implicit class AclGetParametersMutableBuilder[Self <: AclGetParameters] (val x: Self) extends AnyVal {
+  extension [Self <: AclGetParameters](x: Self) {
     
-    @scala.inline
-    def setCalendarId(value: String): Self = StObject.set(x, "calendarId", value.asInstanceOf[js.Any])
+    inline def setCalendarId(value: String): Self = StObject.set(x, "calendarId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleId(value: String): Self = StObject.set(x, "ruleId", value.asInstanceOf[js.Any])
+    inline def setRuleId(value: String): Self = StObject.set(x, "ruleId", value.asInstanceOf[js.Any])
   }
 }

@@ -33,37 +33,27 @@ trait BucketNotificationTopic extends StObject {
 }
 object BucketNotificationTopic {
   
-  @scala.inline
-  def apply(events: js.Array[String], id: String, topicArn: String): BucketNotificationTopic = {
+  inline def apply(events: js.Array[String], id: String, topicArn: String): BucketNotificationTopic = {
     val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], topicArn = topicArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketNotificationTopic]
   }
   
-  @scala.inline
-  implicit class BucketNotificationTopicMutableBuilder[Self <: BucketNotificationTopic] (val x: Self) extends AnyVal {
+  extension [Self <: BucketNotificationTopic](x: Self) {
     
-    @scala.inline
-    def setEvents(value: js.Array[String]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: js.Array[String]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value :_*))
     
-    @scala.inline
-    def setFilterPrefix(value: String): Self = StObject.set(x, "filterPrefix", value.asInstanceOf[js.Any])
+    inline def setFilterPrefix(value: String): Self = StObject.set(x, "filterPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterPrefixUndefined: Self = StObject.set(x, "filterPrefix", js.undefined)
+    inline def setFilterPrefixUndefined: Self = StObject.set(x, "filterPrefix", js.undefined)
     
-    @scala.inline
-    def setFilterSuffix(value: String): Self = StObject.set(x, "filterSuffix", value.asInstanceOf[js.Any])
+    inline def setFilterSuffix(value: String): Self = StObject.set(x, "filterSuffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterSuffixUndefined: Self = StObject.set(x, "filterSuffix", js.undefined)
+    inline def setFilterSuffixUndefined: Self = StObject.set(x, "filterSuffix", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicArn(value: String): Self = StObject.set(x, "topicArn", value.asInstanceOf[js.Any])
+    inline def setTopicArn(value: String): Self = StObject.set(x, "topicArn", value.asInstanceOf[js.Any])
   }
 }

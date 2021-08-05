@@ -24,8 +24,7 @@ trait XInfoPrinter
 }
 object XInfoPrinter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BinarySetup: SafeArray[Double],
     FormDescriptions: SafeArray[String],
     PropertySetInfo: XPropertySetInfo,
@@ -50,10 +49,8 @@ object XInfoPrinter {
     __obj.asInstanceOf[XInfoPrinter]
   }
   
-  @scala.inline
-  implicit class XInfoPrinterMutableBuilder[Self <: XInfoPrinter] (val x: Self) extends AnyVal {
+  extension [Self <: XInfoPrinter](x: Self) {
     
-    @scala.inline
-    def setCreateDevice(value: () => XDevice): Self = StObject.set(x, "createDevice", js.Any.fromFunction0(value))
+    inline def setCreateDevice(value: () => XDevice): Self = StObject.set(x, "createDevice", js.Any.fromFunction0(value))
   }
 }

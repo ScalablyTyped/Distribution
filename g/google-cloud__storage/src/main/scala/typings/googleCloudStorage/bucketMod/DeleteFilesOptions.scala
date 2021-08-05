@@ -12,19 +12,15 @@ trait DeleteFilesOptions
 }
 object DeleteFilesOptions {
   
-  @scala.inline
-  def apply(): DeleteFilesOptions = {
+  inline def apply(): DeleteFilesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteFilesOptions]
   }
   
-  @scala.inline
-  implicit class DeleteFilesOptionsMutableBuilder[Self <: DeleteFilesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteFilesOptions](x: Self) {
     
-    @scala.inline
-    def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
   }
 }

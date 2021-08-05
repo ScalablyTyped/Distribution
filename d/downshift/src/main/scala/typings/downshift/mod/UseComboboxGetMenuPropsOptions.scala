@@ -9,8 +9,7 @@ trait UseComboboxGetMenuPropsOptions
      with GetMenuPropsOptions
 object UseComboboxGetMenuPropsOptions {
   
-  @scala.inline
-  def apply(): UseComboboxGetMenuPropsOptions = {
+  inline def apply(): UseComboboxGetMenuPropsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UseComboboxGetMenuPropsOptions]
   }

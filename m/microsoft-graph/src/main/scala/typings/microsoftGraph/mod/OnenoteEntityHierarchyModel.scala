@@ -26,49 +26,35 @@ trait OnenoteEntityHierarchyModel
 }
 object OnenoteEntityHierarchyModel {
   
-  @scala.inline
-  def apply(): OnenoteEntityHierarchyModel = {
+  inline def apply(): OnenoteEntityHierarchyModel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnenoteEntityHierarchyModel]
   }
   
-  @scala.inline
-  implicit class OnenoteEntityHierarchyModelMutableBuilder[Self <: OnenoteEntityHierarchyModel] (val x: Self) extends AnyVal {
+  extension [Self <: OnenoteEntityHierarchyModel](x: Self) {
     
-    @scala.inline
-    def setCreatedBy(value: NullableOption[IdentitySet]): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
+    inline def setCreatedBy(value: NullableOption[IdentitySet]): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedByNull: Self = StObject.set(x, "createdBy", null)
+    inline def setCreatedByNull: Self = StObject.set(x, "createdBy", null)
     
-    @scala.inline
-    def setCreatedByUndefined: Self = StObject.set(x, "createdBy", js.undefined)
+    inline def setCreatedByUndefined: Self = StObject.set(x, "createdBy", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setLastModifiedBy(value: NullableOption[IdentitySet]): Self = StObject.set(x, "lastModifiedBy", value.asInstanceOf[js.Any])
+    inline def setLastModifiedBy(value: NullableOption[IdentitySet]): Self = StObject.set(x, "lastModifiedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedByNull: Self = StObject.set(x, "lastModifiedBy", null)
+    inline def setLastModifiedByNull: Self = StObject.set(x, "lastModifiedBy", null)
     
-    @scala.inline
-    def setLastModifiedByUndefined: Self = StObject.set(x, "lastModifiedBy", js.undefined)
+    inline def setLastModifiedByUndefined: Self = StObject.set(x, "lastModifiedBy", js.undefined)
     
-    @scala.inline
-    def setLastModifiedDateTime(value: NullableOption[String]): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDateTime(value: NullableOption[String]): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedDateTimeNull: Self = StObject.set(x, "lastModifiedDateTime", null)
+    inline def setLastModifiedDateTimeNull: Self = StObject.set(x, "lastModifiedDateTime", null)
     
-    @scala.inline
-    def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
+    inline def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
   }
 }

@@ -17,31 +17,23 @@ trait VideoRecordingDetails extends StObject {
 }
 object VideoRecordingDetails {
   
-  @scala.inline
-  def apply(): VideoRecordingDetails = {
+  inline def apply(): VideoRecordingDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VideoRecordingDetails]
   }
   
-  @scala.inline
-  implicit class VideoRecordingDetailsMutableBuilder[Self <: VideoRecordingDetails] (val x: Self) extends AnyVal {
+  extension [Self <: VideoRecordingDetails](x: Self) {
     
-    @scala.inline
-    def setLocation(value: GeoPoint): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: GeoPoint): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationDescription(value: String): Self = StObject.set(x, "locationDescription", value.asInstanceOf[js.Any])
+    inline def setLocationDescription(value: String): Self = StObject.set(x, "locationDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationDescriptionUndefined: Self = StObject.set(x, "locationDescription", js.undefined)
+    inline def setLocationDescriptionUndefined: Self = StObject.set(x, "locationDescription", js.undefined)
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setRecordingDate(value: String): Self = StObject.set(x, "recordingDate", value.asInstanceOf[js.Any])
+    inline def setRecordingDate(value: String): Self = StObject.set(x, "recordingDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordingDateUndefined: Self = StObject.set(x, "recordingDate", js.undefined)
+    inline def setRecordingDateUndefined: Self = StObject.set(x, "recordingDate", js.undefined)
   }
 }

@@ -48,61 +48,43 @@ trait GetRandomPasswordRequest extends StObject {
 }
 object GetRandomPasswordRequest {
   
-  @scala.inline
-  def apply(): GetRandomPasswordRequest = {
+  inline def apply(): GetRandomPasswordRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetRandomPasswordRequest]
   }
   
-  @scala.inline
-  implicit class GetRandomPasswordRequestMutableBuilder[Self <: GetRandomPasswordRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetRandomPasswordRequest](x: Self) {
     
-    @scala.inline
-    def setExcludeCharacters(value: ExcludeCharactersType): Self = StObject.set(x, "ExcludeCharacters", value.asInstanceOf[js.Any])
+    inline def setExcludeCharacters(value: ExcludeCharactersType): Self = StObject.set(x, "ExcludeCharacters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeCharactersUndefined: Self = StObject.set(x, "ExcludeCharacters", js.undefined)
+    inline def setExcludeCharactersUndefined: Self = StObject.set(x, "ExcludeCharacters", js.undefined)
     
-    @scala.inline
-    def setExcludeLowercase(value: ExcludeLowercaseType): Self = StObject.set(x, "ExcludeLowercase", value.asInstanceOf[js.Any])
+    inline def setExcludeLowercase(value: ExcludeLowercaseType): Self = StObject.set(x, "ExcludeLowercase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeLowercaseUndefined: Self = StObject.set(x, "ExcludeLowercase", js.undefined)
+    inline def setExcludeLowercaseUndefined: Self = StObject.set(x, "ExcludeLowercase", js.undefined)
     
-    @scala.inline
-    def setExcludeNumbers(value: ExcludeNumbersType): Self = StObject.set(x, "ExcludeNumbers", value.asInstanceOf[js.Any])
+    inline def setExcludeNumbers(value: ExcludeNumbersType): Self = StObject.set(x, "ExcludeNumbers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeNumbersUndefined: Self = StObject.set(x, "ExcludeNumbers", js.undefined)
+    inline def setExcludeNumbersUndefined: Self = StObject.set(x, "ExcludeNumbers", js.undefined)
     
-    @scala.inline
-    def setExcludePunctuation(value: ExcludePunctuationType): Self = StObject.set(x, "ExcludePunctuation", value.asInstanceOf[js.Any])
+    inline def setExcludePunctuation(value: ExcludePunctuationType): Self = StObject.set(x, "ExcludePunctuation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludePunctuationUndefined: Self = StObject.set(x, "ExcludePunctuation", js.undefined)
+    inline def setExcludePunctuationUndefined: Self = StObject.set(x, "ExcludePunctuation", js.undefined)
     
-    @scala.inline
-    def setExcludeUppercase(value: ExcludeUppercaseType): Self = StObject.set(x, "ExcludeUppercase", value.asInstanceOf[js.Any])
+    inline def setExcludeUppercase(value: ExcludeUppercaseType): Self = StObject.set(x, "ExcludeUppercase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeUppercaseUndefined: Self = StObject.set(x, "ExcludeUppercase", js.undefined)
+    inline def setExcludeUppercaseUndefined: Self = StObject.set(x, "ExcludeUppercase", js.undefined)
     
-    @scala.inline
-    def setIncludeSpace(value: IncludeSpaceType): Self = StObject.set(x, "IncludeSpace", value.asInstanceOf[js.Any])
+    inline def setIncludeSpace(value: IncludeSpaceType): Self = StObject.set(x, "IncludeSpace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeSpaceUndefined: Self = StObject.set(x, "IncludeSpace", js.undefined)
+    inline def setIncludeSpaceUndefined: Self = StObject.set(x, "IncludeSpace", js.undefined)
     
-    @scala.inline
-    def setPasswordLength(value: PasswordLengthType): Self = StObject.set(x, "PasswordLength", value.asInstanceOf[js.Any])
+    inline def setPasswordLength(value: PasswordLengthType): Self = StObject.set(x, "PasswordLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordLengthUndefined: Self = StObject.set(x, "PasswordLength", js.undefined)
+    inline def setPasswordLengthUndefined: Self = StObject.set(x, "PasswordLength", js.undefined)
     
-    @scala.inline
-    def setRequireEachIncludedType(value: RequireEachIncludedTypeType): Self = StObject.set(x, "RequireEachIncludedType", value.asInstanceOf[js.Any])
+    inline def setRequireEachIncludedType(value: RequireEachIncludedTypeType): Self = StObject.set(x, "RequireEachIncludedType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequireEachIncludedTypeUndefined: Self = StObject.set(x, "RequireEachIncludedType", js.undefined)
+    inline def setRequireEachIncludedTypeUndefined: Self = StObject.set(x, "RequireEachIncludedType", js.undefined)
   }
 }

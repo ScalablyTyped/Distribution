@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait COpsProfile extends StObject {
   
-  @JSName("MSHTML.COpsProfile_typekey")
+  /* private */ @JSName("MSHTML.COpsProfile_typekey")
   var MSHTMLDotCOpsProfile_typekey: COpsProfile = js.native
   
   def addReadRequest(name: String): Boolean = js.native

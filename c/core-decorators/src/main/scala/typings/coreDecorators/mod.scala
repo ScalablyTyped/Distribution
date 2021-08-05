@@ -18,8 +18,7 @@ object mod {
   @js.native
   val autobind: js.Function = js.native
   
-  @scala.inline
-  def decorate(func: js.Function, args: js.Any*): MethodDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(func.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[MethodDecorator]
+  inline def decorate(func: js.Function, args: js.Any*): MethodDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(func.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[MethodDecorator]
   
   @JSImport("core-decorators", "deprecate")
   @js.native
@@ -57,10 +56,8 @@ object mod {
   @js.native
   val suppressWarnings: MethodDecorator = js.native
   
-  @scala.inline
-  def time(label: String): MethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("time")(label.asInstanceOf[js.Any]).asInstanceOf[MethodDecorator]
-  @scala.inline
-  def time(label: String, console: Console): MethodDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("time")(label.asInstanceOf[js.Any], console.asInstanceOf[js.Any])).asInstanceOf[MethodDecorator]
+  inline def time(label: String): MethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("time")(label.asInstanceOf[js.Any]).asInstanceOf[MethodDecorator]
+  inline def time(label: String, console: Console): MethodDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("time")(label.asInstanceOf[js.Any], console.asInstanceOf[js.Any])).asInstanceOf[MethodDecorator]
   
   trait DeprecateOption extends StObject {
     
@@ -68,17 +65,14 @@ object mod {
   }
   object DeprecateOption {
     
-    @scala.inline
-    def apply(url: String): DeprecateOption = {
+    inline def apply(url: String): DeprecateOption = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeprecateOption]
     }
     
-    @scala.inline
-    implicit class DeprecateOptionMutableBuilder[Self <: DeprecateOption] (val x: Self) extends AnyVal {
+    extension [Self <: DeprecateOption](x: Self) {
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   

@@ -16,31 +16,23 @@ trait UserScriptable
 }
 object UserScriptable {
   
-  @scala.inline
-  def apply(id: String): UserScriptable = {
+  inline def apply(id: String): UserScriptable = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserScriptable]
   }
   
-  @scala.inline
-  implicit class UserScriptableMutableBuilder[Self <: UserScriptable] (val x: Self) extends AnyVal {
+  extension [Self <: UserScriptable](x: Self) {
     
-    @scala.inline
-    def setBody(value: UserFunction): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: UserFunction): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyFunction1(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "body", js.Any.fromFunction1(value))
+    inline def setBodyFunction1(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "body", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setServerScript(value: UserFunction): Self = StObject.set(x, "serverScript", value.asInstanceOf[js.Any])
+    inline def setServerScript(value: UserFunction): Self = StObject.set(x, "serverScript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerScriptFunction1(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "serverScript", js.Any.fromFunction1(value))
+    inline def setServerScriptFunction1(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "serverScript", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setServerScriptUndefined: Self = StObject.set(x, "serverScript", js.undefined)
+    inline def setServerScriptUndefined: Self = StObject.set(x, "serverScript", js.undefined)
   }
 }

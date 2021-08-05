@@ -30,16 +30,14 @@ object i18n {
     * @param callback
     * @since Chrome 47.
     */
-  @scala.inline
-  def detectLanguage(text: String, callback: js.Function1[/* result */ LanguageDetectionResult, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detectLanguage")(text.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def detectLanguage(text: String, callback: js.Function1[/* result */ LanguageDetectionResult, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detectLanguage")(text.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Gets the accept-languages of the browser.
     * This is different from the locale used by the browser;
     * to get the locale, use i18n.getUILanguage.
     */
-  @scala.inline
-  def getAcceptLanguages(callback: js.Function1[/* languages */ js.Array[LanguageCode], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAcceptLanguages")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def getAcceptLanguages(callback: js.Function1[/* languages */ js.Array[LanguageCode], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAcceptLanguages")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Gets the localized string for the specified message.
@@ -51,16 +49,13 @@ object i18n {
     * @param messageName The name of the message, as specified in the messages.json file.
     * @param substitutions Up to 9 substitution strings, if the message requires any.
     */
-  @scala.inline
-  def getMessage(messageName: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMessage")(messageName.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
-  @scala.inline
-  def getMessage(messageName: String, substitutions: StringSubstitutions): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMessage")(messageName.asInstanceOf[js.Any], substitutions.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  inline def getMessage(messageName: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMessage")(messageName.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def getMessage(messageName: String, substitutions: StringSubstitutions): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMessage")(messageName.asInstanceOf[js.Any], substitutions.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
   
   /**
     * Gets the browser UI language of the browser.
     * This is different from i18n.getAcceptLanguages which returns the preferred user languages.
     * @since Chrome 35.
     */
-  @scala.inline
-  def getUILanguage(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUILanguage")().asInstanceOf[String]
+  inline def getUILanguage(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUILanguage")().asInstanceOf[String]
 }

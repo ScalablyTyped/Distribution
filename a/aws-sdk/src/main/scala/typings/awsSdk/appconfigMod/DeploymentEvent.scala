@@ -28,37 +28,27 @@ trait DeploymentEvent extends StObject {
 }
 object DeploymentEvent {
   
-  @scala.inline
-  def apply(): DeploymentEvent = {
+  inline def apply(): DeploymentEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeploymentEvent]
   }
   
-  @scala.inline
-  implicit class DeploymentEventMutableBuilder[Self <: DeploymentEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentEvent](x: Self) {
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setEventType(value: DeploymentEventType): Self = StObject.set(x, "EventType", value.asInstanceOf[js.Any])
+    inline def setEventType(value: DeploymentEventType): Self = StObject.set(x, "EventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTypeUndefined: Self = StObject.set(x, "EventType", js.undefined)
+    inline def setEventTypeUndefined: Self = StObject.set(x, "EventType", js.undefined)
     
-    @scala.inline
-    def setOccurredAt(value: Iso8601DateTime): Self = StObject.set(x, "OccurredAt", value.asInstanceOf[js.Any])
+    inline def setOccurredAt(value: Iso8601DateTime): Self = StObject.set(x, "OccurredAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOccurredAtUndefined: Self = StObject.set(x, "OccurredAt", js.undefined)
+    inline def setOccurredAtUndefined: Self = StObject.set(x, "OccurredAt", js.undefined)
     
-    @scala.inline
-    def setTriggeredBy(value: TriggeredBy): Self = StObject.set(x, "TriggeredBy", value.asInstanceOf[js.Any])
+    inline def setTriggeredBy(value: TriggeredBy): Self = StObject.set(x, "TriggeredBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggeredByUndefined: Self = StObject.set(x, "TriggeredBy", js.undefined)
+    inline def setTriggeredByUndefined: Self = StObject.set(x, "TriggeredBy", js.undefined)
   }
 }

@@ -38,7 +38,7 @@ object nodeEnvMod {
     /* CompleteClass */
     override def isWindowExists(uuid: String, name: String): Boolean = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var messageCounter: js.Any = js.native
     
     /* CompleteClass */
@@ -55,12 +55,11 @@ object nodeEnvMod {
     extends StObject
        with Environment {
     
-    var messageCounter: js.Any
+    /* private */ var messageCounter: js.Any
   }
   object NodeEnvironment {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       createChildWindow: js.Any => js.Promise[js.Any],
       getCurrentEntityIdentity: () => Identity,
       getCurrentEntityType: () => EntityType,
@@ -77,11 +76,9 @@ object nodeEnvMod {
       __obj.asInstanceOf[NodeEnvironment]
     }
     
-    @scala.inline
-    implicit class NodeEnvironmentMutableBuilder[Self <: NodeEnvironment] (val x: Self) extends AnyVal {
+    extension [Self <: NodeEnvironment](x: Self) {
       
-      @scala.inline
-      def setMessageCounter(value: js.Any): Self = StObject.set(x, "messageCounter", value.asInstanceOf[js.Any])
+      inline def setMessageCounter(value: js.Any): Self = StObject.set(x, "messageCounter", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -55,8 +55,7 @@ trait CreateNetworkProfileRequest extends StObject {
 }
 object CreateNetworkProfileRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ClientRequestToken: ClientRequestToken,
     NetworkProfileName: NetworkProfileName,
     SecurityType: NetworkSecurityType,
@@ -66,58 +65,40 @@ object CreateNetworkProfileRequest {
     __obj.asInstanceOf[CreateNetworkProfileRequest]
   }
   
-  @scala.inline
-  implicit class CreateNetworkProfileRequestMutableBuilder[Self <: CreateNetworkProfileRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateNetworkProfileRequest](x: Self) {
     
-    @scala.inline
-    def setCertificateAuthorityArn(value: Arn): Self = StObject.set(x, "CertificateAuthorityArn", value.asInstanceOf[js.Any])
+    inline def setCertificateAuthorityArn(value: Arn): Self = StObject.set(x, "CertificateAuthorityArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateAuthorityArnUndefined: Self = StObject.set(x, "CertificateAuthorityArn", js.undefined)
+    inline def setCertificateAuthorityArnUndefined: Self = StObject.set(x, "CertificateAuthorityArn", js.undefined)
     
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentPassword(value: CurrentWiFiPassword): Self = StObject.set(x, "CurrentPassword", value.asInstanceOf[js.Any])
+    inline def setCurrentPassword(value: CurrentWiFiPassword): Self = StObject.set(x, "CurrentPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentPasswordUndefined: Self = StObject.set(x, "CurrentPassword", js.undefined)
+    inline def setCurrentPasswordUndefined: Self = StObject.set(x, "CurrentPassword", js.undefined)
     
-    @scala.inline
-    def setDescription(value: NetworkProfileDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: NetworkProfileDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setEapMethod(value: NetworkEapMethod): Self = StObject.set(x, "EapMethod", value.asInstanceOf[js.Any])
+    inline def setEapMethod(value: NetworkEapMethod): Self = StObject.set(x, "EapMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEapMethodUndefined: Self = StObject.set(x, "EapMethod", js.undefined)
+    inline def setEapMethodUndefined: Self = StObject.set(x, "EapMethod", js.undefined)
     
-    @scala.inline
-    def setNetworkProfileName(value: NetworkProfileName): Self = StObject.set(x, "NetworkProfileName", value.asInstanceOf[js.Any])
+    inline def setNetworkProfileName(value: NetworkProfileName): Self = StObject.set(x, "NetworkProfileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPassword(value: NextWiFiPassword): Self = StObject.set(x, "NextPassword", value.asInstanceOf[js.Any])
+    inline def setNextPassword(value: NextWiFiPassword): Self = StObject.set(x, "NextPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPasswordUndefined: Self = StObject.set(x, "NextPassword", js.undefined)
+    inline def setNextPasswordUndefined: Self = StObject.set(x, "NextPassword", js.undefined)
     
-    @scala.inline
-    def setSecurityType(value: NetworkSecurityType): Self = StObject.set(x, "SecurityType", value.asInstanceOf[js.Any])
+    inline def setSecurityType(value: NetworkSecurityType): Self = StObject.set(x, "SecurityType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsid(value: NetworkSsid): Self = StObject.set(x, "Ssid", value.asInstanceOf[js.Any])
+    inline def setSsid(value: NetworkSsid): Self = StObject.set(x, "Ssid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrustAnchors(value: TrustAnchorList): Self = StObject.set(x, "TrustAnchors", value.asInstanceOf[js.Any])
+    inline def setTrustAnchors(value: TrustAnchorList): Self = StObject.set(x, "TrustAnchors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrustAnchorsUndefined: Self = StObject.set(x, "TrustAnchors", js.undefined)
+    inline def setTrustAnchorsUndefined: Self = StObject.set(x, "TrustAnchors", js.undefined)
     
-    @scala.inline
-    def setTrustAnchorsVarargs(value: TrustAnchor*): Self = StObject.set(x, "TrustAnchors", js.Array(value :_*))
+    inline def setTrustAnchorsVarargs(value: TrustAnchor*): Self = StObject.set(x, "TrustAnchors", js.Array(value :_*))
   }
 }

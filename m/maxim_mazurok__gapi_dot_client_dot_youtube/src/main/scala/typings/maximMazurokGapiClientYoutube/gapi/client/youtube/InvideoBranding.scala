@@ -23,43 +23,31 @@ trait InvideoBranding extends StObject {
 }
 object InvideoBranding {
   
-  @scala.inline
-  def apply(): InvideoBranding = {
+  inline def apply(): InvideoBranding = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InvideoBranding]
   }
   
-  @scala.inline
-  implicit class InvideoBrandingMutableBuilder[Self <: InvideoBranding] (val x: Self) extends AnyVal {
+  extension [Self <: InvideoBranding](x: Self) {
     
-    @scala.inline
-    def setImageBytes(value: String): Self = StObject.set(x, "imageBytes", value.asInstanceOf[js.Any])
+    inline def setImageBytes(value: String): Self = StObject.set(x, "imageBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageBytesUndefined: Self = StObject.set(x, "imageBytes", js.undefined)
+    inline def setImageBytesUndefined: Self = StObject.set(x, "imageBytes", js.undefined)
     
-    @scala.inline
-    def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
+    inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
+    inline def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
     
-    @scala.inline
-    def setPosition(value: InvideoPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: InvideoPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setTargetChannelId(value: String): Self = StObject.set(x, "targetChannelId", value.asInstanceOf[js.Any])
+    inline def setTargetChannelId(value: String): Self = StObject.set(x, "targetChannelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetChannelIdUndefined: Self = StObject.set(x, "targetChannelId", js.undefined)
+    inline def setTargetChannelIdUndefined: Self = StObject.set(x, "targetChannelId", js.undefined)
     
-    @scala.inline
-    def setTiming(value: InvideoTiming): Self = StObject.set(x, "timing", value.asInstanceOf[js.Any])
+    inline def setTiming(value: InvideoTiming): Self = StObject.set(x, "timing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimingUndefined: Self = StObject.set(x, "timing", js.undefined)
+    inline def setTimingUndefined: Self = StObject.set(x, "timing", js.undefined)
   }
 }

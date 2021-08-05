@@ -175,8 +175,7 @@ trait ServerInfo
 }
 object ServerInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     connectionBandwidthReceivedLastMinuteTotal: Double,
     connectionBandwidthReceivedLastSecondTotal: Double,
     connectionBandwidthSentLastMinuteTotal: Double,
@@ -264,253 +263,170 @@ object ServerInfo {
     __obj.asInstanceOf[ServerInfo]
   }
   
-  @scala.inline
-  implicit class ServerInfoMutableBuilder[Self <: ServerInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ServerInfo](x: Self) {
     
-    @scala.inline
-    def setConnectionBandwidthReceivedLastMinuteTotal(value: Double): Self = StObject.set(x, "connectionBandwidthReceivedLastMinuteTotal", value.asInstanceOf[js.Any])
+    inline def setConnectionBandwidthReceivedLastMinuteTotal(value: Double): Self = StObject.set(x, "connectionBandwidthReceivedLastMinuteTotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionBandwidthReceivedLastSecondTotal(value: Double): Self = StObject.set(x, "connectionBandwidthReceivedLastSecondTotal", value.asInstanceOf[js.Any])
+    inline def setConnectionBandwidthReceivedLastSecondTotal(value: Double): Self = StObject.set(x, "connectionBandwidthReceivedLastSecondTotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionBandwidthSentLastMinuteTotal(value: Double): Self = StObject.set(x, "connectionBandwidthSentLastMinuteTotal", value.asInstanceOf[js.Any])
+    inline def setConnectionBandwidthSentLastMinuteTotal(value: Double): Self = StObject.set(x, "connectionBandwidthSentLastMinuteTotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionBandwidthSentLastSecondTotal(value: Double): Self = StObject.set(x, "connectionBandwidthSentLastSecondTotal", value.asInstanceOf[js.Any])
+    inline def setConnectionBandwidthSentLastSecondTotal(value: Double): Self = StObject.set(x, "connectionBandwidthSentLastSecondTotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionBytesReceivedControl(value: Double): Self = StObject.set(x, "connectionBytesReceivedControl", value.asInstanceOf[js.Any])
+    inline def setConnectionBytesReceivedControl(value: Double): Self = StObject.set(x, "connectionBytesReceivedControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionBytesReceivedKeepalive(value: Double): Self = StObject.set(x, "connectionBytesReceivedKeepalive", value.asInstanceOf[js.Any])
+    inline def setConnectionBytesReceivedKeepalive(value: Double): Self = StObject.set(x, "connectionBytesReceivedKeepalive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionBytesReceivedSpeech(value: Double): Self = StObject.set(x, "connectionBytesReceivedSpeech", value.asInstanceOf[js.Any])
+    inline def setConnectionBytesReceivedSpeech(value: Double): Self = StObject.set(x, "connectionBytesReceivedSpeech", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionBytesReceivedTotal(value: Double): Self = StObject.set(x, "connectionBytesReceivedTotal", value.asInstanceOf[js.Any])
+    inline def setConnectionBytesReceivedTotal(value: Double): Self = StObject.set(x, "connectionBytesReceivedTotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionBytesSentControl(value: Double): Self = StObject.set(x, "connectionBytesSentControl", value.asInstanceOf[js.Any])
+    inline def setConnectionBytesSentControl(value: Double): Self = StObject.set(x, "connectionBytesSentControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionBytesSentKeepalive(value: Double): Self = StObject.set(x, "connectionBytesSentKeepalive", value.asInstanceOf[js.Any])
+    inline def setConnectionBytesSentKeepalive(value: Double): Self = StObject.set(x, "connectionBytesSentKeepalive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionBytesSentSpeech(value: Double): Self = StObject.set(x, "connectionBytesSentSpeech", value.asInstanceOf[js.Any])
+    inline def setConnectionBytesSentSpeech(value: Double): Self = StObject.set(x, "connectionBytesSentSpeech", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionBytesSentTotal(value: Double): Self = StObject.set(x, "connectionBytesSentTotal", value.asInstanceOf[js.Any])
+    inline def setConnectionBytesSentTotal(value: Double): Self = StObject.set(x, "connectionBytesSentTotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionFiletransferBandwidthReceived(value: Double): Self = StObject.set(x, "connectionFiletransferBandwidthReceived", value.asInstanceOf[js.Any])
+    inline def setConnectionFiletransferBandwidthReceived(value: Double): Self = StObject.set(x, "connectionFiletransferBandwidthReceived", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionFiletransferBandwidthSent(value: Double): Self = StObject.set(x, "connectionFiletransferBandwidthSent", value.asInstanceOf[js.Any])
+    inline def setConnectionFiletransferBandwidthSent(value: Double): Self = StObject.set(x, "connectionFiletransferBandwidthSent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionFiletransferBytesReceivedTotal(value: Double): Self = StObject.set(x, "connectionFiletransferBytesReceivedTotal", value.asInstanceOf[js.Any])
+    inline def setConnectionFiletransferBytesReceivedTotal(value: Double): Self = StObject.set(x, "connectionFiletransferBytesReceivedTotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionFiletransferBytesSentTotal(value: Double): Self = StObject.set(x, "connectionFiletransferBytesSentTotal", value.asInstanceOf[js.Any])
+    inline def setConnectionFiletransferBytesSentTotal(value: Double): Self = StObject.set(x, "connectionFiletransferBytesSentTotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionPacketsReceivedControl(value: Double): Self = StObject.set(x, "connectionPacketsReceivedControl", value.asInstanceOf[js.Any])
+    inline def setConnectionPacketsReceivedControl(value: Double): Self = StObject.set(x, "connectionPacketsReceivedControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionPacketsReceivedKeepalive(value: Double): Self = StObject.set(x, "connectionPacketsReceivedKeepalive", value.asInstanceOf[js.Any])
+    inline def setConnectionPacketsReceivedKeepalive(value: Double): Self = StObject.set(x, "connectionPacketsReceivedKeepalive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionPacketsReceivedSpeech(value: Double): Self = StObject.set(x, "connectionPacketsReceivedSpeech", value.asInstanceOf[js.Any])
+    inline def setConnectionPacketsReceivedSpeech(value: Double): Self = StObject.set(x, "connectionPacketsReceivedSpeech", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionPacketsReceivedTotal(value: Double): Self = StObject.set(x, "connectionPacketsReceivedTotal", value.asInstanceOf[js.Any])
+    inline def setConnectionPacketsReceivedTotal(value: Double): Self = StObject.set(x, "connectionPacketsReceivedTotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionPacketsSentControl(value: Double): Self = StObject.set(x, "connectionPacketsSentControl", value.asInstanceOf[js.Any])
+    inline def setConnectionPacketsSentControl(value: Double): Self = StObject.set(x, "connectionPacketsSentControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionPacketsSentKeepalive(value: Double): Self = StObject.set(x, "connectionPacketsSentKeepalive", value.asInstanceOf[js.Any])
+    inline def setConnectionPacketsSentKeepalive(value: Double): Self = StObject.set(x, "connectionPacketsSentKeepalive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionPacketsSentSpeech(value: Double): Self = StObject.set(x, "connectionPacketsSentSpeech", value.asInstanceOf[js.Any])
+    inline def setConnectionPacketsSentSpeech(value: Double): Self = StObject.set(x, "connectionPacketsSentSpeech", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionPacketsSentTotal(value: Double): Self = StObject.set(x, "connectionPacketsSentTotal", value.asInstanceOf[js.Any])
+    inline def setConnectionPacketsSentTotal(value: Double): Self = StObject.set(x, "connectionPacketsSentTotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverAntifloodPointsNeededCommandBlock(value: Double): Self = StObject.set(x, "virtualserverAntifloodPointsNeededCommandBlock", value.asInstanceOf[js.Any])
+    inline def setVirtualserverAntifloodPointsNeededCommandBlock(value: Double): Self = StObject.set(x, "virtualserverAntifloodPointsNeededCommandBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverAntifloodPointsNeededIpBlock(value: Double): Self = StObject.set(x, "virtualserverAntifloodPointsNeededIpBlock", value.asInstanceOf[js.Any])
+    inline def setVirtualserverAntifloodPointsNeededIpBlock(value: Double): Self = StObject.set(x, "virtualserverAntifloodPointsNeededIpBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverAntifloodPointsNeededPluginBlock(value: Double): Self = StObject.set(x, "virtualserverAntifloodPointsNeededPluginBlock", value.asInstanceOf[js.Any])
+    inline def setVirtualserverAntifloodPointsNeededPluginBlock(value: Double): Self = StObject.set(x, "virtualserverAntifloodPointsNeededPluginBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverAntifloodPointsTickReduce(value: Double): Self = StObject.set(x, "virtualserverAntifloodPointsTickReduce", value.asInstanceOf[js.Any])
+    inline def setVirtualserverAntifloodPointsTickReduce(value: Double): Self = StObject.set(x, "virtualserverAntifloodPointsTickReduce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverChannelTempDeleteDelayDefault(value: Double): Self = StObject.set(x, "virtualserverChannelTempDeleteDelayDefault", value.asInstanceOf[js.Any])
+    inline def setVirtualserverChannelTempDeleteDelayDefault(value: Double): Self = StObject.set(x, "virtualserverChannelTempDeleteDelayDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverChannelsonline(value: Double): Self = StObject.set(x, "virtualserverChannelsonline", value.asInstanceOf[js.Any])
+    inline def setVirtualserverChannelsonline(value: Double): Self = StObject.set(x, "virtualserverChannelsonline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverClientsonline(value: Double): Self = StObject.set(x, "virtualserverClientsonline", value.asInstanceOf[js.Any])
+    inline def setVirtualserverClientsonline(value: Double): Self = StObject.set(x, "virtualserverClientsonline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverCodecEncryptionMode(value: Double): Self = StObject.set(x, "virtualserverCodecEncryptionMode", value.asInstanceOf[js.Any])
+    inline def setVirtualserverCodecEncryptionMode(value: Double): Self = StObject.set(x, "virtualserverCodecEncryptionMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverComplainAutobanCount(value: Double): Self = StObject.set(x, "virtualserverComplainAutobanCount", value.asInstanceOf[js.Any])
+    inline def setVirtualserverComplainAutobanCount(value: Double): Self = StObject.set(x, "virtualserverComplainAutobanCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverComplainAutobanTime(value: Double): Self = StObject.set(x, "virtualserverComplainAutobanTime", value.asInstanceOf[js.Any])
+    inline def setVirtualserverComplainAutobanTime(value: Double): Self = StObject.set(x, "virtualserverComplainAutobanTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverComplainRemoveTime(value: Double): Self = StObject.set(x, "virtualserverComplainRemoveTime", value.asInstanceOf[js.Any])
+    inline def setVirtualserverComplainRemoveTime(value: Double): Self = StObject.set(x, "virtualserverComplainRemoveTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverCreated(value: Double): Self = StObject.set(x, "virtualserverCreated", value.asInstanceOf[js.Any])
+    inline def setVirtualserverCreated(value: Double): Self = StObject.set(x, "virtualserverCreated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverDefaultChannelAdminGroup(value: String): Self = StObject.set(x, "virtualserverDefaultChannelAdminGroup", value.asInstanceOf[js.Any])
+    inline def setVirtualserverDefaultChannelAdminGroup(value: String): Self = StObject.set(x, "virtualserverDefaultChannelAdminGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverDefaultChannelGroup(value: String): Self = StObject.set(x, "virtualserverDefaultChannelGroup", value.asInstanceOf[js.Any])
+    inline def setVirtualserverDefaultChannelGroup(value: String): Self = StObject.set(x, "virtualserverDefaultChannelGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverDefaultServerGroup(value: String): Self = StObject.set(x, "virtualserverDefaultServerGroup", value.asInstanceOf[js.Any])
+    inline def setVirtualserverDefaultServerGroup(value: String): Self = StObject.set(x, "virtualserverDefaultServerGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverDownloadQuota(value: Double): Self = StObject.set(x, "virtualserverDownloadQuota", value.asInstanceOf[js.Any])
+    inline def setVirtualserverDownloadQuota(value: Double): Self = StObject.set(x, "virtualserverDownloadQuota", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverFilebase(value: String): Self = StObject.set(x, "virtualserverFilebase", value.asInstanceOf[js.Any])
+    inline def setVirtualserverFilebase(value: String): Self = StObject.set(x, "virtualserverFilebase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverFlagPassword(value: Boolean): Self = StObject.set(x, "virtualserverFlagPassword", value.asInstanceOf[js.Any])
+    inline def setVirtualserverFlagPassword(value: Boolean): Self = StObject.set(x, "virtualserverFlagPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverHostbannerGfxInterval(value: Double): Self = StObject.set(x, "virtualserverHostbannerGfxInterval", value.asInstanceOf[js.Any])
+    inline def setVirtualserverHostbannerGfxInterval(value: Double): Self = StObject.set(x, "virtualserverHostbannerGfxInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverHostbannerGfxUrl(value: String): Self = StObject.set(x, "virtualserverHostbannerGfxUrl", value.asInstanceOf[js.Any])
+    inline def setVirtualserverHostbannerGfxUrl(value: String): Self = StObject.set(x, "virtualserverHostbannerGfxUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverHostbannerMode(value: Double): Self = StObject.set(x, "virtualserverHostbannerMode", value.asInstanceOf[js.Any])
+    inline def setVirtualserverHostbannerMode(value: Double): Self = StObject.set(x, "virtualserverHostbannerMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverHostbannerUrl(value: String): Self = StObject.set(x, "virtualserverHostbannerUrl", value.asInstanceOf[js.Any])
+    inline def setVirtualserverHostbannerUrl(value: String): Self = StObject.set(x, "virtualserverHostbannerUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverHostbuttonGfxUrl(value: String): Self = StObject.set(x, "virtualserverHostbuttonGfxUrl", value.asInstanceOf[js.Any])
+    inline def setVirtualserverHostbuttonGfxUrl(value: String): Self = StObject.set(x, "virtualserverHostbuttonGfxUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverHostbuttonTooltip(value: String): Self = StObject.set(x, "virtualserverHostbuttonTooltip", value.asInstanceOf[js.Any])
+    inline def setVirtualserverHostbuttonTooltip(value: String): Self = StObject.set(x, "virtualserverHostbuttonTooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverHostbuttonUrl(value: String): Self = StObject.set(x, "virtualserverHostbuttonUrl", value.asInstanceOf[js.Any])
+    inline def setVirtualserverHostbuttonUrl(value: String): Self = StObject.set(x, "virtualserverHostbuttonUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverHostmessage(value: String): Self = StObject.set(x, "virtualserverHostmessage", value.asInstanceOf[js.Any])
+    inline def setVirtualserverHostmessage(value: String): Self = StObject.set(x, "virtualserverHostmessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverHostmessageMode(value: Double): Self = StObject.set(x, "virtualserverHostmessageMode", value.asInstanceOf[js.Any])
+    inline def setVirtualserverHostmessageMode(value: Double): Self = StObject.set(x, "virtualserverHostmessageMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverIconId(value: String): Self = StObject.set(x, "virtualserverIconId", value.asInstanceOf[js.Any])
+    inline def setVirtualserverIconId(value: String): Self = StObject.set(x, "virtualserverIconId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverLogChannel(value: Double): Self = StObject.set(x, "virtualserverLogChannel", value.asInstanceOf[js.Any])
+    inline def setVirtualserverLogChannel(value: Double): Self = StObject.set(x, "virtualserverLogChannel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverLogClient(value: Double): Self = StObject.set(x, "virtualserverLogClient", value.asInstanceOf[js.Any])
+    inline def setVirtualserverLogClient(value: Double): Self = StObject.set(x, "virtualserverLogClient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverLogFiletransfer(value: Double): Self = StObject.set(x, "virtualserverLogFiletransfer", value.asInstanceOf[js.Any])
+    inline def setVirtualserverLogFiletransfer(value: Double): Self = StObject.set(x, "virtualserverLogFiletransfer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverLogPermissions(value: Double): Self = StObject.set(x, "virtualserverLogPermissions", value.asInstanceOf[js.Any])
+    inline def setVirtualserverLogPermissions(value: Double): Self = StObject.set(x, "virtualserverLogPermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverLogQuery(value: Double): Self = StObject.set(x, "virtualserverLogQuery", value.asInstanceOf[js.Any])
+    inline def setVirtualserverLogQuery(value: Double): Self = StObject.set(x, "virtualserverLogQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverLogServer(value: Double): Self = StObject.set(x, "virtualserverLogServer", value.asInstanceOf[js.Any])
+    inline def setVirtualserverLogServer(value: Double): Self = StObject.set(x, "virtualserverLogServer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverMaxDownloadTotalBandwidth(value: Double): Self = StObject.set(x, "virtualserverMaxDownloadTotalBandwidth", value.asInstanceOf[js.Any])
+    inline def setVirtualserverMaxDownloadTotalBandwidth(value: Double): Self = StObject.set(x, "virtualserverMaxDownloadTotalBandwidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverMaxUploadTotalBandwidth(value: Double): Self = StObject.set(x, "virtualserverMaxUploadTotalBandwidth", value.asInstanceOf[js.Any])
+    inline def setVirtualserverMaxUploadTotalBandwidth(value: Double): Self = StObject.set(x, "virtualserverMaxUploadTotalBandwidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverMaxclients(value: Double): Self = StObject.set(x, "virtualserverMaxclients", value.asInstanceOf[js.Any])
+    inline def setVirtualserverMaxclients(value: Double): Self = StObject.set(x, "virtualserverMaxclients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverMinAndroidVersion(value: Double): Self = StObject.set(x, "virtualserverMinAndroidVersion", value.asInstanceOf[js.Any])
+    inline def setVirtualserverMinAndroidVersion(value: Double): Self = StObject.set(x, "virtualserverMinAndroidVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverMinClientVersion(value: Double): Self = StObject.set(x, "virtualserverMinClientVersion", value.asInstanceOf[js.Any])
+    inline def setVirtualserverMinClientVersion(value: Double): Self = StObject.set(x, "virtualserverMinClientVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverMinClientsInChannelBeforeForcedSilence(value: Double): Self = StObject.set(x, "virtualserverMinClientsInChannelBeforeForcedSilence", value.asInstanceOf[js.Any])
+    inline def setVirtualserverMinClientsInChannelBeforeForcedSilence(value: Double): Self = StObject.set(x, "virtualserverMinClientsInChannelBeforeForcedSilence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverMinIosVersion(value: Double): Self = StObject.set(x, "virtualserverMinIosVersion", value.asInstanceOf[js.Any])
+    inline def setVirtualserverMinIosVersion(value: Double): Self = StObject.set(x, "virtualserverMinIosVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverName(value: String): Self = StObject.set(x, "virtualserverName", value.asInstanceOf[js.Any])
+    inline def setVirtualserverName(value: String): Self = StObject.set(x, "virtualserverName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverNamePhonetic(value: String): Self = StObject.set(x, "virtualserverNamePhonetic", value.asInstanceOf[js.Any])
+    inline def setVirtualserverNamePhonetic(value: String): Self = StObject.set(x, "virtualserverNamePhonetic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverNeededIdentitySecurityLevel(value: Double): Self = StObject.set(x, "virtualserverNeededIdentitySecurityLevel", value.asInstanceOf[js.Any])
+    inline def setVirtualserverNeededIdentitySecurityLevel(value: Double): Self = StObject.set(x, "virtualserverNeededIdentitySecurityLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverNickname(value: String): Self = StObject.set(x, "virtualserverNickname", value.asInstanceOf[js.Any])
+    inline def setVirtualserverNickname(value: String): Self = StObject.set(x, "virtualserverNickname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverPassword(value: String): Self = StObject.set(x, "virtualserverPassword", value.asInstanceOf[js.Any])
+    inline def setVirtualserverPassword(value: String): Self = StObject.set(x, "virtualserverPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverPrioritySpeakerDimmModificator(value: Double): Self = StObject.set(x, "virtualserverPrioritySpeakerDimmModificator", value.asInstanceOf[js.Any])
+    inline def setVirtualserverPrioritySpeakerDimmModificator(value: Double): Self = StObject.set(x, "virtualserverPrioritySpeakerDimmModificator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverQueryclientsonline(value: Double): Self = StObject.set(x, "virtualserverQueryclientsonline", value.asInstanceOf[js.Any])
+    inline def setVirtualserverQueryclientsonline(value: Double): Self = StObject.set(x, "virtualserverQueryclientsonline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverReservedSlots(value: Double): Self = StObject.set(x, "virtualserverReservedSlots", value.asInstanceOf[js.Any])
+    inline def setVirtualserverReservedSlots(value: Double): Self = StObject.set(x, "virtualserverReservedSlots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverStatus(value: String): Self = StObject.set(x, "virtualserverStatus", value.asInstanceOf[js.Any])
+    inline def setVirtualserverStatus(value: String): Self = StObject.set(x, "virtualserverStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverTotalBytesDownloaded(value: Double): Self = StObject.set(x, "virtualserverTotalBytesDownloaded", value.asInstanceOf[js.Any])
+    inline def setVirtualserverTotalBytesDownloaded(value: Double): Self = StObject.set(x, "virtualserverTotalBytesDownloaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverTotalBytesUploaded(value: Double): Self = StObject.set(x, "virtualserverTotalBytesUploaded", value.asInstanceOf[js.Any])
+    inline def setVirtualserverTotalBytesUploaded(value: Double): Self = StObject.set(x, "virtualserverTotalBytesUploaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverTotalPacketlossTotal(value: Double): Self = StObject.set(x, "virtualserverTotalPacketlossTotal", value.asInstanceOf[js.Any])
+    inline def setVirtualserverTotalPacketlossTotal(value: Double): Self = StObject.set(x, "virtualserverTotalPacketlossTotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverTotalPing(value: Double): Self = StObject.set(x, "virtualserverTotalPing", value.asInstanceOf[js.Any])
+    inline def setVirtualserverTotalPing(value: Double): Self = StObject.set(x, "virtualserverTotalPing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverUniqueIdentifier(value: String): Self = StObject.set(x, "virtualserverUniqueIdentifier", value.asInstanceOf[js.Any])
+    inline def setVirtualserverUniqueIdentifier(value: String): Self = StObject.set(x, "virtualserverUniqueIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverUploadQuota(value: Double): Self = StObject.set(x, "virtualserverUploadQuota", value.asInstanceOf[js.Any])
+    inline def setVirtualserverUploadQuota(value: Double): Self = StObject.set(x, "virtualserverUploadQuota", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverWeblistEnabled(value: Double): Self = StObject.set(x, "virtualserverWeblistEnabled", value.asInstanceOf[js.Any])
+    inline def setVirtualserverWeblistEnabled(value: Double): Self = StObject.set(x, "virtualserverWeblistEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualserverWelcomemessage(value: String): Self = StObject.set(x, "virtualserverWelcomemessage", value.asInstanceOf[js.Any])
+    inline def setVirtualserverWelcomemessage(value: String): Self = StObject.set(x, "virtualserverWelcomemessage", value.asInstanceOf[js.Any])
   }
 }

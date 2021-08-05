@@ -8,11 +8,9 @@ object formatjsIntlRelativetimeformatStrings {
   
   @js.native
   sealed trait `best fit` extends StObject
-  @scala.inline
-  def `best fit`: `best fit` = ("best fit").asInstanceOf[`best fit`]
+  inline def `best fit`: `best fit` = ("best fit").asInstanceOf[`best fit`]
   
   @js.native
   sealed trait lookup extends StObject
-  @scala.inline
-  def lookup: lookup = "lookup".asInstanceOf[lookup]
+  inline def lookup: lookup = "lookup".asInstanceOf[lookup]
 }

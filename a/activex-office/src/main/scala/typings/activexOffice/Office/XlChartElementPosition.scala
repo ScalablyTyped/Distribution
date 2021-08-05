@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlChartElementPosition extends StObject
 object XlChartElementPosition {
   
-  @scala.inline
-  def xlChartElementPositionAutomatic: `-4105` = -4105.asInstanceOf[`-4105`]
+  inline def xlChartElementPositionAutomatic: `-4105` = -4105.asInstanceOf[`-4105`]
   
-  @scala.inline
-  def xlChartElementPositionCustom: `-4114` = -4114.asInstanceOf[`-4114`]
+  inline def xlChartElementPositionCustom: `-4114` = -4114.asInstanceOf[`-4114`]
 }

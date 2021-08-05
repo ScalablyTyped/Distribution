@@ -18,22 +18,17 @@ trait RebootDBInstanceMessage extends StObject {
 }
 object RebootDBInstanceMessage {
   
-  @scala.inline
-  def apply(DBInstanceIdentifier: String): RebootDBInstanceMessage = {
+  inline def apply(DBInstanceIdentifier: String): RebootDBInstanceMessage = {
     val __obj = js.Dynamic.literal(DBInstanceIdentifier = DBInstanceIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[RebootDBInstanceMessage]
   }
   
-  @scala.inline
-  implicit class RebootDBInstanceMessageMutableBuilder[Self <: RebootDBInstanceMessage] (val x: Self) extends AnyVal {
+  extension [Self <: RebootDBInstanceMessage](x: Self) {
     
-    @scala.inline
-    def setDBInstanceIdentifier(value: String): Self = StObject.set(x, "DBInstanceIdentifier", value.asInstanceOf[js.Any])
+    inline def setDBInstanceIdentifier(value: String): Self = StObject.set(x, "DBInstanceIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceFailover(value: BooleanOptional): Self = StObject.set(x, "ForceFailover", value.asInstanceOf[js.Any])
+    inline def setForceFailover(value: BooleanOptional): Self = StObject.set(x, "ForceFailover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceFailoverUndefined: Self = StObject.set(x, "ForceFailover", js.undefined)
+    inline def setForceFailoverUndefined: Self = StObject.set(x, "ForceFailover", js.undefined)
   }
 }

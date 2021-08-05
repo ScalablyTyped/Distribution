@@ -16,25 +16,19 @@ trait Description extends StObject {
 }
 object Description {
   
-  @scala.inline
-  def apply(ariaRoleDescription: Unit, description: SignalRef | ValueString): Description = {
+  inline def apply(ariaRoleDescription: Unit, description: SignalRef | ValueString): Description = {
     val __obj = js.Dynamic.literal(ariaRoleDescription = ariaRoleDescription.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any])
     __obj.asInstanceOf[Description]
   }
   
-  @scala.inline
-  implicit class DescriptionMutableBuilder[Self <: Description] (val x: Self) extends AnyVal {
+  extension [Self <: Description](x: Self) {
     
-    @scala.inline
-    def setAria(value: `true` | SignalRef): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
+    inline def setAria(value: `true` | SignalRef): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAriaRoleDescription(value: Unit): Self = StObject.set(x, "ariaRoleDescription", value.asInstanceOf[js.Any])
+    inline def setAriaRoleDescription(value: Unit): Self = StObject.set(x, "ariaRoleDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAriaUndefined: Self = StObject.set(x, "aria", js.undefined)
+    inline def setAriaUndefined: Self = StObject.set(x, "aria", js.undefined)
     
-    @scala.inline
-    def setDescription(value: SignalRef | ValueString): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: SignalRef | ValueString): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
   }
 }

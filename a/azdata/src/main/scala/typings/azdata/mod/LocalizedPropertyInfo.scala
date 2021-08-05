@@ -16,8 +16,7 @@ trait LocalizedPropertyInfo extends StObject {
 }
 object LocalizedPropertyInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     propertyDisplayName: String,
     propertyName: String,
     propertyValue: String,
@@ -27,19 +26,14 @@ object LocalizedPropertyInfo {
     __obj.asInstanceOf[LocalizedPropertyInfo]
   }
   
-  @scala.inline
-  implicit class LocalizedPropertyInfoMutableBuilder[Self <: LocalizedPropertyInfo] (val x: Self) extends AnyVal {
+  extension [Self <: LocalizedPropertyInfo](x: Self) {
     
-    @scala.inline
-    def setPropertyDisplayName(value: String): Self = StObject.set(x, "propertyDisplayName", value.asInstanceOf[js.Any])
+    inline def setPropertyDisplayName(value: String): Self = StObject.set(x, "propertyDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
+    inline def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyValue(value: String): Self = StObject.set(x, "propertyValue", value.asInstanceOf[js.Any])
+    inline def setPropertyValue(value: String): Self = StObject.set(x, "propertyValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyValueDisplayName(value: String): Self = StObject.set(x, "propertyValueDisplayName", value.asInstanceOf[js.Any])
+    inline def setPropertyValueDisplayName(value: String): Self = StObject.set(x, "propertyValueDisplayName", value.asInstanceOf[js.Any])
   }
 }

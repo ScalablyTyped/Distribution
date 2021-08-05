@@ -22,52 +22,37 @@ trait BindingConfig extends StObject {
 }
 object BindingConfig {
   
-  @scala.inline
-  def apply(): BindingConfig = {
+  inline def apply(): BindingConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BindingConfig]
   }
   
-  @scala.inline
-  implicit class BindingConfigMutableBuilder[Self <: BindingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: BindingConfig](x: Self) {
     
-    @scala.inline
-    def setBindingKey(value: String): Self = StObject.set(x, "bindingKey", value.asInstanceOf[js.Any])
+    inline def setBindingKey(value: String): Self = StObject.set(x, "bindingKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBindingKeyUndefined: Self = StObject.set(x, "bindingKey", js.undefined)
+    inline def setBindingKeyUndefined: Self = StObject.set(x, "bindingKey", js.undefined)
     
-    @scala.inline
-    def setBindingKeys(value: js.Array[String]): Self = StObject.set(x, "bindingKeys", value.asInstanceOf[js.Any])
+    inline def setBindingKeys(value: js.Array[String]): Self = StObject.set(x, "bindingKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBindingKeysUndefined: Self = StObject.set(x, "bindingKeys", js.undefined)
+    inline def setBindingKeysUndefined: Self = StObject.set(x, "bindingKeys", js.undefined)
     
-    @scala.inline
-    def setBindingKeysVarargs(value: String*): Self = StObject.set(x, "bindingKeys", js.Array(value :_*))
+    inline def setBindingKeysVarargs(value: String*): Self = StObject.set(x, "bindingKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationType(value: queue | exchange): Self = StObject.set(x, "destinationType", value.asInstanceOf[js.Any])
+    inline def setDestinationType(value: queue | exchange): Self = StObject.set(x, "destinationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationTypeUndefined: Self = StObject.set(x, "destinationType", js.undefined)
+    inline def setDestinationTypeUndefined: Self = StObject.set(x, "destinationType", js.undefined)
     
-    @scala.inline
-    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
+    inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
-    @scala.inline
-    def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

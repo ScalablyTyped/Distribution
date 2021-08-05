@@ -20,19 +20,15 @@ trait SchemaExportDicomDataRequest extends StObject {
 }
 object SchemaExportDicomDataRequest {
   
-  @scala.inline
-  def apply(): SchemaExportDicomDataRequest = {
+  inline def apply(): SchemaExportDicomDataRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaExportDicomDataRequest]
   }
   
-  @scala.inline
-  implicit class SchemaExportDicomDataRequestMutableBuilder[Self <: SchemaExportDicomDataRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaExportDicomDataRequest](x: Self) {
     
-    @scala.inline
-    def setOutputConfig(value: SchemaOutputConfig): Self = StObject.set(x, "outputConfig", value.asInstanceOf[js.Any])
+    inline def setOutputConfig(value: SchemaOutputConfig): Self = StObject.set(x, "outputConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputConfigUndefined: Self = StObject.set(x, "outputConfig", js.undefined)
+    inline def setOutputConfigUndefined: Self = StObject.set(x, "outputConfig", js.undefined)
   }
 }

@@ -11,6 +11,5 @@ object storybookChannelMockMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def mockChannel(): default = ^.asInstanceOf[js.Dynamic].applyDynamic("mockChannel")().asInstanceOf[default]
+  inline def mockChannel(): default = ^.asInstanceOf[js.Dynamic].applyDynamic("mockChannel")().asInstanceOf[default]
 }

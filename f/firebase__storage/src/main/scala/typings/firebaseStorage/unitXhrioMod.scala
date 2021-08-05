@@ -48,25 +48,25 @@ object unitXhrioMod {
     
     def addUploadProgressListener(): Unit = js.native
     
-    var errorCode: js.Any = js.native
+    /* private */ var errorCode: js.Any = js.native
     
-    var headers: js.Any = js.native
+    /* private */ var headers: js.Any = js.native
     
     def removeUploadProgressListener(): Unit = js.native
     
-    var resolve: js.Any = js.native
+    /* private */ var resolve: js.Any = js.native
     
-    var responseText: js.Any = js.native
+    /* private */ var responseText: js.Any = js.native
     
-    var sendHook: js.Any = js.native
+    /* private */ var sendHook: js.Any = js.native
     
-    var sendPromise: js.Any = js.native
+    /* private */ var sendPromise: js.Any = js.native
     
     def simulateResponse(status: Double, body: String, headers: StringDictionary[String]): Unit = js.native
     
-    var state: js.Any = js.native
+    /* private */ var state: js.Any = js.native
     
-    var status: js.Any = js.native
+    /* private */ var status: js.Any = js.native
   }
   
   type SendHook = js.Function5[

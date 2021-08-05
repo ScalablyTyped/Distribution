@@ -18,22 +18,17 @@ trait SNSAction extends StObject {
 }
 object SNSAction {
   
-  @scala.inline
-  def apply(TopicArn: AmazonResourceName): SNSAction = {
+  inline def apply(TopicArn: AmazonResourceName): SNSAction = {
     val __obj = js.Dynamic.literal(TopicArn = TopicArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[SNSAction]
   }
   
-  @scala.inline
-  implicit class SNSActionMutableBuilder[Self <: SNSAction] (val x: Self) extends AnyVal {
+  extension [Self <: SNSAction](x: Self) {
     
-    @scala.inline
-    def setEncoding(value: SNSActionEncoding): Self = StObject.set(x, "Encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: SNSActionEncoding): Self = StObject.set(x, "Encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingUndefined: Self = StObject.set(x, "Encoding", js.undefined)
+    inline def setEncodingUndefined: Self = StObject.set(x, "Encoding", js.undefined)
     
-    @scala.inline
-    def setTopicArn(value: AmazonResourceName): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
+    inline def setTopicArn(value: AmazonResourceName): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
   }
 }

@@ -181,80 +181,56 @@ object displayMod {
   }
   object NvDisplayDefaults {
     
-    @scala.inline
-    def apply(): NvDisplayDefaults = {
+    inline def apply(): NvDisplayDefaults = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NvDisplayDefaults]
     }
     
-    @scala.inline
-    implicit class NvDisplayDefaultsMutableBuilder[Self <: NvDisplayDefaults] (val x: Self) extends AnyVal {
+    extension [Self <: NvDisplayDefaults](x: Self) {
       
-      @scala.inline
-      def setContext(value: CanvasRenderingContext2D): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: CanvasRenderingContext2D): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setCursor_uri(value: js.Any): Self = StObject.set(x, "cursor_uri", value.asInstanceOf[js.Any])
+      inline def setCursor_uri(value: js.Any): Self = StObject.set(x, "cursor_uri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCursor_uriUndefined: Self = StObject.set(x, "cursor_uri", js.undefined)
+      inline def setCursor_uriUndefined: Self = StObject.set(x, "cursor_uri", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setLogo(value: NvLogo): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
+      inline def setLogo(value: NvLogo): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
+      inline def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
       
-      @scala.inline
-      def setOnFlush(value: () => Unit): Self = StObject.set(x, "onFlush", js.Any.fromFunction0(value))
+      inline def setOnFlush(value: () => Unit): Self = StObject.set(x, "onFlush", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnFlushUndefined: Self = StObject.set(x, "onFlush", js.undefined)
+      inline def setOnFlushUndefined: Self = StObject.set(x, "onFlush", js.undefined)
       
-      @scala.inline
-      def setPrefer_js(value: String): Self = StObject.set(x, "prefer_js", value.asInstanceOf[js.Any])
+      inline def setPrefer_js(value: String): Self = StObject.set(x, "prefer_js", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefer_jsUndefined: Self = StObject.set(x, "prefer_js", js.undefined)
+      inline def setPrefer_jsUndefined: Self = StObject.set(x, "prefer_js", js.undefined)
       
-      @scala.inline
-      def setRender_mode(value: String): Self = StObject.set(x, "render_mode", value.asInstanceOf[js.Any])
+      inline def setRender_mode(value: String): Self = StObject.set(x, "render_mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRender_modeUndefined: Self = StObject.set(x, "render_mode", js.undefined)
+      inline def setRender_modeUndefined: Self = StObject.set(x, "render_mode", js.undefined)
       
-      @scala.inline
-      def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+      inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       
-      @scala.inline
-      def setTarget(value: HTMLCanvasElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: HTMLCanvasElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      @scala.inline
-      def setViewport(value: Boolean): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
+      inline def setViewport(value: Boolean): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewportUndefined: Self = StObject.set(x, "viewport", js.undefined)
+      inline def setViewportUndefined: Self = StObject.set(x, "viewport", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -270,30 +246,23 @@ object displayMod {
   }
   object NvLogo {
     
-    @scala.inline
-    def apply(data: js.Array[Double], height: Double, `type`: String, width: Double): NvLogo = {
+    inline def apply(data: js.Array[Double], height: Double, `type`: String, width: Double): NvLogo = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[NvLogo]
     }
     
-    @scala.inline
-    implicit class NvLogoMutableBuilder[Self <: NvLogo] (val x: Self) extends AnyVal {
+    extension [Self <: NvLogo](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Array[Double]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[Double]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataVarargs(value: Double*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Double*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

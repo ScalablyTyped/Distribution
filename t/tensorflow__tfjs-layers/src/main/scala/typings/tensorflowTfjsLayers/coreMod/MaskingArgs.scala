@@ -16,19 +16,15 @@ trait MaskingArgs
 }
 object MaskingArgs {
   
-  @scala.inline
-  def apply(): MaskingArgs = {
+  inline def apply(): MaskingArgs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MaskingArgs]
   }
   
-  @scala.inline
-  implicit class MaskingArgsMutableBuilder[Self <: MaskingArgs] (val x: Self) extends AnyVal {
+  extension [Self <: MaskingArgs](x: Self) {
     
-    @scala.inline
-    def setMaskValue(value: Double): Self = StObject.set(x, "maskValue", value.asInstanceOf[js.Any])
+    inline def setMaskValue(value: Double): Self = StObject.set(x, "maskValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaskValueUndefined: Self = StObject.set(x, "maskValue", js.undefined)
+    inline def setMaskValueUndefined: Self = StObject.set(x, "maskValue", js.undefined)
   }
 }

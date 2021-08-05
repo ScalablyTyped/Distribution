@@ -13,14 +13,12 @@ object describeGlobalTableSettingsExceptionsUnionMod {
   trait DescribeGlobalTableSettingsExceptionsUnion extends StObject
   object DescribeGlobalTableSettingsExceptionsUnion {
     
-    @scala.inline
-    def GlobalTableNotFoundException(): typings.awsSdkClientDynamodbNode.typesGlobalTableNotFoundExceptionMod.GlobalTableNotFoundException = {
+    inline def GlobalTableNotFoundException(): typings.awsSdkClientDynamodbNode.typesGlobalTableNotFoundExceptionMod.GlobalTableNotFoundException = {
       val __obj = js.Dynamic.literal(name = "GlobalTableNotFoundException")
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesGlobalTableNotFoundExceptionMod.GlobalTableNotFoundException]
     }
     
-    @scala.inline
-    def InternalServerError(): typings.awsSdkClientDynamodbNode.typesInternalServerErrorMod.InternalServerError = {
+    inline def InternalServerError(): typings.awsSdkClientDynamodbNode.typesInternalServerErrorMod.InternalServerError = {
       val __obj = js.Dynamic.literal(name = "InternalServerError")
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesInternalServerErrorMod.InternalServerError]
     }

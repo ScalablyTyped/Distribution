@@ -24,19 +24,15 @@ trait SemanticTokensEditsParams
 }
 object SemanticTokensEditsParams {
   
-  @scala.inline
-  def apply(previousResultId: String, textDocument: TextDocumentIdentifier): SemanticTokensEditsParams = {
+  inline def apply(previousResultId: String, textDocument: TextDocumentIdentifier): SemanticTokensEditsParams = {
     val __obj = js.Dynamic.literal(previousResultId = previousResultId.asInstanceOf[js.Any], textDocument = textDocument.asInstanceOf[js.Any])
     __obj.asInstanceOf[SemanticTokensEditsParams]
   }
   
-  @scala.inline
-  implicit class SemanticTokensEditsParamsMutableBuilder[Self <: SemanticTokensEditsParams] (val x: Self) extends AnyVal {
+  extension [Self <: SemanticTokensEditsParams](x: Self) {
     
-    @scala.inline
-    def setPreviousResultId(value: String): Self = StObject.set(x, "previousResultId", value.asInstanceOf[js.Any])
+    inline def setPreviousResultId(value: String): Self = StObject.set(x, "previousResultId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextDocument(value: TextDocumentIdentifier): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
+    inline def setTextDocument(value: TextDocumentIdentifier): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
   }
 }

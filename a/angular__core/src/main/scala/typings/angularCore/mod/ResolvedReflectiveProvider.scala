@@ -23,25 +23,19 @@ trait ResolvedReflectiveProvider extends StObject {
 }
 object ResolvedReflectiveProvider {
   
-  @scala.inline
-  def apply(key: ReflectiveKey, multiProvider: Boolean, resolvedFactories: js.Array[ResolvedReflectiveFactory]): ResolvedReflectiveProvider = {
+  inline def apply(key: ReflectiveKey, multiProvider: Boolean, resolvedFactories: js.Array[ResolvedReflectiveFactory]): ResolvedReflectiveProvider = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], multiProvider = multiProvider.asInstanceOf[js.Any], resolvedFactories = resolvedFactories.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolvedReflectiveProvider]
   }
   
-  @scala.inline
-  implicit class ResolvedReflectiveProviderMutableBuilder[Self <: ResolvedReflectiveProvider] (val x: Self) extends AnyVal {
+  extension [Self <: ResolvedReflectiveProvider](x: Self) {
     
-    @scala.inline
-    def setKey(value: ReflectiveKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: ReflectiveKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiProvider(value: Boolean): Self = StObject.set(x, "multiProvider", value.asInstanceOf[js.Any])
+    inline def setMultiProvider(value: Boolean): Self = StObject.set(x, "multiProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolvedFactories(value: js.Array[ResolvedReflectiveFactory]): Self = StObject.set(x, "resolvedFactories", value.asInstanceOf[js.Any])
+    inline def setResolvedFactories(value: js.Array[ResolvedReflectiveFactory]): Self = StObject.set(x, "resolvedFactories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolvedFactoriesVarargs(value: ResolvedReflectiveFactory*): Self = StObject.set(x, "resolvedFactories", js.Array(value :_*))
+    inline def setResolvedFactoriesVarargs(value: ResolvedReflectiveFactory*): Self = StObject.set(x, "resolvedFactories", js.Array(value :_*))
   }
 }

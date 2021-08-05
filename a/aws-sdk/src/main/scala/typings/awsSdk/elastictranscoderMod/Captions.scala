@@ -23,37 +23,27 @@ trait Captions extends StObject {
 }
 object Captions {
   
-  @scala.inline
-  def apply(): Captions = {
+  inline def apply(): Captions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Captions]
   }
   
-  @scala.inline
-  implicit class CaptionsMutableBuilder[Self <: Captions] (val x: Self) extends AnyVal {
+  extension [Self <: Captions](x: Self) {
     
-    @scala.inline
-    def setCaptionFormats(value: CaptionFormats): Self = StObject.set(x, "CaptionFormats", value.asInstanceOf[js.Any])
+    inline def setCaptionFormats(value: CaptionFormats): Self = StObject.set(x, "CaptionFormats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionFormatsUndefined: Self = StObject.set(x, "CaptionFormats", js.undefined)
+    inline def setCaptionFormatsUndefined: Self = StObject.set(x, "CaptionFormats", js.undefined)
     
-    @scala.inline
-    def setCaptionFormatsVarargs(value: CaptionFormat*): Self = StObject.set(x, "CaptionFormats", js.Array(value :_*))
+    inline def setCaptionFormatsVarargs(value: CaptionFormat*): Self = StObject.set(x, "CaptionFormats", js.Array(value :_*))
     
-    @scala.inline
-    def setCaptionSources(value: CaptionSources): Self = StObject.set(x, "CaptionSources", value.asInstanceOf[js.Any])
+    inline def setCaptionSources(value: CaptionSources): Self = StObject.set(x, "CaptionSources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionSourcesUndefined: Self = StObject.set(x, "CaptionSources", js.undefined)
+    inline def setCaptionSourcesUndefined: Self = StObject.set(x, "CaptionSources", js.undefined)
     
-    @scala.inline
-    def setCaptionSourcesVarargs(value: CaptionSource*): Self = StObject.set(x, "CaptionSources", js.Array(value :_*))
+    inline def setCaptionSourcesVarargs(value: CaptionSource*): Self = StObject.set(x, "CaptionSources", js.Array(value :_*))
     
-    @scala.inline
-    def setMergePolicy(value: CaptionMergePolicy): Self = StObject.set(x, "MergePolicy", value.asInstanceOf[js.Any])
+    inline def setMergePolicy(value: CaptionMergePolicy): Self = StObject.set(x, "MergePolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergePolicyUndefined: Self = StObject.set(x, "MergePolicy", js.undefined)
+    inline def setMergePolicyUndefined: Self = StObject.set(x, "MergePolicy", js.undefined)
   }
 }

@@ -13,25 +13,19 @@ trait OnResultReceived extends StObject {
 }
 object OnResultReceived {
   
-  @scala.inline
-  def apply(): OnResultReceived = {
+  inline def apply(): OnResultReceived = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnResultReceived]
   }
   
-  @scala.inline
-  implicit class OnResultReceivedMutableBuilder[Self <: OnResultReceived] (val x: Self) extends AnyVal {
+  extension [Self <: OnResultReceived](x: Self) {
     
-    @scala.inline
-    def setOnResultReceived(value: js.Function): Self = StObject.set(x, "onResultReceived", value.asInstanceOf[js.Any])
+    inline def setOnResultReceived(value: js.Function): Self = StObject.set(x, "onResultReceived", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnResultReceivedUndefined: Self = StObject.set(x, "onResultReceived", js.undefined)
+    inline def setOnResultReceivedUndefined: Self = StObject.set(x, "onResultReceived", js.undefined)
     
-    @scala.inline
-    def setWait_(value: Boolean): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
+    inline def setWait_(value: Boolean): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWait_Undefined: Self = StObject.set(x, "wait", js.undefined)
+    inline def setWait_Undefined: Self = StObject.set(x, "wait", js.undefined)
   }
 }

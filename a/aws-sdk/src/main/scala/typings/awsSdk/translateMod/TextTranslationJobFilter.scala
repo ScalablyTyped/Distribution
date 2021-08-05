@@ -28,37 +28,27 @@ trait TextTranslationJobFilter extends StObject {
 }
 object TextTranslationJobFilter {
   
-  @scala.inline
-  def apply(): TextTranslationJobFilter = {
+  inline def apply(): TextTranslationJobFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextTranslationJobFilter]
   }
   
-  @scala.inline
-  implicit class TextTranslationJobFilterMutableBuilder[Self <: TextTranslationJobFilter] (val x: Self) extends AnyVal {
+  extension [Self <: TextTranslationJobFilter](x: Self) {
     
-    @scala.inline
-    def setJobName(value: JobName): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
+    inline def setJobName(value: JobName): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobNameUndefined: Self = StObject.set(x, "JobName", js.undefined)
+    inline def setJobNameUndefined: Self = StObject.set(x, "JobName", js.undefined)
     
-    @scala.inline
-    def setJobStatus(value: JobStatus): Self = StObject.set(x, "JobStatus", value.asInstanceOf[js.Any])
+    inline def setJobStatus(value: JobStatus): Self = StObject.set(x, "JobStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobStatusUndefined: Self = StObject.set(x, "JobStatus", js.undefined)
+    inline def setJobStatusUndefined: Self = StObject.set(x, "JobStatus", js.undefined)
     
-    @scala.inline
-    def setSubmittedAfterTime(value: Timestamp): Self = StObject.set(x, "SubmittedAfterTime", value.asInstanceOf[js.Any])
+    inline def setSubmittedAfterTime(value: Timestamp): Self = StObject.set(x, "SubmittedAfterTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmittedAfterTimeUndefined: Self = StObject.set(x, "SubmittedAfterTime", js.undefined)
+    inline def setSubmittedAfterTimeUndefined: Self = StObject.set(x, "SubmittedAfterTime", js.undefined)
     
-    @scala.inline
-    def setSubmittedBeforeTime(value: Timestamp): Self = StObject.set(x, "SubmittedBeforeTime", value.asInstanceOf[js.Any])
+    inline def setSubmittedBeforeTime(value: Timestamp): Self = StObject.set(x, "SubmittedBeforeTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmittedBeforeTimeUndefined: Self = StObject.set(x, "SubmittedBeforeTime", js.undefined)
+    inline def setSubmittedBeforeTimeUndefined: Self = StObject.set(x, "SubmittedBeforeTime", js.undefined)
   }
 }

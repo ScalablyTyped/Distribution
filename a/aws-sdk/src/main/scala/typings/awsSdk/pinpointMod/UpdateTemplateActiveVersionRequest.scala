@@ -20,8 +20,7 @@ trait UpdateTemplateActiveVersionRequest extends StObject {
 }
 object UpdateTemplateActiveVersionRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     TemplateActiveVersionRequest: TemplateActiveVersionRequest,
     TemplateName: string,
     TemplateType: string
@@ -30,16 +29,12 @@ object UpdateTemplateActiveVersionRequest {
     __obj.asInstanceOf[UpdateTemplateActiveVersionRequest]
   }
   
-  @scala.inline
-  implicit class UpdateTemplateActiveVersionRequestMutableBuilder[Self <: UpdateTemplateActiveVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateTemplateActiveVersionRequest](x: Self) {
     
-    @scala.inline
-    def setTemplateActiveVersionRequest(value: TemplateActiveVersionRequest): Self = StObject.set(x, "TemplateActiveVersionRequest", value.asInstanceOf[js.Any])
+    inline def setTemplateActiveVersionRequest(value: TemplateActiveVersionRequest): Self = StObject.set(x, "TemplateActiveVersionRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateName(value: string): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
+    inline def setTemplateName(value: string): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateType(value: string): Self = StObject.set(x, "TemplateType", value.asInstanceOf[js.Any])
+    inline def setTemplateType(value: string): Self = StObject.set(x, "TemplateType", value.asInstanceOf[js.Any])
   }
 }

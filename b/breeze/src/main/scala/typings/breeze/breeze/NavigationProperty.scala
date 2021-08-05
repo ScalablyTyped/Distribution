@@ -22,8 +22,7 @@ trait NavigationProperty
 }
 object NavigationProperty {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     associationName: String,
     displayName: String,
     entityType: EntityType,
@@ -42,31 +41,22 @@ object NavigationProperty {
     __obj.asInstanceOf[NavigationProperty]
   }
   
-  @scala.inline
-  implicit class NavigationPropertyMutableBuilder[Self <: NavigationProperty] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationProperty](x: Self) {
     
-    @scala.inline
-    def setAssociationName(value: String): Self = StObject.set(x, "associationName", value.asInstanceOf[js.Any])
+    inline def setAssociationName(value: String): Self = StObject.set(x, "associationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityType(value: EntityType): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
+    inline def setEntityType(value: EntityType): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForeignKeyNames(value: js.Array[String]): Self = StObject.set(x, "foreignKeyNames", value.asInstanceOf[js.Any])
+    inline def setForeignKeyNames(value: js.Array[String]): Self = StObject.set(x, "foreignKeyNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForeignKeyNamesVarargs(value: String*): Self = StObject.set(x, "foreignKeyNames", js.Array(value :_*))
+    inline def setForeignKeyNamesVarargs(value: String*): Self = StObject.set(x, "foreignKeyNames", js.Array(value :_*))
     
-    @scala.inline
-    def setInverse(value: NavigationProperty): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
+    inline def setInverse(value: NavigationProperty): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsScalar(value: Boolean): Self = StObject.set(x, "isScalar", value.asInstanceOf[js.Any])
+    inline def setIsScalar(value: Boolean): Self = StObject.set(x, "isScalar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedDataProperties(value: js.Array[DataProperty]): Self = StObject.set(x, "relatedDataProperties", value.asInstanceOf[js.Any])
+    inline def setRelatedDataProperties(value: js.Array[DataProperty]): Self = StObject.set(x, "relatedDataProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedDataPropertiesVarargs(value: DataProperty*): Self = StObject.set(x, "relatedDataProperties", js.Array(value :_*))
+    inline def setRelatedDataPropertiesVarargs(value: DataProperty*): Self = StObject.set(x, "relatedDataProperties", js.Array(value :_*))
   }
 }

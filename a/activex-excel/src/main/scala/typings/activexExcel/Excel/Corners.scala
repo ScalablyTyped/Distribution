@@ -10,7 +10,7 @@ trait Corners extends StObject {
   
   val Creator: XlCreator
   
-  @JSName("Excel.Corners_typekey")
+  /* private */ @JSName("Excel.Corners_typekey")
   var ExcelDotCorners_typekey: Corners
   
   val Name: String
@@ -21,8 +21,7 @@ trait Corners extends StObject {
 }
 object Corners {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: XlCreator,
     ExcelDotCorners_typekey: Corners,
@@ -35,25 +34,18 @@ object Corners {
     __obj.asInstanceOf[Corners]
   }
   
-  @scala.inline
-  implicit class CornersMutableBuilder[Self <: Corners] (val x: Self) extends AnyVal {
+  extension [Self <: Corners](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotCorners_typekey(value: Corners): Self = StObject.set(x, "Excel.Corners_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotCorners_typekey(value: Corners): Self = StObject.set(x, "Excel.Corners_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelect(value: () => js.Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
+    inline def setSelect(value: () => js.Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
   }
 }

@@ -12,16 +12,13 @@ trait PickImplmaxSelections extends StObject {
 }
 object PickImplmaxSelections {
   
-  @scala.inline
-  def apply(maxSelections: `false` | Double): PickImplmaxSelections = {
+  inline def apply(maxSelections: `false` | Double): PickImplmaxSelections = {
     val __obj = js.Dynamic.literal(maxSelections = maxSelections.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplmaxSelections]
   }
   
-  @scala.inline
-  implicit class PickImplmaxSelectionsMutableBuilder[Self <: PickImplmaxSelections] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplmaxSelections](x: Self) {
     
-    @scala.inline
-    def setMaxSelections(value: `false` | Double): Self = StObject.set(x, "maxSelections", value.asInstanceOf[js.Any])
+    inline def setMaxSelections(value: `false` | Double): Self = StObject.set(x, "maxSelections", value.asInstanceOf[js.Any])
   }
 }

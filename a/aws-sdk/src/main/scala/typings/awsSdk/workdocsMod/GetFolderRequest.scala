@@ -23,28 +23,21 @@ trait GetFolderRequest extends StObject {
 }
 object GetFolderRequest {
   
-  @scala.inline
-  def apply(FolderId: ResourceIdType): GetFolderRequest = {
+  inline def apply(FolderId: ResourceIdType): GetFolderRequest = {
     val __obj = js.Dynamic.literal(FolderId = FolderId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFolderRequest]
   }
   
-  @scala.inline
-  implicit class GetFolderRequestMutableBuilder[Self <: GetFolderRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetFolderRequest](x: Self) {
     
-    @scala.inline
-    def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
+    inline def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
+    inline def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
     
-    @scala.inline
-    def setFolderId(value: ResourceIdType): Self = StObject.set(x, "FolderId", value.asInstanceOf[js.Any])
+    inline def setFolderId(value: ResourceIdType): Self = StObject.set(x, "FolderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeCustomMetadata(value: BooleanType): Self = StObject.set(x, "IncludeCustomMetadata", value.asInstanceOf[js.Any])
+    inline def setIncludeCustomMetadata(value: BooleanType): Self = StObject.set(x, "IncludeCustomMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeCustomMetadataUndefined: Self = StObject.set(x, "IncludeCustomMetadata", js.undefined)
+    inline def setIncludeCustomMetadataUndefined: Self = StObject.set(x, "IncludeCustomMetadata", js.undefined)
   }
 }

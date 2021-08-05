@@ -31,28 +31,21 @@ trait TableRow extends StObject {
 }
 object TableRow {
   
-  @scala.inline
-  def apply(cells: js.Array[TableCell], interval: Interval, length: Double, start: Double): TableRow = {
+  inline def apply(cells: js.Array[TableCell], interval: Interval, length: Double, start: Double): TableRow = {
     val __obj = js.Dynamic.literal(cells = cells.asInstanceOf[js.Any], interval = interval.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableRow]
   }
   
-  @scala.inline
-  implicit class TableRowMutableBuilder[Self <: TableRow] (val x: Self) extends AnyVal {
+  extension [Self <: TableRow](x: Self) {
     
-    @scala.inline
-    def setCells(value: js.Array[TableCell]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
+    inline def setCells(value: js.Array[TableCell]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellsVarargs(value: TableCell*): Self = StObject.set(x, "cells", js.Array(value :_*))
+    inline def setCellsVarargs(value: TableCell*): Self = StObject.set(x, "cells", js.Array(value :_*))
     
-    @scala.inline
-    def setInterval(value: Interval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Interval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

@@ -10,19 +10,15 @@ trait ColumnInterfaceBasedOnValue[D /* <: js.Object */, V] extends StObject {
 }
 object ColumnInterfaceBasedOnValue {
   
-  @scala.inline
-  def apply[D /* <: js.Object */, V](): ColumnInterfaceBasedOnValue[D, V] = {
+  inline def apply[D /* <: js.Object */, V](): ColumnInterfaceBasedOnValue[D, V] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColumnInterfaceBasedOnValue[D, V]]
   }
   
-  @scala.inline
-  implicit class ColumnInterfaceBasedOnValueMutableBuilder[Self <: ColumnInterfaceBasedOnValue[?, ?], D /* <: js.Object */, V] (val x: Self & (ColumnInterfaceBasedOnValue[D, V])) extends AnyVal {
+  extension [Self <: ColumnInterfaceBasedOnValue[?, ?], D /* <: js.Object */, V](x: Self & (ColumnInterfaceBasedOnValue[D, V])) {
     
-    @scala.inline
-    def setCell(value: Renderer[CellProps[D, V]]): Self = StObject.set(x, "Cell", value.asInstanceOf[js.Any])
+    inline def setCell(value: Renderer[CellProps[D, V]]): Self = StObject.set(x, "Cell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellUndefined: Self = StObject.set(x, "Cell", js.undefined)
+    inline def setCellUndefined: Self = StObject.set(x, "Cell", js.undefined)
   }
 }

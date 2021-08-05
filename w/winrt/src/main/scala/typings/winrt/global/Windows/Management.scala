@@ -23,8 +23,7 @@ object Management {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def createForPackageFamily(packageFamilyName: String): ApplicationData = ^.asInstanceOf[js.Dynamic].applyDynamic("createForPackageFamily")(packageFamilyName.asInstanceOf[js.Any]).asInstanceOf[ApplicationData]
+      inline def createForPackageFamily(packageFamilyName: String): ApplicationData = ^.asInstanceOf[js.Dynamic].applyDynamic("createForPackageFamily")(packageFamilyName.asInstanceOf[js.Any]).asInstanceOf[ApplicationData]
     }
   }
   

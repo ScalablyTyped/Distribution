@@ -28,31 +28,23 @@ trait ForwardedValues extends StObject {
 }
 object ForwardedValues {
   
-  @scala.inline
-  def apply(Cookies: CookiePreference, QueryString: Boolean): ForwardedValues = {
+  inline def apply(Cookies: CookiePreference, QueryString: Boolean): ForwardedValues = {
     val __obj = js.Dynamic.literal(Cookies = Cookies.asInstanceOf[js.Any], QueryString = QueryString.asInstanceOf[js.Any])
     __obj.asInstanceOf[ForwardedValues]
   }
   
-  @scala.inline
-  implicit class ForwardedValuesMutableBuilder[Self <: ForwardedValues] (val x: Self) extends AnyVal {
+  extension [Self <: ForwardedValues](x: Self) {
     
-    @scala.inline
-    def setCookies(value: CookiePreference): Self = StObject.set(x, "Cookies", value.asInstanceOf[js.Any])
+    inline def setCookies(value: CookiePreference): Self = StObject.set(x, "Cookies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: Headers): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Headers): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "Headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "Headers", js.undefined)
     
-    @scala.inline
-    def setQueryString(value: Boolean): Self = StObject.set(x, "QueryString", value.asInstanceOf[js.Any])
+    inline def setQueryString(value: Boolean): Self = StObject.set(x, "QueryString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryStringCacheKeys(value: QueryStringCacheKeys): Self = StObject.set(x, "QueryStringCacheKeys", value.asInstanceOf[js.Any])
+    inline def setQueryStringCacheKeys(value: QueryStringCacheKeys): Self = StObject.set(x, "QueryStringCacheKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryStringCacheKeysUndefined: Self = StObject.set(x, "QueryStringCacheKeys", js.undefined)
+    inline def setQueryStringCacheKeysUndefined: Self = StObject.set(x, "QueryStringCacheKeys", js.undefined)
   }
 }

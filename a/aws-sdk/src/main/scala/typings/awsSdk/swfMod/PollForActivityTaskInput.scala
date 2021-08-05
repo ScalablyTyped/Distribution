@@ -23,25 +23,19 @@ trait PollForActivityTaskInput extends StObject {
 }
 object PollForActivityTaskInput {
   
-  @scala.inline
-  def apply(domain: DomainName, taskList: TaskList): PollForActivityTaskInput = {
+  inline def apply(domain: DomainName, taskList: TaskList): PollForActivityTaskInput = {
     val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], taskList = taskList.asInstanceOf[js.Any])
     __obj.asInstanceOf[PollForActivityTaskInput]
   }
   
-  @scala.inline
-  implicit class PollForActivityTaskInputMutableBuilder[Self <: PollForActivityTaskInput] (val x: Self) extends AnyVal {
+  extension [Self <: PollForActivityTaskInput](x: Self) {
     
-    @scala.inline
-    def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentity(value: Identity): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+    inline def setIdentity(value: Identity): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
+    inline def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
     
-    @scala.inline
-    def setTaskList(value: TaskList): Self = StObject.set(x, "taskList", value.asInstanceOf[js.Any])
+    inline def setTaskList(value: TaskList): Self = StObject.set(x, "taskList", value.asInstanceOf[js.Any])
   }
 }

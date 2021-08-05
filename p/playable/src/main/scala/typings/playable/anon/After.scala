@@ -14,20 +14,16 @@ trait After extends StObject {
 }
 object After {
   
-  @scala.inline
-  def apply(AmpersandColonafter: BackgroundColor, backgroundColor: IThemeConfig => String): After = {
+  inline def apply(AmpersandColonafter: BackgroundColor, backgroundColor: IThemeConfig => String): After = {
     val __obj = js.Dynamic.literal(backgroundColor = js.Any.fromFunction1(backgroundColor))
     __obj.updateDynamic("&:after")(AmpersandColonafter.asInstanceOf[js.Any])
     __obj.asInstanceOf[After]
   }
   
-  @scala.inline
-  implicit class AfterMutableBuilder[Self <: After] (val x: Self) extends AnyVal {
+  extension [Self <: After](x: Self) {
     
-    @scala.inline
-    def setAmpersandColonafter(value: BackgroundColor): Self = StObject.set(x, "&:after", value.asInstanceOf[js.Any])
+    inline def setAmpersandColonafter(value: BackgroundColor): Self = StObject.set(x, "&:after", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColor(value: IThemeConfig => String): Self = StObject.set(x, "backgroundColor", js.Any.fromFunction1(value))
+    inline def setBackgroundColor(value: IThemeConfig => String): Self = StObject.set(x, "backgroundColor", js.Any.fromFunction1(value))
   }
 }

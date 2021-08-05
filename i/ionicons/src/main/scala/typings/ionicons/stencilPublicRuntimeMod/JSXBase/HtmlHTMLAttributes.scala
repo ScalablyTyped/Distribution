@@ -12,19 +12,15 @@ trait HtmlHTMLAttributes[T]
 }
 object HtmlHTMLAttributes {
   
-  @scala.inline
-  def apply[T](): HtmlHTMLAttributes[T] = {
+  inline def apply[T](): HtmlHTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HtmlHTMLAttributes[T]]
   }
   
-  @scala.inline
-  implicit class HtmlHTMLAttributesMutableBuilder[Self <: HtmlHTMLAttributes[?], T] (val x: Self & HtmlHTMLAttributes[T]) extends AnyVal {
+  extension [Self <: HtmlHTMLAttributes[?], T](x: Self & HtmlHTMLAttributes[T]) {
     
-    @scala.inline
-    def setManifest(value: String): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
+    inline def setManifest(value: String): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManifestUndefined: Self = StObject.set(x, "manifest", js.undefined)
+    inline def setManifestUndefined: Self = StObject.set(x, "manifest", js.undefined)
   }
 }

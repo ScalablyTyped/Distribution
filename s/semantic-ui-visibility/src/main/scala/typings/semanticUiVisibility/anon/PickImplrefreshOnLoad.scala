@@ -11,16 +11,13 @@ trait PickImplrefreshOnLoad extends StObject {
 }
 object PickImplrefreshOnLoad {
   
-  @scala.inline
-  def apply(refreshOnLoad: Boolean): PickImplrefreshOnLoad = {
+  inline def apply(refreshOnLoad: Boolean): PickImplrefreshOnLoad = {
     val __obj = js.Dynamic.literal(refreshOnLoad = refreshOnLoad.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplrefreshOnLoad]
   }
   
-  @scala.inline
-  implicit class PickImplrefreshOnLoadMutableBuilder[Self <: PickImplrefreshOnLoad] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplrefreshOnLoad](x: Self) {
     
-    @scala.inline
-    def setRefreshOnLoad(value: Boolean): Self = StObject.set(x, "refreshOnLoad", value.asInstanceOf[js.Any])
+    inline def setRefreshOnLoad(value: Boolean): Self = StObject.set(x, "refreshOnLoad", value.asInstanceOf[js.Any])
   }
 }

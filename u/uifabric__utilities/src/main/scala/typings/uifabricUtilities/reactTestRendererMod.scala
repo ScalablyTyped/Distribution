@@ -13,8 +13,7 @@ object reactTestRendererMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(
+  inline def create(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<typeof defaultCreate> is not an array type */ args: Parameters[FnCall]
   ): ReturnType[FnCall] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FnCall]]
 }

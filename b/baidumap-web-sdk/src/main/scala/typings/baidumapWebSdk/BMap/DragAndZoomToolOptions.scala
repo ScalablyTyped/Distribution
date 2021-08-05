@@ -14,31 +14,23 @@ trait DragAndZoomToolOptions extends StObject {
 }
 object DragAndZoomToolOptions {
   
-  @scala.inline
-  def apply(): DragAndZoomToolOptions = {
+  inline def apply(): DragAndZoomToolOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DragAndZoomToolOptions]
   }
   
-  @scala.inline
-  implicit class DragAndZoomToolOptionsMutableBuilder[Self <: DragAndZoomToolOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DragAndZoomToolOptions](x: Self) {
     
-    @scala.inline
-    def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
+    inline def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoCloseUndefined: Self = StObject.set(x, "autoClose", js.undefined)
+    inline def setAutoCloseUndefined: Self = StObject.set(x, "autoClose", js.undefined)
     
-    @scala.inline
-    def setFollowText(value: String): Self = StObject.set(x, "followText", value.asInstanceOf[js.Any])
+    inline def setFollowText(value: String): Self = StObject.set(x, "followText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFollowTextUndefined: Self = StObject.set(x, "followText", js.undefined)
+    inline def setFollowTextUndefined: Self = StObject.set(x, "followText", js.undefined)
     
-    @scala.inline
-    def setZoomType(value: ZoomType): Self = StObject.set(x, "zoomType", value.asInstanceOf[js.Any])
+    inline def setZoomType(value: ZoomType): Self = StObject.set(x, "zoomType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomTypeUndefined: Self = StObject.set(x, "zoomType", js.undefined)
+    inline def setZoomTypeUndefined: Self = StObject.set(x, "zoomType", js.undefined)
   }
 }

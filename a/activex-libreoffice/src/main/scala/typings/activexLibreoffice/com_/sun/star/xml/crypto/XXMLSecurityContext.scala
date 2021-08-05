@@ -44,8 +44,7 @@ trait XXMLSecurityContext
 }
 object XXMLSecurityContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DefaultSecurityEnvironmentIndex: Double,
     SecurityEnvironment: XSecurityEnvironment,
     SecurityEnvironmentNumber: Double,
@@ -63,34 +62,24 @@ object XXMLSecurityContext {
     __obj.asInstanceOf[XXMLSecurityContext]
   }
   
-  @scala.inline
-  implicit class XXMLSecurityContextMutableBuilder[Self <: XXMLSecurityContext] (val x: Self) extends AnyVal {
+  extension [Self <: XXMLSecurityContext](x: Self) {
     
-    @scala.inline
-    def setAddSecurityEnvironment(value: XSecurityEnvironment => Double): Self = StObject.set(x, "addSecurityEnvironment", js.Any.fromFunction1(value))
+    inline def setAddSecurityEnvironment(value: XSecurityEnvironment => Double): Self = StObject.set(x, "addSecurityEnvironment", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDefaultSecurityEnvironmentIndex(value: Double): Self = StObject.set(x, "DefaultSecurityEnvironmentIndex", value.asInstanceOf[js.Any])
+    inline def setDefaultSecurityEnvironmentIndex(value: Double): Self = StObject.set(x, "DefaultSecurityEnvironmentIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDefaultSecurityEnvironmentIndex(value: () => Double): Self = StObject.set(x, "getDefaultSecurityEnvironmentIndex", js.Any.fromFunction0(value))
+    inline def setGetDefaultSecurityEnvironmentIndex(value: () => Double): Self = StObject.set(x, "getDefaultSecurityEnvironmentIndex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSecurityEnvironment(value: () => XSecurityEnvironment): Self = StObject.set(x, "getSecurityEnvironment", js.Any.fromFunction0(value))
+    inline def setGetSecurityEnvironment(value: () => XSecurityEnvironment): Self = StObject.set(x, "getSecurityEnvironment", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSecurityEnvironmentByIndex(value: Double => XSecurityEnvironment): Self = StObject.set(x, "getSecurityEnvironmentByIndex", js.Any.fromFunction1(value))
+    inline def setGetSecurityEnvironmentByIndex(value: Double => XSecurityEnvironment): Self = StObject.set(x, "getSecurityEnvironmentByIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSecurityEnvironmentNumber(value: () => Double): Self = StObject.set(x, "getSecurityEnvironmentNumber", js.Any.fromFunction0(value))
+    inline def setGetSecurityEnvironmentNumber(value: () => Double): Self = StObject.set(x, "getSecurityEnvironmentNumber", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSecurityEnvironment(value: XSecurityEnvironment): Self = StObject.set(x, "SecurityEnvironment", value.asInstanceOf[js.Any])
+    inline def setSecurityEnvironment(value: XSecurityEnvironment): Self = StObject.set(x, "SecurityEnvironment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityEnvironmentNumber(value: Double): Self = StObject.set(x, "SecurityEnvironmentNumber", value.asInstanceOf[js.Any])
+    inline def setSecurityEnvironmentNumber(value: Double): Self = StObject.set(x, "SecurityEnvironmentNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetDefaultSecurityEnvironmentIndex(value: Double => Unit): Self = StObject.set(x, "setDefaultSecurityEnvironmentIndex", js.Any.fromFunction1(value))
+    inline def setSetDefaultSecurityEnvironmentIndex(value: Double => Unit): Self = StObject.set(x, "setDefaultSecurityEnvironmentIndex", js.Any.fromFunction1(value))
   }
 }

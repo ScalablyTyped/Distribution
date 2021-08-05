@@ -16,26 +16,20 @@ trait IMessage extends StObject {
 }
 object IMessage {
   
-  @scala.inline
-  def apply(content: js.Any, header: IHeader, parent_header: IHeader | js.Object, `type`: Channel): IMessage = {
+  inline def apply(content: js.Any, header: IHeader, parent_header: IHeader | js.Object, `type`: Channel): IMessage = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMessage]
   }
   
-  @scala.inline
-  implicit class IMessageMutableBuilder[Self <: IMessage] (val x: Self) extends AnyVal {
+  extension [Self <: IMessage](x: Self) {
     
-    @scala.inline
-    def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeader(value: IHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: IHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent_header(value: IHeader | js.Object): Self = StObject.set(x, "parent_header", value.asInstanceOf[js.Any])
+    inline def setParent_header(value: IHeader | js.Object): Self = StObject.set(x, "parent_header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Channel): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Channel): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

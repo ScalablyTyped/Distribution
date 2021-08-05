@@ -12,6 +12,5 @@ object transformKeySubmitValueMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](values: T, dataFormatMap: StringDictionary[js.UndefOr[SearchTransformKeyFn]]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(values.asInstanceOf[js.Any], dataFormatMap.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def default[T](values: T, dataFormatMap: StringDictionary[js.UndefOr[SearchTransformKeyFn]]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(values.asInstanceOf[js.Any], dataFormatMap.asInstanceOf[js.Any])).asInstanceOf[T]
 }

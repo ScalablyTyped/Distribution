@@ -25,35 +25,27 @@ trait DynamicListenerState extends StObject {
 }
 object DynamicListenerState {
   
-  @scala.inline
-  def apply(): DynamicListenerState = {
+  inline def apply(): DynamicListenerState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DynamicListenerState]
   }
   
-  @scala.inline
-  implicit class DynamicListenerStateMutableBuilder[Self <: DynamicListenerState] (val x: Self) extends AnyVal {
+  extension [Self <: DynamicListenerState](x: Self) {
     
-    @scala.inline
-    def setLastUpdated(value: String): Self = StObject.set(x, "lastUpdated", value.asInstanceOf[js.Any])
+    inline def setLastUpdated(value: String): Self = StObject.set(x, "lastUpdated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedUndefined: Self = StObject.set(x, "lastUpdated", js.undefined)
+    inline def setLastUpdatedUndefined: Self = StObject.set(x, "lastUpdated", js.undefined)
     
-    @scala.inline
-    def setListener(
+    inline def setListener(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.DynamicListenerState & TopLevel[js.Any]
     ): Self = StObject.set(x, "listener", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListenerUndefined: Self = StObject.set(x, "listener", js.undefined)
+    inline def setListenerUndefined: Self = StObject.set(x, "listener", js.undefined)
     
-    @scala.inline
-    def setVersionInfo(value: String): Self = StObject.set(x, "versionInfo", value.asInstanceOf[js.Any])
+    inline def setVersionInfo(value: String): Self = StObject.set(x, "versionInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionInfoUndefined: Self = StObject.set(x, "versionInfo", js.undefined)
+    inline def setVersionInfoUndefined: Self = StObject.set(x, "versionInfo", js.undefined)
   }
 }

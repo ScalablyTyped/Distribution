@@ -38,8 +38,7 @@ trait FindOperatorsOrdered extends StObject {
 }
 object FindOperatorsOrdered {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     delete: () => OrderedBulkOperation,
     deleteOne: () => OrderedBulkOperation,
     replaceOne: js.Object => OrderedBulkOperation,
@@ -51,25 +50,18 @@ object FindOperatorsOrdered {
     __obj.asInstanceOf[FindOperatorsOrdered]
   }
   
-  @scala.inline
-  implicit class FindOperatorsOrderedMutableBuilder[Self <: FindOperatorsOrdered] (val x: Self) extends AnyVal {
+  extension [Self <: FindOperatorsOrdered](x: Self) {
     
-    @scala.inline
-    def setDelete(value: () => OrderedBulkOperation): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => OrderedBulkOperation): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDeleteOne(value: () => OrderedBulkOperation): Self = StObject.set(x, "deleteOne", js.Any.fromFunction0(value))
+    inline def setDeleteOne(value: () => OrderedBulkOperation): Self = StObject.set(x, "deleteOne", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReplaceOne(value: js.Object => OrderedBulkOperation): Self = StObject.set(x, "replaceOne", js.Any.fromFunction1(value))
+    inline def setReplaceOne(value: js.Object => OrderedBulkOperation): Self = StObject.set(x, "replaceOne", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdate(value: js.Object => OrderedBulkOperation): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+    inline def setUpdate(value: js.Object => OrderedBulkOperation): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdateOne(value: js.Object => OrderedBulkOperation): Self = StObject.set(x, "updateOne", js.Any.fromFunction1(value))
+    inline def setUpdateOne(value: js.Object => OrderedBulkOperation): Self = StObject.set(x, "updateOne", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpsert(value: () => FindOperatorsOrdered): Self = StObject.set(x, "upsert", js.Any.fromFunction0(value))
+    inline def setUpsert(value: () => FindOperatorsOrdered): Self = StObject.set(x, "upsert", js.Any.fromFunction0(value))
   }
 }

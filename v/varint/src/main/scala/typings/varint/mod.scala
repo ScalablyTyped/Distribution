@@ -13,18 +13,14 @@ object mod {
   
   object decode {
     
-    @scala.inline
-    def apply(buf: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].apply(buf.asInstanceOf[js.Any]).asInstanceOf[Double]
-    @scala.inline
-    def apply(buf: js.Array[Double], offset: Double): Double = (^.asInstanceOf[js.Dynamic].apply(buf.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def apply(buf: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].apply(buf.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def apply(buf: js.Array[Double], offset: Double): Double = (^.asInstanceOf[js.Dynamic].apply(buf.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Double]
     /**
       * Decodes `data`, which can be either a buffer or array of integers, from position `offset` or default 0 and returns the decoded original integer.
       * Throws a `RangeError` when `data` does not represent a valid encoding.
       */
-    @scala.inline
-    def apply(buf: Buffer): Double = ^.asInstanceOf[js.Dynamic].apply(buf.asInstanceOf[js.Any]).asInstanceOf[Double]
-    @scala.inline
-    def apply(buf: Buffer, offset: Double): Double = (^.asInstanceOf[js.Dynamic].apply(buf.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def apply(buf: Buffer): Double = ^.asInstanceOf[js.Dynamic].apply(buf.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def apply(buf: Buffer, offset: Double): Double = (^.asInstanceOf[js.Dynamic].apply(buf.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     @JSImport("varint", "decode")
     @js.native
@@ -37,8 +33,7 @@ object mod {
     @JSImport("varint", "decode.bytes")
     @js.native
     def bytes: Double = js.native
-    @scala.inline
-    def bytes_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bytes")(x.asInstanceOf[js.Any])
+    inline def bytes_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bytes")(x.asInstanceOf[js.Any])
   }
   
   object encode {
@@ -48,22 +43,16 @@ object mod {
       * If `array` is not provided, it will default to a new array.
       * `varint.encode.bytes` will now be set to the number of bytes modified.
       */
-    @scala.inline
-    def apply(num: Double): js.Array[Double] = ^.asInstanceOf[js.Dynamic].apply(num.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def apply(num: Double, array: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].apply(num.asInstanceOf[js.Any], array.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def apply(num: Double, array: js.Array[Double], offset: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].apply(num.asInstanceOf[js.Any], array.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def apply(num: Double, array: Unit, offset: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].apply(num.asInstanceOf[js.Any], array.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def apply(num: Double): js.Array[Double] = ^.asInstanceOf[js.Dynamic].apply(num.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def apply(num: Double, array: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].apply(num.asInstanceOf[js.Any], array.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def apply(num: Double, array: js.Array[Double], offset: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].apply(num.asInstanceOf[js.Any], array.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def apply(num: Double, array: Unit, offset: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].apply(num.asInstanceOf[js.Any], array.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Encodes `num` into `buffer` starting at `offset`. returns `buffer`, with the encoded varint written into it.
       * `varint.encode.bytes` will now be set to the number of bytes modified.
       */
-    @scala.inline
-    def apply(num: Double, buffer: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].apply(num.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Buffer]
-    @scala.inline
-    def apply(num: Double, buffer: Buffer, offset: Double): Buffer = (^.asInstanceOf[js.Dynamic].apply(num.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+    inline def apply(num: Double, buffer: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].apply(num.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+    inline def apply(num: Double, buffer: Buffer, offset: Double): Buffer = (^.asInstanceOf[js.Dynamic].apply(num.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Buffer]
     
     @JSImport("varint", "encode")
     @js.native
@@ -76,10 +65,8 @@ object mod {
     @JSImport("varint", "encode.bytes")
     @js.native
     def bytes: Double = js.native
-    @scala.inline
-    def bytes_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bytes")(x.asInstanceOf[js.Any])
+    inline def bytes_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bytes")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def encodingLength(num: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("encodingLength")(num.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def encodingLength(num: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("encodingLength")(num.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

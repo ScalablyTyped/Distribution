@@ -48,40 +48,29 @@ trait ExtraButtonsOptions extends StObject {
 }
 object ExtraButtonsOptions {
   
-  @scala.inline
-  def apply(element: HTMLElement): ExtraButtonsOptions = {
+  inline def apply(element: HTMLElement): ExtraButtonsOptions = {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtraButtonsOptions]
   }
   
-  @scala.inline
-  implicit class ExtraButtonsOptionsMutableBuilder[Self <: ExtraButtonsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ExtraButtonsOptions](x: Self) {
     
-    @scala.inline
-    def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileInputTitle(value: String): Self = StObject.set(x, "fileInputTitle", value.asInstanceOf[js.Any])
+    inline def setFileInputTitle(value: String): Self = StObject.set(x, "fileInputTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileInputTitleUndefined: Self = StObject.set(x, "fileInputTitle", js.undefined)
+    inline def setFileInputTitleUndefined: Self = StObject.set(x, "fileInputTitle", js.undefined)
     
-    @scala.inline
-    def setFolders(value: Boolean): Self = StObject.set(x, "folders", value.asInstanceOf[js.Any])
+    inline def setFolders(value: Boolean): Self = StObject.set(x, "folders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFoldersUndefined: Self = StObject.set(x, "folders", js.undefined)
+    inline def setFoldersUndefined: Self = StObject.set(x, "folders", js.undefined)
     
-    @scala.inline
-    def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+    inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+    inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
     
-    @scala.inline
-    def setValidation(value: js.Any): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
+    inline def setValidation(value: js.Any): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationUndefined: Self = StObject.set(x, "validation", js.undefined)
+    inline def setValidationUndefined: Self = StObject.set(x, "validation", js.undefined)
   }
 }

@@ -15,7 +15,7 @@ object likedFeedMod {
   class LikedFeed protected () extends Feed[LikedFeedResponseRootObject, LikedFeedResponseItemsItem] {
     def this(client: IgApiClient) = this()
     
-    var maxId: js.Any = js.native
+    /* private */ var maxId: js.Any = js.native
     
     def request(): js.Promise[LikedFeedResponseRootObject] = js.native
   }

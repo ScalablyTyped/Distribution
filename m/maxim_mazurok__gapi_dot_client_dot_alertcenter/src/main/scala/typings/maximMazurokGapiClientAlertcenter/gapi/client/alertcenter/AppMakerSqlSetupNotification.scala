@@ -11,22 +11,17 @@ trait AppMakerSqlSetupNotification extends StObject {
 }
 object AppMakerSqlSetupNotification {
   
-  @scala.inline
-  def apply(): AppMakerSqlSetupNotification = {
+  inline def apply(): AppMakerSqlSetupNotification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AppMakerSqlSetupNotification]
   }
   
-  @scala.inline
-  implicit class AppMakerSqlSetupNotificationMutableBuilder[Self <: AppMakerSqlSetupNotification] (val x: Self) extends AnyVal {
+  extension [Self <: AppMakerSqlSetupNotification](x: Self) {
     
-    @scala.inline
-    def setRequestInfo(value: js.Array[RequestInfo]): Self = StObject.set(x, "requestInfo", value.asInstanceOf[js.Any])
+    inline def setRequestInfo(value: js.Array[RequestInfo]): Self = StObject.set(x, "requestInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestInfoUndefined: Self = StObject.set(x, "requestInfo", js.undefined)
+    inline def setRequestInfoUndefined: Self = StObject.set(x, "requestInfo", js.undefined)
     
-    @scala.inline
-    def setRequestInfoVarargs(value: RequestInfo*): Self = StObject.set(x, "requestInfo", js.Array(value :_*))
+    inline def setRequestInfoVarargs(value: RequestInfo*): Self = StObject.set(x, "requestInfo", js.Array(value :_*))
   }
 }

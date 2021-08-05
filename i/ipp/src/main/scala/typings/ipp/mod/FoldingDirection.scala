@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FoldingDirection extends StObject
 object FoldingDirection {
   
-  @scala.inline
-  def inward: typings.ipp.ippStrings.inward = "inward".asInstanceOf[typings.ipp.ippStrings.inward]
+  inline def inward: typings.ipp.ippStrings.inward = "inward".asInstanceOf[typings.ipp.ippStrings.inward]
   
-  @scala.inline
-  def outward: typings.ipp.ippStrings.outward = "outward".asInstanceOf[typings.ipp.ippStrings.outward]
+  inline def outward: typings.ipp.ippStrings.outward = "outward".asInstanceOf[typings.ipp.ippStrings.outward]
 }

@@ -29,37 +29,27 @@ trait SchemaSponsorSnippet extends StObject {
 }
 object SchemaSponsorSnippet {
   
-  @scala.inline
-  def apply(): SchemaSponsorSnippet = {
+  inline def apply(): SchemaSponsorSnippet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSponsorSnippet]
   }
   
-  @scala.inline
-  implicit class SchemaSponsorSnippetMutableBuilder[Self <: SchemaSponsorSnippet] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSponsorSnippet](x: Self) {
     
-    @scala.inline
-    def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
+    inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
+    inline def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
     
-    @scala.inline
-    def setCumulativeDurationMonths(value: Double): Self = StObject.set(x, "cumulativeDurationMonths", value.asInstanceOf[js.Any])
+    inline def setCumulativeDurationMonths(value: Double): Self = StObject.set(x, "cumulativeDurationMonths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCumulativeDurationMonthsUndefined: Self = StObject.set(x, "cumulativeDurationMonths", js.undefined)
+    inline def setCumulativeDurationMonthsUndefined: Self = StObject.set(x, "cumulativeDurationMonths", js.undefined)
     
-    @scala.inline
-    def setSponsorDetails(value: SchemaChannelProfileDetails): Self = StObject.set(x, "sponsorDetails", value.asInstanceOf[js.Any])
+    inline def setSponsorDetails(value: SchemaChannelProfileDetails): Self = StObject.set(x, "sponsorDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSponsorDetailsUndefined: Self = StObject.set(x, "sponsorDetails", js.undefined)
+    inline def setSponsorDetailsUndefined: Self = StObject.set(x, "sponsorDetails", js.undefined)
     
-    @scala.inline
-    def setSponsorSince(value: String): Self = StObject.set(x, "sponsorSince", value.asInstanceOf[js.Any])
+    inline def setSponsorSince(value: String): Self = StObject.set(x, "sponsorSince", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSponsorSinceUndefined: Self = StObject.set(x, "sponsorSince", js.undefined)
+    inline def setSponsorSinceUndefined: Self = StObject.set(x, "sponsorSince", js.undefined)
   }
 }

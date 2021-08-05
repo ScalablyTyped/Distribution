@@ -23,31 +23,23 @@ trait DialogParams extends StObject {
 }
 object DialogParams {
   
-  @scala.inline
-  def apply(): DialogParams = {
+  inline def apply(): DialogParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DialogParams]
   }
   
-  @scala.inline
-  implicit class DialogParamsMutableBuilder[Self <: DialogParams] (val x: Self) extends AnyVal {
+  extension [Self <: DialogParams](x: Self) {
     
-    @scala.inline
-    def setApp_id(value: String): Self = StObject.set(x, "app_id", value.asInstanceOf[js.Any])
+    inline def setApp_id(value: String): Self = StObject.set(x, "app_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApp_idUndefined: Self = StObject.set(x, "app_id", js.undefined)
+    inline def setApp_idUndefined: Self = StObject.set(x, "app_id", js.undefined)
     
-    @scala.inline
-    def setDisplay(value: page | iframe | async | popup): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    inline def setDisplay(value: page | iframe | async | popup): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+    inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
-    @scala.inline
-    def setRedirect_uri(value: String): Self = StObject.set(x, "redirect_uri", value.asInstanceOf[js.Any])
+    inline def setRedirect_uri(value: String): Self = StObject.set(x, "redirect_uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirect_uriUndefined: Self = StObject.set(x, "redirect_uri", js.undefined)
+    inline def setRedirect_uriUndefined: Self = StObject.set(x, "redirect_uri", js.undefined)
   }
 }

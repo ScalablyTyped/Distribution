@@ -12,8 +12,7 @@ trait NativeEventTarget extends StObject {
 }
 object NativeEventTarget {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     off: (String, js.Function1[/* e */ js.Any, js.Any]) => Unit,
     on: (String, js.Function1[/* e */ js.Any, js.Any]) => Unit
   ): NativeEventTarget = {
@@ -21,13 +20,10 @@ object NativeEventTarget {
     __obj.asInstanceOf[NativeEventTarget]
   }
   
-  @scala.inline
-  implicit class NativeEventTargetMutableBuilder[Self <: NativeEventTarget] (val x: Self) extends AnyVal {
+  extension [Self <: NativeEventTarget](x: Self) {
     
-    @scala.inline
-    def setOff(value: (String, js.Function1[/* e */ js.Any, js.Any]) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
+    inline def setOff(value: (String, js.Function1[/* e */ js.Any, js.Any]) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOn(value: (String, js.Function1[/* e */ js.Any, js.Any]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+    inline def setOn(value: (String, js.Function1[/* e */ js.Any, js.Any]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
   }
 }

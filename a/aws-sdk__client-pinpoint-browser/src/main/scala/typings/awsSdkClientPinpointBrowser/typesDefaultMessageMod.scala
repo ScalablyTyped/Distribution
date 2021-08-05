@@ -24,28 +24,22 @@ object typesDefaultMessageMod {
   }
   object DefaultMessage {
     
-    @scala.inline
-    def apply(): DefaultMessage = {
+    inline def apply(): DefaultMessage = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DefaultMessage]
     }
     
-    @scala.inline
-    implicit class DefaultMessageMutableBuilder[Self <: DefaultMessage] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultMessage](x: Self) {
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
       
-      @scala.inline
-      def setSubstitutions(
+      inline def setSubstitutions(
         value: (StringDictionary[js.Array[String] | Iterable[String]]) | (Iterable[js.Tuple2[String, js.Array[String] | Iterable[String]]])
       ): Self = StObject.set(x, "Substitutions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubstitutionsUndefined: Self = StObject.set(x, "Substitutions", js.undefined)
+      inline def setSubstitutionsUndefined: Self = StObject.set(x, "Substitutions", js.undefined)
     }
   }
   
@@ -61,20 +55,16 @@ object typesDefaultMessageMod {
   }
   object UnmarshalledDefaultMessage {
     
-    @scala.inline
-    def apply(): UnmarshalledDefaultMessage = {
+    inline def apply(): UnmarshalledDefaultMessage = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledDefaultMessage]
     }
     
-    @scala.inline
-    implicit class UnmarshalledDefaultMessageMutableBuilder[Self <: UnmarshalledDefaultMessage] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledDefaultMessage](x: Self) {
       
-      @scala.inline
-      def setSubstitutions(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "Substitutions", value.asInstanceOf[js.Any])
+      inline def setSubstitutions(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "Substitutions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubstitutionsUndefined: Self = StObject.set(x, "Substitutions", js.undefined)
+      inline def setSubstitutionsUndefined: Self = StObject.set(x, "Substitutions", js.undefined)
     }
   }
 }

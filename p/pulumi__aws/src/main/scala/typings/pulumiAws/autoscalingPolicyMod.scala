@@ -105,21 +105,16 @@ object autoscalingPolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Policy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Policy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Policy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Policy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: PolicyState): Policy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Policy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: PolicyState, opts: CustomResourceOptions): Policy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Policy]
+    inline def get(name: String, id: Input[ID]): Policy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Policy]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Policy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Policy]
+    inline def get(name: String, id: Input[ID], state: PolicyState): Policy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Policy]
+    inline def get(name: String, id: Input[ID], state: PolicyState, opts: CustomResourceOptions): Policy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Policy]
     
     /**
       * Returns true if the given object is an instance of Policy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/autoscaling/policy.Policy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/autoscaling/policy.Policy */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/autoscaling/policy.Policy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/autoscaling/policy.Policy */ Boolean]
   }
   
   trait PolicyArgs extends StObject {
@@ -186,80 +181,56 @@ object autoscalingPolicyMod {
   }
   object PolicyArgs {
     
-    @scala.inline
-    def apply(autoscalingGroupName: Input[String]): PolicyArgs = {
+    inline def apply(autoscalingGroupName: Input[String]): PolicyArgs = {
       val __obj = js.Dynamic.literal(autoscalingGroupName = autoscalingGroupName.asInstanceOf[js.Any])
       __obj.asInstanceOf[PolicyArgs]
     }
     
-    @scala.inline
-    implicit class PolicyArgsMutableBuilder[Self <: PolicyArgs] (val x: Self) extends AnyVal {
+    extension [Self <: PolicyArgs](x: Self) {
       
-      @scala.inline
-      def setAdjustmentType(value: Input[String]): Self = StObject.set(x, "adjustmentType", value.asInstanceOf[js.Any])
+      inline def setAdjustmentType(value: Input[String]): Self = StObject.set(x, "adjustmentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdjustmentTypeUndefined: Self = StObject.set(x, "adjustmentType", js.undefined)
+      inline def setAdjustmentTypeUndefined: Self = StObject.set(x, "adjustmentType", js.undefined)
       
-      @scala.inline
-      def setAutoscalingGroupName(value: Input[String]): Self = StObject.set(x, "autoscalingGroupName", value.asInstanceOf[js.Any])
+      inline def setAutoscalingGroupName(value: Input[String]): Self = StObject.set(x, "autoscalingGroupName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCooldown(value: Input[Double]): Self = StObject.set(x, "cooldown", value.asInstanceOf[js.Any])
+      inline def setCooldown(value: Input[Double]): Self = StObject.set(x, "cooldown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCooldownUndefined: Self = StObject.set(x, "cooldown", js.undefined)
+      inline def setCooldownUndefined: Self = StObject.set(x, "cooldown", js.undefined)
       
-      @scala.inline
-      def setEstimatedInstanceWarmup(value: Input[Double]): Self = StObject.set(x, "estimatedInstanceWarmup", value.asInstanceOf[js.Any])
+      inline def setEstimatedInstanceWarmup(value: Input[Double]): Self = StObject.set(x, "estimatedInstanceWarmup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEstimatedInstanceWarmupUndefined: Self = StObject.set(x, "estimatedInstanceWarmup", js.undefined)
+      inline def setEstimatedInstanceWarmupUndefined: Self = StObject.set(x, "estimatedInstanceWarmup", js.undefined)
       
-      @scala.inline
-      def setMetricAggregationType(value: Input[String]): Self = StObject.set(x, "metricAggregationType", value.asInstanceOf[js.Any])
+      inline def setMetricAggregationType(value: Input[String]): Self = StObject.set(x, "metricAggregationType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetricAggregationTypeUndefined: Self = StObject.set(x, "metricAggregationType", js.undefined)
+      inline def setMetricAggregationTypeUndefined: Self = StObject.set(x, "metricAggregationType", js.undefined)
       
-      @scala.inline
-      def setMinAdjustmentMagnitude(value: Input[Double]): Self = StObject.set(x, "minAdjustmentMagnitude", value.asInstanceOf[js.Any])
+      inline def setMinAdjustmentMagnitude(value: Input[Double]): Self = StObject.set(x, "minAdjustmentMagnitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinAdjustmentMagnitudeUndefined: Self = StObject.set(x, "minAdjustmentMagnitude", js.undefined)
+      inline def setMinAdjustmentMagnitudeUndefined: Self = StObject.set(x, "minAdjustmentMagnitude", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPolicyType(value: Input[String]): Self = StObject.set(x, "policyType", value.asInstanceOf[js.Any])
+      inline def setPolicyType(value: Input[String]): Self = StObject.set(x, "policyType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyTypeUndefined: Self = StObject.set(x, "policyType", js.undefined)
+      inline def setPolicyTypeUndefined: Self = StObject.set(x, "policyType", js.undefined)
       
-      @scala.inline
-      def setScalingAdjustment(value: Input[Double]): Self = StObject.set(x, "scalingAdjustment", value.asInstanceOf[js.Any])
+      inline def setScalingAdjustment(value: Input[Double]): Self = StObject.set(x, "scalingAdjustment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScalingAdjustmentUndefined: Self = StObject.set(x, "scalingAdjustment", js.undefined)
+      inline def setScalingAdjustmentUndefined: Self = StObject.set(x, "scalingAdjustment", js.undefined)
       
-      @scala.inline
-      def setStepAdjustments(value: Input[js.Array[Input[typings.pulumiAws.inputMod.autoscaling.PolicyStepAdjustment]]]): Self = StObject.set(x, "stepAdjustments", value.asInstanceOf[js.Any])
+      inline def setStepAdjustments(value: Input[js.Array[Input[typings.pulumiAws.inputMod.autoscaling.PolicyStepAdjustment]]]): Self = StObject.set(x, "stepAdjustments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepAdjustmentsUndefined: Self = StObject.set(x, "stepAdjustments", js.undefined)
+      inline def setStepAdjustmentsUndefined: Self = StObject.set(x, "stepAdjustments", js.undefined)
       
-      @scala.inline
-      def setStepAdjustmentsVarargs(value: Input[typings.pulumiAws.inputMod.autoscaling.PolicyStepAdjustment]*): Self = StObject.set(x, "stepAdjustments", js.Array(value :_*))
+      inline def setStepAdjustmentsVarargs(value: Input[typings.pulumiAws.inputMod.autoscaling.PolicyStepAdjustment]*): Self = StObject.set(x, "stepAdjustments", js.Array(value :_*))
       
-      @scala.inline
-      def setTargetTrackingConfiguration(value: Input[typings.pulumiAws.inputMod.autoscaling.PolicyTargetTrackingConfiguration]): Self = StObject.set(x, "targetTrackingConfiguration", value.asInstanceOf[js.Any])
+      inline def setTargetTrackingConfiguration(value: Input[typings.pulumiAws.inputMod.autoscaling.PolicyTargetTrackingConfiguration]): Self = StObject.set(x, "targetTrackingConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetTrackingConfigurationUndefined: Self = StObject.set(x, "targetTrackingConfiguration", js.undefined)
+      inline def setTargetTrackingConfigurationUndefined: Self = StObject.set(x, "targetTrackingConfiguration", js.undefined)
     }
   }
   
@@ -332,89 +303,62 @@ object autoscalingPolicyMod {
   }
   object PolicyState {
     
-    @scala.inline
-    def apply(): PolicyState = {
+    inline def apply(): PolicyState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PolicyState]
     }
     
-    @scala.inline
-    implicit class PolicyStateMutableBuilder[Self <: PolicyState] (val x: Self) extends AnyVal {
+    extension [Self <: PolicyState](x: Self) {
       
-      @scala.inline
-      def setAdjustmentType(value: Input[String]): Self = StObject.set(x, "adjustmentType", value.asInstanceOf[js.Any])
+      inline def setAdjustmentType(value: Input[String]): Self = StObject.set(x, "adjustmentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdjustmentTypeUndefined: Self = StObject.set(x, "adjustmentType", js.undefined)
+      inline def setAdjustmentTypeUndefined: Self = StObject.set(x, "adjustmentType", js.undefined)
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setAutoscalingGroupName(value: Input[String]): Self = StObject.set(x, "autoscalingGroupName", value.asInstanceOf[js.Any])
+      inline def setAutoscalingGroupName(value: Input[String]): Self = StObject.set(x, "autoscalingGroupName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoscalingGroupNameUndefined: Self = StObject.set(x, "autoscalingGroupName", js.undefined)
+      inline def setAutoscalingGroupNameUndefined: Self = StObject.set(x, "autoscalingGroupName", js.undefined)
       
-      @scala.inline
-      def setCooldown(value: Input[Double]): Self = StObject.set(x, "cooldown", value.asInstanceOf[js.Any])
+      inline def setCooldown(value: Input[Double]): Self = StObject.set(x, "cooldown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCooldownUndefined: Self = StObject.set(x, "cooldown", js.undefined)
+      inline def setCooldownUndefined: Self = StObject.set(x, "cooldown", js.undefined)
       
-      @scala.inline
-      def setEstimatedInstanceWarmup(value: Input[Double]): Self = StObject.set(x, "estimatedInstanceWarmup", value.asInstanceOf[js.Any])
+      inline def setEstimatedInstanceWarmup(value: Input[Double]): Self = StObject.set(x, "estimatedInstanceWarmup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEstimatedInstanceWarmupUndefined: Self = StObject.set(x, "estimatedInstanceWarmup", js.undefined)
+      inline def setEstimatedInstanceWarmupUndefined: Self = StObject.set(x, "estimatedInstanceWarmup", js.undefined)
       
-      @scala.inline
-      def setMetricAggregationType(value: Input[String]): Self = StObject.set(x, "metricAggregationType", value.asInstanceOf[js.Any])
+      inline def setMetricAggregationType(value: Input[String]): Self = StObject.set(x, "metricAggregationType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetricAggregationTypeUndefined: Self = StObject.set(x, "metricAggregationType", js.undefined)
+      inline def setMetricAggregationTypeUndefined: Self = StObject.set(x, "metricAggregationType", js.undefined)
       
-      @scala.inline
-      def setMinAdjustmentMagnitude(value: Input[Double]): Self = StObject.set(x, "minAdjustmentMagnitude", value.asInstanceOf[js.Any])
+      inline def setMinAdjustmentMagnitude(value: Input[Double]): Self = StObject.set(x, "minAdjustmentMagnitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinAdjustmentMagnitudeUndefined: Self = StObject.set(x, "minAdjustmentMagnitude", js.undefined)
+      inline def setMinAdjustmentMagnitudeUndefined: Self = StObject.set(x, "minAdjustmentMagnitude", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPolicyType(value: Input[String]): Self = StObject.set(x, "policyType", value.asInstanceOf[js.Any])
+      inline def setPolicyType(value: Input[String]): Self = StObject.set(x, "policyType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyTypeUndefined: Self = StObject.set(x, "policyType", js.undefined)
+      inline def setPolicyTypeUndefined: Self = StObject.set(x, "policyType", js.undefined)
       
-      @scala.inline
-      def setScalingAdjustment(value: Input[Double]): Self = StObject.set(x, "scalingAdjustment", value.asInstanceOf[js.Any])
+      inline def setScalingAdjustment(value: Input[Double]): Self = StObject.set(x, "scalingAdjustment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScalingAdjustmentUndefined: Self = StObject.set(x, "scalingAdjustment", js.undefined)
+      inline def setScalingAdjustmentUndefined: Self = StObject.set(x, "scalingAdjustment", js.undefined)
       
-      @scala.inline
-      def setStepAdjustments(value: Input[js.Array[Input[typings.pulumiAws.inputMod.autoscaling.PolicyStepAdjustment]]]): Self = StObject.set(x, "stepAdjustments", value.asInstanceOf[js.Any])
+      inline def setStepAdjustments(value: Input[js.Array[Input[typings.pulumiAws.inputMod.autoscaling.PolicyStepAdjustment]]]): Self = StObject.set(x, "stepAdjustments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepAdjustmentsUndefined: Self = StObject.set(x, "stepAdjustments", js.undefined)
+      inline def setStepAdjustmentsUndefined: Self = StObject.set(x, "stepAdjustments", js.undefined)
       
-      @scala.inline
-      def setStepAdjustmentsVarargs(value: Input[typings.pulumiAws.inputMod.autoscaling.PolicyStepAdjustment]*): Self = StObject.set(x, "stepAdjustments", js.Array(value :_*))
+      inline def setStepAdjustmentsVarargs(value: Input[typings.pulumiAws.inputMod.autoscaling.PolicyStepAdjustment]*): Self = StObject.set(x, "stepAdjustments", js.Array(value :_*))
       
-      @scala.inline
-      def setTargetTrackingConfiguration(value: Input[typings.pulumiAws.inputMod.autoscaling.PolicyTargetTrackingConfiguration]): Self = StObject.set(x, "targetTrackingConfiguration", value.asInstanceOf[js.Any])
+      inline def setTargetTrackingConfiguration(value: Input[typings.pulumiAws.inputMod.autoscaling.PolicyTargetTrackingConfiguration]): Self = StObject.set(x, "targetTrackingConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetTrackingConfigurationUndefined: Self = StObject.set(x, "targetTrackingConfiguration", js.undefined)
+      inline def setTargetTrackingConfigurationUndefined: Self = StObject.set(x, "targetTrackingConfiguration", js.undefined)
     }
   }
 }

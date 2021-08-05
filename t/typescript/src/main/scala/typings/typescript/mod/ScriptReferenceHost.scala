@@ -16,8 +16,7 @@ trait ScriptReferenceHost extends StObject {
 }
 object ScriptReferenceHost {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getCompilerOptions: () => CompilerOptions,
     getCurrentDirectory: () => java.lang.String,
     getSourceFile: java.lang.String => js.UndefOr[SourceFile],
@@ -27,19 +26,14 @@ object ScriptReferenceHost {
     __obj.asInstanceOf[ScriptReferenceHost]
   }
   
-  @scala.inline
-  implicit class ScriptReferenceHostMutableBuilder[Self <: ScriptReferenceHost] (val x: Self) extends AnyVal {
+  extension [Self <: ScriptReferenceHost](x: Self) {
     
-    @scala.inline
-    def setGetCompilerOptions(value: () => CompilerOptions): Self = StObject.set(x, "getCompilerOptions", js.Any.fromFunction0(value))
+    inline def setGetCompilerOptions(value: () => CompilerOptions): Self = StObject.set(x, "getCompilerOptions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCurrentDirectory(value: () => java.lang.String): Self = StObject.set(x, "getCurrentDirectory", js.Any.fromFunction0(value))
+    inline def setGetCurrentDirectory(value: () => java.lang.String): Self = StObject.set(x, "getCurrentDirectory", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSourceFile(value: java.lang.String => js.UndefOr[SourceFile]): Self = StObject.set(x, "getSourceFile", js.Any.fromFunction1(value))
+    inline def setGetSourceFile(value: java.lang.String => js.UndefOr[SourceFile]): Self = StObject.set(x, "getSourceFile", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSourceFileByPath(value: Path => js.UndefOr[SourceFile]): Self = StObject.set(x, "getSourceFileByPath", js.Any.fromFunction1(value))
+    inline def setGetSourceFileByPath(value: Path => js.UndefOr[SourceFile]): Self = StObject.set(x, "getSourceFileByPath", js.Any.fromFunction1(value))
   }
 }

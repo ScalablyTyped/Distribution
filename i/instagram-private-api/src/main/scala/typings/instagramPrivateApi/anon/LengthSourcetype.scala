@@ -14,19 +14,15 @@ trait LengthSourcetype extends StObject {
 }
 object LengthSourcetype {
   
-  @scala.inline
-  def apply(length: Double, source_type: `3` | `4`): LengthSourcetype = {
+  inline def apply(length: Double, source_type: `3` | `4`): LengthSourcetype = {
     val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], source_type = source_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[LengthSourcetype]
   }
   
-  @scala.inline
-  implicit class LengthSourcetypeMutableBuilder[Self <: LengthSourcetype] (val x: Self) extends AnyVal {
+  extension [Self <: LengthSourcetype](x: Self) {
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource_type(value: `3` | `4`): Self = StObject.set(x, "source_type", value.asInstanceOf[js.Any])
+    inline def setSource_type(value: `3` | `4`): Self = StObject.set(x, "source_type", value.asInstanceOf[js.Any])
   }
 }

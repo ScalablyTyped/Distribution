@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IHTMLTableCaption")
 @js.native
-class IHTMLTableCaption protected ()
+/* private */ class IHTMLTableCaption ()
   extends StObject
      with typings.activexMshtml.MSHTML.IHTMLTableCaption {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.IHTMLTableCaption_typekey")
   var MSHTMLDotIHTMLTableCaption_typekey: typings.activexMshtml.MSHTML.IHTMLTableCaption = js.native
   

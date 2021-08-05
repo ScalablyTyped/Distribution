@@ -28,34 +28,25 @@ trait RemoveTargetsRequest extends StObject {
 }
 object RemoveTargetsRequest {
   
-  @scala.inline
-  def apply(Ids: TargetIdList, Rule: RuleName): RemoveTargetsRequest = {
+  inline def apply(Ids: TargetIdList, Rule: RuleName): RemoveTargetsRequest = {
     val __obj = js.Dynamic.literal(Ids = Ids.asInstanceOf[js.Any], Rule = Rule.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveTargetsRequest]
   }
   
-  @scala.inline
-  implicit class RemoveTargetsRequestMutableBuilder[Self <: RemoveTargetsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveTargetsRequest](x: Self) {
     
-    @scala.inline
-    def setEventBusName(value: EventBusNameOrArn): Self = StObject.set(x, "EventBusName", value.asInstanceOf[js.Any])
+    inline def setEventBusName(value: EventBusNameOrArn): Self = StObject.set(x, "EventBusName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventBusNameUndefined: Self = StObject.set(x, "EventBusName", js.undefined)
+    inline def setEventBusNameUndefined: Self = StObject.set(x, "EventBusName", js.undefined)
     
-    @scala.inline
-    def setForce(value: Boolean): Self = StObject.set(x, "Force", value.asInstanceOf[js.Any])
+    inline def setForce(value: Boolean): Self = StObject.set(x, "Force", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceUndefined: Self = StObject.set(x, "Force", js.undefined)
+    inline def setForceUndefined: Self = StObject.set(x, "Force", js.undefined)
     
-    @scala.inline
-    def setIds(value: TargetIdList): Self = StObject.set(x, "Ids", value.asInstanceOf[js.Any])
+    inline def setIds(value: TargetIdList): Self = StObject.set(x, "Ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdsVarargs(value: TargetId*): Self = StObject.set(x, "Ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: TargetId*): Self = StObject.set(x, "Ids", js.Array(value :_*))
     
-    @scala.inline
-    def setRule(value: RuleName): Self = StObject.set(x, "Rule", value.asInstanceOf[js.Any])
+    inline def setRule(value: RuleName): Self = StObject.set(x, "Rule", value.asInstanceOf[js.Any])
   }
 }

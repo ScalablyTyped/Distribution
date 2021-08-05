@@ -10,6 +10,5 @@ object sipjson {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def sjSerialize(smode: String, pvn: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sj_serialize")(smode.asInstanceOf[js.Any], pvn.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def sjSerialize(smode: String, pvn: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sj_serialize")(smode.asInstanceOf[js.Any], pvn.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

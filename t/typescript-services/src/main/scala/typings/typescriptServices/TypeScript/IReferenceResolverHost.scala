@@ -18,8 +18,7 @@ trait IReferenceResolverHost extends StObject {
 }
 object IReferenceResolverHost {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     directoryExists: String => Boolean,
     fileExists: String => Boolean,
     getParentDirectory: String => String,
@@ -30,22 +29,16 @@ object IReferenceResolverHost {
     __obj.asInstanceOf[IReferenceResolverHost]
   }
   
-  @scala.inline
-  implicit class IReferenceResolverHostMutableBuilder[Self <: IReferenceResolverHost] (val x: Self) extends AnyVal {
+  extension [Self <: IReferenceResolverHost](x: Self) {
     
-    @scala.inline
-    def setDirectoryExists(value: String => Boolean): Self = StObject.set(x, "directoryExists", js.Any.fromFunction1(value))
+    inline def setDirectoryExists(value: String => Boolean): Self = StObject.set(x, "directoryExists", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFileExists(value: String => Boolean): Self = StObject.set(x, "fileExists", js.Any.fromFunction1(value))
+    inline def setFileExists(value: String => Boolean): Self = StObject.set(x, "fileExists", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetParentDirectory(value: String => String): Self = StObject.set(x, "getParentDirectory", js.Any.fromFunction1(value))
+    inline def setGetParentDirectory(value: String => String): Self = StObject.set(x, "getParentDirectory", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetScriptSnapshot(value: String => IScriptSnapshot): Self = StObject.set(x, "getScriptSnapshot", js.Any.fromFunction1(value))
+    inline def setGetScriptSnapshot(value: String => IScriptSnapshot): Self = StObject.set(x, "getScriptSnapshot", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResolveRelativePath(value: (String, String) => String): Self = StObject.set(x, "resolveRelativePath", js.Any.fromFunction2(value))
+    inline def setResolveRelativePath(value: (String, String) => String): Self = StObject.set(x, "resolveRelativePath", js.Any.fromFunction2(value))
   }
 }

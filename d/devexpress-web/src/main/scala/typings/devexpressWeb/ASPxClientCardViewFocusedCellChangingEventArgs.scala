@@ -18,16 +18,13 @@ trait ASPxClientCardViewFocusedCellChangingEventArgs
 }
 object ASPxClientCardViewFocusedCellChangingEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, cellInfo: ASPxClientCardViewCellInfo): ASPxClientCardViewFocusedCellChangingEventArgs = {
+  inline def apply(cancel: Boolean, cellInfo: ASPxClientCardViewCellInfo): ASPxClientCardViewFocusedCellChangingEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], cellInfo = cellInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientCardViewFocusedCellChangingEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientCardViewFocusedCellChangingEventArgsMutableBuilder[Self <: ASPxClientCardViewFocusedCellChangingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientCardViewFocusedCellChangingEventArgs](x: Self) {
     
-    @scala.inline
-    def setCellInfo(value: ASPxClientCardViewCellInfo): Self = StObject.set(x, "cellInfo", value.asInstanceOf[js.Any])
+    inline def setCellInfo(value: ASPxClientCardViewCellInfo): Self = StObject.set(x, "cellInfo", value.asInstanceOf[js.Any])
   }
 }

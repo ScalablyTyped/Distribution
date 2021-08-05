@@ -17,22 +17,17 @@ trait FlowControlChannelRequest
 }
 object FlowControlChannelRequest {
   
-  @scala.inline
-  def apply(clientControl: Boolean, recipient: Double): FlowControlChannelRequest = {
+  inline def apply(clientControl: Boolean, recipient: Double): FlowControlChannelRequest = {
     val __obj = js.Dynamic.literal(clientControl = clientControl.asInstanceOf[js.Any], recipient = recipient.asInstanceOf[js.Any], request = "xon-xoff")
     __obj.asInstanceOf[FlowControlChannelRequest]
   }
   
-  @scala.inline
-  implicit class FlowControlChannelRequestMutableBuilder[Self <: FlowControlChannelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: FlowControlChannelRequest](x: Self) {
     
-    @scala.inline
-    def setClientControl(value: Boolean): Self = StObject.set(x, "clientControl", value.asInstanceOf[js.Any])
+    inline def setClientControl(value: Boolean): Self = StObject.set(x, "clientControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipient(value: Double): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
+    inline def setRecipient(value: Double): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: `xon-xoff`): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: `xon-xoff`): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
   }
 }

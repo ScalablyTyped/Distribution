@@ -17,8 +17,7 @@ trait RoleInstance extends StObject {
 }
 object RoleInstance {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     endpoints: StringDictionary[RoleInstanceEndpoint],
     faultDomain: String,
     id: String,
@@ -28,19 +27,14 @@ object RoleInstance {
     __obj.asInstanceOf[RoleInstance]
   }
   
-  @scala.inline
-  implicit class RoleInstanceMutableBuilder[Self <: RoleInstance] (val x: Self) extends AnyVal {
+  extension [Self <: RoleInstance](x: Self) {
     
-    @scala.inline
-    def setEndpoints(value: StringDictionary[RoleInstanceEndpoint]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
+    inline def setEndpoints(value: StringDictionary[RoleInstanceEndpoint]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaultDomain(value: String): Self = StObject.set(x, "faultDomain", value.asInstanceOf[js.Any])
+    inline def setFaultDomain(value: String): Self = StObject.set(x, "faultDomain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateDomain(value: String): Self = StObject.set(x, "updateDomain", value.asInstanceOf[js.Any])
+    inline def setUpdateDomain(value: String): Self = StObject.set(x, "updateDomain", value.asInstanceOf[js.Any])
   }
 }

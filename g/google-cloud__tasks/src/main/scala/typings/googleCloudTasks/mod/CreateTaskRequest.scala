@@ -15,25 +15,19 @@ trait CreateTaskRequest extends StObject {
 }
 object CreateTaskRequest {
   
-  @scala.inline
-  def apply(parent: String, task: PartialTask): CreateTaskRequest = {
+  inline def apply(parent: String, task: PartialTask): CreateTaskRequest = {
     val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], task = task.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTaskRequest]
   }
   
-  @scala.inline
-  implicit class CreateTaskRequestMutableBuilder[Self <: CreateTaskRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateTaskRequest](x: Self) {
     
-    @scala.inline
-    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseView(value: View): Self = StObject.set(x, "responseView", value.asInstanceOf[js.Any])
+    inline def setResponseView(value: View): Self = StObject.set(x, "responseView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseViewUndefined: Self = StObject.set(x, "responseView", js.undefined)
+    inline def setResponseViewUndefined: Self = StObject.set(x, "responseView", js.undefined)
     
-    @scala.inline
-    def setTask(value: PartialTask): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
+    inline def setTask(value: PartialTask): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
   }
 }

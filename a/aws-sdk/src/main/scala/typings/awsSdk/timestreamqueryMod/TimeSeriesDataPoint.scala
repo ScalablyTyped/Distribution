@@ -18,19 +18,15 @@ trait TimeSeriesDataPoint extends StObject {
 }
 object TimeSeriesDataPoint {
   
-  @scala.inline
-  def apply(Time: Timestamp, Value: Datum): TimeSeriesDataPoint = {
+  inline def apply(Time: Timestamp, Value: Datum): TimeSeriesDataPoint = {
     val __obj = js.Dynamic.literal(Time = Time.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeSeriesDataPoint]
   }
   
-  @scala.inline
-  implicit class TimeSeriesDataPointMutableBuilder[Self <: TimeSeriesDataPoint] (val x: Self) extends AnyVal {
+  extension [Self <: TimeSeriesDataPoint](x: Self) {
     
-    @scala.inline
-    def setTime(value: Timestamp): Self = StObject.set(x, "Time", value.asInstanceOf[js.Any])
+    inline def setTime(value: Timestamp): Self = StObject.set(x, "Time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Datum): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Datum): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

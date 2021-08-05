@@ -18,19 +18,15 @@ trait IPDialIn extends StObject {
 }
 object IPDialIn {
   
-  @scala.inline
-  def apply(CommsProtocol: CommsProtocol, Endpoint: Endpoint): IPDialIn = {
+  inline def apply(CommsProtocol: CommsProtocol, Endpoint: Endpoint): IPDialIn = {
     val __obj = js.Dynamic.literal(CommsProtocol = CommsProtocol.asInstanceOf[js.Any], Endpoint = Endpoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPDialIn]
   }
   
-  @scala.inline
-  implicit class IPDialInMutableBuilder[Self <: IPDialIn] (val x: Self) extends AnyVal {
+  extension [Self <: IPDialIn](x: Self) {
     
-    @scala.inline
-    def setCommsProtocol(value: CommsProtocol): Self = StObject.set(x, "CommsProtocol", value.asInstanceOf[js.Any])
+    inline def setCommsProtocol(value: CommsProtocol): Self = StObject.set(x, "CommsProtocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpoint(value: Endpoint): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpoint(value: Endpoint): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
   }
 }

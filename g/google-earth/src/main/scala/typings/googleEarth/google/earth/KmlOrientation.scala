@@ -53,8 +53,7 @@ trait KmlOrientation
 }
 object KmlOrientation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
     equals_ : KmlObject => Boolean,
@@ -82,28 +81,20 @@ object KmlOrientation {
     __obj.asInstanceOf[KmlOrientation]
   }
   
-  @scala.inline
-  implicit class KmlOrientationMutableBuilder[Self <: KmlOrientation] (val x: Self) extends AnyVal {
+  extension [Self <: KmlOrientation](x: Self) {
     
-    @scala.inline
-    def setGetHeading(value: () => Double): Self = StObject.set(x, "getHeading", js.Any.fromFunction0(value))
+    inline def setGetHeading(value: () => Double): Self = StObject.set(x, "getHeading", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRoll(value: () => Double): Self = StObject.set(x, "getRoll", js.Any.fromFunction0(value))
+    inline def setGetRoll(value: () => Double): Self = StObject.set(x, "getRoll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTilt(value: () => Double): Self = StObject.set(x, "getTilt", js.Any.fromFunction0(value))
+    inline def setGetTilt(value: () => Double): Self = StObject.set(x, "getTilt", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction3(value))
+    inline def setSet(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSetHeading(value: Double => Unit): Self = StObject.set(x, "setHeading", js.Any.fromFunction1(value))
+    inline def setSetHeading(value: Double => Unit): Self = StObject.set(x, "setHeading", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRoll(value: Double => Unit): Self = StObject.set(x, "setRoll", js.Any.fromFunction1(value))
+    inline def setSetRoll(value: Double => Unit): Self = StObject.set(x, "setRoll", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTilt(value: Double => Unit): Self = StObject.set(x, "setTilt", js.Any.fromFunction1(value))
+    inline def setSetTilt(value: Double => Unit): Self = StObject.set(x, "setTilt", js.Any.fromFunction1(value))
   }
 }

@@ -15,19 +15,15 @@ trait BoundVolume extends StObject {
 }
 object BoundVolume {
   
-  @scala.inline
-  def apply(max: Position3D, min: Position3D): BoundVolume = {
+  inline def apply(max: Position3D, min: Position3D): BoundVolume = {
     val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoundVolume]
   }
   
-  @scala.inline
-  implicit class BoundVolumeMutableBuilder[Self <: BoundVolume] (val x: Self) extends AnyVal {
+  extension [Self <: BoundVolume](x: Self) {
     
-    @scala.inline
-    def setMax(value: Position3D): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Position3D): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: Position3D): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Position3D): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
   }
 }

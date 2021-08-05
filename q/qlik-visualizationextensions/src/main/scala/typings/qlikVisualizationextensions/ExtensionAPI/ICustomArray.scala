@@ -20,8 +20,7 @@ trait ICustomArray
 }
 object ICustomArray {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addTranslation: String,
     allowAdd: Boolean,
     allowMove: Boolean,
@@ -36,22 +35,16 @@ object ICustomArray {
     __obj.asInstanceOf[ICustomArray]
   }
   
-  @scala.inline
-  implicit class ICustomArrayMutableBuilder[Self <: ICustomArray] (val x: Self) extends AnyVal {
+  extension [Self <: ICustomArray](x: Self) {
     
-    @scala.inline
-    def setAddTranslation(value: String): Self = StObject.set(x, "addTranslation", value.asInstanceOf[js.Any])
+    inline def setAddTranslation(value: String): Self = StObject.set(x, "addTranslation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowAdd(value: Boolean): Self = StObject.set(x, "allowAdd", value.asInstanceOf[js.Any])
+    inline def setAllowAdd(value: Boolean): Self = StObject.set(x, "allowAdd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowMove(value: Boolean): Self = StObject.set(x, "allowMove", value.asInstanceOf[js.Any])
+    inline def setAllowMove(value: Boolean): Self = StObject.set(x, "allowMove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowRemove(value: Boolean): Self = StObject.set(x, "allowRemove", value.asInstanceOf[js.Any])
+    inline def setAllowRemove(value: Boolean): Self = StObject.set(x, "allowRemove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemTitleRef(value: String): Self = StObject.set(x, "itemTitleRef", value.asInstanceOf[js.Any])
+    inline def setItemTitleRef(value: String): Self = StObject.set(x, "itemTitleRef", value.asInstanceOf[js.Any])
   }
 }

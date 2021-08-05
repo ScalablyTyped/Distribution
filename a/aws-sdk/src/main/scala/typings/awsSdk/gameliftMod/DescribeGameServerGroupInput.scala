@@ -13,16 +13,13 @@ trait DescribeGameServerGroupInput extends StObject {
 }
 object DescribeGameServerGroupInput {
   
-  @scala.inline
-  def apply(GameServerGroupName: GameServerGroupNameOrArn): DescribeGameServerGroupInput = {
+  inline def apply(GameServerGroupName: GameServerGroupNameOrArn): DescribeGameServerGroupInput = {
     val __obj = js.Dynamic.literal(GameServerGroupName = GameServerGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeGameServerGroupInput]
   }
   
-  @scala.inline
-  implicit class DescribeGameServerGroupInputMutableBuilder[Self <: DescribeGameServerGroupInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeGameServerGroupInput](x: Self) {
     
-    @scala.inline
-    def setGameServerGroupName(value: GameServerGroupNameOrArn): Self = StObject.set(x, "GameServerGroupName", value.asInstanceOf[js.Any])
+    inline def setGameServerGroupName(value: GameServerGroupNameOrArn): Self = StObject.set(x, "GameServerGroupName", value.asInstanceOf[js.Any])
   }
 }

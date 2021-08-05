@@ -10,8 +10,7 @@ trait HTMLFrameSetElementEventMap
      with WindowEventHandlersEventMap
 object HTMLFrameSetElementEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abort: UIEvent,
     afterprint: Event,
     animationcancel: AnimationEvent,

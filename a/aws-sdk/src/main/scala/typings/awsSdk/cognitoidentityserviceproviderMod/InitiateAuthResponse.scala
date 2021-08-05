@@ -28,37 +28,27 @@ trait InitiateAuthResponse extends StObject {
 }
 object InitiateAuthResponse {
   
-  @scala.inline
-  def apply(): InitiateAuthResponse = {
+  inline def apply(): InitiateAuthResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InitiateAuthResponse]
   }
   
-  @scala.inline
-  implicit class InitiateAuthResponseMutableBuilder[Self <: InitiateAuthResponse] (val x: Self) extends AnyVal {
+  extension [Self <: InitiateAuthResponse](x: Self) {
     
-    @scala.inline
-    def setAuthenticationResult(value: AuthenticationResultType): Self = StObject.set(x, "AuthenticationResult", value.asInstanceOf[js.Any])
+    inline def setAuthenticationResult(value: AuthenticationResultType): Self = StObject.set(x, "AuthenticationResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationResultUndefined: Self = StObject.set(x, "AuthenticationResult", js.undefined)
+    inline def setAuthenticationResultUndefined: Self = StObject.set(x, "AuthenticationResult", js.undefined)
     
-    @scala.inline
-    def setChallengeName(value: ChallengeNameType): Self = StObject.set(x, "ChallengeName", value.asInstanceOf[js.Any])
+    inline def setChallengeName(value: ChallengeNameType): Self = StObject.set(x, "ChallengeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChallengeNameUndefined: Self = StObject.set(x, "ChallengeName", js.undefined)
+    inline def setChallengeNameUndefined: Self = StObject.set(x, "ChallengeName", js.undefined)
     
-    @scala.inline
-    def setChallengeParameters(value: ChallengeParametersType): Self = StObject.set(x, "ChallengeParameters", value.asInstanceOf[js.Any])
+    inline def setChallengeParameters(value: ChallengeParametersType): Self = StObject.set(x, "ChallengeParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChallengeParametersUndefined: Self = StObject.set(x, "ChallengeParameters", js.undefined)
+    inline def setChallengeParametersUndefined: Self = StObject.set(x, "ChallengeParameters", js.undefined)
     
-    @scala.inline
-    def setSession(value: SessionType): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: SessionType): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionUndefined: Self = StObject.set(x, "Session", js.undefined)
+    inline def setSessionUndefined: Self = StObject.set(x, "Session", js.undefined)
   }
 }

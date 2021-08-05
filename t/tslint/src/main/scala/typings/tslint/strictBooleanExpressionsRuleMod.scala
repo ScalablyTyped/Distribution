@@ -44,8 +44,7 @@ object strictBooleanExpressionsRuleMod {
     @JSImport("tslint/lib/rules/strictBooleanExpressionsRule", "Rule.metadata")
     @js.native
     def metadata: IRuleMetadata = js.native
-    @scala.inline
-    def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    inline def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
   
   type Location = PrefixUnaryExpression | IfStatement | WhileStatement | DoStatement | ForStatement | ConditionalExpression | BinaryExpression
@@ -63,29 +62,21 @@ object strictBooleanExpressionsRuleMod {
   trait TypeFailure extends StObject
   object TypeFailure {
     
-    @scala.inline
-    def AlwaysFalsy: `1` = 1.asInstanceOf[`1`]
+    inline def AlwaysFalsy: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def AlwaysTruthy: `0` = 0.asInstanceOf[`0`]
+    inline def AlwaysTruthy: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def Enum: `6` = 6.asInstanceOf[`6`]
+    inline def Enum: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def Mixes: `7` = 7.asInstanceOf[`7`]
+    inline def Mixes: `7` = 7.asInstanceOf[`7`]
     
-    @scala.inline
-    def Null: `4` = 4.asInstanceOf[`4`]
+    inline def Null: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def Number: `3` = 3.asInstanceOf[`3`]
+    inline def Number: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def String: `2` = 2.asInstanceOf[`2`]
+    inline def String: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def Undefined: `5` = 5.asInstanceOf[`5`]
+    inline def Undefined: `5` = 5.asInstanceOf[`5`]
   }
   
   /* augmented module */
@@ -99,8 +90,7 @@ object strictBooleanExpressionsRuleMod {
     }
     object IntrinsicType {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         flags: TypeFlags,
         getApparentProperties: () => js.Array[Symbol],
         getBaseTypes: () => js.UndefOr[js.Array[BaseType]],
@@ -131,11 +121,9 @@ object strictBooleanExpressionsRuleMod {
         __obj.asInstanceOf[IntrinsicType]
       }
       
-      @scala.inline
-      implicit class IntrinsicTypeMutableBuilder[Self <: IntrinsicType] (val x: Self) extends AnyVal {
+      extension [Self <: IntrinsicType](x: Self) {
         
-        @scala.inline
-        def setIntrinsicName(value: String): Self = StObject.set(x, "intrinsicName", value.asInstanceOf[js.Any])
+        inline def setIntrinsicName(value: String): Self = StObject.set(x, "intrinsicName", value.asInstanceOf[js.Any])
       }
     }
   }

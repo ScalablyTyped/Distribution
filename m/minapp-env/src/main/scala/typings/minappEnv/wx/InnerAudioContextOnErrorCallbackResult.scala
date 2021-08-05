@@ -23,16 +23,13 @@ trait InnerAudioContextOnErrorCallbackResult extends StObject {
 }
 object InnerAudioContextOnErrorCallbackResult {
   
-  @scala.inline
-  def apply(errCode: `10001` | `10002` | `10003` | `10004` | `-1`): InnerAudioContextOnErrorCallbackResult = {
+  inline def apply(errCode: `10001` | `10002` | `10003` | `10004` | `-1`): InnerAudioContextOnErrorCallbackResult = {
     val __obj = js.Dynamic.literal(errCode = errCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[InnerAudioContextOnErrorCallbackResult]
   }
   
-  @scala.inline
-  implicit class InnerAudioContextOnErrorCallbackResultMutableBuilder[Self <: InnerAudioContextOnErrorCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: InnerAudioContextOnErrorCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrCode(value: `10001` | `10002` | `10003` | `10004` | `-1`): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
+    inline def setErrCode(value: `10001` | `10002` | `10003` | `10004` | `-1`): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
   }
 }

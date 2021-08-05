@@ -13,14 +13,12 @@ object changeMessageVisibilityExceptionsUnionMod {
   trait ChangeMessageVisibilityExceptionsUnion extends StObject
   object ChangeMessageVisibilityExceptionsUnion {
     
-    @scala.inline
-    def MessageNotInflight(): typings.awsSdkClientSqsNode.typesMessageNotInflightMod.MessageNotInflight = {
+    inline def MessageNotInflight(): typings.awsSdkClientSqsNode.typesMessageNotInflightMod.MessageNotInflight = {
       val __obj = js.Dynamic.literal(name = "MessageNotInflight")
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesMessageNotInflightMod.MessageNotInflight]
     }
     
-    @scala.inline
-    def ReceiptHandleIsInvalid(): typings.awsSdkClientSqsNode.typesReceiptHandleIsInvalidMod.ReceiptHandleIsInvalid = {
+    inline def ReceiptHandleIsInvalid(): typings.awsSdkClientSqsNode.typesReceiptHandleIsInvalidMod.ReceiptHandleIsInvalid = {
       val __obj = js.Dynamic.literal(name = "ReceiptHandleIsInvalid")
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesReceiptHandleIsInvalidMod.ReceiptHandleIsInvalid]
     }

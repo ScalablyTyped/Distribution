@@ -11,19 +11,15 @@ trait GoogleCloudDatacatalogV1beta1ViewSpec extends StObject {
 }
 object GoogleCloudDatacatalogV1beta1ViewSpec {
   
-  @scala.inline
-  def apply(): GoogleCloudDatacatalogV1beta1ViewSpec = {
+  inline def apply(): GoogleCloudDatacatalogV1beta1ViewSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatacatalogV1beta1ViewSpec]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatacatalogV1beta1ViewSpecMutableBuilder[Self <: GoogleCloudDatacatalogV1beta1ViewSpec] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatacatalogV1beta1ViewSpec](x: Self) {
     
-    @scala.inline
-    def setViewQuery(value: String): Self = StObject.set(x, "viewQuery", value.asInstanceOf[js.Any])
+    inline def setViewQuery(value: String): Self = StObject.set(x, "viewQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewQueryUndefined: Self = StObject.set(x, "viewQuery", js.undefined)
+    inline def setViewQueryUndefined: Self = StObject.set(x, "viewQuery", js.undefined)
   }
 }

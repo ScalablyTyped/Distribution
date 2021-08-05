@@ -22,25 +22,19 @@ trait AssociationForeignKeyOptions
 }
 object AssociationForeignKeyOptions {
   
-  @scala.inline
-  def apply(): AssociationForeignKeyOptions = {
+  inline def apply(): AssociationForeignKeyOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssociationForeignKeyOptions]
   }
   
-  @scala.inline
-  implicit class AssociationForeignKeyOptionsMutableBuilder[Self <: AssociationForeignKeyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AssociationForeignKeyOptions](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setUnique(value: Boolean | String): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
+    inline def setUnique(value: Boolean | String): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
+    inline def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
   }
 }

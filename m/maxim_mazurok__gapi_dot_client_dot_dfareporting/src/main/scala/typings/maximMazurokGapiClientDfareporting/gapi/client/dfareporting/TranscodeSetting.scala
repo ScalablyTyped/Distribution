@@ -14,28 +14,21 @@ trait TranscodeSetting extends StObject {
 }
 object TranscodeSetting {
   
-  @scala.inline
-  def apply(): TranscodeSetting = {
+  inline def apply(): TranscodeSetting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TranscodeSetting]
   }
   
-  @scala.inline
-  implicit class TranscodeSettingMutableBuilder[Self <: TranscodeSetting] (val x: Self) extends AnyVal {
+  extension [Self <: TranscodeSetting](x: Self) {
     
-    @scala.inline
-    def setEnabledVideoFormats(value: js.Array[Double]): Self = StObject.set(x, "enabledVideoFormats", value.asInstanceOf[js.Any])
+    inline def setEnabledVideoFormats(value: js.Array[Double]): Self = StObject.set(x, "enabledVideoFormats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledVideoFormatsUndefined: Self = StObject.set(x, "enabledVideoFormats", js.undefined)
+    inline def setEnabledVideoFormatsUndefined: Self = StObject.set(x, "enabledVideoFormats", js.undefined)
     
-    @scala.inline
-    def setEnabledVideoFormatsVarargs(value: Double*): Self = StObject.set(x, "enabledVideoFormats", js.Array(value :_*))
+    inline def setEnabledVideoFormatsVarargs(value: Double*): Self = StObject.set(x, "enabledVideoFormats", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

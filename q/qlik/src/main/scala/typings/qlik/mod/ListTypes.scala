@@ -20,36 +20,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListTypes extends StObject
 object ListTypes {
   
-  @scala.inline
-  def BookmarkList: typings.qlik.qlikStrings.BookmarkList = "BookmarkList".asInstanceOf[typings.qlik.qlikStrings.BookmarkList]
+  inline def BookmarkList: typings.qlik.qlikStrings.BookmarkList = "BookmarkList".asInstanceOf[typings.qlik.qlikStrings.BookmarkList]
   
-  @scala.inline
-  def DimensionList: typings.qlik.qlikStrings.DimensionList = "DimensionList".asInstanceOf[typings.qlik.qlikStrings.DimensionList]
+  inline def DimensionList: typings.qlik.qlikStrings.DimensionList = "DimensionList".asInstanceOf[typings.qlik.qlikStrings.DimensionList]
   
-  @scala.inline
-  def FieldList: typings.qlik.qlikStrings.FieldList = "FieldList".asInstanceOf[typings.qlik.qlikStrings.FieldList]
+  inline def FieldList: typings.qlik.qlikStrings.FieldList = "FieldList".asInstanceOf[typings.qlik.qlikStrings.FieldList]
   
-  @scala.inline
-  def Materobject: typings.qlik.qlikStrings.Materobject = "Materobject".asInstanceOf[typings.qlik.qlikStrings.Materobject]
+  inline def Materobject: typings.qlik.qlikStrings.Materobject = "Materobject".asInstanceOf[typings.qlik.qlikStrings.Materobject]
   
-  @scala.inline
-  def MeasureList: typings.qlik.qlikStrings.MeasureList = "MeasureList".asInstanceOf[typings.qlik.qlikStrings.MeasureList]
+  inline def MeasureList: typings.qlik.qlikStrings.MeasureList = "MeasureList".asInstanceOf[typings.qlik.qlikStrings.MeasureList]
   
-  @scala.inline
-  def MediaList: typings.qlik.qlikStrings.MediaList = "MediaList".asInstanceOf[typings.qlik.qlikStrings.MediaList]
+  inline def MediaList: typings.qlik.qlikStrings.MediaList = "MediaList".asInstanceOf[typings.qlik.qlikStrings.MediaList]
   
-  @scala.inline
-  def Selectionobject: typings.qlik.qlikStrings.Selectionobject = "Selectionobject".asInstanceOf[typings.qlik.qlikStrings.Selectionobject]
+  inline def Selectionobject: typings.qlik.qlikStrings.Selectionobject = "Selectionobject".asInstanceOf[typings.qlik.qlikStrings.Selectionobject]
   
-  @scala.inline
-  def SnapshotList: typings.qlik.qlikStrings.SnapshotList = "SnapshotList".asInstanceOf[typings.qlik.qlikStrings.SnapshotList]
+  inline def SnapshotList: typings.qlik.qlikStrings.SnapshotList = "SnapshotList".asInstanceOf[typings.qlik.qlikStrings.SnapshotList]
   
-  @scala.inline
-  def VariableList: typings.qlik.qlikStrings.VariableList = "VariableList".asInstanceOf[typings.qlik.qlikStrings.VariableList]
+  inline def VariableList: typings.qlik.qlikStrings.VariableList = "VariableList".asInstanceOf[typings.qlik.qlikStrings.VariableList]
   
-  @scala.inline
-  def sheet: typings.qlik.qlikStrings.sheet = "sheet".asInstanceOf[typings.qlik.qlikStrings.sheet]
+  inline def sheet: typings.qlik.qlikStrings.sheet = "sheet".asInstanceOf[typings.qlik.qlikStrings.sheet]
   
-  @scala.inline
-  def story: typings.qlik.qlikStrings.story = "story".asInstanceOf[typings.qlik.qlikStrings.story]
+  inline def story: typings.qlik.qlikStrings.story = "story".asInstanceOf[typings.qlik.qlikStrings.story]
 }

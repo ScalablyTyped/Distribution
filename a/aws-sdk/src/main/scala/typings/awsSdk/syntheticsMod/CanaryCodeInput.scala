@@ -33,40 +33,29 @@ trait CanaryCodeInput extends StObject {
 }
 object CanaryCodeInput {
   
-  @scala.inline
-  def apply(Handler: String): CanaryCodeInput = {
+  inline def apply(Handler: String): CanaryCodeInput = {
     val __obj = js.Dynamic.literal(Handler = Handler.asInstanceOf[js.Any])
     __obj.asInstanceOf[CanaryCodeInput]
   }
   
-  @scala.inline
-  implicit class CanaryCodeInputMutableBuilder[Self <: CanaryCodeInput] (val x: Self) extends AnyVal {
+  extension [Self <: CanaryCodeInput](x: Self) {
     
-    @scala.inline
-    def setHandler(value: String): Self = StObject.set(x, "Handler", value.asInstanceOf[js.Any])
+    inline def setHandler(value: String): Self = StObject.set(x, "Handler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3Bucket(value: String): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
+    inline def setS3Bucket(value: String): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3BucketUndefined: Self = StObject.set(x, "S3Bucket", js.undefined)
+    inline def setS3BucketUndefined: Self = StObject.set(x, "S3Bucket", js.undefined)
     
-    @scala.inline
-    def setS3Key(value: String): Self = StObject.set(x, "S3Key", value.asInstanceOf[js.Any])
+    inline def setS3Key(value: String): Self = StObject.set(x, "S3Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3KeyUndefined: Self = StObject.set(x, "S3Key", js.undefined)
+    inline def setS3KeyUndefined: Self = StObject.set(x, "S3Key", js.undefined)
     
-    @scala.inline
-    def setS3Version(value: String): Self = StObject.set(x, "S3Version", value.asInstanceOf[js.Any])
+    inline def setS3Version(value: String): Self = StObject.set(x, "S3Version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3VersionUndefined: Self = StObject.set(x, "S3Version", js.undefined)
+    inline def setS3VersionUndefined: Self = StObject.set(x, "S3Version", js.undefined)
     
-    @scala.inline
-    def setZipFile(value: _Blob): Self = StObject.set(x, "ZipFile", value.asInstanceOf[js.Any])
+    inline def setZipFile(value: _Blob): Self = StObject.set(x, "ZipFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZipFileUndefined: Self = StObject.set(x, "ZipFile", js.undefined)
+    inline def setZipFileUndefined: Self = StObject.set(x, "ZipFile", js.undefined)
   }
 }

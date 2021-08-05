@@ -10,6 +10,5 @@ object countSymbolsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(s: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(s.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def default(s: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(s.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

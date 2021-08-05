@@ -18,22 +18,17 @@ trait ParametersLink extends StObject {
 }
 object ParametersLink {
   
-  @scala.inline
-  def apply(uri: String): ParametersLink = {
+  inline def apply(uri: String): ParametersLink = {
     val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersLink]
   }
   
-  @scala.inline
-  implicit class ParametersLinkMutableBuilder[Self <: ParametersLink] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersLink](x: Self) {
     
-    @scala.inline
-    def setContentVersion(value: String): Self = StObject.set(x, "contentVersion", value.asInstanceOf[js.Any])
+    inline def setContentVersion(value: String): Self = StObject.set(x, "contentVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentVersionUndefined: Self = StObject.set(x, "contentVersion", js.undefined)
+    inline def setContentVersionUndefined: Self = StObject.set(x, "contentVersion", js.undefined)
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

@@ -15,25 +15,19 @@ trait DiskUsage extends StObject {
 }
 object DiskUsage {
   
-  @scala.inline
-  def apply(): DiskUsage = {
+  inline def apply(): DiskUsage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DiskUsage]
   }
   
-  @scala.inline
-  implicit class DiskUsageMutableBuilder[Self <: DiskUsage] (val x: Self) extends AnyVal {
+  extension [Self <: DiskUsage](x: Self) {
     
-    @scala.inline
-    def setMaximum_allowed_bytes(value: Double): Self = StObject.set(x, "maximum_allowed_bytes", value.asInstanceOf[js.Any])
+    inline def setMaximum_allowed_bytes(value: Double): Self = StObject.set(x, "maximum_allowed_bytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximum_allowed_bytesUndefined: Self = StObject.set(x, "maximum_allowed_bytes", js.undefined)
+    inline def setMaximum_allowed_bytesUndefined: Self = StObject.set(x, "maximum_allowed_bytes", js.undefined)
     
-    @scala.inline
-    def setUsed_bytes(value: Double): Self = StObject.set(x, "used_bytes", value.asInstanceOf[js.Any])
+    inline def setUsed_bytes(value: Double): Self = StObject.set(x, "used_bytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsed_bytesUndefined: Self = StObject.set(x, "used_bytes", js.undefined)
+    inline def setUsed_bytesUndefined: Self = StObject.set(x, "used_bytes", js.undefined)
   }
 }

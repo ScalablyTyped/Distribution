@@ -22,25 +22,19 @@ trait SchemaEventChild extends StObject {
 }
 object SchemaEventChild {
   
-  @scala.inline
-  def apply(): SchemaEventChild = {
+  inline def apply(): SchemaEventChild = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEventChild]
   }
   
-  @scala.inline
-  implicit class SchemaEventChildMutableBuilder[Self <: SchemaEventChild] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaEventChild](x: Self) {
     
-    @scala.inline
-    def setChildId(value: String): Self = StObject.set(x, "childId", value.asInstanceOf[js.Any])
+    inline def setChildId(value: String): Self = StObject.set(x, "childId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildIdUndefined: Self = StObject.set(x, "childId", js.undefined)
+    inline def setChildIdUndefined: Self = StObject.set(x, "childId", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

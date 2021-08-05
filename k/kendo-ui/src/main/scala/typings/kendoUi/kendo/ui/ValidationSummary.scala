@@ -13,25 +13,19 @@ trait ValidationSummary extends StObject {
 }
 object ValidationSummary {
   
-  @scala.inline
-  def apply(): ValidationSummary = {
+  inline def apply(): ValidationSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ValidationSummary]
   }
   
-  @scala.inline
-  implicit class ValidationSummaryMutableBuilder[Self <: ValidationSummary] (val x: Self) extends AnyVal {
+  extension [Self <: ValidationSummary](x: Self) {
     
-    @scala.inline
-    def setContainer(value: String | JQuery): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: String | JQuery): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setTemplate(value: String | js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: String | js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
   }
 }

@@ -33,8 +33,7 @@ trait CreateLifecyclePolicyRequest extends StObject {
 }
 object CreateLifecyclePolicyRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Description: PolicyDescription,
     ExecutionRoleArn: ExecutionRoleArn,
     PolicyDetails: PolicyDetails,
@@ -44,25 +43,18 @@ object CreateLifecyclePolicyRequest {
     __obj.asInstanceOf[CreateLifecyclePolicyRequest]
   }
   
-  @scala.inline
-  implicit class CreateLifecyclePolicyRequestMutableBuilder[Self <: CreateLifecyclePolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateLifecyclePolicyRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: PolicyDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: PolicyDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionRoleArn(value: ExecutionRoleArn): Self = StObject.set(x, "ExecutionRoleArn", value.asInstanceOf[js.Any])
+    inline def setExecutionRoleArn(value: ExecutionRoleArn): Self = StObject.set(x, "ExecutionRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyDetails(value: PolicyDetails): Self = StObject.set(x, "PolicyDetails", value.asInstanceOf[js.Any])
+    inline def setPolicyDetails(value: PolicyDetails): Self = StObject.set(x, "PolicyDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: SettablePolicyStateValues): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: SettablePolicyStateValues): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

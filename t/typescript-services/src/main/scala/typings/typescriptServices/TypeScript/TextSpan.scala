@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TextSpan extends StObject {
   
-  var _length: js.Any
+  /* private */ var _length: js.Any
   
-  var _start: js.Any
+  /* private */ var _start: js.Any
   
   def containsPosition(position: Double): Boolean
   
@@ -36,8 +36,7 @@ trait TextSpan extends StObject {
 }
 object TextSpan {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _length: js.Any,
     _start: js.Any,
     containsPosition: Double => Boolean,
@@ -57,49 +56,34 @@ object TextSpan {
     __obj.asInstanceOf[TextSpan]
   }
   
-  @scala.inline
-  implicit class TextSpanMutableBuilder[Self <: TextSpan] (val x: Self) extends AnyVal {
+  extension [Self <: TextSpan](x: Self) {
     
-    @scala.inline
-    def setContainsPosition(value: Double => Boolean): Self = StObject.set(x, "containsPosition", js.Any.fromFunction1(value))
+    inline def setContainsPosition(value: Double => Boolean): Self = StObject.set(x, "containsPosition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setContainsTextSpan(value: TextSpan => Boolean): Self = StObject.set(x, "containsTextSpan", js.Any.fromFunction1(value))
+    inline def setContainsTextSpan(value: TextSpan => Boolean): Self = StObject.set(x, "containsTextSpan", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEnd(value: () => Double): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
+    inline def setEnd(value: () => Double): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIntersection(value: TextSpan => TextSpan): Self = StObject.set(x, "intersection", js.Any.fromFunction1(value))
+    inline def setIntersection(value: TextSpan => TextSpan): Self = StObject.set(x, "intersection", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIntersectsWith(value: (Double, Double) => Boolean): Self = StObject.set(x, "intersectsWith", js.Any.fromFunction2(value))
+    inline def setIntersectsWith(value: (Double, Double) => Boolean): Self = StObject.set(x, "intersectsWith", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setIntersectsWithPosition(value: Double => Boolean): Self = StObject.set(x, "intersectsWithPosition", js.Any.fromFunction1(value))
+    inline def setIntersectsWithPosition(value: Double => Boolean): Self = StObject.set(x, "intersectsWithPosition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIntersectsWithTextSpan(value: TextSpan => Boolean): Self = StObject.set(x, "intersectsWithTextSpan", js.Any.fromFunction1(value))
+    inline def setIntersectsWithTextSpan(value: TextSpan => Boolean): Self = StObject.set(x, "intersectsWithTextSpan", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
+    inline def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLength(value: () => Double): Self = StObject.set(x, "length", js.Any.fromFunction0(value))
+    inline def setLength(value: () => Double): Self = StObject.set(x, "length", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOverlap(value: TextSpan => TextSpan): Self = StObject.set(x, "overlap", js.Any.fromFunction1(value))
+    inline def setOverlap(value: TextSpan => TextSpan): Self = StObject.set(x, "overlap", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOverlapsWith(value: TextSpan => Boolean): Self = StObject.set(x, "overlapsWith", js.Any.fromFunction1(value))
+    inline def setOverlapsWith(value: TextSpan => Boolean): Self = StObject.set(x, "overlapsWith", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStart(value: () => Double): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+    inline def setStart(value: () => Double): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def set_length(value: js.Any): Self = StObject.set(x, "_length", value.asInstanceOf[js.Any])
+    inline def set_length(value: js.Any): Self = StObject.set(x, "_length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_start(value: js.Any): Self = StObject.set(x, "_start", value.asInstanceOf[js.Any])
+    inline def set_start(value: js.Any): Self = StObject.set(x, "_start", value.asInstanceOf[js.Any])
   }
 }

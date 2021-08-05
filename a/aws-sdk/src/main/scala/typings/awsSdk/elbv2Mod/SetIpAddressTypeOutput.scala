@@ -13,19 +13,15 @@ trait SetIpAddressTypeOutput extends StObject {
 }
 object SetIpAddressTypeOutput {
   
-  @scala.inline
-  def apply(): SetIpAddressTypeOutput = {
+  inline def apply(): SetIpAddressTypeOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SetIpAddressTypeOutput]
   }
   
-  @scala.inline
-  implicit class SetIpAddressTypeOutputMutableBuilder[Self <: SetIpAddressTypeOutput] (val x: Self) extends AnyVal {
+  extension [Self <: SetIpAddressTypeOutput](x: Self) {
     
-    @scala.inline
-    def setIpAddressType(value: IpAddressType): Self = StObject.set(x, "IpAddressType", value.asInstanceOf[js.Any])
+    inline def setIpAddressType(value: IpAddressType): Self = StObject.set(x, "IpAddressType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddressTypeUndefined: Self = StObject.set(x, "IpAddressType", js.undefined)
+    inline def setIpAddressTypeUndefined: Self = StObject.set(x, "IpAddressType", js.undefined)
   }
 }

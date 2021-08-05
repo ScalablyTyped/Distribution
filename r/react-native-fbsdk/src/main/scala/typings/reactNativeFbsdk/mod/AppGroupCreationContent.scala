@@ -23,22 +23,17 @@ trait AppGroupCreationContent extends StObject {
 }
 object AppGroupCreationContent {
   
-  @scala.inline
-  def apply(description: String, name: String, privacy: AppGroupPrivacy): AppGroupCreationContent = {
+  inline def apply(description: String, name: String, privacy: AppGroupPrivacy): AppGroupCreationContent = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], privacy = privacy.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppGroupCreationContent]
   }
   
-  @scala.inline
-  implicit class AppGroupCreationContentMutableBuilder[Self <: AppGroupCreationContent] (val x: Self) extends AnyVal {
+  extension [Self <: AppGroupCreationContent](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivacy(value: AppGroupPrivacy): Self = StObject.set(x, "privacy", value.asInstanceOf[js.Any])
+    inline def setPrivacy(value: AppGroupPrivacy): Self = StObject.set(x, "privacy", value.asInstanceOf[js.Any])
   }
 }

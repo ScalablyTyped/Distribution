@@ -20,15 +20,15 @@ object componentInputMod {
        with ControlValueAccessor {
     def this(renderer: Renderer2, elementRef: ElementRef[js.Any], changeDectecterRef: ChangeDetectorRef) = this()
     
-    @JSName("$element")
+    /* private */ @JSName("$element")
     var $element: js.Any = js.native
     
-    @JSName("$input")
+    /* private */ @JSName("$input")
     var $input: js.Any = js.native
     
     var block: js.Any = js.native
     
-    var changeDectecterRef: js.Any = js.native
+    /* private */ var changeDectecterRef: js.Any = js.native
     
     var `class`: String = js.native
     
@@ -36,27 +36,27 @@ object componentInputMod {
     
     var disabled: js.Any = js.native
     
-    var elementRef: js.Any = js.native
+    /* private */ var elementRef: js.Any = js.native
     
     var id: String = js.native
     
     var inputChild: ElementRef[js.Any] = js.native
     
-    var m_block: js.Any = js.native
+    /* private */ var m_block: js.Any = js.native
     
-    var m_color: js.Any = js.native
+    /* private */ var m_color: js.Any = js.native
     
-    var m_disabled: js.Any = js.native
+    /* private */ var m_disabled: js.Any = js.native
     
-    var m_model: js.Any = js.native
+    /* private */ var m_model: js.Any = js.native
     
-    var m_placeholder: js.Any = js.native
+    /* private */ var m_placeholder: js.Any = js.native
     
-    var m_readonly: js.Any = js.native
+    /* private */ var m_readonly: js.Any = js.native
     
-    var m_required: js.Any = js.native
+    /* private */ var m_required: js.Any = js.native
     
-    var m_size: js.Any = js.native
+    /* private */ var m_size: js.Any = js.native
     
     var model: js.Any = js.native
     
@@ -72,9 +72,9 @@ object componentInputMod {
     
     var placeholder: String = js.native
     
-    var propagateChange: js.Any = js.native
+    /* private */ var propagateChange: js.Any = js.native
     
-    var propagateTouch: js.Any = js.native
+    /* private */ var propagateTouch: js.Any = js.native
     
     var readonly: js.Any = js.native
     

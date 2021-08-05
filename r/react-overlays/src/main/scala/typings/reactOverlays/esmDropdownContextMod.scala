@@ -25,17 +25,13 @@ object esmDropdownContextMod extends Shortcut {
   trait DropDirection extends StObject
   object DropDirection {
     
-    @scala.inline
-    def down: typings.reactOverlays.reactOverlaysStrings.down = "down".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.down]
+    inline def down: typings.reactOverlays.reactOverlaysStrings.down = "down".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.down]
     
-    @scala.inline
-    def left: typings.reactOverlays.reactOverlaysStrings.left = "left".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.left]
+    inline def left: typings.reactOverlays.reactOverlaysStrings.left = "left".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.left]
     
-    @scala.inline
-    def right: typings.reactOverlays.reactOverlaysStrings.right = "right".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.right]
+    inline def right: typings.reactOverlays.reactOverlaysStrings.right = "right".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.right]
     
-    @scala.inline
-    def up: typings.reactOverlays.reactOverlaysStrings.up = "up".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.up]
+    inline def up: typings.reactOverlays.reactOverlaysStrings.up = "up".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.up]
   }
   
   @js.native

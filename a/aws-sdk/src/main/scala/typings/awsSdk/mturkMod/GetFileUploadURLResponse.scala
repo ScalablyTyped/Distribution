@@ -13,19 +13,15 @@ trait GetFileUploadURLResponse extends StObject {
 }
 object GetFileUploadURLResponse {
   
-  @scala.inline
-  def apply(): GetFileUploadURLResponse = {
+  inline def apply(): GetFileUploadURLResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetFileUploadURLResponse]
   }
   
-  @scala.inline
-  implicit class GetFileUploadURLResponseMutableBuilder[Self <: GetFileUploadURLResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetFileUploadURLResponse](x: Self) {
     
-    @scala.inline
-    def setFileUploadURL(value: String): Self = StObject.set(x, "FileUploadURL", value.asInstanceOf[js.Any])
+    inline def setFileUploadURL(value: String): Self = StObject.set(x, "FileUploadURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileUploadURLUndefined: Self = StObject.set(x, "FileUploadURL", js.undefined)
+    inline def setFileUploadURLUndefined: Self = StObject.set(x, "FileUploadURL", js.undefined)
   }
 }

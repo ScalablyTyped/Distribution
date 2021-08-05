@@ -12,22 +12,17 @@ trait KickOutData extends StObject {
 }
 object KickOutData {
   
-  @scala.inline
-  def apply(channel: String): KickOutData = {
+  inline def apply(channel: String): KickOutData = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any])
     __obj.asInstanceOf[KickOutData]
   }
   
-  @scala.inline
-  implicit class KickOutDataMutableBuilder[Self <: KickOutData] (val x: Self) extends AnyVal {
+  extension [Self <: KickOutData](x: Self) {
     
-    @scala.inline
-    def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
   }
 }

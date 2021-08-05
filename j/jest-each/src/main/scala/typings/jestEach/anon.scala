@@ -18,23 +18,18 @@ object anon {
   }
   object Arguments {
     
-    @scala.inline
-    def apply(arguments: js.Array[js.Any], title: String): Arguments = {
+    inline def apply(arguments: js.Array[js.Any], title: String): Arguments = {
       val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[Arguments]
     }
     
-    @scala.inline
-    implicit class ArgumentsMutableBuilder[Self <: Arguments] (val x: Self) extends AnyVal {
+    extension [Self <: Arguments](x: Self) {
       
-      @scala.inline
-      def setArguments(value: js.Array[js.Any]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+      inline def setArguments(value: js.Array[js.Any]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgumentsVarargs(value: js.Any*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+      inline def setArgumentsVarargs(value: js.Any*): Self = StObject.set(x, "arguments", js.Array(value :_*))
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   

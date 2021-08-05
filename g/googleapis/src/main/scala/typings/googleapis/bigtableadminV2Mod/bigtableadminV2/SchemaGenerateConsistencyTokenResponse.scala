@@ -17,19 +17,15 @@ trait SchemaGenerateConsistencyTokenResponse extends StObject {
 }
 object SchemaGenerateConsistencyTokenResponse {
   
-  @scala.inline
-  def apply(): SchemaGenerateConsistencyTokenResponse = {
+  inline def apply(): SchemaGenerateConsistencyTokenResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGenerateConsistencyTokenResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGenerateConsistencyTokenResponseMutableBuilder[Self <: SchemaGenerateConsistencyTokenResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGenerateConsistencyTokenResponse](x: Self) {
     
-    @scala.inline
-    def setConsistencyToken(value: String): Self = StObject.set(x, "consistencyToken", value.asInstanceOf[js.Any])
+    inline def setConsistencyToken(value: String): Self = StObject.set(x, "consistencyToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsistencyTokenUndefined: Self = StObject.set(x, "consistencyToken", js.undefined)
+    inline def setConsistencyTokenUndefined: Self = StObject.set(x, "consistencyToken", js.undefined)
   }
 }

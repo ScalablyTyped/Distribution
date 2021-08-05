@@ -18,25 +18,19 @@ trait DashboardError extends StObject {
 }
 object DashboardError {
   
-  @scala.inline
-  def apply(): DashboardError = {
+  inline def apply(): DashboardError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DashboardError]
   }
   
-  @scala.inline
-  implicit class DashboardErrorMutableBuilder[Self <: DashboardError] (val x: Self) extends AnyVal {
+  extension [Self <: DashboardError](x: Self) {
     
-    @scala.inline
-    def setMessage(value: NonEmptyString): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: NonEmptyString): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
-    @scala.inline
-    def setType(value: DashboardErrorType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: DashboardErrorType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

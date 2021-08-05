@@ -34,56 +34,40 @@ object linearProgressBarMod {
   }
   object LinearProgressBarProps {
     
-    @scala.inline
-    def apply(): LinearProgressBarProps = {
+    inline def apply(): LinearProgressBarProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LinearProgressBarProps]
     }
     
-    @scala.inline
-    implicit class LinearProgressBarPropsMutableBuilder[Self <: LinearProgressBarProps] (val x: Self) extends AnyVal {
+    extension [Self <: LinearProgressBarProps](x: Self) {
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+      inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+      inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setLight(value: Boolean): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
+      inline def setLight(value: Boolean): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLightUndefined: Self = StObject.set(x, "light", js.undefined)
+      inline def setLightUndefined: Self = StObject.set(x, "light", js.undefined)
       
-      @scala.inline
-      def setShowProgressIndication(value: Boolean): Self = StObject.set(x, "showProgressIndication", value.asInstanceOf[js.Any])
+      inline def setShowProgressIndication(value: Boolean): Self = StObject.set(x, "showProgressIndication", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowProgressIndicationUndefined: Self = StObject.set(x, "showProgressIndication", js.undefined)
+      inline def setShowProgressIndicationUndefined: Self = StObject.set(x, "showProgressIndication", js.undefined)
       
-      @scala.inline
-      def setSkin(value: standard | success): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
+      inline def setSkin(value: standard | success): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
+      inline def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
       
-      @scala.inline
-      def setValue(value: Double | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

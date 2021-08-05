@@ -78,8 +78,7 @@ trait OlapResultAxisMember extends StObject {
 }
 object OlapResultAxisMember {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     caption: js.Object => String,
     childCount: js.Object => Double,
     displayInfo: js.Object => Double,
@@ -95,37 +94,26 @@ object OlapResultAxisMember {
     __obj.asInstanceOf[OlapResultAxisMember]
   }
   
-  @scala.inline
-  implicit class OlapResultAxisMemberMutableBuilder[Self <: OlapResultAxisMember] (val x: Self) extends AnyVal {
+  extension [Self <: OlapResultAxisMember](x: Self) {
     
-    @scala.inline
-    def setCaption(value: js.Object => String): Self = StObject.set(x, "caption", js.Any.fromFunction1(value))
+    inline def setCaption(value: js.Object => String): Self = StObject.set(x, "caption", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChildCount(value: js.Object => Double): Self = StObject.set(x, "childCount", js.Any.fromFunction1(value))
+    inline def setChildCount(value: js.Object => Double): Self = StObject.set(x, "childCount", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDisplayInfo(value: js.Object => Double): Self = StObject.set(x, "displayInfo", js.Any.fromFunction1(value))
+    inline def setDisplayInfo(value: js.Object => Double): Self = StObject.set(x, "displayInfo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDrilledDown(value: js.Object => Boolean): Self = StObject.set(x, "drilledDown", js.Any.fromFunction1(value))
+    inline def setDrilledDown(value: js.Object => Boolean): Self = StObject.set(x, "drilledDown", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHierarchyUniqueName(value: js.Object => String): Self = StObject.set(x, "hierarchyUniqueName", js.Any.fromFunction1(value))
+    inline def setHierarchyUniqueName(value: js.Object => String): Self = StObject.set(x, "hierarchyUniqueName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLevelNumber(value: js.Object => Double): Self = StObject.set(x, "levelNumber", js.Any.fromFunction1(value))
+    inline def setLevelNumber(value: js.Object => Double): Self = StObject.set(x, "levelNumber", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLevelUniqueName(value: js.Object => String): Self = StObject.set(x, "levelUniqueName", js.Any.fromFunction1(value))
+    inline def setLevelUniqueName(value: js.Object => String): Self = StObject.set(x, "levelUniqueName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParentSameAsPrev(value: js.Object => Boolean): Self = StObject.set(x, "parentSameAsPrev", js.Any.fromFunction1(value))
+    inline def setParentSameAsPrev(value: js.Object => Boolean): Self = StObject.set(x, "parentSameAsPrev", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setProperties(value: js.Object => js.Object): Self = StObject.set(x, "properties", js.Any.fromFunction1(value))
+    inline def setProperties(value: js.Object => js.Object): Self = StObject.set(x, "properties", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUniqueName(value: js.Object => String): Self = StObject.set(x, "uniqueName", js.Any.fromFunction1(value))
+    inline def setUniqueName(value: js.Object => String): Self = StObject.set(x, "uniqueName", js.Any.fromFunction1(value))
   }
 }

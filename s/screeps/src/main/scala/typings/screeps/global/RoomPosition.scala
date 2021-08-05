@@ -21,6 +21,5 @@ class RoomPosition protected ()
 }
 object RoomPosition {
   
-  @scala.inline
-  def apply: RoomPositionConstructor = js.Dynamic.global.selectDynamic("RoomPosition").asInstanceOf[RoomPositionConstructor]
+  inline def apply: RoomPositionConstructor = js.Dynamic.global.selectDynamic("RoomPosition").asInstanceOf[RoomPositionConstructor]
 }

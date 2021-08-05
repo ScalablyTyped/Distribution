@@ -10,19 +10,15 @@ trait ChannelId extends StObject {
 }
 object ChannelId {
   
-  @scala.inline
-  def apply(): ChannelId = {
+  inline def apply(): ChannelId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChannelId]
   }
   
-  @scala.inline
-  implicit class ChannelIdMutableBuilder[Self <: ChannelId] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelId](x: Self) {
     
-    @scala.inline
-    def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
+    inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
+    inline def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
   }
 }

@@ -112,115 +112,79 @@ trait HTMLCSSOutputProcessor extends StObject {
 }
 object HTMLCSSOutputProcessor {
   
-  @scala.inline
-  def apply(): HTMLCSSOutputProcessor = {
+  inline def apply(): HTMLCSSOutputProcessor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HTMLCSSOutputProcessor]
   }
   
-  @scala.inline
-  implicit class HTMLCSSOutputProcessorMutableBuilder[Self <: HTMLCSSOutputProcessor] (val x: Self) extends AnyVal {
+  extension [Self <: HTMLCSSOutputProcessor](x: Self) {
     
-    @scala.inline
-    def setAvailableFonts(value: js.Array[String]): Self = StObject.set(x, "availableFonts", value.asInstanceOf[js.Any])
+    inline def setAvailableFonts(value: js.Array[String]): Self = StObject.set(x, "availableFonts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailableFontsUndefined: Self = StObject.set(x, "availableFonts", js.undefined)
+    inline def setAvailableFontsUndefined: Self = StObject.set(x, "availableFonts", js.undefined)
     
-    @scala.inline
-    def setAvailableFontsVarargs(value: String*): Self = StObject.set(x, "availableFonts", js.Array(value :_*))
+    inline def setAvailableFontsVarargs(value: String*): Self = StObject.set(x, "availableFonts", js.Array(value :_*))
     
-    @scala.inline
-    def setEqnChunk(value: Double): Self = StObject.set(x, "EqnChunk", value.asInstanceOf[js.Any])
+    inline def setEqnChunk(value: Double): Self = StObject.set(x, "EqnChunk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEqnChunkDelay(value: Double): Self = StObject.set(x, "EqnChunkDelay", value.asInstanceOf[js.Any])
+    inline def setEqnChunkDelay(value: Double): Self = StObject.set(x, "EqnChunkDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEqnChunkDelayUndefined: Self = StObject.set(x, "EqnChunkDelay", js.undefined)
+    inline def setEqnChunkDelayUndefined: Self = StObject.set(x, "EqnChunkDelay", js.undefined)
     
-    @scala.inline
-    def setEqnChunkFactor(value: Double): Self = StObject.set(x, "EqnChunkFactor", value.asInstanceOf[js.Any])
+    inline def setEqnChunkFactor(value: Double): Self = StObject.set(x, "EqnChunkFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEqnChunkFactorUndefined: Self = StObject.set(x, "EqnChunkFactor", js.undefined)
+    inline def setEqnChunkFactorUndefined: Self = StObject.set(x, "EqnChunkFactor", js.undefined)
     
-    @scala.inline
-    def setEqnChunkUndefined: Self = StObject.set(x, "EqnChunk", js.undefined)
+    inline def setEqnChunkUndefined: Self = StObject.set(x, "EqnChunk", js.undefined)
     
-    @scala.inline
-    def setImageFont(value: String): Self = StObject.set(x, "imageFont", value.asInstanceOf[js.Any])
+    inline def setImageFont(value: String): Self = StObject.set(x, "imageFont", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageFontUndefined: Self = StObject.set(x, "imageFont", js.undefined)
+    inline def setImageFontUndefined: Self = StObject.set(x, "imageFont", js.undefined)
     
-    @scala.inline
-    def setLinebreaks(value: LineBreaks): Self = StObject.set(x, "linebreaks", value.asInstanceOf[js.Any])
+    inline def setLinebreaks(value: LineBreaks): Self = StObject.set(x, "linebreaks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinebreaksUndefined: Self = StObject.set(x, "linebreaks", js.undefined)
+    inline def setLinebreaksUndefined: Self = StObject.set(x, "linebreaks", js.undefined)
     
-    @scala.inline
-    def setMatchFontHeight(value: Boolean): Self = StObject.set(x, "matchFontHeight", value.asInstanceOf[js.Any])
+    inline def setMatchFontHeight(value: Boolean): Self = StObject.set(x, "matchFontHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchFontHeightUndefined: Self = StObject.set(x, "matchFontHeight", js.undefined)
+    inline def setMatchFontHeightUndefined: Self = StObject.set(x, "matchFontHeight", js.undefined)
     
-    @scala.inline
-    def setMinScaleAdjust(value: Double): Self = StObject.set(x, "minScaleAdjust", value.asInstanceOf[js.Any])
+    inline def setMinScaleAdjust(value: Double): Self = StObject.set(x, "minScaleAdjust", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinScaleAdjustUndefined: Self = StObject.set(x, "minScaleAdjust", js.undefined)
+    inline def setMinScaleAdjustUndefined: Self = StObject.set(x, "minScaleAdjust", js.undefined)
     
-    @scala.inline
-    def setMtextFontInherit(value: Boolean): Self = StObject.set(x, "mtextFontInherit", value.asInstanceOf[js.Any])
+    inline def setMtextFontInherit(value: Boolean): Self = StObject.set(x, "mtextFontInherit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMtextFontInheritUndefined: Self = StObject.set(x, "mtextFontInherit", js.undefined)
+    inline def setMtextFontInheritUndefined: Self = StObject.set(x, "mtextFontInherit", js.undefined)
     
-    @scala.inline
-    def setPreferredFont(value: String): Self = StObject.set(x, "preferredFont", value.asInstanceOf[js.Any])
+    inline def setPreferredFont(value: String): Self = StObject.set(x, "preferredFont", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferredFontUndefined: Self = StObject.set(x, "preferredFont", js.undefined)
+    inline def setPreferredFontUndefined: Self = StObject.set(x, "preferredFont", js.undefined)
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    @scala.inline
-    def setShowMathMenu(value: Boolean): Self = StObject.set(x, "showMathMenu", value.asInstanceOf[js.Any])
+    inline def setShowMathMenu(value: Boolean): Self = StObject.set(x, "showMathMenu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowMathMenuUndefined: Self = StObject.set(x, "showMathMenu", js.undefined)
+    inline def setShowMathMenuUndefined: Self = StObject.set(x, "showMathMenu", js.undefined)
     
-    @scala.inline
-    def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
-    @scala.inline
-    def setTooltip(value: ToolTip): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: ToolTip): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     
-    @scala.inline
-    def setUndefinedFamily(value: js.Array[String]): Self = StObject.set(x, "undefinedFamily", value.asInstanceOf[js.Any])
+    inline def setUndefinedFamily(value: js.Array[String]): Self = StObject.set(x, "undefinedFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndefinedFamilyUndefined: Self = StObject.set(x, "undefinedFamily", js.undefined)
+    inline def setUndefinedFamilyUndefined: Self = StObject.set(x, "undefinedFamily", js.undefined)
     
-    @scala.inline
-    def setUndefinedFamilyVarargs(value: String*): Self = StObject.set(x, "undefinedFamily", js.Array(value :_*))
+    inline def setUndefinedFamilyVarargs(value: String*): Self = StObject.set(x, "undefinedFamily", js.Array(value :_*))
     
-    @scala.inline
-    def setWebFont(value: String): Self = StObject.set(x, "webFont", value.asInstanceOf[js.Any])
+    inline def setWebFont(value: String): Self = StObject.set(x, "webFont", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebFontUndefined: Self = StObject.set(x, "webFont", js.undefined)
+    inline def setWebFontUndefined: Self = StObject.set(x, "webFont", js.undefined)
   }
 }

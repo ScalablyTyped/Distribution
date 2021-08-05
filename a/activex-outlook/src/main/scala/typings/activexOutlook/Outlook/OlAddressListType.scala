@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlAddressListType extends StObject
 object OlAddressListType {
   
-  @scala.inline
-  def olCustomAddressList: `4` = 4.asInstanceOf[`4`]
+  inline def olCustomAddressList: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def olExchangeContainer: `1` = 1.asInstanceOf[`1`]
+  inline def olExchangeContainer: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olExchangeGlobalAddressList: `0` = 0.asInstanceOf[`0`]
+  inline def olExchangeGlobalAddressList: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def olOutlookAddressList: `2` = 2.asInstanceOf[`2`]
+  inline def olOutlookAddressList: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def olOutlookLdapAddressList: `3` = 3.asInstanceOf[`3`]
+  inline def olOutlookLdapAddressList: `3` = 3.asInstanceOf[`3`]
 }

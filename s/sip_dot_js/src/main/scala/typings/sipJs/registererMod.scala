@@ -25,27 +25,27 @@ object registererMod {
     def this(userAgent: UserAgent, options: RegistererOptions) = this()
     
     /** The contacts returned from the most recent accepted REGISTER request. */
-    var _contacts: js.Any = js.native
+    /* private */ var _contacts: js.Any = js.native
     
     /** The number of seconds to wait before retrying to register. */
-    var _retryAfter: js.Any = js.native
+    /* private */ var _retryAfter: js.Any = js.native
     
     /** The registration state. */
-    var _state: js.Any = js.native
+    /* private */ var _state: js.Any = js.native
     
     /** Emits when the registration state changes. */
-    var _stateEventEmitter: js.Any = js.native
+    /* private */ var _stateEventEmitter: js.Any = js.native
     
     /** True is waiting for final response to outstanding REGISTER request. */
-    var _waiting: js.Any = js.native
+    /* private */ var _waiting: js.Any = js.native
     
     /** Emits when waiting changes. */
-    var _waitingEventEmitter: js.Any = js.native
+    /* private */ var _waitingEventEmitter: js.Any = js.native
     
     /**
       * Clear registration timers.
       */
-    var clearTimers: js.Any = js.native
+    /* private */ var clearTimers: js.Any = js.native
     
     /** The registered contacts. */
     def contacts: js.Array[String] = js.native
@@ -53,20 +53,20 @@ object registererMod {
     /** Destructor. */
     def dispose(): js.Promise[Unit] = js.native
     
-    var disposed: js.Any = js.native
+    /* private */ var disposed: js.Any = js.native
     
-    var expires: js.Any = js.native
+    /* private */ var expires: js.Any = js.native
     
     /**
       * Generate Contact Header
       */
-    var generateContactHeader: js.Any = js.native
+    /* private */ var generateContactHeader: js.Any = js.native
     
-    var id: js.Any = js.native
+    /* private */ var id: js.Any = js.native
     
-    var logger: js.Any = js.native
+    /* private */ var logger: js.Any = js.native
     
-    var options: js.Any = js.native
+    /* private */ var options: js.Any = js.native
     
     /**
       * Sends the REGISTER request.
@@ -80,13 +80,13 @@ object registererMod {
     /**
       * Helper function, called when registered.
       */
-    var registered: js.Any = js.native
+    /* private */ var registered: js.Any = js.native
     
-    var registrationExpiredTimer: js.Any = js.native
+    /* private */ var registrationExpiredTimer: js.Any = js.native
     
-    var registrationTimer: js.Any = js.native
+    /* private */ var registrationTimer: js.Any = js.native
     
-    var request: js.Any = js.native
+    /* private */ var request: js.Any = js.native
     
     /**
       * The number of seconds to wait before retrying to register.
@@ -130,17 +130,17 @@ object registererMod {
     def stateChange: Emitter[RegistererState] = js.native
     
     /** Hopefully helpful as the standard behavior has been found to be unexpected. */
-    var stateError: js.Any = js.native
+    /* private */ var stateError: js.Any = js.native
     
     /**
       * Transition registration state.
       */
-    var stateTransition: js.Any = js.native
+    /* private */ var stateTransition: js.Any = js.native
     
     /**
       * Helper function, called when terminated.
       */
-    var terminated: js.Any = js.native
+    /* private */ var terminated: js.Any = js.native
     
     /**
       * Sends the REGISTER request with expires equal to zero.
@@ -153,9 +153,9 @@ object registererMod {
     /**
       * Helper function, called when unregistered.
       */
-    var unregistered: js.Any = js.native
+    /* private */ var unregistered: js.Any = js.native
     
-    var userAgent: js.Any = js.native
+    /* private */ var userAgent: js.Any = js.native
     
     /** True if the registerer is currently waiting for final response to a REGISTER request. */
     /* private */ def waiting: js.Any = js.native
@@ -166,10 +166,10 @@ object registererMod {
     /**
       * Toggle waiting.
       */
-    var waitingToggle: js.Any = js.native
+    /* private */ var waitingToggle: js.Any = js.native
     
     /** Hopefully helpful as the standard behavior has been found to be unexpected. */
-    var waitingWarning: js.Any = js.native
+    /* private */ var waitingWarning: js.Any = js.native
   }
   /* static members */
   object Registerer {
@@ -186,14 +186,12 @@ object registererMod {
     @JSImport("sip.js/lib/api/registerer", "Registerer.defaultOptions")
     @js.native
     def defaultOptions: js.Any = js.native
-    @scala.inline
-    def defaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
+    inline def defaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
     
     @JSImport("sip.js/lib/api/registerer", "Registerer.newUUID")
     @js.native
     def newUUID: js.Any = js.native
-    @scala.inline
-    def newUUID_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("newUUID")(x.asInstanceOf[js.Any])
+    inline def newUUID_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("newUUID")(x.asInstanceOf[js.Any])
     
     /**
       * Strip properties with undefined values from options.
@@ -204,7 +202,6 @@ object registererMod {
     @JSImport("sip.js/lib/api/registerer", "Registerer.stripUndefinedProperties")
     @js.native
     def stripUndefinedProperties: js.Any = js.native
-    @scala.inline
-    def stripUndefinedProperties_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stripUndefinedProperties")(x.asInstanceOf[js.Any])
+    inline def stripUndefinedProperties_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stripUndefinedProperties")(x.asInstanceOf[js.Any])
   }
 }

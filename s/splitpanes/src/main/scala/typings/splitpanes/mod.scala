@@ -33,29 +33,22 @@ object mod extends Shortcut {
   }
   object containerTypes {
     
-    @scala.inline
-    def apply(vnode: js.Any): containerTypes = {
+    inline def apply(vnode: js.Any): containerTypes = {
       val __obj = js.Dynamic.literal(vnode = vnode.asInstanceOf[js.Any], offsetLeft = null, offsetTop = null)
       __obj.asInstanceOf[containerTypes]
     }
     
-    @scala.inline
-    implicit class containerTypesMutableBuilder[Self <: containerTypes] (val x: Self) extends AnyVal {
+    extension [Self <: containerTypes](x: Self) {
       
-      @scala.inline
-      def setOffsetLeft(value: Double): Self = StObject.set(x, "offsetLeft", value.asInstanceOf[js.Any])
+      inline def setOffsetLeft(value: Double): Self = StObject.set(x, "offsetLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetLeftNull: Self = StObject.set(x, "offsetLeft", null)
+      inline def setOffsetLeftNull: Self = StObject.set(x, "offsetLeft", null)
       
-      @scala.inline
-      def setOffsetTop(value: Double): Self = StObject.set(x, "offsetTop", value.asInstanceOf[js.Any])
+      inline def setOffsetTop(value: Double): Self = StObject.set(x, "offsetTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetTopNull: Self = StObject.set(x, "offsetTop", null)
+      inline def setOffsetTopNull: Self = StObject.set(x, "offsetTop", null)
       
-      @scala.inline
-      def setVnode(value: js.Any): Self = StObject.set(x, "vnode", value.asInstanceOf[js.Any])
+      inline def setVnode(value: js.Any): Self = StObject.set(x, "vnode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -67,20 +60,16 @@ object mod extends Shortcut {
   }
   object positionTypes {
     
-    @scala.inline
-    def apply(x: Double, y: Double): positionTypes = {
+    inline def apply(x: Double, y: Double): positionTypes = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[positionTypes]
     }
     
-    @scala.inline
-    implicit class positionTypesMutableBuilder[Self <: positionTypes] (val x: Self) extends AnyVal {
+    extension [Self <: positionTypes](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -90,17 +79,14 @@ object mod extends Shortcut {
   }
   object splitPanesComputed {
     
-    @scala.inline
-    def apply(defaultWidth: () => Double): splitPanesComputed = {
+    inline def apply(defaultWidth: () => Double): splitPanesComputed = {
       val __obj = js.Dynamic.literal(defaultWidth = js.Any.fromFunction0(defaultWidth))
       __obj.asInstanceOf[splitPanesComputed]
     }
     
-    @scala.inline
-    implicit class splitPanesComputedMutableBuilder[Self <: splitPanesComputed] (val x: Self) extends AnyVal {
+    extension [Self <: splitPanesComputed](x: Self) {
       
-      @scala.inline
-      def setDefaultWidth(value: () => Double): Self = StObject.set(x, "defaultWidth", js.Any.fromFunction0(value))
+      inline def setDefaultWidth(value: () => Double): Self = StObject.set(x, "defaultWidth", js.Any.fromFunction0(value))
     }
   }
   
@@ -149,8 +135,7 @@ object mod extends Shortcut {
   }
   object splitPanesData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       container: containerTypes,
       panes: js.Array[js.Any],
       slotsCopy: String,
@@ -164,41 +149,29 @@ object mod extends Shortcut {
       __obj.asInstanceOf[splitPanesData]
     }
     
-    @scala.inline
-    implicit class splitPanesDataMutableBuilder[Self <: splitPanesData] (val x: Self) extends AnyVal {
+    extension [Self <: splitPanesData](x: Self) {
       
-      @scala.inline
-      def setContainer(value: containerTypes): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: containerTypes): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanes(value: js.Array[js.Any]): Self = StObject.set(x, "panes", value.asInstanceOf[js.Any])
+      inline def setPanes(value: js.Array[js.Any]): Self = StObject.set(x, "panes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanesVarargs(value: js.Any*): Self = StObject.set(x, "panes", js.Array(value :_*))
+      inline def setPanesVarargs(value: js.Any*): Self = StObject.set(x, "panes", js.Array(value :_*))
       
-      @scala.inline
-      def setSlotsCopy(value: String): Self = StObject.set(x, "slotsCopy", value.asInstanceOf[js.Any])
+      inline def setSlotsCopy(value: String): Self = StObject.set(x, "slotsCopy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlotsCount(value: Double): Self = StObject.set(x, "slotsCount", value.asInstanceOf[js.Any])
+      inline def setSlotsCount(value: Double): Self = StObject.set(x, "slotsCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSplitterTaps(value: splitterTapsTypes): Self = StObject.set(x, "splitterTaps", value.asInstanceOf[js.Any])
+      inline def setSplitterTaps(value: splitterTapsTypes): Self = StObject.set(x, "splitterTaps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSplitters(value: js.Array[js.Any]): Self = StObject.set(x, "splitters", value.asInstanceOf[js.Any])
+      inline def setSplitters(value: js.Array[js.Any]): Self = StObject.set(x, "splitters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSplittersVarargs(value: js.Any*): Self = StObject.set(x, "splitters", js.Array(value :_*))
+      inline def setSplittersVarargs(value: js.Any*): Self = StObject.set(x, "splitters", js.Array(value :_*))
       
-      @scala.inline
-      def setTouch(value: touchTypes): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
+      inline def setTouch(value: touchTypes): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVnodes(value: js.Array[js.Any]): Self = StObject.set(x, "vnodes", value.asInstanceOf[js.Any])
+      inline def setVnodes(value: js.Array[js.Any]): Self = StObject.set(x, "vnodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVnodesVarargs(value: js.Any*): Self = StObject.set(x, "vnodes", js.Array(value :_*))
+      inline def setVnodesVarargs(value: js.Any*): Self = StObject.set(x, "vnodes", js.Array(value :_*))
     }
   }
   
@@ -234,8 +207,7 @@ object mod extends Shortcut {
   }
   object splitPanesMethods {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bindEvents: () => Unit,
       calculatePanesSize: js.Object => Boolean | Unit,
       doPushOtherPanes: (js.Object, Double) => js.Any,
@@ -255,50 +227,35 @@ object mod extends Shortcut {
       __obj.asInstanceOf[splitPanesMethods]
     }
     
-    @scala.inline
-    implicit class splitPanesMethodsMutableBuilder[Self <: splitPanesMethods] (val x: Self) extends AnyVal {
+    extension [Self <: splitPanesMethods](x: Self) {
       
-      @scala.inline
-      def setBindEvents(value: () => Unit): Self = StObject.set(x, "bindEvents", js.Any.fromFunction0(value))
+      inline def setBindEvents(value: () => Unit): Self = StObject.set(x, "bindEvents", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCalculatePanesSize(value: js.Object => Boolean | Unit): Self = StObject.set(x, "calculatePanesSize", js.Any.fromFunction1(value))
+      inline def setCalculatePanesSize(value: js.Object => Boolean | Unit): Self = StObject.set(x, "calculatePanesSize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDoPushOtherPanes(value: (js.Object, Double) => js.Any): Self = StObject.set(x, "doPushOtherPanes", js.Any.fromFunction2(value))
+      inline def setDoPushOtherPanes(value: (js.Object, Double) => js.Any): Self = StObject.set(x, "doPushOtherPanes", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFindNextExpandedPane(value: Double => js.Object): Self = StObject.set(x, "findNextExpandedPane", js.Any.fromFunction1(value))
+      inline def setFindNextExpandedPane(value: Double => js.Object): Self = StObject.set(x, "findNextExpandedPane", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFindPrevExpandedPane(value: Double => js.Object): Self = StObject.set(x, "findPrevExpandedPane", js.Any.fromFunction1(value))
+      inline def setFindPrevExpandedPane(value: Double => js.Object): Self = StObject.set(x, "findPrevExpandedPane", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetCurrentDragPercentage(value: js.Object => Double): Self = StObject.set(x, "getCurrentDragPercentage", js.Any.fromFunction1(value))
+      inline def setGetCurrentDragPercentage(value: js.Object => Double): Self = StObject.set(x, "getCurrentDragPercentage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetCurrentMouseDrag(value: Event => positionTypes): Self = StObject.set(x, "getCurrentMouseDrag", js.Any.fromFunction1(value))
+      inline def setGetCurrentMouseDrag(value: Event => positionTypes): Self = StObject.set(x, "getCurrentMouseDrag", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseDown(value: (Event, Double) => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction2(value))
+      inline def setOnMouseDown(value: (Event, Double) => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnMouseMove(value: Event => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
+      inline def setOnMouseMove(value: Event => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseUp(value: () => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction0(value))
+      inline def setOnMouseUp(value: () => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnSplitterClick(value: (Event, Double) => Unit): Self = StObject.set(x, "onSplitterClick", js.Any.fromFunction2(value))
+      inline def setOnSplitterClick(value: (Event, Double) => Unit): Self = StObject.set(x, "onSplitterClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnSplitterDblClick(value: (Event, Double) => Unit): Self = StObject.set(x, "onSplitterDblClick", js.Any.fromFunction2(value))
+      inline def setOnSplitterDblClick(value: (Event, Double) => Unit): Self = StObject.set(x, "onSplitterDblClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSumNextPanesSize(value: Double => js.Object): Self = StObject.set(x, "sumNextPanesSize", js.Any.fromFunction1(value))
+      inline def setSumNextPanesSize(value: Double => js.Object): Self = StObject.set(x, "sumNextPanesSize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSumPrevPanesSize(value: Double => js.Object): Self = StObject.set(x, "sumPrevPanesSize", js.Any.fromFunction1(value))
+      inline def setSumPrevPanesSize(value: Double => js.Object): Self = StObject.set(x, "sumPrevPanesSize", js.Any.fromFunction1(value))
     }
   }
   
@@ -317,26 +274,20 @@ object mod extends Shortcut {
   }
   object splitPanesProps {
     
-    @scala.inline
-    def apply(dblClickSplitter: Boolean, horizontal: Boolean, pushOtherPanes: Boolean, watchSlots: Boolean): splitPanesProps = {
+    inline def apply(dblClickSplitter: Boolean, horizontal: Boolean, pushOtherPanes: Boolean, watchSlots: Boolean): splitPanesProps = {
       val __obj = js.Dynamic.literal(dblClickSplitter = dblClickSplitter.asInstanceOf[js.Any], horizontal = horizontal.asInstanceOf[js.Any], pushOtherPanes = pushOtherPanes.asInstanceOf[js.Any], watchSlots = watchSlots.asInstanceOf[js.Any])
       __obj.asInstanceOf[splitPanesProps]
     }
     
-    @scala.inline
-    implicit class splitPanesPropsMutableBuilder[Self <: splitPanesProps] (val x: Self) extends AnyVal {
+    extension [Self <: splitPanesProps](x: Self) {
       
-      @scala.inline
-      def setDblClickSplitter(value: Boolean): Self = StObject.set(x, "dblClickSplitter", value.asInstanceOf[js.Any])
+      inline def setDblClickSplitter(value: Boolean): Self = StObject.set(x, "dblClickSplitter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+      inline def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPushOtherPanes(value: Boolean): Self = StObject.set(x, "pushOtherPanes", value.asInstanceOf[js.Any])
+      inline def setPushOtherPanes(value: Boolean): Self = StObject.set(x, "pushOtherPanes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWatchSlots(value: Boolean): Self = StObject.set(x, "watchSlots", value.asInstanceOf[js.Any])
+      inline def setWatchSlots(value: Boolean): Self = StObject.set(x, "watchSlots", value.asInstanceOf[js.Any])
     }
   }
   
@@ -346,17 +297,14 @@ object mod extends Shortcut {
   }
   object splitPanesWatch {
     
-    @scala.inline
-    def apply(defaultPercent: js.Any => Unit): splitPanesWatch = {
+    inline def apply(defaultPercent: js.Any => Unit): splitPanesWatch = {
       val __obj = js.Dynamic.literal(defaultPercent = js.Any.fromFunction1(defaultPercent))
       __obj.asInstanceOf[splitPanesWatch]
     }
     
-    @scala.inline
-    implicit class splitPanesWatchMutableBuilder[Self <: splitPanesWatch] (val x: Self) extends AnyVal {
+    extension [Self <: splitPanesWatch](x: Self) {
       
-      @scala.inline
-      def setDefaultPercent(value: js.Any => Unit): Self = StObject.set(x, "defaultPercent", js.Any.fromFunction1(value))
+      inline def setDefaultPercent(value: js.Any => Unit): Self = StObject.set(x, "defaultPercent", js.Any.fromFunction1(value))
     }
   }
   
@@ -368,26 +316,20 @@ object mod extends Shortcut {
   }
   object splitterTapsTypes {
     
-    @scala.inline
-    def apply(): splitterTapsTypes = {
+    inline def apply(): splitterTapsTypes = {
       val __obj = js.Dynamic.literal(splitter = null, timeoutId = null)
       __obj.asInstanceOf[splitterTapsTypes]
     }
     
-    @scala.inline
-    implicit class splitterTapsTypesMutableBuilder[Self <: splitterTapsTypes] (val x: Self) extends AnyVal {
+    extension [Self <: splitterTapsTypes](x: Self) {
       
-      @scala.inline
-      def setSplitter(value: Double): Self = StObject.set(x, "splitter", value.asInstanceOf[js.Any])
+      inline def setSplitter(value: Double): Self = StObject.set(x, "splitter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSplitterNull: Self = StObject.set(x, "splitter", null)
+      inline def setSplitterNull: Self = StObject.set(x, "splitter", null)
       
-      @scala.inline
-      def setTimeoutId(value: js.Object): Self = StObject.set(x, "timeoutId", value.asInstanceOf[js.Any])
+      inline def setTimeoutId(value: js.Object): Self = StObject.set(x, "timeoutId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutIdNull: Self = StObject.set(x, "timeoutId", null)
+      inline def setTimeoutIdNull: Self = StObject.set(x, "timeoutId", null)
     }
   }
   
@@ -401,26 +343,20 @@ object mod extends Shortcut {
   }
   object touchTypes {
     
-    @scala.inline
-    def apply(dragging: Boolean, mouseDown: Boolean): touchTypes = {
+    inline def apply(dragging: Boolean, mouseDown: Boolean): touchTypes = {
       val __obj = js.Dynamic.literal(dragging = dragging.asInstanceOf[js.Any], mouseDown = mouseDown.asInstanceOf[js.Any], activeSplitter = null)
       __obj.asInstanceOf[touchTypes]
     }
     
-    @scala.inline
-    implicit class touchTypesMutableBuilder[Self <: touchTypes] (val x: Self) extends AnyVal {
+    extension [Self <: touchTypes](x: Self) {
       
-      @scala.inline
-      def setActiveSplitter(value: Double): Self = StObject.set(x, "activeSplitter", value.asInstanceOf[js.Any])
+      inline def setActiveSplitter(value: Double): Self = StObject.set(x, "activeSplitter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveSplitterNull: Self = StObject.set(x, "activeSplitter", null)
+      inline def setActiveSplitterNull: Self = StObject.set(x, "activeSplitter", null)
       
-      @scala.inline
-      def setDragging(value: Boolean): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
+      inline def setDragging(value: Boolean): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMouseDown(value: Boolean): Self = StObject.set(x, "mouseDown", value.asInstanceOf[js.Any])
+      inline def setMouseDown(value: Boolean): Self = StObject.set(x, "mouseDown", value.asInstanceOf[js.Any])
     }
   }
 }

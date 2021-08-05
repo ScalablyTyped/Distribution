@@ -23,10 +23,10 @@ object spinnerMod {
       * Resolve size to a pixel value.
       * Size can be set by className, props, default, or minimum constant.
       */
-    var getSize: js.Any = js.native
+    /* private */ var getSize: js.Any = js.native
     
     /** Compute viewbox such that stroked track sits exactly at edge of image frame. */
-    var getViewBox: js.Any = js.native
+    /* private */ var getViewBox: js.Any = js.native
   }
   /* static members */
   object Spinner {
@@ -50,8 +50,7 @@ object spinnerMod {
     @JSImport("@blueprintjs/core/lib/esm/components/spinner/spinner", "Spinner.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   trait ISpinnerProps
@@ -90,32 +89,24 @@ object spinnerMod {
   }
   object ISpinnerProps {
     
-    @scala.inline
-    def apply(): ISpinnerProps = {
+    inline def apply(): ISpinnerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISpinnerProps]
     }
     
-    @scala.inline
-    implicit class ISpinnerPropsMutableBuilder[Self <: ISpinnerProps] (val x: Self) extends AnyVal {
+    extension [Self <: ISpinnerProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+      inline def setTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
+      inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

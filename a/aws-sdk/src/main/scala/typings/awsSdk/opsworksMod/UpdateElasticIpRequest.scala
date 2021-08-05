@@ -18,22 +18,17 @@ trait UpdateElasticIpRequest extends StObject {
 }
 object UpdateElasticIpRequest {
   
-  @scala.inline
-  def apply(ElasticIp: String): UpdateElasticIpRequest = {
+  inline def apply(ElasticIp: String): UpdateElasticIpRequest = {
     val __obj = js.Dynamic.literal(ElasticIp = ElasticIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateElasticIpRequest]
   }
   
-  @scala.inline
-  implicit class UpdateElasticIpRequestMutableBuilder[Self <: UpdateElasticIpRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateElasticIpRequest](x: Self) {
     
-    @scala.inline
-    def setElasticIp(value: String): Self = StObject.set(x, "ElasticIp", value.asInstanceOf[js.Any])
+    inline def setElasticIp(value: String): Self = StObject.set(x, "ElasticIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

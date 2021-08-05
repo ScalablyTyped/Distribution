@@ -15,9 +15,7 @@ object excelExporter {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def exportDataGrid(options: ExcelExportDataGridProps): Promise[CellRange] & JQueryPromise[CellRange] = ^.asInstanceOf[js.Dynamic].applyDynamic("exportDataGrid")(options.asInstanceOf[js.Any]).asInstanceOf[Promise[CellRange] & JQueryPromise[CellRange]]
+  inline def exportDataGrid(options: ExcelExportDataGridProps): Promise[CellRange] & JQueryPromise[CellRange] = ^.asInstanceOf[js.Dynamic].applyDynamic("exportDataGrid")(options.asInstanceOf[js.Any]).asInstanceOf[Promise[CellRange] & JQueryPromise[CellRange]]
   
-  @scala.inline
-  def exportPivotGrid(options: ExcelExportPivotGridProps): Promise[CellRange] & JQueryPromise[CellRange] = ^.asInstanceOf[js.Dynamic].applyDynamic("exportPivotGrid")(options.asInstanceOf[js.Any]).asInstanceOf[Promise[CellRange] & JQueryPromise[CellRange]]
+  inline def exportPivotGrid(options: ExcelExportPivotGridProps): Promise[CellRange] & JQueryPromise[CellRange] = ^.asInstanceOf[js.Dynamic].applyDynamic("exportPivotGrid")(options.asInstanceOf[js.Any]).asInstanceOf[Promise[CellRange] & JQueryPromise[CellRange]]
 }

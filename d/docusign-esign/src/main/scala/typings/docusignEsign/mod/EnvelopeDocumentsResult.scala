@@ -22,28 +22,21 @@ trait EnvelopeDocumentsResult extends StObject {
 }
 object EnvelopeDocumentsResult {
   
-  @scala.inline
-  def apply(): EnvelopeDocumentsResult = {
+  inline def apply(): EnvelopeDocumentsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnvelopeDocumentsResult]
   }
   
-  @scala.inline
-  implicit class EnvelopeDocumentsResultMutableBuilder[Self <: EnvelopeDocumentsResult] (val x: Self) extends AnyVal {
+  extension [Self <: EnvelopeDocumentsResult](x: Self) {
     
-    @scala.inline
-    def setEnvelopeDocuments(value: js.Array[/* This object contains details about the envelope document. */ EnvelopeDocument]): Self = StObject.set(x, "envelopeDocuments", value.asInstanceOf[js.Any])
+    inline def setEnvelopeDocuments(value: js.Array[/* This object contains details about the envelope document. */ EnvelopeDocument]): Self = StObject.set(x, "envelopeDocuments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvelopeDocumentsUndefined: Self = StObject.set(x, "envelopeDocuments", js.undefined)
+    inline def setEnvelopeDocumentsUndefined: Self = StObject.set(x, "envelopeDocuments", js.undefined)
     
-    @scala.inline
-    def setEnvelopeDocumentsVarargs(value: (/* This object contains details about the envelope document. */ EnvelopeDocument)*): Self = StObject.set(x, "envelopeDocuments", js.Array(value :_*))
+    inline def setEnvelopeDocumentsVarargs(value: (/* This object contains details about the envelope document. */ EnvelopeDocument)*): Self = StObject.set(x, "envelopeDocuments", js.Array(value :_*))
     
-    @scala.inline
-    def setEnvelopeId(value: String): Self = StObject.set(x, "envelopeId", value.asInstanceOf[js.Any])
+    inline def setEnvelopeId(value: String): Self = StObject.set(x, "envelopeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvelopeIdUndefined: Self = StObject.set(x, "envelopeId", js.undefined)
+    inline def setEnvelopeIdUndefined: Self = StObject.set(x, "envelopeId", js.undefined)
   }
 }

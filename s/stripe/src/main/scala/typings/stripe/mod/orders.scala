@@ -110,8 +110,7 @@ object orders {
   }
   object IOrder {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       amount: Double,
       amount_returned: Double,
       application: String,
@@ -138,74 +137,51 @@ object orders {
       __obj.asInstanceOf[IOrder]
     }
     
-    @scala.inline
-    implicit class IOrderMutableBuilder[Self <: IOrder] (val x: Self) extends AnyVal {
+    extension [Self <: IOrder](x: Self) {
       
-      @scala.inline
-      def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+      inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmount_returned(value: Double): Self = StObject.set(x, "amount_returned", value.asInstanceOf[js.Any])
+      inline def setAmount_returned(value: Double): Self = StObject.set(x, "amount_returned", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplication(value: String): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
+      inline def setApplication(value: String): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplication_fee(value: Double): Self = StObject.set(x, "application_fee", value.asInstanceOf[js.Any])
+      inline def setApplication_fee(value: Double): Self = StObject.set(x, "application_fee", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharge(value: String | ICharge): Self = StObject.set(x, "charge", value.asInstanceOf[js.Any])
+      inline def setCharge(value: String | ICharge): Self = StObject.set(x, "charge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomer(value: String | ICustomer): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
+      inline def setCustomer(value: String | ICustomer): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternal_coupon_code(value: String): Self = StObject.set(x, "external_coupon_code", value.asInstanceOf[js.Any])
+      inline def setExternal_coupon_code(value: String): Self = StObject.set(x, "external_coupon_code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItems(value: js.Array[IOrderItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[IOrderItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: IOrderItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: IOrderItem*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
+      inline def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject(value: order): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: order): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelected_shipping_method(value: String): Self = StObject.set(x, "selected_shipping_method", value.asInstanceOf[js.Any])
+      inline def setSelected_shipping_method(value: String): Self = StObject.set(x, "selected_shipping_method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShipping(value: IShippingInformation): Self = StObject.set(x, "shipping", value.asInstanceOf[js.Any])
+      inline def setShipping(value: IShippingInformation): Self = StObject.set(x, "shipping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShipping_methods(value: js.Array[IShippingMethod]): Self = StObject.set(x, "shipping_methods", value.asInstanceOf[js.Any])
+      inline def setShipping_methods(value: js.Array[IShippingMethod]): Self = StObject.set(x, "shipping_methods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShipping_methodsVarargs(value: IShippingMethod*): Self = StObject.set(x, "shipping_methods", js.Array(value :_*))
+      inline def setShipping_methodsVarargs(value: IShippingMethod*): Self = StObject.set(x, "shipping_methods", js.Array(value :_*))
       
-      @scala.inline
-      def setStatus(value: OrderStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: OrderStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus_transitions(value: Canceled): Self = StObject.set(x, "status_transitions", value.asInstanceOf[js.Any])
+      inline def setStatus_transitions(value: Canceled): Self = StObject.set(x, "status_transitions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdated(value: Double): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+      inline def setUpdated(value: Double): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     }
   }
   
@@ -248,50 +224,36 @@ object orders {
   }
   object IOrderCreationOptions {
     
-    @scala.inline
-    def apply(currency: String): IOrderCreationOptions = {
+    inline def apply(currency: String): IOrderCreationOptions = {
       val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any])
       __obj.asInstanceOf[IOrderCreationOptions]
     }
     
-    @scala.inline
-    implicit class IOrderCreationOptionsMutableBuilder[Self <: IOrderCreationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IOrderCreationOptions](x: Self) {
       
-      @scala.inline
-      def setCoupon(value: String): Self = StObject.set(x, "coupon", value.asInstanceOf[js.Any])
+      inline def setCoupon(value: String): Self = StObject.set(x, "coupon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCouponUndefined: Self = StObject.set(x, "coupon", js.undefined)
+      inline def setCouponUndefined: Self = StObject.set(x, "coupon", js.undefined)
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
+      inline def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
+      inline def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+      inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
       
-      @scala.inline
-      def setItems(value: js.Array[IOrderItemCreationHash]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[IOrderItemCreationHash]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      @scala.inline
-      def setItemsVarargs(value: IOrderItemCreationHash*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: IOrderItemCreationHash*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setShipping(value: IShippingInformation): Self = StObject.set(x, "shipping", value.asInstanceOf[js.Any])
+      inline def setShipping(value: IShippingInformation): Self = StObject.set(x, "shipping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShippingUndefined: Self = StObject.set(x, "shipping", js.undefined)
+      inline def setShippingUndefined: Self = StObject.set(x, "shipping", js.undefined)
     }
   }
   
@@ -339,8 +301,7 @@ object orders {
   }
   object IOrderItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       amount: Double,
       currency: String,
       description: String,
@@ -354,29 +315,21 @@ object orders {
       __obj.asInstanceOf[IOrderItem]
     }
     
-    @scala.inline
-    implicit class IOrderItemMutableBuilder[Self <: IOrderItem] (val x: Self) extends AnyVal {
+    extension [Self <: IOrderItem](x: Self) {
       
-      @scala.inline
-      def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+      inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject(value: order_item): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: order_item): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent(value: String | ISku): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: String | ISku): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+      inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: sku | tax | shipping | discount): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: sku | tax | shipping | discount): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -415,47 +368,34 @@ object orders {
   }
   object IOrderItemCreationHash {
     
-    @scala.inline
-    def apply(parent: String): IOrderItemCreationHash = {
+    inline def apply(parent: String): IOrderItemCreationHash = {
       val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
       __obj.asInstanceOf[IOrderItemCreationHash]
     }
     
-    @scala.inline
-    implicit class IOrderItemCreationHashMutableBuilder[Self <: IOrderItemCreationHash] (val x: Self) extends AnyVal {
+    extension [Self <: IOrderItemCreationHash](x: Self) {
       
-      @scala.inline
-      def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+      inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
+      inline def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
+      inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+      inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
+      inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
       
-      @scala.inline
-      def setType(value: sku | tax | shipping | discount): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: sku | tax | shipping | discount): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -485,38 +425,28 @@ object orders {
   }
   object IOrderListOptions {
     
-    @scala.inline
-    def apply(status: OrderStatus): IOrderListOptions = {
+    inline def apply(status: OrderStatus): IOrderListOptions = {
       val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[IOrderListOptions]
     }
     
-    @scala.inline
-    implicit class IOrderListOptionsMutableBuilder[Self <: IOrderListOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IOrderListOptions](x: Self) {
       
-      @scala.inline
-      def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
+      inline def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
+      inline def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
       
-      @scala.inline
-      def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+      inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
+      inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
       
-      @scala.inline
-      def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+      inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
       
-      @scala.inline
-      def setStatus(value: OrderStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: OrderStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus_transitions(value: Fulfilled): Self = StObject.set(x, "status_transitions", value.asInstanceOf[js.Any])
+      inline def setStatus_transitions(value: Fulfilled): Self = StObject.set(x, "status_transitions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus_transitionsUndefined: Self = StObject.set(x, "status_transitions", js.undefined)
+      inline def setStatus_transitionsUndefined: Self = StObject.set(x, "status_transitions", js.undefined)
     }
   }
   
@@ -557,38 +487,28 @@ object orders {
   }
   object IOrderPayOptions {
     
-    @scala.inline
-    def apply(): IOrderPayOptions = {
+    inline def apply(): IOrderPayOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IOrderPayOptions]
     }
     
-    @scala.inline
-    implicit class IOrderPayOptionsMutableBuilder[Self <: IOrderPayOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IOrderPayOptions](x: Self) {
       
-      @scala.inline
-      def setApplication_fee(value: Double): Self = StObject.set(x, "application_fee", value.asInstanceOf[js.Any])
+      inline def setApplication_fee(value: Double): Self = StObject.set(x, "application_fee", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplication_feeUndefined: Self = StObject.set(x, "application_fee", js.undefined)
+      inline def setApplication_feeUndefined: Self = StObject.set(x, "application_fee", js.undefined)
       
-      @scala.inline
-      def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
+      inline def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
+      inline def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+      inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
       
-      @scala.inline
-      def setSource(value: String | ICardSourceCreationOptions): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String | ICardSourceCreationOptions): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     }
   }
   
@@ -611,32 +531,24 @@ object orders {
   }
   object IOrderUpdateOptions {
     
-    @scala.inline
-    def apply(): IOrderUpdateOptions = {
+    inline def apply(): IOrderUpdateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IOrderUpdateOptions]
     }
     
-    @scala.inline
-    implicit class IOrderUpdateOptionsMutableBuilder[Self <: IOrderUpdateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IOrderUpdateOptions](x: Self) {
       
-      @scala.inline
-      def setCoupon(value: String): Self = StObject.set(x, "coupon", value.asInstanceOf[js.Any])
+      inline def setCoupon(value: String): Self = StObject.set(x, "coupon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCouponUndefined: Self = StObject.set(x, "coupon", js.undefined)
+      inline def setCouponUndefined: Self = StObject.set(x, "coupon", js.undefined)
       
-      @scala.inline
-      def setSelected_shipping_method(value: String): Self = StObject.set(x, "selected_shipping_method", value.asInstanceOf[js.Any])
+      inline def setSelected_shipping_method(value: String): Self = StObject.set(x, "selected_shipping_method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelected_shipping_methodUndefined: Self = StObject.set(x, "selected_shipping_method", js.undefined)
+      inline def setSelected_shipping_methodUndefined: Self = StObject.set(x, "selected_shipping_method", js.undefined)
       
-      @scala.inline
-      def setStatus(value: OrderStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: OrderStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     }
   }
   
@@ -667,29 +579,22 @@ object orders {
   }
   object IShippingMethod {
     
-    @scala.inline
-    def apply(amount: Double, currency: String, delivery_estimate: Earliest, description: String, id: String): IShippingMethod = {
+    inline def apply(amount: Double, currency: String, delivery_estimate: Earliest, description: String, id: String): IShippingMethod = {
       val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], delivery_estimate = delivery_estimate.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[IShippingMethod]
     }
     
-    @scala.inline
-    implicit class IShippingMethodMutableBuilder[Self <: IShippingMethod] (val x: Self) extends AnyVal {
+    extension [Self <: IShippingMethod](x: Self) {
       
-      @scala.inline
-      def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+      inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelivery_estimate(value: Earliest): Self = StObject.set(x, "delivery_estimate", value.asInstanceOf[js.Any])
+      inline def setDelivery_estimate(value: Earliest): Self = StObject.set(x, "delivery_estimate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -706,19 +611,14 @@ object orders {
   trait OrderStatus extends StObject
   object OrderStatus {
     
-    @scala.inline
-    def canceled: typings.stripe.stripeStrings.canceled = "canceled".asInstanceOf[typings.stripe.stripeStrings.canceled]
+    inline def canceled: typings.stripe.stripeStrings.canceled = "canceled".asInstanceOf[typings.stripe.stripeStrings.canceled]
     
-    @scala.inline
-    def created: typings.stripe.stripeStrings.created = "created".asInstanceOf[typings.stripe.stripeStrings.created]
+    inline def created: typings.stripe.stripeStrings.created = "created".asInstanceOf[typings.stripe.stripeStrings.created]
     
-    @scala.inline
-    def fulfilled: typings.stripe.stripeStrings.fulfilled = "fulfilled".asInstanceOf[typings.stripe.stripeStrings.fulfilled]
+    inline def fulfilled: typings.stripe.stripeStrings.fulfilled = "fulfilled".asInstanceOf[typings.stripe.stripeStrings.fulfilled]
     
-    @scala.inline
-    def paid: typings.stripe.stripeStrings.paid = "paid".asInstanceOf[typings.stripe.stripeStrings.paid]
+    inline def paid: typings.stripe.stripeStrings.paid = "paid".asInstanceOf[typings.stripe.stripeStrings.paid]
     
-    @scala.inline
-    def returned: typings.stripe.stripeStrings.returned = "returned".asInstanceOf[typings.stripe.stripeStrings.returned]
+    inline def returned: typings.stripe.stripeStrings.returned = "returned".asInstanceOf[typings.stripe.stripeStrings.returned]
   }
 }

@@ -17,27 +17,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DatepickerEvents extends StObject
 object DatepickerEvents {
   
-  @scala.inline
-  def changeCentury: typings.bootstrapDatepicker.bootstrapDatepickerStrings.changeCentury = "changeCentury".asInstanceOf[typings.bootstrapDatepicker.bootstrapDatepickerStrings.changeCentury]
+  inline def changeCentury: typings.bootstrapDatepicker.bootstrapDatepickerStrings.changeCentury = "changeCentury".asInstanceOf[typings.bootstrapDatepicker.bootstrapDatepickerStrings.changeCentury]
   
-  @scala.inline
-  def changeDate: typings.bootstrapDatepicker.bootstrapDatepickerStrings.changeDate = "changeDate".asInstanceOf[typings.bootstrapDatepicker.bootstrapDatepickerStrings.changeDate]
+  inline def changeDate: typings.bootstrapDatepicker.bootstrapDatepickerStrings.changeDate = "changeDate".asInstanceOf[typings.bootstrapDatepicker.bootstrapDatepickerStrings.changeDate]
   
-  @scala.inline
-  def changeDecade: typings.bootstrapDatepicker.bootstrapDatepickerStrings.changeDecade = "changeDecade".asInstanceOf[typings.bootstrapDatepicker.bootstrapDatepickerStrings.changeDecade]
+  inline def changeDecade: typings.bootstrapDatepicker.bootstrapDatepickerStrings.changeDecade = "changeDecade".asInstanceOf[typings.bootstrapDatepicker.bootstrapDatepickerStrings.changeDecade]
   
-  @scala.inline
-  def changeMonth: typings.bootstrapDatepicker.bootstrapDatepickerStrings.changeMonth = "changeMonth".asInstanceOf[typings.bootstrapDatepicker.bootstrapDatepickerStrings.changeMonth]
+  inline def changeMonth: typings.bootstrapDatepicker.bootstrapDatepickerStrings.changeMonth = "changeMonth".asInstanceOf[typings.bootstrapDatepicker.bootstrapDatepickerStrings.changeMonth]
   
-  @scala.inline
-  def changeYear: typings.bootstrapDatepicker.bootstrapDatepickerStrings.changeYear = "changeYear".asInstanceOf[typings.bootstrapDatepicker.bootstrapDatepickerStrings.changeYear]
+  inline def changeYear: typings.bootstrapDatepicker.bootstrapDatepickerStrings.changeYear = "changeYear".asInstanceOf[typings.bootstrapDatepicker.bootstrapDatepickerStrings.changeYear]
   
-  @scala.inline
-  def clearDate: typings.bootstrapDatepicker.bootstrapDatepickerStrings.clearDate = "clearDate".asInstanceOf[typings.bootstrapDatepicker.bootstrapDatepickerStrings.clearDate]
+  inline def clearDate: typings.bootstrapDatepicker.bootstrapDatepickerStrings.clearDate = "clearDate".asInstanceOf[typings.bootstrapDatepicker.bootstrapDatepickerStrings.clearDate]
   
-  @scala.inline
-  def hide: typings.bootstrapDatepicker.bootstrapDatepickerStrings.hide = "hide".asInstanceOf[typings.bootstrapDatepicker.bootstrapDatepickerStrings.hide]
+  inline def hide: typings.bootstrapDatepicker.bootstrapDatepickerStrings.hide = "hide".asInstanceOf[typings.bootstrapDatepicker.bootstrapDatepickerStrings.hide]
   
-  @scala.inline
-  def show: typings.bootstrapDatepicker.bootstrapDatepickerStrings.show = "show".asInstanceOf[typings.bootstrapDatepicker.bootstrapDatepickerStrings.show]
+  inline def show: typings.bootstrapDatepicker.bootstrapDatepickerStrings.show = "show".asInstanceOf[typings.bootstrapDatepicker.bootstrapDatepickerStrings.show]
 }

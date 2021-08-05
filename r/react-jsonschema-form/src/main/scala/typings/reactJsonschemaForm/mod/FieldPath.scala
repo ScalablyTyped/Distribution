@@ -11,16 +11,13 @@ trait FieldPath extends StObject {
 }
 object FieldPath {
   
-  @scala.inline
-  def apply($name: String): FieldPath = {
+  inline def apply($name: String): FieldPath = {
     val __obj = js.Dynamic.literal($name = $name.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldPath]
   }
   
-  @scala.inline
-  implicit class FieldPathMutableBuilder[Self <: FieldPath] (val x: Self) extends AnyVal {
+  extension [Self <: FieldPath](x: Self) {
     
-    @scala.inline
-    def set$name(value: String): Self = StObject.set(x, "$name", value.asInstanceOf[js.Any])
+    inline def set$name(value: String): Self = StObject.set(x, "$name", value.asInstanceOf[js.Any])
   }
 }

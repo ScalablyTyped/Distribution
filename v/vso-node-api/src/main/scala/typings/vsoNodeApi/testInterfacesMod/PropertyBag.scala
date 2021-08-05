@@ -14,16 +14,13 @@ trait PropertyBag extends StObject {
 }
 object PropertyBag {
   
-  @scala.inline
-  def apply(bag: StringDictionary[String]): PropertyBag = {
+  inline def apply(bag: StringDictionary[String]): PropertyBag = {
     val __obj = js.Dynamic.literal(bag = bag.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertyBag]
   }
   
-  @scala.inline
-  implicit class PropertyBagMutableBuilder[Self <: PropertyBag] (val x: Self) extends AnyVal {
+  extension [Self <: PropertyBag](x: Self) {
     
-    @scala.inline
-    def setBag(value: StringDictionary[String]): Self = StObject.set(x, "bag", value.asInstanceOf[js.Any])
+    inline def setBag(value: StringDictionary[String]): Self = StObject.set(x, "bag", value.asInstanceOf[js.Any])
   }
 }

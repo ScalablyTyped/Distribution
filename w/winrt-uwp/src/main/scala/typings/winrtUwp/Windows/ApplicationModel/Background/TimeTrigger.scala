@@ -15,19 +15,15 @@ trait TimeTrigger extends StObject {
 }
 object TimeTrigger {
   
-  @scala.inline
-  def apply(freshnessTime: Double, oneShot: Boolean): TimeTrigger = {
+  inline def apply(freshnessTime: Double, oneShot: Boolean): TimeTrigger = {
     val __obj = js.Dynamic.literal(freshnessTime = freshnessTime.asInstanceOf[js.Any], oneShot = oneShot.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeTrigger]
   }
   
-  @scala.inline
-  implicit class TimeTriggerMutableBuilder[Self <: TimeTrigger] (val x: Self) extends AnyVal {
+  extension [Self <: TimeTrigger](x: Self) {
     
-    @scala.inline
-    def setFreshnessTime(value: Double): Self = StObject.set(x, "freshnessTime", value.asInstanceOf[js.Any])
+    inline def setFreshnessTime(value: Double): Self = StObject.set(x, "freshnessTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneShot(value: Boolean): Self = StObject.set(x, "oneShot", value.asInstanceOf[js.Any])
+    inline def setOneShot(value: Boolean): Self = StObject.set(x, "oneShot", value.asInstanceOf[js.Any])
   }
 }

@@ -20,37 +20,27 @@ trait LineInputProps
 }
 object LineInputProps {
   
-  @scala.inline
-  def apply(line: js.Array[Token]): LineInputProps = {
+  inline def apply(line: js.Array[Token]): LineInputProps = {
     val __obj = js.Dynamic.literal(line = line.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineInputProps]
   }
   
-  @scala.inline
-  implicit class LineInputPropsMutableBuilder[Self <: LineInputProps] (val x: Self) extends AnyVal {
+  extension [Self <: LineInputProps](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setLine(value: js.Array[Token]): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: js.Array[Token]): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineVarargs(value: Token*): Self = StObject.set(x, "line", js.Array(value :_*))
+    inline def setLineVarargs(value: Token*): Self = StObject.set(x, "line", js.Array(value :_*))
     
-    @scala.inline
-    def setStyle(value: StyleObj): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: StyleObj): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

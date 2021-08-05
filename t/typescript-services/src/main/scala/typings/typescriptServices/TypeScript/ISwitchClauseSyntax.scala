@@ -14,8 +14,7 @@ trait ISwitchClauseSyntax
 }
 object ISwitchClauseSyntax {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accept: ISyntaxVisitor => js.Any,
     childAt: Double => ISyntaxElement,
     childCount: () => Double,
@@ -45,13 +44,10 @@ object ISwitchClauseSyntax {
     __obj.asInstanceOf[ISwitchClauseSyntax]
   }
   
-  @scala.inline
-  implicit class ISwitchClauseSyntaxMutableBuilder[Self <: ISwitchClauseSyntax] (val x: Self) extends AnyVal {
+  extension [Self <: ISwitchClauseSyntax](x: Self) {
     
-    @scala.inline
-    def setIsSwitchClause(value: () => Boolean): Self = StObject.set(x, "isSwitchClause", js.Any.fromFunction0(value))
+    inline def setIsSwitchClause(value: () => Boolean): Self = StObject.set(x, "isSwitchClause", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStatements(value: ISyntaxList): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
+    inline def setStatements(value: ISyntaxList): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
   }
 }

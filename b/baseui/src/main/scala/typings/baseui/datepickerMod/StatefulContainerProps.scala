@@ -27,45 +27,33 @@ trait StatefulContainerProps[T] extends StObject {
 }
 object StatefulContainerProps {
   
-  @scala.inline
-  def apply[T](): StatefulContainerProps[T] = {
+  inline def apply[T](): StatefulContainerProps[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StatefulContainerProps[T]]
   }
   
-  @scala.inline
-  implicit class StatefulContainerPropsMutableBuilder[Self <: StatefulContainerProps[?], T] (val x: Self & StatefulContainerProps[T]) extends AnyVal {
+  extension [Self <: StatefulContainerProps[?], T](x: Self & StatefulContainerProps[T]) {
     
-    @scala.inline
-    def setChildren(value: /* args */ T => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+    inline def setChildren(value: /* args */ T => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setInitialState(value: ContainerState): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
+    inline def setInitialState(value: ContainerState): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
+    inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
     
-    @scala.inline
-    def setOnChange(value: /* args */ Date => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: /* args */ Date => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+    inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
-    @scala.inline
-    def setRange(value: Boolean): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Boolean): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    @scala.inline
-    def setStateReducer(
+    inline def setStateReducer(
       value: (/* stateType */ mouseLeave | moveRight | moveDown | moveUp | mouseOver | change_ | moveLeft, /* nextState */ ContainerState, /* currentState */ ContainerState) => ContainerState
     ): Self = StObject.set(x, "stateReducer", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setStateReducerUndefined: Self = StObject.set(x, "stateReducer", js.undefined)
+    inline def setStateReducerUndefined: Self = StObject.set(x, "stateReducer", js.undefined)
   }
 }

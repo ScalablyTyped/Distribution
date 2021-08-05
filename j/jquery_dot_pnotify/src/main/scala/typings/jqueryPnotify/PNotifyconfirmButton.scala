@@ -19,34 +19,25 @@ trait PNotifyconfirmButton extends StObject {
 }
 object PNotifyconfirmButton {
   
-  @scala.inline
-  def apply(click: (PNotify, js.Any) => Unit): PNotifyconfirmButton = {
+  inline def apply(click: (PNotify, js.Any) => Unit): PNotifyconfirmButton = {
     val __obj = js.Dynamic.literal(click = js.Any.fromFunction2(click))
     __obj.asInstanceOf[PNotifyconfirmButton]
   }
   
-  @scala.inline
-  implicit class PNotifyconfirmButtonMutableBuilder[Self <: PNotifyconfirmButton] (val x: Self) extends AnyVal {
+  extension [Self <: PNotifyconfirmButton](x: Self) {
     
-    @scala.inline
-    def setAddClass(value: String): Self = StObject.set(x, "addClass", value.asInstanceOf[js.Any])
+    inline def setAddClass(value: String): Self = StObject.set(x, "addClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddClassUndefined: Self = StObject.set(x, "addClass", js.undefined)
+    inline def setAddClassUndefined: Self = StObject.set(x, "addClass", js.undefined)
     
-    @scala.inline
-    def setClick(value: (PNotify, js.Any) => Unit): Self = StObject.set(x, "click", js.Any.fromFunction2(value))
+    inline def setClick(value: (PNotify, js.Any) => Unit): Self = StObject.set(x, "click", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPromptTrigger(value: Boolean): Self = StObject.set(x, "promptTrigger", value.asInstanceOf[js.Any])
+    inline def setPromptTrigger(value: Boolean): Self = StObject.set(x, "promptTrigger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromptTriggerUndefined: Self = StObject.set(x, "promptTrigger", js.undefined)
+    inline def setPromptTriggerUndefined: Self = StObject.set(x, "promptTrigger", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

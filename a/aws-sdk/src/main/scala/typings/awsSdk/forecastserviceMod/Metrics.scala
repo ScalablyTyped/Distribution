@@ -23,37 +23,27 @@ trait Metrics extends StObject {
 }
 object Metrics {
   
-  @scala.inline
-  def apply(): Metrics = {
+  inline def apply(): Metrics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Metrics]
   }
   
-  @scala.inline
-  implicit class MetricsMutableBuilder[Self <: Metrics] (val x: Self) extends AnyVal {
+  extension [Self <: Metrics](x: Self) {
     
-    @scala.inline
-    def setErrorMetrics(value: ErrorMetrics): Self = StObject.set(x, "ErrorMetrics", value.asInstanceOf[js.Any])
+    inline def setErrorMetrics(value: ErrorMetrics): Self = StObject.set(x, "ErrorMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMetricsUndefined: Self = StObject.set(x, "ErrorMetrics", js.undefined)
+    inline def setErrorMetricsUndefined: Self = StObject.set(x, "ErrorMetrics", js.undefined)
     
-    @scala.inline
-    def setErrorMetricsVarargs(value: ErrorMetric*): Self = StObject.set(x, "ErrorMetrics", js.Array(value :_*))
+    inline def setErrorMetricsVarargs(value: ErrorMetric*): Self = StObject.set(x, "ErrorMetrics", js.Array(value :_*))
     
-    @scala.inline
-    def setRMSE(value: Double): Self = StObject.set(x, "RMSE", value.asInstanceOf[js.Any])
+    inline def setRMSE(value: Double): Self = StObject.set(x, "RMSE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRMSEUndefined: Self = StObject.set(x, "RMSE", js.undefined)
+    inline def setRMSEUndefined: Self = StObject.set(x, "RMSE", js.undefined)
     
-    @scala.inline
-    def setWeightedQuantileLosses(value: WeightedQuantileLosses): Self = StObject.set(x, "WeightedQuantileLosses", value.asInstanceOf[js.Any])
+    inline def setWeightedQuantileLosses(value: WeightedQuantileLosses): Self = StObject.set(x, "WeightedQuantileLosses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightedQuantileLossesUndefined: Self = StObject.set(x, "WeightedQuantileLosses", js.undefined)
+    inline def setWeightedQuantileLossesUndefined: Self = StObject.set(x, "WeightedQuantileLosses", js.undefined)
     
-    @scala.inline
-    def setWeightedQuantileLossesVarargs(value: WeightedQuantileLoss*): Self = StObject.set(x, "WeightedQuantileLosses", js.Array(value :_*))
+    inline def setWeightedQuantileLossesVarargs(value: WeightedQuantileLoss*): Self = StObject.set(x, "WeightedQuantileLosses", js.Array(value :_*))
   }
 }

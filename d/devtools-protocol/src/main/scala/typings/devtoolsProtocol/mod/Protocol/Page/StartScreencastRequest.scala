@@ -36,43 +36,31 @@ trait StartScreencastRequest extends StObject {
 }
 object StartScreencastRequest {
   
-  @scala.inline
-  def apply(): StartScreencastRequest = {
+  inline def apply(): StartScreencastRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartScreencastRequest]
   }
   
-  @scala.inline
-  implicit class StartScreencastRequestMutableBuilder[Self <: StartScreencastRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartScreencastRequest](x: Self) {
     
-    @scala.inline
-    def setEveryNthFrame(value: integer): Self = StObject.set(x, "everyNthFrame", value.asInstanceOf[js.Any])
+    inline def setEveryNthFrame(value: integer): Self = StObject.set(x, "everyNthFrame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEveryNthFrameUndefined: Self = StObject.set(x, "everyNthFrame", js.undefined)
+    inline def setEveryNthFrameUndefined: Self = StObject.set(x, "everyNthFrame", js.undefined)
     
-    @scala.inline
-    def setFormat(value: jpeg | png): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: jpeg | png): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setMaxHeight(value: integer): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+    inline def setMaxHeight(value: integer): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+    inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
     
-    @scala.inline
-    def setMaxWidth(value: integer): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    inline def setMaxWidth(value: integer): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+    inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
-    @scala.inline
-    def setQuality(value: integer): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+    inline def setQuality(value: integer): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+    inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
   }
 }

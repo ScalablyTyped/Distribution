@@ -21,19 +21,14 @@ object CTLScriptType {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def CTL_ARABIC: `2` = 2.asInstanceOf[`2`]
+    inline def CTL_ARABIC: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def CTL_HEBREW: `1` = 1.asInstanceOf[`1`]
+    inline def CTL_HEBREW: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def CTL_INDIC: `4` = 4.asInstanceOf[`4`]
+    inline def CTL_INDIC: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def CTL_THAI: `3` = 3.asInstanceOf[`3`]
+    inline def CTL_THAI: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def CTL_UNKNOWN: `0` = 0.asInstanceOf[`0`]
+    inline def CTL_UNKNOWN: `0` = 0.asInstanceOf[`0`]
   }
 }

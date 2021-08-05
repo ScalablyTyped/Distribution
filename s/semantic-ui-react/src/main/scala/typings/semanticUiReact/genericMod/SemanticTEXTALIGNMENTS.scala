@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SemanticTEXTALIGNMENTS extends StObject
 object SemanticTEXTALIGNMENTS {
   
-  @scala.inline
-  def center: typings.semanticUiReact.semanticUiReactStrings.center = "center".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.center]
+  inline def center: typings.semanticUiReact.semanticUiReactStrings.center = "center".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.center]
   
-  @scala.inline
-  def justified: typings.semanticUiReact.semanticUiReactStrings.justified = "justified".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.justified]
+  inline def justified: typings.semanticUiReact.semanticUiReactStrings.justified = "justified".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.justified]
   
-  @scala.inline
-  def left: typings.semanticUiReact.semanticUiReactStrings.left = "left".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.left]
+  inline def left: typings.semanticUiReact.semanticUiReactStrings.left = "left".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.left]
   
-  @scala.inline
-  def right: typings.semanticUiReact.semanticUiReactStrings.right = "right".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.right]
+  inline def right: typings.semanticUiReact.semanticUiReactStrings.right = "right".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.right]
 }

@@ -16,25 +16,19 @@ trait KeyboardEvent extends StObject {
 }
 object KeyboardEvent {
   
-  @scala.inline
-  def apply(extKey: Double, key: String, modifierKey: Double, modifiers: Double): KeyboardEvent = {
+  inline def apply(extKey: Double, key: String, modifierKey: Double, modifiers: Double): KeyboardEvent = {
     val __obj = js.Dynamic.literal(extKey = extKey.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], modifierKey = modifierKey.asInstanceOf[js.Any], modifiers = modifiers.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyboardEvent]
   }
   
-  @scala.inline
-  implicit class KeyboardEventMutableBuilder[Self <: KeyboardEvent] (val x: Self) extends AnyVal {
+  extension [Self <: KeyboardEvent](x: Self) {
     
-    @scala.inline
-    def setExtKey(value: Double): Self = StObject.set(x, "extKey", value.asInstanceOf[js.Any])
+    inline def setExtKey(value: Double): Self = StObject.set(x, "extKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifierKey(value: Double): Self = StObject.set(x, "modifierKey", value.asInstanceOf[js.Any])
+    inline def setModifierKey(value: Double): Self = StObject.set(x, "modifierKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiers(value: Double): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+    inline def setModifiers(value: Double): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
   }
 }

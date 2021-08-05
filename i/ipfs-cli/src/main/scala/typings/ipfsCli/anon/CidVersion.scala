@@ -30,8 +30,7 @@ trait CidVersion extends StObject {
 }
 object CidVersion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cidBase: js.Any,
     cidVersion: js.Any,
     ctx: Ipfs,
@@ -48,40 +47,28 @@ object CidVersion {
     __obj.asInstanceOf[CidVersion]
   }
   
-  @scala.inline
-  implicit class CidVersionMutableBuilder[Self <: CidVersion] (val x: Self) extends AnyVal {
+  extension [Self <: CidVersion](x: Self) {
     
-    @scala.inline
-    def setCidBase(value: js.Any): Self = StObject.set(x, "cidBase", value.asInstanceOf[js.Any])
+    inline def setCidBase(value: js.Any): Self = StObject.set(x, "cidBase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidVersion(value: js.Any): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
+    inline def setCidVersion(value: js.Any): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCtx(value: Ipfs): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
+    inline def setCtx(value: Ipfs): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: js.Any): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: js.Any): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHashAlg(value: js.Any): Self = StObject.set(x, "hashAlg", value.asInstanceOf[js.Any])
+    inline def setHashAlg(value: js.Any): Self = StObject.set(x, "hashAlg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputEncoding(value: js.Any): Self = StObject.set(x, "inputEncoding", value.asInstanceOf[js.Any])
+    inline def setInputEncoding(value: js.Any): Self = StObject.set(x, "inputEncoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlyHash(value: js.Any): Self = StObject.set(x, "onlyHash", value.asInstanceOf[js.Any])
+    inline def setOnlyHash(value: js.Any): Self = StObject.set(x, "onlyHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPin(value: js.Any): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
+    inline def setPin(value: js.Any): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreload(value: js.Any): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
+    inline def setPreload(value: js.Any): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

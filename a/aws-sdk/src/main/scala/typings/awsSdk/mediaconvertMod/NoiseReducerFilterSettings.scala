@@ -13,19 +13,15 @@ trait NoiseReducerFilterSettings extends StObject {
 }
 object NoiseReducerFilterSettings {
   
-  @scala.inline
-  def apply(): NoiseReducerFilterSettings = {
+  inline def apply(): NoiseReducerFilterSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NoiseReducerFilterSettings]
   }
   
-  @scala.inline
-  implicit class NoiseReducerFilterSettingsMutableBuilder[Self <: NoiseReducerFilterSettings] (val x: Self) extends AnyVal {
+  extension [Self <: NoiseReducerFilterSettings](x: Self) {
     
-    @scala.inline
-    def setStrength(value: integerMin0Max3): Self = StObject.set(x, "Strength", value.asInstanceOf[js.Any])
+    inline def setStrength(value: integerMin0Max3): Self = StObject.set(x, "Strength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrengthUndefined: Self = StObject.set(x, "Strength", js.undefined)
+    inline def setStrengthUndefined: Self = StObject.set(x, "Strength", js.undefined)
   }
 }

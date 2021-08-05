@@ -69,14 +69,11 @@ object mod {
   trait Badge extends StObject
   object Badge {
     
-    @scala.inline
-    def bottomleft: typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.bottomleft = "bottomleft".asInstanceOf[typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.bottomleft]
+    inline def bottomleft: typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.bottomleft = "bottomleft".asInstanceOf[typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.bottomleft]
     
-    @scala.inline
-    def bottomright: typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.bottomright = "bottomright".asInstanceOf[typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.bottomright]
+    inline def bottomright: typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.bottomright = "bottomright".asInstanceOf[typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.bottomright]
     
-    @scala.inline
-    def `inline`: typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.`inline` = "inline".asInstanceOf[typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.`inline`]
+    inline def `inline`: typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.`inline` = "inline".asInstanceOf[typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.`inline`]
   }
   
   trait ReCAPTCHAProps extends StObject {
@@ -155,83 +152,58 @@ object mod {
   }
   object ReCAPTCHAProps {
     
-    @scala.inline
-    def apply(sitekey: String): ReCAPTCHAProps = {
+    inline def apply(sitekey: String): ReCAPTCHAProps = {
       val __obj = js.Dynamic.literal(sitekey = sitekey.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReCAPTCHAProps]
     }
     
-    @scala.inline
-    implicit class ReCAPTCHAPropsMutableBuilder[Self <: ReCAPTCHAProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReCAPTCHAProps](x: Self) {
       
-      @scala.inline
-      def setBadge(value: Badge): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
+      inline def setBadge(value: Badge): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
+      inline def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
       
-      @scala.inline
-      def setGrecaptcha(value: js.Object): Self = StObject.set(x, "grecaptcha", value.asInstanceOf[js.Any])
+      inline def setGrecaptcha(value: js.Object): Self = StObject.set(x, "grecaptcha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrecaptchaUndefined: Self = StObject.set(x, "grecaptcha", js.undefined)
+      inline def setGrecaptchaUndefined: Self = StObject.set(x, "grecaptcha", js.undefined)
       
-      @scala.inline
-      def setHl(value: String): Self = StObject.set(x, "hl", value.asInstanceOf[js.Any])
+      inline def setHl(value: String): Self = StObject.set(x, "hl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHlUndefined: Self = StObject.set(x, "hl", js.undefined)
+      inline def setHlUndefined: Self = StObject.set(x, "hl", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* token */ String | Null => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* token */ String | Null => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnErrored(value: () => Unit): Self = StObject.set(x, "onErrored", js.Any.fromFunction0(value))
+      inline def setOnErrored(value: () => Unit): Self = StObject.set(x, "onErrored", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnErroredUndefined: Self = StObject.set(x, "onErrored", js.undefined)
+      inline def setOnErroredUndefined: Self = StObject.set(x, "onErrored", js.undefined)
       
-      @scala.inline
-      def setOnExpired(value: () => Unit): Self = StObject.set(x, "onExpired", js.Any.fromFunction0(value))
+      inline def setOnExpired(value: () => Unit): Self = StObject.set(x, "onExpired", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnExpiredUndefined: Self = StObject.set(x, "onExpired", js.undefined)
+      inline def setOnExpiredUndefined: Self = StObject.set(x, "onExpired", js.undefined)
       
-      @scala.inline
-      def setSitekey(value: String): Self = StObject.set(x, "sitekey", value.asInstanceOf[js.Any])
+      inline def setSitekey(value: String): Self = StObject.set(x, "sitekey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setStoken(value: String): Self = StObject.set(x, "stoken", value.asInstanceOf[js.Any])
+      inline def setStoken(value: String): Self = StObject.set(x, "stoken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStokenUndefined: Self = StObject.set(x, "stoken", js.undefined)
+      inline def setStokenUndefined: Self = StObject.set(x, "stoken", js.undefined)
       
-      @scala.inline
-      def setTabindex(value: Double): Self = StObject.set(x, "tabindex", value.asInstanceOf[js.Any])
+      inline def setTabindex(value: Double): Self = StObject.set(x, "tabindex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabindexUndefined: Self = StObject.set(x, "tabindex", js.undefined)
+      inline def setTabindexUndefined: Self = StObject.set(x, "tabindex", js.undefined)
       
-      @scala.inline
-      def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -243,14 +215,11 @@ object mod {
   trait Size extends StObject
   object Size {
     
-    @scala.inline
-    def compact: typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.compact = "compact".asInstanceOf[typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.compact]
+    inline def compact: typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.compact = "compact".asInstanceOf[typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.compact]
     
-    @scala.inline
-    def invisible: typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.invisible = "invisible".asInstanceOf[typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.invisible]
+    inline def invisible: typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.invisible = "invisible".asInstanceOf[typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.invisible]
     
-    @scala.inline
-    def normal: typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.normal = "normal".asInstanceOf[typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.normal]
+    inline def normal: typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.normal = "normal".asInstanceOf[typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.normal]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -260,11 +229,9 @@ object mod {
   trait Theme extends StObject
   object Theme {
     
-    @scala.inline
-    def dark: typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.dark = "dark".asInstanceOf[typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.dark]
+    inline def dark: typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.dark = "dark".asInstanceOf[typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.dark]
     
-    @scala.inline
-    def light: typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.light = "light".asInstanceOf[typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.light]
+    inline def light: typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.light = "light".asInstanceOf[typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.light]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -274,10 +241,8 @@ object mod {
   trait Type extends StObject
   object Type {
     
-    @scala.inline
-    def audio: typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.audio = "audio".asInstanceOf[typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.audio]
+    inline def audio: typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.audio = "audio".asInstanceOf[typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.audio]
     
-    @scala.inline
-    def image: typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.image = "image".asInstanceOf[typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.image]
+    inline def image: typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.image = "image".asInstanceOf[typings.reactGoogleRecaptcha.reactGoogleRecaptchaStrings.image]
   }
 }

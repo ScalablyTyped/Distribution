@@ -10,6 +10,5 @@ object global {
   @js.native
   def ngBootbox: BootboxService = js.native
   
-  @scala.inline
-  def ngBootbox_=(x: BootboxService): Unit = js.Dynamic.global.updateDynamic("$ngBootbox")(x.asInstanceOf[js.Any])
+  inline def ngBootbox_=(x: BootboxService): Unit = js.Dynamic.global.updateDynamic("$ngBootbox")(x.asInstanceOf[js.Any])
 }

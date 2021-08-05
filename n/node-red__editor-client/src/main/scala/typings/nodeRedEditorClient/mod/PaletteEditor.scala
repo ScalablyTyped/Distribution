@@ -13,8 +13,7 @@ trait PaletteEditor extends StObject {
 }
 object PaletteEditor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     init: () => Unit,
     install: (js.Object, js.Object, js.Function1[/* ret */ Error | js.Object, Unit]) => Unit
   ): PaletteEditor = {
@@ -22,13 +21,10 @@ object PaletteEditor {
     __obj.asInstanceOf[PaletteEditor]
   }
   
-  @scala.inline
-  implicit class PaletteEditorMutableBuilder[Self <: PaletteEditor] (val x: Self) extends AnyVal {
+  extension [Self <: PaletteEditor](x: Self) {
     
-    @scala.inline
-    def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
+    inline def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInstall(value: (js.Object, js.Object, js.Function1[/* ret */ Error | js.Object, Unit]) => Unit): Self = StObject.set(x, "install", js.Any.fromFunction3(value))
+    inline def setInstall(value: (js.Object, js.Object, js.Function1[/* ret */ Error | js.Object, Unit]) => Unit): Self = StObject.set(x, "install", js.Any.fromFunction3(value))
   }
 }

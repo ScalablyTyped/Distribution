@@ -18,25 +18,19 @@ trait ListResourcesInProtectionGroupResponse extends StObject {
 }
 object ListResourcesInProtectionGroupResponse {
   
-  @scala.inline
-  def apply(ResourceArns: ResourceArnList): ListResourcesInProtectionGroupResponse = {
+  inline def apply(ResourceArns: ResourceArnList): ListResourcesInProtectionGroupResponse = {
     val __obj = js.Dynamic.literal(ResourceArns = ResourceArns.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListResourcesInProtectionGroupResponse]
   }
   
-  @scala.inline
-  implicit class ListResourcesInProtectionGroupResponseMutableBuilder[Self <: ListResourcesInProtectionGroupResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListResourcesInProtectionGroupResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setResourceArns(value: ResourceArnList): Self = StObject.set(x, "ResourceArns", value.asInstanceOf[js.Any])
+    inline def setResourceArns(value: ResourceArnList): Self = StObject.set(x, "ResourceArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceArnsVarargs(value: ResourceArn*): Self = StObject.set(x, "ResourceArns", js.Array(value :_*))
+    inline def setResourceArnsVarargs(value: ResourceArn*): Self = StObject.set(x, "ResourceArns", js.Array(value :_*))
   }
 }

@@ -16,12 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RefreshConstants extends StObject
 object RefreshConstants {
   
-  @scala.inline
-  def Completely: `3` = 3.asInstanceOf[`3`]
+  inline def Completely: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def IfExpired: `1` = 1.asInstanceOf[`1`]
+  inline def IfExpired: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def Normal: `0` = 0.asInstanceOf[`0`]
+  inline def Normal: `0` = 0.asInstanceOf[`0`]
 }

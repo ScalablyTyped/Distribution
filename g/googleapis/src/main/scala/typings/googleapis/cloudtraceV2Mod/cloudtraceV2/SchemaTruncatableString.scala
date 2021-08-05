@@ -27,25 +27,19 @@ trait SchemaTruncatableString extends StObject {
 }
 object SchemaTruncatableString {
   
-  @scala.inline
-  def apply(): SchemaTruncatableString = {
+  inline def apply(): SchemaTruncatableString = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTruncatableString]
   }
   
-  @scala.inline
-  implicit class SchemaTruncatableStringMutableBuilder[Self <: SchemaTruncatableString] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTruncatableString](x: Self) {
     
-    @scala.inline
-    def setTruncatedByteCount(value: Double): Self = StObject.set(x, "truncatedByteCount", value.asInstanceOf[js.Any])
+    inline def setTruncatedByteCount(value: Double): Self = StObject.set(x, "truncatedByteCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTruncatedByteCountUndefined: Self = StObject.set(x, "truncatedByteCount", js.undefined)
+    inline def setTruncatedByteCountUndefined: Self = StObject.set(x, "truncatedByteCount", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

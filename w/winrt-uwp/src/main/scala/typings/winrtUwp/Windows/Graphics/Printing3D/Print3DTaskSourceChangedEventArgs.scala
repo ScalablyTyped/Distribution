@@ -12,16 +12,13 @@ trait Print3DTaskSourceChangedEventArgs extends StObject {
 }
 object Print3DTaskSourceChangedEventArgs {
   
-  @scala.inline
-  def apply(source: Printing3D3MFPackage): Print3DTaskSourceChangedEventArgs = {
+  inline def apply(source: Printing3D3MFPackage): Print3DTaskSourceChangedEventArgs = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[Print3DTaskSourceChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class Print3DTaskSourceChangedEventArgsMutableBuilder[Self <: Print3DTaskSourceChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: Print3DTaskSourceChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setSource(value: Printing3D3MFPackage): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Printing3D3MFPackage): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

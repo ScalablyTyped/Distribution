@@ -332,8 +332,7 @@ object Utils_ {
   }
   object FilePath {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       CACHES_DIRECTORY: String,
       DOCUMENT_DIRECTORY: String,
       LIBRARY_DIRECTORY: String,
@@ -346,41 +345,29 @@ object Utils_ {
       __obj.asInstanceOf[FilePath]
     }
     
-    @scala.inline
-    implicit class FilePathMutableBuilder[Self <: FilePath] (val x: Self) extends AnyVal {
+    extension [Self <: FilePath](x: Self) {
       
-      @scala.inline
-      def setCACHES_DIRECTORY(value: String): Self = StObject.set(x, "CACHES_DIRECTORY", value.asInstanceOf[js.Any])
+      inline def setCACHES_DIRECTORY(value: String): Self = StObject.set(x, "CACHES_DIRECTORY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDOCUMENT_DIRECTORY(value: String): Self = StObject.set(x, "DOCUMENT_DIRECTORY", value.asInstanceOf[js.Any])
+      inline def setDOCUMENT_DIRECTORY(value: String): Self = StObject.set(x, "DOCUMENT_DIRECTORY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEXTERNAL_DIRECTORY(value: String): Self = StObject.set(x, "EXTERNAL_DIRECTORY", value.asInstanceOf[js.Any])
+      inline def setEXTERNAL_DIRECTORY(value: String): Self = StObject.set(x, "EXTERNAL_DIRECTORY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEXTERNAL_DIRECTORYNull: Self = StObject.set(x, "EXTERNAL_DIRECTORY", null)
+      inline def setEXTERNAL_DIRECTORYNull: Self = StObject.set(x, "EXTERNAL_DIRECTORY", null)
       
-      @scala.inline
-      def setEXTERNAL_STORAGE_DIRECTORY(value: String): Self = StObject.set(x, "EXTERNAL_STORAGE_DIRECTORY", value.asInstanceOf[js.Any])
+      inline def setEXTERNAL_STORAGE_DIRECTORY(value: String): Self = StObject.set(x, "EXTERNAL_STORAGE_DIRECTORY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEXTERNAL_STORAGE_DIRECTORYNull: Self = StObject.set(x, "EXTERNAL_STORAGE_DIRECTORY", null)
+      inline def setEXTERNAL_STORAGE_DIRECTORYNull: Self = StObject.set(x, "EXTERNAL_STORAGE_DIRECTORY", null)
       
-      @scala.inline
-      def setLIBRARY_DIRECTORY(value: String): Self = StObject.set(x, "LIBRARY_DIRECTORY", value.asInstanceOf[js.Any])
+      inline def setLIBRARY_DIRECTORY(value: String): Self = StObject.set(x, "LIBRARY_DIRECTORY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMAIN_BUNDLE(value: String): Self = StObject.set(x, "MAIN_BUNDLE", value.asInstanceOf[js.Any])
+      inline def setMAIN_BUNDLE(value: String): Self = StObject.set(x, "MAIN_BUNDLE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMOVIES_DIRECTORY(value: String): Self = StObject.set(x, "MOVIES_DIRECTORY", value.asInstanceOf[js.Any])
+      inline def setMOVIES_DIRECTORY(value: String): Self = StObject.set(x, "MOVIES_DIRECTORY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPICTURES_DIRECTORY(value: String): Self = StObject.set(x, "PICTURES_DIRECTORY", value.asInstanceOf[js.Any])
+      inline def setPICTURES_DIRECTORY(value: String): Self = StObject.set(x, "PICTURES_DIRECTORY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTEMP_DIRECTORY(value: String): Self = StObject.set(x, "TEMP_DIRECTORY", value.asInstanceOf[js.Any])
+      inline def setTEMP_DIRECTORY(value: String): Self = StObject.set(x, "TEMP_DIRECTORY", value.asInstanceOf[js.Any])
     }
   }
   
@@ -443,38 +430,28 @@ object Utils_ {
   }
   object PlayServicesAvailability {
     
-    @scala.inline
-    def apply(isAvailable: Boolean, status: PlayServicesAvailabilityStatusCodes): PlayServicesAvailability = {
+    inline def apply(isAvailable: Boolean, status: PlayServicesAvailabilityStatusCodes): PlayServicesAvailability = {
       val __obj = js.Dynamic.literal(isAvailable = isAvailable.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[PlayServicesAvailability]
     }
     
-    @scala.inline
-    implicit class PlayServicesAvailabilityMutableBuilder[Self <: PlayServicesAvailability] (val x: Self) extends AnyVal {
+    extension [Self <: PlayServicesAvailability](x: Self) {
       
-      @scala.inline
-      def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setHasResolution(value: Boolean): Self = StObject.set(x, "hasResolution", value.asInstanceOf[js.Any])
+      inline def setHasResolution(value: Boolean): Self = StObject.set(x, "hasResolution", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasResolutionUndefined: Self = StObject.set(x, "hasResolution", js.undefined)
+      inline def setHasResolutionUndefined: Self = StObject.set(x, "hasResolution", js.undefined)
       
-      @scala.inline
-      def setIsAvailable(value: Boolean): Self = StObject.set(x, "isAvailable", value.asInstanceOf[js.Any])
+      inline def setIsAvailable(value: Boolean): Self = StObject.set(x, "isAvailable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsUserResolvableError(value: Boolean): Self = StObject.set(x, "isUserResolvableError", value.asInstanceOf[js.Any])
+      inline def setIsUserResolvableError(value: Boolean): Self = StObject.set(x, "isUserResolvableError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsUserResolvableErrorUndefined: Self = StObject.set(x, "isUserResolvableError", js.undefined)
+      inline def setIsUserResolvableErrorUndefined: Self = StObject.set(x, "isUserResolvableError", js.undefined)
       
-      @scala.inline
-      def setStatus(value: PlayServicesAvailabilityStatusCodes): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: PlayServicesAvailabilityStatusCodes): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -484,17 +461,14 @@ object Utils_ {
   }
   object Statics {
     
-    @scala.inline
-    def apply(FilePath: FilePath): Statics = {
+    inline def apply(FilePath: FilePath): Statics = {
       val __obj = js.Dynamic.literal(FilePath = FilePath.asInstanceOf[js.Any])
       __obj.asInstanceOf[Statics]
     }
     
-    @scala.inline
-    implicit class StaticsMutableBuilder[Self <: Statics] (val x: Self) extends AnyVal {
+    extension [Self <: Statics](x: Self) {
       
-      @scala.inline
-      def setFilePath(value: FilePath): Self = StObject.set(x, "FilePath", value.asInstanceOf[js.Any])
+      inline def setFilePath(value: FilePath): Self = StObject.set(x, "FilePath", value.asInstanceOf[js.Any])
     }
   }
 }

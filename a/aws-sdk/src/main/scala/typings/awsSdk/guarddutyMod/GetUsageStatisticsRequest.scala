@@ -38,40 +38,29 @@ trait GetUsageStatisticsRequest extends StObject {
 }
 object GetUsageStatisticsRequest {
   
-  @scala.inline
-  def apply(DetectorId: DetectorId, UsageCriteria: UsageCriteria, UsageStatisticType: UsageStatisticType): GetUsageStatisticsRequest = {
+  inline def apply(DetectorId: DetectorId, UsageCriteria: UsageCriteria, UsageStatisticType: UsageStatisticType): GetUsageStatisticsRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId.asInstanceOf[js.Any], UsageCriteria = UsageCriteria.asInstanceOf[js.Any], UsageStatisticType = UsageStatisticType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUsageStatisticsRequest]
   }
   
-  @scala.inline
-  implicit class GetUsageStatisticsRequestMutableBuilder[Self <: GetUsageStatisticsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetUsageStatisticsRequest](x: Self) {
     
-    @scala.inline
-    def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
+    inline def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setUnit(value: String): Self = StObject.set(x, "Unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: String): Self = StObject.set(x, "Unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitUndefined: Self = StObject.set(x, "Unit", js.undefined)
+    inline def setUnitUndefined: Self = StObject.set(x, "Unit", js.undefined)
     
-    @scala.inline
-    def setUsageCriteria(value: UsageCriteria): Self = StObject.set(x, "UsageCriteria", value.asInstanceOf[js.Any])
+    inline def setUsageCriteria(value: UsageCriteria): Self = StObject.set(x, "UsageCriteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageStatisticType(value: UsageStatisticType): Self = StObject.set(x, "UsageStatisticType", value.asInstanceOf[js.Any])
+    inline def setUsageStatisticType(value: UsageStatisticType): Self = StObject.set(x, "UsageStatisticType", value.asInstanceOf[js.Any])
   }
 }

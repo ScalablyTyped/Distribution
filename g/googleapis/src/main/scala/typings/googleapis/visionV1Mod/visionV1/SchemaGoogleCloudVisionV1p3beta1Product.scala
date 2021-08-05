@@ -47,46 +47,33 @@ trait SchemaGoogleCloudVisionV1p3beta1Product extends StObject {
 }
 object SchemaGoogleCloudVisionV1p3beta1Product {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudVisionV1p3beta1Product = {
+  inline def apply(): SchemaGoogleCloudVisionV1p3beta1Product = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p3beta1Product]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudVisionV1p3beta1ProductMutableBuilder[Self <: SchemaGoogleCloudVisionV1p3beta1Product] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudVisionV1p3beta1Product](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setProductCategory(value: String): Self = StObject.set(x, "productCategory", value.asInstanceOf[js.Any])
+    inline def setProductCategory(value: String): Self = StObject.set(x, "productCategory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductCategoryUndefined: Self = StObject.set(x, "productCategory", js.undefined)
+    inline def setProductCategoryUndefined: Self = StObject.set(x, "productCategory", js.undefined)
     
-    @scala.inline
-    def setProductLabels(value: js.Array[SchemaGoogleCloudVisionV1p3beta1ProductKeyValue]): Self = StObject.set(x, "productLabels", value.asInstanceOf[js.Any])
+    inline def setProductLabels(value: js.Array[SchemaGoogleCloudVisionV1p3beta1ProductKeyValue]): Self = StObject.set(x, "productLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductLabelsUndefined: Self = StObject.set(x, "productLabels", js.undefined)
+    inline def setProductLabelsUndefined: Self = StObject.set(x, "productLabels", js.undefined)
     
-    @scala.inline
-    def setProductLabelsVarargs(value: SchemaGoogleCloudVisionV1p3beta1ProductKeyValue*): Self = StObject.set(x, "productLabels", js.Array(value :_*))
+    inline def setProductLabelsVarargs(value: SchemaGoogleCloudVisionV1p3beta1ProductKeyValue*): Self = StObject.set(x, "productLabels", js.Array(value :_*))
   }
 }

@@ -35,8 +35,7 @@ trait BootstrapClientHyperLink
 }
 object BootstrapClientHyperLink {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     Click: ASPxClientEvent[ASPxClientEditEventHandler[ASPxClientStaticEdit]],
     GetBadgeIconCssClass: () => String,
@@ -72,19 +71,14 @@ object BootstrapClientHyperLink {
     __obj.asInstanceOf[BootstrapClientHyperLink]
   }
   
-  @scala.inline
-  implicit class BootstrapClientHyperLinkMutableBuilder[Self <: BootstrapClientHyperLink] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapClientHyperLink](x: Self) {
     
-    @scala.inline
-    def setGetBadgeIconCssClass(value: () => String): Self = StObject.set(x, "GetBadgeIconCssClass", js.Any.fromFunction0(value))
+    inline def setGetBadgeIconCssClass(value: () => String): Self = StObject.set(x, "GetBadgeIconCssClass", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetBadgeText(value: () => String): Self = StObject.set(x, "GetBadgeText", js.Any.fromFunction0(value))
+    inline def setGetBadgeText(value: () => String): Self = StObject.set(x, "GetBadgeText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetBadgeIconCssClass(value: String => Unit): Self = StObject.set(x, "SetBadgeIconCssClass", js.Any.fromFunction1(value))
+    inline def setSetBadgeIconCssClass(value: String => Unit): Self = StObject.set(x, "SetBadgeIconCssClass", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetBadgeText(value: String => Unit): Self = StObject.set(x, "SetBadgeText", js.Any.fromFunction1(value))
+    inline def setSetBadgeText(value: String => Unit): Self = StObject.set(x, "SetBadgeText", js.Any.fromFunction1(value))
   }
 }

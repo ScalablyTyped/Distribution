@@ -13,16 +13,13 @@ trait DeletePhoneNumberRequest extends StObject {
 }
 object DeletePhoneNumberRequest {
   
-  @scala.inline
-  def apply(PhoneNumberId: String): DeletePhoneNumberRequest = {
+  inline def apply(PhoneNumberId: String): DeletePhoneNumberRequest = {
     val __obj = js.Dynamic.literal(PhoneNumberId = PhoneNumberId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeletePhoneNumberRequest]
   }
   
-  @scala.inline
-  implicit class DeletePhoneNumberRequestMutableBuilder[Self <: DeletePhoneNumberRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeletePhoneNumberRequest](x: Self) {
     
-    @scala.inline
-    def setPhoneNumberId(value: String): Self = StObject.set(x, "PhoneNumberId", value.asInstanceOf[js.Any])
+    inline def setPhoneNumberId(value: String): Self = StObject.set(x, "PhoneNumberId", value.asInstanceOf[js.Any])
   }
 }

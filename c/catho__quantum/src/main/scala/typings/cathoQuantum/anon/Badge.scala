@@ -10,19 +10,15 @@ trait Badge extends StObject {
 }
 object Badge {
   
-  @scala.inline
-  def apply(): Badge = {
+  inline def apply(): Badge = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Badge]
   }
   
-  @scala.inline
-  implicit class BadgeMutableBuilder[Self <: Badge] (val x: Self) extends AnyVal {
+  extension [Self <: Badge](x: Self) {
     
-    @scala.inline
-    def setBadge(value: js.Object): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
+    inline def setBadge(value: js.Object): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
+    inline def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
   }
 }

@@ -11,17 +11,14 @@ trait SendURIRequest extends StObject {
 }
 object SendURIRequest {
   
-  @scala.inline
-  def apply(`operation-attributes-tag`: Documenturi): SendURIRequest = {
+  inline def apply(`operation-attributes-tag`: Documenturi): SendURIRequest = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("operation-attributes-tag")(`operation-attributes-tag`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendURIRequest]
   }
   
-  @scala.inline
-  implicit class SendURIRequestMutableBuilder[Self <: SendURIRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SendURIRequest](x: Self) {
     
-    @scala.inline
-    def `setOperation-attributes-tag`(value: Documenturi): Self = StObject.set(x, "operation-attributes-tag", value.asInstanceOf[js.Any])
+    inline def `setOperation-attributes-tag`(value: Documenturi): Self = StObject.set(x, "operation-attributes-tag", value.asInstanceOf[js.Any])
   }
 }

@@ -14,25 +14,19 @@ trait DPlayerVideoQuality extends StObject {
 }
 object DPlayerVideoQuality {
   
-  @scala.inline
-  def apply(name: String, url: String): DPlayerVideoQuality = {
+  inline def apply(name: String, url: String): DPlayerVideoQuality = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[DPlayerVideoQuality]
   }
   
-  @scala.inline
-  implicit class DPlayerVideoQualityMutableBuilder[Self <: DPlayerVideoQuality] (val x: Self) extends AnyVal {
+  extension [Self <: DPlayerVideoQuality](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

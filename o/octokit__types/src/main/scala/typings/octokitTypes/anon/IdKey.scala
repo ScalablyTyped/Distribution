@@ -12,19 +12,15 @@ trait IdKey extends StObject {
 }
 object IdKey {
   
-  @scala.inline
-  def apply(id: Double, key: String): IdKey = {
+  inline def apply(id: Double, key: String): IdKey = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdKey]
   }
   
-  @scala.inline
-  implicit class IdKeyMutableBuilder[Self <: IdKey] (val x: Self) extends AnyVal {
+  extension [Self <: IdKey](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

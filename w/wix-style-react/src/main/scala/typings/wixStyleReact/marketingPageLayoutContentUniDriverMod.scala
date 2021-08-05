@@ -33,8 +33,7 @@ object marketingPageLayoutContentUniDriverMod {
   }
   object MarketingPageLayoutContentUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       childExists: () => js.Promise[Boolean],
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
@@ -53,38 +52,27 @@ object marketingPageLayoutContentUniDriverMod {
       __obj.asInstanceOf[MarketingPageLayoutContentUniDriver]
     }
     
-    @scala.inline
-    implicit class MarketingPageLayoutContentUniDriverMutableBuilder[Self <: MarketingPageLayoutContentUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: MarketingPageLayoutContentUniDriver](x: Self) {
       
-      @scala.inline
-      def setChildExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "childExists", js.Any.fromFunction0(value))
+      inline def setChildExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "childExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetContentText(value: () => js.Promise[String]): Self = StObject.set(x, "getContentText", js.Any.fromFunction0(value))
+      inline def setGetContentText(value: () => js.Promise[String]): Self = StObject.set(x, "getContentText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetOverlineText(value: () => js.Promise[String]): Self = StObject.set(x, "getOverlineText", js.Any.fromFunction0(value))
+      inline def setGetOverlineText(value: () => js.Promise[String]): Self = StObject.set(x, "getOverlineText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSubtitleText(value: () => js.Promise[String]): Self = StObject.set(x, "getSubtitleText", js.Any.fromFunction0(value))
+      inline def setGetSubtitleText(value: () => js.Promise[String]): Self = StObject.set(x, "getSubtitleText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTitleText(value: () => js.Promise[String]): Self = StObject.set(x, "getTitleText", js.Any.fromFunction0(value))
+      inline def setGetTitleText(value: () => js.Promise[String]): Self = StObject.set(x, "getTitleText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasActions(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasActions", js.Any.fromFunction0(value))
+      inline def setHasActions(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasActions", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasContent(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasContent", js.Any.fromFunction0(value))
+      inline def setHasContent(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasOverline(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasOverline", js.Any.fromFunction0(value))
+      inline def setHasOverline(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasOverline", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasSubtitle(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasSubtitle", js.Any.fromFunction0(value))
+      inline def setHasSubtitle(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasSubtitle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasTitle(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasTitle", js.Any.fromFunction0(value))
+      inline def setHasTitle(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasTitle", js.Any.fromFunction0(value))
     }
   }
 }

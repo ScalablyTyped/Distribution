@@ -45,8 +45,7 @@ trait LobiboxStatic extends StObject {
 }
 object LobiboxStatic {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alert: Call,
     base: DEFAULTS,
     confirm: CallOptions,
@@ -60,28 +59,20 @@ object LobiboxStatic {
     __obj.asInstanceOf[LobiboxStatic]
   }
   
-  @scala.inline
-  implicit class LobiboxStaticMutableBuilder[Self <: LobiboxStatic] (val x: Self) extends AnyVal {
+  extension [Self <: LobiboxStatic](x: Self) {
     
-    @scala.inline
-    def setAlert(value: Call): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
+    inline def setAlert(value: Call): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBase(value: DEFAULTS): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    inline def setBase(value: DEFAULTS): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfirm(value: CallOptions): Self = StObject.set(x, "confirm", value.asInstanceOf[js.Any])
+    inline def setConfirm(value: CallOptions): Self = StObject.set(x, "confirm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotify_(value: OPTIONS): Self = StObject.set(x, "notify", value.asInstanceOf[js.Any])
+    inline def setNotify_(value: OPTIONS): Self = StObject.set(x, "notify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgress(value: DEFAULTSProgressOptions): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: DEFAULTSProgressOptions): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrompt(value: CallDEFAULTS): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+    inline def setPrompt(value: CallDEFAULTS): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindow(value: DEFAULTSWindowOptions): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+    inline def setWindow(value: DEFAULTSWindowOptions): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
   }
 }

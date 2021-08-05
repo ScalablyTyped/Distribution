@@ -14,20 +14,16 @@ object anon {
   }
   object Column {
     
-    @scala.inline
-    def apply(column: String, table: String): Column = {
+    inline def apply(column: String, table: String): Column = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any])
       __obj.asInstanceOf[Column]
     }
     
-    @scala.inline
-    implicit class ColumnMutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
+    extension [Self <: Column](x: Self) {
       
-      @scala.inline
-      def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+      inline def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     }
   }
   
@@ -39,20 +35,16 @@ object anon {
   }
   object Emit {
     
-    @scala.inline
-    def apply(emit: (String, /* repeated */ js.Any) => Unit, on: (String, js.Function) => Unit): Emit = {
+    inline def apply(emit: (String, /* repeated */ js.Any) => Unit, on: (String, js.Function) => Unit): Emit = {
       val __obj = js.Dynamic.literal(emit = js.Any.fromFunction2(emit), on = js.Any.fromFunction2(on))
       __obj.asInstanceOf[Emit]
     }
     
-    @scala.inline
-    implicit class EmitMutableBuilder[Self <: Emit] (val x: Self) extends AnyVal {
+    extension [Self <: Emit](x: Self) {
       
-      @scala.inline
-      def setEmit(value: (String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+      inline def setEmit(value: (String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOn(value: (String, js.Function) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      inline def setOn(value: (String, js.Function) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     }
   }
   
@@ -64,23 +56,18 @@ object anon {
   }
   object From {
     
-    @scala.inline
-    def apply(from: String): From = {
+    inline def apply(from: String): From = {
       val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any])
       __obj.asInstanceOf[From]
     }
     
-    @scala.inline
-    implicit class FromMutableBuilder[Self <: From] (val x: Self) extends AnyVal {
+    extension [Self <: From](x: Self) {
       
-      @scala.inline
-      def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMany(value: Boolean): Self = StObject.set(x, "many", value.asInstanceOf[js.Any])
+      inline def setMany(value: Boolean): Self = StObject.set(x, "many", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManyUndefined: Self = StObject.set(x, "many", js.undefined)
+      inline def setManyUndefined: Self = StObject.set(x, "many", js.undefined)
     }
   }
   
@@ -90,17 +77,14 @@ object anon {
   }
   object Having {
     
-    @scala.inline
-    def apply[T](having: /* repeated */ js.Any => T): Having[T] = {
+    inline def apply[T](having: /* repeated */ js.Any => T): Having[T] = {
       val __obj = js.Dynamic.literal(having = js.Any.fromFunction1(having))
       __obj.asInstanceOf[Having[T]]
     }
     
-    @scala.inline
-    implicit class HavingMutableBuilder[Self <: Having[?], T] (val x: Self & Having[T]) extends AnyVal {
+    extension [Self <: Having[?], T](x: Self & Having[T]) {
       
-      @scala.inline
-      def setHaving(value: /* repeated */ js.Any => T): Self = StObject.set(x, "having", js.Any.fromFunction1(value))
+      inline def setHaving(value: /* repeated */ js.Any => T): Self = StObject.set(x, "having", js.Any.fromFunction1(value))
     }
   }
   
@@ -110,17 +94,14 @@ object anon {
   }
   object LOWER {
     
-    @scala.inline
-    def apply(LOWER: typings.anydbSql.mod.Column[String] => typings.anydbSql.mod.Column[String]): LOWER = {
+    inline def apply(LOWER: typings.anydbSql.mod.Column[String] => typings.anydbSql.mod.Column[String]): LOWER = {
       val __obj = js.Dynamic.literal(LOWER = js.Any.fromFunction1(LOWER))
       __obj.asInstanceOf[LOWER]
     }
     
-    @scala.inline
-    implicit class LOWERMutableBuilder[Self <: LOWER] (val x: Self) extends AnyVal {
+    extension [Self <: LOWER](x: Self) {
       
-      @scala.inline
-      def setLOWER(value: typings.anydbSql.mod.Column[String] => typings.anydbSql.mod.Column[String]): Self = StObject.set(x, "LOWER", js.Any.fromFunction1(value))
+      inline def setLOWER(value: typings.anydbSql.mod.Column[String] => typings.anydbSql.mod.Column[String]): Self = StObject.set(x, "LOWER", js.Any.fromFunction1(value))
     }
   }
   
@@ -132,8 +113,7 @@ object anon {
   }
   object RTRIM {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       LOWER: typings.anydbSql.mod.Column[String] => typings.anydbSql.mod.Column[String],
       RTRIM: typings.anydbSql.mod.Column[String] => typings.anydbSql.mod.Column[String]
     ): RTRIM = {
@@ -141,14 +121,11 @@ object anon {
       __obj.asInstanceOf[RTRIM]
     }
     
-    @scala.inline
-    implicit class RTRIMMutableBuilder[Self <: RTRIM] (val x: Self) extends AnyVal {
+    extension [Self <: RTRIM](x: Self) {
       
-      @scala.inline
-      def setLOWER(value: typings.anydbSql.mod.Column[String] => typings.anydbSql.mod.Column[String]): Self = StObject.set(x, "LOWER", js.Any.fromFunction1(value))
+      inline def setLOWER(value: typings.anydbSql.mod.Column[String] => typings.anydbSql.mod.Column[String]): Self = StObject.set(x, "LOWER", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRTRIM(value: typings.anydbSql.mod.Column[String] => typings.anydbSql.mod.Column[String]): Self = StObject.set(x, "RTRIM", js.Any.fromFunction1(value))
+      inline def setRTRIM(value: typings.anydbSql.mod.Column[String] => typings.anydbSql.mod.Column[String]): Self = StObject.set(x, "RTRIM", js.Any.fromFunction1(value))
     }
   }
   
@@ -160,23 +137,18 @@ object anon {
   }
   object RowCount {
     
-    @scala.inline
-    def apply[T](rowCount: Double, rows: js.Array[T]): RowCount[T] = {
+    inline def apply[T](rowCount: Double, rows: js.Array[T]): RowCount[T] = {
       val __obj = js.Dynamic.literal(rowCount = rowCount.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
       __obj.asInstanceOf[RowCount[T]]
     }
     
-    @scala.inline
-    implicit class RowCountMutableBuilder[Self <: RowCount[?], T] (val x: Self & RowCount[T]) extends AnyVal {
+    extension [Self <: RowCount[?], T](x: Self & RowCount[T]) {
       
-      @scala.inline
-      def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
+      inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRows(value: js.Array[T]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      inline def setRows(value: js.Array[T]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowsVarargs(value: T*): Self = StObject.set(x, "rows", js.Array(value :_*))
+      inline def setRowsVarargs(value: T*): Self = StObject.set(x, "rows", js.Array(value :_*))
     }
   }
 }

@@ -17,27 +17,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AndroidRequiredPasswordType extends StObject
 object AndroidRequiredPasswordType {
   
-  @scala.inline
-  def alphabetic: typings.microsoftGraph.microsoftGraphStrings.alphabetic = "alphabetic".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.alphabetic]
+  inline def alphabetic: typings.microsoftGraph.microsoftGraphStrings.alphabetic = "alphabetic".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.alphabetic]
   
-  @scala.inline
-  def alphanumeric: typings.microsoftGraph.microsoftGraphStrings.alphanumeric = "alphanumeric".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.alphanumeric]
+  inline def alphanumeric: typings.microsoftGraph.microsoftGraphStrings.alphanumeric = "alphanumeric".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.alphanumeric]
   
-  @scala.inline
-  def alphanumericWithSymbols: typings.microsoftGraph.microsoftGraphStrings.alphanumericWithSymbols = "alphanumericWithSymbols".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.alphanumericWithSymbols]
+  inline def alphanumericWithSymbols: typings.microsoftGraph.microsoftGraphStrings.alphanumericWithSymbols = "alphanumericWithSymbols".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.alphanumericWithSymbols]
   
-  @scala.inline
-  def any: typings.microsoftGraph.microsoftGraphStrings.any = "any".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.any]
+  inline def any: typings.microsoftGraph.microsoftGraphStrings.any = "any".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.any]
   
-  @scala.inline
-  def deviceDefault: typings.microsoftGraph.microsoftGraphStrings.deviceDefault = "deviceDefault".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.deviceDefault]
+  inline def deviceDefault: typings.microsoftGraph.microsoftGraphStrings.deviceDefault = "deviceDefault".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.deviceDefault]
   
-  @scala.inline
-  def lowSecurityBiometric: typings.microsoftGraph.microsoftGraphStrings.lowSecurityBiometric = "lowSecurityBiometric".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.lowSecurityBiometric]
+  inline def lowSecurityBiometric: typings.microsoftGraph.microsoftGraphStrings.lowSecurityBiometric = "lowSecurityBiometric".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.lowSecurityBiometric]
   
-  @scala.inline
-  def numeric: typings.microsoftGraph.microsoftGraphStrings.numeric = "numeric".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.numeric]
+  inline def numeric: typings.microsoftGraph.microsoftGraphStrings.numeric = "numeric".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.numeric]
   
-  @scala.inline
-  def numericComplex: typings.microsoftGraph.microsoftGraphStrings.numericComplex = "numericComplex".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.numericComplex]
+  inline def numericComplex: typings.microsoftGraph.microsoftGraphStrings.numericComplex = "numericComplex".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.numericComplex]
 }

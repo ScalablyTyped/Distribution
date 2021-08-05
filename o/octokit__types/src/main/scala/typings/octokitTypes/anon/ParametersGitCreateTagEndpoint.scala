@@ -18,8 +18,7 @@ trait ParametersGitCreateTagEndpoint extends StObject {
 }
 object ParametersGitCreateTagEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: GitCreateTagEndpoint,
     request: GitCreateTagRequestOptions,
     response: OctokitResponse[GitCreateTagResponseData]
@@ -28,16 +27,12 @@ object ParametersGitCreateTagEndpoint {
     __obj.asInstanceOf[ParametersGitCreateTagEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersGitCreateTagEndpointMutableBuilder[Self <: ParametersGitCreateTagEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersGitCreateTagEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: GitCreateTagEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: GitCreateTagEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: GitCreateTagRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: GitCreateTagRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[GitCreateTagResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[GitCreateTagResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

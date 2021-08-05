@@ -25,43 +25,31 @@ trait ColInfo extends StObject {
 }
 object ColInfo {
   
-  @scala.inline
-  def apply(): ColInfo = {
+  inline def apply(): ColInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColInfo]
   }
   
-  @scala.inline
-  implicit class ColInfoMutableBuilder[Self <: ColInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ColInfo](x: Self) {
     
-    @scala.inline
-    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
-    @scala.inline
-    def setMDW(value: Double): Self = StObject.set(x, "MDW", value.asInstanceOf[js.Any])
+    inline def setMDW(value: Double): Self = StObject.set(x, "MDW", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMDWUndefined: Self = StObject.set(x, "MDW", js.undefined)
+    inline def setMDWUndefined: Self = StObject.set(x, "MDW", js.undefined)
     
-    @scala.inline
-    def setWch(value: Double): Self = StObject.set(x, "wch", value.asInstanceOf[js.Any])
+    inline def setWch(value: Double): Self = StObject.set(x, "wch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWchUndefined: Self = StObject.set(x, "wch", js.undefined)
+    inline def setWchUndefined: Self = StObject.set(x, "wch", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
-    @scala.inline
-    def setWpx(value: Double): Self = StObject.set(x, "wpx", value.asInstanceOf[js.Any])
+    inline def setWpx(value: Double): Self = StObject.set(x, "wpx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWpxUndefined: Self = StObject.set(x, "wpx", js.undefined)
+    inline def setWpxUndefined: Self = StObject.set(x, "wpx", js.undefined)
   }
 }

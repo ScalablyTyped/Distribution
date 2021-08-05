@@ -18,22 +18,17 @@ trait SchemaRegexValidation extends StObject {
 }
 object SchemaRegexValidation {
   
-  @scala.inline
-  def apply(): SchemaRegexValidation = {
+  inline def apply(): SchemaRegexValidation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRegexValidation]
   }
   
-  @scala.inline
-  implicit class SchemaRegexValidationMutableBuilder[Self <: SchemaRegexValidation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRegexValidation](x: Self) {
     
-    @scala.inline
-    def setRegexes(value: js.Array[String]): Self = StObject.set(x, "regexes", value.asInstanceOf[js.Any])
+    inline def setRegexes(value: js.Array[String]): Self = StObject.set(x, "regexes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegexesUndefined: Self = StObject.set(x, "regexes", js.undefined)
+    inline def setRegexesUndefined: Self = StObject.set(x, "regexes", js.undefined)
     
-    @scala.inline
-    def setRegexesVarargs(value: String*): Self = StObject.set(x, "regexes", js.Array(value :_*))
+    inline def setRegexesVarargs(value: String*): Self = StObject.set(x, "regexes", js.Array(value :_*))
   }
 }

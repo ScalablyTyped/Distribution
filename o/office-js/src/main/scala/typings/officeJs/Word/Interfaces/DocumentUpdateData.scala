@@ -25,25 +25,19 @@ trait DocumentUpdateData extends StObject {
 }
 object DocumentUpdateData {
   
-  @scala.inline
-  def apply(): DocumentUpdateData = {
+  inline def apply(): DocumentUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentUpdateData]
   }
   
-  @scala.inline
-  implicit class DocumentUpdateDataMutableBuilder[Self <: DocumentUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentUpdateData](x: Self) {
     
-    @scala.inline
-    def setBody(value: BodyUpdateData): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: BodyUpdateData): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setProperties(value: DocumentPropertiesUpdateData): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: DocumentPropertiesUpdateData): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
   }
 }

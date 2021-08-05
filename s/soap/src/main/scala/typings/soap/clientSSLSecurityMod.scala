@@ -57,15 +57,15 @@ object clientSSLSecurityMod {
     @JSName("addOptions")
     def addOptions_MClientSSLSecurity(options: js.Any): Unit = js.native
     
-    var agent: js.Any = js.native
+    /* private */ var agent: js.Any = js.native
     
-    var ca: js.Any = js.native
+    /* private */ var ca: js.Any = js.native
     
-    var cert: js.Any = js.native
+    /* private */ var cert: js.Any = js.native
     
-    var defaults: js.Any = js.native
+    /* private */ var defaults: js.Any = js.native
     
-    var key: js.Any = js.native
+    /* private */ var key: js.Any = js.native
     
     @JSName("toXML")
     def toXML_MClientSSLSecurity(): String = js.native

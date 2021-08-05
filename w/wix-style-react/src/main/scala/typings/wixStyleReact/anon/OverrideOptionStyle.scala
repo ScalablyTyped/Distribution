@@ -20,28 +20,21 @@ trait OverrideOptionStyle[T /* <: Partial[ListItemActionProps] */] extends StObj
 }
 object OverrideOptionStyle {
   
-  @scala.inline
-  def apply[T /* <: Partial[ListItemActionProps] */](id: String | Double, value: T => ReactNode): OverrideOptionStyle[T] = {
+  inline def apply[T /* <: Partial[ListItemActionProps] */](id: String | Double, value: T => ReactNode): OverrideOptionStyle[T] = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], overrideOptionStyle = true, value = js.Any.fromFunction1(value))
     __obj.asInstanceOf[OverrideOptionStyle[T]]
   }
   
-  @scala.inline
-  implicit class OverrideOptionStyleMutableBuilder[Self <: OverrideOptionStyle[?], T /* <: Partial[ListItemActionProps] */] (val x: Self & OverrideOptionStyle[T]) extends AnyVal {
+  extension [Self <: OverrideOptionStyle[?], T /* <: Partial[ListItemActionProps] */](x: Self & OverrideOptionStyle[T]) {
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrideOptionStyle(value: `true`): Self = StObject.set(x, "overrideOptionStyle", value.asInstanceOf[js.Any])
+    inline def setOverrideOptionStyle(value: `true`): Self = StObject.set(x, "overrideOptionStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: T => ReactNode): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
+    inline def setValue(value: T => ReactNode): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
   }
 }

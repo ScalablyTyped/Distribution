@@ -15,8 +15,7 @@ trait CircleLiteral
      with _LocationBias
 object CircleLiteral {
   
-  @scala.inline
-  def apply(): CircleLiteral = {
+  inline def apply(): CircleLiteral = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CircleLiteral]
   }

@@ -42,31 +42,23 @@ trait PlusWebviewWebviewTransition extends StObject {
 }
 object PlusWebviewWebviewTransition {
   
-  @scala.inline
-  def apply(): PlusWebviewWebviewTransition = {
+  inline def apply(): PlusWebviewWebviewTransition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusWebviewWebviewTransition]
   }
   
-  @scala.inline
-  implicit class PlusWebviewWebviewTransitionMutableBuilder[Self <: PlusWebviewWebviewTransition] (val x: Self) extends AnyVal {
+  extension [Self <: PlusWebviewWebviewTransition](x: Self) {
     
-    @scala.inline
-    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+    inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
     
-    @scala.inline
-    def setTimingfunction(value: String): Self = StObject.set(x, "timingfunction", value.asInstanceOf[js.Any])
+    inline def setTimingfunction(value: String): Self = StObject.set(x, "timingfunction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimingfunctionUndefined: Self = StObject.set(x, "timingfunction", js.undefined)
+    inline def setTimingfunctionUndefined: Self = StObject.set(x, "timingfunction", js.undefined)
   }
 }

@@ -12,19 +12,15 @@ trait AdditionalDigits extends StObject {
 }
 object AdditionalDigits {
   
-  @scala.inline
-  def apply(): AdditionalDigits = {
+  inline def apply(): AdditionalDigits = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AdditionalDigits]
   }
   
-  @scala.inline
-  implicit class AdditionalDigitsMutableBuilder[Self <: AdditionalDigits] (val x: Self) extends AnyVal {
+  extension [Self <: AdditionalDigits](x: Self) {
     
-    @scala.inline
-    def setAdditionalDigits(value: typings.dateFns.dateFnsNumbers.`0` | `1` | `2`): Self = StObject.set(x, "additionalDigits", value.asInstanceOf[js.Any])
+    inline def setAdditionalDigits(value: typings.dateFns.dateFnsNumbers.`0` | `1` | `2`): Self = StObject.set(x, "additionalDigits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalDigitsUndefined: Self = StObject.set(x, "additionalDigits", js.undefined)
+    inline def setAdditionalDigitsUndefined: Self = StObject.set(x, "additionalDigits", js.undefined)
   }
 }

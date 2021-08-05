@@ -34,8 +34,7 @@ trait XResetListener
 }
 object XResetListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     approveReset: EventObject => Boolean,
     disposing: EventObject => Unit,
@@ -47,13 +46,10 @@ object XResetListener {
     __obj.asInstanceOf[XResetListener]
   }
   
-  @scala.inline
-  implicit class XResetListenerMutableBuilder[Self <: XResetListener] (val x: Self) extends AnyVal {
+  extension [Self <: XResetListener](x: Self) {
     
-    @scala.inline
-    def setApproveReset(value: EventObject => Boolean): Self = StObject.set(x, "approveReset", js.Any.fromFunction1(value))
+    inline def setApproveReset(value: EventObject => Boolean): Self = StObject.set(x, "approveReset", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResetted(value: EventObject => Unit): Self = StObject.set(x, "resetted", js.Any.fromFunction1(value))
+    inline def setResetted(value: EventObject => Unit): Self = StObject.set(x, "resetted", js.Any.fromFunction1(value))
   }
 }

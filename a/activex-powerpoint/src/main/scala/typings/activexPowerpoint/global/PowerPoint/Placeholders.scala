@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.Placeholders")
 @js.native
-class Placeholders protected ()
+/* private */ class Placeholders ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.Placeholders {
   
@@ -25,7 +25,7 @@ class Placeholders protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.Placeholders_typekey")
   var PowerPointDotPlaceholders_typekey: typings.activexPowerpoint.PowerPoint.Placeholders = js.native
 }

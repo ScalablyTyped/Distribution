@@ -32,25 +32,19 @@ trait DefaultTreeDocumentType
 }
 object DefaultTreeDocumentType {
   
-  @scala.inline
-  def apply(name: String, publicId: String, systemId: String): DefaultTreeDocumentType = {
+  inline def apply(name: String, publicId: String, systemId: String): DefaultTreeDocumentType = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], nodeName = "#documentType", publicId = publicId.asInstanceOf[js.Any], systemId = systemId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultTreeDocumentType]
   }
   
-  @scala.inline
-  implicit class DefaultTreeDocumentTypeMutableBuilder[Self <: DefaultTreeDocumentType] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultTreeDocumentType](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeName(value: NumbersigndocumentType): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
+    inline def setNodeName(value: NumbersigndocumentType): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicId(value: String): Self = StObject.set(x, "publicId", value.asInstanceOf[js.Any])
+    inline def setPublicId(value: String): Self = StObject.set(x, "publicId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemId(value: String): Self = StObject.set(x, "systemId", value.asInstanceOf[js.Any])
+    inline def setSystemId(value: String): Self = StObject.set(x, "systemId", value.asInstanceOf[js.Any])
   }
 }

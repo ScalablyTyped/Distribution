@@ -18,8 +18,7 @@ object anon {
   }
   object If {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `if`: js.Function1[/* context */ Context, Boolean] => Middleware[DefaultState, DefaultContext],
       unless: js.Function1[/* context */ Context, Boolean] => Middleware[DefaultState, DefaultContext]
     ): If = {
@@ -28,14 +27,11 @@ object anon {
       __obj.asInstanceOf[If]
     }
     
-    @scala.inline
-    implicit class IfMutableBuilder[Self <: If] (val x: Self) extends AnyVal {
+    extension [Self <: If](x: Self) {
       
-      @scala.inline
-      def setIf(value: js.Function1[/* context */ Context, Boolean] => Middleware[DefaultState, DefaultContext]): Self = StObject.set(x, "if", js.Any.fromFunction1(value))
+      inline def setIf(value: js.Function1[/* context */ Context, Boolean] => Middleware[DefaultState, DefaultContext]): Self = StObject.set(x, "if", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUnless(value: js.Function1[/* context */ Context, Boolean] => Middleware[DefaultState, DefaultContext]): Self = StObject.set(x, "unless", js.Any.fromFunction1(value))
+      inline def setUnless(value: js.Function1[/* context */ Context, Boolean] => Middleware[DefaultState, DefaultContext]): Self = StObject.set(x, "unless", js.Any.fromFunction1(value))
     }
   }
 }

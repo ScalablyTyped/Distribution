@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "mdast-util-to-markdown"
-version := "0.5.3-e2085b"
+version := "0.5.3-034025"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "std" % "4.1-044efb",
-  "org.scalablytyped" %%% "unist" % "2.0-dt-20190213Z-e6c3d0")
+  "org.scalablytyped" %%% "std" % "4.1-2f6855",
+  "org.scalablytyped" %%% "unist" % "2.0-dt-20190213Z-61e58c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

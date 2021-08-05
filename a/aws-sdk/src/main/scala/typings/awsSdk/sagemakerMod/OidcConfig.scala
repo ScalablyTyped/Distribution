@@ -48,8 +48,7 @@ trait OidcConfig extends StObject {
 }
 object OidcConfig {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AuthorizationEndpoint: OidcEndpoint,
     ClientId: ClientId,
     ClientSecret: ClientSecret,
@@ -63,31 +62,22 @@ object OidcConfig {
     __obj.asInstanceOf[OidcConfig]
   }
   
-  @scala.inline
-  implicit class OidcConfigMutableBuilder[Self <: OidcConfig] (val x: Self) extends AnyVal {
+  extension [Self <: OidcConfig](x: Self) {
     
-    @scala.inline
-    def setAuthorizationEndpoint(value: OidcEndpoint): Self = StObject.set(x, "AuthorizationEndpoint", value.asInstanceOf[js.Any])
+    inline def setAuthorizationEndpoint(value: OidcEndpoint): Self = StObject.set(x, "AuthorizationEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientId(value: ClientId): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: ClientId): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientSecret(value: ClientSecret): Self = StObject.set(x, "ClientSecret", value.asInstanceOf[js.Any])
+    inline def setClientSecret(value: ClientSecret): Self = StObject.set(x, "ClientSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuer(value: OidcEndpoint): Self = StObject.set(x, "Issuer", value.asInstanceOf[js.Any])
+    inline def setIssuer(value: OidcEndpoint): Self = StObject.set(x, "Issuer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJwksUri(value: OidcEndpoint): Self = StObject.set(x, "JwksUri", value.asInstanceOf[js.Any])
+    inline def setJwksUri(value: OidcEndpoint): Self = StObject.set(x, "JwksUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogoutEndpoint(value: OidcEndpoint): Self = StObject.set(x, "LogoutEndpoint", value.asInstanceOf[js.Any])
+    inline def setLogoutEndpoint(value: OidcEndpoint): Self = StObject.set(x, "LogoutEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenEndpoint(value: OidcEndpoint): Self = StObject.set(x, "TokenEndpoint", value.asInstanceOf[js.Any])
+    inline def setTokenEndpoint(value: OidcEndpoint): Self = StObject.set(x, "TokenEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserInfoEndpoint(value: OidcEndpoint): Self = StObject.set(x, "UserInfoEndpoint", value.asInstanceOf[js.Any])
+    inline def setUserInfoEndpoint(value: OidcEndpoint): Self = StObject.set(x, "UserInfoEndpoint", value.asInstanceOf[js.Any])
   }
 }

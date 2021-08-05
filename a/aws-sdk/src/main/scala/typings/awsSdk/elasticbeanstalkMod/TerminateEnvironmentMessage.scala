@@ -28,37 +28,27 @@ trait TerminateEnvironmentMessage extends StObject {
 }
 object TerminateEnvironmentMessage {
   
-  @scala.inline
-  def apply(): TerminateEnvironmentMessage = {
+  inline def apply(): TerminateEnvironmentMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TerminateEnvironmentMessage]
   }
   
-  @scala.inline
-  implicit class TerminateEnvironmentMessageMutableBuilder[Self <: TerminateEnvironmentMessage] (val x: Self) extends AnyVal {
+  extension [Self <: TerminateEnvironmentMessage](x: Self) {
     
-    @scala.inline
-    def setEnvironmentId(value: EnvironmentId): Self = StObject.set(x, "EnvironmentId", value.asInstanceOf[js.Any])
+    inline def setEnvironmentId(value: EnvironmentId): Self = StObject.set(x, "EnvironmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentIdUndefined: Self = StObject.set(x, "EnvironmentId", js.undefined)
+    inline def setEnvironmentIdUndefined: Self = StObject.set(x, "EnvironmentId", js.undefined)
     
-    @scala.inline
-    def setEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "EnvironmentName", value.asInstanceOf[js.Any])
+    inline def setEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "EnvironmentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentNameUndefined: Self = StObject.set(x, "EnvironmentName", js.undefined)
+    inline def setEnvironmentNameUndefined: Self = StObject.set(x, "EnvironmentName", js.undefined)
     
-    @scala.inline
-    def setForceTerminate(value: ForceTerminate): Self = StObject.set(x, "ForceTerminate", value.asInstanceOf[js.Any])
+    inline def setForceTerminate(value: ForceTerminate): Self = StObject.set(x, "ForceTerminate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceTerminateUndefined: Self = StObject.set(x, "ForceTerminate", js.undefined)
+    inline def setForceTerminateUndefined: Self = StObject.set(x, "ForceTerminate", js.undefined)
     
-    @scala.inline
-    def setTerminateResources(value: TerminateEnvironmentResources): Self = StObject.set(x, "TerminateResources", value.asInstanceOf[js.Any])
+    inline def setTerminateResources(value: TerminateEnvironmentResources): Self = StObject.set(x, "TerminateResources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerminateResourcesUndefined: Self = StObject.set(x, "TerminateResources", js.undefined)
+    inline def setTerminateResourcesUndefined: Self = StObject.set(x, "TerminateResources", js.undefined)
   }
 }

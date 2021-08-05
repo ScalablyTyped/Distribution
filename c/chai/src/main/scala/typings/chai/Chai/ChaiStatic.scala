@@ -45,8 +45,7 @@ trait ChaiStatic extends StObject {
 }
 object ChaiStatic {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Assertion: AssertionStatic,
     AssertionError: Instantiable3[
       /* message */ String, 
@@ -66,17 +65,13 @@ object ChaiStatic {
     __obj.asInstanceOf[ChaiStatic]
   }
   
-  @scala.inline
-  implicit class ChaiStaticMutableBuilder[Self <: ChaiStatic] (val x: Self) extends AnyVal {
+  extension [Self <: ChaiStatic](x: Self) {
     
-    @scala.inline
-    def setAssert(value: AssertStatic): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
+    inline def setAssert(value: AssertStatic): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssertion(value: AssertionStatic): Self = StObject.set(x, "Assertion", value.asInstanceOf[js.Any])
+    inline def setAssertion(value: AssertionStatic): Self = StObject.set(x, "Assertion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssertionError(
+    inline def setAssertionError(
       value: Instantiable3[
           /* message */ String, 
           /* _props */ js.UndefOr[js.Any], 
@@ -85,22 +80,16 @@ object ChaiStatic {
         ]
     ): Self = StObject.set(x, "AssertionError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfig(value: Config): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: Config): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpect(value: ExpectStatic): Self = StObject.set(x, "expect", value.asInstanceOf[js.Any])
+    inline def setExpect(value: ExpectStatic): Self = StObject.set(x, "expect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShould(value: () => Should): Self = StObject.set(x, "should", js.Any.fromFunction0(value))
+    inline def setShould(value: () => Should): Self = StObject.set(x, "should", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUse(value: ChaiPlugin => ChaiStatic): Self = StObject.set(x, "use", js.Any.fromFunction1(value))
+    inline def setUse(value: ChaiPlugin => ChaiStatic): Self = StObject.set(x, "use", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUtil(value: ChaiUtils): Self = StObject.set(x, "util", value.asInstanceOf[js.Any])
+    inline def setUtil(value: ChaiUtils): Self = StObject.set(x, "util", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

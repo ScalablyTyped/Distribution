@@ -17,23 +17,18 @@ trait ArrayExpression
 }
 object ArrayExpression {
   
-  @scala.inline
-  def apply(elements: js.Array[String | JSChildNode], loc: SourceLocation): ArrayExpression = {
+  inline def apply(elements: js.Array[String | JSChildNode], loc: SourceLocation): ArrayExpression = {
     val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(17)
     __obj.asInstanceOf[ArrayExpression]
   }
   
-  @scala.inline
-  implicit class ArrayExpressionMutableBuilder[Self <: ArrayExpression] (val x: Self) extends AnyVal {
+  extension [Self <: ArrayExpression](x: Self) {
     
-    @scala.inline
-    def setElements(value: js.Array[String | JSChildNode]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+    inline def setElements(value: js.Array[String | JSChildNode]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementsVarargs(value: (String | JSChildNode)*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: (String | JSChildNode)*): Self = StObject.set(x, "elements", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: `17`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `17`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

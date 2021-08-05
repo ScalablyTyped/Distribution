@@ -13,16 +13,13 @@ trait DeleteInputSecurityGroupRequest extends StObject {
 }
 object DeleteInputSecurityGroupRequest {
   
-  @scala.inline
-  def apply(InputSecurityGroupId: string): DeleteInputSecurityGroupRequest = {
+  inline def apply(InputSecurityGroupId: string): DeleteInputSecurityGroupRequest = {
     val __obj = js.Dynamic.literal(InputSecurityGroupId = InputSecurityGroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteInputSecurityGroupRequest]
   }
   
-  @scala.inline
-  implicit class DeleteInputSecurityGroupRequestMutableBuilder[Self <: DeleteInputSecurityGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteInputSecurityGroupRequest](x: Self) {
     
-    @scala.inline
-    def setInputSecurityGroupId(value: string): Self = StObject.set(x, "InputSecurityGroupId", value.asInstanceOf[js.Any])
+    inline def setInputSecurityGroupId(value: string): Self = StObject.set(x, "InputSecurityGroupId", value.asInstanceOf[js.Any])
   }
 }

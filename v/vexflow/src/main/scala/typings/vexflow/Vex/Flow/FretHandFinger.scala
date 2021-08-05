@@ -20,8 +20,7 @@ trait FretHandFinger
 }
 object FretHandFinger {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alignSubNotesWithNote: (js.Array[Note], Note) => Unit,
     draw: () => Unit,
     finger: Double | String,
@@ -49,19 +48,14 @@ object FretHandFinger {
     __obj.asInstanceOf[FretHandFinger]
   }
   
-  @scala.inline
-  implicit class FretHandFingerMutableBuilder[Self <: FretHandFinger] (val x: Self) extends AnyVal {
+  extension [Self <: FretHandFinger](x: Self) {
     
-    @scala.inline
-    def setFinger(value: Double | String): Self = StObject.set(x, "finger", value.asInstanceOf[js.Any])
+    inline def setFinger(value: Double | String): Self = StObject.set(x, "finger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetFretHandFinger(value: Double => FretHandFinger): Self = StObject.set(x, "setFretHandFinger", js.Any.fromFunction1(value))
+    inline def setSetFretHandFinger(value: Double => FretHandFinger): Self = StObject.set(x, "setFretHandFinger", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOffsetX(value: Double => FretHandFinger): Self = StObject.set(x, "setOffsetX", js.Any.fromFunction1(value))
+    inline def setSetOffsetX(value: Double => FretHandFinger): Self = StObject.set(x, "setOffsetX", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOffsetY(value: Double => FretHandFinger): Self = StObject.set(x, "setOffsetY", js.Any.fromFunction1(value))
+    inline def setSetOffsetY(value: Double => FretHandFinger): Self = StObject.set(x, "setOffsetY", js.Any.fromFunction1(value))
   }
 }

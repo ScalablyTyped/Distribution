@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XdWindowType extends StObject
 object XdWindowType {
   
-  @scala.inline
-  def xdDesignerWindow: `1` = 1.asInstanceOf[`1`]
+  inline def xdDesignerWindow: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xdEditorWindow: `0` = 0.asInstanceOf[`0`]
+  inline def xdEditorWindow: `0` = 0.asInstanceOf[`0`]
 }

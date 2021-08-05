@@ -32,8 +32,7 @@ trait XRubySelection
 }
 object XRubySelection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getRubyList: Boolean => SafeArray[PropertyValues],
     queryInterface: `type` => js.Any,
@@ -44,13 +43,10 @@ object XRubySelection {
     __obj.asInstanceOf[XRubySelection]
   }
   
-  @scala.inline
-  implicit class XRubySelectionMutableBuilder[Self <: XRubySelection] (val x: Self) extends AnyVal {
+  extension [Self <: XRubySelection](x: Self) {
     
-    @scala.inline
-    def setGetRubyList(value: Boolean => SafeArray[PropertyValues]): Self = StObject.set(x, "getRubyList", js.Any.fromFunction1(value))
+    inline def setGetRubyList(value: Boolean => SafeArray[PropertyValues]): Self = StObject.set(x, "getRubyList", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRubyList(value: (SeqEquiv[PropertyValues], Boolean) => Unit): Self = StObject.set(x, "setRubyList", js.Any.fromFunction2(value))
+    inline def setSetRubyList(value: (SeqEquiv[PropertyValues], Boolean) => Unit): Self = StObject.set(x, "setRubyList", js.Any.fromFunction2(value))
   }
 }

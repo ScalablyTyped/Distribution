@@ -20,8 +20,7 @@ trait DistributionDomainName extends StObject {
 }
 object DistributionDomainName {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     distributionDomainName: String,
     distributionId: String,
     eventType: `origin-request` | `origin-response` | `viewer-request` | `viewer-response`,
@@ -31,19 +30,14 @@ object DistributionDomainName {
     __obj.asInstanceOf[DistributionDomainName]
   }
   
-  @scala.inline
-  implicit class DistributionDomainNameMutableBuilder[Self <: DistributionDomainName] (val x: Self) extends AnyVal {
+  extension [Self <: DistributionDomainName](x: Self) {
     
-    @scala.inline
-    def setDistributionDomainName(value: String): Self = StObject.set(x, "distributionDomainName", value.asInstanceOf[js.Any])
+    inline def setDistributionDomainName(value: String): Self = StObject.set(x, "distributionDomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributionId(value: String): Self = StObject.set(x, "distributionId", value.asInstanceOf[js.Any])
+    inline def setDistributionId(value: String): Self = StObject.set(x, "distributionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventType(value: `origin-request` | `origin-response` | `viewer-request` | `viewer-response`): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
+    inline def setEventType(value: `origin-request` | `origin-response` | `viewer-request` | `viewer-response`): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
   }
 }

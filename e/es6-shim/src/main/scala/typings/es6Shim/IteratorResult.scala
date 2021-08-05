@@ -12,22 +12,17 @@ trait IteratorResult[T] extends StObject {
 }
 object IteratorResult {
   
-  @scala.inline
-  def apply[T](done: Boolean): IteratorResult[T] = {
+  inline def apply[T](done: Boolean): IteratorResult[T] = {
     val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any])
     __obj.asInstanceOf[IteratorResult[T]]
   }
   
-  @scala.inline
-  implicit class IteratorResultMutableBuilder[Self <: IteratorResult[?], T] (val x: Self & IteratorResult[T]) extends AnyVal {
+  extension [Self <: IteratorResult[?], T](x: Self & IteratorResult[T]) {
     
-    @scala.inline
-    def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+    inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

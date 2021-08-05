@@ -10,19 +10,15 @@ trait PutObjectOptions extends StObject {
 }
 object PutObjectOptions {
   
-  @scala.inline
-  def apply(): PutObjectOptions = {
+  inline def apply(): PutObjectOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutObjectOptions]
   }
   
-  @scala.inline
-  implicit class PutObjectOptionsMutableBuilder[Self <: PutObjectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PutObjectOptions](x: Self) {
     
-    @scala.inline
-    def setEnc(value: js.Any): Self = StObject.set(x, "enc", value.asInstanceOf[js.Any])
+    inline def setEnc(value: js.Any): Self = StObject.set(x, "enc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncUndefined: Self = StObject.set(x, "enc", js.undefined)
+    inline def setEncUndefined: Self = StObject.set(x, "enc", js.undefined)
   }
 }

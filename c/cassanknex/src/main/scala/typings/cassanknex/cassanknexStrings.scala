@@ -12,63 +12,53 @@ object cassanknexStrings {
   sealed trait Equalssign
     extends StObject
        with ComparisonRestriction
-  @scala.inline
-  def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
+  inline def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
   
   @js.native
   sealed trait Greaterthansign
     extends StObject
        with ComparisonRestriction
-  @scala.inline
-  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
+  inline def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
   
   @js.native
   sealed trait GreaterthansignEqualssign
     extends StObject
        with ComparisonRestriction
-  @scala.inline
-  def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
+  inline def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
   
   @js.native
   sealed trait IN
     extends StObject
        with InRestriction
-  @scala.inline
-  def IN: IN = "IN".asInstanceOf[IN]
+  inline def IN: IN = "IN".asInstanceOf[IN]
   
   @js.native
   sealed trait Lessthansign
     extends StObject
        with ComparisonRestriction
-  @scala.inline
-  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
+  inline def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
   
   @js.native
   sealed trait LessthansignEqualssign
     extends StObject
        with ComparisonRestriction
-  @scala.inline
-  def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
+  inline def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
   
   @js.native
   sealed trait SelectAsClause extends StObject
-  @scala.inline
-  def SelectAsClause: SelectAsClause = "SelectAsClause".asInstanceOf[SelectAsClause]
+  inline def SelectAsClause: SelectAsClause = "SelectAsClause".asInstanceOf[SelectAsClause]
   
   @js.native
   sealed trait asc extends StObject
-  @scala.inline
-  def asc: asc = "asc".asInstanceOf[asc]
+  inline def asc: asc = "asc".asInstanceOf[asc]
   
   @js.native
   sealed trait desc extends StObject
-  @scala.inline
-  def desc: desc = "desc".asInstanceOf[desc]
+  inline def desc: desc = "desc".asInstanceOf[desc]
   
   @js.native
   sealed trait in_
     extends StObject
        with InRestriction
-  @scala.inline
-  def in_ : in_ = "in".asInstanceOf[in_]
+  inline def in_ : in_ = "in".asInstanceOf[in_]
 }

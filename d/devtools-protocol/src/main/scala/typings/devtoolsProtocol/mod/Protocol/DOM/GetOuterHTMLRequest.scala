@@ -24,31 +24,23 @@ trait GetOuterHTMLRequest extends StObject {
 }
 object GetOuterHTMLRequest {
   
-  @scala.inline
-  def apply(): GetOuterHTMLRequest = {
+  inline def apply(): GetOuterHTMLRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetOuterHTMLRequest]
   }
   
-  @scala.inline
-  implicit class GetOuterHTMLRequestMutableBuilder[Self <: GetOuterHTMLRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetOuterHTMLRequest](x: Self) {
     
-    @scala.inline
-    def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
+    inline def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackendNodeIdUndefined: Self = StObject.set(x, "backendNodeId", js.undefined)
+    inline def setBackendNodeIdUndefined: Self = StObject.set(x, "backendNodeId", js.undefined)
     
-    @scala.inline
-    def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
+    inline def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
     
-    @scala.inline
-    def setObjectId(value: RemoteObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: RemoteObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+    inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
   }
 }

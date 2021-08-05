@@ -15,19 +15,15 @@ trait MachineConfig[TContext, TStateSchema /* <: StateSchema[js.Any] */, TEvent 
 }
 object MachineConfig {
   
-  @scala.inline
-  def apply[TContext, TStateSchema /* <: StateSchema[js.Any] */, TEvent /* <: EventObject */](): MachineConfig[TContext, TStateSchema, TEvent] = {
+  inline def apply[TContext, TStateSchema /* <: StateSchema[js.Any] */, TEvent /* <: EventObject */](): MachineConfig[TContext, TStateSchema, TEvent] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MachineConfig[TContext, TStateSchema, TEvent]]
   }
   
-  @scala.inline
-  implicit class MachineConfigMutableBuilder[Self <: MachineConfig[?, ?, ?], TContext, TStateSchema /* <: StateSchema[js.Any] */, TEvent /* <: EventObject */] (val x: Self & (MachineConfig[TContext, TStateSchema, TEvent])) extends AnyVal {
+  extension [Self <: MachineConfig[?, ?, ?], TContext, TStateSchema /* <: StateSchema[js.Any] */, TEvent /* <: EventObject */](x: Self & (MachineConfig[TContext, TStateSchema, TEvent])) {
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

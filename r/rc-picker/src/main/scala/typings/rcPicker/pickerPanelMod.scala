@@ -33,8 +33,7 @@ object pickerPanelMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[DateType](props: PickerPanelProps[DateType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default[DateType](props: PickerPanelProps[DateType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait PickerPanelBaseProps[DateType]
     extends StObject
@@ -45,17 +44,14 @@ object pickerPanelMod {
   }
   object PickerPanelBaseProps {
     
-    @scala.inline
-    def apply[DateType](generateConfig: GenerateConfig[DateType], locale: Locale, picker: Exclude[PickerMode, date | time]): PickerPanelBaseProps[DateType] = {
+    inline def apply[DateType](generateConfig: GenerateConfig[DateType], locale: Locale, picker: Exclude[PickerMode, date | time]): PickerPanelBaseProps[DateType] = {
       val __obj = js.Dynamic.literal(generateConfig = generateConfig.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], picker = picker.asInstanceOf[js.Any])
       __obj.asInstanceOf[PickerPanelBaseProps[DateType]]
     }
     
-    @scala.inline
-    implicit class PickerPanelBasePropsMutableBuilder[Self <: PickerPanelBaseProps[?], DateType] (val x: Self & PickerPanelBaseProps[DateType]) extends AnyVal {
+    extension [Self <: PickerPanelBaseProps[?], DateType](x: Self & PickerPanelBaseProps[DateType]) {
       
-      @scala.inline
-      def setPicker(value: Exclude[PickerMode, date | time]): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
+      inline def setPicker(value: Exclude[PickerMode, date | time]): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
     }
   }
   
@@ -76,44 +72,32 @@ object pickerPanelMod {
   }
   object PickerPanelDateProps {
     
-    @scala.inline
-    def apply[DateType](generateConfig: GenerateConfig[DateType], locale: Locale): PickerPanelDateProps[DateType] = {
+    inline def apply[DateType](generateConfig: GenerateConfig[DateType], locale: Locale): PickerPanelDateProps[DateType] = {
       val __obj = js.Dynamic.literal(generateConfig = generateConfig.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any])
       __obj.asInstanceOf[PickerPanelDateProps[DateType]]
     }
     
-    @scala.inline
-    implicit class PickerPanelDatePropsMutableBuilder[Self <: PickerPanelDateProps[?], DateType] (val x: Self & PickerPanelDateProps[DateType]) extends AnyVal {
+    extension [Self <: PickerPanelDateProps[?], DateType](x: Self & PickerPanelDateProps[DateType]) {
       
-      @scala.inline
-      def setDisabledTime(value: /* date */ DateType | Null => DisabledTimes): Self = StObject.set(x, "disabledTime", js.Any.fromFunction1(value))
+      inline def setDisabledTime(value: /* date */ DateType | Null => DisabledTimes): Self = StObject.set(x, "disabledTime", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDisabledTimeUndefined: Self = StObject.set(x, "disabledTime", js.undefined)
+      inline def setDisabledTimeUndefined: Self = StObject.set(x, "disabledTime", js.undefined)
       
-      @scala.inline
-      def setPicker(value: date): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
+      inline def setPicker(value: date): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPickerUndefined: Self = StObject.set(x, "picker", js.undefined)
+      inline def setPickerUndefined: Self = StObject.set(x, "picker", js.undefined)
       
-      @scala.inline
-      def setShowNow(value: Boolean): Self = StObject.set(x, "showNow", value.asInstanceOf[js.Any])
+      inline def setShowNow(value: Boolean): Self = StObject.set(x, "showNow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowNowUndefined: Self = StObject.set(x, "showNow", js.undefined)
+      inline def setShowNowUndefined: Self = StObject.set(x, "showNow", js.undefined)
       
-      @scala.inline
-      def setShowTime(value: Boolean | SharedTimeProps[DateType]): Self = StObject.set(x, "showTime", value.asInstanceOf[js.Any])
+      inline def setShowTime(value: Boolean | SharedTimeProps[DateType]): Self = StObject.set(x, "showTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowTimeUndefined: Self = StObject.set(x, "showTime", js.undefined)
+      inline def setShowTimeUndefined: Self = StObject.set(x, "showTime", js.undefined)
       
-      @scala.inline
-      def setShowToday(value: Boolean): Self = StObject.set(x, "showToday", value.asInstanceOf[js.Any])
+      inline def setShowToday(value: Boolean): Self = StObject.set(x, "showToday", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowTodayUndefined: Self = StObject.set(x, "showToday", js.undefined)
+      inline def setShowTodayUndefined: Self = StObject.set(x, "showToday", js.undefined)
     }
   }
   
@@ -125,20 +109,17 @@ object pickerPanelMod {
   trait PickerPanelProps[DateType] extends StObject
   object PickerPanelProps {
     
-    @scala.inline
-    def PickerPanelBaseProps[DateType](generateConfig: GenerateConfig[DateType], locale: Locale, picker: Exclude[PickerMode, date | time]): typings.rcPicker.pickerPanelMod.PickerPanelBaseProps[DateType] = {
+    inline def PickerPanelBaseProps[DateType](generateConfig: GenerateConfig[DateType], locale: Locale, picker: Exclude[PickerMode, date | time]): typings.rcPicker.pickerPanelMod.PickerPanelBaseProps[DateType] = {
       val __obj = js.Dynamic.literal(generateConfig = generateConfig.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], picker = picker.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.rcPicker.pickerPanelMod.PickerPanelBaseProps[DateType]]
     }
     
-    @scala.inline
-    def PickerPanelDateProps[DateType](generateConfig: GenerateConfig[DateType], locale: Locale): typings.rcPicker.pickerPanelMod.PickerPanelDateProps[DateType] = {
+    inline def PickerPanelDateProps[DateType](generateConfig: GenerateConfig[DateType], locale: Locale): typings.rcPicker.pickerPanelMod.PickerPanelDateProps[DateType] = {
       val __obj = js.Dynamic.literal(generateConfig = generateConfig.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.rcPicker.pickerPanelMod.PickerPanelDateProps[DateType]]
     }
     
-    @scala.inline
-    def PickerPanelTimeProps[DateType](generateConfig: GenerateConfig[DateType], locale: Locale): typings.rcPicker.pickerPanelMod.PickerPanelTimeProps[DateType] = {
+    inline def PickerPanelTimeProps[DateType](generateConfig: GenerateConfig[DateType], locale: Locale): typings.rcPicker.pickerPanelMod.PickerPanelTimeProps[DateType] = {
       val __obj = js.Dynamic.literal(generateConfig = generateConfig.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], picker = "time")
       __obj.asInstanceOf[typings.rcPicker.pickerPanelMod.PickerPanelTimeProps[DateType]]
     }
@@ -202,155 +183,106 @@ object pickerPanelMod {
   }
   object PickerPanelSharedProps {
     
-    @scala.inline
-    def apply[DateType](generateConfig: GenerateConfig[DateType], locale: Locale): PickerPanelSharedProps[DateType] = {
+    inline def apply[DateType](generateConfig: GenerateConfig[DateType], locale: Locale): PickerPanelSharedProps[DateType] = {
       val __obj = js.Dynamic.literal(generateConfig = generateConfig.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any])
       __obj.asInstanceOf[PickerPanelSharedProps[DateType]]
     }
     
-    @scala.inline
-    implicit class PickerPanelSharedPropsMutableBuilder[Self <: PickerPanelSharedProps[?], DateType] (val x: Self & PickerPanelSharedProps[DateType]) extends AnyVal {
+    extension [Self <: PickerPanelSharedProps[?], DateType](x: Self & PickerPanelSharedProps[DateType]) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setComponents(value: Components): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+      inline def setComponents(value: Components): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
+      inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
       
-      @scala.inline
-      def setDateRender(value: (DateType, DateType) => ReactNode): Self = StObject.set(x, "dateRender", js.Any.fromFunction2(value))
+      inline def setDateRender(value: (DateType, DateType) => ReactNode): Self = StObject.set(x, "dateRender", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDateRenderUndefined: Self = StObject.set(x, "dateRender", js.undefined)
+      inline def setDateRenderUndefined: Self = StObject.set(x, "dateRender", js.undefined)
       
-      @scala.inline
-      def setDefaultPickerValue(value: DateType): Self = StObject.set(x, "defaultPickerValue", value.asInstanceOf[js.Any])
+      inline def setDefaultPickerValue(value: DateType): Self = StObject.set(x, "defaultPickerValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultPickerValueUndefined: Self = StObject.set(x, "defaultPickerValue", js.undefined)
+      inline def setDefaultPickerValueUndefined: Self = StObject.set(x, "defaultPickerValue", js.undefined)
       
-      @scala.inline
-      def setDefaultValue(value: DateType): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: DateType): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      @scala.inline
-      def setDisabledDate(value: /* date */ DateType => Boolean): Self = StObject.set(x, "disabledDate", js.Any.fromFunction1(value))
+      inline def setDisabledDate(value: /* date */ DateType => Boolean): Self = StObject.set(x, "disabledDate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDisabledDateUndefined: Self = StObject.set(x, "disabledDate", js.undefined)
+      inline def setDisabledDateUndefined: Self = StObject.set(x, "disabledDate", js.undefined)
       
-      @scala.inline
-      def setGenerateConfig(value: GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
+      inline def setGenerateConfig(value: GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideHeader(value: Boolean): Self = StObject.set(x, "hideHeader", value.asInstanceOf[js.Any])
+      inline def setHideHeader(value: Boolean): Self = StObject.set(x, "hideHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideHeaderUndefined: Self = StObject.set(x, "hideHeader", js.undefined)
+      inline def setHideHeaderUndefined: Self = StObject.set(x, "hideHeader", js.undefined)
       
-      @scala.inline
-      def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMode(value: PanelMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: PanelMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setMonthCellRender(value: (DateType, /* locale */ Locale) => ReactNode): Self = StObject.set(x, "monthCellRender", js.Any.fromFunction2(value))
+      inline def setMonthCellRender(value: (DateType, /* locale */ Locale) => ReactNode): Self = StObject.set(x, "monthCellRender", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMonthCellRenderUndefined: Self = StObject.set(x, "monthCellRender", js.undefined)
+      inline def setMonthCellRenderUndefined: Self = StObject.set(x, "monthCellRender", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* value */ DateType => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* value */ DateType => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnMouseDown(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
+      inline def setOnMouseDown(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
+      inline def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
       
-      @scala.inline
-      def setOnOk(value: /* date */ DateType => Unit): Self = StObject.set(x, "onOk", js.Any.fromFunction1(value))
+      inline def setOnOk(value: /* date */ DateType => Unit): Self = StObject.set(x, "onOk", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnOkUndefined: Self = StObject.set(x, "onOk", js.undefined)
+      inline def setOnOkUndefined: Self = StObject.set(x, "onOk", js.undefined)
       
-      @scala.inline
-      def setOnPanelChange(value: (DateType, /* mode */ PanelMode) => Unit): Self = StObject.set(x, "onPanelChange", js.Any.fromFunction2(value))
+      inline def setOnPanelChange(value: (DateType, /* mode */ PanelMode) => Unit): Self = StObject.set(x, "onPanelChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnPanelChangeUndefined: Self = StObject.set(x, "onPanelChange", js.undefined)
+      inline def setOnPanelChangeUndefined: Self = StObject.set(x, "onPanelChange", js.undefined)
       
-      @scala.inline
-      def setOnPickerValueChange(value: /* date */ DateType => Unit): Self = StObject.set(x, "onPickerValueChange", js.Any.fromFunction1(value))
+      inline def setOnPickerValueChange(value: /* date */ DateType => Unit): Self = StObject.set(x, "onPickerValueChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPickerValueChangeUndefined: Self = StObject.set(x, "onPickerValueChange", js.undefined)
+      inline def setOnPickerValueChangeUndefined: Self = StObject.set(x, "onPickerValueChange", js.undefined)
       
-      @scala.inline
-      def setOnSelect(value: /* value */ DateType => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+      inline def setOnSelect(value: /* value */ DateType => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
+      inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
-      @scala.inline
-      def setPickerValue(value: DateType): Self = StObject.set(x, "pickerValue", value.asInstanceOf[js.Any])
+      inline def setPickerValue(value: DateType): Self = StObject.set(x, "pickerValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPickerValueUndefined: Self = StObject.set(x, "pickerValue", js.undefined)
+      inline def setPickerValueUndefined: Self = StObject.set(x, "pickerValue", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      @scala.inline
-      def setRenderExtraFooter(value: /* mode */ PanelMode => ReactNode): Self = StObject.set(x, "renderExtraFooter", js.Any.fromFunction1(value))
+      inline def setRenderExtraFooter(value: /* mode */ PanelMode => ReactNode): Self = StObject.set(x, "renderExtraFooter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderExtraFooterUndefined: Self = StObject.set(x, "renderExtraFooter", js.undefined)
+      inline def setRenderExtraFooterUndefined: Self = StObject.set(x, "renderExtraFooter", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+      inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
+      inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
       
-      @scala.inline
-      def setValue(value: DateType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: DateType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueNull: Self = StObject.set(x, "value", null)
+      inline def setValueNull: Self = StObject.set(x, "value", null)
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -385,77 +317,54 @@ object pickerPanelMod {
   }
   object PickerPanelTimeProps {
     
-    @scala.inline
-    def apply[DateType](generateConfig: GenerateConfig[DateType], locale: Locale): PickerPanelTimeProps[DateType] = {
+    inline def apply[DateType](generateConfig: GenerateConfig[DateType], locale: Locale): PickerPanelTimeProps[DateType] = {
       val __obj = js.Dynamic.literal(generateConfig = generateConfig.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], picker = "time")
       __obj.asInstanceOf[PickerPanelTimeProps[DateType]]
     }
     
-    @scala.inline
-    implicit class PickerPanelTimePropsMutableBuilder[Self <: PickerPanelTimeProps[?], DateType] (val x: Self & PickerPanelTimeProps[DateType]) extends AnyVal {
+    extension [Self <: PickerPanelTimeProps[?], DateType](x: Self & PickerPanelTimeProps[DateType]) {
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setHideDisabledOptions(value: Boolean): Self = StObject.set(x, "hideDisabledOptions", value.asInstanceOf[js.Any])
+      inline def setHideDisabledOptions(value: Boolean): Self = StObject.set(x, "hideDisabledOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideDisabledOptionsUndefined: Self = StObject.set(x, "hideDisabledOptions", js.undefined)
+      inline def setHideDisabledOptionsUndefined: Self = StObject.set(x, "hideDisabledOptions", js.undefined)
       
-      @scala.inline
-      def setHourStep(value: Double): Self = StObject.set(x, "hourStep", value.asInstanceOf[js.Any])
+      inline def setHourStep(value: Double): Self = StObject.set(x, "hourStep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHourStepUndefined: Self = StObject.set(x, "hourStep", js.undefined)
+      inline def setHourStepUndefined: Self = StObject.set(x, "hourStep", js.undefined)
       
-      @scala.inline
-      def setMinuteStep(value: Double): Self = StObject.set(x, "minuteStep", value.asInstanceOf[js.Any])
+      inline def setMinuteStep(value: Double): Self = StObject.set(x, "minuteStep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinuteStepUndefined: Self = StObject.set(x, "minuteStep", js.undefined)
+      inline def setMinuteStepUndefined: Self = StObject.set(x, "minuteStep", js.undefined)
       
-      @scala.inline
-      def setPicker(value: time): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
+      inline def setPicker(value: time): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondStep(value: Double): Self = StObject.set(x, "secondStep", value.asInstanceOf[js.Any])
+      inline def setSecondStep(value: Double): Self = StObject.set(x, "secondStep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondStepUndefined: Self = StObject.set(x, "secondStep", js.undefined)
+      inline def setSecondStepUndefined: Self = StObject.set(x, "secondStep", js.undefined)
       
-      @scala.inline
-      def setShowHour(value: Boolean): Self = StObject.set(x, "showHour", value.asInstanceOf[js.Any])
+      inline def setShowHour(value: Boolean): Self = StObject.set(x, "showHour", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowHourUndefined: Self = StObject.set(x, "showHour", js.undefined)
+      inline def setShowHourUndefined: Self = StObject.set(x, "showHour", js.undefined)
       
-      @scala.inline
-      def setShowMinute(value: Boolean): Self = StObject.set(x, "showMinute", value.asInstanceOf[js.Any])
+      inline def setShowMinute(value: Boolean): Self = StObject.set(x, "showMinute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowMinuteUndefined: Self = StObject.set(x, "showMinute", js.undefined)
+      inline def setShowMinuteUndefined: Self = StObject.set(x, "showMinute", js.undefined)
       
-      @scala.inline
-      def setShowNow(value: Boolean): Self = StObject.set(x, "showNow", value.asInstanceOf[js.Any])
+      inline def setShowNow(value: Boolean): Self = StObject.set(x, "showNow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowNowUndefined: Self = StObject.set(x, "showNow", js.undefined)
+      inline def setShowNowUndefined: Self = StObject.set(x, "showNow", js.undefined)
       
-      @scala.inline
-      def setShowSecond(value: Boolean): Self = StObject.set(x, "showSecond", value.asInstanceOf[js.Any])
+      inline def setShowSecond(value: Boolean): Self = StObject.set(x, "showSecond", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowSecondUndefined: Self = StObject.set(x, "showSecond", js.undefined)
+      inline def setShowSecondUndefined: Self = StObject.set(x, "showSecond", js.undefined)
       
-      @scala.inline
-      def setUse12Hours(value: Boolean): Self = StObject.set(x, "use12Hours", value.asInstanceOf[js.Any])
+      inline def setUse12Hours(value: Boolean): Self = StObject.set(x, "use12Hours", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUse12HoursUndefined: Self = StObject.set(x, "use12Hours", js.undefined)
+      inline def setUse12HoursUndefined: Self = StObject.set(x, "use12Hours", js.undefined)
     }
   }
 }

@@ -32,31 +32,23 @@ trait SchemaLinearBuckets extends StObject {
 }
 object SchemaLinearBuckets {
   
-  @scala.inline
-  def apply(): SchemaLinearBuckets = {
+  inline def apply(): SchemaLinearBuckets = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLinearBuckets]
   }
   
-  @scala.inline
-  implicit class SchemaLinearBucketsMutableBuilder[Self <: SchemaLinearBuckets] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLinearBuckets](x: Self) {
     
-    @scala.inline
-    def setNumFiniteBuckets(value: Double): Self = StObject.set(x, "numFiniteBuckets", value.asInstanceOf[js.Any])
+    inline def setNumFiniteBuckets(value: Double): Self = StObject.set(x, "numFiniteBuckets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumFiniteBucketsUndefined: Self = StObject.set(x, "numFiniteBuckets", js.undefined)
+    inline def setNumFiniteBucketsUndefined: Self = StObject.set(x, "numFiniteBuckets", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

@@ -33,31 +33,23 @@ trait ChartAxesUpdateData extends StObject {
 }
 object ChartAxesUpdateData {
   
-  @scala.inline
-  def apply(): ChartAxesUpdateData = {
+  inline def apply(): ChartAxesUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartAxesUpdateData]
   }
   
-  @scala.inline
-  implicit class ChartAxesUpdateDataMutableBuilder[Self <: ChartAxesUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: ChartAxesUpdateData](x: Self) {
     
-    @scala.inline
-    def setCategoryAxis(value: ChartAxisUpdateData): Self = StObject.set(x, "categoryAxis", value.asInstanceOf[js.Any])
+    inline def setCategoryAxis(value: ChartAxisUpdateData): Self = StObject.set(x, "categoryAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryAxisUndefined: Self = StObject.set(x, "categoryAxis", js.undefined)
+    inline def setCategoryAxisUndefined: Self = StObject.set(x, "categoryAxis", js.undefined)
     
-    @scala.inline
-    def setSeriesAxis(value: ChartAxisUpdateData): Self = StObject.set(x, "seriesAxis", value.asInstanceOf[js.Any])
+    inline def setSeriesAxis(value: ChartAxisUpdateData): Self = StObject.set(x, "seriesAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesAxisUndefined: Self = StObject.set(x, "seriesAxis", js.undefined)
+    inline def setSeriesAxisUndefined: Self = StObject.set(x, "seriesAxis", js.undefined)
     
-    @scala.inline
-    def setValueAxis(value: ChartAxisUpdateData): Self = StObject.set(x, "valueAxis", value.asInstanceOf[js.Any])
+    inline def setValueAxis(value: ChartAxisUpdateData): Self = StObject.set(x, "valueAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueAxisUndefined: Self = StObject.set(x, "valueAxis", js.undefined)
+    inline def setValueAxisUndefined: Self = StObject.set(x, "valueAxis", js.undefined)
   }
 }

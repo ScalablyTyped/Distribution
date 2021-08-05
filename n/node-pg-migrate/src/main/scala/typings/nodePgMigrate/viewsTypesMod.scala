@@ -27,26 +27,20 @@ object viewsTypesMod {
   }
   object AlterViewColumnOptions {
     
-    @scala.inline
-    def apply(): AlterViewColumnOptions = {
+    inline def apply(): AlterViewColumnOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AlterViewColumnOptions]
     }
     
-    @scala.inline
-    implicit class AlterViewColumnOptionsMutableBuilder[Self <: AlterViewColumnOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AlterViewColumnOptions](x: Self) {
       
-      @scala.inline
-      def setDefault(value: Value): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: Value): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultNull: Self = StObject.set(x, "default", null)
+      inline def setDefaultNull: Self = StObject.set(x, "default", null)
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setDefaultVarargs(
+      inline def setDefaultVarargs(
         value: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias node-pg-migrate.node-pg-migrate/dist/operations/generalTypes.Value */ js.Object)*
       ): Self = StObject.set(x, "default", js.Array(value :_*))
     }
@@ -60,29 +54,22 @@ object viewsTypesMod {
   }
   object AlterViewOptions {
     
-    @scala.inline
-    def apply(): AlterViewOptions = {
+    inline def apply(): AlterViewOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AlterViewOptions]
     }
     
-    @scala.inline
-    implicit class AlterViewOptionsMutableBuilder[Self <: AlterViewOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AlterViewOptions](x: Self) {
       
-      @scala.inline
-      def setCheckOption(value: CASCADED | LOCAL): Self = StObject.set(x, "checkOption", value.asInstanceOf[js.Any])
+      inline def setCheckOption(value: CASCADED | LOCAL): Self = StObject.set(x, "checkOption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckOptionNull: Self = StObject.set(x, "checkOption", null)
+      inline def setCheckOptionNull: Self = StObject.set(x, "checkOption", null)
       
-      @scala.inline
-      def setCheckOptionUndefined: Self = StObject.set(x, "checkOption", js.undefined)
+      inline def setCheckOptionUndefined: Self = StObject.set(x, "checkOption", js.undefined)
       
-      @scala.inline
-      def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     }
   }
   
@@ -117,53 +104,38 @@ object viewsTypesMod {
   }
   object CreateViewOptions {
     
-    @scala.inline
-    def apply(): CreateViewOptions = {
+    inline def apply(): CreateViewOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateViewOptions]
     }
     
-    @scala.inline
-    implicit class CreateViewOptionsMutableBuilder[Self <: CreateViewOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CreateViewOptions](x: Self) {
       
-      @scala.inline
-      def setCheckOption(value: CASCADED | LOCAL): Self = StObject.set(x, "checkOption", value.asInstanceOf[js.Any])
+      inline def setCheckOption(value: CASCADED | LOCAL): Self = StObject.set(x, "checkOption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckOptionUndefined: Self = StObject.set(x, "checkOption", js.undefined)
+      inline def setCheckOptionUndefined: Self = StObject.set(x, "checkOption", js.undefined)
       
-      @scala.inline
-      def setColumns(value: String | js.Array[String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: String | js.Array[String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+      inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      @scala.inline
-      def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value :_*))
       
-      @scala.inline
-      def setOptions(value: ViewOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: ViewOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+      inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
+      inline def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
       
-      @scala.inline
-      def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+      inline def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
+      inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
       
-      @scala.inline
-      def setTemporary(value: Boolean): Self = StObject.set(x, "temporary", value.asInstanceOf[js.Any])
+      inline def setTemporary(value: Boolean): Self = StObject.set(x, "temporary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemporaryUndefined: Self = StObject.set(x, "temporary", js.undefined)
+      inline def setTemporaryUndefined: Self = StObject.set(x, "temporary", js.undefined)
     }
   }
   

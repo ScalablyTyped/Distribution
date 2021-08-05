@@ -34,36 +34,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SaveMode extends StObject
 object SaveMode {
   
-  @scala.inline
-  def Assign: `47` = 47.asInstanceOf[`47`]
+  inline def Assign: `47` = 47.asInstanceOf[`47`]
   
-  @scala.inline
-  def AutoSave: `70` = 70.asInstanceOf[`70`]
+  inline def AutoSave: `70` = 70.asInstanceOf[`70`]
   
-  @scala.inline
-  def Deactivate: `5` = 5.asInstanceOf[`5`]
+  inline def Deactivate: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def Disqualify: `15` = 15.asInstanceOf[`15`]
+  inline def Disqualify: `15` = 15.asInstanceOf[`15`]
   
-  @scala.inline
-  def Qualify: `16` = 16.asInstanceOf[`16`]
+  inline def Qualify: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def Reactivate: `6` = 6.asInstanceOf[`6`]
+  inline def Reactivate: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def Save: `1` = 1.asInstanceOf[`1`]
+  inline def Save: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def SaveAndClose: `2` = 2.asInstanceOf[`2`]
+  inline def SaveAndClose: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def SaveAndNew: `59` = 59.asInstanceOf[`59`]
+  inline def SaveAndNew: `59` = 59.asInstanceOf[`59`]
   
-  @scala.inline
-  def SaveAsCompleted: `58` = 58.asInstanceOf[`58`]
+  inline def SaveAsCompleted: `58` = 58.asInstanceOf[`58`]
   
-  @scala.inline
-  def Send: `7` = 7.asInstanceOf[`7`]
+  inline def Send: `7` = 7.asInstanceOf[`7`]
 }

@@ -11,19 +11,15 @@ trait GenerateNetworkReportRequest extends StObject {
 }
 object GenerateNetworkReportRequest {
   
-  @scala.inline
-  def apply(): GenerateNetworkReportRequest = {
+  inline def apply(): GenerateNetworkReportRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GenerateNetworkReportRequest]
   }
   
-  @scala.inline
-  implicit class GenerateNetworkReportRequestMutableBuilder[Self <: GenerateNetworkReportRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GenerateNetworkReportRequest](x: Self) {
     
-    @scala.inline
-    def setReportSpec(value: NetworkReportSpec): Self = StObject.set(x, "reportSpec", value.asInstanceOf[js.Any])
+    inline def setReportSpec(value: NetworkReportSpec): Self = StObject.set(x, "reportSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportSpecUndefined: Self = StObject.set(x, "reportSpec", js.undefined)
+    inline def setReportSpecUndefined: Self = StObject.set(x, "reportSpec", js.undefined)
   }
 }

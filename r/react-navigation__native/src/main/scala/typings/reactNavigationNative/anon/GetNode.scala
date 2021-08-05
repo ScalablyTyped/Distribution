@@ -14,16 +14,13 @@ trait GetNode
 }
 object GetNode {
   
-  @scala.inline
-  def apply(getNode: () => ScrollableView): GetNode = {
+  inline def apply(getNode: () => ScrollableView): GetNode = {
     val __obj = js.Dynamic.literal(getNode = js.Any.fromFunction0(getNode))
     __obj.asInstanceOf[GetNode]
   }
   
-  @scala.inline
-  implicit class GetNodeMutableBuilder[Self <: GetNode] (val x: Self) extends AnyVal {
+  extension [Self <: GetNode](x: Self) {
     
-    @scala.inline
-    def setGetNode(value: () => ScrollableView): Self = StObject.set(x, "getNode", js.Any.fromFunction0(value))
+    inline def setGetNode(value: () => ScrollableView): Self = StObject.set(x, "getNode", js.Any.fromFunction0(value))
   }
 }

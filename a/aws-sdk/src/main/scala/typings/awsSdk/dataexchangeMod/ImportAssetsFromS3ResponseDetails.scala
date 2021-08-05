@@ -23,25 +23,19 @@ trait ImportAssetsFromS3ResponseDetails extends StObject {
 }
 object ImportAssetsFromS3ResponseDetails {
   
-  @scala.inline
-  def apply(AssetSources: ListOfAssetSourceEntry, DataSetId: Id, RevisionId: Id): ImportAssetsFromS3ResponseDetails = {
+  inline def apply(AssetSources: ListOfAssetSourceEntry, DataSetId: Id, RevisionId: Id): ImportAssetsFromS3ResponseDetails = {
     val __obj = js.Dynamic.literal(AssetSources = AssetSources.asInstanceOf[js.Any], DataSetId = DataSetId.asInstanceOf[js.Any], RevisionId = RevisionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportAssetsFromS3ResponseDetails]
   }
   
-  @scala.inline
-  implicit class ImportAssetsFromS3ResponseDetailsMutableBuilder[Self <: ImportAssetsFromS3ResponseDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ImportAssetsFromS3ResponseDetails](x: Self) {
     
-    @scala.inline
-    def setAssetSources(value: ListOfAssetSourceEntry): Self = StObject.set(x, "AssetSources", value.asInstanceOf[js.Any])
+    inline def setAssetSources(value: ListOfAssetSourceEntry): Self = StObject.set(x, "AssetSources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetSourcesVarargs(value: AssetSourceEntry*): Self = StObject.set(x, "AssetSources", js.Array(value :_*))
+    inline def setAssetSourcesVarargs(value: AssetSourceEntry*): Self = StObject.set(x, "AssetSources", js.Array(value :_*))
     
-    @scala.inline
-    def setDataSetId(value: Id): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
+    inline def setDataSetId(value: Id): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionId(value: Id): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
+    inline def setRevisionId(value: Id): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
   }
 }

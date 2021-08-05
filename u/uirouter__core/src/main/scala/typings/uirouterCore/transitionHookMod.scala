@@ -26,7 +26,7 @@ object transitionHookMod {
       * Return a Rejection promise if the transition is no longer current due
       * to a stopped router (disposed), or a new transition has started and superseded this one.
       */
-    var getNotCurrentRejection: js.Any = js.native
+    /* private */ var getNotCurrentRejection: js.Any = js.native
     
     /**
       * This method handles the return value of a Transition Hook.
@@ -41,17 +41,17 @@ object transitionHookMod {
     
     def invokeHook(): js.Promise[HookResult] | Unit = js.native
     
-    var isSuperseded: js.Any = js.native
+    /* private */ var isSuperseded: js.Any = js.native
     
     def logError(err: js.Any): js.Any = js.native
     
-    var options: js.Any = js.native
+    /* private */ var options: js.Any = js.native
     
-    var registeredHook: js.Any = js.native
+    /* private */ var registeredHook: js.Any = js.native
     
-    var stateContext: js.Any = js.native
+    /* private */ var stateContext: js.Any = js.native
     
-    var transition: js.Any = js.native
+    /* private */ var transition: js.Any = js.native
     
     var `type`: TransitionEventType = js.native
   }
@@ -73,10 +73,8 @@ object transitionHookMod {
       * These GetResultHandler(s) are used by [[invokeHook]] below
       * Each HookType chooses a GetResultHandler (See: [[TransitionService._defineCoreEvents]])
       */
-    @scala.inline
-    def HANDLE_RESULT(hook: TransitionHook): ResultHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("HANDLE_RESULT")(hook.asInstanceOf[js.Any]).asInstanceOf[ResultHandler]
-    @scala.inline
-    def HANDLE_RESULT_=(x: GetResultHandler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HANDLE_RESULT")(x.asInstanceOf[js.Any])
+    inline def HANDLE_RESULT(hook: TransitionHook): ResultHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("HANDLE_RESULT")(hook.asInstanceOf[js.Any]).asInstanceOf[ResultHandler]
+    inline def HANDLE_RESULT_=(x: GetResultHandler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HANDLE_RESULT")(x.asInstanceOf[js.Any])
     
     /**
       * These GetErrorHandler(s) are used by [[invokeHook]] below
@@ -89,10 +87,8 @@ object transitionHookMod {
       * These GetErrorHandler(s) are used by [[invokeHook]] below
       * Each HookType chooses a GetErrorHandler (See: [[TransitionService._defineCoreEvents]])
       */
-    @scala.inline
-    def LOG_ERROR(hook: TransitionHook): ErrorHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("LOG_ERROR")(hook.asInstanceOf[js.Any]).asInstanceOf[ErrorHandler]
-    @scala.inline
-    def LOG_ERROR_=(x: GetErrorHandler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOG_ERROR")(x.asInstanceOf[js.Any])
+    inline def LOG_ERROR(hook: TransitionHook): ErrorHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("LOG_ERROR")(hook.asInstanceOf[js.Any]).asInstanceOf[ErrorHandler]
+    inline def LOG_ERROR_=(x: GetErrorHandler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOG_ERROR")(x.asInstanceOf[js.Any])
     
     /**
       * If the result is a promise rejection, log it.
@@ -105,26 +101,20 @@ object transitionHookMod {
       * If the result is a promise rejection, log it.
       * Otherwise, ignore the result.
       */
-    @scala.inline
-    def LOG_REJECTED_RESULT(hook: TransitionHook): ResultHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("LOG_REJECTED_RESULT")(hook.asInstanceOf[js.Any]).asInstanceOf[ResultHandler]
-    @scala.inline
-    def LOG_REJECTED_RESULT_=(x: GetResultHandler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOG_REJECTED_RESULT")(x.asInstanceOf[js.Any])
+    inline def LOG_REJECTED_RESULT(hook: TransitionHook): ResultHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("LOG_REJECTED_RESULT")(hook.asInstanceOf[js.Any]).asInstanceOf[ResultHandler]
+    inline def LOG_REJECTED_RESULT_=(x: GetResultHandler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOG_REJECTED_RESULT")(x.asInstanceOf[js.Any])
     
     @JSImport("@uirouter/core/lib/transition/transitionHook", "TransitionHook.REJECT_ERROR")
     @js.native
     def REJECT_ERROR: GetErrorHandler = js.native
-    @scala.inline
-    def REJECT_ERROR(hook: TransitionHook): ErrorHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("REJECT_ERROR")(hook.asInstanceOf[js.Any]).asInstanceOf[ErrorHandler]
-    @scala.inline
-    def REJECT_ERROR_=(x: GetErrorHandler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REJECT_ERROR")(x.asInstanceOf[js.Any])
+    inline def REJECT_ERROR(hook: TransitionHook): ErrorHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("REJECT_ERROR")(hook.asInstanceOf[js.Any]).asInstanceOf[ErrorHandler]
+    inline def REJECT_ERROR_=(x: GetErrorHandler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REJECT_ERROR")(x.asInstanceOf[js.Any])
     
     @JSImport("@uirouter/core/lib/transition/transitionHook", "TransitionHook.THROW_ERROR")
     @js.native
     def THROW_ERROR: GetErrorHandler = js.native
-    @scala.inline
-    def THROW_ERROR(hook: TransitionHook): ErrorHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("THROW_ERROR")(hook.asInstanceOf[js.Any]).asInstanceOf[ErrorHandler]
-    @scala.inline
-    def THROW_ERROR_=(x: GetErrorHandler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("THROW_ERROR")(x.asInstanceOf[js.Any])
+    inline def THROW_ERROR(hook: TransitionHook): ErrorHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("THROW_ERROR")(hook.asInstanceOf[js.Any]).asInstanceOf[ErrorHandler]
+    inline def THROW_ERROR_=(x: GetErrorHandler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("THROW_ERROR")(x.asInstanceOf[js.Any])
     
     /**
       * Chains together an array of TransitionHooks.
@@ -144,10 +134,8 @@ object transitionHookMod {
       * @param waitFor if provided, the chain is `.then()`'ed off this promise
       * @returns a `Promise` for sequentially invoking the hooks (in order)
       */
-    @scala.inline
-    def chain(hooks: js.Array[TransitionHook]): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(hooks.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
-    @scala.inline
-    def chain(hooks: js.Array[TransitionHook], waitFor: js.Promise[js.Any]): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("chain")(hooks.asInstanceOf[js.Any], waitFor.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    inline def chain(hooks: js.Array[TransitionHook]): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(hooks.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    inline def chain(hooks: js.Array[TransitionHook], waitFor: js.Promise[js.Any]): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("chain")(hooks.asInstanceOf[js.Any], waitFor.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
     /**
       * Invokes all the provided TransitionHooks, in order.
@@ -160,8 +148,7 @@ object transitionHookMod {
       *
       * @returns a promise for the async result, or the result of the callback
       */
-    @scala.inline
-    def invokeHooks[T](
+    inline def invokeHooks[T](
       hooks: js.Array[TransitionHook],
       doneCallback: js.Function1[/* result */ js.UndefOr[HookResult], T]
     ): js.Promise[js.Any] | T = (^.asInstanceOf[js.Dynamic].applyDynamic("invokeHooks")(hooks.asInstanceOf[js.Any], doneCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | T]
@@ -169,8 +156,7 @@ object transitionHookMod {
     /**
       * Run all TransitionHooks, ignoring their return value.
       */
-    @scala.inline
-    def runAllHooks(hooks: js.Array[TransitionHook]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("runAllHooks")(hooks.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def runAllHooks(hooks: js.Array[TransitionHook]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("runAllHooks")(hooks.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   type ErrorHandler = js.Function1[/* error */ js.Any, js.Promise[js.Any]]

@@ -42,7 +42,7 @@ object layoutMod {
     def init(): js.Promise[Layout] = js.native
     def init(options: InitLayoutOptions): js.Promise[Layout] = js.native
     
-    var platform: js.Any = js.native
+    /* private */ var platform: js.Any = js.native
     
     /**
       * Replaces a Platform window's layout with a new layout.  Any views that were in the old layout but not the new layout
@@ -63,26 +63,20 @@ object layoutMod {
   }
   object InitLayoutOptions {
     
-    @scala.inline
-    def apply(): InitLayoutOptions = {
+    inline def apply(): InitLayoutOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InitLayoutOptions]
     }
     
-    @scala.inline
-    implicit class InitLayoutOptionsMutableBuilder[Self <: InitLayoutOptions] (val x: Self) extends AnyVal {
+    extension [Self <: InitLayoutOptions](x: Self) {
       
-      @scala.inline
-      def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
+      inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
+      inline def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
       
-      @scala.inline
-      def setLayout(value: Config): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: Config): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+      inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     }
   }
   
@@ -144,17 +138,14 @@ object layoutMod {
   }
   object PresetLayoutOptions {
     
-    @scala.inline
-    def apply(presetType: LayoutPresetTypes): PresetLayoutOptions = {
+    inline def apply(presetType: LayoutPresetTypes): PresetLayoutOptions = {
       val __obj = js.Dynamic.literal(presetType = presetType.asInstanceOf[js.Any])
       __obj.asInstanceOf[PresetLayoutOptions]
     }
     
-    @scala.inline
-    implicit class PresetLayoutOptionsMutableBuilder[Self <: PresetLayoutOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PresetLayoutOptions](x: Self) {
       
-      @scala.inline
-      def setPresetType(value: LayoutPresetTypes): Self = StObject.set(x, "presetType", value.asInstanceOf[js.Any])
+      inline def setPresetType(value: LayoutPresetTypes): Self = StObject.set(x, "presetType", value.asInstanceOf[js.Any])
     }
   }
 }

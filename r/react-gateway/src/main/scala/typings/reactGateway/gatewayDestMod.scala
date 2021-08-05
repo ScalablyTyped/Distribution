@@ -25,29 +25,22 @@ object gatewayDestMod {
   }
   object GatewayDestProps {
     
-    @scala.inline
-    def apply(name: String): GatewayDestProps = {
+    inline def apply(name: String): GatewayDestProps = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GatewayDestProps]
     }
     
-    @scala.inline
-    implicit class GatewayDestPropsMutableBuilder[Self <: GatewayDestProps] (val x: Self) extends AnyVal {
+    extension [Self <: GatewayDestProps](x: Self) {
       
-      @scala.inline
-      def setComponent(value: String | ComponentType[js.Object]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: String | ComponentType[js.Object]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+      inline def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
+      inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
     }
   }
 }

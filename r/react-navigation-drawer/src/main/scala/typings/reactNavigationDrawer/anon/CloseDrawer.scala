@@ -14,22 +14,17 @@ trait CloseDrawer extends StObject {
 }
 object CloseDrawer {
   
-  @scala.inline
-  def apply(closeDrawer: () => js.Any, openDrawer: () => js.Any, toggleDrawer: () => js.Any): CloseDrawer = {
+  inline def apply(closeDrawer: () => js.Any, openDrawer: () => js.Any, toggleDrawer: () => js.Any): CloseDrawer = {
     val __obj = js.Dynamic.literal(closeDrawer = js.Any.fromFunction0(closeDrawer), openDrawer = js.Any.fromFunction0(openDrawer), toggleDrawer = js.Any.fromFunction0(toggleDrawer))
     __obj.asInstanceOf[CloseDrawer]
   }
   
-  @scala.inline
-  implicit class CloseDrawerMutableBuilder[Self <: CloseDrawer] (val x: Self) extends AnyVal {
+  extension [Self <: CloseDrawer](x: Self) {
     
-    @scala.inline
-    def setCloseDrawer(value: () => js.Any): Self = StObject.set(x, "closeDrawer", js.Any.fromFunction0(value))
+    inline def setCloseDrawer(value: () => js.Any): Self = StObject.set(x, "closeDrawer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOpenDrawer(value: () => js.Any): Self = StObject.set(x, "openDrawer", js.Any.fromFunction0(value))
+    inline def setOpenDrawer(value: () => js.Any): Self = StObject.set(x, "openDrawer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToggleDrawer(value: () => js.Any): Self = StObject.set(x, "toggleDrawer", js.Any.fromFunction0(value))
+    inline def setToggleDrawer(value: () => js.Any): Self = StObject.set(x, "toggleDrawer", js.Any.fromFunction0(value))
   }
 }

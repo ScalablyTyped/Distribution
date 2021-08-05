@@ -20,25 +20,19 @@ trait OrgsListRequestOptions extends StObject {
 }
 object OrgsListRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): OrgsListRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): OrgsListRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "GET", request = request.asInstanceOf[js.Any], url = "/organizations")
     __obj.asInstanceOf[OrgsListRequestOptions]
   }
   
-  @scala.inline
-  implicit class OrgsListRequestOptionsMutableBuilder[Self <: OrgsListRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OrgsListRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: Slashorganizations): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: Slashorganizations): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

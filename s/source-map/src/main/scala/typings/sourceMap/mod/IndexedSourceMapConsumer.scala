@@ -14,6 +14,5 @@ trait IndexedSourceMapConsumer
 }
 object IndexedSourceMapConsumer {
   
-  @scala.inline
-  def apply: IndexedSourceMapConsumerConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("IndexedSourceMapConsumer").asInstanceOf[IndexedSourceMapConsumerConstructor]
+  inline def apply: IndexedSourceMapConsumerConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("IndexedSourceMapConsumer").asInstanceOf[IndexedSourceMapConsumerConstructor]
 }

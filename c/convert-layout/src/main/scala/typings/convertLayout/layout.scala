@@ -12,19 +12,15 @@ trait layout extends StObject {
 }
 object layout {
   
-  @scala.inline
-  def apply(fromEn: String => String, toEn: String => String): layout = {
+  inline def apply(fromEn: String => String, toEn: String => String): layout = {
     val __obj = js.Dynamic.literal(fromEn = js.Any.fromFunction1(fromEn), toEn = js.Any.fromFunction1(toEn))
     __obj.asInstanceOf[layout]
   }
   
-  @scala.inline
-  implicit class layoutMutableBuilder[Self <: layout] (val x: Self) extends AnyVal {
+  extension [Self <: layout](x: Self) {
     
-    @scala.inline
-    def setFromEn(value: String => String): Self = StObject.set(x, "fromEn", js.Any.fromFunction1(value))
+    inline def setFromEn(value: String => String): Self = StObject.set(x, "fromEn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToEn(value: String => String): Self = StObject.set(x, "toEn", js.Any.fromFunction1(value))
+    inline def setToEn(value: String => String): Self = StObject.set(x, "toEn", js.Any.fromFunction1(value))
   }
 }

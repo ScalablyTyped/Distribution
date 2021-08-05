@@ -20,8 +20,7 @@ object arrayMod {
        with ArrayConfig
   object ArrayProps {
     
-    @scala.inline
-    def apply(name: String, onChange: ArrayValue => ArrayValue | Unit): ArrayProps = {
+    inline def apply(name: String, onChange: ArrayValue => ArrayValue | Unit): ArrayProps = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange))
       __obj.asInstanceOf[ArrayProps]
     }

@@ -23,28 +23,21 @@ trait UpdateFindingsRequest extends StObject {
 }
 object UpdateFindingsRequest {
   
-  @scala.inline
-  def apply(Filters: AwsSecurityFindingFilters): UpdateFindingsRequest = {
+  inline def apply(Filters: AwsSecurityFindingFilters): UpdateFindingsRequest = {
     val __obj = js.Dynamic.literal(Filters = Filters.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateFindingsRequest]
   }
   
-  @scala.inline
-  implicit class UpdateFindingsRequestMutableBuilder[Self <: UpdateFindingsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateFindingsRequest](x: Self) {
     
-    @scala.inline
-    def setFilters(value: AwsSecurityFindingFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: AwsSecurityFindingFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNote(value: NoteUpdate): Self = StObject.set(x, "Note", value.asInstanceOf[js.Any])
+    inline def setNote(value: NoteUpdate): Self = StObject.set(x, "Note", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoteUndefined: Self = StObject.set(x, "Note", js.undefined)
+    inline def setNoteUndefined: Self = StObject.set(x, "Note", js.undefined)
     
-    @scala.inline
-    def setRecordState(value: RecordState): Self = StObject.set(x, "RecordState", value.asInstanceOf[js.Any])
+    inline def setRecordState(value: RecordState): Self = StObject.set(x, "RecordState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordStateUndefined: Self = StObject.set(x, "RecordState", js.undefined)
+    inline def setRecordStateUndefined: Self = StObject.set(x, "RecordState", js.undefined)
   }
 }

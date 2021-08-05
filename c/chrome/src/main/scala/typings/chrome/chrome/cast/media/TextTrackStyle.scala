@@ -32,8 +32,7 @@ trait TextTrackStyle extends StObject {
 }
 object TextTrackStyle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     backgroundColor: String,
     customData: js.Object,
     edgeColor: String,
@@ -51,43 +50,30 @@ object TextTrackStyle {
     __obj.asInstanceOf[TextTrackStyle]
   }
   
-  @scala.inline
-  implicit class TextTrackStyleMutableBuilder[Self <: TextTrackStyle] (val x: Self) extends AnyVal {
+  extension [Self <: TextTrackStyle](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomData(value: js.Object): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+    inline def setCustomData(value: js.Object): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdgeColor(value: String): Self = StObject.set(x, "edgeColor", value.asInstanceOf[js.Any])
+    inline def setEdgeColor(value: String): Self = StObject.set(x, "edgeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdgeType(value: TextTrackEdgeType): Self = StObject.set(x, "edgeType", value.asInstanceOf[js.Any])
+    inline def setEdgeType(value: TextTrackEdgeType): Self = StObject.set(x, "edgeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+    inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontGenericFamily(value: TextTrackFontGenericFamily): Self = StObject.set(x, "fontGenericFamily", value.asInstanceOf[js.Any])
+    inline def setFontGenericFamily(value: TextTrackFontGenericFamily): Self = StObject.set(x, "fontGenericFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontScale(value: Double): Self = StObject.set(x, "fontScale", value.asInstanceOf[js.Any])
+    inline def setFontScale(value: Double): Self = StObject.set(x, "fontScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontStyle(value: TextTrackFontStyle): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
+    inline def setFontStyle(value: TextTrackFontStyle): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForegroundColor(value: String): Self = StObject.set(x, "foregroundColor", value.asInstanceOf[js.Any])
+    inline def setForegroundColor(value: String): Self = StObject.set(x, "foregroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowColor(value: String): Self = StObject.set(x, "windowColor", value.asInstanceOf[js.Any])
+    inline def setWindowColor(value: String): Self = StObject.set(x, "windowColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowRoundedCornerRadius(value: Double): Self = StObject.set(x, "windowRoundedCornerRadius", value.asInstanceOf[js.Any])
+    inline def setWindowRoundedCornerRadius(value: Double): Self = StObject.set(x, "windowRoundedCornerRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowType(value: TextTrackWindowType): Self = StObject.set(x, "windowType", value.asInstanceOf[js.Any])
+    inline def setWindowType(value: TextTrackWindowType): Self = StObject.set(x, "windowType", value.asInstanceOf[js.Any])
   }
 }

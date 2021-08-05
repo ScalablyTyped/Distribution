@@ -43,8 +43,7 @@ trait ConnectDirectoryRequest extends StObject {
 }
 object ConnectDirectoryRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ConnectSettings: DirectoryConnectSettings,
     Name: DirectoryName,
     Password: ConnectPassword,
@@ -54,40 +53,28 @@ object ConnectDirectoryRequest {
     __obj.asInstanceOf[ConnectDirectoryRequest]
   }
   
-  @scala.inline
-  implicit class ConnectDirectoryRequestMutableBuilder[Self <: ConnectDirectoryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectDirectoryRequest](x: Self) {
     
-    @scala.inline
-    def setConnectSettings(value: DirectoryConnectSettings): Self = StObject.set(x, "ConnectSettings", value.asInstanceOf[js.Any])
+    inline def setConnectSettings(value: DirectoryConnectSettings): Self = StObject.set(x, "ConnectSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setName(value: DirectoryName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: DirectoryName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassword(value: ConnectPassword): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: ConnectPassword): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortName(value: DirectoryShortName): Self = StObject.set(x, "ShortName", value.asInstanceOf[js.Any])
+    inline def setShortName(value: DirectoryShortName): Self = StObject.set(x, "ShortName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortNameUndefined: Self = StObject.set(x, "ShortName", js.undefined)
+    inline def setShortNameUndefined: Self = StObject.set(x, "ShortName", js.undefined)
     
-    @scala.inline
-    def setSize(value: DirectorySize): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+    inline def setSize(value: DirectorySize): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

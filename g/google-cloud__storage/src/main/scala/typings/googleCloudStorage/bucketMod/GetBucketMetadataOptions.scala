@@ -10,19 +10,15 @@ trait GetBucketMetadataOptions extends StObject {
 }
 object GetBucketMetadataOptions {
   
-  @scala.inline
-  def apply(): GetBucketMetadataOptions = {
+  inline def apply(): GetBucketMetadataOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetBucketMetadataOptions]
   }
   
-  @scala.inline
-  implicit class GetBucketMetadataOptionsMutableBuilder[Self <: GetBucketMetadataOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetBucketMetadataOptions](x: Self) {
     
-    @scala.inline
-    def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
+    inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
+    inline def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
   }
 }

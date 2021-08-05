@@ -23,25 +23,19 @@ trait PostCommentReplyInput extends StObject {
 }
 object PostCommentReplyInput {
   
-  @scala.inline
-  def apply(content: Content, inReplyTo: CommentId): PostCommentReplyInput = {
+  inline def apply(content: Content, inReplyTo: CommentId): PostCommentReplyInput = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], inReplyTo = inReplyTo.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostCommentReplyInput]
   }
   
-  @scala.inline
-  implicit class PostCommentReplyInputMutableBuilder[Self <: PostCommentReplyInput] (val x: Self) extends AnyVal {
+  extension [Self <: PostCommentReplyInput](x: Self) {
     
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
+    inline def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
     
-    @scala.inline
-    def setContent(value: Content): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: Content): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInReplyTo(value: CommentId): Self = StObject.set(x, "inReplyTo", value.asInstanceOf[js.Any])
+    inline def setInReplyTo(value: CommentId): Self = StObject.set(x, "inReplyTo", value.asInstanceOf[js.Any])
   }
 }

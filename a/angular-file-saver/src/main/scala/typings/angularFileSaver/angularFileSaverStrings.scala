@@ -8,6 +8,5 @@ object angularFileSaverStrings {
   
   @js.native
   sealed trait ngFileSaver extends StObject
-  @scala.inline
-  def ngFileSaver: ngFileSaver = "ngFileSaver".asInstanceOf[ngFileSaver]
+  inline def ngFileSaver: ngFileSaver = "ngFileSaver".asInstanceOf[ngFileSaver]
 }

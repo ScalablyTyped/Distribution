@@ -28,8 +28,7 @@ trait XDialog
 }
 object XDialog {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Title: String,
     acquire: () => Unit,
     endExecute: () => Unit,
@@ -43,22 +42,16 @@ object XDialog {
     __obj.asInstanceOf[XDialog]
   }
   
-  @scala.inline
-  implicit class XDialogMutableBuilder[Self <: XDialog] (val x: Self) extends AnyVal {
+  extension [Self <: XDialog](x: Self) {
     
-    @scala.inline
-    def setEndExecute(value: () => Unit): Self = StObject.set(x, "endExecute", js.Any.fromFunction0(value))
+    inline def setEndExecute(value: () => Unit): Self = StObject.set(x, "endExecute", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExecute(value: () => Double): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Double): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
+    inline def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetTitle(value: String => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
+    inline def setSetTitle(value: String => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
   }
 }

@@ -8,6 +8,5 @@ object jimpPngStrings {
   
   @js.native
   sealed trait imageSlashpng extends StObject
-  @scala.inline
-  def imageSlashpng: imageSlashpng = "image/png".asInstanceOf[imageSlashpng]
+  inline def imageSlashpng: imageSlashpng = "image/png".asInstanceOf[imageSlashpng]
 }

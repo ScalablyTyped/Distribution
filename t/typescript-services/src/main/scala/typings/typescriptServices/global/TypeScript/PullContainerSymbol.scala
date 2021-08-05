@@ -28,8 +28,7 @@ object PullContainerSymbol {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def usedAsSymbol(
+  inline def usedAsSymbol(
     containerSymbol: typings.typescriptServices.TypeScript.PullSymbol,
     symbol: typings.typescriptServices.TypeScript.PullSymbol
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("usedAsSymbol")(containerSymbol.asInstanceOf[js.Any], symbol.asInstanceOf[js.Any])).asInstanceOf[Boolean]

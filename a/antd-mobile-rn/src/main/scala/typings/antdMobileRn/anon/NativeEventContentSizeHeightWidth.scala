@@ -10,16 +10,13 @@ trait NativeEventContentSizeHeightWidth extends StObject {
 }
 object NativeEventContentSizeHeightWidth {
   
-  @scala.inline
-  def apply(nativeEvent: ContentSizeHeightWidth): NativeEventContentSizeHeightWidth = {
+  inline def apply(nativeEvent: ContentSizeHeightWidth): NativeEventContentSizeHeightWidth = {
     val __obj = js.Dynamic.literal(nativeEvent = nativeEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[NativeEventContentSizeHeightWidth]
   }
   
-  @scala.inline
-  implicit class NativeEventContentSizeHeightWidthMutableBuilder[Self <: NativeEventContentSizeHeightWidth] (val x: Self) extends AnyVal {
+  extension [Self <: NativeEventContentSizeHeightWidth](x: Self) {
     
-    @scala.inline
-    def setNativeEvent(value: ContentSizeHeightWidth): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
+    inline def setNativeEvent(value: ContentSizeHeightWidth): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
   }
 }

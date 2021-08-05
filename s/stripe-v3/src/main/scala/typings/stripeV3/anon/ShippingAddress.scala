@@ -13,8 +13,7 @@ trait ShippingAddress extends StObject {
 }
 object ShippingAddress {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     shippingAddress: typings.stripeV3.stripe.paymentRequest.ShippingAddress,
     updateWith: UpdateDetails => Unit
   ): ShippingAddress = {
@@ -22,13 +21,10 @@ object ShippingAddress {
     __obj.asInstanceOf[ShippingAddress]
   }
   
-  @scala.inline
-  implicit class ShippingAddressMutableBuilder[Self <: ShippingAddress] (val x: Self) extends AnyVal {
+  extension [Self <: ShippingAddress](x: Self) {
     
-    @scala.inline
-    def setShippingAddress(value: typings.stripeV3.stripe.paymentRequest.ShippingAddress): Self = StObject.set(x, "shippingAddress", value.asInstanceOf[js.Any])
+    inline def setShippingAddress(value: typings.stripeV3.stripe.paymentRequest.ShippingAddress): Self = StObject.set(x, "shippingAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateWith(value: UpdateDetails => Unit): Self = StObject.set(x, "updateWith", js.Any.fromFunction1(value))
+    inline def setUpdateWith(value: UpdateDetails => Unit): Self = StObject.set(x, "updateWith", js.Any.fromFunction1(value))
   }
 }

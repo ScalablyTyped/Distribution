@@ -22,25 +22,19 @@ trait SchemaTextRun extends StObject {
 }
 object SchemaTextRun {
   
-  @scala.inline
-  def apply(): SchemaTextRun = {
+  inline def apply(): SchemaTextRun = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTextRun]
   }
   
-  @scala.inline
-  implicit class SchemaTextRunMutableBuilder[Self <: SchemaTextRun] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTextRun](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setStyle(value: SchemaTextStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: SchemaTextStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

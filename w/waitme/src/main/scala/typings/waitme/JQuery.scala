@@ -35,8 +35,7 @@ trait JQuery extends StObject {
 }
 object JQuery {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     on: (close, js.Function0[Unit]) => JQuery,
     waitMe: /* options */ js.UndefOr[WaitMeOptions | hide] => JQuery
   ): JQuery = {
@@ -44,13 +43,10 @@ object JQuery {
     __obj.asInstanceOf[JQuery]
   }
   
-  @scala.inline
-  implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+  extension [Self <: JQuery](x: Self) {
     
-    @scala.inline
-    def setOn(value: (close, js.Function0[Unit]) => JQuery): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+    inline def setOn(value: (close, js.Function0[Unit]) => JQuery): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWaitMe(value: /* options */ js.UndefOr[WaitMeOptions | hide] => JQuery): Self = StObject.set(x, "waitMe", js.Any.fromFunction1(value))
+    inline def setWaitMe(value: /* options */ js.UndefOr[WaitMeOptions | hide] => JQuery): Self = StObject.set(x, "waitMe", js.Any.fromFunction1(value))
   }
 }

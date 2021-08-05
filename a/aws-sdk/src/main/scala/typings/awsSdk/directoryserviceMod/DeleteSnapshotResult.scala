@@ -13,19 +13,15 @@ trait DeleteSnapshotResult extends StObject {
 }
 object DeleteSnapshotResult {
   
-  @scala.inline
-  def apply(): DeleteSnapshotResult = {
+  inline def apply(): DeleteSnapshotResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteSnapshotResult]
   }
   
-  @scala.inline
-  implicit class DeleteSnapshotResultMutableBuilder[Self <: DeleteSnapshotResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSnapshotResult](x: Self) {
     
-    @scala.inline
-    def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
+    inline def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotIdUndefined: Self = StObject.set(x, "SnapshotId", js.undefined)
+    inline def setSnapshotIdUndefined: Self = StObject.set(x, "SnapshotId", js.undefined)
   }
 }

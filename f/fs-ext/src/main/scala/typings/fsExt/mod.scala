@@ -141,175 +141,133 @@ object mod {
     val SEEK_SET: Double = js.native
   }
   
-  @scala.inline
-  def fcntl(
+  inline def fcntl(
     fd: Double,
     cmd: Double,
     arg: Double,
     callback: js.Function2[/* err */ ErrnoException | Null, /* result */ Double, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntl")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], arg.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def fcntl(
+  inline def fcntl(
     fd: Double,
     cmd: Double,
     callback: js.Function2[/* err */ ErrnoException | Null, /* result */ Double, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntl")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def fcntlSync(fd: Double, cmd: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntlSync")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def fcntlSync(fd: Double, cmd: Double, arg: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntlSync")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def fcntlSync(fd: Double, cmd: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntlSync")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def fcntlSync(fd: Double, cmd: Double, arg: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntlSync")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def fcntlSync_getfd(fd: Double, cmd: getfd): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntlSync")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def fcntlSync_getfd(fd: Double, cmd: getfd, arg: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntlSync")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def fcntlSync_getfd(fd: Double, cmd: getfd): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntlSync")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def fcntlSync_getfd(fd: Double, cmd: getfd, arg: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntlSync")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def fcntlSync_getlk(fd: Double, cmd: getlk): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntlSync")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def fcntlSync_getlk(fd: Double, cmd: getlk, arg: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntlSync")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def fcntlSync_getlk(fd: Double, cmd: getlk): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntlSync")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def fcntlSync_getlk(fd: Double, cmd: getlk, arg: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntlSync")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def fcntlSync_setfd(fd: Double, cmd: setfd): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntlSync")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def fcntlSync_setfd(fd: Double, cmd: setfd, arg: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntlSync")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def fcntlSync_setfd(fd: Double, cmd: setfd): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntlSync")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def fcntlSync_setfd(fd: Double, cmd: setfd, arg: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntlSync")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def fcntlSync_setlk(fd: Double, cmd: setlk): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntlSync")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def fcntlSync_setlk(fd: Double, cmd: setlk, arg: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntlSync")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def fcntlSync_setlk(fd: Double, cmd: setlk): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntlSync")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def fcntlSync_setlk(fd: Double, cmd: setlk, arg: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntlSync")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def fcntlSync_setlkw(fd: Double, cmd: setlkw): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntlSync")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def fcntlSync_setlkw(fd: Double, cmd: setlkw, arg: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntlSync")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def fcntlSync_setlkw(fd: Double, cmd: setlkw): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntlSync")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def fcntlSync_setlkw(fd: Double, cmd: setlkw, arg: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntlSync")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def fcntl_getfd(
+  inline def fcntl_getfd(
     fd: Double,
     cmd: getfd,
     arg: Double,
     callback: js.Function2[/* err */ ErrnoException | Null, /* result */ Double, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntl")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], arg.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def fcntl_getfd(
+  inline def fcntl_getfd(
     fd: Double,
     cmd: getfd,
     callback: js.Function2[/* err */ ErrnoException | Null, /* result */ Double, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntl")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def fcntl_getlk(
+  inline def fcntl_getlk(
     fd: Double,
     cmd: getlk,
     arg: Double,
     callback: js.Function2[/* err */ ErrnoException | Null, /* result */ Double, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntl")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], arg.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def fcntl_getlk(
+  inline def fcntl_getlk(
     fd: Double,
     cmd: getlk,
     callback: js.Function2[/* err */ ErrnoException | Null, /* result */ Double, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntl")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def fcntl_setfd(
+  inline def fcntl_setfd(
     fd: Double,
     cmd: setfd,
     arg: Double,
     callback: js.Function2[/* err */ ErrnoException | Null, /* result */ Double, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntl")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], arg.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def fcntl_setfd(
+  inline def fcntl_setfd(
     fd: Double,
     cmd: setfd,
     callback: js.Function2[/* err */ ErrnoException | Null, /* result */ Double, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntl")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def fcntl_setlk(
+  inline def fcntl_setlk(
     fd: Double,
     cmd: setlk,
     arg: Double,
     callback: js.Function2[/* err */ ErrnoException | Null, /* result */ Double, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntl")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], arg.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def fcntl_setlk(
+  inline def fcntl_setlk(
     fd: Double,
     cmd: setlk,
     callback: js.Function2[/* err */ ErrnoException | Null, /* result */ Double, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntl")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def fcntl_setlkw(
+  inline def fcntl_setlkw(
     fd: Double,
     cmd: setlkw,
     arg: Double,
     callback: js.Function2[/* err */ ErrnoException | Null, /* result */ Double, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntl")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], arg.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def fcntl_setlkw(
+  inline def fcntl_setlkw(
     fd: Double,
     cmd: setlkw,
     callback: js.Function2[/* err */ ErrnoException | Null, /* result */ Double, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntl")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def flock(fd: Double, flags: Double, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flock")(fd.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def flock(fd: Double, flags: Double, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flock")(fd.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def flockSync(fd: Double, flags: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flockSync")(fd.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def flockSync(fd: Double, flags: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flockSync")(fd.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def flockSync_ex(fd: Double, flags: ex): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flockSync")(fd.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def flockSync_ex(fd: Double, flags: ex): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flockSync")(fd.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def flockSync_exnb(fd: Double, flags: exnb): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flockSync")(fd.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def flockSync_exnb(fd: Double, flags: exnb): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flockSync")(fd.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def flockSync_sh(fd: Double, flags: sh): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flockSync")(fd.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def flockSync_sh(fd: Double, flags: sh): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flockSync")(fd.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def flockSync_shnb(fd: Double, flags: shnb): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flockSync")(fd.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def flockSync_shnb(fd: Double, flags: shnb): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flockSync")(fd.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def flockSync_un(fd: Double, flags: un): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flockSync")(fd.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def flockSync_un(fd: Double, flags: un): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flockSync")(fd.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def flock_ex(fd: Double, flags: ex, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flock")(fd.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def flock_ex(fd: Double, flags: ex, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flock")(fd.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def flock_exnb(fd: Double, flags: exnb, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flock")(fd.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def flock_exnb(fd: Double, flags: exnb, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flock")(fd.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def flock_sh(fd: Double, flags: sh, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flock")(fd.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def flock_sh(fd: Double, flags: sh, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flock")(fd.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def flock_shnb(fd: Double, flags: shnb, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flock")(fd.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def flock_shnb(fd: Double, flags: shnb, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flock")(fd.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def flock_un(fd: Double, flags: un, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flock")(fd.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def flock_un(fd: Double, flags: un, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flock")(fd.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def seek(
+  inline def seek(
     fd: Double,
     offset: Double,
     whence: Double,
     callback: js.Function2[/* err */ ErrnoException | Null, /* currFilePos */ Double, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("seek")(fd.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], whence.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def seekSync(fd: Double, offset: Double, whence: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("seekSync")(fd.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], whence.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def seekSync(fd: Double, offset: Double, whence: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("seekSync")(fd.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], whence.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def statVFS(): StatFVS = ^.asInstanceOf[js.Dynamic].applyDynamic("statVFS")().asInstanceOf[StatFVS]
-  @scala.inline
-  def statVFS(callback: js.Function2[/* err */ ErrnoException | Null, /* stat */ StatFVS, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("statVFS")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def statVFS(path: String): StatFVS = ^.asInstanceOf[js.Dynamic].applyDynamic("statVFS")(path.asInstanceOf[js.Any]).asInstanceOf[StatFVS]
-  @scala.inline
-  def statVFS(path: String, callback: js.Function2[/* err */ ErrnoException | Null, /* stat */ StatFVS, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("statVFS")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def statVFS(): StatFVS = ^.asInstanceOf[js.Dynamic].applyDynamic("statVFS")().asInstanceOf[StatFVS]
+  inline def statVFS(callback: js.Function2[/* err */ ErrnoException | Null, /* stat */ StatFVS, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("statVFS")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def statVFS(path: String): StatFVS = ^.asInstanceOf[js.Dynamic].applyDynamic("statVFS")(path.asInstanceOf[js.Any]).asInstanceOf[StatFVS]
+  inline def statVFS(path: String, callback: js.Function2[/* err */ ErrnoException | Null, /* stat */ StatFVS, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("statVFS")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait StatFVS extends StObject {
     
@@ -348,8 +306,7 @@ object mod {
   }
   object StatFVS {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       f_bavail: Double,
       f_bfree: Double,
       f_blocks: Double,
@@ -366,41 +323,29 @@ object mod {
       __obj.asInstanceOf[StatFVS]
     }
     
-    @scala.inline
-    implicit class StatFVSMutableBuilder[Self <: StatFVS] (val x: Self) extends AnyVal {
+    extension [Self <: StatFVS](x: Self) {
       
-      @scala.inline
-      def setF_bavail(value: Double): Self = StObject.set(x, "f_bavail", value.asInstanceOf[js.Any])
+      inline def setF_bavail(value: Double): Self = StObject.set(x, "f_bavail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setF_bfree(value: Double): Self = StObject.set(x, "f_bfree", value.asInstanceOf[js.Any])
+      inline def setF_bfree(value: Double): Self = StObject.set(x, "f_bfree", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setF_blocks(value: Double): Self = StObject.set(x, "f_blocks", value.asInstanceOf[js.Any])
+      inline def setF_blocks(value: Double): Self = StObject.set(x, "f_blocks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setF_bsize(value: Double): Self = StObject.set(x, "f_bsize", value.asInstanceOf[js.Any])
+      inline def setF_bsize(value: Double): Self = StObject.set(x, "f_bsize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setF_favail(value: Double): Self = StObject.set(x, "f_favail", value.asInstanceOf[js.Any])
+      inline def setF_favail(value: Double): Self = StObject.set(x, "f_favail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setF_ffree(value: Double): Self = StObject.set(x, "f_ffree", value.asInstanceOf[js.Any])
+      inline def setF_ffree(value: Double): Self = StObject.set(x, "f_ffree", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setF_files(value: Double): Self = StObject.set(x, "f_files", value.asInstanceOf[js.Any])
+      inline def setF_files(value: Double): Self = StObject.set(x, "f_files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setF_flag(value: Double): Self = StObject.set(x, "f_flag", value.asInstanceOf[js.Any])
+      inline def setF_flag(value: Double): Self = StObject.set(x, "f_flag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setF_frsize(value: Double): Self = StObject.set(x, "f_frsize", value.asInstanceOf[js.Any])
+      inline def setF_frsize(value: Double): Self = StObject.set(x, "f_frsize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setF_fsid(value: Double): Self = StObject.set(x, "f_fsid", value.asInstanceOf[js.Any])
+      inline def setF_fsid(value: Double): Self = StObject.set(x, "f_fsid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setF_namemax(value: Double): Self = StObject.set(x, "f_namemax", value.asInstanceOf[js.Any])
+      inline def setF_namemax(value: Double): Self = StObject.set(x, "f_namemax", value.asInstanceOf[js.Any])
     }
   }
 }

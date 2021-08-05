@@ -13,16 +13,13 @@ trait BindingEntry
 }
 object BindingEntry {
   
-  @scala.inline
-  def apply(ip: String): BindingEntry = {
+  inline def apply(ip: String): BindingEntry = {
     val __obj = js.Dynamic.literal(ip = ip.asInstanceOf[js.Any])
     __obj.asInstanceOf[BindingEntry]
   }
   
-  @scala.inline
-  implicit class BindingEntryMutableBuilder[Self <: BindingEntry] (val x: Self) extends AnyVal {
+  extension [Self <: BindingEntry](x: Self) {
     
-    @scala.inline
-    def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+    inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
   }
 }

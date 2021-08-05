@@ -13,16 +13,13 @@ trait UpdateGatewayRouteOutput extends StObject {
 }
 object UpdateGatewayRouteOutput {
   
-  @scala.inline
-  def apply(gatewayRoute: GatewayRouteData): UpdateGatewayRouteOutput = {
+  inline def apply(gatewayRoute: GatewayRouteData): UpdateGatewayRouteOutput = {
     val __obj = js.Dynamic.literal(gatewayRoute = gatewayRoute.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateGatewayRouteOutput]
   }
   
-  @scala.inline
-  implicit class UpdateGatewayRouteOutputMutableBuilder[Self <: UpdateGatewayRouteOutput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateGatewayRouteOutput](x: Self) {
     
-    @scala.inline
-    def setGatewayRoute(value: GatewayRouteData): Self = StObject.set(x, "gatewayRoute", value.asInstanceOf[js.Any])
+    inline def setGatewayRoute(value: GatewayRouteData): Self = StObject.set(x, "gatewayRoute", value.asInstanceOf[js.Any])
   }
 }

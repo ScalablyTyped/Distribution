@@ -24,8 +24,7 @@ object mod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def createContext(options: IDropContextOptions): Instantiable1[/* options */ IDropOptions, Drop] = ^.asInstanceOf[js.Dynamic].applyDynamic("createContext")(options.asInstanceOf[js.Any]).asInstanceOf[Instantiable1[/* options */ IDropOptions, Drop]]
+  inline def createContext(options: IDropContextOptions): Instantiable1[/* options */ IDropOptions, Drop] = ^.asInstanceOf[js.Dynamic].applyDynamic("createContext")(options.asInstanceOf[js.Any]).asInstanceOf[Instantiable1[/* options */ IDropOptions, Drop]]
   
   // global Drop constructor
   @js.native
@@ -70,26 +69,20 @@ object mod {
   }
   object IDropContextOptions {
     
-    @scala.inline
-    def apply(): IDropContextOptions = {
+    inline def apply(): IDropContextOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDropContextOptions]
     }
     
-    @scala.inline
-    implicit class IDropContextOptionsMutableBuilder[Self <: IDropContextOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IDropContextOptions](x: Self) {
       
-      @scala.inline
-      def setClassPrefix(value: String): Self = StObject.set(x, "classPrefix", value.asInstanceOf[js.Any])
+      inline def setClassPrefix(value: String): Self = StObject.set(x, "classPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassPrefixUndefined: Self = StObject.set(x, "classPrefix", js.undefined)
+      inline def setClassPrefixUndefined: Self = StObject.set(x, "classPrefix", js.undefined)
       
-      @scala.inline
-      def setDefaults(value: IDropOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+      inline def setDefaults(value: IDropOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
+      inline def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
     }
   }
   
@@ -129,113 +122,78 @@ object mod {
   }
   object IDropOptions {
     
-    @scala.inline
-    def apply(): IDropOptions = {
+    inline def apply(): IDropOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDropOptions]
     }
     
-    @scala.inline
-    implicit class IDropOptionsMutableBuilder[Self <: IDropOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IDropOptions](x: Self) {
       
-      @scala.inline
-      def setBeforeClose(value: (/* event */ Event, /* drop */ Drop) => Boolean): Self = StObject.set(x, "beforeClose", js.Any.fromFunction2(value))
+      inline def setBeforeClose(value: (/* event */ Event, /* drop */ Drop) => Boolean): Self = StObject.set(x, "beforeClose", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBeforeCloseUndefined: Self = StObject.set(x, "beforeClose", js.undefined)
+      inline def setBeforeCloseUndefined: Self = StObject.set(x, "beforeClose", js.undefined)
       
-      @scala.inline
-      def setBlurDelay(value: Double): Self = StObject.set(x, "blurDelay", value.asInstanceOf[js.Any])
+      inline def setBlurDelay(value: Double): Self = StObject.set(x, "blurDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlurDelayUndefined: Self = StObject.set(x, "blurDelay", js.undefined)
+      inline def setBlurDelayUndefined: Self = StObject.set(x, "blurDelay", js.undefined)
       
-      @scala.inline
-      def setClasses(value: String): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+      inline def setClasses(value: String): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+      inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
       
-      @scala.inline
-      def setCloseDelay(value: Double): Self = StObject.set(x, "closeDelay", value.asInstanceOf[js.Any])
+      inline def setCloseDelay(value: Double): Self = StObject.set(x, "closeDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseDelayUndefined: Self = StObject.set(x, "closeDelay", js.undefined)
+      inline def setCloseDelayUndefined: Self = StObject.set(x, "closeDelay", js.undefined)
       
-      @scala.inline
-      def setConstrainToScrollParent(value: Boolean): Self = StObject.set(x, "constrainToScrollParent", value.asInstanceOf[js.Any])
+      inline def setConstrainToScrollParent(value: Boolean): Self = StObject.set(x, "constrainToScrollParent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConstrainToScrollParentUndefined: Self = StObject.set(x, "constrainToScrollParent", js.undefined)
+      inline def setConstrainToScrollParentUndefined: Self = StObject.set(x, "constrainToScrollParent", js.undefined)
       
-      @scala.inline
-      def setConstrainToWindow(value: Boolean): Self = StObject.set(x, "constrainToWindow", value.asInstanceOf[js.Any])
+      inline def setConstrainToWindow(value: Boolean): Self = StObject.set(x, "constrainToWindow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConstrainToWindowUndefined: Self = StObject.set(x, "constrainToWindow", js.undefined)
+      inline def setConstrainToWindowUndefined: Self = StObject.set(x, "constrainToWindow", js.undefined)
       
-      @scala.inline
-      def setContent(value: Element | String | (js.Function1[js.UndefOr[Drop], Element | String])): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: Element | String | (js.Function1[js.UndefOr[Drop], Element | String])): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentFunction1(value: js.UndefOr[Drop] => Element | String): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
+      inline def setContentFunction1(value: js.UndefOr[Drop] => Element | String): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setFocusDelay(value: Double): Self = StObject.set(x, "focusDelay", value.asInstanceOf[js.Any])
+      inline def setFocusDelay(value: Double): Self = StObject.set(x, "focusDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusDelayUndefined: Self = StObject.set(x, "focusDelay", js.undefined)
+      inline def setFocusDelayUndefined: Self = StObject.set(x, "focusDelay", js.undefined)
       
-      @scala.inline
-      def setHoverCloseDelay(value: Double): Self = StObject.set(x, "hoverCloseDelay", value.asInstanceOf[js.Any])
+      inline def setHoverCloseDelay(value: Double): Self = StObject.set(x, "hoverCloseDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoverCloseDelayUndefined: Self = StObject.set(x, "hoverCloseDelay", js.undefined)
+      inline def setHoverCloseDelayUndefined: Self = StObject.set(x, "hoverCloseDelay", js.undefined)
       
-      @scala.inline
-      def setHoverOpenDelay(value: Double): Self = StObject.set(x, "hoverOpenDelay", value.asInstanceOf[js.Any])
+      inline def setHoverOpenDelay(value: Double): Self = StObject.set(x, "hoverOpenDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoverOpenDelayUndefined: Self = StObject.set(x, "hoverOpenDelay", js.undefined)
+      inline def setHoverOpenDelayUndefined: Self = StObject.set(x, "hoverOpenDelay", js.undefined)
       
-      @scala.inline
-      def setOpenDelay(value: Double): Self = StObject.set(x, "openDelay", value.asInstanceOf[js.Any])
+      inline def setOpenDelay(value: Double): Self = StObject.set(x, "openDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenDelayUndefined: Self = StObject.set(x, "openDelay", js.undefined)
+      inline def setOpenDelayUndefined: Self = StObject.set(x, "openDelay", js.undefined)
       
-      @scala.inline
-      def setOpenOn(value: String): Self = StObject.set(x, "openOn", value.asInstanceOf[js.Any])
+      inline def setOpenOn(value: String): Self = StObject.set(x, "openOn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenOnUndefined: Self = StObject.set(x, "openOn", js.undefined)
+      inline def setOpenOnUndefined: Self = StObject.set(x, "openOn", js.undefined)
       
-      @scala.inline
-      def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setRemove(value: Boolean): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+      inline def setRemove(value: Boolean): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+      inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
       
-      @scala.inline
-      def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      @scala.inline
-      def setTetherOptions(value: ITetherOptions): Self = StObject.set(x, "tetherOptions", value.asInstanceOf[js.Any])
+      inline def setTetherOptions(value: ITetherOptions): Self = StObject.set(x, "tetherOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTetherOptionsUndefined: Self = StObject.set(x, "tetherOptions", js.undefined)
+      inline def setTetherOptionsUndefined: Self = StObject.set(x, "tetherOptions", js.undefined)
     }
   }
 }

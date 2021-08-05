@@ -10,8 +10,7 @@ trait DataRequest
      with IDataRequest
 object DataRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     data: DataPackage,
     deadline: Date,
     failWithDisplayText: String => Unit,

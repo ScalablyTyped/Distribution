@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SlideFromTypes extends StObject
 object SlideFromTypes {
   
-  @scala.inline
-  def bottom: typings.reactNativeModals.reactNativeModalsStrings.bottom = "bottom".asInstanceOf[typings.reactNativeModals.reactNativeModalsStrings.bottom]
+  inline def bottom: typings.reactNativeModals.reactNativeModalsStrings.bottom = "bottom".asInstanceOf[typings.reactNativeModals.reactNativeModalsStrings.bottom]
   
-  @scala.inline
-  def left: typings.reactNativeModals.reactNativeModalsStrings.left = "left".asInstanceOf[typings.reactNativeModals.reactNativeModalsStrings.left]
+  inline def left: typings.reactNativeModals.reactNativeModalsStrings.left = "left".asInstanceOf[typings.reactNativeModals.reactNativeModalsStrings.left]
   
-  @scala.inline
-  def right: typings.reactNativeModals.reactNativeModalsStrings.right = "right".asInstanceOf[typings.reactNativeModals.reactNativeModalsStrings.right]
+  inline def right: typings.reactNativeModals.reactNativeModalsStrings.right = "right".asInstanceOf[typings.reactNativeModals.reactNativeModalsStrings.right]
   
-  @scala.inline
-  def top: typings.reactNativeModals.reactNativeModalsStrings.top = "top".asInstanceOf[typings.reactNativeModals.reactNativeModalsStrings.top]
+  inline def top: typings.reactNativeModals.reactNativeModalsStrings.top = "top".asInstanceOf[typings.reactNativeModals.reactNativeModalsStrings.top]
 }

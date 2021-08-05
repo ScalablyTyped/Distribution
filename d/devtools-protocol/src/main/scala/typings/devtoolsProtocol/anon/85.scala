@@ -13,22 +13,17 @@ trait `85` extends StObject {
 }
 object `85` {
   
-  @scala.inline
-  def apply(paramsType: js.Array[SetNavigatorOverridesRequest], returnType: Unit): `85` = {
+  inline def apply(paramsType: js.Array[SetNavigatorOverridesRequest], returnType: Unit): `85` = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[`85`]
   }
   
-  @scala.inline
-  implicit class `85MutableBuilder`[Self <: `85`] (val x: Self) extends AnyVal {
+  extension [Self <: `85`](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[SetNavigatorOverridesRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[SetNavigatorOverridesRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: SetNavigatorOverridesRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: SetNavigatorOverridesRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

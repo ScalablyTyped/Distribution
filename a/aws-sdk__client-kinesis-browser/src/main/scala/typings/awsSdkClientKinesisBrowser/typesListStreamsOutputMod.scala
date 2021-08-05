@@ -30,26 +30,20 @@ object typesListStreamsOutputMod {
   }
   object ListStreamsOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata, HasMoreStreams: Boolean, StreamNames: js.Array[String]): ListStreamsOutput = {
+    inline def apply($metadata: ResponseMetadata, HasMoreStreams: Boolean, StreamNames: js.Array[String]): ListStreamsOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], HasMoreStreams = HasMoreStreams.asInstanceOf[js.Any], StreamNames = StreamNames.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListStreamsOutput]
     }
     
-    @scala.inline
-    implicit class ListStreamsOutputMutableBuilder[Self <: ListStreamsOutput] (val x: Self) extends AnyVal {
+    extension [Self <: ListStreamsOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasMoreStreams(value: Boolean): Self = StObject.set(x, "HasMoreStreams", value.asInstanceOf[js.Any])
+      inline def setHasMoreStreams(value: Boolean): Self = StObject.set(x, "HasMoreStreams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamNames(value: js.Array[String]): Self = StObject.set(x, "StreamNames", value.asInstanceOf[js.Any])
+      inline def setStreamNames(value: js.Array[String]): Self = StObject.set(x, "StreamNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamNamesVarargs(value: String*): Self = StObject.set(x, "StreamNames", js.Array(value :_*))
+      inline def setStreamNamesVarargs(value: String*): Self = StObject.set(x, "StreamNames", js.Array(value :_*))
     }
   }
 }

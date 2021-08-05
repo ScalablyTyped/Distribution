@@ -14,8 +14,7 @@ trait InMemoryRandomAccessStream
 }
 object InMemoryRandomAccessStream {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canRead: Boolean,
     canWrite: Boolean,
     cloneStream: () => IRandomAccessStream,
@@ -34,10 +33,8 @@ object InMemoryRandomAccessStream {
     __obj.asInstanceOf[InMemoryRandomAccessStream]
   }
   
-  @scala.inline
-  implicit class InMemoryRandomAccessStreamMutableBuilder[Self <: InMemoryRandomAccessStream] (val x: Self) extends AnyVal {
+  extension [Self <: InMemoryRandomAccessStream](x: Self) {
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
   }
 }

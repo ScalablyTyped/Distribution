@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object diffMod {
   
-  @scala.inline
-  def apply(left: VTree, right: VTree): js.Array[VPatch] = (^.asInstanceOf[js.Dynamic].apply(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[js.Array[VPatch]]
+  inline def apply(left: VTree, right: VTree): js.Array[VPatch] = (^.asInstanceOf[js.Dynamic].apply(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[js.Array[VPatch]]
   
   @JSImport("virtual-dom/diff", JSImport.Namespace)
   @js.native

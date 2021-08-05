@@ -19,16 +19,12 @@ object LineSpacingMode {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def FIX: `3` = 3.asInstanceOf[`3`]
+    inline def FIX: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def LEADING: `2` = 2.asInstanceOf[`2`]
+    inline def LEADING: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def MINIMUM: `1` = 1.asInstanceOf[`1`]
+    inline def MINIMUM: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def PROP: `0` = 0.asInstanceOf[`0`]
+    inline def PROP: `0` = 0.asInstanceOf[`0`]
   }
 }

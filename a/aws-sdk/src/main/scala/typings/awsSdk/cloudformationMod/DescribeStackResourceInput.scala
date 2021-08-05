@@ -18,19 +18,15 @@ trait DescribeStackResourceInput extends StObject {
 }
 object DescribeStackResourceInput {
   
-  @scala.inline
-  def apply(LogicalResourceId: LogicalResourceId, StackName: StackName): DescribeStackResourceInput = {
+  inline def apply(LogicalResourceId: LogicalResourceId, StackName: StackName): DescribeStackResourceInput = {
     val __obj = js.Dynamic.literal(LogicalResourceId = LogicalResourceId.asInstanceOf[js.Any], StackName = StackName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeStackResourceInput]
   }
   
-  @scala.inline
-  implicit class DescribeStackResourceInputMutableBuilder[Self <: DescribeStackResourceInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeStackResourceInput](x: Self) {
     
-    @scala.inline
-    def setLogicalResourceId(value: LogicalResourceId): Self = StObject.set(x, "LogicalResourceId", value.asInstanceOf[js.Any])
+    inline def setLogicalResourceId(value: LogicalResourceId): Self = StObject.set(x, "LogicalResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackName(value: StackName): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
+    inline def setStackName(value: StackName): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
   }
 }

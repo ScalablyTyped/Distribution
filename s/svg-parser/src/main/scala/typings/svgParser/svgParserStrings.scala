@@ -8,16 +8,13 @@ object svgParserStrings {
   
   @js.native
   sealed trait element extends StObject
-  @scala.inline
-  def element: element = "element".asInstanceOf[element]
+  inline def element: element = "element".asInstanceOf[element]
   
   @js.native
   sealed trait root extends StObject
-  @scala.inline
-  def root: root = "root".asInstanceOf[root]
+  inline def root: root = "root".asInstanceOf[root]
   
   @js.native
   sealed trait text extends StObject
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
+  inline def text: text = "text".asInstanceOf[text]
 }

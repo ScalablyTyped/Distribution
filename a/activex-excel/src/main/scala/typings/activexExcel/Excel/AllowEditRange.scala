@@ -11,7 +11,7 @@ trait AllowEditRange extends StObject {
   
   def Delete(): Unit = js.native
   
-  @JSName("Excel.AllowEditRange_typekey")
+  /* private */ @JSName("Excel.AllowEditRange_typekey")
   var ExcelDotAllowEditRange_typekey: AllowEditRange = js.native
   
   def Range(Address: String): typings.activexExcel.Excel.Range = js.native

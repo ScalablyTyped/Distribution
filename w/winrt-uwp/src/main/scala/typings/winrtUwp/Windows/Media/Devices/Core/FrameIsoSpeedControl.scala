@@ -15,19 +15,15 @@ trait FrameIsoSpeedControl extends StObject {
 }
 object FrameIsoSpeedControl {
   
-  @scala.inline
-  def apply(auto: Boolean, value: Double): FrameIsoSpeedControl = {
+  inline def apply(auto: Boolean, value: Double): FrameIsoSpeedControl = {
     val __obj = js.Dynamic.literal(auto = auto.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[FrameIsoSpeedControl]
   }
   
-  @scala.inline
-  implicit class FrameIsoSpeedControlMutableBuilder[Self <: FrameIsoSpeedControl] (val x: Self) extends AnyVal {
+  extension [Self <: FrameIsoSpeedControl](x: Self) {
     
-    @scala.inline
-    def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
+    inline def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

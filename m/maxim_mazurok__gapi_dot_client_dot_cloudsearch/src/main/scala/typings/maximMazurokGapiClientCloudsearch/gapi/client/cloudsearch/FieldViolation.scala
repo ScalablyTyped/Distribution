@@ -14,25 +14,19 @@ trait FieldViolation extends StObject {
 }
 object FieldViolation {
   
-  @scala.inline
-  def apply(): FieldViolation = {
+  inline def apply(): FieldViolation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FieldViolation]
   }
   
-  @scala.inline
-  implicit class FieldViolationMutableBuilder[Self <: FieldViolation] (val x: Self) extends AnyVal {
+  extension [Self <: FieldViolation](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
   }
 }

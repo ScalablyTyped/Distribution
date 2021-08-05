@@ -14,22 +14,17 @@ trait LongShort extends StObject {
 }
 object LongShort {
   
-  @scala.inline
-  def apply(long: RecordDecimalFormatNumLDM1000, short: RecordDecimalFormatNumLDM1000, standard: String): LongShort = {
+  inline def apply(long: RecordDecimalFormatNumLDM1000, short: RecordDecimalFormatNumLDM1000, standard: String): LongShort = {
     val __obj = js.Dynamic.literal(long = long.asInstanceOf[js.Any], short = short.asInstanceOf[js.Any], standard = standard.asInstanceOf[js.Any])
     __obj.asInstanceOf[LongShort]
   }
   
-  @scala.inline
-  implicit class LongShortMutableBuilder[Self <: LongShort] (val x: Self) extends AnyVal {
+  extension [Self <: LongShort](x: Self) {
     
-    @scala.inline
-    def setLong(value: RecordDecimalFormatNumLDM1000): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
+    inline def setLong(value: RecordDecimalFormatNumLDM1000): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShort(value: RecordDecimalFormatNumLDM1000): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
+    inline def setShort(value: RecordDecimalFormatNumLDM1000): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandard(value: String): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
+    inline def setStandard(value: String): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
   }
 }

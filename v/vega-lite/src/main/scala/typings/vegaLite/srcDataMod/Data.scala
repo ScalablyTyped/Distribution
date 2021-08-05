@@ -12,38 +12,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Data extends StObject
 object Data {
   
-  @scala.inline
-  def GraticuleGenerator(graticule: `true` | GraticuleParams): typings.vegaLite.srcDataMod.GraticuleGenerator = {
+  inline def GraticuleGenerator(graticule: `true` | GraticuleParams): typings.vegaLite.srcDataMod.GraticuleGenerator = {
     val __obj = js.Dynamic.literal(graticule = graticule.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.vegaLite.srcDataMod.GraticuleGenerator]
   }
   
-  @scala.inline
-  def InlineData(values: InlineDataset): typings.vegaLite.srcDataMod.InlineData = {
+  inline def InlineData(values: InlineDataset): typings.vegaLite.srcDataMod.InlineData = {
     val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.vegaLite.srcDataMod.InlineData]
   }
   
-  @scala.inline
-  def NamedData(name: String): typings.vegaLite.srcDataMod.NamedData = {
+  inline def NamedData(name: String): typings.vegaLite.srcDataMod.NamedData = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.vegaLite.srcDataMod.NamedData]
   }
   
-  @scala.inline
-  def SequenceGenerator(sequence: SequenceParams): typings.vegaLite.srcDataMod.SequenceGenerator = {
+  inline def SequenceGenerator(sequence: SequenceParams): typings.vegaLite.srcDataMod.SequenceGenerator = {
     val __obj = js.Dynamic.literal(sequence = sequence.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.vegaLite.srcDataMod.SequenceGenerator]
   }
   
-  @scala.inline
-  def SphereGenerator(sphere: `true` | js.Object): typings.vegaLite.srcDataMod.SphereGenerator = {
+  inline def SphereGenerator(sphere: `true` | js.Object): typings.vegaLite.srcDataMod.SphereGenerator = {
     val __obj = js.Dynamic.literal(sphere = sphere.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.vegaLite.srcDataMod.SphereGenerator]
   }
   
-  @scala.inline
-  def UrlData(url: String): typings.vegaLite.srcDataMod.UrlData = {
+  inline def UrlData(url: String): typings.vegaLite.srcDataMod.UrlData = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.vegaLite.srcDataMod.UrlData]
   }

@@ -14,18 +14,12 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(algorithm: KeccakAlgorithm): Keccak = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(algorithm.asInstanceOf[js.Any]).asInstanceOf[Keccak]
-  @scala.inline
-  def default(algorithm: KeccakAlgorithm, options: TransformOptions): Keccak = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(algorithm.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Keccak]
-  @scala.inline
-  def default(algorithm: Sha3Algorithm): Keccak = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(algorithm.asInstanceOf[js.Any]).asInstanceOf[Keccak]
-  @scala.inline
-  def default(algorithm: Sha3Algorithm, options: TransformOptions): Keccak = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(algorithm.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Keccak]
-  @scala.inline
-  def default(algorithm: ShakeAlgorithm): Shake = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(algorithm.asInstanceOf[js.Any]).asInstanceOf[Shake]
-  @scala.inline
-  def default(algorithm: ShakeAlgorithm, options: TransformOptions): Shake = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(algorithm.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Shake]
+  inline def default(algorithm: KeccakAlgorithm): Keccak = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(algorithm.asInstanceOf[js.Any]).asInstanceOf[Keccak]
+  inline def default(algorithm: KeccakAlgorithm, options: TransformOptions): Keccak = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(algorithm.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Keccak]
+  inline def default(algorithm: Sha3Algorithm): Keccak = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(algorithm.asInstanceOf[js.Any]).asInstanceOf[Keccak]
+  inline def default(algorithm: Sha3Algorithm, options: TransformOptions): Keccak = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(algorithm.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Keccak]
+  inline def default(algorithm: ShakeAlgorithm): Shake = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(algorithm.asInstanceOf[js.Any]).asInstanceOf[Shake]
+  inline def default(algorithm: ShakeAlgorithm, options: TransformOptions): Shake = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(algorithm.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Shake]
   
   @JSImport("keccak", "Keccak")
   @js.native
@@ -78,17 +72,13 @@ object mod {
   trait KeccakAlgorithm extends StObject
   object KeccakAlgorithm {
     
-    @scala.inline
-    def keccak224: typings.keccak.keccakStrings.keccak224 = "keccak224".asInstanceOf[typings.keccak.keccakStrings.keccak224]
+    inline def keccak224: typings.keccak.keccakStrings.keccak224 = "keccak224".asInstanceOf[typings.keccak.keccakStrings.keccak224]
     
-    @scala.inline
-    def keccak256: typings.keccak.keccakStrings.keccak256 = "keccak256".asInstanceOf[typings.keccak.keccakStrings.keccak256]
+    inline def keccak256: typings.keccak.keccakStrings.keccak256 = "keccak256".asInstanceOf[typings.keccak.keccakStrings.keccak256]
     
-    @scala.inline
-    def keccak384: typings.keccak.keccakStrings.keccak384 = "keccak384".asInstanceOf[typings.keccak.keccakStrings.keccak384]
+    inline def keccak384: typings.keccak.keccakStrings.keccak384 = "keccak384".asInstanceOf[typings.keccak.keccakStrings.keccak384]
     
-    @scala.inline
-    def keccak512: typings.keccak.keccakStrings.keccak512 = "keccak512".asInstanceOf[typings.keccak.keccakStrings.keccak512]
+    inline def keccak512: typings.keccak.keccakStrings.keccak512 = "keccak512".asInstanceOf[typings.keccak.keccakStrings.keccak512]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -100,17 +90,13 @@ object mod {
   trait Sha3Algorithm extends StObject
   object Sha3Algorithm {
     
-    @scala.inline
-    def `sha3-224`: typings.keccak.keccakStrings.`sha3-224` = "sha3-224".asInstanceOf[typings.keccak.keccakStrings.`sha3-224`]
+    inline def `sha3-224`: typings.keccak.keccakStrings.`sha3-224` = "sha3-224".asInstanceOf[typings.keccak.keccakStrings.`sha3-224`]
     
-    @scala.inline
-    def `sha3-256`: typings.keccak.keccakStrings.`sha3-256` = "sha3-256".asInstanceOf[typings.keccak.keccakStrings.`sha3-256`]
+    inline def `sha3-256`: typings.keccak.keccakStrings.`sha3-256` = "sha3-256".asInstanceOf[typings.keccak.keccakStrings.`sha3-256`]
     
-    @scala.inline
-    def `sha3-384`: typings.keccak.keccakStrings.`sha3-384` = "sha3-384".asInstanceOf[typings.keccak.keccakStrings.`sha3-384`]
+    inline def `sha3-384`: typings.keccak.keccakStrings.`sha3-384` = "sha3-384".asInstanceOf[typings.keccak.keccakStrings.`sha3-384`]
     
-    @scala.inline
-    def `sha3-512`: typings.keccak.keccakStrings.`sha3-512` = "sha3-512".asInstanceOf[typings.keccak.keccakStrings.`sha3-512`]
+    inline def `sha3-512`: typings.keccak.keccakStrings.`sha3-512` = "sha3-512".asInstanceOf[typings.keccak.keccakStrings.`sha3-512`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -120,10 +106,8 @@ object mod {
   trait ShakeAlgorithm extends StObject
   object ShakeAlgorithm {
     
-    @scala.inline
-    def shake128: typings.keccak.keccakStrings.shake128 = "shake128".asInstanceOf[typings.keccak.keccakStrings.shake128]
+    inline def shake128: typings.keccak.keccakStrings.shake128 = "shake128".asInstanceOf[typings.keccak.keccakStrings.shake128]
     
-    @scala.inline
-    def shake256: typings.keccak.keccakStrings.shake256 = "shake256".asInstanceOf[typings.keccak.keccakStrings.shake256]
+    inline def shake256: typings.keccak.keccakStrings.shake256 = "shake256".asInstanceOf[typings.keccak.keccakStrings.shake256]
   }
 }

@@ -45,37 +45,27 @@ trait SchemaUpdateJobRequest extends StObject {
 }
 object SchemaUpdateJobRequest {
   
-  @scala.inline
-  def apply(): SchemaUpdateJobRequest = {
+  inline def apply(): SchemaUpdateJobRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUpdateJobRequest]
   }
   
-  @scala.inline
-  implicit class SchemaUpdateJobRequestMutableBuilder[Self <: SchemaUpdateJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUpdateJobRequest](x: Self) {
     
-    @scala.inline
-    def setDisableStreetAddressResolution(value: Boolean): Self = StObject.set(x, "disableStreetAddressResolution", value.asInstanceOf[js.Any])
+    inline def setDisableStreetAddressResolution(value: Boolean): Self = StObject.set(x, "disableStreetAddressResolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableStreetAddressResolutionUndefined: Self = StObject.set(x, "disableStreetAddressResolution", js.undefined)
+    inline def setDisableStreetAddressResolutionUndefined: Self = StObject.set(x, "disableStreetAddressResolution", js.undefined)
     
-    @scala.inline
-    def setJob(value: SchemaJob): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
+    inline def setJob(value: SchemaJob): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobUndefined: Self = StObject.set(x, "job", js.undefined)
+    inline def setJobUndefined: Self = StObject.set(x, "job", js.undefined)
     
-    @scala.inline
-    def setProcessingOptions(value: SchemaJobProcessingOptions): Self = StObject.set(x, "processingOptions", value.asInstanceOf[js.Any])
+    inline def setProcessingOptions(value: SchemaJobProcessingOptions): Self = StObject.set(x, "processingOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessingOptionsUndefined: Self = StObject.set(x, "processingOptions", js.undefined)
+    inline def setProcessingOptionsUndefined: Self = StObject.set(x, "processingOptions", js.undefined)
     
-    @scala.inline
-    def setUpdateJobFields(value: String): Self = StObject.set(x, "updateJobFields", value.asInstanceOf[js.Any])
+    inline def setUpdateJobFields(value: String): Self = StObject.set(x, "updateJobFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateJobFieldsUndefined: Self = StObject.set(x, "updateJobFields", js.undefined)
+    inline def setUpdateJobFieldsUndefined: Self = StObject.set(x, "updateJobFields", js.undefined)
   }
 }

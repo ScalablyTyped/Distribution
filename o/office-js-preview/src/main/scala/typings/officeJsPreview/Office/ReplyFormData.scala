@@ -33,40 +33,29 @@ trait ReplyFormData extends StObject {
 }
 object ReplyFormData {
   
-  @scala.inline
-  def apply(): ReplyFormData = {
+  inline def apply(): ReplyFormData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReplyFormData]
   }
   
-  @scala.inline
-  implicit class ReplyFormDataMutableBuilder[Self <: ReplyFormData] (val x: Self) extends AnyVal {
+  extension [Self <: ReplyFormData](x: Self) {
     
-    @scala.inline
-    def setAttachments(value: js.Array[ReplyFormAttachment]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
+    inline def setAttachments(value: js.Array[ReplyFormAttachment]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
+    inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
-    @scala.inline
-    def setAttachmentsVarargs(value: ReplyFormAttachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+    inline def setAttachmentsVarargs(value: ReplyFormAttachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
     
-    @scala.inline
-    def setCallback(value: /* asyncResult */ AsyncResult[js.Any] => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+    inline def setCallback(value: /* asyncResult */ AsyncResult[js.Any] => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
-    @scala.inline
-    def setHtmlBody(value: String): Self = StObject.set(x, "htmlBody", value.asInstanceOf[js.Any])
+    inline def setHtmlBody(value: String): Self = StObject.set(x, "htmlBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlBodyUndefined: Self = StObject.set(x, "htmlBody", js.undefined)
+    inline def setHtmlBodyUndefined: Self = StObject.set(x, "htmlBody", js.undefined)
     
-    @scala.inline
-    def setOptions(value: AsyncContextOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: AsyncContextOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }
 }

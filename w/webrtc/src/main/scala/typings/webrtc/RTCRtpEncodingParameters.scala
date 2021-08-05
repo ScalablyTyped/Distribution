@@ -22,28 +22,21 @@ trait RTCRtpEncodingParameters extends StObject {
 }
 object RTCRtpEncodingParameters {
   
-  @scala.inline
-  def apply(rid: String): RTCRtpEncodingParameters = {
+  inline def apply(rid: String): RTCRtpEncodingParameters = {
     val __obj = js.Dynamic.literal(rid = rid.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCRtpEncodingParameters]
   }
   
-  @scala.inline
-  implicit class RTCRtpEncodingParametersMutableBuilder[Self <: RTCRtpEncodingParameters] (val x: Self) extends AnyVal {
+  extension [Self <: RTCRtpEncodingParameters](x: Self) {
     
-    @scala.inline
-    def setDtx(value: RTCDtxStatus): Self = StObject.set(x, "dtx", value.asInstanceOf[js.Any])
+    inline def setDtx(value: RTCDtxStatus): Self = StObject.set(x, "dtx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDtxUndefined: Self = StObject.set(x, "dtx", js.undefined)
+    inline def setDtxUndefined: Self = StObject.set(x, "dtx", js.undefined)
     
-    @scala.inline
-    def setRid(value: String): Self = StObject.set(x, "rid", value.asInstanceOf[js.Any])
+    inline def setRid(value: String): Self = StObject.set(x, "rid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleResolutionDownBy(value: Double): Self = StObject.set(x, "scaleResolutionDownBy", value.asInstanceOf[js.Any])
+    inline def setScaleResolutionDownBy(value: Double): Self = StObject.set(x, "scaleResolutionDownBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleResolutionDownByUndefined: Self = StObject.set(x, "scaleResolutionDownBy", js.undefined)
+    inline def setScaleResolutionDownByUndefined: Self = StObject.set(x, "scaleResolutionDownBy", js.undefined)
   }
 }

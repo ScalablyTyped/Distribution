@@ -18,25 +18,19 @@ trait Recommendation extends StObject {
 }
 object Recommendation {
   
-  @scala.inline
-  def apply(): Recommendation = {
+  inline def apply(): Recommendation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Recommendation]
   }
   
-  @scala.inline
-  implicit class RecommendationMutableBuilder[Self <: Recommendation] (val x: Self) extends AnyVal {
+  extension [Self <: Recommendation](x: Self) {
     
-    @scala.inline
-    def setText(value: NonEmptyString): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: NonEmptyString): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "Text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "Text", js.undefined)
     
-    @scala.inline
-    def setUrl(value: NonEmptyString): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: NonEmptyString): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
   }
 }

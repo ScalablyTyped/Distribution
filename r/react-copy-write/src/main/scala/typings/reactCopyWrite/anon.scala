@@ -24,8 +24,7 @@ object anon {
   }
   object Consumer {
     
-    @scala.inline
-    def apply[T /* <: js.Object */](
+    inline def apply[T /* <: js.Object */](
       Consumer: Instantiable0[typings.reactCopyWrite.mod.Consumer[T]],
       Provider: Instantiable0[Provider[T]],
       createSelector: T => AnyDeepMemberOfState[T],
@@ -35,20 +34,15 @@ object anon {
       __obj.asInstanceOf[Consumer[T]]
     }
     
-    @scala.inline
-    implicit class ConsumerMutableBuilder[Self <: Consumer[?], T /* <: js.Object */] (val x: Self & Consumer[T]) extends AnyVal {
+    extension [Self <: Consumer[?], T /* <: js.Object */](x: Self & Consumer[T]) {
       
-      @scala.inline
-      def setConsumer(value: Instantiable0[typings.reactCopyWrite.mod.Consumer[T]]): Self = StObject.set(x, "Consumer", value.asInstanceOf[js.Any])
+      inline def setConsumer(value: Instantiable0[typings.reactCopyWrite.mod.Consumer[T]]): Self = StObject.set(x, "Consumer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateSelector(value: T => AnyDeepMemberOfState[T]): Self = StObject.set(x, "createSelector", js.Any.fromFunction1(value))
+      inline def setCreateSelector(value: T => AnyDeepMemberOfState[T]): Self = StObject.set(x, "createSelector", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMutate(value: /* mutator */ MutateFn[T] => Unit): Self = StObject.set(x, "mutate", js.Any.fromFunction1(value))
+      inline def setMutate(value: /* mutator */ MutateFn[T] => Unit): Self = StObject.set(x, "mutate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setProvider(value: Instantiable0[Provider[T]]): Self = StObject.set(x, "Provider", value.asInstanceOf[js.Any])
+      inline def setProvider(value: Instantiable0[Provider[T]]): Self = StObject.set(x, "Provider", value.asInstanceOf[js.Any])
     }
   }
 }

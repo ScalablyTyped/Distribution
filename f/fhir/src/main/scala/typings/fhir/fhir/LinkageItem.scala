@@ -28,26 +28,20 @@ trait LinkageItem
 }
 object LinkageItem {
   
-  @scala.inline
-  def apply(resource: Reference, `type`: code): LinkageItem = {
+  inline def apply(resource: Reference, `type`: code): LinkageItem = {
     val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinkageItem]
   }
   
-  @scala.inline
-  implicit class LinkageItemMutableBuilder[Self <: LinkageItem] (val x: Self) extends AnyVal {
+  extension [Self <: LinkageItem](x: Self) {
     
-    @scala.inline
-    def setResource(value: Reference): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: Reference): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
+    inline def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
+    inline def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
   }
 }

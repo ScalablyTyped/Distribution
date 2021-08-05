@@ -105,23 +105,18 @@ object stringgeneratorMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(order: Double, prior: Double, words: Boolean): Options = {
+    inline def apply(order: Double, prior: Double, words: Boolean): Options = {
       val __obj = js.Dynamic.literal(order = order.asInstanceOf[js.Any], prior = prior.asInstanceOf[js.Any], words = words.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrior(value: Double): Self = StObject.set(x, "prior", value.asInstanceOf[js.Any])
+      inline def setPrior(value: Double): Self = StObject.set(x, "prior", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWords(value: Boolean): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
+      inline def setWords(value: Boolean): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
     }
   }
   
@@ -188,8 +183,7 @@ object stringgeneratorMod {
   }
   object StringGenerator {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _backoff: js.Array[String] => js.Array[String],
       _boundary: String,
       _data: StringDictionary[Events],
@@ -210,56 +204,39 @@ object stringgeneratorMod {
       __obj.asInstanceOf[StringGenerator]
     }
     
-    @scala.inline
-    implicit class StringGeneratorMutableBuilder[Self <: StringGenerator] (val x: Self) extends AnyVal {
+    extension [Self <: StringGenerator](x: Self) {
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGenerate(value: () => String): Self = StObject.set(x, "generate", js.Any.fromFunction0(value))
+      inline def setGenerate(value: () => String): Self = StObject.set(x, "generate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStats(value: () => String): Self = StObject.set(x, "getStats", js.Any.fromFunction0(value))
+      inline def setGetStats(value: () => String): Self = StObject.set(x, "getStats", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setObserve(value: String => Unit): Self = StObject.set(x, "observe", js.Any.fromFunction1(value))
+      inline def setObserve(value: String => Unit): Self = StObject.set(x, "observe", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_backoff(value: js.Array[String] => js.Array[String]): Self = StObject.set(x, "_backoff", js.Any.fromFunction1(value))
+      inline def set_backoff(value: js.Array[String] => js.Array[String]): Self = StObject.set(x, "_backoff", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_boundary(value: String): Self = StObject.set(x, "_boundary", value.asInstanceOf[js.Any])
+      inline def set_boundary(value: String): Self = StObject.set(x, "_boundary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_data(value: StringDictionary[Events]): Self = StObject.set(x, "_data", value.asInstanceOf[js.Any])
+      inline def set_data(value: StringDictionary[Events]): Self = StObject.set(x, "_data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_join(value: js.Array[String] => String): Self = StObject.set(x, "_join", js.Any.fromFunction1(value))
+      inline def set_join(value: js.Array[String] => String): Self = StObject.set(x, "_join", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_observeEvent(value: (js.Array[String], String) => Unit): Self = StObject.set(x, "_observeEvent", js.Any.fromFunction2(value))
+      inline def set_observeEvent(value: (js.Array[String], String) => Unit): Self = StObject.set(x, "_observeEvent", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def set_options(value: Options): Self = StObject.set(x, "_options", value.asInstanceOf[js.Any])
+      inline def set_options(value: Options): Self = StObject.set(x, "_options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_prefix(value: js.Array[String]): Self = StObject.set(x, "_prefix", value.asInstanceOf[js.Any])
+      inline def set_prefix(value: js.Array[String]): Self = StObject.set(x, "_prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_prefixVarargs(value: String*): Self = StObject.set(x, "_prefix", js.Array(value :_*))
+      inline def set_prefixVarargs(value: String*): Self = StObject.set(x, "_prefix", js.Array(value :_*))
       
-      @scala.inline
-      def set_priorValues(value: StringDictionary[Double]): Self = StObject.set(x, "_priorValues", value.asInstanceOf[js.Any])
+      inline def set_priorValues(value: StringDictionary[Double]): Self = StObject.set(x, "_priorValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_sample(value: js.Array[String] => String): Self = StObject.set(x, "_sample", js.Any.fromFunction1(value))
+      inline def set_sample(value: js.Array[String] => String): Self = StObject.set(x, "_sample", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_split(value: String => js.Array[String]): Self = StObject.set(x, "_split", js.Any.fromFunction1(value))
+      inline def set_split(value: String => js.Array[String]): Self = StObject.set(x, "_split", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_suffix(value: String): Self = StObject.set(x, "_suffix", value.asInstanceOf[js.Any])
+      inline def set_suffix(value: String): Self = StObject.set(x, "_suffix", value.asInstanceOf[js.Any])
     }
   }
 }

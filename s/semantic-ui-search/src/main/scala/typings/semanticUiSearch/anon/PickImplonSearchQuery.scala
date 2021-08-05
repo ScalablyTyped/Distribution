@@ -14,16 +14,13 @@ trait PickImplonSearchQuery extends StObject {
 }
 object PickImplonSearchQuery {
   
-  @scala.inline
-  def apply(onSearchQuery: js.ThisFunction1[/* this */ JQuery, /* query */ String, Unit]): PickImplonSearchQuery = {
+  inline def apply(onSearchQuery: js.ThisFunction1[/* this */ JQuery, /* query */ String, Unit]): PickImplonSearchQuery = {
     val __obj = js.Dynamic.literal(onSearchQuery = onSearchQuery.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonSearchQuery]
   }
   
-  @scala.inline
-  implicit class PickImplonSearchQueryMutableBuilder[Self <: PickImplonSearchQuery] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplonSearchQuery](x: Self) {
     
-    @scala.inline
-    def setOnSearchQuery(value: js.ThisFunction1[/* this */ JQuery, /* query */ String, Unit]): Self = StObject.set(x, "onSearchQuery", value.asInstanceOf[js.Any])
+    inline def setOnSearchQuery(value: js.ThisFunction1[/* this */ JQuery, /* query */ String, Unit]): Self = StObject.set(x, "onSearchQuery", value.asInstanceOf[js.Any])
   }
 }

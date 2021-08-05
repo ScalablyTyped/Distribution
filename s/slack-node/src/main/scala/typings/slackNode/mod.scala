@@ -71,59 +71,42 @@ object mod {
   }
   object WebhookOptions {
     
-    @scala.inline
-    def apply(): WebhookOptions = {
+    inline def apply(): WebhookOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WebhookOptions]
     }
     
-    @scala.inline
-    implicit class WebhookOptionsMutableBuilder[Self <: WebhookOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WebhookOptions](x: Self) {
       
-      @scala.inline
-      def setAttachments(value: js.Array[js.Any]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
+      inline def setAttachments(value: js.Array[js.Any]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
+      inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
       
-      @scala.inline
-      def setAttachmentsVarargs(value: js.Any*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+      inline def setAttachmentsVarargs(value: js.Any*): Self = StObject.set(x, "attachments", js.Array(value :_*))
       
-      @scala.inline
-      def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
+      inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
       
-      @scala.inline
-      def setIcon_emoji(value: String): Self = StObject.set(x, "icon_emoji", value.asInstanceOf[js.Any])
+      inline def setIcon_emoji(value: String): Self = StObject.set(x, "icon_emoji", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIcon_emojiUndefined: Self = StObject.set(x, "icon_emoji", js.undefined)
+      inline def setIcon_emojiUndefined: Self = StObject.set(x, "icon_emoji", js.undefined)
       
-      @scala.inline
-      def setLink_names(value: js.Any): Self = StObject.set(x, "link_names", value.asInstanceOf[js.Any])
+      inline def setLink_names(value: js.Any): Self = StObject.set(x, "link_names", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLink_namesUndefined: Self = StObject.set(x, "link_names", js.undefined)
+      inline def setLink_namesUndefined: Self = StObject.set(x, "link_names", js.undefined)
       
-      @scala.inline
-      def setResponse_type(value: String): Self = StObject.set(x, "response_type", value.asInstanceOf[js.Any])
+      inline def setResponse_type(value: String): Self = StObject.set(x, "response_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse_typeUndefined: Self = StObject.set(x, "response_type", js.undefined)
+      inline def setResponse_typeUndefined: Self = StObject.set(x, "response_type", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+      inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     }
   }
   
@@ -139,26 +122,20 @@ object mod {
   }
   object WebhookResponse {
     
-    @scala.inline
-    def apply(headers: js.Any, response: js.Any, status: fail | ok, statusCode: Double): WebhookResponse = {
+    inline def apply(headers: js.Any, response: js.Any, status: fail | ok, statusCode: Double): WebhookResponse = {
       val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebhookResponse]
     }
     
-    @scala.inline
-    implicit class WebhookResponseMutableBuilder[Self <: WebhookResponse] (val x: Self) extends AnyVal {
+    extension [Self <: WebhookResponse](x: Self) {
       
-      @scala.inline
-      def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse(value: js.Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: js.Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: fail | ok): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: fail | ok): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     }
   }
 }

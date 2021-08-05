@@ -22,8 +22,7 @@ trait ExecutionContextCreated extends StObject {
 }
 object ExecutionContextCreated {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ExecutionContextCreated: js.Symbol,
     ExecutionContextDestroyed: js.Symbol,
     FrameAttached: js.Symbol,
@@ -36,28 +35,20 @@ object ExecutionContextCreated {
     __obj.asInstanceOf[ExecutionContextCreated]
   }
   
-  @scala.inline
-  implicit class ExecutionContextCreatedMutableBuilder[Self <: ExecutionContextCreated] (val x: Self) extends AnyVal {
+  extension [Self <: ExecutionContextCreated](x: Self) {
     
-    @scala.inline
-    def setExecutionContextCreated(value: js.Symbol): Self = StObject.set(x, "ExecutionContextCreated", value.asInstanceOf[js.Any])
+    inline def setExecutionContextCreated(value: js.Symbol): Self = StObject.set(x, "ExecutionContextCreated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionContextDestroyed(value: js.Symbol): Self = StObject.set(x, "ExecutionContextDestroyed", value.asInstanceOf[js.Any])
+    inline def setExecutionContextDestroyed(value: js.Symbol): Self = StObject.set(x, "ExecutionContextDestroyed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameAttached(value: js.Symbol): Self = StObject.set(x, "FrameAttached", value.asInstanceOf[js.Any])
+    inline def setFrameAttached(value: js.Symbol): Self = StObject.set(x, "FrameAttached", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameDetached(value: js.Symbol): Self = StObject.set(x, "FrameDetached", value.asInstanceOf[js.Any])
+    inline def setFrameDetached(value: js.Symbol): Self = StObject.set(x, "FrameDetached", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameNavigated(value: js.Symbol): Self = StObject.set(x, "FrameNavigated", value.asInstanceOf[js.Any])
+    inline def setFrameNavigated(value: js.Symbol): Self = StObject.set(x, "FrameNavigated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameNavigatedWithinDocument(value: js.Symbol): Self = StObject.set(x, "FrameNavigatedWithinDocument", value.asInstanceOf[js.Any])
+    inline def setFrameNavigatedWithinDocument(value: js.Symbol): Self = StObject.set(x, "FrameNavigatedWithinDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLifecycleEvent(value: js.Symbol): Self = StObject.set(x, "LifecycleEvent", value.asInstanceOf[js.Any])
+    inline def setLifecycleEvent(value: js.Symbol): Self = StObject.set(x, "LifecycleEvent", value.asInstanceOf[js.Any])
   }
 }

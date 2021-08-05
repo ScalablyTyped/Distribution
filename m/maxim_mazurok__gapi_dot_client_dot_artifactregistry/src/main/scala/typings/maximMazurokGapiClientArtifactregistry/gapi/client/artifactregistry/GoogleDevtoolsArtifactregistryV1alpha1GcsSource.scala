@@ -14,28 +14,21 @@ trait GoogleDevtoolsArtifactregistryV1alpha1GcsSource extends StObject {
 }
 object GoogleDevtoolsArtifactregistryV1alpha1GcsSource {
   
-  @scala.inline
-  def apply(): GoogleDevtoolsArtifactregistryV1alpha1GcsSource = {
+  inline def apply(): GoogleDevtoolsArtifactregistryV1alpha1GcsSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleDevtoolsArtifactregistryV1alpha1GcsSource]
   }
   
-  @scala.inline
-  implicit class GoogleDevtoolsArtifactregistryV1alpha1GcsSourceMutableBuilder[Self <: GoogleDevtoolsArtifactregistryV1alpha1GcsSource] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleDevtoolsArtifactregistryV1alpha1GcsSource](x: Self) {
     
-    @scala.inline
-    def setUris(value: js.Array[String]): Self = StObject.set(x, "uris", value.asInstanceOf[js.Any])
+    inline def setUris(value: js.Array[String]): Self = StObject.set(x, "uris", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrisUndefined: Self = StObject.set(x, "uris", js.undefined)
+    inline def setUrisUndefined: Self = StObject.set(x, "uris", js.undefined)
     
-    @scala.inline
-    def setUrisVarargs(value: String*): Self = StObject.set(x, "uris", js.Array(value :_*))
+    inline def setUrisVarargs(value: String*): Self = StObject.set(x, "uris", js.Array(value :_*))
     
-    @scala.inline
-    def setUseWildcards(value: Boolean): Self = StObject.set(x, "useWildcards", value.asInstanceOf[js.Any])
+    inline def setUseWildcards(value: Boolean): Self = StObject.set(x, "useWildcards", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseWildcardsUndefined: Self = StObject.set(x, "useWildcards", js.undefined)
+    inline def setUseWildcardsUndefined: Self = StObject.set(x, "useWildcards", js.undefined)
   }
 }

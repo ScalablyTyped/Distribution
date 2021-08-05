@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FontFaceFontDisplayProperty extends StObject
 object FontFaceFontDisplayProperty {
   
-  @scala.inline
-  def auto: typings.csstype.csstypeStrings.auto = "auto".asInstanceOf[typings.csstype.csstypeStrings.auto]
+  inline def auto: typings.csstype.csstypeStrings.auto = "auto".asInstanceOf[typings.csstype.csstypeStrings.auto]
   
-  @scala.inline
-  def block: typings.csstype.csstypeStrings.block = "block".asInstanceOf[typings.csstype.csstypeStrings.block]
+  inline def block: typings.csstype.csstypeStrings.block = "block".asInstanceOf[typings.csstype.csstypeStrings.block]
   
-  @scala.inline
-  def fallback: typings.csstype.csstypeStrings.fallback = "fallback".asInstanceOf[typings.csstype.csstypeStrings.fallback]
+  inline def fallback: typings.csstype.csstypeStrings.fallback = "fallback".asInstanceOf[typings.csstype.csstypeStrings.fallback]
   
-  @scala.inline
-  def optional: typings.csstype.csstypeStrings.optional = "optional".asInstanceOf[typings.csstype.csstypeStrings.optional]
+  inline def optional: typings.csstype.csstypeStrings.optional = "optional".asInstanceOf[typings.csstype.csstypeStrings.optional]
   
-  @scala.inline
-  def swap: typings.csstype.csstypeStrings.swap = "swap".asInstanceOf[typings.csstype.csstypeStrings.swap]
+  inline def swap: typings.csstype.csstypeStrings.swap = "swap".asInstanceOf[typings.csstype.csstypeStrings.swap]
 }

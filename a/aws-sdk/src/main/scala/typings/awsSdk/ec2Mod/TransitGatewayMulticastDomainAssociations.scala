@@ -33,46 +33,33 @@ trait TransitGatewayMulticastDomainAssociations extends StObject {
 }
 object TransitGatewayMulticastDomainAssociations {
   
-  @scala.inline
-  def apply(): TransitGatewayMulticastDomainAssociations = {
+  inline def apply(): TransitGatewayMulticastDomainAssociations = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TransitGatewayMulticastDomainAssociations]
   }
   
-  @scala.inline
-  implicit class TransitGatewayMulticastDomainAssociationsMutableBuilder[Self <: TransitGatewayMulticastDomainAssociations] (val x: Self) extends AnyVal {
+  extension [Self <: TransitGatewayMulticastDomainAssociations](x: Self) {
     
-    @scala.inline
-    def setResourceId(value: String): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: String): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
+    inline def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: TransitGatewayAttachmentResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: TransitGatewayAttachmentResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
     
-    @scala.inline
-    def setSubnets(value: SubnetAssociationList): Self = StObject.set(x, "Subnets", value.asInstanceOf[js.Any])
+    inline def setSubnets(value: SubnetAssociationList): Self = StObject.set(x, "Subnets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetsUndefined: Self = StObject.set(x, "Subnets", js.undefined)
+    inline def setSubnetsUndefined: Self = StObject.set(x, "Subnets", js.undefined)
     
-    @scala.inline
-    def setSubnetsVarargs(value: SubnetAssociation*): Self = StObject.set(x, "Subnets", js.Array(value :_*))
+    inline def setSubnetsVarargs(value: SubnetAssociation*): Self = StObject.set(x, "Subnets", js.Array(value :_*))
     
-    @scala.inline
-    def setTransitGatewayAttachmentId(value: String): Self = StObject.set(x, "TransitGatewayAttachmentId", value.asInstanceOf[js.Any])
+    inline def setTransitGatewayAttachmentId(value: String): Self = StObject.set(x, "TransitGatewayAttachmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitGatewayAttachmentIdUndefined: Self = StObject.set(x, "TransitGatewayAttachmentId", js.undefined)
+    inline def setTransitGatewayAttachmentIdUndefined: Self = StObject.set(x, "TransitGatewayAttachmentId", js.undefined)
     
-    @scala.inline
-    def setTransitGatewayMulticastDomainId(value: String): Self = StObject.set(x, "TransitGatewayMulticastDomainId", value.asInstanceOf[js.Any])
+    inline def setTransitGatewayMulticastDomainId(value: String): Self = StObject.set(x, "TransitGatewayMulticastDomainId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitGatewayMulticastDomainIdUndefined: Self = StObject.set(x, "TransitGatewayMulticastDomainId", js.undefined)
+    inline def setTransitGatewayMulticastDomainIdUndefined: Self = StObject.set(x, "TransitGatewayMulticastDomainId", js.undefined)
   }
 }

@@ -17,31 +17,23 @@ trait LineConfig
 }
 object LineConfig {
   
-  @scala.inline
-  def apply(points: js.Any): LineConfig = {
+  inline def apply(points: js.Any): LineConfig = {
     val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineConfig]
   }
   
-  @scala.inline
-  implicit class LineConfigMutableBuilder[Self <: LineConfig] (val x: Self) extends AnyVal {
+  extension [Self <: LineConfig](x: Self) {
     
-    @scala.inline
-    def setDash(value: js.Array[Double]): Self = StObject.set(x, "dash", value.asInstanceOf[js.Any])
+    inline def setDash(value: js.Array[Double]): Self = StObject.set(x, "dash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashUndefined: Self = StObject.set(x, "dash", js.undefined)
+    inline def setDashUndefined: Self = StObject.set(x, "dash", js.undefined)
     
-    @scala.inline
-    def setDashVarargs(value: Double*): Self = StObject.set(x, "dash", js.Array(value :_*))
+    inline def setDashVarargs(value: Double*): Self = StObject.set(x, "dash", js.Array(value :_*))
     
-    @scala.inline
-    def setLineCap(value: String): Self = StObject.set(x, "lineCap", value.asInstanceOf[js.Any])
+    inline def setLineCap(value: String): Self = StObject.set(x, "lineCap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineCapUndefined: Self = StObject.set(x, "lineCap", js.undefined)
+    inline def setLineCapUndefined: Self = StObject.set(x, "lineCap", js.undefined)
     
-    @scala.inline
-    def setPoints(value: js.Any): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: js.Any): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
   }
 }

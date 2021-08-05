@@ -22,8 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object AddressInstance {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     delete: RestMethod,
     dependentPhoneNumbers: DependentPhoneNumberResource,
     get: RestMethod,
@@ -33,13 +32,10 @@ object AddressInstance {
     __obj.asInstanceOf[AddressInstance]
   }
   
-  @scala.inline
-  implicit class AddressInstanceMutableBuilder[Self <: AddressInstance] (val x: Self) extends AnyVal {
+  extension [Self <: AddressInstance](x: Self) {
     
-    @scala.inline
-    def setDelete(value: RestMethod): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: RestMethod): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDependentPhoneNumbers(value: DependentPhoneNumberResource): Self = StObject.set(x, "dependentPhoneNumbers", value.asInstanceOf[js.Any])
+    inline def setDependentPhoneNumbers(value: DependentPhoneNumberResource): Self = StObject.set(x, "dependentPhoneNumbers", value.asInstanceOf[js.Any])
   }
 }

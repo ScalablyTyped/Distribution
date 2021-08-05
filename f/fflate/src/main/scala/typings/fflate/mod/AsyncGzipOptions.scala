@@ -10,8 +10,7 @@ trait AsyncGzipOptions
      with AsyncOptions
 object AsyncGzipOptions {
   
-  @scala.inline
-  def apply(): AsyncGzipOptions = {
+  inline def apply(): AsyncGzipOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AsyncGzipOptions]
   }

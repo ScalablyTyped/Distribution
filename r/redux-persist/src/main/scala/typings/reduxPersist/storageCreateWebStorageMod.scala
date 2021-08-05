@@ -11,6 +11,5 @@ object storageCreateWebStorageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(`type`: String): WebStorage = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(`type`.asInstanceOf[js.Any]).asInstanceOf[WebStorage]
+  inline def default(`type`: String): WebStorage = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(`type`.asInstanceOf[js.Any]).asInstanceOf[WebStorage]
 }

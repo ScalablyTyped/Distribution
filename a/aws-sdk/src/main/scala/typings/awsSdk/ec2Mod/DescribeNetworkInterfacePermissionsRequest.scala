@@ -28,43 +28,31 @@ trait DescribeNetworkInterfacePermissionsRequest extends StObject {
 }
 object DescribeNetworkInterfacePermissionsRequest {
   
-  @scala.inline
-  def apply(): DescribeNetworkInterfacePermissionsRequest = {
+  inline def apply(): DescribeNetworkInterfacePermissionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeNetworkInterfacePermissionsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeNetworkInterfacePermissionsRequestMutableBuilder[Self <: DescribeNetworkInterfacePermissionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeNetworkInterfacePermissionsRequest](x: Self) {
     
-    @scala.inline
-    def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxResults(value: DescribeNetworkInterfacePermissionsMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: DescribeNetworkInterfacePermissionsMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNetworkInterfacePermissionIds(value: NetworkInterfacePermissionIdList): Self = StObject.set(x, "NetworkInterfacePermissionIds", value.asInstanceOf[js.Any])
+    inline def setNetworkInterfacePermissionIds(value: NetworkInterfacePermissionIdList): Self = StObject.set(x, "NetworkInterfacePermissionIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkInterfacePermissionIdsUndefined: Self = StObject.set(x, "NetworkInterfacePermissionIds", js.undefined)
+    inline def setNetworkInterfacePermissionIdsUndefined: Self = StObject.set(x, "NetworkInterfacePermissionIds", js.undefined)
     
-    @scala.inline
-    def setNetworkInterfacePermissionIdsVarargs(value: NetworkInterfacePermissionId*): Self = StObject.set(x, "NetworkInterfacePermissionIds", js.Array(value :_*))
+    inline def setNetworkInterfacePermissionIdsVarargs(value: NetworkInterfacePermissionId*): Self = StObject.set(x, "NetworkInterfacePermissionIds", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

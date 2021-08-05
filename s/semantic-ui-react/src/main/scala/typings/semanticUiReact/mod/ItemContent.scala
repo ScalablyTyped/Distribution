@@ -19,6 +19,5 @@ class ItemContent protected ()
 }
 object ItemContent {
   
-  @scala.inline
-  def apply: ComponentClass[ItemContentProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("ItemContent").asInstanceOf[ComponentClass[ItemContentProps, ComponentState]]
+  inline def apply: ComponentClass[ItemContentProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("ItemContent").asInstanceOf[ComponentClass[ItemContentProps, ComponentState]]
 }

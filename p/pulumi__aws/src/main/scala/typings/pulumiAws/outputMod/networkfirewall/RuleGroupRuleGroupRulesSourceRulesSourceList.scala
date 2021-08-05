@@ -23,28 +23,21 @@ trait RuleGroupRuleGroupRulesSourceRulesSourceList extends StObject {
 }
 object RuleGroupRuleGroupRulesSourceRulesSourceList {
   
-  @scala.inline
-  def apply(generatedRulesType: String, targetTypes: js.Array[String], targets: js.Array[String]): RuleGroupRuleGroupRulesSourceRulesSourceList = {
+  inline def apply(generatedRulesType: String, targetTypes: js.Array[String], targets: js.Array[String]): RuleGroupRuleGroupRulesSourceRulesSourceList = {
     val __obj = js.Dynamic.literal(generatedRulesType = generatedRulesType.asInstanceOf[js.Any], targetTypes = targetTypes.asInstanceOf[js.Any], targets = targets.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleGroupRuleGroupRulesSourceRulesSourceList]
   }
   
-  @scala.inline
-  implicit class RuleGroupRuleGroupRulesSourceRulesSourceListMutableBuilder[Self <: RuleGroupRuleGroupRulesSourceRulesSourceList] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupRuleGroupRulesSourceRulesSourceList](x: Self) {
     
-    @scala.inline
-    def setGeneratedRulesType(value: String): Self = StObject.set(x, "generatedRulesType", value.asInstanceOf[js.Any])
+    inline def setGeneratedRulesType(value: String): Self = StObject.set(x, "generatedRulesType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetTypes(value: js.Array[String]): Self = StObject.set(x, "targetTypes", value.asInstanceOf[js.Any])
+    inline def setTargetTypes(value: js.Array[String]): Self = StObject.set(x, "targetTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetTypesVarargs(value: String*): Self = StObject.set(x, "targetTypes", js.Array(value :_*))
+    inline def setTargetTypesVarargs(value: String*): Self = StObject.set(x, "targetTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setTargets(value: js.Array[String]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
+    inline def setTargets(value: js.Array[String]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetsVarargs(value: String*): Self = StObject.set(x, "targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: String*): Self = StObject.set(x, "targets", js.Array(value :_*))
   }
 }

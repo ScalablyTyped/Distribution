@@ -13,25 +13,19 @@ trait Begin extends StObject {
 }
 object Begin {
   
-  @scala.inline
-  def apply(): Begin = {
+  inline def apply(): Begin = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Begin]
   }
   
-  @scala.inline
-  implicit class BeginMutableBuilder[Self <: Begin] (val x: Self) extends AnyVal {
+  extension [Self <: Begin](x: Self) {
     
-    @scala.inline
-    def setBegin(value: SerializeEventData): Self = StObject.set(x, "begin", value.asInstanceOf[js.Any])
+    inline def setBegin(value: SerializeEventData): Self = StObject.set(x, "begin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeginUndefined: Self = StObject.set(x, "begin", js.undefined)
+    inline def setBeginUndefined: Self = StObject.set(x, "begin", js.undefined)
     
-    @scala.inline
-    def setEnd(value: SerializeEventData): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: SerializeEventData): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
   }
 }

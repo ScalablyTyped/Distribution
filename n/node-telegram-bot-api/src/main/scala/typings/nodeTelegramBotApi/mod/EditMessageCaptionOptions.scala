@@ -12,19 +12,15 @@ trait EditMessageCaptionOptions
 }
 object EditMessageCaptionOptions {
   
-  @scala.inline
-  def apply(): EditMessageCaptionOptions = {
+  inline def apply(): EditMessageCaptionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EditMessageCaptionOptions]
   }
   
-  @scala.inline
-  implicit class EditMessageCaptionOptionsMutableBuilder[Self <: EditMessageCaptionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EditMessageCaptionOptions](x: Self) {
     
-    @scala.inline
-    def setReply_markup(value: InlineKeyboardMarkup): Self = StObject.set(x, "reply_markup", value.asInstanceOf[js.Any])
+    inline def setReply_markup(value: InlineKeyboardMarkup): Self = StObject.set(x, "reply_markup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReply_markupUndefined: Self = StObject.set(x, "reply_markup", js.undefined)
+    inline def setReply_markupUndefined: Self = StObject.set(x, "reply_markup", js.undefined)
   }
 }

@@ -16,8 +16,7 @@ trait IXmlDocumentType
 }
 object IXmlDocumentType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appendChild: IXmlNode => IXmlNode,
     attributes: XmlNamedNodeMap,
     childNodes: XmlNodeList,
@@ -53,16 +52,12 @@ object IXmlDocumentType {
     __obj.asInstanceOf[IXmlDocumentType]
   }
   
-  @scala.inline
-  implicit class IXmlDocumentTypeMutableBuilder[Self <: IXmlDocumentType] (val x: Self) extends AnyVal {
+  extension [Self <: IXmlDocumentType](x: Self) {
     
-    @scala.inline
-    def setEntities(value: XmlNamedNodeMap): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
+    inline def setEntities(value: XmlNamedNodeMap): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotations(value: XmlNamedNodeMap): Self = StObject.set(x, "notations", value.asInstanceOf[js.Any])
+    inline def setNotations(value: XmlNamedNodeMap): Self = StObject.set(x, "notations", value.asInstanceOf[js.Any])
   }
 }

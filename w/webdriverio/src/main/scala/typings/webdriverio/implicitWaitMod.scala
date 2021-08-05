@@ -10,8 +10,7 @@ object implicitWaitMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(currentElement: CurrentElement, commandName: String): js.Promise[CurrentElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(currentElement.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CurrentElement]]
+  inline def default(currentElement: CurrentElement, commandName: String): js.Promise[CurrentElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(currentElement.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CurrentElement]]
   
   trait CurrentElement extends StObject {
     
@@ -33,8 +32,7 @@ object implicitWaitMod {
   }
   object CurrentElement {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       $: String => js.Promise[CurrentElement],
       DollarDollar: String => js.Promise[js.Array[CurrentElement]],
       elementId: String,
@@ -48,29 +46,21 @@ object implicitWaitMod {
       __obj.asInstanceOf[CurrentElement]
     }
     
-    @scala.inline
-    implicit class CurrentElementMutableBuilder[Self <: CurrentElement] (val x: Self) extends AnyVal {
+    extension [Self <: CurrentElement](x: Self) {
       
-      @scala.inline
-      def set$(value: String => js.Promise[CurrentElement]): Self = StObject.set(x, "$", js.Any.fromFunction1(value))
+      inline def set$(value: String => js.Promise[CurrentElement]): Self = StObject.set(x, "$", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDollarDollar(value: String => js.Promise[js.Array[CurrentElement]]): Self = StObject.set(x, "$$", js.Any.fromFunction1(value))
+      inline def setDollarDollar(value: String => js.Promise[js.Array[CurrentElement]]): Self = StObject.set(x, "$$", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setElementId(value: String): Self = StObject.set(x, "elementId", value.asInstanceOf[js.Any])
+      inline def setElementId(value: String): Self = StObject.set(x, "elementId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent(value: CurrentElement): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: CurrentElement): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+      inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWaitForExist(value: () => js.Promise[Unit]): Self = StObject.set(x, "waitForExist", js.Any.fromFunction0(value))
+      inline def setWaitForExist(value: () => js.Promise[Unit]): Self = StObject.set(x, "waitForExist", js.Any.fromFunction0(value))
     }
   }
 }

@@ -225,531 +225,357 @@ trait PartialLayout extends StObject {
 }
 object PartialLayout {
   
-  @scala.inline
-  def apply(): PartialLayout = {
+  inline def apply(): PartialLayout = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialLayout]
   }
   
-  @scala.inline
-  implicit class PartialLayoutMutableBuilder[Self <: PartialLayout] (val x: Self) extends AnyVal {
+  extension [Self <: PartialLayout](x: Self) {
     
-    @scala.inline
-    def setAngularaxis(value: js.Object): Self = StObject.set(x, "angularaxis", value.asInstanceOf[js.Any])
+    inline def setAngularaxis(value: js.Object): Self = StObject.set(x, "angularaxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngularaxisUndefined: Self = StObject.set(x, "angularaxis", js.undefined)
+    inline def setAngularaxisUndefined: Self = StObject.set(x, "angularaxis", js.undefined)
     
-    @scala.inline
-    def setAnnotations(value: js.Array[PartialAnnotationsAlign]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
+    inline def setAnnotations(value: js.Array[PartialAnnotationsAlign]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
+    inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
     
-    @scala.inline
-    def setAnnotationsVarargs(value: PartialAnnotationsAlign*): Self = StObject.set(x, "annotations", js.Array(value :_*))
+    inline def setAnnotationsVarargs(value: PartialAnnotationsAlign*): Self = StObject.set(x, "annotations", js.Array(value :_*))
     
-    @scala.inline
-    def setAutosize(value: Boolean): Self = StObject.set(x, "autosize", value.asInstanceOf[js.Any])
+    inline def setAutosize(value: Boolean): Self = StObject.set(x, "autosize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutosizeUndefined: Self = StObject.set(x, "autosize", js.undefined)
+    inline def setAutosizeUndefined: Self = StObject.set(x, "autosize", js.undefined)
     
-    @scala.inline
-    def setBargap(value: Double): Self = StObject.set(x, "bargap", value.asInstanceOf[js.Any])
+    inline def setBargap(value: Double): Self = StObject.set(x, "bargap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBargapUndefined: Self = StObject.set(x, "bargap", js.undefined)
+    inline def setBargapUndefined: Self = StObject.set(x, "bargap", js.undefined)
     
-    @scala.inline
-    def setBargroupgap(value: Double): Self = StObject.set(x, "bargroupgap", value.asInstanceOf[js.Any])
+    inline def setBargroupgap(value: Double): Self = StObject.set(x, "bargroupgap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBargroupgapUndefined: Self = StObject.set(x, "bargroupgap", js.undefined)
+    inline def setBargroupgapUndefined: Self = StObject.set(x, "bargroupgap", js.undefined)
     
-    @scala.inline
-    def setBarmode(value: stack | group | overlay | relative): Self = StObject.set(x, "barmode", value.asInstanceOf[js.Any])
+    inline def setBarmode(value: stack | group | overlay | relative): Self = StObject.set(x, "barmode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBarmodeUndefined: Self = StObject.set(x, "barmode", js.undefined)
+    inline def setBarmodeUndefined: Self = StObject.set(x, "barmode", js.undefined)
     
-    @scala.inline
-    def setBarnorm(value: _empty | fraction | percent): Self = StObject.set(x, "barnorm", value.asInstanceOf[js.Any])
+    inline def setBarnorm(value: _empty | fraction | percent): Self = StObject.set(x, "barnorm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBarnormUndefined: Self = StObject.set(x, "barnorm", js.undefined)
+    inline def setBarnormUndefined: Self = StObject.set(x, "barnorm", js.undefined)
     
-    @scala.inline
-    def setCalendar(value: Calendar): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
+    inline def setCalendar(value: Calendar): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalendarUndefined: Self = StObject.set(x, "calendar", js.undefined)
+    inline def setCalendarUndefined: Self = StObject.set(x, "calendar", js.undefined)
     
-    @scala.inline
-    def setColorway(value: js.Array[String]): Self = StObject.set(x, "colorway", value.asInstanceOf[js.Any])
+    inline def setColorway(value: js.Array[String]): Self = StObject.set(x, "colorway", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorwayUndefined: Self = StObject.set(x, "colorway", js.undefined)
+    inline def setColorwayUndefined: Self = StObject.set(x, "colorway", js.undefined)
     
-    @scala.inline
-    def setColorwayVarargs(value: String*): Self = StObject.set(x, "colorway", js.Array(value :_*))
+    inline def setColorwayVarargs(value: String*): Self = StObject.set(x, "colorway", js.Array(value :_*))
     
-    @scala.inline
-    def setDragmode(value: zoom | pan | select | lasso | orbit | turntable | `false`): Self = StObject.set(x, "dragmode", value.asInstanceOf[js.Any])
+    inline def setDragmode(value: zoom | pan | select | lasso | orbit | turntable | `false`): Self = StObject.set(x, "dragmode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragmodeUndefined: Self = StObject.set(x, "dragmode", js.undefined)
+    inline def setDragmodeUndefined: Self = StObject.set(x, "dragmode", js.undefined)
     
-    @scala.inline
-    def setFont(value: PartialFont): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: PartialFont): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
-    @scala.inline
-    def setGeo(value: js.Object): Self = StObject.set(x, "geo", value.asInstanceOf[js.Any])
+    inline def setGeo(value: js.Object): Self = StObject.set(x, "geo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeoUndefined: Self = StObject.set(x, "geo", js.undefined)
+    inline def setGeoUndefined: Self = StObject.set(x, "geo", js.undefined)
     
-    @scala.inline
-    def setGrid(value: Partialrowsnumberroworder): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+    inline def setGrid(value: Partialrowsnumberroworder): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
+    inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setHiddenlabels(value: js.Array[String]): Self = StObject.set(x, "hiddenlabels", value.asInstanceOf[js.Any])
+    inline def setHiddenlabels(value: js.Array[String]): Self = StObject.set(x, "hiddenlabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenlabelsUndefined: Self = StObject.set(x, "hiddenlabels", js.undefined)
+    inline def setHiddenlabelsUndefined: Self = StObject.set(x, "hiddenlabels", js.undefined)
     
-    @scala.inline
-    def setHiddenlabelsVarargs(value: String*): Self = StObject.set(x, "hiddenlabels", js.Array(value :_*))
+    inline def setHiddenlabelsVarargs(value: String*): Self = StObject.set(x, "hiddenlabels", js.Array(value :_*))
     
-    @scala.inline
-    def setHidesources(value: Boolean): Self = StObject.set(x, "hidesources", value.asInstanceOf[js.Any])
+    inline def setHidesources(value: Boolean): Self = StObject.set(x, "hidesources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHidesourcesUndefined: Self = StObject.set(x, "hidesources", js.undefined)
+    inline def setHidesourcesUndefined: Self = StObject.set(x, "hidesources", js.undefined)
     
-    @scala.inline
-    def setHoverdistance(value: Double): Self = StObject.set(x, "hoverdistance", value.asInstanceOf[js.Any])
+    inline def setHoverdistance(value: Double): Self = StObject.set(x, "hoverdistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverdistanceUndefined: Self = StObject.set(x, "hoverdistance", js.undefined)
+    inline def setHoverdistanceUndefined: Self = StObject.set(x, "hoverdistance", js.undefined)
     
-    @scala.inline
-    def setHoverlabel(value: PartialHoverLabel): Self = StObject.set(x, "hoverlabel", value.asInstanceOf[js.Any])
+    inline def setHoverlabel(value: PartialHoverLabel): Self = StObject.set(x, "hoverlabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverlabelUndefined: Self = StObject.set(x, "hoverlabel", js.undefined)
+    inline def setHoverlabelUndefined: Self = StObject.set(x, "hoverlabel", js.undefined)
     
-    @scala.inline
-    def setHovermode(
+    inline def setHovermode(
       value: closest | typings.reactPlotlyJs.reactPlotlyJsStrings.x | y | (`x unified`) | (`y unified`) | `false`
     ): Self = StObject.set(x, "hovermode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHovermodeUndefined: Self = StObject.set(x, "hovermode", js.undefined)
+    inline def setHovermodeUndefined: Self = StObject.set(x, "hovermode", js.undefined)
     
-    @scala.inline
-    def setImages(value: js.Array[PartialImage]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+    inline def setImages(value: js.Array[PartialImage]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
+    inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
     
-    @scala.inline
-    def setImagesVarargs(value: PartialImage*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: PartialImage*): Self = StObject.set(x, "images", js.Array(value :_*))
     
-    @scala.inline
-    def setLegend(value: PartialLegend): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+    inline def setLegend(value: PartialLegend): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
+    inline def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
     
-    @scala.inline
-    def setMapbox(value: PartialMapbox): Self = StObject.set(x, "mapbox", value.asInstanceOf[js.Any])
+    inline def setMapbox(value: PartialMapbox): Self = StObject.set(x, "mapbox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapboxUndefined: Self = StObject.set(x, "mapbox", js.undefined)
+    inline def setMapboxUndefined: Self = StObject.set(x, "mapbox", js.undefined)
     
-    @scala.inline
-    def setMargin(value: PartialMargin): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: PartialMargin): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
-    @scala.inline
-    def setOrientation(value: Double): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: Double): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
-    @scala.inline
-    def setPaper_bgcolor(value: Color): Self = StObject.set(x, "paper_bgcolor", value.asInstanceOf[js.Any])
+    inline def setPaper_bgcolor(value: Color): Self = StObject.set(x, "paper_bgcolor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaper_bgcolorUndefined: Self = StObject.set(x, "paper_bgcolor", js.undefined)
+    inline def setPaper_bgcolorUndefined: Self = StObject.set(x, "paper_bgcolor", js.undefined)
     
-    @scala.inline
-    def setPaper_bgcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "paper_bgcolor", js.Array(value :_*))
+    inline def setPaper_bgcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "paper_bgcolor", js.Array(value :_*))
     
-    @scala.inline
-    def setPlot_bgcolor(value: Color): Self = StObject.set(x, "plot_bgcolor", value.asInstanceOf[js.Any])
+    inline def setPlot_bgcolor(value: Color): Self = StObject.set(x, "plot_bgcolor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlot_bgcolorUndefined: Self = StObject.set(x, "plot_bgcolor", js.undefined)
+    inline def setPlot_bgcolorUndefined: Self = StObject.set(x, "plot_bgcolor", js.undefined)
     
-    @scala.inline
-    def setPlot_bgcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "plot_bgcolor", js.Array(value :_*))
+    inline def setPlot_bgcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "plot_bgcolor", js.Array(value :_*))
     
-    @scala.inline
-    def setPolar(value: PartialPolarLayout): Self = StObject.set(x, "polar", value.asInstanceOf[js.Any])
+    inline def setPolar(value: PartialPolarLayout): Self = StObject.set(x, "polar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolar2(value: PartialPolarLayout): Self = StObject.set(x, "polar2", value.asInstanceOf[js.Any])
+    inline def setPolar2(value: PartialPolarLayout): Self = StObject.set(x, "polar2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolar2Undefined: Self = StObject.set(x, "polar2", js.undefined)
+    inline def setPolar2Undefined: Self = StObject.set(x, "polar2", js.undefined)
     
-    @scala.inline
-    def setPolar3(value: PartialPolarLayout): Self = StObject.set(x, "polar3", value.asInstanceOf[js.Any])
+    inline def setPolar3(value: PartialPolarLayout): Self = StObject.set(x, "polar3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolar3Undefined: Self = StObject.set(x, "polar3", js.undefined)
+    inline def setPolar3Undefined: Self = StObject.set(x, "polar3", js.undefined)
     
-    @scala.inline
-    def setPolar4(value: PartialPolarLayout): Self = StObject.set(x, "polar4", value.asInstanceOf[js.Any])
+    inline def setPolar4(value: PartialPolarLayout): Self = StObject.set(x, "polar4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolar4Undefined: Self = StObject.set(x, "polar4", js.undefined)
+    inline def setPolar4Undefined: Self = StObject.set(x, "polar4", js.undefined)
     
-    @scala.inline
-    def setPolar5(value: PartialPolarLayout): Self = StObject.set(x, "polar5", value.asInstanceOf[js.Any])
+    inline def setPolar5(value: PartialPolarLayout): Self = StObject.set(x, "polar5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolar5Undefined: Self = StObject.set(x, "polar5", js.undefined)
+    inline def setPolar5Undefined: Self = StObject.set(x, "polar5", js.undefined)
     
-    @scala.inline
-    def setPolar6(value: PartialPolarLayout): Self = StObject.set(x, "polar6", value.asInstanceOf[js.Any])
+    inline def setPolar6(value: PartialPolarLayout): Self = StObject.set(x, "polar6", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolar6Undefined: Self = StObject.set(x, "polar6", js.undefined)
+    inline def setPolar6Undefined: Self = StObject.set(x, "polar6", js.undefined)
     
-    @scala.inline
-    def setPolar7(value: PartialPolarLayout): Self = StObject.set(x, "polar7", value.asInstanceOf[js.Any])
+    inline def setPolar7(value: PartialPolarLayout): Self = StObject.set(x, "polar7", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolar7Undefined: Self = StObject.set(x, "polar7", js.undefined)
+    inline def setPolar7Undefined: Self = StObject.set(x, "polar7", js.undefined)
     
-    @scala.inline
-    def setPolar8(value: PartialPolarLayout): Self = StObject.set(x, "polar8", value.asInstanceOf[js.Any])
+    inline def setPolar8(value: PartialPolarLayout): Self = StObject.set(x, "polar8", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolar8Undefined: Self = StObject.set(x, "polar8", js.undefined)
+    inline def setPolar8Undefined: Self = StObject.set(x, "polar8", js.undefined)
     
-    @scala.inline
-    def setPolar9(value: PartialPolarLayout): Self = StObject.set(x, "polar9", value.asInstanceOf[js.Any])
+    inline def setPolar9(value: PartialPolarLayout): Self = StObject.set(x, "polar9", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolar9Undefined: Self = StObject.set(x, "polar9", js.undefined)
+    inline def setPolar9Undefined: Self = StObject.set(x, "polar9", js.undefined)
     
-    @scala.inline
-    def setPolarUndefined: Self = StObject.set(x, "polar", js.undefined)
+    inline def setPolarUndefined: Self = StObject.set(x, "polar", js.undefined)
     
-    @scala.inline
-    def setRadialaxis(value: PartialAxis): Self = StObject.set(x, "radialaxis", value.asInstanceOf[js.Any])
+    inline def setRadialaxis(value: PartialAxis): Self = StObject.set(x, "radialaxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadialaxisUndefined: Self = StObject.set(x, "radialaxis", js.undefined)
+    inline def setRadialaxisUndefined: Self = StObject.set(x, "radialaxis", js.undefined)
     
-    @scala.inline
-    def setScene(value: PartialScene): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
+    inline def setScene(value: PartialScene): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSceneUndefined: Self = StObject.set(x, "scene", js.undefined)
+    inline def setSceneUndefined: Self = StObject.set(x, "scene", js.undefined)
     
-    @scala.inline
-    def setSelectdirection(value: h | v | d | any): Self = StObject.set(x, "selectdirection", value.asInstanceOf[js.Any])
+    inline def setSelectdirection(value: h | v | d | any): Self = StObject.set(x, "selectdirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectdirectionUndefined: Self = StObject.set(x, "selectdirection", js.undefined)
+    inline def setSelectdirectionUndefined: Self = StObject.set(x, "selectdirection", js.undefined)
     
-    @scala.inline
-    def setSeparators(value: String): Self = StObject.set(x, "separators", value.asInstanceOf[js.Any])
+    inline def setSeparators(value: String): Self = StObject.set(x, "separators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeparatorsUndefined: Self = StObject.set(x, "separators", js.undefined)
+    inline def setSeparatorsUndefined: Self = StObject.set(x, "separators", js.undefined)
     
-    @scala.inline
-    def setShapes(value: js.Array[PartialShape]): Self = StObject.set(x, "shapes", value.asInstanceOf[js.Any])
+    inline def setShapes(value: js.Array[PartialShape]): Self = StObject.set(x, "shapes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapesUndefined: Self = StObject.set(x, "shapes", js.undefined)
+    inline def setShapesUndefined: Self = StObject.set(x, "shapes", js.undefined)
     
-    @scala.inline
-    def setShapesVarargs(value: PartialShape*): Self = StObject.set(x, "shapes", js.Array(value :_*))
+    inline def setShapesVarargs(value: PartialShape*): Self = StObject.set(x, "shapes", js.Array(value :_*))
     
-    @scala.inline
-    def setShowlegend(value: Boolean): Self = StObject.set(x, "showlegend", value.asInstanceOf[js.Any])
+    inline def setShowlegend(value: Boolean): Self = StObject.set(x, "showlegend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowlegendUndefined: Self = StObject.set(x, "showlegend", js.undefined)
+    inline def setShowlegendUndefined: Self = StObject.set(x, "showlegend", js.undefined)
     
-    @scala.inline
-    def setSliders(value: js.Array[PartialSlider]): Self = StObject.set(x, "sliders", value.asInstanceOf[js.Any])
+    inline def setSliders(value: js.Array[PartialSlider]): Self = StObject.set(x, "sliders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlidersUndefined: Self = StObject.set(x, "sliders", js.undefined)
+    inline def setSlidersUndefined: Self = StObject.set(x, "sliders", js.undefined)
     
-    @scala.inline
-    def setSlidersVarargs(value: PartialSlider*): Self = StObject.set(x, "sliders", js.Array(value :_*))
+    inline def setSlidersVarargs(value: PartialSlider*): Self = StObject.set(x, "sliders", js.Array(value :_*))
     
-    @scala.inline
-    def setSubplot(value: String): Self = StObject.set(x, "subplot", value.asInstanceOf[js.Any])
+    inline def setSubplot(value: String): Self = StObject.set(x, "subplot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubplotUndefined: Self = StObject.set(x, "subplot", js.undefined)
+    inline def setSubplotUndefined: Self = StObject.set(x, "subplot", js.undefined)
     
-    @scala.inline
-    def setTemplate(value: Template): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: Template): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
-    @scala.inline
-    def setTernary(value: js.Object): Self = StObject.set(x, "ternary", value.asInstanceOf[js.Any])
+    inline def setTernary(value: js.Object): Self = StObject.set(x, "ternary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTernaryUndefined: Self = StObject.set(x, "ternary", js.undefined)
+    inline def setTernaryUndefined: Self = StObject.set(x, "ternary", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String | PartialtextstringfontPart): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String | PartialtextstringfontPart): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setTitlefont(value: PartialFont): Self = StObject.set(x, "titlefont", value.asInstanceOf[js.Any])
+    inline def setTitlefont(value: PartialFont): Self = StObject.set(x, "titlefont", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitlefontUndefined: Self = StObject.set(x, "titlefont", js.undefined)
+    inline def setTitlefontUndefined: Self = StObject.set(x, "titlefont", js.undefined)
     
-    @scala.inline
-    def setTransition(value: Transition): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+    inline def setTransition(value: Transition): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
+    inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
     
-    @scala.inline
-    def setUpdatemenus(value: js.Object): Self = StObject.set(x, "updatemenus", value.asInstanceOf[js.Any])
+    inline def setUpdatemenus(value: js.Object): Self = StObject.set(x, "updatemenus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatemenusUndefined: Self = StObject.set(x, "updatemenus", js.undefined)
+    inline def setUpdatemenusUndefined: Self = StObject.set(x, "updatemenus", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
-    @scala.inline
-    def setXaxis(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "xaxis", value.asInstanceOf[js.Any])
+    inline def setXaxis(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "xaxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXaxis2(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "xaxis2", value.asInstanceOf[js.Any])
+    inline def setXaxis2(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "xaxis2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXaxis2Undefined: Self = StObject.set(x, "xaxis2", js.undefined)
+    inline def setXaxis2Undefined: Self = StObject.set(x, "xaxis2", js.undefined)
     
-    @scala.inline
-    def setXaxis3(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "xaxis3", value.asInstanceOf[js.Any])
+    inline def setXaxis3(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "xaxis3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXaxis3Undefined: Self = StObject.set(x, "xaxis3", js.undefined)
+    inline def setXaxis3Undefined: Self = StObject.set(x, "xaxis3", js.undefined)
     
-    @scala.inline
-    def setXaxis4(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "xaxis4", value.asInstanceOf[js.Any])
+    inline def setXaxis4(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "xaxis4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXaxis4Undefined: Self = StObject.set(x, "xaxis4", js.undefined)
+    inline def setXaxis4Undefined: Self = StObject.set(x, "xaxis4", js.undefined)
     
-    @scala.inline
-    def setXaxis5(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "xaxis5", value.asInstanceOf[js.Any])
+    inline def setXaxis5(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "xaxis5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXaxis5Undefined: Self = StObject.set(x, "xaxis5", js.undefined)
+    inline def setXaxis5Undefined: Self = StObject.set(x, "xaxis5", js.undefined)
     
-    @scala.inline
-    def setXaxis6(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "xaxis6", value.asInstanceOf[js.Any])
+    inline def setXaxis6(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "xaxis6", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXaxis6Undefined: Self = StObject.set(x, "xaxis6", js.undefined)
+    inline def setXaxis6Undefined: Self = StObject.set(x, "xaxis6", js.undefined)
     
-    @scala.inline
-    def setXaxis7(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "xaxis7", value.asInstanceOf[js.Any])
+    inline def setXaxis7(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "xaxis7", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXaxis7Undefined: Self = StObject.set(x, "xaxis7", js.undefined)
+    inline def setXaxis7Undefined: Self = StObject.set(x, "xaxis7", js.undefined)
     
-    @scala.inline
-    def setXaxis8(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "xaxis8", value.asInstanceOf[js.Any])
+    inline def setXaxis8(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "xaxis8", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXaxis8Undefined: Self = StObject.set(x, "xaxis8", js.undefined)
+    inline def setXaxis8Undefined: Self = StObject.set(x, "xaxis8", js.undefined)
     
-    @scala.inline
-    def setXaxis9(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "xaxis9", value.asInstanceOf[js.Any])
+    inline def setXaxis9(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "xaxis9", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXaxis9Undefined: Self = StObject.set(x, "xaxis9", js.undefined)
+    inline def setXaxis9Undefined: Self = StObject.set(x, "xaxis9", js.undefined)
     
-    @scala.inline
-    def setXaxisDotautorange(value: Boolean): Self = StObject.set(x, "xaxis.autorange", value.asInstanceOf[js.Any])
+    inline def setXaxisDotautorange(value: Boolean): Self = StObject.set(x, "xaxis.autorange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXaxisDotautorangeUndefined: Self = StObject.set(x, "xaxis.autorange", js.undefined)
+    inline def setXaxisDotautorangeUndefined: Self = StObject.set(x, "xaxis.autorange", js.undefined)
     
-    @scala.inline
-    def setXaxisDotrange(value: js.Tuple2[Datum, Datum]): Self = StObject.set(x, "xaxis.range", value.asInstanceOf[js.Any])
+    inline def setXaxisDotrange(value: js.Tuple2[Datum, Datum]): Self = StObject.set(x, "xaxis.range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXaxisDotrangeUndefined: Self = StObject.set(x, "xaxis.range", js.undefined)
+    inline def setXaxisDotrangeUndefined: Self = StObject.set(x, "xaxis.range", js.undefined)
     
-    @scala.inline
-    def `setXaxisDotrange[0]`(value: Datum): Self = StObject.set(x, "xaxis.range[0]", value.asInstanceOf[js.Any])
+    inline def `setXaxisDotrange[0]`(value: Datum): Self = StObject.set(x, "xaxis.range[0]", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setXaxisDotrange[0]Null`: Self = StObject.set(x, "xaxis.range[0]", null)
+    inline def `setXaxisDotrange[0]Null`: Self = StObject.set(x, "xaxis.range[0]", null)
     
-    @scala.inline
-    def `setXaxisDotrange[0]Undefined`: Self = StObject.set(x, "xaxis.range[0]", js.undefined)
+    inline def `setXaxisDotrange[0]Undefined`: Self = StObject.set(x, "xaxis.range[0]", js.undefined)
     
-    @scala.inline
-    def `setXaxisDotrange[1]`(value: Datum): Self = StObject.set(x, "xaxis.range[1]", value.asInstanceOf[js.Any])
+    inline def `setXaxisDotrange[1]`(value: Datum): Self = StObject.set(x, "xaxis.range[1]", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setXaxisDotrange[1]Null`: Self = StObject.set(x, "xaxis.range[1]", null)
+    inline def `setXaxisDotrange[1]Null`: Self = StObject.set(x, "xaxis.range[1]", null)
     
-    @scala.inline
-    def `setXaxisDotrange[1]Undefined`: Self = StObject.set(x, "xaxis.range[1]", js.undefined)
+    inline def `setXaxisDotrange[1]Undefined`: Self = StObject.set(x, "xaxis.range[1]", js.undefined)
     
-    @scala.inline
-    def setXaxisDottitle(value: String): Self = StObject.set(x, "xaxis.title", value.asInstanceOf[js.Any])
+    inline def setXaxisDottitle(value: String): Self = StObject.set(x, "xaxis.title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXaxisDottitleUndefined: Self = StObject.set(x, "xaxis.title", js.undefined)
+    inline def setXaxisDottitleUndefined: Self = StObject.set(x, "xaxis.title", js.undefined)
     
-    @scala.inline
-    def setXaxisDottype(value: AxisType): Self = StObject.set(x, "xaxis.type", value.asInstanceOf[js.Any])
+    inline def setXaxisDottype(value: AxisType): Self = StObject.set(x, "xaxis.type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXaxisDottypeUndefined: Self = StObject.set(x, "xaxis.type", js.undefined)
+    inline def setXaxisDottypeUndefined: Self = StObject.set(x, "xaxis.type", js.undefined)
     
-    @scala.inline
-    def setXaxisUndefined: Self = StObject.set(x, "xaxis", js.undefined)
+    inline def setXaxisUndefined: Self = StObject.set(x, "xaxis", js.undefined)
     
-    @scala.inline
-    def setYaxis(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "yaxis", value.asInstanceOf[js.Any])
+    inline def setYaxis(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "yaxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYaxis2(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "yaxis2", value.asInstanceOf[js.Any])
+    inline def setYaxis2(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "yaxis2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYaxis2Undefined: Self = StObject.set(x, "yaxis2", js.undefined)
+    inline def setYaxis2Undefined: Self = StObject.set(x, "yaxis2", js.undefined)
     
-    @scala.inline
-    def setYaxis3(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "yaxis3", value.asInstanceOf[js.Any])
+    inline def setYaxis3(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "yaxis3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYaxis3Undefined: Self = StObject.set(x, "yaxis3", js.undefined)
+    inline def setYaxis3Undefined: Self = StObject.set(x, "yaxis3", js.undefined)
     
-    @scala.inline
-    def setYaxis4(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "yaxis4", value.asInstanceOf[js.Any])
+    inline def setYaxis4(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "yaxis4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYaxis4Undefined: Self = StObject.set(x, "yaxis4", js.undefined)
+    inline def setYaxis4Undefined: Self = StObject.set(x, "yaxis4", js.undefined)
     
-    @scala.inline
-    def setYaxis5(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "yaxis5", value.asInstanceOf[js.Any])
+    inline def setYaxis5(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "yaxis5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYaxis5Undefined: Self = StObject.set(x, "yaxis5", js.undefined)
+    inline def setYaxis5Undefined: Self = StObject.set(x, "yaxis5", js.undefined)
     
-    @scala.inline
-    def setYaxis6(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "yaxis6", value.asInstanceOf[js.Any])
+    inline def setYaxis6(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "yaxis6", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYaxis6Undefined: Self = StObject.set(x, "yaxis6", js.undefined)
+    inline def setYaxis6Undefined: Self = StObject.set(x, "yaxis6", js.undefined)
     
-    @scala.inline
-    def setYaxis7(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "yaxis7", value.asInstanceOf[js.Any])
+    inline def setYaxis7(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "yaxis7", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYaxis7Undefined: Self = StObject.set(x, "yaxis7", js.undefined)
+    inline def setYaxis7Undefined: Self = StObject.set(x, "yaxis7", js.undefined)
     
-    @scala.inline
-    def setYaxis8(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "yaxis8", value.asInstanceOf[js.Any])
+    inline def setYaxis8(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "yaxis8", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYaxis8Undefined: Self = StObject.set(x, "yaxis8", js.undefined)
+    inline def setYaxis8Undefined: Self = StObject.set(x, "yaxis8", js.undefined)
     
-    @scala.inline
-    def setYaxis9(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "yaxis9", value.asInstanceOf[js.Any])
+    inline def setYaxis9(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "yaxis9", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYaxis9Undefined: Self = StObject.set(x, "yaxis9", js.undefined)
+    inline def setYaxis9Undefined: Self = StObject.set(x, "yaxis9", js.undefined)
     
-    @scala.inline
-    def setYaxisDotautorange(value: Boolean): Self = StObject.set(x, "yaxis.autorange", value.asInstanceOf[js.Any])
+    inline def setYaxisDotautorange(value: Boolean): Self = StObject.set(x, "yaxis.autorange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYaxisDotautorangeUndefined: Self = StObject.set(x, "yaxis.autorange", js.undefined)
+    inline def setYaxisDotautorangeUndefined: Self = StObject.set(x, "yaxis.autorange", js.undefined)
     
-    @scala.inline
-    def setYaxisDotrange(value: js.Tuple2[Datum, Datum]): Self = StObject.set(x, "yaxis.range", value.asInstanceOf[js.Any])
+    inline def setYaxisDotrange(value: js.Tuple2[Datum, Datum]): Self = StObject.set(x, "yaxis.range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYaxisDotrangeUndefined: Self = StObject.set(x, "yaxis.range", js.undefined)
+    inline def setYaxisDotrangeUndefined: Self = StObject.set(x, "yaxis.range", js.undefined)
     
-    @scala.inline
-    def `setYaxisDotrange[0]`(value: Datum): Self = StObject.set(x, "yaxis.range[0]", value.asInstanceOf[js.Any])
+    inline def `setYaxisDotrange[0]`(value: Datum): Self = StObject.set(x, "yaxis.range[0]", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setYaxisDotrange[0]Null`: Self = StObject.set(x, "yaxis.range[0]", null)
+    inline def `setYaxisDotrange[0]Null`: Self = StObject.set(x, "yaxis.range[0]", null)
     
-    @scala.inline
-    def `setYaxisDotrange[0]Undefined`: Self = StObject.set(x, "yaxis.range[0]", js.undefined)
+    inline def `setYaxisDotrange[0]Undefined`: Self = StObject.set(x, "yaxis.range[0]", js.undefined)
     
-    @scala.inline
-    def `setYaxisDotrange[1]`(value: Datum): Self = StObject.set(x, "yaxis.range[1]", value.asInstanceOf[js.Any])
+    inline def `setYaxisDotrange[1]`(value: Datum): Self = StObject.set(x, "yaxis.range[1]", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setYaxisDotrange[1]Null`: Self = StObject.set(x, "yaxis.range[1]", null)
+    inline def `setYaxisDotrange[1]Null`: Self = StObject.set(x, "yaxis.range[1]", null)
     
-    @scala.inline
-    def `setYaxisDotrange[1]Undefined`: Self = StObject.set(x, "yaxis.range[1]", js.undefined)
+    inline def `setYaxisDotrange[1]Undefined`: Self = StObject.set(x, "yaxis.range[1]", js.undefined)
     
-    @scala.inline
-    def setYaxisDottitle(value: String): Self = StObject.set(x, "yaxis.title", value.asInstanceOf[js.Any])
+    inline def setYaxisDottitle(value: String): Self = StObject.set(x, "yaxis.title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYaxisDottitleUndefined: Self = StObject.set(x, "yaxis.title", js.undefined)
+    inline def setYaxisDottitleUndefined: Self = StObject.set(x, "yaxis.title", js.undefined)
     
-    @scala.inline
-    def setYaxisDottype(value: AxisType): Self = StObject.set(x, "yaxis.type", value.asInstanceOf[js.Any])
+    inline def setYaxisDottype(value: AxisType): Self = StObject.set(x, "yaxis.type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYaxisDottypeUndefined: Self = StObject.set(x, "yaxis.type", js.undefined)
+    inline def setYaxisDottypeUndefined: Self = StObject.set(x, "yaxis.type", js.undefined)
     
-    @scala.inline
-    def setYaxisUndefined: Self = StObject.set(x, "yaxis", js.undefined)
+    inline def setYaxisUndefined: Self = StObject.set(x, "yaxis", js.undefined)
   }
 }

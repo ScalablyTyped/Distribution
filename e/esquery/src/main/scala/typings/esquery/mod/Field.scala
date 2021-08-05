@@ -20,20 +20,16 @@ trait Field
 }
 object Field {
   
-  @scala.inline
-  def apply(name: String): Field = {
+  inline def apply(name: String): Field = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("field")
     __obj.asInstanceOf[Field]
   }
   
-  @scala.inline
-  implicit class FieldMutableBuilder[Self <: Field] (val x: Self) extends AnyVal {
+  extension [Self <: Field](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: field): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: field): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

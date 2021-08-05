@@ -17,27 +17,22 @@ trait BulkSendingListSummaries extends StObject {
 }
 object BulkSendingListSummaries {
   
-  @scala.inline
-  def apply(): BulkSendingListSummaries = {
+  inline def apply(): BulkSendingListSummaries = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BulkSendingListSummaries]
   }
   
-  @scala.inline
-  implicit class BulkSendingListSummariesMutableBuilder[Self <: BulkSendingListSummaries] (val x: Self) extends AnyVal {
+  extension [Self <: BulkSendingListSummaries](x: Self) {
     
-    @scala.inline
-    def setBulkListSummaries(
+    inline def setBulkListSummaries(
       value: js.Array[
           /* This object contains basic information about a bulk send list. */ BulkSendingListSummary
         ]
     ): Self = StObject.set(x, "bulkListSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulkListSummariesUndefined: Self = StObject.set(x, "bulkListSummaries", js.undefined)
+    inline def setBulkListSummariesUndefined: Self = StObject.set(x, "bulkListSummaries", js.undefined)
     
-    @scala.inline
-    def setBulkListSummariesVarargs(
+    inline def setBulkListSummariesVarargs(
       value: (/* This object contains basic information about a bulk send list. */ BulkSendingListSummary)*
     ): Self = StObject.set(x, "bulkListSummaries", js.Array(value :_*))
   }

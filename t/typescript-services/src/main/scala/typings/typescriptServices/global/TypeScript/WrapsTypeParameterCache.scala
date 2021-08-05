@@ -11,7 +11,7 @@ class WrapsTypeParameterCache ()
   extends StObject
      with typings.typescriptServices.TypeScript.WrapsTypeParameterCache {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _wrapsTypeParameterCache: js.Any = js.native
   
   /* CompleteClass */

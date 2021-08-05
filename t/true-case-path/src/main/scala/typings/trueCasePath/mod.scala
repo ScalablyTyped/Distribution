@@ -10,13 +10,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def trueCasePath(filePath: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("trueCasePath")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def trueCasePath(filePath: String, basePath: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("trueCasePath")(filePath.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def trueCasePath(filePath: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("trueCasePath")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def trueCasePath(filePath: String, basePath: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("trueCasePath")(filePath.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def trueCasePathSync(filePath: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("trueCasePathSync")(filePath.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def trueCasePathSync(filePath: String, basePath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("trueCasePathSync")(filePath.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def trueCasePathSync(filePath: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("trueCasePathSync")(filePath.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def trueCasePathSync(filePath: String, basePath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("trueCasePathSync")(filePath.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[String]
 }

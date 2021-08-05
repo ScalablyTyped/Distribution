@@ -70,8 +70,7 @@ trait MapViewTakeScreenshotOptions
 }
 object MapViewTakeScreenshotOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -80,58 +79,40 @@ object MapViewTakeScreenshotOptions {
     __obj.asInstanceOf[MapViewTakeScreenshotOptions]
   }
   
-  @scala.inline
-  implicit class MapViewTakeScreenshotOptionsMutableBuilder[Self <: MapViewTakeScreenshotOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MapViewTakeScreenshotOptions](x: Self) {
     
-    @scala.inline
-    def setArea(value: MapViewTakeScreenshotOptionsArea): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
+    inline def setArea(value: MapViewTakeScreenshotOptionsArea): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAreaUndefined: Self = StObject.set(x, "area", js.undefined)
+    inline def setAreaUndefined: Self = StObject.set(x, "area", js.undefined)
     
-    @scala.inline
-    def setFormat(value: jpg | png): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: jpg | png): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setIgnoreBackground(value: Boolean): Self = StObject.set(x, "ignoreBackground", value.asInstanceOf[js.Any])
+    inline def setIgnoreBackground(value: Boolean): Self = StObject.set(x, "ignoreBackground", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreBackgroundUndefined: Self = StObject.set(x, "ignoreBackground", js.undefined)
+    inline def setIgnoreBackgroundUndefined: Self = StObject.set(x, "ignoreBackground", js.undefined)
     
-    @scala.inline
-    def setIgnorePadding(value: Boolean): Self = StObject.set(x, "ignorePadding", value.asInstanceOf[js.Any])
+    inline def setIgnorePadding(value: Boolean): Self = StObject.set(x, "ignorePadding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnorePaddingUndefined: Self = StObject.set(x, "ignorePadding", js.undefined)
+    inline def setIgnorePaddingUndefined: Self = StObject.set(x, "ignorePadding", js.undefined)
     
-    @scala.inline
-    def setLayers(value: js.Array[Layer]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+    inline def setLayers(value: js.Array[Layer]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
+    inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
-    @scala.inline
-    def setLayersVarargs(value: Layer*): Self = StObject.set(x, "layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: Layer*): Self = StObject.set(x, "layers", js.Array(value :_*))
     
-    @scala.inline
-    def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+    inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+    inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

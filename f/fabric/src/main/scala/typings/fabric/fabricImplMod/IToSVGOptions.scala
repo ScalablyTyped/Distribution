@@ -33,43 +33,31 @@ trait IToSVGOptions extends StObject {
 }
 object IToSVGOptions {
   
-  @scala.inline
-  def apply(): IToSVGOptions = {
+  inline def apply(): IToSVGOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IToSVGOptions]
   }
   
-  @scala.inline
-  implicit class IToSVGOptionsMutableBuilder[Self <: IToSVGOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IToSVGOptions](x: Self) {
     
-    @scala.inline
-    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setSuppressPreamble(value: Boolean): Self = StObject.set(x, "suppressPreamble", value.asInstanceOf[js.Any])
+    inline def setSuppressPreamble(value: Boolean): Self = StObject.set(x, "suppressPreamble", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuppressPreambleUndefined: Self = StObject.set(x, "suppressPreamble", js.undefined)
+    inline def setSuppressPreambleUndefined: Self = StObject.set(x, "suppressPreamble", js.undefined)
     
-    @scala.inline
-    def setViewBox(value: IViewBox): Self = StObject.set(x, "viewBox", value.asInstanceOf[js.Any])
+    inline def setViewBox(value: IViewBox): Self = StObject.set(x, "viewBox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewBoxUndefined: Self = StObject.set(x, "viewBox", js.undefined)
+    inline def setViewBoxUndefined: Self = StObject.set(x, "viewBox", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

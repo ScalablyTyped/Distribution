@@ -11,14 +11,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def pascalCase(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pascalCase")(input.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def pascalCase(input: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pascalCase")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def pascalCase(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pascalCase")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def pascalCase(input: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pascalCase")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def pascalCaseTransform(input: String, index: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pascalCaseTransform")(input.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def pascalCaseTransform(input: String, index: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pascalCaseTransform")(input.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def pascalCaseTransformMerge(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pascalCaseTransformMerge")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def pascalCaseTransformMerge(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pascalCaseTransformMerge")(input.asInstanceOf[js.Any]).asInstanceOf[String]
 }

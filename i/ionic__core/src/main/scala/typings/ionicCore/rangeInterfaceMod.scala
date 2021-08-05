@@ -20,17 +20,14 @@ object rangeInterfaceMod {
   }
   object RangeChangeEventDetail {
     
-    @scala.inline
-    def apply(value: RangeValue): RangeChangeEventDetail = {
+    inline def apply(value: RangeValue): RangeChangeEventDetail = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[RangeChangeEventDetail]
     }
     
-    @scala.inline
-    implicit class RangeChangeEventDetailMutableBuilder[Self <: RangeChangeEventDetail] (val x: Self) extends AnyVal {
+    extension [Self <: RangeChangeEventDetail](x: Self) {
       
-      @scala.inline
-      def setValue(value: RangeValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: RangeValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

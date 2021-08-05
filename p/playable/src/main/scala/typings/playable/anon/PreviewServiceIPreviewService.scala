@@ -11,16 +11,13 @@ trait PreviewServiceIPreviewService extends StObject {
 }
 object PreviewServiceIPreviewService {
   
-  @scala.inline
-  def apply(previewService: IPreviewService): PreviewServiceIPreviewService = {
+  inline def apply(previewService: IPreviewService): PreviewServiceIPreviewService = {
     val __obj = js.Dynamic.literal(previewService = previewService.asInstanceOf[js.Any])
     __obj.asInstanceOf[PreviewServiceIPreviewService]
   }
   
-  @scala.inline
-  implicit class PreviewServiceIPreviewServiceMutableBuilder[Self <: PreviewServiceIPreviewService] (val x: Self) extends AnyVal {
+  extension [Self <: PreviewServiceIPreviewService](x: Self) {
     
-    @scala.inline
-    def setPreviewService(value: IPreviewService): Self = StObject.set(x, "previewService", value.asInstanceOf[js.Any])
+    inline def setPreviewService(value: IPreviewService): Self = StObject.set(x, "previewService", value.asInstanceOf[js.Any])
   }
 }

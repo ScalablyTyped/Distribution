@@ -24,20 +24,16 @@ object mod extends Shortcut {
   }
   object detectPassiveEvents {
     
-    @scala.inline
-    def apply(hasSupport: Boolean, update: () => Unit): typings.detectPassiveEvents.mod.detectPassiveEvents = {
+    inline def apply(hasSupport: Boolean, update: () => Unit): typings.detectPassiveEvents.mod.detectPassiveEvents = {
       val __obj = js.Dynamic.literal(hasSupport = hasSupport.asInstanceOf[js.Any], update = js.Any.fromFunction0(update))
       __obj.asInstanceOf[typings.detectPassiveEvents.mod.detectPassiveEvents]
     }
     
-    @scala.inline
-    implicit class detectPassiveEventsMutableBuilder[Self <: typings.detectPassiveEvents.mod.detectPassiveEvents] (val x: Self) extends AnyVal {
+    extension [Self <: typings.detectPassiveEvents.mod.detectPassiveEvents](x: Self) {
       
-      @scala.inline
-      def setHasSupport(value: Boolean): Self = StObject.set(x, "hasSupport", value.asInstanceOf[js.Any])
+      inline def setHasSupport(value: Boolean): Self = StObject.set(x, "hasSupport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+      inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     }
   }
 }

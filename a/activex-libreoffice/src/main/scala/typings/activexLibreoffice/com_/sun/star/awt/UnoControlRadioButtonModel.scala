@@ -135,8 +135,7 @@ trait UnoControlRadioButtonModel
 }
 object UnoControlRadioButtonModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Align: Double,
     BackgroundColor: Double,
     DefaultControl: String,
@@ -196,73 +195,50 @@ object UnoControlRadioButtonModel {
     __obj.asInstanceOf[UnoControlRadioButtonModel]
   }
   
-  @scala.inline
-  implicit class UnoControlRadioButtonModelMutableBuilder[Self <: UnoControlRadioButtonModel] (val x: Self) extends AnyVal {
+  extension [Self <: UnoControlRadioButtonModel](x: Self) {
     
-    @scala.inline
-    def setAlign(value: Double): Self = StObject.set(x, "Align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: Double): Self = StObject.set(x, "Align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColor(value: Double): Self = StObject.set(x, "BackgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: Double): Self = StObject.set(x, "BackgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontDescriptor(value: FontDescriptor): Self = StObject.set(x, "FontDescriptor", value.asInstanceOf[js.Any])
+    inline def setFontDescriptor(value: FontDescriptor): Self = StObject.set(x, "FontDescriptor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontEmphasisMark(value: Double): Self = StObject.set(x, "FontEmphasisMark", value.asInstanceOf[js.Any])
+    inline def setFontEmphasisMark(value: Double): Self = StObject.set(x, "FontEmphasisMark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontRelief(value: Double): Self = StObject.set(x, "FontRelief", value.asInstanceOf[js.Any])
+    inline def setFontRelief(value: Double): Self = StObject.set(x, "FontRelief", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
+    inline def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGraphic(value: XGraphic): Self = StObject.set(x, "Graphic", value.asInstanceOf[js.Any])
+    inline def setGraphic(value: XGraphic): Self = StObject.set(x, "Graphic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelpText(value: String): Self = StObject.set(x, "HelpText", value.asInstanceOf[js.Any])
+    inline def setHelpText(value: String): Self = StObject.set(x, "HelpText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelpURL(value: String): Self = StObject.set(x, "HelpURL", value.asInstanceOf[js.Any])
+    inline def setHelpURL(value: String): Self = StObject.set(x, "HelpURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagePosition(value: Double): Self = StObject.set(x, "ImagePosition", value.asInstanceOf[js.Any])
+    inline def setImagePosition(value: Double): Self = StObject.set(x, "ImagePosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageURL(value: String): Self = StObject.set(x, "ImageURL", value.asInstanceOf[js.Any])
+    inline def setImageURL(value: String): Self = StObject.set(x, "ImageURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiLine(value: Boolean): Self = StObject.set(x, "MultiLine", value.asInstanceOf[js.Any])
+    inline def setMultiLine(value: Boolean): Self = StObject.set(x, "MultiLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintable(value: Boolean): Self = StObject.set(x, "Printable", value.asInstanceOf[js.Any])
+    inline def setPrintable(value: Boolean): Self = StObject.set(x, "Printable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: Double): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: Double): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabstop(value: Boolean): Self = StObject.set(x, "Tabstop", value.asInstanceOf[js.Any])
+    inline def setTabstop(value: Boolean): Self = StObject.set(x, "Tabstop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextColor(value: Color): Self = StObject.set(x, "TextColor", value.asInstanceOf[js.Any])
+    inline def setTextColor(value: Color): Self = StObject.set(x, "TextColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextLineColor(value: Color): Self = StObject.set(x, "TextLineColor", value.asInstanceOf[js.Any])
+    inline def setTextLineColor(value: Color): Self = StObject.set(x, "TextLineColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalAlign(value: VerticalAlignment): Self = StObject.set(x, "VerticalAlign", value.asInstanceOf[js.Any])
+    inline def setVerticalAlign(value: VerticalAlignment): Self = StObject.set(x, "VerticalAlign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisualEffect(value: Double): Self = StObject.set(x, "VisualEffect", value.asInstanceOf[js.Any])
+    inline def setVisualEffect(value: Double): Self = StObject.set(x, "VisualEffect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWritingMode(value: Double): Self = StObject.set(x, "WritingMode", value.asInstanceOf[js.Any])
+    inline def setWritingMode(value: Double): Self = StObject.set(x, "WritingMode", value.asInstanceOf[js.Any])
   }
 }

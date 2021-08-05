@@ -12,28 +12,21 @@ trait HostListener extends StObject {
 }
 object HostListener {
   
-  @scala.inline
-  def apply(): HostListener = {
+  inline def apply(): HostListener = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HostListener]
   }
   
-  @scala.inline
-  implicit class HostListenerMutableBuilder[Self <: HostListener] (val x: Self) extends AnyVal {
+  extension [Self <: HostListener](x: Self) {
     
-    @scala.inline
-    def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+    inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    @scala.inline
-    def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
     
-    @scala.inline
-    def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
+    inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventNameUndefined: Self = StObject.set(x, "eventName", js.undefined)
+    inline def setEventNameUndefined: Self = StObject.set(x, "eventName", js.undefined)
   }
 }

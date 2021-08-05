@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FilterType extends StObject
 object FilterType {
   
-  @scala.inline
-  def checkbox: typings.muiDatatables.muiDatatablesStrings.checkbox = "checkbox".asInstanceOf[typings.muiDatatables.muiDatatablesStrings.checkbox]
+  inline def checkbox: typings.muiDatatables.muiDatatablesStrings.checkbox = "checkbox".asInstanceOf[typings.muiDatatables.muiDatatablesStrings.checkbox]
   
-  @scala.inline
-  def custom: typings.muiDatatables.muiDatatablesStrings.custom = "custom".asInstanceOf[typings.muiDatatables.muiDatatablesStrings.custom]
+  inline def custom: typings.muiDatatables.muiDatatablesStrings.custom = "custom".asInstanceOf[typings.muiDatatables.muiDatatablesStrings.custom]
   
-  @scala.inline
-  def dropdown: typings.muiDatatables.muiDatatablesStrings.dropdown = "dropdown".asInstanceOf[typings.muiDatatables.muiDatatablesStrings.dropdown]
+  inline def dropdown: typings.muiDatatables.muiDatatablesStrings.dropdown = "dropdown".asInstanceOf[typings.muiDatatables.muiDatatablesStrings.dropdown]
   
-  @scala.inline
-  def multiselect: typings.muiDatatables.muiDatatablesStrings.multiselect = "multiselect".asInstanceOf[typings.muiDatatables.muiDatatablesStrings.multiselect]
+  inline def multiselect: typings.muiDatatables.muiDatatablesStrings.multiselect = "multiselect".asInstanceOf[typings.muiDatatables.muiDatatablesStrings.multiselect]
   
-  @scala.inline
-  def textField: typings.muiDatatables.muiDatatablesStrings.textField = "textField".asInstanceOf[typings.muiDatatables.muiDatatablesStrings.textField]
+  inline def textField: typings.muiDatatables.muiDatatablesStrings.textField = "textField".asInstanceOf[typings.muiDatatables.muiDatatablesStrings.textField]
 }

@@ -10,19 +10,15 @@ trait SchemaUrlMapsValidateResponse extends StObject {
 }
 object SchemaUrlMapsValidateResponse {
   
-  @scala.inline
-  def apply(): SchemaUrlMapsValidateResponse = {
+  inline def apply(): SchemaUrlMapsValidateResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUrlMapsValidateResponse]
   }
   
-  @scala.inline
-  implicit class SchemaUrlMapsValidateResponseMutableBuilder[Self <: SchemaUrlMapsValidateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUrlMapsValidateResponse](x: Self) {
     
-    @scala.inline
-    def setResult(value: SchemaUrlMapValidationResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: SchemaUrlMapValidationResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
   }
 }

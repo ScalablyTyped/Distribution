@@ -10,8 +10,7 @@ trait VendorPropertiesHyphenFallback[TLength]
      with VendorShorthandPropertiesHyphenFallback[TLength]
 object VendorPropertiesHyphenFallback {
   
-  @scala.inline
-  def apply[TLength](): VendorPropertiesHyphenFallback[TLength] = {
+  inline def apply[TLength](): VendorPropertiesHyphenFallback[TLength] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VendorPropertiesHyphenFallback[TLength]]
   }

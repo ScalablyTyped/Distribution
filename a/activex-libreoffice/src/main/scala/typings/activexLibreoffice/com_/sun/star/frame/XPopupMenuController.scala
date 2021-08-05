@@ -36,8 +36,7 @@ trait XPopupMenuController
 }
 object XPopupMenuController {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -48,13 +47,10 @@ object XPopupMenuController {
     __obj.asInstanceOf[XPopupMenuController]
   }
   
-  @scala.inline
-  implicit class XPopupMenuControllerMutableBuilder[Self <: XPopupMenuController] (val x: Self) extends AnyVal {
+  extension [Self <: XPopupMenuController](x: Self) {
     
-    @scala.inline
-    def setSetPopupMenu(value: XPopupMenu => Unit): Self = StObject.set(x, "setPopupMenu", js.Any.fromFunction1(value))
+    inline def setSetPopupMenu(value: XPopupMenu => Unit): Self = StObject.set(x, "setPopupMenu", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdatePopupMenu(value: () => Unit): Self = StObject.set(x, "updatePopupMenu", js.Any.fromFunction0(value))
+    inline def setUpdatePopupMenu(value: () => Unit): Self = StObject.set(x, "updatePopupMenu", js.Any.fromFunction0(value))
   }
 }

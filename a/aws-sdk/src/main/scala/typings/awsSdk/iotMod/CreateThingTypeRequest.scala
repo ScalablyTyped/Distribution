@@ -23,31 +23,23 @@ trait CreateThingTypeRequest extends StObject {
 }
 object CreateThingTypeRequest {
   
-  @scala.inline
-  def apply(thingTypeName: ThingTypeName): CreateThingTypeRequest = {
+  inline def apply(thingTypeName: ThingTypeName): CreateThingTypeRequest = {
     val __obj = js.Dynamic.literal(thingTypeName = thingTypeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateThingTypeRequest]
   }
   
-  @scala.inline
-  implicit class CreateThingTypeRequestMutableBuilder[Self <: CreateThingTypeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateThingTypeRequest](x: Self) {
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setThingTypeName(value: ThingTypeName): Self = StObject.set(x, "thingTypeName", value.asInstanceOf[js.Any])
+    inline def setThingTypeName(value: ThingTypeName): Self = StObject.set(x, "thingTypeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingTypeProperties(value: ThingTypeProperties): Self = StObject.set(x, "thingTypeProperties", value.asInstanceOf[js.Any])
+    inline def setThingTypeProperties(value: ThingTypeProperties): Self = StObject.set(x, "thingTypeProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingTypePropertiesUndefined: Self = StObject.set(x, "thingTypeProperties", js.undefined)
+    inline def setThingTypePropertiesUndefined: Self = StObject.set(x, "thingTypeProperties", js.undefined)
   }
 }

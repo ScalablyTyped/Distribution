@@ -22,28 +22,21 @@ trait SchemaCompositeTypesListResponse extends StObject {
 }
 object SchemaCompositeTypesListResponse {
   
-  @scala.inline
-  def apply(): SchemaCompositeTypesListResponse = {
+  inline def apply(): SchemaCompositeTypesListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCompositeTypesListResponse]
   }
   
-  @scala.inline
-  implicit class SchemaCompositeTypesListResponseMutableBuilder[Self <: SchemaCompositeTypesListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCompositeTypesListResponse](x: Self) {
     
-    @scala.inline
-    def setCompositeTypes(value: js.Array[SchemaCompositeType]): Self = StObject.set(x, "compositeTypes", value.asInstanceOf[js.Any])
+    inline def setCompositeTypes(value: js.Array[SchemaCompositeType]): Self = StObject.set(x, "compositeTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompositeTypesUndefined: Self = StObject.set(x, "compositeTypes", js.undefined)
+    inline def setCompositeTypesUndefined: Self = StObject.set(x, "compositeTypes", js.undefined)
     
-    @scala.inline
-    def setCompositeTypesVarargs(value: SchemaCompositeType*): Self = StObject.set(x, "compositeTypes", js.Array(value :_*))
+    inline def setCompositeTypesVarargs(value: SchemaCompositeType*): Self = StObject.set(x, "compositeTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

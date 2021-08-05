@@ -14,28 +14,21 @@ trait GoogleCloudDialogflowV2beta1IntentMessageRbmText extends StObject {
 }
 object GoogleCloudDialogflowV2beta1IntentMessageRbmText {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2beta1IntentMessageRbmText = {
+  inline def apply(): GoogleCloudDialogflowV2beta1IntentMessageRbmText = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1IntentMessageRbmText]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2beta1IntentMessageRbmTextMutableBuilder[Self <: GoogleCloudDialogflowV2beta1IntentMessageRbmText] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2beta1IntentMessageRbmText](x: Self) {
     
-    @scala.inline
-    def setRbmSuggestion(value: js.Array[GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestion]): Self = StObject.set(x, "rbmSuggestion", value.asInstanceOf[js.Any])
+    inline def setRbmSuggestion(value: js.Array[GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestion]): Self = StObject.set(x, "rbmSuggestion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRbmSuggestionUndefined: Self = StObject.set(x, "rbmSuggestion", js.undefined)
+    inline def setRbmSuggestionUndefined: Self = StObject.set(x, "rbmSuggestion", js.undefined)
     
-    @scala.inline
-    def setRbmSuggestionVarargs(value: GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestion*): Self = StObject.set(x, "rbmSuggestion", js.Array(value :_*))
+    inline def setRbmSuggestionVarargs(value: GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestion*): Self = StObject.set(x, "rbmSuggestion", js.Array(value :_*))
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

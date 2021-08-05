@@ -14,8 +14,7 @@ object useKeyValueMappingMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(cacheKeyMap: Map[Key, FlattenDataNode], cacheValueMap: Map[RawValueType, FlattenDataNode]): js.Tuple2[
+  inline def default(cacheKeyMap: Map[Key, FlattenDataNode], cacheValueMap: Map[RawValueType, FlattenDataNode]): js.Tuple2[
     js.Function3[
       /* key */ Key, 
       /* skipType */ js.UndefOr[SkipType], 
@@ -43,8 +42,7 @@ object useKeyValueMappingMod {
     ]
   ]]
   
-  @scala.inline
-  def isDisabled(dataNode: FlattenDataNode, skipType: SkipType): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isDisabled")(dataNode.asInstanceOf[js.Any], skipType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isDisabled(dataNode: FlattenDataNode, skipType: SkipType): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isDisabled")(dataNode.asInstanceOf[js.Any], skipType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* Rewritten from type alias, can be one of: 
     - scala.Null

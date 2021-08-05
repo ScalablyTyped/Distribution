@@ -21,30 +21,25 @@ object Breakpoints {
   @JSImport("react-foundation/enums", "Breakpoints.LARGE")
   @js.native
   def LARGE: Breakpoints = js.native
-  @scala.inline
-  def LARGE_=(x: Breakpoints): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LARGE")(x.asInstanceOf[js.Any])
+  inline def LARGE_=(x: Breakpoints): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LARGE")(x.asInstanceOf[js.Any])
   
   @JSImport("react-foundation/enums", "Breakpoints.MEDIUM")
   @js.native
   def MEDIUM: Breakpoints = js.native
-  @scala.inline
-  def MEDIUM_=(x: Breakpoints): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MEDIUM")(x.asInstanceOf[js.Any])
+  inline def MEDIUM_=(x: Breakpoints): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MEDIUM")(x.asInstanceOf[js.Any])
   
   @JSImport("react-foundation/enums", "Breakpoints.SMALL")
   @js.native
   def SMALL: Breakpoints = js.native
-  @scala.inline
-  def SMALL_=(x: Breakpoints): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SMALL")(x.asInstanceOf[js.Any])
+  inline def SMALL_=(x: Breakpoints): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SMALL")(x.asInstanceOf[js.Any])
   
   @JSImport("react-foundation/enums", "Breakpoints.XLARGE")
   @js.native
   def XLARGE: Breakpoints = js.native
-  @scala.inline
-  def XLARGE_=(x: Breakpoints): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XLARGE")(x.asInstanceOf[js.Any])
+  inline def XLARGE_=(x: Breakpoints): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XLARGE")(x.asInstanceOf[js.Any])
   
   @JSImport("react-foundation/enums", "Breakpoints.XXLARGE")
   @js.native
   def XXLARGE: Breakpoints = js.native
-  @scala.inline
-  def XXLARGE_=(x: Breakpoints): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XXLARGE")(x.asInstanceOf[js.Any])
+  inline def XXLARGE_=(x: Breakpoints): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XXLARGE")(x.asInstanceOf[js.Any])
 }

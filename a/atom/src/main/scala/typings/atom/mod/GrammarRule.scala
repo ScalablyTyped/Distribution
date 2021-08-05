@@ -16,22 +16,17 @@ trait GrammarRule extends StObject {
 }
 object GrammarRule {
   
-  @scala.inline
-  def apply(contentScopeName: String, rule: js.Object, scopeName: String): GrammarRule = {
+  inline def apply(contentScopeName: String, rule: js.Object, scopeName: String): GrammarRule = {
     val __obj = js.Dynamic.literal(contentScopeName = contentScopeName.asInstanceOf[js.Any], rule = rule.asInstanceOf[js.Any], scopeName = scopeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GrammarRule]
   }
   
-  @scala.inline
-  implicit class GrammarRuleMutableBuilder[Self <: GrammarRule] (val x: Self) extends AnyVal {
+  extension [Self <: GrammarRule](x: Self) {
     
-    @scala.inline
-    def setContentScopeName(value: String): Self = StObject.set(x, "contentScopeName", value.asInstanceOf[js.Any])
+    inline def setContentScopeName(value: String): Self = StObject.set(x, "contentScopeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRule(value: js.Object): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+    inline def setRule(value: js.Object): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeName(value: String): Self = StObject.set(x, "scopeName", value.asInstanceOf[js.Any])
+    inline def setScopeName(value: String): Self = StObject.set(x, "scopeName", value.asInstanceOf[js.Any])
   }
 }

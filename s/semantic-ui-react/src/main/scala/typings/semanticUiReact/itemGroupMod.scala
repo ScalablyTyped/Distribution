@@ -25,8 +25,7 @@ object itemGroupMod extends Shortcut {
        with /* key */ StringDictionary[js.Any]
   object ItemGroupProps {
     
-    @scala.inline
-    def apply(): ItemGroupProps = {
+    inline def apply(): ItemGroupProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ItemGroupProps]
     }
@@ -63,71 +62,50 @@ object itemGroupMod extends Shortcut {
   }
   object StrictItemGroupProps {
     
-    @scala.inline
-    def apply(): StrictItemGroupProps = {
+    inline def apply(): StrictItemGroupProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictItemGroupProps]
     }
     
-    @scala.inline
-    implicit class StrictItemGroupPropsMutableBuilder[Self <: StrictItemGroupProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictItemGroupProps](x: Self) {
       
-      @scala.inline
-      def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setContent(value: SemanticShorthandContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: SemanticShorthandContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setDivided(value: Boolean): Self = StObject.set(x, "divided", value.asInstanceOf[js.Any])
+      inline def setDivided(value: Boolean): Self = StObject.set(x, "divided", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDividedUndefined: Self = StObject.set(x, "divided", js.undefined)
+      inline def setDividedUndefined: Self = StObject.set(x, "divided", js.undefined)
       
-      @scala.inline
-      def setItems(value: SemanticShorthandCollection[ItemProps]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: SemanticShorthandCollection[ItemProps]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      @scala.inline
-      def setItemsVarargs(value: SemanticShorthandItem[ItemProps]*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: SemanticShorthandItem[ItemProps]*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setLink(value: Boolean): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+      inline def setLink(value: Boolean): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+      inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
       
-      @scala.inline
-      def setRelaxed(value: Boolean | very): Self = StObject.set(x, "relaxed", value.asInstanceOf[js.Any])
+      inline def setRelaxed(value: Boolean | very): Self = StObject.set(x, "relaxed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelaxedUndefined: Self = StObject.set(x, "relaxed", js.undefined)
+      inline def setRelaxedUndefined: Self = StObject.set(x, "relaxed", js.undefined)
       
-      @scala.inline
-      def setUnstackable(value: Boolean): Self = StObject.set(x, "unstackable", value.asInstanceOf[js.Any])
+      inline def setUnstackable(value: Boolean): Self = StObject.set(x, "unstackable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnstackableUndefined: Self = StObject.set(x, "unstackable", js.undefined)
+      inline def setUnstackableUndefined: Self = StObject.set(x, "unstackable", js.undefined)
     }
   }
   

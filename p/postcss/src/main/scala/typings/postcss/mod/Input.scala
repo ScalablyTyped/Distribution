@@ -49,37 +49,27 @@ trait Input extends StObject {
 }
 object Input {
   
-  @scala.inline
-  def apply(from: String, hasBOM: Boolean, map: PreviousMap, origin: (Double, Double) => InputOrigin | `false`): Input = {
+  inline def apply(from: String, hasBOM: Boolean, map: PreviousMap, origin: (Double, Double) => InputOrigin | `false`): Input = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], hasBOM = hasBOM.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], origin = js.Any.fromFunction2(origin))
     __obj.asInstanceOf[Input]
   }
   
-  @scala.inline
-  implicit class InputMutableBuilder[Self <: Input] (val x: Self) extends AnyVal {
+  extension [Self <: Input](x: Self) {
     
-    @scala.inline
-    def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+    inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
-    @scala.inline
-    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasBOM(value: Boolean): Self = StObject.set(x, "hasBOM", value.asInstanceOf[js.Any])
+    inline def setHasBOM(value: Boolean): Self = StObject.set(x, "hasBOM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setMap(value: PreviousMap): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: PreviousMap): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrigin(value: (Double, Double) => InputOrigin | `false`): Self = StObject.set(x, "origin", js.Any.fromFunction2(value))
+    inline def setOrigin(value: (Double, Double) => InputOrigin | `false`): Self = StObject.set(x, "origin", js.Any.fromFunction2(value))
   }
 }

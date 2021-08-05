@@ -48,8 +48,7 @@ trait ScalingPlan extends StObject {
 }
 object ScalingPlan {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ApplicationSource: ApplicationSource,
     ScalingInstructions: ScalingInstructions,
     ScalingPlanName: ScalingPlanName,
@@ -60,43 +59,30 @@ object ScalingPlan {
     __obj.asInstanceOf[ScalingPlan]
   }
   
-  @scala.inline
-  implicit class ScalingPlanMutableBuilder[Self <: ScalingPlan] (val x: Self) extends AnyVal {
+  extension [Self <: ScalingPlan](x: Self) {
     
-    @scala.inline
-    def setApplicationSource(value: ApplicationSource): Self = StObject.set(x, "ApplicationSource", value.asInstanceOf[js.Any])
+    inline def setApplicationSource(value: ApplicationSource): Self = StObject.set(x, "ApplicationSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTime(value: TimestampType): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: TimestampType): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
-    @scala.inline
-    def setScalingInstructions(value: ScalingInstructions): Self = StObject.set(x, "ScalingInstructions", value.asInstanceOf[js.Any])
+    inline def setScalingInstructions(value: ScalingInstructions): Self = StObject.set(x, "ScalingInstructions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalingInstructionsVarargs(value: ScalingInstruction*): Self = StObject.set(x, "ScalingInstructions", js.Array(value :_*))
+    inline def setScalingInstructionsVarargs(value: ScalingInstruction*): Self = StObject.set(x, "ScalingInstructions", js.Array(value :_*))
     
-    @scala.inline
-    def setScalingPlanName(value: ScalingPlanName): Self = StObject.set(x, "ScalingPlanName", value.asInstanceOf[js.Any])
+    inline def setScalingPlanName(value: ScalingPlanName): Self = StObject.set(x, "ScalingPlanName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalingPlanVersion(value: ScalingPlanVersion): Self = StObject.set(x, "ScalingPlanVersion", value.asInstanceOf[js.Any])
+    inline def setScalingPlanVersion(value: ScalingPlanVersion): Self = StObject.set(x, "ScalingPlanVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCode(value: ScalingPlanStatusCode): Self = StObject.set(x, "StatusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: ScalingPlanStatusCode): Self = StObject.set(x, "StatusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessage(value: XmlString): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
+    inline def setStatusMessage(value: XmlString): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
+    inline def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
     
-    @scala.inline
-    def setStatusStartTime(value: TimestampType): Self = StObject.set(x, "StatusStartTime", value.asInstanceOf[js.Any])
+    inline def setStatusStartTime(value: TimestampType): Self = StObject.set(x, "StatusStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusStartTimeUndefined: Self = StObject.set(x, "StatusStartTime", js.undefined)
+    inline def setStatusStartTimeUndefined: Self = StObject.set(x, "StatusStartTime", js.undefined)
   }
 }

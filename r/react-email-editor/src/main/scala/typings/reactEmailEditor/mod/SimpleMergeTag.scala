@@ -14,19 +14,15 @@ trait SimpleMergeTag
 }
 object SimpleMergeTag {
   
-  @scala.inline
-  def apply(name: String, value: String): SimpleMergeTag = {
+  inline def apply(name: String, value: String): SimpleMergeTag = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleMergeTag]
   }
   
-  @scala.inline
-  implicit class SimpleMergeTagMutableBuilder[Self <: SimpleMergeTag] (val x: Self) extends AnyVal {
+  extension [Self <: SimpleMergeTag](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

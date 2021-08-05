@@ -13,8 +13,7 @@ trait CoreWindowDialog
      with ICoreWindowDialog
 object CoreWindowDialog {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     backButtonCommand: /* command */ IUICommand => Unit,
     cancelCommandIndex: Double,
     commands: IVector[IUICommand],

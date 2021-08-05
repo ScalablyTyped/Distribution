@@ -12,19 +12,15 @@ trait Corpora extends StObject {
 }
 object Corpora {
   
-  @scala.inline
-  def apply(corpora: js.Array[Corpus]): Corpora = {
+  inline def apply(corpora: js.Array[Corpus]): Corpora = {
     val __obj = js.Dynamic.literal(corpora = corpora.asInstanceOf[js.Any])
     __obj.asInstanceOf[Corpora]
   }
   
-  @scala.inline
-  implicit class CorporaMutableBuilder[Self <: Corpora] (val x: Self) extends AnyVal {
+  extension [Self <: Corpora](x: Self) {
     
-    @scala.inline
-    def setCorpora(value: js.Array[Corpus]): Self = StObject.set(x, "corpora", value.asInstanceOf[js.Any])
+    inline def setCorpora(value: js.Array[Corpus]): Self = StObject.set(x, "corpora", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorporaVarargs(value: Corpus*): Self = StObject.set(x, "corpora", js.Array(value :_*))
+    inline def setCorporaVarargs(value: Corpus*): Self = StObject.set(x, "corpora", js.Array(value :_*))
   }
 }

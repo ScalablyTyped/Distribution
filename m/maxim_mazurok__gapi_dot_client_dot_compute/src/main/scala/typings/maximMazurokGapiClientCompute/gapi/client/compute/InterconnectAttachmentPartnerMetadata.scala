@@ -23,31 +23,23 @@ trait InterconnectAttachmentPartnerMetadata extends StObject {
 }
 object InterconnectAttachmentPartnerMetadata {
   
-  @scala.inline
-  def apply(): InterconnectAttachmentPartnerMetadata = {
+  inline def apply(): InterconnectAttachmentPartnerMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InterconnectAttachmentPartnerMetadata]
   }
   
-  @scala.inline
-  implicit class InterconnectAttachmentPartnerMetadataMutableBuilder[Self <: InterconnectAttachmentPartnerMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: InterconnectAttachmentPartnerMetadata](x: Self) {
     
-    @scala.inline
-    def setInterconnectName(value: String): Self = StObject.set(x, "interconnectName", value.asInstanceOf[js.Any])
+    inline def setInterconnectName(value: String): Self = StObject.set(x, "interconnectName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterconnectNameUndefined: Self = StObject.set(x, "interconnectName", js.undefined)
+    inline def setInterconnectNameUndefined: Self = StObject.set(x, "interconnectName", js.undefined)
     
-    @scala.inline
-    def setPartnerName(value: String): Self = StObject.set(x, "partnerName", value.asInstanceOf[js.Any])
+    inline def setPartnerName(value: String): Self = StObject.set(x, "partnerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartnerNameUndefined: Self = StObject.set(x, "partnerName", js.undefined)
+    inline def setPartnerNameUndefined: Self = StObject.set(x, "partnerName", js.undefined)
     
-    @scala.inline
-    def setPortalUrl(value: String): Self = StObject.set(x, "portalUrl", value.asInstanceOf[js.Any])
+    inline def setPortalUrl(value: String): Self = StObject.set(x, "portalUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortalUrlUndefined: Self = StObject.set(x, "portalUrl", js.undefined)
+    inline def setPortalUrlUndefined: Self = StObject.set(x, "portalUrl", js.undefined)
   }
 }

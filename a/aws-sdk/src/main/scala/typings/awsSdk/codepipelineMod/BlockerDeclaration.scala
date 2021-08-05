@@ -18,20 +18,16 @@ trait BlockerDeclaration extends StObject {
 }
 object BlockerDeclaration {
   
-  @scala.inline
-  def apply(name: BlockerName, `type`: BlockerType): BlockerDeclaration = {
+  inline def apply(name: BlockerName, `type`: BlockerType): BlockerDeclaration = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockerDeclaration]
   }
   
-  @scala.inline
-  implicit class BlockerDeclarationMutableBuilder[Self <: BlockerDeclaration] (val x: Self) extends AnyVal {
+  extension [Self <: BlockerDeclaration](x: Self) {
     
-    @scala.inline
-    def setName(value: BlockerName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: BlockerName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: BlockerType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: BlockerType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

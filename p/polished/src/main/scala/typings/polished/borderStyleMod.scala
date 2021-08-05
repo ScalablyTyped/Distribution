@@ -11,6 +11,5 @@ object borderStyleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(values: (Null | Unit | String)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(values.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  inline def default(values: (Null | Unit | String)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(values.asInstanceOf[js.Any]).asInstanceOf[Styles]
 }

@@ -13,16 +13,13 @@ trait AcceptHandshakeRequest extends StObject {
 }
 object AcceptHandshakeRequest {
   
-  @scala.inline
-  def apply(HandshakeId: HandshakeId): AcceptHandshakeRequest = {
+  inline def apply(HandshakeId: HandshakeId): AcceptHandshakeRequest = {
     val __obj = js.Dynamic.literal(HandshakeId = HandshakeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcceptHandshakeRequest]
   }
   
-  @scala.inline
-  implicit class AcceptHandshakeRequestMutableBuilder[Self <: AcceptHandshakeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AcceptHandshakeRequest](x: Self) {
     
-    @scala.inline
-    def setHandshakeId(value: HandshakeId): Self = StObject.set(x, "HandshakeId", value.asInstanceOf[js.Any])
+    inline def setHandshakeId(value: HandshakeId): Self = StObject.set(x, "HandshakeId", value.asInstanceOf[js.Any])
   }
 }

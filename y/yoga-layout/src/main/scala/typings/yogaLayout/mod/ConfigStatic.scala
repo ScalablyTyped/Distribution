@@ -12,19 +12,15 @@ trait ConfigStatic extends StObject {
 }
 object ConfigStatic {
   
-  @scala.inline
-  def apply(create: () => YogaConfig, destroy: YogaConfig => js.Any): ConfigStatic = {
+  inline def apply(create: () => YogaConfig, destroy: YogaConfig => js.Any): ConfigStatic = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction0(create), destroy = js.Any.fromFunction1(destroy))
     __obj.asInstanceOf[ConfigStatic]
   }
   
-  @scala.inline
-  implicit class ConfigStaticMutableBuilder[Self <: ConfigStatic] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigStatic](x: Self) {
     
-    @scala.inline
-    def setCreate(value: () => YogaConfig): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
+    inline def setCreate(value: () => YogaConfig): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDestroy(value: YogaConfig => js.Any): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
+    inline def setDestroy(value: YogaConfig => js.Any): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
   }
 }

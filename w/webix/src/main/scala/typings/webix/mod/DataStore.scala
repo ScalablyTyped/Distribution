@@ -157,6 +157,5 @@ trait DataStore extends StObject {
 }
 object DataStore {
   
-  @scala.inline
-  def apply: DataStore = ^.asInstanceOf[js.Dynamic].selectDynamic("DataStore").asInstanceOf[DataStore]
+  inline def apply: DataStore = ^.asInstanceOf[js.Dynamic].selectDynamic("DataStore").asInstanceOf[DataStore]
 }

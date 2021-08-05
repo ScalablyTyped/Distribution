@@ -6,22 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vscode", "Breakpoint")
 @js.native
-class Breakpoint protected () extends StObject {
-  protected def this(enabled: Boolean) = this()
-  protected def this(enabled: Boolean, condition: String) = this()
-  protected def this(enabled: Unit, condition: String) = this()
-  protected def this(enabled: Boolean, condition: String, hitCondition: String) = this()
-  protected def this(enabled: Boolean, condition: Unit, hitCondition: String) = this()
-  protected def this(enabled: Unit, condition: String, hitCondition: String) = this()
-  protected def this(enabled: Unit, condition: Unit, hitCondition: String) = this()
-  protected def this(enabled: Boolean, condition: String, hitCondition: String, logMessage: String) = this()
-  protected def this(enabled: Boolean, condition: String, hitCondition: Unit, logMessage: String) = this()
-  protected def this(enabled: Boolean, condition: Unit, hitCondition: String, logMessage: String) = this()
-  protected def this(enabled: Boolean, condition: Unit, hitCondition: Unit, logMessage: String) = this()
-  protected def this(enabled: Unit, condition: String, hitCondition: String, logMessage: String) = this()
-  protected def this(enabled: Unit, condition: String, hitCondition: Unit, logMessage: String) = this()
-  protected def this(enabled: Unit, condition: Unit, hitCondition: String, logMessage: String) = this()
-  protected def this(enabled: Unit, condition: Unit, hitCondition: Unit, logMessage: String) = this()
+/* protected */ class Breakpoint () extends StObject {
+  /* protected */ def this(enabled: Boolean) = this()
+  /* protected */ def this(enabled: Boolean, condition: String) = this()
+  /* protected */ def this(enabled: Unit, condition: String) = this()
+  /* protected */ def this(enabled: Boolean, condition: String, hitCondition: String) = this()
+  /* protected */ def this(enabled: Boolean, condition: Unit, hitCondition: String) = this()
+  /* protected */ def this(enabled: Unit, condition: String, hitCondition: String) = this()
+  /* protected */ def this(enabled: Unit, condition: Unit, hitCondition: String) = this()
+  /* protected */ def this(enabled: Boolean, condition: String, hitCondition: String, logMessage: String) = this()
+  /* protected */ def this(enabled: Boolean, condition: String, hitCondition: Unit, logMessage: String) = this()
+  /* protected */ def this(enabled: Boolean, condition: Unit, hitCondition: String, logMessage: String) = this()
+  /* protected */ def this(enabled: Boolean, condition: Unit, hitCondition: Unit, logMessage: String) = this()
+  /* protected */ def this(enabled: Unit, condition: String, hitCondition: String, logMessage: String) = this()
+  /* protected */ def this(enabled: Unit, condition: String, hitCondition: Unit, logMessage: String) = this()
+  /* protected */ def this(enabled: Unit, condition: Unit, hitCondition: String, logMessage: String) = this()
+  /* protected */ def this(enabled: Unit, condition: Unit, hitCondition: Unit, logMessage: String) = this()
   
   /**
     * An optional expression for conditional breakpoints.

@@ -16,8 +16,7 @@ trait LongRecordNarrowRecord extends StObject {
 }
 object LongRecordNarrowRecord {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     long: Record[ScriptCode, String],
     narrow: Record[ScriptCode, String],
     short: Record[ScriptCode, String]
@@ -26,16 +25,12 @@ object LongRecordNarrowRecord {
     __obj.asInstanceOf[LongRecordNarrowRecord]
   }
   
-  @scala.inline
-  implicit class LongRecordNarrowRecordMutableBuilder[Self <: LongRecordNarrowRecord] (val x: Self) extends AnyVal {
+  extension [Self <: LongRecordNarrowRecord](x: Self) {
     
-    @scala.inline
-    def setLong(value: Record[ScriptCode, String]): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
+    inline def setLong(value: Record[ScriptCode, String]): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNarrow(value: Record[ScriptCode, String]): Self = StObject.set(x, "narrow", value.asInstanceOf[js.Any])
+    inline def setNarrow(value: Record[ScriptCode, String]): Self = StObject.set(x, "narrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShort(value: Record[ScriptCode, String]): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
+    inline def setShort(value: Record[ScriptCode, String]): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
   }
 }

@@ -67,54 +67,40 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAdditionalFormatters(
+      inline def setAdditionalFormatters(
         value: js.Array[
               js.Function2[/* errors */ js.Array[WebpackError], /* type */ Severity, js.Array[String]]
             ]
       ): Self = StObject.set(x, "additionalFormatters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalFormattersUndefined: Self = StObject.set(x, "additionalFormatters", js.undefined)
+      inline def setAdditionalFormattersUndefined: Self = StObject.set(x, "additionalFormatters", js.undefined)
       
-      @scala.inline
-      def setAdditionalFormattersVarargs(value: (js.Function2[/* errors */ js.Array[WebpackError], /* type */ Severity, js.Array[String]])*): Self = StObject.set(x, "additionalFormatters", js.Array(value :_*))
+      inline def setAdditionalFormattersVarargs(value: (js.Function2[/* errors */ js.Array[WebpackError], /* type */ Severity, js.Array[String]])*): Self = StObject.set(x, "additionalFormatters", js.Array(value :_*))
       
-      @scala.inline
-      def setAdditionalTransformers(value: js.Array[js.Function1[/* error */ js.Any, js.Any]]): Self = StObject.set(x, "additionalTransformers", value.asInstanceOf[js.Any])
+      inline def setAdditionalTransformers(value: js.Array[js.Function1[/* error */ js.Any, js.Any]]): Self = StObject.set(x, "additionalTransformers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalTransformersUndefined: Self = StObject.set(x, "additionalTransformers", js.undefined)
+      inline def setAdditionalTransformersUndefined: Self = StObject.set(x, "additionalTransformers", js.undefined)
       
-      @scala.inline
-      def setAdditionalTransformersVarargs(value: (js.Function1[/* error */ js.Any, js.Any])*): Self = StObject.set(x, "additionalTransformers", js.Array(value :_*))
+      inline def setAdditionalTransformersVarargs(value: (js.Function1[/* error */ js.Any, js.Any])*): Self = StObject.set(x, "additionalTransformers", js.Array(value :_*))
       
-      @scala.inline
-      def setClearConsole(value: Boolean): Self = StObject.set(x, "clearConsole", value.asInstanceOf[js.Any])
+      inline def setClearConsole(value: Boolean): Self = StObject.set(x, "clearConsole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearConsoleUndefined: Self = StObject.set(x, "clearConsole", js.undefined)
+      inline def setClearConsoleUndefined: Self = StObject.set(x, "clearConsole", js.undefined)
       
-      @scala.inline
-      def setCompilationSuccessInfo(value: Messages): Self = StObject.set(x, "compilationSuccessInfo", value.asInstanceOf[js.Any])
+      inline def setCompilationSuccessInfo(value: Messages): Self = StObject.set(x, "compilationSuccessInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompilationSuccessInfoUndefined: Self = StObject.set(x, "compilationSuccessInfo", js.undefined)
+      inline def setCompilationSuccessInfoUndefined: Self = StObject.set(x, "compilationSuccessInfo", js.undefined)
       
-      @scala.inline
-      def setOnErrors(value: (/* severity */ Severity, /* errors */ String) => Unit): Self = StObject.set(x, "onErrors", js.Any.fromFunction2(value))
+      inline def setOnErrors(value: (/* severity */ Severity, /* errors */ String) => Unit): Self = StObject.set(x, "onErrors", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnErrorsUndefined: Self = StObject.set(x, "onErrors", js.undefined)
+      inline def setOnErrorsUndefined: Self = StObject.set(x, "onErrors", js.undefined)
     }
   }
   
@@ -134,8 +120,7 @@ object mod {
   }
   object WebpackError {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       file: String,
       message: String,
       name: String,
@@ -147,26 +132,19 @@ object mod {
       __obj.asInstanceOf[WebpackError]
     }
     
-    @scala.inline
-    implicit class WebpackErrorMutableBuilder[Self <: WebpackError] (val x: Self) extends AnyVal {
+    extension [Self <: WebpackError](x: Self) {
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeverity(value: Severity): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+      inline def setSeverity(value: Severity): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebpackError(value: js.Any): Self = StObject.set(x, "webpackError", value.asInstanceOf[js.Any])
+      inline def setWebpackError(value: js.Any): Self = StObject.set(x, "webpackError", value.asInstanceOf[js.Any])
     }
   }
 }

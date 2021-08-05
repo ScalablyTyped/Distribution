@@ -13,17 +13,14 @@ object typesNoSuchKeyMod {
   }
   object NoSuchKey {
     
-    @scala.inline
-    def apply(): NoSuchKey = {
+    inline def apply(): NoSuchKey = {
       val __obj = js.Dynamic.literal(name = "NoSuchKey")
       __obj.asInstanceOf[NoSuchKey]
     }
     
-    @scala.inline
-    implicit class NoSuchKeyMutableBuilder[Self <: NoSuchKey] (val x: Self) extends AnyVal {
+    extension [Self <: NoSuchKey](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.NoSuchKey): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.NoSuchKey): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

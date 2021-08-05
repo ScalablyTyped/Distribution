@@ -18,25 +18,19 @@ trait CreateFileOptions extends StObject {
 }
 object CreateFileOptions {
   
-  @scala.inline
-  def apply(): CreateFileOptions = {
+  inline def apply(): CreateFileOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateFileOptions]
   }
   
-  @scala.inline
-  implicit class CreateFileOptionsMutableBuilder[Self <: CreateFileOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CreateFileOptions](x: Self) {
     
-    @scala.inline
-    def setIgnoreIfExists(value: Boolean): Self = StObject.set(x, "ignoreIfExists", value.asInstanceOf[js.Any])
+    inline def setIgnoreIfExists(value: Boolean): Self = StObject.set(x, "ignoreIfExists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreIfExistsUndefined: Self = StObject.set(x, "ignoreIfExists", js.undefined)
+    inline def setIgnoreIfExistsUndefined: Self = StObject.set(x, "ignoreIfExists", js.undefined)
     
-    @scala.inline
-    def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
+    inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
+    inline def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
   }
 }

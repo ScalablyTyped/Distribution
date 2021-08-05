@@ -10,19 +10,15 @@ trait Silenceable extends StObject {
 }
 object Silenceable {
   
-  @scala.inline
-  def apply(): Silenceable = {
+  inline def apply(): Silenceable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Silenceable]
   }
   
-  @scala.inline
-  implicit class SilenceableMutableBuilder[Self <: Silenceable] (val x: Self) extends AnyVal {
+  extension [Self <: Silenceable](x: Self) {
     
-    @scala.inline
-    def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+    inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+    inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
   }
 }

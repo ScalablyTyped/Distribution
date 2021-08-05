@@ -26,23 +26,18 @@ object mod extends Shortcut {
   }
   object detectTouchEvents {
     
-    @scala.inline
-    def apply(hasApi: Boolean, maxTouchPoints: Double, update: () => Unit): typings.detectTouchEvents.mod.detectTouchEvents = {
+    inline def apply(hasApi: Boolean, maxTouchPoints: Double, update: () => Unit): typings.detectTouchEvents.mod.detectTouchEvents = {
       val __obj = js.Dynamic.literal(hasApi = hasApi.asInstanceOf[js.Any], maxTouchPoints = maxTouchPoints.asInstanceOf[js.Any], update = js.Any.fromFunction0(update))
       __obj.asInstanceOf[typings.detectTouchEvents.mod.detectTouchEvents]
     }
     
-    @scala.inline
-    implicit class detectTouchEventsMutableBuilder[Self <: typings.detectTouchEvents.mod.detectTouchEvents] (val x: Self) extends AnyVal {
+    extension [Self <: typings.detectTouchEvents.mod.detectTouchEvents](x: Self) {
       
-      @scala.inline
-      def setHasApi(value: Boolean): Self = StObject.set(x, "hasApi", value.asInstanceOf[js.Any])
+      inline def setHasApi(value: Boolean): Self = StObject.set(x, "hasApi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxTouchPoints(value: Double): Self = StObject.set(x, "maxTouchPoints", value.asInstanceOf[js.Any])
+      inline def setMaxTouchPoints(value: Double): Self = StObject.set(x, "maxTouchPoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+      inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     }
   }
 }

@@ -28,37 +28,27 @@ trait TransitionState extends StObject {
 }
 object TransitionState {
   
-  @scala.inline
-  def apply(): TransitionState = {
+  inline def apply(): TransitionState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TransitionState]
   }
   
-  @scala.inline
-  implicit class TransitionStateMutableBuilder[Self <: TransitionState] (val x: Self) extends AnyVal {
+  extension [Self <: TransitionState](x: Self) {
     
-    @scala.inline
-    def setDisabledReason(value: DisabledReason): Self = StObject.set(x, "disabledReason", value.asInstanceOf[js.Any])
+    inline def setDisabledReason(value: DisabledReason): Self = StObject.set(x, "disabledReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledReasonUndefined: Self = StObject.set(x, "disabledReason", js.undefined)
+    inline def setDisabledReasonUndefined: Self = StObject.set(x, "disabledReason", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Enabled): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Enabled): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setLastChangedAt(value: LastChangedAt): Self = StObject.set(x, "lastChangedAt", value.asInstanceOf[js.Any])
+    inline def setLastChangedAt(value: LastChangedAt): Self = StObject.set(x, "lastChangedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastChangedAtUndefined: Self = StObject.set(x, "lastChangedAt", js.undefined)
+    inline def setLastChangedAtUndefined: Self = StObject.set(x, "lastChangedAt", js.undefined)
     
-    @scala.inline
-    def setLastChangedBy(value: LastChangedBy): Self = StObject.set(x, "lastChangedBy", value.asInstanceOf[js.Any])
+    inline def setLastChangedBy(value: LastChangedBy): Self = StObject.set(x, "lastChangedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastChangedByUndefined: Self = StObject.set(x, "lastChangedBy", js.undefined)
+    inline def setLastChangedByUndefined: Self = StObject.set(x, "lastChangedBy", js.undefined)
   }
 }

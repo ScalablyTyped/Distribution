@@ -23,8 +23,7 @@ trait KmlTimeStamp
 }
 object KmlTimeStamp {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
     equals_ : KmlObject => Boolean,
@@ -46,10 +45,8 @@ object KmlTimeStamp {
     __obj.asInstanceOf[KmlTimeStamp]
   }
   
-  @scala.inline
-  implicit class KmlTimeStampMutableBuilder[Self <: KmlTimeStamp] (val x: Self) extends AnyVal {
+  extension [Self <: KmlTimeStamp](x: Self) {
     
-    @scala.inline
-    def setGetWhen(value: () => KmlDateTime): Self = StObject.set(x, "getWhen", js.Any.fromFunction0(value))
+    inline def setGetWhen(value: () => KmlDateTime): Self = StObject.set(x, "getWhen", js.Any.fromFunction0(value))
   }
 }

@@ -14,25 +14,19 @@ trait DatabaseName extends StObject {
 }
 object DatabaseName {
   
-  @scala.inline
-  def apply(name: String, schema: String): DatabaseName = {
+  inline def apply(name: String, schema: String): DatabaseName = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatabaseName]
   }
   
-  @scala.inline
-  implicit class DatabaseNameMutableBuilder[Self <: DatabaseName] (val x: Self) extends AnyVal {
+  extension [Self <: DatabaseName](x: Self) {
     
-    @scala.inline
-    def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+    inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
+    inline def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
   }
 }

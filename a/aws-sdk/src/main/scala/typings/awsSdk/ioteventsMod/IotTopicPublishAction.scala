@@ -18,22 +18,17 @@ trait IotTopicPublishAction extends StObject {
 }
 object IotTopicPublishAction {
   
-  @scala.inline
-  def apply(mqttTopic: MQTTTopic): IotTopicPublishAction = {
+  inline def apply(mqttTopic: MQTTTopic): IotTopicPublishAction = {
     val __obj = js.Dynamic.literal(mqttTopic = mqttTopic.asInstanceOf[js.Any])
     __obj.asInstanceOf[IotTopicPublishAction]
   }
   
-  @scala.inline
-  implicit class IotTopicPublishActionMutableBuilder[Self <: IotTopicPublishAction] (val x: Self) extends AnyVal {
+  extension [Self <: IotTopicPublishAction](x: Self) {
     
-    @scala.inline
-    def setMqttTopic(value: MQTTTopic): Self = StObject.set(x, "mqttTopic", value.asInstanceOf[js.Any])
+    inline def setMqttTopic(value: MQTTTopic): Self = StObject.set(x, "mqttTopic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
   }
 }

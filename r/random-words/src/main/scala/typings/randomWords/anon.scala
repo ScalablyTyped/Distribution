@@ -28,59 +28,42 @@ object anon {
   }
   object Optionsjoinstring {
     
-    @scala.inline
-    def apply(join: js.UndefOr[String] & String): Optionsjoinstring = {
+    inline def apply(join: js.UndefOr[String] & String): Optionsjoinstring = {
       val __obj = js.Dynamic.literal(join = join.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsjoinstring]
     }
     
-    @scala.inline
-    implicit class OptionsjoinstringMutableBuilder[Self <: Optionsjoinstring] (val x: Self) extends AnyVal {
+    extension [Self <: Optionsjoinstring](x: Self) {
       
-      @scala.inline
-      def setExactly(value: Double): Self = StObject.set(x, "exactly", value.asInstanceOf[js.Any])
+      inline def setExactly(value: Double): Self = StObject.set(x, "exactly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExactlyUndefined: Self = StObject.set(x, "exactly", js.undefined)
+      inline def setExactlyUndefined: Self = StObject.set(x, "exactly", js.undefined)
       
-      @scala.inline
-      def setFormatter(value: (/* word */ String, /* relativeIndex */ js.UndefOr[Double]) => String): Self = StObject.set(x, "formatter", js.Any.fromFunction2(value))
+      inline def setFormatter(value: (/* word */ String, /* relativeIndex */ js.UndefOr[Double]) => String): Self = StObject.set(x, "formatter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
+      inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
       
-      @scala.inline
-      def setJoin(value: js.UndefOr[String] & String): Self = StObject.set(x, "join", value.asInstanceOf[js.Any])
+      inline def setJoin(value: js.UndefOr[String] & String): Self = StObject.set(x, "join", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+      inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
+      inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      @scala.inline
-      def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+      inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+      inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
       
-      @scala.inline
-      def setWordsPerString(value: Double): Self = StObject.set(x, "wordsPerString", value.asInstanceOf[js.Any])
+      inline def setWordsPerString(value: Double): Self = StObject.set(x, "wordsPerString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWordsPerStringUndefined: Self = StObject.set(x, "wordsPerString", js.undefined)
+      inline def setWordsPerStringUndefined: Self = StObject.set(x, "wordsPerString", js.undefined)
     }
   }
 }

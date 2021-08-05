@@ -17,25 +17,19 @@ trait MatchingCriteria extends StObject {
 }
 object MatchingCriteria {
   
-  @scala.inline
-  def apply(): MatchingCriteria = {
+  inline def apply(): MatchingCriteria = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MatchingCriteria]
   }
   
-  @scala.inline
-  implicit class MatchingCriteriaMutableBuilder[Self <: MatchingCriteria] (val x: Self) extends AnyVal {
+  extension [Self <: MatchingCriteria](x: Self) {
     
-    @scala.inline
-    def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+    inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
+    inline def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

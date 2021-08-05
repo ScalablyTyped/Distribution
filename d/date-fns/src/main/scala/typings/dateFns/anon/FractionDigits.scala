@@ -13,19 +13,15 @@ trait FractionDigits extends StObject {
 }
 object FractionDigits {
   
-  @scala.inline
-  def apply(): FractionDigits = {
+  inline def apply(): FractionDigits = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FractionDigits]
   }
   
-  @scala.inline
-  implicit class FractionDigitsMutableBuilder[Self <: FractionDigits] (val x: Self) extends AnyVal {
+  extension [Self <: FractionDigits](x: Self) {
     
-    @scala.inline
-    def setFractionDigits(value: typings.dateFns.dateFnsNumbers.`0` | `1` | `2` | `3`): Self = StObject.set(x, "fractionDigits", value.asInstanceOf[js.Any])
+    inline def setFractionDigits(value: typings.dateFns.dateFnsNumbers.`0` | `1` | `2` | `3`): Self = StObject.set(x, "fractionDigits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFractionDigitsUndefined: Self = StObject.set(x, "fractionDigits", js.undefined)
+    inline def setFractionDigitsUndefined: Self = StObject.set(x, "fractionDigits", js.undefined)
   }
 }

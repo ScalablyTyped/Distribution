@@ -10,16 +10,13 @@ trait Grouping extends StObject {
 }
 object Grouping {
   
-  @scala.inline
-  def apply(expression: Expression): Grouping = {
+  inline def apply(expression: Expression): Grouping = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
     __obj.asInstanceOf[Grouping]
   }
   
-  @scala.inline
-  implicit class GroupingMutableBuilder[Self <: Grouping] (val x: Self) extends AnyVal {
+  extension [Self <: Grouping](x: Self) {
     
-    @scala.inline
-    def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
   }
 }

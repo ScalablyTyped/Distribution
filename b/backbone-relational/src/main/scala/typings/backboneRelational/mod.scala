@@ -161,26 +161,17 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def build(attributes: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(attributes.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    @scala.inline
-    def build(attributes: js.Any, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(attributes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def build(attributes: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(attributes.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def build(attributes: js.Any, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(attributes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @scala.inline
-    def findOrCreate(attributes: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreate")(attributes.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    @scala.inline
-    def findOrCreate(attributes: String, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreate")(attributes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def findOrCreate(attributes: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreate")(attributes.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    @scala.inline
-    def findOrCreate(attributes: js.Any, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreate")(attributes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def findOrCreate(attributes: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreate")(attributes.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    @scala.inline
-    def findOrCreate(attributes: Double, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreate")(attributes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def findOrCreate(attributes: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreate")(attributes.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def findOrCreate(attributes: String, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreate")(attributes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def findOrCreate(attributes: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreate")(attributes.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def findOrCreate(attributes: js.Any, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreate")(attributes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def findOrCreate(attributes: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreate")(attributes.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def findOrCreate(attributes: Double, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreate")(attributes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @scala.inline
-    def setup(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")().asInstanceOf[js.Any]
+    inline def setup(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")().asInstanceOf[js.Any]
   }
   
   @JSImport("backbone-relational", "Relation")
@@ -269,14 +260,10 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def find(`type`: js.Any, item: String): Model = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(`type`.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Model]
-    @scala.inline
-    def find(`type`: js.Any, item: js.Any): Model = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(`type`.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Model]
-    @scala.inline
-    def find(`type`: js.Any, item: Double): Model = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(`type`.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Model]
-    @scala.inline
-    def find(`type`: js.Any, item: Model): Model = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(`type`.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Model]
+    inline def find(`type`: js.Any, item: String): Model = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(`type`.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Model]
+    inline def find(`type`: js.Any, item: js.Any): Model = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(`type`.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Model]
+    inline def find(`type`: js.Any, item: Double): Model = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(`type`.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Model]
+    inline def find(`type`: js.Any, item: Model): Model = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(`type`.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Model]
   }
   
   @JSImport("backbone-relational", "store")

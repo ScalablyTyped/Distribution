@@ -10,16 +10,13 @@ trait Configure extends StObject {
 }
 object Configure {
   
-  @scala.inline
-  def apply(configure: HitsPerPage): Configure = {
+  inline def apply(configure: HitsPerPage): Configure = {
     val __obj = js.Dynamic.literal(configure = configure.asInstanceOf[js.Any])
     __obj.asInstanceOf[Configure]
   }
   
-  @scala.inline
-  implicit class ConfigureMutableBuilder[Self <: Configure] (val x: Self) extends AnyVal {
+  extension [Self <: Configure](x: Self) {
     
-    @scala.inline
-    def setConfigure(value: HitsPerPage): Self = StObject.set(x, "configure", value.asInstanceOf[js.Any])
+    inline def setConfigure(value: HitsPerPage): Self = StObject.set(x, "configure", value.asInstanceOf[js.Any])
   }
 }

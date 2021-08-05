@@ -18,19 +18,15 @@ trait DeleteEventsConfigurationRequest extends StObject {
 }
 object DeleteEventsConfigurationRequest {
   
-  @scala.inline
-  def apply(AccountId: NonEmptyString, BotId: NonEmptyString): DeleteEventsConfigurationRequest = {
+  inline def apply(AccountId: NonEmptyString, BotId: NonEmptyString): DeleteEventsConfigurationRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], BotId = BotId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteEventsConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class DeleteEventsConfigurationRequestMutableBuilder[Self <: DeleteEventsConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteEventsConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: NonEmptyString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: NonEmptyString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBotId(value: NonEmptyString): Self = StObject.set(x, "BotId", value.asInstanceOf[js.Any])
+    inline def setBotId(value: NonEmptyString): Self = StObject.set(x, "BotId", value.asInstanceOf[js.Any])
   }
 }

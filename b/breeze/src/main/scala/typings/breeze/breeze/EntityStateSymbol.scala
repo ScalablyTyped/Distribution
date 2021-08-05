@@ -26,8 +26,7 @@ trait EntityStateSymbol
 }
 object EntityStateSymbol {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getName: () => String,
     isAdded: () => Boolean,
     isAddedModifiedOrDeleted: () => Boolean,
@@ -42,28 +41,20 @@ object EntityStateSymbol {
     __obj.asInstanceOf[EntityStateSymbol]
   }
   
-  @scala.inline
-  implicit class EntityStateSymbolMutableBuilder[Self <: EntityStateSymbol] (val x: Self) extends AnyVal {
+  extension [Self <: EntityStateSymbol](x: Self) {
     
-    @scala.inline
-    def setIsAdded(value: () => Boolean): Self = StObject.set(x, "isAdded", js.Any.fromFunction0(value))
+    inline def setIsAdded(value: () => Boolean): Self = StObject.set(x, "isAdded", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsAddedModifiedOrDeleted(value: () => Boolean): Self = StObject.set(x, "isAddedModifiedOrDeleted", js.Any.fromFunction0(value))
+    inline def setIsAddedModifiedOrDeleted(value: () => Boolean): Self = StObject.set(x, "isAddedModifiedOrDeleted", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsDeleted(value: () => Boolean): Self = StObject.set(x, "isDeleted", js.Any.fromFunction0(value))
+    inline def setIsDeleted(value: () => Boolean): Self = StObject.set(x, "isDeleted", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsDetached(value: () => Boolean): Self = StObject.set(x, "isDetached", js.Any.fromFunction0(value))
+    inline def setIsDetached(value: () => Boolean): Self = StObject.set(x, "isDetached", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsModified(value: () => Boolean): Self = StObject.set(x, "isModified", js.Any.fromFunction0(value))
+    inline def setIsModified(value: () => Boolean): Self = StObject.set(x, "isModified", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsUnchanged(value: () => Boolean): Self = StObject.set(x, "isUnchanged", js.Any.fromFunction0(value))
+    inline def setIsUnchanged(value: () => Boolean): Self = StObject.set(x, "isUnchanged", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsUnchangedOrModified(value: () => Boolean): Self = StObject.set(x, "isUnchangedOrModified", js.Any.fromFunction0(value))
+    inline def setIsUnchangedOrModified(value: () => Boolean): Self = StObject.set(x, "isUnchangedOrModified", js.Any.fromFunction0(value))
   }
 }

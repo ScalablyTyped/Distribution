@@ -22,55 +22,39 @@ trait ReplyToMessage extends StObject {
 }
 object ReplyToMessage {
   
-  @scala.inline
-  def apply(): ReplyToMessage = {
+  inline def apply(): ReplyToMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReplyToMessage]
   }
   
-  @scala.inline
-  implicit class ReplyToMessageMutableBuilder[Self <: ReplyToMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ReplyToMessage](x: Self) {
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+    inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+    inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
-    @scala.inline
-    def setNotification(value: Boolean): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
+    inline def setNotification(value: Boolean): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
+    inline def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
     
-    @scala.inline
-    def setReplyMarkup(value: js.Any): Self = StObject.set(x, "replyMarkup", value.asInstanceOf[js.Any])
+    inline def setReplyMarkup(value: js.Any): Self = StObject.set(x, "replyMarkup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplyMarkupUndefined: Self = StObject.set(x, "replyMarkup", js.undefined)
+    inline def setReplyMarkupUndefined: Self = StObject.set(x, "replyMarkup", js.undefined)
     
-    @scala.inline
-    def setReplyToMessage(value: Double): Self = StObject.set(x, "replyToMessage", value.asInstanceOf[js.Any])
+    inline def setReplyToMessage(value: Double): Self = StObject.set(x, "replyToMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplyToMessageUndefined: Self = StObject.set(x, "replyToMessage", js.undefined)
+    inline def setReplyToMessageUndefined: Self = StObject.set(x, "replyToMessage", js.undefined)
     
-    @scala.inline
-    def setServerDownload(value: Boolean): Self = StObject.set(x, "serverDownload", value.asInstanceOf[js.Any])
+    inline def setServerDownload(value: Boolean): Self = StObject.set(x, "serverDownload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerDownloadUndefined: Self = StObject.set(x, "serverDownload", js.undefined)
+    inline def setServerDownloadUndefined: Self = StObject.set(x, "serverDownload", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait GetRequestedServiceQuotaChangeResponse extends StObject {
 }
 object GetRequestedServiceQuotaChangeResponse {
   
-  @scala.inline
-  def apply(): GetRequestedServiceQuotaChangeResponse = {
+  inline def apply(): GetRequestedServiceQuotaChangeResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetRequestedServiceQuotaChangeResponse]
   }
   
-  @scala.inline
-  implicit class GetRequestedServiceQuotaChangeResponseMutableBuilder[Self <: GetRequestedServiceQuotaChangeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetRequestedServiceQuotaChangeResponse](x: Self) {
     
-    @scala.inline
-    def setRequestedQuota(value: RequestedServiceQuotaChange): Self = StObject.set(x, "RequestedQuota", value.asInstanceOf[js.Any])
+    inline def setRequestedQuota(value: RequestedServiceQuotaChange): Self = StObject.set(x, "RequestedQuota", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestedQuotaUndefined: Self = StObject.set(x, "RequestedQuota", js.undefined)
+    inline def setRequestedQuotaUndefined: Self = StObject.set(x, "RequestedQuota", js.undefined)
   }
 }

@@ -36,23 +36,18 @@ object mod {
   }
   object Tabulator {
     
-    @scala.inline
-    def apply(defaultShowAttribute: String, toHtmlTable: js.Object => js.Any, toMatrix: js.Object => js.Object): Tabulator = {
+    inline def apply(defaultShowAttribute: String, toHtmlTable: js.Object => js.Any, toMatrix: js.Object => js.Object): Tabulator = {
       val __obj = js.Dynamic.literal(defaultShowAttribute = defaultShowAttribute.asInstanceOf[js.Any], toHtmlTable = js.Any.fromFunction1(toHtmlTable), toMatrix = js.Any.fromFunction1(toMatrix))
       __obj.asInstanceOf[Tabulator]
     }
     
-    @scala.inline
-    implicit class TabulatorMutableBuilder[Self <: Tabulator] (val x: Self) extends AnyVal {
+    extension [Self <: Tabulator](x: Self) {
       
-      @scala.inline
-      def setDefaultShowAttribute(value: String): Self = StObject.set(x, "defaultShowAttribute", value.asInstanceOf[js.Any])
+      inline def setDefaultShowAttribute(value: String): Self = StObject.set(x, "defaultShowAttribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToHtmlTable(value: js.Object => js.Any): Self = StObject.set(x, "toHtmlTable", js.Any.fromFunction1(value))
+      inline def setToHtmlTable(value: js.Object => js.Any): Self = StObject.set(x, "toHtmlTable", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToMatrix(value: js.Object => js.Object): Self = StObject.set(x, "toMatrix", js.Any.fromFunction1(value))
+      inline def setToMatrix(value: js.Object => js.Object): Self = StObject.set(x, "toMatrix", js.Any.fromFunction1(value))
     }
   }
 }

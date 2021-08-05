@@ -13,16 +13,13 @@ trait DisconnectCustomKeyStoreRequest extends StObject {
 }
 object DisconnectCustomKeyStoreRequest {
   
-  @scala.inline
-  def apply(CustomKeyStoreId: CustomKeyStoreIdType): DisconnectCustomKeyStoreRequest = {
+  inline def apply(CustomKeyStoreId: CustomKeyStoreIdType): DisconnectCustomKeyStoreRequest = {
     val __obj = js.Dynamic.literal(CustomKeyStoreId = CustomKeyStoreId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisconnectCustomKeyStoreRequest]
   }
   
-  @scala.inline
-  implicit class DisconnectCustomKeyStoreRequestMutableBuilder[Self <: DisconnectCustomKeyStoreRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisconnectCustomKeyStoreRequest](x: Self) {
     
-    @scala.inline
-    def setCustomKeyStoreId(value: CustomKeyStoreIdType): Self = StObject.set(x, "CustomKeyStoreId", value.asInstanceOf[js.Any])
+    inline def setCustomKeyStoreId(value: CustomKeyStoreIdType): Self = StObject.set(x, "CustomKeyStoreId", value.asInstanceOf[js.Any])
   }
 }

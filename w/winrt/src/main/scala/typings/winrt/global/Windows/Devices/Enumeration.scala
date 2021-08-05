@@ -78,28 +78,18 @@ object Enumeration {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def createFromIdAsync(id: String): IAsyncOperation[typings.winrt.Windows.Devices.Enumeration.DeviceInformation] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromIdAsync")(id.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Devices.Enumeration.DeviceInformation]]
-    @scala.inline
-    def createFromIdAsync(id: String, additionalProperties: IIterable[String]): IAsyncOperation[typings.winrt.Windows.Devices.Enumeration.DeviceInformation] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromIdAsync")(id.asInstanceOf[js.Any], additionalProperties.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Devices.Enumeration.DeviceInformation]]
+    inline def createFromIdAsync(id: String): IAsyncOperation[typings.winrt.Windows.Devices.Enumeration.DeviceInformation] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromIdAsync")(id.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Devices.Enumeration.DeviceInformation]]
+    inline def createFromIdAsync(id: String, additionalProperties: IIterable[String]): IAsyncOperation[typings.winrt.Windows.Devices.Enumeration.DeviceInformation] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromIdAsync")(id.asInstanceOf[js.Any], additionalProperties.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Devices.Enumeration.DeviceInformation]]
     
-    @scala.inline
-    def createWatcher(): typings.winrt.Windows.Devices.Enumeration.DeviceWatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("createWatcher")().asInstanceOf[typings.winrt.Windows.Devices.Enumeration.DeviceWatcher]
-    @scala.inline
-    def createWatcher(aqsFilter: String): typings.winrt.Windows.Devices.Enumeration.DeviceWatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("createWatcher")(aqsFilter.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Devices.Enumeration.DeviceWatcher]
-    @scala.inline
-    def createWatcher(aqsFilter: String, additionalProperties: IIterable[String]): typings.winrt.Windows.Devices.Enumeration.DeviceWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("createWatcher")(aqsFilter.asInstanceOf[js.Any], additionalProperties.asInstanceOf[js.Any])).asInstanceOf[typings.winrt.Windows.Devices.Enumeration.DeviceWatcher]
-    @scala.inline
-    def createWatcher(deviceClass: DeviceClass): typings.winrt.Windows.Devices.Enumeration.DeviceWatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("createWatcher")(deviceClass.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Devices.Enumeration.DeviceWatcher]
+    inline def createWatcher(): typings.winrt.Windows.Devices.Enumeration.DeviceWatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("createWatcher")().asInstanceOf[typings.winrt.Windows.Devices.Enumeration.DeviceWatcher]
+    inline def createWatcher(aqsFilter: String): typings.winrt.Windows.Devices.Enumeration.DeviceWatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("createWatcher")(aqsFilter.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Devices.Enumeration.DeviceWatcher]
+    inline def createWatcher(aqsFilter: String, additionalProperties: IIterable[String]): typings.winrt.Windows.Devices.Enumeration.DeviceWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("createWatcher")(aqsFilter.asInstanceOf[js.Any], additionalProperties.asInstanceOf[js.Any])).asInstanceOf[typings.winrt.Windows.Devices.Enumeration.DeviceWatcher]
+    inline def createWatcher(deviceClass: DeviceClass): typings.winrt.Windows.Devices.Enumeration.DeviceWatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("createWatcher")(deviceClass.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Devices.Enumeration.DeviceWatcher]
     
-    @scala.inline
-    def findAllAsync(): IAsyncOperation[typings.winrt.Windows.Devices.Enumeration.DeviceInformationCollection] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")().asInstanceOf[IAsyncOperation[typings.winrt.Windows.Devices.Enumeration.DeviceInformationCollection]]
-    @scala.inline
-    def findAllAsync(aqsFilter: String): IAsyncOperation[typings.winrt.Windows.Devices.Enumeration.DeviceInformationCollection] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")(aqsFilter.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Devices.Enumeration.DeviceInformationCollection]]
-    @scala.inline
-    def findAllAsync(aqsFilter: String, additionalProperties: IIterable[String]): IAsyncOperation[typings.winrt.Windows.Devices.Enumeration.DeviceInformationCollection] = (^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")(aqsFilter.asInstanceOf[js.Any], additionalProperties.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Devices.Enumeration.DeviceInformationCollection]]
-    @scala.inline
-    def findAllAsync(deviceClass: DeviceClass): IAsyncOperation[typings.winrt.Windows.Devices.Enumeration.DeviceInformationCollection] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")(deviceClass.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Devices.Enumeration.DeviceInformationCollection]]
+    inline def findAllAsync(): IAsyncOperation[typings.winrt.Windows.Devices.Enumeration.DeviceInformationCollection] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")().asInstanceOf[IAsyncOperation[typings.winrt.Windows.Devices.Enumeration.DeviceInformationCollection]]
+    inline def findAllAsync(aqsFilter: String): IAsyncOperation[typings.winrt.Windows.Devices.Enumeration.DeviceInformationCollection] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")(aqsFilter.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Devices.Enumeration.DeviceInformationCollection]]
+    inline def findAllAsync(aqsFilter: String, additionalProperties: IIterable[String]): IAsyncOperation[typings.winrt.Windows.Devices.Enumeration.DeviceInformationCollection] = (^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")(aqsFilter.asInstanceOf[js.Any], additionalProperties.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Devices.Enumeration.DeviceInformationCollection]]
+    inline def findAllAsync(deviceClass: DeviceClass): IAsyncOperation[typings.winrt.Windows.Devices.Enumeration.DeviceInformationCollection] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")(deviceClass.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Devices.Enumeration.DeviceInformationCollection]]
   }
   
   @JSGlobal("Windows.Devices.Enumeration.DeviceInformationCollection")
@@ -290,18 +280,13 @@ object Enumeration {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def createFromIdAsync(`type`: PnpObjectType, id: String, requestedProperties: IIterable[String]): IAsyncOperation[typings.winrt.Windows.Devices.Enumeration.Pnp.PnpObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromIdAsync")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], requestedProperties.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Devices.Enumeration.Pnp.PnpObject]]
+      inline def createFromIdAsync(`type`: PnpObjectType, id: String, requestedProperties: IIterable[String]): IAsyncOperation[typings.winrt.Windows.Devices.Enumeration.Pnp.PnpObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromIdAsync")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], requestedProperties.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Devices.Enumeration.Pnp.PnpObject]]
       
-      @scala.inline
-      def createWatcher(`type`: PnpObjectType, requestedProperties: IIterable[String]): typings.winrt.Windows.Devices.Enumeration.Pnp.PnpObjectWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("createWatcher")(`type`.asInstanceOf[js.Any], requestedProperties.asInstanceOf[js.Any])).asInstanceOf[typings.winrt.Windows.Devices.Enumeration.Pnp.PnpObjectWatcher]
-      @scala.inline
-      def createWatcher(`type`: PnpObjectType, requestedProperties: IIterable[String], aqsFilter: String): typings.winrt.Windows.Devices.Enumeration.Pnp.PnpObjectWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("createWatcher")(`type`.asInstanceOf[js.Any], requestedProperties.asInstanceOf[js.Any], aqsFilter.asInstanceOf[js.Any])).asInstanceOf[typings.winrt.Windows.Devices.Enumeration.Pnp.PnpObjectWatcher]
+      inline def createWatcher(`type`: PnpObjectType, requestedProperties: IIterable[String]): typings.winrt.Windows.Devices.Enumeration.Pnp.PnpObjectWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("createWatcher")(`type`.asInstanceOf[js.Any], requestedProperties.asInstanceOf[js.Any])).asInstanceOf[typings.winrt.Windows.Devices.Enumeration.Pnp.PnpObjectWatcher]
+      inline def createWatcher(`type`: PnpObjectType, requestedProperties: IIterable[String], aqsFilter: String): typings.winrt.Windows.Devices.Enumeration.Pnp.PnpObjectWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("createWatcher")(`type`.asInstanceOf[js.Any], requestedProperties.asInstanceOf[js.Any], aqsFilter.asInstanceOf[js.Any])).asInstanceOf[typings.winrt.Windows.Devices.Enumeration.Pnp.PnpObjectWatcher]
       
-      @scala.inline
-      def findAllAsync(`type`: PnpObjectType, requestedProperties: IIterable[String]): IAsyncOperation[typings.winrt.Windows.Devices.Enumeration.Pnp.PnpObjectCollection] = (^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")(`type`.asInstanceOf[js.Any], requestedProperties.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Devices.Enumeration.Pnp.PnpObjectCollection]]
-      @scala.inline
-      def findAllAsync(`type`: PnpObjectType, requestedProperties: IIterable[String], aqsFilter: String): IAsyncOperation[typings.winrt.Windows.Devices.Enumeration.Pnp.PnpObjectCollection] = (^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")(`type`.asInstanceOf[js.Any], requestedProperties.asInstanceOf[js.Any], aqsFilter.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Devices.Enumeration.Pnp.PnpObjectCollection]]
+      inline def findAllAsync(`type`: PnpObjectType, requestedProperties: IIterable[String]): IAsyncOperation[typings.winrt.Windows.Devices.Enumeration.Pnp.PnpObjectCollection] = (^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")(`type`.asInstanceOf[js.Any], requestedProperties.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Devices.Enumeration.Pnp.PnpObjectCollection]]
+      inline def findAllAsync(`type`: PnpObjectType, requestedProperties: IIterable[String], aqsFilter: String): IAsyncOperation[typings.winrt.Windows.Devices.Enumeration.Pnp.PnpObjectCollection] = (^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")(`type`.asInstanceOf[js.Any], requestedProperties.asInstanceOf[js.Any], aqsFilter.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Devices.Enumeration.Pnp.PnpObjectCollection]]
     }
     
     @JSGlobal("Windows.Devices.Enumeration.Pnp.PnpObjectCollection")

@@ -18,17 +18,14 @@ object anon {
   }
   object Name {
     
-    @scala.inline
-    def apply(name: String): Name = {
+    inline def apply(name: String): Name = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Name]
     }
     
-    @scala.inline
-    implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+    extension [Self <: Name](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -42,23 +39,18 @@ object anon {
   }
   object Operator {
     
-    @scala.inline
-    def apply(operator: String, value: String, valueType: AttrValueType): Operator = {
+    inline def apply(operator: String, value: String, valueType: AttrValueType): Operator = {
       val __obj = js.Dynamic.literal(operator = operator.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], valueType = valueType.asInstanceOf[js.Any])
       __obj.asInstanceOf[Operator]
     }
     
-    @scala.inline
-    implicit class OperatorMutableBuilder[Self <: Operator] (val x: Self) extends AnyVal {
+    extension [Self <: Operator](x: Self) {
       
-      @scala.inline
-      def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+      inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueType(value: AttrValueType): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
+      inline def setValueType(value: AttrValueType): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -70,20 +62,16 @@ object anon {
   }
   object Value {
     
-    @scala.inline
-    def apply(value: Selector): Value = {
+    inline def apply(value: Selector): Value = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any], valueType = "selector")
       __obj.asInstanceOf[Value]
     }
     
-    @scala.inline
-    implicit class ValueMutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
+    extension [Self <: Value](x: Self) {
       
-      @scala.inline
-      def setValue(value: Selector): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Selector): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueType(value: selector): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
+      inline def setValueType(value: selector): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -95,20 +83,16 @@ object anon {
   }
   object ValueType {
     
-    @scala.inline
-    def apply(value: String, valueType: string | substitute | numeric): ValueType = {
+    inline def apply(value: String, valueType: string | substitute | numeric): ValueType = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any], valueType = valueType.asInstanceOf[js.Any])
       __obj.asInstanceOf[ValueType]
     }
     
-    @scala.inline
-    implicit class ValueTypeMutableBuilder[Self <: ValueType] (val x: Self) extends AnyVal {
+    extension [Self <: ValueType](x: Self) {
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueType(value: string | substitute | numeric): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
+      inline def setValueType(value: string | substitute | numeric): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
     }
   }
 }

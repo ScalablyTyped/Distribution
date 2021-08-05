@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.PivotAxis")
 @js.native
-class PivotAxis protected ()
+/* private */ class PivotAxis ()
   extends StObject
      with typings.activexExcel.Excel.PivotAxis {
   
@@ -18,7 +18,7 @@ class PivotAxis protected ()
   /* CompleteClass */
   override val Creator: XlCreator = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.PivotAxis_typekey")
   var ExcelDotPivotAxis_typekey: typings.activexExcel.Excel.PivotAxis = js.native
   

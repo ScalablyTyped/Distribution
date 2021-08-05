@@ -21,37 +21,27 @@ trait SearchAStarOptions extends StObject {
 }
 object SearchAStarOptions {
   
-  @scala.inline
-  def apply(goal: Selector | CollectionArgument, root: Selector | CollectionArgument): SearchAStarOptions = {
+  inline def apply(goal: Selector | CollectionArgument, root: Selector | CollectionArgument): SearchAStarOptions = {
     val __obj = js.Dynamic.literal(goal = goal.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchAStarOptions]
   }
   
-  @scala.inline
-  implicit class SearchAStarOptionsMutableBuilder[Self <: SearchAStarOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SearchAStarOptions](x: Self) {
     
-    @scala.inline
-    def setDirected(value: Boolean): Self = StObject.set(x, "directed", value.asInstanceOf[js.Any])
+    inline def setDirected(value: Boolean): Self = StObject.set(x, "directed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectedUndefined: Self = StObject.set(x, "directed", js.undefined)
+    inline def setDirectedUndefined: Self = StObject.set(x, "directed", js.undefined)
     
-    @scala.inline
-    def setGoal(value: Selector | CollectionArgument): Self = StObject.set(x, "goal", value.asInstanceOf[js.Any])
+    inline def setGoal(value: Selector | CollectionArgument): Self = StObject.set(x, "goal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeuristic(value: /* node */ NodeCollection => Double): Self = StObject.set(x, "heuristic", js.Any.fromFunction1(value))
+    inline def setHeuristic(value: /* node */ NodeCollection => Double): Self = StObject.set(x, "heuristic", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHeuristicUndefined: Self = StObject.set(x, "heuristic", js.undefined)
+    inline def setHeuristicUndefined: Self = StObject.set(x, "heuristic", js.undefined)
     
-    @scala.inline
-    def setRoot(value: Selector | CollectionArgument): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: Selector | CollectionArgument): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeight(value: /* edge */ EdgeCollection => Double): Self = StObject.set(x, "weight", js.Any.fromFunction1(value))
+    inline def setWeight(value: /* edge */ EdgeCollection => Double): Self = StObject.set(x, "weight", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

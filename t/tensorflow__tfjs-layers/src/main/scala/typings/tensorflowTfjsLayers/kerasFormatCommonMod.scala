@@ -36,17 +36,13 @@ object kerasFormatCommonMod {
   trait BidirectionalMergeMode extends StObject
   object BidirectionalMergeMode {
     
-    @scala.inline
-    def ave: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.ave = "ave".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.ave]
+    inline def ave: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.ave = "ave".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.ave]
     
-    @scala.inline
-    def concat: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.concat = "concat".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.concat]
+    inline def concat: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.concat = "concat".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.concat]
     
-    @scala.inline
-    def mul: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.mul = "mul".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.mul]
+    inline def mul: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.mul = "mul".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.mul]
     
-    @scala.inline
-    def sum: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.sum = "sum".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.sum]
+    inline def sum: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.sum = "sum".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.sum]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -56,11 +52,9 @@ object kerasFormatCommonMod {
   trait DataFormat extends StObject
   object DataFormat {
     
-    @scala.inline
-    def channelsFirst: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.channelsFirst = "channelsFirst".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.channelsFirst]
+    inline def channelsFirst: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.channelsFirst = "channelsFirst".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.channelsFirst]
     
-    @scala.inline
-    def channelsLast: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.channelsLast = "channelsLast".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.channelsLast]
+    inline def channelsLast: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.channelsLast = "channelsLast".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.channelsLast]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -70,11 +64,9 @@ object kerasFormatCommonMod {
   trait DataFormatSerialization extends StObject
   object DataFormatSerialization {
     
-    @scala.inline
-    def channels_first: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.channels_first = "channels_first".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.channels_first]
+    inline def channels_first: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.channels_first = "channels_first".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.channels_first]
     
-    @scala.inline
-    def channels_last: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.channels_last = "channels_last".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.channels_last]
+    inline def channels_last: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.channels_last = "channels_last".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.channels_last]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -87,20 +79,15 @@ object kerasFormatCommonMod {
   trait DataType extends StObject
   object DataType {
     
-    @scala.inline
-    def bool: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.bool = "bool".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.bool]
+    inline def bool: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.bool = "bool".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.bool]
     
-    @scala.inline
-    def complex64: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.complex64 = "complex64".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.complex64]
+    inline def complex64: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.complex64 = "complex64".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.complex64]
     
-    @scala.inline
-    def float32: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.float32 = "float32".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.float32]
+    inline def float32: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.float32 = "float32".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.float32]
     
-    @scala.inline
-    def int32: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.int32 = "int32".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.int32]
+    inline def int32: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.int32 = "int32".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.int32]
     
-    @scala.inline
-    def string: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.string = "string".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.string]
+    inline def string: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.string = "string".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.string]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -111,14 +98,11 @@ object kerasFormatCommonMod {
   trait PaddingMode extends StObject
   object PaddingMode {
     
-    @scala.inline
-    def causal: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.causal = "causal".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.causal]
+    inline def causal: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.causal = "causal".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.causal]
     
-    @scala.inline
-    def same: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.same = "same".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.same]
+    inline def same: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.same = "same".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.same]
     
-    @scala.inline
-    def valid: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.valid = "valid".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.valid]
+    inline def valid: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.valid = "valid".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.valid]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -128,11 +112,9 @@ object kerasFormatCommonMod {
   trait PoolMode extends StObject
   object PoolMode {
     
-    @scala.inline
-    def avg: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.avg = "avg".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.avg]
+    inline def avg: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.avg = "avg".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.avg]
     
-    @scala.inline
-    def max: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.max = "max".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.max]
+    inline def max: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.max = "max".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.max]
   }
   
   type SampleWeightMode = temporal

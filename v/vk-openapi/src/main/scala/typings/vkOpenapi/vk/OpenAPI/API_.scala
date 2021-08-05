@@ -28,8 +28,7 @@ trait API_ extends StObject {
 }
 object API_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Api: API,
     Auth: typings.vkOpenapi.vk.OpenAPI.Auth.API,
     Goal: (/* goalEvent */ GoalEvent, /* goalParams */ js.UndefOr[GoalParams]) => Unit,
@@ -42,28 +41,20 @@ object API_ {
     __obj.asInstanceOf[API_]
   }
   
-  @scala.inline
-  implicit class API_MutableBuilder[Self <: API_] (val x: Self) extends AnyVal {
+  extension [Self <: API_](x: Self) {
     
-    @scala.inline
-    def setApi(value: API): Self = StObject.set(x, "Api", value.asInstanceOf[js.Any])
+    inline def setApi(value: API): Self = StObject.set(x, "Api", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuth(value: typings.vkOpenapi.vk.OpenAPI.Auth.API): Self = StObject.set(x, "Auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: typings.vkOpenapi.vk.OpenAPI.Auth.API): Self = StObject.set(x, "Auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoal(value: (/* goalEvent */ GoalEvent, /* goalParams */ js.UndefOr[GoalParams]) => Unit): Self = StObject.set(x, "Goal", js.Any.fromFunction2(value))
+    inline def setGoal(value: (/* goalEvent */ GoalEvent, /* goalParams */ js.UndefOr[GoalParams]) => Unit): Self = StObject.set(x, "Goal", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInit(value: InitParams => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+    inline def setInit(value: InitParams => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setObserver(value: typings.vkOpenapi.vk.OpenAPI.Observer.API): Self = StObject.set(x, "Observer", value.asInstanceOf[js.Any])
+    inline def setObserver(value: typings.vkOpenapi.vk.OpenAPI.Observer.API): Self = StObject.set(x, "Observer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetargeting(value: typings.vkOpenapi.vk.OpenAPI.Retargeting.API): Self = StObject.set(x, "Retargeting", value.asInstanceOf[js.Any])
+    inline def setRetargeting(value: typings.vkOpenapi.vk.OpenAPI.Retargeting.API): Self = StObject.set(x, "Retargeting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidgets(value: typings.vkOpenapi.vk.OpenAPI.Widgets.API): Self = StObject.set(x, "Widgets", value.asInstanceOf[js.Any])
+    inline def setWidgets(value: typings.vkOpenapi.vk.OpenAPI.Widgets.API): Self = StObject.set(x, "Widgets", value.asInstanceOf[js.Any])
   }
 }

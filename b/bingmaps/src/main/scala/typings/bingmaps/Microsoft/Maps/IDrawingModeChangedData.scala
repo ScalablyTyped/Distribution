@@ -15,19 +15,15 @@ trait IDrawingModeChangedData extends StObject {
 }
 object IDrawingModeChangedData {
   
-  @scala.inline
-  def apply(mode: DrawingMode, shape: IPrimitive): IDrawingModeChangedData = {
+  inline def apply(mode: DrawingMode, shape: IPrimitive): IDrawingModeChangedData = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDrawingModeChangedData]
   }
   
-  @scala.inline
-  implicit class IDrawingModeChangedDataMutableBuilder[Self <: IDrawingModeChangedData] (val x: Self) extends AnyVal {
+  extension [Self <: IDrawingModeChangedData](x: Self) {
     
-    @scala.inline
-    def setMode(value: DrawingMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: DrawingMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShape(value: IPrimitive): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    inline def setShape(value: IPrimitive): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
   }
 }

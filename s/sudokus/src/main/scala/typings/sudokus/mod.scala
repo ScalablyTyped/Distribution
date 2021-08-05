@@ -10,10 +10,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def solve(data: js.Array[js.Array[Double]]): js.Array[js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("solve")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[Double]]]
-  @scala.inline
-  def solve(data: js.Array[js.Array[Double]], options: Options): js.Array[js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("solve")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[Double]]]
+  inline def solve(data: js.Array[js.Array[Double]]): js.Array[js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("solve")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[Double]]]
+  inline def solve(data: js.Array[js.Array[Double]], options: Options): js.Array[js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("solve")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[Double]]]
   
   trait Cell extends StObject {
     
@@ -23,20 +21,16 @@ object mod {
   }
   object Cell {
     
-    @scala.inline
-    def apply(fixed: Boolean, value: Double): Cell = {
+    inline def apply(fixed: Boolean, value: Double): Cell = {
       val __obj = js.Dynamic.literal(fixed = fixed.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Cell]
     }
     
-    @scala.inline
-    implicit class CellMutableBuilder[Self <: Cell] (val x: Self) extends AnyVal {
+    extension [Self <: Cell](x: Self) {
       
-      @scala.inline
-      def setFixed(value: Boolean): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
+      inline def setFixed(value: Boolean): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -46,20 +40,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setOnProgress(value: /* state */ js.Array[js.Array[Cell]] => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
+      inline def setOnProgress(value: /* state */ js.Array[js.Array[Cell]] => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
+      inline def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
     }
   }
   

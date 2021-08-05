@@ -26,22 +26,17 @@ trait INxViewPort extends StObject {
 }
 object INxViewPort {
   
-  @scala.inline
-  def apply(qHeight: Double, qWidth: Double, qZoomLevel: Double): INxViewPort = {
+  inline def apply(qHeight: Double, qWidth: Double, qZoomLevel: Double): INxViewPort = {
     val __obj = js.Dynamic.literal(qHeight = qHeight.asInstanceOf[js.Any], qWidth = qWidth.asInstanceOf[js.Any], qZoomLevel = qZoomLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxViewPort]
   }
   
-  @scala.inline
-  implicit class INxViewPortMutableBuilder[Self <: INxViewPort] (val x: Self) extends AnyVal {
+  extension [Self <: INxViewPort](x: Self) {
     
-    @scala.inline
-    def setQHeight(value: Double): Self = StObject.set(x, "qHeight", value.asInstanceOf[js.Any])
+    inline def setQHeight(value: Double): Self = StObject.set(x, "qHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQWidth(value: Double): Self = StObject.set(x, "qWidth", value.asInstanceOf[js.Any])
+    inline def setQWidth(value: Double): Self = StObject.set(x, "qWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQZoomLevel(value: Double): Self = StObject.set(x, "qZoomLevel", value.asInstanceOf[js.Any])
+    inline def setQZoomLevel(value: Double): Self = StObject.set(x, "qZoomLevel", value.asInstanceOf[js.Any])
   }
 }

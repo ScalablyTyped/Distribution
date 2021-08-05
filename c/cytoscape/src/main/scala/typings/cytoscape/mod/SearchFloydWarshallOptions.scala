@@ -17,22 +17,17 @@ trait SearchFloydWarshallOptions extends StObject {
 }
 object SearchFloydWarshallOptions {
   
-  @scala.inline
-  def apply(weight: /* edge */ EdgeCollection => Double): SearchFloydWarshallOptions = {
+  inline def apply(weight: /* edge */ EdgeCollection => Double): SearchFloydWarshallOptions = {
     val __obj = js.Dynamic.literal(weight = js.Any.fromFunction1(weight))
     __obj.asInstanceOf[SearchFloydWarshallOptions]
   }
   
-  @scala.inline
-  implicit class SearchFloydWarshallOptionsMutableBuilder[Self <: SearchFloydWarshallOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SearchFloydWarshallOptions](x: Self) {
     
-    @scala.inline
-    def setDirected(value: Boolean): Self = StObject.set(x, "directed", value.asInstanceOf[js.Any])
+    inline def setDirected(value: Boolean): Self = StObject.set(x, "directed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectedUndefined: Self = StObject.set(x, "directed", js.undefined)
+    inline def setDirectedUndefined: Self = StObject.set(x, "directed", js.undefined)
     
-    @scala.inline
-    def setWeight(value: /* edge */ EdgeCollection => Double): Self = StObject.set(x, "weight", js.Any.fromFunction1(value))
+    inline def setWeight(value: /* edge */ EdgeCollection => Double): Self = StObject.set(x, "weight", js.Any.fromFunction1(value))
   }
 }

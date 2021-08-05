@@ -12,10 +12,8 @@ object getStreamMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStream(args: GetStreamArgs): js.Promise[GetStreamResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStream")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetStreamResult]]
-  @scala.inline
-  def getStream(args: GetStreamArgs, opts: InvokeOptions): js.Promise[GetStreamResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getStream")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetStreamResult]]
+  inline def getStream(args: GetStreamArgs): js.Promise[GetStreamResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStream")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetStreamResult]]
+  inline def getStream(args: GetStreamArgs, opts: InvokeOptions): js.Promise[GetStreamResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getStream")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetStreamResult]]
   
   trait GetStreamArgs extends StObject {
     
@@ -31,23 +29,18 @@ object getStreamMod {
   }
   object GetStreamArgs {
     
-    @scala.inline
-    def apply(name: String): GetStreamArgs = {
+    inline def apply(name: String): GetStreamArgs = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetStreamArgs]
     }
     
-    @scala.inline
-    implicit class GetStreamArgsMutableBuilder[Self <: GetStreamArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetStreamArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -105,8 +98,7 @@ object getStreamMod {
   }
   object GetStreamResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arn: String,
       closedShards: js.Array[String],
       creationTimestamp: Double,
@@ -122,47 +114,33 @@ object getStreamMod {
       __obj.asInstanceOf[GetStreamResult]
     }
     
-    @scala.inline
-    implicit class GetStreamResultMutableBuilder[Self <: GetStreamResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetStreamResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClosedShards(value: js.Array[String]): Self = StObject.set(x, "closedShards", value.asInstanceOf[js.Any])
+      inline def setClosedShards(value: js.Array[String]): Self = StObject.set(x, "closedShards", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClosedShardsVarargs(value: String*): Self = StObject.set(x, "closedShards", js.Array(value :_*))
+      inline def setClosedShardsVarargs(value: String*): Self = StObject.set(x, "closedShards", js.Array(value :_*))
       
-      @scala.inline
-      def setCreationTimestamp(value: Double): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
+      inline def setCreationTimestamp(value: Double): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenShards(value: js.Array[String]): Self = StObject.set(x, "openShards", value.asInstanceOf[js.Any])
+      inline def setOpenShards(value: js.Array[String]): Self = StObject.set(x, "openShards", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenShardsVarargs(value: String*): Self = StObject.set(x, "openShards", js.Array(value :_*))
+      inline def setOpenShardsVarargs(value: String*): Self = StObject.set(x, "openShards", js.Array(value :_*))
       
-      @scala.inline
-      def setRetentionPeriod(value: Double): Self = StObject.set(x, "retentionPeriod", value.asInstanceOf[js.Any])
+      inline def setRetentionPeriod(value: Double): Self = StObject.set(x, "retentionPeriod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShardLevelMetrics(value: js.Array[String]): Self = StObject.set(x, "shardLevelMetrics", value.asInstanceOf[js.Any])
+      inline def setShardLevelMetrics(value: js.Array[String]): Self = StObject.set(x, "shardLevelMetrics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShardLevelMetricsVarargs(value: String*): Self = StObject.set(x, "shardLevelMetrics", js.Array(value :_*))
+      inline def setShardLevelMetricsVarargs(value: String*): Self = StObject.set(x, "shardLevelMetrics", js.Array(value :_*))
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     }
   }
 }

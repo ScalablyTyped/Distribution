@@ -13,6 +13,5 @@ object pageCapture {
   @JSImport("sinon-chrome", "pageCapture.saveAsMHTML")
   @js.native
   def saveAsMHTML: SinonChromeStub = js.native
-  @scala.inline
-  def saveAsMHTML_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("saveAsMHTML")(x.asInstanceOf[js.Any])
+  inline def saveAsMHTML_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("saveAsMHTML")(x.asInstanceOf[js.Any])
 }

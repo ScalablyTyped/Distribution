@@ -13,16 +13,13 @@ trait OutputArtifact extends StObject {
 }
 object OutputArtifact {
   
-  @scala.inline
-  def apply(name: ArtifactName): OutputArtifact = {
+  inline def apply(name: ArtifactName): OutputArtifact = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutputArtifact]
   }
   
-  @scala.inline
-  implicit class OutputArtifactMutableBuilder[Self <: OutputArtifact] (val x: Self) extends AnyVal {
+  extension [Self <: OutputArtifact](x: Self) {
     
-    @scala.inline
-    def setName(value: ArtifactName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ArtifactName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

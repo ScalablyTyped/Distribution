@@ -46,49 +46,35 @@ trait SchemaAchievementUpdateResponse extends StObject {
 }
 object SchemaAchievementUpdateResponse {
   
-  @scala.inline
-  def apply(): SchemaAchievementUpdateResponse = {
+  inline def apply(): SchemaAchievementUpdateResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAchievementUpdateResponse]
   }
   
-  @scala.inline
-  implicit class SchemaAchievementUpdateResponseMutableBuilder[Self <: SchemaAchievementUpdateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAchievementUpdateResponse](x: Self) {
     
-    @scala.inline
-    def setAchievementId(value: String): Self = StObject.set(x, "achievementId", value.asInstanceOf[js.Any])
+    inline def setAchievementId(value: String): Self = StObject.set(x, "achievementId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAchievementIdUndefined: Self = StObject.set(x, "achievementId", js.undefined)
+    inline def setAchievementIdUndefined: Self = StObject.set(x, "achievementId", js.undefined)
     
-    @scala.inline
-    def setCurrentState(value: String): Self = StObject.set(x, "currentState", value.asInstanceOf[js.Any])
+    inline def setCurrentState(value: String): Self = StObject.set(x, "currentState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentStateUndefined: Self = StObject.set(x, "currentState", js.undefined)
+    inline def setCurrentStateUndefined: Self = StObject.set(x, "currentState", js.undefined)
     
-    @scala.inline
-    def setCurrentSteps(value: Double): Self = StObject.set(x, "currentSteps", value.asInstanceOf[js.Any])
+    inline def setCurrentSteps(value: Double): Self = StObject.set(x, "currentSteps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentStepsUndefined: Self = StObject.set(x, "currentSteps", js.undefined)
+    inline def setCurrentStepsUndefined: Self = StObject.set(x, "currentSteps", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNewlyUnlocked(value: Boolean): Self = StObject.set(x, "newlyUnlocked", value.asInstanceOf[js.Any])
+    inline def setNewlyUnlocked(value: Boolean): Self = StObject.set(x, "newlyUnlocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewlyUnlockedUndefined: Self = StObject.set(x, "newlyUnlocked", js.undefined)
+    inline def setNewlyUnlockedUndefined: Self = StObject.set(x, "newlyUnlocked", js.undefined)
     
-    @scala.inline
-    def setUpdateOccurred(value: Boolean): Self = StObject.set(x, "updateOccurred", value.asInstanceOf[js.Any])
+    inline def setUpdateOccurred(value: Boolean): Self = StObject.set(x, "updateOccurred", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateOccurredUndefined: Self = StObject.set(x, "updateOccurred", js.undefined)
+    inline def setUpdateOccurredUndefined: Self = StObject.set(x, "updateOccurred", js.undefined)
   }
 }

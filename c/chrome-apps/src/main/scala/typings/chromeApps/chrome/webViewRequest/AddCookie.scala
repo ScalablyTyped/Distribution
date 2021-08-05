@@ -19,16 +19,13 @@ trait AddCookie[T] extends StObject {
 }
 object AddCookie {
   
-  @scala.inline
-  def apply[T](cookie: T): AddCookie[T] = {
+  inline def apply[T](cookie: T): AddCookie[T] = {
     val __obj = js.Dynamic.literal(cookie = cookie.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddCookie[T]]
   }
   
-  @scala.inline
-  implicit class AddCookieMutableBuilder[Self <: AddCookie[?], T] (val x: Self & AddCookie[T]) extends AnyVal {
+  extension [Self <: AddCookie[?], T](x: Self & AddCookie[T]) {
     
-    @scala.inline
-    def setCookie(value: T): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
+    inline def setCookie(value: T): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
   }
 }

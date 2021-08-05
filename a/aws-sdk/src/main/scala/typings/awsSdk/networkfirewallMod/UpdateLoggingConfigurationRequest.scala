@@ -23,31 +23,23 @@ trait UpdateLoggingConfigurationRequest extends StObject {
 }
 object UpdateLoggingConfigurationRequest {
   
-  @scala.inline
-  def apply(): UpdateLoggingConfigurationRequest = {
+  inline def apply(): UpdateLoggingConfigurationRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateLoggingConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class UpdateLoggingConfigurationRequestMutableBuilder[Self <: UpdateLoggingConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateLoggingConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setFirewallArn(value: ResourceArn): Self = StObject.set(x, "FirewallArn", value.asInstanceOf[js.Any])
+    inline def setFirewallArn(value: ResourceArn): Self = StObject.set(x, "FirewallArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirewallArnUndefined: Self = StObject.set(x, "FirewallArn", js.undefined)
+    inline def setFirewallArnUndefined: Self = StObject.set(x, "FirewallArn", js.undefined)
     
-    @scala.inline
-    def setFirewallName(value: ResourceName): Self = StObject.set(x, "FirewallName", value.asInstanceOf[js.Any])
+    inline def setFirewallName(value: ResourceName): Self = StObject.set(x, "FirewallName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirewallNameUndefined: Self = StObject.set(x, "FirewallName", js.undefined)
+    inline def setFirewallNameUndefined: Self = StObject.set(x, "FirewallName", js.undefined)
     
-    @scala.inline
-    def setLoggingConfiguration(value: LoggingConfiguration): Self = StObject.set(x, "LoggingConfiguration", value.asInstanceOf[js.Any])
+    inline def setLoggingConfiguration(value: LoggingConfiguration): Self = StObject.set(x, "LoggingConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggingConfigurationUndefined: Self = StObject.set(x, "LoggingConfiguration", js.undefined)
+    inline def setLoggingConfigurationUndefined: Self = StObject.set(x, "LoggingConfiguration", js.undefined)
   }
 }

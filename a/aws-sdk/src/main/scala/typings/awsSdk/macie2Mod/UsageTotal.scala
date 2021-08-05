@@ -23,31 +23,23 @@ trait UsageTotal extends StObject {
 }
 object UsageTotal {
   
-  @scala.inline
-  def apply(): UsageTotal = {
+  inline def apply(): UsageTotal = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UsageTotal]
   }
   
-  @scala.inline
-  implicit class UsageTotalMutableBuilder[Self <: UsageTotal] (val x: Self) extends AnyVal {
+  extension [Self <: UsageTotal](x: Self) {
     
-    @scala.inline
-    def setCurrency(value: Currency): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+    inline def setCurrency(value: Currency): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
+    inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
     
-    @scala.inline
-    def setEstimatedCost(value: string): Self = StObject.set(x, "estimatedCost", value.asInstanceOf[js.Any])
+    inline def setEstimatedCost(value: string): Self = StObject.set(x, "estimatedCost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedCostUndefined: Self = StObject.set(x, "estimatedCost", js.undefined)
+    inline def setEstimatedCostUndefined: Self = StObject.set(x, "estimatedCost", js.undefined)
     
-    @scala.inline
-    def setType(value: UsageType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: UsageType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

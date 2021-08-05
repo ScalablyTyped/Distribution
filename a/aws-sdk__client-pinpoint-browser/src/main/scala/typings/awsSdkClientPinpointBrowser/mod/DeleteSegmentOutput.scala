@@ -11,8 +11,7 @@ trait DeleteSegmentOutput
      with typings.awsSdkClientPinpointBrowser.typesDeleteSegmentOutputMod.DeleteSegmentOutput
 object DeleteSegmentOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata, SegmentResponse: UnmarshalledSegmentResponse): DeleteSegmentOutput = {
+  inline def apply($metadata: ResponseMetadata, SegmentResponse: UnmarshalledSegmentResponse): DeleteSegmentOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], SegmentResponse = SegmentResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteSegmentOutput]
   }

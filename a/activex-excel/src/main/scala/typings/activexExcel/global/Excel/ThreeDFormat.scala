@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.ThreeDFormat")
 @js.native
-class ThreeDFormat protected ()
+/* private */ class ThreeDFormat ()
   extends StObject
      with typings.activexExcel.Excel.ThreeDFormat {
   
@@ -53,7 +53,7 @@ class ThreeDFormat protected ()
   /* CompleteClass */
   var Depth: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.ThreeDFormat_typekey")
   var ExcelDotThreeDFormat_typekey: typings.activexExcel.Excel.ThreeDFormat = js.native
   

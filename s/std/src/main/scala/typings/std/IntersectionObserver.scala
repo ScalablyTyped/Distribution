@@ -23,8 +23,7 @@ trait IntersectionObserver extends StObject {
 }
 object IntersectionObserver {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     disconnect: () => Unit,
     observe: Element => Unit,
     rootMargin: java.lang.String,
@@ -36,34 +35,24 @@ object IntersectionObserver {
     __obj.asInstanceOf[IntersectionObserver]
   }
   
-  @scala.inline
-  implicit class IntersectionObserverMutableBuilder[Self <: IntersectionObserver] (val x: Self) extends AnyVal {
+  extension [Self <: IntersectionObserver](x: Self) {
     
-    @scala.inline
-    def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
+    inline def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setObserve(value: Element => Unit): Self = StObject.set(x, "observe", js.Any.fromFunction1(value))
+    inline def setObserve(value: Element => Unit): Self = StObject.set(x, "observe", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRoot(value: Element): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: Element): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootMargin(value: java.lang.String): Self = StObject.set(x, "rootMargin", value.asInstanceOf[js.Any])
+    inline def setRootMargin(value: java.lang.String): Self = StObject.set(x, "rootMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootNull: Self = StObject.set(x, "root", null)
+    inline def setRootNull: Self = StObject.set(x, "root", null)
     
-    @scala.inline
-    def setTakeRecords(value: () => js.Array[IntersectionObserverEntry]): Self = StObject.set(x, "takeRecords", js.Any.fromFunction0(value))
+    inline def setTakeRecords(value: () => js.Array[IntersectionObserverEntry]): Self = StObject.set(x, "takeRecords", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setThresholds(value: js.Array[Double]): Self = StObject.set(x, "thresholds", value.asInstanceOf[js.Any])
+    inline def setThresholds(value: js.Array[Double]): Self = StObject.set(x, "thresholds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThresholdsVarargs(value: Double*): Self = StObject.set(x, "thresholds", js.Array(value :_*))
+    inline def setThresholdsVarargs(value: Double*): Self = StObject.set(x, "thresholds", js.Array(value :_*))
     
-    @scala.inline
-    def setUnobserve(value: Element => Unit): Self = StObject.set(x, "unobserve", js.Any.fromFunction1(value))
+    inline def setUnobserve(value: Element => Unit): Self = StObject.set(x, "unobserve", js.Any.fromFunction1(value))
   }
 }

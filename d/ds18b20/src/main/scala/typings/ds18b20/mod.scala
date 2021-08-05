@@ -14,18 +14,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def sensors(callback: SensorsCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sensors")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def sensors(callback: SensorsCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sensors")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def temperature(sensorId: String, callback: TemperatureCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("temperature")(sensorId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def temperature(sensorId: String, options: TemperatureOptions, callback: TemperatureCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("temperature")(sensorId.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def temperature(sensorId: String, callback: TemperatureCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("temperature")(sensorId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def temperature(sensorId: String, options: TemperatureOptions, callback: TemperatureCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("temperature")(sensorId.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def temperatureSync(sensorId: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("temperatureSync")(sensorId.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def temperatureSync(sensorId: String, options: TemperatureOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("temperatureSync")(sensorId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def temperatureSync(sensorId: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("temperatureSync")(sensorId.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def temperatureSync(sensorId: String, options: TemperatureOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("temperatureSync")(sensorId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   type SensorsCallback = js.Function2[/* err */ Error | Null, /* ids */ js.Array[String], Unit]
   
@@ -37,17 +32,14 @@ object mod {
   }
   object TemperatureOptions {
     
-    @scala.inline
-    def apply(parser: decimal | default | hex): TemperatureOptions = {
+    inline def apply(parser: decimal | default | hex): TemperatureOptions = {
       val __obj = js.Dynamic.literal(parser = parser.asInstanceOf[js.Any])
       __obj.asInstanceOf[TemperatureOptions]
     }
     
-    @scala.inline
-    implicit class TemperatureOptionsMutableBuilder[Self <: TemperatureOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TemperatureOptions](x: Self) {
       
-      @scala.inline
-      def setParser(value: decimal | default | hex): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
+      inline def setParser(value: decimal | default | hex): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
     }
   }
 }

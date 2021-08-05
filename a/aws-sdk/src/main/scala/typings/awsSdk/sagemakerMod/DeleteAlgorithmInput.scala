@@ -13,16 +13,13 @@ trait DeleteAlgorithmInput extends StObject {
 }
 object DeleteAlgorithmInput {
   
-  @scala.inline
-  def apply(AlgorithmName: EntityName): DeleteAlgorithmInput = {
+  inline def apply(AlgorithmName: EntityName): DeleteAlgorithmInput = {
     val __obj = js.Dynamic.literal(AlgorithmName = AlgorithmName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAlgorithmInput]
   }
   
-  @scala.inline
-  implicit class DeleteAlgorithmInputMutableBuilder[Self <: DeleteAlgorithmInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAlgorithmInput](x: Self) {
     
-    @scala.inline
-    def setAlgorithmName(value: EntityName): Self = StObject.set(x, "AlgorithmName", value.asInstanceOf[js.Any])
+    inline def setAlgorithmName(value: EntityName): Self = StObject.set(x, "AlgorithmName", value.asInstanceOf[js.Any])
   }
 }

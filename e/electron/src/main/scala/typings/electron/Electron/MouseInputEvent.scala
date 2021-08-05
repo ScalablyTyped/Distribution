@@ -46,8 +46,7 @@ trait MouseInputEvent
 }
 object MouseInputEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `type`: mouseDown | mouseUp | mouseEnter | mouseLeave | contextMenu | mouseWheel | mouseMove,
     x: Double,
     y: Double
@@ -57,52 +56,36 @@ object MouseInputEvent {
     __obj.asInstanceOf[MouseInputEvent]
   }
   
-  @scala.inline
-  implicit class MouseInputEventMutableBuilder[Self <: MouseInputEvent] (val x: Self) extends AnyVal {
+  extension [Self <: MouseInputEvent](x: Self) {
     
-    @scala.inline
-    def setButton(value: left | middle | right): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setButton(value: left | middle | right): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+    inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
-    @scala.inline
-    def setClickCount(value: Double): Self = StObject.set(x, "clickCount", value.asInstanceOf[js.Any])
+    inline def setClickCount(value: Double): Self = StObject.set(x, "clickCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClickCountUndefined: Self = StObject.set(x, "clickCount", js.undefined)
+    inline def setClickCountUndefined: Self = StObject.set(x, "clickCount", js.undefined)
     
-    @scala.inline
-    def setGlobalX(value: Double): Self = StObject.set(x, "globalX", value.asInstanceOf[js.Any])
+    inline def setGlobalX(value: Double): Self = StObject.set(x, "globalX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalXUndefined: Self = StObject.set(x, "globalX", js.undefined)
+    inline def setGlobalXUndefined: Self = StObject.set(x, "globalX", js.undefined)
     
-    @scala.inline
-    def setGlobalY(value: Double): Self = StObject.set(x, "globalY", value.asInstanceOf[js.Any])
+    inline def setGlobalY(value: Double): Self = StObject.set(x, "globalY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalYUndefined: Self = StObject.set(x, "globalY", js.undefined)
+    inline def setGlobalYUndefined: Self = StObject.set(x, "globalY", js.undefined)
     
-    @scala.inline
-    def setMovementX(value: Double): Self = StObject.set(x, "movementX", value.asInstanceOf[js.Any])
+    inline def setMovementX(value: Double): Self = StObject.set(x, "movementX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMovementXUndefined: Self = StObject.set(x, "movementX", js.undefined)
+    inline def setMovementXUndefined: Self = StObject.set(x, "movementX", js.undefined)
     
-    @scala.inline
-    def setMovementY(value: Double): Self = StObject.set(x, "movementY", value.asInstanceOf[js.Any])
+    inline def setMovementY(value: Double): Self = StObject.set(x, "movementY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMovementYUndefined: Self = StObject.set(x, "movementY", js.undefined)
+    inline def setMovementYUndefined: Self = StObject.set(x, "movementY", js.undefined)
     
-    @scala.inline
-    def setType(value: mouseDown | mouseUp | mouseEnter | mouseLeave | contextMenu | mouseWheel | mouseMove): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: mouseDown | mouseUp | mouseEnter | mouseLeave | contextMenu | mouseWheel | mouseMove): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

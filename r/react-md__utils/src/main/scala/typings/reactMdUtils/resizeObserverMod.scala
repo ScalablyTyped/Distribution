@@ -14,8 +14,7 @@ object resizeObserverMod {
   
   object ResizeObserver {
     
-    @scala.inline
-    def apply(hasDisableHeightDisableWidthClassNameComponentTargetOnResize: ResizeObserverProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(hasDisableHeightDisableWidthClassNameComponentTargetOnResize.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    inline def apply(hasDisableHeightDisableWidthClassNameComponentTargetOnResize: ResizeObserverProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(hasDisableHeightDisableWidthClassNameComponentTargetOnResize.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
     
     @JSImport("@react-md/utils/types/sizing/ResizeObserver", "ResizeObserver")
     @js.native
@@ -30,32 +29,27 @@ object resizeObserverMod {
       @JSImport("@react-md/utils/types/sizing/ResizeObserver", "ResizeObserver.propTypes.className")
       @js.native
       def className: js.Any = js.native
-      @scala.inline
-      def className_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+      inline def className_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/utils/types/sizing/ResizeObserver", "ResizeObserver.propTypes.component")
       @js.native
       def component: js.Any = js.native
-      @scala.inline
-      def component_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("component")(x.asInstanceOf[js.Any])
+      inline def component_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("component")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/utils/types/sizing/ResizeObserver", "ResizeObserver.propTypes.disableHeight")
       @js.native
       def disableHeight: js.Any = js.native
-      @scala.inline
-      def disableHeight_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disableHeight")(x.asInstanceOf[js.Any])
+      inline def disableHeight_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disableHeight")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/utils/types/sizing/ResizeObserver", "ResizeObserver.propTypes.disableWidth")
       @js.native
       def disableWidth: js.Any = js.native
-      @scala.inline
-      def disableWidth_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disableWidth")(x.asInstanceOf[js.Any])
+      inline def disableWidth_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disableWidth")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/utils/types/sizing/ResizeObserver", "ResizeObserver.propTypes.target")
       @js.native
       def target: js.Any = js.native
-      @scala.inline
-      def target_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("target")(x.asInstanceOf[js.Any])
+      inline def target_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("target")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -110,53 +104,38 @@ object resizeObserverMod {
   }
   object ResizeObserverProps {
     
-    @scala.inline
-    def apply(onResize: /* resizeData */ ResizeObserverElementData[HTMLElement] => Unit): ResizeObserverProps = {
+    inline def apply(onResize: /* resizeData */ ResizeObserverElementData[HTMLElement] => Unit): ResizeObserverProps = {
       val __obj = js.Dynamic.literal(onResize = js.Any.fromFunction1(onResize))
       __obj.asInstanceOf[ResizeObserverProps]
     }
     
-    @scala.inline
-    implicit class ResizeObserverPropsMutableBuilder[Self <: ResizeObserverProps] (val x: Self) extends AnyVal {
+    extension [Self <: ResizeObserverProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setComponent(value: ElementType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ElementType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      @scala.inline
-      def setDisableHeight(value: Boolean): Self = StObject.set(x, "disableHeight", value.asInstanceOf[js.Any])
+      inline def setDisableHeight(value: Boolean): Self = StObject.set(x, "disableHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableHeightUndefined: Self = StObject.set(x, "disableHeight", js.undefined)
+      inline def setDisableHeightUndefined: Self = StObject.set(x, "disableHeight", js.undefined)
       
-      @scala.inline
-      def setDisableWidth(value: Boolean): Self = StObject.set(x, "disableWidth", value.asInstanceOf[js.Any])
+      inline def setDisableWidth(value: Boolean): Self = StObject.set(x, "disableWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableWidthUndefined: Self = StObject.set(x, "disableWidth", js.undefined)
+      inline def setDisableWidthUndefined: Self = StObject.set(x, "disableWidth", js.undefined)
       
-      @scala.inline
-      def setOnResize(value: /* resizeData */ ResizeObserverElementData[HTMLElement] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      inline def setOnResize(value: /* resizeData */ ResizeObserverElementData[HTMLElement] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTarget(value: ResizeObserverTarget[HTMLElement]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: ResizeObserverTarget[HTMLElement]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetFunction0(value: () => HTMLElement | Null): Self = StObject.set(x, "target", js.Any.fromFunction0(value))
+      inline def setTargetFunction0(value: () => HTMLElement | Null): Self = StObject.set(x, "target", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTargetNull: Self = StObject.set(x, "target", null)
+      inline def setTargetNull: Self = StObject.set(x, "target", null)
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }
   }
 }

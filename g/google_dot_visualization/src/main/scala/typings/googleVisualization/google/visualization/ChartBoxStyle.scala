@@ -19,43 +19,31 @@ trait ChartBoxStyle extends StObject {
 }
 object ChartBoxStyle {
   
-  @scala.inline
-  def apply(): ChartBoxStyle = {
+  inline def apply(): ChartBoxStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartBoxStyle]
   }
   
-  @scala.inline
-  implicit class ChartBoxStyleMutableBuilder[Self <: ChartBoxStyle] (val x: Self) extends AnyVal {
+  extension [Self <: ChartBoxStyle](x: Self) {
     
-    @scala.inline
-    def setGradient(value: Color1): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
+    inline def setGradient(value: Color1): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradientUndefined: Self = StObject.set(x, "gradient", js.undefined)
+    inline def setGradientUndefined: Self = StObject.set(x, "gradient", js.undefined)
     
-    @scala.inline
-    def setRx(value: Double): Self = StObject.set(x, "rx", value.asInstanceOf[js.Any])
+    inline def setRx(value: Double): Self = StObject.set(x, "rx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRxUndefined: Self = StObject.set(x, "rx", js.undefined)
+    inline def setRxUndefined: Self = StObject.set(x, "rx", js.undefined)
     
-    @scala.inline
-    def setRy(value: Double): Self = StObject.set(x, "ry", value.asInstanceOf[js.Any])
+    inline def setRy(value: Double): Self = StObject.set(x, "ry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRyUndefined: Self = StObject.set(x, "ry", js.undefined)
+    inline def setRyUndefined: Self = StObject.set(x, "ry", js.undefined)
     
-    @scala.inline
-    def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    inline def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+    inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
     
-    @scala.inline
-    def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+    inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
+    inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
   }
 }

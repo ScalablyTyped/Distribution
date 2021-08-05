@@ -13,11 +13,11 @@ object traceStateMod {
        with typings.opentelemetryApi.traceStateMod.TraceState {
     def this(rawTraceState: String) = this()
     
-    var _internalState: js.Any = js.native
+    /* private */ var _internalState: js.Any = js.native
     
-    var _keys: js.Any = js.native
+    /* private */ var _keys: js.Any = js.native
     
-    var _parse: js.Any = js.native
+    /* private */ var _parse: js.Any = js.native
     
     /**
       * Returns the value to which the specified key is mapped, or `undefined` if

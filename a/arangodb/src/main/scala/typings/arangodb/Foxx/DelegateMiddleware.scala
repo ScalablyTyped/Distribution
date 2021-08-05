@@ -10,16 +10,13 @@ trait DelegateMiddleware extends StObject {
 }
 object DelegateMiddleware {
   
-  @scala.inline
-  def apply(register: Endpoint => SimpleMiddleware): DelegateMiddleware = {
+  inline def apply(register: Endpoint => SimpleMiddleware): DelegateMiddleware = {
     val __obj = js.Dynamic.literal(register = js.Any.fromFunction1(register))
     __obj.asInstanceOf[DelegateMiddleware]
   }
   
-  @scala.inline
-  implicit class DelegateMiddlewareMutableBuilder[Self <: DelegateMiddleware] (val x: Self) extends AnyVal {
+  extension [Self <: DelegateMiddleware](x: Self) {
     
-    @scala.inline
-    def setRegister(value: Endpoint => SimpleMiddleware): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
+    inline def setRegister(value: Endpoint => SimpleMiddleware): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
   }
 }

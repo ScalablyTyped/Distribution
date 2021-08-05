@@ -30,8 +30,7 @@ trait SmsBinaryMessage extends StObject {
 }
 object SmsBinaryMessage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     format: SmsDataFormat,
     getData: () => js.Array[Double],
     id: Double,
@@ -42,22 +41,16 @@ object SmsBinaryMessage {
     __obj.asInstanceOf[SmsBinaryMessage]
   }
   
-  @scala.inline
-  implicit class SmsBinaryMessageMutableBuilder[Self <: SmsBinaryMessage] (val x: Self) extends AnyVal {
+  extension [Self <: SmsBinaryMessage](x: Self) {
     
-    @scala.inline
-    def setFormat(value: SmsDataFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: SmsDataFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetData(value: () => js.Array[Double]): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
+    inline def setGetData(value: () => js.Array[Double]): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageClass(value: SmsMessageClass): Self = StObject.set(x, "messageClass", value.asInstanceOf[js.Any])
+    inline def setMessageClass(value: SmsMessageClass): Self = StObject.set(x, "messageClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetData(value: js.Array[Double] => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
+    inline def setSetData(value: js.Array[Double] => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
   }
 }

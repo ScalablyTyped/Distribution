@@ -18,25 +18,19 @@ trait DateTimeRange extends StObject {
 }
 object DateTimeRange {
   
-  @scala.inline
-  def apply(): DateTimeRange = {
+  inline def apply(): DateTimeRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DateTimeRange]
   }
   
-  @scala.inline
-  implicit class DateTimeRangeMutableBuilder[Self <: DateTimeRange] (val x: Self) extends AnyVal {
+  extension [Self <: DateTimeRange](x: Self) {
     
-    @scala.inline
-    def setFrom(value: timestamp): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: timestamp): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
-    @scala.inline
-    def setTo(value: timestamp): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: timestamp): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
   }
 }

@@ -111,8 +111,7 @@ trait TvInfoManager extends StObject {
 }
 object TvInfoManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     TvInfoKey: TVVIEWERBGEXECUTABLE,
     TvInfoMenuKey: ACCESSIBILITYFOCUSZOOM,
     TvInfoMenuValue: AUDIOLANGUAGECODEAFR,
@@ -130,43 +129,30 @@ object TvInfoManager {
     __obj.asInstanceOf[TvInfoManager]
   }
   
-  @scala.inline
-  implicit class TvInfoManagerMutableBuilder[Self <: TvInfoManager] (val x: Self) extends AnyVal {
+  extension [Self <: TvInfoManager](x: Self) {
     
-    @scala.inline
-    def setAddCaptionChangeListener(value: (TvInfoMenuKey, TvInfoCaptionChangeCallback) => Double): Self = StObject.set(x, "addCaptionChangeListener", js.Any.fromFunction2(value))
+    inline def setAddCaptionChangeListener(value: (TvInfoMenuKey, TvInfoCaptionChangeCallback) => Double): Self = StObject.set(x, "addCaptionChangeListener", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetMenuValue(value: TvInfoMenuKey => TvInfoMenuValue): Self = StObject.set(x, "getMenuValue", js.Any.fromFunction1(value))
+    inline def setGetMenuValue(value: TvInfoMenuKey => TvInfoMenuValue): Self = StObject.set(x, "getMenuValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetTvInfoValue(value: TvInfoKey => TvInfoValue): Self = StObject.set(x, "getTvInfoValue", js.Any.fromFunction1(value))
+    inline def setGetTvInfoValue(value: TvInfoKey => TvInfoValue): Self = StObject.set(x, "getTvInfoValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetVersion(value: () => String): Self = StObject.set(x, "getVersion", js.Any.fromFunction0(value))
+    inline def setGetVersion(value: () => String): Self = StObject.set(x, "getVersion", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsTvsPicSizeResized(value: () => Boolean): Self = StObject.set(x, "isTvsPicSizeResized", js.Any.fromFunction0(value))
+    inline def setIsTvsPicSizeResized(value: () => Boolean): Self = StObject.set(x, "isTvsPicSizeResized", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRegisterInAppCaptionControl(value: Boolean => Unit): Self = StObject.set(x, "registerInAppCaptionControl", js.Any.fromFunction1(value))
+    inline def setRegisterInAppCaptionControl(value: Boolean => Unit): Self = StObject.set(x, "registerInAppCaptionControl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveCaptionChangeListener(value: Double => Unit): Self = StObject.set(x, "removeCaptionChangeListener", js.Any.fromFunction1(value))
+    inline def setRemoveCaptionChangeListener(value: Double => Unit): Self = StObject.set(x, "removeCaptionChangeListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowCaption(value: Boolean => Unit): Self = StObject.set(x, "showCaption", js.Any.fromFunction1(value))
+    inline def setShowCaption(value: Boolean => Unit): Self = StObject.set(x, "showCaption", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTvInfoKey(value: TVVIEWERBGEXECUTABLE): Self = StObject.set(x, "TvInfoKey", value.asInstanceOf[js.Any])
+    inline def setTvInfoKey(value: TVVIEWERBGEXECUTABLE): Self = StObject.set(x, "TvInfoKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTvInfoMenuKey(value: ACCESSIBILITYFOCUSZOOM): Self = StObject.set(x, "TvInfoMenuKey", value.asInstanceOf[js.Any])
+    inline def setTvInfoMenuKey(value: ACCESSIBILITYFOCUSZOOM): Self = StObject.set(x, "TvInfoMenuKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTvInfoMenuValue(value: AUDIOLANGUAGECODEAFR): Self = StObject.set(x, "TvInfoMenuValue", value.asInstanceOf[js.Any])
+    inline def setTvInfoMenuValue(value: AUDIOLANGUAGECODEAFR): Self = StObject.set(x, "TvInfoMenuValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTvInfoValue(value: TVVIEWERBGNOTEXECUTABLE): Self = StObject.set(x, "TvInfoValue", value.asInstanceOf[js.Any])
+    inline def setTvInfoValue(value: TVVIEWERBGNOTEXECUTABLE): Self = StObject.set(x, "TvInfoValue", value.asInstanceOf[js.Any])
   }
 }

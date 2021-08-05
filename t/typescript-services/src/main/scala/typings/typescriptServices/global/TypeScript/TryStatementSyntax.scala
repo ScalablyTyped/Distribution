@@ -98,10 +98,8 @@ object TryStatementSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(tryKeyword: ISyntaxToken, block: typings.typescriptServices.TypeScript.BlockSyntax): typings.typescriptServices.TypeScript.TryStatementSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tryKeyword.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.TryStatementSyntax]
+  inline def create(tryKeyword: ISyntaxToken, block: typings.typescriptServices.TypeScript.BlockSyntax): typings.typescriptServices.TypeScript.TryStatementSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tryKeyword.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.TryStatementSyntax]
   
   /* static member */
-  @scala.inline
-  def create1(): typings.typescriptServices.TypeScript.TryStatementSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")().asInstanceOf[typings.typescriptServices.TypeScript.TryStatementSyntax]
+  inline def create1(): typings.typescriptServices.TypeScript.TryStatementSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")().asInstanceOf[typings.typescriptServices.TypeScript.TryStatementSyntax]
 }

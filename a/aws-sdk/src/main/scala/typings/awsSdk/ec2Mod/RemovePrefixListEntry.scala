@@ -13,16 +13,13 @@ trait RemovePrefixListEntry extends StObject {
 }
 object RemovePrefixListEntry {
   
-  @scala.inline
-  def apply(Cidr: String): RemovePrefixListEntry = {
+  inline def apply(Cidr: String): RemovePrefixListEntry = {
     val __obj = js.Dynamic.literal(Cidr = Cidr.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemovePrefixListEntry]
   }
   
-  @scala.inline
-  implicit class RemovePrefixListEntryMutableBuilder[Self <: RemovePrefixListEntry] (val x: Self) extends AnyVal {
+  extension [Self <: RemovePrefixListEntry](x: Self) {
     
-    @scala.inline
-    def setCidr(value: String): Self = StObject.set(x, "Cidr", value.asInstanceOf[js.Any])
+    inline def setCidr(value: String): Self = StObject.set(x, "Cidr", value.asInstanceOf[js.Any])
   }
 }

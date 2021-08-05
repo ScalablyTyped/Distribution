@@ -29,33 +29,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcTextTransferType extends StObject
 object AcTextTransferType {
   
-  @scala.inline
-  def acExportDelim: `2` = 2.asInstanceOf[`2`]
+  inline def acExportDelim: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def acExportFixed: `3` = 3.asInstanceOf[`3`]
+  inline def acExportFixed: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def acExportHTML: `8` = 8.asInstanceOf[`8`]
+  inline def acExportHTML: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def acExportMerge: `4` = 4.asInstanceOf[`4`]
+  inline def acExportMerge: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def acImportDelim: `0` = 0.asInstanceOf[`0`]
+  inline def acImportDelim: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def acImportFixed: `1` = 1.asInstanceOf[`1`]
+  inline def acImportFixed: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def acImportHTML: `7` = 7.asInstanceOf[`7`]
+  inline def acImportHTML: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def acLinkDelim: `5` = 5.asInstanceOf[`5`]
+  inline def acLinkDelim: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def acLinkFixed: `6` = 6.asInstanceOf[`6`]
+  inline def acLinkFixed: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def acLinkHTML: `9` = 9.asInstanceOf[`9`]
+  inline def acLinkHTML: `9` = 9.asInstanceOf[`9`]
 }

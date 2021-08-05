@@ -22,8 +22,7 @@ trait Addons extends StObject {
 }
 object Addons {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addons: String,
     discount: String,
     plan: String,
@@ -36,28 +35,20 @@ object Addons {
     __obj.asInstanceOf[Addons]
   }
   
-  @scala.inline
-  implicit class AddonsMutableBuilder[Self <: Addons] (val x: Self) extends AnyVal {
+  extension [Self <: Addons](x: Self) {
     
-    @scala.inline
-    def setAddons(value: String): Self = StObject.set(x, "addons", value.asInstanceOf[js.Any])
+    inline def setAddons(value: String): Self = StObject.set(x, "addons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscount(value: String): Self = StObject.set(x, "discount", value.asInstanceOf[js.Any])
+    inline def setDiscount(value: String): Self = StObject.set(x, "discount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlan(value: String): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
+    inline def setPlan(value: String): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetup_fee(value: String): Self = StObject.set(x, "setup_fee", value.asInstanceOf[js.Any])
+    inline def setSetup_fee(value: String): Self = StObject.set(x, "setup_fee", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtotal(value: String): Self = StObject.set(x, "subtotal", value.asInstanceOf[js.Any])
+    inline def setSubtotal(value: String): Self = StObject.set(x, "subtotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTax(value: String): Self = StObject.set(x, "tax", value.asInstanceOf[js.Any])
+    inline def setTax(value: String): Self = StObject.set(x, "tax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal(value: String): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: String): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
   }
 }

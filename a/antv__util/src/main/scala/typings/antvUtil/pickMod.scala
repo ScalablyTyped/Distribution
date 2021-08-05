@@ -11,8 +11,7 @@ object pickMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](`object`: ObjectType[T], keys: js.Array[String]): ObjectType[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(`object`.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[ObjectType[T]]
+  inline def default[T](`object`: ObjectType[T], keys: js.Array[String]): ObjectType[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(`object`.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[ObjectType[T]]
   
   type ObjectType[T] = StringDictionary[T]
 }

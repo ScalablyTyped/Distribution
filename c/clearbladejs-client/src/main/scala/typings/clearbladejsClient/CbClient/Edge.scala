@@ -26,8 +26,7 @@ trait Edge extends StObject {
 }
 object Edge {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     URI: String,
     columns: CbCallback => Unit,
     count: (Query, CbCallback) => Unit,
@@ -42,34 +41,24 @@ object Edge {
     __obj.asInstanceOf[Edge]
   }
   
-  @scala.inline
-  implicit class EdgeMutableBuilder[Self <: Edge] (val x: Self) extends AnyVal {
+  extension [Self <: Edge](x: Self) {
     
-    @scala.inline
-    def setColumns(value: CbCallback => Unit): Self = StObject.set(x, "columns", js.Any.fromFunction1(value))
+    inline def setColumns(value: CbCallback => Unit): Self = StObject.set(x, "columns", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCount(value: (Query, CbCallback) => Unit): Self = StObject.set(x, "count", js.Any.fromFunction2(value))
+    inline def setCount(value: (Query, CbCallback) => Unit): Self = StObject.set(x, "count", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreate(value: (js.Object, String, CbCallback) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction3(value))
+    inline def setCreate(value: (js.Object, String, CbCallback) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setDeleteEdgeByName(value: (String, CbCallback) => Unit): Self = StObject.set(x, "deleteEdgeByName", js.Any.fromFunction2(value))
+    inline def setDeleteEdgeByName(value: (String, CbCallback) => Unit): Self = StObject.set(x, "deleteEdgeByName", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
+    inline def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemSecret(value: String): Self = StObject.set(x, "systemSecret", value.asInstanceOf[js.Any])
+    inline def setSystemSecret(value: String): Self = StObject.set(x, "systemSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setURI(value: String): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+    inline def setURI(value: String): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateEdgeByName(value: (String, js.Object, CbCallback) => Unit): Self = StObject.set(x, "updateEdgeByName", js.Any.fromFunction3(value))
+    inline def setUpdateEdgeByName(value: (String, js.Object, CbCallback) => Unit): Self = StObject.set(x, "updateEdgeByName", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setUser(value: APIUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: APIUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

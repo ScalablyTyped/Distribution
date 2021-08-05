@@ -20,8 +20,7 @@ trait Borders extends StObject {
 }
 object Borders {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bottom: PartialBorder,
     diagonal: PartialBorderDiagonal,
     left: PartialBorder,
@@ -32,22 +31,16 @@ object Borders {
     __obj.asInstanceOf[Borders]
   }
   
-  @scala.inline
-  implicit class BordersMutableBuilder[Self <: Borders] (val x: Self) extends AnyVal {
+  extension [Self <: Borders](x: Self) {
     
-    @scala.inline
-    def setBottom(value: PartialBorder): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    inline def setBottom(value: PartialBorder): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiagonal(value: PartialBorderDiagonal): Self = StObject.set(x, "diagonal", value.asInstanceOf[js.Any])
+    inline def setDiagonal(value: PartialBorderDiagonal): Self = StObject.set(x, "diagonal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft(value: PartialBorder): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: PartialBorder): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: PartialBorder): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: PartialBorder): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop(value: PartialBorder): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: PartialBorder): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
   }
 }

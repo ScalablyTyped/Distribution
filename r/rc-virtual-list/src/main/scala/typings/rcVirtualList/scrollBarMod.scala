@@ -89,8 +89,7 @@ object scrollBarMod {
   }
   object ScrollBarProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       count: Double,
       height: Double,
       onScroll: Double => Unit,
@@ -104,32 +103,23 @@ object scrollBarMod {
       __obj.asInstanceOf[ScrollBarProps]
     }
     
-    @scala.inline
-    implicit class ScrollBarPropsMutableBuilder[Self <: ScrollBarProps] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollBarProps](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnScroll(value: Double => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+      inline def setOnScroll(value: Double => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnStartMove(value: () => Unit): Self = StObject.set(x, "onStartMove", js.Any.fromFunction0(value))
+      inline def setOnStartMove(value: () => Unit): Self = StObject.set(x, "onStartMove", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnStopMove(value: () => Unit): Self = StObject.set(x, "onStopMove", js.Any.fromFunction0(value))
+      inline def setOnStopMove(value: () => Unit): Self = StObject.set(x, "onStopMove", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollHeight(value: Double): Self = StObject.set(x, "scrollHeight", value.asInstanceOf[js.Any])
+      inline def setScrollHeight(value: Double): Self = StObject.set(x, "scrollHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
+      inline def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
     }
   }
   
@@ -145,26 +135,20 @@ object scrollBarMod {
   }
   object ScrollBarState {
     
-    @scala.inline
-    def apply(dragging: Boolean, pageY: Double, startTop: Double, visible: Boolean): ScrollBarState = {
+    inline def apply(dragging: Boolean, pageY: Double, startTop: Double, visible: Boolean): ScrollBarState = {
       val __obj = js.Dynamic.literal(dragging = dragging.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], startTop = startTop.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScrollBarState]
     }
     
-    @scala.inline
-    implicit class ScrollBarStateMutableBuilder[Self <: ScrollBarState] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollBarState](x: Self) {
       
-      @scala.inline
-      def setDragging(value: Boolean): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
+      inline def setDragging(value: Boolean): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
+      inline def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTop(value: Double): Self = StObject.set(x, "startTop", value.asInstanceOf[js.Any])
+      inline def setStartTop(value: Double): Self = StObject.set(x, "startTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     }
   }
 }

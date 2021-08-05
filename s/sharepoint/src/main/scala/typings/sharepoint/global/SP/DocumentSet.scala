@@ -18,8 +18,7 @@ object DocumentSet {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def create(
+    inline def create(
       context: typings.sharepoint.SP.ClientContext,
       parentFolder: typings.sharepoint.SP.Folder,
       name: String,

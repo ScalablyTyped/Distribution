@@ -53,43 +53,31 @@ trait SourceMapOptions extends StObject {
 }
 object SourceMapOptions {
   
-  @scala.inline
-  def apply(): SourceMapOptions = {
+  inline def apply(): SourceMapOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SourceMapOptions]
   }
   
-  @scala.inline
-  implicit class SourceMapOptionsMutableBuilder[Self <: SourceMapOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SourceMapOptions](x: Self) {
     
-    @scala.inline
-    def setAnnotation(value: String | Boolean): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
+    inline def setAnnotation(value: String | Boolean): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationUndefined: Self = StObject.set(x, "annotation", js.undefined)
+    inline def setAnnotationUndefined: Self = StObject.set(x, "annotation", js.undefined)
     
-    @scala.inline
-    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
-    @scala.inline
-    def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+    inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
+    inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
     
-    @scala.inline
-    def setPrev(value: js.Any): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+    inline def setPrev(value: js.Any): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
+    inline def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
     
-    @scala.inline
-    def setSourcesContent(value: Boolean): Self = StObject.set(x, "sourcesContent", value.asInstanceOf[js.Any])
+    inline def setSourcesContent(value: Boolean): Self = StObject.set(x, "sourcesContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcesContentUndefined: Self = StObject.set(x, "sourcesContent", js.undefined)
+    inline def setSourcesContentUndefined: Self = StObject.set(x, "sourcesContent", js.undefined)
   }
 }

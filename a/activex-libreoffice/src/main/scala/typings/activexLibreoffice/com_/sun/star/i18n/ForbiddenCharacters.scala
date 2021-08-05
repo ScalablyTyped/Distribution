@@ -17,19 +17,15 @@ trait ForbiddenCharacters extends StObject {
 }
 object ForbiddenCharacters {
   
-  @scala.inline
-  def apply(beginLine: String, endLine: String): ForbiddenCharacters = {
+  inline def apply(beginLine: String, endLine: String): ForbiddenCharacters = {
     val __obj = js.Dynamic.literal(beginLine = beginLine.asInstanceOf[js.Any], endLine = endLine.asInstanceOf[js.Any])
     __obj.asInstanceOf[ForbiddenCharacters]
   }
   
-  @scala.inline
-  implicit class ForbiddenCharactersMutableBuilder[Self <: ForbiddenCharacters] (val x: Self) extends AnyVal {
+  extension [Self <: ForbiddenCharacters](x: Self) {
     
-    @scala.inline
-    def setBeginLine(value: String): Self = StObject.set(x, "beginLine", value.asInstanceOf[js.Any])
+    inline def setBeginLine(value: String): Self = StObject.set(x, "beginLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndLine(value: String): Self = StObject.set(x, "endLine", value.asInstanceOf[js.Any])
+    inline def setEndLine(value: String): Self = StObject.set(x, "endLine", value.asInstanceOf[js.Any])
   }
 }

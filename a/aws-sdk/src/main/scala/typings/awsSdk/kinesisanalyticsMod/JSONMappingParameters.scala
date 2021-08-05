@@ -13,16 +13,13 @@ trait JSONMappingParameters extends StObject {
 }
 object JSONMappingParameters {
   
-  @scala.inline
-  def apply(RecordRowPath: RecordRowPath): JSONMappingParameters = {
+  inline def apply(RecordRowPath: RecordRowPath): JSONMappingParameters = {
     val __obj = js.Dynamic.literal(RecordRowPath = RecordRowPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSONMappingParameters]
   }
   
-  @scala.inline
-  implicit class JSONMappingParametersMutableBuilder[Self <: JSONMappingParameters] (val x: Self) extends AnyVal {
+  extension [Self <: JSONMappingParameters](x: Self) {
     
-    @scala.inline
-    def setRecordRowPath(value: RecordRowPath): Self = StObject.set(x, "RecordRowPath", value.asInstanceOf[js.Any])
+    inline def setRecordRowPath(value: RecordRowPath): Self = StObject.set(x, "RecordRowPath", value.asInstanceOf[js.Any])
   }
 }

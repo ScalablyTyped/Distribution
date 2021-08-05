@@ -53,58 +53,41 @@ trait DataElementMapping
 }
 object DataElementMapping {
   
-  @scala.inline
-  def apply(identity: id): DataElementMapping = {
+  inline def apply(identity: id): DataElementMapping = {
     val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataElementMapping]
   }
   
-  @scala.inline
-  implicit class DataElementMappingMutableBuilder[Self <: DataElementMapping] (val x: Self) extends AnyVal {
+  extension [Self <: DataElementMapping](x: Self) {
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
-    @scala.inline
-    def setIdentity(value: id): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+    inline def setIdentity(value: id): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setUri(value: uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
     
-    @scala.inline
-    def set_comment(value: Element): Self = StObject.set(x, "_comment", value.asInstanceOf[js.Any])
+    inline def set_comment(value: Element): Self = StObject.set(x, "_comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_commentUndefined: Self = StObject.set(x, "_comment", js.undefined)
+    inline def set_commentUndefined: Self = StObject.set(x, "_comment", js.undefined)
     
-    @scala.inline
-    def set_identity(value: Element): Self = StObject.set(x, "_identity", value.asInstanceOf[js.Any])
+    inline def set_identity(value: Element): Self = StObject.set(x, "_identity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_identityUndefined: Self = StObject.set(x, "_identity", js.undefined)
+    inline def set_identityUndefined: Self = StObject.set(x, "_identity", js.undefined)
     
-    @scala.inline
-    def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
+    inline def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
+    inline def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
     
-    @scala.inline
-    def set_uri(value: Element): Self = StObject.set(x, "_uri", value.asInstanceOf[js.Any])
+    inline def set_uri(value: Element): Self = StObject.set(x, "_uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_uriUndefined: Self = StObject.set(x, "_uri", js.undefined)
+    inline def set_uriUndefined: Self = StObject.set(x, "_uri", js.undefined)
   }
 }

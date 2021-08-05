@@ -58,71 +58,50 @@ trait ProjectSource extends StObject {
 }
 object ProjectSource {
   
-  @scala.inline
-  def apply(`type`: SourceType): ProjectSource = {
+  inline def apply(`type`: SourceType): ProjectSource = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectSource]
   }
   
-  @scala.inline
-  implicit class ProjectSourceMutableBuilder[Self <: ProjectSource] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectSource](x: Self) {
     
-    @scala.inline
-    def setAuth(value: SourceAuth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: SourceAuth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setBuildStatusConfig(value: BuildStatusConfig): Self = StObject.set(x, "buildStatusConfig", value.asInstanceOf[js.Any])
+    inline def setBuildStatusConfig(value: BuildStatusConfig): Self = StObject.set(x, "buildStatusConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildStatusConfigUndefined: Self = StObject.set(x, "buildStatusConfig", js.undefined)
+    inline def setBuildStatusConfigUndefined: Self = StObject.set(x, "buildStatusConfig", js.undefined)
     
-    @scala.inline
-    def setBuildspec(value: String): Self = StObject.set(x, "buildspec", value.asInstanceOf[js.Any])
+    inline def setBuildspec(value: String): Self = StObject.set(x, "buildspec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildspecUndefined: Self = StObject.set(x, "buildspec", js.undefined)
+    inline def setBuildspecUndefined: Self = StObject.set(x, "buildspec", js.undefined)
     
-    @scala.inline
-    def setGitCloneDepth(value: GitCloneDepth): Self = StObject.set(x, "gitCloneDepth", value.asInstanceOf[js.Any])
+    inline def setGitCloneDepth(value: GitCloneDepth): Self = StObject.set(x, "gitCloneDepth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGitCloneDepthUndefined: Self = StObject.set(x, "gitCloneDepth", js.undefined)
+    inline def setGitCloneDepthUndefined: Self = StObject.set(x, "gitCloneDepth", js.undefined)
     
-    @scala.inline
-    def setGitSubmodulesConfig(value: GitSubmodulesConfig): Self = StObject.set(x, "gitSubmodulesConfig", value.asInstanceOf[js.Any])
+    inline def setGitSubmodulesConfig(value: GitSubmodulesConfig): Self = StObject.set(x, "gitSubmodulesConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGitSubmodulesConfigUndefined: Self = StObject.set(x, "gitSubmodulesConfig", js.undefined)
+    inline def setGitSubmodulesConfigUndefined: Self = StObject.set(x, "gitSubmodulesConfig", js.undefined)
     
-    @scala.inline
-    def setInsecureSsl(value: WrapperBoolean): Self = StObject.set(x, "insecureSsl", value.asInstanceOf[js.Any])
+    inline def setInsecureSsl(value: WrapperBoolean): Self = StObject.set(x, "insecureSsl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsecureSslUndefined: Self = StObject.set(x, "insecureSsl", js.undefined)
+    inline def setInsecureSslUndefined: Self = StObject.set(x, "insecureSsl", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setReportBuildStatus(value: WrapperBoolean): Self = StObject.set(x, "reportBuildStatus", value.asInstanceOf[js.Any])
+    inline def setReportBuildStatus(value: WrapperBoolean): Self = StObject.set(x, "reportBuildStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportBuildStatusUndefined: Self = StObject.set(x, "reportBuildStatus", js.undefined)
+    inline def setReportBuildStatusUndefined: Self = StObject.set(x, "reportBuildStatus", js.undefined)
     
-    @scala.inline
-    def setSourceIdentifier(value: String): Self = StObject.set(x, "sourceIdentifier", value.asInstanceOf[js.Any])
+    inline def setSourceIdentifier(value: String): Self = StObject.set(x, "sourceIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceIdentifierUndefined: Self = StObject.set(x, "sourceIdentifier", js.undefined)
+    inline def setSourceIdentifierUndefined: Self = StObject.set(x, "sourceIdentifier", js.undefined)
     
-    @scala.inline
-    def setType(value: SourceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: SourceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

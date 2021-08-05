@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteDeleteMultifactorParamsProvider extends StObject
 object DeleteDeleteMultifactorParamsProvider {
   
-  @scala.inline
-  def duo: typings.auth0.auth0Strings.duo = "duo".asInstanceOf[typings.auth0.auth0Strings.duo]
+  inline def duo: typings.auth0.auth0Strings.duo = "duo".asInstanceOf[typings.auth0.auth0Strings.duo]
   
-  @scala.inline
-  def `google-authenticator`: typings.auth0.auth0Strings.`google-authenticator` = "google-authenticator".asInstanceOf[typings.auth0.auth0Strings.`google-authenticator`]
+  inline def `google-authenticator`: typings.auth0.auth0Strings.`google-authenticator` = "google-authenticator".asInstanceOf[typings.auth0.auth0Strings.`google-authenticator`]
 }

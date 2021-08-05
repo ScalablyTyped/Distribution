@@ -18,25 +18,19 @@ trait ListPullRequestsOutput extends StObject {
 }
 object ListPullRequestsOutput {
   
-  @scala.inline
-  def apply(pullRequestIds: PullRequestIdList): ListPullRequestsOutput = {
+  inline def apply(pullRequestIds: PullRequestIdList): ListPullRequestsOutput = {
     val __obj = js.Dynamic.literal(pullRequestIds = pullRequestIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPullRequestsOutput]
   }
   
-  @scala.inline
-  implicit class ListPullRequestsOutputMutableBuilder[Self <: ListPullRequestsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListPullRequestsOutput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setPullRequestIds(value: PullRequestIdList): Self = StObject.set(x, "pullRequestIds", value.asInstanceOf[js.Any])
+    inline def setPullRequestIds(value: PullRequestIdList): Self = StObject.set(x, "pullRequestIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullRequestIdsVarargs(value: PullRequestId*): Self = StObject.set(x, "pullRequestIds", js.Array(value :_*))
+    inline def setPullRequestIdsVarargs(value: PullRequestId*): Self = StObject.set(x, "pullRequestIds", js.Array(value :_*))
   }
 }

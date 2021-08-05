@@ -14,28 +14,21 @@ trait ListPartitionCursorsResponse extends StObject {
 }
 object ListPartitionCursorsResponse {
   
-  @scala.inline
-  def apply(): ListPartitionCursorsResponse = {
+  inline def apply(): ListPartitionCursorsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListPartitionCursorsResponse]
   }
   
-  @scala.inline
-  implicit class ListPartitionCursorsResponseMutableBuilder[Self <: ListPartitionCursorsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListPartitionCursorsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setPartitionCursors(value: js.Array[PartitionCursor]): Self = StObject.set(x, "partitionCursors", value.asInstanceOf[js.Any])
+    inline def setPartitionCursors(value: js.Array[PartitionCursor]): Self = StObject.set(x, "partitionCursors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionCursorsUndefined: Self = StObject.set(x, "partitionCursors", js.undefined)
+    inline def setPartitionCursorsUndefined: Self = StObject.set(x, "partitionCursors", js.undefined)
     
-    @scala.inline
-    def setPartitionCursorsVarargs(value: PartitionCursor*): Self = StObject.set(x, "partitionCursors", js.Array(value :_*))
+    inline def setPartitionCursorsVarargs(value: PartitionCursor*): Self = StObject.set(x, "partitionCursors", js.Array(value :_*))
   }
 }

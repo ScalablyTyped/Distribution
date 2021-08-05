@@ -13,19 +13,15 @@ trait EnvironmentProperties extends StObject {
 }
 object EnvironmentProperties {
   
-  @scala.inline
-  def apply(PropertyGroups: PropertyGroups): EnvironmentProperties = {
+  inline def apply(PropertyGroups: PropertyGroups): EnvironmentProperties = {
     val __obj = js.Dynamic.literal(PropertyGroups = PropertyGroups.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnvironmentProperties]
   }
   
-  @scala.inline
-  implicit class EnvironmentPropertiesMutableBuilder[Self <: EnvironmentProperties] (val x: Self) extends AnyVal {
+  extension [Self <: EnvironmentProperties](x: Self) {
     
-    @scala.inline
-    def setPropertyGroups(value: PropertyGroups): Self = StObject.set(x, "PropertyGroups", value.asInstanceOf[js.Any])
+    inline def setPropertyGroups(value: PropertyGroups): Self = StObject.set(x, "PropertyGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyGroupsVarargs(value: PropertyGroup*): Self = StObject.set(x, "PropertyGroups", js.Array(value :_*))
+    inline def setPropertyGroupsVarargs(value: PropertyGroup*): Self = StObject.set(x, "PropertyGroups", js.Array(value :_*))
   }
 }

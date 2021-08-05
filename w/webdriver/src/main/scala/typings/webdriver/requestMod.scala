@@ -21,9 +21,9 @@ object requestMod {
   @js.native
   trait WebDriverRequest extends EventEmitter {
     
-    var _createOptions: js.Any = js.native
+    /* private */ var _createOptions: js.Any = js.native
     
-    var _request: js.Any = js.native
+    /* private */ var _request: js.Any = js.native
     
     var body: js.UndefOr[Record[String, js.Any]] = js.native
     
@@ -51,29 +51,22 @@ object requestMod {
   }
   object WebDriverResponse {
     
-    @scala.inline
-    def apply(value: js.Any): WebDriverResponse = {
+    inline def apply(value: js.Any): WebDriverResponse = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebDriverResponse]
     }
     
-    @scala.inline
-    implicit class WebDriverResponseMutableBuilder[Self <: WebDriverResponse] (val x: Self) extends AnyVal {
+    extension [Self <: WebDriverResponse](x: Self) {
       
-      @scala.inline
-      def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
+      inline def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionIdUndefined: Self = StObject.set(x, "sessionId", js.undefined)
+      inline def setSessionIdUndefined: Self = StObject.set(x, "sessionId", js.undefined)
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

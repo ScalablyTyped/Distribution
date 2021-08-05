@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlGender extends StObject
 object OlGender {
   
-  @scala.inline
-  def olFemale: `1` = 1.asInstanceOf[`1`]
+  inline def olFemale: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olMale: `2` = 2.asInstanceOf[`2`]
+  inline def olMale: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def olUnspecified: `0` = 0.asInstanceOf[`0`]
+  inline def olUnspecified: `0` = 0.asInstanceOf[`0`]
 }

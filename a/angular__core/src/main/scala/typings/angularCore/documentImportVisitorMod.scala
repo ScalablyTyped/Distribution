@@ -25,13 +25,13 @@ object documentImportVisitorMod {
   class DocumentImportVisitor protected () extends StObject {
     def this(typeChecker: TypeChecker) = this()
     
-    var getDocumentElement: js.Any = js.native
+    /* private */ var getDocumentElement: js.Any = js.native
     
     var importsMap: Map[SourceFile, ResolvedDocumentImport] = js.native
     
     var typeChecker: TypeChecker = js.native
     
-    var visitNamedImport: js.Any = js.native
+    /* private */ var visitNamedImport: js.Any = js.native
     
     def visitNode(node: Node): Unit = js.native
   }
@@ -50,32 +50,24 @@ object documentImportVisitorMod {
   }
   object ResolvedDocumentImport {
     
-    @scala.inline
-    def apply(): ResolvedDocumentImport = {
+    inline def apply(): ResolvedDocumentImport = {
       val __obj = js.Dynamic.literal(commonImport = null, documentElement = null, platformBrowserImport = null)
       __obj.asInstanceOf[ResolvedDocumentImport]
     }
     
-    @scala.inline
-    implicit class ResolvedDocumentImportMutableBuilder[Self <: ResolvedDocumentImport] (val x: Self) extends AnyVal {
+    extension [Self <: ResolvedDocumentImport](x: Self) {
       
-      @scala.inline
-      def setCommonImport(value: NamedImports): Self = StObject.set(x, "commonImport", value.asInstanceOf[js.Any])
+      inline def setCommonImport(value: NamedImports): Self = StObject.set(x, "commonImport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommonImportNull: Self = StObject.set(x, "commonImport", null)
+      inline def setCommonImportNull: Self = StObject.set(x, "commonImport", null)
       
-      @scala.inline
-      def setDocumentElement(value: ImportSpecifier): Self = StObject.set(x, "documentElement", value.asInstanceOf[js.Any])
+      inline def setDocumentElement(value: ImportSpecifier): Self = StObject.set(x, "documentElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentElementNull: Self = StObject.set(x, "documentElement", null)
+      inline def setDocumentElementNull: Self = StObject.set(x, "documentElement", null)
       
-      @scala.inline
-      def setPlatformBrowserImport(value: NamedImports): Self = StObject.set(x, "platformBrowserImport", value.asInstanceOf[js.Any])
+      inline def setPlatformBrowserImport(value: NamedImports): Self = StObject.set(x, "platformBrowserImport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformBrowserImportNull: Self = StObject.set(x, "platformBrowserImport", null)
+      inline def setPlatformBrowserImportNull: Self = StObject.set(x, "platformBrowserImport", null)
     }
   }
 }

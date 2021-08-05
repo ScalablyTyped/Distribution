@@ -20,37 +20,27 @@ trait CreateContainerVersionResponse extends StObject {
 }
 object CreateContainerVersionResponse {
   
-  @scala.inline
-  def apply(): CreateContainerVersionResponse = {
+  inline def apply(): CreateContainerVersionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateContainerVersionResponse]
   }
   
-  @scala.inline
-  implicit class CreateContainerVersionResponseMutableBuilder[Self <: CreateContainerVersionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateContainerVersionResponse](x: Self) {
     
-    @scala.inline
-    def setCompilerError(value: Boolean): Self = StObject.set(x, "compilerError", value.asInstanceOf[js.Any])
+    inline def setCompilerError(value: Boolean): Self = StObject.set(x, "compilerError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompilerErrorUndefined: Self = StObject.set(x, "compilerError", js.undefined)
+    inline def setCompilerErrorUndefined: Self = StObject.set(x, "compilerError", js.undefined)
     
-    @scala.inline
-    def setContainerVersion(value: ContainerVersion): Self = StObject.set(x, "containerVersion", value.asInstanceOf[js.Any])
+    inline def setContainerVersion(value: ContainerVersion): Self = StObject.set(x, "containerVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerVersionUndefined: Self = StObject.set(x, "containerVersion", js.undefined)
+    inline def setContainerVersionUndefined: Self = StObject.set(x, "containerVersion", js.undefined)
     
-    @scala.inline
-    def setNewWorkspacePath(value: String): Self = StObject.set(x, "newWorkspacePath", value.asInstanceOf[js.Any])
+    inline def setNewWorkspacePath(value: String): Self = StObject.set(x, "newWorkspacePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewWorkspacePathUndefined: Self = StObject.set(x, "newWorkspacePath", js.undefined)
+    inline def setNewWorkspacePathUndefined: Self = StObject.set(x, "newWorkspacePath", js.undefined)
     
-    @scala.inline
-    def setSyncStatus(value: SyncStatus): Self = StObject.set(x, "syncStatus", value.asInstanceOf[js.Any])
+    inline def setSyncStatus(value: SyncStatus): Self = StObject.set(x, "syncStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncStatusUndefined: Self = StObject.set(x, "syncStatus", js.undefined)
+    inline def setSyncStatusUndefined: Self = StObject.set(x, "syncStatus", js.undefined)
   }
 }

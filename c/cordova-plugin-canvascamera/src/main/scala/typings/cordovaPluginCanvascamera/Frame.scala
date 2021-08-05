@@ -34,8 +34,7 @@ trait Frame extends StObject {
 }
 object Frame {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dHeight: Double,
     dWidth: Double,
     dx: Double,
@@ -53,43 +52,30 @@ object Frame {
     __obj.asInstanceOf[Frame]
   }
   
-  @scala.inline
-  implicit class FrameMutableBuilder[Self <: Frame] (val x: Self) extends AnyVal {
+  extension [Self <: Frame](x: Self) {
     
-    @scala.inline
-    def setDHeight(value: Double): Self = StObject.set(x, "dHeight", value.asInstanceOf[js.Any])
+    inline def setDHeight(value: Double): Self = StObject.set(x, "dHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDWidth(value: Double): Self = StObject.set(x, "dWidth", value.asInstanceOf[js.Any])
+    inline def setDWidth(value: Double): Self = StObject.set(x, "dWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDx(value: Double): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
+    inline def setDx(value: Double): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDy(value: Double): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
+    inline def setDy(value: Double): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElement(value: HTMLCanvasElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: HTMLCanvasElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage(value: HTMLImageElement): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: HTMLImageElement): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialize(value: () => Frame): Self = StObject.set(x, "initialize", js.Any.fromFunction0(value))
+    inline def setInitialize(value: () => Frame): Self = StObject.set(x, "initialize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRecycle(value: () => Unit): Self = StObject.set(x, "recycle", js.Any.fromFunction0(value))
+    inline def setRecycle(value: () => Unit): Self = StObject.set(x, "recycle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSHeight(value: Double): Self = StObject.set(x, "sHeight", value.asInstanceOf[js.Any])
+    inline def setSHeight(value: Double): Self = StObject.set(x, "sHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSWidth(value: Double): Self = StObject.set(x, "sWidth", value.asInstanceOf[js.Any])
+    inline def setSWidth(value: Double): Self = StObject.set(x, "sWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSx(value: Double): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
+    inline def setSx(value: Double): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSy(value: Double): Self = StObject.set(x, "sy", value.asInstanceOf[js.Any])
+    inline def setSy(value: Double): Self = StObject.set(x, "sy", value.asInstanceOf[js.Any])
   }
 }

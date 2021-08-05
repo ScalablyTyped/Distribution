@@ -19,8 +19,7 @@ object addItemUniDriverMod {
   }
   object AddItemUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -32,17 +31,13 @@ object addItemUniDriverMod {
       __obj.asInstanceOf[AddItemUniDriver]
     }
     
-    @scala.inline
-    implicit class AddItemUniDriverMutableBuilder[Self <: AddItemUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: AddItemUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetText(value: () => js.Promise[String]): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+      inline def setGetText(value: () => js.Promise[String]): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTooltipContent(value: () => js.Promise[String]): Self = StObject.set(x, "getTooltipContent", js.Any.fromFunction0(value))
+      inline def setGetTooltipContent(value: () => js.Promise[String]): Self = StObject.set(x, "getTooltipContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTextExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "textExists", js.Any.fromFunction0(value))
+      inline def setTextExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "textExists", js.Any.fromFunction0(value))
     }
   }
 }

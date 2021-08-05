@@ -49,10 +49,8 @@ object mod {
     def use[U](cb: js.Function1[/* resource */ T, U | js.Thenable[U]]): js.Thenable[U] = js.native
   }
   
-  @scala.inline
-  def createPool[T](factory: Factory[T]): Pool[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPool")(factory.asInstanceOf[js.Any]).asInstanceOf[Pool[T]]
-  @scala.inline
-  def createPool[T](factory: Factory[T], opts: Options): Pool[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPool")(factory.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Pool[T]]
+  inline def createPool[T](factory: Factory[T]): Pool[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPool")(factory.asInstanceOf[js.Any]).asInstanceOf[Pool[T]]
+  inline def createPool[T](factory: Factory[T], opts: Options): Pool[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPool")(factory.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Pool[T]]
   
   trait Factory[T] extends StObject {
     
@@ -64,26 +62,20 @@ object mod {
   }
   object Factory {
     
-    @scala.inline
-    def apply[T](create: () => js.Thenable[T], destroy: T => js.Thenable[Unit]): Factory[T] = {
+    inline def apply[T](create: () => js.Thenable[T], destroy: T => js.Thenable[Unit]): Factory[T] = {
       val __obj = js.Dynamic.literal(create = js.Any.fromFunction0(create), destroy = js.Any.fromFunction1(destroy))
       __obj.asInstanceOf[Factory[T]]
     }
     
-    @scala.inline
-    implicit class FactoryMutableBuilder[Self <: Factory[?], T] (val x: Self & Factory[T]) extends AnyVal {
+    extension [Self <: Factory[?], T](x: Self & Factory[T]) {
       
-      @scala.inline
-      def setCreate(value: () => js.Thenable[T]): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
+      inline def setCreate(value: () => js.Thenable[T]): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDestroy(value: T => js.Thenable[Unit]): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
+      inline def setDestroy(value: T => js.Thenable[Unit]): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValidate(value: /* client */ T => js.Thenable[Boolean]): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+      inline def setValidate(value: /* client */ T => js.Thenable[Boolean]): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+      inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
     }
   }
   
@@ -117,92 +109,64 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAcquireTimeoutMillis(value: Double): Self = StObject.set(x, "acquireTimeoutMillis", value.asInstanceOf[js.Any])
+      inline def setAcquireTimeoutMillis(value: Double): Self = StObject.set(x, "acquireTimeoutMillis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcquireTimeoutMillisUndefined: Self = StObject.set(x, "acquireTimeoutMillis", js.undefined)
+      inline def setAcquireTimeoutMillisUndefined: Self = StObject.set(x, "acquireTimeoutMillis", js.undefined)
       
-      @scala.inline
-      def setAutostart(value: Boolean): Self = StObject.set(x, "autostart", value.asInstanceOf[js.Any])
+      inline def setAutostart(value: Boolean): Self = StObject.set(x, "autostart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutostartUndefined: Self = StObject.set(x, "autostart", js.undefined)
+      inline def setAutostartUndefined: Self = StObject.set(x, "autostart", js.undefined)
       
-      @scala.inline
-      def setEvictionRunIntervalMillis(value: Double): Self = StObject.set(x, "evictionRunIntervalMillis", value.asInstanceOf[js.Any])
+      inline def setEvictionRunIntervalMillis(value: Double): Self = StObject.set(x, "evictionRunIntervalMillis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvictionRunIntervalMillisUndefined: Self = StObject.set(x, "evictionRunIntervalMillis", js.undefined)
+      inline def setEvictionRunIntervalMillisUndefined: Self = StObject.set(x, "evictionRunIntervalMillis", js.undefined)
       
-      @scala.inline
-      def setFifo(value: Boolean): Self = StObject.set(x, "fifo", value.asInstanceOf[js.Any])
+      inline def setFifo(value: Boolean): Self = StObject.set(x, "fifo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFifoUndefined: Self = StObject.set(x, "fifo", js.undefined)
+      inline def setFifoUndefined: Self = StObject.set(x, "fifo", js.undefined)
       
-      @scala.inline
-      def setIdleTimeoutMillis(value: Double): Self = StObject.set(x, "idleTimeoutMillis", value.asInstanceOf[js.Any])
+      inline def setIdleTimeoutMillis(value: Double): Self = StObject.set(x, "idleTimeoutMillis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdleTimeoutMillisUndefined: Self = StObject.set(x, "idleTimeoutMillis", js.undefined)
+      inline def setIdleTimeoutMillisUndefined: Self = StObject.set(x, "idleTimeoutMillis", js.undefined)
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMaxWaitingClients(value: Double): Self = StObject.set(x, "maxWaitingClients", value.asInstanceOf[js.Any])
+      inline def setMaxWaitingClients(value: Double): Self = StObject.set(x, "maxWaitingClients", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWaitingClientsUndefined: Self = StObject.set(x, "maxWaitingClients", js.undefined)
+      inline def setMaxWaitingClientsUndefined: Self = StObject.set(x, "maxWaitingClients", js.undefined)
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      @scala.inline
-      def setNumTestsPerEvictionRun(value: Double): Self = StObject.set(x, "numTestsPerEvictionRun", value.asInstanceOf[js.Any])
+      inline def setNumTestsPerEvictionRun(value: Double): Self = StObject.set(x, "numTestsPerEvictionRun", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumTestsPerEvictionRunUndefined: Self = StObject.set(x, "numTestsPerEvictionRun", js.undefined)
+      inline def setNumTestsPerEvictionRunUndefined: Self = StObject.set(x, "numTestsPerEvictionRun", js.undefined)
       
-      @scala.inline
-      def setPriorityRange(value: Double): Self = StObject.set(x, "priorityRange", value.asInstanceOf[js.Any])
+      inline def setPriorityRange(value: Double): Self = StObject.set(x, "priorityRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriorityRangeUndefined: Self = StObject.set(x, "priorityRange", js.undefined)
+      inline def setPriorityRangeUndefined: Self = StObject.set(x, "priorityRange", js.undefined)
       
-      @scala.inline
-      def setSoftIdleTimeoutMillis(value: Double): Self = StObject.set(x, "softIdleTimeoutMillis", value.asInstanceOf[js.Any])
+      inline def setSoftIdleTimeoutMillis(value: Double): Self = StObject.set(x, "softIdleTimeoutMillis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSoftIdleTimeoutMillisUndefined: Self = StObject.set(x, "softIdleTimeoutMillis", js.undefined)
+      inline def setSoftIdleTimeoutMillisUndefined: Self = StObject.set(x, "softIdleTimeoutMillis", js.undefined)
       
-      @scala.inline
-      def setTestOnBorrow(value: Boolean): Self = StObject.set(x, "testOnBorrow", value.asInstanceOf[js.Any])
+      inline def setTestOnBorrow(value: Boolean): Self = StObject.set(x, "testOnBorrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTestOnBorrowUndefined: Self = StObject.set(x, "testOnBorrow", js.undefined)
+      inline def setTestOnBorrowUndefined: Self = StObject.set(x, "testOnBorrow", js.undefined)
       
-      @scala.inline
-      def setTestOnReturn(value: Boolean): Self = StObject.set(x, "testOnReturn", value.asInstanceOf[js.Any])
+      inline def setTestOnReturn(value: Boolean): Self = StObject.set(x, "testOnReturn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTestOnReturnUndefined: Self = StObject.set(x, "testOnReturn", js.undefined)
+      inline def setTestOnReturnUndefined: Self = StObject.set(x, "testOnReturn", js.undefined)
     }
   }
 }

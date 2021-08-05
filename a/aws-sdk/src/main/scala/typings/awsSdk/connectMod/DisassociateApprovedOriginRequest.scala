@@ -18,19 +18,15 @@ trait DisassociateApprovedOriginRequest extends StObject {
 }
 object DisassociateApprovedOriginRequest {
   
-  @scala.inline
-  def apply(InstanceId: InstanceId, Origin: Origin): DisassociateApprovedOriginRequest = {
+  inline def apply(InstanceId: InstanceId, Origin: Origin): DisassociateApprovedOriginRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any], Origin = Origin.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateApprovedOriginRequest]
   }
   
-  @scala.inline
-  implicit class DisassociateApprovedOriginRequestMutableBuilder[Self <: DisassociateApprovedOriginRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateApprovedOriginRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrigin(value: Origin): Self = StObject.set(x, "Origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: Origin): Self = StObject.set(x, "Origin", value.asInstanceOf[js.Any])
   }
 }

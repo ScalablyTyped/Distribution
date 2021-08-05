@@ -24,25 +24,19 @@ trait ConfigMapEnvSource extends StObject {
 }
 object ConfigMapEnvSource {
   
-  @scala.inline
-  def apply(): ConfigMapEnvSource = {
+  inline def apply(): ConfigMapEnvSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfigMapEnvSource]
   }
   
-  @scala.inline
-  implicit class ConfigMapEnvSourceMutableBuilder[Self <: ConfigMapEnvSource] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigMapEnvSource](x: Self) {
     
-    @scala.inline
-    def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOptional(value: Input[Boolean]): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    inline def setOptional(value: Input[Boolean]): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
+    inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
   }
 }

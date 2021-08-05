@@ -37,19 +37,15 @@ trait IEncodedLineTokens extends StObject {
 }
 object IEncodedLineTokens {
   
-  @scala.inline
-  def apply(endState: IState, tokens: Uint32Array): IEncodedLineTokens = {
+  inline def apply(endState: IState, tokens: Uint32Array): IEncodedLineTokens = {
     val __obj = js.Dynamic.literal(endState = endState.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEncodedLineTokens]
   }
   
-  @scala.inline
-  implicit class IEncodedLineTokensMutableBuilder[Self <: IEncodedLineTokens] (val x: Self) extends AnyVal {
+  extension [Self <: IEncodedLineTokens](x: Self) {
     
-    @scala.inline
-    def setEndState(value: IState): Self = StObject.set(x, "endState", value.asInstanceOf[js.Any])
+    inline def setEndState(value: IState): Self = StObject.set(x, "endState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokens(value: Uint32Array): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+    inline def setTokens(value: Uint32Array): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
   }
 }

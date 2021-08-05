@@ -21,25 +21,19 @@ trait AdRequestParam extends StObject {
 }
 object AdRequestParam {
   
-  @scala.inline
-  def apply(adposition: pre | mid | post, client: vast | googima, offset: pre | mid | post, tag: String): AdRequestParam = {
+  inline def apply(adposition: pre | mid | post, client: vast | googima, offset: pre | mid | post, tag: String): AdRequestParam = {
     val __obj = js.Dynamic.literal(adposition = adposition.asInstanceOf[js.Any], client = client.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdRequestParam]
   }
   
-  @scala.inline
-  implicit class AdRequestParamMutableBuilder[Self <: AdRequestParam] (val x: Self) extends AnyVal {
+  extension [Self <: AdRequestParam](x: Self) {
     
-    @scala.inline
-    def setAdposition(value: pre | mid | post): Self = StObject.set(x, "adposition", value.asInstanceOf[js.Any])
+    inline def setAdposition(value: pre | mid | post): Self = StObject.set(x, "adposition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClient(value: vast | googima): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+    inline def setClient(value: vast | googima): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: pre | mid | post): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: pre | mid | post): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
   }
 }

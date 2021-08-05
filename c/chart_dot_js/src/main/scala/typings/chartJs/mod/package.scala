@@ -7,22 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 // Tooltip Static Options
 /* static member */
-@scala.inline
-def Tooltip: typings.chartJs.mod.ChartTooltipsStaticConfiguration = typings.chartJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Tooltip").asInstanceOf[typings.chartJs.mod.ChartTooltipsStaticConfiguration]
-@scala.inline
-def Tooltip_=(x: typings.chartJs.mod.ChartTooltipsStaticConfiguration): scala.Unit = typings.chartJs.mod.^.asInstanceOf[js.Dynamic].updateDynamic("Tooltip")(x.asInstanceOf[js.Any])
+inline def Tooltip: typings.chartJs.mod.ChartTooltipsStaticConfiguration = typings.chartJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Tooltip").asInstanceOf[typings.chartJs.mod.ChartTooltipsStaticConfiguration]
+inline def Tooltip_=(x: typings.chartJs.mod.ChartTooltipsStaticConfiguration): scala.Unit = typings.chartJs.mod.^.asInstanceOf[js.Dynamic].updateDynamic("Tooltip")(x.asInstanceOf[js.Any])
 
 /* static member */
-@scala.inline
-def pluginService: typings.chartJs.mod.PluginServiceStatic = typings.chartJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("pluginService").asInstanceOf[typings.chartJs.mod.PluginServiceStatic]
-@scala.inline
-def pluginService_=(x: typings.chartJs.mod.PluginServiceStatic): scala.Unit = typings.chartJs.mod.^.asInstanceOf[js.Dynamic].updateDynamic("pluginService")(x.asInstanceOf[js.Any])
+inline def pluginService: typings.chartJs.mod.PluginServiceStatic = typings.chartJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("pluginService").asInstanceOf[typings.chartJs.mod.PluginServiceStatic]
+inline def pluginService_=(x: typings.chartJs.mod.PluginServiceStatic): scala.Unit = typings.chartJs.mod.^.asInstanceOf[js.Dynamic].updateDynamic("pluginService")(x.asInstanceOf[js.Any])
 
 /* static member */
-@scala.inline
-def plugins: typings.chartJs.mod.PluginServiceStatic = typings.chartJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("plugins").asInstanceOf[typings.chartJs.mod.PluginServiceStatic]
-@scala.inline
-def plugins_=(x: typings.chartJs.mod.PluginServiceStatic): scala.Unit = typings.chartJs.mod.^.asInstanceOf[js.Dynamic].updateDynamic("plugins")(x.asInstanceOf[js.Any])
+inline def plugins: typings.chartJs.mod.PluginServiceStatic = typings.chartJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("plugins").asInstanceOf[typings.chartJs.mod.PluginServiceStatic]
+inline def plugins_=(x: typings.chartJs.mod.PluginServiceStatic): scala.Unit = typings.chartJs.mod.^.asInstanceOf[js.Dynamic].updateDynamic("plugins")(x.asInstanceOf[js.Any])
 
 type BorderWidth = scala.Double | typings.chartJs.anon.keyinPositionTypenumber
 

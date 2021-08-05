@@ -13,19 +13,15 @@ trait Indoordata extends StObject {
 }
 object Indoordata {
   
-  @scala.inline
-  def apply(indoor_data: Cpid): Indoordata = {
+  inline def apply(indoor_data: Cpid): Indoordata = {
     val __obj = js.Dynamic.literal(indoor_data = indoor_data.asInstanceOf[js.Any], indoor_map = true)
     __obj.asInstanceOf[Indoordata]
   }
   
-  @scala.inline
-  implicit class IndoordataMutableBuilder[Self <: Indoordata] (val x: Self) extends AnyVal {
+  extension [Self <: Indoordata](x: Self) {
     
-    @scala.inline
-    def setIndoor_data(value: Cpid): Self = StObject.set(x, "indoor_data", value.asInstanceOf[js.Any])
+    inline def setIndoor_data(value: Cpid): Self = StObject.set(x, "indoor_data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndoor_map(value: `true`): Self = StObject.set(x, "indoor_map", value.asInstanceOf[js.Any])
+    inline def setIndoor_map(value: `true`): Self = StObject.set(x, "indoor_map", value.asInstanceOf[js.Any])
   }
 }

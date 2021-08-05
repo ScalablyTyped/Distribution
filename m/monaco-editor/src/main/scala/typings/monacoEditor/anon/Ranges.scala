@@ -14,25 +14,19 @@ trait Ranges extends StObject {
 }
 object Ranges {
   
-  @scala.inline
-  def apply(ranges: js.Array[IRange]): Ranges = {
+  inline def apply(ranges: js.Array[IRange]): Ranges = {
     val __obj = js.Dynamic.literal(ranges = ranges.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ranges]
   }
   
-  @scala.inline
-  implicit class RangesMutableBuilder[Self <: Ranges] (val x: Self) extends AnyVal {
+  extension [Self <: Ranges](x: Self) {
     
-    @scala.inline
-    def setRanges(value: js.Array[IRange]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
+    inline def setRanges(value: js.Array[IRange]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangesVarargs(value: IRange*): Self = StObject.set(x, "ranges", js.Array(value :_*))
+    inline def setRangesVarargs(value: IRange*): Self = StObject.set(x, "ranges", js.Array(value :_*))
     
-    @scala.inline
-    def setWordPattern(value: RegExp): Self = StObject.set(x, "wordPattern", value.asInstanceOf[js.Any])
+    inline def setWordPattern(value: RegExp): Self = StObject.set(x, "wordPattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordPatternUndefined: Self = StObject.set(x, "wordPattern", js.undefined)
+    inline def setWordPatternUndefined: Self = StObject.set(x, "wordPattern", js.undefined)
   }
 }

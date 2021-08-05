@@ -35,67 +35,47 @@ trait BinaryConfusionMatrix extends StObject {
 }
 object BinaryConfusionMatrix {
   
-  @scala.inline
-  def apply(): BinaryConfusionMatrix = {
+  inline def apply(): BinaryConfusionMatrix = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BinaryConfusionMatrix]
   }
   
-  @scala.inline
-  implicit class BinaryConfusionMatrixMutableBuilder[Self <: BinaryConfusionMatrix] (val x: Self) extends AnyVal {
+  extension [Self <: BinaryConfusionMatrix](x: Self) {
     
-    @scala.inline
-    def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
+    inline def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccuracyUndefined: Self = StObject.set(x, "accuracy", js.undefined)
+    inline def setAccuracyUndefined: Self = StObject.set(x, "accuracy", js.undefined)
     
-    @scala.inline
-    def setF1Score(value: Double): Self = StObject.set(x, "f1Score", value.asInstanceOf[js.Any])
+    inline def setF1Score(value: Double): Self = StObject.set(x, "f1Score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setF1ScoreUndefined: Self = StObject.set(x, "f1Score", js.undefined)
+    inline def setF1ScoreUndefined: Self = StObject.set(x, "f1Score", js.undefined)
     
-    @scala.inline
-    def setFalseNegatives(value: String): Self = StObject.set(x, "falseNegatives", value.asInstanceOf[js.Any])
+    inline def setFalseNegatives(value: String): Self = StObject.set(x, "falseNegatives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFalseNegativesUndefined: Self = StObject.set(x, "falseNegatives", js.undefined)
+    inline def setFalseNegativesUndefined: Self = StObject.set(x, "falseNegatives", js.undefined)
     
-    @scala.inline
-    def setFalsePositives(value: String): Self = StObject.set(x, "falsePositives", value.asInstanceOf[js.Any])
+    inline def setFalsePositives(value: String): Self = StObject.set(x, "falsePositives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFalsePositivesUndefined: Self = StObject.set(x, "falsePositives", js.undefined)
+    inline def setFalsePositivesUndefined: Self = StObject.set(x, "falsePositives", js.undefined)
     
-    @scala.inline
-    def setPositiveClassThreshold(value: Double): Self = StObject.set(x, "positiveClassThreshold", value.asInstanceOf[js.Any])
+    inline def setPositiveClassThreshold(value: Double): Self = StObject.set(x, "positiveClassThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositiveClassThresholdUndefined: Self = StObject.set(x, "positiveClassThreshold", js.undefined)
+    inline def setPositiveClassThresholdUndefined: Self = StObject.set(x, "positiveClassThreshold", js.undefined)
     
-    @scala.inline
-    def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+    inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+    inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
     
-    @scala.inline
-    def setRecall(value: Double): Self = StObject.set(x, "recall", value.asInstanceOf[js.Any])
+    inline def setRecall(value: Double): Self = StObject.set(x, "recall", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecallUndefined: Self = StObject.set(x, "recall", js.undefined)
+    inline def setRecallUndefined: Self = StObject.set(x, "recall", js.undefined)
     
-    @scala.inline
-    def setTrueNegatives(value: String): Self = StObject.set(x, "trueNegatives", value.asInstanceOf[js.Any])
+    inline def setTrueNegatives(value: String): Self = StObject.set(x, "trueNegatives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrueNegativesUndefined: Self = StObject.set(x, "trueNegatives", js.undefined)
+    inline def setTrueNegativesUndefined: Self = StObject.set(x, "trueNegatives", js.undefined)
     
-    @scala.inline
-    def setTruePositives(value: String): Self = StObject.set(x, "truePositives", value.asInstanceOf[js.Any])
+    inline def setTruePositives(value: String): Self = StObject.set(x, "truePositives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTruePositivesUndefined: Self = StObject.set(x, "truePositives", js.undefined)
+    inline def setTruePositivesUndefined: Self = StObject.set(x, "truePositives", js.undefined)
   }
 }

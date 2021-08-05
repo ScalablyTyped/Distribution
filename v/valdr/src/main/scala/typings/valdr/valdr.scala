@@ -58,17 +58,14 @@ object valdr {
   }
   object ValdrConstraintValidator {
     
-    @scala.inline
-    def apply(message: String): ValdrConstraintValidator = {
+    inline def apply(message: String): ValdrConstraintValidator = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[ValdrConstraintValidator]
     }
     
-    @scala.inline
-    implicit class ValdrConstraintValidatorMutableBuilder[Self <: ValdrConstraintValidator] (val x: Self) extends AnyVal {
+    extension [Self <: ValdrConstraintValidator](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -120,29 +117,22 @@ object valdr {
   }
   object ValdrValidationResult {
     
-    @scala.inline
-    def apply(valid: Boolean, validationResults: js.Array[ValdrViolation], violations: js.Array[ValdrViolation]): ValdrValidationResult = {
+    inline def apply(valid: Boolean, validationResults: js.Array[ValdrViolation], violations: js.Array[ValdrViolation]): ValdrValidationResult = {
       val __obj = js.Dynamic.literal(valid = valid.asInstanceOf[js.Any], validationResults = validationResults.asInstanceOf[js.Any], violations = violations.asInstanceOf[js.Any])
       __obj.asInstanceOf[ValdrValidationResult]
     }
     
-    @scala.inline
-    implicit class ValdrValidationResultMutableBuilder[Self <: ValdrValidationResult] (val x: Self) extends AnyVal {
+    extension [Self <: ValdrValidationResult](x: Self) {
       
-      @scala.inline
-      def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+      inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidationResults(value: js.Array[ValdrViolation]): Self = StObject.set(x, "validationResults", value.asInstanceOf[js.Any])
+      inline def setValidationResults(value: js.Array[ValdrViolation]): Self = StObject.set(x, "validationResults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidationResultsVarargs(value: ValdrViolation*): Self = StObject.set(x, "validationResults", js.Array(value :_*))
+      inline def setValidationResultsVarargs(value: ValdrViolation*): Self = StObject.set(x, "validationResults", js.Array(value :_*))
       
-      @scala.inline
-      def setViolations(value: js.Array[ValdrViolation]): Self = StObject.set(x, "violations", value.asInstanceOf[js.Any])
+      inline def setViolations(value: js.Array[ValdrViolation]): Self = StObject.set(x, "violations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViolationsVarargs(value: ValdrViolation*): Self = StObject.set(x, "violations", js.Array(value :_*))
+      inline def setViolationsVarargs(value: ValdrViolation*): Self = StObject.set(x, "violations", js.Array(value :_*))
     }
   }
   
@@ -180,30 +170,23 @@ object valdr {
   }
   object ValdrViolation {
     
-    @scala.inline
-    def apply(field: String, message: String, `type`: String, valid: Boolean, validator: String, value: String): ValdrViolation = {
+    inline def apply(field: String, message: String, `type`: String, valid: Boolean, validator: String, value: String): ValdrViolation = {
       val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], validator = validator.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ValdrViolation]
     }
     
-    @scala.inline
-    implicit class ValdrViolationMutableBuilder[Self <: ValdrViolation] (val x: Self) extends AnyVal {
+    extension [Self <: ValdrViolation](x: Self) {
       
-      @scala.inline
-      def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+      inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+      inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidator(value: String): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
+      inline def setValidator(value: String): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

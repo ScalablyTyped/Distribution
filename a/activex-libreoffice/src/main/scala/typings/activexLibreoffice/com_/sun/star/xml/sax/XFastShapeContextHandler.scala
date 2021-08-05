@@ -38,8 +38,7 @@ trait XFastShapeContextHandler
 }
 object XFastShapeContextHandler {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DocumentProperties: XDocumentProperties,
     DrawPage: XDrawPage,
     MediaDescriptor: SafeArray[PropertyValue],
@@ -63,31 +62,22 @@ object XFastShapeContextHandler {
     __obj.asInstanceOf[XFastShapeContextHandler]
   }
   
-  @scala.inline
-  implicit class XFastShapeContextHandlerMutableBuilder[Self <: XFastShapeContextHandler] (val x: Self) extends AnyVal {
+  extension [Self <: XFastShapeContextHandler](x: Self) {
     
-    @scala.inline
-    def setDocumentProperties(value: XDocumentProperties): Self = StObject.set(x, "DocumentProperties", value.asInstanceOf[js.Any])
+    inline def setDocumentProperties(value: XDocumentProperties): Self = StObject.set(x, "DocumentProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrawPage(value: XDrawPage): Self = StObject.set(x, "DrawPage", value.asInstanceOf[js.Any])
+    inline def setDrawPage(value: XDrawPage): Self = StObject.set(x, "DrawPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaDescriptor(value: SafeArray[PropertyValue]): Self = StObject.set(x, "MediaDescriptor", value.asInstanceOf[js.Any])
+    inline def setMediaDescriptor(value: SafeArray[PropertyValue]): Self = StObject.set(x, "MediaDescriptor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModel(value: XModel): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
+    inline def setModel(value: XModel): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Point): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Point): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationFragmentPath(value: String): Self = StObject.set(x, "RelationFragmentPath", value.asInstanceOf[js.Any])
+    inline def setRelationFragmentPath(value: String): Self = StObject.set(x, "RelationFragmentPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShape(value: XShape): Self = StObject.set(x, "Shape", value.asInstanceOf[js.Any])
+    inline def setShape(value: XShape): Self = StObject.set(x, "Shape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartToken(value: Double): Self = StObject.set(x, "StartToken", value.asInstanceOf[js.Any])
+    inline def setStartToken(value: Double): Self = StObject.set(x, "StartToken", value.asInstanceOf[js.Any])
   }
 }

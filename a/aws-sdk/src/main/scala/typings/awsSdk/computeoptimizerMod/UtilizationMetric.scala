@@ -23,31 +23,23 @@ trait UtilizationMetric extends StObject {
 }
 object UtilizationMetric {
   
-  @scala.inline
-  def apply(): UtilizationMetric = {
+  inline def apply(): UtilizationMetric = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UtilizationMetric]
   }
   
-  @scala.inline
-  implicit class UtilizationMetricMutableBuilder[Self <: UtilizationMetric] (val x: Self) extends AnyVal {
+  extension [Self <: UtilizationMetric](x: Self) {
     
-    @scala.inline
-    def setName(value: MetricName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: MetricName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setStatistic(value: MetricStatistic): Self = StObject.set(x, "statistic", value.asInstanceOf[js.Any])
+    inline def setStatistic(value: MetricStatistic): Self = StObject.set(x, "statistic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatisticUndefined: Self = StObject.set(x, "statistic", js.undefined)
+    inline def setStatisticUndefined: Self = StObject.set(x, "statistic", js.undefined)
     
-    @scala.inline
-    def setValue(value: MetricValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: MetricValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

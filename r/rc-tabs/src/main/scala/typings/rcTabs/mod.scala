@@ -17,8 +17,7 @@ object mod {
   @js.native
   val default: ForwardTabsType = js.native
   
-  @scala.inline
-  def TabPane(
+  inline def TabPane(
     hasPrefixClsForceRenderClassNameStyleIdActiveAnimatedDestroyInactiveTabPaneTabKeyChildren: TabPaneProps
   ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TabPane")(hasPrefixClsForceRenderClassNameStyleIdActiveAnimatedDestroyInactiveTabPaneTabKeyChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

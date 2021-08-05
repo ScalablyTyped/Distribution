@@ -10,16 +10,13 @@ trait ObjectWithIdentifier extends StObject {
 }
 object ObjectWithIdentifier {
   
-  @scala.inline
-  def apply(identifier: String): ObjectWithIdentifier = {
+  inline def apply(identifier: String): ObjectWithIdentifier = {
     val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectWithIdentifier]
   }
   
-  @scala.inline
-  implicit class ObjectWithIdentifierMutableBuilder[Self <: ObjectWithIdentifier] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectWithIdentifier](x: Self) {
     
-    @scala.inline
-    def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
   }
 }

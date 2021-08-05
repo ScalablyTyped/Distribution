@@ -30,8 +30,7 @@ trait XInitialization
 }
 object XInitialization {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     initialize: SeqEquiv[js.Any] => Unit,
     queryInterface: `type` => js.Any,
@@ -41,10 +40,8 @@ object XInitialization {
     __obj.asInstanceOf[XInitialization]
   }
   
-  @scala.inline
-  implicit class XInitializationMutableBuilder[Self <: XInitialization] (val x: Self) extends AnyVal {
+  extension [Self <: XInitialization](x: Self) {
     
-    @scala.inline
-    def setInitialize(value: SeqEquiv[js.Any] => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
+    inline def setInitialize(value: SeqEquiv[js.Any] => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
   }
 }

@@ -12,19 +12,15 @@ trait Quoted extends StObject {
 }
 object Quoted {
   
-  @scala.inline
-  def apply(key: String, quoted: Boolean): Quoted = {
+  inline def apply(key: String, quoted: Boolean): Quoted = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], quoted = quoted.asInstanceOf[js.Any])
     __obj.asInstanceOf[Quoted]
   }
   
-  @scala.inline
-  implicit class QuotedMutableBuilder[Self <: Quoted] (val x: Self) extends AnyVal {
+  extension [Self <: Quoted](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuoted(value: Boolean): Self = StObject.set(x, "quoted", value.asInstanceOf[js.Any])
+    inline def setQuoted(value: Boolean): Self = StObject.set(x, "quoted", value.asInstanceOf[js.Any])
   }
 }

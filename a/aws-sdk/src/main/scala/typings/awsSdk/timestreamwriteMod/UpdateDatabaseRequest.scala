@@ -18,19 +18,15 @@ trait UpdateDatabaseRequest extends StObject {
 }
 object UpdateDatabaseRequest {
   
-  @scala.inline
-  def apply(DatabaseName: ResourceName, KmsKeyId: StringValue2048): UpdateDatabaseRequest = {
+  inline def apply(DatabaseName: ResourceName, KmsKeyId: StringValue2048): UpdateDatabaseRequest = {
     val __obj = js.Dynamic.literal(DatabaseName = DatabaseName.asInstanceOf[js.Any], KmsKeyId = KmsKeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDatabaseRequest]
   }
   
-  @scala.inline
-  implicit class UpdateDatabaseRequestMutableBuilder[Self <: UpdateDatabaseRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDatabaseRequest](x: Self) {
     
-    @scala.inline
-    def setDatabaseName(value: ResourceName): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: ResourceName): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyId(value: StringValue2048): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
+    inline def setKmsKeyId(value: StringValue2048): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
   }
 }

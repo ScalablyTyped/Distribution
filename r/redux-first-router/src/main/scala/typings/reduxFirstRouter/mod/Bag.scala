@@ -12,19 +12,15 @@ trait Bag extends StObject {
 }
 object Bag {
   
-  @scala.inline
-  def apply(action: ReceivedAction | Action, extra: js.Any): Bag = {
+  inline def apply(action: ReceivedAction | Action, extra: js.Any): Bag = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], extra = extra.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bag]
   }
   
-  @scala.inline
-  implicit class BagMutableBuilder[Self <: Bag] (val x: Self) extends AnyVal {
+  extension [Self <: Bag](x: Self) {
     
-    @scala.inline
-    def setAction(value: ReceivedAction | Action): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: ReceivedAction | Action): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtra(value: js.Any): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+    inline def setExtra(value: js.Any): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
   }
 }

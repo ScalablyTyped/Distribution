@@ -11,19 +11,15 @@ trait AdvertiserDataAccessConfig extends StObject {
 }
 object AdvertiserDataAccessConfig {
   
-  @scala.inline
-  def apply(): AdvertiserDataAccessConfig = {
+  inline def apply(): AdvertiserDataAccessConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AdvertiserDataAccessConfig]
   }
   
-  @scala.inline
-  implicit class AdvertiserDataAccessConfigMutableBuilder[Self <: AdvertiserDataAccessConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AdvertiserDataAccessConfig](x: Self) {
     
-    @scala.inline
-    def setSdfConfig(value: AdvertiserSdfConfig): Self = StObject.set(x, "sdfConfig", value.asInstanceOf[js.Any])
+    inline def setSdfConfig(value: AdvertiserSdfConfig): Self = StObject.set(x, "sdfConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSdfConfigUndefined: Self = StObject.set(x, "sdfConfig", js.undefined)
+    inline def setSdfConfigUndefined: Self = StObject.set(x, "sdfConfig", js.undefined)
   }
 }

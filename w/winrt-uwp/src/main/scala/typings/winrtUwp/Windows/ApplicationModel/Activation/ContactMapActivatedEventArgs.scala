@@ -29,8 +29,7 @@ trait ContactMapActivatedEventArgs extends StObject {
 }
 object ContactMapActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     address: ContactAddress,
     contact: Contact,
     kind: ActivationKind,
@@ -42,25 +41,18 @@ object ContactMapActivatedEventArgs {
     __obj.asInstanceOf[ContactMapActivatedEventArgs]
   }
   
-  @scala.inline
-  implicit class ContactMapActivatedEventArgsMutableBuilder[Self <: ContactMapActivatedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ContactMapActivatedEventArgs](x: Self) {
     
-    @scala.inline
-    def setAddress(value: ContactAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: ContactAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContact(value: Contact): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
+    inline def setContact(value: Contact): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
+    inline def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
+    inline def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerb(value: String): Self = StObject.set(x, "verb", value.asInstanceOf[js.Any])
+    inline def setVerb(value: String): Self = StObject.set(x, "verb", value.asInstanceOf[js.Any])
   }
 }

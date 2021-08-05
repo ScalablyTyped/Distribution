@@ -16,8 +16,7 @@ trait MapsClient extends StObject {
 }
 object MapsClient {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     autocomplete: (String, String, js.Any) => js.Promise[js.Array[Address]],
     geocode: (String, String, js.Any) => js.Promise[js.Array[Geocode]],
     placeDetails: (String, String, js.Any) => js.Promise[PlaceDetails],
@@ -27,19 +26,14 @@ object MapsClient {
     __obj.asInstanceOf[MapsClient]
   }
   
-  @scala.inline
-  implicit class MapsClientMutableBuilder[Self <: MapsClient] (val x: Self) extends AnyVal {
+  extension [Self <: MapsClient](x: Self) {
     
-    @scala.inline
-    def setAutocomplete(value: (String, String, js.Any) => js.Promise[js.Array[Address]]): Self = StObject.set(x, "autocomplete", js.Any.fromFunction3(value))
+    inline def setAutocomplete(value: (String, String, js.Any) => js.Promise[js.Array[Address]]): Self = StObject.set(x, "autocomplete", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGeocode(value: (String, String, js.Any) => js.Promise[js.Array[Geocode]]): Self = StObject.set(x, "geocode", js.Any.fromFunction3(value))
+    inline def setGeocode(value: (String, String, js.Any) => js.Promise[js.Array[Geocode]]): Self = StObject.set(x, "geocode", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setPlaceDetails(value: (String, String, js.Any) => js.Promise[PlaceDetails]): Self = StObject.set(x, "placeDetails", js.Any.fromFunction3(value))
+    inline def setPlaceDetails(value: (String, String, js.Any) => js.Promise[PlaceDetails]): Self = StObject.set(x, "placeDetails", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setUseClientId(value: () => Unit): Self = StObject.set(x, "useClientId", js.Any.fromFunction0(value))
+    inline def setUseClientId(value: () => Unit): Self = StObject.set(x, "useClientId", js.Any.fromFunction0(value))
   }
 }

@@ -39,10 +39,8 @@ object ExpirationPolicy {
     * @returns ExpirationPolicy instance
     */
   /* static member */
-  @scala.inline
-  def create(): ExpirationPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ExpirationPolicy]
-  @scala.inline
-  def create(properties: IExpirationPolicy): ExpirationPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ExpirationPolicy]
+  inline def create(): ExpirationPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ExpirationPolicy]
+  inline def create(properties: IExpirationPolicy): ExpirationPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ExpirationPolicy]
   
   /**
     * Decodes an ExpirationPolicy message from the specified reader or buffer.
@@ -53,14 +51,10 @@ object ExpirationPolicy {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decode(reader: Reader): ExpirationPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ExpirationPolicy]
-  @scala.inline
-  def decode(reader: Reader, length: Double): ExpirationPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ExpirationPolicy]
-  @scala.inline
-  def decode(reader: Uint8Array): ExpirationPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ExpirationPolicy]
-  @scala.inline
-  def decode(reader: Uint8Array, length: Double): ExpirationPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ExpirationPolicy]
+  inline def decode(reader: Reader): ExpirationPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ExpirationPolicy]
+  inline def decode(reader: Reader, length: Double): ExpirationPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ExpirationPolicy]
+  inline def decode(reader: Uint8Array): ExpirationPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ExpirationPolicy]
+  inline def decode(reader: Uint8Array, length: Double): ExpirationPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ExpirationPolicy]
   
   /**
     * Decodes an ExpirationPolicy message from the specified reader or buffer, length delimited.
@@ -70,10 +64,8 @@ object ExpirationPolicy {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decodeDelimited(reader: Reader): ExpirationPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ExpirationPolicy]
-  @scala.inline
-  def decodeDelimited(reader: Uint8Array): ExpirationPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ExpirationPolicy]
+  inline def decodeDelimited(reader: Reader): ExpirationPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ExpirationPolicy]
+  inline def decodeDelimited(reader: Uint8Array): ExpirationPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ExpirationPolicy]
   
   /**
     * Encodes the specified ExpirationPolicy message. Does not implicitly {@link google.pubsub.v1.ExpirationPolicy.verify|verify} messages.
@@ -82,10 +74,8 @@ object ExpirationPolicy {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encode(message: IExpirationPolicy): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encode(message: IExpirationPolicy, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encode(message: IExpirationPolicy): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encode(message: IExpirationPolicy, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified ExpirationPolicy message, length delimited. Does not implicitly {@link google.pubsub.v1.ExpirationPolicy.verify|verify} messages.
@@ -94,10 +84,8 @@ object ExpirationPolicy {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encodeDelimited(message: IExpirationPolicy): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encodeDelimited(message: IExpirationPolicy, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IExpirationPolicy): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IExpirationPolicy, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates an ExpirationPolicy message from a plain object. Also converts values to their respective internal types.
@@ -105,8 +93,7 @@ object ExpirationPolicy {
     * @returns ExpirationPolicy
     */
   /* static member */
-  @scala.inline
-  def fromObject(`object`: StringDictionary[js.Any]): ExpirationPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ExpirationPolicy]
+  inline def fromObject(`object`: StringDictionary[js.Any]): ExpirationPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ExpirationPolicy]
   
   /**
     * Creates a plain object from an ExpirationPolicy message. Also converts values to other types if specified.
@@ -115,10 +102,8 @@ object ExpirationPolicy {
     * @returns Plain object
     */
   /* static member */
-  @scala.inline
-  def toObject(message: ExpirationPolicy): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def toObject(message: ExpirationPolicy, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: ExpirationPolicy): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: ExpirationPolicy, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies an ExpirationPolicy message.
@@ -126,6 +111,5 @@ object ExpirationPolicy {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @scala.inline
-  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

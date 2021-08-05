@@ -14,31 +14,23 @@ trait EndValue extends StObject {
 }
 object EndValue {
   
-  @scala.inline
-  def apply(): EndValue = {
+  inline def apply(): EndValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EndValue]
   }
   
-  @scala.inline
-  implicit class EndValueMutableBuilder[Self <: EndValue] (val x: Self) extends AnyVal {
+  extension [Self <: EndValue](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setEndValue(value: Double): Self = StObject.set(x, "endValue", value.asInstanceOf[js.Any])
+    inline def setEndValue(value: Double): Self = StObject.set(x, "endValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndValueUndefined: Self = StObject.set(x, "endValue", js.undefined)
+    inline def setEndValueUndefined: Self = StObject.set(x, "endValue", js.undefined)
     
-    @scala.inline
-    def setStartValue(value: Double): Self = StObject.set(x, "startValue", value.asInstanceOf[js.Any])
+    inline def setStartValue(value: Double): Self = StObject.set(x, "startValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartValueUndefined: Self = StObject.set(x, "startValue", js.undefined)
+    inline def setStartValueUndefined: Self = StObject.set(x, "startValue", js.undefined)
   }
 }

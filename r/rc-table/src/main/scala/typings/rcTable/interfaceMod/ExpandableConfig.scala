@@ -35,97 +35,67 @@ trait ExpandableConfig[RecordType] extends StObject {
 }
 object ExpandableConfig {
   
-  @scala.inline
-  def apply[RecordType](): ExpandableConfig[RecordType] = {
+  inline def apply[RecordType](): ExpandableConfig[RecordType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExpandableConfig[RecordType]]
   }
   
-  @scala.inline
-  implicit class ExpandableConfigMutableBuilder[Self <: ExpandableConfig[?], RecordType] (val x: Self & ExpandableConfig[RecordType]) extends AnyVal {
+  extension [Self <: ExpandableConfig[?], RecordType](x: Self & ExpandableConfig[RecordType]) {
     
-    @scala.inline
-    def setChildrenColumnName(value: String): Self = StObject.set(x, "childrenColumnName", value.asInstanceOf[js.Any])
+    inline def setChildrenColumnName(value: String): Self = StObject.set(x, "childrenColumnName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenColumnNameUndefined: Self = StObject.set(x, "childrenColumnName", js.undefined)
+    inline def setChildrenColumnNameUndefined: Self = StObject.set(x, "childrenColumnName", js.undefined)
     
-    @scala.inline
-    def setDefaultExpandAllRows(value: Boolean): Self = StObject.set(x, "defaultExpandAllRows", value.asInstanceOf[js.Any])
+    inline def setDefaultExpandAllRows(value: Boolean): Self = StObject.set(x, "defaultExpandAllRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultExpandAllRowsUndefined: Self = StObject.set(x, "defaultExpandAllRows", js.undefined)
+    inline def setDefaultExpandAllRowsUndefined: Self = StObject.set(x, "defaultExpandAllRows", js.undefined)
     
-    @scala.inline
-    def setDefaultExpandedRowKeys(value: js.Array[Key]): Self = StObject.set(x, "defaultExpandedRowKeys", value.asInstanceOf[js.Any])
+    inline def setDefaultExpandedRowKeys(value: js.Array[Key]): Self = StObject.set(x, "defaultExpandedRowKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultExpandedRowKeysUndefined: Self = StObject.set(x, "defaultExpandedRowKeys", js.undefined)
+    inline def setDefaultExpandedRowKeysUndefined: Self = StObject.set(x, "defaultExpandedRowKeys", js.undefined)
     
-    @scala.inline
-    def setDefaultExpandedRowKeysVarargs(value: Key*): Self = StObject.set(x, "defaultExpandedRowKeys", js.Array(value :_*))
+    inline def setDefaultExpandedRowKeysVarargs(value: Key*): Self = StObject.set(x, "defaultExpandedRowKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setExpandIcon(value: /* props */ RenderExpandIconProps[RecordType] => ReactNode): Self = StObject.set(x, "expandIcon", js.Any.fromFunction1(value))
+    inline def setExpandIcon(value: /* props */ RenderExpandIconProps[RecordType] => ReactNode): Self = StObject.set(x, "expandIcon", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExpandIconColumnIndex(value: Double): Self = StObject.set(x, "expandIconColumnIndex", value.asInstanceOf[js.Any])
+    inline def setExpandIconColumnIndex(value: Double): Self = StObject.set(x, "expandIconColumnIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandIconColumnIndexUndefined: Self = StObject.set(x, "expandIconColumnIndex", js.undefined)
+    inline def setExpandIconColumnIndexUndefined: Self = StObject.set(x, "expandIconColumnIndex", js.undefined)
     
-    @scala.inline
-    def setExpandIconUndefined: Self = StObject.set(x, "expandIcon", js.undefined)
+    inline def setExpandIconUndefined: Self = StObject.set(x, "expandIcon", js.undefined)
     
-    @scala.inline
-    def setExpandRowByClick(value: Boolean): Self = StObject.set(x, "expandRowByClick", value.asInstanceOf[js.Any])
+    inline def setExpandRowByClick(value: Boolean): Self = StObject.set(x, "expandRowByClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandRowByClickUndefined: Self = StObject.set(x, "expandRowByClick", js.undefined)
+    inline def setExpandRowByClickUndefined: Self = StObject.set(x, "expandRowByClick", js.undefined)
     
-    @scala.inline
-    def setExpandedRowClassName(value: (RecordType, /* index */ Double, /* indent */ Double) => String): Self = StObject.set(x, "expandedRowClassName", js.Any.fromFunction3(value))
+    inline def setExpandedRowClassName(value: (RecordType, /* index */ Double, /* indent */ Double) => String): Self = StObject.set(x, "expandedRowClassName", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setExpandedRowClassNameUndefined: Self = StObject.set(x, "expandedRowClassName", js.undefined)
+    inline def setExpandedRowClassNameUndefined: Self = StObject.set(x, "expandedRowClassName", js.undefined)
     
-    @scala.inline
-    def setExpandedRowKeys(value: js.Array[Key]): Self = StObject.set(x, "expandedRowKeys", value.asInstanceOf[js.Any])
+    inline def setExpandedRowKeys(value: js.Array[Key]): Self = StObject.set(x, "expandedRowKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandedRowKeysUndefined: Self = StObject.set(x, "expandedRowKeys", js.undefined)
+    inline def setExpandedRowKeysUndefined: Self = StObject.set(x, "expandedRowKeys", js.undefined)
     
-    @scala.inline
-    def setExpandedRowKeysVarargs(value: Key*): Self = StObject.set(x, "expandedRowKeys", js.Array(value :_*))
+    inline def setExpandedRowKeysVarargs(value: Key*): Self = StObject.set(x, "expandedRowKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setExpandedRowRender(value: (RecordType, /* index */ Double, /* indent */ Double, /* expanded */ Boolean) => ReactNode): Self = StObject.set(x, "expandedRowRender", js.Any.fromFunction4(value))
+    inline def setExpandedRowRender(value: (RecordType, /* index */ Double, /* indent */ Double, /* expanded */ Boolean) => ReactNode): Self = StObject.set(x, "expandedRowRender", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setExpandedRowRenderUndefined: Self = StObject.set(x, "expandedRowRender", js.undefined)
+    inline def setExpandedRowRenderUndefined: Self = StObject.set(x, "expandedRowRender", js.undefined)
     
-    @scala.inline
-    def setIndentSize(value: Double): Self = StObject.set(x, "indentSize", value.asInstanceOf[js.Any])
+    inline def setIndentSize(value: Double): Self = StObject.set(x, "indentSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndentSizeUndefined: Self = StObject.set(x, "indentSize", js.undefined)
+    inline def setIndentSizeUndefined: Self = StObject.set(x, "indentSize", js.undefined)
     
-    @scala.inline
-    def setOnExpand(value: (/* expanded */ Boolean, /* record */ RecordType) => Unit): Self = StObject.set(x, "onExpand", js.Any.fromFunction2(value))
+    inline def setOnExpand(value: (/* expanded */ Boolean, /* record */ RecordType) => Unit): Self = StObject.set(x, "onExpand", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnExpandUndefined: Self = StObject.set(x, "onExpand", js.undefined)
+    inline def setOnExpandUndefined: Self = StObject.set(x, "onExpand", js.undefined)
     
-    @scala.inline
-    def setOnExpandedRowsChange(value: /* expandedKeys */ js.Array[Key] => Unit): Self = StObject.set(x, "onExpandedRowsChange", js.Any.fromFunction1(value))
+    inline def setOnExpandedRowsChange(value: /* expandedKeys */ js.Array[Key] => Unit): Self = StObject.set(x, "onExpandedRowsChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnExpandedRowsChangeUndefined: Self = StObject.set(x, "onExpandedRowsChange", js.undefined)
+    inline def setOnExpandedRowsChangeUndefined: Self = StObject.set(x, "onExpandedRowsChange", js.undefined)
     
-    @scala.inline
-    def setRowExpandable(value: /* record */ RecordType => Boolean): Self = StObject.set(x, "rowExpandable", js.Any.fromFunction1(value))
+    inline def setRowExpandable(value: /* record */ RecordType => Boolean): Self = StObject.set(x, "rowExpandable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRowExpandableUndefined: Self = StObject.set(x, "rowExpandable", js.undefined)
+    inline def setRowExpandableUndefined: Self = StObject.set(x, "rowExpandable", js.undefined)
   }
 }

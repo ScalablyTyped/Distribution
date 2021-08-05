@@ -11,8 +11,7 @@ trait VerifyPublicKeyInput
      with SigningOptions
 object VerifyPublicKeyInput {
   
-  @scala.inline
-  def apply(key: String | Buffer): VerifyPublicKeyInput = {
+  inline def apply(key: String | Buffer): VerifyPublicKeyInput = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[VerifyPublicKeyInput]
   }

@@ -23,25 +23,19 @@ trait DisassociateQualificationFromWorkerRequest extends StObject {
 }
 object DisassociateQualificationFromWorkerRequest {
   
-  @scala.inline
-  def apply(QualificationTypeId: EntityId, WorkerId: CustomerId): DisassociateQualificationFromWorkerRequest = {
+  inline def apply(QualificationTypeId: EntityId, WorkerId: CustomerId): DisassociateQualificationFromWorkerRequest = {
     val __obj = js.Dynamic.literal(QualificationTypeId = QualificationTypeId.asInstanceOf[js.Any], WorkerId = WorkerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateQualificationFromWorkerRequest]
   }
   
-  @scala.inline
-  implicit class DisassociateQualificationFromWorkerRequestMutableBuilder[Self <: DisassociateQualificationFromWorkerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateQualificationFromWorkerRequest](x: Self) {
     
-    @scala.inline
-    def setQualificationTypeId(value: EntityId): Self = StObject.set(x, "QualificationTypeId", value.asInstanceOf[js.Any])
+    inline def setQualificationTypeId(value: EntityId): Self = StObject.set(x, "QualificationTypeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "Reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "Reason", js.undefined)
     
-    @scala.inline
-    def setWorkerId(value: CustomerId): Self = StObject.set(x, "WorkerId", value.asInstanceOf[js.Any])
+    inline def setWorkerId(value: CustomerId): Self = StObject.set(x, "WorkerId", value.asInstanceOf[js.Any])
   }
 }

@@ -12,16 +12,13 @@ trait CardViewColumnCancelEventArgs
 }
 object CardViewColumnCancelEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, column: BootstrapCardViewColumn, sender: Control): CardViewColumnCancelEventArgs = {
+  inline def apply(cancel: Boolean, column: BootstrapCardViewColumn, sender: Control): CardViewColumnCancelEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardViewColumnCancelEventArgs]
   }
   
-  @scala.inline
-  implicit class CardViewColumnCancelEventArgsMutableBuilder[Self <: CardViewColumnCancelEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: CardViewColumnCancelEventArgs](x: Self) {
     
-    @scala.inline
-    def setColumn(value: BootstrapCardViewColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: BootstrapCardViewColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
   }
 }

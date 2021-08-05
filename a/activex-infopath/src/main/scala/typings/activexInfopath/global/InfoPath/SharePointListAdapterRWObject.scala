@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.SharePointListAdapterRWObject")
 @js.native
-class SharePointListAdapterRWObject protected ()
+/* private */ class SharePointListAdapterRWObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.SharePointListAdapterRWObject {
   
   /* CompleteClass */
   var ContentTypeId: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("InfoPath.SharePointListAdapterRWObject_typekey")
   var InfoPathDotSharePointListAdapterRWObject_typekey: typings.activexInfopath.InfoPath.SharePointListAdapterRWObject = js.native
   

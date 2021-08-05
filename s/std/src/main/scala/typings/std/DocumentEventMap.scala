@@ -23,8 +23,7 @@ trait DocumentEventMap
 }
 object DocumentEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abort: UIEvent,
     animationcancel: AnimationEvent,
     animationend: AnimationEvent,
@@ -126,25 +125,18 @@ object DocumentEventMap {
     __obj.asInstanceOf[DocumentEventMap]
   }
   
-  @scala.inline
-  implicit class DocumentEventMapMutableBuilder[Self <: DocumentEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentEventMap](x: Self) {
     
-    @scala.inline
-    def setFullscreenchange(value: Event): Self = StObject.set(x, "fullscreenchange", value.asInstanceOf[js.Any])
+    inline def setFullscreenchange(value: Event): Self = StObject.set(x, "fullscreenchange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullscreenerror(value: Event): Self = StObject.set(x, "fullscreenerror", value.asInstanceOf[js.Any])
+    inline def setFullscreenerror(value: Event): Self = StObject.set(x, "fullscreenerror", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointerlockchange(value: Event): Self = StObject.set(x, "pointerlockchange", value.asInstanceOf[js.Any])
+    inline def setPointerlockchange(value: Event): Self = StObject.set(x, "pointerlockchange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointerlockerror(value: Event): Self = StObject.set(x, "pointerlockerror", value.asInstanceOf[js.Any])
+    inline def setPointerlockerror(value: Event): Self = StObject.set(x, "pointerlockerror", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadystatechange(value: Event): Self = StObject.set(x, "readystatechange", value.asInstanceOf[js.Any])
+    inline def setReadystatechange(value: Event): Self = StObject.set(x, "readystatechange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibilitychange(value: Event): Self = StObject.set(x, "visibilitychange", value.asInstanceOf[js.Any])
+    inline def setVisibilitychange(value: Event): Self = StObject.set(x, "visibilitychange", value.asInstanceOf[js.Any])
   }
 }

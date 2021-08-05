@@ -24,25 +24,19 @@ trait ParamsResourceFoldersSearch
 }
 object ParamsResourceFoldersSearch {
   
-  @scala.inline
-  def apply(): ParamsResourceFoldersSearch = {
+  inline def apply(): ParamsResourceFoldersSearch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceFoldersSearch]
   }
   
-  @scala.inline
-  implicit class ParamsResourceFoldersSearchMutableBuilder[Self <: ParamsResourceFoldersSearch] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceFoldersSearch](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaSearchFoldersRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaSearchFoldersRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }
 }

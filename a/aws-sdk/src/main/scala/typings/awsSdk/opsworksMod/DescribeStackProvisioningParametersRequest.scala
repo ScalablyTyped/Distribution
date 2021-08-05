@@ -13,16 +13,13 @@ trait DescribeStackProvisioningParametersRequest extends StObject {
 }
 object DescribeStackProvisioningParametersRequest {
   
-  @scala.inline
-  def apply(StackId: String): DescribeStackProvisioningParametersRequest = {
+  inline def apply(StackId: String): DescribeStackProvisioningParametersRequest = {
     val __obj = js.Dynamic.literal(StackId = StackId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeStackProvisioningParametersRequest]
   }
   
-  @scala.inline
-  implicit class DescribeStackProvisioningParametersRequestMutableBuilder[Self <: DescribeStackProvisioningParametersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeStackProvisioningParametersRequest](x: Self) {
     
-    @scala.inline
-    def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
+    inline def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
   }
 }

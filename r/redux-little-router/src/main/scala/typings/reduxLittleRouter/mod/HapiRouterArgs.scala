@@ -13,19 +13,15 @@ trait HapiRouterArgs extends StObject {
 }
 object HapiRouterArgs {
   
-  @scala.inline
-  def apply(request: Path, routes: Routes): HapiRouterArgs = {
+  inline def apply(request: Path, routes: Routes): HapiRouterArgs = {
     val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any])
     __obj.asInstanceOf[HapiRouterArgs]
   }
   
-  @scala.inline
-  implicit class HapiRouterArgsMutableBuilder[Self <: HapiRouterArgs] (val x: Self) extends AnyVal {
+  extension [Self <: HapiRouterArgs](x: Self) {
     
-    @scala.inline
-    def setRequest(value: Path): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: Path): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutes(value: Routes): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+    inline def setRoutes(value: Routes): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
   }
 }

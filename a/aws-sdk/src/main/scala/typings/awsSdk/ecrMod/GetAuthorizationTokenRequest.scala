@@ -13,22 +13,17 @@ trait GetAuthorizationTokenRequest extends StObject {
 }
 object GetAuthorizationTokenRequest {
   
-  @scala.inline
-  def apply(): GetAuthorizationTokenRequest = {
+  inline def apply(): GetAuthorizationTokenRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAuthorizationTokenRequest]
   }
   
-  @scala.inline
-  implicit class GetAuthorizationTokenRequestMutableBuilder[Self <: GetAuthorizationTokenRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetAuthorizationTokenRequest](x: Self) {
     
-    @scala.inline
-    def setRegistryIds(value: GetAuthorizationTokenRegistryIdList): Self = StObject.set(x, "registryIds", value.asInstanceOf[js.Any])
+    inline def setRegistryIds(value: GetAuthorizationTokenRegistryIdList): Self = StObject.set(x, "registryIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistryIdsUndefined: Self = StObject.set(x, "registryIds", js.undefined)
+    inline def setRegistryIdsUndefined: Self = StObject.set(x, "registryIds", js.undefined)
     
-    @scala.inline
-    def setRegistryIdsVarargs(value: RegistryId*): Self = StObject.set(x, "registryIds", js.Array(value :_*))
+    inline def setRegistryIdsVarargs(value: RegistryId*): Self = StObject.set(x, "registryIds", js.Array(value :_*))
   }
 }

@@ -14,31 +14,23 @@ trait SchemaId extends StObject {
 }
 object SchemaId {
   
-  @scala.inline
-  def apply(): SchemaId = {
+  inline def apply(): SchemaId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaId]
   }
   
-  @scala.inline
-  implicit class SchemaIdMutableBuilder[Self <: SchemaId] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaId](x: Self) {
     
-    @scala.inline
-    def setRegistryName(value: SchemaRegistryNameString): Self = StObject.set(x, "RegistryName", value.asInstanceOf[js.Any])
+    inline def setRegistryName(value: SchemaRegistryNameString): Self = StObject.set(x, "RegistryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistryNameUndefined: Self = StObject.set(x, "RegistryName", js.undefined)
+    inline def setRegistryNameUndefined: Self = StObject.set(x, "RegistryName", js.undefined)
     
-    @scala.inline
-    def setSchemaArn(value: GlueResourceArn): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
+    inline def setSchemaArn(value: GlueResourceArn): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaArnUndefined: Self = StObject.set(x, "SchemaArn", js.undefined)
+    inline def setSchemaArnUndefined: Self = StObject.set(x, "SchemaArn", js.undefined)
     
-    @scala.inline
-    def setSchemaName(value: SchemaRegistryNameString): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
+    inline def setSchemaName(value: SchemaRegistryNameString): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaNameUndefined: Self = StObject.set(x, "SchemaName", js.undefined)
+    inline def setSchemaNameUndefined: Self = StObject.set(x, "SchemaName", js.undefined)
   }
 }

@@ -25,8 +25,7 @@ trait XSourceInitialization
 }
 object XSourceInitialization {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -36,10 +35,8 @@ object XSourceInitialization {
     __obj.asInstanceOf[XSourceInitialization]
   }
   
-  @scala.inline
-  implicit class XSourceInitializationMutableBuilder[Self <: XSourceInitialization] (val x: Self) extends AnyVal {
+  extension [Self <: XSourceInitialization](x: Self) {
     
-    @scala.inline
-    def setSetSource(value: XInterface => Unit): Self = StObject.set(x, "setSource", js.Any.fromFunction1(value))
+    inline def setSetSource(value: XInterface => Unit): Self = StObject.set(x, "setSource", js.Any.fromFunction1(value))
   }
 }

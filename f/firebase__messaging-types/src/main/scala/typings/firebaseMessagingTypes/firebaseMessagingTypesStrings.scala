@@ -8,6 +8,5 @@ object firebaseMessagingTypesStrings {
   
   @js.native
   sealed trait messaging extends StObject
-  @scala.inline
-  def messaging: messaging = "messaging".asInstanceOf[messaging]
+  inline def messaging: messaging = "messaging".asInstanceOf[messaging]
 }

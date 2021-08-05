@@ -39,8 +39,7 @@ object idle {
     * @param callback The callback parameter should be a function that looks like this:
     * function( IdleState newState) {...};
     */
-  @scala.inline
-  def queryState(detectionIntervalInSeconds: integer, callback: js.Function1[/* newState */ IdleState, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("queryState")(detectionIntervalInSeconds.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def queryState(detectionIntervalInSeconds: integer, callback: js.Function1[/* newState */ IdleState, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("queryState")(detectionIntervalInSeconds.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets the interval, in seconds, used to determine when the system is in an idle state for
@@ -49,6 +48,5 @@ object idle {
     * @since Chrome 25.
     * @param intervalInSeconds Threshold, in seconds, used to determine when the system is in an idle state.
     */
-  @scala.inline
-  def setDetectionInterval(intervalInSeconds: integer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDetectionInterval")(intervalInSeconds.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setDetectionInterval(intervalInSeconds: integer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDetectionInterval")(intervalInSeconds.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

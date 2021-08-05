@@ -19,16 +19,13 @@ trait GetComponent[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof Pa
 }
 object GetComponent {
   
-  @scala.inline
-  def apply[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */](children: Route[ParamList, RouteName] => ReactNode): GetComponent[ParamList, RouteName] = {
+  inline def apply[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */](children: Route[ParamList, RouteName] => ReactNode): GetComponent[ParamList, RouteName] = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
     __obj.asInstanceOf[GetComponent[ParamList, RouteName]]
   }
   
-  @scala.inline
-  implicit class GetComponentMutableBuilder[Self <: GetComponent[?, ?], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */] (val x: Self & (GetComponent[ParamList, RouteName])) extends AnyVal {
+  extension [Self <: GetComponent[?, ?], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */](x: Self & (GetComponent[ParamList, RouteName])) {
     
-    @scala.inline
-    def setChildren(value: Route[ParamList, RouteName] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+    inline def setChildren(value: Route[ParamList, RouteName] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
   }
 }

@@ -46,17 +46,14 @@ object resizeGroupTypesMod {
   }
   object IResizeGroup {
     
-    @scala.inline
-    def apply(remeasure: () => Unit): IResizeGroup = {
+    inline def apply(remeasure: () => Unit): IResizeGroup = {
       val __obj = js.Dynamic.literal(remeasure = js.Any.fromFunction0(remeasure))
       __obj.asInstanceOf[IResizeGroup]
     }
     
-    @scala.inline
-    implicit class IResizeGroupMutableBuilder[Self <: IResizeGroup] (val x: Self) extends AnyVal {
+    extension [Self <: IResizeGroup](x: Self) {
       
-      @scala.inline
-      def setRemeasure(value: () => Unit): Self = StObject.set(x, "remeasure", js.Any.fromFunction0(value))
+      inline def setRemeasure(value: () => Unit): Self = StObject.set(x, "remeasure", js.Any.fromFunction0(value))
     }
   }
   
@@ -126,65 +123,46 @@ object resizeGroupTypesMod {
   }
   object IResizeGroupProps {
     
-    @scala.inline
-    def apply(data: js.Any, onReduceData: js.Any => js.Any, onRenderData: js.Any => Element): IResizeGroupProps = {
+    inline def apply(data: js.Any, onReduceData: js.Any => js.Any, onRenderData: js.Any => Element): IResizeGroupProps = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], onReduceData = js.Any.fromFunction1(onReduceData), onRenderData = js.Any.fromFunction1(onRenderData))
       __obj.asInstanceOf[IResizeGroupProps]
     }
     
-    @scala.inline
-    implicit class IResizeGroupPropsMutableBuilder[Self <: IResizeGroupProps] (val x: Self) extends AnyVal {
+    extension [Self <: IResizeGroupProps](x: Self) {
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[IResizeGroup]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[IResizeGroup]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ IResizeGroup | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ IResizeGroup | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataDidRender(value: /* renderedData */ js.Any => Unit): Self = StObject.set(x, "dataDidRender", js.Any.fromFunction1(value))
+      inline def setDataDidRender(value: /* renderedData */ js.Any => Unit): Self = StObject.set(x, "dataDidRender", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDataDidRenderUndefined: Self = StObject.set(x, "dataDidRender", js.undefined)
+      inline def setDataDidRenderUndefined: Self = StObject.set(x, "dataDidRender", js.undefined)
       
-      @scala.inline
-      def setDirection(value: ResizeGroupDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: ResizeGroupDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      @scala.inline
-      def setOnGrowData(value: /* prevData */ js.Any => js.Any): Self = StObject.set(x, "onGrowData", js.Any.fromFunction1(value))
+      inline def setOnGrowData(value: /* prevData */ js.Any => js.Any): Self = StObject.set(x, "onGrowData", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnGrowDataUndefined: Self = StObject.set(x, "onGrowData", js.undefined)
+      inline def setOnGrowDataUndefined: Self = StObject.set(x, "onGrowData", js.undefined)
       
-      @scala.inline
-      def setOnReduceData(value: js.Any => js.Any): Self = StObject.set(x, "onReduceData", js.Any.fromFunction1(value))
+      inline def setOnReduceData(value: js.Any => js.Any): Self = StObject.set(x, "onReduceData", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRenderData(value: js.Any => Element): Self = StObject.set(x, "onRenderData", js.Any.fromFunction1(value))
+      inline def setOnRenderData(value: js.Any => Element): Self = StObject.set(x, "onRenderData", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[IResizeGroupStyleProps, IResizeGroupStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[IResizeGroupStyleProps, IResizeGroupStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: IResizeGroupStyleProps => DeepPartial[IResizeGroupStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: IResizeGroupStyleProps => DeepPartial[IResizeGroupStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -202,23 +180,18 @@ object resizeGroupTypesMod {
   }
   object IResizeGroupStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): IResizeGroupStyleProps = {
+    inline def apply(theme: ITheme): IResizeGroupStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[IResizeGroupStyleProps]
     }
     
-    @scala.inline
-    implicit class IResizeGroupStylePropsMutableBuilder[Self <: IResizeGroupStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IResizeGroupStyleProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -231,23 +204,18 @@ object resizeGroupTypesMod {
   }
   object IResizeGroupStyles {
     
-    @scala.inline
-    def apply(): IResizeGroupStyles = {
+    inline def apply(): IResizeGroupStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IResizeGroupStyles]
     }
     
-    @scala.inline
-    implicit class IResizeGroupStylesMutableBuilder[Self <: IResizeGroupStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IResizeGroupStyles](x: Self) {
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
 }

@@ -21,10 +21,8 @@ object getDomainMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getDomain(args: GetDomainArgs): js.Promise[GetDomainResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDomain")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetDomainResult]]
-  @scala.inline
-  def getDomain(args: GetDomainArgs, opts: InvokeOptions): js.Promise[GetDomainResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDomain")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetDomainResult]]
+  inline def getDomain(args: GetDomainArgs): js.Promise[GetDomainResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDomain")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetDomainResult]]
+  inline def getDomain(args: GetDomainArgs, opts: InvokeOptions): js.Promise[GetDomainResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDomain")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetDomainResult]]
   
   trait GetDomainArgs extends StObject {
     
@@ -40,23 +38,18 @@ object getDomainMod {
   }
   object GetDomainArgs {
     
-    @scala.inline
-    def apply(domainName: String): GetDomainArgs = {
+    inline def apply(domainName: String): GetDomainArgs = {
       val __obj = js.Dynamic.literal(domainName = domainName.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetDomainArgs]
     }
     
-    @scala.inline
-    implicit class GetDomainArgsMutableBuilder[Self <: GetDomainArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetDomainArgs](x: Self) {
       
-      @scala.inline
-      def setDomainName(value: String): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+      inline def setDomainName(value: String): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -169,8 +162,7 @@ object getDomainMod {
   }
   object GetDomainResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       accessPolicies: String,
       advancedOptions: StringDictionary[String],
       advancedSecurityOptions: js.Array[GetDomainAdvancedSecurityOption],
@@ -198,101 +190,69 @@ object getDomainMod {
       __obj.asInstanceOf[GetDomainResult]
     }
     
-    @scala.inline
-    implicit class GetDomainResultMutableBuilder[Self <: GetDomainResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetDomainResult](x: Self) {
       
-      @scala.inline
-      def setAccessPolicies(value: String): Self = StObject.set(x, "accessPolicies", value.asInstanceOf[js.Any])
+      inline def setAccessPolicies(value: String): Self = StObject.set(x, "accessPolicies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdvancedOptions(value: StringDictionary[String]): Self = StObject.set(x, "advancedOptions", value.asInstanceOf[js.Any])
+      inline def setAdvancedOptions(value: StringDictionary[String]): Self = StObject.set(x, "advancedOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdvancedSecurityOptions(value: js.Array[GetDomainAdvancedSecurityOption]): Self = StObject.set(x, "advancedSecurityOptions", value.asInstanceOf[js.Any])
+      inline def setAdvancedSecurityOptions(value: js.Array[GetDomainAdvancedSecurityOption]): Self = StObject.set(x, "advancedSecurityOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdvancedSecurityOptionsVarargs(value: GetDomainAdvancedSecurityOption*): Self = StObject.set(x, "advancedSecurityOptions", js.Array(value :_*))
+      inline def setAdvancedSecurityOptionsVarargs(value: GetDomainAdvancedSecurityOption*): Self = StObject.set(x, "advancedSecurityOptions", js.Array(value :_*))
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterConfigs(value: js.Array[GetDomainClusterConfig]): Self = StObject.set(x, "clusterConfigs", value.asInstanceOf[js.Any])
+      inline def setClusterConfigs(value: js.Array[GetDomainClusterConfig]): Self = StObject.set(x, "clusterConfigs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterConfigsVarargs(value: GetDomainClusterConfig*): Self = StObject.set(x, "clusterConfigs", js.Array(value :_*))
+      inline def setClusterConfigsVarargs(value: GetDomainClusterConfig*): Self = StObject.set(x, "clusterConfigs", js.Array(value :_*))
       
-      @scala.inline
-      def setCognitoOptions(value: js.Array[GetDomainCognitoOption]): Self = StObject.set(x, "cognitoOptions", value.asInstanceOf[js.Any])
+      inline def setCognitoOptions(value: js.Array[GetDomainCognitoOption]): Self = StObject.set(x, "cognitoOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCognitoOptionsVarargs(value: GetDomainCognitoOption*): Self = StObject.set(x, "cognitoOptions", js.Array(value :_*))
+      inline def setCognitoOptionsVarargs(value: GetDomainCognitoOption*): Self = StObject.set(x, "cognitoOptions", js.Array(value :_*))
       
-      @scala.inline
-      def setCreated(value: Boolean): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: Boolean): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
+      inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainId(value: String): Self = StObject.set(x, "domainId", value.asInstanceOf[js.Any])
+      inline def setDomainId(value: String): Self = StObject.set(x, "domainId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainName(value: String): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+      inline def setDomainName(value: String): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEbsOptions(value: js.Array[GetDomainEbsOption]): Self = StObject.set(x, "ebsOptions", value.asInstanceOf[js.Any])
+      inline def setEbsOptions(value: js.Array[GetDomainEbsOption]): Self = StObject.set(x, "ebsOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEbsOptionsVarargs(value: GetDomainEbsOption*): Self = StObject.set(x, "ebsOptions", js.Array(value :_*))
+      inline def setEbsOptionsVarargs(value: GetDomainEbsOption*): Self = StObject.set(x, "ebsOptions", js.Array(value :_*))
       
-      @scala.inline
-      def setElasticsearchVersion(value: String): Self = StObject.set(x, "elasticsearchVersion", value.asInstanceOf[js.Any])
+      inline def setElasticsearchVersion(value: String): Self = StObject.set(x, "elasticsearchVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionAtRests(value: js.Array[GetDomainEncryptionAtRest]): Self = StObject.set(x, "encryptionAtRests", value.asInstanceOf[js.Any])
+      inline def setEncryptionAtRests(value: js.Array[GetDomainEncryptionAtRest]): Self = StObject.set(x, "encryptionAtRests", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionAtRestsVarargs(value: GetDomainEncryptionAtRest*): Self = StObject.set(x, "encryptionAtRests", js.Array(value :_*))
+      inline def setEncryptionAtRestsVarargs(value: GetDomainEncryptionAtRest*): Self = StObject.set(x, "encryptionAtRests", js.Array(value :_*))
       
-      @scala.inline
-      def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKibanaEndpoint(value: String): Self = StObject.set(x, "kibanaEndpoint", value.asInstanceOf[js.Any])
+      inline def setKibanaEndpoint(value: String): Self = StObject.set(x, "kibanaEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogPublishingOptions(value: js.Array[GetDomainLogPublishingOption]): Self = StObject.set(x, "logPublishingOptions", value.asInstanceOf[js.Any])
+      inline def setLogPublishingOptions(value: js.Array[GetDomainLogPublishingOption]): Self = StObject.set(x, "logPublishingOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogPublishingOptionsVarargs(value: GetDomainLogPublishingOption*): Self = StObject.set(x, "logPublishingOptions", js.Array(value :_*))
+      inline def setLogPublishingOptionsVarargs(value: GetDomainLogPublishingOption*): Self = StObject.set(x, "logPublishingOptions", js.Array(value :_*))
       
-      @scala.inline
-      def setNodeToNodeEncryptions(value: js.Array[GetDomainNodeToNodeEncryption]): Self = StObject.set(x, "nodeToNodeEncryptions", value.asInstanceOf[js.Any])
+      inline def setNodeToNodeEncryptions(value: js.Array[GetDomainNodeToNodeEncryption]): Self = StObject.set(x, "nodeToNodeEncryptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeToNodeEncryptionsVarargs(value: GetDomainNodeToNodeEncryption*): Self = StObject.set(x, "nodeToNodeEncryptions", js.Array(value :_*))
+      inline def setNodeToNodeEncryptionsVarargs(value: GetDomainNodeToNodeEncryption*): Self = StObject.set(x, "nodeToNodeEncryptions", js.Array(value :_*))
       
-      @scala.inline
-      def setProcessing(value: Boolean): Self = StObject.set(x, "processing", value.asInstanceOf[js.Any])
+      inline def setProcessing(value: Boolean): Self = StObject.set(x, "processing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnapshotOptions(value: js.Array[GetDomainSnapshotOption]): Self = StObject.set(x, "snapshotOptions", value.asInstanceOf[js.Any])
+      inline def setSnapshotOptions(value: js.Array[GetDomainSnapshotOption]): Self = StObject.set(x, "snapshotOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnapshotOptionsVarargs(value: GetDomainSnapshotOption*): Self = StObject.set(x, "snapshotOptions", js.Array(value :_*))
+      inline def setSnapshotOptionsVarargs(value: GetDomainSnapshotOption*): Self = StObject.set(x, "snapshotOptions", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcOptions(value: js.Array[GetDomainVpcOption]): Self = StObject.set(x, "vpcOptions", value.asInstanceOf[js.Any])
+      inline def setVpcOptions(value: js.Array[GetDomainVpcOption]): Self = StObject.set(x, "vpcOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcOptionsVarargs(value: GetDomainVpcOption*): Self = StObject.set(x, "vpcOptions", js.Array(value :_*))
+      inline def setVpcOptionsVarargs(value: GetDomainVpcOption*): Self = StObject.set(x, "vpcOptions", js.Array(value :_*))
     }
   }
 }

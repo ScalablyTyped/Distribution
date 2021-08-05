@@ -43,8 +43,7 @@ trait ViolationDetail extends StObject {
 }
 object ViolationDetail {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MemberAccount: AWSAccountId,
     PolicyId: PolicyId,
     ResourceId: ResourceId,
@@ -55,40 +54,28 @@ object ViolationDetail {
     __obj.asInstanceOf[ViolationDetail]
   }
   
-  @scala.inline
-  implicit class ViolationDetailMutableBuilder[Self <: ViolationDetail] (val x: Self) extends AnyVal {
+  extension [Self <: ViolationDetail](x: Self) {
     
-    @scala.inline
-    def setMemberAccount(value: AWSAccountId): Self = StObject.set(x, "MemberAccount", value.asInstanceOf[js.Any])
+    inline def setMemberAccount(value: AWSAccountId): Self = StObject.set(x, "MemberAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyId(value: PolicyId): Self = StObject.set(x, "PolicyId", value.asInstanceOf[js.Any])
+    inline def setPolicyId(value: PolicyId): Self = StObject.set(x, "PolicyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceDescription(value: LengthBoundedString): Self = StObject.set(x, "ResourceDescription", value.asInstanceOf[js.Any])
+    inline def setResourceDescription(value: LengthBoundedString): Self = StObject.set(x, "ResourceDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceDescriptionUndefined: Self = StObject.set(x, "ResourceDescription", js.undefined)
+    inline def setResourceDescriptionUndefined: Self = StObject.set(x, "ResourceDescription", js.undefined)
     
-    @scala.inline
-    def setResourceId(value: ResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: ResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTags(value: TagList): Self = StObject.set(x, "ResourceTags", value.asInstanceOf[js.Any])
+    inline def setResourceTags(value: TagList): Self = StObject.set(x, "ResourceTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTagsUndefined: Self = StObject.set(x, "ResourceTags", js.undefined)
+    inline def setResourceTagsUndefined: Self = StObject.set(x, "ResourceTags", js.undefined)
     
-    @scala.inline
-    def setResourceTagsVarargs(value: Tag*): Self = StObject.set(x, "ResourceTags", js.Array(value :_*))
+    inline def setResourceTagsVarargs(value: Tag*): Self = StObject.set(x, "ResourceTags", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceViolations(value: ResourceViolations): Self = StObject.set(x, "ResourceViolations", value.asInstanceOf[js.Any])
+    inline def setResourceViolations(value: ResourceViolations): Self = StObject.set(x, "ResourceViolations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceViolationsVarargs(value: ResourceViolation*): Self = StObject.set(x, "ResourceViolations", js.Array(value :_*))
+    inline def setResourceViolationsVarargs(value: ResourceViolation*): Self = StObject.set(x, "ResourceViolations", js.Array(value :_*))
   }
 }

@@ -12,19 +12,15 @@ trait CategoryGroup extends StObject {
 }
 object CategoryGroup {
   
-  @scala.inline
-  def apply(description: String, title: String): CategoryGroup = {
+  inline def apply(description: String, title: String): CategoryGroup = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[CategoryGroup]
   }
   
-  @scala.inline
-  implicit class CategoryGroupMutableBuilder[Self <: CategoryGroup] (val x: Self) extends AnyVal {
+  extension [Self <: CategoryGroup](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

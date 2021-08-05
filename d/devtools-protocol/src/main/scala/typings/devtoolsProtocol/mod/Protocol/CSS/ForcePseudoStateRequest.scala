@@ -19,22 +19,17 @@ trait ForcePseudoStateRequest extends StObject {
 }
 object ForcePseudoStateRequest {
   
-  @scala.inline
-  def apply(forcedPseudoClasses: js.Array[String], nodeId: NodeId): ForcePseudoStateRequest = {
+  inline def apply(forcedPseudoClasses: js.Array[String], nodeId: NodeId): ForcePseudoStateRequest = {
     val __obj = js.Dynamic.literal(forcedPseudoClasses = forcedPseudoClasses.asInstanceOf[js.Any], nodeId = nodeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ForcePseudoStateRequest]
   }
   
-  @scala.inline
-  implicit class ForcePseudoStateRequestMutableBuilder[Self <: ForcePseudoStateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ForcePseudoStateRequest](x: Self) {
     
-    @scala.inline
-    def setForcedPseudoClasses(value: js.Array[String]): Self = StObject.set(x, "forcedPseudoClasses", value.asInstanceOf[js.Any])
+    inline def setForcedPseudoClasses(value: js.Array[String]): Self = StObject.set(x, "forcedPseudoClasses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForcedPseudoClassesVarargs(value: String*): Self = StObject.set(x, "forcedPseudoClasses", js.Array(value :_*))
+    inline def setForcedPseudoClassesVarargs(value: String*): Self = StObject.set(x, "forcedPseudoClasses", js.Array(value :_*))
     
-    @scala.inline
-    def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
   }
 }

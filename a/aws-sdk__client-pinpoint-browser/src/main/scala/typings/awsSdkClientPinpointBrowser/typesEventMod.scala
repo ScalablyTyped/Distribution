@@ -44,50 +44,36 @@ object typesEventMod {
   }
   object Event {
     
-    @scala.inline
-    def apply(): Event = {
+    inline def apply(): Event = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Event]
     }
     
-    @scala.inline
-    implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
+    extension [Self <: Event](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
       
-      @scala.inline
-      def setClientSdkVersion(value: String): Self = StObject.set(x, "ClientSdkVersion", value.asInstanceOf[js.Any])
+      inline def setClientSdkVersion(value: String): Self = StObject.set(x, "ClientSdkVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientSdkVersionUndefined: Self = StObject.set(x, "ClientSdkVersion", js.undefined)
+      inline def setClientSdkVersionUndefined: Self = StObject.set(x, "ClientSdkVersion", js.undefined)
       
-      @scala.inline
-      def setEventType(value: String): Self = StObject.set(x, "EventType", value.asInstanceOf[js.Any])
+      inline def setEventType(value: String): Self = StObject.set(x, "EventType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventTypeUndefined: Self = StObject.set(x, "EventType", js.undefined)
+      inline def setEventTypeUndefined: Self = StObject.set(x, "EventType", js.undefined)
       
-      @scala.inline
-      def setMetrics(value: StringDictionary[Double] | (Iterable[js.Tuple2[String, Double]])): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
+      inline def setMetrics(value: StringDictionary[Double] | (Iterable[js.Tuple2[String, Double]])): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
+      inline def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
       
-      @scala.inline
-      def setSession(value: Session): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+      inline def setSession(value: Session): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionUndefined: Self = StObject.set(x, "Session", js.undefined)
+      inline def setSessionUndefined: Self = StObject.set(x, "Session", js.undefined)
       
-      @scala.inline
-      def setTimestamp(value: String): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: String): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
+      inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
     }
   }
   
@@ -115,32 +101,24 @@ object typesEventMod {
   }
   object UnmarshalledEvent {
     
-    @scala.inline
-    def apply(): UnmarshalledEvent = {
+    inline def apply(): UnmarshalledEvent = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledEvent]
     }
     
-    @scala.inline
-    implicit class UnmarshalledEventMutableBuilder[Self <: UnmarshalledEvent] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledEvent](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: StringDictionary[String]): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: StringDictionary[String]): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
       
-      @scala.inline
-      def setMetrics(value: StringDictionary[Double]): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
+      inline def setMetrics(value: StringDictionary[Double]): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
+      inline def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
       
-      @scala.inline
-      def setSession(value: UnmarshalledSession): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+      inline def setSession(value: UnmarshalledSession): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionUndefined: Self = StObject.set(x, "Session", js.undefined)
+      inline def setSessionUndefined: Self = StObject.set(x, "Session", js.undefined)
     }
   }
 }

@@ -23,8 +23,7 @@ trait AutoMLCandidateStep extends StObject {
 }
 object AutoMLCandidateStep {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CandidateStepArn: CandidateStepArn,
     CandidateStepName: CandidateStepName,
     CandidateStepType: CandidateStepType
@@ -33,16 +32,12 @@ object AutoMLCandidateStep {
     __obj.asInstanceOf[AutoMLCandidateStep]
   }
   
-  @scala.inline
-  implicit class AutoMLCandidateStepMutableBuilder[Self <: AutoMLCandidateStep] (val x: Self) extends AnyVal {
+  extension [Self <: AutoMLCandidateStep](x: Self) {
     
-    @scala.inline
-    def setCandidateStepArn(value: CandidateStepArn): Self = StObject.set(x, "CandidateStepArn", value.asInstanceOf[js.Any])
+    inline def setCandidateStepArn(value: CandidateStepArn): Self = StObject.set(x, "CandidateStepArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCandidateStepName(value: CandidateStepName): Self = StObject.set(x, "CandidateStepName", value.asInstanceOf[js.Any])
+    inline def setCandidateStepName(value: CandidateStepName): Self = StObject.set(x, "CandidateStepName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCandidateStepType(value: CandidateStepType): Self = StObject.set(x, "CandidateStepType", value.asInstanceOf[js.Any])
+    inline def setCandidateStepType(value: CandidateStepType): Self = StObject.set(x, "CandidateStepType", value.asInstanceOf[js.Any])
   }
 }

@@ -12,19 +12,15 @@ trait IGCOptions extends StObject {
 }
 object IGCOptions {
   
-  @scala.inline
-  def apply(): IGCOptions = {
+  inline def apply(): IGCOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IGCOptions]
   }
   
-  @scala.inline
-  implicit class IGCOptionsMutableBuilder[Self <: IGCOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IGCOptions](x: Self) {
     
-    @scala.inline
-    def setAltitudeMode(value: IGCZ): Self = StObject.set(x, "altitudeMode", value.asInstanceOf[js.Any])
+    inline def setAltitudeMode(value: IGCZ): Self = StObject.set(x, "altitudeMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltitudeModeUndefined: Self = StObject.set(x, "altitudeMode", js.undefined)
+    inline def setAltitudeModeUndefined: Self = StObject.set(x, "altitudeMode", js.undefined)
   }
 }

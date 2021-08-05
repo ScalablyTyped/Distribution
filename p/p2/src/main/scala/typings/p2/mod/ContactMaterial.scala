@@ -42,6 +42,5 @@ object ContactMaterial {
   @JSImport("p2", "ContactMaterial.idCounter")
   @js.native
   def idCounter: Double = js.native
-  @scala.inline
-  def idCounter_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("idCounter")(x.asInstanceOf[js.Any])
+  inline def idCounter_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("idCounter")(x.asInstanceOf[js.Any])
 }

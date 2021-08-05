@@ -15,19 +15,15 @@ trait GoogleActionsV2DialogSpec extends StObject {
 }
 object GoogleActionsV2DialogSpec {
   
-  @scala.inline
-  def apply(): GoogleActionsV2DialogSpec = {
+  inline def apply(): GoogleActionsV2DialogSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2DialogSpec]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2DialogSpecMutableBuilder[Self <: GoogleActionsV2DialogSpec] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2DialogSpec](x: Self) {
     
-    @scala.inline
-    def setExtension(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
+    inline def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
   }
 }

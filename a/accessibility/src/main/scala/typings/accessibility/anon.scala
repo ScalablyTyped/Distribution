@@ -14,20 +14,16 @@ object anon {
   }
   object Buttons {
     
-    @scala.inline
-    def apply(): Buttons = {
+    inline def apply(): Buttons = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Buttons]
     }
     
-    @scala.inline
-    implicit class ButtonsMutableBuilder[Self <: Buttons] (val x: Self) extends AnyVal {
+    extension [Self <: Buttons](x: Self) {
       
-      @scala.inline
-      def setButtons(value: Boolean): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+      inline def setButtons(value: Boolean): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+      inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     }
   }
   
@@ -44,32 +40,24 @@ object anon {
   }
   object CBackground {
     
-    @scala.inline
-    def apply(): CBackground = {
+    inline def apply(): CBackground = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CBackground]
     }
     
-    @scala.inline
-    implicit class CBackgroundMutableBuilder[Self <: CBackground] (val x: Self) extends AnyVal {
+    extension [Self <: CBackground](x: Self) {
       
-      @scala.inline
-      def setCBackground(value: String): Self = StObject.set(x, "cBackground", value.asInstanceOf[js.Any])
+      inline def setCBackground(value: String): Self = StObject.set(x, "cBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCBackgroundUndefined: Self = StObject.set(x, "cBackground", js.undefined)
+      inline def setCBackgroundUndefined: Self = StObject.set(x, "cBackground", js.undefined)
       
-      @scala.inline
-      def setCBorder(value: String): Self = StObject.set(x, "cBorder", value.asInstanceOf[js.Any])
+      inline def setCBorder(value: String): Self = StObject.set(x, "cBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCBorderUndefined: Self = StObject.set(x, "cBorder", js.undefined)
+      inline def setCBorderUndefined: Self = StObject.set(x, "cBorder", js.undefined)
       
-      @scala.inline
-      def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     }
   }
   
@@ -81,26 +69,20 @@ object anon {
   }
   object Dimensions {
     
-    @scala.inline
-    def apply(): Dimensions = {
+    inline def apply(): Dimensions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Dimensions]
     }
     
-    @scala.inline
-    implicit class DimensionsMutableBuilder[Self <: Dimensions] (val x: Self) extends AnyVal {
+    extension [Self <: Dimensions](x: Self) {
       
-      @scala.inline
-      def setDimensions(value: typings.accessibility.mod.Dimensions): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+      inline def setDimensions(value: typings.accessibility.mod.Dimensions): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
+      inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
       
-      @scala.inline
-      def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+      inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
+      inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
     }
   }
   
@@ -110,17 +92,14 @@ object anon {
   }
   object Font {
     
-    @scala.inline
-    def apply(font: SizeOrPosition): Font = {
+    inline def apply(font: SizeOrPosition): Font = {
       val __obj = js.Dynamic.literal(font = font.asInstanceOf[js.Any])
       __obj.asInstanceOf[Font]
     }
     
-    @scala.inline
-    implicit class FontMutableBuilder[Self <: Font] (val x: Self) extends AnyVal {
+    extension [Self <: Font](x: Self) {
       
-      @scala.inline
-      def setFont(value: SizeOrPosition): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+      inline def setFont(value: SizeOrPosition): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     }
   }
   
@@ -131,20 +110,16 @@ object anon {
   }
   object Persistent {
     
-    @scala.inline
-    def apply(): Persistent = {
+    inline def apply(): Persistent = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Persistent]
     }
     
-    @scala.inline
-    implicit class PersistentMutableBuilder[Self <: Persistent] (val x: Self) extends AnyVal {
+    extension [Self <: Persistent](x: Self) {
       
-      @scala.inline
-      def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
+      inline def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
+      inline def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
     }
   }
 }

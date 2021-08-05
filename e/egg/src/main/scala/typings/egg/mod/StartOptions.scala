@@ -17,31 +17,23 @@ trait StartOptions extends StObject {
 }
 object StartOptions {
   
-  @scala.inline
-  def apply(): StartOptions = {
+  inline def apply(): StartOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartOptions]
   }
   
-  @scala.inline
-  implicit class StartOptionsMutableBuilder[Self <: StartOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StartOptions](x: Self) {
     
-    @scala.inline
-    def setBaseDir(value: String): Self = StObject.set(x, "baseDir", value.asInstanceOf[js.Any])
+    inline def setBaseDir(value: String): Self = StObject.set(x, "baseDir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseDirUndefined: Self = StObject.set(x, "baseDir", js.undefined)
+    inline def setBaseDirUndefined: Self = StObject.set(x, "baseDir", js.undefined)
     
-    @scala.inline
-    def setFramework(value: String): Self = StObject.set(x, "framework", value.asInstanceOf[js.Any])
+    inline def setFramework(value: String): Self = StObject.set(x, "framework", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameworkUndefined: Self = StObject.set(x, "framework", js.undefined)
+    inline def setFrameworkUndefined: Self = StObject.set(x, "framework", js.undefined)
     
-    @scala.inline
-    def setIgnoreWarning(value: Boolean): Self = StObject.set(x, "ignoreWarning", value.asInstanceOf[js.Any])
+    inline def setIgnoreWarning(value: Boolean): Self = StObject.set(x, "ignoreWarning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreWarningUndefined: Self = StObject.set(x, "ignoreWarning", js.undefined)
+    inline def setIgnoreWarningUndefined: Self = StObject.set(x, "ignoreWarning", js.undefined)
   }
 }

@@ -28,37 +28,27 @@ trait ApplicationComponent extends StObject {
 }
 object ApplicationComponent {
   
-  @scala.inline
-  def apply(): ApplicationComponent = {
+  inline def apply(): ApplicationComponent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApplicationComponent]
   }
   
-  @scala.inline
-  implicit class ApplicationComponentMutableBuilder[Self <: ApplicationComponent] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationComponent](x: Self) {
     
-    @scala.inline
-    def setComponentName(value: ComponentName): Self = StObject.set(x, "ComponentName", value.asInstanceOf[js.Any])
+    inline def setComponentName(value: ComponentName): Self = StObject.set(x, "ComponentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentNameUndefined: Self = StObject.set(x, "ComponentName", js.undefined)
+    inline def setComponentNameUndefined: Self = StObject.set(x, "ComponentName", js.undefined)
     
-    @scala.inline
-    def setMonitor(value: Monitor): Self = StObject.set(x, "Monitor", value.asInstanceOf[js.Any])
+    inline def setMonitor(value: Monitor): Self = StObject.set(x, "Monitor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitorUndefined: Self = StObject.set(x, "Monitor", js.undefined)
+    inline def setMonitorUndefined: Self = StObject.set(x, "Monitor", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
     
-    @scala.inline
-    def setTier(value: Tier): Self = StObject.set(x, "Tier", value.asInstanceOf[js.Any])
+    inline def setTier(value: Tier): Self = StObject.set(x, "Tier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTierUndefined: Self = StObject.set(x, "Tier", js.undefined)
+    inline def setTierUndefined: Self = StObject.set(x, "Tier", js.undefined)
   }
 }

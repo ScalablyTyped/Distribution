@@ -47,19 +47,15 @@ trait GoogleActionsTransactionsV3GooglePaymentOption extends StObject {
 }
 object GoogleActionsTransactionsV3GooglePaymentOption {
   
-  @scala.inline
-  def apply(): GoogleActionsTransactionsV3GooglePaymentOption = {
+  inline def apply(): GoogleActionsTransactionsV3GooglePaymentOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsTransactionsV3GooglePaymentOption]
   }
   
-  @scala.inline
-  implicit class GoogleActionsTransactionsV3GooglePaymentOptionMutableBuilder[Self <: GoogleActionsTransactionsV3GooglePaymentOption] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsTransactionsV3GooglePaymentOption](x: Self) {
     
-    @scala.inline
-    def setFacilitationSpec(value: String): Self = StObject.set(x, "facilitationSpec", value.asInstanceOf[js.Any])
+    inline def setFacilitationSpec(value: String): Self = StObject.set(x, "facilitationSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacilitationSpecUndefined: Self = StObject.set(x, "facilitationSpec", js.undefined)
+    inline def setFacilitationSpecUndefined: Self = StObject.set(x, "facilitationSpec", js.undefined)
   }
 }

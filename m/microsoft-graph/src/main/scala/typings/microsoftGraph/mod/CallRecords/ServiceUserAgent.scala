@@ -21,19 +21,15 @@ trait ServiceUserAgent
 }
 object ServiceUserAgent {
   
-  @scala.inline
-  def apply(): ServiceUserAgent = {
+  inline def apply(): ServiceUserAgent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServiceUserAgent]
   }
   
-  @scala.inline
-  implicit class ServiceUserAgentMutableBuilder[Self <: ServiceUserAgent] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceUserAgent](x: Self) {
     
-    @scala.inline
-    def setRole(value: ServiceRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: ServiceRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
   }
 }

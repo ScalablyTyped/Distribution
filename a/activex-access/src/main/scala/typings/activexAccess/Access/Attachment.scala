@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Attachment extends StObject {
   
-  @JSName("Access.Attachment_typekey")
+  /* private */ @JSName("Access.Attachment_typekey")
   var AccessDotAttachment_typekey: Attachment = js.native
   
   var AddColon: Boolean = js.native

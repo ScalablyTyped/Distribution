@@ -5,128 +5,100 @@ import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable4
 import org.scalablytyped.runtime.Instantiable5
+import typings.std.OmitThisParameter
+import typings.std.ThisParameterType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("function-bind", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply[T](thisArg: js.Any): T = js.native
-  def apply[AX, R](thisArg: js.Any, args: AX*): Instantiable1[/* args (repeated) */ AX, R] = js.native
-  def apply[T, A /* <: js.Array[_] */, R](thisArg: T): js.Function1[/* args */ A, R] = js.native
-  def apply[T, AX, R](thisArg: T, args: AX*): js.Function1[/* repeated */ AX, R] = js.native
-  def apply[A0, A /* <: js.Array[_] */, R](thisArg: js.Any, arg0: A0): Instantiable1[/* args */ A, R] = js.native
-  def apply[T, A0, A /* <: js.Array[_] */, R](thisArg: T, arg0: A0): js.Function1[/* args */ A, R] = js.native
-  def apply[A0, A1, A /* <: js.Array[_] */, R](thisArg: js.Any, arg0: A0, arg1: A1): Instantiable1[/* args */ A, R] = js.native
-  def apply[T, A0, A1, A /* <: js.Array[_] */, R](thisArg: T, arg0: A0, arg1: A1): js.Function1[/* args */ A, R] = js.native
-  def apply[A0, A1, A2, A /* <: js.Array[_] */, R](thisArg: js.Any, arg0: A0, arg1: A1, arg2: A2): Instantiable1[/* args */ A, R] = js.native
-  def apply[T, A0, A1, A2, A /* <: js.Array[_] */, R](thisArg: T, arg0: A0, arg1: A1, arg2: A2): js.Function1[/* args */ A, R] = js.native
-  def apply[A0, A1, A2, A3, A /* <: js.Array[_] */, R](thisArg: js.Any, arg0: A0, arg1: A1, arg2: A2, arg3: A3): Instantiable1[/* args */ A, R] = js.native
-  def apply[T, A0, A1, A2, A3, A /* <: js.Array[_] */, R](thisArg: T, arg0: A0, arg1: A1, arg2: A2, arg3: A3): js.Function1[/* args */ A, R] = js.native
-  @JSName("apply")
-  def apply[AX, R](func: Instantiable1[/* args (repeated) */ AX, R], args: Array[js.Any | AX]): Instantiable1[/* args (repeated) */ AX, R] = js.native
+object mod {
+  
+  //#region bind():
+  /**
+    * For a given function, creates a bound function that has the same body as the original function.
+    * The this object of the bound function is associated with the specified object, and has the specified initial parameters.
+    * @param thisArg The object to be used as the this object.
+    * @param args Arguments to bind to the parameters of the function.
+    */
+  inline def apply[T](thisArg: ThisParameterType[T]): OmitThisParameter[T] = ^.asInstanceOf[js.Dynamic].apply(thisArg.asInstanceOf[js.Any]).asInstanceOf[OmitThisParameter[T]]
   // NewableFunction:
-  @JSName("apply")
-  def apply[A /* <: js.Array[_] */, R](func: Instantiable1[/* args */ A, R], args: js.Array[_]): Instantiable1[/* args */ A, R] = js.native
-  @JSName("apply")
-  def apply[T, AX, R](func: js.ThisFunction1[/* this */ T, /* repeated */ AX, R], args: Array[T | AX]): js.Function1[/* repeated */ AX, R] = js.native
+  inline def apply[AX /* <: js.Array[js.Any] */, A /* <: js.Array[js.Any] */, R](
+    thisArg: js.Any,
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param bound because its type AX is not an array type */ bound: AX
+  ): Instantiable1[/* args */ A, R] = (^.asInstanceOf[js.Dynamic].apply(thisArg.asInstanceOf[js.Any], bound.asInstanceOf[js.Any])).asInstanceOf[Instantiable1[/* args */ A, R]]
+  // CallableFunction:
+  inline def apply[T, AX /* <: js.Array[js.Any] */, A /* <: js.Array[js.Any] */, R](
+    thisArg: T,
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param bound because its type AX is not an array type */ bound: AX
+  ): js.Function1[/* args */ A, R] = (^.asInstanceOf[js.Dynamic].apply(thisArg.asInstanceOf[js.Any], bound.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* args */ A, R]]
+  
+  @JSImport("function-bind", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  // NewableFunction:
+  // TODO: Figure out why this is necessary:
+  inline def apply[A /* <: js.Array[js.Any] */, R](func: Instantiable1[/* args */ A, R], args: js.Array[/* thisArg */ js.Any]): Instantiable1[/* args */ A, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(func.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Instantiable1[/* args */ A, R]]
+  inline def apply[A0, A /* <: js.Array[js.Any] */, R](
+    func: Instantiable2[/* bound_0 */ A0, /* args */ A, R],
+    args: js.Tuple2[/* thisArg */ js.Any, /* bound_0 */ A0]
+  ): Instantiable1[/* args */ A, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(func.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Instantiable1[/* args */ A, R]]
   //#endregion
   //#region bind.apply():
-  /**
-    * Creates a bound function with the specified object as the this value and the elements of specified array as the arguments.
-    * @param thisArg The object to be used as the this object.
-    * @param args An array of argument values to be passed to the function.
-    */
   // CallableFunction:
-  @JSName("apply")
-  def apply[T, A /* <: js.Array[_] */, R](func: js.ThisFunction1[/* this */ T, /* args */ A, R], args: js.Array[T]): js.Function1[/* args */ A, R] = js.native
-  @JSName("apply")
-  def apply[A0, A /* <: js.Array[_] */, R](func: Instantiable2[/* arg0 */ A0, /* args */ A, R], args: js.Tuple2[_, A0]): Instantiable1[/* args */ A, R] = js.native
-  @JSName("apply")
-  def apply[T, A0, A /* <: js.Array[_] */, R](func: js.ThisFunction2[/* this */ T, /* arg0 */ A0, /* args */ A, R], args: js.Tuple2[T, A0]): js.Function1[/* args */ A, R] = js.native
-  @JSName("apply")
-  def apply[A0, A1, A /* <: js.Array[_] */, R](func: Instantiable3[/* arg0 */ A0, /* arg1 */ A1, /* args */ A, R], args: js.Tuple3[_, A0, A1]): Instantiable1[/* args */ A, R] = js.native
-  @JSName("apply")
-  def apply[T, A0, A1, A /* <: js.Array[_] */, R](
-    func: js.ThisFunction3[/* this */ T, /* arg0 */ A0, /* arg1 */ A1, /* args */ A, R],
-    args: js.Tuple3[T, A0, A1]
-  ): js.Function1[/* args */ A, R] = js.native
-  @JSName("apply")
-  def apply[A0, A1, A2, A /* <: js.Array[_] */, R](
-    func: Instantiable4[/* arg0 */ A0, /* arg1 */ A1, /* arg2 */ A2, /* args */ A, R],
-    args: js.Tuple4[_, A0, A1, A2]
-  ): Instantiable1[/* args */ A, R] = js.native
-  @JSName("apply")
-  def apply[T, A0, A1, A2, A /* <: js.Array[_] */, R](
-    func: js.ThisFunction4[/* this */ T, /* arg0 */ A0, /* arg1 */ A1, /* arg2 */ A2, /* args */ A, R],
-    args: js.Tuple4[T, A0, A1, A2]
-  ): js.Function1[/* args */ A, R] = js.native
-  @JSName("apply")
-  def apply[A0, A1, A2, A3, A /* <: js.Array[_] */, R](
-    func: Instantiable5[/* arg0 */ A0, /* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* args */ A, R],
-    args: js.Tuple5[_, A0, A1, A2, A3]
-  ): Instantiable1[/* args */ A, R] = js.native
-  @JSName("apply")
-  def apply[T, A0, A1, A2, A3, A /* <: js.Array[_] */, R](
-    func: js.ThisFunction5[/* this */ T, /* arg0 */ A0, /* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* args */ A, R],
-    args: js.Tuple5[T, A0, A1, A2, A3]
-  ): js.Function1[/* args */ A, R] = js.native
+  inline def apply[T, AX /* <: js.Array[js.Any] */, A /* <: js.Array[js.Any] */, R](
+    func: js.ThisFunction1[
+      /* this */ T, 
+      /* import warning: importer.ImportType#apply c repeated non-array type: A */ /* args */ /* args */ js.Array[A], 
+      R
+    ],
+    args: /* import warning: importer.ImportType#apply c repeated non-array type: AX */ /* bound */ js.Array[AX]
+  ): js.Function1[/* args */ A, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(func.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* args */ A, R]]
+  inline def apply[A0, A1, A /* <: js.Array[js.Any] */, R](
+    func: Instantiable3[/* bound_0 */ A0, /* bound_1 */ A1, /* args */ A, R],
+    args: js.Tuple3[/* thisArg */ js.Any, /* bound_0 */ A0, /* bound_1 */ A1]
+  ): Instantiable1[/* args */ A, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(func.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Instantiable1[/* args */ A, R]]
+  inline def apply[A0, A1, A2, A /* <: js.Array[js.Any] */, R](
+    func: Instantiable4[/* bound_0 */ A0, /* bound_1 */ A1, /* bound_2 */ A2, /* args */ A, R],
+    args: js.Tuple4[/* thisArg */ js.Any, /* bound_0 */ A0, /* bound_1 */ A1, /* bound_2 */ A2]
+  ): Instantiable1[/* args */ A, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(func.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Instantiable1[/* args */ A, R]]
+  inline def apply[A0, A1, A2, A3, A /* <: js.Array[js.Any] */, R](
+    func: Instantiable5[/* bound_0 */ A0, /* bound_1 */ A1, /* bound_2 */ A2, /* bound_3 */ A3, /* args */ A, R],
+    args: js.Tuple5[
+      /* thisArg */ js.Any, 
+      /* bound_0 */ A0, 
+      /* bound_1 */ A1, 
+      /* bound_2 */ A2, 
+      /* bound_3 */ A3
+    ]
+  ): Instantiable1[/* args */ A, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(func.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Instantiable1[/* args */ A, R]]
+  
+  inline def apply_AX_ArrayAnyA_ArrayAnyR[AX /* <: js.Array[js.Any] */, A /* <: js.Array[js.Any] */, R](
+    func: Instantiable1[
+      /* import warning: importer.ImportType#apply c repeated non-array type: A */ /* args */ /* args */ js.Array[A], 
+      R
+    ],
+    args: /* import warning: importer.ImportType#apply c repeated non-array type: AX */ /* bound */ js.Array[AX]
+  ): Instantiable1[/* args */ A, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(func.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Instantiable1[/* args */ A, R]]
+  
   // NewableFunction:
-  def call[A /* <: js.Array[_] */, R](func: Instantiable1[/* args */ A, R], thisArg: js.Any): Instantiable1[/* args */ A, R] = js.native
-  def call[AX, R](func: Instantiable1[/* args (repeated) */ AX, R], thisArg: js.Any, args: AX*): Instantiable1[/* args (repeated) */ AX, R] = js.native
+  inline def call[AX /* <: js.Array[js.Any] */, A /* <: js.Array[js.Any] */, R](
+    func: Instantiable1[
+      /* import warning: importer.ImportType#apply c repeated non-array type: A */ /* args */ /* args */ js.Array[A], 
+      R
+    ],
+    thisArg: js.Any,
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param bound because its type AX is not an array type */ bound: AX
+  ): Instantiable1[/* args */ A, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(func.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any], bound.asInstanceOf[js.Any])).asInstanceOf[Instantiable1[/* args */ A, R]]
   //#region bind.call():
-  /**
-    * Creates a bound function with the specified object as the this value and the specified rest arguments as the arguments.
-    * @param thisArg The object to be used as the this object.
-    * @param args Argument values to be passed to the function.
-    */
   // CallableFunction:
-  def call[T, A /* <: js.Array[_] */, R](func: js.ThisFunction1[/* this */ T, /* args */ A, R], thisArg: T): js.Function1[/* args */ A, R] = js.native
-  def call[T, AX, R](func: js.ThisFunction1[/* this */ T, /* repeated */ AX, R], thisArg: T, args: AX*): js.Function1[/* repeated */ AX, R] = js.native
-  def call[A0, A /* <: js.Array[_] */, R](func: Instantiable2[/* arg0 */ A0, /* args */ A, R], thisArg: js.Any, arg0: A0): Instantiable1[/* args */ A, R] = js.native
-  def call[T, A0, A /* <: js.Array[_] */, R](func: js.ThisFunction2[/* this */ T, /* arg0 */ A0, /* args */ A, R], thisArg: T, arg0: A0): js.Function1[/* args */ A, R] = js.native
-  def call[A0, A1, A /* <: js.Array[_] */, R](
-    func: Instantiable3[/* arg0 */ A0, /* arg1 */ A1, /* args */ A, R],
-    thisArg: js.Any,
-    arg0: A0,
-    arg1: A1
-  ): Instantiable1[/* args */ A, R] = js.native
-  def call[T, A0, A1, A /* <: js.Array[_] */, R](
-    func: js.ThisFunction3[/* this */ T, /* arg0 */ A0, /* arg1 */ A1, /* args */ A, R],
+  inline def call[T, AX /* <: js.Array[js.Any] */, A /* <: js.Array[js.Any] */, R](
+    func: js.ThisFunction1[
+      /* this */ T, 
+      /* import warning: importer.ImportType#apply c repeated non-array type: A */ /* args */ /* args */ js.Array[A], 
+      R
+    ],
     thisArg: T,
-    arg0: A0,
-    arg1: A1
-  ): js.Function1[/* args */ A, R] = js.native
-  def call[A0, A1, A2, A /* <: js.Array[_] */, R](
-    func: Instantiable4[/* arg0 */ A0, /* arg1 */ A1, /* arg2 */ A2, /* args */ A, R],
-    thisArg: js.Any,
-    arg0: A0,
-    arg1: A1,
-    arg2: A2
-  ): Instantiable1[/* args */ A, R] = js.native
-  def call[T, A0, A1, A2, A /* <: js.Array[_] */, R](
-    func: js.ThisFunction4[/* this */ T, /* arg0 */ A0, /* arg1 */ A1, /* arg2 */ A2, /* args */ A, R],
-    thisArg: T,
-    arg0: A0,
-    arg1: A1,
-    arg2: A2
-  ): js.Function1[/* args */ A, R] = js.native
-  def call[A0, A1, A2, A3, A /* <: js.Array[_] */, R](
-    func: Instantiable5[/* arg0 */ A0, /* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* args */ A, R],
-    thisArg: js.Any,
-    arg0: A0,
-    arg1: A1,
-    arg2: A2,
-    arg3: A3
-  ): Instantiable1[/* args */ A, R] = js.native
-  def call[T, A0, A1, A2, A3, A /* <: js.Array[_] */, R](
-    func: js.ThisFunction5[/* this */ T, /* arg0 */ A0, /* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* args */ A, R],
-    thisArg: T,
-    arg0: A0,
-    arg1: A1,
-    arg2: A2,
-    arg3: A3
-  ): js.Function1[/* args */ A, R] = js.native
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param bound because its type AX is not an array type */ bound: AX
+  ): js.Function1[/* args */ A, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(func.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any], bound.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* args */ A, R]]
 }
-

@@ -10,19 +10,15 @@ trait PixelDensityParams extends StObject {
 }
 object PixelDensityParams {
   
-  @scala.inline
-  def apply(): PixelDensityParams = {
+  inline def apply(): PixelDensityParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PixelDensityParams]
   }
   
-  @scala.inline
-  implicit class PixelDensityParamsMutableBuilder[Self <: PixelDensityParams] (val x: Self) extends AnyVal {
+  extension [Self <: PixelDensityParams](x: Self) {
     
-    @scala.inline
-    def setDpr(value: ImgixParamType): Self = StObject.set(x, "dpr", value.asInstanceOf[js.Any])
+    inline def setDpr(value: ImgixParamType): Self = StObject.set(x, "dpr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDprUndefined: Self = StObject.set(x, "dpr", js.undefined)
+    inline def setDprUndefined: Self = StObject.set(x, "dpr", js.undefined)
   }
 }

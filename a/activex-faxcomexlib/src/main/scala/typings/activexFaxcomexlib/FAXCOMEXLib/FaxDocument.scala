@@ -36,7 +36,7 @@ trait FaxDocument extends StObject {
   /** The document name */
   var DocumentName: String
   
-  @JSName("FAXCOMEXLib.FaxDocument_typekey")
+  /* private */ @JSName("FAXCOMEXLib.FaxDocument_typekey")
   var FAXCOMEXLibDotFaxDocument_typekey: FaxDocument
   
   /** Whether to group the broadcast receipts */
@@ -86,8 +86,7 @@ trait FaxDocument extends StObject {
 }
 object FaxDocument {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AttachFaxToReceipt: Boolean,
     Bodies: js.Any,
     Body: String,
@@ -118,79 +117,54 @@ object FaxDocument {
     __obj.asInstanceOf[FaxDocument]
   }
   
-  @scala.inline
-  implicit class FaxDocumentMutableBuilder[Self <: FaxDocument] (val x: Self) extends AnyVal {
+  extension [Self <: FaxDocument](x: Self) {
     
-    @scala.inline
-    def setAttachFaxToReceipt(value: Boolean): Self = StObject.set(x, "AttachFaxToReceipt", value.asInstanceOf[js.Any])
+    inline def setAttachFaxToReceipt(value: Boolean): Self = StObject.set(x, "AttachFaxToReceipt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodies(value: js.Any): Self = StObject.set(x, "Bodies", value.asInstanceOf[js.Any])
+    inline def setBodies(value: js.Any): Self = StObject.set(x, "Bodies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallHandle(value: Double): Self = StObject.set(x, "CallHandle", value.asInstanceOf[js.Any])
+    inline def setCallHandle(value: Double): Self = StObject.set(x, "CallHandle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectedSubmit(value: IFaxServer => SafeArray[String]): Self = StObject.set(x, "ConnectedSubmit", js.Any.fromFunction1(value))
+    inline def setConnectedSubmit(value: IFaxServer => SafeArray[String]): Self = StObject.set(x, "ConnectedSubmit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConnectedSubmit2(value: (IFaxServer, SafeArray[String]) => Double): Self = StObject.set(x, "ConnectedSubmit2", js.Any.fromFunction2(value))
+    inline def setConnectedSubmit2(value: (IFaxServer, SafeArray[String]) => Double): Self = StObject.set(x, "ConnectedSubmit2", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCoverPage(value: String): Self = StObject.set(x, "CoverPage", value.asInstanceOf[js.Any])
+    inline def setCoverPage(value: String): Self = StObject.set(x, "CoverPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoverPageType(value: FAX_COVERPAGE_TYPE_ENUM): Self = StObject.set(x, "CoverPageType", value.asInstanceOf[js.Any])
+    inline def setCoverPageType(value: FAX_COVERPAGE_TYPE_ENUM): Self = StObject.set(x, "CoverPageType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentName(value: String): Self = StObject.set(x, "DocumentName", value.asInstanceOf[js.Any])
+    inline def setDocumentName(value: String): Self = StObject.set(x, "DocumentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFAXCOMEXLibDotFaxDocument_typekey(value: FaxDocument): Self = StObject.set(x, "FAXCOMEXLib.FaxDocument_typekey", value.asInstanceOf[js.Any])
+    inline def setFAXCOMEXLibDotFaxDocument_typekey(value: FaxDocument): Self = StObject.set(x, "FAXCOMEXLib.FaxDocument_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupBroadcastReceipts(value: Boolean): Self = StObject.set(x, "GroupBroadcastReceipts", value.asInstanceOf[js.Any])
+    inline def setGroupBroadcastReceipts(value: Boolean): Self = StObject.set(x, "GroupBroadcastReceipts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNote(value: String): Self = StObject.set(x, "Note", value.asInstanceOf[js.Any])
+    inline def setNote(value: String): Self = StObject.set(x, "Note", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriority(value: FAX_PRIORITY_TYPE_ENUM): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: FAX_PRIORITY_TYPE_ENUM): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceiptAddress(value: String): Self = StObject.set(x, "ReceiptAddress", value.asInstanceOf[js.Any])
+    inline def setReceiptAddress(value: String): Self = StObject.set(x, "ReceiptAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceiptType(value: FAX_RECEIPT_TYPE_ENUM): Self = StObject.set(x, "ReceiptType", value.asInstanceOf[js.Any])
+    inline def setReceiptType(value: FAX_RECEIPT_TYPE_ENUM): Self = StObject.set(x, "ReceiptType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipients(value: FaxRecipients): Self = StObject.set(x, "Recipients", value.asInstanceOf[js.Any])
+    inline def setRecipients(value: FaxRecipients): Self = StObject.set(x, "Recipients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleTime(value: VarDate): Self = StObject.set(x, "ScheduleTime", value.asInstanceOf[js.Any])
+    inline def setScheduleTime(value: VarDate): Self = StObject.set(x, "ScheduleTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleType(value: FAX_SCHEDULE_TYPE_ENUM): Self = StObject.set(x, "ScheduleType", value.asInstanceOf[js.Any])
+    inline def setScheduleType(value: FAX_SCHEDULE_TYPE_ENUM): Self = StObject.set(x, "ScheduleType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSender(value: FaxSender): Self = StObject.set(x, "Sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: FaxSender): Self = StObject.set(x, "Sender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmissionId(value: String): Self = StObject.set(x, "SubmissionId", value.asInstanceOf[js.Any])
+    inline def setSubmissionId(value: String): Self = StObject.set(x, "SubmissionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmit(value: String => SafeArray[Double]): Self = StObject.set(x, "Submit", js.Any.fromFunction1(value))
+    inline def setSubmit(value: String => SafeArray[Double]): Self = StObject.set(x, "Submit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSubmit2(value: (String, js.Any) => Double): Self = StObject.set(x, "Submit2", js.Any.fromFunction2(value))
+    inline def setSubmit2(value: (String, js.Any) => Double): Self = StObject.set(x, "Submit2", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTapiConnection(value: js.Any): Self = StObject.set(x, "TapiConnection", value.asInstanceOf[js.Any])
+    inline def setTapiConnection(value: js.Any): Self = StObject.set(x, "TapiConnection", value.asInstanceOf[js.Any])
   }
 }

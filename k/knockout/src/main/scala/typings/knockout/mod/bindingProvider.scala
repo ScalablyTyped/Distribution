@@ -41,6 +41,5 @@ object bindingProvider {
   @JSImport("knockout", "bindingProvider.instance")
   @js.native
   def instance: IBindingProvider = js.native
-  @scala.inline
-  def instance_=(x: IBindingProvider): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("instance")(x.asInstanceOf[js.Any])
+  inline def instance_=(x: IBindingProvider): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("instance")(x.asInstanceOf[js.Any])
 }

@@ -20,28 +20,21 @@ trait GoogleActionsV2UiElementsTableCardRow extends StObject {
 }
 object GoogleActionsV2UiElementsTableCardRow {
   
-  @scala.inline
-  def apply(): GoogleActionsV2UiElementsTableCardRow = {
+  inline def apply(): GoogleActionsV2UiElementsTableCardRow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2UiElementsTableCardRow]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2UiElementsTableCardRowMutableBuilder[Self <: GoogleActionsV2UiElementsTableCardRow] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2UiElementsTableCardRow](x: Self) {
     
-    @scala.inline
-    def setCells(value: js.Array[GoogleActionsV2UiElementsTableCardCell]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
+    inline def setCells(value: js.Array[GoogleActionsV2UiElementsTableCardCell]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
+    inline def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
     
-    @scala.inline
-    def setCellsVarargs(value: GoogleActionsV2UiElementsTableCardCell*): Self = StObject.set(x, "cells", js.Array(value :_*))
+    inline def setCellsVarargs(value: GoogleActionsV2UiElementsTableCardCell*): Self = StObject.set(x, "cells", js.Array(value :_*))
     
-    @scala.inline
-    def setDividerAfter(value: Boolean): Self = StObject.set(x, "dividerAfter", value.asInstanceOf[js.Any])
+    inline def setDividerAfter(value: Boolean): Self = StObject.set(x, "dividerAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDividerAfterUndefined: Self = StObject.set(x, "dividerAfter", js.undefined)
+    inline def setDividerAfterUndefined: Self = StObject.set(x, "dividerAfter", js.undefined)
   }
 }

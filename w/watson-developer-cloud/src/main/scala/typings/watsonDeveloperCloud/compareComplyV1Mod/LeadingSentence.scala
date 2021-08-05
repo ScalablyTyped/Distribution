@@ -18,34 +18,25 @@ trait LeadingSentence extends StObject {
 }
 object LeadingSentence {
   
-  @scala.inline
-  def apply(): LeadingSentence = {
+  inline def apply(): LeadingSentence = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LeadingSentence]
   }
   
-  @scala.inline
-  implicit class LeadingSentenceMutableBuilder[Self <: LeadingSentence] (val x: Self) extends AnyVal {
+  extension [Self <: LeadingSentence](x: Self) {
     
-    @scala.inline
-    def setElement_locations(value: js.Array[ElementLocations]): Self = StObject.set(x, "element_locations", value.asInstanceOf[js.Any])
+    inline def setElement_locations(value: js.Array[ElementLocations]): Self = StObject.set(x, "element_locations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElement_locationsUndefined: Self = StObject.set(x, "element_locations", js.undefined)
+    inline def setElement_locationsUndefined: Self = StObject.set(x, "element_locations", js.undefined)
     
-    @scala.inline
-    def setElement_locationsVarargs(value: ElementLocations*): Self = StObject.set(x, "element_locations", js.Array(value :_*))
+    inline def setElement_locationsVarargs(value: ElementLocations*): Self = StObject.set(x, "element_locations", js.Array(value :_*))
     
-    @scala.inline
-    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

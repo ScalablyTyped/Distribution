@@ -16,37 +16,27 @@ trait EntityType extends StObject {
 }
 object EntityType {
   
-  @scala.inline
-  def apply(): EntityType = {
+  inline def apply(): EntityType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EntityType]
   }
   
-  @scala.inline
-  implicit class EntityTypeMutableBuilder[Self <: EntityType] (val x: Self) extends AnyVal {
+  extension [Self <: EntityType](x: Self) {
     
-    @scala.inline
-    def setEntityType(value: typings.breeze.breeze.EntityType): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
+    inline def setEntityType(value: typings.breeze.breeze.EntityType): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityTypeUndefined: Self = StObject.set(x, "entityType", js.undefined)
+    inline def setEntityTypeUndefined: Self = StObject.set(x, "entityType", js.undefined)
     
-    @scala.inline
-    def setIgnore(value: Boolean): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+    inline def setIgnore(value: Boolean): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+    inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
     
-    @scala.inline
-    def setNodeId(value: js.Any): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: js.Any): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
+    inline def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
     
-    @scala.inline
-    def setNodeRefId(value: js.Any): Self = StObject.set(x, "nodeRefId", value.asInstanceOf[js.Any])
+    inline def setNodeRefId(value: js.Any): Self = StObject.set(x, "nodeRefId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeRefIdUndefined: Self = StObject.set(x, "nodeRefId", js.undefined)
+    inline def setNodeRefIdUndefined: Self = StObject.set(x, "nodeRefId", js.undefined)
   }
 }

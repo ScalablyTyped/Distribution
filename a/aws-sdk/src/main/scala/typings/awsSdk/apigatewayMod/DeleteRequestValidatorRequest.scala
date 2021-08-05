@@ -18,19 +18,15 @@ trait DeleteRequestValidatorRequest extends StObject {
 }
 object DeleteRequestValidatorRequest {
   
-  @scala.inline
-  def apply(requestValidatorId: String, restApiId: String): DeleteRequestValidatorRequest = {
+  inline def apply(requestValidatorId: String, restApiId: String): DeleteRequestValidatorRequest = {
     val __obj = js.Dynamic.literal(requestValidatorId = requestValidatorId.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteRequestValidatorRequest]
   }
   
-  @scala.inline
-  implicit class DeleteRequestValidatorRequestMutableBuilder[Self <: DeleteRequestValidatorRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteRequestValidatorRequest](x: Self) {
     
-    @scala.inline
-    def setRequestValidatorId(value: String): Self = StObject.set(x, "requestValidatorId", value.asInstanceOf[js.Any])
+    inline def setRequestValidatorId(value: String): Self = StObject.set(x, "requestValidatorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
+    inline def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
   }
 }

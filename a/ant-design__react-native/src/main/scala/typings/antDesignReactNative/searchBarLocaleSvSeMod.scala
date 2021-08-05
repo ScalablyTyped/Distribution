@@ -15,7 +15,6 @@ object searchBarLocaleSvSeMod {
     @JSImport("@ant-design/react-native/lib/search-bar/locale/sv_Se", "default.cancelText")
     @js.native
     def cancelText: String = js.native
-    @scala.inline
-    def cancelText_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cancelText")(x.asInstanceOf[js.Any])
+    inline def cancelText_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cancelText")(x.asInstanceOf[js.Any])
   }
 }

@@ -13,17 +13,14 @@ trait DynamicSlotNode
 }
 object DynamicSlotNode {
   
-  @scala.inline
-  def apply(loc: SourceLocation, properties: js.Tuple2[Property, DynamicSlotFnProperty]): DynamicSlotNode = {
+  inline def apply(loc: SourceLocation, properties: js.Tuple2[Property, DynamicSlotFnProperty]): DynamicSlotNode = {
     val __obj = js.Dynamic.literal(loc = loc.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(15)
     __obj.asInstanceOf[DynamicSlotNode]
   }
   
-  @scala.inline
-  implicit class DynamicSlotNodeMutableBuilder[Self <: DynamicSlotNode] (val x: Self) extends AnyVal {
+  extension [Self <: DynamicSlotNode](x: Self) {
     
-    @scala.inline
-    def setProperties(value: js.Tuple2[Property, DynamicSlotFnProperty]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: js.Tuple2[Property, DynamicSlotFnProperty]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
   }
 }

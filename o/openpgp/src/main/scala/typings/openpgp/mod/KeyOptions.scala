@@ -48,58 +48,41 @@ trait KeyOptions extends StObject {
 }
 object KeyOptions {
   
-  @scala.inline
-  def apply(userIds: js.Array[UserID]): KeyOptions = {
+  inline def apply(userIds: js.Array[UserID]): KeyOptions = {
     val __obj = js.Dynamic.literal(userIds = userIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyOptions]
   }
   
-  @scala.inline
-  implicit class KeyOptionsMutableBuilder[Self <: KeyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: KeyOptions](x: Self) {
     
-    @scala.inline
-    def setCurve(value: String): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
+    inline def setCurve(value: String): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurveUndefined: Self = StObject.set(x, "curve", js.undefined)
+    inline def setCurveUndefined: Self = StObject.set(x, "curve", js.undefined)
     
-    @scala.inline
-    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    @scala.inline
-    def setKeyExpirationTime(value: Double): Self = StObject.set(x, "keyExpirationTime", value.asInstanceOf[js.Any])
+    inline def setKeyExpirationTime(value: Double): Self = StObject.set(x, "keyExpirationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyExpirationTimeUndefined: Self = StObject.set(x, "keyExpirationTime", js.undefined)
+    inline def setKeyExpirationTimeUndefined: Self = StObject.set(x, "keyExpirationTime", js.undefined)
     
-    @scala.inline
-    def setNumBits(value: Double): Self = StObject.set(x, "numBits", value.asInstanceOf[js.Any])
+    inline def setNumBits(value: Double): Self = StObject.set(x, "numBits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumBitsUndefined: Self = StObject.set(x, "numBits", js.undefined)
+    inline def setNumBitsUndefined: Self = StObject.set(x, "numBits", js.undefined)
     
-    @scala.inline
-    def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
+    inline def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
+    inline def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
     
-    @scala.inline
-    def setSubkeys(value: js.Array[Passphrase]): Self = StObject.set(x, "subkeys", value.asInstanceOf[js.Any])
+    inline def setSubkeys(value: js.Array[Passphrase]): Self = StObject.set(x, "subkeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubkeysUndefined: Self = StObject.set(x, "subkeys", js.undefined)
+    inline def setSubkeysUndefined: Self = StObject.set(x, "subkeys", js.undefined)
     
-    @scala.inline
-    def setSubkeysVarargs(value: Passphrase*): Self = StObject.set(x, "subkeys", js.Array(value :_*))
+    inline def setSubkeysVarargs(value: Passphrase*): Self = StObject.set(x, "subkeys", js.Array(value :_*))
     
-    @scala.inline
-    def setUserIds(value: js.Array[UserID]): Self = StObject.set(x, "userIds", value.asInstanceOf[js.Any])
+    inline def setUserIds(value: js.Array[UserID]): Self = StObject.set(x, "userIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdsVarargs(value: UserID*): Self = StObject.set(x, "userIds", js.Array(value :_*))
+    inline def setUserIdsVarargs(value: UserID*): Self = StObject.set(x, "userIds", js.Array(value :_*))
   }
 }

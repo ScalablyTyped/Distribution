@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DefenderMonitorFileActivity extends StObject
 object DefenderMonitorFileActivity {
   
-  @scala.inline
-  def disable: typings.microsoftGraph.microsoftGraphStrings.disable = "disable".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.disable]
+  inline def disable: typings.microsoftGraph.microsoftGraphStrings.disable = "disable".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.disable]
   
-  @scala.inline
-  def monitorAllFiles: typings.microsoftGraph.microsoftGraphStrings.monitorAllFiles = "monitorAllFiles".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.monitorAllFiles]
+  inline def monitorAllFiles: typings.microsoftGraph.microsoftGraphStrings.monitorAllFiles = "monitorAllFiles".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.monitorAllFiles]
   
-  @scala.inline
-  def monitorIncomingFilesOnly: typings.microsoftGraph.microsoftGraphStrings.monitorIncomingFilesOnly = "monitorIncomingFilesOnly".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.monitorIncomingFilesOnly]
+  inline def monitorIncomingFilesOnly: typings.microsoftGraph.microsoftGraphStrings.monitorIncomingFilesOnly = "monitorIncomingFilesOnly".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.monitorIncomingFilesOnly]
   
-  @scala.inline
-  def monitorOutgoingFilesOnly: typings.microsoftGraph.microsoftGraphStrings.monitorOutgoingFilesOnly = "monitorOutgoingFilesOnly".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.monitorOutgoingFilesOnly]
+  inline def monitorOutgoingFilesOnly: typings.microsoftGraph.microsoftGraphStrings.monitorOutgoingFilesOnly = "monitorOutgoingFilesOnly".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.monitorOutgoingFilesOnly]
   
-  @scala.inline
-  def userDefined: typings.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.userDefined]
+  inline def userDefined: typings.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.userDefined]
 }

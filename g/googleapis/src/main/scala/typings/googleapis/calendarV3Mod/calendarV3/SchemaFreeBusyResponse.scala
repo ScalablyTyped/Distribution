@@ -34,43 +34,31 @@ trait SchemaFreeBusyResponse extends StObject {
 }
 object SchemaFreeBusyResponse {
   
-  @scala.inline
-  def apply(): SchemaFreeBusyResponse = {
+  inline def apply(): SchemaFreeBusyResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFreeBusyResponse]
   }
   
-  @scala.inline
-  implicit class SchemaFreeBusyResponseMutableBuilder[Self <: SchemaFreeBusyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFreeBusyResponse](x: Self) {
     
-    @scala.inline
-    def setCalendars(value: StringDictionary[SchemaFreeBusyCalendar]): Self = StObject.set(x, "calendars", value.asInstanceOf[js.Any])
+    inline def setCalendars(value: StringDictionary[SchemaFreeBusyCalendar]): Self = StObject.set(x, "calendars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalendarsUndefined: Self = StObject.set(x, "calendars", js.undefined)
+    inline def setCalendarsUndefined: Self = StObject.set(x, "calendars", js.undefined)
     
-    @scala.inline
-    def setGroups(value: StringDictionary[SchemaFreeBusyGroup]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: StringDictionary[SchemaFreeBusyGroup]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
+    inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setTimeMax(value: String): Self = StObject.set(x, "timeMax", value.asInstanceOf[js.Any])
+    inline def setTimeMax(value: String): Self = StObject.set(x, "timeMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeMaxUndefined: Self = StObject.set(x, "timeMax", js.undefined)
+    inline def setTimeMaxUndefined: Self = StObject.set(x, "timeMax", js.undefined)
     
-    @scala.inline
-    def setTimeMin(value: String): Self = StObject.set(x, "timeMin", value.asInstanceOf[js.Any])
+    inline def setTimeMin(value: String): Self = StObject.set(x, "timeMin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeMinUndefined: Self = StObject.set(x, "timeMin", js.undefined)
+    inline def setTimeMinUndefined: Self = StObject.set(x, "timeMin", js.undefined)
   }
 }

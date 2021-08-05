@@ -31,11 +31,9 @@ object extensionTypes {
   trait CSSOrigin extends StObject
   object CSSOrigin {
     
-    @scala.inline
-    def author: typings.chromeApps.chromeAppsStrings.author = "author".asInstanceOf[typings.chromeApps.chromeAppsStrings.author]
+    inline def author: typings.chromeApps.chromeAppsStrings.author = "author".asInstanceOf[typings.chromeApps.chromeAppsStrings.author]
     
-    @scala.inline
-    def user: user_ = "user".asInstanceOf[user_]
+    inline def user: user_ = "user".asInstanceOf[user_]
   }
   
   /**
@@ -48,14 +46,12 @@ object extensionTypes {
   trait ImageDetails extends StObject
   object ImageDetails {
     
-    @scala.inline
-    def ImageDetailsJpeg(): typings.chromeApps.chrome.extensionTypes.ImageDetailsJpeg = {
+    inline def ImageDetailsJpeg(): typings.chromeApps.chrome.extensionTypes.ImageDetailsJpeg = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.chromeApps.chrome.extensionTypes.ImageDetailsJpeg]
     }
     
-    @scala.inline
-    def ImageDetailsPng(): typings.chromeApps.chrome.extensionTypes.ImageDetailsPng = {
+    inline def ImageDetailsPng(): typings.chromeApps.chrome.extensionTypes.ImageDetailsPng = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.chromeApps.chrome.extensionTypes.ImageDetailsPng]
     }
@@ -72,20 +68,16 @@ object extensionTypes {
   }
   object ImageDetailsJpeg {
     
-    @scala.inline
-    def apply(): ImageDetailsJpeg = {
+    inline def apply(): ImageDetailsJpeg = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ImageDetailsJpeg]
     }
     
-    @scala.inline
-    implicit class ImageDetailsJpegMutableBuilder[Self <: ImageDetailsJpeg] (val x: Self) extends AnyVal {
+    extension [Self <: ImageDetailsJpeg](x: Self) {
       
-      @scala.inline
-      def setFormat(value: png): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: png): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     }
   }
   
@@ -109,26 +101,20 @@ object extensionTypes {
   }
   object ImageDetailsPng {
     
-    @scala.inline
-    def apply(): ImageDetailsPng = {
+    inline def apply(): ImageDetailsPng = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ImageDetailsPng]
     }
     
-    @scala.inline
-    implicit class ImageDetailsPngMutableBuilder[Self <: ImageDetailsPng] (val x: Self) extends AnyVal {
+    extension [Self <: ImageDetailsPng](x: Self) {
       
-      @scala.inline
-      def setFormat(value: jpeg): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: jpeg): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setQuality(value: integer): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: integer): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+      inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
     }
   }
   
@@ -148,17 +134,14 @@ object extensionTypes {
   }
   object InjectCodeDetails {
     
-    @scala.inline
-    def apply(code: String, cssOrigin: CSSOrigin, runAt: RunAt): InjectCodeDetails = {
+    inline def apply(code: String, cssOrigin: CSSOrigin, runAt: RunAt): InjectCodeDetails = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], cssOrigin = cssOrigin.asInstanceOf[js.Any], runAt = runAt.asInstanceOf[js.Any])
       __obj.asInstanceOf[InjectCodeDetails]
     }
     
-    @scala.inline
-    implicit class InjectCodeDetailsMutableBuilder[Self <: InjectCodeDetails] (val x: Self) extends AnyVal {
+    extension [Self <: InjectCodeDetails](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     }
   }
   
@@ -171,17 +154,14 @@ object extensionTypes {
   }
   object InjectFileDetails {
     
-    @scala.inline
-    def apply(cssOrigin: CSSOrigin, file: String, runAt: RunAt): InjectFileDetails = {
+    inline def apply(cssOrigin: CSSOrigin, file: String, runAt: RunAt): InjectFileDetails = {
       val __obj = js.Dynamic.literal(cssOrigin = cssOrigin.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], runAt = runAt.asInstanceOf[js.Any])
       __obj.asInstanceOf[InjectFileDetails]
     }
     
-    @scala.inline
-    implicit class InjectFileDetailsMutableBuilder[Self <: InjectFileDetails] (val x: Self) extends AnyVal {
+    extension [Self <: InjectFileDetails](x: Self) {
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     }
   }
   
@@ -196,14 +176,11 @@ object extensionTypes {
   trait RunAt extends StObject
   object RunAt {
     
-    @scala.inline
-    def document_end: typings.chromeApps.chromeAppsStrings.document_end = "document_end".asInstanceOf[typings.chromeApps.chromeAppsStrings.document_end]
+    inline def document_end: typings.chromeApps.chromeAppsStrings.document_end = "document_end".asInstanceOf[typings.chromeApps.chromeAppsStrings.document_end]
     
-    @scala.inline
-    def document_idle: typings.chromeApps.chromeAppsStrings.document_idle = "document_idle".asInstanceOf[typings.chromeApps.chromeAppsStrings.document_idle]
+    inline def document_idle: typings.chromeApps.chromeAppsStrings.document_idle = "document_idle".asInstanceOf[typings.chromeApps.chromeAppsStrings.document_idle]
     
-    @scala.inline
-    def document_start: typings.chromeApps.chromeAppsStrings.document_start = "document_start".asInstanceOf[typings.chromeApps.chromeAppsStrings.document_start]
+    inline def document_start: typings.chromeApps.chromeAppsStrings.document_start = "document_start".asInstanceOf[typings.chromeApps.chromeAppsStrings.document_start]
   }
   
   /**
@@ -258,38 +235,28 @@ object extensionTypes {
     }
     object InjectDetailsBase {
       
-      @scala.inline
-      def apply(cssOrigin: CSSOrigin, runAt: RunAt): InjectDetailsBase = {
+      inline def apply(cssOrigin: CSSOrigin, runAt: RunAt): InjectDetailsBase = {
         val __obj = js.Dynamic.literal(cssOrigin = cssOrigin.asInstanceOf[js.Any], runAt = runAt.asInstanceOf[js.Any])
         __obj.asInstanceOf[InjectDetailsBase]
       }
       
-      @scala.inline
-      implicit class InjectDetailsBaseMutableBuilder[Self <: InjectDetailsBase] (val x: Self) extends AnyVal {
+      extension [Self <: InjectDetailsBase](x: Self) {
         
-        @scala.inline
-        def setAllFrames(value: Boolean): Self = StObject.set(x, "allFrames", value.asInstanceOf[js.Any])
+        inline def setAllFrames(value: Boolean): Self = StObject.set(x, "allFrames", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAllFramesUndefined: Self = StObject.set(x, "allFrames", js.undefined)
+        inline def setAllFramesUndefined: Self = StObject.set(x, "allFrames", js.undefined)
         
-        @scala.inline
-        def setCssOrigin(value: CSSOrigin): Self = StObject.set(x, "cssOrigin", value.asInstanceOf[js.Any])
+        inline def setCssOrigin(value: CSSOrigin): Self = StObject.set(x, "cssOrigin", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFrameId(value: integer): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+        inline def setFrameId(value: integer): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFrameIdUndefined: Self = StObject.set(x, "frameId", js.undefined)
+        inline def setFrameIdUndefined: Self = StObject.set(x, "frameId", js.undefined)
         
-        @scala.inline
-        def setMatchAboutBlank(value: Boolean): Self = StObject.set(x, "matchAboutBlank", value.asInstanceOf[js.Any])
+        inline def setMatchAboutBlank(value: Boolean): Self = StObject.set(x, "matchAboutBlank", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMatchAboutBlankUndefined: Self = StObject.set(x, "matchAboutBlank", js.undefined)
+        inline def setMatchAboutBlankUndefined: Self = StObject.set(x, "matchAboutBlank", js.undefined)
         
-        @scala.inline
-        def setRunAt(value: RunAt): Self = StObject.set(x, "runAt", value.asInstanceOf[js.Any])
+        inline def setRunAt(value: RunAt): Self = StObject.set(x, "runAt", value.asInstanceOf[js.Any])
       }
     }
   }

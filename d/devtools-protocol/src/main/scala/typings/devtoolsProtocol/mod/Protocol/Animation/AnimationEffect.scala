@@ -59,8 +59,7 @@ trait AnimationEffect extends StObject {
 }
 object AnimationEffect {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     delay: Double,
     direction: String,
     duration: Double,
@@ -74,43 +73,30 @@ object AnimationEffect {
     __obj.asInstanceOf[AnimationEffect]
   }
   
-  @scala.inline
-  implicit class AnimationEffectMutableBuilder[Self <: AnimationEffect] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationEffect](x: Self) {
     
-    @scala.inline
-    def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
+    inline def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackendNodeIdUndefined: Self = StObject.set(x, "backendNodeId", js.undefined)
+    inline def setBackendNodeIdUndefined: Self = StObject.set(x, "backendNodeId", js.undefined)
     
-    @scala.inline
-    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+    inline def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDelay(value: Double): Self = StObject.set(x, "endDelay", value.asInstanceOf[js.Any])
+    inline def setEndDelay(value: Double): Self = StObject.set(x, "endDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIterationStart(value: Double): Self = StObject.set(x, "iterationStart", value.asInstanceOf[js.Any])
+    inline def setIterationStart(value: Double): Self = StObject.set(x, "iterationStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
+    inline def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyframesRule(value: KeyframesRule): Self = StObject.set(x, "keyframesRule", value.asInstanceOf[js.Any])
+    inline def setKeyframesRule(value: KeyframesRule): Self = StObject.set(x, "keyframesRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyframesRuleUndefined: Self = StObject.set(x, "keyframesRule", js.undefined)
+    inline def setKeyframesRuleUndefined: Self = StObject.set(x, "keyframesRule", js.undefined)
   }
 }

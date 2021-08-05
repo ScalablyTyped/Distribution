@@ -25,7 +25,7 @@ object nsisScriptGeneratorMod {
     
     def insertMacro(name: String, parameters: String): Unit = js.native
     
-    val lines: js.Any = js.native
+    /* private */ val lines: js.Any = js.native
     
     def `macro`(name: String, lines: js.Array[String]): Unit = js.native
     def `macro`(name: String, lines: NsisScriptGenerator): Unit = js.native

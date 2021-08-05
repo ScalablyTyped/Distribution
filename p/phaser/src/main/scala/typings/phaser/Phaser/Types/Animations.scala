@@ -71,89 +71,62 @@ object Animations {
   }
   object Animation {
     
-    @scala.inline
-    def apply(): Animation = {
+    inline def apply(): Animation = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Animation]
     }
     
-    @scala.inline
-    implicit class AnimationMutableBuilder[Self <: Animation] (val x: Self) extends AnyVal {
+    extension [Self <: Animation](x: Self) {
       
-      @scala.inline
-      def setDefaultTextureKey(value: String): Self = StObject.set(x, "defaultTextureKey", value.asInstanceOf[js.Any])
+      inline def setDefaultTextureKey(value: String): Self = StObject.set(x, "defaultTextureKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultTextureKeyUndefined: Self = StObject.set(x, "defaultTextureKey", js.undefined)
+      inline def setDefaultTextureKeyUndefined: Self = StObject.set(x, "defaultTextureKey", js.undefined)
       
-      @scala.inline
-      def setDelay(value: integer): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: integer): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setDuration(value: integer): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: integer): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setFrameRate(value: integer): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
+      inline def setFrameRate(value: integer): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameRateUndefined: Self = StObject.set(x, "frameRate", js.undefined)
+      inline def setFrameRateUndefined: Self = StObject.set(x, "frameRate", js.undefined)
       
-      @scala.inline
-      def setFrames(value: js.Array[AnimationFrame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
+      inline def setFrames(value: js.Array[AnimationFrame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
+      inline def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
       
-      @scala.inline
-      def setFramesVarargs(value: AnimationFrame*): Self = StObject.set(x, "frames", js.Array(value :_*))
+      inline def setFramesVarargs(value: AnimationFrame*): Self = StObject.set(x, "frames", js.Array(value :_*))
       
-      @scala.inline
-      def setHideOnComplete(value: Boolean): Self = StObject.set(x, "hideOnComplete", value.asInstanceOf[js.Any])
+      inline def setHideOnComplete(value: Boolean): Self = StObject.set(x, "hideOnComplete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideOnCompleteUndefined: Self = StObject.set(x, "hideOnComplete", js.undefined)
+      inline def setHideOnCompleteUndefined: Self = StObject.set(x, "hideOnComplete", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setRepeat(value: integer): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+      inline def setRepeat(value: integer): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepeatDelay(value: integer): Self = StObject.set(x, "repeatDelay", value.asInstanceOf[js.Any])
+      inline def setRepeatDelay(value: integer): Self = StObject.set(x, "repeatDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepeatDelayUndefined: Self = StObject.set(x, "repeatDelay", js.undefined)
+      inline def setRepeatDelayUndefined: Self = StObject.set(x, "repeatDelay", js.undefined)
       
-      @scala.inline
-      def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
+      inline def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
       
-      @scala.inline
-      def setShowOnStart(value: Boolean): Self = StObject.set(x, "showOnStart", value.asInstanceOf[js.Any])
+      inline def setShowOnStart(value: Boolean): Self = StObject.set(x, "showOnStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowOnStartUndefined: Self = StObject.set(x, "showOnStart", js.undefined)
+      inline def setShowOnStartUndefined: Self = StObject.set(x, "showOnStart", js.undefined)
       
-      @scala.inline
-      def setSkipMissedFrames(value: Boolean): Self = StObject.set(x, "skipMissedFrames", value.asInstanceOf[js.Any])
+      inline def setSkipMissedFrames(value: Boolean): Self = StObject.set(x, "skipMissedFrames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipMissedFramesUndefined: Self = StObject.set(x, "skipMissedFrames", js.undefined)
+      inline def setSkipMissedFramesUndefined: Self = StObject.set(x, "skipMissedFrames", js.undefined)
       
-      @scala.inline
-      def setYoyo(value: Boolean): Self = StObject.set(x, "yoyo", value.asInstanceOf[js.Any])
+      inline def setYoyo(value: Boolean): Self = StObject.set(x, "yoyo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYoyoUndefined: Self = StObject.set(x, "yoyo", js.undefined)
+      inline def setYoyoUndefined: Self = StObject.set(x, "yoyo", js.undefined)
     }
   }
   
@@ -181,32 +154,24 @@ object Animations {
   }
   object AnimationFrame {
     
-    @scala.inline
-    def apply(frame: String | Double, key: String): AnimationFrame = {
+    inline def apply(frame: String | Double, key: String): AnimationFrame = {
       val __obj = js.Dynamic.literal(frame = frame.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[AnimationFrame]
     }
     
-    @scala.inline
-    implicit class AnimationFrameMutableBuilder[Self <: AnimationFrame] (val x: Self) extends AnyVal {
+    extension [Self <: AnimationFrame](x: Self) {
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setFrame(value: String | Double): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
+      inline def setFrame(value: String | Double): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+      inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     }
   }
   
@@ -249,62 +214,44 @@ object Animations {
   }
   object GenerateFrameNames {
     
-    @scala.inline
-    def apply(): GenerateFrameNames = {
+    inline def apply(): GenerateFrameNames = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GenerateFrameNames]
     }
     
-    @scala.inline
-    implicit class GenerateFrameNamesMutableBuilder[Self <: GenerateFrameNames] (val x: Self) extends AnyVal {
+    extension [Self <: GenerateFrameNames](x: Self) {
       
-      @scala.inline
-      def setEnd(value: integer): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: integer): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
-      @scala.inline
-      def setFrames(value: Boolean | js.Array[integer]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
+      inline def setFrames(value: Boolean | js.Array[integer]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
+      inline def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
       
-      @scala.inline
-      def setFramesVarargs(value: integer*): Self = StObject.set(x, "frames", js.Array(value :_*))
+      inline def setFramesVarargs(value: integer*): Self = StObject.set(x, "frames", js.Array(value :_*))
       
-      @scala.inline
-      def setOutputArray(value: js.Array[AnimationFrame]): Self = StObject.set(x, "outputArray", value.asInstanceOf[js.Any])
+      inline def setOutputArray(value: js.Array[AnimationFrame]): Self = StObject.set(x, "outputArray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputArrayUndefined: Self = StObject.set(x, "outputArray", js.undefined)
+      inline def setOutputArrayUndefined: Self = StObject.set(x, "outputArray", js.undefined)
       
-      @scala.inline
-      def setOutputArrayVarargs(value: AnimationFrame*): Self = StObject.set(x, "outputArray", js.Array(value :_*))
+      inline def setOutputArrayVarargs(value: AnimationFrame*): Self = StObject.set(x, "outputArray", js.Array(value :_*))
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setStart(value: integer): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: integer): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
-      @scala.inline
-      def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+      inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+      inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
       
-      @scala.inline
-      def setZeroPad(value: integer): Self = StObject.set(x, "zeroPad", value.asInstanceOf[js.Any])
+      inline def setZeroPad(value: integer): Self = StObject.set(x, "zeroPad", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZeroPadUndefined: Self = StObject.set(x, "zeroPad", js.undefined)
+      inline def setZeroPadUndefined: Self = StObject.set(x, "zeroPad", js.undefined)
     }
   }
   
@@ -337,50 +284,36 @@ object Animations {
   }
   object GenerateFrameNumbers {
     
-    @scala.inline
-    def apply(): GenerateFrameNumbers = {
+    inline def apply(): GenerateFrameNumbers = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GenerateFrameNumbers]
     }
     
-    @scala.inline
-    implicit class GenerateFrameNumbersMutableBuilder[Self <: GenerateFrameNumbers] (val x: Self) extends AnyVal {
+    extension [Self <: GenerateFrameNumbers](x: Self) {
       
-      @scala.inline
-      def setEnd(value: integer): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: integer): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
-      @scala.inline
-      def setFirst(value: Boolean | integer): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
+      inline def setFirst(value: Boolean | integer): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
+      inline def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
       
-      @scala.inline
-      def setFrames(value: Boolean | js.Array[integer]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
+      inline def setFrames(value: Boolean | js.Array[integer]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
+      inline def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
       
-      @scala.inline
-      def setFramesVarargs(value: integer*): Self = StObject.set(x, "frames", js.Array(value :_*))
+      inline def setFramesVarargs(value: integer*): Self = StObject.set(x, "frames", js.Array(value :_*))
       
-      @scala.inline
-      def setOutputArray(value: js.Array[AnimationFrame]): Self = StObject.set(x, "outputArray", value.asInstanceOf[js.Any])
+      inline def setOutputArray(value: js.Array[AnimationFrame]): Self = StObject.set(x, "outputArray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputArrayUndefined: Self = StObject.set(x, "outputArray", js.undefined)
+      inline def setOutputArrayUndefined: Self = StObject.set(x, "outputArray", js.undefined)
       
-      @scala.inline
-      def setOutputArrayVarargs(value: AnimationFrame*): Self = StObject.set(x, "outputArray", js.Array(value :_*))
+      inline def setOutputArrayVarargs(value: AnimationFrame*): Self = StObject.set(x, "outputArray", js.Array(value :_*))
       
-      @scala.inline
-      def setStart(value: integer): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: integer): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     }
   }
   
@@ -448,8 +381,7 @@ object Animations {
   }
   object JSONAnimation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       delay: integer,
       duration: integer,
       frameRate: integer,
@@ -468,47 +400,33 @@ object Animations {
       __obj.asInstanceOf[JSONAnimation]
     }
     
-    @scala.inline
-    implicit class JSONAnimationMutableBuilder[Self <: JSONAnimation] (val x: Self) extends AnyVal {
+    extension [Self <: JSONAnimation](x: Self) {
       
-      @scala.inline
-      def setDelay(value: integer): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: integer): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDuration(value: integer): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: integer): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameRate(value: integer): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
+      inline def setFrameRate(value: integer): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrames(value: js.Array[JSONAnimationFrame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
+      inline def setFrames(value: js.Array[JSONAnimationFrame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFramesVarargs(value: JSONAnimationFrame*): Self = StObject.set(x, "frames", js.Array(value :_*))
+      inline def setFramesVarargs(value: JSONAnimationFrame*): Self = StObject.set(x, "frames", js.Array(value :_*))
       
-      @scala.inline
-      def setHideOnComplete(value: Boolean): Self = StObject.set(x, "hideOnComplete", value.asInstanceOf[js.Any])
+      inline def setHideOnComplete(value: Boolean): Self = StObject.set(x, "hideOnComplete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepeat(value: integer): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+      inline def setRepeat(value: integer): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepeatDelay(value: integer): Self = StObject.set(x, "repeatDelay", value.asInstanceOf[js.Any])
+      inline def setRepeatDelay(value: integer): Self = StObject.set(x, "repeatDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowOnStart(value: Boolean): Self = StObject.set(x, "showOnStart", value.asInstanceOf[js.Any])
+      inline def setShowOnStart(value: Boolean): Self = StObject.set(x, "showOnStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipMissedFrames(value: Boolean): Self = StObject.set(x, "skipMissedFrames", value.asInstanceOf[js.Any])
+      inline def setSkipMissedFrames(value: Boolean): Self = StObject.set(x, "skipMissedFrames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYoyo(value: Boolean): Self = StObject.set(x, "yoyo", value.asInstanceOf[js.Any])
+      inline def setYoyo(value: Boolean): Self = StObject.set(x, "yoyo", value.asInstanceOf[js.Any])
     }
   }
   
@@ -531,23 +449,18 @@ object Animations {
   }
   object JSONAnimationFrame {
     
-    @scala.inline
-    def apply(duration: Double, frame: String | integer, key: String): JSONAnimationFrame = {
+    inline def apply(duration: Double, frame: String | integer, key: String): JSONAnimationFrame = {
       val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], frame = frame.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[JSONAnimationFrame]
     }
     
-    @scala.inline
-    implicit class JSONAnimationFrameMutableBuilder[Self <: JSONAnimationFrame] (val x: Self) extends AnyVal {
+    extension [Self <: JSONAnimationFrame](x: Self) {
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrame(value: String | integer): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
+      inline def setFrame(value: String | integer): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }
   }
   
@@ -565,23 +478,18 @@ object Animations {
   }
   object JSONAnimations {
     
-    @scala.inline
-    def apply(anims: js.Array[JSONAnimation], globalTimeScale: Double): JSONAnimations = {
+    inline def apply(anims: js.Array[JSONAnimation], globalTimeScale: Double): JSONAnimations = {
       val __obj = js.Dynamic.literal(anims = anims.asInstanceOf[js.Any], globalTimeScale = globalTimeScale.asInstanceOf[js.Any])
       __obj.asInstanceOf[JSONAnimations]
     }
     
-    @scala.inline
-    implicit class JSONAnimationsMutableBuilder[Self <: JSONAnimations] (val x: Self) extends AnyVal {
+    extension [Self <: JSONAnimations](x: Self) {
       
-      @scala.inline
-      def setAnims(value: js.Array[JSONAnimation]): Self = StObject.set(x, "anims", value.asInstanceOf[js.Any])
+      inline def setAnims(value: js.Array[JSONAnimation]): Self = StObject.set(x, "anims", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimsVarargs(value: JSONAnimation*): Self = StObject.set(x, "anims", js.Array(value :_*))
+      inline def setAnimsVarargs(value: JSONAnimation*): Self = StObject.set(x, "anims", js.Array(value :_*))
       
-      @scala.inline
-      def setGlobalTimeScale(value: Double): Self = StObject.set(x, "globalTimeScale", value.asInstanceOf[js.Any])
+      inline def setGlobalTimeScale(value: Double): Self = StObject.set(x, "globalTimeScale", value.asInstanceOf[js.Any])
     }
   }
 }

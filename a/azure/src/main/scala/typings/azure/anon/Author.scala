@@ -22,8 +22,7 @@ trait Author extends StObject {
 }
 object Author {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     author: Name,
     category: js.Any,
     content: js.Any,
@@ -36,28 +35,20 @@ object Author {
     __obj.asInstanceOf[Author]
   }
   
-  @scala.inline
-  implicit class AuthorMutableBuilder[Self <: Author] (val x: Self) extends AnyVal {
+  extension [Self <: Author](x: Self) {
     
-    @scala.inline
-    def setAuthor(value: Name): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: Name): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategory(value: js.Any): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: js.Any): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLink(value: js.Any): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: js.Any): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: js.Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: js.Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+    inline def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
   }
 }

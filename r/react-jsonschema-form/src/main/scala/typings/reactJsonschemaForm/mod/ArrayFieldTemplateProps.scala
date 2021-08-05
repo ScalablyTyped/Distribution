@@ -46,8 +46,7 @@ trait ArrayFieldTemplateProps[T] extends StObject {
 }
 object ArrayFieldTemplateProps {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     DescriptionField: StatelessComponent[Description],
     TitleField: StatelessComponent[Id],
     canAdd: Boolean,
@@ -69,58 +68,40 @@ object ArrayFieldTemplateProps {
     __obj.asInstanceOf[ArrayFieldTemplateProps[T]]
   }
   
-  @scala.inline
-  implicit class ArrayFieldTemplatePropsMutableBuilder[Self <: ArrayFieldTemplateProps[?], T] (val x: Self & ArrayFieldTemplateProps[T]) extends AnyVal {
+  extension [Self <: ArrayFieldTemplateProps[?], T](x: Self & ArrayFieldTemplateProps[T]) {
     
-    @scala.inline
-    def setCanAdd(value: Boolean): Self = StObject.set(x, "canAdd", value.asInstanceOf[js.Any])
+    inline def setCanAdd(value: Boolean): Self = StObject.set(x, "canAdd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionField(value: StatelessComponent[Description]): Self = StObject.set(x, "DescriptionField", value.asInstanceOf[js.Any])
+    inline def setDescriptionField(value: StatelessComponent[Description]): Self = StObject.set(x, "DescriptionField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormContext(value: js.Any): Self = StObject.set(x, "formContext", value.asInstanceOf[js.Any])
+    inline def setFormContext(value: js.Any): Self = StObject.set(x, "formContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormData(value: T): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
+    inline def setFormData(value: T): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdSchema(value: IdSchema[js.Any]): Self = StObject.set(x, "idSchema", value.asInstanceOf[js.Any])
+    inline def setIdSchema(value: IdSchema[js.Any]): Self = StObject.set(x, "idSchema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: js.Array[Children]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[Children]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: Children*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Children*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setOnAddClick(value: js.Any => js.Function1[/* event */ js.Any, Unit]): Self = StObject.set(x, "onAddClick", js.Any.fromFunction1(value))
+    inline def setOnAddClick(value: js.Any => js.Function1[/* event */ js.Any, Unit]): Self = StObject.set(x, "onAddClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
+    inline def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistry(value: Definitions): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
+    inline def setRegistry(value: Definitions): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchema(value: JSONSchema6): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: JSONSchema6): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleField(value: StatelessComponent[Id]): Self = StObject.set(x, "TitleField", value.asInstanceOf[js.Any])
+    inline def setTitleField(value: StatelessComponent[Id]): Self = StObject.set(x, "TitleField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUiSchema(value: UiSchema): Self = StObject.set(x, "uiSchema", value.asInstanceOf[js.Any])
+    inline def setUiSchema(value: UiSchema): Self = StObject.set(x, "uiSchema", value.asInstanceOf[js.Any])
   }
 }

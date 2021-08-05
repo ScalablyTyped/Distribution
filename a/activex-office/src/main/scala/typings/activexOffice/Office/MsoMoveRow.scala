@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoMoveRow extends StObject
 object MsoMoveRow {
   
-  @scala.inline
-  def msoMoveRowFirst: `-4` = -4.asInstanceOf[`-4`]
+  inline def msoMoveRowFirst: `-4` = -4.asInstanceOf[`-4`]
   
-  @scala.inline
-  def msoMoveRowNbr: `-1` = -1.asInstanceOf[`-1`]
+  inline def msoMoveRowNbr: `-1` = -1.asInstanceOf[`-1`]
   
-  @scala.inline
-  def msoMoveRowNext: `-2` = -2.asInstanceOf[`-2`]
+  inline def msoMoveRowNext: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def msoMoveRowPrev: `-3` = -3.asInstanceOf[`-3`]
+  inline def msoMoveRowPrev: `-3` = -3.asInstanceOf[`-3`]
 }

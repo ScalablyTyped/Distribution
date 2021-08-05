@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hsl-to-hex"
-version := "1.0-dt-20201117Z-d3b3a1"
+version := "1.0-dt-20201117Z-01b3d0"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

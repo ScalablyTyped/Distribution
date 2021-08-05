@@ -32,8 +32,7 @@ object urlbar {
   
   /* urlbar functions */
   /** Closes the urlbar view in the current window. */
-  @scala.inline
-  def closeView(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("closeView")().asInstanceOf[js.Promise[js.Any]]
+  inline def closeView(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("closeView")().asInstanceOf[js.Promise[js.Any]]
   
   /* urlbar properties */
   /** Enables or disables the engagement telemetry. */
@@ -45,10 +44,8 @@ object urlbar {
     * Focuses the urlbar in the current window.
     * @param [select] If true, the text in the urlbar will also be selected.
     */
-  @scala.inline
-  def focus(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("focus")().asInstanceOf[js.Promise[js.Any]]
-  @scala.inline
-  def focus(select: Boolean): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("focus")(select.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def focus(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("focus")().asInstanceOf[js.Promise[js.Any]]
+  inline def focus(select: Boolean): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("focus")(select.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
   /* urlbar events */
   /**
@@ -99,8 +96,6 @@ object urlbar {
     * @param searchString The search string.
     * @param [options] Options for the search.
     */
-  @scala.inline
-  def search(searchString: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("search")(searchString.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
-  @scala.inline
-  def search(searchString: String, options: SearchOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(searchString.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def search(searchString: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("search")(searchString.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def search(searchString: String, options: SearchOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(searchString.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
 }

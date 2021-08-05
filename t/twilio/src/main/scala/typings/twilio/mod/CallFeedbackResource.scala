@@ -25,19 +25,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object CallFeedbackResource {
   
-  @scala.inline
-  def apply(create: RestMethod, delete: RestMethod, get: RestMethod, post: RestMethod): CallFeedbackResource = {
+  inline def apply(create: RestMethod, delete: RestMethod, get: RestMethod, post: RestMethod): CallFeedbackResource = {
     val __obj = js.Dynamic.literal(create = create.asInstanceOf[js.Any], delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], post = post.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallFeedbackResource]
   }
   
-  @scala.inline
-  implicit class CallFeedbackResourceMutableBuilder[Self <: CallFeedbackResource] (val x: Self) extends AnyVal {
+  extension [Self <: CallFeedbackResource](x: Self) {
     
-    @scala.inline
-    def setCreate(value: RestMethod): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+    inline def setCreate(value: RestMethod): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: RestMethod): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: RestMethod): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
   }
 }

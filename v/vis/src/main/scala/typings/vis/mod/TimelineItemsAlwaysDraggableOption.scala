@@ -12,25 +12,19 @@ trait TimelineItemsAlwaysDraggableOption extends StObject {
 }
 object TimelineItemsAlwaysDraggableOption {
   
-  @scala.inline
-  def apply(): TimelineItemsAlwaysDraggableOption = {
+  inline def apply(): TimelineItemsAlwaysDraggableOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimelineItemsAlwaysDraggableOption]
   }
   
-  @scala.inline
-  implicit class TimelineItemsAlwaysDraggableOptionMutableBuilder[Self <: TimelineItemsAlwaysDraggableOption] (val x: Self) extends AnyVal {
+  extension [Self <: TimelineItemsAlwaysDraggableOption](x: Self) {
     
-    @scala.inline
-    def setItem(value: Boolean): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: Boolean): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
-    @scala.inline
-    def setRange(value: Boolean): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Boolean): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
   }
 }

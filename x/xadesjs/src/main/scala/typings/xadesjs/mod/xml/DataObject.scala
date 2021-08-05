@@ -13,6 +13,5 @@ class DataObject ()
   extends typings.xadesjs.xmlMod.DataObject
 object DataObject {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.DataObject] = ^.asInstanceOf[js.Dynamic].selectDynamic("DataObject").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.DataObject]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.DataObject] = ^.asInstanceOf[js.Dynamic].selectDynamic("DataObject").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.DataObject]]
 }

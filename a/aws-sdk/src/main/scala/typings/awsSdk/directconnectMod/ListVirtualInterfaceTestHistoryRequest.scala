@@ -38,52 +38,37 @@ trait ListVirtualInterfaceTestHistoryRequest extends StObject {
 }
 object ListVirtualInterfaceTestHistoryRequest {
   
-  @scala.inline
-  def apply(): ListVirtualInterfaceTestHistoryRequest = {
+  inline def apply(): ListVirtualInterfaceTestHistoryRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListVirtualInterfaceTestHistoryRequest]
   }
   
-  @scala.inline
-  implicit class ListVirtualInterfaceTestHistoryRequestMutableBuilder[Self <: ListVirtualInterfaceTestHistoryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListVirtualInterfaceTestHistoryRequest](x: Self) {
     
-    @scala.inline
-    def setBgpPeers(value: BGPPeerIdList): Self = StObject.set(x, "bgpPeers", value.asInstanceOf[js.Any])
+    inline def setBgpPeers(value: BGPPeerIdList): Self = StObject.set(x, "bgpPeers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBgpPeersUndefined: Self = StObject.set(x, "bgpPeers", js.undefined)
+    inline def setBgpPeersUndefined: Self = StObject.set(x, "bgpPeers", js.undefined)
     
-    @scala.inline
-    def setBgpPeersVarargs(value: BGPPeerId*): Self = StObject.set(x, "bgpPeers", js.Array(value :_*))
+    inline def setBgpPeersVarargs(value: BGPPeerId*): Self = StObject.set(x, "bgpPeers", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxResults(value: MaxResultSetSize): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResultSetSize): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setStatus(value: FailureTestHistoryStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: FailureTestHistoryStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setTestId(value: TestId): Self = StObject.set(x, "testId", value.asInstanceOf[js.Any])
+    inline def setTestId(value: TestId): Self = StObject.set(x, "testId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestIdUndefined: Self = StObject.set(x, "testId", js.undefined)
+    inline def setTestIdUndefined: Self = StObject.set(x, "testId", js.undefined)
     
-    @scala.inline
-    def setVirtualInterfaceId(value: VirtualInterfaceId): Self = StObject.set(x, "virtualInterfaceId", value.asInstanceOf[js.Any])
+    inline def setVirtualInterfaceId(value: VirtualInterfaceId): Self = StObject.set(x, "virtualInterfaceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualInterfaceIdUndefined: Self = StObject.set(x, "virtualInterfaceId", js.undefined)
+    inline def setVirtualInterfaceIdUndefined: Self = StObject.set(x, "virtualInterfaceId", js.undefined)
   }
 }

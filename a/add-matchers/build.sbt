@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "add-matchers"
-version := "0.6.2-da957d"
+version := "0.6.2-5537eb"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -36,37 +36,27 @@ trait SchemaDayPartTargeting extends StObject {
 }
 object SchemaDayPartTargeting {
   
-  @scala.inline
-  def apply(): SchemaDayPartTargeting = {
+  inline def apply(): SchemaDayPartTargeting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDayPartTargeting]
   }
   
-  @scala.inline
-  implicit class SchemaDayPartTargetingMutableBuilder[Self <: SchemaDayPartTargeting] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDayPartTargeting](x: Self) {
     
-    @scala.inline
-    def setDaysOfWeek(value: js.Array[String]): Self = StObject.set(x, "daysOfWeek", value.asInstanceOf[js.Any])
+    inline def setDaysOfWeek(value: js.Array[String]): Self = StObject.set(x, "daysOfWeek", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDaysOfWeekUndefined: Self = StObject.set(x, "daysOfWeek", js.undefined)
+    inline def setDaysOfWeekUndefined: Self = StObject.set(x, "daysOfWeek", js.undefined)
     
-    @scala.inline
-    def setDaysOfWeekVarargs(value: String*): Self = StObject.set(x, "daysOfWeek", js.Array(value :_*))
+    inline def setDaysOfWeekVarargs(value: String*): Self = StObject.set(x, "daysOfWeek", js.Array(value :_*))
     
-    @scala.inline
-    def setHoursOfDay(value: js.Array[Double]): Self = StObject.set(x, "hoursOfDay", value.asInstanceOf[js.Any])
+    inline def setHoursOfDay(value: js.Array[Double]): Self = StObject.set(x, "hoursOfDay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoursOfDayUndefined: Self = StObject.set(x, "hoursOfDay", js.undefined)
+    inline def setHoursOfDayUndefined: Self = StObject.set(x, "hoursOfDay", js.undefined)
     
-    @scala.inline
-    def setHoursOfDayVarargs(value: Double*): Self = StObject.set(x, "hoursOfDay", js.Array(value :_*))
+    inline def setHoursOfDayVarargs(value: Double*): Self = StObject.set(x, "hoursOfDay", js.Array(value :_*))
     
-    @scala.inline
-    def setUserLocalTime(value: Boolean): Self = StObject.set(x, "userLocalTime", value.asInstanceOf[js.Any])
+    inline def setUserLocalTime(value: Boolean): Self = StObject.set(x, "userLocalTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserLocalTimeUndefined: Self = StObject.set(x, "userLocalTime", js.undefined)
+    inline def setUserLocalTimeUndefined: Self = StObject.set(x, "userLocalTime", js.undefined)
   }
 }

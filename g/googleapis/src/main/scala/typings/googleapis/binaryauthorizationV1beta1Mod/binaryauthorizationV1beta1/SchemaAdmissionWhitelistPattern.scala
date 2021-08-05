@@ -19,19 +19,15 @@ trait SchemaAdmissionWhitelistPattern extends StObject {
 }
 object SchemaAdmissionWhitelistPattern {
   
-  @scala.inline
-  def apply(): SchemaAdmissionWhitelistPattern = {
+  inline def apply(): SchemaAdmissionWhitelistPattern = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAdmissionWhitelistPattern]
   }
   
-  @scala.inline
-  implicit class SchemaAdmissionWhitelistPatternMutableBuilder[Self <: SchemaAdmissionWhitelistPattern] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAdmissionWhitelistPattern](x: Self) {
     
-    @scala.inline
-    def setNamePattern(value: String): Self = StObject.set(x, "namePattern", value.asInstanceOf[js.Any])
+    inline def setNamePattern(value: String): Self = StObject.set(x, "namePattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamePatternUndefined: Self = StObject.set(x, "namePattern", js.undefined)
+    inline def setNamePatternUndefined: Self = StObject.set(x, "namePattern", js.undefined)
   }
 }

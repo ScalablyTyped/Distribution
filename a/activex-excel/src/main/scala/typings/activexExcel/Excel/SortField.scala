@@ -16,7 +16,7 @@ trait SortField extends StObject {
   
   def Delete(): Unit
   
-  @JSName("Excel.SortField_typekey")
+  /* private */ @JSName("Excel.SortField_typekey")
   var ExcelDotSortField_typekey: SortField
   
   def Key(Address: String): Range
@@ -41,8 +41,7 @@ trait SortField extends StObject {
 }
 object SortField {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: XlCreator,
     CustomOrder: js.Any,
@@ -63,49 +62,34 @@ object SortField {
     __obj.asInstanceOf[SortField]
   }
   
-  @scala.inline
-  implicit class SortFieldMutableBuilder[Self <: SortField] (val x: Self) extends AnyVal {
+  extension [Self <: SortField](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomOrder(value: js.Any): Self = StObject.set(x, "CustomOrder", value.asInstanceOf[js.Any])
+    inline def setCustomOrder(value: js.Any): Self = StObject.set(x, "CustomOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataOption(value: XlSortDataOption): Self = StObject.set(x, "DataOption", value.asInstanceOf[js.Any])
+    inline def setDataOption(value: XlSortDataOption): Self = StObject.set(x, "DataOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExcelDotSortField_typekey(value: SortField): Self = StObject.set(x, "Excel.SortField_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotSortField_typekey(value: SortField): Self = StObject.set(x, "Excel.SortField_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: Range): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Range): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifyKey(value: Range => Unit): Self = StObject.set(x, "ModifyKey", js.Any.fromFunction1(value))
+    inline def setModifyKey(value: Range => Unit): Self = StObject.set(x, "ModifyKey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOrder(value: XlSortOrder): Self = StObject.set(x, "Order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: XlSortOrder): Self = StObject.set(x, "Order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriority(value: Double): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Double): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetIcon(value: Icon => Unit): Self = StObject.set(x, "SetIcon", js.Any.fromFunction1(value))
+    inline def setSetIcon(value: Icon => Unit): Self = StObject.set(x, "SetIcon", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSortOn(value: XlSortOn): Self = StObject.set(x, "SortOn", value.asInstanceOf[js.Any])
+    inline def setSortOn(value: XlSortOn): Self = StObject.set(x, "SortOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortOnValue(value: js.Any): Self = StObject.set(x, "SortOnValue", value.asInstanceOf[js.Any])
+    inline def setSortOnValue(value: js.Any): Self = StObject.set(x, "SortOnValue", value.asInstanceOf[js.Any])
   }
 }

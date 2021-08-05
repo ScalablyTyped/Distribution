@@ -16,8 +16,7 @@ trait ZoomAnimEvent
 }
 object ZoomAnimEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     center: LatLng_,
     layer: js.Any,
     noUpdate: Boolean,
@@ -32,16 +31,12 @@ object ZoomAnimEvent {
     __obj.asInstanceOf[ZoomAnimEvent]
   }
   
-  @scala.inline
-  implicit class ZoomAnimEventMutableBuilder[Self <: ZoomAnimEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ZoomAnimEvent](x: Self) {
     
-    @scala.inline
-    def setCenter(value: LatLng_): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: LatLng_): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoUpdate(value: Boolean): Self = StObject.set(x, "noUpdate", value.asInstanceOf[js.Any])
+    inline def setNoUpdate(value: Boolean): Self = StObject.set(x, "noUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
   }
 }

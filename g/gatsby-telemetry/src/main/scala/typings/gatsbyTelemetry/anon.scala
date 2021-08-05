@@ -22,53 +22,38 @@ object anon {
   }
   object BundleStats {
     
-    @scala.inline
-    def apply(): BundleStats = {
+    inline def apply(): BundleStats = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BundleStats]
     }
     
-    @scala.inline
-    implicit class BundleStatsMutableBuilder[Self <: BundleStats] (val x: Self) extends AnyVal {
+    extension [Self <: BundleStats](x: Self) {
       
-      @scala.inline
-      def setBundleStats(value: js.Any): Self = StObject.set(x, "bundleStats", value.asInstanceOf[js.Any])
+      inline def setBundleStats(value: js.Any): Self = StObject.set(x, "bundleStats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBundleStatsUndefined: Self = StObject.set(x, "bundleStats", js.undefined)
+      inline def setBundleStatsUndefined: Self = StObject.set(x, "bundleStats", js.undefined)
       
-      @scala.inline
-      def setClientsCount(value: Double): Self = StObject.set(x, "clientsCount", value.asInstanceOf[js.Any])
+      inline def setClientsCount(value: Double): Self = StObject.set(x, "clientsCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientsCountUndefined: Self = StObject.set(x, "clientsCount", js.undefined)
+      inline def setClientsCountUndefined: Self = StObject.set(x, "clientsCount", js.undefined)
       
-      @scala.inline
-      def setPageDataStats(value: js.Any): Self = StObject.set(x, "pageDataStats", value.asInstanceOf[js.Any])
+      inline def setPageDataStats(value: js.Any): Self = StObject.set(x, "pageDataStats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageDataStatsUndefined: Self = StObject.set(x, "pageDataStats", js.undefined)
+      inline def setPageDataStatsUndefined: Self = StObject.set(x, "pageDataStats", js.undefined)
       
-      @scala.inline
-      def setPagesCount(value: Double): Self = StObject.set(x, "pagesCount", value.asInstanceOf[js.Any])
+      inline def setPagesCount(value: Double): Self = StObject.set(x, "pagesCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPagesCountUndefined: Self = StObject.set(x, "pagesCount", js.undefined)
+      inline def setPagesCountUndefined: Self = StObject.set(x, "pagesCount", js.undefined)
       
-      @scala.inline
-      def setPaths(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+      inline def setPaths(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
+      inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
       
-      @scala.inline
-      def setPathsVarargs(value: js.UndefOr[String]*): Self = StObject.set(x, "paths", js.Array(value :_*))
+      inline def setPathsVarargs(value: js.UndefOr[String]*): Self = StObject.set(x, "paths", js.Array(value :_*))
       
-      @scala.inline
-      def setQueryStats(value: js.Any): Self = StObject.set(x, "queryStats", value.asInstanceOf[js.Any])
+      inline def setQueryStats(value: js.Any): Self = StObject.set(x, "queryStats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryStatsUndefined: Self = StObject.set(x, "queryStats", js.undefined)
+      inline def setQueryStatsUndefined: Self = StObject.set(x, "queryStats", js.undefined)
     }
   }
   
@@ -80,32 +65,24 @@ object anon {
   }
   object Dependencies {
     
-    @scala.inline
-    def apply(): Dependencies = {
+    inline def apply(): Dependencies = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Dependencies]
     }
     
-    @scala.inline
-    implicit class DependenciesMutableBuilder[Self <: Dependencies] (val x: Self) extends AnyVal {
+    extension [Self <: Dependencies](x: Self) {
       
-      @scala.inline
-      def setDependencies(value: js.Array[String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+      inline def setDependencies(value: js.Array[String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
+      inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
       
-      @scala.inline
-      def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
+      inline def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
       
-      @scala.inline
-      def setDevDependencies(value: js.Array[String]): Self = StObject.set(x, "devDependencies", value.asInstanceOf[js.Any])
+      inline def setDevDependencies(value: js.Array[String]): Self = StObject.set(x, "devDependencies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevDependenciesUndefined: Self = StObject.set(x, "devDependencies", js.undefined)
+      inline def setDevDependenciesUndefined: Self = StObject.set(x, "devDependencies", js.undefined)
       
-      @scala.inline
-      def setDevDependenciesVarargs(value: String*): Self = StObject.set(x, "devDependencies", js.Array(value :_*))
+      inline def setDevDependenciesVarargs(value: String*): Self = StObject.set(x, "devDependencies", js.Array(value :_*))
     }
   }
   
@@ -115,20 +92,16 @@ object anon {
   }
   object Stack {
     
-    @scala.inline
-    def apply(): Stack = {
+    inline def apply(): Stack = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Stack]
     }
     
-    @scala.inline
-    implicit class StackMutableBuilder[Self <: Stack] (val x: Self) extends AnyVal {
+    extension [Self <: Stack](x: Self) {
       
-      @scala.inline
-      def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+      inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     }
   }
 }

@@ -21,8 +21,7 @@ trait ICursorStateComputerData extends StObject {
 }
 object ICursorStateComputerData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getInverseEditOperations: () => js.Array[IValidEditOperation],
     getTrackedSelection: String => Selection
   ): ICursorStateComputerData = {
@@ -30,13 +29,10 @@ object ICursorStateComputerData {
     __obj.asInstanceOf[ICursorStateComputerData]
   }
   
-  @scala.inline
-  implicit class ICursorStateComputerDataMutableBuilder[Self <: ICursorStateComputerData] (val x: Self) extends AnyVal {
+  extension [Self <: ICursorStateComputerData](x: Self) {
     
-    @scala.inline
-    def setGetInverseEditOperations(value: () => js.Array[IValidEditOperation]): Self = StObject.set(x, "getInverseEditOperations", js.Any.fromFunction0(value))
+    inline def setGetInverseEditOperations(value: () => js.Array[IValidEditOperation]): Self = StObject.set(x, "getInverseEditOperations", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTrackedSelection(value: String => Selection): Self = StObject.set(x, "getTrackedSelection", js.Any.fromFunction1(value))
+    inline def setGetTrackedSelection(value: String => Selection): Self = StObject.set(x, "getTrackedSelection", js.Any.fromFunction1(value))
   }
 }

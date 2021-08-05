@@ -35,34 +35,25 @@ trait PlusNativeUIActionSheetStyles extends StObject {
 }
 object PlusNativeUIActionSheetStyles {
   
-  @scala.inline
-  def apply(): PlusNativeUIActionSheetStyles = {
+  inline def apply(): PlusNativeUIActionSheetStyles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusNativeUIActionSheetStyles]
   }
   
-  @scala.inline
-  implicit class PlusNativeUIActionSheetStylesMutableBuilder[Self <: PlusNativeUIActionSheetStyles] (val x: Self) extends AnyVal {
+  extension [Self <: PlusNativeUIActionSheetStyles](x: Self) {
     
-    @scala.inline
-    def setButtons(value: js.Array[PlusNativeUI]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: js.Array[PlusNativeUI]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+    inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    @scala.inline
-    def setButtonsVarargs(value: PlusNativeUI*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: PlusNativeUI*): Self = StObject.set(x, "buttons", js.Array(value :_*))
     
-    @scala.inline
-    def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

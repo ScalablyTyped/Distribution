@@ -18,25 +18,19 @@ trait Metrics extends StObject {
 }
 object Metrics {
   
-  @scala.inline
-  def apply(): Metrics = {
+  inline def apply(): Metrics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Metrics]
   }
   
-  @scala.inline
-  implicit class MetricsMutableBuilder[Self <: Metrics] (val x: Self) extends AnyVal {
+  extension [Self <: Metrics](x: Self) {
     
-    @scala.inline
-    def setFindingsCount(value: FindingsCount): Self = StObject.set(x, "FindingsCount", value.asInstanceOf[js.Any])
+    inline def setFindingsCount(value: FindingsCount): Self = StObject.set(x, "FindingsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingsCountUndefined: Self = StObject.set(x, "FindingsCount", js.undefined)
+    inline def setFindingsCountUndefined: Self = StObject.set(x, "FindingsCount", js.undefined)
     
-    @scala.inline
-    def setMeteredLinesOfCodeCount(value: MeteredLinesOfCodeCount): Self = StObject.set(x, "MeteredLinesOfCodeCount", value.asInstanceOf[js.Any])
+    inline def setMeteredLinesOfCodeCount(value: MeteredLinesOfCodeCount): Self = StObject.set(x, "MeteredLinesOfCodeCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeteredLinesOfCodeCountUndefined: Self = StObject.set(x, "MeteredLinesOfCodeCount", js.undefined)
+    inline def setMeteredLinesOfCodeCountUndefined: Self = StObject.set(x, "MeteredLinesOfCodeCount", js.undefined)
   }
 }

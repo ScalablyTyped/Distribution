@@ -11,25 +11,21 @@ object angularUiBootstrapStrings {
   sealed trait day
     extends StObject
        with DatepickerMode
-  @scala.inline
-  def day: day = "day".asInstanceOf[day]
+  inline def day: day = "day".asInstanceOf[day]
   
   @js.native
   sealed trait month
     extends StObject
        with DatepickerMode
-  @scala.inline
-  def month: month = "month".asInstanceOf[month]
+  inline def month: month = "month".asInstanceOf[month]
   
   @js.native
   sealed trait uiDotbootstrap extends StObject
-  @scala.inline
-  def uiDotbootstrap: uiDotbootstrap = "ui.bootstrap".asInstanceOf[uiDotbootstrap]
+  inline def uiDotbootstrap: uiDotbootstrap = "ui.bootstrap".asInstanceOf[uiDotbootstrap]
   
   @js.native
   sealed trait year
     extends StObject
        with DatepickerMode
-  @scala.inline
-  def year: year = "year".asInstanceOf[year]
+  inline def year: year = "year".asInstanceOf[year]
 }

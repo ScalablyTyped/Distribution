@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GameRequestActionType extends StObject
 object GameRequestActionType {
   
-  @scala.inline
-  def askfor: typings.reactNativeFbsdk.reactNativeFbsdkStrings.askfor = "askfor".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.askfor]
+  inline def askfor: typings.reactNativeFbsdk.reactNativeFbsdkStrings.askfor = "askfor".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.askfor]
   
-  @scala.inline
-  def send: typings.reactNativeFbsdk.reactNativeFbsdkStrings.send = "send".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.send]
+  inline def send: typings.reactNativeFbsdk.reactNativeFbsdkStrings.send = "send".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.send]
   
-  @scala.inline
-  def turn: typings.reactNativeFbsdk.reactNativeFbsdkStrings.turn = "turn".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.turn]
+  inline def turn: typings.reactNativeFbsdk.reactNativeFbsdkStrings.turn = "turn".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.turn]
 }

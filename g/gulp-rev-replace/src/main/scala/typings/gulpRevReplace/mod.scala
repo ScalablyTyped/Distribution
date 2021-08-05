@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReadWriteStream]
-  @scala.inline
-  def apply(options: Options): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def apply(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReadWriteStream]
+  inline def apply(options: Options): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   
   @JSImport("gulp-rev-replace", JSImport.Namespace)
   @js.native
@@ -32,53 +30,38 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCanonicalUris(value: Boolean): Self = StObject.set(x, "canonicalUris", value.asInstanceOf[js.Any])
+      inline def setCanonicalUris(value: Boolean): Self = StObject.set(x, "canonicalUris", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanonicalUrisUndefined: Self = StObject.set(x, "canonicalUris", js.undefined)
+      inline def setCanonicalUrisUndefined: Self = StObject.set(x, "canonicalUris", js.undefined)
       
-      @scala.inline
-      def setManifest(value: ReadWriteStream): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
+      inline def setManifest(value: ReadWriteStream): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManifestUndefined: Self = StObject.set(x, "manifest", js.undefined)
+      inline def setManifestUndefined: Self = StObject.set(x, "manifest", js.undefined)
       
-      @scala.inline
-      def setModifyReved(value: js.Function): Self = StObject.set(x, "modifyReved", value.asInstanceOf[js.Any])
+      inline def setModifyReved(value: js.Function): Self = StObject.set(x, "modifyReved", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModifyRevedUndefined: Self = StObject.set(x, "modifyReved", js.undefined)
+      inline def setModifyRevedUndefined: Self = StObject.set(x, "modifyReved", js.undefined)
       
-      @scala.inline
-      def setModifyUnreved(value: js.Function): Self = StObject.set(x, "modifyUnreved", value.asInstanceOf[js.Any])
+      inline def setModifyUnreved(value: js.Function): Self = StObject.set(x, "modifyUnreved", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModifyUnrevedUndefined: Self = StObject.set(x, "modifyUnreved", js.undefined)
+      inline def setModifyUnrevedUndefined: Self = StObject.set(x, "modifyUnreved", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setReplaceInExtensions(value: js.Array[String]): Self = StObject.set(x, "replaceInExtensions", value.asInstanceOf[js.Any])
+      inline def setReplaceInExtensions(value: js.Array[String]): Self = StObject.set(x, "replaceInExtensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplaceInExtensionsUndefined: Self = StObject.set(x, "replaceInExtensions", js.undefined)
+      inline def setReplaceInExtensionsUndefined: Self = StObject.set(x, "replaceInExtensions", js.undefined)
       
-      @scala.inline
-      def setReplaceInExtensionsVarargs(value: String*): Self = StObject.set(x, "replaceInExtensions", js.Array(value :_*))
+      inline def setReplaceInExtensionsVarargs(value: String*): Self = StObject.set(x, "replaceInExtensions", js.Array(value :_*))
     }
   }
 }

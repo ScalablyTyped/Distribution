@@ -31,25 +31,25 @@ object scopeMod {
       * Applies fingerprint from the scope to the event if there's one,
       * uses message if there's one instead or get rid of empty fingerprint
       */
-    var _applyFingerprint: js.Any = js.native
+    /* private */ var _applyFingerprint: js.Any = js.native
     
     /** Array of breadcrumbs. */
-    var _breadcrumbs: js.Array[Breadcrumb] = js.native
+    /* protected */ var _breadcrumbs: js.Array[Breadcrumb] = js.native
     
     /** Contexts */
-    var _contexts: Contexts = js.native
+    /* protected */ var _contexts: Contexts = js.native
     
     /** Callback list that will be called after {@link applyToEvent}. */
-    var _eventProcessors: js.Array[EventProcessor] = js.native
+    /* protected */ var _eventProcessors: js.Array[EventProcessor] = js.native
     
     /** Extra */
-    var _extra: Extras = js.native
+    /* protected */ var _extra: Extras = js.native
     
     /** Fingerprint */
-    var _fingerprint: js.UndefOr[js.Array[String]] = js.native
+    /* protected */ var _fingerprint: js.UndefOr[js.Array[String]] = js.native
     
     /** Severity */
-    var _level: js.UndefOr[Severity] = js.native
+    /* protected */ var _level: js.UndefOr[Severity] = js.native
     
     /**
       * This will be called after {@link applyToEvent} is finished.
@@ -69,25 +69,25 @@ object scopeMod {
     /* protected */ def _notifyScopeListeners(): Unit = js.native
     
     /** Flag if notifiying is happening. */
-    var _notifyingListeners: Boolean = js.native
+    /* protected */ var _notifyingListeners: Boolean = js.native
     
     /** Callback for client to receive scope changes. */
-    var _scopeListeners: js.Array[js.Function1[/* scope */ this.type, Unit]] = js.native
+    /* protected */ var _scopeListeners: js.Array[js.Function1[/* scope */ this.type, Unit]] = js.native
     
     /** Session */
-    var _session: js.UndefOr[Session] = js.native
+    /* protected */ var _session: js.UndefOr[Session] = js.native
     
     /** Span */
-    var _span: js.UndefOr[Span] = js.native
+    /* protected */ var _span: js.UndefOr[Span] = js.native
     
     /** Tags */
-    var _tags: StringDictionary[String] = js.native
+    /* protected */ var _tags: StringDictionary[String] = js.native
     
     /** Transaction Name */
-    var _transactionName: js.UndefOr[String] = js.native
+    /* protected */ var _transactionName: js.UndefOr[String] = js.native
     
     /** User */
-    var _user: User = js.native
+    /* protected */ var _user: User = js.native
     
     /**
       * Add internal on change listener. Used for sub SDKs that need to store the scope.
@@ -122,10 +122,8 @@ object scopeMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def clone(scope: Scope): Scope = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(scope.asInstanceOf[js.Any]).asInstanceOf[Scope]
+    inline def clone(scope: Scope): Scope = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(scope.asInstanceOf[js.Any]).asInstanceOf[Scope]
   }
   
-  @scala.inline
-  def addGlobalEventProcessor(callback: EventProcessor): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addGlobalEventProcessor")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addGlobalEventProcessor(callback: EventProcessor): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addGlobalEventProcessor")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

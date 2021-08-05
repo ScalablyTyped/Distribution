@@ -10,6 +10,5 @@ object clientsClaimMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def clientsClaim(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clientsClaim")().asInstanceOf[Unit]
+  inline def clientsClaim(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clientsClaim")().asInstanceOf[Unit]
 }

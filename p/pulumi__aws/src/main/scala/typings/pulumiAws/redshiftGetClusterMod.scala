@@ -12,10 +12,8 @@ object redshiftGetClusterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getCluster(args: GetClusterArgs): js.Promise[GetClusterResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCluster")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetClusterResult]]
-  @scala.inline
-  def getCluster(args: GetClusterArgs, opts: InvokeOptions): js.Promise[GetClusterResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCluster")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetClusterResult]]
+  inline def getCluster(args: GetClusterArgs): js.Promise[GetClusterResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCluster")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetClusterResult]]
+  inline def getCluster(args: GetClusterArgs, opts: InvokeOptions): js.Promise[GetClusterResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCluster")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetClusterResult]]
   
   trait GetClusterArgs extends StObject {
     
@@ -31,23 +29,18 @@ object redshiftGetClusterMod {
   }
   object GetClusterArgs {
     
-    @scala.inline
-    def apply(clusterIdentifier: String): GetClusterArgs = {
+    inline def apply(clusterIdentifier: String): GetClusterArgs = {
       val __obj = js.Dynamic.literal(clusterIdentifier = clusterIdentifier.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetClusterArgs]
     }
     
-    @scala.inline
-    implicit class GetClusterArgsMutableBuilder[Self <: GetClusterArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetClusterArgs](x: Self) {
       
-      @scala.inline
-      def setClusterIdentifier(value: String): Self = StObject.set(x, "clusterIdentifier", value.asInstanceOf[js.Any])
+      inline def setClusterIdentifier(value: String): Self = StObject.set(x, "clusterIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -207,8 +200,7 @@ object redshiftGetClusterMod {
   }
   object GetClusterResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allowVersionUpgrade: Boolean,
       automatedSnapshotRetentionPeriod: Double,
       availabilityZone: String,
@@ -244,113 +236,77 @@ object redshiftGetClusterMod {
       __obj.asInstanceOf[GetClusterResult]
     }
     
-    @scala.inline
-    implicit class GetClusterResultMutableBuilder[Self <: GetClusterResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetClusterResult](x: Self) {
       
-      @scala.inline
-      def setAllowVersionUpgrade(value: Boolean): Self = StObject.set(x, "allowVersionUpgrade", value.asInstanceOf[js.Any])
+      inline def setAllowVersionUpgrade(value: Boolean): Self = StObject.set(x, "allowVersionUpgrade", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutomatedSnapshotRetentionPeriod(value: Double): Self = StObject.set(x, "automatedSnapshotRetentionPeriod", value.asInstanceOf[js.Any])
+      inline def setAutomatedSnapshotRetentionPeriod(value: Double): Self = StObject.set(x, "automatedSnapshotRetentionPeriod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
+      inline def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
+      inline def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterIdentifier(value: String): Self = StObject.set(x, "clusterIdentifier", value.asInstanceOf[js.Any])
+      inline def setClusterIdentifier(value: String): Self = StObject.set(x, "clusterIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterParameterGroupName(value: String): Self = StObject.set(x, "clusterParameterGroupName", value.asInstanceOf[js.Any])
+      inline def setClusterParameterGroupName(value: String): Self = StObject.set(x, "clusterParameterGroupName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterPublicKey(value: String): Self = StObject.set(x, "clusterPublicKey", value.asInstanceOf[js.Any])
+      inline def setClusterPublicKey(value: String): Self = StObject.set(x, "clusterPublicKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterRevisionNumber(value: String): Self = StObject.set(x, "clusterRevisionNumber", value.asInstanceOf[js.Any])
+      inline def setClusterRevisionNumber(value: String): Self = StObject.set(x, "clusterRevisionNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterSecurityGroups(value: js.Array[String]): Self = StObject.set(x, "clusterSecurityGroups", value.asInstanceOf[js.Any])
+      inline def setClusterSecurityGroups(value: js.Array[String]): Self = StObject.set(x, "clusterSecurityGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterSecurityGroupsVarargs(value: String*): Self = StObject.set(x, "clusterSecurityGroups", js.Array(value :_*))
+      inline def setClusterSecurityGroupsVarargs(value: String*): Self = StObject.set(x, "clusterSecurityGroups", js.Array(value :_*))
       
-      @scala.inline
-      def setClusterSubnetGroupName(value: String): Self = StObject.set(x, "clusterSubnetGroupName", value.asInstanceOf[js.Any])
+      inline def setClusterSubnetGroupName(value: String): Self = StObject.set(x, "clusterSubnetGroupName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterType(value: String): Self = StObject.set(x, "clusterType", value.asInstanceOf[js.Any])
+      inline def setClusterType(value: String): Self = StObject.set(x, "clusterType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterVersion(value: String): Self = StObject.set(x, "clusterVersion", value.asInstanceOf[js.Any])
+      inline def setClusterVersion(value: String): Self = StObject.set(x, "clusterVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatabaseName(value: String): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
+      inline def setDatabaseName(value: String): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElasticIp(value: String): Self = StObject.set(x, "elasticIp", value.asInstanceOf[js.Any])
+      inline def setElasticIp(value: String): Self = StObject.set(x, "elasticIp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableLogging(value: Boolean): Self = StObject.set(x, "enableLogging", value.asInstanceOf[js.Any])
+      inline def setEnableLogging(value: Boolean): Self = StObject.set(x, "enableLogging", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncrypted(value: Boolean): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
+      inline def setEncrypted(value: Boolean): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnhancedVpcRouting(value: Boolean): Self = StObject.set(x, "enhancedVpcRouting", value.asInstanceOf[js.Any])
+      inline def setEnhancedVpcRouting(value: Boolean): Self = StObject.set(x, "enhancedVpcRouting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIamRoles(value: js.Array[String]): Self = StObject.set(x, "iamRoles", value.asInstanceOf[js.Any])
+      inline def setIamRoles(value: js.Array[String]): Self = StObject.set(x, "iamRoles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIamRolesVarargs(value: String*): Self = StObject.set(x, "iamRoles", js.Array(value :_*))
+      inline def setIamRolesVarargs(value: String*): Self = StObject.set(x, "iamRoles", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyId(value: String): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
+      inline def setKmsKeyId(value: String): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMasterUsername(value: String): Self = StObject.set(x, "masterUsername", value.asInstanceOf[js.Any])
+      inline def setMasterUsername(value: String): Self = StObject.set(x, "masterUsername", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeType(value: String): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
+      inline def setNodeType(value: String): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberOfNodes(value: Double): Self = StObject.set(x, "numberOfNodes", value.asInstanceOf[js.Any])
+      inline def setNumberOfNodes(value: Double): Self = StObject.set(x, "numberOfNodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreferredMaintenanceWindow(value: String): Self = StObject.set(x, "preferredMaintenanceWindow", value.asInstanceOf[js.Any])
+      inline def setPreferredMaintenanceWindow(value: String): Self = StObject.set(x, "preferredMaintenanceWindow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPubliclyAccessible(value: Boolean): Self = StObject.set(x, "publiclyAccessible", value.asInstanceOf[js.Any])
+      inline def setPubliclyAccessible(value: Boolean): Self = StObject.set(x, "publiclyAccessible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3KeyPrefix(value: String): Self = StObject.set(x, "s3KeyPrefix", value.asInstanceOf[js.Any])
+      inline def setS3KeyPrefix(value: String): Self = StObject.set(x, "s3KeyPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVpcId(value: String): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: String): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcSecurityGroupIds(value: js.Array[String]): Self = StObject.set(x, "vpcSecurityGroupIds", value.asInstanceOf[js.Any])
+      inline def setVpcSecurityGroupIds(value: js.Array[String]): Self = StObject.set(x, "vpcSecurityGroupIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "vpcSecurityGroupIds", js.Array(value :_*))
+      inline def setVpcSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "vpcSecurityGroupIds", js.Array(value :_*))
     }
   }
 }

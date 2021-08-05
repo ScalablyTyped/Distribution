@@ -101,25 +101,18 @@ object mod {
     /* 2 */ val VALID_BUT_EMPTY: typings.nodeAppleReceiptVerify.mod.ERROR_CODES.VALID_BUT_EMPTY & Double = js.native
   }
   
-  @scala.inline
-  def EmptyError(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("EmptyError")().asInstanceOf[Unit]
+  inline def EmptyError(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("EmptyError")().asInstanceOf[Unit]
   
-  @scala.inline
-  def ServiceUnavailableError(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ServiceUnavailableError")().asInstanceOf[Unit]
+  inline def ServiceUnavailableError(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ServiceUnavailableError")().asInstanceOf[Unit]
   
-  @scala.inline
-  def config(options: ConfigOptions): ConfigOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(options.asInstanceOf[js.Any]).asInstanceOf[ConfigOptions]
+  inline def config(options: ConfigOptions): ConfigOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(options.asInstanceOf[js.Any]).asInstanceOf[ConfigOptions]
   
-  @scala.inline
-  def extract(options: js.Object): js.Promise[js.Array[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Object]]]
+  inline def extract(options: js.Object): js.Promise[js.Array[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Object]]]
   
-  @scala.inline
-  def resetConfig(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetConfig")().asInstanceOf[Unit]
+  inline def resetConfig(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetConfig")().asInstanceOf[Unit]
   
-  @scala.inline
-  def validate(options: ValidateOptions): js.Promise[js.Array[PurchasedProducts]] = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[PurchasedProducts]]]
-  @scala.inline
-  def validate(
+  inline def validate(options: ValidateOptions): js.Promise[js.Array[PurchasedProducts]] = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[PurchasedProducts]]]
+  inline def validate(
     options: ValidateOptions,
     callback: js.Function2[
       /* error */ ValidationError, 
@@ -146,56 +139,40 @@ object mod {
   }
   object ConfigOptions {
     
-    @scala.inline
-    def apply(secret: String): ConfigOptions = {
+    inline def apply(secret: String): ConfigOptions = {
       val __obj = js.Dynamic.literal(secret = secret.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    @scala.inline
-    implicit class ConfigOptionsMutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigOptions](x: Self) {
       
-      @scala.inline
-      def setEnvironment(value: js.Array[String]): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+      inline def setEnvironment(value: js.Array[String]): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+      inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
       
-      @scala.inline
-      def setEnvironmentVarargs(value: String*): Self = StObject.set(x, "environment", js.Array(value :_*))
+      inline def setEnvironmentVarargs(value: String*): Self = StObject.set(x, "environment", js.Array(value :_*))
       
-      @scala.inline
-      def setExcludeOldTransactions(value: Boolean): Self = StObject.set(x, "excludeOldTransactions", value.asInstanceOf[js.Any])
+      inline def setExcludeOldTransactions(value: Boolean): Self = StObject.set(x, "excludeOldTransactions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeOldTransactionsUndefined: Self = StObject.set(x, "excludeOldTransactions", js.undefined)
+      inline def setExcludeOldTransactionsUndefined: Self = StObject.set(x, "excludeOldTransactions", js.undefined)
       
-      @scala.inline
-      def setExtended(value: Boolean): Self = StObject.set(x, "extended", value.asInstanceOf[js.Any])
+      inline def setExtended(value: Boolean): Self = StObject.set(x, "extended", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtendedUndefined: Self = StObject.set(x, "extended", js.undefined)
+      inline def setExtendedUndefined: Self = StObject.set(x, "extended", js.undefined)
       
-      @scala.inline
-      def setIgnoreExpired(value: Boolean): Self = StObject.set(x, "ignoreExpired", value.asInstanceOf[js.Any])
+      inline def setIgnoreExpired(value: Boolean): Self = StObject.set(x, "ignoreExpired", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreExpiredError(value: Boolean): Self = StObject.set(x, "ignoreExpiredError", value.asInstanceOf[js.Any])
+      inline def setIgnoreExpiredError(value: Boolean): Self = StObject.set(x, "ignoreExpiredError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreExpiredErrorUndefined: Self = StObject.set(x, "ignoreExpiredError", js.undefined)
+      inline def setIgnoreExpiredErrorUndefined: Self = StObject.set(x, "ignoreExpiredError", js.undefined)
       
-      @scala.inline
-      def setIgnoreExpiredUndefined: Self = StObject.set(x, "ignoreExpired", js.undefined)
+      inline def setIgnoreExpiredUndefined: Self = StObject.set(x, "ignoreExpired", js.undefined)
       
-      @scala.inline
-      def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+      inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     }
   }
   
@@ -232,71 +209,50 @@ object mod {
   }
   object PurchasedProducts {
     
-    @scala.inline
-    def apply(bundleId: String, productId: String, purchaseDate: Double, quantity: Double, transactionId: String): PurchasedProducts = {
+    inline def apply(bundleId: String, productId: String, purchaseDate: Double, quantity: Double, transactionId: String): PurchasedProducts = {
       val __obj = js.Dynamic.literal(bundleId = bundleId.asInstanceOf[js.Any], productId = productId.asInstanceOf[js.Any], purchaseDate = purchaseDate.asInstanceOf[js.Any], quantity = quantity.asInstanceOf[js.Any], transactionId = transactionId.asInstanceOf[js.Any])
       __obj.asInstanceOf[PurchasedProducts]
     }
     
-    @scala.inline
-    implicit class PurchasedProductsMutableBuilder[Self <: PurchasedProducts] (val x: Self) extends AnyVal {
+    extension [Self <: PurchasedProducts](x: Self) {
       
-      @scala.inline
-      def setApplicationVersion(value: String): Self = StObject.set(x, "applicationVersion", value.asInstanceOf[js.Any])
+      inline def setApplicationVersion(value: String): Self = StObject.set(x, "applicationVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationVersionUndefined: Self = StObject.set(x, "applicationVersion", js.undefined)
+      inline def setApplicationVersionUndefined: Self = StObject.set(x, "applicationVersion", js.undefined)
       
-      @scala.inline
-      def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
+      inline def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+      inline def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+      inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
       
-      @scala.inline
-      def setExpirationDate(value: Double): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
+      inline def setExpirationDate(value: Double): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpirationDateUndefined: Self = StObject.set(x, "expirationDate", js.undefined)
+      inline def setExpirationDateUndefined: Self = StObject.set(x, "expirationDate", js.undefined)
       
-      @scala.inline
-      def setIsInIntroOfferPeriod(value: Boolean): Self = StObject.set(x, "isInIntroOfferPeriod", value.asInstanceOf[js.Any])
+      inline def setIsInIntroOfferPeriod(value: Boolean): Self = StObject.set(x, "isInIntroOfferPeriod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsInIntroOfferPeriodUndefined: Self = StObject.set(x, "isInIntroOfferPeriod", js.undefined)
+      inline def setIsInIntroOfferPeriodUndefined: Self = StObject.set(x, "isInIntroOfferPeriod", js.undefined)
       
-      @scala.inline
-      def setIsTrialPeriod(value: Boolean): Self = StObject.set(x, "isTrialPeriod", value.asInstanceOf[js.Any])
+      inline def setIsTrialPeriod(value: Boolean): Self = StObject.set(x, "isTrialPeriod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsTrialPeriodUndefined: Self = StObject.set(x, "isTrialPeriod", js.undefined)
+      inline def setIsTrialPeriodUndefined: Self = StObject.set(x, "isTrialPeriod", js.undefined)
       
-      @scala.inline
-      def setOriginalApplicationVersion(value: String): Self = StObject.set(x, "originalApplicationVersion", value.asInstanceOf[js.Any])
+      inline def setOriginalApplicationVersion(value: String): Self = StObject.set(x, "originalApplicationVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalApplicationVersionUndefined: Self = StObject.set(x, "originalApplicationVersion", js.undefined)
+      inline def setOriginalApplicationVersionUndefined: Self = StObject.set(x, "originalApplicationVersion", js.undefined)
       
-      @scala.inline
-      def setOriginalPurchaseDate(value: Double): Self = StObject.set(x, "originalPurchaseDate", value.asInstanceOf[js.Any])
+      inline def setOriginalPurchaseDate(value: Double): Self = StObject.set(x, "originalPurchaseDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalPurchaseDateUndefined: Self = StObject.set(x, "originalPurchaseDate", js.undefined)
+      inline def setOriginalPurchaseDateUndefined: Self = StObject.set(x, "originalPurchaseDate", js.undefined)
       
-      @scala.inline
-      def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+      inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPurchaseDate(value: Double): Self = StObject.set(x, "purchaseDate", value.asInstanceOf[js.Any])
+      inline def setPurchaseDate(value: Double): Self = StObject.set(x, "purchaseDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+      inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransactionId(value: String): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
+      inline def setTransactionId(value: String): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -308,23 +264,18 @@ object mod {
   }
   object ValidateOptions {
     
-    @scala.inline
-    def apply(receipt: String): ValidateOptions = {
+    inline def apply(receipt: String): ValidateOptions = {
       val __obj = js.Dynamic.literal(receipt = receipt.asInstanceOf[js.Any])
       __obj.asInstanceOf[ValidateOptions]
     }
     
-    @scala.inline
-    implicit class ValidateOptionsMutableBuilder[Self <: ValidateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ValidateOptions](x: Self) {
       
-      @scala.inline
-      def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+      inline def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
+      inline def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
       
-      @scala.inline
-      def setReceipt(value: String): Self = StObject.set(x, "receipt", value.asInstanceOf[js.Any])
+      inline def setReceipt(value: String): Self = StObject.set(x, "receipt", value.asInstanceOf[js.Any])
     }
   }
   
@@ -338,20 +289,16 @@ object mod {
   }
   object ValidationError {
     
-    @scala.inline
-    def apply(appleStatus: Double, isRetryable: Boolean, message: String, name: String): ValidationError = {
+    inline def apply(appleStatus: Double, isRetryable: Boolean, message: String, name: String): ValidationError = {
       val __obj = js.Dynamic.literal(appleStatus = appleStatus.asInstanceOf[js.Any], isRetryable = isRetryable.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ValidationError]
     }
     
-    @scala.inline
-    implicit class ValidationErrorMutableBuilder[Self <: ValidationError] (val x: Self) extends AnyVal {
+    extension [Self <: ValidationError](x: Self) {
       
-      @scala.inline
-      def setAppleStatus(value: Double): Self = StObject.set(x, "appleStatus", value.asInstanceOf[js.Any])
+      inline def setAppleStatus(value: Double): Self = StObject.set(x, "appleStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRetryable(value: Boolean): Self = StObject.set(x, "isRetryable", value.asInstanceOf[js.Any])
+      inline def setIsRetryable(value: Boolean): Self = StObject.set(x, "isRetryable", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -28,52 +28,37 @@ trait PartialScatterLine extends StObject {
 }
 object PartialScatterLine {
   
-  @scala.inline
-  def apply(): PartialScatterLine = {
+  inline def apply(): PartialScatterLine = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialScatterLine]
   }
   
-  @scala.inline
-  implicit class PartialScatterLineMutableBuilder[Self <: PartialScatterLine] (val x: Self) extends AnyVal {
+  extension [Self <: PartialScatterLine](x: Self) {
     
-    @scala.inline
-    def setColor(value: typings.plotlyJs.mod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: typings.plotlyJs.mod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setColorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "color", js.Array(value :_*))
     
-    @scala.inline
-    def setDash(value: Dash): Self = StObject.set(x, "dash", value.asInstanceOf[js.Any])
+    inline def setDash(value: Dash): Self = StObject.set(x, "dash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashUndefined: Self = StObject.set(x, "dash", js.undefined)
+    inline def setDashUndefined: Self = StObject.set(x, "dash", js.undefined)
     
-    @scala.inline
-    def setShape(value: linear | spline | hv | vh | hvh | vhv): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    inline def setShape(value: linear | spline | hv | vh | hvh | vhv): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+    inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
     
-    @scala.inline
-    def setSimplify(value: Boolean): Self = StObject.set(x, "simplify", value.asInstanceOf[js.Any])
+    inline def setSimplify(value: Boolean): Self = StObject.set(x, "simplify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSimplifyUndefined: Self = StObject.set(x, "simplify", js.undefined)
+    inline def setSimplifyUndefined: Self = StObject.set(x, "simplify", js.undefined)
     
-    @scala.inline
-    def setSmoothing(value: Double): Self = StObject.set(x, "smoothing", value.asInstanceOf[js.Any])
+    inline def setSmoothing(value: Double): Self = StObject.set(x, "smoothing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmoothingUndefined: Self = StObject.set(x, "smoothing", js.undefined)
+    inline def setSmoothingUndefined: Self = StObject.set(x, "smoothing", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

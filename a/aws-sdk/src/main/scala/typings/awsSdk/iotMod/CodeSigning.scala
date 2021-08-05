@@ -23,31 +23,23 @@ trait CodeSigning extends StObject {
 }
 object CodeSigning {
   
-  @scala.inline
-  def apply(): CodeSigning = {
+  inline def apply(): CodeSigning = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CodeSigning]
   }
   
-  @scala.inline
-  implicit class CodeSigningMutableBuilder[Self <: CodeSigning] (val x: Self) extends AnyVal {
+  extension [Self <: CodeSigning](x: Self) {
     
-    @scala.inline
-    def setAwsSignerJobId(value: SigningJobId): Self = StObject.set(x, "awsSignerJobId", value.asInstanceOf[js.Any])
+    inline def setAwsSignerJobId(value: SigningJobId): Self = StObject.set(x, "awsSignerJobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsSignerJobIdUndefined: Self = StObject.set(x, "awsSignerJobId", js.undefined)
+    inline def setAwsSignerJobIdUndefined: Self = StObject.set(x, "awsSignerJobId", js.undefined)
     
-    @scala.inline
-    def setCustomCodeSigning(value: CustomCodeSigning): Self = StObject.set(x, "customCodeSigning", value.asInstanceOf[js.Any])
+    inline def setCustomCodeSigning(value: CustomCodeSigning): Self = StObject.set(x, "customCodeSigning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomCodeSigningUndefined: Self = StObject.set(x, "customCodeSigning", js.undefined)
+    inline def setCustomCodeSigningUndefined: Self = StObject.set(x, "customCodeSigning", js.undefined)
     
-    @scala.inline
-    def setStartSigningJobParameter(value: StartSigningJobParameter): Self = StObject.set(x, "startSigningJobParameter", value.asInstanceOf[js.Any])
+    inline def setStartSigningJobParameter(value: StartSigningJobParameter): Self = StObject.set(x, "startSigningJobParameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartSigningJobParameterUndefined: Self = StObject.set(x, "startSigningJobParameter", js.undefined)
+    inline def setStartSigningJobParameterUndefined: Self = StObject.set(x, "startSigningJobParameter", js.undefined)
   }
 }

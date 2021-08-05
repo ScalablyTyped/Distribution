@@ -17,25 +17,19 @@ trait InsertTableColumnRequest extends StObject {
 }
 object InsertTableColumnRequest {
   
-  @scala.inline
-  def apply(): InsertTableColumnRequest = {
+  inline def apply(): InsertTableColumnRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InsertTableColumnRequest]
   }
   
-  @scala.inline
-  implicit class InsertTableColumnRequestMutableBuilder[Self <: InsertTableColumnRequest] (val x: Self) extends AnyVal {
+  extension [Self <: InsertTableColumnRequest](x: Self) {
     
-    @scala.inline
-    def setInsertRight(value: Boolean): Self = StObject.set(x, "insertRight", value.asInstanceOf[js.Any])
+    inline def setInsertRight(value: Boolean): Self = StObject.set(x, "insertRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertRightUndefined: Self = StObject.set(x, "insertRight", js.undefined)
+    inline def setInsertRightUndefined: Self = StObject.set(x, "insertRight", js.undefined)
     
-    @scala.inline
-    def setTableCellLocation(value: TableCellLocation): Self = StObject.set(x, "tableCellLocation", value.asInstanceOf[js.Any])
+    inline def setTableCellLocation(value: TableCellLocation): Self = StObject.set(x, "tableCellLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableCellLocationUndefined: Self = StObject.set(x, "tableCellLocation", js.undefined)
+    inline def setTableCellLocationUndefined: Self = StObject.set(x, "tableCellLocation", js.undefined)
   }
 }

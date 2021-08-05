@@ -13,19 +13,15 @@ trait VectorPath extends StObject {
 }
 object VectorPath {
   
-  @scala.inline
-  def apply(data: String, windingRule: WindingRule | NONE): VectorPath = {
+  inline def apply(data: String, windingRule: WindingRule | NONE): VectorPath = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], windingRule = windingRule.asInstanceOf[js.Any])
     __obj.asInstanceOf[VectorPath]
   }
   
-  @scala.inline
-  implicit class VectorPathMutableBuilder[Self <: VectorPath] (val x: Self) extends AnyVal {
+  extension [Self <: VectorPath](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindingRule(value: WindingRule | NONE): Self = StObject.set(x, "windingRule", value.asInstanceOf[js.Any])
+    inline def setWindingRule(value: WindingRule | NONE): Self = StObject.set(x, "windingRule", value.asInstanceOf[js.Any])
   }
 }

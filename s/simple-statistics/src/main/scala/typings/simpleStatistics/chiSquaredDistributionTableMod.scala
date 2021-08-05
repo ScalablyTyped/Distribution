@@ -197,8 +197,7 @@ object chiSquaredDistributionTableMod {
   }
   object DistributionTable {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `0Dot005`: Double,
       `0Dot01`: Double,
       `0Dot025`: Double,
@@ -226,41 +225,29 @@ object chiSquaredDistributionTableMod {
       __obj.asInstanceOf[DistributionTable]
     }
     
-    @scala.inline
-    implicit class DistributionTableMutableBuilder[Self <: DistributionTable] (val x: Self) extends AnyVal {
+    extension [Self <: DistributionTable](x: Self) {
       
-      @scala.inline
-      def set0Dot005(value: Double): Self = StObject.set(x, "0.005", value.asInstanceOf[js.Any])
+      inline def set0Dot005(value: Double): Self = StObject.set(x, "0.005", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set0Dot01(value: Double): Self = StObject.set(x, "0.01", value.asInstanceOf[js.Any])
+      inline def set0Dot01(value: Double): Self = StObject.set(x, "0.01", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set0Dot025(value: Double): Self = StObject.set(x, "0.025", value.asInstanceOf[js.Any])
+      inline def set0Dot025(value: Double): Self = StObject.set(x, "0.025", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set0Dot05(value: Double): Self = StObject.set(x, "0.05", value.asInstanceOf[js.Any])
+      inline def set0Dot05(value: Double): Self = StObject.set(x, "0.05", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set0Dot1(value: Double): Self = StObject.set(x, "0.1", value.asInstanceOf[js.Any])
+      inline def set0Dot1(value: Double): Self = StObject.set(x, "0.1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set0Dot5(value: Double): Self = StObject.set(x, "0.5", value.asInstanceOf[js.Any])
+      inline def set0Dot5(value: Double): Self = StObject.set(x, "0.5", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set0Dot9(value: Double): Self = StObject.set(x, "0.9", value.asInstanceOf[js.Any])
+      inline def set0Dot9(value: Double): Self = StObject.set(x, "0.9", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set0Dot95(value: Double): Self = StObject.set(x, "0.95", value.asInstanceOf[js.Any])
+      inline def set0Dot95(value: Double): Self = StObject.set(x, "0.95", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set0Dot975(value: Double): Self = StObject.set(x, "0.975", value.asInstanceOf[js.Any])
+      inline def set0Dot975(value: Double): Self = StObject.set(x, "0.975", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set0Dot99(value: Double): Self = StObject.set(x, "0.99", value.asInstanceOf[js.Any])
+      inline def set0Dot99(value: Double): Self = StObject.set(x, "0.99", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set0Dot995(value: Double): Self = StObject.set(x, "0.995", value.asInstanceOf[js.Any])
+      inline def set0Dot995(value: Double): Self = StObject.set(x, "0.995", value.asInstanceOf[js.Any])
     }
   }
 }

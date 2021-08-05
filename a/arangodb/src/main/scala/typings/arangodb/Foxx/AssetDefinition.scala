@@ -14,28 +14,21 @@ trait AssetDefinition extends StObject {
 }
 object AssetDefinition {
   
-  @scala.inline
-  def apply(path: String): AssetDefinition = {
+  inline def apply(path: String): AssetDefinition = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssetDefinition]
   }
   
-  @scala.inline
-  implicit class AssetDefinitionMutableBuilder[Self <: AssetDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: AssetDefinition](x: Self) {
     
-    @scala.inline
-    def setGzip(value: Boolean): Self = StObject.set(x, "gzip", value.asInstanceOf[js.Any])
+    inline def setGzip(value: Boolean): Self = StObject.set(x, "gzip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGzipUndefined: Self = StObject.set(x, "gzip", js.undefined)
+    inline def setGzipUndefined: Self = StObject.set(x, "gzip", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

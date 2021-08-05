@@ -8,31 +8,25 @@ object cordovaPluginCanvascameraStrings {
   
   @js.native
   sealed trait back extends StObject
-  @scala.inline
-  def back: back = "back".asInstanceOf[back]
+  inline def back: back = "back".asInstanceOf[back]
   
   @js.native
   sealed trait data extends StObject
-  @scala.inline
-  def data: data = "data".asInstanceOf[data]
+  inline def data: data = "data".asInstanceOf[data]
   
   @js.native
   sealed trait file extends StObject
-  @scala.inline
-  def file: file = "file".asInstanceOf[file]
+  inline def file: file = "file".asInstanceOf[file]
   
   @js.native
   sealed trait front extends StObject
-  @scala.inline
-  def front: front = "front".asInstanceOf[front]
+  inline def front: front = "front".asInstanceOf[front]
   
   @js.native
   sealed trait landscape extends StObject
-  @scala.inline
-  def landscape: landscape = "landscape".asInstanceOf[landscape]
+  inline def landscape: landscape = "landscape".asInstanceOf[landscape]
   
   @js.native
   sealed trait portrait extends StObject
-  @scala.inline
-  def portrait: portrait = "portrait".asInstanceOf[portrait]
+  inline def portrait: portrait = "portrait".asInstanceOf[portrait]
 }

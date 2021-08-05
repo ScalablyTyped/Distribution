@@ -18,19 +18,15 @@ trait RangeSelectorButtonsEventsOptions extends StObject {
 }
 object RangeSelectorButtonsEventsOptions {
   
-  @scala.inline
-  def apply(): RangeSelectorButtonsEventsOptions = {
+  inline def apply(): RangeSelectorButtonsEventsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RangeSelectorButtonsEventsOptions]
   }
   
-  @scala.inline
-  implicit class RangeSelectorButtonsEventsOptionsMutableBuilder[Self <: RangeSelectorButtonsEventsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RangeSelectorButtonsEventsOptions](x: Self) {
     
-    @scala.inline
-    def setClick(value: (/* e */ Event, /* Return */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "click", js.Any.fromFunction2(value))
+    inline def setClick(value: (/* e */ Event, /* Return */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "click", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
+    inline def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
   }
 }

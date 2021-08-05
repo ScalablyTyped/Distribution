@@ -14,34 +14,25 @@ trait ModelDefinitionModelOptions extends StObject {
 }
 object ModelDefinitionModelOptions {
   
-  @scala.inline
-  def apply(): ModelDefinitionModelOptions = {
+  inline def apply(): ModelDefinitionModelOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModelDefinitionModelOptions]
   }
   
-  @scala.inline
-  implicit class ModelDefinitionModelOptionsMutableBuilder[Self <: ModelDefinitionModelOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ModelDefinitionModelOptions](x: Self) {
     
-    @scala.inline
-    def setLabels(value: js.Array[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: js.Array[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
     
-    @scala.inline
-    def setLossType(value: String): Self = StObject.set(x, "lossType", value.asInstanceOf[js.Any])
+    inline def setLossType(value: String): Self = StObject.set(x, "lossType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLossTypeUndefined: Self = StObject.set(x, "lossType", js.undefined)
+    inline def setLossTypeUndefined: Self = StObject.set(x, "lossType", js.undefined)
     
-    @scala.inline
-    def setModelType(value: String): Self = StObject.set(x, "modelType", value.asInstanceOf[js.Any])
+    inline def setModelType(value: String): Self = StObject.set(x, "modelType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelTypeUndefined: Self = StObject.set(x, "modelType", js.undefined)
+    inline def setModelTypeUndefined: Self = StObject.set(x, "modelType", js.undefined)
   }
 }

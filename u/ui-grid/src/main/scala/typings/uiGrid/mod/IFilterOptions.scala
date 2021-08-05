@@ -67,23 +67,18 @@ trait IFilterOptions extends StObject {
 }
 object IFilterOptions {
   
-  @scala.inline
-  def apply(): IFilterOptions = {
+  inline def apply(): IFilterOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IFilterOptions]
   }
   
-  @scala.inline
-  implicit class IFilterOptionsMutableBuilder[Self <: IFilterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IFilterOptions](x: Self) {
     
-    @scala.inline
-    def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
+    inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
+    inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
     
-    @scala.inline
-    def setCondition(
+    inline def setCondition(
       value: Double | (js.Function4[
           /* searchTerm */ String, 
           /* cellValue */ js.Any, 
@@ -93,57 +88,40 @@ object IFilterOptions {
         ])
     ): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionFunction4(
+    inline def setConditionFunction4(
       value: (/* searchTerm */ String, /* cellValue */ js.Any, /* row */ IGridRow, /* column */ IGridColumn) => Boolean
     ): Self = StObject.set(x, "condition", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
-    @scala.inline
-    def setDisableCancelFilterButton(value: Boolean): Self = StObject.set(x, "disableCancelFilterButton", value.asInstanceOf[js.Any])
+    inline def setDisableCancelFilterButton(value: Boolean): Self = StObject.set(x, "disableCancelFilterButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableCancelFilterButtonUndefined: Self = StObject.set(x, "disableCancelFilterButton", js.undefined)
+    inline def setDisableCancelFilterButtonUndefined: Self = StObject.set(x, "disableCancelFilterButton", js.undefined)
     
-    @scala.inline
-    def setFlags(value: IFilterFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: IFilterFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
+    inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
     
-    @scala.inline
-    def setNoTerm(value: Boolean): Self = StObject.set(x, "noTerm", value.asInstanceOf[js.Any])
+    inline def setNoTerm(value: Boolean): Self = StObject.set(x, "noTerm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoTermUndefined: Self = StObject.set(x, "noTerm", js.undefined)
+    inline def setNoTermUndefined: Self = StObject.set(x, "noTerm", js.undefined)
     
-    @scala.inline
-    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+    inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
-    @scala.inline
-    def setSelectOptions(value: js.Array[ISelectOption]): Self = StObject.set(x, "selectOptions", value.asInstanceOf[js.Any])
+    inline def setSelectOptions(value: js.Array[ISelectOption]): Self = StObject.set(x, "selectOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectOptionsUndefined: Self = StObject.set(x, "selectOptions", js.undefined)
+    inline def setSelectOptionsUndefined: Self = StObject.set(x, "selectOptions", js.undefined)
     
-    @scala.inline
-    def setSelectOptionsVarargs(value: ISelectOption*): Self = StObject.set(x, "selectOptions", js.Array(value :_*))
+    inline def setSelectOptionsVarargs(value: ISelectOption*): Self = StObject.set(x, "selectOptions", js.Array(value :_*))
     
-    @scala.inline
-    def setTerm(value: String): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
+    inline def setTerm(value: String): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTermUndefined: Self = StObject.set(x, "term", js.undefined)
+    inline def setTermUndefined: Self = StObject.set(x, "term", js.undefined)
     
-    @scala.inline
-    def setType(value: Double | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -25,35 +25,27 @@ trait F extends StObject {
 }
 object F {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     f: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify power */ js.Any
   ): F = {
     val __obj = js.Dynamic.literal(argCount = 2, f = f.asInstanceOf[js.Any], notation = "infix", precedence = 5, rightToLeft = 1, symbol = "^")
     __obj.asInstanceOf[F]
   }
   
-  @scala.inline
-  implicit class FMutableBuilder[Self <: F] (val x: Self) extends AnyVal {
+  extension [Self <: F](x: Self) {
     
-    @scala.inline
-    def setArgCount(value: `2`): Self = StObject.set(x, "argCount", value.asInstanceOf[js.Any])
+    inline def setArgCount(value: `2`): Self = StObject.set(x, "argCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setF(
+    inline def setF(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify power */ js.Any
     ): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotation(value: infix): Self = StObject.set(x, "notation", value.asInstanceOf[js.Any])
+    inline def setNotation(value: infix): Self = StObject.set(x, "notation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrecedence(value: `5`): Self = StObject.set(x, "precedence", value.asInstanceOf[js.Any])
+    inline def setPrecedence(value: `5`): Self = StObject.set(x, "precedence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightToLeft(value: `1`): Self = StObject.set(x, "rightToLeft", value.asInstanceOf[js.Any])
+    inline def setRightToLeft(value: `1`): Self = StObject.set(x, "rightToLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbol(value: ^): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: ^): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }
 }

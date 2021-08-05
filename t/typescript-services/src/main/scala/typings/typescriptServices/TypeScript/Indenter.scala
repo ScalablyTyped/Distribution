@@ -16,25 +16,19 @@ trait Indenter extends StObject {
 }
 object Indenter {
   
-  @scala.inline
-  def apply(decreaseIndent: () => Unit, getIndent: () => String, increaseIndent: () => Unit, indentAmt: Double): Indenter = {
+  inline def apply(decreaseIndent: () => Unit, getIndent: () => String, increaseIndent: () => Unit, indentAmt: Double): Indenter = {
     val __obj = js.Dynamic.literal(decreaseIndent = js.Any.fromFunction0(decreaseIndent), getIndent = js.Any.fromFunction0(getIndent), increaseIndent = js.Any.fromFunction0(increaseIndent), indentAmt = indentAmt.asInstanceOf[js.Any])
     __obj.asInstanceOf[Indenter]
   }
   
-  @scala.inline
-  implicit class IndenterMutableBuilder[Self <: Indenter] (val x: Self) extends AnyVal {
+  extension [Self <: Indenter](x: Self) {
     
-    @scala.inline
-    def setDecreaseIndent(value: () => Unit): Self = StObject.set(x, "decreaseIndent", js.Any.fromFunction0(value))
+    inline def setDecreaseIndent(value: () => Unit): Self = StObject.set(x, "decreaseIndent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIndent(value: () => String): Self = StObject.set(x, "getIndent", js.Any.fromFunction0(value))
+    inline def setGetIndent(value: () => String): Self = StObject.set(x, "getIndent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIncreaseIndent(value: () => Unit): Self = StObject.set(x, "increaseIndent", js.Any.fromFunction0(value))
+    inline def setIncreaseIndent(value: () => Unit): Self = StObject.set(x, "increaseIndent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIndentAmt(value: Double): Self = StObject.set(x, "indentAmt", value.asInstanceOf[js.Any])
+    inline def setIndentAmt(value: Double): Self = StObject.set(x, "indentAmt", value.asInstanceOf[js.Any])
   }
 }

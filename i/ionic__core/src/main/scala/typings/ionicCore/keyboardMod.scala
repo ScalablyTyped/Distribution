@@ -19,32 +19,22 @@ object keyboardMod {
   @js.native
   val KEYBOARD_DID_OPEN: /* "ionKeyboardDidShow" */ String = js.native
   
-  @scala.inline
-  def copyVisualViewport(visualViewport: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("copyVisualViewport")(visualViewport.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def copyVisualViewport(visualViewport: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("copyVisualViewport")(visualViewport.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def keyboardDidClose(win: Window): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("keyboardDidClose")(win.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def keyboardDidClose(win: Window): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("keyboardDidClose")(win.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def keyboardDidOpen(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("keyboardDidOpen")().asInstanceOf[Boolean]
+  inline def keyboardDidOpen(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("keyboardDidOpen")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def keyboardDidResize(win: Window): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("keyboardDidResize")(win.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def keyboardDidResize(win: Window): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("keyboardDidResize")(win.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def resetKeyboardAssist(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetKeyboardAssist")().asInstanceOf[Unit]
+  inline def resetKeyboardAssist(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetKeyboardAssist")().asInstanceOf[Unit]
   
-  @scala.inline
-  def setKeyboardClose(win: Window): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setKeyboardClose")(win.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setKeyboardClose(win: Window): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setKeyboardClose")(win.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setKeyboardOpen(win: Window): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setKeyboardOpen")(win.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def setKeyboardOpen(win: Window, ev: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setKeyboardOpen")(win.asInstanceOf[js.Any], ev.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setKeyboardOpen(win: Window): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setKeyboardOpen")(win.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setKeyboardOpen(win: Window, ev: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setKeyboardOpen")(win.asInstanceOf[js.Any], ev.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def startKeyboardAssist(win: Window): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startKeyboardAssist")(win.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def startKeyboardAssist(win: Window): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startKeyboardAssist")(win.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def trackViewportChanges(win: Window): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trackViewportChanges")(win.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def trackViewportChanges(win: Window): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trackViewportChanges")(win.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

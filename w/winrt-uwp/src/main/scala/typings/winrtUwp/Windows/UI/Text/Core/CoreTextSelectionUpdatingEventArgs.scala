@@ -25,8 +25,7 @@ trait CoreTextSelectionUpdatingEventArgs extends StObject {
 }
 object CoreTextSelectionUpdatingEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getDeferral: () => Deferral,
     isCanceled: Boolean,
     result: CoreTextSelectionUpdatingResult,
@@ -36,19 +35,14 @@ object CoreTextSelectionUpdatingEventArgs {
     __obj.asInstanceOf[CoreTextSelectionUpdatingEventArgs]
   }
   
-  @scala.inline
-  implicit class CoreTextSelectionUpdatingEventArgsMutableBuilder[Self <: CoreTextSelectionUpdatingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: CoreTextSelectionUpdatingEventArgs](x: Self) {
     
-    @scala.inline
-    def setGetDeferral(value: () => Deferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
+    inline def setGetDeferral(value: () => Deferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsCanceled(value: Boolean): Self = StObject.set(x, "isCanceled", value.asInstanceOf[js.Any])
+    inline def setIsCanceled(value: Boolean): Self = StObject.set(x, "isCanceled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: CoreTextSelectionUpdatingResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: CoreTextSelectionUpdatingResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelection(value: CoreTextRange): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+    inline def setSelection(value: CoreTextRange): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
   }
 }

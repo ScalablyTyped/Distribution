@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HTMLDefaults extends StObject {
   
-  @JSName("MSHTML.HTMLDefaults_typekey")
+  /* private */ @JSName("MSHTML.HTMLDefaults_typekey")
   var MSHTMLDotHTMLDefaults_typekey: HTMLDefaults
   
   var canHaveHTML: Boolean
@@ -35,8 +35,7 @@ trait HTMLDefaults extends StObject {
 }
 object HTMLDefaults {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotHTMLDefaults_typekey: HTMLDefaults,
     canHaveHTML: Boolean,
     constructor: js.Any,
@@ -56,46 +55,32 @@ object HTMLDefaults {
     __obj.asInstanceOf[HTMLDefaults]
   }
   
-  @scala.inline
-  implicit class HTMLDefaultsMutableBuilder[Self <: HTMLDefaults] (val x: Self) extends AnyVal {
+  extension [Self <: HTMLDefaults](x: Self) {
     
-    @scala.inline
-    def setCanHaveHTML(value: Boolean): Self = StObject.set(x, "canHaveHTML", value.asInstanceOf[js.Any])
+    inline def setCanHaveHTML(value: Boolean): Self = StObject.set(x, "canHaveHTML", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstructor(value: js.Any): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
+    inline def setConstructor(value: js.Any): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentEditable(value: String): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
+    inline def setContentEditable(value: String): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrozen(value: Boolean): Self = StObject.set(x, "frozen", value.asInstanceOf[js.Any])
+    inline def setFrozen(value: Boolean): Self = StObject.set(x, "frozen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMultiLine(value: Boolean): Self = StObject.set(x, "isMultiLine", value.asInstanceOf[js.Any])
+    inline def setIsMultiLine(value: Boolean): Self = StObject.set(x, "isMultiLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotHTMLDefaults_typekey(value: HTMLDefaults): Self = StObject.set(x, "MSHTML.HTMLDefaults_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotHTMLDefaults_typekey(value: HTMLDefaults): Self = StObject.set(x, "MSHTML.HTMLDefaults_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollSegmentX(value: Double): Self = StObject.set(x, "scrollSegmentX", value.asInstanceOf[js.Any])
+    inline def setScrollSegmentX(value: Double): Self = StObject.set(x, "scrollSegmentX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollSegmentY(value: Double): Self = StObject.set(x, "scrollSegmentY", value.asInstanceOf[js.Any])
+    inline def setScrollSegmentY(value: Double): Self = StObject.set(x, "scrollSegmentY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: IHTMLStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: IHTMLStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabStop(value: Boolean): Self = StObject.set(x, "tabStop", value.asInstanceOf[js.Any])
+    inline def setTabStop(value: Boolean): Self = StObject.set(x, "tabStop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewInheritStyle(value: Boolean): Self = StObject.set(x, "viewInheritStyle", value.asInstanceOf[js.Any])
+    inline def setViewInheritStyle(value: Boolean): Self = StObject.set(x, "viewInheritStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewLink(value: IHTMLDocument): Self = StObject.set(x, "viewLink", value.asInstanceOf[js.Any])
+    inline def setViewLink(value: IHTMLDocument): Self = StObject.set(x, "viewLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewMasterTab(value: Boolean): Self = StObject.set(x, "viewMasterTab", value.asInstanceOf[js.Any])
+    inline def setViewMasterTab(value: Boolean): Self = StObject.set(x, "viewMasterTab", value.asInstanceOf[js.Any])
   }
 }

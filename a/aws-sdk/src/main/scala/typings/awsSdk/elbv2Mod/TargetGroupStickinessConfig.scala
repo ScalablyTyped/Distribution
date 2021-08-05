@@ -18,25 +18,19 @@ trait TargetGroupStickinessConfig extends StObject {
 }
 object TargetGroupStickinessConfig {
   
-  @scala.inline
-  def apply(): TargetGroupStickinessConfig = {
+  inline def apply(): TargetGroupStickinessConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TargetGroupStickinessConfig]
   }
   
-  @scala.inline
-  implicit class TargetGroupStickinessConfigMutableBuilder[Self <: TargetGroupStickinessConfig] (val x: Self) extends AnyVal {
+  extension [Self <: TargetGroupStickinessConfig](x: Self) {
     
-    @scala.inline
-    def setDurationSeconds(value: TargetGroupStickinessDurationSeconds): Self = StObject.set(x, "DurationSeconds", value.asInstanceOf[js.Any])
+    inline def setDurationSeconds(value: TargetGroupStickinessDurationSeconds): Self = StObject.set(x, "DurationSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationSecondsUndefined: Self = StObject.set(x, "DurationSeconds", js.undefined)
+    inline def setDurationSecondsUndefined: Self = StObject.set(x, "DurationSeconds", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: TargetGroupStickinessEnabled): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: TargetGroupStickinessEnabled): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
   }
 }

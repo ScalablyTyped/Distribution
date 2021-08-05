@@ -31,8 +31,7 @@ trait WebUIToastNotificationActivatedEventArgs extends StObject {
 }
 object WebUIToastNotificationActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activatedOperation: ActivatedOperation,
     argument: String,
     kind: ActivationKind,
@@ -44,25 +43,18 @@ object WebUIToastNotificationActivatedEventArgs {
     __obj.asInstanceOf[WebUIToastNotificationActivatedEventArgs]
   }
   
-  @scala.inline
-  implicit class WebUIToastNotificationActivatedEventArgsMutableBuilder[Self <: WebUIToastNotificationActivatedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: WebUIToastNotificationActivatedEventArgs](x: Self) {
     
-    @scala.inline
-    def setActivatedOperation(value: ActivatedOperation): Self = StObject.set(x, "activatedOperation", value.asInstanceOf[js.Any])
+    inline def setActivatedOperation(value: ActivatedOperation): Self = StObject.set(x, "activatedOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgument(value: String): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
+    inline def setArgument(value: String): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
+    inline def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
+    inline def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserInput(value: ValueSet): Self = StObject.set(x, "userInput", value.asInstanceOf[js.Any])
+    inline def setUserInput(value: ValueSet): Self = StObject.set(x, "userInput", value.asInstanceOf[js.Any])
   }
 }

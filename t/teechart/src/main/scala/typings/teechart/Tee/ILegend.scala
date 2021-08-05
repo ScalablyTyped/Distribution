@@ -56,8 +56,7 @@ trait ILegend extends StObject {
 }
 object ILegend {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     align: Double,
     availRows: () => Double,
     bounds: IRectangle,
@@ -87,79 +86,54 @@ object ILegend {
     __obj.asInstanceOf[ILegend]
   }
   
-  @scala.inline
-  implicit class ILegendMutableBuilder[Self <: ILegend] (val x: Self) extends AnyVal {
+  extension [Self <: ILegend](x: Self) {
     
-    @scala.inline
-    def setAlign(value: Double): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: Double): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailRows(value: () => Double): Self = StObject.set(x, "availRows", js.Any.fromFunction0(value))
+    inline def setAvailRows(value: () => Double): Self = StObject.set(x, "availRows", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setBounds(value: IRectangle): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: IRectangle): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChart(value: IChart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
+    inline def setChart(value: IChart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDividing(value: IStroke): Self = StObject.set(x, "dividing", value.asInstanceOf[js.Any])
+    inline def setDividing(value: IStroke): Self = StObject.set(x, "dividing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontColor(value: Boolean): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
+    inline def setFontColor(value: Boolean): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: IFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: IFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInnerOff(value: Double): Self = StObject.set(x, "innerOff", value.asInstanceOf[js.Any])
+    inline def setInnerOff(value: Double): Self = StObject.set(x, "innerOff", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInverted(value: Boolean): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
+    inline def setInverted(value: Boolean): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsVertical(value: () => Boolean): Self = StObject.set(x, "isVertical", js.Any.fromFunction0(value))
+    inline def setIsVertical(value: () => Boolean): Self = StObject.set(x, "isVertical", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setItemHeight(value: Double): Self = StObject.set(x, "itemHeight", value.asInstanceOf[js.Any])
+    inline def setItemHeight(value: Double): Self = StObject.set(x, "itemHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemText(value: (ISeries, Double) => String): Self = StObject.set(x, "itemText", js.Any.fromFunction2(value))
+    inline def setItemText(value: (ISeries, Double) => String): Self = StObject.set(x, "itemText", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setItemsCount(value: () => Double): Self = StObject.set(x, "itemsCount", js.Any.fromFunction0(value))
+    inline def setItemsCount(value: () => Double): Self = StObject.set(x, "itemsCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLegendStyle(value: String): Self = StObject.set(x, "legendStyle", value.asInstanceOf[js.Any])
+    inline def setLegendStyle(value: String): Self = StObject.set(x, "legendStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOver(value: Double): Self = StObject.set(x, "over", value.asInstanceOf[js.Any])
+    inline def setOver(value: Double): Self = StObject.set(x, "over", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowValues(value: () => Boolean): Self = StObject.set(x, "showValues", js.Any.fromFunction0(value))
+    inline def setShowValues(value: () => Boolean): Self = StObject.set(x, "showValues", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSymbol(value: ISymbol): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: ISymbol): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextStyle(value: String): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+    inline def setTextStyle(value: String): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: IAnnotation): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: IAnnotation): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalWidth(value: () => Double): Self = StObject.set(x, "totalWidth", js.Any.fromFunction0(value))
+    inline def setTotalWidth(value: () => Double): Self = StObject.set(x, "totalWidth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
+    inline def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }
 }

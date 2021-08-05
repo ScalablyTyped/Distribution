@@ -18,28 +18,21 @@ trait DashAdditionalManifest extends StObject {
 }
 object DashAdditionalManifest {
   
-  @scala.inline
-  def apply(): DashAdditionalManifest = {
+  inline def apply(): DashAdditionalManifest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DashAdditionalManifest]
   }
   
-  @scala.inline
-  implicit class DashAdditionalManifestMutableBuilder[Self <: DashAdditionalManifest] (val x: Self) extends AnyVal {
+  extension [Self <: DashAdditionalManifest](x: Self) {
     
-    @scala.inline
-    def setManifestNameModifier(value: stringMin1): Self = StObject.set(x, "ManifestNameModifier", value.asInstanceOf[js.Any])
+    inline def setManifestNameModifier(value: stringMin1): Self = StObject.set(x, "ManifestNameModifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManifestNameModifierUndefined: Self = StObject.set(x, "ManifestNameModifier", js.undefined)
+    inline def setManifestNameModifierUndefined: Self = StObject.set(x, "ManifestNameModifier", js.undefined)
     
-    @scala.inline
-    def setSelectedOutputs(value: listOfStringMin1): Self = StObject.set(x, "SelectedOutputs", value.asInstanceOf[js.Any])
+    inline def setSelectedOutputs(value: listOfStringMin1): Self = StObject.set(x, "SelectedOutputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedOutputsUndefined: Self = StObject.set(x, "SelectedOutputs", js.undefined)
+    inline def setSelectedOutputsUndefined: Self = StObject.set(x, "SelectedOutputs", js.undefined)
     
-    @scala.inline
-    def setSelectedOutputsVarargs(value: stringMin1*): Self = StObject.set(x, "SelectedOutputs", js.Array(value :_*))
+    inline def setSelectedOutputsVarargs(value: stringMin1*): Self = StObject.set(x, "SelectedOutputs", js.Array(value :_*))
   }
 }

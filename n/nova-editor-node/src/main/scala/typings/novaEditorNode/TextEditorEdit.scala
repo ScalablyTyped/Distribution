@@ -15,22 +15,17 @@ trait TextEditorEdit extends StObject {
 }
 object TextEditorEdit {
   
-  @scala.inline
-  def apply(delete: Range => Unit, insert: (Double, String) => Unit, replace: (Range, String) => Unit): TextEditorEdit = {
+  inline def apply(delete: Range => Unit, insert: (Double, String) => Unit, replace: (Range, String) => Unit): TextEditorEdit = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), insert = js.Any.fromFunction2(insert), replace = js.Any.fromFunction2(replace))
     __obj.asInstanceOf[TextEditorEdit]
   }
   
-  @scala.inline
-  implicit class TextEditorEditMutableBuilder[Self <: TextEditorEdit] (val x: Self) extends AnyVal {
+  extension [Self <: TextEditorEdit](x: Self) {
     
-    @scala.inline
-    def setDelete(value: Range => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
+    inline def setDelete(value: Range => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInsert(value: (Double, String) => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
+    inline def setInsert(value: (Double, String) => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setReplace(value: (Range, String) => Unit): Self = StObject.set(x, "replace", js.Any.fromFunction2(value))
+    inline def setReplace(value: (Range, String) => Unit): Self = StObject.set(x, "replace", js.Any.fromFunction2(value))
   }
 }

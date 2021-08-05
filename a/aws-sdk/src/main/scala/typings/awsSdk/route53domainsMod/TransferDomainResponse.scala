@@ -13,16 +13,13 @@ trait TransferDomainResponse extends StObject {
 }
 object TransferDomainResponse {
   
-  @scala.inline
-  def apply(OperationId: OperationId): TransferDomainResponse = {
+  inline def apply(OperationId: OperationId): TransferDomainResponse = {
     val __obj = js.Dynamic.literal(OperationId = OperationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransferDomainResponse]
   }
   
-  @scala.inline
-  implicit class TransferDomainResponseMutableBuilder[Self <: TransferDomainResponse] (val x: Self) extends AnyVal {
+  extension [Self <: TransferDomainResponse](x: Self) {
     
-    @scala.inline
-    def setOperationId(value: OperationId): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
+    inline def setOperationId(value: OperationId): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
   }
 }

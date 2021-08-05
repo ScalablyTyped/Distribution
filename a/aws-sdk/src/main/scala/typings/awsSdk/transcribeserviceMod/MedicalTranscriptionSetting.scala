@@ -38,49 +38,35 @@ trait MedicalTranscriptionSetting extends StObject {
 }
 object MedicalTranscriptionSetting {
   
-  @scala.inline
-  def apply(): MedicalTranscriptionSetting = {
+  inline def apply(): MedicalTranscriptionSetting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MedicalTranscriptionSetting]
   }
   
-  @scala.inline
-  implicit class MedicalTranscriptionSettingMutableBuilder[Self <: MedicalTranscriptionSetting] (val x: Self) extends AnyVal {
+  extension [Self <: MedicalTranscriptionSetting](x: Self) {
     
-    @scala.inline
-    def setChannelIdentification(value: Boolean): Self = StObject.set(x, "ChannelIdentification", value.asInstanceOf[js.Any])
+    inline def setChannelIdentification(value: Boolean): Self = StObject.set(x, "ChannelIdentification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelIdentificationUndefined: Self = StObject.set(x, "ChannelIdentification", js.undefined)
+    inline def setChannelIdentificationUndefined: Self = StObject.set(x, "ChannelIdentification", js.undefined)
     
-    @scala.inline
-    def setMaxAlternatives(value: MaxAlternatives): Self = StObject.set(x, "MaxAlternatives", value.asInstanceOf[js.Any])
+    inline def setMaxAlternatives(value: MaxAlternatives): Self = StObject.set(x, "MaxAlternatives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxAlternativesUndefined: Self = StObject.set(x, "MaxAlternatives", js.undefined)
+    inline def setMaxAlternativesUndefined: Self = StObject.set(x, "MaxAlternatives", js.undefined)
     
-    @scala.inline
-    def setMaxSpeakerLabels(value: MaxSpeakers): Self = StObject.set(x, "MaxSpeakerLabels", value.asInstanceOf[js.Any])
+    inline def setMaxSpeakerLabels(value: MaxSpeakers): Self = StObject.set(x, "MaxSpeakerLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSpeakerLabelsUndefined: Self = StObject.set(x, "MaxSpeakerLabels", js.undefined)
+    inline def setMaxSpeakerLabelsUndefined: Self = StObject.set(x, "MaxSpeakerLabels", js.undefined)
     
-    @scala.inline
-    def setShowAlternatives(value: Boolean): Self = StObject.set(x, "ShowAlternatives", value.asInstanceOf[js.Any])
+    inline def setShowAlternatives(value: Boolean): Self = StObject.set(x, "ShowAlternatives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowAlternativesUndefined: Self = StObject.set(x, "ShowAlternatives", js.undefined)
+    inline def setShowAlternativesUndefined: Self = StObject.set(x, "ShowAlternatives", js.undefined)
     
-    @scala.inline
-    def setShowSpeakerLabels(value: Boolean): Self = StObject.set(x, "ShowSpeakerLabels", value.asInstanceOf[js.Any])
+    inline def setShowSpeakerLabels(value: Boolean): Self = StObject.set(x, "ShowSpeakerLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowSpeakerLabelsUndefined: Self = StObject.set(x, "ShowSpeakerLabels", js.undefined)
+    inline def setShowSpeakerLabelsUndefined: Self = StObject.set(x, "ShowSpeakerLabels", js.undefined)
     
-    @scala.inline
-    def setVocabularyName(value: VocabularyName): Self = StObject.set(x, "VocabularyName", value.asInstanceOf[js.Any])
+    inline def setVocabularyName(value: VocabularyName): Self = StObject.set(x, "VocabularyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVocabularyNameUndefined: Self = StObject.set(x, "VocabularyName", js.undefined)
+    inline def setVocabularyNameUndefined: Self = StObject.set(x, "VocabularyName", js.undefined)
   }
 }

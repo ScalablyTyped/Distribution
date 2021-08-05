@@ -20,25 +20,19 @@ trait VictoryMultiLabeableProps
 }
 object VictoryMultiLabeableProps {
   
-  @scala.inline
-  def apply(): VictoryMultiLabeableProps = {
+  inline def apply(): VictoryMultiLabeableProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VictoryMultiLabeableProps]
   }
   
-  @scala.inline
-  implicit class VictoryMultiLabeablePropsMutableBuilder[Self <: VictoryMultiLabeableProps] (val x: Self) extends AnyVal {
+  extension [Self <: VictoryMultiLabeableProps](x: Self) {
     
-    @scala.inline
-    def setLabels(value: js.Array[String] | (js.Function1[/* data */ js.Any, String])): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: js.Array[String] | (js.Function1[/* data */ js.Any, String])): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsFunction1(value: /* data */ js.Any => String): Self = StObject.set(x, "labels", js.Any.fromFunction1(value))
+    inline def setLabelsFunction1(value: /* data */ js.Any => String): Self = StObject.set(x, "labels", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
   }
 }

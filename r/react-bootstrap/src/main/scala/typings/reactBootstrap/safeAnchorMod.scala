@@ -32,26 +32,20 @@ object safeAnchorMod {
   }
   object SafeAnchorProps {
     
-    @scala.inline
-    def apply(): SafeAnchorProps = {
+    inline def apply(): SafeAnchorProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SafeAnchorProps]
     }
     
-    @scala.inline
-    implicit class SafeAnchorPropsMutableBuilder[Self <: SafeAnchorProps] (val x: Self) extends AnyVal {
+    extension [Self <: SafeAnchorProps](x: Self) {
       
-      @scala.inline
-      def setComponentClass(value: ReactType[js.Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
+      inline def setComponentClass(value: ReactType[js.Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentClassUndefined: Self = StObject.set(x, "componentClass", js.undefined)
+      inline def setComponentClassUndefined: Self = StObject.set(x, "componentClass", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: MouseEvent[js.Object, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: MouseEvent[js.Object, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     }
   }
 }

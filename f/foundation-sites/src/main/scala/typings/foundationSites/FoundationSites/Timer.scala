@@ -14,22 +14,17 @@ trait Timer extends StObject {
 }
 object Timer {
   
-  @scala.inline
-  def apply(pause: () => Unit, restart: () => Unit, start: () => Unit): Timer = {
+  inline def apply(pause: () => Unit, restart: () => Unit, start: () => Unit): Timer = {
     val __obj = js.Dynamic.literal(pause = js.Any.fromFunction0(pause), restart = js.Any.fromFunction0(restart), start = js.Any.fromFunction0(start))
     __obj.asInstanceOf[Timer]
   }
   
-  @scala.inline
-  implicit class TimerMutableBuilder[Self <: Timer] (val x: Self) extends AnyVal {
+  extension [Self <: Timer](x: Self) {
     
-    @scala.inline
-    def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
+    inline def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRestart(value: () => Unit): Self = StObject.set(x, "restart", js.Any.fromFunction0(value))
+    inline def setRestart(value: () => Unit): Self = StObject.set(x, "restart", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+    inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
   }
 }

@@ -19,26 +19,20 @@ object swfobject {
   }
   object ICallbackObj {
     
-    @scala.inline
-    def apply(id: String, success: Boolean): ICallbackObj = {
+    inline def apply(id: String, success: Boolean): ICallbackObj = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICallbackObj]
     }
     
-    @scala.inline
-    implicit class ICallbackObjMutableBuilder[Self <: ICallbackObj] (val x: Self) extends AnyVal {
+    extension [Self <: ICallbackObj](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRef(value: HTMLElement): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: HTMLElement): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
-      @scala.inline
-      def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     }
   }
   
@@ -52,23 +46,18 @@ object swfobject {
   }
   object IFlashPlayerVersion {
     
-    @scala.inline
-    def apply(major: Double, minor: Double, release: Double): IFlashPlayerVersion = {
+    inline def apply(major: Double, minor: Double, release: Double): IFlashPlayerVersion = {
       val __obj = js.Dynamic.literal(major = major.asInstanceOf[js.Any], minor = minor.asInstanceOf[js.Any], release = release.asInstanceOf[js.Any])
       __obj.asInstanceOf[IFlashPlayerVersion]
     }
     
-    @scala.inline
-    implicit class IFlashPlayerVersionMutableBuilder[Self <: IFlashPlayerVersion] (val x: Self) extends AnyVal {
+    extension [Self <: IFlashPlayerVersion](x: Self) {
       
-      @scala.inline
-      def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
+      inline def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinor(value: Double): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
+      inline def setMinor(value: Double): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelease(value: Double): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
+      inline def setRelease(value: Double): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
     }
   }
   
@@ -82,32 +71,24 @@ object swfobject {
   }
   object ISwfObjectAttribute {
     
-    @scala.inline
-    def apply(): ISwfObjectAttribute = {
+    inline def apply(): ISwfObjectAttribute = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISwfObjectAttribute]
     }
     
-    @scala.inline
-    implicit class ISwfObjectAttributeMutableBuilder[Self <: ISwfObjectAttribute] (val x: Self) extends AnyVal {
+    extension [Self <: ISwfObjectAttribute](x: Self) {
       
-      @scala.inline
-      def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -117,20 +98,16 @@ object swfobject {
   }
   object ISwfObjectParameter {
     
-    @scala.inline
-    def apply(): ISwfObjectParameter = {
+    inline def apply(): ISwfObjectParameter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISwfObjectParameter]
     }
     
-    @scala.inline
-    implicit class ISwfObjectParameterMutableBuilder[Self <: ISwfObjectParameter] (val x: Self) extends AnyVal {
+    extension [Self <: ISwfObjectParameter](x: Self) {
       
-      @scala.inline
-      def setFlashvars(value: String): Self = StObject.set(x, "flashvars", value.asInstanceOf[js.Any])
+      inline def setFlashvars(value: String): Self = StObject.set(x, "flashvars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlashvarsUndefined: Self = StObject.set(x, "flashvars", js.undefined)
+      inline def setFlashvarsUndefined: Self = StObject.set(x, "flashvars", js.undefined)
     }
   }
   

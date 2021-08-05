@@ -10,6 +10,5 @@ object degreesToRadiansMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(degrees: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(degrees.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def default(degrees: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(degrees.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

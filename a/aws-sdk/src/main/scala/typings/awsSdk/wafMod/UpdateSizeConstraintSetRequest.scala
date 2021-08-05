@@ -23,25 +23,19 @@ trait UpdateSizeConstraintSetRequest extends StObject {
 }
 object UpdateSizeConstraintSetRequest {
   
-  @scala.inline
-  def apply(ChangeToken: ChangeToken, SizeConstraintSetId: ResourceId, Updates: SizeConstraintSetUpdates): UpdateSizeConstraintSetRequest = {
+  inline def apply(ChangeToken: ChangeToken, SizeConstraintSetId: ResourceId, Updates: SizeConstraintSetUpdates): UpdateSizeConstraintSetRequest = {
     val __obj = js.Dynamic.literal(ChangeToken = ChangeToken.asInstanceOf[js.Any], SizeConstraintSetId = SizeConstraintSetId.asInstanceOf[js.Any], Updates = Updates.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateSizeConstraintSetRequest]
   }
   
-  @scala.inline
-  implicit class UpdateSizeConstraintSetRequestMutableBuilder[Self <: UpdateSizeConstraintSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateSizeConstraintSetRequest](x: Self) {
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeConstraintSetId(value: ResourceId): Self = StObject.set(x, "SizeConstraintSetId", value.asInstanceOf[js.Any])
+    inline def setSizeConstraintSetId(value: ResourceId): Self = StObject.set(x, "SizeConstraintSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdates(value: SizeConstraintSetUpdates): Self = StObject.set(x, "Updates", value.asInstanceOf[js.Any])
+    inline def setUpdates(value: SizeConstraintSetUpdates): Self = StObject.set(x, "Updates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatesVarargs(value: SizeConstraintSetUpdate*): Self = StObject.set(x, "Updates", js.Array(value :_*))
+    inline def setUpdatesVarargs(value: SizeConstraintSetUpdate*): Self = StObject.set(x, "Updates", js.Array(value :_*))
   }
 }

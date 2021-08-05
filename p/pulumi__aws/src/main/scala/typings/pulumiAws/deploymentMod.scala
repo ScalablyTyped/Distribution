@@ -61,21 +61,16 @@ object deploymentMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Deployment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Deployment]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Deployment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Deployment]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: DeploymentState): Deployment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Deployment]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: DeploymentState, opts: CustomResourceOptions): Deployment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Deployment]
+    inline def get(name: String, id: Input[ID]): Deployment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Deployment]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Deployment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Deployment]
+    inline def get(name: String, id: Input[ID], state: DeploymentState): Deployment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Deployment]
+    inline def get(name: String, id: Input[ID], state: DeploymentState, opts: CustomResourceOptions): Deployment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Deployment]
     
     /**
       * Returns true if the given object is an instance of Deployment.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigatewayv2/deployment.Deployment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigatewayv2/deployment.Deployment */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigatewayv2/deployment.Deployment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigatewayv2/deployment.Deployment */ Boolean]
   }
   
   trait DeploymentArgs extends StObject {
@@ -97,29 +92,22 @@ object deploymentMod {
   }
   object DeploymentArgs {
     
-    @scala.inline
-    def apply(apiId: Input[String]): DeploymentArgs = {
+    inline def apply(apiId: Input[String]): DeploymentArgs = {
       val __obj = js.Dynamic.literal(apiId = apiId.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeploymentArgs]
     }
     
-    @scala.inline
-    implicit class DeploymentArgsMutableBuilder[Self <: DeploymentArgs] (val x: Self) extends AnyVal {
+    extension [Self <: DeploymentArgs](x: Self) {
       
-      @scala.inline
-      def setApiId(value: Input[String]): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
+      inline def setApiId(value: Input[String]): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setTriggers(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "triggers", value.asInstanceOf[js.Any])
+      inline def setTriggers(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "triggers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriggersUndefined: Self = StObject.set(x, "triggers", js.undefined)
+      inline def setTriggersUndefined: Self = StObject.set(x, "triggers", js.undefined)
     }
   }
   
@@ -147,38 +135,28 @@ object deploymentMod {
   }
   object DeploymentState {
     
-    @scala.inline
-    def apply(): DeploymentState = {
+    inline def apply(): DeploymentState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DeploymentState]
     }
     
-    @scala.inline
-    implicit class DeploymentStateMutableBuilder[Self <: DeploymentState] (val x: Self) extends AnyVal {
+    extension [Self <: DeploymentState](x: Self) {
       
-      @scala.inline
-      def setApiId(value: Input[String]): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
+      inline def setApiId(value: Input[String]): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiIdUndefined: Self = StObject.set(x, "apiId", js.undefined)
+      inline def setApiIdUndefined: Self = StObject.set(x, "apiId", js.undefined)
       
-      @scala.inline
-      def setAutoDeployed(value: Input[Boolean]): Self = StObject.set(x, "autoDeployed", value.asInstanceOf[js.Any])
+      inline def setAutoDeployed(value: Input[Boolean]): Self = StObject.set(x, "autoDeployed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoDeployedUndefined: Self = StObject.set(x, "autoDeployed", js.undefined)
+      inline def setAutoDeployedUndefined: Self = StObject.set(x, "autoDeployed", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setTriggers(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "triggers", value.asInstanceOf[js.Any])
+      inline def setTriggers(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "triggers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriggersUndefined: Self = StObject.set(x, "triggers", js.undefined)
+      inline def setTriggersUndefined: Self = StObject.set(x, "triggers", js.undefined)
     }
   }
 }

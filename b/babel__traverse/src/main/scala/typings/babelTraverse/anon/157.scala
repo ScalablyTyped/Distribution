@@ -11,17 +11,14 @@ trait `157` extends StObject {
 }
 object `157` {
   
-  @scala.inline
-  def apply(): `157` = {
+  inline def apply(): `157` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("PipelineBareFunction")
     __obj.asInstanceOf[`157`]
   }
   
-  @scala.inline
-  implicit class `157MutableBuilder`[Self <: `157`] (val x: Self) extends AnyVal {
+  extension [Self <: `157`](x: Self) {
     
-    @scala.inline
-    def setType(value: PipelineBareFunction): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: PipelineBareFunction): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

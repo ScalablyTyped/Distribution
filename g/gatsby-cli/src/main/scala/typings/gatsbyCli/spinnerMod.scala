@@ -11,8 +11,7 @@ object spinnerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def Spinner(hasTextStatusText: ISpinnerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Spinner")(hasTextStatusText.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Spinner(hasTextStatusText: ISpinnerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Spinner")(hasTextStatusText.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait ISpinnerProps extends StObject {
     
@@ -22,23 +21,18 @@ object spinnerMod {
   }
   object ISpinnerProps {
     
-    @scala.inline
-    def apply(text: String): ISpinnerProps = {
+    inline def apply(text: String): ISpinnerProps = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISpinnerProps]
     }
     
-    @scala.inline
-    implicit class ISpinnerPropsMutableBuilder[Self <: ISpinnerProps] (val x: Self) extends AnyVal {
+    extension [Self <: ISpinnerProps](x: Self) {
       
-      @scala.inline
-      def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
+      inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusTextUndefined: Self = StObject.set(x, "statusText", js.undefined)
+      inline def setStatusTextUndefined: Self = StObject.set(x, "statusText", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
 }

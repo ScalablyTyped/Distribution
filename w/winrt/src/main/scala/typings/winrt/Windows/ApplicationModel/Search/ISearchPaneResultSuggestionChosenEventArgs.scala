@@ -10,16 +10,13 @@ trait ISearchPaneResultSuggestionChosenEventArgs extends StObject {
 }
 object ISearchPaneResultSuggestionChosenEventArgs {
   
-  @scala.inline
-  def apply(tag: String): ISearchPaneResultSuggestionChosenEventArgs = {
+  inline def apply(tag: String): ISearchPaneResultSuggestionChosenEventArgs = {
     val __obj = js.Dynamic.literal(tag = tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISearchPaneResultSuggestionChosenEventArgs]
   }
   
-  @scala.inline
-  implicit class ISearchPaneResultSuggestionChosenEventArgsMutableBuilder[Self <: ISearchPaneResultSuggestionChosenEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ISearchPaneResultSuggestionChosenEventArgs](x: Self) {
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
   }
 }

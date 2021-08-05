@@ -18,22 +18,17 @@ trait ListManagementOptions extends StObject {
 }
 object ListManagementOptions {
   
-  @scala.inline
-  def apply(ContactListName: ContactListName): ListManagementOptions = {
+  inline def apply(ContactListName: ContactListName): ListManagementOptions = {
     val __obj = js.Dynamic.literal(ContactListName = ContactListName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListManagementOptions]
   }
   
-  @scala.inline
-  implicit class ListManagementOptionsMutableBuilder[Self <: ListManagementOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ListManagementOptions](x: Self) {
     
-    @scala.inline
-    def setContactListName(value: ContactListName): Self = StObject.set(x, "ContactListName", value.asInstanceOf[js.Any])
+    inline def setContactListName(value: ContactListName): Self = StObject.set(x, "ContactListName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicName(value: TopicName): Self = StObject.set(x, "TopicName", value.asInstanceOf[js.Any])
+    inline def setTopicName(value: TopicName): Self = StObject.set(x, "TopicName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicNameUndefined: Self = StObject.set(x, "TopicName", js.undefined)
+    inline def setTopicNameUndefined: Self = StObject.set(x, "TopicName", js.undefined)
   }
 }

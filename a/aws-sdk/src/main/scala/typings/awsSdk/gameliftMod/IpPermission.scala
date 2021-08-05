@@ -28,25 +28,19 @@ trait IpPermission extends StObject {
 }
 object IpPermission {
   
-  @scala.inline
-  def apply(FromPort: PortNumber, IpRange: NonBlankString, Protocol: IpProtocol, ToPort: PortNumber): IpPermission = {
+  inline def apply(FromPort: PortNumber, IpRange: NonBlankString, Protocol: IpProtocol, ToPort: PortNumber): IpPermission = {
     val __obj = js.Dynamic.literal(FromPort = FromPort.asInstanceOf[js.Any], IpRange = IpRange.asInstanceOf[js.Any], Protocol = Protocol.asInstanceOf[js.Any], ToPort = ToPort.asInstanceOf[js.Any])
     __obj.asInstanceOf[IpPermission]
   }
   
-  @scala.inline
-  implicit class IpPermissionMutableBuilder[Self <: IpPermission] (val x: Self) extends AnyVal {
+  extension [Self <: IpPermission](x: Self) {
     
-    @scala.inline
-    def setFromPort(value: PortNumber): Self = StObject.set(x, "FromPort", value.asInstanceOf[js.Any])
+    inline def setFromPort(value: PortNumber): Self = StObject.set(x, "FromPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpRange(value: NonBlankString): Self = StObject.set(x, "IpRange", value.asInstanceOf[js.Any])
+    inline def setIpRange(value: NonBlankString): Self = StObject.set(x, "IpRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocol(value: IpProtocol): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: IpProtocol): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToPort(value: PortNumber): Self = StObject.set(x, "ToPort", value.asInstanceOf[js.Any])
+    inline def setToPort(value: PortNumber): Self = StObject.set(x, "ToPort", value.asInstanceOf[js.Any])
   }
 }

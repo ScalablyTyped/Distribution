@@ -14,25 +14,19 @@ trait FailedEvent extends StObject {
 }
 object FailedEvent {
   
-  @scala.inline
-  def apply(): FailedEvent = {
+  inline def apply(): FailedEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FailedEvent]
   }
   
-  @scala.inline
-  implicit class FailedEventMutableBuilder[Self <: FailedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: FailedEvent](x: Self) {
     
-    @scala.inline
-    def setCause(value: String): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+    inline def setCause(value: String): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
+    inline def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
   }
 }

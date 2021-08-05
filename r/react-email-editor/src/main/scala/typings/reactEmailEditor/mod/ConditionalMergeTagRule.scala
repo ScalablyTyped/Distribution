@@ -14,22 +14,17 @@ trait ConditionalMergeTagRule extends StObject {
 }
 object ConditionalMergeTagRule {
   
-  @scala.inline
-  def apply(after: String, before: String, name: String): ConditionalMergeTagRule = {
+  inline def apply(after: String, before: String, name: String): ConditionalMergeTagRule = {
     val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionalMergeTagRule]
   }
   
-  @scala.inline
-  implicit class ConditionalMergeTagRuleMutableBuilder[Self <: ConditionalMergeTagRule] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionalMergeTagRule](x: Self) {
     
-    @scala.inline
-    def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+    inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+    inline def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

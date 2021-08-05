@@ -51,62 +51,44 @@ object Curves {
   }
   object EllipseCurveConfig {
     
-    @scala.inline
-    def apply(): EllipseCurveConfig = {
+    inline def apply(): EllipseCurveConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EllipseCurveConfig]
     }
     
-    @scala.inline
-    implicit class EllipseCurveConfigMutableBuilder[Self <: EllipseCurveConfig] (val x: Self) extends AnyVal {
+    extension [Self <: EllipseCurveConfig](x: Self) {
       
-      @scala.inline
-      def setClockwise(value: Boolean): Self = StObject.set(x, "clockwise", value.asInstanceOf[js.Any])
+      inline def setClockwise(value: Boolean): Self = StObject.set(x, "clockwise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClockwiseUndefined: Self = StObject.set(x, "clockwise", js.undefined)
+      inline def setClockwiseUndefined: Self = StObject.set(x, "clockwise", js.undefined)
       
-      @scala.inline
-      def setEndAngle(value: integer): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
+      inline def setEndAngle(value: integer): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndAngleUndefined: Self = StObject.set(x, "endAngle", js.undefined)
+      inline def setEndAngleUndefined: Self = StObject.set(x, "endAngle", js.undefined)
       
-      @scala.inline
-      def setRotation(value: integer): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+      inline def setRotation(value: integer): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
+      inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
       
-      @scala.inline
-      def setStartAngle(value: integer): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
+      inline def setStartAngle(value: integer): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
+      inline def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXRadius(value: Double): Self = StObject.set(x, "xRadius", value.asInstanceOf[js.Any])
+      inline def setXRadius(value: Double): Self = StObject.set(x, "xRadius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXRadiusUndefined: Self = StObject.set(x, "xRadius", js.undefined)
+      inline def setXRadiusUndefined: Self = StObject.set(x, "xRadius", js.undefined)
       
-      @scala.inline
-      def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYRadius(value: Double): Self = StObject.set(x, "yRadius", value.asInstanceOf[js.Any])
+      inline def setYRadius(value: Double): Self = StObject.set(x, "yRadius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYRadiusUndefined: Self = StObject.set(x, "yRadius", js.undefined)
+      inline def setYRadiusUndefined: Self = StObject.set(x, "yRadius", js.undefined)
       
-      @scala.inline
-      def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }
   }
   
@@ -124,24 +106,19 @@ object Curves {
   }
   object JSONCurve {
     
-    @scala.inline
-    def apply(points: js.Array[Double], `type`: String): JSONCurve = {
+    inline def apply(points: js.Array[Double], `type`: String): JSONCurve = {
       val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[JSONCurve]
     }
     
-    @scala.inline
-    implicit class JSONCurveMutableBuilder[Self <: JSONCurve] (val x: Self) extends AnyVal {
+    extension [Self <: JSONCurve](x: Self) {
       
-      @scala.inline
-      def setPoints(value: js.Array[Double]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+      inline def setPoints(value: js.Array[Double]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointsVarargs(value: Double*): Self = StObject.set(x, "points", js.Array(value :_*))
+      inline def setPointsVarargs(value: Double*): Self = StObject.set(x, "points", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -194,8 +171,7 @@ object Curves {
   }
   object JSONEllipseCurve {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clockwise: Boolean,
       endAngle: integer,
       rotation: integer,
@@ -211,35 +187,25 @@ object Curves {
       __obj.asInstanceOf[JSONEllipseCurve]
     }
     
-    @scala.inline
-    implicit class JSONEllipseCurveMutableBuilder[Self <: JSONEllipseCurve] (val x: Self) extends AnyVal {
+    extension [Self <: JSONEllipseCurve](x: Self) {
       
-      @scala.inline
-      def setClockwise(value: Boolean): Self = StObject.set(x, "clockwise", value.asInstanceOf[js.Any])
+      inline def setClockwise(value: Boolean): Self = StObject.set(x, "clockwise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndAngle(value: integer): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
+      inline def setEndAngle(value: integer): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotation(value: integer): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+      inline def setRotation(value: integer): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartAngle(value: integer): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
+      inline def setStartAngle(value: integer): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXRadius(value: Double): Self = StObject.set(x, "xRadius", value.asInstanceOf[js.Any])
+      inline def setXRadius(value: Double): Self = StObject.set(x, "xRadius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYRadius(value: Double): Self = StObject.set(x, "yRadius", value.asInstanceOf[js.Any])
+      inline def setYRadius(value: Double): Self = StObject.set(x, "yRadius", value.asInstanceOf[js.Any])
     }
   }
   
@@ -272,33 +238,25 @@ object Curves {
   }
   object JSONPath {
     
-    @scala.inline
-    def apply(autoClose: Boolean, curves: js.Array[JSONCurve], `type`: String, x: Double, y: Double): JSONPath = {
+    inline def apply(autoClose: Boolean, curves: js.Array[JSONCurve], `type`: String, x: Double, y: Double): JSONPath = {
       val __obj = js.Dynamic.literal(autoClose = autoClose.asInstanceOf[js.Any], curves = curves.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[JSONPath]
     }
     
-    @scala.inline
-    implicit class JSONPathMutableBuilder[Self <: JSONPath] (val x: Self) extends AnyVal {
+    extension [Self <: JSONPath](x: Self) {
       
-      @scala.inline
-      def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
+      inline def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurves(value: js.Array[JSONCurve]): Self = StObject.set(x, "curves", value.asInstanceOf[js.Any])
+      inline def setCurves(value: js.Array[JSONCurve]): Self = StObject.set(x, "curves", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurvesVarargs(value: JSONCurve*): Self = StObject.set(x, "curves", js.Array(value :_*))
+      inline def setCurvesVarargs(value: JSONCurve*): Self = StObject.set(x, "curves", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

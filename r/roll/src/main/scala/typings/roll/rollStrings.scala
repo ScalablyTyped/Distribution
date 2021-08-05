@@ -9,55 +9,47 @@ object rollStrings {
   
   @js.native
   sealed trait InvalidInputError extends StObject
-  @scala.inline
-  def InvalidInputError: InvalidInputError = "InvalidInputError".asInstanceOf[InvalidInputError]
+  inline def InvalidInputError: InvalidInputError = "InvalidInputError".asInstanceOf[InvalidInputError]
   
   @js.native
   sealed trait add
     extends StObject
        with RollTransformationKey
-  @scala.inline
-  def add: add = "add".asInstanceOf[add]
+  inline def add: add = "add".asInstanceOf[add]
   
   @js.native
   sealed trait `best-of`
     extends StObject
        with RollTransformationKey
-  @scala.inline
-  def `best-of`: `best-of` = "best-of".asInstanceOf[`best-of`]
+  inline def `best-of`: `best-of` = "best-of".asInstanceOf[`best-of`]
   
   @js.native
   sealed trait divide
     extends StObject
        with RollTransformationKey
-  @scala.inline
-  def divide: divide = "divide".asInstanceOf[divide]
+  inline def divide: divide = "divide".asInstanceOf[divide]
   
   @js.native
   sealed trait multiply
     extends StObject
        with RollTransformationKey
-  @scala.inline
-  def multiply: multiply = "multiply".asInstanceOf[multiply]
+  inline def multiply: multiply = "multiply".asInstanceOf[multiply]
   
   @js.native
   sealed trait subtract
     extends StObject
        with RollTransformationKey
-  @scala.inline
-  def subtract: subtract = "subtract".asInstanceOf[subtract]
+  inline def subtract: subtract = "subtract".asInstanceOf[subtract]
   
   @js.native
   sealed trait sum
     extends StObject
        with RollTransformationKey
-  @scala.inline
-  def sum: sum = "sum".asInstanceOf[sum]
+  inline def sum: sum = "sum".asInstanceOf[sum]
   
   @js.native
   sealed trait `worst-of`
     extends StObject
        with RollTransformationKey
-  @scala.inline
-  def `worst-of`: `worst-of` = "worst-of".asInstanceOf[`worst-of`]
+  inline def `worst-of`: `worst-of` = "worst-of".asInstanceOf[`worst-of`]
 }

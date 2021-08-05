@@ -31,34 +31,25 @@ trait IonTabBar extends StObject {
 }
 object IonTabBar {
   
-  @scala.inline
-  def apply(translucent: Boolean): IonTabBar = {
+  inline def apply(translucent: Boolean): IonTabBar = {
     val __obj = js.Dynamic.literal(translucent = translucent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonTabBar]
   }
   
-  @scala.inline
-  implicit class IonTabBarMutableBuilder[Self <: IonTabBar] (val x: Self) extends AnyVal {
+  extension [Self <: IonTabBar](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setMode(value: ios | md): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: ios | md): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setSelectedTab(value: String): Self = StObject.set(x, "selectedTab", value.asInstanceOf[js.Any])
+    inline def setSelectedTab(value: String): Self = StObject.set(x, "selectedTab", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedTabUndefined: Self = StObject.set(x, "selectedTab", js.undefined)
+    inline def setSelectedTabUndefined: Self = StObject.set(x, "selectedTab", js.undefined)
     
-    @scala.inline
-    def setTranslucent(value: Boolean): Self = StObject.set(x, "translucent", value.asInstanceOf[js.Any])
+    inline def setTranslucent(value: Boolean): Self = StObject.set(x, "translucent", value.asInstanceOf[js.Any])
   }
 }

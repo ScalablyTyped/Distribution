@@ -89,6 +89,5 @@ class Date ()
 }
 object Date {
   
-  @scala.inline
-  def apply: DateConstructor = js.Dynamic.global.selectDynamic("Date").asInstanceOf[DateConstructor]
+  inline def apply: DateConstructor = js.Dynamic.global.selectDynamic("Date").asInstanceOf[DateConstructor]
 }

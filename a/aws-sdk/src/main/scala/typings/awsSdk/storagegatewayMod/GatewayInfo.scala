@@ -43,55 +43,39 @@ trait GatewayInfo extends StObject {
 }
 object GatewayInfo {
   
-  @scala.inline
-  def apply(): GatewayInfo = {
+  inline def apply(): GatewayInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GatewayInfo]
   }
   
-  @scala.inline
-  implicit class GatewayInfoMutableBuilder[Self <: GatewayInfo] (val x: Self) extends AnyVal {
+  extension [Self <: GatewayInfo](x: Self) {
     
-    @scala.inline
-    def setEc2InstanceId(value: Ec2InstanceId): Self = StObject.set(x, "Ec2InstanceId", value.asInstanceOf[js.Any])
+    inline def setEc2InstanceId(value: Ec2InstanceId): Self = StObject.set(x, "Ec2InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEc2InstanceIdUndefined: Self = StObject.set(x, "Ec2InstanceId", js.undefined)
+    inline def setEc2InstanceIdUndefined: Self = StObject.set(x, "Ec2InstanceId", js.undefined)
     
-    @scala.inline
-    def setEc2InstanceRegion(value: Ec2InstanceRegion): Self = StObject.set(x, "Ec2InstanceRegion", value.asInstanceOf[js.Any])
+    inline def setEc2InstanceRegion(value: Ec2InstanceRegion): Self = StObject.set(x, "Ec2InstanceRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEc2InstanceRegionUndefined: Self = StObject.set(x, "Ec2InstanceRegion", js.undefined)
+    inline def setEc2InstanceRegionUndefined: Self = StObject.set(x, "Ec2InstanceRegion", js.undefined)
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
+    inline def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
     
-    @scala.inline
-    def setGatewayId(value: GatewayId): Self = StObject.set(x, "GatewayId", value.asInstanceOf[js.Any])
+    inline def setGatewayId(value: GatewayId): Self = StObject.set(x, "GatewayId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayIdUndefined: Self = StObject.set(x, "GatewayId", js.undefined)
+    inline def setGatewayIdUndefined: Self = StObject.set(x, "GatewayId", js.undefined)
     
-    @scala.inline
-    def setGatewayName(value: String): Self = StObject.set(x, "GatewayName", value.asInstanceOf[js.Any])
+    inline def setGatewayName(value: String): Self = StObject.set(x, "GatewayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayNameUndefined: Self = StObject.set(x, "GatewayName", js.undefined)
+    inline def setGatewayNameUndefined: Self = StObject.set(x, "GatewayName", js.undefined)
     
-    @scala.inline
-    def setGatewayOperationalState(value: GatewayOperationalState): Self = StObject.set(x, "GatewayOperationalState", value.asInstanceOf[js.Any])
+    inline def setGatewayOperationalState(value: GatewayOperationalState): Self = StObject.set(x, "GatewayOperationalState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayOperationalStateUndefined: Self = StObject.set(x, "GatewayOperationalState", js.undefined)
+    inline def setGatewayOperationalStateUndefined: Self = StObject.set(x, "GatewayOperationalState", js.undefined)
     
-    @scala.inline
-    def setGatewayType(value: GatewayType): Self = StObject.set(x, "GatewayType", value.asInstanceOf[js.Any])
+    inline def setGatewayType(value: GatewayType): Self = StObject.set(x, "GatewayType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayTypeUndefined: Self = StObject.set(x, "GatewayType", js.undefined)
+    inline def setGatewayTypeUndefined: Self = StObject.set(x, "GatewayType", js.undefined)
   }
 }

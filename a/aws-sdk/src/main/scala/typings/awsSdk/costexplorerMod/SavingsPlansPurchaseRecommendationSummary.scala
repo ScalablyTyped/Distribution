@@ -63,79 +63,55 @@ trait SavingsPlansPurchaseRecommendationSummary extends StObject {
 }
 object SavingsPlansPurchaseRecommendationSummary {
   
-  @scala.inline
-  def apply(): SavingsPlansPurchaseRecommendationSummary = {
+  inline def apply(): SavingsPlansPurchaseRecommendationSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SavingsPlansPurchaseRecommendationSummary]
   }
   
-  @scala.inline
-  implicit class SavingsPlansPurchaseRecommendationSummaryMutableBuilder[Self <: SavingsPlansPurchaseRecommendationSummary] (val x: Self) extends AnyVal {
+  extension [Self <: SavingsPlansPurchaseRecommendationSummary](x: Self) {
     
-    @scala.inline
-    def setCurrencyCode(value: GenericString): Self = StObject.set(x, "CurrencyCode", value.asInstanceOf[js.Any])
+    inline def setCurrencyCode(value: GenericString): Self = StObject.set(x, "CurrencyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyCodeUndefined: Self = StObject.set(x, "CurrencyCode", js.undefined)
+    inline def setCurrencyCodeUndefined: Self = StObject.set(x, "CurrencyCode", js.undefined)
     
-    @scala.inline
-    def setCurrentOnDemandSpend(value: GenericString): Self = StObject.set(x, "CurrentOnDemandSpend", value.asInstanceOf[js.Any])
+    inline def setCurrentOnDemandSpend(value: GenericString): Self = StObject.set(x, "CurrentOnDemandSpend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentOnDemandSpendUndefined: Self = StObject.set(x, "CurrentOnDemandSpend", js.undefined)
+    inline def setCurrentOnDemandSpendUndefined: Self = StObject.set(x, "CurrentOnDemandSpend", js.undefined)
     
-    @scala.inline
-    def setDailyCommitmentToPurchase(value: GenericString): Self = StObject.set(x, "DailyCommitmentToPurchase", value.asInstanceOf[js.Any])
+    inline def setDailyCommitmentToPurchase(value: GenericString): Self = StObject.set(x, "DailyCommitmentToPurchase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDailyCommitmentToPurchaseUndefined: Self = StObject.set(x, "DailyCommitmentToPurchase", js.undefined)
+    inline def setDailyCommitmentToPurchaseUndefined: Self = StObject.set(x, "DailyCommitmentToPurchase", js.undefined)
     
-    @scala.inline
-    def setEstimatedMonthlySavingsAmount(value: GenericString): Self = StObject.set(x, "EstimatedMonthlySavingsAmount", value.asInstanceOf[js.Any])
+    inline def setEstimatedMonthlySavingsAmount(value: GenericString): Self = StObject.set(x, "EstimatedMonthlySavingsAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedMonthlySavingsAmountUndefined: Self = StObject.set(x, "EstimatedMonthlySavingsAmount", js.undefined)
+    inline def setEstimatedMonthlySavingsAmountUndefined: Self = StObject.set(x, "EstimatedMonthlySavingsAmount", js.undefined)
     
-    @scala.inline
-    def setEstimatedOnDemandCostWithCurrentCommitment(value: GenericString): Self = StObject.set(x, "EstimatedOnDemandCostWithCurrentCommitment", value.asInstanceOf[js.Any])
+    inline def setEstimatedOnDemandCostWithCurrentCommitment(value: GenericString): Self = StObject.set(x, "EstimatedOnDemandCostWithCurrentCommitment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedOnDemandCostWithCurrentCommitmentUndefined: Self = StObject.set(x, "EstimatedOnDemandCostWithCurrentCommitment", js.undefined)
+    inline def setEstimatedOnDemandCostWithCurrentCommitmentUndefined: Self = StObject.set(x, "EstimatedOnDemandCostWithCurrentCommitment", js.undefined)
     
-    @scala.inline
-    def setEstimatedROI(value: GenericString): Self = StObject.set(x, "EstimatedROI", value.asInstanceOf[js.Any])
+    inline def setEstimatedROI(value: GenericString): Self = StObject.set(x, "EstimatedROI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedROIUndefined: Self = StObject.set(x, "EstimatedROI", js.undefined)
+    inline def setEstimatedROIUndefined: Self = StObject.set(x, "EstimatedROI", js.undefined)
     
-    @scala.inline
-    def setEstimatedSavingsAmount(value: GenericString): Self = StObject.set(x, "EstimatedSavingsAmount", value.asInstanceOf[js.Any])
+    inline def setEstimatedSavingsAmount(value: GenericString): Self = StObject.set(x, "EstimatedSavingsAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedSavingsAmountUndefined: Self = StObject.set(x, "EstimatedSavingsAmount", js.undefined)
+    inline def setEstimatedSavingsAmountUndefined: Self = StObject.set(x, "EstimatedSavingsAmount", js.undefined)
     
-    @scala.inline
-    def setEstimatedSavingsPercentage(value: GenericString): Self = StObject.set(x, "EstimatedSavingsPercentage", value.asInstanceOf[js.Any])
+    inline def setEstimatedSavingsPercentage(value: GenericString): Self = StObject.set(x, "EstimatedSavingsPercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedSavingsPercentageUndefined: Self = StObject.set(x, "EstimatedSavingsPercentage", js.undefined)
+    inline def setEstimatedSavingsPercentageUndefined: Self = StObject.set(x, "EstimatedSavingsPercentage", js.undefined)
     
-    @scala.inline
-    def setEstimatedTotalCost(value: GenericString): Self = StObject.set(x, "EstimatedTotalCost", value.asInstanceOf[js.Any])
+    inline def setEstimatedTotalCost(value: GenericString): Self = StObject.set(x, "EstimatedTotalCost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedTotalCostUndefined: Self = StObject.set(x, "EstimatedTotalCost", js.undefined)
+    inline def setEstimatedTotalCostUndefined: Self = StObject.set(x, "EstimatedTotalCost", js.undefined)
     
-    @scala.inline
-    def setHourlyCommitmentToPurchase(value: GenericString): Self = StObject.set(x, "HourlyCommitmentToPurchase", value.asInstanceOf[js.Any])
+    inline def setHourlyCommitmentToPurchase(value: GenericString): Self = StObject.set(x, "HourlyCommitmentToPurchase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHourlyCommitmentToPurchaseUndefined: Self = StObject.set(x, "HourlyCommitmentToPurchase", js.undefined)
+    inline def setHourlyCommitmentToPurchaseUndefined: Self = StObject.set(x, "HourlyCommitmentToPurchase", js.undefined)
     
-    @scala.inline
-    def setTotalRecommendationCount(value: GenericString): Self = StObject.set(x, "TotalRecommendationCount", value.asInstanceOf[js.Any])
+    inline def setTotalRecommendationCount(value: GenericString): Self = StObject.set(x, "TotalRecommendationCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalRecommendationCountUndefined: Self = StObject.set(x, "TotalRecommendationCount", js.undefined)
+    inline def setTotalRecommendationCountUndefined: Self = StObject.set(x, "TotalRecommendationCount", js.undefined)
   }
 }

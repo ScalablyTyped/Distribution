@@ -12,19 +12,15 @@ trait TeamsGetDiscussionLegacyEndpoint extends StObject {
 }
 object TeamsGetDiscussionLegacyEndpoint {
   
-  @scala.inline
-  def apply(discussion_number: Double, team_id: Double): TeamsGetDiscussionLegacyEndpoint = {
+  inline def apply(discussion_number: Double, team_id: Double): TeamsGetDiscussionLegacyEndpoint = {
     val __obj = js.Dynamic.literal(discussion_number = discussion_number.asInstanceOf[js.Any], team_id = team_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamsGetDiscussionLegacyEndpoint]
   }
   
-  @scala.inline
-  implicit class TeamsGetDiscussionLegacyEndpointMutableBuilder[Self <: TeamsGetDiscussionLegacyEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: TeamsGetDiscussionLegacyEndpoint](x: Self) {
     
-    @scala.inline
-    def setDiscussion_number(value: Double): Self = StObject.set(x, "discussion_number", value.asInstanceOf[js.Any])
+    inline def setDiscussion_number(value: Double): Self = StObject.set(x, "discussion_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeam_id(value: Double): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
+    inline def setTeam_id(value: Double): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
   }
 }

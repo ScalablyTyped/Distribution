@@ -35,26 +35,20 @@ object typesPutFileOutputMod {
   }
   object PutFileOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata, blobId: String, commitId: String, treeId: String): PutFileOutput = {
+    inline def apply($metadata: ResponseMetadata, blobId: String, commitId: String, treeId: String): PutFileOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], blobId = blobId.asInstanceOf[js.Any], commitId = commitId.asInstanceOf[js.Any], treeId = treeId.asInstanceOf[js.Any])
       __obj.asInstanceOf[PutFileOutput]
     }
     
-    @scala.inline
-    implicit class PutFileOutputMutableBuilder[Self <: PutFileOutput] (val x: Self) extends AnyVal {
+    extension [Self <: PutFileOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlobId(value: String): Self = StObject.set(x, "blobId", value.asInstanceOf[js.Any])
+      inline def setBlobId(value: String): Self = StObject.set(x, "blobId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommitId(value: String): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
+      inline def setCommitId(value: String): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTreeId(value: String): Self = StObject.set(x, "treeId", value.asInstanceOf[js.Any])
+      inline def setTreeId(value: String): Self = StObject.set(x, "treeId", value.asInstanceOf[js.Any])
     }
   }
 }

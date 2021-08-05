@@ -43,8 +43,7 @@ trait DequeueOptions extends StObject {
 }
 object DequeueOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     condition: String,
     consumerName: String,
     correlation: String,
@@ -60,34 +59,24 @@ object DequeueOptions {
     __obj.asInstanceOf[DequeueOptions]
   }
   
-  @scala.inline
-  implicit class DequeueOptionsMutableBuilder[Self <: DequeueOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DequeueOptions](x: Self) {
     
-    @scala.inline
-    def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumerName(value: String): Self = StObject.set(x, "consumerName", value.asInstanceOf[js.Any])
+    inline def setConsumerName(value: String): Self = StObject.set(x, "consumerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorrelation(value: String): Self = StObject.set(x, "correlation", value.asInstanceOf[js.Any])
+    inline def setCorrelation(value: String): Self = StObject.set(x, "correlation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsgId(value: Buffer): Self = StObject.set(x, "msgId", value.asInstanceOf[js.Any])
+    inline def setMsgId(value: Buffer): Self = StObject.set(x, "msgId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigation(value: Double): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
+    inline def setNavigation(value: Double): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformation(value: String): Self = StObject.set(x, "transformation", value.asInstanceOf[js.Any])
+    inline def setTransformation(value: String): Self = StObject.set(x, "transformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibility(value: Double): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: Double): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWait_(value: Double): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
+    inline def setWait_(value: Double): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
   }
 }

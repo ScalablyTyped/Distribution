@@ -18,10 +18,8 @@ object mod {
   })();
   ```
   */
-  @scala.inline
-  def apply(): js.Promise[js.Array[ProcessDescriptor]] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[js.Array[ProcessDescriptor]]]
-  @scala.inline
-  def apply(options: Options): js.Promise[js.Array[ProcessDescriptor]] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[ProcessDescriptor]]]
+  inline def apply(): js.Promise[js.Array[ProcessDescriptor]] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[js.Array[ProcessDescriptor]]]
+  inline def apply(options: Options): js.Promise[js.Array[ProcessDescriptor]] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[ProcessDescriptor]]]
   
   @JSImport("ps-list", JSImport.Namespace)
   @js.native
@@ -38,20 +36,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+      inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
+      inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     }
   }
   
@@ -85,47 +79,34 @@ object mod {
   }
   object ProcessDescriptor {
     
-    @scala.inline
-    def apply(name: String, pid: Double, ppid: Double): ProcessDescriptor = {
+    inline def apply(name: String, pid: Double, ppid: Double): ProcessDescriptor = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], ppid = ppid.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProcessDescriptor]
     }
     
-    @scala.inline
-    implicit class ProcessDescriptorMutableBuilder[Self <: ProcessDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: ProcessDescriptor](x: Self) {
       
-      @scala.inline
-      def setCmd(value: String): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
+      inline def setCmd(value: String): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCmdUndefined: Self = StObject.set(x, "cmd", js.undefined)
+      inline def setCmdUndefined: Self = StObject.set(x, "cmd", js.undefined)
       
-      @scala.inline
-      def setCpu(value: Double): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
+      inline def setCpu(value: Double): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCpuUndefined: Self = StObject.set(x, "cpu", js.undefined)
+      inline def setCpuUndefined: Self = StObject.set(x, "cpu", js.undefined)
       
-      @scala.inline
-      def setMemory(value: Double): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
+      inline def setMemory(value: Double): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
+      inline def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
+      inline def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPpid(value: Double): Self = StObject.set(x, "ppid", value.asInstanceOf[js.Any])
+      inline def setPpid(value: Double): Self = StObject.set(x, "ppid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+      inline def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
+      inline def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
     }
   }
 }

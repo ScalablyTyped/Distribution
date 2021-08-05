@@ -12,16 +12,13 @@ trait ReadResponseHeaders extends StObject {
 }
 object ReadResponseHeaders {
   
-  @scala.inline
-  def apply(): ReadResponseHeaders = {
+  inline def apply(): ReadResponseHeaders = {
     val __obj = js.Dynamic.literal(resolveWithFullResponse = true)
     __obj.asInstanceOf[ReadResponseHeaders]
   }
   
-  @scala.inline
-  implicit class ReadResponseHeadersMutableBuilder[Self <: ReadResponseHeaders] (val x: Self) extends AnyVal {
+  extension [Self <: ReadResponseHeaders](x: Self) {
     
-    @scala.inline
-    def setResolveWithFullResponse(value: `true`): Self = StObject.set(x, "resolveWithFullResponse", value.asInstanceOf[js.Any])
+    inline def setResolveWithFullResponse(value: `true`): Self = StObject.set(x, "resolveWithFullResponse", value.asInstanceOf[js.Any])
   }
 }

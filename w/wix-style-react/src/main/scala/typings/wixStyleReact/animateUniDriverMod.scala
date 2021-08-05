@@ -15,8 +15,7 @@ object animateUniDriverMod {
   }
   object AnimateUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -26,11 +25,9 @@ object animateUniDriverMod {
       __obj.asInstanceOf[AnimateUniDriver]
     }
     
-    @scala.inline
-    implicit class AnimateUniDriverMutableBuilder[Self <: AnimateUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: AnimateUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetDelay(value: () => js.Promise[String]): Self = StObject.set(x, "getDelay", js.Any.fromFunction0(value))
+      inline def setGetDelay(value: () => js.Promise[String]): Self = StObject.set(x, "getDelay", js.Any.fromFunction0(value))
     }
   }
 }

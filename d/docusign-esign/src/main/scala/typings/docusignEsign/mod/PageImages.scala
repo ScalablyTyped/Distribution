@@ -43,58 +43,41 @@ trait PageImages extends StObject {
 }
 object PageImages {
   
-  @scala.inline
-  def apply(): PageImages = {
+  inline def apply(): PageImages = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PageImages]
   }
   
-  @scala.inline
-  implicit class PageImagesMutableBuilder[Self <: PageImages] (val x: Self) extends AnyVal {
+  extension [Self <: PageImages](x: Self) {
     
-    @scala.inline
-    def setEndPosition(value: String): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
+    inline def setEndPosition(value: String): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndPositionUndefined: Self = StObject.set(x, "endPosition", js.undefined)
+    inline def setEndPositionUndefined: Self = StObject.set(x, "endPosition", js.undefined)
     
-    @scala.inline
-    def setNextUri(value: String): Self = StObject.set(x, "nextUri", value.asInstanceOf[js.Any])
+    inline def setNextUri(value: String): Self = StObject.set(x, "nextUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextUriUndefined: Self = StObject.set(x, "nextUri", js.undefined)
+    inline def setNextUriUndefined: Self = StObject.set(x, "nextUri", js.undefined)
     
-    @scala.inline
-    def setPages(value: js.Array[/* Description of a page of a document. */ Page]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+    inline def setPages(value: js.Array[/* Description of a page of a document. */ Page]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
+    inline def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
     
-    @scala.inline
-    def setPagesVarargs(value: (/* Description of a page of a document. */ Page)*): Self = StObject.set(x, "pages", js.Array(value :_*))
+    inline def setPagesVarargs(value: (/* Description of a page of a document. */ Page)*): Self = StObject.set(x, "pages", js.Array(value :_*))
     
-    @scala.inline
-    def setPreviousUri(value: String): Self = StObject.set(x, "previousUri", value.asInstanceOf[js.Any])
+    inline def setPreviousUri(value: String): Self = StObject.set(x, "previousUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousUriUndefined: Self = StObject.set(x, "previousUri", js.undefined)
+    inline def setPreviousUriUndefined: Self = StObject.set(x, "previousUri", js.undefined)
     
-    @scala.inline
-    def setResultSetSize(value: String): Self = StObject.set(x, "resultSetSize", value.asInstanceOf[js.Any])
+    inline def setResultSetSize(value: String): Self = StObject.set(x, "resultSetSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultSetSizeUndefined: Self = StObject.set(x, "resultSetSize", js.undefined)
+    inline def setResultSetSizeUndefined: Self = StObject.set(x, "resultSetSize", js.undefined)
     
-    @scala.inline
-    def setStartPosition(value: String): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
+    inline def setStartPosition(value: String): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartPositionUndefined: Self = StObject.set(x, "startPosition", js.undefined)
+    inline def setStartPositionUndefined: Self = StObject.set(x, "startPosition", js.undefined)
     
-    @scala.inline
-    def setTotalSetSize(value: String): Self = StObject.set(x, "totalSetSize", value.asInstanceOf[js.Any])
+    inline def setTotalSetSize(value: String): Self = StObject.set(x, "totalSetSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalSetSizeUndefined: Self = StObject.set(x, "totalSetSize", js.undefined)
+    inline def setTotalSetSizeUndefined: Self = StObject.set(x, "totalSetSize", js.undefined)
   }
 }

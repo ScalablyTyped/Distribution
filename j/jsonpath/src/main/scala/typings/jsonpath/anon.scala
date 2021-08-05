@@ -15,23 +15,18 @@ object anon {
   }
   object Path {
     
-    @scala.inline
-    def apply(path: js.Array[PathComponent], value: js.Any): Path = {
+    inline def apply(path: js.Array[PathComponent], value: js.Any): Path = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Path]
     }
     
-    @scala.inline
-    implicit class PathMutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
+    extension [Self <: Path](x: Self) {
       
-      @scala.inline
-      def setPath(value: js.Array[PathComponent]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: js.Array[PathComponent]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathVarargs(value: PathComponent*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: PathComponent*): Self = StObject.set(x, "path", js.Array(value :_*))
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

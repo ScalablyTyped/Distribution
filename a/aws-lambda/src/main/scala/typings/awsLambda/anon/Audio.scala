@@ -10,16 +10,13 @@ trait Audio extends StObject {
 }
 object Audio {
   
-  @scala.inline
-  def apply(Audio: StartFragmentNumber): Audio = {
+  inline def apply(Audio: StartFragmentNumber): Audio = {
     val __obj = js.Dynamic.literal(Audio = Audio.asInstanceOf[js.Any])
     __obj.asInstanceOf[Audio]
   }
   
-  @scala.inline
-  implicit class AudioMutableBuilder[Self <: Audio] (val x: Self) extends AnyVal {
+  extension [Self <: Audio](x: Self) {
     
-    @scala.inline
-    def setAudio(value: StartFragmentNumber): Self = StObject.set(x, "Audio", value.asInstanceOf[js.Any])
+    inline def setAudio(value: StartFragmentNumber): Self = StObject.set(x, "Audio", value.asInstanceOf[js.Any])
   }
 }

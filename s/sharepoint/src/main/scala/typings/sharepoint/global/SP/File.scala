@@ -17,6 +17,5 @@ object File {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def getContentVerFromTag(context: typings.sharepoint.SP.ClientRuntimeContext, contentTag: String): typings.sharepoint.SP.IntResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getContentVerFromTag")(context.asInstanceOf[js.Any], contentTag.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.IntResult]
+  inline def getContentVerFromTag(context: typings.sharepoint.SP.ClientRuntimeContext, contentTag: String): typings.sharepoint.SP.IntResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getContentVerFromTag")(context.asInstanceOf[js.Any], contentTag.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.IntResult]
 }

@@ -23,22 +23,17 @@ trait GetIntegrationRequest extends StObject {
 }
 object GetIntegrationRequest {
   
-  @scala.inline
-  def apply(httpMethod: String, resourceId: String, restApiId: String): GetIntegrationRequest = {
+  inline def apply(httpMethod: String, resourceId: String, restApiId: String): GetIntegrationRequest = {
     val __obj = js.Dynamic.literal(httpMethod = httpMethod.asInstanceOf[js.Any], resourceId = resourceId.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetIntegrationRequest]
   }
   
-  @scala.inline
-  implicit class GetIntegrationRequestMutableBuilder[Self <: GetIntegrationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetIntegrationRequest](x: Self) {
     
-    @scala.inline
-    def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
+    inline def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
+    inline def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
   }
 }

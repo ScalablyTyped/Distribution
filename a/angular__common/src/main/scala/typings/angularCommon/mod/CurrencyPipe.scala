@@ -16,9 +16,9 @@ class CurrencyPipe protected ()
   def this(_locale: String) = this()
   def this(_locale: String, _defaultCurrencyCode: String) = this()
   
-  var _defaultCurrencyCode: js.Any = js.native
+  /* private */ var _defaultCurrencyCode: js.Any = js.native
   
-  var _locale: js.Any = js.native
+  /* private */ var _locale: js.Any = js.native
   
   def transform(
     value: js.UndefOr[Null],

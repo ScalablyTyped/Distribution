@@ -11,8 +11,7 @@ trait UpdateApnsVoipSandboxChannelOutput
      with typings.awsSdkClientPinpointBrowser.typesUpdateApnsVoipSandboxChannelOutputMod.UpdateApnsVoipSandboxChannelOutput
 object UpdateApnsVoipSandboxChannelOutput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $metadata: ResponseMetadata,
     APNSVoipSandboxChannelResponse: UnmarshalledAPNSVoipSandboxChannelResponse
   ): UpdateApnsVoipSandboxChannelOutput = {

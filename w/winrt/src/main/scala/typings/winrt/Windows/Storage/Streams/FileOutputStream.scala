@@ -14,8 +14,7 @@ trait FileOutputStream
 }
 object FileOutputStream {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     close: () => Unit,
     dispose: () => Unit,
     flushAsync: () => IAsyncOperation[Boolean],
@@ -25,10 +24,8 @@ object FileOutputStream {
     __obj.asInstanceOf[FileOutputStream]
   }
   
-  @scala.inline
-  implicit class FileOutputStreamMutableBuilder[Self <: FileOutputStream] (val x: Self) extends AnyVal {
+  extension [Self <: FileOutputStream](x: Self) {
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
   }
 }

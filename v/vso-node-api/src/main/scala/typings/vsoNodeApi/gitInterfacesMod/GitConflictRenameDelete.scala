@@ -20,8 +20,7 @@ trait GitConflictRenameDelete
 }
 object GitConflictRenameDelete {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     baseBlob: GitBlobRef,
     conflictId: Double,
@@ -44,19 +43,14 @@ object GitConflictRenameDelete {
     __obj.asInstanceOf[GitConflictRenameDelete]
   }
   
-  @scala.inline
-  implicit class GitConflictRenameDeleteMutableBuilder[Self <: GitConflictRenameDelete] (val x: Self) extends AnyVal {
+  extension [Self <: GitConflictRenameDelete](x: Self) {
     
-    @scala.inline
-    def setBaseBlob(value: GitBlobRef): Self = StObject.set(x, "baseBlob", value.asInstanceOf[js.Any])
+    inline def setBaseBlob(value: GitBlobRef): Self = StObject.set(x, "baseBlob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolution(value: GitResolutionPickOneAction): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
+    inline def setResolution(value: GitResolutionPickOneAction): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceBlob(value: GitBlobRef): Self = StObject.set(x, "sourceBlob", value.asInstanceOf[js.Any])
+    inline def setSourceBlob(value: GitBlobRef): Self = StObject.set(x, "sourceBlob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceNewPath(value: String): Self = StObject.set(x, "sourceNewPath", value.asInstanceOf[js.Any])
+    inline def setSourceNewPath(value: String): Self = StObject.set(x, "sourceNewPath", value.asInstanceOf[js.Any])
   }
 }

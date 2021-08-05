@@ -13,19 +13,15 @@ trait GetDefaultCreditSpecificationResult extends StObject {
 }
 object GetDefaultCreditSpecificationResult {
   
-  @scala.inline
-  def apply(): GetDefaultCreditSpecificationResult = {
+  inline def apply(): GetDefaultCreditSpecificationResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDefaultCreditSpecificationResult]
   }
   
-  @scala.inline
-  implicit class GetDefaultCreditSpecificationResultMutableBuilder[Self <: GetDefaultCreditSpecificationResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetDefaultCreditSpecificationResult](x: Self) {
     
-    @scala.inline
-    def setInstanceFamilyCreditSpecification(value: InstanceFamilyCreditSpecification): Self = StObject.set(x, "InstanceFamilyCreditSpecification", value.asInstanceOf[js.Any])
+    inline def setInstanceFamilyCreditSpecification(value: InstanceFamilyCreditSpecification): Self = StObject.set(x, "InstanceFamilyCreditSpecification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceFamilyCreditSpecificationUndefined: Self = StObject.set(x, "InstanceFamilyCreditSpecification", js.undefined)
+    inline def setInstanceFamilyCreditSpecificationUndefined: Self = StObject.set(x, "InstanceFamilyCreditSpecification", js.undefined)
   }
 }

@@ -28,25 +28,19 @@ trait EmitterOpEaseConfig
 }
 object EmitterOpEaseConfig {
   
-  @scala.inline
-  def apply(end: Double, start: Double): EmitterOpEaseConfig = {
+  inline def apply(end: Double, start: Double): EmitterOpEaseConfig = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmitterOpEaseConfig]
   }
   
-  @scala.inline
-  implicit class EmitterOpEaseConfigMutableBuilder[Self <: EmitterOpEaseConfig] (val x: Self) extends AnyVal {
+  extension [Self <: EmitterOpEaseConfig](x: Self) {
     
-    @scala.inline
-    def setEase(value: String): Self = StObject.set(x, "ease", value.asInstanceOf[js.Any])
+    inline def setEase(value: String): Self = StObject.set(x, "ease", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEaseUndefined: Self = StObject.set(x, "ease", js.undefined)
+    inline def setEaseUndefined: Self = StObject.set(x, "ease", js.undefined)
     
-    @scala.inline
-    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

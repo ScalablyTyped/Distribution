@@ -14,6 +14,5 @@ class string[T /* <: js.UndefOr[String | Null] */, C] ()
      with StringSchema[T, C]
 object string {
   
-  @scala.inline
-  def apply: StringSchemaConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("string").asInstanceOf[StringSchemaConstructor]
+  inline def apply: StringSchemaConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("string").asInstanceOf[StringSchemaConstructor]
 }

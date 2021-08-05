@@ -14,28 +14,21 @@ trait SjclCipherEncrypted
 }
 object SjclCipherEncrypted {
   
-  @scala.inline
-  def apply(ct: BitArray_, iv: BitArray_, salt: BitArray_): SjclCipherEncrypted = {
+  inline def apply(ct: BitArray_, iv: BitArray_, salt: BitArray_): SjclCipherEncrypted = {
     val __obj = js.Dynamic.literal(ct = ct.asInstanceOf[js.Any], iv = iv.asInstanceOf[js.Any], salt = salt.asInstanceOf[js.Any])
     __obj.asInstanceOf[SjclCipherEncrypted]
   }
   
-  @scala.inline
-  implicit class SjclCipherEncryptedMutableBuilder[Self <: SjclCipherEncrypted] (val x: Self) extends AnyVal {
+  extension [Self <: SjclCipherEncrypted](x: Self) {
     
-    @scala.inline
-    def setCt(value: BitArray_): Self = StObject.set(x, "ct", value.asInstanceOf[js.Any])
+    inline def setCt(value: BitArray_): Self = StObject.set(x, "ct", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCtVarargs(value: Double*): Self = StObject.set(x, "ct", js.Array(value :_*))
+    inline def setCtVarargs(value: Double*): Self = StObject.set(x, "ct", js.Array(value :_*))
     
-    @scala.inline
-    def setKemtag(value: BitArray_): Self = StObject.set(x, "kemtag", value.asInstanceOf[js.Any])
+    inline def setKemtag(value: BitArray_): Self = StObject.set(x, "kemtag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKemtagUndefined: Self = StObject.set(x, "kemtag", js.undefined)
+    inline def setKemtagUndefined: Self = StObject.set(x, "kemtag", js.undefined)
     
-    @scala.inline
-    def setKemtagVarargs(value: Double*): Self = StObject.set(x, "kemtag", js.Array(value :_*))
+    inline def setKemtagVarargs(value: Double*): Self = StObject.set(x, "kemtag", js.Array(value :_*))
   }
 }

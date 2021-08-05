@@ -29,26 +29,20 @@ object sessions {
   }
   object Device {
     
-    @scala.inline
-    def apply(deviceName: String, info: String, sessions: js.Array[Session]): Device = {
+    inline def apply(deviceName: String, info: String, sessions: js.Array[Session]): Device = {
       val __obj = js.Dynamic.literal(deviceName = deviceName.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], sessions = sessions.asInstanceOf[js.Any])
       __obj.asInstanceOf[Device]
     }
     
-    @scala.inline
-    implicit class DeviceMutableBuilder[Self <: Device] (val x: Self) extends AnyVal {
+    extension [Self <: Device](x: Self) {
       
-      @scala.inline
-      def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
+      inline def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessions(value: js.Array[Session]): Self = StObject.set(x, "sessions", value.asInstanceOf[js.Any])
+      inline def setSessions(value: js.Array[Session]): Self = StObject.set(x, "sessions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionsVarargs(value: Session*): Self = StObject.set(x, "sessions", js.Array(value :_*))
+      inline def setSessionsVarargs(value: Session*): Self = StObject.set(x, "sessions", js.Array(value :_*))
     }
   }
   
@@ -62,20 +56,16 @@ object sessions {
   }
   object Filter {
     
-    @scala.inline
-    def apply(): Filter = {
+    inline def apply(): Filter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Filter]
     }
     
-    @scala.inline
-    implicit class FilterMutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
+    extension [Self <: Filter](x: Self) {
       
-      @scala.inline
-      def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+      inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+      inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     }
   }
   
@@ -94,29 +84,22 @@ object sessions {
   }
   object Session {
     
-    @scala.inline
-    def apply(lastModified: Double): Session = {
+    inline def apply(lastModified: Double): Session = {
       val __obj = js.Dynamic.literal(lastModified = lastModified.asInstanceOf[js.Any])
       __obj.asInstanceOf[Session]
     }
     
-    @scala.inline
-    implicit class SessionMutableBuilder[Self <: Session] (val x: Self) extends AnyVal {
+    extension [Self <: Session](x: Self) {
       
-      @scala.inline
-      def setLastModified(value: Double): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
+      inline def setLastModified(value: Double): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTab(value: Tab): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
+      inline def setTab(value: Tab): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabUndefined: Self = StObject.set(x, "tab", js.undefined)
+      inline def setTabUndefined: Self = StObject.set(x, "tab", js.undefined)
       
-      @scala.inline
-      def setWindow(value: Window): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+      inline def setWindow(value: Window): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
+      inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
     }
   }
 }

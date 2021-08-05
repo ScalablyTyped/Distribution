@@ -20,8 +20,7 @@ trait StructureExtractor
 }
 object StructureExtractor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cooldown: Double,
     destroy: () => ScreepsReturnCode,
     effects: js.Array[RoomObjectEffect],
@@ -39,10 +38,8 @@ object StructureExtractor {
     __obj.asInstanceOf[StructureExtractor]
   }
   
-  @scala.inline
-  implicit class StructureExtractorMutableBuilder[Self <: StructureExtractor] (val x: Self) extends AnyVal {
+  extension [Self <: StructureExtractor](x: Self) {
     
-    @scala.inline
-    def setCooldown(value: Double): Self = StObject.set(x, "cooldown", value.asInstanceOf[js.Any])
+    inline def setCooldown(value: Double): Self = StObject.set(x, "cooldown", value.asInstanceOf[js.Any])
   }
 }

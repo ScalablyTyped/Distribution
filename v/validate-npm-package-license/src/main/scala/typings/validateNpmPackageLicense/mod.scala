@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(license: String): Result = ^.asInstanceOf[js.Dynamic].apply(license.asInstanceOf[js.Any]).asInstanceOf[Result]
+  inline def apply(license: String): Result = ^.asInstanceOf[js.Dynamic].apply(license.asInstanceOf[js.Any]).asInstanceOf[Result]
   
   @JSImport("validate-npm-package-license", JSImport.Namespace)
   @js.native
@@ -30,47 +29,34 @@ object mod {
   }
   object Result {
     
-    @scala.inline
-    def apply(validForNewPackages: Boolean, validForOldPackages: Boolean): Result = {
+    inline def apply(validForNewPackages: Boolean, validForOldPackages: Boolean): Result = {
       val __obj = js.Dynamic.literal(validForNewPackages = validForNewPackages.asInstanceOf[js.Any], validForOldPackages = validForOldPackages.asInstanceOf[js.Any])
       __obj.asInstanceOf[Result]
     }
     
-    @scala.inline
-    implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+    extension [Self <: Result](x: Self) {
       
-      @scala.inline
-      def setInFile(value: String): Self = StObject.set(x, "inFile", value.asInstanceOf[js.Any])
+      inline def setInFile(value: String): Self = StObject.set(x, "inFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInFileUndefined: Self = StObject.set(x, "inFile", js.undefined)
+      inline def setInFileUndefined: Self = StObject.set(x, "inFile", js.undefined)
       
-      @scala.inline
-      def setSpdx(value: `true`): Self = StObject.set(x, "spdx", value.asInstanceOf[js.Any])
+      inline def setSpdx(value: `true`): Self = StObject.set(x, "spdx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpdxUndefined: Self = StObject.set(x, "spdx", js.undefined)
+      inline def setSpdxUndefined: Self = StObject.set(x, "spdx", js.undefined)
       
-      @scala.inline
-      def setUnlicensed(value: `true`): Self = StObject.set(x, "unlicensed", value.asInstanceOf[js.Any])
+      inline def setUnlicensed(value: `true`): Self = StObject.set(x, "unlicensed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnlicensedUndefined: Self = StObject.set(x, "unlicensed", js.undefined)
+      inline def setUnlicensedUndefined: Self = StObject.set(x, "unlicensed", js.undefined)
       
-      @scala.inline
-      def setValidForNewPackages(value: Boolean): Self = StObject.set(x, "validForNewPackages", value.asInstanceOf[js.Any])
+      inline def setValidForNewPackages(value: Boolean): Self = StObject.set(x, "validForNewPackages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidForOldPackages(value: Boolean): Self = StObject.set(x, "validForOldPackages", value.asInstanceOf[js.Any])
+      inline def setValidForOldPackages(value: Boolean): Self = StObject.set(x, "validForOldPackages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+      inline def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
+      inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
       
-      @scala.inline
-      def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+      inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
     }
   }
 }

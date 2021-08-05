@@ -31,7 +31,7 @@ class IonInfiniteScroll protected ()
   /* CompleteClass */
   var disabled: Boolean = js.native
   
-  var el: HTMLElement = js.native
+  /* protected */ var el: HTMLElement = js.native
   
   var ionInfinite: EventEmitter[CustomEvent[js.Any]] = js.native
   
@@ -47,5 +47,5 @@ class IonInfiniteScroll protected ()
   /* CompleteClass */
   var threshold: String = js.native
   
-  var z: NgZone = js.native
+  /* protected */ var z: NgZone = js.native
 }

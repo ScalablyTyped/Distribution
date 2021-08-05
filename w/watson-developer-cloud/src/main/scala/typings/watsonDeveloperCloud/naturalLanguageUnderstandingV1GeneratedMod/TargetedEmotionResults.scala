@@ -15,25 +15,19 @@ trait TargetedEmotionResults extends StObject {
 }
 object TargetedEmotionResults {
   
-  @scala.inline
-  def apply(): TargetedEmotionResults = {
+  inline def apply(): TargetedEmotionResults = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TargetedEmotionResults]
   }
   
-  @scala.inline
-  implicit class TargetedEmotionResultsMutableBuilder[Self <: TargetedEmotionResults] (val x: Self) extends AnyVal {
+  extension [Self <: TargetedEmotionResults](x: Self) {
     
-    @scala.inline
-    def setEmotion(value: EmotionScores): Self = StObject.set(x, "emotion", value.asInstanceOf[js.Any])
+    inline def setEmotion(value: EmotionScores): Self = StObject.set(x, "emotion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmotionUndefined: Self = StObject.set(x, "emotion", js.undefined)
+    inline def setEmotionUndefined: Self = StObject.set(x, "emotion", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

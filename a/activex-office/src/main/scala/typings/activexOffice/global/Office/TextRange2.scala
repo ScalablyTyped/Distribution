@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.TextRange2")
 @js.native
-class TextRange2 protected ()
+/* private */ class TextRange2 ()
   extends StObject
      with typings.activexOffice.Office.TextRange2

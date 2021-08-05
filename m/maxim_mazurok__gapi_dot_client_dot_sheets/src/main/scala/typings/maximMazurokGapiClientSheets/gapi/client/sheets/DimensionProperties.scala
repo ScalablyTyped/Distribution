@@ -23,46 +23,33 @@ trait DimensionProperties extends StObject {
 }
 object DimensionProperties {
   
-  @scala.inline
-  def apply(): DimensionProperties = {
+  inline def apply(): DimensionProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DimensionProperties]
   }
   
-  @scala.inline
-  implicit class DimensionPropertiesMutableBuilder[Self <: DimensionProperties] (val x: Self) extends AnyVal {
+  extension [Self <: DimensionProperties](x: Self) {
     
-    @scala.inline
-    def setDataSourceColumnReference(value: DataSourceColumnReference): Self = StObject.set(x, "dataSourceColumnReference", value.asInstanceOf[js.Any])
+    inline def setDataSourceColumnReference(value: DataSourceColumnReference): Self = StObject.set(x, "dataSourceColumnReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceColumnReferenceUndefined: Self = StObject.set(x, "dataSourceColumnReference", js.undefined)
+    inline def setDataSourceColumnReferenceUndefined: Self = StObject.set(x, "dataSourceColumnReference", js.undefined)
     
-    @scala.inline
-    def setDeveloperMetadata(value: js.Array[DeveloperMetadata]): Self = StObject.set(x, "developerMetadata", value.asInstanceOf[js.Any])
+    inline def setDeveloperMetadata(value: js.Array[DeveloperMetadata]): Self = StObject.set(x, "developerMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeveloperMetadataUndefined: Self = StObject.set(x, "developerMetadata", js.undefined)
+    inline def setDeveloperMetadataUndefined: Self = StObject.set(x, "developerMetadata", js.undefined)
     
-    @scala.inline
-    def setDeveloperMetadataVarargs(value: DeveloperMetadata*): Self = StObject.set(x, "developerMetadata", js.Array(value :_*))
+    inline def setDeveloperMetadataVarargs(value: DeveloperMetadata*): Self = StObject.set(x, "developerMetadata", js.Array(value :_*))
     
-    @scala.inline
-    def setHiddenByFilter(value: Boolean): Self = StObject.set(x, "hiddenByFilter", value.asInstanceOf[js.Any])
+    inline def setHiddenByFilter(value: Boolean): Self = StObject.set(x, "hiddenByFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenByFilterUndefined: Self = StObject.set(x, "hiddenByFilter", js.undefined)
+    inline def setHiddenByFilterUndefined: Self = StObject.set(x, "hiddenByFilter", js.undefined)
     
-    @scala.inline
-    def setHiddenByUser(value: Boolean): Self = StObject.set(x, "hiddenByUser", value.asInstanceOf[js.Any])
+    inline def setHiddenByUser(value: Boolean): Self = StObject.set(x, "hiddenByUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenByUserUndefined: Self = StObject.set(x, "hiddenByUser", js.undefined)
+    inline def setHiddenByUserUndefined: Self = StObject.set(x, "hiddenByUser", js.undefined)
     
-    @scala.inline
-    def setPixelSize(value: Double): Self = StObject.set(x, "pixelSize", value.asInstanceOf[js.Any])
+    inline def setPixelSize(value: Double): Self = StObject.set(x, "pixelSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPixelSizeUndefined: Self = StObject.set(x, "pixelSize", js.undefined)
+    inline def setPixelSizeUndefined: Self = StObject.set(x, "pixelSize", js.undefined)
   }
 }

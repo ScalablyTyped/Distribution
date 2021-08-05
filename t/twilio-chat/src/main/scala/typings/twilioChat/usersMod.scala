@@ -22,9 +22,9 @@ object usersMod {
   class Users protected () extends EventEmitter {
     def this(services: UsersServices) = this()
     
-    var fifoStack: js.Any = js.native
+    /* private */ var fifoStack: js.Any = js.native
     
-    var fifoStackMaxLength: js.Any = js.native
+    /* private */ var fifoStackMaxLength: js.Any = js.native
     
     /**
       * @returns {Promise<Paginator<UserDescriptor>>} Users descriptors page for given channel sid
@@ -49,19 +49,19 @@ object usersMod {
       */
     def getUserDescriptor(identity: String): js.Promise[UserDescriptor] = js.native
     
-    var handleSubscribeUser: js.Any = js.native
+    /* private */ var handleSubscribeUser: js.Any = js.native
     
-    var handleUnsubscribeUser: js.Any = js.native
+    /* private */ var handleUnsubscribeUser: js.Any = js.native
     
     val myself: User = js.native
     
-    var services: js.Any = js.native
+    /* private */ var services: js.Any = js.native
     
-    var subscribedUsers: js.Any = js.native
+    /* private */ var subscribedUsers: js.Any = js.native
     
-    var userDescriptors: js.Any = js.native
+    /* private */ var userDescriptors: js.Any = js.native
     
-    var userDescriptorsPromise: js.Any = js.native
+    /* private */ var userDescriptorsPromise: js.Any = js.native
   }
   
   trait UsersServices extends StObject {
@@ -74,23 +74,18 @@ object usersMod {
   }
   object UsersServices {
     
-    @scala.inline
-    def apply(network: Network, session: Session, syncClient: SyncClient): UsersServices = {
+    inline def apply(network: Network, session: Session, syncClient: SyncClient): UsersServices = {
       val __obj = js.Dynamic.literal(network = network.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any], syncClient = syncClient.asInstanceOf[js.Any])
       __obj.asInstanceOf[UsersServices]
     }
     
-    @scala.inline
-    implicit class UsersServicesMutableBuilder[Self <: UsersServices] (val x: Self) extends AnyVal {
+    extension [Self <: UsersServices](x: Self) {
       
-      @scala.inline
-      def setNetwork(value: Network): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+      inline def setNetwork(value: Network): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+      inline def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyncClient(value: SyncClient): Self = StObject.set(x, "syncClient", value.asInstanceOf[js.Any])
+      inline def setSyncClient(value: SyncClient): Self = StObject.set(x, "syncClient", value.asInstanceOf[js.Any])
     }
   }
 }

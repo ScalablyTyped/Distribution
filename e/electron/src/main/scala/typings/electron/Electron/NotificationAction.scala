@@ -20,23 +20,18 @@ trait NotificationAction extends StObject {
 }
 object NotificationAction {
   
-  @scala.inline
-  def apply(): NotificationAction = {
+  inline def apply(): NotificationAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("button")
     __obj.asInstanceOf[NotificationAction]
   }
   
-  @scala.inline
-  implicit class NotificationActionMutableBuilder[Self <: NotificationAction] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationAction](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setType(value: button): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: button): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

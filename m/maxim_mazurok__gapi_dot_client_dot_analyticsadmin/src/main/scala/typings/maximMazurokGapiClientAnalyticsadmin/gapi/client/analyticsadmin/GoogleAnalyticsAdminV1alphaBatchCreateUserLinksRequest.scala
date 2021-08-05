@@ -17,28 +17,21 @@ trait GoogleAnalyticsAdminV1alphaBatchCreateUserLinksRequest extends StObject {
 }
 object GoogleAnalyticsAdminV1alphaBatchCreateUserLinksRequest {
   
-  @scala.inline
-  def apply(): GoogleAnalyticsAdminV1alphaBatchCreateUserLinksRequest = {
+  inline def apply(): GoogleAnalyticsAdminV1alphaBatchCreateUserLinksRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaBatchCreateUserLinksRequest]
   }
   
-  @scala.inline
-  implicit class GoogleAnalyticsAdminV1alphaBatchCreateUserLinksRequestMutableBuilder[Self <: GoogleAnalyticsAdminV1alphaBatchCreateUserLinksRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleAnalyticsAdminV1alphaBatchCreateUserLinksRequest](x: Self) {
     
-    @scala.inline
-    def setNotifyNewUsers(value: Boolean): Self = StObject.set(x, "notifyNewUsers", value.asInstanceOf[js.Any])
+    inline def setNotifyNewUsers(value: Boolean): Self = StObject.set(x, "notifyNewUsers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotifyNewUsersUndefined: Self = StObject.set(x, "notifyNewUsers", js.undefined)
+    inline def setNotifyNewUsersUndefined: Self = StObject.set(x, "notifyNewUsers", js.undefined)
     
-    @scala.inline
-    def setRequests(value: js.Array[GoogleAnalyticsAdminV1alphaCreateUserLinkRequest]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
+    inline def setRequests(value: js.Array[GoogleAnalyticsAdminV1alphaCreateUserLinkRequest]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
+    inline def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
     
-    @scala.inline
-    def setRequestsVarargs(value: GoogleAnalyticsAdminV1alphaCreateUserLinkRequest*): Self = StObject.set(x, "requests", js.Array(value :_*))
+    inline def setRequestsVarargs(value: GoogleAnalyticsAdminV1alphaCreateUserLinkRequest*): Self = StObject.set(x, "requests", js.Array(value :_*))
   }
 }

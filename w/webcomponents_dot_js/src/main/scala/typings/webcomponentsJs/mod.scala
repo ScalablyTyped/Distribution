@@ -21,20 +21,16 @@ object mod {
   }
   object CustomElementInit {
     
-    @scala.inline
-    def apply(): CustomElementInit = {
+    inline def apply(): CustomElementInit = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CustomElementInit]
     }
     
-    @scala.inline
-    implicit class CustomElementInitMutableBuilder[Self <: CustomElementInit] (val x: Self) extends AnyVal {
+    extension [Self <: CustomElementInit](x: Self) {
       
-      @scala.inline
-      def setExtends(value: String): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
+      inline def setExtends(value: String): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtendsUndefined: Self = StObject.set(x, "extends", js.undefined)
+      inline def setExtendsUndefined: Self = StObject.set(x, "extends", js.undefined)
     }
   }
   
@@ -50,26 +46,20 @@ object mod {
   }
   object CustomElementsPolyfill {
     
-    @scala.inline
-    def apply(flags: js.Any, hasNative: Boolean, ready: Boolean, useNative: Boolean): CustomElementsPolyfill = {
+    inline def apply(flags: js.Any, hasNative: Boolean, ready: Boolean, useNative: Boolean): CustomElementsPolyfill = {
       val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], hasNative = hasNative.asInstanceOf[js.Any], ready = ready.asInstanceOf[js.Any], useNative = useNative.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomElementsPolyfill]
     }
     
-    @scala.inline
-    implicit class CustomElementsPolyfillMutableBuilder[Self <: CustomElementsPolyfill] (val x: Self) extends AnyVal {
+    extension [Self <: CustomElementsPolyfill](x: Self) {
       
-      @scala.inline
-      def setFlags(value: js.Any): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: js.Any): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasNative(value: Boolean): Self = StObject.set(x, "hasNative", value.asInstanceOf[js.Any])
+      inline def setHasNative(value: Boolean): Self = StObject.set(x, "hasNative", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReady(value: Boolean): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
+      inline def setReady(value: Boolean): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseNative(value: Boolean): Self = StObject.set(x, "useNative", value.asInstanceOf[js.Any])
+      inline def setUseNative(value: Boolean): Self = StObject.set(x, "useNative", value.asInstanceOf[js.Any])
     }
   }
   
@@ -91,8 +81,7 @@ object mod {
   }
   object HTMLImportsPolyfill {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       IMPORT_LINK_TYPE: String,
       flags: js.Any,
       isIE: Boolean,
@@ -105,29 +94,21 @@ object mod {
       __obj.asInstanceOf[HTMLImportsPolyfill]
     }
     
-    @scala.inline
-    implicit class HTMLImportsPolyfillMutableBuilder[Self <: HTMLImportsPolyfill] (val x: Self) extends AnyVal {
+    extension [Self <: HTMLImportsPolyfill](x: Self) {
       
-      @scala.inline
-      def setFlags(value: js.Any): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: js.Any): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIMPORT_LINK_TYPE(value: String): Self = StObject.set(x, "IMPORT_LINK_TYPE", value.asInstanceOf[js.Any])
+      inline def setIMPORT_LINK_TYPE(value: String): Self = StObject.set(x, "IMPORT_LINK_TYPE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsIE(value: Boolean): Self = StObject.set(x, "isIE", value.asInstanceOf[js.Any])
+      inline def setIsIE(value: Boolean): Self = StObject.set(x, "isIE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReady(value: Boolean): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
+      inline def setReady(value: Boolean): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootDocument(value: Document): Self = StObject.set(x, "rootDocument", value.asInstanceOf[js.Any])
+      inline def setRootDocument(value: Document): Self = StObject.set(x, "rootDocument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseNative(value: Boolean): Self = StObject.set(x, "useNative", value.asInstanceOf[js.Any])
+      inline def setUseNative(value: Boolean): Self = StObject.set(x, "useNative", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhenReady(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "whenReady", js.Any.fromFunction1(value))
+      inline def setWhenReady(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "whenReady", js.Any.fromFunction1(value))
     }
   }
   
@@ -137,17 +118,14 @@ object mod {
   }
   object Polyfill {
     
-    @scala.inline
-    def apply(flags: js.Any): Polyfill = {
+    inline def apply(flags: js.Any): Polyfill = {
       val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any])
       __obj.asInstanceOf[Polyfill]
     }
     
-    @scala.inline
-    implicit class PolyfillMutableBuilder[Self <: Polyfill] (val x: Self) extends AnyVal {
+    extension [Self <: Polyfill](x: Self) {
       
-      @scala.inline
-      def setFlags(value: js.Any): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: js.Any): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     }
   }
   
@@ -170,17 +148,14 @@ object mod {
     }
     object Document {
       
-      @scala.inline
-      def apply(registerElement: (String, CustomElementInit) => CustomElementConstructor): Document = {
+      inline def apply(registerElement: (String, CustomElementInit) => CustomElementConstructor): Document = {
         val __obj = js.Dynamic.literal(registerElement = js.Any.fromFunction2(registerElement))
         __obj.asInstanceOf[Document]
       }
       
-      @scala.inline
-      implicit class DocumentMutableBuilder[Self <: Document] (val x: Self) extends AnyVal {
+      extension [Self <: Document](x: Self) {
         
-        @scala.inline
-        def setRegisterElement(value: (String, CustomElementInit) => CustomElementConstructor): Self = StObject.set(x, "registerElement", js.Any.fromFunction2(value))
+        inline def setRegisterElement(value: (String, CustomElementInit) => CustomElementConstructor): Self = StObject.set(x, "registerElement", js.Any.fromFunction2(value))
       }
     }
     
@@ -192,23 +167,18 @@ object mod {
     }
     object Element {
       
-      @scala.inline
-      def apply(createShadowRoot: () => ShadowRoot): Element = {
+      inline def apply(createShadowRoot: () => ShadowRoot): Element = {
         val __obj = js.Dynamic.literal(createShadowRoot = js.Any.fromFunction0(createShadowRoot), shadowRoot = null)
         __obj.asInstanceOf[Element]
       }
       
-      @scala.inline
-      implicit class ElementMutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
+      extension [Self <: Element](x: Self) {
         
-        @scala.inline
-        def setCreateShadowRoot(value: () => ShadowRoot): Self = StObject.set(x, "createShadowRoot", js.Any.fromFunction0(value))
+        inline def setCreateShadowRoot(value: () => ShadowRoot): Self = StObject.set(x, "createShadowRoot", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setShadowRoot(value: ShadowRoot): Self = StObject.set(x, "shadowRoot", value.asInstanceOf[js.Any])
+        inline def setShadowRoot(value: ShadowRoot): Self = StObject.set(x, "shadowRoot", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShadowRootNull: Self = StObject.set(x, "shadowRoot", null)
+        inline def setShadowRootNull: Self = StObject.set(x, "shadowRoot", null)
       }
     }
     
@@ -219,20 +189,16 @@ object mod {
     }
     object ElementDefinitionOptions {
       
-      @scala.inline
-      def apply(): ElementDefinitionOptions = {
+      inline def apply(): ElementDefinitionOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ElementDefinitionOptions]
       }
       
-      @scala.inline
-      implicit class ElementDefinitionOptionsMutableBuilder[Self <: ElementDefinitionOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ElementDefinitionOptions](x: Self) {
         
-        @scala.inline
-        def setExtends(value: String): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
+        inline def setExtends(value: String): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExtendsUndefined: Self = StObject.set(x, "extends", js.undefined)
+        inline def setExtendsUndefined: Self = StObject.set(x, "extends", js.undefined)
       }
     }
     
@@ -258,8 +224,7 @@ object mod {
     }
     object Window {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         CustomElements: CustomElementsPolyfill,
         HTMLImports: HTMLImportsPolyfill,
         WebComponents: Polyfill,
@@ -269,17 +234,13 @@ object mod {
         __obj.asInstanceOf[Window]
       }
       
-      @scala.inline
-      implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+      extension [Self <: Window](x: Self) {
         
-        @scala.inline
-        def setCustomElements(value: CustomElementsPolyfill): Self = StObject.set(x, "CustomElements", value.asInstanceOf[js.Any])
+        inline def setCustomElements(value: CustomElementsPolyfill): Self = StObject.set(x, "CustomElements", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHTMLImports(value: HTMLImportsPolyfill): Self = StObject.set(x, "HTMLImports", value.asInstanceOf[js.Any])
+        inline def setHTMLImports(value: HTMLImportsPolyfill): Self = StObject.set(x, "HTMLImports", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWebComponents(value: Polyfill): Self = StObject.set(x, "WebComponents", value.asInstanceOf[js.Any])
+        inline def setWebComponents(value: Polyfill): Self = StObject.set(x, "WebComponents", value.asInstanceOf[js.Any])
       }
     }
   }

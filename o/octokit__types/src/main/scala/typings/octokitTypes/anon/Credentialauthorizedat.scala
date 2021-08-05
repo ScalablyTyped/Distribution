@@ -20,8 +20,7 @@ trait Credentialauthorizedat extends StObject {
 }
 object Credentialauthorizedat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     credential_authorized_at: String,
     credential_id: String,
     credential_type: String,
@@ -33,28 +32,20 @@ object Credentialauthorizedat {
     __obj.asInstanceOf[Credentialauthorizedat]
   }
   
-  @scala.inline
-  implicit class CredentialauthorizedatMutableBuilder[Self <: Credentialauthorizedat] (val x: Self) extends AnyVal {
+  extension [Self <: Credentialauthorizedat](x: Self) {
     
-    @scala.inline
-    def setCredential_authorized_at(value: String): Self = StObject.set(x, "credential_authorized_at", value.asInstanceOf[js.Any])
+    inline def setCredential_authorized_at(value: String): Self = StObject.set(x, "credential_authorized_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredential_id(value: String): Self = StObject.set(x, "credential_id", value.asInstanceOf[js.Any])
+    inline def setCredential_id(value: String): Self = StObject.set(x, "credential_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredential_type(value: String): Self = StObject.set(x, "credential_type", value.asInstanceOf[js.Any])
+    inline def setCredential_type(value: String): Self = StObject.set(x, "credential_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogin(value: String): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
+    inline def setLogin(value: String): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+    inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+    inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
     
-    @scala.inline
-    def setToken_last_eight(value: String): Self = StObject.set(x, "token_last_eight", value.asInstanceOf[js.Any])
+    inline def setToken_last_eight(value: String): Self = StObject.set(x, "token_last_eight", value.asInstanceOf[js.Any])
   }
 }

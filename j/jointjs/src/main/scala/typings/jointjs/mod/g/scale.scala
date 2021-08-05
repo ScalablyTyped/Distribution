@@ -10,6 +10,5 @@ object scale {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def linear(domain: js.Tuple2[Double, Double], range: js.Tuple2[Double, Double], value: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("linear")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def linear(domain: js.Tuple2[Double, Double], range: js.Tuple2[Double, Double], value: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("linear")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

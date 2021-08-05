@@ -11,11 +11,11 @@ object autoGroupColServiceMod {
   @js.native
   class AutoGroupColService () extends StObject {
     
-    var balancedColumnTreeBuilder: js.Any = js.native
+    /* private */ var balancedColumnTreeBuilder: js.Any = js.native
     
-    var columnController: js.Any = js.native
+    /* private */ var columnController: js.Any = js.native
     
-    var context: js.Any = js.native
+    /* private */ var context: js.Any = js.native
     
     def createAutoGroupColumns(rowGroupColumns: js.Array[Column]): js.Array[Column] = js.native
     
@@ -23,7 +23,7 @@ object autoGroupColServiceMod {
     
     /* private */ def generateDefaultColDef(rowGroupCol: js.Any): js.Any = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
   }
   /* static members */
   object AutoGroupColService {
@@ -35,13 +35,11 @@ object autoGroupColServiceMod {
     @JSImport("ag-grid/dist/lib/columnController/autoGroupColService", "AutoGroupColService.GROUP_AUTO_COLUMN_BUNDLE_ID")
     @js.native
     def GROUP_AUTO_COLUMN_BUNDLE_ID: String = js.native
-    @scala.inline
-    def GROUP_AUTO_COLUMN_BUNDLE_ID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GROUP_AUTO_COLUMN_BUNDLE_ID")(x.asInstanceOf[js.Any])
+    inline def GROUP_AUTO_COLUMN_BUNDLE_ID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GROUP_AUTO_COLUMN_BUNDLE_ID")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/columnController/autoGroupColService", "AutoGroupColService.GROUP_AUTO_COLUMN_ID")
     @js.native
     def GROUP_AUTO_COLUMN_ID: String = js.native
-    @scala.inline
-    def GROUP_AUTO_COLUMN_ID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GROUP_AUTO_COLUMN_ID")(x.asInstanceOf[js.Any])
+    inline def GROUP_AUTO_COLUMN_ID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GROUP_AUTO_COLUMN_ID")(x.asInstanceOf[js.Any])
   }
 }

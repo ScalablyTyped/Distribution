@@ -13,22 +13,17 @@ trait OutputGroupDetail extends StObject {
 }
 object OutputGroupDetail {
   
-  @scala.inline
-  def apply(): OutputGroupDetail = {
+  inline def apply(): OutputGroupDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OutputGroupDetail]
   }
   
-  @scala.inline
-  implicit class OutputGroupDetailMutableBuilder[Self <: OutputGroupDetail] (val x: Self) extends AnyVal {
+  extension [Self <: OutputGroupDetail](x: Self) {
     
-    @scala.inline
-    def setOutputDetails(value: listOfOutputDetail): Self = StObject.set(x, "OutputDetails", value.asInstanceOf[js.Any])
+    inline def setOutputDetails(value: listOfOutputDetail): Self = StObject.set(x, "OutputDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputDetailsUndefined: Self = StObject.set(x, "OutputDetails", js.undefined)
+    inline def setOutputDetailsUndefined: Self = StObject.set(x, "OutputDetails", js.undefined)
     
-    @scala.inline
-    def setOutputDetailsVarargs(value: OutputDetail*): Self = StObject.set(x, "OutputDetails", js.Array(value :_*))
+    inline def setOutputDetailsVarargs(value: OutputDetail*): Self = StObject.set(x, "OutputDetails", js.Array(value :_*))
   }
 }

@@ -192,8 +192,7 @@ object management {
   }
   object ExtensionInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       description: String,
       enabled: Boolean,
       hostPermissions: js.Array[String],
@@ -219,17 +218,13 @@ object management {
       __obj.asInstanceOf[ExtensionInfo]
     }
     
-    @scala.inline
-    implicit class ExtensionInfoMutableBuilder[Self <: ExtensionInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ExtensionInfo](x: Self) {
       
-      @scala.inline
-      def setAppLaunchUrl(value: String): Self = StObject.set(x, "appLaunchUrl", value.asInstanceOf[js.Any])
+      inline def setAppLaunchUrl(value: String): Self = StObject.set(x, "appLaunchUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppLaunchUrlUndefined: Self = StObject.set(x, "appLaunchUrl", js.undefined)
+      inline def setAppLaunchUrlUndefined: Self = StObject.set(x, "appLaunchUrl", js.undefined)
       
-      @scala.inline
-      def setAvailableLaunchTypes(
+      inline def setAvailableLaunchTypes(
         value: js.Array[
               ToStringLiteral[
                 OPENASPINNEDTAB, 
@@ -242,11 +237,9 @@ object management {
             ]
       ): Self = StObject.set(x, "availableLaunchTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailableLaunchTypesUndefined: Self = StObject.set(x, "availableLaunchTypes", js.undefined)
+      inline def setAvailableLaunchTypesUndefined: Self = StObject.set(x, "availableLaunchTypes", js.undefined)
       
-      @scala.inline
-      def setAvailableLaunchTypesVarargs(
+      inline def setAvailableLaunchTypesVarargs(
         value: (ToStringLiteral[
               OPENASPINNEDTAB, 
               /* keyof chrome-apps.anon.OPENASPINNEDTAB */ OPEN_AS_REGULAR_TAB | OPEN_AS_PINNED_TAB | OPEN_AS_WINDOW | OPEN_FULL_SCREEN, 
@@ -257,11 +250,9 @@ object management {
             ])*
       ): Self = StObject.set(x, "availableLaunchTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledReason(
+      inline def setDisabledReason(
         value: ToStringLiteral[
               PERMISSIONSINCREASE, 
               /* keyof chrome-apps.anon.PERMISSIONSINCREASE */ UNKNOWN | PERMISSIONS_INCREASE, 
@@ -272,38 +263,27 @@ object management {
             ]
       ): Self = StObject.set(x, "disabledReason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledReasonUndefined: Self = StObject.set(x, "disabledReason", js.undefined)
+      inline def setDisabledReasonUndefined: Self = StObject.set(x, "disabledReason", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHomepageUrl(value: String): Self = StObject.set(x, "homepageUrl", value.asInstanceOf[js.Any])
+      inline def setHomepageUrl(value: String): Self = StObject.set(x, "homepageUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHomepageUrlUndefined: Self = StObject.set(x, "homepageUrl", js.undefined)
+      inline def setHomepageUrlUndefined: Self = StObject.set(x, "homepageUrl", js.undefined)
       
-      @scala.inline
-      def setHostPermissions(value: js.Array[String]): Self = StObject.set(x, "hostPermissions", value.asInstanceOf[js.Any])
+      inline def setHostPermissions(value: js.Array[String]): Self = StObject.set(x, "hostPermissions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostPermissionsVarargs(value: String*): Self = StObject.set(x, "hostPermissions", js.Array(value :_*))
+      inline def setHostPermissionsVarargs(value: String*): Self = StObject.set(x, "hostPermissions", js.Array(value :_*))
       
-      @scala.inline
-      def setIcons(value: js.Array[IconInfo]): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+      inline def setIcons(value: js.Array[IconInfo]): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
+      inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
       
-      @scala.inline
-      def setIconsVarargs(value: IconInfo*): Self = StObject.set(x, "icons", js.Array(value :_*))
+      inline def setIconsVarargs(value: IconInfo*): Self = StObject.set(x, "icons", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstallType(
+      inline def setInstallType(
         value: ToStringLiteral[
               ADMIN, 
               /* keyof chrome-apps.anon.ADMIN */ typings.chromeApps.chromeAppsStrings.ADMIN | DEVELOPMENT | NORMAL | SIDELOAD | OTHER, 
@@ -314,14 +294,11 @@ object management {
             ]
       ): Self = StObject.set(x, "installType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsApp(value: `true`): Self = StObject.set(x, "isApp", value.asInstanceOf[js.Any])
+      inline def setIsApp(value: `true`): Self = StObject.set(x, "isApp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsAppUndefined: Self = StObject.set(x, "isApp", js.undefined)
+      inline def setIsAppUndefined: Self = StObject.set(x, "isApp", js.undefined)
       
-      @scala.inline
-      def setLaunchType(
+      inline def setLaunchType(
         value: ToStringLiteral[
               OPENASPINNEDTAB, 
               /* keyof chrome-apps.anon.OPENASPINNEDTAB */ OPEN_AS_REGULAR_TAB | OPEN_AS_PINNED_TAB | OPEN_AS_WINDOW | OPEN_FULL_SCREEN, 
@@ -332,41 +309,29 @@ object management {
             ]
       ): Self = StObject.set(x, "launchType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLaunchTypeUndefined: Self = StObject.set(x, "launchType", js.undefined)
+      inline def setLaunchTypeUndefined: Self = StObject.set(x, "launchType", js.undefined)
       
-      @scala.inline
-      def setMayDisable(value: Boolean): Self = StObject.set(x, "mayDisable", value.asInstanceOf[js.Any])
+      inline def setMayDisable(value: Boolean): Self = StObject.set(x, "mayDisable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOfflineEnabled(value: Boolean): Self = StObject.set(x, "offlineEnabled", value.asInstanceOf[js.Any])
+      inline def setOfflineEnabled(value: Boolean): Self = StObject.set(x, "offlineEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPermissions(value: js.Array[Permission]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+      inline def setPermissions(value: js.Array[Permission]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPermissionsVarargs(value: Permission*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+      inline def setPermissionsVarargs(value: Permission*): Self = StObject.set(x, "permissions", js.Array(value :_*))
       
-      @scala.inline
-      def setShortName(value: String): Self = StObject.set(x, "shortName", value.asInstanceOf[js.Any])
+      inline def setShortName(value: String): Self = StObject.set(x, "shortName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: packaged_app): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: packaged_app): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateUrl(value: String): Self = StObject.set(x, "updateUrl", value.asInstanceOf[js.Any])
+      inline def setUpdateUrl(value: String): Self = StObject.set(x, "updateUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateUrlUndefined: Self = StObject.set(x, "updateUrl", js.undefined)
+      inline def setUpdateUrlUndefined: Self = StObject.set(x, "updateUrl", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionName(value: String): Self = StObject.set(x, "versionName", value.asInstanceOf[js.Any])
+      inline def setVersionName(value: String): Self = StObject.set(x, "versionName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -384,20 +349,16 @@ object management {
   }
   object IconInfo {
     
-    @scala.inline
-    def apply(size: integer, url: String): IconInfo = {
+    inline def apply(size: integer, url: String): IconInfo = {
       val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[IconInfo]
     }
     
-    @scala.inline
-    implicit class IconInfoMutableBuilder[Self <: IconInfo] (val x: Self) extends AnyVal {
+    extension [Self <: IconInfo](x: Self) {
       
-      @scala.inline
-      def setSize(value: integer): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: integer): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -411,20 +372,16 @@ object management {
   }
   object UninstallOptions {
     
-    @scala.inline
-    def apply(): UninstallOptions = {
+    inline def apply(): UninstallOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UninstallOptions]
     }
     
-    @scala.inline
-    implicit class UninstallOptionsMutableBuilder[Self <: UninstallOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UninstallOptions](x: Self) {
       
-      @scala.inline
-      def setShowConfirmDialog(value: Boolean): Self = StObject.set(x, "showConfirmDialog", value.asInstanceOf[js.Any])
+      inline def setShowConfirmDialog(value: Boolean): Self = StObject.set(x, "showConfirmDialog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowConfirmDialogUndefined: Self = StObject.set(x, "showConfirmDialog", js.undefined)
+      inline def setShowConfirmDialogUndefined: Self = StObject.set(x, "showConfirmDialog", js.undefined)
     }
   }
 }

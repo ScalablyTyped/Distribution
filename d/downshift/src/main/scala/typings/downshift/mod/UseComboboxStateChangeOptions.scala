@@ -13,17 +13,14 @@ trait UseComboboxStateChangeOptions[Item]
 }
 object UseComboboxStateChangeOptions {
   
-  @scala.inline
-  def apply[Item](changes: Partial[UseComboboxState[Item]], `type`: UseComboboxStateChangeTypes): UseComboboxStateChangeOptions[Item] = {
+  inline def apply[Item](changes: Partial[UseComboboxState[Item]], `type`: UseComboboxStateChangeTypes): UseComboboxStateChangeOptions[Item] = {
     val __obj = js.Dynamic.literal(changes = changes.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseComboboxStateChangeOptions[Item]]
   }
   
-  @scala.inline
-  implicit class UseComboboxStateChangeOptionsMutableBuilder[Self <: UseComboboxStateChangeOptions[?], Item] (val x: Self & UseComboboxStateChangeOptions[Item]) extends AnyVal {
+  extension [Self <: UseComboboxStateChangeOptions[?], Item](x: Self & UseComboboxStateChangeOptions[Item]) {
     
-    @scala.inline
-    def setChanges(value: Partial[UseComboboxState[Item]]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
+    inline def setChanges(value: Partial[UseComboboxState[Item]]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
   }
 }

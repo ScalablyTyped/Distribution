@@ -33,8 +33,7 @@ object spamResponseMod {
   }
   object SpamResponse {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       feedback_action: String,
       feedback_appeal_label: String,
       feedback_ignore_label: String,
@@ -46,41 +45,29 @@ object spamResponseMod {
       __obj.asInstanceOf[SpamResponse]
     }
     
-    @scala.inline
-    implicit class SpamResponseMutableBuilder[Self <: SpamResponse] (val x: Self) extends AnyVal {
+    extension [Self <: SpamResponse](x: Self) {
       
-      @scala.inline
-      def setError_type(value: String): Self = StObject.set(x, "error_type", value.asInstanceOf[js.Any])
+      inline def setError_type(value: String): Self = StObject.set(x, "error_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError_typeUndefined: Self = StObject.set(x, "error_type", js.undefined)
+      inline def setError_typeUndefined: Self = StObject.set(x, "error_type", js.undefined)
       
-      @scala.inline
-      def setFeedback_action(value: String): Self = StObject.set(x, "feedback_action", value.asInstanceOf[js.Any])
+      inline def setFeedback_action(value: String): Self = StObject.set(x, "feedback_action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeedback_appeal_label(value: String): Self = StObject.set(x, "feedback_appeal_label", value.asInstanceOf[js.Any])
+      inline def setFeedback_appeal_label(value: String): Self = StObject.set(x, "feedback_appeal_label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeedback_ignore_label(value: String): Self = StObject.set(x, "feedback_ignore_label", value.asInstanceOf[js.Any])
+      inline def setFeedback_ignore_label(value: String): Self = StObject.set(x, "feedback_ignore_label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeedback_message(value: String): Self = StObject.set(x, "feedback_message", value.asInstanceOf[js.Any])
+      inline def setFeedback_message(value: String): Self = StObject.set(x, "feedback_message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeedback_title(value: String): Self = StObject.set(x, "feedback_title", value.asInstanceOf[js.Any])
+      inline def setFeedback_title(value: String): Self = StObject.set(x, "feedback_title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeedback_url(value: String): Self = StObject.set(x, "feedback_url", value.asInstanceOf[js.Any])
+      inline def setFeedback_url(value: String): Self = StObject.set(x, "feedback_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: feedback_required): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: feedback_required): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpam(value: `true`): Self = StObject.set(x, "spam", value.asInstanceOf[js.Any])
+      inline def setSpam(value: `true`): Self = StObject.set(x, "spam", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: fail): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: fail): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
 }

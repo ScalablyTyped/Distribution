@@ -14,22 +14,17 @@ trait ActivateText extends StObject {
 }
 object ActivateText {
   
-  @scala.inline
-  def apply(activateText: String, deactivateText: String, finishText: String): ActivateText = {
+  inline def apply(activateText: String, deactivateText: String, finishText: String): ActivateText = {
     val __obj = js.Dynamic.literal(activateText = activateText.asInstanceOf[js.Any], deactivateText = deactivateText.asInstanceOf[js.Any], finishText = finishText.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivateText]
   }
   
-  @scala.inline
-  implicit class ActivateTextMutableBuilder[Self <: ActivateText] (val x: Self) extends AnyVal {
+  extension [Self <: ActivateText](x: Self) {
     
-    @scala.inline
-    def setActivateText(value: String): Self = StObject.set(x, "activateText", value.asInstanceOf[js.Any])
+    inline def setActivateText(value: String): Self = StObject.set(x, "activateText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeactivateText(value: String): Self = StObject.set(x, "deactivateText", value.asInstanceOf[js.Any])
+    inline def setDeactivateText(value: String): Self = StObject.set(x, "deactivateText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinishText(value: String): Self = StObject.set(x, "finishText", value.asInstanceOf[js.Any])
+    inline def setFinishText(value: String): Self = StObject.set(x, "finishText", value.asInstanceOf[js.Any])
   }
 }

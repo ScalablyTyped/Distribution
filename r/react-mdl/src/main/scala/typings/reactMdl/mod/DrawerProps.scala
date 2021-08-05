@@ -10,8 +10,7 @@ trait DrawerProps
      with HTMLProps[js.Any]
 object DrawerProps {
   
-  @scala.inline
-  def apply(): DrawerProps = {
+  inline def apply(): DrawerProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DrawerProps]
   }

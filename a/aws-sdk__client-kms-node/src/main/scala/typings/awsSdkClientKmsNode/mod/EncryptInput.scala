@@ -11,8 +11,7 @@ trait EncryptInput
      with typings.awsSdkClientKmsNode.typesEncryptInputMod.EncryptInput
 object EncryptInput {
   
-  @scala.inline
-  def apply(KeyId: String, Plaintext: ArrayBuffer | ArrayBufferView | String): EncryptInput = {
+  inline def apply(KeyId: String, Plaintext: ArrayBuffer | ArrayBufferView | String): EncryptInput = {
     val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any], Plaintext = Plaintext.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncryptInput]
   }

@@ -8,6 +8,5 @@ object reactBetterPasswordStrings {
   
   @js.native
   sealed trait Bullet extends StObject
-  @scala.inline
-  def Bullet: Bullet = "\u2022".asInstanceOf[Bullet]
+  inline def Bullet: Bullet = "\u2022".asInstanceOf[Bullet]
 }

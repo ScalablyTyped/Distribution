@@ -10,16 +10,13 @@ trait DeleteAdmChannelResponse extends StObject {
 }
 object DeleteAdmChannelResponse {
   
-  @scala.inline
-  def apply(ADMChannelResponse: ADMChannelResponse): DeleteAdmChannelResponse = {
+  inline def apply(ADMChannelResponse: ADMChannelResponse): DeleteAdmChannelResponse = {
     val __obj = js.Dynamic.literal(ADMChannelResponse = ADMChannelResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAdmChannelResponse]
   }
   
-  @scala.inline
-  implicit class DeleteAdmChannelResponseMutableBuilder[Self <: DeleteAdmChannelResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAdmChannelResponse](x: Self) {
     
-    @scala.inline
-    def setADMChannelResponse(value: ADMChannelResponse): Self = StObject.set(x, "ADMChannelResponse", value.asInstanceOf[js.Any])
+    inline def setADMChannelResponse(value: ADMChannelResponse): Self = StObject.set(x, "ADMChannelResponse", value.asInstanceOf[js.Any])
   }
 }

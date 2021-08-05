@@ -19,8 +19,7 @@ object mod {
   	})();
   	```
   	*/
-  @scala.inline
-  def apply(): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[js.UndefOr[String]]]
+  inline def apply(): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[js.UndefOr[String]]]
   
   @JSImport("username", JSImport.Namespace)
   @js.native
@@ -37,6 +36,5 @@ object mod {
   	//=> 'sindresorhus'
   	```
   	*/
-  @scala.inline
-  def sync(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")().asInstanceOf[js.UndefOr[String]]
+  inline def sync(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")().asInstanceOf[js.UndefOr[String]]
 }

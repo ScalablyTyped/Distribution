@@ -62,50 +62,36 @@ object mod extends Shortcut {
   }
   object CompressOptions {
     
-    @scala.inline
-    def apply(): CompressOptions = {
+    inline def apply(): CompressOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CompressOptions]
     }
     
-    @scala.inline
-    implicit class CompressOptionsMutableBuilder[Self <: CompressOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CompressOptions](x: Self) {
       
-      @scala.inline
-      def setClone_(value: Boolean): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
+      inline def setClone_(value: Boolean): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
+      inline def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
       
-      @scala.inline
-      def setComments(value: String | Boolean): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+      inline def setComments(value: String | Boolean): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+      inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
       
-      @scala.inline
-      def setForceMediaMerge(value: Boolean): Self = StObject.set(x, "forceMediaMerge", value.asInstanceOf[js.Any])
+      inline def setForceMediaMerge(value: Boolean): Self = StObject.set(x, "forceMediaMerge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceMediaMergeUndefined: Self = StObject.set(x, "forceMediaMerge", js.undefined)
+      inline def setForceMediaMergeUndefined: Self = StObject.set(x, "forceMediaMerge", js.undefined)
       
-      @scala.inline
-      def setLogger(value: () => Unit): Self = StObject.set(x, "logger", js.Any.fromFunction0(value))
+      inline def setLogger(value: () => Unit): Self = StObject.set(x, "logger", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+      inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
-      @scala.inline
-      def setRestructure(value: Boolean): Self = StObject.set(x, "restructure", value.asInstanceOf[js.Any])
+      inline def setRestructure(value: Boolean): Self = StObject.set(x, "restructure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestructureUndefined: Self = StObject.set(x, "restructure", js.undefined)
+      inline def setRestructureUndefined: Self = StObject.set(x, "restructure", js.undefined)
       
-      @scala.inline
-      def setUsage(value: Usage): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
+      inline def setUsage(value: Usage): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
+      inline def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
     }
   }
   
@@ -171,62 +157,44 @@ object mod extends Shortcut {
   }
   object MinifyOptions {
     
-    @scala.inline
-    def apply(): MinifyOptions = {
+    inline def apply(): MinifyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MinifyOptions]
     }
     
-    @scala.inline
-    implicit class MinifyOptionsMutableBuilder[Self <: MinifyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MinifyOptions](x: Self) {
       
-      @scala.inline
-      def setAfterCompress(value: AfterCompressFn | js.Array[AfterCompressFn]): Self = StObject.set(x, "afterCompress", value.asInstanceOf[js.Any])
+      inline def setAfterCompress(value: AfterCompressFn | js.Array[AfterCompressFn]): Self = StObject.set(x, "afterCompress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAfterCompressFunction2(value: (/* compressResult */ String, /* options */ CompressOptions) => Unit): Self = StObject.set(x, "afterCompress", js.Any.fromFunction2(value))
+      inline def setAfterCompressFunction2(value: (/* compressResult */ String, /* options */ CompressOptions) => Unit): Self = StObject.set(x, "afterCompress", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAfterCompressUndefined: Self = StObject.set(x, "afterCompress", js.undefined)
+      inline def setAfterCompressUndefined: Self = StObject.set(x, "afterCompress", js.undefined)
       
-      @scala.inline
-      def setAfterCompressVarargs(value: AfterCompressFn*): Self = StObject.set(x, "afterCompress", js.Array(value :_*))
+      inline def setAfterCompressVarargs(value: AfterCompressFn*): Self = StObject.set(x, "afterCompress", js.Array(value :_*))
       
-      @scala.inline
-      def setBeforeCompress(value: BeforeCompressFn | js.Array[BeforeCompressFn]): Self = StObject.set(x, "beforeCompress", value.asInstanceOf[js.Any])
+      inline def setBeforeCompress(value: BeforeCompressFn | js.Array[BeforeCompressFn]): Self = StObject.set(x, "beforeCompress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforeCompressFunction2(value: (/* ast */ js.Object, /* options */ CompressOptions) => Unit): Self = StObject.set(x, "beforeCompress", js.Any.fromFunction2(value))
+      inline def setBeforeCompressFunction2(value: (/* ast */ js.Object, /* options */ CompressOptions) => Unit): Self = StObject.set(x, "beforeCompress", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBeforeCompressUndefined: Self = StObject.set(x, "beforeCompress", js.undefined)
+      inline def setBeforeCompressUndefined: Self = StObject.set(x, "beforeCompress", js.undefined)
       
-      @scala.inline
-      def setBeforeCompressVarargs(value: BeforeCompressFn*): Self = StObject.set(x, "beforeCompress", js.Array(value :_*))
+      inline def setBeforeCompressVarargs(value: BeforeCompressFn*): Self = StObject.set(x, "beforeCompress", js.Array(value :_*))
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setRestructure(value: Boolean): Self = StObject.set(x, "restructure", value.asInstanceOf[js.Any])
+      inline def setRestructure(value: Boolean): Self = StObject.set(x, "restructure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestructureUndefined: Self = StObject.set(x, "restructure", js.undefined)
+      inline def setRestructureUndefined: Self = StObject.set(x, "restructure", js.undefined)
       
-      @scala.inline
-      def setSourceMap(value: Boolean): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
+      inline def setSourceMap(value: Boolean): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
+      inline def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
     }
   }
   
@@ -244,23 +212,18 @@ object mod extends Shortcut {
   }
   object Result {
     
-    @scala.inline
-    def apply(css: String): Result = {
+    inline def apply(css: String): Result = {
       val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any], map = null)
       __obj.asInstanceOf[Result]
     }
     
-    @scala.inline
-    implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+    extension [Self <: Result](x: Self) {
       
-      @scala.inline
-      def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+      inline def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMap(value: js.Object): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: js.Object): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapNull: Self = StObject.set(x, "map", null)
+      inline def setMapNull: Self = StObject.set(x, "map", null)
     }
   }
   
@@ -278,56 +241,40 @@ object mod extends Shortcut {
   }
   object Usage {
     
-    @scala.inline
-    def apply(): Usage = {
+    inline def apply(): Usage = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Usage]
     }
     
-    @scala.inline
-    implicit class UsageMutableBuilder[Self <: Usage] (val x: Self) extends AnyVal {
+    extension [Self <: Usage](x: Self) {
       
-      @scala.inline
-      def setBlacklist(value: Classes): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
+      inline def setBlacklist(value: Classes): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
+      inline def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
       
-      @scala.inline
-      def setClasses(value: js.Array[String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+      inline def setClasses(value: js.Array[String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+      inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
       
-      @scala.inline
-      def setClassesVarargs(value: String*): Self = StObject.set(x, "classes", js.Array(value :_*))
+      inline def setClassesVarargs(value: String*): Self = StObject.set(x, "classes", js.Array(value :_*))
       
-      @scala.inline
-      def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+      inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
+      inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
       
-      @scala.inline
-      def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+      inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
       
-      @scala.inline
-      def setScopes(value: js.Array[js.Array[String]]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+      inline def setScopes(value: js.Array[js.Array[String]]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
+      inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
       
-      @scala.inline
-      def setScopesVarargs(value: js.Array[String]*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: js.Array[String]*): Self = StObject.set(x, "scopes", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     }
   }
   

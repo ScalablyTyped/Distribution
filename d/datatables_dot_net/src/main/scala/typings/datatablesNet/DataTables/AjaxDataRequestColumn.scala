@@ -18,8 +18,7 @@ trait AjaxDataRequestColumn extends StObject {
 }
 object AjaxDataRequestColumn {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     data: String | Double,
     name: String,
     orderable: Boolean,
@@ -30,22 +29,16 @@ object AjaxDataRequestColumn {
     __obj.asInstanceOf[AjaxDataRequestColumn]
   }
   
-  @scala.inline
-  implicit class AjaxDataRequestColumnMutableBuilder[Self <: AjaxDataRequestColumn] (val x: Self) extends AnyVal {
+  extension [Self <: AjaxDataRequestColumn](x: Self) {
     
-    @scala.inline
-    def setData(value: String | Double): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | Double): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderable(value: Boolean): Self = StObject.set(x, "orderable", value.asInstanceOf[js.Any])
+    inline def setOrderable(value: Boolean): Self = StObject.set(x, "orderable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearch(value: AjaxDataRequestSearch): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    inline def setSearch(value: AjaxDataRequestSearch): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchable(value: Boolean): Self = StObject.set(x, "searchable", value.asInstanceOf[js.Any])
+    inline def setSearchable(value: Boolean): Self = StObject.set(x, "searchable", value.asInstanceOf[js.Any])
   }
 }

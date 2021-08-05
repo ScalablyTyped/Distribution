@@ -10,16 +10,13 @@ trait UIkitToggleElement extends StObject {
 }
 object UIkitToggleElement {
   
-  @scala.inline
-  def apply(toggle: () => Unit): UIkitToggleElement = {
+  inline def apply(toggle: () => Unit): UIkitToggleElement = {
     val __obj = js.Dynamic.literal(toggle = js.Any.fromFunction0(toggle))
     __obj.asInstanceOf[UIkitToggleElement]
   }
   
-  @scala.inline
-  implicit class UIkitToggleElementMutableBuilder[Self <: UIkitToggleElement] (val x: Self) extends AnyVal {
+  extension [Self <: UIkitToggleElement](x: Self) {
     
-    @scala.inline
-    def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
+    inline def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
   }
 }

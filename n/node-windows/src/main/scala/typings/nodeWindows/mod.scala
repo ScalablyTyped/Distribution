@@ -403,28 +403,19 @@ object mod {
     var workingdirectory: String = js.native
   }
   
-  @scala.inline
-  def elevate(cmd: String, options: js.Any, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("elevate")(cmd.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def elevate(cmd: String, options: js.Any, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("elevate")(cmd.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def isAdminUser(callback: js.Function1[/* isAdmin */ Boolean, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isAdminUser")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def isAdminUser(callback: js.Function1[/* isAdmin */ Boolean, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isAdminUser")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def kill(pid: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def kill(pid: Double, force: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any], force.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def kill(pid: Double, force: Boolean, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any], force.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def kill(pid: Double, force: Unit, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any], force.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def kill(pid: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def kill(pid: Double, force: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any], force.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def kill(pid: Double, force: Boolean, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any], force.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def kill(pid: Double, force: Unit, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any], force.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def list(callback: js.Function1[/* proc */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def list(callback: js.Function1[/* proc */ js.Any, Unit], verbose: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(callback.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def list(callback: js.Function1[/* proc */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def list(callback: js.Function1[/* proc */ js.Any, Unit], verbose: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(callback.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def sudo(cmd: String, password: String, options: js.Any, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sudo")(cmd.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sudo(cmd: String, password: String, options: js.Any, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sudo")(cmd.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait EnvironmentPair extends StObject {
     
@@ -434,20 +425,16 @@ object mod {
   }
   object EnvironmentPair {
     
-    @scala.inline
-    def apply(name: String, value: String): EnvironmentPair = {
+    inline def apply(name: String, value: String): EnvironmentPair = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[EnvironmentPair]
     }
     
-    @scala.inline
-    implicit class EnvironmentPairMutableBuilder[Self <: EnvironmentPair] (val x: Self) extends AnyVal {
+    extension [Self <: EnvironmentPair](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -459,26 +446,20 @@ object mod {
   }
   object EventLogConfig {
     
-    @scala.inline
-    def apply(): EventLogConfig = {
+    inline def apply(): EventLogConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EventLogConfig]
     }
     
-    @scala.inline
-    implicit class EventLogConfigMutableBuilder[Self <: EventLogConfig] (val x: Self) extends AnyVal {
+    extension [Self <: EventLogConfig](x: Self) {
       
-      @scala.inline
-      def setEventLog(value: String): Self = StObject.set(x, "eventLog", value.asInstanceOf[js.Any])
+      inline def setEventLog(value: String): Self = StObject.set(x, "eventLog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventLogUndefined: Self = StObject.set(x, "eventLog", js.undefined)
+      inline def setEventLogUndefined: Self = StObject.set(x, "eventLog", js.undefined)
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     }
   }
   
@@ -597,104 +578,72 @@ object mod {
   }
   object ServiceConfig {
     
-    @scala.inline
-    def apply(script: String): ServiceConfig = {
+    inline def apply(script: String): ServiceConfig = {
       val __obj = js.Dynamic.literal(script = script.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServiceConfig]
     }
     
-    @scala.inline
-    implicit class ServiceConfigMutableBuilder[Self <: ServiceConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ServiceConfig](x: Self) {
       
-      @scala.inline
-      def setAbortOnError(value: Boolean): Self = StObject.set(x, "abortOnError", value.asInstanceOf[js.Any])
+      inline def setAbortOnError(value: Boolean): Self = StObject.set(x, "abortOnError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbortOnErrorUndefined: Self = StObject.set(x, "abortOnError", js.undefined)
+      inline def setAbortOnErrorUndefined: Self = StObject.set(x, "abortOnError", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setEnv(value: EnvironmentPair | js.Array[EnvironmentPair]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: EnvironmentPair | js.Array[EnvironmentPair]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+      inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
       
-      @scala.inline
-      def setEnvVarargs(value: EnvironmentPair*): Self = StObject.set(x, "env", js.Array(value :_*))
+      inline def setEnvVarargs(value: EnvironmentPair*): Self = StObject.set(x, "env", js.Array(value :_*))
       
-      @scala.inline
-      def setExecPath(value: String): Self = StObject.set(x, "execPath", value.asInstanceOf[js.Any])
+      inline def setExecPath(value: String): Self = StObject.set(x, "execPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecPathUndefined: Self = StObject.set(x, "execPath", js.undefined)
+      inline def setExecPathUndefined: Self = StObject.set(x, "execPath", js.undefined)
       
-      @scala.inline
-      def setGrow(value: Double): Self = StObject.set(x, "grow", value.asInstanceOf[js.Any])
+      inline def setGrow(value: Double): Self = StObject.set(x, "grow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrowUndefined: Self = StObject.set(x, "grow", js.undefined)
+      inline def setGrowUndefined: Self = StObject.set(x, "grow", js.undefined)
       
-      @scala.inline
-      def setLogmode(value: LogMode): Self = StObject.set(x, "logmode", value.asInstanceOf[js.Any])
+      inline def setLogmode(value: LogMode): Self = StObject.set(x, "logmode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogmodeUndefined: Self = StObject.set(x, "logmode", js.undefined)
+      inline def setLogmodeUndefined: Self = StObject.set(x, "logmode", js.undefined)
       
-      @scala.inline
-      def setLogpath(value: String): Self = StObject.set(x, "logpath", value.asInstanceOf[js.Any])
+      inline def setLogpath(value: String): Self = StObject.set(x, "logpath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogpathUndefined: Self = StObject.set(x, "logpath", js.undefined)
+      inline def setLogpathUndefined: Self = StObject.set(x, "logpath", js.undefined)
       
-      @scala.inline
-      def setMaxRestarts(value: Double): Self = StObject.set(x, "maxRestarts", value.asInstanceOf[js.Any])
+      inline def setMaxRestarts(value: Double): Self = StObject.set(x, "maxRestarts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRestartsUndefined: Self = StObject.set(x, "maxRestarts", js.undefined)
+      inline def setMaxRestartsUndefined: Self = StObject.set(x, "maxRestarts", js.undefined)
       
-      @scala.inline
-      def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
+      inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
+      inline def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNodeOptions(value: String): Self = StObject.set(x, "nodeOptions", value.asInstanceOf[js.Any])
+      inline def setNodeOptions(value: String): Self = StObject.set(x, "nodeOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeOptionsUndefined: Self = StObject.set(x, "nodeOptions", js.undefined)
+      inline def setNodeOptionsUndefined: Self = StObject.set(x, "nodeOptions", js.undefined)
       
-      @scala.inline
-      def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+      inline def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStopparentfirst(value: Boolean): Self = StObject.set(x, "stopparentfirst", value.asInstanceOf[js.Any])
+      inline def setStopparentfirst(value: Boolean): Self = StObject.set(x, "stopparentfirst", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStopparentfirstUndefined: Self = StObject.set(x, "stopparentfirst", js.undefined)
+      inline def setStopparentfirstUndefined: Self = StObject.set(x, "stopparentfirst", js.undefined)
       
-      @scala.inline
-      def setStoptimeout(value: Double): Self = StObject.set(x, "stoptimeout", value.asInstanceOf[js.Any])
+      inline def setStoptimeout(value: Double): Self = StObject.set(x, "stoptimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoptimeoutUndefined: Self = StObject.set(x, "stoptimeout", js.undefined)
+      inline def setStoptimeoutUndefined: Self = StObject.set(x, "stoptimeout", js.undefined)
       
-      @scala.inline
-      def setWait_(value: Double): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
+      inline def setWait_(value: Double): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWait_Undefined: Self = StObject.set(x, "wait", js.undefined)
+      inline def setWait_Undefined: Self = StObject.set(x, "wait", js.undefined)
     }
   }
   
@@ -710,29 +659,22 @@ object mod {
   }
   object User {
     
-    @scala.inline
-    def apply(account: String, domain: String, password: String): User = {
+    inline def apply(account: String, domain: String, password: String): User = {
       val __obj = js.Dynamic.literal(account = account.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any])
       __obj.asInstanceOf[User]
     }
     
-    @scala.inline
-    implicit class UserMutableBuilder[Self <: User] (val x: Self) extends AnyVal {
+    extension [Self <: User](x: Self) {
       
-      @scala.inline
-      def setAccount(value: String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
+      inline def setAccount(value: String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMungeCredentialsAfterInstall(value: Boolean): Self = StObject.set(x, "mungeCredentialsAfterInstall", value.asInstanceOf[js.Any])
+      inline def setMungeCredentialsAfterInstall(value: Boolean): Self = StObject.set(x, "mungeCredentialsAfterInstall", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMungeCredentialsAfterInstallUndefined: Self = StObject.set(x, "mungeCredentialsAfterInstall", js.undefined)
+      inline def setMungeCredentialsAfterInstallUndefined: Self = StObject.set(x, "mungeCredentialsAfterInstall", js.undefined)
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     }
   }
   
@@ -764,8 +706,7 @@ object mod {
   }
   object WinswConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dependencies: String | js.Array[String],
       env: EnvironmentPair | js.Array[EnvironmentPair],
       id: String,
@@ -781,59 +722,41 @@ object mod {
       __obj.asInstanceOf[WinswConfig]
     }
     
-    @scala.inline
-    implicit class WinswConfigMutableBuilder[Self <: WinswConfig] (val x: Self) extends AnyVal {
+    extension [Self <: WinswConfig](x: Self) {
       
-      @scala.inline
-      def setDependencies(value: String | js.Array[String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+      inline def setDependencies(value: String | js.Array[String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
+      inline def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setEnv(value: EnvironmentPair | js.Array[EnvironmentPair]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: EnvironmentPair | js.Array[EnvironmentPair]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvVarargs(value: EnvironmentPair*): Self = StObject.set(x, "env", js.Array(value :_*))
+      inline def setEnvVarargs(value: EnvironmentPair*): Self = StObject.set(x, "env", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogOnAs(value: User): Self = StObject.set(x, "logOnAs", value.asInstanceOf[js.Any])
+      inline def setLogOnAs(value: User): Self = StObject.set(x, "logOnAs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogmode(value: LogMode): Self = StObject.set(x, "logmode", value.asInstanceOf[js.Any])
+      inline def setLogmode(value: LogMode): Self = StObject.set(x, "logmode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogpath(value: String): Self = StObject.set(x, "logpath", value.asInstanceOf[js.Any])
+      inline def setLogpath(value: String): Self = StObject.set(x, "logpath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeOptions(value: String | js.Array[String]): Self = StObject.set(x, "nodeOptions", value.asInstanceOf[js.Any])
+      inline def setNodeOptions(value: String | js.Array[String]): Self = StObject.set(x, "nodeOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeOptionsUndefined: Self = StObject.set(x, "nodeOptions", js.undefined)
+      inline def setNodeOptionsUndefined: Self = StObject.set(x, "nodeOptions", js.undefined)
       
-      @scala.inline
-      def setNodeOptionsVarargs(value: String*): Self = StObject.set(x, "nodeOptions", js.Array(value :_*))
+      inline def setNodeOptionsVarargs(value: String*): Self = StObject.set(x, "nodeOptions", js.Array(value :_*))
       
-      @scala.inline
-      def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+      inline def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkingdirectory(value: String): Self = StObject.set(x, "workingdirectory", value.asInstanceOf[js.Any])
+      inline def setWorkingdirectory(value: String): Self = StObject.set(x, "workingdirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapperArgs(value: String): Self = StObject.set(x, "wrapperArgs", value.asInstanceOf[js.Any])
+      inline def setWrapperArgs(value: String): Self = StObject.set(x, "wrapperArgs", value.asInstanceOf[js.Any])
     }
   }
 }

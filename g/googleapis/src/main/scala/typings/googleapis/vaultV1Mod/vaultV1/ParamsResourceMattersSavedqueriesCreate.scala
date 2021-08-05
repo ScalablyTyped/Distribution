@@ -30,31 +30,23 @@ trait ParamsResourceMattersSavedqueriesCreate
 }
 object ParamsResourceMattersSavedqueriesCreate {
   
-  @scala.inline
-  def apply(): ParamsResourceMattersSavedqueriesCreate = {
+  inline def apply(): ParamsResourceMattersSavedqueriesCreate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceMattersSavedqueriesCreate]
   }
   
-  @scala.inline
-  implicit class ParamsResourceMattersSavedqueriesCreateMutableBuilder[Self <: ParamsResourceMattersSavedqueriesCreate] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceMattersSavedqueriesCreate](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setMatterId(value: String): Self = StObject.set(x, "matterId", value.asInstanceOf[js.Any])
+    inline def setMatterId(value: String): Self = StObject.set(x, "matterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatterIdUndefined: Self = StObject.set(x, "matterId", js.undefined)
+    inline def setMatterIdUndefined: Self = StObject.set(x, "matterId", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaSavedQuery): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaSavedQuery): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }
 }

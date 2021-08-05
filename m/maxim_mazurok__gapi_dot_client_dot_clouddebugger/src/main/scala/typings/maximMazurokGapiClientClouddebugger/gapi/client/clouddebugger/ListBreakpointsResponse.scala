@@ -17,28 +17,21 @@ trait ListBreakpointsResponse extends StObject {
 }
 object ListBreakpointsResponse {
   
-  @scala.inline
-  def apply(): ListBreakpointsResponse = {
+  inline def apply(): ListBreakpointsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListBreakpointsResponse]
   }
   
-  @scala.inline
-  implicit class ListBreakpointsResponseMutableBuilder[Self <: ListBreakpointsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListBreakpointsResponse](x: Self) {
     
-    @scala.inline
-    def setBreakpoints(value: js.Array[Breakpoint]): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
+    inline def setBreakpoints(value: js.Array[Breakpoint]): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBreakpointsUndefined: Self = StObject.set(x, "breakpoints", js.undefined)
+    inline def setBreakpointsUndefined: Self = StObject.set(x, "breakpoints", js.undefined)
     
-    @scala.inline
-    def setBreakpointsVarargs(value: Breakpoint*): Self = StObject.set(x, "breakpoints", js.Array(value :_*))
+    inline def setBreakpointsVarargs(value: Breakpoint*): Self = StObject.set(x, "breakpoints", js.Array(value :_*))
     
-    @scala.inline
-    def setNextWaitToken(value: String): Self = StObject.set(x, "nextWaitToken", value.asInstanceOf[js.Any])
+    inline def setNextWaitToken(value: String): Self = StObject.set(x, "nextWaitToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextWaitTokenUndefined: Self = StObject.set(x, "nextWaitToken", js.undefined)
+    inline def setNextWaitTokenUndefined: Self = StObject.set(x, "nextWaitToken", js.undefined)
   }
 }

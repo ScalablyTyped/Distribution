@@ -9,8 +9,7 @@ trait ISelectionZoneProps
      with typings.officeUiFabricReact.selectionZoneMod.ISelectionZoneProps
 object ISelectionZoneProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     selection: typings.uifabricUtilities.selectionTypesMod.ISelection[typings.uifabricUtilities.selectionTypesMod.IObjectWithKey]
   ): ISelectionZoneProps = {
     val __obj = js.Dynamic.literal(selection = selection.asInstanceOf[js.Any])

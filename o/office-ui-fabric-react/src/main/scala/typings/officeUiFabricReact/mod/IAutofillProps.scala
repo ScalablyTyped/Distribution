@@ -9,8 +9,7 @@ trait IAutofillProps
      with typings.officeUiFabricReact.autofillTypesMod.IAutofillProps
 object IAutofillProps {
   
-  @scala.inline
-  def apply(): IAutofillProps = {
+  inline def apply(): IAutofillProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IAutofillProps]
   }

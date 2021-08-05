@@ -24,8 +24,7 @@ object confirmPanelMod {
     @JSImport("rmc-calendar/lib/calendar/ConfirmPanel", "default.defaultProps")
     @js.native
     def defaultProps: ConfirmPanelPropsType = js.native
-    @scala.inline
-    def defaultProps_=(x: ConfirmPanelPropsType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: ConfirmPanelPropsType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -57,56 +56,40 @@ object confirmPanelMod {
   }
   object ConfirmPanelPropsType {
     
-    @scala.inline
-    def apply(locale: Locale, onConfirm: () => Unit): ConfirmPanelPropsType = {
+    inline def apply(locale: Locale, onConfirm: () => Unit): ConfirmPanelPropsType = {
       val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any], onConfirm = js.Any.fromFunction0(onConfirm))
       __obj.asInstanceOf[ConfirmPanelPropsType]
     }
     
-    @scala.inline
-    implicit class ConfirmPanelPropsTypeMutableBuilder[Self <: ConfirmPanelPropsType] (val x: Self) extends AnyVal {
+    extension [Self <: ConfirmPanelPropsType](x: Self) {
       
-      @scala.inline
-      def setDisableBtn(value: Boolean): Self = StObject.set(x, "disableBtn", value.asInstanceOf[js.Any])
+      inline def setDisableBtn(value: Boolean): Self = StObject.set(x, "disableBtn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableBtnUndefined: Self = StObject.set(x, "disableBtn", js.undefined)
+      inline def setDisableBtnUndefined: Self = StObject.set(x, "disableBtn", js.undefined)
       
-      @scala.inline
-      def setEndDateTime(value: Date): Self = StObject.set(x, "endDateTime", value.asInstanceOf[js.Any])
+      inline def setEndDateTime(value: Date): Self = StObject.set(x, "endDateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndDateTimeUndefined: Self = StObject.set(x, "endDateTime", js.undefined)
+      inline def setEndDateTimeUndefined: Self = StObject.set(x, "endDateTime", js.undefined)
       
-      @scala.inline
-      def setFormatStr(value: String): Self = StObject.set(x, "formatStr", value.asInstanceOf[js.Any])
+      inline def setFormatStr(value: String): Self = StObject.set(x, "formatStr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatStrUndefined: Self = StObject.set(x, "formatStr", js.undefined)
+      inline def setFormatStrUndefined: Self = StObject.set(x, "formatStr", js.undefined)
       
-      @scala.inline
-      def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnConfirm(value: () => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction0(value))
+      inline def setOnConfirm(value: () => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnlyConfirm(value: Boolean): Self = StObject.set(x, "onlyConfirm", value.asInstanceOf[js.Any])
+      inline def setOnlyConfirm(value: Boolean): Self = StObject.set(x, "onlyConfirm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnlyConfirmUndefined: Self = StObject.set(x, "onlyConfirm", js.undefined)
+      inline def setOnlyConfirmUndefined: Self = StObject.set(x, "onlyConfirm", js.undefined)
       
-      @scala.inline
-      def setStartDateTime(value: Date): Self = StObject.set(x, "startDateTime", value.asInstanceOf[js.Any])
+      inline def setStartDateTime(value: Date): Self = StObject.set(x, "startDateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartDateTimeUndefined: Self = StObject.set(x, "startDateTime", js.undefined)
+      inline def setStartDateTimeUndefined: Self = StObject.set(x, "startDateTime", js.undefined)
       
-      @scala.inline
-      def setType(value: one | range): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: one | range): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

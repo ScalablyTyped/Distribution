@@ -12,25 +12,19 @@ trait MediaStreamConstraints extends StObject {
 }
 object MediaStreamConstraints {
   
-  @scala.inline
-  def apply(): MediaStreamConstraints = {
+  inline def apply(): MediaStreamConstraints = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MediaStreamConstraints]
   }
   
-  @scala.inline
-  implicit class MediaStreamConstraintsMutableBuilder[Self <: MediaStreamConstraints] (val x: Self) extends AnyVal {
+  extension [Self <: MediaStreamConstraints](x: Self) {
     
-    @scala.inline
-    def setAudio(value: Boolean | MediaTrackConstraints): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+    inline def setAudio(value: Boolean | MediaTrackConstraints): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
+    inline def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
     
-    @scala.inline
-    def setVideo(value: Boolean | MediaTrackConstraints): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+    inline def setVideo(value: Boolean | MediaTrackConstraints): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
+    inline def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
   }
 }

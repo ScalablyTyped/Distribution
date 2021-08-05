@@ -21,8 +21,8 @@ object binaryToMessageStreamMod {
     
     def _transform(chunk: js.Any, encoding: String, callback: TransformCallback): Unit = js.native
     
-    var buffer: js.Any = js.native
+    /* private */ var buffer: js.Any = js.native
     
-    val decodeDelimited: js.Any = js.native
+    /* private */ val decodeDelimited: js.Any = js.native
   }
 }

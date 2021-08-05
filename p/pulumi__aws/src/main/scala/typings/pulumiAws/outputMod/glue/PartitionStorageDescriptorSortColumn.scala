@@ -18,19 +18,15 @@ trait PartitionStorageDescriptorSortColumn extends StObject {
 }
 object PartitionStorageDescriptorSortColumn {
   
-  @scala.inline
-  def apply(column: String, sortOrder: Double): PartitionStorageDescriptorSortColumn = {
+  inline def apply(column: String, sortOrder: Double): PartitionStorageDescriptorSortColumn = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], sortOrder = sortOrder.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartitionStorageDescriptorSortColumn]
   }
   
-  @scala.inline
-  implicit class PartitionStorageDescriptorSortColumnMutableBuilder[Self <: PartitionStorageDescriptorSortColumn] (val x: Self) extends AnyVal {
+  extension [Self <: PartitionStorageDescriptorSortColumn](x: Self) {
     
-    @scala.inline
-    def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortOrder(value: Double): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
+    inline def setSortOrder(value: Double): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
   }
 }

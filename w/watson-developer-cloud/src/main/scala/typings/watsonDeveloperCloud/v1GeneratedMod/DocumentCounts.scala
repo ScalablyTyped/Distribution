@@ -21,37 +21,27 @@ trait DocumentCounts extends StObject {
 }
 object DocumentCounts {
   
-  @scala.inline
-  def apply(): DocumentCounts = {
+  inline def apply(): DocumentCounts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentCounts]
   }
   
-  @scala.inline
-  implicit class DocumentCountsMutableBuilder[Self <: DocumentCounts] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentCounts](x: Self) {
     
-    @scala.inline
-    def setAvailable(value: Double): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
+    inline def setAvailable(value: Double): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailableUndefined: Self = StObject.set(x, "available", js.undefined)
+    inline def setAvailableUndefined: Self = StObject.set(x, "available", js.undefined)
     
-    @scala.inline
-    def setFailed(value: Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
+    inline def setFailed(value: Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedUndefined: Self = StObject.set(x, "failed", js.undefined)
+    inline def setFailedUndefined: Self = StObject.set(x, "failed", js.undefined)
     
-    @scala.inline
-    def setPending(value: Double): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+    inline def setPending(value: Double): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingUndefined: Self = StObject.set(x, "pending", js.undefined)
+    inline def setPendingUndefined: Self = StObject.set(x, "pending", js.undefined)
     
-    @scala.inline
-    def setProcessing(value: Double): Self = StObject.set(x, "processing", value.asInstanceOf[js.Any])
+    inline def setProcessing(value: Double): Self = StObject.set(x, "processing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessingUndefined: Self = StObject.set(x, "processing", js.undefined)
+    inline def setProcessingUndefined: Self = StObject.set(x, "processing", js.undefined)
   }
 }

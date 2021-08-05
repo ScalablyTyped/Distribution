@@ -29,25 +29,19 @@ trait SchemaInsertPageBreakRequest extends StObject {
 }
 object SchemaInsertPageBreakRequest {
   
-  @scala.inline
-  def apply(): SchemaInsertPageBreakRequest = {
+  inline def apply(): SchemaInsertPageBreakRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInsertPageBreakRequest]
   }
   
-  @scala.inline
-  implicit class SchemaInsertPageBreakRequestMutableBuilder[Self <: SchemaInsertPageBreakRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInsertPageBreakRequest](x: Self) {
     
-    @scala.inline
-    def setEndOfSegmentLocation(value: SchemaEndOfSegmentLocation): Self = StObject.set(x, "endOfSegmentLocation", value.asInstanceOf[js.Any])
+    inline def setEndOfSegmentLocation(value: SchemaEndOfSegmentLocation): Self = StObject.set(x, "endOfSegmentLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndOfSegmentLocationUndefined: Self = StObject.set(x, "endOfSegmentLocation", js.undefined)
+    inline def setEndOfSegmentLocationUndefined: Self = StObject.set(x, "endOfSegmentLocation", js.undefined)
     
-    @scala.inline
-    def setLocation(value: SchemaLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: SchemaLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
   }
 }

@@ -59,14 +59,12 @@ object global {
       @JSGlobal("ngCommand.Command.id")
       @js.native
       def id: String = js.native
-      @scala.inline
-      def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
+      inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
     }
     
     @JSGlobal("ngCommand.ModuleName")
     @js.native
     def ModuleName: String = js.native
-    @scala.inline
-    def ModuleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ModuleName")(x.asInstanceOf[js.Any])
+    inline def ModuleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ModuleName")(x.asInstanceOf[js.Any])
   }
 }

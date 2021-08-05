@@ -40,40 +40,29 @@ trait ClaimAccident
 }
 object ClaimAccident {
   
-  @scala.inline
-  def apply(date: date): ClaimAccident = {
+  inline def apply(date: date): ClaimAccident = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClaimAccident]
   }
   
-  @scala.inline
-  implicit class ClaimAccidentMutableBuilder[Self <: ClaimAccident] (val x: Self) extends AnyVal {
+  extension [Self <: ClaimAccident](x: Self) {
     
-    @scala.inline
-    def setDate(value: date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationAddress(value: Address): Self = StObject.set(x, "locationAddress", value.asInstanceOf[js.Any])
+    inline def setLocationAddress(value: Address): Self = StObject.set(x, "locationAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationAddressUndefined: Self = StObject.set(x, "locationAddress", js.undefined)
+    inline def setLocationAddressUndefined: Self = StObject.set(x, "locationAddress", js.undefined)
     
-    @scala.inline
-    def setLocationReference(value: Reference): Self = StObject.set(x, "locationReference", value.asInstanceOf[js.Any])
+    inline def setLocationReference(value: Reference): Self = StObject.set(x, "locationReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationReferenceUndefined: Self = StObject.set(x, "locationReference", js.undefined)
+    inline def setLocationReferenceUndefined: Self = StObject.set(x, "locationReference", js.undefined)
     
-    @scala.inline
-    def setType(value: CodeableConcept): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: CodeableConcept): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def set_date(value: Element): Self = StObject.set(x, "_date", value.asInstanceOf[js.Any])
+    inline def set_date(value: Element): Self = StObject.set(x, "_date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_dateUndefined: Self = StObject.set(x, "_date", js.undefined)
+    inline def set_dateUndefined: Self = StObject.set(x, "_date", js.undefined)
   }
 }

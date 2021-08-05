@@ -11,8 +11,6 @@ object switchWindowMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(urlOrTitleToMatch: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(urlOrTitleToMatch.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def default(urlOrTitleToMatch: RegExp): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(urlOrTitleToMatch.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def default(urlOrTitleToMatch: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(urlOrTitleToMatch.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def default(urlOrTitleToMatch: RegExp): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(urlOrTitleToMatch.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
 }

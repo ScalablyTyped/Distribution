@@ -45,6 +45,5 @@ class Enumerator[T] protected ()
 }
 object Enumerator {
   
-  @scala.inline
-  def apply: EnumeratorConstructor = js.Dynamic.global.selectDynamic("Enumerator").asInstanceOf[EnumeratorConstructor]
+  inline def apply: EnumeratorConstructor = js.Dynamic.global.selectDynamic("Enumerator").asInstanceOf[EnumeratorConstructor]
 }

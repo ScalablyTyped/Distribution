@@ -14,19 +14,15 @@ trait SeriesAccessibilityKeyboardNavigationOptionsObject extends StObject {
 }
 object SeriesAccessibilityKeyboardNavigationOptionsObject {
   
-  @scala.inline
-  def apply(): SeriesAccessibilityKeyboardNavigationOptionsObject = {
+  inline def apply(): SeriesAccessibilityKeyboardNavigationOptionsObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SeriesAccessibilityKeyboardNavigationOptionsObject]
   }
   
-  @scala.inline
-  implicit class SeriesAccessibilityKeyboardNavigationOptionsObjectMutableBuilder[Self <: SeriesAccessibilityKeyboardNavigationOptionsObject] (val x: Self) extends AnyVal {
+  extension [Self <: SeriesAccessibilityKeyboardNavigationOptionsObject](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
   }
 }

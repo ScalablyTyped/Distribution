@@ -11,19 +11,15 @@ trait UndeleteServiceResponse extends StObject {
 }
 object UndeleteServiceResponse {
   
-  @scala.inline
-  def apply(): UndeleteServiceResponse = {
+  inline def apply(): UndeleteServiceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UndeleteServiceResponse]
   }
   
-  @scala.inline
-  implicit class UndeleteServiceResponseMutableBuilder[Self <: UndeleteServiceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UndeleteServiceResponse](x: Self) {
     
-    @scala.inline
-    def setService(value: ManagedService): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    inline def setService(value: ManagedService): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+    inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
   }
 }

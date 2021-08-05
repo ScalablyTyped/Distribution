@@ -18,37 +18,27 @@ trait Image extends StObject {
 }
 object Image {
   
-  @scala.inline
-  def apply(): Image = {
+  inline def apply(): Image = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Image]
   }
   
-  @scala.inline
-  implicit class ImageMutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
+  extension [Self <: Image](x: Self) {
     
-    @scala.inline
-    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageOffset(value: Pixel): Self = StObject.set(x, "imageOffset", value.asInstanceOf[js.Any])
+    inline def setImageOffset(value: Pixel): Self = StObject.set(x, "imageOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageOffsetUndefined: Self = StObject.set(x, "imageOffset", js.undefined)
+    inline def setImageOffsetUndefined: Self = StObject.set(x, "imageOffset", js.undefined)
     
-    @scala.inline
-    def setImageSize(value: Size): Self = StObject.set(x, "imageSize", value.asInstanceOf[js.Any])
+    inline def setImageSize(value: Size): Self = StObject.set(x, "imageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageSizeUndefined: Self = StObject.set(x, "imageSize", js.undefined)
+    inline def setImageSizeUndefined: Self = StObject.set(x, "imageSize", js.undefined)
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
-    @scala.inline
-    def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

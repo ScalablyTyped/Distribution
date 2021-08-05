@@ -22,49 +22,35 @@ trait BrowserOptionsbrowserWSEnBrowserURL extends StObject {
 }
 object BrowserOptionsbrowserWSEnBrowserURL {
   
-  @scala.inline
-  def apply(): BrowserOptionsbrowserWSEnBrowserURL = {
+  inline def apply(): BrowserOptionsbrowserWSEnBrowserURL = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BrowserOptionsbrowserWSEnBrowserURL]
   }
   
-  @scala.inline
-  implicit class BrowserOptionsbrowserWSEnBrowserURLMutableBuilder[Self <: BrowserOptionsbrowserWSEnBrowserURL] (val x: Self) extends AnyVal {
+  extension [Self <: BrowserOptionsbrowserWSEnBrowserURL](x: Self) {
     
-    @scala.inline
-    def setBrowserURL(value: String): Self = StObject.set(x, "browserURL", value.asInstanceOf[js.Any])
+    inline def setBrowserURL(value: String): Self = StObject.set(x, "browserURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowserURLUndefined: Self = StObject.set(x, "browserURL", js.undefined)
+    inline def setBrowserURLUndefined: Self = StObject.set(x, "browserURL", js.undefined)
     
-    @scala.inline
-    def setBrowserWSEndpoint(value: String): Self = StObject.set(x, "browserWSEndpoint", value.asInstanceOf[js.Any])
+    inline def setBrowserWSEndpoint(value: String): Self = StObject.set(x, "browserWSEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowserWSEndpointUndefined: Self = StObject.set(x, "browserWSEndpoint", js.undefined)
+    inline def setBrowserWSEndpointUndefined: Self = StObject.set(x, "browserWSEndpoint", js.undefined)
     
-    @scala.inline
-    def setDefaultViewport(value: typings.puppeteerCore.commonPuppeteerViewportMod.Viewport): Self = StObject.set(x, "defaultViewport", value.asInstanceOf[js.Any])
+    inline def setDefaultViewport(value: typings.puppeteerCore.commonPuppeteerViewportMod.Viewport): Self = StObject.set(x, "defaultViewport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultViewportUndefined: Self = StObject.set(x, "defaultViewport", js.undefined)
+    inline def setDefaultViewportUndefined: Self = StObject.set(x, "defaultViewport", js.undefined)
     
-    @scala.inline
-    def setIgnoreHTTPSErrors(value: Boolean): Self = StObject.set(x, "ignoreHTTPSErrors", value.asInstanceOf[js.Any])
+    inline def setIgnoreHTTPSErrors(value: Boolean): Self = StObject.set(x, "ignoreHTTPSErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreHTTPSErrorsUndefined: Self = StObject.set(x, "ignoreHTTPSErrors", js.undefined)
+    inline def setIgnoreHTTPSErrorsUndefined: Self = StObject.set(x, "ignoreHTTPSErrors", js.undefined)
     
-    @scala.inline
-    def setSlowMo(value: Double): Self = StObject.set(x, "slowMo", value.asInstanceOf[js.Any])
+    inline def setSlowMo(value: Double): Self = StObject.set(x, "slowMo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlowMoUndefined: Self = StObject.set(x, "slowMo", js.undefined)
+    inline def setSlowMoUndefined: Self = StObject.set(x, "slowMo", js.undefined)
     
-    @scala.inline
-    def setTransport(value: ConnectionTransport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
+    inline def setTransport(value: ConnectionTransport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
+    inline def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
   }
 }

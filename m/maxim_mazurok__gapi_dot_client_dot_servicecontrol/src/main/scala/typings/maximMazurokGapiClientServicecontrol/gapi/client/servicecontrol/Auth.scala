@@ -48,53 +48,39 @@ trait Auth extends StObject {
 }
 object Auth {
   
-  @scala.inline
-  def apply(): Auth = {
+  inline def apply(): Auth = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Auth]
   }
   
-  @scala.inline
-  implicit class AuthMutableBuilder[Self <: Auth] (val x: Self) extends AnyVal {
+  extension [Self <: Auth](x: Self) {
     
-    @scala.inline
-    def setAccessLevels(value: js.Array[String]): Self = StObject.set(x, "accessLevels", value.asInstanceOf[js.Any])
+    inline def setAccessLevels(value: js.Array[String]): Self = StObject.set(x, "accessLevels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessLevelsUndefined: Self = StObject.set(x, "accessLevels", js.undefined)
+    inline def setAccessLevelsUndefined: Self = StObject.set(x, "accessLevels", js.undefined)
     
-    @scala.inline
-    def setAccessLevelsVarargs(value: String*): Self = StObject.set(x, "accessLevels", js.Array(value :_*))
+    inline def setAccessLevelsVarargs(value: String*): Self = StObject.set(x, "accessLevels", js.Array(value :_*))
     
-    @scala.inline
-    def setAudiences(value: js.Array[String]): Self = StObject.set(x, "audiences", value.asInstanceOf[js.Any])
+    inline def setAudiences(value: js.Array[String]): Self = StObject.set(x, "audiences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudiencesUndefined: Self = StObject.set(x, "audiences", js.undefined)
+    inline def setAudiencesUndefined: Self = StObject.set(x, "audiences", js.undefined)
     
-    @scala.inline
-    def setAudiencesVarargs(value: String*): Self = StObject.set(x, "audiences", js.Array(value :_*))
+    inline def setAudiencesVarargs(value: String*): Self = StObject.set(x, "audiences", js.Array(value :_*))
     
-    @scala.inline
-    def setClaims(
+    inline def setClaims(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.Auth & TopLevel[js.Any]
     ): Self = StObject.set(x, "claims", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClaimsUndefined: Self = StObject.set(x, "claims", js.undefined)
+    inline def setClaimsUndefined: Self = StObject.set(x, "claims", js.undefined)
     
-    @scala.inline
-    def setPresenter(value: String): Self = StObject.set(x, "presenter", value.asInstanceOf[js.Any])
+    inline def setPresenter(value: String): Self = StObject.set(x, "presenter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPresenterUndefined: Self = StObject.set(x, "presenter", js.undefined)
+    inline def setPresenterUndefined: Self = StObject.set(x, "presenter", js.undefined)
     
-    @scala.inline
-    def setPrincipal(value: String): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
+    inline def setPrincipal(value: String): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalUndefined: Self = StObject.set(x, "principal", js.undefined)
+    inline def setPrincipalUndefined: Self = StObject.set(x, "principal", js.undefined)
   }
 }

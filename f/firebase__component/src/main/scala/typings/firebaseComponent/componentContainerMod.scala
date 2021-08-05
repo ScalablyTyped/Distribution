@@ -70,8 +70,8 @@ object componentContainerMod {
     
     def getProviders(): js.Array[Provider[Name]] = js.native
     
-    val name: js.Any = js.native
+    /* private */ val name: js.Any = js.native
     
-    val providers: js.Any = js.native
+    /* private */ val providers: js.Any = js.native
   }
 }

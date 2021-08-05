@@ -25,8 +25,7 @@ trait AnimationQueryMetadata
 }
 object AnimationQueryMetadata {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     animation: AnimationMetadata | js.Array[AnimationMetadata],
     selector: String,
     `type`: AnimationMetadataType
@@ -36,22 +35,16 @@ object AnimationQueryMetadata {
     __obj.asInstanceOf[AnimationQueryMetadata]
   }
   
-  @scala.inline
-  implicit class AnimationQueryMetadataMutableBuilder[Self <: AnimationQueryMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationQueryMetadata](x: Self) {
     
-    @scala.inline
-    def setAnimation(value: AnimationMetadata | js.Array[AnimationMetadata]): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: AnimationMetadata | js.Array[AnimationMetadata]): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationVarargs(value: AnimationMetadata*): Self = StObject.set(x, "animation", js.Array(value :_*))
+    inline def setAnimationVarargs(value: AnimationMetadata*): Self = StObject.set(x, "animation", js.Array(value :_*))
     
-    @scala.inline
-    def setOptions(value: AnimationQueryOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: AnimationQueryOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsNull: Self = StObject.set(x, "options", null)
+    inline def setOptionsNull: Self = StObject.set(x, "options", null)
     
-    @scala.inline
-    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
   }
 }

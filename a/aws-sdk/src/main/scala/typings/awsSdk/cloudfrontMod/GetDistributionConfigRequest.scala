@@ -13,16 +13,13 @@ trait GetDistributionConfigRequest extends StObject {
 }
 object GetDistributionConfigRequest {
   
-  @scala.inline
-  def apply(Id: String): GetDistributionConfigRequest = {
+  inline def apply(Id: String): GetDistributionConfigRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDistributionConfigRequest]
   }
   
-  @scala.inline
-  implicit class GetDistributionConfigRequestMutableBuilder[Self <: GetDistributionConfigRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDistributionConfigRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

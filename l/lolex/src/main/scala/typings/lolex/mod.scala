@@ -15,23 +15,15 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createClock[TClock /* <: Clock */](): TClock = ^.asInstanceOf[js.Dynamic].applyDynamic("createClock")().asInstanceOf[TClock]
-  @scala.inline
-  def createClock[TClock /* <: Clock */](now: Double): TClock = ^.asInstanceOf[js.Dynamic].applyDynamic("createClock")(now.asInstanceOf[js.Any]).asInstanceOf[TClock]
-  @scala.inline
-  def createClock[TClock /* <: Clock */](now: Double, loopLimit: Double): TClock = (^.asInstanceOf[js.Dynamic].applyDynamic("createClock")(now.asInstanceOf[js.Any], loopLimit.asInstanceOf[js.Any])).asInstanceOf[TClock]
-  @scala.inline
-  def createClock[TClock /* <: Clock */](now: Unit, loopLimit: Double): TClock = (^.asInstanceOf[js.Dynamic].applyDynamic("createClock")(now.asInstanceOf[js.Any], loopLimit.asInstanceOf[js.Any])).asInstanceOf[TClock]
-  @scala.inline
-  def createClock[TClock /* <: Clock */](now: Date): TClock = ^.asInstanceOf[js.Dynamic].applyDynamic("createClock")(now.asInstanceOf[js.Any]).asInstanceOf[TClock]
-  @scala.inline
-  def createClock[TClock /* <: Clock */](now: Date, loopLimit: Double): TClock = (^.asInstanceOf[js.Dynamic].applyDynamic("createClock")(now.asInstanceOf[js.Any], loopLimit.asInstanceOf[js.Any])).asInstanceOf[TClock]
+  inline def createClock[TClock /* <: Clock */](): TClock = ^.asInstanceOf[js.Dynamic].applyDynamic("createClock")().asInstanceOf[TClock]
+  inline def createClock[TClock /* <: Clock */](now: Double): TClock = ^.asInstanceOf[js.Dynamic].applyDynamic("createClock")(now.asInstanceOf[js.Any]).asInstanceOf[TClock]
+  inline def createClock[TClock /* <: Clock */](now: Double, loopLimit: Double): TClock = (^.asInstanceOf[js.Dynamic].applyDynamic("createClock")(now.asInstanceOf[js.Any], loopLimit.asInstanceOf[js.Any])).asInstanceOf[TClock]
+  inline def createClock[TClock /* <: Clock */](now: Unit, loopLimit: Double): TClock = (^.asInstanceOf[js.Dynamic].applyDynamic("createClock")(now.asInstanceOf[js.Any], loopLimit.asInstanceOf[js.Any])).asInstanceOf[TClock]
+  inline def createClock[TClock /* <: Clock */](now: Date): TClock = ^.asInstanceOf[js.Dynamic].applyDynamic("createClock")(now.asInstanceOf[js.Any]).asInstanceOf[TClock]
+  inline def createClock[TClock /* <: Clock */](now: Date, loopLimit: Double): TClock = (^.asInstanceOf[js.Dynamic].applyDynamic("createClock")(now.asInstanceOf[js.Any], loopLimit.asInstanceOf[js.Any])).asInstanceOf[TClock]
   
-  @scala.inline
-  def install[TClock /* <: Clock */](): InstalledClock[TClock] = ^.asInstanceOf[js.Dynamic].applyDynamic("install")().asInstanceOf[InstalledClock[TClock]]
-  @scala.inline
-  def install[TClock /* <: Clock */](opts: LolexInstallOpts): InstalledClock[TClock] = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(opts.asInstanceOf[js.Any]).asInstanceOf[InstalledClock[TClock]]
+  inline def install[TClock /* <: Clock */](): InstalledClock[TClock] = ^.asInstanceOf[js.Dynamic].applyDynamic("install")().asInstanceOf[InstalledClock[TClock]]
+  inline def install[TClock /* <: Clock */](opts: LolexInstallOpts): InstalledClock[TClock] = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(opts.asInstanceOf[js.Any]).asInstanceOf[InstalledClock[TClock]]
   
   object timers extends Shortcut {
     
@@ -132,8 +124,7 @@ object mod {
     override def _to: GlobalTimers[TimerId] = ^
   }
   
-  @scala.inline
-  def withGlobal(global: js.Object): LolexWithContext = ^.asInstanceOf[js.Dynamic].applyDynamic("withGlobal")(global.asInstanceOf[js.Any]).asInstanceOf[LolexWithContext]
+  inline def withGlobal(global: js.Object): LolexWithContext = ^.asInstanceOf[js.Dynamic].applyDynamic("withGlobal")(global.asInstanceOf[js.Any]).asInstanceOf[LolexWithContext]
   
   /**
     * Lolex clock for a browser environment.
@@ -177,44 +168,31 @@ object mod {
   trait FakeMethod extends StObject
   object FakeMethod {
     
-    @scala.inline
-    def Date: typings.lolex.lolexStrings.Date = "Date".asInstanceOf[typings.lolex.lolexStrings.Date]
+    inline def Date: typings.lolex.lolexStrings.Date = "Date".asInstanceOf[typings.lolex.lolexStrings.Date]
     
-    @scala.inline
-    def cancelAnimationFrame: typings.lolex.lolexStrings.cancelAnimationFrame = "cancelAnimationFrame".asInstanceOf[typings.lolex.lolexStrings.cancelAnimationFrame]
+    inline def cancelAnimationFrame: typings.lolex.lolexStrings.cancelAnimationFrame = "cancelAnimationFrame".asInstanceOf[typings.lolex.lolexStrings.cancelAnimationFrame]
     
-    @scala.inline
-    def cancelIdleCallback: typings.lolex.lolexStrings.cancelIdleCallback = "cancelIdleCallback".asInstanceOf[typings.lolex.lolexStrings.cancelIdleCallback]
+    inline def cancelIdleCallback: typings.lolex.lolexStrings.cancelIdleCallback = "cancelIdleCallback".asInstanceOf[typings.lolex.lolexStrings.cancelIdleCallback]
     
-    @scala.inline
-    def clearImmediate: typings.lolex.lolexStrings.clearImmediate = "clearImmediate".asInstanceOf[typings.lolex.lolexStrings.clearImmediate]
+    inline def clearImmediate: typings.lolex.lolexStrings.clearImmediate = "clearImmediate".asInstanceOf[typings.lolex.lolexStrings.clearImmediate]
     
-    @scala.inline
-    def clearInterval: typings.lolex.lolexStrings.clearInterval = "clearInterval".asInstanceOf[typings.lolex.lolexStrings.clearInterval]
+    inline def clearInterval: typings.lolex.lolexStrings.clearInterval = "clearInterval".asInstanceOf[typings.lolex.lolexStrings.clearInterval]
     
-    @scala.inline
-    def clearTimeout: typings.lolex.lolexStrings.clearTimeout = "clearTimeout".asInstanceOf[typings.lolex.lolexStrings.clearTimeout]
+    inline def clearTimeout: typings.lolex.lolexStrings.clearTimeout = "clearTimeout".asInstanceOf[typings.lolex.lolexStrings.clearTimeout]
     
-    @scala.inline
-    def hrtime: typings.lolex.lolexStrings.hrtime = "hrtime".asInstanceOf[typings.lolex.lolexStrings.hrtime]
+    inline def hrtime: typings.lolex.lolexStrings.hrtime = "hrtime".asInstanceOf[typings.lolex.lolexStrings.hrtime]
     
-    @scala.inline
-    def nextTick: typings.lolex.lolexStrings.nextTick = "nextTick".asInstanceOf[typings.lolex.lolexStrings.nextTick]
+    inline def nextTick: typings.lolex.lolexStrings.nextTick = "nextTick".asInstanceOf[typings.lolex.lolexStrings.nextTick]
     
-    @scala.inline
-    def requestAnimationFrame: typings.lolex.lolexStrings.requestAnimationFrame = "requestAnimationFrame".asInstanceOf[typings.lolex.lolexStrings.requestAnimationFrame]
+    inline def requestAnimationFrame: typings.lolex.lolexStrings.requestAnimationFrame = "requestAnimationFrame".asInstanceOf[typings.lolex.lolexStrings.requestAnimationFrame]
     
-    @scala.inline
-    def requestIdleCallback: typings.lolex.lolexStrings.requestIdleCallback = "requestIdleCallback".asInstanceOf[typings.lolex.lolexStrings.requestIdleCallback]
+    inline def requestIdleCallback: typings.lolex.lolexStrings.requestIdleCallback = "requestIdleCallback".asInstanceOf[typings.lolex.lolexStrings.requestIdleCallback]
     
-    @scala.inline
-    def setImmediate: typings.lolex.lolexStrings.setImmediate = "setImmediate".asInstanceOf[typings.lolex.lolexStrings.setImmediate]
+    inline def setImmediate: typings.lolex.lolexStrings.setImmediate = "setImmediate".asInstanceOf[typings.lolex.lolexStrings.setImmediate]
     
-    @scala.inline
-    def setInterval: typings.lolex.lolexStrings.setInterval = "setInterval".asInstanceOf[typings.lolex.lolexStrings.setInterval]
+    inline def setInterval: typings.lolex.lolexStrings.setInterval = "setInterval".asInstanceOf[typings.lolex.lolexStrings.setInterval]
     
-    @scala.inline
-    def setTimeout: typings.lolex.lolexStrings.setTimeout = "setTimeout".asInstanceOf[typings.lolex.lolexStrings.setTimeout]
+    inline def setTimeout: typings.lolex.lolexStrings.setTimeout = "setTimeout".asInstanceOf[typings.lolex.lolexStrings.setTimeout]
   }
   
   trait GlobalTimers[TTimerId /* <: TimerId */] extends StObject {
@@ -281,8 +259,7 @@ object mod {
   }
   object GlobalTimers {
     
-    @scala.inline
-    def apply[TTimerId /* <: TimerId */](
+    inline def apply[TTimerId /* <: TimerId */](
       Date: DateConstructor,
       clearImmediate: TTimerId => Unit,
       clearInterval: TTimerId => Unit,
@@ -295,29 +272,21 @@ object mod {
       __obj.asInstanceOf[GlobalTimers[TTimerId]]
     }
     
-    @scala.inline
-    implicit class GlobalTimersMutableBuilder[Self <: GlobalTimers[?], TTimerId /* <: TimerId */] (val x: Self & GlobalTimers[TTimerId]) extends AnyVal {
+    extension [Self <: GlobalTimers[?], TTimerId /* <: TimerId */](x: Self & GlobalTimers[TTimerId]) {
       
-      @scala.inline
-      def setClearImmediate(value: TTimerId => Unit): Self = StObject.set(x, "clearImmediate", js.Any.fromFunction1(value))
+      inline def setClearImmediate(value: TTimerId => Unit): Self = StObject.set(x, "clearImmediate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClearInterval(value: TTimerId => Unit): Self = StObject.set(x, "clearInterval", js.Any.fromFunction1(value))
+      inline def setClearInterval(value: TTimerId => Unit): Self = StObject.set(x, "clearInterval", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClearTimeout(value: TimerId => Unit): Self = StObject.set(x, "clearTimeout", js.Any.fromFunction1(value))
+      inline def setClearTimeout(value: TimerId => Unit): Self = StObject.set(x, "clearTimeout", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDate(value: DateConstructor): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
+      inline def setDate(value: DateConstructor): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetImmediate(value: js.Function0[Unit] => TTimerId): Self = StObject.set(x, "setImmediate", js.Any.fromFunction1(value))
+      inline def setSetImmediate(value: js.Function0[Unit] => TTimerId): Self = StObject.set(x, "setImmediate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetInterval(value: (js.Function0[Unit], Double, /* repeated */ js.Any) => TTimerId): Self = StObject.set(x, "setInterval", js.Any.fromFunction3(value))
+      inline def setSetInterval(value: (js.Function0[Unit], Double, /* repeated */ js.Any) => TTimerId): Self = StObject.set(x, "setInterval", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSetTimeout(value: (js.Function0[Unit], Double, /* repeated */ js.Any) => TTimerId): Self = StObject.set(x, "setTimeout", js.Any.fromFunction3(value))
+      inline def setSetTimeout(value: (js.Function0[Unit], Double, /* repeated */ js.Any) => TTimerId): Self = StObject.set(x, "setTimeout", js.Any.fromFunction3(value))
     }
   }
   
@@ -343,23 +312,18 @@ object mod {
   }
   object InstalledMethods {
     
-    @scala.inline
-    def apply(methods: js.Array[FakeMethod], uninstall: () => Unit): InstalledMethods = {
+    inline def apply(methods: js.Array[FakeMethod], uninstall: () => Unit): InstalledMethods = {
       val __obj = js.Dynamic.literal(methods = methods.asInstanceOf[js.Any], uninstall = js.Any.fromFunction0(uninstall))
       __obj.asInstanceOf[InstalledMethods]
     }
     
-    @scala.inline
-    implicit class InstalledMethodsMutableBuilder[Self <: InstalledMethods] (val x: Self) extends AnyVal {
+    extension [Self <: InstalledMethods](x: Self) {
       
-      @scala.inline
-      def setMethods(value: js.Array[FakeMethod]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      inline def setMethods(value: js.Array[FakeMethod]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodsVarargs(value: FakeMethod*): Self = StObject.set(x, "methods", js.Array(value :_*))
+      inline def setMethodsVarargs(value: FakeMethod*): Self = StObject.set(x, "methods", js.Array(value :_*))
       
-      @scala.inline
-      def setUninstall(value: () => Unit): Self = StObject.set(x, "uninstall", js.Any.fromFunction0(value))
+      inline def setUninstall(value: () => Unit): Self = StObject.set(x, "uninstall", js.Any.fromFunction0(value))
     }
   }
   
@@ -535,53 +499,38 @@ object mod {
   }
   object LolexInstallOpts {
     
-    @scala.inline
-    def apply(): LolexInstallOpts = {
+    inline def apply(): LolexInstallOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LolexInstallOpts]
     }
     
-    @scala.inline
-    implicit class LolexInstallOptsMutableBuilder[Self <: LolexInstallOpts] (val x: Self) extends AnyVal {
+    extension [Self <: LolexInstallOpts](x: Self) {
       
-      @scala.inline
-      def setAdvanceTimeDelta(value: Double): Self = StObject.set(x, "advanceTimeDelta", value.asInstanceOf[js.Any])
+      inline def setAdvanceTimeDelta(value: Double): Self = StObject.set(x, "advanceTimeDelta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdvanceTimeDeltaUndefined: Self = StObject.set(x, "advanceTimeDelta", js.undefined)
+      inline def setAdvanceTimeDeltaUndefined: Self = StObject.set(x, "advanceTimeDelta", js.undefined)
       
-      @scala.inline
-      def setLoopLimit(value: Double): Self = StObject.set(x, "loopLimit", value.asInstanceOf[js.Any])
+      inline def setLoopLimit(value: Double): Self = StObject.set(x, "loopLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoopLimitUndefined: Self = StObject.set(x, "loopLimit", js.undefined)
+      inline def setLoopLimitUndefined: Self = StObject.set(x, "loopLimit", js.undefined)
       
-      @scala.inline
-      def setNow(value: Double | Date): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
+      inline def setNow(value: Double | Date): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNowUndefined: Self = StObject.set(x, "now", js.undefined)
+      inline def setNowUndefined: Self = StObject.set(x, "now", js.undefined)
       
-      @scala.inline
-      def setShouldAdvanceTime(value: Boolean): Self = StObject.set(x, "shouldAdvanceTime", value.asInstanceOf[js.Any])
+      inline def setShouldAdvanceTime(value: Boolean): Self = StObject.set(x, "shouldAdvanceTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldAdvanceTimeUndefined: Self = StObject.set(x, "shouldAdvanceTime", js.undefined)
+      inline def setShouldAdvanceTimeUndefined: Self = StObject.set(x, "shouldAdvanceTime", js.undefined)
       
-      @scala.inline
-      def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      @scala.inline
-      def setToFake(value: js.Array[FakeMethod]): Self = StObject.set(x, "toFake", value.asInstanceOf[js.Any])
+      inline def setToFake(value: js.Array[FakeMethod]): Self = StObject.set(x, "toFake", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToFakeUndefined: Self = StObject.set(x, "toFake", js.undefined)
+      inline def setToFakeUndefined: Self = StObject.set(x, "toFake", js.undefined)
       
-      @scala.inline
-      def setToFakeVarargs(value: FakeMethod*): Self = StObject.set(x, "toFake", js.Array(value :_*))
+      inline def setToFakeVarargs(value: FakeMethod*): Self = StObject.set(x, "toFake", js.Array(value :_*))
     }
   }
   
@@ -651,20 +600,16 @@ object mod {
   }
   object NodeTimer {
     
-    @scala.inline
-    def apply(ref: () => Unit, unref: () => Unit): NodeTimer = {
+    inline def apply(ref: () => Unit, unref: () => Unit): NodeTimer = {
       val __obj = js.Dynamic.literal(ref = js.Any.fromFunction0(ref), unref = js.Any.fromFunction0(unref))
       __obj.asInstanceOf[NodeTimer]
     }
     
-    @scala.inline
-    implicit class NodeTimerMutableBuilder[Self <: NodeTimer] (val x: Self) extends AnyVal {
+    extension [Self <: NodeTimer](x: Self) {
       
-      @scala.inline
-      def setRef(value: () => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction0(value))
+      inline def setRef(value: () => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUnref(value: () => Unit): Self = StObject.set(x, "unref", js.Any.fromFunction0(value))
+      inline def setUnref(value: () => Unit): Self = StObject.set(x, "unref", js.Any.fromFunction0(value))
     }
   }
   

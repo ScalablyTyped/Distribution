@@ -38,43 +38,31 @@ trait MeterUsageRequest extends StObject {
 }
 object MeterUsageRequest {
   
-  @scala.inline
-  def apply(ProductCode: ProductCode, Timestamp: Timestamp, UsageDimension: UsageDimension): MeterUsageRequest = {
+  inline def apply(ProductCode: ProductCode, Timestamp: Timestamp, UsageDimension: UsageDimension): MeterUsageRequest = {
     val __obj = js.Dynamic.literal(ProductCode = ProductCode.asInstanceOf[js.Any], Timestamp = Timestamp.asInstanceOf[js.Any], UsageDimension = UsageDimension.asInstanceOf[js.Any])
     __obj.asInstanceOf[MeterUsageRequest]
   }
   
-  @scala.inline
-  implicit class MeterUsageRequestMutableBuilder[Self <: MeterUsageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: MeterUsageRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setProductCode(value: ProductCode): Self = StObject.set(x, "ProductCode", value.asInstanceOf[js.Any])
+    inline def setProductCode(value: ProductCode): Self = StObject.set(x, "ProductCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageAllocations(value: UsageAllocations): Self = StObject.set(x, "UsageAllocations", value.asInstanceOf[js.Any])
+    inline def setUsageAllocations(value: UsageAllocations): Self = StObject.set(x, "UsageAllocations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageAllocationsUndefined: Self = StObject.set(x, "UsageAllocations", js.undefined)
+    inline def setUsageAllocationsUndefined: Self = StObject.set(x, "UsageAllocations", js.undefined)
     
-    @scala.inline
-    def setUsageAllocationsVarargs(value: UsageAllocation*): Self = StObject.set(x, "UsageAllocations", js.Array(value :_*))
+    inline def setUsageAllocationsVarargs(value: UsageAllocation*): Self = StObject.set(x, "UsageAllocations", js.Array(value :_*))
     
-    @scala.inline
-    def setUsageDimension(value: UsageDimension): Self = StObject.set(x, "UsageDimension", value.asInstanceOf[js.Any])
+    inline def setUsageDimension(value: UsageDimension): Self = StObject.set(x, "UsageDimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageQuantity(value: UsageQuantity): Self = StObject.set(x, "UsageQuantity", value.asInstanceOf[js.Any])
+    inline def setUsageQuantity(value: UsageQuantity): Self = StObject.set(x, "UsageQuantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageQuantityUndefined: Self = StObject.set(x, "UsageQuantity", js.undefined)
+    inline def setUsageQuantityUndefined: Self = StObject.set(x, "UsageQuantity", js.undefined)
   }
 }

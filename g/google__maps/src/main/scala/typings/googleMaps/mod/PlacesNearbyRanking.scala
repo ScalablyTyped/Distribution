@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PlacesNearbyRanking extends StObject
 object PlacesNearbyRanking {
   
-  @scala.inline
-  def distance: typings.googleMaps.googleMapsStrings.distance = "distance".asInstanceOf[typings.googleMaps.googleMapsStrings.distance]
+  inline def distance: typings.googleMaps.googleMapsStrings.distance = "distance".asInstanceOf[typings.googleMaps.googleMapsStrings.distance]
   
-  @scala.inline
-  def prominence: typings.googleMaps.googleMapsStrings.prominence = "prominence".asInstanceOf[typings.googleMaps.googleMapsStrings.prominence]
+  inline def prominence: typings.googleMaps.googleMapsStrings.prominence = "prominence".asInstanceOf[typings.googleMaps.googleMapsStrings.prominence]
 }

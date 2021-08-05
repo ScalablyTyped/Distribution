@@ -40,8 +40,7 @@ object toolresultsMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         Toolresults
       ] = js.native
-    @scala.inline
-    def v1beta3_=(
+    inline def v1beta3_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -83,8 +82,7 @@ object toolresultsMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -128,9 +126,7 @@ object toolresultsMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def toolresults(options: Options): Toolresults = ^.asInstanceOf[js.Dynamic].applyDynamic("toolresults")(options.asInstanceOf[js.Any]).asInstanceOf[Toolresults]
+  inline def toolresults(options: Options): Toolresults = ^.asInstanceOf[js.Dynamic].applyDynamic("toolresults")(options.asInstanceOf[js.Any]).asInstanceOf[Toolresults]
   
-  @scala.inline
-  def toolresults_v1beta3(version: v1beta3): Toolresults = ^.asInstanceOf[js.Dynamic].applyDynamic("toolresults")(version.asInstanceOf[js.Any]).asInstanceOf[Toolresults]
+  inline def toolresults_v1beta3(version: v1beta3): Toolresults = ^.asInstanceOf[js.Dynamic].applyDynamic("toolresults")(version.asInstanceOf[js.Any]).asInstanceOf[Toolresults]
 }

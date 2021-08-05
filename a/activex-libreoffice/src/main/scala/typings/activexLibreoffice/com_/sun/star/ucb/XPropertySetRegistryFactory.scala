@@ -24,8 +24,7 @@ trait XPropertySetRegistryFactory
 }
 object XPropertySetRegistryFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createPropertySetRegistry: String => XPropertySetRegistry,
     queryInterface: `type` => js.Any,
@@ -35,10 +34,8 @@ object XPropertySetRegistryFactory {
     __obj.asInstanceOf[XPropertySetRegistryFactory]
   }
   
-  @scala.inline
-  implicit class XPropertySetRegistryFactoryMutableBuilder[Self <: XPropertySetRegistryFactory] (val x: Self) extends AnyVal {
+  extension [Self <: XPropertySetRegistryFactory](x: Self) {
     
-    @scala.inline
-    def setCreatePropertySetRegistry(value: String => XPropertySetRegistry): Self = StObject.set(x, "createPropertySetRegistry", js.Any.fromFunction1(value))
+    inline def setCreatePropertySetRegistry(value: String => XPropertySetRegistry): Self = StObject.set(x, "createPropertySetRegistry", js.Any.fromFunction1(value))
   }
 }

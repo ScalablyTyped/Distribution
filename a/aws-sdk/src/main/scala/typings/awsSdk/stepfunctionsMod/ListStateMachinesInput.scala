@@ -18,25 +18,19 @@ trait ListStateMachinesInput extends StObject {
 }
 object ListStateMachinesInput {
   
-  @scala.inline
-  def apply(): ListStateMachinesInput = {
+  inline def apply(): ListStateMachinesInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListStateMachinesInput]
   }
   
-  @scala.inline
-  implicit class ListStateMachinesInputMutableBuilder[Self <: ListStateMachinesInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListStateMachinesInput](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: PageSize): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: PageSize): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PageToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PageToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLHistory")
 @js.native
-class HTMLHistory protected ()
+/* private */ class HTMLHistory ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLHistory

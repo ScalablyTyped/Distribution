@@ -59,97 +59,67 @@ trait ProductPurchase extends StObject {
 }
 object ProductPurchase {
   
-  @scala.inline
-  def apply(): ProductPurchase = {
+  inline def apply(): ProductPurchase = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProductPurchase]
   }
   
-  @scala.inline
-  implicit class ProductPurchaseMutableBuilder[Self <: ProductPurchase] (val x: Self) extends AnyVal {
+  extension [Self <: ProductPurchase](x: Self) {
     
-    @scala.inline
-    def setAcknowledgementState(value: Double): Self = StObject.set(x, "acknowledgementState", value.asInstanceOf[js.Any])
+    inline def setAcknowledgementState(value: Double): Self = StObject.set(x, "acknowledgementState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcknowledgementStateUndefined: Self = StObject.set(x, "acknowledgementState", js.undefined)
+    inline def setAcknowledgementStateUndefined: Self = StObject.set(x, "acknowledgementState", js.undefined)
     
-    @scala.inline
-    def setConsumptionState(value: Double): Self = StObject.set(x, "consumptionState", value.asInstanceOf[js.Any])
+    inline def setConsumptionState(value: Double): Self = StObject.set(x, "consumptionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumptionStateUndefined: Self = StObject.set(x, "consumptionState", js.undefined)
+    inline def setConsumptionStateUndefined: Self = StObject.set(x, "consumptionState", js.undefined)
     
-    @scala.inline
-    def setDeveloperPayload(value: String): Self = StObject.set(x, "developerPayload", value.asInstanceOf[js.Any])
+    inline def setDeveloperPayload(value: String): Self = StObject.set(x, "developerPayload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeveloperPayloadUndefined: Self = StObject.set(x, "developerPayload", js.undefined)
+    inline def setDeveloperPayloadUndefined: Self = StObject.set(x, "developerPayload", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setObfuscatedExternalAccountId(value: String): Self = StObject.set(x, "obfuscatedExternalAccountId", value.asInstanceOf[js.Any])
+    inline def setObfuscatedExternalAccountId(value: String): Self = StObject.set(x, "obfuscatedExternalAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObfuscatedExternalAccountIdUndefined: Self = StObject.set(x, "obfuscatedExternalAccountId", js.undefined)
+    inline def setObfuscatedExternalAccountIdUndefined: Self = StObject.set(x, "obfuscatedExternalAccountId", js.undefined)
     
-    @scala.inline
-    def setObfuscatedExternalProfileId(value: String): Self = StObject.set(x, "obfuscatedExternalProfileId", value.asInstanceOf[js.Any])
+    inline def setObfuscatedExternalProfileId(value: String): Self = StObject.set(x, "obfuscatedExternalProfileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObfuscatedExternalProfileIdUndefined: Self = StObject.set(x, "obfuscatedExternalProfileId", js.undefined)
+    inline def setObfuscatedExternalProfileIdUndefined: Self = StObject.set(x, "obfuscatedExternalProfileId", js.undefined)
     
-    @scala.inline
-    def setOrderId(value: String): Self = StObject.set(x, "orderId", value.asInstanceOf[js.Any])
+    inline def setOrderId(value: String): Self = StObject.set(x, "orderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderIdUndefined: Self = StObject.set(x, "orderId", js.undefined)
+    inline def setOrderIdUndefined: Self = StObject.set(x, "orderId", js.undefined)
     
-    @scala.inline
-    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
+    inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
     
-    @scala.inline
-    def setPurchaseState(value: Double): Self = StObject.set(x, "purchaseState", value.asInstanceOf[js.Any])
+    inline def setPurchaseState(value: Double): Self = StObject.set(x, "purchaseState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPurchaseStateUndefined: Self = StObject.set(x, "purchaseState", js.undefined)
+    inline def setPurchaseStateUndefined: Self = StObject.set(x, "purchaseState", js.undefined)
     
-    @scala.inline
-    def setPurchaseTimeMillis(value: String): Self = StObject.set(x, "purchaseTimeMillis", value.asInstanceOf[js.Any])
+    inline def setPurchaseTimeMillis(value: String): Self = StObject.set(x, "purchaseTimeMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPurchaseTimeMillisUndefined: Self = StObject.set(x, "purchaseTimeMillis", js.undefined)
+    inline def setPurchaseTimeMillisUndefined: Self = StObject.set(x, "purchaseTimeMillis", js.undefined)
     
-    @scala.inline
-    def setPurchaseToken(value: String): Self = StObject.set(x, "purchaseToken", value.asInstanceOf[js.Any])
+    inline def setPurchaseToken(value: String): Self = StObject.set(x, "purchaseToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPurchaseTokenUndefined: Self = StObject.set(x, "purchaseToken", js.undefined)
+    inline def setPurchaseTokenUndefined: Self = StObject.set(x, "purchaseToken", js.undefined)
     
-    @scala.inline
-    def setPurchaseType(value: Double): Self = StObject.set(x, "purchaseType", value.asInstanceOf[js.Any])
+    inline def setPurchaseType(value: Double): Self = StObject.set(x, "purchaseType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPurchaseTypeUndefined: Self = StObject.set(x, "purchaseType", js.undefined)
+    inline def setPurchaseTypeUndefined: Self = StObject.set(x, "purchaseType", js.undefined)
     
-    @scala.inline
-    def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
+    inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
     
-    @scala.inline
-    def setRegionCode(value: String): Self = StObject.set(x, "regionCode", value.asInstanceOf[js.Any])
+    inline def setRegionCode(value: String): Self = StObject.set(x, "regionCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionCodeUndefined: Self = StObject.set(x, "regionCode", js.undefined)
+    inline def setRegionCodeUndefined: Self = StObject.set(x, "regionCode", js.undefined)
   }
 }

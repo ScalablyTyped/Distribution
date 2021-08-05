@@ -20,31 +20,23 @@ trait CommonOptions extends StObject {
 }
 object CommonOptions {
   
-  @scala.inline
-  def apply(): CommonOptions = {
+  inline def apply(): CommonOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommonOptions]
   }
   
-  @scala.inline
-  implicit class CommonOptionsMutableBuilder[Self <: CommonOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CommonOptions](x: Self) {
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+    inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
-    @scala.inline
-    def setFragment(value: Boolean): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
+    inline def setFragment(value: Boolean): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFragmentUndefined: Self = StObject.set(x, "fragment", js.undefined)
+    inline def setFragmentUndefined: Self = StObject.set(x, "fragment", js.undefined)
     
-    @scala.inline
-    def setPosition(value: Boolean): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Boolean): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

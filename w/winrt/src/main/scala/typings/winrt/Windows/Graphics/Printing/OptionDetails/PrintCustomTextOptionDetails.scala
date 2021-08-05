@@ -9,8 +9,7 @@ trait PrintCustomTextOptionDetails
      with IPrintCustomTextOptionDetails
 object PrintCustomTextOptionDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     displayName: String,
     errorText: String,
     maxCharacters: Double,

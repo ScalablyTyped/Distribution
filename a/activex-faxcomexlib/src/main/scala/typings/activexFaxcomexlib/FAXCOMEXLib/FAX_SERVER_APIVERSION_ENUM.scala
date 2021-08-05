@@ -18,15 +18,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FAX_SERVER_APIVERSION_ENUM extends StObject
 object FAX_SERVER_APIVERSION_ENUM {
   
-  @scala.inline
-  def fsAPI_VERSION_0: `0` = 0.asInstanceOf[`0`]
+  inline def fsAPI_VERSION_0: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def fsAPI_VERSION_1: `65536` = 65536.asInstanceOf[`65536`]
+  inline def fsAPI_VERSION_1: `65536` = 65536.asInstanceOf[`65536`]
   
-  @scala.inline
-  def fsAPI_VERSION_2: `131072` = 131072.asInstanceOf[`131072`]
+  inline def fsAPI_VERSION_2: `131072` = 131072.asInstanceOf[`131072`]
   
-  @scala.inline
-  def fsAPI_VERSION_3: `196608` = 196608.asInstanceOf[`196608`]
+  inline def fsAPI_VERSION_3: `196608` = 196608.asInstanceOf[`196608`]
 }

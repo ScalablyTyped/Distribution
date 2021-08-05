@@ -15,8 +15,7 @@ trait Active extends StObject {
 }
 object Active {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     active: Validator[Boolean],
     api: Validator[PickAPIonoffemitgetQueryP],
     onReset: Validator[js.UndefOr[js.Object]]
@@ -25,16 +24,12 @@ object Active {
     __obj.asInstanceOf[Active]
   }
   
-  @scala.inline
-  implicit class ActiveMutableBuilder[Self <: Active] (val x: Self) extends AnyVal {
+  extension [Self <: Active](x: Self) {
     
-    @scala.inline
-    def setActive(value: Validator[Boolean]): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Validator[Boolean]): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApi(value: Validator[PickAPIonoffemitgetQueryP]): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+    inline def setApi(value: Validator[PickAPIonoffemitgetQueryP]): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnReset(value: Validator[js.UndefOr[js.Object]]): Self = StObject.set(x, "onReset", value.asInstanceOf[js.Any])
+    inline def setOnReset(value: Validator[js.UndefOr[js.Object]]): Self = StObject.set(x, "onReset", value.asInstanceOf[js.Any])
   }
 }

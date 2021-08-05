@@ -20,25 +20,19 @@ trait SystemInfoVideoSource
 }
 object SystemInfoVideoSource {
   
-  @scala.inline
-  def apply(connected: js.Array[SystemInfoVideoSourceInfo], disconnected: js.Array[SystemInfoVideoSourceInfo]): SystemInfoVideoSource = {
+  inline def apply(connected: js.Array[SystemInfoVideoSourceInfo], disconnected: js.Array[SystemInfoVideoSourceInfo]): SystemInfoVideoSource = {
     val __obj = js.Dynamic.literal(connected = connected.asInstanceOf[js.Any], disconnected = disconnected.asInstanceOf[js.Any])
     __obj.asInstanceOf[SystemInfoVideoSource]
   }
   
-  @scala.inline
-  implicit class SystemInfoVideoSourceMutableBuilder[Self <: SystemInfoVideoSource] (val x: Self) extends AnyVal {
+  extension [Self <: SystemInfoVideoSource](x: Self) {
     
-    @scala.inline
-    def setConnected(value: js.Array[SystemInfoVideoSourceInfo]): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
+    inline def setConnected(value: js.Array[SystemInfoVideoSourceInfo]): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectedVarargs(value: SystemInfoVideoSourceInfo*): Self = StObject.set(x, "connected", js.Array(value :_*))
+    inline def setConnectedVarargs(value: SystemInfoVideoSourceInfo*): Self = StObject.set(x, "connected", js.Array(value :_*))
     
-    @scala.inline
-    def setDisconnected(value: js.Array[SystemInfoVideoSourceInfo]): Self = StObject.set(x, "disconnected", value.asInstanceOf[js.Any])
+    inline def setDisconnected(value: js.Array[SystemInfoVideoSourceInfo]): Self = StObject.set(x, "disconnected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisconnectedVarargs(value: SystemInfoVideoSourceInfo*): Self = StObject.set(x, "disconnected", js.Array(value :_*))
+    inline def setDisconnectedVarargs(value: SystemInfoVideoSourceInfo*): Self = StObject.set(x, "disconnected", js.Array(value :_*))
   }
 }

@@ -100,107 +100,74 @@ object mod {
   }
   object FTPOptions {
     
-    @scala.inline
-    def apply(host: String): FTPOptions = {
+    inline def apply(host: String): FTPOptions = {
       val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any])
       __obj.asInstanceOf[FTPOptions]
     }
     
-    @scala.inline
-    implicit class FTPOptionsMutableBuilder[Self <: FTPOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FTPOptions](x: Self) {
       
-      @scala.inline
-      def setAdditionalLftpCommands(value: String): Self = StObject.set(x, "additionalLftpCommands", value.asInstanceOf[js.Any])
+      inline def setAdditionalLftpCommands(value: String): Self = StObject.set(x, "additionalLftpCommands", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalLftpCommandsUndefined: Self = StObject.set(x, "additionalLftpCommands", js.undefined)
+      inline def setAdditionalLftpCommandsUndefined: Self = StObject.set(x, "additionalLftpCommands", js.undefined)
       
-      @scala.inline
-      def setAutoConfirm(value: Boolean): Self = StObject.set(x, "autoConfirm", value.asInstanceOf[js.Any])
+      inline def setAutoConfirm(value: Boolean): Self = StObject.set(x, "autoConfirm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoConfirmUndefined: Self = StObject.set(x, "autoConfirm", js.undefined)
+      inline def setAutoConfirmUndefined: Self = StObject.set(x, "autoConfirm", js.undefined)
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setEscape(value: Boolean): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
+      inline def setEscape(value: Boolean): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
+      inline def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+      inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
       
-      @scala.inline
-      def setRequireSSHKey(value: Boolean): Self = StObject.set(x, "requireSSHKey", value.asInstanceOf[js.Any])
+      inline def setRequireSSHKey(value: Boolean): Self = StObject.set(x, "requireSSHKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequireSSHKeyUndefined: Self = StObject.set(x, "requireSSHKey", js.undefined)
+      inline def setRequireSSHKeyUndefined: Self = StObject.set(x, "requireSSHKey", js.undefined)
       
-      @scala.inline
-      def setRequiresPassword(value: Boolean): Self = StObject.set(x, "requiresPassword", value.asInstanceOf[js.Any])
+      inline def setRequiresPassword(value: Boolean): Self = StObject.set(x, "requiresPassword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiresPasswordUndefined: Self = StObject.set(x, "requiresPassword", js.undefined)
+      inline def setRequiresPasswordUndefined: Self = StObject.set(x, "requiresPassword", js.undefined)
       
-      @scala.inline
-      def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
+      inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
+      inline def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
       
-      @scala.inline
-      def setRetryInterval(value: Double): Self = StObject.set(x, "retryInterval", value.asInstanceOf[js.Any])
+      inline def setRetryInterval(value: Double): Self = StObject.set(x, "retryInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryIntervalMultiplier(value: Double): Self = StObject.set(x, "retryIntervalMultiplier", value.asInstanceOf[js.Any])
+      inline def setRetryIntervalMultiplier(value: Double): Self = StObject.set(x, "retryIntervalMultiplier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryIntervalMultiplierUndefined: Self = StObject.set(x, "retryIntervalMultiplier", js.undefined)
+      inline def setRetryIntervalMultiplierUndefined: Self = StObject.set(x, "retryIntervalMultiplier", js.undefined)
       
-      @scala.inline
-      def setRetryIntervalUndefined: Self = StObject.set(x, "retryInterval", js.undefined)
+      inline def setRetryIntervalUndefined: Self = StObject.set(x, "retryInterval", js.undefined)
       
-      @scala.inline
-      def setSshKeyPath(value: Boolean): Self = StObject.set(x, "sshKeyPath", value.asInstanceOf[js.Any])
+      inline def setSshKeyPath(value: Boolean): Self = StObject.set(x, "sshKeyPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSshKeyPathUndefined: Self = StObject.set(x, "sshKeyPath", js.undefined)
+      inline def setSshKeyPathUndefined: Self = StObject.set(x, "sshKeyPath", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+      inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     }
   }
   
@@ -212,26 +179,20 @@ object mod {
   }
   object FTPResults {
     
-    @scala.inline
-    def apply(): FTPResults = {
+    inline def apply(): FTPResults = {
       val __obj = js.Dynamic.literal(data = null, error = null)
       __obj.asInstanceOf[FTPResults]
     }
     
-    @scala.inline
-    implicit class FTPResultsMutableBuilder[Self <: FTPResults] (val x: Self) extends AnyVal {
+    extension [Self <: FTPResults](x: Self) {
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataNull: Self = StObject.set(x, "data", null)
+      inline def setDataNull: Self = StObject.set(x, "data", null)
       
-      @scala.inline
-      def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorNull: Self = StObject.set(x, "error", null)
+      inline def setErrorNull: Self = StObject.set(x, "error", null)
     }
   }
   
@@ -251,50 +212,36 @@ object mod {
   }
   object MirrorOptions {
     
-    @scala.inline
-    def apply(): MirrorOptions = {
+    inline def apply(): MirrorOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MirrorOptions]
     }
     
-    @scala.inline
-    implicit class MirrorOptionsMutableBuilder[Self <: MirrorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MirrorOptions](x: Self) {
       
-      @scala.inline
-      def setFilter(value: js.Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: js.Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setLocalDir(value: String): Self = StObject.set(x, "localDir", value.asInstanceOf[js.Any])
+      inline def setLocalDir(value: String): Self = StObject.set(x, "localDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalDirUndefined: Self = StObject.set(x, "localDir", js.undefined)
+      inline def setLocalDirUndefined: Self = StObject.set(x, "localDir", js.undefined)
       
-      @scala.inline
-      def setOptions(value: String): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: String): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setParallel(value: Boolean | Double): Self = StObject.set(x, "parallel", value.asInstanceOf[js.Any])
+      inline def setParallel(value: Boolean | Double): Self = StObject.set(x, "parallel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParallelUndefined: Self = StObject.set(x, "parallel", js.undefined)
+      inline def setParallelUndefined: Self = StObject.set(x, "parallel", js.undefined)
       
-      @scala.inline
-      def setRemoteDir(value: String): Self = StObject.set(x, "remoteDir", value.asInstanceOf[js.Any])
+      inline def setRemoteDir(value: String): Self = StObject.set(x, "remoteDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoteDirUndefined: Self = StObject.set(x, "remoteDir", js.undefined)
+      inline def setRemoteDirUndefined: Self = StObject.set(x, "remoteDir", js.undefined)
       
-      @scala.inline
-      def setUpload(value: Boolean): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
+      inline def setUpload(value: Boolean): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
+      inline def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
     }
   }
 }

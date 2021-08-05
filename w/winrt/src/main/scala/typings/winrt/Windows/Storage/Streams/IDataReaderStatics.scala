@@ -10,16 +10,13 @@ trait IDataReaderStatics extends StObject {
 }
 object IDataReaderStatics {
   
-  @scala.inline
-  def apply(fromBuffer: IBuffer => DataReader): IDataReaderStatics = {
+  inline def apply(fromBuffer: IBuffer => DataReader): IDataReaderStatics = {
     val __obj = js.Dynamic.literal(fromBuffer = js.Any.fromFunction1(fromBuffer))
     __obj.asInstanceOf[IDataReaderStatics]
   }
   
-  @scala.inline
-  implicit class IDataReaderStaticsMutableBuilder[Self <: IDataReaderStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IDataReaderStatics](x: Self) {
     
-    @scala.inline
-    def setFromBuffer(value: IBuffer => DataReader): Self = StObject.set(x, "fromBuffer", js.Any.fromFunction1(value))
+    inline def setFromBuffer(value: IBuffer => DataReader): Self = StObject.set(x, "fromBuffer", js.Any.fromFunction1(value))
   }
 }

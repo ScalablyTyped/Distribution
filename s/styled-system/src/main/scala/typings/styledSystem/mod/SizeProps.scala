@@ -10,25 +10,19 @@ trait SizeProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StO
 }
 object SizeProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): SizeProps[ThemeType, TVal] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): SizeProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SizeProps[ThemeType, TVal]]
   }
   
-  @scala.inline
-  implicit class SizePropsMutableBuilder[Self <: SizeProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (SizeProps[ThemeType, TVal])) extends AnyVal {
+  extension [Self <: SizeProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (SizeProps[ThemeType, TVal])) {
     
-    @scala.inline
-    def setSize(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeNull: Self = StObject.set(x, "size", null)
+    inline def setSizeNull: Self = StObject.set(x, "size", null)
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setSizeVarargs(value: (TVal | Null)*): Self = StObject.set(x, "size", js.Array(value :_*))
+    inline def setSizeVarargs(value: (TVal | Null)*): Self = StObject.set(x, "size", js.Array(value :_*))
   }
 }

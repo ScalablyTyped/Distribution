@@ -23,28 +23,21 @@ trait GetServiceLastAccessedDetailsRequest extends StObject {
 }
 object GetServiceLastAccessedDetailsRequest {
   
-  @scala.inline
-  def apply(JobId: jobIDType): GetServiceLastAccessedDetailsRequest = {
+  inline def apply(JobId: jobIDType): GetServiceLastAccessedDetailsRequest = {
     val __obj = js.Dynamic.literal(JobId = JobId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetServiceLastAccessedDetailsRequest]
   }
   
-  @scala.inline
-  implicit class GetServiceLastAccessedDetailsRequestMutableBuilder[Self <: GetServiceLastAccessedDetailsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetServiceLastAccessedDetailsRequest](x: Self) {
     
-    @scala.inline
-    def setJobId(value: jobIDType): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: jobIDType): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarker(value: markerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: markerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxItems(value: maxItemsType): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: maxItemsType): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
+    inline def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
   }
 }

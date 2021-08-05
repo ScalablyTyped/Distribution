@@ -18,22 +18,17 @@ trait DeleteBucketOwnershipControlsRequest extends StObject {
 }
 object DeleteBucketOwnershipControlsRequest {
   
-  @scala.inline
-  def apply(Bucket: BucketName): DeleteBucketOwnershipControlsRequest = {
+  inline def apply(Bucket: BucketName): DeleteBucketOwnershipControlsRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteBucketOwnershipControlsRequest]
   }
   
-  @scala.inline
-  implicit class DeleteBucketOwnershipControlsRequestMutableBuilder[Self <: DeleteBucketOwnershipControlsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteBucketOwnershipControlsRequest](x: Self) {
     
-    @scala.inline
-    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedBucketOwner(value: AccountId): Self = StObject.set(x, "ExpectedBucketOwner", value.asInstanceOf[js.Any])
+    inline def setExpectedBucketOwner(value: AccountId): Self = StObject.set(x, "ExpectedBucketOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedBucketOwnerUndefined: Self = StObject.set(x, "ExpectedBucketOwner", js.undefined)
+    inline def setExpectedBucketOwnerUndefined: Self = StObject.set(x, "ExpectedBucketOwner", js.undefined)
   }
 }

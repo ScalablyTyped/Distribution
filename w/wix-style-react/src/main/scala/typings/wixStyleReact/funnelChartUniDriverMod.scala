@@ -25,8 +25,7 @@ object funnelChartUniDriverMod {
   }
   object FunnelChartUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -41,26 +40,19 @@ object funnelChartUniDriverMod {
       __obj.asInstanceOf[FunnelChartUniDriver]
     }
     
-    @scala.inline
-    implicit class FunnelChartUniDriverMutableBuilder[Self <: FunnelChartUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: FunnelChartUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetDifferenceFromDataAt(value: Double => js.Promise[String]): Self = StObject.set(x, "getDifferenceFromDataAt", js.Any.fromFunction1(value))
+      inline def setGetDifferenceFromDataAt(value: Double => js.Promise[String]): Self = StObject.set(x, "getDifferenceFromDataAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetDifferenceTooltipFromDataAt(value: Double => js.Promise[String]): Self = StObject.set(x, "getDifferenceTooltipFromDataAt", js.Any.fromFunction1(value))
+      inline def setGetDifferenceTooltipFromDataAt(value: Double => js.Promise[String]): Self = StObject.set(x, "getDifferenceTooltipFromDataAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetItemsCount(value: () => js.Promise[Double]): Self = StObject.set(x, "getItemsCount", js.Any.fromFunction0(value))
+      inline def setGetItemsCount(value: () => js.Promise[Double]): Self = StObject.set(x, "getItemsCount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLabelAt(value: Double => js.Promise[String]): Self = StObject.set(x, "getLabelAt", js.Any.fromFunction1(value))
+      inline def setGetLabelAt(value: Double => js.Promise[String]): Self = StObject.set(x, "getLabelAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetValueAt(value: Double => js.Promise[String]): Self = StObject.set(x, "getValueAt", js.Any.fromFunction1(value))
+      inline def setGetValueAt(value: Double => js.Promise[String]): Self = StObject.set(x, "getValueAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsDisplayingBadges(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isDisplayingBadges", js.Any.fromFunction0(value))
+      inline def setIsDisplayingBadges(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isDisplayingBadges", js.Any.fromFunction0(value))
     }
   }
 }

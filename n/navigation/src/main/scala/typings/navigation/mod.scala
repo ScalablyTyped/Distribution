@@ -887,56 +887,40 @@ object mod {
   }
   object StateInfo {
     
-    @scala.inline
-    def apply(key: String): StateInfo = {
+    inline def apply(key: String): StateInfo = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[StateInfo]
     }
     
-    @scala.inline
-    implicit class StateInfoMutableBuilder[Self <: StateInfo] (val x: Self) extends AnyVal {
+    extension [Self <: StateInfo](x: Self) {
       
-      @scala.inline
-      def setDefaultTypes(value: js.Any): Self = StObject.set(x, "defaultTypes", value.asInstanceOf[js.Any])
+      inline def setDefaultTypes(value: js.Any): Self = StObject.set(x, "defaultTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultTypesUndefined: Self = StObject.set(x, "defaultTypes", js.undefined)
+      inline def setDefaultTypesUndefined: Self = StObject.set(x, "defaultTypes", js.undefined)
       
-      @scala.inline
-      def setDefaults(value: js.Any): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+      inline def setDefaults(value: js.Any): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
+      inline def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoute(value: String | js.Array[String]): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+      inline def setRoute(value: String | js.Array[String]): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouteUndefined: Self = StObject.set(x, "route", js.undefined)
+      inline def setRouteUndefined: Self = StObject.set(x, "route", js.undefined)
       
-      @scala.inline
-      def setRouteVarargs(value: String*): Self = StObject.set(x, "route", js.Array(value :_*))
+      inline def setRouteVarargs(value: String*): Self = StObject.set(x, "route", js.Array(value :_*))
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setTrackCrumbTrail(value: Boolean | String): Self = StObject.set(x, "trackCrumbTrail", value.asInstanceOf[js.Any])
+      inline def setTrackCrumbTrail(value: Boolean | String): Self = StObject.set(x, "trackCrumbTrail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackCrumbTrailUndefined: Self = StObject.set(x, "trackCrumbTrail", js.undefined)
+      inline def setTrackCrumbTrailUndefined: Self = StObject.set(x, "trackCrumbTrail", js.undefined)
       
-      @scala.inline
-      def setTrackTypes(value: Boolean): Self = StObject.set(x, "trackTypes", value.asInstanceOf[js.Any])
+      inline def setTrackTypes(value: Boolean): Self = StObject.set(x, "trackTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackTypesUndefined: Self = StObject.set(x, "trackTypes", js.undefined)
+      inline def setTrackTypesUndefined: Self = StObject.set(x, "trackTypes", js.undefined)
     }
   }
 }

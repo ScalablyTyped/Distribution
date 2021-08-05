@@ -11,22 +11,17 @@ trait AccountsUpdateLabelsRequest extends StObject {
 }
 object AccountsUpdateLabelsRequest {
   
-  @scala.inline
-  def apply(): AccountsUpdateLabelsRequest = {
+  inline def apply(): AccountsUpdateLabelsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountsUpdateLabelsRequest]
   }
   
-  @scala.inline
-  implicit class AccountsUpdateLabelsRequestMutableBuilder[Self <: AccountsUpdateLabelsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AccountsUpdateLabelsRequest](x: Self) {
     
-    @scala.inline
-    def setLabelIds(value: js.Array[String]): Self = StObject.set(x, "labelIds", value.asInstanceOf[js.Any])
+    inline def setLabelIds(value: js.Array[String]): Self = StObject.set(x, "labelIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelIdsUndefined: Self = StObject.set(x, "labelIds", js.undefined)
+    inline def setLabelIdsUndefined: Self = StObject.set(x, "labelIds", js.undefined)
     
-    @scala.inline
-    def setLabelIdsVarargs(value: String*): Self = StObject.set(x, "labelIds", js.Array(value :_*))
+    inline def setLabelIdsVarargs(value: String*): Self = StObject.set(x, "labelIds", js.Array(value :_*))
   }
 }

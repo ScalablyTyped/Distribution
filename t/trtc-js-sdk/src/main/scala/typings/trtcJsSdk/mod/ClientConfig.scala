@@ -44,49 +44,35 @@ trait ClientConfig extends StObject {
 }
 object ClientConfig {
   
-  @scala.inline
-  def apply(mode: videoCall | live, sdkAppId: Double, userId: String, userSig: String): ClientConfig = {
+  inline def apply(mode: videoCall | live, sdkAppId: Double, userId: String, userSig: String): ClientConfig = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], sdkAppId = sdkAppId.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any], userSig = userSig.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientConfig]
   }
   
-  @scala.inline
-  implicit class ClientConfigMutableBuilder[Self <: ClientConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ClientConfig](x: Self) {
     
-    @scala.inline
-    def setMode(value: videoCall | live): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: videoCall | live): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPureAudioPushMode(value: `1` | `2`): Self = StObject.set(x, "pureAudioPushMode", value.asInstanceOf[js.Any])
+    inline def setPureAudioPushMode(value: `1` | `2`): Self = StObject.set(x, "pureAudioPushMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPureAudioPushModeUndefined: Self = StObject.set(x, "pureAudioPushMode", js.undefined)
+    inline def setPureAudioPushModeUndefined: Self = StObject.set(x, "pureAudioPushMode", js.undefined)
     
-    @scala.inline
-    def setRecordId(value: Double): Self = StObject.set(x, "recordId", value.asInstanceOf[js.Any])
+    inline def setRecordId(value: Double): Self = StObject.set(x, "recordId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordIdUndefined: Self = StObject.set(x, "recordId", js.undefined)
+    inline def setRecordIdUndefined: Self = StObject.set(x, "recordId", js.undefined)
     
-    @scala.inline
-    def setSdkAppId(value: Double): Self = StObject.set(x, "sdkAppId", value.asInstanceOf[js.Any])
+    inline def setSdkAppId(value: Double): Self = StObject.set(x, "sdkAppId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamId(value: String): Self = StObject.set(x, "streamId", value.asInstanceOf[js.Any])
+    inline def setStreamId(value: String): Self = StObject.set(x, "streamId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamIdUndefined: Self = StObject.set(x, "streamId", js.undefined)
+    inline def setStreamIdUndefined: Self = StObject.set(x, "streamId", js.undefined)
     
-    @scala.inline
-    def setUserDefineRecordId(value: String): Self = StObject.set(x, "userDefineRecordId", value.asInstanceOf[js.Any])
+    inline def setUserDefineRecordId(value: String): Self = StObject.set(x, "userDefineRecordId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserDefineRecordIdUndefined: Self = StObject.set(x, "userDefineRecordId", js.undefined)
+    inline def setUserDefineRecordIdUndefined: Self = StObject.set(x, "userDefineRecordId", js.undefined)
     
-    @scala.inline
-    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserSig(value: String): Self = StObject.set(x, "userSig", value.asInstanceOf[js.Any])
+    inline def setUserSig(value: String): Self = StObject.set(x, "userSig", value.asInstanceOf[js.Any])
   }
 }

@@ -18,8 +18,7 @@ trait CompiledResult[ErrorType] extends StObject {
 }
 object CompiledResult {
   
-  @scala.inline
-  def apply[ErrorType](
+  inline def apply[ErrorType](
     errors: js.Array[ErrorType],
     render: String,
     staticRenderFns: js.Array[String],
@@ -29,34 +28,24 @@ object CompiledResult {
     __obj.asInstanceOf[CompiledResult[ErrorType]]
   }
   
-  @scala.inline
-  implicit class CompiledResultMutableBuilder[Self <: CompiledResult[?], ErrorType] (val x: Self & CompiledResult[ErrorType]) extends AnyVal {
+  extension [Self <: CompiledResult[?], ErrorType](x: Self & CompiledResult[ErrorType]) {
     
-    @scala.inline
-    def setAst(value: ASTElement): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
+    inline def setAst(value: ASTElement): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAstUndefined: Self = StObject.set(x, "ast", js.undefined)
+    inline def setAstUndefined: Self = StObject.set(x, "ast", js.undefined)
     
-    @scala.inline
-    def setErrors(value: js.Array[ErrorType]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Array[ErrorType]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsVarargs(value: ErrorType*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: ErrorType*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
-    @scala.inline
-    def setRender(value: String): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+    inline def setRender(value: String): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaticRenderFns(value: js.Array[String]): Self = StObject.set(x, "staticRenderFns", value.asInstanceOf[js.Any])
+    inline def setStaticRenderFns(value: js.Array[String]): Self = StObject.set(x, "staticRenderFns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaticRenderFnsVarargs(value: String*): Self = StObject.set(x, "staticRenderFns", js.Array(value :_*))
+    inline def setStaticRenderFnsVarargs(value: String*): Self = StObject.set(x, "staticRenderFns", js.Array(value :_*))
     
-    @scala.inline
-    def setTips(value: js.Array[ErrorType]): Self = StObject.set(x, "tips", value.asInstanceOf[js.Any])
+    inline def setTips(value: js.Array[ErrorType]): Self = StObject.set(x, "tips", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTipsVarargs(value: ErrorType*): Self = StObject.set(x, "tips", js.Array(value :_*))
+    inline def setTipsVarargs(value: ErrorType*): Self = StObject.set(x, "tips", js.Array(value :_*))
   }
 }

@@ -54,26 +54,20 @@ object mod extends Shortcut {
   }
   object HTTPError {
     
-    @scala.inline
-    def apply(message: String, method: String, name: String, path: String, status: Double, text: String): HTTPError = {
+    inline def apply(message: String, method: String, name: String, path: String, status: Double, text: String): HTTPError = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[HTTPError]
     }
     
-    @scala.inline
-    implicit class HTTPErrorMutableBuilder[Self <: HTTPError] (val x: Self) extends AnyVal {
+    extension [Self <: HTTPError](x: Self) {
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -103,32 +97,24 @@ object mod extends Shortcut {
   }
   object ProgressEvent {
     
-    @scala.inline
-    def apply(direction: download | upload, loaded: Double): ProgressEvent = {
+    inline def apply(direction: download | upload, loaded: Double): ProgressEvent = {
       val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], loaded = loaded.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProgressEvent]
     }
     
-    @scala.inline
-    implicit class ProgressEventMutableBuilder[Self <: ProgressEvent] (val x: Self) extends AnyVal {
+    extension [Self <: ProgressEvent](x: Self) {
       
-      @scala.inline
-      def setDirection(value: download | upload): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: download | upload): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+      inline def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+      inline def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
+      inline def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+      inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
     }
   }
   
@@ -315,26 +301,20 @@ object mod extends Shortcut {
   }
   object ResponseError {
     
-    @scala.inline
-    def apply(message: String, name: String): ResponseError = {
+    inline def apply(message: String, name: String): ResponseError = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResponseError]
     }
     
-    @scala.inline
-    implicit class ResponseErrorMutableBuilder[Self <: ResponseError] (val x: Self) extends AnyVal {
+    extension [Self <: ResponseError](x: Self) {
       
-      @scala.inline
-      def setResponse(value: Response): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: Response): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+      inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     }
   }
   

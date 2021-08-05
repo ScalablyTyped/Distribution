@@ -44,112 +44,77 @@ trait PartialFilters extends StObject {
 }
 object PartialFilters {
   
-  @scala.inline
-  def apply(): PartialFilters = {
+  inline def apply(): PartialFilters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialFilters]
   }
   
-  @scala.inline
-  implicit class PartialFiltersMutableBuilder[Self <: PartialFilters] (val x: Self) extends AnyVal {
+  extension [Self <: PartialFilters](x: Self) {
     
-    @scala.inline
-    def setAfterDate(value: Timestamp): Self = StObject.set(x, "AfterDate", value.asInstanceOf[js.Any])
+    inline def setAfterDate(value: Timestamp): Self = StObject.set(x, "AfterDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfterDateUndefined: Self = StObject.set(x, "AfterDate", js.undefined)
+    inline def setAfterDateUndefined: Self = StObject.set(x, "AfterDate", js.undefined)
     
-    @scala.inline
-    def setAuthorId(value: String): Self = StObject.set(x, "AuthorId", value.asInstanceOf[js.Any])
+    inline def setAuthorId(value: String): Self = StObject.set(x, "AuthorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorIdUndefined: Self = StObject.set(x, "AuthorId", js.undefined)
+    inline def setAuthorIdUndefined: Self = StObject.set(x, "AuthorId", js.undefined)
     
-    @scala.inline
-    def setBeforeDate(value: Timestamp): Self = StObject.set(x, "BeforeDate", value.asInstanceOf[js.Any])
+    inline def setBeforeDate(value: Timestamp): Self = StObject.set(x, "BeforeDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeforeDateUndefined: Self = StObject.set(x, "BeforeDate", js.undefined)
+    inline def setBeforeDateUndefined: Self = StObject.set(x, "BeforeDate", js.undefined)
     
-    @scala.inline
-    def setMaxDebitedFundsAmount(value: Double): Self = StObject.set(x, "MaxDebitedFundsAmount", value.asInstanceOf[js.Any])
+    inline def setMaxDebitedFundsAmount(value: Double): Self = StObject.set(x, "MaxDebitedFundsAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDebitedFundsAmountUndefined: Self = StObject.set(x, "MaxDebitedFundsAmount", js.undefined)
+    inline def setMaxDebitedFundsAmountUndefined: Self = StObject.set(x, "MaxDebitedFundsAmount", js.undefined)
     
-    @scala.inline
-    def setMaxDebitedFundsCurrency(value: CurrencyISO): Self = StObject.set(x, "MaxDebitedFundsCurrency", value.asInstanceOf[js.Any])
+    inline def setMaxDebitedFundsCurrency(value: CurrencyISO): Self = StObject.set(x, "MaxDebitedFundsCurrency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDebitedFundsCurrencyUndefined: Self = StObject.set(x, "MaxDebitedFundsCurrency", js.undefined)
+    inline def setMaxDebitedFundsCurrencyUndefined: Self = StObject.set(x, "MaxDebitedFundsCurrency", js.undefined)
     
-    @scala.inline
-    def setMaxFeesAmount(value: Double): Self = StObject.set(x, "MaxFeesAmount", value.asInstanceOf[js.Any])
+    inline def setMaxFeesAmount(value: Double): Self = StObject.set(x, "MaxFeesAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxFeesAmountUndefined: Self = StObject.set(x, "MaxFeesAmount", js.undefined)
+    inline def setMaxFeesAmountUndefined: Self = StObject.set(x, "MaxFeesAmount", js.undefined)
     
-    @scala.inline
-    def setMaxFeesCurrency(value: CurrencyISO): Self = StObject.set(x, "MaxFeesCurrency", value.asInstanceOf[js.Any])
+    inline def setMaxFeesCurrency(value: CurrencyISO): Self = StObject.set(x, "MaxFeesCurrency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxFeesCurrencyUndefined: Self = StObject.set(x, "MaxFeesCurrency", js.undefined)
+    inline def setMaxFeesCurrencyUndefined: Self = StObject.set(x, "MaxFeesCurrency", js.undefined)
     
-    @scala.inline
-    def setMinDebitedFundsAmount(value: Double): Self = StObject.set(x, "MinDebitedFundsAmount", value.asInstanceOf[js.Any])
+    inline def setMinDebitedFundsAmount(value: Double): Self = StObject.set(x, "MinDebitedFundsAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinDebitedFundsAmountUndefined: Self = StObject.set(x, "MinDebitedFundsAmount", js.undefined)
+    inline def setMinDebitedFundsAmountUndefined: Self = StObject.set(x, "MinDebitedFundsAmount", js.undefined)
     
-    @scala.inline
-    def setMinDebitedFundsCurrency(value: CurrencyISO): Self = StObject.set(x, "MinDebitedFundsCurrency", value.asInstanceOf[js.Any])
+    inline def setMinDebitedFundsCurrency(value: CurrencyISO): Self = StObject.set(x, "MinDebitedFundsCurrency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinDebitedFundsCurrencyUndefined: Self = StObject.set(x, "MinDebitedFundsCurrency", js.undefined)
+    inline def setMinDebitedFundsCurrencyUndefined: Self = StObject.set(x, "MinDebitedFundsCurrency", js.undefined)
     
-    @scala.inline
-    def setMinFeesAmount(value: Double): Self = StObject.set(x, "MinFeesAmount", value.asInstanceOf[js.Any])
+    inline def setMinFeesAmount(value: Double): Self = StObject.set(x, "MinFeesAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinFeesAmountUndefined: Self = StObject.set(x, "MinFeesAmount", js.undefined)
+    inline def setMinFeesAmountUndefined: Self = StObject.set(x, "MinFeesAmount", js.undefined)
     
-    @scala.inline
-    def setMinFeesCurrency(value: CurrencyISO): Self = StObject.set(x, "MinFeesCurrency", value.asInstanceOf[js.Any])
+    inline def setMinFeesCurrency(value: CurrencyISO): Self = StObject.set(x, "MinFeesCurrency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinFeesCurrencyUndefined: Self = StObject.set(x, "MinFeesCurrency", js.undefined)
+    inline def setMinFeesCurrencyUndefined: Self = StObject.set(x, "MinFeesCurrency", js.undefined)
     
-    @scala.inline
-    def setNature(value: js.Array[TransactionNature]): Self = StObject.set(x, "Nature", value.asInstanceOf[js.Any])
+    inline def setNature(value: js.Array[TransactionNature]): Self = StObject.set(x, "Nature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNatureUndefined: Self = StObject.set(x, "Nature", js.undefined)
+    inline def setNatureUndefined: Self = StObject.set(x, "Nature", js.undefined)
     
-    @scala.inline
-    def setNatureVarargs(value: TransactionNature*): Self = StObject.set(x, "Nature", js.Array(value :_*))
+    inline def setNatureVarargs(value: TransactionNature*): Self = StObject.set(x, "Nature", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: js.Array[TransactionStatus]): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: js.Array[TransactionStatus]): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setStatusVarargs(value: TransactionStatus*): Self = StObject.set(x, "Status", js.Array(value :_*))
+    inline def setStatusVarargs(value: TransactionStatus*): Self = StObject.set(x, "Status", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: js.Array[TransactionType]): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: js.Array[TransactionType]): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
-    @scala.inline
-    def setTypeVarargs(value: TransactionType*): Self = StObject.set(x, "Type", js.Array(value :_*))
+    inline def setTypeVarargs(value: TransactionType*): Self = StObject.set(x, "Type", js.Array(value :_*))
     
-    @scala.inline
-    def setWalletId(value: String): Self = StObject.set(x, "WalletId", value.asInstanceOf[js.Any])
+    inline def setWalletId(value: String): Self = StObject.set(x, "WalletId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWalletIdUndefined: Self = StObject.set(x, "WalletId", js.undefined)
+    inline def setWalletIdUndefined: Self = StObject.set(x, "WalletId", js.undefined)
   }
 }

@@ -11,11 +11,9 @@ object topicresultMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parse(xml: js.Object): js.Object | js.Array[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(xml.asInstanceOf[js.Any]).asInstanceOf[js.Object | js.Array[js.Object]]
+  inline def parse(xml: js.Object): js.Object | js.Array[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(xml.asInstanceOf[js.Any]).asInstanceOf[js.Object | js.Array[js.Object]]
   
-  @scala.inline
-  def serialize(resource: TopicProperties): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(resource.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def serialize(resource: TopicProperties): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(resource.asInstanceOf[js.Any]).asInstanceOf[String]
   
   object Azure {
     
@@ -43,8 +41,7 @@ object topicresultMod {
         }
         object TopicProperties {
           
-          @scala.inline
-          def apply(
+          inline def apply(
             DefaultMessageTimeToLive: String,
             DuplicateDetectionHistoryTimeWindow: String,
             EnableBatchedOperations: Boolean,
@@ -58,32 +55,23 @@ object topicresultMod {
             __obj.asInstanceOf[TopicProperties]
           }
           
-          @scala.inline
-          implicit class TopicPropertiesMutableBuilder[Self <: TopicProperties] (val x: Self) extends AnyVal {
+          extension [Self <: TopicProperties](x: Self) {
             
-            @scala.inline
-            def setDefaultMessageTimeToLive(value: String): Self = StObject.set(x, "DefaultMessageTimeToLive", value.asInstanceOf[js.Any])
+            inline def setDefaultMessageTimeToLive(value: String): Self = StObject.set(x, "DefaultMessageTimeToLive", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setDuplicateDetectionHistoryTimeWindow(value: String): Self = StObject.set(x, "DuplicateDetectionHistoryTimeWindow", value.asInstanceOf[js.Any])
+            inline def setDuplicateDetectionHistoryTimeWindow(value: String): Self = StObject.set(x, "DuplicateDetectionHistoryTimeWindow", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setEnableBatchedOperations(value: Boolean): Self = StObject.set(x, "EnableBatchedOperations", value.asInstanceOf[js.Any])
+            inline def setEnableBatchedOperations(value: Boolean): Self = StObject.set(x, "EnableBatchedOperations", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setEnablePartitioning(value: Boolean): Self = StObject.set(x, "EnablePartitioning", value.asInstanceOf[js.Any])
+            inline def setEnablePartitioning(value: Boolean): Self = StObject.set(x, "EnablePartitioning", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setMaxSizeInMegabytes(value: Double): Self = StObject.set(x, "MaxSizeInMegabytes", value.asInstanceOf[js.Any])
+            inline def setMaxSizeInMegabytes(value: Double): Self = StObject.set(x, "MaxSizeInMegabytes", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setRequiresDuplicateDetection(value: Boolean): Self = StObject.set(x, "RequiresDuplicateDetection", value.asInstanceOf[js.Any])
+            inline def setRequiresDuplicateDetection(value: Boolean): Self = StObject.set(x, "RequiresDuplicateDetection", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setSizeInBytes(value: Double): Self = StObject.set(x, "SizeInBytes", value.asInstanceOf[js.Any])
+            inline def setSizeInBytes(value: Double): Self = StObject.set(x, "SizeInBytes", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setSupportOrdering(value: Boolean): Self = StObject.set(x, "SupportOrdering", value.asInstanceOf[js.Any])
+            inline def setSupportOrdering(value: Boolean): Self = StObject.set(x, "SupportOrdering", value.asInstanceOf[js.Any])
           }
         }
       }

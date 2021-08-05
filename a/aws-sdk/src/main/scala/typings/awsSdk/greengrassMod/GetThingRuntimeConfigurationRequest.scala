@@ -13,16 +13,13 @@ trait GetThingRuntimeConfigurationRequest extends StObject {
 }
 object GetThingRuntimeConfigurationRequest {
   
-  @scala.inline
-  def apply(ThingName: string): GetThingRuntimeConfigurationRequest = {
+  inline def apply(ThingName: string): GetThingRuntimeConfigurationRequest = {
     val __obj = js.Dynamic.literal(ThingName = ThingName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetThingRuntimeConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class GetThingRuntimeConfigurationRequestMutableBuilder[Self <: GetThingRuntimeConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetThingRuntimeConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setThingName(value: string): Self = StObject.set(x, "ThingName", value.asInstanceOf[js.Any])
+    inline def setThingName(value: string): Self = StObject.set(x, "ThingName", value.asInstanceOf[js.Any])
   }
 }

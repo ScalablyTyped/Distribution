@@ -224,16 +224,14 @@ object Node {
   @JSImport("go", "Node.DirectionAbsolute")
   @js.native
   def DirectionAbsolute: EnumValue = js.native
-  @scala.inline
-  def DirectionAbsolute_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DirectionAbsolute")(x.asInstanceOf[js.Any])
+  inline def DirectionAbsolute_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DirectionAbsolute")(x.asInstanceOf[js.Any])
   
   /**This value for Link.fromEndSegmentDirection and Link.toEndSegmentDirection indicates that the real value is inherited from the corresponding connected port.*/
   /* static member */
   @JSImport("go", "Node.DirectionDefault")
   @js.native
   def DirectionDefault: EnumValue = js.native
-  @scala.inline
-  def DirectionDefault_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DirectionDefault")(x.asInstanceOf[js.Any])
+  inline def DirectionDefault_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DirectionDefault")(x.asInstanceOf[js.Any])
   
   /**This value for GraphObject.fromEndSegmentDirection and GraphObject.toEndSegmentDirection indicates that the link's end segment angle is rotated to match the node's angle.*/
   /* static member */
@@ -246,33 +244,28 @@ object Node {
   @JSImport("go", "Node.DirectionRotatedNodeOrthogonal")
   @js.native
   def DirectionRotatedNodeOrthogonal: EnumValue = js.native
-  @scala.inline
-  def DirectionRotatedNodeOrthogonal_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DirectionRotatedNodeOrthogonal")(x.asInstanceOf[js.Any])
+  inline def DirectionRotatedNodeOrthogonal_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DirectionRotatedNodeOrthogonal")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def DirectionRotatedNode_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DirectionRotatedNode")(x.asInstanceOf[js.Any])
+  inline def DirectionRotatedNode_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DirectionRotatedNode")(x.asInstanceOf[js.Any])
   
   /**This value for Node.portSpreading indicates that links connecting with a port should be distributed evenly along the side(s) indicated by a Spot that is a "side" Spot.*/
   /* static member */
   @JSImport("go", "Node.SpreadingEvenly")
   @js.native
   def SpreadingEvenly: EnumValue = js.native
-  @scala.inline
-  def SpreadingEvenly_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SpreadingEvenly")(x.asInstanceOf[js.Any])
+  inline def SpreadingEvenly_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SpreadingEvenly")(x.asInstanceOf[js.Any])
   
   /**This value for Node.portSpreading indicates that links connecting with a port should connect at a single point on the side(s) indicated by a Spot that is a "side" Spot.*/
   /* static member */
   @JSImport("go", "Node.SpreadingNone")
   @js.native
   def SpreadingNone: EnumValue = js.native
-  @scala.inline
-  def SpreadingNone_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SpreadingNone")(x.asInstanceOf[js.Any])
+  inline def SpreadingNone_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SpreadingNone")(x.asInstanceOf[js.Any])
   
   /**This value for Node.portSpreading indicates that links connecting with a port should be packed together based on the link's shape's width on the side(s) indicated by a Spot that is a "side" Spot.*/
   /* static member */
   @JSImport("go", "Node.SpreadingPacked")
   @js.native
   def SpreadingPacked: EnumValue = js.native
-  @scala.inline
-  def SpreadingPacked_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SpreadingPacked")(x.asInstanceOf[js.Any])
+  inline def SpreadingPacked_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SpreadingPacked")(x.asInstanceOf[js.Any])
 }

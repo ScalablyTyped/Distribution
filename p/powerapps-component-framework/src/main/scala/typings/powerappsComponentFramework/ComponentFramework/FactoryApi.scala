@@ -52,42 +52,31 @@ object FactoryApi {
     }
     object Popup {
       
-      @scala.inline
-      def apply(content: HTMLElement, name: String, `type`: PopupType): typings.powerappsComponentFramework.ComponentFramework.FactoryApi.Popup.Popup = {
+      inline def apply(content: HTMLElement, name: String, `type`: PopupType): typings.powerappsComponentFramework.ComponentFramework.FactoryApi.Popup.Popup = {
         val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.powerappsComponentFramework.ComponentFramework.FactoryApi.Popup.Popup]
       }
       
-      @scala.inline
-      implicit class PopupMutableBuilder[Self <: typings.powerappsComponentFramework.ComponentFramework.FactoryApi.Popup.Popup] (val x: Self) extends AnyVal {
+      extension [Self <: typings.powerappsComponentFramework.ComponentFramework.FactoryApi.Popup.Popup](x: Self) {
         
-        @scala.inline
-        def setCloseOnOutsideClick(value: Boolean): Self = StObject.set(x, "closeOnOutsideClick", value.asInstanceOf[js.Any])
+        inline def setCloseOnOutsideClick(value: Boolean): Self = StObject.set(x, "closeOnOutsideClick", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCloseOnOutsideClickUndefined: Self = StObject.set(x, "closeOnOutsideClick", js.undefined)
+        inline def setCloseOnOutsideClickUndefined: Self = StObject.set(x, "closeOnOutsideClick", js.undefined)
         
-        @scala.inline
-        def setContent(value: HTMLElement): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+        inline def setContent(value: HTMLElement): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+        inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPopupToOpen(value: String): Self = StObject.set(x, "popupToOpen", value.asInstanceOf[js.Any])
+        inline def setPopupToOpen(value: String): Self = StObject.set(x, "popupToOpen", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPopupToOpenUndefined: Self = StObject.set(x, "popupToOpen", js.undefined)
+        inline def setPopupToOpenUndefined: Self = StObject.set(x, "popupToOpen", js.undefined)
         
-        @scala.inline
-        def setType(value: PopupType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: PopupType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
@@ -140,8 +129,7 @@ object FactoryApi {
     }
     object PopupService {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         closePopup: String => Unit,
         createPopup: typings.powerappsComponentFramework.ComponentFramework.FactoryApi.Popup.Popup => Unit,
         deletePopup: String => Unit,
@@ -154,29 +142,21 @@ object FactoryApi {
         __obj.asInstanceOf[PopupService]
       }
       
-      @scala.inline
-      implicit class PopupServiceMutableBuilder[Self <: PopupService] (val x: Self) extends AnyVal {
+      extension [Self <: PopupService](x: Self) {
         
-        @scala.inline
-        def setClosePopup(value: String => Unit): Self = StObject.set(x, "closePopup", js.Any.fromFunction1(value))
+        inline def setClosePopup(value: String => Unit): Self = StObject.set(x, "closePopup", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setCreatePopup(value: typings.powerappsComponentFramework.ComponentFramework.FactoryApi.Popup.Popup => Unit): Self = StObject.set(x, "createPopup", js.Any.fromFunction1(value))
+        inline def setCreatePopup(value: typings.powerappsComponentFramework.ComponentFramework.FactoryApi.Popup.Popup => Unit): Self = StObject.set(x, "createPopup", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setDeletePopup(value: String => Unit): Self = StObject.set(x, "deletePopup", js.Any.fromFunction1(value))
+        inline def setDeletePopup(value: String => Unit): Self = StObject.set(x, "deletePopup", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setGetPopupsId(value: () => String): Self = StObject.set(x, "getPopupsId", js.Any.fromFunction0(value))
+        inline def setGetPopupsId(value: () => String): Self = StObject.set(x, "getPopupsId", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOpenPopup(value: String => Unit): Self = StObject.set(x, "openPopup", js.Any.fromFunction1(value))
+        inline def setOpenPopup(value: String => Unit): Self = StObject.set(x, "openPopup", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetPopupsId(value: String => Unit): Self = StObject.set(x, "setPopupsId", js.Any.fromFunction1(value))
+        inline def setSetPopupsId(value: String => Unit): Self = StObject.set(x, "setPopupsId", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setUpdatePopup(
+        inline def setUpdatePopup(
           value: (String, typings.powerappsComponentFramework.ComponentFramework.FactoryApi.Popup.Popup) => Unit
         ): Self = StObject.set(x, "updatePopup", js.Any.fromFunction2(value))
       }
@@ -196,11 +176,9 @@ object FactoryApi {
       trait PopupType extends StObject
       object PopupType {
         
-        @scala.inline
-        def `1`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1` = 1.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1`]
+        inline def `1`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1` = 1.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1`]
         
-        @scala.inline
-        def `2`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`2` = 2.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`2`]
+        inline def `2`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`2` = 2.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`2`]
       }
     }
   }

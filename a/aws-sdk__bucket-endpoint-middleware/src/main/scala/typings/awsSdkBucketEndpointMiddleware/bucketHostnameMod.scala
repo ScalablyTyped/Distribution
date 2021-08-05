@@ -10,8 +10,7 @@ object bucketHostnameMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def bucketHostname(
+  inline def bucketHostname(
     hasAccelerateEndpointBaseHostnameBucketNameDualstackEndpointPathStyleEndpointSslCompatible: BucketHostnameParameters
   ): BucketHostname_ = ^.asInstanceOf[js.Dynamic].applyDynamic("bucketHostname")(hasAccelerateEndpointBaseHostnameBucketNameDualstackEndpointPathStyleEndpointSslCompatible.asInstanceOf[js.Any]).asInstanceOf[BucketHostname_]
   
@@ -31,44 +30,32 @@ object bucketHostnameMod {
   }
   object BucketHostnameParameters {
     
-    @scala.inline
-    def apply(baseHostname: String, bucketName: String): BucketHostnameParameters = {
+    inline def apply(baseHostname: String, bucketName: String): BucketHostnameParameters = {
       val __obj = js.Dynamic.literal(baseHostname = baseHostname.asInstanceOf[js.Any], bucketName = bucketName.asInstanceOf[js.Any])
       __obj.asInstanceOf[BucketHostnameParameters]
     }
     
-    @scala.inline
-    implicit class BucketHostnameParametersMutableBuilder[Self <: BucketHostnameParameters] (val x: Self) extends AnyVal {
+    extension [Self <: BucketHostnameParameters](x: Self) {
       
-      @scala.inline
-      def setAccelerateEndpoint(value: Boolean): Self = StObject.set(x, "accelerateEndpoint", value.asInstanceOf[js.Any])
+      inline def setAccelerateEndpoint(value: Boolean): Self = StObject.set(x, "accelerateEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccelerateEndpointUndefined: Self = StObject.set(x, "accelerateEndpoint", js.undefined)
+      inline def setAccelerateEndpointUndefined: Self = StObject.set(x, "accelerateEndpoint", js.undefined)
       
-      @scala.inline
-      def setBaseHostname(value: String): Self = StObject.set(x, "baseHostname", value.asInstanceOf[js.Any])
+      inline def setBaseHostname(value: String): Self = StObject.set(x, "baseHostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
+      inline def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDualstackEndpoint(value: Boolean): Self = StObject.set(x, "dualstackEndpoint", value.asInstanceOf[js.Any])
+      inline def setDualstackEndpoint(value: Boolean): Self = StObject.set(x, "dualstackEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDualstackEndpointUndefined: Self = StObject.set(x, "dualstackEndpoint", js.undefined)
+      inline def setDualstackEndpointUndefined: Self = StObject.set(x, "dualstackEndpoint", js.undefined)
       
-      @scala.inline
-      def setPathStyleEndpoint(value: Boolean): Self = StObject.set(x, "pathStyleEndpoint", value.asInstanceOf[js.Any])
+      inline def setPathStyleEndpoint(value: Boolean): Self = StObject.set(x, "pathStyleEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathStyleEndpointUndefined: Self = StObject.set(x, "pathStyleEndpoint", js.undefined)
+      inline def setPathStyleEndpointUndefined: Self = StObject.set(x, "pathStyleEndpoint", js.undefined)
       
-      @scala.inline
-      def setSslCompatible(value: Boolean): Self = StObject.set(x, "sslCompatible", value.asInstanceOf[js.Any])
+      inline def setSslCompatible(value: Boolean): Self = StObject.set(x, "sslCompatible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSslCompatibleUndefined: Self = StObject.set(x, "sslCompatible", js.undefined)
+      inline def setSslCompatibleUndefined: Self = StObject.set(x, "sslCompatible", js.undefined)
     }
   }
   
@@ -80,20 +67,16 @@ object bucketHostnameMod {
   }
   object BucketHostname_ {
     
-    @scala.inline
-    def apply(bucketEndpoint: Boolean, hostname: String): BucketHostname_ = {
+    inline def apply(bucketEndpoint: Boolean, hostname: String): BucketHostname_ = {
       val __obj = js.Dynamic.literal(bucketEndpoint = bucketEndpoint.asInstanceOf[js.Any], hostname = hostname.asInstanceOf[js.Any])
       __obj.asInstanceOf[BucketHostname_]
     }
     
-    @scala.inline
-    implicit class BucketHostname_MutableBuilder[Self <: BucketHostname_] (val x: Self) extends AnyVal {
+    extension [Self <: BucketHostname_](x: Self) {
       
-      @scala.inline
-      def setBucketEndpoint(value: Boolean): Self = StObject.set(x, "bucketEndpoint", value.asInstanceOf[js.Any])
+      inline def setBucketEndpoint(value: Boolean): Self = StObject.set(x, "bucketEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     }
   }
 }

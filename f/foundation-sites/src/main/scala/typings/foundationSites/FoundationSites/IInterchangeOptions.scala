@@ -10,22 +10,17 @@ trait IInterchangeOptions extends StObject {
 }
 object IInterchangeOptions {
   
-  @scala.inline
-  def apply(): IInterchangeOptions = {
+  inline def apply(): IInterchangeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IInterchangeOptions]
   }
   
-  @scala.inline
-  implicit class IInterchangeOptionsMutableBuilder[Self <: IInterchangeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IInterchangeOptions](x: Self) {
     
-    @scala.inline
-    def setRules(value: js.Array[js.Any]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: js.Array[js.Any]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+    inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    @scala.inline
-    def setRulesVarargs(value: js.Any*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: js.Any*): Self = StObject.set(x, "rules", js.Array(value :_*))
   }
 }

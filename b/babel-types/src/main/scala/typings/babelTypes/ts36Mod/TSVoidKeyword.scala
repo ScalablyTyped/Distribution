@@ -18,10 +18,8 @@ object TSVoidKeyword {
   @js.native
   def apply(): TSVoidKeyword = js.native
   
-  @scala.inline
-  implicit class TSVoidKeywordMutableBuilder[Self <: TSVoidKeyword] (val x: Self) extends AnyVal {
+  extension [Self <: TSVoidKeyword](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.babelTypes.babelTypesStrings.TSVoidKeyword): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.babelTypes.babelTypesStrings.TSVoidKeyword): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

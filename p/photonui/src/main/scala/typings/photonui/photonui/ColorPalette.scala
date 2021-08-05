@@ -19,8 +19,7 @@ trait ColorPalette
 }
 object ColorPalette {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     absolutePosition: X,
     addClass: String => Unit,
     color: Color,
@@ -49,19 +48,14 @@ object ColorPalette {
     __obj.asInstanceOf[ColorPalette]
   }
   
-  @scala.inline
-  implicit class ColorPaletteMutableBuilder[Self <: ColorPalette] (val x: Self) extends AnyVal {
+  extension [Self <: ColorPalette](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPalette(value: js.Array[js.Array[String]]): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
+    inline def setPalette(value: js.Array[js.Array[String]]): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaletteVarargs(value: js.Array[String]*): Self = StObject.set(x, "palette", js.Array(value :_*))
+    inline def setPaletteVarargs(value: js.Array[String]*): Self = StObject.set(x, "palette", js.Array(value :_*))
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

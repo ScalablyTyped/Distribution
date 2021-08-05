@@ -22,8 +22,7 @@ trait `1003` extends StObject {
 }
 object `1003` {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: RequestParameters & (Omit[ReposMergeEndpoint, baseUrl | headers | mediaType]),
     response: OctokitResponse[ReposMergeResponseData | ReposMergeResponse404Data | ReposMergeResponse409Data]
   ): `1003` = {
@@ -31,14 +30,11 @@ object `1003` {
     __obj.asInstanceOf[`1003`]
   }
   
-  @scala.inline
-  implicit class `1003MutableBuilder`[Self <: `1003`] (val x: Self) extends AnyVal {
+  extension [Self <: `1003`](x: Self) {
     
-    @scala.inline
-    def setParameters(value: RequestParameters & (Omit[ReposMergeEndpoint, baseUrl | headers | mediaType])): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: RequestParameters & (Omit[ReposMergeEndpoint, baseUrl | headers | mediaType])): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(
+    inline def setResponse(
       value: OctokitResponse[ReposMergeResponseData | ReposMergeResponse404Data | ReposMergeResponse409Data]
     ): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }

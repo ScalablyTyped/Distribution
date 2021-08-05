@@ -60,55 +60,39 @@ trait FieldElementProperties
 }
 object FieldElementProperties {
   
-  @scala.inline
-  def apply(): FieldElementProperties = {
+  inline def apply(): FieldElementProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FieldElementProperties]
   }
   
-  @scala.inline
-  implicit class FieldElementPropertiesMutableBuilder[Self <: FieldElementProperties] (val x: Self) extends AnyVal {
+  extension [Self <: FieldElementProperties](x: Self) {
     
-    @scala.inline
-    def setDomain(value: CodedValueDomainProperties | RangeDomainProperties): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: CodedValueDomainProperties | RangeDomainProperties): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
-    @scala.inline
-    def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
+    inline def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
+    inline def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
     
-    @scala.inline
-    def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
+    inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldNameUndefined: Self = StObject.set(x, "fieldName", js.undefined)
+    inline def setFieldNameUndefined: Self = StObject.set(x, "fieldName", js.undefined)
     
-    @scala.inline
-    def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
+    inline def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
+    inline def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
     
-    @scala.inline
-    def setInput(value: TextBoxInputProperties | TextAreaInputProperties | DateTimePickerInputProperties): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: TextBoxInputProperties | TextAreaInputProperties | DateTimePickerInputProperties): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    @scala.inline
-    def setRequiredExpression(value: String): Self = StObject.set(x, "requiredExpression", value.asInstanceOf[js.Any])
+    inline def setRequiredExpression(value: String): Self = StObject.set(x, "requiredExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredExpressionUndefined: Self = StObject.set(x, "requiredExpression", js.undefined)
+    inline def setRequiredExpressionUndefined: Self = StObject.set(x, "requiredExpression", js.undefined)
     
-    @scala.inline
-    def setType(value: field): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: field): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

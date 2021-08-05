@@ -36,8 +36,7 @@ object ListViewSearch {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.ListViewSearch = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ListViewSearch]
+  inline def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.ListViewSearch = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ListViewSearch]
   
   /**
     * Creates and returns a new ListViewSearch instance in the SDK and on the server.
@@ -45,8 +44,7 @@ object ListViewSearch {
     * of the parent ListViewDatabaseSource element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInListViewDatabaseSourceUnderSearch(container: typings.mendixmodelsdk.pagesMod.pages.ListViewDatabaseSource): typings.mendixmodelsdk.pagesMod.pages.ListViewSearch = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewDatabaseSourceUnderSearch")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ListViewSearch]
+  inline def createInListViewDatabaseSourceUnderSearch(container: typings.mendixmodelsdk.pagesMod.pages.ListViewDatabaseSource): typings.mendixmodelsdk.pagesMod.pages.ListViewSearch = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewDatabaseSourceUnderSearch")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ListViewSearch]
   
   /**
     * Creates and returns a new ListViewSearch instance in the SDK and on the server.
@@ -54,20 +52,17 @@ object ListViewSearch {
     * of the parent ListViewXPathSource element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInListViewXPathSourceUnderSearch(container: typings.mendixmodelsdk.pagesMod.pages.ListViewXPathSource): typings.mendixmodelsdk.pagesMod.pages.ListViewSearch = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewXPathSourceUnderSearch")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ListViewSearch]
+  inline def createInListViewXPathSourceUnderSearch(container: typings.mendixmodelsdk.pagesMod.pages.ListViewXPathSource): typings.mendixmodelsdk.pagesMod.pages.ListViewSearch = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewXPathSourceUnderSearch")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ListViewSearch]
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.ListViewSearch.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.ListViewSearch.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

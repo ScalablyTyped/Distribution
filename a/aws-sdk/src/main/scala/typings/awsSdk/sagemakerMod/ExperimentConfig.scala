@@ -23,31 +23,23 @@ trait ExperimentConfig extends StObject {
 }
 object ExperimentConfig {
   
-  @scala.inline
-  def apply(): ExperimentConfig = {
+  inline def apply(): ExperimentConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExperimentConfig]
   }
   
-  @scala.inline
-  implicit class ExperimentConfigMutableBuilder[Self <: ExperimentConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ExperimentConfig](x: Self) {
     
-    @scala.inline
-    def setExperimentName(value: ExperimentEntityName): Self = StObject.set(x, "ExperimentName", value.asInstanceOf[js.Any])
+    inline def setExperimentName(value: ExperimentEntityName): Self = StObject.set(x, "ExperimentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExperimentNameUndefined: Self = StObject.set(x, "ExperimentName", js.undefined)
+    inline def setExperimentNameUndefined: Self = StObject.set(x, "ExperimentName", js.undefined)
     
-    @scala.inline
-    def setTrialComponentDisplayName(value: ExperimentEntityName): Self = StObject.set(x, "TrialComponentDisplayName", value.asInstanceOf[js.Any])
+    inline def setTrialComponentDisplayName(value: ExperimentEntityName): Self = StObject.set(x, "TrialComponentDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrialComponentDisplayNameUndefined: Self = StObject.set(x, "TrialComponentDisplayName", js.undefined)
+    inline def setTrialComponentDisplayNameUndefined: Self = StObject.set(x, "TrialComponentDisplayName", js.undefined)
     
-    @scala.inline
-    def setTrialName(value: ExperimentEntityName): Self = StObject.set(x, "TrialName", value.asInstanceOf[js.Any])
+    inline def setTrialName(value: ExperimentEntityName): Self = StObject.set(x, "TrialName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrialNameUndefined: Self = StObject.set(x, "TrialName", js.undefined)
+    inline def setTrialNameUndefined: Self = StObject.set(x, "TrialName", js.undefined)
   }
 }

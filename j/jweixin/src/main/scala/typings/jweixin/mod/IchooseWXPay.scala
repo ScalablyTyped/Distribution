@@ -32,8 +32,7 @@ trait IchooseWXPay
 }
 object IchooseWXPay {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _package: String,
     nonceStr: String,
     paySign: String,
@@ -46,25 +45,18 @@ object IchooseWXPay {
     __obj.asInstanceOf[IchooseWXPay]
   }
   
-  @scala.inline
-  implicit class IchooseWXPayMutableBuilder[Self <: IchooseWXPay] (val x: Self) extends AnyVal {
+  extension [Self <: IchooseWXPay](x: Self) {
     
-    @scala.inline
-    def setNonceStr(value: String): Self = StObject.set(x, "nonceStr", value.asInstanceOf[js.Any])
+    inline def setNonceStr(value: String): Self = StObject.set(x, "nonceStr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaySign(value: String): Self = StObject.set(x, "paySign", value.asInstanceOf[js.Any])
+    inline def setPaySign(value: String): Self = StObject.set(x, "paySign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignType(value: String): Self = StObject.set(x, "signType", value.asInstanceOf[js.Any])
+    inline def setSignType(value: String): Self = StObject.set(x, "signType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: js.Any => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: js.Any => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_package(value: String): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
+    inline def set_package(value: String): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
   }
 }

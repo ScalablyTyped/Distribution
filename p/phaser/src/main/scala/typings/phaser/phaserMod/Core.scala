@@ -529,8 +529,7 @@ object Core {
     * Relies upon two webpack global flags to be defined: `WEBGL_RENDERER` and `CANVAS_RENDERER` during build time, but not at run-time.
     * @param game The Phaser.Game instance on which the renderer will be set.
     */
-  @scala.inline
-  def CreateRenderer(game: typings.phaser.Phaser.Game): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateRenderer")(game.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def CreateRenderer(game: typings.phaser.Phaser.Game): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateRenderer")(game.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Called automatically by Phaser.Game and responsible for creating the console.log debug header.
@@ -538,8 +537,7 @@ object Core {
     * You can customize or disable the header via the Game Config object.
     * @param game The Phaser.Game instance which will output this debug header.
     */
-  @scala.inline
-  def DebugHeader(game: typings.phaser.Phaser.Game): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("DebugHeader")(game.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def DebugHeader(game: typings.phaser.Phaser.Game): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("DebugHeader")(game.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   object Events {
     
@@ -747,6 +745,5 @@ object Core {
     * the provided Event Emitter and fires the related events.
     * @param game The Game instance this Visibility Handler is working on.
     */
-  @scala.inline
-  def VisibilityHandler(game: typings.phaser.Phaser.Game): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("VisibilityHandler")(game.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def VisibilityHandler(game: typings.phaser.Phaser.Game): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("VisibilityHandler")(game.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

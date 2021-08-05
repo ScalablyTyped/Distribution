@@ -49,8 +49,7 @@ trait ILookAtComponent extends StObject {
 }
 object ILookAtComponent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     look_cooldown: Range,
     look_event: MinecraftTrigger | String,
     mAllowInvulnerable: Boolean,
@@ -61,28 +60,20 @@ object ILookAtComponent {
     __obj.asInstanceOf[ILookAtComponent]
   }
   
-  @scala.inline
-  implicit class ILookAtComponentMutableBuilder[Self <: ILookAtComponent] (val x: Self) extends AnyVal {
+  extension [Self <: ILookAtComponent](x: Self) {
     
-    @scala.inline
-    def setFilters(value: MinecraftFilter): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: MinecraftFilter): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    @scala.inline
-    def setLook_cooldown(value: Range): Self = StObject.set(x, "look_cooldown", value.asInstanceOf[js.Any])
+    inline def setLook_cooldown(value: Range): Self = StObject.set(x, "look_cooldown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLook_event(value: MinecraftTrigger | String): Self = StObject.set(x, "look_event", value.asInstanceOf[js.Any])
+    inline def setLook_event(value: MinecraftTrigger | String): Self = StObject.set(x, "look_event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMAllowInvulnerable(value: Boolean): Self = StObject.set(x, "mAllowInvulnerable", value.asInstanceOf[js.Any])
+    inline def setMAllowInvulnerable(value: Boolean): Self = StObject.set(x, "mAllowInvulnerable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchRadius(value: Double): Self = StObject.set(x, "searchRadius", value.asInstanceOf[js.Any])
+    inline def setSearchRadius(value: Double): Self = StObject.set(x, "searchRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetTarget(value: Boolean): Self = StObject.set(x, "setTarget", value.asInstanceOf[js.Any])
+    inline def setSetTarget(value: Boolean): Self = StObject.set(x, "setTarget", value.asInstanceOf[js.Any])
   }
 }

@@ -33,8 +33,7 @@ trait GitTreeDiffEntry extends StObject {
 }
 object GitTreeDiffEntry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     baseObjectId: String,
     changeType: VersionControlChangeType,
     objectType: GitObjectType,
@@ -45,22 +44,16 @@ object GitTreeDiffEntry {
     __obj.asInstanceOf[GitTreeDiffEntry]
   }
   
-  @scala.inline
-  implicit class GitTreeDiffEntryMutableBuilder[Self <: GitTreeDiffEntry] (val x: Self) extends AnyVal {
+  extension [Self <: GitTreeDiffEntry](x: Self) {
     
-    @scala.inline
-    def setBaseObjectId(value: String): Self = StObject.set(x, "baseObjectId", value.asInstanceOf[js.Any])
+    inline def setBaseObjectId(value: String): Self = StObject.set(x, "baseObjectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeType(value: VersionControlChangeType): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
+    inline def setChangeType(value: VersionControlChangeType): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectType(value: GitObjectType): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
+    inline def setObjectType(value: GitObjectType): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetObjectId(value: String): Self = StObject.set(x, "targetObjectId", value.asInstanceOf[js.Any])
+    inline def setTargetObjectId(value: String): Self = StObject.set(x, "targetObjectId", value.asInstanceOf[js.Any])
   }
 }

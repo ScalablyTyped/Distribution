@@ -26,43 +26,43 @@ object mod {
        with OpenAPIRequestValidator {
     def this(args: OpenAPIRequestValidatorArgs) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var bodySchema: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var errorMapper: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var isBodyRequired: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var logger: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var loggingKey: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var requestBody: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var requestBodyValidators: js.Any = js.native
     
     /* CompleteClass */
     override def validate(request: js.Any): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var validateBody: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var validateFormData: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var validateHeaders: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var validatePath: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var validateQuery: js.Any = js.native
     
     /* CompleteClass */
@@ -77,17 +77,14 @@ object mod {
   }
   object IOpenAPIRequestValidator {
     
-    @scala.inline
-    def apply(validateRequest: Request => js.Any): IOpenAPIRequestValidator = {
+    inline def apply(validateRequest: Request => js.Any): IOpenAPIRequestValidator = {
       val __obj = js.Dynamic.literal(validateRequest = js.Any.fromFunction1(validateRequest))
       __obj.asInstanceOf[IOpenAPIRequestValidator]
     }
     
-    @scala.inline
-    implicit class IOpenAPIRequestValidatorMutableBuilder[Self <: IOpenAPIRequestValidator] (val x: Self) extends AnyVal {
+    extension [Self <: IOpenAPIRequestValidator](x: Self) {
       
-      @scala.inline
-      def setValidateRequest(value: Request => js.Any): Self = StObject.set(x, "validateRequest", js.Any.fromFunction1(value))
+      inline def setValidateRequest(value: Request => js.Any): Self = StObject.set(x, "validateRequest", js.Any.fromFunction1(value))
     }
   }
   
@@ -95,38 +92,37 @@ object mod {
     extends StObject
        with IOpenAPIRequestValidator {
     
-    var bodySchema: js.Any
+    /* private */ var bodySchema: js.Any
     
-    var errorMapper: js.Any
+    /* private */ var errorMapper: js.Any
     
-    var isBodyRequired: js.Any
+    /* private */ var isBodyRequired: js.Any
     
-    var logger: js.Any
+    /* private */ var logger: js.Any
     
-    var loggingKey: js.Any
+    /* private */ var loggingKey: js.Any
     
-    var requestBody: js.Any
+    /* private */ var requestBody: js.Any
     
-    var requestBodyValidators: js.Any
+    /* private */ var requestBodyValidators: js.Any
     
     def validate(request: js.Any): Unit
     
-    var validateBody: js.Any
+    /* private */ var validateBody: js.Any
     
-    var validateFormData: js.Any
+    /* private */ var validateFormData: js.Any
     
-    var validateHeaders: js.Any
+    /* private */ var validateHeaders: js.Any
     
-    var validatePath: js.Any
+    /* private */ var validatePath: js.Any
     
-    var validateQuery: js.Any
+    /* private */ var validateQuery: js.Any
     
     def validateRequest(request: js.Any): js.Any
   }
   object OpenAPIRequestValidator {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bodySchema: js.Any,
       errorMapper: js.Any,
       isBodyRequired: js.Any,
@@ -146,50 +142,35 @@ object mod {
       __obj.asInstanceOf[OpenAPIRequestValidator]
     }
     
-    @scala.inline
-    implicit class OpenAPIRequestValidatorMutableBuilder[Self <: OpenAPIRequestValidator] (val x: Self) extends AnyVal {
+    extension [Self <: OpenAPIRequestValidator](x: Self) {
       
-      @scala.inline
-      def setBodySchema(value: js.Any): Self = StObject.set(x, "bodySchema", value.asInstanceOf[js.Any])
+      inline def setBodySchema(value: js.Any): Self = StObject.set(x, "bodySchema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorMapper(value: js.Any): Self = StObject.set(x, "errorMapper", value.asInstanceOf[js.Any])
+      inline def setErrorMapper(value: js.Any): Self = StObject.set(x, "errorMapper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBodyRequired(value: js.Any): Self = StObject.set(x, "isBodyRequired", value.asInstanceOf[js.Any])
+      inline def setIsBodyRequired(value: js.Any): Self = StObject.set(x, "isBodyRequired", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogger(value: js.Any): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: js.Any): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggingKey(value: js.Any): Self = StObject.set(x, "loggingKey", value.asInstanceOf[js.Any])
+      inline def setLoggingKey(value: js.Any): Self = StObject.set(x, "loggingKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestBody(value: js.Any): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+      inline def setRequestBody(value: js.Any): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestBodyValidators(value: js.Any): Self = StObject.set(x, "requestBodyValidators", value.asInstanceOf[js.Any])
+      inline def setRequestBodyValidators(value: js.Any): Self = StObject.set(x, "requestBodyValidators", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidate(value: js.Any => Unit): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+      inline def setValidate(value: js.Any => Unit): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValidateBody(value: js.Any): Self = StObject.set(x, "validateBody", value.asInstanceOf[js.Any])
+      inline def setValidateBody(value: js.Any): Self = StObject.set(x, "validateBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateFormData(value: js.Any): Self = StObject.set(x, "validateFormData", value.asInstanceOf[js.Any])
+      inline def setValidateFormData(value: js.Any): Self = StObject.set(x, "validateFormData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateHeaders(value: js.Any): Self = StObject.set(x, "validateHeaders", value.asInstanceOf[js.Any])
+      inline def setValidateHeaders(value: js.Any): Self = StObject.set(x, "validateHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidatePath(value: js.Any): Self = StObject.set(x, "validatePath", value.asInstanceOf[js.Any])
+      inline def setValidatePath(value: js.Any): Self = StObject.set(x, "validatePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateQuery(value: js.Any): Self = StObject.set(x, "validateQuery", value.asInstanceOf[js.Any])
+      inline def setValidateQuery(value: js.Any): Self = StObject.set(x, "validateQuery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateRequest(value: js.Any => js.Any): Self = StObject.set(x, "validateRequest", js.Any.fromFunction1(value))
+      inline def setValidateRequest(value: js.Any => js.Any): Self = StObject.set(x, "validateRequest", js.Any.fromFunction1(value))
     }
   }
   
@@ -223,87 +204,62 @@ object mod {
   }
   object OpenAPIRequestValidatorArgs {
     
-    @scala.inline
-    def apply(): OpenAPIRequestValidatorArgs = {
+    inline def apply(): OpenAPIRequestValidatorArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OpenAPIRequestValidatorArgs]
     }
     
-    @scala.inline
-    implicit class OpenAPIRequestValidatorArgsMutableBuilder[Self <: OpenAPIRequestValidatorArgs] (val x: Self) extends AnyVal {
+    extension [Self <: OpenAPIRequestValidatorArgs](x: Self) {
       
-      @scala.inline
-      def setComponentSchemas(value: js.Array[IJsonSchema]): Self = StObject.set(x, "componentSchemas", value.asInstanceOf[js.Any])
+      inline def setComponentSchemas(value: js.Array[IJsonSchema]): Self = StObject.set(x, "componentSchemas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentSchemasUndefined: Self = StObject.set(x, "componentSchemas", js.undefined)
+      inline def setComponentSchemasUndefined: Self = StObject.set(x, "componentSchemas", js.undefined)
       
-      @scala.inline
-      def setComponentSchemasVarargs(value: IJsonSchema*): Self = StObject.set(x, "componentSchemas", js.Array(value :_*))
+      inline def setComponentSchemasVarargs(value: IJsonSchema*): Self = StObject.set(x, "componentSchemas", js.Array(value :_*))
       
-      @scala.inline
-      def setCustomFormats(value: StringDictionary[FormatValidator | FormatDefinition]): Self = StObject.set(x, "customFormats", value.asInstanceOf[js.Any])
+      inline def setCustomFormats(value: StringDictionary[FormatValidator | FormatDefinition]): Self = StObject.set(x, "customFormats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomFormatsUndefined: Self = StObject.set(x, "customFormats", js.undefined)
+      inline def setCustomFormatsUndefined: Self = StObject.set(x, "customFormats", js.undefined)
       
-      @scala.inline
-      def setCustomKeywords(value: StringDictionary[KeywordDefinition]): Self = StObject.set(x, "customKeywords", value.asInstanceOf[js.Any])
+      inline def setCustomKeywords(value: StringDictionary[KeywordDefinition]): Self = StObject.set(x, "customKeywords", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomKeywordsUndefined: Self = StObject.set(x, "customKeywords", js.undefined)
+      inline def setCustomKeywordsUndefined: Self = StObject.set(x, "customKeywords", js.undefined)
       
-      @scala.inline
-      def setErrorTransformer(
+      inline def setErrorTransformer(
         value: (/* openAPIResponseValidatorValidationError */ OpenAPIRequestValidatorError, /* ajvError */ ErrorObject) => js.Any
       ): Self = StObject.set(x, "errorTransformer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setErrorTransformerUndefined: Self = StObject.set(x, "errorTransformer", js.undefined)
+      inline def setErrorTransformerUndefined: Self = StObject.set(x, "errorTransformer", js.undefined)
       
-      @scala.inline
-      def setExternalSchemas(value: StringDictionary[IJsonSchema]): Self = StObject.set(x, "externalSchemas", value.asInstanceOf[js.Any])
+      inline def setExternalSchemas(value: StringDictionary[IJsonSchema]): Self = StObject.set(x, "externalSchemas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternalSchemasUndefined: Self = StObject.set(x, "externalSchemas", js.undefined)
+      inline def setExternalSchemasUndefined: Self = StObject.set(x, "externalSchemas", js.undefined)
       
-      @scala.inline
-      def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+      inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
-      @scala.inline
-      def setLoggingKey(value: String): Self = StObject.set(x, "loggingKey", value.asInstanceOf[js.Any])
+      inline def setLoggingKey(value: String): Self = StObject.set(x, "loggingKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggingKeyUndefined: Self = StObject.set(x, "loggingKey", js.undefined)
+      inline def setLoggingKeyUndefined: Self = StObject.set(x, "loggingKey", js.undefined)
       
-      @scala.inline
-      def setParameters(value: Parameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: Parameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+      inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
       
-      @scala.inline
-      def setParametersVarargs(
+      inline def setParametersVarargs(
         value: (Parameter | ParameterObject | ReferenceObject | typings.openapiTypes.mod.OpenAPIV2.ReferenceObject)*
       ): Self = StObject.set(x, "parameters", js.Array(value :_*))
       
-      @scala.inline
-      def setRequestBody(value: RequestBodyObject): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+      inline def setRequestBody(value: RequestBodyObject): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+      inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
       
-      @scala.inline
-      def setSchemas(value: js.Array[IJsonSchema]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
+      inline def setSchemas(value: js.Array[IJsonSchema]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemasUndefined: Self = StObject.set(x, "schemas", js.undefined)
+      inline def setSchemasUndefined: Self = StObject.set(x, "schemas", js.undefined)
       
-      @scala.inline
-      def setSchemasVarargs(value: IJsonSchema*): Self = StObject.set(x, "schemas", js.Array(value :_*))
+      inline def setSchemasVarargs(value: IJsonSchema*): Self = StObject.set(x, "schemas", js.Array(value :_*))
     }
   }
   
@@ -321,38 +277,28 @@ object mod {
   }
   object OpenAPIRequestValidatorError {
     
-    @scala.inline
-    def apply(errorCode: String, message: String): OpenAPIRequestValidatorError = {
+    inline def apply(errorCode: String, message: String): OpenAPIRequestValidatorError = {
       val __obj = js.Dynamic.literal(errorCode = errorCode.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[OpenAPIRequestValidatorError]
     }
     
-    @scala.inline
-    implicit class OpenAPIRequestValidatorErrorMutableBuilder[Self <: OpenAPIRequestValidatorError] (val x: Self) extends AnyVal {
+    extension [Self <: OpenAPIRequestValidatorError](x: Self) {
       
-      @scala.inline
-      def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+      inline def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setSchema(value: js.Any): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: js.Any): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+      inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     }
   }
 }

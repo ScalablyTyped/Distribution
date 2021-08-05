@@ -14,31 +14,23 @@ trait Max extends StObject {
 }
 object Max {
   
-  @scala.inline
-  def apply(): Max = {
+  inline def apply(): Max = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Max]
   }
   
-  @scala.inline
-  implicit class MaxMutableBuilder[Self <: Max] (val x: Self) extends AnyVal {
+  extension [Self <: Max](x: Self) {
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setProportion(value: Double): Self = StObject.set(x, "proportion", value.asInstanceOf[js.Any])
+    inline def setProportion(value: Double): Self = StObject.set(x, "proportion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProportionUndefined: Self = StObject.set(x, "proportion", js.undefined)
+    inline def setProportionUndefined: Self = StObject.set(x, "proportion", js.undefined)
   }
 }

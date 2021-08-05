@@ -22,9 +22,9 @@ object loadBalancerLrsMod {
        with LoadBalancer {
     def this(channelControlHelper: ChannelControlHelper) = this()
     
-    var channelControlHelper: js.Any = js.native
+    /* private */ var channelControlHelper: js.Any = js.native
     
-    var childBalancer: js.Any = js.native
+    /* private */ var childBalancer: js.Any = js.native
     
     /**
       * The load balancer unrefs all of its subchannels and stops calling methods
@@ -47,7 +47,7 @@ object loadBalancerLrsMod {
     /* CompleteClass */
     override def getTypeName(): String = js.native
     
-    var localityStatsReporter: js.Any = js.native
+    /* private */ var localityStatsReporter: js.Any = js.native
     
     /**
       * If the load balancer is currently in the CONNECTING or TRANSIENT_FAILURE
@@ -74,6 +74,5 @@ object loadBalancerLrsMod {
     ): Unit = js.native
   }
   
-  @scala.inline
-  def setup(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")().asInstanceOf[Unit]
+  inline def setup(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")().asInstanceOf[Unit]
 }

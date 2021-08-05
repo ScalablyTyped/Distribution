@@ -23,8 +23,7 @@ trait RecordSource extends StObject {
 }
 object RecordSource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     get: DataID => js.UndefOr[Record | Null],
     getRecordIDs: () => js.Array[DataID],
     getStatus: DataID => RecordState,
@@ -36,25 +35,18 @@ object RecordSource {
     __obj.asInstanceOf[RecordSource]
   }
   
-  @scala.inline
-  implicit class RecordSourceMutableBuilder[Self <: RecordSource] (val x: Self) extends AnyVal {
+  extension [Self <: RecordSource](x: Self) {
     
-    @scala.inline
-    def setGet(value: DataID => js.UndefOr[Record | Null]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: DataID => js.UndefOr[Record | Null]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetRecordIDs(value: () => js.Array[DataID]): Self = StObject.set(x, "getRecordIDs", js.Any.fromFunction0(value))
+    inline def setGetRecordIDs(value: () => js.Array[DataID]): Self = StObject.set(x, "getRecordIDs", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStatus(value: DataID => RecordState): Self = StObject.set(x, "getStatus", js.Any.fromFunction1(value))
+    inline def setGetStatus(value: DataID => RecordState): Self = StObject.set(x, "getStatus", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHas(value: DataID => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+    inline def setHas(value: DataID => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
+    inline def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToJSON(value: () => StringDictionary[Record]): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => StringDictionary[Record]): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }
 }

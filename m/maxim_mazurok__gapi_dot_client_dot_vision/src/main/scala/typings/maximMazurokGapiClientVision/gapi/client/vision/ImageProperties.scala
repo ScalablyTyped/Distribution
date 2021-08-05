@@ -11,19 +11,15 @@ trait ImageProperties extends StObject {
 }
 object ImageProperties {
   
-  @scala.inline
-  def apply(): ImageProperties = {
+  inline def apply(): ImageProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImageProperties]
   }
   
-  @scala.inline
-  implicit class ImagePropertiesMutableBuilder[Self <: ImageProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ImageProperties](x: Self) {
     
-    @scala.inline
-    def setDominantColors(value: DominantColorsAnnotation): Self = StObject.set(x, "dominantColors", value.asInstanceOf[js.Any])
+    inline def setDominantColors(value: DominantColorsAnnotation): Self = StObject.set(x, "dominantColors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDominantColorsUndefined: Self = StObject.set(x, "dominantColors", js.undefined)
+    inline def setDominantColorsUndefined: Self = StObject.set(x, "dominantColors", js.undefined)
   }
 }

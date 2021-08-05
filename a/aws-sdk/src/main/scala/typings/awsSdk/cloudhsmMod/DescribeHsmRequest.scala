@@ -18,25 +18,19 @@ trait DescribeHsmRequest extends StObject {
 }
 object DescribeHsmRequest {
   
-  @scala.inline
-  def apply(): DescribeHsmRequest = {
+  inline def apply(): DescribeHsmRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeHsmRequest]
   }
   
-  @scala.inline
-  implicit class DescribeHsmRequestMutableBuilder[Self <: DescribeHsmRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeHsmRequest](x: Self) {
     
-    @scala.inline
-    def setHsmArn(value: HsmArn): Self = StObject.set(x, "HsmArn", value.asInstanceOf[js.Any])
+    inline def setHsmArn(value: HsmArn): Self = StObject.set(x, "HsmArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHsmArnUndefined: Self = StObject.set(x, "HsmArn", js.undefined)
+    inline def setHsmArnUndefined: Self = StObject.set(x, "HsmArn", js.undefined)
     
-    @scala.inline
-    def setHsmSerialNumber(value: HsmSerialNumber): Self = StObject.set(x, "HsmSerialNumber", value.asInstanceOf[js.Any])
+    inline def setHsmSerialNumber(value: HsmSerialNumber): Self = StObject.set(x, "HsmSerialNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHsmSerialNumberUndefined: Self = StObject.set(x, "HsmSerialNumber", js.undefined)
+    inline def setHsmSerialNumberUndefined: Self = StObject.set(x, "HsmSerialNumber", js.undefined)
   }
 }

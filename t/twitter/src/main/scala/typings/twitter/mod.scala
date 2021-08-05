@@ -35,8 +35,7 @@ object mod {
   }
   object AccessTokenOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       access_token_key: String,
       access_token_secret: String,
       consumer_key: String,
@@ -46,14 +45,11 @@ object mod {
       __obj.asInstanceOf[AccessTokenOptions]
     }
     
-    @scala.inline
-    implicit class AccessTokenOptionsMutableBuilder[Self <: AccessTokenOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AccessTokenOptions](x: Self) {
       
-      @scala.inline
-      def setAccess_token_key(value: String): Self = StObject.set(x, "access_token_key", value.asInstanceOf[js.Any])
+      inline def setAccess_token_key(value: String): Self = StObject.set(x, "access_token_key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccess_token_secret(value: String): Self = StObject.set(x, "access_token_secret", value.asInstanceOf[js.Any])
+      inline def setAccess_token_secret(value: String): Self = StObject.set(x, "access_token_secret", value.asInstanceOf[js.Any])
     }
   }
   
@@ -65,17 +61,14 @@ object mod {
   }
   object BearerTokenOptions {
     
-    @scala.inline
-    def apply(bearer_token: String, consumer_key: String, consumer_secret: String): BearerTokenOptions = {
+    inline def apply(bearer_token: String, consumer_key: String, consumer_secret: String): BearerTokenOptions = {
       val __obj = js.Dynamic.literal(bearer_token = bearer_token.asInstanceOf[js.Any], consumer_key = consumer_key.asInstanceOf[js.Any], consumer_secret = consumer_secret.asInstanceOf[js.Any])
       __obj.asInstanceOf[BearerTokenOptions]
     }
     
-    @scala.inline
-    implicit class BearerTokenOptionsMutableBuilder[Self <: BearerTokenOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BearerTokenOptions](x: Self) {
       
-      @scala.inline
-      def setBearer_token(value: String): Self = StObject.set(x, "bearer_token", value.asInstanceOf[js.Any])
+      inline def setBearer_token(value: String): Self = StObject.set(x, "bearer_token", value.asInstanceOf[js.Any])
     }
   }
   
@@ -101,56 +94,40 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(consumer_key: String, consumer_secret: String): Options = {
+    inline def apply(consumer_key: String, consumer_secret: String): Options = {
       val __obj = js.Dynamic.literal(consumer_key = consumer_key.asInstanceOf[js.Any], consumer_secret = consumer_secret.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setConsumer_key(value: String): Self = StObject.set(x, "consumer_key", value.asInstanceOf[js.Any])
+      inline def setConsumer_key(value: String): Self = StObject.set(x, "consumer_key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsumer_secret(value: String): Self = StObject.set(x, "consumer_secret", value.asInstanceOf[js.Any])
+      inline def setConsumer_secret(value: String): Self = StObject.set(x, "consumer_secret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMedia_base(value: String): Self = StObject.set(x, "media_base", value.asInstanceOf[js.Any])
+      inline def setMedia_base(value: String): Self = StObject.set(x, "media_base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMedia_baseUndefined: Self = StObject.set(x, "media_base", js.undefined)
+      inline def setMedia_baseUndefined: Self = StObject.set(x, "media_base", js.undefined)
       
-      @scala.inline
-      def setRequest_options(value: CoreOptions): Self = StObject.set(x, "request_options", value.asInstanceOf[js.Any])
+      inline def setRequest_options(value: CoreOptions): Self = StObject.set(x, "request_options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest_optionsUndefined: Self = StObject.set(x, "request_options", js.undefined)
+      inline def setRequest_optionsUndefined: Self = StObject.set(x, "request_options", js.undefined)
       
-      @scala.inline
-      def setRest_base(value: String): Self = StObject.set(x, "rest_base", value.asInstanceOf[js.Any])
+      inline def setRest_base(value: String): Self = StObject.set(x, "rest_base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRest_baseUndefined: Self = StObject.set(x, "rest_base", js.undefined)
+      inline def setRest_baseUndefined: Self = StObject.set(x, "rest_base", js.undefined)
       
-      @scala.inline
-      def setSite_stream_base(value: String): Self = StObject.set(x, "site_stream_base", value.asInstanceOf[js.Any])
+      inline def setSite_stream_base(value: String): Self = StObject.set(x, "site_stream_base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSite_stream_baseUndefined: Self = StObject.set(x, "site_stream_base", js.undefined)
+      inline def setSite_stream_baseUndefined: Self = StObject.set(x, "site_stream_base", js.undefined)
       
-      @scala.inline
-      def setStream_base(value: String): Self = StObject.set(x, "stream_base", value.asInstanceOf[js.Any])
+      inline def setStream_base(value: String): Self = StObject.set(x, "stream_base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStream_baseUndefined: Self = StObject.set(x, "stream_base", js.undefined)
+      inline def setStream_baseUndefined: Self = StObject.set(x, "stream_base", js.undefined)
       
-      @scala.inline
-      def setUser_stream_base(value: String): Self = StObject.set(x, "user_stream_base", value.asInstanceOf[js.Any])
+      inline def setUser_stream_base(value: String): Self = StObject.set(x, "user_stream_base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser_stream_baseUndefined: Self = StObject.set(x, "user_stream_base", js.undefined)
+      inline def setUser_stream_baseUndefined: Self = StObject.set(x, "user_stream_base", js.undefined)
     }
   }
   
@@ -162,20 +139,16 @@ object mod {
   }
   object RequestParams {
     
-    @scala.inline
-    def apply(): RequestParams = {
+    inline def apply(): RequestParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RequestParams]
     }
     
-    @scala.inline
-    implicit class RequestParamsMutableBuilder[Self <: RequestParams] (val x: Self) extends AnyVal {
+    extension [Self <: RequestParams](x: Self) {
       
-      @scala.inline
-      def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+      inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
     }
   }
   

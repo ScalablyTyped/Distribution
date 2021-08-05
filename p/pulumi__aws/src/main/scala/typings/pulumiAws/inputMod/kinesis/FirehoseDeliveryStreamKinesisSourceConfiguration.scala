@@ -19,19 +19,15 @@ trait FirehoseDeliveryStreamKinesisSourceConfiguration extends StObject {
 }
 object FirehoseDeliveryStreamKinesisSourceConfiguration {
   
-  @scala.inline
-  def apply(kinesisStreamArn: Input[String], roleArn: Input[String]): FirehoseDeliveryStreamKinesisSourceConfiguration = {
+  inline def apply(kinesisStreamArn: Input[String], roleArn: Input[String]): FirehoseDeliveryStreamKinesisSourceConfiguration = {
     val __obj = js.Dynamic.literal(kinesisStreamArn = kinesisStreamArn.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirehoseDeliveryStreamKinesisSourceConfiguration]
   }
   
-  @scala.inline
-  implicit class FirehoseDeliveryStreamKinesisSourceConfigurationMutableBuilder[Self <: FirehoseDeliveryStreamKinesisSourceConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: FirehoseDeliveryStreamKinesisSourceConfiguration](x: Self) {
     
-    @scala.inline
-    def setKinesisStreamArn(value: Input[String]): Self = StObject.set(x, "kinesisStreamArn", value.asInstanceOf[js.Any])
+    inline def setKinesisStreamArn(value: Input[String]): Self = StObject.set(x, "kinesisStreamArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
   }
 }

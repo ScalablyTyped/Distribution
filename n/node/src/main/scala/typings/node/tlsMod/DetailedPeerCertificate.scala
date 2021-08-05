@@ -14,8 +14,7 @@ trait DetailedPeerCertificate
 }
 object DetailedPeerCertificate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     exponent: String,
     ext_key_usage: js.Array[String],
     fingerprint: String,
@@ -35,10 +34,8 @@ object DetailedPeerCertificate {
     __obj.asInstanceOf[DetailedPeerCertificate]
   }
   
-  @scala.inline
-  implicit class DetailedPeerCertificateMutableBuilder[Self <: DetailedPeerCertificate] (val x: Self) extends AnyVal {
+  extension [Self <: DetailedPeerCertificate](x: Self) {
     
-    @scala.inline
-    def setIssuerCertificate(value: DetailedPeerCertificate): Self = StObject.set(x, "issuerCertificate", value.asInstanceOf[js.Any])
+    inline def setIssuerCertificate(value: DetailedPeerCertificate): Self = StObject.set(x, "issuerCertificate", value.asInstanceOf[js.Any])
   }
 }

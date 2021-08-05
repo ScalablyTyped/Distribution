@@ -12,16 +12,13 @@ trait ProximitySensorReadingChangedEventArgs extends StObject {
 }
 object ProximitySensorReadingChangedEventArgs {
   
-  @scala.inline
-  def apply(reading: ProximitySensorReading): ProximitySensorReadingChangedEventArgs = {
+  inline def apply(reading: ProximitySensorReading): ProximitySensorReadingChangedEventArgs = {
     val __obj = js.Dynamic.literal(reading = reading.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProximitySensorReadingChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class ProximitySensorReadingChangedEventArgsMutableBuilder[Self <: ProximitySensorReadingChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ProximitySensorReadingChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setReading(value: ProximitySensorReading): Self = StObject.set(x, "reading", value.asInstanceOf[js.Any])
+    inline def setReading(value: ProximitySensorReading): Self = StObject.set(x, "reading", value.asInstanceOf[js.Any])
   }
 }

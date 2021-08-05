@@ -17,22 +17,17 @@ trait Window extends StObject {
 }
 object Window {
   
-  @scala.inline
-  def apply(BaseGauge: BaseGauge, LinearGauge: LinearGauge, RadialGauge: RadialGauge): Window = {
+  inline def apply(BaseGauge: BaseGauge, LinearGauge: LinearGauge, RadialGauge: RadialGauge): Window = {
     val __obj = js.Dynamic.literal(BaseGauge = BaseGauge.asInstanceOf[js.Any], LinearGauge = LinearGauge.asInstanceOf[js.Any], RadialGauge = RadialGauge.asInstanceOf[js.Any])
     __obj.asInstanceOf[Window]
   }
   
-  @scala.inline
-  implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+  extension [Self <: Window](x: Self) {
     
-    @scala.inline
-    def setBaseGauge(value: BaseGauge): Self = StObject.set(x, "BaseGauge", value.asInstanceOf[js.Any])
+    inline def setBaseGauge(value: BaseGauge): Self = StObject.set(x, "BaseGauge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinearGauge(value: LinearGauge): Self = StObject.set(x, "LinearGauge", value.asInstanceOf[js.Any])
+    inline def setLinearGauge(value: LinearGauge): Self = StObject.set(x, "LinearGauge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadialGauge(value: RadialGauge): Self = StObject.set(x, "RadialGauge", value.asInstanceOf[js.Any])
+    inline def setRadialGauge(value: RadialGauge): Self = StObject.set(x, "RadialGauge", value.asInstanceOf[js.Any])
   }
 }

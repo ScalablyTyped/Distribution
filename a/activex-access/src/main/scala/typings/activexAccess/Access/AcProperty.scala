@@ -31,36 +31,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcProperty extends StObject
 object AcProperty {
   
-  @scala.inline
-  def acPropertyBackColor: `8` = 8.asInstanceOf[`8`]
+  inline def acPropertyBackColor: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def acPropertyCaption: `9` = 9.asInstanceOf[`9`]
+  inline def acPropertyCaption: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def acPropertyEnabled: `0` = 0.asInstanceOf[`0`]
+  inline def acPropertyEnabled: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def acPropertyForeColor: `7` = 7.asInstanceOf[`7`]
+  inline def acPropertyForeColor: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def acPropertyHeight: `6` = 6.asInstanceOf[`6`]
+  inline def acPropertyHeight: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def acPropertyLeft: `3` = 3.asInstanceOf[`3`]
+  inline def acPropertyLeft: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def acPropertyLocked: `2` = 2.asInstanceOf[`2`]
+  inline def acPropertyLocked: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def acPropertyTop: `4` = 4.asInstanceOf[`4`]
+  inline def acPropertyTop: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def acPropertyValue: `10` = 10.asInstanceOf[`10`]
+  inline def acPropertyValue: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def acPropertyVisible: `1` = 1.asInstanceOf[`1`]
+  inline def acPropertyVisible: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def acPropertyWidth: `5` = 5.asInstanceOf[`5`]
+  inline def acPropertyWidth: `5` = 5.asInstanceOf[`5`]
 }

@@ -28,11 +28,11 @@ object subscriberMod {
       */
     def this(sub: Subscriber, hasAckIdMessageDeliveryAttempt: IReceivedMessage) = this()
     
-    var _handled: js.Any = js.native
+    /* private */ var _handled: js.Any = js.native
     
-    var _length: js.Any = js.native
+    /* private */ var _length: js.Any = js.native
     
-    var _subscriber: js.Any = js.native
+    /* private */ var _subscriber: js.Any = js.native
     
     /**
       * Acknowledges the message.
@@ -92,7 +92,7 @@ object subscriberMod {
     def this(subscription: Subscription) = this()
     def this(subscription: Subscription, options: js.Object) = this()
     
-    var _acks: js.Any = js.native
+    /* private */ var _acks: js.Any = js.native
     
     /**
       * Constructs an OpenTelemetry span from the incoming message.
@@ -100,19 +100,19 @@ object subscriberMod {
       * @param {Message} message One of the received messages
       * @private
       */
-    var _constructSpan: js.Any = js.native
+    /* private */ var _constructSpan: js.Any = js.native
     
-    var _histogram: js.Any = js.native
+    /* private */ var _histogram: js.Any = js.native
     
-    var _inventory: js.Any = js.native
+    /* private */ var _inventory: js.Any = js.native
     
-    var _isUserSetDeadline: js.Any = js.native
+    /* private */ var _isUserSetDeadline: js.Any = js.native
     
-    var _latencies: js.Any = js.native
+    /* private */ var _latencies: js.Any = js.native
     
-    var _modAcks: js.Any = js.native
+    /* private */ var _modAcks: js.Any = js.native
     
-    var _name: js.Any = js.native
+    /* private */ var _name: js.Any = js.native
     
     /**
       * Callback to be invoked when a new message is available.
@@ -131,15 +131,15 @@ object subscriberMod {
       *
       * @private
       */
-    var _onData: js.Any = js.native
+    /* private */ var _onData: js.Any = js.native
     
-    var _options: js.Any = js.native
+    /* private */ var _options: js.Any = js.native
     
-    var _stream: js.Any = js.native
+    /* private */ var _stream: js.Any = js.native
     
-    var _subscription: js.Any = js.native
+    /* private */ var _subscription: js.Any = js.native
     
-    var _tracing: js.Any = js.native
+    /* private */ var _tracing: js.Any = js.native
     
     /**
       * Returns a promise that will resolve once all pending requests have settled.
@@ -148,7 +148,7 @@ object subscriberMod {
       *
       * @returns {Promise}
       */
-    var _waitForFlush: js.Any = js.native
+    /* private */ var _waitForFlush: js.Any = js.native
     
     /**
       * Acknowledges the supplied message.
@@ -251,44 +251,32 @@ object subscriberMod {
   }
   object SubscriberOptions {
     
-    @scala.inline
-    def apply(): SubscriberOptions = {
+    inline def apply(): SubscriberOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SubscriberOptions]
     }
     
-    @scala.inline
-    implicit class SubscriberOptionsMutableBuilder[Self <: SubscriberOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SubscriberOptions](x: Self) {
       
-      @scala.inline
-      def setAckDeadline(value: Double): Self = StObject.set(x, "ackDeadline", value.asInstanceOf[js.Any])
+      inline def setAckDeadline(value: Double): Self = StObject.set(x, "ackDeadline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAckDeadlineUndefined: Self = StObject.set(x, "ackDeadline", js.undefined)
+      inline def setAckDeadlineUndefined: Self = StObject.set(x, "ackDeadline", js.undefined)
       
-      @scala.inline
-      def setBatching(value: BatchOptions): Self = StObject.set(x, "batching", value.asInstanceOf[js.Any])
+      inline def setBatching(value: BatchOptions): Self = StObject.set(x, "batching", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchingUndefined: Self = StObject.set(x, "batching", js.undefined)
+      inline def setBatchingUndefined: Self = StObject.set(x, "batching", js.undefined)
       
-      @scala.inline
-      def setEnableOpenTelemetryTracing(value: Boolean): Self = StObject.set(x, "enableOpenTelemetryTracing", value.asInstanceOf[js.Any])
+      inline def setEnableOpenTelemetryTracing(value: Boolean): Self = StObject.set(x, "enableOpenTelemetryTracing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableOpenTelemetryTracingUndefined: Self = StObject.set(x, "enableOpenTelemetryTracing", js.undefined)
+      inline def setEnableOpenTelemetryTracingUndefined: Self = StObject.set(x, "enableOpenTelemetryTracing", js.undefined)
       
-      @scala.inline
-      def setFlowControl(value: FlowControlOptions): Self = StObject.set(x, "flowControl", value.asInstanceOf[js.Any])
+      inline def setFlowControl(value: FlowControlOptions): Self = StObject.set(x, "flowControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlowControlUndefined: Self = StObject.set(x, "flowControl", js.undefined)
+      inline def setFlowControlUndefined: Self = StObject.set(x, "flowControl", js.undefined)
       
-      @scala.inline
-      def setStreamingOptions(value: MessageStreamOptions): Self = StObject.set(x, "streamingOptions", value.asInstanceOf[js.Any])
+      inline def setStreamingOptions(value: MessageStreamOptions): Self = StObject.set(x, "streamingOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamingOptionsUndefined: Self = StObject.set(x, "streamingOptions", js.undefined)
+      inline def setStreamingOptionsUndefined: Self = StObject.set(x, "streamingOptions", js.undefined)
     }
   }
 }

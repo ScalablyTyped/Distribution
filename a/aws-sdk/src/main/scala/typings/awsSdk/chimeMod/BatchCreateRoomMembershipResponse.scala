@@ -13,22 +13,17 @@ trait BatchCreateRoomMembershipResponse extends StObject {
 }
 object BatchCreateRoomMembershipResponse {
   
-  @scala.inline
-  def apply(): BatchCreateRoomMembershipResponse = {
+  inline def apply(): BatchCreateRoomMembershipResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchCreateRoomMembershipResponse]
   }
   
-  @scala.inline
-  implicit class BatchCreateRoomMembershipResponseMutableBuilder[Self <: BatchCreateRoomMembershipResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchCreateRoomMembershipResponse](x: Self) {
     
-    @scala.inline
-    def setErrors(value: MemberErrorList): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: MemberErrorList): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
     
-    @scala.inline
-    def setErrorsVarargs(value: MemberError*): Self = StObject.set(x, "Errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: MemberError*): Self = StObject.set(x, "Errors", js.Array(value :_*))
   }
 }

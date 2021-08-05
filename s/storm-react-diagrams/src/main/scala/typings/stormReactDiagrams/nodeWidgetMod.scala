@@ -31,26 +31,20 @@ object nodeWidgetMod {
   }
   object NodeProps {
     
-    @scala.inline
-    def apply(diagramEngine: DiagramEngine, node: NodeModel): NodeProps = {
+    inline def apply(diagramEngine: DiagramEngine, node: NodeModel): NodeProps = {
       val __obj = js.Dynamic.literal(diagramEngine = diagramEngine.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
       __obj.asInstanceOf[NodeProps]
     }
     
-    @scala.inline
-    implicit class NodePropsMutableBuilder[Self <: NodeProps] (val x: Self) extends AnyVal {
+    extension [Self <: NodeProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDiagramEngine(value: DiagramEngine): Self = StObject.set(x, "diagramEngine", value.asInstanceOf[js.Any])
+      inline def setDiagramEngine(value: DiagramEngine): Self = StObject.set(x, "diagramEngine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode(value: NodeModel): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: NodeModel): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     }
   }
   

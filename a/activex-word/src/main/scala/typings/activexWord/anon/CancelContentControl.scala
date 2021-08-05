@@ -12,19 +12,15 @@ trait CancelContentControl extends StObject {
 }
 object CancelContentControl {
   
-  @scala.inline
-  def apply(Cancel: Boolean, ContentControl: typings.activexWord.Word.ContentControl): CancelContentControl = {
+  inline def apply(Cancel: Boolean, ContentControl: typings.activexWord.Word.ContentControl): CancelContentControl = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], ContentControl = ContentControl.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelContentControl]
   }
   
-  @scala.inline
-  implicit class CancelContentControlMutableBuilder[Self <: CancelContentControl] (val x: Self) extends AnyVal {
+  extension [Self <: CancelContentControl](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentControl(value: typings.activexWord.Word.ContentControl): Self = StObject.set(x, "ContentControl", value.asInstanceOf[js.Any])
+    inline def setContentControl(value: typings.activexWord.Word.ContentControl): Self = StObject.set(x, "ContentControl", value.asInstanceOf[js.Any])
   }
 }

@@ -14,28 +14,21 @@ trait LinkAccountsParams extends StObject {
 }
 object LinkAccountsParams {
   
-  @scala.inline
-  def apply(user_id: String): LinkAccountsParams = {
+  inline def apply(user_id: String): LinkAccountsParams = {
     val __obj = js.Dynamic.literal(user_id = user_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinkAccountsParams]
   }
   
-  @scala.inline
-  implicit class LinkAccountsParamsMutableBuilder[Self <: LinkAccountsParams] (val x: Self) extends AnyVal {
+  extension [Self <: LinkAccountsParams](x: Self) {
     
-    @scala.inline
-    def setConnection_id(value: String): Self = StObject.set(x, "connection_id", value.asInstanceOf[js.Any])
+    inline def setConnection_id(value: String): Self = StObject.set(x, "connection_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnection_idUndefined: Self = StObject.set(x, "connection_id", js.undefined)
+    inline def setConnection_idUndefined: Self = StObject.set(x, "connection_id", js.undefined)
     
-    @scala.inline
-    def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
+    inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
     
-    @scala.inline
-    def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
+    inline def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
   }
 }

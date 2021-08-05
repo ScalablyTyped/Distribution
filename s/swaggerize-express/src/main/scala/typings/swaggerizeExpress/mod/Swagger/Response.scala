@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Response extends StObject
 object Response {
   
-  @scala.inline
-  def ReferenceObject($ref: String): typings.swaggerizeExpress.mod.Swagger.ReferenceObject = {
+  inline def ReferenceObject($ref: String): typings.swaggerizeExpress.mod.Swagger.ReferenceObject = {
     val __obj = js.Dynamic.literal($ref = $ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.swaggerizeExpress.mod.Swagger.ReferenceObject]
   }
   
-  @scala.inline
-  def ResponseObject(description: String): typings.swaggerizeExpress.mod.Swagger.ResponseObject = {
+  inline def ResponseObject(description: String): typings.swaggerizeExpress.mod.Swagger.ResponseObject = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.swaggerizeExpress.mod.Swagger.ResponseObject]
   }

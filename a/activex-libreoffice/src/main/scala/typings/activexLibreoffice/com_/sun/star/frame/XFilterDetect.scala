@@ -20,8 +20,7 @@ trait XFilterDetect
 }
 object XFilterDetect {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getContentType: String => String,
     queryInterface: `type` => js.Any,
@@ -32,13 +31,10 @@ object XFilterDetect {
     __obj.asInstanceOf[XFilterDetect]
   }
   
-  @scala.inline
-  implicit class XFilterDetectMutableBuilder[Self <: XFilterDetect] (val x: Self) extends AnyVal {
+  extension [Self <: XFilterDetect](x: Self) {
     
-    @scala.inline
-    def setGetContentType(value: String => String): Self = StObject.set(x, "getContentType", js.Any.fromFunction1(value))
+    inline def setGetContentType(value: String => String): Self = StObject.set(x, "getContentType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUseExternBrowser(value: String => Boolean): Self = StObject.set(x, "useExternBrowser", js.Any.fromFunction1(value))
+    inline def setUseExternBrowser(value: String => Boolean): Self = StObject.set(x, "useExternBrowser", js.Any.fromFunction1(value))
   }
 }

@@ -14,7 +14,7 @@ object storageCacheMod {
   class StorageCache protected () extends StObject {
     def this(storage: Storage) = this()
     
-    var activeConfig: js.Any = js.native
+    /* private */ var activeConfig: js.Any = js.native
     
     def getActiveConfig(): js.UndefOr[FirebaseRemoteConfigObject] = js.native
     
@@ -28,9 +28,9 @@ object storageCacheMod {
     /**
       * Memory caches.
       */
-    var lastFetchStatus: js.Any = js.native
+    /* private */ var lastFetchStatus: js.Any = js.native
     
-    var lastSuccessfulFetchTimestampMillis: js.Any = js.native
+    /* private */ var lastSuccessfulFetchTimestampMillis: js.Any = js.native
     
     /**
       * Read-ahead getter
@@ -46,6 +46,6 @@ object storageCacheMod {
     
     def setLastSuccessfulFetchTimestampMillis(timestampMillis: Double): js.Promise[Unit] = js.native
     
-    val storage: js.Any = js.native
+    /* private */ val storage: js.Any = js.native
   }
 }

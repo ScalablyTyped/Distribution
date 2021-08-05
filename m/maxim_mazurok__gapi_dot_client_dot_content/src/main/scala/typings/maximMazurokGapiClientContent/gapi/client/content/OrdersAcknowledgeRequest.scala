@@ -11,19 +11,15 @@ trait OrdersAcknowledgeRequest extends StObject {
 }
 object OrdersAcknowledgeRequest {
   
-  @scala.inline
-  def apply(): OrdersAcknowledgeRequest = {
+  inline def apply(): OrdersAcknowledgeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrdersAcknowledgeRequest]
   }
   
-  @scala.inline
-  implicit class OrdersAcknowledgeRequestMutableBuilder[Self <: OrdersAcknowledgeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: OrdersAcknowledgeRequest](x: Self) {
     
-    @scala.inline
-    def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
+    inline def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
+    inline def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
   }
 }

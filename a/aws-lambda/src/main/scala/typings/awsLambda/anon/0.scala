@@ -13,19 +13,15 @@ trait `0`
 }
 object `0` {
   
-  @scala.inline
-  def apply(Action: String | js.Array[String]): `0` = {
+  inline def apply(Action: String | js.Array[String]): `0` = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any])
     __obj.asInstanceOf[`0`]
   }
   
-  @scala.inline
-  implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+  extension [Self <: `0`](x: Self) {
     
-    @scala.inline
-    def setAction(value: String | js.Array[String]): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String | js.Array[String]): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionVarargs(value: String*): Self = StObject.set(x, "Action", js.Array(value :_*))
+    inline def setActionVarargs(value: String*): Self = StObject.set(x, "Action", js.Array(value :_*))
   }
 }

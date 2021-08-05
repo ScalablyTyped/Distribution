@@ -96,8 +96,7 @@ trait AutoMerge extends StObject {
 }
 object AutoMerge {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     autoMerge: Enable,
     broadcastProjectEvents: Boolean,
     cache: Double,
@@ -115,43 +114,30 @@ object AutoMerge {
     __obj.asInstanceOf[AutoMerge]
   }
   
-  @scala.inline
-  implicit class AutoMergeMutableBuilder[Self <: AutoMerge] (val x: Self) extends AnyVal {
+  extension [Self <: AutoMerge](x: Self) {
     
-    @scala.inline
-    def setAutoMerge(value: Enable): Self = StObject.set(x, "autoMerge", value.asInstanceOf[js.Any])
+    inline def setAutoMerge(value: Enable): Self = StObject.set(x, "autoMerge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBroadcastProjectEvents(value: Boolean): Self = StObject.set(x, "broadcastProjectEvents", value.asInstanceOf[js.Any])
+    inline def setBroadcastProjectEvents(value: Boolean): Self = StObject.set(x, "broadcastProjectEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCache(value: Double): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: Double): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientCache(value: Double): Self = StObject.set(x, "clientCache", value.asInstanceOf[js.Any])
+    inline def setClientCache(value: Double): Self = StObject.set(x, "clientCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabase(value: Type): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+    inline def setDatabase(value: Type): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableHashChecks(value: Boolean): Self = StObject.set(x, "disableHashChecks", value.asInstanceOf[js.Any])
+    inline def setDisableHashChecks(value: Boolean): Self = StObject.set(x, "disableHashChecks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyType(value: plainSHA1 | rand160Bits | ZSSHA): Self = StObject.set(x, "keyType", value.asInstanceOf[js.Any])
+    inline def setKeyType(value: plainSHA1 | rand160Bits | ZSSHA): Self = StObject.set(x, "keyType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadBucketSize(value: Double): Self = StObject.set(x, "loadBucketSize", value.asInstanceOf[js.Any])
+    inline def setLoadBucketSize(value: Double): Self = StObject.set(x, "loadBucketSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadBucketTimer(value: Double): Self = StObject.set(x, "loadBucketTimer", value.asInstanceOf[js.Any])
+    inline def setLoadBucketTimer(value: Double): Self = StObject.set(x, "loadBucketTimer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxEmittedCoreObjects(value: Double): Self = StObject.set(x, "maxEmittedCoreObjects", value.asInstanceOf[js.Any])
+    inline def setMaxEmittedCoreObjects(value: Double): Self = StObject.set(x, "maxEmittedCoreObjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: String): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: String): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequireHashesToMatch(value: Boolean): Self = StObject.set(x, "requireHashesToMatch", value.asInstanceOf[js.Any])
+    inline def setRequireHashesToMatch(value: Boolean): Self = StObject.set(x, "requireHashesToMatch", value.asInstanceOf[js.Any])
   }
 }

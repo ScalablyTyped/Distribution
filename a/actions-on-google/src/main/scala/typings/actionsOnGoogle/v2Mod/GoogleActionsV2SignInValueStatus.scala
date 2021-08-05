@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GoogleActionsV2SignInValueStatus extends StObject
 object GoogleActionsV2SignInValueStatus {
   
-  @scala.inline
-  def CANCELLED: typings.actionsOnGoogle.actionsOnGoogleStrings.CANCELLED = "CANCELLED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.CANCELLED]
+  inline def CANCELLED: typings.actionsOnGoogle.actionsOnGoogleStrings.CANCELLED = "CANCELLED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.CANCELLED]
   
-  @scala.inline
-  def ERROR: typings.actionsOnGoogle.actionsOnGoogleStrings.ERROR = "ERROR".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.ERROR]
+  inline def ERROR: typings.actionsOnGoogle.actionsOnGoogleStrings.ERROR = "ERROR".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.ERROR]
   
-  @scala.inline
-  def OK: typings.actionsOnGoogle.actionsOnGoogleStrings.OK = "OK".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.OK]
+  inline def OK: typings.actionsOnGoogle.actionsOnGoogleStrings.OK = "OK".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.OK]
   
-  @scala.inline
-  def SIGN_IN_STATUS_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.SIGN_IN_STATUS_UNSPECIFIED = "SIGN_IN_STATUS_UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.SIGN_IN_STATUS_UNSPECIFIED]
+  inline def SIGN_IN_STATUS_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.SIGN_IN_STATUS_UNSPECIFIED = "SIGN_IN_STATUS_UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.SIGN_IN_STATUS_UNSPECIFIED]
 }

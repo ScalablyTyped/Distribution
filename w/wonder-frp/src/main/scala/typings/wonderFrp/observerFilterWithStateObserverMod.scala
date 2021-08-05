@@ -14,7 +14,7 @@ object observerFilterWithStateObserverMod {
   class FilterWithStateObserver protected () extends FilterObserver {
     def this(prevObserver: IObserver, predicate: js.Function1[/* value */ js.Any, Boolean], source: Stream) = this()
     
-    var _isTrigger: js.Any = js.native
+    /* private */ var _isTrigger: js.Any = js.native
   }
   /* static members */
   object FilterWithStateObserver {
@@ -23,8 +23,7 @@ object observerFilterWithStateObserverMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(
+    inline def create(
       prevObserver: IObserver,
       predicate: js.Function3[
           /* value */ js.Any, 

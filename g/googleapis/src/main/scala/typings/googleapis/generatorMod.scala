@@ -21,11 +21,11 @@ object generatorMod {
       * @param str String to process
       * @return Single line string processed
       */
-    var cleanComments: js.Any = js.native
+    /* private */ var cleanComments: js.Any = js.native
     
-    var env: js.Any = js.native
+    /* private */ var env: js.Any = js.native
     
-    var generate: js.Any = js.native
+    /* private */ var generate: js.Any = js.native
     
     /**
       * Generate API file given discovery URL
@@ -44,46 +44,46 @@ object generatorMod {
       * Given a discovery doc, parse it and recursively iterate over the various
       * embedded links.
       */
-    var getFragmentsForSchema: js.Any = js.native
+    /* private */ var getFragmentsForSchema: js.Any = js.native
     
-    var getPathParams: js.Any = js.native
+    /* private */ var getPathParams: js.Any = js.native
     
-    var getSafeParamName: js.Any = js.native
+    /* private */ var getSafeParamName: js.Any = js.native
     
-    var hasResourceParam: js.Any = js.native
+    /* private */ var hasResourceParam: js.Any = js.native
     
     /**
       * Log output of generator. Works just like console.log.
       */
-    var log: js.Any = js.native
+    /* private */ var log: js.Any = js.native
     
     /**
       * Write to the state log, which is used for debugging.
       * @param id DiscoveryRestUrl of the endpoint to log
       * @param message
       */
-    var logResult: js.Any = js.native
+    /* private */ var logResult: js.Any = js.native
     
     /**
       * A multi-line string is turned into one line.
       * @param str String to process
       * @return Single line string processed
       */
-    var oneLine: js.Any = js.native
+    /* private */ var oneLine: js.Any = js.native
     
-    var options: js.Any = js.native
+    /* private */ var options: js.Any = js.native
     
     /**
       * Add a requests to the rate limited queue.
       * @param opts Options to pass to the default transporter
       */
-    var request: js.Any = js.native
+    /* private */ var request: js.Any = js.native
     
-    var requestQueue: js.Any = js.native
+    /* private */ var requestQueue: js.Any = js.native
     
-    var state: js.Any = js.native
+    /* private */ var state: js.Any = js.native
     
-    var transporter: js.Any = js.native
+    /* private */ var transporter: js.Any = js.native
   }
   
   trait GeneratorOptions extends StObject {
@@ -94,26 +94,20 @@ object generatorMod {
   }
   object GeneratorOptions {
     
-    @scala.inline
-    def apply(): GeneratorOptions = {
+    inline def apply(): GeneratorOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GeneratorOptions]
     }
     
-    @scala.inline
-    implicit class GeneratorOptionsMutableBuilder[Self <: GeneratorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GeneratorOptions](x: Self) {
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setIncludePrivate(value: Boolean): Self = StObject.set(x, "includePrivate", value.asInstanceOf[js.Any])
+      inline def setIncludePrivate(value: Boolean): Self = StObject.set(x, "includePrivate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludePrivateUndefined: Self = StObject.set(x, "includePrivate", js.undefined)
+      inline def setIncludePrivateUndefined: Self = StObject.set(x, "includePrivate", js.undefined)
     }
   }
 }

@@ -20,8 +20,7 @@ trait Extra extends StObject {
 }
 object Extra {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     extra: String,
     minuteStep: Double,
     mode: String,
@@ -33,25 +32,18 @@ object Extra {
     __obj.asInstanceOf[Extra]
   }
   
-  @scala.inline
-  implicit class ExtraMutableBuilder[Self <: Extra] (val x: Self) extends AnyVal {
+  extension [Self <: Extra](x: Self) {
     
-    @scala.inline
-    def setExtra(value: String): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+    inline def setExtra(value: String): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinuteStep(value: Double): Self = StObject.set(x, "minuteStep", value.asInstanceOf[js.Any])
+    inline def setMinuteStep(value: Double): Self = StObject.set(x, "minuteStep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickerPrefixCls(value: String): Self = StObject.set(x, "pickerPrefixCls", value.asInstanceOf[js.Any])
+    inline def setPickerPrefixCls(value: String): Self = StObject.set(x, "pickerPrefixCls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+    inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUse12Hours(value: Boolean): Self = StObject.set(x, "use12Hours", value.asInstanceOf[js.Any])
+    inline def setUse12Hours(value: Boolean): Self = StObject.set(x, "use12Hours", value.asInstanceOf[js.Any])
   }
 }

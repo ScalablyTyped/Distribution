@@ -16,32 +16,24 @@ object anon {
   }
   object MaxSize {
     
-    @scala.inline
-    def apply[V](): MaxSize[V] = {
+    inline def apply[V](): MaxSize[V] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MaxSize[V]]
     }
     
-    @scala.inline
-    implicit class MaxSizeMutableBuilder[Self <: MaxSize[?], V] (val x: Self & MaxSize[V]) extends AnyVal {
+    extension [Self <: MaxSize[?], V](x: Self & MaxSize[V]) {
       
-      @scala.inline
-      def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+      inline def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
+      inline def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
       
-      @scala.inline
-      def setOnDispose(value: (/* key */ String, /* value */ V) => Unit): Self = StObject.set(x, "onDispose", js.Any.fromFunction2(value))
+      inline def setOnDispose(value: (/* key */ String, /* value */ V) => Unit): Self = StObject.set(x, "onDispose", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnDisposeUndefined: Self = StObject.set(x, "onDispose", js.undefined)
+      inline def setOnDisposeUndefined: Self = StObject.set(x, "onDispose", js.undefined)
       
-      @scala.inline
-      def setSizeCalculator(value: (/* value */ V, /* key */ String) => Double): Self = StObject.set(x, "sizeCalculator", js.Any.fromFunction2(value))
+      inline def setSizeCalculator(value: (/* value */ V, /* key */ String) => Double): Self = StObject.set(x, "sizeCalculator", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSizeCalculatorUndefined: Self = StObject.set(x, "sizeCalculator", js.undefined)
+      inline def setSizeCalculatorUndefined: Self = StObject.set(x, "sizeCalculator", js.undefined)
     }
   }
   
@@ -51,20 +43,16 @@ object anon {
   }
   object Ttl {
     
-    @scala.inline
-    def apply(): Ttl = {
+    inline def apply(): Ttl = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Ttl]
     }
     
-    @scala.inline
-    implicit class TtlMutableBuilder[Self <: Ttl] (val x: Self) extends AnyVal {
+    extension [Self <: Ttl](x: Self) {
       
-      @scala.inline
-      def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+      inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+      inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
     }
   }
 }

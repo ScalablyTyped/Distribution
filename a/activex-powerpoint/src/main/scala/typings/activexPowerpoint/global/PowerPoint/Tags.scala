@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.Tags")
 @js.native
-class Tags protected ()
+/* private */ class Tags ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.Tags {
   
@@ -37,7 +37,7 @@ class Tags protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.Tags_typekey")
   var PowerPointDotTags_typekey: typings.activexPowerpoint.PowerPoint.Tags = js.native
   

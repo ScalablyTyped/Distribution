@@ -10,16 +10,13 @@ trait SizeWindowHeight extends StObject {
 }
 object SizeWindowHeight {
   
-  @scala.inline
-  def apply(size: WindowHeight): SizeWindowHeight = {
+  inline def apply(size: WindowHeight): SizeWindowHeight = {
     val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[SizeWindowHeight]
   }
   
-  @scala.inline
-  implicit class SizeWindowHeightMutableBuilder[Self <: SizeWindowHeight] (val x: Self) extends AnyVal {
+  extension [Self <: SizeWindowHeight](x: Self) {
     
-    @scala.inline
-    def setSize(value: WindowHeight): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: WindowHeight): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

@@ -14,28 +14,21 @@ trait CommitResponse extends StObject {
 }
 object CommitResponse {
   
-  @scala.inline
-  def apply(): CommitResponse = {
+  inline def apply(): CommitResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommitResponse]
   }
   
-  @scala.inline
-  implicit class CommitResponseMutableBuilder[Self <: CommitResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CommitResponse](x: Self) {
     
-    @scala.inline
-    def setCommitTime(value: String): Self = StObject.set(x, "commitTime", value.asInstanceOf[js.Any])
+    inline def setCommitTime(value: String): Self = StObject.set(x, "commitTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitTimeUndefined: Self = StObject.set(x, "commitTime", js.undefined)
+    inline def setCommitTimeUndefined: Self = StObject.set(x, "commitTime", js.undefined)
     
-    @scala.inline
-    def setWriteResults(value: js.Array[WriteResult]): Self = StObject.set(x, "writeResults", value.asInstanceOf[js.Any])
+    inline def setWriteResults(value: js.Array[WriteResult]): Self = StObject.set(x, "writeResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteResultsUndefined: Self = StObject.set(x, "writeResults", js.undefined)
+    inline def setWriteResultsUndefined: Self = StObject.set(x, "writeResults", js.undefined)
     
-    @scala.inline
-    def setWriteResultsVarargs(value: WriteResult*): Self = StObject.set(x, "writeResults", js.Array(value :_*))
+    inline def setWriteResultsVarargs(value: WriteResult*): Self = StObject.set(x, "writeResults", js.Array(value :_*))
   }
 }

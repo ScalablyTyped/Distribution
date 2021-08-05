@@ -15,10 +15,8 @@ object Language {
   
   /* Added */
   /* static member */
-  @scala.inline
-  def GetText(Token: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("GetText")(Token.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def GetText(Token: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("GetText")(Token.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* static member */
-  @scala.inline
-  def TryGetText(Token: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("TryGetText")(Token.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def TryGetText(Token: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("TryGetText")(Token.asInstanceOf[js.Any]).asInstanceOf[String]
 }

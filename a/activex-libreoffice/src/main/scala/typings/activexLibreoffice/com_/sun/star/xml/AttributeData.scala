@@ -26,22 +26,17 @@ trait AttributeData extends StObject {
 }
 object AttributeData {
   
-  @scala.inline
-  def apply(Namespace: String, Type: String, Value: String): AttributeData = {
+  inline def apply(Namespace: String, Type: String, Value: String): AttributeData = {
     val __obj = js.Dynamic.literal(Namespace = Namespace.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttributeData]
   }
   
-  @scala.inline
-  implicit class AttributeDataMutableBuilder[Self <: AttributeData] (val x: Self) extends AnyVal {
+  extension [Self <: AttributeData](x: Self) {
     
-    @scala.inline
-    def setNamespace(value: String): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: String): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

@@ -37,28 +37,19 @@ object statusMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def byIndex(statuslist: StatusList, idx: Double): StatusEntry = (^.asInstanceOf[js.Dynamic].applyDynamic("byIndex")(statuslist.asInstanceOf[js.Any], idx.asInstanceOf[js.Any])).asInstanceOf[StatusEntry]
+    inline def byIndex(statuslist: StatusList, idx: Double): StatusEntry = (^.asInstanceOf[js.Dynamic].applyDynamic("byIndex")(statuslist.asInstanceOf[js.Any], idx.asInstanceOf[js.Any])).asInstanceOf[StatusEntry]
     
-    @scala.inline
-    def file(repo: Repository, path: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def file(repo: Repository, path: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def foreach(repo: Repository): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("foreach")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
-    @scala.inline
-    def foreach(repo: Repository, callback: js.Function): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("foreach")(repo.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+    inline def foreach(repo: Repository): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("foreach")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
+    inline def foreach(repo: Repository, callback: js.Function): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("foreach")(repo.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
     
-    @scala.inline
-    def foreachExt(repo: Repository): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("foreachExt")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
-    @scala.inline
-    def foreachExt(repo: Repository, opts: Unit, callback: js.Function): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("foreachExt")(repo.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
-    @scala.inline
-    def foreachExt(repo: Repository, opts: StatusOptions): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("foreachExt")(repo.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
-    @scala.inline
-    def foreachExt(repo: Repository, opts: StatusOptions, callback: js.Function): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("foreachExt")(repo.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+    inline def foreachExt(repo: Repository): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("foreachExt")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
+    inline def foreachExt(repo: Repository, opts: Unit, callback: js.Function): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("foreachExt")(repo.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+    inline def foreachExt(repo: Repository, opts: StatusOptions): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("foreachExt")(repo.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+    inline def foreachExt(repo: Repository, opts: StatusOptions, callback: js.Function): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("foreachExt")(repo.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
     
-    @scala.inline
-    def shouldIgnore(ignored: Double, repo: Repository, path: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("shouldIgnore")(ignored.asInstanceOf[js.Any], repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def shouldIgnore(ignored: Double, repo: Repository, path: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("shouldIgnore")(ignored.asInstanceOf[js.Any], repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /* Rewritten from type alias, can be one of: 
       - typings.nodegit.nodegitNumbers.`1`
@@ -81,53 +72,37 @@ object statusMod {
     trait OPT extends StObject
     object OPT {
       
-      @scala.inline
-      def DISABLE_PATHSPEC_MATCH: `32` = 32.asInstanceOf[`32`]
+      inline def DISABLE_PATHSPEC_MATCH: `32` = 32.asInstanceOf[`32`]
       
-      @scala.inline
-      def EXCLUDE_SUBMODULES: `8` = 8.asInstanceOf[`8`]
+      inline def EXCLUDE_SUBMODULES: `8` = 8.asInstanceOf[`8`]
       
-      @scala.inline
-      def INCLUDE_IGNORED: `2` = 2.asInstanceOf[`2`]
+      inline def INCLUDE_IGNORED: `2` = 2.asInstanceOf[`2`]
       
-      @scala.inline
-      def INCLUDE_UNMODIFIED: `4` = 4.asInstanceOf[`4`]
+      inline def INCLUDE_UNMODIFIED: `4` = 4.asInstanceOf[`4`]
       
-      @scala.inline
-      def INCLUDE_UNREADABLE: `16384` = 16384.asInstanceOf[`16384`]
+      inline def INCLUDE_UNREADABLE: `16384` = 16384.asInstanceOf[`16384`]
       
-      @scala.inline
-      def INCLUDE_UNREADABLE_AS_UNTRACKED: `32768` = 32768.asInstanceOf[`32768`]
+      inline def INCLUDE_UNREADABLE_AS_UNTRACKED: `32768` = 32768.asInstanceOf[`32768`]
       
-      @scala.inline
-      def INCLUDE_UNTRACKED: `1` = 1.asInstanceOf[`1`]
+      inline def INCLUDE_UNTRACKED: `1` = 1.asInstanceOf[`1`]
       
-      @scala.inline
-      def NO_REFRESH: `4096` = 4096.asInstanceOf[`4096`]
+      inline def NO_REFRESH: `4096` = 4096.asInstanceOf[`4096`]
       
-      @scala.inline
-      def RECURSE_IGNORED_DIRS: `64` = 64.asInstanceOf[`64`]
+      inline def RECURSE_IGNORED_DIRS: `64` = 64.asInstanceOf[`64`]
       
-      @scala.inline
-      def RECURSE_UNTRACKED_DIRS: `16` = 16.asInstanceOf[`16`]
+      inline def RECURSE_UNTRACKED_DIRS: `16` = 16.asInstanceOf[`16`]
       
-      @scala.inline
-      def RENAMES_FROM_REWRITES: `2048` = 2048.asInstanceOf[`2048`]
+      inline def RENAMES_FROM_REWRITES: `2048` = 2048.asInstanceOf[`2048`]
       
-      @scala.inline
-      def RENAMES_HEAD_TO_INDEX: `128` = 128.asInstanceOf[`128`]
+      inline def RENAMES_HEAD_TO_INDEX: `128` = 128.asInstanceOf[`128`]
       
-      @scala.inline
-      def RENAMES_INDEX_TO_WORKDIR: `256` = 256.asInstanceOf[`256`]
+      inline def RENAMES_INDEX_TO_WORKDIR: `256` = 256.asInstanceOf[`256`]
       
-      @scala.inline
-      def SORT_CASE_INSENSITIVELY: `1024` = 1024.asInstanceOf[`1024`]
+      inline def SORT_CASE_INSENSITIVELY: `1024` = 1024.asInstanceOf[`1024`]
       
-      @scala.inline
-      def SORT_CASE_SENSITIVELY: `512` = 512.asInstanceOf[`512`]
+      inline def SORT_CASE_SENSITIVELY: `512` = 512.asInstanceOf[`512`]
       
-      @scala.inline
-      def UPDATE_INDEX: `8192` = 8192.asInstanceOf[`8192`]
+      inline def UPDATE_INDEX: `8192` = 8192.asInstanceOf[`8192`]
     }
     
     /* Rewritten from type alias, can be one of: 
@@ -138,14 +113,11 @@ object statusMod {
     trait SHOW extends StObject
     object SHOW {
       
-      @scala.inline
-      def INDEX_AND_WORKDIR: `0` = 0.asInstanceOf[`0`]
+      inline def INDEX_AND_WORKDIR: `0` = 0.asInstanceOf[`0`]
       
-      @scala.inline
-      def INDEX_ONLY: `1` = 1.asInstanceOf[`1`]
+      inline def INDEX_ONLY: `1` = 1.asInstanceOf[`1`]
       
-      @scala.inline
-      def WORKDIR_ONLY: `2` = 2.asInstanceOf[`2`]
+      inline def WORKDIR_ONLY: `2` = 2.asInstanceOf[`2`]
     }
     
     /* Rewritten from type alias, can be one of: 
@@ -167,47 +139,33 @@ object statusMod {
     trait STATUS extends StObject
     object STATUS {
       
-      @scala.inline
-      def CONFLICTED: `32768` = 32768.asInstanceOf[`32768`]
+      inline def CONFLICTED: `32768` = 32768.asInstanceOf[`32768`]
       
-      @scala.inline
-      def CURRENT: `0` = 0.asInstanceOf[`0`]
+      inline def CURRENT: `0` = 0.asInstanceOf[`0`]
       
-      @scala.inline
-      def IGNORED: `16384` = 16384.asInstanceOf[`16384`]
+      inline def IGNORED: `16384` = 16384.asInstanceOf[`16384`]
       
-      @scala.inline
-      def INDEX_DELETED: `4` = 4.asInstanceOf[`4`]
+      inline def INDEX_DELETED: `4` = 4.asInstanceOf[`4`]
       
-      @scala.inline
-      def INDEX_MODIFIED: `2` = 2.asInstanceOf[`2`]
+      inline def INDEX_MODIFIED: `2` = 2.asInstanceOf[`2`]
       
-      @scala.inline
-      def INDEX_NEW: `1` = 1.asInstanceOf[`1`]
+      inline def INDEX_NEW: `1` = 1.asInstanceOf[`1`]
       
-      @scala.inline
-      def INDEX_RENAMED: `8` = 8.asInstanceOf[`8`]
+      inline def INDEX_RENAMED: `8` = 8.asInstanceOf[`8`]
       
-      @scala.inline
-      def INDEX_TYPECHANGE: `16` = 16.asInstanceOf[`16`]
+      inline def INDEX_TYPECHANGE: `16` = 16.asInstanceOf[`16`]
       
-      @scala.inline
-      def WT_DELETED: `512` = 512.asInstanceOf[`512`]
+      inline def WT_DELETED: `512` = 512.asInstanceOf[`512`]
       
-      @scala.inline
-      def WT_MODIFIED: `256` = 256.asInstanceOf[`256`]
+      inline def WT_MODIFIED: `256` = 256.asInstanceOf[`256`]
       
-      @scala.inline
-      def WT_NEW: `128` = 128.asInstanceOf[`128`]
+      inline def WT_NEW: `128` = 128.asInstanceOf[`128`]
       
-      @scala.inline
-      def WT_RENAMED: `2048` = 2048.asInstanceOf[`2048`]
+      inline def WT_RENAMED: `2048` = 2048.asInstanceOf[`2048`]
       
-      @scala.inline
-      def WT_TYPECHANGE: `1024` = 1024.asInstanceOf[`1024`]
+      inline def WT_TYPECHANGE: `1024` = 1024.asInstanceOf[`1024`]
       
-      @scala.inline
-      def WT_UNREADABLE: `4096` = 4096.asInstanceOf[`4096`]
+      inline def WT_UNREADABLE: `4096` = 4096.asInstanceOf[`4096`]
     }
   }
 }

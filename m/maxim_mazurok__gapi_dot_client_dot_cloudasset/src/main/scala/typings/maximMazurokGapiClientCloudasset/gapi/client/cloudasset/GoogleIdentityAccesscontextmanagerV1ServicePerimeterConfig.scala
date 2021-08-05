@@ -27,46 +27,33 @@ trait GoogleIdentityAccesscontextmanagerV1ServicePerimeterConfig extends StObjec
 }
 object GoogleIdentityAccesscontextmanagerV1ServicePerimeterConfig {
   
-  @scala.inline
-  def apply(): GoogleIdentityAccesscontextmanagerV1ServicePerimeterConfig = {
+  inline def apply(): GoogleIdentityAccesscontextmanagerV1ServicePerimeterConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleIdentityAccesscontextmanagerV1ServicePerimeterConfig]
   }
   
-  @scala.inline
-  implicit class GoogleIdentityAccesscontextmanagerV1ServicePerimeterConfigMutableBuilder[Self <: GoogleIdentityAccesscontextmanagerV1ServicePerimeterConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleIdentityAccesscontextmanagerV1ServicePerimeterConfig](x: Self) {
     
-    @scala.inline
-    def setAccessLevels(value: js.Array[String]): Self = StObject.set(x, "accessLevels", value.asInstanceOf[js.Any])
+    inline def setAccessLevels(value: js.Array[String]): Self = StObject.set(x, "accessLevels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessLevelsUndefined: Self = StObject.set(x, "accessLevels", js.undefined)
+    inline def setAccessLevelsUndefined: Self = StObject.set(x, "accessLevels", js.undefined)
     
-    @scala.inline
-    def setAccessLevelsVarargs(value: String*): Self = StObject.set(x, "accessLevels", js.Array(value :_*))
+    inline def setAccessLevelsVarargs(value: String*): Self = StObject.set(x, "accessLevels", js.Array(value :_*))
     
-    @scala.inline
-    def setResources(value: js.Array[String]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: js.Array[String]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
+    inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
-    @scala.inline
-    def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
     
-    @scala.inline
-    def setRestrictedServices(value: js.Array[String]): Self = StObject.set(x, "restrictedServices", value.asInstanceOf[js.Any])
+    inline def setRestrictedServices(value: js.Array[String]): Self = StObject.set(x, "restrictedServices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestrictedServicesUndefined: Self = StObject.set(x, "restrictedServices", js.undefined)
+    inline def setRestrictedServicesUndefined: Self = StObject.set(x, "restrictedServices", js.undefined)
     
-    @scala.inline
-    def setRestrictedServicesVarargs(value: String*): Self = StObject.set(x, "restrictedServices", js.Array(value :_*))
+    inline def setRestrictedServicesVarargs(value: String*): Self = StObject.set(x, "restrictedServices", js.Array(value :_*))
     
-    @scala.inline
-    def setVpcAccessibleServices(value: GoogleIdentityAccesscontextmanagerV1VpcAccessibleServices): Self = StObject.set(x, "vpcAccessibleServices", value.asInstanceOf[js.Any])
+    inline def setVpcAccessibleServices(value: GoogleIdentityAccesscontextmanagerV1VpcAccessibleServices): Self = StObject.set(x, "vpcAccessibleServices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcAccessibleServicesUndefined: Self = StObject.set(x, "vpcAccessibleServices", js.undefined)
+    inline def setVpcAccessibleServicesUndefined: Self = StObject.set(x, "vpcAccessibleServices", js.undefined)
   }
 }

@@ -13,22 +13,17 @@ trait ConfluenceBlogConfiguration extends StObject {
 }
 object ConfluenceBlogConfiguration {
   
-  @scala.inline
-  def apply(): ConfluenceBlogConfiguration = {
+  inline def apply(): ConfluenceBlogConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfluenceBlogConfiguration]
   }
   
-  @scala.inline
-  implicit class ConfluenceBlogConfigurationMutableBuilder[Self <: ConfluenceBlogConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ConfluenceBlogConfiguration](x: Self) {
     
-    @scala.inline
-    def setBlogFieldMappings(value: ConfluenceBlogFieldMappingsList): Self = StObject.set(x, "BlogFieldMappings", value.asInstanceOf[js.Any])
+    inline def setBlogFieldMappings(value: ConfluenceBlogFieldMappingsList): Self = StObject.set(x, "BlogFieldMappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlogFieldMappingsUndefined: Self = StObject.set(x, "BlogFieldMappings", js.undefined)
+    inline def setBlogFieldMappingsUndefined: Self = StObject.set(x, "BlogFieldMappings", js.undefined)
     
-    @scala.inline
-    def setBlogFieldMappingsVarargs(value: ConfluenceBlogToIndexFieldMapping*): Self = StObject.set(x, "BlogFieldMappings", js.Array(value :_*))
+    inline def setBlogFieldMappingsVarargs(value: ConfluenceBlogToIndexFieldMapping*): Self = StObject.set(x, "BlogFieldMappings", js.Array(value :_*))
   }
 }

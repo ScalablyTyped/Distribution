@@ -12,17 +12,14 @@ object PersonResponses {
   }
   object Create {
     
-    @scala.inline
-    def apply(personId: String): Create = {
+    inline def apply(personId: String): Create = {
       val __obj = js.Dynamic.literal(personId = personId.asInstanceOf[js.Any])
       __obj.asInstanceOf[Create]
     }
     
-    @scala.inline
-    implicit class CreateMutableBuilder[Self <: Create] (val x: Self) extends AnyVal {
+    extension [Self <: Create](x: Self) {
       
-      @scala.inline
-      def setPersonId(value: String): Self = StObject.set(x, "personId", value.asInstanceOf[js.Any])
+      inline def setPersonId(value: String): Self = StObject.set(x, "personId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -34,20 +31,16 @@ object PersonResponses {
   }
   object Face {
     
-    @scala.inline
-    def apply(faceId: String, userData: String): Face = {
+    inline def apply(faceId: String, userData: String): Face = {
       val __obj = js.Dynamic.literal(faceId = faceId.asInstanceOf[js.Any], userData = userData.asInstanceOf[js.Any])
       __obj.asInstanceOf[Face]
     }
     
-    @scala.inline
-    implicit class FaceMutableBuilder[Self <: Face] (val x: Self) extends AnyVal {
+    extension [Self <: Face](x: Self) {
       
-      @scala.inline
-      def setFaceId(value: String): Self = StObject.set(x, "faceId", value.asInstanceOf[js.Any])
+      inline def setFaceId(value: String): Self = StObject.set(x, "faceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserData(value: String): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
+      inline def setUserData(value: String): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
     }
   }
   
@@ -63,29 +56,22 @@ object PersonResponses {
   }
   object Person {
     
-    @scala.inline
-    def apply(faceIds: js.Array[String], name: String, personId: String, userData: String): typings.projectOxford.mod.PersonResponses.Person = {
+    inline def apply(faceIds: js.Array[String], name: String, personId: String, userData: String): typings.projectOxford.mod.PersonResponses.Person = {
       val __obj = js.Dynamic.literal(faceIds = faceIds.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], personId = personId.asInstanceOf[js.Any], userData = userData.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.projectOxford.mod.PersonResponses.Person]
     }
     
-    @scala.inline
-    implicit class PersonMutableBuilder[Self <: typings.projectOxford.mod.PersonResponses.Person] (val x: Self) extends AnyVal {
+    extension [Self <: typings.projectOxford.mod.PersonResponses.Person](x: Self) {
       
-      @scala.inline
-      def setFaceIds(value: js.Array[String]): Self = StObject.set(x, "faceIds", value.asInstanceOf[js.Any])
+      inline def setFaceIds(value: js.Array[String]): Self = StObject.set(x, "faceIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFaceIdsVarargs(value: String*): Self = StObject.set(x, "faceIds", js.Array(value :_*))
+      inline def setFaceIdsVarargs(value: String*): Self = StObject.set(x, "faceIds", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersonId(value: String): Self = StObject.set(x, "personId", value.asInstanceOf[js.Any])
+      inline def setPersonId(value: String): Self = StObject.set(x, "personId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserData(value: String): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
+      inline def setUserData(value: String): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -70,8 +70,7 @@ trait LineProperties extends StObject {
 }
 object LineProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     LineCap: LineCap,
     LineColor: Color,
     LineDash: LineDash,
@@ -93,55 +92,38 @@ object LineProperties {
     __obj.asInstanceOf[LineProperties]
   }
   
-  @scala.inline
-  implicit class LinePropertiesMutableBuilder[Self <: LineProperties] (val x: Self) extends AnyVal {
+  extension [Self <: LineProperties](x: Self) {
     
-    @scala.inline
-    def setLineCap(value: LineCap): Self = StObject.set(x, "LineCap", value.asInstanceOf[js.Any])
+    inline def setLineCap(value: LineCap): Self = StObject.set(x, "LineCap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineColor(value: Color): Self = StObject.set(x, "LineColor", value.asInstanceOf[js.Any])
+    inline def setLineColor(value: Color): Self = StObject.set(x, "LineColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineDash(value: LineDash): Self = StObject.set(x, "LineDash", value.asInstanceOf[js.Any])
+    inline def setLineDash(value: LineDash): Self = StObject.set(x, "LineDash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineDashName(value: String): Self = StObject.set(x, "LineDashName", value.asInstanceOf[js.Any])
+    inline def setLineDashName(value: String): Self = StObject.set(x, "LineDashName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineEnd(value: PolyPolygonBezierCoords): Self = StObject.set(x, "LineEnd", value.asInstanceOf[js.Any])
+    inline def setLineEnd(value: PolyPolygonBezierCoords): Self = StObject.set(x, "LineEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineEndCenter(value: Boolean): Self = StObject.set(x, "LineEndCenter", value.asInstanceOf[js.Any])
+    inline def setLineEndCenter(value: Boolean): Self = StObject.set(x, "LineEndCenter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineEndName(value: String): Self = StObject.set(x, "LineEndName", value.asInstanceOf[js.Any])
+    inline def setLineEndName(value: String): Self = StObject.set(x, "LineEndName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineEndWidth(value: Double): Self = StObject.set(x, "LineEndWidth", value.asInstanceOf[js.Any])
+    inline def setLineEndWidth(value: Double): Self = StObject.set(x, "LineEndWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineJoint(value: LineJoint): Self = StObject.set(x, "LineJoint", value.asInstanceOf[js.Any])
+    inline def setLineJoint(value: LineJoint): Self = StObject.set(x, "LineJoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineStart(value: PolyPolygonBezierCoords): Self = StObject.set(x, "LineStart", value.asInstanceOf[js.Any])
+    inline def setLineStart(value: PolyPolygonBezierCoords): Self = StObject.set(x, "LineStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineStartCenter(value: Boolean): Self = StObject.set(x, "LineStartCenter", value.asInstanceOf[js.Any])
+    inline def setLineStartCenter(value: Boolean): Self = StObject.set(x, "LineStartCenter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineStartName(value: String): Self = StObject.set(x, "LineStartName", value.asInstanceOf[js.Any])
+    inline def setLineStartName(value: String): Self = StObject.set(x, "LineStartName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineStartWidth(value: Double): Self = StObject.set(x, "LineStartWidth", value.asInstanceOf[js.Any])
+    inline def setLineStartWidth(value: Double): Self = StObject.set(x, "LineStartWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineStyle(value: LineStyle): Self = StObject.set(x, "LineStyle", value.asInstanceOf[js.Any])
+    inline def setLineStyle(value: LineStyle): Self = StObject.set(x, "LineStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineTransparence(value: Double): Self = StObject.set(x, "LineTransparence", value.asInstanceOf[js.Any])
+    inline def setLineTransparence(value: Double): Self = StObject.set(x, "LineTransparence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineWidth(value: Double): Self = StObject.set(x, "LineWidth", value.asInstanceOf[js.Any])
+    inline def setLineWidth(value: Double): Self = StObject.set(x, "LineWidth", value.asInstanceOf[js.Any])
   }
 }

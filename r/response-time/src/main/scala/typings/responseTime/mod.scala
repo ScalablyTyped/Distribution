@@ -17,8 +17,7 @@ object mod {
     * Response time header for node.js
     * Returns middleware that adds a X-Response-Time header to responses.
     */
-  @scala.inline
-  def apply(): js.Function3[
+  inline def apply(): js.Function3[
     /* request */ IncomingMessage, 
     /* response */ ServerResponse, 
     /* callback */ js.Function1[/* err */ js.Any, Unit], 
@@ -29,8 +28,7 @@ object mod {
     /* callback */ js.Function1[/* err */ js.Any, Unit], 
     js.Any
   ]]
-  @scala.inline
-  def apply(
+  inline def apply(
     fn: js.Function3[
       /* request */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
       /* response */ Response_[js.Any], 
@@ -38,8 +36,7 @@ object mod {
       js.Any
     ]
   ): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  @scala.inline
-  def apply(options: ResponseTimeOptions): js.Function3[
+  inline def apply(options: ResponseTimeOptions): js.Function3[
     /* request */ IncomingMessage, 
     /* response */ ServerResponse, 
     /* callback */ js.Function1[/* err */ js.Any, Unit], 
@@ -72,32 +69,24 @@ object mod {
   }
   object ResponseTimeOptions {
     
-    @scala.inline
-    def apply(): ResponseTimeOptions = {
+    inline def apply(): ResponseTimeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ResponseTimeOptions]
     }
     
-    @scala.inline
-    implicit class ResponseTimeOptionsMutableBuilder[Self <: ResponseTimeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ResponseTimeOptions](x: Self) {
       
-      @scala.inline
-      def setDigits(value: Double): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
+      inline def setDigits(value: Double): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDigitsUndefined: Self = StObject.set(x, "digits", js.undefined)
+      inline def setDigitsUndefined: Self = StObject.set(x, "digits", js.undefined)
       
-      @scala.inline
-      def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setSuffix(value: Boolean): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+      inline def setSuffix(value: Boolean): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+      inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
     }
   }
 }

@@ -44,8 +44,7 @@ object ToolBar {
     @JSGlobal("WinJS.UI.ToolBar.ClosedDisplayMode.compact")
     @js.native
     def compact: String = js.native
-    @scala.inline
-    def compact_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("compact")(x.asInstanceOf[js.Any])
+    inline def compact_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("compact")(x.asInstanceOf[js.Any])
     
     /**
       * When the ToolBar is closed, the height of the ToolBar is always sized to content.
@@ -53,8 +52,7 @@ object ToolBar {
     @JSGlobal("WinJS.UI.ToolBar.ClosedDisplayMode.full")
     @js.native
     def full: String = js.native
-    @scala.inline
-    def full_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("full")(x.asInstanceOf[js.Any])
+    inline def full_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("full")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -64,6 +62,5 @@ object ToolBar {
   @JSGlobal("WinJS.UI.ToolBar.supportedForProcessing")
   @js.native
   def supportedForProcessing: Boolean = js.native
-  @scala.inline
-  def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
+  inline def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
 }

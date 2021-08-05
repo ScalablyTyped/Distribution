@@ -13,16 +13,13 @@ trait EnterpriseAdminGetGithubPackagesBillingGheEndpoint extends StObject {
 }
 object EnterpriseAdminGetGithubPackagesBillingGheEndpoint {
   
-  @scala.inline
-  def apply(enterprise: String): EnterpriseAdminGetGithubPackagesBillingGheEndpoint = {
+  inline def apply(enterprise: String): EnterpriseAdminGetGithubPackagesBillingGheEndpoint = {
     val __obj = js.Dynamic.literal(enterprise = enterprise.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnterpriseAdminGetGithubPackagesBillingGheEndpoint]
   }
   
-  @scala.inline
-  implicit class EnterpriseAdminGetGithubPackagesBillingGheEndpointMutableBuilder[Self <: EnterpriseAdminGetGithubPackagesBillingGheEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: EnterpriseAdminGetGithubPackagesBillingGheEndpoint](x: Self) {
     
-    @scala.inline
-    def setEnterprise(value: String): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
+    inline def setEnterprise(value: String): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
   }
 }

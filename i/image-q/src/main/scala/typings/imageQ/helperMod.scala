@@ -33,11 +33,11 @@ object helperMod {
     
     def compare(image1: PointContainer, image2: PointContainer): Double = js.native
     
-    var distanceCalculator: js.Any = js.native
+    /* private */ var distanceCalculator: js.Any = js.native
     
-    var ditherer: js.Any = js.native
+    /* private */ var ditherer: js.Any = js.native
     
-    var paletteQuantizer: js.Any = js.native
+    /* private */ var paletteQuantizer: js.Any = js.native
     
     def sample(image: PointContainer): Unit = js.native
   }

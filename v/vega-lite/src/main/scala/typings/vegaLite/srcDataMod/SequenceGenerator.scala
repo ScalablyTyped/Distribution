@@ -16,16 +16,13 @@ trait SequenceGenerator
 }
 object SequenceGenerator {
   
-  @scala.inline
-  def apply(sequence: SequenceParams): SequenceGenerator = {
+  inline def apply(sequence: SequenceParams): SequenceGenerator = {
     val __obj = js.Dynamic.literal(sequence = sequence.asInstanceOf[js.Any])
     __obj.asInstanceOf[SequenceGenerator]
   }
   
-  @scala.inline
-  implicit class SequenceGeneratorMutableBuilder[Self <: SequenceGenerator] (val x: Self) extends AnyVal {
+  extension [Self <: SequenceGenerator](x: Self) {
     
-    @scala.inline
-    def setSequence(value: SequenceParams): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
+    inline def setSequence(value: SequenceParams): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
   }
 }

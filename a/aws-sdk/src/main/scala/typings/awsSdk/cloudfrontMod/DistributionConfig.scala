@@ -93,8 +93,7 @@ trait DistributionConfig extends StObject {
 }
 object DistributionConfig {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CallerReference: String,
     Comment: CommentType,
     DefaultCacheBehavior: DefaultCacheBehavior,
@@ -105,94 +104,64 @@ object DistributionConfig {
     __obj.asInstanceOf[DistributionConfig]
   }
   
-  @scala.inline
-  implicit class DistributionConfigMutableBuilder[Self <: DistributionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: DistributionConfig](x: Self) {
     
-    @scala.inline
-    def setAliases(value: Aliases): Self = StObject.set(x, "Aliases", value.asInstanceOf[js.Any])
+    inline def setAliases(value: Aliases): Self = StObject.set(x, "Aliases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasesUndefined: Self = StObject.set(x, "Aliases", js.undefined)
+    inline def setAliasesUndefined: Self = StObject.set(x, "Aliases", js.undefined)
     
-    @scala.inline
-    def setCacheBehaviors(value: CacheBehaviors): Self = StObject.set(x, "CacheBehaviors", value.asInstanceOf[js.Any])
+    inline def setCacheBehaviors(value: CacheBehaviors): Self = StObject.set(x, "CacheBehaviors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheBehaviorsUndefined: Self = StObject.set(x, "CacheBehaviors", js.undefined)
+    inline def setCacheBehaviorsUndefined: Self = StObject.set(x, "CacheBehaviors", js.undefined)
     
-    @scala.inline
-    def setCallerReference(value: String): Self = StObject.set(x, "CallerReference", value.asInstanceOf[js.Any])
+    inline def setCallerReference(value: String): Self = StObject.set(x, "CallerReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComment(value: CommentType): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: CommentType): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomErrorResponses(value: CustomErrorResponses): Self = StObject.set(x, "CustomErrorResponses", value.asInstanceOf[js.Any])
+    inline def setCustomErrorResponses(value: CustomErrorResponses): Self = StObject.set(x, "CustomErrorResponses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomErrorResponsesUndefined: Self = StObject.set(x, "CustomErrorResponses", js.undefined)
+    inline def setCustomErrorResponsesUndefined: Self = StObject.set(x, "CustomErrorResponses", js.undefined)
     
-    @scala.inline
-    def setDefaultCacheBehavior(value: DefaultCacheBehavior): Self = StObject.set(x, "DefaultCacheBehavior", value.asInstanceOf[js.Any])
+    inline def setDefaultCacheBehavior(value: DefaultCacheBehavior): Self = StObject.set(x, "DefaultCacheBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultRootObject(value: String): Self = StObject.set(x, "DefaultRootObject", value.asInstanceOf[js.Any])
+    inline def setDefaultRootObject(value: String): Self = StObject.set(x, "DefaultRootObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultRootObjectUndefined: Self = StObject.set(x, "DefaultRootObject", js.undefined)
+    inline def setDefaultRootObjectUndefined: Self = StObject.set(x, "DefaultRootObject", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpVersion(value: HttpVersion): Self = StObject.set(x, "HttpVersion", value.asInstanceOf[js.Any])
+    inline def setHttpVersion(value: HttpVersion): Self = StObject.set(x, "HttpVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpVersionUndefined: Self = StObject.set(x, "HttpVersion", js.undefined)
+    inline def setHttpVersionUndefined: Self = StObject.set(x, "HttpVersion", js.undefined)
     
-    @scala.inline
-    def setIsIPV6Enabled(value: Boolean): Self = StObject.set(x, "IsIPV6Enabled", value.asInstanceOf[js.Any])
+    inline def setIsIPV6Enabled(value: Boolean): Self = StObject.set(x, "IsIPV6Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsIPV6EnabledUndefined: Self = StObject.set(x, "IsIPV6Enabled", js.undefined)
+    inline def setIsIPV6EnabledUndefined: Self = StObject.set(x, "IsIPV6Enabled", js.undefined)
     
-    @scala.inline
-    def setLogging(value: LoggingConfig): Self = StObject.set(x, "Logging", value.asInstanceOf[js.Any])
+    inline def setLogging(value: LoggingConfig): Self = StObject.set(x, "Logging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggingUndefined: Self = StObject.set(x, "Logging", js.undefined)
+    inline def setLoggingUndefined: Self = StObject.set(x, "Logging", js.undefined)
     
-    @scala.inline
-    def setOriginGroups(value: OriginGroups): Self = StObject.set(x, "OriginGroups", value.asInstanceOf[js.Any])
+    inline def setOriginGroups(value: OriginGroups): Self = StObject.set(x, "OriginGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginGroupsUndefined: Self = StObject.set(x, "OriginGroups", js.undefined)
+    inline def setOriginGroupsUndefined: Self = StObject.set(x, "OriginGroups", js.undefined)
     
-    @scala.inline
-    def setOrigins(value: Origins): Self = StObject.set(x, "Origins", value.asInstanceOf[js.Any])
+    inline def setOrigins(value: Origins): Self = StObject.set(x, "Origins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriceClass(value: PriceClass): Self = StObject.set(x, "PriceClass", value.asInstanceOf[js.Any])
+    inline def setPriceClass(value: PriceClass): Self = StObject.set(x, "PriceClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriceClassUndefined: Self = StObject.set(x, "PriceClass", js.undefined)
+    inline def setPriceClassUndefined: Self = StObject.set(x, "PriceClass", js.undefined)
     
-    @scala.inline
-    def setRestrictions(value: Restrictions): Self = StObject.set(x, "Restrictions", value.asInstanceOf[js.Any])
+    inline def setRestrictions(value: Restrictions): Self = StObject.set(x, "Restrictions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestrictionsUndefined: Self = StObject.set(x, "Restrictions", js.undefined)
+    inline def setRestrictionsUndefined: Self = StObject.set(x, "Restrictions", js.undefined)
     
-    @scala.inline
-    def setViewerCertificate(value: ViewerCertificate): Self = StObject.set(x, "ViewerCertificate", value.asInstanceOf[js.Any])
+    inline def setViewerCertificate(value: ViewerCertificate): Self = StObject.set(x, "ViewerCertificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewerCertificateUndefined: Self = StObject.set(x, "ViewerCertificate", js.undefined)
+    inline def setViewerCertificateUndefined: Self = StObject.set(x, "ViewerCertificate", js.undefined)
     
-    @scala.inline
-    def setWebACLId(value: String): Self = StObject.set(x, "WebACLId", value.asInstanceOf[js.Any])
+    inline def setWebACLId(value: String): Self = StObject.set(x, "WebACLId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebACLIdUndefined: Self = StObject.set(x, "WebACLId", js.undefined)
+    inline def setWebACLIdUndefined: Self = StObject.set(x, "WebACLId", js.undefined)
   }
 }

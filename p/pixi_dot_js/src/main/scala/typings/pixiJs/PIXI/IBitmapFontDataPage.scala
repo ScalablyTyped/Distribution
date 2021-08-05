@@ -18,19 +18,15 @@ trait IBitmapFontDataPage extends StObject {
 }
 object IBitmapFontDataPage {
   
-  @scala.inline
-  def apply(file: String, id: Double): IBitmapFontDataPage = {
+  inline def apply(file: String, id: Double): IBitmapFontDataPage = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBitmapFontDataPage]
   }
   
-  @scala.inline
-  implicit class IBitmapFontDataPageMutableBuilder[Self <: IBitmapFontDataPage] (val x: Self) extends AnyVal {
+  extension [Self <: IBitmapFontDataPage](x: Self) {
     
-    @scala.inline
-    def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

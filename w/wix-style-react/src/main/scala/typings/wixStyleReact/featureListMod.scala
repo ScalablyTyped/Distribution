@@ -27,41 +27,30 @@ object featureListMod {
   }
   object FeatureListProps {
     
-    @scala.inline
-    def apply(): FeatureListProps = {
+    inline def apply(): FeatureListProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FeatureListProps]
     }
     
-    @scala.inline
-    implicit class FeatureListPropsMutableBuilder[Self <: FeatureListProps] (val x: Self) extends AnyVal {
+    extension [Self <: FeatureListProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
+      inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
+      inline def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setFeatures(value: js.Array[FeatureType]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+      inline def setFeatures(value: js.Array[FeatureType]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
+      inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
       
-      @scala.inline
-      def setFeaturesVarargs(value: FeatureType*): Self = StObject.set(x, "features", js.Array(value :_*))
+      inline def setFeaturesVarargs(value: FeatureType*): Self = StObject.set(x, "features", js.Array(value :_*))
     }
   }
   
@@ -75,26 +64,20 @@ object featureListMod {
   }
   object FeatureType {
     
-    @scala.inline
-    def apply(text: String, title: String): FeatureType = {
+    inline def apply(text: String, title: String): FeatureType = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[FeatureType]
     }
     
-    @scala.inline
-    implicit class FeatureTypeMutableBuilder[Self <: FeatureType] (val x: Self) extends AnyVal {
+    extension [Self <: FeatureType](x: Self) {
       
-      @scala.inline
-      def setImage(value: ReactNode): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: ReactNode): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+      inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
 }

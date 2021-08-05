@@ -18,19 +18,15 @@ trait FieldReference extends StObject {
 }
 object FieldReference {
   
-  @scala.inline
-  def apply(referenceName: String, url: String): FieldReference = {
+  inline def apply(referenceName: String, url: String): FieldReference = {
     val __obj = js.Dynamic.literal(referenceName = referenceName.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldReference]
   }
   
-  @scala.inline
-  implicit class FieldReferenceMutableBuilder[Self <: FieldReference] (val x: Self) extends AnyVal {
+  extension [Self <: FieldReference](x: Self) {
     
-    @scala.inline
-    def setReferenceName(value: String): Self = StObject.set(x, "referenceName", value.asInstanceOf[js.Any])
+    inline def setReferenceName(value: String): Self = StObject.set(x, "referenceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -17,37 +17,27 @@ trait DoubleVerifyBrandSafetyCategories extends StObject {
 }
 object DoubleVerifyBrandSafetyCategories {
   
-  @scala.inline
-  def apply(): DoubleVerifyBrandSafetyCategories = {
+  inline def apply(): DoubleVerifyBrandSafetyCategories = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DoubleVerifyBrandSafetyCategories]
   }
   
-  @scala.inline
-  implicit class DoubleVerifyBrandSafetyCategoriesMutableBuilder[Self <: DoubleVerifyBrandSafetyCategories] (val x: Self) extends AnyVal {
+  extension [Self <: DoubleVerifyBrandSafetyCategories](x: Self) {
     
-    @scala.inline
-    def setAvoidUnknownBrandSafetyCategory(value: Boolean): Self = StObject.set(x, "avoidUnknownBrandSafetyCategory", value.asInstanceOf[js.Any])
+    inline def setAvoidUnknownBrandSafetyCategory(value: Boolean): Self = StObject.set(x, "avoidUnknownBrandSafetyCategory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvoidUnknownBrandSafetyCategoryUndefined: Self = StObject.set(x, "avoidUnknownBrandSafetyCategory", js.undefined)
+    inline def setAvoidUnknownBrandSafetyCategoryUndefined: Self = StObject.set(x, "avoidUnknownBrandSafetyCategory", js.undefined)
     
-    @scala.inline
-    def setAvoidedHighSeverityCategories(value: js.Array[String]): Self = StObject.set(x, "avoidedHighSeverityCategories", value.asInstanceOf[js.Any])
+    inline def setAvoidedHighSeverityCategories(value: js.Array[String]): Self = StObject.set(x, "avoidedHighSeverityCategories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvoidedHighSeverityCategoriesUndefined: Self = StObject.set(x, "avoidedHighSeverityCategories", js.undefined)
+    inline def setAvoidedHighSeverityCategoriesUndefined: Self = StObject.set(x, "avoidedHighSeverityCategories", js.undefined)
     
-    @scala.inline
-    def setAvoidedHighSeverityCategoriesVarargs(value: String*): Self = StObject.set(x, "avoidedHighSeverityCategories", js.Array(value :_*))
+    inline def setAvoidedHighSeverityCategoriesVarargs(value: String*): Self = StObject.set(x, "avoidedHighSeverityCategories", js.Array(value :_*))
     
-    @scala.inline
-    def setAvoidedMediumSeverityCategories(value: js.Array[String]): Self = StObject.set(x, "avoidedMediumSeverityCategories", value.asInstanceOf[js.Any])
+    inline def setAvoidedMediumSeverityCategories(value: js.Array[String]): Self = StObject.set(x, "avoidedMediumSeverityCategories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvoidedMediumSeverityCategoriesUndefined: Self = StObject.set(x, "avoidedMediumSeverityCategories", js.undefined)
+    inline def setAvoidedMediumSeverityCategoriesUndefined: Self = StObject.set(x, "avoidedMediumSeverityCategories", js.undefined)
     
-    @scala.inline
-    def setAvoidedMediumSeverityCategoriesVarargs(value: String*): Self = StObject.set(x, "avoidedMediumSeverityCategories", js.Array(value :_*))
+    inline def setAvoidedMediumSeverityCategoriesVarargs(value: String*): Self = StObject.set(x, "avoidedMediumSeverityCategories", js.Array(value :_*))
   }
 }

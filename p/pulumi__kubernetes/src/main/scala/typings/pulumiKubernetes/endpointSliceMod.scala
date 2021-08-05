@@ -75,17 +75,14 @@ object endpointSliceMod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): EndpointSlice = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EndpointSlice]
-    @scala.inline
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): EndpointSlice = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EndpointSlice]
+    inline def get(name: String, id: Input[ID]): EndpointSlice = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EndpointSlice]
+    inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): EndpointSlice = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EndpointSlice]
     
     /**
       * Returns true if the given object is an instance of EndpointSlice.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/discovery/v1beta1/endpointSlice.EndpointSlice */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/discovery/v1beta1/endpointSlice.EndpointSlice */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/discovery/v1beta1/endpointSlice.EndpointSlice */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/discovery/v1beta1/endpointSlice.EndpointSlice */ Boolean]
   }
   
   trait EndpointSliceArgs extends StObject {
@@ -126,8 +123,7 @@ object endpointSliceMod {
   }
   object EndpointSliceArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addressType: Input[String],
       endpoints: Input[js.Array[Input[typings.pulumiKubernetes.inputMod.discovery.v1beta1.Endpoint]]]
     ): EndpointSliceArgs = {
@@ -135,48 +131,35 @@ object endpointSliceMod {
       __obj.asInstanceOf[EndpointSliceArgs]
     }
     
-    @scala.inline
-    implicit class EndpointSliceArgsMutableBuilder[Self <: EndpointSliceArgs] (val x: Self) extends AnyVal {
+    extension [Self <: EndpointSliceArgs](x: Self) {
       
-      @scala.inline
-      def setAddressType(value: Input[String]): Self = StObject.set(x, "addressType", value.asInstanceOf[js.Any])
+      inline def setAddressType(value: Input[String]): Self = StObject.set(x, "addressType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersion(value: Input[discoveryDotk8sDotioSlashv1beta1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: Input[discoveryDotk8sDotioSlashv1beta1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
       
-      @scala.inline
-      def setEndpoints(value: Input[js.Array[Input[typings.pulumiKubernetes.inputMod.discovery.v1beta1.Endpoint]]]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
+      inline def setEndpoints(value: Input[js.Array[Input[typings.pulumiKubernetes.inputMod.discovery.v1beta1.Endpoint]]]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointsVarargs(value: Input[typings.pulumiKubernetes.inputMod.discovery.v1beta1.Endpoint]*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
+      inline def setEndpointsVarargs(value: Input[typings.pulumiKubernetes.inputMod.discovery.v1beta1.Endpoint]*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
       
-      @scala.inline
-      def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.EndpointSlice]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.EndpointSlice]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+      inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setPorts(
+      inline def setPorts(
         value: Input[
               js.Array[Input[typings.pulumiKubernetes.inputMod.discovery.v1beta1.EndpointPort]]
             ]
       ): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
+      inline def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
       
-      @scala.inline
-      def setPortsVarargs(value: Input[typings.pulumiKubernetes.inputMod.discovery.v1beta1.EndpointPort]*): Self = StObject.set(x, "ports", js.Array(value :_*))
+      inline def setPortsVarargs(value: Input[typings.pulumiKubernetes.inputMod.discovery.v1beta1.EndpointPort]*): Self = StObject.set(x, "ports", js.Array(value :_*))
     }
   }
 }

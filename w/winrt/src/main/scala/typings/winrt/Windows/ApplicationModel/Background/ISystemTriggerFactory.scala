@@ -10,16 +10,13 @@ trait ISystemTriggerFactory extends StObject {
 }
 object ISystemTriggerFactory {
   
-  @scala.inline
-  def apply(create: (SystemTriggerType, Boolean) => SystemTrigger): ISystemTriggerFactory = {
+  inline def apply(create: (SystemTriggerType, Boolean) => SystemTrigger): ISystemTriggerFactory = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction2(create))
     __obj.asInstanceOf[ISystemTriggerFactory]
   }
   
-  @scala.inline
-  implicit class ISystemTriggerFactoryMutableBuilder[Self <: ISystemTriggerFactory] (val x: Self) extends AnyVal {
+  extension [Self <: ISystemTriggerFactory](x: Self) {
     
-    @scala.inline
-    def setCreate(value: (SystemTriggerType, Boolean) => SystemTrigger): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+    inline def setCreate(value: (SystemTriggerType, Boolean) => SystemTrigger): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
   }
 }

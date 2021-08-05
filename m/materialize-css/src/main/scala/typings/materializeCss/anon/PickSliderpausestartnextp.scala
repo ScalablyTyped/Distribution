@@ -19,43 +19,31 @@ trait PickSliderpausestartnextp extends StObject {
 }
 object PickSliderpausestartnextp {
   
-  @scala.inline
-  def apply(): PickSliderpausestartnextp = {
+  inline def apply(): PickSliderpausestartnextp = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PickSliderpausestartnextp]
   }
   
-  @scala.inline
-  implicit class PickSliderpausestartnextpMutableBuilder[Self <: PickSliderpausestartnextp] (val x: Self) extends AnyVal {
+  extension [Self <: PickSliderpausestartnextp](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: js.Any): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
+    inline def setDestroy(value: js.Any): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+    inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
-    @scala.inline
-    def setNext(value: js.Any): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: js.Any): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+    inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     
-    @scala.inline
-    def setPause(value: js.Any): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
+    inline def setPause(value: js.Any): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPauseUndefined: Self = StObject.set(x, "pause", js.undefined)
+    inline def setPauseUndefined: Self = StObject.set(x, "pause", js.undefined)
     
-    @scala.inline
-    def setPrev(value: js.Any): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+    inline def setPrev(value: js.Any): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
+    inline def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
     
-    @scala.inline
-    def setStart(value: js.Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: js.Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

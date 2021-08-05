@@ -14,19 +14,15 @@ trait ClusterClientAuthentication extends StObject {
 }
 object ClusterClientAuthentication {
   
-  @scala.inline
-  def apply(): ClusterClientAuthentication = {
+  inline def apply(): ClusterClientAuthentication = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClusterClientAuthentication]
   }
   
-  @scala.inline
-  implicit class ClusterClientAuthenticationMutableBuilder[Self <: ClusterClientAuthentication] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterClientAuthentication](x: Self) {
     
-    @scala.inline
-    def setTls(value: Input[ClusterClientAuthenticationTls]): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
+    inline def setTls(value: Input[ClusterClientAuthenticationTls]): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
+    inline def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
   }
 }

@@ -13,17 +13,14 @@ object anon {
   }
   object Apikey {
     
-    @scala.inline
-    def apply(Apikey: ApiInstanceAuthentications): Apikey = {
+    inline def apply(Apikey: ApiInstanceAuthentications): Apikey = {
       val __obj = js.Dynamic.literal(Apikey = Apikey.asInstanceOf[js.Any])
       __obj.asInstanceOf[Apikey]
     }
     
-    @scala.inline
-    implicit class ApikeyMutableBuilder[Self <: Apikey] (val x: Self) extends AnyVal {
+    extension [Self <: Apikey](x: Self) {
       
-      @scala.inline
-      def setApikey(value: ApiInstanceAuthentications): Self = StObject.set(x, "Apikey", value.asInstanceOf[js.Any])
+      inline def setApikey(value: ApiInstanceAuthentications): Self = StObject.set(x, "Apikey", value.asInstanceOf[js.Any])
     }
   }
 }

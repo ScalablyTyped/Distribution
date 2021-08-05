@@ -22,25 +22,19 @@ trait SchemaDeviceState extends StObject {
 }
 object SchemaDeviceState {
   
-  @scala.inline
-  def apply(): SchemaDeviceState = {
+  inline def apply(): SchemaDeviceState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDeviceState]
   }
   
-  @scala.inline
-  implicit class SchemaDeviceStateMutableBuilder[Self <: SchemaDeviceState] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDeviceState](x: Self) {
     
-    @scala.inline
-    def setBinaryData(value: String): Self = StObject.set(x, "binaryData", value.asInstanceOf[js.Any])
+    inline def setBinaryData(value: String): Self = StObject.set(x, "binaryData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBinaryDataUndefined: Self = StObject.set(x, "binaryData", js.undefined)
+    inline def setBinaryDataUndefined: Self = StObject.set(x, "binaryData", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

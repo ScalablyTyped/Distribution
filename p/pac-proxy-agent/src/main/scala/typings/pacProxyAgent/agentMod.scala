@@ -22,7 +22,7 @@ object agentMod {
     
     var cache: js.UndefOr[Readable] = js.native
     
-    var clearResolverPromise: js.Any = js.native
+    /* private */ var clearResolverPromise: js.Any = js.native
     
     /**
       * Loads the PAC proxy file from the source if necessary, and returns
@@ -30,16 +30,16 @@ object agentMod {
       *
       * @api private
       */
-    var getResolver: js.Any = js.native
+    /* private */ var getResolver: js.Any = js.native
     
     /**
       * Loads the contents of the PAC proxy file.
       *
       * @api private
       */
-    var loadPacFile: js.Any = js.native
+    /* private */ var loadPacFile: js.Any = js.native
     
-    var loadResolver: js.Any = js.native
+    /* private */ var loadResolver: js.Any = js.native
     
     var opts: PacProxyAgentOptions = js.native
     

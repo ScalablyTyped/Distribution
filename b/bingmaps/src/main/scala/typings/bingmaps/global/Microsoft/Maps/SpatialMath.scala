@@ -89,154 +89,123 @@ object SpatialMath {
       /* 2 */ val Square: typings.bingmaps.Microsoft.Maps.SpatialMath.Geometry.BufferEndCap.Square & Double = js.native
     }
     
-    @scala.inline
-    def area(shape: js.Array[IPrimitive]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("area")(shape.asInstanceOf[js.Any]).asInstanceOf[Double]
-    @scala.inline
-    def area(shape: js.Array[IPrimitive], areaUnits: AreaUnits): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(shape.asInstanceOf[js.Any], areaUnits.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def area(shape: IPrimitive): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("area")(shape.asInstanceOf[js.Any]).asInstanceOf[Double]
-    @scala.inline
-    def area(shape: IPrimitive, areaUnits: AreaUnits): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(shape.asInstanceOf[js.Any], areaUnits.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def area(shape: js.Array[IPrimitive]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("area")(shape.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def area(shape: js.Array[IPrimitive], areaUnits: AreaUnits): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(shape.asInstanceOf[js.Any], areaUnits.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def area(shape: IPrimitive): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("area")(shape.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def area(shape: IPrimitive, areaUnits: AreaUnits): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(shape.asInstanceOf[js.Any], areaUnits.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def bounds(shapes: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive]): typings.bingmaps.Microsoft.Maps.LocationRect = ^.asInstanceOf[js.Dynamic].applyDynamic("bounds")(shapes.asInstanceOf[js.Any]).asInstanceOf[typings.bingmaps.Microsoft.Maps.LocationRect]
-    @scala.inline
-    def bounds(shapes: IPrimitive): typings.bingmaps.Microsoft.Maps.LocationRect = ^.asInstanceOf[js.Dynamic].applyDynamic("bounds")(shapes.asInstanceOf[js.Any]).asInstanceOf[typings.bingmaps.Microsoft.Maps.LocationRect]
-    @scala.inline
-    def bounds(shapes: typings.bingmaps.Microsoft.Maps.Location): typings.bingmaps.Microsoft.Maps.LocationRect = ^.asInstanceOf[js.Dynamic].applyDynamic("bounds")(shapes.asInstanceOf[js.Any]).asInstanceOf[typings.bingmaps.Microsoft.Maps.LocationRect]
+    inline def bounds(shapes: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive]): typings.bingmaps.Microsoft.Maps.LocationRect = ^.asInstanceOf[js.Dynamic].applyDynamic("bounds")(shapes.asInstanceOf[js.Any]).asInstanceOf[typings.bingmaps.Microsoft.Maps.LocationRect]
+    inline def bounds(shapes: IPrimitive): typings.bingmaps.Microsoft.Maps.LocationRect = ^.asInstanceOf[js.Dynamic].applyDynamic("bounds")(shapes.asInstanceOf[js.Any]).asInstanceOf[typings.bingmaps.Microsoft.Maps.LocationRect]
+    inline def bounds(shapes: typings.bingmaps.Microsoft.Maps.Location): typings.bingmaps.Microsoft.Maps.LocationRect = ^.asInstanceOf[js.Dynamic].applyDynamic("bounds")(shapes.asInstanceOf[js.Any]).asInstanceOf[typings.bingmaps.Microsoft.Maps.LocationRect]
     
-    @scala.inline
-    def buffer(shape: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive], distance: Double): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def buffer(
+    inline def buffer(shape: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive], distance: Double): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def buffer(
       shape: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       distance: Double,
       units: Unit,
       endCapType: Unit,
       options: IPolygonOptions
     ): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], units.asInstanceOf[js.Any], endCapType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def buffer(
+    inline def buffer(
       shape: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       distance: Double,
       units: Unit,
       endCapType: BufferEndCap
     ): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], units.asInstanceOf[js.Any], endCapType.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def buffer(
+    inline def buffer(
       shape: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       distance: Double,
       units: Unit,
       endCapType: BufferEndCap,
       options: IPolygonOptions
     ): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], units.asInstanceOf[js.Any], endCapType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def buffer(
+    inline def buffer(
       shape: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       distance: Double,
       units: DistanceUnits
     ): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], units.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def buffer(
+    inline def buffer(
       shape: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       distance: Double,
       units: DistanceUnits,
       endCapType: Unit,
       options: IPolygonOptions
     ): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], units.asInstanceOf[js.Any], endCapType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def buffer(
+    inline def buffer(
       shape: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       distance: Double,
       units: DistanceUnits,
       endCapType: BufferEndCap
     ): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], units.asInstanceOf[js.Any], endCapType.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def buffer(
+    inline def buffer(
       shape: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       distance: Double,
       units: DistanceUnits,
       endCapType: BufferEndCap,
       options: IPolygonOptions
     ): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], units.asInstanceOf[js.Any], endCapType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def buffer(shape: IPrimitive, distance: Double): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def buffer(shape: IPrimitive, distance: Double, units: Unit, endCapType: Unit, options: IPolygonOptions): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], units.asInstanceOf[js.Any], endCapType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def buffer(shape: IPrimitive, distance: Double, units: Unit, endCapType: BufferEndCap): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], units.asInstanceOf[js.Any], endCapType.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def buffer(
+    inline def buffer(shape: IPrimitive, distance: Double): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def buffer(shape: IPrimitive, distance: Double, units: Unit, endCapType: Unit, options: IPolygonOptions): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], units.asInstanceOf[js.Any], endCapType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def buffer(shape: IPrimitive, distance: Double, units: Unit, endCapType: BufferEndCap): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], units.asInstanceOf[js.Any], endCapType.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def buffer(
       shape: IPrimitive,
       distance: Double,
       units: Unit,
       endCapType: BufferEndCap,
       options: IPolygonOptions
     ): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], units.asInstanceOf[js.Any], endCapType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def buffer(shape: IPrimitive, distance: Double, units: DistanceUnits): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], units.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def buffer(
+    inline def buffer(shape: IPrimitive, distance: Double, units: DistanceUnits): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], units.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def buffer(
       shape: IPrimitive,
       distance: Double,
       units: DistanceUnits,
       endCapType: Unit,
       options: IPolygonOptions
     ): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], units.asInstanceOf[js.Any], endCapType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def buffer(shape: IPrimitive, distance: Double, units: DistanceUnits, endCapType: BufferEndCap): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], units.asInstanceOf[js.Any], endCapType.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def buffer(
+    inline def buffer(shape: IPrimitive, distance: Double, units: DistanceUnits, endCapType: BufferEndCap): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], units.asInstanceOf[js.Any], endCapType.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def buffer(
       shape: IPrimitive,
       distance: Double,
       units: DistanceUnits,
       endCapType: BufferEndCap,
       options: IPolygonOptions
     ): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], units.asInstanceOf[js.Any], endCapType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def buffer(shape: typings.bingmaps.Microsoft.Maps.Location, distance: Double): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def buffer(
+    inline def buffer(shape: typings.bingmaps.Microsoft.Maps.Location, distance: Double): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def buffer(
       shape: typings.bingmaps.Microsoft.Maps.Location,
       distance: Double,
       units: Unit,
       endCapType: Unit,
       options: IPolygonOptions
     ): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], units.asInstanceOf[js.Any], endCapType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def buffer(
+    inline def buffer(
       shape: typings.bingmaps.Microsoft.Maps.Location,
       distance: Double,
       units: Unit,
       endCapType: BufferEndCap
     ): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], units.asInstanceOf[js.Any], endCapType.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def buffer(
+    inline def buffer(
       shape: typings.bingmaps.Microsoft.Maps.Location,
       distance: Double,
       units: Unit,
       endCapType: BufferEndCap,
       options: IPolygonOptions
     ): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], units.asInstanceOf[js.Any], endCapType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def buffer(shape: typings.bingmaps.Microsoft.Maps.Location, distance: Double, units: DistanceUnits): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], units.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def buffer(
+    inline def buffer(shape: typings.bingmaps.Microsoft.Maps.Location, distance: Double, units: DistanceUnits): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], units.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def buffer(
       shape: typings.bingmaps.Microsoft.Maps.Location,
       distance: Double,
       units: DistanceUnits,
       endCapType: Unit,
       options: IPolygonOptions
     ): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], units.asInstanceOf[js.Any], endCapType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def buffer(
+    inline def buffer(
       shape: typings.bingmaps.Microsoft.Maps.Location,
       distance: Double,
       units: DistanceUnits,
       endCapType: BufferEndCap
     ): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], units.asInstanceOf[js.Any], endCapType.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def buffer(
+    inline def buffer(
       shape: typings.bingmaps.Microsoft.Maps.Location,
       distance: Double,
       units: DistanceUnits,
@@ -244,765 +213,561 @@ object SpatialMath {
       options: IPolygonOptions
     ): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], units.asInstanceOf[js.Any], endCapType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
     
-    @scala.inline
-    def calculateLength(shape: js.Array[IPrimitive]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateLength")(shape.asInstanceOf[js.Any]).asInstanceOf[Double]
-    @scala.inline
-    def calculateLength(shape: js.Array[IPrimitive], units: Unit, highAccuracy: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateLength")(shape.asInstanceOf[js.Any], units.asInstanceOf[js.Any], highAccuracy.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def calculateLength(shape: js.Array[IPrimitive], units: DistanceUnits): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateLength")(shape.asInstanceOf[js.Any], units.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def calculateLength(shape: js.Array[IPrimitive], units: DistanceUnits, highAccuracy: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateLength")(shape.asInstanceOf[js.Any], units.asInstanceOf[js.Any], highAccuracy.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def calculateLength(shape: IPrimitive): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateLength")(shape.asInstanceOf[js.Any]).asInstanceOf[Double]
-    @scala.inline
-    def calculateLength(shape: IPrimitive, units: Unit, highAccuracy: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateLength")(shape.asInstanceOf[js.Any], units.asInstanceOf[js.Any], highAccuracy.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def calculateLength(shape: IPrimitive, units: DistanceUnits): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateLength")(shape.asInstanceOf[js.Any], units.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def calculateLength(shape: IPrimitive, units: DistanceUnits, highAccuracy: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateLength")(shape.asInstanceOf[js.Any], units.asInstanceOf[js.Any], highAccuracy.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def calculateLength(shape: js.Array[IPrimitive]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateLength")(shape.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def calculateLength(shape: js.Array[IPrimitive], units: Unit, highAccuracy: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateLength")(shape.asInstanceOf[js.Any], units.asInstanceOf[js.Any], highAccuracy.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def calculateLength(shape: js.Array[IPrimitive], units: DistanceUnits): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateLength")(shape.asInstanceOf[js.Any], units.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def calculateLength(shape: js.Array[IPrimitive], units: DistanceUnits, highAccuracy: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateLength")(shape.asInstanceOf[js.Any], units.asInstanceOf[js.Any], highAccuracy.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def calculateLength(shape: IPrimitive): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateLength")(shape.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def calculateLength(shape: IPrimitive, units: Unit, highAccuracy: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateLength")(shape.asInstanceOf[js.Any], units.asInstanceOf[js.Any], highAccuracy.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def calculateLength(shape: IPrimitive, units: DistanceUnits): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateLength")(shape.asInstanceOf[js.Any], units.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def calculateLength(shape: IPrimitive, units: DistanceUnits, highAccuracy: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateLength")(shape.asInstanceOf[js.Any], units.asInstanceOf[js.Any], highAccuracy.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def centroid(shape: js.Array[IPrimitive]): typings.bingmaps.Microsoft.Maps.Location = ^.asInstanceOf[js.Dynamic].applyDynamic("centroid")(shape.asInstanceOf[js.Any]).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location]
-    @scala.inline
-    def centroid(shape: IPrimitive): typings.bingmaps.Microsoft.Maps.Location = ^.asInstanceOf[js.Dynamic].applyDynamic("centroid")(shape.asInstanceOf[js.Any]).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location]
+    inline def centroid(shape: js.Array[IPrimitive]): typings.bingmaps.Microsoft.Maps.Location = ^.asInstanceOf[js.Dynamic].applyDynamic("centroid")(shape.asInstanceOf[js.Any]).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location]
+    inline def centroid(shape: IPrimitive): typings.bingmaps.Microsoft.Maps.Location = ^.asInstanceOf[js.Dynamic].applyDynamic("centroid")(shape.asInstanceOf[js.Any]).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location]
     
-    @scala.inline
-    def concaveHull(shapes: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive]): IPrimitive | js.Array[IPrimitive] = ^.asInstanceOf[js.Dynamic].applyDynamic("concaveHull")(shapes.asInstanceOf[js.Any]).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def concaveHull(
+    inline def concaveHull(shapes: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive]): IPrimitive | js.Array[IPrimitive] = ^.asInstanceOf[js.Dynamic].applyDynamic("concaveHull")(shapes.asInstanceOf[js.Any]).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def concaveHull(
       shapes: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       allowMultiPolygons: Boolean
     ): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("concaveHull")(shapes.asInstanceOf[js.Any], allowMultiPolygons.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def concaveHull(
+    inline def concaveHull(
       shapes: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       allowMultiPolygons: Boolean,
       allowHoles: Boolean
     ): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("concaveHull")(shapes.asInstanceOf[js.Any], allowMultiPolygons.asInstanceOf[js.Any], allowHoles.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def concaveHull(
+    inline def concaveHull(
       shapes: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       allowMultiPolygons: Boolean,
       allowHoles: Boolean,
       options: IPolygonOptions
     ): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("concaveHull")(shapes.asInstanceOf[js.Any], allowMultiPolygons.asInstanceOf[js.Any], allowHoles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def concaveHull(
+    inline def concaveHull(
       shapes: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       allowMultiPolygons: Boolean,
       allowHoles: Unit,
       options: IPolygonOptions
     ): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("concaveHull")(shapes.asInstanceOf[js.Any], allowMultiPolygons.asInstanceOf[js.Any], allowHoles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def concaveHull(
+    inline def concaveHull(
       shapes: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       allowMultiPolygons: Unit,
       allowHoles: Boolean
     ): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("concaveHull")(shapes.asInstanceOf[js.Any], allowMultiPolygons.asInstanceOf[js.Any], allowHoles.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def concaveHull(
+    inline def concaveHull(
       shapes: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       allowMultiPolygons: Unit,
       allowHoles: Boolean,
       options: IPolygonOptions
     ): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("concaveHull")(shapes.asInstanceOf[js.Any], allowMultiPolygons.asInstanceOf[js.Any], allowHoles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def concaveHull(
+    inline def concaveHull(
       shapes: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       allowMultiPolygons: Unit,
       allowHoles: Unit,
       options: IPolygonOptions
     ): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("concaveHull")(shapes.asInstanceOf[js.Any], allowMultiPolygons.asInstanceOf[js.Any], allowHoles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def concaveHull(shapes: IPrimitive): IPrimitive | js.Array[IPrimitive] = ^.asInstanceOf[js.Dynamic].applyDynamic("concaveHull")(shapes.asInstanceOf[js.Any]).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def concaveHull(shapes: IPrimitive, allowMultiPolygons: Boolean): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("concaveHull")(shapes.asInstanceOf[js.Any], allowMultiPolygons.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def concaveHull(shapes: IPrimitive, allowMultiPolygons: Boolean, allowHoles: Boolean): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("concaveHull")(shapes.asInstanceOf[js.Any], allowMultiPolygons.asInstanceOf[js.Any], allowHoles.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def concaveHull(shapes: IPrimitive, allowMultiPolygons: Boolean, allowHoles: Boolean, options: IPolygonOptions): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("concaveHull")(shapes.asInstanceOf[js.Any], allowMultiPolygons.asInstanceOf[js.Any], allowHoles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def concaveHull(shapes: IPrimitive, allowMultiPolygons: Boolean, allowHoles: Unit, options: IPolygonOptions): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("concaveHull")(shapes.asInstanceOf[js.Any], allowMultiPolygons.asInstanceOf[js.Any], allowHoles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def concaveHull(shapes: IPrimitive, allowMultiPolygons: Unit, allowHoles: Boolean): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("concaveHull")(shapes.asInstanceOf[js.Any], allowMultiPolygons.asInstanceOf[js.Any], allowHoles.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def concaveHull(shapes: IPrimitive, allowMultiPolygons: Unit, allowHoles: Boolean, options: IPolygonOptions): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("concaveHull")(shapes.asInstanceOf[js.Any], allowMultiPolygons.asInstanceOf[js.Any], allowHoles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def concaveHull(shapes: IPrimitive, allowMultiPolygons: Unit, allowHoles: Unit, options: IPolygonOptions): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("concaveHull")(shapes.asInstanceOf[js.Any], allowMultiPolygons.asInstanceOf[js.Any], allowHoles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def concaveHull(shapes: typings.bingmaps.Microsoft.Maps.Location): IPrimitive | js.Array[IPrimitive] = ^.asInstanceOf[js.Dynamic].applyDynamic("concaveHull")(shapes.asInstanceOf[js.Any]).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def concaveHull(shapes: typings.bingmaps.Microsoft.Maps.Location, allowMultiPolygons: Boolean): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("concaveHull")(shapes.asInstanceOf[js.Any], allowMultiPolygons.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def concaveHull(shapes: typings.bingmaps.Microsoft.Maps.Location, allowMultiPolygons: Boolean, allowHoles: Boolean): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("concaveHull")(shapes.asInstanceOf[js.Any], allowMultiPolygons.asInstanceOf[js.Any], allowHoles.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def concaveHull(
+    inline def concaveHull(shapes: IPrimitive): IPrimitive | js.Array[IPrimitive] = ^.asInstanceOf[js.Dynamic].applyDynamic("concaveHull")(shapes.asInstanceOf[js.Any]).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def concaveHull(shapes: IPrimitive, allowMultiPolygons: Boolean): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("concaveHull")(shapes.asInstanceOf[js.Any], allowMultiPolygons.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def concaveHull(shapes: IPrimitive, allowMultiPolygons: Boolean, allowHoles: Boolean): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("concaveHull")(shapes.asInstanceOf[js.Any], allowMultiPolygons.asInstanceOf[js.Any], allowHoles.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def concaveHull(shapes: IPrimitive, allowMultiPolygons: Boolean, allowHoles: Boolean, options: IPolygonOptions): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("concaveHull")(shapes.asInstanceOf[js.Any], allowMultiPolygons.asInstanceOf[js.Any], allowHoles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def concaveHull(shapes: IPrimitive, allowMultiPolygons: Boolean, allowHoles: Unit, options: IPolygonOptions): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("concaveHull")(shapes.asInstanceOf[js.Any], allowMultiPolygons.asInstanceOf[js.Any], allowHoles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def concaveHull(shapes: IPrimitive, allowMultiPolygons: Unit, allowHoles: Boolean): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("concaveHull")(shapes.asInstanceOf[js.Any], allowMultiPolygons.asInstanceOf[js.Any], allowHoles.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def concaveHull(shapes: IPrimitive, allowMultiPolygons: Unit, allowHoles: Boolean, options: IPolygonOptions): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("concaveHull")(shapes.asInstanceOf[js.Any], allowMultiPolygons.asInstanceOf[js.Any], allowHoles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def concaveHull(shapes: IPrimitive, allowMultiPolygons: Unit, allowHoles: Unit, options: IPolygonOptions): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("concaveHull")(shapes.asInstanceOf[js.Any], allowMultiPolygons.asInstanceOf[js.Any], allowHoles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def concaveHull(shapes: typings.bingmaps.Microsoft.Maps.Location): IPrimitive | js.Array[IPrimitive] = ^.asInstanceOf[js.Dynamic].applyDynamic("concaveHull")(shapes.asInstanceOf[js.Any]).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def concaveHull(shapes: typings.bingmaps.Microsoft.Maps.Location, allowMultiPolygons: Boolean): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("concaveHull")(shapes.asInstanceOf[js.Any], allowMultiPolygons.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def concaveHull(shapes: typings.bingmaps.Microsoft.Maps.Location, allowMultiPolygons: Boolean, allowHoles: Boolean): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("concaveHull")(shapes.asInstanceOf[js.Any], allowMultiPolygons.asInstanceOf[js.Any], allowHoles.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def concaveHull(
       shapes: typings.bingmaps.Microsoft.Maps.Location,
       allowMultiPolygons: Boolean,
       allowHoles: Boolean,
       options: IPolygonOptions
     ): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("concaveHull")(shapes.asInstanceOf[js.Any], allowMultiPolygons.asInstanceOf[js.Any], allowHoles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def concaveHull(
+    inline def concaveHull(
       shapes: typings.bingmaps.Microsoft.Maps.Location,
       allowMultiPolygons: Boolean,
       allowHoles: Unit,
       options: IPolygonOptions
     ): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("concaveHull")(shapes.asInstanceOf[js.Any], allowMultiPolygons.asInstanceOf[js.Any], allowHoles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def concaveHull(shapes: typings.bingmaps.Microsoft.Maps.Location, allowMultiPolygons: Unit, allowHoles: Boolean): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("concaveHull")(shapes.asInstanceOf[js.Any], allowMultiPolygons.asInstanceOf[js.Any], allowHoles.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def concaveHull(
+    inline def concaveHull(shapes: typings.bingmaps.Microsoft.Maps.Location, allowMultiPolygons: Unit, allowHoles: Boolean): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("concaveHull")(shapes.asInstanceOf[js.Any], allowMultiPolygons.asInstanceOf[js.Any], allowHoles.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def concaveHull(
       shapes: typings.bingmaps.Microsoft.Maps.Location,
       allowMultiPolygons: Unit,
       allowHoles: Boolean,
       options: IPolygonOptions
     ): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("concaveHull")(shapes.asInstanceOf[js.Any], allowMultiPolygons.asInstanceOf[js.Any], allowHoles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def concaveHull(
+    inline def concaveHull(
       shapes: typings.bingmaps.Microsoft.Maps.Location,
       allowMultiPolygons: Unit,
       allowHoles: Unit,
       options: IPolygonOptions
     ): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("concaveHull")(shapes.asInstanceOf[js.Any], allowMultiPolygons.asInstanceOf[js.Any], allowHoles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
     
-    @scala.inline
-    def contains(
+    inline def contains(
       shapeA: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       shapeB: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive]
     ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def contains(shapeA: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive], shapeB: IPrimitive): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def contains(
+    inline def contains(shapeA: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive], shapeB: IPrimitive): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def contains(
       shapeA: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       shapeB: typings.bingmaps.Microsoft.Maps.Location
     ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def contains(shapeA: IPrimitive, shapeB: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def contains(shapeA: IPrimitive, shapeB: IPrimitive): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def contains(shapeA: IPrimitive, shapeB: typings.bingmaps.Microsoft.Maps.Location): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def contains(
+    inline def contains(shapeA: IPrimitive, shapeB: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def contains(shapeA: IPrimitive, shapeB: IPrimitive): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def contains(shapeA: IPrimitive, shapeB: typings.bingmaps.Microsoft.Maps.Location): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def contains(
       shapeA: typings.bingmaps.Microsoft.Maps.Location,
       shapeB: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive]
     ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def contains(shapeA: typings.bingmaps.Microsoft.Maps.Location, shapeB: IPrimitive): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def contains(shapeA: typings.bingmaps.Microsoft.Maps.Location, shapeB: typings.bingmaps.Microsoft.Maps.Location): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def contains(shapeA: typings.bingmaps.Microsoft.Maps.Location, shapeB: IPrimitive): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def contains(shapeA: typings.bingmaps.Microsoft.Maps.Location, shapeB: typings.bingmaps.Microsoft.Maps.Location): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def convexHull(shapes: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive]): IPrimitive | js.Array[IPrimitive] = ^.asInstanceOf[js.Dynamic].applyDynamic("convexHull")(shapes.asInstanceOf[js.Any]).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def convexHull(shapes: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive], options: IPolygonOptions): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("convexHull")(shapes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def convexHull(shapes: IPrimitive): IPrimitive | js.Array[IPrimitive] = ^.asInstanceOf[js.Dynamic].applyDynamic("convexHull")(shapes.asInstanceOf[js.Any]).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def convexHull(shapes: IPrimitive, options: IPolygonOptions): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("convexHull")(shapes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def convexHull(shapes: typings.bingmaps.Microsoft.Maps.Location): IPrimitive | js.Array[IPrimitive] = ^.asInstanceOf[js.Dynamic].applyDynamic("convexHull")(shapes.asInstanceOf[js.Any]).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def convexHull(shapes: typings.bingmaps.Microsoft.Maps.Location, options: IPolygonOptions): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("convexHull")(shapes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def convexHull(shapes: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive]): IPrimitive | js.Array[IPrimitive] = ^.asInstanceOf[js.Dynamic].applyDynamic("convexHull")(shapes.asInstanceOf[js.Any]).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def convexHull(shapes: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive], options: IPolygonOptions): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("convexHull")(shapes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def convexHull(shapes: IPrimitive): IPrimitive | js.Array[IPrimitive] = ^.asInstanceOf[js.Dynamic].applyDynamic("convexHull")(shapes.asInstanceOf[js.Any]).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def convexHull(shapes: IPrimitive, options: IPolygonOptions): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("convexHull")(shapes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def convexHull(shapes: typings.bingmaps.Microsoft.Maps.Location): IPrimitive | js.Array[IPrimitive] = ^.asInstanceOf[js.Dynamic].applyDynamic("convexHull")(shapes.asInstanceOf[js.Any]).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def convexHull(shapes: typings.bingmaps.Microsoft.Maps.Location, options: IPolygonOptions): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("convexHull")(shapes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
     
-    @scala.inline
-    def delaunayTriangles(shapes: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive]): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = ^.asInstanceOf[js.Dynamic].applyDynamic("delaunayTriangles")(shapes.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Polygon]]
-    @scala.inline
-    def delaunayTriangles(shapes: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive], options: IPolygonOptions): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = (^.asInstanceOf[js.Dynamic].applyDynamic("delaunayTriangles")(shapes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Polygon]]
-    @scala.inline
-    def delaunayTriangles(shapes: IPrimitive): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = ^.asInstanceOf[js.Dynamic].applyDynamic("delaunayTriangles")(shapes.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Polygon]]
-    @scala.inline
-    def delaunayTriangles(shapes: IPrimitive, options: IPolygonOptions): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = (^.asInstanceOf[js.Dynamic].applyDynamic("delaunayTriangles")(shapes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Polygon]]
-    @scala.inline
-    def delaunayTriangles(shapes: typings.bingmaps.Microsoft.Maps.Location): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = ^.asInstanceOf[js.Dynamic].applyDynamic("delaunayTriangles")(shapes.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Polygon]]
-    @scala.inline
-    def delaunayTriangles(shapes: typings.bingmaps.Microsoft.Maps.Location, options: IPolygonOptions): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = (^.asInstanceOf[js.Dynamic].applyDynamic("delaunayTriangles")(shapes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Polygon]]
+    inline def delaunayTriangles(shapes: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive]): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = ^.asInstanceOf[js.Dynamic].applyDynamic("delaunayTriangles")(shapes.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Polygon]]
+    inline def delaunayTriangles(shapes: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive], options: IPolygonOptions): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = (^.asInstanceOf[js.Dynamic].applyDynamic("delaunayTriangles")(shapes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Polygon]]
+    inline def delaunayTriangles(shapes: IPrimitive): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = ^.asInstanceOf[js.Dynamic].applyDynamic("delaunayTriangles")(shapes.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Polygon]]
+    inline def delaunayTriangles(shapes: IPrimitive, options: IPolygonOptions): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = (^.asInstanceOf[js.Dynamic].applyDynamic("delaunayTriangles")(shapes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Polygon]]
+    inline def delaunayTriangles(shapes: typings.bingmaps.Microsoft.Maps.Location): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = ^.asInstanceOf[js.Dynamic].applyDynamic("delaunayTriangles")(shapes.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Polygon]]
+    inline def delaunayTriangles(shapes: typings.bingmaps.Microsoft.Maps.Location, options: IPolygonOptions): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = (^.asInstanceOf[js.Dynamic].applyDynamic("delaunayTriangles")(shapes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Polygon]]
     
-    @scala.inline
-    def difference(shapeA: js.Array[IPrimitive], shapeB: js.Array[IPrimitive]): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("difference")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def difference(shapeA: js.Array[IPrimitive], shapeB: IPrimitive): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("difference")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def difference(shapeA: IPrimitive, shapeB: js.Array[IPrimitive]): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("difference")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def difference(shapeA: IPrimitive, shapeB: IPrimitive): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("difference")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def difference(shapeA: js.Array[IPrimitive], shapeB: js.Array[IPrimitive]): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("difference")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def difference(shapeA: js.Array[IPrimitive], shapeB: IPrimitive): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("difference")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def difference(shapeA: IPrimitive, shapeB: js.Array[IPrimitive]): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("difference")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def difference(shapeA: IPrimitive, shapeB: IPrimitive): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("difference")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
     
-    @scala.inline
-    def distance(
+    inline def distance(
       shapeA: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       shapeB: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive]
     ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def distance(
+    inline def distance(
       shapeA: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       shapeB: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       units: Unit,
       highAccuracy: Boolean
     ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], units.asInstanceOf[js.Any], highAccuracy.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def distance(
+    inline def distance(
       shapeA: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       shapeB: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       units: DistanceUnits
     ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], units.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def distance(
+    inline def distance(
       shapeA: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       shapeB: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       units: DistanceUnits,
       highAccuracy: Boolean
     ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], units.asInstanceOf[js.Any], highAccuracy.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def distance(shapeA: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive], shapeB: IPrimitive): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def distance(
+    inline def distance(shapeA: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive], shapeB: IPrimitive): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def distance(
       shapeA: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       shapeB: IPrimitive,
       units: Unit,
       highAccuracy: Boolean
     ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], units.asInstanceOf[js.Any], highAccuracy.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def distance(
+    inline def distance(
       shapeA: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       shapeB: IPrimitive,
       units: DistanceUnits
     ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], units.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def distance(
+    inline def distance(
       shapeA: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       shapeB: IPrimitive,
       units: DistanceUnits,
       highAccuracy: Boolean
     ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], units.asInstanceOf[js.Any], highAccuracy.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def distance(
+    inline def distance(
       shapeA: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       shapeB: typings.bingmaps.Microsoft.Maps.Location
     ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def distance(
+    inline def distance(
       shapeA: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       shapeB: typings.bingmaps.Microsoft.Maps.Location,
       units: Unit,
       highAccuracy: Boolean
     ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], units.asInstanceOf[js.Any], highAccuracy.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def distance(
+    inline def distance(
       shapeA: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       shapeB: typings.bingmaps.Microsoft.Maps.Location,
       units: DistanceUnits
     ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], units.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def distance(
+    inline def distance(
       shapeA: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       shapeB: typings.bingmaps.Microsoft.Maps.Location,
       units: DistanceUnits,
       highAccuracy: Boolean
     ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], units.asInstanceOf[js.Any], highAccuracy.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def distance(shapeA: IPrimitive, shapeB: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def distance(
+    inline def distance(shapeA: IPrimitive, shapeB: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def distance(
       shapeA: IPrimitive,
       shapeB: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       units: Unit,
       highAccuracy: Boolean
     ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], units.asInstanceOf[js.Any], highAccuracy.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def distance(
+    inline def distance(
       shapeA: IPrimitive,
       shapeB: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       units: DistanceUnits
     ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], units.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def distance(
+    inline def distance(
       shapeA: IPrimitive,
       shapeB: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       units: DistanceUnits,
       highAccuracy: Boolean
     ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], units.asInstanceOf[js.Any], highAccuracy.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def distance(shapeA: IPrimitive, shapeB: IPrimitive): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def distance(shapeA: IPrimitive, shapeB: IPrimitive, units: Unit, highAccuracy: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], units.asInstanceOf[js.Any], highAccuracy.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def distance(shapeA: IPrimitive, shapeB: IPrimitive, units: DistanceUnits): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], units.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def distance(shapeA: IPrimitive, shapeB: IPrimitive, units: DistanceUnits, highAccuracy: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], units.asInstanceOf[js.Any], highAccuracy.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def distance(shapeA: IPrimitive, shapeB: typings.bingmaps.Microsoft.Maps.Location): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def distance(
+    inline def distance(shapeA: IPrimitive, shapeB: IPrimitive): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def distance(shapeA: IPrimitive, shapeB: IPrimitive, units: Unit, highAccuracy: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], units.asInstanceOf[js.Any], highAccuracy.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def distance(shapeA: IPrimitive, shapeB: IPrimitive, units: DistanceUnits): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], units.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def distance(shapeA: IPrimitive, shapeB: IPrimitive, units: DistanceUnits, highAccuracy: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], units.asInstanceOf[js.Any], highAccuracy.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def distance(shapeA: IPrimitive, shapeB: typings.bingmaps.Microsoft.Maps.Location): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def distance(
       shapeA: IPrimitive,
       shapeB: typings.bingmaps.Microsoft.Maps.Location,
       units: Unit,
       highAccuracy: Boolean
     ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], units.asInstanceOf[js.Any], highAccuracy.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def distance(shapeA: IPrimitive, shapeB: typings.bingmaps.Microsoft.Maps.Location, units: DistanceUnits): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], units.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def distance(
+    inline def distance(shapeA: IPrimitive, shapeB: typings.bingmaps.Microsoft.Maps.Location, units: DistanceUnits): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], units.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def distance(
       shapeA: IPrimitive,
       shapeB: typings.bingmaps.Microsoft.Maps.Location,
       units: DistanceUnits,
       highAccuracy: Boolean
     ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], units.asInstanceOf[js.Any], highAccuracy.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def distance(
+    inline def distance(
       shapeA: typings.bingmaps.Microsoft.Maps.Location,
       shapeB: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive]
     ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def distance(
+    inline def distance(
       shapeA: typings.bingmaps.Microsoft.Maps.Location,
       shapeB: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       units: Unit,
       highAccuracy: Boolean
     ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], units.asInstanceOf[js.Any], highAccuracy.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def distance(
+    inline def distance(
       shapeA: typings.bingmaps.Microsoft.Maps.Location,
       shapeB: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       units: DistanceUnits
     ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], units.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def distance(
+    inline def distance(
       shapeA: typings.bingmaps.Microsoft.Maps.Location,
       shapeB: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       units: DistanceUnits,
       highAccuracy: Boolean
     ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], units.asInstanceOf[js.Any], highAccuracy.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def distance(shapeA: typings.bingmaps.Microsoft.Maps.Location, shapeB: IPrimitive): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def distance(
+    inline def distance(shapeA: typings.bingmaps.Microsoft.Maps.Location, shapeB: IPrimitive): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def distance(
       shapeA: typings.bingmaps.Microsoft.Maps.Location,
       shapeB: IPrimitive,
       units: Unit,
       highAccuracy: Boolean
     ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], units.asInstanceOf[js.Any], highAccuracy.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def distance(shapeA: typings.bingmaps.Microsoft.Maps.Location, shapeB: IPrimitive, units: DistanceUnits): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], units.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def distance(
+    inline def distance(shapeA: typings.bingmaps.Microsoft.Maps.Location, shapeB: IPrimitive, units: DistanceUnits): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], units.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def distance(
       shapeA: typings.bingmaps.Microsoft.Maps.Location,
       shapeB: IPrimitive,
       units: DistanceUnits,
       highAccuracy: Boolean
     ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], units.asInstanceOf[js.Any], highAccuracy.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def distance(shapeA: typings.bingmaps.Microsoft.Maps.Location, shapeB: typings.bingmaps.Microsoft.Maps.Location): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def distance(
+    inline def distance(shapeA: typings.bingmaps.Microsoft.Maps.Location, shapeB: typings.bingmaps.Microsoft.Maps.Location): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def distance(
       shapeA: typings.bingmaps.Microsoft.Maps.Location,
       shapeB: typings.bingmaps.Microsoft.Maps.Location,
       units: Unit,
       highAccuracy: Boolean
     ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], units.asInstanceOf[js.Any], highAccuracy.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def distance(
+    inline def distance(
       shapeA: typings.bingmaps.Microsoft.Maps.Location,
       shapeB: typings.bingmaps.Microsoft.Maps.Location,
       units: DistanceUnits
     ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], units.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def distance(
+    inline def distance(
       shapeA: typings.bingmaps.Microsoft.Maps.Location,
       shapeB: typings.bingmaps.Microsoft.Maps.Location,
       units: DistanceUnits,
       highAccuracy: Boolean
     ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], units.asInstanceOf[js.Any], highAccuracy.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def intersection(shapeA: js.Array[IPrimitive], shapeB: js.Array[IPrimitive]): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def intersection(shapeA: js.Array[IPrimitive], shapeB: IPrimitive): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def intersection(shapeA: IPrimitive, shapeB: js.Array[IPrimitive]): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def intersection(shapeA: IPrimitive, shapeB: IPrimitive): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def intersection(shapeA: js.Array[IPrimitive], shapeB: js.Array[IPrimitive]): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def intersection(shapeA: js.Array[IPrimitive], shapeB: IPrimitive): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def intersection(shapeA: IPrimitive, shapeB: js.Array[IPrimitive]): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def intersection(shapeA: IPrimitive, shapeB: IPrimitive): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
     
-    @scala.inline
-    def intersects(
+    inline def intersects(
       shapeA: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       shapeB: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive]
     ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersects")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def intersects(shapeA: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive], shapeB: IPrimitive): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersects")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def intersects(
+    inline def intersects(shapeA: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive], shapeB: IPrimitive): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersects")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def intersects(
       shapeA: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       shapeB: typings.bingmaps.Microsoft.Maps.Location
     ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersects")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def intersects(shapeA: IPrimitive, shapeB: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersects")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def intersects(shapeA: IPrimitive, shapeB: IPrimitive): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersects")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def intersects(shapeA: IPrimitive, shapeB: typings.bingmaps.Microsoft.Maps.Location): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersects")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def intersects(
+    inline def intersects(shapeA: IPrimitive, shapeB: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersects")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def intersects(shapeA: IPrimitive, shapeB: IPrimitive): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersects")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def intersects(shapeA: IPrimitive, shapeB: typings.bingmaps.Microsoft.Maps.Location): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersects")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def intersects(
       shapeA: typings.bingmaps.Microsoft.Maps.Location,
       shapeB: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive]
     ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersects")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def intersects(shapeA: typings.bingmaps.Microsoft.Maps.Location, shapeB: IPrimitive): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersects")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def intersects(shapeA: typings.bingmaps.Microsoft.Maps.Location, shapeB: typings.bingmaps.Microsoft.Maps.Location): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersects")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def intersects(shapeA: typings.bingmaps.Microsoft.Maps.Location, shapeB: IPrimitive): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersects")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def intersects(shapeA: typings.bingmaps.Microsoft.Maps.Location, shapeB: typings.bingmaps.Microsoft.Maps.Location): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersects")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isValid(shape: js.Array[IPrimitive]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(shape.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-    @scala.inline
-    def isValid(shape: IPrimitive): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(shape.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isValid(shape: js.Array[IPrimitive]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(shape.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isValid(shape: IPrimitive): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(shape.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def makeValid(shape: js.Array[IPrimitive]): IPrimitive | js.Array[IPrimitive] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeValid")(shape.asInstanceOf[js.Any]).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def makeValid(shape: IPrimitive): IPrimitive | js.Array[IPrimitive] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeValid")(shape.asInstanceOf[js.Any]).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def makeValid(shape: js.Array[IPrimitive]): IPrimitive | js.Array[IPrimitive] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeValid")(shape.asInstanceOf[js.Any]).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def makeValid(shape: IPrimitive): IPrimitive | js.Array[IPrimitive] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeValid")(shape.asInstanceOf[js.Any]).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
     
-    @scala.inline
-    def nearestLocations(
+    inline def nearestLocations(
       shapeA: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       shapeB: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive]
     ): js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("nearestLocations")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Location]]
-    @scala.inline
-    def nearestLocations(shapeA: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive], shapeB: IPrimitive): js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("nearestLocations")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Location]]
-    @scala.inline
-    def nearestLocations(
+    inline def nearestLocations(shapeA: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive], shapeB: IPrimitive): js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("nearestLocations")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Location]]
+    inline def nearestLocations(
       shapeA: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       shapeB: typings.bingmaps.Microsoft.Maps.Location
     ): js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("nearestLocations")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Location]]
-    @scala.inline
-    def nearestLocations(shapeA: IPrimitive, shapeB: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive]): js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("nearestLocations")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Location]]
-    @scala.inline
-    def nearestLocations(shapeA: IPrimitive, shapeB: IPrimitive): js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("nearestLocations")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Location]]
-    @scala.inline
-    def nearestLocations(shapeA: IPrimitive, shapeB: typings.bingmaps.Microsoft.Maps.Location): js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("nearestLocations")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Location]]
-    @scala.inline
-    def nearestLocations(
+    inline def nearestLocations(shapeA: IPrimitive, shapeB: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive]): js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("nearestLocations")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Location]]
+    inline def nearestLocations(shapeA: IPrimitive, shapeB: IPrimitive): js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("nearestLocations")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Location]]
+    inline def nearestLocations(shapeA: IPrimitive, shapeB: typings.bingmaps.Microsoft.Maps.Location): js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("nearestLocations")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Location]]
+    inline def nearestLocations(
       shapeA: typings.bingmaps.Microsoft.Maps.Location,
       shapeB: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive]
     ): js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("nearestLocations")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Location]]
-    @scala.inline
-    def nearestLocations(shapeA: typings.bingmaps.Microsoft.Maps.Location, shapeB: IPrimitive): js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("nearestLocations")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Location]]
-    @scala.inline
-    def nearestLocations(shapeA: typings.bingmaps.Microsoft.Maps.Location, shapeB: typings.bingmaps.Microsoft.Maps.Location): js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("nearestLocations")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Location]]
+    inline def nearestLocations(shapeA: typings.bingmaps.Microsoft.Maps.Location, shapeB: IPrimitive): js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("nearestLocations")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Location]]
+    inline def nearestLocations(shapeA: typings.bingmaps.Microsoft.Maps.Location, shapeB: typings.bingmaps.Microsoft.Maps.Location): js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("nearestLocations")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Location]]
     
-    @scala.inline
-    def reduce(shape: js.Array[IPrimitive], tolerance: Double): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(shape.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def reduce(shape: IPrimitive, tolerance: Double): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(shape.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def reduce(shape: js.Array[IPrimitive], tolerance: Double): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(shape.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def reduce(shape: IPrimitive, tolerance: Double): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(shape.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
     
-    @scala.inline
-    def rotate(shape: js.Array[IPrimitive], angle: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(shape.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def rotate(shape: js.Array[IPrimitive], angle: Double, origin: typings.bingmaps.Microsoft.Maps.Location): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(shape.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def rotate(shape: IPrimitive, angle: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(shape.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def rotate(shape: IPrimitive, angle: Double, origin: typings.bingmaps.Microsoft.Maps.Location): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(shape.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def rotate(shape: js.Array[IPrimitive], angle: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(shape.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def rotate(shape: js.Array[IPrimitive], angle: Double, origin: typings.bingmaps.Microsoft.Maps.Location): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(shape.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def rotate(shape: IPrimitive, angle: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(shape.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def rotate(shape: IPrimitive, angle: Double, origin: typings.bingmaps.Microsoft.Maps.Location): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(shape.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def shortestLineTo(
+    inline def shortestLineTo(
       shapeA: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       shapeB: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive]
     ): typings.bingmaps.Microsoft.Maps.Polyline = (^.asInstanceOf[js.Dynamic].applyDynamic("shortestLineTo")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline]
-    @scala.inline
-    def shortestLineTo(
+    inline def shortestLineTo(
       shapeA: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       shapeB: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       options: IPolylineOptions
     ): typings.bingmaps.Microsoft.Maps.Polyline = (^.asInstanceOf[js.Dynamic].applyDynamic("shortestLineTo")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline]
-    @scala.inline
-    def shortestLineTo(shapeA: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive], shapeB: IPrimitive): typings.bingmaps.Microsoft.Maps.Polyline = (^.asInstanceOf[js.Dynamic].applyDynamic("shortestLineTo")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline]
-    @scala.inline
-    def shortestLineTo(
+    inline def shortestLineTo(shapeA: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive], shapeB: IPrimitive): typings.bingmaps.Microsoft.Maps.Polyline = (^.asInstanceOf[js.Dynamic].applyDynamic("shortestLineTo")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline]
+    inline def shortestLineTo(
       shapeA: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       shapeB: IPrimitive,
       options: IPolylineOptions
     ): typings.bingmaps.Microsoft.Maps.Polyline = (^.asInstanceOf[js.Dynamic].applyDynamic("shortestLineTo")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline]
-    @scala.inline
-    def shortestLineTo(
+    inline def shortestLineTo(
       shapeA: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       shapeB: typings.bingmaps.Microsoft.Maps.Location
     ): typings.bingmaps.Microsoft.Maps.Polyline = (^.asInstanceOf[js.Dynamic].applyDynamic("shortestLineTo")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline]
-    @scala.inline
-    def shortestLineTo(
+    inline def shortestLineTo(
       shapeA: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       shapeB: typings.bingmaps.Microsoft.Maps.Location,
       options: IPolylineOptions
     ): typings.bingmaps.Microsoft.Maps.Polyline = (^.asInstanceOf[js.Dynamic].applyDynamic("shortestLineTo")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline]
-    @scala.inline
-    def shortestLineTo(shapeA: IPrimitive, shapeB: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive]): typings.bingmaps.Microsoft.Maps.Polyline = (^.asInstanceOf[js.Dynamic].applyDynamic("shortestLineTo")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline]
-    @scala.inline
-    def shortestLineTo(
+    inline def shortestLineTo(shapeA: IPrimitive, shapeB: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive]): typings.bingmaps.Microsoft.Maps.Polyline = (^.asInstanceOf[js.Dynamic].applyDynamic("shortestLineTo")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline]
+    inline def shortestLineTo(
       shapeA: IPrimitive,
       shapeB: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       options: IPolylineOptions
     ): typings.bingmaps.Microsoft.Maps.Polyline = (^.asInstanceOf[js.Dynamic].applyDynamic("shortestLineTo")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline]
-    @scala.inline
-    def shortestLineTo(shapeA: IPrimitive, shapeB: IPrimitive): typings.bingmaps.Microsoft.Maps.Polyline = (^.asInstanceOf[js.Dynamic].applyDynamic("shortestLineTo")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline]
-    @scala.inline
-    def shortestLineTo(shapeA: IPrimitive, shapeB: IPrimitive, options: IPolylineOptions): typings.bingmaps.Microsoft.Maps.Polyline = (^.asInstanceOf[js.Dynamic].applyDynamic("shortestLineTo")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline]
-    @scala.inline
-    def shortestLineTo(shapeA: IPrimitive, shapeB: typings.bingmaps.Microsoft.Maps.Location): typings.bingmaps.Microsoft.Maps.Polyline = (^.asInstanceOf[js.Dynamic].applyDynamic("shortestLineTo")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline]
-    @scala.inline
-    def shortestLineTo(shapeA: IPrimitive, shapeB: typings.bingmaps.Microsoft.Maps.Location, options: IPolylineOptions): typings.bingmaps.Microsoft.Maps.Polyline = (^.asInstanceOf[js.Dynamic].applyDynamic("shortestLineTo")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline]
-    @scala.inline
-    def shortestLineTo(
+    inline def shortestLineTo(shapeA: IPrimitive, shapeB: IPrimitive): typings.bingmaps.Microsoft.Maps.Polyline = (^.asInstanceOf[js.Dynamic].applyDynamic("shortestLineTo")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline]
+    inline def shortestLineTo(shapeA: IPrimitive, shapeB: IPrimitive, options: IPolylineOptions): typings.bingmaps.Microsoft.Maps.Polyline = (^.asInstanceOf[js.Dynamic].applyDynamic("shortestLineTo")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline]
+    inline def shortestLineTo(shapeA: IPrimitive, shapeB: typings.bingmaps.Microsoft.Maps.Location): typings.bingmaps.Microsoft.Maps.Polyline = (^.asInstanceOf[js.Dynamic].applyDynamic("shortestLineTo")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline]
+    inline def shortestLineTo(shapeA: IPrimitive, shapeB: typings.bingmaps.Microsoft.Maps.Location, options: IPolylineOptions): typings.bingmaps.Microsoft.Maps.Polyline = (^.asInstanceOf[js.Dynamic].applyDynamic("shortestLineTo")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline]
+    inline def shortestLineTo(
       shapeA: typings.bingmaps.Microsoft.Maps.Location,
       shapeB: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive]
     ): typings.bingmaps.Microsoft.Maps.Polyline = (^.asInstanceOf[js.Dynamic].applyDynamic("shortestLineTo")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline]
-    @scala.inline
-    def shortestLineTo(
+    inline def shortestLineTo(
       shapeA: typings.bingmaps.Microsoft.Maps.Location,
       shapeB: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       options: IPolylineOptions
     ): typings.bingmaps.Microsoft.Maps.Polyline = (^.asInstanceOf[js.Dynamic].applyDynamic("shortestLineTo")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline]
-    @scala.inline
-    def shortestLineTo(shapeA: typings.bingmaps.Microsoft.Maps.Location, shapeB: IPrimitive): typings.bingmaps.Microsoft.Maps.Polyline = (^.asInstanceOf[js.Dynamic].applyDynamic("shortestLineTo")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline]
-    @scala.inline
-    def shortestLineTo(shapeA: typings.bingmaps.Microsoft.Maps.Location, shapeB: IPrimitive, options: IPolylineOptions): typings.bingmaps.Microsoft.Maps.Polyline = (^.asInstanceOf[js.Dynamic].applyDynamic("shortestLineTo")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline]
-    @scala.inline
-    def shortestLineTo(shapeA: typings.bingmaps.Microsoft.Maps.Location, shapeB: typings.bingmaps.Microsoft.Maps.Location): typings.bingmaps.Microsoft.Maps.Polyline = (^.asInstanceOf[js.Dynamic].applyDynamic("shortestLineTo")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline]
-    @scala.inline
-    def shortestLineTo(
+    inline def shortestLineTo(shapeA: typings.bingmaps.Microsoft.Maps.Location, shapeB: IPrimitive): typings.bingmaps.Microsoft.Maps.Polyline = (^.asInstanceOf[js.Dynamic].applyDynamic("shortestLineTo")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline]
+    inline def shortestLineTo(shapeA: typings.bingmaps.Microsoft.Maps.Location, shapeB: IPrimitive, options: IPolylineOptions): typings.bingmaps.Microsoft.Maps.Polyline = (^.asInstanceOf[js.Dynamic].applyDynamic("shortestLineTo")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline]
+    inline def shortestLineTo(shapeA: typings.bingmaps.Microsoft.Maps.Location, shapeB: typings.bingmaps.Microsoft.Maps.Location): typings.bingmaps.Microsoft.Maps.Polyline = (^.asInstanceOf[js.Dynamic].applyDynamic("shortestLineTo")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline]
+    inline def shortestLineTo(
       shapeA: typings.bingmaps.Microsoft.Maps.Location,
       shapeB: typings.bingmaps.Microsoft.Maps.Location,
       options: IPolylineOptions
     ): typings.bingmaps.Microsoft.Maps.Polyline = (^.asInstanceOf[js.Dynamic].applyDynamic("shortestLineTo")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polyline]
     
-    @scala.inline
-    def snapLocationsToShape(locs: js.Array[typings.bingmaps.Microsoft.Maps.Location], shape: js.Array[IPrimitive]): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("snapLocationsToShape")(locs.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location]]
-    @scala.inline
-    def snapLocationsToShape(
+    inline def snapLocationsToShape(locs: js.Array[typings.bingmaps.Microsoft.Maps.Location], shape: js.Array[IPrimitive]): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("snapLocationsToShape")(locs.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location]]
+    inline def snapLocationsToShape(
       locs: js.Array[typings.bingmaps.Microsoft.Maps.Location],
       shape: js.Array[IPrimitive],
       tolerance: Double
     ): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("snapLocationsToShape")(locs.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location]]
-    @scala.inline
-    def snapLocationsToShape(
+    inline def snapLocationsToShape(
       locs: js.Array[typings.bingmaps.Microsoft.Maps.Location],
       shape: js.Array[IPrimitive],
       tolerance: Double,
       toleranceUnits: DistanceUnits
     ): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("snapLocationsToShape")(locs.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any], toleranceUnits.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location]]
-    @scala.inline
-    def snapLocationsToShape(
+    inline def snapLocationsToShape(
       locs: js.Array[typings.bingmaps.Microsoft.Maps.Location],
       shape: js.Array[IPrimitive],
       tolerance: Unit,
       toleranceUnits: DistanceUnits
     ): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("snapLocationsToShape")(locs.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any], toleranceUnits.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location]]
-    @scala.inline
-    def snapLocationsToShape(locs: js.Array[typings.bingmaps.Microsoft.Maps.Location], shape: IPrimitive): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("snapLocationsToShape")(locs.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location]]
-    @scala.inline
-    def snapLocationsToShape(locs: js.Array[typings.bingmaps.Microsoft.Maps.Location], shape: IPrimitive, tolerance: Double): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("snapLocationsToShape")(locs.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location]]
-    @scala.inline
-    def snapLocationsToShape(
+    inline def snapLocationsToShape(locs: js.Array[typings.bingmaps.Microsoft.Maps.Location], shape: IPrimitive): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("snapLocationsToShape")(locs.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location]]
+    inline def snapLocationsToShape(locs: js.Array[typings.bingmaps.Microsoft.Maps.Location], shape: IPrimitive, tolerance: Double): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("snapLocationsToShape")(locs.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location]]
+    inline def snapLocationsToShape(
       locs: js.Array[typings.bingmaps.Microsoft.Maps.Location],
       shape: IPrimitive,
       tolerance: Double,
       toleranceUnits: DistanceUnits
     ): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("snapLocationsToShape")(locs.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any], toleranceUnits.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location]]
-    @scala.inline
-    def snapLocationsToShape(
+    inline def snapLocationsToShape(
       locs: js.Array[typings.bingmaps.Microsoft.Maps.Location],
       shape: IPrimitive,
       tolerance: Unit,
       toleranceUnits: DistanceUnits
     ): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("snapLocationsToShape")(locs.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any], toleranceUnits.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location]]
-    @scala.inline
-    def snapLocationsToShape(locs: typings.bingmaps.Microsoft.Maps.Location, shape: js.Array[IPrimitive]): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("snapLocationsToShape")(locs.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location]]
-    @scala.inline
-    def snapLocationsToShape(locs: typings.bingmaps.Microsoft.Maps.Location, shape: js.Array[IPrimitive], tolerance: Double): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("snapLocationsToShape")(locs.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location]]
-    @scala.inline
-    def snapLocationsToShape(
+    inline def snapLocationsToShape(locs: typings.bingmaps.Microsoft.Maps.Location, shape: js.Array[IPrimitive]): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("snapLocationsToShape")(locs.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location]]
+    inline def snapLocationsToShape(locs: typings.bingmaps.Microsoft.Maps.Location, shape: js.Array[IPrimitive], tolerance: Double): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("snapLocationsToShape")(locs.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location]]
+    inline def snapLocationsToShape(
       locs: typings.bingmaps.Microsoft.Maps.Location,
       shape: js.Array[IPrimitive],
       tolerance: Double,
       toleranceUnits: DistanceUnits
     ): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("snapLocationsToShape")(locs.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any], toleranceUnits.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location]]
-    @scala.inline
-    def snapLocationsToShape(
+    inline def snapLocationsToShape(
       locs: typings.bingmaps.Microsoft.Maps.Location,
       shape: js.Array[IPrimitive],
       tolerance: Unit,
       toleranceUnits: DistanceUnits
     ): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("snapLocationsToShape")(locs.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any], toleranceUnits.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location]]
-    @scala.inline
-    def snapLocationsToShape(locs: typings.bingmaps.Microsoft.Maps.Location, shape: IPrimitive): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("snapLocationsToShape")(locs.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location]]
-    @scala.inline
-    def snapLocationsToShape(locs: typings.bingmaps.Microsoft.Maps.Location, shape: IPrimitive, tolerance: Double): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("snapLocationsToShape")(locs.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location]]
-    @scala.inline
-    def snapLocationsToShape(
+    inline def snapLocationsToShape(locs: typings.bingmaps.Microsoft.Maps.Location, shape: IPrimitive): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("snapLocationsToShape")(locs.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location]]
+    inline def snapLocationsToShape(locs: typings.bingmaps.Microsoft.Maps.Location, shape: IPrimitive, tolerance: Double): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("snapLocationsToShape")(locs.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location]]
+    inline def snapLocationsToShape(
       locs: typings.bingmaps.Microsoft.Maps.Location,
       shape: IPrimitive,
       tolerance: Double,
       toleranceUnits: DistanceUnits
     ): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("snapLocationsToShape")(locs.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any], toleranceUnits.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location]]
-    @scala.inline
-    def snapLocationsToShape(
+    inline def snapLocationsToShape(
       locs: typings.bingmaps.Microsoft.Maps.Location,
       shape: IPrimitive,
       tolerance: Unit,
       toleranceUnits: DistanceUnits
     ): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("snapLocationsToShape")(locs.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any], toleranceUnits.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location]]
     
-    @scala.inline
-    def snapShapeToShape(shapeToSnap: js.Array[IPrimitive], shape: js.Array[IPrimitive]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("snapShapeToShape")(shapeToSnap.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def snapShapeToShape(shapeToSnap: js.Array[IPrimitive], shape: js.Array[IPrimitive], tolerance: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("snapShapeToShape")(shapeToSnap.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def snapShapeToShape(
+    inline def snapShapeToShape(shapeToSnap: js.Array[IPrimitive], shape: js.Array[IPrimitive]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("snapShapeToShape")(shapeToSnap.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def snapShapeToShape(shapeToSnap: js.Array[IPrimitive], shape: js.Array[IPrimitive], tolerance: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("snapShapeToShape")(shapeToSnap.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def snapShapeToShape(
       shapeToSnap: js.Array[IPrimitive],
       shape: js.Array[IPrimitive],
       tolerance: Double,
       toleranceUnits: DistanceUnits
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("snapShapeToShape")(shapeToSnap.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any], toleranceUnits.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def snapShapeToShape(
+    inline def snapShapeToShape(
       shapeToSnap: js.Array[IPrimitive],
       shape: js.Array[IPrimitive],
       tolerance: Unit,
       toleranceUnits: DistanceUnits
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("snapShapeToShape")(shapeToSnap.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any], toleranceUnits.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def snapShapeToShape(shapeToSnap: js.Array[IPrimitive], shape: IPrimitive): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("snapShapeToShape")(shapeToSnap.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def snapShapeToShape(shapeToSnap: js.Array[IPrimitive], shape: IPrimitive, tolerance: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("snapShapeToShape")(shapeToSnap.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def snapShapeToShape(
+    inline def snapShapeToShape(shapeToSnap: js.Array[IPrimitive], shape: IPrimitive): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("snapShapeToShape")(shapeToSnap.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def snapShapeToShape(shapeToSnap: js.Array[IPrimitive], shape: IPrimitive, tolerance: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("snapShapeToShape")(shapeToSnap.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def snapShapeToShape(
       shapeToSnap: js.Array[IPrimitive],
       shape: IPrimitive,
       tolerance: Double,
       toleranceUnits: DistanceUnits
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("snapShapeToShape")(shapeToSnap.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any], toleranceUnits.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def snapShapeToShape(
+    inline def snapShapeToShape(
       shapeToSnap: js.Array[IPrimitive],
       shape: IPrimitive,
       tolerance: Unit,
       toleranceUnits: DistanceUnits
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("snapShapeToShape")(shapeToSnap.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any], toleranceUnits.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def snapShapeToShape(shapeToSnap: IPrimitive, shape: js.Array[IPrimitive]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("snapShapeToShape")(shapeToSnap.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def snapShapeToShape(shapeToSnap: IPrimitive, shape: js.Array[IPrimitive], tolerance: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("snapShapeToShape")(shapeToSnap.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def snapShapeToShape(
+    inline def snapShapeToShape(shapeToSnap: IPrimitive, shape: js.Array[IPrimitive]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("snapShapeToShape")(shapeToSnap.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def snapShapeToShape(shapeToSnap: IPrimitive, shape: js.Array[IPrimitive], tolerance: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("snapShapeToShape")(shapeToSnap.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def snapShapeToShape(
       shapeToSnap: IPrimitive,
       shape: js.Array[IPrimitive],
       tolerance: Double,
       toleranceUnits: DistanceUnits
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("snapShapeToShape")(shapeToSnap.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any], toleranceUnits.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def snapShapeToShape(
+    inline def snapShapeToShape(
       shapeToSnap: IPrimitive,
       shape: js.Array[IPrimitive],
       tolerance: Unit,
       toleranceUnits: DistanceUnits
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("snapShapeToShape")(shapeToSnap.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any], toleranceUnits.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def snapShapeToShape(shapeToSnap: IPrimitive, shape: IPrimitive): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("snapShapeToShape")(shapeToSnap.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def snapShapeToShape(shapeToSnap: IPrimitive, shape: IPrimitive, tolerance: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("snapShapeToShape")(shapeToSnap.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def snapShapeToShape(shapeToSnap: IPrimitive, shape: IPrimitive, tolerance: Double, toleranceUnits: DistanceUnits): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("snapShapeToShape")(shapeToSnap.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any], toleranceUnits.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def snapShapeToShape(shapeToSnap: IPrimitive, shape: IPrimitive, tolerance: Unit, toleranceUnits: DistanceUnits): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("snapShapeToShape")(shapeToSnap.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any], toleranceUnits.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def snapShapeToShape(shapeToSnap: IPrimitive, shape: IPrimitive): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("snapShapeToShape")(shapeToSnap.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def snapShapeToShape(shapeToSnap: IPrimitive, shape: IPrimitive, tolerance: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("snapShapeToShape")(shapeToSnap.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def snapShapeToShape(shapeToSnap: IPrimitive, shape: IPrimitive, tolerance: Double, toleranceUnits: DistanceUnits): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("snapShapeToShape")(shapeToSnap.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any], toleranceUnits.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def snapShapeToShape(shapeToSnap: IPrimitive, shape: IPrimitive, tolerance: Unit, toleranceUnits: DistanceUnits): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("snapShapeToShape")(shapeToSnap.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any], toleranceUnits.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def symDifference(shapeA: js.Array[IPrimitive], shapeB: js.Array[IPrimitive]): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("symDifference")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def symDifference(shapeA: js.Array[IPrimitive], shapeB: IPrimitive): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("symDifference")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def symDifference(shapeA: IPrimitive, shapeB: js.Array[IPrimitive]): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("symDifference")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def symDifference(shapeA: IPrimitive, shapeB: IPrimitive): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("symDifference")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def symDifference(shapeA: js.Array[IPrimitive], shapeB: js.Array[IPrimitive]): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("symDifference")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def symDifference(shapeA: js.Array[IPrimitive], shapeB: IPrimitive): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("symDifference")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def symDifference(shapeA: IPrimitive, shapeB: js.Array[IPrimitive]): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("symDifference")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def symDifference(shapeA: IPrimitive, shapeB: IPrimitive): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("symDifference")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
     
-    @scala.inline
-    def union(shapeA: js.Array[IPrimitive], shapeB: js.Array[IPrimitive]): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def union(shapeA: js.Array[IPrimitive], shapeB: IPrimitive): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def union(shapeA: IPrimitive, shapeB: js.Array[IPrimitive]): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-    @scala.inline
-    def union(shapeA: IPrimitive, shapeB: IPrimitive): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def union(shapeA: js.Array[IPrimitive], shapeB: js.Array[IPrimitive]): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def union(shapeA: js.Array[IPrimitive], shapeB: IPrimitive): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def union(shapeA: IPrimitive, shapeB: js.Array[IPrimitive]): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def union(shapeA: IPrimitive, shapeB: IPrimitive): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
     
-    @scala.inline
-    def unionAggregate(shapes: js.Array[IPrimitive]): IPrimitive | js.Array[IPrimitive] = ^.asInstanceOf[js.Dynamic].applyDynamic("unionAggregate")(shapes.asInstanceOf[js.Any]).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+    inline def unionAggregate(shapes: js.Array[IPrimitive]): IPrimitive | js.Array[IPrimitive] = ^.asInstanceOf[js.Dynamic].applyDynamic("unionAggregate")(shapes.asInstanceOf[js.Any]).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
     
-    @scala.inline
-    def voronoiDiagram(shapes: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive]): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = ^.asInstanceOf[js.Dynamic].applyDynamic("voronoiDiagram")(shapes.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Polygon]]
-    @scala.inline
-    def voronoiDiagram(
+    inline def voronoiDiagram(shapes: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive]): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = ^.asInstanceOf[js.Dynamic].applyDynamic("voronoiDiagram")(shapes.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Polygon]]
+    inline def voronoiDiagram(
       shapes: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       clipRegion: Unit,
       options: IPolygonOptions
     ): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = (^.asInstanceOf[js.Dynamic].applyDynamic("voronoiDiagram")(shapes.asInstanceOf[js.Any], clipRegion.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Polygon]]
-    @scala.inline
-    def voronoiDiagram(
+    inline def voronoiDiagram(
       shapes: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       clipRegion: typings.bingmaps.Microsoft.Maps.LocationRect
     ): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = (^.asInstanceOf[js.Dynamic].applyDynamic("voronoiDiagram")(shapes.asInstanceOf[js.Any], clipRegion.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Polygon]]
-    @scala.inline
-    def voronoiDiagram(
+    inline def voronoiDiagram(
       shapes: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       clipRegion: typings.bingmaps.Microsoft.Maps.LocationRect,
       options: IPolygonOptions
     ): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = (^.asInstanceOf[js.Dynamic].applyDynamic("voronoiDiagram")(shapes.asInstanceOf[js.Any], clipRegion.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Polygon]]
-    @scala.inline
-    def voronoiDiagram(
+    inline def voronoiDiagram(
       shapes: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       clipRegion: typings.bingmaps.Microsoft.Maps.Polygon
     ): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = (^.asInstanceOf[js.Dynamic].applyDynamic("voronoiDiagram")(shapes.asInstanceOf[js.Any], clipRegion.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Polygon]]
-    @scala.inline
-    def voronoiDiagram(
+    inline def voronoiDiagram(
       shapes: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       clipRegion: typings.bingmaps.Microsoft.Maps.Polygon,
       options: IPolygonOptions
     ): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = (^.asInstanceOf[js.Dynamic].applyDynamic("voronoiDiagram")(shapes.asInstanceOf[js.Any], clipRegion.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Polygon]]
-    @scala.inline
-    def voronoiDiagram(shapes: IPrimitive): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = ^.asInstanceOf[js.Dynamic].applyDynamic("voronoiDiagram")(shapes.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Polygon]]
-    @scala.inline
-    def voronoiDiagram(shapes: IPrimitive, clipRegion: Unit, options: IPolygonOptions): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = (^.asInstanceOf[js.Dynamic].applyDynamic("voronoiDiagram")(shapes.asInstanceOf[js.Any], clipRegion.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Polygon]]
-    @scala.inline
-    def voronoiDiagram(shapes: IPrimitive, clipRegion: typings.bingmaps.Microsoft.Maps.LocationRect): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = (^.asInstanceOf[js.Dynamic].applyDynamic("voronoiDiagram")(shapes.asInstanceOf[js.Any], clipRegion.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Polygon]]
-    @scala.inline
-    def voronoiDiagram(
+    inline def voronoiDiagram(shapes: IPrimitive): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = ^.asInstanceOf[js.Dynamic].applyDynamic("voronoiDiagram")(shapes.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Polygon]]
+    inline def voronoiDiagram(shapes: IPrimitive, clipRegion: Unit, options: IPolygonOptions): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = (^.asInstanceOf[js.Dynamic].applyDynamic("voronoiDiagram")(shapes.asInstanceOf[js.Any], clipRegion.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Polygon]]
+    inline def voronoiDiagram(shapes: IPrimitive, clipRegion: typings.bingmaps.Microsoft.Maps.LocationRect): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = (^.asInstanceOf[js.Dynamic].applyDynamic("voronoiDiagram")(shapes.asInstanceOf[js.Any], clipRegion.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Polygon]]
+    inline def voronoiDiagram(
       shapes: IPrimitive,
       clipRegion: typings.bingmaps.Microsoft.Maps.LocationRect,
       options: IPolygonOptions
     ): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = (^.asInstanceOf[js.Dynamic].applyDynamic("voronoiDiagram")(shapes.asInstanceOf[js.Any], clipRegion.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Polygon]]
-    @scala.inline
-    def voronoiDiagram(shapes: IPrimitive, clipRegion: typings.bingmaps.Microsoft.Maps.Polygon): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = (^.asInstanceOf[js.Dynamic].applyDynamic("voronoiDiagram")(shapes.asInstanceOf[js.Any], clipRegion.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Polygon]]
-    @scala.inline
-    def voronoiDiagram(shapes: IPrimitive, clipRegion: typings.bingmaps.Microsoft.Maps.Polygon, options: IPolygonOptions): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = (^.asInstanceOf[js.Dynamic].applyDynamic("voronoiDiagram")(shapes.asInstanceOf[js.Any], clipRegion.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Polygon]]
-    @scala.inline
-    def voronoiDiagram(shapes: typings.bingmaps.Microsoft.Maps.Location): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = ^.asInstanceOf[js.Dynamic].applyDynamic("voronoiDiagram")(shapes.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Polygon]]
-    @scala.inline
-    def voronoiDiagram(shapes: typings.bingmaps.Microsoft.Maps.Location, clipRegion: Unit, options: IPolygonOptions): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = (^.asInstanceOf[js.Dynamic].applyDynamic("voronoiDiagram")(shapes.asInstanceOf[js.Any], clipRegion.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Polygon]]
-    @scala.inline
-    def voronoiDiagram(
+    inline def voronoiDiagram(shapes: IPrimitive, clipRegion: typings.bingmaps.Microsoft.Maps.Polygon): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = (^.asInstanceOf[js.Dynamic].applyDynamic("voronoiDiagram")(shapes.asInstanceOf[js.Any], clipRegion.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Polygon]]
+    inline def voronoiDiagram(shapes: IPrimitive, clipRegion: typings.bingmaps.Microsoft.Maps.Polygon, options: IPolygonOptions): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = (^.asInstanceOf[js.Dynamic].applyDynamic("voronoiDiagram")(shapes.asInstanceOf[js.Any], clipRegion.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Polygon]]
+    inline def voronoiDiagram(shapes: typings.bingmaps.Microsoft.Maps.Location): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = ^.asInstanceOf[js.Dynamic].applyDynamic("voronoiDiagram")(shapes.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Polygon]]
+    inline def voronoiDiagram(shapes: typings.bingmaps.Microsoft.Maps.Location, clipRegion: Unit, options: IPolygonOptions): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = (^.asInstanceOf[js.Dynamic].applyDynamic("voronoiDiagram")(shapes.asInstanceOf[js.Any], clipRegion.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Polygon]]
+    inline def voronoiDiagram(
       shapes: typings.bingmaps.Microsoft.Maps.Location,
       clipRegion: typings.bingmaps.Microsoft.Maps.LocationRect
     ): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = (^.asInstanceOf[js.Dynamic].applyDynamic("voronoiDiagram")(shapes.asInstanceOf[js.Any], clipRegion.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Polygon]]
-    @scala.inline
-    def voronoiDiagram(
+    inline def voronoiDiagram(
       shapes: typings.bingmaps.Microsoft.Maps.Location,
       clipRegion: typings.bingmaps.Microsoft.Maps.LocationRect,
       options: IPolygonOptions
     ): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = (^.asInstanceOf[js.Dynamic].applyDynamic("voronoiDiagram")(shapes.asInstanceOf[js.Any], clipRegion.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Polygon]]
-    @scala.inline
-    def voronoiDiagram(
+    inline def voronoiDiagram(
       shapes: typings.bingmaps.Microsoft.Maps.Location,
       clipRegion: typings.bingmaps.Microsoft.Maps.Polygon
     ): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = (^.asInstanceOf[js.Dynamic].applyDynamic("voronoiDiagram")(shapes.asInstanceOf[js.Any], clipRegion.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Polygon]]
-    @scala.inline
-    def voronoiDiagram(
+    inline def voronoiDiagram(
       shapes: typings.bingmaps.Microsoft.Maps.Location,
       clipRegion: typings.bingmaps.Microsoft.Maps.Polygon,
       options: IPolygonOptions
@@ -1022,172 +787,129 @@ object SpatialMath {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getTilesInBounds(bounds: typings.bingmaps.Microsoft.Maps.LocationRect, zoom: Double): js.Array[typings.bingmaps.Microsoft.Maps.PyramidTileId] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTilesInBounds")(bounds.asInstanceOf[js.Any], zoom.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.PyramidTileId]]
+    inline def getTilesInBounds(bounds: typings.bingmaps.Microsoft.Maps.LocationRect, zoom: Double): js.Array[typings.bingmaps.Microsoft.Maps.PyramidTileId] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTilesInBounds")(bounds.asInstanceOf[js.Any], zoom.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.PyramidTileId]]
     
-    @scala.inline
-    def globalPixelToLocation(point: typings.bingmaps.Microsoft.Maps.Point, zoom: Double): typings.bingmaps.Microsoft.Maps.Location = (^.asInstanceOf[js.Dynamic].applyDynamic("globalPixelToLocation")(point.asInstanceOf[js.Any], zoom.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location]
+    inline def globalPixelToLocation(point: typings.bingmaps.Microsoft.Maps.Point, zoom: Double): typings.bingmaps.Microsoft.Maps.Location = (^.asInstanceOf[js.Dynamic].applyDynamic("globalPixelToLocation")(point.asInstanceOf[js.Any], zoom.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location]
     
-    @scala.inline
-    def globalPixelToTile(pixel: typings.bingmaps.Microsoft.Maps.Point, zoom: Double): typings.bingmaps.Microsoft.Maps.PyramidTileId = (^.asInstanceOf[js.Dynamic].applyDynamic("globalPixelToTile")(pixel.asInstanceOf[js.Any], zoom.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.PyramidTileId]
+    inline def globalPixelToTile(pixel: typings.bingmaps.Microsoft.Maps.Point, zoom: Double): typings.bingmaps.Microsoft.Maps.PyramidTileId = (^.asInstanceOf[js.Dynamic].applyDynamic("globalPixelToTile")(pixel.asInstanceOf[js.Any], zoom.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.PyramidTileId]
     
-    @scala.inline
-    def groundResolution(latitude: Double, zoom: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("groundResolution")(latitude.asInstanceOf[js.Any], zoom.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def groundResolution(latitude: Double, zoom: Double, units: DistanceUnits): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("groundResolution")(latitude.asInstanceOf[js.Any], zoom.asInstanceOf[js.Any], units.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def groundResolution(latitude: Double, zoom: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("groundResolution")(latitude.asInstanceOf[js.Any], zoom.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def groundResolution(latitude: Double, zoom: Double, units: DistanceUnits): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("groundResolution")(latitude.asInstanceOf[js.Any], zoom.asInstanceOf[js.Any], units.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def locationToGlobalPixel(loc: typings.bingmaps.Microsoft.Maps.Location, zoom: Double): typings.bingmaps.Microsoft.Maps.Point = (^.asInstanceOf[js.Dynamic].applyDynamic("locationToGlobalPixel")(loc.asInstanceOf[js.Any], zoom.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Point]
+    inline def locationToGlobalPixel(loc: typings.bingmaps.Microsoft.Maps.Location, zoom: Double): typings.bingmaps.Microsoft.Maps.Point = (^.asInstanceOf[js.Dynamic].applyDynamic("locationToGlobalPixel")(loc.asInstanceOf[js.Any], zoom.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Point]
     
-    @scala.inline
-    def locationToTile(loc: typings.bingmaps.Microsoft.Maps.Location, zoom: Double): typings.bingmaps.Microsoft.Maps.PyramidTileId = (^.asInstanceOf[js.Dynamic].applyDynamic("locationToTile")(loc.asInstanceOf[js.Any], zoom.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.PyramidTileId]
+    inline def locationToTile(loc: typings.bingmaps.Microsoft.Maps.Location, zoom: Double): typings.bingmaps.Microsoft.Maps.PyramidTileId = (^.asInstanceOf[js.Dynamic].applyDynamic("locationToTile")(loc.asInstanceOf[js.Any], zoom.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.PyramidTileId]
     
-    @scala.inline
-    def mapSize(zoom: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("mapSize")(zoom.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def mapSize(zoom: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("mapSize")(zoom.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @scala.inline
-    def tileToGlobalPixel(tile: typings.bingmaps.Microsoft.Maps.PyramidTileId): typings.bingmaps.Microsoft.Maps.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("tileToGlobalPixel")(tile.asInstanceOf[js.Any]).asInstanceOf[typings.bingmaps.Microsoft.Maps.Point]
+    inline def tileToGlobalPixel(tile: typings.bingmaps.Microsoft.Maps.PyramidTileId): typings.bingmaps.Microsoft.Maps.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("tileToGlobalPixel")(tile.asInstanceOf[js.Any]).asInstanceOf[typings.bingmaps.Microsoft.Maps.Point]
     
-    @scala.inline
-    def tileToLocationRect(tile: typings.bingmaps.Microsoft.Maps.PyramidTileId): typings.bingmaps.Microsoft.Maps.LocationRect = ^.asInstanceOf[js.Dynamic].applyDynamic("tileToLocationRect")(tile.asInstanceOf[js.Any]).asInstanceOf[typings.bingmaps.Microsoft.Maps.LocationRect]
+    inline def tileToLocationRect(tile: typings.bingmaps.Microsoft.Maps.PyramidTileId): typings.bingmaps.Microsoft.Maps.LocationRect = ^.asInstanceOf[js.Dynamic].applyDynamic("tileToLocationRect")(tile.asInstanceOf[js.Any]).asInstanceOf[typings.bingmaps.Microsoft.Maps.LocationRect]
   }
   
-  @scala.inline
-  def convertArea(area: Double, fromUnits: AreaUnits, toUnits: AreaUnits): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("convertArea")(area.asInstanceOf[js.Any], fromUnits.asInstanceOf[js.Any], toUnits.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def convertArea(area: Double, fromUnits: AreaUnits, toUnits: AreaUnits): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("convertArea")(area.asInstanceOf[js.Any], fromUnits.asInstanceOf[js.Any], toUnits.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def convertDistance(distance: Double, fromUnits: DistanceUnits, toUnits: DistanceUnits): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("convertDistance")(distance.asInstanceOf[js.Any], fromUnits.asInstanceOf[js.Any], toUnits.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def convertDistance(distance: Double, fromUnits: DistanceUnits, toUnits: DistanceUnits): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("convertDistance")(distance.asInstanceOf[js.Any], fromUnits.asInstanceOf[js.Any], toUnits.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def getCardinalSpline(locations: js.Array[typings.bingmaps.Microsoft.Maps.Location]): js.Array[typings.bingmaps.Microsoft.Maps.Location] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCardinalSpline")(locations.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Location]]
-  @scala.inline
-  def getCardinalSpline(locations: js.Array[typings.bingmaps.Microsoft.Maps.Location], tension: Double): js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCardinalSpline")(locations.asInstanceOf[js.Any], tension.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Location]]
-  @scala.inline
-  def getCardinalSpline(locations: js.Array[typings.bingmaps.Microsoft.Maps.Location], tension: Double, nodeSize: Double): js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCardinalSpline")(locations.asInstanceOf[js.Any], tension.asInstanceOf[js.Any], nodeSize.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Location]]
-  @scala.inline
-  def getCardinalSpline(
+  inline def getCardinalSpline(locations: js.Array[typings.bingmaps.Microsoft.Maps.Location]): js.Array[typings.bingmaps.Microsoft.Maps.Location] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCardinalSpline")(locations.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Location]]
+  inline def getCardinalSpline(locations: js.Array[typings.bingmaps.Microsoft.Maps.Location], tension: Double): js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCardinalSpline")(locations.asInstanceOf[js.Any], tension.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Location]]
+  inline def getCardinalSpline(locations: js.Array[typings.bingmaps.Microsoft.Maps.Location], tension: Double, nodeSize: Double): js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCardinalSpline")(locations.asInstanceOf[js.Any], tension.asInstanceOf[js.Any], nodeSize.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Location]]
+  inline def getCardinalSpline(
     locations: js.Array[typings.bingmaps.Microsoft.Maps.Location],
     tension: Double,
     nodeSize: Double,
     close: Boolean
   ): js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCardinalSpline")(locations.asInstanceOf[js.Any], tension.asInstanceOf[js.Any], nodeSize.asInstanceOf[js.Any], close.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Location]]
-  @scala.inline
-  def getCardinalSpline(
+  inline def getCardinalSpline(
     locations: js.Array[typings.bingmaps.Microsoft.Maps.Location],
     tension: Double,
     nodeSize: Unit,
     close: Boolean
   ): js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCardinalSpline")(locations.asInstanceOf[js.Any], tension.asInstanceOf[js.Any], nodeSize.asInstanceOf[js.Any], close.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Location]]
-  @scala.inline
-  def getCardinalSpline(locations: js.Array[typings.bingmaps.Microsoft.Maps.Location], tension: Unit, nodeSize: Double): js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCardinalSpline")(locations.asInstanceOf[js.Any], tension.asInstanceOf[js.Any], nodeSize.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Location]]
-  @scala.inline
-  def getCardinalSpline(
+  inline def getCardinalSpline(locations: js.Array[typings.bingmaps.Microsoft.Maps.Location], tension: Unit, nodeSize: Double): js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCardinalSpline")(locations.asInstanceOf[js.Any], tension.asInstanceOf[js.Any], nodeSize.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Location]]
+  inline def getCardinalSpline(
     locations: js.Array[typings.bingmaps.Microsoft.Maps.Location],
     tension: Unit,
     nodeSize: Double,
     close: Boolean
   ): js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCardinalSpline")(locations.asInstanceOf[js.Any], tension.asInstanceOf[js.Any], nodeSize.asInstanceOf[js.Any], close.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Location]]
-  @scala.inline
-  def getCardinalSpline(
+  inline def getCardinalSpline(
     locations: js.Array[typings.bingmaps.Microsoft.Maps.Location],
     tension: Unit,
     nodeSize: Unit,
     close: Boolean
   ): js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCardinalSpline")(locations.asInstanceOf[js.Any], tension.asInstanceOf[js.Any], nodeSize.asInstanceOf[js.Any], close.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Location]]
   
-  @scala.inline
-  def getDestination(origin: typings.bingmaps.Microsoft.Maps.Location, bearing: Double, distance: Double): typings.bingmaps.Microsoft.Maps.Location = (^.asInstanceOf[js.Dynamic].applyDynamic("getDestination")(origin.asInstanceOf[js.Any], bearing.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location]
-  @scala.inline
-  def getDestination(
+  inline def getDestination(origin: typings.bingmaps.Microsoft.Maps.Location, bearing: Double, distance: Double): typings.bingmaps.Microsoft.Maps.Location = (^.asInstanceOf[js.Dynamic].applyDynamic("getDestination")(origin.asInstanceOf[js.Any], bearing.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location]
+  inline def getDestination(
     origin: typings.bingmaps.Microsoft.Maps.Location,
     bearing: Double,
     distance: Double,
     units: DistanceUnits
   ): typings.bingmaps.Microsoft.Maps.Location = (^.asInstanceOf[js.Dynamic].applyDynamic("getDestination")(origin.asInstanceOf[js.Any], bearing.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], units.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location]
   
-  @scala.inline
-  def getDistanceTo(
+  inline def getDistanceTo(
     origin: typings.bingmaps.Microsoft.Maps.Location,
     destination: typings.bingmaps.Microsoft.Maps.Location
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDistanceTo")(origin.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def getDistanceTo(
+  inline def getDistanceTo(
     origin: typings.bingmaps.Microsoft.Maps.Location,
     destination: typings.bingmaps.Microsoft.Maps.Location,
     units: Unit,
     highAccuracy: Boolean
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDistanceTo")(origin.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], units.asInstanceOf[js.Any], highAccuracy.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def getDistanceTo(
+  inline def getDistanceTo(
     origin: typings.bingmaps.Microsoft.Maps.Location,
     destination: typings.bingmaps.Microsoft.Maps.Location,
     units: DistanceUnits
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDistanceTo")(origin.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], units.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def getDistanceTo(
+  inline def getDistanceTo(
     origin: typings.bingmaps.Microsoft.Maps.Location,
     destination: typings.bingmaps.Microsoft.Maps.Location,
     units: DistanceUnits,
     highAccuracy: Boolean
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDistanceTo")(origin.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], units.asInstanceOf[js.Any], highAccuracy.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def getEarthRadius(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getEarthRadius")().asInstanceOf[Double]
-  @scala.inline
-  def getEarthRadius(units: DistanceUnits): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getEarthRadius")(units.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getEarthRadius(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getEarthRadius")().asInstanceOf[Double]
+  inline def getEarthRadius(units: DistanceUnits): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getEarthRadius")(units.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def getGeodesicPath(path: js.Array[typings.bingmaps.Microsoft.Maps.Location]): js.Array[typings.bingmaps.Microsoft.Maps.Location] = ^.asInstanceOf[js.Dynamic].applyDynamic("getGeodesicPath")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Location]]
-  @scala.inline
-  def getGeodesicPath(path: js.Array[typings.bingmaps.Microsoft.Maps.Location], nodeSize: Double): js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("getGeodesicPath")(path.asInstanceOf[js.Any], nodeSize.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Location]]
+  inline def getGeodesicPath(path: js.Array[typings.bingmaps.Microsoft.Maps.Location]): js.Array[typings.bingmaps.Microsoft.Maps.Location] = ^.asInstanceOf[js.Dynamic].applyDynamic("getGeodesicPath")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Location]]
+  inline def getGeodesicPath(path: js.Array[typings.bingmaps.Microsoft.Maps.Location], nodeSize: Double): js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("getGeodesicPath")(path.asInstanceOf[js.Any], nodeSize.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Location]]
   
-  @scala.inline
-  def getHeading(
+  inline def getHeading(
     origin: typings.bingmaps.Microsoft.Maps.Location,
     destination: typings.bingmaps.Microsoft.Maps.Location
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getHeading")(origin.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def getLengthOfPath(path: js.Array[typings.bingmaps.Microsoft.Maps.Location]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getLengthOfPath")(path.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def getLengthOfPath(path: js.Array[typings.bingmaps.Microsoft.Maps.Location], units: Unit, highAccuracy: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getLengthOfPath")(path.asInstanceOf[js.Any], units.asInstanceOf[js.Any], highAccuracy.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def getLengthOfPath(path: js.Array[typings.bingmaps.Microsoft.Maps.Location], units: DistanceUnits): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getLengthOfPath")(path.asInstanceOf[js.Any], units.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def getLengthOfPath(
+  inline def getLengthOfPath(path: js.Array[typings.bingmaps.Microsoft.Maps.Location]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getLengthOfPath")(path.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getLengthOfPath(path: js.Array[typings.bingmaps.Microsoft.Maps.Location], units: Unit, highAccuracy: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getLengthOfPath")(path.asInstanceOf[js.Any], units.asInstanceOf[js.Any], highAccuracy.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getLengthOfPath(path: js.Array[typings.bingmaps.Microsoft.Maps.Location], units: DistanceUnits): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getLengthOfPath")(path.asInstanceOf[js.Any], units.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getLengthOfPath(
     path: js.Array[typings.bingmaps.Microsoft.Maps.Location],
     units: DistanceUnits,
     highAccuracy: Boolean
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getLengthOfPath")(path.asInstanceOf[js.Any], units.asInstanceOf[js.Any], highAccuracy.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def getLocationAlongPath(path: js.Array[typings.bingmaps.Microsoft.Maps.Location], distance: Double): typings.bingmaps.Microsoft.Maps.Location = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocationAlongPath")(path.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location]
-  @scala.inline
-  def getLocationAlongPath(path: js.Array[typings.bingmaps.Microsoft.Maps.Location], distance: Double, units: DistanceUnits): typings.bingmaps.Microsoft.Maps.Location = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocationAlongPath")(path.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], units.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location]
-  @scala.inline
-  def getLocationAlongPath(path: typings.bingmaps.Microsoft.Maps.Polyline, distance: Double): typings.bingmaps.Microsoft.Maps.Location = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocationAlongPath")(path.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location]
-  @scala.inline
-  def getLocationAlongPath(path: typings.bingmaps.Microsoft.Maps.Polyline, distance: Double, units: DistanceUnits): typings.bingmaps.Microsoft.Maps.Location = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocationAlongPath")(path.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], units.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location]
+  inline def getLocationAlongPath(path: js.Array[typings.bingmaps.Microsoft.Maps.Location], distance: Double): typings.bingmaps.Microsoft.Maps.Location = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocationAlongPath")(path.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location]
+  inline def getLocationAlongPath(path: js.Array[typings.bingmaps.Microsoft.Maps.Location], distance: Double, units: DistanceUnits): typings.bingmaps.Microsoft.Maps.Location = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocationAlongPath")(path.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], units.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location]
+  inline def getLocationAlongPath(path: typings.bingmaps.Microsoft.Maps.Polyline, distance: Double): typings.bingmaps.Microsoft.Maps.Location = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocationAlongPath")(path.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location]
+  inline def getLocationAlongPath(path: typings.bingmaps.Microsoft.Maps.Polyline, distance: Double, units: DistanceUnits): typings.bingmaps.Microsoft.Maps.Location = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocationAlongPath")(path.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], units.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location]
   
-  @scala.inline
-  def getRegularPolygon(origin: typings.bingmaps.Microsoft.Maps.Location, radius: Double, numberOfPoints: Double): js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRegularPolygon")(origin.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], numberOfPoints.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Location]]
-  @scala.inline
-  def getRegularPolygon(
+  inline def getRegularPolygon(origin: typings.bingmaps.Microsoft.Maps.Location, radius: Double, numberOfPoints: Double): js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRegularPolygon")(origin.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], numberOfPoints.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Location]]
+  inline def getRegularPolygon(
     origin: typings.bingmaps.Microsoft.Maps.Location,
     radius: Double,
     numberOfPoints: Double,
     units: Unit,
     offset: Double
   ): js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRegularPolygon")(origin.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], numberOfPoints.asInstanceOf[js.Any], units.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Location]]
-  @scala.inline
-  def getRegularPolygon(
+  inline def getRegularPolygon(
     origin: typings.bingmaps.Microsoft.Maps.Location,
     radius: Double,
     numberOfPoints: Double,
     units: DistanceUnits
   ): js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRegularPolygon")(origin.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], numberOfPoints.asInstanceOf[js.Any], units.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Location]]
-  @scala.inline
-  def getRegularPolygon(
+  inline def getRegularPolygon(
     origin: typings.bingmaps.Microsoft.Maps.Location,
     radius: Double,
     numberOfPoints: Double,
@@ -1195,24 +917,19 @@ object SpatialMath {
     offset: Double
   ): js.Array[typings.bingmaps.Microsoft.Maps.Location] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRegularPolygon")(origin.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], numberOfPoints.asInstanceOf[js.Any], units.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.bingmaps.Microsoft.Maps.Location]]
   
-  @scala.inline
-  def interpolate(
+  inline def interpolate(
     origin: typings.bingmaps.Microsoft.Maps.Location,
     destination: typings.bingmaps.Microsoft.Maps.Location
   ): typings.bingmaps.Microsoft.Maps.Location = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(origin.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location]
-  @scala.inline
-  def interpolate(
+  inline def interpolate(
     origin: typings.bingmaps.Microsoft.Maps.Location,
     destination: typings.bingmaps.Microsoft.Maps.Location,
     fraction: Double
   ): typings.bingmaps.Microsoft.Maps.Location = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(origin.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], fraction.asInstanceOf[js.Any])).asInstanceOf[typings.bingmaps.Microsoft.Maps.Location]
   
-  @scala.inline
-  def locationRectToPolygon(bounds: typings.bingmaps.Microsoft.Maps.LocationRect): typings.bingmaps.Microsoft.Maps.Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("locationRectToPolygon")(bounds.asInstanceOf[js.Any]).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polygon]
+  inline def locationRectToPolygon(bounds: typings.bingmaps.Microsoft.Maps.LocationRect): typings.bingmaps.Microsoft.Maps.Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("locationRectToPolygon")(bounds.asInstanceOf[js.Any]).asInstanceOf[typings.bingmaps.Microsoft.Maps.Polygon]
   
-  @scala.inline
-  def toDegMinSec(loc: typings.bingmaps.Microsoft.Maps.Location): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toDegMinSec")(loc.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toDegMinSec(loc: typings.bingmaps.Microsoft.Maps.Location): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toDegMinSec")(loc.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def tryParseDegMinSec(input: String): Double | typings.bingmaps.Microsoft.Maps.Location = ^.asInstanceOf[js.Dynamic].applyDynamic("tryParseDegMinSec")(input.asInstanceOf[js.Any]).asInstanceOf[Double | typings.bingmaps.Microsoft.Maps.Location]
+  inline def tryParseDegMinSec(input: String): Double | typings.bingmaps.Microsoft.Maps.Location = ^.asInstanceOf[js.Dynamic].applyDynamic("tryParseDegMinSec")(input.asInstanceOf[js.Any]).asInstanceOf[Double | typings.bingmaps.Microsoft.Maps.Location]
 }

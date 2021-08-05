@@ -21,25 +21,19 @@ trait SchemaGooglePrivacyDlpV2InspectDataSourceDetails extends StObject {
 }
 object SchemaGooglePrivacyDlpV2InspectDataSourceDetails {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2InspectDataSourceDetails = {
+  inline def apply(): SchemaGooglePrivacyDlpV2InspectDataSourceDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2InspectDataSourceDetails]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2InspectDataSourceDetailsMutableBuilder[Self <: SchemaGooglePrivacyDlpV2InspectDataSourceDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2InspectDataSourceDetails](x: Self) {
     
-    @scala.inline
-    def setRequestedOptions(value: SchemaGooglePrivacyDlpV2RequestedOptions): Self = StObject.set(x, "requestedOptions", value.asInstanceOf[js.Any])
+    inline def setRequestedOptions(value: SchemaGooglePrivacyDlpV2RequestedOptions): Self = StObject.set(x, "requestedOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestedOptionsUndefined: Self = StObject.set(x, "requestedOptions", js.undefined)
+    inline def setRequestedOptionsUndefined: Self = StObject.set(x, "requestedOptions", js.undefined)
     
-    @scala.inline
-    def setResult(value: SchemaGooglePrivacyDlpV2Result): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: SchemaGooglePrivacyDlpV2Result): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
   }
 }

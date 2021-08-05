@@ -13,6 +13,5 @@ object scheduleIterableMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def scheduleIterable[T](input: Iterable[T], scheduler: SchedulerLike): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleIterable")(input.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
+  inline def scheduleIterable[T](input: Iterable[T], scheduler: SchedulerLike): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleIterable")(input.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
 }

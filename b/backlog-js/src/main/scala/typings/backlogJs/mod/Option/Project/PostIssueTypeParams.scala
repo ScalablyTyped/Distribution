@@ -12,19 +12,15 @@ trait PostIssueTypeParams extends StObject {
 }
 object PostIssueTypeParams {
   
-  @scala.inline
-  def apply(color: IssueTypeColor, name: String): PostIssueTypeParams = {
+  inline def apply(color: IssueTypeColor, name: String): PostIssueTypeParams = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostIssueTypeParams]
   }
   
-  @scala.inline
-  implicit class PostIssueTypeParamsMutableBuilder[Self <: PostIssueTypeParams] (val x: Self) extends AnyVal {
+  extension [Self <: PostIssueTypeParams](x: Self) {
     
-    @scala.inline
-    def setColor(value: IssueTypeColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: IssueTypeColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

@@ -18,28 +18,21 @@ trait Origination extends StObject {
 }
 object Origination {
   
-  @scala.inline
-  def apply(): Origination = {
+  inline def apply(): Origination = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Origination]
   }
   
-  @scala.inline
-  implicit class OriginationMutableBuilder[Self <: Origination] (val x: Self) extends AnyVal {
+  extension [Self <: Origination](x: Self) {
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "Disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "Disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "Disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "Disabled", js.undefined)
     
-    @scala.inline
-    def setRoutes(value: OriginationRouteList): Self = StObject.set(x, "Routes", value.asInstanceOf[js.Any])
+    inline def setRoutes(value: OriginationRouteList): Self = StObject.set(x, "Routes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutesUndefined: Self = StObject.set(x, "Routes", js.undefined)
+    inline def setRoutesUndefined: Self = StObject.set(x, "Routes", js.undefined)
     
-    @scala.inline
-    def setRoutesVarargs(value: OriginationRoute*): Self = StObject.set(x, "Routes", js.Array(value :_*))
+    inline def setRoutesVarargs(value: OriginationRoute*): Self = StObject.set(x, "Routes", js.Array(value :_*))
   }
 }

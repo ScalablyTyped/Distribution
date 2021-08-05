@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.OldHTMLDocument")
 @js.native
-class OldHTMLDocument protected ()
+/* private */ class OldHTMLDocument ()
   extends StObject
      with typings.activexMshtml.MSHTML.OldHTMLDocument

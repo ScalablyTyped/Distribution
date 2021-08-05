@@ -15,8 +15,7 @@ trait WebUICachedFileUpdaterActivatedEventArgs
      with IActivatedEventArgsDeferral
 object WebUICachedFileUpdaterActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activatedOperation: ActivatedOperation,
     cachedFileUpdaterUI: CachedFileUpdaterUI,
     kind: ActivationKind,

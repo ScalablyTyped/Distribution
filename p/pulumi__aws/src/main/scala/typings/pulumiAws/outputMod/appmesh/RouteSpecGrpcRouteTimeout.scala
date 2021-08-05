@@ -18,25 +18,19 @@ trait RouteSpecGrpcRouteTimeout extends StObject {
 }
 object RouteSpecGrpcRouteTimeout {
   
-  @scala.inline
-  def apply(): RouteSpecGrpcRouteTimeout = {
+  inline def apply(): RouteSpecGrpcRouteTimeout = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RouteSpecGrpcRouteTimeout]
   }
   
-  @scala.inline
-  implicit class RouteSpecGrpcRouteTimeoutMutableBuilder[Self <: RouteSpecGrpcRouteTimeout] (val x: Self) extends AnyVal {
+  extension [Self <: RouteSpecGrpcRouteTimeout](x: Self) {
     
-    @scala.inline
-    def setIdle(value: RouteSpecGrpcRouteTimeoutIdle): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
+    inline def setIdle(value: RouteSpecGrpcRouteTimeoutIdle): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdleUndefined: Self = StObject.set(x, "idle", js.undefined)
+    inline def setIdleUndefined: Self = StObject.set(x, "idle", js.undefined)
     
-    @scala.inline
-    def setPerRequest(value: RouteSpecGrpcRouteTimeoutPerRequest): Self = StObject.set(x, "perRequest", value.asInstanceOf[js.Any])
+    inline def setPerRequest(value: RouteSpecGrpcRouteTimeoutPerRequest): Self = StObject.set(x, "perRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerRequestUndefined: Self = StObject.set(x, "perRequest", js.undefined)
+    inline def setPerRequestUndefined: Self = StObject.set(x, "perRequest", js.undefined)
   }
 }

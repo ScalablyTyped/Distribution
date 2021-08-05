@@ -18,22 +18,17 @@ trait DescribeCostCategoryDefinitionRequest extends StObject {
 }
 object DescribeCostCategoryDefinitionRequest {
   
-  @scala.inline
-  def apply(CostCategoryArn: Arn): DescribeCostCategoryDefinitionRequest = {
+  inline def apply(CostCategoryArn: Arn): DescribeCostCategoryDefinitionRequest = {
     val __obj = js.Dynamic.literal(CostCategoryArn = CostCategoryArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeCostCategoryDefinitionRequest]
   }
   
-  @scala.inline
-  implicit class DescribeCostCategoryDefinitionRequestMutableBuilder[Self <: DescribeCostCategoryDefinitionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeCostCategoryDefinitionRequest](x: Self) {
     
-    @scala.inline
-    def setCostCategoryArn(value: Arn): Self = StObject.set(x, "CostCategoryArn", value.asInstanceOf[js.Any])
+    inline def setCostCategoryArn(value: Arn): Self = StObject.set(x, "CostCategoryArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffectiveOn(value: ZonedDateTime): Self = StObject.set(x, "EffectiveOn", value.asInstanceOf[js.Any])
+    inline def setEffectiveOn(value: ZonedDateTime): Self = StObject.set(x, "EffectiveOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffectiveOnUndefined: Self = StObject.set(x, "EffectiveOn", js.undefined)
+    inline def setEffectiveOnUndefined: Self = StObject.set(x, "EffectiveOn", js.undefined)
   }
 }

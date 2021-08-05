@@ -388,59 +388,42 @@ object mod extends Shortcut {
   }
   object Event {
     
-    @scala.inline
-    def apply(data: js.Any, namespace: String): Event = {
+    inline def apply(data: js.Any, namespace: String): Event = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any])
       __obj.asInstanceOf[Event]
     }
     
-    @scala.inline
-    implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
+    extension [Self <: Event](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelatedTarget(value: Node): Self = StObject.set(x, "relatedTarget", value.asInstanceOf[js.Any])
+      inline def setRelatedTarget(value: Node): Self = StObject.set(x, "relatedTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelatedTargetNull: Self = StObject.set(x, "relatedTarget", null)
+      inline def setRelatedTargetNull: Self = StObject.set(x, "relatedTarget", null)
       
-      @scala.inline
-      def setRelatedTargetUndefined: Self = StObject.set(x, "relatedTarget", js.undefined)
+      inline def setRelatedTargetUndefined: Self = StObject.set(x, "relatedTarget", js.undefined)
       
-      @scala.inline
-      def set___cd(value: Boolean): Self = StObject.set(x, "___cd", value.asInstanceOf[js.Any])
+      inline def set___cd(value: Boolean): Self = StObject.set(x, "___cd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set___cdUndefined: Self = StObject.set(x, "___cd", js.undefined)
+      inline def set___cdUndefined: Self = StObject.set(x, "___cd", js.undefined)
       
-      @scala.inline
-      def set___iblur(value: Boolean): Self = StObject.set(x, "___iblur", value.asInstanceOf[js.Any])
+      inline def set___iblur(value: Boolean): Self = StObject.set(x, "___iblur", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set___iblurUndefined: Self = StObject.set(x, "___iblur", js.undefined)
+      inline def set___iblurUndefined: Self = StObject.set(x, "___iblur", js.undefined)
       
-      @scala.inline
-      def set___ifocus(value: Boolean): Self = StObject.set(x, "___ifocus", value.asInstanceOf[js.Any])
+      inline def set___ifocus(value: Boolean): Self = StObject.set(x, "___ifocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set___ifocusUndefined: Self = StObject.set(x, "___ifocus", js.undefined)
+      inline def set___ifocusUndefined: Self = StObject.set(x, "___ifocus", js.undefined)
       
-      @scala.inline
-      def set___ot(value: String): Self = StObject.set(x, "___ot", value.asInstanceOf[js.Any])
+      inline def set___ot(value: String): Self = StObject.set(x, "___ot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set___otUndefined: Self = StObject.set(x, "___ot", js.undefined)
+      inline def set___otUndefined: Self = StObject.set(x, "___ot", js.undefined)
       
-      @scala.inline
-      def set___td(value: Boolean): Self = StObject.set(x, "___td", value.asInstanceOf[js.Any])
+      inline def set___td(value: Boolean): Self = StObject.set(x, "___td", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set___tdUndefined: Self = StObject.set(x, "___td", js.undefined)
+      inline def set___tdUndefined: Self = StObject.set(x, "___td", js.undefined)
     }
   }
   

@@ -20,25 +20,19 @@ trait EnterpriseAdminCreateSelfHostedRunnerGroupForEnterpriseRequestOptions exte
 }
 object EnterpriseAdminCreateSelfHostedRunnerGroupForEnterpriseRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): EnterpriseAdminCreateSelfHostedRunnerGroupForEnterpriseRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): EnterpriseAdminCreateSelfHostedRunnerGroupForEnterpriseRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "POST", request = request.asInstanceOf[js.Any], url = "/enterprises/:enterprise/actions/runner-groups")
     __obj.asInstanceOf[EnterpriseAdminCreateSelfHostedRunnerGroupForEnterpriseRequestOptions]
   }
   
-  @scala.inline
-  implicit class EnterpriseAdminCreateSelfHostedRunnerGroupForEnterpriseRequestOptionsMutableBuilder[Self <: EnterpriseAdminCreateSelfHostedRunnerGroupForEnterpriseRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EnterpriseAdminCreateSelfHostedRunnerGroupForEnterpriseRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: `SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groups`): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: `SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groups`): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -22,20 +22,16 @@ object redoMod extends Shortcut {
   }
   object RedoProps {
     
-    @scala.inline
-    def apply(): RedoProps = {
+    inline def apply(): RedoProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RedoProps]
     }
     
-    @scala.inline
-    implicit class RedoPropsMutableBuilder[Self <: RedoProps] (val x: Self) extends AnyVal {
+    extension [Self <: RedoProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

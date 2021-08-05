@@ -43,8 +43,7 @@ trait IQuestion
 }
 object IQuestion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clearErrors: () => js.Any,
     clearIncorrectValues: () => js.Any,
     clearUnusedValues: () => js.Any,
@@ -99,55 +98,38 @@ object IQuestion {
     __obj.asInstanceOf[IQuestion]
   }
   
-  @scala.inline
-  implicit class IQuestionMutableBuilder[Self <: IQuestion] (val x: Self) extends AnyVal {
+  extension [Self <: IQuestion](x: Self) {
     
-    @scala.inline
-    def setClearUnusedValues(value: () => js.Any): Self = StObject.set(x, "clearUnusedValues", js.Any.fromFunction0(value))
+    inline def setClearUnusedValues(value: () => js.Any): Self = StObject.set(x, "clearUnusedValues", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClearValue(value: () => js.Any): Self = StObject.set(x, "clearValue", js.Any.fromFunction0(value))
+    inline def setClearValue(value: () => js.Any): Self = StObject.set(x, "clearValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClearValueIfInvisible(value: () => js.Any): Self = StObject.set(x, "clearValueIfInvisible", js.Any.fromFunction0(value))
+    inline def setClearValueIfInvisible(value: () => js.Any): Self = StObject.set(x, "clearValueIfInvisible", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDisplayValue(value: (Boolean, js.Any) => js.Any): Self = StObject.set(x, "getDisplayValue", js.Any.fromFunction2(value))
+    inline def setGetDisplayValue(value: (Boolean, js.Any) => js.Any): Self = StObject.set(x, "getDisplayValue", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetQuestionFromArray(value: (String, Double) => IQuestion): Self = StObject.set(x, "getQuestionFromArray", js.Any.fromFunction2(value))
+    inline def setGetQuestionFromArray(value: (String, Double) => IQuestion): Self = StObject.set(x, "getQuestionFromArray", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetValueName(value: () => String): Self = StObject.set(x, "getValueName", js.Any.fromFunction0(value))
+    inline def setGetValueName(value: () => String): Self = StObject.set(x, "getValueName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasTitle(value: Boolean): Self = StObject.set(x, "hasTitle", value.asInstanceOf[js.Any])
+    inline def setHasTitle(value: Boolean): Self = StObject.set(x, "hasTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAnswerCorrect(value: () => Boolean): Self = StObject.set(x, "isAnswerCorrect", js.Any.fromFunction0(value))
+    inline def setIsAnswerCorrect(value: () => Boolean): Self = StObject.set(x, "isAnswerCorrect", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
+    inline def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnSurveyValueChanged(value: js.Any => js.Any): Self = StObject.set(x, "onSurveyValueChanged", js.Any.fromFunction1(value))
+    inline def setOnSurveyValueChanged(value: js.Any => js.Any): Self = StObject.set(x, "onSurveyValueChanged", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSupportGoNextPageAutomatic(value: () => Boolean): Self = StObject.set(x, "supportGoNextPageAutomatic", js.Any.fromFunction0(value))
+    inline def setSupportGoNextPageAutomatic(value: () => Boolean): Self = StObject.set(x, "supportGoNextPageAutomatic", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSurvey(value: js.Any): Self = StObject.set(x, "survey", value.asInstanceOf[js.Any])
+    inline def setSurvey(value: js.Any): Self = StObject.set(x, "survey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateCommentFromSurvey(value: js.Any => js.Any): Self = StObject.set(x, "updateCommentFromSurvey", js.Any.fromFunction1(value))
+    inline def setUpdateCommentFromSurvey(value: js.Any => js.Any): Self = StObject.set(x, "updateCommentFromSurvey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdateValueFromSurvey(value: js.Any => js.Any): Self = StObject.set(x, "updateValueFromSurvey", js.Any.fromFunction1(value))
+    inline def setUpdateValueFromSurvey(value: js.Any => js.Any): Self = StObject.set(x, "updateValueFromSurvey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdateValueWithDefaults(value: () => js.Any): Self = StObject.set(x, "updateValueWithDefaults", js.Any.fromFunction0(value))
+    inline def setUpdateValueWithDefaults(value: () => js.Any): Self = StObject.set(x, "updateValueWithDefaults", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

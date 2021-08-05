@@ -36,28 +36,21 @@ trait TopologySpreadConstraint extends StObject {
 }
 object TopologySpreadConstraint {
   
-  @scala.inline
-  def apply(maxSkew: Input[Double], topologyKey: Input[String], whenUnsatisfiable: Input[String]): TopologySpreadConstraint = {
+  inline def apply(maxSkew: Input[Double], topologyKey: Input[String], whenUnsatisfiable: Input[String]): TopologySpreadConstraint = {
     val __obj = js.Dynamic.literal(maxSkew = maxSkew.asInstanceOf[js.Any], topologyKey = topologyKey.asInstanceOf[js.Any], whenUnsatisfiable = whenUnsatisfiable.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopologySpreadConstraint]
   }
   
-  @scala.inline
-  implicit class TopologySpreadConstraintMutableBuilder[Self <: TopologySpreadConstraint] (val x: Self) extends AnyVal {
+  extension [Self <: TopologySpreadConstraint](x: Self) {
     
-    @scala.inline
-    def setLabelSelector(value: Input[LabelSelector]): Self = StObject.set(x, "labelSelector", value.asInstanceOf[js.Any])
+    inline def setLabelSelector(value: Input[LabelSelector]): Self = StObject.set(x, "labelSelector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelSelectorUndefined: Self = StObject.set(x, "labelSelector", js.undefined)
+    inline def setLabelSelectorUndefined: Self = StObject.set(x, "labelSelector", js.undefined)
     
-    @scala.inline
-    def setMaxSkew(value: Input[Double]): Self = StObject.set(x, "maxSkew", value.asInstanceOf[js.Any])
+    inline def setMaxSkew(value: Input[Double]): Self = StObject.set(x, "maxSkew", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopologyKey(value: Input[String]): Self = StObject.set(x, "topologyKey", value.asInstanceOf[js.Any])
+    inline def setTopologyKey(value: Input[String]): Self = StObject.set(x, "topologyKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhenUnsatisfiable(value: Input[String]): Self = StObject.set(x, "whenUnsatisfiable", value.asInstanceOf[js.Any])
+    inline def setWhenUnsatisfiable(value: Input[String]): Self = StObject.set(x, "whenUnsatisfiable", value.asInstanceOf[js.Any])
   }
 }

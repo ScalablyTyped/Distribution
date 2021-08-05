@@ -29,8 +29,7 @@ trait XDataSink
 }
 object XDataSink {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -40,10 +39,8 @@ object XDataSink {
     __obj.asInstanceOf[XDataSink]
   }
   
-  @scala.inline
-  implicit class XDataSinkMutableBuilder[Self <: XDataSink] (val x: Self) extends AnyVal {
+  extension [Self <: XDataSink](x: Self) {
     
-    @scala.inline
-    def setSetData(value: SeqEquiv[XLabeledDataSequence] => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
+    inline def setSetData(value: SeqEquiv[XLabeledDataSequence] => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
   }
 }

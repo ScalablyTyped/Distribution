@@ -63,130 +63,89 @@ trait EdgeArrow extends StObject {
 }
 object EdgeArrow {
   
-  @scala.inline
-  def apply(): EdgeArrow = {
+  inline def apply(): EdgeArrow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EdgeArrow]
   }
   
-  @scala.inline
-  implicit class EdgeArrowMutableBuilder[Self <: EdgeArrow] (val x: Self) extends AnyVal {
+  extension [Self <: EdgeArrow](x: Self) {
     
-    @scala.inline
-    def `setArrow-scale`(value: PropertyValueEdge[Double]): Self = StObject.set(x, "arrow-scale", value.asInstanceOf[js.Any])
+    inline def `setArrow-scale`(value: PropertyValueEdge[Double]): Self = StObject.set(x, "arrow-scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setArrow-scaleFunction1`(value: EdgeSingular => Double): Self = StObject.set(x, "arrow-scale", js.Any.fromFunction1(value))
+    inline def `setArrow-scaleFunction1`(value: EdgeSingular => Double): Self = StObject.set(x, "arrow-scale", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def `setArrow-scaleUndefined`: Self = StObject.set(x, "arrow-scale", js.undefined)
+    inline def `setArrow-scaleUndefined`: Self = StObject.set(x, "arrow-scale", js.undefined)
     
-    @scala.inline
-    def `setMid-source-arrow-color`(value: PropertyValueEdge[Colour]): Self = StObject.set(x, "mid-source-arrow-color", value.asInstanceOf[js.Any])
+    inline def `setMid-source-arrow-color`(value: PropertyValueEdge[Colour]): Self = StObject.set(x, "mid-source-arrow-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMid-source-arrow-colorFunction1`(value: EdgeSingular => Colour): Self = StObject.set(x, "mid-source-arrow-color", js.Any.fromFunction1(value))
+    inline def `setMid-source-arrow-colorFunction1`(value: EdgeSingular => Colour): Self = StObject.set(x, "mid-source-arrow-color", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def `setMid-source-arrow-colorUndefined`: Self = StObject.set(x, "mid-source-arrow-color", js.undefined)
+    inline def `setMid-source-arrow-colorUndefined`: Self = StObject.set(x, "mid-source-arrow-color", js.undefined)
     
-    @scala.inline
-    def `setMid-source-arrow-fill`(value: PropertyValueEdge[ArrowFill]): Self = StObject.set(x, "mid-source-arrow-fill", value.asInstanceOf[js.Any])
+    inline def `setMid-source-arrow-fill`(value: PropertyValueEdge[ArrowFill]): Self = StObject.set(x, "mid-source-arrow-fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMid-source-arrow-fillFunction1`(value: EdgeSingular => ArrowFill): Self = StObject.set(x, "mid-source-arrow-fill", js.Any.fromFunction1(value))
+    inline def `setMid-source-arrow-fillFunction1`(value: EdgeSingular => ArrowFill): Self = StObject.set(x, "mid-source-arrow-fill", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def `setMid-source-arrow-fillUndefined`: Self = StObject.set(x, "mid-source-arrow-fill", js.undefined)
+    inline def `setMid-source-arrow-fillUndefined`: Self = StObject.set(x, "mid-source-arrow-fill", js.undefined)
     
-    @scala.inline
-    def `setMid-source-arrow-shape`(value: PropertyValueEdge[ArrowShape]): Self = StObject.set(x, "mid-source-arrow-shape", value.asInstanceOf[js.Any])
+    inline def `setMid-source-arrow-shape`(value: PropertyValueEdge[ArrowShape]): Self = StObject.set(x, "mid-source-arrow-shape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMid-source-arrow-shapeFunction1`(value: EdgeSingular => ArrowShape): Self = StObject.set(x, "mid-source-arrow-shape", js.Any.fromFunction1(value))
+    inline def `setMid-source-arrow-shapeFunction1`(value: EdgeSingular => ArrowShape): Self = StObject.set(x, "mid-source-arrow-shape", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def `setMid-source-arrow-shapeUndefined`: Self = StObject.set(x, "mid-source-arrow-shape", js.undefined)
+    inline def `setMid-source-arrow-shapeUndefined`: Self = StObject.set(x, "mid-source-arrow-shape", js.undefined)
     
-    @scala.inline
-    def `setMid-target-arrow-color`(value: PropertyValueEdge[Colour]): Self = StObject.set(x, "mid-target-arrow-color", value.asInstanceOf[js.Any])
+    inline def `setMid-target-arrow-color`(value: PropertyValueEdge[Colour]): Self = StObject.set(x, "mid-target-arrow-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMid-target-arrow-colorFunction1`(value: EdgeSingular => Colour): Self = StObject.set(x, "mid-target-arrow-color", js.Any.fromFunction1(value))
+    inline def `setMid-target-arrow-colorFunction1`(value: EdgeSingular => Colour): Self = StObject.set(x, "mid-target-arrow-color", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def `setMid-target-arrow-colorUndefined`: Self = StObject.set(x, "mid-target-arrow-color", js.undefined)
+    inline def `setMid-target-arrow-colorUndefined`: Self = StObject.set(x, "mid-target-arrow-color", js.undefined)
     
-    @scala.inline
-    def `setMid-target-arrow-fill`(value: PropertyValueEdge[ArrowFill]): Self = StObject.set(x, "mid-target-arrow-fill", value.asInstanceOf[js.Any])
+    inline def `setMid-target-arrow-fill`(value: PropertyValueEdge[ArrowFill]): Self = StObject.set(x, "mid-target-arrow-fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMid-target-arrow-fillFunction1`(value: EdgeSingular => ArrowFill): Self = StObject.set(x, "mid-target-arrow-fill", js.Any.fromFunction1(value))
+    inline def `setMid-target-arrow-fillFunction1`(value: EdgeSingular => ArrowFill): Self = StObject.set(x, "mid-target-arrow-fill", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def `setMid-target-arrow-fillUndefined`: Self = StObject.set(x, "mid-target-arrow-fill", js.undefined)
+    inline def `setMid-target-arrow-fillUndefined`: Self = StObject.set(x, "mid-target-arrow-fill", js.undefined)
     
-    @scala.inline
-    def `setMid-target-arrow-shape`(value: PropertyValueEdge[ArrowShape]): Self = StObject.set(x, "mid-target-arrow-shape", value.asInstanceOf[js.Any])
+    inline def `setMid-target-arrow-shape`(value: PropertyValueEdge[ArrowShape]): Self = StObject.set(x, "mid-target-arrow-shape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMid-target-arrow-shapeFunction1`(value: EdgeSingular => ArrowShape): Self = StObject.set(x, "mid-target-arrow-shape", js.Any.fromFunction1(value))
+    inline def `setMid-target-arrow-shapeFunction1`(value: EdgeSingular => ArrowShape): Self = StObject.set(x, "mid-target-arrow-shape", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def `setMid-target-arrow-shapeUndefined`: Self = StObject.set(x, "mid-target-arrow-shape", js.undefined)
+    inline def `setMid-target-arrow-shapeUndefined`: Self = StObject.set(x, "mid-target-arrow-shape", js.undefined)
     
-    @scala.inline
-    def `setSource-arrow-color`(value: PropertyValueEdge[Colour]): Self = StObject.set(x, "source-arrow-color", value.asInstanceOf[js.Any])
+    inline def `setSource-arrow-color`(value: PropertyValueEdge[Colour]): Self = StObject.set(x, "source-arrow-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setSource-arrow-colorFunction1`(value: EdgeSingular => Colour): Self = StObject.set(x, "source-arrow-color", js.Any.fromFunction1(value))
+    inline def `setSource-arrow-colorFunction1`(value: EdgeSingular => Colour): Self = StObject.set(x, "source-arrow-color", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def `setSource-arrow-colorUndefined`: Self = StObject.set(x, "source-arrow-color", js.undefined)
+    inline def `setSource-arrow-colorUndefined`: Self = StObject.set(x, "source-arrow-color", js.undefined)
     
-    @scala.inline
-    def `setSource-arrow-fill`(value: PropertyValueEdge[ArrowFill]): Self = StObject.set(x, "source-arrow-fill", value.asInstanceOf[js.Any])
+    inline def `setSource-arrow-fill`(value: PropertyValueEdge[ArrowFill]): Self = StObject.set(x, "source-arrow-fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setSource-arrow-fillFunction1`(value: EdgeSingular => ArrowFill): Self = StObject.set(x, "source-arrow-fill", js.Any.fromFunction1(value))
+    inline def `setSource-arrow-fillFunction1`(value: EdgeSingular => ArrowFill): Self = StObject.set(x, "source-arrow-fill", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def `setSource-arrow-fillUndefined`: Self = StObject.set(x, "source-arrow-fill", js.undefined)
+    inline def `setSource-arrow-fillUndefined`: Self = StObject.set(x, "source-arrow-fill", js.undefined)
     
-    @scala.inline
-    def `setSource-arrow-shape`(value: PropertyValueEdge[ArrowShape]): Self = StObject.set(x, "source-arrow-shape", value.asInstanceOf[js.Any])
+    inline def `setSource-arrow-shape`(value: PropertyValueEdge[ArrowShape]): Self = StObject.set(x, "source-arrow-shape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setSource-arrow-shapeFunction1`(value: EdgeSingular => ArrowShape): Self = StObject.set(x, "source-arrow-shape", js.Any.fromFunction1(value))
+    inline def `setSource-arrow-shapeFunction1`(value: EdgeSingular => ArrowShape): Self = StObject.set(x, "source-arrow-shape", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def `setSource-arrow-shapeUndefined`: Self = StObject.set(x, "source-arrow-shape", js.undefined)
+    inline def `setSource-arrow-shapeUndefined`: Self = StObject.set(x, "source-arrow-shape", js.undefined)
     
-    @scala.inline
-    def `setTarget-arrow-color`(value: PropertyValueEdge[Colour]): Self = StObject.set(x, "target-arrow-color", value.asInstanceOf[js.Any])
+    inline def `setTarget-arrow-color`(value: PropertyValueEdge[Colour]): Self = StObject.set(x, "target-arrow-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setTarget-arrow-colorFunction1`(value: EdgeSingular => Colour): Self = StObject.set(x, "target-arrow-color", js.Any.fromFunction1(value))
+    inline def `setTarget-arrow-colorFunction1`(value: EdgeSingular => Colour): Self = StObject.set(x, "target-arrow-color", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def `setTarget-arrow-colorUndefined`: Self = StObject.set(x, "target-arrow-color", js.undefined)
+    inline def `setTarget-arrow-colorUndefined`: Self = StObject.set(x, "target-arrow-color", js.undefined)
     
-    @scala.inline
-    def `setTarget-arrow-fill`(value: PropertyValueEdge[ArrowFill]): Self = StObject.set(x, "target-arrow-fill", value.asInstanceOf[js.Any])
+    inline def `setTarget-arrow-fill`(value: PropertyValueEdge[ArrowFill]): Self = StObject.set(x, "target-arrow-fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setTarget-arrow-fillFunction1`(value: EdgeSingular => ArrowFill): Self = StObject.set(x, "target-arrow-fill", js.Any.fromFunction1(value))
+    inline def `setTarget-arrow-fillFunction1`(value: EdgeSingular => ArrowFill): Self = StObject.set(x, "target-arrow-fill", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def `setTarget-arrow-fillUndefined`: Self = StObject.set(x, "target-arrow-fill", js.undefined)
+    inline def `setTarget-arrow-fillUndefined`: Self = StObject.set(x, "target-arrow-fill", js.undefined)
     
-    @scala.inline
-    def `setTarget-arrow-shape`(value: PropertyValueEdge[ArrowShape]): Self = StObject.set(x, "target-arrow-shape", value.asInstanceOf[js.Any])
+    inline def `setTarget-arrow-shape`(value: PropertyValueEdge[ArrowShape]): Self = StObject.set(x, "target-arrow-shape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setTarget-arrow-shapeFunction1`(value: EdgeSingular => ArrowShape): Self = StObject.set(x, "target-arrow-shape", js.Any.fromFunction1(value))
+    inline def `setTarget-arrow-shapeFunction1`(value: EdgeSingular => ArrowShape): Self = StObject.set(x, "target-arrow-shape", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def `setTarget-arrow-shapeUndefined`: Self = StObject.set(x, "target-arrow-shape", js.undefined)
+    inline def `setTarget-arrow-shapeUndefined`: Self = StObject.set(x, "target-arrow-shape", js.undefined)
   }
 }

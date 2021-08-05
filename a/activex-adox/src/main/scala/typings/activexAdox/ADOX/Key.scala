@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Key extends StObject {
   
-  @JSName("ADOX.Key_typekey")
+  /* private */ @JSName("ADOX.Key_typekey")
   var ADOXDotKey_typekey: Key
   
   def Columns(Item: String): Column
@@ -26,8 +26,7 @@ trait Key extends StObject {
 }
 object Key {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ADOXDotKey_typekey: Key,
     Columns: Columns,
     DeleteRule: RuleEnum,
@@ -41,28 +40,20 @@ object Key {
     __obj.asInstanceOf[Key]
   }
   
-  @scala.inline
-  implicit class KeyMutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
+  extension [Self <: Key](x: Self) {
     
-    @scala.inline
-    def setADOXDotKey_typekey(value: Key): Self = StObject.set(x, "ADOX.Key_typekey", value.asInstanceOf[js.Any])
+    inline def setADOXDotKey_typekey(value: Key): Self = StObject.set(x, "ADOX.Key_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumns(value: Columns): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: Columns): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteRule(value: RuleEnum): Self = StObject.set(x, "DeleteRule", value.asInstanceOf[js.Any])
+    inline def setDeleteRule(value: RuleEnum): Self = StObject.set(x, "DeleteRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedTable(value: String): Self = StObject.set(x, "RelatedTable", value.asInstanceOf[js.Any])
+    inline def setRelatedTable(value: String): Self = StObject.set(x, "RelatedTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: KeyTypeEnum): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: KeyTypeEnum): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateRule(value: RuleEnum): Self = StObject.set(x, "UpdateRule", value.asInstanceOf[js.Any])
+    inline def setUpdateRule(value: RuleEnum): Self = StObject.set(x, "UpdateRule", value.asInstanceOf[js.Any])
   }
 }

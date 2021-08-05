@@ -14,25 +14,19 @@ trait DnsKeyDigest extends StObject {
 }
 object DnsKeyDigest {
   
-  @scala.inline
-  def apply(): DnsKeyDigest = {
+  inline def apply(): DnsKeyDigest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DnsKeyDigest]
   }
   
-  @scala.inline
-  implicit class DnsKeyDigestMutableBuilder[Self <: DnsKeyDigest] (val x: Self) extends AnyVal {
+  extension [Self <: DnsKeyDigest](x: Self) {
     
-    @scala.inline
-    def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
+    inline def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
+    inline def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

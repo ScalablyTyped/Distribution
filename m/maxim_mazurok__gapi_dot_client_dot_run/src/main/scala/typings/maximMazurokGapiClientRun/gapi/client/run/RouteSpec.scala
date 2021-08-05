@@ -11,22 +11,17 @@ trait RouteSpec extends StObject {
 }
 object RouteSpec {
   
-  @scala.inline
-  def apply(): RouteSpec = {
+  inline def apply(): RouteSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RouteSpec]
   }
   
-  @scala.inline
-  implicit class RouteSpecMutableBuilder[Self <: RouteSpec] (val x: Self) extends AnyVal {
+  extension [Self <: RouteSpec](x: Self) {
     
-    @scala.inline
-    def setTraffic(value: js.Array[TrafficTarget]): Self = StObject.set(x, "traffic", value.asInstanceOf[js.Any])
+    inline def setTraffic(value: js.Array[TrafficTarget]): Self = StObject.set(x, "traffic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrafficUndefined: Self = StObject.set(x, "traffic", js.undefined)
+    inline def setTrafficUndefined: Self = StObject.set(x, "traffic", js.undefined)
     
-    @scala.inline
-    def setTrafficVarargs(value: TrafficTarget*): Self = StObject.set(x, "traffic", js.Array(value :_*))
+    inline def setTrafficVarargs(value: TrafficTarget*): Self = StObject.set(x, "traffic", js.Array(value :_*))
   }
 }

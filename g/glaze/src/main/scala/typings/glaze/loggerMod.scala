@@ -11,14 +11,11 @@ object loggerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def errorOnce(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("errorOnce")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def errorOnce(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("errorOnce")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setLogger(logger: PickConsoleLogLevel): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogger")(logger.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setLogger(logger: PickConsoleLogLevel): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogger")(logger.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def warnOnce(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warnOnce")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def warnOnce(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warnOnce")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* Rewritten from type alias, can be one of: 
     - typings.glaze.glazeStrings.warn
@@ -27,10 +24,8 @@ object loggerMod {
   trait LogLevel extends StObject
   object LogLevel {
     
-    @scala.inline
-    def error: typings.glaze.glazeStrings.error = "error".asInstanceOf[typings.glaze.glazeStrings.error]
+    inline def error: typings.glaze.glazeStrings.error = "error".asInstanceOf[typings.glaze.glazeStrings.error]
     
-    @scala.inline
-    def warn: typings.glaze.glazeStrings.warn = "warn".asInstanceOf[typings.glaze.glazeStrings.warn]
+    inline def warn: typings.glaze.glazeStrings.warn = "warn".asInstanceOf[typings.glaze.glazeStrings.warn]
   }
 }

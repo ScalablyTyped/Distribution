@@ -18,8 +18,7 @@ trait GridOnScrollProps extends StObject {
 }
 object GridOnScrollProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     horizontalScrollDirection: ScrollDirection,
     scrollLeft: Double,
     scrollTop: Double,
@@ -30,22 +29,16 @@ object GridOnScrollProps {
     __obj.asInstanceOf[GridOnScrollProps]
   }
   
-  @scala.inline
-  implicit class GridOnScrollPropsMutableBuilder[Self <: GridOnScrollProps] (val x: Self) extends AnyVal {
+  extension [Self <: GridOnScrollProps](x: Self) {
     
-    @scala.inline
-    def setHorizontalScrollDirection(value: ScrollDirection): Self = StObject.set(x, "horizontalScrollDirection", value.asInstanceOf[js.Any])
+    inline def setHorizontalScrollDirection(value: ScrollDirection): Self = StObject.set(x, "horizontalScrollDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
+    inline def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
+    inline def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollUpdateWasRequested(value: Boolean): Self = StObject.set(x, "scrollUpdateWasRequested", value.asInstanceOf[js.Any])
+    inline def setScrollUpdateWasRequested(value: Boolean): Self = StObject.set(x, "scrollUpdateWasRequested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalScrollDirection(value: ScrollDirection): Self = StObject.set(x, "verticalScrollDirection", value.asInstanceOf[js.Any])
+    inline def setVerticalScrollDirection(value: ScrollDirection): Self = StObject.set(x, "verticalScrollDirection", value.asInstanceOf[js.Any])
   }
 }

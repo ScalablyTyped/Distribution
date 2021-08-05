@@ -24,9 +24,9 @@ object quantitativeScaleMod {
     
     /* protected */ def _defaultExtent(): js.Array[D] = js.native
     
-    var _domainMax: js.Any = js.native
+    /* private */ var _domainMax: js.Any = js.native
     
-    var _domainMin: js.Any = js.native
+    /* private */ var _domainMin: js.Any = js.native
     
     /* protected */ def _expandSingleValueDomain(singleValueDomain: js.Array[D]): js.Array[D] = js.native
     
@@ -42,13 +42,13 @@ object quantitativeScaleMod {
     
     /* private */ def _padDomain(domain: js.Any): js.Any = js.native
     
-    var _padProportion: js.Any = js.native
+    /* private */ var _padProportion: js.Any = js.native
     
-    var _paddingExceptionsProviders: js.Any = js.native
+    /* private */ var _paddingExceptionsProviders: js.Any = js.native
     
-    var _snappingDomainEnabled: js.Any = js.native
+    /* private */ var _snappingDomainEnabled: js.Any = js.native
     
-    var _tickGenerator: js.Any = js.native
+    /* private */ var _tickGenerator: js.Any = js.native
     
     /**
       * Adds a padding exception provider.
@@ -206,7 +206,6 @@ object quantitativeScaleMod {
     @JSImport("plottable/build/src/scales/quantitativeScale", "QuantitativeScale._DEFAULT_NUM_TICKS")
     @js.native
     def _DEFAULT_NUM_TICKS: Double = js.native
-    @scala.inline
-    def _DEFAULT_NUM_TICKS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_NUM_TICKS")(x.asInstanceOf[js.Any])
+    inline def _DEFAULT_NUM_TICKS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_NUM_TICKS")(x.asInstanceOf[js.Any])
   }
 }

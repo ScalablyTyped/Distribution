@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.SaveEventObject")
 @js.native
-class SaveEventObject protected ()
+/* private */ class SaveEventObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.SaveEventObject {
   
   /* CompleteClass */
   override val FileName: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("InfoPath.SaveEventObject_typekey")
   var InfoPathDotSaveEventObject_typekey: typings.activexInfopath.InfoPath.SaveEventObject = js.native
   

@@ -18,8 +18,7 @@ trait SingleAssignmentDisposable extends StObject {
 }
 object SingleAssignmentDisposable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dispose: () => Unit,
     getDisposable: () => IDisposable,
     isDisposed: Boolean,
@@ -29,19 +28,14 @@ object SingleAssignmentDisposable {
     __obj.asInstanceOf[SingleAssignmentDisposable]
   }
   
-  @scala.inline
-  implicit class SingleAssignmentDisposableMutableBuilder[Self <: SingleAssignmentDisposable] (val x: Self) extends AnyVal {
+  extension [Self <: SingleAssignmentDisposable](x: Self) {
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDisposable(value: () => IDisposable): Self = StObject.set(x, "getDisposable", js.Any.fromFunction0(value))
+    inline def setGetDisposable(value: () => IDisposable): Self = StObject.set(x, "getDisposable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsDisposed(value: Boolean): Self = StObject.set(x, "isDisposed", value.asInstanceOf[js.Any])
+    inline def setIsDisposed(value: Boolean): Self = StObject.set(x, "isDisposed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetDisposable(value: IDisposable => Unit): Self = StObject.set(x, "setDisposable", js.Any.fromFunction1(value))
+    inline def setSetDisposable(value: IDisposable => Unit): Self = StObject.set(x, "setDisposable", js.Any.fromFunction1(value))
   }
 }

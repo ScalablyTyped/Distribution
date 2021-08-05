@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait vbextProjectProtection extends StObject
 object vbextProjectProtection {
   
-  @scala.inline
-  def vbext_pp_locked: `1` = 1.asInstanceOf[`1`]
+  inline def vbext_pp_locked: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def vbext_pp_none: `0` = 0.asInstanceOf[`0`]
+  inline def vbext_pp_none: `0` = 0.asInstanceOf[`0`]
 }

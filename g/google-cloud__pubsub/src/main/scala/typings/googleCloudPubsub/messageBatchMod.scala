@@ -66,32 +66,24 @@ object messageBatchMod {
   }
   object BatchPublishOptions {
     
-    @scala.inline
-    def apply(): BatchPublishOptions = {
+    inline def apply(): BatchPublishOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BatchPublishOptions]
     }
     
-    @scala.inline
-    implicit class BatchPublishOptionsMutableBuilder[Self <: BatchPublishOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BatchPublishOptions](x: Self) {
       
-      @scala.inline
-      def setMaxBytes(value: Double): Self = StObject.set(x, "maxBytes", value.asInstanceOf[js.Any])
+      inline def setMaxBytes(value: Double): Self = StObject.set(x, "maxBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxBytesUndefined: Self = StObject.set(x, "maxBytes", js.undefined)
+      inline def setMaxBytesUndefined: Self = StObject.set(x, "maxBytes", js.undefined)
       
-      @scala.inline
-      def setMaxMessages(value: Double): Self = StObject.set(x, "maxMessages", value.asInstanceOf[js.Any])
+      inline def setMaxMessages(value: Double): Self = StObject.set(x, "maxMessages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxMessagesUndefined: Self = StObject.set(x, "maxMessages", js.undefined)
+      inline def setMaxMessagesUndefined: Self = StObject.set(x, "maxMessages", js.undefined)
       
-      @scala.inline
-      def setMaxMilliseconds(value: Double): Self = StObject.set(x, "maxMilliseconds", value.asInstanceOf[js.Any])
+      inline def setMaxMilliseconds(value: Double): Self = StObject.set(x, "maxMilliseconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxMillisecondsUndefined: Self = StObject.set(x, "maxMilliseconds", js.undefined)
+      inline def setMaxMillisecondsUndefined: Self = StObject.set(x, "maxMilliseconds", js.undefined)
     }
   }
 }

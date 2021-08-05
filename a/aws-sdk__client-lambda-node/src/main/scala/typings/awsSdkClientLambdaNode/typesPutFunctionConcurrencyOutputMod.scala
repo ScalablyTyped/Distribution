@@ -25,23 +25,18 @@ object typesPutFunctionConcurrencyOutputMod {
   }
   object PutFunctionConcurrencyOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): PutFunctionConcurrencyOutput = {
+    inline def apply($metadata: ResponseMetadata): PutFunctionConcurrencyOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[PutFunctionConcurrencyOutput]
     }
     
-    @scala.inline
-    implicit class PutFunctionConcurrencyOutputMutableBuilder[Self <: PutFunctionConcurrencyOutput] (val x: Self) extends AnyVal {
+    extension [Self <: PutFunctionConcurrencyOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReservedConcurrentExecutions(value: Double): Self = StObject.set(x, "ReservedConcurrentExecutions", value.asInstanceOf[js.Any])
+      inline def setReservedConcurrentExecutions(value: Double): Self = StObject.set(x, "ReservedConcurrentExecutions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReservedConcurrentExecutionsUndefined: Self = StObject.set(x, "ReservedConcurrentExecutions", js.undefined)
+      inline def setReservedConcurrentExecutionsUndefined: Self = StObject.set(x, "ReservedConcurrentExecutions", js.undefined)
     }
   }
 }

@@ -15,22 +15,17 @@ trait Key extends StObject {
 }
 object Key {
   
-  @scala.inline
-  def apply(key: String, name: String, value: String | RegExp | js.Function): Key = {
+  inline def apply(key: String, name: String, value: String | RegExp | js.Function): Key = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Key]
   }
   
-  @scala.inline
-  implicit class KeyMutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
+  extension [Self <: Key](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String | RegExp | js.Function): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String | RegExp | js.Function): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

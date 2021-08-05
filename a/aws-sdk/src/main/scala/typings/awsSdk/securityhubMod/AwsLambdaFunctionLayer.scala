@@ -18,25 +18,19 @@ trait AwsLambdaFunctionLayer extends StObject {
 }
 object AwsLambdaFunctionLayer {
   
-  @scala.inline
-  def apply(): AwsLambdaFunctionLayer = {
+  inline def apply(): AwsLambdaFunctionLayer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsLambdaFunctionLayer]
   }
   
-  @scala.inline
-  implicit class AwsLambdaFunctionLayerMutableBuilder[Self <: AwsLambdaFunctionLayer] (val x: Self) extends AnyVal {
+  extension [Self <: AwsLambdaFunctionLayer](x: Self) {
     
-    @scala.inline
-    def setArn(value: NonEmptyString): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: NonEmptyString): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setCodeSize(value: Integer): Self = StObject.set(x, "CodeSize", value.asInstanceOf[js.Any])
+    inline def setCodeSize(value: Integer): Self = StObject.set(x, "CodeSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeSizeUndefined: Self = StObject.set(x, "CodeSize", js.undefined)
+    inline def setCodeSizeUndefined: Self = StObject.set(x, "CodeSize", js.undefined)
   }
 }

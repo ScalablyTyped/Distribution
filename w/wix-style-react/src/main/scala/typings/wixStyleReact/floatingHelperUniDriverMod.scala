@@ -22,8 +22,7 @@ object floatingHelperUniDriverMod {
   }
   object FloatingHelperUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clickCloseButton: () => js.Promise[Unit],
       getHelperContentDriver: () => js.Promise[FloatingHelperContentUniDriver],
       getWidth: () => js.Promise[String],
@@ -34,20 +33,15 @@ object floatingHelperUniDriverMod {
       __obj.asInstanceOf[FloatingHelperUniDriver]
     }
     
-    @scala.inline
-    implicit class FloatingHelperUniDriverMutableBuilder[Self <: FloatingHelperUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: FloatingHelperUniDriver](x: Self) {
       
-      @scala.inline
-      def setClickCloseButton(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickCloseButton", js.Any.fromFunction0(value))
+      inline def setClickCloseButton(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickCloseButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetHelperContentDriver(value: () => js.Promise[FloatingHelperContentUniDriver]): Self = StObject.set(x, "getHelperContentDriver", js.Any.fromFunction0(value))
+      inline def setGetHelperContentDriver(value: () => js.Promise[FloatingHelperContentUniDriver]): Self = StObject.set(x, "getHelperContentDriver", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetWidth(value: () => js.Promise[String]): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
+      inline def setGetWidth(value: () => js.Promise[String]): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasCloseButton(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasCloseButton", js.Any.fromFunction0(value))
+      inline def setHasCloseButton(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasCloseButton", js.Any.fromFunction0(value))
     }
   }
 }

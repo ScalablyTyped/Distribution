@@ -14,25 +14,19 @@ trait OnClick extends StObject {
 }
 object OnClick {
   
-  @scala.inline
-  def apply(): OnClick = {
+  inline def apply(): OnClick = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnClick]
   }
   
-  @scala.inline
-  implicit class OnClickMutableBuilder[Self <: OnClick] (val x: Self) extends AnyVal {
+  extension [Self <: OnClick](x: Self) {
     
-    @scala.inline
-    def setAction(value: FormAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: FormAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setOpenLink(value: OpenLink): Self = StObject.set(x, "openLink", value.asInstanceOf[js.Any])
+    inline def setOpenLink(value: OpenLink): Self = StObject.set(x, "openLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenLinkUndefined: Self = StObject.set(x, "openLink", js.undefined)
+    inline def setOpenLinkUndefined: Self = StObject.set(x, "openLink", js.undefined)
   }
 }

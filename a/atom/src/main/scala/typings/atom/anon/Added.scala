@@ -12,19 +12,15 @@ trait Added extends StObject {
 }
 object Added {
   
-  @scala.inline
-  def apply(added: Double, deleted: Double): Added = {
+  inline def apply(added: Double, deleted: Double): Added = {
     val __obj = js.Dynamic.literal(added = added.asInstanceOf[js.Any], deleted = deleted.asInstanceOf[js.Any])
     __obj.asInstanceOf[Added]
   }
   
-  @scala.inline
-  implicit class AddedMutableBuilder[Self <: Added] (val x: Self) extends AnyVal {
+  extension [Self <: Added](x: Self) {
     
-    @scala.inline
-    def setAdded(value: Double): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
+    inline def setAdded(value: Double): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleted(value: Double): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
+    inline def setDeleted(value: Double): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
   }
 }

@@ -14,22 +14,17 @@ trait PublicClientApplication extends StObject {
 }
 object PublicClientApplication {
   
-  @scala.inline
-  def apply(): PublicClientApplication = {
+  inline def apply(): PublicClientApplication = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PublicClientApplication]
   }
   
-  @scala.inline
-  implicit class PublicClientApplicationMutableBuilder[Self <: PublicClientApplication] (val x: Self) extends AnyVal {
+  extension [Self <: PublicClientApplication](x: Self) {
     
-    @scala.inline
-    def setRedirectUris(value: js.Array[String]): Self = StObject.set(x, "redirectUris", value.asInstanceOf[js.Any])
+    inline def setRedirectUris(value: js.Array[String]): Self = StObject.set(x, "redirectUris", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectUrisUndefined: Self = StObject.set(x, "redirectUris", js.undefined)
+    inline def setRedirectUrisUndefined: Self = StObject.set(x, "redirectUris", js.undefined)
     
-    @scala.inline
-    def setRedirectUrisVarargs(value: String*): Self = StObject.set(x, "redirectUris", js.Array(value :_*))
+    inline def setRedirectUrisVarargs(value: String*): Self = StObject.set(x, "redirectUris", js.Array(value :_*))
   }
 }

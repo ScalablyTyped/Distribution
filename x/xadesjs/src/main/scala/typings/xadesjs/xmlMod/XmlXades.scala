@@ -14,20 +14,17 @@ object XmlXades {
   @JSImport("xadesjs/build/types/xml", "XmlXades.AttributeNames")
   @js.native
   def AttributeNames: Encoding = js.native
-  @scala.inline
-  def AttributeNames_=(x: Encoding): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AttributeNames")(x.asInstanceOf[js.Any])
+  inline def AttributeNames_=(x: Encoding): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AttributeNames")(x.asInstanceOf[js.Any])
   
   @JSImport("xadesjs/build/types/xml", "XmlXades.DefaultPrefix")
   @js.native
   def DefaultPrefix: String = js.native
-  @scala.inline
-  def DefaultPrefix_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultPrefix")(x.asInstanceOf[js.Any])
+  inline def DefaultPrefix_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultPrefix")(x.asInstanceOf[js.Any])
   
   @JSImport("xadesjs/build/types/xml", "XmlXades.ElementNames")
   @js.native
   def ElementNames: typings.xadesjs.anon.AllDataObjectsTimeStamp = js.native
-  @scala.inline
-  def ElementNames_=(x: typings.xadesjs.anon.AllDataObjectsTimeStamp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ElementNames")(x.asInstanceOf[js.Any])
+  inline def ElementNames_=(x: typings.xadesjs.anon.AllDataObjectsTimeStamp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ElementNames")(x.asInstanceOf[js.Any])
   
   /**
     * The XAdES XML namespace URI
@@ -35,8 +32,7 @@ object XmlXades {
   @JSImport("xadesjs/build/types/xml", "XmlXades.NamespaceURI")
   @js.native
   def NamespaceURI: String = js.native
-  @scala.inline
-  def NamespaceURI_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NamespaceURI")(x.asInstanceOf[js.Any])
+  inline def NamespaceURI_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NamespaceURI")(x.asInstanceOf[js.Any])
   
   /**
     * Mandated type name for the Uri reference to the SignedProperties element
@@ -44,6 +40,5 @@ object XmlXades {
   @JSImport("xadesjs/build/types/xml", "XmlXades.SignedPropertiesType")
   @js.native
   def SignedPropertiesType: String = js.native
-  @scala.inline
-  def SignedPropertiesType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SignedPropertiesType")(x.asInstanceOf[js.Any])
+  inline def SignedPropertiesType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SignedPropertiesType")(x.asInstanceOf[js.Any])
 }

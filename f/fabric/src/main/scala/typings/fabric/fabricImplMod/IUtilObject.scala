@@ -21,20 +21,16 @@ trait IUtilObject extends StObject {
 }
 object IUtilObject {
   
-  @scala.inline
-  def apply(clone_ : js.Any => js.Any, extend: (js.Any, js.Any) => js.Any): IUtilObject = {
+  inline def apply(clone_ : js.Any => js.Any, extend: (js.Any, js.Any) => js.Any): IUtilObject = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction2(extend))
     __obj.updateDynamic("clone")(js.Any.fromFunction1(clone_))
     __obj.asInstanceOf[IUtilObject]
   }
   
-  @scala.inline
-  implicit class IUtilObjectMutableBuilder[Self <: IUtilObject] (val x: Self) extends AnyVal {
+  extension [Self <: IUtilObject](x: Self) {
     
-    @scala.inline
-    def setClone_(value: js.Any => js.Any): Self = StObject.set(x, "clone", js.Any.fromFunction1(value))
+    inline def setClone_(value: js.Any => js.Any): Self = StObject.set(x, "clone", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExtend(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "extend", js.Any.fromFunction2(value))
+    inline def setExtend(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "extend", js.Any.fromFunction2(value))
   }
 }

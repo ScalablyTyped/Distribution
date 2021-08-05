@@ -69,32 +69,24 @@ object mod extends Shortcut {
   }
   object SpectrogramOptions {
     
-    @scala.inline
-    def apply(): SpectrogramOptions = {
+    inline def apply(): SpectrogramOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SpectrogramOptions]
     }
     
-    @scala.inline
-    implicit class SpectrogramOptionsMutableBuilder[Self <: SpectrogramOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SpectrogramOptions](x: Self) {
       
-      @scala.inline
-      def setAudio(value: Enable): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+      inline def setAudio(value: Enable): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
+      inline def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
       
-      @scala.inline
-      def setCanvas(value: Height): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
+      inline def setCanvas(value: Height): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanvasUndefined: Self = StObject.set(x, "canvas", js.undefined)
+      inline def setCanvasUndefined: Self = StObject.set(x, "canvas", js.undefined)
       
-      @scala.inline
-      def setColors(value: /* steps */ Double => js.Array[String | CanvasGradient | CanvasPattern]): Self = StObject.set(x, "colors", js.Any.fromFunction1(value))
+      inline def setColors(value: /* steps */ Double => js.Array[String | CanvasGradient | CanvasPattern]): Self = StObject.set(x, "colors", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+      inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     }
   }
   

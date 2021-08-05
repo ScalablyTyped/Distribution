@@ -16,20 +16,16 @@ object movementDeltaMod {
   }
   object IMovementDelta {
     
-    @scala.inline
-    def apply(cols: Double, rows: Double): IMovementDelta = {
+    inline def apply(cols: Double, rows: Double): IMovementDelta = {
       val __obj = js.Dynamic.literal(cols = cols.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
       __obj.asInstanceOf[IMovementDelta]
     }
     
-    @scala.inline
-    implicit class IMovementDeltaMutableBuilder[Self <: IMovementDelta] (val x: Self) extends AnyVal {
+    extension [Self <: IMovementDelta](x: Self) {
       
-      @scala.inline
-      def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
+      inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     }
   }
 }

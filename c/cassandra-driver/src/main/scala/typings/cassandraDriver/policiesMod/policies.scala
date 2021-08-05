@@ -47,40 +47,30 @@ object policies {
     }
     object AddressTranslator {
       
-      @scala.inline
-      def apply(translate: (String, Double, js.Function) => Unit): AddressTranslator = {
+      inline def apply(translate: (String, Double, js.Function) => Unit): AddressTranslator = {
         val __obj = js.Dynamic.literal(translate = js.Any.fromFunction3(translate))
         __obj.asInstanceOf[AddressTranslator]
       }
       
-      @scala.inline
-      implicit class AddressTranslatorMutableBuilder[Self <: AddressTranslator] (val x: Self) extends AnyVal {
+      extension [Self <: AddressTranslator](x: Self) {
         
-        @scala.inline
-        def setTranslate(value: (String, Double, js.Function) => Unit): Self = StObject.set(x, "translate", js.Any.fromFunction3(value))
+        inline def setTranslate(value: (String, Double, js.Function) => Unit): Self = StObject.set(x, "translate", js.Any.fromFunction3(value))
       }
     }
   }
   
-  @scala.inline
-  def defaultAddressTranslator(): AddressTranslator = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultAddressTranslator")().asInstanceOf[AddressTranslator]
+  inline def defaultAddressTranslator(): AddressTranslator = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultAddressTranslator")().asInstanceOf[AddressTranslator]
   
-  @scala.inline
-  def defaultLoadBalancingPolicy(): LoadBalancingPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultLoadBalancingPolicy")().asInstanceOf[LoadBalancingPolicy]
-  @scala.inline
-  def defaultLoadBalancingPolicy(localDc: String): LoadBalancingPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultLoadBalancingPolicy")(localDc.asInstanceOf[js.Any]).asInstanceOf[LoadBalancingPolicy]
+  inline def defaultLoadBalancingPolicy(): LoadBalancingPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultLoadBalancingPolicy")().asInstanceOf[LoadBalancingPolicy]
+  inline def defaultLoadBalancingPolicy(localDc: String): LoadBalancingPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultLoadBalancingPolicy")(localDc.asInstanceOf[js.Any]).asInstanceOf[LoadBalancingPolicy]
   
-  @scala.inline
-  def defaultReconnectionPolicy(): ReconnectionPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultReconnectionPolicy")().asInstanceOf[ReconnectionPolicy]
+  inline def defaultReconnectionPolicy(): ReconnectionPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultReconnectionPolicy")().asInstanceOf[ReconnectionPolicy]
   
-  @scala.inline
-  def defaultRetryPolicy(): RetryPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultRetryPolicy")().asInstanceOf[RetryPolicy]
+  inline def defaultRetryPolicy(): RetryPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultRetryPolicy")().asInstanceOf[RetryPolicy]
   
-  @scala.inline
-  def defaultSpeculativeExecutionPolicy(): SpeculativeExecutionPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultSpeculativeExecutionPolicy")().asInstanceOf[SpeculativeExecutionPolicy]
+  inline def defaultSpeculativeExecutionPolicy(): SpeculativeExecutionPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultSpeculativeExecutionPolicy")().asInstanceOf[SpeculativeExecutionPolicy]
   
-  @scala.inline
-  def defaultTimestampGenerator(): TimestampGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultTimestampGenerator")().asInstanceOf[TimestampGenerator]
+  inline def defaultTimestampGenerator(): TimestampGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultTimestampGenerator")().asInstanceOf[TimestampGenerator]
   
   object loadBalancing {
     
@@ -175,20 +165,16 @@ object policies {
     }
     object ReconnectionPolicy {
       
-      @scala.inline
-      def apply(getOptions: () => Map[String, js.Object], newSchedule: () => Iterator[Double, js.Any, Unit]): ReconnectionPolicy = {
+      inline def apply(getOptions: () => Map[String, js.Object], newSchedule: () => Iterator[Double, js.Any, Unit]): ReconnectionPolicy = {
         val __obj = js.Dynamic.literal(getOptions = js.Any.fromFunction0(getOptions), newSchedule = js.Any.fromFunction0(newSchedule))
         __obj.asInstanceOf[ReconnectionPolicy]
       }
       
-      @scala.inline
-      implicit class ReconnectionPolicyMutableBuilder[Self <: ReconnectionPolicy] (val x: Self) extends AnyVal {
+      extension [Self <: ReconnectionPolicy](x: Self) {
         
-        @scala.inline
-        def setGetOptions(value: () => Map[String, js.Object]): Self = StObject.set(x, "getOptions", js.Any.fromFunction0(value))
+        inline def setGetOptions(value: () => Map[String, js.Object]): Self = StObject.set(x, "getOptions", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setNewSchedule(value: () => Iterator[Double, js.Any, Unit]): Self = StObject.set(x, "newSchedule", js.Any.fromFunction0(value))
+        inline def setNewSchedule(value: () => Iterator[Double, js.Any, Unit]): Self = StObject.set(x, "newSchedule", js.Any.fromFunction0(value))
       }
     }
   }
@@ -338,17 +324,14 @@ object policies {
     }
     object TimestampGenerator {
       
-      @scala.inline
-      def apply(next: Client => Long | Double): TimestampGenerator = {
+      inline def apply(next: Client => Long | Double): TimestampGenerator = {
         val __obj = js.Dynamic.literal(next = js.Any.fromFunction1(next))
         __obj.asInstanceOf[TimestampGenerator]
       }
       
-      @scala.inline
-      implicit class TimestampGeneratorMutableBuilder[Self <: TimestampGenerator] (val x: Self) extends AnyVal {
+      extension [Self <: TimestampGenerator](x: Self) {
         
-        @scala.inline
-        def setNext(value: Client => Long | Double): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
+        inline def setNext(value: Client => Long | Double): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
       }
     }
   }

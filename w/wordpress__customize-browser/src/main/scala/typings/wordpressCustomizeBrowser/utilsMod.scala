@@ -23,26 +23,20 @@ object utilsMod {
   }
   object HighlightButtonOptions {
     
-    @scala.inline
-    def apply(): HighlightButtonOptions = {
+    inline def apply(): HighlightButtonOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HighlightButtonOptions]
     }
     
-    @scala.inline
-    implicit class HighlightButtonOptionsMutableBuilder[Self <: HighlightButtonOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HighlightButtonOptions](x: Self) {
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setFocusTarget(value: JQuery[HTMLElement]): Self = StObject.set(x, "focusTarget", value.asInstanceOf[js.Any])
+      inline def setFocusTarget(value: JQuery[HTMLElement]): Self = StObject.set(x, "focusTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusTargetUndefined: Self = StObject.set(x, "focusTarget", js.undefined)
+      inline def setFocusTargetUndefined: Self = StObject.set(x, "focusTarget", js.undefined)
     }
   }
   

@@ -16,23 +16,18 @@ object anon {
   }
   object Left {
     
-    @scala.inline
-    def apply(left: Double, top: Double, zoom: Double): Left = {
+    inline def apply(left: Double, top: Double, zoom: Double): Left = {
       val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
       __obj.asInstanceOf[Left]
     }
     
-    @scala.inline
-    implicit class LeftMutableBuilder[Self <: Left] (val x: Self) extends AnyVal {
+    extension [Self <: Left](x: Self) {
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+      inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     }
   }
   
@@ -44,20 +39,16 @@ object anon {
   }
   object PageX {
     
-    @scala.inline
-    def apply(pageX: Double, pageY: Double): PageX = {
+    inline def apply(pageX: Double, pageY: Double): PageX = {
       val __obj = js.Dynamic.literal(pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any])
       __obj.asInstanceOf[PageX]
     }
     
-    @scala.inline
-    implicit class PageXMutableBuilder[Self <: PageX] (val x: Self) extends AnyVal {
+    extension [Self <: PageX](x: Self) {
       
-      @scala.inline
-      def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
+      inline def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
+      inline def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
     }
   }
   
@@ -69,20 +60,16 @@ object anon {
   }
   object Top {
     
-    @scala.inline
-    def apply(left: Double, top: Double): Top = {
+    inline def apply(left: Double, top: Double): Top = {
       val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
       __obj.asInstanceOf[Top]
     }
     
-    @scala.inline
-    implicit class TopMutableBuilder[Self <: Top] (val x: Self) extends AnyVal {
+    extension [Self <: Top](x: Self) {
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     }
   }
 }

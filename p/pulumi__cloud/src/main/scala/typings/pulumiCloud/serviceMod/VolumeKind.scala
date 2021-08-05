@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VolumeKind extends StObject
 object VolumeKind {
   
-  @scala.inline
-  def HostPathVolume: typings.pulumiCloud.pulumiCloudStrings.HostPathVolume = "HostPathVolume".asInstanceOf[typings.pulumiCloud.pulumiCloudStrings.HostPathVolume]
+  inline def HostPathVolume: typings.pulumiCloud.pulumiCloudStrings.HostPathVolume = "HostPathVolume".asInstanceOf[typings.pulumiCloud.pulumiCloudStrings.HostPathVolume]
   
-  @scala.inline
-  def SharedVolume: typings.pulumiCloud.pulumiCloudStrings.SharedVolume = "SharedVolume".asInstanceOf[typings.pulumiCloud.pulumiCloudStrings.SharedVolume]
+  inline def SharedVolume: typings.pulumiCloud.pulumiCloudStrings.SharedVolume = "SharedVolume".asInstanceOf[typings.pulumiCloud.pulumiCloudStrings.SharedVolume]
 }

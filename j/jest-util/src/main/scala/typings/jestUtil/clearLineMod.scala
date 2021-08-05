@@ -11,6 +11,5 @@ object clearLineMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(stream: WritableStream): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(stream.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(stream: WritableStream): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(stream.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

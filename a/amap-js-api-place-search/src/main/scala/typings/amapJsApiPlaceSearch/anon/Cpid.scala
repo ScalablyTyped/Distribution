@@ -14,22 +14,17 @@ trait Cpid extends StObject {
 }
 object Cpid {
   
-  @scala.inline
-  def apply(cpid: String, floor: String, truefloor: String): Cpid = {
+  inline def apply(cpid: String, floor: String, truefloor: String): Cpid = {
     val __obj = js.Dynamic.literal(cpid = cpid.asInstanceOf[js.Any], floor = floor.asInstanceOf[js.Any], truefloor = truefloor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cpid]
   }
   
-  @scala.inline
-  implicit class CpidMutableBuilder[Self <: Cpid] (val x: Self) extends AnyVal {
+  extension [Self <: Cpid](x: Self) {
     
-    @scala.inline
-    def setCpid(value: String): Self = StObject.set(x, "cpid", value.asInstanceOf[js.Any])
+    inline def setCpid(value: String): Self = StObject.set(x, "cpid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloor(value: String): Self = StObject.set(x, "floor", value.asInstanceOf[js.Any])
+    inline def setFloor(value: String): Self = StObject.set(x, "floor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTruefloor(value: String): Self = StObject.set(x, "truefloor", value.asInstanceOf[js.Any])
+    inline def setTruefloor(value: String): Self = StObject.set(x, "truefloor", value.asInstanceOf[js.Any])
   }
 }

@@ -18,31 +18,23 @@ trait BatchGetNamedQueryOutput extends StObject {
 }
 object BatchGetNamedQueryOutput {
   
-  @scala.inline
-  def apply(): BatchGetNamedQueryOutput = {
+  inline def apply(): BatchGetNamedQueryOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchGetNamedQueryOutput]
   }
   
-  @scala.inline
-  implicit class BatchGetNamedQueryOutputMutableBuilder[Self <: BatchGetNamedQueryOutput] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetNamedQueryOutput](x: Self) {
     
-    @scala.inline
-    def setNamedQueries(value: NamedQueryList): Self = StObject.set(x, "NamedQueries", value.asInstanceOf[js.Any])
+    inline def setNamedQueries(value: NamedQueryList): Self = StObject.set(x, "NamedQueries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamedQueriesUndefined: Self = StObject.set(x, "NamedQueries", js.undefined)
+    inline def setNamedQueriesUndefined: Self = StObject.set(x, "NamedQueries", js.undefined)
     
-    @scala.inline
-    def setNamedQueriesVarargs(value: NamedQuery*): Self = StObject.set(x, "NamedQueries", js.Array(value :_*))
+    inline def setNamedQueriesVarargs(value: NamedQuery*): Self = StObject.set(x, "NamedQueries", js.Array(value :_*))
     
-    @scala.inline
-    def setUnprocessedNamedQueryIds(value: UnprocessedNamedQueryIdList): Self = StObject.set(x, "UnprocessedNamedQueryIds", value.asInstanceOf[js.Any])
+    inline def setUnprocessedNamedQueryIds(value: UnprocessedNamedQueryIdList): Self = StObject.set(x, "UnprocessedNamedQueryIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnprocessedNamedQueryIdsUndefined: Self = StObject.set(x, "UnprocessedNamedQueryIds", js.undefined)
+    inline def setUnprocessedNamedQueryIdsUndefined: Self = StObject.set(x, "UnprocessedNamedQueryIds", js.undefined)
     
-    @scala.inline
-    def setUnprocessedNamedQueryIdsVarargs(value: UnprocessedNamedQueryId*): Self = StObject.set(x, "UnprocessedNamedQueryIds", js.Array(value :_*))
+    inline def setUnprocessedNamedQueryIdsVarargs(value: UnprocessedNamedQueryId*): Self = StObject.set(x, "UnprocessedNamedQueryIds", js.Array(value :_*))
   }
 }

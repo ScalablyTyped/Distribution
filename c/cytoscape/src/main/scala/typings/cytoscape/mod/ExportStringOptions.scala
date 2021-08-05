@@ -17,19 +17,15 @@ trait ExportStringOptions
 }
 object ExportStringOptions {
   
-  @scala.inline
-  def apply(): ExportStringOptions = {
+  inline def apply(): ExportStringOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExportStringOptions]
   }
   
-  @scala.inline
-  implicit class ExportStringOptionsMutableBuilder[Self <: ExportStringOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ExportStringOptions](x: Self) {
     
-    @scala.inline
-    def setOutput(value: base64uri | base64): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: base64uri | base64): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+    inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
   }
 }

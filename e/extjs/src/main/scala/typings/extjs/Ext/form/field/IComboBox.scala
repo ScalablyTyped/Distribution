@@ -218,317 +218,215 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object IComboBox {
   
-  @scala.inline
-  def apply(): IComboBox = {
+  inline def apply(): IComboBox = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IComboBox]
   }
   
-  @scala.inline
-  implicit class IComboBoxMutableBuilder[Self <: IComboBox] (val x: Self) extends AnyVal {
+  extension [Self <: IComboBox](x: Self) {
     
-    @scala.inline
-    def setAfterQuery(value: /* queryPlan */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "afterQuery", js.Any.fromFunction1(value))
+    inline def setAfterQuery(value: /* queryPlan */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "afterQuery", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAfterQueryUndefined: Self = StObject.set(x, "afterQuery", js.undefined)
+    inline def setAfterQueryUndefined: Self = StObject.set(x, "afterQuery", js.undefined)
     
-    @scala.inline
-    def setAllQuery(value: String): Self = StObject.set(x, "allQuery", value.asInstanceOf[js.Any])
+    inline def setAllQuery(value: String): Self = StObject.set(x, "allQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllQueryUndefined: Self = StObject.set(x, "allQuery", js.undefined)
+    inline def setAllQueryUndefined: Self = StObject.set(x, "allQuery", js.undefined)
     
-    @scala.inline
-    def setAnyMatch(value: Boolean): Self = StObject.set(x, "anyMatch", value.asInstanceOf[js.Any])
+    inline def setAnyMatch(value: Boolean): Self = StObject.set(x, "anyMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnyMatchUndefined: Self = StObject.set(x, "anyMatch", js.undefined)
+    inline def setAnyMatchUndefined: Self = StObject.set(x, "anyMatch", js.undefined)
     
-    @scala.inline
-    def setAutoSelect(value: Boolean): Self = StObject.set(x, "autoSelect", value.asInstanceOf[js.Any])
+    inline def setAutoSelect(value: Boolean): Self = StObject.set(x, "autoSelect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoSelectUndefined: Self = StObject.set(x, "autoSelect", js.undefined)
+    inline def setAutoSelectUndefined: Self = StObject.set(x, "autoSelect", js.undefined)
     
-    @scala.inline
-    def setBeforeBlur(value: () => Unit): Self = StObject.set(x, "beforeBlur", js.Any.fromFunction0(value))
+    inline def setBeforeBlur(value: () => Unit): Self = StObject.set(x, "beforeBlur", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setBeforeBlurUndefined: Self = StObject.set(x, "beforeBlur", js.undefined)
+    inline def setBeforeBlurUndefined: Self = StObject.set(x, "beforeBlur", js.undefined)
     
-    @scala.inline
-    def setBeforeQuery(value: /* queryPlan */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beforeQuery", js.Any.fromFunction1(value))
+    inline def setBeforeQuery(value: /* queryPlan */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beforeQuery", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBeforeQueryUndefined: Self = StObject.set(x, "beforeQuery", js.undefined)
+    inline def setBeforeQueryUndefined: Self = StObject.set(x, "beforeQuery", js.undefined)
     
-    @scala.inline
-    def setBeforeReset(value: () => Unit): Self = StObject.set(x, "beforeReset", js.Any.fromFunction0(value))
+    inline def setBeforeReset(value: () => Unit): Self = StObject.set(x, "beforeReset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setBeforeResetUndefined: Self = StObject.set(x, "beforeReset", js.undefined)
+    inline def setBeforeResetUndefined: Self = StObject.set(x, "beforeReset", js.undefined)
     
-    @scala.inline
-    def setBindStore(value: js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "bindStore", js.Any.fromFunction1(value))
+    inline def setBindStore(value: js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "bindStore", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBindStoreListeners(value: js.UndefOr[IAbstractStore] => Unit): Self = StObject.set(x, "bindStoreListeners", js.Any.fromFunction1(value))
+    inline def setBindStoreListeners(value: js.UndefOr[IAbstractStore] => Unit): Self = StObject.set(x, "bindStoreListeners", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBindStoreListenersUndefined: Self = StObject.set(x, "bindStoreListeners", js.undefined)
+    inline def setBindStoreListenersUndefined: Self = StObject.set(x, "bindStoreListeners", js.undefined)
     
-    @scala.inline
-    def setBindStoreUndefined: Self = StObject.set(x, "bindStore", js.undefined)
+    inline def setBindStoreUndefined: Self = StObject.set(x, "bindStore", js.undefined)
     
-    @scala.inline
-    def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
+    inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
+    inline def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
     
-    @scala.inline
-    def setClearValue(value: () => Unit): Self = StObject.set(x, "clearValue", js.Any.fromFunction0(value))
+    inline def setClearValue(value: () => Unit): Self = StObject.set(x, "clearValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClearValueUndefined: Self = StObject.set(x, "clearValue", js.undefined)
+    inline def setClearValueUndefined: Self = StObject.set(x, "clearValue", js.undefined)
     
-    @scala.inline
-    def setDefaultListConfig(value: js.Any): Self = StObject.set(x, "defaultListConfig", value.asInstanceOf[js.Any])
+    inline def setDefaultListConfig(value: js.Any): Self = StObject.set(x, "defaultListConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultListConfigUndefined: Self = StObject.set(x, "defaultListConfig", js.undefined)
+    inline def setDefaultListConfigUndefined: Self = StObject.set(x, "defaultListConfig", js.undefined)
     
-    @scala.inline
-    def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+    inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+    inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
     
-    @scala.inline
-    def setDisplayField(value: String): Self = StObject.set(x, "displayField", value.asInstanceOf[js.Any])
+    inline def setDisplayField(value: String): Self = StObject.set(x, "displayField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayFieldUndefined: Self = StObject.set(x, "displayField", js.undefined)
+    inline def setDisplayFieldUndefined: Self = StObject.set(x, "displayField", js.undefined)
     
-    @scala.inline
-    def setDoQuery(
+    inline def setDoQuery(
       value: (/* queryString */ js.UndefOr[String], /* forceAll */ js.UndefOr[Boolean], /* rawQuery */ js.UndefOr[Boolean]) => Boolean
     ): Self = StObject.set(x, "doQuery", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setDoQueryUndefined: Self = StObject.set(x, "doQuery", js.undefined)
+    inline def setDoQueryUndefined: Self = StObject.set(x, "doQuery", js.undefined)
     
-    @scala.inline
-    def setEnableRegEx(value: Boolean): Self = StObject.set(x, "enableRegEx", value.asInstanceOf[js.Any])
+    inline def setEnableRegEx(value: Boolean): Self = StObject.set(x, "enableRegEx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableRegExUndefined: Self = StObject.set(x, "enableRegEx", js.undefined)
+    inline def setEnableRegExUndefined: Self = StObject.set(x, "enableRegEx", js.undefined)
     
-    @scala.inline
-    def setFieldSubTpl(value: IXTemplate): Self = StObject.set(x, "fieldSubTpl", value.asInstanceOf[js.Any])
+    inline def setFieldSubTpl(value: IXTemplate): Self = StObject.set(x, "fieldSubTpl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldSubTplUndefined: Self = StObject.set(x, "fieldSubTpl", js.undefined)
+    inline def setFieldSubTplUndefined: Self = StObject.set(x, "fieldSubTpl", js.undefined)
     
-    @scala.inline
-    def setFindRecord(value: (/* field */ js.UndefOr[String], /* value */ js.UndefOr[js.Any]) => IModel): Self = StObject.set(x, "findRecord", js.Any.fromFunction2(value))
+    inline def setFindRecord(value: (/* field */ js.UndefOr[String], /* value */ js.UndefOr[js.Any]) => IModel): Self = StObject.set(x, "findRecord", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFindRecordByDisplay(value: /* value */ js.UndefOr[js.Any] => IModel): Self = StObject.set(x, "findRecordByDisplay", js.Any.fromFunction1(value))
+    inline def setFindRecordByDisplay(value: /* value */ js.UndefOr[js.Any] => IModel): Self = StObject.set(x, "findRecordByDisplay", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFindRecordByDisplayUndefined: Self = StObject.set(x, "findRecordByDisplay", js.undefined)
+    inline def setFindRecordByDisplayUndefined: Self = StObject.set(x, "findRecordByDisplay", js.undefined)
     
-    @scala.inline
-    def setFindRecordByValue(value: /* value */ js.UndefOr[js.Any] => IModel): Self = StObject.set(x, "findRecordByValue", js.Any.fromFunction1(value))
+    inline def setFindRecordByValue(value: /* value */ js.UndefOr[js.Any] => IModel): Self = StObject.set(x, "findRecordByValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFindRecordByValueUndefined: Self = StObject.set(x, "findRecordByValue", js.undefined)
+    inline def setFindRecordByValueUndefined: Self = StObject.set(x, "findRecordByValue", js.undefined)
     
-    @scala.inline
-    def setFindRecordUndefined: Self = StObject.set(x, "findRecord", js.undefined)
+    inline def setFindRecordUndefined: Self = StObject.set(x, "findRecord", js.undefined)
     
-    @scala.inline
-    def setForceSelection(value: Boolean): Self = StObject.set(x, "forceSelection", value.asInstanceOf[js.Any])
+    inline def setForceSelection(value: Boolean): Self = StObject.set(x, "forceSelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceSelectionUndefined: Self = StObject.set(x, "forceSelection", js.undefined)
+    inline def setForceSelectionUndefined: Self = StObject.set(x, "forceSelection", js.undefined)
     
-    @scala.inline
-    def setGetStore(value: () => IAbstractStore | IStore): Self = StObject.set(x, "getStore", js.Any.fromFunction0(value))
+    inline def setGetStore(value: () => IAbstractStore | IStore): Self = StObject.set(x, "getStore", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStoreListeners(value: js.Function0[js.Any] | (js.Function1[/* store */ js.UndefOr[IStore], js.Any])): Self = StObject.set(x, "getStoreListeners", value.asInstanceOf[js.Any])
+    inline def setGetStoreListeners(value: js.Function0[js.Any] | (js.Function1[/* store */ js.UndefOr[IStore], js.Any])): Self = StObject.set(x, "getStoreListeners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetStoreListenersFunction0(value: () => js.Any): Self = StObject.set(x, "getStoreListeners", js.Any.fromFunction0(value))
+    inline def setGetStoreListenersFunction0(value: () => js.Any): Self = StObject.set(x, "getStoreListeners", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStoreListenersFunction1(value: /* store */ js.UndefOr[IStore] => js.Any): Self = StObject.set(x, "getStoreListeners", js.Any.fromFunction1(value))
+    inline def setGetStoreListenersFunction1(value: /* store */ js.UndefOr[IStore] => js.Any): Self = StObject.set(x, "getStoreListeners", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetStoreListenersUndefined: Self = StObject.set(x, "getStoreListeners", js.undefined)
+    inline def setGetStoreListenersUndefined: Self = StObject.set(x, "getStoreListeners", js.undefined)
     
-    @scala.inline
-    def setGetStoreUndefined: Self = StObject.set(x, "getStore", js.undefined)
+    inline def setGetStoreUndefined: Self = StObject.set(x, "getStore", js.undefined)
     
-    @scala.inline
-    def setGetSubmitValue(value: () => String): Self = StObject.set(x, "getSubmitValue", js.Any.fromFunction0(value))
+    inline def setGetSubmitValue(value: () => String): Self = StObject.set(x, "getSubmitValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSubmitValueUndefined: Self = StObject.set(x, "getSubmitValue", js.undefined)
+    inline def setGetSubmitValueUndefined: Self = StObject.set(x, "getSubmitValue", js.undefined)
     
-    @scala.inline
-    def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
+    inline def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
     
-    @scala.inline
-    def setGrowToLongestValue(value: Boolean): Self = StObject.set(x, "growToLongestValue", value.asInstanceOf[js.Any])
+    inline def setGrowToLongestValue(value: Boolean): Self = StObject.set(x, "growToLongestValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrowToLongestValueUndefined: Self = StObject.set(x, "growToLongestValue", js.undefined)
+    inline def setGrowToLongestValueUndefined: Self = StObject.set(x, "growToLongestValue", js.undefined)
     
-    @scala.inline
-    def setHiddenName(value: String): Self = StObject.set(x, "hiddenName", value.asInstanceOf[js.Any])
+    inline def setHiddenName(value: String): Self = StObject.set(x, "hiddenName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenNameUndefined: Self = StObject.set(x, "hiddenName", js.undefined)
+    inline def setHiddenNameUndefined: Self = StObject.set(x, "hiddenName", js.undefined)
     
-    @scala.inline
-    def setLastQuery(value: String): Self = StObject.set(x, "lastQuery", value.asInstanceOf[js.Any])
+    inline def setLastQuery(value: String): Self = StObject.set(x, "lastQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastQueryUndefined: Self = StObject.set(x, "lastQuery", js.undefined)
+    inline def setLastQueryUndefined: Self = StObject.set(x, "lastQuery", js.undefined)
     
-    @scala.inline
-    def setListConfig(value: js.Any): Self = StObject.set(x, "listConfig", value.asInstanceOf[js.Any])
+    inline def setListConfig(value: js.Any): Self = StObject.set(x, "listConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListConfigUndefined: Self = StObject.set(x, "listConfig", js.undefined)
+    inline def setListConfigUndefined: Self = StObject.set(x, "listConfig", js.undefined)
     
-    @scala.inline
-    def setMinChars(value: Double): Self = StObject.set(x, "minChars", value.asInstanceOf[js.Any])
+    inline def setMinChars(value: Double): Self = StObject.set(x, "minChars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinCharsUndefined: Self = StObject.set(x, "minChars", js.undefined)
+    inline def setMinCharsUndefined: Self = StObject.set(x, "minChars", js.undefined)
     
-    @scala.inline
-    def setMultiSelect(value: Boolean): Self = StObject.set(x, "multiSelect", value.asInstanceOf[js.Any])
+    inline def setMultiSelect(value: Boolean): Self = StObject.set(x, "multiSelect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiSelectUndefined: Self = StObject.set(x, "multiSelect", js.undefined)
+    inline def setMultiSelectUndefined: Self = StObject.set(x, "multiSelect", js.undefined)
     
-    @scala.inline
-    def setOnBindStore(value: (js.UndefOr[js.Any | IAbstractStore], js.UndefOr[js.Any | Boolean]) => Unit): Self = StObject.set(x, "onBindStore", js.Any.fromFunction2(value))
+    inline def setOnBindStore(value: (js.UndefOr[js.Any | IAbstractStore], js.UndefOr[js.Any | Boolean]) => Unit): Self = StObject.set(x, "onBindStore", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnBindStoreUndefined: Self = StObject.set(x, "onBindStore", js.undefined)
+    inline def setOnBindStoreUndefined: Self = StObject.set(x, "onBindStore", js.undefined)
     
-    @scala.inline
-    def setOnUnbindStore(
+    inline def setOnUnbindStore(
       value: (js.Function1[/* store */ js.UndefOr[js.Any], Unit]) | (js.Function2[/* store */ js.UndefOr[IAbstractStore], /* initial */ js.UndefOr[Boolean], Unit])
     ): Self = StObject.set(x, "onUnbindStore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnUnbindStoreFunction1(value: /* store */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onUnbindStore", js.Any.fromFunction1(value))
+    inline def setOnUnbindStoreFunction1(value: /* store */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onUnbindStore", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnUnbindStoreFunction2(value: (/* store */ js.UndefOr[IAbstractStore], /* initial */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "onUnbindStore", js.Any.fromFunction2(value))
+    inline def setOnUnbindStoreFunction2(value: (/* store */ js.UndefOr[IAbstractStore], /* initial */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "onUnbindStore", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnUnbindStoreUndefined: Self = StObject.set(x, "onUnbindStore", js.undefined)
+    inline def setOnUnbindStoreUndefined: Self = StObject.set(x, "onUnbindStore", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
-    @scala.inline
-    def setQueryCaching(value: Boolean): Self = StObject.set(x, "queryCaching", value.asInstanceOf[js.Any])
+    inline def setQueryCaching(value: Boolean): Self = StObject.set(x, "queryCaching", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryCachingUndefined: Self = StObject.set(x, "queryCaching", js.undefined)
+    inline def setQueryCachingUndefined: Self = StObject.set(x, "queryCaching", js.undefined)
     
-    @scala.inline
-    def setQueryDelay(value: Double): Self = StObject.set(x, "queryDelay", value.asInstanceOf[js.Any])
+    inline def setQueryDelay(value: Double): Self = StObject.set(x, "queryDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryDelayUndefined: Self = StObject.set(x, "queryDelay", js.undefined)
+    inline def setQueryDelayUndefined: Self = StObject.set(x, "queryDelay", js.undefined)
     
-    @scala.inline
-    def setQueryMode(value: String): Self = StObject.set(x, "queryMode", value.asInstanceOf[js.Any])
+    inline def setQueryMode(value: String): Self = StObject.set(x, "queryMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryModeUndefined: Self = StObject.set(x, "queryMode", js.undefined)
+    inline def setQueryModeUndefined: Self = StObject.set(x, "queryMode", js.undefined)
     
-    @scala.inline
-    def setQueryParam(value: String): Self = StObject.set(x, "queryParam", value.asInstanceOf[js.Any])
+    inline def setQueryParam(value: String): Self = StObject.set(x, "queryParam", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryParamUndefined: Self = StObject.set(x, "queryParam", js.undefined)
+    inline def setQueryParamUndefined: Self = StObject.set(x, "queryParam", js.undefined)
     
-    @scala.inline
-    def setSelect(value: /* r */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+    inline def setSelect(value: /* r */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSelectOnTab(value: Boolean): Self = StObject.set(x, "selectOnTab", value.asInstanceOf[js.Any])
+    inline def setSelectOnTab(value: Boolean): Self = StObject.set(x, "selectOnTab", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectOnTabUndefined: Self = StObject.set(x, "selectOnTab", js.undefined)
+    inline def setSelectOnTabUndefined: Self = StObject.set(x, "selectOnTab", js.undefined)
     
-    @scala.inline
-    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+    inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
-    @scala.inline
-    def setStore(value: js.Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+    inline def setStore(value: js.Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
+    inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
     
-    @scala.inline
-    def setTransform(value: js.Any): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    inline def setTransform(value: js.Any): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+    inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     
-    @scala.inline
-    def setTriggerAction(value: String): Self = StObject.set(x, "triggerAction", value.asInstanceOf[js.Any])
+    inline def setTriggerAction(value: String): Self = StObject.set(x, "triggerAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerActionUndefined: Self = StObject.set(x, "triggerAction", js.undefined)
+    inline def setTriggerActionUndefined: Self = StObject.set(x, "triggerAction", js.undefined)
     
-    @scala.inline
-    def setTypeAhead(value: Boolean): Self = StObject.set(x, "typeAhead", value.asInstanceOf[js.Any])
+    inline def setTypeAhead(value: Boolean): Self = StObject.set(x, "typeAhead", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeAheadDelay(value: Double): Self = StObject.set(x, "typeAheadDelay", value.asInstanceOf[js.Any])
+    inline def setTypeAheadDelay(value: Double): Self = StObject.set(x, "typeAheadDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeAheadDelayUndefined: Self = StObject.set(x, "typeAheadDelay", js.undefined)
+    inline def setTypeAheadDelayUndefined: Self = StObject.set(x, "typeAheadDelay", js.undefined)
     
-    @scala.inline
-    def setTypeAheadUndefined: Self = StObject.set(x, "typeAhead", js.undefined)
+    inline def setTypeAheadUndefined: Self = StObject.set(x, "typeAhead", js.undefined)
     
-    @scala.inline
-    def setUnbindStoreListeners(value: js.UndefOr[IAbstractStore] => Unit): Self = StObject.set(x, "unbindStoreListeners", js.Any.fromFunction1(value))
+    inline def setUnbindStoreListeners(value: js.UndefOr[IAbstractStore] => Unit): Self = StObject.set(x, "unbindStoreListeners", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnbindStoreListenersUndefined: Self = StObject.set(x, "unbindStoreListeners", js.undefined)
+    inline def setUnbindStoreListenersUndefined: Self = StObject.set(x, "unbindStoreListeners", js.undefined)
     
-    @scala.inline
-    def setValueField(value: String): Self = StObject.set(x, "valueField", value.asInstanceOf[js.Any])
+    inline def setValueField(value: String): Self = StObject.set(x, "valueField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueFieldUndefined: Self = StObject.set(x, "valueField", js.undefined)
+    inline def setValueFieldUndefined: Self = StObject.set(x, "valueField", js.undefined)
     
-    @scala.inline
-    def setValueNotFoundText(value: String): Self = StObject.set(x, "valueNotFoundText", value.asInstanceOf[js.Any])
+    inline def setValueNotFoundText(value: String): Self = StObject.set(x, "valueNotFoundText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueNotFoundTextUndefined: Self = StObject.set(x, "valueNotFoundText", js.undefined)
+    inline def setValueNotFoundTextUndefined: Self = StObject.set(x, "valueNotFoundText", js.undefined)
   }
 }

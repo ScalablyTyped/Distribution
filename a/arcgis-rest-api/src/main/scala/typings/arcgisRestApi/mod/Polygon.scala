@@ -13,19 +13,15 @@ trait Polygon
 }
 object Polygon {
   
-  @scala.inline
-  def apply(rings: js.Array[js.Array[Position]]): Polygon = {
+  inline def apply(rings: js.Array[js.Array[Position]]): Polygon = {
     val __obj = js.Dynamic.literal(rings = rings.asInstanceOf[js.Any])
     __obj.asInstanceOf[Polygon]
   }
   
-  @scala.inline
-  implicit class PolygonMutableBuilder[Self <: Polygon] (val x: Self) extends AnyVal {
+  extension [Self <: Polygon](x: Self) {
     
-    @scala.inline
-    def setRings(value: js.Array[js.Array[Position]]): Self = StObject.set(x, "rings", value.asInstanceOf[js.Any])
+    inline def setRings(value: js.Array[js.Array[Position]]): Self = StObject.set(x, "rings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRingsVarargs(value: js.Array[Position]*): Self = StObject.set(x, "rings", js.Array(value :_*))
+    inline def setRingsVarargs(value: js.Array[Position]*): Self = StObject.set(x, "rings", js.Array(value :_*))
   }
 }

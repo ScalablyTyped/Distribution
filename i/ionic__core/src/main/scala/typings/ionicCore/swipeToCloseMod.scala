@@ -22,10 +22,8 @@ object swipeToCloseMod {
     @JSImport("@ionic/core/dist/types/components/modal/gestures/swipe-to-close", "SwipeToCloseDefaults.MIN_PRESENTING_SCALE")
     @js.native
     def MIN_PRESENTING_SCALE: Double = js.native
-    @scala.inline
-    def MIN_PRESENTING_SCALE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_PRESENTING_SCALE")(x.asInstanceOf[js.Any])
+    inline def MIN_PRESENTING_SCALE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_PRESENTING_SCALE")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def createSwipeToCloseGesture(el: HTMLIonModalElement, animation: Animation, onDismiss: js.Function0[Unit]): Gesture = (^.asInstanceOf[js.Dynamic].applyDynamic("createSwipeToCloseGesture")(el.asInstanceOf[js.Any], animation.asInstanceOf[js.Any], onDismiss.asInstanceOf[js.Any])).asInstanceOf[Gesture]
+  inline def createSwipeToCloseGesture(el: HTMLIonModalElement, animation: Animation, onDismiss: js.Function0[Unit]): Gesture = (^.asInstanceOf[js.Dynamic].applyDynamic("createSwipeToCloseGesture")(el.asInstanceOf[js.Any], animation.asInstanceOf[js.Any], onDismiss.asInstanceOf[js.Any])).asInstanceOf[Gesture]
 }

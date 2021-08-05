@@ -10,8 +10,7 @@ trait UpdateGcmChannelInput
      with typings.awsSdkClientPinpointBrowser.typesUpdateGcmChannelInputMod.UpdateGcmChannelInput
 object UpdateGcmChannelInput {
   
-  @scala.inline
-  def apply(ApplicationId: String, GCMChannelRequest: GCMChannelRequest): UpdateGcmChannelInput = {
+  inline def apply(ApplicationId: String, GCMChannelRequest: GCMChannelRequest): UpdateGcmChannelInput = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], GCMChannelRequest = GCMChannelRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateGcmChannelInput]
   }

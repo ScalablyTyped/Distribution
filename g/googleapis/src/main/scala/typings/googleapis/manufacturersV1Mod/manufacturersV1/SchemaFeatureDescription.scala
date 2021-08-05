@@ -27,31 +27,23 @@ trait SchemaFeatureDescription extends StObject {
 }
 object SchemaFeatureDescription {
   
-  @scala.inline
-  def apply(): SchemaFeatureDescription = {
+  inline def apply(): SchemaFeatureDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFeatureDescription]
   }
   
-  @scala.inline
-  implicit class SchemaFeatureDescriptionMutableBuilder[Self <: SchemaFeatureDescription] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFeatureDescription](x: Self) {
     
-    @scala.inline
-    def setHeadline(value: String): Self = StObject.set(x, "headline", value.asInstanceOf[js.Any])
+    inline def setHeadline(value: String): Self = StObject.set(x, "headline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadlineUndefined: Self = StObject.set(x, "headline", js.undefined)
+    inline def setHeadlineUndefined: Self = StObject.set(x, "headline", js.undefined)
     
-    @scala.inline
-    def setImage(value: SchemaImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: SchemaImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

@@ -74,8 +74,7 @@ object mod {
   /**
     * Removes generated tokens and mocked endpoints.
     */
-  @scala.inline
-  def cleanMock(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanMock")().asInstanceOf[Unit]
+  inline def cleanMock(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanMock")().asInstanceOf[Unit]
   
   /**
     * Returns URI to request authorization code with the given parameters.
@@ -86,10 +85,8 @@ object mod {
     * @param queryParams - optional set of key-value pairs which will be added as query parameters to the request
     * @returns {string}
     */
-  @scala.inline
-  def createAuthCodeRequestUri(authorizationEndpoint: String, redirectUri: String, clientId: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createAuthCodeRequestUri")(authorizationEndpoint.asInstanceOf[js.Any], redirectUri.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def createAuthCodeRequestUri(
+  inline def createAuthCodeRequestUri(authorizationEndpoint: String, redirectUri: String, clientId: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createAuthCodeRequestUri")(authorizationEndpoint.asInstanceOf[js.Any], redirectUri.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def createAuthCodeRequestUri(
     authorizationEndpoint: String,
     redirectUri: String,
     clientId: String,
@@ -110,10 +107,8 @@ object mod {
     * @param logger - optional logger
     * @returns {Promise<T>}
     */
-  @scala.inline
-  def getAccessToken(options: OAuthConfig): js.Promise[Token[Record[String, js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccessToken")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Token[Record[String, js.Any]]]]
-  @scala.inline
-  def getAccessToken(options: OAuthConfig, logger: Logger): js.Promise[Token[Record[String, js.Any]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAccessToken")(options.asInstanceOf[js.Any], logger.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Token[Record[String, js.Any]]]]
+  inline def getAccessToken(options: OAuthConfig): js.Promise[Token[Record[String, js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccessToken")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Token[Record[String, js.Any]]]]
+  inline def getAccessToken(options: OAuthConfig, logger: Logger): js.Promise[Token[Record[String, js.Any]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAccessToken")(options.asInstanceOf[js.Any], logger.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Token[Record[String, js.Any]]]]
   
   /**
     * Makes a request to the `tokenInfoUrl` to validate the given `accessToken`.
@@ -140,13 +135,10 @@ object mod {
     *
     * @throws on parse error of options.url
     */
-  @scala.inline
-  def mockAccessTokenEndpoint(options: MockOptions): Scope = ^.asInstanceOf[js.Dynamic].applyDynamic("mockAccessTokenEndpoint")(options.asInstanceOf[js.Any]).asInstanceOf[Scope]
+  inline def mockAccessTokenEndpoint(options: MockOptions): Scope = ^.asInstanceOf[js.Dynamic].applyDynamic("mockAccessTokenEndpoint")(options.asInstanceOf[js.Any]).asInstanceOf[Scope]
   
-  @scala.inline
-  def mockAccessTokenEndpointWithErrorResponse(options: MockOptions, httpStatus: Double): Scope = (^.asInstanceOf[js.Dynamic].applyDynamic("mockAccessTokenEndpointWithErrorResponse")(options.asInstanceOf[js.Any], httpStatus.asInstanceOf[js.Any])).asInstanceOf[Scope]
-  @scala.inline
-  def mockAccessTokenEndpointWithErrorResponse(options: MockOptions, httpStatus: Double, responseBody: Record[String, js.Any]): Scope = (^.asInstanceOf[js.Dynamic].applyDynamic("mockAccessTokenEndpointWithErrorResponse")(options.asInstanceOf[js.Any], httpStatus.asInstanceOf[js.Any], responseBody.asInstanceOf[js.Any])).asInstanceOf[Scope]
+  inline def mockAccessTokenEndpointWithErrorResponse(options: MockOptions, httpStatus: Double): Scope = (^.asInstanceOf[js.Dynamic].applyDynamic("mockAccessTokenEndpointWithErrorResponse")(options.asInstanceOf[js.Any], httpStatus.asInstanceOf[js.Any])).asInstanceOf[Scope]
+  inline def mockAccessTokenEndpointWithErrorResponse(options: MockOptions, httpStatus: Double, responseBody: Record[String, js.Any]): Scope = (^.asInstanceOf[js.Dynamic].applyDynamic("mockAccessTokenEndpointWithErrorResponse")(options.asInstanceOf[js.Any], httpStatus.asInstanceOf[js.Any], responseBody.asInstanceOf[js.Any])).asInstanceOf[Scope]
   
   /**
     * Creates a __very basic__ mock of a token validation endpoint.
@@ -156,22 +148,16 @@ object mod {
     *
     * @throws on parse error of options.url
     */
-  @scala.inline
-  def mockTokeninfoEndpoint(options: MockOptions): Scope = ^.asInstanceOf[js.Dynamic].applyDynamic("mockTokeninfoEndpoint")(options.asInstanceOf[js.Any]).asInstanceOf[Scope]
-  @scala.inline
-  def mockTokeninfoEndpoint(options: MockOptions, tokens: js.Array[Token[Record[String, js.Any]]]): Scope = (^.asInstanceOf[js.Dynamic].applyDynamic("mockTokeninfoEndpoint")(options.asInstanceOf[js.Any], tokens.asInstanceOf[js.Any])).asInstanceOf[Scope]
+  inline def mockTokeninfoEndpoint(options: MockOptions): Scope = ^.asInstanceOf[js.Dynamic].applyDynamic("mockTokeninfoEndpoint")(options.asInstanceOf[js.Any]).asInstanceOf[Scope]
+  inline def mockTokeninfoEndpoint(options: MockOptions, tokens: js.Array[Token[Record[String, js.Any]]]): Scope = (^.asInstanceOf[js.Dynamic].applyDynamic("mockTokeninfoEndpoint")(options.asInstanceOf[js.Any], tokens.asInstanceOf[js.Any])).asInstanceOf[Scope]
   
-  @scala.inline
-  def mockTokeninfoEndpointWithErrorResponse(options: MockOptions, httpStatus: Double): Scope = (^.asInstanceOf[js.Dynamic].applyDynamic("mockTokeninfoEndpointWithErrorResponse")(options.asInstanceOf[js.Any], httpStatus.asInstanceOf[js.Any])).asInstanceOf[Scope]
-  @scala.inline
-  def mockTokeninfoEndpointWithErrorResponse(options: MockOptions, httpStatus: Double, responseBody: Record[String, js.Any]): Scope = (^.asInstanceOf[js.Dynamic].applyDynamic("mockTokeninfoEndpointWithErrorResponse")(options.asInstanceOf[js.Any], httpStatus.asInstanceOf[js.Any], responseBody.asInstanceOf[js.Any])).asInstanceOf[Scope]
+  inline def mockTokeninfoEndpointWithErrorResponse(options: MockOptions, httpStatus: Double): Scope = (^.asInstanceOf[js.Dynamic].applyDynamic("mockTokeninfoEndpointWithErrorResponse")(options.asInstanceOf[js.Any], httpStatus.asInstanceOf[js.Any])).asInstanceOf[Scope]
+  inline def mockTokeninfoEndpointWithErrorResponse(options: MockOptions, httpStatus: Double, responseBody: Record[String, js.Any]): Scope = (^.asInstanceOf[js.Dynamic].applyDynamic("mockTokeninfoEndpointWithErrorResponse")(options.asInstanceOf[js.Any], httpStatus.asInstanceOf[js.Any], responseBody.asInstanceOf[js.Any])).asInstanceOf[Scope]
   
   @JSImport("authmosphere", "requireScopesMiddleware")
   @js.native
   val requireScopesMiddleware: typings.authmosphere.expressToolingMod.requireScopesMiddleware = js.native
   
-  @scala.inline
-  def safeLogger(): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("safeLogger")().asInstanceOf[Logger]
-  @scala.inline
-  def safeLogger(logger: Logger): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("safeLogger")(logger.asInstanceOf[js.Any]).asInstanceOf[Logger]
+  inline def safeLogger(): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("safeLogger")().asInstanceOf[Logger]
+  inline def safeLogger(logger: Logger): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("safeLogger")(logger.asInstanceOf[js.Any]).asInstanceOf[Logger]
 }

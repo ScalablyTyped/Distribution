@@ -10,19 +10,15 @@ trait PlotAroonoscillatorAnimationOptions extends StObject {
 }
 object PlotAroonoscillatorAnimationOptions {
   
-  @scala.inline
-  def apply(): PlotAroonoscillatorAnimationOptions = {
+  inline def apply(): PlotAroonoscillatorAnimationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotAroonoscillatorAnimationOptions]
   }
   
-  @scala.inline
-  implicit class PlotAroonoscillatorAnimationOptionsMutableBuilder[Self <: PlotAroonoscillatorAnimationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotAroonoscillatorAnimationOptions](x: Self) {
     
-    @scala.inline
-    def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
+    inline def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
+    inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
   }
 }

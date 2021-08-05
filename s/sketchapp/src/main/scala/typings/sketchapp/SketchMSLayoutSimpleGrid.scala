@@ -19,25 +19,19 @@ trait SketchMSLayoutSimpleGrid
 }
 object SketchMSLayoutSimpleGrid {
   
-  @scala.inline
-  def apply(gridSize: Double, isEnabled: Double, thickGridTimes: Double): SketchMSLayoutSimpleGrid = {
+  inline def apply(gridSize: Double, isEnabled: Double, thickGridTimes: Double): SketchMSLayoutSimpleGrid = {
     val __obj = js.Dynamic.literal(_class = "simpleGrid", gridSize = gridSize.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], thickGridTimes = thickGridTimes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSLayoutSimpleGrid]
   }
   
-  @scala.inline
-  implicit class SketchMSLayoutSimpleGridMutableBuilder[Self <: SketchMSLayoutSimpleGrid] (val x: Self) extends AnyVal {
+  extension [Self <: SketchMSLayoutSimpleGrid](x: Self) {
     
-    @scala.inline
-    def setGridSize(value: Double): Self = StObject.set(x, "gridSize", value.asInstanceOf[js.Any])
+    inline def setGridSize(value: Double): Self = StObject.set(x, "gridSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEnabled(value: Double): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+    inline def setIsEnabled(value: Double): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThickGridTimes(value: Double): Self = StObject.set(x, "thickGridTimes", value.asInstanceOf[js.Any])
+    inline def setThickGridTimes(value: Double): Self = StObject.set(x, "thickGridTimes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_class(value: simpleGrid): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
+    inline def set_class(value: simpleGrid): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

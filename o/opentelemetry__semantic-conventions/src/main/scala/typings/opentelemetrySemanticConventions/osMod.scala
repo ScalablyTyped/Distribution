@@ -22,8 +22,7 @@ object osMod {
     @JSImport("@opentelemetry/semantic-conventions/build/src/trace/os", "OperatingSystem.DESCRIPTION")
     @js.native
     def DESCRIPTION: String = js.native
-    @scala.inline
-    def DESCRIPTION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DESCRIPTION")(x.asInstanceOf[js.Any])
+    inline def DESCRIPTION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DESCRIPTION")(x.asInstanceOf[js.Any])
     
     /**
       * The operating system type.
@@ -36,8 +35,7 @@ object osMod {
     @JSImport("@opentelemetry/semantic-conventions/build/src/trace/os", "OperatingSystem.TYPE")
     @js.native
     def TYPE: String = js.native
-    @scala.inline
-    def TYPE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TYPE")(x.asInstanceOf[js.Any])
+    inline def TYPE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TYPE")(x.asInstanceOf[js.Any])
   }
   
   object OperatingSystemValues {
@@ -49,67 +47,56 @@ object osMod {
     @JSImport("@opentelemetry/semantic-conventions/build/src/trace/os", "OperatingSystemValues.AIX")
     @js.native
     def AIX: String = js.native
-    @scala.inline
-    def AIX_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AIX")(x.asInstanceOf[js.Any])
+    inline def AIX_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AIX")(x.asInstanceOf[js.Any])
     
     @JSImport("@opentelemetry/semantic-conventions/build/src/trace/os", "OperatingSystemValues.DARWIN")
     @js.native
     def DARWIN: String = js.native
-    @scala.inline
-    def DARWIN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DARWIN")(x.asInstanceOf[js.Any])
+    inline def DARWIN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DARWIN")(x.asInstanceOf[js.Any])
     
     @JSImport("@opentelemetry/semantic-conventions/build/src/trace/os", "OperatingSystemValues.DRAGONFLYBSD")
     @js.native
     def DRAGONFLYBSD: String = js.native
-    @scala.inline
-    def DRAGONFLYBSD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DRAGONFLYBSD")(x.asInstanceOf[js.Any])
+    inline def DRAGONFLYBSD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DRAGONFLYBSD")(x.asInstanceOf[js.Any])
     
     @JSImport("@opentelemetry/semantic-conventions/build/src/trace/os", "OperatingSystemValues.FREEBSD")
     @js.native
     def FREEBSD: String = js.native
-    @scala.inline
-    def FREEBSD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FREEBSD")(x.asInstanceOf[js.Any])
+    inline def FREEBSD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FREEBSD")(x.asInstanceOf[js.Any])
     
     @JSImport("@opentelemetry/semantic-conventions/build/src/trace/os", "OperatingSystemValues.HPUX")
     @js.native
     def HPUX: String = js.native
-    @scala.inline
-    def HPUX_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HPUX")(x.asInstanceOf[js.Any])
+    inline def HPUX_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HPUX")(x.asInstanceOf[js.Any])
     
     @JSImport("@opentelemetry/semantic-conventions/build/src/trace/os", "OperatingSystemValues.LINUX")
     @js.native
     def LINUX: String = js.native
-    @scala.inline
-    def LINUX_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINUX")(x.asInstanceOf[js.Any])
+    inline def LINUX_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINUX")(x.asInstanceOf[js.Any])
     
     @JSImport("@opentelemetry/semantic-conventions/build/src/trace/os", "OperatingSystemValues.NETBSD")
     @js.native
     def NETBSD: String = js.native
-    @scala.inline
-    def NETBSD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NETBSD")(x.asInstanceOf[js.Any])
+    inline def NETBSD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NETBSD")(x.asInstanceOf[js.Any])
     
     @JSImport("@opentelemetry/semantic-conventions/build/src/trace/os", "OperatingSystemValues.OPENBSD")
     @js.native
     def OPENBSD: String = js.native
-    @scala.inline
-    def OPENBSD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPENBSD")(x.asInstanceOf[js.Any])
+    inline def OPENBSD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPENBSD")(x.asInstanceOf[js.Any])
     
     @JSImport("@opentelemetry/semantic-conventions/build/src/trace/os", "OperatingSystemValues.SOLARIS")
     @js.native
     def SOLARIS: String = js.native
-    @scala.inline
-    def SOLARIS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SOLARIS")(x.asInstanceOf[js.Any])
+    inline def SOLARIS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SOLARIS")(x.asInstanceOf[js.Any])
     
     @JSImport("@opentelemetry/semantic-conventions/build/src/trace/os", "OperatingSystemValues.WINDOWS")
     @js.native
     def WINDOWS: String = js.native
-    @scala.inline
-    def WINDOWS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WINDOWS")(x.asInstanceOf[js.Any])
+    inline def WINDOWS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WINDOWS")(x.asInstanceOf[js.Any])
     
     @JSImport("@opentelemetry/semantic-conventions/build/src/trace/os", "OperatingSystemValues.ZOS")
     @js.native
     def ZOS: String = js.native
-    @scala.inline
-    def ZOS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZOS")(x.asInstanceOf[js.Any])
+    inline def ZOS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZOS")(x.asInstanceOf[js.Any])
   }
 }

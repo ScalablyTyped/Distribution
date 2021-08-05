@@ -36,8 +36,7 @@ object relationCountMetadataArgsMod {
   }
   object RelationCountMetadataArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       propertyName: String,
       relation: String | (js.Function1[/* object */ js.Any, js.Any]),
       target: js.Function
@@ -46,32 +45,23 @@ object relationCountMetadataArgsMod {
       __obj.asInstanceOf[RelationCountMetadataArgs]
     }
     
-    @scala.inline
-    implicit class RelationCountMetadataArgsMutableBuilder[Self <: RelationCountMetadataArgs] (val x: Self) extends AnyVal {
+    extension [Self <: RelationCountMetadataArgs](x: Self) {
       
-      @scala.inline
-      def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+      inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+      inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
       
-      @scala.inline
-      def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
+      inline def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryBuilderFactory(value: /* qb */ SelectQueryBuilder[js.Any] => SelectQueryBuilder[js.Any]): Self = StObject.set(x, "queryBuilderFactory", js.Any.fromFunction1(value))
+      inline def setQueryBuilderFactory(value: /* qb */ SelectQueryBuilder[js.Any] => SelectQueryBuilder[js.Any]): Self = StObject.set(x, "queryBuilderFactory", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setQueryBuilderFactoryUndefined: Self = StObject.set(x, "queryBuilderFactory", js.undefined)
+      inline def setQueryBuilderFactoryUndefined: Self = StObject.set(x, "queryBuilderFactory", js.undefined)
       
-      @scala.inline
-      def setRelation(value: String | (js.Function1[/* object */ js.Any, js.Any])): Self = StObject.set(x, "relation", value.asInstanceOf[js.Any])
+      inline def setRelation(value: String | (js.Function1[/* object */ js.Any, js.Any])): Self = StObject.set(x, "relation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelationFunction1(value: /* object */ js.Any => js.Any): Self = StObject.set(x, "relation", js.Any.fromFunction1(value))
+      inline def setRelationFunction1(value: /* object */ js.Any => js.Any): Self = StObject.set(x, "relation", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTarget(value: js.Function): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: js.Function): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
 }

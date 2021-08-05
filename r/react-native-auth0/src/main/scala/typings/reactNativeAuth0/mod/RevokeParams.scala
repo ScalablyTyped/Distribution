@@ -10,16 +10,13 @@ trait RevokeParams extends StObject {
 }
 object RevokeParams {
   
-  @scala.inline
-  def apply(refreshToken: String): RevokeParams = {
+  inline def apply(refreshToken: String): RevokeParams = {
     val __obj = js.Dynamic.literal(refreshToken = refreshToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[RevokeParams]
   }
   
-  @scala.inline
-  implicit class RevokeParamsMutableBuilder[Self <: RevokeParams] (val x: Self) extends AnyVal {
+  extension [Self <: RevokeParams](x: Self) {
     
-    @scala.inline
-    def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
+    inline def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
   }
 }

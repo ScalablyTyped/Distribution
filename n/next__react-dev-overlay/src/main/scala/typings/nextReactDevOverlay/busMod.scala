@@ -32,14 +32,11 @@ object busMod {
   @js.native
   val TYPE_UNHANDLED_REJECTION: /* "unhandled-rejection" */ String = js.native
   
-  @scala.inline
-  def emit(ev: BusEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("emit")(ev.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def emit(ev: BusEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("emit")(ev.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def off(fn: BusEventHandler): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(fn.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def off(fn: BusEventHandler): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(fn.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def on(fn: BusEventHandler): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("on")(fn.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def on(fn: BusEventHandler): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("on")(fn.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   trait BuildError
     extends StObject
@@ -51,21 +48,17 @@ object busMod {
   }
   object BuildError {
     
-    @scala.inline
-    def apply(message: String, `type`: /* "build-error" */ String): BuildError = {
+    inline def apply(message: String, `type`: /* "build-error" */ String): BuildError = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[BuildError]
     }
     
-    @scala.inline
-    implicit class BuildErrorMutableBuilder[Self <: BuildError] (val x: Self) extends AnyVal {
+    extension [Self <: BuildError](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: /* "build-error" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: /* "build-error" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -77,18 +70,15 @@ object busMod {
   }
   object BuildOk {
     
-    @scala.inline
-    def apply(`type`: /* "build-ok" */ String): BuildOk = {
+    inline def apply(`type`: /* "build-ok" */ String): BuildOk = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[BuildOk]
     }
     
-    @scala.inline
-    implicit class BuildOkMutableBuilder[Self <: BuildOk] (val x: Self) extends AnyVal {
+    extension [Self <: BuildOk](x: Self) {
       
-      @scala.inline
-      def setType(value: /* "build-ok" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: /* "build-ok" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -102,36 +92,31 @@ object busMod {
   trait BusEvent extends StObject
   object BusEvent {
     
-    @scala.inline
-    def BuildError(message: String, `type`: /* "build-error" */ String): typings.nextReactDevOverlay.busMod.BuildError = {
+    inline def BuildError(message: String, `type`: /* "build-error" */ String): typings.nextReactDevOverlay.busMod.BuildError = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.nextReactDevOverlay.busMod.BuildError]
     }
     
-    @scala.inline
-    def BuildOk(`type`: /* "build-ok" */ String): typings.nextReactDevOverlay.busMod.BuildOk = {
+    inline def BuildOk(`type`: /* "build-ok" */ String): typings.nextReactDevOverlay.busMod.BuildOk = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.nextReactDevOverlay.busMod.BuildOk]
     }
     
-    @scala.inline
-    def FastRefresh(`type`: /* "fast-refresh" */ String): typings.nextReactDevOverlay.busMod.FastRefresh = {
+    inline def FastRefresh(`type`: /* "fast-refresh" */ String): typings.nextReactDevOverlay.busMod.FastRefresh = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.nextReactDevOverlay.busMod.FastRefresh]
     }
     
-    @scala.inline
-    def UnhandledError(frames: js.Array[StackFrame], reason: Error, `type`: /* "unhandled-error" */ String): typings.nextReactDevOverlay.busMod.UnhandledError = {
+    inline def UnhandledError(frames: js.Array[StackFrame], reason: Error, `type`: /* "unhandled-error" */ String): typings.nextReactDevOverlay.busMod.UnhandledError = {
       val __obj = js.Dynamic.literal(frames = frames.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.nextReactDevOverlay.busMod.UnhandledError]
     }
     
-    @scala.inline
-    def UnhandledRejection(frames: js.Array[StackFrame], reason: Error, `type`: /* "unhandled-rejection" */ String): typings.nextReactDevOverlay.busMod.UnhandledRejection = {
+    inline def UnhandledRejection(frames: js.Array[StackFrame], reason: Error, `type`: /* "unhandled-rejection" */ String): typings.nextReactDevOverlay.busMod.UnhandledRejection = {
       val __obj = js.Dynamic.literal(frames = frames.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.nextReactDevOverlay.busMod.UnhandledRejection]
@@ -148,18 +133,15 @@ object busMod {
   }
   object FastRefresh {
     
-    @scala.inline
-    def apply(`type`: /* "fast-refresh" */ String): FastRefresh = {
+    inline def apply(`type`: /* "fast-refresh" */ String): FastRefresh = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[FastRefresh]
     }
     
-    @scala.inline
-    implicit class FastRefreshMutableBuilder[Self <: FastRefresh] (val x: Self) extends AnyVal {
+    extension [Self <: FastRefresh](x: Self) {
       
-      @scala.inline
-      def setType(value: /* "fast-refresh" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: /* "fast-refresh" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -175,27 +157,21 @@ object busMod {
   }
   object UnhandledError {
     
-    @scala.inline
-    def apply(frames: js.Array[StackFrame], reason: Error, `type`: /* "unhandled-error" */ String): UnhandledError = {
+    inline def apply(frames: js.Array[StackFrame], reason: Error, `type`: /* "unhandled-error" */ String): UnhandledError = {
       val __obj = js.Dynamic.literal(frames = frames.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnhandledError]
     }
     
-    @scala.inline
-    implicit class UnhandledErrorMutableBuilder[Self <: UnhandledError] (val x: Self) extends AnyVal {
+    extension [Self <: UnhandledError](x: Self) {
       
-      @scala.inline
-      def setFrames(value: js.Array[StackFrame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
+      inline def setFrames(value: js.Array[StackFrame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFramesVarargs(value: StackFrame*): Self = StObject.set(x, "frames", js.Array(value :_*))
+      inline def setFramesVarargs(value: StackFrame*): Self = StObject.set(x, "frames", js.Array(value :_*))
       
-      @scala.inline
-      def setReason(value: Error): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      inline def setReason(value: Error): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: /* "unhandled-error" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: /* "unhandled-error" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -211,27 +187,21 @@ object busMod {
   }
   object UnhandledRejection {
     
-    @scala.inline
-    def apply(frames: js.Array[StackFrame], reason: Error, `type`: /* "unhandled-rejection" */ String): UnhandledRejection = {
+    inline def apply(frames: js.Array[StackFrame], reason: Error, `type`: /* "unhandled-rejection" */ String): UnhandledRejection = {
       val __obj = js.Dynamic.literal(frames = frames.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnhandledRejection]
     }
     
-    @scala.inline
-    implicit class UnhandledRejectionMutableBuilder[Self <: UnhandledRejection] (val x: Self) extends AnyVal {
+    extension [Self <: UnhandledRejection](x: Self) {
       
-      @scala.inline
-      def setFrames(value: js.Array[StackFrame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
+      inline def setFrames(value: js.Array[StackFrame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFramesVarargs(value: StackFrame*): Self = StObject.set(x, "frames", js.Array(value :_*))
+      inline def setFramesVarargs(value: StackFrame*): Self = StObject.set(x, "frames", js.Array(value :_*))
       
-      @scala.inline
-      def setReason(value: Error): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      inline def setReason(value: Error): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: /* "unhandled-rejection" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: /* "unhandled-rejection" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -24,58 +24,41 @@ trait RefTransaction extends StObject {
 }
 object RefTransaction {
   
-  @scala.inline
-  def apply(bin_outputs: js.Array[BinOutput], hash: String, inputs: js.Array[Input]): RefTransaction = {
+  inline def apply(bin_outputs: js.Array[BinOutput], hash: String, inputs: js.Array[Input]): RefTransaction = {
     val __obj = js.Dynamic.literal(bin_outputs = bin_outputs.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefTransaction]
   }
   
-  @scala.inline
-  implicit class RefTransactionMutableBuilder[Self <: RefTransaction] (val x: Self) extends AnyVal {
+  extension [Self <: RefTransaction](x: Self) {
     
-    @scala.inline
-    def setBin_outputs(value: js.Array[BinOutput]): Self = StObject.set(x, "bin_outputs", value.asInstanceOf[js.Any])
+    inline def setBin_outputs(value: js.Array[BinOutput]): Self = StObject.set(x, "bin_outputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBin_outputsVarargs(value: BinOutput*): Self = StObject.set(x, "bin_outputs", js.Array(value :_*))
+    inline def setBin_outputsVarargs(value: BinOutput*): Self = StObject.set(x, "bin_outputs", js.Array(value :_*))
     
-    @scala.inline
-    def setExtra_data(value: String): Self = StObject.set(x, "extra_data", value.asInstanceOf[js.Any])
+    inline def setExtra_data(value: String): Self = StObject.set(x, "extra_data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtra_dataUndefined: Self = StObject.set(x, "extra_data", js.undefined)
+    inline def setExtra_dataUndefined: Self = StObject.set(x, "extra_data", js.undefined)
     
-    @scala.inline
-    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputs(value: js.Array[Input]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: js.Array[Input]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputsVarargs(value: Input*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: Input*): Self = StObject.set(x, "inputs", js.Array(value :_*))
     
-    @scala.inline
-    def setLock_time(value: Double): Self = StObject.set(x, "lock_time", value.asInstanceOf[js.Any])
+    inline def setLock_time(value: Double): Self = StObject.set(x, "lock_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLock_timeUndefined: Self = StObject.set(x, "lock_time", js.undefined)
+    inline def setLock_timeUndefined: Self = StObject.set(x, "lock_time", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
-    @scala.inline
-    def setVersion_group_id(value: Double): Self = StObject.set(x, "version_group_id", value.asInstanceOf[js.Any])
+    inline def setVersion_group_id(value: Double): Self = StObject.set(x, "version_group_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion_group_idUndefined: Self = StObject.set(x, "version_group_id", js.undefined)
+    inline def setVersion_group_idUndefined: Self = StObject.set(x, "version_group_id", js.undefined)
   }
 }

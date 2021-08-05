@@ -13,16 +13,13 @@ trait DeregisterEcsClusterRequest extends StObject {
 }
 object DeregisterEcsClusterRequest {
   
-  @scala.inline
-  def apply(EcsClusterArn: String): DeregisterEcsClusterRequest = {
+  inline def apply(EcsClusterArn: String): DeregisterEcsClusterRequest = {
     val __obj = js.Dynamic.literal(EcsClusterArn = EcsClusterArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeregisterEcsClusterRequest]
   }
   
-  @scala.inline
-  implicit class DeregisterEcsClusterRequestMutableBuilder[Self <: DeregisterEcsClusterRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeregisterEcsClusterRequest](x: Self) {
     
-    @scala.inline
-    def setEcsClusterArn(value: String): Self = StObject.set(x, "EcsClusterArn", value.asInstanceOf[js.Any])
+    inline def setEcsClusterArn(value: String): Self = StObject.set(x, "EcsClusterArn", value.asInstanceOf[js.Any])
   }
 }

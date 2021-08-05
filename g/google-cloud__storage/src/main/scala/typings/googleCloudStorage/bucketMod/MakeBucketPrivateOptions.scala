@@ -14,31 +14,23 @@ trait MakeBucketPrivateOptions extends StObject {
 }
 object MakeBucketPrivateOptions {
   
-  @scala.inline
-  def apply(): MakeBucketPrivateOptions = {
+  inline def apply(): MakeBucketPrivateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MakeBucketPrivateOptions]
   }
   
-  @scala.inline
-  implicit class MakeBucketPrivateOptionsMutableBuilder[Self <: MakeBucketPrivateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MakeBucketPrivateOptions](x: Self) {
     
-    @scala.inline
-    def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
-    @scala.inline
-    def setIncludeFiles(value: Boolean): Self = StObject.set(x, "includeFiles", value.asInstanceOf[js.Any])
+    inline def setIncludeFiles(value: Boolean): Self = StObject.set(x, "includeFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeFilesUndefined: Self = StObject.set(x, "includeFiles", js.undefined)
+    inline def setIncludeFilesUndefined: Self = StObject.set(x, "includeFiles", js.undefined)
     
-    @scala.inline
-    def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
+    inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
+    inline def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
   }
 }

@@ -13,25 +13,19 @@ trait DropTargetSession extends StObject {
 }
 object DropTargetSession {
   
-  @scala.inline
-  def apply(): DropTargetSession = {
+  inline def apply(): DropTargetSession = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DropTargetSession]
   }
   
-  @scala.inline
-  implicit class DropTargetSessionMutableBuilder[Self <: DropTargetSession] (val x: Self) extends AnyVal {
+  extension [Self <: DropTargetSession](x: Self) {
     
-    @scala.inline
-    def setDropTarget(value: Boolean): Self = StObject.set(x, "dropTarget", value.asInstanceOf[js.Any])
+    inline def setDropTarget(value: Boolean): Self = StObject.set(x, "dropTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropTargetUndefined: Self = StObject.set(x, "dropTarget", js.undefined)
+    inline def setDropTargetUndefined: Self = StObject.set(x, "dropTarget", js.undefined)
     
-    @scala.inline
-    def setSession(value: ClientSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+    inline def setSession(value: ClientSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
+    inline def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
   }
 }

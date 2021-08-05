@@ -22,22 +22,17 @@ trait OpenSettingSuccessCallbackResult extends StObject {
 }
 object OpenSettingSuccessCallbackResult {
   
-  @scala.inline
-  def apply(authSetting: AuthSetting, errMsg: String, subscriptionsSetting: SubscriptionsSetting): OpenSettingSuccessCallbackResult = {
+  inline def apply(authSetting: AuthSetting, errMsg: String, subscriptionsSetting: SubscriptionsSetting): OpenSettingSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(authSetting = authSetting.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any], subscriptionsSetting = subscriptionsSetting.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenSettingSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class OpenSettingSuccessCallbackResultMutableBuilder[Self <: OpenSettingSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: OpenSettingSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setAuthSetting(value: AuthSetting): Self = StObject.set(x, "authSetting", value.asInstanceOf[js.Any])
+    inline def setAuthSetting(value: AuthSetting): Self = StObject.set(x, "authSetting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionsSetting(value: SubscriptionsSetting): Self = StObject.set(x, "subscriptionsSetting", value.asInstanceOf[js.Any])
+    inline def setSubscriptionsSetting(value: SubscriptionsSetting): Self = StObject.set(x, "subscriptionsSetting", value.asInstanceOf[js.Any])
   }
 }

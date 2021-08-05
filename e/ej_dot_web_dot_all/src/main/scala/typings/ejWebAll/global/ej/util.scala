@@ -10,6 +10,5 @@ object util {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def valueFunction(`val`: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("valueFunction")(`val`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def valueFunction(`val`: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("valueFunction")(`val`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

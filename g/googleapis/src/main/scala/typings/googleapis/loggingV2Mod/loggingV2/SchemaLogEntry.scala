@@ -155,115 +155,79 @@ trait SchemaLogEntry extends StObject {
 }
 object SchemaLogEntry {
   
-  @scala.inline
-  def apply(): SchemaLogEntry = {
+  inline def apply(): SchemaLogEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLogEntry]
   }
   
-  @scala.inline
-  implicit class SchemaLogEntryMutableBuilder[Self <: SchemaLogEntry] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLogEntry](x: Self) {
     
-    @scala.inline
-    def setHttpRequest(value: SchemaHttpRequest): Self = StObject.set(x, "httpRequest", value.asInstanceOf[js.Any])
+    inline def setHttpRequest(value: SchemaHttpRequest): Self = StObject.set(x, "httpRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpRequestUndefined: Self = StObject.set(x, "httpRequest", js.undefined)
+    inline def setHttpRequestUndefined: Self = StObject.set(x, "httpRequest", js.undefined)
     
-    @scala.inline
-    def setInsertId(value: String): Self = StObject.set(x, "insertId", value.asInstanceOf[js.Any])
+    inline def setInsertId(value: String): Self = StObject.set(x, "insertId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertIdUndefined: Self = StObject.set(x, "insertId", js.undefined)
+    inline def setInsertIdUndefined: Self = StObject.set(x, "insertId", js.undefined)
     
-    @scala.inline
-    def setJsonPayload(value: StringDictionary[js.Any]): Self = StObject.set(x, "jsonPayload", value.asInstanceOf[js.Any])
+    inline def setJsonPayload(value: StringDictionary[js.Any]): Self = StObject.set(x, "jsonPayload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsonPayloadUndefined: Self = StObject.set(x, "jsonPayload", js.undefined)
+    inline def setJsonPayloadUndefined: Self = StObject.set(x, "jsonPayload", js.undefined)
     
-    @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setLogName(value: String): Self = StObject.set(x, "logName", value.asInstanceOf[js.Any])
+    inline def setLogName(value: String): Self = StObject.set(x, "logName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogNameUndefined: Self = StObject.set(x, "logName", js.undefined)
+    inline def setLogNameUndefined: Self = StObject.set(x, "logName", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: SchemaMonitoredResourceMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: SchemaMonitoredResourceMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setOperation(value: SchemaLogEntryOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: SchemaLogEntryOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
+    inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
     
-    @scala.inline
-    def setProtoPayload(value: StringDictionary[js.Any]): Self = StObject.set(x, "protoPayload", value.asInstanceOf[js.Any])
+    inline def setProtoPayload(value: StringDictionary[js.Any]): Self = StObject.set(x, "protoPayload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtoPayloadUndefined: Self = StObject.set(x, "protoPayload", js.undefined)
+    inline def setProtoPayloadUndefined: Self = StObject.set(x, "protoPayload", js.undefined)
     
-    @scala.inline
-    def setReceiveTimestamp(value: String): Self = StObject.set(x, "receiveTimestamp", value.asInstanceOf[js.Any])
+    inline def setReceiveTimestamp(value: String): Self = StObject.set(x, "receiveTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceiveTimestampUndefined: Self = StObject.set(x, "receiveTimestamp", js.undefined)
+    inline def setReceiveTimestampUndefined: Self = StObject.set(x, "receiveTimestamp", js.undefined)
     
-    @scala.inline
-    def setResource(value: SchemaMonitoredResource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: SchemaMonitoredResource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
-    @scala.inline
-    def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+    inline def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
+    inline def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
     
-    @scala.inline
-    def setSourceLocation(value: SchemaLogEntrySourceLocation): Self = StObject.set(x, "sourceLocation", value.asInstanceOf[js.Any])
+    inline def setSourceLocation(value: SchemaLogEntrySourceLocation): Self = StObject.set(x, "sourceLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceLocationUndefined: Self = StObject.set(x, "sourceLocation", js.undefined)
+    inline def setSourceLocationUndefined: Self = StObject.set(x, "sourceLocation", js.undefined)
     
-    @scala.inline
-    def setSpanId(value: String): Self = StObject.set(x, "spanId", value.asInstanceOf[js.Any])
+    inline def setSpanId(value: String): Self = StObject.set(x, "spanId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpanIdUndefined: Self = StObject.set(x, "spanId", js.undefined)
+    inline def setSpanIdUndefined: Self = StObject.set(x, "spanId", js.undefined)
     
-    @scala.inline
-    def setTextPayload(value: String): Self = StObject.set(x, "textPayload", value.asInstanceOf[js.Any])
+    inline def setTextPayload(value: String): Self = StObject.set(x, "textPayload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextPayloadUndefined: Self = StObject.set(x, "textPayload", js.undefined)
+    inline def setTextPayloadUndefined: Self = StObject.set(x, "textPayload", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     
-    @scala.inline
-    def setTrace(value: String): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
+    inline def setTrace(value: String): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTraceSampled(value: Boolean): Self = StObject.set(x, "traceSampled", value.asInstanceOf[js.Any])
+    inline def setTraceSampled(value: Boolean): Self = StObject.set(x, "traceSampled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTraceSampledUndefined: Self = StObject.set(x, "traceSampled", js.undefined)
+    inline def setTraceSampledUndefined: Self = StObject.set(x, "traceSampled", js.undefined)
     
-    @scala.inline
-    def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
+    inline def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
   }
 }

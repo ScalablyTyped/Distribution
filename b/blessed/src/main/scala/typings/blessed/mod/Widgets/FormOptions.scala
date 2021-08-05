@@ -16,19 +16,15 @@ trait FormOptions
 }
 object FormOptions {
   
-  @scala.inline
-  def apply(): FormOptions = {
+  inline def apply(): FormOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FormOptions]
   }
   
-  @scala.inline
-  implicit class FormOptionsMutableBuilder[Self <: FormOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FormOptions](x: Self) {
     
-    @scala.inline
-    def setKeys(value: js.Any): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: js.Any): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
+    inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
   }
 }

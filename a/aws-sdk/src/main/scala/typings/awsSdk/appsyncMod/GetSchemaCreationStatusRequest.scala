@@ -13,16 +13,13 @@ trait GetSchemaCreationStatusRequest extends StObject {
 }
 object GetSchemaCreationStatusRequest {
   
-  @scala.inline
-  def apply(apiId: String): GetSchemaCreationStatusRequest = {
+  inline def apply(apiId: String): GetSchemaCreationStatusRequest = {
     val __obj = js.Dynamic.literal(apiId = apiId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSchemaCreationStatusRequest]
   }
   
-  @scala.inline
-  implicit class GetSchemaCreationStatusRequestMutableBuilder[Self <: GetSchemaCreationStatusRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetSchemaCreationStatusRequest](x: Self) {
     
-    @scala.inline
-    def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
+    inline def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
   }
 }

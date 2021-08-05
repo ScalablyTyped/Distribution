@@ -10,19 +10,15 @@ trait RendererFormattedStrings extends StObject {
 }
 object RendererFormattedStrings {
   
-  @scala.inline
-  def apply(): RendererFormattedStrings = {
+  inline def apply(): RendererFormattedStrings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RendererFormattedStrings]
   }
   
-  @scala.inline
-  implicit class RendererFormattedStringsMutableBuilder[Self <: RendererFormattedStrings] (val x: Self) extends AnyVal {
+  extension [Self <: RendererFormattedStrings](x: Self) {
     
-    @scala.inline
-    def setRendererFormattedStrings(value: AuditGroupExpandTooltip): Self = StObject.set(x, "rendererFormattedStrings", value.asInstanceOf[js.Any])
+    inline def setRendererFormattedStrings(value: AuditGroupExpandTooltip): Self = StObject.set(x, "rendererFormattedStrings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRendererFormattedStringsUndefined: Self = StObject.set(x, "rendererFormattedStrings", js.undefined)
+    inline def setRendererFormattedStringsUndefined: Self = StObject.set(x, "rendererFormattedStrings", js.undefined)
   }
 }

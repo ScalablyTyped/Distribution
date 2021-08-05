@@ -13,20 +13,16 @@ trait PickReflectionTypetype extends StObject {
 }
 object PickReflectionTypetype {
   
-  @scala.inline
-  def apply(`type`: (ModelToObject[/* "reflection" */ String]) | (/* "reflection" */ String)): PickReflectionTypetype = {
+  inline def apply(`type`: (ModelToObject[/* "reflection" */ String]) | (/* "reflection" */ String)): PickReflectionTypetype = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickReflectionTypetype]
   }
   
-  @scala.inline
-  implicit class PickReflectionTypetypeMutableBuilder[Self <: PickReflectionTypetype] (val x: Self) extends AnyVal {
+  extension [Self <: PickReflectionTypetype](x: Self) {
     
-    @scala.inline
-    def setType(value: (ModelToObject[/* "reflection" */ String]) | (/* "reflection" */ String)): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: (ModelToObject[/* "reflection" */ String]) | (/* "reflection" */ String)): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
   }
 }

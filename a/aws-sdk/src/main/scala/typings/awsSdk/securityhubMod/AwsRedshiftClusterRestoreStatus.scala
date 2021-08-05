@@ -38,49 +38,35 @@ trait AwsRedshiftClusterRestoreStatus extends StObject {
 }
 object AwsRedshiftClusterRestoreStatus {
   
-  @scala.inline
-  def apply(): AwsRedshiftClusterRestoreStatus = {
+  inline def apply(): AwsRedshiftClusterRestoreStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsRedshiftClusterRestoreStatus]
   }
   
-  @scala.inline
-  implicit class AwsRedshiftClusterRestoreStatusMutableBuilder[Self <: AwsRedshiftClusterRestoreStatus] (val x: Self) extends AnyVal {
+  extension [Self <: AwsRedshiftClusterRestoreStatus](x: Self) {
     
-    @scala.inline
-    def setCurrentRestoreRateInMegaBytesPerSecond(value: Double): Self = StObject.set(x, "CurrentRestoreRateInMegaBytesPerSecond", value.asInstanceOf[js.Any])
+    inline def setCurrentRestoreRateInMegaBytesPerSecond(value: Double): Self = StObject.set(x, "CurrentRestoreRateInMegaBytesPerSecond", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentRestoreRateInMegaBytesPerSecondUndefined: Self = StObject.set(x, "CurrentRestoreRateInMegaBytesPerSecond", js.undefined)
+    inline def setCurrentRestoreRateInMegaBytesPerSecondUndefined: Self = StObject.set(x, "CurrentRestoreRateInMegaBytesPerSecond", js.undefined)
     
-    @scala.inline
-    def setElapsedTimeInSeconds(value: Long): Self = StObject.set(x, "ElapsedTimeInSeconds", value.asInstanceOf[js.Any])
+    inline def setElapsedTimeInSeconds(value: Long): Self = StObject.set(x, "ElapsedTimeInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElapsedTimeInSecondsUndefined: Self = StObject.set(x, "ElapsedTimeInSeconds", js.undefined)
+    inline def setElapsedTimeInSecondsUndefined: Self = StObject.set(x, "ElapsedTimeInSeconds", js.undefined)
     
-    @scala.inline
-    def setEstimatedTimeToCompletionInSeconds(value: Long): Self = StObject.set(x, "EstimatedTimeToCompletionInSeconds", value.asInstanceOf[js.Any])
+    inline def setEstimatedTimeToCompletionInSeconds(value: Long): Self = StObject.set(x, "EstimatedTimeToCompletionInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedTimeToCompletionInSecondsUndefined: Self = StObject.set(x, "EstimatedTimeToCompletionInSeconds", js.undefined)
+    inline def setEstimatedTimeToCompletionInSecondsUndefined: Self = StObject.set(x, "EstimatedTimeToCompletionInSeconds", js.undefined)
     
-    @scala.inline
-    def setProgressInMegaBytes(value: Long): Self = StObject.set(x, "ProgressInMegaBytes", value.asInstanceOf[js.Any])
+    inline def setProgressInMegaBytes(value: Long): Self = StObject.set(x, "ProgressInMegaBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressInMegaBytesUndefined: Self = StObject.set(x, "ProgressInMegaBytes", js.undefined)
+    inline def setProgressInMegaBytesUndefined: Self = StObject.set(x, "ProgressInMegaBytes", js.undefined)
     
-    @scala.inline
-    def setSnapshotSizeInMegaBytes(value: Long): Self = StObject.set(x, "SnapshotSizeInMegaBytes", value.asInstanceOf[js.Any])
+    inline def setSnapshotSizeInMegaBytes(value: Long): Self = StObject.set(x, "SnapshotSizeInMegaBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotSizeInMegaBytesUndefined: Self = StObject.set(x, "SnapshotSizeInMegaBytes", js.undefined)
+    inline def setSnapshotSizeInMegaBytesUndefined: Self = StObject.set(x, "SnapshotSizeInMegaBytes", js.undefined)
     
-    @scala.inline
-    def setStatus(value: NonEmptyString): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: NonEmptyString): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

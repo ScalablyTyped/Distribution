@@ -12,8 +12,7 @@ trait ListDataSource
 }
 object ListDataSource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -25,10 +24,8 @@ object ListDataSource {
     __obj.asInstanceOf[ListDataSource]
   }
   
-  @scala.inline
-  implicit class ListDataSourceMutableBuilder[Self <: ListDataSource] (val x: Self) extends AnyVal {
+  extension [Self <: ListDataSource](x: Self) {
     
-    @scala.inline
-    def setGet_properties(value: () => js.Any): Self = StObject.set(x, "get_properties", js.Any.fromFunction0(value))
+    inline def setGet_properties(value: () => js.Any): Self = StObject.set(x, "get_properties", js.Any.fromFunction0(value))
   }
 }

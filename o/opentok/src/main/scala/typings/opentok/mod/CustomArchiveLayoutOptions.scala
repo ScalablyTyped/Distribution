@@ -15,20 +15,16 @@ trait CustomArchiveLayoutOptions
 }
 object CustomArchiveLayoutOptions {
   
-  @scala.inline
-  def apply(stylesheet: String): CustomArchiveLayoutOptions = {
+  inline def apply(stylesheet: String): CustomArchiveLayoutOptions = {
     val __obj = js.Dynamic.literal(stylesheet = stylesheet.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("custom")
     __obj.asInstanceOf[CustomArchiveLayoutOptions]
   }
   
-  @scala.inline
-  implicit class CustomArchiveLayoutOptionsMutableBuilder[Self <: CustomArchiveLayoutOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CustomArchiveLayoutOptions](x: Self) {
     
-    @scala.inline
-    def setStylesheet(value: String): Self = StObject.set(x, "stylesheet", value.asInstanceOf[js.Any])
+    inline def setStylesheet(value: String): Self = StObject.set(x, "stylesheet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: custom): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: custom): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

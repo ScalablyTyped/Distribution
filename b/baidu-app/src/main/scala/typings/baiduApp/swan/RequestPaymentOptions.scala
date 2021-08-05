@@ -26,8 +26,7 @@ trait RequestPaymentOptions
 }
 object RequestPaymentOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _package: String,
     nonceStr: String,
     paySign: String,
@@ -39,22 +38,16 @@ object RequestPaymentOptions {
     __obj.asInstanceOf[RequestPaymentOptions]
   }
   
-  @scala.inline
-  implicit class RequestPaymentOptionsMutableBuilder[Self <: RequestPaymentOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RequestPaymentOptions](x: Self) {
     
-    @scala.inline
-    def setNonceStr(value: String): Self = StObject.set(x, "nonceStr", value.asInstanceOf[js.Any])
+    inline def setNonceStr(value: String): Self = StObject.set(x, "nonceStr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaySign(value: String): Self = StObject.set(x, "paySign", value.asInstanceOf[js.Any])
+    inline def setPaySign(value: String): Self = StObject.set(x, "paySign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignType(value: PaymentSignType): Self = StObject.set(x, "signType", value.asInstanceOf[js.Any])
+    inline def setSignType(value: PaymentSignType): Self = StObject.set(x, "signType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeStamp(value: String | Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+    inline def setTimeStamp(value: String | Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_package(value: String): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
+    inline def set_package(value: String): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
   }
 }

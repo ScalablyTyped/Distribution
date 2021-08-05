@@ -62,86 +62,61 @@ trait ConnectivityTest extends StObject {
 }
 object ConnectivityTest {
   
-  @scala.inline
-  def apply(): ConnectivityTest = {
+  inline def apply(): ConnectivityTest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectivityTest]
   }
   
-  @scala.inline
-  implicit class ConnectivityTestMutableBuilder[Self <: ConnectivityTest] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectivityTest](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDestination(value: Endpoint): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: Endpoint): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
+    inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setLabels(
+    inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientNetworkmanagement.maximMazurokGapiClientNetworkmanagementStrings.ConnectivityTest & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+    inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
     
-    @scala.inline
-    def setReachabilityDetails(value: ReachabilityDetails): Self = StObject.set(x, "reachabilityDetails", value.asInstanceOf[js.Any])
+    inline def setReachabilityDetails(value: ReachabilityDetails): Self = StObject.set(x, "reachabilityDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReachabilityDetailsUndefined: Self = StObject.set(x, "reachabilityDetails", js.undefined)
+    inline def setReachabilityDetailsUndefined: Self = StObject.set(x, "reachabilityDetails", js.undefined)
     
-    @scala.inline
-    def setRelatedProjects(value: js.Array[String]): Self = StObject.set(x, "relatedProjects", value.asInstanceOf[js.Any])
+    inline def setRelatedProjects(value: js.Array[String]): Self = StObject.set(x, "relatedProjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedProjectsUndefined: Self = StObject.set(x, "relatedProjects", js.undefined)
+    inline def setRelatedProjectsUndefined: Self = StObject.set(x, "relatedProjects", js.undefined)
     
-    @scala.inline
-    def setRelatedProjectsVarargs(value: String*): Self = StObject.set(x, "relatedProjects", js.Array(value :_*))
+    inline def setRelatedProjectsVarargs(value: String*): Self = StObject.set(x, "relatedProjects", js.Array(value :_*))
     
-    @scala.inline
-    def setSource(value: Endpoint): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Endpoint): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

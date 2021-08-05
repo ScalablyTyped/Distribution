@@ -13,6 +13,5 @@ object migrationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def migrateExpression(node: CallExpression, typeChecker: TypeChecker): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("migrateExpression")(node.asInstanceOf[js.Any], typeChecker.asInstanceOf[js.Any])).asInstanceOf[Node]
+  inline def migrateExpression(node: CallExpression, typeChecker: TypeChecker): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("migrateExpression")(node.asInstanceOf[js.Any], typeChecker.asInstanceOf[js.Any])).asInstanceOf[Node]
 }

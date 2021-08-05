@@ -19,8 +19,7 @@ object commentAvatarMod extends Shortcut {
        with /* key */ StringDictionary[js.Any]
   object CommentAvatarProps {
     
-    @scala.inline
-    def apply(): CommentAvatarProps = {
+    inline def apply(): CommentAvatarProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CommentAvatarProps]
     }
@@ -39,32 +38,24 @@ object commentAvatarMod extends Shortcut {
   }
   object StrictCommentAvatarProps {
     
-    @scala.inline
-    def apply(): StrictCommentAvatarProps = {
+    inline def apply(): StrictCommentAvatarProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictCommentAvatarProps]
     }
     
-    @scala.inline
-    implicit class StrictCommentAvatarPropsMutableBuilder[Self <: StrictCommentAvatarProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictCommentAvatarProps](x: Self) {
       
-      @scala.inline
-      def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+      inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
     }
   }
   

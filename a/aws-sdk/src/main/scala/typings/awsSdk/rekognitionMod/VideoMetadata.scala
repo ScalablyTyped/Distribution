@@ -38,49 +38,35 @@ trait VideoMetadata extends StObject {
 }
 object VideoMetadata {
   
-  @scala.inline
-  def apply(): VideoMetadata = {
+  inline def apply(): VideoMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VideoMetadata]
   }
   
-  @scala.inline
-  implicit class VideoMetadataMutableBuilder[Self <: VideoMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: VideoMetadata](x: Self) {
     
-    @scala.inline
-    def setCodec(value: String): Self = StObject.set(x, "Codec", value.asInstanceOf[js.Any])
+    inline def setCodec(value: String): Self = StObject.set(x, "Codec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodecUndefined: Self = StObject.set(x, "Codec", js.undefined)
+    inline def setCodecUndefined: Self = StObject.set(x, "Codec", js.undefined)
     
-    @scala.inline
-    def setDurationMillis(value: ULong): Self = StObject.set(x, "DurationMillis", value.asInstanceOf[js.Any])
+    inline def setDurationMillis(value: ULong): Self = StObject.set(x, "DurationMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationMillisUndefined: Self = StObject.set(x, "DurationMillis", js.undefined)
+    inline def setDurationMillisUndefined: Self = StObject.set(x, "DurationMillis", js.undefined)
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
     
-    @scala.inline
-    def setFrameHeight(value: ULong): Self = StObject.set(x, "FrameHeight", value.asInstanceOf[js.Any])
+    inline def setFrameHeight(value: ULong): Self = StObject.set(x, "FrameHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameHeightUndefined: Self = StObject.set(x, "FrameHeight", js.undefined)
+    inline def setFrameHeightUndefined: Self = StObject.set(x, "FrameHeight", js.undefined)
     
-    @scala.inline
-    def setFrameRate(value: Float): Self = StObject.set(x, "FrameRate", value.asInstanceOf[js.Any])
+    inline def setFrameRate(value: Float): Self = StObject.set(x, "FrameRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameRateUndefined: Self = StObject.set(x, "FrameRate", js.undefined)
+    inline def setFrameRateUndefined: Self = StObject.set(x, "FrameRate", js.undefined)
     
-    @scala.inline
-    def setFrameWidth(value: ULong): Self = StObject.set(x, "FrameWidth", value.asInstanceOf[js.Any])
+    inline def setFrameWidth(value: ULong): Self = StObject.set(x, "FrameWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameWidthUndefined: Self = StObject.set(x, "FrameWidth", js.undefined)
+    inline def setFrameWidthUndefined: Self = StObject.set(x, "FrameWidth", js.undefined)
   }
 }

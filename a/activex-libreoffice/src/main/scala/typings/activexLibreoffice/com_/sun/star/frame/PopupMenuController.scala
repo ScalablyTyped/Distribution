@@ -30,8 +30,7 @@ trait PopupMenuController
      with XComponent
 object PopupMenuController {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addEventListener: XEventListener => Unit,
     dispose: () => Unit,

@@ -27,34 +27,25 @@ trait IInfoboxEventArgs extends StObject {
 }
 object IInfoboxEventArgs {
   
-  @scala.inline
-  def apply(eventName: String, pageX: Double, pageY: Double, target: Infobox, targetType: String): IInfoboxEventArgs = {
+  inline def apply(eventName: String, pageX: Double, pageY: Double, target: Infobox, targetType: String): IInfoboxEventArgs = {
     val __obj = js.Dynamic.literal(eventName = eventName.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], targetType = targetType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInfoboxEventArgs]
   }
   
-  @scala.inline
-  implicit class IInfoboxEventArgsMutableBuilder[Self <: IInfoboxEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IInfoboxEventArgs](x: Self) {
     
-    @scala.inline
-    def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
+    inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalEvent(value: MouseEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+    inline def setOriginalEvent(value: MouseEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
+    inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
     
-    @scala.inline
-    def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
+    inline def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
+    inline def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: Infobox): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Infobox): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetType(value: String): Self = StObject.set(x, "targetType", value.asInstanceOf[js.Any])
+    inline def setTargetType(value: String): Self = StObject.set(x, "targetType", value.asInstanceOf[js.Any])
   }
 }

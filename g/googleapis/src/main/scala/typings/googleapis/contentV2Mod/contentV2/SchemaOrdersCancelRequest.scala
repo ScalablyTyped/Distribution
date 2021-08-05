@@ -23,31 +23,23 @@ trait SchemaOrdersCancelRequest extends StObject {
 }
 object SchemaOrdersCancelRequest {
   
-  @scala.inline
-  def apply(): SchemaOrdersCancelRequest = {
+  inline def apply(): SchemaOrdersCancelRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOrdersCancelRequest]
   }
   
-  @scala.inline
-  implicit class SchemaOrdersCancelRequestMutableBuilder[Self <: SchemaOrdersCancelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOrdersCancelRequest](x: Self) {
     
-    @scala.inline
-    def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
+    inline def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
+    inline def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonText(value: String): Self = StObject.set(x, "reasonText", value.asInstanceOf[js.Any])
+    inline def setReasonText(value: String): Self = StObject.set(x, "reasonText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonTextUndefined: Self = StObject.set(x, "reasonText", js.undefined)
+    inline def setReasonTextUndefined: Self = StObject.set(x, "reasonText", js.undefined)
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
   }
 }

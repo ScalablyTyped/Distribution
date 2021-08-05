@@ -12,8 +12,7 @@ trait DrawerNavigationState
 }
 object DrawerNavigationState {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     index: Double,
     isDrawerOpen: Boolean,
     isTransitioning: Boolean,
@@ -24,10 +23,8 @@ object DrawerNavigationState {
     __obj.asInstanceOf[DrawerNavigationState]
   }
   
-  @scala.inline
-  implicit class DrawerNavigationStateMutableBuilder[Self <: DrawerNavigationState] (val x: Self) extends AnyVal {
+  extension [Self <: DrawerNavigationState](x: Self) {
     
-    @scala.inline
-    def setIsDrawerOpen(value: Boolean): Self = StObject.set(x, "isDrawerOpen", value.asInstanceOf[js.Any])
+    inline def setIsDrawerOpen(value: Boolean): Self = StObject.set(x, "isDrawerOpen", value.asInstanceOf[js.Any])
   }
 }

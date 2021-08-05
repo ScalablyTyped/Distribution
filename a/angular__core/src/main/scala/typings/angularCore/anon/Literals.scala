@@ -13,8 +13,7 @@ trait Literals extends StObject {
 }
 object Literals {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     literals: js.Array[ProviderLiteral],
     resolvedValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResolvedValue */ js.Any
   ): Literals = {
@@ -22,17 +21,13 @@ object Literals {
     __obj.asInstanceOf[Literals]
   }
   
-  @scala.inline
-  implicit class LiteralsMutableBuilder[Self <: Literals] (val x: Self) extends AnyVal {
+  extension [Self <: Literals](x: Self) {
     
-    @scala.inline
-    def setLiterals(value: js.Array[ProviderLiteral]): Self = StObject.set(x, "literals", value.asInstanceOf[js.Any])
+    inline def setLiterals(value: js.Array[ProviderLiteral]): Self = StObject.set(x, "literals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLiteralsVarargs(value: ProviderLiteral*): Self = StObject.set(x, "literals", js.Array(value :_*))
+    inline def setLiteralsVarargs(value: ProviderLiteral*): Self = StObject.set(x, "literals", js.Array(value :_*))
     
-    @scala.inline
-    def setResolvedValue(
+    inline def setResolvedValue(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResolvedValue */ js.Any
     ): Self = StObject.set(x, "resolvedValue", value.asInstanceOf[js.Any])
   }

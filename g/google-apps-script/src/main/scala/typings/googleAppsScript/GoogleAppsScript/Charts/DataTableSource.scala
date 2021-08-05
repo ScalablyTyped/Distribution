@@ -20,16 +20,13 @@ trait DataTableSource extends StObject {
 }
 object DataTableSource {
   
-  @scala.inline
-  def apply(getDataTable: () => DataTable): DataTableSource = {
+  inline def apply(getDataTable: () => DataTable): DataTableSource = {
     val __obj = js.Dynamic.literal(getDataTable = js.Any.fromFunction0(getDataTable))
     __obj.asInstanceOf[DataTableSource]
   }
   
-  @scala.inline
-  implicit class DataTableSourceMutableBuilder[Self <: DataTableSource] (val x: Self) extends AnyVal {
+  extension [Self <: DataTableSource](x: Self) {
     
-    @scala.inline
-    def setGetDataTable(value: () => DataTable): Self = StObject.set(x, "getDataTable", js.Any.fromFunction0(value))
+    inline def setGetDataTable(value: () => DataTable): Self = StObject.set(x, "getDataTable", js.Any.fromFunction0(value))
   }
 }

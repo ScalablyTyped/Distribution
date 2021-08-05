@@ -23,25 +23,19 @@ trait SchemaAnnotation extends StObject {
 }
 object SchemaAnnotation {
   
-  @scala.inline
-  def apply(): SchemaAnnotation = {
+  inline def apply(): SchemaAnnotation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAnnotation]
   }
   
-  @scala.inline
-  implicit class SchemaAnnotationMutableBuilder[Self <: SchemaAnnotation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAnnotation](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: SchemaAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: SchemaAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setDescription(value: SchemaTruncatableString): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: SchemaTruncatableString): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
   }
 }

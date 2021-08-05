@@ -8,21 +8,17 @@ object pgwmodalStrings {
   
   @js.native
   sealed trait close extends StObject
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
+  inline def close: close = "close".asInstanceOf[close]
   
   @js.native
   sealed trait getData extends StObject
-  @scala.inline
-  def getData: getData = "getData".asInstanceOf[getData]
+  inline def getData: getData = "getData".asInstanceOf[getData]
   
   @js.native
   sealed trait isOpen extends StObject
-  @scala.inline
-  def isOpen: isOpen = "isOpen".asInstanceOf[isOpen]
+  inline def isOpen: isOpen = "isOpen".asInstanceOf[isOpen]
   
   @js.native
   sealed trait reposition extends StObject
-  @scala.inline
-  def reposition: reposition = "reposition".asInstanceOf[reposition]
+  inline def reposition: reposition = "reposition".asInstanceOf[reposition]
 }

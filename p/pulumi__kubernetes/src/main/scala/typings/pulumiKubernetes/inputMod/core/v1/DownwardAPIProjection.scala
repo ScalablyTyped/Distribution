@@ -17,22 +17,17 @@ trait DownwardAPIProjection extends StObject {
 }
 object DownwardAPIProjection {
   
-  @scala.inline
-  def apply(): DownwardAPIProjection = {
+  inline def apply(): DownwardAPIProjection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DownwardAPIProjection]
   }
   
-  @scala.inline
-  implicit class DownwardAPIProjectionMutableBuilder[Self <: DownwardAPIProjection] (val x: Self) extends AnyVal {
+  extension [Self <: DownwardAPIProjection](x: Self) {
     
-    @scala.inline
-    def setItems(value: Input[js.Array[Input[DownwardAPIVolumeFile]]]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: Input[js.Array[Input[DownwardAPIVolumeFile]]]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: Input[DownwardAPIVolumeFile]*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Input[DownwardAPIVolumeFile]*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

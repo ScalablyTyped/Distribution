@@ -25,25 +25,19 @@ trait TableStyleData extends StObject {
 }
 object TableStyleData {
   
-  @scala.inline
-  def apply(): TableStyleData = {
+  inline def apply(): TableStyleData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableStyleData]
   }
   
-  @scala.inline
-  implicit class TableStyleDataMutableBuilder[Self <: TableStyleData] (val x: Self) extends AnyVal {
+  extension [Self <: TableStyleData](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
   }
 }

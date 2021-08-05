@@ -13,16 +13,13 @@ trait AppManifestParsedProperties extends StObject {
 }
 object AppManifestParsedProperties {
   
-  @scala.inline
-  def apply(scope: String): AppManifestParsedProperties = {
+  inline def apply(scope: String): AppManifestParsedProperties = {
     val __obj = js.Dynamic.literal(scope = scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppManifestParsedProperties]
   }
   
-  @scala.inline
-  implicit class AppManifestParsedPropertiesMutableBuilder[Self <: AppManifestParsedProperties] (val x: Self) extends AnyVal {
+  extension [Self <: AppManifestParsedProperties](x: Self) {
     
-    @scala.inline
-    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
   }
 }

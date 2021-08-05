@@ -113,20 +113,15 @@ object bulkMod {
   trait BulkLoadOperation extends StObject
   object BulkLoadOperation {
     
-    @scala.inline
-    def delete: typings.jsforce.jsforceStrings.delete = "delete".asInstanceOf[typings.jsforce.jsforceStrings.delete]
+    inline def delete: typings.jsforce.jsforceStrings.delete = "delete".asInstanceOf[typings.jsforce.jsforceStrings.delete]
     
-    @scala.inline
-    def hardDelete: typings.jsforce.jsforceStrings.hardDelete = "hardDelete".asInstanceOf[typings.jsforce.jsforceStrings.hardDelete]
+    inline def hardDelete: typings.jsforce.jsforceStrings.hardDelete = "hardDelete".asInstanceOf[typings.jsforce.jsforceStrings.hardDelete]
     
-    @scala.inline
-    def insert: typings.jsforce.jsforceStrings.insert = "insert".asInstanceOf[typings.jsforce.jsforceStrings.insert]
+    inline def insert: typings.jsforce.jsforceStrings.insert = "insert".asInstanceOf[typings.jsforce.jsforceStrings.insert]
     
-    @scala.inline
-    def update: typings.jsforce.jsforceStrings.update = "update".asInstanceOf[typings.jsforce.jsforceStrings.update]
+    inline def update: typings.jsforce.jsforceStrings.update = "update".asInstanceOf[typings.jsforce.jsforceStrings.update]
     
-    @scala.inline
-    def upsert: typings.jsforce.jsforceStrings.upsert = "upsert".asInstanceOf[typings.jsforce.jsforceStrings.upsert]
+    inline def upsert: typings.jsforce.jsforceStrings.upsert = "upsert".asInstanceOf[typings.jsforce.jsforceStrings.upsert]
   }
   
   trait BulkOptions extends StObject {
@@ -137,23 +132,18 @@ object bulkMod {
   }
   object BulkOptions {
     
-    @scala.inline
-    def apply(extIdField: String): BulkOptions = {
+    inline def apply(extIdField: String): BulkOptions = {
       val __obj = js.Dynamic.literal(extIdField = extIdField.asInstanceOf[js.Any])
       __obj.asInstanceOf[BulkOptions]
     }
     
-    @scala.inline
-    implicit class BulkOptionsMutableBuilder[Self <: BulkOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BulkOptions](x: Self) {
       
-      @scala.inline
-      def setConcurrencyMode(value: Serial | Parallel): Self = StObject.set(x, "concurrencyMode", value.asInstanceOf[js.Any])
+      inline def setConcurrencyMode(value: Serial | Parallel): Self = StObject.set(x, "concurrencyMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConcurrencyModeUndefined: Self = StObject.set(x, "concurrencyMode", js.undefined)
+      inline def setConcurrencyModeUndefined: Self = StObject.set(x, "concurrencyMode", js.undefined)
       
-      @scala.inline
-      def setExtIdField(value: String): Self = StObject.set(x, "extIdField", value.asInstanceOf[js.Any])
+      inline def setExtIdField(value: String): Self = StObject.set(x, "extIdField", value.asInstanceOf[js.Any])
     }
   }
 }

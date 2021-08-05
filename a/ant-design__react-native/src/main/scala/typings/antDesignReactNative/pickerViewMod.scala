@@ -21,7 +21,6 @@ object pickerViewMod {
     @JSImport("@ant-design/react-native/lib/picker-view", "default.defaultProps")
     @js.native
     def defaultProps: Cascade = js.native
-    @scala.inline
-    def defaultProps_=(x: Cascade): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Cascade): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

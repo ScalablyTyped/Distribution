@@ -42,8 +42,7 @@ trait XTemplateContainer
 }
 object XTemplateContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementTemplateName: String,
     acquire: () => Unit,
     getElementTemplateName: () => String,
@@ -54,13 +53,10 @@ object XTemplateContainer {
     __obj.asInstanceOf[XTemplateContainer]
   }
   
-  @scala.inline
-  implicit class XTemplateContainerMutableBuilder[Self <: XTemplateContainer] (val x: Self) extends AnyVal {
+  extension [Self <: XTemplateContainer](x: Self) {
     
-    @scala.inline
-    def setElementTemplateName(value: String): Self = StObject.set(x, "ElementTemplateName", value.asInstanceOf[js.Any])
+    inline def setElementTemplateName(value: String): Self = StObject.set(x, "ElementTemplateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetElementTemplateName(value: () => String): Self = StObject.set(x, "getElementTemplateName", js.Any.fromFunction0(value))
+    inline def setGetElementTemplateName(value: () => String): Self = StObject.set(x, "getElementTemplateName", js.Any.fromFunction0(value))
   }
 }

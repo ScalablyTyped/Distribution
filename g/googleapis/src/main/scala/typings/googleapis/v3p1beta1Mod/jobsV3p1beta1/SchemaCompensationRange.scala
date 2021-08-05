@@ -25,25 +25,19 @@ trait SchemaCompensationRange extends StObject {
 }
 object SchemaCompensationRange {
   
-  @scala.inline
-  def apply(): SchemaCompensationRange = {
+  inline def apply(): SchemaCompensationRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCompensationRange]
   }
   
-  @scala.inline
-  implicit class SchemaCompensationRangeMutableBuilder[Self <: SchemaCompensationRange] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCompensationRange](x: Self) {
     
-    @scala.inline
-    def setMaxCompensation(value: SchemaMoney): Self = StObject.set(x, "maxCompensation", value.asInstanceOf[js.Any])
+    inline def setMaxCompensation(value: SchemaMoney): Self = StObject.set(x, "maxCompensation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxCompensationUndefined: Self = StObject.set(x, "maxCompensation", js.undefined)
+    inline def setMaxCompensationUndefined: Self = StObject.set(x, "maxCompensation", js.undefined)
     
-    @scala.inline
-    def setMinCompensation(value: SchemaMoney): Self = StObject.set(x, "minCompensation", value.asInstanceOf[js.Any])
+    inline def setMinCompensation(value: SchemaMoney): Self = StObject.set(x, "minCompensation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinCompensationUndefined: Self = StObject.set(x, "minCompensation", js.undefined)
+    inline def setMinCompensationUndefined: Self = StObject.set(x, "minCompensation", js.undefined)
   }
 }

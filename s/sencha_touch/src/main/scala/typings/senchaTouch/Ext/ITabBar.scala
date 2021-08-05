@@ -23,31 +23,23 @@ trait ITabBar
 }
 object ITabBar {
   
-  @scala.inline
-  def apply(): ITabBar = {
+  inline def apply(): ITabBar = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITabBar]
   }
   
-  @scala.inline
-  implicit class ITabBarMutableBuilder[Self <: ITabBar] (val x: Self) extends AnyVal {
+  extension [Self <: ITabBar](x: Self) {
     
-    @scala.inline
-    def setActiveTab(value: js.Any): Self = StObject.set(x, "activeTab", value.asInstanceOf[js.Any])
+    inline def setActiveTab(value: js.Any): Self = StObject.set(x, "activeTab", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveTabUndefined: Self = StObject.set(x, "activeTab", js.undefined)
+    inline def setActiveTabUndefined: Self = StObject.set(x, "activeTab", js.undefined)
     
-    @scala.inline
-    def setGetActiveTab(value: () => js.Any): Self = StObject.set(x, "getActiveTab", js.Any.fromFunction0(value))
+    inline def setGetActiveTab(value: () => js.Any): Self = StObject.set(x, "getActiveTab", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetActiveTabUndefined: Self = StObject.set(x, "getActiveTab", js.undefined)
+    inline def setGetActiveTabUndefined: Self = StObject.set(x, "getActiveTab", js.undefined)
     
-    @scala.inline
-    def setSetActiveTab(value: /* activeTab */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setActiveTab", js.Any.fromFunction1(value))
+    inline def setSetActiveTab(value: /* activeTab */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setActiveTab", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetActiveTabUndefined: Self = StObject.set(x, "setActiveTab", js.undefined)
+    inline def setSetActiveTabUndefined: Self = StObject.set(x, "setActiveTab", js.undefined)
   }
 }

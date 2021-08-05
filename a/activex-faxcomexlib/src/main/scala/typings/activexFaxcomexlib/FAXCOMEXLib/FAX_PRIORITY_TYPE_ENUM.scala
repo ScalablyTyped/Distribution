@@ -16,12 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FAX_PRIORITY_TYPE_ENUM extends StObject
 object FAX_PRIORITY_TYPE_ENUM {
   
-  @scala.inline
-  def fptHIGH: `2` = 2.asInstanceOf[`2`]
+  inline def fptHIGH: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def fptLOW: `0` = 0.asInstanceOf[`0`]
+  inline def fptLOW: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def fptNORMAL: `1` = 1.asInstanceOf[`1`]
+  inline def fptNORMAL: `1` = 1.asInstanceOf[`1`]
 }

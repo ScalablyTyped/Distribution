@@ -13,12 +13,8 @@ object utils {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parseKey(keyData: String): ParsedKey | js.Array[ParsedKey] | Error | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseKey")(keyData.asInstanceOf[js.Any]).asInstanceOf[ParsedKey | js.Array[ParsedKey] | Error | Null]
-  @scala.inline
-  def parseKey(keyData: String, passphrase: String): ParsedKey | js.Array[ParsedKey] | Error | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parseKey")(keyData.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[ParsedKey | js.Array[ParsedKey] | Error | Null]
-  @scala.inline
-  def parseKey(keyData: Buffer): ParsedKey | js.Array[ParsedKey] | Error | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseKey")(keyData.asInstanceOf[js.Any]).asInstanceOf[ParsedKey | js.Array[ParsedKey] | Error | Null]
-  @scala.inline
-  def parseKey(keyData: Buffer, passphrase: String): ParsedKey | js.Array[ParsedKey] | Error | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parseKey")(keyData.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[ParsedKey | js.Array[ParsedKey] | Error | Null]
+  inline def parseKey(keyData: String): ParsedKey | js.Array[ParsedKey] | Error | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseKey")(keyData.asInstanceOf[js.Any]).asInstanceOf[ParsedKey | js.Array[ParsedKey] | Error | Null]
+  inline def parseKey(keyData: String, passphrase: String): ParsedKey | js.Array[ParsedKey] | Error | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parseKey")(keyData.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[ParsedKey | js.Array[ParsedKey] | Error | Null]
+  inline def parseKey(keyData: Buffer): ParsedKey | js.Array[ParsedKey] | Error | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseKey")(keyData.asInstanceOf[js.Any]).asInstanceOf[ParsedKey | js.Array[ParsedKey] | Error | Null]
+  inline def parseKey(keyData: Buffer, passphrase: String): ParsedKey | js.Array[ParsedKey] | Error | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parseKey")(keyData.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[ParsedKey | js.Array[ParsedKey] | Error | Null]
 }

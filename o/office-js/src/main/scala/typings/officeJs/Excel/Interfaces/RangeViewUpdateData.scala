@@ -49,58 +49,41 @@ trait RangeViewUpdateData extends StObject {
 }
 object RangeViewUpdateData {
   
-  @scala.inline
-  def apply(): RangeViewUpdateData = {
+  inline def apply(): RangeViewUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RangeViewUpdateData]
   }
   
-  @scala.inline
-  implicit class RangeViewUpdateDataMutableBuilder[Self <: RangeViewUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: RangeViewUpdateData](x: Self) {
     
-    @scala.inline
-    def setFormulas(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "formulas", value.asInstanceOf[js.Any])
+    inline def setFormulas(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "formulas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormulasLocal(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "formulasLocal", value.asInstanceOf[js.Any])
+    inline def setFormulasLocal(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "formulasLocal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormulasLocalUndefined: Self = StObject.set(x, "formulasLocal", js.undefined)
+    inline def setFormulasLocalUndefined: Self = StObject.set(x, "formulasLocal", js.undefined)
     
-    @scala.inline
-    def setFormulasLocalVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "formulasLocal", js.Array(value :_*))
+    inline def setFormulasLocalVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "formulasLocal", js.Array(value :_*))
     
-    @scala.inline
-    def setFormulasR1C1(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "formulasR1C1", value.asInstanceOf[js.Any])
+    inline def setFormulasR1C1(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "formulasR1C1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormulasR1C1Undefined: Self = StObject.set(x, "formulasR1C1", js.undefined)
+    inline def setFormulasR1C1Undefined: Self = StObject.set(x, "formulasR1C1", js.undefined)
     
-    @scala.inline
-    def setFormulasR1C1Varargs(value: js.Array[js.Any]*): Self = StObject.set(x, "formulasR1C1", js.Array(value :_*))
+    inline def setFormulasR1C1Varargs(value: js.Array[js.Any]*): Self = StObject.set(x, "formulasR1C1", js.Array(value :_*))
     
-    @scala.inline
-    def setFormulasUndefined: Self = StObject.set(x, "formulas", js.undefined)
+    inline def setFormulasUndefined: Self = StObject.set(x, "formulas", js.undefined)
     
-    @scala.inline
-    def setFormulasVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "formulas", js.Array(value :_*))
+    inline def setFormulasVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "formulas", js.Array(value :_*))
     
-    @scala.inline
-    def setNumberFormat(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
+    inline def setNumberFormat(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
+    inline def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
     
-    @scala.inline
-    def setNumberFormatVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "numberFormat", js.Array(value :_*))
+    inline def setNumberFormatVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "numberFormat", js.Array(value :_*))
     
-    @scala.inline
-    def setValues(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

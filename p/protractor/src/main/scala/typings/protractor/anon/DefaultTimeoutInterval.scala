@@ -47,55 +47,39 @@ trait DefaultTimeoutInterval
 }
 object DefaultTimeoutInterval {
   
-  @scala.inline
-  def apply(): DefaultTimeoutInterval = {
+  inline def apply(): DefaultTimeoutInterval = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DefaultTimeoutInterval]
   }
   
-  @scala.inline
-  implicit class DefaultTimeoutIntervalMutableBuilder[Self <: DefaultTimeoutInterval] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultTimeoutInterval](x: Self) {
     
-    @scala.inline
-    def setDefaultTimeoutInterval(value: Double): Self = StObject.set(x, "defaultTimeoutInterval", value.asInstanceOf[js.Any])
+    inline def setDefaultTimeoutInterval(value: Double): Self = StObject.set(x, "defaultTimeoutInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultTimeoutIntervalUndefined: Self = StObject.set(x, "defaultTimeoutInterval", js.undefined)
+    inline def setDefaultTimeoutIntervalUndefined: Self = StObject.set(x, "defaultTimeoutInterval", js.undefined)
     
-    @scala.inline
-    def setGrep(value: String): Self = StObject.set(x, "grep", value.asInstanceOf[js.Any])
+    inline def setGrep(value: String): Self = StObject.set(x, "grep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrepUndefined: Self = StObject.set(x, "grep", js.undefined)
+    inline def setGrepUndefined: Self = StObject.set(x, "grep", js.undefined)
     
-    @scala.inline
-    def setInvertGrep(value: Boolean): Self = StObject.set(x, "invertGrep", value.asInstanceOf[js.Any])
+    inline def setInvertGrep(value: Boolean): Self = StObject.set(x, "invertGrep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvertGrepUndefined: Self = StObject.set(x, "invertGrep", js.undefined)
+    inline def setInvertGrepUndefined: Self = StObject.set(x, "invertGrep", js.undefined)
     
-    @scala.inline
-    def setPrint(value: () => Unit): Self = StObject.set(x, "print", js.Any.fromFunction0(value))
+    inline def setPrint(value: () => Unit): Self = StObject.set(x, "print", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPrintUndefined: Self = StObject.set(x, "print", js.undefined)
+    inline def setPrintUndefined: Self = StObject.set(x, "print", js.undefined)
     
-    @scala.inline
-    def setRandom(value: Boolean): Self = StObject.set(x, "random", value.asInstanceOf[js.Any])
+    inline def setRandom(value: Boolean): Self = StObject.set(x, "random", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRandomUndefined: Self = StObject.set(x, "random", js.undefined)
+    inline def setRandomUndefined: Self = StObject.set(x, "random", js.undefined)
     
-    @scala.inline
-    def setSeed(value: String): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
+    inline def setSeed(value: String): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
+    inline def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
     
-    @scala.inline
-    def setShowColors(value: Boolean): Self = StObject.set(x, "showColors", value.asInstanceOf[js.Any])
+    inline def setShowColors(value: Boolean): Self = StObject.set(x, "showColors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowColorsUndefined: Self = StObject.set(x, "showColors", js.undefined)
+    inline def setShowColorsUndefined: Self = StObject.set(x, "showColors", js.undefined)
   }
 }

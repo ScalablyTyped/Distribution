@@ -13,22 +13,17 @@ trait DescribeAdjustmentTypesAnswer extends StObject {
 }
 object DescribeAdjustmentTypesAnswer {
   
-  @scala.inline
-  def apply(): DescribeAdjustmentTypesAnswer = {
+  inline def apply(): DescribeAdjustmentTypesAnswer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAdjustmentTypesAnswer]
   }
   
-  @scala.inline
-  implicit class DescribeAdjustmentTypesAnswerMutableBuilder[Self <: DescribeAdjustmentTypesAnswer] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAdjustmentTypesAnswer](x: Self) {
     
-    @scala.inline
-    def setAdjustmentTypes(value: AdjustmentTypes): Self = StObject.set(x, "AdjustmentTypes", value.asInstanceOf[js.Any])
+    inline def setAdjustmentTypes(value: AdjustmentTypes): Self = StObject.set(x, "AdjustmentTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdjustmentTypesUndefined: Self = StObject.set(x, "AdjustmentTypes", js.undefined)
+    inline def setAdjustmentTypesUndefined: Self = StObject.set(x, "AdjustmentTypes", js.undefined)
     
-    @scala.inline
-    def setAdjustmentTypesVarargs(value: AdjustmentType*): Self = StObject.set(x, "AdjustmentTypes", js.Array(value :_*))
+    inline def setAdjustmentTypesVarargs(value: AdjustmentType*): Self = StObject.set(x, "AdjustmentTypes", js.Array(value :_*))
   }
 }

@@ -13,19 +13,15 @@ trait MaybeIdentifiedDocument extends StObject {
 }
 object MaybeIdentifiedDocument {
   
-  @scala.inline
-  def apply(): MaybeIdentifiedDocument = {
+  inline def apply(): MaybeIdentifiedDocument = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MaybeIdentifiedDocument]
   }
   
-  @scala.inline
-  implicit class MaybeIdentifiedDocumentMutableBuilder[Self <: MaybeIdentifiedDocument] (val x: Self) extends AnyVal {
+  extension [Self <: MaybeIdentifiedDocument](x: Self) {
     
-    @scala.inline
-    def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+    inline def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_idUndefined: Self = StObject.set(x, "_id", js.undefined)
+    inline def set_idUndefined: Self = StObject.set(x, "_id", js.undefined)
   }
 }

@@ -20,37 +20,27 @@ trait InterconnectDiagnostics extends StObject {
 }
 object InterconnectDiagnostics {
   
-  @scala.inline
-  def apply(): InterconnectDiagnostics = {
+  inline def apply(): InterconnectDiagnostics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InterconnectDiagnostics]
   }
   
-  @scala.inline
-  implicit class InterconnectDiagnosticsMutableBuilder[Self <: InterconnectDiagnostics] (val x: Self) extends AnyVal {
+  extension [Self <: InterconnectDiagnostics](x: Self) {
     
-    @scala.inline
-    def setArpCaches(value: js.Array[InterconnectDiagnosticsARPEntry]): Self = StObject.set(x, "arpCaches", value.asInstanceOf[js.Any])
+    inline def setArpCaches(value: js.Array[InterconnectDiagnosticsARPEntry]): Self = StObject.set(x, "arpCaches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArpCachesUndefined: Self = StObject.set(x, "arpCaches", js.undefined)
+    inline def setArpCachesUndefined: Self = StObject.set(x, "arpCaches", js.undefined)
     
-    @scala.inline
-    def setArpCachesVarargs(value: InterconnectDiagnosticsARPEntry*): Self = StObject.set(x, "arpCaches", js.Array(value :_*))
+    inline def setArpCachesVarargs(value: InterconnectDiagnosticsARPEntry*): Self = StObject.set(x, "arpCaches", js.Array(value :_*))
     
-    @scala.inline
-    def setLinks(value: js.Array[InterconnectDiagnosticsLinkStatus]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    inline def setLinks(value: js.Array[InterconnectDiagnosticsLinkStatus]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
+    inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
-    @scala.inline
-    def setLinksVarargs(value: InterconnectDiagnosticsLinkStatus*): Self = StObject.set(x, "links", js.Array(value :_*))
+    inline def setLinksVarargs(value: InterconnectDiagnosticsLinkStatus*): Self = StObject.set(x, "links", js.Array(value :_*))
     
-    @scala.inline
-    def setMacAddress(value: String): Self = StObject.set(x, "macAddress", value.asInstanceOf[js.Any])
+    inline def setMacAddress(value: String): Self = StObject.set(x, "macAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMacAddressUndefined: Self = StObject.set(x, "macAddress", js.undefined)
+    inline def setMacAddressUndefined: Self = StObject.set(x, "macAddress", js.undefined)
   }
 }

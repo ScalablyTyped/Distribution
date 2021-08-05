@@ -16,28 +16,21 @@ trait FileDescriptor extends StObject {
 }
 object FileDescriptor {
   
-  @scala.inline
-  def apply(info: FileDescriptorInfo, path: String, stat: FileDescriptorStat | Boolean): FileDescriptor = {
+  inline def apply(info: FileDescriptorInfo, path: String, stat: FileDescriptorStat | Boolean): FileDescriptor = {
     val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], stat = stat.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileDescriptor]
   }
   
-  @scala.inline
-  implicit class FileDescriptorMutableBuilder[Self <: FileDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: FileDescriptor](x: Self) {
     
-    @scala.inline
-    def setFd(value: String): Self = StObject.set(x, "fd", value.asInstanceOf[js.Any])
+    inline def setFd(value: String): Self = StObject.set(x, "fd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFdUndefined: Self = StObject.set(x, "fd", js.undefined)
+    inline def setFdUndefined: Self = StObject.set(x, "fd", js.undefined)
     
-    @scala.inline
-    def setInfo(value: FileDescriptorInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: FileDescriptorInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStat(value: FileDescriptorStat | Boolean): Self = StObject.set(x, "stat", value.asInstanceOf[js.Any])
+    inline def setStat(value: FileDescriptorStat | Boolean): Self = StObject.set(x, "stat", value.asInstanceOf[js.Any])
   }
 }

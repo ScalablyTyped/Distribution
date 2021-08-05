@@ -12,8 +12,7 @@ trait MicrosoftUserProfile
 }
 object MicrosoftUserProfile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clientID: String,
     created_at: String,
     identities: js.Array[Auth0Identity],
@@ -28,16 +27,12 @@ object MicrosoftUserProfile {
     __obj.asInstanceOf[MicrosoftUserProfile]
   }
   
-  @scala.inline
-  implicit class MicrosoftUserProfileMutableBuilder[Self <: MicrosoftUserProfile] (val x: Self) extends AnyVal {
+  extension [Self <: MicrosoftUserProfile](x: Self) {
     
-    @scala.inline
-    def setEmails(value: js.Array[String]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
+    inline def setEmails(value: js.Array[String]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailsUndefined: Self = StObject.set(x, "emails", js.undefined)
+    inline def setEmailsUndefined: Self = StObject.set(x, "emails", js.undefined)
     
-    @scala.inline
-    def setEmailsVarargs(value: String*): Self = StObject.set(x, "emails", js.Array(value :_*))
+    inline def setEmailsVarargs(value: String*): Self = StObject.set(x, "emails", js.Array(value :_*))
   }
 }

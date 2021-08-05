@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SVGStopElement extends StObject {
   
-  @JSName("MSHTML.SVGStopElement_typekey")
+  /* private */ @JSName("MSHTML.SVGStopElement_typekey")
   var MSHTMLDotSVGStopElement_typekey: SVGStopElement
   
   val className: SVGAnimatedString
@@ -23,8 +23,7 @@ trait SVGStopElement extends StObject {
 }
 object SVGStopElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotSVGStopElement_typekey: SVGStopElement,
     className: SVGAnimatedString,
     focusable: SVGAnimatedEnumeration,
@@ -38,28 +37,20 @@ object SVGStopElement {
     __obj.asInstanceOf[SVGStopElement]
   }
   
-  @scala.inline
-  implicit class SVGStopElementMutableBuilder[Self <: SVGStopElement] (val x: Self) extends AnyVal {
+  extension [Self <: SVGStopElement](x: Self) {
     
-    @scala.inline
-    def setClassName(value: SVGAnimatedString): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: SVGAnimatedString): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusable(value: SVGAnimatedEnumeration): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
+    inline def setFocusable(value: SVGAnimatedEnumeration): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotSVGStopElement_typekey(value: SVGStopElement): Self = StObject.set(x, "MSHTML.SVGStopElement_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotSVGStopElement_typekey(value: SVGStopElement): Self = StObject.set(x, "MSHTML.SVGStopElement_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: SVGAnimatedNumber): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: SVGAnimatedNumber): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerSVGElement(value: ISVGSVGElement): Self = StObject.set(x, "ownerSVGElement", value.asInstanceOf[js.Any])
+    inline def setOwnerSVGElement(value: ISVGSVGElement): Self = StObject.set(x, "ownerSVGElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewportElement(value: ISVGElement): Self = StObject.set(x, "viewportElement", value.asInstanceOf[js.Any])
+    inline def setViewportElement(value: ISVGElement): Self = StObject.set(x, "viewportElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXmlbase(value: String): Self = StObject.set(x, "xmlbase", value.asInstanceOf[js.Any])
+    inline def setXmlbase(value: String): Self = StObject.set(x, "xmlbase", value.asInstanceOf[js.Any])
   }
 }

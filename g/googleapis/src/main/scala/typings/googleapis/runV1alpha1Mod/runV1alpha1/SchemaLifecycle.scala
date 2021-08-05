@@ -36,25 +36,19 @@ trait SchemaLifecycle extends StObject {
 }
 object SchemaLifecycle {
   
-  @scala.inline
-  def apply(): SchemaLifecycle = {
+  inline def apply(): SchemaLifecycle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLifecycle]
   }
   
-  @scala.inline
-  implicit class SchemaLifecycleMutableBuilder[Self <: SchemaLifecycle] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLifecycle](x: Self) {
     
-    @scala.inline
-    def setPostStart(value: SchemaHandler): Self = StObject.set(x, "postStart", value.asInstanceOf[js.Any])
+    inline def setPostStart(value: SchemaHandler): Self = StObject.set(x, "postStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostStartUndefined: Self = StObject.set(x, "postStart", js.undefined)
+    inline def setPostStartUndefined: Self = StObject.set(x, "postStart", js.undefined)
     
-    @scala.inline
-    def setPreStop(value: SchemaHandler): Self = StObject.set(x, "preStop", value.asInstanceOf[js.Any])
+    inline def setPreStop(value: SchemaHandler): Self = StObject.set(x, "preStop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreStopUndefined: Self = StObject.set(x, "preStop", js.undefined)
+    inline def setPreStopUndefined: Self = StObject.set(x, "preStop", js.undefined)
   }
 }

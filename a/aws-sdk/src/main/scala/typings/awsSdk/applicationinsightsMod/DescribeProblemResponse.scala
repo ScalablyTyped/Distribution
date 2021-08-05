@@ -13,19 +13,15 @@ trait DescribeProblemResponse extends StObject {
 }
 object DescribeProblemResponse {
   
-  @scala.inline
-  def apply(): DescribeProblemResponse = {
+  inline def apply(): DescribeProblemResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeProblemResponse]
   }
   
-  @scala.inline
-  implicit class DescribeProblemResponseMutableBuilder[Self <: DescribeProblemResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeProblemResponse](x: Self) {
     
-    @scala.inline
-    def setProblem(value: Problem): Self = StObject.set(x, "Problem", value.asInstanceOf[js.Any])
+    inline def setProblem(value: Problem): Self = StObject.set(x, "Problem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProblemUndefined: Self = StObject.set(x, "Problem", js.undefined)
+    inline def setProblemUndefined: Self = StObject.set(x, "Problem", js.undefined)
   }
 }

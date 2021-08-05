@@ -20,29 +20,22 @@ object directThreadBroadcastMediaOptionsMod {
   }
   object DirectThreadBroadcastPhotoOptions {
     
-    @scala.inline
-    def apply(file: Buffer): DirectThreadBroadcastPhotoOptions = {
+    inline def apply(file: Buffer): DirectThreadBroadcastPhotoOptions = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
       __obj.asInstanceOf[DirectThreadBroadcastPhotoOptions]
     }
     
-    @scala.inline
-    implicit class DirectThreadBroadcastPhotoOptionsMutableBuilder[Self <: DirectThreadBroadcastPhotoOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DirectThreadBroadcastPhotoOptions](x: Self) {
       
-      @scala.inline
-      def setAllowFullAspectRatio(value: Boolean): Self = StObject.set(x, "allowFullAspectRatio", value.asInstanceOf[js.Any])
+      inline def setAllowFullAspectRatio(value: Boolean): Self = StObject.set(x, "allowFullAspectRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowFullAspectRatioUndefined: Self = StObject.set(x, "allowFullAspectRatio", js.undefined)
+      inline def setAllowFullAspectRatioUndefined: Self = StObject.set(x, "allowFullAspectRatio", js.undefined)
       
-      @scala.inline
-      def setFile(value: Buffer): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: Buffer): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploadId(value: String): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
+      inline def setUploadId(value: String): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploadIdUndefined: Self = StObject.set(x, "uploadId", js.undefined)
+      inline def setUploadIdUndefined: Self = StObject.set(x, "uploadId", js.undefined)
     }
   }
   
@@ -54,17 +47,14 @@ object directThreadBroadcastMediaOptionsMod {
   }
   object DirectThreadBroadcastPhotoStoryOptions {
     
-    @scala.inline
-    def apply(file: Buffer): DirectThreadBroadcastPhotoStoryOptions = {
+    inline def apply(file: Buffer): DirectThreadBroadcastPhotoStoryOptions = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
       __obj.asInstanceOf[DirectThreadBroadcastPhotoStoryOptions]
     }
     
-    @scala.inline
-    implicit class DirectThreadBroadcastPhotoStoryOptionsMutableBuilder[Self <: DirectThreadBroadcastPhotoStoryOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DirectThreadBroadcastPhotoStoryOptions](x: Self) {
       
-      @scala.inline
-      def setFile(value: Buffer): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: Buffer): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     }
   }
   
@@ -78,32 +68,24 @@ object directThreadBroadcastMediaOptionsMod {
   }
   object DirectThreadBroadcastStoryOptions {
     
-    @scala.inline
-    def apply(): DirectThreadBroadcastStoryOptions = {
+    inline def apply(): DirectThreadBroadcastStoryOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DirectThreadBroadcastStoryOptions]
     }
     
-    @scala.inline
-    implicit class DirectThreadBroadcastStoryOptionsMutableBuilder[Self <: DirectThreadBroadcastStoryOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DirectThreadBroadcastStoryOptions](x: Self) {
       
-      @scala.inline
-      def setReplyType(value: story | String): Self = StObject.set(x, "replyType", value.asInstanceOf[js.Any])
+      inline def setReplyType(value: story | String): Self = StObject.set(x, "replyType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplyTypeUndefined: Self = StObject.set(x, "replyType", js.undefined)
+      inline def setReplyTypeUndefined: Self = StObject.set(x, "replyType", js.undefined)
       
-      @scala.inline
-      def setUploadId(value: Double): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
+      inline def setUploadId(value: Double): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploadIdUndefined: Self = StObject.set(x, "uploadId", js.undefined)
+      inline def setUploadIdUndefined: Self = StObject.set(x, "uploadId", js.undefined)
       
-      @scala.inline
-      def setViewMode(value: replayable | once | String): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
+      inline def setViewMode(value: replayable | once | String): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewModeUndefined: Self = StObject.set(x, "viewMode", js.undefined)
+      inline def setViewModeUndefined: Self = StObject.set(x, "viewMode", js.undefined)
     }
   }
   
@@ -119,35 +101,26 @@ object directThreadBroadcastMediaOptionsMod {
   }
   object DirectThreadBroadcastVideoOptions {
     
-    @scala.inline
-    def apply(video: Buffer): DirectThreadBroadcastVideoOptions = {
+    inline def apply(video: Buffer): DirectThreadBroadcastVideoOptions = {
       val __obj = js.Dynamic.literal(video = video.asInstanceOf[js.Any])
       __obj.asInstanceOf[DirectThreadBroadcastVideoOptions]
     }
     
-    @scala.inline
-    implicit class DirectThreadBroadcastVideoOptionsMutableBuilder[Self <: DirectThreadBroadcastVideoOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DirectThreadBroadcastVideoOptions](x: Self) {
       
-      @scala.inline
-      def setSampled(value: Boolean): Self = StObject.set(x, "sampled", value.asInstanceOf[js.Any])
+      inline def setSampled(value: Boolean): Self = StObject.set(x, "sampled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSampledUndefined: Self = StObject.set(x, "sampled", js.undefined)
+      inline def setSampledUndefined: Self = StObject.set(x, "sampled", js.undefined)
       
-      @scala.inline
-      def setTranscodeDelay(value: Double): Self = StObject.set(x, "transcodeDelay", value.asInstanceOf[js.Any])
+      inline def setTranscodeDelay(value: Double): Self = StObject.set(x, "transcodeDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranscodeDelayUndefined: Self = StObject.set(x, "transcodeDelay", js.undefined)
+      inline def setTranscodeDelayUndefined: Self = StObject.set(x, "transcodeDelay", js.undefined)
       
-      @scala.inline
-      def setUploadId(value: String): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
+      inline def setUploadId(value: String): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploadIdUndefined: Self = StObject.set(x, "uploadId", js.undefined)
+      inline def setUploadIdUndefined: Self = StObject.set(x, "uploadId", js.undefined)
       
-      @scala.inline
-      def setVideo(value: Buffer): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+      inline def setVideo(value: Buffer): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     }
   }
   
@@ -161,20 +134,16 @@ object directThreadBroadcastMediaOptionsMod {
   }
   object DirectThreadBroadcastVideoStoryOptions {
     
-    @scala.inline
-    def apply(coverImage: Buffer, video: Buffer): DirectThreadBroadcastVideoStoryOptions = {
+    inline def apply(coverImage: Buffer, video: Buffer): DirectThreadBroadcastVideoStoryOptions = {
       val __obj = js.Dynamic.literal(coverImage = coverImage.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any])
       __obj.asInstanceOf[DirectThreadBroadcastVideoStoryOptions]
     }
     
-    @scala.inline
-    implicit class DirectThreadBroadcastVideoStoryOptionsMutableBuilder[Self <: DirectThreadBroadcastVideoStoryOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DirectThreadBroadcastVideoStoryOptions](x: Self) {
       
-      @scala.inline
-      def setCoverImage(value: Buffer): Self = StObject.set(x, "coverImage", value.asInstanceOf[js.Any])
+      inline def setCoverImage(value: Buffer): Self = StObject.set(x, "coverImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVideo(value: Buffer): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+      inline def setVideo(value: Buffer): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     }
   }
   
@@ -192,44 +161,32 @@ object directThreadBroadcastMediaOptionsMod {
   }
   object DirectThreadBroadcastVoiceOptions {
     
-    @scala.inline
-    def apply(file: Buffer): DirectThreadBroadcastVoiceOptions = {
+    inline def apply(file: Buffer): DirectThreadBroadcastVoiceOptions = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
       __obj.asInstanceOf[DirectThreadBroadcastVoiceOptions]
     }
     
-    @scala.inline
-    implicit class DirectThreadBroadcastVoiceOptionsMutableBuilder[Self <: DirectThreadBroadcastVoiceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DirectThreadBroadcastVoiceOptions](x: Self) {
       
-      @scala.inline
-      def setFile(value: Buffer): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: Buffer): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranscodeDelay(value: Double): Self = StObject.set(x, "transcodeDelay", value.asInstanceOf[js.Any])
+      inline def setTranscodeDelay(value: Double): Self = StObject.set(x, "transcodeDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranscodeDelayUndefined: Self = StObject.set(x, "transcodeDelay", js.undefined)
+      inline def setTranscodeDelayUndefined: Self = StObject.set(x, "transcodeDelay", js.undefined)
       
-      @scala.inline
-      def setUploadId(value: String): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
+      inline def setUploadId(value: String): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploadIdUndefined: Self = StObject.set(x, "uploadId", js.undefined)
+      inline def setUploadIdUndefined: Self = StObject.set(x, "uploadId", js.undefined)
       
-      @scala.inline
-      def setWaveform(value: js.Array[Double]): Self = StObject.set(x, "waveform", value.asInstanceOf[js.Any])
+      inline def setWaveform(value: js.Array[Double]): Self = StObject.set(x, "waveform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWaveformSamplingFrequencyHz(value: Double): Self = StObject.set(x, "waveformSamplingFrequencyHz", value.asInstanceOf[js.Any])
+      inline def setWaveformSamplingFrequencyHz(value: Double): Self = StObject.set(x, "waveformSamplingFrequencyHz", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWaveformSamplingFrequencyHzUndefined: Self = StObject.set(x, "waveformSamplingFrequencyHz", js.undefined)
+      inline def setWaveformSamplingFrequencyHzUndefined: Self = StObject.set(x, "waveformSamplingFrequencyHz", js.undefined)
       
-      @scala.inline
-      def setWaveformUndefined: Self = StObject.set(x, "waveform", js.undefined)
+      inline def setWaveformUndefined: Self = StObject.set(x, "waveform", js.undefined)
       
-      @scala.inline
-      def setWaveformVarargs(value: Double*): Self = StObject.set(x, "waveform", js.Array(value :_*))
+      inline def setWaveformVarargs(value: Double*): Self = StObject.set(x, "waveform", js.Array(value :_*))
     }
   }
 }

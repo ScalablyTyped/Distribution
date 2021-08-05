@@ -11,27 +11,23 @@ object electronPublishStrings {
   sealed trait always
     extends StObject
        with PublishPolicy
-  @scala.inline
-  def always: always = "always".asInstanceOf[always]
+  inline def always: always = "always".asInstanceOf[always]
   
   @js.native
   sealed trait never
     extends StObject
        with PublishPolicy
-  @scala.inline
-  def never: never = "never".asInstanceOf[never]
+  inline def never: never = "never".asInstanceOf[never]
   
   @js.native
   sealed trait onTag
     extends StObject
        with PublishPolicy
-  @scala.inline
-  def onTag: onTag = "onTag".asInstanceOf[onTag]
+  inline def onTag: onTag = "onTag".asInstanceOf[onTag]
   
   @js.native
   sealed trait onTagOrDraft
     extends StObject
        with PublishPolicy
-  @scala.inline
-  def onTagOrDraft: onTagOrDraft = "onTagOrDraft".asInstanceOf[onTagOrDraft]
+  inline def onTagOrDraft: onTagOrDraft = "onTagOrDraft".asInstanceOf[onTagOrDraft]
 }

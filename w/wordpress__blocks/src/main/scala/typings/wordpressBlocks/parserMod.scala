@@ -34,38 +34,25 @@ object parserMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getBlockAttributes(blockTypeOrName: String, innerHTML: String): Record[String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockAttributes")(blockTypeOrName.asInstanceOf[js.Any], innerHTML.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Any]]
-  @scala.inline
-  def getBlockAttributes(blockTypeOrName: String, innerHTML: String, attributes: Record[String, js.Any]): Record[String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockAttributes")(blockTypeOrName.asInstanceOf[js.Any], innerHTML.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Any]]
-  @scala.inline
-  def getBlockAttributes[T /* <: Block[js.Any] */](blockTypeOrName: T, innerHTML: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockAttributes")(blockTypeOrName.asInstanceOf[js.Any], innerHTML.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def getBlockAttributes[T /* <: Block[js.Any] */](blockTypeOrName: T, innerHTML: String, attributes: Record[String, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockAttributes")(blockTypeOrName.asInstanceOf[js.Any], innerHTML.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getBlockAttributes(blockTypeOrName: String, innerHTML: String): Record[String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockAttributes")(blockTypeOrName.asInstanceOf[js.Any], innerHTML.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Any]]
+  inline def getBlockAttributes(blockTypeOrName: String, innerHTML: String, attributes: Record[String, js.Any]): Record[String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockAttributes")(blockTypeOrName.asInstanceOf[js.Any], innerHTML.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Any]]
+  inline def getBlockAttributes[T /* <: Block[js.Any] */](blockTypeOrName: T, innerHTML: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockAttributes")(blockTypeOrName.asInstanceOf[js.Any], innerHTML.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getBlockAttributes[T /* <: Block[js.Any] */](blockTypeOrName: T, innerHTML: String, attributes: Record[String, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockAttributes")(blockTypeOrName.asInstanceOf[js.Any], innerHTML.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def parse(content: String): js.Array[BlockInstance[StringDictionary[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(content.asInstanceOf[js.Any]).asInstanceOf[js.Array[BlockInstance[StringDictionary[js.Any]]]]
+  inline def parse(content: String): js.Array[BlockInstance[StringDictionary[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(content.asInstanceOf[js.Any]).asInstanceOf[js.Array[BlockInstance[StringDictionary[js.Any]]]]
   
-  @scala.inline
-  def parseWithAttributeSchema(innerHTML: String, schema: Attributetypeboolean): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
-  @scala.inline
-  def parseWithAttributeSchema(innerHTML: String, schema: Attribute): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
-  @scala.inline
-  def parseWithAttributeSchema(innerHTML: String, schema: Children): js.Array[ReactChild] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[js.Array[ReactChild]]
-  @scala.inline
-  def parseWithAttributeSchema(innerHTML: String, schema: HTML): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
-  @scala.inline
-  def parseWithAttributeSchema(innerHTML: String, schema: Node): Element | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[Element | Null]
-  @scala.inline
-  def parseWithAttributeSchema(innerHTML: String, schema: Tag): js.UndefOr[
+  inline def parseWithAttributeSchema(innerHTML: String, schema: Attributetypeboolean): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
+  inline def parseWithAttributeSchema(innerHTML: String, schema: Attribute): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  inline def parseWithAttributeSchema(innerHTML: String, schema: Children): js.Array[ReactChild] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[js.Array[ReactChild]]
+  inline def parseWithAttributeSchema(innerHTML: String, schema: HTML): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  inline def parseWithAttributeSchema(innerHTML: String, schema: Node): Element | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[Element | Null]
+  inline def parseWithAttributeSchema(innerHTML: String, schema: Tag): js.UndefOr[
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 173 */ js.Any
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 173 */ js.Any
   ]]
-  @scala.inline
-  def parseWithAttributeSchema(innerHTML: String, schema: Text): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
-  @scala.inline
-  def parseWithAttributeSchema[T /* <: Record[String, Source[js.Any]] */](innerHTML: String, schema: Query[T]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  inline def parseWithAttributeSchema(innerHTML: String, schema: Text): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  inline def parseWithAttributeSchema[T /* <: Record[String, Source[js.Any]] */](innerHTML: String, schema: Query[T]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in keyof T ]: @wordpress/blocks.@wordpress/blocks/api/parser.SourceReturnValue<T[k]>}
     */ typings.wordpressBlocks.wordpressBlocksStrings.parseWithAttributeSchema & TopLevel[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in keyof T ]: @wordpress/blocks.@wordpress/blocks/api/parser.SourceReturnValue<T[k]>}
@@ -87,32 +74,24 @@ object parserMod {
     }
     object Attribute {
       
-      @scala.inline
-      def apply(attribute: String): Attribute = {
+      inline def apply(attribute: String): Attribute = {
         val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any], source = "attribute")
         __obj.asInstanceOf[Attribute]
       }
       
-      @scala.inline
-      implicit class AttributeMutableBuilder[Self <: Attribute] (val x: Self) extends AnyVal {
+      extension [Self <: Attribute](x: Self) {
         
-        @scala.inline
-        def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+        inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+        inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+        inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
         
-        @scala.inline
-        def setSource(value: attribute): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+        inline def setSource(value: attribute): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setType(value: string | boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: string | boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       }
     }
     
@@ -126,23 +105,18 @@ object parserMod {
     }
     object Children {
       
-      @scala.inline
-      def apply(): Children = {
+      inline def apply(): Children = {
         val __obj = js.Dynamic.literal(source = "children")
         __obj.asInstanceOf[Children]
       }
       
-      @scala.inline
-      implicit class ChildrenMutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
+      extension [Self <: Children](x: Self) {
         
-        @scala.inline
-        def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+        inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+        inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
         
-        @scala.inline
-        def setSource(value: children): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+        inline def setSource(value: children): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       }
     }
     
@@ -160,29 +134,22 @@ object parserMod {
     }
     object HTML {
       
-      @scala.inline
-      def apply(): HTML = {
+      inline def apply(): HTML = {
         val __obj = js.Dynamic.literal(source = "html")
         __obj.asInstanceOf[HTML]
       }
       
-      @scala.inline
-      implicit class HTMLMutableBuilder[Self <: HTML] (val x: Self) extends AnyVal {
+      extension [Self <: HTML](x: Self) {
         
-        @scala.inline
-        def setMultiline(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
+        inline def setMultiline(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMultilineUndefined: Self = StObject.set(x, "multiline", js.undefined)
+        inline def setMultilineUndefined: Self = StObject.set(x, "multiline", js.undefined)
         
-        @scala.inline
-        def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+        inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+        inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
         
-        @scala.inline
-        def setSource(value: html): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+        inline def setSource(value: html): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       }
     }
     
@@ -196,23 +163,18 @@ object parserMod {
     }
     object Node {
       
-      @scala.inline
-      def apply(): Node = {
+      inline def apply(): Node = {
         val __obj = js.Dynamic.literal(source = "node")
         __obj.asInstanceOf[Node]
       }
       
-      @scala.inline
-      implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
+      extension [Self <: Node](x: Self) {
         
-        @scala.inline
-        def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+        inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+        inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
         
-        @scala.inline
-        def setSource(value: node): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+        inline def setSource(value: node): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       }
     }
     
@@ -228,26 +190,20 @@ object parserMod {
     }
     object Query {
       
-      @scala.inline
-      def apply[T](query: T): Query[T] = {
+      inline def apply[T](query: T): Query[T] = {
         val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], source = "query")
         __obj.asInstanceOf[Query[T]]
       }
       
-      @scala.inline
-      implicit class QueryMutableBuilder[Self <: Query[?], T] (val x: Self & Query[T]) extends AnyVal {
+      extension [Self <: Query[?], T](x: Self & Query[T]) {
         
-        @scala.inline
-        def setQuery(value: T): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+        inline def setQuery(value: T): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+        inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+        inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
         
-        @scala.inline
-        def setSource(value: query_): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+        inline def setSource(value: query_): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       }
     }
     
@@ -261,23 +217,18 @@ object parserMod {
     }
     object Tag {
       
-      @scala.inline
-      def apply(): Tag = {
+      inline def apply(): Tag = {
         val __obj = js.Dynamic.literal(source = "tag")
         __obj.asInstanceOf[Tag]
       }
       
-      @scala.inline
-      implicit class TagMutableBuilder[Self <: Tag] (val x: Self) extends AnyVal {
+      extension [Self <: Tag](x: Self) {
         
-        @scala.inline
-        def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+        inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+        inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
         
-        @scala.inline
-        def setSource(value: tag): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+        inline def setSource(value: tag): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       }
     }
     
@@ -291,23 +242,18 @@ object parserMod {
     }
     object Text {
       
-      @scala.inline
-      def apply(): Text = {
+      inline def apply(): Text = {
         val __obj = js.Dynamic.literal(source = "text")
         __obj.asInstanceOf[Text]
       }
       
-      @scala.inline
-      implicit class TextMutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
+      extension [Self <: Text](x: Self) {
         
-        @scala.inline
-        def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+        inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+        inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
         
-        @scala.inline
-        def setSource(value: text): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+        inline def setSource(value: text): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -324,44 +270,37 @@ object parserMod {
   trait Source[T] extends StObject
   object Source {
     
-    @scala.inline
-    def Attribute(attribute: String): typings.wordpressBlocks.parserMod.Schema.Attribute = {
+    inline def Attribute(attribute: String): typings.wordpressBlocks.parserMod.Schema.Attribute = {
       val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any], source = "attribute")
       __obj.asInstanceOf[typings.wordpressBlocks.parserMod.Schema.Attribute]
     }
     
-    @scala.inline
-    def Children(): typings.wordpressBlocks.parserMod.Schema.Children = {
+    inline def Children(): typings.wordpressBlocks.parserMod.Schema.Children = {
       val __obj = js.Dynamic.literal(source = "children")
       __obj.asInstanceOf[typings.wordpressBlocks.parserMod.Schema.Children]
     }
     
-    @scala.inline
-    def HTML(): typings.wordpressBlocks.parserMod.Schema.HTML = {
+    inline def HTML(): typings.wordpressBlocks.parserMod.Schema.HTML = {
       val __obj = js.Dynamic.literal(source = "html")
       __obj.asInstanceOf[typings.wordpressBlocks.parserMod.Schema.HTML]
     }
     
-    @scala.inline
-    def Node(): typings.wordpressBlocks.parserMod.Schema.Node = {
+    inline def Node(): typings.wordpressBlocks.parserMod.Schema.Node = {
       val __obj = js.Dynamic.literal(source = "node")
       __obj.asInstanceOf[typings.wordpressBlocks.parserMod.Schema.Node]
     }
     
-    @scala.inline
-    def Query[T](query: T): typings.wordpressBlocks.parserMod.Schema.Query[T] = {
+    inline def Query[T](query: T): typings.wordpressBlocks.parserMod.Schema.Query[T] = {
       val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], source = "query")
       __obj.asInstanceOf[typings.wordpressBlocks.parserMod.Schema.Query[T]]
     }
     
-    @scala.inline
-    def Tag(): typings.wordpressBlocks.parserMod.Schema.Tag = {
+    inline def Tag(): typings.wordpressBlocks.parserMod.Schema.Tag = {
       val __obj = js.Dynamic.literal(source = "tag")
       __obj.asInstanceOf[typings.wordpressBlocks.parserMod.Schema.Tag]
     }
     
-    @scala.inline
-    def Text(): typings.wordpressBlocks.parserMod.Schema.Text = {
+    inline def Text(): typings.wordpressBlocks.parserMod.Schema.Text = {
       val __obj = js.Dynamic.literal(source = "text")
       __obj.asInstanceOf[typings.wordpressBlocks.parserMod.Schema.Text]
     }

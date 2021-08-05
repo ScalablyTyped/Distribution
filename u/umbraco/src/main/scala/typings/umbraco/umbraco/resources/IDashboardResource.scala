@@ -28,16 +28,13 @@ trait IDashboardResource extends StObject {
 }
 object IDashboardResource {
   
-  @scala.inline
-  def apply(getDashboard: String => IPromise[IResourcePromise]): IDashboardResource = {
+  inline def apply(getDashboard: String => IPromise[IResourcePromise]): IDashboardResource = {
     val __obj = js.Dynamic.literal(getDashboard = js.Any.fromFunction1(getDashboard))
     __obj.asInstanceOf[IDashboardResource]
   }
   
-  @scala.inline
-  implicit class IDashboardResourceMutableBuilder[Self <: IDashboardResource] (val x: Self) extends AnyVal {
+  extension [Self <: IDashboardResource](x: Self) {
     
-    @scala.inline
-    def setGetDashboard(value: String => IPromise[IResourcePromise]): Self = StObject.set(x, "getDashboard", js.Any.fromFunction1(value))
+    inline def setGetDashboard(value: String => IPromise[IResourcePromise]): Self = StObject.set(x, "getDashboard", js.Any.fromFunction1(value))
   }
 }

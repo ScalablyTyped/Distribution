@@ -13,16 +13,13 @@ trait DescribeWorkforceResponse extends StObject {
 }
 object DescribeWorkforceResponse {
   
-  @scala.inline
-  def apply(Workforce: Workforce): DescribeWorkforceResponse = {
+  inline def apply(Workforce: Workforce): DescribeWorkforceResponse = {
     val __obj = js.Dynamic.literal(Workforce = Workforce.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeWorkforceResponse]
   }
   
-  @scala.inline
-  implicit class DescribeWorkforceResponseMutableBuilder[Self <: DescribeWorkforceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeWorkforceResponse](x: Self) {
     
-    @scala.inline
-    def setWorkforce(value: Workforce): Self = StObject.set(x, "Workforce", value.asInstanceOf[js.Any])
+    inline def setWorkforce(value: Workforce): Self = StObject.set(x, "Workforce", value.asInstanceOf[js.Any])
   }
 }

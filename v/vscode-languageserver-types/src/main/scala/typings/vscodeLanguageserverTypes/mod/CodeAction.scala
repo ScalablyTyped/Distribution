@@ -48,8 +48,7 @@ trait CodeAction extends StObject {
 }
 object CodeAction {
   
-  @scala.inline
-  def apply(title: String): CodeAction = {
+  inline def apply(title: String): CodeAction = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeAction]
   }
@@ -65,10 +64,8 @@ object CodeAction {
     * @param command The command to execute.
     * @param kind The kind of the code action.
     */
-  @scala.inline
-  def create(title: String, command: Command): CodeAction = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(title.asInstanceOf[js.Any], command.asInstanceOf[js.Any])).asInstanceOf[CodeAction]
-  @scala.inline
-  def create(title: String, command: Command, kind: CodeActionKind): CodeAction = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(title.asInstanceOf[js.Any], command.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[CodeAction]
+  inline def create(title: String, command: Command): CodeAction = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(title.asInstanceOf[js.Any], command.asInstanceOf[js.Any])).asInstanceOf[CodeAction]
+  inline def create(title: String, command: Command, kind: CodeActionKind): CodeAction = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(title.asInstanceOf[js.Any], command.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[CodeAction]
   /**
     * Creates a new code action.
     *
@@ -76,51 +73,35 @@ object CodeAction {
     * @param command The command to execute.
     * @param kind The kind of the code action.
     */
-  @scala.inline
-  def create(title: String, edit: WorkspaceEdit): CodeAction = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(title.asInstanceOf[js.Any], edit.asInstanceOf[js.Any])).asInstanceOf[CodeAction]
-  @scala.inline
-  def create(title: String, edit: WorkspaceEdit, kind: CodeActionKind): CodeAction = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(title.asInstanceOf[js.Any], edit.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[CodeAction]
+  inline def create(title: String, edit: WorkspaceEdit): CodeAction = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(title.asInstanceOf[js.Any], edit.asInstanceOf[js.Any])).asInstanceOf[CodeAction]
+  inline def create(title: String, edit: WorkspaceEdit, kind: CodeActionKind): CodeAction = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(title.asInstanceOf[js.Any], edit.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[CodeAction]
   
-  @scala.inline
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.CodeAction */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.CodeAction */ Boolean]
+  inline def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.CodeAction */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.CodeAction */ Boolean]
   
-  @scala.inline
-  implicit class CodeActionMutableBuilder[Self <: CodeAction] (val x: Self) extends AnyVal {
+  extension [Self <: CodeAction](x: Self) {
     
-    @scala.inline
-    def setCommand(value: Command): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: Command): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
+    inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
     
-    @scala.inline
-    def setDiagnostics(value: js.Array[Diagnostic]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
+    inline def setDiagnostics(value: js.Array[Diagnostic]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiagnosticsUndefined: Self = StObject.set(x, "diagnostics", js.undefined)
+    inline def setDiagnosticsUndefined: Self = StObject.set(x, "diagnostics", js.undefined)
     
-    @scala.inline
-    def setDiagnosticsVarargs(value: Diagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value :_*))
+    inline def setDiagnosticsVarargs(value: Diagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value :_*))
     
-    @scala.inline
-    def setEdit(value: WorkspaceEdit): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
+    inline def setEdit(value: WorkspaceEdit): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditUndefined: Self = StObject.set(x, "edit", js.undefined)
+    inline def setEditUndefined: Self = StObject.set(x, "edit", js.undefined)
     
-    @scala.inline
-    def setIsPreferred(value: Boolean): Self = StObject.set(x, "isPreferred", value.asInstanceOf[js.Any])
+    inline def setIsPreferred(value: Boolean): Self = StObject.set(x, "isPreferred", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPreferredUndefined: Self = StObject.set(x, "isPreferred", js.undefined)
+    inline def setIsPreferredUndefined: Self = StObject.set(x, "isPreferred", js.undefined)
     
-    @scala.inline
-    def setKind(value: CodeActionKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: CodeActionKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

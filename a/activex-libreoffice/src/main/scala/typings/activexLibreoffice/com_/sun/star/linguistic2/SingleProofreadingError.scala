@@ -30,8 +30,7 @@ trait SingleProofreadingError extends StObject {
 }
 object SingleProofreadingError {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     aFullComment: String,
     aProperties: SafeArray[PropertyValue],
     aRuleIdentifier: String,
@@ -45,31 +44,22 @@ object SingleProofreadingError {
     __obj.asInstanceOf[SingleProofreadingError]
   }
   
-  @scala.inline
-  implicit class SingleProofreadingErrorMutableBuilder[Self <: SingleProofreadingError] (val x: Self) extends AnyVal {
+  extension [Self <: SingleProofreadingError](x: Self) {
     
-    @scala.inline
-    def setAFullComment(value: String): Self = StObject.set(x, "aFullComment", value.asInstanceOf[js.Any])
+    inline def setAFullComment(value: String): Self = StObject.set(x, "aFullComment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAProperties(value: SafeArray[PropertyValue]): Self = StObject.set(x, "aProperties", value.asInstanceOf[js.Any])
+    inline def setAProperties(value: SafeArray[PropertyValue]): Self = StObject.set(x, "aProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setARuleIdentifier(value: String): Self = StObject.set(x, "aRuleIdentifier", value.asInstanceOf[js.Any])
+    inline def setARuleIdentifier(value: String): Self = StObject.set(x, "aRuleIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAShortComment(value: String): Self = StObject.set(x, "aShortComment", value.asInstanceOf[js.Any])
+    inline def setAShortComment(value: String): Self = StObject.set(x, "aShortComment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setASuggestions(value: SafeArray[String]): Self = StObject.set(x, "aSuggestions", value.asInstanceOf[js.Any])
+    inline def setASuggestions(value: SafeArray[String]): Self = StObject.set(x, "aSuggestions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNErrorLength(value: Double): Self = StObject.set(x, "nErrorLength", value.asInstanceOf[js.Any])
+    inline def setNErrorLength(value: Double): Self = StObject.set(x, "nErrorLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNErrorStart(value: Double): Self = StObject.set(x, "nErrorStart", value.asInstanceOf[js.Any])
+    inline def setNErrorStart(value: Double): Self = StObject.set(x, "nErrorStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNErrorType(value: Double): Self = StObject.set(x, "nErrorType", value.asInstanceOf[js.Any])
+    inline def setNErrorType(value: Double): Self = StObject.set(x, "nErrorType", value.asInstanceOf[js.Any])
   }
 }

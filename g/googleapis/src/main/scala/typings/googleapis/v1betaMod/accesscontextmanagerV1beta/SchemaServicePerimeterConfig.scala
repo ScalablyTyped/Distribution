@@ -46,49 +46,35 @@ trait SchemaServicePerimeterConfig extends StObject {
 }
 object SchemaServicePerimeterConfig {
   
-  @scala.inline
-  def apply(): SchemaServicePerimeterConfig = {
+  inline def apply(): SchemaServicePerimeterConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaServicePerimeterConfig]
   }
   
-  @scala.inline
-  implicit class SchemaServicePerimeterConfigMutableBuilder[Self <: SchemaServicePerimeterConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaServicePerimeterConfig](x: Self) {
     
-    @scala.inline
-    def setAccessLevels(value: js.Array[String]): Self = StObject.set(x, "accessLevels", value.asInstanceOf[js.Any])
+    inline def setAccessLevels(value: js.Array[String]): Self = StObject.set(x, "accessLevels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessLevelsUndefined: Self = StObject.set(x, "accessLevels", js.undefined)
+    inline def setAccessLevelsUndefined: Self = StObject.set(x, "accessLevels", js.undefined)
     
-    @scala.inline
-    def setAccessLevelsVarargs(value: String*): Self = StObject.set(x, "accessLevels", js.Array(value :_*))
+    inline def setAccessLevelsVarargs(value: String*): Self = StObject.set(x, "accessLevels", js.Array(value :_*))
     
-    @scala.inline
-    def setResources(value: js.Array[String]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: js.Array[String]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
+    inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
-    @scala.inline
-    def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
     
-    @scala.inline
-    def setRestrictedServices(value: js.Array[String]): Self = StObject.set(x, "restrictedServices", value.asInstanceOf[js.Any])
+    inline def setRestrictedServices(value: js.Array[String]): Self = StObject.set(x, "restrictedServices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestrictedServicesUndefined: Self = StObject.set(x, "restrictedServices", js.undefined)
+    inline def setRestrictedServicesUndefined: Self = StObject.set(x, "restrictedServices", js.undefined)
     
-    @scala.inline
-    def setRestrictedServicesVarargs(value: String*): Self = StObject.set(x, "restrictedServices", js.Array(value :_*))
+    inline def setRestrictedServicesVarargs(value: String*): Self = StObject.set(x, "restrictedServices", js.Array(value :_*))
     
-    @scala.inline
-    def setUnrestrictedServices(value: js.Array[String]): Self = StObject.set(x, "unrestrictedServices", value.asInstanceOf[js.Any])
+    inline def setUnrestrictedServices(value: js.Array[String]): Self = StObject.set(x, "unrestrictedServices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnrestrictedServicesUndefined: Self = StObject.set(x, "unrestrictedServices", js.undefined)
+    inline def setUnrestrictedServicesUndefined: Self = StObject.set(x, "unrestrictedServices", js.undefined)
     
-    @scala.inline
-    def setUnrestrictedServicesVarargs(value: String*): Self = StObject.set(x, "unrestrictedServices", js.Array(value :_*))
+    inline def setUnrestrictedServicesVarargs(value: String*): Self = StObject.set(x, "unrestrictedServices", js.Array(value :_*))
   }
 }

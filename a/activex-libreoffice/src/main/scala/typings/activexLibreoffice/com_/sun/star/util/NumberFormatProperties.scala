@@ -28,25 +28,19 @@ trait NumberFormatProperties extends StObject {
 }
 object NumberFormatProperties {
   
-  @scala.inline
-  def apply(Comment: String, FormatString: String, Locale: Locale, Type: Double): NumberFormatProperties = {
+  inline def apply(Comment: String, FormatString: String, Locale: Locale, Type: Double): NumberFormatProperties = {
     val __obj = js.Dynamic.literal(Comment = Comment.asInstanceOf[js.Any], FormatString = FormatString.asInstanceOf[js.Any], Locale = Locale.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[NumberFormatProperties]
   }
   
-  @scala.inline
-  implicit class NumberFormatPropertiesMutableBuilder[Self <: NumberFormatProperties] (val x: Self) extends AnyVal {
+  extension [Self <: NumberFormatProperties](x: Self) {
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatString(value: String): Self = StObject.set(x, "FormatString", value.asInstanceOf[js.Any])
+    inline def setFormatString(value: String): Self = StObject.set(x, "FormatString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: Locale): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Locale): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

@@ -12,7 +12,7 @@ object frameLoopMod {
   class FrameLoop () extends StObject {
     def this(raf: RequestFrameFn) = this()
     
-    var _animations: js.Array[OpaqueAnimation] = js.native
+    /* protected */ var _animations: js.Array[OpaqueAnimation] = js.native
     
     /* protected */ def _dispose(): Unit = js.native
     
@@ -57,23 +57,18 @@ object frameLoopMod {
   }
   object OpaqueAnimation {
     
-    @scala.inline
-    def apply(advance: Double => Unit, idle: Boolean, priority: Double): OpaqueAnimation = {
+    inline def apply(advance: Double => Unit, idle: Boolean, priority: Double): OpaqueAnimation = {
       val __obj = js.Dynamic.literal(advance = js.Any.fromFunction1(advance), idle = idle.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any])
       __obj.asInstanceOf[OpaqueAnimation]
     }
     
-    @scala.inline
-    implicit class OpaqueAnimationMutableBuilder[Self <: OpaqueAnimation] (val x: Self) extends AnyVal {
+    extension [Self <: OpaqueAnimation](x: Self) {
       
-      @scala.inline
-      def setAdvance(value: Double => Unit): Self = StObject.set(x, "advance", js.Any.fromFunction1(value))
+      inline def setAdvance(value: Double => Unit): Self = StObject.set(x, "advance", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIdle(value: Boolean): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
+      inline def setIdle(value: Boolean): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     }
   }
   
@@ -89,23 +84,18 @@ object frameLoopMod {
   }
   object Timeout {
     
-    @scala.inline
-    def apply(cancel: () => Unit, handler: () => Unit, time: Double): Timeout = {
+    inline def apply(cancel: () => Unit, handler: () => Unit, time: Double): Timeout = {
       val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), handler = js.Any.fromFunction0(handler), time = time.asInstanceOf[js.Any])
       __obj.asInstanceOf[Timeout]
     }
     
-    @scala.inline
-    implicit class TimeoutMutableBuilder[Self <: Timeout] (val x: Self) extends AnyVal {
+    extension [Self <: Timeout](x: Self) {
       
-      @scala.inline
-      def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+      inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHandler(value: () => Unit): Self = StObject.set(x, "handler", js.Any.fromFunction0(value))
+      inline def setHandler(value: () => Unit): Self = StObject.set(x, "handler", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     }
   }
 }

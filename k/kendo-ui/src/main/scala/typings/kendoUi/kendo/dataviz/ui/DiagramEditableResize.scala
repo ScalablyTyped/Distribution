@@ -10,19 +10,15 @@ trait DiagramEditableResize extends StObject {
 }
 object DiagramEditableResize {
   
-  @scala.inline
-  def apply(): DiagramEditableResize = {
+  inline def apply(): DiagramEditableResize = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DiagramEditableResize]
   }
   
-  @scala.inline
-  implicit class DiagramEditableResizeMutableBuilder[Self <: DiagramEditableResize] (val x: Self) extends AnyVal {
+  extension [Self <: DiagramEditableResize](x: Self) {
     
-    @scala.inline
-    def setHandles(value: DiagramEditableResizeHandles): Self = StObject.set(x, "handles", value.asInstanceOf[js.Any])
+    inline def setHandles(value: DiagramEditableResizeHandles): Self = StObject.set(x, "handles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandlesUndefined: Self = StObject.set(x, "handles", js.undefined)
+    inline def setHandlesUndefined: Self = StObject.set(x, "handles", js.undefined)
   }
 }

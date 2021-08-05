@@ -27,40 +27,40 @@ object timePickerMod {
     @JSName("componentDidUpdate")
     def componentDidUpdate_MTimePicker(prevProps: ITimePickerProps): Unit = js.native
     
-    var decrementTime: js.Any = js.native
+    /* private */ var decrementTime: js.Any = js.native
     
     /**
       * Generates a full ITimePickerState object with all text fields set to formatted strings based on value
       */
-    var getFullStateFromValue: js.Any = js.native
+    /* private */ var getFullStateFromValue: js.Any = js.native
     
-    var getInputBlurHandler: js.Any = js.native
+    /* private */ var getInputBlurHandler: js.Any = js.native
     
-    var getInputChangeHandler: js.Any = js.native
+    /* private */ var getInputChangeHandler: js.Any = js.native
     
-    var getInputFocusHandler: js.Any = js.native
+    /* private */ var getInputFocusHandler: js.Any = js.native
     
-    var getInputKeyDownHandler: js.Any = js.native
+    /* private */ var getInputKeyDownHandler: js.Any = js.native
     
-    var getInputKeyUpHandler: js.Any = js.native
+    /* private */ var getInputKeyUpHandler: js.Any = js.native
     
-    var handleAmPmChange: js.Any = js.native
+    /* private */ var handleAmPmChange: js.Any = js.native
     
-    var incrementTime: js.Any = js.native
+    /* private */ var incrementTime: js.Any = js.native
     
-    var maybeRenderAmPm: js.Any = js.native
+    /* private */ var maybeRenderAmPm: js.Any = js.native
     
-    var maybeRenderArrowButton: js.Any = js.native
+    /* private */ var maybeRenderArrowButton: js.Any = js.native
     
-    var renderDivider: js.Any = js.native
+    /* private */ var renderDivider: js.Any = js.native
     
-    var renderInput: js.Any = js.native
+    /* private */ var renderInput: js.Any = js.native
     
-    var shiftTime: js.Any = js.native
+    /* private */ var shiftTime: js.Any = js.native
     
-    var updateState: js.Any = js.native
+    /* private */ var updateState: js.Any = js.native
     
-    var updateTime: js.Any = js.native
+    /* private */ var updateTime: js.Any = js.native
   }
   /* static members */
   object TimePicker {
@@ -72,14 +72,12 @@ object timePickerMod {
     @JSImport("@blueprintjs/datetime/lib/esm/timePicker", "TimePicker.defaultProps")
     @js.native
     def defaultProps: ITimePickerProps = js.native
-    @scala.inline
-    def defaultProps_=(x: ITimePickerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: ITimePickerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/datetime/lib/esm/timePicker", "TimePicker.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   /* Inlined {  MILLISECOND :'millisecond',   MINUTE :'minute',   SECOND :'second'}[keyof {  MILLISECOND :'millisecond',   MINUTE :'minute',   SECOND :'second'}] */
@@ -98,20 +96,17 @@ object timePickerMod {
     @JSImport("@blueprintjs/datetime/lib/esm/timePicker", "TimePrecision.MILLISECOND")
     @js.native
     def MILLISECOND: millisecond = js.native
-    @scala.inline
-    def MILLISECOND_=(x: millisecond): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MILLISECOND")(x.asInstanceOf[js.Any])
+    inline def MILLISECOND_=(x: millisecond): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MILLISECOND")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/datetime/lib/esm/timePicker", "TimePrecision.MINUTE")
     @js.native
     def MINUTE: minute = js.native
-    @scala.inline
-    def MINUTE_=(x: minute): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MINUTE")(x.asInstanceOf[js.Any])
+    inline def MINUTE_=(x: minute): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MINUTE")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/datetime/lib/esm/timePicker", "TimePrecision.SECOND")
     @js.native
     def SECOND: second = js.native
-    @scala.inline
-    def SECOND_=(x: second): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SECOND")(x.asInstanceOf[js.Any])
+    inline def SECOND_=(x: second): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SECOND")(x.asInstanceOf[js.Any])
   }
   
   trait ITimePickerProps
@@ -219,107 +214,74 @@ object timePickerMod {
   }
   object ITimePickerProps {
     
-    @scala.inline
-    def apply(): ITimePickerProps = {
+    inline def apply(): ITimePickerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ITimePickerProps]
     }
     
-    @scala.inline
-    implicit class ITimePickerPropsMutableBuilder[Self <: ITimePickerProps] (val x: Self) extends AnyVal {
+    extension [Self <: ITimePickerProps](x: Self) {
       
-      @scala.inline
-      def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
       
-      @scala.inline
-      def setDefaultValue(value: Date): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: Date): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setMaxTime(value: Date): Self = StObject.set(x, "maxTime", value.asInstanceOf[js.Any])
+      inline def setMaxTime(value: Date): Self = StObject.set(x, "maxTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxTimeUndefined: Self = StObject.set(x, "maxTime", js.undefined)
+      inline def setMaxTimeUndefined: Self = StObject.set(x, "maxTime", js.undefined)
       
-      @scala.inline
-      def setMinTime(value: Date): Self = StObject.set(x, "minTime", value.asInstanceOf[js.Any])
+      inline def setMinTime(value: Date): Self = StObject.set(x, "minTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinTimeUndefined: Self = StObject.set(x, "minTime", js.undefined)
+      inline def setMinTimeUndefined: Self = StObject.set(x, "minTime", js.undefined)
       
-      @scala.inline
-      def setOnBlur(value: (/* event */ FocusEvent[HTMLInputElement], /* unit */ TimeUnit) => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction2(value))
+      inline def setOnBlur(value: (/* event */ FocusEvent[HTMLInputElement], /* unit */ TimeUnit) => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+      inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* newTime */ Date => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* newTime */ Date => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnFocus(value: (/* event */ FocusEvent[HTMLInputElement], /* unit */ TimeUnit) => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction2(value))
+      inline def setOnFocus(value: (/* event */ FocusEvent[HTMLInputElement], /* unit */ TimeUnit) => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+      inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      @scala.inline
-      def setOnKeyDown(value: (/* event */ KeyboardEvent[HTMLInputElement], /* unit */ TimeUnit) => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction2(value))
+      inline def setOnKeyDown(value: (/* event */ KeyboardEvent[HTMLInputElement], /* unit */ TimeUnit) => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
-      @scala.inline
-      def setOnKeyUp(value: (/* event */ KeyboardEvent[HTMLInputElement], /* unit */ TimeUnit) => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction2(value))
+      inline def setOnKeyUp(value: (/* event */ KeyboardEvent[HTMLInputElement], /* unit */ TimeUnit) => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)
+      inline def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)
       
-      @scala.inline
-      def setPrecision(value: TimePrecision): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+      inline def setPrecision(value: TimePrecision): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+      inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
       
-      @scala.inline
-      def setSelectAllOnFocus(value: Boolean): Self = StObject.set(x, "selectAllOnFocus", value.asInstanceOf[js.Any])
+      inline def setSelectAllOnFocus(value: Boolean): Self = StObject.set(x, "selectAllOnFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectAllOnFocusUndefined: Self = StObject.set(x, "selectAllOnFocus", js.undefined)
+      inline def setSelectAllOnFocusUndefined: Self = StObject.set(x, "selectAllOnFocus", js.undefined)
       
-      @scala.inline
-      def setShowArrowButtons(value: Boolean): Self = StObject.set(x, "showArrowButtons", value.asInstanceOf[js.Any])
+      inline def setShowArrowButtons(value: Boolean): Self = StObject.set(x, "showArrowButtons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowArrowButtonsUndefined: Self = StObject.set(x, "showArrowButtons", js.undefined)
+      inline def setShowArrowButtonsUndefined: Self = StObject.set(x, "showArrowButtons", js.undefined)
       
-      @scala.inline
-      def setUseAmPm(value: Boolean): Self = StObject.set(x, "useAmPm", value.asInstanceOf[js.Any])
+      inline def setUseAmPm(value: Boolean): Self = StObject.set(x, "useAmPm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseAmPmUndefined: Self = StObject.set(x, "useAmPm", js.undefined)
+      inline def setUseAmPmUndefined: Self = StObject.set(x, "useAmPm", js.undefined)
       
-      @scala.inline
-      def setValue(value: Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueNull: Self = StObject.set(x, "value", null)
+      inline def setValueNull: Self = StObject.set(x, "value", null)
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -339,50 +301,36 @@ object timePickerMod {
   }
   object ITimePickerState {
     
-    @scala.inline
-    def apply(): ITimePickerState = {
+    inline def apply(): ITimePickerState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ITimePickerState]
     }
     
-    @scala.inline
-    implicit class ITimePickerStateMutableBuilder[Self <: ITimePickerState] (val x: Self) extends AnyVal {
+    extension [Self <: ITimePickerState](x: Self) {
       
-      @scala.inline
-      def setHourText(value: String): Self = StObject.set(x, "hourText", value.asInstanceOf[js.Any])
+      inline def setHourText(value: String): Self = StObject.set(x, "hourText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHourTextUndefined: Self = StObject.set(x, "hourText", js.undefined)
+      inline def setHourTextUndefined: Self = StObject.set(x, "hourText", js.undefined)
       
-      @scala.inline
-      def setIsPm(value: Boolean): Self = StObject.set(x, "isPm", value.asInstanceOf[js.Any])
+      inline def setIsPm(value: Boolean): Self = StObject.set(x, "isPm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPmUndefined: Self = StObject.set(x, "isPm", js.undefined)
+      inline def setIsPmUndefined: Self = StObject.set(x, "isPm", js.undefined)
       
-      @scala.inline
-      def setMillisecondText(value: String): Self = StObject.set(x, "millisecondText", value.asInstanceOf[js.Any])
+      inline def setMillisecondText(value: String): Self = StObject.set(x, "millisecondText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMillisecondTextUndefined: Self = StObject.set(x, "millisecondText", js.undefined)
+      inline def setMillisecondTextUndefined: Self = StObject.set(x, "millisecondText", js.undefined)
       
-      @scala.inline
-      def setMinuteText(value: String): Self = StObject.set(x, "minuteText", value.asInstanceOf[js.Any])
+      inline def setMinuteText(value: String): Self = StObject.set(x, "minuteText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinuteTextUndefined: Self = StObject.set(x, "minuteText", js.undefined)
+      inline def setMinuteTextUndefined: Self = StObject.set(x, "minuteText", js.undefined)
       
-      @scala.inline
-      def setSecondText(value: String): Self = StObject.set(x, "secondText", value.asInstanceOf[js.Any])
+      inline def setSecondText(value: String): Self = StObject.set(x, "secondText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondTextUndefined: Self = StObject.set(x, "secondText", js.undefined)
+      inline def setSecondTextUndefined: Self = StObject.set(x, "secondText", js.undefined)
       
-      @scala.inline
-      def setValue(value: Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

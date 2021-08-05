@@ -46,8 +46,7 @@ object mod {
   }
   object UnfetchResponse {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       blob: () => js.Promise[Blob],
       headers: Entries,
       json: () => js.Promise[js.Any],
@@ -61,32 +60,23 @@ object mod {
       __obj.asInstanceOf[UnfetchResponse]
     }
     
-    @scala.inline
-    implicit class UnfetchResponseMutableBuilder[Self <: UnfetchResponse] (val x: Self) extends AnyVal {
+    extension [Self <: UnfetchResponse](x: Self) {
       
-      @scala.inline
-      def setBlob(value: () => js.Promise[Blob]): Self = StObject.set(x, "blob", js.Any.fromFunction0(value))
+      inline def setBlob(value: () => js.Promise[Blob]): Self = StObject.set(x, "blob", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHeaders(value: Entries): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Entries): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJson(value: () => js.Promise[js.Any]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
+      inline def setJson(value: () => js.Promise[js.Any]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
+      inline def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
+      inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: () => js.Promise[String]): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
+      inline def setText(value: () => js.Promise[String]): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   

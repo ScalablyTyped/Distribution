@@ -16,20 +16,16 @@ object typesMod {
   }
   object ChangedFiles {
     
-    @scala.inline
-    def apply(changedFiles: Paths, repos: Repos): ChangedFiles = {
+    inline def apply(changedFiles: Paths, repos: Repos): ChangedFiles = {
       val __obj = js.Dynamic.literal(changedFiles = changedFiles.asInstanceOf[js.Any], repos = repos.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChangedFiles]
     }
     
-    @scala.inline
-    implicit class ChangedFilesMutableBuilder[Self <: ChangedFiles] (val x: Self) extends AnyVal {
+    extension [Self <: ChangedFiles](x: Self) {
       
-      @scala.inline
-      def setChangedFiles(value: Paths): Self = StObject.set(x, "changedFiles", value.asInstanceOf[js.Any])
+      inline def setChangedFiles(value: Paths): Self = StObject.set(x, "changedFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepos(value: Repos): Self = StObject.set(x, "repos", value.asInstanceOf[js.Any])
+      inline def setRepos(value: Repos): Self = StObject.set(x, "repos", value.asInstanceOf[js.Any])
     }
   }
   
@@ -47,41 +43,30 @@ object typesMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setChangedSince(value: String): Self = StObject.set(x, "changedSince", value.asInstanceOf[js.Any])
+      inline def setChangedSince(value: String): Self = StObject.set(x, "changedSince", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChangedSinceUndefined: Self = StObject.set(x, "changedSince", js.undefined)
+      inline def setChangedSinceUndefined: Self = StObject.set(x, "changedSince", js.undefined)
       
-      @scala.inline
-      def setIncludePaths(value: js.Array[Path]): Self = StObject.set(x, "includePaths", value.asInstanceOf[js.Any])
+      inline def setIncludePaths(value: js.Array[Path]): Self = StObject.set(x, "includePaths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludePathsUndefined: Self = StObject.set(x, "includePaths", js.undefined)
+      inline def setIncludePathsUndefined: Self = StObject.set(x, "includePaths", js.undefined)
       
-      @scala.inline
-      def setIncludePathsVarargs(value: Path*): Self = StObject.set(x, "includePaths", js.Array(value :_*))
+      inline def setIncludePathsVarargs(value: Path*): Self = StObject.set(x, "includePaths", js.Array(value :_*))
       
-      @scala.inline
-      def setLastCommit(value: Boolean): Self = StObject.set(x, "lastCommit", value.asInstanceOf[js.Any])
+      inline def setLastCommit(value: Boolean): Self = StObject.set(x, "lastCommit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastCommitUndefined: Self = StObject.set(x, "lastCommit", js.undefined)
+      inline def setLastCommitUndefined: Self = StObject.set(x, "lastCommit", js.undefined)
       
-      @scala.inline
-      def setWithAncestor(value: Boolean): Self = StObject.set(x, "withAncestor", value.asInstanceOf[js.Any])
+      inline def setWithAncestor(value: Boolean): Self = StObject.set(x, "withAncestor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithAncestorUndefined: Self = StObject.set(x, "withAncestor", js.undefined)
+      inline def setWithAncestorUndefined: Self = StObject.set(x, "withAncestor", js.undefined)
     }
   }
   
@@ -95,20 +80,16 @@ object typesMod {
   }
   object Repos {
     
-    @scala.inline
-    def apply(git: Paths, hg: Paths): Repos = {
+    inline def apply(git: Paths, hg: Paths): Repos = {
       val __obj = js.Dynamic.literal(git = git.asInstanceOf[js.Any], hg = hg.asInstanceOf[js.Any])
       __obj.asInstanceOf[Repos]
     }
     
-    @scala.inline
-    implicit class ReposMutableBuilder[Self <: Repos] (val x: Self) extends AnyVal {
+    extension [Self <: Repos](x: Self) {
       
-      @scala.inline
-      def setGit(value: Paths): Self = StObject.set(x, "git", value.asInstanceOf[js.Any])
+      inline def setGit(value: Paths): Self = StObject.set(x, "git", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHg(value: Paths): Self = StObject.set(x, "hg", value.asInstanceOf[js.Any])
+      inline def setHg(value: Paths): Self = StObject.set(x, "hg", value.asInstanceOf[js.Any])
     }
   }
   
@@ -120,8 +101,7 @@ object typesMod {
   }
   object SCMAdapter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       findChangedFiles: (Path, Options) => js.Promise[js.Array[Path]],
       getRoot: Path => js.Promise[Path | Null]
     ): SCMAdapter = {
@@ -129,14 +109,11 @@ object typesMod {
       __obj.asInstanceOf[SCMAdapter]
     }
     
-    @scala.inline
-    implicit class SCMAdapterMutableBuilder[Self <: SCMAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: SCMAdapter](x: Self) {
       
-      @scala.inline
-      def setFindChangedFiles(value: (Path, Options) => js.Promise[js.Array[Path]]): Self = StObject.set(x, "findChangedFiles", js.Any.fromFunction2(value))
+      inline def setFindChangedFiles(value: (Path, Options) => js.Promise[js.Array[Path]]): Self = StObject.set(x, "findChangedFiles", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetRoot(value: Path => js.Promise[Path | Null]): Self = StObject.set(x, "getRoot", js.Any.fromFunction1(value))
+      inline def setGetRoot(value: Path => js.Promise[Path | Null]): Self = StObject.set(x, "getRoot", js.Any.fromFunction1(value))
     }
   }
 }

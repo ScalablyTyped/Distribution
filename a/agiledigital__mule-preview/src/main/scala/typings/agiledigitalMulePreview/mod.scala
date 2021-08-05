@@ -31,20 +31,16 @@ object mod {
   }
   object MulePreviewContentProps {
     
-    @scala.inline
-    def apply(contentRoot: String, contentString: String): MulePreviewContentProps = {
+    inline def apply(contentRoot: String, contentString: String): MulePreviewContentProps = {
       val __obj = js.Dynamic.literal(contentRoot = contentRoot.asInstanceOf[js.Any], contentString = contentString.asInstanceOf[js.Any])
       __obj.asInstanceOf[MulePreviewContentProps]
     }
     
-    @scala.inline
-    implicit class MulePreviewContentPropsMutableBuilder[Self <: MulePreviewContentProps] (val x: Self) extends AnyVal {
+    extension [Self <: MulePreviewContentProps](x: Self) {
       
-      @scala.inline
-      def setContentRoot(value: String): Self = StObject.set(x, "contentRoot", value.asInstanceOf[js.Any])
+      inline def setContentRoot(value: String): Self = StObject.set(x, "contentRoot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentString(value: String): Self = StObject.set(x, "contentString", value.asInstanceOf[js.Any])
+      inline def setContentString(value: String): Self = StObject.set(x, "contentString", value.asInstanceOf[js.Any])
     }
   }
   
@@ -56,20 +52,16 @@ object mod {
   }
   object MulePreviewDiffContentProps {
     
-    @scala.inline
-    def apply(contentRoot: String, contentStrings: js.Tuple2[js.UndefOr[String], js.UndefOr[String]]): MulePreviewDiffContentProps = {
+    inline def apply(contentRoot: String, contentStrings: js.Tuple2[js.UndefOr[String], js.UndefOr[String]]): MulePreviewDiffContentProps = {
       val __obj = js.Dynamic.literal(contentRoot = contentRoot.asInstanceOf[js.Any], contentStrings = contentStrings.asInstanceOf[js.Any])
       __obj.asInstanceOf[MulePreviewDiffContentProps]
     }
     
-    @scala.inline
-    implicit class MulePreviewDiffContentPropsMutableBuilder[Self <: MulePreviewDiffContentProps] (val x: Self) extends AnyVal {
+    extension [Self <: MulePreviewDiffContentProps](x: Self) {
       
-      @scala.inline
-      def setContentRoot(value: String): Self = StObject.set(x, "contentRoot", value.asInstanceOf[js.Any])
+      inline def setContentRoot(value: String): Self = StObject.set(x, "contentRoot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentStrings(value: js.Tuple2[js.UndefOr[String], js.UndefOr[String]]): Self = StObject.set(x, "contentStrings", value.asInstanceOf[js.Any])
+      inline def setContentStrings(value: js.Tuple2[js.UndefOr[String], js.UndefOr[String]]): Self = StObject.set(x, "contentStrings", value.asInstanceOf[js.Any])
     }
   }
   
@@ -81,20 +73,16 @@ object mod {
   }
   object MulePreviewDiffUrlProps {
     
-    @scala.inline
-    def apply(contentRoot: String, contentUrls: js.Tuple2[js.UndefOr[String], js.UndefOr[String]]): MulePreviewDiffUrlProps = {
+    inline def apply(contentRoot: String, contentUrls: js.Tuple2[js.UndefOr[String], js.UndefOr[String]]): MulePreviewDiffUrlProps = {
       val __obj = js.Dynamic.literal(contentRoot = contentRoot.asInstanceOf[js.Any], contentUrls = contentUrls.asInstanceOf[js.Any])
       __obj.asInstanceOf[MulePreviewDiffUrlProps]
     }
     
-    @scala.inline
-    implicit class MulePreviewDiffUrlPropsMutableBuilder[Self <: MulePreviewDiffUrlProps] (val x: Self) extends AnyVal {
+    extension [Self <: MulePreviewDiffUrlProps](x: Self) {
       
-      @scala.inline
-      def setContentRoot(value: String): Self = StObject.set(x, "contentRoot", value.asInstanceOf[js.Any])
+      inline def setContentRoot(value: String): Self = StObject.set(x, "contentRoot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUrls(value: js.Tuple2[js.UndefOr[String], js.UndefOr[String]]): Self = StObject.set(x, "contentUrls", value.asInstanceOf[js.Any])
+      inline def setContentUrls(value: js.Tuple2[js.UndefOr[String], js.UndefOr[String]]): Self = StObject.set(x, "contentUrls", value.asInstanceOf[js.Any])
     }
   }
   
@@ -106,20 +94,16 @@ object mod {
   }
   object MulePreviewUrlProps {
     
-    @scala.inline
-    def apply(contentRoot: String, contentUrl: String): MulePreviewUrlProps = {
+    inline def apply(contentRoot: String, contentUrl: String): MulePreviewUrlProps = {
       val __obj = js.Dynamic.literal(contentRoot = contentRoot.asInstanceOf[js.Any], contentUrl = contentUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[MulePreviewUrlProps]
     }
     
-    @scala.inline
-    implicit class MulePreviewUrlPropsMutableBuilder[Self <: MulePreviewUrlProps] (val x: Self) extends AnyVal {
+    extension [Self <: MulePreviewUrlProps](x: Self) {
       
-      @scala.inline
-      def setContentRoot(value: String): Self = StObject.set(x, "contentRoot", value.asInstanceOf[js.Any])
+      inline def setContentRoot(value: String): Self = StObject.set(x, "contentRoot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
+      inline def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
     }
   }
 }

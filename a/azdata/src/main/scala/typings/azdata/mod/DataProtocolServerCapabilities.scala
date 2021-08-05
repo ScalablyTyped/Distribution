@@ -20,8 +20,7 @@ trait DataProtocolServerCapabilities extends StObject {
 }
 object DataProtocolServerCapabilities {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     adminServicesProvider: AdminServicesOptions,
     connectionProvider: ConnectionProviderOptions,
     features: js.Array[FeatureMetadataProvider],
@@ -33,28 +32,20 @@ object DataProtocolServerCapabilities {
     __obj.asInstanceOf[DataProtocolServerCapabilities]
   }
   
-  @scala.inline
-  implicit class DataProtocolServerCapabilitiesMutableBuilder[Self <: DataProtocolServerCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: DataProtocolServerCapabilities](x: Self) {
     
-    @scala.inline
-    def setAdminServicesProvider(value: AdminServicesOptions): Self = StObject.set(x, "adminServicesProvider", value.asInstanceOf[js.Any])
+    inline def setAdminServicesProvider(value: AdminServicesOptions): Self = StObject.set(x, "adminServicesProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionProvider(value: ConnectionProviderOptions): Self = StObject.set(x, "connectionProvider", value.asInstanceOf[js.Any])
+    inline def setConnectionProvider(value: ConnectionProviderOptions): Self = StObject.set(x, "connectionProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatures(value: js.Array[FeatureMetadataProvider]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+    inline def setFeatures(value: js.Array[FeatureMetadataProvider]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeaturesVarargs(value: FeatureMetadataProvider*): Self = StObject.set(x, "features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: FeatureMetadataProvider*): Self = StObject.set(x, "features", js.Array(value :_*))
     
-    @scala.inline
-    def setProtocolVersion(value: String): Self = StObject.set(x, "protocolVersion", value.asInstanceOf[js.Any])
+    inline def setProtocolVersion(value: String): Self = StObject.set(x, "protocolVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderDisplayName(value: String): Self = StObject.set(x, "providerDisplayName", value.asInstanceOf[js.Any])
+    inline def setProviderDisplayName(value: String): Self = StObject.set(x, "providerDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderName(value: String): Self = StObject.set(x, "providerName", value.asInstanceOf[js.Any])
+    inline def setProviderName(value: String): Self = StObject.set(x, "providerName", value.asInstanceOf[js.Any])
   }
 }

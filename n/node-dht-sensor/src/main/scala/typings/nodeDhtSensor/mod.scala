@@ -14,10 +14,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def initialize(testOptions: Test): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(testOptions.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def initialize(`type`: SensorType, pin: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(`type`.asInstanceOf[js.Any], pin.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def initialize(testOptions: Test): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(testOptions.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def initialize(`type`: SensorType, pin: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(`type`.asInstanceOf[js.Any], pin.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   object promises {
     
@@ -25,50 +23,33 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def initialize(testOptions: Test): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(testOptions.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def initialize(`type`: SensorType, pin: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(`type`.asInstanceOf[js.Any], pin.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def initialize(testOptions: Test): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(testOptions.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def initialize(`type`: SensorType, pin: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(`type`.asInstanceOf[js.Any], pin.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def read(): js.Promise[SensorData] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")().asInstanceOf[js.Promise[SensorData]]
-    @scala.inline
-    def read(`type`: Unit, pin: Double): js.Promise[SensorData] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(`type`.asInstanceOf[js.Any], pin.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SensorData]]
-    @scala.inline
-    def read(`type`: SensorType): js.Promise[SensorData] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SensorData]]
-    @scala.inline
-    def read(`type`: SensorType, pin: Double): js.Promise[SensorData] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(`type`.asInstanceOf[js.Any], pin.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SensorData]]
+    inline def read(): js.Promise[SensorData] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")().asInstanceOf[js.Promise[SensorData]]
+    inline def read(`type`: Unit, pin: Double): js.Promise[SensorData] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(`type`.asInstanceOf[js.Any], pin.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SensorData]]
+    inline def read(`type`: SensorType): js.Promise[SensorData] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SensorData]]
+    inline def read(`type`: SensorType, pin: Double): js.Promise[SensorData] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(`type`.asInstanceOf[js.Any], pin.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SensorData]]
     
-    @scala.inline
-    def readSync(): SensorData = ^.asInstanceOf[js.Dynamic].applyDynamic("readSync")().asInstanceOf[SensorData]
-    @scala.inline
-    def readSync(`type`: Unit, pin: Double): SensorData = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(`type`.asInstanceOf[js.Any], pin.asInstanceOf[js.Any])).asInstanceOf[SensorData]
-    @scala.inline
-    def readSync(`type`: SensorType): SensorData = ^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(`type`.asInstanceOf[js.Any]).asInstanceOf[SensorData]
-    @scala.inline
-    def readSync(`type`: SensorType, pin: Double): SensorData = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(`type`.asInstanceOf[js.Any], pin.asInstanceOf[js.Any])).asInstanceOf[SensorData]
+    inline def readSync(): SensorData = ^.asInstanceOf[js.Dynamic].applyDynamic("readSync")().asInstanceOf[SensorData]
+    inline def readSync(`type`: Unit, pin: Double): SensorData = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(`type`.asInstanceOf[js.Any], pin.asInstanceOf[js.Any])).asInstanceOf[SensorData]
+    inline def readSync(`type`: SensorType): SensorData = ^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(`type`.asInstanceOf[js.Any]).asInstanceOf[SensorData]
+    inline def readSync(`type`: SensorType, pin: Double): SensorData = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(`type`.asInstanceOf[js.Any], pin.asInstanceOf[js.Any])).asInstanceOf[SensorData]
     
-    @scala.inline
-    def setMaxRetries(maxRetries: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMaxRetries")(maxRetries.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setMaxRetries(maxRetries: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMaxRetries")(maxRetries.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @scala.inline
-  def read(): SensorData = ^.asInstanceOf[js.Dynamic].applyDynamic("read")().asInstanceOf[SensorData]
-  @scala.inline
-  def read(`type`: Unit, pin: Double): SensorData = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(`type`.asInstanceOf[js.Any], pin.asInstanceOf[js.Any])).asInstanceOf[SensorData]
-  @scala.inline
-  def read(`type`: SensorType): SensorData = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(`type`.asInstanceOf[js.Any]).asInstanceOf[SensorData]
-  @scala.inline
-  def read(`type`: SensorType, pin: Double): SensorData = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(`type`.asInstanceOf[js.Any], pin.asInstanceOf[js.Any])).asInstanceOf[SensorData]
-  @scala.inline
-  def read(
+  inline def read(): SensorData = ^.asInstanceOf[js.Dynamic].applyDynamic("read")().asInstanceOf[SensorData]
+  inline def read(`type`: Unit, pin: Double): SensorData = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(`type`.asInstanceOf[js.Any], pin.asInstanceOf[js.Any])).asInstanceOf[SensorData]
+  inline def read(`type`: SensorType): SensorData = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(`type`.asInstanceOf[js.Any]).asInstanceOf[SensorData]
+  inline def read(`type`: SensorType, pin: Double): SensorData = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(`type`.asInstanceOf[js.Any], pin.asInstanceOf[js.Any])).asInstanceOf[SensorData]
+  inline def read(
     `type`: SensorType,
     pin: Double,
     callback: js.Function3[/* err */ ErrnoException | Null, /* temperature */ Double, /* humidity */ Double, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(`type`.asInstanceOf[js.Any], pin.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setMaxRetries(maxRetries: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMaxRetries")(maxRetries.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setMaxRetries(maxRetries: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMaxRetries")(maxRetries.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type DHT11 = `11`
   
@@ -82,20 +63,16 @@ object mod {
   }
   object SensorData {
     
-    @scala.inline
-    def apply(humidity: Double, temperature: Double): SensorData = {
+    inline def apply(humidity: Double, temperature: Double): SensorData = {
       val __obj = js.Dynamic.literal(humidity = humidity.asInstanceOf[js.Any], temperature = temperature.asInstanceOf[js.Any])
       __obj.asInstanceOf[SensorData]
     }
     
-    @scala.inline
-    implicit class SensorDataMutableBuilder[Self <: SensorData] (val x: Self) extends AnyVal {
+    extension [Self <: SensorData](x: Self) {
       
-      @scala.inline
-      def setHumidity(value: Double): Self = StObject.set(x, "humidity", value.asInstanceOf[js.Any])
+      inline def setHumidity(value: Double): Self = StObject.set(x, "humidity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemperature(value: Double): Self = StObject.set(x, "temperature", value.asInstanceOf[js.Any])
+      inline def setTemperature(value: Double): Self = StObject.set(x, "temperature", value.asInstanceOf[js.Any])
     }
   }
   

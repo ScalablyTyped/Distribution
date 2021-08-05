@@ -18,22 +18,17 @@ trait SystemTemplateFilter extends StObject {
 }
 object SystemTemplateFilter {
   
-  @scala.inline
-  def apply(name: SystemTemplateFilterName, value: SystemTemplateFilterValues): SystemTemplateFilter = {
+  inline def apply(name: SystemTemplateFilterName, value: SystemTemplateFilterValues): SystemTemplateFilter = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SystemTemplateFilter]
   }
   
-  @scala.inline
-  implicit class SystemTemplateFilterMutableBuilder[Self <: SystemTemplateFilter] (val x: Self) extends AnyVal {
+  extension [Self <: SystemTemplateFilter](x: Self) {
     
-    @scala.inline
-    def setName(value: SystemTemplateFilterName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: SystemTemplateFilterName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: SystemTemplateFilterValues): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: SystemTemplateFilterValues): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueVarargs(value: SystemTemplateFilterValue*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: SystemTemplateFilterValue*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

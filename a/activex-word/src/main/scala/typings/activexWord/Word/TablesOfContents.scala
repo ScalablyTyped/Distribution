@@ -77,6 +77,6 @@ trait TablesOfContents extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("Word.TablesOfContents_typekey")
+  /* private */ @JSName("Word.TablesOfContents_typekey")
   var WordDotTablesOfContents_typekey: TablesOfContents = js.native
 }

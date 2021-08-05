@@ -28,37 +28,27 @@ trait ListAliasesInput extends StObject {
 }
 object ListAliasesInput {
   
-  @scala.inline
-  def apply(): ListAliasesInput = {
+  inline def apply(): ListAliasesInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListAliasesInput]
   }
   
-  @scala.inline
-  implicit class ListAliasesInputMutableBuilder[Self <: ListAliasesInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListAliasesInput](x: Self) {
     
-    @scala.inline
-    def setLimit(value: PositiveInteger): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: PositiveInteger): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NonEmptyString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NonEmptyString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setRoutingStrategyType(value: RoutingStrategyType): Self = StObject.set(x, "RoutingStrategyType", value.asInstanceOf[js.Any])
+    inline def setRoutingStrategyType(value: RoutingStrategyType): Self = StObject.set(x, "RoutingStrategyType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutingStrategyTypeUndefined: Self = StObject.set(x, "RoutingStrategyType", js.undefined)
+    inline def setRoutingStrategyTypeUndefined: Self = StObject.set(x, "RoutingStrategyType", js.undefined)
   }
 }

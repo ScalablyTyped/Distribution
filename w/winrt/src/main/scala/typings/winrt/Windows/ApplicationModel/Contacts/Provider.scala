@@ -34,8 +34,7 @@ object Provider {
        with IContactPickerUI
   object ContactPickerUI {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addContact: (String, Contact) => AddContactResult,
       containsContact: String => Boolean,
       desiredFields: IVectorView[String],
@@ -53,8 +52,7 @@ object Provider {
        with IContactRemovedEventArgs
   object ContactRemovedEventArgs {
     
-    @scala.inline
-    def apply(id: String): ContactRemovedEventArgs = {
+    inline def apply(id: String): ContactRemovedEventArgs = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[ContactRemovedEventArgs]
     }
@@ -76,8 +74,7 @@ object Provider {
   }
   object IContactPickerUI {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addContact: (String, Contact) => AddContactResult,
       containsContact: String => Boolean,
       desiredFields: IVectorView[String],
@@ -89,26 +86,19 @@ object Provider {
       __obj.asInstanceOf[IContactPickerUI]
     }
     
-    @scala.inline
-    implicit class IContactPickerUIMutableBuilder[Self <: IContactPickerUI] (val x: Self) extends AnyVal {
+    extension [Self <: IContactPickerUI](x: Self) {
       
-      @scala.inline
-      def setAddContact(value: (String, Contact) => AddContactResult): Self = StObject.set(x, "addContact", js.Any.fromFunction2(value))
+      inline def setAddContact(value: (String, Contact) => AddContactResult): Self = StObject.set(x, "addContact", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setContainsContact(value: String => Boolean): Self = StObject.set(x, "containsContact", js.Any.fromFunction1(value))
+      inline def setContainsContact(value: String => Boolean): Self = StObject.set(x, "containsContact", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDesiredFields(value: IVectorView[String]): Self = StObject.set(x, "desiredFields", value.asInstanceOf[js.Any])
+      inline def setDesiredFields(value: IVectorView[String]): Self = StObject.set(x, "desiredFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOncontactremoved(value: js.Any): Self = StObject.set(x, "oncontactremoved", value.asInstanceOf[js.Any])
+      inline def setOncontactremoved(value: js.Any): Self = StObject.set(x, "oncontactremoved", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveContact(value: String => Unit): Self = StObject.set(x, "removeContact", js.Any.fromFunction1(value))
+      inline def setRemoveContact(value: String => Unit): Self = StObject.set(x, "removeContact", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSelectionMode(value: ContactSelectionMode): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
+      inline def setSelectionMode(value: ContactSelectionMode): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -118,17 +108,14 @@ object Provider {
   }
   object IContactRemovedEventArgs {
     
-    @scala.inline
-    def apply(id: String): IContactRemovedEventArgs = {
+    inline def apply(id: String): IContactRemovedEventArgs = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[IContactRemovedEventArgs]
     }
     
-    @scala.inline
-    implicit class IContactRemovedEventArgsMutableBuilder[Self <: IContactRemovedEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: IContactRemovedEventArgs](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
 }

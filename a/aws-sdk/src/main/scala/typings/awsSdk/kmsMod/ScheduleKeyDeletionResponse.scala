@@ -18,25 +18,19 @@ trait ScheduleKeyDeletionResponse extends StObject {
 }
 object ScheduleKeyDeletionResponse {
   
-  @scala.inline
-  def apply(): ScheduleKeyDeletionResponse = {
+  inline def apply(): ScheduleKeyDeletionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScheduleKeyDeletionResponse]
   }
   
-  @scala.inline
-  implicit class ScheduleKeyDeletionResponseMutableBuilder[Self <: ScheduleKeyDeletionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ScheduleKeyDeletionResponse](x: Self) {
     
-    @scala.inline
-    def setDeletionDate(value: DateType): Self = StObject.set(x, "DeletionDate", value.asInstanceOf[js.Any])
+    inline def setDeletionDate(value: DateType): Self = StObject.set(x, "DeletionDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletionDateUndefined: Self = StObject.set(x, "DeletionDate", js.undefined)
+    inline def setDeletionDateUndefined: Self = StObject.set(x, "DeletionDate", js.undefined)
     
-    @scala.inline
-    def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
+    inline def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
+    inline def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
   }
 }

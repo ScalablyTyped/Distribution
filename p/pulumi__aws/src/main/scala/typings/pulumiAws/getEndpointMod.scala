@@ -11,14 +11,10 @@ object getEndpointMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getEndpoint(): js.Promise[GetEndpointResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndpoint")().asInstanceOf[js.Promise[GetEndpointResult]]
-  @scala.inline
-  def getEndpoint(args: Unit, opts: InvokeOptions): js.Promise[GetEndpointResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEndpoint")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetEndpointResult]]
-  @scala.inline
-  def getEndpoint(args: GetEndpointArgs): js.Promise[GetEndpointResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndpoint")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetEndpointResult]]
-  @scala.inline
-  def getEndpoint(args: GetEndpointArgs, opts: InvokeOptions): js.Promise[GetEndpointResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEndpoint")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetEndpointResult]]
+  inline def getEndpoint(): js.Promise[GetEndpointResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndpoint")().asInstanceOf[js.Promise[GetEndpointResult]]
+  inline def getEndpoint(args: Unit, opts: InvokeOptions): js.Promise[GetEndpointResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEndpoint")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetEndpointResult]]
+  inline def getEndpoint(args: GetEndpointArgs): js.Promise[GetEndpointResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndpoint")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetEndpointResult]]
+  inline def getEndpoint(args: GetEndpointArgs, opts: InvokeOptions): js.Promise[GetEndpointResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEndpoint")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetEndpointResult]]
   
   trait GetEndpointArgs extends StObject {
     
@@ -29,20 +25,16 @@ object getEndpointMod {
   }
   object GetEndpointArgs {
     
-    @scala.inline
-    def apply(): GetEndpointArgs = {
+    inline def apply(): GetEndpointArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetEndpointArgs]
     }
     
-    @scala.inline
-    implicit class GetEndpointArgsMutableBuilder[Self <: GetEndpointArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetEndpointArgs](x: Self) {
       
-      @scala.inline
-      def setEndpointType(value: String): Self = StObject.set(x, "endpointType", value.asInstanceOf[js.Any])
+      inline def setEndpointType(value: String): Self = StObject.set(x, "endpointType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointTypeUndefined: Self = StObject.set(x, "endpointType", js.undefined)
+      inline def setEndpointTypeUndefined: Self = StObject.set(x, "endpointType", js.undefined)
     }
   }
   
@@ -67,26 +59,20 @@ object getEndpointMod {
   }
   object GetEndpointResult {
     
-    @scala.inline
-    def apply(endpointAddress: String, id: String): GetEndpointResult = {
+    inline def apply(endpointAddress: String, id: String): GetEndpointResult = {
       val __obj = js.Dynamic.literal(endpointAddress = endpointAddress.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetEndpointResult]
     }
     
-    @scala.inline
-    implicit class GetEndpointResultMutableBuilder[Self <: GetEndpointResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetEndpointResult](x: Self) {
       
-      @scala.inline
-      def setEndpointAddress(value: String): Self = StObject.set(x, "endpointAddress", value.asInstanceOf[js.Any])
+      inline def setEndpointAddress(value: String): Self = StObject.set(x, "endpointAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointType(value: String): Self = StObject.set(x, "endpointType", value.asInstanceOf[js.Any])
+      inline def setEndpointType(value: String): Self = StObject.set(x, "endpointType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointTypeUndefined: Self = StObject.set(x, "endpointType", js.undefined)
+      inline def setEndpointTypeUndefined: Self = StObject.set(x, "endpointType", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
 }

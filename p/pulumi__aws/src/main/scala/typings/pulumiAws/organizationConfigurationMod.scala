@@ -50,21 +50,16 @@ object organizationConfigurationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): OrganizationConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[OrganizationConfiguration]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): OrganizationConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[OrganizationConfiguration]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: OrganizationConfigurationState): OrganizationConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[OrganizationConfiguration]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: OrganizationConfigurationState, opts: CustomResourceOptions): OrganizationConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[OrganizationConfiguration]
+    inline def get(name: String, id: Input[ID]): OrganizationConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[OrganizationConfiguration]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): OrganizationConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[OrganizationConfiguration]
+    inline def get(name: String, id: Input[ID], state: OrganizationConfigurationState): OrganizationConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[OrganizationConfiguration]
+    inline def get(name: String, id: Input[ID], state: OrganizationConfigurationState, opts: CustomResourceOptions): OrganizationConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[OrganizationConfiguration]
     
     /**
       * Returns true if the given object is an instance of OrganizationConfiguration.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/organizationConfiguration.OrganizationConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/guardduty/organizationConfiguration.OrganizationConfiguration */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/organizationConfiguration.OrganizationConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/guardduty/organizationConfiguration.OrganizationConfiguration */ Boolean]
   }
   
   trait OrganizationConfigurationArgs extends StObject {
@@ -81,20 +76,16 @@ object organizationConfigurationMod {
   }
   object OrganizationConfigurationArgs {
     
-    @scala.inline
-    def apply(autoEnable: Input[Boolean], detectorId: Input[String]): OrganizationConfigurationArgs = {
+    inline def apply(autoEnable: Input[Boolean], detectorId: Input[String]): OrganizationConfigurationArgs = {
       val __obj = js.Dynamic.literal(autoEnable = autoEnable.asInstanceOf[js.Any], detectorId = detectorId.asInstanceOf[js.Any])
       __obj.asInstanceOf[OrganizationConfigurationArgs]
     }
     
-    @scala.inline
-    implicit class OrganizationConfigurationArgsMutableBuilder[Self <: OrganizationConfigurationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: OrganizationConfigurationArgs](x: Self) {
       
-      @scala.inline
-      def setAutoEnable(value: Input[Boolean]): Self = StObject.set(x, "autoEnable", value.asInstanceOf[js.Any])
+      inline def setAutoEnable(value: Input[Boolean]): Self = StObject.set(x, "autoEnable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetectorId(value: Input[String]): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
+      inline def setDetectorId(value: Input[String]): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -112,26 +103,20 @@ object organizationConfigurationMod {
   }
   object OrganizationConfigurationState {
     
-    @scala.inline
-    def apply(): OrganizationConfigurationState = {
+    inline def apply(): OrganizationConfigurationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OrganizationConfigurationState]
     }
     
-    @scala.inline
-    implicit class OrganizationConfigurationStateMutableBuilder[Self <: OrganizationConfigurationState] (val x: Self) extends AnyVal {
+    extension [Self <: OrganizationConfigurationState](x: Self) {
       
-      @scala.inline
-      def setAutoEnable(value: Input[Boolean]): Self = StObject.set(x, "autoEnable", value.asInstanceOf[js.Any])
+      inline def setAutoEnable(value: Input[Boolean]): Self = StObject.set(x, "autoEnable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoEnableUndefined: Self = StObject.set(x, "autoEnable", js.undefined)
+      inline def setAutoEnableUndefined: Self = StObject.set(x, "autoEnable", js.undefined)
       
-      @scala.inline
-      def setDetectorId(value: Input[String]): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
+      inline def setDetectorId(value: Input[String]): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetectorIdUndefined: Self = StObject.set(x, "detectorId", js.undefined)
+      inline def setDetectorIdUndefined: Self = StObject.set(x, "detectorId", js.undefined)
     }
   }
 }

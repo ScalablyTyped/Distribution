@@ -14,22 +14,17 @@ trait Persist extends StObject {
 }
 object Persist {
   
-  @scala.inline
-  def apply(children: js.Any, persist: js.Any, state: js.Any): Persist = {
+  inline def apply(children: js.Any, persist: js.Any, state: js.Any): Persist = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], persist = persist.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[Persist]
   }
   
-  @scala.inline
-  implicit class PersistMutableBuilder[Self <: Persist] (val x: Self) extends AnyVal {
+  extension [Self <: Persist](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersist(value: js.Any): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
+    inline def setPersist(value: js.Any): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

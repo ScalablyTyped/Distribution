@@ -22,8 +22,7 @@ trait System[T /* <: js.Object */] extends StObject {
 }
 object System {
   
-  @scala.inline
-  def apply[T /* <: js.Object */](
+  inline def apply[T /* <: js.Object */](
     data: T,
     el: Entity[ObjectMap[Component[js.Any, System[js.Any]]]],
     init: () => Unit,
@@ -35,31 +34,22 @@ object System {
     __obj.asInstanceOf[System[T]]
   }
   
-  @scala.inline
-  implicit class SystemMutableBuilder[Self <: System[?], T /* <: js.Object */] (val x: Self & System[T]) extends AnyVal {
+  extension [Self <: System[?], T /* <: js.Object */](x: Self & System[T]) {
     
-    @scala.inline
-    def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEl(value: Entity[ObjectMap[Component[js.Any, System[js.Any]]]]): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
+    inline def setEl(value: Entity[ObjectMap[Component[js.Any, System[js.Any]]]]): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
+    inline def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
+    inline def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPlay(value: () => Unit): Self = StObject.set(x, "play", js.Any.fromFunction0(value))
+    inline def setPlay(value: () => Unit): Self = StObject.set(x, "play", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSchema(value: Schema_[T]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: Schema_[T]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTick(value: (/* t */ Double, /* dt */ Double) => Unit): Self = StObject.set(x, "tick", js.Any.fromFunction2(value))
+    inline def setTick(value: (/* t */ Double, /* dt */ Double) => Unit): Self = StObject.set(x, "tick", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTickUndefined: Self = StObject.set(x, "tick", js.undefined)
+    inline def setTickUndefined: Self = StObject.set(x, "tick", js.undefined)
   }
 }

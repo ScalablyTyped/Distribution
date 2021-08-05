@@ -16,29 +16,22 @@ trait ChoicesDefault extends StObject {
 }
 object ChoicesDefault {
   
-  @scala.inline
-  def apply(choices: js.Array[String], default: String, describe: String, `type`: String): ChoicesDefault = {
+  inline def apply(choices: js.Array[String], default: String, describe: String, `type`: String): ChoicesDefault = {
     val __obj = js.Dynamic.literal(choices = choices.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], describe = describe.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChoicesDefault]
   }
   
-  @scala.inline
-  implicit class ChoicesDefaultMutableBuilder[Self <: ChoicesDefault] (val x: Self) extends AnyVal {
+  extension [Self <: ChoicesDefault](x: Self) {
     
-    @scala.inline
-    def setChoices(value: js.Array[String]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
+    inline def setChoices(value: js.Array[String]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChoicesVarargs(value: String*): Self = StObject.set(x, "choices", js.Array(value :_*))
+    inline def setChoicesVarargs(value: String*): Self = StObject.set(x, "choices", js.Array(value :_*))
     
-    @scala.inline
-    def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescribe(value: String): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
+    inline def setDescribe(value: String): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

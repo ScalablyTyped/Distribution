@@ -33,8 +33,7 @@ object lib {
   }
   object Base {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       create: /* repeated */ js.Any => Base,
       extend: js.Object => js.Object,
       init: /* repeated */ js.Any => Unit,
@@ -44,20 +43,15 @@ object lib {
       __obj.asInstanceOf[Base]
     }
     
-    @scala.inline
-    implicit class BaseMutableBuilder[Self <: Base] (val x: Self) extends AnyVal {
+    extension [Self <: Base](x: Self) {
       
-      @scala.inline
-      def setCreate(value: /* repeated */ js.Any => Base): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+      inline def setCreate(value: /* repeated */ js.Any => Base): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExtend(value: js.Object => js.Object): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+      inline def setExtend(value: js.Object => js.Object): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInit(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+      inline def setInit(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMixIn(value: js.Object => Unit): Self = StObject.set(x, "mixIn", js.Any.fromFunction1(value))
+      inline def setMixIn(value: js.Object => Unit): Self = StObject.set(x, "mixIn", js.Any.fromFunction1(value))
     }
   }
   
@@ -92,8 +86,7 @@ object lib {
   }
   object BufferedBlockAlgorithm {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       create: /* repeated */ js.Any => Base,
       extend: js.Object => js.Object,
       init: /* repeated */ js.Any => Unit,
@@ -104,11 +97,9 @@ object lib {
       __obj.asInstanceOf[BufferedBlockAlgorithm]
     }
     
-    @scala.inline
-    implicit class BufferedBlockAlgorithmMutableBuilder[Self <: BufferedBlockAlgorithm] (val x: Self) extends AnyVal {
+    extension [Self <: BufferedBlockAlgorithm](x: Self) {
       
-      @scala.inline
-      def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     }
   }
   
@@ -153,68 +144,48 @@ object lib {
   }
   object CipherParamsData {
     
-    @scala.inline
-    def apply(): CipherParamsData = {
+    inline def apply(): CipherParamsData = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CipherParamsData]
     }
     
-    @scala.inline
-    implicit class CipherParamsDataMutableBuilder[Self <: CipherParamsData] (val x: Self) extends AnyVal {
+    extension [Self <: CipherParamsData](x: Self) {
       
-      @scala.inline
-      def setAlgorithm(value: Cipher): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+      inline def setAlgorithm(value: Cipher): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
+      inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
       
-      @scala.inline
-      def setBlockSize(value: Double): Self = StObject.set(x, "blockSize", value.asInstanceOf[js.Any])
+      inline def setBlockSize(value: Double): Self = StObject.set(x, "blockSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockSizeUndefined: Self = StObject.set(x, "blockSize", js.undefined)
+      inline def setBlockSizeUndefined: Self = StObject.set(x, "blockSize", js.undefined)
       
-      @scala.inline
-      def setCiphertext(value: WordArray): Self = StObject.set(x, "ciphertext", value.asInstanceOf[js.Any])
+      inline def setCiphertext(value: WordArray): Self = StObject.set(x, "ciphertext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCiphertextUndefined: Self = StObject.set(x, "ciphertext", js.undefined)
+      inline def setCiphertextUndefined: Self = StObject.set(x, "ciphertext", js.undefined)
       
-      @scala.inline
-      def setFormatter(value: IFormatter): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
+      inline def setFormatter(value: IFormatter): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
+      inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
       
-      @scala.inline
-      def setIv(value: WordArray): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
+      inline def setIv(value: WordArray): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIvUndefined: Self = StObject.set(x, "iv", js.undefined)
+      inline def setIvUndefined: Self = StObject.set(x, "iv", js.undefined)
       
-      @scala.inline
-      def setKey(value: WordArray): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: WordArray): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setMode(value: IBlockCipherModeImpl): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: IBlockCipherModeImpl): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setPadding(value: IPaddingImpl): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: IPaddingImpl): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      @scala.inline
-      def setSalt(value: WordArray): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
+      inline def setSalt(value: WordArray): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaltUndefined: Self = StObject.set(x, "salt", js.undefined)
+      inline def setSaltUndefined: Self = StObject.set(x, "salt", js.undefined)
     }
   }
   
@@ -233,32 +204,24 @@ object lib {
   }
   object IBlockCipherCfg {
     
-    @scala.inline
-    def apply(): IBlockCipherCfg = {
+    inline def apply(): IBlockCipherCfg = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IBlockCipherCfg]
     }
     
-    @scala.inline
-    implicit class IBlockCipherCfgMutableBuilder[Self <: IBlockCipherCfg] (val x: Self) extends AnyVal {
+    extension [Self <: IBlockCipherCfg](x: Self) {
       
-      @scala.inline
-      def setIv(value: WordArray): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
+      inline def setIv(value: WordArray): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIvUndefined: Self = StObject.set(x, "iv", js.undefined)
+      inline def setIvUndefined: Self = StObject.set(x, "iv", js.undefined)
       
-      @scala.inline
-      def setMode(value: IBlockCipherModeImpl): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: IBlockCipherModeImpl): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setPadding(value: IPaddingImpl): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: IPaddingImpl): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     }
   }
   
@@ -402,20 +365,16 @@ object lib {
   }
   object IPasswordBasedCipherCfg {
     
-    @scala.inline
-    def apply(): IPasswordBasedCipherCfg = {
+    inline def apply(): IPasswordBasedCipherCfg = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IPasswordBasedCipherCfg]
     }
     
-    @scala.inline
-    implicit class IPasswordBasedCipherCfgMutableBuilder[Self <: IPasswordBasedCipherCfg] (val x: Self) extends AnyVal {
+    extension [Self <: IPasswordBasedCipherCfg](x: Self) {
       
-      @scala.inline
-      def setKdf(value: IKdfImpl): Self = StObject.set(x, "kdf", value.asInstanceOf[js.Any])
+      inline def setKdf(value: IKdfImpl): Self = StObject.set(x, "kdf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKdfUndefined: Self = StObject.set(x, "kdf", js.undefined)
+      inline def setKdfUndefined: Self = StObject.set(x, "kdf", js.undefined)
     }
   }
   
@@ -451,38 +410,28 @@ object lib {
   }
   object ISerializableCipherCfg {
     
-    @scala.inline
-    def apply(): ISerializableCipherCfg = {
+    inline def apply(): ISerializableCipherCfg = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISerializableCipherCfg]
     }
     
-    @scala.inline
-    implicit class ISerializableCipherCfgMutableBuilder[Self <: ISerializableCipherCfg] (val x: Self) extends AnyVal {
+    extension [Self <: ISerializableCipherCfg](x: Self) {
       
-      @scala.inline
-      def setFormat(value: IFormatter): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: IFormatter): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setIv(value: WordArray): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
+      inline def setIv(value: WordArray): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIvUndefined: Self = StObject.set(x, "iv", js.undefined)
+      inline def setIvUndefined: Self = StObject.set(x, "iv", js.undefined)
       
-      @scala.inline
-      def setMode(value: IBlockCipherModeImpl): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: IBlockCipherModeImpl): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setPadding(value: IPaddingImpl): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: IPaddingImpl): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     }
   }
   
@@ -510,8 +459,7 @@ object lib {
   }
   object LibStatic {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Base: Base,
       CipherParams: CipherParams,
       PasswordBasedCipher: PasswordBasedCipher,
@@ -522,23 +470,17 @@ object lib {
       __obj.asInstanceOf[LibStatic]
     }
     
-    @scala.inline
-    implicit class LibStaticMutableBuilder[Self <: LibStatic] (val x: Self) extends AnyVal {
+    extension [Self <: LibStatic](x: Self) {
       
-      @scala.inline
-      def setBase(value: Base): Self = StObject.set(x, "Base", value.asInstanceOf[js.Any])
+      inline def setBase(value: Base): Self = StObject.set(x, "Base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCipherParams(value: CipherParams): Self = StObject.set(x, "CipherParams", value.asInstanceOf[js.Any])
+      inline def setCipherParams(value: CipherParams): Self = StObject.set(x, "CipherParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordBasedCipher(value: PasswordBasedCipher): Self = StObject.set(x, "PasswordBasedCipher", value.asInstanceOf[js.Any])
+      inline def setPasswordBasedCipher(value: PasswordBasedCipher): Self = StObject.set(x, "PasswordBasedCipher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerializableCipher(value: SerializableCipher): Self = StObject.set(x, "SerializableCipher", value.asInstanceOf[js.Any])
+      inline def setSerializableCipher(value: SerializableCipher): Self = StObject.set(x, "SerializableCipher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWordArray(value: WordArray): Self = StObject.set(x, "WordArray", value.asInstanceOf[js.Any])
+      inline def setWordArray(value: WordArray): Self = StObject.set(x, "WordArray", value.asInstanceOf[js.Any])
     }
   }
   

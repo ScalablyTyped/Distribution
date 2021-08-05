@@ -14,8 +14,7 @@ trait VariableDeclaration
 }
 object VariableDeclaration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -42,13 +41,10 @@ object VariableDeclaration {
     __obj.asInstanceOf[VariableDeclaration]
   }
   
-  @scala.inline
-  implicit class VariableDeclarationMutableBuilder[Self <: VariableDeclaration] (val x: Self) extends AnyVal {
+  extension [Self <: VariableDeclaration](x: Self) {
     
-    @scala.inline
-    def setDeclarators(value: ISeparatedSyntaxList2): Self = StObject.set(x, "declarators", value.asInstanceOf[js.Any])
+    inline def setDeclarators(value: ISeparatedSyntaxList2): Self = StObject.set(x, "declarators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructuralEquals(value: (VariableDeclaration, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (VariableDeclaration, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
   }
 }

@@ -13,8 +13,7 @@ object agentsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getAgent(uri: String, reqOpts: Options): js.UndefOr[HttpAnyAgent] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAgent")(uri.asInstanceOf[js.Any], reqOpts.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[HttpAnyAgent]]
+  inline def getAgent(uri: String, reqOpts: Options): js.UndefOr[HttpAnyAgent] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAgent")(uri.asInstanceOf[js.Any], reqOpts.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[HttpAnyAgent]]
   
   @JSImport("teeny-request/build/src/agents", "pool")
   @js.native

@@ -16,23 +16,18 @@ object entityBase {
   }
   object EntityBaseData {
     
-    @scala.inline
-    def apply(CreationDate: Double, Id: String, Tag: String): EntityBaseData = {
+    inline def apply(CreationDate: Double, Id: String, Tag: String): EntityBaseData = {
       val __obj = js.Dynamic.literal(CreationDate = CreationDate.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any])
       __obj.asInstanceOf[EntityBaseData]
     }
     
-    @scala.inline
-    implicit class EntityBaseDataMutableBuilder[Self <: EntityBaseData] (val x: Self) extends AnyVal {
+    extension [Self <: EntityBaseData](x: Self) {
       
-      @scala.inline
-      def setCreationDate(value: Double): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+      inline def setCreationDate(value: Double): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
     }
   }
 }

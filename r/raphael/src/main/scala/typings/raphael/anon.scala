@@ -471,20 +471,16 @@ object anon {
   }
   object Error {
     
-    @scala.inline
-    def apply(): Error = {
+    inline def apply(): Error = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Error]
     }
     
-    @scala.inline
-    implicit class ErrorMutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
+    extension [Self <: Error](x: Self) {
       
-      @scala.inline
-      def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     }
   }
   
@@ -561,221 +557,150 @@ object anon {
   }
   object PartialRaphaelAttributes {
     
-    @scala.inline
-    def apply(): PartialRaphaelAttributes = {
+    inline def apply(): PartialRaphaelAttributes = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialRaphaelAttributes]
     }
     
-    @scala.inline
-    implicit class PartialRaphaelAttributesMutableBuilder[Self <: PartialRaphaelAttributes] (val x: Self) extends AnyVal {
+    extension [Self <: PartialRaphaelAttributes](x: Self) {
       
-      @scala.inline
-      def `setArrow-end`(value: String): Self = StObject.set(x, "arrow-end", value.asInstanceOf[js.Any])
+      inline def `setArrow-end`(value: String): Self = StObject.set(x, "arrow-end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setArrow-endUndefined`: Self = StObject.set(x, "arrow-end", js.undefined)
+      inline def `setArrow-endUndefined`: Self = StObject.set(x, "arrow-end", js.undefined)
       
-      @scala.inline
-      def `setClip-rect`(value: String): Self = StObject.set(x, "clip-rect", value.asInstanceOf[js.Any])
+      inline def `setClip-rect`(value: String): Self = StObject.set(x, "clip-rect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setClip-rectUndefined`: Self = StObject.set(x, "clip-rect", js.undefined)
+      inline def `setClip-rectUndefined`: Self = StObject.set(x, "clip-rect", js.undefined)
       
-      @scala.inline
-      def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+      inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+      inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
       
-      @scala.inline
-      def setCx(value: Double): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
+      inline def setCx(value: Double): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCxUndefined: Self = StObject.set(x, "cx", js.undefined)
+      inline def setCxUndefined: Self = StObject.set(x, "cx", js.undefined)
       
-      @scala.inline
-      def setCy(value: Double): Self = StObject.set(x, "cy", value.asInstanceOf[js.Any])
+      inline def setCy(value: Double): Self = StObject.set(x, "cy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCyUndefined: Self = StObject.set(x, "cy", js.undefined)
+      inline def setCyUndefined: Self = StObject.set(x, "cy", js.undefined)
       
-      @scala.inline
-      def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFill-opacity`(value: Double): Self = StObject.set(x, "fill-opacity", value.asInstanceOf[js.Any])
+      inline def `setFill-opacity`(value: Double): Self = StObject.set(x, "fill-opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFill-opacityUndefined`: Self = StObject.set(x, "fill-opacity", js.undefined)
+      inline def `setFill-opacityUndefined`: Self = StObject.set(x, "fill-opacity", js.undefined)
       
-      @scala.inline
-      def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+      inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
-      @scala.inline
-      def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+      inline def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFont-family`(value: String): Self = StObject.set(x, "font-family", value.asInstanceOf[js.Any])
+      inline def `setFont-family`(value: String): Self = StObject.set(x, "font-family", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFont-familyUndefined`: Self = StObject.set(x, "font-family", js.undefined)
+      inline def `setFont-familyUndefined`: Self = StObject.set(x, "font-family", js.undefined)
       
-      @scala.inline
-      def `setFont-size`(value: Double | String): Self = StObject.set(x, "font-size", value.asInstanceOf[js.Any])
+      inline def `setFont-size`(value: Double | String): Self = StObject.set(x, "font-size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFont-sizeUndefined`: Self = StObject.set(x, "font-size", js.undefined)
+      inline def `setFont-sizeUndefined`: Self = StObject.set(x, "font-size", js.undefined)
       
-      @scala.inline
-      def `setFont-weight`(value: String): Self = StObject.set(x, "font-weight", value.asInstanceOf[js.Any])
+      inline def `setFont-weight`(value: String): Self = StObject.set(x, "font-weight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFont-weightUndefined`: Self = StObject.set(x, "font-weight", js.undefined)
+      inline def `setFont-weightUndefined`: Self = StObject.set(x, "font-weight", js.undefined)
       
-      @scala.inline
-      def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+      inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+      inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
       
-      @scala.inline
-      def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+      inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+      inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRUndefined: Self = StObject.set(x, "r", js.undefined)
+      inline def setRUndefined: Self = StObject.set(x, "r", js.undefined)
       
-      @scala.inline
-      def setRx(value: Double): Self = StObject.set(x, "rx", value.asInstanceOf[js.Any])
+      inline def setRx(value: Double): Self = StObject.set(x, "rx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRxUndefined: Self = StObject.set(x, "rx", js.undefined)
+      inline def setRxUndefined: Self = StObject.set(x, "rx", js.undefined)
       
-      @scala.inline
-      def setRy(value: Double): Self = StObject.set(x, "ry", value.asInstanceOf[js.Any])
+      inline def setRy(value: Double): Self = StObject.set(x, "ry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRyUndefined: Self = StObject.set(x, "ry", js.undefined)
+      inline def setRyUndefined: Self = StObject.set(x, "ry", js.undefined)
       
-      @scala.inline
-      def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+      inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
       
-      @scala.inline
-      def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+      inline def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setStroke-dasharray`(value: RaphaelDashArrayType): Self = StObject.set(x, "stroke-dasharray", value.asInstanceOf[js.Any])
+      inline def `setStroke-dasharray`(value: RaphaelDashArrayType): Self = StObject.set(x, "stroke-dasharray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setStroke-dasharrayUndefined`: Self = StObject.set(x, "stroke-dasharray", js.undefined)
+      inline def `setStroke-dasharrayUndefined`: Self = StObject.set(x, "stroke-dasharray", js.undefined)
       
-      @scala.inline
-      def `setStroke-linecap`(value: RaphaelLineCapType): Self = StObject.set(x, "stroke-linecap", value.asInstanceOf[js.Any])
+      inline def `setStroke-linecap`(value: RaphaelLineCapType): Self = StObject.set(x, "stroke-linecap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setStroke-linecapUndefined`: Self = StObject.set(x, "stroke-linecap", js.undefined)
+      inline def `setStroke-linecapUndefined`: Self = StObject.set(x, "stroke-linecap", js.undefined)
       
-      @scala.inline
-      def `setStroke-linejoin`(value: RaphaelLineJoinType): Self = StObject.set(x, "stroke-linejoin", value.asInstanceOf[js.Any])
+      inline def `setStroke-linejoin`(value: RaphaelLineJoinType): Self = StObject.set(x, "stroke-linejoin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setStroke-linejoinUndefined`: Self = StObject.set(x, "stroke-linejoin", js.undefined)
+      inline def `setStroke-linejoinUndefined`: Self = StObject.set(x, "stroke-linejoin", js.undefined)
       
-      @scala.inline
-      def `setStroke-miterlimit`(value: Double): Self = StObject.set(x, "stroke-miterlimit", value.asInstanceOf[js.Any])
+      inline def `setStroke-miterlimit`(value: Double): Self = StObject.set(x, "stroke-miterlimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setStroke-miterlimitUndefined`: Self = StObject.set(x, "stroke-miterlimit", js.undefined)
+      inline def `setStroke-miterlimitUndefined`: Self = StObject.set(x, "stroke-miterlimit", js.undefined)
       
-      @scala.inline
-      def `setStroke-opacity`(value: Double): Self = StObject.set(x, "stroke-opacity", value.asInstanceOf[js.Any])
+      inline def `setStroke-opacity`(value: Double): Self = StObject.set(x, "stroke-opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setStroke-opacityUndefined`: Self = StObject.set(x, "stroke-opacity", js.undefined)
+      inline def `setStroke-opacityUndefined`: Self = StObject.set(x, "stroke-opacity", js.undefined)
       
-      @scala.inline
-      def `setStroke-width`(value: Double): Self = StObject.set(x, "stroke-width", value.asInstanceOf[js.Any])
+      inline def `setStroke-width`(value: Double): Self = StObject.set(x, "stroke-width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setStroke-widthUndefined`: Self = StObject.set(x, "stroke-width", js.undefined)
+      inline def `setStroke-widthUndefined`: Self = StObject.set(x, "stroke-width", js.undefined)
       
-      @scala.inline
-      def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+      inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setText-anchor`(value: RaphaelTextAnchorType): Self = StObject.set(x, "text-anchor", value.asInstanceOf[js.Any])
+      inline def `setText-anchor`(value: RaphaelTextAnchorType): Self = StObject.set(x, "text-anchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setText-anchorUndefined`: Self = StObject.set(x, "text-anchor", js.undefined)
+      inline def `setText-anchorUndefined`: Self = StObject.set(x, "text-anchor", js.undefined)
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setTransform(value: String | RaphaelTransformSegment | js.Array[RaphaelTransformSegment]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+      inline def setTransform(value: String | RaphaelTransformSegment | js.Array[RaphaelTransformSegment]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       
-      @scala.inline
-      def setTransformVarargs(value: RaphaelTransformSegment*): Self = StObject.set(x, "transform", js.Array(value :_*))
+      inline def setTransformVarargs(value: RaphaelTransformSegment*): Self = StObject.set(x, "transform", js.Array(value :_*))
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }
   }
   
@@ -810,92 +735,64 @@ object anon {
   }
   object PartialRaphaelFontFace {
     
-    @scala.inline
-    def apply(): PartialRaphaelFontFace = {
+    inline def apply(): PartialRaphaelFontFace = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialRaphaelFontFace]
     }
     
-    @scala.inline
-    implicit class PartialRaphaelFontFaceMutableBuilder[Self <: PartialRaphaelFontFace] (val x: Self) extends AnyVal {
+    extension [Self <: PartialRaphaelFontFace](x: Self) {
       
-      @scala.inline
-      def setAscent(value: Double | String): Self = StObject.set(x, "ascent", value.asInstanceOf[js.Any])
+      inline def setAscent(value: Double | String): Self = StObject.set(x, "ascent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAscentUndefined: Self = StObject.set(x, "ascent", js.undefined)
+      inline def setAscentUndefined: Self = StObject.set(x, "ascent", js.undefined)
       
-      @scala.inline
-      def setBbox(value: String): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
+      inline def setBbox(value: String): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBboxUndefined: Self = StObject.set(x, "bbox", js.undefined)
+      inline def setBboxUndefined: Self = StObject.set(x, "bbox", js.undefined)
       
-      @scala.inline
-      def setDescent(value: Double | String): Self = StObject.set(x, "descent", value.asInstanceOf[js.Any])
+      inline def setDescent(value: Double | String): Self = StObject.set(x, "descent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescentUndefined: Self = StObject.set(x, "descent", js.undefined)
+      inline def setDescentUndefined: Self = StObject.set(x, "descent", js.undefined)
       
-      @scala.inline
-      def `setFont-family`(value: String): Self = StObject.set(x, "font-family", value.asInstanceOf[js.Any])
+      inline def `setFont-family`(value: String): Self = StObject.set(x, "font-family", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFont-familyUndefined`: Self = StObject.set(x, "font-family", js.undefined)
+      inline def `setFont-familyUndefined`: Self = StObject.set(x, "font-family", js.undefined)
       
-      @scala.inline
-      def `setFont-stretch`(value: String): Self = StObject.set(x, "font-stretch", value.asInstanceOf[js.Any])
+      inline def `setFont-stretch`(value: String): Self = StObject.set(x, "font-stretch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFont-stretchUndefined`: Self = StObject.set(x, "font-stretch", js.undefined)
+      inline def `setFont-stretchUndefined`: Self = StObject.set(x, "font-stretch", js.undefined)
       
-      @scala.inline
-      def `setFont-style`(value: String): Self = StObject.set(x, "font-style", value.asInstanceOf[js.Any])
+      inline def `setFont-style`(value: String): Self = StObject.set(x, "font-style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFont-styleUndefined`: Self = StObject.set(x, "font-style", js.undefined)
+      inline def `setFont-styleUndefined`: Self = StObject.set(x, "font-style", js.undefined)
       
-      @scala.inline
-      def `setFont-weight`(value: Double | String): Self = StObject.set(x, "font-weight", value.asInstanceOf[js.Any])
+      inline def `setFont-weight`(value: Double | String): Self = StObject.set(x, "font-weight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFont-weightUndefined`: Self = StObject.set(x, "font-weight", js.undefined)
+      inline def `setFont-weightUndefined`: Self = StObject.set(x, "font-weight", js.undefined)
       
-      @scala.inline
-      def `setPanose-1`(value: String): Self = StObject.set(x, "panose-1", value.asInstanceOf[js.Any])
+      inline def `setPanose-1`(value: String): Self = StObject.set(x, "panose-1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setPanose-1Undefined`: Self = StObject.set(x, "panose-1", js.undefined)
+      inline def `setPanose-1Undefined`: Self = StObject.set(x, "panose-1", js.undefined)
       
-      @scala.inline
-      def `setUnderline-position`(value: Double | String): Self = StObject.set(x, "underline-position", value.asInstanceOf[js.Any])
+      inline def `setUnderline-position`(value: Double | String): Self = StObject.set(x, "underline-position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setUnderline-positionUndefined`: Self = StObject.set(x, "underline-position", js.undefined)
+      inline def `setUnderline-positionUndefined`: Self = StObject.set(x, "underline-position", js.undefined)
       
-      @scala.inline
-      def `setUnderline-thickness`(value: Double | String): Self = StObject.set(x, "underline-thickness", value.asInstanceOf[js.Any])
+      inline def `setUnderline-thickness`(value: Double | String): Self = StObject.set(x, "underline-thickness", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setUnderline-thicknessUndefined`: Self = StObject.set(x, "underline-thickness", js.undefined)
+      inline def `setUnderline-thicknessUndefined`: Self = StObject.set(x, "underline-thickness", js.undefined)
       
-      @scala.inline
-      def `setUnicode-range`(value: String): Self = StObject.set(x, "unicode-range", value.asInstanceOf[js.Any])
+      inline def `setUnicode-range`(value: String): Self = StObject.set(x, "unicode-range", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setUnicode-rangeUndefined`: Self = StObject.set(x, "unicode-range", js.undefined)
+      inline def `setUnicode-rangeUndefined`: Self = StObject.set(x, "unicode-range", js.undefined)
       
-      @scala.inline
-      def `setUnits-per-em`(value: Double | String): Self = StObject.set(x, "units-per-em", value.asInstanceOf[js.Any])
+      inline def `setUnits-per-em`(value: Double | String): Self = StObject.set(x, "units-per-em", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setUnits-per-emUndefined`: Self = StObject.set(x, "units-per-em", js.undefined)
+      inline def `setUnits-per-emUndefined`: Self = StObject.set(x, "units-per-em", js.undefined)
       
-      @scala.inline
-      def `setX-height`(value: Double | String): Self = StObject.set(x, "x-height", value.asInstanceOf[js.Any])
+      inline def `setX-height`(value: Double | String): Self = StObject.set(x, "x-height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setX-heightUndefined`: Self = StObject.set(x, "x-height", js.undefined)
+      inline def `setX-heightUndefined`: Self = StObject.set(x, "x-height", js.undefined)
     }
   }
   
@@ -908,26 +805,20 @@ object anon {
   }
   object PartialRaphaelFontGlyph {
     
-    @scala.inline
-    def apply(): PartialRaphaelFontGlyph = {
+    inline def apply(): PartialRaphaelFontGlyph = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialRaphaelFontGlyph]
     }
     
-    @scala.inline
-    implicit class PartialRaphaelFontGlyphMutableBuilder[Self <: PartialRaphaelFontGlyph] (val x: Self) extends AnyVal {
+    extension [Self <: PartialRaphaelFontGlyph](x: Self) {
       
-      @scala.inline
-      def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
+      inline def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDUndefined: Self = StObject.set(x, "d", js.undefined)
+      inline def setDUndefined: Self = StObject.set(x, "d", js.undefined)
       
-      @scala.inline
-      def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+      inline def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWUndefined: Self = StObject.set(x, "w", js.undefined)
+      inline def setWUndefined: Self = StObject.set(x, "w", js.undefined)
     }
   }
   
@@ -948,50 +839,36 @@ object anon {
   }
   object PartialRaphaelGlowSetting {
     
-    @scala.inline
-    def apply(): PartialRaphaelGlowSetting = {
+    inline def apply(): PartialRaphaelGlowSetting = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialRaphaelGlowSetting]
     }
     
-    @scala.inline
-    implicit class PartialRaphaelGlowSettingMutableBuilder[Self <: PartialRaphaelGlowSetting] (val x: Self) extends AnyVal {
+    extension [Self <: PartialRaphaelGlowSetting](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      inline def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+      inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
-      @scala.inline
-      def setOffsetx(value: Double): Self = StObject.set(x, "offsetx", value.asInstanceOf[js.Any])
+      inline def setOffsetx(value: Double): Self = StObject.set(x, "offsetx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetxUndefined: Self = StObject.set(x, "offsetx", js.undefined)
+      inline def setOffsetxUndefined: Self = StObject.set(x, "offsetx", js.undefined)
       
-      @scala.inline
-      def setOffsety(value: Double): Self = StObject.set(x, "offsety", value.asInstanceOf[js.Any])
+      inline def setOffsety(value: Double): Self = StObject.set(x, "offsety", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetyUndefined: Self = StObject.set(x, "offsety", js.undefined)
+      inline def setOffsetyUndefined: Self = StObject.set(x, "offsety", js.undefined)
       
-      @scala.inline
-      def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+      inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -1036,41 +913,30 @@ object anon {
   }
   object RaphaelPotentialFailureRa {
     
-    @scala.inline
-    def apply(b: Double, g: Double, h: Double, hex: String, l: Double, r: Double, s: Double): RaphaelPotentialFailureRa = {
+    inline def apply(b: Double, g: Double, h: Double, hex: String, l: Double, r: Double, s: Double): RaphaelPotentialFailureRa = {
       val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any], hex = hex.asInstanceOf[js.Any], l = l.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any])
       __obj.asInstanceOf[RaphaelPotentialFailureRa]
     }
     
-    @scala.inline
-    implicit class RaphaelPotentialFailureRaMutableBuilder[Self <: RaphaelPotentialFailureRa] (val x: Self) extends AnyVal {
+    extension [Self <: RaphaelPotentialFailureRa](x: Self) {
       
-      @scala.inline
-      def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+      inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
+      inline def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+      inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHex(value: String): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
+      inline def setHex(value: String): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setL(value: Double): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
+      inline def setL(value: Double): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+      inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS(value: Double): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+      inline def setS(value: Double): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1097,32 +963,24 @@ object anon {
   }
   object RaphaelPotentialFailureRaB {
     
-    @scala.inline
-    def apply(b: Double, g: Double, hex: String, r: Double): RaphaelPotentialFailureRaB = {
+    inline def apply(b: Double, g: Double, hex: String, r: Double): RaphaelPotentialFailureRaB = {
       val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], hex = hex.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
       __obj.asInstanceOf[RaphaelPotentialFailureRaB]
     }
     
-    @scala.inline
-    implicit class RaphaelPotentialFailureRaBMutableBuilder[Self <: RaphaelPotentialFailureRaB] (val x: Self) extends AnyVal {
+    extension [Self <: RaphaelPotentialFailureRaB](x: Self) {
       
-      @scala.inline
-      def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+      inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
+      inline def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHex(value: String): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
+      inline def setHex(value: String): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+      inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     }
   }
 }

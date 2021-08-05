@@ -13,19 +13,15 @@ trait Group extends StObject {
 }
 object Group {
   
-  @scala.inline
-  def apply(Cancel: Boolean, Group: OutlookBarGroup): Group = {
+  inline def apply(Cancel: Boolean, Group: OutlookBarGroup): Group = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Group = Group.asInstanceOf[js.Any])
     __obj.asInstanceOf[Group]
   }
   
-  @scala.inline
-  implicit class GroupMutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
+  extension [Self <: Group](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroup(value: OutlookBarGroup): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: OutlookBarGroup): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
   }
 }

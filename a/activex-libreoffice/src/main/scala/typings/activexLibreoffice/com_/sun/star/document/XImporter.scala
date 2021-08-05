@@ -29,8 +29,7 @@ trait XImporter
 }
 object XImporter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -40,10 +39,8 @@ object XImporter {
     __obj.asInstanceOf[XImporter]
   }
   
-  @scala.inline
-  implicit class XImporterMutableBuilder[Self <: XImporter] (val x: Self) extends AnyVal {
+  extension [Self <: XImporter](x: Self) {
     
-    @scala.inline
-    def setSetTargetDocument(value: XComponent => Unit): Self = StObject.set(x, "setTargetDocument", js.Any.fromFunction1(value))
+    inline def setSetTargetDocument(value: XComponent => Unit): Self = StObject.set(x, "setTargetDocument", js.Any.fromFunction1(value))
   }
 }

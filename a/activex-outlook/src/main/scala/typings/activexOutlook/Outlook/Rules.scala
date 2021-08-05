@@ -19,7 +19,7 @@ trait Rules extends StObject {
   
   def Item(Index: js.Any): Rule = js.native
   
-  @JSName("Outlook.Rules_typekey")
+  /* private */ @JSName("Outlook.Rules_typekey")
   var OutlookDotRules_typekey: Rules = js.native
   
   val Parent: js.Any = js.native

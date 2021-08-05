@@ -15,8 +15,7 @@ trait IPrintTaskRequest extends StObject {
 }
 object IPrintTaskRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createPrintTask: (String, PrintTaskSourceRequestedHandler) => PrintTask,
     deadline: Date,
     getDeferral: () => PrintTaskRequestedDeferral
@@ -25,16 +24,12 @@ object IPrintTaskRequest {
     __obj.asInstanceOf[IPrintTaskRequest]
   }
   
-  @scala.inline
-  implicit class IPrintTaskRequestMutableBuilder[Self <: IPrintTaskRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IPrintTaskRequest](x: Self) {
     
-    @scala.inline
-    def setCreatePrintTask(value: (String, PrintTaskSourceRequestedHandler) => PrintTask): Self = StObject.set(x, "createPrintTask", js.Any.fromFunction2(value))
+    inline def setCreatePrintTask(value: (String, PrintTaskSourceRequestedHandler) => PrintTask): Self = StObject.set(x, "createPrintTask", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDeadline(value: Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
+    inline def setDeadline(value: Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDeferral(value: () => PrintTaskRequestedDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
+    inline def setGetDeferral(value: () => PrintTaskRequestedDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
   }
 }

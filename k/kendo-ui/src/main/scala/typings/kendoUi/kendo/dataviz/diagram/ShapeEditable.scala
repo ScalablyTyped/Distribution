@@ -10,19 +10,15 @@ trait ShapeEditable extends StObject {
 }
 object ShapeEditable {
   
-  @scala.inline
-  def apply(): ShapeEditable = {
+  inline def apply(): ShapeEditable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShapeEditable]
   }
   
-  @scala.inline
-  implicit class ShapeEditableMutableBuilder[Self <: ShapeEditable] (val x: Self) extends AnyVal {
+  extension [Self <: ShapeEditable](x: Self) {
     
-    @scala.inline
-    def setConnect(value: Boolean): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
+    inline def setConnect(value: Boolean): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectUndefined: Self = StObject.set(x, "connect", js.undefined)
+    inline def setConnectUndefined: Self = StObject.set(x, "connect", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait GetInvalidationResult extends StObject {
 }
 object GetInvalidationResult {
   
-  @scala.inline
-  def apply(): GetInvalidationResult = {
+  inline def apply(): GetInvalidationResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetInvalidationResult]
   }
   
-  @scala.inline
-  implicit class GetInvalidationResultMutableBuilder[Self <: GetInvalidationResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetInvalidationResult](x: Self) {
     
-    @scala.inline
-    def setInvalidation(value: Invalidation): Self = StObject.set(x, "Invalidation", value.asInstanceOf[js.Any])
+    inline def setInvalidation(value: Invalidation): Self = StObject.set(x, "Invalidation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalidationUndefined: Self = StObject.set(x, "Invalidation", js.undefined)
+    inline def setInvalidationUndefined: Self = StObject.set(x, "Invalidation", js.undefined)
   }
 }

@@ -20,10 +20,8 @@ object thirdpartyMod {
     @JSImport("ethereumjs-wallet/dist/thirdparty", "default.fromEtherCamp")
     @js.native
     def fromEtherCamp: js.Function1[/* passphrase */ String, typings.ethereumjsWallet.mod.default] = js.native
-    @scala.inline
-    def fromEtherCamp(passphrase: String): typings.ethereumjsWallet.mod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEtherCamp")(passphrase.asInstanceOf[js.Any]).asInstanceOf[typings.ethereumjsWallet.mod.default]
-    @scala.inline
-    def fromEtherCamp_=(x: js.Function1[/* passphrase */ String, typings.ethereumjsWallet.mod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromEtherCamp")(x.asInstanceOf[js.Any])
+    inline def fromEtherCamp(passphrase: String): typings.ethereumjsWallet.mod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEtherCamp")(passphrase.asInstanceOf[js.Any]).asInstanceOf[typings.ethereumjsWallet.mod.default]
+    inline def fromEtherCamp_=(x: js.Function1[/* passphrase */ String, typings.ethereumjsWallet.mod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromEtherCamp")(x.asInstanceOf[js.Any])
     
     @JSImport("ethereumjs-wallet/dist/thirdparty", "default.fromEtherWallet")
     @js.native
@@ -32,12 +30,9 @@ object thirdpartyMod {
         /* password */ String, 
         typings.ethereumjsWallet.mod.default
       ] = js.native
-    @scala.inline
-    def fromEtherWallet(input: String, password: String): typings.ethereumjsWallet.mod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEtherWallet")(input.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.ethereumjsWallet.mod.default]
-    @scala.inline
-    def fromEtherWallet(input: EtherWalletOptions, password: String): typings.ethereumjsWallet.mod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEtherWallet")(input.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.ethereumjsWallet.mod.default]
-    @scala.inline
-    def fromEtherWallet_=(
+    inline def fromEtherWallet(input: String, password: String): typings.ethereumjsWallet.mod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEtherWallet")(input.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.ethereumjsWallet.mod.default]
+    inline def fromEtherWallet(input: EtherWalletOptions, password: String): typings.ethereumjsWallet.mod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEtherWallet")(input.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.ethereumjsWallet.mod.default]
+    inline def fromEtherWallet_=(
       x: js.Function2[
           /* input */ String | EtherWalletOptions, 
           /* password */ String, 
@@ -52,10 +47,8 @@ object thirdpartyMod {
         /* password */ String, 
         js.Promise[typings.ethereumjsWallet.mod.default]
       ] = js.native
-    @scala.inline
-    def fromKryptoKit(entropy: String, password: String): js.Promise[typings.ethereumjsWallet.mod.default] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromKryptoKit")(entropy.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.ethereumjsWallet.mod.default]]
-    @scala.inline
-    def fromKryptoKit_=(
+    inline def fromKryptoKit(entropy: String, password: String): js.Promise[typings.ethereumjsWallet.mod.default] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromKryptoKit")(entropy.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.ethereumjsWallet.mod.default]]
+    inline def fromKryptoKit_=(
       x: js.Function2[
           /* entropy */ String, 
           /* password */ String, 
@@ -66,27 +59,20 @@ object thirdpartyMod {
     @JSImport("ethereumjs-wallet/dist/thirdparty", "default.fromQuorumWallet")
     @js.native
     def fromQuorumWallet: js.Function2[/* passphrase */ String, /* userid */ String, typings.ethereumjsWallet.mod.default] = js.native
-    @scala.inline
-    def fromQuorumWallet(passphrase: String, userid: String): typings.ethereumjsWallet.mod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("fromQuorumWallet")(passphrase.asInstanceOf[js.Any], userid.asInstanceOf[js.Any])).asInstanceOf[typings.ethereumjsWallet.mod.default]
-    @scala.inline
-    def fromQuorumWallet_=(
+    inline def fromQuorumWallet(passphrase: String, userid: String): typings.ethereumjsWallet.mod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("fromQuorumWallet")(passphrase.asInstanceOf[js.Any], userid.asInstanceOf[js.Any])).asInstanceOf[typings.ethereumjsWallet.mod.default]
+    inline def fromQuorumWallet_=(
       x: js.Function2[/* passphrase */ String, /* userid */ String, typings.ethereumjsWallet.mod.default]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromQuorumWallet")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def fromEtherCamp(passphrase: String): default = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEtherCamp")(passphrase.asInstanceOf[js.Any]).asInstanceOf[default]
+  inline def fromEtherCamp(passphrase: String): default = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEtherCamp")(passphrase.asInstanceOf[js.Any]).asInstanceOf[default]
   
-  @scala.inline
-  def fromEtherWallet(input: String, password: String): default = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEtherWallet")(input.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[default]
-  @scala.inline
-  def fromEtherWallet(input: EtherWalletOptions, password: String): default = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEtherWallet")(input.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[default]
+  inline def fromEtherWallet(input: String, password: String): default = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEtherWallet")(input.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[default]
+  inline def fromEtherWallet(input: EtherWalletOptions, password: String): default = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEtherWallet")(input.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[default]
   
-  @scala.inline
-  def fromKryptoKit(entropy: String, password: String): js.Promise[default] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromKryptoKit")(entropy.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[default]]
+  inline def fromKryptoKit(entropy: String, password: String): js.Promise[default] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromKryptoKit")(entropy.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[default]]
   
-  @scala.inline
-  def fromQuorumWallet(passphrase: String, userid: String): default = (^.asInstanceOf[js.Dynamic].applyDynamic("fromQuorumWallet")(passphrase.asInstanceOf[js.Any], userid.asInstanceOf[js.Any])).asInstanceOf[default]
+  inline def fromQuorumWallet(passphrase: String, userid: String): default = (^.asInstanceOf[js.Dynamic].applyDynamic("fromQuorumWallet")(passphrase.asInstanceOf[js.Any], userid.asInstanceOf[js.Any])).asInstanceOf[default]
   
   trait EtherWalletOptions extends StObject {
     
@@ -104,8 +90,7 @@ object thirdpartyMod {
   }
   object EtherWalletOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       address: String,
       encrypted: Boolean,
       hash: String,
@@ -118,26 +103,19 @@ object thirdpartyMod {
       __obj.asInstanceOf[EtherWalletOptions]
     }
     
-    @scala.inline
-    implicit class EtherWalletOptionsMutableBuilder[Self <: EtherWalletOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EtherWalletOptions](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncrypted(value: Boolean): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
+      inline def setEncrypted(value: Boolean): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
+      inline def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivate(value: String): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
+      inline def setPrivate(value: String): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublic(value: String): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+      inline def setPublic(value: String): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
     }
   }
   
@@ -153,26 +131,20 @@ object thirdpartyMod {
   }
   object EvpKdfOpts {
     
-    @scala.inline
-    def apply(count: Double, digest: String, ivsize: Double, keysize: Double): EvpKdfOpts = {
+    inline def apply(count: Double, digest: String, ivsize: Double, keysize: Double): EvpKdfOpts = {
       val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], digest = digest.asInstanceOf[js.Any], ivsize = ivsize.asInstanceOf[js.Any], keysize = keysize.asInstanceOf[js.Any])
       __obj.asInstanceOf[EvpKdfOpts]
     }
     
-    @scala.inline
-    implicit class EvpKdfOptsMutableBuilder[Self <: EvpKdfOpts] (val x: Self) extends AnyVal {
+    extension [Self <: EvpKdfOpts](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
+      inline def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIvsize(value: Double): Self = StObject.set(x, "ivsize", value.asInstanceOf[js.Any])
+      inline def setIvsize(value: Double): Self = StObject.set(x, "ivsize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeysize(value: Double): Self = StObject.set(x, "keysize", value.asInstanceOf[js.Any])
+      inline def setKeysize(value: Double): Self = StObject.set(x, "keysize", value.asInstanceOf[js.Any])
     }
   }
 }

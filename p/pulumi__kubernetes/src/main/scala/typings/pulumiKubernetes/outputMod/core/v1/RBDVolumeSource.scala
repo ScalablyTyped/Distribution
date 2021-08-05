@@ -51,8 +51,7 @@ trait RBDVolumeSource extends StObject {
 }
 object RBDVolumeSource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fsType: String,
     image: String,
     keyring: String,
@@ -66,34 +65,24 @@ object RBDVolumeSource {
     __obj.asInstanceOf[RBDVolumeSource]
   }
   
-  @scala.inline
-  implicit class RBDVolumeSourceMutableBuilder[Self <: RBDVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: RBDVolumeSource](x: Self) {
     
-    @scala.inline
-    def setFsType(value: String): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
+    inline def setFsType(value: String): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyring(value: String): Self = StObject.set(x, "keyring", value.asInstanceOf[js.Any])
+    inline def setKeyring(value: String): Self = StObject.set(x, "keyring", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitors(value: js.Array[String]): Self = StObject.set(x, "monitors", value.asInstanceOf[js.Any])
+    inline def setMonitors(value: js.Array[String]): Self = StObject.set(x, "monitors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitorsVarargs(value: String*): Self = StObject.set(x, "monitors", js.Array(value :_*))
+    inline def setMonitorsVarargs(value: String*): Self = StObject.set(x, "monitors", js.Array(value :_*))
     
-    @scala.inline
-    def setPool(value: String): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
+    inline def setPool(value: String): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretRef(value: LocalObjectReference): Self = StObject.set(x, "secretRef", value.asInstanceOf[js.Any])
+    inline def setSecretRef(value: LocalObjectReference): Self = StObject.set(x, "secretRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

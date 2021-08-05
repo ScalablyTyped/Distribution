@@ -13,16 +13,13 @@ trait DeleteConfigRuleRequest extends StObject {
 }
 object DeleteConfigRuleRequest {
   
-  @scala.inline
-  def apply(ConfigRuleName: ConfigRuleName): DeleteConfigRuleRequest = {
+  inline def apply(ConfigRuleName: ConfigRuleName): DeleteConfigRuleRequest = {
     val __obj = js.Dynamic.literal(ConfigRuleName = ConfigRuleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteConfigRuleRequest]
   }
   
-  @scala.inline
-  implicit class DeleteConfigRuleRequestMutableBuilder[Self <: DeleteConfigRuleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteConfigRuleRequest](x: Self) {
     
-    @scala.inline
-    def setConfigRuleName(value: ConfigRuleName): Self = StObject.set(x, "ConfigRuleName", value.asInstanceOf[js.Any])
+    inline def setConfigRuleName(value: ConfigRuleName): Self = StObject.set(x, "ConfigRuleName", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait ListBuildsInput extends StObject {
 }
 object ListBuildsInput {
   
-  @scala.inline
-  def apply(): ListBuildsInput = {
+  inline def apply(): ListBuildsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListBuildsInput]
   }
   
-  @scala.inline
-  implicit class ListBuildsInputMutableBuilder[Self <: ListBuildsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListBuildsInput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setSortOrder(value: SortOrderType): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
+    inline def setSortOrder(value: SortOrderType): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
+    inline def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
   }
 }

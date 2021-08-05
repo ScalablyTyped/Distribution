@@ -26,8 +26,7 @@ trait ICollection extends StObject {
 }
 object ICollection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Clear: () => Unit,
     Count: Double,
     Events: IEvents,
@@ -42,34 +41,24 @@ object ICollection {
     __obj.asInstanceOf[ICollection]
   }
   
-  @scala.inline
-  implicit class ICollectionMutableBuilder[Self <: ICollection] (val x: Self) extends AnyVal {
+  extension [Self <: ICollection](x: Self) {
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvents(value: IEvents): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: IEvents): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFind(value: js.Any => Double): Self = StObject.set(x, "Find", js.Any.fromFunction1(value))
+    inline def setFind(value: js.Any => Double): Self = StObject.set(x, "Find", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetAt(value: Double => js.Any): Self = StObject.set(x, "GetAt", js.Any.fromFunction1(value))
+    inline def setGetAt(value: Double => js.Any): Self = StObject.set(x, "GetAt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMoveTo(value: (Double, Double) => Unit): Self = StObject.set(x, "MoveTo", js.Any.fromFunction2(value))
+    inline def setMoveTo(value: (Double, Double) => Unit): Self = StObject.set(x, "MoveTo", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setNewTo(value: (Double, Boolean) => js.Any): Self = StObject.set(x, "NewTo", js.Any.fromFunction2(value))
+    inline def setNewTo(value: (Double, Boolean) => js.Any): Self = StObject.set(x, "NewTo", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPutTo(value: (Double, Boolean, js.Any) => Unit): Self = StObject.set(x, "PutTo", js.Any.fromFunction3(value))
+    inline def setPutTo(value: (Double, Boolean, js.Any) => Unit): Self = StObject.set(x, "PutTo", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRemoveAt(value: Double => Unit): Self = StObject.set(x, "RemoveAt", js.Any.fromFunction1(value))
+    inline def setRemoveAt(value: Double => Unit): Self = StObject.set(x, "RemoveAt", js.Any.fromFunction1(value))
   }
 }

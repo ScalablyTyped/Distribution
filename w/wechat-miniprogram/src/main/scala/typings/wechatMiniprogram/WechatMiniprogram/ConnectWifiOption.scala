@@ -31,49 +31,35 @@ trait ConnectWifiOption extends StObject {
 }
 object ConnectWifiOption {
   
-  @scala.inline
-  def apply(SSID: String, password: String): ConnectWifiOption = {
+  inline def apply(SSID: String, password: String): ConnectWifiOption = {
     val __obj = js.Dynamic.literal(SSID = SSID.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectWifiOption]
   }
   
-  @scala.inline
-  implicit class ConnectWifiOptionMutableBuilder[Self <: ConnectWifiOption] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectWifiOption](x: Self) {
     
-    @scala.inline
-    def setBSSID(value: String): Self = StObject.set(x, "BSSID", value.asInstanceOf[js.Any])
+    inline def setBSSID(value: String): Self = StObject.set(x, "BSSID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBSSIDUndefined: Self = StObject.set(x, "BSSID", js.undefined)
+    inline def setBSSIDUndefined: Self = StObject.set(x, "BSSID", js.undefined)
     
-    @scala.inline
-    def setComplete(value: /* res */ WifiError => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+    inline def setComplete(value: /* res */ WifiError => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    @scala.inline
-    def setFail(value: /* res */ WifiError => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
+    inline def setFail(value: /* res */ WifiError => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
-    @scala.inline
-    def setMaunal(value: Boolean): Self = StObject.set(x, "maunal", value.asInstanceOf[js.Any])
+    inline def setMaunal(value: Boolean): Self = StObject.set(x, "maunal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaunalUndefined: Self = StObject.set(x, "maunal", js.undefined)
+    inline def setMaunalUndefined: Self = StObject.set(x, "maunal", js.undefined)
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSSID(value: String): Self = StObject.set(x, "SSID", value.asInstanceOf[js.Any])
+    inline def setSSID(value: String): Self = StObject.set(x, "SSID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: /* res */ WifiError => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ WifiError => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

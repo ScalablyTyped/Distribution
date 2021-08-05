@@ -47,8 +47,7 @@ trait DirectionsStopSymbols
 }
 object DirectionsStopSymbols {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -57,37 +56,26 @@ object DirectionsStopSymbols {
     __obj.asInstanceOf[DirectionsStopSymbols]
   }
   
-  @scala.inline
-  implicit class DirectionsStopSymbolsMutableBuilder[Self <: DirectionsStopSymbols] (val x: Self) extends AnyVal {
+  extension [Self <: DirectionsStopSymbols](x: Self) {
     
-    @scala.inline
-    def setFirst(value: Symbol): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
+    inline def setFirst(value: Symbol): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
+    inline def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
     
-    @scala.inline
-    def setLast(value: Symbol): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
+    inline def setLast(value: Symbol): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
+    inline def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
     
-    @scala.inline
-    def setMiddle(value: Symbol): Self = StObject.set(x, "middle", value.asInstanceOf[js.Any])
+    inline def setMiddle(value: Symbol): Self = StObject.set(x, "middle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMiddleUndefined: Self = StObject.set(x, "middle", js.undefined)
+    inline def setMiddleUndefined: Self = StObject.set(x, "middle", js.undefined)
     
-    @scala.inline
-    def setUnlocated(value: Symbol): Self = StObject.set(x, "unlocated", value.asInstanceOf[js.Any])
+    inline def setUnlocated(value: Symbol): Self = StObject.set(x, "unlocated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnlocatedUndefined: Self = StObject.set(x, "unlocated", js.undefined)
+    inline def setUnlocatedUndefined: Self = StObject.set(x, "unlocated", js.undefined)
     
-    @scala.inline
-    def setWaypoint(value: Symbol): Self = StObject.set(x, "waypoint", value.asInstanceOf[js.Any])
+    inline def setWaypoint(value: Symbol): Self = StObject.set(x, "waypoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaypointUndefined: Self = StObject.set(x, "waypoint", js.undefined)
+    inline def setWaypointUndefined: Self = StObject.set(x, "waypoint", js.undefined)
   }
 }

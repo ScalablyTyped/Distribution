@@ -12,19 +12,15 @@ trait VisualViewportEventMap extends StObject {
 }
 object VisualViewportEventMap {
   
-  @scala.inline
-  def apply(resize: UIEvent, scroll: Event): VisualViewportEventMap = {
+  inline def apply(resize: UIEvent, scroll: Event): VisualViewportEventMap = {
     val __obj = js.Dynamic.literal(resize = resize.asInstanceOf[js.Any], scroll = scroll.asInstanceOf[js.Any])
     __obj.asInstanceOf[VisualViewportEventMap]
   }
   
-  @scala.inline
-  implicit class VisualViewportEventMapMutableBuilder[Self <: VisualViewportEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: VisualViewportEventMap](x: Self) {
     
-    @scala.inline
-    def setResize(value: UIEvent): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
+    inline def setResize(value: UIEvent): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScroll(value: Event): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
+    inline def setScroll(value: Event): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
   }
 }

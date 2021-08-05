@@ -33,8 +33,7 @@ trait UpdateAuthEventFeedbackRequest extends StObject {
 }
 object UpdateAuthEventFeedbackRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     EventId: EventIdType,
     FeedbackToken: TokenModelType,
     FeedbackValue: FeedbackValueType,
@@ -45,22 +44,16 @@ object UpdateAuthEventFeedbackRequest {
     __obj.asInstanceOf[UpdateAuthEventFeedbackRequest]
   }
   
-  @scala.inline
-  implicit class UpdateAuthEventFeedbackRequestMutableBuilder[Self <: UpdateAuthEventFeedbackRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateAuthEventFeedbackRequest](x: Self) {
     
-    @scala.inline
-    def setEventId(value: EventIdType): Self = StObject.set(x, "EventId", value.asInstanceOf[js.Any])
+    inline def setEventId(value: EventIdType): Self = StObject.set(x, "EventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeedbackToken(value: TokenModelType): Self = StObject.set(x, "FeedbackToken", value.asInstanceOf[js.Any])
+    inline def setFeedbackToken(value: TokenModelType): Self = StObject.set(x, "FeedbackToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeedbackValue(value: FeedbackValueType): Self = StObject.set(x, "FeedbackValue", value.asInstanceOf[js.Any])
+    inline def setFeedbackValue(value: FeedbackValueType): Self = StObject.set(x, "FeedbackValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
+    inline def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: UsernameType): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: UsernameType): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
   }
 }

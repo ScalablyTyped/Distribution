@@ -18,19 +18,15 @@ trait BlobDataObject extends StObject {
 }
 object BlobDataObject {
   
-  @scala.inline
-  def apply(name: String, size: Double): BlobDataObject = {
+  inline def apply(name: String, size: Double): BlobDataObject = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlobDataObject]
   }
   
-  @scala.inline
-  implicit class BlobDataObjectMutableBuilder[Self <: BlobDataObject] (val x: Self) extends AnyVal {
+  extension [Self <: BlobDataObject](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

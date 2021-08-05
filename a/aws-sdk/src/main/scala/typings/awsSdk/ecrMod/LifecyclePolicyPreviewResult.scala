@@ -33,46 +33,33 @@ trait LifecyclePolicyPreviewResult extends StObject {
 }
 object LifecyclePolicyPreviewResult {
   
-  @scala.inline
-  def apply(): LifecyclePolicyPreviewResult = {
+  inline def apply(): LifecyclePolicyPreviewResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LifecyclePolicyPreviewResult]
   }
   
-  @scala.inline
-  implicit class LifecyclePolicyPreviewResultMutableBuilder[Self <: LifecyclePolicyPreviewResult] (val x: Self) extends AnyVal {
+  extension [Self <: LifecyclePolicyPreviewResult](x: Self) {
     
-    @scala.inline
-    def setAction(value: LifecyclePolicyRuleAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: LifecyclePolicyRuleAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setAppliedRulePriority(value: LifecyclePolicyRulePriority): Self = StObject.set(x, "appliedRulePriority", value.asInstanceOf[js.Any])
+    inline def setAppliedRulePriority(value: LifecyclePolicyRulePriority): Self = StObject.set(x, "appliedRulePriority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppliedRulePriorityUndefined: Self = StObject.set(x, "appliedRulePriority", js.undefined)
+    inline def setAppliedRulePriorityUndefined: Self = StObject.set(x, "appliedRulePriority", js.undefined)
     
-    @scala.inline
-    def setImageDigest(value: ImageDigest): Self = StObject.set(x, "imageDigest", value.asInstanceOf[js.Any])
+    inline def setImageDigest(value: ImageDigest): Self = StObject.set(x, "imageDigest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageDigestUndefined: Self = StObject.set(x, "imageDigest", js.undefined)
+    inline def setImageDigestUndefined: Self = StObject.set(x, "imageDigest", js.undefined)
     
-    @scala.inline
-    def setImagePushedAt(value: PushTimestamp): Self = StObject.set(x, "imagePushedAt", value.asInstanceOf[js.Any])
+    inline def setImagePushedAt(value: PushTimestamp): Self = StObject.set(x, "imagePushedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagePushedAtUndefined: Self = StObject.set(x, "imagePushedAt", js.undefined)
+    inline def setImagePushedAtUndefined: Self = StObject.set(x, "imagePushedAt", js.undefined)
     
-    @scala.inline
-    def setImageTags(value: ImageTagList): Self = StObject.set(x, "imageTags", value.asInstanceOf[js.Any])
+    inline def setImageTags(value: ImageTagList): Self = StObject.set(x, "imageTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageTagsUndefined: Self = StObject.set(x, "imageTags", js.undefined)
+    inline def setImageTagsUndefined: Self = StObject.set(x, "imageTags", js.undefined)
     
-    @scala.inline
-    def setImageTagsVarargs(value: ImageTag*): Self = StObject.set(x, "imageTags", js.Array(value :_*))
+    inline def setImageTagsVarargs(value: ImageTag*): Self = StObject.set(x, "imageTags", js.Array(value :_*))
   }
 }

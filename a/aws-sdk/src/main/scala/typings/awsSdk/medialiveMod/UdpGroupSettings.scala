@@ -23,31 +23,23 @@ trait UdpGroupSettings extends StObject {
 }
 object UdpGroupSettings {
   
-  @scala.inline
-  def apply(): UdpGroupSettings = {
+  inline def apply(): UdpGroupSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UdpGroupSettings]
   }
   
-  @scala.inline
-  implicit class UdpGroupSettingsMutableBuilder[Self <: UdpGroupSettings] (val x: Self) extends AnyVal {
+  extension [Self <: UdpGroupSettings](x: Self) {
     
-    @scala.inline
-    def setInputLossAction(value: InputLossActionForUdpOut): Self = StObject.set(x, "InputLossAction", value.asInstanceOf[js.Any])
+    inline def setInputLossAction(value: InputLossActionForUdpOut): Self = StObject.set(x, "InputLossAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputLossActionUndefined: Self = StObject.set(x, "InputLossAction", js.undefined)
+    inline def setInputLossActionUndefined: Self = StObject.set(x, "InputLossAction", js.undefined)
     
-    @scala.inline
-    def setTimedMetadataId3Frame(value: UdpTimedMetadataId3Frame): Self = StObject.set(x, "TimedMetadataId3Frame", value.asInstanceOf[js.Any])
+    inline def setTimedMetadataId3Frame(value: UdpTimedMetadataId3Frame): Self = StObject.set(x, "TimedMetadataId3Frame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimedMetadataId3FrameUndefined: Self = StObject.set(x, "TimedMetadataId3Frame", js.undefined)
+    inline def setTimedMetadataId3FrameUndefined: Self = StObject.set(x, "TimedMetadataId3Frame", js.undefined)
     
-    @scala.inline
-    def setTimedMetadataId3Period(value: integerMin0): Self = StObject.set(x, "TimedMetadataId3Period", value.asInstanceOf[js.Any])
+    inline def setTimedMetadataId3Period(value: integerMin0): Self = StObject.set(x, "TimedMetadataId3Period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimedMetadataId3PeriodUndefined: Self = StObject.set(x, "TimedMetadataId3Period", js.undefined)
+    inline def setTimedMetadataId3PeriodUndefined: Self = StObject.set(x, "TimedMetadataId3Period", js.undefined)
   }
 }

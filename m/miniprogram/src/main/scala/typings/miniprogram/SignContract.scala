@@ -13,16 +13,13 @@ trait SignContract
 }
 object SignContract {
   
-  @scala.inline
-  def apply(signStr: String): SignContract = {
+  inline def apply(signStr: String): SignContract = {
     val __obj = js.Dynamic.literal(signStr = signStr.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignContract]
   }
   
-  @scala.inline
-  implicit class SignContractMutableBuilder[Self <: SignContract] (val x: Self) extends AnyVal {
+  extension [Self <: SignContract](x: Self) {
     
-    @scala.inline
-    def setSignStr(value: String): Self = StObject.set(x, "signStr", value.asInstanceOf[js.Any])
+    inline def setSignStr(value: String): Self = StObject.set(x, "signStr", value.asInstanceOf[js.Any])
   }
 }

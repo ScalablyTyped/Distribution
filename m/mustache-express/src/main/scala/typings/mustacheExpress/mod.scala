@@ -7,14 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): ExpessEngine = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ExpessEngine]
-  @scala.inline
-  def apply(partialsPath: String): ExpessEngine = ^.asInstanceOf[js.Dynamic].apply(partialsPath.asInstanceOf[js.Any]).asInstanceOf[ExpessEngine]
-  @scala.inline
-  def apply(partialsPath: String, partialsExt: String): ExpessEngine = (^.asInstanceOf[js.Dynamic].apply(partialsPath.asInstanceOf[js.Any], partialsExt.asInstanceOf[js.Any])).asInstanceOf[ExpessEngine]
-  @scala.inline
-  def apply(partialsPath: Unit, partialsExt: String): ExpessEngine = (^.asInstanceOf[js.Dynamic].apply(partialsPath.asInstanceOf[js.Any], partialsExt.asInstanceOf[js.Any])).asInstanceOf[ExpessEngine]
+  inline def apply(): ExpessEngine = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ExpessEngine]
+  inline def apply(partialsPath: String): ExpessEngine = ^.asInstanceOf[js.Dynamic].apply(partialsPath.asInstanceOf[js.Any]).asInstanceOf[ExpessEngine]
+  inline def apply(partialsPath: String, partialsExt: String): ExpessEngine = (^.asInstanceOf[js.Dynamic].apply(partialsPath.asInstanceOf[js.Any], partialsExt.asInstanceOf[js.Any])).asInstanceOf[ExpessEngine]
+  inline def apply(partialsPath: Unit, partialsExt: String): ExpessEngine = (^.asInstanceOf[js.Dynamic].apply(partialsPath.asInstanceOf[js.Any], partialsExt.asInstanceOf[js.Any])).asInstanceOf[ExpessEngine]
   
   @JSImport("mustache-express", JSImport.Namespace)
   @js.native

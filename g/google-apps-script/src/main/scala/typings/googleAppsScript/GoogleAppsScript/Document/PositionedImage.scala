@@ -58,8 +58,7 @@ trait PositionedImage extends StObject {
 }
 object PositionedImage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getAs: String => Blob,
     getBlob: () => Blob,
     getHeight: () => Integer,
@@ -79,49 +78,34 @@ object PositionedImage {
     __obj.asInstanceOf[PositionedImage]
   }
   
-  @scala.inline
-  implicit class PositionedImageMutableBuilder[Self <: PositionedImage] (val x: Self) extends AnyVal {
+  extension [Self <: PositionedImage](x: Self) {
     
-    @scala.inline
-    def setGetAs(value: String => Blob): Self = StObject.set(x, "getAs", js.Any.fromFunction1(value))
+    inline def setGetAs(value: String => Blob): Self = StObject.set(x, "getAs", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetBlob(value: () => Blob): Self = StObject.set(x, "getBlob", js.Any.fromFunction0(value))
+    inline def setGetBlob(value: () => Blob): Self = StObject.set(x, "getBlob", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHeight(value: () => Integer): Self = StObject.set(x, "getHeight", js.Any.fromFunction0(value))
+    inline def setGetHeight(value: () => Integer): Self = StObject.set(x, "getHeight", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+    inline def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLayout(value: () => PositionedLayout): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
+    inline def setGetLayout(value: () => PositionedLayout): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLeftOffset(value: () => Double): Self = StObject.set(x, "getLeftOffset", js.Any.fromFunction0(value))
+    inline def setGetLeftOffset(value: () => Double): Self = StObject.set(x, "getLeftOffset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetParagraph(value: () => Paragraph): Self = StObject.set(x, "getParagraph", js.Any.fromFunction0(value))
+    inline def setGetParagraph(value: () => Paragraph): Self = StObject.set(x, "getParagraph", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTopOffset(value: () => Double): Self = StObject.set(x, "getTopOffset", js.Any.fromFunction0(value))
+    inline def setGetTopOffset(value: () => Double): Self = StObject.set(x, "getTopOffset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWidth(value: () => Integer): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
+    inline def setGetWidth(value: () => Integer): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetHeight(value: Integer => PositionedImage): Self = StObject.set(x, "setHeight", js.Any.fromFunction1(value))
+    inline def setSetHeight(value: Integer => PositionedImage): Self = StObject.set(x, "setHeight", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLayout(value: PositionedLayout => PositionedImage): Self = StObject.set(x, "setLayout", js.Any.fromFunction1(value))
+    inline def setSetLayout(value: PositionedLayout => PositionedImage): Self = StObject.set(x, "setLayout", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLeftOffset(value: Double => PositionedImage): Self = StObject.set(x, "setLeftOffset", js.Any.fromFunction1(value))
+    inline def setSetLeftOffset(value: Double => PositionedImage): Self = StObject.set(x, "setLeftOffset", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTopOffset(value: Double => PositionedImage): Self = StObject.set(x, "setTopOffset", js.Any.fromFunction1(value))
+    inline def setSetTopOffset(value: Double => PositionedImage): Self = StObject.set(x, "setTopOffset", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetWidth(value: Integer => PositionedImage): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
+    inline def setSetWidth(value: Integer => PositionedImage): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
   }
 }

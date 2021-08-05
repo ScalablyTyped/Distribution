@@ -139,11 +139,9 @@ object FieldOptions {
     /* 1 */ val JS_STRING: typings.googleProtobuf.descriptorPbMod.FieldOptions.JSType.JS_STRING & Double = js.native
   }
   
-  @scala.inline
-  def deserializeBinary(bytes: Uint8Array): FieldOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[FieldOptions]
+  inline def deserializeBinary(bytes: Uint8Array): FieldOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[FieldOptions]
   
-  @scala.inline
-  def deserializeBinaryFromReader(message: FieldOptions, reader: BinaryReader): FieldOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[FieldOptions]
+  inline def deserializeBinaryFromReader(message: FieldOptions, reader: BinaryReader): FieldOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[FieldOptions]
   
   @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FieldOptions.extensions")
   @js.native
@@ -152,17 +150,13 @@ object FieldOptions {
   @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FieldOptions.extensionsBinary")
   @js.native
   def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-  @scala.inline
-  def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+  inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+  inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def serializeBinaryToWriter(message: FieldOptions, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serializeBinaryToWriter(message: FieldOptions, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def toObject(includeInstance: Boolean, msg: FieldOptions): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+  inline def toObject(includeInstance: Boolean, msg: FieldOptions): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
   trait AsObject extends StObject {
     
@@ -182,58 +176,42 @@ object FieldOptions {
   }
   object AsObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       uninterpretedOptionList: js.Array[typings.googleProtobuf.descriptorPbMod.UninterpretedOption.AsObject]
     ): AsObject = {
       val __obj = js.Dynamic.literal(uninterpretedOptionList = uninterpretedOptionList.asInstanceOf[js.Any])
       __obj.asInstanceOf[AsObject]
     }
     
-    @scala.inline
-    implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+    extension [Self <: AsObject](x: Self) {
       
-      @scala.inline
-      def setCtype(value: CType): Self = StObject.set(x, "ctype", value.asInstanceOf[js.Any])
+      inline def setCtype(value: CType): Self = StObject.set(x, "ctype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCtypeUndefined: Self = StObject.set(x, "ctype", js.undefined)
+      inline def setCtypeUndefined: Self = StObject.set(x, "ctype", js.undefined)
       
-      @scala.inline
-      def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
+      inline def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
+      inline def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
       
-      @scala.inline
-      def setJstype(value: JSType): Self = StObject.set(x, "jstype", value.asInstanceOf[js.Any])
+      inline def setJstype(value: JSType): Self = StObject.set(x, "jstype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJstypeUndefined: Self = StObject.set(x, "jstype", js.undefined)
+      inline def setJstypeUndefined: Self = StObject.set(x, "jstype", js.undefined)
       
-      @scala.inline
-      def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
+      inline def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
+      inline def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
       
-      @scala.inline
-      def setPacked(value: Boolean): Self = StObject.set(x, "packed", value.asInstanceOf[js.Any])
+      inline def setPacked(value: Boolean): Self = StObject.set(x, "packed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackedUndefined: Self = StObject.set(x, "packed", js.undefined)
+      inline def setPackedUndefined: Self = StObject.set(x, "packed", js.undefined)
       
-      @scala.inline
-      def setUninterpretedOptionList(value: js.Array[typings.googleProtobuf.descriptorPbMod.UninterpretedOption.AsObject]): Self = StObject.set(x, "uninterpretedOptionList", value.asInstanceOf[js.Any])
+      inline def setUninterpretedOptionList(value: js.Array[typings.googleProtobuf.descriptorPbMod.UninterpretedOption.AsObject]): Self = StObject.set(x, "uninterpretedOptionList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUninterpretedOptionListVarargs(value: typings.googleProtobuf.descriptorPbMod.UninterpretedOption.AsObject*): Self = StObject.set(x, "uninterpretedOptionList", js.Array(value :_*))
+      inline def setUninterpretedOptionListVarargs(value: typings.googleProtobuf.descriptorPbMod.UninterpretedOption.AsObject*): Self = StObject.set(x, "uninterpretedOptionList", js.Array(value :_*))
       
-      @scala.inline
-      def setWeak(value: Boolean): Self = StObject.set(x, "weak", value.asInstanceOf[js.Any])
+      inline def setWeak(value: Boolean): Self = StObject.set(x, "weak", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeakUndefined: Self = StObject.set(x, "weak", js.undefined)
+      inline def setWeakUndefined: Self = StObject.set(x, "weak", js.undefined)
     }
   }
 }

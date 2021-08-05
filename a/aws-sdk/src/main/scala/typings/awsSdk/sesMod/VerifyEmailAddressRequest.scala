@@ -13,16 +13,13 @@ trait VerifyEmailAddressRequest extends StObject {
 }
 object VerifyEmailAddressRequest {
   
-  @scala.inline
-  def apply(EmailAddress: Address): VerifyEmailAddressRequest = {
+  inline def apply(EmailAddress: Address): VerifyEmailAddressRequest = {
     val __obj = js.Dynamic.literal(EmailAddress = EmailAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[VerifyEmailAddressRequest]
   }
   
-  @scala.inline
-  implicit class VerifyEmailAddressRequestMutableBuilder[Self <: VerifyEmailAddressRequest] (val x: Self) extends AnyVal {
+  extension [Self <: VerifyEmailAddressRequest](x: Self) {
     
-    @scala.inline
-    def setEmailAddress(value: Address): Self = StObject.set(x, "EmailAddress", value.asInstanceOf[js.Any])
+    inline def setEmailAddress(value: Address): Self = StObject.set(x, "EmailAddress", value.asInstanceOf[js.Any])
   }
 }

@@ -9,7 +9,7 @@ trait SolutionObject extends StObject {
   
   val DOM: IXMLDOMDocument
   
-  @JSName("InfoPath.SolutionObject_typekey")
+  /* private */ @JSName("InfoPath.SolutionObject_typekey")
   var InfoPathDotSolutionObject_typekey: SolutionObject
   
   val PackageURL: String
@@ -20,8 +20,7 @@ trait SolutionObject extends StObject {
 }
 object SolutionObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DOM: IXMLDOMDocument,
     InfoPathDotSolutionObject_typekey: SolutionObject,
     PackageURL: String,
@@ -33,22 +32,16 @@ object SolutionObject {
     __obj.asInstanceOf[SolutionObject]
   }
   
-  @scala.inline
-  implicit class SolutionObjectMutableBuilder[Self <: SolutionObject] (val x: Self) extends AnyVal {
+  extension [Self <: SolutionObject](x: Self) {
     
-    @scala.inline
-    def setDOM(value: IXMLDOMDocument): Self = StObject.set(x, "DOM", value.asInstanceOf[js.Any])
+    inline def setDOM(value: IXMLDOMDocument): Self = StObject.set(x, "DOM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoPathDotSolutionObject_typekey(value: SolutionObject): Self = StObject.set(x, "InfoPath.SolutionObject_typekey", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotSolutionObject_typekey(value: SolutionObject): Self = StObject.set(x, "InfoPath.SolutionObject_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageURL(value: String): Self = StObject.set(x, "PackageURL", value.asInstanceOf[js.Any])
+    inline def setPackageURL(value: String): Self = StObject.set(x, "PackageURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setURI(value: String): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+    inline def setURI(value: String): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
   }
 }

@@ -25,25 +25,19 @@ trait ConfirmPaymentIntentWithoutElementsOptions
 }
 object ConfirmPaymentIntentWithoutElementsOptions {
   
-  @scala.inline
-  def apply(): ConfirmPaymentIntentWithoutElementsOptions = {
+  inline def apply(): ConfirmPaymentIntentWithoutElementsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfirmPaymentIntentWithoutElementsOptions]
   }
   
-  @scala.inline
-  implicit class ConfirmPaymentIntentWithoutElementsOptionsMutableBuilder[Self <: ConfirmPaymentIntentWithoutElementsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ConfirmPaymentIntentWithoutElementsOptions](x: Self) {
     
-    @scala.inline
-    def setPayment_method(value: String): Self = StObject.set(x, "payment_method", value.asInstanceOf[js.Any])
+    inline def setPayment_method(value: String): Self = StObject.set(x, "payment_method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayment_methodUndefined: Self = StObject.set(x, "payment_method", js.undefined)
+    inline def setPayment_methodUndefined: Self = StObject.set(x, "payment_method", js.undefined)
     
-    @scala.inline
-    def setPayment_method_data(value: BillingdetailsCard): Self = StObject.set(x, "payment_method_data", value.asInstanceOf[js.Any])
+    inline def setPayment_method_data(value: BillingdetailsCard): Self = StObject.set(x, "payment_method_data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayment_method_dataUndefined: Self = StObject.set(x, "payment_method_data", js.undefined)
+    inline def setPayment_method_dataUndefined: Self = StObject.set(x, "payment_method_data", js.undefined)
   }
 }

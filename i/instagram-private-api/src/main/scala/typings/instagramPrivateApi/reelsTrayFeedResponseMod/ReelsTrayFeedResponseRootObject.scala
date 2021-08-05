@@ -24,8 +24,7 @@ trait ReelsTrayFeedResponseRootObject extends StObject {
 }
 object ReelsTrayFeedResponseRootObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     broadcasts: js.Array[ReelsTrayFeedResponseBroadcastsItem],
     face_filter_nux_version: Double,
     has_new_nux_story: Boolean,
@@ -39,37 +38,26 @@ object ReelsTrayFeedResponseRootObject {
     __obj.asInstanceOf[ReelsTrayFeedResponseRootObject]
   }
   
-  @scala.inline
-  implicit class ReelsTrayFeedResponseRootObjectMutableBuilder[Self <: ReelsTrayFeedResponseRootObject] (val x: Self) extends AnyVal {
+  extension [Self <: ReelsTrayFeedResponseRootObject](x: Self) {
     
-    @scala.inline
-    def setBroadcasts(value: js.Array[ReelsTrayFeedResponseBroadcastsItem]): Self = StObject.set(x, "broadcasts", value.asInstanceOf[js.Any])
+    inline def setBroadcasts(value: js.Array[ReelsTrayFeedResponseBroadcastsItem]): Self = StObject.set(x, "broadcasts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBroadcastsVarargs(value: ReelsTrayFeedResponseBroadcastsItem*): Self = StObject.set(x, "broadcasts", js.Array(value :_*))
+    inline def setBroadcastsVarargs(value: ReelsTrayFeedResponseBroadcastsItem*): Self = StObject.set(x, "broadcasts", js.Array(value :_*))
     
-    @scala.inline
-    def setFace_filter_nux_version(value: Double): Self = StObject.set(x, "face_filter_nux_version", value.asInstanceOf[js.Any])
+    inline def setFace_filter_nux_version(value: Double): Self = StObject.set(x, "face_filter_nux_version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHas_new_nux_story(value: Boolean): Self = StObject.set(x, "has_new_nux_story", value.asInstanceOf[js.Any])
+    inline def setHas_new_nux_story(value: Boolean): Self = StObject.set(x, "has_new_nux_story", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSticker_version(value: Double): Self = StObject.set(x, "sticker_version", value.asInstanceOf[js.Any])
+    inline def setSticker_version(value: Double): Self = StObject.set(x, "sticker_version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStories_viewer_gestures_nux_eligible(value: Boolean): Self = StObject.set(x, "stories_viewer_gestures_nux_eligible", value.asInstanceOf[js.Any])
+    inline def setStories_viewer_gestures_nux_eligible(value: Boolean): Self = StObject.set(x, "stories_viewer_gestures_nux_eligible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStory_ranking_token(value: String): Self = StObject.set(x, "story_ranking_token", value.asInstanceOf[js.Any])
+    inline def setStory_ranking_token(value: String): Self = StObject.set(x, "story_ranking_token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTray(value: js.Array[ReelsTrayFeedResponseTrayItem]): Self = StObject.set(x, "tray", value.asInstanceOf[js.Any])
+    inline def setTray(value: js.Array[ReelsTrayFeedResponseTrayItem]): Self = StObject.set(x, "tray", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrayVarargs(value: ReelsTrayFeedResponseTrayItem*): Self = StObject.set(x, "tray", js.Array(value :_*))
+    inline def setTrayVarargs(value: ReelsTrayFeedResponseTrayItem*): Self = StObject.set(x, "tray", js.Array(value :_*))
   }
 }

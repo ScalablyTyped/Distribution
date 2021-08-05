@@ -83,50 +83,36 @@ object mousePositionMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setCoordinateFormat(value: /* p0 */ js.UndefOr[Coordinate] => String): Self = StObject.set(x, "coordinateFormat", js.Any.fromFunction1(value))
+      inline def setCoordinateFormat(value: /* p0 */ js.UndefOr[Coordinate] => String): Self = StObject.set(x, "coordinateFormat", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCoordinateFormatUndefined: Self = StObject.set(x, "coordinateFormat", js.undefined)
+      inline def setCoordinateFormatUndefined: Self = StObject.set(x, "coordinateFormat", js.undefined)
       
-      @scala.inline
-      def setProjection(value: ProjectionLike): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+      inline def setProjection(value: ProjectionLike): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+      inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
       
-      @scala.inline
-      def setRender(value: /* p0 */ typings.ol.mapEventMod.default => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      inline def setRender(value: /* p0 */ typings.ol.mapEventMod.default => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+      inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       
-      @scala.inline
-      def setTarget(value: HTMLElement | String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: HTMLElement | String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      @scala.inline
-      def setUndefinedHTML(value: String): Self = StObject.set(x, "undefinedHTML", value.asInstanceOf[js.Any])
+      inline def setUndefinedHTML(value: String): Self = StObject.set(x, "undefinedHTML", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUndefinedHTMLUndefined: Self = StObject.set(x, "undefinedHTML", js.undefined)
+      inline def setUndefinedHTMLUndefined: Self = StObject.set(x, "undefinedHTML", js.undefined)
     }
   }
 }

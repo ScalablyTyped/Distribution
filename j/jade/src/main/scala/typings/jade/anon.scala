@@ -19,23 +19,18 @@ object anon {
   }
   object Body {
     
-    @scala.inline
-    def apply(body: /* locals */ js.UndefOr[TemplateLocals] => String, dependencies: js.Array[String]): Body = {
+    inline def apply(body: /* locals */ js.UndefOr[TemplateLocals] => String, dependencies: js.Array[String]): Body = {
       val __obj = js.Dynamic.literal(body = js.Any.fromFunction1(body), dependencies = dependencies.asInstanceOf[js.Any])
       __obj.asInstanceOf[Body]
     }
     
-    @scala.inline
-    implicit class BodyMutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
+    extension [Self <: Body](x: Self) {
       
-      @scala.inline
-      def setBody(value: /* locals */ js.UndefOr[TemplateLocals] => String): Self = StObject.set(x, "body", js.Any.fromFunction1(value))
+      inline def setBody(value: /* locals */ js.UndefOr[TemplateLocals] => String): Self = StObject.set(x, "body", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDependencies(value: js.Array[String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+      inline def setDependencies(value: js.Array[String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
+      inline def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
     }
   }
 }

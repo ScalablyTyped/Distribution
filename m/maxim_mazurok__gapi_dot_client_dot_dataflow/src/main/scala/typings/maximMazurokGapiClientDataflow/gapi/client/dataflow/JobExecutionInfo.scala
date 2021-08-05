@@ -16,23 +16,19 @@ trait JobExecutionInfo extends StObject {
 }
 object JobExecutionInfo {
   
-  @scala.inline
-  def apply(): JobExecutionInfo = {
+  inline def apply(): JobExecutionInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobExecutionInfo]
   }
   
-  @scala.inline
-  implicit class JobExecutionInfoMutableBuilder[Self <: JobExecutionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: JobExecutionInfo](x: Self) {
     
-    @scala.inline
-    def setStages(
+    inline def setStages(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.dataflow.gapi.client.dataflow.JobExecutionStageInfo}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.JobExecutionInfo & TopLevel[js.Any]
     ): Self = StObject.set(x, "stages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStagesUndefined: Self = StObject.set(x, "stages", js.undefined)
+    inline def setStagesUndefined: Self = StObject.set(x, "stages", js.undefined)
   }
 }

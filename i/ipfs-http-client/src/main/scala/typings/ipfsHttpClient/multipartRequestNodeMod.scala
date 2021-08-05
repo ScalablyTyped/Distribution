@@ -16,18 +16,12 @@ object multipartRequestNodeMod {
     * @param {Headers|Record<string, string>} [headers]
     * @param {string} [boundary]
     */
-  @scala.inline
-  def apply(source: js.Any, abortController: AbortController): js.Promise[Headers] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], abortController.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Headers]]
-  @scala.inline
-  def apply(source: js.Any, abortController: AbortController, headers: Unit, boundary: String): js.Promise[Headers] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], abortController.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], boundary.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Headers]]
-  @scala.inline
-  def apply(source: js.Any, abortController: AbortController, headers: typings.std.Headers): js.Promise[Headers] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], abortController.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Headers]]
-  @scala.inline
-  def apply(source: js.Any, abortController: AbortController, headers: typings.std.Headers, boundary: String): js.Promise[Headers] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], abortController.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], boundary.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Headers]]
-  @scala.inline
-  def apply(source: js.Any, abortController: AbortController, headers: Record[String, String]): js.Promise[Headers] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], abortController.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Headers]]
-  @scala.inline
-  def apply(
+  inline def apply(source: js.Any, abortController: AbortController): js.Promise[Headers] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], abortController.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Headers]]
+  inline def apply(source: js.Any, abortController: AbortController, headers: Unit, boundary: String): js.Promise[Headers] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], abortController.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], boundary.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Headers]]
+  inline def apply(source: js.Any, abortController: AbortController, headers: typings.std.Headers): js.Promise[Headers] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], abortController.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Headers]]
+  inline def apply(source: js.Any, abortController: AbortController, headers: typings.std.Headers, boundary: String): js.Promise[Headers] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], abortController.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], boundary.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Headers]]
+  inline def apply(source: js.Any, abortController: AbortController, headers: Record[String, String]): js.Promise[Headers] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], abortController.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Headers]]
+  inline def apply(
     source: js.Any,
     abortController: AbortController,
     headers: Record[String, String],

@@ -28,40 +28,29 @@ trait AnalyzeDocumentResponse extends StObject {
 }
 object AnalyzeDocumentResponse {
   
-  @scala.inline
-  def apply(): AnalyzeDocumentResponse = {
+  inline def apply(): AnalyzeDocumentResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnalyzeDocumentResponse]
   }
   
-  @scala.inline
-  implicit class AnalyzeDocumentResponseMutableBuilder[Self <: AnalyzeDocumentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AnalyzeDocumentResponse](x: Self) {
     
-    @scala.inline
-    def setAnalyzeDocumentModelVersion(value: String): Self = StObject.set(x, "AnalyzeDocumentModelVersion", value.asInstanceOf[js.Any])
+    inline def setAnalyzeDocumentModelVersion(value: String): Self = StObject.set(x, "AnalyzeDocumentModelVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnalyzeDocumentModelVersionUndefined: Self = StObject.set(x, "AnalyzeDocumentModelVersion", js.undefined)
+    inline def setAnalyzeDocumentModelVersionUndefined: Self = StObject.set(x, "AnalyzeDocumentModelVersion", js.undefined)
     
-    @scala.inline
-    def setBlocks(value: BlockList): Self = StObject.set(x, "Blocks", value.asInstanceOf[js.Any])
+    inline def setBlocks(value: BlockList): Self = StObject.set(x, "Blocks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlocksUndefined: Self = StObject.set(x, "Blocks", js.undefined)
+    inline def setBlocksUndefined: Self = StObject.set(x, "Blocks", js.undefined)
     
-    @scala.inline
-    def setBlocksVarargs(value: Block*): Self = StObject.set(x, "Blocks", js.Array(value :_*))
+    inline def setBlocksVarargs(value: Block*): Self = StObject.set(x, "Blocks", js.Array(value :_*))
     
-    @scala.inline
-    def setDocumentMetadata(value: DocumentMetadata): Self = StObject.set(x, "DocumentMetadata", value.asInstanceOf[js.Any])
+    inline def setDocumentMetadata(value: DocumentMetadata): Self = StObject.set(x, "DocumentMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentMetadataUndefined: Self = StObject.set(x, "DocumentMetadata", js.undefined)
+    inline def setDocumentMetadataUndefined: Self = StObject.set(x, "DocumentMetadata", js.undefined)
     
-    @scala.inline
-    def setHumanLoopActivationOutput(value: HumanLoopActivationOutput): Self = StObject.set(x, "HumanLoopActivationOutput", value.asInstanceOf[js.Any])
+    inline def setHumanLoopActivationOutput(value: HumanLoopActivationOutput): Self = StObject.set(x, "HumanLoopActivationOutput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHumanLoopActivationOutputUndefined: Self = StObject.set(x, "HumanLoopActivationOutput", js.undefined)
+    inline def setHumanLoopActivationOutputUndefined: Self = StObject.set(x, "HumanLoopActivationOutput", js.undefined)
   }
 }

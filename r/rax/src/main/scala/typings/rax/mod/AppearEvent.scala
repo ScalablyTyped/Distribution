@@ -15,8 +15,7 @@ trait AppearEvent[T]
 }
 object AppearEvent {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     bubbles: Boolean,
     cancelable: Boolean,
     currentTarget: EventTarget & T,
@@ -39,10 +38,8 @@ object AppearEvent {
     __obj.asInstanceOf[AppearEvent[T]]
   }
   
-  @scala.inline
-  implicit class AppearEventMutableBuilder[Self <: AppearEvent[?], T] (val x: Self & AppearEvent[T]) extends AnyVal {
+  extension [Self <: AppearEvent[?], T](x: Self & AppearEvent[T]) {
     
-    @scala.inline
-    def setDirection(value: up | down): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: up | down): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
   }
 }

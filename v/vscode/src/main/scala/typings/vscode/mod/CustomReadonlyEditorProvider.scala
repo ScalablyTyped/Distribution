@@ -46,8 +46,7 @@ trait CustomReadonlyEditorProvider[T /* <: CustomDocument */] extends StObject {
 }
 object CustomReadonlyEditorProvider {
   
-  @scala.inline
-  def apply[T /* <: CustomDocument */](
+  inline def apply[T /* <: CustomDocument */](
     openCustomDocument: (Uri, CustomDocumentOpenContext, CancellationToken) => Thenable[T] | T,
     resolveCustomEditor: (T, WebviewPanel, CancellationToken) => Thenable[Unit] | Unit
   ): CustomReadonlyEditorProvider[T] = {
@@ -55,13 +54,10 @@ object CustomReadonlyEditorProvider {
     __obj.asInstanceOf[CustomReadonlyEditorProvider[T]]
   }
   
-  @scala.inline
-  implicit class CustomReadonlyEditorProviderMutableBuilder[Self <: CustomReadonlyEditorProvider[?], T /* <: CustomDocument */] (val x: Self & CustomReadonlyEditorProvider[T]) extends AnyVal {
+  extension [Self <: CustomReadonlyEditorProvider[?], T /* <: CustomDocument */](x: Self & CustomReadonlyEditorProvider[T]) {
     
-    @scala.inline
-    def setOpenCustomDocument(value: (Uri, CustomDocumentOpenContext, CancellationToken) => Thenable[T] | T): Self = StObject.set(x, "openCustomDocument", js.Any.fromFunction3(value))
+    inline def setOpenCustomDocument(value: (Uri, CustomDocumentOpenContext, CancellationToken) => Thenable[T] | T): Self = StObject.set(x, "openCustomDocument", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setResolveCustomEditor(value: (T, WebviewPanel, CancellationToken) => Thenable[Unit] | Unit): Self = StObject.set(x, "resolveCustomEditor", js.Any.fromFunction3(value))
+    inline def setResolveCustomEditor(value: (T, WebviewPanel, CancellationToken) => Thenable[Unit] | Unit): Self = StObject.set(x, "resolveCustomEditor", js.Any.fromFunction3(value))
   }
 }

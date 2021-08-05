@@ -25,8 +25,7 @@ object pickerMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def Item(_props: IItemProps): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Item")(_props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def Item(_props: IItemProps): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Item")(_props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   trait IPickerProp extends StObject {
@@ -39,8 +38,7 @@ object pickerMod {
   }
   object IPickerProp {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       computeChildIndex: /* repeated */ js.Any => Double,
       doScrollingComplete: /* repeated */ js.Any => Unit,
       select: /* repeated */ js.Any => Unit
@@ -49,17 +47,13 @@ object pickerMod {
       __obj.asInstanceOf[IPickerProp]
     }
     
-    @scala.inline
-    implicit class IPickerPropMutableBuilder[Self <: IPickerProp] (val x: Self) extends AnyVal {
+    extension [Self <: IPickerProp](x: Self) {
       
-      @scala.inline
-      def setComputeChildIndex(value: /* repeated */ js.Any => Double): Self = StObject.set(x, "computeChildIndex", js.Any.fromFunction1(value))
+      inline def setComputeChildIndex(value: /* repeated */ js.Any => Double): Self = StObject.set(x, "computeChildIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDoScrollingComplete(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "doScrollingComplete", js.Any.fromFunction1(value))
+      inline def setDoScrollingComplete(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "doScrollingComplete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSelect(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+      inline def setSelect(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
     }
   }
 }

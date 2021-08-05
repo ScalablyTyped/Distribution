@@ -13,16 +13,13 @@ trait UpdatePullRequestDescriptionOutput extends StObject {
 }
 object UpdatePullRequestDescriptionOutput {
   
-  @scala.inline
-  def apply(pullRequest: PullRequest): UpdatePullRequestDescriptionOutput = {
+  inline def apply(pullRequest: PullRequest): UpdatePullRequestDescriptionOutput = {
     val __obj = js.Dynamic.literal(pullRequest = pullRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdatePullRequestDescriptionOutput]
   }
   
-  @scala.inline
-  implicit class UpdatePullRequestDescriptionOutputMutableBuilder[Self <: UpdatePullRequestDescriptionOutput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdatePullRequestDescriptionOutput](x: Self) {
     
-    @scala.inline
-    def setPullRequest(value: PullRequest): Self = StObject.set(x, "pullRequest", value.asInstanceOf[js.Any])
+    inline def setPullRequest(value: PullRequest): Self = StObject.set(x, "pullRequest", value.asInstanceOf[js.Any])
   }
 }

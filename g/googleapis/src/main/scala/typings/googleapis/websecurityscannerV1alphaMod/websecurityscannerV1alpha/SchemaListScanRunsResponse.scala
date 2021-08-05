@@ -22,28 +22,21 @@ trait SchemaListScanRunsResponse extends StObject {
 }
 object SchemaListScanRunsResponse {
   
-  @scala.inline
-  def apply(): SchemaListScanRunsResponse = {
+  inline def apply(): SchemaListScanRunsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListScanRunsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListScanRunsResponseMutableBuilder[Self <: SchemaListScanRunsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListScanRunsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setScanRuns(value: js.Array[SchemaScanRun]): Self = StObject.set(x, "scanRuns", value.asInstanceOf[js.Any])
+    inline def setScanRuns(value: js.Array[SchemaScanRun]): Self = StObject.set(x, "scanRuns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScanRunsUndefined: Self = StObject.set(x, "scanRuns", js.undefined)
+    inline def setScanRunsUndefined: Self = StObject.set(x, "scanRuns", js.undefined)
     
-    @scala.inline
-    def setScanRunsVarargs(value: SchemaScanRun*): Self = StObject.set(x, "scanRuns", js.Array(value :_*))
+    inline def setScanRunsVarargs(value: SchemaScanRun*): Self = StObject.set(x, "scanRuns", js.Array(value :_*))
   }
 }

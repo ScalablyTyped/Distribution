@@ -19,8 +19,7 @@ trait ReposGetCommunityProfileMetricsResponseData extends StObject {
 }
 object ReposGetCommunityProfileMetricsResponseData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     description: String,
     documentation: Boolean,
     files: Codeofconduct,
@@ -31,22 +30,16 @@ object ReposGetCommunityProfileMetricsResponseData {
     __obj.asInstanceOf[ReposGetCommunityProfileMetricsResponseData]
   }
   
-  @scala.inline
-  implicit class ReposGetCommunityProfileMetricsResponseDataMutableBuilder[Self <: ReposGetCommunityProfileMetricsResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: ReposGetCommunityProfileMetricsResponseData](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentation(value: Boolean): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
+    inline def setDocumentation(value: Boolean): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiles(value: Codeofconduct): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: Codeofconduct): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealth_percentage(value: Double): Self = StObject.set(x, "health_percentage", value.asInstanceOf[js.Any])
+    inline def setHealth_percentage(value: Double): Self = StObject.set(x, "health_percentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
+    inline def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
   }
 }

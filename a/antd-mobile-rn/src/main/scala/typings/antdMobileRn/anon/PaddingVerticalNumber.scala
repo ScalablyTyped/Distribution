@@ -10,16 +10,13 @@ trait PaddingVerticalNumber extends StObject {
 }
 object PaddingVerticalNumber {
   
-  @scala.inline
-  def apply(paddingVertical: Double): PaddingVerticalNumber = {
+  inline def apply(paddingVertical: Double): PaddingVerticalNumber = {
     val __obj = js.Dynamic.literal(paddingVertical = paddingVertical.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaddingVerticalNumber]
   }
   
-  @scala.inline
-  implicit class PaddingVerticalNumberMutableBuilder[Self <: PaddingVerticalNumber] (val x: Self) extends AnyVal {
+  extension [Self <: PaddingVerticalNumber](x: Self) {
     
-    @scala.inline
-    def setPaddingVertical(value: Double): Self = StObject.set(x, "paddingVertical", value.asInstanceOf[js.Any])
+    inline def setPaddingVertical(value: Double): Self = StObject.set(x, "paddingVertical", value.asInstanceOf[js.Any])
   }
 }

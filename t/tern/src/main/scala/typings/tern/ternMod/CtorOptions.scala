@@ -23,40 +23,29 @@ trait CtorOptions extends StObject {
 }
 object CtorOptions {
   
-  @scala.inline
-  def apply(): CtorOptions = {
+  inline def apply(): CtorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CtorOptions]
   }
   
-  @scala.inline
-  implicit class CtorOptionsMutableBuilder[Self <: CtorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CtorOptions](x: Self) {
     
-    @scala.inline
-    def setDefs(value: js.Array[Def]): Self = StObject.set(x, "defs", value.asInstanceOf[js.Any])
+    inline def setDefs(value: js.Array[Def]): Self = StObject.set(x, "defs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefsUndefined: Self = StObject.set(x, "defs", js.undefined)
+    inline def setDefsUndefined: Self = StObject.set(x, "defs", js.undefined)
     
-    @scala.inline
-    def setDefsVarargs(value: Def*): Self = StObject.set(x, "defs", js.Array(value :_*))
+    inline def setDefsVarargs(value: Def*): Self = StObject.set(x, "defs", js.Array(value :_*))
     
-    @scala.inline
-    def setEcmaVersion(value: `5` | `6`): Self = StObject.set(x, "ecmaVersion", value.asInstanceOf[js.Any])
+    inline def setEcmaVersion(value: `5` | `6`): Self = StObject.set(x, "ecmaVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEcmaVersionUndefined: Self = StObject.set(x, "ecmaVersion", js.undefined)
+    inline def setEcmaVersionUndefined: Self = StObject.set(x, "ecmaVersion", js.undefined)
     
-    @scala.inline
-    def setFetchTimeout(value: Double): Self = StObject.set(x, "fetchTimeout", value.asInstanceOf[js.Any])
+    inline def setFetchTimeout(value: Double): Self = StObject.set(x, "fetchTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFetchTimeoutUndefined: Self = StObject.set(x, "fetchTimeout", js.undefined)
+    inline def setFetchTimeoutUndefined: Self = StObject.set(x, "fetchTimeout", js.undefined)
     
-    @scala.inline
-    def setPlugins(value: StringDictionary[js.Object]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    inline def setPlugins(value: StringDictionary[js.Object]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+    inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
   }
 }

@@ -23,8 +23,7 @@ trait DDELink
      with XDDELinkResults
 object DDELink {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: String,
     Item: String,
     Name: String,

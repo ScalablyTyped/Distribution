@@ -17,27 +17,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SequentialPluginHooks extends StObject
 object SequentialPluginHooks {
   
-  @scala.inline
-  def augmentChunkHash: typings.rollup.rollupStrings.augmentChunkHash = "augmentChunkHash".asInstanceOf[typings.rollup.rollupStrings.augmentChunkHash]
+  inline def augmentChunkHash: typings.rollup.rollupStrings.augmentChunkHash = "augmentChunkHash".asInstanceOf[typings.rollup.rollupStrings.augmentChunkHash]
   
-  @scala.inline
-  def closeWatcher: typings.rollup.rollupStrings.closeWatcher = "closeWatcher".asInstanceOf[typings.rollup.rollupStrings.closeWatcher]
+  inline def closeWatcher: typings.rollup.rollupStrings.closeWatcher = "closeWatcher".asInstanceOf[typings.rollup.rollupStrings.closeWatcher]
   
-  @scala.inline
-  def generateBundle: typings.rollup.rollupStrings.generateBundle = "generateBundle".asInstanceOf[typings.rollup.rollupStrings.generateBundle]
+  inline def generateBundle: typings.rollup.rollupStrings.generateBundle = "generateBundle".asInstanceOf[typings.rollup.rollupStrings.generateBundle]
   
-  @scala.inline
-  def options: typings.rollup.rollupStrings.options = "options".asInstanceOf[typings.rollup.rollupStrings.options]
+  inline def options: typings.rollup.rollupStrings.options = "options".asInstanceOf[typings.rollup.rollupStrings.options]
   
-  @scala.inline
-  def outputOptions: typings.rollup.rollupStrings.outputOptions = "outputOptions".asInstanceOf[typings.rollup.rollupStrings.outputOptions]
+  inline def outputOptions: typings.rollup.rollupStrings.outputOptions = "outputOptions".asInstanceOf[typings.rollup.rollupStrings.outputOptions]
   
-  @scala.inline
-  def renderChunk: typings.rollup.rollupStrings.renderChunk = "renderChunk".asInstanceOf[typings.rollup.rollupStrings.renderChunk]
+  inline def renderChunk: typings.rollup.rollupStrings.renderChunk = "renderChunk".asInstanceOf[typings.rollup.rollupStrings.renderChunk]
   
-  @scala.inline
-  def transform: typings.rollup.rollupStrings.transform = "transform".asInstanceOf[typings.rollup.rollupStrings.transform]
+  inline def transform: typings.rollup.rollupStrings.transform = "transform".asInstanceOf[typings.rollup.rollupStrings.transform]
   
-  @scala.inline
-  def watchChange: typings.rollup.rollupStrings.watchChange = "watchChange".asInstanceOf[typings.rollup.rollupStrings.watchChange]
+  inline def watchChange: typings.rollup.rollupStrings.watchChange = "watchChange".asInstanceOf[typings.rollup.rollupStrings.watchChange]
 }

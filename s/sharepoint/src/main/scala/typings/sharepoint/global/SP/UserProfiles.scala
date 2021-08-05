@@ -101,8 +101,7 @@ object UserProfiles {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def newObject(context: typings.sharepoint.SP.ClientRuntimeContext): typings.sharepoint.SP.UserProfiles.FollowedContent = ^.asInstanceOf[js.Dynamic].applyDynamic("newObject")(context.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.UserProfiles.FollowedContent]
+    inline def newObject(context: typings.sharepoint.SP.ClientRuntimeContext): typings.sharepoint.SP.UserProfiles.FollowedContent = ^.asInstanceOf[js.Dynamic].applyDynamic("newObject")(context.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.UserProfiles.FollowedContent]
   }
   
   @JSGlobal("SP.UserProfiles.FollowedContentExceptionType")
@@ -461,13 +460,11 @@ object UserProfiles {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def getTrendingTags(context: typings.sharepoint.SP.ClientRuntimeContext): HashTagCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("getTrendingTags")(context.asInstanceOf[js.Any]).asInstanceOf[HashTagCollection]
+    inline def getTrendingTags(context: typings.sharepoint.SP.ClientRuntimeContext): HashTagCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("getTrendingTags")(context.asInstanceOf[js.Any]).asInstanceOf[HashTagCollection]
     
     /** Checks whether the first user is following the second user. */
     /* static member */
-    @scala.inline
-    def isFollowing(
+    inline def isFollowing(
       context: typings.sharepoint.SP.ClientRuntimeContext,
       possibleFollowerAccountName: String,
       possibleFolloweeAccountName: String
@@ -562,8 +559,7 @@ object UserProfiles {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def getProfileLoader(context: typings.sharepoint.SP.ClientRuntimeContext): typings.sharepoint.SP.UserProfiles.ProfileLoader = ^.asInstanceOf[js.Dynamic].applyDynamic("getProfileLoader")(context.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.UserProfiles.ProfileLoader]
+    inline def getProfileLoader(context: typings.sharepoint.SP.ClientRuntimeContext): typings.sharepoint.SP.UserProfiles.ProfileLoader = ^.asInstanceOf[js.Dynamic].applyDynamic("getProfileLoader")(context.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.UserProfiles.ProfileLoader]
   }
   
   @JSGlobal("SP.UserProfiles.SocialDataStoreExceptionCode")

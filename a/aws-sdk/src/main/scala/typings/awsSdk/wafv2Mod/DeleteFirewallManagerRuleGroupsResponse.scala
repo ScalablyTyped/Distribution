@@ -13,19 +13,15 @@ trait DeleteFirewallManagerRuleGroupsResponse extends StObject {
 }
 object DeleteFirewallManagerRuleGroupsResponse {
   
-  @scala.inline
-  def apply(): DeleteFirewallManagerRuleGroupsResponse = {
+  inline def apply(): DeleteFirewallManagerRuleGroupsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteFirewallManagerRuleGroupsResponse]
   }
   
-  @scala.inline
-  implicit class DeleteFirewallManagerRuleGroupsResponseMutableBuilder[Self <: DeleteFirewallManagerRuleGroupsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteFirewallManagerRuleGroupsResponse](x: Self) {
     
-    @scala.inline
-    def setNextWebACLLockToken(value: LockToken): Self = StObject.set(x, "NextWebACLLockToken", value.asInstanceOf[js.Any])
+    inline def setNextWebACLLockToken(value: LockToken): Self = StObject.set(x, "NextWebACLLockToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextWebACLLockTokenUndefined: Self = StObject.set(x, "NextWebACLLockToken", js.undefined)
+    inline def setNextWebACLLockTokenUndefined: Self = StObject.set(x, "NextWebACLLockToken", js.undefined)
   }
 }

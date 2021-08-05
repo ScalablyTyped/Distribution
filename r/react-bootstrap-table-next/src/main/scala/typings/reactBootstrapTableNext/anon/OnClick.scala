@@ -11,16 +11,13 @@ trait OnClick[T /* <: js.Object */, E] extends StObject {
 }
 object OnClick {
   
-  @scala.inline
-  def apply[T /* <: js.Object */, E](onClick: (js.Any, ColumnDescription[T, E], Double) => Unit): OnClick[T, E] = {
+  inline def apply[T /* <: js.Object */, E](onClick: (js.Any, ColumnDescription[T, E], Double) => Unit): OnClick[T, E] = {
     val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction3(onClick))
     __obj.asInstanceOf[OnClick[T, E]]
   }
   
-  @scala.inline
-  implicit class OnClickMutableBuilder[Self <: OnClick[?, ?], T /* <: js.Object */, E] (val x: Self & (OnClick[T, E])) extends AnyVal {
+  extension [Self <: OnClick[?, ?], T /* <: js.Object */, E](x: Self & (OnClick[T, E])) {
     
-    @scala.inline
-    def setOnClick(value: (js.Any, ColumnDescription[T, E], Double) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction3(value))
+    inline def setOnClick(value: (js.Any, ColumnDescription[T, E], Double) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction3(value))
   }
 }

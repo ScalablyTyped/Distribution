@@ -33,8 +33,7 @@ trait IdentityManagerGenerateTokenOptions
 }
 object IdentityManagerGenerateTokenOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -46,16 +45,12 @@ object IdentityManagerGenerateTokenOptions {
     __obj.asInstanceOf[IdentityManagerGenerateTokenOptions]
   }
   
-  @scala.inline
-  implicit class IdentityManagerGenerateTokenOptionsMutableBuilder[Self <: IdentityManagerGenerateTokenOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IdentityManagerGenerateTokenOptions](x: Self) {
     
-    @scala.inline
-    def setServerUrl(value: String): Self = StObject.set(x, "serverUrl", value.asInstanceOf[js.Any])
+    inline def setServerUrl(value: String): Self = StObject.set(x, "serverUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsl(value: Boolean): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
+    inline def setSsl(value: Boolean): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
   }
 }

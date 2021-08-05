@@ -18,28 +18,21 @@ trait BatchDeleteConnectionResponse extends StObject {
 }
 object BatchDeleteConnectionResponse {
   
-  @scala.inline
-  def apply(): BatchDeleteConnectionResponse = {
+  inline def apply(): BatchDeleteConnectionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchDeleteConnectionResponse]
   }
   
-  @scala.inline
-  implicit class BatchDeleteConnectionResponseMutableBuilder[Self <: BatchDeleteConnectionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDeleteConnectionResponse](x: Self) {
     
-    @scala.inline
-    def setErrors(value: ErrorByName): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: ErrorByName): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
     
-    @scala.inline
-    def setSucceeded(value: NameStringList): Self = StObject.set(x, "Succeeded", value.asInstanceOf[js.Any])
+    inline def setSucceeded(value: NameStringList): Self = StObject.set(x, "Succeeded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSucceededUndefined: Self = StObject.set(x, "Succeeded", js.undefined)
+    inline def setSucceededUndefined: Self = StObject.set(x, "Succeeded", js.undefined)
     
-    @scala.inline
-    def setSucceededVarargs(value: NameString*): Self = StObject.set(x, "Succeeded", js.Array(value :_*))
+    inline def setSucceededVarargs(value: NameString*): Self = StObject.set(x, "Succeeded", js.Array(value :_*))
   }
 }

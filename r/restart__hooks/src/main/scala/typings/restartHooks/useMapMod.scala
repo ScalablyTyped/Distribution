@@ -34,10 +34,8 @@ object useMapMod {
     *
     * @param init initial Map entries
     */
-  @scala.inline
-  def default[K, V](): ObservableMap[K, V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[ObservableMap[K, V]]
-  @scala.inline
-  def default[K, V](init: Iterable[js.Tuple2[K, V]]): ObservableMap[K, V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(init.asInstanceOf[js.Any]).asInstanceOf[ObservableMap[K, V]]
+  inline def default[K, V](): ObservableMap[K, V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[ObservableMap[K, V]]
+  inline def default[K, V](init: Iterable[js.Tuple2[K, V]]): ObservableMap[K, V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(init.asInstanceOf[js.Any]).asInstanceOf[ObservableMap[K, V]]
   
   @JSImport("@restart/hooks/cjs/useMap", "ObservableMap")
   @js.native
@@ -47,6 +45,6 @@ object useMapMod {
     def this(listener: js.Function1[/* map */ ObservableMap[K, V], Unit]) = this()
     def this(listener: js.Function1[/* map */ ObservableMap[K, V], Unit], init: Iterable[js.Tuple2[K, V]]) = this()
     
-    val listener: js.Any = js.native
+    /* private */ val listener: js.Any = js.native
   }
 }

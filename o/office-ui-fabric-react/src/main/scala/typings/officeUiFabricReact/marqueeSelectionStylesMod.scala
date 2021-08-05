@@ -12,6 +12,5 @@ object marqueeSelectionStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStyles(props: IMarqueeSelectionStyleProps): IMarqueeSelectionStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IMarqueeSelectionStyles]
+  inline def getStyles(props: IMarqueeSelectionStyleProps): IMarqueeSelectionStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IMarqueeSelectionStyles]
 }

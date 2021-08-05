@@ -12,8 +12,7 @@ object useScheduleUpdateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("@react-navigation/core/lib/typescript/src/useScheduleUpdate", "ScheduleUpdateContext")
   @js.native

@@ -15,8 +15,7 @@ trait ModuleOptions extends StObject {
 }
 object ModuleOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     meta: CustomPluginOptions,
     moduleSideEffects: Boolean | `no-treeshake`,
     syntheticNamedExports: Boolean | String
@@ -25,16 +24,12 @@ object ModuleOptions {
     __obj.asInstanceOf[ModuleOptions]
   }
   
-  @scala.inline
-  implicit class ModuleOptionsMutableBuilder[Self <: ModuleOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ModuleOptions](x: Self) {
     
-    @scala.inline
-    def setMeta(value: CustomPluginOptions): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: CustomPluginOptions): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModuleSideEffects(value: Boolean | `no-treeshake`): Self = StObject.set(x, "moduleSideEffects", value.asInstanceOf[js.Any])
+    inline def setModuleSideEffects(value: Boolean | `no-treeshake`): Self = StObject.set(x, "moduleSideEffects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyntheticNamedExports(value: Boolean | String): Self = StObject.set(x, "syntheticNamedExports", value.asInstanceOf[js.Any])
+    inline def setSyntheticNamedExports(value: Boolean | String): Self = StObject.set(x, "syntheticNamedExports", value.asInstanceOf[js.Any])
   }
 }

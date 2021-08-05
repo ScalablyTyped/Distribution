@@ -21,8 +21,7 @@ object linkMod {
     @JSImport("@storybook/addon-links/dist/react/components/link", "default.defaultProps")
     @js.native
     def defaultProps: Props = js.native
-    @scala.inline
-    def defaultProps_=(x: Props): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Props): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -50,26 +49,20 @@ object linkMod {
   }
   object Props {
     
-    @scala.inline
-    def apply(kind: String, story: String): Props = {
+    inline def apply(kind: String, story: String): Props = {
       val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], story = story.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStory(value: String): Self = StObject.set(x, "story", value.asInstanceOf[js.Any])
+      inline def setStory(value: String): Self = StObject.set(x, "story", value.asInstanceOf[js.Any])
     }
   }
   
@@ -79,17 +72,14 @@ object linkMod {
   }
   object State {
     
-    @scala.inline
-    def apply(href: String): State = {
+    inline def apply(href: String): State = {
       val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
       __obj.asInstanceOf[State]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+    extension [Self <: State](x: Self) {
       
-      @scala.inline
-      def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     }
   }
 }

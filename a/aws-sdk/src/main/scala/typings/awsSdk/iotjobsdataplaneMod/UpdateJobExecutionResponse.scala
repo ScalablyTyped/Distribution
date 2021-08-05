@@ -18,25 +18,19 @@ trait UpdateJobExecutionResponse extends StObject {
 }
 object UpdateJobExecutionResponse {
   
-  @scala.inline
-  def apply(): UpdateJobExecutionResponse = {
+  inline def apply(): UpdateJobExecutionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateJobExecutionResponse]
   }
   
-  @scala.inline
-  implicit class UpdateJobExecutionResponseMutableBuilder[Self <: UpdateJobExecutionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateJobExecutionResponse](x: Self) {
     
-    @scala.inline
-    def setExecutionState(value: JobExecutionState): Self = StObject.set(x, "executionState", value.asInstanceOf[js.Any])
+    inline def setExecutionState(value: JobExecutionState): Self = StObject.set(x, "executionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionStateUndefined: Self = StObject.set(x, "executionState", js.undefined)
+    inline def setExecutionStateUndefined: Self = StObject.set(x, "executionState", js.undefined)
     
-    @scala.inline
-    def setJobDocument(value: JobDocument): Self = StObject.set(x, "jobDocument", value.asInstanceOf[js.Any])
+    inline def setJobDocument(value: JobDocument): Self = StObject.set(x, "jobDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobDocumentUndefined: Self = StObject.set(x, "jobDocument", js.undefined)
+    inline def setJobDocumentUndefined: Self = StObject.set(x, "jobDocument", js.undefined)
   }
 }

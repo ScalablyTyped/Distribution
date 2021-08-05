@@ -69,79 +69,55 @@ trait GoogleActionsOrdersV3VerticalsPurchasePurchaseFulfillmentInfo extends StOb
 }
 object GoogleActionsOrdersV3VerticalsPurchasePurchaseFulfillmentInfo {
   
-  @scala.inline
-  def apply(): GoogleActionsOrdersV3VerticalsPurchasePurchaseFulfillmentInfo = {
+  inline def apply(): GoogleActionsOrdersV3VerticalsPurchasePurchaseFulfillmentInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsOrdersV3VerticalsPurchasePurchaseFulfillmentInfo]
   }
   
-  @scala.inline
-  implicit class GoogleActionsOrdersV3VerticalsPurchasePurchaseFulfillmentInfoMutableBuilder[Self <: GoogleActionsOrdersV3VerticalsPurchasePurchaseFulfillmentInfo] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsOrdersV3VerticalsPurchasePurchaseFulfillmentInfo](x: Self) {
     
-    @scala.inline
-    def setExpectedFulfillmentTime(value: GoogleActionsOrdersV3Time): Self = StObject.set(x, "expectedFulfillmentTime", value.asInstanceOf[js.Any])
+    inline def setExpectedFulfillmentTime(value: GoogleActionsOrdersV3Time): Self = StObject.set(x, "expectedFulfillmentTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedFulfillmentTimeUndefined: Self = StObject.set(x, "expectedFulfillmentTime", js.undefined)
+    inline def setExpectedFulfillmentTimeUndefined: Self = StObject.set(x, "expectedFulfillmentTime", js.undefined)
     
-    @scala.inline
-    def setExpectedPreparationTime(value: GoogleActionsOrdersV3Time): Self = StObject.set(x, "expectedPreparationTime", value.asInstanceOf[js.Any])
+    inline def setExpectedPreparationTime(value: GoogleActionsOrdersV3Time): Self = StObject.set(x, "expectedPreparationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedPreparationTimeUndefined: Self = StObject.set(x, "expectedPreparationTime", js.undefined)
+    inline def setExpectedPreparationTimeUndefined: Self = StObject.set(x, "expectedPreparationTime", js.undefined)
     
-    @scala.inline
-    def setExpireTime(value: String): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
+    inline def setExpireTime(value: String): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpireTimeUndefined: Self = StObject.set(x, "expireTime", js.undefined)
+    inline def setExpireTimeUndefined: Self = StObject.set(x, "expireTime", js.undefined)
     
-    @scala.inline
-    def setFulfillmentContact(value: GoogleActionsOrdersV3UserInfo): Self = StObject.set(x, "fulfillmentContact", value.asInstanceOf[js.Any])
+    inline def setFulfillmentContact(value: GoogleActionsOrdersV3UserInfo): Self = StObject.set(x, "fulfillmentContact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFulfillmentContactUndefined: Self = StObject.set(x, "fulfillmentContact", js.undefined)
+    inline def setFulfillmentContactUndefined: Self = StObject.set(x, "fulfillmentContact", js.undefined)
     
-    @scala.inline
-    def setFulfillmentType(value: GoogleActionsOrdersV3VerticalsPurchasePurchaseFulfillmentInfoFulfillmentType): Self = StObject.set(x, "fulfillmentType", value.asInstanceOf[js.Any])
+    inline def setFulfillmentType(value: GoogleActionsOrdersV3VerticalsPurchasePurchaseFulfillmentInfoFulfillmentType): Self = StObject.set(x, "fulfillmentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFulfillmentTypeUndefined: Self = StObject.set(x, "fulfillmentType", js.undefined)
+    inline def setFulfillmentTypeUndefined: Self = StObject.set(x, "fulfillmentType", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLocation(value: GoogleActionsV2Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: GoogleActionsV2Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setPickupInfo(value: GoogleActionsOrdersV3VerticalsPurchasePickupInfo): Self = StObject.set(x, "pickupInfo", value.asInstanceOf[js.Any])
+    inline def setPickupInfo(value: GoogleActionsOrdersV3VerticalsPurchasePickupInfo): Self = StObject.set(x, "pickupInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickupInfoUndefined: Self = StObject.set(x, "pickupInfo", js.undefined)
+    inline def setPickupInfoUndefined: Self = StObject.set(x, "pickupInfo", js.undefined)
     
-    @scala.inline
-    def setPrice(value: GoogleActionsOrdersV3PriceAttribute): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
+    inline def setPrice(value: GoogleActionsOrdersV3PriceAttribute): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriceUndefined: Self = StObject.set(x, "price", js.undefined)
+    inline def setPriceUndefined: Self = StObject.set(x, "price", js.undefined)
     
-    @scala.inline
-    def setShippingMethodName(value: String): Self = StObject.set(x, "shippingMethodName", value.asInstanceOf[js.Any])
+    inline def setShippingMethodName(value: String): Self = StObject.set(x, "shippingMethodName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShippingMethodNameUndefined: Self = StObject.set(x, "shippingMethodName", js.undefined)
+    inline def setShippingMethodNameUndefined: Self = StObject.set(x, "shippingMethodName", js.undefined)
     
-    @scala.inline
-    def setStoreCode(value: String): Self = StObject.set(x, "storeCode", value.asInstanceOf[js.Any])
+    inline def setStoreCode(value: String): Self = StObject.set(x, "storeCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoreCodeUndefined: Self = StObject.set(x, "storeCode", js.undefined)
+    inline def setStoreCodeUndefined: Self = StObject.set(x, "storeCode", js.undefined)
   }
 }

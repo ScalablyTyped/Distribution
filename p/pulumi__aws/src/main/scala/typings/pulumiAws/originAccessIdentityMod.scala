@@ -79,21 +79,16 @@ object originAccessIdentityMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): OriginAccessIdentity = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[OriginAccessIdentity]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): OriginAccessIdentity = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[OriginAccessIdentity]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: OriginAccessIdentityState): OriginAccessIdentity = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[OriginAccessIdentity]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: OriginAccessIdentityState, opts: CustomResourceOptions): OriginAccessIdentity = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[OriginAccessIdentity]
+    inline def get(name: String, id: Input[ID]): OriginAccessIdentity = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[OriginAccessIdentity]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): OriginAccessIdentity = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[OriginAccessIdentity]
+    inline def get(name: String, id: Input[ID], state: OriginAccessIdentityState): OriginAccessIdentity = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[OriginAccessIdentity]
+    inline def get(name: String, id: Input[ID], state: OriginAccessIdentityState, opts: CustomResourceOptions): OriginAccessIdentity = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[OriginAccessIdentity]
     
     /**
       * Returns true if the given object is an instance of OriginAccessIdentity.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudfront/originAccessIdentity.OriginAccessIdentity */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudfront/originAccessIdentity.OriginAccessIdentity */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudfront/originAccessIdentity.OriginAccessIdentity */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudfront/originAccessIdentity.OriginAccessIdentity */ Boolean]
   }
   
   trait OriginAccessIdentityArgs extends StObject {
@@ -105,20 +100,16 @@ object originAccessIdentityMod {
   }
   object OriginAccessIdentityArgs {
     
-    @scala.inline
-    def apply(): OriginAccessIdentityArgs = {
+    inline def apply(): OriginAccessIdentityArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OriginAccessIdentityArgs]
     }
     
-    @scala.inline
-    implicit class OriginAccessIdentityArgsMutableBuilder[Self <: OriginAccessIdentityArgs] (val x: Self) extends AnyVal {
+    extension [Self <: OriginAccessIdentityArgs](x: Self) {
       
-      @scala.inline
-      def setComment(value: Input[String]): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: Input[String]): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     }
   }
   
@@ -163,50 +154,36 @@ object originAccessIdentityMod {
   }
   object OriginAccessIdentityState {
     
-    @scala.inline
-    def apply(): OriginAccessIdentityState = {
+    inline def apply(): OriginAccessIdentityState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OriginAccessIdentityState]
     }
     
-    @scala.inline
-    implicit class OriginAccessIdentityStateMutableBuilder[Self <: OriginAccessIdentityState] (val x: Self) extends AnyVal {
+    extension [Self <: OriginAccessIdentityState](x: Self) {
       
-      @scala.inline
-      def setCallerReference(value: Input[String]): Self = StObject.set(x, "callerReference", value.asInstanceOf[js.Any])
+      inline def setCallerReference(value: Input[String]): Self = StObject.set(x, "callerReference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallerReferenceUndefined: Self = StObject.set(x, "callerReference", js.undefined)
+      inline def setCallerReferenceUndefined: Self = StObject.set(x, "callerReference", js.undefined)
       
-      @scala.inline
-      def setCloudfrontAccessIdentityPath(value: Input[String]): Self = StObject.set(x, "cloudfrontAccessIdentityPath", value.asInstanceOf[js.Any])
+      inline def setCloudfrontAccessIdentityPath(value: Input[String]): Self = StObject.set(x, "cloudfrontAccessIdentityPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudfrontAccessIdentityPathUndefined: Self = StObject.set(x, "cloudfrontAccessIdentityPath", js.undefined)
+      inline def setCloudfrontAccessIdentityPathUndefined: Self = StObject.set(x, "cloudfrontAccessIdentityPath", js.undefined)
       
-      @scala.inline
-      def setComment(value: Input[String]): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: Input[String]): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      @scala.inline
-      def setEtag(value: Input[String]): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+      inline def setEtag(value: Input[String]): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+      inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
       
-      @scala.inline
-      def setIamArn(value: Input[String]): Self = StObject.set(x, "iamArn", value.asInstanceOf[js.Any])
+      inline def setIamArn(value: Input[String]): Self = StObject.set(x, "iamArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIamArnUndefined: Self = StObject.set(x, "iamArn", js.undefined)
+      inline def setIamArnUndefined: Self = StObject.set(x, "iamArn", js.undefined)
       
-      @scala.inline
-      def setS3CanonicalUserId(value: Input[String]): Self = StObject.set(x, "s3CanonicalUserId", value.asInstanceOf[js.Any])
+      inline def setS3CanonicalUserId(value: Input[String]): Self = StObject.set(x, "s3CanonicalUserId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3CanonicalUserIdUndefined: Self = StObject.set(x, "s3CanonicalUserId", js.undefined)
+      inline def setS3CanonicalUserIdUndefined: Self = StObject.set(x, "s3CanonicalUserId", js.undefined)
     }
   }
 }

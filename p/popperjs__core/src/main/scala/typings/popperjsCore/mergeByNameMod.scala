@@ -11,6 +11,5 @@ object mergeByNameMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(modifiers: js.Array[PartialModifieranyany]): js.Array[PartialModifieranyany] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(modifiers.asInstanceOf[js.Any]).asInstanceOf[js.Array[PartialModifieranyany]]
+  inline def default(modifiers: js.Array[PartialModifieranyany]): js.Array[PartialModifieranyany] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(modifiers.asInstanceOf[js.Any]).asInstanceOf[js.Array[PartialModifieranyany]]
 }

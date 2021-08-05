@@ -14,8 +14,7 @@ trait BreakStatement
 }
 object BreakStatement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -42,13 +41,10 @@ object BreakStatement {
     __obj.asInstanceOf[BreakStatement]
   }
   
-  @scala.inline
-  implicit class BreakStatementMutableBuilder[Self <: BreakStatement] (val x: Self) extends AnyVal {
+  extension [Self <: BreakStatement](x: Self) {
     
-    @scala.inline
-    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructuralEquals(value: (BreakStatement, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (BreakStatement, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
   }
 }

@@ -18,8 +18,7 @@ trait ViewModel
 }
 object ViewModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destroy: () => js.Any,
     extend: js.Any => js.Any,
     model: () => Model[js.Any, ModelSetOptions, js.Object],
@@ -29,16 +28,12 @@ object ViewModel {
     __obj.asInstanceOf[ViewModel]
   }
   
-  @scala.inline
-  implicit class ViewModelMutableBuilder[Self <: ViewModel] (val x: Self) extends AnyVal {
+  extension [Self <: ViewModel](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Any => js.Any): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Any => js.Any): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setModel(value: () => Model[js.Any, ModelSetOptions, js.Object]): Self = StObject.set(x, "model", js.Any.fromFunction0(value))
+    inline def setModel(value: () => Model[js.Any, ModelSetOptions, js.Object]): Self = StObject.set(x, "model", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShareOptions(value: () => ViewModelOptions): Self = StObject.set(x, "shareOptions", js.Any.fromFunction0(value))
+    inline def setShareOptions(value: () => ViewModelOptions): Self = StObject.set(x, "shareOptions", js.Any.fromFunction0(value))
   }
 }

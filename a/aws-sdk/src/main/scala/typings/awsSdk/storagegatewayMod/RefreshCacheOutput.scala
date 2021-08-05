@@ -12,25 +12,19 @@ trait RefreshCacheOutput extends StObject {
 }
 object RefreshCacheOutput {
   
-  @scala.inline
-  def apply(): RefreshCacheOutput = {
+  inline def apply(): RefreshCacheOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RefreshCacheOutput]
   }
   
-  @scala.inline
-  implicit class RefreshCacheOutputMutableBuilder[Self <: RefreshCacheOutput] (val x: Self) extends AnyVal {
+  extension [Self <: RefreshCacheOutput](x: Self) {
     
-    @scala.inline
-    def setFileShareARN(value: FileShareARN): Self = StObject.set(x, "FileShareARN", value.asInstanceOf[js.Any])
+    inline def setFileShareARN(value: FileShareARN): Self = StObject.set(x, "FileShareARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileShareARNUndefined: Self = StObject.set(x, "FileShareARN", js.undefined)
+    inline def setFileShareARNUndefined: Self = StObject.set(x, "FileShareARN", js.undefined)
     
-    @scala.inline
-    def setNotificationId(value: NotificationId): Self = StObject.set(x, "NotificationId", value.asInstanceOf[js.Any])
+    inline def setNotificationId(value: NotificationId): Self = StObject.set(x, "NotificationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationIdUndefined: Self = StObject.set(x, "NotificationId", js.undefined)
+    inline def setNotificationIdUndefined: Self = StObject.set(x, "NotificationId", js.undefined)
   }
 }

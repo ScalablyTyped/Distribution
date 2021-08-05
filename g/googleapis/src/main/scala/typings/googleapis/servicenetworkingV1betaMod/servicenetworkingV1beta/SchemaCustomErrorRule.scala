@@ -23,25 +23,19 @@ trait SchemaCustomErrorRule extends StObject {
 }
 object SchemaCustomErrorRule {
   
-  @scala.inline
-  def apply(): SchemaCustomErrorRule = {
+  inline def apply(): SchemaCustomErrorRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCustomErrorRule]
   }
   
-  @scala.inline
-  implicit class SchemaCustomErrorRuleMutableBuilder[Self <: SchemaCustomErrorRule] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCustomErrorRule](x: Self) {
     
-    @scala.inline
-    def setIsErrorType(value: Boolean): Self = StObject.set(x, "isErrorType", value.asInstanceOf[js.Any])
+    inline def setIsErrorType(value: Boolean): Self = StObject.set(x, "isErrorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsErrorTypeUndefined: Self = StObject.set(x, "isErrorType", js.undefined)
+    inline def setIsErrorTypeUndefined: Self = StObject.set(x, "isErrorType", js.undefined)
     
-    @scala.inline
-    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+    inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
   }
 }

@@ -19,43 +19,31 @@ trait ISynthesizeSpeechResponse extends StObject {
 }
 object ISynthesizeSpeechResponse {
   
-  @scala.inline
-  def apply(): ISynthesizeSpeechResponse = {
+  inline def apply(): ISynthesizeSpeechResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ISynthesizeSpeechResponse]
   }
   
-  @scala.inline
-  implicit class ISynthesizeSpeechResponseMutableBuilder[Self <: ISynthesizeSpeechResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ISynthesizeSpeechResponse](x: Self) {
     
-    @scala.inline
-    def setAudioConfig(value: IAudioConfig): Self = StObject.set(x, "audioConfig", value.asInstanceOf[js.Any])
+    inline def setAudioConfig(value: IAudioConfig): Self = StObject.set(x, "audioConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioConfigNull: Self = StObject.set(x, "audioConfig", null)
+    inline def setAudioConfigNull: Self = StObject.set(x, "audioConfig", null)
     
-    @scala.inline
-    def setAudioConfigUndefined: Self = StObject.set(x, "audioConfig", js.undefined)
+    inline def setAudioConfigUndefined: Self = StObject.set(x, "audioConfig", js.undefined)
     
-    @scala.inline
-    def setAudioContent(value: Uint8Array | String): Self = StObject.set(x, "audioContent", value.asInstanceOf[js.Any])
+    inline def setAudioContent(value: Uint8Array | String): Self = StObject.set(x, "audioContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioContentNull: Self = StObject.set(x, "audioContent", null)
+    inline def setAudioContentNull: Self = StObject.set(x, "audioContent", null)
     
-    @scala.inline
-    def setAudioContentUndefined: Self = StObject.set(x, "audioContent", js.undefined)
+    inline def setAudioContentUndefined: Self = StObject.set(x, "audioContent", js.undefined)
     
-    @scala.inline
-    def setTimepoints(value: js.Array[ITimepoint]): Self = StObject.set(x, "timepoints", value.asInstanceOf[js.Any])
+    inline def setTimepoints(value: js.Array[ITimepoint]): Self = StObject.set(x, "timepoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimepointsNull: Self = StObject.set(x, "timepoints", null)
+    inline def setTimepointsNull: Self = StObject.set(x, "timepoints", null)
     
-    @scala.inline
-    def setTimepointsUndefined: Self = StObject.set(x, "timepoints", js.undefined)
+    inline def setTimepointsUndefined: Self = StObject.set(x, "timepoints", js.undefined)
     
-    @scala.inline
-    def setTimepointsVarargs(value: ITimepoint*): Self = StObject.set(x, "timepoints", js.Array(value :_*))
+    inline def setTimepointsVarargs(value: ITimepoint*): Self = StObject.set(x, "timepoints", js.Array(value :_*))
   }
 }

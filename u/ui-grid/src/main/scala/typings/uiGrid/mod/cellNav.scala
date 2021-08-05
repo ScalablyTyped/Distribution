@@ -47,8 +47,7 @@ object cellNav {
   }
   object ICellNavApi {
     
-    @scala.inline
-    def apply[TEntity](
+    inline def apply[TEntity](
       getCurrentSelection: () => js.Array[IRowCol[TEntity]],
       getFocusedCell: () => IRowCol[TEntity],
       on: Navigate[TEntity],
@@ -59,23 +58,17 @@ object cellNav {
       __obj.asInstanceOf[ICellNavApi[TEntity]]
     }
     
-    @scala.inline
-    implicit class ICellNavApiMutableBuilder[Self <: ICellNavApi[?], TEntity] (val x: Self & ICellNavApi[TEntity]) extends AnyVal {
+    extension [Self <: ICellNavApi[?], TEntity](x: Self & ICellNavApi[TEntity]) {
       
-      @scala.inline
-      def setGetCurrentSelection(value: () => js.Array[IRowCol[TEntity]]): Self = StObject.set(x, "getCurrentSelection", js.Any.fromFunction0(value))
+      inline def setGetCurrentSelection(value: () => js.Array[IRowCol[TEntity]]): Self = StObject.set(x, "getCurrentSelection", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFocusedCell(value: () => IRowCol[TEntity]): Self = StObject.set(x, "getFocusedCell", js.Any.fromFunction0(value))
+      inline def setGetFocusedCell(value: () => IRowCol[TEntity]): Self = StObject.set(x, "getFocusedCell", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOn(value: Navigate[TEntity]): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+      inline def setOn(value: Navigate[TEntity]): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowColSelectIndex(value: IRowCol[TEntity] => Double): Self = StObject.set(x, "rowColSelectIndex", js.Any.fromFunction1(value))
+      inline def setRowColSelectIndex(value: IRowCol[TEntity] => Double): Self = StObject.set(x, "rowColSelectIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setScrollToFocus(value: (TEntity, typings.uiGrid.mod.cellNav.IColumnDef) => IPromise[js.Any]): Self = StObject.set(x, "scrollToFocus", js.Any.fromFunction2(value))
+      inline def setScrollToFocus(value: (TEntity, typings.uiGrid.mod.cellNav.IColumnDef) => IPromise[js.Any]): Self = StObject.set(x, "scrollToFocus", js.Any.fromFunction2(value))
     }
   }
   
@@ -90,20 +83,16 @@ object cellNav {
   }
   object IColumnDef {
     
-    @scala.inline
-    def apply(): typings.uiGrid.mod.cellNav.IColumnDef = {
+    inline def apply(): typings.uiGrid.mod.cellNav.IColumnDef = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.uiGrid.mod.cellNav.IColumnDef]
     }
     
-    @scala.inline
-    implicit class IColumnDefMutableBuilder[Self <: typings.uiGrid.mod.cellNav.IColumnDef] (val x: Self) extends AnyVal {
+    extension [Self <: typings.uiGrid.mod.cellNav.IColumnDef](x: Self) {
       
-      @scala.inline
-      def setAllowCellFocus(value: Boolean): Self = StObject.set(x, "allowCellFocus", value.asInstanceOf[js.Any])
+      inline def setAllowCellFocus(value: Boolean): Self = StObject.set(x, "allowCellFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowCellFocusUndefined: Self = StObject.set(x, "allowCellFocus", js.undefined)
+      inline def setAllowCellFocusUndefined: Self = StObject.set(x, "allowCellFocus", js.undefined)
     }
   }
   
@@ -118,20 +107,16 @@ object cellNav {
   }
   object IGridOptions {
     
-    @scala.inline
-    def apply(): typings.uiGrid.mod.cellNav.IGridOptions = {
+    inline def apply(): typings.uiGrid.mod.cellNav.IGridOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.uiGrid.mod.cellNav.IGridOptions]
     }
     
-    @scala.inline
-    implicit class IGridOptionsMutableBuilder[Self <: typings.uiGrid.mod.cellNav.IGridOptions] (val x: Self) extends AnyVal {
+    extension [Self <: typings.uiGrid.mod.cellNav.IGridOptions](x: Self) {
       
-      @scala.inline
-      def setModifierKeysToMultiSelectCells(value: Boolean): Self = StObject.set(x, "modifierKeysToMultiSelectCells", value.asInstanceOf[js.Any])
+      inline def setModifierKeysToMultiSelectCells(value: Boolean): Self = StObject.set(x, "modifierKeysToMultiSelectCells", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModifierKeysToMultiSelectCellsUndefined: Self = StObject.set(x, "modifierKeysToMultiSelectCells", js.undefined)
+      inline def setModifierKeysToMultiSelectCellsUndefined: Self = StObject.set(x, "modifierKeysToMultiSelectCells", js.undefined)
     }
   }
   
@@ -146,20 +131,16 @@ object cellNav {
   }
   object IGridRow {
     
-    @scala.inline
-    def apply(): typings.uiGrid.mod.cellNav.IGridRow = {
+    inline def apply(): typings.uiGrid.mod.cellNav.IGridRow = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.uiGrid.mod.cellNav.IGridRow]
     }
     
-    @scala.inline
-    implicit class IGridRowMutableBuilder[Self <: typings.uiGrid.mod.cellNav.IGridRow] (val x: Self) extends AnyVal {
+    extension [Self <: typings.uiGrid.mod.cellNav.IGridRow](x: Self) {
       
-      @scala.inline
-      def setAllowCellFocus(value: Boolean): Self = StObject.set(x, "allowCellFocus", value.asInstanceOf[js.Any])
+      inline def setAllowCellFocus(value: Boolean): Self = StObject.set(x, "allowCellFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowCellFocusUndefined: Self = StObject.set(x, "allowCellFocus", js.undefined)
+      inline def setAllowCellFocusUndefined: Self = StObject.set(x, "allowCellFocus", js.undefined)
     }
   }
   
@@ -185,8 +166,7 @@ object cellNav {
   }
   object IRowCol {
     
-    @scala.inline
-    def apply[TEntity](
+    inline def apply[TEntity](
       col: IGridColumnOf[TEntity],
       getIntersectionValueFiltered: () => String | Number | js.Object,
       getIntersectionValueRaw: () => String | Number | js.Object,
@@ -196,20 +176,15 @@ object cellNav {
       __obj.asInstanceOf[IRowCol[TEntity]]
     }
     
-    @scala.inline
-    implicit class IRowColMutableBuilder[Self <: IRowCol[?], TEntity] (val x: Self & IRowCol[TEntity]) extends AnyVal {
+    extension [Self <: IRowCol[?], TEntity](x: Self & IRowCol[TEntity]) {
       
-      @scala.inline
-      def setCol(value: IGridColumnOf[TEntity]): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
+      inline def setCol(value: IGridColumnOf[TEntity]): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetIntersectionValueFiltered(value: () => String | Number | js.Object): Self = StObject.set(x, "getIntersectionValueFiltered", js.Any.fromFunction0(value))
+      inline def setGetIntersectionValueFiltered(value: () => String | Number | js.Object): Self = StObject.set(x, "getIntersectionValueFiltered", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetIntersectionValueRaw(value: () => String | Number | js.Object): Self = StObject.set(x, "getIntersectionValueRaw", js.Any.fromFunction0(value))
+      inline def setGetIntersectionValueRaw(value: () => String | Number | js.Object): Self = StObject.set(x, "getIntersectionValueRaw", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRow(value: IGridRowOf[TEntity]): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRow(value: IGridRowOf[TEntity]): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     }
   }
   
@@ -230,26 +205,20 @@ object cellNav {
   }
   object IUiGridCellNavConstants {
     
-    @scala.inline
-    def apply(CELL_NAV_EVENT: String, EVENT_TYPE: CLEAR, FEATURE_NAME: String, direction: LEFT): IUiGridCellNavConstants = {
+    inline def apply(CELL_NAV_EVENT: String, EVENT_TYPE: CLEAR, FEATURE_NAME: String, direction: LEFT): IUiGridCellNavConstants = {
       val __obj = js.Dynamic.literal(CELL_NAV_EVENT = CELL_NAV_EVENT.asInstanceOf[js.Any], EVENT_TYPE = EVENT_TYPE.asInstanceOf[js.Any], FEATURE_NAME = FEATURE_NAME.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any])
       __obj.asInstanceOf[IUiGridCellNavConstants]
     }
     
-    @scala.inline
-    implicit class IUiGridCellNavConstantsMutableBuilder[Self <: IUiGridCellNavConstants] (val x: Self) extends AnyVal {
+    extension [Self <: IUiGridCellNavConstants](x: Self) {
       
-      @scala.inline
-      def setCELL_NAV_EVENT(value: String): Self = StObject.set(x, "CELL_NAV_EVENT", value.asInstanceOf[js.Any])
+      inline def setCELL_NAV_EVENT(value: String): Self = StObject.set(x, "CELL_NAV_EVENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirection(value: LEFT): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: LEFT): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEVENT_TYPE(value: CLEAR): Self = StObject.set(x, "EVENT_TYPE", value.asInstanceOf[js.Any])
+      inline def setEVENT_TYPE(value: CLEAR): Self = StObject.set(x, "EVENT_TYPE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFEATURE_NAME(value: String): Self = StObject.set(x, "FEATURE_NAME", value.asInstanceOf[js.Any])
+      inline def setFEATURE_NAME(value: String): Self = StObject.set(x, "FEATURE_NAME", value.asInstanceOf[js.Any])
     }
   }
   

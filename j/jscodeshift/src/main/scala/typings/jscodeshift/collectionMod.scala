@@ -17,25 +17,19 @@ object collectionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromNodes(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNodes")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def fromNodes(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNodes")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def fromPaths(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPaths")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def fromPaths(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPaths")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def hasConflictingRegistration(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("hasConflictingRegistration")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def hasConflictingRegistration(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("hasConflictingRegistration")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def registerMethods(methods: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerMethods")(methods.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def registerMethods(
+  inline def registerMethods(methods: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerMethods")(methods.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def registerMethods(
     methods: js.Object,
     `type`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify recast.Type<any> */ js.Any
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerMethods")(methods.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setDefaultCollectionType(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultCollectionType")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def setDefaultCollectionType(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultCollectionType")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   type ASTPath[N] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify recast.NodePath<N, N> */ js.Any
   

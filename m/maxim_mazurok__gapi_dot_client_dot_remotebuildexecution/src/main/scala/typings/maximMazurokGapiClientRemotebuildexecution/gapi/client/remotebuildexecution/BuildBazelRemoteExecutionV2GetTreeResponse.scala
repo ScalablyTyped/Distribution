@@ -17,28 +17,21 @@ trait BuildBazelRemoteExecutionV2GetTreeResponse extends StObject {
 }
 object BuildBazelRemoteExecutionV2GetTreeResponse {
   
-  @scala.inline
-  def apply(): BuildBazelRemoteExecutionV2GetTreeResponse = {
+  inline def apply(): BuildBazelRemoteExecutionV2GetTreeResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuildBazelRemoteExecutionV2GetTreeResponse]
   }
   
-  @scala.inline
-  implicit class BuildBazelRemoteExecutionV2GetTreeResponseMutableBuilder[Self <: BuildBazelRemoteExecutionV2GetTreeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BuildBazelRemoteExecutionV2GetTreeResponse](x: Self) {
     
-    @scala.inline
-    def setDirectories(value: js.Array[BuildBazelRemoteExecutionV2Directory]): Self = StObject.set(x, "directories", value.asInstanceOf[js.Any])
+    inline def setDirectories(value: js.Array[BuildBazelRemoteExecutionV2Directory]): Self = StObject.set(x, "directories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoriesUndefined: Self = StObject.set(x, "directories", js.undefined)
+    inline def setDirectoriesUndefined: Self = StObject.set(x, "directories", js.undefined)
     
-    @scala.inline
-    def setDirectoriesVarargs(value: BuildBazelRemoteExecutionV2Directory*): Self = StObject.set(x, "directories", js.Array(value :_*))
+    inline def setDirectoriesVarargs(value: BuildBazelRemoteExecutionV2Directory*): Self = StObject.set(x, "directories", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

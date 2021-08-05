@@ -18,19 +18,15 @@ trait DeleteUsagePlanKeyRequest extends StObject {
 }
 object DeleteUsagePlanKeyRequest {
   
-  @scala.inline
-  def apply(keyId: String, usagePlanId: String): DeleteUsagePlanKeyRequest = {
+  inline def apply(keyId: String, usagePlanId: String): DeleteUsagePlanKeyRequest = {
     val __obj = js.Dynamic.literal(keyId = keyId.asInstanceOf[js.Any], usagePlanId = usagePlanId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteUsagePlanKeyRequest]
   }
   
-  @scala.inline
-  implicit class DeleteUsagePlanKeyRequestMutableBuilder[Self <: DeleteUsagePlanKeyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteUsagePlanKeyRequest](x: Self) {
     
-    @scala.inline
-    def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
+    inline def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsagePlanId(value: String): Self = StObject.set(x, "usagePlanId", value.asInstanceOf[js.Any])
+    inline def setUsagePlanId(value: String): Self = StObject.set(x, "usagePlanId", value.asInstanceOf[js.Any])
   }
 }

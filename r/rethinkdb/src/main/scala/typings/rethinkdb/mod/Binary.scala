@@ -16,20 +16,16 @@ trait Binary
 }
 object Binary {
   
-  @scala.inline
-  def apply(data: String): Binary = {
+  inline def apply(data: String): Binary = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.updateDynamic("$reql_type$")("BINARY")
     __obj.asInstanceOf[Binary]
   }
   
-  @scala.inline
-  implicit class BinaryMutableBuilder[Self <: Binary] (val x: Self) extends AnyVal {
+  extension [Self <: Binary](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDollarreql_typeDollar(value: BINARY): Self = StObject.set(x, "$reql_type$", value.asInstanceOf[js.Any])
+    inline def setDollarreql_typeDollar(value: BINARY): Self = StObject.set(x, "$reql_type$", value.asInstanceOf[js.Any])
   }
 }

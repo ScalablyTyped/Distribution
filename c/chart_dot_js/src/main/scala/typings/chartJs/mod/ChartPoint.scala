@@ -18,37 +18,27 @@ trait ChartPoint extends StObject {
 }
 object ChartPoint {
   
-  @scala.inline
-  def apply(): ChartPoint = {
+  inline def apply(): ChartPoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartPoint]
   }
   
-  @scala.inline
-  implicit class ChartPointMutableBuilder[Self <: ChartPoint] (val x: Self) extends AnyVal {
+  extension [Self <: ChartPoint](x: Self) {
     
-    @scala.inline
-    def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+    inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRUndefined: Self = StObject.set(x, "r", js.undefined)
+    inline def setRUndefined: Self = StObject.set(x, "r", js.undefined)
     
-    @scala.inline
-    def setT(value: Double | String | Date | Moment): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+    inline def setT(value: Double | String | Date | Moment): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTUndefined: Self = StObject.set(x, "t", js.undefined)
+    inline def setTUndefined: Self = StObject.set(x, "t", js.undefined)
     
-    @scala.inline
-    def setX(value: Double | String | Date | Moment): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double | String | Date | Moment): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setY(value: Double | String | Date | Moment): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double | String | Date | Moment): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

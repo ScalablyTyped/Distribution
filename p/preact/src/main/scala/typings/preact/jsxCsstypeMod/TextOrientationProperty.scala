@@ -17,27 +17,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TextOrientationProperty extends StObject
 object TextOrientationProperty {
   
-  @scala.inline
-  def `-moz-initial`: typings.preact.preactStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.preact.preactStrings.`-moz-initial`]
+  inline def `-moz-initial`: typings.preact.preactStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.preact.preactStrings.`-moz-initial`]
   
-  @scala.inline
-  def inherit: typings.preact.preactStrings.inherit = "inherit".asInstanceOf[typings.preact.preactStrings.inherit]
+  inline def inherit: typings.preact.preactStrings.inherit = "inherit".asInstanceOf[typings.preact.preactStrings.inherit]
   
-  @scala.inline
-  def initial: typings.preact.preactStrings.initial = "initial".asInstanceOf[typings.preact.preactStrings.initial]
+  inline def initial: typings.preact.preactStrings.initial = "initial".asInstanceOf[typings.preact.preactStrings.initial]
   
-  @scala.inline
-  def mixed: typings.preact.preactStrings.mixed = "mixed".asInstanceOf[typings.preact.preactStrings.mixed]
+  inline def mixed: typings.preact.preactStrings.mixed = "mixed".asInstanceOf[typings.preact.preactStrings.mixed]
   
-  @scala.inline
-  def revert: typings.preact.preactStrings.revert = "revert".asInstanceOf[typings.preact.preactStrings.revert]
+  inline def revert: typings.preact.preactStrings.revert = "revert".asInstanceOf[typings.preact.preactStrings.revert]
   
-  @scala.inline
-  def sideways: typings.preact.preactStrings.sideways = "sideways".asInstanceOf[typings.preact.preactStrings.sideways]
+  inline def sideways: typings.preact.preactStrings.sideways = "sideways".asInstanceOf[typings.preact.preactStrings.sideways]
   
-  @scala.inline
-  def unset: typings.preact.preactStrings.unset = "unset".asInstanceOf[typings.preact.preactStrings.unset]
+  inline def unset: typings.preact.preactStrings.unset = "unset".asInstanceOf[typings.preact.preactStrings.unset]
   
-  @scala.inline
-  def upright: typings.preact.preactStrings.upright = "upright".asInstanceOf[typings.preact.preactStrings.upright]
+  inline def upright: typings.preact.preactStrings.upright = "upright".asInstanceOf[typings.preact.preactStrings.upright]
 }

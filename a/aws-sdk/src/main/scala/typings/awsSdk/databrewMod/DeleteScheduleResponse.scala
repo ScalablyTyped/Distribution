@@ -13,16 +13,13 @@ trait DeleteScheduleResponse extends StObject {
 }
 object DeleteScheduleResponse {
   
-  @scala.inline
-  def apply(Name: ScheduleName): DeleteScheduleResponse = {
+  inline def apply(Name: ScheduleName): DeleteScheduleResponse = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteScheduleResponse]
   }
   
-  @scala.inline
-  implicit class DeleteScheduleResponseMutableBuilder[Self <: DeleteScheduleResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteScheduleResponse](x: Self) {
     
-    @scala.inline
-    def setName(value: ScheduleName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ScheduleName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

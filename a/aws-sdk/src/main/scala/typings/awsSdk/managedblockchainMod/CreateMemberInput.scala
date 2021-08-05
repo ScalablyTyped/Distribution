@@ -28,8 +28,7 @@ trait CreateMemberInput extends StObject {
 }
 object CreateMemberInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ClientRequestToken: ClientRequestTokenString,
     InvitationId: ResourceIdString,
     MemberConfiguration: MemberConfiguration,
@@ -39,19 +38,14 @@ object CreateMemberInput {
     __obj.asInstanceOf[CreateMemberInput]
   }
   
-  @scala.inline
-  implicit class CreateMemberInputMutableBuilder[Self <: CreateMemberInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateMemberInput](x: Self) {
     
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestTokenString): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: ClientRequestTokenString): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvitationId(value: ResourceIdString): Self = StObject.set(x, "InvitationId", value.asInstanceOf[js.Any])
+    inline def setInvitationId(value: ResourceIdString): Self = StObject.set(x, "InvitationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberConfiguration(value: MemberConfiguration): Self = StObject.set(x, "MemberConfiguration", value.asInstanceOf[js.Any])
+    inline def setMemberConfiguration(value: MemberConfiguration): Self = StObject.set(x, "MemberConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkId(value: ResourceIdString): Self = StObject.set(x, "NetworkId", value.asInstanceOf[js.Any])
+    inline def setNetworkId(value: ResourceIdString): Self = StObject.set(x, "NetworkId", value.asInstanceOf[js.Any])
   }
 }

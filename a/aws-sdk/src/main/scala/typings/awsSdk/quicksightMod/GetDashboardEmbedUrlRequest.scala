@@ -48,52 +48,37 @@ trait GetDashboardEmbedUrlRequest extends StObject {
 }
 object GetDashboardEmbedUrlRequest {
   
-  @scala.inline
-  def apply(AwsAccountId: AwsAccountId, DashboardId: RestrictiveResourceId, IdentityType: IdentityType): GetDashboardEmbedUrlRequest = {
+  inline def apply(AwsAccountId: AwsAccountId, DashboardId: RestrictiveResourceId, IdentityType: IdentityType): GetDashboardEmbedUrlRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], DashboardId = DashboardId.asInstanceOf[js.Any], IdentityType = IdentityType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDashboardEmbedUrlRequest]
   }
   
-  @scala.inline
-  implicit class GetDashboardEmbedUrlRequestMutableBuilder[Self <: GetDashboardEmbedUrlRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDashboardEmbedUrlRequest](x: Self) {
     
-    @scala.inline
-    def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
+    inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashboardId(value: RestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
+    inline def setDashboardId(value: RestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityType(value: IdentityType): Self = StObject.set(x, "IdentityType", value.asInstanceOf[js.Any])
+    inline def setIdentityType(value: IdentityType): Self = StObject.set(x, "IdentityType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResetDisabled(value: Boolean): Self = StObject.set(x, "ResetDisabled", value.asInstanceOf[js.Any])
+    inline def setResetDisabled(value: Boolean): Self = StObject.set(x, "ResetDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResetDisabledUndefined: Self = StObject.set(x, "ResetDisabled", js.undefined)
+    inline def setResetDisabledUndefined: Self = StObject.set(x, "ResetDisabled", js.undefined)
     
-    @scala.inline
-    def setSessionLifetimeInMinutes(value: SessionLifetimeInMinutes): Self = StObject.set(x, "SessionLifetimeInMinutes", value.asInstanceOf[js.Any])
+    inline def setSessionLifetimeInMinutes(value: SessionLifetimeInMinutes): Self = StObject.set(x, "SessionLifetimeInMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionLifetimeInMinutesUndefined: Self = StObject.set(x, "SessionLifetimeInMinutes", js.undefined)
+    inline def setSessionLifetimeInMinutesUndefined: Self = StObject.set(x, "SessionLifetimeInMinutes", js.undefined)
     
-    @scala.inline
-    def setStatePersistenceEnabled(value: Boolean): Self = StObject.set(x, "StatePersistenceEnabled", value.asInstanceOf[js.Any])
+    inline def setStatePersistenceEnabled(value: Boolean): Self = StObject.set(x, "StatePersistenceEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatePersistenceEnabledUndefined: Self = StObject.set(x, "StatePersistenceEnabled", js.undefined)
+    inline def setStatePersistenceEnabledUndefined: Self = StObject.set(x, "StatePersistenceEnabled", js.undefined)
     
-    @scala.inline
-    def setUndoRedoDisabled(value: Boolean): Self = StObject.set(x, "UndoRedoDisabled", value.asInstanceOf[js.Any])
+    inline def setUndoRedoDisabled(value: Boolean): Self = StObject.set(x, "UndoRedoDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndoRedoDisabledUndefined: Self = StObject.set(x, "UndoRedoDisabled", js.undefined)
+    inline def setUndoRedoDisabledUndefined: Self = StObject.set(x, "UndoRedoDisabled", js.undefined)
     
-    @scala.inline
-    def setUserArn(value: Arn): Self = StObject.set(x, "UserArn", value.asInstanceOf[js.Any])
+    inline def setUserArn(value: Arn): Self = StObject.set(x, "UserArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserArnUndefined: Self = StObject.set(x, "UserArn", js.undefined)
+    inline def setUserArnUndefined: Self = StObject.set(x, "UserArn", js.undefined)
   }
 }

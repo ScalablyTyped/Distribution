@@ -31,20 +31,16 @@ object messageParserMod {
   }
   object Header {
     
-    @scala.inline
-    def apply(key: String, line: String): Header = {
+    inline def apply(key: String, line: String): Header = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
       __obj.asInstanceOf[Header]
     }
     
-    @scala.inline
-    implicit class HeaderMutableBuilder[Self <: Header] (val x: Self) extends AnyVal {
+    extension [Self <: Header](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     }
   }
   

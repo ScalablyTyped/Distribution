@@ -13,6 +13,5 @@ class CertV2 ()
   extends typings.xadesjs.xmlMod.CertV2
 object CertV2 {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.CertV2] = ^.asInstanceOf[js.Dynamic].selectDynamic("CertV2").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.CertV2]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.CertV2] = ^.asInstanceOf[js.Dynamic].selectDynamic("CertV2").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.CertV2]]
 }

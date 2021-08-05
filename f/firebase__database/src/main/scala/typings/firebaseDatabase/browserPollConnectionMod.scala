@@ -70,13 +70,13 @@ object browserPollConnectionMod {
       */
     def addDisconnectPingFrame(id: String, pw: String): Unit = js.native
     
-    var applicationId: js.Any = js.native
+    /* private */ var applicationId: js.Any = js.native
     
-    var connectTimeoutTimer_ : js.Any = js.native
+    /* private */ var connectTimeoutTimer_ : js.Any = js.native
     
     var curSegmentNum: Double = js.native
     
-    var everConnected_ : js.Any = js.native
+    /* private */ var everConnected_ : js.Any = js.native
     
     var id: String = js.native
     
@@ -85,13 +85,13 @@ object browserPollConnectionMod {
       * @param {*} args
       * @private
       */
-    var incrementIncomingBytes_ : js.Any = js.native
+    /* private */ var incrementIncomingBytes_ : js.Any = js.native
     
-    var isClosed_ : js.Any = js.native
+    /* private */ var isClosed_ : js.Any = js.native
     
     var lastSessionId: js.UndefOr[String] = js.native
     
-    var log_ : js.Any = js.native
+    /* private */ var log_ : js.Any = js.native
     
     var myDisconnFrame: HTMLIFrameElement = js.native
     
@@ -101,9 +101,9 @@ object browserPollConnectionMod {
       * Triggered when this transport is closed
       * @private
       */
-    var onClosed_ : js.Any = js.native
+    /* private */ var onClosed_ : js.Any = js.native
     
-    var onDisconnect_ : js.Any = js.native
+    /* private */ var onDisconnect_ : js.Any = js.native
     
     var password: String = js.native
     
@@ -115,9 +115,9 @@ object browserPollConnectionMod {
       * Stops polling and cleans up the iframe
       * @private
       */
-    var shutdown_ : js.Any = js.native
+    /* private */ var shutdown_ : js.Any = js.native
     
-    var stats_ : js.Any = js.native
+    /* private */ var stats_ : js.Any = js.native
     
     var transportSessionId: js.UndefOr[String] = js.native
     
@@ -133,29 +133,24 @@ object browserPollConnectionMod {
     /**
       * Forces long polling to be considered as a potential transport
       */
-    @scala.inline
-    def forceAllow(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forceAllow")().asInstanceOf[Unit]
+    inline def forceAllow(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forceAllow")().asInstanceOf[Unit]
     
     @JSImport("@firebase/database/dist/src/realtime/BrowserPollConnection", "BrowserPollConnection.forceAllow_")
     @js.native
     def forceAllow_ : js.Any = js.native
-    @scala.inline
-    def forceAllow__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forceAllow_")(x.asInstanceOf[js.Any])
+    inline def forceAllow__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forceAllow_")(x.asInstanceOf[js.Any])
     
     /**
       * Forces longpolling to not be considered as a potential transport
       */
-    @scala.inline
-    def forceDisallow(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forceDisallow")().asInstanceOf[Unit]
+    inline def forceDisallow(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forceDisallow")().asInstanceOf[Unit]
     
     @JSImport("@firebase/database/dist/src/realtime/BrowserPollConnection", "BrowserPollConnection.forceDisallow_")
     @js.native
     def forceDisallow_ : js.Any = js.native
-    @scala.inline
-    def forceDisallow__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forceDisallow_")(x.asInstanceOf[js.Any])
+    inline def forceDisallow__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forceDisallow_")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
+    inline def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
   }
   
   @JSImport("@firebase/database/dist/src/realtime/BrowserPollConnection", "FIREBASE_LONGPOLL_CALLBACK_ID_PARAM")
@@ -232,7 +227,7 @@ object browserPollConnectionMod {
       * @param {!number} serial - The serial number of the request.
       * @private
       */
-    var addLongPollTag_ : js.Any = js.native
+    /* private */ var addLongPollTag_ : js.Any = js.native
     
     /**
       * Add an arbitrary script tag to the iframe.
@@ -273,7 +268,7 @@ object browserPollConnectionMod {
       * If there are outstanding packet segments to send, it sends one. If there aren't, it sends a long-poll anyways if
       * needed.
       */
-    var newRequest_ : js.Any = js.native
+    /* private */ var newRequest_ : js.Any = js.native
     
     def onDisconnect(): Unit = js.native
     
@@ -312,8 +307,7 @@ object browserPollConnectionMod {
     @JSImport("@firebase/database/dist/src/realtime/BrowserPollConnection", "FirebaseIFrameScriptHolder.createIFrame_")
     @js.native
     def createIFrame_ : js.Any = js.native
-    @scala.inline
-    def createIFrame__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createIFrame_")(x.asInstanceOf[js.Any])
+    inline def createIFrame__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createIFrame_")(x.asInstanceOf[js.Any])
   }
   
   @js.native

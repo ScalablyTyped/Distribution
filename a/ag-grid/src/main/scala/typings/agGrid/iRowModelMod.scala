@@ -65,8 +65,7 @@ object iRowModelMod {
   }
   object IRowModel {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       forEachNode: js.Function1[/* rowNode */ RowNode, Unit] => Unit,
       getCurrentPageHeight: () => Double,
       getNodesInRangeForSelection: (RowNode, RowNode) => js.Array[RowNode],
@@ -87,53 +86,37 @@ object iRowModelMod {
       __obj.asInstanceOf[IRowModel]
     }
     
-    @scala.inline
-    implicit class IRowModelMutableBuilder[Self <: IRowModel] (val x: Self) extends AnyVal {
+    extension [Self <: IRowModel](x: Self) {
       
-      @scala.inline
-      def setForEachNode(value: js.Function1[/* rowNode */ RowNode, Unit] => Unit): Self = StObject.set(x, "forEachNode", js.Any.fromFunction1(value))
+      inline def setForEachNode(value: js.Function1[/* rowNode */ RowNode, Unit] => Unit): Self = StObject.set(x, "forEachNode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetCurrentPageHeight(value: () => Double): Self = StObject.set(x, "getCurrentPageHeight", js.Any.fromFunction0(value))
+      inline def setGetCurrentPageHeight(value: () => Double): Self = StObject.set(x, "getCurrentPageHeight", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetNodesInRangeForSelection(value: (RowNode, RowNode) => js.Array[RowNode]): Self = StObject.set(x, "getNodesInRangeForSelection", js.Any.fromFunction2(value))
+      inline def setGetNodesInRangeForSelection(value: (RowNode, RowNode) => js.Array[RowNode]): Self = StObject.set(x, "getNodesInRangeForSelection", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetPageFirstRow(value: () => Double): Self = StObject.set(x, "getPageFirstRow", js.Any.fromFunction0(value))
+      inline def setGetPageFirstRow(value: () => Double): Self = StObject.set(x, "getPageFirstRow", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPageLastRow(value: () => Double): Self = StObject.set(x, "getPageLastRow", js.Any.fromFunction0(value))
+      inline def setGetPageLastRow(value: () => Double): Self = StObject.set(x, "getPageLastRow", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRow(value: Double => RowNode): Self = StObject.set(x, "getRow", js.Any.fromFunction1(value))
+      inline def setGetRow(value: Double => RowNode): Self = StObject.set(x, "getRow", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetRowBounds(value: Double => RowBounds): Self = StObject.set(x, "getRowBounds", js.Any.fromFunction1(value))
+      inline def setGetRowBounds(value: Double => RowBounds): Self = StObject.set(x, "getRowBounds", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetRowCount(value: () => Double): Self = StObject.set(x, "getRowCount", js.Any.fromFunction0(value))
+      inline def setGetRowCount(value: () => Double): Self = StObject.set(x, "getRowCount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRowIndexAtPixel(value: Double => Double): Self = StObject.set(x, "getRowIndexAtPixel", js.Any.fromFunction1(value))
+      inline def setGetRowIndexAtPixel(value: Double => Double): Self = StObject.set(x, "getRowIndexAtPixel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetRowNode(value: String => RowNode): Self = StObject.set(x, "getRowNode", js.Any.fromFunction1(value))
+      inline def setGetRowNode(value: String => RowNode): Self = StObject.set(x, "getRowNode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetType(value: () => String): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+      inline def setGetType(value: () => String): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
+      inline def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsLastRowFound(value: () => Boolean): Self = StObject.set(x, "isLastRowFound", js.Any.fromFunction0(value))
+      inline def setIsLastRowFound(value: () => Boolean): Self = StObject.set(x, "isLastRowFound", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsRowPresent(value: RowNode => Boolean): Self = StObject.set(x, "isRowPresent", js.Any.fromFunction1(value))
+      inline def setIsRowPresent(value: RowNode => Boolean): Self = StObject.set(x, "isRowPresent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsRowsToRender(value: () => Boolean): Self = StObject.set(x, "isRowsToRender", js.Any.fromFunction0(value))
+      inline def setIsRowsToRender(value: () => Boolean): Self = StObject.set(x, "isRowsToRender", js.Any.fromFunction0(value))
     }
   }
   
@@ -145,20 +128,16 @@ object iRowModelMod {
   }
   object RowBounds {
     
-    @scala.inline
-    def apply(rowHeight: Double, rowTop: Double): RowBounds = {
+    inline def apply(rowHeight: Double, rowTop: Double): RowBounds = {
       val __obj = js.Dynamic.literal(rowHeight = rowHeight.asInstanceOf[js.Any], rowTop = rowTop.asInstanceOf[js.Any])
       __obj.asInstanceOf[RowBounds]
     }
     
-    @scala.inline
-    implicit class RowBoundsMutableBuilder[Self <: RowBounds] (val x: Self) extends AnyVal {
+    extension [Self <: RowBounds](x: Self) {
       
-      @scala.inline
-      def setRowHeight(value: Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
+      inline def setRowHeight(value: Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowTop(value: Double): Self = StObject.set(x, "rowTop", value.asInstanceOf[js.Any])
+      inline def setRowTop(value: Double): Self = StObject.set(x, "rowTop", value.asInstanceOf[js.Any])
     }
   }
 }

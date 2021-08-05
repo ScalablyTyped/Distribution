@@ -18,25 +18,19 @@ trait DescribeStackProvisioningParametersResult extends StObject {
 }
 object DescribeStackProvisioningParametersResult {
   
-  @scala.inline
-  def apply(): DescribeStackProvisioningParametersResult = {
+  inline def apply(): DescribeStackProvisioningParametersResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeStackProvisioningParametersResult]
   }
   
-  @scala.inline
-  implicit class DescribeStackProvisioningParametersResultMutableBuilder[Self <: DescribeStackProvisioningParametersResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeStackProvisioningParametersResult](x: Self) {
     
-    @scala.inline
-    def setAgentInstallerUrl(value: String): Self = StObject.set(x, "AgentInstallerUrl", value.asInstanceOf[js.Any])
+    inline def setAgentInstallerUrl(value: String): Self = StObject.set(x, "AgentInstallerUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentInstallerUrlUndefined: Self = StObject.set(x, "AgentInstallerUrl", js.undefined)
+    inline def setAgentInstallerUrlUndefined: Self = StObject.set(x, "AgentInstallerUrl", js.undefined)
     
-    @scala.inline
-    def setParameters(value: Parameters): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: Parameters): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
   }
 }

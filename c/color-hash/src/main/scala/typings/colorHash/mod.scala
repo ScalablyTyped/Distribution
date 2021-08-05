@@ -73,23 +73,18 @@ object mod {
   }
   object ColorHash {
     
-    @scala.inline
-    def apply(hex: String => String, hsl: String => ColorValueArray, rgb: String => ColorValueArray): ColorHash = {
+    inline def apply(hex: String => String, hsl: String => ColorValueArray, rgb: String => ColorValueArray): ColorHash = {
       val __obj = js.Dynamic.literal(hex = js.Any.fromFunction1(hex), hsl = js.Any.fromFunction1(hsl), rgb = js.Any.fromFunction1(rgb))
       __obj.asInstanceOf[ColorHash]
     }
     
-    @scala.inline
-    implicit class ColorHashMutableBuilder[Self <: ColorHash] (val x: Self) extends AnyVal {
+    extension [Self <: ColorHash](x: Self) {
       
-      @scala.inline
-      def setHex(value: String => String): Self = StObject.set(x, "hex", js.Any.fromFunction1(value))
+      inline def setHex(value: String => String): Self = StObject.set(x, "hex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHsl(value: String => ColorValueArray): Self = StObject.set(x, "hsl", js.Any.fromFunction1(value))
+      inline def setHsl(value: String => ColorValueArray): Self = StObject.set(x, "hsl", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRgb(value: String => ColorValueArray): Self = StObject.set(x, "rgb", js.Any.fromFunction1(value))
+      inline def setRgb(value: String => ColorValueArray): Self = StObject.set(x, "rgb", js.Any.fromFunction1(value))
     }
   }
   
@@ -105,41 +100,30 @@ object mod {
   }
   object ColorHashOptions {
     
-    @scala.inline
-    def apply(): ColorHashOptions = {
+    inline def apply(): ColorHashOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ColorHashOptions]
     }
     
-    @scala.inline
-    implicit class ColorHashOptionsMutableBuilder[Self <: ColorHashOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ColorHashOptions](x: Self) {
       
-      @scala.inline
-      def setHash(value: /* input */ String => Double): Self = StObject.set(x, "hash", js.Any.fromFunction1(value))
+      inline def setHash(value: /* input */ String => Double): Self = StObject.set(x, "hash", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+      inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
       
-      @scala.inline
-      def setHue(value: Hue): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
+      inline def setHue(value: Hue): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHueUndefined: Self = StObject.set(x, "hue", js.undefined)
+      inline def setHueUndefined: Self = StObject.set(x, "hue", js.undefined)
       
-      @scala.inline
-      def setHueVarargs(value: HueObject*): Self = StObject.set(x, "hue", js.Array(value :_*))
+      inline def setHueVarargs(value: HueObject*): Self = StObject.set(x, "hue", js.Array(value :_*))
       
-      @scala.inline
-      def setLightness(value: Lightness): Self = StObject.set(x, "lightness", value.asInstanceOf[js.Any])
+      inline def setLightness(value: Lightness): Self = StObject.set(x, "lightness", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLightnessUndefined: Self = StObject.set(x, "lightness", js.undefined)
+      inline def setLightnessUndefined: Self = StObject.set(x, "lightness", js.undefined)
       
-      @scala.inline
-      def setSaturation(value: Saturation): Self = StObject.set(x, "saturation", value.asInstanceOf[js.Any])
+      inline def setSaturation(value: Saturation): Self = StObject.set(x, "saturation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaturationUndefined: Self = StObject.set(x, "saturation", js.undefined)
+      inline def setSaturationUndefined: Self = StObject.set(x, "saturation", js.undefined)
     }
   }
   
@@ -157,20 +141,16 @@ object mod {
   }
   object HueObject {
     
-    @scala.inline
-    def apply(max: Double, min: Double): HueObject = {
+    inline def apply(max: Double, min: Double): HueObject = {
       val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
       __obj.asInstanceOf[HueObject]
     }
     
-    @scala.inline
-    implicit class HueObjectMutableBuilder[Self <: HueObject] (val x: Self) extends AnyVal {
+    extension [Self <: HueObject](x: Self) {
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     }
   }
   

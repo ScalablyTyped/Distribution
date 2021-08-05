@@ -33,8 +33,7 @@ trait NamedScaleRange
 }
 object NamedScaleRange {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     id: String,
@@ -46,16 +45,12 @@ object NamedScaleRange {
     __obj.asInstanceOf[NamedScaleRange]
   }
   
-  @scala.inline
-  implicit class NamedScaleRangeMutableBuilder[Self <: NamedScaleRange] (val x: Self) extends AnyVal {
+  extension [Self <: NamedScaleRange](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxScale(value: Double): Self = StObject.set(x, "maxScale", value.asInstanceOf[js.Any])
+    inline def setMaxScale(value: Double): Self = StObject.set(x, "maxScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinScale(value: Double): Self = StObject.set(x, "minScale", value.asInstanceOf[js.Any])
+    inline def setMinScale(value: Double): Self = StObject.set(x, "minScale", value.asInstanceOf[js.Any])
   }
 }

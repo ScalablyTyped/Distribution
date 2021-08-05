@@ -23,31 +23,23 @@ trait ChangedBlock extends StObject {
 }
 object ChangedBlock {
   
-  @scala.inline
-  def apply(): ChangedBlock = {
+  inline def apply(): ChangedBlock = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChangedBlock]
   }
   
-  @scala.inline
-  implicit class ChangedBlockMutableBuilder[Self <: ChangedBlock] (val x: Self) extends AnyVal {
+  extension [Self <: ChangedBlock](x: Self) {
     
-    @scala.inline
-    def setBlockIndex(value: BlockIndex): Self = StObject.set(x, "BlockIndex", value.asInstanceOf[js.Any])
+    inline def setBlockIndex(value: BlockIndex): Self = StObject.set(x, "BlockIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockIndexUndefined: Self = StObject.set(x, "BlockIndex", js.undefined)
+    inline def setBlockIndexUndefined: Self = StObject.set(x, "BlockIndex", js.undefined)
     
-    @scala.inline
-    def setFirstBlockToken(value: BlockToken): Self = StObject.set(x, "FirstBlockToken", value.asInstanceOf[js.Any])
+    inline def setFirstBlockToken(value: BlockToken): Self = StObject.set(x, "FirstBlockToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstBlockTokenUndefined: Self = StObject.set(x, "FirstBlockToken", js.undefined)
+    inline def setFirstBlockTokenUndefined: Self = StObject.set(x, "FirstBlockToken", js.undefined)
     
-    @scala.inline
-    def setSecondBlockToken(value: BlockToken): Self = StObject.set(x, "SecondBlockToken", value.asInstanceOf[js.Any])
+    inline def setSecondBlockToken(value: BlockToken): Self = StObject.set(x, "SecondBlockToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondBlockTokenUndefined: Self = StObject.set(x, "SecondBlockToken", js.undefined)
+    inline def setSecondBlockTokenUndefined: Self = StObject.set(x, "SecondBlockToken", js.undefined)
   }
 }

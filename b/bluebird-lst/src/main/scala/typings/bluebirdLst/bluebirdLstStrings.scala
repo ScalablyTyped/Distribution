@@ -8,6 +8,5 @@ object bluebirdLstStrings {
   
   @js.native
   sealed trait ResolvableProps extends StObject
-  @scala.inline
-  def ResolvableProps: ResolvableProps = "ResolvableProps".asInstanceOf[ResolvableProps]
+  inline def ResolvableProps: ResolvableProps = "ResolvableProps".asInstanceOf[ResolvableProps]
 }

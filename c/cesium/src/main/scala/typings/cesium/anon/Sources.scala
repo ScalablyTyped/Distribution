@@ -12,25 +12,19 @@ trait Sources extends StObject {
 }
 object Sources {
   
-  @scala.inline
-  def apply(): Sources = {
+  inline def apply(): Sources = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Sources]
   }
   
-  @scala.inline
-  implicit class SourcesMutableBuilder[Self <: Sources] (val x: Self) extends AnyVal {
+  extension [Self <: Sources](x: Self) {
     
-    @scala.inline
-    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
-    @scala.inline
-    def setSources(value: js.Any): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
+    inline def setSources(value: js.Any): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
+    inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
   }
 }

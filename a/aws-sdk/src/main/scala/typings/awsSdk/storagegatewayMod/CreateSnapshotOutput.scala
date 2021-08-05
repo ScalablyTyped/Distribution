@@ -18,25 +18,19 @@ trait CreateSnapshotOutput extends StObject {
 }
 object CreateSnapshotOutput {
   
-  @scala.inline
-  def apply(): CreateSnapshotOutput = {
+  inline def apply(): CreateSnapshotOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateSnapshotOutput]
   }
   
-  @scala.inline
-  implicit class CreateSnapshotOutputMutableBuilder[Self <: CreateSnapshotOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSnapshotOutput](x: Self) {
     
-    @scala.inline
-    def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
+    inline def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotIdUndefined: Self = StObject.set(x, "SnapshotId", js.undefined)
+    inline def setSnapshotIdUndefined: Self = StObject.set(x, "SnapshotId", js.undefined)
     
-    @scala.inline
-    def setVolumeARN(value: VolumeARN): Self = StObject.set(x, "VolumeARN", value.asInstanceOf[js.Any])
+    inline def setVolumeARN(value: VolumeARN): Self = StObject.set(x, "VolumeARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeARNUndefined: Self = StObject.set(x, "VolumeARN", js.undefined)
+    inline def setVolumeARNUndefined: Self = StObject.set(x, "VolumeARN", js.undefined)
   }
 }

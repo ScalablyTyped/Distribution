@@ -21,46 +21,33 @@ trait Duration
 }
 object Duration {
   
-  @scala.inline
-  def apply(): Duration = {
+  inline def apply(): Duration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Duration]
   }
   
-  @scala.inline
-  implicit class DurationMutableBuilder[Self <: Duration] (val x: Self) extends AnyVal {
+  extension [Self <: Duration](x: Self) {
     
-    @scala.inline
-    def setNano(value: Double): Self = StObject.set(x, "nano", value.asInstanceOf[js.Any])
+    inline def setNano(value: Double): Self = StObject.set(x, "nano", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNanoUndefined: Self = StObject.set(x, "nano", js.undefined)
+    inline def setNanoUndefined: Self = StObject.set(x, "nano", js.undefined)
     
-    @scala.inline
-    def setNegative(value: Boolean): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
+    inline def setNegative(value: Boolean): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegativeUndefined: Self = StObject.set(x, "negative", js.undefined)
+    inline def setNegativeUndefined: Self = StObject.set(x, "negative", js.undefined)
     
-    @scala.inline
-    def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+    inline def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondsUndefined: Self = StObject.set(x, "seconds", js.undefined)
+    inline def setSecondsUndefined: Self = StObject.set(x, "seconds", js.undefined)
     
-    @scala.inline
-    def setUnits(value: js.Array[TemporalUnit]): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+    inline def setUnits(value: js.Array[TemporalUnit]): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
+    inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
     
-    @scala.inline
-    def setUnitsVarargs(value: TemporalUnit*): Self = StObject.set(x, "units", js.Array(value :_*))
+    inline def setUnitsVarargs(value: TemporalUnit*): Self = StObject.set(x, "units", js.Array(value :_*))
     
-    @scala.inline
-    def setZero(value: Boolean): Self = StObject.set(x, "zero", value.asInstanceOf[js.Any])
+    inline def setZero(value: Boolean): Self = StObject.set(x, "zero", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZeroUndefined: Self = StObject.set(x, "zero", js.undefined)
+    inline def setZeroUndefined: Self = StObject.set(x, "zero", js.undefined)
   }
 }

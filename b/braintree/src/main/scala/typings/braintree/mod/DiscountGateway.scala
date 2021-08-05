@@ -10,16 +10,13 @@ trait DiscountGateway extends StObject {
 }
 object DiscountGateway {
   
-  @scala.inline
-  def apply(all: () => js.Promise[js.Array[Discount]]): DiscountGateway = {
+  inline def apply(all: () => js.Promise[js.Array[Discount]]): DiscountGateway = {
     val __obj = js.Dynamic.literal(all = js.Any.fromFunction0(all))
     __obj.asInstanceOf[DiscountGateway]
   }
   
-  @scala.inline
-  implicit class DiscountGatewayMutableBuilder[Self <: DiscountGateway] (val x: Self) extends AnyVal {
+  extension [Self <: DiscountGateway](x: Self) {
     
-    @scala.inline
-    def setAll(value: () => js.Promise[js.Array[Discount]]): Self = StObject.set(x, "all", js.Any.fromFunction0(value))
+    inline def setAll(value: () => js.Promise[js.Array[Discount]]): Self = StObject.set(x, "all", js.Any.fromFunction0(value))
   }
 }

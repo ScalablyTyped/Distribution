@@ -10,16 +10,13 @@ trait IFileRemovedEventArgs extends StObject {
 }
 object IFileRemovedEventArgs {
   
-  @scala.inline
-  def apply(id: String): IFileRemovedEventArgs = {
+  inline def apply(id: String): IFileRemovedEventArgs = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFileRemovedEventArgs]
   }
   
-  @scala.inline
-  implicit class IFileRemovedEventArgsMutableBuilder[Self <: IFileRemovedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IFileRemovedEventArgs](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

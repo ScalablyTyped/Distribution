@@ -265,20 +265,16 @@ object githubApiMod {
   }
   object SearchResult {
     
-    @scala.inline
-    def apply[T](result: T, score: Double): SearchResult[T] = {
+    inline def apply[T](result: T, score: Double): SearchResult[T] = {
       val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any])
       __obj.asInstanceOf[SearchResult[T]]
     }
     
-    @scala.inline
-    implicit class SearchResultMutableBuilder[Self <: SearchResult[?], T] (val x: Self & SearchResult[T]) extends AnyVal {
+    extension [Self <: SearchResult[?], T](x: Self & SearchResult[T]) {
       
-      @scala.inline
-      def setResult(value: T): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: T): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+      inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     }
   }
 }

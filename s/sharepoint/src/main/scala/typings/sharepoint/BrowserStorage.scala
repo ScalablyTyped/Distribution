@@ -22,8 +22,7 @@ object BrowserStorage {
   }
   object CachedStorage {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clead: () => Unit,
       getItem: String => String,
       length: Double,
@@ -34,23 +33,17 @@ object BrowserStorage {
       __obj.asInstanceOf[CachedStorage]
     }
     
-    @scala.inline
-    implicit class CachedStorageMutableBuilder[Self <: CachedStorage] (val x: Self) extends AnyVal {
+    extension [Self <: CachedStorage](x: Self) {
       
-      @scala.inline
-      def setClead(value: () => Unit): Self = StObject.set(x, "clead", js.Any.fromFunction0(value))
+      inline def setClead(value: () => Unit): Self = StObject.set(x, "clead", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetItem(value: String => String): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
+      inline def setGetItem(value: String => String): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveItem(value: String => Unit): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
+      inline def setRemoveItem(value: String => Unit): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetItem(value: (String, String) => Unit): Self = StObject.set(x, "setItem", js.Any.fromFunction2(value))
+      inline def setSetItem(value: (String, String) => Unit): Self = StObject.set(x, "setItem", js.Any.fromFunction2(value))
     }
   }
 }

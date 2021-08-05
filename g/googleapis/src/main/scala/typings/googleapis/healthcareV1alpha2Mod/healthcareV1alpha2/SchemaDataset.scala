@@ -28,25 +28,19 @@ trait SchemaDataset extends StObject {
 }
 object SchemaDataset {
   
-  @scala.inline
-  def apply(): SchemaDataset = {
+  inline def apply(): SchemaDataset = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDataset]
   }
   
-  @scala.inline
-  implicit class SchemaDatasetMutableBuilder[Self <: SchemaDataset] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDataset](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
+    inline def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
+    inline def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
   }
 }

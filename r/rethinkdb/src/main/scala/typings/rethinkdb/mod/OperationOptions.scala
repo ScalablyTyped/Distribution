@@ -89,8 +89,7 @@ trait OperationOptions extends StObject {
 }
 object OperationOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     arrayLimit: Double,
     binaryFormat: native | raw,
     db: String,
@@ -110,49 +109,34 @@ object OperationOptions {
     __obj.asInstanceOf[OperationOptions]
   }
   
-  @scala.inline
-  implicit class OperationOptionsMutableBuilder[Self <: OperationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OperationOptions](x: Self) {
     
-    @scala.inline
-    def setArrayLimit(value: Double): Self = StObject.set(x, "arrayLimit", value.asInstanceOf[js.Any])
+    inline def setArrayLimit(value: Double): Self = StObject.set(x, "arrayLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBinaryFormat(value: native | raw): Self = StObject.set(x, "binaryFormat", value.asInstanceOf[js.Any])
+    inline def setBinaryFormat(value: native | raw): Self = StObject.set(x, "binaryFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDb(value: String): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
+    inline def setDb(value: String): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurability(value: hard | soft): Self = StObject.set(x, "durability", value.asInstanceOf[js.Any])
+    inline def setDurability(value: hard | soft): Self = StObject.set(x, "durability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstBatchScaledownFactor(value: Double): Self = StObject.set(x, "firstBatchScaledownFactor", value.asInstanceOf[js.Any])
+    inline def setFirstBatchScaledownFactor(value: Double): Self = StObject.set(x, "firstBatchScaledownFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupFormat(value: native | raw): Self = StObject.set(x, "groupFormat", value.asInstanceOf[js.Any])
+    inline def setGroupFormat(value: native | raw): Self = StObject.set(x, "groupFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxBatchBytes(value: Double): Self = StObject.set(x, "maxBatchBytes", value.asInstanceOf[js.Any])
+    inline def setMaxBatchBytes(value: Double): Self = StObject.set(x, "maxBatchBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxBatchRows(value: Double): Self = StObject.set(x, "maxBatchRows", value.asInstanceOf[js.Any])
+    inline def setMaxBatchRows(value: Double): Self = StObject.set(x, "maxBatchRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxBatchSeconds(value: Double): Self = StObject.set(x, "maxBatchSeconds", value.asInstanceOf[js.Any])
+    inline def setMaxBatchSeconds(value: Double): Self = StObject.set(x, "maxBatchSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinBatchRows(value: Double): Self = StObject.set(x, "minBatchRows", value.asInstanceOf[js.Any])
+    inline def setMinBatchRows(value: Double): Self = StObject.set(x, "minBatchRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoreply(value: Boolean): Self = StObject.set(x, "noreply", value.asInstanceOf[js.Any])
+    inline def setNoreply(value: Boolean): Self = StObject.set(x, "noreply", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfile(value: Boolean): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+    inline def setProfile(value: Boolean): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadMode(value: single | majority | outdated): Self = StObject.set(x, "readMode", value.asInstanceOf[js.Any])
+    inline def setReadMode(value: single | majority | outdated): Self = StObject.set(x, "readMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeFormat(value: native | raw): Self = StObject.set(x, "timeFormat", value.asInstanceOf[js.Any])
+    inline def setTimeFormat(value: native | raw): Self = StObject.set(x, "timeFormat", value.asInstanceOf[js.Any])
   }
 }

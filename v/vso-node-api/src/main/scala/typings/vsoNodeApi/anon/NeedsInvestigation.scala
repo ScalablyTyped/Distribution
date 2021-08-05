@@ -22,8 +22,7 @@ trait NeedsInvestigation extends StObject {
 }
 object NeedsInvestigation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     aborted: scala.Double,
     completed: scala.Double,
     inProgress: scala.Double,
@@ -36,28 +35,20 @@ object NeedsInvestigation {
     __obj.asInstanceOf[NeedsInvestigation]
   }
   
-  @scala.inline
-  implicit class NeedsInvestigationMutableBuilder[Self <: NeedsInvestigation] (val x: Self) extends AnyVal {
+  extension [Self <: NeedsInvestigation](x: Self) {
     
-    @scala.inline
-    def setAborted(value: scala.Double): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
+    inline def setAborted(value: scala.Double): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompleted(value: scala.Double): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
+    inline def setCompleted(value: scala.Double): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInProgress(value: scala.Double): Self = StObject.set(x, "inProgress", value.asInstanceOf[js.Any])
+    inline def setInProgress(value: scala.Double): Self = StObject.set(x, "inProgress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeedsInvestigation(value: scala.Double): Self = StObject.set(x, "needsInvestigation", value.asInstanceOf[js.Any])
+    inline def setNeedsInvestigation(value: scala.Double): Self = StObject.set(x, "needsInvestigation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotStarted(value: scala.Double): Self = StObject.set(x, "notStarted", value.asInstanceOf[js.Any])
+    inline def setNotStarted(value: scala.Double): Self = StObject.set(x, "notStarted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnspecified(value: scala.Double): Self = StObject.set(x, "unspecified", value.asInstanceOf[js.Any])
+    inline def setUnspecified(value: scala.Double): Self = StObject.set(x, "unspecified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaiting(value: scala.Double): Self = StObject.set(x, "waiting", value.asInstanceOf[js.Any])
+    inline def setWaiting(value: scala.Double): Self = StObject.set(x, "waiting", value.asInstanceOf[js.Any])
   }
 }

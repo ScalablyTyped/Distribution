@@ -21,39 +21,26 @@ object ioUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def arrayBufferToBase64String(buffer: ArrayBuffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayBufferToBase64String")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def arrayBufferToBase64String(buffer: ArrayBuffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayBufferToBase64String")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def base64StringToArrayBuffer(str: String): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("base64StringToArrayBuffer")(str.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
+  inline def base64StringToArrayBuffer(str: String): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("base64StringToArrayBuffer")(str.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
   
-  @scala.inline
-  def basename(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("basename")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def basename(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("basename")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def concatenateArrayBuffers(buffers: js.Array[ArrayBuffer]): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("concatenateArrayBuffers")(buffers.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
+  inline def concatenateArrayBuffers(buffers: js.Array[ArrayBuffer]): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("concatenateArrayBuffers")(buffers.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
   
-  @scala.inline
-  def concatenateTypedArrays(xs: js.Array[TypedArray]): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("concatenateTypedArrays")(xs.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
+  inline def concatenateTypedArrays(xs: js.Array[TypedArray]): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("concatenateTypedArrays")(xs.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
   
-  @scala.inline
-  def decodeWeights(buffer: ArrayBuffer, specs: js.Array[WeightsManifestEntry]): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeWeights")(buffer.asInstanceOf[js.Any], specs.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+  inline def decodeWeights(buffer: ArrayBuffer, specs: js.Array[WeightsManifestEntry]): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeWeights")(buffer.asInstanceOf[js.Any], specs.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
   
-  @scala.inline
-  def encodeWeights(tensors: js.Array[NamedTensor]): js.Promise[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeWeights")(tensors.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Data]]
-  @scala.inline
-  def encodeWeights(tensors: js.Array[NamedTensor], group: WeightGroup): js.Promise[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWeights")(tensors.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Data]]
-  @scala.inline
-  def encodeWeights(tensors: NamedTensorMap): js.Promise[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeWeights")(tensors.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Data]]
-  @scala.inline
-  def encodeWeights(tensors: NamedTensorMap, group: WeightGroup): js.Promise[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWeights")(tensors.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Data]]
+  inline def encodeWeights(tensors: js.Array[NamedTensor]): js.Promise[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeWeights")(tensors.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Data]]
+  inline def encodeWeights(tensors: js.Array[NamedTensor], group: WeightGroup): js.Promise[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWeights")(tensors.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Data]]
+  inline def encodeWeights(tensors: NamedTensorMap): js.Promise[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeWeights")(tensors.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Data]]
+  inline def encodeWeights(tensors: NamedTensorMap, group: WeightGroup): js.Promise[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWeights")(tensors.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Data]]
   
-  @scala.inline
-  def getFloat16Decoder(): js.Function1[/* buffer */ Uint16Array, Float32Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFloat16Decoder")().asInstanceOf[js.Function1[/* buffer */ Uint16Array, Float32Array]]
+  inline def getFloat16Decoder(): js.Function1[/* buffer */ Uint16Array, Float32Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFloat16Decoder")().asInstanceOf[js.Function1[/* buffer */ Uint16Array, Float32Array]]
   
-  @scala.inline
-  def getModelArtifactsInfoForJSON(modelArtifacts: ModelArtifacts): ModelArtifactsInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("getModelArtifactsInfoForJSON")(modelArtifacts.asInstanceOf[js.Any]).asInstanceOf[ModelArtifactsInfo]
+  inline def getModelArtifactsInfoForJSON(modelArtifacts: ModelArtifacts): ModelArtifactsInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("getModelArtifactsInfoForJSON")(modelArtifacts.asInstanceOf[js.Any]).asInstanceOf[ModelArtifactsInfo]
   
-  @scala.inline
-  def stringByteLength(str: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("stringByteLength")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def stringByteLength(str: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("stringByteLength")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

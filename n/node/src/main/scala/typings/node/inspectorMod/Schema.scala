@@ -23,20 +23,16 @@ object Schema {
   }
   object Domain {
     
-    @scala.inline
-    def apply(name: String, version: String): Domain = {
+    inline def apply(name: String, version: String): Domain = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[Domain]
     }
     
-    @scala.inline
-    implicit class DomainMutableBuilder[Self <: Domain] (val x: Self) extends AnyVal {
+    extension [Self <: Domain](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -49,20 +45,16 @@ object Schema {
   }
   object GetDomainsReturnType {
     
-    @scala.inline
-    def apply(domains: js.Array[Domain]): GetDomainsReturnType = {
+    inline def apply(domains: js.Array[Domain]): GetDomainsReturnType = {
       val __obj = js.Dynamic.literal(domains = domains.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetDomainsReturnType]
     }
     
-    @scala.inline
-    implicit class GetDomainsReturnTypeMutableBuilder[Self <: GetDomainsReturnType] (val x: Self) extends AnyVal {
+    extension [Self <: GetDomainsReturnType](x: Self) {
       
-      @scala.inline
-      def setDomains(value: js.Array[Domain]): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
+      inline def setDomains(value: js.Array[Domain]): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainsVarargs(value: Domain*): Self = StObject.set(x, "domains", js.Array(value :_*))
+      inline def setDomainsVarargs(value: Domain*): Self = StObject.set(x, "domains", js.Array(value :_*))
     }
   }
 }

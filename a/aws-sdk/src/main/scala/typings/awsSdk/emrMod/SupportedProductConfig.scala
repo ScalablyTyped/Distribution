@@ -18,28 +18,21 @@ trait SupportedProductConfig extends StObject {
 }
 object SupportedProductConfig {
   
-  @scala.inline
-  def apply(): SupportedProductConfig = {
+  inline def apply(): SupportedProductConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SupportedProductConfig]
   }
   
-  @scala.inline
-  implicit class SupportedProductConfigMutableBuilder[Self <: SupportedProductConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SupportedProductConfig](x: Self) {
     
-    @scala.inline
-    def setArgs(value: XmlStringList): Self = StObject.set(x, "Args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: XmlStringList): Self = StObject.set(x, "Args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsUndefined: Self = StObject.set(x, "Args", js.undefined)
+    inline def setArgsUndefined: Self = StObject.set(x, "Args", js.undefined)
     
-    @scala.inline
-    def setArgsVarargs(value: XmlString*): Self = StObject.set(x, "Args", js.Array(value :_*))
+    inline def setArgsVarargs(value: XmlString*): Self = StObject.set(x, "Args", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: XmlStringMaxLen256): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: XmlStringMaxLen256): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

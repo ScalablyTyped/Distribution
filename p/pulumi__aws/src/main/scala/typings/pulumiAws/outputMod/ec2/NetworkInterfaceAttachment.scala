@@ -20,22 +20,17 @@ trait NetworkInterfaceAttachment extends StObject {
 }
 object NetworkInterfaceAttachment {
   
-  @scala.inline
-  def apply(attachmentId: String, deviceIndex: Double, instance: String): NetworkInterfaceAttachment = {
+  inline def apply(attachmentId: String, deviceIndex: Double, instance: String): NetworkInterfaceAttachment = {
     val __obj = js.Dynamic.literal(attachmentId = attachmentId.asInstanceOf[js.Any], deviceIndex = deviceIndex.asInstanceOf[js.Any], instance = instance.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkInterfaceAttachment]
   }
   
-  @scala.inline
-  implicit class NetworkInterfaceAttachmentMutableBuilder[Self <: NetworkInterfaceAttachment] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkInterfaceAttachment](x: Self) {
     
-    @scala.inline
-    def setAttachmentId(value: String): Self = StObject.set(x, "attachmentId", value.asInstanceOf[js.Any])
+    inline def setAttachmentId(value: String): Self = StObject.set(x, "attachmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceIndex(value: Double): Self = StObject.set(x, "deviceIndex", value.asInstanceOf[js.Any])
+    inline def setDeviceIndex(value: Double): Self = StObject.set(x, "deviceIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
   }
 }

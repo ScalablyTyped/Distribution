@@ -13,16 +13,13 @@ trait DescribeOrganizationConfigurationRequest extends StObject {
 }
 object DescribeOrganizationConfigurationRequest {
   
-  @scala.inline
-  def apply(DetectorId: DetectorId): DescribeOrganizationConfigurationRequest = {
+  inline def apply(DetectorId: DetectorId): DescribeOrganizationConfigurationRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeOrganizationConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class DescribeOrganizationConfigurationRequestMutableBuilder[Self <: DescribeOrganizationConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeOrganizationConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
+    inline def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
   }
 }

@@ -24,17 +24,14 @@ object selectTriggerMod extends Shortcut {
   }
   object RefTriggerProps {
     
-    @scala.inline
-    def apply(getPopupElement: () => HTMLDivElement): RefTriggerProps = {
+    inline def apply(getPopupElement: () => HTMLDivElement): RefTriggerProps = {
       val __obj = js.Dynamic.literal(getPopupElement = js.Any.fromFunction0(getPopupElement))
       __obj.asInstanceOf[RefTriggerProps]
     }
     
-    @scala.inline
-    implicit class RefTriggerPropsMutableBuilder[Self <: RefTriggerProps] (val x: Self) extends AnyVal {
+    extension [Self <: RefTriggerProps](x: Self) {
       
-      @scala.inline
-      def setGetPopupElement(value: () => HTMLDivElement): Self = StObject.set(x, "getPopupElement", js.Any.fromFunction0(value))
+      inline def setGetPopupElement(value: () => HTMLDivElement): Self = StObject.set(x, "getPopupElement", js.Any.fromFunction0(value))
     }
   }
   
@@ -76,8 +73,7 @@ object selectTriggerMod extends Shortcut {
   }
   object SelectTriggerProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       children: ReactElement,
       containerWidth: Double,
       direction: String,
@@ -95,74 +91,51 @@ object selectTriggerMod extends Shortcut {
       __obj.asInstanceOf[SelectTriggerProps]
     }
     
-    @scala.inline
-    implicit class SelectTriggerPropsMutableBuilder[Self <: SelectTriggerProps] (val x: Self) extends AnyVal {
+    extension [Self <: SelectTriggerProps](x: Self) {
       
-      @scala.inline
-      def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+      inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerWidth(value: Double): Self = StObject.set(x, "containerWidth", value.asInstanceOf[js.Any])
+      inline def setContainerWidth(value: Double): Self = StObject.set(x, "containerWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropdownAlign(value: js.Object): Self = StObject.set(x, "dropdownAlign", value.asInstanceOf[js.Any])
+      inline def setDropdownAlign(value: js.Object): Self = StObject.set(x, "dropdownAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropdownClassName(value: String): Self = StObject.set(x, "dropdownClassName", value.asInstanceOf[js.Any])
+      inline def setDropdownClassName(value: String): Self = StObject.set(x, "dropdownClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropdownMatchSelectWidth(value: Boolean | Double): Self = StObject.set(x, "dropdownMatchSelectWidth", value.asInstanceOf[js.Any])
+      inline def setDropdownMatchSelectWidth(value: Boolean | Double): Self = StObject.set(x, "dropdownMatchSelectWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropdownMatchSelectWidthUndefined: Self = StObject.set(x, "dropdownMatchSelectWidth", js.undefined)
+      inline def setDropdownMatchSelectWidthUndefined: Self = StObject.set(x, "dropdownMatchSelectWidth", js.undefined)
       
-      @scala.inline
-      def setDropdownRender(value: /* menu */ ReactElement => ReactElement): Self = StObject.set(x, "dropdownRender", js.Any.fromFunction1(value))
+      inline def setDropdownRender(value: /* menu */ ReactElement => ReactElement): Self = StObject.set(x, "dropdownRender", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDropdownRenderUndefined: Self = StObject.set(x, "dropdownRender", js.undefined)
+      inline def setDropdownRenderUndefined: Self = StObject.set(x, "dropdownRender", js.undefined)
       
-      @scala.inline
-      def setDropdownStyle(value: CSSProperties): Self = StObject.set(x, "dropdownStyle", value.asInstanceOf[js.Any])
+      inline def setDropdownStyle(value: CSSProperties): Self = StObject.set(x, "dropdownStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmpty(value: Boolean): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
+      inline def setEmpty(value: Boolean): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetPopupContainer(value: /* props */ js.Any => HTMLElement): Self = StObject.set(x, "getPopupContainer", js.Any.fromFunction1(value))
+      inline def setGetPopupContainer(value: /* props */ js.Any => HTMLElement): Self = StObject.set(x, "getPopupContainer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetPopupContainerUndefined: Self = StObject.set(x, "getPopupContainer", js.undefined)
+      inline def setGetPopupContainerUndefined: Self = StObject.set(x, "getPopupContainer", js.undefined)
       
-      @scala.inline
-      def setGetTriggerDOMNode(value: () => HTMLElement): Self = StObject.set(x, "getTriggerDOMNode", js.Any.fromFunction0(value))
+      inline def setGetTriggerDOMNode(value: () => HTMLElement): Self = StObject.set(x, "getTriggerDOMNode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPopupElement(value: ReactElement): Self = StObject.set(x, "popupElement", value.asInstanceOf[js.Any])
+      inline def setPopupElement(value: ReactElement): Self = StObject.set(x, "popupElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionName(value: String): Self = StObject.set(x, "transitionName", value.asInstanceOf[js.Any])
+      inline def setTransitionName(value: String): Self = StObject.set(x, "transitionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionNameUndefined: Self = StObject.set(x, "transitionName", js.undefined)
+      inline def setTransitionNameUndefined: Self = StObject.set(x, "transitionName", js.undefined)
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     }
   }
   

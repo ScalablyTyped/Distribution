@@ -93,8 +93,7 @@ trait nlobjSearchColumn extends StObject {
 }
 object nlobjSearchColumn {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getFormula: () => String,
     getJoin: () => String,
     getLabel: () => String,
@@ -107,28 +106,20 @@ object nlobjSearchColumn {
     __obj.asInstanceOf[nlobjSearchColumn]
   }
   
-  @scala.inline
-  implicit class nlobjSearchColumnMutableBuilder[Self <: nlobjSearchColumn] (val x: Self) extends AnyVal {
+  extension [Self <: nlobjSearchColumn](x: Self) {
     
-    @scala.inline
-    def setGetFormula(value: () => String): Self = StObject.set(x, "getFormula", js.Any.fromFunction0(value))
+    inline def setGetFormula(value: () => String): Self = StObject.set(x, "getFormula", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetJoin(value: () => String): Self = StObject.set(x, "getJoin", js.Any.fromFunction0(value))
+    inline def setGetJoin(value: () => String): Self = StObject.set(x, "getJoin", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLabel(value: () => String): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
+    inline def setGetLabel(value: () => String): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSummary(value: () => String): Self = StObject.set(x, "getSummary", js.Any.fromFunction0(value))
+    inline def setGetSummary(value: () => String): Self = StObject.set(x, "getSummary", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetLabel(value: String => nlobjSearchColumn): Self = StObject.set(x, "setLabel", js.Any.fromFunction1(value))
+    inline def setSetLabel(value: String => nlobjSearchColumn): Self = StObject.set(x, "setLabel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSort(value: js.Any => js.Function3[/* name */ String, /* join */ String, /* summary */ String, Unit]): Self = StObject.set(x, "setSort", js.Any.fromFunction1(value))
+    inline def setSetSort(value: js.Any => js.Function3[/* name */ String, /* join */ String, /* summary */ String, Unit]): Self = StObject.set(x, "setSort", js.Any.fromFunction1(value))
   }
 }

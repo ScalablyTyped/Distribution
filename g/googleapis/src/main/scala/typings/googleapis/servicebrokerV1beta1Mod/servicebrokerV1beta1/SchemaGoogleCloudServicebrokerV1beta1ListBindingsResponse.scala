@@ -32,34 +32,25 @@ trait SchemaGoogleCloudServicebrokerV1beta1ListBindingsResponse extends StObject
 }
 object SchemaGoogleCloudServicebrokerV1beta1ListBindingsResponse {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudServicebrokerV1beta1ListBindingsResponse = {
+  inline def apply(): SchemaGoogleCloudServicebrokerV1beta1ListBindingsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudServicebrokerV1beta1ListBindingsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudServicebrokerV1beta1ListBindingsResponseMutableBuilder[Self <: SchemaGoogleCloudServicebrokerV1beta1ListBindingsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudServicebrokerV1beta1ListBindingsResponse](x: Self) {
     
-    @scala.inline
-    def setBindings(value: js.Array[SchemaGoogleCloudServicebrokerV1beta1Binding]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
+    inline def setBindings(value: js.Array[SchemaGoogleCloudServicebrokerV1beta1Binding]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
+    inline def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
     
-    @scala.inline
-    def setBindingsVarargs(value: SchemaGoogleCloudServicebrokerV1beta1Binding*): Self = StObject.set(x, "bindings", js.Array(value :_*))
+    inline def setBindingsVarargs(value: SchemaGoogleCloudServicebrokerV1beta1Binding*): Self = StObject.set(x, "bindings", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

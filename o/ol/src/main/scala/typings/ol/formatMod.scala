@@ -19,10 +19,8 @@ object formatMod {
     def this(opt_options: Options) = this()
   }
   
-  @scala.inline
-  def GML(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("GML")().asInstanceOf[Unit]
-  @scala.inline
-  def GML(opt_options: typings.ol.gmlbaseMod.Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("GML")(opt_options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def GML(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("GML")().asInstanceOf[Unit]
+  inline def GML(opt_options: typings.ol.gmlbaseMod.Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("GML")(opt_options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("ol/format", "GPX")
   @js.native

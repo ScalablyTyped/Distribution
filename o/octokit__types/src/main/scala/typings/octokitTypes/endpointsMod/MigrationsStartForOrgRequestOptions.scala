@@ -20,25 +20,19 @@ trait MigrationsStartForOrgRequestOptions extends StObject {
 }
 object MigrationsStartForOrgRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): MigrationsStartForOrgRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): MigrationsStartForOrgRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "POST", request = request.asInstanceOf[js.Any], url = "/orgs/:org/migrations")
     __obj.asInstanceOf[MigrationsStartForOrgRequestOptions]
   }
   
-  @scala.inline
-  implicit class MigrationsStartForOrgRequestOptionsMutableBuilder[Self <: MigrationsStartForOrgRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MigrationsStartForOrgRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashorgsSlashColonorgSlashmigrations): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashorgsSlashColonorgSlashmigrations): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

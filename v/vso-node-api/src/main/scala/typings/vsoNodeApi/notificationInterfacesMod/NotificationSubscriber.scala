@@ -25,8 +25,7 @@ trait NotificationSubscriber extends StObject {
 }
 object NotificationSubscriber {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deliveryPreference: NotificationSubscriberDeliveryPreference,
     flags: SubscriberFlags,
     id: String,
@@ -36,19 +35,14 @@ object NotificationSubscriber {
     __obj.asInstanceOf[NotificationSubscriber]
   }
   
-  @scala.inline
-  implicit class NotificationSubscriberMutableBuilder[Self <: NotificationSubscriber] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationSubscriber](x: Self) {
     
-    @scala.inline
-    def setDeliveryPreference(value: NotificationSubscriberDeliveryPreference): Self = StObject.set(x, "deliveryPreference", value.asInstanceOf[js.Any])
+    inline def setDeliveryPreference(value: NotificationSubscriberDeliveryPreference): Self = StObject.set(x, "deliveryPreference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlags(value: SubscriberFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: SubscriberFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferredEmailAddress(value: String): Self = StObject.set(x, "preferredEmailAddress", value.asInstanceOf[js.Any])
+    inline def setPreferredEmailAddress(value: String): Self = StObject.set(x, "preferredEmailAddress", value.asInstanceOf[js.Any])
   }
 }

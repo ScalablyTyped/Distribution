@@ -24,8 +24,7 @@ trait IsRowLoaded extends StObject {
 }
 object IsRowLoaded {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     children: Validator[js.Function1[/* props */ InfiniteLoaderChildProps, ReactNode]],
     isRowLoaded: Validator[js.Function1[/* params */ typings.reactVirtualized.mod.Index, Boolean]],
     loadMoreRows: Validator[js.Function1[/* params */ IndexRange, js.Promise[js.Any]]],
@@ -37,25 +36,18 @@ object IsRowLoaded {
     __obj.asInstanceOf[IsRowLoaded]
   }
   
-  @scala.inline
-  implicit class IsRowLoadedMutableBuilder[Self <: IsRowLoaded] (val x: Self) extends AnyVal {
+  extension [Self <: IsRowLoaded](x: Self) {
     
-    @scala.inline
-    def setChildren(value: Validator[js.Function1[/* props */ InfiniteLoaderChildProps, ReactNode]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Validator[js.Function1[/* props */ InfiniteLoaderChildProps, ReactNode]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRowLoaded(value: Validator[js.Function1[/* params */ typings.reactVirtualized.mod.Index, Boolean]]): Self = StObject.set(x, "isRowLoaded", value.asInstanceOf[js.Any])
+    inline def setIsRowLoaded(value: Validator[js.Function1[/* params */ typings.reactVirtualized.mod.Index, Boolean]]): Self = StObject.set(x, "isRowLoaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadMoreRows(value: Validator[js.Function1[/* params */ IndexRange, js.Promise[js.Any]]]): Self = StObject.set(x, "loadMoreRows", value.asInstanceOf[js.Any])
+    inline def setLoadMoreRows(value: Validator[js.Function1[/* params */ IndexRange, js.Promise[js.Any]]]): Self = StObject.set(x, "loadMoreRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumBatchSize(value: Validator[Double]): Self = StObject.set(x, "minimumBatchSize", value.asInstanceOf[js.Any])
+    inline def setMinimumBatchSize(value: Validator[Double]): Self = StObject.set(x, "minimumBatchSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowCount(value: Validator[Double]): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
+    inline def setRowCount(value: Validator[Double]): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreshold(value: Validator[Double]): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+    inline def setThreshold(value: Validator[Double]): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
   }
 }

@@ -12,20 +12,15 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def compose(parsers: styleFn*): styleFn = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(parsers.asInstanceOf[js.Any]).asInstanceOf[styleFn]
+  inline def compose(parsers: styleFn*): styleFn = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(parsers.asInstanceOf[js.Any]).asInstanceOf[styleFn]
   
-  @scala.inline
-  def createParser(config: ConfigStyle): styleFn = ^.asInstanceOf[js.Dynamic].applyDynamic("createParser")(config.asInstanceOf[js.Any]).asInstanceOf[styleFn]
+  inline def createParser(config: ConfigStyle): styleFn = ^.asInstanceOf[js.Dynamic].applyDynamic("createParser")(config.asInstanceOf[js.Any]).asInstanceOf[styleFn]
   
-  @scala.inline
-  def createStyleFunction(args: ConfigStyle): styleFn = ^.asInstanceOf[js.Dynamic].applyDynamic("createStyleFunction")(args.asInstanceOf[js.Any]).asInstanceOf[styleFn]
+  inline def createStyleFunction(args: ConfigStyle): styleFn = ^.asInstanceOf[js.Dynamic].applyDynamic("createStyleFunction")(args.asInstanceOf[js.Any]).asInstanceOf[styleFn]
   
-  @scala.inline
-  def get(obj: js.Any, paths: (String | Double)*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], paths.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def get(obj: js.Any, paths: (String | Double)*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], paths.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def system(styleDefinitions: Config): styleFn = ^.asInstanceOf[js.Dynamic].applyDynamic("system")(styleDefinitions.asInstanceOf[js.Any]).asInstanceOf[styleFn]
+  inline def system(styleDefinitions: Config): styleFn = ^.asInstanceOf[js.Dynamic].applyDynamic("system")(styleDefinitions.asInstanceOf[js.Any]).asInstanceOf[styleFn]
   
   type Config = /** Property name exposed for use in components */
   StringDictionary[ConfigStyle | Boolean]
@@ -58,56 +53,42 @@ object mod {
   }
   object ConfigStyle {
     
-    @scala.inline
-    def apply(): ConfigStyle = {
+    inline def apply(): ConfigStyle = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigStyle]
     }
     
-    @scala.inline
-    implicit class ConfigStyleMutableBuilder[Self <: ConfigStyle] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigStyle](x: Self) {
       
-      @scala.inline
-      def setDefaultScale(value: Scale): Self = StObject.set(x, "defaultScale", value.asInstanceOf[js.Any])
+      inline def setDefaultScale(value: Scale): Self = StObject.set(x, "defaultScale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultScaleUndefined: Self = StObject.set(x, "defaultScale", js.undefined)
+      inline def setDefaultScaleUndefined: Self = StObject.set(x, "defaultScale", js.undefined)
       
-      @scala.inline
-      def setDefaultScaleVarargs(value: (Double | String)*): Self = StObject.set(x, "defaultScale", js.Array(value :_*))
+      inline def setDefaultScaleVarargs(value: (Double | String)*): Self = StObject.set(x, "defaultScale", js.Array(value :_*))
       
-      @scala.inline
-      def setProperties(
+      inline def setProperties(
         value: js.Array[
               /* keyof csstype.csstype.Properties<string | 0> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 776 */ js.Any
             ]
       ): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+      inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
-      @scala.inline
-      def setPropertiesVarargs(
+      inline def setPropertiesVarargs(
         value: (/* keyof csstype.csstype.Properties<string | 0> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 776 */ js.Any)*
       ): Self = StObject.set(x, "properties", js.Array(value :_*))
       
-      @scala.inline
-      def setProperty(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 777 */ js.Any): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+      inline def setProperty(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 777 */ js.Any): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+      inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
       
-      @scala.inline
-      def setScale(value: String): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: String): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+      inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       
-      @scala.inline
-      def setTransform(value: (/* value */ js.Any, /* scale */ js.UndefOr[Scale]) => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
+      inline def setTransform(value: (/* value */ js.Any, /* scale */ js.UndefOr[Scale]) => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     }
   }
   

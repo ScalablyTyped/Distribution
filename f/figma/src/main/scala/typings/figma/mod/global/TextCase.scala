@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TextCase extends StObject
 object TextCase {
   
-  @scala.inline
-  def LOWER: typings.figma.figmaStrings.LOWER = "LOWER".asInstanceOf[typings.figma.figmaStrings.LOWER]
+  inline def LOWER: typings.figma.figmaStrings.LOWER = "LOWER".asInstanceOf[typings.figma.figmaStrings.LOWER]
   
-  @scala.inline
-  def ORIGINAL: typings.figma.figmaStrings.ORIGINAL = "ORIGINAL".asInstanceOf[typings.figma.figmaStrings.ORIGINAL]
+  inline def ORIGINAL: typings.figma.figmaStrings.ORIGINAL = "ORIGINAL".asInstanceOf[typings.figma.figmaStrings.ORIGINAL]
   
-  @scala.inline
-  def TITLE: typings.figma.figmaStrings.TITLE = "TITLE".asInstanceOf[typings.figma.figmaStrings.TITLE]
+  inline def TITLE: typings.figma.figmaStrings.TITLE = "TITLE".asInstanceOf[typings.figma.figmaStrings.TITLE]
   
-  @scala.inline
-  def UPPER: typings.figma.figmaStrings.UPPER = "UPPER".asInstanceOf[typings.figma.figmaStrings.UPPER]
+  inline def UPPER: typings.figma.figmaStrings.UPPER = "UPPER".asInstanceOf[typings.figma.figmaStrings.UPPER]
 }

@@ -10,6 +10,5 @@ object generatorsDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(generatorInstance: js.Any): js.Thenable[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(generatorInstance.asInstanceOf[js.Any]).asInstanceOf[js.Thenable[js.Any]]
+  inline def default(generatorInstance: js.Any): js.Thenable[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(generatorInstance.asInstanceOf[js.Any]).asInstanceOf[js.Thenable[js.Any]]
 }

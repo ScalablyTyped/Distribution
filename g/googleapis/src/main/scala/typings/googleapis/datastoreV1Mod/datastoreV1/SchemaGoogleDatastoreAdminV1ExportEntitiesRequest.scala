@@ -40,31 +40,23 @@ trait SchemaGoogleDatastoreAdminV1ExportEntitiesRequest extends StObject {
 }
 object SchemaGoogleDatastoreAdminV1ExportEntitiesRequest {
   
-  @scala.inline
-  def apply(): SchemaGoogleDatastoreAdminV1ExportEntitiesRequest = {
+  inline def apply(): SchemaGoogleDatastoreAdminV1ExportEntitiesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleDatastoreAdminV1ExportEntitiesRequest]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleDatastoreAdminV1ExportEntitiesRequestMutableBuilder[Self <: SchemaGoogleDatastoreAdminV1ExportEntitiesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleDatastoreAdminV1ExportEntitiesRequest](x: Self) {
     
-    @scala.inline
-    def setEntityFilter(value: SchemaGoogleDatastoreAdminV1EntityFilter): Self = StObject.set(x, "entityFilter", value.asInstanceOf[js.Any])
+    inline def setEntityFilter(value: SchemaGoogleDatastoreAdminV1EntityFilter): Self = StObject.set(x, "entityFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityFilterUndefined: Self = StObject.set(x, "entityFilter", js.undefined)
+    inline def setEntityFilterUndefined: Self = StObject.set(x, "entityFilter", js.undefined)
     
-    @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setOutputUrlPrefix(value: String): Self = StObject.set(x, "outputUrlPrefix", value.asInstanceOf[js.Any])
+    inline def setOutputUrlPrefix(value: String): Self = StObject.set(x, "outputUrlPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputUrlPrefixUndefined: Self = StObject.set(x, "outputUrlPrefix", js.undefined)
+    inline def setOutputUrlPrefixUndefined: Self = StObject.set(x, "outputUrlPrefix", js.undefined)
   }
 }

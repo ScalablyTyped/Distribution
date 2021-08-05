@@ -43,8 +43,7 @@ trait IgColorPickerMethods extends StObject {
 }
 object IgColorPickerMethods {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     colorFromElement: js.Object => String,
     colorTable: () => js.Object,
     customColorTable: () => js.Object,
@@ -56,25 +55,18 @@ object IgColorPickerMethods {
     __obj.asInstanceOf[IgColorPickerMethods]
   }
   
-  @scala.inline
-  implicit class IgColorPickerMethodsMutableBuilder[Self <: IgColorPickerMethods] (val x: Self) extends AnyVal {
+  extension [Self <: IgColorPickerMethods](x: Self) {
     
-    @scala.inline
-    def setColorFromElement(value: js.Object => String): Self = StObject.set(x, "colorFromElement", js.Any.fromFunction1(value))
+    inline def setColorFromElement(value: js.Object => String): Self = StObject.set(x, "colorFromElement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setColorTable(value: () => js.Object): Self = StObject.set(x, "colorTable", js.Any.fromFunction0(value))
+    inline def setColorTable(value: () => js.Object): Self = StObject.set(x, "colorTable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCustomColorTable(value: () => js.Object): Self = StObject.set(x, "customColorTable", js.Any.fromFunction0(value))
+    inline def setCustomColorTable(value: () => js.Object): Self = StObject.set(x, "customColorTable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSelectColor(value: String => js.Object): Self = StObject.set(x, "selectColor", js.Any.fromFunction1(value))
+    inline def setSelectColor(value: String => js.Object): Self = StObject.set(x, "selectColor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSelectedColor(value: () => String): Self = StObject.set(x, "selectedColor", js.Any.fromFunction0(value))
+    inline def setSelectedColor(value: () => String): Self = StObject.set(x, "selectedColor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStandardColorsTable(value: () => js.Object): Self = StObject.set(x, "standardColorsTable", js.Any.fromFunction0(value))
+    inline def setStandardColorsTable(value: () => js.Object): Self = StObject.set(x, "standardColorsTable", js.Any.fromFunction0(value))
   }
 }

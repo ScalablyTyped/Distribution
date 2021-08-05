@@ -33,29 +33,22 @@ object mod {
   }
   object Dependency {
     
-    @scala.inline
-    def apply(licenseName: String, licenseText: String, name: String, repository: String, version: String): Dependency = {
+    inline def apply(licenseName: String, licenseText: String, name: String, repository: String, version: String): Dependency = {
       val __obj = js.Dynamic.literal(licenseName = licenseName.asInstanceOf[js.Any], licenseText = licenseText.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dependency]
     }
     
-    @scala.inline
-    implicit class DependencyMutableBuilder[Self <: Dependency] (val x: Self) extends AnyVal {
+    extension [Self <: Dependency](x: Self) {
       
-      @scala.inline
-      def setLicenseName(value: String): Self = StObject.set(x, "licenseName", value.asInstanceOf[js.Any])
+      inline def setLicenseName(value: String): Self = StObject.set(x, "licenseName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLicenseText(value: String): Self = StObject.set(x, "licenseText", value.asInstanceOf[js.Any])
+      inline def setLicenseText(value: String): Self = StObject.set(x, "licenseText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepository(value: String): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+      inline def setRepository(value: String): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -113,8 +106,7 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allow: String,
       emitError: Boolean,
       filter: RegExp,
@@ -128,35 +120,25 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAllow(value: String): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
+      inline def setAllow(value: String): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmitError(value: Boolean): Self = StObject.set(x, "emitError", value.asInstanceOf[js.Any])
+      inline def setEmitError(value: Boolean): Self = StObject.set(x, "emitError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter(value: RegExp): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: RegExp): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnore(value: js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
       
-      @scala.inline
-      def setOutputFilename(value: String): Self = StObject.set(x, "outputFilename", value.asInstanceOf[js.Any])
+      inline def setOutputFilename(value: String): Self = StObject.set(x, "outputFilename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputWriter(value: String | OutputWriter): Self = StObject.set(x, "outputWriter", value.asInstanceOf[js.Any])
+      inline def setOutputWriter(value: String | OutputWriter): Self = StObject.set(x, "outputWriter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputWriterFunction1(value: /* args */ OutputWriterArgs => String): Self = StObject.set(x, "outputWriter", js.Any.fromFunction1(value))
+      inline def setOutputWriterFunction1(value: /* args */ OutputWriterArgs => String): Self = StObject.set(x, "outputWriter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOverride(value: Record[String, PartialDependency]): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
+      inline def setOverride(value: Record[String, PartialDependency]): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
     }
   }
   
@@ -168,20 +150,16 @@ object mod {
   }
   object OutputWriterArgs {
     
-    @scala.inline
-    def apply(dependencies: js.Array[Dependency]): OutputWriterArgs = {
+    inline def apply(dependencies: js.Array[Dependency]): OutputWriterArgs = {
       val __obj = js.Dynamic.literal(dependencies = dependencies.asInstanceOf[js.Any])
       __obj.asInstanceOf[OutputWriterArgs]
     }
     
-    @scala.inline
-    implicit class OutputWriterArgsMutableBuilder[Self <: OutputWriterArgs] (val x: Self) extends AnyVal {
+    extension [Self <: OutputWriterArgs](x: Self) {
       
-      @scala.inline
-      def setDependencies(value: js.Array[Dependency]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+      inline def setDependencies(value: js.Array[Dependency]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDependenciesVarargs(value: Dependency*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
+      inline def setDependenciesVarargs(value: Dependency*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
     }
   }
 }

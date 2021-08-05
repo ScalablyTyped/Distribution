@@ -14,13 +14,12 @@ trait Panes extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.Panes_typekey")
+  /* private */ @JSName("PowerPoint.Panes_typekey")
   var PowerPointDotPanes_typekey: Panes
 }
 object Panes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Count: Double,
     Item: Double => Pane,
@@ -32,22 +31,16 @@ object Panes {
     __obj.asInstanceOf[Panes]
   }
   
-  @scala.inline
-  implicit class PanesMutableBuilder[Self <: Panes] (val x: Self) extends AnyVal {
+  extension [Self <: Panes](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Double => Pane): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => Pane): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotPanes_typekey(value: Panes): Self = StObject.set(x, "PowerPoint.Panes_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotPanes_typekey(value: Panes): Self = StObject.set(x, "PowerPoint.Panes_typekey", value.asInstanceOf[js.Any])
   }
 }

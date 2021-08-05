@@ -21,28 +21,21 @@ trait SchemaGoogleCloudDialogflowV2beta1IntentMessageListSelect extends StObject
 }
 object SchemaGoogleCloudDialogflowV2beta1IntentMessageListSelect {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudDialogflowV2beta1IntentMessageListSelect = {
+  inline def apply(): SchemaGoogleCloudDialogflowV2beta1IntentMessageListSelect = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2beta1IntentMessageListSelect]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2beta1IntentMessageListSelectMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2beta1IntentMessageListSelect] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudDialogflowV2beta1IntentMessageListSelect](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[SchemaGoogleCloudDialogflowV2beta1IntentMessageListSelectItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[SchemaGoogleCloudDialogflowV2beta1IntentMessageListSelectItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: SchemaGoogleCloudDialogflowV2beta1IntentMessageListSelectItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: SchemaGoogleCloudDialogflowV2beta1IntentMessageListSelectItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

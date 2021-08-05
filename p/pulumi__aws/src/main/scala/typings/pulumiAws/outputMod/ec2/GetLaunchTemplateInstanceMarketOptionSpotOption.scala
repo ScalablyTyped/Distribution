@@ -18,8 +18,7 @@ trait GetLaunchTemplateInstanceMarketOptionSpotOption extends StObject {
 }
 object GetLaunchTemplateInstanceMarketOptionSpotOption {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     blockDurationMinutes: Double,
     instanceInterruptionBehavior: String,
     maxPrice: String,
@@ -30,22 +29,16 @@ object GetLaunchTemplateInstanceMarketOptionSpotOption {
     __obj.asInstanceOf[GetLaunchTemplateInstanceMarketOptionSpotOption]
   }
   
-  @scala.inline
-  implicit class GetLaunchTemplateInstanceMarketOptionSpotOptionMutableBuilder[Self <: GetLaunchTemplateInstanceMarketOptionSpotOption] (val x: Self) extends AnyVal {
+  extension [Self <: GetLaunchTemplateInstanceMarketOptionSpotOption](x: Self) {
     
-    @scala.inline
-    def setBlockDurationMinutes(value: Double): Self = StObject.set(x, "blockDurationMinutes", value.asInstanceOf[js.Any])
+    inline def setBlockDurationMinutes(value: Double): Self = StObject.set(x, "blockDurationMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceInterruptionBehavior(value: String): Self = StObject.set(x, "instanceInterruptionBehavior", value.asInstanceOf[js.Any])
+    inline def setInstanceInterruptionBehavior(value: String): Self = StObject.set(x, "instanceInterruptionBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxPrice(value: String): Self = StObject.set(x, "maxPrice", value.asInstanceOf[js.Any])
+    inline def setMaxPrice(value: String): Self = StObject.set(x, "maxPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpotInstanceType(value: String): Self = StObject.set(x, "spotInstanceType", value.asInstanceOf[js.Any])
+    inline def setSpotInstanceType(value: String): Self = StObject.set(x, "spotInstanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidUntil(value: String): Self = StObject.set(x, "validUntil", value.asInstanceOf[js.Any])
+    inline def setValidUntil(value: String): Self = StObject.set(x, "validUntil", value.asInstanceOf[js.Any])
   }
 }

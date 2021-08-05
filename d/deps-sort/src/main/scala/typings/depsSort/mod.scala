@@ -11,10 +11,8 @@ object mod {
   /**
     * Return a new through stream that should get written module-deps objects and will output sorted objects.
     */
-  @scala.inline
-  def apply(): Transform = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Transform]
-  @scala.inline
-  def apply(opts: Options): Transform = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  inline def apply(): Transform = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Transform]
+  inline def apply(opts: Options): Transform = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Transform]
   
   @JSImport("deps-sort", JSImport.Namespace)
   @js.native
@@ -42,26 +40,20 @@ object mod {
   }
   object InputRow {
     
-    @scala.inline
-    def apply(deps: js.Array[String], id: String, source: String): InputRow = {
+    inline def apply(deps: js.Array[String], id: String, source: String): InputRow = {
       val __obj = js.Dynamic.literal(deps = deps.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[InputRow]
     }
     
-    @scala.inline
-    implicit class InputRowMutableBuilder[Self <: InputRow] (val x: Self) extends AnyVal {
+    extension [Self <: InputRow](x: Self) {
       
-      @scala.inline
-      def setDeps(value: js.Array[String]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
+      inline def setDeps(value: js.Array[String]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepsVarargs(value: String*): Self = StObject.set(x, "deps", js.Array(value :_*))
+      inline def setDepsVarargs(value: String*): Self = StObject.set(x, "deps", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
   
@@ -92,35 +84,26 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDedupe(value: Boolean): Self = StObject.set(x, "dedupe", value.asInstanceOf[js.Any])
+      inline def setDedupe(value: Boolean): Self = StObject.set(x, "dedupe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDedupeUndefined: Self = StObject.set(x, "dedupe", js.undefined)
+      inline def setDedupeUndefined: Self = StObject.set(x, "dedupe", js.undefined)
       
-      @scala.inline
-      def setExpose(value: js.Array[String] | (StringDictionary[Boolean | String])): Self = StObject.set(x, "expose", value.asInstanceOf[js.Any])
+      inline def setExpose(value: js.Array[String] | (StringDictionary[Boolean | String])): Self = StObject.set(x, "expose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExposeUndefined: Self = StObject.set(x, "expose", js.undefined)
+      inline def setExposeUndefined: Self = StObject.set(x, "expose", js.undefined)
       
-      @scala.inline
-      def setExposeVarargs(value: String*): Self = StObject.set(x, "expose", js.Array(value :_*))
+      inline def setExposeVarargs(value: String*): Self = StObject.set(x, "expose", js.Array(value :_*))
       
-      @scala.inline
-      def setIndex(value: Boolean): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Boolean): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     }
   }
   
@@ -151,26 +134,20 @@ object mod {
   }
   object OutputRow {
     
-    @scala.inline
-    def apply(dedupe: String, dedupeIndex: Double, index: Double, indexDeps: StringDictionary[Double]): OutputRow = {
+    inline def apply(dedupe: String, dedupeIndex: Double, index: Double, indexDeps: StringDictionary[Double]): OutputRow = {
       val __obj = js.Dynamic.literal(dedupe = dedupe.asInstanceOf[js.Any], dedupeIndex = dedupeIndex.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], indexDeps = indexDeps.asInstanceOf[js.Any])
       __obj.asInstanceOf[OutputRow]
     }
     
-    @scala.inline
-    implicit class OutputRowMutableBuilder[Self <: OutputRow] (val x: Self) extends AnyVal {
+    extension [Self <: OutputRow](x: Self) {
       
-      @scala.inline
-      def setDedupe(value: String): Self = StObject.set(x, "dedupe", value.asInstanceOf[js.Any])
+      inline def setDedupe(value: String): Self = StObject.set(x, "dedupe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDedupeIndex(value: Double): Self = StObject.set(x, "dedupeIndex", value.asInstanceOf[js.Any])
+      inline def setDedupeIndex(value: Double): Self = StObject.set(x, "dedupeIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexDeps(value: StringDictionary[Double]): Self = StObject.set(x, "indexDeps", value.asInstanceOf[js.Any])
+      inline def setIndexDeps(value: StringDictionary[Double]): Self = StObject.set(x, "indexDeps", value.asInstanceOf[js.Any])
     }
   }
 }

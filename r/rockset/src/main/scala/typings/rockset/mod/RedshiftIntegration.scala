@@ -26,34 +26,25 @@ trait RedshiftIntegration extends StObject {
 }
 object RedshiftIntegration {
   
-  @scala.inline
-  def apply(host: String, password: String, port: Double, s3_bucket_path: String, username: String): RedshiftIntegration = {
+  inline def apply(host: String, password: String, port: Double, s3_bucket_path: String, username: String): RedshiftIntegration = {
     val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], s3_bucket_path = s3_bucket_path.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedshiftIntegration]
   }
   
-  @scala.inline
-  implicit class RedshiftIntegrationMutableBuilder[Self <: RedshiftIntegration] (val x: Self) extends AnyVal {
+  extension [Self <: RedshiftIntegration](x: Self) {
     
-    @scala.inline
-    def setAws_access_key(value: AwsAccessKey): Self = StObject.set(x, "aws_access_key", value.asInstanceOf[js.Any])
+    inline def setAws_access_key(value: AwsAccessKey): Self = StObject.set(x, "aws_access_key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAws_access_keyUndefined: Self = StObject.set(x, "aws_access_key", js.undefined)
+    inline def setAws_access_keyUndefined: Self = StObject.set(x, "aws_access_key", js.undefined)
     
-    @scala.inline
-    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3_bucket_path(value: String): Self = StObject.set(x, "s3_bucket_path", value.asInstanceOf[js.Any])
+    inline def setS3_bucket_path(value: String): Self = StObject.set(x, "s3_bucket_path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

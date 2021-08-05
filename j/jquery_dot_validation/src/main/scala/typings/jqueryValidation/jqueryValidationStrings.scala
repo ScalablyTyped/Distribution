@@ -8,11 +8,9 @@ object jqueryValidationStrings {
   
   @js.native
   sealed trait add extends StObject
-  @scala.inline
-  def add: add = "add".asInstanceOf[add]
+  inline def add: add = "add".asInstanceOf[add]
   
   @js.native
   sealed trait remove extends StObject
-  @scala.inline
-  def remove: remove = "remove".asInstanceOf[remove]
+  inline def remove: remove = "remove".asInstanceOf[remove]
 }

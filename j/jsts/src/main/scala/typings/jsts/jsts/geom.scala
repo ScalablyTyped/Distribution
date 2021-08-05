@@ -92,8 +92,7 @@ object geom {
   }
   object Coordinate {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       compareTo: Coordinate => Double,
       distance: Coordinate => Double,
       equals2D: Coordinate => Boolean,
@@ -108,32 +107,23 @@ object geom {
       __obj.asInstanceOf[Coordinate]
     }
     
-    @scala.inline
-    implicit class CoordinateMutableBuilder[Self <: Coordinate] (val x: Self) extends AnyVal {
+    extension [Self <: Coordinate](x: Self) {
       
-      @scala.inline
-      def setCompareTo(value: Coordinate => Double): Self = StObject.set(x, "compareTo", js.Any.fromFunction1(value))
+      inline def setCompareTo(value: Coordinate => Double): Self = StObject.set(x, "compareTo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDistance(value: Coordinate => Double): Self = StObject.set(x, "distance", js.Any.fromFunction1(value))
+      inline def setDistance(value: Coordinate => Double): Self = StObject.set(x, "distance", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEquals2D(value: Coordinate => Boolean): Self = StObject.set(x, "equals2D", js.Any.fromFunction1(value))
+      inline def setEquals2D(value: Coordinate => Boolean): Self = StObject.set(x, "equals2D", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEquals_(value: Coordinate => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+      inline def setEquals_(value: Coordinate => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetCoordinate(value: Coordinate => Unit): Self = StObject.set(x, "setCoordinate", js.Any.fromFunction1(value))
+      inline def setSetCoordinate(value: Coordinate => Unit): Self = StObject.set(x, "setCoordinate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+      inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1390,8 +1380,7 @@ object geom {
   }
   object Geometry {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       apply: js.Any => Unit,
       buffer: (Double, Double, Double) => Geometry,
       checkNotGeometryCollection: Geometry => Unit,
@@ -1455,179 +1444,121 @@ object geom {
       __obj.asInstanceOf[Geometry]
     }
     
-    @scala.inline
-    implicit class GeometryMutableBuilder[Self <: Geometry] (val x: Self) extends AnyVal {
+    extension [Self <: Geometry](x: Self) {
       
-      @scala.inline
-      def setApply(value: js.Any => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
+      inline def setApply(value: js.Any => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBuffer(value: (Double, Double, Double) => Geometry): Self = StObject.set(x, "buffer", js.Any.fromFunction3(value))
+      inline def setBuffer(value: (Double, Double, Double) => Geometry): Self = StObject.set(x, "buffer", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setCheckNotGeometryCollection(value: Geometry => Unit): Self = StObject.set(x, "checkNotGeometryCollection", js.Any.fromFunction1(value))
+      inline def setCheckNotGeometryCollection(value: Geometry => Unit): Self = StObject.set(x, "checkNotGeometryCollection", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCompare(value: (js.Array[js.Any], js.Array[js.Any]) => Double): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
+      inline def setCompare(value: (js.Array[js.Any], js.Array[js.Any]) => Double): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCompareTo(value: Geometry => Double): Self = StObject.set(x, "compareTo", js.Any.fromFunction1(value))
+      inline def setCompareTo(value: Geometry => Double): Self = StObject.set(x, "compareTo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCompareToSameClass(value: Geometry => Double): Self = StObject.set(x, "compareToSameClass", js.Any.fromFunction1(value))
+      inline def setCompareToSameClass(value: Geometry => Double): Self = StObject.set(x, "compareToSameClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComputeEnvelopeInternal(value: () => Envelope): Self = StObject.set(x, "computeEnvelopeInternal", js.Any.fromFunction0(value))
+      inline def setComputeEnvelopeInternal(value: () => Envelope): Self = StObject.set(x, "computeEnvelopeInternal", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setContains(value: Geometry => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+      inline def setContains(value: Geometry => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setConvexHull(value: () => Geometry): Self = StObject.set(x, "convexHull", js.Any.fromFunction0(value))
+      inline def setConvexHull(value: () => Geometry): Self = StObject.set(x, "convexHull", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCoveredBy(value: Geometry => Boolean): Self = StObject.set(x, "coveredBy", js.Any.fromFunction1(value))
+      inline def setCoveredBy(value: Geometry => Boolean): Self = StObject.set(x, "coveredBy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCovers(value: Geometry => Boolean): Self = StObject.set(x, "covers", js.Any.fromFunction1(value))
+      inline def setCovers(value: Geometry => Boolean): Self = StObject.set(x, "covers", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCrosses(value: Geometry => Boolean): Self = StObject.set(x, "crosses", js.Any.fromFunction1(value))
+      inline def setCrosses(value: Geometry => Boolean): Self = StObject.set(x, "crosses", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDifference(value: Geometry => Geometry): Self = StObject.set(x, "difference", js.Any.fromFunction1(value))
+      inline def setDifference(value: Geometry => Geometry): Self = StObject.set(x, "difference", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDisjoint(value: Geometry => Boolean): Self = StObject.set(x, "disjoint", js.Any.fromFunction1(value))
+      inline def setDisjoint(value: Geometry => Boolean): Self = StObject.set(x, "disjoint", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDistance(value: Geometry => Double): Self = StObject.set(x, "distance", js.Any.fromFunction1(value))
+      inline def setDistance(value: Geometry => Double): Self = StObject.set(x, "distance", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEnvelope(value: Envelope): Self = StObject.set(x, "envelope", value.asInstanceOf[js.Any])
+      inline def setEnvelope(value: Envelope): Self = StObject.set(x, "envelope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEqual(value: (Coordinate, Coordinate, Double) => Boolean): Self = StObject.set(x, "equal", js.Any.fromFunction3(value))
+      inline def setEqual(value: (Coordinate, Coordinate, Double) => Boolean): Self = StObject.set(x, "equal", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setEqualsExact(value: (Geometry, Double) => Boolean): Self = StObject.set(x, "equalsExact", js.Any.fromFunction2(value))
+      inline def setEqualsExact(value: (Geometry, Double) => Boolean): Self = StObject.set(x, "equalsExact", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEqualsNorm(value: Geometry => Boolean): Self = StObject.set(x, "equalsNorm", js.Any.fromFunction1(value))
+      inline def setEqualsNorm(value: Geometry => Boolean): Self = StObject.set(x, "equalsNorm", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEqualsTopo(value: Geometry => Boolean): Self = StObject.set(x, "equalsTopo", js.Any.fromFunction1(value))
+      inline def setEqualsTopo(value: Geometry => Boolean): Self = StObject.set(x, "equalsTopo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEquals_(value: js.Object => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+      inline def setEquals_(value: js.Object => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetArea(value: () => Double): Self = StObject.set(x, "getArea", js.Any.fromFunction0(value))
+      inline def setGetArea(value: () => Double): Self = StObject.set(x, "getArea", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetBoundary(value: () => Geometry): Self = StObject.set(x, "getBoundary", js.Any.fromFunction0(value))
+      inline def setGetBoundary(value: () => Geometry): Self = StObject.set(x, "getBoundary", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetBoundaryDimension(value: () => Double): Self = StObject.set(x, "getBoundaryDimension", js.Any.fromFunction0(value))
+      inline def setGetBoundaryDimension(value: () => Double): Self = StObject.set(x, "getBoundaryDimension", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCentroid(value: () => Point): Self = StObject.set(x, "getCentroid", js.Any.fromFunction0(value))
+      inline def setGetCentroid(value: () => Point): Self = StObject.set(x, "getCentroid", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCoordinate(value: () => Coordinate): Self = StObject.set(x, "getCoordinate", js.Any.fromFunction0(value))
+      inline def setGetCoordinate(value: () => Coordinate): Self = StObject.set(x, "getCoordinate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCoordinates(value: () => js.Array[Coordinate]): Self = StObject.set(x, "getCoordinates", js.Any.fromFunction0(value))
+      inline def setGetCoordinates(value: () => js.Array[Coordinate]): Self = StObject.set(x, "getCoordinates", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDimension(value: () => Double): Self = StObject.set(x, "getDimension", js.Any.fromFunction0(value))
+      inline def setGetDimension(value: () => Double): Self = StObject.set(x, "getDimension", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetEnvelope(value: () => Geometry): Self = StObject.set(x, "getEnvelope", js.Any.fromFunction0(value))
+      inline def setGetEnvelope(value: () => Geometry): Self = StObject.set(x, "getEnvelope", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetEnvelopeInternal(value: () => Envelope): Self = StObject.set(x, "getEnvelopeInternal", js.Any.fromFunction0(value))
+      inline def setGetEnvelopeInternal(value: () => Envelope): Self = StObject.set(x, "getEnvelopeInternal", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFactory(value: () => js.Any): Self = StObject.set(x, "getFactory", js.Any.fromFunction0(value))
+      inline def setGetFactory(value: () => js.Any): Self = StObject.set(x, "getFactory", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetGeometryN(value: Double => Geometry): Self = StObject.set(x, "getGeometryN", js.Any.fromFunction1(value))
+      inline def setGetGeometryN(value: Double => Geometry): Self = StObject.set(x, "getGeometryN", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetGeometryType(value: () => String): Self = StObject.set(x, "getGeometryType", js.Any.fromFunction0(value))
+      inline def setGetGeometryType(value: () => String): Self = StObject.set(x, "getGeometryType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetInteriorPoint(value: () => Point): Self = StObject.set(x, "getInteriorPoint", js.Any.fromFunction0(value))
+      inline def setGetInteriorPoint(value: () => Point): Self = StObject.set(x, "getInteriorPoint", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
+      inline def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetNumGeometries(value: () => Double): Self = StObject.set(x, "getNumGeometries", js.Any.fromFunction0(value))
+      inline def setGetNumGeometries(value: () => Double): Self = StObject.set(x, "getNumGeometries", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetNumPoints(value: () => Double): Self = StObject.set(x, "getNumPoints", js.Any.fromFunction0(value))
+      inline def setGetNumPoints(value: () => Double): Self = StObject.set(x, "getNumPoints", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPrecisionModel(value: () => PrecisionModel): Self = StObject.set(x, "getPrecisionModel", js.Any.fromFunction0(value))
+      inline def setGetPrecisionModel(value: () => PrecisionModel): Self = StObject.set(x, "getPrecisionModel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIntersection(value: Geometry => Geometry): Self = StObject.set(x, "intersection", js.Any.fromFunction1(value))
+      inline def setIntersection(value: Geometry => Geometry): Self = StObject.set(x, "intersection", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIntersects(value: Geometry => Boolean): Self = StObject.set(x, "intersects", js.Any.fromFunction1(value))
+      inline def setIntersects(value: Geometry => Boolean): Self = StObject.set(x, "intersects", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
+      inline def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsEquivalentClass(value: Geometry => Boolean): Self = StObject.set(x, "isEquivalentClass", js.Any.fromFunction1(value))
+      inline def setIsEquivalentClass(value: Geometry => Boolean): Self = StObject.set(x, "isEquivalentClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsGeometryCollection(value: () => Boolean): Self = StObject.set(x, "isGeometryCollection", js.Any.fromFunction0(value))
+      inline def setIsGeometryCollection(value: () => Boolean): Self = StObject.set(x, "isGeometryCollection", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsGeometryCollectionBase(value: () => Boolean): Self = StObject.set(x, "isGeometryCollectionBase", js.Any.fromFunction0(value))
+      inline def setIsGeometryCollectionBase(value: () => Boolean): Self = StObject.set(x, "isGeometryCollectionBase", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsRectangle(value: () => Boolean): Self = StObject.set(x, "isRectangle", js.Any.fromFunction0(value))
+      inline def setIsRectangle(value: () => Boolean): Self = StObject.set(x, "isRectangle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsSimple(value: () => Boolean): Self = StObject.set(x, "isSimple", js.Any.fromFunction0(value))
+      inline def setIsSimple(value: () => Boolean): Self = StObject.set(x, "isSimple", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
+      inline def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsWithinDistance(value: (Geometry, Double) => Boolean): Self = StObject.set(x, "isWithinDistance", js.Any.fromFunction2(value))
+      inline def setIsWithinDistance(value: (Geometry, Double) => Boolean): Self = StObject.set(x, "isWithinDistance", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNorm(value: () => Geometry): Self = StObject.set(x, "norm", js.Any.fromFunction0(value))
+      inline def setNorm(value: () => Geometry): Self = StObject.set(x, "norm", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNormalize(value: () => Unit): Self = StObject.set(x, "normalize", js.Any.fromFunction0(value))
+      inline def setNormalize(value: () => Unit): Self = StObject.set(x, "normalize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOverlaps(value: Geometry => Boolean): Self = StObject.set(x, "overlaps", js.Any.fromFunction1(value))
+      inline def setOverlaps(value: Geometry => Boolean): Self = StObject.set(x, "overlaps", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRelate(value: (Geometry, String) => Boolean): Self = StObject.set(x, "relate", js.Any.fromFunction2(value))
+      inline def setRelate(value: (Geometry, String) => Boolean): Self = StObject.set(x, "relate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRelate2(value: Geometry => js.Any): Self = StObject.set(x, "relate2", js.Any.fromFunction1(value))
+      inline def setRelate2(value: Geometry => js.Any): Self = StObject.set(x, "relate2", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSymDifference(value: Geometry => Geometry): Self = StObject.set(x, "symDifference", js.Any.fromFunction1(value))
+      inline def setSymDifference(value: Geometry => Geometry): Self = StObject.set(x, "symDifference", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTouches(value: Geometry => Boolean): Self = StObject.set(x, "touches", js.Any.fromFunction1(value))
+      inline def setTouches(value: Geometry => Boolean): Self = StObject.set(x, "touches", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUnion(value: Geometry => Geometry): Self = StObject.set(x, "union", js.Any.fromFunction1(value))
+      inline def setUnion(value: Geometry => Geometry): Self = StObject.set(x, "union", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWithin(value: Geometry => Boolean): Self = StObject.set(x, "within", js.Any.fromFunction1(value))
+      inline def setWithin(value: Geometry => Boolean): Self = StObject.set(x, "within", js.Any.fromFunction1(value))
     }
   }
   
@@ -1677,8 +1608,7 @@ object geom {
   }
   object GeometryFactory {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       createLineString: js.Array[Coordinate] => LineString,
       createLinearRing: js.Array[Coordinate] => LinearRing,
       createPoint: Coordinate => Point,
@@ -1688,20 +1618,15 @@ object geom {
       __obj.asInstanceOf[GeometryFactory]
     }
     
-    @scala.inline
-    implicit class GeometryFactoryMutableBuilder[Self <: GeometryFactory] (val x: Self) extends AnyVal {
+    extension [Self <: GeometryFactory](x: Self) {
       
-      @scala.inline
-      def setCreateLineString(value: js.Array[Coordinate] => LineString): Self = StObject.set(x, "createLineString", js.Any.fromFunction1(value))
+      inline def setCreateLineString(value: js.Array[Coordinate] => LineString): Self = StObject.set(x, "createLineString", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCreateLinearRing(value: js.Array[Coordinate] => LinearRing): Self = StObject.set(x, "createLinearRing", js.Any.fromFunction1(value))
+      inline def setCreateLinearRing(value: js.Array[Coordinate] => LinearRing): Self = StObject.set(x, "createLinearRing", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCreatePoint(value: Coordinate => Point): Self = StObject.set(x, "createPoint", js.Any.fromFunction1(value))
+      inline def setCreatePoint(value: Coordinate => Point): Self = StObject.set(x, "createPoint", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCreatePolygon(value: (LinearRing, js.Array[LinearRing]) => Polygon): Self = StObject.set(x, "createPolygon", js.Any.fromFunction2(value))
+      inline def setCreatePolygon(value: (LinearRing, js.Array[LinearRing]) => Polygon): Self = StObject.set(x, "createPolygon", js.Any.fromFunction2(value))
     }
   }
   
@@ -2060,8 +1985,7 @@ object geom {
   }
   object LineSegment {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       angle: () => Double,
       closestPoint: Coordinate => Coordinate,
       closestPoints: LineSegment => js.Tuple2[Coordinate, Coordinate],
@@ -2099,101 +2023,69 @@ object geom {
       __obj.asInstanceOf[LineSegment]
     }
     
-    @scala.inline
-    implicit class LineSegmentMutableBuilder[Self <: LineSegment] (val x: Self) extends AnyVal {
+    extension [Self <: LineSegment](x: Self) {
       
-      @scala.inline
-      def setAngle(value: () => Double): Self = StObject.set(x, "angle", js.Any.fromFunction0(value))
+      inline def setAngle(value: () => Double): Self = StObject.set(x, "angle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClosestPoint(value: Coordinate => Coordinate): Self = StObject.set(x, "closestPoint", js.Any.fromFunction1(value))
+      inline def setClosestPoint(value: Coordinate => Coordinate): Self = StObject.set(x, "closestPoint", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClosestPoints(value: LineSegment => js.Tuple2[Coordinate, Coordinate]): Self = StObject.set(x, "closestPoints", js.Any.fromFunction1(value))
+      inline def setClosestPoints(value: LineSegment => js.Tuple2[Coordinate, Coordinate]): Self = StObject.set(x, "closestPoints", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCompareTo(value: LineSegment => Double): Self = StObject.set(x, "compareTo", js.Any.fromFunction1(value))
+      inline def setCompareTo(value: LineSegment => Double): Self = StObject.set(x, "compareTo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDistance1(value: LineSegment => Double): Self = StObject.set(x, "distance1", js.Any.fromFunction1(value))
+      inline def setDistance1(value: LineSegment => Double): Self = StObject.set(x, "distance1", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDistance2(value: Coordinate => Double): Self = StObject.set(x, "distance2", js.Any.fromFunction1(value))
+      inline def setDistance2(value: Coordinate => Double): Self = StObject.set(x, "distance2", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDistancePerpendicular(value: Coordinate => Double): Self = StObject.set(x, "distancePerpendicular", js.Any.fromFunction1(value))
+      inline def setDistancePerpendicular(value: Coordinate => Double): Self = StObject.set(x, "distancePerpendicular", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEqualsTopo(value: LineSegment => Boolean): Self = StObject.set(x, "equalsTopo", js.Any.fromFunction1(value))
+      inline def setEqualsTopo(value: LineSegment => Boolean): Self = StObject.set(x, "equalsTopo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEquals_(value: LineSegment => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+      inline def setEquals_(value: LineSegment => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetCoordinate(value: () => Double): Self = StObject.set(x, "getCoordinate", js.Any.fromFunction0(value))
+      inline def setGetCoordinate(value: () => Double): Self = StObject.set(x, "getCoordinate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
+      inline def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIntersection(value: LineSegment => Coordinate | Null): Self = StObject.set(x, "intersection", js.Any.fromFunction1(value))
+      inline def setIntersection(value: LineSegment => Coordinate | Null): Self = StObject.set(x, "intersection", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsHorizontal(value: () => Boolean): Self = StObject.set(x, "isHorizontal", js.Any.fromFunction0(value))
+      inline def setIsHorizontal(value: () => Boolean): Self = StObject.set(x, "isHorizontal", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsVertical(value: () => Boolean): Self = StObject.set(x, "isVertical", js.Any.fromFunction0(value))
+      inline def setIsVertical(value: () => Boolean): Self = StObject.set(x, "isVertical", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLineIntersection(value: LineSegment => Coordinate | Null): Self = StObject.set(x, "lineIntersection", js.Any.fromFunction1(value))
+      inline def setLineIntersection(value: LineSegment => Coordinate | Null): Self = StObject.set(x, "lineIntersection", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMidPoint(value: () => Coordinate): Self = StObject.set(x, "midPoint", js.Any.fromFunction0(value))
+      inline def setMidPoint(value: () => Coordinate): Self = StObject.set(x, "midPoint", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNormalize(value: () => Unit): Self = StObject.set(x, "normalize", js.Any.fromFunction0(value))
+      inline def setNormalize(value: () => Unit): Self = StObject.set(x, "normalize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOrientationIndex1(value: LineSegment => `1` | `-1` | `0`): Self = StObject.set(x, "orientationIndex1", js.Any.fromFunction1(value))
+      inline def setOrientationIndex1(value: LineSegment => `1` | `-1` | `0`): Self = StObject.set(x, "orientationIndex1", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOrientationIndex2(value: Coordinate => `1` | `-1` | `0`): Self = StObject.set(x, "orientationIndex2", js.Any.fromFunction1(value))
+      inline def setOrientationIndex2(value: Coordinate => `1` | `-1` | `0`): Self = StObject.set(x, "orientationIndex2", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setP0(value: Coordinate): Self = StObject.set(x, "p0", value.asInstanceOf[js.Any])
+      inline def setP0(value: Coordinate): Self = StObject.set(x, "p0", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP1(value: Coordinate): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
+      inline def setP1(value: Coordinate): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointAlong(value: Double => Coordinate): Self = StObject.set(x, "pointAlong", js.Any.fromFunction1(value))
+      inline def setPointAlong(value: Double => Coordinate): Self = StObject.set(x, "pointAlong", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPointAlongOffset(value: (Double, Double) => Coordinate): Self = StObject.set(x, "pointAlongOffset", js.Any.fromFunction2(value))
+      inline def setPointAlongOffset(value: (Double, Double) => Coordinate): Self = StObject.set(x, "pointAlongOffset", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setProject1(value: Coordinate => Coordinate): Self = StObject.set(x, "project1", js.Any.fromFunction1(value))
+      inline def setProject1(value: Coordinate => Coordinate): Self = StObject.set(x, "project1", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setProject2(value: LineSegment => LineSegment): Self = StObject.set(x, "project2", js.Any.fromFunction1(value))
+      inline def setProject2(value: LineSegment => LineSegment): Self = StObject.set(x, "project2", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setProjectionFactor(value: Coordinate => Double): Self = StObject.set(x, "projectionFactor", js.Any.fromFunction1(value))
+      inline def setProjectionFactor(value: Coordinate => Double): Self = StObject.set(x, "projectionFactor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReverse(value: () => Unit): Self = StObject.set(x, "reverse", js.Any.fromFunction0(value))
+      inline def setReverse(value: () => Unit): Self = StObject.set(x, "reverse", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSegmentFraction(value: Coordinate => Double): Self = StObject.set(x, "segmentFraction", js.Any.fromFunction1(value))
+      inline def setSegmentFraction(value: Coordinate => Double): Self = StObject.set(x, "segmentFraction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetCoordinates(value: LineSegment => Unit): Self = StObject.set(x, "setCoordinates", js.Any.fromFunction1(value))
+      inline def setSetCoordinates(value: LineSegment => Unit): Self = StObject.set(x, "setCoordinates", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetCoordinates2(value: (Coordinate, Coordinate) => Unit): Self = StObject.set(x, "setCoordinates2", js.Any.fromFunction2(value))
+      inline def setSetCoordinates2(value: (Coordinate, Coordinate) => Unit): Self = StObject.set(x, "setCoordinates2", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setToGeometry(value: GeometryFactory => LineString): Self = StObject.set(x, "toGeometry", js.Any.fromFunction1(value))
+      inline def setToGeometry(value: GeometryFactory => LineString): Self = StObject.set(x, "toGeometry", js.Any.fromFunction1(value))
     }
   }
   
@@ -2241,8 +2133,7 @@ object geom {
   }
   object LineString {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       apply: js.Any => Unit,
       buffer: (Double, Double, Double) => Geometry,
       checkNotGeometryCollection: Geometry => Unit,
@@ -2312,26 +2203,19 @@ object geom {
       __obj.asInstanceOf[LineString]
     }
     
-    @scala.inline
-    implicit class LineStringMutableBuilder[Self <: LineString] (val x: Self) extends AnyVal {
+    extension [Self <: LineString](x: Self) {
       
-      @scala.inline
-      def setGetCoordinateN(value: Double => Coordinate): Self = StObject.set(x, "getCoordinateN", js.Any.fromFunction1(value))
+      inline def setGetCoordinateN(value: Double => Coordinate): Self = StObject.set(x, "getCoordinateN", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetEndPoint(value: () => Point): Self = StObject.set(x, "getEndPoint", js.Any.fromFunction0(value))
+      inline def setGetEndPoint(value: () => Point): Self = StObject.set(x, "getEndPoint", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPointN(value: Double => Point): Self = StObject.set(x, "getPointN", js.Any.fromFunction1(value))
+      inline def setGetPointN(value: Double => Point): Self = StObject.set(x, "getPointN", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetStartPoint(value: () => Point): Self = StObject.set(x, "getStartPoint", js.Any.fromFunction0(value))
+      inline def setGetStartPoint(value: () => Point): Self = StObject.set(x, "getStartPoint", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsClosed(value: () => Boolean): Self = StObject.set(x, "isClosed", js.Any.fromFunction0(value))
+      inline def setIsClosed(value: () => Boolean): Self = StObject.set(x, "isClosed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsRing(value: () => Boolean): Self = StObject.set(x, "isRing", js.Any.fromFunction0(value))
+      inline def setIsRing(value: () => Boolean): Self = StObject.set(x, "isRing", js.Any.fromFunction0(value))
     }
   }
   
@@ -2358,8 +2242,7 @@ object geom {
   }
   object Point {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       apply: js.Any => Unit,
       buffer: (Double, Double, Double) => Geometry,
       checkNotGeometryCollection: Geometry => Unit,
@@ -2426,17 +2309,13 @@ object geom {
       __obj.asInstanceOf[Point]
     }
     
-    @scala.inline
-    implicit class PointMutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
+    extension [Self <: Point](x: Self) {
       
-      @scala.inline
-      def setGetX(value: () => Double): Self = StObject.set(x, "getX", js.Any.fromFunction0(value))
+      inline def setGetX(value: () => Double): Self = StObject.set(x, "getX", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetY(value: () => Double): Self = StObject.set(x, "getY", js.Any.fromFunction0(value))
+      inline def setGetY(value: () => Double): Self = StObject.set(x, "getY", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReverse(value: () => Point): Self = StObject.set(x, "reverse", js.Any.fromFunction0(value))
+      inline def setReverse(value: () => Point): Self = StObject.set(x, "reverse", js.Any.fromFunction0(value))
     }
   }
   
@@ -2469,8 +2348,7 @@ object geom {
   }
   object Polygon {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       apply: js.Any => Unit,
       buffer: (Double, Double, Double) => Geometry,
       checkNotGeometryCollection: Geometry => Unit,
@@ -2537,17 +2415,13 @@ object geom {
       __obj.asInstanceOf[Polygon]
     }
     
-    @scala.inline
-    implicit class PolygonMutableBuilder[Self <: Polygon] (val x: Self) extends AnyVal {
+    extension [Self <: Polygon](x: Self) {
       
-      @scala.inline
-      def setGetExteriorRing(value: () => LinearRing): Self = StObject.set(x, "getExteriorRing", js.Any.fromFunction0(value))
+      inline def setGetExteriorRing(value: () => LinearRing): Self = StObject.set(x, "getExteriorRing", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetInteriorRingN(value: Double => LinearRing): Self = StObject.set(x, "getInteriorRingN", js.Any.fromFunction1(value))
+      inline def setGetInteriorRingN(value: Double => LinearRing): Self = StObject.set(x, "getInteriorRingN", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetNumInteriorRing(value: () => Double): Self = StObject.set(x, "getNumInteriorRing", js.Any.fromFunction0(value))
+      inline def setGetNumInteriorRing(value: () => Double): Self = StObject.set(x, "getNumInteriorRing", js.Any.fromFunction0(value))
     }
   }
   

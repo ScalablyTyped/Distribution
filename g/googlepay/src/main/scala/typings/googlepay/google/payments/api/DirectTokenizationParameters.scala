@@ -43,19 +43,15 @@ trait DirectTokenizationParameters extends StObject {
 }
 object DirectTokenizationParameters {
   
-  @scala.inline
-  def apply(protocolVersion: String, publicKey: String): DirectTokenizationParameters = {
+  inline def apply(protocolVersion: String, publicKey: String): DirectTokenizationParameters = {
     val __obj = js.Dynamic.literal(protocolVersion = protocolVersion.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectTokenizationParameters]
   }
   
-  @scala.inline
-  implicit class DirectTokenizationParametersMutableBuilder[Self <: DirectTokenizationParameters] (val x: Self) extends AnyVal {
+  extension [Self <: DirectTokenizationParameters](x: Self) {
     
-    @scala.inline
-    def setProtocolVersion(value: String): Self = StObject.set(x, "protocolVersion", value.asInstanceOf[js.Any])
+    inline def setProtocolVersion(value: String): Self = StObject.set(x, "protocolVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKey(value: String): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+    inline def setPublicKey(value: String): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
   }
 }

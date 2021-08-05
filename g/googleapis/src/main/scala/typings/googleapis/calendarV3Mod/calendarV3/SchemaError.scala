@@ -26,25 +26,19 @@ trait SchemaError extends StObject {
 }
 object SchemaError {
   
-  @scala.inline
-  def apply(): SchemaError = {
+  inline def apply(): SchemaError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaError]
   }
   
-  @scala.inline
-  implicit class SchemaErrorMutableBuilder[Self <: SchemaError] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaError](x: Self) {
     
-    @scala.inline
-    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
   }
 }

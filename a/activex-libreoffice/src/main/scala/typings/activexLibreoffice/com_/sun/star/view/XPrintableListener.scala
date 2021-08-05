@@ -25,8 +25,7 @@ trait XPrintableListener
 }
 object XPrintableListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     queryInterface: `type` => js.Any,
@@ -37,10 +36,8 @@ object XPrintableListener {
     __obj.asInstanceOf[XPrintableListener]
   }
   
-  @scala.inline
-  implicit class XPrintableListenerMutableBuilder[Self <: XPrintableListener] (val x: Self) extends AnyVal {
+  extension [Self <: XPrintableListener](x: Self) {
     
-    @scala.inline
-    def setStateChanged(value: PrintableStateEvent => Unit): Self = StObject.set(x, "stateChanged", js.Any.fromFunction1(value))
+    inline def setStateChanged(value: PrintableStateEvent => Unit): Self = StObject.set(x, "stateChanged", js.Any.fromFunction1(value))
   }
 }

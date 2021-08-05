@@ -15,8 +15,7 @@ object eventsMod {
   }
   object Disposable {
     
-    @scala.inline
-    def apply(dispose: () => Unit): Disposable = {
+    inline def apply(dispose: () => Unit): Disposable = {
       val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose))
       __obj.asInstanceOf[Disposable]
     }
@@ -25,14 +24,11 @@ object eventsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(func: js.Function0[Unit]): Disposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(func.asInstanceOf[js.Any]).asInstanceOf[Disposable]
+    inline def create(func: js.Function0[Unit]): Disposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(func.asInstanceOf[js.Any]).asInstanceOf[Disposable]
     
-    @scala.inline
-    implicit class DisposableMutableBuilder[Self <: Disposable] (val x: Self) extends AnyVal {
+    extension [Self <: Disposable](x: Self) {
       
-      @scala.inline
-      def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     }
   }
   
@@ -41,11 +37,11 @@ object eventsMod {
   class Emitter[T] () extends StObject {
     def this(_options: EmitterOptions) = this()
     
-    var _callbacks: js.Any = js.native
+    /* private */ var _callbacks: js.Any = js.native
     
-    var _event: js.Any = js.native
+    /* private */ var _event: js.Any = js.native
     
-    var _options: js.Any = js.native
+    /* private */ var _options: js.Any = js.native
     
     def dispose(): Unit = js.native
     
@@ -71,8 +67,7 @@ object eventsMod {
     @JSImport("vscode-jsonrpc/lib/events", "Emitter._noop")
     @js.native
     def _noop: js.Any = js.native
-    @scala.inline
-    def _noop_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_noop")(x.asInstanceOf[js.Any])
+    inline def _noop_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_noop")(x.asInstanceOf[js.Any])
   }
   
   object Event {
@@ -96,26 +91,20 @@ object eventsMod {
   }
   object EmitterOptions {
     
-    @scala.inline
-    def apply(): EmitterOptions = {
+    inline def apply(): EmitterOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EmitterOptions]
     }
     
-    @scala.inline
-    implicit class EmitterOptionsMutableBuilder[Self <: EmitterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EmitterOptions](x: Self) {
       
-      @scala.inline
-      def setOnFirstListenerAdd(value: js.Function): Self = StObject.set(x, "onFirstListenerAdd", value.asInstanceOf[js.Any])
+      inline def setOnFirstListenerAdd(value: js.Function): Self = StObject.set(x, "onFirstListenerAdd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnFirstListenerAddUndefined: Self = StObject.set(x, "onFirstListenerAdd", js.undefined)
+      inline def setOnFirstListenerAddUndefined: Self = StObject.set(x, "onFirstListenerAdd", js.undefined)
       
-      @scala.inline
-      def setOnLastListenerRemove(value: js.Function): Self = StObject.set(x, "onLastListenerRemove", value.asInstanceOf[js.Any])
+      inline def setOnLastListenerRemove(value: js.Function): Self = StObject.set(x, "onLastListenerRemove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnLastListenerRemoveUndefined: Self = StObject.set(x, "onLastListenerRemove", js.undefined)
+      inline def setOnLastListenerRemoveUndefined: Self = StObject.set(x, "onLastListenerRemove", js.undefined)
     }
   }
 }

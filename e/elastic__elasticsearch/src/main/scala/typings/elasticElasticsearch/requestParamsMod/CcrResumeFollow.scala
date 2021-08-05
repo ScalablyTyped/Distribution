@@ -14,22 +14,17 @@ trait CcrResumeFollow[T]
 }
 object CcrResumeFollow {
   
-  @scala.inline
-  def apply[T](index: String): CcrResumeFollow[T] = {
+  inline def apply[T](index: String): CcrResumeFollow[T] = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
     __obj.asInstanceOf[CcrResumeFollow[T]]
   }
   
-  @scala.inline
-  implicit class CcrResumeFollowMutableBuilder[Self <: CcrResumeFollow[?], T] (val x: Self & CcrResumeFollow[T]) extends AnyVal {
+  extension [Self <: CcrResumeFollow[?], T](x: Self & CcrResumeFollow[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
   }
 }

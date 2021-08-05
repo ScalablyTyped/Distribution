@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.Image")
 @js.native
-class Image protected ()
+/* private */ class Image ()
   extends StObject
      with typings.activexAccess.Access.Image

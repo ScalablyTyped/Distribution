@@ -51,56 +51,40 @@ object mod {
   }
   object DotdotdotProps {
     
-    @scala.inline
-    def apply(clamp: String | Double | auto): DotdotdotProps = {
+    inline def apply(clamp: String | Double | auto): DotdotdotProps = {
       val __obj = js.Dynamic.literal(clamp = clamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[DotdotdotProps]
     }
     
-    @scala.inline
-    implicit class DotdotdotPropsMutableBuilder[Self <: DotdotdotProps] (val x: Self) extends AnyVal {
+    extension [Self <: DotdotdotProps](x: Self) {
       
-      @scala.inline
-      def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+      inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+      inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
       
-      @scala.inline
-      def setClamp(value: String | Double | auto): Self = StObject.set(x, "clamp", value.asInstanceOf[js.Any])
+      inline def setClamp(value: String | Double | auto): Self = StObject.set(x, "clamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSplitOnChars(value: js.Array[String]): Self = StObject.set(x, "splitOnChars", value.asInstanceOf[js.Any])
+      inline def setSplitOnChars(value: js.Array[String]): Self = StObject.set(x, "splitOnChars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSplitOnCharsUndefined: Self = StObject.set(x, "splitOnChars", js.undefined)
+      inline def setSplitOnCharsUndefined: Self = StObject.set(x, "splitOnChars", js.undefined)
       
-      @scala.inline
-      def setSplitOnCharsVarargs(value: String*): Self = StObject.set(x, "splitOnChars", js.Array(value :_*))
+      inline def setSplitOnCharsVarargs(value: String*): Self = StObject.set(x, "splitOnChars", js.Array(value :_*))
       
-      @scala.inline
-      def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+      inline def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
+      inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
       
-      @scala.inline
-      def setTruncationChar(value: String): Self = StObject.set(x, "truncationChar", value.asInstanceOf[js.Any])
+      inline def setTruncationChar(value: String): Self = StObject.set(x, "truncationChar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTruncationCharUndefined: Self = StObject.set(x, "truncationChar", js.undefined)
+      inline def setTruncationCharUndefined: Self = StObject.set(x, "truncationChar", js.undefined)
       
-      @scala.inline
-      def setTruncationHTML(value: String): Self = StObject.set(x, "truncationHTML", value.asInstanceOf[js.Any])
+      inline def setTruncationHTML(value: String): Self = StObject.set(x, "truncationHTML", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTruncationHTMLUndefined: Self = StObject.set(x, "truncationHTML", js.undefined)
+      inline def setTruncationHTMLUndefined: Self = StObject.set(x, "truncationHTML", js.undefined)
       
-      @scala.inline
-      def setUseNativeClamp(value: Boolean): Self = StObject.set(x, "useNativeClamp", value.asInstanceOf[js.Any])
+      inline def setUseNativeClamp(value: Boolean): Self = StObject.set(x, "useNativeClamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseNativeClampUndefined: Self = StObject.set(x, "useNativeClamp", js.undefined)
+      inline def setUseNativeClampUndefined: Self = StObject.set(x, "useNativeClamp", js.undefined)
     }
   }
 }

@@ -50,40 +50,29 @@ trait ParamsResourcePeopleGetbatchget
 }
 object ParamsResourcePeopleGetbatchget {
   
-  @scala.inline
-  def apply(): ParamsResourcePeopleGetbatchget = {
+  inline def apply(): ParamsResourcePeopleGetbatchget = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourcePeopleGetbatchget]
   }
   
-  @scala.inline
-  implicit class ParamsResourcePeopleGetbatchgetMutableBuilder[Self <: ParamsResourcePeopleGetbatchget] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourcePeopleGetbatchget](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setPersonFields(value: String): Self = StObject.set(x, "personFields", value.asInstanceOf[js.Any])
+    inline def setPersonFields(value: String): Self = StObject.set(x, "personFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersonFieldsUndefined: Self = StObject.set(x, "personFields", js.undefined)
+    inline def setPersonFieldsUndefined: Self = StObject.set(x, "personFields", js.undefined)
     
-    @scala.inline
-    def setRequestMaskDotincludeField(value: String): Self = StObject.set(x, "requestMask.includeField", value.asInstanceOf[js.Any])
+    inline def setRequestMaskDotincludeField(value: String): Self = StObject.set(x, "requestMask.includeField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestMaskDotincludeFieldUndefined: Self = StObject.set(x, "requestMask.includeField", js.undefined)
+    inline def setRequestMaskDotincludeFieldUndefined: Self = StObject.set(x, "requestMask.includeField", js.undefined)
     
-    @scala.inline
-    def setResourceNames(value: js.Array[String]): Self = StObject.set(x, "resourceNames", value.asInstanceOf[js.Any])
+    inline def setResourceNames(value: js.Array[String]): Self = StObject.set(x, "resourceNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNamesUndefined: Self = StObject.set(x, "resourceNames", js.undefined)
+    inline def setResourceNamesUndefined: Self = StObject.set(x, "resourceNames", js.undefined)
     
-    @scala.inline
-    def setResourceNamesVarargs(value: String*): Self = StObject.set(x, "resourceNames", js.Array(value :_*))
+    inline def setResourceNamesVarargs(value: String*): Self = StObject.set(x, "resourceNames", js.Array(value :_*))
   }
 }

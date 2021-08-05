@@ -18,19 +18,15 @@ trait SchemaAutoscalingPolicyLoadBalancingUtilization extends StObject {
 }
 object SchemaAutoscalingPolicyLoadBalancingUtilization {
   
-  @scala.inline
-  def apply(): SchemaAutoscalingPolicyLoadBalancingUtilization = {
+  inline def apply(): SchemaAutoscalingPolicyLoadBalancingUtilization = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAutoscalingPolicyLoadBalancingUtilization]
   }
   
-  @scala.inline
-  implicit class SchemaAutoscalingPolicyLoadBalancingUtilizationMutableBuilder[Self <: SchemaAutoscalingPolicyLoadBalancingUtilization] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAutoscalingPolicyLoadBalancingUtilization](x: Self) {
     
-    @scala.inline
-    def setUtilizationTarget(value: Double): Self = StObject.set(x, "utilizationTarget", value.asInstanceOf[js.Any])
+    inline def setUtilizationTarget(value: Double): Self = StObject.set(x, "utilizationTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtilizationTargetUndefined: Self = StObject.set(x, "utilizationTarget", js.undefined)
+    inline def setUtilizationTargetUndefined: Self = StObject.set(x, "utilizationTarget", js.undefined)
   }
 }

@@ -77,8 +77,7 @@ object selectSelectMod {
        with /* key */ StringDictionary[js.Any]
   object SelectProps {
     
-    @scala.inline
-    def apply(options: js.Array[DropdownItemProps]): SelectProps = {
+    inline def apply(options: js.Array[DropdownItemProps]): SelectProps = {
       val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[SelectProps]
     }
@@ -94,20 +93,16 @@ object selectSelectMod {
   }
   object StrictSelectProps {
     
-    @scala.inline
-    def apply(options: js.Array[DropdownItemProps]): StrictSelectProps = {
+    inline def apply(options: js.Array[DropdownItemProps]): StrictSelectProps = {
       val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[StrictSelectProps]
     }
     
-    @scala.inline
-    implicit class StrictSelectPropsMutableBuilder[Self <: StrictSelectProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictSelectProps](x: Self) {
       
-      @scala.inline
-      def setOptions(value: js.Array[DropdownItemProps]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Array[DropdownItemProps]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsVarargs(value: DropdownItemProps*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: DropdownItemProps*): Self = StObject.set(x, "options", js.Array(value :_*))
     }
   }
 }

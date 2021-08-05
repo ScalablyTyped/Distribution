@@ -12,8 +12,7 @@ object bigintAsmMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def bigintAsm(stdlib: js.Any, foreign: js.Any, buffer: ArrayBuffer): bigintresult = (^.asInstanceOf[js.Dynamic].applyDynamic("bigint_asm")(stdlib.asInstanceOf[js.Any], foreign.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[bigintresult]
+  inline def bigintAsm(stdlib: js.Any, foreign: js.Any, buffer: ArrayBuffer): bigintresult = (^.asInstanceOf[js.Dynamic].applyDynamic("bigint_asm")(stdlib.asInstanceOf[js.Any], foreign.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[bigintresult]
   
   @js.native
   trait bigintresult extends StObject {

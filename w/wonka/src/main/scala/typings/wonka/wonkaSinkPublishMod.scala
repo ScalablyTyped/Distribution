@@ -12,6 +12,5 @@ object wonkaSinkPublishMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def publish[A](source: Source[A]): Subscription = ^.asInstanceOf[js.Dynamic].applyDynamic("publish")(source.asInstanceOf[js.Any]).asInstanceOf[Subscription]
+  inline def publish[A](source: Source[A]): Subscription = ^.asInstanceOf[js.Dynamic].applyDynamic("publish")(source.asInstanceOf[js.Any]).asInstanceOf[Subscription]
 }

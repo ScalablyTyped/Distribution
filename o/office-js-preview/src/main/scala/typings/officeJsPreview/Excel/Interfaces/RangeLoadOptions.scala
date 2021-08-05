@@ -294,217 +294,147 @@ trait RangeLoadOptions extends StObject {
 }
 object RangeLoadOptions {
   
-  @scala.inline
-  def apply(): RangeLoadOptions = {
+  inline def apply(): RangeLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RangeLoadOptions]
   }
   
-  @scala.inline
-  implicit class RangeLoadOptionsMutableBuilder[Self <: RangeLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RangeLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setAddress(value: Boolean): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: Boolean): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressLocal(value: Boolean): Self = StObject.set(x, "addressLocal", value.asInstanceOf[js.Any])
+    inline def setAddressLocal(value: Boolean): Self = StObject.set(x, "addressLocal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressLocalUndefined: Self = StObject.set(x, "addressLocal", js.undefined)
+    inline def setAddressLocalUndefined: Self = StObject.set(x, "addressLocal", js.undefined)
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setCellCount(value: Boolean): Self = StObject.set(x, "cellCount", value.asInstanceOf[js.Any])
+    inline def setCellCount(value: Boolean): Self = StObject.set(x, "cellCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellCountUndefined: Self = StObject.set(x, "cellCount", js.undefined)
+    inline def setCellCountUndefined: Self = StObject.set(x, "cellCount", js.undefined)
     
-    @scala.inline
-    def setColumnCount(value: Boolean): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
+    inline def setColumnCount(value: Boolean): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnCountUndefined: Self = StObject.set(x, "columnCount", js.undefined)
+    inline def setColumnCountUndefined: Self = StObject.set(x, "columnCount", js.undefined)
     
-    @scala.inline
-    def setColumnHidden(value: Boolean): Self = StObject.set(x, "columnHidden", value.asInstanceOf[js.Any])
+    inline def setColumnHidden(value: Boolean): Self = StObject.set(x, "columnHidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnHiddenUndefined: Self = StObject.set(x, "columnHidden", js.undefined)
+    inline def setColumnHiddenUndefined: Self = StObject.set(x, "columnHidden", js.undefined)
     
-    @scala.inline
-    def setColumnIndex(value: Boolean): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
+    inline def setColumnIndex(value: Boolean): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
+    inline def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
     
-    @scala.inline
-    def setDataValidation(value: DataValidationLoadOptions): Self = StObject.set(x, "dataValidation", value.asInstanceOf[js.Any])
+    inline def setDataValidation(value: DataValidationLoadOptions): Self = StObject.set(x, "dataValidation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataValidationUndefined: Self = StObject.set(x, "dataValidation", js.undefined)
+    inline def setDataValidationUndefined: Self = StObject.set(x, "dataValidation", js.undefined)
     
-    @scala.inline
-    def setFormat(value: RangeFormatLoadOptions): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: RangeFormatLoadOptions): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setFormulas(value: Boolean): Self = StObject.set(x, "formulas", value.asInstanceOf[js.Any])
+    inline def setFormulas(value: Boolean): Self = StObject.set(x, "formulas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormulasLocal(value: Boolean): Self = StObject.set(x, "formulasLocal", value.asInstanceOf[js.Any])
+    inline def setFormulasLocal(value: Boolean): Self = StObject.set(x, "formulasLocal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormulasLocalUndefined: Self = StObject.set(x, "formulasLocal", js.undefined)
+    inline def setFormulasLocalUndefined: Self = StObject.set(x, "formulasLocal", js.undefined)
     
-    @scala.inline
-    def setFormulasR1C1(value: Boolean): Self = StObject.set(x, "formulasR1C1", value.asInstanceOf[js.Any])
+    inline def setFormulasR1C1(value: Boolean): Self = StObject.set(x, "formulasR1C1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormulasR1C1Undefined: Self = StObject.set(x, "formulasR1C1", js.undefined)
+    inline def setFormulasR1C1Undefined: Self = StObject.set(x, "formulasR1C1", js.undefined)
     
-    @scala.inline
-    def setFormulasUndefined: Self = StObject.set(x, "formulas", js.undefined)
+    inline def setFormulasUndefined: Self = StObject.set(x, "formulas", js.undefined)
     
-    @scala.inline
-    def setHasSpill(value: Boolean): Self = StObject.set(x, "hasSpill", value.asInstanceOf[js.Any])
+    inline def setHasSpill(value: Boolean): Self = StObject.set(x, "hasSpill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasSpillUndefined: Self = StObject.set(x, "hasSpill", js.undefined)
+    inline def setHasSpillUndefined: Self = StObject.set(x, "hasSpill", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Boolean): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Boolean): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
-    @scala.inline
-    def setHyperlink(value: Boolean): Self = StObject.set(x, "hyperlink", value.asInstanceOf[js.Any])
+    inline def setHyperlink(value: Boolean): Self = StObject.set(x, "hyperlink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHyperlinkUndefined: Self = StObject.set(x, "hyperlink", js.undefined)
+    inline def setHyperlinkUndefined: Self = StObject.set(x, "hyperlink", js.undefined)
     
-    @scala.inline
-    def setIsEntireColumn(value: Boolean): Self = StObject.set(x, "isEntireColumn", value.asInstanceOf[js.Any])
+    inline def setIsEntireColumn(value: Boolean): Self = StObject.set(x, "isEntireColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEntireColumnUndefined: Self = StObject.set(x, "isEntireColumn", js.undefined)
+    inline def setIsEntireColumnUndefined: Self = StObject.set(x, "isEntireColumn", js.undefined)
     
-    @scala.inline
-    def setIsEntireRow(value: Boolean): Self = StObject.set(x, "isEntireRow", value.asInstanceOf[js.Any])
+    inline def setIsEntireRow(value: Boolean): Self = StObject.set(x, "isEntireRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEntireRowUndefined: Self = StObject.set(x, "isEntireRow", js.undefined)
+    inline def setIsEntireRowUndefined: Self = StObject.set(x, "isEntireRow", js.undefined)
     
-    @scala.inline
-    def setLeft(value: Boolean): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Boolean): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
-    @scala.inline
-    def setLinkedDataTypeState(value: Boolean): Self = StObject.set(x, "linkedDataTypeState", value.asInstanceOf[js.Any])
+    inline def setLinkedDataTypeState(value: Boolean): Self = StObject.set(x, "linkedDataTypeState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkedDataTypeStateUndefined: Self = StObject.set(x, "linkedDataTypeState", js.undefined)
+    inline def setLinkedDataTypeStateUndefined: Self = StObject.set(x, "linkedDataTypeState", js.undefined)
     
-    @scala.inline
-    def setNumberFormat(value: Boolean): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
+    inline def setNumberFormat(value: Boolean): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberFormatCategories(value: Boolean): Self = StObject.set(x, "numberFormatCategories", value.asInstanceOf[js.Any])
+    inline def setNumberFormatCategories(value: Boolean): Self = StObject.set(x, "numberFormatCategories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberFormatCategoriesUndefined: Self = StObject.set(x, "numberFormatCategories", js.undefined)
+    inline def setNumberFormatCategoriesUndefined: Self = StObject.set(x, "numberFormatCategories", js.undefined)
     
-    @scala.inline
-    def setNumberFormatLocal(value: Boolean): Self = StObject.set(x, "numberFormatLocal", value.asInstanceOf[js.Any])
+    inline def setNumberFormatLocal(value: Boolean): Self = StObject.set(x, "numberFormatLocal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberFormatLocalUndefined: Self = StObject.set(x, "numberFormatLocal", js.undefined)
+    inline def setNumberFormatLocalUndefined: Self = StObject.set(x, "numberFormatLocal", js.undefined)
     
-    @scala.inline
-    def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
+    inline def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
     
-    @scala.inline
-    def setRowCount(value: Boolean): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
+    inline def setRowCount(value: Boolean): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
+    inline def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
     
-    @scala.inline
-    def setRowHidden(value: Boolean): Self = StObject.set(x, "rowHidden", value.asInstanceOf[js.Any])
+    inline def setRowHidden(value: Boolean): Self = StObject.set(x, "rowHidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowHiddenUndefined: Self = StObject.set(x, "rowHidden", js.undefined)
+    inline def setRowHiddenUndefined: Self = StObject.set(x, "rowHidden", js.undefined)
     
-    @scala.inline
-    def setRowIndex(value: Boolean): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
+    inline def setRowIndex(value: Boolean): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
+    inline def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
     
-    @scala.inline
-    def setSavedAsArray(value: Boolean): Self = StObject.set(x, "savedAsArray", value.asInstanceOf[js.Any])
+    inline def setSavedAsArray(value: Boolean): Self = StObject.set(x, "savedAsArray", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSavedAsArrayUndefined: Self = StObject.set(x, "savedAsArray", js.undefined)
+    inline def setSavedAsArrayUndefined: Self = StObject.set(x, "savedAsArray", js.undefined)
     
-    @scala.inline
-    def setStyle(value: Boolean): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: Boolean): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setText(value: Boolean): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: Boolean): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setTop(value: Boolean): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Boolean): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
-    @scala.inline
-    def setValueTypes(value: Boolean): Self = StObject.set(x, "valueTypes", value.asInstanceOf[js.Any])
+    inline def setValueTypes(value: Boolean): Self = StObject.set(x, "valueTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueTypesUndefined: Self = StObject.set(x, "valueTypes", js.undefined)
+    inline def setValueTypesUndefined: Self = StObject.set(x, "valueTypes", js.undefined)
     
-    @scala.inline
-    def setValues(value: Boolean): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: Boolean): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Boolean): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Boolean): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
-    @scala.inline
-    def setWorksheet(value: WorksheetLoadOptions): Self = StObject.set(x, "worksheet", value.asInstanceOf[js.Any])
+    inline def setWorksheet(value: WorksheetLoadOptions): Self = StObject.set(x, "worksheet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorksheetUndefined: Self = StObject.set(x, "worksheet", js.undefined)
+    inline def setWorksheetUndefined: Self = StObject.set(x, "worksheet", js.undefined)
   }
 }

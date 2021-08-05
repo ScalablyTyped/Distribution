@@ -14,31 +14,23 @@ trait IContextualizedQueryLatencyStats extends StObject {
 }
 object IContextualizedQueryLatencyStats {
   
-  @scala.inline
-  def apply(): IContextualizedQueryLatencyStats = {
+  inline def apply(): IContextualizedQueryLatencyStats = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IContextualizedQueryLatencyStats]
   }
   
-  @scala.inline
-  implicit class IContextualizedQueryLatencyStatsMutableBuilder[Self <: IContextualizedQueryLatencyStats] (val x: Self) extends AnyVal {
+  extension [Self <: IContextualizedQueryLatencyStats](x: Self) {
     
-    @scala.inline
-    def setContext(value: IStatsContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: IStatsContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextNull: Self = StObject.set(x, "context", null)
+    inline def setContextNull: Self = StObject.set(x, "context", null)
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setQueryLatencyStats(value: IQueryLatencyStats): Self = StObject.set(x, "queryLatencyStats", value.asInstanceOf[js.Any])
+    inline def setQueryLatencyStats(value: IQueryLatencyStats): Self = StObject.set(x, "queryLatencyStats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryLatencyStatsNull: Self = StObject.set(x, "queryLatencyStats", null)
+    inline def setQueryLatencyStatsNull: Self = StObject.set(x, "queryLatencyStats", null)
     
-    @scala.inline
-    def setQueryLatencyStatsUndefined: Self = StObject.set(x, "queryLatencyStats", js.undefined)
+    inline def setQueryLatencyStatsUndefined: Self = StObject.set(x, "queryLatencyStats", js.undefined)
   }
 }

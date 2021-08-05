@@ -22,52 +22,37 @@ trait WebExtensionManifestBrowserAction extends StObject {
 }
 object WebExtensionManifestBrowserAction {
   
-  @scala.inline
-  def apply(): WebExtensionManifestBrowserAction = {
+  inline def apply(): WebExtensionManifestBrowserAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebExtensionManifestBrowserAction]
   }
   
-  @scala.inline
-  implicit class WebExtensionManifestBrowserActionMutableBuilder[Self <: WebExtensionManifestBrowserAction] (val x: Self) extends AnyVal {
+  extension [Self <: WebExtensionManifestBrowserAction](x: Self) {
     
-    @scala.inline
-    def setBrowser_style(value: Boolean): Self = StObject.set(x, "browser_style", value.asInstanceOf[js.Any])
+    inline def setBrowser_style(value: Boolean): Self = StObject.set(x, "browser_style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowser_styleUndefined: Self = StObject.set(x, "browser_style", js.undefined)
+    inline def setBrowser_styleUndefined: Self = StObject.set(x, "browser_style", js.undefined)
     
-    @scala.inline
-    def setDefault_area(value: WebExtensionManifestBrowserActionDefaultArea): Self = StObject.set(x, "default_area", value.asInstanceOf[js.Any])
+    inline def setDefault_area(value: WebExtensionManifestBrowserActionDefaultArea): Self = StObject.set(x, "default_area", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefault_areaUndefined: Self = StObject.set(x, "default_area", js.undefined)
+    inline def setDefault_areaUndefined: Self = StObject.set(x, "default_area", js.undefined)
     
-    @scala.inline
-    def setDefault_icon(value: IconPath): Self = StObject.set(x, "default_icon", value.asInstanceOf[js.Any])
+    inline def setDefault_icon(value: IconPath): Self = StObject.set(x, "default_icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefault_iconUndefined: Self = StObject.set(x, "default_icon", js.undefined)
+    inline def setDefault_iconUndefined: Self = StObject.set(x, "default_icon", js.undefined)
     
-    @scala.inline
-    def setDefault_popup(value: String): Self = StObject.set(x, "default_popup", value.asInstanceOf[js.Any])
+    inline def setDefault_popup(value: String): Self = StObject.set(x, "default_popup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefault_popupUndefined: Self = StObject.set(x, "default_popup", js.undefined)
+    inline def setDefault_popupUndefined: Self = StObject.set(x, "default_popup", js.undefined)
     
-    @scala.inline
-    def setDefault_title(value: String): Self = StObject.set(x, "default_title", value.asInstanceOf[js.Any])
+    inline def setDefault_title(value: String): Self = StObject.set(x, "default_title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefault_titleUndefined: Self = StObject.set(x, "default_title", js.undefined)
+    inline def setDefault_titleUndefined: Self = StObject.set(x, "default_title", js.undefined)
     
-    @scala.inline
-    def setTheme_icons(value: js.Array[ThemeIcons]): Self = StObject.set(x, "theme_icons", value.asInstanceOf[js.Any])
+    inline def setTheme_icons(value: js.Array[ThemeIcons]): Self = StObject.set(x, "theme_icons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTheme_iconsUndefined: Self = StObject.set(x, "theme_icons", js.undefined)
+    inline def setTheme_iconsUndefined: Self = StObject.set(x, "theme_icons", js.undefined)
     
-    @scala.inline
-    def setTheme_iconsVarargs(value: ThemeIcons*): Self = StObject.set(x, "theme_icons", js.Array(value :_*))
+    inline def setTheme_iconsVarargs(value: ThemeIcons*): Self = StObject.set(x, "theme_icons", js.Array(value :_*))
   }
 }

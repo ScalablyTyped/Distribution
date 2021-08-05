@@ -13,16 +13,13 @@ trait RemoveAction extends StObject {
 }
 object RemoveAction {
   
-  @scala.inline
-  def apply(MemberId: ResourceIdString): RemoveAction = {
+  inline def apply(MemberId: ResourceIdString): RemoveAction = {
     val __obj = js.Dynamic.literal(MemberId = MemberId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveAction]
   }
   
-  @scala.inline
-  implicit class RemoveActionMutableBuilder[Self <: RemoveAction] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveAction](x: Self) {
     
-    @scala.inline
-    def setMemberId(value: ResourceIdString): Self = StObject.set(x, "MemberId", value.asInstanceOf[js.Any])
+    inline def setMemberId(value: ResourceIdString): Self = StObject.set(x, "MemberId", value.asInstanceOf[js.Any])
   }
 }

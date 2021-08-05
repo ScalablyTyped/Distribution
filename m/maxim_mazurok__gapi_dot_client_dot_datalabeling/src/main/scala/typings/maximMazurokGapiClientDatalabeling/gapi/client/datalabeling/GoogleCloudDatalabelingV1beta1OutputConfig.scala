@@ -14,25 +14,19 @@ trait GoogleCloudDatalabelingV1beta1OutputConfig extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1OutputConfig {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1OutputConfig = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1OutputConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1OutputConfig]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1OutputConfigMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1OutputConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1OutputConfig](x: Self) {
     
-    @scala.inline
-    def setGcsDestination(value: GoogleCloudDatalabelingV1beta1GcsDestination): Self = StObject.set(x, "gcsDestination", value.asInstanceOf[js.Any])
+    inline def setGcsDestination(value: GoogleCloudDatalabelingV1beta1GcsDestination): Self = StObject.set(x, "gcsDestination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcsDestinationUndefined: Self = StObject.set(x, "gcsDestination", js.undefined)
+    inline def setGcsDestinationUndefined: Self = StObject.set(x, "gcsDestination", js.undefined)
     
-    @scala.inline
-    def setGcsFolderDestination(value: GoogleCloudDatalabelingV1beta1GcsFolderDestination): Self = StObject.set(x, "gcsFolderDestination", value.asInstanceOf[js.Any])
+    inline def setGcsFolderDestination(value: GoogleCloudDatalabelingV1beta1GcsFolderDestination): Self = StObject.set(x, "gcsFolderDestination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcsFolderDestinationUndefined: Self = StObject.set(x, "gcsFolderDestination", js.undefined)
+    inline def setGcsFolderDestinationUndefined: Self = StObject.set(x, "gcsFolderDestination", js.undefined)
   }
 }

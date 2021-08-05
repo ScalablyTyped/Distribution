@@ -13,19 +13,15 @@ trait CancelAdvancedOptions extends StObject {
 }
 object CancelAdvancedOptions {
   
-  @scala.inline
-  def apply(): CancelAdvancedOptions = {
+  inline def apply(): CancelAdvancedOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CancelAdvancedOptions]
   }
   
-  @scala.inline
-  implicit class CancelAdvancedOptionsMutableBuilder[Self <: CancelAdvancedOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CancelAdvancedOptions](x: Self) {
     
-    @scala.inline
-    def setMode(value: skip | kill | killnowait): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: skip | kill | killnowait): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

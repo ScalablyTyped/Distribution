@@ -15,8 +15,7 @@ trait ClientStoryApi[StoryFnReturnType] extends StObject {
 }
 object ClientStoryApi {
   
-  @scala.inline
-  def apply[StoryFnReturnType](
+  inline def apply[StoryFnReturnType](
     addDecorator: DecoratorFunction[StoryFnReturnType] => StoryApi[StoryFnReturnType],
     addParameters: Parameters => StoryApi[StoryFnReturnType],
     storiesOf: (StoryKind, NodeModule) => StoryApi[StoryFnReturnType]
@@ -25,16 +24,12 @@ object ClientStoryApi {
     __obj.asInstanceOf[ClientStoryApi[StoryFnReturnType]]
   }
   
-  @scala.inline
-  implicit class ClientStoryApiMutableBuilder[Self <: ClientStoryApi[?], StoryFnReturnType] (val x: Self & ClientStoryApi[StoryFnReturnType]) extends AnyVal {
+  extension [Self <: ClientStoryApi[?], StoryFnReturnType](x: Self & ClientStoryApi[StoryFnReturnType]) {
     
-    @scala.inline
-    def setAddDecorator(value: DecoratorFunction[StoryFnReturnType] => StoryApi[StoryFnReturnType]): Self = StObject.set(x, "addDecorator", js.Any.fromFunction1(value))
+    inline def setAddDecorator(value: DecoratorFunction[StoryFnReturnType] => StoryApi[StoryFnReturnType]): Self = StObject.set(x, "addDecorator", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddParameters(value: Parameters => StoryApi[StoryFnReturnType]): Self = StObject.set(x, "addParameters", js.Any.fromFunction1(value))
+    inline def setAddParameters(value: Parameters => StoryApi[StoryFnReturnType]): Self = StObject.set(x, "addParameters", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStoriesOf(value: (StoryKind, NodeModule) => StoryApi[StoryFnReturnType]): Self = StObject.set(x, "storiesOf", js.Any.fromFunction2(value))
+    inline def setStoriesOf(value: (StoryKind, NodeModule) => StoryApi[StoryFnReturnType]): Self = StObject.set(x, "storiesOf", js.Any.fromFunction2(value))
   }
 }

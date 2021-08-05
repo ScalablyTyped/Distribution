@@ -28,34 +28,25 @@ trait ImportKeyPairRequest extends StObject {
 }
 object ImportKeyPairRequest {
   
-  @scala.inline
-  def apply(KeyName: String, PublicKeyMaterial: _Blob): ImportKeyPairRequest = {
+  inline def apply(KeyName: String, PublicKeyMaterial: _Blob): ImportKeyPairRequest = {
     val __obj = js.Dynamic.literal(KeyName = KeyName.asInstanceOf[js.Any], PublicKeyMaterial = PublicKeyMaterial.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportKeyPairRequest]
   }
   
-  @scala.inline
-  implicit class ImportKeyPairRequestMutableBuilder[Self <: ImportKeyPairRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ImportKeyPairRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setKeyName(value: String): Self = StObject.set(x, "KeyName", value.asInstanceOf[js.Any])
+    inline def setKeyName(value: String): Self = StObject.set(x, "KeyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKeyMaterial(value: _Blob): Self = StObject.set(x, "PublicKeyMaterial", value.asInstanceOf[js.Any])
+    inline def setPublicKeyMaterial(value: _Blob): Self = StObject.set(x, "PublicKeyMaterial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagSpecifications(value: TagSpecificationList): Self = StObject.set(x, "TagSpecifications", value.asInstanceOf[js.Any])
+    inline def setTagSpecifications(value: TagSpecificationList): Self = StObject.set(x, "TagSpecifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
+    inline def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
     
-    @scala.inline
-    def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value :_*))
+    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value :_*))
   }
 }

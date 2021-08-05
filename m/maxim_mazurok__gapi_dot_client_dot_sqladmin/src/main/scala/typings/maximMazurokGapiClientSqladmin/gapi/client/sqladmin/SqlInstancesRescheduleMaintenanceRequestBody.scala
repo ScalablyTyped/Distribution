@@ -11,19 +11,15 @@ trait SqlInstancesRescheduleMaintenanceRequestBody extends StObject {
 }
 object SqlInstancesRescheduleMaintenanceRequestBody {
   
-  @scala.inline
-  def apply(): SqlInstancesRescheduleMaintenanceRequestBody = {
+  inline def apply(): SqlInstancesRescheduleMaintenanceRequestBody = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SqlInstancesRescheduleMaintenanceRequestBody]
   }
   
-  @scala.inline
-  implicit class SqlInstancesRescheduleMaintenanceRequestBodyMutableBuilder[Self <: SqlInstancesRescheduleMaintenanceRequestBody] (val x: Self) extends AnyVal {
+  extension [Self <: SqlInstancesRescheduleMaintenanceRequestBody](x: Self) {
     
-    @scala.inline
-    def setReschedule(value: Reschedule): Self = StObject.set(x, "reschedule", value.asInstanceOf[js.Any])
+    inline def setReschedule(value: Reschedule): Self = StObject.set(x, "reschedule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRescheduleUndefined: Self = StObject.set(x, "reschedule", js.undefined)
+    inline def setRescheduleUndefined: Self = StObject.set(x, "reschedule", js.undefined)
   }
 }

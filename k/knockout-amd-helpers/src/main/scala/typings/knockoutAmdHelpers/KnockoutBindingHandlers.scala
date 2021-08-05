@@ -10,16 +10,13 @@ trait KnockoutBindingHandlers extends StObject {
 }
 object KnockoutBindingHandlers {
   
-  @scala.inline
-  def apply(module: KnockoutAMDModule): KnockoutBindingHandlers = {
+  inline def apply(module: KnockoutAMDModule): KnockoutBindingHandlers = {
     val __obj = js.Dynamic.literal(module = module.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnockoutBindingHandlers]
   }
   
-  @scala.inline
-  implicit class KnockoutBindingHandlersMutableBuilder[Self <: KnockoutBindingHandlers] (val x: Self) extends AnyVal {
+  extension [Self <: KnockoutBindingHandlers](x: Self) {
     
-    @scala.inline
-    def setModule(value: KnockoutAMDModule): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+    inline def setModule(value: KnockoutAMDModule): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
   }
 }

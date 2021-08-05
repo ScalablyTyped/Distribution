@@ -32,8 +32,7 @@ trait HelpContent
      with XChild
 object HelpContent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ContentType: String,
     Identifier: XContentIdentifier,
     Parent: XInterface,

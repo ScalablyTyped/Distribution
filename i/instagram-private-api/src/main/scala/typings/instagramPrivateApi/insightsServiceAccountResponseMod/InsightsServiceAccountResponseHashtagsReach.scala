@@ -12,19 +12,15 @@ trait InsightsServiceAccountResponseHashtagsReach extends StObject {
 }
 object InsightsServiceAccountResponseHashtagsReach {
   
-  @scala.inline
-  def apply(follow_status: InsightsServiceAccountResponseFollowStatus, name: String): InsightsServiceAccountResponseHashtagsReach = {
+  inline def apply(follow_status: InsightsServiceAccountResponseFollowStatus, name: String): InsightsServiceAccountResponseHashtagsReach = {
     val __obj = js.Dynamic.literal(follow_status = follow_status.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsightsServiceAccountResponseHashtagsReach]
   }
   
-  @scala.inline
-  implicit class InsightsServiceAccountResponseHashtagsReachMutableBuilder[Self <: InsightsServiceAccountResponseHashtagsReach] (val x: Self) extends AnyVal {
+  extension [Self <: InsightsServiceAccountResponseHashtagsReach](x: Self) {
     
-    @scala.inline
-    def setFollow_status(value: InsightsServiceAccountResponseFollowStatus): Self = StObject.set(x, "follow_status", value.asInstanceOf[js.Any])
+    inline def setFollow_status(value: InsightsServiceAccountResponseFollowStatus): Self = StObject.set(x, "follow_status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

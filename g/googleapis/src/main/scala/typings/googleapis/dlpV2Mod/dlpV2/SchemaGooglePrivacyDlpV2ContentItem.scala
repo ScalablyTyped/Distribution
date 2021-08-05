@@ -28,31 +28,23 @@ trait SchemaGooglePrivacyDlpV2ContentItem extends StObject {
 }
 object SchemaGooglePrivacyDlpV2ContentItem {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2ContentItem = {
+  inline def apply(): SchemaGooglePrivacyDlpV2ContentItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2ContentItem]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2ContentItemMutableBuilder[Self <: SchemaGooglePrivacyDlpV2ContentItem] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2ContentItem](x: Self) {
     
-    @scala.inline
-    def setByteItem(value: SchemaGooglePrivacyDlpV2ByteContentItem): Self = StObject.set(x, "byteItem", value.asInstanceOf[js.Any])
+    inline def setByteItem(value: SchemaGooglePrivacyDlpV2ByteContentItem): Self = StObject.set(x, "byteItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByteItemUndefined: Self = StObject.set(x, "byteItem", js.undefined)
+    inline def setByteItemUndefined: Self = StObject.set(x, "byteItem", js.undefined)
     
-    @scala.inline
-    def setTable(value: SchemaGooglePrivacyDlpV2Table): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+    inline def setTable(value: SchemaGooglePrivacyDlpV2Table): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
+    inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

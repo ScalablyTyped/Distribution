@@ -10,22 +10,17 @@ trait OnenotePagePreviewLinks extends StObject {
 }
 object OnenotePagePreviewLinks {
   
-  @scala.inline
-  def apply(): OnenotePagePreviewLinks = {
+  inline def apply(): OnenotePagePreviewLinks = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnenotePagePreviewLinks]
   }
   
-  @scala.inline
-  implicit class OnenotePagePreviewLinksMutableBuilder[Self <: OnenotePagePreviewLinks] (val x: Self) extends AnyVal {
+  extension [Self <: OnenotePagePreviewLinks](x: Self) {
     
-    @scala.inline
-    def setPreviewImageUrl(value: NullableOption[ExternalLink]): Self = StObject.set(x, "previewImageUrl", value.asInstanceOf[js.Any])
+    inline def setPreviewImageUrl(value: NullableOption[ExternalLink]): Self = StObject.set(x, "previewImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviewImageUrlNull: Self = StObject.set(x, "previewImageUrl", null)
+    inline def setPreviewImageUrlNull: Self = StObject.set(x, "previewImageUrl", null)
     
-    @scala.inline
-    def setPreviewImageUrlUndefined: Self = StObject.set(x, "previewImageUrl", js.undefined)
+    inline def setPreviewImageUrlUndefined: Self = StObject.set(x, "previewImageUrl", js.undefined)
   }
 }

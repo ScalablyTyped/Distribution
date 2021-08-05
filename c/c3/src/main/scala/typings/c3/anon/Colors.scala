@@ -54,85 +54,59 @@ trait Colors extends StObject {
 }
 object Colors {
   
-  @scala.inline
-  def apply(): Colors = {
+  inline def apply(): Colors = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Colors]
   }
   
-  @scala.inline
-  implicit class ColorsMutableBuilder[Self <: Colors] (val x: Self) extends AnyVal {
+  extension [Self <: Colors](x: Self) {
     
-    @scala.inline
-    def setColors(value: /* value */ Double => String): Self = StObject.set(x, "colors", js.Any.fromFunction1(value))
+    inline def setColors(value: /* value */ Double => String): Self = StObject.set(x, "colors", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+    inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    @scala.inline
-    def setLines(value: js.Array[Class]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+    inline def setLines(value: js.Array[Class]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
+    inline def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
     
-    @scala.inline
-    def setLinesVarargs(value: Class*): Self = StObject.set(x, "lines", js.Array(value :_*))
+    inline def setLinesVarargs(value: Class*): Self = StObject.set(x, "lines", js.Array(value :_*))
     
-    @scala.inline
-    def setPadding(value: typings.c3.mod.Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: typings.c3.mod.Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    @scala.inline
-    def setRegions(value: js.Array[Opacity]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
+    inline def setRegions(value: js.Array[Opacity]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
+    inline def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
     
-    @scala.inline
-    def setRegionsVarargs(value: Opacity*): Self = StObject.set(x, "regions", js.Array(value :_*))
+    inline def setRegionsVarargs(value: Opacity*): Self = StObject.set(x, "regions", js.Array(value :_*))
     
-    @scala.inline
-    def setScaleFormat(value: pow10 | (js.Function1[/* arg0 */ Double, String])): Self = StObject.set(x, "scaleFormat", value.asInstanceOf[js.Any])
+    inline def setScaleFormat(value: pow10 | (js.Function1[/* arg0 */ Double, String])): Self = StObject.set(x, "scaleFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleFormatFunction1(value: /* arg0 */ Double => String): Self = StObject.set(x, "scaleFormat", js.Any.fromFunction1(value))
+    inline def setScaleFormatFunction1(value: /* arg0 */ Double => String): Self = StObject.set(x, "scaleFormat", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setScaleFormatUndefined: Self = StObject.set(x, "scaleFormat", js.undefined)
+    inline def setScaleFormatUndefined: Self = StObject.set(x, "scaleFormat", js.undefined)
     
-    @scala.inline
-    def setScaleMax(value: Double): Self = StObject.set(x, "scaleMax", value.asInstanceOf[js.Any])
+    inline def setScaleMax(value: Double): Self = StObject.set(x, "scaleMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleMaxUndefined: Self = StObject.set(x, "scaleMax", js.undefined)
+    inline def setScaleMaxUndefined: Self = StObject.set(x, "scaleMax", js.undefined)
     
-    @scala.inline
-    def setScaleMin(value: Double): Self = StObject.set(x, "scaleMin", value.asInstanceOf[js.Any])
+    inline def setScaleMin(value: Double): Self = StObject.set(x, "scaleMin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleMinUndefined: Self = StObject.set(x, "scaleMin", js.undefined)
+    inline def setScaleMinUndefined: Self = StObject.set(x, "scaleMin", js.undefined)
     
-    @scala.inline
-    def setScaleValues(value: (/* minValue */ Double, /* maxValue */ Double) => js.Array[Double]): Self = StObject.set(x, "scaleValues", js.Any.fromFunction2(value))
+    inline def setScaleValues(value: (/* minValue */ Double, /* maxValue */ Double) => js.Array[Double]): Self = StObject.set(x, "scaleValues", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setScaleValuesUndefined: Self = StObject.set(x, "scaleValues", js.undefined)
+    inline def setScaleValuesUndefined: Self = StObject.set(x, "scaleValues", js.undefined)
     
-    @scala.inline
-    def setScaleWidth(value: Double): Self = StObject.set(x, "scaleWidth", value.asInstanceOf[js.Any])
+    inline def setScaleWidth(value: Double): Self = StObject.set(x, "scaleWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleWidthUndefined: Self = StObject.set(x, "scaleWidth", js.undefined)
+    inline def setScaleWidthUndefined: Self = StObject.set(x, "scaleWidth", js.undefined)
     
-    @scala.inline
-    def setTexts(value: js.Array[Content]): Self = StObject.set(x, "texts", value.asInstanceOf[js.Any])
+    inline def setTexts(value: js.Array[Content]): Self = StObject.set(x, "texts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextsUndefined: Self = StObject.set(x, "texts", js.undefined)
+    inline def setTextsUndefined: Self = StObject.set(x, "texts", js.undefined)
     
-    @scala.inline
-    def setTextsVarargs(value: Content*): Self = StObject.set(x, "texts", js.Array(value :_*))
+    inline def setTextsVarargs(value: Content*): Self = StObject.set(x, "texts", js.Array(value :_*))
   }
 }

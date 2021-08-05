@@ -10,16 +10,13 @@ trait AbstractWorkerEventMap extends StObject {
 }
 object AbstractWorkerEventMap {
   
-  @scala.inline
-  def apply(error: ErrorEvent): AbstractWorkerEventMap = {
+  inline def apply(error: ErrorEvent): AbstractWorkerEventMap = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[AbstractWorkerEventMap]
   }
   
-  @scala.inline
-  implicit class AbstractWorkerEventMapMutableBuilder[Self <: AbstractWorkerEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: AbstractWorkerEventMap](x: Self) {
     
-    @scala.inline
-    def setError(value: ErrorEvent): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: ErrorEvent): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }
 }

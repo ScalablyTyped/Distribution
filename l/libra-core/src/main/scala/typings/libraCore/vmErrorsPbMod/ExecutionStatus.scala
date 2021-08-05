@@ -100,11 +100,9 @@ object ExecutionStatus {
     /* 1 */ val RUNTIME_STATUS: typings.libraCore.vmErrorsPbMod.ExecutionStatus.ExecutionStatusCase.RUNTIME_STATUS & Double = js.native
   }
   
-  @scala.inline
-  def deserializeBinary(bytes: Uint8Array): ExecutionStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[ExecutionStatus]
+  inline def deserializeBinary(bytes: Uint8Array): ExecutionStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[ExecutionStatus]
   
-  @scala.inline
-  def deserializeBinaryFromReader(message: ExecutionStatus, reader: BinaryReader): ExecutionStatus = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[ExecutionStatus]
+  inline def deserializeBinaryFromReader(message: ExecutionStatus, reader: BinaryReader): ExecutionStatus = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[ExecutionStatus]
   
   @JSImport("libra-core/lib/@/generated/vm_errors_pb", "ExecutionStatus.extensions")
   @js.native
@@ -113,17 +111,13 @@ object ExecutionStatus {
   @JSImport("libra-core/lib/@/generated/vm_errors_pb", "ExecutionStatus.extensionsBinary")
   @js.native
   def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-  @scala.inline
-  def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+  inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+  inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def serializeBinaryToWriter(message: ExecutionStatus, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serializeBinaryToWriter(message: ExecutionStatus, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def toObject(includeInstance: Boolean, msg: ExecutionStatus): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+  inline def toObject(includeInstance: Boolean, msg: ExecutionStatus): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
   trait AsObject extends StObject {
     
@@ -137,35 +131,26 @@ object ExecutionStatus {
   }
   object AsObject {
     
-    @scala.inline
-    def apply(runtimeStatus: RuntimeStatus): AsObject = {
+    inline def apply(runtimeStatus: RuntimeStatus): AsObject = {
       val __obj = js.Dynamic.literal(runtimeStatus = runtimeStatus.asInstanceOf[js.Any])
       __obj.asInstanceOf[AsObject]
     }
     
-    @scala.inline
-    implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+    extension [Self <: AsObject](x: Self) {
       
-      @scala.inline
-      def setArithmeticError(value: typings.libraCore.vmErrorsPbMod.ArithmeticError.AsObject): Self = StObject.set(x, "arithmeticError", value.asInstanceOf[js.Any])
+      inline def setArithmeticError(value: typings.libraCore.vmErrorsPbMod.ArithmeticError.AsObject): Self = StObject.set(x, "arithmeticError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArithmeticErrorUndefined: Self = StObject.set(x, "arithmeticError", js.undefined)
+      inline def setArithmeticErrorUndefined: Self = StObject.set(x, "arithmeticError", js.undefined)
       
-      @scala.inline
-      def setAssertionFailure(value: typings.libraCore.vmErrorsPbMod.AssertionFailure.AsObject): Self = StObject.set(x, "assertionFailure", value.asInstanceOf[js.Any])
+      inline def setAssertionFailure(value: typings.libraCore.vmErrorsPbMod.AssertionFailure.AsObject): Self = StObject.set(x, "assertionFailure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssertionFailureUndefined: Self = StObject.set(x, "assertionFailure", js.undefined)
+      inline def setAssertionFailureUndefined: Self = StObject.set(x, "assertionFailure", js.undefined)
       
-      @scala.inline
-      def setReferenceError(value: typings.libraCore.vmErrorsPbMod.DynamicReferenceError.AsObject): Self = StObject.set(x, "referenceError", value.asInstanceOf[js.Any])
+      inline def setReferenceError(value: typings.libraCore.vmErrorsPbMod.DynamicReferenceError.AsObject): Self = StObject.set(x, "referenceError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferenceErrorUndefined: Self = StObject.set(x, "referenceError", js.undefined)
+      inline def setReferenceErrorUndefined: Self = StObject.set(x, "referenceError", js.undefined)
       
-      @scala.inline
-      def setRuntimeStatus(value: RuntimeStatus): Self = StObject.set(x, "runtimeStatus", value.asInstanceOf[js.Any])
+      inline def setRuntimeStatus(value: RuntimeStatus): Self = StObject.set(x, "runtimeStatus", value.asInstanceOf[js.Any])
     }
   }
 }

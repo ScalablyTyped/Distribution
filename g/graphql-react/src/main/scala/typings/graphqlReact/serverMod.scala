@@ -12,8 +12,6 @@ object serverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ssr(graphql: GraphQL, node: ReactElement): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("ssr")(graphql.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def ssr(graphql: GraphQL, node: ReactElement, render: js.Function1[/* element */ ReactElement, String]): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("ssr")(graphql.asInstanceOf[js.Any], node.asInstanceOf[js.Any], render.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def ssr(graphql: GraphQL, node: ReactElement): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("ssr")(graphql.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def ssr(graphql: GraphQL, node: ReactElement, render: js.Function1[/* element */ ReactElement, String]): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("ssr")(graphql.asInstanceOf[js.Any], node.asInstanceOf[js.Any], render.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
 }

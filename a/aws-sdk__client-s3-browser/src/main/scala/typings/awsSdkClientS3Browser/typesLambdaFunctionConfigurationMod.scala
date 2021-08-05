@@ -46,8 +46,7 @@ object typesLambdaFunctionConfigurationMod {
   }
   object LambdaFunctionConfiguration {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Events: (js.Array[
           s3ColonReducedRedundancyLostObject | s3ColonObjectCreatedColonAsterisk | s3ColonObjectCreatedColonPut | s3ColonObjectCreatedColonPost | s3ColonObjectCreatedColonCopy | s3ColonObjectCreatedColonCompleteMultipartUpload | s3ColonObjectRemovedColonAsterisk | s3ColonObjectRemovedColonDelete | s3ColonObjectRemovedColonDeleteMarkerCreated | String
         ]) | (Iterable[
@@ -59,11 +58,9 @@ object typesLambdaFunctionConfigurationMod {
       __obj.asInstanceOf[LambdaFunctionConfiguration]
     }
     
-    @scala.inline
-    implicit class LambdaFunctionConfigurationMutableBuilder[Self <: LambdaFunctionConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: LambdaFunctionConfiguration](x: Self) {
       
-      @scala.inline
-      def setEvents(
+      inline def setEvents(
         value: (js.Array[
               s3ColonReducedRedundancyLostObject | s3ColonObjectCreatedColonAsterisk | s3ColonObjectCreatedColonPut | s3ColonObjectCreatedColonPost | s3ColonObjectCreatedColonCopy | s3ColonObjectCreatedColonCompleteMultipartUpload | s3ColonObjectRemovedColonAsterisk | s3ColonObjectRemovedColonDelete | s3ColonObjectRemovedColonDeleteMarkerCreated | String
             ]) | (Iterable[
@@ -71,25 +68,19 @@ object typesLambdaFunctionConfigurationMod {
             ])
       ): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsVarargs(
+      inline def setEventsVarargs(
         value: (s3ColonReducedRedundancyLostObject | s3ColonObjectCreatedColonAsterisk | s3ColonObjectCreatedColonPut | s3ColonObjectCreatedColonPost | s3ColonObjectCreatedColonCopy | s3ColonObjectCreatedColonCompleteMultipartUpload | s3ColonObjectRemovedColonAsterisk | s3ColonObjectRemovedColonDelete | s3ColonObjectRemovedColonDeleteMarkerCreated | String)*
       ): Self = StObject.set(x, "Events", js.Array(value :_*))
       
-      @scala.inline
-      def setFilter(value: NotificationConfigurationFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: NotificationConfigurationFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
       
-      @scala.inline
-      def setLambdaFunctionArn(value: String): Self = StObject.set(x, "LambdaFunctionArn", value.asInstanceOf[js.Any])
+      inline def setLambdaFunctionArn(value: String): Self = StObject.set(x, "LambdaFunctionArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -113,8 +104,7 @@ object typesLambdaFunctionConfigurationMod {
   }
   object UnmarshalledLambdaFunctionConfiguration {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Events: js.Array[
           s3ColonReducedRedundancyLostObject | s3ColonObjectCreatedColonAsterisk | s3ColonObjectCreatedColonPut | s3ColonObjectCreatedColonPost | s3ColonObjectCreatedColonCopy | s3ColonObjectCreatedColonCompleteMultipartUpload | s3ColonObjectRemovedColonAsterisk | s3ColonObjectRemovedColonDelete | s3ColonObjectRemovedColonDeleteMarkerCreated | String
         ],
@@ -124,26 +114,21 @@ object typesLambdaFunctionConfigurationMod {
       __obj.asInstanceOf[UnmarshalledLambdaFunctionConfiguration]
     }
     
-    @scala.inline
-    implicit class UnmarshalledLambdaFunctionConfigurationMutableBuilder[Self <: UnmarshalledLambdaFunctionConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledLambdaFunctionConfiguration](x: Self) {
       
-      @scala.inline
-      def setEvents(
+      inline def setEvents(
         value: js.Array[
               s3ColonReducedRedundancyLostObject | s3ColonObjectCreatedColonAsterisk | s3ColonObjectCreatedColonPut | s3ColonObjectCreatedColonPost | s3ColonObjectCreatedColonCopy | s3ColonObjectCreatedColonCompleteMultipartUpload | s3ColonObjectRemovedColonAsterisk | s3ColonObjectRemovedColonDelete | s3ColonObjectRemovedColonDeleteMarkerCreated | String
             ]
       ): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsVarargs(
+      inline def setEventsVarargs(
         value: (s3ColonReducedRedundancyLostObject | s3ColonObjectCreatedColonAsterisk | s3ColonObjectCreatedColonPut | s3ColonObjectCreatedColonPost | s3ColonObjectCreatedColonCopy | s3ColonObjectCreatedColonCompleteMultipartUpload | s3ColonObjectRemovedColonAsterisk | s3ColonObjectRemovedColonDelete | s3ColonObjectRemovedColonDeleteMarkerCreated | String)*
       ): Self = StObject.set(x, "Events", js.Array(value :_*))
       
-      @scala.inline
-      def setFilter(value: UnmarshalledNotificationConfigurationFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: UnmarshalledNotificationConfigurationFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
     }
   }
 }

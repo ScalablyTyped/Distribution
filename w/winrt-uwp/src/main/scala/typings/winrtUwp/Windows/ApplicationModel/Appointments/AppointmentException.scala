@@ -19,22 +19,17 @@ trait AppointmentException extends StObject {
 }
 object AppointmentException {
   
-  @scala.inline
-  def apply(appointment: Appointment, exceptionProperties: IVectorView[String], isDeleted: Boolean): AppointmentException = {
+  inline def apply(appointment: Appointment, exceptionProperties: IVectorView[String], isDeleted: Boolean): AppointmentException = {
     val __obj = js.Dynamic.literal(appointment = appointment.asInstanceOf[js.Any], exceptionProperties = exceptionProperties.asInstanceOf[js.Any], isDeleted = isDeleted.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppointmentException]
   }
   
-  @scala.inline
-  implicit class AppointmentExceptionMutableBuilder[Self <: AppointmentException] (val x: Self) extends AnyVal {
+  extension [Self <: AppointmentException](x: Self) {
     
-    @scala.inline
-    def setAppointment(value: Appointment): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
+    inline def setAppointment(value: Appointment): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExceptionProperties(value: IVectorView[String]): Self = StObject.set(x, "exceptionProperties", value.asInstanceOf[js.Any])
+    inline def setExceptionProperties(value: IVectorView[String]): Self = StObject.set(x, "exceptionProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDeleted(value: Boolean): Self = StObject.set(x, "isDeleted", value.asInstanceOf[js.Any])
+    inline def setIsDeleted(value: Boolean): Self = StObject.set(x, "isDeleted", value.asInstanceOf[js.Any])
   }
 }

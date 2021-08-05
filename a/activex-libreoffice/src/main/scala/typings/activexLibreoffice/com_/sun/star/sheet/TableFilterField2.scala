@@ -33,8 +33,7 @@ trait TableFilterField2 extends StObject {
 }
 object TableFilterField2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Connection: FilterConnection,
     Field: Double,
     IsNumeric: Boolean,
@@ -46,25 +45,18 @@ object TableFilterField2 {
     __obj.asInstanceOf[TableFilterField2]
   }
   
-  @scala.inline
-  implicit class TableFilterField2MutableBuilder[Self <: TableFilterField2] (val x: Self) extends AnyVal {
+  extension [Self <: TableFilterField2](x: Self) {
     
-    @scala.inline
-    def setConnection(value: FilterConnection): Self = StObject.set(x, "Connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: FilterConnection): Self = StObject.set(x, "Connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setField(value: Double): Self = StObject.set(x, "Field", value.asInstanceOf[js.Any])
+    inline def setField(value: Double): Self = StObject.set(x, "Field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsNumeric(value: Boolean): Self = StObject.set(x, "IsNumeric", value.asInstanceOf[js.Any])
+    inline def setIsNumeric(value: Boolean): Self = StObject.set(x, "IsNumeric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumericValue(value: Double): Self = StObject.set(x, "NumericValue", value.asInstanceOf[js.Any])
+    inline def setNumericValue(value: Double): Self = StObject.set(x, "NumericValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperator(value: Double): Self = StObject.set(x, "Operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: Double): Self = StObject.set(x, "Operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringValue(value: String): Self = StObject.set(x, "StringValue", value.asInstanceOf[js.Any])
+    inline def setStringValue(value: String): Self = StObject.set(x, "StringValue", value.asInstanceOf[js.Any])
   }
 }

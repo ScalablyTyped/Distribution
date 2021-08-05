@@ -28,40 +28,29 @@ trait ResultByTime extends StObject {
 }
 object ResultByTime {
   
-  @scala.inline
-  def apply(): ResultByTime = {
+  inline def apply(): ResultByTime = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResultByTime]
   }
   
-  @scala.inline
-  implicit class ResultByTimeMutableBuilder[Self <: ResultByTime] (val x: Self) extends AnyVal {
+  extension [Self <: ResultByTime](x: Self) {
     
-    @scala.inline
-    def setEstimated(value: Estimated): Self = StObject.set(x, "Estimated", value.asInstanceOf[js.Any])
+    inline def setEstimated(value: Estimated): Self = StObject.set(x, "Estimated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedUndefined: Self = StObject.set(x, "Estimated", js.undefined)
+    inline def setEstimatedUndefined: Self = StObject.set(x, "Estimated", js.undefined)
     
-    @scala.inline
-    def setGroups(value: Groups): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: Groups): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
+    inline def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
     
-    @scala.inline
-    def setGroupsVarargs(value: Group*): Self = StObject.set(x, "Groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: Group*): Self = StObject.set(x, "Groups", js.Array(value :_*))
     
-    @scala.inline
-    def setTimePeriod(value: DateInterval): Self = StObject.set(x, "TimePeriod", value.asInstanceOf[js.Any])
+    inline def setTimePeriod(value: DateInterval): Self = StObject.set(x, "TimePeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimePeriodUndefined: Self = StObject.set(x, "TimePeriod", js.undefined)
+    inline def setTimePeriodUndefined: Self = StObject.set(x, "TimePeriod", js.undefined)
     
-    @scala.inline
-    def setTotal(value: Metrics): Self = StObject.set(x, "Total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Metrics): Self = StObject.set(x, "Total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalUndefined: Self = StObject.set(x, "Total", js.undefined)
+    inline def setTotalUndefined: Self = StObject.set(x, "Total", js.undefined)
   }
 }

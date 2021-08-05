@@ -20,22 +20,17 @@ trait Geo extends StObject {
 }
 object Geo {
   
-  @scala.inline
-  def apply(LineString: LineString, Point: Point, Polygon: Polygon): Geo = {
+  inline def apply(LineString: LineString, Point: Point, Polygon: Polygon): Geo = {
     val __obj = js.Dynamic.literal(LineString = LineString.asInstanceOf[js.Any], Point = Point.asInstanceOf[js.Any], Polygon = Polygon.asInstanceOf[js.Any])
     __obj.asInstanceOf[Geo]
   }
   
-  @scala.inline
-  implicit class GeoMutableBuilder[Self <: Geo] (val x: Self) extends AnyVal {
+  extension [Self <: Geo](x: Self) {
     
-    @scala.inline
-    def setLineString(value: LineString): Self = StObject.set(x, "LineString", value.asInstanceOf[js.Any])
+    inline def setLineString(value: LineString): Self = StObject.set(x, "LineString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoint(value: Point): Self = StObject.set(x, "Point", value.asInstanceOf[js.Any])
+    inline def setPoint(value: Point): Self = StObject.set(x, "Point", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolygon(value: Polygon): Self = StObject.set(x, "Polygon", value.asInstanceOf[js.Any])
+    inline def setPolygon(value: Polygon): Self = StObject.set(x, "Polygon", value.asInstanceOf[js.Any])
   }
 }

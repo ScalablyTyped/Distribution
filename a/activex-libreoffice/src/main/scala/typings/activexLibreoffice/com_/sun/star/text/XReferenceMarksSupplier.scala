@@ -24,8 +24,7 @@ trait XReferenceMarksSupplier
 }
 object XReferenceMarksSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ReferenceMarks: XNameAccess,
     acquire: () => Unit,
     getReferenceMarks: () => XNameAccess,
@@ -36,13 +35,10 @@ object XReferenceMarksSupplier {
     __obj.asInstanceOf[XReferenceMarksSupplier]
   }
   
-  @scala.inline
-  implicit class XReferenceMarksSupplierMutableBuilder[Self <: XReferenceMarksSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XReferenceMarksSupplier](x: Self) {
     
-    @scala.inline
-    def setGetReferenceMarks(value: () => XNameAccess): Self = StObject.set(x, "getReferenceMarks", js.Any.fromFunction0(value))
+    inline def setGetReferenceMarks(value: () => XNameAccess): Self = StObject.set(x, "getReferenceMarks", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReferenceMarks(value: XNameAccess): Self = StObject.set(x, "ReferenceMarks", value.asInstanceOf[js.Any])
+    inline def setReferenceMarks(value: XNameAccess): Self = StObject.set(x, "ReferenceMarks", value.asInstanceOf[js.Any])
   }
 }

@@ -14,20 +14,16 @@ object anon {
   }
   object Get {
     
-    @scala.inline
-    def apply(get: String, set: String): Get = {
+    inline def apply(get: String, set: String): Get = {
       val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any], set = set.asInstanceOf[js.Any])
       __obj.asInstanceOf[Get]
     }
     
-    @scala.inline
-    implicit class GetMutableBuilder[Self <: Get] (val x: Self) extends AnyVal {
+    extension [Self <: Get](x: Self) {
       
-      @scala.inline
-      def setGet(value: String): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+      inline def setGet(value: String): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSet(value: String): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
+      inline def setSet(value: String): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
     }
   }
 }

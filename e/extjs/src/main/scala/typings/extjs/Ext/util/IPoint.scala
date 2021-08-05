@@ -51,49 +51,35 @@ trait IPoint
 }
 object IPoint {
   
-  @scala.inline
-  def apply(): IPoint = {
+  inline def apply(): IPoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPoint]
   }
   
-  @scala.inline
-  implicit class IPointMutableBuilder[Self <: IPoint] (val x: Self) extends AnyVal {
+  extension [Self <: IPoint](x: Self) {
     
-    @scala.inline
-    def setEquals_(value: /* p */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+    inline def setEquals_(value: /* p */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
+    inline def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
     
-    @scala.inline
-    def setIsContainedBy(value: /* region */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "isContainedBy", js.Any.fromFunction1(value))
+    inline def setIsContainedBy(value: /* region */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "isContainedBy", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsContainedByUndefined: Self = StObject.set(x, "isContainedBy", js.undefined)
+    inline def setIsContainedByUndefined: Self = StObject.set(x, "isContainedBy", js.undefined)
     
-    @scala.inline
-    def setIsWithin(value: (/* p */ js.UndefOr[js.Any], /* threshold */ js.UndefOr[js.Any]) => Boolean): Self = StObject.set(x, "isWithin", js.Any.fromFunction2(value))
+    inline def setIsWithin(value: (/* p */ js.UndefOr[js.Any], /* threshold */ js.UndefOr[js.Any]) => Boolean): Self = StObject.set(x, "isWithin", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setIsWithinUndefined: Self = StObject.set(x, "isWithin", js.undefined)
+    inline def setIsWithinUndefined: Self = StObject.set(x, "isWithin", js.undefined)
     
-    @scala.inline
-    def setRoundedEquals(value: /* p */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "roundedEquals", js.Any.fromFunction1(value))
+    inline def setRoundedEquals(value: /* p */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "roundedEquals", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRoundedEqualsUndefined: Self = StObject.set(x, "roundedEquals", js.undefined)
+    inline def setRoundedEqualsUndefined: Self = StObject.set(x, "roundedEquals", js.undefined)
     
-    @scala.inline
-    def setToString_(value: () => String): Self = StObject.set(x, "toString", js.Any.fromFunction0(value))
+    inline def setToString_(value: () => String): Self = StObject.set(x, "toString", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToString_Undefined: Self = StObject.set(x, "toString", js.undefined)
+    inline def setToString_Undefined: Self = StObject.set(x, "toString", js.undefined)
     
-    @scala.inline
-    def setTranslate(value: (/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[Double]) => IRegion): Self = StObject.set(x, "translate", js.Any.fromFunction2(value))
+    inline def setTranslate(value: (/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[Double]) => IRegion): Self = StObject.set(x, "translate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
+    inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
   }
 }

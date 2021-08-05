@@ -13,10 +13,8 @@ object fromDiagramMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(diagram: String): Stream[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(diagram.asInstanceOf[js.Any]).asInstanceOf[Stream[js.Any]]
-  @scala.inline
-  def default(diagram: String, options: FromDiagramOptions): Stream[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(diagram.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Stream[js.Any]]
+  inline def default(diagram: String): Stream[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(diagram.asInstanceOf[js.Any]).asInstanceOf[Stream[js.Any]]
+  inline def default(diagram: String, options: FromDiagramOptions): Stream[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(diagram.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Stream[js.Any]]
   
   @JSImport("xstream/extra/fromDiagram", "DiagramProducer")
   @js.native
@@ -32,17 +30,17 @@ object fromDiagramMod {
     /* CompleteClass */
     override def _stop(): Unit = js.native
     
-    var diagram: js.Any = js.native
+    /* private */ var diagram: js.Any = js.native
     
-    var errorVal: js.Any = js.native
+    /* private */ var errorVal: js.Any = js.native
     
-    var schedule: js.Any = js.native
+    /* private */ var schedule: js.Any = js.native
     
-    var tasks: js.Any = js.native
+    /* private */ var tasks: js.Any = js.native
     
-    var timeUnit: js.Any = js.native
+    /* private */ var timeUnit: js.Any = js.native
     
-    var values: js.Any = js.native
+    /* private */ var values: js.Any = js.native
   }
   
   trait FromDiagramOptions extends StObject {
@@ -55,32 +53,24 @@ object fromDiagramMod {
   }
   object FromDiagramOptions {
     
-    @scala.inline
-    def apply(): FromDiagramOptions = {
+    inline def apply(): FromDiagramOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FromDiagramOptions]
     }
     
-    @scala.inline
-    implicit class FromDiagramOptionsMutableBuilder[Self <: FromDiagramOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FromDiagramOptions](x: Self) {
       
-      @scala.inline
-      def setErrorValue(value: js.Any): Self = StObject.set(x, "errorValue", value.asInstanceOf[js.Any])
+      inline def setErrorValue(value: js.Any): Self = StObject.set(x, "errorValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorValueUndefined: Self = StObject.set(x, "errorValue", js.undefined)
+      inline def setErrorValueUndefined: Self = StObject.set(x, "errorValue", js.undefined)
       
-      @scala.inline
-      def setTimeUnit(value: Double): Self = StObject.set(x, "timeUnit", value.asInstanceOf[js.Any])
+      inline def setTimeUnit(value: Double): Self = StObject.set(x, "timeUnit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeUnitUndefined: Self = StObject.set(x, "timeUnit", js.undefined)
+      inline def setTimeUnitUndefined: Self = StObject.set(x, "timeUnit", js.undefined)
       
-      @scala.inline
-      def setValues(value: js.Object): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Object): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+      inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     }
   }
 }

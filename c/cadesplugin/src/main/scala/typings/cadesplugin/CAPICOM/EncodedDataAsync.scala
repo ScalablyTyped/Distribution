@@ -23,8 +23,7 @@ trait EncodedDataAsync
 }
 object EncodedDataAsync {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Format: (// tslint:disable-line ban-types
   js.Promise[Unpacked[String]]) | PromisifiedFunction[String],
     Value: (// tslint:disable-line ban-types
@@ -36,32 +35,27 @@ object EncodedDataAsync {
     __obj.asInstanceOf[EncodedDataAsync]
   }
   
-  @scala.inline
-  implicit class EncodedDataAsyncMutableBuilder[Self <: EncodedDataAsync] (val x: Self) extends AnyVal {
+  extension [Self <: EncodedDataAsync](x: Self) {
     
-    @scala.inline
-    def setFormat(
+    inline def setFormat(
       value: (// tslint:disable-line ban-types
     js.Promise[Unpacked[String]]) | PromisifiedFunction[String]
     ): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatFunction1(
+    inline def setFormatFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
       */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "Format", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValue(
+    inline def setValue(
       value: (// tslint:disable-line ban-types
     js.Promise[
           Unpacked[js.Function1[/* EncodingType */ js.UndefOr[CAPICOM_ENCODING_TYPE], String]]
         ]) | (PromisifiedFunction[js.Function1[/* EncodingType */ js.UndefOr[CAPICOM_ENCODING_TYPE], String]])
     ): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueFunction1(
+    inline def setValueFunction1(
       value: js.UndefOr[
           (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}

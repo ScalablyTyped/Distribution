@@ -71,11 +71,9 @@ object Type {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def deserializeBinary(bytes: Uint8Array): Type = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Type]
+  inline def deserializeBinary(bytes: Uint8Array): Type = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Type]
   
-  @scala.inline
-  def deserializeBinaryFromReader(message: Type, reader: BinaryReader): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Type]
+  inline def deserializeBinaryFromReader(message: Type, reader: BinaryReader): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Type]
   
   @JSImport("google-protobuf/google/protobuf/type_pb", "Type.extensions")
   @js.native
@@ -84,17 +82,13 @@ object Type {
   @JSImport("google-protobuf/google/protobuf/type_pb", "Type.extensionsBinary")
   @js.native
   def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-  @scala.inline
-  def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+  inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+  inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def serializeBinaryToWriter(message: Type, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serializeBinaryToWriter(message: Type, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def toObject(includeInstance: Boolean, msg: Type): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+  inline def toObject(includeInstance: Boolean, msg: Type): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
   trait AsObject extends StObject {
     
@@ -112,8 +106,7 @@ object Type {
   }
   object AsObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       fieldsList: js.Array[typings.googleProtobuf.typePbMod.Field.AsObject],
       name: String,
       oneofsList: js.Array[String],
@@ -124,38 +117,27 @@ object Type {
       __obj.asInstanceOf[AsObject]
     }
     
-    @scala.inline
-    implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+    extension [Self <: AsObject](x: Self) {
       
-      @scala.inline
-      def setFieldsList(value: js.Array[typings.googleProtobuf.typePbMod.Field.AsObject]): Self = StObject.set(x, "fieldsList", value.asInstanceOf[js.Any])
+      inline def setFieldsList(value: js.Array[typings.googleProtobuf.typePbMod.Field.AsObject]): Self = StObject.set(x, "fieldsList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsListVarargs(value: typings.googleProtobuf.typePbMod.Field.AsObject*): Self = StObject.set(x, "fieldsList", js.Array(value :_*))
+      inline def setFieldsListVarargs(value: typings.googleProtobuf.typePbMod.Field.AsObject*): Self = StObject.set(x, "fieldsList", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOneofsList(value: js.Array[String]): Self = StObject.set(x, "oneofsList", value.asInstanceOf[js.Any])
+      inline def setOneofsList(value: js.Array[String]): Self = StObject.set(x, "oneofsList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOneofsListVarargs(value: String*): Self = StObject.set(x, "oneofsList", js.Array(value :_*))
+      inline def setOneofsListVarargs(value: String*): Self = StObject.set(x, "oneofsList", js.Array(value :_*))
       
-      @scala.inline
-      def setOptionsList(value: js.Array[typings.googleProtobuf.typePbMod.Option.AsObject]): Self = StObject.set(x, "optionsList", value.asInstanceOf[js.Any])
+      inline def setOptionsList(value: js.Array[typings.googleProtobuf.typePbMod.Option.AsObject]): Self = StObject.set(x, "optionsList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsListVarargs(value: typings.googleProtobuf.typePbMod.Option.AsObject*): Self = StObject.set(x, "optionsList", js.Array(value :_*))
+      inline def setOptionsListVarargs(value: typings.googleProtobuf.typePbMod.Option.AsObject*): Self = StObject.set(x, "optionsList", js.Array(value :_*))
       
-      @scala.inline
-      def setSourceContext(value: typings.googleProtobuf.sourceContextPbMod.SourceContext.AsObject): Self = StObject.set(x, "sourceContext", value.asInstanceOf[js.Any])
+      inline def setSourceContext(value: typings.googleProtobuf.sourceContextPbMod.SourceContext.AsObject): Self = StObject.set(x, "sourceContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceContextUndefined: Self = StObject.set(x, "sourceContext", js.undefined)
+      inline def setSourceContextUndefined: Self = StObject.set(x, "sourceContext", js.undefined)
       
-      @scala.inline
-      def setSyntax(value: Syntax): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
+      inline def setSyntax(value: Syntax): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
     }
   }
 }

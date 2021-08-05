@@ -13,9 +13,9 @@ object baseDecoratorMod {
     extends Component[TProps, TState, js.Any] {
     def this(props: TProps) = this()
     
-    var _composedComponentInstance: Component[TProps, TState, js.Any] = js.native
+    /* protected */ var _composedComponentInstance: Component[TProps, TState, js.Any] = js.native
     
-    var _hoisted: js.Any = js.native
+    /* private */ var _hoisted: js.Any = js.native
     
     /**
       * Updates the ref to the component composed by the decorator, which will also take care of hoisting

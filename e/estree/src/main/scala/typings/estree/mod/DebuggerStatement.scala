@@ -14,17 +14,14 @@ trait DebuggerStatement
 }
 object DebuggerStatement {
   
-  @scala.inline
-  def apply(): DebuggerStatement = {
+  inline def apply(): DebuggerStatement = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("DebuggerStatement")
     __obj.asInstanceOf[DebuggerStatement]
   }
   
-  @scala.inline
-  implicit class DebuggerStatementMutableBuilder[Self <: DebuggerStatement] (val x: Self) extends AnyVal {
+  extension [Self <: DebuggerStatement](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.estree.estreeStrings.DebuggerStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estree.estreeStrings.DebuggerStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

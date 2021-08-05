@@ -29,58 +29,41 @@ trait Method extends StObject {
 }
 object Method {
   
-  @scala.inline
-  def apply(): Method = {
+  inline def apply(): Method = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Method]
   }
   
-  @scala.inline
-  implicit class MethodMutableBuilder[Self <: Method] (val x: Self) extends AnyVal {
+  extension [Self <: Method](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOptions(value: js.Array[Option]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Array[Option]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setOptionsVarargs(value: Option*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: Option*): Self = StObject.set(x, "options", js.Array(value :_*))
     
-    @scala.inline
-    def setRequestStreaming(value: Boolean): Self = StObject.set(x, "requestStreaming", value.asInstanceOf[js.Any])
+    inline def setRequestStreaming(value: Boolean): Self = StObject.set(x, "requestStreaming", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestStreamingUndefined: Self = StObject.set(x, "requestStreaming", js.undefined)
+    inline def setRequestStreamingUndefined: Self = StObject.set(x, "requestStreaming", js.undefined)
     
-    @scala.inline
-    def setRequestTypeUrl(value: String): Self = StObject.set(x, "requestTypeUrl", value.asInstanceOf[js.Any])
+    inline def setRequestTypeUrl(value: String): Self = StObject.set(x, "requestTypeUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestTypeUrlUndefined: Self = StObject.set(x, "requestTypeUrl", js.undefined)
+    inline def setRequestTypeUrlUndefined: Self = StObject.set(x, "requestTypeUrl", js.undefined)
     
-    @scala.inline
-    def setResponseStreaming(value: Boolean): Self = StObject.set(x, "responseStreaming", value.asInstanceOf[js.Any])
+    inline def setResponseStreaming(value: Boolean): Self = StObject.set(x, "responseStreaming", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseStreamingUndefined: Self = StObject.set(x, "responseStreaming", js.undefined)
+    inline def setResponseStreamingUndefined: Self = StObject.set(x, "responseStreaming", js.undefined)
     
-    @scala.inline
-    def setResponseTypeUrl(value: String): Self = StObject.set(x, "responseTypeUrl", value.asInstanceOf[js.Any])
+    inline def setResponseTypeUrl(value: String): Self = StObject.set(x, "responseTypeUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseTypeUrlUndefined: Self = StObject.set(x, "responseTypeUrl", js.undefined)
+    inline def setResponseTypeUrlUndefined: Self = StObject.set(x, "responseTypeUrl", js.undefined)
     
-    @scala.inline
-    def setSyntax(value: String): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
+    inline def setSyntax(value: String): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyntaxUndefined: Self = StObject.set(x, "syntax", js.undefined)
+    inline def setSyntaxUndefined: Self = StObject.set(x, "syntax", js.undefined)
   }
 }

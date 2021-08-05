@@ -35,8 +35,7 @@ object mod {
     * @returns {other is Block}
     */
   /* static member */
-  @scala.inline
-  def isBlock(other: js.Any): /* is ipld-block.ipld-block/dist/src.Block */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBlock")(other.asInstanceOf[js.Any]).asInstanceOf[/* is ipld-block.ipld-block/dist/src.Block */ Boolean]
+  inline def isBlock(other: js.Any): /* is ipld-block.ipld-block/dist/src.Block */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBlock")(other.asInstanceOf[js.Any]).asInstanceOf[/* is ipld-block.ipld-block/dist/src.Block */ Boolean]
   
   /**
     * Represents an immutable block of data that is uniquely referenced with a cid.

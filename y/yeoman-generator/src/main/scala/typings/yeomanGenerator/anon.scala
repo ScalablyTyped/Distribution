@@ -36,20 +36,16 @@ object anon {
   }
   object Email {
     
-    @scala.inline
-    def apply(email: () => String, name: () => String): Email = {
+    inline def apply(email: () => String, name: () => String): Email = {
       val __obj = js.Dynamic.literal(email = js.Any.fromFunction0(email), name = js.Any.fromFunction0(name))
       __obj.asInstanceOf[Email]
     }
     
-    @scala.inline
-    implicit class EmailMutableBuilder[Self <: Email] (val x: Self) extends AnyVal {
+    extension [Self <: Email](x: Self) {
       
-      @scala.inline
-      def setEmail(value: () => String): Self = StObject.set(x, "email", js.Any.fromFunction0(value))
+      inline def setEmail(value: () => String): Self = StObject.set(x, "email", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setName(value: () => String): Self = StObject.set(x, "name", js.Any.fromFunction0(value))
+      inline def setName(value: () => String): Self = StObject.set(x, "name", js.Any.fromFunction0(value))
     }
   }
   
@@ -67,26 +63,20 @@ object anon {
   }
   object ExportOption {
     
-    @scala.inline
-    def apply(): ExportOption = {
+    inline def apply(): ExportOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExportOption]
     }
     
-    @scala.inline
-    implicit class ExportOptionMutableBuilder[Self <: ExportOption] (val x: Self) extends AnyVal {
+    extension [Self <: ExportOption](x: Self) {
       
-      @scala.inline
-      def setExportOption(value: Boolean | js.Object): Self = StObject.set(x, "exportOption", value.asInstanceOf[js.Any])
+      inline def setExportOption(value: Boolean | js.Object): Self = StObject.set(x, "exportOption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportOptionUndefined: Self = StObject.set(x, "exportOption", js.undefined)
+      inline def setExportOptionUndefined: Self = StObject.set(x, "exportOption", js.undefined)
       
-      @scala.inline
-      def setStorage(value: ^): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+      inline def setStorage(value: ^): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
+      inline def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
     }
   }
   
@@ -149,20 +139,16 @@ object anon {
   }
   object Git {
     
-    @scala.inline
-    def apply(git: Email, github: Username): Git = {
+    inline def apply(git: Email, github: Username): Git = {
       val __obj = js.Dynamic.literal(git = git.asInstanceOf[js.Any], github = github.asInstanceOf[js.Any])
       __obj.asInstanceOf[Git]
     }
     
-    @scala.inline
-    implicit class GitMutableBuilder[Self <: Git] (val x: Self) extends AnyVal {
+    extension [Self <: Git](x: Self) {
       
-      @scala.inline
-      def setGit(value: Email): Self = StObject.set(x, "git", value.asInstanceOf[js.Any])
+      inline def setGit(value: Email): Self = StObject.set(x, "git", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGithub(value: Username): Self = StObject.set(x, "github", value.asInstanceOf[js.Any])
+      inline def setGithub(value: Username): Self = StObject.set(x, "github", value.asInstanceOf[js.Any])
     }
   }
   
@@ -175,20 +161,16 @@ object anon {
   }
   object Store {
     
-    @scala.inline
-    def apply(): Store = {
+    inline def apply(): Store = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Store]
     }
     
-    @scala.inline
-    implicit class StoreMutableBuilder[Self <: Store] (val x: Self) extends AnyVal {
+    extension [Self <: Store](x: Self) {
       
-      @scala.inline
-      def setStore(value: Boolean): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      inline def setStore(value: Boolean): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
+      inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
     }
   }
   
@@ -203,17 +185,14 @@ object anon {
   }
   object Username {
     
-    @scala.inline
-    def apply(username: () => js.Promise[String]): Username = {
+    inline def apply(username: () => js.Promise[String]): Username = {
       val __obj = js.Dynamic.literal(username = js.Any.fromFunction0(username))
       __obj.asInstanceOf[Username]
     }
     
-    @scala.inline
-    implicit class UsernameMutableBuilder[Self <: Username] (val x: Self) extends AnyVal {
+    extension [Self <: Username](x: Self) {
       
-      @scala.inline
-      def setUsername(value: () => js.Promise[String]): Self = StObject.set(x, "username", js.Any.fromFunction0(value))
+      inline def setUsername(value: () => js.Promise[String]): Self = StObject.set(x, "username", js.Any.fromFunction0(value))
     }
   }
 }

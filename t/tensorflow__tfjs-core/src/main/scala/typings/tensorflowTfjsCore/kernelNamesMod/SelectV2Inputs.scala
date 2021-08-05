@@ -15,31 +15,23 @@ trait SelectV2Inputs extends StObject {
 }
 object SelectV2Inputs {
   
-  @scala.inline
-  def apply(): SelectV2Inputs = {
+  inline def apply(): SelectV2Inputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SelectV2Inputs]
   }
   
-  @scala.inline
-  implicit class SelectV2InputsMutableBuilder[Self <: SelectV2Inputs] (val x: Self) extends AnyVal {
+  extension [Self <: SelectV2Inputs](x: Self) {
     
-    @scala.inline
-    def setCondition(value: js.Any): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: js.Any): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
-    @scala.inline
-    def setE(value: js.Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+    inline def setE(value: js.Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEUndefined: Self = StObject.set(x, "e", js.undefined)
+    inline def setEUndefined: Self = StObject.set(x, "e", js.undefined)
     
-    @scala.inline
-    def setT(value: js.Any): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+    inline def setT(value: js.Any): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTUndefined: Self = StObject.set(x, "t", js.undefined)
+    inline def setTUndefined: Self = StObject.set(x, "t", js.undefined)
   }
 }

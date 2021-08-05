@@ -15,8 +15,7 @@ trait ParametersChecksListForRefEndpoint extends StObject {
 }
 object ParametersChecksListForRefEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ChecksListForRefEndpoint,
     response: OctokitResponse[ChecksListForRefResponseData] & `13`
   ): ParametersChecksListForRefEndpoint = {
@@ -24,13 +23,10 @@ object ParametersChecksListForRefEndpoint {
     __obj.asInstanceOf[ParametersChecksListForRefEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersChecksListForRefEndpointMutableBuilder[Self <: ParametersChecksListForRefEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersChecksListForRefEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ChecksListForRefEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ChecksListForRefEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ChecksListForRefResponseData] & `13`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ChecksListForRefResponseData] & `13`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

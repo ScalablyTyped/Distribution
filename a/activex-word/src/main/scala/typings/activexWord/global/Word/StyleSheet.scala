@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.StyleSheet")
 @js.native
-class StyleSheet protected ()
+/* private */ class StyleSheet ()
   extends StObject
      with typings.activexWord.Word.StyleSheet {
   
@@ -45,7 +45,7 @@ class StyleSheet protected ()
   /* CompleteClass */
   var Type: WdStyleSheetLinkType = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.StyleSheet_typekey")
   var WordDotStyleSheet_typekey: typings.activexWord.Word.StyleSheet = js.native
 }

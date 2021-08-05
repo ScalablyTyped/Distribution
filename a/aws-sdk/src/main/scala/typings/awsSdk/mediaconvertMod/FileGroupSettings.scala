@@ -18,25 +18,19 @@ trait FileGroupSettings extends StObject {
 }
 object FileGroupSettings {
   
-  @scala.inline
-  def apply(): FileGroupSettings = {
+  inline def apply(): FileGroupSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileGroupSettings]
   }
   
-  @scala.inline
-  implicit class FileGroupSettingsMutableBuilder[Self <: FileGroupSettings] (val x: Self) extends AnyVal {
+  extension [Self <: FileGroupSettings](x: Self) {
     
-    @scala.inline
-    def setDestination(value: stringPatternS3): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: stringPatternS3): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationSettings(value: DestinationSettings): Self = StObject.set(x, "DestinationSettings", value.asInstanceOf[js.Any])
+    inline def setDestinationSettings(value: DestinationSettings): Self = StObject.set(x, "DestinationSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationSettingsUndefined: Self = StObject.set(x, "DestinationSettings", js.undefined)
+    inline def setDestinationSettingsUndefined: Self = StObject.set(x, "DestinationSettings", js.undefined)
     
-    @scala.inline
-    def setDestinationUndefined: Self = StObject.set(x, "Destination", js.undefined)
+    inline def setDestinationUndefined: Self = StObject.set(x, "Destination", js.undefined)
   }
 }

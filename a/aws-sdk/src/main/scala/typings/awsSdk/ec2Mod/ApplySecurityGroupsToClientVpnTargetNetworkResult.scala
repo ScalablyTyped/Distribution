@@ -13,22 +13,17 @@ trait ApplySecurityGroupsToClientVpnTargetNetworkResult extends StObject {
 }
 object ApplySecurityGroupsToClientVpnTargetNetworkResult {
   
-  @scala.inline
-  def apply(): ApplySecurityGroupsToClientVpnTargetNetworkResult = {
+  inline def apply(): ApplySecurityGroupsToClientVpnTargetNetworkResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApplySecurityGroupsToClientVpnTargetNetworkResult]
   }
   
-  @scala.inline
-  implicit class ApplySecurityGroupsToClientVpnTargetNetworkResultMutableBuilder[Self <: ApplySecurityGroupsToClientVpnTargetNetworkResult] (val x: Self) extends AnyVal {
+  extension [Self <: ApplySecurityGroupsToClientVpnTargetNetworkResult](x: Self) {
     
-    @scala.inline
-    def setSecurityGroupIds(value: ClientVpnSecurityGroupIdSet): Self = StObject.set(x, "SecurityGroupIds", value.asInstanceOf[js.Any])
+    inline def setSecurityGroupIds(value: ClientVpnSecurityGroupIdSet): Self = StObject.set(x, "SecurityGroupIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityGroupIdsUndefined: Self = StObject.set(x, "SecurityGroupIds", js.undefined)
+    inline def setSecurityGroupIdsUndefined: Self = StObject.set(x, "SecurityGroupIds", js.undefined)
     
-    @scala.inline
-    def setSecurityGroupIdsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value :_*))
+    inline def setSecurityGroupIdsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value :_*))
   }
 }

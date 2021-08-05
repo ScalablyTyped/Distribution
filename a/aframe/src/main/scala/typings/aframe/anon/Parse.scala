@@ -12,19 +12,15 @@ trait Parse extends StObject {
 }
 object Parse {
   
-  @scala.inline
-  def apply(parse: String => js.Object, stringify: js.Object => String): Parse = {
+  inline def apply(parse: String => js.Object, stringify: js.Object => String): Parse = {
     val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse), stringify = js.Any.fromFunction1(stringify))
     __obj.asInstanceOf[Parse]
   }
   
-  @scala.inline
-  implicit class ParseMutableBuilder[Self <: Parse] (val x: Self) extends AnyVal {
+  extension [Self <: Parse](x: Self) {
     
-    @scala.inline
-    def setParse(value: String => js.Object): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+    inline def setParse(value: String => js.Object): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStringify(value: js.Object => String): Self = StObject.set(x, "stringify", js.Any.fromFunction1(value))
+    inline def setStringify(value: js.Object => String): Self = StObject.set(x, "stringify", js.Any.fromFunction1(value))
   }
 }

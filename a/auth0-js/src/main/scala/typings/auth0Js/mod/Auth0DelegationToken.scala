@@ -17,22 +17,17 @@ trait Auth0DelegationToken extends StObject {
 }
 object Auth0DelegationToken {
   
-  @scala.inline
-  def apply(expiresIn: Double, idToken: String, tokenType: String): Auth0DelegationToken = {
+  inline def apply(expiresIn: Double, idToken: String, tokenType: String): Auth0DelegationToken = {
     val __obj = js.Dynamic.literal(expiresIn = expiresIn.asInstanceOf[js.Any], idToken = idToken.asInstanceOf[js.Any], tokenType = tokenType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Auth0DelegationToken]
   }
   
-  @scala.inline
-  implicit class Auth0DelegationTokenMutableBuilder[Self <: Auth0DelegationToken] (val x: Self) extends AnyVal {
+  extension [Self <: Auth0DelegationToken](x: Self) {
     
-    @scala.inline
-    def setExpiresIn(value: Double): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
+    inline def setExpiresIn(value: Double): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
+    inline def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenType(value: String): Self = StObject.set(x, "tokenType", value.asInstanceOf[js.Any])
+    inline def setTokenType(value: String): Self = StObject.set(x, "tokenType", value.asInstanceOf[js.Any])
   }
 }

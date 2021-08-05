@@ -23,20 +23,16 @@ object eventListenersMod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(resize: Boolean, scroll: Boolean): Options = {
+    inline def apply(resize: Boolean, scroll: Boolean): Options = {
       val __obj = js.Dynamic.literal(resize = resize.asInstanceOf[js.Any], scroll = scroll.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setResize(value: Boolean): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
+      inline def setResize(value: Boolean): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScroll(value: Boolean): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
+      inline def setScroll(value: Boolean): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
     }
   }
   

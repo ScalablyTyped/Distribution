@@ -19,8 +19,7 @@ object getOptionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(pluginOptions: PartialOptions): Options = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(pluginOptions.asInstanceOf[js.Any]).asInstanceOf[Options]
+  inline def default(pluginOptions: PartialOptions): Options = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(pluginOptions.asInstanceOf[js.Any]).asInstanceOf[Options]
   
   trait Options extends StObject {
     
@@ -46,68 +45,48 @@ object getOptionsMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(files: js.Array[String] | String, formatter: js.Function | String, stylelintPath: String): Options = {
+    inline def apply(files: js.Array[String] | String, formatter: js.Function | String, stylelintPath: String): Options = {
       val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any], formatter = formatter.asInstanceOf[js.Any], stylelintPath = stylelintPath.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setEmitError(value: Boolean): Self = StObject.set(x, "emitError", value.asInstanceOf[js.Any])
+      inline def setEmitError(value: Boolean): Self = StObject.set(x, "emitError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmitErrorUndefined: Self = StObject.set(x, "emitError", js.undefined)
+      inline def setEmitErrorUndefined: Self = StObject.set(x, "emitError", js.undefined)
       
-      @scala.inline
-      def setEmitWarning(value: Boolean): Self = StObject.set(x, "emitWarning", value.asInstanceOf[js.Any])
+      inline def setEmitWarning(value: Boolean): Self = StObject.set(x, "emitWarning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmitWarningUndefined: Self = StObject.set(x, "emitWarning", js.undefined)
+      inline def setEmitWarningUndefined: Self = StObject.set(x, "emitWarning", js.undefined)
       
-      @scala.inline
-      def setFailOnError(value: Boolean): Self = StObject.set(x, "failOnError", value.asInstanceOf[js.Any])
+      inline def setFailOnError(value: Boolean): Self = StObject.set(x, "failOnError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailOnErrorUndefined: Self = StObject.set(x, "failOnError", js.undefined)
+      inline def setFailOnErrorUndefined: Self = StObject.set(x, "failOnError", js.undefined)
       
-      @scala.inline
-      def setFailOnWarning(value: Boolean): Self = StObject.set(x, "failOnWarning", value.asInstanceOf[js.Any])
+      inline def setFailOnWarning(value: Boolean): Self = StObject.set(x, "failOnWarning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailOnWarningUndefined: Self = StObject.set(x, "failOnWarning", js.undefined)
+      inline def setFailOnWarningUndefined: Self = StObject.set(x, "failOnWarning", js.undefined)
       
-      @scala.inline
-      def setFiles(value: js.Array[String] | String): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: js.Array[String] | String): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
       
-      @scala.inline
-      def setFormatter(value: js.Function | String): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
+      inline def setFormatter(value: js.Function | String): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLintDirtyModulesOnly(value: Boolean): Self = StObject.set(x, "lintDirtyModulesOnly", value.asInstanceOf[js.Any])
+      inline def setLintDirtyModulesOnly(value: Boolean): Self = StObject.set(x, "lintDirtyModulesOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLintDirtyModulesOnlyUndefined: Self = StObject.set(x, "lintDirtyModulesOnly", js.undefined)
+      inline def setLintDirtyModulesOnlyUndefined: Self = StObject.set(x, "lintDirtyModulesOnly", js.undefined)
       
-      @scala.inline
-      def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
+      inline def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
+      inline def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
       
-      @scala.inline
-      def setStylelintPath(value: String): Self = StObject.set(x, "stylelintPath", value.asInstanceOf[js.Any])
+      inline def setStylelintPath(value: String): Self = StObject.set(x, "stylelintPath", value.asInstanceOf[js.Any])
     }
   }
   

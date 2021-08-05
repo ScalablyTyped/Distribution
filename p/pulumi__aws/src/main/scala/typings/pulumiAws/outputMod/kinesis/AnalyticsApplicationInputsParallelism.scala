@@ -13,16 +13,13 @@ trait AnalyticsApplicationInputsParallelism extends StObject {
 }
 object AnalyticsApplicationInputsParallelism {
   
-  @scala.inline
-  def apply(count: Double): AnalyticsApplicationInputsParallelism = {
+  inline def apply(count: Double): AnalyticsApplicationInputsParallelism = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyticsApplicationInputsParallelism]
   }
   
-  @scala.inline
-  implicit class AnalyticsApplicationInputsParallelismMutableBuilder[Self <: AnalyticsApplicationInputsParallelism] (val x: Self) extends AnyVal {
+  extension [Self <: AnalyticsApplicationInputsParallelism](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
   }
 }

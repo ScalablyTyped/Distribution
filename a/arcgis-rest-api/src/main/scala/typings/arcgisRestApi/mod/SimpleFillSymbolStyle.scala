@@ -17,27 +17,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SimpleFillSymbolStyle extends StObject
 object SimpleFillSymbolStyle {
   
-  @scala.inline
-  def esriSFSBackwardDiagonal: typings.arcgisRestApi.arcgisRestApiStrings.esriSFSBackwardDiagonal = "esriSFSBackwardDiagonal".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSFSBackwardDiagonal]
+  inline def esriSFSBackwardDiagonal: typings.arcgisRestApi.arcgisRestApiStrings.esriSFSBackwardDiagonal = "esriSFSBackwardDiagonal".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSFSBackwardDiagonal]
   
-  @scala.inline
-  def esriSFSCross: typings.arcgisRestApi.arcgisRestApiStrings.esriSFSCross = "esriSFSCross".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSFSCross]
+  inline def esriSFSCross: typings.arcgisRestApi.arcgisRestApiStrings.esriSFSCross = "esriSFSCross".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSFSCross]
   
-  @scala.inline
-  def esriSFSDiagonalCross: typings.arcgisRestApi.arcgisRestApiStrings.esriSFSDiagonalCross = "esriSFSDiagonalCross".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSFSDiagonalCross]
+  inline def esriSFSDiagonalCross: typings.arcgisRestApi.arcgisRestApiStrings.esriSFSDiagonalCross = "esriSFSDiagonalCross".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSFSDiagonalCross]
   
-  @scala.inline
-  def esriSFSForwardDiagonal: typings.arcgisRestApi.arcgisRestApiStrings.esriSFSForwardDiagonal = "esriSFSForwardDiagonal".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSFSForwardDiagonal]
+  inline def esriSFSForwardDiagonal: typings.arcgisRestApi.arcgisRestApiStrings.esriSFSForwardDiagonal = "esriSFSForwardDiagonal".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSFSForwardDiagonal]
   
-  @scala.inline
-  def esriSFSHorizontal: typings.arcgisRestApi.arcgisRestApiStrings.esriSFSHorizontal = "esriSFSHorizontal".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSFSHorizontal]
+  inline def esriSFSHorizontal: typings.arcgisRestApi.arcgisRestApiStrings.esriSFSHorizontal = "esriSFSHorizontal".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSFSHorizontal]
   
-  @scala.inline
-  def esriSFSNull: typings.arcgisRestApi.arcgisRestApiStrings.esriSFSNull = "esriSFSNull".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSFSNull]
+  inline def esriSFSNull: typings.arcgisRestApi.arcgisRestApiStrings.esriSFSNull = "esriSFSNull".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSFSNull]
   
-  @scala.inline
-  def esriSFSSolid: typings.arcgisRestApi.arcgisRestApiStrings.esriSFSSolid = "esriSFSSolid".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSFSSolid]
+  inline def esriSFSSolid: typings.arcgisRestApi.arcgisRestApiStrings.esriSFSSolid = "esriSFSSolid".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSFSSolid]
   
-  @scala.inline
-  def esriSFSVertical: typings.arcgisRestApi.arcgisRestApiStrings.esriSFSVertical = "esriSFSVertical".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSFSVertical]
+  inline def esriSFSVertical: typings.arcgisRestApi.arcgisRestApiStrings.esriSFSVertical = "esriSFSVertical".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSFSVertical]
 }

@@ -15,16 +15,13 @@ trait Pronunciation extends StObject {
 }
 object Pronunciation {
   
-  @scala.inline
-  def apply(pronunciation: String): Pronunciation = {
+  inline def apply(pronunciation: String): Pronunciation = {
     val __obj = js.Dynamic.literal(pronunciation = pronunciation.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pronunciation]
   }
   
-  @scala.inline
-  implicit class PronunciationMutableBuilder[Self <: Pronunciation] (val x: Self) extends AnyVal {
+  extension [Self <: Pronunciation](x: Self) {
     
-    @scala.inline
-    def setPronunciation(value: String): Self = StObject.set(x, "pronunciation", value.asInstanceOf[js.Any])
+    inline def setPronunciation(value: String): Self = StObject.set(x, "pronunciation", value.asInstanceOf[js.Any])
   }
 }

@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     currentFullPath: String,
     clue: String,
     cb: js.Function2[/* err */ js.Any, /* dir */ String | Null, Unit]
@@ -17,6 +16,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def sync(currentFullPath: String, clue: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(currentFullPath.asInstanceOf[js.Any], clue.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def sync(currentFullPath: String, clue: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(currentFullPath.asInstanceOf[js.Any], clue.asInstanceOf[js.Any])).asInstanceOf[String | Null]
 }

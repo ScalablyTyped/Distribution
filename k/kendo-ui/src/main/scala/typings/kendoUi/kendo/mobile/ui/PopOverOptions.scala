@@ -18,43 +18,31 @@ trait PopOverOptions extends StObject {
 }
 object PopOverOptions {
   
-  @scala.inline
-  def apply(): PopOverOptions = {
+  inline def apply(): PopOverOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PopOverOptions]
   }
   
-  @scala.inline
-  implicit class PopOverOptionsMutableBuilder[Self <: PopOverOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PopOverOptions](x: Self) {
     
-    @scala.inline
-    def setClose(value: /* e */ PopOverCloseEvent => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
+    inline def setClose(value: /* e */ PopOverCloseEvent => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+    inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOpen(value: /* e */ PopOverOpenEvent => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
+    inline def setOpen(value: /* e */ PopOverOpenEvent => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+    inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     
-    @scala.inline
-    def setPane(value: PopOverPane): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
+    inline def setPane(value: PopOverPane): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
+    inline def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
     
-    @scala.inline
-    def setPopup(value: PopOverPopup): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
+    inline def setPopup(value: PopOverPopup): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopupUndefined: Self = StObject.set(x, "popup", js.undefined)
+    inline def setPopupUndefined: Self = StObject.set(x, "popup", js.undefined)
   }
 }

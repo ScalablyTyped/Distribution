@@ -21,8 +21,6 @@ object dns {
   
   /* dns functions */
   /** Resolves a hostname to a DNS record. */
-  @scala.inline
-  def resolve(hostname: String): js.Promise[DNSRecord] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DNSRecord]]
-  @scala.inline
-  def resolve(hostname: String, flags: ResolveFlags): js.Promise[DNSRecord] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DNSRecord]]
+  inline def resolve(hostname: String): js.Promise[DNSRecord] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DNSRecord]]
+  inline def resolve(hostname: String, flags: ResolveFlags): js.Promise[DNSRecord] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DNSRecord]]
 }

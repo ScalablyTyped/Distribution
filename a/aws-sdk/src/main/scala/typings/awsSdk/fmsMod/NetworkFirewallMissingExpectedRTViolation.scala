@@ -33,43 +33,31 @@ trait NetworkFirewallMissingExpectedRTViolation extends StObject {
 }
 object NetworkFirewallMissingExpectedRTViolation {
   
-  @scala.inline
-  def apply(): NetworkFirewallMissingExpectedRTViolation = {
+  inline def apply(): NetworkFirewallMissingExpectedRTViolation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NetworkFirewallMissingExpectedRTViolation]
   }
   
-  @scala.inline
-  implicit class NetworkFirewallMissingExpectedRTViolationMutableBuilder[Self <: NetworkFirewallMissingExpectedRTViolation] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkFirewallMissingExpectedRTViolation](x: Self) {
     
-    @scala.inline
-    def setAvailabilityZone(value: LengthBoundedString): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZone(value: LengthBoundedString): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
+    inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
-    @scala.inline
-    def setCurrentRouteTable(value: ResourceId): Self = StObject.set(x, "CurrentRouteTable", value.asInstanceOf[js.Any])
+    inline def setCurrentRouteTable(value: ResourceId): Self = StObject.set(x, "CurrentRouteTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentRouteTableUndefined: Self = StObject.set(x, "CurrentRouteTable", js.undefined)
+    inline def setCurrentRouteTableUndefined: Self = StObject.set(x, "CurrentRouteTable", js.undefined)
     
-    @scala.inline
-    def setExpectedRouteTable(value: ResourceId): Self = StObject.set(x, "ExpectedRouteTable", value.asInstanceOf[js.Any])
+    inline def setExpectedRouteTable(value: ResourceId): Self = StObject.set(x, "ExpectedRouteTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedRouteTableUndefined: Self = StObject.set(x, "ExpectedRouteTable", js.undefined)
+    inline def setExpectedRouteTableUndefined: Self = StObject.set(x, "ExpectedRouteTable", js.undefined)
     
-    @scala.inline
-    def setVPC(value: ResourceId): Self = StObject.set(x, "VPC", value.asInstanceOf[js.Any])
+    inline def setVPC(value: ResourceId): Self = StObject.set(x, "VPC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVPCUndefined: Self = StObject.set(x, "VPC", js.undefined)
+    inline def setVPCUndefined: Self = StObject.set(x, "VPC", js.undefined)
     
-    @scala.inline
-    def setViolationTarget(value: ViolationTarget): Self = StObject.set(x, "ViolationTarget", value.asInstanceOf[js.Any])
+    inline def setViolationTarget(value: ViolationTarget): Self = StObject.set(x, "ViolationTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViolationTargetUndefined: Self = StObject.set(x, "ViolationTarget", js.undefined)
+    inline def setViolationTargetUndefined: Self = StObject.set(x, "ViolationTarget", js.undefined)
   }
 }

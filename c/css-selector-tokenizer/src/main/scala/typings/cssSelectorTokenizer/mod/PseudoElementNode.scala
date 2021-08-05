@@ -17,20 +17,16 @@ trait PseudoElementNode
 }
 object PseudoElementNode {
   
-  @scala.inline
-  def apply(name: String): PseudoElementNode = {
+  inline def apply(name: String): PseudoElementNode = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("pseudo-element")
     __obj.asInstanceOf[PseudoElementNode]
   }
   
-  @scala.inline
-  implicit class PseudoElementNodeMutableBuilder[Self <: PseudoElementNode] (val x: Self) extends AnyVal {
+  extension [Self <: PseudoElementNode](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `pseudo-element`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `pseudo-element`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

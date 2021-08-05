@@ -24,25 +24,19 @@ trait SchemaSuggestedNamedStyles extends StObject {
 }
 object SchemaSuggestedNamedStyles {
   
-  @scala.inline
-  def apply(): SchemaSuggestedNamedStyles = {
+  inline def apply(): SchemaSuggestedNamedStyles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSuggestedNamedStyles]
   }
   
-  @scala.inline
-  implicit class SchemaSuggestedNamedStylesMutableBuilder[Self <: SchemaSuggestedNamedStyles] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSuggestedNamedStyles](x: Self) {
     
-    @scala.inline
-    def setNamedStyles(value: SchemaNamedStyles): Self = StObject.set(x, "namedStyles", value.asInstanceOf[js.Any])
+    inline def setNamedStyles(value: SchemaNamedStyles): Self = StObject.set(x, "namedStyles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamedStylesSuggestionState(value: SchemaNamedStylesSuggestionState): Self = StObject.set(x, "namedStylesSuggestionState", value.asInstanceOf[js.Any])
+    inline def setNamedStylesSuggestionState(value: SchemaNamedStylesSuggestionState): Self = StObject.set(x, "namedStylesSuggestionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamedStylesSuggestionStateUndefined: Self = StObject.set(x, "namedStylesSuggestionState", js.undefined)
+    inline def setNamedStylesSuggestionStateUndefined: Self = StObject.set(x, "namedStylesSuggestionState", js.undefined)
     
-    @scala.inline
-    def setNamedStylesUndefined: Self = StObject.set(x, "namedStyles", js.undefined)
+    inline def setNamedStylesUndefined: Self = StObject.set(x, "namedStyles", js.undefined)
   }
 }

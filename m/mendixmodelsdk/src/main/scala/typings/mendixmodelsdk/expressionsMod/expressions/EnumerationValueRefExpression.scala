@@ -78,8 +78,7 @@ object EnumerationValueRefExpression {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def create(model: IModel): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -90,8 +89,7 @@ object EnumerationValueRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInAppServiceCallParameterMappingUnderArgumentModel(container: AppServiceCallParameterMapping): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInAppServiceCallParameterMappingUnderArgumentModel(container: AppServiceCallParameterMapping): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -102,8 +100,7 @@ object EnumerationValueRefExpression {
     *  7.21.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInBasicCodeActionParameterValueUnderArgumentModel(container: BasicCodeActionParameterValue): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicCodeActionParameterValueUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInBasicCodeActionParameterValueUnderArgumentModel(container: BasicCodeActionParameterValue): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicCodeActionParameterValueUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -114,8 +111,7 @@ object EnumerationValueRefExpression {
     *  7.9.0 to 7.20.0
     */
   /* static member */
-  @scala.inline
-  def createInBasicJavaActionParameterValueUnderArgumentModel(container: BasicJavaActionParameterValue): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicJavaActionParameterValueUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInBasicJavaActionParameterValueUnderArgumentModel(container: BasicJavaActionParameterValue): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicJavaActionParameterValueUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -126,8 +122,7 @@ object EnumerationValueRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInBinaryExpressionUnderLeft(container: BinaryExpression): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryExpressionUnderLeft")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInBinaryExpressionUnderLeft(container: BinaryExpression): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryExpressionUnderLeft")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -138,8 +133,7 @@ object EnumerationValueRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInBinaryExpressionUnderRight(container: BinaryExpression): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryExpressionUnderRight")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInBinaryExpressionUnderRight(container: BinaryExpression): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryExpressionUnderRight")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -150,8 +144,7 @@ object EnumerationValueRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInBinaryRequestHandlingUnderExpressionModel(container: BinaryRequestHandling): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryRequestHandlingUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInBinaryRequestHandlingUnderExpressionModel(container: BinaryRequestHandling): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryRequestHandlingUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -162,8 +155,7 @@ object EnumerationValueRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInChangeListActionUnderValueModel(container: ChangeListAction): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInChangeListActionUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInChangeListActionUnderValueModel(container: ChangeListAction): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInChangeListActionUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -174,8 +166,7 @@ object EnumerationValueRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInChangeVariableActionUnderValueModel(container: ChangeVariableAction): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInChangeVariableActionUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInChangeVariableActionUnderValueModel(container: ChangeVariableAction): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInChangeVariableActionUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -186,8 +177,7 @@ object EnumerationValueRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInConditionalSettingsUnderExpressionModel(container: ConditionalSettings): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConditionalSettingsUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInConditionalSettingsUnderExpressionModel(container: ConditionalSettings): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConditionalSettingsUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -198,8 +188,7 @@ object EnumerationValueRefExpression {
     *  8.5.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInConsumedODataServiceUnderTimeoutModel(container: ConsumedODataService): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConsumedODataServiceUnderTimeoutModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInConsumedODataServiceUnderTimeoutModel(container: ConsumedODataService): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConsumedODataServiceUnderTimeoutModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -210,8 +199,7 @@ object EnumerationValueRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInCreateVariableActionUnderInitialValueModel(container: CreateVariableAction): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderInitialValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInCreateVariableActionUnderInitialValueModel(container: CreateVariableAction): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderInitialValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -222,8 +210,7 @@ object EnumerationValueRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInCustomRangeUnderLimitExpressionModel(container: CustomRange): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomRangeUnderLimitExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInCustomRangeUnderLimitExpressionModel(container: CustomRange): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomRangeUnderLimitExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -234,8 +221,7 @@ object EnumerationValueRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInCustomRangeUnderOffsetExpressionModel(container: CustomRange): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomRangeUnderOffsetExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInCustomRangeUnderOffsetExpressionModel(container: CustomRange): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomRangeUnderOffsetExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -246,8 +232,7 @@ object EnumerationValueRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInDocumentTemplateParameterMappingUnderArgumentModel(container: DocumentTemplateParameterMapping): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInDocumentTemplateParameterMappingUnderArgumentModel(container: DocumentTemplateParameterMapping): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -258,8 +243,7 @@ object EnumerationValueRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInEndEventUnderReturnValueModel(container: EndEvent): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEndEventUnderReturnValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInEndEventUnderReturnValueModel(container: EndEvent): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEndEventUnderReturnValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -270,8 +254,7 @@ object EnumerationValueRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInExpressionSplitConditionUnderExpressionModel(container: ExpressionSplitCondition): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInExpressionSplitConditionUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInExpressionSplitConditionUnderExpressionModel(container: ExpressionSplitCondition): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInExpressionSplitConditionUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -282,8 +265,7 @@ object EnumerationValueRefExpression {
     *  8.0.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInFormDataPartUnderValueModel(container: FormDataPart): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInFormDataPartUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInFormDataPartUnderValueModel(container: FormDataPart): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInFormDataPartUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -294,8 +276,7 @@ object EnumerationValueRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInFunctionCallExpressionUnderArguments(container: FunctionCallExpression): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInFunctionCallExpressionUnderArguments")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInFunctionCallExpressionUnderArguments(container: FunctionCallExpression): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInFunctionCallExpressionUnderArguments")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -306,8 +287,7 @@ object EnumerationValueRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInGenerateDocumentActionUnderMarginBottomInInchModel(container: GenerateDocumentAction): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginBottomInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInGenerateDocumentActionUnderMarginBottomInInchModel(container: GenerateDocumentAction): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginBottomInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -318,8 +298,7 @@ object EnumerationValueRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInGenerateDocumentActionUnderMarginLeftInInchModel(container: GenerateDocumentAction): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginLeftInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInGenerateDocumentActionUnderMarginLeftInInchModel(container: GenerateDocumentAction): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginLeftInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -330,8 +309,7 @@ object EnumerationValueRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInGenerateDocumentActionUnderMarginRightInInchModel(container: GenerateDocumentAction): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginRightInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInGenerateDocumentActionUnderMarginRightInInchModel(container: GenerateDocumentAction): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginRightInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -342,8 +320,7 @@ object EnumerationValueRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInGenerateDocumentActionUnderMarginTopInInchModel(container: GenerateDocumentAction): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginTopInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInGenerateDocumentActionUnderMarginTopInInchModel(container: GenerateDocumentAction): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginTopInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -354,8 +331,7 @@ object EnumerationValueRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInHttpConfigurationUnderCustomLocationModel(container: HttpConfiguration): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderCustomLocationModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInHttpConfigurationUnderCustomLocationModel(container: HttpConfiguration): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderCustomLocationModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -366,8 +342,7 @@ object EnumerationValueRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInHttpConfigurationUnderPassword(container: HttpConfiguration): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderPassword")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInHttpConfigurationUnderPassword(container: HttpConfiguration): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderPassword")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -378,8 +353,7 @@ object EnumerationValueRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInHttpConfigurationUnderUsername(container: HttpConfiguration): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderUsername")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInHttpConfigurationUnderUsername(container: HttpConfiguration): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderUsername")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -390,8 +364,7 @@ object EnumerationValueRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInHttpHeaderEntryUnderValueModel(container: HttpHeaderEntry): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpHeaderEntryUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInHttpHeaderEntryUnderValueModel(container: HttpHeaderEntry): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpHeaderEntryUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -402,8 +375,7 @@ object EnumerationValueRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInIfExpressionUnderCondition(container: IfExpression): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderCondition")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInIfExpressionUnderCondition(container: IfExpression): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderCondition")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -414,8 +386,7 @@ object EnumerationValueRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInIfExpressionUnderIfFalse(container: IfExpression): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderIfFalse")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInIfExpressionUnderIfFalse(container: IfExpression): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderIfFalse")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -426,8 +397,7 @@ object EnumerationValueRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInIfExpressionUnderIfTrue(container: IfExpression): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderIfTrue")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInIfExpressionUnderIfTrue(container: IfExpression): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderIfTrue")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -438,8 +408,7 @@ object EnumerationValueRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInInspectAttributeUnderExpressionModel(container: InspectAttribute): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInInspectAttributeUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInInspectAttributeUnderExpressionModel(container: InspectAttribute): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInInspectAttributeUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -450,8 +419,7 @@ object EnumerationValueRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInLogMessageActionUnderNodeModel(container: LogMessageAction): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLogMessageActionUnderNodeModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInLogMessageActionUnderNodeModel(container: LogMessageAction): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLogMessageActionUnderNodeModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -462,8 +430,7 @@ object EnumerationValueRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInMemberChangeUnderValueModel(container: MemberChange): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMemberChangeUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInMemberChangeUnderValueModel(container: MemberChange): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMemberChangeUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -474,8 +441,7 @@ object EnumerationValueRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -486,8 +452,7 @@ object EnumerationValueRefExpression {
     *  8.0.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNanoflowCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNanoflowCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -498,8 +463,7 @@ object EnumerationValueRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInParenthesisExpressionUnderExpression(container: ParenthesisExpression): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInParenthesisExpressionUnderExpression")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInParenthesisExpressionUnderExpression(container: ParenthesisExpression): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInParenthesisExpressionUnderExpression")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -510,8 +474,7 @@ object EnumerationValueRefExpression {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInProxyConfigurationUnderHostExpressionModel(container: ProxyConfiguration): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderHostExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInProxyConfigurationUnderHostExpressionModel(container: ProxyConfiguration): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderHostExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -522,8 +485,7 @@ object EnumerationValueRefExpression {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInProxyConfigurationUnderPasswordExpressionModel(container: ProxyConfiguration): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderPasswordExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInProxyConfigurationUnderPasswordExpressionModel(container: ProxyConfiguration): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderPasswordExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -534,8 +496,7 @@ object EnumerationValueRefExpression {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInProxyConfigurationUnderPortExpressionModel(container: ProxyConfiguration): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderPortExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInProxyConfigurationUnderPortExpressionModel(container: ProxyConfiguration): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderPortExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -546,8 +507,7 @@ object EnumerationValueRefExpression {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInProxyConfigurationUnderUseConfigurationExpressionModel(container: ProxyConfiguration): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderUseConfigurationExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInProxyConfigurationUnderUseConfigurationExpressionModel(container: ProxyConfiguration): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderUseConfigurationExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -558,8 +518,7 @@ object EnumerationValueRefExpression {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInProxyConfigurationUnderUsernameExpressionModel(container: ProxyConfiguration): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderUsernameExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInProxyConfigurationUnderUsernameExpressionModel(container: ProxyConfiguration): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderUsernameExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -570,8 +529,7 @@ object EnumerationValueRefExpression {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInRestCallActionUnderTimeOutModel(container: RestCallAction): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestCallActionUnderTimeOutModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInRestCallActionUnderTimeOutModel(container: RestCallAction): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestCallActionUnderTimeOutModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -582,8 +540,7 @@ object EnumerationValueRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInRuleCallParameterMappingUnderArgumentModel(container: RuleCallParameterMapping): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRuleCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInRuleCallParameterMappingUnderArgumentModel(container: RuleCallParameterMapping): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRuleCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -594,8 +551,7 @@ object EnumerationValueRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInTemplateArgumentUnderExpressionModel(container: TemplateArgument): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateArgumentUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInTemplateArgumentUnderExpressionModel(container: TemplateArgument): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateArgumentUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -606,8 +562,7 @@ object EnumerationValueRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInUnaryExpressionUnderExpression(container: UnaryExpression): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInUnaryExpressionUnderExpression")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInUnaryExpressionUnderExpression(container: UnaryExpression): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInUnaryExpressionUnderExpression")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -618,8 +573,7 @@ object EnumerationValueRefExpression {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInWebServiceCallActionUnderTimeOutModel(container: WebServiceCallAction): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderTimeOutModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInWebServiceCallActionUnderTimeOutModel(container: WebServiceCallAction): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderTimeOutModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -630,8 +584,7 @@ object EnumerationValueRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInWebServiceOperationParameterMappingUnderArgumentModel(container: WebServiceOperationParameterMapping): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceOperationParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInWebServiceOperationParameterMappingUnderArgumentModel(container: WebServiceOperationParameterMapping): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceOperationParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
@@ -642,20 +595,17 @@ object EnumerationValueRefExpression {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInWidgetValidationUnderExpressionModel(container: WidgetValidation): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValidationUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
+  inline def createInWidgetValidationUnderExpressionModel(container: WidgetValidation): EnumerationValueRefExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValidationUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationValueRefExpression]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

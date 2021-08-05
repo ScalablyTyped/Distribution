@@ -24,8 +24,7 @@ object lazyJsonMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromObject(`object`: js.Any): LazyJsonString = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[LazyJsonString]
+    inline def fromObject(`object`: js.Any): LazyJsonString = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[LazyJsonString]
   }
   
   @js.native

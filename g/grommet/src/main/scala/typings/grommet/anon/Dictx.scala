@@ -17,31 +17,23 @@ trait Dictx
 }
 object Dictx {
   
-  @scala.inline
-  def apply(): Dictx = {
+  inline def apply(): Dictx = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Dictx]
   }
   
-  @scala.inline
-  implicit class DictxMutableBuilder[Self <: Dictx] (val x: Self) extends AnyVal {
+  extension [Self <: Dictx](x: Self) {
     
-    @scala.inline
-    def setLarge(value: BorderSize): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
+    inline def setLarge(value: BorderSize): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
+    inline def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
     
-    @scala.inline
-    def setMedium(value: BorderSize): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
+    inline def setMedium(value: BorderSize): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediumUndefined: Self = StObject.set(x, "medium", js.undefined)
+    inline def setMediumUndefined: Self = StObject.set(x, "medium", js.undefined)
     
-    @scala.inline
-    def setSmall(value: BorderSize): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
+    inline def setSmall(value: BorderSize): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
+    inline def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
   }
 }

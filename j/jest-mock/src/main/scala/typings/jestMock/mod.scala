@@ -68,62 +68,44 @@ object mod extends Shortcut {
   }
   object MockFunctionMetadata {
     
-    @scala.inline
-    def apply[T, Y /* <: js.Array[js.Any] */, Type](): MockFunctionMetadata[T, Y, Type] = {
+    inline def apply[T, Y /* <: js.Array[js.Any] */, Type](): MockFunctionMetadata[T, Y, Type] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MockFunctionMetadata[T, Y, Type]]
     }
     
-    @scala.inline
-    implicit class MockFunctionMetadataMutableBuilder[Self <: MockFunctionMetadata[?, ?, ?], T, Y /* <: js.Array[js.Any] */, Type] (val x: Self & (MockFunctionMetadata[T, Y, Type])) extends AnyVal {
+    extension [Self <: MockFunctionMetadata[?, ?, ?], T, Y /* <: js.Array[js.Any] */, Type](x: Self & (MockFunctionMetadata[T, Y, Type])) {
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+      inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
       
-      @scala.inline
-      def setMembers(value: Record[String, MockFunctionMetadata[T, Y, MockFunctionMetadataType]]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+      inline def setMembers(value: Record[String, MockFunctionMetadata[T, Y, MockFunctionMetadataType]]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
+      inline def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
       
-      @scala.inline
-      def setMockImpl(value: /* args */ Y => T): Self = StObject.set(x, "mockImpl", js.Any.fromFunction1(value))
+      inline def setMockImpl(value: /* args */ Y => T): Self = StObject.set(x, "mockImpl", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMockImplUndefined: Self = StObject.set(x, "mockImpl", js.undefined)
+      inline def setMockImplUndefined: Self = StObject.set(x, "mockImpl", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRef(value: Double): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: Double): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefID(value: Double): Self = StObject.set(x, "refID", value.asInstanceOf[js.Any])
+      inline def setRefID(value: Double): Self = StObject.set(x, "refID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefIDUndefined: Self = StObject.set(x, "refID", js.undefined)
+      inline def setRefIDUndefined: Self = StObject.set(x, "refID", js.undefined)
       
-      @scala.inline
-      def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
-      @scala.inline
-      def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -140,29 +122,21 @@ object mod extends Shortcut {
   trait MockFunctionMetadataType extends StObject
   object MockFunctionMetadataType {
     
-    @scala.inline
-    def array: typings.jestMock.jestMockStrings.array = "array".asInstanceOf[typings.jestMock.jestMockStrings.array]
+    inline def array: typings.jestMock.jestMockStrings.array = "array".asInstanceOf[typings.jestMock.jestMockStrings.array]
     
-    @scala.inline
-    def collection: typings.jestMock.jestMockStrings.collection = "collection".asInstanceOf[typings.jestMock.jestMockStrings.collection]
+    inline def collection: typings.jestMock.jestMockStrings.collection = "collection".asInstanceOf[typings.jestMock.jestMockStrings.collection]
     
-    @scala.inline
-    def constant: typings.jestMock.jestMockStrings.constant = "constant".asInstanceOf[typings.jestMock.jestMockStrings.constant]
+    inline def constant: typings.jestMock.jestMockStrings.constant = "constant".asInstanceOf[typings.jestMock.jestMockStrings.constant]
     
-    @scala.inline
-    def function: typings.jestMock.jestMockStrings.function = "function".asInstanceOf[typings.jestMock.jestMockStrings.function]
+    inline def function: typings.jestMock.jestMockStrings.function = "function".asInstanceOf[typings.jestMock.jestMockStrings.function]
     
-    @scala.inline
-    def `null`: typings.jestMock.jestMockStrings.`null` = "null".asInstanceOf[typings.jestMock.jestMockStrings.`null`]
+    inline def `null`: typings.jestMock.jestMockStrings.`null` = "null".asInstanceOf[typings.jestMock.jestMockStrings.`null`]
     
-    @scala.inline
-    def `object`: typings.jestMock.jestMockStrings.`object` = "object".asInstanceOf[typings.jestMock.jestMockStrings.`object`]
+    inline def `object`: typings.jestMock.jestMockStrings.`object` = "object".asInstanceOf[typings.jestMock.jestMockStrings.`object`]
     
-    @scala.inline
-    def regexp: typings.jestMock.jestMockStrings.regexp = "regexp".asInstanceOf[typings.jestMock.jestMockStrings.regexp]
+    inline def regexp: typings.jestMock.jestMockStrings.regexp = "regexp".asInstanceOf[typings.jestMock.jestMockStrings.regexp]
     
-    @scala.inline
-    def undefined: typings.jestMock.jestMockStrings.undefined = "undefined".asInstanceOf[typings.jestMock.jestMockStrings.undefined]
+    inline def undefined: typings.jestMock.jestMockStrings.undefined = "undefined".asInstanceOf[typings.jestMock.jestMockStrings.undefined]
   }
   
   /**
@@ -183,21 +157,17 @@ object mod extends Shortcut {
   }
   object MockFunctionResult {
     
-    @scala.inline
-    def apply(`type`: MockFunctionResultType, value: js.Any): MockFunctionResult = {
+    inline def apply(`type`: MockFunctionResultType, value: js.Any): MockFunctionResult = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[MockFunctionResult]
     }
     
-    @scala.inline
-    implicit class MockFunctionResultMutableBuilder[Self <: MockFunctionResult] (val x: Self) extends AnyVal {
+    extension [Self <: MockFunctionResult](x: Self) {
       
-      @scala.inline
-      def setType(value: MockFunctionResultType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: MockFunctionResultType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -217,14 +187,11 @@ object mod extends Shortcut {
   trait MockFunctionResultType extends StObject
   object MockFunctionResultType {
     
-    @scala.inline
-    def incomplete: typings.jestMock.jestMockStrings.incomplete = "incomplete".asInstanceOf[typings.jestMock.jestMockStrings.incomplete]
+    inline def incomplete: typings.jestMock.jestMockStrings.incomplete = "incomplete".asInstanceOf[typings.jestMock.jestMockStrings.incomplete]
     
-    @scala.inline
-    def `return`: typings.jestMock.jestMockStrings.`return` = "return".asInstanceOf[typings.jestMock.jestMockStrings.`return`]
+    inline def `return`: typings.jestMock.jestMockStrings.`return` = "return".asInstanceOf[typings.jestMock.jestMockStrings.`return`]
     
-    @scala.inline
-    def `throw`: typings.jestMock.jestMockStrings.`throw` = "throw".asInstanceOf[typings.jestMock.jestMockStrings.`throw`]
+    inline def `throw`: typings.jestMock.jestMockStrings.`throw` = "throw".asInstanceOf[typings.jestMock.jestMockStrings.`throw`]
   }
   
   trait MockFunctionState[T, Y /* <: js.Array[js.Any] */] extends StObject {
@@ -242,8 +209,7 @@ object mod extends Shortcut {
   }
   object MockFunctionState {
     
-    @scala.inline
-    def apply[T, Y /* <: js.Array[js.Any] */](
+    inline def apply[T, Y /* <: js.Array[js.Any] */](
       calls: js.Array[Y],
       instances: js.Array[T],
       invocationCallOrder: js.Array[Double],
@@ -253,32 +219,23 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MockFunctionState[T, Y]]
     }
     
-    @scala.inline
-    implicit class MockFunctionStateMutableBuilder[Self <: MockFunctionState[?, ?], T, Y /* <: js.Array[js.Any] */] (val x: Self & (MockFunctionState[T, Y])) extends AnyVal {
+    extension [Self <: MockFunctionState[?, ?], T, Y /* <: js.Array[js.Any] */](x: Self & (MockFunctionState[T, Y])) {
       
-      @scala.inline
-      def setCalls(value: js.Array[Y]): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
+      inline def setCalls(value: js.Array[Y]): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallsVarargs(value: Y*): Self = StObject.set(x, "calls", js.Array(value :_*))
+      inline def setCallsVarargs(value: Y*): Self = StObject.set(x, "calls", js.Array(value :_*))
       
-      @scala.inline
-      def setInstances(value: js.Array[T]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
+      inline def setInstances(value: js.Array[T]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstancesVarargs(value: T*): Self = StObject.set(x, "instances", js.Array(value :_*))
+      inline def setInstancesVarargs(value: T*): Self = StObject.set(x, "instances", js.Array(value :_*))
       
-      @scala.inline
-      def setInvocationCallOrder(value: js.Array[Double]): Self = StObject.set(x, "invocationCallOrder", value.asInstanceOf[js.Any])
+      inline def setInvocationCallOrder(value: js.Array[Double]): Self = StObject.set(x, "invocationCallOrder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvocationCallOrderVarargs(value: Double*): Self = StObject.set(x, "invocationCallOrder", js.Array(value :_*))
+      inline def setInvocationCallOrderVarargs(value: Double*): Self = StObject.set(x, "invocationCallOrder", js.Array(value :_*))
       
-      @scala.inline
-      def setResults(value: js.Array[MockFunctionResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      inline def setResults(value: js.Array[MockFunctionResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultsVarargs(value: MockFunctionResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+      inline def setResultsVarargs(value: MockFunctionResult*): Self = StObject.set(x, "results", js.Array(value :_*))
     }
   }
   
@@ -331,35 +288,35 @@ object mod extends Shortcut {
     
     var ModuleMocker: Instantiable1[/* global */ Global, ModuleMockerClass] = js.native
     
-    var _createMockFunction: js.Any = js.native
+    /* private */ var _createMockFunction: js.Any = js.native
     
-    var _defaultMockConfig: js.Any = js.native
+    /* private */ var _defaultMockConfig: js.Any = js.native
     
-    var _defaultMockState: js.Any = js.native
+    /* private */ var _defaultMockState: js.Any = js.native
     
-    var _ensureMockConfig: js.Any = js.native
+    /* private */ var _ensureMockConfig: js.Any = js.native
     
-    var _ensureMockState: js.Any = js.native
+    /* private */ var _ensureMockState: js.Any = js.native
     
-    var _environmentGlobal: js.Any = js.native
+    /* private */ var _environmentGlobal: js.Any = js.native
     
-    var _generateMock: js.Any = js.native
+    /* private */ var _generateMock: js.Any = js.native
     
-    var _getSlots: js.Any = js.native
+    /* private */ var _getSlots: js.Any = js.native
     
-    var _invocationCallCounter: js.Any = js.native
+    /* private */ var _invocationCallCounter: js.Any = js.native
     
-    var _makeComponent: js.Any = js.native
+    /* private */ var _makeComponent: js.Any = js.native
     
-    var _mockConfigRegistry: js.Any = js.native
+    /* private */ var _mockConfigRegistry: js.Any = js.native
     
-    var _mockState: js.Any = js.native
+    /* private */ var _mockState: js.Any = js.native
     
-    var _spyOnProperty: js.Any = js.native
+    /* private */ var _spyOnProperty: js.Any = js.native
     
-    var _spyState: js.Any = js.native
+    /* private */ var _spyState: js.Any = js.native
     
-    var _typeOf: js.Any = js.native
+    /* private */ var _typeOf: js.Any = js.native
     
     def clearAllMocks(): Unit = js.native
     

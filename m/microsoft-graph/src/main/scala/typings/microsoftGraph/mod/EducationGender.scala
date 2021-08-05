@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EducationGender extends StObject
 object EducationGender {
   
-  @scala.inline
-  def female: typings.microsoftGraph.microsoftGraphStrings.female = "female".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.female]
+  inline def female: typings.microsoftGraph.microsoftGraphStrings.female = "female".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.female]
   
-  @scala.inline
-  def male: typings.microsoftGraph.microsoftGraphStrings.male = "male".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.male]
+  inline def male: typings.microsoftGraph.microsoftGraphStrings.male = "male".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.male]
   
-  @scala.inline
-  def other: typings.microsoftGraph.microsoftGraphStrings.other = "other".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.other]
+  inline def other: typings.microsoftGraph.microsoftGraphStrings.other = "other".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.other]
   
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }

@@ -43,64 +43,45 @@ trait Location extends StObject {
 }
 object Location {
   
-  @scala.inline
-  def apply(): Location = {
+  inline def apply(): Location = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Location]
   }
   
-  @scala.inline
-  implicit class LocationMutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
+  extension [Self <: Location](x: Self) {
     
-    @scala.inline
-    def setAnnotations(value: js.Array[Region]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
+    inline def setAnnotations(value: js.Array[Region]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
+    inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
     
-    @scala.inline
-    def setAnnotationsVarargs(value: Region*): Self = StObject.set(x, "annotations", js.Array(value :_*))
+    inline def setAnnotationsVarargs(value: Region*): Self = StObject.set(x, "annotations", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLogicalLocations(value: js.Array[LogicalLocation]): Self = StObject.set(x, "logicalLocations", value.asInstanceOf[js.Any])
+    inline def setLogicalLocations(value: js.Array[LogicalLocation]): Self = StObject.set(x, "logicalLocations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogicalLocationsUndefined: Self = StObject.set(x, "logicalLocations", js.undefined)
+    inline def setLogicalLocationsUndefined: Self = StObject.set(x, "logicalLocations", js.undefined)
     
-    @scala.inline
-    def setLogicalLocationsVarargs(value: LogicalLocation*): Self = StObject.set(x, "logicalLocations", js.Array(value :_*))
+    inline def setLogicalLocationsVarargs(value: LogicalLocation*): Self = StObject.set(x, "logicalLocations", js.Array(value :_*))
     
-    @scala.inline
-    def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setPhysicalLocation(value: PhysicalLocation): Self = StObject.set(x, "physicalLocation", value.asInstanceOf[js.Any])
+    inline def setPhysicalLocation(value: PhysicalLocation): Self = StObject.set(x, "physicalLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhysicalLocationUndefined: Self = StObject.set(x, "physicalLocation", js.undefined)
+    inline def setPhysicalLocationUndefined: Self = StObject.set(x, "physicalLocation", js.undefined)
     
-    @scala.inline
-    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setRelationships(value: js.Array[LocationRelationship]): Self = StObject.set(x, "relationships", value.asInstanceOf[js.Any])
+    inline def setRelationships(value: js.Array[LocationRelationship]): Self = StObject.set(x, "relationships", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationshipsUndefined: Self = StObject.set(x, "relationships", js.undefined)
+    inline def setRelationshipsUndefined: Self = StObject.set(x, "relationships", js.undefined)
     
-    @scala.inline
-    def setRelationshipsVarargs(value: LocationRelationship*): Self = StObject.set(x, "relationships", js.Array(value :_*))
+    inline def setRelationshipsVarargs(value: LocationRelationship*): Self = StObject.set(x, "relationships", js.Array(value :_*))
   }
 }

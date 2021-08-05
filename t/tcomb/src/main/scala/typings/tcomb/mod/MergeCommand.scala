@@ -13,16 +13,13 @@ trait MergeCommand
 }
 object MergeCommand {
   
-  @scala.inline
-  def apply($merge: js.Object): MergeCommand = {
+  inline def apply($merge: js.Object): MergeCommand = {
     val __obj = js.Dynamic.literal($merge = $merge.asInstanceOf[js.Any])
     __obj.asInstanceOf[MergeCommand]
   }
   
-  @scala.inline
-  implicit class MergeCommandMutableBuilder[Self <: MergeCommand] (val x: Self) extends AnyVal {
+  extension [Self <: MergeCommand](x: Self) {
     
-    @scala.inline
-    def set$merge(value: js.Object): Self = StObject.set(x, "$merge", value.asInstanceOf[js.Any])
+    inline def set$merge(value: js.Object): Self = StObject.set(x, "$merge", value.asInstanceOf[js.Any])
   }
 }

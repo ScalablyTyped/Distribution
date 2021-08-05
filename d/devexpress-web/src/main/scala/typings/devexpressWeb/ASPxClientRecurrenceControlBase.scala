@@ -24,8 +24,7 @@ trait ASPxClientRecurrenceControlBase
 }
 object ASPxClientRecurrenceControlBase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     CreateValueAccessor: () => DefaultRecurrenceRuleValuesAccessor,
     GetClientVisible: () => Boolean,
@@ -48,13 +47,10 @@ object ASPxClientRecurrenceControlBase {
     __obj.asInstanceOf[ASPxClientRecurrenceControlBase]
   }
   
-  @scala.inline
-  implicit class ASPxClientRecurrenceControlBaseMutableBuilder[Self <: ASPxClientRecurrenceControlBase] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientRecurrenceControlBase](x: Self) {
     
-    @scala.inline
-    def setCreateValueAccessor(value: () => DefaultRecurrenceRuleValuesAccessor): Self = StObject.set(x, "CreateValueAccessor", js.Any.fromFunction0(value))
+    inline def setCreateValueAccessor(value: () => DefaultRecurrenceRuleValuesAccessor): Self = StObject.set(x, "CreateValueAccessor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdate(value: ASPxClientRecurrenceInfo => Unit): Self = StObject.set(x, "Update", js.Any.fromFunction1(value))
+    inline def setUpdate(value: ASPxClientRecurrenceInfo => Unit): Self = StObject.set(x, "Update", js.Any.fromFunction1(value))
   }
 }

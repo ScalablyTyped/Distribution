@@ -58,8 +58,7 @@ object httpMod {
   }
   object HttpConnector {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       createAgent: js.Any => js.Any,
       makeAgentConfig: js.Any => js.Any,
       makeReqParams: js.Any => js.Any,
@@ -75,20 +74,15 @@ object httpMod {
       __obj.asInstanceOf[HttpConnector]
     }
     
-    @scala.inline
-    implicit class HttpConnectorMutableBuilder[Self <: HttpConnector] (val x: Self) extends AnyVal {
+    extension [Self <: HttpConnector](x: Self) {
       
-      @scala.inline
-      def setCreateAgent(value: js.Any => js.Any): Self = StObject.set(x, "createAgent", js.Any.fromFunction1(value))
+      inline def setCreateAgent(value: js.Any => js.Any): Self = StObject.set(x, "createAgent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMakeAgentConfig(value: js.Any => js.Any): Self = StObject.set(x, "makeAgentConfig", js.Any.fromFunction1(value))
+      inline def setMakeAgentConfig(value: js.Any => js.Any): Self = StObject.set(x, "makeAgentConfig", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMakeReqParams(value: js.Any => js.Any): Self = StObject.set(x, "makeReqParams", js.Any.fromFunction1(value))
+      inline def setMakeReqParams(value: js.Any => js.Any): Self = StObject.set(x, "makeReqParams", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRequest(
+      inline def setRequest(
         value: (js.Any, js.Function4[
               /* error */ js.Any, 
               /* response */ js.Any, 

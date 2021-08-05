@@ -17,37 +17,27 @@ trait HeightSegments extends StObject {
 }
 object HeightSegments {
   
-  @scala.inline
-  def apply(): HeightSegments = {
+  inline def apply(): HeightSegments = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HeightSegments]
   }
   
-  @scala.inline
-  implicit class HeightSegmentsMutableBuilder[Self <: HeightSegments] (val x: Self) extends AnyVal {
+  extension [Self <: HeightSegments](x: Self) {
     
-    @scala.inline
-    def setHalfExtents(value: Vec3): Self = StObject.set(x, "halfExtents", value.asInstanceOf[js.Any])
+    inline def setHalfExtents(value: Vec3): Self = StObject.set(x, "halfExtents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHalfExtentsUndefined: Self = StObject.set(x, "halfExtents", js.undefined)
+    inline def setHalfExtentsUndefined: Self = StObject.set(x, "halfExtents", js.undefined)
     
-    @scala.inline
-    def setHeightSegments(value: Double): Self = StObject.set(x, "heightSegments", value.asInstanceOf[js.Any])
+    inline def setHeightSegments(value: Double): Self = StObject.set(x, "heightSegments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightSegmentsUndefined: Self = StObject.set(x, "heightSegments", js.undefined)
+    inline def setHeightSegmentsUndefined: Self = StObject.set(x, "heightSegments", js.undefined)
     
-    @scala.inline
-    def setLengthSegments(value: Double): Self = StObject.set(x, "lengthSegments", value.asInstanceOf[js.Any])
+    inline def setLengthSegments(value: Double): Self = StObject.set(x, "lengthSegments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthSegmentsUndefined: Self = StObject.set(x, "lengthSegments", js.undefined)
+    inline def setLengthSegmentsUndefined: Self = StObject.set(x, "lengthSegments", js.undefined)
     
-    @scala.inline
-    def setWidthSegments(value: Double): Self = StObject.set(x, "widthSegments", value.asInstanceOf[js.Any])
+    inline def setWidthSegments(value: Double): Self = StObject.set(x, "widthSegments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthSegmentsUndefined: Self = StObject.set(x, "widthSegments", js.undefined)
+    inline def setWidthSegmentsUndefined: Self = StObject.set(x, "widthSegments", js.undefined)
   }
 }

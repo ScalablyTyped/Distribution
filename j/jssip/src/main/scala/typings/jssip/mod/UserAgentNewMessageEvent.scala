@@ -14,22 +14,17 @@ trait UserAgentNewMessageEvent extends StObject {
 }
 object UserAgentNewMessageEvent {
   
-  @scala.inline
-  def apply(message: Message, originator: String, request: IncomingRequest | OutgoingRequest): UserAgentNewMessageEvent = {
+  inline def apply(message: Message, originator: String, request: IncomingRequest | OutgoingRequest): UserAgentNewMessageEvent = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], originator = originator.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserAgentNewMessageEvent]
   }
   
-  @scala.inline
-  implicit class UserAgentNewMessageEventMutableBuilder[Self <: UserAgentNewMessageEvent] (val x: Self) extends AnyVal {
+  extension [Self <: UserAgentNewMessageEvent](x: Self) {
     
-    @scala.inline
-    def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginator(value: String): Self = StObject.set(x, "originator", value.asInstanceOf[js.Any])
+    inline def setOriginator(value: String): Self = StObject.set(x, "originator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: IncomingRequest | OutgoingRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: IncomingRequest | OutgoingRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
   }
 }

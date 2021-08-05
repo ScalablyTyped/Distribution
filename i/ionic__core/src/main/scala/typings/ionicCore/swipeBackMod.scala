@@ -12,8 +12,7 @@ object swipeBackMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createSwipeBackGesture(
+  inline def createSwipeBackGesture(
     el: HTMLElement,
     canStartHandler: js.Function0[Boolean],
     onStartHandler: js.Function0[Unit],

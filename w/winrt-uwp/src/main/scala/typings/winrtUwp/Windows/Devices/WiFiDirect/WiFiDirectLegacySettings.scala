@@ -19,22 +19,17 @@ trait WiFiDirectLegacySettings extends StObject {
 }
 object WiFiDirectLegacySettings {
   
-  @scala.inline
-  def apply(isEnabled: Boolean, passphrase: PasswordCredential, ssid: String): WiFiDirectLegacySettings = {
+  inline def apply(isEnabled: Boolean, passphrase: PasswordCredential, ssid: String): WiFiDirectLegacySettings = {
     val __obj = js.Dynamic.literal(isEnabled = isEnabled.asInstanceOf[js.Any], passphrase = passphrase.asInstanceOf[js.Any], ssid = ssid.asInstanceOf[js.Any])
     __obj.asInstanceOf[WiFiDirectLegacySettings]
   }
   
-  @scala.inline
-  implicit class WiFiDirectLegacySettingsMutableBuilder[Self <: WiFiDirectLegacySettings] (val x: Self) extends AnyVal {
+  extension [Self <: WiFiDirectLegacySettings](x: Self) {
     
-    @scala.inline
-    def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+    inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassphrase(value: PasswordCredential): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
+    inline def setPassphrase(value: PasswordCredential): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsid(value: String): Self = StObject.set(x, "ssid", value.asInstanceOf[js.Any])
+    inline def setSsid(value: String): Self = StObject.set(x, "ssid", value.asInstanceOf[js.Any])
   }
 }

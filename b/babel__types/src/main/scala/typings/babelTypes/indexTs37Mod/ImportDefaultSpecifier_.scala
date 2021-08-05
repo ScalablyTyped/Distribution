@@ -18,20 +18,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object ImportDefaultSpecifier_ {
   
-  @scala.inline
-  def apply(local: Identifier_): ImportDefaultSpecifier_ = {
+  inline def apply(local: Identifier_): ImportDefaultSpecifier_ = {
     val __obj = js.Dynamic.literal(local = local.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("ImportDefaultSpecifier")
     __obj.asInstanceOf[ImportDefaultSpecifier_]
   }
   
-  @scala.inline
-  implicit class ImportDefaultSpecifier_MutableBuilder[Self <: ImportDefaultSpecifier_] (val x: Self) extends AnyVal {
+  extension [Self <: ImportDefaultSpecifier_](x: Self) {
     
-    @scala.inline
-    def setLocal(value: Identifier_): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+    inline def setLocal(value: Identifier_): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ImportDefaultSpecifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ImportDefaultSpecifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

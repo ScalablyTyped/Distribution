@@ -18,28 +18,21 @@ trait DescribeDBLogFilesResponse extends StObject {
 }
 object DescribeDBLogFilesResponse {
   
-  @scala.inline
-  def apply(): DescribeDBLogFilesResponse = {
+  inline def apply(): DescribeDBLogFilesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeDBLogFilesResponse]
   }
   
-  @scala.inline
-  implicit class DescribeDBLogFilesResponseMutableBuilder[Self <: DescribeDBLogFilesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDBLogFilesResponse](x: Self) {
     
-    @scala.inline
-    def setDescribeDBLogFiles(value: DescribeDBLogFilesList): Self = StObject.set(x, "DescribeDBLogFiles", value.asInstanceOf[js.Any])
+    inline def setDescribeDBLogFiles(value: DescribeDBLogFilesList): Self = StObject.set(x, "DescribeDBLogFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescribeDBLogFilesUndefined: Self = StObject.set(x, "DescribeDBLogFiles", js.undefined)
+    inline def setDescribeDBLogFilesUndefined: Self = StObject.set(x, "DescribeDBLogFiles", js.undefined)
     
-    @scala.inline
-    def setDescribeDBLogFilesVarargs(value: DescribeDBLogFilesDetails*): Self = StObject.set(x, "DescribeDBLogFiles", js.Array(value :_*))
+    inline def setDescribeDBLogFilesVarargs(value: DescribeDBLogFilesDetails*): Self = StObject.set(x, "DescribeDBLogFiles", js.Array(value :_*))
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

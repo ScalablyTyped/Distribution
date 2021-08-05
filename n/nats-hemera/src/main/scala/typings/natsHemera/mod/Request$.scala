@@ -14,20 +14,16 @@ trait Request$ extends StObject {
 }
 object Request$ {
   
-  @scala.inline
-  def apply(id: String, `type`: pubsub | request): Request$ = {
+  inline def apply(id: String, `type`: pubsub | request): Request$ = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Request$]
   }
   
-  @scala.inline
-  implicit class Request$MutableBuilder[Self <: Request$] (val x: Self) extends AnyVal {
+  extension [Self <: Request$](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: pubsub | request): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: pubsub | request): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

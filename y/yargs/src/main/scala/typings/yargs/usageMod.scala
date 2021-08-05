@@ -18,8 +18,7 @@ object usageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def usage(yargs: YargsInstance, y18n: Y18N): UsageInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("usage")(yargs.asInstanceOf[js.Any], y18n.asInstanceOf[js.Any])).asInstanceOf[UsageInstance]
+  inline def usage(yargs: YargsInstance, y18n: Y18N): UsageInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("usage")(yargs.asInstanceOf[js.Any], y18n.asInstanceOf[js.Any])).asInstanceOf[UsageInstance]
   
   type FailureFunction = js.Function3[
     /* msg */ js.UndefOr[String | Null], 
@@ -48,8 +47,7 @@ object usageMod {
   }
   object FrozenUsageInstance {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       commands: js.Array[js.Tuple5[String, String, Boolean, js.Array[String], Boolean]],
       descriptions: Dictionary[js.UndefOr[String]],
       epilogs: js.Array[String],
@@ -62,50 +60,35 @@ object usageMod {
       __obj.asInstanceOf[FrozenUsageInstance]
     }
     
-    @scala.inline
-    implicit class FrozenUsageInstanceMutableBuilder[Self <: FrozenUsageInstance] (val x: Self) extends AnyVal {
+    extension [Self <: FrozenUsageInstance](x: Self) {
       
-      @scala.inline
-      def setCommands(value: js.Array[js.Tuple5[String, String, Boolean, js.Array[String], Boolean]]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
+      inline def setCommands(value: js.Array[js.Tuple5[String, String, Boolean, js.Array[String], Boolean]]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommandsVarargs(value: (js.Tuple5[String, String, Boolean, js.Array[String], Boolean])*): Self = StObject.set(x, "commands", js.Array(value :_*))
+      inline def setCommandsVarargs(value: (js.Tuple5[String, String, Boolean, js.Array[String], Boolean])*): Self = StObject.set(x, "commands", js.Array(value :_*))
       
-      @scala.inline
-      def setDescriptions(value: Dictionary[js.UndefOr[String]]): Self = StObject.set(x, "descriptions", value.asInstanceOf[js.Any])
+      inline def setDescriptions(value: Dictionary[js.UndefOr[String]]): Self = StObject.set(x, "descriptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEpilogs(value: js.Array[String]): Self = StObject.set(x, "epilogs", value.asInstanceOf[js.Any])
+      inline def setEpilogs(value: js.Array[String]): Self = StObject.set(x, "epilogs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEpilogsVarargs(value: String*): Self = StObject.set(x, "epilogs", js.Array(value :_*))
+      inline def setEpilogsVarargs(value: String*): Self = StObject.set(x, "epilogs", js.Array(value :_*))
       
-      @scala.inline
-      def setExamples(value: js.Array[js.Tuple2[String, String]]): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
+      inline def setExamples(value: js.Array[js.Tuple2[String, String]]): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExamplesVarargs(value: (js.Tuple2[String, String])*): Self = StObject.set(x, "examples", js.Array(value :_*))
+      inline def setExamplesVarargs(value: (js.Tuple2[String, String])*): Self = StObject.set(x, "examples", js.Array(value :_*))
       
-      @scala.inline
-      def setFailMessage(value: String): Self = StObject.set(x, "failMessage", value.asInstanceOf[js.Any])
+      inline def setFailMessage(value: String): Self = StObject.set(x, "failMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailMessageNull: Self = StObject.set(x, "failMessage", null)
+      inline def setFailMessageNull: Self = StObject.set(x, "failMessage", null)
       
-      @scala.inline
-      def setFailMessageUndefined: Self = StObject.set(x, "failMessage", js.undefined)
+      inline def setFailMessageUndefined: Self = StObject.set(x, "failMessage", js.undefined)
       
-      @scala.inline
-      def setFailureOutput(value: Boolean): Self = StObject.set(x, "failureOutput", value.asInstanceOf[js.Any])
+      inline def setFailureOutput(value: Boolean): Self = StObject.set(x, "failureOutput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsageDisabled(value: Boolean): Self = StObject.set(x, "usageDisabled", value.asInstanceOf[js.Any])
+      inline def setUsageDisabled(value: Boolean): Self = StObject.set(x, "usageDisabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsages(value: js.Array[js.Tuple2[String, String]]): Self = StObject.set(x, "usages", value.asInstanceOf[js.Any])
+      inline def setUsages(value: js.Array[js.Tuple2[String, String]]): Self = StObject.set(x, "usages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsagesVarargs(value: (js.Tuple2[String, String])*): Self = StObject.set(x, "usages", js.Array(value :_*))
+      inline def setUsagesVarargs(value: (js.Tuple2[String, String])*): Self = StObject.set(x, "usages", js.Array(value :_*))
     }
   }
   

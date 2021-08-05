@@ -23,35 +23,30 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def setDefaults(newDefaults: Options): Options = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaults")(newDefaults.asInstanceOf[js.Any]).asInstanceOf[Options]
+  inline def setDefaults(newDefaults: Options): Options = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaults")(newDefaults.asInstanceOf[js.Any]).asInstanceOf[Options]
   
-  @scala.inline
-  def withInfo(): js.Function1[
+  inline def withInfo(): js.Function1[
     /* storyFn */ StoryFn[js.Any], 
     js.Function1[/* context */ js.UndefOr[js.Object], ReactElement]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withInfo")().asInstanceOf[js.Function1[
     /* storyFn */ StoryFn[js.Any], 
     js.Function1[/* context */ js.UndefOr[js.Object], ReactElement]
   ]]
-  @scala.inline
-  def withInfo(textOrOptions: String): js.Function1[
+  inline def withInfo(textOrOptions: String): js.Function1[
     /* storyFn */ StoryFn[js.Any], 
     js.Function1[/* context */ js.UndefOr[js.Object], ReactElement]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withInfo")(textOrOptions.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* storyFn */ StoryFn[js.Any], 
     js.Function1[/* context */ js.UndefOr[js.Object], ReactElement]
   ]]
-  @scala.inline
-  def withInfo(textOrOptions: Options): js.Function1[
+  inline def withInfo(textOrOptions: Options): js.Function1[
     /* storyFn */ StoryFn[js.Any], 
     js.Function1[/* context */ js.UndefOr[js.Object], ReactElement]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withInfo")(textOrOptions.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* storyFn */ StoryFn[js.Any], 
     js.Function1[/* context */ js.UndefOr[js.Object], ReactElement]
   ]]
-  @scala.inline
-  def withInfo[A](story: StoryFn[A], context: StoryContext): ReturnType[DecoratorFunction[A]] = (^.asInstanceOf[js.Dynamic].applyDynamic("withInfo")(story.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReturnType[DecoratorFunction[A]]]
+  inline def withInfo[A](story: StoryFn[A], context: StoryContext): ReturnType[DecoratorFunction[A]] = (^.asInstanceOf[js.Dynamic].applyDynamic("withInfo")(story.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReturnType[DecoratorFunction[A]]]
   
   trait Options extends StObject {
     
@@ -90,113 +85,78 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setComponents(value: StringDictionary[ComponentType[js.Any]]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+      inline def setComponents(value: StringDictionary[ComponentType[js.Any]]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
+      inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
       
-      @scala.inline
-      def setExcludedPropTypes(value: js.Array[String]): Self = StObject.set(x, "excludedPropTypes", value.asInstanceOf[js.Any])
+      inline def setExcludedPropTypes(value: js.Array[String]): Self = StObject.set(x, "excludedPropTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludedPropTypesUndefined: Self = StObject.set(x, "excludedPropTypes", js.undefined)
+      inline def setExcludedPropTypesUndefined: Self = StObject.set(x, "excludedPropTypes", js.undefined)
       
-      @scala.inline
-      def setExcludedPropTypesVarargs(value: String*): Self = StObject.set(x, "excludedPropTypes", js.Array(value :_*))
+      inline def setExcludedPropTypesVarargs(value: String*): Self = StObject.set(x, "excludedPropTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setHeader(value: Boolean): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: Boolean): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+      inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
+      inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
       
-      @scala.inline
-      def setMarksyConf(value: js.Object): Self = StObject.set(x, "marksyConf", value.asInstanceOf[js.Any])
+      inline def setMarksyConf(value: js.Object): Self = StObject.set(x, "marksyConf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarksyConfUndefined: Self = StObject.set(x, "marksyConf", js.undefined)
+      inline def setMarksyConfUndefined: Self = StObject.set(x, "marksyConf", js.undefined)
       
-      @scala.inline
-      def setMaxPropArrayLength(value: Double): Self = StObject.set(x, "maxPropArrayLength", value.asInstanceOf[js.Any])
+      inline def setMaxPropArrayLength(value: Double): Self = StObject.set(x, "maxPropArrayLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxPropArrayLengthUndefined: Self = StObject.set(x, "maxPropArrayLength", js.undefined)
+      inline def setMaxPropArrayLengthUndefined: Self = StObject.set(x, "maxPropArrayLength", js.undefined)
       
-      @scala.inline
-      def setMaxPropObjectKeys(value: Double): Self = StObject.set(x, "maxPropObjectKeys", value.asInstanceOf[js.Any])
+      inline def setMaxPropObjectKeys(value: Double): Self = StObject.set(x, "maxPropObjectKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxPropObjectKeysUndefined: Self = StObject.set(x, "maxPropObjectKeys", js.undefined)
+      inline def setMaxPropObjectKeysUndefined: Self = StObject.set(x, "maxPropObjectKeys", js.undefined)
       
-      @scala.inline
-      def setMaxPropStringLength(value: Double): Self = StObject.set(x, "maxPropStringLength", value.asInstanceOf[js.Any])
+      inline def setMaxPropStringLength(value: Double): Self = StObject.set(x, "maxPropStringLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxPropStringLengthUndefined: Self = StObject.set(x, "maxPropStringLength", js.undefined)
+      inline def setMaxPropStringLengthUndefined: Self = StObject.set(x, "maxPropStringLength", js.undefined)
       
-      @scala.inline
-      def setMaxPropsIntoLine(value: Double): Self = StObject.set(x, "maxPropsIntoLine", value.asInstanceOf[js.Any])
+      inline def setMaxPropsIntoLine(value: Double): Self = StObject.set(x, "maxPropsIntoLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxPropsIntoLineUndefined: Self = StObject.set(x, "maxPropsIntoLine", js.undefined)
+      inline def setMaxPropsIntoLineUndefined: Self = StObject.set(x, "maxPropsIntoLine", js.undefined)
       
-      @scala.inline
-      def setPropTables(value: js.Array[ComponentType[js.Any]] | `false`): Self = StObject.set(x, "propTables", value.asInstanceOf[js.Any])
+      inline def setPropTables(value: js.Array[ComponentType[js.Any]] | `false`): Self = StObject.set(x, "propTables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropTablesExclude(value: js.Array[ComponentType[js.Any]]): Self = StObject.set(x, "propTablesExclude", value.asInstanceOf[js.Any])
+      inline def setPropTablesExclude(value: js.Array[ComponentType[js.Any]]): Self = StObject.set(x, "propTablesExclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropTablesExcludeUndefined: Self = StObject.set(x, "propTablesExclude", js.undefined)
+      inline def setPropTablesExcludeUndefined: Self = StObject.set(x, "propTablesExclude", js.undefined)
       
-      @scala.inline
-      def setPropTablesExcludeVarargs(value: ComponentType[js.Any]*): Self = StObject.set(x, "propTablesExclude", js.Array(value :_*))
+      inline def setPropTablesExcludeVarargs(value: ComponentType[js.Any]*): Self = StObject.set(x, "propTablesExclude", js.Array(value :_*))
       
-      @scala.inline
-      def setPropTablesUndefined: Self = StObject.set(x, "propTables", js.undefined)
+      inline def setPropTablesUndefined: Self = StObject.set(x, "propTables", js.undefined)
       
-      @scala.inline
-      def setPropTablesVarargs(value: ComponentType[js.Any]*): Self = StObject.set(x, "propTables", js.Array(value :_*))
+      inline def setPropTablesVarargs(value: ComponentType[js.Any]*): Self = StObject.set(x, "propTables", js.Array(value :_*))
       
-      @scala.inline
-      def setSource(value: Boolean): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Boolean): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      @scala.inline
-      def setStyles(value: js.Object): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: js.Object): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTableComponent(value: ComponentType[TableComponentOptionProps]): Self = StObject.set(x, "TableComponent", value.asInstanceOf[js.Any])
+      inline def setTableComponent(value: ComponentType[TableComponentOptionProps]): Self = StObject.set(x, "TableComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableComponentUndefined: Self = StObject.set(x, "TableComponent", js.undefined)
+      inline def setTableComponentUndefined: Self = StObject.set(x, "TableComponent", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
   
@@ -206,20 +166,16 @@ object mod {
   }
   object TableComponentOptionProps {
     
-    @scala.inline
-    def apply(propDefinitions: js.Array[DefaultValue]): TableComponentOptionProps = {
+    inline def apply(propDefinitions: js.Array[DefaultValue]): TableComponentOptionProps = {
       val __obj = js.Dynamic.literal(propDefinitions = propDefinitions.asInstanceOf[js.Any])
       __obj.asInstanceOf[TableComponentOptionProps]
     }
     
-    @scala.inline
-    implicit class TableComponentOptionPropsMutableBuilder[Self <: TableComponentOptionProps] (val x: Self) extends AnyVal {
+    extension [Self <: TableComponentOptionProps](x: Self) {
       
-      @scala.inline
-      def setPropDefinitions(value: js.Array[DefaultValue]): Self = StObject.set(x, "propDefinitions", value.asInstanceOf[js.Any])
+      inline def setPropDefinitions(value: js.Array[DefaultValue]): Self = StObject.set(x, "propDefinitions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropDefinitionsVarargs(value: DefaultValue*): Self = StObject.set(x, "propDefinitions", js.Array(value :_*))
+      inline def setPropDefinitionsVarargs(value: DefaultValue*): Self = StObject.set(x, "propDefinitions", js.Array(value :_*))
     }
   }
   
@@ -233,38 +189,28 @@ object mod {
   }
   object WrapStoryProps {
     
-    @scala.inline
-    def apply(): WrapStoryProps = {
+    inline def apply(): WrapStoryProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WrapStoryProps]
     }
     
-    @scala.inline
-    implicit class WrapStoryPropsMutableBuilder[Self <: WrapStoryProps] (val x: Self) extends AnyVal {
+    extension [Self <: WrapStoryProps](x: Self) {
       
-      @scala.inline
-      def setContext(value: js.Object): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: js.Object): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setStoryFn(value: StoryFn[js.Any]): Self = StObject.set(x, "storyFn", value.asInstanceOf[js.Any])
+      inline def setStoryFn(value: StoryFn[js.Any]): Self = StObject.set(x, "storyFn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoryFnFunction1(value: /* p */ js.UndefOr[StoryContext] => js.Any): Self = StObject.set(x, "storyFn", js.Any.fromFunction1(value))
+      inline def setStoryFnFunction1(value: /* p */ js.UndefOr[StoryContext] => js.Any): Self = StObject.set(x, "storyFn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStoryFnFunction2(value: (/* a */ js.UndefOr[Args], /* p */ js.UndefOr[StoryContext]) => js.Any): Self = StObject.set(x, "storyFn", js.Any.fromFunction2(value))
+      inline def setStoryFnFunction2(value: (/* a */ js.UndefOr[Args], /* p */ js.UndefOr[StoryContext]) => js.Any): Self = StObject.set(x, "storyFn", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setStoryFnUndefined: Self = StObject.set(x, "storyFn", js.undefined)
+      inline def setStoryFnUndefined: Self = StObject.set(x, "storyFn", js.undefined)
     }
   }
   
@@ -281,8 +227,7 @@ object mod {
     }
     object ClientStoryApi {
       
-      @scala.inline
-      def apply[StoryFnReturnType](
+      inline def apply[StoryFnReturnType](
         addDecorator: DecoratorFunction[StoryFnReturnType] => StoryApi[StoryFnReturnType],
         addParameters: ParametersinfoOptions => StoryApi[StoryFnReturnType],
         storiesOf: (String, NodeModule) => StoryApi[StoryFnReturnType]
@@ -291,17 +236,13 @@ object mod {
         __obj.asInstanceOf[ClientStoryApi[StoryFnReturnType]]
       }
       
-      @scala.inline
-      implicit class ClientStoryApiMutableBuilder[Self <: ClientStoryApi[?], StoryFnReturnType] (val x: Self & ClientStoryApi[StoryFnReturnType]) extends AnyVal {
+      extension [Self <: ClientStoryApi[?], StoryFnReturnType](x: Self & ClientStoryApi[StoryFnReturnType]) {
         
-        @scala.inline
-        def setAddDecorator(value: DecoratorFunction[StoryFnReturnType] => StoryApi[StoryFnReturnType]): Self = StObject.set(x, "addDecorator", js.Any.fromFunction1(value))
+        inline def setAddDecorator(value: DecoratorFunction[StoryFnReturnType] => StoryApi[StoryFnReturnType]): Self = StObject.set(x, "addDecorator", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setAddParameters(value: ParametersinfoOptions => StoryApi[StoryFnReturnType]): Self = StObject.set(x, "addParameters", js.Any.fromFunction1(value))
+        inline def setAddParameters(value: ParametersinfoOptions => StoryApi[StoryFnReturnType]): Self = StObject.set(x, "addParameters", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setStoriesOf(value: (String, NodeModule) => StoryApi[StoryFnReturnType]): Self = StObject.set(x, "storiesOf", js.Any.fromFunction2(value))
+        inline def setStoriesOf(value: (String, NodeModule) => StoryApi[StoryFnReturnType]): Self = StObject.set(x, "storiesOf", js.Any.fromFunction2(value))
       }
     }
   }

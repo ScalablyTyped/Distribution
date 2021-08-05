@@ -47,8 +47,7 @@ object anon {
   }
   object Bug {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Bug: Double,
       Dark: Double,
       Dragon: Double,
@@ -72,62 +71,43 @@ object anon {
       __obj.asInstanceOf[Bug]
     }
     
-    @scala.inline
-    implicit class BugMutableBuilder[Self <: Bug] (val x: Self) extends AnyVal {
+    extension [Self <: Bug](x: Self) {
       
-      @scala.inline
-      def setBug(value: Double): Self = StObject.set(x, "Bug", value.asInstanceOf[js.Any])
+      inline def setBug(value: Double): Self = StObject.set(x, "Bug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDark(value: Double): Self = StObject.set(x, "Dark", value.asInstanceOf[js.Any])
+      inline def setDark(value: Double): Self = StObject.set(x, "Dark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragon(value: Double): Self = StObject.set(x, "Dragon", value.asInstanceOf[js.Any])
+      inline def setDragon(value: Double): Self = StObject.set(x, "Dragon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElectric(value: Double): Self = StObject.set(x, "Electric", value.asInstanceOf[js.Any])
+      inline def setElectric(value: Double): Self = StObject.set(x, "Electric", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFairy(value: Double): Self = StObject.set(x, "Fairy", value.asInstanceOf[js.Any])
+      inline def setFairy(value: Double): Self = StObject.set(x, "Fairy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFighting(value: Double): Self = StObject.set(x, "Fighting", value.asInstanceOf[js.Any])
+      inline def setFighting(value: Double): Self = StObject.set(x, "Fighting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFire(value: Double): Self = StObject.set(x, "Fire", value.asInstanceOf[js.Any])
+      inline def setFire(value: Double): Self = StObject.set(x, "Fire", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlying(value: Double): Self = StObject.set(x, "Flying", value.asInstanceOf[js.Any])
+      inline def setFlying(value: Double): Self = StObject.set(x, "Flying", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGhost(value: Double): Self = StObject.set(x, "Ghost", value.asInstanceOf[js.Any])
+      inline def setGhost(value: Double): Self = StObject.set(x, "Ghost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrass(value: Double): Self = StObject.set(x, "Grass", value.asInstanceOf[js.Any])
+      inline def setGrass(value: Double): Self = StObject.set(x, "Grass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGround(value: Double): Self = StObject.set(x, "Ground", value.asInstanceOf[js.Any])
+      inline def setGround(value: Double): Self = StObject.set(x, "Ground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIce(value: Double): Self = StObject.set(x, "Ice", value.asInstanceOf[js.Any])
+      inline def setIce(value: Double): Self = StObject.set(x, "Ice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormal(value: Double): Self = StObject.set(x, "Normal", value.asInstanceOf[js.Any])
+      inline def setNormal(value: Double): Self = StObject.set(x, "Normal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPoison(value: Double): Self = StObject.set(x, "Poison", value.asInstanceOf[js.Any])
+      inline def setPoison(value: Double): Self = StObject.set(x, "Poison", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPsychic(value: Double): Self = StObject.set(x, "Psychic", value.asInstanceOf[js.Any])
+      inline def setPsychic(value: Double): Self = StObject.set(x, "Psychic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRock(value: Double): Self = StObject.set(x, "Rock", value.asInstanceOf[js.Any])
+      inline def setRock(value: Double): Self = StObject.set(x, "Rock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSteel(value: Double): Self = StObject.set(x, "Steel", value.asInstanceOf[js.Any])
+      inline def setSteel(value: Double): Self = StObject.set(x, "Steel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWater(value: Double): Self = StObject.set(x, "Water", value.asInstanceOf[js.Any])
+      inline def setWater(value: Double): Self = StObject.set(x, "Water", value.asInstanceOf[js.Any])
     }
   }
   
@@ -139,20 +119,16 @@ object anon {
   }
   object Female {
     
-    @scala.inline
-    def apply(female: Double, male: Double): Female = {
+    inline def apply(female: Double, male: Double): Female = {
       val __obj = js.Dynamic.literal(female = female.asInstanceOf[js.Any], male = male.asInstanceOf[js.Any])
       __obj.asInstanceOf[Female]
     }
     
-    @scala.inline
-    implicit class FemaleMutableBuilder[Self <: Female] (val x: Self) extends AnyVal {
+    extension [Self <: Female](x: Self) {
       
-      @scala.inline
-      def setFemale(value: Double): Self = StObject.set(x, "female", value.asInstanceOf[js.Any])
+      inline def setFemale(value: Double): Self = StObject.set(x, "female", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMale(value: Double): Self = StObject.set(x, "male", value.asInstanceOf[js.Any])
+      inline def setMale(value: Double): Self = StObject.set(x, "male", value.asInstanceOf[js.Any])
     }
   }
   
@@ -164,29 +140,22 @@ object anon {
   }
   object Increasedcriticalhitratio {
     
-    @scala.inline
-    def apply(): Increasedcriticalhitratio = {
+    inline def apply(): Increasedcriticalhitratio = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Increasedcriticalhitratio]
     }
     
-    @scala.inline
-    implicit class IncreasedcriticalhitratioMutableBuilder[Self <: Increasedcriticalhitratio] (val x: Self) extends AnyVal {
+    extension [Self <: Increasedcriticalhitratio](x: Self) {
       
-      @scala.inline
-      def setIncreased_critical_hit_ratio(value: Boolean): Self = StObject.set(x, "increased_critical_hit_ratio", value.asInstanceOf[js.Any])
+      inline def setIncreased_critical_hit_ratio(value: Boolean): Self = StObject.set(x, "increased_critical_hit_ratio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncreased_critical_hit_ratioUndefined: Self = StObject.set(x, "increased_critical_hit_ratio", js.undefined)
+      inline def setIncreased_critical_hit_ratioUndefined: Self = StObject.set(x, "increased_critical_hit_ratio", js.undefined)
       
-      @scala.inline
-      def setStatus_conditions(value: js.Array[MoveStatusCondition]): Self = StObject.set(x, "status_conditions", value.asInstanceOf[js.Any])
+      inline def setStatus_conditions(value: js.Array[MoveStatusCondition]): Self = StObject.set(x, "status_conditions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus_conditionsUndefined: Self = StObject.set(x, "status_conditions", js.undefined)
+      inline def setStatus_conditionsUndefined: Self = StObject.set(x, "status_conditions", js.undefined)
       
-      @scala.inline
-      def setStatus_conditionsVarargs(value: MoveStatusCondition*): Self = StObject.set(x, "status_conditions", js.Array(value :_*))
+      inline def setStatus_conditionsVarargs(value: MoveStatusCondition*): Self = StObject.set(x, "status_conditions", js.Array(value :_*))
     }
   }
   
@@ -204,59 +173,42 @@ object anon {
   }
   object Jump {
     
-    @scala.inline
-    def apply(): Jump = {
+    inline def apply(): Jump = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Jump]
     }
     
-    @scala.inline
-    implicit class JumpMutableBuilder[Self <: Jump] (val x: Self) extends AnyVal {
+    extension [Self <: Jump](x: Self) {
       
-      @scala.inline
-      def setJump(value: js.Array[Double]): Self = StObject.set(x, "jump", value.asInstanceOf[js.Any])
+      inline def setJump(value: js.Array[Double]): Self = StObject.set(x, "jump", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJumpUndefined: Self = StObject.set(x, "jump", js.undefined)
+      inline def setJumpUndefined: Self = StObject.set(x, "jump", js.undefined)
       
-      @scala.inline
-      def setJumpVarargs(value: Double*): Self = StObject.set(x, "jump", js.Array(value :_*))
+      inline def setJumpVarargs(value: Double*): Self = StObject.set(x, "jump", js.Array(value :_*))
       
-      @scala.inline
-      def setPower(value: js.Array[Double]): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
+      inline def setPower(value: js.Array[Double]): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPowerUndefined: Self = StObject.set(x, "power", js.undefined)
+      inline def setPowerUndefined: Self = StObject.set(x, "power", js.undefined)
       
-      @scala.inline
-      def setPowerVarargs(value: Double*): Self = StObject.set(x, "power", js.Array(value :_*))
+      inline def setPowerVarargs(value: Double*): Self = StObject.set(x, "power", js.Array(value :_*))
       
-      @scala.inline
-      def setSkill(value: js.Array[Double]): Self = StObject.set(x, "skill", value.asInstanceOf[js.Any])
+      inline def setSkill(value: js.Array[Double]): Self = StObject.set(x, "skill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkillUndefined: Self = StObject.set(x, "skill", js.undefined)
+      inline def setSkillUndefined: Self = StObject.set(x, "skill", js.undefined)
       
-      @scala.inline
-      def setSkillVarargs(value: Double*): Self = StObject.set(x, "skill", js.Array(value :_*))
+      inline def setSkillVarargs(value: Double*): Self = StObject.set(x, "skill", js.Array(value :_*))
       
-      @scala.inline
-      def setSpeed(value: js.Array[Double]): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+      inline def setSpeed(value: js.Array[Double]): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
+      inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
       
-      @scala.inline
-      def setSpeedVarargs(value: Double*): Self = StObject.set(x, "speed", js.Array(value :_*))
+      inline def setSpeedVarargs(value: Double*): Self = StObject.set(x, "speed", js.Array(value :_*))
       
-      @scala.inline
-      def setStamina(value: js.Array[Double]): Self = StObject.set(x, "stamina", value.asInstanceOf[js.Any])
+      inline def setStamina(value: js.Array[Double]): Self = StObject.set(x, "stamina", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaminaUndefined: Self = StObject.set(x, "stamina", js.undefined)
+      inline def setStaminaUndefined: Self = StObject.set(x, "stamina", js.undefined)
       
-      @scala.inline
-      def setStaminaVarargs(value: Double*): Self = StObject.set(x, "stamina", js.Array(value :_*))
+      inline def setStaminaVarargs(value: Double*): Self = StObject.set(x, "stamina", js.Array(value :_*))
     }
   }
 }

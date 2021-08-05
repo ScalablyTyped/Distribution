@@ -35,40 +35,29 @@ trait SchemaStartAssetImportResponse extends StObject {
 }
 object SchemaStartAssetImportResponse {
   
-  @scala.inline
-  def apply(): SchemaStartAssetImportResponse = {
+  inline def apply(): SchemaStartAssetImportResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaStartAssetImportResponse]
   }
   
-  @scala.inline
-  implicit class SchemaStartAssetImportResponseMutableBuilder[Self <: SchemaStartAssetImportResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaStartAssetImportResponse](x: Self) {
     
-    @scala.inline
-    def setAssetId(value: String): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
+    inline def setAssetId(value: String): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetIdUndefined: Self = StObject.set(x, "assetId", js.undefined)
+    inline def setAssetIdUndefined: Self = StObject.set(x, "assetId", js.undefined)
     
-    @scala.inline
-    def setAssetImportId(value: String): Self = StObject.set(x, "assetImportId", value.asInstanceOf[js.Any])
+    inline def setAssetImportId(value: String): Self = StObject.set(x, "assetImportId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetImportIdUndefined: Self = StObject.set(x, "assetImportId", js.undefined)
+    inline def setAssetImportIdUndefined: Self = StObject.set(x, "assetImportId", js.undefined)
     
-    @scala.inline
-    def setAssetImportMessages(value: js.Array[SchemaAssetImportMessage]): Self = StObject.set(x, "assetImportMessages", value.asInstanceOf[js.Any])
+    inline def setAssetImportMessages(value: js.Array[SchemaAssetImportMessage]): Self = StObject.set(x, "assetImportMessages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetImportMessagesUndefined: Self = StObject.set(x, "assetImportMessages", js.undefined)
+    inline def setAssetImportMessagesUndefined: Self = StObject.set(x, "assetImportMessages", js.undefined)
     
-    @scala.inline
-    def setAssetImportMessagesVarargs(value: SchemaAssetImportMessage*): Self = StObject.set(x, "assetImportMessages", js.Array(value :_*))
+    inline def setAssetImportMessagesVarargs(value: SchemaAssetImportMessage*): Self = StObject.set(x, "assetImportMessages", js.Array(value :_*))
     
-    @scala.inline
-    def setPublishUrl(value: String): Self = StObject.set(x, "publishUrl", value.asInstanceOf[js.Any])
+    inline def setPublishUrl(value: String): Self = StObject.set(x, "publishUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishUrlUndefined: Self = StObject.set(x, "publishUrl", js.undefined)
+    inline def setPublishUrlUndefined: Self = StObject.set(x, "publishUrl", js.undefined)
   }
 }

@@ -29,22 +29,17 @@ trait DesktopCapturerSource extends StObject {
 }
 object DesktopCapturerSource {
   
-  @scala.inline
-  def apply(id: String, name: String, thumbnail: js.Any): DesktopCapturerSource = {
+  inline def apply(id: String, name: String, thumbnail: js.Any): DesktopCapturerSource = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], thumbnail = thumbnail.asInstanceOf[js.Any])
     __obj.asInstanceOf[DesktopCapturerSource]
   }
   
-  @scala.inline
-  implicit class DesktopCapturerSourceMutableBuilder[Self <: DesktopCapturerSource] (val x: Self) extends AnyVal {
+  extension [Self <: DesktopCapturerSource](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnail(value: js.Any): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+    inline def setThumbnail(value: js.Any): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
   }
 }

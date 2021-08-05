@@ -102,62 +102,62 @@ class GetScriptLexicalStructureWalker protected ()
      with typings.typescriptServices.TypeScript.Services.GetScriptLexicalStructureWalker {
   def this(fileName: String) = this()
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _position: js.Any = js.native
   
-  /* CompleteClass */
-  /* private */ override def addAdditionalSpan(node: js.Any, key: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def addAdditionalSpan(node: js.Any, key: js.Any): js.Any = js.native
   
-  /* CompleteClass */
-  /* private */ override def collectItems(items: js.Any, scope: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def collectItems(items: js.Any, scope: js.Any): js.Any = js.native
   
-  /* CompleteClass */
-  /* private */ override def createItem(node: js.Any, modifiers: js.Any, kind: js.Any, name: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def createItem(node: js.Any, modifiers: js.Any, kind: js.Any, name: js.Any): js.Any = js.native
   
-  /* CompleteClass */
-  /* private */ override def createScope(): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def createScope(): js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var currentInterfaceDeclaration: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var currentMemberVariableDeclaration: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var currentScope: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var currentVariableStatement: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var fileName: js.Any = js.native
   
-  /* CompleteClass */
-  /* private */ override def getKindModifiers(modifiers: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def getKindModifiers(modifiers: js.Any): js.Any = js.native
   
-  /* CompleteClass */
-  /* private */ override def getModuleNames(node: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def getModuleNames(node: js.Any): js.Any = js.native
   
-  /* CompleteClass */
-  /* private */ override def getModuleNamesHelper(name: js.Any, result: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def getModuleNamesHelper(name: js.Any, result: js.Any): js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var kindStack: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var nameStack: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var parentScopes: js.Any = js.native
   
-  /* CompleteClass */
-  /* private */ override def popScope(): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def popScope(): js.Any = js.native
   
   /* CompleteClass */
   override def position(): Double = js.native
   
-  /* CompleteClass */
-  /* private */ override def pushNewContainerScope(containerName: js.Any, kind: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def pushNewContainerScope(containerName: js.Any, kind: js.Any): js.Any = js.native
   
   /* CompleteClass */
   override def skip(element: ISyntaxElement): Unit = js.native
@@ -321,8 +321,8 @@ class GetScriptLexicalStructureWalker protected ()
   /* CompleteClass */
   override def visitModuleDeclaration(node: ModuleDeclarationSyntax): js.Any = js.native
   
-  /* CompleteClass */
-  /* private */ override def visitModuleDeclarationWorker(node: js.Any, names: js.Any, nameIndex: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def visitModuleDeclarationWorker(node: js.Any, names: js.Any, nameIndex: js.Any): js.Any = js.native
   
   /* CompleteClass */
   override def visitModuleNameModuleReference(node: ModuleNameModuleReferenceSyntax): js.Any = js.native
@@ -351,8 +351,8 @@ class GetScriptLexicalStructureWalker protected ()
   /* CompleteClass */
   override def visitOptionalNodeOrToken(nodeOrToken: ISyntaxNodeOrToken): Unit = js.native
   
-  /* CompleteClass */
-  /* private */ override def visitOptionalToken(token: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def visitOptionalToken(token: js.Any): js.Any = js.native
   
   /* CompleteClass */
   override def visitParameter(node: ParameterSyntax): js.Any = js.native
@@ -451,8 +451,7 @@ object GetScriptLexicalStructureWalker {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def getListsOfAllScriptLexicalStructure(
+  inline def getListsOfAllScriptLexicalStructure(
     items: js.Array[typings.typescriptServices.TypeScript.Services.NavigateToItem],
     fileName: String,
     unit: SourceUnitSyntax

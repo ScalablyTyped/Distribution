@@ -17,31 +17,23 @@ trait MKSpinnerProperties
 }
 object MKSpinnerProperties {
   
-  @scala.inline
-  def apply(): MKSpinnerProperties = {
+  inline def apply(): MKSpinnerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MKSpinnerProperties]
   }
   
-  @scala.inline
-  implicit class MKSpinnerPropertiesMutableBuilder[Self <: MKSpinnerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: MKSpinnerProperties](x: Self) {
     
-    @scala.inline
-    def setSpinnerAniDuration(value: Double): Self = StObject.set(x, "spinnerAniDuration", value.asInstanceOf[js.Any])
+    inline def setSpinnerAniDuration(value: Double): Self = StObject.set(x, "spinnerAniDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpinnerAniDurationUndefined: Self = StObject.set(x, "spinnerAniDuration", js.undefined)
+    inline def setSpinnerAniDurationUndefined: Self = StObject.set(x, "spinnerAniDuration", js.undefined)
     
-    @scala.inline
-    def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
+    inline def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
+    inline def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
     
-    @scala.inline
-    def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+    inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
+    inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
   }
 }

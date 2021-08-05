@@ -15,19 +15,15 @@ trait TypeofPrint extends StObject {
 }
 object TypeofPrint {
   
-  @scala.inline
-  def apply(Locale: js.Any, fn: Print): TypeofPrint = {
+  inline def apply(Locale: js.Any, fn: Print): TypeofPrint = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofPrint]
   }
   
-  @scala.inline
-  implicit class TypeofPrintMutableBuilder[Self <: TypeofPrint] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofPrint](x: Self) {
     
-    @scala.inline
-    def setFn(value: Print): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Print): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

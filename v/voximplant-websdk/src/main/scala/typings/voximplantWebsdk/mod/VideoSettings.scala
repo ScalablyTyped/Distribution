@@ -56,67 +56,47 @@ trait VideoSettings extends StObject {
 }
 object VideoSettings {
   
-  @scala.inline
-  def apply(): VideoSettings = {
+  inline def apply(): VideoSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VideoSettings]
   }
   
-  @scala.inline
-  implicit class VideoSettingsMutableBuilder[Self <: VideoSettings] (val x: Self) extends AnyVal {
+  extension [Self <: VideoSettings](x: Self) {
     
-    @scala.inline
-    def setAspectRatio(value: Double | js.Any): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
+    inline def setAspectRatio(value: Double | js.Any): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAspectRatioUndefined: Self = StObject.set(x, "aspectRatio", js.undefined)
+    inline def setAspectRatioUndefined: Self = StObject.set(x, "aspectRatio", js.undefined)
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
+    inline def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
     
-    @scala.inline
-    def setFacingMode(value: String | js.Any): Self = StObject.set(x, "facingMode", value.asInstanceOf[js.Any])
+    inline def setFacingMode(value: String | js.Any): Self = StObject.set(x, "facingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacingModeUndefined: Self = StObject.set(x, "facingMode", js.undefined)
+    inline def setFacingModeUndefined: Self = StObject.set(x, "facingMode", js.undefined)
     
-    @scala.inline
-    def setFrameRate(value: Double | js.Any): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
+    inline def setFrameRate(value: Double | js.Any): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameRateUndefined: Self = StObject.set(x, "frameRate", js.undefined)
+    inline def setFrameRateUndefined: Self = StObject.set(x, "frameRate", js.undefined)
     
-    @scala.inline
-    def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
+    inline def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double | js.Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double | js.Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setMandatory(value: js.Object): Self = StObject.set(x, "mandatory", value.asInstanceOf[js.Any])
+    inline def setMandatory(value: js.Object): Self = StObject.set(x, "mandatory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMandatoryUndefined: Self = StObject.set(x, "mandatory", js.undefined)
+    inline def setMandatoryUndefined: Self = StObject.set(x, "mandatory", js.undefined)
     
-    @scala.inline
-    def setOptional(value: js.Object): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    inline def setOptional(value: js.Object): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
+    inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double | js.Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double | js.Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WindowsStartMenuModeType extends StObject
 object WindowsStartMenuModeType {
   
-  @scala.inline
-  def fullScreen: typings.microsoftGraph.microsoftGraphStrings.fullScreen = "fullScreen".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.fullScreen]
+  inline def fullScreen: typings.microsoftGraph.microsoftGraphStrings.fullScreen = "fullScreen".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.fullScreen]
   
-  @scala.inline
-  def nonFullScreen: typings.microsoftGraph.microsoftGraphStrings.nonFullScreen = "nonFullScreen".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.nonFullScreen]
+  inline def nonFullScreen: typings.microsoftGraph.microsoftGraphStrings.nonFullScreen = "nonFullScreen".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.nonFullScreen]
   
-  @scala.inline
-  def userDefined: typings.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.userDefined]
+  inline def userDefined: typings.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.userDefined]
 }

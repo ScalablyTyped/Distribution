@@ -23,17 +23,14 @@ object nimbleEmojiMod extends Shortcut {
   }
   object NimbleEmojiProps {
     
-    @scala.inline
-    def apply(data: Data, emoji: String | EmojiData, size: Double): NimbleEmojiProps = {
+    inline def apply(data: Data, emoji: String | EmojiData, size: Double): NimbleEmojiProps = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], emoji = emoji.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[NimbleEmojiProps]
     }
     
-    @scala.inline
-    implicit class NimbleEmojiPropsMutableBuilder[Self <: NimbleEmojiProps] (val x: Self) extends AnyVal {
+    extension [Self <: NimbleEmojiProps](x: Self) {
       
-      @scala.inline
-      def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
   }
   

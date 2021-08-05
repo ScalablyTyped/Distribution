@@ -12,19 +12,15 @@ trait PartialStyleRulesTableHea extends StObject {
 }
 object PartialStyleRulesTableHea {
   
-  @scala.inline
-  def apply(): PartialStyleRulesTableHea = {
+  inline def apply(): PartialStyleRulesTableHea = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialStyleRulesTableHea]
   }
   
-  @scala.inline
-  implicit class PartialStyleRulesTableHeaMutableBuilder[Self <: PartialStyleRulesTableHea] (val x: Self) extends AnyVal {
+  extension [Self <: PartialStyleRulesTableHea](x: Self) {
     
-    @scala.inline
-    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

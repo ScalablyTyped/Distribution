@@ -27,25 +27,19 @@ trait NFSVolumeSource extends StObject {
 }
 object NFSVolumeSource {
   
-  @scala.inline
-  def apply(path: Input[String], server: Input[String]): NFSVolumeSource = {
+  inline def apply(path: Input[String], server: Input[String]): NFSVolumeSource = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any])
     __obj.asInstanceOf[NFSVolumeSource]
   }
   
-  @scala.inline
-  implicit class NFSVolumeSourceMutableBuilder[Self <: NFSVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: NFSVolumeSource](x: Self) {
     
-    @scala.inline
-    def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
-    @scala.inline
-    def setServer(value: Input[String]): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    inline def setServer(value: Input[String]): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
   }
 }

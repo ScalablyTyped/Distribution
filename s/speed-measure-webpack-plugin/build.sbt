@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "speed-measure-webpack-plugin"
-version := "1.3-dt-20200427Z-fe6eca"
+version := "1.3-dt-20200427Z-586062"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

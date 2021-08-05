@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoTabStopType extends StObject
 object MsoTabStopType {
   
-  @scala.inline
-  def msoTabStopCenter: `2` = 2.asInstanceOf[`2`]
+  inline def msoTabStopCenter: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoTabStopDecimal: `4` = 4.asInstanceOf[`4`]
+  inline def msoTabStopDecimal: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def msoTabStopLeft: `1` = 1.asInstanceOf[`1`]
+  inline def msoTabStopLeft: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoTabStopMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def msoTabStopMixed: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def msoTabStopRight: `3` = 3.asInstanceOf[`3`]
+  inline def msoTabStopRight: `3` = 3.asInstanceOf[`3`]
 }

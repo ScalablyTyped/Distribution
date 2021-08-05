@@ -16,19 +16,15 @@ trait RequestContextDebugInfo extends StObject {
 }
 object RequestContextDebugInfo {
   
-  @scala.inline
-  def apply(pendingStatements: js.Array[String]): RequestContextDebugInfo = {
+  inline def apply(pendingStatements: js.Array[String]): RequestContextDebugInfo = {
     val __obj = js.Dynamic.literal(pendingStatements = pendingStatements.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestContextDebugInfo]
   }
   
-  @scala.inline
-  implicit class RequestContextDebugInfoMutableBuilder[Self <: RequestContextDebugInfo] (val x: Self) extends AnyVal {
+  extension [Self <: RequestContextDebugInfo](x: Self) {
     
-    @scala.inline
-    def setPendingStatements(value: js.Array[String]): Self = StObject.set(x, "pendingStatements", value.asInstanceOf[js.Any])
+    inline def setPendingStatements(value: js.Array[String]): Self = StObject.set(x, "pendingStatements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingStatementsVarargs(value: String*): Self = StObject.set(x, "pendingStatements", js.Array(value :_*))
+    inline def setPendingStatementsVarargs(value: String*): Self = StObject.set(x, "pendingStatements", js.Array(value :_*))
   }
 }

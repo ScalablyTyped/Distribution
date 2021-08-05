@@ -38,8 +38,7 @@ object optionsMod {
     var value: Double | String | Boolean = js.native
   }
   
-  @scala.inline
-  def unparseOptions(options: Options): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("unparseOptions")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def unparseOptions(options: Options): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("unparseOptions")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   type Args = StringDictionary[Double | String | Boolean]
   

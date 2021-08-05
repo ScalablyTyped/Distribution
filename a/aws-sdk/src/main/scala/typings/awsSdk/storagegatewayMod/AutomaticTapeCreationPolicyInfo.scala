@@ -15,28 +15,21 @@ trait AutomaticTapeCreationPolicyInfo extends StObject {
 }
 object AutomaticTapeCreationPolicyInfo {
   
-  @scala.inline
-  def apply(): AutomaticTapeCreationPolicyInfo = {
+  inline def apply(): AutomaticTapeCreationPolicyInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutomaticTapeCreationPolicyInfo]
   }
   
-  @scala.inline
-  implicit class AutomaticTapeCreationPolicyInfoMutableBuilder[Self <: AutomaticTapeCreationPolicyInfo] (val x: Self) extends AnyVal {
+  extension [Self <: AutomaticTapeCreationPolicyInfo](x: Self) {
     
-    @scala.inline
-    def setAutomaticTapeCreationRules(value: AutomaticTapeCreationRules): Self = StObject.set(x, "AutomaticTapeCreationRules", value.asInstanceOf[js.Any])
+    inline def setAutomaticTapeCreationRules(value: AutomaticTapeCreationRules): Self = StObject.set(x, "AutomaticTapeCreationRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutomaticTapeCreationRulesUndefined: Self = StObject.set(x, "AutomaticTapeCreationRules", js.undefined)
+    inline def setAutomaticTapeCreationRulesUndefined: Self = StObject.set(x, "AutomaticTapeCreationRules", js.undefined)
     
-    @scala.inline
-    def setAutomaticTapeCreationRulesVarargs(value: AutomaticTapeCreationRule*): Self = StObject.set(x, "AutomaticTapeCreationRules", js.Array(value :_*))
+    inline def setAutomaticTapeCreationRulesVarargs(value: AutomaticTapeCreationRule*): Self = StObject.set(x, "AutomaticTapeCreationRules", js.Array(value :_*))
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
+    inline def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
   }
 }

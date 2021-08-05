@@ -31,31 +31,23 @@ trait SchemaSpeakerDiarizationConfig extends StObject {
 }
 object SchemaSpeakerDiarizationConfig {
   
-  @scala.inline
-  def apply(): SchemaSpeakerDiarizationConfig = {
+  inline def apply(): SchemaSpeakerDiarizationConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSpeakerDiarizationConfig]
   }
   
-  @scala.inline
-  implicit class SchemaSpeakerDiarizationConfigMutableBuilder[Self <: SchemaSpeakerDiarizationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSpeakerDiarizationConfig](x: Self) {
     
-    @scala.inline
-    def setEnableSpeakerDiarization(value: Boolean): Self = StObject.set(x, "enableSpeakerDiarization", value.asInstanceOf[js.Any])
+    inline def setEnableSpeakerDiarization(value: Boolean): Self = StObject.set(x, "enableSpeakerDiarization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableSpeakerDiarizationUndefined: Self = StObject.set(x, "enableSpeakerDiarization", js.undefined)
+    inline def setEnableSpeakerDiarizationUndefined: Self = StObject.set(x, "enableSpeakerDiarization", js.undefined)
     
-    @scala.inline
-    def setMaxSpeakerCount(value: Double): Self = StObject.set(x, "maxSpeakerCount", value.asInstanceOf[js.Any])
+    inline def setMaxSpeakerCount(value: Double): Self = StObject.set(x, "maxSpeakerCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSpeakerCountUndefined: Self = StObject.set(x, "maxSpeakerCount", js.undefined)
+    inline def setMaxSpeakerCountUndefined: Self = StObject.set(x, "maxSpeakerCount", js.undefined)
     
-    @scala.inline
-    def setMinSpeakerCount(value: Double): Self = StObject.set(x, "minSpeakerCount", value.asInstanceOf[js.Any])
+    inline def setMinSpeakerCount(value: Double): Self = StObject.set(x, "minSpeakerCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinSpeakerCountUndefined: Self = StObject.set(x, "minSpeakerCount", js.undefined)
+    inline def setMinSpeakerCountUndefined: Self = StObject.set(x, "minSpeakerCount", js.undefined)
   }
 }

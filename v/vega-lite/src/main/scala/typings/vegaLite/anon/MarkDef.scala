@@ -24,8 +24,7 @@ trait MarkDef extends StObject {
 }
 object MarkDef {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     channel: PositionChannel | PolarPositionChannel,
     config: typings.vegaLite.srcConfigMod.Config[SignalRef],
     fieldDef: typings.vegaLite.channeldefMod.FieldDef[String, js.Any],
@@ -36,22 +35,16 @@ object MarkDef {
     __obj.asInstanceOf[MarkDef]
   }
   
-  @scala.inline
-  implicit class MarkDefMutableBuilder[Self <: MarkDef] (val x: Self) extends AnyVal {
+  extension [Self <: MarkDef](x: Self) {
     
-    @scala.inline
-    def setChannel(value: PositionChannel | PolarPositionChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: PositionChannel | PolarPositionChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfig(value: typings.vegaLite.srcConfigMod.Config[SignalRef]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: typings.vegaLite.srcConfigMod.Config[SignalRef]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldDef(value: typings.vegaLite.channeldefMod.FieldDef[String, js.Any]): Self = StObject.set(x, "fieldDef", value.asInstanceOf[js.Any])
+    inline def setFieldDef(value: typings.vegaLite.channeldefMod.FieldDef[String, js.Any]): Self = StObject.set(x, "fieldDef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkDef(value: typings.vegaLite.srcMarkMod.MarkDef[Mark, ExprRef | SignalRef]): Self = StObject.set(x, "markDef", value.asInstanceOf[js.Any])
+    inline def setMarkDef(value: typings.vegaLite.srcMarkMod.MarkDef[Mark, ExprRef | SignalRef]): Self = StObject.set(x, "markDef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRef(value: VgValueRef): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: VgValueRef): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
   }
 }

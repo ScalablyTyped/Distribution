@@ -327,18 +327,14 @@ object streamMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def from(iterable: AsyncIterable[js.Any]): Readable = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(iterable.asInstanceOf[js.Any]).asInstanceOf[Readable]
-    @scala.inline
-    def from(iterable: AsyncIterable[js.Any], options: ReadableOptions): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(iterable.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Readable]
+    inline def from(iterable: AsyncIterable[js.Any]): Readable = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(iterable.asInstanceOf[js.Any]).asInstanceOf[Readable]
+    inline def from(iterable: AsyncIterable[js.Any], options: ReadableOptions): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(iterable.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Readable]
     /**
       * A utility method for creating Readable Streams out of iterators.
       */
     /* static member */
-    @scala.inline
-    def from(iterable: Iterable[js.Any]): Readable = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(iterable.asInstanceOf[js.Any]).asInstanceOf[Readable]
-    @scala.inline
-    def from(iterable: Iterable[js.Any], options: ReadableOptions): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(iterable.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Readable]
+    inline def from(iterable: Iterable[js.Any]): Readable = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(iterable.asInstanceOf[js.Any]).asInstanceOf[Readable]
+    inline def from(iterable: Iterable[js.Any], options: ReadableOptions): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(iterable.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Readable]
   }
   
   @JSImport("stream", "Stream")
@@ -524,83 +520,65 @@ object streamMod {
     ): Boolean = js.native
   }
   
-  @scala.inline
-  def finished(stream: ReadWriteStream, callback: js.Function1[/* err */ js.UndefOr[ErrnoException | Null], Unit]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("finished")(stream.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
-  @scala.inline
-  def finished(
+  inline def finished(stream: ReadWriteStream, callback: js.Function1[/* err */ js.UndefOr[ErrnoException | Null], Unit]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("finished")(stream.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def finished(
     stream: ReadWriteStream,
     options: FinishedOptions,
     callback: js.Function1[/* err */ js.UndefOr[ErrnoException | Null], Unit]
   ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("finished")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
-  @scala.inline
-  def finished(stream: ReadableStream, callback: js.Function1[/* err */ js.UndefOr[ErrnoException | Null], Unit]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("finished")(stream.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
-  @scala.inline
-  def finished(
+  inline def finished(stream: ReadableStream, callback: js.Function1[/* err */ js.UndefOr[ErrnoException | Null], Unit]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("finished")(stream.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def finished(
     stream: ReadableStream,
     options: FinishedOptions,
     callback: js.Function1[/* err */ js.UndefOr[ErrnoException | Null], Unit]
   ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("finished")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
-  @scala.inline
-  def finished(stream: WritableStream, callback: js.Function1[/* err */ js.UndefOr[ErrnoException | Null], Unit]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("finished")(stream.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
-  @scala.inline
-  def finished(
+  inline def finished(stream: WritableStream, callback: js.Function1[/* err */ js.UndefOr[ErrnoException | Null], Unit]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("finished")(stream.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def finished(
     stream: WritableStream,
     options: FinishedOptions,
     callback: js.Function1[/* err */ js.UndefOr[ErrnoException | Null], Unit]
   ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("finished")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
-  @scala.inline
-  def pipeline(
+  inline def pipeline(
     stream1: ReadableStream,
     stream2: ReadWriteStream,
     streams: (ReadWriteStream | WritableStream | (js.Function1[/* err */ ErrnoException | Null, Unit]))*
   ): WritableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("pipeline")(stream1.asInstanceOf[js.Any], stream2.asInstanceOf[js.Any], streams.asInstanceOf[js.Any])).asInstanceOf[WritableStream]
-  @scala.inline
-  def pipeline(
+  inline def pipeline(
     stream1: ReadableStream,
     stream2: WritableStream,
     streams: (ReadWriteStream | WritableStream | (js.Function1[/* err */ ErrnoException | Null, Unit]))*
   ): WritableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("pipeline")(stream1.asInstanceOf[js.Any], stream2.asInstanceOf[js.Any], streams.asInstanceOf[js.Any])).asInstanceOf[WritableStream]
-  @scala.inline
-  def pipeline(streams: js.Array[ReadableStream | WritableStream | ReadWriteStream]): WritableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("pipeline")(streams.asInstanceOf[js.Any]).asInstanceOf[WritableStream]
-  @scala.inline
-  def pipeline(
+  inline def pipeline(streams: js.Array[ReadableStream | WritableStream | ReadWriteStream]): WritableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("pipeline")(streams.asInstanceOf[js.Any]).asInstanceOf[WritableStream]
+  inline def pipeline(
     streams: js.Array[ReadableStream | WritableStream | ReadWriteStream],
     callback: js.Function1[/* err */ ErrnoException | Null, Unit]
   ): WritableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("pipeline")(streams.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[WritableStream]
-  @scala.inline
-  def pipeline[T /* <: WritableStream */](stream1: ReadableStream, stream2: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pipeline")(stream1.asInstanceOf[js.Any], stream2.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def pipeline[T /* <: WritableStream */](stream1: ReadableStream, stream2: T, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pipeline")(stream1.asInstanceOf[js.Any], stream2.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def pipeline[T /* <: WritableStream */](stream1: ReadableStream, stream2: ReadWriteStream, stream3: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pipeline")(stream1.asInstanceOf[js.Any], stream2.asInstanceOf[js.Any], stream3.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def pipeline[T /* <: WritableStream */](
+  inline def pipeline[T /* <: WritableStream */](stream1: ReadableStream, stream2: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pipeline")(stream1.asInstanceOf[js.Any], stream2.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def pipeline[T /* <: WritableStream */](stream1: ReadableStream, stream2: T, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pipeline")(stream1.asInstanceOf[js.Any], stream2.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def pipeline[T /* <: WritableStream */](stream1: ReadableStream, stream2: ReadWriteStream, stream3: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pipeline")(stream1.asInstanceOf[js.Any], stream2.asInstanceOf[js.Any], stream3.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def pipeline[T /* <: WritableStream */](
     stream1: ReadableStream,
     stream2: ReadWriteStream,
     stream3: T,
     callback: js.Function1[/* err */ ErrnoException | Null, Unit]
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pipeline")(stream1.asInstanceOf[js.Any], stream2.asInstanceOf[js.Any], stream3.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def pipeline[T /* <: WritableStream */](stream1: ReadableStream, stream2: ReadWriteStream, stream3: ReadWriteStream, stream4: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pipeline")(stream1.asInstanceOf[js.Any], stream2.asInstanceOf[js.Any], stream3.asInstanceOf[js.Any], stream4.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def pipeline[T /* <: WritableStream */](
+  inline def pipeline[T /* <: WritableStream */](stream1: ReadableStream, stream2: ReadWriteStream, stream3: ReadWriteStream, stream4: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pipeline")(stream1.asInstanceOf[js.Any], stream2.asInstanceOf[js.Any], stream3.asInstanceOf[js.Any], stream4.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def pipeline[T /* <: WritableStream */](
     stream1: ReadableStream,
     stream2: ReadWriteStream,
     stream3: ReadWriteStream,
     stream4: T,
     callback: js.Function1[/* err */ ErrnoException | Null, Unit]
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pipeline")(stream1.asInstanceOf[js.Any], stream2.asInstanceOf[js.Any], stream3.asInstanceOf[js.Any], stream4.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def pipeline[T /* <: WritableStream */](
+  inline def pipeline[T /* <: WritableStream */](
     stream1: ReadableStream,
     stream2: ReadWriteStream,
     stream3: ReadWriteStream,
     stream4: ReadWriteStream,
     stream5: T
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pipeline")(stream1.asInstanceOf[js.Any], stream2.asInstanceOf[js.Any], stream3.asInstanceOf[js.Any], stream4.asInstanceOf[js.Any], stream5.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def pipeline[T /* <: WritableStream */](
+  inline def pipeline[T /* <: WritableStream */](
     stream1: ReadableStream,
     stream2: ReadWriteStream,
     stream3: ReadWriteStream,
@@ -674,35 +652,26 @@ object streamMod {
   }
   object DuplexOptions {
     
-    @scala.inline
-    def apply(): DuplexOptions = {
+    inline def apply(): DuplexOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DuplexOptions]
     }
     
-    @scala.inline
-    implicit class DuplexOptionsMutableBuilder[Self <: DuplexOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DuplexOptions](x: Self) {
       
-      @scala.inline
-      def setAllowHalfOpen(value: Boolean): Self = StObject.set(x, "allowHalfOpen", value.asInstanceOf[js.Any])
+      inline def setAllowHalfOpen(value: Boolean): Self = StObject.set(x, "allowHalfOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowHalfOpenUndefined: Self = StObject.set(x, "allowHalfOpen", js.undefined)
+      inline def setAllowHalfOpenUndefined: Self = StObject.set(x, "allowHalfOpen", js.undefined)
       
-      @scala.inline
-      def setDecodeStrings(value: Boolean): Self = StObject.set(x, "decodeStrings", value.asInstanceOf[js.Any])
+      inline def setDecodeStrings(value: Boolean): Self = StObject.set(x, "decodeStrings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecodeStringsUndefined: Self = StObject.set(x, "decodeStrings", js.undefined)
+      inline def setDecodeStringsUndefined: Self = StObject.set(x, "decodeStrings", js.undefined)
       
-      @scala.inline
-      def setDefaultEncoding(value: BufferEncoding): Self = StObject.set(x, "defaultEncoding", value.asInstanceOf[js.Any])
+      inline def setDefaultEncoding(value: BufferEncoding): Self = StObject.set(x, "defaultEncoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultEncodingUndefined: Self = StObject.set(x, "defaultEncoding", js.undefined)
+      inline def setDefaultEncodingUndefined: Self = StObject.set(x, "defaultEncoding", js.undefined)
       
-      @scala.inline
-      def setDestroy(
+      inline def setDestroy(
         value: js.ThisFunction2[
               /* this */ Duplex, 
               /* error */ Error | Null, 
@@ -711,17 +680,13 @@ object streamMod {
             ]
       ): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+      inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
-      @scala.inline
-      def setEmitClose(value: Boolean): Self = StObject.set(x, "emitClose", value.asInstanceOf[js.Any])
+      inline def setEmitClose(value: Boolean): Self = StObject.set(x, "emitClose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmitCloseUndefined: Self = StObject.set(x, "emitClose", js.undefined)
+      inline def setEmitCloseUndefined: Self = StObject.set(x, "emitClose", js.undefined)
       
-      @scala.inline
-      def setFinal(
+      inline def setFinal(
         value: js.ThisFunction1[
               (/* this */ Duplex) | (/* this */ Writable), 
               /* callback */ js.Function1[js.UndefOr[Error | Null], Unit], 
@@ -729,47 +694,33 @@ object streamMod {
             ]
       ): Self = StObject.set(x, "final", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFinalUndefined: Self = StObject.set(x, "final", js.undefined)
+      inline def setFinalUndefined: Self = StObject.set(x, "final", js.undefined)
       
-      @scala.inline
-      def setRead(value: js.ThisFunction1[/* this */ Duplex, /* size */ Double, Unit]): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+      inline def setRead(value: js.ThisFunction1[/* this */ Duplex, /* size */ Double, Unit]): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
+      inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
       
-      @scala.inline
-      def setReadableHighWaterMark(value: Double): Self = StObject.set(x, "readableHighWaterMark", value.asInstanceOf[js.Any])
+      inline def setReadableHighWaterMark(value: Double): Self = StObject.set(x, "readableHighWaterMark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadableHighWaterMarkUndefined: Self = StObject.set(x, "readableHighWaterMark", js.undefined)
+      inline def setReadableHighWaterMarkUndefined: Self = StObject.set(x, "readableHighWaterMark", js.undefined)
       
-      @scala.inline
-      def setReadableObjectMode(value: Boolean): Self = StObject.set(x, "readableObjectMode", value.asInstanceOf[js.Any])
+      inline def setReadableObjectMode(value: Boolean): Self = StObject.set(x, "readableObjectMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadableObjectModeUndefined: Self = StObject.set(x, "readableObjectMode", js.undefined)
+      inline def setReadableObjectModeUndefined: Self = StObject.set(x, "readableObjectMode", js.undefined)
       
-      @scala.inline
-      def setWritableCorked(value: Double): Self = StObject.set(x, "writableCorked", value.asInstanceOf[js.Any])
+      inline def setWritableCorked(value: Double): Self = StObject.set(x, "writableCorked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWritableCorkedUndefined: Self = StObject.set(x, "writableCorked", js.undefined)
+      inline def setWritableCorkedUndefined: Self = StObject.set(x, "writableCorked", js.undefined)
       
-      @scala.inline
-      def setWritableHighWaterMark(value: Double): Self = StObject.set(x, "writableHighWaterMark", value.asInstanceOf[js.Any])
+      inline def setWritableHighWaterMark(value: Double): Self = StObject.set(x, "writableHighWaterMark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWritableHighWaterMarkUndefined: Self = StObject.set(x, "writableHighWaterMark", js.undefined)
+      inline def setWritableHighWaterMarkUndefined: Self = StObject.set(x, "writableHighWaterMark", js.undefined)
       
-      @scala.inline
-      def setWritableObjectMode(value: Boolean): Self = StObject.set(x, "writableObjectMode", value.asInstanceOf[js.Any])
+      inline def setWritableObjectMode(value: Boolean): Self = StObject.set(x, "writableObjectMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWritableObjectModeUndefined: Self = StObject.set(x, "writableObjectMode", js.undefined)
+      inline def setWritableObjectModeUndefined: Self = StObject.set(x, "writableObjectMode", js.undefined)
       
-      @scala.inline
-      def setWrite(
+      inline def setWrite(
         value: js.ThisFunction3[
               (/* this */ Duplex) | (/* this */ Writable), 
               /* chunk */ js.Any, 
@@ -779,11 +730,9 @@ object streamMod {
             ]
       ): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
+      inline def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
       
-      @scala.inline
-      def setWritev(
+      inline def setWritev(
         value: js.ThisFunction2[
               (/* this */ Duplex) | (/* this */ Writable), 
               /* chunks */ js.Array[Chunk], 
@@ -792,8 +741,7 @@ object streamMod {
             ]
       ): Self = StObject.set(x, "writev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWritevUndefined: Self = StObject.set(x, "writev", js.undefined)
+      inline def setWritevUndefined: Self = StObject.set(x, "writev", js.undefined)
     }
   }
   
@@ -807,32 +755,24 @@ object streamMod {
   }
   object FinishedOptions {
     
-    @scala.inline
-    def apply(): FinishedOptions = {
+    inline def apply(): FinishedOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FinishedOptions]
     }
     
-    @scala.inline
-    implicit class FinishedOptionsMutableBuilder[Self <: FinishedOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FinishedOptions](x: Self) {
       
-      @scala.inline
-      def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setReadable(value: Boolean): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
+      inline def setReadable(value: Boolean): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadableUndefined: Self = StObject.set(x, "readable", js.undefined)
+      inline def setReadableUndefined: Self = StObject.set(x, "readable", js.undefined)
       
-      @scala.inline
-      def setWritable(value: Boolean): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
+      inline def setWritable(value: Boolean): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWritableUndefined: Self = StObject.set(x, "writable", js.undefined)
+      inline def setWritableUndefined: Self = StObject.set(x, "writable", js.undefined)
     }
   }
   
@@ -848,26 +788,20 @@ object streamMod {
   }
   object Pipe {
     
-    @scala.inline
-    def apply(close: () => Unit, hasRef: () => Boolean, ref: () => Unit, unref: () => Unit): Pipe = {
+    inline def apply(close: () => Unit, hasRef: () => Boolean, ref: () => Unit, unref: () => Unit): Pipe = {
       val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), hasRef = js.Any.fromFunction0(hasRef), ref = js.Any.fromFunction0(ref), unref = js.Any.fromFunction0(unref))
       __obj.asInstanceOf[Pipe]
     }
     
-    @scala.inline
-    implicit class PipeMutableBuilder[Self <: Pipe] (val x: Self) extends AnyVal {
+    extension [Self <: Pipe](x: Self) {
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasRef(value: () => Boolean): Self = StObject.set(x, "hasRef", js.Any.fromFunction0(value))
+      inline def setHasRef(value: () => Boolean): Self = StObject.set(x, "hasRef", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRef(value: () => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction0(value))
+      inline def setRef(value: () => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUnref(value: () => Unit): Self = StObject.set(x, "unref", js.Any.fromFunction0(value))
+      inline def setUnref(value: () => Unit): Self = StObject.set(x, "unref", js.Any.fromFunction0(value))
     }
   }
   
@@ -894,23 +828,18 @@ object streamMod {
   }
   object ReadableOptions {
     
-    @scala.inline
-    def apply(): ReadableOptions = {
+    inline def apply(): ReadableOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReadableOptions]
     }
     
-    @scala.inline
-    implicit class ReadableOptionsMutableBuilder[Self <: ReadableOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ReadableOptions](x: Self) {
       
-      @scala.inline
-      def setAutoDestroy(value: Boolean): Self = StObject.set(x, "autoDestroy", value.asInstanceOf[js.Any])
+      inline def setAutoDestroy(value: Boolean): Self = StObject.set(x, "autoDestroy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoDestroyUndefined: Self = StObject.set(x, "autoDestroy", js.undefined)
+      inline def setAutoDestroyUndefined: Self = StObject.set(x, "autoDestroy", js.undefined)
       
-      @scala.inline
-      def setDestroy(
+      inline def setDestroy(
         value: js.ThisFunction2[
               /* this */ Readable, 
               /* error */ Error | Null, 
@@ -919,32 +848,23 @@ object streamMod {
             ]
       ): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+      inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
-      @scala.inline
-      def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
+      inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
+      inline def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
       
-      @scala.inline
-      def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
+      inline def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
+      inline def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
       
-      @scala.inline
-      def setRead(value: js.ThisFunction1[/* this */ Readable, /* size */ Double, Unit]): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+      inline def setRead(value: js.ThisFunction1[/* this */ Readable, /* size */ Double, Unit]): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
+      inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
     }
   }
   
@@ -1011,17 +931,14 @@ object streamMod {
   }
   object TransformOptions {
     
-    @scala.inline
-    def apply(): TransformOptions = {
+    inline def apply(): TransformOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TransformOptions]
     }
     
-    @scala.inline
-    implicit class TransformOptionsMutableBuilder[Self <: TransformOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TransformOptions](x: Self) {
       
-      @scala.inline
-      def setDestroy(
+      inline def setDestroy(
         value: js.ThisFunction2[
               /* this */ Transform, 
               /* error */ Error | Null, 
@@ -1030,11 +947,9 @@ object streamMod {
             ]
       ): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+      inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
-      @scala.inline
-      def setFinal(
+      inline def setFinal(
         value: js.ThisFunction1[
               /* this */ Transform, 
               /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
@@ -1042,23 +957,17 @@ object streamMod {
             ]
       ): Self = StObject.set(x, "final", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFinalUndefined: Self = StObject.set(x, "final", js.undefined)
+      inline def setFinalUndefined: Self = StObject.set(x, "final", js.undefined)
       
-      @scala.inline
-      def setFlush(value: js.ThisFunction1[/* this */ Transform, /* callback */ TransformCallback, Unit]): Self = StObject.set(x, "flush", value.asInstanceOf[js.Any])
+      inline def setFlush(value: js.ThisFunction1[/* this */ Transform, /* callback */ TransformCallback, Unit]): Self = StObject.set(x, "flush", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlushUndefined: Self = StObject.set(x, "flush", js.undefined)
+      inline def setFlushUndefined: Self = StObject.set(x, "flush", js.undefined)
       
-      @scala.inline
-      def setRead(value: js.ThisFunction1[/* this */ Transform, /* size */ Double, Unit]): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+      inline def setRead(value: js.ThisFunction1[/* this */ Transform, /* size */ Double, Unit]): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
+      inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
       
-      @scala.inline
-      def setTransform(
+      inline def setTransform(
         value: js.ThisFunction3[
               /* this */ Transform, 
               /* chunk */ js.Any, 
@@ -1068,11 +977,9 @@ object streamMod {
             ]
       ): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       
-      @scala.inline
-      def setWrite(
+      inline def setWrite(
         value: js.ThisFunction3[
               /* this */ Transform, 
               /* chunk */ js.Any, 
@@ -1082,11 +989,9 @@ object streamMod {
             ]
       ): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
+      inline def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
       
-      @scala.inline
-      def setWritev(
+      inline def setWritev(
         value: js.ThisFunction2[
               /* this */ Transform, 
               /* chunks */ js.Array[Chunk], 
@@ -1095,8 +1000,7 @@ object streamMod {
             ]
       ): Self = StObject.set(x, "writev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWritevUndefined: Self = StObject.set(x, "writev", js.undefined)
+      inline def setWritevUndefined: Self = StObject.set(x, "writev", js.undefined)
     }
   }
   
@@ -1152,35 +1056,26 @@ object streamMod {
   }
   object WritableOptions {
     
-    @scala.inline
-    def apply(): WritableOptions = {
+    inline def apply(): WritableOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WritableOptions]
     }
     
-    @scala.inline
-    implicit class WritableOptionsMutableBuilder[Self <: WritableOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WritableOptions](x: Self) {
       
-      @scala.inline
-      def setAutoDestroy(value: Boolean): Self = StObject.set(x, "autoDestroy", value.asInstanceOf[js.Any])
+      inline def setAutoDestroy(value: Boolean): Self = StObject.set(x, "autoDestroy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoDestroyUndefined: Self = StObject.set(x, "autoDestroy", js.undefined)
+      inline def setAutoDestroyUndefined: Self = StObject.set(x, "autoDestroy", js.undefined)
       
-      @scala.inline
-      def setDecodeStrings(value: Boolean): Self = StObject.set(x, "decodeStrings", value.asInstanceOf[js.Any])
+      inline def setDecodeStrings(value: Boolean): Self = StObject.set(x, "decodeStrings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecodeStringsUndefined: Self = StObject.set(x, "decodeStrings", js.undefined)
+      inline def setDecodeStringsUndefined: Self = StObject.set(x, "decodeStrings", js.undefined)
       
-      @scala.inline
-      def setDefaultEncoding(value: BufferEncoding): Self = StObject.set(x, "defaultEncoding", value.asInstanceOf[js.Any])
+      inline def setDefaultEncoding(value: BufferEncoding): Self = StObject.set(x, "defaultEncoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultEncodingUndefined: Self = StObject.set(x, "defaultEncoding", js.undefined)
+      inline def setDefaultEncodingUndefined: Self = StObject.set(x, "defaultEncoding", js.undefined)
       
-      @scala.inline
-      def setDestroy(
+      inline def setDestroy(
         value: js.ThisFunction2[
               /* this */ Writable, 
               /* error */ Error | Null, 
@@ -1189,17 +1084,13 @@ object streamMod {
             ]
       ): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+      inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
-      @scala.inline
-      def setEmitClose(value: Boolean): Self = StObject.set(x, "emitClose", value.asInstanceOf[js.Any])
+      inline def setEmitClose(value: Boolean): Self = StObject.set(x, "emitClose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmitCloseUndefined: Self = StObject.set(x, "emitClose", js.undefined)
+      inline def setEmitCloseUndefined: Self = StObject.set(x, "emitClose", js.undefined)
       
-      @scala.inline
-      def setFinal(
+      inline def setFinal(
         value: js.ThisFunction1[
               /* this */ Writable, 
               /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
@@ -1207,23 +1098,17 @@ object streamMod {
             ]
       ): Self = StObject.set(x, "final", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFinalUndefined: Self = StObject.set(x, "final", js.undefined)
+      inline def setFinalUndefined: Self = StObject.set(x, "final", js.undefined)
       
-      @scala.inline
-      def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
+      inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
+      inline def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
       
-      @scala.inline
-      def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
+      inline def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
+      inline def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
       
-      @scala.inline
-      def setWrite(
+      inline def setWrite(
         value: js.ThisFunction3[
               /* this */ Writable, 
               /* chunk */ js.Any, 
@@ -1233,11 +1118,9 @@ object streamMod {
             ]
       ): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
+      inline def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
       
-      @scala.inline
-      def setWritev(
+      inline def setWritev(
         value: js.ThisFunction2[
               /* this */ Writable, 
               /* chunks */ js.Array[Chunk], 
@@ -1246,8 +1129,7 @@ object streamMod {
             ]
       ): Self = StObject.set(x, "writev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWritevUndefined: Self = StObject.set(x, "writev", js.undefined)
+      inline def setWritevUndefined: Self = StObject.set(x, "writev", js.undefined)
     }
   }
   

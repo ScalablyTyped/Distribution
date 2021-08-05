@@ -14,19 +14,15 @@ trait SecurityContext extends StObject {
 }
 object SecurityContext {
   
-  @scala.inline
-  def apply(): SecurityContext = {
+  inline def apply(): SecurityContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SecurityContext]
   }
   
-  @scala.inline
-  implicit class SecurityContextMutableBuilder[Self <: SecurityContext] (val x: Self) extends AnyVal {
+  extension [Self <: SecurityContext](x: Self) {
     
-    @scala.inline
-    def setRunAsUser(value: Double): Self = StObject.set(x, "runAsUser", value.asInstanceOf[js.Any])
+    inline def setRunAsUser(value: Double): Self = StObject.set(x, "runAsUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunAsUserUndefined: Self = StObject.set(x, "runAsUser", js.undefined)
+    inline def setRunAsUserUndefined: Self = StObject.set(x, "runAsUser", js.undefined)
   }
 }

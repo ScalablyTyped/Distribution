@@ -10,17 +10,14 @@ trait UnsupportedSubscriptionChannel extends StObject {
 }
 object UnsupportedSubscriptionChannel {
   
-  @scala.inline
-  def apply(`type`: String): UnsupportedSubscriptionChannel = {
+  inline def apply(`type`: String): UnsupportedSubscriptionChannel = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnsupportedSubscriptionChannel]
   }
   
-  @scala.inline
-  implicit class UnsupportedSubscriptionChannelMutableBuilder[Self <: UnsupportedSubscriptionChannel] (val x: Self) extends AnyVal {
+  extension [Self <: UnsupportedSubscriptionChannel](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -32,31 +32,23 @@ trait SearchLabelsEndpoint extends StObject {
 }
 object SearchLabelsEndpoint {
   
-  @scala.inline
-  def apply(q: String, repository_id: Double): SearchLabelsEndpoint = {
+  inline def apply(q: String, repository_id: Double): SearchLabelsEndpoint = {
     val __obj = js.Dynamic.literal(q = q.asInstanceOf[js.Any], repository_id = repository_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchLabelsEndpoint]
   }
   
-  @scala.inline
-  implicit class SearchLabelsEndpointMutableBuilder[Self <: SearchLabelsEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: SearchLabelsEndpoint](x: Self) {
     
-    @scala.inline
-    def setOrder(value: desc | asc): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: desc | asc): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
-    @scala.inline
-    def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
+    inline def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepository_id(value: Double): Self = StObject.set(x, "repository_id", value.asInstanceOf[js.Any])
+    inline def setRepository_id(value: Double): Self = StObject.set(x, "repository_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSort(value: created | updated): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: created | updated): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
   }
 }

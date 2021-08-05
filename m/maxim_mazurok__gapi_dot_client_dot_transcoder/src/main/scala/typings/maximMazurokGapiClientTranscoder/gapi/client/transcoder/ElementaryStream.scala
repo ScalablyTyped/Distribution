@@ -20,37 +20,27 @@ trait ElementaryStream extends StObject {
 }
 object ElementaryStream {
   
-  @scala.inline
-  def apply(): ElementaryStream = {
+  inline def apply(): ElementaryStream = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ElementaryStream]
   }
   
-  @scala.inline
-  implicit class ElementaryStreamMutableBuilder[Self <: ElementaryStream] (val x: Self) extends AnyVal {
+  extension [Self <: ElementaryStream](x: Self) {
     
-    @scala.inline
-    def setAudioStream(value: AudioStream): Self = StObject.set(x, "audioStream", value.asInstanceOf[js.Any])
+    inline def setAudioStream(value: AudioStream): Self = StObject.set(x, "audioStream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioStreamUndefined: Self = StObject.set(x, "audioStream", js.undefined)
+    inline def setAudioStreamUndefined: Self = StObject.set(x, "audioStream", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setTextStream(value: TextStream): Self = StObject.set(x, "textStream", value.asInstanceOf[js.Any])
+    inline def setTextStream(value: TextStream): Self = StObject.set(x, "textStream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextStreamUndefined: Self = StObject.set(x, "textStream", js.undefined)
+    inline def setTextStreamUndefined: Self = StObject.set(x, "textStream", js.undefined)
     
-    @scala.inline
-    def setVideoStream(value: VideoStream): Self = StObject.set(x, "videoStream", value.asInstanceOf[js.Any])
+    inline def setVideoStream(value: VideoStream): Self = StObject.set(x, "videoStream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoStreamUndefined: Self = StObject.set(x, "videoStream", js.undefined)
+    inline def setVideoStreamUndefined: Self = StObject.set(x, "videoStream", js.undefined)
   }
 }

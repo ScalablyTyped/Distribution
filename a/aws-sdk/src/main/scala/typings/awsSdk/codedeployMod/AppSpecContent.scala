@@ -18,25 +18,19 @@ trait AppSpecContent extends StObject {
 }
 object AppSpecContent {
   
-  @scala.inline
-  def apply(): AppSpecContent = {
+  inline def apply(): AppSpecContent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AppSpecContent]
   }
   
-  @scala.inline
-  implicit class AppSpecContentMutableBuilder[Self <: AppSpecContent] (val x: Self) extends AnyVal {
+  extension [Self <: AppSpecContent](x: Self) {
     
-    @scala.inline
-    def setContent(value: RawStringContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: RawStringContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setSha256(value: RawStringSha256): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
+    inline def setSha256(value: RawStringSha256): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha256Undefined: Self = StObject.set(x, "sha256", js.undefined)
+    inline def setSha256Undefined: Self = StObject.set(x, "sha256", js.undefined)
   }
 }

@@ -18,19 +18,15 @@ trait GetDomainAdvancedSecurityOption extends StObject {
 }
 object GetDomainAdvancedSecurityOption {
   
-  @scala.inline
-  def apply(enabled: Boolean, internalUserDatabaseEnabled: Boolean): GetDomainAdvancedSecurityOption = {
+  inline def apply(enabled: Boolean, internalUserDatabaseEnabled: Boolean): GetDomainAdvancedSecurityOption = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], internalUserDatabaseEnabled = internalUserDatabaseEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDomainAdvancedSecurityOption]
   }
   
-  @scala.inline
-  implicit class GetDomainAdvancedSecurityOptionMutableBuilder[Self <: GetDomainAdvancedSecurityOption] (val x: Self) extends AnyVal {
+  extension [Self <: GetDomainAdvancedSecurityOption](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInternalUserDatabaseEnabled(value: Boolean): Self = StObject.set(x, "internalUserDatabaseEnabled", value.asInstanceOf[js.Any])
+    inline def setInternalUserDatabaseEnabled(value: Boolean): Self = StObject.set(x, "internalUserDatabaseEnabled", value.asInstanceOf[js.Any])
   }
 }

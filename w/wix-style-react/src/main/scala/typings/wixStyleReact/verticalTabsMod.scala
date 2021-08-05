@@ -23,20 +23,17 @@ object verticalTabsMod {
     @JSImport("wix-style-react/dist/es/src/VerticalTabs", "default.Footer")
     @js.native
     def Footer: SFC[js.Object] = js.native
-    @scala.inline
-    def Footer_=(x: SFC[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Footer")(x.asInstanceOf[js.Any])
+    inline def Footer_=(x: SFC[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Footer")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/es/src/VerticalTabs", "default.TabItem")
     @js.native
     def TabItem: Instantiable0[typings.wixStyleReact.verticalTabsItemMod.default] = js.native
-    @scala.inline
-    def TabItem_=(x: Instantiable0[typings.wixStyleReact.verticalTabsItemMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TabItem")(x.asInstanceOf[js.Any])
+    inline def TabItem_=(x: Instantiable0[typings.wixStyleReact.verticalTabsItemMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TabItem")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/es/src/VerticalTabs", "default.TabsGroup")
     @js.native
     def TabsGroup: SFC[typings.wixStyleReact.verticalTabsMod.TabsGroup] = js.native
-    @scala.inline
-    def TabsGroup_=(x: SFC[TabsGroup]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TabsGroup")(x.asInstanceOf[js.Any])
+    inline def TabsGroup_=(x: SFC[TabsGroup]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TabsGroup")(x.asInstanceOf[js.Any])
   }
   
   trait TabsGroup extends StObject {
@@ -45,20 +42,16 @@ object verticalTabsMod {
   }
   object TabsGroup {
     
-    @scala.inline
-    def apply(): TabsGroup = {
+    inline def apply(): TabsGroup = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TabsGroup]
     }
     
-    @scala.inline
-    implicit class TabsGroupMutableBuilder[Self <: TabsGroup] (val x: Self) extends AnyVal {
+    extension [Self <: TabsGroup](x: Self) {
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -76,38 +69,28 @@ object verticalTabsMod {
   }
   object VerticalTabsProps {
     
-    @scala.inline
-    def apply(): VerticalTabsProps = {
+    inline def apply(): VerticalTabsProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VerticalTabsProps]
     }
     
-    @scala.inline
-    implicit class VerticalTabsPropsMutableBuilder[Self <: VerticalTabsProps] (val x: Self) extends AnyVal {
+    extension [Self <: VerticalTabsProps](x: Self) {
       
-      @scala.inline
-      def setActiveTabId(value: Double): Self = StObject.set(x, "activeTabId", value.asInstanceOf[js.Any])
+      inline def setActiveTabId(value: Double): Self = StObject.set(x, "activeTabId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveTabIdUndefined: Self = StObject.set(x, "activeTabId", js.undefined)
+      inline def setActiveTabIdUndefined: Self = StObject.set(x, "activeTabId", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* id */ Double => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* id */ Double => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setSize(value: VerticalTabsSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: VerticalTabsSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -118,10 +101,8 @@ object verticalTabsMod {
   trait VerticalTabsSize extends StObject
   object VerticalTabsSize {
     
-    @scala.inline
-    def medium: typings.wixStyleReact.wixStyleReactStrings.medium = "medium".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.medium]
+    inline def medium: typings.wixStyleReact.wixStyleReactStrings.medium = "medium".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.medium]
     
-    @scala.inline
-    def small: typings.wixStyleReact.wixStyleReactStrings.small = "small".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.small]
+    inline def small: typings.wixStyleReact.wixStyleReactStrings.small = "small".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.small]
   }
 }

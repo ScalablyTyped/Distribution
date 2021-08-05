@@ -77,7 +77,7 @@ object heapMod {
       * @type {function(Object,Object):number}
       * @private
       */
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var compare: js.Any = js.native
     
     /**
@@ -94,7 +94,7 @@ object heapMod {
       * @type {Array.<Object>}
       * @private
       */
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var data: js.Any = js.native
     
     /**
@@ -122,8 +122,8 @@ object heapMod {
       * @return {number} The index of the left child.
       * @private
       */
-    /* CompleteClass */
-    /* private */ override def leftChildIndex(nodeIndex: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def leftChildIndex(nodeIndex: js.Any): js.Any = js.native
     
     /**
       * Returns the index of the smaller child node (if it exists).
@@ -133,8 +133,8 @@ object heapMod {
       * exists.
       * @private
       */
-    /* CompleteClass */
-    /* private */ override def minIndex(leftChild: js.Any, rightChild: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def minIndex(leftChild: js.Any, rightChild: js.Any): js.Any = js.native
     
     /**
       * Returns the index of the parent of the node at the given index.
@@ -142,8 +142,8 @@ object heapMod {
       * @return {number} The index of the parent.
       * @private
       */
-    /* CompleteClass */
-    /* private */ override def parentIndex(nodeIndex: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def parentIndex(nodeIndex: js.Any): js.Any = js.native
     
     /**
       * Retrieves but does not remove the root element of this heap.
@@ -168,24 +168,24 @@ object heapMod {
       * @return {number} The index of the right child.
       * @private
       */
-    /* CompleteClass */
-    /* private */ override def rightChildIndex(nodeIndex: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def rightChildIndex(nodeIndex: js.Any): js.Any = js.native
     
     /**
       * Moves the node at the given index down to its proper place in the heap.
       * @param {number} nodeIndex The index of the node to move down.
       * @private
       */
-    /* CompleteClass */
-    /* private */ override def siftDown(nodeIndex: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def siftDown(nodeIndex: js.Any): js.Any = js.native
     
     /**
       * Moves the node at the given index up to its proper place in the heap.
       * @param {number} index The index of the node to move up.
       * @private
       */
-    /* CompleteClass */
-    /* private */ override def siftUp(index: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def siftUp(index: js.Any): js.Any = js.native
     
     /**
       * Returns the number of elements in this heap.
@@ -214,7 +214,7 @@ object heapMod {
       * @type {function(Object,Object):number}
       * @private
       */
-    var compare: js.Any
+    /* private */ var compare: js.Any
     
     /**
       * Returns true if this heap contains the specified element.
@@ -229,7 +229,7 @@ object heapMod {
       * @type {Array.<Object>}
       * @private
       */
-    var data: js.Any
+    /* private */ var data: js.Any
     
     /**
       * Executes the provided function once for each element present in this heap in
@@ -319,8 +319,7 @@ object heapMod {
   }
   object Heap {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       add: T => Boolean,
       clear: () => Unit,
       compare: js.Any,
@@ -342,56 +341,39 @@ object heapMod {
       __obj.asInstanceOf[Heap[T]]
     }
     
-    @scala.inline
-    implicit class HeapMutableBuilder[Self <: Heap[?], T] (val x: Self & Heap[T]) extends AnyVal {
+    extension [Self <: Heap[?], T](x: Self & Heap[T]) {
       
-      @scala.inline
-      def setAdd(value: T => Boolean): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+      inline def setAdd(value: T => Boolean): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCompare(value: js.Any): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
+      inline def setCompare(value: js.Any): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContains(value: T => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+      inline def setContains(value: T => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForEach(value: ILoopFunction[T] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
+      inline def setForEach(value: ILoopFunction[T] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
+      inline def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLeftChildIndex(value: js.Any => js.Any): Self = StObject.set(x, "leftChildIndex", js.Any.fromFunction1(value))
+      inline def setLeftChildIndex(value: js.Any => js.Any): Self = StObject.set(x, "leftChildIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMinIndex(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "minIndex", js.Any.fromFunction2(value))
+      inline def setMinIndex(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "minIndex", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setParentIndex(value: js.Any => js.Any): Self = StObject.set(x, "parentIndex", js.Any.fromFunction1(value))
+      inline def setParentIndex(value: js.Any => js.Any): Self = StObject.set(x, "parentIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPeek(value: () => js.UndefOr[T]): Self = StObject.set(x, "peek", js.Any.fromFunction0(value))
+      inline def setPeek(value: () => js.UndefOr[T]): Self = StObject.set(x, "peek", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveRoot(value: () => js.UndefOr[T]): Self = StObject.set(x, "removeRoot", js.Any.fromFunction0(value))
+      inline def setRemoveRoot(value: () => js.UndefOr[T]): Self = StObject.set(x, "removeRoot", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRightChildIndex(value: js.Any => js.Any): Self = StObject.set(x, "rightChildIndex", js.Any.fromFunction1(value))
+      inline def setRightChildIndex(value: js.Any => js.Any): Self = StObject.set(x, "rightChildIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSiftDown(value: js.Any => js.Any): Self = StObject.set(x, "siftDown", js.Any.fromFunction1(value))
+      inline def setSiftDown(value: js.Any => js.Any): Self = StObject.set(x, "siftDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSiftUp(value: js.Any => js.Any): Self = StObject.set(x, "siftUp", js.Any.fromFunction1(value))
+      inline def setSiftUp(value: js.Any => js.Any): Self = StObject.set(x, "siftUp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
+      inline def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
     }
   }
 }

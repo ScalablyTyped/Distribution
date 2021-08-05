@@ -53,20 +53,16 @@ object relativeTimeMod extends Shortcut {
     }
     object RelativeTimeFormatterOptions {
       
-      @scala.inline
-      def apply(): RelativeTimeFormatterOptions = {
+      inline def apply(): RelativeTimeFormatterOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[RelativeTimeFormatterOptions]
       }
       
-      @scala.inline
-      implicit class RelativeTimeFormatterOptionsMutableBuilder[Self <: RelativeTimeFormatterOptions] (val x: Self) extends AnyVal {
+      extension [Self <: RelativeTimeFormatterOptions](x: Self) {
         
-        @scala.inline
-        def setForm(value: short | narrow): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+        inline def setForm(value: short | narrow): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
+        inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
       }
     }
     

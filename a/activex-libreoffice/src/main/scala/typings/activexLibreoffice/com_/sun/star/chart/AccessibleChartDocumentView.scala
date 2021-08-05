@@ -31,8 +31,7 @@ trait AccessibleChartDocumentView
      with XAccessibleComponent
 object AccessibleChartDocumentView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleChildCount: Double,
     AccessibleContext: XAccessibleContext,
     AccessibleDescription: String,

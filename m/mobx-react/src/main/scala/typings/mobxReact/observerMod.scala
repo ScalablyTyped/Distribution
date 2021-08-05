@@ -11,6 +11,5 @@ object observerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def observer[T /* <: IReactComponent[js.Any] */](component: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("observer")(component.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def observer[T /* <: IReactComponent[js.Any] */](component: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("observer")(component.asInstanceOf[js.Any]).asInstanceOf[T]
 }

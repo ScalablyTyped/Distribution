@@ -38,26 +38,19 @@ object LocalTime {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def fromBuffer(value: Buffer): LocalTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(value.asInstanceOf[js.Any]).asInstanceOf[LocalTime]
+  inline def fromBuffer(value: Buffer): LocalTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(value.asInstanceOf[js.Any]).asInstanceOf[LocalTime]
   
   /* static member */
-  @scala.inline
-  def fromDate(date: Date, nanoseconds: Double): LocalTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], nanoseconds.asInstanceOf[js.Any])).asInstanceOf[LocalTime]
+  inline def fromDate(date: Date, nanoseconds: Double): LocalTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], nanoseconds.asInstanceOf[js.Any])).asInstanceOf[LocalTime]
   
   /* static member */
-  @scala.inline
-  def fromMilliseconds(milliseconds: Double): LocalTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMilliseconds")(milliseconds.asInstanceOf[js.Any]).asInstanceOf[LocalTime]
-  @scala.inline
-  def fromMilliseconds(milliseconds: Double, nanoseconds: Double): LocalTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMilliseconds")(milliseconds.asInstanceOf[js.Any], nanoseconds.asInstanceOf[js.Any])).asInstanceOf[LocalTime]
+  inline def fromMilliseconds(milliseconds: Double): LocalTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMilliseconds")(milliseconds.asInstanceOf[js.Any]).asInstanceOf[LocalTime]
+  inline def fromMilliseconds(milliseconds: Double, nanoseconds: Double): LocalTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMilliseconds")(milliseconds.asInstanceOf[js.Any], nanoseconds.asInstanceOf[js.Any])).asInstanceOf[LocalTime]
   
   /* static member */
-  @scala.inline
-  def fromString(value: String): LocalTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[LocalTime]
+  inline def fromString(value: String): LocalTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[LocalTime]
   
   /* static member */
-  @scala.inline
-  def now(): LocalTime = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[LocalTime]
-  @scala.inline
-  def now(nanoseconds: Double): LocalTime = ^.asInstanceOf[js.Dynamic].applyDynamic("now")(nanoseconds.asInstanceOf[js.Any]).asInstanceOf[LocalTime]
+  inline def now(): LocalTime = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[LocalTime]
+  inline def now(nanoseconds: Double): LocalTime = ^.asInstanceOf[js.Dynamic].applyDynamic("now")(nanoseconds.asInstanceOf[js.Any]).asInstanceOf[LocalTime]
 }

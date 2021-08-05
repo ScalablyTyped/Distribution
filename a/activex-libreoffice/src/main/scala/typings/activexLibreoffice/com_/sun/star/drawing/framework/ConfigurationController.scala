@@ -21,8 +21,7 @@ trait ConfigurationController
 }
 object ConfigurationController {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CurrentConfiguration: XConfiguration,
     RequestedConfiguration: XConfiguration,
     addConfigurationChangeListener: (XConfigurationChangeListener, String, js.Any) => Unit,
@@ -49,10 +48,8 @@ object ConfigurationController {
     __obj.asInstanceOf[ConfigurationController]
   }
   
-  @scala.inline
-  implicit class ConfigurationControllerMutableBuilder[Self <: ConfigurationController] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigurationController](x: Self) {
     
-    @scala.inline
-    def setCreate(value: XController => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: XController => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
   }
 }

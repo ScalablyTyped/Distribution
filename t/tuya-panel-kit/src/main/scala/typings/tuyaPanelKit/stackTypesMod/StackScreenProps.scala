@@ -14,19 +14,15 @@ trait StackScreenProps[ParamList /* <: ParamListBase */, RouteName /* <: /* keyo
 }
 object StackScreenProps {
   
-  @scala.inline
-  def apply[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */](navigation: StackNavigationProp[ParamList, RouteName], route: RouteProp[ParamList, RouteName]): StackScreenProps[ParamList, RouteName] = {
+  inline def apply[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */](navigation: StackNavigationProp[ParamList, RouteName], route: RouteProp[ParamList, RouteName]): StackScreenProps[ParamList, RouteName] = {
     val __obj = js.Dynamic.literal(navigation = navigation.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackScreenProps[ParamList, RouteName]]
   }
   
-  @scala.inline
-  implicit class StackScreenPropsMutableBuilder[Self <: StackScreenProps[?, ?], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */] (val x: Self & (StackScreenProps[ParamList, RouteName])) extends AnyVal {
+  extension [Self <: StackScreenProps[?, ?], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */](x: Self & (StackScreenProps[ParamList, RouteName])) {
     
-    @scala.inline
-    def setNavigation(value: StackNavigationProp[ParamList, RouteName]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
+    inline def setNavigation(value: StackNavigationProp[ParamList, RouteName]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoute(value: RouteProp[ParamList, RouteName]): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+    inline def setRoute(value: RouteProp[ParamList, RouteName]): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
   }
 }

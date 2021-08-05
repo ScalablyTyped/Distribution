@@ -18,25 +18,19 @@ trait ListWorldExportJobsResponse extends StObject {
 }
 object ListWorldExportJobsResponse {
   
-  @scala.inline
-  def apply(worldExportJobSummaries: WorldExportJobSummaries): ListWorldExportJobsResponse = {
+  inline def apply(worldExportJobSummaries: WorldExportJobSummaries): ListWorldExportJobsResponse = {
     val __obj = js.Dynamic.literal(worldExportJobSummaries = worldExportJobSummaries.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListWorldExportJobsResponse]
   }
   
-  @scala.inline
-  implicit class ListWorldExportJobsResponseMutableBuilder[Self <: ListWorldExportJobsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListWorldExportJobsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setWorldExportJobSummaries(value: WorldExportJobSummaries): Self = StObject.set(x, "worldExportJobSummaries", value.asInstanceOf[js.Any])
+    inline def setWorldExportJobSummaries(value: WorldExportJobSummaries): Self = StObject.set(x, "worldExportJobSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorldExportJobSummariesVarargs(value: WorldExportJobSummary*): Self = StObject.set(x, "worldExportJobSummaries", js.Array(value :_*))
+    inline def setWorldExportJobSummariesVarargs(value: WorldExportJobSummary*): Self = StObject.set(x, "worldExportJobSummaries", js.Array(value :_*))
   }
 }

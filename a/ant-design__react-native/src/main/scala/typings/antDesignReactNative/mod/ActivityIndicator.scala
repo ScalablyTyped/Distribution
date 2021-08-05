@@ -19,6 +19,5 @@ object ActivityIndicator {
   @JSImport("@ant-design/react-native", "ActivityIndicator.defaultProps")
   @js.native
   def defaultProps: Animating = js.native
-  @scala.inline
-  def defaultProps_=(x: Animating): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: Animating): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

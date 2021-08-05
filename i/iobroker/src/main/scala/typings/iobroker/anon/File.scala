@@ -13,19 +13,15 @@ trait File extends StObject {
 }
 object File {
   
-  @scala.inline
-  def apply(file: String | Buffer, mimeType: String): File = {
+  inline def apply(file: String | Buffer, mimeType: String): File = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], mimeType = mimeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[File]
   }
   
-  @scala.inline
-  implicit class FileMutableBuilder[Self <: File] (val x: Self) extends AnyVal {
+  extension [Self <: File](x: Self) {
     
-    @scala.inline
-    def setFile(value: String | Buffer): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: String | Buffer): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
   }
 }

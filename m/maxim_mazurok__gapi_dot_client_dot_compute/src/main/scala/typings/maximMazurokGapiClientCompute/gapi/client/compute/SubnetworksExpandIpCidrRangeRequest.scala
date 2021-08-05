@@ -14,19 +14,15 @@ trait SubnetworksExpandIpCidrRangeRequest extends StObject {
 }
 object SubnetworksExpandIpCidrRangeRequest {
   
-  @scala.inline
-  def apply(): SubnetworksExpandIpCidrRangeRequest = {
+  inline def apply(): SubnetworksExpandIpCidrRangeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SubnetworksExpandIpCidrRangeRequest]
   }
   
-  @scala.inline
-  implicit class SubnetworksExpandIpCidrRangeRequestMutableBuilder[Self <: SubnetworksExpandIpCidrRangeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SubnetworksExpandIpCidrRangeRequest](x: Self) {
     
-    @scala.inline
-    def setIpCidrRange(value: String): Self = StObject.set(x, "ipCidrRange", value.asInstanceOf[js.Any])
+    inline def setIpCidrRange(value: String): Self = StObject.set(x, "ipCidrRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpCidrRangeUndefined: Self = StObject.set(x, "ipCidrRange", js.undefined)
+    inline def setIpCidrRangeUndefined: Self = StObject.set(x, "ipCidrRange", js.undefined)
   }
 }

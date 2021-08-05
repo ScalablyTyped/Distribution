@@ -45,8 +45,7 @@ trait MediaStreamSampleProtectionProperties extends StObject {
 }
 object MediaStreamSampleProtectionProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getInitializationVector: () => js.Array[Double],
     getKeyIdentifier: () => js.Array[Double],
     getSubSampleMapping: () => js.Array[Double],
@@ -58,25 +57,18 @@ object MediaStreamSampleProtectionProperties {
     __obj.asInstanceOf[MediaStreamSampleProtectionProperties]
   }
   
-  @scala.inline
-  implicit class MediaStreamSampleProtectionPropertiesMutableBuilder[Self <: MediaStreamSampleProtectionProperties] (val x: Self) extends AnyVal {
+  extension [Self <: MediaStreamSampleProtectionProperties](x: Self) {
     
-    @scala.inline
-    def setGetInitializationVector(value: () => js.Array[Double]): Self = StObject.set(x, "getInitializationVector", js.Any.fromFunction0(value))
+    inline def setGetInitializationVector(value: () => js.Array[Double]): Self = StObject.set(x, "getInitializationVector", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetKeyIdentifier(value: () => js.Array[Double]): Self = StObject.set(x, "getKeyIdentifier", js.Any.fromFunction0(value))
+    inline def setGetKeyIdentifier(value: () => js.Array[Double]): Self = StObject.set(x, "getKeyIdentifier", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSubSampleMapping(value: () => js.Array[Double]): Self = StObject.set(x, "getSubSampleMapping", js.Any.fromFunction0(value))
+    inline def setGetSubSampleMapping(value: () => js.Array[Double]): Self = StObject.set(x, "getSubSampleMapping", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetInitializationVector(value: js.Array[Double] => Unit): Self = StObject.set(x, "setInitializationVector", js.Any.fromFunction1(value))
+    inline def setSetInitializationVector(value: js.Array[Double] => Unit): Self = StObject.set(x, "setInitializationVector", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetKeyIdentifier(value: js.Array[Double] => Unit): Self = StObject.set(x, "setKeyIdentifier", js.Any.fromFunction1(value))
+    inline def setSetKeyIdentifier(value: js.Array[Double] => Unit): Self = StObject.set(x, "setKeyIdentifier", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSubSampleMapping(value: js.Array[Double] => Unit): Self = StObject.set(x, "setSubSampleMapping", js.Any.fromFunction1(value))
+    inline def setSetSubSampleMapping(value: js.Array[Double] => Unit): Self = StObject.set(x, "setSubSampleMapping", js.Any.fromFunction1(value))
   }
 }

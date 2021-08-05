@@ -10,16 +10,13 @@ trait Window extends StObject {
 }
 object Window {
   
-  @scala.inline
-  def apply(cordova: Cordova): Window = {
+  inline def apply(cordova: Cordova): Window = {
     val __obj = js.Dynamic.literal(cordova = cordova.asInstanceOf[js.Any])
     __obj.asInstanceOf[Window]
   }
   
-  @scala.inline
-  implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+  extension [Self <: Window](x: Self) {
     
-    @scala.inline
-    def setCordova(value: Cordova): Self = StObject.set(x, "cordova", value.asInstanceOf[js.Any])
+    inline def setCordova(value: Cordova): Self = StObject.set(x, "cordova", value.asInstanceOf[js.Any])
   }
 }

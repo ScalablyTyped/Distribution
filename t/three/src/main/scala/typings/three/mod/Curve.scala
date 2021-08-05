@@ -19,6 +19,5 @@ object Curve {
   /**
   	 * @deprecated since r84.
   	 */
-  @scala.inline
-  def create(constructorFunc: js.Function, getPointFunc: js.Function): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(constructorFunc.asInstanceOf[js.Any], getPointFunc.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  inline def create(constructorFunc: js.Function, getPointFunc: js.Function): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(constructorFunc.asInstanceOf[js.Any], getPointFunc.asInstanceOf[js.Any])).asInstanceOf[js.Function]
 }

@@ -17,29 +17,22 @@ trait ViewerEventArgs
 }
 object ViewerEventArgs {
   
-  @scala.inline
-  def apply(`type`: String): ViewerEventArgs = {
+  inline def apply(`type`: String): ViewerEventArgs = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewerEventArgs]
   }
   
-  @scala.inline
-  implicit class ViewerEventArgsMutableBuilder[Self <: ViewerEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ViewerEventArgs](x: Self) {
     
-    @scala.inline
-    def setModel(value: ViewerItem): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: ViewerItem): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    @scala.inline
-    def setTarget(value: Viewer3D): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Viewer3D): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

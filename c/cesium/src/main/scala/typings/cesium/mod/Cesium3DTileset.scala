@@ -159,9 +159,7 @@ object Cesium3DTileset {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def loadJson(tilesetUrl: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadJson")(tilesetUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def loadJson(tilesetUrl: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadJson")(tilesetUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   /* static member */
-  @scala.inline
-  def loadJson(tilesetUrl: Resource): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadJson")(tilesetUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def loadJson(tilesetUrl: Resource): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadJson")(tilesetUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
 }

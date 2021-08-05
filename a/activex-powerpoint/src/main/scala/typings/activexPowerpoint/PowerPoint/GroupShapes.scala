@@ -16,15 +16,14 @@ trait GroupShapes extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.GroupShapes_typekey")
+  /* private */ @JSName("PowerPoint.GroupShapes_typekey")
   var PowerPointDotGroupShapes_typekey: GroupShapes
   
   def Range(Index: js.Any): ShapeRange
 }
 object GroupShapes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Count: Double,
     Creator: Double,
@@ -38,28 +37,20 @@ object GroupShapes {
     __obj.asInstanceOf[GroupShapes]
   }
   
-  @scala.inline
-  implicit class GroupShapesMutableBuilder[Self <: GroupShapes] (val x: Self) extends AnyVal {
+  extension [Self <: GroupShapes](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: js.Any => Shape): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: js.Any => Shape): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotGroupShapes_typekey(value: GroupShapes): Self = StObject.set(x, "PowerPoint.GroupShapes_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotGroupShapes_typekey(value: GroupShapes): Self = StObject.set(x, "PowerPoint.GroupShapes_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: js.Any => ShapeRange): Self = StObject.set(x, "Range", js.Any.fromFunction1(value))
+    inline def setRange(value: js.Any => ShapeRange): Self = StObject.set(x, "Range", js.Any.fromFunction1(value))
   }
 }

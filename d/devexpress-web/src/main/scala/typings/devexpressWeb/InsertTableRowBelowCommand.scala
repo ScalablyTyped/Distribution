@@ -18,16 +18,13 @@ trait InsertTableRowBelowCommand
 }
 object InsertTableRowBelowCommand {
   
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => SimpleCommandState): InsertTableRowBelowCommand = {
+  inline def apply(execute: () => Boolean, getState: () => SimpleCommandState): InsertTableRowBelowCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[InsertTableRowBelowCommand]
   }
   
-  @scala.inline
-  implicit class InsertTableRowBelowCommandMutableBuilder[Self <: InsertTableRowBelowCommand] (val x: Self) extends AnyVal {
+  extension [Self <: InsertTableRowBelowCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }
 }

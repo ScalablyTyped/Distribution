@@ -28,37 +28,27 @@ trait KeydownEventUIParam extends StObject {
 }
 object KeydownEventUIParam {
   
-  @scala.inline
-  def apply(): KeydownEventUIParam = {
+  inline def apply(): KeydownEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KeydownEventUIParam]
   }
   
-  @scala.inline
-  implicit class KeydownEventUIParamMutableBuilder[Self <: KeydownEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: KeydownEventUIParam](x: Self) {
     
-    @scala.inline
-    def setEditorInput(value: js.Any): Self = StObject.set(x, "editorInput", value.asInstanceOf[js.Any])
+    inline def setEditorInput(value: js.Any): Self = StObject.set(x, "editorInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditorInputUndefined: Self = StObject.set(x, "editorInput", js.undefined)
+    inline def setEditorInputUndefined: Self = StObject.set(x, "editorInput", js.undefined)
     
-    @scala.inline
-    def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    @scala.inline
-    def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

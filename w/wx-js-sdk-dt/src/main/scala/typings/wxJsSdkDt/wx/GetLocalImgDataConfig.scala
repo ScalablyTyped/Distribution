@@ -22,19 +22,15 @@ trait GetLocalImgDataConfig
 }
 object GetLocalImgDataConfig {
   
-  @scala.inline
-  def apply(localId: String, success: LocalData => Unit): GetLocalImgDataConfig = {
+  inline def apply(localId: String, success: LocalData => Unit): GetLocalImgDataConfig = {
     val __obj = js.Dynamic.literal(localId = localId.asInstanceOf[js.Any], success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[GetLocalImgDataConfig]
   }
   
-  @scala.inline
-  implicit class GetLocalImgDataConfigMutableBuilder[Self <: GetLocalImgDataConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GetLocalImgDataConfig](x: Self) {
     
-    @scala.inline
-    def setLocalId(value: String): Self = StObject.set(x, "localId", value.asInstanceOf[js.Any])
+    inline def setLocalId(value: String): Self = StObject.set(x, "localId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: LocalData => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: LocalData => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

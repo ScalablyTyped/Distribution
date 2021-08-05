@@ -27,12 +27,10 @@ object Slider {
   @JSImport("wix-ui-core/dist/standalone/src", "Slider.defaultProps")
   @js.native
   def defaultProps: PartialSliderPropsArialabel = js.native
-  @scala.inline
-  def defaultProps_=(x: PartialSliderPropsArialabel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: PartialSliderPropsArialabel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
   @JSImport("wix-ui-core/dist/standalone/src", "Slider.displayName")
   @js.native
   def displayName: String = js.native
-  @scala.inline
-  def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+  inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
 }

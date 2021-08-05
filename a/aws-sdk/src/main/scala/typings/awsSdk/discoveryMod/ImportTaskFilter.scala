@@ -18,28 +18,21 @@ trait ImportTaskFilter extends StObject {
 }
 object ImportTaskFilter {
   
-  @scala.inline
-  def apply(): ImportTaskFilter = {
+  inline def apply(): ImportTaskFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImportTaskFilter]
   }
   
-  @scala.inline
-  implicit class ImportTaskFilterMutableBuilder[Self <: ImportTaskFilter] (val x: Self) extends AnyVal {
+  extension [Self <: ImportTaskFilter](x: Self) {
     
-    @scala.inline
-    def setName(value: ImportTaskFilterName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ImportTaskFilterName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setValues(value: ImportTaskFilterValueList): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: ImportTaskFilterValueList): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: ImportTaskFilterValue*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: ImportTaskFilterValue*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

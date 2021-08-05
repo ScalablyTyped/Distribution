@@ -1083,62 +1083,44 @@ object uskeyboardlayoutMod {
   }
   object KeyDefinition {
     
-    @scala.inline
-    def apply(): KeyDefinition = {
+    inline def apply(): KeyDefinition = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KeyDefinition]
     }
     
-    @scala.inline
-    implicit class KeyDefinitionMutableBuilder[Self <: KeyDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: KeyDefinition](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
+      inline def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyCodeUndefined: Self = StObject.set(x, "keyCode", js.undefined)
+      inline def setKeyCodeUndefined: Self = StObject.set(x, "keyCode", js.undefined)
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setLocation(value: Double): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: Double): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
-      @scala.inline
-      def setShiftKey(value: String): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
+      inline def setShiftKey(value: String): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShiftKeyCode(value: Double): Self = StObject.set(x, "shiftKeyCode", value.asInstanceOf[js.Any])
+      inline def setShiftKeyCode(value: Double): Self = StObject.set(x, "shiftKeyCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShiftKeyCodeUndefined: Self = StObject.set(x, "shiftKeyCode", js.undefined)
+      inline def setShiftKeyCodeUndefined: Self = StObject.set(x, "shiftKeyCode", js.undefined)
       
-      @scala.inline
-      def setShiftKeyUndefined: Self = StObject.set(x, "shiftKey", js.undefined)
+      inline def setShiftKeyUndefined: Self = StObject.set(x, "shiftKey", js.undefined)
       
-      @scala.inline
-      def setShiftText(value: String): Self = StObject.set(x, "shiftText", value.asInstanceOf[js.Any])
+      inline def setShiftText(value: String): Self = StObject.set(x, "shiftText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShiftTextUndefined: Self = StObject.set(x, "shiftText", js.undefined)
+      inline def setShiftTextUndefined: Self = StObject.set(x, "shiftText", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
   
@@ -1402,754 +1384,504 @@ object uskeyboardlayoutMod {
   trait KeyInput extends StObject
   object KeyInput {
     
-    @scala.inline
-    def ^ : typings.puppeteerCore.puppeteerCoreStrings.^ = "^".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.^]
+    inline def ^ : typings.puppeteerCore.puppeteerCoreStrings.^ = "^".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.^]
     
-    @scala.inline
-    def $: typings.puppeteerCore.puppeteerCoreStrings.$ = "$".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.$]
+    inline def $: typings.puppeteerCore.puppeteerCoreStrings.$ = "$".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.$]
     
-    @scala.inline
-    def `0`: typings.puppeteerCore.puppeteerCoreStrings.`0` = "0".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.`0`]
+    inline def `0`: typings.puppeteerCore.puppeteerCoreStrings.`0` = "0".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.`0`]
     
-    @scala.inline
-    def `1`: typings.puppeteerCore.puppeteerCoreStrings.`1` = "1".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.`1`]
+    inline def `1`: typings.puppeteerCore.puppeteerCoreStrings.`1` = "1".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.`1`]
     
-    @scala.inline
-    def `2`: typings.puppeteerCore.puppeteerCoreStrings.`2` = "2".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.`2`]
+    inline def `2`: typings.puppeteerCore.puppeteerCoreStrings.`2` = "2".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.`2`]
     
-    @scala.inline
-    def `3`: typings.puppeteerCore.puppeteerCoreStrings.`3` = "3".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.`3`]
+    inline def `3`: typings.puppeteerCore.puppeteerCoreStrings.`3` = "3".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.`3`]
     
-    @scala.inline
-    def `4`: typings.puppeteerCore.puppeteerCoreStrings.`4` = "4".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.`4`]
+    inline def `4`: typings.puppeteerCore.puppeteerCoreStrings.`4` = "4".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.`4`]
     
-    @scala.inline
-    def `5`: typings.puppeteerCore.puppeteerCoreStrings.`5` = "5".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.`5`]
+    inline def `5`: typings.puppeteerCore.puppeteerCoreStrings.`5` = "5".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.`5`]
     
-    @scala.inline
-    def `6`: typings.puppeteerCore.puppeteerCoreStrings.`6` = "6".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.`6`]
+    inline def `6`: typings.puppeteerCore.puppeteerCoreStrings.`6` = "6".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.`6`]
     
-    @scala.inline
-    def `7`: typings.puppeteerCore.puppeteerCoreStrings.`7` = "7".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.`7`]
+    inline def `7`: typings.puppeteerCore.puppeteerCoreStrings.`7` = "7".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.`7`]
     
-    @scala.inline
-    def `8`: typings.puppeteerCore.puppeteerCoreStrings.`8` = "8".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.`8`]
+    inline def `8`: typings.puppeteerCore.puppeteerCoreStrings.`8` = "8".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.`8`]
     
-    @scala.inline
-    def `9`: typings.puppeteerCore.puppeteerCoreStrings.`9` = "9".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.`9`]
+    inline def `9`: typings.puppeteerCore.puppeteerCoreStrings.`9` = "9".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.`9`]
     
-    @scala.inline
-    def `@`: typings.puppeteerCore.puppeteerCoreStrings.`@` = "@".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.`@`]
+    inline def `@`: typings.puppeteerCore.puppeteerCoreStrings.`@` = "@".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.`@`]
     
-    @scala.inline
-    def A: typings.puppeteerCore.puppeteerCoreStrings.A = "A".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.A]
+    inline def A: typings.puppeteerCore.puppeteerCoreStrings.A = "A".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.A]
     
-    @scala.inline
-    def Abort: typings.puppeteerCore.puppeteerCoreStrings.Abort = "Abort".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Abort]
+    inline def Abort: typings.puppeteerCore.puppeteerCoreStrings.Abort = "Abort".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Abort]
     
-    @scala.inline
-    def Accept: typings.puppeteerCore.puppeteerCoreStrings.Accept = "Accept".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Accept]
+    inline def Accept: typings.puppeteerCore.puppeteerCoreStrings.Accept = "Accept".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Accept]
     
-    @scala.inline
-    def Alt: typings.puppeteerCore.puppeteerCoreStrings.Alt = "Alt".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Alt]
+    inline def Alt: typings.puppeteerCore.puppeteerCoreStrings.Alt = "Alt".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Alt]
     
-    @scala.inline
-    def AltGraph: typings.puppeteerCore.puppeteerCoreStrings.AltGraph = "AltGraph".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.AltGraph]
+    inline def AltGraph: typings.puppeteerCore.puppeteerCoreStrings.AltGraph = "AltGraph".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.AltGraph]
     
-    @scala.inline
-    def AltLeft: typings.puppeteerCore.puppeteerCoreStrings.AltLeft = "AltLeft".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.AltLeft]
+    inline def AltLeft: typings.puppeteerCore.puppeteerCoreStrings.AltLeft = "AltLeft".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.AltLeft]
     
-    @scala.inline
-    def AltRight: typings.puppeteerCore.puppeteerCoreStrings.AltRight = "AltRight".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.AltRight]
+    inline def AltRight: typings.puppeteerCore.puppeteerCoreStrings.AltRight = "AltRight".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.AltRight]
     
-    @scala.inline
-    def Ampersand: typings.puppeteerCore.puppeteerCoreStrings.Ampersand = "&".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Ampersand]
+    inline def Ampersand: typings.puppeteerCore.puppeteerCoreStrings.Ampersand = "&".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Ampersand]
     
-    @scala.inline
-    def Apostrophe: typings.puppeteerCore.puppeteerCoreStrings.Apostrophe = "'".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Apostrophe]
+    inline def Apostrophe: typings.puppeteerCore.puppeteerCoreStrings.Apostrophe = "'".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Apostrophe]
     
-    @scala.inline
-    def ArrowDown: typings.puppeteerCore.puppeteerCoreStrings.ArrowDown = "ArrowDown".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.ArrowDown]
+    inline def ArrowDown: typings.puppeteerCore.puppeteerCoreStrings.ArrowDown = "ArrowDown".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.ArrowDown]
     
-    @scala.inline
-    def ArrowLeft: typings.puppeteerCore.puppeteerCoreStrings.ArrowLeft = "ArrowLeft".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.ArrowLeft]
+    inline def ArrowLeft: typings.puppeteerCore.puppeteerCoreStrings.ArrowLeft = "ArrowLeft".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.ArrowLeft]
     
-    @scala.inline
-    def ArrowRight: typings.puppeteerCore.puppeteerCoreStrings.ArrowRight = "ArrowRight".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.ArrowRight]
+    inline def ArrowRight: typings.puppeteerCore.puppeteerCoreStrings.ArrowRight = "ArrowRight".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.ArrowRight]
     
-    @scala.inline
-    def ArrowUp: typings.puppeteerCore.puppeteerCoreStrings.ArrowUp = "ArrowUp".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.ArrowUp]
+    inline def ArrowUp: typings.puppeteerCore.puppeteerCoreStrings.ArrowUp = "ArrowUp".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.ArrowUp]
     
-    @scala.inline
-    def Asterisk: typings.puppeteerCore.puppeteerCoreStrings.Asterisk = "*".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Asterisk]
+    inline def Asterisk: typings.puppeteerCore.puppeteerCoreStrings.Asterisk = "*".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Asterisk]
     
-    @scala.inline
-    def Attn: typings.puppeteerCore.puppeteerCoreStrings.Attn = "Attn".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Attn]
+    inline def Attn: typings.puppeteerCore.puppeteerCoreStrings.Attn = "Attn".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Attn]
     
-    @scala.inline
-    def AudioVolumeDown: typings.puppeteerCore.puppeteerCoreStrings.AudioVolumeDown = "AudioVolumeDown".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.AudioVolumeDown]
+    inline def AudioVolumeDown: typings.puppeteerCore.puppeteerCoreStrings.AudioVolumeDown = "AudioVolumeDown".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.AudioVolumeDown]
     
-    @scala.inline
-    def AudioVolumeMute: typings.puppeteerCore.puppeteerCoreStrings.AudioVolumeMute = "AudioVolumeMute".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.AudioVolumeMute]
+    inline def AudioVolumeMute: typings.puppeteerCore.puppeteerCoreStrings.AudioVolumeMute = "AudioVolumeMute".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.AudioVolumeMute]
     
-    @scala.inline
-    def AudioVolumeUp: typings.puppeteerCore.puppeteerCoreStrings.AudioVolumeUp = "AudioVolumeUp".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.AudioVolumeUp]
+    inline def AudioVolumeUp: typings.puppeteerCore.puppeteerCoreStrings.AudioVolumeUp = "AudioVolumeUp".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.AudioVolumeUp]
     
-    @scala.inline
-    def B: typings.puppeteerCore.puppeteerCoreStrings.B = "B".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.B]
+    inline def B: typings.puppeteerCore.puppeteerCoreStrings.B = "B".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.B]
     
-    @scala.inline
-    def Backquote: typings.puppeteerCore.puppeteerCoreStrings.Backquote = "Backquote".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Backquote]
+    inline def Backquote: typings.puppeteerCore.puppeteerCoreStrings.Backquote = "Backquote".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Backquote]
     
-    @scala.inline
-    def Backslash: typings.puppeteerCore.puppeteerCoreStrings.Backslash = "Backslash".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Backslash]
+    inline def Backslash: typings.puppeteerCore.puppeteerCoreStrings.Backslash = "Backslash".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Backslash]
     
-    @scala.inline
-    def Backspace: typings.puppeteerCore.puppeteerCoreStrings.Backspace = "Backspace".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Backspace]
+    inline def Backspace: typings.puppeteerCore.puppeteerCoreStrings.Backspace = "Backspace".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Backspace]
     
-    @scala.inline
-    def BracketLeft: typings.puppeteerCore.puppeteerCoreStrings.BracketLeft = "BracketLeft".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.BracketLeft]
+    inline def BracketLeft: typings.puppeteerCore.puppeteerCoreStrings.BracketLeft = "BracketLeft".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.BracketLeft]
     
-    @scala.inline
-    def BracketRight: typings.puppeteerCore.puppeteerCoreStrings.BracketRight = "BracketRight".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.BracketRight]
+    inline def BracketRight: typings.puppeteerCore.puppeteerCoreStrings.BracketRight = "BracketRight".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.BracketRight]
     
-    @scala.inline
-    def C: typings.puppeteerCore.puppeteerCoreStrings.C = "C".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.C]
+    inline def C: typings.puppeteerCore.puppeteerCoreStrings.C = "C".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.C]
     
-    @scala.inline
-    def Call: typings.puppeteerCore.puppeteerCoreStrings.Call = "Call".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Call]
+    inline def Call: typings.puppeteerCore.puppeteerCoreStrings.Call = "Call".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Call]
     
-    @scala.inline
-    def Camera: typings.puppeteerCore.puppeteerCoreStrings.Camera = "Camera".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Camera]
+    inline def Camera: typings.puppeteerCore.puppeteerCoreStrings.Camera = "Camera".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Camera]
     
-    @scala.inline
-    def Cancel: typings.puppeteerCore.puppeteerCoreStrings.Cancel = "Cancel".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Cancel]
+    inline def Cancel: typings.puppeteerCore.puppeteerCoreStrings.Cancel = "Cancel".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Cancel]
     
-    @scala.inline
-    def CapsLock: typings.puppeteerCore.puppeteerCoreStrings.CapsLock = "CapsLock".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.CapsLock]
+    inline def CapsLock: typings.puppeteerCore.puppeteerCoreStrings.CapsLock = "CapsLock".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.CapsLock]
     
-    @scala.inline
-    def Carriagereturn: typings.puppeteerCore.puppeteerCoreStrings.Carriagereturn = "\r".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Carriagereturn]
+    inline def Carriagereturn: typings.puppeteerCore.puppeteerCoreStrings.Carriagereturn = "\r".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Carriagereturn]
     
-    @scala.inline
-    def Clear: typings.puppeteerCore.puppeteerCoreStrings.Clear = "Clear".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Clear]
+    inline def Clear: typings.puppeteerCore.puppeteerCoreStrings.Clear = "Clear".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Clear]
     
-    @scala.inline
-    def Colon: typings.puppeteerCore.puppeteerCoreStrings.Colon = ":".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Colon]
+    inline def Colon: typings.puppeteerCore.puppeteerCoreStrings.Colon = ":".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Colon]
     
-    @scala.inline
-    def Comma: typings.puppeteerCore.puppeteerCoreStrings.Comma = "Comma".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Comma]
+    inline def Comma: typings.puppeteerCore.puppeteerCoreStrings.Comma = "Comma".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Comma]
     
-    @scala.inline
-    def ContextMenu: typings.puppeteerCore.puppeteerCoreStrings.ContextMenu = "ContextMenu".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.ContextMenu]
+    inline def ContextMenu: typings.puppeteerCore.puppeteerCoreStrings.ContextMenu = "ContextMenu".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.ContextMenu]
     
-    @scala.inline
-    def Control: typings.puppeteerCore.puppeteerCoreStrings.Control = "Control".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Control]
+    inline def Control: typings.puppeteerCore.puppeteerCoreStrings.Control = "Control".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Control]
     
-    @scala.inline
-    def ControlLeft: typings.puppeteerCore.puppeteerCoreStrings.ControlLeft = "ControlLeft".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.ControlLeft]
+    inline def ControlLeft: typings.puppeteerCore.puppeteerCoreStrings.ControlLeft = "ControlLeft".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.ControlLeft]
     
-    @scala.inline
-    def ControlRight: typings.puppeteerCore.puppeteerCoreStrings.ControlRight = "ControlRight".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.ControlRight]
+    inline def ControlRight: typings.puppeteerCore.puppeteerCoreStrings.ControlRight = "ControlRight".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.ControlRight]
     
-    @scala.inline
-    def Convert: typings.puppeteerCore.puppeteerCoreStrings.Convert = "Convert".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Convert]
+    inline def Convert: typings.puppeteerCore.puppeteerCoreStrings.Convert = "Convert".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Convert]
     
-    @scala.inline
-    def CrSel: typings.puppeteerCore.puppeteerCoreStrings.CrSel = "CrSel".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.CrSel]
+    inline def CrSel: typings.puppeteerCore.puppeteerCoreStrings.CrSel = "CrSel".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.CrSel]
     
-    @scala.inline
-    def D: typings.puppeteerCore.puppeteerCoreStrings.D = "D".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.D]
+    inline def D: typings.puppeteerCore.puppeteerCoreStrings.D = "D".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.D]
     
-    @scala.inline
-    def Delete: typings.puppeteerCore.puppeteerCoreStrings.Delete = "Delete".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Delete]
+    inline def Delete: typings.puppeteerCore.puppeteerCoreStrings.Delete = "Delete".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Delete]
     
-    @scala.inline
-    def Digit0: typings.puppeteerCore.puppeteerCoreStrings.Digit0 = "Digit0".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Digit0]
+    inline def Digit0: typings.puppeteerCore.puppeteerCoreStrings.Digit0 = "Digit0".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Digit0]
     
-    @scala.inline
-    def Digit1: typings.puppeteerCore.puppeteerCoreStrings.Digit1 = "Digit1".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Digit1]
+    inline def Digit1: typings.puppeteerCore.puppeteerCoreStrings.Digit1 = "Digit1".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Digit1]
     
-    @scala.inline
-    def Digit2: typings.puppeteerCore.puppeteerCoreStrings.Digit2 = "Digit2".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Digit2]
+    inline def Digit2: typings.puppeteerCore.puppeteerCoreStrings.Digit2 = "Digit2".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Digit2]
     
-    @scala.inline
-    def Digit3: typings.puppeteerCore.puppeteerCoreStrings.Digit3 = "Digit3".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Digit3]
+    inline def Digit3: typings.puppeteerCore.puppeteerCoreStrings.Digit3 = "Digit3".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Digit3]
     
-    @scala.inline
-    def Digit4: typings.puppeteerCore.puppeteerCoreStrings.Digit4 = "Digit4".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Digit4]
+    inline def Digit4: typings.puppeteerCore.puppeteerCoreStrings.Digit4 = "Digit4".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Digit4]
     
-    @scala.inline
-    def Digit5: typings.puppeteerCore.puppeteerCoreStrings.Digit5 = "Digit5".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Digit5]
+    inline def Digit5: typings.puppeteerCore.puppeteerCoreStrings.Digit5 = "Digit5".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Digit5]
     
-    @scala.inline
-    def Digit6: typings.puppeteerCore.puppeteerCoreStrings.Digit6 = "Digit6".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Digit6]
+    inline def Digit6: typings.puppeteerCore.puppeteerCoreStrings.Digit6 = "Digit6".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Digit6]
     
-    @scala.inline
-    def Digit7: typings.puppeteerCore.puppeteerCoreStrings.Digit7 = "Digit7".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Digit7]
+    inline def Digit7: typings.puppeteerCore.puppeteerCoreStrings.Digit7 = "Digit7".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Digit7]
     
-    @scala.inline
-    def Digit8: typings.puppeteerCore.puppeteerCoreStrings.Digit8 = "Digit8".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Digit8]
+    inline def Digit8: typings.puppeteerCore.puppeteerCoreStrings.Digit8 = "Digit8".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Digit8]
     
-    @scala.inline
-    def Digit9: typings.puppeteerCore.puppeteerCoreStrings.Digit9 = "Digit9".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Digit9]
+    inline def Digit9: typings.puppeteerCore.puppeteerCoreStrings.Digit9 = "Digit9".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Digit9]
     
-    @scala.inline
-    def Dot: typings.puppeteerCore.puppeteerCoreStrings.Dot = ".".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Dot]
+    inline def Dot: typings.puppeteerCore.puppeteerCoreStrings.Dot = ".".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Dot]
     
-    @scala.inline
-    def E: typings.puppeteerCore.puppeteerCoreStrings.E = "E".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.E]
+    inline def E: typings.puppeteerCore.puppeteerCoreStrings.E = "E".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.E]
     
-    @scala.inline
-    def Eject: typings.puppeteerCore.puppeteerCoreStrings.Eject = "Eject".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Eject]
+    inline def Eject: typings.puppeteerCore.puppeteerCoreStrings.Eject = "Eject".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Eject]
     
-    @scala.inline
-    def End: typings.puppeteerCore.puppeteerCoreStrings.End = "End".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.End]
+    inline def End: typings.puppeteerCore.puppeteerCoreStrings.End = "End".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.End]
     
-    @scala.inline
-    def EndCall: typings.puppeteerCore.puppeteerCoreStrings.EndCall = "EndCall".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.EndCall]
+    inline def EndCall: typings.puppeteerCore.puppeteerCoreStrings.EndCall = "EndCall".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.EndCall]
     
-    @scala.inline
-    def Enter: typings.puppeteerCore.puppeteerCoreStrings.Enter = "Enter".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Enter]
+    inline def Enter: typings.puppeteerCore.puppeteerCoreStrings.Enter = "Enter".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Enter]
     
-    @scala.inline
-    def Equal: typings.puppeteerCore.puppeteerCoreStrings.Equal = "Equal".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Equal]
+    inline def Equal: typings.puppeteerCore.puppeteerCoreStrings.Equal = "Equal".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Equal]
     
-    @scala.inline
-    def Equalssign: typings.puppeteerCore.puppeteerCoreStrings.Equalssign = "=".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Equalssign]
+    inline def Equalssign: typings.puppeteerCore.puppeteerCoreStrings.Equalssign = "=".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Equalssign]
     
-    @scala.inline
-    def EraseEof: typings.puppeteerCore.puppeteerCoreStrings.EraseEof = "EraseEof".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.EraseEof]
+    inline def EraseEof: typings.puppeteerCore.puppeteerCoreStrings.EraseEof = "EraseEof".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.EraseEof]
     
-    @scala.inline
-    def Escape: typings.puppeteerCore.puppeteerCoreStrings.Escape = "Escape".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Escape]
+    inline def Escape: typings.puppeteerCore.puppeteerCoreStrings.Escape = "Escape".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Escape]
     
-    @scala.inline
-    def ExSel: typings.puppeteerCore.puppeteerCoreStrings.ExSel = "ExSel".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.ExSel]
+    inline def ExSel: typings.puppeteerCore.puppeteerCoreStrings.ExSel = "ExSel".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.ExSel]
     
-    @scala.inline
-    def Exclamationmark: typings.puppeteerCore.puppeteerCoreStrings.Exclamationmark = "!".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Exclamationmark]
+    inline def Exclamationmark: typings.puppeteerCore.puppeteerCoreStrings.Exclamationmark = "!".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Exclamationmark]
     
-    @scala.inline
-    def Execute: typings.puppeteerCore.puppeteerCoreStrings.Execute = "Execute".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Execute]
+    inline def Execute: typings.puppeteerCore.puppeteerCoreStrings.Execute = "Execute".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Execute]
     
-    @scala.inline
-    def F: typings.puppeteerCore.puppeteerCoreStrings.F = "F".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F]
+    inline def F: typings.puppeteerCore.puppeteerCoreStrings.F = "F".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F]
     
-    @scala.inline
-    def F1: typings.puppeteerCore.puppeteerCoreStrings.F1 = "F1".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F1]
+    inline def F1: typings.puppeteerCore.puppeteerCoreStrings.F1 = "F1".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F1]
     
-    @scala.inline
-    def F10: typings.puppeteerCore.puppeteerCoreStrings.F10 = "F10".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F10]
+    inline def F10: typings.puppeteerCore.puppeteerCoreStrings.F10 = "F10".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F10]
     
-    @scala.inline
-    def F11: typings.puppeteerCore.puppeteerCoreStrings.F11 = "F11".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F11]
+    inline def F11: typings.puppeteerCore.puppeteerCoreStrings.F11 = "F11".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F11]
     
-    @scala.inline
-    def F12: typings.puppeteerCore.puppeteerCoreStrings.F12 = "F12".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F12]
+    inline def F12: typings.puppeteerCore.puppeteerCoreStrings.F12 = "F12".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F12]
     
-    @scala.inline
-    def F13: typings.puppeteerCore.puppeteerCoreStrings.F13 = "F13".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F13]
+    inline def F13: typings.puppeteerCore.puppeteerCoreStrings.F13 = "F13".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F13]
     
-    @scala.inline
-    def F14: typings.puppeteerCore.puppeteerCoreStrings.F14 = "F14".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F14]
+    inline def F14: typings.puppeteerCore.puppeteerCoreStrings.F14 = "F14".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F14]
     
-    @scala.inline
-    def F15: typings.puppeteerCore.puppeteerCoreStrings.F15 = "F15".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F15]
+    inline def F15: typings.puppeteerCore.puppeteerCoreStrings.F15 = "F15".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F15]
     
-    @scala.inline
-    def F16: typings.puppeteerCore.puppeteerCoreStrings.F16 = "F16".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F16]
+    inline def F16: typings.puppeteerCore.puppeteerCoreStrings.F16 = "F16".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F16]
     
-    @scala.inline
-    def F17: typings.puppeteerCore.puppeteerCoreStrings.F17 = "F17".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F17]
+    inline def F17: typings.puppeteerCore.puppeteerCoreStrings.F17 = "F17".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F17]
     
-    @scala.inline
-    def F18: typings.puppeteerCore.puppeteerCoreStrings.F18 = "F18".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F18]
+    inline def F18: typings.puppeteerCore.puppeteerCoreStrings.F18 = "F18".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F18]
     
-    @scala.inline
-    def F19: typings.puppeteerCore.puppeteerCoreStrings.F19 = "F19".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F19]
+    inline def F19: typings.puppeteerCore.puppeteerCoreStrings.F19 = "F19".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F19]
     
-    @scala.inline
-    def F2: typings.puppeteerCore.puppeteerCoreStrings.F2 = "F2".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F2]
+    inline def F2: typings.puppeteerCore.puppeteerCoreStrings.F2 = "F2".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F2]
     
-    @scala.inline
-    def F20: typings.puppeteerCore.puppeteerCoreStrings.F20 = "F20".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F20]
+    inline def F20: typings.puppeteerCore.puppeteerCoreStrings.F20 = "F20".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F20]
     
-    @scala.inline
-    def F21: typings.puppeteerCore.puppeteerCoreStrings.F21 = "F21".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F21]
+    inline def F21: typings.puppeteerCore.puppeteerCoreStrings.F21 = "F21".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F21]
     
-    @scala.inline
-    def F22: typings.puppeteerCore.puppeteerCoreStrings.F22 = "F22".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F22]
+    inline def F22: typings.puppeteerCore.puppeteerCoreStrings.F22 = "F22".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F22]
     
-    @scala.inline
-    def F23: typings.puppeteerCore.puppeteerCoreStrings.F23 = "F23".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F23]
+    inline def F23: typings.puppeteerCore.puppeteerCoreStrings.F23 = "F23".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F23]
     
-    @scala.inline
-    def F24: typings.puppeteerCore.puppeteerCoreStrings.F24 = "F24".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F24]
+    inline def F24: typings.puppeteerCore.puppeteerCoreStrings.F24 = "F24".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F24]
     
-    @scala.inline
-    def F3: typings.puppeteerCore.puppeteerCoreStrings.F3 = "F3".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F3]
+    inline def F3: typings.puppeteerCore.puppeteerCoreStrings.F3 = "F3".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F3]
     
-    @scala.inline
-    def F4: typings.puppeteerCore.puppeteerCoreStrings.F4 = "F4".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F4]
+    inline def F4: typings.puppeteerCore.puppeteerCoreStrings.F4 = "F4".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F4]
     
-    @scala.inline
-    def F5: typings.puppeteerCore.puppeteerCoreStrings.F5 = "F5".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F5]
+    inline def F5: typings.puppeteerCore.puppeteerCoreStrings.F5 = "F5".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F5]
     
-    @scala.inline
-    def F6: typings.puppeteerCore.puppeteerCoreStrings.F6 = "F6".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F6]
+    inline def F6: typings.puppeteerCore.puppeteerCoreStrings.F6 = "F6".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F6]
     
-    @scala.inline
-    def F7: typings.puppeteerCore.puppeteerCoreStrings.F7 = "F7".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F7]
+    inline def F7: typings.puppeteerCore.puppeteerCoreStrings.F7 = "F7".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F7]
     
-    @scala.inline
-    def F8: typings.puppeteerCore.puppeteerCoreStrings.F8 = "F8".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F8]
+    inline def F8: typings.puppeteerCore.puppeteerCoreStrings.F8 = "F8".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F8]
     
-    @scala.inline
-    def F9: typings.puppeteerCore.puppeteerCoreStrings.F9 = "F9".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F9]
+    inline def F9: typings.puppeteerCore.puppeteerCoreStrings.F9 = "F9".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.F9]
     
-    @scala.inline
-    def G: typings.puppeteerCore.puppeteerCoreStrings.G = "G".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.G]
+    inline def G: typings.puppeteerCore.puppeteerCoreStrings.G = "G".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.G]
     
-    @scala.inline
-    def Graveaccent: typings.puppeteerCore.puppeteerCoreStrings.Graveaccent = "`".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Graveaccent]
+    inline def Graveaccent: typings.puppeteerCore.puppeteerCoreStrings.Graveaccent = "`".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Graveaccent]
     
-    @scala.inline
-    def Greaterthansign: typings.puppeteerCore.puppeteerCoreStrings.Greaterthansign = ">".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Greaterthansign]
+    inline def Greaterthansign: typings.puppeteerCore.puppeteerCoreStrings.Greaterthansign = ">".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Greaterthansign]
     
-    @scala.inline
-    def H: typings.puppeteerCore.puppeteerCoreStrings.H = "H".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.H]
+    inline def H: typings.puppeteerCore.puppeteerCoreStrings.H = "H".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.H]
     
-    @scala.inline
-    def Help: typings.puppeteerCore.puppeteerCoreStrings.Help = "Help".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Help]
+    inline def Help: typings.puppeteerCore.puppeteerCoreStrings.Help = "Help".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Help]
     
-    @scala.inline
-    def Home: typings.puppeteerCore.puppeteerCoreStrings.Home = "Home".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Home]
+    inline def Home: typings.puppeteerCore.puppeteerCoreStrings.Home = "Home".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Home]
     
-    @scala.inline
-    def I: typings.puppeteerCore.puppeteerCoreStrings.I = "I".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.I]
+    inline def I: typings.puppeteerCore.puppeteerCoreStrings.I = "I".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.I]
     
-    @scala.inline
-    def Insert: typings.puppeteerCore.puppeteerCoreStrings.Insert = "Insert".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Insert]
+    inline def Insert: typings.puppeteerCore.puppeteerCoreStrings.Insert = "Insert".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Insert]
     
-    @scala.inline
-    def J: typings.puppeteerCore.puppeteerCoreStrings.J = "J".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.J]
+    inline def J: typings.puppeteerCore.puppeteerCoreStrings.J = "J".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.J]
     
-    @scala.inline
-    def K: typings.puppeteerCore.puppeteerCoreStrings.K = "K".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.K]
+    inline def K: typings.puppeteerCore.puppeteerCoreStrings.K = "K".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.K]
     
-    @scala.inline
-    def KeyA: typings.puppeteerCore.puppeteerCoreStrings.KeyA = "KeyA".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyA]
+    inline def KeyA: typings.puppeteerCore.puppeteerCoreStrings.KeyA = "KeyA".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyA]
     
-    @scala.inline
-    def KeyB: typings.puppeteerCore.puppeteerCoreStrings.KeyB = "KeyB".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyB]
+    inline def KeyB: typings.puppeteerCore.puppeteerCoreStrings.KeyB = "KeyB".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyB]
     
-    @scala.inline
-    def KeyC: typings.puppeteerCore.puppeteerCoreStrings.KeyC = "KeyC".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyC]
+    inline def KeyC: typings.puppeteerCore.puppeteerCoreStrings.KeyC = "KeyC".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyC]
     
-    @scala.inline
-    def KeyD: typings.puppeteerCore.puppeteerCoreStrings.KeyD = "KeyD".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyD]
+    inline def KeyD: typings.puppeteerCore.puppeteerCoreStrings.KeyD = "KeyD".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyD]
     
-    @scala.inline
-    def KeyE: typings.puppeteerCore.puppeteerCoreStrings.KeyE = "KeyE".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyE]
+    inline def KeyE: typings.puppeteerCore.puppeteerCoreStrings.KeyE = "KeyE".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyE]
     
-    @scala.inline
-    def KeyF: typings.puppeteerCore.puppeteerCoreStrings.KeyF = "KeyF".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyF]
+    inline def KeyF: typings.puppeteerCore.puppeteerCoreStrings.KeyF = "KeyF".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyF]
     
-    @scala.inline
-    def KeyG: typings.puppeteerCore.puppeteerCoreStrings.KeyG = "KeyG".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyG]
+    inline def KeyG: typings.puppeteerCore.puppeteerCoreStrings.KeyG = "KeyG".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyG]
     
-    @scala.inline
-    def KeyH: typings.puppeteerCore.puppeteerCoreStrings.KeyH = "KeyH".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyH]
+    inline def KeyH: typings.puppeteerCore.puppeteerCoreStrings.KeyH = "KeyH".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyH]
     
-    @scala.inline
-    def KeyI: typings.puppeteerCore.puppeteerCoreStrings.KeyI = "KeyI".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyI]
+    inline def KeyI: typings.puppeteerCore.puppeteerCoreStrings.KeyI = "KeyI".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyI]
     
-    @scala.inline
-    def KeyJ: typings.puppeteerCore.puppeteerCoreStrings.KeyJ = "KeyJ".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyJ]
+    inline def KeyJ: typings.puppeteerCore.puppeteerCoreStrings.KeyJ = "KeyJ".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyJ]
     
-    @scala.inline
-    def KeyK: typings.puppeteerCore.puppeteerCoreStrings.KeyK = "KeyK".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyK]
+    inline def KeyK: typings.puppeteerCore.puppeteerCoreStrings.KeyK = "KeyK".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyK]
     
-    @scala.inline
-    def KeyL: typings.puppeteerCore.puppeteerCoreStrings.KeyL = "KeyL".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyL]
+    inline def KeyL: typings.puppeteerCore.puppeteerCoreStrings.KeyL = "KeyL".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyL]
     
-    @scala.inline
-    def KeyM: typings.puppeteerCore.puppeteerCoreStrings.KeyM = "KeyM".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyM]
+    inline def KeyM: typings.puppeteerCore.puppeteerCoreStrings.KeyM = "KeyM".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyM]
     
-    @scala.inline
-    def KeyN: typings.puppeteerCore.puppeteerCoreStrings.KeyN = "KeyN".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyN]
+    inline def KeyN: typings.puppeteerCore.puppeteerCoreStrings.KeyN = "KeyN".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyN]
     
-    @scala.inline
-    def KeyO: typings.puppeteerCore.puppeteerCoreStrings.KeyO = "KeyO".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyO]
+    inline def KeyO: typings.puppeteerCore.puppeteerCoreStrings.KeyO = "KeyO".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyO]
     
-    @scala.inline
-    def KeyP: typings.puppeteerCore.puppeteerCoreStrings.KeyP = "KeyP".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyP]
+    inline def KeyP: typings.puppeteerCore.puppeteerCoreStrings.KeyP = "KeyP".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyP]
     
-    @scala.inline
-    def KeyQ: typings.puppeteerCore.puppeteerCoreStrings.KeyQ = "KeyQ".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyQ]
+    inline def KeyQ: typings.puppeteerCore.puppeteerCoreStrings.KeyQ = "KeyQ".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyQ]
     
-    @scala.inline
-    def KeyR: typings.puppeteerCore.puppeteerCoreStrings.KeyR = "KeyR".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyR]
+    inline def KeyR: typings.puppeteerCore.puppeteerCoreStrings.KeyR = "KeyR".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyR]
     
-    @scala.inline
-    def KeyS: typings.puppeteerCore.puppeteerCoreStrings.KeyS = "KeyS".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyS]
+    inline def KeyS: typings.puppeteerCore.puppeteerCoreStrings.KeyS = "KeyS".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyS]
     
-    @scala.inline
-    def KeyT: typings.puppeteerCore.puppeteerCoreStrings.KeyT = "KeyT".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyT]
+    inline def KeyT: typings.puppeteerCore.puppeteerCoreStrings.KeyT = "KeyT".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyT]
     
-    @scala.inline
-    def KeyU: typings.puppeteerCore.puppeteerCoreStrings.KeyU = "KeyU".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyU]
+    inline def KeyU: typings.puppeteerCore.puppeteerCoreStrings.KeyU = "KeyU".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyU]
     
-    @scala.inline
-    def KeyV: typings.puppeteerCore.puppeteerCoreStrings.KeyV = "KeyV".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyV]
+    inline def KeyV: typings.puppeteerCore.puppeteerCoreStrings.KeyV = "KeyV".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyV]
     
-    @scala.inline
-    def KeyW: typings.puppeteerCore.puppeteerCoreStrings.KeyW = "KeyW".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyW]
+    inline def KeyW: typings.puppeteerCore.puppeteerCoreStrings.KeyW = "KeyW".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyW]
     
-    @scala.inline
-    def KeyX: typings.puppeteerCore.puppeteerCoreStrings.KeyX = "KeyX".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyX]
+    inline def KeyX: typings.puppeteerCore.puppeteerCoreStrings.KeyX = "KeyX".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyX]
     
-    @scala.inline
-    def KeyY: typings.puppeteerCore.puppeteerCoreStrings.KeyY = "KeyY".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyY]
+    inline def KeyY: typings.puppeteerCore.puppeteerCoreStrings.KeyY = "KeyY".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyY]
     
-    @scala.inline
-    def KeyZ: typings.puppeteerCore.puppeteerCoreStrings.KeyZ = "KeyZ".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyZ]
+    inline def KeyZ: typings.puppeteerCore.puppeteerCoreStrings.KeyZ = "KeyZ".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.KeyZ]
     
-    @scala.inline
-    def L: typings.puppeteerCore.puppeteerCoreStrings.L = "L".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.L]
+    inline def L: typings.puppeteerCore.puppeteerCoreStrings.L = "L".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.L]
     
-    @scala.inline
-    def Leftcurlybracket: typings.puppeteerCore.puppeteerCoreStrings.Leftcurlybracket = "{".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Leftcurlybracket]
+    inline def Leftcurlybracket: typings.puppeteerCore.puppeteerCoreStrings.Leftcurlybracket = "{".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Leftcurlybracket]
     
-    @scala.inline
-    def Leftparenthesis: typings.puppeteerCore.puppeteerCoreStrings.Leftparenthesis = "(".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Leftparenthesis]
+    inline def Leftparenthesis: typings.puppeteerCore.puppeteerCoreStrings.Leftparenthesis = "(".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Leftparenthesis]
     
-    @scala.inline
-    def Lessthansign: typings.puppeteerCore.puppeteerCoreStrings.Lessthansign = "<".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Lessthansign]
+    inline def Lessthansign: typings.puppeteerCore.puppeteerCoreStrings.Lessthansign = "<".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Lessthansign]
     
-    @scala.inline
-    def Linefeed: typings.puppeteerCore.puppeteerCoreStrings.Linefeed = "\n".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Linefeed]
+    inline def Linefeed: typings.puppeteerCore.puppeteerCoreStrings.Linefeed = "\n".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Linefeed]
     
-    @scala.inline
-    def M: typings.puppeteerCore.puppeteerCoreStrings.M = "M".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.M]
+    inline def M: typings.puppeteerCore.puppeteerCoreStrings.M = "M".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.M]
     
-    @scala.inline
-    def MediaPlayPause: typings.puppeteerCore.puppeteerCoreStrings.MediaPlayPause = "MediaPlayPause".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.MediaPlayPause]
+    inline def MediaPlayPause: typings.puppeteerCore.puppeteerCoreStrings.MediaPlayPause = "MediaPlayPause".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.MediaPlayPause]
     
-    @scala.inline
-    def MediaStop: typings.puppeteerCore.puppeteerCoreStrings.MediaStop = "MediaStop".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.MediaStop]
+    inline def MediaStop: typings.puppeteerCore.puppeteerCoreStrings.MediaStop = "MediaStop".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.MediaStop]
     
-    @scala.inline
-    def MediaTrackNext: typings.puppeteerCore.puppeteerCoreStrings.MediaTrackNext = "MediaTrackNext".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.MediaTrackNext]
+    inline def MediaTrackNext: typings.puppeteerCore.puppeteerCoreStrings.MediaTrackNext = "MediaTrackNext".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.MediaTrackNext]
     
-    @scala.inline
-    def MediaTrackPrevious: typings.puppeteerCore.puppeteerCoreStrings.MediaTrackPrevious = "MediaTrackPrevious".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.MediaTrackPrevious]
+    inline def MediaTrackPrevious: typings.puppeteerCore.puppeteerCoreStrings.MediaTrackPrevious = "MediaTrackPrevious".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.MediaTrackPrevious]
     
-    @scala.inline
-    def Meta: typings.puppeteerCore.puppeteerCoreStrings.Meta = "Meta".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Meta]
+    inline def Meta: typings.puppeteerCore.puppeteerCoreStrings.Meta = "Meta".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Meta]
     
-    @scala.inline
-    def MetaLeft: typings.puppeteerCore.puppeteerCoreStrings.MetaLeft = "MetaLeft".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.MetaLeft]
+    inline def MetaLeft: typings.puppeteerCore.puppeteerCoreStrings.MetaLeft = "MetaLeft".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.MetaLeft]
     
-    @scala.inline
-    def MetaRight: typings.puppeteerCore.puppeteerCoreStrings.MetaRight = "MetaRight".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.MetaRight]
+    inline def MetaRight: typings.puppeteerCore.puppeteerCoreStrings.MetaRight = "MetaRight".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.MetaRight]
     
-    @scala.inline
-    def Minus: typings.puppeteerCore.puppeteerCoreStrings.Minus = "Minus".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Minus]
+    inline def Minus: typings.puppeteerCore.puppeteerCoreStrings.Minus = "Minus".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Minus]
     
-    @scala.inline
-    def ModeChange: typings.puppeteerCore.puppeteerCoreStrings.ModeChange = "ModeChange".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.ModeChange]
+    inline def ModeChange: typings.puppeteerCore.puppeteerCoreStrings.ModeChange = "ModeChange".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.ModeChange]
     
-    @scala.inline
-    def N: typings.puppeteerCore.puppeteerCoreStrings.N = "N".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.N]
+    inline def N: typings.puppeteerCore.puppeteerCoreStrings.N = "N".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.N]
     
-    @scala.inline
-    def NonConvert: typings.puppeteerCore.puppeteerCoreStrings.NonConvert = "NonConvert".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.NonConvert]
+    inline def NonConvert: typings.puppeteerCore.puppeteerCoreStrings.NonConvert = "NonConvert".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.NonConvert]
     
-    @scala.inline
-    def Null: typings.puppeteerCore.puppeteerCoreStrings.Null = "\u0000".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Null]
+    inline def Null: typings.puppeteerCore.puppeteerCoreStrings.Null = "\u0000".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Null]
     
-    @scala.inline
-    def NumLock: typings.puppeteerCore.puppeteerCoreStrings.NumLock = "NumLock".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.NumLock]
+    inline def NumLock: typings.puppeteerCore.puppeteerCoreStrings.NumLock = "NumLock".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.NumLock]
     
-    @scala.inline
-    def Numbersign: typings.puppeteerCore.puppeteerCoreStrings.Numbersign = "#".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Numbersign]
+    inline def Numbersign: typings.puppeteerCore.puppeteerCoreStrings.Numbersign = "#".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Numbersign]
     
-    @scala.inline
-    def Numpad0: typings.puppeteerCore.puppeteerCoreStrings.Numpad0 = "Numpad0".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Numpad0]
+    inline def Numpad0: typings.puppeteerCore.puppeteerCoreStrings.Numpad0 = "Numpad0".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Numpad0]
     
-    @scala.inline
-    def Numpad1: typings.puppeteerCore.puppeteerCoreStrings.Numpad1 = "Numpad1".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Numpad1]
+    inline def Numpad1: typings.puppeteerCore.puppeteerCoreStrings.Numpad1 = "Numpad1".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Numpad1]
     
-    @scala.inline
-    def Numpad2: typings.puppeteerCore.puppeteerCoreStrings.Numpad2 = "Numpad2".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Numpad2]
+    inline def Numpad2: typings.puppeteerCore.puppeteerCoreStrings.Numpad2 = "Numpad2".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Numpad2]
     
-    @scala.inline
-    def Numpad3: typings.puppeteerCore.puppeteerCoreStrings.Numpad3 = "Numpad3".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Numpad3]
+    inline def Numpad3: typings.puppeteerCore.puppeteerCoreStrings.Numpad3 = "Numpad3".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Numpad3]
     
-    @scala.inline
-    def Numpad4: typings.puppeteerCore.puppeteerCoreStrings.Numpad4 = "Numpad4".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Numpad4]
+    inline def Numpad4: typings.puppeteerCore.puppeteerCoreStrings.Numpad4 = "Numpad4".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Numpad4]
     
-    @scala.inline
-    def Numpad5: typings.puppeteerCore.puppeteerCoreStrings.Numpad5 = "Numpad5".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Numpad5]
+    inline def Numpad5: typings.puppeteerCore.puppeteerCoreStrings.Numpad5 = "Numpad5".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Numpad5]
     
-    @scala.inline
-    def Numpad6: typings.puppeteerCore.puppeteerCoreStrings.Numpad6 = "Numpad6".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Numpad6]
+    inline def Numpad6: typings.puppeteerCore.puppeteerCoreStrings.Numpad6 = "Numpad6".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Numpad6]
     
-    @scala.inline
-    def Numpad7: typings.puppeteerCore.puppeteerCoreStrings.Numpad7 = "Numpad7".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Numpad7]
+    inline def Numpad7: typings.puppeteerCore.puppeteerCoreStrings.Numpad7 = "Numpad7".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Numpad7]
     
-    @scala.inline
-    def Numpad8: typings.puppeteerCore.puppeteerCoreStrings.Numpad8 = "Numpad8".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Numpad8]
+    inline def Numpad8: typings.puppeteerCore.puppeteerCoreStrings.Numpad8 = "Numpad8".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Numpad8]
     
-    @scala.inline
-    def Numpad9: typings.puppeteerCore.puppeteerCoreStrings.Numpad9 = "Numpad9".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Numpad9]
+    inline def Numpad9: typings.puppeteerCore.puppeteerCoreStrings.Numpad9 = "Numpad9".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Numpad9]
     
-    @scala.inline
-    def NumpadAdd: typings.puppeteerCore.puppeteerCoreStrings.NumpadAdd = "NumpadAdd".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.NumpadAdd]
+    inline def NumpadAdd: typings.puppeteerCore.puppeteerCoreStrings.NumpadAdd = "NumpadAdd".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.NumpadAdd]
     
-    @scala.inline
-    def NumpadDecimal: typings.puppeteerCore.puppeteerCoreStrings.NumpadDecimal = "NumpadDecimal".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.NumpadDecimal]
+    inline def NumpadDecimal: typings.puppeteerCore.puppeteerCoreStrings.NumpadDecimal = "NumpadDecimal".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.NumpadDecimal]
     
-    @scala.inline
-    def NumpadDivide: typings.puppeteerCore.puppeteerCoreStrings.NumpadDivide = "NumpadDivide".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.NumpadDivide]
+    inline def NumpadDivide: typings.puppeteerCore.puppeteerCoreStrings.NumpadDivide = "NumpadDivide".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.NumpadDivide]
     
-    @scala.inline
-    def NumpadEnter: typings.puppeteerCore.puppeteerCoreStrings.NumpadEnter = "NumpadEnter".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.NumpadEnter]
+    inline def NumpadEnter: typings.puppeteerCore.puppeteerCoreStrings.NumpadEnter = "NumpadEnter".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.NumpadEnter]
     
-    @scala.inline
-    def NumpadEqual: typings.puppeteerCore.puppeteerCoreStrings.NumpadEqual = "NumpadEqual".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.NumpadEqual]
+    inline def NumpadEqual: typings.puppeteerCore.puppeteerCoreStrings.NumpadEqual = "NumpadEqual".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.NumpadEqual]
     
-    @scala.inline
-    def NumpadMultiply: typings.puppeteerCore.puppeteerCoreStrings.NumpadMultiply = "NumpadMultiply".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.NumpadMultiply]
+    inline def NumpadMultiply: typings.puppeteerCore.puppeteerCoreStrings.NumpadMultiply = "NumpadMultiply".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.NumpadMultiply]
     
-    @scala.inline
-    def NumpadSubtract: typings.puppeteerCore.puppeteerCoreStrings.NumpadSubtract = "NumpadSubtract".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.NumpadSubtract]
+    inline def NumpadSubtract: typings.puppeteerCore.puppeteerCoreStrings.NumpadSubtract = "NumpadSubtract".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.NumpadSubtract]
     
-    @scala.inline
-    def O: typings.puppeteerCore.puppeteerCoreStrings.O = "O".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.O]
+    inline def O: typings.puppeteerCore.puppeteerCoreStrings.O = "O".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.O]
     
-    @scala.inline
-    def Open: typings.puppeteerCore.puppeteerCoreStrings.Open = "Open".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Open]
+    inline def Open: typings.puppeteerCore.puppeteerCoreStrings.Open = "Open".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Open]
     
-    @scala.inline
-    def P: typings.puppeteerCore.puppeteerCoreStrings.P = "P".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.P]
+    inline def P: typings.puppeteerCore.puppeteerCoreStrings.P = "P".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.P]
     
-    @scala.inline
-    def PageDown: typings.puppeteerCore.puppeteerCoreStrings.PageDown = "PageDown".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.PageDown]
+    inline def PageDown: typings.puppeteerCore.puppeteerCoreStrings.PageDown = "PageDown".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.PageDown]
     
-    @scala.inline
-    def PageUp: typings.puppeteerCore.puppeteerCoreStrings.PageUp = "PageUp".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.PageUp]
+    inline def PageUp: typings.puppeteerCore.puppeteerCoreStrings.PageUp = "PageUp".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.PageUp]
     
-    @scala.inline
-    def Pause: typings.puppeteerCore.puppeteerCoreStrings.Pause = "Pause".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Pause]
+    inline def Pause: typings.puppeteerCore.puppeteerCoreStrings.Pause = "Pause".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Pause]
     
-    @scala.inline
-    def Percentsign: typings.puppeteerCore.puppeteerCoreStrings.Percentsign = "%".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Percentsign]
+    inline def Percentsign: typings.puppeteerCore.puppeteerCoreStrings.Percentsign = "%".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Percentsign]
     
-    @scala.inline
-    def Period: typings.puppeteerCore.puppeteerCoreStrings.Period = "Period".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Period]
+    inline def Period: typings.puppeteerCore.puppeteerCoreStrings.Period = "Period".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Period]
     
-    @scala.inline
-    def Play: typings.puppeteerCore.puppeteerCoreStrings.Play = "Play".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Play]
+    inline def Play: typings.puppeteerCore.puppeteerCoreStrings.Play = "Play".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Play]
     
-    @scala.inline
-    def Plussign: typings.puppeteerCore.puppeteerCoreStrings.Plussign = "+".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Plussign]
+    inline def Plussign: typings.puppeteerCore.puppeteerCoreStrings.Plussign = "+".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Plussign]
     
-    @scala.inline
-    def Power: typings.puppeteerCore.puppeteerCoreStrings.Power = "Power".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Power]
+    inline def Power: typings.puppeteerCore.puppeteerCoreStrings.Power = "Power".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Power]
     
-    @scala.inline
-    def Print: typings.puppeteerCore.puppeteerCoreStrings.Print = "Print".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Print]
+    inline def Print: typings.puppeteerCore.puppeteerCoreStrings.Print = "Print".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Print]
     
-    @scala.inline
-    def PrintScreen: typings.puppeteerCore.puppeteerCoreStrings.PrintScreen = "PrintScreen".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.PrintScreen]
+    inline def PrintScreen: typings.puppeteerCore.puppeteerCoreStrings.PrintScreen = "PrintScreen".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.PrintScreen]
     
-    @scala.inline
-    def Props: typings.puppeteerCore.puppeteerCoreStrings.Props = "Props".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Props]
+    inline def Props: typings.puppeteerCore.puppeteerCoreStrings.Props = "Props".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Props]
     
-    @scala.inline
-    def Q: typings.puppeteerCore.puppeteerCoreStrings.Q = "Q".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Q]
+    inline def Q: typings.puppeteerCore.puppeteerCoreStrings.Q = "Q".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Q]
     
-    @scala.inline
-    def Questionmark: typings.puppeteerCore.puppeteerCoreStrings.Questionmark = "?".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Questionmark]
+    inline def Questionmark: typings.puppeteerCore.puppeteerCoreStrings.Questionmark = "?".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Questionmark]
     
-    @scala.inline
-    def Quotationmark: typings.puppeteerCore.puppeteerCoreStrings.Quotationmark = "\"".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Quotationmark]
+    inline def Quotationmark: typings.puppeteerCore.puppeteerCoreStrings.Quotationmark = "\"".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Quotationmark]
     
-    @scala.inline
-    def Quote: typings.puppeteerCore.puppeteerCoreStrings.Quote = "Quote".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Quote]
+    inline def Quote: typings.puppeteerCore.puppeteerCoreStrings.Quote = "Quote".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Quote]
     
-    @scala.inline
-    def R: typings.puppeteerCore.puppeteerCoreStrings.R = "R".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.R]
+    inline def R: typings.puppeteerCore.puppeteerCoreStrings.R = "R".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.R]
     
-    @scala.inline
-    def Rightcurlybracket: typings.puppeteerCore.puppeteerCoreStrings.Rightcurlybracket = "}".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Rightcurlybracket]
+    inline def Rightcurlybracket: typings.puppeteerCore.puppeteerCoreStrings.Rightcurlybracket = "}".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Rightcurlybracket]
     
-    @scala.inline
-    def Rightparenthesis: typings.puppeteerCore.puppeteerCoreStrings.Rightparenthesis = ")".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Rightparenthesis]
+    inline def Rightparenthesis: typings.puppeteerCore.puppeteerCoreStrings.Rightparenthesis = ")".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Rightparenthesis]
     
-    @scala.inline
-    def S: typings.puppeteerCore.puppeteerCoreStrings.S = "S".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.S]
+    inline def S: typings.puppeteerCore.puppeteerCoreStrings.S = "S".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.S]
     
-    @scala.inline
-    def ScrollLock: typings.puppeteerCore.puppeteerCoreStrings.ScrollLock = "ScrollLock".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.ScrollLock]
+    inline def ScrollLock: typings.puppeteerCore.puppeteerCoreStrings.ScrollLock = "ScrollLock".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.ScrollLock]
     
-    @scala.inline
-    def Select: typings.puppeteerCore.puppeteerCoreStrings.Select = "Select".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Select]
+    inline def Select: typings.puppeteerCore.puppeteerCoreStrings.Select = "Select".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Select]
     
-    @scala.inline
-    def Semicolon: typings.puppeteerCore.puppeteerCoreStrings.Semicolon = "Semicolon".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Semicolon]
+    inline def Semicolon: typings.puppeteerCore.puppeteerCoreStrings.Semicolon = "Semicolon".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Semicolon]
     
-    @scala.inline
-    def Shift: typings.puppeteerCore.puppeteerCoreStrings.Shift = "Shift".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Shift]
+    inline def Shift: typings.puppeteerCore.puppeteerCoreStrings.Shift = "Shift".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Shift]
     
-    @scala.inline
-    def ShiftLeft: typings.puppeteerCore.puppeteerCoreStrings.ShiftLeft = "ShiftLeft".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.ShiftLeft]
+    inline def ShiftLeft: typings.puppeteerCore.puppeteerCoreStrings.ShiftLeft = "ShiftLeft".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.ShiftLeft]
     
-    @scala.inline
-    def ShiftRight: typings.puppeteerCore.puppeteerCoreStrings.ShiftRight = "ShiftRight".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.ShiftRight]
+    inline def ShiftRight: typings.puppeteerCore.puppeteerCoreStrings.ShiftRight = "ShiftRight".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.ShiftRight]
     
-    @scala.inline
-    def Slash: typings.puppeteerCore.puppeteerCoreStrings.Slash = "Slash".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Slash]
+    inline def Slash: typings.puppeteerCore.puppeteerCoreStrings.Slash = "Slash".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Slash]
     
-    @scala.inline
-    def SoftLeft: typings.puppeteerCore.puppeteerCoreStrings.SoftLeft = "SoftLeft".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.SoftLeft]
+    inline def SoftLeft: typings.puppeteerCore.puppeteerCoreStrings.SoftLeft = "SoftLeft".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.SoftLeft]
     
-    @scala.inline
-    def SoftRight: typings.puppeteerCore.puppeteerCoreStrings.SoftRight = "SoftRight".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.SoftRight]
+    inline def SoftRight: typings.puppeteerCore.puppeteerCoreStrings.SoftRight = "SoftRight".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.SoftRight]
     
-    @scala.inline
-    def Space: typings.puppeteerCore.puppeteerCoreStrings.Space = "Space".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Space]
+    inline def Space: typings.puppeteerCore.puppeteerCoreStrings.Space = "Space".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Space]
     
-    @scala.inline
-    def T: typings.puppeteerCore.puppeteerCoreStrings.T = "T".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.T]
+    inline def T: typings.puppeteerCore.puppeteerCoreStrings.T = "T".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.T]
     
-    @scala.inline
-    def Tab: typings.puppeteerCore.puppeteerCoreStrings.Tab = "Tab".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Tab]
+    inline def Tab: typings.puppeteerCore.puppeteerCoreStrings.Tab = "Tab".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Tab]
     
-    @scala.inline
-    def Tilde: typings.puppeteerCore.puppeteerCoreStrings.Tilde = "~".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Tilde]
+    inline def Tilde: typings.puppeteerCore.puppeteerCoreStrings.Tilde = "~".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Tilde]
     
-    @scala.inline
-    def U: typings.puppeteerCore.puppeteerCoreStrings.U = "U".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.U]
+    inline def U: typings.puppeteerCore.puppeteerCoreStrings.U = "U".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.U]
     
-    @scala.inline
-    def V: typings.puppeteerCore.puppeteerCoreStrings.V = "V".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.V]
+    inline def V: typings.puppeteerCore.puppeteerCoreStrings.V = "V".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.V]
     
-    @scala.inline
-    def Verticalline: typings.puppeteerCore.puppeteerCoreStrings.Verticalline = "|".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Verticalline]
+    inline def Verticalline: typings.puppeteerCore.puppeteerCoreStrings.Verticalline = "|".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Verticalline]
     
-    @scala.inline
-    def VolumeDown: typings.puppeteerCore.puppeteerCoreStrings.VolumeDown = "VolumeDown".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.VolumeDown]
+    inline def VolumeDown: typings.puppeteerCore.puppeteerCoreStrings.VolumeDown = "VolumeDown".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.VolumeDown]
     
-    @scala.inline
-    def VolumeUp: typings.puppeteerCore.puppeteerCoreStrings.VolumeUp = "VolumeUp".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.VolumeUp]
+    inline def VolumeUp: typings.puppeteerCore.puppeteerCoreStrings.VolumeUp = "VolumeUp".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.VolumeUp]
     
-    @scala.inline
-    def W: typings.puppeteerCore.puppeteerCoreStrings.W = "W".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.W]
+    inline def W: typings.puppeteerCore.puppeteerCoreStrings.W = "W".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.W]
     
-    @scala.inline
-    def X: typings.puppeteerCore.puppeteerCoreStrings.X = "X".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.X]
+    inline def X: typings.puppeteerCore.puppeteerCoreStrings.X = "X".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.X]
     
-    @scala.inline
-    def Y: typings.puppeteerCore.puppeteerCoreStrings.Y = "Y".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Y]
+    inline def Y: typings.puppeteerCore.puppeteerCoreStrings.Y = "Y".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Y]
     
-    @scala.inline
-    def Z: typings.puppeteerCore.puppeteerCoreStrings.Z = "Z".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Z]
+    inline def Z: typings.puppeteerCore.puppeteerCoreStrings.Z = "Z".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.Z]
     
-    @scala.inline
-    def ZoomOut: typings.puppeteerCore.puppeteerCoreStrings.ZoomOut = "ZoomOut".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.ZoomOut]
+    inline def ZoomOut: typings.puppeteerCore.puppeteerCoreStrings.ZoomOut = "ZoomOut".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.ZoomOut]
     
-    @scala.inline
-    def `[`: typings.puppeteerCore.puppeteerCoreStrings.`[` = "[".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.`[`]
+    inline def `[`: typings.puppeteerCore.puppeteerCoreStrings.`[` = "[".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.`[`]
     
-    @scala.inline
-    def `]`: typings.puppeteerCore.puppeteerCoreStrings.`]` = "]".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.`]`]
+    inline def `]`: typings.puppeteerCore.puppeteerCoreStrings.`]` = "]".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.`]`]
     
-    @scala.inline
-    def _dash: `-_` = "-".asInstanceOf[`-_`]
+    inline def _dash: `-_` = "-".asInstanceOf[`-_`]
     
-    @scala.inline
-    def _underscore: typings.puppeteerCore.puppeteerCoreStrings._underscore = "_".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings._underscore]
+    inline def _underscore: typings.puppeteerCore.puppeteerCoreStrings._underscore = "_".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings._underscore]
     
-    @scala.inline
-    def a: a_ = "a".asInstanceOf[a_]
+    inline def a: a_ = "a".asInstanceOf[a_]
     
-    @scala.inline
-    def b: b_ = "b".asInstanceOf[b_]
+    inline def b: b_ = "b".asInstanceOf[b_]
     
-    @scala.inline
-    def c: c_ = "c".asInstanceOf[c_]
+    inline def c: c_ = "c".asInstanceOf[c_]
     
-    @scala.inline
-    def d: d_ = "d".asInstanceOf[d_]
+    inline def d: d_ = "d".asInstanceOf[d_]
     
-    @scala.inline
-    def e: e_ = "e".asInstanceOf[e_]
+    inline def e: e_ = "e".asInstanceOf[e_]
     
-    @scala.inline
-    def f: f_ = "f".asInstanceOf[f_]
+    inline def f: f_ = "f".asInstanceOf[f_]
     
-    @scala.inline
-    def g: g_ = "g".asInstanceOf[g_]
+    inline def g: g_ = "g".asInstanceOf[g_]
     
-    @scala.inline
-    def h: h_ = "h".asInstanceOf[h_]
+    inline def h: h_ = "h".asInstanceOf[h_]
     
-    @scala.inline
-    def i: i_ = "i".asInstanceOf[i_]
+    inline def i: i_ = "i".asInstanceOf[i_]
     
-    @scala.inline
-    def j: j_ = "j".asInstanceOf[j_]
+    inline def j: j_ = "j".asInstanceOf[j_]
     
-    @scala.inline
-    def k: k_ = "k".asInstanceOf[k_]
+    inline def k: k_ = "k".asInstanceOf[k_]
     
-    @scala.inline
-    def l: l_ = "l".asInstanceOf[l_]
+    inline def l: l_ = "l".asInstanceOf[l_]
     
-    @scala.inline
-    def m: m_ = "m".asInstanceOf[m_]
+    inline def m: m_ = "m".asInstanceOf[m_]
     
-    @scala.inline
-    def n: n_ = "n".asInstanceOf[n_]
+    inline def n: n_ = "n".asInstanceOf[n_]
     
-    @scala.inline
-    def o: o_ = "o".asInstanceOf[o_]
+    inline def o: o_ = "o".asInstanceOf[o_]
     
-    @scala.inline
-    def p: p_ = "p".asInstanceOf[p_]
+    inline def p: p_ = "p".asInstanceOf[p_]
     
-    @scala.inline
-    def q: q_ = "q".asInstanceOf[q_]
+    inline def q: q_ = "q".asInstanceOf[q_]
     
-    @scala.inline
-    def r: r_ = "r".asInstanceOf[r_]
+    inline def r: r_ = "r".asInstanceOf[r_]
     
-    @scala.inline
-    def s: s_ = "s".asInstanceOf[s_]
+    inline def s: s_ = "s".asInstanceOf[s_]
     
-    @scala.inline
-    def t: t_ = "t".asInstanceOf[t_]
+    inline def t: t_ = "t".asInstanceOf[t_]
     
-    @scala.inline
-    def u: u_ = "u".asInstanceOf[u_]
+    inline def u: u_ = "u".asInstanceOf[u_]
     
-    @scala.inline
-    def v: v_ = "v".asInstanceOf[v_]
+    inline def v: v_ = "v".asInstanceOf[v_]
     
-    @scala.inline
-    def w: w_ = "w".asInstanceOf[w_]
+    inline def w: w_ = "w".asInstanceOf[w_]
     
-    @scala.inline
-    def x: x_ = "x".asInstanceOf[x_]
+    inline def x: x_ = "x".asInstanceOf[x_]
     
-    @scala.inline
-    def y: y_ = "y".asInstanceOf[y_]
+    inline def y: y_ = "y".asInstanceOf[y_]
     
-    @scala.inline
-    def z: z_ = "z".asInstanceOf[z_]
+    inline def z: z_ = "z".asInstanceOf[z_]
   }
 }

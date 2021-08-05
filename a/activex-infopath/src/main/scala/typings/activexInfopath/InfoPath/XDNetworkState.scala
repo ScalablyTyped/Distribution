@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait XDNetworkState extends StObject {
   
-  @JSName("InfoPath.XDNetworkState_typekey")
+  /* private */ @JSName("InfoPath.XDNetworkState_typekey")
   var InfoPathDotXDNetworkState_typekey: XDNetworkState
   
   def IsDestinationReachable(bstrDestination: String): Boolean
@@ -15,8 +15,7 @@ trait XDNetworkState extends StObject {
 }
 object XDNetworkState {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     InfoPathDotXDNetworkState_typekey: XDNetworkState,
     IsDestinationReachable: String => Boolean,
     MachineOnlineState: XdMachineOnlineState
@@ -26,16 +25,12 @@ object XDNetworkState {
     __obj.asInstanceOf[XDNetworkState]
   }
   
-  @scala.inline
-  implicit class XDNetworkStateMutableBuilder[Self <: XDNetworkState] (val x: Self) extends AnyVal {
+  extension [Self <: XDNetworkState](x: Self) {
     
-    @scala.inline
-    def setInfoPathDotXDNetworkState_typekey(value: XDNetworkState): Self = StObject.set(x, "InfoPath.XDNetworkState_typekey", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotXDNetworkState_typekey(value: XDNetworkState): Self = StObject.set(x, "InfoPath.XDNetworkState_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDestinationReachable(value: String => Boolean): Self = StObject.set(x, "IsDestinationReachable", js.Any.fromFunction1(value))
+    inline def setIsDestinationReachable(value: String => Boolean): Self = StObject.set(x, "IsDestinationReachable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMachineOnlineState(value: XdMachineOnlineState): Self = StObject.set(x, "MachineOnlineState", value.asInstanceOf[js.Any])
+    inline def setMachineOnlineState(value: XdMachineOnlineState): Self = StObject.set(x, "MachineOnlineState", value.asInstanceOf[js.Any])
   }
 }

@@ -12,6 +12,5 @@ object dropdownContentDropdownContentDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def dropdownContentDriverFactory(hasElementEventTrigger: Element): GetOptionsCount = ^.asInstanceOf[js.Dynamic].applyDynamic("dropdownContentDriverFactory")(hasElementEventTrigger.asInstanceOf[js.Any]).asInstanceOf[GetOptionsCount]
+  inline def dropdownContentDriverFactory(hasElementEventTrigger: Element): GetOptionsCount = ^.asInstanceOf[js.Dynamic].applyDynamic("dropdownContentDriverFactory")(hasElementEventTrigger.asInstanceOf[js.Any]).asInstanceOf[GetOptionsCount]
 }

@@ -47,8 +47,7 @@ object audio {
   }
   object AudioDeviceInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       deviceName: String,
       deviceType: DeviceType,
       displayName: String,
@@ -61,35 +60,25 @@ object audio {
       __obj.asInstanceOf[AudioDeviceInfo]
     }
     
-    @scala.inline
-    implicit class AudioDeviceInfoMutableBuilder[Self <: AudioDeviceInfo] (val x: Self) extends AnyVal {
+    extension [Self <: AudioDeviceInfo](x: Self) {
       
-      @scala.inline
-      def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
+      inline def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceType(value: DeviceType): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
+      inline def setDeviceType(value: DeviceType): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+      inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevel(value: integer): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: integer): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStableDeviceId(value: String): Self = StObject.set(x, "stableDeviceId", value.asInstanceOf[js.Any])
+      inline def setStableDeviceId(value: String): Self = StObject.set(x, "stableDeviceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStableDeviceIdUndefined: Self = StObject.set(x, "stableDeviceId", js.undefined)
+      inline def setStableDeviceIdUndefined: Self = StObject.set(x, "stableDeviceId", js.undefined)
       
-      @scala.inline
-      def setStreamType(value: StreamType): Self = StObject.set(x, "streamType", value.asInstanceOf[js.Any])
+      inline def setStreamType(value: StreamType): Self = StObject.set(x, "streamType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -109,32 +98,24 @@ object audio {
   }
   object DeviceIdLists {
     
-    @scala.inline
-    def apply(): DeviceIdLists = {
+    inline def apply(): DeviceIdLists = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DeviceIdLists]
     }
     
-    @scala.inline
-    implicit class DeviceIdListsMutableBuilder[Self <: DeviceIdLists] (val x: Self) extends AnyVal {
+    extension [Self <: DeviceIdLists](x: Self) {
       
-      @scala.inline
-      def setInput(value: js.Array[String]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: js.Array[String]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+      inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
       
-      @scala.inline
-      def setInputVarargs(value: String*): Self = StObject.set(x, "input", js.Array(value :_*))
+      inline def setInputVarargs(value: String*): Self = StObject.set(x, "input", js.Array(value :_*))
       
-      @scala.inline
-      def setOutput(value: js.Array[String]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: js.Array[String]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+      inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
       
-      @scala.inline
-      def setOutputVarargs(value: String*): Self = StObject.set(x, "output", js.Array(value :_*))
+      inline def setOutputVarargs(value: String*): Self = StObject.set(x, "output", js.Array(value :_*))
     }
   }
   
@@ -158,50 +139,35 @@ object audio {
   trait DeviceType extends StObject
   object DeviceType {
     
-    @scala.inline
-    def BLUETOOTH: typings.chromeApps.chromeAppsStrings.BLUETOOTH = "BLUETOOTH".asInstanceOf[typings.chromeApps.chromeAppsStrings.BLUETOOTH]
+    inline def BLUETOOTH: typings.chromeApps.chromeAppsStrings.BLUETOOTH = "BLUETOOTH".asInstanceOf[typings.chromeApps.chromeAppsStrings.BLUETOOTH]
     
-    @scala.inline
-    def FRONT_MIC: typings.chromeApps.chromeAppsStrings.FRONT_MIC = "FRONT_MIC".asInstanceOf[typings.chromeApps.chromeAppsStrings.FRONT_MIC]
+    inline def FRONT_MIC: typings.chromeApps.chromeAppsStrings.FRONT_MIC = "FRONT_MIC".asInstanceOf[typings.chromeApps.chromeAppsStrings.FRONT_MIC]
     
-    @scala.inline
-    def HDMI: typings.chromeApps.chromeAppsStrings.HDMI = "HDMI".asInstanceOf[typings.chromeApps.chromeAppsStrings.HDMI]
+    inline def HDMI: typings.chromeApps.chromeAppsStrings.HDMI = "HDMI".asInstanceOf[typings.chromeApps.chromeAppsStrings.HDMI]
     
-    @scala.inline
-    def HEADPHONE: typings.chromeApps.chromeAppsStrings.HEADPHONE = "HEADPHONE".asInstanceOf[typings.chromeApps.chromeAppsStrings.HEADPHONE]
+    inline def HEADPHONE: typings.chromeApps.chromeAppsStrings.HEADPHONE = "HEADPHONE".asInstanceOf[typings.chromeApps.chromeAppsStrings.HEADPHONE]
     
-    @scala.inline
-    def HOTWORD: typings.chromeApps.chromeAppsStrings.HOTWORD = "HOTWORD".asInstanceOf[typings.chromeApps.chromeAppsStrings.HOTWORD]
+    inline def HOTWORD: typings.chromeApps.chromeAppsStrings.HOTWORD = "HOTWORD".asInstanceOf[typings.chromeApps.chromeAppsStrings.HOTWORD]
     
-    @scala.inline
-    def INTERNAL_MIC: typings.chromeApps.chromeAppsStrings.INTERNAL_MIC = "INTERNAL_MIC".asInstanceOf[typings.chromeApps.chromeAppsStrings.INTERNAL_MIC]
+    inline def INTERNAL_MIC: typings.chromeApps.chromeAppsStrings.INTERNAL_MIC = "INTERNAL_MIC".asInstanceOf[typings.chromeApps.chromeAppsStrings.INTERNAL_MIC]
     
-    @scala.inline
-    def INTERNAL_SPEAKER: typings.chromeApps.chromeAppsStrings.INTERNAL_SPEAKER = "INTERNAL_SPEAKER".asInstanceOf[typings.chromeApps.chromeAppsStrings.INTERNAL_SPEAKER]
+    inline def INTERNAL_SPEAKER: typings.chromeApps.chromeAppsStrings.INTERNAL_SPEAKER = "INTERNAL_SPEAKER".asInstanceOf[typings.chromeApps.chromeAppsStrings.INTERNAL_SPEAKER]
     
-    @scala.inline
-    def KEYBOARD_MIC: typings.chromeApps.chromeAppsStrings.KEYBOARD_MIC = "KEYBOARD_MIC".asInstanceOf[typings.chromeApps.chromeAppsStrings.KEYBOARD_MIC]
+    inline def KEYBOARD_MIC: typings.chromeApps.chromeAppsStrings.KEYBOARD_MIC = "KEYBOARD_MIC".asInstanceOf[typings.chromeApps.chromeAppsStrings.KEYBOARD_MIC]
     
-    @scala.inline
-    def LINEOUT: typings.chromeApps.chromeAppsStrings.LINEOUT = "LINEOUT".asInstanceOf[typings.chromeApps.chromeAppsStrings.LINEOUT]
+    inline def LINEOUT: typings.chromeApps.chromeAppsStrings.LINEOUT = "LINEOUT".asInstanceOf[typings.chromeApps.chromeAppsStrings.LINEOUT]
     
-    @scala.inline
-    def MIC: typings.chromeApps.chromeAppsStrings.MIC = "MIC".asInstanceOf[typings.chromeApps.chromeAppsStrings.MIC]
+    inline def MIC: typings.chromeApps.chromeAppsStrings.MIC = "MIC".asInstanceOf[typings.chromeApps.chromeAppsStrings.MIC]
     
-    @scala.inline
-    def OTHER: typings.chromeApps.chromeAppsStrings.OTHER = "OTHER".asInstanceOf[typings.chromeApps.chromeAppsStrings.OTHER]
+    inline def OTHER: typings.chromeApps.chromeAppsStrings.OTHER = "OTHER".asInstanceOf[typings.chromeApps.chromeAppsStrings.OTHER]
     
-    @scala.inline
-    def POST_DSP_LOOPBACK: typings.chromeApps.chromeAppsStrings.POST_DSP_LOOPBACK = "POST_DSP_LOOPBACK".asInstanceOf[typings.chromeApps.chromeAppsStrings.POST_DSP_LOOPBACK]
+    inline def POST_DSP_LOOPBACK: typings.chromeApps.chromeAppsStrings.POST_DSP_LOOPBACK = "POST_DSP_LOOPBACK".asInstanceOf[typings.chromeApps.chromeAppsStrings.POST_DSP_LOOPBACK]
     
-    @scala.inline
-    def POST_MIX_LOOPBACK: typings.chromeApps.chromeAppsStrings.POST_MIX_LOOPBACK = "POST_MIX_LOOPBACK".asInstanceOf[typings.chromeApps.chromeAppsStrings.POST_MIX_LOOPBACK]
+    inline def POST_MIX_LOOPBACK: typings.chromeApps.chromeAppsStrings.POST_MIX_LOOPBACK = "POST_MIX_LOOPBACK".asInstanceOf[typings.chromeApps.chromeAppsStrings.POST_MIX_LOOPBACK]
     
-    @scala.inline
-    def REAR_MIC: typings.chromeApps.chromeAppsStrings.REAR_MIC = "REAR_MIC".asInstanceOf[typings.chromeApps.chromeAppsStrings.REAR_MIC]
+    inline def REAR_MIC: typings.chromeApps.chromeAppsStrings.REAR_MIC = "REAR_MIC".asInstanceOf[typings.chromeApps.chromeAppsStrings.REAR_MIC]
     
-    @scala.inline
-    def USB: typings.chromeApps.chromeAppsStrings.USB = "USB".asInstanceOf[typings.chromeApps.chromeAppsStrings.USB]
+    inline def USB: typings.chromeApps.chromeAppsStrings.USB = "USB".asInstanceOf[typings.chromeApps.chromeAppsStrings.USB]
   }
   
   /**
@@ -222,29 +188,22 @@ object audio {
   }
   object Filter {
     
-    @scala.inline
-    def apply(): Filter = {
+    inline def apply(): Filter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Filter]
     }
     
-    @scala.inline
-    implicit class FilterMutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
+    extension [Self <: Filter](x: Self) {
       
-      @scala.inline
-      def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+      inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
+      inline def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
       
-      @scala.inline
-      def setStreamTypes(value: js.Array[StreamType]): Self = StObject.set(x, "streamTypes", value.asInstanceOf[js.Any])
+      inline def setStreamTypes(value: js.Array[StreamType]): Self = StObject.set(x, "streamTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamTypesUndefined: Self = StObject.set(x, "streamTypes", js.undefined)
+      inline def setStreamTypesUndefined: Self = StObject.set(x, "streamTypes", js.undefined)
       
-      @scala.inline
-      def setStreamTypesVarargs(value: StreamType*): Self = StObject.set(x, "streamTypes", js.Array(value :_*))
+      inline def setStreamTypesVarargs(value: StreamType*): Self = StObject.set(x, "streamTypes", js.Array(value :_*))
     }
   }
   
@@ -259,20 +218,16 @@ object audio {
   }
   object SetDeviceProperties {
     
-    @scala.inline
-    def apply(): SetDeviceProperties = {
+    inline def apply(): SetDeviceProperties = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SetDeviceProperties]
     }
     
-    @scala.inline
-    implicit class SetDevicePropertiesMutableBuilder[Self <: SetDeviceProperties] (val x: Self) extends AnyVal {
+    extension [Self <: SetDeviceProperties](x: Self) {
       
-      @scala.inline
-      def setLevel(value: integer): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: integer): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     }
   }
   
@@ -283,10 +238,8 @@ object audio {
   trait StreamType extends StObject
   object StreamType {
     
-    @scala.inline
-    def INPUT: typings.chromeApps.chromeAppsStrings.INPUT = "INPUT".asInstanceOf[typings.chromeApps.chromeAppsStrings.INPUT]
+    inline def INPUT: typings.chromeApps.chromeAppsStrings.INPUT = "INPUT".asInstanceOf[typings.chromeApps.chromeAppsStrings.INPUT]
     
-    @scala.inline
-    def OUTPUT: typings.chromeApps.chromeAppsStrings.OUTPUT = "OUTPUT".asInstanceOf[typings.chromeApps.chromeAppsStrings.OUTPUT]
+    inline def OUTPUT: typings.chromeApps.chromeAppsStrings.OUTPUT = "OUTPUT".asInstanceOf[typings.chromeApps.chromeAppsStrings.OUTPUT]
   }
 }

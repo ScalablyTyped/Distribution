@@ -23,31 +23,23 @@ trait GoogleCloudDialogflowV2AnnotatedMessagePart extends StObject {
 }
 object GoogleCloudDialogflowV2AnnotatedMessagePart {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2AnnotatedMessagePart = {
+  inline def apply(): GoogleCloudDialogflowV2AnnotatedMessagePart = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2AnnotatedMessagePart]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2AnnotatedMessagePartMutableBuilder[Self <: GoogleCloudDialogflowV2AnnotatedMessagePart] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2AnnotatedMessagePart](x: Self) {
     
-    @scala.inline
-    def setEntityType(value: String): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
+    inline def setEntityType(value: String): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityTypeUndefined: Self = StObject.set(x, "entityType", js.undefined)
+    inline def setEntityTypeUndefined: Self = StObject.set(x, "entityType", js.undefined)
     
-    @scala.inline
-    def setFormattedValue(value: js.Any): Self = StObject.set(x, "formattedValue", value.asInstanceOf[js.Any])
+    inline def setFormattedValue(value: js.Any): Self = StObject.set(x, "formattedValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormattedValueUndefined: Self = StObject.set(x, "formattedValue", js.undefined)
+    inline def setFormattedValueUndefined: Self = StObject.set(x, "formattedValue", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

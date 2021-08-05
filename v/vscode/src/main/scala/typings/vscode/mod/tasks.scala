@@ -11,13 +11,10 @@ object tasks {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def executeTask(task: Task): Thenable[TaskExecution] = ^.asInstanceOf[js.Dynamic].applyDynamic("executeTask")(task.asInstanceOf[js.Any]).asInstanceOf[Thenable[TaskExecution]]
+  inline def executeTask(task: Task): Thenable[TaskExecution] = ^.asInstanceOf[js.Dynamic].applyDynamic("executeTask")(task.asInstanceOf[js.Any]).asInstanceOf[Thenable[TaskExecution]]
   
-  @scala.inline
-  def fetchTasks(): Thenable[js.Array[Task]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchTasks")().asInstanceOf[Thenable[js.Array[Task]]]
-  @scala.inline
-  def fetchTasks(filter: TaskFilter): Thenable[js.Array[Task]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchTasks")(filter.asInstanceOf[js.Any]).asInstanceOf[Thenable[js.Array[Task]]]
+  inline def fetchTasks(): Thenable[js.Array[Task]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchTasks")().asInstanceOf[Thenable[js.Array[Task]]]
+  inline def fetchTasks(filter: TaskFilter): Thenable[js.Array[Task]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchTasks")(filter.asInstanceOf[js.Any]).asInstanceOf[Thenable[js.Array[Task]]]
   
   @JSImport("vscode", "tasks.onDidEndTask")
   @js.native
@@ -35,8 +32,7 @@ object tasks {
   @js.native
   val onDidStartTaskProcess: Event[TaskProcessStartEvent] = js.native
   
-  @scala.inline
-  def registerTaskProvider(`type`: String, provider: TaskProvider[Task]): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerTaskProvider")(`type`.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[Disposable]
+  inline def registerTaskProvider(`type`: String, provider: TaskProvider[Task]): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerTaskProvider")(`type`.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
   @JSImport("vscode", "tasks.taskExecutions")
   @js.native

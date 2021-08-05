@@ -26,8 +26,7 @@ trait DomMixin extends StObject {
 }
 object DomMixin {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appendChildren: js.Any,
     beforeEl: js.Any,
     createBuffer: js.Any,
@@ -42,34 +41,24 @@ object DomMixin {
     __obj.asInstanceOf[DomMixin]
   }
   
-  @scala.inline
-  implicit class DomMixinMutableBuilder[Self <: DomMixin] (val x: Self) extends AnyVal {
+  extension [Self <: DomMixin](x: Self) {
     
-    @scala.inline
-    def setAppendChildren(value: js.Any): Self = StObject.set(x, "appendChildren", value.asInstanceOf[js.Any])
+    inline def setAppendChildren(value: js.Any): Self = StObject.set(x, "appendChildren", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeforeEl(value: js.Any): Self = StObject.set(x, "beforeEl", value.asInstanceOf[js.Any])
+    inline def setBeforeEl(value: js.Any): Self = StObject.set(x, "beforeEl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateBuffer(value: js.Any): Self = StObject.set(x, "createBuffer", value.asInstanceOf[js.Any])
+    inline def setCreateBuffer(value: js.Any): Self = StObject.set(x, "createBuffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetachContents(value: js.Any): Self = StObject.set(x, "detachContents", value.asInstanceOf[js.Any])
+    inline def setDetachContents(value: js.Any): Self = StObject.set(x, "detachContents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetachEl(value: js.Any): Self = StObject.set(x, "detachEl", value.asInstanceOf[js.Any])
+    inline def setDetachEl(value: js.Any): Self = StObject.set(x, "detachEl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindEls(value: js.Any): Self = StObject.set(x, "findEls", value.asInstanceOf[js.Any])
+    inline def setFindEls(value: js.Any): Self = StObject.set(x, "findEls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveEl(value: js.Any): Self = StObject.set(x, "removeEl", value.asInstanceOf[js.Any])
+    inline def setRemoveEl(value: js.Any): Self = StObject.set(x, "removeEl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceEl(value: js.Any): Self = StObject.set(x, "replaceEl", value.asInstanceOf[js.Any])
+    inline def setReplaceEl(value: js.Any): Self = StObject.set(x, "replaceEl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetInnerContent(value: js.Any): Self = StObject.set(x, "setInnerContent", value.asInstanceOf[js.Any])
+    inline def setSetInnerContent(value: js.Any): Self = StObject.set(x, "setInnerContent", value.asInstanceOf[js.Any])
   }
 }

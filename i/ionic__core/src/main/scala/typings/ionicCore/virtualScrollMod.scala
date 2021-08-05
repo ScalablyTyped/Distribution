@@ -55,11 +55,11 @@ object virtualScrollMod {
       */
     var approxItemHeight: Double = js.native
     
-    var calcCells: js.Any = js.native
+    /* private */ var calcCells: js.Any = js.native
     
-    var calcHeightIndex: js.Any = js.native
+    /* private */ var calcHeightIndex: js.Any = js.native
     
-    var cells: js.Any = js.native
+    /* private */ var cells: js.Any = js.native
     
     /**
       * This method marks the tail the items array as dirty, so they can be re-rendered.
@@ -87,9 +87,9 @@ object virtualScrollMod {
     @JSName("connectedCallback")
     def connectedCallback_MVirtualScroll(): js.Promise[Unit] = js.native
     
-    var contentEl: js.Any = js.native
+    /* private */ var contentEl: js.Any = js.native
     
-    var currentScrollTop: js.Any = js.native
+    /* private */ var currentScrollTop: js.Any = js.native
     
     @JSName("disconnectedCallback")
     def disconnectedCallback_MVirtualScroll(): Unit = js.native
@@ -99,7 +99,7 @@ object virtualScrollMod {
     
     var el: HTMLIonVirtualScrollElement = js.native
     
-    var enableScrollEvents: js.Any = js.native
+    /* private */ var enableScrollEvents: js.Any = js.native
     
     /**
       * Section footers and the data used within its given
@@ -115,7 +115,7 @@ object virtualScrollMod {
       */
     var footerHeight: js.UndefOr[FooterHeightFn] = js.native
     
-    var getHeightIndex: js.Any = js.native
+    /* private */ var getHeightIndex: js.Any = js.native
     
     /**
       * Section headers and the data used within its given
@@ -134,11 +134,11 @@ object virtualScrollMod {
       */
     var headerHeight: js.UndefOr[HeaderHeightFn] = js.native
     
-    var heightIndex: js.Any = js.native
+    /* private */ var heightIndex: js.Any = js.native
     
-    var indexDirty: js.Any = js.native
+    /* private */ var indexDirty: js.Any = js.native
     
-    var isEnabled: js.Any = js.native
+    /* private */ var isEnabled: js.Any = js.native
     
     /**
       * An optional function that maps each item within their height.
@@ -160,7 +160,7 @@ object virtualScrollMod {
     
     def itemsChanged(): Unit = js.native
     
-    var lastItemLen: js.Any = js.native
+    /* private */ var lastItemLen: js.Any = js.native
     
     /**
       * NOTE: only Vanilla JS API.
@@ -169,16 +169,16 @@ object virtualScrollMod {
     
     def onResize(): Unit = js.native
     
-    var onScroll: js.Any = js.native
+    /* private */ var onScroll: js.Any = js.native
     
     /**
       * Returns the position of the virtual item at the given index.
       */
     def positionForItem(index: Double): js.Promise[Double] = js.native
     
-    var range: js.Any = js.native
+    /* private */ var range: js.Any = js.native
     
-    var readVS: js.Any = js.native
+    /* private */ var readVS: js.Any = js.native
     
     /**
       * NOTE: only JSX API for stencil.
@@ -201,35 +201,35 @@ object virtualScrollMod {
       */
     var renderItem: js.UndefOr[js.Function2[/* item */ js.Any, /* index */ Double, js.Any]] = js.native
     
-    var renderVirtualNode: js.Any = js.native
+    /* private */ var renderVirtualNode: js.Any = js.native
     
     @JSName("render")
     def render_MVirtualScroll(): js.Any = js.native
     
-    var rmEvent: js.Any = js.native
+    /* private */ var rmEvent: js.Any = js.native
     
-    var scheduleUpdate: js.Any = js.native
+    /* private */ var scheduleUpdate: js.Any = js.native
     
-    var scrollEl: js.Any = js.native
+    /* private */ var scrollEl: js.Any = js.native
     
-    var setCellHeight: js.Any = js.native
+    /* private */ var setCellHeight: js.Any = js.native
     
-    var timerUpdate: js.Any = js.native
+    /* private */ var timerUpdate: js.Any = js.native
     
     var totalHeight: Double = js.native
     
-    var updateCellHeight: js.Any = js.native
+    /* private */ var updateCellHeight: js.Any = js.native
     
-    var updateState: js.Any = js.native
+    /* private */ var updateState: js.Any = js.native
     
-    var updateVirtualScroll: js.Any = js.native
+    /* private */ var updateVirtualScroll: js.Any = js.native
     
-    var viewportHeight: js.Any = js.native
+    /* private */ var viewportHeight: js.Any = js.native
     
-    var viewportOffset: js.Any = js.native
+    /* private */ var viewportOffset: js.Any = js.native
     
-    var virtualDom: js.Any = js.native
+    /* private */ var virtualDom: js.Any = js.native
     
-    var writeVS: js.Any = js.native
+    /* private */ var writeVS: js.Any = js.native
   }
 }

@@ -53,29 +53,21 @@ object ioncesignalMod {
     @js.native
     val ^ : js.Symbol = js.native
     
-    @scala.inline
-    implicit class IOnceSignalMutableBuilder[Self <: IOnceSignal] (val x: Self) extends AnyVal {
+    extension [Self <: IOnceSignal](x: Self) {
       
-      @scala.inline
-      def setAddOnce(value: js.Function => ISlot): Self = StObject.set(x, "addOnce", js.Any.fromFunction1(value))
+      inline def setAddOnce(value: js.Function => ISlot): Self = StObject.set(x, "addOnce", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDispatch(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
+      inline def setDispatch(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNumListeners(value: Double): Self = StObject.set(x, "numListeners", value.asInstanceOf[js.Any])
+      inline def setNumListeners(value: Double): Self = StObject.set(x, "numListeners", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemove(value: js.Function => ISlot): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+      inline def setRemove(value: js.Function => ISlot): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveAll(value: () => Unit): Self = StObject.set(x, "removeAll", js.Any.fromFunction0(value))
+      inline def setRemoveAll(value: () => Unit): Self = StObject.set(x, "removeAll", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setValueClasses(value: js.Array[js.Any]): Self = StObject.set(x, "valueClasses", value.asInstanceOf[js.Any])
+      inline def setValueClasses(value: js.Array[js.Any]): Self = StObject.set(x, "valueClasses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueClassesVarargs(value: js.Any*): Self = StObject.set(x, "valueClasses", js.Array(value :_*))
+      inline def setValueClassesVarargs(value: js.Any*): Self = StObject.set(x, "valueClasses", js.Array(value :_*))
     }
   }
 }

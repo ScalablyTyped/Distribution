@@ -59,8 +59,7 @@ object normandyAddonStudy {
   }
   object Study {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       active: Boolean,
       addonId: String,
       addonUrl: String,
@@ -80,50 +79,35 @@ object normandyAddonStudy {
       __obj.asInstanceOf[Study]
     }
     
-    @scala.inline
-    implicit class StudyMutableBuilder[Self <: Study] (val x: Self) extends AnyVal {
+    extension [Self <: Study](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddonId(value: String): Self = StObject.set(x, "addonId", value.asInstanceOf[js.Any])
+      inline def setAddonId(value: String): Self = StObject.set(x, "addonId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddonUrl(value: String): Self = StObject.set(x, "addonUrl", value.asInstanceOf[js.Any])
+      inline def setAddonUrl(value: String): Self = StObject.set(x, "addonUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddonVersion(value: String): Self = StObject.set(x, "addonVersion", value.asInstanceOf[js.Any])
+      inline def setAddonVersion(value: String): Self = StObject.set(x, "addonVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
+      inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionApiId(value: Double): Self = StObject.set(x, "extensionApiId", value.asInstanceOf[js.Any])
+      inline def setExtensionApiId(value: Double): Self = StObject.set(x, "extensionApiId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionHash(value: String): Self = StObject.set(x, "extensionHash", value.asInstanceOf[js.Any])
+      inline def setExtensionHash(value: String): Self = StObject.set(x, "extensionHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionHashAlgorithm(value: String): Self = StObject.set(x, "extensionHashAlgorithm", value.asInstanceOf[js.Any])
+      inline def setExtensionHashAlgorithm(value: String): Self = StObject.set(x, "extensionHashAlgorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecipeId(value: Double): Self = StObject.set(x, "recipeId", value.asInstanceOf[js.Any])
+      inline def setRecipeId(value: Double): Self = StObject.set(x, "recipeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
+      inline def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStudyEndDate(value: Date): Self = StObject.set(x, "studyEndDate", value.asInstanceOf[js.Any])
+      inline def setStudyEndDate(value: Date): Self = StObject.set(x, "studyEndDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStudyStartDate(value: Date): Self = StObject.set(x, "studyStartDate", value.asInstanceOf[js.Any])
+      inline def setStudyStartDate(value: Date): Self = StObject.set(x, "studyStartDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserFacingDescription(value: String): Self = StObject.set(x, "userFacingDescription", value.asInstanceOf[js.Any])
+      inline def setUserFacingDescription(value: String): Self = StObject.set(x, "userFacingDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserFacingName(value: String): Self = StObject.set(x, "userFacingName", value.asInstanceOf[js.Any])
+      inline def setUserFacingName(value: String): Self = StObject.set(x, "userFacingName", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -77,7 +77,7 @@ trait ReportItem extends StObject {
   
   var NoAging: Boolean = js.native
   
-  @JSName("Outlook.ReportItem_typekey")
+  /* private */ @JSName("Outlook.ReportItem_typekey")
   var OutlookDotReportItem_typekey: ReportItem = js.native
   
   val OutlookInternalVersion: Double = js.native

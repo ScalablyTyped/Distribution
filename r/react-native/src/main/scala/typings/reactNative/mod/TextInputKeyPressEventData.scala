@@ -10,16 +10,13 @@ trait TextInputKeyPressEventData extends StObject {
 }
 object TextInputKeyPressEventData {
   
-  @scala.inline
-  def apply(key: String): TextInputKeyPressEventData = {
+  inline def apply(key: String): TextInputKeyPressEventData = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextInputKeyPressEventData]
   }
   
-  @scala.inline
-  implicit class TextInputKeyPressEventDataMutableBuilder[Self <: TextInputKeyPressEventData] (val x: Self) extends AnyVal {
+  extension [Self <: TextInputKeyPressEventData](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

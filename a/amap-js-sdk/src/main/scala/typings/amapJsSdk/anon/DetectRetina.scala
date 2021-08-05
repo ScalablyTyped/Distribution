@@ -26,67 +26,47 @@ trait DetectRetina extends StObject {
 }
 object DetectRetina {
   
-  @scala.inline
-  def apply(map: typings.amapJsSdk.AMap.Map): DetectRetina = {
+  inline def apply(map: typings.amapJsSdk.AMap.Map): DetectRetina = {
     val __obj = js.Dynamic.literal(map = map.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectRetina]
   }
   
-  @scala.inline
-  implicit class DetectRetinaMutableBuilder[Self <: DetectRetina] (val x: Self) extends AnyVal {
+  extension [Self <: DetectRetina](x: Self) {
     
-    @scala.inline
-    def setDetectRetina(value: Boolean): Self = StObject.set(x, "detectRetina", value.asInstanceOf[js.Any])
+    inline def setDetectRetina(value: Boolean): Self = StObject.set(x, "detectRetina", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectRetinaUndefined: Self = StObject.set(x, "detectRetina", js.undefined)
+    inline def setDetectRetinaUndefined: Self = StObject.set(x, "detectRetina", js.undefined)
     
-    @scala.inline
-    def setErrorUrl(value: String): Self = StObject.set(x, "errorUrl", value.asInstanceOf[js.Any])
+    inline def setErrorUrl(value: String): Self = StObject.set(x, "errorUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUrlUndefined: Self = StObject.set(x, "errorUrl", js.undefined)
+    inline def setErrorUrlUndefined: Self = StObject.set(x, "errorUrl", js.undefined)
     
-    @scala.inline
-    def setGetTileUrl(value: (/* x */ Double, /* y */ Double, /* z */ Double) => String): Self = StObject.set(x, "getTileUrl", js.Any.fromFunction3(value))
+    inline def setGetTileUrl(value: (/* x */ Double, /* y */ Double, /* z */ Double) => String): Self = StObject.set(x, "getTileUrl", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetTileUrlUndefined: Self = StObject.set(x, "getTileUrl", js.undefined)
+    inline def setGetTileUrlUndefined: Self = StObject.set(x, "getTileUrl", js.undefined)
     
-    @scala.inline
-    def setMap(value: typings.amapJsSdk.AMap.Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: typings.amapJsSdk.AMap.Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    @scala.inline
-    def setTileSize(value: Double): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
+    inline def setTileSize(value: Double): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
+    inline def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
     
-    @scala.inline
-    def setTileUrl(value: String): Self = StObject.set(x, "tileUrl", value.asInstanceOf[js.Any])
+    inline def setTileUrl(value: String): Self = StObject.set(x, "tileUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileUrlUndefined: Self = StObject.set(x, "tileUrl", js.undefined)
+    inline def setTileUrlUndefined: Self = StObject.set(x, "tileUrl", js.undefined)
     
-    @scala.inline
-    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     
-    @scala.inline
-    def setZooms(value: js.Array[Double]): Self = StObject.set(x, "zooms", value.asInstanceOf[js.Any])
+    inline def setZooms(value: js.Array[Double]): Self = StObject.set(x, "zooms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomsUndefined: Self = StObject.set(x, "zooms", js.undefined)
+    inline def setZoomsUndefined: Self = StObject.set(x, "zooms", js.undefined)
     
-    @scala.inline
-    def setZoomsVarargs(value: Double*): Self = StObject.set(x, "zooms", js.Array(value :_*))
+    inline def setZoomsVarargs(value: Double*): Self = StObject.set(x, "zooms", js.Array(value :_*))
   }
 }

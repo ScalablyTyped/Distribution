@@ -17,22 +17,17 @@ trait EngineEventEmitter extends StObject {
 }
 object EngineEventEmitter {
   
-  @scala.inline
-  def apply(engine: IPlaybackEngine, eventEmitter: IEventEmitter, theme: IThemeService): EngineEventEmitter = {
+  inline def apply(engine: IPlaybackEngine, eventEmitter: IEventEmitter, theme: IThemeService): EngineEventEmitter = {
     val __obj = js.Dynamic.literal(engine = engine.asInstanceOf[js.Any], eventEmitter = eventEmitter.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[EngineEventEmitter]
   }
   
-  @scala.inline
-  implicit class EngineEventEmitterMutableBuilder[Self <: EngineEventEmitter] (val x: Self) extends AnyVal {
+  extension [Self <: EngineEventEmitter](x: Self) {
     
-    @scala.inline
-    def setEngine(value: IPlaybackEngine): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
+    inline def setEngine(value: IPlaybackEngine): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
+    inline def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTheme(value: IThemeService): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: IThemeService): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
   }
 }

@@ -13,11 +13,8 @@ object utilsTypesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getTypeArgumentsWithDefaults(typeParams: js.Array[TypeParameterDeclaration]): js.Array[TypeNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeArgumentsWithDefaults")(typeParams.asInstanceOf[js.Any]).asInstanceOf[js.Array[TypeNode]]
-  @scala.inline
-  def getTypeArgumentsWithDefaults(typeParams: js.Array[TypeParameterDeclaration], typeArguments: js.Array[TypeNode]): js.Array[TypeNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTypeArgumentsWithDefaults")(typeParams.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any])).asInstanceOf[js.Array[TypeNode]]
+  inline def getTypeArgumentsWithDefaults(typeParams: js.Array[TypeParameterDeclaration]): js.Array[TypeNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeArgumentsWithDefaults")(typeParams.asInstanceOf[js.Any]).asInstanceOf[js.Array[TypeNode]]
+  inline def getTypeArgumentsWithDefaults(typeParams: js.Array[TypeParameterDeclaration], typeArguments: js.Array[TypeNode]): js.Array[TypeNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTypeArgumentsWithDefaults")(typeParams.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any])).asInstanceOf[js.Array[TypeNode]]
   
-  @scala.inline
-  def getTypeParametersOfType(`type`: Type): js.Array[TypeParameterDeclaration] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeParametersOfType")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Array[TypeParameterDeclaration]]
+  inline def getTypeParametersOfType(`type`: Type): js.Array[TypeParameterDeclaration] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeParametersOfType")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Array[TypeParameterDeclaration]]
 }

@@ -12,6 +12,5 @@ object any2BufferMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def any2Buffer(value: js.Any, encoding: BufferEncoding): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("any2Buffer")(value.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def any2Buffer(value: js.Any, encoding: BufferEncoding): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("any2Buffer")(value.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Buffer]
 }

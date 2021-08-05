@@ -28,8 +28,7 @@ trait SubstituteDateTimeFormatOptions
 }
 object SubstituteDateTimeFormatOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     intlOptions: DateTimeFormatOptions,
@@ -40,13 +39,10 @@ object SubstituteDateTimeFormatOptions {
     __obj.asInstanceOf[SubstituteDateTimeFormatOptions]
   }
   
-  @scala.inline
-  implicit class SubstituteDateTimeFormatOptionsMutableBuilder[Self <: SubstituteDateTimeFormatOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SubstituteDateTimeFormatOptions](x: Self) {
     
-    @scala.inline
-    def setIntlOptions(value: DateTimeFormatOptions): Self = StObject.set(x, "intlOptions", value.asInstanceOf[js.Any])
+    inline def setIntlOptions(value: DateTimeFormatOptions): Self = StObject.set(x, "intlOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: date): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: date): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

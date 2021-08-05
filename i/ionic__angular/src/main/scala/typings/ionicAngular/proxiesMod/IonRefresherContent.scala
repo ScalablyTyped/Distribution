@@ -15,7 +15,7 @@ class IonRefresherContent protected ()
      with typings.ionicCore.componentsMod.Components.IonRefresherContent {
   def this(c: ChangeDetectorRef, r: ElementRef[js.Any], z: NgZone) = this()
   
-  var el: HTMLElement = js.native
+  /* protected */ var el: HTMLElement = js.native
   
-  var z: NgZone = js.native
+  /* protected */ var z: NgZone = js.native
 }

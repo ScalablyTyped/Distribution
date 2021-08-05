@@ -15,8 +15,7 @@ object conditionalMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def wrapCondition[CD /* <: ChannelDef[String] | GuideEncodingConditionalValueDef */](
+  inline def wrapCondition[CD /* <: ChannelDef[String] | GuideEncodingConditionalValueDef */](
     model: UnitModel,
     channelDef: CD,
     vgChannel: String,

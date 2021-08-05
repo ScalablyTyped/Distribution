@@ -18,22 +18,17 @@ trait UpdateJsonClassifierRequest extends StObject {
 }
 object UpdateJsonClassifierRequest {
   
-  @scala.inline
-  def apply(Name: NameString): UpdateJsonClassifierRequest = {
+  inline def apply(Name: NameString): UpdateJsonClassifierRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateJsonClassifierRequest]
   }
   
-  @scala.inline
-  implicit class UpdateJsonClassifierRequestMutableBuilder[Self <: UpdateJsonClassifierRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateJsonClassifierRequest](x: Self) {
     
-    @scala.inline
-    def setJsonPath(value: JsonPath): Self = StObject.set(x, "JsonPath", value.asInstanceOf[js.Any])
+    inline def setJsonPath(value: JsonPath): Self = StObject.set(x, "JsonPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsonPathUndefined: Self = StObject.set(x, "JsonPath", js.undefined)
+    inline def setJsonPathUndefined: Self = StObject.set(x, "JsonPath", js.undefined)
     
-    @scala.inline
-    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

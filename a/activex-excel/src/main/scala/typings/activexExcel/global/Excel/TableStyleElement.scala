@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.TableStyleElement")
 @js.native
-class TableStyleElement protected ()
+/* private */ class TableStyleElement ()
   extends StObject
      with typings.activexExcel.Excel.TableStyleElement {
   
@@ -28,7 +28,7 @@ class TableStyleElement protected ()
   /* CompleteClass */
   override val Creator: XlCreator = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.TableStyleElement_typekey")
   var ExcelDotTableStyleElement_typekey: typings.activexExcel.Excel.TableStyleElement = js.native
   

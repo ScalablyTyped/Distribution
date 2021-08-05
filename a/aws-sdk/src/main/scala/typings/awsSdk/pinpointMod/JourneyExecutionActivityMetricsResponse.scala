@@ -38,8 +38,7 @@ trait JourneyExecutionActivityMetricsResponse extends StObject {
 }
 object JourneyExecutionActivityMetricsResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActivityType: string,
     ApplicationId: string,
     JourneyActivityId: string,
@@ -51,25 +50,18 @@ object JourneyExecutionActivityMetricsResponse {
     __obj.asInstanceOf[JourneyExecutionActivityMetricsResponse]
   }
   
-  @scala.inline
-  implicit class JourneyExecutionActivityMetricsResponseMutableBuilder[Self <: JourneyExecutionActivityMetricsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: JourneyExecutionActivityMetricsResponse](x: Self) {
     
-    @scala.inline
-    def setActivityType(value: string): Self = StObject.set(x, "ActivityType", value.asInstanceOf[js.Any])
+    inline def setActivityType(value: string): Self = StObject.set(x, "ActivityType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJourneyActivityId(value: string): Self = StObject.set(x, "JourneyActivityId", value.asInstanceOf[js.Any])
+    inline def setJourneyActivityId(value: string): Self = StObject.set(x, "JourneyActivityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJourneyId(value: string): Self = StObject.set(x, "JourneyId", value.asInstanceOf[js.Any])
+    inline def setJourneyId(value: string): Self = StObject.set(x, "JourneyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastEvaluatedTime(value: string): Self = StObject.set(x, "LastEvaluatedTime", value.asInstanceOf[js.Any])
+    inline def setLastEvaluatedTime(value: string): Self = StObject.set(x, "LastEvaluatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetrics(value: MapOfString): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
+    inline def setMetrics(value: MapOfString): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
   }
 }

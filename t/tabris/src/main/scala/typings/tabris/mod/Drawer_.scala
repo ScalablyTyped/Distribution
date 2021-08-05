@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tabris", "Drawer")
 @js.native
-class Drawer_ protected () extends ContentView_[Widget] {
+/* private */ class Drawer_ () extends ContentView_[Widget] {
   
   /**
     * Closes the drawer.

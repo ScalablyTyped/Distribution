@@ -13,19 +13,15 @@ trait DeleteTransitGatewayVpcAttachmentResult extends StObject {
 }
 object DeleteTransitGatewayVpcAttachmentResult {
   
-  @scala.inline
-  def apply(): DeleteTransitGatewayVpcAttachmentResult = {
+  inline def apply(): DeleteTransitGatewayVpcAttachmentResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteTransitGatewayVpcAttachmentResult]
   }
   
-  @scala.inline
-  implicit class DeleteTransitGatewayVpcAttachmentResultMutableBuilder[Self <: DeleteTransitGatewayVpcAttachmentResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteTransitGatewayVpcAttachmentResult](x: Self) {
     
-    @scala.inline
-    def setTransitGatewayVpcAttachment(value: TransitGatewayVpcAttachment): Self = StObject.set(x, "TransitGatewayVpcAttachment", value.asInstanceOf[js.Any])
+    inline def setTransitGatewayVpcAttachment(value: TransitGatewayVpcAttachment): Self = StObject.set(x, "TransitGatewayVpcAttachment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitGatewayVpcAttachmentUndefined: Self = StObject.set(x, "TransitGatewayVpcAttachment", js.undefined)
+    inline def setTransitGatewayVpcAttachmentUndefined: Self = StObject.set(x, "TransitGatewayVpcAttachment", js.undefined)
   }
 }

@@ -18,22 +18,17 @@ trait DeleteCertificateAuthorityRequest extends StObject {
 }
 object DeleteCertificateAuthorityRequest {
   
-  @scala.inline
-  def apply(CertificateAuthorityArn: Arn): DeleteCertificateAuthorityRequest = {
+  inline def apply(CertificateAuthorityArn: Arn): DeleteCertificateAuthorityRequest = {
     val __obj = js.Dynamic.literal(CertificateAuthorityArn = CertificateAuthorityArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteCertificateAuthorityRequest]
   }
   
-  @scala.inline
-  implicit class DeleteCertificateAuthorityRequestMutableBuilder[Self <: DeleteCertificateAuthorityRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteCertificateAuthorityRequest](x: Self) {
     
-    @scala.inline
-    def setCertificateAuthorityArn(value: Arn): Self = StObject.set(x, "CertificateAuthorityArn", value.asInstanceOf[js.Any])
+    inline def setCertificateAuthorityArn(value: Arn): Self = StObject.set(x, "CertificateAuthorityArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermanentDeletionTimeInDays(value: PermanentDeletionTimeInDays): Self = StObject.set(x, "PermanentDeletionTimeInDays", value.asInstanceOf[js.Any])
+    inline def setPermanentDeletionTimeInDays(value: PermanentDeletionTimeInDays): Self = StObject.set(x, "PermanentDeletionTimeInDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermanentDeletionTimeInDaysUndefined: Self = StObject.set(x, "PermanentDeletionTimeInDays", js.undefined)
+    inline def setPermanentDeletionTimeInDaysUndefined: Self = StObject.set(x, "PermanentDeletionTimeInDays", js.undefined)
   }
 }

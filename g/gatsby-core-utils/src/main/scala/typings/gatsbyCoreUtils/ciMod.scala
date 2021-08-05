@@ -10,9 +10,7 @@ object ciMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getCIName(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getCIName")().asInstanceOf[String | Null]
+  inline def getCIName(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getCIName")().asInstanceOf[String | Null]
   
-  @scala.inline
-  def isCI(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCI")().asInstanceOf[Boolean]
+  inline def isCI(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCI")().asInstanceOf[Boolean]
 }

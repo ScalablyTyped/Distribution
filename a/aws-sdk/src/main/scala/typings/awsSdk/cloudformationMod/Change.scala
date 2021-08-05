@@ -18,25 +18,19 @@ trait Change extends StObject {
 }
 object Change {
   
-  @scala.inline
-  def apply(): Change = {
+  inline def apply(): Change = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Change]
   }
   
-  @scala.inline
-  implicit class ChangeMutableBuilder[Self <: Change] (val x: Self) extends AnyVal {
+  extension [Self <: Change](x: Self) {
     
-    @scala.inline
-    def setResourceChange(value: ResourceChange): Self = StObject.set(x, "ResourceChange", value.asInstanceOf[js.Any])
+    inline def setResourceChange(value: ResourceChange): Self = StObject.set(x, "ResourceChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceChangeUndefined: Self = StObject.set(x, "ResourceChange", js.undefined)
+    inline def setResourceChangeUndefined: Self = StObject.set(x, "ResourceChange", js.undefined)
     
-    @scala.inline
-    def setType(value: ChangeType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: ChangeType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

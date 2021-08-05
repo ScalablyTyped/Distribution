@@ -76,50 +76,37 @@ trait CellEdit[TRow /* <: js.Object */] extends StObject {
 }
 object CellEdit {
   
-  @scala.inline
-  def apply[TRow /* <: js.Object */](mode: CellEditClickMode): CellEdit[TRow] = {
+  inline def apply[TRow /* <: js.Object */](mode: CellEditClickMode): CellEdit[TRow] = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellEdit[TRow]]
   }
   
-  @scala.inline
-  implicit class CellEditMutableBuilder[Self <: CellEdit[?], TRow /* <: js.Object */] (val x: Self & CellEdit[TRow]) extends AnyVal {
+  extension [Self <: CellEdit[?], TRow /* <: js.Object */](x: Self & CellEdit[TRow]) {
     
-    @scala.inline
-    def setAfterSaveCell(
+    inline def setAfterSaveCell(
       value: (/* row */ TRow, /* keyof TRow */ /* cellName */ String, /* import warning: importer.ImportType#apply Failed type conversion: TRow[keyof TRow] */ /* cellValue */ js.Any, /* props */ ColIndex) => Unit
     ): Self = StObject.set(x, "afterSaveCell", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setAfterSaveCellUndefined: Self = StObject.set(x, "afterSaveCell", js.undefined)
+    inline def setAfterSaveCellUndefined: Self = StObject.set(x, "afterSaveCell", js.undefined)
     
-    @scala.inline
-    def setBeforeSaveCell(
+    inline def setBeforeSaveCell(
       value: (/* row */ TRow, /* keyof TRow */ /* cellName */ String, /* import warning: importer.ImportType#apply Failed type conversion: TRow[keyof TRow] */ /* cellValue */ js.Any, /* done */ js.Function1[/* isValid */ Boolean, Unit], /* props */ ColIndex) => Boolean | `1`
     ): Self = StObject.set(x, "beforeSaveCell", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setBeforeSaveCellUndefined: Self = StObject.set(x, "beforeSaveCell", js.undefined)
+    inline def setBeforeSaveCellUndefined: Self = StObject.set(x, "beforeSaveCell", js.undefined)
     
-    @scala.inline
-    def setBlurToEscape(value: Boolean): Self = StObject.set(x, "blurToEscape", value.asInstanceOf[js.Any])
+    inline def setBlurToEscape(value: Boolean): Self = StObject.set(x, "blurToEscape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlurToEscapeUndefined: Self = StObject.set(x, "blurToEscape", js.undefined)
+    inline def setBlurToEscapeUndefined: Self = StObject.set(x, "blurToEscape", js.undefined)
     
-    @scala.inline
-    def setBlurToSave(value: Boolean): Self = StObject.set(x, "blurToSave", value.asInstanceOf[js.Any])
+    inline def setBlurToSave(value: Boolean): Self = StObject.set(x, "blurToSave", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlurToSaveUndefined: Self = StObject.set(x, "blurToSave", js.undefined)
+    inline def setBlurToSaveUndefined: Self = StObject.set(x, "blurToSave", js.undefined)
     
-    @scala.inline
-    def setMode(value: CellEditClickMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: CellEditClickMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonEditableRows(value: () => js.Array[Double | String]): Self = StObject.set(x, "nonEditableRows", js.Any.fromFunction0(value))
+    inline def setNonEditableRows(value: () => js.Array[Double | String]): Self = StObject.set(x, "nonEditableRows", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNonEditableRowsUndefined: Self = StObject.set(x, "nonEditableRows", js.undefined)
+    inline def setNonEditableRowsUndefined: Self = StObject.set(x, "nonEditableRows", js.undefined)
   }
 }

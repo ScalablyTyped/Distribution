@@ -10,16 +10,13 @@ trait StartGatewayInput extends StObject {
 }
 object StartGatewayInput {
   
-  @scala.inline
-  def apply(GatewayARN: GatewayARN): StartGatewayInput = {
+  inline def apply(GatewayARN: GatewayARN): StartGatewayInput = {
     val __obj = js.Dynamic.literal(GatewayARN = GatewayARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartGatewayInput]
   }
   
-  @scala.inline
-  implicit class StartGatewayInputMutableBuilder[Self <: StartGatewayInput] (val x: Self) extends AnyVal {
+  extension [Self <: StartGatewayInput](x: Self) {
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
   }
 }

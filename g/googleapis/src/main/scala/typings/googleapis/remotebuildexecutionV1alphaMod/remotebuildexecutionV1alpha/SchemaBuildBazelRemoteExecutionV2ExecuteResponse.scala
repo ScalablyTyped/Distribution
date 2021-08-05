@@ -54,43 +54,31 @@ trait SchemaBuildBazelRemoteExecutionV2ExecuteResponse extends StObject {
 }
 object SchemaBuildBazelRemoteExecutionV2ExecuteResponse {
   
-  @scala.inline
-  def apply(): SchemaBuildBazelRemoteExecutionV2ExecuteResponse = {
+  inline def apply(): SchemaBuildBazelRemoteExecutionV2ExecuteResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBuildBazelRemoteExecutionV2ExecuteResponse]
   }
   
-  @scala.inline
-  implicit class SchemaBuildBazelRemoteExecutionV2ExecuteResponseMutableBuilder[Self <: SchemaBuildBazelRemoteExecutionV2ExecuteResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBuildBazelRemoteExecutionV2ExecuteResponse](x: Self) {
     
-    @scala.inline
-    def setCachedResult(value: Boolean): Self = StObject.set(x, "cachedResult", value.asInstanceOf[js.Any])
+    inline def setCachedResult(value: Boolean): Self = StObject.set(x, "cachedResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCachedResultUndefined: Self = StObject.set(x, "cachedResult", js.undefined)
+    inline def setCachedResultUndefined: Self = StObject.set(x, "cachedResult", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setResult(value: SchemaBuildBazelRemoteExecutionV2ActionResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: SchemaBuildBazelRemoteExecutionV2ActionResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     
-    @scala.inline
-    def setServerLogs(value: StringDictionary[SchemaBuildBazelRemoteExecutionV2LogFile]): Self = StObject.set(x, "serverLogs", value.asInstanceOf[js.Any])
+    inline def setServerLogs(value: StringDictionary[SchemaBuildBazelRemoteExecutionV2LogFile]): Self = StObject.set(x, "serverLogs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerLogsUndefined: Self = StObject.set(x, "serverLogs", js.undefined)
+    inline def setServerLogsUndefined: Self = StObject.set(x, "serverLogs", js.undefined)
     
-    @scala.inline
-    def setStatus(value: SchemaGoogleRpcStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: SchemaGoogleRpcStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

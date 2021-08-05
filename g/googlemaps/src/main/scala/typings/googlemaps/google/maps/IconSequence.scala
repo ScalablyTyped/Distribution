@@ -17,37 +17,27 @@ trait IconSequence extends StObject {
 }
 object IconSequence {
   
-  @scala.inline
-  def apply(): IconSequence = {
+  inline def apply(): IconSequence = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IconSequence]
   }
   
-  @scala.inline
-  implicit class IconSequenceMutableBuilder[Self <: IconSequence] (val x: Self) extends AnyVal {
+  extension [Self <: IconSequence](x: Self) {
     
-    @scala.inline
-    def setFixedRotation(value: Boolean): Self = StObject.set(x, "fixedRotation", value.asInstanceOf[js.Any])
+    inline def setFixedRotation(value: Boolean): Self = StObject.set(x, "fixedRotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedRotationUndefined: Self = StObject.set(x, "fixedRotation", js.undefined)
+    inline def setFixedRotationUndefined: Self = StObject.set(x, "fixedRotation", js.undefined)
     
-    @scala.inline
-    def setIcon(value: Symbol): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: Symbol): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setOffset(value: String): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: String): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setRepeat(value: String): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+    inline def setRepeat(value: String): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
+    inline def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
   }
 }

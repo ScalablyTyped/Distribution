@@ -16,16 +16,13 @@ trait IInputStreamReference extends StObject {
 }
 object IInputStreamReference {
   
-  @scala.inline
-  def apply(openSequentialReadAsync: () => IPromiseWithIAsyncOperation[IInputStream]): IInputStreamReference = {
+  inline def apply(openSequentialReadAsync: () => IPromiseWithIAsyncOperation[IInputStream]): IInputStreamReference = {
     val __obj = js.Dynamic.literal(openSequentialReadAsync = js.Any.fromFunction0(openSequentialReadAsync))
     __obj.asInstanceOf[IInputStreamReference]
   }
   
-  @scala.inline
-  implicit class IInputStreamReferenceMutableBuilder[Self <: IInputStreamReference] (val x: Self) extends AnyVal {
+  extension [Self <: IInputStreamReference](x: Self) {
     
-    @scala.inline
-    def setOpenSequentialReadAsync(value: () => IPromiseWithIAsyncOperation[IInputStream]): Self = StObject.set(x, "openSequentialReadAsync", js.Any.fromFunction0(value))
+    inline def setOpenSequentialReadAsync(value: () => IPromiseWithIAsyncOperation[IInputStream]): Self = StObject.set(x, "openSequentialReadAsync", js.Any.fromFunction0(value))
   }
 }

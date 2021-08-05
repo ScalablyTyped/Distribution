@@ -12,22 +12,17 @@ trait ContainedTouchableProperties extends StObject {
 }
 object ContainedTouchableProperties {
   
-  @scala.inline
-  def apply(): ContainedTouchableProperties = {
+  inline def apply(): ContainedTouchableProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContainedTouchableProperties]
   }
   
-  @scala.inline
-  implicit class ContainedTouchablePropertiesMutableBuilder[Self <: ContainedTouchableProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ContainedTouchableProperties](x: Self) {
     
-    @scala.inline
-    def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
+    inline def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerStyleNull: Self = StObject.set(x, "containerStyle", null)
+    inline def setContainerStyleNull: Self = StObject.set(x, "containerStyle", null)
     
-    @scala.inline
-    def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
+    inline def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
   }
 }

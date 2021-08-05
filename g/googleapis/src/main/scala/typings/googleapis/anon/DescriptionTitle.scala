@@ -12,25 +12,19 @@ trait DescriptionTitle extends StObject {
 }
 object DescriptionTitle {
   
-  @scala.inline
-  def apply(): DescriptionTitle = {
+  inline def apply(): DescriptionTitle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescriptionTitle]
   }
   
-  @scala.inline
-  implicit class DescriptionTitleMutableBuilder[Self <: DescriptionTitle] (val x: Self) extends AnyVal {
+  extension [Self <: DescriptionTitle](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

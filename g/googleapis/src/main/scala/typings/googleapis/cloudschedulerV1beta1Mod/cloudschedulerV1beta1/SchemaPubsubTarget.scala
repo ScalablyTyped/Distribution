@@ -35,31 +35,23 @@ trait SchemaPubsubTarget extends StObject {
 }
 object SchemaPubsubTarget {
   
-  @scala.inline
-  def apply(): SchemaPubsubTarget = {
+  inline def apply(): SchemaPubsubTarget = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPubsubTarget]
   }
   
-  @scala.inline
-  implicit class SchemaPubsubTargetMutableBuilder[Self <: SchemaPubsubTarget] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPubsubTarget](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: StringDictionary[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: StringDictionary[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setTopicName(value: String): Self = StObject.set(x, "topicName", value.asInstanceOf[js.Any])
+    inline def setTopicName(value: String): Self = StObject.set(x, "topicName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicNameUndefined: Self = StObject.set(x, "topicName", js.undefined)
+    inline def setTopicNameUndefined: Self = StObject.set(x, "topicName", js.undefined)
   }
 }

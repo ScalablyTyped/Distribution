@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SubTitleType extends StObject
 object SubTitleType {
   
-  @scala.inline
-  def ass: typings.dplayer.dplayerStrings.ass = "ass".asInstanceOf[typings.dplayer.dplayerStrings.ass]
+  inline def ass: typings.dplayer.dplayerStrings.ass = "ass".asInstanceOf[typings.dplayer.dplayerStrings.ass]
   
-  @scala.inline
-  def webvtt: typings.dplayer.dplayerStrings.webvtt = "webvtt".asInstanceOf[typings.dplayer.dplayerStrings.webvtt]
+  inline def webvtt: typings.dplayer.dplayerStrings.webvtt = "webvtt".asInstanceOf[typings.dplayer.dplayerStrings.webvtt]
 }

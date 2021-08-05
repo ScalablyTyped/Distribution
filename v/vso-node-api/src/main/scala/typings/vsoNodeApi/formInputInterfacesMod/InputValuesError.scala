@@ -13,16 +13,13 @@ trait InputValuesError extends StObject {
 }
 object InputValuesError {
   
-  @scala.inline
-  def apply(message: String): InputValuesError = {
+  inline def apply(message: String): InputValuesError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputValuesError]
   }
   
-  @scala.inline
-  implicit class InputValuesErrorMutableBuilder[Self <: InputValuesError] (val x: Self) extends AnyVal {
+  extension [Self <: InputValuesError](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

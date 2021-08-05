@@ -18,25 +18,19 @@ trait DataCatalogEncryptionSettings extends StObject {
 }
 object DataCatalogEncryptionSettings {
   
-  @scala.inline
-  def apply(): DataCatalogEncryptionSettings = {
+  inline def apply(): DataCatalogEncryptionSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataCatalogEncryptionSettings]
   }
   
-  @scala.inline
-  implicit class DataCatalogEncryptionSettingsMutableBuilder[Self <: DataCatalogEncryptionSettings] (val x: Self) extends AnyVal {
+  extension [Self <: DataCatalogEncryptionSettings](x: Self) {
     
-    @scala.inline
-    def setConnectionPasswordEncryption(value: ConnectionPasswordEncryption): Self = StObject.set(x, "ConnectionPasswordEncryption", value.asInstanceOf[js.Any])
+    inline def setConnectionPasswordEncryption(value: ConnectionPasswordEncryption): Self = StObject.set(x, "ConnectionPasswordEncryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionPasswordEncryptionUndefined: Self = StObject.set(x, "ConnectionPasswordEncryption", js.undefined)
+    inline def setConnectionPasswordEncryptionUndefined: Self = StObject.set(x, "ConnectionPasswordEncryption", js.undefined)
     
-    @scala.inline
-    def setEncryptionAtRest(value: EncryptionAtRest): Self = StObject.set(x, "EncryptionAtRest", value.asInstanceOf[js.Any])
+    inline def setEncryptionAtRest(value: EncryptionAtRest): Self = StObject.set(x, "EncryptionAtRest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionAtRestUndefined: Self = StObject.set(x, "EncryptionAtRest", js.undefined)
+    inline def setEncryptionAtRestUndefined: Self = StObject.set(x, "EncryptionAtRest", js.undefined)
   }
 }

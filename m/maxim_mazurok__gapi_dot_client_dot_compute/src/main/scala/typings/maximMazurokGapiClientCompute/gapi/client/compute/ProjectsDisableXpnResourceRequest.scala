@@ -11,19 +11,15 @@ trait ProjectsDisableXpnResourceRequest extends StObject {
 }
 object ProjectsDisableXpnResourceRequest {
   
-  @scala.inline
-  def apply(): ProjectsDisableXpnResourceRequest = {
+  inline def apply(): ProjectsDisableXpnResourceRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProjectsDisableXpnResourceRequest]
   }
   
-  @scala.inline
-  implicit class ProjectsDisableXpnResourceRequestMutableBuilder[Self <: ProjectsDisableXpnResourceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectsDisableXpnResourceRequest](x: Self) {
     
-    @scala.inline
-    def setXpnResource(value: XpnResourceId): Self = StObject.set(x, "xpnResource", value.asInstanceOf[js.Any])
+    inline def setXpnResource(value: XpnResourceId): Self = StObject.set(x, "xpnResource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXpnResourceUndefined: Self = StObject.set(x, "xpnResource", js.undefined)
+    inline def setXpnResourceUndefined: Self = StObject.set(x, "xpnResource", js.undefined)
   }
 }

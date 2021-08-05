@@ -8,10 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object joinMod {
   
   /* was `typeof core.Array.join` */
-  @scala.inline
-  def apply[T](array: ArrayLike[T]): java.lang.String = ^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
-  @scala.inline
-  def apply[T](array: ArrayLike[T], separator: java.lang.String): java.lang.String = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+  inline def apply[T](array: ArrayLike[T]): java.lang.String = ^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+  inline def apply[T](array: ArrayLike[T], separator: java.lang.String): java.lang.String = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
   
   @JSImport("core-js/fn/array/join", JSImport.Namespace)
   @js.native

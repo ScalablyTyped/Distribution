@@ -14,8 +14,7 @@ object anon {
   }
   object GetPercentageForValue {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getPercentageForValue: (Double, Double, Double) => Double,
       getValueForClientX: (Double, js.Object, Double, Double) => Double
     ): GetPercentageForValue = {
@@ -23,14 +22,11 @@ object anon {
       __obj.asInstanceOf[GetPercentageForValue]
     }
     
-    @scala.inline
-    implicit class GetPercentageForValueMutableBuilder[Self <: GetPercentageForValue] (val x: Self) extends AnyVal {
+    extension [Self <: GetPercentageForValue](x: Self) {
       
-      @scala.inline
-      def setGetPercentageForValue(value: (Double, Double, Double) => Double): Self = StObject.set(x, "getPercentageForValue", js.Any.fromFunction3(value))
+      inline def setGetPercentageForValue(value: (Double, Double, Double) => Double): Self = StObject.set(x, "getPercentageForValue", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetValueForClientX(value: (Double, js.Object, Double, Double) => Double): Self = StObject.set(x, "getValueForClientX", js.Any.fromFunction4(value))
+      inline def setGetValueForClientX(value: (Double, js.Object, Double, Double) => Double): Self = StObject.set(x, "getValueForClientX", js.Any.fromFunction4(value))
     }
   }
 }

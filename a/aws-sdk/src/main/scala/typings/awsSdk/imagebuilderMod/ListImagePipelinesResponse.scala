@@ -23,34 +23,25 @@ trait ListImagePipelinesResponse extends StObject {
 }
 object ListImagePipelinesResponse {
   
-  @scala.inline
-  def apply(): ListImagePipelinesResponse = {
+  inline def apply(): ListImagePipelinesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListImagePipelinesResponse]
   }
   
-  @scala.inline
-  implicit class ListImagePipelinesResponseMutableBuilder[Self <: ListImagePipelinesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListImagePipelinesResponse](x: Self) {
     
-    @scala.inline
-    def setImagePipelineList(value: ImagePipelineList): Self = StObject.set(x, "imagePipelineList", value.asInstanceOf[js.Any])
+    inline def setImagePipelineList(value: ImagePipelineList): Self = StObject.set(x, "imagePipelineList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagePipelineListUndefined: Self = StObject.set(x, "imagePipelineList", js.undefined)
+    inline def setImagePipelineListUndefined: Self = StObject.set(x, "imagePipelineList", js.undefined)
     
-    @scala.inline
-    def setImagePipelineListVarargs(value: ImagePipeline*): Self = StObject.set(x, "imagePipelineList", js.Array(value :_*))
+    inline def setImagePipelineListVarargs(value: ImagePipeline*): Self = StObject.set(x, "imagePipelineList", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: NonEmptyString): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: NonEmptyString): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
   }
 }

@@ -50,21 +50,16 @@ object snapshotScheduleAssociationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): SnapshotScheduleAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SnapshotScheduleAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): SnapshotScheduleAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SnapshotScheduleAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: SnapshotScheduleAssociationState): SnapshotScheduleAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[SnapshotScheduleAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: SnapshotScheduleAssociationState, opts: CustomResourceOptions): SnapshotScheduleAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SnapshotScheduleAssociation]
+    inline def get(name: String, id: Input[ID]): SnapshotScheduleAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SnapshotScheduleAssociation]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): SnapshotScheduleAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SnapshotScheduleAssociation]
+    inline def get(name: String, id: Input[ID], state: SnapshotScheduleAssociationState): SnapshotScheduleAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[SnapshotScheduleAssociation]
+    inline def get(name: String, id: Input[ID], state: SnapshotScheduleAssociationState, opts: CustomResourceOptions): SnapshotScheduleAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SnapshotScheduleAssociation]
     
     /**
       * Returns true if the given object is an instance of SnapshotScheduleAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/redshift/snapshotScheduleAssociation.SnapshotScheduleAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/redshift/snapshotScheduleAssociation.SnapshotScheduleAssociation */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/redshift/snapshotScheduleAssociation.SnapshotScheduleAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/redshift/snapshotScheduleAssociation.SnapshotScheduleAssociation */ Boolean]
   }
   
   trait SnapshotScheduleAssociationArgs extends StObject {
@@ -81,20 +76,16 @@ object snapshotScheduleAssociationMod {
   }
   object SnapshotScheduleAssociationArgs {
     
-    @scala.inline
-    def apply(clusterIdentifier: Input[String], scheduleIdentifier: Input[String]): SnapshotScheduleAssociationArgs = {
+    inline def apply(clusterIdentifier: Input[String], scheduleIdentifier: Input[String]): SnapshotScheduleAssociationArgs = {
       val __obj = js.Dynamic.literal(clusterIdentifier = clusterIdentifier.asInstanceOf[js.Any], scheduleIdentifier = scheduleIdentifier.asInstanceOf[js.Any])
       __obj.asInstanceOf[SnapshotScheduleAssociationArgs]
     }
     
-    @scala.inline
-    implicit class SnapshotScheduleAssociationArgsMutableBuilder[Self <: SnapshotScheduleAssociationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: SnapshotScheduleAssociationArgs](x: Self) {
       
-      @scala.inline
-      def setClusterIdentifier(value: Input[String]): Self = StObject.set(x, "clusterIdentifier", value.asInstanceOf[js.Any])
+      inline def setClusterIdentifier(value: Input[String]): Self = StObject.set(x, "clusterIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScheduleIdentifier(value: Input[String]): Self = StObject.set(x, "scheduleIdentifier", value.asInstanceOf[js.Any])
+      inline def setScheduleIdentifier(value: Input[String]): Self = StObject.set(x, "scheduleIdentifier", value.asInstanceOf[js.Any])
     }
   }
   
@@ -112,26 +103,20 @@ object snapshotScheduleAssociationMod {
   }
   object SnapshotScheduleAssociationState {
     
-    @scala.inline
-    def apply(): SnapshotScheduleAssociationState = {
+    inline def apply(): SnapshotScheduleAssociationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SnapshotScheduleAssociationState]
     }
     
-    @scala.inline
-    implicit class SnapshotScheduleAssociationStateMutableBuilder[Self <: SnapshotScheduleAssociationState] (val x: Self) extends AnyVal {
+    extension [Self <: SnapshotScheduleAssociationState](x: Self) {
       
-      @scala.inline
-      def setClusterIdentifier(value: Input[String]): Self = StObject.set(x, "clusterIdentifier", value.asInstanceOf[js.Any])
+      inline def setClusterIdentifier(value: Input[String]): Self = StObject.set(x, "clusterIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterIdentifierUndefined: Self = StObject.set(x, "clusterIdentifier", js.undefined)
+      inline def setClusterIdentifierUndefined: Self = StObject.set(x, "clusterIdentifier", js.undefined)
       
-      @scala.inline
-      def setScheduleIdentifier(value: Input[String]): Self = StObject.set(x, "scheduleIdentifier", value.asInstanceOf[js.Any])
+      inline def setScheduleIdentifier(value: Input[String]): Self = StObject.set(x, "scheduleIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScheduleIdentifierUndefined: Self = StObject.set(x, "scheduleIdentifier", js.undefined)
+      inline def setScheduleIdentifierUndefined: Self = StObject.set(x, "scheduleIdentifier", js.undefined)
     }
   }
 }

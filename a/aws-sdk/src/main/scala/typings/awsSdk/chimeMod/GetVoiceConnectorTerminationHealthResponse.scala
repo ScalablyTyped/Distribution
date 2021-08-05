@@ -13,19 +13,15 @@ trait GetVoiceConnectorTerminationHealthResponse extends StObject {
 }
 object GetVoiceConnectorTerminationHealthResponse {
   
-  @scala.inline
-  def apply(): GetVoiceConnectorTerminationHealthResponse = {
+  inline def apply(): GetVoiceConnectorTerminationHealthResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetVoiceConnectorTerminationHealthResponse]
   }
   
-  @scala.inline
-  implicit class GetVoiceConnectorTerminationHealthResponseMutableBuilder[Self <: GetVoiceConnectorTerminationHealthResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetVoiceConnectorTerminationHealthResponse](x: Self) {
     
-    @scala.inline
-    def setTerminationHealth(value: TerminationHealth): Self = StObject.set(x, "TerminationHealth", value.asInstanceOf[js.Any])
+    inline def setTerminationHealth(value: TerminationHealth): Self = StObject.set(x, "TerminationHealth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerminationHealthUndefined: Self = StObject.set(x, "TerminationHealth", js.undefined)
+    inline def setTerminationHealthUndefined: Self = StObject.set(x, "TerminationHealth", js.undefined)
   }
 }

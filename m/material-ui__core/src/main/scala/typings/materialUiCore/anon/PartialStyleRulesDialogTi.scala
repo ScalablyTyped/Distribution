@@ -12,19 +12,15 @@ trait PartialStyleRulesDialogTi extends StObject {
 }
 object PartialStyleRulesDialogTi {
   
-  @scala.inline
-  def apply(): PartialStyleRulesDialogTi = {
+  inline def apply(): PartialStyleRulesDialogTi = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialStyleRulesDialogTi]
   }
   
-  @scala.inline
-  implicit class PartialStyleRulesDialogTiMutableBuilder[Self <: PartialStyleRulesDialogTi] (val x: Self) extends AnyVal {
+  extension [Self <: PartialStyleRulesDialogTi](x: Self) {
     
-    @scala.inline
-    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

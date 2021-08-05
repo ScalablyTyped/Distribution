@@ -22,8 +22,7 @@ object verifyAuthChallengeResponseMod {
   }
   object VerifyAuthChallengeResponseTriggerEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       callerContext: AwsSdkVersion,
       region: String,
       request: PrivateChallengeParameters,
@@ -36,14 +35,11 @@ object verifyAuthChallengeResponseMod {
       __obj.asInstanceOf[VerifyAuthChallengeResponseTriggerEvent]
     }
     
-    @scala.inline
-    implicit class VerifyAuthChallengeResponseTriggerEventMutableBuilder[Self <: VerifyAuthChallengeResponseTriggerEvent] (val x: Self) extends AnyVal {
+    extension [Self <: VerifyAuthChallengeResponseTriggerEvent](x: Self) {
       
-      @scala.inline
-      def setRequest(value: PrivateChallengeParameters): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: PrivateChallengeParameters): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse(value: AnswerCorrectBoolean): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: AnswerCorrectBoolean): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
   }
   

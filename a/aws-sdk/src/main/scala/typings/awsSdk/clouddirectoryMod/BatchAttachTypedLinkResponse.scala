@@ -13,19 +13,15 @@ trait BatchAttachTypedLinkResponse extends StObject {
 }
 object BatchAttachTypedLinkResponse {
   
-  @scala.inline
-  def apply(): BatchAttachTypedLinkResponse = {
+  inline def apply(): BatchAttachTypedLinkResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchAttachTypedLinkResponse]
   }
   
-  @scala.inline
-  implicit class BatchAttachTypedLinkResponseMutableBuilder[Self <: BatchAttachTypedLinkResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchAttachTypedLinkResponse](x: Self) {
     
-    @scala.inline
-    def setTypedLinkSpecifier(value: TypedLinkSpecifier): Self = StObject.set(x, "TypedLinkSpecifier", value.asInstanceOf[js.Any])
+    inline def setTypedLinkSpecifier(value: TypedLinkSpecifier): Self = StObject.set(x, "TypedLinkSpecifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypedLinkSpecifierUndefined: Self = StObject.set(x, "TypedLinkSpecifier", js.undefined)
+    inline def setTypedLinkSpecifierUndefined: Self = StObject.set(x, "TypedLinkSpecifier", js.undefined)
   }
 }

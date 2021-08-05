@@ -14,25 +14,19 @@ trait ManagedGroupConfig extends StObject {
 }
 object ManagedGroupConfig {
   
-  @scala.inline
-  def apply(): ManagedGroupConfig = {
+  inline def apply(): ManagedGroupConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ManagedGroupConfig]
   }
   
-  @scala.inline
-  implicit class ManagedGroupConfigMutableBuilder[Self <: ManagedGroupConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ManagedGroupConfig](x: Self) {
     
-    @scala.inline
-    def setInstanceGroupManagerName(value: String): Self = StObject.set(x, "instanceGroupManagerName", value.asInstanceOf[js.Any])
+    inline def setInstanceGroupManagerName(value: String): Self = StObject.set(x, "instanceGroupManagerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceGroupManagerNameUndefined: Self = StObject.set(x, "instanceGroupManagerName", js.undefined)
+    inline def setInstanceGroupManagerNameUndefined: Self = StObject.set(x, "instanceGroupManagerName", js.undefined)
     
-    @scala.inline
-    def setInstanceTemplateName(value: String): Self = StObject.set(x, "instanceTemplateName", value.asInstanceOf[js.Any])
+    inline def setInstanceTemplateName(value: String): Self = StObject.set(x, "instanceTemplateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTemplateNameUndefined: Self = StObject.set(x, "instanceTemplateName", js.undefined)
+    inline def setInstanceTemplateNameUndefined: Self = StObject.set(x, "instanceTemplateName", js.undefined)
   }
 }

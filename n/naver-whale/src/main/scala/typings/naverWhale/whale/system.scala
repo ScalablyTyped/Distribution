@@ -39,8 +39,7 @@ object system {
     }
     object CpuInfo {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         archName: String,
         features: js.Array[String],
         modelName: String,
@@ -51,29 +50,21 @@ object system {
         __obj.asInstanceOf[CpuInfo]
       }
       
-      @scala.inline
-      implicit class CpuInfoMutableBuilder[Self <: CpuInfo] (val x: Self) extends AnyVal {
+      extension [Self <: CpuInfo](x: Self) {
         
-        @scala.inline
-        def setArchName(value: String): Self = StObject.set(x, "archName", value.asInstanceOf[js.Any])
+        inline def setArchName(value: String): Self = StObject.set(x, "archName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFeatures(value: js.Array[String]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+        inline def setFeatures(value: js.Array[String]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value :_*))
+        inline def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value :_*))
         
-        @scala.inline
-        def setModelName(value: String): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
+        inline def setModelName(value: String): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNumOfProcessors(value: Double): Self = StObject.set(x, "numOfProcessors", value.asInstanceOf[js.Any])
+        inline def setNumOfProcessors(value: Double): Self = StObject.set(x, "numOfProcessors", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProcessors(value: js.Array[typings.chrome.chrome.system.cpu.ProcessorInfo]): Self = StObject.set(x, "processors", value.asInstanceOf[js.Any])
+        inline def setProcessors(value: js.Array[typings.chrome.chrome.system.cpu.ProcessorInfo]): Self = StObject.set(x, "processors", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProcessorsVarargs(value: typings.chrome.chrome.system.cpu.ProcessorInfo*): Self = StObject.set(x, "processors", js.Array(value :_*))
+        inline def setProcessorsVarargs(value: typings.chrome.chrome.system.cpu.ProcessorInfo*): Self = StObject.set(x, "processors", js.Array(value :_*))
       }
     }
     
@@ -84,17 +75,14 @@ object system {
     }
     object ProcessorInfo {
       
-      @scala.inline
-      def apply(usage: typings.chrome.chrome.system.cpu.ProcessorUsage): ProcessorInfo = {
+      inline def apply(usage: typings.chrome.chrome.system.cpu.ProcessorUsage): ProcessorInfo = {
         val __obj = js.Dynamic.literal(usage = usage.asInstanceOf[js.Any])
         __obj.asInstanceOf[ProcessorInfo]
       }
       
-      @scala.inline
-      implicit class ProcessorInfoMutableBuilder[Self <: ProcessorInfo] (val x: Self) extends AnyVal {
+      extension [Self <: ProcessorInfo](x: Self) {
         
-        @scala.inline
-        def setUsage(value: typings.chrome.chrome.system.cpu.ProcessorUsage): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
+        inline def setUsage(value: typings.chrome.chrome.system.cpu.ProcessorUsage): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
       }
     }
     
@@ -114,26 +102,20 @@ object system {
     }
     object ProcessorUsage {
       
-      @scala.inline
-      def apply(idle: Double, kernel: Double, total: Double, user: Double): ProcessorUsage = {
+      inline def apply(idle: Double, kernel: Double, total: Double, user: Double): ProcessorUsage = {
         val __obj = js.Dynamic.literal(idle = idle.asInstanceOf[js.Any], kernel = kernel.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
         __obj.asInstanceOf[ProcessorUsage]
       }
       
-      @scala.inline
-      implicit class ProcessorUsageMutableBuilder[Self <: ProcessorUsage] (val x: Self) extends AnyVal {
+      extension [Self <: ProcessorUsage](x: Self) {
         
-        @scala.inline
-        def setIdle(value: Double): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
+        inline def setIdle(value: Double): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKernel(value: Double): Self = StObject.set(x, "kernel", value.asInstanceOf[js.Any])
+        inline def setKernel(value: Double): Self = StObject.set(x, "kernel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+        inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUser(value: Double): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+        inline def setUser(value: Double): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -158,20 +140,16 @@ object system {
     }
     object MemoryInfo {
       
-      @scala.inline
-      def apply(availableCapacity: Double, capacity: Double): MemoryInfo = {
+      inline def apply(availableCapacity: Double, capacity: Double): MemoryInfo = {
         val __obj = js.Dynamic.literal(availableCapacity = availableCapacity.asInstanceOf[js.Any], capacity = capacity.asInstanceOf[js.Any])
         __obj.asInstanceOf[MemoryInfo]
       }
       
-      @scala.inline
-      implicit class MemoryInfoMutableBuilder[Self <: MemoryInfo] (val x: Self) extends AnyVal {
+      extension [Self <: MemoryInfo](x: Self) {
         
-        @scala.inline
-        def setAvailableCapacity(value: Double): Self = StObject.set(x, "availableCapacity", value.asInstanceOf[js.Any])
+        inline def setAvailableCapacity(value: Double): Self = StObject.set(x, "availableCapacity", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
+        inline def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -196,20 +174,16 @@ object system {
     }
     object StorageCapacityInfo {
       
-      @scala.inline
-      def apply(availableCapacity: Double, id: String): StorageCapacityInfo = {
+      inline def apply(availableCapacity: Double, id: String): StorageCapacityInfo = {
         val __obj = js.Dynamic.literal(availableCapacity = availableCapacity.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
         __obj.asInstanceOf[StorageCapacityInfo]
       }
       
-      @scala.inline
-      implicit class StorageCapacityInfoMutableBuilder[Self <: StorageCapacityInfo] (val x: Self) extends AnyVal {
+      extension [Self <: StorageCapacityInfo](x: Self) {
         
-        @scala.inline
-        def setAvailableCapacity(value: Double): Self = StObject.set(x, "availableCapacity", value.asInstanceOf[js.Any])
+        inline def setAvailableCapacity(value: Double): Self = StObject.set(x, "availableCapacity", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       }
     }
     
@@ -234,27 +208,21 @@ object system {
     }
     object StorageUnitInfo {
       
-      @scala.inline
-      def apply(capacity: Double, id: String, name: String, `type`: String): StorageUnitInfo = {
+      inline def apply(capacity: Double, id: String, name: String, `type`: String): StorageUnitInfo = {
         val __obj = js.Dynamic.literal(capacity = capacity.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[StorageUnitInfo]
       }
       
-      @scala.inline
-      implicit class StorageUnitInfoMutableBuilder[Self <: StorageUnitInfo] (val x: Self) extends AnyVal {
+      extension [Self <: StorageUnitInfo](x: Self) {
         
-        @scala.inline
-        def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
+        inline def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     

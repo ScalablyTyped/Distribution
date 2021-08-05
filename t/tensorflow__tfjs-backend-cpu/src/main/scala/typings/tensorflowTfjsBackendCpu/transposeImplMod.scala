@@ -12,8 +12,7 @@ object transposeImplMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def transposeImpl(
+  inline def transposeImpl(
     xVals: TypedArray,
     xShape: js.Array[Double],
     dtype: DataType,

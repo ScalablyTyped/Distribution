@@ -24,26 +24,20 @@ object gapi {
       }
       object Challenge {
         
-        @scala.inline
-        def apply(): Challenge = {
+        inline def apply(): Challenge = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[Challenge]
         }
         
-        @scala.inline
-        implicit class ChallengeMutableBuilder[Self <: Challenge] (val x: Self) extends AnyVal {
+        extension [Self <: Challenge](x: Self) {
           
-          @scala.inline
-          def setAlternativeChallenge(value: SignedData): Self = StObject.set(x, "alternativeChallenge", value.asInstanceOf[js.Any])
+          inline def setAlternativeChallenge(value: SignedData): Self = StObject.set(x, "alternativeChallenge", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAlternativeChallengeUndefined: Self = StObject.set(x, "alternativeChallenge", js.undefined)
+          inline def setAlternativeChallengeUndefined: Self = StObject.set(x, "alternativeChallenge", js.undefined)
           
-          @scala.inline
-          def setChallenge(value: SignedData): Self = StObject.set(x, "challenge", value.asInstanceOf[js.Any])
+          inline def setChallenge(value: SignedData): Self = StObject.set(x, "challenge", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setChallengeUndefined: Self = StObject.set(x, "challenge", js.undefined)
+          inline def setChallengeUndefined: Self = StObject.set(x, "challenge", js.undefined)
         }
       }
       
@@ -72,26 +66,20 @@ object gapi {
       }
       object SignedData {
         
-        @scala.inline
-        def apply(): SignedData = {
+        inline def apply(): SignedData = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[SignedData]
         }
         
-        @scala.inline
-        implicit class SignedDataMutableBuilder[Self <: SignedData] (val x: Self) extends AnyVal {
+        extension [Self <: SignedData](x: Self) {
           
-          @scala.inline
-          def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+          inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+          inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
           
-          @scala.inline
-          def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+          inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
+          inline def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
         }
       }
       
@@ -108,26 +96,20 @@ object gapi {
       }
       object VerifyChallengeResponseRequest {
         
-        @scala.inline
-        def apply(): VerifyChallengeResponseRequest = {
+        inline def apply(): VerifyChallengeResponseRequest = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[VerifyChallengeResponseRequest]
         }
         
-        @scala.inline
-        implicit class VerifyChallengeResponseRequestMutableBuilder[Self <: VerifyChallengeResponseRequest] (val x: Self) extends AnyVal {
+        extension [Self <: VerifyChallengeResponseRequest](x: Self) {
           
-          @scala.inline
-          def setChallengeResponse(value: SignedData): Self = StObject.set(x, "challengeResponse", value.asInstanceOf[js.Any])
+          inline def setChallengeResponse(value: SignedData): Self = StObject.set(x, "challengeResponse", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setChallengeResponseUndefined: Self = StObject.set(x, "challengeResponse", js.undefined)
+          inline def setChallengeResponseUndefined: Self = StObject.set(x, "challengeResponse", js.undefined)
           
-          @scala.inline
-          def setExpectedIdentity(value: String): Self = StObject.set(x, "expectedIdentity", value.asInstanceOf[js.Any])
+          inline def setExpectedIdentity(value: String): Self = StObject.set(x, "expectedIdentity", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setExpectedIdentityUndefined: Self = StObject.set(x, "expectedIdentity", js.undefined)
+          inline def setExpectedIdentityUndefined: Self = StObject.set(x, "expectedIdentity", js.undefined)
         }
       }
       
@@ -153,38 +135,28 @@ object gapi {
       }
       object VerifyChallengeResponseResult {
         
-        @scala.inline
-        def apply(): VerifyChallengeResponseResult = {
+        inline def apply(): VerifyChallengeResponseResult = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[VerifyChallengeResponseResult]
         }
         
-        @scala.inline
-        implicit class VerifyChallengeResponseResultMutableBuilder[Self <: VerifyChallengeResponseResult] (val x: Self) extends AnyVal {
+        extension [Self <: VerifyChallengeResponseResult](x: Self) {
           
-          @scala.inline
-          def setDeviceEnrollmentId(value: String): Self = StObject.set(x, "deviceEnrollmentId", value.asInstanceOf[js.Any])
+          inline def setDeviceEnrollmentId(value: String): Self = StObject.set(x, "deviceEnrollmentId", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDeviceEnrollmentIdUndefined: Self = StObject.set(x, "deviceEnrollmentId", js.undefined)
+          inline def setDeviceEnrollmentIdUndefined: Self = StObject.set(x, "deviceEnrollmentId", js.undefined)
           
-          @scala.inline
-          def setDevicePermanentId(value: String): Self = StObject.set(x, "devicePermanentId", value.asInstanceOf[js.Any])
+          inline def setDevicePermanentId(value: String): Self = StObject.set(x, "devicePermanentId", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDevicePermanentIdUndefined: Self = StObject.set(x, "devicePermanentId", js.undefined)
+          inline def setDevicePermanentIdUndefined: Self = StObject.set(x, "devicePermanentId", js.undefined)
           
-          @scala.inline
-          def setSignedPublicKeyAndChallenge(value: String): Self = StObject.set(x, "signedPublicKeyAndChallenge", value.asInstanceOf[js.Any])
+          inline def setSignedPublicKeyAndChallenge(value: String): Self = StObject.set(x, "signedPublicKeyAndChallenge", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSignedPublicKeyAndChallengeUndefined: Self = StObject.set(x, "signedPublicKeyAndChallenge", js.undefined)
+          inline def setSignedPublicKeyAndChallengeUndefined: Self = StObject.set(x, "signedPublicKeyAndChallenge", js.undefined)
           
-          @scala.inline
-          def setVerificationOutput(value: String): Self = StObject.set(x, "verificationOutput", value.asInstanceOf[js.Any])
+          inline def setVerificationOutput(value: String): Self = StObject.set(x, "verificationOutput", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setVerificationOutputUndefined: Self = StObject.set(x, "verificationOutput", js.undefined)
+          inline def setVerificationOutputUndefined: Self = StObject.set(x, "verificationOutput", js.undefined)
         }
       }
     }

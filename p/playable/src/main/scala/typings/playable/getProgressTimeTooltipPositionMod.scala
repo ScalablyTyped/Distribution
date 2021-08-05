@@ -12,6 +12,5 @@ object getProgressTimeTooltipPositionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(progressPercent: Double, progressElement: HTMLElement, tooltipContainer: HTMLElement): ITooltipPosition = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(progressPercent.asInstanceOf[js.Any], progressElement.asInstanceOf[js.Any], tooltipContainer.asInstanceOf[js.Any])).asInstanceOf[ITooltipPosition]
+  inline def default(progressPercent: Double, progressElement: HTMLElement, tooltipContainer: HTMLElement): ITooltipPosition = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(progressPercent.asInstanceOf[js.Any], progressElement.asInstanceOf[js.Any], tooltipContainer.asInstanceOf[js.Any])).asInstanceOf[ITooltipPosition]
 }

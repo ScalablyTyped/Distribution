@@ -142,76 +142,53 @@ trait IgGridFilteringColumnSetting
 }
 object IgGridFilteringColumnSetting {
   
-  @scala.inline
-  def apply(): IgGridFilteringColumnSetting = {
+  inline def apply(): IgGridFilteringColumnSetting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgGridFilteringColumnSetting]
   }
   
-  @scala.inline
-  implicit class IgGridFilteringColumnSettingMutableBuilder[Self <: IgGridFilteringColumnSetting] (val x: Self) extends AnyVal {
+  extension [Self <: IgGridFilteringColumnSetting](x: Self) {
     
-    @scala.inline
-    def setAllowFiltering(value: Boolean): Self = StObject.set(x, "allowFiltering", value.asInstanceOf[js.Any])
+    inline def setAllowFiltering(value: Boolean): Self = StObject.set(x, "allowFiltering", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowFilteringUndefined: Self = StObject.set(x, "allowFiltering", js.undefined)
+    inline def setAllowFilteringUndefined: Self = StObject.set(x, "allowFiltering", js.undefined)
     
-    @scala.inline
-    def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
+    inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
+    inline def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
     
-    @scala.inline
-    def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
+    inline def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
+    inline def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
     
-    @scala.inline
-    def setCondition(value: String | Boolean): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: String | Boolean): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionList(value: js.Array[js.Any]): Self = StObject.set(x, "conditionList", value.asInstanceOf[js.Any])
+    inline def setConditionList(value: js.Array[js.Any]): Self = StObject.set(x, "conditionList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionListUndefined: Self = StObject.set(x, "conditionList", js.undefined)
+    inline def setConditionListUndefined: Self = StObject.set(x, "conditionList", js.undefined)
     
-    @scala.inline
-    def setConditionListVarargs(value: js.Any*): Self = StObject.set(x, "conditionList", js.Array(value :_*))
+    inline def setConditionListVarargs(value: js.Any*): Self = StObject.set(x, "conditionList", js.Array(value :_*))
     
-    @scala.inline
-    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
-    @scala.inline
-    def setCustomConditions(value: js.Any): Self = StObject.set(x, "customConditions", value.asInstanceOf[js.Any])
+    inline def setCustomConditions(value: js.Any): Self = StObject.set(x, "customConditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomConditionsUndefined: Self = StObject.set(x, "customConditions", js.undefined)
+    inline def setCustomConditionsUndefined: Self = StObject.set(x, "customConditions", js.undefined)
     
-    @scala.inline
-    def setDefaultExpressions(value: IgGridFilteringColumnSettingDefaultExpressions): Self = StObject.set(x, "defaultExpressions", value.asInstanceOf[js.Any])
+    inline def setDefaultExpressions(value: IgGridFilteringColumnSettingDefaultExpressions): Self = StObject.set(x, "defaultExpressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultExpressionsUndefined: Self = StObject.set(x, "defaultExpressions", js.undefined)
+    inline def setDefaultExpressionsUndefined: Self = StObject.set(x, "defaultExpressions", js.undefined)
     
-    @scala.inline
-    def setEditorOptions(value: js.Any): Self = StObject.set(x, "editorOptions", value.asInstanceOf[js.Any])
+    inline def setEditorOptions(value: js.Any): Self = StObject.set(x, "editorOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditorOptionsUndefined: Self = StObject.set(x, "editorOptions", js.undefined)
+    inline def setEditorOptionsUndefined: Self = StObject.set(x, "editorOptions", js.undefined)
     
-    @scala.inline
-    def setEditorProvider(value: js.Any): Self = StObject.set(x, "editorProvider", value.asInstanceOf[js.Any])
+    inline def setEditorProvider(value: js.Any): Self = StObject.set(x, "editorProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditorProviderUndefined: Self = StObject.set(x, "editorProvider", js.undefined)
+    inline def setEditorProviderUndefined: Self = StObject.set(x, "editorProvider", js.undefined)
     
-    @scala.inline
-    def setEditorType(value: String): Self = StObject.set(x, "editorType", value.asInstanceOf[js.Any])
+    inline def setEditorType(value: String): Self = StObject.set(x, "editorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditorTypeUndefined: Self = StObject.set(x, "editorType", js.undefined)
+    inline def setEditorTypeUndefined: Self = StObject.set(x, "editorType", js.undefined)
   }
 }

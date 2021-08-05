@@ -18,19 +18,15 @@ trait WorkItemFieldUpdate extends StObject {
 }
 object WorkItemFieldUpdate {
   
-  @scala.inline
-  def apply(newValue: js.Any, oldValue: js.Any): WorkItemFieldUpdate = {
+  inline def apply(newValue: js.Any, oldValue: js.Any): WorkItemFieldUpdate = {
     val __obj = js.Dynamic.literal(newValue = newValue.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkItemFieldUpdate]
   }
   
-  @scala.inline
-  implicit class WorkItemFieldUpdateMutableBuilder[Self <: WorkItemFieldUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: WorkItemFieldUpdate](x: Self) {
     
-    @scala.inline
-    def setNewValue(value: js.Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: js.Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValue(value: js.Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+    inline def setOldValue(value: js.Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
   }
 }

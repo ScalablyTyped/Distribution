@@ -21,25 +21,19 @@ trait SchemaMailExportOptions extends StObject {
 }
 object SchemaMailExportOptions {
   
-  @scala.inline
-  def apply(): SchemaMailExportOptions = {
+  inline def apply(): SchemaMailExportOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMailExportOptions]
   }
   
-  @scala.inline
-  implicit class SchemaMailExportOptionsMutableBuilder[Self <: SchemaMailExportOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMailExportOptions](x: Self) {
     
-    @scala.inline
-    def setExportFormat(value: String): Self = StObject.set(x, "exportFormat", value.asInstanceOf[js.Any])
+    inline def setExportFormat(value: String): Self = StObject.set(x, "exportFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportFormatUndefined: Self = StObject.set(x, "exportFormat", js.undefined)
+    inline def setExportFormatUndefined: Self = StObject.set(x, "exportFormat", js.undefined)
     
-    @scala.inline
-    def setShowConfidentialModeContent(value: Boolean): Self = StObject.set(x, "showConfidentialModeContent", value.asInstanceOf[js.Any])
+    inline def setShowConfidentialModeContent(value: Boolean): Self = StObject.set(x, "showConfidentialModeContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowConfidentialModeContentUndefined: Self = StObject.set(x, "showConfidentialModeContent", js.undefined)
+    inline def setShowConfidentialModeContentUndefined: Self = StObject.set(x, "showConfidentialModeContent", js.undefined)
   }
 }

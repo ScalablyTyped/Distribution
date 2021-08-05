@@ -31,58 +31,41 @@ trait ITestCaseStarted extends StObject {
 }
 object ITestCaseStarted {
   
-  @scala.inline
-  def apply(): ITestCaseStarted = {
+  inline def apply(): ITestCaseStarted = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITestCaseStarted]
   }
   
-  @scala.inline
-  implicit class ITestCaseStartedMutableBuilder[Self <: ITestCaseStarted] (val x: Self) extends AnyVal {
+  extension [Self <: ITestCaseStarted](x: Self) {
     
-    @scala.inline
-    def setAttempt(value: Double): Self = StObject.set(x, "attempt", value.asInstanceOf[js.Any])
+    inline def setAttempt(value: Double): Self = StObject.set(x, "attempt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttemptNull: Self = StObject.set(x, "attempt", null)
+    inline def setAttemptNull: Self = StObject.set(x, "attempt", null)
     
-    @scala.inline
-    def setAttemptUndefined: Self = StObject.set(x, "attempt", js.undefined)
+    inline def setAttemptUndefined: Self = StObject.set(x, "attempt", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdNull: Self = StObject.set(x, "id", null)
+    inline def setIdNull: Self = StObject.set(x, "id", null)
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setPlatform(value: IPlatform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: IPlatform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformNull: Self = StObject.set(x, "platform", null)
+    inline def setPlatformNull: Self = StObject.set(x, "platform", null)
     
-    @scala.inline
-    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+    inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
-    @scala.inline
-    def setTestCaseId(value: String): Self = StObject.set(x, "testCaseId", value.asInstanceOf[js.Any])
+    inline def setTestCaseId(value: String): Self = StObject.set(x, "testCaseId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestCaseIdNull: Self = StObject.set(x, "testCaseId", null)
+    inline def setTestCaseIdNull: Self = StObject.set(x, "testCaseId", null)
     
-    @scala.inline
-    def setTestCaseIdUndefined: Self = StObject.set(x, "testCaseId", js.undefined)
+    inline def setTestCaseIdUndefined: Self = StObject.set(x, "testCaseId", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: ITimestamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: ITimestamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampNull: Self = StObject.set(x, "timestamp", null)
+    inline def setTimestampNull: Self = StObject.set(x, "timestamp", null)
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
   }
 }

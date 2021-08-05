@@ -11,16 +11,13 @@ trait Window extends StObject {
 }
 object Window {
   
-  @scala.inline
-  def apply(safari: Typeofsafari): Window = {
+  inline def apply(safari: Typeofsafari): Window = {
     val __obj = js.Dynamic.literal(safari = safari.asInstanceOf[js.Any])
     __obj.asInstanceOf[Window]
   }
   
-  @scala.inline
-  implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+  extension [Self <: Window](x: Self) {
     
-    @scala.inline
-    def setSafari(value: Typeofsafari): Self = StObject.set(x, "safari", value.asInstanceOf[js.Any])
+    inline def setSafari(value: Typeofsafari): Self = StObject.set(x, "safari", value.asInstanceOf[js.Any])
   }
 }

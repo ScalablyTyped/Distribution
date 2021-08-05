@@ -24,29 +24,22 @@ trait CIMGeometricEffectRadial
 }
 object CIMGeometricEffectRadial {
   
-  @scala.inline
-  def apply(): CIMGeometricEffectRadial = {
+  inline def apply(): CIMGeometricEffectRadial = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMGeometricEffectRadial")
     __obj.asInstanceOf[CIMGeometricEffectRadial]
   }
   
-  @scala.inline
-  implicit class CIMGeometricEffectRadialMutableBuilder[Self <: CIMGeometricEffectRadial] (val x: Self) extends AnyVal {
+  extension [Self <: CIMGeometricEffectRadial](x: Self) {
     
-    @scala.inline
-    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+    inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectRadial): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectRadial): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

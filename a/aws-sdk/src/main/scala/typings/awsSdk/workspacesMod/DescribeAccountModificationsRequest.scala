@@ -13,19 +13,15 @@ trait DescribeAccountModificationsRequest extends StObject {
 }
 object DescribeAccountModificationsRequest {
   
-  @scala.inline
-  def apply(): DescribeAccountModificationsRequest = {
+  inline def apply(): DescribeAccountModificationsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAccountModificationsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeAccountModificationsRequestMutableBuilder[Self <: DescribeAccountModificationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAccountModificationsRequest](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

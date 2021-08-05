@@ -19,10 +19,8 @@ object Cherrypick {
   /**
     * Cherrypick a commit and, changing the index and working directory
     */
-  @scala.inline
-  def cherrypick(repo: typings.nodegit.repositoryMod.Repository, commit: typings.nodegit.commitMod.Commit): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("cherrypick")(repo.asInstanceOf[js.Any], commit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
-  @scala.inline
-  def cherrypick(
+  inline def cherrypick(repo: typings.nodegit.repositoryMod.Repository, commit: typings.nodegit.commitMod.Commit): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("cherrypick")(repo.asInstanceOf[js.Any], commit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+  inline def cherrypick(
     repo: typings.nodegit.repositoryMod.Repository,
     commit: typings.nodegit.commitMod.Commit,
     options: CherrypickOptions
@@ -31,15 +29,13 @@ object Cherrypick {
   /**
     * Cherrypicks the given commit against "our" commit, producing an index that reflects the result of the cherrypick. The index is not backed by a repo.
     */
-  @scala.inline
-  def commit(
+  inline def commit(
     repo: typings.nodegit.repositoryMod.Repository,
     cherrypickCommit: typings.nodegit.commitMod.Commit,
     ourCommit: typings.nodegit.commitMod.Commit,
     mainline: Double
   ): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("commit")(repo.asInstanceOf[js.Any], cherrypickCommit.asInstanceOf[js.Any], ourCommit.asInstanceOf[js.Any], mainline.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
-  @scala.inline
-  def commit(
+  inline def commit(
     repo: typings.nodegit.repositoryMod.Repository,
     cherrypickCommit: typings.nodegit.commitMod.Commit,
     ourCommit: typings.nodegit.commitMod.Commit,
@@ -47,6 +43,5 @@ object Cherrypick {
     mergeOptions: typings.nodegit.mergeOptionsMod.MergeOptions
   ): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("commit")(repo.asInstanceOf[js.Any], cherrypickCommit.asInstanceOf[js.Any], ourCommit.asInstanceOf[js.Any], mainline.asInstanceOf[js.Any], mergeOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
   
-  @scala.inline
-  def initOptions(opts: CherrypickOptions, version: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("initOptions")(opts.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def initOptions(opts: CherrypickOptions, version: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("initOptions")(opts.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

@@ -16,25 +16,19 @@ trait File extends StObject {
 }
 object File {
   
-  @scala.inline
-  def apply(file: String, formdata: String, raw: String, urlencoded: String): File = {
+  inline def apply(file: String, formdata: String, raw: String, urlencoded: String): File = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], formdata = formdata.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], urlencoded = urlencoded.asInstanceOf[js.Any])
     __obj.asInstanceOf[File]
   }
   
-  @scala.inline
-  implicit class FileMutableBuilder[Self <: File] (val x: Self) extends AnyVal {
+  extension [Self <: File](x: Self) {
     
-    @scala.inline
-    def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormdata(value: String): Self = StObject.set(x, "formdata", value.asInstanceOf[js.Any])
+    inline def setFormdata(value: String): Self = StObject.set(x, "formdata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlencoded(value: String): Self = StObject.set(x, "urlencoded", value.asInstanceOf[js.Any])
+    inline def setUrlencoded(value: String): Self = StObject.set(x, "urlencoded", value.asInstanceOf[js.Any])
   }
 }

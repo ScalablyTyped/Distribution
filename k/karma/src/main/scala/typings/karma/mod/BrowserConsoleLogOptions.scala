@@ -29,37 +29,27 @@ trait BrowserConsoleLogOptions extends StObject {
 }
 object BrowserConsoleLogOptions {
   
-  @scala.inline
-  def apply(): BrowserConsoleLogOptions = {
+  inline def apply(): BrowserConsoleLogOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BrowserConsoleLogOptions]
   }
   
-  @scala.inline
-  implicit class BrowserConsoleLogOptionsMutableBuilder[Self <: BrowserConsoleLogOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BrowserConsoleLogOptions](x: Self) {
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setLevel(value: log_ | error_ | warn_ | info_ | debug_): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: log_ | error_ | warn_ | info_ | debug_): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setTerminal(value: Boolean): Self = StObject.set(x, "terminal", value.asInstanceOf[js.Any])
+    inline def setTerminal(value: Boolean): Self = StObject.set(x, "terminal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerminalUndefined: Self = StObject.set(x, "terminal", js.undefined)
+    inline def setTerminalUndefined: Self = StObject.set(x, "terminal", js.undefined)
   }
 }

@@ -20,8 +20,7 @@ trait SchemaCompiledItemDefinition extends StObject {
 }
 object SchemaCompiledItemDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allowAttributes: String | js.Array[String],
     allowIn: String | js.Array[String],
     isBlock: Boolean,
@@ -33,31 +32,22 @@ object SchemaCompiledItemDefinition {
     __obj.asInstanceOf[SchemaCompiledItemDefinition]
   }
   
-  @scala.inline
-  implicit class SchemaCompiledItemDefinitionMutableBuilder[Self <: SchemaCompiledItemDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCompiledItemDefinition](x: Self) {
     
-    @scala.inline
-    def setAllowAttributes(value: String | js.Array[String]): Self = StObject.set(x, "allowAttributes", value.asInstanceOf[js.Any])
+    inline def setAllowAttributes(value: String | js.Array[String]): Self = StObject.set(x, "allowAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowAttributesVarargs(value: String*): Self = StObject.set(x, "allowAttributes", js.Array(value :_*))
+    inline def setAllowAttributesVarargs(value: String*): Self = StObject.set(x, "allowAttributes", js.Array(value :_*))
     
-    @scala.inline
-    def setAllowIn(value: String | js.Array[String]): Self = StObject.set(x, "allowIn", value.asInstanceOf[js.Any])
+    inline def setAllowIn(value: String | js.Array[String]): Self = StObject.set(x, "allowIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowInVarargs(value: String*): Self = StObject.set(x, "allowIn", js.Array(value :_*))
+    inline def setAllowInVarargs(value: String*): Self = StObject.set(x, "allowIn", js.Array(value :_*))
     
-    @scala.inline
-    def setIsBlock(value: Boolean): Self = StObject.set(x, "isBlock", value.asInstanceOf[js.Any])
+    inline def setIsBlock(value: Boolean): Self = StObject.set(x, "isBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLimit(value: Boolean): Self = StObject.set(x, "isLimit", value.asInstanceOf[js.Any])
+    inline def setIsLimit(value: Boolean): Self = StObject.set(x, "isLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsObject(value: Boolean): Self = StObject.set(x, "isObject", value.asInstanceOf[js.Any])
+    inline def setIsObject(value: Boolean): Self = StObject.set(x, "isObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

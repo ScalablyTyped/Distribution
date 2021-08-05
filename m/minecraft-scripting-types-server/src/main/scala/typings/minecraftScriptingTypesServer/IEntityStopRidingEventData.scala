@@ -32,8 +32,7 @@ trait IEntityStopRidingEventData extends StObject {
 }
 object IEntityStopRidingEventData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     entity: IEntity,
     entity_is_being_destroyed: Boolean,
     exit_from_rider: Boolean,
@@ -43,19 +42,14 @@ object IEntityStopRidingEventData {
     __obj.asInstanceOf[IEntityStopRidingEventData]
   }
   
-  @scala.inline
-  implicit class IEntityStopRidingEventDataMutableBuilder[Self <: IEntityStopRidingEventData] (val x: Self) extends AnyVal {
+  extension [Self <: IEntityStopRidingEventData](x: Self) {
     
-    @scala.inline
-    def setEntity(value: IEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: IEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntity_is_being_destroyed(value: Boolean): Self = StObject.set(x, "entity_is_being_destroyed", value.asInstanceOf[js.Any])
+    inline def setEntity_is_being_destroyed(value: Boolean): Self = StObject.set(x, "entity_is_being_destroyed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExit_from_rider(value: Boolean): Self = StObject.set(x, "exit_from_rider", value.asInstanceOf[js.Any])
+    inline def setExit_from_rider(value: Boolean): Self = StObject.set(x, "exit_from_rider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwitching_rides(value: Boolean): Self = StObject.set(x, "switching_rides", value.asInstanceOf[js.Any])
+    inline def setSwitching_rides(value: Boolean): Self = StObject.set(x, "switching_rides", value.asInstanceOf[js.Any])
   }
 }

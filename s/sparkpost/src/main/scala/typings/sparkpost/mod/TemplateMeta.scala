@@ -20,25 +20,19 @@ trait TemplateMeta extends StObject {
 }
 object TemplateMeta {
   
-  @scala.inline
-  def apply(description: String, id: String, name: String, published: Boolean): TemplateMeta = {
+  inline def apply(description: String, id: String, name: String, published: Boolean): TemplateMeta = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], published = published.asInstanceOf[js.Any])
     __obj.asInstanceOf[TemplateMeta]
   }
   
-  @scala.inline
-  implicit class TemplateMetaMutableBuilder[Self <: TemplateMeta] (val x: Self) extends AnyVal {
+  extension [Self <: TemplateMeta](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublished(value: Boolean): Self = StObject.set(x, "published", value.asInstanceOf[js.Any])
+    inline def setPublished(value: Boolean): Self = StObject.set(x, "published", value.asInstanceOf[js.Any])
   }
 }

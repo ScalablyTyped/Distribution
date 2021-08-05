@@ -12,19 +12,15 @@ trait CloseOnBlur extends StObject {
 }
 object CloseOnBlur {
   
-  @scala.inline
-  def apply(closeOnBlur: Boolean, closeOnEsc: Boolean): CloseOnBlur = {
+  inline def apply(closeOnBlur: Boolean, closeOnEsc: Boolean): CloseOnBlur = {
     val __obj = js.Dynamic.literal(closeOnBlur = closeOnBlur.asInstanceOf[js.Any], closeOnEsc = closeOnEsc.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloseOnBlur]
   }
   
-  @scala.inline
-  implicit class CloseOnBlurMutableBuilder[Self <: CloseOnBlur] (val x: Self) extends AnyVal {
+  extension [Self <: CloseOnBlur](x: Self) {
     
-    @scala.inline
-    def setCloseOnBlur(value: Boolean): Self = StObject.set(x, "closeOnBlur", value.asInstanceOf[js.Any])
+    inline def setCloseOnBlur(value: Boolean): Self = StObject.set(x, "closeOnBlur", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseOnEsc(value: Boolean): Self = StObject.set(x, "closeOnEsc", value.asInstanceOf[js.Any])
+    inline def setCloseOnEsc(value: Boolean): Self = StObject.set(x, "closeOnEsc", value.asInstanceOf[js.Any])
   }
 }

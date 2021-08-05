@@ -20,40 +20,29 @@ trait ConditionalAccessApplications extends StObject {
 }
 object ConditionalAccessApplications {
   
-  @scala.inline
-  def apply(): ConditionalAccessApplications = {
+  inline def apply(): ConditionalAccessApplications = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConditionalAccessApplications]
   }
   
-  @scala.inline
-  implicit class ConditionalAccessApplicationsMutableBuilder[Self <: ConditionalAccessApplications] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionalAccessApplications](x: Self) {
     
-    @scala.inline
-    def setExcludeApplications(value: js.Array[String]): Self = StObject.set(x, "excludeApplications", value.asInstanceOf[js.Any])
+    inline def setExcludeApplications(value: js.Array[String]): Self = StObject.set(x, "excludeApplications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeApplicationsUndefined: Self = StObject.set(x, "excludeApplications", js.undefined)
+    inline def setExcludeApplicationsUndefined: Self = StObject.set(x, "excludeApplications", js.undefined)
     
-    @scala.inline
-    def setExcludeApplicationsVarargs(value: String*): Self = StObject.set(x, "excludeApplications", js.Array(value :_*))
+    inline def setExcludeApplicationsVarargs(value: String*): Self = StObject.set(x, "excludeApplications", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludeApplications(value: js.Array[String]): Self = StObject.set(x, "includeApplications", value.asInstanceOf[js.Any])
+    inline def setIncludeApplications(value: js.Array[String]): Self = StObject.set(x, "includeApplications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeApplicationsUndefined: Self = StObject.set(x, "includeApplications", js.undefined)
+    inline def setIncludeApplicationsUndefined: Self = StObject.set(x, "includeApplications", js.undefined)
     
-    @scala.inline
-    def setIncludeApplicationsVarargs(value: String*): Self = StObject.set(x, "includeApplications", js.Array(value :_*))
+    inline def setIncludeApplicationsVarargs(value: String*): Self = StObject.set(x, "includeApplications", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludeUserActions(value: js.Array[String]): Self = StObject.set(x, "includeUserActions", value.asInstanceOf[js.Any])
+    inline def setIncludeUserActions(value: js.Array[String]): Self = StObject.set(x, "includeUserActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeUserActionsUndefined: Self = StObject.set(x, "includeUserActions", js.undefined)
+    inline def setIncludeUserActionsUndefined: Self = StObject.set(x, "includeUserActions", js.undefined)
     
-    @scala.inline
-    def setIncludeUserActionsVarargs(value: String*): Self = StObject.set(x, "includeUserActions", js.Array(value :_*))
+    inline def setIncludeUserActionsVarargs(value: String*): Self = StObject.set(x, "includeUserActions", js.Array(value :_*))
   }
 }

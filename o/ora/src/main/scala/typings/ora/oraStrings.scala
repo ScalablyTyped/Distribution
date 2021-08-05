@@ -11,62 +11,53 @@ object oraStrings {
   sealed trait black
     extends StObject
        with Color
-  @scala.inline
-  def black: black = "black".asInstanceOf[black]
+  inline def black: black = "black".asInstanceOf[black]
   
   @js.native
   sealed trait blue
     extends StObject
        with Color
-  @scala.inline
-  def blue: blue = "blue".asInstanceOf[blue]
+  inline def blue: blue = "blue".asInstanceOf[blue]
   
   @js.native
   sealed trait cyan
     extends StObject
        with Color
-  @scala.inline
-  def cyan: cyan = "cyan".asInstanceOf[cyan]
+  inline def cyan: cyan = "cyan".asInstanceOf[cyan]
   
   @js.native
   sealed trait gray
     extends StObject
        with Color
-  @scala.inline
-  def gray: gray = "gray".asInstanceOf[gray]
+  inline def gray: gray = "gray".asInstanceOf[gray]
   
   @js.native
   sealed trait green
     extends StObject
        with Color
-  @scala.inline
-  def green: green = "green".asInstanceOf[green]
+  inline def green: green = "green".asInstanceOf[green]
   
   @js.native
   sealed trait magenta
     extends StObject
        with Color
-  @scala.inline
-  def magenta: magenta = "magenta".asInstanceOf[magenta]
+  inline def magenta: magenta = "magenta".asInstanceOf[magenta]
   
   @js.native
   sealed trait red
     extends StObject
        with Color
-  @scala.inline
-  def red: red = "red".asInstanceOf[red]
+  inline def red: red = "red".asInstanceOf[red]
   
   @js.native
   sealed trait white
     extends StObject
        with Color
-  @scala.inline
-  def white: white = "white".asInstanceOf[white]
+  inline def white: white = "white".asInstanceOf[white]
   
   @js.native
   sealed trait yellow
     extends StObject
        with Color
-  @scala.inline
-  def yellow: yellow = "yellow".asInstanceOf[yellow]
+  inline def yellow: yellow = "yellow".asInstanceOf[yellow]
 }

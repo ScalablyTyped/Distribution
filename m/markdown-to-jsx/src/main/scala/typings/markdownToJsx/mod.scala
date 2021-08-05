@@ -27,10 +27,8 @@ object mod {
   class default ()
     extends Component[MarkdownProps, js.Object, js.Any]
   
-  @scala.inline
-  def compiler(markdown: String): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("compiler")(markdown.asInstanceOf[js.Any]).asInstanceOf[Element]
-  @scala.inline
-  def compiler(markdown: String, options: MarkdownOptions): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("compiler")(markdown.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def compiler(markdown: String): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("compiler")(markdown.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def compiler(markdown: String, options: MarkdownOptions): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("compiler")(markdown.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Element]
   
   type ComponentOverride[P, S] = String | (ComponentClass[P, S]) | SFC[P] | (typings.markdownToJsx.anon.Component[P, S])
   
@@ -68,58 +66,42 @@ object mod {
   }
   object MarkdownOptions {
     
-    @scala.inline
-    def apply(): MarkdownOptions = {
+    inline def apply(): MarkdownOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MarkdownOptions]
     }
     
-    @scala.inline
-    implicit class MarkdownOptionsMutableBuilder[Self <: MarkdownOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MarkdownOptions](x: Self) {
       
-      @scala.inline
-      def setCreateElement(
+      inline def setCreateElement(
         value: (/* type */ SFC[js.Object] | (ComponentClass[js.Object, ComponentState]) | String, /* props */ js.UndefOr[(Attributes & js.Object) | Null], /* repeated */ ReactNode) => ReactElement
       ): Self = StObject.set(x, "createElement", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setCreateElementUndefined: Self = StObject.set(x, "createElement", js.undefined)
+      inline def setCreateElementUndefined: Self = StObject.set(x, "createElement", js.undefined)
       
-      @scala.inline
-      def setDisableParsingRawHTML(value: Boolean): Self = StObject.set(x, "disableParsingRawHTML", value.asInstanceOf[js.Any])
+      inline def setDisableParsingRawHTML(value: Boolean): Self = StObject.set(x, "disableParsingRawHTML", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableParsingRawHTMLUndefined: Self = StObject.set(x, "disableParsingRawHTML", js.undefined)
+      inline def setDisableParsingRawHTMLUndefined: Self = StObject.set(x, "disableParsingRawHTML", js.undefined)
       
-      @scala.inline
-      def setForceBlock(value: Boolean): Self = StObject.set(x, "forceBlock", value.asInstanceOf[js.Any])
+      inline def setForceBlock(value: Boolean): Self = StObject.set(x, "forceBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceBlockUndefined: Self = StObject.set(x, "forceBlock", js.undefined)
+      inline def setForceBlockUndefined: Self = StObject.set(x, "forceBlock", js.undefined)
       
-      @scala.inline
-      def setForceInline(value: Boolean): Self = StObject.set(x, "forceInline", value.asInstanceOf[js.Any])
+      inline def setForceInline(value: Boolean): Self = StObject.set(x, "forceInline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceInlineUndefined: Self = StObject.set(x, "forceInline", js.undefined)
+      inline def setForceInlineUndefined: Self = StObject.set(x, "forceInline", js.undefined)
       
-      @scala.inline
-      def setNamedCodesToUnicode(value: Record[String, String]): Self = StObject.set(x, "namedCodesToUnicode", value.asInstanceOf[js.Any])
+      inline def setNamedCodesToUnicode(value: Record[String, String]): Self = StObject.set(x, "namedCodesToUnicode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamedCodesToUnicodeUndefined: Self = StObject.set(x, "namedCodesToUnicode", js.undefined)
+      inline def setNamedCodesToUnicodeUndefined: Self = StObject.set(x, "namedCodesToUnicode", js.undefined)
       
-      @scala.inline
-      def setOverrides(value: Dictkey): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: Dictkey): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
       
-      @scala.inline
-      def setSlugify(value: /* text */ String => String): Self = StObject.set(x, "slugify", js.Any.fromFunction1(value))
+      inline def setSlugify(value: /* text */ String => String): Self = StObject.set(x, "slugify", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSlugifyUndefined: Self = StObject.set(x, "slugify", js.undefined)
+      inline def setSlugifyUndefined: Self = StObject.set(x, "slugify", js.undefined)
     }
   }
   
@@ -134,23 +116,18 @@ object mod {
   }
   object MarkdownProps {
     
-    @scala.inline
-    def apply(children: String): MarkdownProps = {
+    inline def apply(children: String): MarkdownProps = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.asInstanceOf[MarkdownProps]
     }
     
-    @scala.inline
-    implicit class MarkdownPropsMutableBuilder[Self <: MarkdownProps] (val x: Self) extends AnyVal {
+    extension [Self <: MarkdownProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: MarkdownOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: MarkdownOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     }
   }
 }

@@ -34,37 +34,27 @@ trait ICombineOptions
 }
 object ICombineOptions {
   
-  @scala.inline
-  def apply(): ICombineOptions = {
+  inline def apply(): ICombineOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ICombineOptions]
   }
   
-  @scala.inline
-  implicit class ICombineOptionsMutableBuilder[Self <: ICombineOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ICombineOptions](x: Self) {
     
-    @scala.inline
-    def setFarPoint(value: IPoint): Self = StObject.set(x, "farPoint", value.asInstanceOf[js.Any])
+    inline def setFarPoint(value: IPoint): Self = StObject.set(x, "farPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFarPointUndefined: Self = StObject.set(x, "farPoint", js.undefined)
+    inline def setFarPointUndefined: Self = StObject.set(x, "farPoint", js.undefined)
     
-    @scala.inline
-    def setMeasureA(value: Atlas): Self = StObject.set(x, "measureA", value.asInstanceOf[js.Any])
+    inline def setMeasureA(value: Atlas): Self = StObject.set(x, "measureA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasureAUndefined: Self = StObject.set(x, "measureA", js.undefined)
+    inline def setMeasureAUndefined: Self = StObject.set(x, "measureA", js.undefined)
     
-    @scala.inline
-    def setMeasureB(value: Atlas): Self = StObject.set(x, "measureB", value.asInstanceOf[js.Any])
+    inline def setMeasureB(value: Atlas): Self = StObject.set(x, "measureB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasureBUndefined: Self = StObject.set(x, "measureB", js.undefined)
+    inline def setMeasureBUndefined: Self = StObject.set(x, "measureB", js.undefined)
     
-    @scala.inline
-    def setTrimDeadEnds(value: Boolean): Self = StObject.set(x, "trimDeadEnds", value.asInstanceOf[js.Any])
+    inline def setTrimDeadEnds(value: Boolean): Self = StObject.set(x, "trimDeadEnds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrimDeadEndsUndefined: Self = StObject.set(x, "trimDeadEnds", js.undefined)
+    inline def setTrimDeadEndsUndefined: Self = StObject.set(x, "trimDeadEnds", js.undefined)
   }
 }

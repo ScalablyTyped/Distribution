@@ -42,8 +42,7 @@ trait Coordinate extends StObject {
 }
 object Coordinate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     copy: () => Coordinate,
     equals_ : Coordinate => Boolean,
     latitude: Double,
@@ -56,25 +55,18 @@ object Coordinate {
     __obj.asInstanceOf[Coordinate]
   }
   
-  @scala.inline
-  implicit class CoordinateMutableBuilder[Self <: Coordinate] (val x: Self) extends AnyVal {
+  extension [Self <: Coordinate](x: Self) {
     
-    @scala.inline
-    def setCopy(value: () => Coordinate): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
+    inline def setCopy(value: () => Coordinate): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEquals_(value: Coordinate => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+    inline def setEquals_(value: Coordinate => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+    inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+    inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToMapPoint(value: () => MapPoint): Self = StObject.set(x, "toMapPoint", js.Any.fromFunction0(value))
+    inline def setToMapPoint(value: () => MapPoint): Self = StObject.set(x, "toMapPoint", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToUnwrappedMapPoint(value: () => MapPoint): Self = StObject.set(x, "toUnwrappedMapPoint", js.Any.fromFunction0(value))
+    inline def setToUnwrappedMapPoint(value: () => MapPoint): Self = StObject.set(x, "toUnwrappedMapPoint", js.Any.fromFunction0(value))
   }
 }

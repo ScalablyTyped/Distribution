@@ -16,34 +16,25 @@ trait ILanguageInfo extends StObject {
 }
 object ILanguageInfo {
   
-  @scala.inline
-  def apply(name: String): ILanguageInfo = {
+  inline def apply(name: String): ILanguageInfo = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILanguageInfo]
   }
   
-  @scala.inline
-  implicit class ILanguageInfoMutableBuilder[Self <: ILanguageInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ILanguageInfo](x: Self) {
     
-    @scala.inline
-    def setCodemirror_mode(value: String | ICodeMirrorMode): Self = StObject.set(x, "codemirror_mode", value.asInstanceOf[js.Any])
+    inline def setCodemirror_mode(value: String | ICodeMirrorMode): Self = StObject.set(x, "codemirror_mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodemirror_modeUndefined: Self = StObject.set(x, "codemirror_mode", js.undefined)
+    inline def setCodemirror_modeUndefined: Self = StObject.set(x, "codemirror_mode", js.undefined)
     
-    @scala.inline
-    def setMimetype(value: String): Self = StObject.set(x, "mimetype", value.asInstanceOf[js.Any])
+    inline def setMimetype(value: String): Self = StObject.set(x, "mimetype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimetypeUndefined: Self = StObject.set(x, "mimetype", js.undefined)
+    inline def setMimetypeUndefined: Self = StObject.set(x, "mimetype", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

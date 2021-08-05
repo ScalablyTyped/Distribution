@@ -28,189 +28,157 @@ object mod {
     * @param writerOpts
     */
   // tslint:disable-next-line max-line-length
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](): Readable = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](): Readable = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Readable]
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
     options: Unit,
     context: Unit,
     gitRawCommitsOpts: Unit,
     parserOpts: Unit,
     writerOpts: WriterOptions[TCommit, TContext]
   ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](options: Unit, context: Unit, gitRawCommitsOpts: Unit, parserOpts: ParserOptions): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](options: Unit, context: Unit, gitRawCommitsOpts: Unit, parserOpts: ParserOptions): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
     options: Unit,
     context: Unit,
     gitRawCommitsOpts: Unit,
     parserOpts: ParserOptions,
     writerOpts: WriterOptions[TCommit, TContext]
   ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](options: Unit, context: Unit, gitRawCommitsOpts: GitRawCommitsOptions): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](options: Unit, context: Unit, gitRawCommitsOpts: GitRawCommitsOptions): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
     options: Unit,
     context: Unit,
     gitRawCommitsOpts: GitRawCommitsOptions,
     parserOpts: Unit,
     writerOpts: WriterOptions[TCommit, TContext]
   ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](options: Unit, context: Unit, gitRawCommitsOpts: GitRawCommitsOptions, parserOpts: ParserOptions): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](options: Unit, context: Unit, gitRawCommitsOpts: GitRawCommitsOptions, parserOpts: ParserOptions): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
     options: Unit,
     context: Unit,
     gitRawCommitsOpts: GitRawCommitsOptions,
     parserOpts: ParserOptions,
     writerOpts: WriterOptions[TCommit, TContext]
   ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](options: Unit, context: Partial[TContext]): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](options: Unit, context: Partial[TContext]): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
     options: Unit,
     context: Partial[TContext],
     gitRawCommitsOpts: Unit,
     parserOpts: Unit,
     writerOpts: WriterOptions[TCommit, TContext]
   ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](options: Unit, context: Partial[TContext], gitRawCommitsOpts: Unit, parserOpts: ParserOptions): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](options: Unit, context: Partial[TContext], gitRawCommitsOpts: Unit, parserOpts: ParserOptions): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
     options: Unit,
     context: Partial[TContext],
     gitRawCommitsOpts: Unit,
     parserOpts: ParserOptions,
     writerOpts: WriterOptions[TCommit, TContext]
   ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](options: Unit, context: Partial[TContext], gitRawCommitsOpts: GitRawCommitsOptions): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](options: Unit, context: Partial[TContext], gitRawCommitsOpts: GitRawCommitsOptions): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
     options: Unit,
     context: Partial[TContext],
     gitRawCommitsOpts: GitRawCommitsOptions,
     parserOpts: Unit,
     writerOpts: WriterOptions[TCommit, TContext]
   ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
     options: Unit,
     context: Partial[TContext],
     gitRawCommitsOpts: GitRawCommitsOptions,
     parserOpts: ParserOptions
   ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
     options: Unit,
     context: Partial[TContext],
     gitRawCommitsOpts: GitRawCommitsOptions,
     parserOpts: ParserOptions,
     writerOpts: WriterOptions[TCommit, TContext]
   ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](options: Options[TCommit, TContext]): Readable = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](options: Options[TCommit, TContext]): Readable = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Readable]
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
     options: Options[TCommit, TContext],
     context: Unit,
     gitRawCommitsOpts: Unit,
     parserOpts: Unit,
     writerOpts: WriterOptions[TCommit, TContext]
   ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
     options: Options[TCommit, TContext],
     context: Unit,
     gitRawCommitsOpts: Unit,
     parserOpts: ParserOptions
   ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
     options: Options[TCommit, TContext],
     context: Unit,
     gitRawCommitsOpts: Unit,
     parserOpts: ParserOptions,
     writerOpts: WriterOptions[TCommit, TContext]
   ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](options: Options[TCommit, TContext], context: Unit, gitRawCommitsOpts: GitRawCommitsOptions): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](options: Options[TCommit, TContext], context: Unit, gitRawCommitsOpts: GitRawCommitsOptions): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
     options: Options[TCommit, TContext],
     context: Unit,
     gitRawCommitsOpts: GitRawCommitsOptions,
     parserOpts: Unit,
     writerOpts: WriterOptions[TCommit, TContext]
   ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
     options: Options[TCommit, TContext],
     context: Unit,
     gitRawCommitsOpts: GitRawCommitsOptions,
     parserOpts: ParserOptions
   ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
     options: Options[TCommit, TContext],
     context: Unit,
     gitRawCommitsOpts: GitRawCommitsOptions,
     parserOpts: ParserOptions,
     writerOpts: WriterOptions[TCommit, TContext]
   ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](options: Options[TCommit, TContext], context: Partial[TContext]): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](options: Options[TCommit, TContext], context: Partial[TContext]): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
     options: Options[TCommit, TContext],
     context: Partial[TContext],
     gitRawCommitsOpts: Unit,
     parserOpts: Unit,
     writerOpts: WriterOptions[TCommit, TContext]
   ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
     options: Options[TCommit, TContext],
     context: Partial[TContext],
     gitRawCommitsOpts: Unit,
     parserOpts: ParserOptions
   ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
     options: Options[TCommit, TContext],
     context: Partial[TContext],
     gitRawCommitsOpts: Unit,
     parserOpts: ParserOptions,
     writerOpts: WriterOptions[TCommit, TContext]
   ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
     options: Options[TCommit, TContext],
     context: Partial[TContext],
     gitRawCommitsOpts: GitRawCommitsOptions
   ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
     options: Options[TCommit, TContext],
     context: Partial[TContext],
     gitRawCommitsOpts: GitRawCommitsOptions,
     parserOpts: Unit,
     writerOpts: WriterOptions[TCommit, TContext]
   ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
     options: Options[TCommit, TContext],
     context: Partial[TContext],
     gitRawCommitsOpts: GitRawCommitsOptions,
     parserOpts: ParserOptions
   ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
     options: Options[TCommit, TContext],
     context: Partial[TContext],
     gitRawCommitsOpts: GitRawCommitsOptions,
@@ -248,32 +216,24 @@ object mod {
   }
   object Context {
     
-    @scala.inline
-    def apply(commit: String, date: String, issue: String): Context = {
+    inline def apply(commit: String, date: String, issue: String): Context = {
       val __obj = js.Dynamic.literal(commit = commit.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], issue = issue.asInstanceOf[js.Any])
       __obj.asInstanceOf[Context]
     }
     
-    @scala.inline
-    implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
+    extension [Self <: Context](x: Self) {
       
-      @scala.inline
-      def setCurrentTag(value: String): Self = StObject.set(x, "currentTag", value.asInstanceOf[js.Any])
+      inline def setCurrentTag(value: String): Self = StObject.set(x, "currentTag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentTagUndefined: Self = StObject.set(x, "currentTag", js.undefined)
+      inline def setCurrentTagUndefined: Self = StObject.set(x, "currentTag", js.undefined)
       
-      @scala.inline
-      def setLinkCompare(value: Boolean): Self = StObject.set(x, "linkCompare", value.asInstanceOf[js.Any])
+      inline def setLinkCompare(value: Boolean): Self = StObject.set(x, "linkCompare", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkCompareUndefined: Self = StObject.set(x, "linkCompare", js.undefined)
+      inline def setLinkCompareUndefined: Self = StObject.set(x, "linkCompare", js.undefined)
       
-      @scala.inline
-      def setPreviousTag(value: String): Self = StObject.set(x, "previousTag", value.asInstanceOf[js.Any])
+      inline def setPreviousTag(value: String): Self = StObject.set(x, "previousTag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousTagUndefined: Self = StObject.set(x, "previousTag", js.undefined)
+      inline def setPreviousTagUndefined: Self = StObject.set(x, "previousTag", js.undefined)
     }
   }
   
@@ -310,20 +270,16 @@ object mod {
   }
   object GitRawCommitsOptions {
     
-    @scala.inline
-    def apply(): GitRawCommitsOptions = {
+    inline def apply(): GitRawCommitsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GitRawCommitsOptions]
     }
     
-    @scala.inline
-    implicit class GitRawCommitsOptionsMutableBuilder[Self <: GitRawCommitsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GitRawCommitsOptions](x: Self) {
       
-      @scala.inline
-      def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
+      inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
+      inline def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
     }
   }
   
@@ -343,29 +299,22 @@ object mod {
     }
     object ExtraContext {
       
-      @scala.inline
-      def apply(): ExtraContext = {
+      inline def apply(): ExtraContext = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ExtraContext]
       }
       
-      @scala.inline
-      implicit class ExtraContextMutableBuilder[Self <: ExtraContext] (val x: Self) extends AnyVal {
+      extension [Self <: ExtraContext](x: Self) {
         
-        @scala.inline
-        def setGitSemverTags(value: js.Array[String]): Self = StObject.set(x, "gitSemverTags", value.asInstanceOf[js.Any])
+        inline def setGitSemverTags(value: js.Array[String]): Self = StObject.set(x, "gitSemverTags", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGitSemverTagsUndefined: Self = StObject.set(x, "gitSemverTags", js.undefined)
+        inline def setGitSemverTagsUndefined: Self = StObject.set(x, "gitSemverTags", js.undefined)
         
-        @scala.inline
-        def setGitSemverTagsVarargs(value: String*): Self = StObject.set(x, "gitSemverTags", js.Array(value :_*))
+        inline def setGitSemverTagsVarargs(value: String*): Self = StObject.set(x, "gitSemverTags", js.Array(value :_*))
         
-        @scala.inline
-        def setPackageData(value: ReadonlyPartialPackage): Self = StObject.set(x, "packageData", value.asInstanceOf[js.Any])
+        inline def setPackageData(value: ReadonlyPartialPackage): Self = StObject.set(x, "packageData", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPackageDataUndefined: Self = StObject.set(x, "packageData", js.undefined)
+        inline def setPackageDataUndefined: Self = StObject.set(x, "packageData", js.undefined)
       }
     }
   }
@@ -462,8 +411,7 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](): Options[TCommit, TContext] = {
+    inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](): Options[TCommit, TContext] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options[TCommit, TContext]]
     }
@@ -490,44 +438,32 @@ object mod {
       }
       object ObjectType {
         
-        @scala.inline
-        def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](): ObjectType[TCommit, TContext] = {
+        inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](): ObjectType[TCommit, TContext] = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[ObjectType[TCommit, TContext]]
         }
         
-        @scala.inline
-        implicit class ObjectTypeMutableBuilder[Self <: ObjectType[?, ?], TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */] (val x: Self & (ObjectType[TCommit, TContext])) extends AnyVal {
+        extension [Self <: ObjectType[?, ?], TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](x: Self & (ObjectType[TCommit, TContext])) {
           
-          @scala.inline
-          def setContext(value: Partial[TContext]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+          inline def setContext(value: Partial[TContext]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+          inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
           
-          @scala.inline
-          def setGitRawCommitsOpts(value: GitRawCommitsOptions): Self = StObject.set(x, "gitRawCommitsOpts", value.asInstanceOf[js.Any])
+          inline def setGitRawCommitsOpts(value: GitRawCommitsOptions): Self = StObject.set(x, "gitRawCommitsOpts", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setGitRawCommitsOptsUndefined: Self = StObject.set(x, "gitRawCommitsOpts", js.undefined)
+          inline def setGitRawCommitsOptsUndefined: Self = StObject.set(x, "gitRawCommitsOpts", js.undefined)
           
-          @scala.inline
-          def setParserOpts(value: ParserOptions): Self = StObject.set(x, "parserOpts", value.asInstanceOf[js.Any])
+          inline def setParserOpts(value: ParserOptions): Self = StObject.set(x, "parserOpts", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setParserOptsUndefined: Self = StObject.set(x, "parserOpts", js.undefined)
+          inline def setParserOptsUndefined: Self = StObject.set(x, "parserOpts", js.undefined)
           
-          @scala.inline
-          def setRecommendedBumpOpts(value: typings.conventionalRecommendedBump.mod.Options): Self = StObject.set(x, "recommendedBumpOpts", value.asInstanceOf[js.Any])
+          inline def setRecommendedBumpOpts(value: typings.conventionalRecommendedBump.mod.Options): Self = StObject.set(x, "recommendedBumpOpts", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRecommendedBumpOptsUndefined: Self = StObject.set(x, "recommendedBumpOpts", js.undefined)
+          inline def setRecommendedBumpOptsUndefined: Self = StObject.set(x, "recommendedBumpOpts", js.undefined)
           
-          @scala.inline
-          def setWriterOpts(value: WriterOptions[TCommit, TContext]): Self = StObject.set(x, "writerOpts", value.asInstanceOf[js.Any])
+          inline def setWriterOpts(value: WriterOptions[TCommit, TContext]): Self = StObject.set(x, "writerOpts", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setWriterOptsUndefined: Self = StObject.set(x, "writerOpts", js.undefined)
+          inline def setWriterOptsUndefined: Self = StObject.set(x, "writerOpts", js.undefined)
         }
       }
     }
@@ -536,71 +472,49 @@ object mod {
     
     type Logger = js.Function1[/* message */ js.UndefOr[js.Any], Unit]
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[?, ?], TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */] (val x: Self & (Options[TCommit, TContext])) extends AnyVal {
+    extension [Self <: Options[?, ?], TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](x: Self & (Options[TCommit, TContext])) {
       
-      @scala.inline
-      def setAppend(value: Boolean): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
+      inline def setAppend(value: Boolean): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
+      inline def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
       
-      @scala.inline
-      def setConfig(value: Config[TCommit, TContext]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: Config[TCommit, TContext]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      @scala.inline
-      def setDebug(value: /* message */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+      inline def setDebug(value: /* message */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setLernaPackage(value: String): Self = StObject.set(x, "lernaPackage", value.asInstanceOf[js.Any])
+      inline def setLernaPackage(value: String): Self = StObject.set(x, "lernaPackage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLernaPackageNull: Self = StObject.set(x, "lernaPackage", null)
+      inline def setLernaPackageNull: Self = StObject.set(x, "lernaPackage", null)
       
-      @scala.inline
-      def setLernaPackageUndefined: Self = StObject.set(x, "lernaPackage", js.undefined)
+      inline def setLernaPackageUndefined: Self = StObject.set(x, "lernaPackage", js.undefined)
       
-      @scala.inline
-      def setOutputUnreleased(value: Boolean): Self = StObject.set(x, "outputUnreleased", value.asInstanceOf[js.Any])
+      inline def setOutputUnreleased(value: Boolean): Self = StObject.set(x, "outputUnreleased", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputUnreleasedUndefined: Self = StObject.set(x, "outputUnreleased", js.undefined)
+      inline def setOutputUnreleasedUndefined: Self = StObject.set(x, "outputUnreleased", js.undefined)
       
-      @scala.inline
-      def setPkg(value: Pkg): Self = StObject.set(x, "pkg", value.asInstanceOf[js.Any])
+      inline def setPkg(value: Pkg): Self = StObject.set(x, "pkg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPkgUndefined: Self = StObject.set(x, "pkg", js.undefined)
+      inline def setPkgUndefined: Self = StObject.set(x, "pkg", js.undefined)
       
-      @scala.inline
-      def setReleaseCount(value: Double): Self = StObject.set(x, "releaseCount", value.asInstanceOf[js.Any])
+      inline def setReleaseCount(value: Double): Self = StObject.set(x, "releaseCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReleaseCountUndefined: Self = StObject.set(x, "releaseCount", js.undefined)
+      inline def setReleaseCountUndefined: Self = StObject.set(x, "releaseCount", js.undefined)
       
-      @scala.inline
-      def setTagPrefix(value: String): Self = StObject.set(x, "tagPrefix", value.asInstanceOf[js.Any])
+      inline def setTagPrefix(value: String): Self = StObject.set(x, "tagPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagPrefixUndefined: Self = StObject.set(x, "tagPrefix", js.undefined)
+      inline def setTagPrefixUndefined: Self = StObject.set(x, "tagPrefix", js.undefined)
       
-      @scala.inline
-      def setTransform(value: Transform[TCommit]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+      inline def setTransform(value: Transform[TCommit]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       
-      @scala.inline
-      def setWarn(value: /* message */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+      inline def setWarn(value: /* message */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
+      inline def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
     }
     
     trait Pkg extends StObject {
@@ -623,26 +537,20 @@ object mod {
     }
     object Pkg {
       
-      @scala.inline
-      def apply(): Pkg = {
+      inline def apply(): Pkg = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Pkg]
       }
       
-      @scala.inline
-      implicit class PkgMutableBuilder[Self <: Pkg] (val x: Self) extends AnyVal {
+      extension [Self <: Pkg](x: Self) {
         
-        @scala.inline
-        def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+        inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+        inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
         
-        @scala.inline
-        def setTransform(value: /* pkg */ Record[String, js.Any] => Record[String, js.Any]): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+        inline def setTransform(value: /* pkg */ Record[String, js.Any] => Record[String, js.Any]): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+        inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       }
     }
     
@@ -663,8 +571,7 @@ object mod {
        with typings.conventionalCommitsParser.mod.Options
   object ParserOptions {
     
-    @scala.inline
-    def apply(): ParserOptions = {
+    inline def apply(): ParserOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParserOptions]
     }
@@ -675,8 +582,7 @@ object mod {
        with typings.conventionalChangelogWriter.mod.Options[TCommit, MergedContext[TContext]]
   object WriterOptions {
     
-    @scala.inline
-    def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](): WriterOptions[TCommit, TContext] = {
+    inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](): WriterOptions[TCommit, TContext] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WriterOptions[TCommit, TContext]]
     }

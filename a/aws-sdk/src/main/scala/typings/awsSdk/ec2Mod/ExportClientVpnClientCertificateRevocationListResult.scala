@@ -18,25 +18,19 @@ trait ExportClientVpnClientCertificateRevocationListResult extends StObject {
 }
 object ExportClientVpnClientCertificateRevocationListResult {
   
-  @scala.inline
-  def apply(): ExportClientVpnClientCertificateRevocationListResult = {
+  inline def apply(): ExportClientVpnClientCertificateRevocationListResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExportClientVpnClientCertificateRevocationListResult]
   }
   
-  @scala.inline
-  implicit class ExportClientVpnClientCertificateRevocationListResultMutableBuilder[Self <: ExportClientVpnClientCertificateRevocationListResult] (val x: Self) extends AnyVal {
+  extension [Self <: ExportClientVpnClientCertificateRevocationListResult](x: Self) {
     
-    @scala.inline
-    def setCertificateRevocationList(value: String): Self = StObject.set(x, "CertificateRevocationList", value.asInstanceOf[js.Any])
+    inline def setCertificateRevocationList(value: String): Self = StObject.set(x, "CertificateRevocationList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateRevocationListUndefined: Self = StObject.set(x, "CertificateRevocationList", js.undefined)
+    inline def setCertificateRevocationListUndefined: Self = StObject.set(x, "CertificateRevocationList", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ClientCertificateRevocationListStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ClientCertificateRevocationListStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

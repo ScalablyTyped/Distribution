@@ -31,25 +31,19 @@ trait Bookmark extends StObject {
 }
 object Bookmark {
   
-  @scala.inline
-  def apply(interval: Interval, length: Double, name: String, start: Double): Bookmark = {
+  inline def apply(interval: Interval, length: Double, name: String, start: Double): Bookmark = {
     val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bookmark]
   }
   
-  @scala.inline
-  implicit class BookmarkMutableBuilder[Self <: Bookmark] (val x: Self) extends AnyVal {
+  extension [Self <: Bookmark](x: Self) {
     
-    @scala.inline
-    def setInterval(value: Interval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Interval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

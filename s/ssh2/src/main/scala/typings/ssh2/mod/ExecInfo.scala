@@ -11,16 +11,13 @@ trait ExecInfo extends StObject {
 }
 object ExecInfo {
   
-  @scala.inline
-  def apply(command: String): ExecInfo = {
+  inline def apply(command: String): ExecInfo = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecInfo]
   }
   
-  @scala.inline
-  implicit class ExecInfoMutableBuilder[Self <: ExecInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ExecInfo](x: Self) {
     
-    @scala.inline
-    def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
   }
 }

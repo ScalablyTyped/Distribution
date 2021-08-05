@@ -34,37 +34,27 @@ trait ParamsResourceStorelayoutpagesPatch
 }
 object ParamsResourceStorelayoutpagesPatch {
   
-  @scala.inline
-  def apply(): ParamsResourceStorelayoutpagesPatch = {
+  inline def apply(): ParamsResourceStorelayoutpagesPatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceStorelayoutpagesPatch]
   }
   
-  @scala.inline
-  implicit class ParamsResourceStorelayoutpagesPatchMutableBuilder[Self <: ParamsResourceStorelayoutpagesPatch] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceStorelayoutpagesPatch](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setEnterpriseId(value: String): Self = StObject.set(x, "enterpriseId", value.asInstanceOf[js.Any])
+    inline def setEnterpriseId(value: String): Self = StObject.set(x, "enterpriseId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterpriseIdUndefined: Self = StObject.set(x, "enterpriseId", js.undefined)
+    inline def setEnterpriseIdUndefined: Self = StObject.set(x, "enterpriseId", js.undefined)
     
-    @scala.inline
-    def setPageId(value: String): Self = StObject.set(x, "pageId", value.asInstanceOf[js.Any])
+    inline def setPageId(value: String): Self = StObject.set(x, "pageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageIdUndefined: Self = StObject.set(x, "pageId", js.undefined)
+    inline def setPageIdUndefined: Self = StObject.set(x, "pageId", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaStorePage): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaStorePage): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }
 }

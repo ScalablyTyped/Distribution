@@ -23,19 +23,15 @@ trait ASPxSeparatePaneIndicator
 }
 object ASPxSeparatePaneIndicator {
   
-  @scala.inline
-  def apply(axisY: String, chart: ASPxClientWebChart, name: String, pane: String, series: ASPxClientSeries): ASPxSeparatePaneIndicator = {
+  inline def apply(axisY: String, chart: ASPxClientWebChart, name: String, pane: String, series: ASPxClientSeries): ASPxSeparatePaneIndicator = {
     val __obj = js.Dynamic.literal(axisY = axisY.asInstanceOf[js.Any], chart = chart.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pane = pane.asInstanceOf[js.Any], series = series.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxSeparatePaneIndicator]
   }
   
-  @scala.inline
-  implicit class ASPxSeparatePaneIndicatorMutableBuilder[Self <: ASPxSeparatePaneIndicator] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxSeparatePaneIndicator](x: Self) {
     
-    @scala.inline
-    def setAxisY(value: String): Self = StObject.set(x, "axisY", value.asInstanceOf[js.Any])
+    inline def setAxisY(value: String): Self = StObject.set(x, "axisY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPane(value: String): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
+    inline def setPane(value: String): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
   }
 }

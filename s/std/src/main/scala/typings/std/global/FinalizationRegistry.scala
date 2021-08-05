@@ -19,6 +19,5 @@ class FinalizationRegistry protected ()
 }
 object FinalizationRegistry {
   
-  @scala.inline
-  def apply: FinalizationRegistryConstructor = js.Dynamic.global.selectDynamic("FinalizationRegistry").asInstanceOf[FinalizationRegistryConstructor]
+  inline def apply: FinalizationRegistryConstructor = js.Dynamic.global.selectDynamic("FinalizationRegistry").asInstanceOf[FinalizationRegistryConstructor]
 }

@@ -19,16 +19,13 @@ trait BrokenPackageRequest
 }
 object BrokenPackageRequest {
   
-  @scala.inline
-  def apply(Context: XInterface, Message: String, aName: String): BrokenPackageRequest = {
+  inline def apply(Context: XInterface, Message: String, aName: String): BrokenPackageRequest = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], aName = aName.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrokenPackageRequest]
   }
   
-  @scala.inline
-  implicit class BrokenPackageRequestMutableBuilder[Self <: BrokenPackageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BrokenPackageRequest](x: Self) {
     
-    @scala.inline
-    def setAName(value: String): Self = StObject.set(x, "aName", value.asInstanceOf[js.Any])
+    inline def setAName(value: String): Self = StObject.set(x, "aName", value.asInstanceOf[js.Any])
   }
 }

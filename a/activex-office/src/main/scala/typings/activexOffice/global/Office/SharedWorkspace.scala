@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.SharedWorkspace")
 @js.native
-class SharedWorkspace protected ()
+/* private */ class SharedWorkspace ()
   extends StObject
      with typings.activexOffice.Office.SharedWorkspace

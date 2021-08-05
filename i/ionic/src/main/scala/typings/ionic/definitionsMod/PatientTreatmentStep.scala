@@ -10,16 +10,13 @@ trait PatientTreatmentStep extends StObject {
 }
 object PatientTreatmentStep {
   
-  @scala.inline
-  def apply(message: String): PatientTreatmentStep = {
+  inline def apply(message: String): PatientTreatmentStep = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatientTreatmentStep]
   }
   
-  @scala.inline
-  implicit class PatientTreatmentStepMutableBuilder[Self <: PatientTreatmentStep] (val x: Self) extends AnyVal {
+  extension [Self <: PatientTreatmentStep](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

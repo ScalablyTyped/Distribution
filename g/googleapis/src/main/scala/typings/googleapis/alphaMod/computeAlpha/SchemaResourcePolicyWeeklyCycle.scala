@@ -16,22 +16,17 @@ trait SchemaResourcePolicyWeeklyCycle extends StObject {
 }
 object SchemaResourcePolicyWeeklyCycle {
   
-  @scala.inline
-  def apply(): SchemaResourcePolicyWeeklyCycle = {
+  inline def apply(): SchemaResourcePolicyWeeklyCycle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaResourcePolicyWeeklyCycle]
   }
   
-  @scala.inline
-  implicit class SchemaResourcePolicyWeeklyCycleMutableBuilder[Self <: SchemaResourcePolicyWeeklyCycle] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaResourcePolicyWeeklyCycle](x: Self) {
     
-    @scala.inline
-    def setDayOfWeeks(value: js.Array[SchemaResourcePolicyWeeklyCycleDayOfWeek]): Self = StObject.set(x, "dayOfWeeks", value.asInstanceOf[js.Any])
+    inline def setDayOfWeeks(value: js.Array[SchemaResourcePolicyWeeklyCycleDayOfWeek]): Self = StObject.set(x, "dayOfWeeks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayOfWeeksUndefined: Self = StObject.set(x, "dayOfWeeks", js.undefined)
+    inline def setDayOfWeeksUndefined: Self = StObject.set(x, "dayOfWeeks", js.undefined)
     
-    @scala.inline
-    def setDayOfWeeksVarargs(value: SchemaResourcePolicyWeeklyCycleDayOfWeek*): Self = StObject.set(x, "dayOfWeeks", js.Array(value :_*))
+    inline def setDayOfWeeksVarargs(value: SchemaResourcePolicyWeeklyCycleDayOfWeek*): Self = StObject.set(x, "dayOfWeeks", js.Array(value :_*))
   }
 }

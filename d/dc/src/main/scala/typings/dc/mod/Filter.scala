@@ -10,16 +10,13 @@ trait Filter extends StObject {
 }
 object Filter {
   
-  @scala.inline
-  def apply(isFiltered: js.Any => Boolean): Filter = {
+  inline def apply(isFiltered: js.Any => Boolean): Filter = {
     val __obj = js.Dynamic.literal(isFiltered = js.Any.fromFunction1(isFiltered))
     __obj.asInstanceOf[Filter]
   }
   
-  @scala.inline
-  implicit class FilterMutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
+  extension [Self <: Filter](x: Self) {
     
-    @scala.inline
-    def setIsFiltered(value: js.Any => Boolean): Self = StObject.set(x, "isFiltered", js.Any.fromFunction1(value))
+    inline def setIsFiltered(value: js.Any => Boolean): Self = StObject.set(x, "isFiltered", js.Any.fromFunction1(value))
   }
 }

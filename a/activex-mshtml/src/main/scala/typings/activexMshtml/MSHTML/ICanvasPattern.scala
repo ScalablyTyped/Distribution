@@ -6,22 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ICanvasPattern extends StObject {
   
-  @JSName("MSHTML.ICanvasPattern_typekey")
+  /* private */ @JSName("MSHTML.ICanvasPattern_typekey")
   var MSHTMLDotICanvasPattern_typekey: ICanvasPattern
 }
 object ICanvasPattern {
   
-  @scala.inline
-  def apply(MSHTMLDotICanvasPattern_typekey: ICanvasPattern): ICanvasPattern = {
+  inline def apply(MSHTMLDotICanvasPattern_typekey: ICanvasPattern): ICanvasPattern = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("MSHTML.ICanvasPattern_typekey")(MSHTMLDotICanvasPattern_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICanvasPattern]
   }
   
-  @scala.inline
-  implicit class ICanvasPatternMutableBuilder[Self <: ICanvasPattern] (val x: Self) extends AnyVal {
+  extension [Self <: ICanvasPattern](x: Self) {
     
-    @scala.inline
-    def setMSHTMLDotICanvasPattern_typekey(value: ICanvasPattern): Self = StObject.set(x, "MSHTML.ICanvasPattern_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotICanvasPattern_typekey(value: ICanvasPattern): Self = StObject.set(x, "MSHTML.ICanvasPattern_typekey", value.asInstanceOf[js.Any])
   }
 }

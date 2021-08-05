@@ -8,31 +8,25 @@ object jsonpathPlusStrings {
   
   @js.native
   sealed trait all extends StObject
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
   sealed trait parent extends StObject
-  @scala.inline
-  def parent: parent = "parent".asInstanceOf[parent]
+  inline def parent: parent = "parent".asInstanceOf[parent]
   
   @js.native
   sealed trait parentProperty extends StObject
-  @scala.inline
-  def parentProperty: parentProperty = "parentProperty".asInstanceOf[parentProperty]
+  inline def parentProperty: parentProperty = "parentProperty".asInstanceOf[parentProperty]
   
   @js.native
   sealed trait path extends StObject
-  @scala.inline
-  def path: path = "path".asInstanceOf[path]
+  inline def path: path = "path".asInstanceOf[path]
   
   @js.native
   sealed trait pointer extends StObject
-  @scala.inline
-  def pointer: pointer = "pointer".asInstanceOf[pointer]
+  inline def pointer: pointer = "pointer".asInstanceOf[pointer]
   
   @js.native
   sealed trait value extends StObject
-  @scala.inline
-  def value: value = "value".asInstanceOf[value]
+  inline def value: value = "value".asInstanceOf[value]
 }

@@ -19,25 +19,19 @@ trait OpenDirOptions extends StObject {
 }
 object OpenDirOptions {
   
-  @scala.inline
-  def apply(): OpenDirOptions = {
+  inline def apply(): OpenDirOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OpenDirOptions]
   }
   
-  @scala.inline
-  implicit class OpenDirOptionsMutableBuilder[Self <: OpenDirOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OpenDirOptions](x: Self) {
     
-    @scala.inline
-    def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
+    inline def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBufferSizeUndefined: Self = StObject.set(x, "bufferSize", js.undefined)
+    inline def setBufferSizeUndefined: Self = StObject.set(x, "bufferSize", js.undefined)
     
-    @scala.inline
-    def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
   }
 }

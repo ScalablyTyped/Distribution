@@ -12,19 +12,15 @@ trait AttachmentMetadata extends StObject {
 }
 object AttachmentMetadata {
   
-  @scala.inline
-  def apply(height: Double, width: Double): AttachmentMetadata = {
+  inline def apply(height: Double, width: Double): AttachmentMetadata = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachmentMetadata]
   }
   
-  @scala.inline
-  implicit class AttachmentMetadataMutableBuilder[Self <: AttachmentMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: AttachmentMetadata](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

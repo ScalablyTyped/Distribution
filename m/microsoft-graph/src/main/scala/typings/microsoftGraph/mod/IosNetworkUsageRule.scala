@@ -20,37 +20,27 @@ trait IosNetworkUsageRule extends StObject {
 }
 object IosNetworkUsageRule {
   
-  @scala.inline
-  def apply(): IosNetworkUsageRule = {
+  inline def apply(): IosNetworkUsageRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IosNetworkUsageRule]
   }
   
-  @scala.inline
-  implicit class IosNetworkUsageRuleMutableBuilder[Self <: IosNetworkUsageRule] (val x: Self) extends AnyVal {
+  extension [Self <: IosNetworkUsageRule](x: Self) {
     
-    @scala.inline
-    def setCellularDataBlockWhenRoaming(value: Boolean): Self = StObject.set(x, "cellularDataBlockWhenRoaming", value.asInstanceOf[js.Any])
+    inline def setCellularDataBlockWhenRoaming(value: Boolean): Self = StObject.set(x, "cellularDataBlockWhenRoaming", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellularDataBlockWhenRoamingUndefined: Self = StObject.set(x, "cellularDataBlockWhenRoaming", js.undefined)
+    inline def setCellularDataBlockWhenRoamingUndefined: Self = StObject.set(x, "cellularDataBlockWhenRoaming", js.undefined)
     
-    @scala.inline
-    def setCellularDataBlocked(value: Boolean): Self = StObject.set(x, "cellularDataBlocked", value.asInstanceOf[js.Any])
+    inline def setCellularDataBlocked(value: Boolean): Self = StObject.set(x, "cellularDataBlocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellularDataBlockedUndefined: Self = StObject.set(x, "cellularDataBlocked", js.undefined)
+    inline def setCellularDataBlockedUndefined: Self = StObject.set(x, "cellularDataBlocked", js.undefined)
     
-    @scala.inline
-    def setManagedApps(value: NullableOption[js.Array[AppListItem]]): Self = StObject.set(x, "managedApps", value.asInstanceOf[js.Any])
+    inline def setManagedApps(value: NullableOption[js.Array[AppListItem]]): Self = StObject.set(x, "managedApps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedAppsNull: Self = StObject.set(x, "managedApps", null)
+    inline def setManagedAppsNull: Self = StObject.set(x, "managedApps", null)
     
-    @scala.inline
-    def setManagedAppsUndefined: Self = StObject.set(x, "managedApps", js.undefined)
+    inline def setManagedAppsUndefined: Self = StObject.set(x, "managedApps", js.undefined)
     
-    @scala.inline
-    def setManagedAppsVarargs(value: AppListItem*): Self = StObject.set(x, "managedApps", js.Array(value :_*))
+    inline def setManagedAppsVarargs(value: AppListItem*): Self = StObject.set(x, "managedApps", js.Array(value :_*))
   }
 }

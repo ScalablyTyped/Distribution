@@ -28,37 +28,27 @@ trait SelectParameters extends StObject {
 }
 object SelectParameters {
   
-  @scala.inline
-  def apply(): SelectParameters = {
+  inline def apply(): SelectParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SelectParameters]
   }
   
-  @scala.inline
-  implicit class SelectParametersMutableBuilder[Self <: SelectParameters] (val x: Self) extends AnyVal {
+  extension [Self <: SelectParameters](x: Self) {
     
-    @scala.inline
-    def setExpression(value: String): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: String): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionType(value: ExpressionType): Self = StObject.set(x, "ExpressionType", value.asInstanceOf[js.Any])
+    inline def setExpressionType(value: ExpressionType): Self = StObject.set(x, "ExpressionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionTypeUndefined: Self = StObject.set(x, "ExpressionType", js.undefined)
+    inline def setExpressionTypeUndefined: Self = StObject.set(x, "ExpressionType", js.undefined)
     
-    @scala.inline
-    def setExpressionUndefined: Self = StObject.set(x, "Expression", js.undefined)
+    inline def setExpressionUndefined: Self = StObject.set(x, "Expression", js.undefined)
     
-    @scala.inline
-    def setInputSerialization(value: InputSerialization): Self = StObject.set(x, "InputSerialization", value.asInstanceOf[js.Any])
+    inline def setInputSerialization(value: InputSerialization): Self = StObject.set(x, "InputSerialization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputSerializationUndefined: Self = StObject.set(x, "InputSerialization", js.undefined)
+    inline def setInputSerializationUndefined: Self = StObject.set(x, "InputSerialization", js.undefined)
     
-    @scala.inline
-    def setOutputSerialization(value: OutputSerialization): Self = StObject.set(x, "OutputSerialization", value.asInstanceOf[js.Any])
+    inline def setOutputSerialization(value: OutputSerialization): Self = StObject.set(x, "OutputSerialization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputSerializationUndefined: Self = StObject.set(x, "OutputSerialization", js.undefined)
+    inline def setOutputSerializationUndefined: Self = StObject.set(x, "OutputSerialization", js.undefined)
   }
 }

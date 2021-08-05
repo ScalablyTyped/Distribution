@@ -17,25 +17,19 @@ trait DistributionCut extends StObject {
 }
 object DistributionCut {
   
-  @scala.inline
-  def apply(): DistributionCut = {
+  inline def apply(): DistributionCut = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DistributionCut]
   }
   
-  @scala.inline
-  implicit class DistributionCutMutableBuilder[Self <: DistributionCut] (val x: Self) extends AnyVal {
+  extension [Self <: DistributionCut](x: Self) {
     
-    @scala.inline
-    def setDistributionFilter(value: String): Self = StObject.set(x, "distributionFilter", value.asInstanceOf[js.Any])
+    inline def setDistributionFilter(value: String): Self = StObject.set(x, "distributionFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributionFilterUndefined: Self = StObject.set(x, "distributionFilter", js.undefined)
+    inline def setDistributionFilterUndefined: Self = StObject.set(x, "distributionFilter", js.undefined)
     
-    @scala.inline
-    def setRange(value: GoogleMonitoringV3Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: GoogleMonitoringV3Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
   }
 }

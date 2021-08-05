@@ -10,16 +10,13 @@ trait EnumValuesIncludeInheritedDefinitionsOnly extends StObject {
 }
 object EnumValuesIncludeInheritedDefinitionsOnly {
   
-  @scala.inline
-  def apply(enumValues: IncludeInheritedDefinitionsOnly): EnumValuesIncludeInheritedDefinitionsOnly = {
+  inline def apply(enumValues: IncludeInheritedDefinitionsOnly): EnumValuesIncludeInheritedDefinitionsOnly = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesIncludeInheritedDefinitionsOnly]
   }
   
-  @scala.inline
-  implicit class EnumValuesIncludeInheritedDefinitionsOnlyMutableBuilder[Self <: EnumValuesIncludeInheritedDefinitionsOnly] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesIncludeInheritedDefinitionsOnly](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: IncludeInheritedDefinitionsOnly): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: IncludeInheritedDefinitionsOnly): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

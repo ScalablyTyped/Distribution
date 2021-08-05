@@ -28,25 +28,19 @@ trait Field[Value, Holder /* <: Members[Holder] */] extends StObject {
 }
 object Field {
   
-  @scala.inline
-  def apply[Value, Holder /* <: Members[Holder] */](fieldReturnType: Type, fieldType: FieldType, holder: Wrapper[Holder], value: Value): Field[Value, Holder] = {
+  inline def apply[Value, Holder /* <: Members[Holder] */](fieldReturnType: Type, fieldType: FieldType, holder: Wrapper[Holder], value: Value): Field[Value, Holder] = {
     val __obj = js.Dynamic.literal(fieldReturnType = fieldReturnType.asInstanceOf[js.Any], fieldType = fieldType.asInstanceOf[js.Any], holder = holder.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Field[Value, Holder]]
   }
   
-  @scala.inline
-  implicit class FieldMutableBuilder[Self <: Field[?, ?], Value, Holder /* <: Members[Holder] */] (val x: Self & (Field[Value, Holder])) extends AnyVal {
+  extension [Self <: Field[?, ?], Value, Holder /* <: Members[Holder] */](x: Self & (Field[Value, Holder])) {
     
-    @scala.inline
-    def setFieldReturnType(value: Type): Self = StObject.set(x, "fieldReturnType", value.asInstanceOf[js.Any])
+    inline def setFieldReturnType(value: Type): Self = StObject.set(x, "fieldReturnType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldType(value: FieldType): Self = StObject.set(x, "fieldType", value.asInstanceOf[js.Any])
+    inline def setFieldType(value: FieldType): Self = StObject.set(x, "fieldType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHolder(value: Wrapper[Holder]): Self = StObject.set(x, "holder", value.asInstanceOf[js.Any])
+    inline def setHolder(value: Wrapper[Holder]): Self = StObject.set(x, "holder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

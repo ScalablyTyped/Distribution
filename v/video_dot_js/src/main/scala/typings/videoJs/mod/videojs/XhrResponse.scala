@@ -21,8 +21,7 @@ trait XhrResponse extends StObject {
 }
 object XhrResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     body: js.Any,
     headers: js.Any,
     method: String,
@@ -34,25 +33,18 @@ object XhrResponse {
     __obj.asInstanceOf[XhrResponse]
   }
   
-  @scala.inline
-  implicit class XhrResponseMutableBuilder[Self <: XhrResponse] (val x: Self) extends AnyVal {
+  extension [Self <: XhrResponse](x: Self) {
     
-    @scala.inline
-    def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawRequest(value: XMLHttpRequest): Self = StObject.set(x, "rawRequest", value.asInstanceOf[js.Any])
+    inline def setRawRequest(value: XMLHttpRequest): Self = StObject.set(x, "rawRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait ScaleControlOptions extends StObject {
 }
 object ScaleControlOptions {
   
-  @scala.inline
-  def apply(position: Position): ScaleControlOptions = {
+  inline def apply(position: Position): ScaleControlOptions = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScaleControlOptions]
   }
   
-  @scala.inline
-  implicit class ScaleControlOptionsMutableBuilder[Self <: ScaleControlOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ScaleControlOptions](x: Self) {
     
-    @scala.inline
-    def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

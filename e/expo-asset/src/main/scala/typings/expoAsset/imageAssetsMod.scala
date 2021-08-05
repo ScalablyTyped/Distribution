@@ -10,11 +10,9 @@ object imageAssetsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getImageInfoAsync(url: String): js.Promise[ImageInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getImageInfoAsync")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ImageInfo]]
+  inline def getImageInfoAsync(url: String): js.Promise[ImageInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getImageInfoAsync")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ImageInfo]]
   
-  @scala.inline
-  def isImageType(`type`: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImageType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isImageType(`type`: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImageType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   trait ImageInfo extends StObject {
     
@@ -26,23 +24,18 @@ object imageAssetsMod {
   }
   object ImageInfo {
     
-    @scala.inline
-    def apply(height: Double, name: String, width: Double): ImageInfo = {
+    inline def apply(height: Double, name: String, width: Double): ImageInfo = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[ImageInfo]
     }
     
-    @scala.inline
-    implicit class ImageInfoMutableBuilder[Self <: ImageInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ImageInfo](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

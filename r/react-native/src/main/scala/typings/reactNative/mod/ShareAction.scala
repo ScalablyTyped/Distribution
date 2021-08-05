@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ShareAction extends StObject
 object ShareAction {
   
-  @scala.inline
-  def ShareDismissedAction(): typings.reactNative.mod.ShareDismissedAction = {
+  inline def ShareDismissedAction(): typings.reactNative.mod.ShareDismissedAction = {
     val __obj = js.Dynamic.literal(action = "dismissedAction")
     __obj.asInstanceOf[typings.reactNative.mod.ShareDismissedAction]
   }
   
-  @scala.inline
-  def ShareSharedAction(): typings.reactNative.mod.ShareSharedAction = {
+  inline def ShareSharedAction(): typings.reactNative.mod.ShareSharedAction = {
     val __obj = js.Dynamic.literal(action = "sharedAction")
     __obj.asInstanceOf[typings.reactNative.mod.ShareSharedAction]
   }

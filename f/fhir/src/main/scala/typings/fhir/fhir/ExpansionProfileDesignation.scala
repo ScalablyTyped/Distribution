@@ -23,25 +23,19 @@ trait ExpansionProfileDesignation
 }
 object ExpansionProfileDesignation {
   
-  @scala.inline
-  def apply(): ExpansionProfileDesignation = {
+  inline def apply(): ExpansionProfileDesignation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExpansionProfileDesignation]
   }
   
-  @scala.inline
-  implicit class ExpansionProfileDesignationMutableBuilder[Self <: ExpansionProfileDesignation] (val x: Self) extends AnyVal {
+  extension [Self <: ExpansionProfileDesignation](x: Self) {
     
-    @scala.inline
-    def setExclude(value: ExpansionProfileDesignationExclude): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+    inline def setExclude(value: ExpansionProfileDesignationExclude): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+    inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
-    @scala.inline
-    def setInclude(value: ExpansionProfileDesignationInclude): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    inline def setInclude(value: ExpansionProfileDesignationInclude): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+    inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
   }
 }

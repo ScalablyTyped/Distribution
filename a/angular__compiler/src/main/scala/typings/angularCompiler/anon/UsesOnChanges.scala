@@ -13,16 +13,13 @@ trait UsesOnChanges extends StObject {
 }
 object UsesOnChanges {
   
-  @scala.inline
-  def apply(usesOnChanges: Boolean): UsesOnChanges = {
+  inline def apply(usesOnChanges: Boolean): UsesOnChanges = {
     val __obj = js.Dynamic.literal(usesOnChanges = usesOnChanges.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsesOnChanges]
   }
   
-  @scala.inline
-  implicit class UsesOnChangesMutableBuilder[Self <: UsesOnChanges] (val x: Self) extends AnyVal {
+  extension [Self <: UsesOnChanges](x: Self) {
     
-    @scala.inline
-    def setUsesOnChanges(value: Boolean): Self = StObject.set(x, "usesOnChanges", value.asInstanceOf[js.Any])
+    inline def setUsesOnChanges(value: Boolean): Self = StObject.set(x, "usesOnChanges", value.asInstanceOf[js.Any])
   }
 }

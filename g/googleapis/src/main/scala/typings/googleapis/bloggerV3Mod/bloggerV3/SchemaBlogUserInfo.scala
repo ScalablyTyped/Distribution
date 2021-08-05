@@ -23,31 +23,23 @@ trait SchemaBlogUserInfo extends StObject {
 }
 object SchemaBlogUserInfo {
   
-  @scala.inline
-  def apply(): SchemaBlogUserInfo = {
+  inline def apply(): SchemaBlogUserInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBlogUserInfo]
   }
   
-  @scala.inline
-  implicit class SchemaBlogUserInfoMutableBuilder[Self <: SchemaBlogUserInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBlogUserInfo](x: Self) {
     
-    @scala.inline
-    def setBlog(value: SchemaBlog): Self = StObject.set(x, "blog", value.asInstanceOf[js.Any])
+    inline def setBlog(value: SchemaBlog): Self = StObject.set(x, "blog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlogUndefined: Self = StObject.set(x, "blog", js.undefined)
+    inline def setBlogUndefined: Self = StObject.set(x, "blog", js.undefined)
     
-    @scala.inline
-    def setBlog_user_info(value: SchemaBlogPerUserInfo): Self = StObject.set(x, "blog_user_info", value.asInstanceOf[js.Any])
+    inline def setBlog_user_info(value: SchemaBlogPerUserInfo): Self = StObject.set(x, "blog_user_info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlog_user_infoUndefined: Self = StObject.set(x, "blog_user_info", js.undefined)
+    inline def setBlog_user_infoUndefined: Self = StObject.set(x, "blog_user_info", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

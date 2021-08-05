@@ -23,25 +23,19 @@ trait ReviewSummary extends StObject {
 }
 object ReviewSummary {
   
-  @scala.inline
-  def apply(averageRating: Double, ratingCount: Double, ratingSplit: js.Array[RatingCountPerRating]): ReviewSummary = {
+  inline def apply(averageRating: Double, ratingCount: Double, ratingSplit: js.Array[RatingCountPerRating]): ReviewSummary = {
     val __obj = js.Dynamic.literal(averageRating = averageRating.asInstanceOf[js.Any], ratingCount = ratingCount.asInstanceOf[js.Any], ratingSplit = ratingSplit.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReviewSummary]
   }
   
-  @scala.inline
-  implicit class ReviewSummaryMutableBuilder[Self <: ReviewSummary] (val x: Self) extends AnyVal {
+  extension [Self <: ReviewSummary](x: Self) {
     
-    @scala.inline
-    def setAverageRating(value: Double): Self = StObject.set(x, "averageRating", value.asInstanceOf[js.Any])
+    inline def setAverageRating(value: Double): Self = StObject.set(x, "averageRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRatingCount(value: Double): Self = StObject.set(x, "ratingCount", value.asInstanceOf[js.Any])
+    inline def setRatingCount(value: Double): Self = StObject.set(x, "ratingCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRatingSplit(value: js.Array[RatingCountPerRating]): Self = StObject.set(x, "ratingSplit", value.asInstanceOf[js.Any])
+    inline def setRatingSplit(value: js.Array[RatingCountPerRating]): Self = StObject.set(x, "ratingSplit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRatingSplitVarargs(value: RatingCountPerRating*): Self = StObject.set(x, "ratingSplit", js.Array(value :_*))
+    inline def setRatingSplitVarargs(value: RatingCountPerRating*): Self = StObject.set(x, "ratingSplit", js.Array(value :_*))
   }
 }

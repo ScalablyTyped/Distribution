@@ -13,19 +13,15 @@ trait LambdaConflictHandlerConfig extends StObject {
 }
 object LambdaConflictHandlerConfig {
   
-  @scala.inline
-  def apply(): LambdaConflictHandlerConfig = {
+  inline def apply(): LambdaConflictHandlerConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LambdaConflictHandlerConfig]
   }
   
-  @scala.inline
-  implicit class LambdaConflictHandlerConfigMutableBuilder[Self <: LambdaConflictHandlerConfig] (val x: Self) extends AnyVal {
+  extension [Self <: LambdaConflictHandlerConfig](x: Self) {
     
-    @scala.inline
-    def setLambdaConflictHandlerArn(value: String): Self = StObject.set(x, "lambdaConflictHandlerArn", value.asInstanceOf[js.Any])
+    inline def setLambdaConflictHandlerArn(value: String): Self = StObject.set(x, "lambdaConflictHandlerArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLambdaConflictHandlerArnUndefined: Self = StObject.set(x, "lambdaConflictHandlerArn", js.undefined)
+    inline def setLambdaConflictHandlerArnUndefined: Self = StObject.set(x, "lambdaConflictHandlerArn", js.undefined)
   }
 }

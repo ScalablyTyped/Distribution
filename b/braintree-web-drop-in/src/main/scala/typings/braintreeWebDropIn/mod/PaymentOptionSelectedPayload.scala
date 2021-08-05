@@ -13,16 +13,13 @@ trait PaymentOptionSelectedPayload extends StObject {
 }
 object PaymentOptionSelectedPayload {
   
-  @scala.inline
-  def apply(paymentOption: card | paypal | paypalCredit): PaymentOptionSelectedPayload = {
+  inline def apply(paymentOption: card | paypal | paypalCredit): PaymentOptionSelectedPayload = {
     val __obj = js.Dynamic.literal(paymentOption = paymentOption.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentOptionSelectedPayload]
   }
   
-  @scala.inline
-  implicit class PaymentOptionSelectedPayloadMutableBuilder[Self <: PaymentOptionSelectedPayload] (val x: Self) extends AnyVal {
+  extension [Self <: PaymentOptionSelectedPayload](x: Self) {
     
-    @scala.inline
-    def setPaymentOption(value: card | paypal | paypalCredit): Self = StObject.set(x, "paymentOption", value.asInstanceOf[js.Any])
+    inline def setPaymentOption(value: card | paypal | paypalCredit): Self = StObject.set(x, "paymentOption", value.asInstanceOf[js.Any])
   }
 }

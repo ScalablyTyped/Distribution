@@ -12,19 +12,15 @@ trait Heal extends StObject {
 }
 object Heal {
   
-  @scala.inline
-  def apply(): Heal = {
+  inline def apply(): Heal = {
     val __obj = js.Dynamic.literal(heal = 2, rangedHeal = 2)
     __obj.asInstanceOf[Heal]
   }
   
-  @scala.inline
-  implicit class HealMutableBuilder[Self <: Heal] (val x: Self) extends AnyVal {
+  extension [Self <: Heal](x: Self) {
     
-    @scala.inline
-    def setHeal(value: typings.screeps.screepsNumbers.`2`): Self = StObject.set(x, "heal", value.asInstanceOf[js.Any])
+    inline def setHeal(value: typings.screeps.screepsNumbers.`2`): Self = StObject.set(x, "heal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangedHeal(value: typings.screeps.screepsNumbers.`2`): Self = StObject.set(x, "rangedHeal", value.asInstanceOf[js.Any])
+    inline def setRangedHeal(value: typings.screeps.screepsNumbers.`2`): Self = StObject.set(x, "rangedHeal", value.asInstanceOf[js.Any])
   }
 }

@@ -64,45 +64,33 @@ trait SimpleLineSymbolProperties
 }
 object SimpleLineSymbolProperties {
   
-  @scala.inline
-  def apply(): SimpleLineSymbolProperties = {
+  inline def apply(): SimpleLineSymbolProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SimpleLineSymbolProperties]
   }
   
-  @scala.inline
-  implicit class SimpleLineSymbolPropertiesMutableBuilder[Self <: SimpleLineSymbolProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SimpleLineSymbolProperties](x: Self) {
     
-    @scala.inline
-    def setCap(value: butt | round | square): Self = StObject.set(x, "cap", value.asInstanceOf[js.Any])
+    inline def setCap(value: butt | round | square): Self = StObject.set(x, "cap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapUndefined: Self = StObject.set(x, "cap", js.undefined)
+    inline def setCapUndefined: Self = StObject.set(x, "cap", js.undefined)
     
-    @scala.inline
-    def setJoin(value: miter | round | bevel): Self = StObject.set(x, "join", value.asInstanceOf[js.Any])
+    inline def setJoin(value: miter | round | bevel): Self = StObject.set(x, "join", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJoinUndefined: Self = StObject.set(x, "join", js.undefined)
+    inline def setJoinUndefined: Self = StObject.set(x, "join", js.undefined)
     
-    @scala.inline
-    def setMarker(value: LineSymbolMarkerProperties): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: LineSymbolMarkerProperties): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
-    @scala.inline
-    def setMiterLimit(value: Double): Self = StObject.set(x, "miterLimit", value.asInstanceOf[js.Any])
+    inline def setMiterLimit(value: Double): Self = StObject.set(x, "miterLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMiterLimitUndefined: Self = StObject.set(x, "miterLimit", js.undefined)
+    inline def setMiterLimitUndefined: Self = StObject.set(x, "miterLimit", js.undefined)
     
-    @scala.inline
-    def setStyle(
+    inline def setStyle(
       value: dash | `dash-dot` | dot | `long-dash` | `long-dash-dot` | `long-dash-dot-dot` | none | `short-dash` | `short-dash-dot` | `short-dash-dot-dot` | `short-dot` | solid
     ): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

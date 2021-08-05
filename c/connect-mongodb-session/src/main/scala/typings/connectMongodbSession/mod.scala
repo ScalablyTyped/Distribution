@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fn: js.Function1[
       /* options */ js.UndefOr[SessionOptions], 
       RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
@@ -44,44 +43,32 @@ object mod {
     }
     object ConnectionInfo {
       
-      @scala.inline
-      def apply(collection: String, uri: String): ConnectionInfo = {
+      inline def apply(collection: String, uri: String): ConnectionInfo = {
         val __obj = js.Dynamic.literal(collection = collection.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
         __obj.asInstanceOf[ConnectionInfo]
       }
       
-      @scala.inline
-      implicit class ConnectionInfoMutableBuilder[Self <: ConnectionInfo] (val x: Self) extends AnyVal {
+      extension [Self <: ConnectionInfo](x: Self) {
         
-        @scala.inline
-        def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+        inline def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConnectionOptions(value: MongoClientOptions): Self = StObject.set(x, "connectionOptions", value.asInstanceOf[js.Any])
+        inline def setConnectionOptions(value: MongoClientOptions): Self = StObject.set(x, "connectionOptions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConnectionOptionsUndefined: Self = StObject.set(x, "connectionOptions", js.undefined)
+        inline def setConnectionOptionsUndefined: Self = StObject.set(x, "connectionOptions", js.undefined)
         
-        @scala.inline
-        def setDatabaseName(value: String): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
+        inline def setDatabaseName(value: String): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDatabaseNameUndefined: Self = StObject.set(x, "databaseName", js.undefined)
+        inline def setDatabaseNameUndefined: Self = StObject.set(x, "databaseName", js.undefined)
         
-        @scala.inline
-        def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+        inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
+        inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
         
-        @scala.inline
-        def setIdField(value: String): Self = StObject.set(x, "idField", value.asInstanceOf[js.Any])
+        inline def setIdField(value: String): Self = StObject.set(x, "idField", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIdFieldUndefined: Self = StObject.set(x, "idField", js.undefined)
+        inline def setIdFieldUndefined: Self = StObject.set(x, "idField", js.undefined)
         
-        @scala.inline
-        def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+        inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
       }
     }
     

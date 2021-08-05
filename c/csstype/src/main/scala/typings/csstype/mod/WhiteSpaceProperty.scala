@@ -21,39 +21,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WhiteSpaceProperty extends StObject
 object WhiteSpaceProperty {
   
-  @scala.inline
-  def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.csstype.csstypeStrings.`-moz-initial`]
+  inline def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.csstype.csstypeStrings.`-moz-initial`]
   
-  @scala.inline
-  def `-moz-pre-wrap`: typings.csstype.csstypeStrings.`-moz-pre-wrap` = "-moz-pre-wrap".asInstanceOf[typings.csstype.csstypeStrings.`-moz-pre-wrap`]
+  inline def `-moz-pre-wrap`: typings.csstype.csstypeStrings.`-moz-pre-wrap` = "-moz-pre-wrap".asInstanceOf[typings.csstype.csstypeStrings.`-moz-pre-wrap`]
   
-  @scala.inline
-  def `break-spaces`: typings.csstype.csstypeStrings.`break-spaces` = "break-spaces".asInstanceOf[typings.csstype.csstypeStrings.`break-spaces`]
+  inline def `break-spaces`: typings.csstype.csstypeStrings.`break-spaces` = "break-spaces".asInstanceOf[typings.csstype.csstypeStrings.`break-spaces`]
   
-  @scala.inline
-  def inherit: typings.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[typings.csstype.csstypeStrings.inherit]
+  inline def inherit: typings.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[typings.csstype.csstypeStrings.inherit]
   
-  @scala.inline
-  def initial: typings.csstype.csstypeStrings.initial = "initial".asInstanceOf[typings.csstype.csstypeStrings.initial]
+  inline def initial: typings.csstype.csstypeStrings.initial = "initial".asInstanceOf[typings.csstype.csstypeStrings.initial]
   
-  @scala.inline
-  def normal: typings.csstype.csstypeStrings.normal = "normal".asInstanceOf[typings.csstype.csstypeStrings.normal]
+  inline def normal: typings.csstype.csstypeStrings.normal = "normal".asInstanceOf[typings.csstype.csstypeStrings.normal]
   
-  @scala.inline
-  def nowrap: typings.csstype.csstypeStrings.nowrap = "nowrap".asInstanceOf[typings.csstype.csstypeStrings.nowrap]
+  inline def nowrap: typings.csstype.csstypeStrings.nowrap = "nowrap".asInstanceOf[typings.csstype.csstypeStrings.nowrap]
   
-  @scala.inline
-  def pre: typings.csstype.csstypeStrings.pre = "pre".asInstanceOf[typings.csstype.csstypeStrings.pre]
+  inline def pre: typings.csstype.csstypeStrings.pre = "pre".asInstanceOf[typings.csstype.csstypeStrings.pre]
   
-  @scala.inline
-  def `pre-line`: typings.csstype.csstypeStrings.`pre-line` = "pre-line".asInstanceOf[typings.csstype.csstypeStrings.`pre-line`]
+  inline def `pre-line`: typings.csstype.csstypeStrings.`pre-line` = "pre-line".asInstanceOf[typings.csstype.csstypeStrings.`pre-line`]
   
-  @scala.inline
-  def `pre-wrap`: typings.csstype.csstypeStrings.`pre-wrap` = "pre-wrap".asInstanceOf[typings.csstype.csstypeStrings.`pre-wrap`]
+  inline def `pre-wrap`: typings.csstype.csstypeStrings.`pre-wrap` = "pre-wrap".asInstanceOf[typings.csstype.csstypeStrings.`pre-wrap`]
   
-  @scala.inline
-  def revert: typings.csstype.csstypeStrings.revert = "revert".asInstanceOf[typings.csstype.csstypeStrings.revert]
+  inline def revert: typings.csstype.csstypeStrings.revert = "revert".asInstanceOf[typings.csstype.csstypeStrings.revert]
   
-  @scala.inline
-  def unset: typings.csstype.csstypeStrings.unset = "unset".asInstanceOf[typings.csstype.csstypeStrings.unset]
+  inline def unset: typings.csstype.csstypeStrings.unset = "unset".asInstanceOf[typings.csstype.csstypeStrings.unset]
 }

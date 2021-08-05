@@ -18,28 +18,21 @@ trait GetAccessControlEffectResponse extends StObject {
 }
 object GetAccessControlEffectResponse {
   
-  @scala.inline
-  def apply(): GetAccessControlEffectResponse = {
+  inline def apply(): GetAccessControlEffectResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAccessControlEffectResponse]
   }
   
-  @scala.inline
-  implicit class GetAccessControlEffectResponseMutableBuilder[Self <: GetAccessControlEffectResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetAccessControlEffectResponse](x: Self) {
     
-    @scala.inline
-    def setEffect(value: AccessControlRuleEffect): Self = StObject.set(x, "Effect", value.asInstanceOf[js.Any])
+    inline def setEffect(value: AccessControlRuleEffect): Self = StObject.set(x, "Effect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffectUndefined: Self = StObject.set(x, "Effect", js.undefined)
+    inline def setEffectUndefined: Self = StObject.set(x, "Effect", js.undefined)
     
-    @scala.inline
-    def setMatchedRules(value: AccessControlRuleNameList): Self = StObject.set(x, "MatchedRules", value.asInstanceOf[js.Any])
+    inline def setMatchedRules(value: AccessControlRuleNameList): Self = StObject.set(x, "MatchedRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchedRulesUndefined: Self = StObject.set(x, "MatchedRules", js.undefined)
+    inline def setMatchedRulesUndefined: Self = StObject.set(x, "MatchedRules", js.undefined)
     
-    @scala.inline
-    def setMatchedRulesVarargs(value: AccessControlRuleName*): Self = StObject.set(x, "MatchedRules", js.Array(value :_*))
+    inline def setMatchedRulesVarargs(value: AccessControlRuleName*): Self = StObject.set(x, "MatchedRules", js.Array(value :_*))
   }
 }

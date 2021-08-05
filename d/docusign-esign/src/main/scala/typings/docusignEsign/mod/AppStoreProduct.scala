@@ -15,25 +15,19 @@ trait AppStoreProduct extends StObject {
 }
 object AppStoreProduct {
   
-  @scala.inline
-  def apply(): AppStoreProduct = {
+  inline def apply(): AppStoreProduct = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AppStoreProduct]
   }
   
-  @scala.inline
-  implicit class AppStoreProductMutableBuilder[Self <: AppStoreProduct] (val x: Self) extends AnyVal {
+  extension [Self <: AppStoreProduct](x: Self) {
     
-    @scala.inline
-    def setMarketPlace(value: String): Self = StObject.set(x, "marketPlace", value.asInstanceOf[js.Any])
+    inline def setMarketPlace(value: String): Self = StObject.set(x, "marketPlace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarketPlaceUndefined: Self = StObject.set(x, "marketPlace", js.undefined)
+    inline def setMarketPlaceUndefined: Self = StObject.set(x, "marketPlace", js.undefined)
     
-    @scala.inline
-    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
+    inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
   }
 }

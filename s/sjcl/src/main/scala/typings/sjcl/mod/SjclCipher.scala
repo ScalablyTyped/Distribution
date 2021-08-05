@@ -12,19 +12,15 @@ trait SjclCipher extends StObject {
 }
 object SjclCipher {
   
-  @scala.inline
-  def apply(decrypt: js.Array[Double] => js.Array[Double], encrypt: js.Array[Double] => js.Array[Double]): SjclCipher = {
+  inline def apply(decrypt: js.Array[Double] => js.Array[Double], encrypt: js.Array[Double] => js.Array[Double]): SjclCipher = {
     val __obj = js.Dynamic.literal(decrypt = js.Any.fromFunction1(decrypt), encrypt = js.Any.fromFunction1(encrypt))
     __obj.asInstanceOf[SjclCipher]
   }
   
-  @scala.inline
-  implicit class SjclCipherMutableBuilder[Self <: SjclCipher] (val x: Self) extends AnyVal {
+  extension [Self <: SjclCipher](x: Self) {
     
-    @scala.inline
-    def setDecrypt(value: js.Array[Double] => js.Array[Double]): Self = StObject.set(x, "decrypt", js.Any.fromFunction1(value))
+    inline def setDecrypt(value: js.Array[Double] => js.Array[Double]): Self = StObject.set(x, "decrypt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEncrypt(value: js.Array[Double] => js.Array[Double]): Self = StObject.set(x, "encrypt", js.Any.fromFunction1(value))
+    inline def setEncrypt(value: js.Array[Double] => js.Array[Double]): Self = StObject.set(x, "encrypt", js.Any.fromFunction1(value))
   }
 }

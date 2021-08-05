@@ -30,8 +30,7 @@ trait AccessibleGraphicShape
      with XAccessibleImage
 object AccessibleGraphicShape {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleChildCount: Double,
     AccessibleContext: XAccessibleContext,
     AccessibleDescription: String,

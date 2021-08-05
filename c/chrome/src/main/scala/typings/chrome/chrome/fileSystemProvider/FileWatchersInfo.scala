@@ -17,25 +17,19 @@ trait FileWatchersInfo extends StObject {
 }
 object FileWatchersInfo {
   
-  @scala.inline
-  def apply(entryPath: String, recursive: Boolean): FileWatchersInfo = {
+  inline def apply(entryPath: String, recursive: Boolean): FileWatchersInfo = {
     val __obj = js.Dynamic.literal(entryPath = entryPath.asInstanceOf[js.Any], recursive = recursive.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileWatchersInfo]
   }
   
-  @scala.inline
-  implicit class FileWatchersInfoMutableBuilder[Self <: FileWatchersInfo] (val x: Self) extends AnyVal {
+  extension [Self <: FileWatchersInfo](x: Self) {
     
-    @scala.inline
-    def setEntryPath(value: String): Self = StObject.set(x, "entryPath", value.asInstanceOf[js.Any])
+    inline def setEntryPath(value: String): Self = StObject.set(x, "entryPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastTag(value: String): Self = StObject.set(x, "lastTag", value.asInstanceOf[js.Any])
+    inline def setLastTag(value: String): Self = StObject.set(x, "lastTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastTagUndefined: Self = StObject.set(x, "lastTag", js.undefined)
+    inline def setLastTagUndefined: Self = StObject.set(x, "lastTag", js.undefined)
     
-    @scala.inline
-    def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+    inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
   }
 }

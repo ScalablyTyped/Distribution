@@ -16,24 +16,19 @@ object proxyMod {
   }
   object ProxyConfig {
     
-    @scala.inline
-    def apply(proxyAddress: String, proxyPort: Double, `type`: String): ProxyConfig = {
+    inline def apply(proxyAddress: String, proxyPort: Double, `type`: String): ProxyConfig = {
       val __obj = js.Dynamic.literal(proxyAddress = proxyAddress.asInstanceOf[js.Any], proxyPort = proxyPort.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProxyConfig]
     }
     
-    @scala.inline
-    implicit class ProxyConfigMutableBuilder[Self <: ProxyConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ProxyConfig](x: Self) {
       
-      @scala.inline
-      def setProxyAddress(value: String): Self = StObject.set(x, "proxyAddress", value.asInstanceOf[js.Any])
+      inline def setProxyAddress(value: String): Self = StObject.set(x, "proxyAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyPort(value: Double): Self = StObject.set(x, "proxyPort", value.asInstanceOf[js.Any])
+      inline def setProxyPort(value: Double): Self = StObject.set(x, "proxyPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -45,20 +40,16 @@ object proxyMod {
   }
   object ProxyInfo {
     
-    @scala.inline
-    def apply(config: ProxyConfig, system: ProxySystemInfo): ProxyInfo = {
+    inline def apply(config: ProxyConfig, system: ProxySystemInfo): ProxyInfo = {
       val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], system = system.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProxyInfo]
     }
     
-    @scala.inline
-    implicit class ProxyInfoMutableBuilder[Self <: ProxyInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ProxyInfo](x: Self) {
       
-      @scala.inline
-      def setConfig(value: ProxyConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: ProxyConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSystem(value: ProxySystemInfo): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
+      inline def setSystem(value: ProxySystemInfo): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     }
   }
   
@@ -74,26 +65,20 @@ object proxyMod {
   }
   object ProxySystemInfo {
     
-    @scala.inline
-    def apply(autoConfigUrl: String, bypass: String, enabled: Boolean, proxy: String): ProxySystemInfo = {
+    inline def apply(autoConfigUrl: String, bypass: String, enabled: Boolean, proxy: String): ProxySystemInfo = {
       val __obj = js.Dynamic.literal(autoConfigUrl = autoConfigUrl.asInstanceOf[js.Any], bypass = bypass.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], proxy = proxy.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProxySystemInfo]
     }
     
-    @scala.inline
-    implicit class ProxySystemInfoMutableBuilder[Self <: ProxySystemInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ProxySystemInfo](x: Self) {
       
-      @scala.inline
-      def setAutoConfigUrl(value: String): Self = StObject.set(x, "autoConfigUrl", value.asInstanceOf[js.Any])
+      inline def setAutoConfigUrl(value: String): Self = StObject.set(x, "autoConfigUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBypass(value: String): Self = StObject.set(x, "bypass", value.asInstanceOf[js.Any])
+      inline def setBypass(value: String): Self = StObject.set(x, "bypass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+      inline def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     }
   }
 }

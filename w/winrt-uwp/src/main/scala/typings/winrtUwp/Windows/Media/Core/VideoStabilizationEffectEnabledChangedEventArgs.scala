@@ -12,16 +12,13 @@ trait VideoStabilizationEffectEnabledChangedEventArgs extends StObject {
 }
 object VideoStabilizationEffectEnabledChangedEventArgs {
   
-  @scala.inline
-  def apply(reason: VideoStabilizationEffectEnabledChangedReason): VideoStabilizationEffectEnabledChangedEventArgs = {
+  inline def apply(reason: VideoStabilizationEffectEnabledChangedReason): VideoStabilizationEffectEnabledChangedEventArgs = {
     val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoStabilizationEffectEnabledChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class VideoStabilizationEffectEnabledChangedEventArgsMutableBuilder[Self <: VideoStabilizationEffectEnabledChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: VideoStabilizationEffectEnabledChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setReason(value: VideoStabilizationEffectEnabledChangedReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: VideoStabilizationEffectEnabledChangedReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }
 }

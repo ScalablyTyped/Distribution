@@ -43,8 +43,7 @@ trait Annotation extends StObject {
 }
 object Annotation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     datasources: js.Array[Double],
     distance: js.Array[Double],
     duration: js.Array[Double],
@@ -56,43 +55,30 @@ object Annotation {
     __obj.asInstanceOf[Annotation]
   }
   
-  @scala.inline
-  implicit class AnnotationMutableBuilder[Self <: Annotation] (val x: Self) extends AnyVal {
+  extension [Self <: Annotation](x: Self) {
     
-    @scala.inline
-    def setDatasources(value: js.Array[Double]): Self = StObject.set(x, "datasources", value.asInstanceOf[js.Any])
+    inline def setDatasources(value: js.Array[Double]): Self = StObject.set(x, "datasources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasourcesVarargs(value: Double*): Self = StObject.set(x, "datasources", js.Array(value :_*))
+    inline def setDatasourcesVarargs(value: Double*): Self = StObject.set(x, "datasources", js.Array(value :_*))
     
-    @scala.inline
-    def setDistance(value: js.Array[Double]): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: js.Array[Double]): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceVarargs(value: Double*): Self = StObject.set(x, "distance", js.Array(value :_*))
+    inline def setDistanceVarargs(value: Double*): Self = StObject.set(x, "distance", js.Array(value :_*))
     
-    @scala.inline
-    def setDuration(value: js.Array[Double]): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: js.Array[Double]): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationVarargs(value: Double*): Self = StObject.set(x, "duration", js.Array(value :_*))
+    inline def setDurationVarargs(value: Double*): Self = StObject.set(x, "duration", js.Array(value :_*))
     
-    @scala.inline
-    def setNodes(value: js.Array[Double]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: js.Array[Double]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodesVarargs(value: Double*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: Double*): Self = StObject.set(x, "nodes", js.Array(value :_*))
     
-    @scala.inline
-    def setSpeed(value: js.Array[Double]): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+    inline def setSpeed(value: js.Array[Double]): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeedVarargs(value: Double*): Self = StObject.set(x, "speed", js.Array(value :_*))
+    inline def setSpeedVarargs(value: Double*): Self = StObject.set(x, "speed", js.Array(value :_*))
     
-    @scala.inline
-    def setWeight(value: js.Array[Double]): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: js.Array[Double]): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightVarargs(value: Double*): Self = StObject.set(x, "weight", js.Array(value :_*))
+    inline def setWeightVarargs(value: Double*): Self = StObject.set(x, "weight", js.Array(value :_*))
   }
 }

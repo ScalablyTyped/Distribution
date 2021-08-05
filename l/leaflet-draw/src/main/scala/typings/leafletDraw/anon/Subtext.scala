@@ -12,22 +12,17 @@ trait Subtext extends StObject {
 }
 object Subtext {
   
-  @scala.inline
-  def apply(text: String): Subtext = {
+  inline def apply(text: String): Subtext = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Subtext]
   }
   
-  @scala.inline
-  implicit class SubtextMutableBuilder[Self <: Subtext] (val x: Self) extends AnyVal {
+  extension [Self <: Subtext](x: Self) {
     
-    @scala.inline
-    def setSubtext(value: String): Self = StObject.set(x, "subtext", value.asInstanceOf[js.Any])
+    inline def setSubtext(value: String): Self = StObject.set(x, "subtext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtextUndefined: Self = StObject.set(x, "subtext", js.undefined)
+    inline def setSubtextUndefined: Self = StObject.set(x, "subtext", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

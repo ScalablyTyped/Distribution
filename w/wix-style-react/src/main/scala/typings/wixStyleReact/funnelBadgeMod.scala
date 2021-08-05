@@ -25,29 +25,22 @@ object funnelBadgeMod {
   }
   object FunnelBadgeProps {
     
-    @scala.inline
-    def apply(value: String): FunnelBadgeProps = {
+    inline def apply(value: String): FunnelBadgeProps = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[FunnelBadgeProps]
     }
     
-    @scala.inline
-    implicit class FunnelBadgePropsMutableBuilder[Self <: FunnelBadgeProps] (val x: Self) extends AnyVal {
+    extension [Self <: FunnelBadgeProps](x: Self) {
       
-      @scala.inline
-      def setOnTooltipShow(value: () => Unit): Self = StObject.set(x, "onTooltipShow", js.Any.fromFunction0(value))
+      inline def setOnTooltipShow(value: () => Unit): Self = StObject.set(x, "onTooltipShow", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnTooltipShowUndefined: Self = StObject.set(x, "onTooltipShow", js.undefined)
+      inline def setOnTooltipShowUndefined: Self = StObject.set(x, "onTooltipShow", js.undefined)
       
-      @scala.inline
-      def setTooltipContent(value: ReactNode): Self = StObject.set(x, "tooltipContent", value.asInstanceOf[js.Any])
+      inline def setTooltipContent(value: ReactNode): Self = StObject.set(x, "tooltipContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipContentUndefined: Self = StObject.set(x, "tooltipContent", js.undefined)
+      inline def setTooltipContentUndefined: Self = StObject.set(x, "tooltipContent", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

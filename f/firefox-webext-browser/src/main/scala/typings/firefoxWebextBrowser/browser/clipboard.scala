@@ -21,10 +21,8 @@ object clipboard {
   trait SetImageDataImageType extends StObject
   object SetImageDataImageType {
     
-    @scala.inline
-    def jpeg: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.jpeg = "jpeg".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.jpeg]
+    inline def jpeg: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.jpeg = "jpeg".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.jpeg]
     
-    @scala.inline
-    def png: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.png = "png".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.png]
+    inline def png: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.png = "png".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.png]
   }
 }

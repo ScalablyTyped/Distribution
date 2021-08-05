@@ -24,10 +24,8 @@ object ODataUtils {
     * first value is smaller, <code>1</code> if the first value is larger, <code>NaN</code> if  they
     * cannot be compared
     */
-  @scala.inline
-  def compare(vValue1: js.Any, vValue2: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(vValue1.asInstanceOf[js.Any], vValue2.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def compare(vValue1: js.Any, vValue2: js.Any, bAsDecimal: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(vValue1.asInstanceOf[js.Any], vValue2.asInstanceOf[js.Any], bAsDecimal.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def compare(vValue1: js.Any, vValue2: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(vValue1.asInstanceOf[js.Any], vValue2.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def compare(vValue1: js.Any, vValue2: js.Any, bAsDecimal: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(vValue1.asInstanceOf[js.Any], vValue2.asInstanceOf[js.Any], bAsDecimal.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Formats a JavaScript value according to the given<a
@@ -37,8 +35,7 @@ object ODataUtils {
     * @param sType the EDM type (e.g. Edm.Decimal)
     * @returns the formatted value
     */
-  @scala.inline
-  def formatValue(vValue: js.Any, sType: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatValue")(vValue.asInstanceOf[js.Any], sType.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatValue(vValue: js.Any, sType: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatValue")(vValue.asInstanceOf[js.Any], sType.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Returns a comparator function optimized for the given EDM type.
@@ -49,11 +46,9 @@ object ODataUtils {
     * value is larger and <code>NaN</code> if they cannot be compared (e.g. one value  is
     * <code>null</code> or <code>undefined</code>)
     */
-  @scala.inline
-  def getComparator(sEdmType: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getComparator")(sEdmType.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getComparator(sEdmType: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getComparator")(sEdmType.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def setOrigin(sServiceURL: String, vParameters: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("setOrigin")(sServiceURL.asInstanceOf[js.Any], vParameters.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def setOrigin(sServiceURL: String, vParameters: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("setOrigin")(sServiceURL.asInstanceOf[js.Any], vParameters.asInstanceOf[js.Any])).asInstanceOf[String]
   /**
     * Adds an origin to the given service URL.If an origin is already present, it will only be replaced if
     * the parameters object contains the flag "force: true".In case the URL already contains URL
@@ -71,6 +66,5 @@ object ODataUtils {
     * object then additional Parameters can be given
     * @returns the service URL with the added origin.
     */
-  @scala.inline
-  def setOrigin(sServiceURL: String, vParameters: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("setOrigin")(sServiceURL.asInstanceOf[js.Any], vParameters.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def setOrigin(sServiceURL: String, vParameters: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("setOrigin")(sServiceURL.asInstanceOf[js.Any], vParameters.asInstanceOf[js.Any])).asInstanceOf[String]
 }

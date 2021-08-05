@@ -23,31 +23,23 @@ trait EmailTemplateContent extends StObject {
 }
 object EmailTemplateContent {
   
-  @scala.inline
-  def apply(): EmailTemplateContent = {
+  inline def apply(): EmailTemplateContent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EmailTemplateContent]
   }
   
-  @scala.inline
-  implicit class EmailTemplateContentMutableBuilder[Self <: EmailTemplateContent] (val x: Self) extends AnyVal {
+  extension [Self <: EmailTemplateContent](x: Self) {
     
-    @scala.inline
-    def setHtml(value: EmailTemplateHtml): Self = StObject.set(x, "Html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: EmailTemplateHtml): Self = StObject.set(x, "Html", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlUndefined: Self = StObject.set(x, "Html", js.undefined)
+    inline def setHtmlUndefined: Self = StObject.set(x, "Html", js.undefined)
     
-    @scala.inline
-    def setSubject(value: EmailTemplateSubject): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: EmailTemplateSubject): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectUndefined: Self = StObject.set(x, "Subject", js.undefined)
+    inline def setSubjectUndefined: Self = StObject.set(x, "Subject", js.undefined)
     
-    @scala.inline
-    def setText(value: EmailTemplateText): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: EmailTemplateText): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "Text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "Text", js.undefined)
   }
 }

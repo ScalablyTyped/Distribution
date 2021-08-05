@@ -19,12 +19,10 @@ trait DashStyle extends StObject
 object DashStyle {
   
   /** the dash is a rectangle */
-  @scala.inline
-  def RECT: `0` = 0.asInstanceOf[`0`]
+  inline def RECT: `0` = 0.asInstanceOf[`0`]
   
   /** the dash is a rectangle, with the size of the dash given in relation to the length of the line */
-  @scala.inline
-  def RECTRELATIVE: `2` = 2.asInstanceOf[`2`]
+  inline def RECTRELATIVE: `2` = 2.asInstanceOf[`2`]
   
   /**
     * the dash is a point
@@ -33,10 +31,8 @@ object DashStyle {
     *
     * the lines join with an arc
     */
-  @scala.inline
-  def ROUND: `1` = 1.asInstanceOf[`1`]
+  inline def ROUND: `1` = 1.asInstanceOf[`1`]
   
   /** the dash is a point, with the size of the dash given in relation to the length of the line */
-  @scala.inline
-  def ROUNDRELATIVE: `3` = 3.asInstanceOf[`3`]
+  inline def ROUNDRELATIVE: `3` = 3.asInstanceOf[`3`]
 }

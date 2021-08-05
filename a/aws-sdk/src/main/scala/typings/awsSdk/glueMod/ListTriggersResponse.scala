@@ -18,28 +18,21 @@ trait ListTriggersResponse extends StObject {
 }
 object ListTriggersResponse {
   
-  @scala.inline
-  def apply(): ListTriggersResponse = {
+  inline def apply(): ListTriggersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTriggersResponse]
   }
   
-  @scala.inline
-  implicit class ListTriggersResponseMutableBuilder[Self <: ListTriggersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListTriggersResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTriggerNames(value: TriggerNameList): Self = StObject.set(x, "TriggerNames", value.asInstanceOf[js.Any])
+    inline def setTriggerNames(value: TriggerNameList): Self = StObject.set(x, "TriggerNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerNamesUndefined: Self = StObject.set(x, "TriggerNames", js.undefined)
+    inline def setTriggerNamesUndefined: Self = StObject.set(x, "TriggerNames", js.undefined)
     
-    @scala.inline
-    def setTriggerNamesVarargs(value: NameString*): Self = StObject.set(x, "TriggerNames", js.Array(value :_*))
+    inline def setTriggerNamesVarargs(value: NameString*): Self = StObject.set(x, "TriggerNames", js.Array(value :_*))
   }
 }

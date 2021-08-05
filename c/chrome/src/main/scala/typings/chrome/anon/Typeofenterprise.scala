@@ -42,8 +42,7 @@ trait Typeofenterprise extends StObject {
 }
 object Typeofenterprise {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deviceAttributes: TypeofdeviceAttributes,
     networkingAttributes: TypeofnetworkingAttribute,
     platformKeys: TypeofplatformKeys
@@ -52,16 +51,12 @@ object Typeofenterprise {
     __obj.asInstanceOf[Typeofenterprise]
   }
   
-  @scala.inline
-  implicit class TypeofenterpriseMutableBuilder[Self <: Typeofenterprise] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofenterprise](x: Self) {
     
-    @scala.inline
-    def setDeviceAttributes(value: TypeofdeviceAttributes): Self = StObject.set(x, "deviceAttributes", value.asInstanceOf[js.Any])
+    inline def setDeviceAttributes(value: TypeofdeviceAttributes): Self = StObject.set(x, "deviceAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkingAttributes(value: TypeofnetworkingAttribute): Self = StObject.set(x, "networkingAttributes", value.asInstanceOf[js.Any])
+    inline def setNetworkingAttributes(value: TypeofnetworkingAttribute): Self = StObject.set(x, "networkingAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformKeys(value: TypeofplatformKeys): Self = StObject.set(x, "platformKeys", value.asInstanceOf[js.Any])
+    inline def setPlatformKeys(value: TypeofplatformKeys): Self = StObject.set(x, "platformKeys", value.asInstanceOf[js.Any])
   }
 }

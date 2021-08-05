@@ -12,22 +12,14 @@ object utilsGetAppendToElementMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getAppendToElement(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppendToElement")().asInstanceOf[js.Any]
-  @scala.inline
-  def getAppendToElement(appendTo: Unit, node: Element): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getAppendToElement")(appendTo.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def getAppendToElement(appendTo: Elm): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppendToElement")(appendTo.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def getAppendToElement(appendTo: Elm, node: Element): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getAppendToElement")(appendTo.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def getAppendToElement(appendTo: Predicate): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppendToElement")(appendTo.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def getAppendToElement(appendTo: Predicate, node: Element): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getAppendToElement")(appendTo.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def getAppendToElement(appendTo: Preset): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppendToElement")(appendTo.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def getAppendToElement(appendTo: Preset, node: Element): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getAppendToElement")(appendTo.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getAppendToElement(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppendToElement")().asInstanceOf[js.Any]
+  inline def getAppendToElement(appendTo: Unit, node: Element): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getAppendToElement")(appendTo.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getAppendToElement(appendTo: Elm): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppendToElement")(appendTo.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getAppendToElement(appendTo: Elm, node: Element): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getAppendToElement")(appendTo.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getAppendToElement(appendTo: Predicate): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppendToElement")(appendTo.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getAppendToElement(appendTo: Predicate, node: Element): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getAppendToElement")(appendTo.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getAppendToElement(appendTo: Preset): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppendToElement")(appendTo.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getAppendToElement(appendTo: Preset, node: Element): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getAppendToElement")(appendTo.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   type Elm = HTMLDivElement | Element
   

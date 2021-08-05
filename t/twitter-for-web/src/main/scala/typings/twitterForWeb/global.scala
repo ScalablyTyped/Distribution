@@ -9,6 +9,5 @@ object global {
   @JSGlobal("twttr")
   @js.native
   def twttr: TwitterLike = js.native
-  @scala.inline
-  def twttr_=(x: TwitterLike): Unit = js.Dynamic.global.updateDynamic("twttr")(x.asInstanceOf[js.Any])
+  inline def twttr_=(x: TwitterLike): Unit = js.Dynamic.global.updateDynamic("twttr")(x.asInstanceOf[js.Any])
 }

@@ -21,8 +21,7 @@ trait SensorAPI extends StObject {
 }
 object SensorAPI {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canGetLock: DraggableId => Boolean,
     findClosestDraggableId: Event => DraggableId | Null,
     findOptionsForDraggable: DraggableId => DraggableOptions | Null,
@@ -34,27 +33,20 @@ object SensorAPI {
     __obj.asInstanceOf[SensorAPI]
   }
   
-  @scala.inline
-  implicit class SensorAPIMutableBuilder[Self <: SensorAPI] (val x: Self) extends AnyVal {
+  extension [Self <: SensorAPI](x: Self) {
     
-    @scala.inline
-    def setCanGetLock(value: DraggableId => Boolean): Self = StObject.set(x, "canGetLock", js.Any.fromFunction1(value))
+    inline def setCanGetLock(value: DraggableId => Boolean): Self = StObject.set(x, "canGetLock", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFindClosestDraggableId(value: Event => DraggableId | Null): Self = StObject.set(x, "findClosestDraggableId", js.Any.fromFunction1(value))
+    inline def setFindClosestDraggableId(value: Event => DraggableId | Null): Self = StObject.set(x, "findClosestDraggableId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFindOptionsForDraggable(value: DraggableId => DraggableOptions | Null): Self = StObject.set(x, "findOptionsForDraggable", js.Any.fromFunction1(value))
+    inline def setFindOptionsForDraggable(value: DraggableId => DraggableOptions | Null): Self = StObject.set(x, "findOptionsForDraggable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsLockClaimed(value: () => Boolean): Self = StObject.set(x, "isLockClaimed", js.Any.fromFunction0(value))
+    inline def setIsLockClaimed(value: () => Boolean): Self = StObject.set(x, "isLockClaimed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTryGetLock(
+    inline def setTryGetLock(
       value: (/* draggableId */ DraggableId, /* forceStop */ js.UndefOr[js.Function0[Unit]], /* options */ js.UndefOr[TryGetLockOptions]) => PreDragActions | Null
     ): Self = StObject.set(x, "tryGetLock", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setTryReleaseLock(value: () => Unit): Self = StObject.set(x, "tryReleaseLock", js.Any.fromFunction0(value))
+    inline def setTryReleaseLock(value: () => Unit): Self = StObject.set(x, "tryReleaseLock", js.Any.fromFunction0(value))
   }
 }

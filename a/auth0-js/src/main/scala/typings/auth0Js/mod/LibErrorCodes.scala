@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LibErrorCodes extends StObject
 object LibErrorCodes {
   
-  @scala.inline
-  def invalid_token: typings.auth0Js.auth0JsStrings.invalid_token = "invalid_token".asInstanceOf[typings.auth0Js.auth0JsStrings.invalid_token]
+  inline def invalid_token: typings.auth0Js.auth0JsStrings.invalid_token = "invalid_token".asInstanceOf[typings.auth0Js.auth0JsStrings.invalid_token]
   
-  @scala.inline
-  def request_error: typings.auth0Js.auth0JsStrings.request_error = "request_error".asInstanceOf[typings.auth0Js.auth0JsStrings.request_error]
+  inline def request_error: typings.auth0Js.auth0JsStrings.request_error = "request_error".asInstanceOf[typings.auth0Js.auth0JsStrings.request_error]
   
-  @scala.inline
-  def timeout: typings.auth0Js.auth0JsStrings.timeout = "timeout".asInstanceOf[typings.auth0Js.auth0JsStrings.timeout]
+  inline def timeout: typings.auth0Js.auth0JsStrings.timeout = "timeout".asInstanceOf[typings.auth0Js.auth0JsStrings.timeout]
 }

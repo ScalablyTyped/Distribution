@@ -36,31 +36,23 @@ trait NamedItemArrayValuesLoadOptions extends StObject {
 }
 object NamedItemArrayValuesLoadOptions {
   
-  @scala.inline
-  def apply(): NamedItemArrayValuesLoadOptions = {
+  inline def apply(): NamedItemArrayValuesLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NamedItemArrayValuesLoadOptions]
   }
   
-  @scala.inline
-  implicit class NamedItemArrayValuesLoadOptionsMutableBuilder[Self <: NamedItemArrayValuesLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NamedItemArrayValuesLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setTypes(value: Boolean): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: Boolean): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
+    inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
-    @scala.inline
-    def setValues(value: Boolean): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: Boolean): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
   }
 }

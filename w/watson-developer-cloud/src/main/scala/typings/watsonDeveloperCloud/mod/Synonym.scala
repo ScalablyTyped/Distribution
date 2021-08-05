@@ -18,28 +18,21 @@ trait Synonym extends StObject {
 }
 object Synonym {
   
-  @scala.inline
-  def apply(synonym: String): Synonym = {
+  inline def apply(synonym: String): Synonym = {
     val __obj = js.Dynamic.literal(synonym = synonym.asInstanceOf[js.Any])
     __obj.asInstanceOf[Synonym]
   }
   
-  @scala.inline
-  implicit class SynonymMutableBuilder[Self <: Synonym] (val x: Self) extends AnyVal {
+  extension [Self <: Synonym](x: Self) {
     
-    @scala.inline
-    def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+    inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
-    @scala.inline
-    def setSynonym(value: String): Self = StObject.set(x, "synonym", value.asInstanceOf[js.Any])
+    inline def setSynonym(value: String): Self = StObject.set(x, "synonym", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+    inline def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
+    inline def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
   }
 }

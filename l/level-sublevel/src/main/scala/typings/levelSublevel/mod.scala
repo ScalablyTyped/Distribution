@@ -20,20 +20,16 @@ object mod extends Shortcut {
   }
   object Batch {
     
-    @scala.inline
-    def apply(): Batch = {
+    inline def apply(): Batch = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Batch]
     }
     
-    @scala.inline
-    implicit class BatchMutableBuilder[Self <: Batch] (val x: Self) extends AnyVal {
+    extension [Self <: Batch](x: Self) {
       
-      @scala.inline
-      def setPrefix(value: Sublevel): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: Sublevel): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     }
   }
   
@@ -53,20 +49,16 @@ object mod extends Shortcut {
   }
   object Sublevel {
     
-    @scala.inline
-    def apply(pre: Hook => js.Function, sublevel: String => Sublevel): Sublevel = {
+    inline def apply(pre: Hook => js.Function, sublevel: String => Sublevel): Sublevel = {
       val __obj = js.Dynamic.literal(pre = js.Any.fromFunction1(pre), sublevel = js.Any.fromFunction1(sublevel))
       __obj.asInstanceOf[Sublevel]
     }
     
-    @scala.inline
-    implicit class SublevelMutableBuilder[Self <: Sublevel] (val x: Self) extends AnyVal {
+    extension [Self <: Sublevel](x: Self) {
       
-      @scala.inline
-      def setPre(value: Hook => js.Function): Self = StObject.set(x, "pre", js.Any.fromFunction1(value))
+      inline def setPre(value: Hook => js.Function): Self = StObject.set(x, "pre", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSublevel(value: String => Sublevel): Self = StObject.set(x, "sublevel", js.Any.fromFunction1(value))
+      inline def setSublevel(value: String => Sublevel): Self = StObject.set(x, "sublevel", js.Any.fromFunction1(value))
     }
   }
   

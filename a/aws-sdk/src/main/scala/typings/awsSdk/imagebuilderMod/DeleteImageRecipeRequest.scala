@@ -13,16 +13,13 @@ trait DeleteImageRecipeRequest extends StObject {
 }
 object DeleteImageRecipeRequest {
   
-  @scala.inline
-  def apply(imageRecipeArn: ImageRecipeArn): DeleteImageRecipeRequest = {
+  inline def apply(imageRecipeArn: ImageRecipeArn): DeleteImageRecipeRequest = {
     val __obj = js.Dynamic.literal(imageRecipeArn = imageRecipeArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteImageRecipeRequest]
   }
   
-  @scala.inline
-  implicit class DeleteImageRecipeRequestMutableBuilder[Self <: DeleteImageRecipeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteImageRecipeRequest](x: Self) {
     
-    @scala.inline
-    def setImageRecipeArn(value: ImageRecipeArn): Self = StObject.set(x, "imageRecipeArn", value.asInstanceOf[js.Any])
+    inline def setImageRecipeArn(value: ImageRecipeArn): Self = StObject.set(x, "imageRecipeArn", value.asInstanceOf[js.Any])
   }
 }

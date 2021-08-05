@@ -28,25 +28,19 @@ trait DataProviderRequest extends StObject {
 }
 object DataProviderRequest {
   
-  @scala.inline
-  def apply(deadline: Date, formatId: String, getDeferral: () => DataProviderDeferral, setData: js.Any => Unit): DataProviderRequest = {
+  inline def apply(deadline: Date, formatId: String, getDeferral: () => DataProviderDeferral, setData: js.Any => Unit): DataProviderRequest = {
     val __obj = js.Dynamic.literal(deadline = deadline.asInstanceOf[js.Any], formatId = formatId.asInstanceOf[js.Any], getDeferral = js.Any.fromFunction0(getDeferral), setData = js.Any.fromFunction1(setData))
     __obj.asInstanceOf[DataProviderRequest]
   }
   
-  @scala.inline
-  implicit class DataProviderRequestMutableBuilder[Self <: DataProviderRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DataProviderRequest](x: Self) {
     
-    @scala.inline
-    def setDeadline(value: Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
+    inline def setDeadline(value: Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatId(value: String): Self = StObject.set(x, "formatId", value.asInstanceOf[js.Any])
+    inline def setFormatId(value: String): Self = StObject.set(x, "formatId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDeferral(value: () => DataProviderDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
+    inline def setGetDeferral(value: () => DataProviderDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetData(value: js.Any => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
+    inline def setSetData(value: js.Any => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
   }
 }

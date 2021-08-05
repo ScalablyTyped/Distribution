@@ -18,28 +18,21 @@ trait ListRecordHistoryOutput extends StObject {
 }
 object ListRecordHistoryOutput {
   
-  @scala.inline
-  def apply(): ListRecordHistoryOutput = {
+  inline def apply(): ListRecordHistoryOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListRecordHistoryOutput]
   }
   
-  @scala.inline
-  implicit class ListRecordHistoryOutputMutableBuilder[Self <: ListRecordHistoryOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListRecordHistoryOutput](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: PageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: PageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
     
-    @scala.inline
-    def setRecordDetails(value: RecordDetails): Self = StObject.set(x, "RecordDetails", value.asInstanceOf[js.Any])
+    inline def setRecordDetails(value: RecordDetails): Self = StObject.set(x, "RecordDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordDetailsUndefined: Self = StObject.set(x, "RecordDetails", js.undefined)
+    inline def setRecordDetailsUndefined: Self = StObject.set(x, "RecordDetails", js.undefined)
     
-    @scala.inline
-    def setRecordDetailsVarargs(value: RecordDetail*): Self = StObject.set(x, "RecordDetails", js.Array(value :_*))
+    inline def setRecordDetailsVarargs(value: RecordDetail*): Self = StObject.set(x, "RecordDetails", js.Array(value :_*))
   }
 }

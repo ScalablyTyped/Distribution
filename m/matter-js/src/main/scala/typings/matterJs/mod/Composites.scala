@@ -37,8 +37,7 @@ object Composites {
     * @param {number} wheelSize
     * @return {composite} A new composite car body
     */
-  @scala.inline
-  def car(xx: Double, yy: Double, width: Double, height: Double, wheelSize: Double): Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("car")(xx.asInstanceOf[js.Any], yy.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], wheelSize.asInstanceOf[js.Any])).asInstanceOf[Composite]
+  inline def car(xx: Double, yy: Double, width: Double, height: Double, wheelSize: Double): Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("car")(xx.asInstanceOf[js.Any], yy.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], wheelSize.asInstanceOf[js.Any])).asInstanceOf[Composite]
   
   /**
     * Chains all bodies in the given composite together using constraints.
@@ -51,8 +50,7 @@ object Composites {
     * @param {object} options
     * @return {composite} A new composite containing objects chained together with constraints
     */
-  @scala.inline
-  def chain(
+  inline def chain(
     composite: Composite,
     xOffsetA: Double,
     yOffsetA: Double,
@@ -71,8 +69,7 @@ object Composites {
     * @param {object} options
     * @return {composite} The composite containing objects meshed together with constraints
     */
-  @scala.inline
-  def mesh(composite: Composite, columns: Double, rows: Double, crossBrace: Boolean, options: js.Any): Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("mesh")(composite.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], rows.asInstanceOf[js.Any], crossBrace.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Composite]
+  inline def mesh(composite: Composite, columns: Double, rows: Double, crossBrace: Boolean, options: js.Any): Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("mesh")(composite.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], rows.asInstanceOf[js.Any], crossBrace.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Composite]
   
   /**
     * Create a new composite containing bodies created in the callback in a pyramid arrangement.
@@ -87,8 +84,7 @@ object Composites {
     * @param {function} callback
     * @return {composite} A new composite containing objects created in the callback
     */
-  @scala.inline
-  def pyramid(
+  inline def pyramid(
     xx: Double,
     yy: Double,
     columns: Double,
@@ -113,8 +109,7 @@ object Composites {
     * @param {} constraintOptions
     * @return {composite} A new composite softBody
     */
-  @scala.inline
-  def softBody(
+  inline def softBody(
     xx: Double,
     yy: Double,
     columns: Double,
@@ -140,8 +135,7 @@ object Composites {
     * @param {function} callback
     * @return {composite} A new composite containing objects created in the callback
     */
-  @scala.inline
-  def stack(
+  inline def stack(
     xx: Double,
     yy: Double,
     columns: Double,

@@ -18,7 +18,7 @@ trait Name extends StObject {
   
   def Delete(): Unit
   
-  @JSName("Excel.Name_typekey")
+  /* private */ @JSName("Excel.Name_typekey")
   var ExcelDotName_typekey: Name
   
   val Index: Double
@@ -59,8 +59,7 @@ trait Name extends StObject {
 }
 object Name {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Category: String,
     CategoryLocal: String,
@@ -90,76 +89,52 @@ object Name {
     __obj.asInstanceOf[Name]
   }
   
-  @scala.inline
-  implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+  extension [Self <: Name](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategory(value: String): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: String): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryLocal(value: String): Self = StObject.set(x, "CategoryLocal", value.asInstanceOf[js.Any])
+    inline def setCategoryLocal(value: String): Self = StObject.set(x, "CategoryLocal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExcelDotName_typekey(value: Name): Self = StObject.set(x, "Excel.Name_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotName_typekey(value: Name): Self = StObject.set(x, "Excel.Name_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMacroType(value: XlXLMMacroType): Self = StObject.set(x, "MacroType", value.asInstanceOf[js.Any])
+    inline def setMacroType(value: XlXLMMacroType): Self = StObject.set(x, "MacroType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameLocal(value: String): Self = StObject.set(x, "NameLocal", value.asInstanceOf[js.Any])
+    inline def setNameLocal(value: String): Self = StObject.set(x, "NameLocal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefersTo(value: String): Self = StObject.set(x, "RefersTo", value.asInstanceOf[js.Any])
+    inline def setRefersTo(value: String): Self = StObject.set(x, "RefersTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefersToLocal(value: String): Self = StObject.set(x, "RefersToLocal", value.asInstanceOf[js.Any])
+    inline def setRefersToLocal(value: String): Self = StObject.set(x, "RefersToLocal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefersToR1C1(value: String): Self = StObject.set(x, "RefersToR1C1", value.asInstanceOf[js.Any])
+    inline def setRefersToR1C1(value: String): Self = StObject.set(x, "RefersToR1C1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefersToR1C1Local(value: String): Self = StObject.set(x, "RefersToR1C1Local", value.asInstanceOf[js.Any])
+    inline def setRefersToR1C1Local(value: String): Self = StObject.set(x, "RefersToR1C1Local", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefersToRange(value: Range): Self = StObject.set(x, "RefersToRange", value.asInstanceOf[js.Any])
+    inline def setRefersToRange(value: Range): Self = StObject.set(x, "RefersToRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortcutKey(value: String): Self = StObject.set(x, "ShortcutKey", value.asInstanceOf[js.Any])
+    inline def setShortcutKey(value: String): Self = StObject.set(x, "ShortcutKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidWorkbookParameter(value: Boolean): Self = StObject.set(x, "ValidWorkbookParameter", value.asInstanceOf[js.Any])
+    inline def setValidWorkbookParameter(value: Boolean): Self = StObject.set(x, "ValidWorkbookParameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkbookParameter(value: Boolean): Self = StObject.set(x, "WorkbookParameter", value.asInstanceOf[js.Any])
+    inline def setWorkbookParameter(value: Boolean): Self = StObject.set(x, "WorkbookParameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_Default(value: String): Self = StObject.set(x, "_Default", value.asInstanceOf[js.Any])
+    inline def set_Default(value: String): Self = StObject.set(x, "_Default", value.asInstanceOf[js.Any])
   }
 }

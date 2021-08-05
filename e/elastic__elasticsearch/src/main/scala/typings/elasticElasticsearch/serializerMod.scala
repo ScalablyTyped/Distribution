@@ -37,8 +37,7 @@ object serializerMod {
   }
   object Serializer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       deserialize: String => js.Any,
       ndserialize: js.Array[js.Any] => String,
       qserialize: js.Any => String,
@@ -48,20 +47,15 @@ object serializerMod {
       __obj.asInstanceOf[Serializer]
     }
     
-    @scala.inline
-    implicit class SerializerMutableBuilder[Self <: Serializer] (val x: Self) extends AnyVal {
+    extension [Self <: Serializer](x: Self) {
       
-      @scala.inline
-      def setDeserialize(value: String => js.Any): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
+      inline def setDeserialize(value: String => js.Any): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNdserialize(value: js.Array[js.Any] => String): Self = StObject.set(x, "ndserialize", js.Any.fromFunction1(value))
+      inline def setNdserialize(value: js.Array[js.Any] => String): Self = StObject.set(x, "ndserialize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setQserialize(value: js.Any => String): Self = StObject.set(x, "qserialize", js.Any.fromFunction1(value))
+      inline def setQserialize(value: js.Any => String): Self = StObject.set(x, "qserialize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSerialize(value: js.Any => String): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
+      inline def setSerialize(value: js.Any => String): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
     }
   }
 }

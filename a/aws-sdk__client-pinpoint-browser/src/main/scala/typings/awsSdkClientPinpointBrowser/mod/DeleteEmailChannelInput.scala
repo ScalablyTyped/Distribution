@@ -9,8 +9,7 @@ trait DeleteEmailChannelInput
      with typings.awsSdkClientPinpointBrowser.typesDeleteEmailChannelInputMod.DeleteEmailChannelInput
 object DeleteEmailChannelInput {
   
-  @scala.inline
-  def apply(ApplicationId: String): DeleteEmailChannelInput = {
+  inline def apply(ApplicationId: String): DeleteEmailChannelInput = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteEmailChannelInput]
   }

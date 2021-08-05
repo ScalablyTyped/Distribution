@@ -20,49 +20,35 @@ trait XRWebGLLayerInit extends StObject {
 }
 object XRWebGLLayerInit {
   
-  @scala.inline
-  def apply(): XRWebGLLayerInit = {
+  inline def apply(): XRWebGLLayerInit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[XRWebGLLayerInit]
   }
   
-  @scala.inline
-  implicit class XRWebGLLayerInitMutableBuilder[Self <: XRWebGLLayerInit] (val x: Self) extends AnyVal {
+  extension [Self <: XRWebGLLayerInit](x: Self) {
     
-    @scala.inline
-    def setAlpha(value: Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+    inline def setAlpha(value: Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+    inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     
-    @scala.inline
-    def setAntialias(value: Boolean): Self = StObject.set(x, "antialias", value.asInstanceOf[js.Any])
+    inline def setAntialias(value: Boolean): Self = StObject.set(x, "antialias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAntialiasUndefined: Self = StObject.set(x, "antialias", js.undefined)
+    inline def setAntialiasUndefined: Self = StObject.set(x, "antialias", js.undefined)
     
-    @scala.inline
-    def setDepth(value: Boolean): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+    inline def setDepth(value: Boolean): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
+    inline def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
     
-    @scala.inline
-    def setFramebufferScaleFactor(value: Double): Self = StObject.set(x, "framebufferScaleFactor", value.asInstanceOf[js.Any])
+    inline def setFramebufferScaleFactor(value: Double): Self = StObject.set(x, "framebufferScaleFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFramebufferScaleFactorUndefined: Self = StObject.set(x, "framebufferScaleFactor", js.undefined)
+    inline def setFramebufferScaleFactorUndefined: Self = StObject.set(x, "framebufferScaleFactor", js.undefined)
     
-    @scala.inline
-    def setIgnoreDepthValues(value: Boolean): Self = StObject.set(x, "ignoreDepthValues", value.asInstanceOf[js.Any])
+    inline def setIgnoreDepthValues(value: Boolean): Self = StObject.set(x, "ignoreDepthValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreDepthValuesUndefined: Self = StObject.set(x, "ignoreDepthValues", js.undefined)
+    inline def setIgnoreDepthValuesUndefined: Self = StObject.set(x, "ignoreDepthValues", js.undefined)
     
-    @scala.inline
-    def setStencil(value: Boolean): Self = StObject.set(x, "stencil", value.asInstanceOf[js.Any])
+    inline def setStencil(value: Boolean): Self = StObject.set(x, "stencil", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStencilUndefined: Self = StObject.set(x, "stencil", js.undefined)
+    inline def setStencilUndefined: Self = StObject.set(x, "stencil", js.undefined)
   }
 }

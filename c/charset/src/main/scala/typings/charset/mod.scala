@@ -29,30 +29,18 @@ object mod {
     * @param peekSize max content peek size, default is 512
     * @return charset, lower case, e.g.: utf8, gbk, gb2312, .... If can\'t guess, return null
     */
-  @scala.inline
-  def apply(obj: String): String | Null = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[String | Null]
-  @scala.inline
-  def apply(obj: String, data: Unit, peekSize: Double): String | Null = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], data.asInstanceOf[js.Any], peekSize.asInstanceOf[js.Any])).asInstanceOf[String | Null]
-  @scala.inline
-  def apply(obj: String, data: Buffer): String | Null = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String | Null]
-  @scala.inline
-  def apply(obj: String, data: Buffer, peekSize: Double): String | Null = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], data.asInstanceOf[js.Any], peekSize.asInstanceOf[js.Any])).asInstanceOf[String | Null]
-  @scala.inline
-  def apply(obj: IncomingHttpHeaders): String | Null = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[String | Null]
-  @scala.inline
-  def apply(obj: IncomingHttpHeaders, data: Unit, peekSize: Double): String | Null = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], data.asInstanceOf[js.Any], peekSize.asInstanceOf[js.Any])).asInstanceOf[String | Null]
-  @scala.inline
-  def apply(obj: IncomingHttpHeaders, data: Buffer): String | Null = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String | Null]
-  @scala.inline
-  def apply(obj: IncomingHttpHeaders, data: Buffer, peekSize: Double): String | Null = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], data.asInstanceOf[js.Any], peekSize.asInstanceOf[js.Any])).asInstanceOf[String | Null]
-  @scala.inline
-  def apply(obj: IncomingMessage): String | Null = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[String | Null]
-  @scala.inline
-  def apply(obj: IncomingMessage, data: Unit, peekSize: Double): String | Null = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], data.asInstanceOf[js.Any], peekSize.asInstanceOf[js.Any])).asInstanceOf[String | Null]
-  @scala.inline
-  def apply(obj: IncomingMessage, data: Buffer): String | Null = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String | Null]
-  @scala.inline
-  def apply(obj: IncomingMessage, data: Buffer, peekSize: Double): String | Null = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], data.asInstanceOf[js.Any], peekSize.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def apply(obj: String): String | Null = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def apply(obj: String, data: Unit, peekSize: Double): String | Null = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], data.asInstanceOf[js.Any], peekSize.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def apply(obj: String, data: Buffer): String | Null = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def apply(obj: String, data: Buffer, peekSize: Double): String | Null = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], data.asInstanceOf[js.Any], peekSize.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def apply(obj: IncomingHttpHeaders): String | Null = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def apply(obj: IncomingHttpHeaders, data: Unit, peekSize: Double): String | Null = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], data.asInstanceOf[js.Any], peekSize.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def apply(obj: IncomingHttpHeaders, data: Buffer): String | Null = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def apply(obj: IncomingHttpHeaders, data: Buffer, peekSize: Double): String | Null = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], data.asInstanceOf[js.Any], peekSize.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def apply(obj: IncomingMessage): String | Null = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def apply(obj: IncomingMessage, data: Unit, peekSize: Double): String | Null = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], data.asInstanceOf[js.Any], peekSize.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def apply(obj: IncomingMessage, data: Buffer): String | Null = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def apply(obj: IncomingMessage, data: Buffer, peekSize: Double): String | Null = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], data.asInstanceOf[js.Any], peekSize.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
   @JSImport("charset", JSImport.Namespace)
   @js.native

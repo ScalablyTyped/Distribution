@@ -23,31 +23,23 @@ trait DescribeUserGroupsMessage extends StObject {
 }
 object DescribeUserGroupsMessage {
   
-  @scala.inline
-  def apply(): DescribeUserGroupsMessage = {
+  inline def apply(): DescribeUserGroupsMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeUserGroupsMessage]
   }
   
-  @scala.inline
-  implicit class DescribeUserGroupsMessageMutableBuilder[Self <: DescribeUserGroupsMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeUserGroupsMessage](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
+    inline def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
+    inline def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
     
-    @scala.inline
-    def setUserGroupId(value: String): Self = StObject.set(x, "UserGroupId", value.asInstanceOf[js.Any])
+    inline def setUserGroupId(value: String): Self = StObject.set(x, "UserGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserGroupIdUndefined: Self = StObject.set(x, "UserGroupId", js.undefined)
+    inline def setUserGroupIdUndefined: Self = StObject.set(x, "UserGroupId", js.undefined)
   }
 }

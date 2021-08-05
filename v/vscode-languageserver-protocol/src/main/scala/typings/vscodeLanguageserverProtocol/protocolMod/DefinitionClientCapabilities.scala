@@ -20,25 +20,19 @@ trait DefinitionClientCapabilities extends StObject {
 }
 object DefinitionClientCapabilities {
   
-  @scala.inline
-  def apply(): DefinitionClientCapabilities = {
+  inline def apply(): DefinitionClientCapabilities = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DefinitionClientCapabilities]
   }
   
-  @scala.inline
-  implicit class DefinitionClientCapabilitiesMutableBuilder[Self <: DefinitionClientCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: DefinitionClientCapabilities](x: Self) {
     
-    @scala.inline
-    def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
+    inline def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
+    inline def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
     
-    @scala.inline
-    def setLinkSupport(value: Boolean): Self = StObject.set(x, "linkSupport", value.asInstanceOf[js.Any])
+    inline def setLinkSupport(value: Boolean): Self = StObject.set(x, "linkSupport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkSupportUndefined: Self = StObject.set(x, "linkSupport", js.undefined)
+    inline def setLinkSupportUndefined: Self = StObject.set(x, "linkSupport", js.undefined)
   }
 }

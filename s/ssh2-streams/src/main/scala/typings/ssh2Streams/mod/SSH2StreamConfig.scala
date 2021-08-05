@@ -51,61 +51,43 @@ trait SSH2StreamConfig extends StObject {
 }
 object SSH2StreamConfig {
   
-  @scala.inline
-  def apply(): SSH2StreamConfig = {
+  inline def apply(): SSH2StreamConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SSH2StreamConfig]
   }
   
-  @scala.inline
-  implicit class SSH2StreamConfigMutableBuilder[Self <: SSH2StreamConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SSH2StreamConfig](x: Self) {
     
-    @scala.inline
-    def setAlgorithms(value: Algorithms): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
+    inline def setAlgorithms(value: Algorithms): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
+    inline def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
     
-    @scala.inline
-    def setBanner(value: String): Self = StObject.set(x, "banner", value.asInstanceOf[js.Any])
+    inline def setBanner(value: String): Self = StObject.set(x, "banner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBannerUndefined: Self = StObject.set(x, "banner", js.undefined)
+    inline def setBannerUndefined: Self = StObject.set(x, "banner", js.undefined)
     
-    @scala.inline
-    def setDebug(value: /* information */ String => js.Any): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+    inline def setDebug(value: /* information */ String => js.Any): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+    inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
-    @scala.inline
-    def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
+    inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
+    inline def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
     
-    @scala.inline
-    def setHostKeys(value: HostKeys): Self = StObject.set(x, "hostKeys", value.asInstanceOf[js.Any])
+    inline def setHostKeys(value: HostKeys): Self = StObject.set(x, "hostKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostKeysUndefined: Self = StObject.set(x, "hostKeys", js.undefined)
+    inline def setHostKeysUndefined: Self = StObject.set(x, "hostKeys", js.undefined)
     
-    @scala.inline
-    def setIdent(value: String): Self = StObject.set(x, "ident", value.asInstanceOf[js.Any])
+    inline def setIdent(value: String): Self = StObject.set(x, "ident", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentUndefined: Self = StObject.set(x, "ident", js.undefined)
+    inline def setIdentUndefined: Self = StObject.set(x, "ident", js.undefined)
     
-    @scala.inline
-    def setMaxPacketSize(value: Double): Self = StObject.set(x, "maxPacketSize", value.asInstanceOf[js.Any])
+    inline def setMaxPacketSize(value: Double): Self = StObject.set(x, "maxPacketSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxPacketSizeUndefined: Self = StObject.set(x, "maxPacketSize", js.undefined)
+    inline def setMaxPacketSizeUndefined: Self = StObject.set(x, "maxPacketSize", js.undefined)
     
-    @scala.inline
-    def setServer(value: Boolean): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    inline def setServer(value: Boolean): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
+    inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
   }
 }

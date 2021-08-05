@@ -18,7 +18,7 @@ trait ColumnFormat extends StObject {
   
   var Label: String
   
-  @JSName("Outlook.ColumnFormat_typekey")
+  /* private */ @JSName("Outlook.ColumnFormat_typekey")
   var OutlookDotColumnFormat_typekey: ColumnFormat
   
   val Parent: js.Any
@@ -29,8 +29,7 @@ trait ColumnFormat extends StObject {
 }
 object ColumnFormat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Align: OlAlign,
     Application: Application,
     Class: OlObjectClass,
@@ -47,37 +46,26 @@ object ColumnFormat {
     __obj.asInstanceOf[ColumnFormat]
   }
   
-  @scala.inline
-  implicit class ColumnFormatMutableBuilder[Self <: ColumnFormat] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnFormat](x: Self) {
     
-    @scala.inline
-    def setAlign(value: OlAlign): Self = StObject.set(x, "Align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: OlAlign): Self = StObject.set(x, "Align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldFormat(value: Double): Self = StObject.set(x, "FieldFormat", value.asInstanceOf[js.Any])
+    inline def setFieldFormat(value: Double): Self = StObject.set(x, "FieldFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldType(value: OlUserPropertyType): Self = StObject.set(x, "FieldType", value.asInstanceOf[js.Any])
+    inline def setFieldType(value: OlUserPropertyType): Self = StObject.set(x, "FieldType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDotColumnFormat_typekey(value: ColumnFormat): Self = StObject.set(x, "Outlook.ColumnFormat_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotColumnFormat_typekey(value: ColumnFormat): Self = StObject.set(x, "Outlook.ColumnFormat_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
   }
 }

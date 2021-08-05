@@ -22,33 +22,25 @@ trait TrackLyricsFeedbackParams extends StObject {
 }
 object TrackLyricsFeedbackParams {
   
-  @scala.inline
-  def apply(): TrackLyricsFeedbackParams = {
+  inline def apply(): TrackLyricsFeedbackParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrackLyricsFeedbackParams]
   }
   
-  @scala.inline
-  implicit class TrackLyricsFeedbackParamsMutableBuilder[Self <: TrackLyricsFeedbackParams] (val x: Self) extends AnyVal {
+  extension [Self <: TrackLyricsFeedbackParams](x: Self) {
     
-    @scala.inline
-    def setFeedback(
+    inline def setFeedback(
       value: wrong_lyrics | wrong_attribution | bad_characters | lines_too_long | wrong_verses | wrong_formatting
     ): Self = StObject.set(x, "feedback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeedbackUndefined: Self = StObject.set(x, "feedback", js.undefined)
+    inline def setFeedbackUndefined: Self = StObject.set(x, "feedback", js.undefined)
     
-    @scala.inline
-    def setLyrics_id(value: Double): Self = StObject.set(x, "lyrics_id", value.asInstanceOf[js.Any])
+    inline def setLyrics_id(value: Double): Self = StObject.set(x, "lyrics_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLyrics_idUndefined: Self = StObject.set(x, "lyrics_id", js.undefined)
+    inline def setLyrics_idUndefined: Self = StObject.set(x, "lyrics_id", js.undefined)
     
-    @scala.inline
-    def setTrack_id(value: Double): Self = StObject.set(x, "track_id", value.asInstanceOf[js.Any])
+    inline def setTrack_id(value: Double): Self = StObject.set(x, "track_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrack_idUndefined: Self = StObject.set(x, "track_id", js.undefined)
+    inline def setTrack_idUndefined: Self = StObject.set(x, "track_id", js.undefined)
   }
 }

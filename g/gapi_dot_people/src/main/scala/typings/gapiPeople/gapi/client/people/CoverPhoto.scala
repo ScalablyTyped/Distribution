@@ -12,19 +12,15 @@ trait CoverPhoto extends StObject {
 }
 object CoverPhoto {
   
-  @scala.inline
-  def apply(metadata: FieldMetadata, url: String): CoverPhoto = {
+  inline def apply(metadata: FieldMetadata, url: String): CoverPhoto = {
     val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[CoverPhoto]
   }
   
-  @scala.inline
-  implicit class CoverPhotoMutableBuilder[Self <: CoverPhoto] (val x: Self) extends AnyVal {
+  extension [Self <: CoverPhoto](x: Self) {
     
-    @scala.inline
-    def setMetadata(value: FieldMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: FieldMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

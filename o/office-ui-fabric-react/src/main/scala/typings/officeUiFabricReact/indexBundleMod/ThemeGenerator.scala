@@ -36,8 +36,7 @@ object ThemeGenerator {
   @JSImport("office-ui-fabric-react/lib/index.bundle", "ThemeGenerator._makeRemainingCode")
   @js.native
   def _makeRemainingCode: js.Any = js.native
-  @scala.inline
-  def _makeRemainingCode_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_makeRemainingCode")(x.asInstanceOf[js.Any])
+  inline def _makeRemainingCode_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_makeRemainingCode")(x.asInstanceOf[js.Any])
   
   /**
     * Sets the given slot's color to the appropriate color, shading it if necessary.
@@ -48,24 +47,21 @@ object ThemeGenerator {
   @JSImport("office-ui-fabric-react/lib/index.bundle", "ThemeGenerator._setSlot")
   @js.native
   def _setSlot: js.Any = js.native
-  @scala.inline
-  def _setSlot_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_setSlot")(x.asInstanceOf[js.Any])
+  inline def _setSlot_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_setSlot")(x.asInstanceOf[js.Any])
   
   /**
     * Gets code-formatted load theme blob that can be copy and pasted.
     * Only used for the old theme designer, where loadTheme usage is acceptable,
     * unlike in the new theme designer.
     */
-  @scala.inline
-  def getThemeAsCode(slotRules: IThemeRules): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getThemeAsCode")(slotRules.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getThemeAsCode(slotRules: IThemeRules): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getThemeAsCode")(slotRules.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * Gets code-formatted load theme blob, specifically for the new theme designer,
     * aka.ms/themedesigner. Shouldn't use loadTheme like the old theme designer since it's deprecated.
     * We want to use the theme object from createTheme and use the Customizations.applySettings API instead.
     */
-  @scala.inline
-  def getThemeAsCodeWithCreateTheme(slotRules: IThemeRules): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getThemeAsCodeWithCreateTheme")(slotRules.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getThemeAsCodeWithCreateTheme(slotRules: IThemeRules): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getThemeAsCodeWithCreateTheme")(slotRules.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * Gets the JSON-formatted blob that describes the theme, usable with the REST request endpoints:
@@ -76,8 +72,7 @@ object ThemeGenerator {
     *   ... }
     * ```
     */
-  @scala.inline
-  def getThemeAsJson(slotRules: IThemeRules): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getThemeAsJson")(slotRules.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getThemeAsJson(slotRules: IThemeRules): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getThemeAsJson")(slotRules.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * Gets the theme as a list of SASS variables that can be used in code
@@ -87,8 +82,7 @@ object ThemeGenerator {
     * ...
     * ```
     */
-  @scala.inline
-  def getThemeAsSass(slotRules: IThemeRules): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getThemeAsSass")(slotRules.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getThemeAsSass(slotRules: IThemeRules): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getThemeAsSass")(slotRules.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * Gets the theme formatted for PowerShell scripts
@@ -100,8 +94,7 @@ object ThemeGenerator {
     * }
     * ```
     */
-  @scala.inline
-  def getThemeForPowerShell(slotRules: IThemeRules): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getThemeForPowerShell")(slotRules.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getThemeForPowerShell(slotRules: IThemeRules): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getThemeForPowerShell")(slotRules.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * Sets the color of each slot based on its rule. Slots that don't inherit must have a color already.
@@ -109,8 +102,7 @@ object ThemeGenerator {
     * setSlot() can be called before this, but this must be called before getThemeAs*().
     * Does not override colors of rules where isCustomized is true (i.e. doesn't override existing customizations).
     */
-  @scala.inline
-  def insureSlots(slotRules: IThemeRules, isInverted: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insureSlots")(slotRules.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def insureSlots(slotRules: IThemeRules, isInverted: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insureSlots")(slotRules.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets an IThemeSlotRule to the given color and cascades it to the rest of the theme, updating other IThemeSlotRules
@@ -122,80 +114,64 @@ object ThemeGenerator {
     * is false), or a custom color based on user input (isCustomized is true). This bool tells us whether to override
     * existing customized colors.
     */
-  @scala.inline
-  def setSlot(rule: IThemeSlotRule, color: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setSlot(rule: IThemeSlotRule, color: String, isInverted: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setSlot(rule: IThemeSlotRule, color: String, isInverted: Boolean, isCustomization: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], isCustomization.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setSlot(
+  inline def setSlot(rule: IThemeSlotRule, color: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setSlot(rule: IThemeSlotRule, color: String, isInverted: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setSlot(rule: IThemeSlotRule, color: String, isInverted: Boolean, isCustomization: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], isCustomization.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setSlot(
     rule: IThemeSlotRule,
     color: String,
     isInverted: Boolean,
     isCustomization: Boolean,
     overwriteCustomColor: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], isCustomization.asInstanceOf[js.Any], overwriteCustomColor.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setSlot(
+  inline def setSlot(
     rule: IThemeSlotRule,
     color: String,
     isInverted: Boolean,
     isCustomization: Unit,
     overwriteCustomColor: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], isCustomization.asInstanceOf[js.Any], overwriteCustomColor.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setSlot(rule: IThemeSlotRule, color: String, isInverted: Unit, isCustomization: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], isCustomization.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setSlot(
+  inline def setSlot(rule: IThemeSlotRule, color: String, isInverted: Unit, isCustomization: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], isCustomization.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setSlot(
     rule: IThemeSlotRule,
     color: String,
     isInverted: Unit,
     isCustomization: Boolean,
     overwriteCustomColor: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], isCustomization.asInstanceOf[js.Any], overwriteCustomColor.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setSlot(
+  inline def setSlot(
     rule: IThemeSlotRule,
     color: String,
     isInverted: Unit,
     isCustomization: Unit,
     overwriteCustomColor: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], isCustomization.asInstanceOf[js.Any], overwriteCustomColor.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setSlot(rule: IThemeSlotRule, color: IColor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setSlot(rule: IThemeSlotRule, color: IColor, isInverted: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setSlot(rule: IThemeSlotRule, color: IColor, isInverted: Boolean, isCustomization: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], isCustomization.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setSlot(
+  inline def setSlot(rule: IThemeSlotRule, color: IColor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setSlot(rule: IThemeSlotRule, color: IColor, isInverted: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setSlot(rule: IThemeSlotRule, color: IColor, isInverted: Boolean, isCustomization: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], isCustomization.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setSlot(
     rule: IThemeSlotRule,
     color: IColor,
     isInverted: Boolean,
     isCustomization: Boolean,
     overwriteCustomColor: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], isCustomization.asInstanceOf[js.Any], overwriteCustomColor.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setSlot(
+  inline def setSlot(
     rule: IThemeSlotRule,
     color: IColor,
     isInverted: Boolean,
     isCustomization: Unit,
     overwriteCustomColor: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], isCustomization.asInstanceOf[js.Any], overwriteCustomColor.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setSlot(rule: IThemeSlotRule, color: IColor, isInverted: Unit, isCustomization: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], isCustomization.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setSlot(
+  inline def setSlot(rule: IThemeSlotRule, color: IColor, isInverted: Unit, isCustomization: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], isCustomization.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setSlot(
     rule: IThemeSlotRule,
     color: IColor,
     isInverted: Unit,
     isCustomization: Boolean,
     overwriteCustomColor: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSlot")(rule.asInstanceOf[js.Any], color.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any], isCustomization.asInstanceOf[js.Any], overwriteCustomColor.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setSlot(
+  inline def setSlot(
     rule: IThemeSlotRule,
     color: IColor,
     isInverted: Unit,

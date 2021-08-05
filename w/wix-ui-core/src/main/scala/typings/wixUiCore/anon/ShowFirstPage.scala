@@ -20,8 +20,7 @@ trait ShowFirstPage extends StObject {
 }
 object ShowFirstPage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     container: typings.std.Element,
     currentPage: Double,
     maxPagesToShow: Double,
@@ -33,25 +32,18 @@ object ShowFirstPage {
     __obj.asInstanceOf[ShowFirstPage]
   }
   
-  @scala.inline
-  implicit class ShowFirstPageMutableBuilder[Self <: ShowFirstPage] (val x: Self) extends AnyVal {
+  extension [Self <: ShowFirstPage](x: Self) {
     
-    @scala.inline
-    def setContainer(value: typings.std.Element): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: typings.std.Element): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentPage(value: Double): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
+    inline def setCurrentPage(value: Double): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxPagesToShow(value: Double): Self = StObject.set(x, "maxPagesToShow", value.asInstanceOf[js.Any])
+    inline def setMaxPagesToShow(value: Double): Self = StObject.set(x, "maxPagesToShow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowFirstPage(value: Boolean): Self = StObject.set(x, "showFirstPage", value.asInstanceOf[js.Any])
+    inline def setShowFirstPage(value: Boolean): Self = StObject.set(x, "showFirstPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowLastPage(value: Boolean): Self = StObject.set(x, "showLastPage", value.asInstanceOf[js.Any])
+    inline def setShowLastPage(value: Boolean): Self = StObject.set(x, "showLastPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalPages(value: Double): Self = StObject.set(x, "totalPages", value.asInstanceOf[js.Any])
+    inline def setTotalPages(value: Double): Self = StObject.set(x, "totalPages", value.asInstanceOf[js.Any])
   }
 }

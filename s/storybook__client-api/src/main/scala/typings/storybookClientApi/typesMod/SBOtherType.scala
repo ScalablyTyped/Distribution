@@ -16,19 +16,15 @@ trait SBOtherType
 }
 object SBOtherType {
   
-  @scala.inline
-  def apply(value: String): SBOtherType = {
+  inline def apply(value: String): SBOtherType = {
     val __obj = js.Dynamic.literal(name = "other", value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SBOtherType]
   }
   
-  @scala.inline
-  implicit class SBOtherTypeMutableBuilder[Self <: SBOtherType] (val x: Self) extends AnyVal {
+  extension [Self <: SBOtherType](x: Self) {
     
-    @scala.inline
-    def setName(value: other): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: other): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

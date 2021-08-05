@@ -55,31 +55,31 @@ object cellCompMod {
     
     def attemptCellRendererRefresh(): Boolean = js.native
     
-    var autoHeightCell: js.Any = js.native
+    /* private */ var autoHeightCell: js.Any = js.native
     
-    var beans: js.Any = js.native
+    /* private */ var beans: js.Any = js.native
     
-    var cellEditor: js.Any = js.native
+    /* private */ var cellEditor: js.Any = js.native
     
-    var cellEditorInPopup: js.Any = js.native
+    /* private */ var cellEditorInPopup: js.Any = js.native
     
-    var cellEditorVersion: js.Any = js.native
+    /* private */ var cellEditorVersion: js.Any = js.native
     
-    var cellFocused: js.Any = js.native
+    /* private */ var cellFocused: js.Any = js.native
     
-    var cellRenderer: js.Any = js.native
+    /* private */ var cellRenderer: js.Any = js.native
     
-    var cellRendererGui: js.Any = js.native
+    /* private */ var cellRendererGui: js.Any = js.native
     
-    var cellRendererType: js.Any = js.native
+    /* private */ var cellRendererType: js.Any = js.native
     
-    var cellRendererVersion: js.Any = js.native
+    /* private */ var cellRendererVersion: js.Any = js.native
     
     /* private */ def chooseCellRenderer(): js.Any = js.native
     
-    var colsSpanning: js.Any = js.native
+    /* private */ var colsSpanning: js.Any = js.native
     
-    var column: js.Any = js.native
+    /* private */ var column: js.Any = js.native
     
     /* private */ def createCellEditorParams(keyPress: js.Any, charPress: js.Any, cellStartedEdit: js.Any): js.Any = js.native
     
@@ -99,15 +99,15 @@ object cellCompMod {
     
     def doesUserWantToCancelKeyboardEvent(event: KeyboardEvent): Boolean = js.native
     
-    var eCellWrapper: js.Any = js.native
+    /* private */ var eCellWrapper: js.Any = js.native
     
-    var eParentOfValue: js.Any = js.native
+    /* private */ var eParentOfValue: js.Any = js.native
     
-    var eParentRow: js.Any = js.native
+    /* private */ var eParentRow: js.Any = js.native
     
-    var editingCell: js.Any = js.native
+    /* private */ var editingCell: js.Any = js.native
     
-    var firstRightPinned: js.Any = js.native
+    /* private */ var firstRightPinned: js.Any = js.native
     
     def flashCell(): Unit = js.native
     
@@ -152,13 +152,13 @@ object cellCompMod {
     
     /* private */ def getValueToUse(): js.Any = js.native
     
-    var gridCell: js.Any = js.native
+    /* private */ var gridCell: js.Any = js.native
     
-    var hideEditorPopup: js.Any = js.native
+    /* private */ var hideEditorPopup: js.Any = js.native
     
-    var includeRowDraggingComponent: js.Any = js.native
+    /* private */ var includeRowDraggingComponent: js.Any = js.native
     
-    var includeSelectionComponent: js.Any = js.native
+    /* private */ var includeSelectionComponent: js.Any = js.native
     
     def isCellEditable(): Boolean = js.native
     
@@ -168,9 +168,9 @@ object cellCompMod {
     
     def isSuppressNavigable(): Boolean = js.native
     
-    var lastIPadMouseClickEvent: js.Any = js.native
+    /* private */ var lastIPadMouseClickEvent: js.Any = js.native
     
-    var lastLeftPinned: js.Any = js.native
+    /* private */ var lastLeftPinned: js.Any = js.native
     
     /* private */ def navigateAfterEdit(): js.Any = js.native
     
@@ -254,9 +254,9 @@ object cellCompMod {
     
     /* private */ def putDataIntoCellAfterRefresh(): js.Any = js.native
     
-    var rangeCount: js.Any = js.native
+    /* private */ var rangeCount: js.Any = js.native
     
-    var rangeSelectionEnabled: js.Any = js.native
+    /* private */ var rangeSelectionEnabled: js.Any = js.native
     
     def refreshCell(): Unit = js.native
     def refreshCell(params: ForceRefresh): Unit = js.native
@@ -265,13 +265,13 @@ object cellCompMod {
     
     /* private */ def replaceContentsAfterRefresh(): js.Any = js.native
     
-    var rowComp: js.Any = js.native
+    /* private */ var rowComp: js.Any = js.native
     
-    var rowNode: js.Any = js.native
+    /* private */ var rowNode: js.Any = js.native
     
-    var rowSpan: js.Any = js.native
+    /* private */ var rowSpan: js.Any = js.native
     
-    var scope: js.Any = js.native
+    /* private */ var scope: js.Any = js.native
     
     def setFocusInOnEditor(): Unit = js.native
     
@@ -307,15 +307,15 @@ object cellCompMod {
     def stopRowOrCellEdit(): Unit = js.native
     def stopRowOrCellEdit(cancel: Boolean): Unit = js.native
     
-    var tooltip: js.Any = js.native
+    /* private */ var tooltip: js.Any = js.native
     
-    var usingCellRenderer: js.Any = js.native
+    /* private */ var usingCellRenderer: js.Any = js.native
     
-    var usingWrapper: js.Any = js.native
+    /* private */ var usingWrapper: js.Any = js.native
     
-    var value: js.Any = js.native
+    /* private */ var value: js.Any = js.native
     
-    var valueFormatted: js.Any = js.native
+    /* private */ var valueFormatted: js.Any = js.native
     
     /* private */ def valuesAreEqual(val1: js.Any, val2: js.Any): js.Any = js.native
   }
@@ -329,7 +329,6 @@ object cellCompMod {
     @JSImport("ag-grid/dist/lib/rendering/cellComp", "CellComp.DOM_DATA_KEY_CELL_COMP")
     @js.native
     def DOM_DATA_KEY_CELL_COMP: String = js.native
-    @scala.inline
-    def DOM_DATA_KEY_CELL_COMP_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOM_DATA_KEY_CELL_COMP")(x.asInstanceOf[js.Any])
+    inline def DOM_DATA_KEY_CELL_COMP_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOM_DATA_KEY_CELL_COMP")(x.asInstanceOf[js.Any])
   }
 }

@@ -48,8 +48,7 @@ trait OutlineView
 }
 object OutlineView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Frame: XFrame,
     Model: XModel,
     PosSize: Rectangle,
@@ -114,10 +113,8 @@ object OutlineView {
     __obj.asInstanceOf[OutlineView]
   }
   
-  @scala.inline
-  implicit class OutlineViewMutableBuilder[Self <: OutlineView] (val x: Self) extends AnyVal {
+  extension [Self <: OutlineView](x: Self) {
     
-    @scala.inline
-    def setVisibleArea(value: Rectangle): Self = StObject.set(x, "VisibleArea", value.asInstanceOf[js.Any])
+    inline def setVisibleArea(value: Rectangle): Self = StObject.set(x, "VisibleArea", value.asInstanceOf[js.Any])
   }
 }

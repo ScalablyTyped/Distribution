@@ -22,19 +22,15 @@ trait DOLBYDIGITALCOMPMODELINE extends StObject {
 }
 object DOLBYDIGITALCOMPMODELINE {
   
-  @scala.inline
-  def apply(): DOLBYDIGITALCOMPMODELINE = {
+  inline def apply(): DOLBYDIGITALCOMPMODELINE = {
     val __obj = js.Dynamic.literal(DOLBY_DIGITAL_COMP_MODE_LINE = 0, DOLBY_DIGITAL_COMP_MODE_RF = 1)
     __obj.asInstanceOf[DOLBYDIGITALCOMPMODELINE]
   }
   
-  @scala.inline
-  implicit class DOLBYDIGITALCOMPMODELINEMutableBuilder[Self <: DOLBYDIGITALCOMPMODELINE] (val x: Self) extends AnyVal {
+  extension [Self <: DOLBYDIGITALCOMPMODELINE](x: Self) {
     
-    @scala.inline
-    def setDOLBY_DIGITAL_COMP_MODE_LINE(value: `0`): Self = StObject.set(x, "DOLBY_DIGITAL_COMP_MODE_LINE", value.asInstanceOf[js.Any])
+    inline def setDOLBY_DIGITAL_COMP_MODE_LINE(value: `0`): Self = StObject.set(x, "DOLBY_DIGITAL_COMP_MODE_LINE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDOLBY_DIGITAL_COMP_MODE_RF(value: `1`): Self = StObject.set(x, "DOLBY_DIGITAL_COMP_MODE_RF", value.asInstanceOf[js.Any])
+    inline def setDOLBY_DIGITAL_COMP_MODE_RF(value: `1`): Self = StObject.set(x, "DOLBY_DIGITAL_COMP_MODE_RF", value.asInstanceOf[js.Any])
   }
 }

@@ -83,8 +83,7 @@ trait KmlMouseEvent
 }
 object KmlMouseEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getAltKey: () => Boolean,
     getAltitude: () => Double,
     getBubbles: () => Boolean,
@@ -111,49 +110,34 @@ object KmlMouseEvent {
     __obj.asInstanceOf[KmlMouseEvent]
   }
   
-  @scala.inline
-  implicit class KmlMouseEventMutableBuilder[Self <: KmlMouseEvent] (val x: Self) extends AnyVal {
+  extension [Self <: KmlMouseEvent](x: Self) {
     
-    @scala.inline
-    def setGetAltKey(value: () => Boolean): Self = StObject.set(x, "getAltKey", js.Any.fromFunction0(value))
+    inline def setGetAltKey(value: () => Boolean): Self = StObject.set(x, "getAltKey", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAltitude(value: () => Double): Self = StObject.set(x, "getAltitude", js.Any.fromFunction0(value))
+    inline def setGetAltitude(value: () => Double): Self = StObject.set(x, "getAltitude", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetButton(value: () => Double): Self = StObject.set(x, "getButton", js.Any.fromFunction0(value))
+    inline def setGetButton(value: () => Double): Self = StObject.set(x, "getButton", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetClientX(value: () => Double): Self = StObject.set(x, "getClientX", js.Any.fromFunction0(value))
+    inline def setGetClientX(value: () => Double): Self = StObject.set(x, "getClientX", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetClientY(value: () => Double): Self = StObject.set(x, "getClientY", js.Any.fromFunction0(value))
+    inline def setGetClientY(value: () => Double): Self = StObject.set(x, "getClientY", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCtrlKey(value: () => Boolean): Self = StObject.set(x, "getCtrlKey", js.Any.fromFunction0(value))
+    inline def setGetCtrlKey(value: () => Boolean): Self = StObject.set(x, "getCtrlKey", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDidHitGlobe(value: () => Boolean): Self = StObject.set(x, "getDidHitGlobe", js.Any.fromFunction0(value))
+    inline def setGetDidHitGlobe(value: () => Boolean): Self = StObject.set(x, "getDidHitGlobe", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLatitude(value: () => Double): Self = StObject.set(x, "getLatitude", js.Any.fromFunction0(value))
+    inline def setGetLatitude(value: () => Double): Self = StObject.set(x, "getLatitude", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLongitude(value: () => Double): Self = StObject.set(x, "getLongitude", js.Any.fromFunction0(value))
+    inline def setGetLongitude(value: () => Double): Self = StObject.set(x, "getLongitude", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRelatedTarget(value: () => GEEventEmitter): Self = StObject.set(x, "getRelatedTarget", js.Any.fromFunction0(value))
+    inline def setGetRelatedTarget(value: () => GEEventEmitter): Self = StObject.set(x, "getRelatedTarget", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetScreenX(value: () => Double): Self = StObject.set(x, "getScreenX", js.Any.fromFunction0(value))
+    inline def setGetScreenX(value: () => Double): Self = StObject.set(x, "getScreenX", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetScreenY(value: () => Double): Self = StObject.set(x, "getScreenY", js.Any.fromFunction0(value))
+    inline def setGetScreenY(value: () => Double): Self = StObject.set(x, "getScreenY", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetShiftKey(value: () => Boolean): Self = StObject.set(x, "getShiftKey", js.Any.fromFunction0(value))
+    inline def setGetShiftKey(value: () => Boolean): Self = StObject.set(x, "getShiftKey", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTimeStamp(value: () => Double): Self = StObject.set(x, "getTimeStamp", js.Any.fromFunction0(value))
+    inline def setGetTimeStamp(value: () => Double): Self = StObject.set(x, "getTimeStamp", js.Any.fromFunction0(value))
   }
 }

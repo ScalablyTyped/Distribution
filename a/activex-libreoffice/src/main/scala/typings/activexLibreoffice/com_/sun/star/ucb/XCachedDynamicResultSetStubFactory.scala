@@ -50,8 +50,7 @@ trait XCachedDynamicResultSetStubFactory
 }
 object XCachedDynamicResultSetStubFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     connectToCache: (XDynamicResultSet, XDynamicResultSet, SeqEquiv[NumberedSortingInfo], XAnyCompareFactory) => Unit,
     createCachedDynamicResultSetStub: XDynamicResultSet => XDynamicResultSet,
@@ -62,15 +61,12 @@ object XCachedDynamicResultSetStubFactory {
     __obj.asInstanceOf[XCachedDynamicResultSetStubFactory]
   }
   
-  @scala.inline
-  implicit class XCachedDynamicResultSetStubFactoryMutableBuilder[Self <: XCachedDynamicResultSetStubFactory] (val x: Self) extends AnyVal {
+  extension [Self <: XCachedDynamicResultSetStubFactory](x: Self) {
     
-    @scala.inline
-    def setConnectToCache(
+    inline def setConnectToCache(
       value: (XDynamicResultSet, XDynamicResultSet, SeqEquiv[NumberedSortingInfo], XAnyCompareFactory) => Unit
     ): Self = StObject.set(x, "connectToCache", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setCreateCachedDynamicResultSetStub(value: XDynamicResultSet => XDynamicResultSet): Self = StObject.set(x, "createCachedDynamicResultSetStub", js.Any.fromFunction1(value))
+    inline def setCreateCachedDynamicResultSetStub(value: XDynamicResultSet => XDynamicResultSet): Self = StObject.set(x, "createCachedDynamicResultSetStub", js.Any.fromFunction1(value))
   }
 }

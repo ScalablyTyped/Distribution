@@ -34,31 +34,23 @@ trait SchemaGooglePrivacyDlpV2HotwordRule extends StObject {
 }
 object SchemaGooglePrivacyDlpV2HotwordRule {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2HotwordRule = {
+  inline def apply(): SchemaGooglePrivacyDlpV2HotwordRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2HotwordRule]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2HotwordRuleMutableBuilder[Self <: SchemaGooglePrivacyDlpV2HotwordRule] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2HotwordRule](x: Self) {
     
-    @scala.inline
-    def setHotwordRegex(value: SchemaGooglePrivacyDlpV2Regex): Self = StObject.set(x, "hotwordRegex", value.asInstanceOf[js.Any])
+    inline def setHotwordRegex(value: SchemaGooglePrivacyDlpV2Regex): Self = StObject.set(x, "hotwordRegex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHotwordRegexUndefined: Self = StObject.set(x, "hotwordRegex", js.undefined)
+    inline def setHotwordRegexUndefined: Self = StObject.set(x, "hotwordRegex", js.undefined)
     
-    @scala.inline
-    def setLikelihoodAdjustment(value: SchemaGooglePrivacyDlpV2LikelihoodAdjustment): Self = StObject.set(x, "likelihoodAdjustment", value.asInstanceOf[js.Any])
+    inline def setLikelihoodAdjustment(value: SchemaGooglePrivacyDlpV2LikelihoodAdjustment): Self = StObject.set(x, "likelihoodAdjustment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLikelihoodAdjustmentUndefined: Self = StObject.set(x, "likelihoodAdjustment", js.undefined)
+    inline def setLikelihoodAdjustmentUndefined: Self = StObject.set(x, "likelihoodAdjustment", js.undefined)
     
-    @scala.inline
-    def setProximity(value: SchemaGooglePrivacyDlpV2Proximity): Self = StObject.set(x, "proximity", value.asInstanceOf[js.Any])
+    inline def setProximity(value: SchemaGooglePrivacyDlpV2Proximity): Self = StObject.set(x, "proximity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProximityUndefined: Self = StObject.set(x, "proximity", js.undefined)
+    inline def setProximityUndefined: Self = StObject.set(x, "proximity", js.undefined)
   }
 }

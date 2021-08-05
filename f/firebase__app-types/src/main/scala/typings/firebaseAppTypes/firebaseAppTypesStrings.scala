@@ -8,6 +8,5 @@ object firebaseAppTypesStrings {
   
   @js.native
   sealed trait Components extends StObject
-  @scala.inline
-  def Components: Components = "Components".asInstanceOf[Components]
+  inline def Components: Components = "Components".asInstanceOf[Components]
 }

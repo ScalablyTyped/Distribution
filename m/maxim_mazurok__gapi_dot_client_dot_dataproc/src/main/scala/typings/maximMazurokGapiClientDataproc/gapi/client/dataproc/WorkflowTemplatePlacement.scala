@@ -14,25 +14,19 @@ trait WorkflowTemplatePlacement extends StObject {
 }
 object WorkflowTemplatePlacement {
   
-  @scala.inline
-  def apply(): WorkflowTemplatePlacement = {
+  inline def apply(): WorkflowTemplatePlacement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkflowTemplatePlacement]
   }
   
-  @scala.inline
-  implicit class WorkflowTemplatePlacementMutableBuilder[Self <: WorkflowTemplatePlacement] (val x: Self) extends AnyVal {
+  extension [Self <: WorkflowTemplatePlacement](x: Self) {
     
-    @scala.inline
-    def setClusterSelector(value: ClusterSelector): Self = StObject.set(x, "clusterSelector", value.asInstanceOf[js.Any])
+    inline def setClusterSelector(value: ClusterSelector): Self = StObject.set(x, "clusterSelector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterSelectorUndefined: Self = StObject.set(x, "clusterSelector", js.undefined)
+    inline def setClusterSelectorUndefined: Self = StObject.set(x, "clusterSelector", js.undefined)
     
-    @scala.inline
-    def setManagedCluster(value: ManagedCluster): Self = StObject.set(x, "managedCluster", value.asInstanceOf[js.Any])
+    inline def setManagedCluster(value: ManagedCluster): Self = StObject.set(x, "managedCluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedClusterUndefined: Self = StObject.set(x, "managedCluster", js.undefined)
+    inline def setManagedClusterUndefined: Self = StObject.set(x, "managedCluster", js.undefined)
   }
 }

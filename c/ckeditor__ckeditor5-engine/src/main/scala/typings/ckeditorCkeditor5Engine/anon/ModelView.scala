@@ -17,28 +17,21 @@ trait ModelView extends StObject {
 }
 object ModelView {
   
-  @scala.inline
-  def apply(model: String | js.Function, view: MatcherPattern): ModelView = {
+  inline def apply(model: String | js.Function, view: MatcherPattern): ModelView = {
     val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelView]
   }
   
-  @scala.inline
-  implicit class ModelViewMutableBuilder[Self <: ModelView] (val x: Self) extends AnyVal {
+  extension [Self <: ModelView](x: Self) {
     
-    @scala.inline
-    def setConverterPriority(value: PriorityString): Self = StObject.set(x, "converterPriority", value.asInstanceOf[js.Any])
+    inline def setConverterPriority(value: PriorityString): Self = StObject.set(x, "converterPriority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConverterPriorityUndefined: Self = StObject.set(x, "converterPriority", js.undefined)
+    inline def setConverterPriorityUndefined: Self = StObject.set(x, "converterPriority", js.undefined)
     
-    @scala.inline
-    def setModel(value: String | js.Function): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: String | js.Function): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView(value: MatcherPattern): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MatcherPattern): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewFunction1(value: /* element */ Element => Null | Attribute): Self = StObject.set(x, "view", js.Any.fromFunction1(value))
+    inline def setViewFunction1(value: /* element */ Element => Null | Attribute): Self = StObject.set(x, "view", js.Any.fromFunction1(value))
   }
 }

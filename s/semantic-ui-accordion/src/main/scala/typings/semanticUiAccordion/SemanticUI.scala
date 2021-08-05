@@ -162,20 +162,16 @@ object SemanticUI {
       }
       object Impl {
         
-        @scala.inline
-        def apply(active: String, animating: String): Impl = {
+        inline def apply(active: String, animating: String): Impl = {
           val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], animating = animating.asInstanceOf[js.Any])
           __obj.asInstanceOf[Impl]
         }
         
-        @scala.inline
-        implicit class ImplMutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
+        extension [Self <: Impl](x: Self) {
           
-          @scala.inline
-          def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+          inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAnimating(value: String): Self = StObject.set(x, "animating", value.asInstanceOf[js.Any])
+          inline def setAnimating(value: String): Self = StObject.set(x, "animating", value.asInstanceOf[js.Any])
         }
       }
       
@@ -190,17 +186,14 @@ object SemanticUI {
     }
     object ErrorSettings {
       
-      @scala.inline
-      def apply(method: String & js.UndefOr[String]): ErrorSettings = {
+      inline def apply(method: String & js.UndefOr[String]): ErrorSettings = {
         val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
         __obj.asInstanceOf[ErrorSettings]
       }
       
-      @scala.inline
-      implicit class ErrorSettingsMutableBuilder[Self <: ErrorSettings] (val x: Self) extends AnyVal {
+      extension [Self <: ErrorSettings](x: Self) {
         
-        @scala.inline
-        def setMethod(value: String & js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+        inline def setMethod(value: String & js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       }
       
       trait Impl extends StObject {
@@ -212,17 +205,14 @@ object SemanticUI {
       }
       object Impl {
         
-        @scala.inline
-        def apply(method: String): Impl = {
+        inline def apply(method: String): Impl = {
           val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
           __obj.asInstanceOf[Impl]
         }
         
-        @scala.inline
-        implicit class ImplMutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
+        extension [Self <: Impl](x: Self) {
           
-          @scala.inline
-          def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+          inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
         }
       }
       
@@ -233,17 +223,14 @@ object SemanticUI {
       }
       object Param {
         
-        @scala.inline
-        def apply(method: String & js.UndefOr[String]): typings.semanticUiAccordion.SemanticUI.Accordion.ErrorSettings.Param = {
+        inline def apply(method: String & js.UndefOr[String]): typings.semanticUiAccordion.SemanticUI.Accordion.ErrorSettings.Param = {
           val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.semanticUiAccordion.SemanticUI.Accordion.ErrorSettings.Param]
         }
         
-        @scala.inline
-        implicit class ParamMutableBuilder[Self <: typings.semanticUiAccordion.SemanticUI.Accordion.ErrorSettings.Param] (val x: Self) extends AnyVal {
+        extension [Self <: typings.semanticUiAccordion.SemanticUI.Accordion.ErrorSettings.Param](x: Self) {
           
-          @scala.inline
-          def setMethod(value: String & js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+          inline def setMethod(value: String & js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
         }
       }
     }
@@ -274,26 +261,20 @@ object SemanticUI {
       }
       object Impl {
         
-        @scala.inline
-        def apply(accordion: String, content: String, title: String, trigger: String): Impl = {
+        inline def apply(accordion: String, content: String, title: String, trigger: String): Impl = {
           val __obj = js.Dynamic.literal(accordion = accordion.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], trigger = trigger.asInstanceOf[js.Any])
           __obj.asInstanceOf[Impl]
         }
         
-        @scala.inline
-        implicit class ImplMutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
+        extension [Self <: Impl](x: Self) {
           
-          @scala.inline
-          def setAccordion(value: String): Self = StObject.set(x, "accordion", value.asInstanceOf[js.Any])
+          inline def setAccordion(value: String): Self = StObject.set(x, "accordion", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+          inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+          inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTrigger(value: String): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+          inline def setTrigger(value: String): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
         }
       }
       
@@ -444,8 +425,7 @@ object SemanticUI {
     }
     object Impl {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         animateChildren: Boolean,
         className: ClassNameSettings,
         closeNested: Boolean,
@@ -473,74 +453,51 @@ object SemanticUI {
         __obj.asInstanceOf[Impl]
       }
       
-      @scala.inline
-      implicit class ImplMutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
+      extension [Self <: Impl](x: Self) {
         
-        @scala.inline
-        def setAnimateChildren(value: Boolean): Self = StObject.set(x, "animateChildren", value.asInstanceOf[js.Any])
+        inline def setAnimateChildren(value: Boolean): Self = StObject.set(x, "animateChildren", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+        inline def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCloseNested(value: Boolean): Self = StObject.set(x, "closeNested", value.asInstanceOf[js.Any])
+        inline def setCloseNested(value: Boolean): Self = StObject.set(x, "closeNested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCollapsible(value: Boolean): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
+        inline def setCollapsible(value: Boolean): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+        inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+        inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+        inline def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setError(value: ErrorSettings): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+        inline def setError(value: ErrorSettings): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
+        inline def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+        inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObserveChanges(value: Boolean): Self = StObject.set(x, "observeChanges", value.asInstanceOf[js.Any])
+        inline def setObserveChanges(value: Boolean): Self = StObject.set(x, "observeChanges", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOn(value: String): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+        inline def setOn(value: String): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnChange(value: () => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
+        inline def setOnChange(value: () => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+        inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnClosing(value: () => Unit): Self = StObject.set(x, "onClosing", js.Any.fromFunction0(value))
+        inline def setOnClosing(value: () => Unit): Self = StObject.set(x, "onClosing", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnOpen(value: () => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction0(value))
+        inline def setOnOpen(value: () => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnOpening(value: () => Unit): Self = StObject.set(x, "onOpening", js.Any.fromFunction0(value))
+        inline def setOnOpening(value: () => Unit): Self = StObject.set(x, "onOpening", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
+        inline def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSelector(value: SelectorSettings): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+        inline def setSelector(value: SelectorSettings): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+        inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+        inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       }
     }
     

@@ -25,8 +25,7 @@ trait XProxyFactory
 }
 object XProxyFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createProxy: XInterface => XAggregation,
     queryInterface: `type` => js.Any,
@@ -36,10 +35,8 @@ object XProxyFactory {
     __obj.asInstanceOf[XProxyFactory]
   }
   
-  @scala.inline
-  implicit class XProxyFactoryMutableBuilder[Self <: XProxyFactory] (val x: Self) extends AnyVal {
+  extension [Self <: XProxyFactory](x: Self) {
     
-    @scala.inline
-    def setCreateProxy(value: XInterface => XAggregation): Self = StObject.set(x, "createProxy", js.Any.fromFunction1(value))
+    inline def setCreateProxy(value: XInterface => XAggregation): Self = StObject.set(x, "createProxy", js.Any.fromFunction1(value))
   }
 }

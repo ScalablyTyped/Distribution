@@ -63,73 +63,51 @@ trait SubmitJobRequest extends StObject {
 }
 object SubmitJobRequest {
   
-  @scala.inline
-  def apply(jobDefinition: String, jobName: String, jobQueue: String): SubmitJobRequest = {
+  inline def apply(jobDefinition: String, jobName: String, jobQueue: String): SubmitJobRequest = {
     val __obj = js.Dynamic.literal(jobDefinition = jobDefinition.asInstanceOf[js.Any], jobName = jobName.asInstanceOf[js.Any], jobQueue = jobQueue.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubmitJobRequest]
   }
   
-  @scala.inline
-  implicit class SubmitJobRequestMutableBuilder[Self <: SubmitJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SubmitJobRequest](x: Self) {
     
-    @scala.inline
-    def setArrayProperties(value: ArrayProperties): Self = StObject.set(x, "arrayProperties", value.asInstanceOf[js.Any])
+    inline def setArrayProperties(value: ArrayProperties): Self = StObject.set(x, "arrayProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrayPropertiesUndefined: Self = StObject.set(x, "arrayProperties", js.undefined)
+    inline def setArrayPropertiesUndefined: Self = StObject.set(x, "arrayProperties", js.undefined)
     
-    @scala.inline
-    def setContainerOverrides(value: ContainerOverrides): Self = StObject.set(x, "containerOverrides", value.asInstanceOf[js.Any])
+    inline def setContainerOverrides(value: ContainerOverrides): Self = StObject.set(x, "containerOverrides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerOverridesUndefined: Self = StObject.set(x, "containerOverrides", js.undefined)
+    inline def setContainerOverridesUndefined: Self = StObject.set(x, "containerOverrides", js.undefined)
     
-    @scala.inline
-    def setDependsOn(value: JobDependencyList): Self = StObject.set(x, "dependsOn", value.asInstanceOf[js.Any])
+    inline def setDependsOn(value: JobDependencyList): Self = StObject.set(x, "dependsOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDependsOnUndefined: Self = StObject.set(x, "dependsOn", js.undefined)
+    inline def setDependsOnUndefined: Self = StObject.set(x, "dependsOn", js.undefined)
     
-    @scala.inline
-    def setDependsOnVarargs(value: JobDependency*): Self = StObject.set(x, "dependsOn", js.Array(value :_*))
+    inline def setDependsOnVarargs(value: JobDependency*): Self = StObject.set(x, "dependsOn", js.Array(value :_*))
     
-    @scala.inline
-    def setJobDefinition(value: String): Self = StObject.set(x, "jobDefinition", value.asInstanceOf[js.Any])
+    inline def setJobDefinition(value: String): Self = StObject.set(x, "jobDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
+    inline def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobQueue(value: String): Self = StObject.set(x, "jobQueue", value.asInstanceOf[js.Any])
+    inline def setJobQueue(value: String): Self = StObject.set(x, "jobQueue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeOverrides(value: NodeOverrides): Self = StObject.set(x, "nodeOverrides", value.asInstanceOf[js.Any])
+    inline def setNodeOverrides(value: NodeOverrides): Self = StObject.set(x, "nodeOverrides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeOverridesUndefined: Self = StObject.set(x, "nodeOverrides", js.undefined)
+    inline def setNodeOverridesUndefined: Self = StObject.set(x, "nodeOverrides", js.undefined)
     
-    @scala.inline
-    def setParameters(value: ParametersMap): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ParametersMap): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setRetryStrategy(value: RetryStrategy): Self = StObject.set(x, "retryStrategy", value.asInstanceOf[js.Any])
+    inline def setRetryStrategy(value: RetryStrategy): Self = StObject.set(x, "retryStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryStrategyUndefined: Self = StObject.set(x, "retryStrategy", js.undefined)
+    inline def setRetryStrategyUndefined: Self = StObject.set(x, "retryStrategy", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagrisTagsMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagrisTagsMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: JobTimeout): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: JobTimeout): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

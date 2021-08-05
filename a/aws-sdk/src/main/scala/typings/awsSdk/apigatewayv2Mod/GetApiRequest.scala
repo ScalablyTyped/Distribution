@@ -13,16 +13,13 @@ trait GetApiRequest extends StObject {
 }
 object GetApiRequest {
   
-  @scala.inline
-  def apply(ApiId: string): GetApiRequest = {
+  inline def apply(ApiId: string): GetApiRequest = {
     val __obj = js.Dynamic.literal(ApiId = ApiId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetApiRequest]
   }
   
-  @scala.inline
-  implicit class GetApiRequestMutableBuilder[Self <: GetApiRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetApiRequest](x: Self) {
     
-    @scala.inline
-    def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
+    inline def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
   }
 }

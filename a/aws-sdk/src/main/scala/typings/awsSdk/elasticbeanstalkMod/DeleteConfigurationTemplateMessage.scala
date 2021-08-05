@@ -18,19 +18,15 @@ trait DeleteConfigurationTemplateMessage extends StObject {
 }
 object DeleteConfigurationTemplateMessage {
   
-  @scala.inline
-  def apply(ApplicationName: ApplicationName, TemplateName: ConfigurationTemplateName): DeleteConfigurationTemplateMessage = {
+  inline def apply(ApplicationName: ApplicationName, TemplateName: ConfigurationTemplateName): DeleteConfigurationTemplateMessage = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any], TemplateName = TemplateName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteConfigurationTemplateMessage]
   }
   
-  @scala.inline
-  implicit class DeleteConfigurationTemplateMessageMutableBuilder[Self <: DeleteConfigurationTemplateMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteConfigurationTemplateMessage](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateName(value: ConfigurationTemplateName): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
+    inline def setTemplateName(value: ConfigurationTemplateName): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
   }
 }

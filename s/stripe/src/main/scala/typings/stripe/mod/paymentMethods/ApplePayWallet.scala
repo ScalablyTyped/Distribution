@@ -14,17 +14,14 @@ trait ApplePayWallet
 }
 object ApplePayWallet {
   
-  @scala.inline
-  def apply(): ApplePayWallet = {
+  inline def apply(): ApplePayWallet = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("apple_pay")
     __obj.asInstanceOf[ApplePayWallet]
   }
   
-  @scala.inline
-  implicit class ApplePayWalletMutableBuilder[Self <: ApplePayWallet] (val x: Self) extends AnyVal {
+  extension [Self <: ApplePayWallet](x: Self) {
     
-    @scala.inline
-    def setType(value: apple_pay): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: apple_pay): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

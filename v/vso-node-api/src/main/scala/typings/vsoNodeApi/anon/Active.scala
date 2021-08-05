@@ -22,8 +22,7 @@ trait Active extends StObject {
 }
 object Active {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     active: scala.Double,
     byDesign: scala.Double,
     closed: scala.Double,
@@ -36,28 +35,20 @@ object Active {
     __obj.asInstanceOf[Active]
   }
   
-  @scala.inline
-  implicit class ActiveMutableBuilder[Self <: Active] (val x: Self) extends AnyVal {
+  extension [Self <: Active](x: Self) {
     
-    @scala.inline
-    def setActive(value: scala.Double): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: scala.Double): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByDesign(value: scala.Double): Self = StObject.set(x, "byDesign", value.asInstanceOf[js.Any])
+    inline def setByDesign(value: scala.Double): Self = StObject.set(x, "byDesign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClosed(value: scala.Double): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
+    inline def setClosed(value: scala.Double): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixed(value: scala.Double): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
+    inline def setFixed(value: scala.Double): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPending(value: scala.Double): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+    inline def setPending(value: scala.Double): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnknown(value: scala.Double): Self = StObject.set(x, "unknown", value.asInstanceOf[js.Any])
+    inline def setUnknown(value: scala.Double): Self = StObject.set(x, "unknown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWontFix(value: scala.Double): Self = StObject.set(x, "wontFix", value.asInstanceOf[js.Any])
+    inline def setWontFix(value: scala.Double): Self = StObject.set(x, "wontFix", value.asInstanceOf[js.Any])
   }
 }

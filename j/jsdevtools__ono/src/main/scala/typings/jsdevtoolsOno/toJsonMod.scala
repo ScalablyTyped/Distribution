@@ -13,14 +13,10 @@ object toJsonMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getDeepKeys(obj: js.Object): Set[String | js.Symbol] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeepKeys")(obj.asInstanceOf[js.Any]).asInstanceOf[Set[String | js.Symbol]]
-  @scala.inline
-  def getDeepKeys(obj: js.Object, omit: js.Array[String | js.Symbol]): Set[String | js.Symbol] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeepKeys")(obj.asInstanceOf[js.Any], omit.asInstanceOf[js.Any])).asInstanceOf[Set[String | js.Symbol]]
+  inline def getDeepKeys(obj: js.Object): Set[String | js.Symbol] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeepKeys")(obj.asInstanceOf[js.Any]).asInstanceOf[Set[String | js.Symbol]]
+  inline def getDeepKeys(obj: js.Object, omit: js.Array[String | js.Symbol]): Set[String | js.Symbol] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeepKeys")(obj.asInstanceOf[js.Any], omit.asInstanceOf[js.Any])).asInstanceOf[Set[String | js.Symbol]]
   
-  @scala.inline
-  def toJSON(): ErrorPOJO = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")().asInstanceOf[ErrorPOJO]
+  inline def toJSON(): ErrorPOJO = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")().asInstanceOf[ErrorPOJO]
   
-  @scala.inline
-  def toJSON_Intersection(): ErrorPOJO & Error = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")().asInstanceOf[ErrorPOJO & Error]
+  inline def toJSON_Intersection(): ErrorPOJO & Error = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")().asInstanceOf[ErrorPOJO & Error]
 }

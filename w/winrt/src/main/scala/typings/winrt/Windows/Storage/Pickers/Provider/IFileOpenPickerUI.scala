@@ -30,8 +30,7 @@ trait IFileOpenPickerUI extends StObject {
 }
 object IFileOpenPickerUI {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addFile: (String, IStorageFile) => AddFileResult,
     allowedFileTypes: IVectorView[String],
     canAddFile: IStorageFile => Boolean,
@@ -47,37 +46,26 @@ object IFileOpenPickerUI {
     __obj.asInstanceOf[IFileOpenPickerUI]
   }
   
-  @scala.inline
-  implicit class IFileOpenPickerUIMutableBuilder[Self <: IFileOpenPickerUI] (val x: Self) extends AnyVal {
+  extension [Self <: IFileOpenPickerUI](x: Self) {
     
-    @scala.inline
-    def setAddFile(value: (String, IStorageFile) => AddFileResult): Self = StObject.set(x, "addFile", js.Any.fromFunction2(value))
+    inline def setAddFile(value: (String, IStorageFile) => AddFileResult): Self = StObject.set(x, "addFile", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAllowedFileTypes(value: IVectorView[String]): Self = StObject.set(x, "allowedFileTypes", value.asInstanceOf[js.Any])
+    inline def setAllowedFileTypes(value: IVectorView[String]): Self = StObject.set(x, "allowedFileTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanAddFile(value: IStorageFile => Boolean): Self = StObject.set(x, "canAddFile", js.Any.fromFunction1(value))
+    inline def setCanAddFile(value: IStorageFile => Boolean): Self = StObject.set(x, "canAddFile", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setContainsFile(value: String => Boolean): Self = StObject.set(x, "containsFile", js.Any.fromFunction1(value))
+    inline def setContainsFile(value: String => Boolean): Self = StObject.set(x, "containsFile", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnclosing(value: js.Any): Self = StObject.set(x, "onclosing", value.asInstanceOf[js.Any])
+    inline def setOnclosing(value: js.Any): Self = StObject.set(x, "onclosing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnfileremoved(value: js.Any): Self = StObject.set(x, "onfileremoved", value.asInstanceOf[js.Any])
+    inline def setOnfileremoved(value: js.Any): Self = StObject.set(x, "onfileremoved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveFile(value: String => Unit): Self = StObject.set(x, "removeFile", js.Any.fromFunction1(value))
+    inline def setRemoveFile(value: String => Unit): Self = StObject.set(x, "removeFile", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSelectionMode(value: FileSelectionMode): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
+    inline def setSelectionMode(value: FileSelectionMode): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettingsIdentifier(value: String): Self = StObject.set(x, "settingsIdentifier", value.asInstanceOf[js.Any])
+    inline def setSettingsIdentifier(value: String): Self = StObject.set(x, "settingsIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

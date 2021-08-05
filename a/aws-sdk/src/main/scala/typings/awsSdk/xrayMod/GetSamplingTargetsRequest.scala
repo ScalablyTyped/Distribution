@@ -13,19 +13,15 @@ trait GetSamplingTargetsRequest extends StObject {
 }
 object GetSamplingTargetsRequest {
   
-  @scala.inline
-  def apply(SamplingStatisticsDocuments: SamplingStatisticsDocumentList): GetSamplingTargetsRequest = {
+  inline def apply(SamplingStatisticsDocuments: SamplingStatisticsDocumentList): GetSamplingTargetsRequest = {
     val __obj = js.Dynamic.literal(SamplingStatisticsDocuments = SamplingStatisticsDocuments.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSamplingTargetsRequest]
   }
   
-  @scala.inline
-  implicit class GetSamplingTargetsRequestMutableBuilder[Self <: GetSamplingTargetsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetSamplingTargetsRequest](x: Self) {
     
-    @scala.inline
-    def setSamplingStatisticsDocuments(value: SamplingStatisticsDocumentList): Self = StObject.set(x, "SamplingStatisticsDocuments", value.asInstanceOf[js.Any])
+    inline def setSamplingStatisticsDocuments(value: SamplingStatisticsDocumentList): Self = StObject.set(x, "SamplingStatisticsDocuments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSamplingStatisticsDocumentsVarargs(value: SamplingStatisticsDocument*): Self = StObject.set(x, "SamplingStatisticsDocuments", js.Array(value :_*))
+    inline def setSamplingStatisticsDocumentsVarargs(value: SamplingStatisticsDocument*): Self = StObject.set(x, "SamplingStatisticsDocuments", js.Array(value :_*))
   }
 }

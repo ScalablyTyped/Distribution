@@ -11,17 +11,14 @@ object peerScoreThresholdsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createPeerScoreThresholds(): PeerScoreThresholds = ^.asInstanceOf[js.Dynamic].applyDynamic("createPeerScoreThresholds")().asInstanceOf[PeerScoreThresholds]
-  @scala.inline
-  def createPeerScoreThresholds(p: PartialPeerScoreThreshold): PeerScoreThresholds = ^.asInstanceOf[js.Dynamic].applyDynamic("createPeerScoreThresholds")(p.asInstanceOf[js.Any]).asInstanceOf[PeerScoreThresholds]
+  inline def createPeerScoreThresholds(): PeerScoreThresholds = ^.asInstanceOf[js.Dynamic].applyDynamic("createPeerScoreThresholds")().asInstanceOf[PeerScoreThresholds]
+  inline def createPeerScoreThresholds(p: PartialPeerScoreThreshold): PeerScoreThresholds = ^.asInstanceOf[js.Dynamic].applyDynamic("createPeerScoreThresholds")(p.asInstanceOf[js.Any]).asInstanceOf[PeerScoreThresholds]
   
   @JSImport("libp2p-gossipsub/src/score/peer-score-thresholds", "defaultPeerScoreThresholds")
   @js.native
   val defaultPeerScoreThresholds: PeerScoreThresholds = js.native
   
-  @scala.inline
-  def validatePeerScoreThresholds(p: PeerScoreThresholds): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validatePeerScoreThresholds")(p.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def validatePeerScoreThresholds(p: PeerScoreThresholds): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validatePeerScoreThresholds")(p.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait PeerScoreThresholds extends StObject {
     
@@ -57,8 +54,7 @@ object peerScoreThresholdsMod {
   }
   object PeerScoreThresholds {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acceptPXThreshold: Double,
       gossipThreshold: Double,
       graylistThreshold: Double,
@@ -69,23 +65,17 @@ object peerScoreThresholdsMod {
       __obj.asInstanceOf[PeerScoreThresholds]
     }
     
-    @scala.inline
-    implicit class PeerScoreThresholdsMutableBuilder[Self <: PeerScoreThresholds] (val x: Self) extends AnyVal {
+    extension [Self <: PeerScoreThresholds](x: Self) {
       
-      @scala.inline
-      def setAcceptPXThreshold(value: Double): Self = StObject.set(x, "acceptPXThreshold", value.asInstanceOf[js.Any])
+      inline def setAcceptPXThreshold(value: Double): Self = StObject.set(x, "acceptPXThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGossipThreshold(value: Double): Self = StObject.set(x, "gossipThreshold", value.asInstanceOf[js.Any])
+      inline def setGossipThreshold(value: Double): Self = StObject.set(x, "gossipThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGraylistThreshold(value: Double): Self = StObject.set(x, "graylistThreshold", value.asInstanceOf[js.Any])
+      inline def setGraylistThreshold(value: Double): Self = StObject.set(x, "graylistThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpportunisticGraftThreshold(value: Double): Self = StObject.set(x, "opportunisticGraftThreshold", value.asInstanceOf[js.Any])
+      inline def setOpportunisticGraftThreshold(value: Double): Self = StObject.set(x, "opportunisticGraftThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublishThreshold(value: Double): Self = StObject.set(x, "publishThreshold", value.asInstanceOf[js.Any])
+      inline def setPublishThreshold(value: Double): Self = StObject.set(x, "publishThreshold", value.asInstanceOf[js.Any])
     }
   }
 }

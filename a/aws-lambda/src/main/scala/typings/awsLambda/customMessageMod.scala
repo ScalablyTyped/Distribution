@@ -28,8 +28,7 @@ object customMessageMod {
   }
   object BaseCustomMessageTriggerEvent {
     
-    @scala.inline
-    def apply[T /* <: String */](
+    inline def apply[T /* <: String */](
       callerContext: AwsSdkVersion,
       region: String,
       request: ClientMetadata,
@@ -43,14 +42,11 @@ object customMessageMod {
       __obj.asInstanceOf[BaseCustomMessageTriggerEvent[T]]
     }
     
-    @scala.inline
-    implicit class BaseCustomMessageTriggerEventMutableBuilder[Self <: BaseCustomMessageTriggerEvent[?], T /* <: String */] (val x: Self & BaseCustomMessageTriggerEvent[T]) extends AnyVal {
+    extension [Self <: BaseCustomMessageTriggerEvent[?], T /* <: String */](x: Self & BaseCustomMessageTriggerEvent[T]) {
       
-      @scala.inline
-      def setRequest(value: ClientMetadata): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: ClientMetadata): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse(value: EmailMessage): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: EmailMessage): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
   }
   

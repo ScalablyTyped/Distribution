@@ -16,37 +16,27 @@ trait ArrayChange[T] extends StObject {
 }
 object ArrayChange {
   
-  @scala.inline
-  def apply[T](value: js.Array[T]): ArrayChange[T] = {
+  inline def apply[T](value: js.Array[T]): ArrayChange[T] = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArrayChange[T]]
   }
   
-  @scala.inline
-  implicit class ArrayChangeMutableBuilder[Self <: ArrayChange[?], T] (val x: Self & ArrayChange[T]) extends AnyVal {
+  extension [Self <: ArrayChange[?], T](x: Self & ArrayChange[T]) {
     
-    @scala.inline
-    def setAdded(value: Boolean): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
+    inline def setAdded(value: Boolean): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddedUndefined: Self = StObject.set(x, "added", js.undefined)
+    inline def setAddedUndefined: Self = StObject.set(x, "added", js.undefined)
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setRemoved(value: Boolean): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
+    inline def setRemoved(value: Boolean): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovedUndefined: Self = StObject.set(x, "removed", js.undefined)
+    inline def setRemovedUndefined: Self = StObject.set(x, "removed", js.undefined)
     
-    @scala.inline
-    def setValue(value: js.Array[T]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Array[T]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueVarargs(value: T*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: T*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

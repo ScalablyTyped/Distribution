@@ -28,40 +28,29 @@ trait UploadDocumentsResponse extends StObject {
 }
 object UploadDocumentsResponse {
   
-  @scala.inline
-  def apply(): UploadDocumentsResponse = {
+  inline def apply(): UploadDocumentsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UploadDocumentsResponse]
   }
   
-  @scala.inline
-  implicit class UploadDocumentsResponseMutableBuilder[Self <: UploadDocumentsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UploadDocumentsResponse](x: Self) {
     
-    @scala.inline
-    def setAdds(value: Adds): Self = StObject.set(x, "adds", value.asInstanceOf[js.Any])
+    inline def setAdds(value: Adds): Self = StObject.set(x, "adds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddsUndefined: Self = StObject.set(x, "adds", js.undefined)
+    inline def setAddsUndefined: Self = StObject.set(x, "adds", js.undefined)
     
-    @scala.inline
-    def setDeletes(value: Deletes): Self = StObject.set(x, "deletes", value.asInstanceOf[js.Any])
+    inline def setDeletes(value: Deletes): Self = StObject.set(x, "deletes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletesUndefined: Self = StObject.set(x, "deletes", js.undefined)
+    inline def setDeletesUndefined: Self = StObject.set(x, "deletes", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setWarnings(value: DocumentServiceWarnings): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+    inline def setWarnings(value: DocumentServiceWarnings): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
+    inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
     
-    @scala.inline
-    def setWarningsVarargs(value: DocumentServiceWarning*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: DocumentServiceWarning*): Self = StObject.set(x, "warnings", js.Array(value :_*))
   }
 }

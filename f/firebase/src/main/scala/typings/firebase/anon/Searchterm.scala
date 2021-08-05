@@ -13,19 +13,15 @@ trait Searchterm
 }
 object Searchterm {
   
-  @scala.inline
-  def apply(): Searchterm = {
+  inline def apply(): Searchterm = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Searchterm]
   }
   
-  @scala.inline
-  implicit class SearchtermMutableBuilder[Self <: Searchterm] (val x: Self) extends AnyVal {
+  extension [Self <: Searchterm](x: Self) {
     
-    @scala.inline
-    def setSearch_term(value: String): Self = StObject.set(x, "search_term", value.asInstanceOf[js.Any])
+    inline def setSearch_term(value: String): Self = StObject.set(x, "search_term", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearch_termUndefined: Self = StObject.set(x, "search_term", js.undefined)
+    inline def setSearch_termUndefined: Self = StObject.set(x, "search_term", js.undefined)
   }
 }

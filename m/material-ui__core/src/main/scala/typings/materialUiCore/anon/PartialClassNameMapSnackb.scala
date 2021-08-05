@@ -15,31 +15,23 @@ trait PartialClassNameMapSnackb extends StObject {
 }
 object PartialClassNameMapSnackb {
   
-  @scala.inline
-  def apply(): PartialClassNameMapSnackb = {
+  inline def apply(): PartialClassNameMapSnackb = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapSnackb]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapSnackbMutableBuilder[Self <: PartialClassNameMapSnackb] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapSnackb](x: Self) {
     
-    @scala.inline
-    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

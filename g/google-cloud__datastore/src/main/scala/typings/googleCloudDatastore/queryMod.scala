@@ -61,17 +61,14 @@ object queryMod {
   }
   object OrderOptions {
     
-    @scala.inline
-    def apply(descending: Boolean): OrderOptions = {
+    inline def apply(descending: Boolean): OrderOptions = {
       val __obj = js.Dynamic.literal(descending = descending.asInstanceOf[js.Any])
       __obj.asInstanceOf[OrderOptions]
     }
     
-    @scala.inline
-    implicit class OrderOptionsMutableBuilder[Self <: OrderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: OrderOptions](x: Self) {
       
-      @scala.inline
-      def setDescending(value: Boolean): Self = StObject.set(x, "descending", value.asInstanceOf[js.Any])
+      inline def setDescending(value: Boolean): Self = StObject.set(x, "descending", value.asInstanceOf[js.Any])
     }
   }
   
@@ -87,20 +84,15 @@ object queryMod {
   trait QueryFilterOperator extends StObject
   object QueryFilterOperator {
     
-    @scala.inline
-    def Equalssign: typings.googleCloudDatastore.googleCloudDatastoreStrings.Equalssign = "=".asInstanceOf[typings.googleCloudDatastore.googleCloudDatastoreStrings.Equalssign]
+    inline def Equalssign: typings.googleCloudDatastore.googleCloudDatastoreStrings.Equalssign = "=".asInstanceOf[typings.googleCloudDatastore.googleCloudDatastoreStrings.Equalssign]
     
-    @scala.inline
-    def Greaterthansign: typings.googleCloudDatastore.googleCloudDatastoreStrings.Greaterthansign = ">".asInstanceOf[typings.googleCloudDatastore.googleCloudDatastoreStrings.Greaterthansign]
+    inline def Greaterthansign: typings.googleCloudDatastore.googleCloudDatastoreStrings.Greaterthansign = ">".asInstanceOf[typings.googleCloudDatastore.googleCloudDatastoreStrings.Greaterthansign]
     
-    @scala.inline
-    def GreaterthansignEqualssign: typings.googleCloudDatastore.googleCloudDatastoreStrings.GreaterthansignEqualssign = ">=".asInstanceOf[typings.googleCloudDatastore.googleCloudDatastoreStrings.GreaterthansignEqualssign]
+    inline def GreaterthansignEqualssign: typings.googleCloudDatastore.googleCloudDatastoreStrings.GreaterthansignEqualssign = ">=".asInstanceOf[typings.googleCloudDatastore.googleCloudDatastoreStrings.GreaterthansignEqualssign]
     
-    @scala.inline
-    def Lessthansign: typings.googleCloudDatastore.googleCloudDatastoreStrings.Lessthansign = "<".asInstanceOf[typings.googleCloudDatastore.googleCloudDatastoreStrings.Lessthansign]
+    inline def Lessthansign: typings.googleCloudDatastore.googleCloudDatastoreStrings.Lessthansign = "<".asInstanceOf[typings.googleCloudDatastore.googleCloudDatastoreStrings.Lessthansign]
     
-    @scala.inline
-    def LessthansignEqualssign: typings.googleCloudDatastore.googleCloudDatastoreStrings.LessthansignEqualssign = "<=".asInstanceOf[typings.googleCloudDatastore.googleCloudDatastoreStrings.LessthansignEqualssign]
+    inline def LessthansignEqualssign: typings.googleCloudDatastore.googleCloudDatastoreStrings.LessthansignEqualssign = "<=".asInstanceOf[typings.googleCloudDatastore.googleCloudDatastoreStrings.LessthansignEqualssign]
   }
   
   trait QueryInfo extends StObject {
@@ -111,23 +103,18 @@ object queryMod {
   }
   object QueryInfo {
     
-    @scala.inline
-    def apply(moreResults: MoreResultsAfterCursor | MoreResultsAfterLimit | NoMoreResults): QueryInfo = {
+    inline def apply(moreResults: MoreResultsAfterCursor | MoreResultsAfterLimit | NoMoreResults): QueryInfo = {
       val __obj = js.Dynamic.literal(moreResults = moreResults.asInstanceOf[js.Any])
       __obj.asInstanceOf[QueryInfo]
     }
     
-    @scala.inline
-    implicit class QueryInfoMutableBuilder[Self <: QueryInfo] (val x: Self) extends AnyVal {
+    extension [Self <: QueryInfo](x: Self) {
       
-      @scala.inline
-      def setEndCursor(value: String): Self = StObject.set(x, "endCursor", value.asInstanceOf[js.Any])
+      inline def setEndCursor(value: String): Self = StObject.set(x, "endCursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndCursorUndefined: Self = StObject.set(x, "endCursor", js.undefined)
+      inline def setEndCursorUndefined: Self = StObject.set(x, "endCursor", js.undefined)
       
-      @scala.inline
-      def setMoreResults(value: MoreResultsAfterCursor | MoreResultsAfterLimit | NoMoreResults): Self = StObject.set(x, "moreResults", value.asInstanceOf[js.Any])
+      inline def setMoreResults(value: MoreResultsAfterCursor | MoreResultsAfterLimit | NoMoreResults): Self = StObject.set(x, "moreResults", value.asInstanceOf[js.Any])
     }
   }
   
@@ -139,26 +126,20 @@ object queryMod {
   }
   object QueryOptions {
     
-    @scala.inline
-    def apply(): QueryOptions = {
+    inline def apply(): QueryOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[QueryOptions]
     }
     
-    @scala.inline
-    implicit class QueryOptionsMutableBuilder[Self <: QueryOptions] (val x: Self) extends AnyVal {
+    extension [Self <: QueryOptions](x: Self) {
       
-      @scala.inline
-      def setConsistency(value: strong | eventual): Self = StObject.set(x, "consistency", value.asInstanceOf[js.Any])
+      inline def setConsistency(value: strong | eventual): Self = StObject.set(x, "consistency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsistencyUndefined: Self = StObject.set(x, "consistency", js.undefined)
+      inline def setConsistencyUndefined: Self = StObject.set(x, "consistency", js.undefined)
       
-      @scala.inline
-      def setMaxApiCalls(value: Double): Self = StObject.set(x, "maxApiCalls", value.asInstanceOf[js.Any])
+      inline def setMaxApiCalls(value: Double): Self = StObject.set(x, "maxApiCalls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxApiCallsUndefined: Self = StObject.set(x, "maxApiCalls", js.undefined)
+      inline def setMaxApiCallsUndefined: Self = StObject.set(x, "maxApiCalls", js.undefined)
     }
   }
   

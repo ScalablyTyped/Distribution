@@ -80,118 +80,103 @@ object CircularLayout {
   @JSImport("go", "CircularLayout.Ascending")
   @js.native
   def Ascending: EnumValue = js.native
-  @scala.inline
-  def Ascending_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Ascending")(x.asInstanceOf[js.Any])
+  inline def Ascending_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Ascending")(x.asInstanceOf[js.Any])
   
   /**The ring is filled by alternating sides; the second node is counterclockwise from the first node; This value is used for CircularLayout.direction.*/
   /* static member */
   @JSImport("go", "CircularLayout.BidirectionalLeft")
   @js.native
   def BidirectionalLeft: EnumValue = js.native
-  @scala.inline
-  def BidirectionalLeft_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BidirectionalLeft")(x.asInstanceOf[js.Any])
+  inline def BidirectionalLeft_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BidirectionalLeft")(x.asInstanceOf[js.Any])
   
   /**The ring is filled by alternating sides; the second node is clockwise from the first node; This value is used for CircularLayout.direction.*/
   /* static member */
   @JSImport("go", "CircularLayout.BidirectionalRight")
   @js.native
   def BidirectionalRight: EnumValue = js.native
-  @scala.inline
-  def BidirectionalRight_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BidirectionalRight")(x.asInstanceOf[js.Any])
+  inline def BidirectionalRight_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BidirectionalRight")(x.asInstanceOf[js.Any])
   
   /**The effective diameter is either the width or height of the node, whichever is larger; This will cause circular nodes to touch when CircularLayout.spacing is 0; This is ideal when the nodes are circular.*/
   /* static member */
   @JSImport("go", "CircularLayout.Circular")
   @js.native
   def Circular: EnumValue = js.native
-  @scala.inline
-  def Circular_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Circular")(x.asInstanceOf[js.Any])
+  inline def Circular_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Circular")(x.asInstanceOf[js.Any])
   
   /**Rings are filled clockwise; This value is used for CircularLayout.direction.*/
   /* static member */
   @JSImport("go", "CircularLayout.Clockwise")
   @js.native
   def Clockwise: EnumValue = js.native
-  @scala.inline
-  def Clockwise_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Clockwise")(x.asInstanceOf[js.Any])
+  inline def Clockwise_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Clockwise")(x.asInstanceOf[js.Any])
   
   /**The angular distance between the nodes is constant; This value is used for CircularLayout.arrangement.*/
   /* static member */
   @JSImport("go", "CircularLayout.ConstantAngle")
   @js.native
   def ConstantAngle: EnumValue = js.native
-  @scala.inline
-  def ConstantAngle_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConstantAngle")(x.asInstanceOf[js.Any])
+  inline def ConstantAngle_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConstantAngle")(x.asInstanceOf[js.Any])
   
   /**The distance between the centers of the nodes is constant; This value is used for CircularLayout.arrangement.*/
   /* static member */
   @JSImport("go", "CircularLayout.ConstantDistance")
   @js.native
   def ConstantDistance: EnumValue = js.native
-  @scala.inline
-  def ConstantDistance_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConstantDistance")(x.asInstanceOf[js.Any])
+  inline def ConstantDistance_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConstantDistance")(x.asInstanceOf[js.Any])
   
   /**The spacing between the idealized boundaries of the nodes is constant; This value is used for CircularLayout.arrangement.*/
   /* static member */
   @JSImport("go", "CircularLayout.ConstantSpacing")
   @js.native
   def ConstantSpacing: EnumValue = js.native
-  @scala.inline
-  def ConstantSpacing_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConstantSpacing")(x.asInstanceOf[js.Any])
+  inline def ConstantSpacing_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConstantSpacing")(x.asInstanceOf[js.Any])
   
   /**Rings are filled counterclockwise; This value is used for CircularLayout.direction.*/
   /* static member */
   @JSImport("go", "CircularLayout.Counterclockwise")
   @js.native
   def Counterclockwise: EnumValue = js.native
-  @scala.inline
-  def Counterclockwise_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Counterclockwise")(x.asInstanceOf[js.Any])
+  inline def Counterclockwise_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Counterclockwise")(x.asInstanceOf[js.Any])
   
   /**Nodes are sorted using the .comparer, in reverse ascending (descending) order; This value is used for CircularLayout.sorting.*/
   /* static member */
   @JSImport("go", "CircularLayout.Descending")
   @js.native
   def Descending: EnumValue = js.native
-  @scala.inline
-  def Descending_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Descending")(x.asInstanceOf[js.Any])
+  inline def Descending_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Descending")(x.asInstanceOf[js.Any])
   
   /**Nodes are arranged in the order given; This value is used for CircularLayout.sorting.*/
   /* static member */
   @JSImport("go", "CircularLayout.Forwards")
   @js.native
   def Forwards: EnumValue = js.native
-  @scala.inline
-  def Forwards_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Forwards")(x.asInstanceOf[js.Any])
+  inline def Forwards_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Forwards")(x.asInstanceOf[js.Any])
   
   /**Nodes are ordered to reduce link crossings; This value is used for CircularLayout.sorting.*/
   /* static member */
   @JSImport("go", "CircularLayout.Optimized")
   @js.native
   def Optimized: EnumValue = js.native
-  @scala.inline
-  def Optimized_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Optimized")(x.asInstanceOf[js.Any])
+  inline def Optimized_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Optimized")(x.asInstanceOf[js.Any])
   
   /**The vertices are arranged as close together as possible considering the CircularLayout.spacing, assuming the nodes are rectangular; This value is used for CircularLayout.arrangement.*/
   /* static member */
   @JSImport("go", "CircularLayout.Packed")
   @js.native
   def Packed: EnumValue = js.native
-  @scala.inline
-  def Packed_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Packed")(x.asInstanceOf[js.Any])
+  inline def Packed_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Packed")(x.asInstanceOf[js.Any])
   
   /**The effective diameter is sqrt(width^2+height^2); The corners of square nodes will touch at 45 degrees when CircularLayout.spacing is 0; This value is used for CircularLayout.nodeDiameterFormula.*/
   /* static member */
   @JSImport("go", "CircularLayout.Pythagorean")
   @js.native
   def Pythagorean: EnumValue = js.native
-  @scala.inline
-  def Pythagorean_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Pythagorean")(x.asInstanceOf[js.Any])
+  inline def Pythagorean_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Pythagorean")(x.asInstanceOf[js.Any])
   
   /**Nodes are arranged in the reverse of the order given; This value is used for CircularLayout.sorting.*/
   /* static member */
   @JSImport("go", "CircularLayout.Reverse")
   @js.native
   def Reverse: EnumValue = js.native
-  @scala.inline
-  def Reverse_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Reverse")(x.asInstanceOf[js.Any])
+  inline def Reverse_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Reverse")(x.asInstanceOf[js.Any])
 }

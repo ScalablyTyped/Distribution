@@ -17,20 +17,16 @@ trait PipelineBareFunction_
 }
 object PipelineBareFunction_ {
   
-  @scala.inline
-  def apply(callee: Expression): PipelineBareFunction_ = {
+  inline def apply(callee: Expression): PipelineBareFunction_ = {
     val __obj = js.Dynamic.literal(callee = callee.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("PipelineBareFunction")
     __obj.asInstanceOf[PipelineBareFunction_]
   }
   
-  @scala.inline
-  implicit class PipelineBareFunction_MutableBuilder[Self <: PipelineBareFunction_] (val x: Self) extends AnyVal {
+  extension [Self <: PipelineBareFunction_](x: Self) {
     
-    @scala.inline
-    def setCallee(value: Expression): Self = StObject.set(x, "callee", value.asInstanceOf[js.Any])
+    inline def setCallee(value: Expression): Self = StObject.set(x, "callee", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: PipelineBareFunction): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: PipelineBareFunction): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

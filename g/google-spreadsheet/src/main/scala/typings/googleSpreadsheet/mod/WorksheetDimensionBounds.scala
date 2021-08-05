@@ -12,19 +12,15 @@ trait WorksheetDimensionBounds extends StObject {
 }
 object WorksheetDimensionBounds {
   
-  @scala.inline
-  def apply(endIndex: Double, startIndex: Double): WorksheetDimensionBounds = {
+  inline def apply(endIndex: Double, startIndex: Double): WorksheetDimensionBounds = {
     val __obj = js.Dynamic.literal(endIndex = endIndex.asInstanceOf[js.Any], startIndex = startIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorksheetDimensionBounds]
   }
   
-  @scala.inline
-  implicit class WorksheetDimensionBoundsMutableBuilder[Self <: WorksheetDimensionBounds] (val x: Self) extends AnyVal {
+  extension [Self <: WorksheetDimensionBounds](x: Self) {
     
-    @scala.inline
-    def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
+    inline def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+    inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
   }
 }

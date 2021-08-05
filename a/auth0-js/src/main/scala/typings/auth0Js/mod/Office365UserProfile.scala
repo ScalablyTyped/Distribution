@@ -14,8 +14,7 @@ trait Office365UserProfile
 }
 object Office365UserProfile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clientID: String,
     created_at: String,
     identities: js.Array[Auth0Identity],
@@ -32,13 +31,10 @@ object Office365UserProfile {
     __obj.asInstanceOf[Office365UserProfile]
   }
   
-  @scala.inline
-  implicit class Office365UserProfileMutableBuilder[Self <: Office365UserProfile] (val x: Self) extends AnyVal {
+  extension [Self <: Office365UserProfile](x: Self) {
     
-    @scala.inline
-    def setTenantid(value: String): Self = StObject.set(x, "tenantid", value.asInstanceOf[js.Any])
+    inline def setTenantid(value: String): Self = StObject.set(x, "tenantid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpn(value: String): Self = StObject.set(x, "upn", value.asInstanceOf[js.Any])
+    inline def setUpn(value: String): Self = StObject.set(x, "upn", value.asInstanceOf[js.Any])
   }
 }

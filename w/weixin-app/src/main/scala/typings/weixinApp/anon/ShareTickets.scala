@@ -11,19 +11,15 @@ trait ShareTickets extends StObject {
 }
 object ShareTickets {
   
-  @scala.inline
-  def apply(shareTickets: js.Array[String]): ShareTickets = {
+  inline def apply(shareTickets: js.Array[String]): ShareTickets = {
     val __obj = js.Dynamic.literal(shareTickets = shareTickets.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShareTickets]
   }
   
-  @scala.inline
-  implicit class ShareTicketsMutableBuilder[Self <: ShareTickets] (val x: Self) extends AnyVal {
+  extension [Self <: ShareTickets](x: Self) {
     
-    @scala.inline
-    def setShareTickets(value: js.Array[String]): Self = StObject.set(x, "shareTickets", value.asInstanceOf[js.Any])
+    inline def setShareTickets(value: js.Array[String]): Self = StObject.set(x, "shareTickets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShareTicketsVarargs(value: String*): Self = StObject.set(x, "shareTickets", js.Array(value :_*))
+    inline def setShareTicketsVarargs(value: String*): Self = StObject.set(x, "shareTickets", js.Array(value :_*))
   }
 }

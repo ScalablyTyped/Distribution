@@ -112,8 +112,7 @@ object componentMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def attachTo(root: Element): MDCComponent[MDCFoundation[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCComponent[MDCFoundation[js.Object]]]
+    inline def attachTo(root: Element): MDCComponent[MDCFoundation[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCComponent[MDCFoundation[js.Object]]]
   }
   
   @JSImport("@material/base/component", "MDCComponent")
@@ -130,7 +129,7 @@ object componentMod {
     def emit[T /* <: js.Object */](evtType: String, evtData: T): Unit = js.native
     def emit[T /* <: js.Object */](evtType: String, evtData: T, shouldBubble: Boolean): Unit = js.native
     
-    var foundation: FoundationType = js.native
+    /* protected */ var foundation: FoundationType = js.native
     
     def getDefaultFoundation(): FoundationType = js.native
     
@@ -1415,7 +1414,6 @@ object componentMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def attachTo(root: Element): MDCComponent[MDCFoundation[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCComponent[MDCFoundation[js.Object]]]
+    inline def attachTo(root: Element): MDCComponent[MDCFoundation[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCComponent[MDCFoundation[js.Object]]]
   }
 }

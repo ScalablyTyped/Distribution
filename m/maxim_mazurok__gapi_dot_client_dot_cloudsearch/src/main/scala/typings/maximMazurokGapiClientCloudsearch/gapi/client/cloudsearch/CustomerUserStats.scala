@@ -20,37 +20,27 @@ trait CustomerUserStats extends StObject {
 }
 object CustomerUserStats {
   
-  @scala.inline
-  def apply(): CustomerUserStats = {
+  inline def apply(): CustomerUserStats = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomerUserStats]
   }
   
-  @scala.inline
-  implicit class CustomerUserStatsMutableBuilder[Self <: CustomerUserStats] (val x: Self) extends AnyVal {
+  extension [Self <: CustomerUserStats](x: Self) {
     
-    @scala.inline
-    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    @scala.inline
-    def setOneDayActiveUsersCount(value: String): Self = StObject.set(x, "oneDayActiveUsersCount", value.asInstanceOf[js.Any])
+    inline def setOneDayActiveUsersCount(value: String): Self = StObject.set(x, "oneDayActiveUsersCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneDayActiveUsersCountUndefined: Self = StObject.set(x, "oneDayActiveUsersCount", js.undefined)
+    inline def setOneDayActiveUsersCountUndefined: Self = StObject.set(x, "oneDayActiveUsersCount", js.undefined)
     
-    @scala.inline
-    def setSevenDaysActiveUsersCount(value: String): Self = StObject.set(x, "sevenDaysActiveUsersCount", value.asInstanceOf[js.Any])
+    inline def setSevenDaysActiveUsersCount(value: String): Self = StObject.set(x, "sevenDaysActiveUsersCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSevenDaysActiveUsersCountUndefined: Self = StObject.set(x, "sevenDaysActiveUsersCount", js.undefined)
+    inline def setSevenDaysActiveUsersCountUndefined: Self = StObject.set(x, "sevenDaysActiveUsersCount", js.undefined)
     
-    @scala.inline
-    def setThirtyDaysActiveUsersCount(value: String): Self = StObject.set(x, "thirtyDaysActiveUsersCount", value.asInstanceOf[js.Any])
+    inline def setThirtyDaysActiveUsersCount(value: String): Self = StObject.set(x, "thirtyDaysActiveUsersCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThirtyDaysActiveUsersCountUndefined: Self = StObject.set(x, "thirtyDaysActiveUsersCount", js.undefined)
+    inline def setThirtyDaysActiveUsersCountUndefined: Self = StObject.set(x, "thirtyDaysActiveUsersCount", js.undefined)
   }
 }

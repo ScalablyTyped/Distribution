@@ -26,23 +26,18 @@ object typesGetVaultNotificationsOutputMod {
   }
   object GetVaultNotificationsOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): GetVaultNotificationsOutput = {
+    inline def apply($metadata: ResponseMetadata): GetVaultNotificationsOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetVaultNotificationsOutput]
     }
     
-    @scala.inline
-    implicit class GetVaultNotificationsOutputMutableBuilder[Self <: GetVaultNotificationsOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetVaultNotificationsOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVaultNotificationConfig(value: UnmarshalledVaultNotificationConfig): Self = StObject.set(x, "vaultNotificationConfig", value.asInstanceOf[js.Any])
+      inline def setVaultNotificationConfig(value: UnmarshalledVaultNotificationConfig): Self = StObject.set(x, "vaultNotificationConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVaultNotificationConfigUndefined: Self = StObject.set(x, "vaultNotificationConfig", js.undefined)
+      inline def setVaultNotificationConfigUndefined: Self = StObject.set(x, "vaultNotificationConfig", js.undefined)
     }
   }
 }

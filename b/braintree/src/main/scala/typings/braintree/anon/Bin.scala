@@ -50,8 +50,7 @@ trait Bin extends StObject {
 }
 object Bin {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bin: String,
     cardType: String,
     commercial: typings.braintree.mod.Commercial,
@@ -72,76 +71,52 @@ object Bin {
     __obj.asInstanceOf[Bin]
   }
   
-  @scala.inline
-  implicit class BinMutableBuilder[Self <: Bin] (val x: Self) extends AnyVal {
+  extension [Self <: Bin](x: Self) {
     
-    @scala.inline
-    def setBin(value: String): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
+    inline def setBin(value: String): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardType(value: String): Self = StObject.set(x, "cardType", value.asInstanceOf[js.Any])
+    inline def setCardType(value: String): Self = StObject.set(x, "cardType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardholderName(value: String): Self = StObject.set(x, "cardholderName", value.asInstanceOf[js.Any])
+    inline def setCardholderName(value: String): Self = StObject.set(x, "cardholderName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardholderNameUndefined: Self = StObject.set(x, "cardholderName", js.undefined)
+    inline def setCardholderNameUndefined: Self = StObject.set(x, "cardholderName", js.undefined)
     
-    @scala.inline
-    def setCommercial(value: typings.braintree.mod.Commercial): Self = StObject.set(x, "commercial", value.asInstanceOf[js.Any])
+    inline def setCommercial(value: typings.braintree.mod.Commercial): Self = StObject.set(x, "commercial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryOfIssuance(value: String): Self = StObject.set(x, "countryOfIssuance", value.asInstanceOf[js.Any])
+    inline def setCountryOfIssuance(value: String): Self = StObject.set(x, "countryOfIssuance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerLocation(value: typings.braintree.mod.CustomerLocation): Self = StObject.set(x, "customerLocation", value.asInstanceOf[js.Any])
+    inline def setCustomerLocation(value: typings.braintree.mod.CustomerLocation): Self = StObject.set(x, "customerLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebit(value: String): Self = StObject.set(x, "debit", value.asInstanceOf[js.Any])
+    inline def setDebit(value: String): Self = StObject.set(x, "debit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurbinRegulated(value: DurbinRegulated): Self = StObject.set(x, "durbinRegulated", value.asInstanceOf[js.Any])
+    inline def setDurbinRegulated(value: DurbinRegulated): Self = StObject.set(x, "durbinRegulated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationDate(value: String): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
+    inline def setExpirationDate(value: String): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationDateUndefined: Self = StObject.set(x, "expirationDate", js.undefined)
+    inline def setExpirationDateUndefined: Self = StObject.set(x, "expirationDate", js.undefined)
     
-    @scala.inline
-    def setExpirationMonth(value: String): Self = StObject.set(x, "expirationMonth", value.asInstanceOf[js.Any])
+    inline def setExpirationMonth(value: String): Self = StObject.set(x, "expirationMonth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationMonthUndefined: Self = StObject.set(x, "expirationMonth", js.undefined)
+    inline def setExpirationMonthUndefined: Self = StObject.set(x, "expirationMonth", js.undefined)
     
-    @scala.inline
-    def setExpirationYear(value: String): Self = StObject.set(x, "expirationYear", value.asInstanceOf[js.Any])
+    inline def setExpirationYear(value: String): Self = StObject.set(x, "expirationYear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationYearUndefined: Self = StObject.set(x, "expirationYear", js.undefined)
+    inline def setExpirationYearUndefined: Self = StObject.set(x, "expirationYear", js.undefined)
     
-    @scala.inline
-    def setHealthcare(value: HealthCare): Self = StObject.set(x, "healthcare", value.asInstanceOf[js.Any])
+    inline def setHealthcare(value: HealthCare): Self = StObject.set(x, "healthcare", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuingBank(value: String): Self = StObject.set(x, "issuingBank", value.asInstanceOf[js.Any])
+    inline def setIssuingBank(value: String): Self = StObject.set(x, "issuingBank", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLast4(value: String): Self = StObject.set(x, "last4", value.asInstanceOf[js.Any])
+    inline def setLast4(value: String): Self = StObject.set(x, "last4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayroll(value: Payroll): Self = StObject.set(x, "payroll", value.asInstanceOf[js.Any])
+    inline def setPayroll(value: Payroll): Self = StObject.set(x, "payroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrepaid(value: Prepaid): Self = StObject.set(x, "prepaid", value.asInstanceOf[js.Any])
+    inline def setPrepaid(value: Prepaid): Self = StObject.set(x, "prepaid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueNumberIdentifier(value: String): Self = StObject.set(x, "uniqueNumberIdentifier", value.asInstanceOf[js.Any])
+    inline def setUniqueNumberIdentifier(value: String): Self = StObject.set(x, "uniqueNumberIdentifier", value.asInstanceOf[js.Any])
   }
 }

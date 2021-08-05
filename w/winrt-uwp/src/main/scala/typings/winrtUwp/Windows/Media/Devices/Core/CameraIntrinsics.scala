@@ -58,8 +58,7 @@ trait CameraIntrinsics extends StObject {
 }
 object CameraIntrinsics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     focalLength: Vector2,
     imageHeight: Double,
     imageWidth: Double,
@@ -75,37 +74,26 @@ object CameraIntrinsics {
     __obj.asInstanceOf[CameraIntrinsics]
   }
   
-  @scala.inline
-  implicit class CameraIntrinsicsMutableBuilder[Self <: CameraIntrinsics] (val x: Self) extends AnyVal {
+  extension [Self <: CameraIntrinsics](x: Self) {
     
-    @scala.inline
-    def setFocalLength(value: Vector2): Self = StObject.set(x, "focalLength", value.asInstanceOf[js.Any])
+    inline def setFocalLength(value: Vector2): Self = StObject.set(x, "focalLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageHeight(value: Double): Self = StObject.set(x, "imageHeight", value.asInstanceOf[js.Any])
+    inline def setImageHeight(value: Double): Self = StObject.set(x, "imageHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageWidth(value: Double): Self = StObject.set(x, "imageWidth", value.asInstanceOf[js.Any])
+    inline def setImageWidth(value: Double): Self = StObject.set(x, "imageWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalPoint(value: Vector2): Self = StObject.set(x, "principalPoint", value.asInstanceOf[js.Any])
+    inline def setPrincipalPoint(value: Vector2): Self = StObject.set(x, "principalPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectManyOntoFrame(value: Vector3 => Point): Self = StObject.set(x, "projectManyOntoFrame", js.Any.fromFunction1(value))
+    inline def setProjectManyOntoFrame(value: Vector3 => Point): Self = StObject.set(x, "projectManyOntoFrame", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setProjectOntoFrame(value: Vector3 => Point): Self = StObject.set(x, "projectOntoFrame", js.Any.fromFunction1(value))
+    inline def setProjectOntoFrame(value: Vector3 => Point): Self = StObject.set(x, "projectOntoFrame", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRadialDistortion(value: Vector3): Self = StObject.set(x, "radialDistortion", value.asInstanceOf[js.Any])
+    inline def setRadialDistortion(value: Vector3): Self = StObject.set(x, "radialDistortion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTangentialDistortion(value: Vector2): Self = StObject.set(x, "tangentialDistortion", value.asInstanceOf[js.Any])
+    inline def setTangentialDistortion(value: Vector2): Self = StObject.set(x, "tangentialDistortion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnprojectAtUnitDepth(value: Point => Vector2): Self = StObject.set(x, "unprojectAtUnitDepth", js.Any.fromFunction1(value))
+    inline def setUnprojectAtUnitDepth(value: Point => Vector2): Self = StObject.set(x, "unprojectAtUnitDepth", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnprojectPixelsAtUnitDepth(value: Point => Vector2): Self = StObject.set(x, "unprojectPixelsAtUnitDepth", js.Any.fromFunction1(value))
+    inline def setUnprojectPixelsAtUnitDepth(value: Point => Vector2): Self = StObject.set(x, "unprojectPixelsAtUnitDepth", js.Any.fromFunction1(value))
   }
 }

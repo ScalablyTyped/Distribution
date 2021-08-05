@@ -11,16 +11,13 @@ trait TakeResponseBodyAsStreamResponse extends StObject {
 }
 object TakeResponseBodyAsStreamResponse {
   
-  @scala.inline
-  def apply(stream: StreamHandle): TakeResponseBodyAsStreamResponse = {
+  inline def apply(stream: StreamHandle): TakeResponseBodyAsStreamResponse = {
     val __obj = js.Dynamic.literal(stream = stream.asInstanceOf[js.Any])
     __obj.asInstanceOf[TakeResponseBodyAsStreamResponse]
   }
   
-  @scala.inline
-  implicit class TakeResponseBodyAsStreamResponseMutableBuilder[Self <: TakeResponseBodyAsStreamResponse] (val x: Self) extends AnyVal {
+  extension [Self <: TakeResponseBodyAsStreamResponse](x: Self) {
     
-    @scala.inline
-    def setStream(value: StreamHandle): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+    inline def setStream(value: StreamHandle): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
   }
 }

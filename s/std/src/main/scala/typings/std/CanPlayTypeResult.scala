@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CanPlayTypeResult extends StObject
 object CanPlayTypeResult {
   
-  @scala.inline
-  def _empty: typings.std.stdStrings._empty = "".asInstanceOf[typings.std.stdStrings._empty]
+  inline def _empty: typings.std.stdStrings._empty = "".asInstanceOf[typings.std.stdStrings._empty]
   
-  @scala.inline
-  def maybe: typings.std.stdStrings.maybe = "maybe".asInstanceOf[typings.std.stdStrings.maybe]
+  inline def maybe: typings.std.stdStrings.maybe = "maybe".asInstanceOf[typings.std.stdStrings.maybe]
   
-  @scala.inline
-  def probably: typings.std.stdStrings.probably = "probably".asInstanceOf[typings.std.stdStrings.probably]
+  inline def probably: typings.std.stdStrings.probably = "probably".asInstanceOf[typings.std.stdStrings.probably]
 }

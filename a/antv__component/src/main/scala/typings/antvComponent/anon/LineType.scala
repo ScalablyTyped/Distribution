@@ -10,16 +10,13 @@ trait LineType extends StObject {
 }
 object LineType {
   
-  @scala.inline
-  def apply(line: Type): LineType = {
+  inline def apply(line: Type): LineType = {
     val __obj = js.Dynamic.literal(line = line.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineType]
   }
   
-  @scala.inline
-  implicit class LineTypeMutableBuilder[Self <: LineType] (val x: Self) extends AnyVal {
+  extension [Self <: LineType](x: Self) {
     
-    @scala.inline
-    def setLine(value: Type): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: Type): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
   }
 }

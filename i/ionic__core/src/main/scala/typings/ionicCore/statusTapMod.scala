@@ -10,6 +10,5 @@ object statusTapMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def startStatusTap(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startStatusTap")().asInstanceOf[Unit]
+  inline def startStatusTap(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startStatusTap")().asInstanceOf[Unit]
 }

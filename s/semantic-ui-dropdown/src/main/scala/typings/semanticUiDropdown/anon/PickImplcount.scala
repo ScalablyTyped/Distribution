@@ -11,16 +11,13 @@ trait PickImplcount extends StObject {
 }
 object PickImplcount {
   
-  @scala.inline
-  def apply(count: String): PickImplcount = {
+  inline def apply(count: String): PickImplcount = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplcount]
   }
   
-  @scala.inline
-  implicit class PickImplcountMutableBuilder[Self <: PickImplcount] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplcount](x: Self) {
     
-    @scala.inline
-    def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
   }
 }

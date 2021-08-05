@@ -14,8 +14,7 @@ trait HighlightsRepositoryHighlightsTrayResponseCoverMedia extends StObject {
 }
 object HighlightsRepositoryHighlightsTrayResponseCoverMedia {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     crop_rect: js.Array[Double | String],
     cropped_image_version: HighlightsRepositoryHighlightsTrayResponseCroppedImageVersion,
     media_id: String
@@ -24,19 +23,14 @@ object HighlightsRepositoryHighlightsTrayResponseCoverMedia {
     __obj.asInstanceOf[HighlightsRepositoryHighlightsTrayResponseCoverMedia]
   }
   
-  @scala.inline
-  implicit class HighlightsRepositoryHighlightsTrayResponseCoverMediaMutableBuilder[Self <: HighlightsRepositoryHighlightsTrayResponseCoverMedia] (val x: Self) extends AnyVal {
+  extension [Self <: HighlightsRepositoryHighlightsTrayResponseCoverMedia](x: Self) {
     
-    @scala.inline
-    def setCrop_rect(value: js.Array[Double | String]): Self = StObject.set(x, "crop_rect", value.asInstanceOf[js.Any])
+    inline def setCrop_rect(value: js.Array[Double | String]): Self = StObject.set(x, "crop_rect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrop_rectVarargs(value: (Double | String)*): Self = StObject.set(x, "crop_rect", js.Array(value :_*))
+    inline def setCrop_rectVarargs(value: (Double | String)*): Self = StObject.set(x, "crop_rect", js.Array(value :_*))
     
-    @scala.inline
-    def setCropped_image_version(value: HighlightsRepositoryHighlightsTrayResponseCroppedImageVersion): Self = StObject.set(x, "cropped_image_version", value.asInstanceOf[js.Any])
+    inline def setCropped_image_version(value: HighlightsRepositoryHighlightsTrayResponseCroppedImageVersion): Self = StObject.set(x, "cropped_image_version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedia_id(value: String): Self = StObject.set(x, "media_id", value.asInstanceOf[js.Any])
+    inline def setMedia_id(value: String): Self = StObject.set(x, "media_id", value.asInstanceOf[js.Any])
   }
 }

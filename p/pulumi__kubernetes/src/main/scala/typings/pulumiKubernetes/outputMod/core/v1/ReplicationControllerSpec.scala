@@ -32,8 +32,7 @@ trait ReplicationControllerSpec extends StObject {
 }
 object ReplicationControllerSpec {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     minReadySeconds: Double,
     replicas: Double,
     selector: StringDictionary[String],
@@ -43,19 +42,14 @@ object ReplicationControllerSpec {
     __obj.asInstanceOf[ReplicationControllerSpec]
   }
   
-  @scala.inline
-  implicit class ReplicationControllerSpecMutableBuilder[Self <: ReplicationControllerSpec] (val x: Self) extends AnyVal {
+  extension [Self <: ReplicationControllerSpec](x: Self) {
     
-    @scala.inline
-    def setMinReadySeconds(value: Double): Self = StObject.set(x, "minReadySeconds", value.asInstanceOf[js.Any])
+    inline def setMinReadySeconds(value: Double): Self = StObject.set(x, "minReadySeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicas(value: Double): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
+    inline def setReplicas(value: Double): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelector(value: StringDictionary[String]): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: StringDictionary[String]): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplate(value: PodTemplateSpec): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: PodTemplateSpec): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
   }
 }

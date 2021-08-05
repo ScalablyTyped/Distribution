@@ -12,16 +12,13 @@ trait WebAccountProviderTriggerDetails extends StObject {
 }
 object WebAccountProviderTriggerDetails {
   
-  @scala.inline
-  def apply(operation: IWebAccountProviderOperation): WebAccountProviderTriggerDetails = {
+  inline def apply(operation: IWebAccountProviderOperation): WebAccountProviderTriggerDetails = {
     val __obj = js.Dynamic.literal(operation = operation.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebAccountProviderTriggerDetails]
   }
   
-  @scala.inline
-  implicit class WebAccountProviderTriggerDetailsMutableBuilder[Self <: WebAccountProviderTriggerDetails] (val x: Self) extends AnyVal {
+  extension [Self <: WebAccountProviderTriggerDetails](x: Self) {
     
-    @scala.inline
-    def setOperation(value: IWebAccountProviderOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: IWebAccountProviderOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
   }
 }

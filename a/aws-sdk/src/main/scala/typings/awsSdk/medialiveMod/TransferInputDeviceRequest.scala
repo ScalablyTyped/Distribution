@@ -23,28 +23,21 @@ trait TransferInputDeviceRequest extends StObject {
 }
 object TransferInputDeviceRequest {
   
-  @scala.inline
-  def apply(InputDeviceId: string): TransferInputDeviceRequest = {
+  inline def apply(InputDeviceId: string): TransferInputDeviceRequest = {
     val __obj = js.Dynamic.literal(InputDeviceId = InputDeviceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransferInputDeviceRequest]
   }
   
-  @scala.inline
-  implicit class TransferInputDeviceRequestMutableBuilder[Self <: TransferInputDeviceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: TransferInputDeviceRequest](x: Self) {
     
-    @scala.inline
-    def setInputDeviceId(value: string): Self = StObject.set(x, "InputDeviceId", value.asInstanceOf[js.Any])
+    inline def setInputDeviceId(value: string): Self = StObject.set(x, "InputDeviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetCustomerId(value: string): Self = StObject.set(x, "TargetCustomerId", value.asInstanceOf[js.Any])
+    inline def setTargetCustomerId(value: string): Self = StObject.set(x, "TargetCustomerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetCustomerIdUndefined: Self = StObject.set(x, "TargetCustomerId", js.undefined)
+    inline def setTargetCustomerIdUndefined: Self = StObject.set(x, "TargetCustomerId", js.undefined)
     
-    @scala.inline
-    def setTransferMessage(value: string): Self = StObject.set(x, "TransferMessage", value.asInstanceOf[js.Any])
+    inline def setTransferMessage(value: string): Self = StObject.set(x, "TransferMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransferMessageUndefined: Self = StObject.set(x, "TransferMessage", js.undefined)
+    inline def setTransferMessageUndefined: Self = StObject.set(x, "TransferMessage", js.undefined)
   }
 }

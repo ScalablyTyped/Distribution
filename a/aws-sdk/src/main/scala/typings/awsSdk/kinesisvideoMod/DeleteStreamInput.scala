@@ -18,22 +18,17 @@ trait DeleteStreamInput extends StObject {
 }
 object DeleteStreamInput {
   
-  @scala.inline
-  def apply(StreamARN: ResourceARN): DeleteStreamInput = {
+  inline def apply(StreamARN: ResourceARN): DeleteStreamInput = {
     val __obj = js.Dynamic.literal(StreamARN = StreamARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteStreamInput]
   }
   
-  @scala.inline
-  implicit class DeleteStreamInputMutableBuilder[Self <: DeleteStreamInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteStreamInput](x: Self) {
     
-    @scala.inline
-    def setCurrentVersion(value: Version): Self = StObject.set(x, "CurrentVersion", value.asInstanceOf[js.Any])
+    inline def setCurrentVersion(value: Version): Self = StObject.set(x, "CurrentVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentVersionUndefined: Self = StObject.set(x, "CurrentVersion", js.undefined)
+    inline def setCurrentVersionUndefined: Self = StObject.set(x, "CurrentVersion", js.undefined)
     
-    @scala.inline
-    def setStreamARN(value: ResourceARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
+    inline def setStreamARN(value: ResourceARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
   }
 }

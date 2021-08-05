@@ -13,16 +13,13 @@ trait DatasetContentVersionValue extends StObject {
 }
 object DatasetContentVersionValue {
   
-  @scala.inline
-  def apply(datasetName: DatasetName): DatasetContentVersionValue = {
+  inline def apply(datasetName: DatasetName): DatasetContentVersionValue = {
     val __obj = js.Dynamic.literal(datasetName = datasetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatasetContentVersionValue]
   }
   
-  @scala.inline
-  implicit class DatasetContentVersionValueMutableBuilder[Self <: DatasetContentVersionValue] (val x: Self) extends AnyVal {
+  extension [Self <: DatasetContentVersionValue](x: Self) {
     
-    @scala.inline
-    def setDatasetName(value: DatasetName): Self = StObject.set(x, "datasetName", value.asInstanceOf[js.Any])
+    inline def setDatasetName(value: DatasetName): Self = StObject.set(x, "datasetName", value.asInstanceOf[js.Any])
   }
 }

@@ -16,25 +16,19 @@ trait PartialCompactPickerStyle extends StObject {
 }
 object PartialCompactPickerStyle {
   
-  @scala.inline
-  def apply(): PartialCompactPickerStyle = {
+  inline def apply(): PartialCompactPickerStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialCompactPickerStyle]
   }
   
-  @scala.inline
-  implicit class PartialCompactPickerStyleMutableBuilder[Self <: PartialCompactPickerStyle] (val x: Self) extends AnyVal {
+  extension [Self <: PartialCompactPickerStyle](x: Self) {
     
-    @scala.inline
-    def setClear(value: CSSProperties): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
+    inline def setClear(value: CSSProperties): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
+    inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
-    @scala.inline
-    def setCompact(value: CSSProperties): Self = StObject.set(x, "Compact", value.asInstanceOf[js.Any])
+    inline def setCompact(value: CSSProperties): Self = StObject.set(x, "Compact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompactUndefined: Self = StObject.set(x, "Compact", js.undefined)
+    inline def setCompactUndefined: Self = StObject.set(x, "Compact", js.undefined)
   }
 }

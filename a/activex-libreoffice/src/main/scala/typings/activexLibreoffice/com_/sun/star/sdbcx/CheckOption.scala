@@ -17,13 +17,10 @@ object CheckOption {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def CASCADE: `2` = 2.asInstanceOf[`2`]
+    inline def CASCADE: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def LOCAL: `3` = 3.asInstanceOf[`3`]
+    inline def LOCAL: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def NONE: `0` = 0.asInstanceOf[`0`]
+    inline def NONE: `0` = 0.asInstanceOf[`0`]
   }
 }

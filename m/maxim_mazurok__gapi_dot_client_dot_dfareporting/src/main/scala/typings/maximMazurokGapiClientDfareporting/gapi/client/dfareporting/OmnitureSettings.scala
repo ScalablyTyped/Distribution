@@ -14,25 +14,19 @@ trait OmnitureSettings extends StObject {
 }
 object OmnitureSettings {
   
-  @scala.inline
-  def apply(): OmnitureSettings = {
+  inline def apply(): OmnitureSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OmnitureSettings]
   }
   
-  @scala.inline
-  implicit class OmnitureSettingsMutableBuilder[Self <: OmnitureSettings] (val x: Self) extends AnyVal {
+  extension [Self <: OmnitureSettings](x: Self) {
     
-    @scala.inline
-    def setOmnitureCostDataEnabled(value: Boolean): Self = StObject.set(x, "omnitureCostDataEnabled", value.asInstanceOf[js.Any])
+    inline def setOmnitureCostDataEnabled(value: Boolean): Self = StObject.set(x, "omnitureCostDataEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOmnitureCostDataEnabledUndefined: Self = StObject.set(x, "omnitureCostDataEnabled", js.undefined)
+    inline def setOmnitureCostDataEnabledUndefined: Self = StObject.set(x, "omnitureCostDataEnabled", js.undefined)
     
-    @scala.inline
-    def setOmnitureIntegrationEnabled(value: Boolean): Self = StObject.set(x, "omnitureIntegrationEnabled", value.asInstanceOf[js.Any])
+    inline def setOmnitureIntegrationEnabled(value: Boolean): Self = StObject.set(x, "omnitureIntegrationEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOmnitureIntegrationEnabledUndefined: Self = StObject.set(x, "omnitureIntegrationEnabled", js.undefined)
+    inline def setOmnitureIntegrationEnabledUndefined: Self = StObject.set(x, "omnitureIntegrationEnabled", js.undefined)
   }
 }

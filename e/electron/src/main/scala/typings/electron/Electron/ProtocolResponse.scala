@@ -84,85 +84,59 @@ trait ProtocolResponse extends StObject {
 }
 object ProtocolResponse {
   
-  @scala.inline
-  def apply(): ProtocolResponse = {
+  inline def apply(): ProtocolResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProtocolResponse]
   }
   
-  @scala.inline
-  implicit class ProtocolResponseMutableBuilder[Self <: ProtocolResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ProtocolResponse](x: Self) {
     
-    @scala.inline
-    def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
+    inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharsetUndefined: Self = StObject.set(x, "charset", js.undefined)
+    inline def setCharsetUndefined: Self = StObject.set(x, "charset", js.undefined)
     
-    @scala.inline
-    def setData(value: Buffer | String | ReadableStream): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Buffer | String | ReadableStream): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: Record[String, String | js.Array[String]]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Record[String, String | js.Array[String]]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+    inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setReferrer(value: String): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
+    inline def setReferrer(value: String): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferrerUndefined: Self = StObject.set(x, "referrer", js.undefined)
+    inline def setReferrerUndefined: Self = StObject.set(x, "referrer", js.undefined)
     
-    @scala.inline
-    def setSession(value: Session_): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+    inline def setSession(value: Session_): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
+    inline def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
     
-    @scala.inline
-    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+    inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
     
-    @scala.inline
-    def setUploadData(value: ProtocolResponseUploadData): Self = StObject.set(x, "uploadData", value.asInstanceOf[js.Any])
+    inline def setUploadData(value: ProtocolResponseUploadData): Self = StObject.set(x, "uploadData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadDataUndefined: Self = StObject.set(x, "uploadData", js.undefined)
+    inline def setUploadDataUndefined: Self = StObject.set(x, "uploadData", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

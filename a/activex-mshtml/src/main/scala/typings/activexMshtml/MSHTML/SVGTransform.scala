@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SVGTransform extends StObject {
   
-  @JSName("MSHTML.SVGTransform_typekey")
+  /* private */ @JSName("MSHTML.SVGTransform_typekey")
   var MSHTMLDotSVGTransform_typekey: SVGTransform
   
   var angle: Double
@@ -29,8 +29,7 @@ trait SVGTransform extends StObject {
 }
 object SVGTransform {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotSVGTransform_typekey: SVGTransform,
     angle: Double,
     matrix: SVGMatrix,
@@ -48,37 +47,26 @@ object SVGTransform {
     __obj.asInstanceOf[SVGTransform]
   }
   
-  @scala.inline
-  implicit class SVGTransformMutableBuilder[Self <: SVGTransform] (val x: Self) extends AnyVal {
+  extension [Self <: SVGTransform](x: Self) {
     
-    @scala.inline
-    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotSVGTransform_typekey(value: SVGTransform): Self = StObject.set(x, "MSHTML.SVGTransform_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotSVGTransform_typekey(value: SVGTransform): Self = StObject.set(x, "MSHTML.SVGTransform_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatrix(value: SVGMatrix): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
+    inline def setMatrix(value: SVGMatrix): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetMatrix(value: SVGMatrix => Unit): Self = StObject.set(x, "setMatrix", js.Any.fromFunction1(value))
+    inline def setSetMatrix(value: SVGMatrix => Unit): Self = StObject.set(x, "setMatrix", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRotate(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "setRotate", js.Any.fromFunction3(value))
+    inline def setSetRotate(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "setRotate", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSetScale(value: (Double, Double) => Unit): Self = StObject.set(x, "setScale", js.Any.fromFunction2(value))
+    inline def setSetScale(value: (Double, Double) => Unit): Self = StObject.set(x, "setScale", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetSkewX(value: Double => Unit): Self = StObject.set(x, "setSkewX", js.Any.fromFunction1(value))
+    inline def setSetSkewX(value: Double => Unit): Self = StObject.set(x, "setSkewX", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSkewY(value: Double => Unit): Self = StObject.set(x, "setSkewY", js.Any.fromFunction1(value))
+    inline def setSetSkewY(value: Double => Unit): Self = StObject.set(x, "setSkewY", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTranslate(value: (Double, Double) => Unit): Self = StObject.set(x, "setTranslate", js.Any.fromFunction2(value))
+    inline def setSetTranslate(value: (Double, Double) => Unit): Self = StObject.set(x, "setTranslate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

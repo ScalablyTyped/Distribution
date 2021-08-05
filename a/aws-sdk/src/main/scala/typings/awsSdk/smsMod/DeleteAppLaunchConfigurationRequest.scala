@@ -13,19 +13,15 @@ trait DeleteAppLaunchConfigurationRequest extends StObject {
 }
 object DeleteAppLaunchConfigurationRequest {
   
-  @scala.inline
-  def apply(): DeleteAppLaunchConfigurationRequest = {
+  inline def apply(): DeleteAppLaunchConfigurationRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteAppLaunchConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class DeleteAppLaunchConfigurationRequestMutableBuilder[Self <: DeleteAppLaunchConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAppLaunchConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
+    inline def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
   }
 }

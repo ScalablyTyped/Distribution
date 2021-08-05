@@ -36,32 +36,24 @@ object typesWriteApplicationSettingsRequestMod {
   }
   object UnmarshalledWriteApplicationSettingsRequest {
     
-    @scala.inline
-    def apply(): UnmarshalledWriteApplicationSettingsRequest = {
+    inline def apply(): UnmarshalledWriteApplicationSettingsRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledWriteApplicationSettingsRequest]
     }
     
-    @scala.inline
-    implicit class UnmarshalledWriteApplicationSettingsRequestMutableBuilder[Self <: UnmarshalledWriteApplicationSettingsRequest] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledWriteApplicationSettingsRequest](x: Self) {
       
-      @scala.inline
-      def setCampaignHook(value: UnmarshalledCampaignHook): Self = StObject.set(x, "CampaignHook", value.asInstanceOf[js.Any])
+      inline def setCampaignHook(value: UnmarshalledCampaignHook): Self = StObject.set(x, "CampaignHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCampaignHookUndefined: Self = StObject.set(x, "CampaignHook", js.undefined)
+      inline def setCampaignHookUndefined: Self = StObject.set(x, "CampaignHook", js.undefined)
       
-      @scala.inline
-      def setLimits(value: UnmarshalledCampaignLimits): Self = StObject.set(x, "Limits", value.asInstanceOf[js.Any])
+      inline def setLimits(value: UnmarshalledCampaignLimits): Self = StObject.set(x, "Limits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitsUndefined: Self = StObject.set(x, "Limits", js.undefined)
+      inline def setLimitsUndefined: Self = StObject.set(x, "Limits", js.undefined)
       
-      @scala.inline
-      def setQuietTime(value: UnmarshalledQuietTime): Self = StObject.set(x, "QuietTime", value.asInstanceOf[js.Any])
+      inline def setQuietTime(value: UnmarshalledQuietTime): Self = StObject.set(x, "QuietTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuietTimeUndefined: Self = StObject.set(x, "QuietTime", js.undefined)
+      inline def setQuietTimeUndefined: Self = StObject.set(x, "QuietTime", js.undefined)
     }
   }
   
@@ -89,38 +81,28 @@ object typesWriteApplicationSettingsRequestMod {
   }
   object WriteApplicationSettingsRequest {
     
-    @scala.inline
-    def apply(): WriteApplicationSettingsRequest = {
+    inline def apply(): WriteApplicationSettingsRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WriteApplicationSettingsRequest]
     }
     
-    @scala.inline
-    implicit class WriteApplicationSettingsRequestMutableBuilder[Self <: WriteApplicationSettingsRequest] (val x: Self) extends AnyVal {
+    extension [Self <: WriteApplicationSettingsRequest](x: Self) {
       
-      @scala.inline
-      def setCampaignHook(value: CampaignHook): Self = StObject.set(x, "CampaignHook", value.asInstanceOf[js.Any])
+      inline def setCampaignHook(value: CampaignHook): Self = StObject.set(x, "CampaignHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCampaignHookUndefined: Self = StObject.set(x, "CampaignHook", js.undefined)
+      inline def setCampaignHookUndefined: Self = StObject.set(x, "CampaignHook", js.undefined)
       
-      @scala.inline
-      def setCloudWatchMetricsEnabled(value: Boolean): Self = StObject.set(x, "CloudWatchMetricsEnabled", value.asInstanceOf[js.Any])
+      inline def setCloudWatchMetricsEnabled(value: Boolean): Self = StObject.set(x, "CloudWatchMetricsEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudWatchMetricsEnabledUndefined: Self = StObject.set(x, "CloudWatchMetricsEnabled", js.undefined)
+      inline def setCloudWatchMetricsEnabledUndefined: Self = StObject.set(x, "CloudWatchMetricsEnabled", js.undefined)
       
-      @scala.inline
-      def setLimits(value: CampaignLimits): Self = StObject.set(x, "Limits", value.asInstanceOf[js.Any])
+      inline def setLimits(value: CampaignLimits): Self = StObject.set(x, "Limits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitsUndefined: Self = StObject.set(x, "Limits", js.undefined)
+      inline def setLimitsUndefined: Self = StObject.set(x, "Limits", js.undefined)
       
-      @scala.inline
-      def setQuietTime(value: QuietTime): Self = StObject.set(x, "QuietTime", value.asInstanceOf[js.Any])
+      inline def setQuietTime(value: QuietTime): Self = StObject.set(x, "QuietTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuietTimeUndefined: Self = StObject.set(x, "QuietTime", js.undefined)
+      inline def setQuietTimeUndefined: Self = StObject.set(x, "QuietTime", js.undefined)
     }
   }
 }

@@ -16,22 +16,17 @@ trait ComparisonParams
 }
 object ComparisonParams {
   
-  @scala.inline
-  def apply(comparison: String, exclusive: Boolean, limit: Double | String): ComparisonParams = {
+  inline def apply(comparison: String, exclusive: Boolean, limit: Double | String): ComparisonParams = {
     val __obj = js.Dynamic.literal(comparison = comparison.asInstanceOf[js.Any], exclusive = exclusive.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComparisonParams]
   }
   
-  @scala.inline
-  implicit class ComparisonParamsMutableBuilder[Self <: ComparisonParams] (val x: Self) extends AnyVal {
+  extension [Self <: ComparisonParams](x: Self) {
     
-    @scala.inline
-    def setComparison(value: String): Self = StObject.set(x, "comparison", value.asInstanceOf[js.Any])
+    inline def setComparison(value: String): Self = StObject.set(x, "comparison", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
+    inline def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimit(value: Double | String): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double | String): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
   }
 }

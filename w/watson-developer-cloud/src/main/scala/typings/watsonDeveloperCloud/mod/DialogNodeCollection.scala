@@ -15,22 +15,17 @@ trait DialogNodeCollection extends StObject {
 }
 object DialogNodeCollection {
   
-  @scala.inline
-  def apply(dialog_nodes: js.Array[DialogNode], pagination: Pagination): DialogNodeCollection = {
+  inline def apply(dialog_nodes: js.Array[DialogNode], pagination: Pagination): DialogNodeCollection = {
     val __obj = js.Dynamic.literal(dialog_nodes = dialog_nodes.asInstanceOf[js.Any], pagination = pagination.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogNodeCollection]
   }
   
-  @scala.inline
-  implicit class DialogNodeCollectionMutableBuilder[Self <: DialogNodeCollection] (val x: Self) extends AnyVal {
+  extension [Self <: DialogNodeCollection](x: Self) {
     
-    @scala.inline
-    def setDialog_nodes(value: js.Array[DialogNode]): Self = StObject.set(x, "dialog_nodes", value.asInstanceOf[js.Any])
+    inline def setDialog_nodes(value: js.Array[DialogNode]): Self = StObject.set(x, "dialog_nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialog_nodesVarargs(value: DialogNode*): Self = StObject.set(x, "dialog_nodes", js.Array(value :_*))
+    inline def setDialog_nodesVarargs(value: DialogNode*): Self = StObject.set(x, "dialog_nodes", js.Array(value :_*))
     
-    @scala.inline
-    def setPagination(value: Pagination): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
+    inline def setPagination(value: Pagination): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
   }
 }

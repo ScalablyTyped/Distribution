@@ -15,8 +15,7 @@ object sidebarDividerUniDriverMod {
   }
   object SidebarDividerUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -26,11 +25,9 @@ object sidebarDividerUniDriverMod {
       __obj.asInstanceOf[SidebarDividerUniDriver]
     }
     
-    @scala.inline
-    implicit class SidebarDividerUniDriverMutableBuilder[Self <: SidebarDividerUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: SidebarDividerUniDriver](x: Self) {
       
-      @scala.inline
-      def setIsFullWidth(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isFullWidth", js.Any.fromFunction0(value))
+      inline def setIsFullWidth(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isFullWidth", js.Any.fromFunction0(value))
     }
   }
 }

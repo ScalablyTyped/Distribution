@@ -33,43 +33,31 @@ trait HierarchyPath extends StObject {
 }
 object HierarchyPath {
   
-  @scala.inline
-  def apply(): HierarchyPath = {
+  inline def apply(): HierarchyPath = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HierarchyPath]
   }
   
-  @scala.inline
-  implicit class HierarchyPathMutableBuilder[Self <: HierarchyPath] (val x: Self) extends AnyVal {
+  extension [Self <: HierarchyPath](x: Self) {
     
-    @scala.inline
-    def setLevelFive(value: HierarchyGroupSummary): Self = StObject.set(x, "LevelFive", value.asInstanceOf[js.Any])
+    inline def setLevelFive(value: HierarchyGroupSummary): Self = StObject.set(x, "LevelFive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelFiveUndefined: Self = StObject.set(x, "LevelFive", js.undefined)
+    inline def setLevelFiveUndefined: Self = StObject.set(x, "LevelFive", js.undefined)
     
-    @scala.inline
-    def setLevelFour(value: HierarchyGroupSummary): Self = StObject.set(x, "LevelFour", value.asInstanceOf[js.Any])
+    inline def setLevelFour(value: HierarchyGroupSummary): Self = StObject.set(x, "LevelFour", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelFourUndefined: Self = StObject.set(x, "LevelFour", js.undefined)
+    inline def setLevelFourUndefined: Self = StObject.set(x, "LevelFour", js.undefined)
     
-    @scala.inline
-    def setLevelOne(value: HierarchyGroupSummary): Self = StObject.set(x, "LevelOne", value.asInstanceOf[js.Any])
+    inline def setLevelOne(value: HierarchyGroupSummary): Self = StObject.set(x, "LevelOne", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelOneUndefined: Self = StObject.set(x, "LevelOne", js.undefined)
+    inline def setLevelOneUndefined: Self = StObject.set(x, "LevelOne", js.undefined)
     
-    @scala.inline
-    def setLevelThree(value: HierarchyGroupSummary): Self = StObject.set(x, "LevelThree", value.asInstanceOf[js.Any])
+    inline def setLevelThree(value: HierarchyGroupSummary): Self = StObject.set(x, "LevelThree", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelThreeUndefined: Self = StObject.set(x, "LevelThree", js.undefined)
+    inline def setLevelThreeUndefined: Self = StObject.set(x, "LevelThree", js.undefined)
     
-    @scala.inline
-    def setLevelTwo(value: HierarchyGroupSummary): Self = StObject.set(x, "LevelTwo", value.asInstanceOf[js.Any])
+    inline def setLevelTwo(value: HierarchyGroupSummary): Self = StObject.set(x, "LevelTwo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelTwoUndefined: Self = StObject.set(x, "LevelTwo", js.undefined)
+    inline def setLevelTwoUndefined: Self = StObject.set(x, "LevelTwo", js.undefined)
   }
 }

@@ -10,6 +10,5 @@ object cacherMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](creator: js.Function0[T], argsKey: String*): T = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(creator.asInstanceOf[js.Any], argsKey.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def default[T](creator: js.Function0[T], argsKey: String*): T = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(creator.asInstanceOf[js.Any], argsKey.asInstanceOf[js.Any])).asInstanceOf[T]
 }

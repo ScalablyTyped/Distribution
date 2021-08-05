@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FullScreenType extends StObject
 object FullScreenType {
   
-  @scala.inline
-  def browser: typings.dplayer.dplayerStrings.browser = "browser".asInstanceOf[typings.dplayer.dplayerStrings.browser]
+  inline def browser: typings.dplayer.dplayerStrings.browser = "browser".asInstanceOf[typings.dplayer.dplayerStrings.browser]
   
-  @scala.inline
-  def web: typings.dplayer.dplayerStrings.web = "web".asInstanceOf[typings.dplayer.dplayerStrings.web]
+  inline def web: typings.dplayer.dplayerStrings.web = "web".asInstanceOf[typings.dplayer.dplayerStrings.web]
 }

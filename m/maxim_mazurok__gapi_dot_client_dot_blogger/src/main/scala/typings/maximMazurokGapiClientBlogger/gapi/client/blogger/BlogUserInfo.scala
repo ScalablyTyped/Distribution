@@ -17,31 +17,23 @@ trait BlogUserInfo extends StObject {
 }
 object BlogUserInfo {
   
-  @scala.inline
-  def apply(): BlogUserInfo = {
+  inline def apply(): BlogUserInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BlogUserInfo]
   }
   
-  @scala.inline
-  implicit class BlogUserInfoMutableBuilder[Self <: BlogUserInfo] (val x: Self) extends AnyVal {
+  extension [Self <: BlogUserInfo](x: Self) {
     
-    @scala.inline
-    def setBlog(value: Blog): Self = StObject.set(x, "blog", value.asInstanceOf[js.Any])
+    inline def setBlog(value: Blog): Self = StObject.set(x, "blog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlogUndefined: Self = StObject.set(x, "blog", js.undefined)
+    inline def setBlogUndefined: Self = StObject.set(x, "blog", js.undefined)
     
-    @scala.inline
-    def setBlog_user_info(value: BlogPerUserInfo): Self = StObject.set(x, "blog_user_info", value.asInstanceOf[js.Any])
+    inline def setBlog_user_info(value: BlogPerUserInfo): Self = StObject.set(x, "blog_user_info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlog_user_infoUndefined: Self = StObject.set(x, "blog_user_info", js.undefined)
+    inline def setBlog_user_infoUndefined: Self = StObject.set(x, "blog_user_info", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

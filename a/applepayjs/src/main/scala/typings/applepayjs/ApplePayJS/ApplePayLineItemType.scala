@@ -14,9 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ApplePayLineItemType extends StObject
 object ApplePayLineItemType {
   
-  @scala.inline
-  def `final`: typings.applepayjs.applepayjsStrings.`final` = "final".asInstanceOf[typings.applepayjs.applepayjsStrings.`final`]
+  inline def `final`: typings.applepayjs.applepayjsStrings.`final` = "final".asInstanceOf[typings.applepayjs.applepayjsStrings.`final`]
   
-  @scala.inline
-  def pending: typings.applepayjs.applepayjsStrings.pending = "pending".asInstanceOf[typings.applepayjs.applepayjsStrings.pending]
+  inline def pending: typings.applepayjs.applepayjsStrings.pending = "pending".asInstanceOf[typings.applepayjs.applepayjsStrings.pending]
 }

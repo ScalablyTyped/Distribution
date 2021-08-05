@@ -145,29 +145,22 @@ object Led {
   }
   object DigitsOption {
     
-    @scala.inline
-    def apply(pins: js.Any): DigitsOption = {
+    inline def apply(pins: js.Any): DigitsOption = {
       val __obj = js.Dynamic.literal(pins = pins.asInstanceOf[js.Any])
       __obj.asInstanceOf[DigitsOption]
     }
     
-    @scala.inline
-    implicit class DigitsOptionMutableBuilder[Self <: DigitsOption] (val x: Self) extends AnyVal {
+    extension [Self <: DigitsOption](x: Self) {
       
-      @scala.inline
-      def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+      inline def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
+      inline def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
       
-      @scala.inline
-      def setDevices(value: Double): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
+      inline def setDevices(value: Double): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevicesUndefined: Self = StObject.set(x, "devices", js.undefined)
+      inline def setDevicesUndefined: Self = StObject.set(x, "devices", js.undefined)
       
-      @scala.inline
-      def setPins(value: js.Any): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
+      inline def setPins(value: js.Any): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
     }
   }
   
@@ -185,44 +178,32 @@ object Led {
   }
   object MatrixIC2Option {
     
-    @scala.inline
-    def apply(controller: String): MatrixIC2Option = {
+    inline def apply(controller: String): MatrixIC2Option = {
       val __obj = js.Dynamic.literal(controller = controller.asInstanceOf[js.Any])
       __obj.asInstanceOf[MatrixIC2Option]
     }
     
-    @scala.inline
-    implicit class MatrixIC2OptionMutableBuilder[Self <: MatrixIC2Option] (val x: Self) extends AnyVal {
+    extension [Self <: MatrixIC2Option](x: Self) {
       
-      @scala.inline
-      def setAddresses(value: js.Array[js.Any]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
+      inline def setAddresses(value: js.Array[js.Any]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddressesUndefined: Self = StObject.set(x, "addresses", js.undefined)
+      inline def setAddressesUndefined: Self = StObject.set(x, "addresses", js.undefined)
       
-      @scala.inline
-      def setAddressesVarargs(value: js.Any*): Self = StObject.set(x, "addresses", js.Array(value :_*))
+      inline def setAddressesVarargs(value: js.Any*): Self = StObject.set(x, "addresses", js.Array(value :_*))
       
-      @scala.inline
-      def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+      inline def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDims(value: js.Any): Self = StObject.set(x, "dims", value.asInstanceOf[js.Any])
+      inline def setDims(value: js.Any): Self = StObject.set(x, "dims", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDimsUndefined: Self = StObject.set(x, "dims", js.undefined)
+      inline def setDimsUndefined: Self = StObject.set(x, "dims", js.undefined)
       
-      @scala.inline
-      def setIsBicolor(value: Boolean): Self = StObject.set(x, "isBicolor", value.asInstanceOf[js.Any])
+      inline def setIsBicolor(value: Boolean): Self = StObject.set(x, "isBicolor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBicolorUndefined: Self = StObject.set(x, "isBicolor", js.undefined)
+      inline def setIsBicolorUndefined: Self = StObject.set(x, "isBicolor", js.undefined)
       
-      @scala.inline
-      def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+      inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
+      inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     }
   }
   
@@ -234,23 +215,18 @@ object Led {
   }
   object MatrixOption {
     
-    @scala.inline
-    def apply(pins: js.Any): MatrixOption = {
+    inline def apply(pins: js.Any): MatrixOption = {
       val __obj = js.Dynamic.literal(pins = pins.asInstanceOf[js.Any])
       __obj.asInstanceOf[MatrixOption]
     }
     
-    @scala.inline
-    implicit class MatrixOptionMutableBuilder[Self <: MatrixOption] (val x: Self) extends AnyVal {
+    extension [Self <: MatrixOption](x: Self) {
       
-      @scala.inline
-      def setDevices(value: Double): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
+      inline def setDevices(value: Double): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevicesUndefined: Self = StObject.set(x, "devices", js.undefined)
+      inline def setDevicesUndefined: Self = StObject.set(x, "devices", js.undefined)
       
-      @scala.inline
-      def setPins(value: js.Any): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
+      inline def setPins(value: js.Any): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
     }
   }
   
@@ -264,32 +240,24 @@ object Led {
   }
   object RGBOption {
     
-    @scala.inline
-    def apply(pins: js.Array[Double]): RGBOption = {
+    inline def apply(pins: js.Array[Double]): RGBOption = {
       val __obj = js.Dynamic.literal(pins = pins.asInstanceOf[js.Any])
       __obj.asInstanceOf[RGBOption]
     }
     
-    @scala.inline
-    implicit class RGBOptionMutableBuilder[Self <: RGBOption] (val x: Self) extends AnyVal {
+    extension [Self <: RGBOption](x: Self) {
       
-      @scala.inline
-      def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+      inline def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
+      inline def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
       
-      @scala.inline
-      def setIsAnode(value: Boolean): Self = StObject.set(x, "isAnode", value.asInstanceOf[js.Any])
+      inline def setIsAnode(value: Boolean): Self = StObject.set(x, "isAnode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsAnodeUndefined: Self = StObject.set(x, "isAnode", js.undefined)
+      inline def setIsAnodeUndefined: Self = StObject.set(x, "isAnode", js.undefined)
       
-      @scala.inline
-      def setPins(value: js.Array[Double]): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
+      inline def setPins(value: js.Array[Double]): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPinsVarargs(value: Double*): Self = StObject.set(x, "pins", js.Array(value :_*))
+      inline def setPinsVarargs(value: Double*): Self = StObject.set(x, "pins", js.Array(value :_*))
     }
   }
 }

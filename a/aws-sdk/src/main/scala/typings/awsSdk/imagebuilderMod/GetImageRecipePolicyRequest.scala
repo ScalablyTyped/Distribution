@@ -13,16 +13,13 @@ trait GetImageRecipePolicyRequest extends StObject {
 }
 object GetImageRecipePolicyRequest {
   
-  @scala.inline
-  def apply(imageRecipeArn: ImageRecipeArn): GetImageRecipePolicyRequest = {
+  inline def apply(imageRecipeArn: ImageRecipeArn): GetImageRecipePolicyRequest = {
     val __obj = js.Dynamic.literal(imageRecipeArn = imageRecipeArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetImageRecipePolicyRequest]
   }
   
-  @scala.inline
-  implicit class GetImageRecipePolicyRequestMutableBuilder[Self <: GetImageRecipePolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetImageRecipePolicyRequest](x: Self) {
     
-    @scala.inline
-    def setImageRecipeArn(value: ImageRecipeArn): Self = StObject.set(x, "imageRecipeArn", value.asInstanceOf[js.Any])
+    inline def setImageRecipeArn(value: ImageRecipeArn): Self = StObject.set(x, "imageRecipeArn", value.asInstanceOf[js.Any])
   }
 }

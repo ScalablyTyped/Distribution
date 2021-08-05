@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.Account")
 @js.native
-class Account protected ()
+/* private */ class Account ()
   extends StObject
      with typings.activexOutlook.Outlook.Account {
   
@@ -53,7 +53,7 @@ class Account protected ()
   /* CompleteClass */
   override def GetRecipientFromID(EntryID: String): typings.activexOutlook.Outlook.Recipient = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.Account_typekey")
   var OutlookDotAccount_typekey: typings.activexOutlook.Outlook.Account = js.native
   

@@ -64,64 +64,45 @@ trait KMLSublayerProperties extends StObject {
 }
 object KMLSublayerProperties {
   
-  @scala.inline
-  def apply(): KMLSublayerProperties = {
+  inline def apply(): KMLSublayerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KMLSublayerProperties]
   }
   
-  @scala.inline
-  implicit class KMLSublayerPropertiesMutableBuilder[Self <: KMLSublayerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: KMLSublayerProperties](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLayer(value: KMLLayerProperties): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: KMLLayerProperties): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
+    inline def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
     
-    @scala.inline
-    def setNetworkLink(value: js.Any): Self = StObject.set(x, "networkLink", value.asInstanceOf[js.Any])
+    inline def setNetworkLink(value: js.Any): Self = StObject.set(x, "networkLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkLinkUndefined: Self = StObject.set(x, "networkLink", js.undefined)
+    inline def setNetworkLinkUndefined: Self = StObject.set(x, "networkLink", js.undefined)
     
-    @scala.inline
-    def setSourceJSON(value: js.Any): Self = StObject.set(x, "sourceJSON", value.asInstanceOf[js.Any])
+    inline def setSourceJSON(value: js.Any): Self = StObject.set(x, "sourceJSON", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceJSONUndefined: Self = StObject.set(x, "sourceJSON", js.undefined)
+    inline def setSourceJSONUndefined: Self = StObject.set(x, "sourceJSON", js.undefined)
     
-    @scala.inline
-    def setSublayers(value: CollectionProperties[KMLSublayerProperties]): Self = StObject.set(x, "sublayers", value.asInstanceOf[js.Any])
+    inline def setSublayers(value: CollectionProperties[KMLSublayerProperties]): Self = StObject.set(x, "sublayers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSublayersUndefined: Self = StObject.set(x, "sublayers", js.undefined)
+    inline def setSublayersUndefined: Self = StObject.set(x, "sublayers", js.undefined)
     
-    @scala.inline
-    def setSublayersVarargs(value: KMLSublayerProperties*): Self = StObject.set(x, "sublayers", js.Array(value :_*))
+    inline def setSublayersVarargs(value: KMLSublayerProperties*): Self = StObject.set(x, "sublayers", js.Array(value :_*))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

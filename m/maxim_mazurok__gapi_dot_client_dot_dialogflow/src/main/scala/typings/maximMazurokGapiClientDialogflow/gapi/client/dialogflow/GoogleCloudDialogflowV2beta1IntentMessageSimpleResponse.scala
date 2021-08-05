@@ -17,31 +17,23 @@ trait GoogleCloudDialogflowV2beta1IntentMessageSimpleResponse extends StObject {
 }
 object GoogleCloudDialogflowV2beta1IntentMessageSimpleResponse {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2beta1IntentMessageSimpleResponse = {
+  inline def apply(): GoogleCloudDialogflowV2beta1IntentMessageSimpleResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1IntentMessageSimpleResponse]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2beta1IntentMessageSimpleResponseMutableBuilder[Self <: GoogleCloudDialogflowV2beta1IntentMessageSimpleResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2beta1IntentMessageSimpleResponse](x: Self) {
     
-    @scala.inline
-    def setDisplayText(value: String): Self = StObject.set(x, "displayText", value.asInstanceOf[js.Any])
+    inline def setDisplayText(value: String): Self = StObject.set(x, "displayText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayTextUndefined: Self = StObject.set(x, "displayText", js.undefined)
+    inline def setDisplayTextUndefined: Self = StObject.set(x, "displayText", js.undefined)
     
-    @scala.inline
-    def setSsml(value: String): Self = StObject.set(x, "ssml", value.asInstanceOf[js.Any])
+    inline def setSsml(value: String): Self = StObject.set(x, "ssml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsmlUndefined: Self = StObject.set(x, "ssml", js.undefined)
+    inline def setSsmlUndefined: Self = StObject.set(x, "ssml", js.undefined)
     
-    @scala.inline
-    def setTextToSpeech(value: String): Self = StObject.set(x, "textToSpeech", value.asInstanceOf[js.Any])
+    inline def setTextToSpeech(value: String): Self = StObject.set(x, "textToSpeech", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextToSpeechUndefined: Self = StObject.set(x, "textToSpeech", js.undefined)
+    inline def setTextToSpeechUndefined: Self = StObject.set(x, "textToSpeech", js.undefined)
   }
 }

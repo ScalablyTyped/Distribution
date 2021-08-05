@@ -18,22 +18,17 @@ trait InventoryGroup extends StObject {
 }
 object InventoryGroup {
   
-  @scala.inline
-  def apply(Filters: InventoryFilterList, Name: InventoryGroupName): InventoryGroup = {
+  inline def apply(Filters: InventoryFilterList, Name: InventoryGroupName): InventoryGroup = {
     val __obj = js.Dynamic.literal(Filters = Filters.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[InventoryGroup]
   }
   
-  @scala.inline
-  implicit class InventoryGroupMutableBuilder[Self <: InventoryGroup] (val x: Self) extends AnyVal {
+  extension [Self <: InventoryGroup](x: Self) {
     
-    @scala.inline
-    def setFilters(value: InventoryFilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: InventoryFilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersVarargs(value: InventoryFilter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: InventoryFilter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: InventoryGroupName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: InventoryGroupName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

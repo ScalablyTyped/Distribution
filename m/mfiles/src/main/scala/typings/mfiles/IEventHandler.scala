@@ -23,8 +23,7 @@ trait IEventHandler extends StObject {
 }
 object IEventHandler {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Active: Boolean,
     Clone: () => IEventHandler,
     Description: String,
@@ -37,28 +36,20 @@ object IEventHandler {
     __obj.asInstanceOf[IEventHandler]
   }
   
-  @scala.inline
-  implicit class IEventHandlerMutableBuilder[Self <: IEventHandler] (val x: Self) extends AnyVal {
+  extension [Self <: IEventHandler](x: Self) {
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClone(value: () => IEventHandler): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IEventHandler): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventType(value: MFEventHandlerType): Self = StObject.set(x, "EventType", value.asInstanceOf[js.Any])
+    inline def setEventType(value: MFEventHandlerType): Self = StObject.set(x, "EventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGUID(value: String): Self = StObject.set(x, "GUID", value.asInstanceOf[js.Any])
+    inline def setGUID(value: String): Self = StObject.set(x, "GUID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetID(value: () => Double): Self = StObject.set(x, "GetID", js.Any.fromFunction0(value))
+    inline def setGetID(value: () => Double): Self = StObject.set(x, "GetID", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setVBScript(value: String): Self = StObject.set(x, "VBScript", value.asInstanceOf[js.Any])
+    inline def setVBScript(value: String): Self = StObject.set(x, "VBScript", value.asInstanceOf[js.Any])
   }
 }

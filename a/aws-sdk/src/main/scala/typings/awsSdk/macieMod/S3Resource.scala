@@ -18,22 +18,17 @@ trait S3Resource extends StObject {
 }
 object S3Resource {
   
-  @scala.inline
-  def apply(bucketName: BucketName): S3Resource = {
+  inline def apply(bucketName: BucketName): S3Resource = {
     val __obj = js.Dynamic.literal(bucketName = bucketName.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3Resource]
   }
   
-  @scala.inline
-  implicit class S3ResourceMutableBuilder[Self <: S3Resource] (val x: Self) extends AnyVal {
+  extension [Self <: S3Resource](x: Self) {
     
-    @scala.inline
-    def setBucketName(value: BucketName): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
+    inline def setBucketName(value: BucketName): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefix(value: Prefix): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: Prefix): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
   }
 }

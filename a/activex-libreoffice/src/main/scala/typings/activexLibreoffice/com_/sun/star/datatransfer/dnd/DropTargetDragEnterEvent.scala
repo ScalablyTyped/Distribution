@@ -23,8 +23,7 @@ trait DropTargetDragEnterEvent
 }
 object DropTargetDragEnterEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Context: XDropTargetDragContext,
     DropAction: Double,
     Dummy: Double,
@@ -38,10 +37,8 @@ object DropTargetDragEnterEvent {
     __obj.asInstanceOf[DropTargetDragEnterEvent]
   }
   
-  @scala.inline
-  implicit class DropTargetDragEnterEventMutableBuilder[Self <: DropTargetDragEnterEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DropTargetDragEnterEvent](x: Self) {
     
-    @scala.inline
-    def setSupportedDataFlavors(value: SafeArray[DataFlavor]): Self = StObject.set(x, "SupportedDataFlavors", value.asInstanceOf[js.Any])
+    inline def setSupportedDataFlavors(value: SafeArray[DataFlavor]): Self = StObject.set(x, "SupportedDataFlavors", value.asInstanceOf[js.Any])
   }
 }

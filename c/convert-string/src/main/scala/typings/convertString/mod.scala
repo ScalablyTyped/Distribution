@@ -18,17 +18,13 @@ object mod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def bytesToString(bytes: js.Array[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bytesToString")(bytes.asInstanceOf[js.Any]).asInstanceOf[String]
+      inline def bytesToString(bytes: js.Array[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bytesToString")(bytes.asInstanceOf[js.Any]).asInstanceOf[String]
       
-      @scala.inline
-      def stringToBytes(str: String): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToBytes")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+      inline def stringToBytes(str: String): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToBytes")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     }
     
-    @scala.inline
-    def bytesToString(bytes: js.Array[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bytesToString")(bytes.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def bytesToString(bytes: js.Array[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bytesToString")(bytes.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def stringToBytes(str: String): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToBytes")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def stringToBytes(str: String): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToBytes")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   }
 }

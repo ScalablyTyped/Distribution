@@ -58,11 +58,9 @@ object depositMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def forAddress(factory: DepositFactory, address: String): js.Promise[Deposit] = (^.asInstanceOf[js.Dynamic].applyDynamic("forAddress")(factory.asInstanceOf[js.Any], address.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Deposit]]
+    inline def forAddress(factory: DepositFactory, address: String): js.Promise[Deposit] = (^.asInstanceOf[js.Dynamic].applyDynamic("forAddress")(factory.asInstanceOf[js.Any], address.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Deposit]]
     
-    @scala.inline
-    def forLotSize(
+    inline def forLotSize(
       factory: DepositFactory,
       satoshiLotSize: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
     ): js.Promise[Deposit] = (^.asInstanceOf[js.Dynamic].applyDynamic("forLotSize")(factory.asInstanceOf[js.Any], satoshiLotSize.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Deposit]]
@@ -118,8 +116,7 @@ object depositMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def withConfig(config: TBTCConfig): js.Promise[DepositFactory] = ^.asInstanceOf[js.Dynamic].applyDynamic("withConfig")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DepositFactory]]
+    inline def withConfig(config: TBTCConfig): js.Promise[DepositFactory] = ^.asInstanceOf[js.Dynamic].applyDynamic("withConfig")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DepositFactory]]
   }
   
   object DepositStates {
@@ -131,74 +128,62 @@ object depositMod {
     @JSImport("@keep-network/tbtc.js/src/Deposit", "DepositStates.ACTIVE")
     @js.native
     def ACTIVE: Double = js.native
-    @scala.inline
-    def ACTIVE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACTIVE")(x.asInstanceOf[js.Any])
+    inline def ACTIVE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACTIVE")(x.asInstanceOf[js.Any])
     
     @JSImport("@keep-network/tbtc.js/src/Deposit", "DepositStates.AWAITING_BTC_FUNDING_PROOF")
     @js.native
     def AWAITING_BTC_FUNDING_PROOF: Double = js.native
-    @scala.inline
-    def AWAITING_BTC_FUNDING_PROOF_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AWAITING_BTC_FUNDING_PROOF")(x.asInstanceOf[js.Any])
+    inline def AWAITING_BTC_FUNDING_PROOF_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AWAITING_BTC_FUNDING_PROOF")(x.asInstanceOf[js.Any])
     
     @JSImport("@keep-network/tbtc.js/src/Deposit", "DepositStates.AWAITING_SIGNER_SETUP")
     @js.native
     def AWAITING_SIGNER_SETUP: Double = js.native
-    @scala.inline
-    def AWAITING_SIGNER_SETUP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AWAITING_SIGNER_SETUP")(x.asInstanceOf[js.Any])
+    inline def AWAITING_SIGNER_SETUP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AWAITING_SIGNER_SETUP")(x.asInstanceOf[js.Any])
     
     @JSImport("@keep-network/tbtc.js/src/Deposit", "DepositStates.AWAITING_WITHDRAWAL_PROOF")
     @js.native
     def AWAITING_WITHDRAWAL_PROOF: Double = js.native
-    @scala.inline
-    def AWAITING_WITHDRAWAL_PROOF_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AWAITING_WITHDRAWAL_PROOF")(x.asInstanceOf[js.Any])
+    inline def AWAITING_WITHDRAWAL_PROOF_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AWAITING_WITHDRAWAL_PROOF")(x.asInstanceOf[js.Any])
     
     @JSImport("@keep-network/tbtc.js/src/Deposit", "DepositStates.AWAITING_WITHDRAWAL_SIGNATURE")
     @js.native
     def AWAITING_WITHDRAWAL_SIGNATURE: Double = js.native
-    @scala.inline
-    def AWAITING_WITHDRAWAL_SIGNATURE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AWAITING_WITHDRAWAL_SIGNATURE")(x.asInstanceOf[js.Any])
+    inline def AWAITING_WITHDRAWAL_SIGNATURE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AWAITING_WITHDRAWAL_SIGNATURE")(x.asInstanceOf[js.Any])
     
     @JSImport("@keep-network/tbtc.js/src/Deposit", "DepositStates.COURTESY_CALL")
     @js.native
     def COURTESY_CALL: Double = js.native
-    @scala.inline
-    def COURTESY_CALL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COURTESY_CALL")(x.asInstanceOf[js.Any])
+    inline def COURTESY_CALL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COURTESY_CALL")(x.asInstanceOf[js.Any])
     
     @JSImport("@keep-network/tbtc.js/src/Deposit", "DepositStates.FAILED_SETUP")
     @js.native
     def FAILED_SETUP: Double = js.native
-    @scala.inline
-    def FAILED_SETUP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILED_SETUP")(x.asInstanceOf[js.Any])
+    inline def FAILED_SETUP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILED_SETUP")(x.asInstanceOf[js.Any])
     
     @JSImport("@keep-network/tbtc.js/src/Deposit", "DepositStates.FRAUD_LIQUIDATION_IN_PROGRESS")
     @js.native
     def FRAUD_LIQUIDATION_IN_PROGRESS: Double = js.native
-    @scala.inline
-    def FRAUD_LIQUIDATION_IN_PROGRESS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FRAUD_LIQUIDATION_IN_PROGRESS")(x.asInstanceOf[js.Any])
+    inline def FRAUD_LIQUIDATION_IN_PROGRESS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FRAUD_LIQUIDATION_IN_PROGRESS")(x.asInstanceOf[js.Any])
     
     @JSImport("@keep-network/tbtc.js/src/Deposit", "DepositStates.LIQUIDATED")
     @js.native
     def LIQUIDATED: Double = js.native
-    @scala.inline
-    def LIQUIDATED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIQUIDATED")(x.asInstanceOf[js.Any])
+    inline def LIQUIDATED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIQUIDATED")(x.asInstanceOf[js.Any])
     
     @JSImport("@keep-network/tbtc.js/src/Deposit", "DepositStates.LIQUIDATION_IN_PROGRESS")
     @js.native
     def LIQUIDATION_IN_PROGRESS: Double = js.native
-    @scala.inline
-    def LIQUIDATION_IN_PROGRESS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIQUIDATION_IN_PROGRESS")(x.asInstanceOf[js.Any])
+    inline def LIQUIDATION_IN_PROGRESS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIQUIDATION_IN_PROGRESS")(x.asInstanceOf[js.Any])
     
     @JSImport("@keep-network/tbtc.js/src/Deposit", "DepositStates.REDEEMED")
     @js.native
     def REDEEMED: Double = js.native
-    @scala.inline
-    def REDEEMED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REDEEMED")(x.asInstanceOf[js.Any])
+    inline def REDEEMED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REDEEMED")(x.asInstanceOf[js.Any])
     
     @JSImport("@keep-network/tbtc.js/src/Deposit", "DepositStates.START")
     @js.native
     def START: Double = js.native
-    @scala.inline
-    def START_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("START")(x.asInstanceOf[js.Any])
+    inline def START_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("START")(x.asInstanceOf[js.Any])
   }
   
   trait AutoSubmitState extends StObject {
@@ -215,8 +200,7 @@ object depositMod {
   }
   object AutoSubmitState {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       fundingConfirmations: js.Promise[RequiredConfirmations],
       fundingTransaction: js.Promise[FoundTransaction],
       mintedTBTC: js.Promise[
@@ -228,24 +212,19 @@ object depositMod {
       __obj.asInstanceOf[AutoSubmitState]
     }
     
-    @scala.inline
-    implicit class AutoSubmitStateMutableBuilder[Self <: AutoSubmitState] (val x: Self) extends AnyVal {
+    extension [Self <: AutoSubmitState](x: Self) {
       
-      @scala.inline
-      def setFundingConfirmations(value: js.Promise[RequiredConfirmations]): Self = StObject.set(x, "fundingConfirmations", value.asInstanceOf[js.Any])
+      inline def setFundingConfirmations(value: js.Promise[RequiredConfirmations]): Self = StObject.set(x, "fundingConfirmations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFundingTransaction(value: js.Promise[FoundTransaction]): Self = StObject.set(x, "fundingTransaction", value.asInstanceOf[js.Any])
+      inline def setFundingTransaction(value: js.Promise[FoundTransaction]): Self = StObject.set(x, "fundingTransaction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMintedTBTC(
+      inline def setMintedTBTC(
         value: js.Promise[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
             ]
       ): Self = StObject.set(x, "mintedTBTC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProofTransaction(value: js.Promise[js.Any]): Self = StObject.set(x, "proofTransaction", value.asInstanceOf[js.Any])
+      inline def setProofTransaction(value: js.Promise[js.Any]): Self = StObject.set(x, "proofTransaction", value.asInstanceOf[js.Any])
     }
   }
   
@@ -384,20 +363,16 @@ object depositMod {
   }
   object FundingConfirmations {
     
-    @scala.inline
-    def apply(requiredConfirmations: Double, transaction: FoundTransaction): FundingConfirmations = {
+    inline def apply(requiredConfirmations: Double, transaction: FoundTransaction): FundingConfirmations = {
       val __obj = js.Dynamic.literal(requiredConfirmations = requiredConfirmations.asInstanceOf[js.Any], transaction = transaction.asInstanceOf[js.Any])
       __obj.asInstanceOf[FundingConfirmations]
     }
     
-    @scala.inline
-    implicit class FundingConfirmationsMutableBuilder[Self <: FundingConfirmations] (val x: Self) extends AnyVal {
+    extension [Self <: FundingConfirmations](x: Self) {
       
-      @scala.inline
-      def setRequiredConfirmations(value: Double): Self = StObject.set(x, "requiredConfirmations", value.asInstanceOf[js.Any])
+      inline def setRequiredConfirmations(value: Double): Self = StObject.set(x, "requiredConfirmations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransaction(value: FoundTransaction): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
+      inline def setTransaction(value: FoundTransaction): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     }
   }
 }

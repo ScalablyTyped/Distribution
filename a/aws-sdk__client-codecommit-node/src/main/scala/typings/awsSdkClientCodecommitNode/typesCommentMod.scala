@@ -51,62 +51,44 @@ object typesCommentMod {
   }
   object Comment {
     
-    @scala.inline
-    def apply(): Comment = {
+    inline def apply(): Comment = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Comment]
     }
     
-    @scala.inline
-    implicit class CommentMutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
+    extension [Self <: Comment](x: Self) {
       
-      @scala.inline
-      def setAuthorArn(value: String): Self = StObject.set(x, "authorArn", value.asInstanceOf[js.Any])
+      inline def setAuthorArn(value: String): Self = StObject.set(x, "authorArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorArnUndefined: Self = StObject.set(x, "authorArn", js.undefined)
+      inline def setAuthorArnUndefined: Self = StObject.set(x, "authorArn", js.undefined)
       
-      @scala.inline
-      def setClientRequestToken(value: String): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
+      inline def setClientRequestToken(value: String): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
+      inline def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
       
-      @scala.inline
-      def setCommentId(value: String): Self = StObject.set(x, "commentId", value.asInstanceOf[js.Any])
+      inline def setCommentId(value: String): Self = StObject.set(x, "commentId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentIdUndefined: Self = StObject.set(x, "commentId", js.undefined)
+      inline def setCommentIdUndefined: Self = StObject.set(x, "commentId", js.undefined)
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setCreationDate(value: Date | String | Double): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+      inline def setCreationDate(value: Date | String | Double): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
+      inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
       
-      @scala.inline
-      def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
+      inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
+      inline def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
       
-      @scala.inline
-      def setInReplyTo(value: String): Self = StObject.set(x, "inReplyTo", value.asInstanceOf[js.Any])
+      inline def setInReplyTo(value: String): Self = StObject.set(x, "inReplyTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInReplyToUndefined: Self = StObject.set(x, "inReplyTo", js.undefined)
+      inline def setInReplyToUndefined: Self = StObject.set(x, "inReplyTo", js.undefined)
       
-      @scala.inline
-      def setLastModifiedDate(value: Date | String | Double): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
+      inline def setLastModifiedDate(value: Date | String | Double): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
+      inline def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
     }
   }
   
@@ -128,26 +110,20 @@ object typesCommentMod {
   }
   object UnmarshalledComment {
     
-    @scala.inline
-    def apply(): UnmarshalledComment = {
+    inline def apply(): UnmarshalledComment = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledComment]
     }
     
-    @scala.inline
-    implicit class UnmarshalledCommentMutableBuilder[Self <: UnmarshalledComment] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledComment](x: Self) {
       
-      @scala.inline
-      def setCreationDate(value: Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+      inline def setCreationDate(value: Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
+      inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
       
-      @scala.inline
-      def setLastModifiedDate(value: Date): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
+      inline def setLastModifiedDate(value: Date): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
+      inline def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
     }
   }
 }

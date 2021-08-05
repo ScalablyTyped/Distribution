@@ -70,8 +70,7 @@ object CustomRange {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): CustomRange = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[CustomRange]
+  inline def create(model: IModel): CustomRange = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[CustomRange]
   
   /**
     * Creates and returns a new CustomRange instance in the SDK and on the server.
@@ -79,8 +78,7 @@ object CustomRange {
     * of the parent DatabaseRetrieveSource element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInDatabaseRetrieveSourceUnderRange(container: DatabaseRetrieveSource): CustomRange = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDatabaseRetrieveSourceUnderRange")(container.asInstanceOf[js.Any]).asInstanceOf[CustomRange]
+  inline def createInDatabaseRetrieveSourceUnderRange(container: DatabaseRetrieveSource): CustomRange = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDatabaseRetrieveSourceUnderRange")(container.asInstanceOf[js.Any]).asInstanceOf[CustomRange]
   
   /**
     * Creates and returns a new CustomRange instance in the SDK and on the server.
@@ -88,20 +86,17 @@ object CustomRange {
     * of the parent ImportMappingCall element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInImportMappingCallUnderRange(container: ImportMappingCall): CustomRange = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportMappingCallUnderRange")(container.asInstanceOf[js.Any]).asInstanceOf[CustomRange]
+  inline def createInImportMappingCallUnderRange(container: ImportMappingCall): CustomRange = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportMappingCallUnderRange")(container.asInstanceOf[js.Any]).asInstanceOf[CustomRange]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.CustomRange.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.CustomRange.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

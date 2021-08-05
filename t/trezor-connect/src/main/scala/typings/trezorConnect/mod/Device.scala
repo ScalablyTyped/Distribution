@@ -12,8 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Device extends StObject
 object Device {
   
-  @scala.inline
-  def Features(
+  inline def Features(
     features: typings.trezorConnect.mod.Features,
     firmware: DeviceFirmwareStatus,
     firmwareRelease: FirmwareRelease,
@@ -27,15 +26,13 @@ object Device {
     __obj.asInstanceOf[typings.trezorConnect.anon.Features]
   }
   
-  @scala.inline
-  def Label(label: String, path: String): typings.trezorConnect.anon.Label = {
+  inline def Label(label: String, path: String): typings.trezorConnect.anon.Label = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("unacquired")
     __obj.asInstanceOf[typings.trezorConnect.anon.Label]
   }
   
-  @scala.inline
-  def Path(label: String, path: String): typings.trezorConnect.anon.Path = {
+  inline def Path(label: String, path: String): typings.trezorConnect.anon.Path = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("unreadable")
     __obj.asInstanceOf[typings.trezorConnect.anon.Path]

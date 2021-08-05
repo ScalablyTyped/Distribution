@@ -21,22 +21,17 @@ trait PointCloudReturnFilterProperties
 }
 object PointCloudReturnFilterProperties {
   
-  @scala.inline
-  def apply(): PointCloudReturnFilterProperties = {
+  inline def apply(): PointCloudReturnFilterProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PointCloudReturnFilterProperties]
   }
   
-  @scala.inline
-  implicit class PointCloudReturnFilterPropertiesMutableBuilder[Self <: PointCloudReturnFilterProperties] (val x: Self) extends AnyVal {
+  extension [Self <: PointCloudReturnFilterProperties](x: Self) {
     
-    @scala.inline
-    def setIncludedReturns(value: js.Array[firstOfMany | last | lastOfMany | single]): Self = StObject.set(x, "includedReturns", value.asInstanceOf[js.Any])
+    inline def setIncludedReturns(value: js.Array[firstOfMany | last | lastOfMany | single]): Self = StObject.set(x, "includedReturns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludedReturnsUndefined: Self = StObject.set(x, "includedReturns", js.undefined)
+    inline def setIncludedReturnsUndefined: Self = StObject.set(x, "includedReturns", js.undefined)
     
-    @scala.inline
-    def setIncludedReturnsVarargs(value: (firstOfMany | last | lastOfMany | single)*): Self = StObject.set(x, "includedReturns", js.Array(value :_*))
+    inline def setIncludedReturnsVarargs(value: (firstOfMany | last | lastOfMany | single)*): Self = StObject.set(x, "includedReturns", js.Array(value :_*))
   }
 }

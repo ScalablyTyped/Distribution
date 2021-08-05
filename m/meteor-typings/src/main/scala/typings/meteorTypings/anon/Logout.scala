@@ -10,19 +10,15 @@ trait Logout extends StObject {
 }
 object Logout {
   
-  @scala.inline
-  def apply(): Logout = {
+  inline def apply(): Logout = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Logout]
   }
   
-  @scala.inline
-  implicit class LogoutMutableBuilder[Self <: Logout] (val x: Self) extends AnyVal {
+  extension [Self <: Logout](x: Self) {
     
-    @scala.inline
-    def setLogout(value: js.Object): Self = StObject.set(x, "logout", value.asInstanceOf[js.Any])
+    inline def setLogout(value: js.Object): Self = StObject.set(x, "logout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogoutUndefined: Self = StObject.set(x, "logout", js.undefined)
+    inline def setLogoutUndefined: Self = StObject.set(x, "logout", js.undefined)
   }
 }

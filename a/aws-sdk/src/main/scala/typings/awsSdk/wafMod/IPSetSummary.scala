@@ -18,19 +18,15 @@ trait IPSetSummary extends StObject {
 }
 object IPSetSummary {
   
-  @scala.inline
-  def apply(IPSetId: ResourceId, Name: ResourceName): IPSetSummary = {
+  inline def apply(IPSetId: ResourceId, Name: ResourceName): IPSetSummary = {
     val __obj = js.Dynamic.literal(IPSetId = IPSetId.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPSetSummary]
   }
   
-  @scala.inline
-  implicit class IPSetSummaryMutableBuilder[Self <: IPSetSummary] (val x: Self) extends AnyVal {
+  extension [Self <: IPSetSummary](x: Self) {
     
-    @scala.inline
-    def setIPSetId(value: ResourceId): Self = StObject.set(x, "IPSetId", value.asInstanceOf[js.Any])
+    inline def setIPSetId(value: ResourceId): Self = StObject.set(x, "IPSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

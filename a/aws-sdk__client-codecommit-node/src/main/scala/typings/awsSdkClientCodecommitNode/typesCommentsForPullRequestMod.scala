@@ -55,65 +55,46 @@ object typesCommentsForPullRequestMod {
   }
   object CommentsForPullRequest {
     
-    @scala.inline
-    def apply(): CommentsForPullRequest = {
+    inline def apply(): CommentsForPullRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CommentsForPullRequest]
     }
     
-    @scala.inline
-    implicit class CommentsForPullRequestMutableBuilder[Self <: CommentsForPullRequest] (val x: Self) extends AnyVal {
+    extension [Self <: CommentsForPullRequest](x: Self) {
       
-      @scala.inline
-      def setAfterBlobId(value: String): Self = StObject.set(x, "afterBlobId", value.asInstanceOf[js.Any])
+      inline def setAfterBlobId(value: String): Self = StObject.set(x, "afterBlobId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAfterBlobIdUndefined: Self = StObject.set(x, "afterBlobId", js.undefined)
+      inline def setAfterBlobIdUndefined: Self = StObject.set(x, "afterBlobId", js.undefined)
       
-      @scala.inline
-      def setAfterCommitId(value: String): Self = StObject.set(x, "afterCommitId", value.asInstanceOf[js.Any])
+      inline def setAfterCommitId(value: String): Self = StObject.set(x, "afterCommitId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAfterCommitIdUndefined: Self = StObject.set(x, "afterCommitId", js.undefined)
+      inline def setAfterCommitIdUndefined: Self = StObject.set(x, "afterCommitId", js.undefined)
       
-      @scala.inline
-      def setBeforeBlobId(value: String): Self = StObject.set(x, "beforeBlobId", value.asInstanceOf[js.Any])
+      inline def setBeforeBlobId(value: String): Self = StObject.set(x, "beforeBlobId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforeBlobIdUndefined: Self = StObject.set(x, "beforeBlobId", js.undefined)
+      inline def setBeforeBlobIdUndefined: Self = StObject.set(x, "beforeBlobId", js.undefined)
       
-      @scala.inline
-      def setBeforeCommitId(value: String): Self = StObject.set(x, "beforeCommitId", value.asInstanceOf[js.Any])
+      inline def setBeforeCommitId(value: String): Self = StObject.set(x, "beforeCommitId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforeCommitIdUndefined: Self = StObject.set(x, "beforeCommitId", js.undefined)
+      inline def setBeforeCommitIdUndefined: Self = StObject.set(x, "beforeCommitId", js.undefined)
       
-      @scala.inline
-      def setComments(value: js.Array[Comment] | Iterable[Comment]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+      inline def setComments(value: js.Array[Comment] | Iterable[Comment]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+      inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
       
-      @scala.inline
-      def setCommentsVarargs(value: Comment*): Self = StObject.set(x, "comments", js.Array(value :_*))
+      inline def setCommentsVarargs(value: Comment*): Self = StObject.set(x, "comments", js.Array(value :_*))
       
-      @scala.inline
-      def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
-      @scala.inline
-      def setPullRequestId(value: String): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
+      inline def setPullRequestId(value: String): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPullRequestIdUndefined: Self = StObject.set(x, "pullRequestId", js.undefined)
+      inline def setPullRequestIdUndefined: Self = StObject.set(x, "pullRequestId", js.undefined)
       
-      @scala.inline
-      def setRepositoryName(value: String): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+      inline def setRepositoryName(value: String): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepositoryNameUndefined: Self = StObject.set(x, "repositoryName", js.undefined)
+      inline def setRepositoryNameUndefined: Self = StObject.set(x, "repositoryName", js.undefined)
     }
   }
   
@@ -135,29 +116,22 @@ object typesCommentsForPullRequestMod {
   }
   object UnmarshalledCommentsForPullRequest {
     
-    @scala.inline
-    def apply(): UnmarshalledCommentsForPullRequest = {
+    inline def apply(): UnmarshalledCommentsForPullRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledCommentsForPullRequest]
     }
     
-    @scala.inline
-    implicit class UnmarshalledCommentsForPullRequestMutableBuilder[Self <: UnmarshalledCommentsForPullRequest] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledCommentsForPullRequest](x: Self) {
       
-      @scala.inline
-      def setComments(value: js.Array[UnmarshalledComment]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+      inline def setComments(value: js.Array[UnmarshalledComment]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+      inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
       
-      @scala.inline
-      def setCommentsVarargs(value: UnmarshalledComment*): Self = StObject.set(x, "comments", js.Array(value :_*))
+      inline def setCommentsVarargs(value: UnmarshalledComment*): Self = StObject.set(x, "comments", js.Array(value :_*))
       
-      @scala.inline
-      def setLocation(value: UnmarshalledLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: UnmarshalledLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     }
   }
 }

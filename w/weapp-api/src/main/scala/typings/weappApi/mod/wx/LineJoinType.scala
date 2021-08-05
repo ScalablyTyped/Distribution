@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LineJoinType extends StObject
 object LineJoinType {
   
-  @scala.inline
-  def bevel: typings.weappApi.weappApiStrings.bevel = "bevel".asInstanceOf[typings.weappApi.weappApiStrings.bevel]
+  inline def bevel: typings.weappApi.weappApiStrings.bevel = "bevel".asInstanceOf[typings.weappApi.weappApiStrings.bevel]
   
-  @scala.inline
-  def miter: typings.weappApi.weappApiStrings.miter = "miter".asInstanceOf[typings.weappApi.weappApiStrings.miter]
+  inline def miter: typings.weappApi.weappApiStrings.miter = "miter".asInstanceOf[typings.weappApi.weappApiStrings.miter]
   
-  @scala.inline
-  def round: typings.weappApi.weappApiStrings.round = "round".asInstanceOf[typings.weappApi.weappApiStrings.round]
+  inline def round: typings.weappApi.weappApiStrings.round = "round".asInstanceOf[typings.weappApi.weappApiStrings.round]
 }

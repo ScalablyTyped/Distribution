@@ -14,8 +14,7 @@ object parameterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def assembleParameterSignals(params: js.Array[Parameter]): js.Array[NewSignal | InitSignal] = ^.asInstanceOf[js.Dynamic].applyDynamic("assembleParameterSignals")(params.asInstanceOf[js.Any]).asInstanceOf[js.Array[NewSignal | InitSignal]]
+  inline def assembleParameterSignals(params: js.Array[Parameter]): js.Array[NewSignal | InitSignal] = ^.asInstanceOf[js.Dynamic].applyDynamic("assembleParameterSignals")(params.asInstanceOf[js.Any]).asInstanceOf[js.Array[NewSignal | InitSignal]]
   
   trait Parameter extends StObject {
     
@@ -48,41 +47,30 @@ object parameterMod {
   }
   object Parameter {
     
-    @scala.inline
-    def apply(name: String): Parameter = {
+    inline def apply(name: String): Parameter = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Parameter]
     }
     
-    @scala.inline
-    implicit class ParameterMutableBuilder[Self <: Parameter] (val x: Self) extends AnyVal {
+    extension [Self <: Parameter](x: Self) {
       
-      @scala.inline
-      def setBind(value: Binding): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
+      inline def setBind(value: Binding): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBindUndefined: Self = StObject.set(x, "bind", js.undefined)
+      inline def setBindUndefined: Self = StObject.set(x, "bind", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setExpr(value: Expr): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
+      inline def setExpr(value: Expr): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExprUndefined: Self = StObject.set(x, "expr", js.undefined)
+      inline def setExprUndefined: Self = StObject.set(x, "expr", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

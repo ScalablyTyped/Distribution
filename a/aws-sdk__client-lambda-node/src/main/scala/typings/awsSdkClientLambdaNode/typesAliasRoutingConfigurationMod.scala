@@ -17,20 +17,16 @@ object typesAliasRoutingConfigurationMod {
   }
   object AliasRoutingConfiguration {
     
-    @scala.inline
-    def apply(): AliasRoutingConfiguration = {
+    inline def apply(): AliasRoutingConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AliasRoutingConfiguration]
     }
     
-    @scala.inline
-    implicit class AliasRoutingConfigurationMutableBuilder[Self <: AliasRoutingConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: AliasRoutingConfiguration](x: Self) {
       
-      @scala.inline
-      def setAdditionalVersionWeights(value: StringDictionary[Double] | (Iterable[js.Tuple2[String, Double]])): Self = StObject.set(x, "AdditionalVersionWeights", value.asInstanceOf[js.Any])
+      inline def setAdditionalVersionWeights(value: StringDictionary[Double] | (Iterable[js.Tuple2[String, Double]])): Self = StObject.set(x, "AdditionalVersionWeights", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalVersionWeightsUndefined: Self = StObject.set(x, "AdditionalVersionWeights", js.undefined)
+      inline def setAdditionalVersionWeightsUndefined: Self = StObject.set(x, "AdditionalVersionWeights", js.undefined)
     }
   }
   
@@ -46,20 +42,16 @@ object typesAliasRoutingConfigurationMod {
   }
   object UnmarshalledAliasRoutingConfiguration {
     
-    @scala.inline
-    def apply(): UnmarshalledAliasRoutingConfiguration = {
+    inline def apply(): UnmarshalledAliasRoutingConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledAliasRoutingConfiguration]
     }
     
-    @scala.inline
-    implicit class UnmarshalledAliasRoutingConfigurationMutableBuilder[Self <: UnmarshalledAliasRoutingConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledAliasRoutingConfiguration](x: Self) {
       
-      @scala.inline
-      def setAdditionalVersionWeights(value: StringDictionary[Double]): Self = StObject.set(x, "AdditionalVersionWeights", value.asInstanceOf[js.Any])
+      inline def setAdditionalVersionWeights(value: StringDictionary[Double]): Self = StObject.set(x, "AdditionalVersionWeights", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalVersionWeightsUndefined: Self = StObject.set(x, "AdditionalVersionWeights", js.undefined)
+      inline def setAdditionalVersionWeightsUndefined: Self = StObject.set(x, "AdditionalVersionWeights", js.undefined)
     }
   }
 }

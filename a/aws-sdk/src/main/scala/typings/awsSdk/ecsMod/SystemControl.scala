@@ -18,25 +18,19 @@ trait SystemControl extends StObject {
 }
 object SystemControl {
   
-  @scala.inline
-  def apply(): SystemControl = {
+  inline def apply(): SystemControl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SystemControl]
   }
   
-  @scala.inline
-  implicit class SystemControlMutableBuilder[Self <: SystemControl] (val x: Self) extends AnyVal {
+  extension [Self <: SystemControl](x: Self) {
     
-    @scala.inline
-    def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+    inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

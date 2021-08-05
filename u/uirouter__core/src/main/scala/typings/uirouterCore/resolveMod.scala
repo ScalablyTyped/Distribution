@@ -15,12 +15,9 @@ object resolveMod {
   @js.native
   val RESOLVE_HOOK_PRIORITY: /* 1000 */ Double = js.native
   
-  @scala.inline
-  def registerEagerResolvePath(transitionService: TransitionService): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("registerEagerResolvePath")(transitionService.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  inline def registerEagerResolvePath(transitionService: TransitionService): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("registerEagerResolvePath")(transitionService.asInstanceOf[js.Any]).asInstanceOf[js.Function]
   
-  @scala.inline
-  def registerLazyResolveState(transitionService: TransitionService): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("registerLazyResolveState")(transitionService.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  inline def registerLazyResolveState(transitionService: TransitionService): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("registerLazyResolveState")(transitionService.asInstanceOf[js.Any]).asInstanceOf[js.Function]
   
-  @scala.inline
-  def registerResolveRemaining(transitionService: TransitionService): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("registerResolveRemaining")(transitionService.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  inline def registerResolveRemaining(transitionService: TransitionService): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("registerResolveRemaining")(transitionService.asInstanceOf[js.Any]).asInstanceOf[js.Function]
 }

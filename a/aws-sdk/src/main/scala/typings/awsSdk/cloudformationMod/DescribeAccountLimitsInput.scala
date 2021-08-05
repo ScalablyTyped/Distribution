@@ -13,19 +13,15 @@ trait DescribeAccountLimitsInput extends StObject {
 }
 object DescribeAccountLimitsInput {
   
-  @scala.inline
-  def apply(): DescribeAccountLimitsInput = {
+  inline def apply(): DescribeAccountLimitsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAccountLimitsInput]
   }
   
-  @scala.inline
-  implicit class DescribeAccountLimitsInputMutableBuilder[Self <: DescribeAccountLimitsInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAccountLimitsInput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

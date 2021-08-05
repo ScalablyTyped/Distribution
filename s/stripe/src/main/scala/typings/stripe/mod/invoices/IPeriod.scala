@@ -18,19 +18,15 @@ trait IPeriod extends StObject {
 }
 object IPeriod {
   
-  @scala.inline
-  def apply(end: Double, start: Double): IPeriod = {
+  inline def apply(end: Double, start: Double): IPeriod = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPeriod]
   }
   
-  @scala.inline
-  implicit class IPeriodMutableBuilder[Self <: IPeriod] (val x: Self) extends AnyVal {
+  extension [Self <: IPeriod](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

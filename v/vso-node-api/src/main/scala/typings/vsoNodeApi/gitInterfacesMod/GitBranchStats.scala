@@ -33,8 +33,7 @@ trait GitBranchStats extends StObject {
 }
 object GitBranchStats {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     aheadCount: Double,
     behindCount: Double,
     commit: GitCommitRef,
@@ -45,22 +44,16 @@ object GitBranchStats {
     __obj.asInstanceOf[GitBranchStats]
   }
   
-  @scala.inline
-  implicit class GitBranchStatsMutableBuilder[Self <: GitBranchStats] (val x: Self) extends AnyVal {
+  extension [Self <: GitBranchStats](x: Self) {
     
-    @scala.inline
-    def setAheadCount(value: Double): Self = StObject.set(x, "aheadCount", value.asInstanceOf[js.Any])
+    inline def setAheadCount(value: Double): Self = StObject.set(x, "aheadCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBehindCount(value: Double): Self = StObject.set(x, "behindCount", value.asInstanceOf[js.Any])
+    inline def setBehindCount(value: Double): Self = StObject.set(x, "behindCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommit(value: GitCommitRef): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+    inline def setCommit(value: GitCommitRef): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsBaseVersion(value: Boolean): Self = StObject.set(x, "isBaseVersion", value.asInstanceOf[js.Any])
+    inline def setIsBaseVersion(value: Boolean): Self = StObject.set(x, "isBaseVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

@@ -11,6 +11,5 @@ object localStorageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def localStorage(): Storage = ^.asInstanceOf[js.Dynamic].applyDynamic("localStorage")().asInstanceOf[Storage]
+  inline def localStorage(): Storage = ^.asInstanceOf[js.Dynamic].applyDynamic("localStorage")().asInstanceOf[Storage]
 }

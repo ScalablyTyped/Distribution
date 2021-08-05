@@ -9,8 +9,7 @@ trait GetAppsInput
      with typings.awsSdkClientPinpointBrowser.typesGetAppsInputMod.GetAppsInput
 object GetAppsInput {
   
-  @scala.inline
-  def apply(): GetAppsInput = {
+  inline def apply(): GetAppsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAppsInput]
   }

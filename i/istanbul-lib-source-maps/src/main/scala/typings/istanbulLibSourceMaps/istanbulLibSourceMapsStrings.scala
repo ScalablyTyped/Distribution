@@ -8,11 +8,9 @@ object istanbulLibSourceMapsStrings {
   
   @js.native
   sealed trait file extends StObject
-  @scala.inline
-  def file: file = "file".asInstanceOf[file]
+  inline def file: file = "file".asInstanceOf[file]
   
   @js.native
   sealed trait memory extends StObject
-  @scala.inline
-  def memory: memory = "memory".asInstanceOf[memory]
+  inline def memory: memory = "memory".asInstanceOf[memory]
 }

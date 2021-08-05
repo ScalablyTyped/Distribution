@@ -10,8 +10,7 @@ trait ScheduleKeyDeletionOutput
      with typings.awsSdkClientKmsNode.typesScheduleKeyDeletionOutputMod.ScheduleKeyDeletionOutput
 object ScheduleKeyDeletionOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): ScheduleKeyDeletionOutput = {
+  inline def apply($metadata: ResponseMetadata): ScheduleKeyDeletionOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScheduleKeyDeletionOutput]
   }

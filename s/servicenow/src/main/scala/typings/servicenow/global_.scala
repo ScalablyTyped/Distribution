@@ -78,10 +78,8 @@ object global_ {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def checkRecord(gr: typings.servicenow.servicenow.GlideRecord, filter: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkRecord")(gr.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def checkRecord(gr: typings.servicenow.servicenow.GlideRecord, filter: String, matchAll: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkRecord")(gr.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], matchAll.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def checkRecord(gr: typings.servicenow.servicenow.GlideRecord, filter: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkRecord")(gr.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def checkRecord(gr: typings.servicenow.servicenow.GlideRecord, filter: String, matchAll: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkRecord")(gr.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], matchAll.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
   object GlideGuid {
@@ -90,8 +88,7 @@ object global_ {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def generate(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")().asInstanceOf[String]
+    inline def generate(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")().asInstanceOf[String]
   }
   
   @JSGlobal("GlideLocale")
@@ -113,8 +110,7 @@ object global_ {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def get(): typings.servicenow.GlideLocale = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[typings.servicenow.GlideLocale]
+    inline def get(): typings.servicenow.GlideLocale = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[typings.servicenow.GlideLocale]
   }
   
   object GlidePluginManager {
@@ -123,8 +119,7 @@ object global_ {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def isActive(pluginId: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isActive")(pluginId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isActive(pluginId: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isActive")(pluginId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -189,17 +184,13 @@ object global_ {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getSecureRandomInt(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecureRandomInt")().asInstanceOf[Double]
+    inline def getSecureRandomInt(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecureRandomInt")().asInstanceOf[Double]
     
-    @scala.inline
-    def getSecureRandomIntBound(bound: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecureRandomIntBound")(bound.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def getSecureRandomIntBound(bound: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecureRandomIntBound")(bound.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @scala.inline
-    def getSecureRandomLong(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecureRandomLong")().asInstanceOf[Double]
+    inline def getSecureRandomLong(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecureRandomLong")().asInstanceOf[Double]
     
-    @scala.inline
-    def getSecureRandomString(length: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecureRandomString")(length.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getSecureRandomString(length: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecureRandomString")(length.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @JSGlobal("GlideSysAttachment")
@@ -283,29 +274,21 @@ object global_ {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getParameterValue(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getParameterValue")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getParameterValue(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getParameterValue")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def getParameters(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getParameters")().asInstanceOf[js.Array[String]]
+    inline def getParameters(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getParameters")().asInstanceOf[js.Array[String]]
     
-    @scala.inline
-    def getReferringURL(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getReferringURL")().asInstanceOf[String]
+    inline def getReferringURL(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getReferringURL")().asInstanceOf[String]
     
-    @scala.inline
-    def getViewID(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getViewID")().asInstanceOf[String]
+    inline def getViewID(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getViewID")().asInstanceOf[String]
     
-    @scala.inline
-    def isDialog(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDialog")().asInstanceOf[Boolean]
+    inline def isDialog(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDialog")().asInstanceOf[Boolean]
     
-    @scala.inline
-    def isHomePage(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHomePage")().asInstanceOf[Boolean]
+    inline def isHomePage(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHomePage")().asInstanceOf[Boolean]
     
-    @scala.inline
-    def isMobile(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMobile")().asInstanceOf[Boolean]
+    inline def isMobile(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMobile")().asInstanceOf[Boolean]
     
-    @scala.inline
-    def isPrint(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPrint")().asInstanceOf[Boolean]
+    inline def isPrint(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPrint")().asInstanceOf[Boolean]
   }
   
   @JSGlobal("XMLDocument2")
@@ -366,8 +349,7 @@ object global_ {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def create(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Any]
+      inline def create(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Any]
     }
     
     object GlideStringUtil {
@@ -376,17 +358,13 @@ object global_ {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def base64Decode(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("base64Decode")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+      inline def base64Decode(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("base64Decode")(value.asInstanceOf[js.Any]).asInstanceOf[String]
       
-      @scala.inline
-      def base64DecodeAsBytes(value: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("base64DecodeAsBytes")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def base64DecodeAsBytes(value: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("base64DecodeAsBytes")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
-      @scala.inline
-      def escapeHTML(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeHTML")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+      inline def escapeHTML(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeHTML")(value.asInstanceOf[js.Any]).asInstanceOf[String]
       
-      @scala.inline
-      def getStringFromStream(stream: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getStringFromStream")(stream.asInstanceOf[js.Any]).asInstanceOf[String]
+      inline def getStringFromStream(stream: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getStringFromStream")(stream.asInstanceOf[js.Any]).asInstanceOf[String]
     }
     
     @JSGlobal("global.Workflow")

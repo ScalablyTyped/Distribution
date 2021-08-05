@@ -14,25 +14,19 @@ trait PartialStyleRulesFormGrou extends StObject {
 }
 object PartialStyleRulesFormGrou {
   
-  @scala.inline
-  def apply(): PartialStyleRulesFormGrou = {
+  inline def apply(): PartialStyleRulesFormGrou = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialStyleRulesFormGrou]
   }
   
-  @scala.inline
-  implicit class PartialStyleRulesFormGrouMutableBuilder[Self <: PartialStyleRulesFormGrou] (val x: Self) extends AnyVal {
+  extension [Self <: PartialStyleRulesFormGrou](x: Self) {
     
-    @scala.inline
-    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setRow(value: CSSProperties): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: CSSProperties): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
+    inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
   }
 }

@@ -82,52 +82,37 @@ trait SchemaWriteLogEntriesRequest extends StObject {
 }
 object SchemaWriteLogEntriesRequest {
   
-  @scala.inline
-  def apply(): SchemaWriteLogEntriesRequest = {
+  inline def apply(): SchemaWriteLogEntriesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaWriteLogEntriesRequest]
   }
   
-  @scala.inline
-  implicit class SchemaWriteLogEntriesRequestMutableBuilder[Self <: SchemaWriteLogEntriesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaWriteLogEntriesRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
     
-    @scala.inline
-    def setEntries(value: js.Array[SchemaLogEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: js.Array[SchemaLogEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
+    inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
-    @scala.inline
-    def setEntriesVarargs(value: SchemaLogEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: SchemaLogEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
     
-    @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setLogName(value: String): Self = StObject.set(x, "logName", value.asInstanceOf[js.Any])
+    inline def setLogName(value: String): Self = StObject.set(x, "logName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogNameUndefined: Self = StObject.set(x, "logName", js.undefined)
+    inline def setLogNameUndefined: Self = StObject.set(x, "logName", js.undefined)
     
-    @scala.inline
-    def setPartialSuccess(value: Boolean): Self = StObject.set(x, "partialSuccess", value.asInstanceOf[js.Any])
+    inline def setPartialSuccess(value: Boolean): Self = StObject.set(x, "partialSuccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartialSuccessUndefined: Self = StObject.set(x, "partialSuccess", js.undefined)
+    inline def setPartialSuccessUndefined: Self = StObject.set(x, "partialSuccess", js.undefined)
     
-    @scala.inline
-    def setResource(value: SchemaMonitoredResource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: SchemaMonitoredResource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
   }
 }

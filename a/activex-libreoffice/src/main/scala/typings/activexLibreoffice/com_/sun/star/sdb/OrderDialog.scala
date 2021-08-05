@@ -21,8 +21,7 @@ trait OrderDialog
 }
 object OrderDialog {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createDefault: () => Unit,
     createWithQuery: (XSingleSelectQueryComposer, XPropertySet) => Unit,
@@ -35,13 +34,10 @@ object OrderDialog {
     __obj.asInstanceOf[OrderDialog]
   }
   
-  @scala.inline
-  implicit class OrderDialogMutableBuilder[Self <: OrderDialog] (val x: Self) extends AnyVal {
+  extension [Self <: OrderDialog](x: Self) {
     
-    @scala.inline
-    def setCreateDefault(value: () => Unit): Self = StObject.set(x, "createDefault", js.Any.fromFunction0(value))
+    inline def setCreateDefault(value: () => Unit): Self = StObject.set(x, "createDefault", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreateWithQuery(value: (XSingleSelectQueryComposer, XPropertySet) => Unit): Self = StObject.set(x, "createWithQuery", js.Any.fromFunction2(value))
+    inline def setCreateWithQuery(value: (XSingleSelectQueryComposer, XPropertySet) => Unit): Self = StObject.set(x, "createWithQuery", js.Any.fromFunction2(value))
   }
 }

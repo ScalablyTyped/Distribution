@@ -11,16 +11,13 @@ trait DataGetResultsType[T] extends StObject {
 }
 object DataGetResultsType {
   
-  @scala.inline
-  def apply[T](data: GetResultsType[T]): DataGetResultsType[T] = {
+  inline def apply[T](data: GetResultsType[T]): DataGetResultsType[T] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataGetResultsType[T]]
   }
   
-  @scala.inline
-  implicit class DataGetResultsTypeMutableBuilder[Self <: DataGetResultsType[?], T] (val x: Self & DataGetResultsType[T]) extends AnyVal {
+  extension [Self <: DataGetResultsType[?], T](x: Self & DataGetResultsType[T]) {
     
-    @scala.inline
-    def setData(value: GetResultsType[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: GetResultsType[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

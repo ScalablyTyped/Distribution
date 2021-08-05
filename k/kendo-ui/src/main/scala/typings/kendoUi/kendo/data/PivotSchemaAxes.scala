@@ -12,19 +12,15 @@ trait PivotSchemaAxes extends StObject {
 }
 object PivotSchemaAxes {
   
-  @scala.inline
-  def apply(columns: PivotSchemaColumnAxis, rows: PivotSchemaRowAxis): PivotSchemaAxes = {
+  inline def apply(columns: PivotSchemaColumnAxis, rows: PivotSchemaRowAxis): PivotSchemaAxes = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotSchemaAxes]
   }
   
-  @scala.inline
-  implicit class PivotSchemaAxesMutableBuilder[Self <: PivotSchemaAxes] (val x: Self) extends AnyVal {
+  extension [Self <: PivotSchemaAxes](x: Self) {
     
-    @scala.inline
-    def setColumns(value: PivotSchemaColumnAxis): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: PivotSchemaColumnAxis): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRows(value: PivotSchemaRowAxis): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: PivotSchemaRowAxis): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
   }
 }

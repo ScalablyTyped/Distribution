@@ -14,14 +14,11 @@ object reprojMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def calculateSourceExtentResolution(sourceProj: default, targetProj: default, targetExtent: Extent, targetResolution: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateSourceExtentResolution")(sourceProj.asInstanceOf[js.Any], targetProj.asInstanceOf[js.Any], targetExtent.asInstanceOf[js.Any], targetResolution.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def calculateSourceExtentResolution(sourceProj: default, targetProj: default, targetExtent: Extent, targetResolution: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateSourceExtentResolution")(sourceProj.asInstanceOf[js.Any], targetProj.asInstanceOf[js.Any], targetExtent.asInstanceOf[js.Any], targetResolution.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def calculateSourceResolution(sourceProj: default, targetProj: default, targetCenter: Coordinate, targetResolution: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateSourceResolution")(sourceProj.asInstanceOf[js.Any], targetProj.asInstanceOf[js.Any], targetCenter.asInstanceOf[js.Any], targetResolution.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def calculateSourceResolution(sourceProj: default, targetProj: default, targetCenter: Coordinate, targetResolution: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateSourceResolution")(sourceProj.asInstanceOf[js.Any], targetProj.asInstanceOf[js.Any], targetCenter.asInstanceOf[js.Any], targetResolution.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def render(
+  inline def render(
     width: Double,
     height: Double,
     pixelRatio: Double,
@@ -33,8 +30,7 @@ object reprojMod {
     sources: js.Array[js.Any],
     gutter: Double
   ): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], pixelRatio.asInstanceOf[js.Any], sourceResolution.asInstanceOf[js.Any], sourceExtent.asInstanceOf[js.Any], targetResolution.asInstanceOf[js.Any], targetExtent.asInstanceOf[js.Any], triangulation.asInstanceOf[js.Any], sources.asInstanceOf[js.Any], gutter.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
-  @scala.inline
-  def render(
+  inline def render(
     width: Double,
     height: Double,
     pixelRatio: Double,
@@ -47,8 +43,7 @@ object reprojMod {
     gutter: Double,
     opt_renderEdges: Boolean
   ): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], pixelRatio.asInstanceOf[js.Any], sourceResolution.asInstanceOf[js.Any], sourceExtent.asInstanceOf[js.Any], targetResolution.asInstanceOf[js.Any], targetExtent.asInstanceOf[js.Any], triangulation.asInstanceOf[js.Any], sources.asInstanceOf[js.Any], gutter.asInstanceOf[js.Any], opt_renderEdges.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
-  @scala.inline
-  def render(
+  inline def render(
     width: Double,
     height: Double,
     pixelRatio: Double,
@@ -62,8 +57,7 @@ object reprojMod {
     opt_renderEdges: Boolean,
     opt_contextOptions: js.Any
   ): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], pixelRatio.asInstanceOf[js.Any], sourceResolution.asInstanceOf[js.Any], sourceExtent.asInstanceOf[js.Any], targetResolution.asInstanceOf[js.Any], targetExtent.asInstanceOf[js.Any], triangulation.asInstanceOf[js.Any], sources.asInstanceOf[js.Any], gutter.asInstanceOf[js.Any], opt_renderEdges.asInstanceOf[js.Any], opt_contextOptions.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
-  @scala.inline
-  def render(
+  inline def render(
     width: Double,
     height: Double,
     pixelRatio: Double,

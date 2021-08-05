@@ -10,16 +10,13 @@ trait IGeographicRegionFactory extends StObject {
 }
 object IGeographicRegionFactory {
   
-  @scala.inline
-  def apply(createGeographicRegion: String => GeographicRegion): IGeographicRegionFactory = {
+  inline def apply(createGeographicRegion: String => GeographicRegion): IGeographicRegionFactory = {
     val __obj = js.Dynamic.literal(createGeographicRegion = js.Any.fromFunction1(createGeographicRegion))
     __obj.asInstanceOf[IGeographicRegionFactory]
   }
   
-  @scala.inline
-  implicit class IGeographicRegionFactoryMutableBuilder[Self <: IGeographicRegionFactory] (val x: Self) extends AnyVal {
+  extension [Self <: IGeographicRegionFactory](x: Self) {
     
-    @scala.inline
-    def setCreateGeographicRegion(value: String => GeographicRegion): Self = StObject.set(x, "createGeographicRegion", js.Any.fromFunction1(value))
+    inline def setCreateGeographicRegion(value: String => GeographicRegion): Self = StObject.set(x, "createGeographicRegion", js.Any.fromFunction1(value))
   }
 }

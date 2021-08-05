@@ -18,25 +18,19 @@ trait GoogleCloudSaasacceleratorManagementProvidersV1ProvisionedResource extends
 }
 object GoogleCloudSaasacceleratorManagementProvidersV1ProvisionedResource {
   
-  @scala.inline
-  def apply(): GoogleCloudSaasacceleratorManagementProvidersV1ProvisionedResource = {
+  inline def apply(): GoogleCloudSaasacceleratorManagementProvidersV1ProvisionedResource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudSaasacceleratorManagementProvidersV1ProvisionedResource]
   }
   
-  @scala.inline
-  implicit class GoogleCloudSaasacceleratorManagementProvidersV1ProvisionedResourceMutableBuilder[Self <: GoogleCloudSaasacceleratorManagementProvidersV1ProvisionedResource] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudSaasacceleratorManagementProvidersV1ProvisionedResource](x: Self) {
     
-    @scala.inline
-    def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
     
-    @scala.inline
-    def setResourceUrl(value: String): Self = StObject.set(x, "resourceUrl", value.asInstanceOf[js.Any])
+    inline def setResourceUrl(value: String): Self = StObject.set(x, "resourceUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUrlUndefined: Self = StObject.set(x, "resourceUrl", js.undefined)
+    inline def setResourceUrlUndefined: Self = StObject.set(x, "resourceUrl", js.undefined)
   }
 }

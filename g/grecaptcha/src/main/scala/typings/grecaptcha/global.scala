@@ -10,6 +10,5 @@ object global {
   @JSGlobal("grecaptcha")
   @js.native
   def grecaptcha: ReCaptcha = js.native
-  @scala.inline
-  def grecaptcha_=(x: ReCaptcha): Unit = js.Dynamic.global.updateDynamic("grecaptcha")(x.asInstanceOf[js.Any])
+  inline def grecaptcha_=(x: ReCaptcha): Unit = js.Dynamic.global.updateDynamic("grecaptcha")(x.asInstanceOf[js.Any])
 }

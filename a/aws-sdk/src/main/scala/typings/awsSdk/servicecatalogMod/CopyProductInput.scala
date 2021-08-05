@@ -43,55 +43,39 @@ trait CopyProductInput extends StObject {
 }
 object CopyProductInput {
   
-  @scala.inline
-  def apply(IdempotencyToken: IdempotencyToken, SourceProductArn: ProductArn): CopyProductInput = {
+  inline def apply(IdempotencyToken: IdempotencyToken, SourceProductArn: ProductArn): CopyProductInput = {
     val __obj = js.Dynamic.literal(IdempotencyToken = IdempotencyToken.asInstanceOf[js.Any], SourceProductArn = SourceProductArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyProductInput]
   }
   
-  @scala.inline
-  implicit class CopyProductInputMutableBuilder[Self <: CopyProductInput] (val x: Self) extends AnyVal {
+  extension [Self <: CopyProductInput](x: Self) {
     
-    @scala.inline
-    def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
+    inline def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptLanguageUndefined: Self = StObject.set(x, "AcceptLanguage", js.undefined)
+    inline def setAcceptLanguageUndefined: Self = StObject.set(x, "AcceptLanguage", js.undefined)
     
-    @scala.inline
-    def setCopyOptions(value: CopyOptions): Self = StObject.set(x, "CopyOptions", value.asInstanceOf[js.Any])
+    inline def setCopyOptions(value: CopyOptions): Self = StObject.set(x, "CopyOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyOptionsUndefined: Self = StObject.set(x, "CopyOptions", js.undefined)
+    inline def setCopyOptionsUndefined: Self = StObject.set(x, "CopyOptions", js.undefined)
     
-    @scala.inline
-    def setCopyOptionsVarargs(value: CopyOption*): Self = StObject.set(x, "CopyOptions", js.Array(value :_*))
+    inline def setCopyOptionsVarargs(value: CopyOption*): Self = StObject.set(x, "CopyOptions", js.Array(value :_*))
     
-    @scala.inline
-    def setIdempotencyToken(value: IdempotencyToken): Self = StObject.set(x, "IdempotencyToken", value.asInstanceOf[js.Any])
+    inline def setIdempotencyToken(value: IdempotencyToken): Self = StObject.set(x, "IdempotencyToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceProductArn(value: ProductArn): Self = StObject.set(x, "SourceProductArn", value.asInstanceOf[js.Any])
+    inline def setSourceProductArn(value: ProductArn): Self = StObject.set(x, "SourceProductArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceProvisioningArtifactIdentifiers(value: SourceProvisioningArtifactProperties): Self = StObject.set(x, "SourceProvisioningArtifactIdentifiers", value.asInstanceOf[js.Any])
+    inline def setSourceProvisioningArtifactIdentifiers(value: SourceProvisioningArtifactProperties): Self = StObject.set(x, "SourceProvisioningArtifactIdentifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceProvisioningArtifactIdentifiersUndefined: Self = StObject.set(x, "SourceProvisioningArtifactIdentifiers", js.undefined)
+    inline def setSourceProvisioningArtifactIdentifiersUndefined: Self = StObject.set(x, "SourceProvisioningArtifactIdentifiers", js.undefined)
     
-    @scala.inline
-    def setSourceProvisioningArtifactIdentifiersVarargs(value: SourceProvisioningArtifactPropertiesMap*): Self = StObject.set(x, "SourceProvisioningArtifactIdentifiers", js.Array(value :_*))
+    inline def setSourceProvisioningArtifactIdentifiersVarargs(value: SourceProvisioningArtifactPropertiesMap*): Self = StObject.set(x, "SourceProvisioningArtifactIdentifiers", js.Array(value :_*))
     
-    @scala.inline
-    def setTargetProductId(value: Id): Self = StObject.set(x, "TargetProductId", value.asInstanceOf[js.Any])
+    inline def setTargetProductId(value: Id): Self = StObject.set(x, "TargetProductId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetProductIdUndefined: Self = StObject.set(x, "TargetProductId", js.undefined)
+    inline def setTargetProductIdUndefined: Self = StObject.set(x, "TargetProductId", js.undefined)
     
-    @scala.inline
-    def setTargetProductName(value: ProductViewName): Self = StObject.set(x, "TargetProductName", value.asInstanceOf[js.Any])
+    inline def setTargetProductName(value: ProductViewName): Self = StObject.set(x, "TargetProductName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetProductNameUndefined: Self = StObject.set(x, "TargetProductName", js.undefined)
+    inline def setTargetProductNameUndefined: Self = StObject.set(x, "TargetProductName", js.undefined)
   }
 }

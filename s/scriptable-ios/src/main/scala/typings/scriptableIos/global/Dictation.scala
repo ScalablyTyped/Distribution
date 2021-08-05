@@ -22,8 +22,6 @@ object Dictation {
     * device.
     * @see https://docs.scriptable.app/dictation/#start
     */
-  @scala.inline
-  def start(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("start")().asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def start(locale: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(locale.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def start(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("start")().asInstanceOf[js.Promise[String]]
+  inline def start(locale: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(locale.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
 }

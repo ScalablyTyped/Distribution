@@ -10,19 +10,15 @@ trait Outlinecolor extends StObject {
 }
 object Outlinecolor {
   
-  @scala.inline
-  def apply(outlinecolor: typings.plotlyJs.mod.Color): Outlinecolor = {
+  inline def apply(outlinecolor: typings.plotlyJs.mod.Color): Outlinecolor = {
     val __obj = js.Dynamic.literal(outlinecolor = outlinecolor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Outlinecolor]
   }
   
-  @scala.inline
-  implicit class OutlinecolorMutableBuilder[Self <: Outlinecolor] (val x: Self) extends AnyVal {
+  extension [Self <: Outlinecolor](x: Self) {
     
-    @scala.inline
-    def setOutlinecolor(value: typings.plotlyJs.mod.Color): Self = StObject.set(x, "outlinecolor", value.asInstanceOf[js.Any])
+    inline def setOutlinecolor(value: typings.plotlyJs.mod.Color): Self = StObject.set(x, "outlinecolor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlinecolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "outlinecolor", js.Array(value :_*))
+    inline def setOutlinecolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "outlinecolor", js.Array(value :_*))
   }
 }

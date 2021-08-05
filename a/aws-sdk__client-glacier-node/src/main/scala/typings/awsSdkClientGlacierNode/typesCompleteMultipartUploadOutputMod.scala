@@ -35,35 +35,26 @@ object typesCompleteMultipartUploadOutputMod {
   }
   object CompleteMultipartUploadOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): CompleteMultipartUploadOutput = {
+    inline def apply($metadata: ResponseMetadata): CompleteMultipartUploadOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[CompleteMultipartUploadOutput]
     }
     
-    @scala.inline
-    implicit class CompleteMultipartUploadOutputMutableBuilder[Self <: CompleteMultipartUploadOutput] (val x: Self) extends AnyVal {
+    extension [Self <: CompleteMultipartUploadOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArchiveId(value: String): Self = StObject.set(x, "archiveId", value.asInstanceOf[js.Any])
+      inline def setArchiveId(value: String): Self = StObject.set(x, "archiveId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArchiveIdUndefined: Self = StObject.set(x, "archiveId", js.undefined)
+      inline def setArchiveIdUndefined: Self = StObject.set(x, "archiveId", js.undefined)
       
-      @scala.inline
-      def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
+      inline def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
+      inline def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
       
-      @scala.inline
-      def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     }
   }
 }

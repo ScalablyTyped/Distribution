@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PrintBase extends StObject
 object PrintBase {
   
-  @scala.inline
-  def brim: typings.ipp.ippStrings.brim = "brim".asInstanceOf[typings.ipp.ippStrings.brim]
+  inline def brim: typings.ipp.ippStrings.brim = "brim".asInstanceOf[typings.ipp.ippStrings.brim]
   
-  @scala.inline
-  def none: typings.ipp.ippStrings.none = "none".asInstanceOf[typings.ipp.ippStrings.none]
+  inline def none: typings.ipp.ippStrings.none = "none".asInstanceOf[typings.ipp.ippStrings.none]
   
-  @scala.inline
-  def raft: typings.ipp.ippStrings.raft = "raft".asInstanceOf[typings.ipp.ippStrings.raft]
+  inline def raft: typings.ipp.ippStrings.raft = "raft".asInstanceOf[typings.ipp.ippStrings.raft]
   
-  @scala.inline
-  def skirt: typings.ipp.ippStrings.skirt = "skirt".asInstanceOf[typings.ipp.ippStrings.skirt]
+  inline def skirt: typings.ipp.ippStrings.skirt = "skirt".asInstanceOf[typings.ipp.ippStrings.skirt]
   
-  @scala.inline
-  def standard: typings.ipp.ippStrings.standard = "standard".asInstanceOf[typings.ipp.ippStrings.standard]
+  inline def standard: typings.ipp.ippStrings.standard = "standard".asInstanceOf[typings.ipp.ippStrings.standard]
 }

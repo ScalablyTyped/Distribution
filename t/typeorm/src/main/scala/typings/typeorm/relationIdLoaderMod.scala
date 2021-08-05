@@ -20,12 +20,12 @@ object relationIdLoaderMod {
       relationIdAttributes: js.Array[RelationIdAttribute]
     ) = this()
     
-    var connection: Connection = js.native
+    /* protected */ var connection: Connection = js.native
     
     def load(rawEntities: js.Array[js.Any]): js.Promise[js.Array[RelationIdLoadResult]] = js.native
     
-    var queryRunner: js.UndefOr[QueryRunner] = js.native
+    /* protected */ var queryRunner: js.UndefOr[QueryRunner] = js.native
     
-    var relationIdAttributes: js.Array[RelationIdAttribute] = js.native
+    /* protected */ var relationIdAttributes: js.Array[RelationIdAttribute] = js.native
   }
 }

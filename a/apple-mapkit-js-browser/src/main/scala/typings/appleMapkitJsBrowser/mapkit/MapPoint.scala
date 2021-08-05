@@ -40,8 +40,7 @@ trait MapPoint extends StObject {
 }
 object MapPoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     copy: () => MapPoint,
     equals_ : MapPoint => Boolean,
     toCoordinate: () => Coordinate,
@@ -53,22 +52,16 @@ object MapPoint {
     __obj.asInstanceOf[MapPoint]
   }
   
-  @scala.inline
-  implicit class MapPointMutableBuilder[Self <: MapPoint] (val x: Self) extends AnyVal {
+  extension [Self <: MapPoint](x: Self) {
     
-    @scala.inline
-    def setCopy(value: () => MapPoint): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
+    inline def setCopy(value: () => MapPoint): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEquals_(value: MapPoint => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+    inline def setEquals_(value: MapPoint => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToCoordinate(value: () => Coordinate): Self = StObject.set(x, "toCoordinate", js.Any.fromFunction0(value))
+    inline def setToCoordinate(value: () => Coordinate): Self = StObject.set(x, "toCoordinate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

@@ -34,8 +34,7 @@ trait ISurveyElement extends StObject {
 }
 object ISurveyElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     containsErrors: Boolean,
     delete: () => js.Any,
     getType: () => String,
@@ -54,46 +53,32 @@ object ISurveyElement {
     __obj.asInstanceOf[ISurveyElement]
   }
   
-  @scala.inline
-  implicit class ISurveyElementMutableBuilder[Self <: ISurveyElement] (val x: Self) extends AnyVal {
+  extension [Self <: ISurveyElement](x: Self) {
     
-    @scala.inline
-    def setContainsErrors(value: Boolean): Self = StObject.set(x, "containsErrors", value.asInstanceOf[js.Any])
+    inline def setContainsErrors(value: Boolean): Self = StObject.set(x, "containsErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => js.Any): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => js.Any): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetType(value: () => String): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+    inline def setGetType(value: () => String): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsPage(value: Boolean): Self = StObject.set(x, "isPage", value.asInstanceOf[js.Any])
+    inline def setIsPage(value: Boolean): Self = StObject.set(x, "isPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPanel(value: Boolean): Self = StObject.set(x, "isPanel", value.asInstanceOf[js.Any])
+    inline def setIsPanel(value: Boolean): Self = StObject.set(x, "isPanel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsReadOnly(value: Boolean): Self = StObject.set(x, "isReadOnly", value.asInstanceOf[js.Any])
+    inline def setIsReadOnly(value: Boolean): Self = StObject.set(x, "isReadOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
+    inline def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocStrsChanged(value: () => js.Any): Self = StObject.set(x, "locStrsChanged", js.Any.fromFunction0(value))
+    inline def setLocStrsChanged(value: () => js.Any): Self = StObject.set(x, "locStrsChanged", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnFirstRendering(value: () => js.Any): Self = StObject.set(x, "onFirstRendering", js.Any.fromFunction0(value))
+    inline def setOnFirstRendering(value: () => js.Any): Self = StObject.set(x, "onFirstRendering", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnSurveyLoad(value: () => js.Any): Self = StObject.set(x, "onSurveyLoad", js.Any.fromFunction0(value))
+    inline def setOnSurveyLoad(value: () => js.Any): Self = StObject.set(x, "onSurveyLoad", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetSurveyImpl(value: ISurveyImpl => js.Any): Self = StObject.set(x, "setSurveyImpl", js.Any.fromFunction1(value))
+    inline def setSetSurveyImpl(value: ISurveyImpl => js.Any): Self = StObject.set(x, "setSurveyImpl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetVisibleIndex(value: Double => Double): Self = StObject.set(x, "setVisibleIndex", js.Any.fromFunction1(value))
+    inline def setSetVisibleIndex(value: Double => Double): Self = StObject.set(x, "setVisibleIndex", js.Any.fromFunction1(value))
   }
 }

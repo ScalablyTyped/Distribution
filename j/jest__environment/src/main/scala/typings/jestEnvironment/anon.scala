@@ -29,20 +29,16 @@ object anon {
   }
   object Virtual {
     
-    @scala.inline
-    def apply(): Virtual = {
+    inline def apply(): Virtual = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Virtual]
     }
     
-    @scala.inline
-    implicit class VirtualMutableBuilder[Self <: Virtual] (val x: Self) extends AnyVal {
+    extension [Self <: Virtual](x: Self) {
       
-      @scala.inline
-      def setVirtual(value: Boolean): Self = StObject.set(x, "virtual", value.asInstanceOf[js.Any])
+      inline def setVirtual(value: Boolean): Self = StObject.set(x, "virtual", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualUndefined: Self = StObject.set(x, "virtual", js.undefined)
+      inline def setVirtualUndefined: Self = StObject.set(x, "virtual", js.undefined)
     }
   }
 }

@@ -19,58 +19,58 @@ object decoderMod {
     def this(db: Buffer, baseOffset: Double, cache: Cache) = this()
     def this(db: Buffer, baseOffset: Unit, cache: Cache) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var baseOffset: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var cache: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var db: js.Any = js.native
     
     /* CompleteClass */
     override def decode(offset: Double): Cursor = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var decodeArray: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var decodeBigUint: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var decodeBoolean: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var decodeByType: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var decodeBytes: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var decodeDouble: js.Any = js.native
     
     /* CompleteClass */
     override def decodeFast(offset: Double): js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var decodeFloat: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var decodeInt32: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var decodeMap: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var decodePointer: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var decodeString: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var decodeUint: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var sizeFromCtrlByte: js.Any = js.native
     
     /* CompleteClass */
@@ -85,67 +85,62 @@ object decoderMod {
   }
   object Cursor {
     
-    @scala.inline
-    def apply(offset: Double, value: js.Any): Cursor = {
+    inline def apply(offset: Double, value: js.Any): Cursor = {
       val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Cursor]
     }
     
-    @scala.inline
-    implicit class CursorMutableBuilder[Self <: Cursor] (val x: Self) extends AnyVal {
+    extension [Self <: Cursor](x: Self) {
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
   trait Decoder extends StObject {
     
-    var baseOffset: js.Any
+    /* private */ var baseOffset: js.Any
     
-    var cache: js.Any
+    /* private */ var cache: js.Any
     
-    var db: js.Any
+    /* private */ var db: js.Any
     
     def decode(offset: Double): Cursor
     
-    var decodeArray: js.Any
+    /* private */ var decodeArray: js.Any
     
-    var decodeBigUint: js.Any
+    /* private */ var decodeBigUint: js.Any
     
-    var decodeBoolean: js.Any
+    /* private */ var decodeBoolean: js.Any
     
-    var decodeByType: js.Any
+    /* private */ var decodeByType: js.Any
     
-    var decodeBytes: js.Any
+    /* private */ var decodeBytes: js.Any
     
-    var decodeDouble: js.Any
+    /* private */ var decodeDouble: js.Any
     
     def decodeFast(offset: Double): js.Any
     
-    var decodeFloat: js.Any
+    /* private */ var decodeFloat: js.Any
     
-    var decodeInt32: js.Any
+    /* private */ var decodeInt32: js.Any
     
-    var decodeMap: js.Any
+    /* private */ var decodeMap: js.Any
     
-    var decodePointer: js.Any
+    /* private */ var decodePointer: js.Any
     
-    var decodeString: js.Any
+    /* private */ var decodeString: js.Any
     
-    var decodeUint: js.Any
+    /* private */ var decodeUint: js.Any
     
-    var sizeFromCtrlByte: js.Any
+    /* private */ var sizeFromCtrlByte: js.Any
     
     var telemetry: Record[String, js.Any]
   }
   object Decoder {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       baseOffset: js.Any,
       cache: js.Any,
       db: js.Any,
@@ -170,65 +165,45 @@ object decoderMod {
       __obj.asInstanceOf[Decoder]
     }
     
-    @scala.inline
-    implicit class DecoderMutableBuilder[Self <: Decoder] (val x: Self) extends AnyVal {
+    extension [Self <: Decoder](x: Self) {
       
-      @scala.inline
-      def setBaseOffset(value: js.Any): Self = StObject.set(x, "baseOffset", value.asInstanceOf[js.Any])
+      inline def setBaseOffset(value: js.Any): Self = StObject.set(x, "baseOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCache(value: js.Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: js.Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDb(value: js.Any): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
+      inline def setDb(value: js.Any): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecode(value: Double => Cursor): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
+      inline def setDecode(value: Double => Cursor): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDecodeArray(value: js.Any): Self = StObject.set(x, "decodeArray", value.asInstanceOf[js.Any])
+      inline def setDecodeArray(value: js.Any): Self = StObject.set(x, "decodeArray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecodeBigUint(value: js.Any): Self = StObject.set(x, "decodeBigUint", value.asInstanceOf[js.Any])
+      inline def setDecodeBigUint(value: js.Any): Self = StObject.set(x, "decodeBigUint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecodeBoolean(value: js.Any): Self = StObject.set(x, "decodeBoolean", value.asInstanceOf[js.Any])
+      inline def setDecodeBoolean(value: js.Any): Self = StObject.set(x, "decodeBoolean", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecodeByType(value: js.Any): Self = StObject.set(x, "decodeByType", value.asInstanceOf[js.Any])
+      inline def setDecodeByType(value: js.Any): Self = StObject.set(x, "decodeByType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecodeBytes(value: js.Any): Self = StObject.set(x, "decodeBytes", value.asInstanceOf[js.Any])
+      inline def setDecodeBytes(value: js.Any): Self = StObject.set(x, "decodeBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecodeDouble(value: js.Any): Self = StObject.set(x, "decodeDouble", value.asInstanceOf[js.Any])
+      inline def setDecodeDouble(value: js.Any): Self = StObject.set(x, "decodeDouble", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecodeFast(value: Double => js.Any): Self = StObject.set(x, "decodeFast", js.Any.fromFunction1(value))
+      inline def setDecodeFast(value: Double => js.Any): Self = StObject.set(x, "decodeFast", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDecodeFloat(value: js.Any): Self = StObject.set(x, "decodeFloat", value.asInstanceOf[js.Any])
+      inline def setDecodeFloat(value: js.Any): Self = StObject.set(x, "decodeFloat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecodeInt32(value: js.Any): Self = StObject.set(x, "decodeInt32", value.asInstanceOf[js.Any])
+      inline def setDecodeInt32(value: js.Any): Self = StObject.set(x, "decodeInt32", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecodeMap(value: js.Any): Self = StObject.set(x, "decodeMap", value.asInstanceOf[js.Any])
+      inline def setDecodeMap(value: js.Any): Self = StObject.set(x, "decodeMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecodePointer(value: js.Any): Self = StObject.set(x, "decodePointer", value.asInstanceOf[js.Any])
+      inline def setDecodePointer(value: js.Any): Self = StObject.set(x, "decodePointer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecodeString(value: js.Any): Self = StObject.set(x, "decodeString", value.asInstanceOf[js.Any])
+      inline def setDecodeString(value: js.Any): Self = StObject.set(x, "decodeString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecodeUint(value: js.Any): Self = StObject.set(x, "decodeUint", value.asInstanceOf[js.Any])
+      inline def setDecodeUint(value: js.Any): Self = StObject.set(x, "decodeUint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeFromCtrlByte(value: js.Any): Self = StObject.set(x, "sizeFromCtrlByte", value.asInstanceOf[js.Any])
+      inline def setSizeFromCtrlByte(value: js.Any): Self = StObject.set(x, "sizeFromCtrlByte", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTelemetry(value: Record[String, js.Any]): Self = StObject.set(x, "telemetry", value.asInstanceOf[js.Any])
+      inline def setTelemetry(value: Record[String, js.Any]): Self = StObject.set(x, "telemetry", value.asInstanceOf[js.Any])
     }
   }
 }

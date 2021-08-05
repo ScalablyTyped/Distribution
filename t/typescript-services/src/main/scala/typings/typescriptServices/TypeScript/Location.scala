@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Location extends StObject {
   
-  var _fileName: js.Any
+  /* private */ var _fileName: js.Any
   
-  var _length: js.Any
+  /* private */ var _length: js.Any
   
-  var _lineMap: js.Any
+  /* private */ var _lineMap: js.Any
   
-  var _start: js.Any
+  /* private */ var _start: js.Any
   
   def character(): Double
   
@@ -28,8 +28,7 @@ trait Location extends StObject {
 }
 object Location {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _fileName: js.Any,
     _length: js.Any,
     _lineMap: js.Any,
@@ -45,37 +44,26 @@ object Location {
     __obj.asInstanceOf[Location]
   }
   
-  @scala.inline
-  implicit class LocationMutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
+  extension [Self <: Location](x: Self) {
     
-    @scala.inline
-    def setCharacter(value: () => Double): Self = StObject.set(x, "character", js.Any.fromFunction0(value))
+    inline def setCharacter(value: () => Double): Self = StObject.set(x, "character", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFileName(value: () => String): Self = StObject.set(x, "fileName", js.Any.fromFunction0(value))
+    inline def setFileName(value: () => String): Self = StObject.set(x, "fileName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLength(value: () => Double): Self = StObject.set(x, "length", js.Any.fromFunction0(value))
+    inline def setLength(value: () => Double): Self = StObject.set(x, "length", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLine(value: () => Double): Self = StObject.set(x, "line", js.Any.fromFunction0(value))
+    inline def setLine(value: () => Double): Self = StObject.set(x, "line", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLineMap(value: () => LineMap): Self = StObject.set(x, "lineMap", js.Any.fromFunction0(value))
+    inline def setLineMap(value: () => LineMap): Self = StObject.set(x, "lineMap", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStart(value: () => Double): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+    inline def setStart(value: () => Double): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def set_fileName(value: js.Any): Self = StObject.set(x, "_fileName", value.asInstanceOf[js.Any])
+    inline def set_fileName(value: js.Any): Self = StObject.set(x, "_fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_length(value: js.Any): Self = StObject.set(x, "_length", value.asInstanceOf[js.Any])
+    inline def set_length(value: js.Any): Self = StObject.set(x, "_length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_lineMap(value: js.Any): Self = StObject.set(x, "_lineMap", value.asInstanceOf[js.Any])
+    inline def set_lineMap(value: js.Any): Self = StObject.set(x, "_lineMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_start(value: js.Any): Self = StObject.set(x, "_start", value.asInstanceOf[js.Any])
+    inline def set_start(value: js.Any): Self = StObject.set(x, "_start", value.asInstanceOf[js.Any])
   }
 }

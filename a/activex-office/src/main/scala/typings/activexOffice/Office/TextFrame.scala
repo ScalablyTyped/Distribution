@@ -18,7 +18,7 @@ trait TextFrame extends StObject {
   
   var MarginTop: Double
   
-  @JSName("Office.TextFrame_typekey")
+  /* private */ @JSName("Office.TextFrame_typekey")
   var OfficeDotTextFrame_typekey: TextFrame
   
   var Orientation: MsoTextOrientation
@@ -27,8 +27,7 @@ trait TextFrame extends StObject {
 }
 object TextFrame {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Creator: Double,
     MarginBottom: Double,
@@ -44,34 +43,24 @@ object TextFrame {
     __obj.asInstanceOf[TextFrame]
   }
   
-  @scala.inline
-  implicit class TextFrameMutableBuilder[Self <: TextFrame] (val x: Self) extends AnyVal {
+  extension [Self <: TextFrame](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginBottom(value: Double): Self = StObject.set(x, "MarginBottom", value.asInstanceOf[js.Any])
+    inline def setMarginBottom(value: Double): Self = StObject.set(x, "MarginBottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginLeft(value: Double): Self = StObject.set(x, "MarginLeft", value.asInstanceOf[js.Any])
+    inline def setMarginLeft(value: Double): Self = StObject.set(x, "MarginLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginRight(value: Double): Self = StObject.set(x, "MarginRight", value.asInstanceOf[js.Any])
+    inline def setMarginRight(value: Double): Self = StObject.set(x, "MarginRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginTop(value: Double): Self = StObject.set(x, "MarginTop", value.asInstanceOf[js.Any])
+    inline def setMarginTop(value: Double): Self = StObject.set(x, "MarginTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotTextFrame_typekey(value: TextFrame): Self = StObject.set(x, "Office.TextFrame_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotTextFrame_typekey(value: TextFrame): Self = StObject.set(x, "Office.TextFrame_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientation(value: MsoTextOrientation): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: MsoTextOrientation): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
   }
 }

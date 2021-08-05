@@ -14,22 +14,17 @@ trait RegimesView
 }
 object RegimesView {
   
-  @scala.inline
-  def apply(): RegimesView = {
+  inline def apply(): RegimesView = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegimesView]
   }
   
-  @scala.inline
-  implicit class RegimesViewMutableBuilder[Self <: RegimesView] (val x: Self) extends AnyVal {
+  extension [Self <: RegimesView](x: Self) {
     
-    @scala.inline
-    def setMetric_name(value: js.Array[Active]): Self = StObject.set(x, "metric_name", value.asInstanceOf[js.Any])
+    inline def setMetric_name(value: js.Array[Active]): Self = StObject.set(x, "metric_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetric_nameUndefined: Self = StObject.set(x, "metric_name", js.undefined)
+    inline def setMetric_nameUndefined: Self = StObject.set(x, "metric_name", js.undefined)
     
-    @scala.inline
-    def setMetric_nameVarargs(value: Active*): Self = StObject.set(x, "metric_name", js.Array(value :_*))
+    inline def setMetric_nameVarargs(value: Active*): Self = StObject.set(x, "metric_name", js.Array(value :_*))
   }
 }

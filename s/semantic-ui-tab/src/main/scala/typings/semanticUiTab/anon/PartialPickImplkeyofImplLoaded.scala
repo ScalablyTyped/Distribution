@@ -15,31 +15,23 @@ trait PartialPickImplkeyofImplLoaded extends StObject {
 }
 object PartialPickImplkeyofImplLoaded {
   
-  @scala.inline
-  def apply(): PartialPickImplkeyofImplLoaded = {
+  inline def apply(): PartialPickImplkeyofImplLoaded = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPickImplkeyofImplLoaded]
   }
   
-  @scala.inline
-  implicit class PartialPickImplkeyofImplLoadedMutableBuilder[Self <: PartialPickImplkeyofImplLoaded] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPickImplkeyofImplLoaded](x: Self) {
     
-    @scala.inline
-    def setLoaded(value: String): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+    inline def setLoaded(value: String): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
+    inline def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
     
-    @scala.inline
-    def setPromise(value: String): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+    inline def setPromise(value: String): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
+    inline def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
     
-    @scala.inline
-    def setTab(value: String): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
+    inline def setTab(value: String): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabUndefined: Self = StObject.set(x, "tab", js.undefined)
+    inline def setTabUndefined: Self = StObject.set(x, "tab", js.undefined)
   }
 }

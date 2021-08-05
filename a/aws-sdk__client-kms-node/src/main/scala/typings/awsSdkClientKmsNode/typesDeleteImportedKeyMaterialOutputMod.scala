@@ -20,17 +20,14 @@ object typesDeleteImportedKeyMaterialOutputMod {
   }
   object DeleteImportedKeyMaterialOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): DeleteImportedKeyMaterialOutput = {
+    inline def apply($metadata: ResponseMetadata): DeleteImportedKeyMaterialOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteImportedKeyMaterialOutput]
     }
     
-    @scala.inline
-    implicit class DeleteImportedKeyMaterialOutputMutableBuilder[Self <: DeleteImportedKeyMaterialOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteImportedKeyMaterialOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }
   }
 }

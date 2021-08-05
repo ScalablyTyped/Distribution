@@ -14,28 +14,21 @@ trait DataSourceFilters
 }
 object DataSourceFilters {
   
-  @scala.inline
-  def apply(): DataSourceFilters = {
+  inline def apply(): DataSourceFilters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSourceFilters]
   }
   
-  @scala.inline
-  implicit class DataSourceFiltersMutableBuilder[Self <: DataSourceFilters] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceFilters](x: Self) {
     
-    @scala.inline
-    def setFilters(value: js.Array[DataSourceFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: js.Array[DataSourceFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: DataSourceFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: DataSourceFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
-    @scala.inline
-    def setLogic(value: String): Self = StObject.set(x, "logic", value.asInstanceOf[js.Any])
+    inline def setLogic(value: String): Self = StObject.set(x, "logic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogicUndefined: Self = StObject.set(x, "logic", js.undefined)
+    inline def setLogicUndefined: Self = StObject.set(x, "logic", js.undefined)
   }
 }

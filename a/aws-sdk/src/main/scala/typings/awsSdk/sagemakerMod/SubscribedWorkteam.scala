@@ -33,40 +33,29 @@ trait SubscribedWorkteam extends StObject {
 }
 object SubscribedWorkteam {
   
-  @scala.inline
-  def apply(WorkteamArn: WorkteamArn): SubscribedWorkteam = {
+  inline def apply(WorkteamArn: WorkteamArn): SubscribedWorkteam = {
     val __obj = js.Dynamic.literal(WorkteamArn = WorkteamArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscribedWorkteam]
   }
   
-  @scala.inline
-  implicit class SubscribedWorkteamMutableBuilder[Self <: SubscribedWorkteam] (val x: Self) extends AnyVal {
+  extension [Self <: SubscribedWorkteam](x: Self) {
     
-    @scala.inline
-    def setListingId(value: String): Self = StObject.set(x, "ListingId", value.asInstanceOf[js.Any])
+    inline def setListingId(value: String): Self = StObject.set(x, "ListingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListingIdUndefined: Self = StObject.set(x, "ListingId", js.undefined)
+    inline def setListingIdUndefined: Self = StObject.set(x, "ListingId", js.undefined)
     
-    @scala.inline
-    def setMarketplaceDescription(value: String200): Self = StObject.set(x, "MarketplaceDescription", value.asInstanceOf[js.Any])
+    inline def setMarketplaceDescription(value: String200): Self = StObject.set(x, "MarketplaceDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarketplaceDescriptionUndefined: Self = StObject.set(x, "MarketplaceDescription", js.undefined)
+    inline def setMarketplaceDescriptionUndefined: Self = StObject.set(x, "MarketplaceDescription", js.undefined)
     
-    @scala.inline
-    def setMarketplaceTitle(value: String200): Self = StObject.set(x, "MarketplaceTitle", value.asInstanceOf[js.Any])
+    inline def setMarketplaceTitle(value: String200): Self = StObject.set(x, "MarketplaceTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarketplaceTitleUndefined: Self = StObject.set(x, "MarketplaceTitle", js.undefined)
+    inline def setMarketplaceTitleUndefined: Self = StObject.set(x, "MarketplaceTitle", js.undefined)
     
-    @scala.inline
-    def setSellerName(value: String): Self = StObject.set(x, "SellerName", value.asInstanceOf[js.Any])
+    inline def setSellerName(value: String): Self = StObject.set(x, "SellerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSellerNameUndefined: Self = StObject.set(x, "SellerName", js.undefined)
+    inline def setSellerNameUndefined: Self = StObject.set(x, "SellerName", js.undefined)
     
-    @scala.inline
-    def setWorkteamArn(value: WorkteamArn): Self = StObject.set(x, "WorkteamArn", value.asInstanceOf[js.Any])
+    inline def setWorkteamArn(value: WorkteamArn): Self = StObject.set(x, "WorkteamArn", value.asInstanceOf[js.Any])
   }
 }

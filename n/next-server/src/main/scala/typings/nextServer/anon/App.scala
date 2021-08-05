@@ -25,8 +25,7 @@ trait App extends StObject {
 }
 object App {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     App: ComponentType[js.Object],
     Component: ComponentType[js.Object],
     initialProps: js.Any,
@@ -38,31 +37,22 @@ object App {
     __obj.asInstanceOf[App]
   }
   
-  @scala.inline
-  implicit class AppMutableBuilder[Self <: App] (val x: Self) extends AnyVal {
+  extension [Self <: App](x: Self) {
     
-    @scala.inline
-    def setApp(value: ComponentType[js.Object]): Self = StObject.set(x, "App", value.asInstanceOf[js.Any])
+    inline def setApp(value: ComponentType[js.Object]): Self = StObject.set(x, "App", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponent(value: ComponentType[js.Object]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: ComponentType[js.Object]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErr(value: typings.std.Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
+    inline def setErr(value: typings.std.Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrUndefined: Self = StObject.set(x, "err", js.undefined)
+    inline def setErrUndefined: Self = StObject.set(x, "err", js.undefined)
     
-    @scala.inline
-    def setInitialProps(value: js.Any): Self = StObject.set(x, "initialProps", value.asInstanceOf[js.Any])
+    inline def setInitialProps(value: js.Any): Self = StObject.set(x, "initialProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageLoader(value: js.Any): Self = StObject.set(x, "pageLoader", value.asInstanceOf[js.Any])
+    inline def setPageLoader(value: js.Any): Self = StObject.set(x, "pageLoader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscription(value: (/* data */ RouteInfo, /* App */ js.UndefOr[ComponentType[js.Object]]) => Unit): Self = StObject.set(x, "subscription", js.Any.fromFunction2(value))
+    inline def setSubscription(value: (/* data */ RouteInfo, /* App */ js.UndefOr[ComponentType[js.Object]]) => Unit): Self = StObject.set(x, "subscription", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWrapApp(value: ComponentType[js.Object] => js.Any): Self = StObject.set(x, "wrapApp", js.Any.fromFunction1(value))
+    inline def setWrapApp(value: ComponentType[js.Object] => js.Any): Self = StObject.set(x, "wrapApp", js.Any.fromFunction1(value))
   }
 }

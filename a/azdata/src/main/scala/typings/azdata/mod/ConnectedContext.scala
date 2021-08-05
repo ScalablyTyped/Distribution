@@ -15,16 +15,13 @@ trait ConnectedContext extends StObject {
 }
 object ConnectedContext {
   
-  @scala.inline
-  def apply(connectionProfile: IConnectionProfile): ConnectedContext = {
+  inline def apply(connectionProfile: IConnectionProfile): ConnectedContext = {
     val __obj = js.Dynamic.literal(connectionProfile = connectionProfile.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectedContext]
   }
   
-  @scala.inline
-  implicit class ConnectedContextMutableBuilder[Self <: ConnectedContext] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectedContext](x: Self) {
     
-    @scala.inline
-    def setConnectionProfile(value: IConnectionProfile): Self = StObject.set(x, "connectionProfile", value.asInstanceOf[js.Any])
+    inline def setConnectionProfile(value: IConnectionProfile): Self = StObject.set(x, "connectionProfile", value.asInstanceOf[js.Any])
   }
 }

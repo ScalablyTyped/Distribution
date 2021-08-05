@@ -13,8 +13,7 @@ object playersPlayerHOCMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     Player: ComponentType[js.Any],
     mapPropsToPlayer: IPropsToPlayer,
     mapMethodsToPlayer: IMethodsToPlayer

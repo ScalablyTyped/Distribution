@@ -33,8 +33,7 @@ trait XTransferDataAccess
 }
 object XTransferDataAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getData: SeqEquiv[DataFlavor] => SafeArray[js.Any],
     queryDataSize: SeqEquiv[DataFlavor] => Double,
@@ -45,13 +44,10 @@ object XTransferDataAccess {
     __obj.asInstanceOf[XTransferDataAccess]
   }
   
-  @scala.inline
-  implicit class XTransferDataAccessMutableBuilder[Self <: XTransferDataAccess] (val x: Self) extends AnyVal {
+  extension [Self <: XTransferDataAccess](x: Self) {
     
-    @scala.inline
-    def setGetData(value: SeqEquiv[DataFlavor] => SafeArray[js.Any]): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
+    inline def setGetData(value: SeqEquiv[DataFlavor] => SafeArray[js.Any]): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setQueryDataSize(value: SeqEquiv[DataFlavor] => Double): Self = StObject.set(x, "queryDataSize", js.Any.fromFunction1(value))
+    inline def setQueryDataSize(value: SeqEquiv[DataFlavor] => Double): Self = StObject.set(x, "queryDataSize", js.Any.fromFunction1(value))
   }
 }

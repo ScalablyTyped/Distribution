@@ -8,11 +8,9 @@ object wordpressCustomizeBrowserStrings {
   
   @js.native
   sealed trait am extends StObject
-  @scala.inline
-  def am: am = "am".asInstanceOf[am]
+  inline def am: am = "am".asInstanceOf[am]
   
   @js.native
   sealed trait pm extends StObject
-  @scala.inline
-  def pm: pm = "pm".asInstanceOf[pm]
+  inline def pm: pm = "pm".asInstanceOf[pm]
 }

@@ -19,34 +19,25 @@ trait MapUrlTileProps
 }
 object MapUrlTileProps {
   
-  @scala.inline
-  def apply(urlTemplate: String): MapUrlTileProps = {
+  inline def apply(urlTemplate: String): MapUrlTileProps = {
     val __obj = js.Dynamic.literal(urlTemplate = urlTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapUrlTileProps]
   }
   
-  @scala.inline
-  implicit class MapUrlTilePropsMutableBuilder[Self <: MapUrlTileProps] (val x: Self) extends AnyVal {
+  extension [Self <: MapUrlTileProps](x: Self) {
     
-    @scala.inline
-    def setMaximumZ(value: Double): Self = StObject.set(x, "maximumZ", value.asInstanceOf[js.Any])
+    inline def setMaximumZ(value: Double): Self = StObject.set(x, "maximumZ", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumZUndefined: Self = StObject.set(x, "maximumZ", js.undefined)
+    inline def setMaximumZUndefined: Self = StObject.set(x, "maximumZ", js.undefined)
     
-    @scala.inline
-    def setTileSize(value: Double): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
+    inline def setTileSize(value: Double): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
+    inline def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
     
-    @scala.inline
-    def setUrlTemplate(value: String): Self = StObject.set(x, "urlTemplate", value.asInstanceOf[js.Any])
+    inline def setUrlTemplate(value: String): Self = StObject.set(x, "urlTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

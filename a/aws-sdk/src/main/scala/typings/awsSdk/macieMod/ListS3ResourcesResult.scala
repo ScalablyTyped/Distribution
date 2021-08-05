@@ -18,28 +18,21 @@ trait ListS3ResourcesResult extends StObject {
 }
 object ListS3ResourcesResult {
   
-  @scala.inline
-  def apply(): ListS3ResourcesResult = {
+  inline def apply(): ListS3ResourcesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListS3ResourcesResult]
   }
   
-  @scala.inline
-  implicit class ListS3ResourcesResultMutableBuilder[Self <: ListS3ResourcesResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListS3ResourcesResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setS3Resources(value: S3ResourcesClassification): Self = StObject.set(x, "s3Resources", value.asInstanceOf[js.Any])
+    inline def setS3Resources(value: S3ResourcesClassification): Self = StObject.set(x, "s3Resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3ResourcesUndefined: Self = StObject.set(x, "s3Resources", js.undefined)
+    inline def setS3ResourcesUndefined: Self = StObject.set(x, "s3Resources", js.undefined)
     
-    @scala.inline
-    def setS3ResourcesVarargs(value: S3ResourceClassification*): Self = StObject.set(x, "s3Resources", js.Array(value :_*))
+    inline def setS3ResourcesVarargs(value: S3ResourceClassification*): Self = StObject.set(x, "s3Resources", js.Array(value :_*))
   }
 }

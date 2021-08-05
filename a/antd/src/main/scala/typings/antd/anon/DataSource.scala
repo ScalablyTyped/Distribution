@@ -14,25 +14,19 @@ trait DataSource extends StObject {
 }
 object DataSource {
   
-  @scala.inline
-  def apply(dataSource: js.Array[scala.Nothing], showSearch: Boolean, titleText: String): DataSource = {
+  inline def apply(dataSource: js.Array[scala.Nothing], showSearch: Boolean, titleText: String): DataSource = {
     val __obj = js.Dynamic.literal(dataSource = dataSource.asInstanceOf[js.Any], showSearch = showSearch.asInstanceOf[js.Any], titleText = titleText.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSource]
   }
   
-  @scala.inline
-  implicit class DataSourceMutableBuilder[Self <: DataSource] (val x: Self) extends AnyVal {
+  extension [Self <: DataSource](x: Self) {
     
-    @scala.inline
-    def setDataSource(value: js.Array[scala.Nothing]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: js.Array[scala.Nothing]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceVarargs(value: scala.Nothing*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
+    inline def setDataSourceVarargs(value: scala.Nothing*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
     
-    @scala.inline
-    def setShowSearch(value: Boolean): Self = StObject.set(x, "showSearch", value.asInstanceOf[js.Any])
+    inline def setShowSearch(value: Boolean): Self = StObject.set(x, "showSearch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleText(value: String): Self = StObject.set(x, "titleText", value.asInstanceOf[js.Any])
+    inline def setTitleText(value: String): Self = StObject.set(x, "titleText", value.asInstanceOf[js.Any])
   }
 }

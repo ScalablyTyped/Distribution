@@ -33,43 +33,31 @@ trait CustomVerificationEmailTemplate extends StObject {
 }
 object CustomVerificationEmailTemplate {
   
-  @scala.inline
-  def apply(): CustomVerificationEmailTemplate = {
+  inline def apply(): CustomVerificationEmailTemplate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomVerificationEmailTemplate]
   }
   
-  @scala.inline
-  implicit class CustomVerificationEmailTemplateMutableBuilder[Self <: CustomVerificationEmailTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: CustomVerificationEmailTemplate](x: Self) {
     
-    @scala.inline
-    def setFailureRedirectionURL(value: FailureRedirectionURL): Self = StObject.set(x, "FailureRedirectionURL", value.asInstanceOf[js.Any])
+    inline def setFailureRedirectionURL(value: FailureRedirectionURL): Self = StObject.set(x, "FailureRedirectionURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureRedirectionURLUndefined: Self = StObject.set(x, "FailureRedirectionURL", js.undefined)
+    inline def setFailureRedirectionURLUndefined: Self = StObject.set(x, "FailureRedirectionURL", js.undefined)
     
-    @scala.inline
-    def setFromEmailAddress(value: FromAddress): Self = StObject.set(x, "FromEmailAddress", value.asInstanceOf[js.Any])
+    inline def setFromEmailAddress(value: FromAddress): Self = StObject.set(x, "FromEmailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromEmailAddressUndefined: Self = StObject.set(x, "FromEmailAddress", js.undefined)
+    inline def setFromEmailAddressUndefined: Self = StObject.set(x, "FromEmailAddress", js.undefined)
     
-    @scala.inline
-    def setSuccessRedirectionURL(value: SuccessRedirectionURL): Self = StObject.set(x, "SuccessRedirectionURL", value.asInstanceOf[js.Any])
+    inline def setSuccessRedirectionURL(value: SuccessRedirectionURL): Self = StObject.set(x, "SuccessRedirectionURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessRedirectionURLUndefined: Self = StObject.set(x, "SuccessRedirectionURL", js.undefined)
+    inline def setSuccessRedirectionURLUndefined: Self = StObject.set(x, "SuccessRedirectionURL", js.undefined)
     
-    @scala.inline
-    def setTemplateName(value: TemplateName): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
+    inline def setTemplateName(value: TemplateName): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateNameUndefined: Self = StObject.set(x, "TemplateName", js.undefined)
+    inline def setTemplateNameUndefined: Self = StObject.set(x, "TemplateName", js.undefined)
     
-    @scala.inline
-    def setTemplateSubject(value: Subject): Self = StObject.set(x, "TemplateSubject", value.asInstanceOf[js.Any])
+    inline def setTemplateSubject(value: Subject): Self = StObject.set(x, "TemplateSubject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateSubjectUndefined: Self = StObject.set(x, "TemplateSubject", js.undefined)
+    inline def setTemplateSubjectUndefined: Self = StObject.set(x, "TemplateSubject", js.undefined)
   }
 }

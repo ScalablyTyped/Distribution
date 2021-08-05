@@ -61,43 +61,31 @@ trait ParamsResourceBillingaccountsSinksPatch
 }
 object ParamsResourceBillingaccountsSinksPatch {
   
-  @scala.inline
-  def apply(): ParamsResourceBillingaccountsSinksPatch = {
+  inline def apply(): ParamsResourceBillingaccountsSinksPatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceBillingaccountsSinksPatch]
   }
   
-  @scala.inline
-  implicit class ParamsResourceBillingaccountsSinksPatchMutableBuilder[Self <: ParamsResourceBillingaccountsSinksPatch] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceBillingaccountsSinksPatch](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaLogSink): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaLogSink): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
-    @scala.inline
-    def setSinkName(value: String): Self = StObject.set(x, "sinkName", value.asInstanceOf[js.Any])
+    inline def setSinkName(value: String): Self = StObject.set(x, "sinkName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSinkNameUndefined: Self = StObject.set(x, "sinkName", js.undefined)
+    inline def setSinkNameUndefined: Self = StObject.set(x, "sinkName", js.undefined)
     
-    @scala.inline
-    def setUniqueWriterIdentity(value: Boolean): Self = StObject.set(x, "uniqueWriterIdentity", value.asInstanceOf[js.Any])
+    inline def setUniqueWriterIdentity(value: Boolean): Self = StObject.set(x, "uniqueWriterIdentity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueWriterIdentityUndefined: Self = StObject.set(x, "uniqueWriterIdentity", js.undefined)
+    inline def setUniqueWriterIdentityUndefined: Self = StObject.set(x, "uniqueWriterIdentity", js.undefined)
     
-    @scala.inline
-    def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }
 }

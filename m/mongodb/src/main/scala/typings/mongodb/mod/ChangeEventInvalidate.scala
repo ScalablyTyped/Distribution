@@ -18,22 +18,17 @@ trait ChangeEventInvalidate[TSchema /* <: StringDictionary[js.Any] */]
 }
 object ChangeEventInvalidate {
   
-  @scala.inline
-  def apply[TSchema /* <: StringDictionary[js.Any] */](_id: ResumeToken, clusterTime: typings.bson.mod.Timestamp): ChangeEventInvalidate[TSchema] = {
+  inline def apply[TSchema /* <: StringDictionary[js.Any] */](_id: ResumeToken, clusterTime: typings.bson.mod.Timestamp): ChangeEventInvalidate[TSchema] = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], operationType = "invalidate")
     __obj.asInstanceOf[ChangeEventInvalidate[TSchema]]
   }
   
-  @scala.inline
-  implicit class ChangeEventInvalidateMutableBuilder[Self <: ChangeEventInvalidate[?], TSchema /* <: StringDictionary[js.Any] */] (val x: Self & ChangeEventInvalidate[TSchema]) extends AnyVal {
+  extension [Self <: ChangeEventInvalidate[?], TSchema /* <: StringDictionary[js.Any] */](x: Self & ChangeEventInvalidate[TSchema]) {
     
-    @scala.inline
-    def setClusterTime(value: typings.bson.mod.Timestamp): Self = StObject.set(x, "clusterTime", value.asInstanceOf[js.Any])
+    inline def setClusterTime(value: typings.bson.mod.Timestamp): Self = StObject.set(x, "clusterTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationType(value: invalidate): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
+    inline def setOperationType(value: invalidate): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_id(value: ResumeToken): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+    inline def set_id(value: ResumeToken): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
   }
 }

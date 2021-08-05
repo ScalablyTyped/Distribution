@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FillRule extends StObject
 object FillRule {
   
-  @scala.inline
-  def evenodd: typings.reactNativeSvg.reactNativeSvgStrings.evenodd = "evenodd".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.evenodd]
+  inline def evenodd: typings.reactNativeSvg.reactNativeSvgStrings.evenodd = "evenodd".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.evenodd]
   
-  @scala.inline
-  def nonzero: typings.reactNativeSvg.reactNativeSvgStrings.nonzero = "nonzero".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.nonzero]
+  inline def nonzero: typings.reactNativeSvg.reactNativeSvgStrings.nonzero = "nonzero".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.nonzero]
 }

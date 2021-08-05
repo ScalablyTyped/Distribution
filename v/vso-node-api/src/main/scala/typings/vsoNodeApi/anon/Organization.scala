@@ -16,26 +16,20 @@ trait Organization extends StObject {
 }
 object Organization {
   
-  @scala.inline
-  def apply(organization: scala.Double, `private`: scala.Double, public: scala.Double, unchanged: scala.Double): Organization = {
+  inline def apply(organization: scala.Double, `private`: scala.Double, public: scala.Double, unchanged: scala.Double): Organization = {
     val __obj = js.Dynamic.literal(organization = organization.asInstanceOf[js.Any], public = public.asInstanceOf[js.Any], unchanged = unchanged.asInstanceOf[js.Any])
     __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Organization]
   }
   
-  @scala.inline
-  implicit class OrganizationMutableBuilder[Self <: Organization] (val x: Self) extends AnyVal {
+  extension [Self <: Organization](x: Self) {
     
-    @scala.inline
-    def setOrganization(value: scala.Double): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
+    inline def setOrganization(value: scala.Double): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivate(value: scala.Double): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
+    inline def setPrivate(value: scala.Double): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublic(value: scala.Double): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+    inline def setPublic(value: scala.Double): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnchanged(value: scala.Double): Self = StObject.set(x, "unchanged", value.asInstanceOf[js.Any])
+    inline def setUnchanged(value: scala.Double): Self = StObject.set(x, "unchanged", value.asInstanceOf[js.Any])
   }
 }

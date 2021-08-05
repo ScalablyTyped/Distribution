@@ -28,6 +28,5 @@ object Path {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def fromName(name: String): Path = ^.asInstanceOf[js.Dynamic].applyDynamic("fromName")(name.asInstanceOf[js.Any]).asInstanceOf[Path]
+  inline def fromName(name: String): Path = ^.asInstanceOf[js.Dynamic].applyDynamic("fromName")(name.asInstanceOf[js.Any]).asInstanceOf[Path]
 }

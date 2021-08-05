@@ -16,40 +16,29 @@ trait ComponentDatatype extends StObject {
 }
 object ComponentDatatype {
   
-  @scala.inline
-  def apply(): ComponentDatatype = {
+  inline def apply(): ComponentDatatype = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ComponentDatatype]
   }
   
-  @scala.inline
-  implicit class ComponentDatatypeMutableBuilder[Self <: ComponentDatatype] (val x: Self) extends AnyVal {
+  extension [Self <: ComponentDatatype](x: Self) {
     
-    @scala.inline
-    def setComponentDatatype(value: typings.cesium.mod.ComponentDatatype): Self = StObject.set(x, "componentDatatype", value.asInstanceOf[js.Any])
+    inline def setComponentDatatype(value: typings.cesium.mod.ComponentDatatype): Self = StObject.set(x, "componentDatatype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentDatatypeUndefined: Self = StObject.set(x, "componentDatatype", js.undefined)
+    inline def setComponentDatatypeUndefined: Self = StObject.set(x, "componentDatatype", js.undefined)
     
-    @scala.inline
-    def setComponentsPerAttribute(value: Double): Self = StObject.set(x, "componentsPerAttribute", value.asInstanceOf[js.Any])
+    inline def setComponentsPerAttribute(value: Double): Self = StObject.set(x, "componentsPerAttribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentsPerAttributeUndefined: Self = StObject.set(x, "componentsPerAttribute", js.undefined)
+    inline def setComponentsPerAttributeUndefined: Self = StObject.set(x, "componentsPerAttribute", js.undefined)
     
-    @scala.inline
-    def setNormalize(value: Boolean): Self = StObject.set(x, "normalize", value.asInstanceOf[js.Any])
+    inline def setNormalize(value: Boolean): Self = StObject.set(x, "normalize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
+    inline def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
     
-    @scala.inline
-    def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

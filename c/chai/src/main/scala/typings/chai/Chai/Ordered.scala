@@ -13,16 +13,13 @@ trait Ordered extends StObject {
 }
 object Ordered {
   
-  @scala.inline
-  def apply(members: (/* set */ js.Array[js.Any], /* message */ js.UndefOr[String]) => Assertion): Ordered = {
+  inline def apply(members: (/* set */ js.Array[js.Any], /* message */ js.UndefOr[String]) => Assertion): Ordered = {
     val __obj = js.Dynamic.literal(members = js.Any.fromFunction2(members))
     __obj.asInstanceOf[Ordered]
   }
   
-  @scala.inline
-  implicit class OrderedMutableBuilder[Self <: Ordered] (val x: Self) extends AnyVal {
+  extension [Self <: Ordered](x: Self) {
     
-    @scala.inline
-    def setMembers(value: (/* set */ js.Array[js.Any], /* message */ js.UndefOr[String]) => Assertion): Self = StObject.set(x, "members", js.Any.fromFunction2(value))
+    inline def setMembers(value: (/* set */ js.Array[js.Any], /* message */ js.UndefOr[String]) => Assertion): Self = StObject.set(x, "members", js.Any.fromFunction2(value))
   }
 }

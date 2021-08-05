@@ -27,64 +27,45 @@ trait IGridMetadata extends StObject {
 }
 object IGridMetadata {
   
-  @scala.inline
-  def apply(KeyColumnName: String): IGridMetadata = {
+  inline def apply(KeyColumnName: String): IGridMetadata = {
     val __obj = js.Dynamic.literal(KeyColumnName = KeyColumnName.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGridMetadata]
   }
   
-  @scala.inline
-  implicit class IGridMetadataMutableBuilder[Self <: IGridMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: IGridMetadata](x: Self) {
     
-    @scala.inline
-    def setGridOperationalConstantsFieldKeyMap(value: NumberDictionary[String]): Self = StObject.set(x, "GridOperationalConstantsFieldKeyMap", value.asInstanceOf[js.Any])
+    inline def setGridOperationalConstantsFieldKeyMap(value: NumberDictionary[String]): Self = StObject.set(x, "GridOperationalConstantsFieldKeyMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridOperationalConstantsFieldKeyMapUndefined: Self = StObject.set(x, "GridOperationalConstantsFieldKeyMap", js.undefined)
+    inline def setGridOperationalConstantsFieldKeyMapUndefined: Self = StObject.set(x, "GridOperationalConstantsFieldKeyMap", js.undefined)
     
-    @scala.inline
-    def setGroupingLevel(value: Double): Self = StObject.set(x, "GroupingLevel", value.asInstanceOf[js.Any])
+    inline def setGroupingLevel(value: Double): Self = StObject.set(x, "GroupingLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupingLevelUndefined: Self = StObject.set(x, "GroupingLevel", js.undefined)
+    inline def setGroupingLevelUndefined: Self = StObject.set(x, "GroupingLevel", js.undefined)
     
-    @scala.inline
-    def setGroupingPrefix(value: String): Self = StObject.set(x, "GroupingPrefix", value.asInstanceOf[js.Any])
+    inline def setGroupingPrefix(value: String): Self = StObject.set(x, "GroupingPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupingPrefixUndefined: Self = StObject.set(x, "GroupingPrefix", js.undefined)
+    inline def setGroupingPrefixUndefined: Self = StObject.set(x, "GroupingPrefix", js.undefined)
     
-    @scala.inline
-    def setIsGanttEnabled(value: Boolean): Self = StObject.set(x, "IsGanttEnabled", value.asInstanceOf[js.Any])
+    inline def setIsGanttEnabled(value: Boolean): Self = StObject.set(x, "IsGanttEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsGanttEnabledUndefined: Self = StObject.set(x, "IsGanttEnabled", js.undefined)
+    inline def setIsGanttEnabledUndefined: Self = StObject.set(x, "IsGanttEnabled", js.undefined)
     
-    @scala.inline
-    def setIsHierarchyEnabled(value: Boolean): Self = StObject.set(x, "IsHierarchyEnabled", value.asInstanceOf[js.Any])
+    inline def setIsHierarchyEnabled(value: Boolean): Self = StObject.set(x, "IsHierarchyEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsHierarchyEnabledUndefined: Self = StObject.set(x, "IsHierarchyEnabled", js.undefined)
+    inline def setIsHierarchyEnabledUndefined: Self = StObject.set(x, "IsHierarchyEnabled", js.undefined)
     
-    @scala.inline
-    def setIsSorted(value: Boolean): Self = StObject.set(x, "IsSorted", value.asInstanceOf[js.Any])
+    inline def setIsSorted(value: Boolean): Self = StObject.set(x, "IsSorted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSortedUndefined: Self = StObject.set(x, "IsSorted", js.undefined)
+    inline def setIsSortedUndefined: Self = StObject.set(x, "IsSorted", js.undefined)
     
-    @scala.inline
-    def setKeyColumnName(value: String): Self = StObject.set(x, "KeyColumnName", value.asInstanceOf[js.Any])
+    inline def setKeyColumnName(value: String): Self = StObject.set(x, "KeyColumnName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordKeyHash(value: String): Self = StObject.set(x, "RecordKeyHash", value.asInstanceOf[js.Any])
+    inline def setRecordKeyHash(value: String): Self = StObject.set(x, "RecordKeyHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordKeyHashUndefined: Self = StObject.set(x, "RecordKeyHash", js.undefined)
+    inline def setRecordKeyHashUndefined: Self = StObject.set(x, "RecordKeyHash", js.undefined)
     
-    @scala.inline
-    def setRecordKeyOrderChanged(value: js.Any): Self = StObject.set(x, "RecordKeyOrderChanged", value.asInstanceOf[js.Any])
+    inline def setRecordKeyOrderChanged(value: js.Any): Self = StObject.set(x, "RecordKeyOrderChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordKeyOrderChangedUndefined: Self = StObject.set(x, "RecordKeyOrderChanged", js.undefined)
+    inline def setRecordKeyOrderChangedUndefined: Self = StObject.set(x, "RecordKeyOrderChanged", js.undefined)
   }
 }

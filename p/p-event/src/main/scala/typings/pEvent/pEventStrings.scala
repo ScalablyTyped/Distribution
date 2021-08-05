@@ -8,6 +8,5 @@ object pEventStrings {
   
   @js.native
   sealed trait TimeoutError extends StObject
-  @scala.inline
-  def TimeoutError: TimeoutError = "TimeoutError".asInstanceOf[TimeoutError]
+  inline def TimeoutError: TimeoutError = "TimeoutError".asInstanceOf[TimeoutError]
 }

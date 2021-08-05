@@ -11,33 +11,21 @@ object timerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def cron(name: String, cronTab: String, handler: Action): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cron")(name.asInstanceOf[js.Any], cronTab.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def cron(name: String, cronTab: String, handler: Action, opts: ResourceOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cron")(name.asInstanceOf[js.Any], cronTab.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cron(name: String, cronTab: String, handler: Action): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cron")(name.asInstanceOf[js.Any], cronTab.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cron(name: String, cronTab: String, handler: Action, opts: ResourceOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cron")(name.asInstanceOf[js.Any], cronTab.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def daily(name: String, handler: Action): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("daily")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def daily(name: String, handler: Action, opts: ResourceOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("daily")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def daily(name: String, schedule: DailySchedule, handler: Action): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("daily")(name.asInstanceOf[js.Any], schedule.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def daily(name: String, schedule: DailySchedule, handler: Action, opts: ResourceOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("daily")(name.asInstanceOf[js.Any], schedule.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def daily(name: String, handler: Action): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("daily")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def daily(name: String, handler: Action, opts: ResourceOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("daily")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def daily(name: String, schedule: DailySchedule, handler: Action): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("daily")(name.asInstanceOf[js.Any], schedule.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def daily(name: String, schedule: DailySchedule, handler: Action, opts: ResourceOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("daily")(name.asInstanceOf[js.Any], schedule.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def hourly(name: String, handler: Action): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hourly")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def hourly(name: String, handler: Action, opts: ResourceOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hourly")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def hourly(name: String, schedule: HourlySchedule, handler: Action): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hourly")(name.asInstanceOf[js.Any], schedule.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def hourly(name: String, schedule: HourlySchedule, handler: Action, opts: ResourceOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hourly")(name.asInstanceOf[js.Any], schedule.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def hourly(name: String, handler: Action): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hourly")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def hourly(name: String, handler: Action, opts: ResourceOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hourly")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def hourly(name: String, schedule: HourlySchedule, handler: Action): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hourly")(name.asInstanceOf[js.Any], schedule.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def hourly(name: String, schedule: HourlySchedule, handler: Action, opts: ResourceOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hourly")(name.asInstanceOf[js.Any], schedule.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def interval(name: String, options: IntervalRate, handler: Action): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("interval")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def interval(name: String, options: IntervalRate, handler: Action, opts: ResourceOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("interval")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def interval(name: String, options: IntervalRate, handler: Action): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("interval")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def interval(name: String, options: IntervalRate, handler: Action, opts: ResourceOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("interval")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type Action = js.Function0[js.Promise[Unit]]
   
@@ -55,26 +43,20 @@ object timerMod {
   }
   object DailySchedule {
     
-    @scala.inline
-    def apply(): DailySchedule = {
+    inline def apply(): DailySchedule = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DailySchedule]
     }
     
-    @scala.inline
-    implicit class DailyScheduleMutableBuilder[Self <: DailySchedule] (val x: Self) extends AnyVal {
+    extension [Self <: DailySchedule](x: Self) {
       
-      @scala.inline
-      def setHourUTC(value: Double): Self = StObject.set(x, "hourUTC", value.asInstanceOf[js.Any])
+      inline def setHourUTC(value: Double): Self = StObject.set(x, "hourUTC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHourUTCUndefined: Self = StObject.set(x, "hourUTC", js.undefined)
+      inline def setHourUTCUndefined: Self = StObject.set(x, "hourUTC", js.undefined)
       
-      @scala.inline
-      def setMinuteUTC(value: Double): Self = StObject.set(x, "minuteUTC", value.asInstanceOf[js.Any])
+      inline def setMinuteUTC(value: Double): Self = StObject.set(x, "minuteUTC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinuteUTCUndefined: Self = StObject.set(x, "minuteUTC", js.undefined)
+      inline def setMinuteUTCUndefined: Self = StObject.set(x, "minuteUTC", js.undefined)
     }
   }
   
@@ -87,20 +69,16 @@ object timerMod {
   }
   object HourlySchedule {
     
-    @scala.inline
-    def apply(): HourlySchedule = {
+    inline def apply(): HourlySchedule = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HourlySchedule]
     }
     
-    @scala.inline
-    implicit class HourlyScheduleMutableBuilder[Self <: HourlySchedule] (val x: Self) extends AnyVal {
+    extension [Self <: HourlySchedule](x: Self) {
       
-      @scala.inline
-      def setMinuteUTC(value: Double): Self = StObject.set(x, "minuteUTC", value.asInstanceOf[js.Any])
+      inline def setMinuteUTC(value: Double): Self = StObject.set(x, "minuteUTC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinuteUTCUndefined: Self = StObject.set(x, "minuteUTC", js.undefined)
+      inline def setMinuteUTCUndefined: Self = StObject.set(x, "minuteUTC", js.undefined)
     }
   }
   
@@ -123,32 +101,24 @@ object timerMod {
   }
   object IntervalRate {
     
-    @scala.inline
-    def apply(): IntervalRate = {
+    inline def apply(): IntervalRate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IntervalRate]
     }
     
-    @scala.inline
-    implicit class IntervalRateMutableBuilder[Self <: IntervalRate] (val x: Self) extends AnyVal {
+    extension [Self <: IntervalRate](x: Self) {
       
-      @scala.inline
-      def setDays(value: Double): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
+      inline def setDays(value: Double): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDaysUndefined: Self = StObject.set(x, "days", js.undefined)
+      inline def setDaysUndefined: Self = StObject.set(x, "days", js.undefined)
       
-      @scala.inline
-      def setHours(value: Double): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
+      inline def setHours(value: Double): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoursUndefined: Self = StObject.set(x, "hours", js.undefined)
+      inline def setHoursUndefined: Self = StObject.set(x, "hours", js.undefined)
       
-      @scala.inline
-      def setMinutes(value: Double): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
+      inline def setMinutes(value: Double): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinutesUndefined: Self = StObject.set(x, "minutes", js.undefined)
+      inline def setMinutesUndefined: Self = StObject.set(x, "minutes", js.undefined)
     }
   }
 }

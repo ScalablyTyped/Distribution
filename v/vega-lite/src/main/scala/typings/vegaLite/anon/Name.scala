@@ -16,8 +16,7 @@ trait Name extends StObject {
 }
 object Name {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     name: String,
     role: String,
     title: Align | Anchor | Angle | Aria | Baseline | Color,
@@ -28,19 +27,14 @@ object Name {
     __obj.asInstanceOf[Name]
   }
   
-  @scala.inline
-  implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+  extension [Self <: Name](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: Align | Anchor | Angle | Aria | Baseline | Color): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: Align | Anchor | Angle | Aria | Baseline | Color): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

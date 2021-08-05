@@ -14,28 +14,21 @@ trait Type extends StObject {
 }
 object Type {
   
-  @scala.inline
-  def apply(duration: String): Type = {
+  inline def apply(duration: String): Type = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any])
     __obj.asInstanceOf[Type]
   }
   
-  @scala.inline
-  implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
+  extension [Self <: Type](x: Self) {
     
-    @scala.inline
-    def setDots(value: Double): Self = StObject.set(x, "dots", value.asInstanceOf[js.Any])
+    inline def setDots(value: Double): Self = StObject.set(x, "dots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDotsUndefined: Self = StObject.set(x, "dots", js.undefined)
+    inline def setDotsUndefined: Self = StObject.set(x, "dots", js.undefined)
     
-    @scala.inline
-    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

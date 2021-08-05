@@ -12,19 +12,15 @@ trait S3Rule extends StObject {
 }
 object S3Rule {
   
-  @scala.inline
-  def apply(prefix: String, suffix: String): S3Rule = {
+  inline def apply(prefix: String, suffix: String): S3Rule = {
     val __obj = js.Dynamic.literal(prefix = prefix.asInstanceOf[js.Any], suffix = suffix.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3Rule]
   }
   
-  @scala.inline
-  implicit class S3RuleMutableBuilder[Self <: S3Rule] (val x: Self) extends AnyVal {
+  extension [Self <: S3Rule](x: Self) {
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+    inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
   }
 }

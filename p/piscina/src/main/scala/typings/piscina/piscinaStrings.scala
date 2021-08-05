@@ -8,11 +8,9 @@ object piscinaStrings {
   
   @js.native
   sealed trait abort extends StObject
-  @scala.inline
-  def abort: abort = "abort".asInstanceOf[abort]
+  inline def abort: abort = "abort".asInstanceOf[abort]
   
   @js.native
   sealed trait auto extends StObject
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
+  inline def auto: auto = "auto".asInstanceOf[auto]
 }

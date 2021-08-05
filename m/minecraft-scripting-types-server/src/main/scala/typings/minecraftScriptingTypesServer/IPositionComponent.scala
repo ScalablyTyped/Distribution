@@ -29,22 +29,17 @@ trait IPositionComponent extends StObject {
 }
 object IPositionComponent {
   
-  @scala.inline
-  def apply(x: Double, y: Double, z: Double): IPositionComponent = {
+  inline def apply(x: Double, y: Double, z: Double): IPositionComponent = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPositionComponent]
   }
   
-  @scala.inline
-  implicit class IPositionComponentMutableBuilder[Self <: IPositionComponent] (val x: Self) extends AnyVal {
+  extension [Self <: IPositionComponent](x: Self) {
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+    inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
   }
 }

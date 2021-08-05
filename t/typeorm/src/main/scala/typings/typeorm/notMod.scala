@@ -11,8 +11,6 @@ object notMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def Not[T](value: T): FindOperator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("Not")(value.asInstanceOf[js.Any]).asInstanceOf[FindOperator[T]]
-  @scala.inline
-  def Not[T](value: FindOperator[T]): FindOperator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("Not")(value.asInstanceOf[js.Any]).asInstanceOf[FindOperator[T]]
+  inline def Not[T](value: T): FindOperator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("Not")(value.asInstanceOf[js.Any]).asInstanceOf[FindOperator[T]]
+  inline def Not[T](value: FindOperator[T]): FindOperator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("Not")(value.asInstanceOf[js.Any]).asInstanceOf[FindOperator[T]]
 }

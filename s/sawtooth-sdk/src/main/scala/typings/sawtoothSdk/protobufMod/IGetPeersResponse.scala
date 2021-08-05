@@ -11,25 +11,19 @@ trait IGetPeersResponse extends StObject {
 }
 object IGetPeersResponse {
   
-  @scala.inline
-  def apply(): IGetPeersResponse = {
+  inline def apply(): IGetPeersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IGetPeersResponse]
   }
   
-  @scala.inline
-  implicit class IGetPeersResponseMutableBuilder[Self <: IGetPeersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: IGetPeersResponse](x: Self) {
     
-    @scala.inline
-    def setPeerEndpoints(value: js.Array[String]): Self = StObject.set(x, "peerEndpoints", value.asInstanceOf[js.Any])
+    inline def setPeerEndpoints(value: js.Array[String]): Self = StObject.set(x, "peerEndpoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeerEndpointsNull: Self = StObject.set(x, "peerEndpoints", null)
+    inline def setPeerEndpointsNull: Self = StObject.set(x, "peerEndpoints", null)
     
-    @scala.inline
-    def setPeerEndpointsUndefined: Self = StObject.set(x, "peerEndpoints", js.undefined)
+    inline def setPeerEndpointsUndefined: Self = StObject.set(x, "peerEndpoints", js.undefined)
     
-    @scala.inline
-    def setPeerEndpointsVarargs(value: String*): Self = StObject.set(x, "peerEndpoints", js.Array(value :_*))
+    inline def setPeerEndpointsVarargs(value: String*): Self = StObject.set(x, "peerEndpoints", js.Array(value :_*))
   }
 }

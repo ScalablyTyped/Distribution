@@ -18,8 +18,7 @@ trait Always extends StObject {
 }
 object Always {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     always: (js.Any, js.Any) => js.Any,
     otherwise: js.Any => js.Any,
     spread: js.Any => js.Any,
@@ -32,22 +31,16 @@ object Always {
     __obj.asInstanceOf[Always]
   }
   
-  @scala.inline
-  implicit class AlwaysMutableBuilder[Self <: Always] (val x: Self) extends AnyVal {
+  extension [Self <: Always](x: Self) {
     
-    @scala.inline
-    def setAlways(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "always", js.Any.fromFunction2(value))
+    inline def setAlways(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "always", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOtherwise(value: js.Any => js.Any): Self = StObject.set(x, "otherwise", js.Any.fromFunction1(value))
+    inline def setOtherwise(value: js.Any => js.Any): Self = StObject.set(x, "otherwise", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSpread(value: js.Any => js.Any): Self = StObject.set(x, "spread", js.Any.fromFunction1(value))
+    inline def setSpread(value: js.Any => js.Any): Self = StObject.set(x, "spread", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setThen(value: js.Any => js.Any): Self = StObject.set(x, "then", js.Any.fromFunction1(value))
+    inline def setThen(value: js.Any => js.Any): Self = StObject.set(x, "then", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setYield(value: js.Any => js.Any): Self = StObject.set(x, "yield", js.Any.fromFunction1(value))
+    inline def setYield(value: js.Any => js.Any): Self = StObject.set(x, "yield", js.Any.fromFunction1(value))
   }
 }

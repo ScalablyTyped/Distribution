@@ -16,44 +16,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Aggregation extends StObject
 object Aggregation {
   
-  @scala.inline
-  def Avg(avg: String): typings.camljs.anon.Avg = {
+  inline def Avg(avg: String): typings.camljs.anon.Avg = {
     val __obj = js.Dynamic.literal(avg = avg.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.camljs.anon.Avg]
   }
   
-  @scala.inline
-  def Count(count: String): typings.camljs.anon.Count = {
+  inline def Count(count: String): typings.camljs.anon.Count = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.camljs.anon.Count]
   }
   
-  @scala.inline
-  def Max(max: String): typings.camljs.anon.Max = {
+  inline def Max(max: String): typings.camljs.anon.Max = {
     val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.camljs.anon.Max]
   }
   
-  @scala.inline
-  def Min(min: String): typings.camljs.anon.Min = {
+  inline def Min(min: String): typings.camljs.anon.Min = {
     val __obj = js.Dynamic.literal(min = min.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.camljs.anon.Min]
   }
   
-  @scala.inline
-  def Stdev(stdev: String): typings.camljs.anon.Stdev = {
+  inline def Stdev(stdev: String): typings.camljs.anon.Stdev = {
     val __obj = js.Dynamic.literal(stdev = stdev.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.camljs.anon.Stdev]
   }
   
-  @scala.inline
-  def Sum(sum: String): typings.camljs.anon.Sum = {
+  inline def Sum(sum: String): typings.camljs.anon.Sum = {
     val __obj = js.Dynamic.literal(sum = sum.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.camljs.anon.Sum]
   }
   
-  @scala.inline
-  def Var(`var`: String): typings.camljs.anon.Var = {
+  inline def Var(`var`: String): typings.camljs.anon.Var = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("var")(`var`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.camljs.anon.Var]

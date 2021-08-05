@@ -10,16 +10,13 @@ trait SelectedIndex extends StObject {
 }
 object SelectedIndex {
   
-  @scala.inline
-  def apply(selectedIndex: Double): SelectedIndex = {
+  inline def apply(selectedIndex: Double): SelectedIndex = {
     val __obj = js.Dynamic.literal(selectedIndex = selectedIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectedIndex]
   }
   
-  @scala.inline
-  implicit class SelectedIndexMutableBuilder[Self <: SelectedIndex] (val x: Self) extends AnyVal {
+  extension [Self <: SelectedIndex](x: Self) {
     
-    @scala.inline
-    def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
+    inline def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
   }
 }

@@ -14,19 +14,15 @@ trait OpenSettingOptions
 }
 object OpenSettingOptions {
   
-  @scala.inline
-  def apply(): OpenSettingOptions = {
+  inline def apply(): OpenSettingOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OpenSettingOptions]
   }
   
-  @scala.inline
-  implicit class OpenSettingOptionsMutableBuilder[Self <: OpenSettingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OpenSettingOptions](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: /* res */ AuthSetting => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ AuthSetting => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

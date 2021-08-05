@@ -16,28 +16,21 @@ trait GetBatchParams extends StObject {
 }
 object GetBatchParams {
   
-  @scala.inline
-  def apply(batch_id: String): GetBatchParams = {
+  inline def apply(batch_id: String): GetBatchParams = {
     val __obj = js.Dynamic.literal(batch_id = batch_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBatchParams]
   }
   
-  @scala.inline
-  implicit class GetBatchParamsMutableBuilder[Self <: GetBatchParams] (val x: Self) extends AnyVal {
+  extension [Self <: GetBatchParams](x: Self) {
     
-    @scala.inline
-    def setBatch_id(value: String): Self = StObject.set(x, "batch_id", value.asInstanceOf[js.Any])
+    inline def setBatch_id(value: String): Self = StObject.set(x, "batch_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
   }
 }

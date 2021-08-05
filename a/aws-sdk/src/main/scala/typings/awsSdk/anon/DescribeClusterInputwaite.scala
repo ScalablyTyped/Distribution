@@ -19,22 +19,17 @@ trait DescribeClusterInputwaite extends StObject {
 }
 object DescribeClusterInputwaite {
   
-  @scala.inline
-  def apply(ClusterId: ClusterId): DescribeClusterInputwaite = {
+  inline def apply(ClusterId: ClusterId): DescribeClusterInputwaite = {
     val __obj = js.Dynamic.literal(ClusterId = ClusterId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeClusterInputwaite]
   }
   
-  @scala.inline
-  implicit class DescribeClusterInputwaiteMutableBuilder[Self <: DescribeClusterInputwaite] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeClusterInputwaite](x: Self) {
     
-    @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
+    inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
+    inline def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
-    @scala.inline
-    def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
+    inline def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait TriggerProperties extends StObject {
 }
 object TriggerProperties {
   
-  @scala.inline
-  def apply(): TriggerProperties = {
+  inline def apply(): TriggerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TriggerProperties]
   }
   
-  @scala.inline
-  implicit class TriggerPropertiesMutableBuilder[Self <: TriggerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: TriggerProperties](x: Self) {
     
-    @scala.inline
-    def setScheduled(value: ScheduledTriggerProperties): Self = StObject.set(x, "Scheduled", value.asInstanceOf[js.Any])
+    inline def setScheduled(value: ScheduledTriggerProperties): Self = StObject.set(x, "Scheduled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduledUndefined: Self = StObject.set(x, "Scheduled", js.undefined)
+    inline def setScheduledUndefined: Self = StObject.set(x, "Scheduled", js.undefined)
   }
 }

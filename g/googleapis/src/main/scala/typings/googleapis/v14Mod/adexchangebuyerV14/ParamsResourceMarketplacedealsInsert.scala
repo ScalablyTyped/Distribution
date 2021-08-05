@@ -29,31 +29,23 @@ trait ParamsResourceMarketplacedealsInsert
 }
 object ParamsResourceMarketplacedealsInsert {
   
-  @scala.inline
-  def apply(): ParamsResourceMarketplacedealsInsert = {
+  inline def apply(): ParamsResourceMarketplacedealsInsert = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceMarketplacedealsInsert]
   }
   
-  @scala.inline
-  implicit class ParamsResourceMarketplacedealsInsertMutableBuilder[Self <: ParamsResourceMarketplacedealsInsert] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceMarketplacedealsInsert](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setProposalId(value: String): Self = StObject.set(x, "proposalId", value.asInstanceOf[js.Any])
+    inline def setProposalId(value: String): Self = StObject.set(x, "proposalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProposalIdUndefined: Self = StObject.set(x, "proposalId", js.undefined)
+    inline def setProposalIdUndefined: Self = StObject.set(x, "proposalId", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaAddOrderDealsRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaAddOrderDealsRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }
 }

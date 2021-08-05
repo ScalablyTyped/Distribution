@@ -21,37 +21,27 @@ trait ShareDialogParams
 }
 object ShareDialogParams {
   
-  @scala.inline
-  def apply(href: String): ShareDialogParams = {
+  inline def apply(href: String): ShareDialogParams = {
     val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], method = "share")
     __obj.asInstanceOf[ShareDialogParams]
   }
   
-  @scala.inline
-  implicit class ShareDialogParamsMutableBuilder[Self <: ShareDialogParams] (val x: Self) extends AnyVal {
+  extension [Self <: ShareDialogParams](x: Self) {
     
-    @scala.inline
-    def setHashtag(value: String): Self = StObject.set(x, "hashtag", value.asInstanceOf[js.Any])
+    inline def setHashtag(value: String): Self = StObject.set(x, "hashtag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHashtagUndefined: Self = StObject.set(x, "hashtag", js.undefined)
+    inline def setHashtagUndefined: Self = StObject.set(x, "hashtag", js.undefined)
     
-    @scala.inline
-    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: share): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: share): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMobile_iframe(value: Boolean): Self = StObject.set(x, "mobile_iframe", value.asInstanceOf[js.Any])
+    inline def setMobile_iframe(value: Boolean): Self = StObject.set(x, "mobile_iframe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMobile_iframeUndefined: Self = StObject.set(x, "mobile_iframe", js.undefined)
+    inline def setMobile_iframeUndefined: Self = StObject.set(x, "mobile_iframe", js.undefined)
     
-    @scala.inline
-    def setQuote(value: String): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
+    inline def setQuote(value: String): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuoteUndefined: Self = StObject.set(x, "quote", js.undefined)
+    inline def setQuoteUndefined: Self = StObject.set(x, "quote", js.undefined)
   }
 }

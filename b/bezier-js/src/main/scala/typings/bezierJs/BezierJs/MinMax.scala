@@ -16,31 +16,23 @@ trait MinMax extends StObject {
 }
 object MinMax {
   
-  @scala.inline
-  def apply(max: Double, min: Double): MinMax = {
+  inline def apply(max: Double, min: Double): MinMax = {
     val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
     __obj.asInstanceOf[MinMax]
   }
   
-  @scala.inline
-  implicit class MinMaxMutableBuilder[Self <: MinMax] (val x: Self) extends AnyVal {
+  extension [Self <: MinMax](x: Self) {
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMid(value: Double): Self = StObject.set(x, "mid", value.asInstanceOf[js.Any])
+    inline def setMid(value: Double): Self = StObject.set(x, "mid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMidUndefined: Self = StObject.set(x, "mid", js.undefined)
+    inline def setMidUndefined: Self = StObject.set(x, "mid", js.undefined)
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

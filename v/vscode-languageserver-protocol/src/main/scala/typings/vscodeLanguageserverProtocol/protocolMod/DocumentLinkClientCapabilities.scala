@@ -20,25 +20,19 @@ trait DocumentLinkClientCapabilities extends StObject {
 }
 object DocumentLinkClientCapabilities {
   
-  @scala.inline
-  def apply(): DocumentLinkClientCapabilities = {
+  inline def apply(): DocumentLinkClientCapabilities = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentLinkClientCapabilities]
   }
   
-  @scala.inline
-  implicit class DocumentLinkClientCapabilitiesMutableBuilder[Self <: DocumentLinkClientCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentLinkClientCapabilities](x: Self) {
     
-    @scala.inline
-    def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
+    inline def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
+    inline def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
     
-    @scala.inline
-    def setTooltipSupport(value: Boolean): Self = StObject.set(x, "tooltipSupport", value.asInstanceOf[js.Any])
+    inline def setTooltipSupport(value: Boolean): Self = StObject.set(x, "tooltipSupport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipSupportUndefined: Self = StObject.set(x, "tooltipSupport", js.undefined)
+    inline def setTooltipSupportUndefined: Self = StObject.set(x, "tooltipSupport", js.undefined)
   }
 }

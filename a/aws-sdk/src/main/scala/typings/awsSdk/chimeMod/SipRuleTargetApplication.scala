@@ -23,31 +23,23 @@ trait SipRuleTargetApplication extends StObject {
 }
 object SipRuleTargetApplication {
   
-  @scala.inline
-  def apply(): SipRuleTargetApplication = {
+  inline def apply(): SipRuleTargetApplication = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SipRuleTargetApplication]
   }
   
-  @scala.inline
-  implicit class SipRuleTargetApplicationMutableBuilder[Self <: SipRuleTargetApplication] (val x: Self) extends AnyVal {
+  extension [Self <: SipRuleTargetApplication](x: Self) {
     
-    @scala.inline
-    def setAwsRegion(value: String): Self = StObject.set(x, "AwsRegion", value.asInstanceOf[js.Any])
+    inline def setAwsRegion(value: String): Self = StObject.set(x, "AwsRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsRegionUndefined: Self = StObject.set(x, "AwsRegion", js.undefined)
+    inline def setAwsRegionUndefined: Self = StObject.set(x, "AwsRegion", js.undefined)
     
-    @scala.inline
-    def setPriority(value: SipApplicationPriority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: SipApplicationPriority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "Priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "Priority", js.undefined)
     
-    @scala.inline
-    def setSipMediaApplicationId(value: NonEmptyString): Self = StObject.set(x, "SipMediaApplicationId", value.asInstanceOf[js.Any])
+    inline def setSipMediaApplicationId(value: NonEmptyString): Self = StObject.set(x, "SipMediaApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSipMediaApplicationIdUndefined: Self = StObject.set(x, "SipMediaApplicationId", js.undefined)
+    inline def setSipMediaApplicationIdUndefined: Self = StObject.set(x, "SipMediaApplicationId", js.undefined)
   }
 }

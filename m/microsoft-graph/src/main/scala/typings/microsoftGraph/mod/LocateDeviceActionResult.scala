@@ -13,22 +13,17 @@ trait LocateDeviceActionResult
 }
 object LocateDeviceActionResult {
   
-  @scala.inline
-  def apply(): LocateDeviceActionResult = {
+  inline def apply(): LocateDeviceActionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocateDeviceActionResult]
   }
   
-  @scala.inline
-  implicit class LocateDeviceActionResultMutableBuilder[Self <: LocateDeviceActionResult] (val x: Self) extends AnyVal {
+  extension [Self <: LocateDeviceActionResult](x: Self) {
     
-    @scala.inline
-    def setDeviceLocation(value: NullableOption[DeviceGeoLocation]): Self = StObject.set(x, "deviceLocation", value.asInstanceOf[js.Any])
+    inline def setDeviceLocation(value: NullableOption[DeviceGeoLocation]): Self = StObject.set(x, "deviceLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceLocationNull: Self = StObject.set(x, "deviceLocation", null)
+    inline def setDeviceLocationNull: Self = StObject.set(x, "deviceLocation", null)
     
-    @scala.inline
-    def setDeviceLocationUndefined: Self = StObject.set(x, "deviceLocation", js.undefined)
+    inline def setDeviceLocationUndefined: Self = StObject.set(x, "deviceLocation", js.undefined)
   }
 }

@@ -38,58 +38,41 @@ trait GetInsightRuleReportOutput extends StObject {
 }
 object GetInsightRuleReportOutput {
   
-  @scala.inline
-  def apply(): GetInsightRuleReportOutput = {
+  inline def apply(): GetInsightRuleReportOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetInsightRuleReportOutput]
   }
   
-  @scala.inline
-  implicit class GetInsightRuleReportOutputMutableBuilder[Self <: GetInsightRuleReportOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetInsightRuleReportOutput](x: Self) {
     
-    @scala.inline
-    def setAggregateValue(value: InsightRuleUnboundDouble): Self = StObject.set(x, "AggregateValue", value.asInstanceOf[js.Any])
+    inline def setAggregateValue(value: InsightRuleUnboundDouble): Self = StObject.set(x, "AggregateValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregateValueUndefined: Self = StObject.set(x, "AggregateValue", js.undefined)
+    inline def setAggregateValueUndefined: Self = StObject.set(x, "AggregateValue", js.undefined)
     
-    @scala.inline
-    def setAggregationStatistic(value: InsightRuleAggregationStatistic): Self = StObject.set(x, "AggregationStatistic", value.asInstanceOf[js.Any])
+    inline def setAggregationStatistic(value: InsightRuleAggregationStatistic): Self = StObject.set(x, "AggregationStatistic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregationStatisticUndefined: Self = StObject.set(x, "AggregationStatistic", js.undefined)
+    inline def setAggregationStatisticUndefined: Self = StObject.set(x, "AggregationStatistic", js.undefined)
     
-    @scala.inline
-    def setApproximateUniqueCount(value: InsightRuleUnboundLong): Self = StObject.set(x, "ApproximateUniqueCount", value.asInstanceOf[js.Any])
+    inline def setApproximateUniqueCount(value: InsightRuleUnboundLong): Self = StObject.set(x, "ApproximateUniqueCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApproximateUniqueCountUndefined: Self = StObject.set(x, "ApproximateUniqueCount", js.undefined)
+    inline def setApproximateUniqueCountUndefined: Self = StObject.set(x, "ApproximateUniqueCount", js.undefined)
     
-    @scala.inline
-    def setContributors(value: InsightRuleContributors): Self = StObject.set(x, "Contributors", value.asInstanceOf[js.Any])
+    inline def setContributors(value: InsightRuleContributors): Self = StObject.set(x, "Contributors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContributorsUndefined: Self = StObject.set(x, "Contributors", js.undefined)
+    inline def setContributorsUndefined: Self = StObject.set(x, "Contributors", js.undefined)
     
-    @scala.inline
-    def setContributorsVarargs(value: InsightRuleContributor*): Self = StObject.set(x, "Contributors", js.Array(value :_*))
+    inline def setContributorsVarargs(value: InsightRuleContributor*): Self = StObject.set(x, "Contributors", js.Array(value :_*))
     
-    @scala.inline
-    def setKeyLabels(value: InsightRuleContributorKeyLabels): Self = StObject.set(x, "KeyLabels", value.asInstanceOf[js.Any])
+    inline def setKeyLabels(value: InsightRuleContributorKeyLabels): Self = StObject.set(x, "KeyLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyLabelsUndefined: Self = StObject.set(x, "KeyLabels", js.undefined)
+    inline def setKeyLabelsUndefined: Self = StObject.set(x, "KeyLabels", js.undefined)
     
-    @scala.inline
-    def setKeyLabelsVarargs(value: InsightRuleContributorKeyLabel*): Self = StObject.set(x, "KeyLabels", js.Array(value :_*))
+    inline def setKeyLabelsVarargs(value: InsightRuleContributorKeyLabel*): Self = StObject.set(x, "KeyLabels", js.Array(value :_*))
     
-    @scala.inline
-    def setMetricDatapoints(value: InsightRuleMetricDatapoints): Self = StObject.set(x, "MetricDatapoints", value.asInstanceOf[js.Any])
+    inline def setMetricDatapoints(value: InsightRuleMetricDatapoints): Self = StObject.set(x, "MetricDatapoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricDatapointsUndefined: Self = StObject.set(x, "MetricDatapoints", js.undefined)
+    inline def setMetricDatapointsUndefined: Self = StObject.set(x, "MetricDatapoints", js.undefined)
     
-    @scala.inline
-    def setMetricDatapointsVarargs(value: InsightRuleMetricDatapoint*): Self = StObject.set(x, "MetricDatapoints", js.Array(value :_*))
+    inline def setMetricDatapointsVarargs(value: InsightRuleMetricDatapoint*): Self = StObject.set(x, "MetricDatapoints", js.Array(value :_*))
   }
 }

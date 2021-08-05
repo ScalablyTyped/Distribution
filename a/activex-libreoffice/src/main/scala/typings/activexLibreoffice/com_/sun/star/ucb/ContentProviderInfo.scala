@@ -18,19 +18,15 @@ trait ContentProviderInfo extends StObject {
 }
 object ContentProviderInfo {
   
-  @scala.inline
-  def apply(ContentProvider: XContentProvider, Scheme: String): ContentProviderInfo = {
+  inline def apply(ContentProvider: XContentProvider, Scheme: String): ContentProviderInfo = {
     val __obj = js.Dynamic.literal(ContentProvider = ContentProvider.asInstanceOf[js.Any], Scheme = Scheme.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentProviderInfo]
   }
   
-  @scala.inline
-  implicit class ContentProviderInfoMutableBuilder[Self <: ContentProviderInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ContentProviderInfo](x: Self) {
     
-    @scala.inline
-    def setContentProvider(value: XContentProvider): Self = StObject.set(x, "ContentProvider", value.asInstanceOf[js.Any])
+    inline def setContentProvider(value: XContentProvider): Self = StObject.set(x, "ContentProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheme(value: String): Self = StObject.set(x, "Scheme", value.asInstanceOf[js.Any])
+    inline def setScheme(value: String): Self = StObject.set(x, "Scheme", value.asInstanceOf[js.Any])
   }
 }

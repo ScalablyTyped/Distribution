@@ -12,19 +12,15 @@ trait TfvcPolicyFailureInfo extends StObject {
 }
 object TfvcPolicyFailureInfo {
   
-  @scala.inline
-  def apply(message: String, policyName: String): TfvcPolicyFailureInfo = {
+  inline def apply(message: String, policyName: String): TfvcPolicyFailureInfo = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], policyName = policyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[TfvcPolicyFailureInfo]
   }
   
-  @scala.inline
-  implicit class TfvcPolicyFailureInfoMutableBuilder[Self <: TfvcPolicyFailureInfo] (val x: Self) extends AnyVal {
+  extension [Self <: TfvcPolicyFailureInfo](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyName(value: String): Self = StObject.set(x, "policyName", value.asInstanceOf[js.Any])
+    inline def setPolicyName(value: String): Self = StObject.set(x, "policyName", value.asInstanceOf[js.Any])
   }
 }

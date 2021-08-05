@@ -17,14 +17,11 @@ trait TextureMode extends StObject
 object TextureMode {
   
   /** This mixes both data sources in a fixed ratio. */
-  @scala.inline
-  def BLEND: `2` = 2.asInstanceOf[`2`]
+  inline def BLEND: `2` = 2.asInstanceOf[`2`]
   
   /** This mixes up colors in a way defined by the texture bitmap. */
-  @scala.inline
-  def MODULATE: `1` = 1.asInstanceOf[`1`]
+  inline def MODULATE: `1` = 1.asInstanceOf[`1`]
   
   /** This is the standard mode. */
-  @scala.inline
-  def REPLACE: `0` = 0.asInstanceOf[`0`]
+  inline def REPLACE: `0` = 0.asInstanceOf[`0`]
 }

@@ -19,8 +19,7 @@ trait Disable extends StObject {
 }
 object Disable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     create: Authorization => js.Promise[Response],
     disable: Code => js.Promise[Responsedataundefined],
     enable: Code => js.Promise[Responsedataundefined],
@@ -31,22 +30,16 @@ object Disable {
     __obj.asInstanceOf[Disable]
   }
   
-  @scala.inline
-  implicit class DisableMutableBuilder[Self <: Disable] (val x: Self) extends AnyVal {
+  extension [Self <: Disable](x: Self) {
     
-    @scala.inline
-    def setCreate(value: Authorization => js.Promise[Response]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: Authorization => js.Promise[Response]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDisable(value: Code => js.Promise[Responsedataundefined]): Self = StObject.set(x, "disable", js.Any.fromFunction1(value))
+    inline def setDisable(value: Code => js.Promise[Responsedataundefined]): Self = StObject.set(x, "disable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEnable(value: Code => js.Promise[Responsedataundefined]): Self = StObject.set(x, "enable", js.Any.fromFunction1(value))
+    inline def setEnable(value: Code => js.Promise[Responsedataundefined]): Self = StObject.set(x, "enable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGet(value: String => js.Promise[Response]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: String => js.Promise[Response]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setList(value: () => js.Promise[ResponsedataArrayanymetaa]): Self = StObject.set(x, "list", js.Any.fromFunction0(value))
+    inline def setList(value: () => js.Promise[ResponsedataArrayanymetaa]): Self = StObject.set(x, "list", js.Any.fromFunction0(value))
   }
 }

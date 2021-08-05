@@ -18,25 +18,19 @@ trait ListFindingsReportsResponse extends StObject {
 }
 object ListFindingsReportsResponse {
   
-  @scala.inline
-  def apply(findingsReportSummaries: FindingsReportSummaries): ListFindingsReportsResponse = {
+  inline def apply(findingsReportSummaries: FindingsReportSummaries): ListFindingsReportsResponse = {
     val __obj = js.Dynamic.literal(findingsReportSummaries = findingsReportSummaries.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListFindingsReportsResponse]
   }
   
-  @scala.inline
-  implicit class ListFindingsReportsResponseMutableBuilder[Self <: ListFindingsReportsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListFindingsReportsResponse](x: Self) {
     
-    @scala.inline
-    def setFindingsReportSummaries(value: FindingsReportSummaries): Self = StObject.set(x, "findingsReportSummaries", value.asInstanceOf[js.Any])
+    inline def setFindingsReportSummaries(value: FindingsReportSummaries): Self = StObject.set(x, "findingsReportSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingsReportSummariesVarargs(value: FindingsReportSummary*): Self = StObject.set(x, "findingsReportSummaries", js.Array(value :_*))
+    inline def setFindingsReportSummariesVarargs(value: FindingsReportSummary*): Self = StObject.set(x, "findingsReportSummaries", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait FirefoxLogObject extends StObject {
 }
 object FirefoxLogObject {
   
-  @scala.inline
-  def apply(level: FirefoxLogLevels): FirefoxLogObject = {
+  inline def apply(level: FirefoxLogLevels): FirefoxLogObject = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirefoxLogObject]
   }
   
-  @scala.inline
-  implicit class FirefoxLogObjectMutableBuilder[Self <: FirefoxLogObject] (val x: Self) extends AnyVal {
+  extension [Self <: FirefoxLogObject](x: Self) {
     
-    @scala.inline
-    def setLevel(value: FirefoxLogLevels): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: FirefoxLogLevels): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
   }
 }

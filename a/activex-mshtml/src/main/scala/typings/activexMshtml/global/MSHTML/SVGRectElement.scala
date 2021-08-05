@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.SVGRectElement")
 @js.native
-class SVGRectElement protected ()
+/* private */ class SVGRectElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.SVGRectElement {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.SVGRectElement_typekey")
   var MSHTMLDotSVGRectElement_typekey: typings.activexMshtml.MSHTML.SVGRectElement = js.native
   

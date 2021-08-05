@@ -13,25 +13,19 @@ trait MultiValueLegacyExtendedProperty
 }
 object MultiValueLegacyExtendedProperty {
   
-  @scala.inline
-  def apply(): MultiValueLegacyExtendedProperty = {
+  inline def apply(): MultiValueLegacyExtendedProperty = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MultiValueLegacyExtendedProperty]
   }
   
-  @scala.inline
-  implicit class MultiValueLegacyExtendedPropertyMutableBuilder[Self <: MultiValueLegacyExtendedProperty] (val x: Self) extends AnyVal {
+  extension [Self <: MultiValueLegacyExtendedProperty](x: Self) {
     
-    @scala.inline
-    def setValue(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueNull: Self = StObject.set(x, "value", null)
+    inline def setValueNull: Self = StObject.set(x, "value", null)
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    @scala.inline
-    def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

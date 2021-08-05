@@ -11,14 +11,10 @@ object calculateNodeHeightMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(sizingData: SizingData, value: String): CalculatedNodeHeights = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(sizingData.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[CalculatedNodeHeights]
-  @scala.inline
-  def default(sizingData: SizingData, value: String, minRows: Double): CalculatedNodeHeights = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(sizingData.asInstanceOf[js.Any], value.asInstanceOf[js.Any], minRows.asInstanceOf[js.Any])).asInstanceOf[CalculatedNodeHeights]
-  @scala.inline
-  def default(sizingData: SizingData, value: String, minRows: Double, maxRows: Double): CalculatedNodeHeights = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(sizingData.asInstanceOf[js.Any], value.asInstanceOf[js.Any], minRows.asInstanceOf[js.Any], maxRows.asInstanceOf[js.Any])).asInstanceOf[CalculatedNodeHeights]
-  @scala.inline
-  def default(sizingData: SizingData, value: String, minRows: Unit, maxRows: Double): CalculatedNodeHeights = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(sizingData.asInstanceOf[js.Any], value.asInstanceOf[js.Any], minRows.asInstanceOf[js.Any], maxRows.asInstanceOf[js.Any])).asInstanceOf[CalculatedNodeHeights]
+  inline def default(sizingData: SizingData, value: String): CalculatedNodeHeights = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(sizingData.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[CalculatedNodeHeights]
+  inline def default(sizingData: SizingData, value: String, minRows: Double): CalculatedNodeHeights = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(sizingData.asInstanceOf[js.Any], value.asInstanceOf[js.Any], minRows.asInstanceOf[js.Any])).asInstanceOf[CalculatedNodeHeights]
+  inline def default(sizingData: SizingData, value: String, minRows: Double, maxRows: Double): CalculatedNodeHeights = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(sizingData.asInstanceOf[js.Any], value.asInstanceOf[js.Any], minRows.asInstanceOf[js.Any], maxRows.asInstanceOf[js.Any])).asInstanceOf[CalculatedNodeHeights]
+  inline def default(sizingData: SizingData, value: String, minRows: Unit, maxRows: Double): CalculatedNodeHeights = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(sizingData.asInstanceOf[js.Any], value.asInstanceOf[js.Any], minRows.asInstanceOf[js.Any], maxRows.asInstanceOf[js.Any])).asInstanceOf[CalculatedNodeHeights]
   
   type CalculatedNodeHeights = js.Array[Double]
 }

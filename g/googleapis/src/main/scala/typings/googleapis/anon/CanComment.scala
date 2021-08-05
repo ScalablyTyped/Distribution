@@ -18,43 +18,31 @@ trait CanComment extends StObject {
 }
 object CanComment {
   
-  @scala.inline
-  def apply(): CanComment = {
+  inline def apply(): CanComment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CanComment]
   }
   
-  @scala.inline
-  implicit class CanCommentMutableBuilder[Self <: CanComment] (val x: Self) extends AnyVal {
+  extension [Self <: CanComment](x: Self) {
     
-    @scala.inline
-    def setCanComment(value: Boolean): Self = StObject.set(x, "canComment", value.asInstanceOf[js.Any])
+    inline def setCanComment(value: Boolean): Self = StObject.set(x, "canComment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanCommentUndefined: Self = StObject.set(x, "canComment", js.undefined)
+    inline def setCanCommentUndefined: Self = StObject.set(x, "canComment", js.undefined)
     
-    @scala.inline
-    def setCanPlusone(value: Boolean): Self = StObject.set(x, "canPlusone", value.asInstanceOf[js.Any])
+    inline def setCanPlusone(value: Boolean): Self = StObject.set(x, "canPlusone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanPlusoneUndefined: Self = StObject.set(x, "canPlusone", js.undefined)
+    inline def setCanPlusoneUndefined: Self = StObject.set(x, "canPlusone", js.undefined)
     
-    @scala.inline
-    def setCanUpdate(value: Boolean): Self = StObject.set(x, "canUpdate", value.asInstanceOf[js.Any])
+    inline def setCanUpdate(value: Boolean): Self = StObject.set(x, "canUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanUpdateUndefined: Self = StObject.set(x, "canUpdate", js.undefined)
+    inline def setCanUpdateUndefined: Self = StObject.set(x, "canUpdate", js.undefined)
     
-    @scala.inline
-    def setIsPlusOned(value: Boolean): Self = StObject.set(x, "isPlusOned", value.asInstanceOf[js.Any])
+    inline def setIsPlusOned(value: Boolean): Self = StObject.set(x, "isPlusOned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPlusOnedUndefined: Self = StObject.set(x, "isPlusOned", js.undefined)
+    inline def setIsPlusOnedUndefined: Self = StObject.set(x, "isPlusOned", js.undefined)
     
-    @scala.inline
-    def setResharingDisabled(value: Boolean): Self = StObject.set(x, "resharingDisabled", value.asInstanceOf[js.Any])
+    inline def setResharingDisabled(value: Boolean): Self = StObject.set(x, "resharingDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResharingDisabledUndefined: Self = StObject.set(x, "resharingDisabled", js.undefined)
+    inline def setResharingDisabledUndefined: Self = StObject.set(x, "resharingDisabled", js.undefined)
   }
 }

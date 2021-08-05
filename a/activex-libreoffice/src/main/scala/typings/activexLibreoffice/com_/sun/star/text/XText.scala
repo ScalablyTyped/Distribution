@@ -29,8 +29,7 @@ trait XText
 }
 object XText {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     End: XTextRange,
     Start: XTextRange,
     String: String,
@@ -53,13 +52,10 @@ object XText {
     __obj.asInstanceOf[XText]
   }
   
-  @scala.inline
-  implicit class XTextMutableBuilder[Self <: XText] (val x: Self) extends AnyVal {
+  extension [Self <: XText](x: Self) {
     
-    @scala.inline
-    def setInsertTextContent(value: (XTextRange, XTextContent, Boolean) => Unit): Self = StObject.set(x, "insertTextContent", js.Any.fromFunction3(value))
+    inline def setInsertTextContent(value: (XTextRange, XTextContent, Boolean) => Unit): Self = StObject.set(x, "insertTextContent", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRemoveTextContent(value: XTextContent => Unit): Self = StObject.set(x, "removeTextContent", js.Any.fromFunction1(value))
+    inline def setRemoveTextContent(value: XTextContent => Unit): Self = StObject.set(x, "removeTextContent", js.Any.fromFunction1(value))
   }
 }

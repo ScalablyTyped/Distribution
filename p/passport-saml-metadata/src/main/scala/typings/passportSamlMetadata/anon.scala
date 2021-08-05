@@ -17,23 +17,18 @@ object anon {
   }
   object CamelCase {
     
-    @scala.inline
-    def apply(camelCase: String, description: String, name: String): CamelCase = {
+    inline def apply(camelCase: String, description: String, name: String): CamelCase = {
       val __obj = js.Dynamic.literal(camelCase = camelCase.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[CamelCase]
     }
     
-    @scala.inline
-    implicit class CamelCaseMutableBuilder[Self <: CamelCase] (val x: Self) extends AnyVal {
+    extension [Self <: CamelCase](x: Self) {
       
-      @scala.inline
-      def setCamelCase(value: String): Self = StObject.set(x, "camelCase", value.asInstanceOf[js.Any])
+      inline def setCamelCase(value: String): Self = StObject.set(x, "camelCase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -43,17 +38,14 @@ object anon {
   }
   object Data {
     
-    @scala.inline
-    def apply(data: String): Data = {
+    inline def apply(data: String): Data = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data]
     }
     
-    @scala.inline
-    implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+    extension [Self <: Data](x: Self) {
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
   }
   
@@ -70,17 +62,14 @@ object anon {
   }
   object MultipleCerts {
     
-    @scala.inline
-    def apply(multipleCerts: Boolean): MultipleCerts = {
+    inline def apply(multipleCerts: Boolean): MultipleCerts = {
       val __obj = js.Dynamic.literal(multipleCerts = multipleCerts.asInstanceOf[js.Any])
       __obj.asInstanceOf[MultipleCerts]
     }
     
-    @scala.inline
-    implicit class MultipleCertsMutableBuilder[Self <: MultipleCerts] (val x: Self) extends AnyVal {
+    extension [Self <: MultipleCerts](x: Self) {
       
-      @scala.inline
-      def setMultipleCerts(value: Boolean): Self = StObject.set(x, "multipleCerts", value.asInstanceOf[js.Any])
+      inline def setMultipleCerts(value: Boolean): Self = StObject.set(x, "multipleCerts", value.asInstanceOf[js.Any])
     }
   }
   
@@ -95,32 +84,24 @@ object anon {
   }
   object PartialFetchAxiosConfig {
     
-    @scala.inline
-    def apply(): PartialFetchAxiosConfig = {
+    inline def apply(): PartialFetchAxiosConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialFetchAxiosConfig]
     }
     
-    @scala.inline
-    implicit class PartialFetchAxiosConfigMutableBuilder[Self <: PartialFetchAxiosConfig] (val x: Self) extends AnyVal {
+    extension [Self <: PartialFetchAxiosConfig](x: Self) {
       
-      @scala.inline
-      def setBackupStore(value: Map[String, String]): Self = StObject.set(x, "backupStore", value.asInstanceOf[js.Any])
+      inline def setBackupStore(value: Map[String, String]): Self = StObject.set(x, "backupStore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackupStoreUndefined: Self = StObject.set(x, "backupStore", js.undefined)
+      inline def setBackupStoreUndefined: Self = StObject.set(x, "backupStore", js.undefined)
       
-      @scala.inline
-      def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+      inline def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
+      inline def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -133,26 +114,20 @@ object anon {
   }
   object PartialMetadataConstructo {
     
-    @scala.inline
-    def apply(): PartialMetadataConstructo = {
+    inline def apply(): PartialMetadataConstructo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialMetadataConstructo]
     }
     
-    @scala.inline
-    implicit class PartialMetadataConstructoMutableBuilder[Self <: PartialMetadataConstructo] (val x: Self) extends AnyVal {
+    extension [Self <: PartialMetadataConstructo](x: Self) {
       
-      @scala.inline
-      def setAuthnRequestBinding(value: String): Self = StObject.set(x, "authnRequestBinding", value.asInstanceOf[js.Any])
+      inline def setAuthnRequestBinding(value: String): Self = StObject.set(x, "authnRequestBinding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthnRequestBindingUndefined: Self = StObject.set(x, "authnRequestBinding", js.undefined)
+      inline def setAuthnRequestBindingUndefined: Self = StObject.set(x, "authnRequestBinding", js.undefined)
       
-      @scala.inline
-      def setThrowExceptions(value: Boolean): Self = StObject.set(x, "throwExceptions", value.asInstanceOf[js.Any])
+      inline def setThrowExceptions(value: Boolean): Self = StObject.set(x, "throwExceptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrowExceptionsUndefined: Self = StObject.set(x, "throwExceptions", js.undefined)
+      inline def setThrowExceptionsUndefined: Self = StObject.set(x, "throwExceptions", js.undefined)
     }
   }
 }

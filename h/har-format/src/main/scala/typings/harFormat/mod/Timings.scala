@@ -64,56 +64,40 @@ trait Timings extends StObject {
 }
 object Timings {
   
-  @scala.inline
-  def apply(receive: Double, wait_ : Double): Timings = {
+  inline def apply(receive: Double, wait_ : Double): Timings = {
     val __obj = js.Dynamic.literal(receive = receive.asInstanceOf[js.Any])
     __obj.updateDynamic("wait")(wait_.asInstanceOf[js.Any])
     __obj.asInstanceOf[Timings]
   }
   
-  @scala.inline
-  implicit class TimingsMutableBuilder[Self <: Timings] (val x: Self) extends AnyVal {
+  extension [Self <: Timings](x: Self) {
     
-    @scala.inline
-    def setBlocked(value: Double): Self = StObject.set(x, "blocked", value.asInstanceOf[js.Any])
+    inline def setBlocked(value: Double): Self = StObject.set(x, "blocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockedUndefined: Self = StObject.set(x, "blocked", js.undefined)
+    inline def setBlockedUndefined: Self = StObject.set(x, "blocked", js.undefined)
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
-    @scala.inline
-    def setConnect(value: Double): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
+    inline def setConnect(value: Double): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectUndefined: Self = StObject.set(x, "connect", js.undefined)
+    inline def setConnectUndefined: Self = StObject.set(x, "connect", js.undefined)
     
-    @scala.inline
-    def setDns(value: Double): Self = StObject.set(x, "dns", value.asInstanceOf[js.Any])
+    inline def setDns(value: Double): Self = StObject.set(x, "dns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDnsUndefined: Self = StObject.set(x, "dns", js.undefined)
+    inline def setDnsUndefined: Self = StObject.set(x, "dns", js.undefined)
     
-    @scala.inline
-    def setReceive(value: Double): Self = StObject.set(x, "receive", value.asInstanceOf[js.Any])
+    inline def setReceive(value: Double): Self = StObject.set(x, "receive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSend(value: Double): Self = StObject.set(x, "send", value.asInstanceOf[js.Any])
+    inline def setSend(value: Double): Self = StObject.set(x, "send", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendUndefined: Self = StObject.set(x, "send", js.undefined)
+    inline def setSendUndefined: Self = StObject.set(x, "send", js.undefined)
     
-    @scala.inline
-    def setSsl(value: Double): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
+    inline def setSsl(value: Double): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
+    inline def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
     
-    @scala.inline
-    def setWait_(value: Double): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
+    inline def setWait_(value: Double): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
   }
 }

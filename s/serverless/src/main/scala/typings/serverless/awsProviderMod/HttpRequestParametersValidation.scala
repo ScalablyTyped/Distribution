@@ -15,31 +15,23 @@ trait HttpRequestParametersValidation extends StObject {
 }
 object HttpRequestParametersValidation {
   
-  @scala.inline
-  def apply(): HttpRequestParametersValidation = {
+  inline def apply(): HttpRequestParametersValidation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HttpRequestParametersValidation]
   }
   
-  @scala.inline
-  implicit class HttpRequestParametersValidationMutableBuilder[Self <: HttpRequestParametersValidation] (val x: Self) extends AnyVal {
+  extension [Self <: HttpRequestParametersValidation](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: StringDictionary[Boolean]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: StringDictionary[Boolean]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setPaths(value: StringDictionary[Boolean]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+    inline def setPaths(value: StringDictionary[Boolean]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
+    inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
     
-    @scala.inline
-    def setQuerystrings(value: StringDictionary[Boolean]): Self = StObject.set(x, "querystrings", value.asInstanceOf[js.Any])
+    inline def setQuerystrings(value: StringDictionary[Boolean]): Self = StObject.set(x, "querystrings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuerystringsUndefined: Self = StObject.set(x, "querystrings", js.undefined)
+    inline def setQuerystringsUndefined: Self = StObject.set(x, "querystrings", js.undefined)
   }
 }

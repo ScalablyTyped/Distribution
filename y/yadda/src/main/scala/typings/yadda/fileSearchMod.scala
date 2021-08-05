@@ -30,20 +30,16 @@ object fileSearchMod {
   }
   object FileSearch {
     
-    @scala.inline
-    def apply(each: js.Function1[/* file */ String, Unit] => Unit, list: () => js.Array[String]): FileSearch = {
+    inline def apply(each: js.Function1[/* file */ String, Unit] => Unit, list: () => js.Array[String]): FileSearch = {
       val __obj = js.Dynamic.literal(each = js.Any.fromFunction1(each), list = js.Any.fromFunction0(list))
       __obj.asInstanceOf[FileSearch]
     }
     
-    @scala.inline
-    implicit class FileSearchMutableBuilder[Self <: FileSearch] (val x: Self) extends AnyVal {
+    extension [Self <: FileSearch](x: Self) {
       
-      @scala.inline
-      def setEach(value: js.Function1[/* file */ String, Unit] => Unit): Self = StObject.set(x, "each", js.Any.fromFunction1(value))
+      inline def setEach(value: js.Function1[/* file */ String, Unit] => Unit): Self = StObject.set(x, "each", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setList(value: () => js.Array[String]): Self = StObject.set(x, "list", js.Any.fromFunction0(value))
+      inline def setList(value: () => js.Array[String]): Self = StObject.set(x, "list", js.Any.fromFunction0(value))
     }
   }
 }

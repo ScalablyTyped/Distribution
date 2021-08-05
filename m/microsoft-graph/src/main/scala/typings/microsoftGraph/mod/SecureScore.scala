@@ -46,109 +46,75 @@ trait SecureScore
 }
 object SecureScore {
   
-  @scala.inline
-  def apply(): SecureScore = {
+  inline def apply(): SecureScore = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SecureScore]
   }
   
-  @scala.inline
-  implicit class SecureScoreMutableBuilder[Self <: SecureScore] (val x: Self) extends AnyVal {
+  extension [Self <: SecureScore](x: Self) {
     
-    @scala.inline
-    def setActiveUserCount(value: NullableOption[Double]): Self = StObject.set(x, "activeUserCount", value.asInstanceOf[js.Any])
+    inline def setActiveUserCount(value: NullableOption[Double]): Self = StObject.set(x, "activeUserCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveUserCountNull: Self = StObject.set(x, "activeUserCount", null)
+    inline def setActiveUserCountNull: Self = StObject.set(x, "activeUserCount", null)
     
-    @scala.inline
-    def setActiveUserCountUndefined: Self = StObject.set(x, "activeUserCount", js.undefined)
+    inline def setActiveUserCountUndefined: Self = StObject.set(x, "activeUserCount", js.undefined)
     
-    @scala.inline
-    def setAverageComparativeScores(value: NullableOption[js.Array[AverageComparativeScore]]): Self = StObject.set(x, "averageComparativeScores", value.asInstanceOf[js.Any])
+    inline def setAverageComparativeScores(value: NullableOption[js.Array[AverageComparativeScore]]): Self = StObject.set(x, "averageComparativeScores", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAverageComparativeScoresNull: Self = StObject.set(x, "averageComparativeScores", null)
+    inline def setAverageComparativeScoresNull: Self = StObject.set(x, "averageComparativeScores", null)
     
-    @scala.inline
-    def setAverageComparativeScoresUndefined: Self = StObject.set(x, "averageComparativeScores", js.undefined)
+    inline def setAverageComparativeScoresUndefined: Self = StObject.set(x, "averageComparativeScores", js.undefined)
     
-    @scala.inline
-    def setAverageComparativeScoresVarargs(value: AverageComparativeScore*): Self = StObject.set(x, "averageComparativeScores", js.Array(value :_*))
+    inline def setAverageComparativeScoresVarargs(value: AverageComparativeScore*): Self = StObject.set(x, "averageComparativeScores", js.Array(value :_*))
     
-    @scala.inline
-    def setAzureTenantId(value: String): Self = StObject.set(x, "azureTenantId", value.asInstanceOf[js.Any])
+    inline def setAzureTenantId(value: String): Self = StObject.set(x, "azureTenantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAzureTenantIdUndefined: Self = StObject.set(x, "azureTenantId", js.undefined)
+    inline def setAzureTenantIdUndefined: Self = StObject.set(x, "azureTenantId", js.undefined)
     
-    @scala.inline
-    def setControlScores(value: NullableOption[js.Array[ControlScore]]): Self = StObject.set(x, "controlScores", value.asInstanceOf[js.Any])
+    inline def setControlScores(value: NullableOption[js.Array[ControlScore]]): Self = StObject.set(x, "controlScores", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlScoresNull: Self = StObject.set(x, "controlScores", null)
+    inline def setControlScoresNull: Self = StObject.set(x, "controlScores", null)
     
-    @scala.inline
-    def setControlScoresUndefined: Self = StObject.set(x, "controlScores", js.undefined)
+    inline def setControlScoresUndefined: Self = StObject.set(x, "controlScores", js.undefined)
     
-    @scala.inline
-    def setControlScoresVarargs(value: ControlScore*): Self = StObject.set(x, "controlScores", js.Array(value :_*))
+    inline def setControlScoresVarargs(value: ControlScore*): Self = StObject.set(x, "controlScores", js.Array(value :_*))
     
-    @scala.inline
-    def setCreatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
+    inline def setCreatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedDateTimeNull: Self = StObject.set(x, "createdDateTime", null)
+    inline def setCreatedDateTimeNull: Self = StObject.set(x, "createdDateTime", null)
     
-    @scala.inline
-    def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
+    inline def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
     
-    @scala.inline
-    def setCurrentScore(value: NullableOption[Double]): Self = StObject.set(x, "currentScore", value.asInstanceOf[js.Any])
+    inline def setCurrentScore(value: NullableOption[Double]): Self = StObject.set(x, "currentScore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentScoreNull: Self = StObject.set(x, "currentScore", null)
+    inline def setCurrentScoreNull: Self = StObject.set(x, "currentScore", null)
     
-    @scala.inline
-    def setCurrentScoreUndefined: Self = StObject.set(x, "currentScore", js.undefined)
+    inline def setCurrentScoreUndefined: Self = StObject.set(x, "currentScore", js.undefined)
     
-    @scala.inline
-    def setEnabledServices(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "enabledServices", value.asInstanceOf[js.Any])
+    inline def setEnabledServices(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "enabledServices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledServicesNull: Self = StObject.set(x, "enabledServices", null)
+    inline def setEnabledServicesNull: Self = StObject.set(x, "enabledServices", null)
     
-    @scala.inline
-    def setEnabledServicesUndefined: Self = StObject.set(x, "enabledServices", js.undefined)
+    inline def setEnabledServicesUndefined: Self = StObject.set(x, "enabledServices", js.undefined)
     
-    @scala.inline
-    def setEnabledServicesVarargs(value: String*): Self = StObject.set(x, "enabledServices", js.Array(value :_*))
+    inline def setEnabledServicesVarargs(value: String*): Self = StObject.set(x, "enabledServices", js.Array(value :_*))
     
-    @scala.inline
-    def setLicensedUserCount(value: NullableOption[Double]): Self = StObject.set(x, "licensedUserCount", value.asInstanceOf[js.Any])
+    inline def setLicensedUserCount(value: NullableOption[Double]): Self = StObject.set(x, "licensedUserCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicensedUserCountNull: Self = StObject.set(x, "licensedUserCount", null)
+    inline def setLicensedUserCountNull: Self = StObject.set(x, "licensedUserCount", null)
     
-    @scala.inline
-    def setLicensedUserCountUndefined: Self = StObject.set(x, "licensedUserCount", js.undefined)
+    inline def setLicensedUserCountUndefined: Self = StObject.set(x, "licensedUserCount", js.undefined)
     
-    @scala.inline
-    def setMaxScore(value: NullableOption[Double]): Self = StObject.set(x, "maxScore", value.asInstanceOf[js.Any])
+    inline def setMaxScore(value: NullableOption[Double]): Self = StObject.set(x, "maxScore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxScoreNull: Self = StObject.set(x, "maxScore", null)
+    inline def setMaxScoreNull: Self = StObject.set(x, "maxScore", null)
     
-    @scala.inline
-    def setMaxScoreUndefined: Self = StObject.set(x, "maxScore", js.undefined)
+    inline def setMaxScoreUndefined: Self = StObject.set(x, "maxScore", js.undefined)
     
-    @scala.inline
-    def setVendorInformation(value: NullableOption[SecurityVendorInformation]): Self = StObject.set(x, "vendorInformation", value.asInstanceOf[js.Any])
+    inline def setVendorInformation(value: NullableOption[SecurityVendorInformation]): Self = StObject.set(x, "vendorInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVendorInformationNull: Self = StObject.set(x, "vendorInformation", null)
+    inline def setVendorInformationNull: Self = StObject.set(x, "vendorInformation", null)
     
-    @scala.inline
-    def setVendorInformationUndefined: Self = StObject.set(x, "vendorInformation", js.undefined)
+    inline def setVendorInformationUndefined: Self = StObject.set(x, "vendorInformation", js.undefined)
   }
 }

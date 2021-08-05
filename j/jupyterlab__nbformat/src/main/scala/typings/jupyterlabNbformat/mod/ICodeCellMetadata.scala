@@ -29,8 +29,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object ICodeCellMetadata {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     collapsed: Boolean,
     jupyter: PartialICodeCellJupyterMe,
     name: String,
@@ -42,16 +41,12 @@ object ICodeCellMetadata {
     __obj.asInstanceOf[ICodeCellMetadata]
   }
   
-  @scala.inline
-  implicit class ICodeCellMetadataMutableBuilder[Self <: ICodeCellMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: ICodeCellMetadata](x: Self) {
     
-    @scala.inline
-    def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+    inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJupyter(value: PartialICodeCellJupyterMe): Self = StObject.set(x, "jupyter", value.asInstanceOf[js.Any])
+    inline def setJupyter(value: PartialICodeCellJupyterMe): Self = StObject.set(x, "jupyter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrolled(value: Boolean | auto): Self = StObject.set(x, "scrolled", value.asInstanceOf[js.Any])
+    inline def setScrolled(value: Boolean | auto): Self = StObject.set(x, "scrolled", value.asInstanceOf[js.Any])
   }
 }

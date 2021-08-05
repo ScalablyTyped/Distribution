@@ -18,25 +18,19 @@ trait AwsDynamoDbTableBillingModeSummary extends StObject {
 }
 object AwsDynamoDbTableBillingModeSummary {
   
-  @scala.inline
-  def apply(): AwsDynamoDbTableBillingModeSummary = {
+  inline def apply(): AwsDynamoDbTableBillingModeSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsDynamoDbTableBillingModeSummary]
   }
   
-  @scala.inline
-  implicit class AwsDynamoDbTableBillingModeSummaryMutableBuilder[Self <: AwsDynamoDbTableBillingModeSummary] (val x: Self) extends AnyVal {
+  extension [Self <: AwsDynamoDbTableBillingModeSummary](x: Self) {
     
-    @scala.inline
-    def setBillingMode(value: NonEmptyString): Self = StObject.set(x, "BillingMode", value.asInstanceOf[js.Any])
+    inline def setBillingMode(value: NonEmptyString): Self = StObject.set(x, "BillingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillingModeUndefined: Self = StObject.set(x, "BillingMode", js.undefined)
+    inline def setBillingModeUndefined: Self = StObject.set(x, "BillingMode", js.undefined)
     
-    @scala.inline
-    def setLastUpdateToPayPerRequestDateTime(value: NonEmptyString): Self = StObject.set(x, "LastUpdateToPayPerRequestDateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdateToPayPerRequestDateTime(value: NonEmptyString): Self = StObject.set(x, "LastUpdateToPayPerRequestDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdateToPayPerRequestDateTimeUndefined: Self = StObject.set(x, "LastUpdateToPayPerRequestDateTime", js.undefined)
+    inline def setLastUpdateToPayPerRequestDateTimeUndefined: Self = StObject.set(x, "LastUpdateToPayPerRequestDateTime", js.undefined)
   }
 }

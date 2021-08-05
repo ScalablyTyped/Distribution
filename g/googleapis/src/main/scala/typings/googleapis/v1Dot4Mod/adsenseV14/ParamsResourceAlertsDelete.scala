@@ -24,25 +24,19 @@ trait ParamsResourceAlertsDelete
 }
 object ParamsResourceAlertsDelete {
   
-  @scala.inline
-  def apply(): ParamsResourceAlertsDelete = {
+  inline def apply(): ParamsResourceAlertsDelete = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceAlertsDelete]
   }
   
-  @scala.inline
-  implicit class ParamsResourceAlertsDeleteMutableBuilder[Self <: ParamsResourceAlertsDelete] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceAlertsDelete](x: Self) {
     
-    @scala.inline
-    def setAlertId(value: String): Self = StObject.set(x, "alertId", value.asInstanceOf[js.Any])
+    inline def setAlertId(value: String): Self = StObject.set(x, "alertId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlertIdUndefined: Self = StObject.set(x, "alertId", js.undefined)
+    inline def setAlertIdUndefined: Self = StObject.set(x, "alertId", js.undefined)
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
   }
 }

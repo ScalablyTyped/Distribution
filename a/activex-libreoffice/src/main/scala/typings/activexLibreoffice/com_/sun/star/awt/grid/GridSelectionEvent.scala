@@ -24,8 +24,7 @@ trait GridSelectionEvent
 }
 object GridSelectionEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     SelectedColumnIndexes: SafeArray[Double],
     SelectedRowIndexes: SafeArray[Double],
     Source: XInterface
@@ -34,13 +33,10 @@ object GridSelectionEvent {
     __obj.asInstanceOf[GridSelectionEvent]
   }
   
-  @scala.inline
-  implicit class GridSelectionEventMutableBuilder[Self <: GridSelectionEvent] (val x: Self) extends AnyVal {
+  extension [Self <: GridSelectionEvent](x: Self) {
     
-    @scala.inline
-    def setSelectedColumnIndexes(value: SafeArray[Double]): Self = StObject.set(x, "SelectedColumnIndexes", value.asInstanceOf[js.Any])
+    inline def setSelectedColumnIndexes(value: SafeArray[Double]): Self = StObject.set(x, "SelectedColumnIndexes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedRowIndexes(value: SafeArray[Double]): Self = StObject.set(x, "SelectedRowIndexes", value.asInstanceOf[js.Any])
+    inline def setSelectedRowIndexes(value: SafeArray[Double]): Self = StObject.set(x, "SelectedRowIndexes", value.asInstanceOf[js.Any])
   }
 }

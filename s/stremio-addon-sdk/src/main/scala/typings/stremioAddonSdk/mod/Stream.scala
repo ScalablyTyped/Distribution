@@ -66,70 +66,49 @@ trait Stream extends StObject {
 }
 object Stream {
   
-  @scala.inline
-  def apply(): Stream = {
+  inline def apply(): Stream = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Stream]
   }
   
-  @scala.inline
-  implicit class StreamMutableBuilder[Self <: Stream] (val x: Self) extends AnyVal {
+  extension [Self <: Stream](x: Self) {
     
-    @scala.inline
-    def setBehaviorHints(value: CountryWhitelist): Self = StObject.set(x, "behaviorHints", value.asInstanceOf[js.Any])
+    inline def setBehaviorHints(value: CountryWhitelist): Self = StObject.set(x, "behaviorHints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBehaviorHintsUndefined: Self = StObject.set(x, "behaviorHints", js.undefined)
+    inline def setBehaviorHintsUndefined: Self = StObject.set(x, "behaviorHints", js.undefined)
     
-    @scala.inline
-    def setExternalUrl(value: String): Self = StObject.set(x, "externalUrl", value.asInstanceOf[js.Any])
+    inline def setExternalUrl(value: String): Self = StObject.set(x, "externalUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalUrlUndefined: Self = StObject.set(x, "externalUrl", js.undefined)
+    inline def setExternalUrlUndefined: Self = StObject.set(x, "externalUrl", js.undefined)
     
-    @scala.inline
-    def setFileIdx(value: Double): Self = StObject.set(x, "fileIdx", value.asInstanceOf[js.Any])
+    inline def setFileIdx(value: Double): Self = StObject.set(x, "fileIdx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileIdxUndefined: Self = StObject.set(x, "fileIdx", js.undefined)
+    inline def setFileIdxUndefined: Self = StObject.set(x, "fileIdx", js.undefined)
     
-    @scala.inline
-    def setInfoHash(value: String): Self = StObject.set(x, "infoHash", value.asInstanceOf[js.Any])
+    inline def setInfoHash(value: String): Self = StObject.set(x, "infoHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoHashUndefined: Self = StObject.set(x, "infoHash", js.undefined)
+    inline def setInfoHashUndefined: Self = StObject.set(x, "infoHash", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSubtitles(value: js.Array[Subtitle]): Self = StObject.set(x, "subtitles", value.asInstanceOf[js.Any])
+    inline def setSubtitles(value: js.Array[Subtitle]): Self = StObject.set(x, "subtitles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtitlesUndefined: Self = StObject.set(x, "subtitles", js.undefined)
+    inline def setSubtitlesUndefined: Self = StObject.set(x, "subtitles", js.undefined)
     
-    @scala.inline
-    def setSubtitlesVarargs(value: Subtitle*): Self = StObject.set(x, "subtitles", js.Array(value :_*))
+    inline def setSubtitlesVarargs(value: Subtitle*): Self = StObject.set(x, "subtitles", js.Array(value :_*))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    @scala.inline
-    def setYtId(value: String): Self = StObject.set(x, "ytId", value.asInstanceOf[js.Any])
+    inline def setYtId(value: String): Self = StObject.set(x, "ytId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYtIdUndefined: Self = StObject.set(x, "ytId", js.undefined)
+    inline def setYtIdUndefined: Self = StObject.set(x, "ytId", js.undefined)
   }
 }

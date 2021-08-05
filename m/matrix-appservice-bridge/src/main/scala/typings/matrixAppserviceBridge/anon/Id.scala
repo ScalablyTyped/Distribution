@@ -17,8 +17,7 @@ trait Id extends StObject {
 }
 object Id {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     id: String,
     realJoinedUsers: js.Array[String],
     remoteJoinedUsers: js.Array[String],
@@ -28,28 +27,20 @@ object Id {
     __obj.asInstanceOf[Id]
   }
   
-  @scala.inline
-  implicit class IdMutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
+  extension [Self <: Id](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRealJoinedUsers(value: js.Array[String]): Self = StObject.set(x, "realJoinedUsers", value.asInstanceOf[js.Any])
+    inline def setRealJoinedUsers(value: js.Array[String]): Self = StObject.set(x, "realJoinedUsers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRealJoinedUsersVarargs(value: String*): Self = StObject.set(x, "realJoinedUsers", js.Array(value :_*))
+    inline def setRealJoinedUsersVarargs(value: String*): Self = StObject.set(x, "realJoinedUsers", js.Array(value :_*))
     
-    @scala.inline
-    def setRemoteJoinedUsers(value: js.Array[String]): Self = StObject.set(x, "remoteJoinedUsers", value.asInstanceOf[js.Any])
+    inline def setRemoteJoinedUsers(value: js.Array[String]): Self = StObject.set(x, "remoteJoinedUsers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteJoinedUsersVarargs(value: String*): Self = StObject.set(x, "remoteJoinedUsers", js.Array(value :_*))
+    inline def setRemoteJoinedUsersVarargs(value: String*): Self = StObject.set(x, "remoteJoinedUsers", js.Array(value :_*))
     
-    @scala.inline
-    def setState(value: js.Array[StateLookupEvent]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: js.Array[StateLookupEvent]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateVarargs(value: StateLookupEvent*): Self = StObject.set(x, "state", js.Array(value :_*))
+    inline def setStateVarargs(value: StateLookupEvent*): Self = StObject.set(x, "state", js.Array(value :_*))
   }
 }

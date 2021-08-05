@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IntegrationName extends StObject
 object IntegrationName {
   
-  @scala.inline
-  def capacitor: typings.ionic.ionicStrings.capacitor = "capacitor".asInstanceOf[typings.ionic.ionicStrings.capacitor]
+  inline def capacitor: typings.ionic.ionicStrings.capacitor = "capacitor".asInstanceOf[typings.ionic.ionicStrings.capacitor]
   
-  @scala.inline
-  def cordova: typings.ionic.ionicStrings.cordova = "cordova".asInstanceOf[typings.ionic.ionicStrings.cordova]
+  inline def cordova: typings.ionic.ionicStrings.cordova = "cordova".asInstanceOf[typings.ionic.ionicStrings.cordova]
   
-  @scala.inline
-  def enterprise: typings.ionic.ionicStrings.enterprise = "enterprise".asInstanceOf[typings.ionic.ionicStrings.enterprise]
+  inline def enterprise: typings.ionic.ionicStrings.enterprise = "enterprise".asInstanceOf[typings.ionic.ionicStrings.enterprise]
 }

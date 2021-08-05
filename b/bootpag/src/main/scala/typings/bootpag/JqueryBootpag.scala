@@ -101,116 +101,80 @@ object JqueryBootpag {
   }
   object Options {
     
-    @scala.inline
-    def apply(maxVisible: Double, total: Double): Options = {
+    inline def apply(maxVisible: Double, total: Double): Options = {
       val __obj = js.Dynamic.literal(maxVisible = maxVisible.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setActiveClass(value: String): Self = StObject.set(x, "activeClass", value.asInstanceOf[js.Any])
+      inline def setActiveClass(value: String): Self = StObject.set(x, "activeClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveClassUndefined: Self = StObject.set(x, "activeClass", js.undefined)
+      inline def setActiveClassUndefined: Self = StObject.set(x, "activeClass", js.undefined)
       
-      @scala.inline
-      def setDisabledClass(value: String): Self = StObject.set(x, "disabledClass", value.asInstanceOf[js.Any])
+      inline def setDisabledClass(value: String): Self = StObject.set(x, "disabledClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledClassUndefined: Self = StObject.set(x, "disabledClass", js.undefined)
+      inline def setDisabledClassUndefined: Self = StObject.set(x, "disabledClass", js.undefined)
       
-      @scala.inline
-      def setFirst(value: String): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
+      inline def setFirst(value: String): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstClass(value: String): Self = StObject.set(x, "firstClass", value.asInstanceOf[js.Any])
+      inline def setFirstClass(value: String): Self = StObject.set(x, "firstClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstClassUndefined: Self = StObject.set(x, "firstClass", js.undefined)
+      inline def setFirstClassUndefined: Self = StObject.set(x, "firstClass", js.undefined)
       
-      @scala.inline
-      def setFirstLastUse(value: Boolean): Self = StObject.set(x, "firstLastUse", value.asInstanceOf[js.Any])
+      inline def setFirstLastUse(value: Boolean): Self = StObject.set(x, "firstLastUse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstLastUseUndefined: Self = StObject.set(x, "firstLastUse", js.undefined)
+      inline def setFirstLastUseUndefined: Self = StObject.set(x, "firstLastUse", js.undefined)
       
-      @scala.inline
-      def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
+      inline def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
       
-      @scala.inline
-      def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+      inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
       
-      @scala.inline
-      def setHrefVariable(value: String): Self = StObject.set(x, "hrefVariable", value.asInstanceOf[js.Any])
+      inline def setHrefVariable(value: String): Self = StObject.set(x, "hrefVariable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHrefVariableUndefined: Self = StObject.set(x, "hrefVariable", js.undefined)
+      inline def setHrefVariableUndefined: Self = StObject.set(x, "hrefVariable", js.undefined)
       
-      @scala.inline
-      def setLast(value: String): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
+      inline def setLast(value: String): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastClass(value: String): Self = StObject.set(x, "lastClass", value.asInstanceOf[js.Any])
+      inline def setLastClass(value: String): Self = StObject.set(x, "lastClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastClassUndefined: Self = StObject.set(x, "lastClass", js.undefined)
+      inline def setLastClassUndefined: Self = StObject.set(x, "lastClass", js.undefined)
       
-      @scala.inline
-      def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
+      inline def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
       
-      @scala.inline
-      def setLeaps(value: Boolean): Self = StObject.set(x, "leaps", value.asInstanceOf[js.Any])
+      inline def setLeaps(value: Boolean): Self = StObject.set(x, "leaps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeapsUndefined: Self = StObject.set(x, "leaps", js.undefined)
+      inline def setLeapsUndefined: Self = StObject.set(x, "leaps", js.undefined)
       
-      @scala.inline
-      def setMaxVisible(value: Double): Self = StObject.set(x, "maxVisible", value.asInstanceOf[js.Any])
+      inline def setMaxVisible(value: Double): Self = StObject.set(x, "maxVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+      inline def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextClass(value: String): Self = StObject.set(x, "nextClass", value.asInstanceOf[js.Any])
+      inline def setNextClass(value: String): Self = StObject.set(x, "nextClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextClassUndefined: Self = StObject.set(x, "nextClass", js.undefined)
+      inline def setNextClassUndefined: Self = StObject.set(x, "nextClass", js.undefined)
       
-      @scala.inline
-      def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+      inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
       
-      @scala.inline
-      def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+      inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
       
-      @scala.inline
-      def setPrev(value: String): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+      inline def setPrev(value: String): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevClass(value: String): Self = StObject.set(x, "prevClass", value.asInstanceOf[js.Any])
+      inline def setPrevClass(value: String): Self = StObject.set(x, "prevClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevClassUndefined: Self = StObject.set(x, "prevClass", js.undefined)
+      inline def setPrevClassUndefined: Self = StObject.set(x, "prevClass", js.undefined)
       
-      @scala.inline
-      def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
+      inline def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapClass(value: String): Self = StObject.set(x, "wrapClass", value.asInstanceOf[js.Any])
+      inline def setWrapClass(value: String): Self = StObject.set(x, "wrapClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapClassUndefined: Self = StObject.set(x, "wrapClass", js.undefined)
+      inline def setWrapClassUndefined: Self = StObject.set(x, "wrapClass", js.undefined)
     }
   }
   

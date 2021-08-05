@@ -42,16 +42,14 @@ object callCredentialsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def createEmpty(): CallCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createEmpty")().asInstanceOf[CallCredentials]
+    inline def createEmpty(): CallCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createEmpty")().asInstanceOf[CallCredentials]
     
     /**
       * Create a gRPC credential from a Google credential object.
       * @param googleCredentials The authentication client to use.
       * @return The resulting CallCredentials object.
       */
-    @scala.inline
-    def createFromGoogleCredential(googleCredentials: OAuth2Client): CallCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromGoogleCredential")(googleCredentials.asInstanceOf[js.Any]).asInstanceOf[CallCredentials]
+    inline def createFromGoogleCredential(googleCredentials: OAuth2Client): CallCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromGoogleCredential")(googleCredentials.asInstanceOf[js.Any]).asInstanceOf[CallCredentials]
     
     /**
       * Creates a new CallCredentials object from a given function that generates
@@ -60,8 +58,7 @@ object callCredentialsMod {
       * generates a Metadata object based on these options, which is passed back
       * to the caller via a supplied (err, metadata) callback.
       */
-    @scala.inline
-    def createFromMetadataGenerator(metadataGenerator: CallMetadataGenerator): CallCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromMetadataGenerator")(metadataGenerator.asInstanceOf[js.Any]).asInstanceOf[CallCredentials]
+    inline def createFromMetadataGenerator(metadataGenerator: CallMetadataGenerator): CallCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromMetadataGenerator")(metadataGenerator.asInstanceOf[js.Any]).asInstanceOf[CallCredentials]
   }
   
   type CallMetadataGenerator = js.Function2[
@@ -76,17 +73,14 @@ object callCredentialsMod {
   }
   object CallMetadataOptions {
     
-    @scala.inline
-    def apply(service_url: String): CallMetadataOptions = {
+    inline def apply(service_url: String): CallMetadataOptions = {
       val __obj = js.Dynamic.literal(service_url = service_url.asInstanceOf[js.Any])
       __obj.asInstanceOf[CallMetadataOptions]
     }
     
-    @scala.inline
-    implicit class CallMetadataOptionsMutableBuilder[Self <: CallMetadataOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CallMetadataOptions](x: Self) {
       
-      @scala.inline
-      def setService_url(value: String): Self = StObject.set(x, "service_url", value.asInstanceOf[js.Any])
+      inline def setService_url(value: String): Self = StObject.set(x, "service_url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -116,19 +110,16 @@ object callCredentialsMod {
   }
   object OldOAuth2Client {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getRequestMetadata: (String, js.Function2[/* err */ Error | Null, /* headers */ js.UndefOr[StringDictionary[String]], Unit]) => Unit
     ): OldOAuth2Client = {
       val __obj = js.Dynamic.literal(getRequestMetadata = js.Any.fromFunction2(getRequestMetadata))
       __obj.asInstanceOf[OldOAuth2Client]
     }
     
-    @scala.inline
-    implicit class OldOAuth2ClientMutableBuilder[Self <: OldOAuth2Client] (val x: Self) extends AnyVal {
+    extension [Self <: OldOAuth2Client](x: Self) {
       
-      @scala.inline
-      def setGetRequestMetadata(
+      inline def setGetRequestMetadata(
         value: (String, js.Function2[/* err */ Error | Null, /* headers */ js.UndefOr[StringDictionary[String]], Unit]) => Unit
       ): Self = StObject.set(x, "getRequestMetadata", js.Any.fromFunction2(value))
     }

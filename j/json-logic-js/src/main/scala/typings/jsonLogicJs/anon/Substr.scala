@@ -20,8 +20,7 @@ trait Substr
 }
 object Substr {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     substr: (js.Tuple2[
       /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object, 
       /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object
@@ -35,11 +34,9 @@ object Substr {
     __obj.asInstanceOf[Substr]
   }
   
-  @scala.inline
-  implicit class SubstrMutableBuilder[Self <: Substr] (val x: Self) extends AnyVal {
+  extension [Self <: Substr](x: Self) {
     
-    @scala.inline
-    def setSubstr(
+    inline def setSubstr(
       value: (js.Tuple2[
           /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object, 
           /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object

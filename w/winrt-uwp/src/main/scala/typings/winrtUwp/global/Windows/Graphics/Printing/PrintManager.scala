@@ -22,14 +22,12 @@ object PrintManager {
     * @return The PrintManager object.
     */
   /* static member */
-  @scala.inline
-  def getForCurrentView(): typings.winrtUwp.Windows.Graphics.Printing.PrintManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrtUwp.Windows.Graphics.Printing.PrintManager]
+  inline def getForCurrentView(): typings.winrtUwp.Windows.Graphics.Printing.PrintManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrtUwp.Windows.Graphics.Printing.PrintManager]
   
   /**
     * Programmatically initiates the user interface for printing content.
     * @return A Boolean value to indicate a TRUE for success or a FALSE for a failure.
     */
   /* static member */
-  @scala.inline
-  def showPrintUIAsync(): IPromiseWithIAsyncOperation[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("showPrintUIAsync")().asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
+  inline def showPrintUIAsync(): IPromiseWithIAsyncOperation[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("showPrintUIAsync")().asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
 }

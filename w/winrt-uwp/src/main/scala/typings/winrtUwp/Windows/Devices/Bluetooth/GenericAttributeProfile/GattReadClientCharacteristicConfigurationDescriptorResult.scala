@@ -15,8 +15,7 @@ trait GattReadClientCharacteristicConfigurationDescriptorResult extends StObject
 }
 object GattReadClientCharacteristicConfigurationDescriptorResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clientCharacteristicConfigurationDescriptor: GattClientCharacteristicConfigurationDescriptorValue,
     status: GattCommunicationStatus
   ): GattReadClientCharacteristicConfigurationDescriptorResult = {
@@ -24,13 +23,10 @@ object GattReadClientCharacteristicConfigurationDescriptorResult {
     __obj.asInstanceOf[GattReadClientCharacteristicConfigurationDescriptorResult]
   }
   
-  @scala.inline
-  implicit class GattReadClientCharacteristicConfigurationDescriptorResultMutableBuilder[Self <: GattReadClientCharacteristicConfigurationDescriptorResult] (val x: Self) extends AnyVal {
+  extension [Self <: GattReadClientCharacteristicConfigurationDescriptorResult](x: Self) {
     
-    @scala.inline
-    def setClientCharacteristicConfigurationDescriptor(value: GattClientCharacteristicConfigurationDescriptorValue): Self = StObject.set(x, "clientCharacteristicConfigurationDescriptor", value.asInstanceOf[js.Any])
+    inline def setClientCharacteristicConfigurationDescriptor(value: GattClientCharacteristicConfigurationDescriptorValue): Self = StObject.set(x, "clientCharacteristicConfigurationDescriptor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: GattCommunicationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: GattCommunicationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

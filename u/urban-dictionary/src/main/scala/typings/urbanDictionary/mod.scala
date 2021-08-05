@@ -12,20 +12,14 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def defid(id: Double): js.Promise[WordDefinition] = ^.asInstanceOf[js.Dynamic].applyDynamic("defid")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[WordDefinition]]
-  @scala.inline
-  def defid(id: Double, callback: js.Function2[/* error */ Error, /* object */ WordDefinition, js.Any]): js.Promise[WordDefinition] = (^.asInstanceOf[js.Dynamic].applyDynamic("defid")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WordDefinition]]
+  inline def defid(id: Double): js.Promise[WordDefinition] = ^.asInstanceOf[js.Dynamic].applyDynamic("defid")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[WordDefinition]]
+  inline def defid(id: Double, callback: js.Function2[/* error */ Error, /* object */ WordDefinition, js.Any]): js.Promise[WordDefinition] = (^.asInstanceOf[js.Dynamic].applyDynamic("defid")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WordDefinition]]
   
-  @scala.inline
-  def random(): js.Promise[WordDefinition] = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[js.Promise[WordDefinition]]
-  @scala.inline
-  def random(callback: js.Function2[/* error */ Error, /* object */ WordDefinition, js.Any]): js.Promise[WordDefinition] = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[WordDefinition]]
+  inline def random(): js.Promise[WordDefinition] = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[js.Promise[WordDefinition]]
+  inline def random(callback: js.Function2[/* error */ Error, /* object */ WordDefinition, js.Any]): js.Promise[WordDefinition] = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[WordDefinition]]
   
-  @scala.inline
-  def term(word: String): js.Promise[Entries] = ^.asInstanceOf[js.Dynamic].applyDynamic("term")(word.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Entries]]
-  @scala.inline
-  def term(
+  inline def term(word: String): js.Promise[Entries] = ^.asInstanceOf[js.Dynamic].applyDynamic("term")(word.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Entries]]
+  inline def term(
     word: String,
     callback: js.Function4[
       /* error */ Error, 
@@ -62,8 +56,7 @@ object mod {
   }
   object WordDefinition {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       author: String,
       current_vote: String,
       defid: Double,
@@ -80,44 +73,31 @@ object mod {
       __obj.asInstanceOf[WordDefinition]
     }
     
-    @scala.inline
-    implicit class WordDefinitionMutableBuilder[Self <: WordDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: WordDefinition](x: Self) {
       
-      @scala.inline
-      def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+      inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrent_vote(value: String): Self = StObject.set(x, "current_vote", value.asInstanceOf[js.Any])
+      inline def setCurrent_vote(value: String): Self = StObject.set(x, "current_vote", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefid(value: Double): Self = StObject.set(x, "defid", value.asInstanceOf[js.Any])
+      inline def setDefid(value: Double): Self = StObject.set(x, "defid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefinition(value: String): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
+      inline def setDefinition(value: String): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExample(value: String): Self = StObject.set(x, "example", value.asInstanceOf[js.Any])
+      inline def setExample(value: String): Self = StObject.set(x, "example", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPermalink(value: String): Self = StObject.set(x, "permalink", value.asInstanceOf[js.Any])
+      inline def setPermalink(value: String): Self = StObject.set(x, "permalink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSound_urls(value: js.Array[String]): Self = StObject.set(x, "sound_urls", value.asInstanceOf[js.Any])
+      inline def setSound_urls(value: js.Array[String]): Self = StObject.set(x, "sound_urls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSound_urlsVarargs(value: String*): Self = StObject.set(x, "sound_urls", js.Array(value :_*))
+      inline def setSound_urlsVarargs(value: String*): Self = StObject.set(x, "sound_urls", js.Array(value :_*))
       
-      @scala.inline
-      def setThumbs_down(value: Double): Self = StObject.set(x, "thumbs_down", value.asInstanceOf[js.Any])
+      inline def setThumbs_down(value: Double): Self = StObject.set(x, "thumbs_down", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbs_up(value: Double): Self = StObject.set(x, "thumbs_up", value.asInstanceOf[js.Any])
+      inline def setThumbs_up(value: Double): Self = StObject.set(x, "thumbs_up", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWord(value: String): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
+      inline def setWord(value: String): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWritten_on(value: String): Self = StObject.set(x, "written_on", value.asInstanceOf[js.Any])
+      inline def setWritten_on(value: String): Self = StObject.set(x, "written_on", value.asInstanceOf[js.Any])
     }
   }
 }

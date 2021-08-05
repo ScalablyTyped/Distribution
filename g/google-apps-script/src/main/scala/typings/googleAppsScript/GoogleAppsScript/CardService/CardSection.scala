@@ -30,8 +30,7 @@ trait CardSection extends StObject {
 }
 object CardSection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addWidget: Widget => CardSection,
     setCollapsible: Boolean => CardSection,
     setHeader: String => CardSection,
@@ -41,19 +40,14 @@ object CardSection {
     __obj.asInstanceOf[CardSection]
   }
   
-  @scala.inline
-  implicit class CardSectionMutableBuilder[Self <: CardSection] (val x: Self) extends AnyVal {
+  extension [Self <: CardSection](x: Self) {
     
-    @scala.inline
-    def setAddWidget(value: Widget => CardSection): Self = StObject.set(x, "addWidget", js.Any.fromFunction1(value))
+    inline def setAddWidget(value: Widget => CardSection): Self = StObject.set(x, "addWidget", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetCollapsible(value: Boolean => CardSection): Self = StObject.set(x, "setCollapsible", js.Any.fromFunction1(value))
+    inline def setSetCollapsible(value: Boolean => CardSection): Self = StObject.set(x, "setCollapsible", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetHeader(value: String => CardSection): Self = StObject.set(x, "setHeader", js.Any.fromFunction1(value))
+    inline def setSetHeader(value: String => CardSection): Self = StObject.set(x, "setHeader", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetNumUncollapsibleWidgets(value: Integer => CardSection): Self = StObject.set(x, "setNumUncollapsibleWidgets", js.Any.fromFunction1(value))
+    inline def setSetNumUncollapsibleWidgets(value: Integer => CardSection): Self = StObject.set(x, "setNumUncollapsibleWidgets", js.Any.fromFunction1(value))
   }
 }

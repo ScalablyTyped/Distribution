@@ -31,19 +31,15 @@ trait PromptResponse extends StObject {
 }
 object PromptResponse {
   
-  @scala.inline
-  def apply(getResponseText: () => String, getSelectedButton: () => Button): PromptResponse = {
+  inline def apply(getResponseText: () => String, getSelectedButton: () => Button): PromptResponse = {
     val __obj = js.Dynamic.literal(getResponseText = js.Any.fromFunction0(getResponseText), getSelectedButton = js.Any.fromFunction0(getSelectedButton))
     __obj.asInstanceOf[PromptResponse]
   }
   
-  @scala.inline
-  implicit class PromptResponseMutableBuilder[Self <: PromptResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PromptResponse](x: Self) {
     
-    @scala.inline
-    def setGetResponseText(value: () => String): Self = StObject.set(x, "getResponseText", js.Any.fromFunction0(value))
+    inline def setGetResponseText(value: () => String): Self = StObject.set(x, "getResponseText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSelectedButton(value: () => Button): Self = StObject.set(x, "getSelectedButton", js.Any.fromFunction0(value))
+    inline def setGetSelectedButton(value: () => Button): Self = StObject.set(x, "getSelectedButton", js.Any.fromFunction0(value))
   }
 }

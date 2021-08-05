@@ -13,8 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChartDrawData extends StObject
 object ChartDrawData {
   
-  @scala.inline
-  def IChartDrawBarData(
+  inline def IChartDrawBarData(
     axisX: IChartAxis,
     axisY: IChartAxis,
     chartRect: IChartRect,
@@ -35,8 +34,7 @@ object ChartDrawData {
     __obj.asInstanceOf[typings.chartist.mod.IChartDrawBarData]
   }
   
-  @scala.inline
-  def IChartDrawGridData(
+  inline def IChartDrawGridData(
     axis: IChartAxis,
     element: IChartistSvg,
     group: IChartistSvg,
@@ -51,8 +49,7 @@ object ChartDrawData {
     __obj.asInstanceOf[typings.chartist.mod.IChartDrawGridData]
   }
   
-  @scala.inline
-  def IChartDrawLabelData(
+  inline def IChartDrawLabelData(
     axis: IChartAxis,
     element: IChartistSvg,
     group: IChartistSvg,

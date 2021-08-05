@@ -53,62 +53,44 @@ object anon {
   }
   object Apppackagename {
     
-    @scala.inline
-    def apply(): Apppackagename = {
+    inline def apply(): Apppackagename = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Apppackagename]
     }
     
-    @scala.inline
-    implicit class ApppackagenameMutableBuilder[Self <: Apppackagename] (val x: Self) extends AnyVal {
+    extension [Self <: Apppackagename](x: Self) {
       
-      @scala.inline
-      def setApp_package_name(value: String): Self = StObject.set(x, "app_package_name", value.asInstanceOf[js.Any])
+      inline def setApp_package_name(value: String): Self = StObject.set(x, "app_package_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApp_package_nameUndefined: Self = StObject.set(x, "app_package_name", js.undefined)
+      inline def setApp_package_nameUndefined: Self = StObject.set(x, "app_package_name", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setLongtitle(value: Boolean): Self = StObject.set(x, "longtitle", value.asInstanceOf[js.Any])
+      inline def setLongtitle(value: Boolean): Self = StObject.set(x, "longtitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongtitleUndefined: Self = StObject.set(x, "longtitle", js.undefined)
+      inline def setLongtitleUndefined: Self = StObject.set(x, "longtitle", js.undefined)
       
-      @scala.inline
-      def setOnfailure(value: /* reason */ Error => Unit): Self = StObject.set(x, "onfailure", js.Any.fromFunction1(value))
+      inline def setOnfailure(value: /* reason */ Error => Unit): Self = StObject.set(x, "onfailure", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnfailureUndefined: Self = StObject.set(x, "onfailure", js.undefined)
+      inline def setOnfailureUndefined: Self = StObject.set(x, "onfailure", js.undefined)
       
-      @scala.inline
-      def setOnsuccess(value: /* user */ GoogleUser => Unit): Self = StObject.set(x, "onsuccess", js.Any.fromFunction1(value))
+      inline def setOnsuccess(value: /* user */ GoogleUser => Unit): Self = StObject.set(x, "onsuccess", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnsuccessUndefined: Self = StObject.set(x, "onsuccess", js.undefined)
+      inline def setOnsuccessUndefined: Self = StObject.set(x, "onsuccess", js.undefined)
       
-      @scala.inline
-      def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      @scala.inline
-      def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -118,17 +100,14 @@ object anon {
   }
   object Code {
     
-    @scala.inline
-    def apply(code: String): Code = {
+    inline def apply(code: String): Code = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
       __obj.asInstanceOf[Code]
     }
     
-    @scala.inline
-    implicit class CodeMutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
+    extension [Self <: Code](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     }
   }
   
@@ -140,20 +119,16 @@ object anon {
   }
   object Details {
     
-    @scala.inline
-    def apply(details: String, error: String): Details = {
+    inline def apply(details: String, error: String): Details = {
       val __obj = js.Dynamic.literal(details = details.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[Details]
     }
     
-    @scala.inline
-    implicit class DetailsMutableBuilder[Self <: Details] (val x: Self) extends AnyVal {
+    extension [Self <: Details](x: Self) {
       
-      @scala.inline
-      def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
   }
   
@@ -163,17 +138,14 @@ object anon {
   }
   object Error {
     
-    @scala.inline
-    def apply(error: String): Error = {
+    inline def apply(error: String): Error = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[Error]
     }
     
-    @scala.inline
-    implicit class ErrorMutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
+    extension [Self <: Error](x: Self) {
       
-      @scala.inline
-      def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -52,8 +52,7 @@ trait Prefs extends StObject {
 }
 object Prefs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     altDraw: PseudoBoolean,
     animate: PseudoBoolean,
     askLumps: PseudoBoolean,
@@ -81,73 +80,50 @@ object Prefs {
     __obj.asInstanceOf[Prefs]
   }
   
-  @scala.inline
-  implicit class PrefsMutableBuilder[Self <: Prefs] (val x: Self) extends AnyVal {
+  extension [Self <: Prefs](x: Self) {
     
-    @scala.inline
-    def setAltDraw(value: PseudoBoolean): Self = StObject.set(x, "altDraw", value.asInstanceOf[js.Any])
+    inline def setAltDraw(value: PseudoBoolean): Self = StObject.set(x, "altDraw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimate(value: PseudoBoolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: PseudoBoolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAskLumps(value: PseudoBoolean): Self = StObject.set(x, "askLumps", value.asInstanceOf[js.Any])
+    inline def setAskLumps(value: PseudoBoolean): Self = StObject.set(x, "askLumps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutosave(value: PseudoBoolean): Self = StObject.set(x, "autosave", value.asInstanceOf[js.Any])
+    inline def setAutosave(value: PseudoBoolean): Self = StObject.set(x, "autosave", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoupdate(value: PseudoBoolean): Self = StObject.set(x, "autoupdate", value.asInstanceOf[js.Any])
+    inline def setAutoupdate(value: PseudoBoolean): Self = StObject.set(x, "autoupdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCursors(value: PseudoBoolean): Self = StObject.set(x, "cursors", value.asInstanceOf[js.Any])
+    inline def setCursors(value: PseudoBoolean): Self = StObject.set(x, "cursors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomGrandmas(value: PseudoBoolean): Self = StObject.set(x, "customGrandmas", value.asInstanceOf[js.Any])
+    inline def setCustomGrandmas(value: PseudoBoolean): Self = StObject.set(x, "customGrandmas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraButtons(value: PseudoBoolean): Self = StObject.set(x, "extraButtons", value.asInstanceOf[js.Any])
+    inline def setExtraButtons(value: PseudoBoolean): Self = StObject.set(x, "extraButtons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFancy(value: PseudoBoolean): Self = StObject.set(x, "fancy", value.asInstanceOf[js.Any])
+    inline def setFancy(value: PseudoBoolean): Self = StObject.set(x, "fancy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilters(value: PseudoBoolean): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: PseudoBoolean): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocus(value: PseudoBoolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+    inline def setFocus(value: PseudoBoolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: PseudoBoolean): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: PseudoBoolean): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMilk(value: PseudoBoolean): Self = StObject.set(x, "milk", value.asInstanceOf[js.Any])
+    inline def setMilk(value: PseudoBoolean): Self = StObject.set(x, "milk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonospace(value: PseudoBoolean): Self = StObject.set(x, "monospace", value.asInstanceOf[js.Any])
+    inline def setMonospace(value: PseudoBoolean): Self = StObject.set(x, "monospace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotifs(value: PseudoBoolean): Self = StObject.set(x, "notifs", value.asInstanceOf[js.Any])
+    inline def setNotifs(value: PseudoBoolean): Self = StObject.set(x, "notifs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumbers(value: PseudoBoolean): Self = StObject.set(x, "numbers", value.asInstanceOf[js.Any])
+    inline def setNumbers(value: PseudoBoolean): Self = StObject.set(x, "numbers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParticles(value: PseudoBoolean): Self = StObject.set(x, "particles", value.asInstanceOf[js.Any])
+    inline def setParticles(value: PseudoBoolean): Self = StObject.set(x, "particles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopups(value: PseudoBoolean): Self = StObject.set(x, "popups", value.asInstanceOf[js.Any])
+    inline def setPopups(value: PseudoBoolean): Self = StObject.set(x, "popups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowBackupWarning(value: PseudoBoolean): Self = StObject.set(x, "showBackupWarning", value.asInstanceOf[js.Any])
+    inline def setShowBackupWarning(value: PseudoBoolean): Self = StObject.set(x, "showBackupWarning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: PseudoBoolean): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: PseudoBoolean): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarn(value: PseudoBoolean): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
+    inline def setWarn(value: PseudoBoolean): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWobbly(value: PseudoBoolean): Self = StObject.set(x, "wobbly", value.asInstanceOf[js.Any])
+    inline def setWobbly(value: PseudoBoolean): Self = StObject.set(x, "wobbly", value.asInstanceOf[js.Any])
   }
 }

@@ -12,22 +12,17 @@ trait NxStackPage extends StObject {
 }
 object NxStackPage {
   
-  @scala.inline
-  def apply(qArea: Rect, qData: js.Array[NxStackedPivotCell]): NxStackPage = {
+  inline def apply(qArea: Rect, qData: js.Array[NxStackedPivotCell]): NxStackPage = {
     val __obj = js.Dynamic.literal(qArea = qArea.asInstanceOf[js.Any], qData = qData.asInstanceOf[js.Any])
     __obj.asInstanceOf[NxStackPage]
   }
   
-  @scala.inline
-  implicit class NxStackPageMutableBuilder[Self <: NxStackPage] (val x: Self) extends AnyVal {
+  extension [Self <: NxStackPage](x: Self) {
     
-    @scala.inline
-    def setQArea(value: Rect): Self = StObject.set(x, "qArea", value.asInstanceOf[js.Any])
+    inline def setQArea(value: Rect): Self = StObject.set(x, "qArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQData(value: js.Array[NxStackedPivotCell]): Self = StObject.set(x, "qData", value.asInstanceOf[js.Any])
+    inline def setQData(value: js.Array[NxStackedPivotCell]): Self = StObject.set(x, "qData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQDataVarargs(value: NxStackedPivotCell*): Self = StObject.set(x, "qData", js.Array(value :_*))
+    inline def setQDataVarargs(value: NxStackedPivotCell*): Self = StObject.set(x, "qData", js.Array(value :_*))
   }
 }

@@ -19,25 +19,19 @@ trait UserPoolSchemaStringAttributeConstraints extends StObject {
 }
 object UserPoolSchemaStringAttributeConstraints {
   
-  @scala.inline
-  def apply(): UserPoolSchemaStringAttributeConstraints = {
+  inline def apply(): UserPoolSchemaStringAttributeConstraints = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserPoolSchemaStringAttributeConstraints]
   }
   
-  @scala.inline
-  implicit class UserPoolSchemaStringAttributeConstraintsMutableBuilder[Self <: UserPoolSchemaStringAttributeConstraints] (val x: Self) extends AnyVal {
+  extension [Self <: UserPoolSchemaStringAttributeConstraints](x: Self) {
     
-    @scala.inline
-    def setMaxLength(value: Input[String]): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+    inline def setMaxLength(value: Input[String]): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
+    inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
     
-    @scala.inline
-    def setMinLength(value: Input[String]): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
+    inline def setMinLength(value: Input[String]): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
+    inline def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
   }
 }

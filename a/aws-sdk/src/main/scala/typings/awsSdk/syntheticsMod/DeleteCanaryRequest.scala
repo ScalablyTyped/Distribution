@@ -13,16 +13,13 @@ trait DeleteCanaryRequest extends StObject {
 }
 object DeleteCanaryRequest {
   
-  @scala.inline
-  def apply(Name: CanaryName): DeleteCanaryRequest = {
+  inline def apply(Name: CanaryName): DeleteCanaryRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteCanaryRequest]
   }
   
-  @scala.inline
-  implicit class DeleteCanaryRequestMutableBuilder[Self <: DeleteCanaryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteCanaryRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: CanaryName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: CanaryName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

@@ -17,19 +17,15 @@ trait Readonlynameexecuteunsubs
 }
 object Readonlynameexecuteunsubs {
   
-  @scala.inline
-  def apply(transactionID: Double): Readonlynameexecuteunsubs = {
+  inline def apply(transactionID: Double): Readonlynameexecuteunsubs = {
     val __obj = js.Dynamic.literal(name = "execute.unsubscribe", transactionID = transactionID.asInstanceOf[js.Any])
     __obj.asInstanceOf[Readonlynameexecuteunsubs]
   }
   
-  @scala.inline
-  implicit class ReadonlynameexecuteunsubsMutableBuilder[Self <: Readonlynameexecuteunsubs] (val x: Self) extends AnyVal {
+  extension [Self <: Readonlynameexecuteunsubs](x: Self) {
     
-    @scala.inline
-    def setName(value: executeDotunsubscribe): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: executeDotunsubscribe): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionID(value: Double): Self = StObject.set(x, "transactionID", value.asInstanceOf[js.Any])
+    inline def setTransactionID(value: Double): Self = StObject.set(x, "transactionID", value.asInstanceOf[js.Any])
   }
 }

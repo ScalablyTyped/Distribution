@@ -30,29 +30,22 @@ trait FillGradientPath
 }
 object FillGradientPath {
   
-  @scala.inline
-  def apply(center: Left, stops: js.Array[GradientStop]): FillGradientPath = {
+  inline def apply(center: Left, stops: js.Array[GradientStop]): FillGradientPath = {
     val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], gradient = "path", stops = stops.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("gradient")
     __obj.asInstanceOf[FillGradientPath]
   }
   
-  @scala.inline
-  implicit class FillGradientPathMutableBuilder[Self <: FillGradientPath] (val x: Self) extends AnyVal {
+  extension [Self <: FillGradientPath](x: Self) {
     
-    @scala.inline
-    def setCenter(value: Left): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: Left): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradient(value: path): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
+    inline def setGradient(value: path): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStops(value: js.Array[GradientStop]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
+    inline def setStops(value: js.Array[GradientStop]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopsVarargs(value: GradientStop*): Self = StObject.set(x, "stops", js.Array(value :_*))
+    inline def setStopsVarargs(value: GradientStop*): Self = StObject.set(x, "stops", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: gradient): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: gradient): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

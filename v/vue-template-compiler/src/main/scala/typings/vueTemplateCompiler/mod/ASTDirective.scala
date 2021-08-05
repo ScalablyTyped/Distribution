@@ -18,34 +18,25 @@ trait ASTDirective extends StObject {
 }
 object ASTDirective {
   
-  @scala.inline
-  def apply(name: String, rawName: String, value: String): ASTDirective = {
+  inline def apply(name: String, rawName: String, value: String): ASTDirective = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], rawName = rawName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTDirective]
   }
   
-  @scala.inline
-  implicit class ASTDirectiveMutableBuilder[Self <: ASTDirective] (val x: Self) extends AnyVal {
+  extension [Self <: ASTDirective](x: Self) {
     
-    @scala.inline
-    def setArg(value: String): Self = StObject.set(x, "arg", value.asInstanceOf[js.Any])
+    inline def setArg(value: String): Self = StObject.set(x, "arg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgUndefined: Self = StObject.set(x, "arg", js.undefined)
+    inline def setArgUndefined: Self = StObject.set(x, "arg", js.undefined)
     
-    @scala.inline
-    def setModifiers(value: ASTModifiers): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+    inline def setModifiers(value: ASTModifiers): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
+    inline def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawName(value: String): Self = StObject.set(x, "rawName", value.asInstanceOf[js.Any])
+    inline def setRawName(value: String): Self = StObject.set(x, "rawName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

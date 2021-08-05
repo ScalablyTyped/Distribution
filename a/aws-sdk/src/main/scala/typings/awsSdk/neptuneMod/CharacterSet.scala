@@ -18,25 +18,19 @@ trait CharacterSet extends StObject {
 }
 object CharacterSet {
   
-  @scala.inline
-  def apply(): CharacterSet = {
+  inline def apply(): CharacterSet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CharacterSet]
   }
   
-  @scala.inline
-  implicit class CharacterSetMutableBuilder[Self <: CharacterSet] (val x: Self) extends AnyVal {
+  extension [Self <: CharacterSet](x: Self) {
     
-    @scala.inline
-    def setCharacterSetDescription(value: String): Self = StObject.set(x, "CharacterSetDescription", value.asInstanceOf[js.Any])
+    inline def setCharacterSetDescription(value: String): Self = StObject.set(x, "CharacterSetDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharacterSetDescriptionUndefined: Self = StObject.set(x, "CharacterSetDescription", js.undefined)
+    inline def setCharacterSetDescriptionUndefined: Self = StObject.set(x, "CharacterSetDescription", js.undefined)
     
-    @scala.inline
-    def setCharacterSetName(value: String): Self = StObject.set(x, "CharacterSetName", value.asInstanceOf[js.Any])
+    inline def setCharacterSetName(value: String): Self = StObject.set(x, "CharacterSetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharacterSetNameUndefined: Self = StObject.set(x, "CharacterSetName", js.undefined)
+    inline def setCharacterSetNameUndefined: Self = StObject.set(x, "CharacterSetName", js.undefined)
   }
 }

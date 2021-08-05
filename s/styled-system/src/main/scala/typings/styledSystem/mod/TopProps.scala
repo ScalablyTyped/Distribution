@@ -16,25 +16,19 @@ trait TopProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StOb
 }
 object TopProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): TopProps[ThemeType, TVal] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): TopProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TopProps[ThemeType, TVal]]
   }
   
-  @scala.inline
-  implicit class TopPropsMutableBuilder[Self <: TopProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (TopProps[ThemeType, TVal])) extends AnyVal {
+  extension [Self <: TopProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (TopProps[ThemeType, TVal])) {
     
-    @scala.inline
-    def setTop(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopNull: Self = StObject.set(x, "top", null)
+    inline def setTopNull: Self = StObject.set(x, "top", null)
     
-    @scala.inline
-    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
-    @scala.inline
-    def setTopVarargs(value: (TVal | Null)*): Self = StObject.set(x, "top", js.Array(value :_*))
+    inline def setTopVarargs(value: (TVal | Null)*): Self = StObject.set(x, "top", js.Array(value :_*))
   }
 }

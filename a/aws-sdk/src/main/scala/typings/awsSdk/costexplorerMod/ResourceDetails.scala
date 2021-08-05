@@ -13,19 +13,15 @@ trait ResourceDetails extends StObject {
 }
 object ResourceDetails {
   
-  @scala.inline
-  def apply(): ResourceDetails = {
+  inline def apply(): ResourceDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceDetails]
   }
   
-  @scala.inline
-  implicit class ResourceDetailsMutableBuilder[Self <: ResourceDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceDetails](x: Self) {
     
-    @scala.inline
-    def setEC2ResourceDetails(value: EC2ResourceDetails): Self = StObject.set(x, "EC2ResourceDetails", value.asInstanceOf[js.Any])
+    inline def setEC2ResourceDetails(value: EC2ResourceDetails): Self = StObject.set(x, "EC2ResourceDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEC2ResourceDetailsUndefined: Self = StObject.set(x, "EC2ResourceDetails", js.undefined)
+    inline def setEC2ResourceDetailsUndefined: Self = StObject.set(x, "EC2ResourceDetails", js.undefined)
   }
 }

@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RouterMode extends StObject
 object RouterMode {
   
-  @scala.inline
-  def `abstract`: typings.vueRouter.vueRouterStrings.`abstract` = "abstract".asInstanceOf[typings.vueRouter.vueRouterStrings.`abstract`]
+  inline def `abstract`: typings.vueRouter.vueRouterStrings.`abstract` = "abstract".asInstanceOf[typings.vueRouter.vueRouterStrings.`abstract`]
   
-  @scala.inline
-  def hash: typings.vueRouter.vueRouterStrings.hash = "hash".asInstanceOf[typings.vueRouter.vueRouterStrings.hash]
+  inline def hash: typings.vueRouter.vueRouterStrings.hash = "hash".asInstanceOf[typings.vueRouter.vueRouterStrings.hash]
   
-  @scala.inline
-  def history: typings.vueRouter.vueRouterStrings.history = "history".asInstanceOf[typings.vueRouter.vueRouterStrings.history]
+  inline def history: typings.vueRouter.vueRouterStrings.history = "history".asInstanceOf[typings.vueRouter.vueRouterStrings.history]
 }

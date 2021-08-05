@@ -38,49 +38,35 @@ trait ChannelMembership extends StObject {
 }
 object ChannelMembership {
   
-  @scala.inline
-  def apply(): ChannelMembership = {
+  inline def apply(): ChannelMembership = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChannelMembership]
   }
   
-  @scala.inline
-  implicit class ChannelMembershipMutableBuilder[Self <: ChannelMembership] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelMembership](x: Self) {
     
-    @scala.inline
-    def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
+    inline def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelArnUndefined: Self = StObject.set(x, "ChannelArn", js.undefined)
+    inline def setChannelArnUndefined: Self = StObject.set(x, "ChannelArn", js.undefined)
     
-    @scala.inline
-    def setCreatedTimestamp(value: Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreatedTimestamp(value: Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
+    inline def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
-    @scala.inline
-    def setInvitedBy(value: Identity): Self = StObject.set(x, "InvitedBy", value.asInstanceOf[js.Any])
+    inline def setInvitedBy(value: Identity): Self = StObject.set(x, "InvitedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvitedByUndefined: Self = StObject.set(x, "InvitedBy", js.undefined)
+    inline def setInvitedByUndefined: Self = StObject.set(x, "InvitedBy", js.undefined)
     
-    @scala.inline
-    def setLastUpdatedTimestamp(value: Timestamp): Self = StObject.set(x, "LastUpdatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTimestamp(value: Timestamp): Self = StObject.set(x, "LastUpdatedTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedTimestampUndefined: Self = StObject.set(x, "LastUpdatedTimestamp", js.undefined)
+    inline def setLastUpdatedTimestampUndefined: Self = StObject.set(x, "LastUpdatedTimestamp", js.undefined)
     
-    @scala.inline
-    def setMember(value: Identity): Self = StObject.set(x, "Member", value.asInstanceOf[js.Any])
+    inline def setMember(value: Identity): Self = StObject.set(x, "Member", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberUndefined: Self = StObject.set(x, "Member", js.undefined)
+    inline def setMemberUndefined: Self = StObject.set(x, "Member", js.undefined)
     
-    @scala.inline
-    def setType(value: ChannelMembershipType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: ChannelMembershipType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DensityMethod extends StObject
 object DensityMethod {
   
-  @scala.inline
-  def cdf: typings.vegaTypings.vegaTypingsStrings.cdf = "cdf".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.cdf]
+  inline def cdf: typings.vegaTypings.vegaTypingsStrings.cdf = "cdf".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.cdf]
   
-  @scala.inline
-  def pdf: typings.vegaTypings.vegaTypingsStrings.pdf = "pdf".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.pdf]
+  inline def pdf: typings.vegaTypings.vegaTypingsStrings.pdf = "pdf".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.pdf]
 }

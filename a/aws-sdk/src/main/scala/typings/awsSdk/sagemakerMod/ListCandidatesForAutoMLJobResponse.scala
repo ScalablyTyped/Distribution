@@ -18,25 +18,19 @@ trait ListCandidatesForAutoMLJobResponse extends StObject {
 }
 object ListCandidatesForAutoMLJobResponse {
   
-  @scala.inline
-  def apply(Candidates: AutoMLCandidates): ListCandidatesForAutoMLJobResponse = {
+  inline def apply(Candidates: AutoMLCandidates): ListCandidatesForAutoMLJobResponse = {
     val __obj = js.Dynamic.literal(Candidates = Candidates.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListCandidatesForAutoMLJobResponse]
   }
   
-  @scala.inline
-  implicit class ListCandidatesForAutoMLJobResponseMutableBuilder[Self <: ListCandidatesForAutoMLJobResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListCandidatesForAutoMLJobResponse](x: Self) {
     
-    @scala.inline
-    def setCandidates(value: AutoMLCandidates): Self = StObject.set(x, "Candidates", value.asInstanceOf[js.Any])
+    inline def setCandidates(value: AutoMLCandidates): Self = StObject.set(x, "Candidates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCandidatesVarargs(value: AutoMLCandidate*): Self = StObject.set(x, "Candidates", js.Array(value :_*))
+    inline def setCandidatesVarargs(value: AutoMLCandidate*): Self = StObject.set(x, "Candidates", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -27,37 +27,27 @@ trait PerInstanceConfig extends StObject {
 }
 object PerInstanceConfig {
   
-  @scala.inline
-  def apply(): PerInstanceConfig = {
+  inline def apply(): PerInstanceConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PerInstanceConfig]
   }
   
-  @scala.inline
-  implicit class PerInstanceConfigMutableBuilder[Self <: PerInstanceConfig] (val x: Self) extends AnyVal {
+  extension [Self <: PerInstanceConfig](x: Self) {
     
-    @scala.inline
-    def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+    inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
+    inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPreservedState(value: PreservedState): Self = StObject.set(x, "preservedState", value.asInstanceOf[js.Any])
+    inline def setPreservedState(value: PreservedState): Self = StObject.set(x, "preservedState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreservedStateUndefined: Self = StObject.set(x, "preservedState", js.undefined)
+    inline def setPreservedStateUndefined: Self = StObject.set(x, "preservedState", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

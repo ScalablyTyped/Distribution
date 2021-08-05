@@ -17,37 +17,27 @@ trait Correction extends StObject {
 }
 object Correction {
   
-  @scala.inline
-  def apply(): Correction = {
+  inline def apply(): Correction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Correction]
   }
   
-  @scala.inline
-  implicit class CorrectionMutableBuilder[Self <: Correction] (val x: Self) extends AnyVal {
+  extension [Self <: Correction](x: Self) {
     
-    @scala.inline
-    def setContexts(value: js.Array[ServingContext]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
+    inline def setContexts(value: js.Array[ServingContext]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextsUndefined: Self = StObject.set(x, "contexts", js.undefined)
+    inline def setContextsUndefined: Self = StObject.set(x, "contexts", js.undefined)
     
-    @scala.inline
-    def setContextsVarargs(value: ServingContext*): Self = StObject.set(x, "contexts", js.Array(value :_*))
+    inline def setContextsVarargs(value: ServingContext*): Self = StObject.set(x, "contexts", js.Array(value :_*))
     
-    @scala.inline
-    def setDetails(value: js.Array[String]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: js.Array[String]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    @scala.inline
-    def setDetailsVarargs(value: String*): Self = StObject.set(x, "details", js.Array(value :_*))
+    inline def setDetailsVarargs(value: String*): Self = StObject.set(x, "details", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

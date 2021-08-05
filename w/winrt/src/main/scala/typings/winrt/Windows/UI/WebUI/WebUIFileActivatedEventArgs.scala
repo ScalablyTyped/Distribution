@@ -16,8 +16,7 @@ trait WebUIFileActivatedEventArgs
      with IActivatedEventArgsDeferral
 object WebUIFileActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activatedOperation: ActivatedOperation,
     files: IVectorView[IStorageItem],
     kind: ActivationKind,

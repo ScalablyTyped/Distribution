@@ -54,8 +54,7 @@ trait WebMapTimeSlider
 }
 object WebMapTimeSlider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -64,43 +63,30 @@ object WebMapTimeSlider {
     __obj.asInstanceOf[WebMapTimeSlider]
   }
   
-  @scala.inline
-  implicit class WebMapTimeSliderMutableBuilder[Self <: WebMapTimeSlider] (val x: Self) extends AnyVal {
+  extension [Self <: WebMapTimeSlider](x: Self) {
     
-    @scala.inline
-    def setCurrentTimeExtent(value: TimeExtent): Self = StObject.set(x, "currentTimeExtent", value.asInstanceOf[js.Any])
+    inline def setCurrentTimeExtent(value: TimeExtent): Self = StObject.set(x, "currentTimeExtent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentTimeExtentUndefined: Self = StObject.set(x, "currentTimeExtent", js.undefined)
+    inline def setCurrentTimeExtentUndefined: Self = StObject.set(x, "currentTimeExtent", js.undefined)
     
-    @scala.inline
-    def setFullTimeExtent(value: TimeExtent): Self = StObject.set(x, "fullTimeExtent", value.asInstanceOf[js.Any])
+    inline def setFullTimeExtent(value: TimeExtent): Self = StObject.set(x, "fullTimeExtent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullTimeExtentUndefined: Self = StObject.set(x, "fullTimeExtent", js.undefined)
+    inline def setFullTimeExtentUndefined: Self = StObject.set(x, "fullTimeExtent", js.undefined)
     
-    @scala.inline
-    def setNumStops(value: Double): Self = StObject.set(x, "numStops", value.asInstanceOf[js.Any])
+    inline def setNumStops(value: Double): Self = StObject.set(x, "numStops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumStopsUndefined: Self = StObject.set(x, "numStops", js.undefined)
+    inline def setNumStopsUndefined: Self = StObject.set(x, "numStops", js.undefined)
     
-    @scala.inline
-    def setNumThumbs(value: Double): Self = StObject.set(x, "numThumbs", value.asInstanceOf[js.Any])
+    inline def setNumThumbs(value: Double): Self = StObject.set(x, "numThumbs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumThumbsUndefined: Self = StObject.set(x, "numThumbs", js.undefined)
+    inline def setNumThumbsUndefined: Self = StObject.set(x, "numThumbs", js.undefined)
     
-    @scala.inline
-    def setStopDelay(value: Double): Self = StObject.set(x, "stopDelay", value.asInstanceOf[js.Any])
+    inline def setStopDelay(value: Double): Self = StObject.set(x, "stopDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopDelayUndefined: Self = StObject.set(x, "stopDelay", js.undefined)
+    inline def setStopDelayUndefined: Self = StObject.set(x, "stopDelay", js.undefined)
     
-    @scala.inline
-    def setStopInterval(value: TimeInterval): Self = StObject.set(x, "stopInterval", value.asInstanceOf[js.Any])
+    inline def setStopInterval(value: TimeInterval): Self = StObject.set(x, "stopInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopIntervalUndefined: Self = StObject.set(x, "stopInterval", js.undefined)
+    inline def setStopIntervalUndefined: Self = StObject.set(x, "stopInterval", js.undefined)
   }
 }

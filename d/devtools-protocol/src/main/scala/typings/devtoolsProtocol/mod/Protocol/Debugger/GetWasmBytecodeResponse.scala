@@ -13,16 +13,13 @@ trait GetWasmBytecodeResponse extends StObject {
 }
 object GetWasmBytecodeResponse {
   
-  @scala.inline
-  def apply(bytecode: String): GetWasmBytecodeResponse = {
+  inline def apply(bytecode: String): GetWasmBytecodeResponse = {
     val __obj = js.Dynamic.literal(bytecode = bytecode.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetWasmBytecodeResponse]
   }
   
-  @scala.inline
-  implicit class GetWasmBytecodeResponseMutableBuilder[Self <: GetWasmBytecodeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetWasmBytecodeResponse](x: Self) {
     
-    @scala.inline
-    def setBytecode(value: String): Self = StObject.set(x, "bytecode", value.asInstanceOf[js.Any])
+    inline def setBytecode(value: String): Self = StObject.set(x, "bytecode", value.asInstanceOf[js.Any])
   }
 }

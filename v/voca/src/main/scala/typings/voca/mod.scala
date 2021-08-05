@@ -1039,38 +1039,28 @@ object mod extends Shortcut {
   }
   object WordWrapOptions {
     
-    @scala.inline
-    def apply(): WordWrapOptions = {
+    inline def apply(): WordWrapOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WordWrapOptions]
     }
     
-    @scala.inline
-    implicit class WordWrapOptionsMutableBuilder[Self <: WordWrapOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WordWrapOptions](x: Self) {
       
-      @scala.inline
-      def setCut(value: Boolean): Self = StObject.set(x, "cut", value.asInstanceOf[js.Any])
+      inline def setCut(value: Boolean): Self = StObject.set(x, "cut", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCutUndefined: Self = StObject.set(x, "cut", js.undefined)
+      inline def setCutUndefined: Self = StObject.set(x, "cut", js.undefined)
       
-      @scala.inline
-      def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+      inline def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
+      inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
       
-      @scala.inline
-      def setNewLine(value: String): Self = StObject.set(x, "newLine", value.asInstanceOf[js.Any])
+      inline def setNewLine(value: String): Self = StObject.set(x, "newLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewLineUndefined: Self = StObject.set(x, "newLine", js.undefined)
+      inline def setNewLineUndefined: Self = StObject.set(x, "newLine", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   

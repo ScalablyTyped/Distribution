@@ -13,16 +13,13 @@ trait SectionListRenderItemInfo[ItemT, SectionT]
 }
 object SectionListRenderItemInfo {
   
-  @scala.inline
-  def apply[ItemT, SectionT](index: Double, item: ItemT, section: SectionListData[ItemT, SectionT], separators: Highlight): SectionListRenderItemInfo[ItemT, SectionT] = {
+  inline def apply[ItemT, SectionT](index: Double, item: ItemT, section: SectionListData[ItemT, SectionT], separators: Highlight): SectionListRenderItemInfo[ItemT, SectionT] = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], section = section.asInstanceOf[js.Any], separators = separators.asInstanceOf[js.Any])
     __obj.asInstanceOf[SectionListRenderItemInfo[ItemT, SectionT]]
   }
   
-  @scala.inline
-  implicit class SectionListRenderItemInfoMutableBuilder[Self <: SectionListRenderItemInfo[?, ?], ItemT, SectionT] (val x: Self & (SectionListRenderItemInfo[ItemT, SectionT])) extends AnyVal {
+  extension [Self <: SectionListRenderItemInfo[?, ?], ItemT, SectionT](x: Self & (SectionListRenderItemInfo[ItemT, SectionT])) {
     
-    @scala.inline
-    def setSection(value: SectionListData[ItemT, SectionT]): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
+    inline def setSection(value: SectionListData[ItemT, SectionT]): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
   }
 }

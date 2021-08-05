@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoFileFindView extends StObject
 object MsoFileFindView {
   
-  @scala.inline
-  def msoViewFileInfo: `1` = 1.asInstanceOf[`1`]
+  inline def msoViewFileInfo: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoViewPreview: `2` = 2.asInstanceOf[`2`]
+  inline def msoViewPreview: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoViewSummaryInfo: `3` = 3.asInstanceOf[`3`]
+  inline def msoViewSummaryInfo: `3` = 3.asInstanceOf[`3`]
 }

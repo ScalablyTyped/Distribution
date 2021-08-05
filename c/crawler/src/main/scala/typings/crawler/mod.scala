@@ -92,79 +92,56 @@ object mod {
   }
   object CrawlerRequestOptions {
     
-    @scala.inline
-    def apply(): CrawlerRequestOptions = {
+    inline def apply(): CrawlerRequestOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CrawlerRequestOptions]
     }
     
-    @scala.inline
-    implicit class CrawlerRequestOptionsMutableBuilder[Self <: CrawlerRequestOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CrawlerRequestOptions](x: Self) {
       
-      @scala.inline
-      def setCallback(value: (/* err */ Error, /* res */ CrawlerRequestResponse, /* done */ js.Function0[Unit]) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction3(value))
+      inline def setCallback(value: (/* err */ Error, /* res */ CrawlerRequestResponse, /* done */ js.Function0[Unit]) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+      inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
       
-      @scala.inline
-      def setJQuery(value: js.Any): Self = StObject.set(x, "jQuery", value.asInstanceOf[js.Any])
+      inline def setJQuery(value: js.Any): Self = StObject.set(x, "jQuery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJQueryUndefined: Self = StObject.set(x, "jQuery", js.undefined)
+      inline def setJQueryUndefined: Self = StObject.set(x, "jQuery", js.undefined)
       
-      @scala.inline
-      def setLimiter(value: String): Self = StObject.set(x, "limiter", value.asInstanceOf[js.Any])
+      inline def setLimiter(value: String): Self = StObject.set(x, "limiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimiterUndefined: Self = StObject.set(x, "limiter", js.undefined)
+      inline def setLimiterUndefined: Self = StObject.set(x, "limiter", js.undefined)
       
-      @scala.inline
-      def setPreRequest(
+      inline def setPreRequest(
         value: (CrawlerRequestOptions, /* doRequest */ js.Function1[/* err */ js.UndefOr[Error], Unit]) => Unit
       ): Self = StObject.set(x, "preRequest", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPreRequestUndefined: Self = StObject.set(x, "preRequest", js.undefined)
+      inline def setPreRequestUndefined: Self = StObject.set(x, "preRequest", js.undefined)
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
       
-      @scala.inline
-      def setProxies(value: js.Array[js.Any]): Self = StObject.set(x, "proxies", value.asInstanceOf[js.Any])
+      inline def setProxies(value: js.Array[js.Any]): Self = StObject.set(x, "proxies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxiesUndefined: Self = StObject.set(x, "proxies", js.undefined)
+      inline def setProxiesUndefined: Self = StObject.set(x, "proxies", js.undefined)
       
-      @scala.inline
-      def setProxiesVarargs(value: js.Any*): Self = StObject.set(x, "proxies", js.Array(value :_*))
+      inline def setProxiesVarargs(value: js.Any*): Self = StObject.set(x, "proxies", js.Array(value :_*))
       
-      @scala.inline
-      def setProxy(value: js.Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+      inline def setProxy(value: js.Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
+      inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
       
-      @scala.inline
-      def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+      inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
     }
   }
   
@@ -203,26 +180,20 @@ object mod {
   }
   object CrawlerRequestResponse {
     
-    @scala.inline
-    def apply($: CheerioAPI, body: Buffer | String, options: CrawlerRequestOptions, request: RequestAsJSON): CrawlerRequestResponse = {
+    inline def apply($: CheerioAPI, body: Buffer | String, options: CrawlerRequestOptions, request: RequestAsJSON): CrawlerRequestResponse = {
       val __obj = js.Dynamic.literal($ = $.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
       __obj.asInstanceOf[CrawlerRequestResponse]
     }
     
-    @scala.inline
-    implicit class CrawlerRequestResponseMutableBuilder[Self <: CrawlerRequestResponse] (val x: Self) extends AnyVal {
+    extension [Self <: CrawlerRequestResponse](x: Self) {
       
-      @scala.inline
-      def set$(value: CheerioAPI): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
+      inline def set$(value: CheerioAPI): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBody(value: Buffer | String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: Buffer | String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: CrawlerRequestOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: CrawlerRequestOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest(value: RequestAsJSON): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: RequestAsJSON): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     }
   }
   
@@ -290,163 +261,112 @@ object mod {
   }
   object CreateCrawlerOptions {
     
-    @scala.inline
-    def apply(): CreateCrawlerOptions = {
+    inline def apply(): CreateCrawlerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateCrawlerOptions]
     }
     
-    @scala.inline
-    implicit class CreateCrawlerOptionsMutableBuilder[Self <: CreateCrawlerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CreateCrawlerOptions](x: Self) {
       
-      @scala.inline
-      def setAutoWindowClose(value: Boolean): Self = StObject.set(x, "autoWindowClose", value.asInstanceOf[js.Any])
+      inline def setAutoWindowClose(value: Boolean): Self = StObject.set(x, "autoWindowClose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoWindowCloseUndefined: Self = StObject.set(x, "autoWindowClose", js.undefined)
+      inline def setAutoWindowCloseUndefined: Self = StObject.set(x, "autoWindowClose", js.undefined)
       
-      @scala.inline
-      def setCallback(value: (/* err */ Error, /* res */ CrawlerRequestResponse, /* done */ js.Function0[Unit]) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction3(value))
+      inline def setCallback(value: (/* err */ Error, /* res */ CrawlerRequestResponse, /* done */ js.Function0[Unit]) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setForceUTF8(value: Boolean): Self = StObject.set(x, "forceUTF8", value.asInstanceOf[js.Any])
+      inline def setForceUTF8(value: Boolean): Self = StObject.set(x, "forceUTF8", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceUTF8Undefined: Self = StObject.set(x, "forceUTF8", js.undefined)
+      inline def setForceUTF8Undefined: Self = StObject.set(x, "forceUTF8", js.undefined)
       
-      @scala.inline
-      def setGzip(value: Boolean): Self = StObject.set(x, "gzip", value.asInstanceOf[js.Any])
+      inline def setGzip(value: Boolean): Self = StObject.set(x, "gzip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGzipUndefined: Self = StObject.set(x, "gzip", js.undefined)
+      inline def setGzipUndefined: Self = StObject.set(x, "gzip", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setHomogeneous(value: Boolean): Self = StObject.set(x, "homogeneous", value.asInstanceOf[js.Any])
+      inline def setHomogeneous(value: Boolean): Self = StObject.set(x, "homogeneous", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHomogeneousUndefined: Self = StObject.set(x, "homogeneous", js.undefined)
+      inline def setHomogeneousUndefined: Self = StObject.set(x, "homogeneous", js.undefined)
       
-      @scala.inline
-      def setIncomingEncoding(value: String): Self = StObject.set(x, "incomingEncoding", value.asInstanceOf[js.Any])
+      inline def setIncomingEncoding(value: String): Self = StObject.set(x, "incomingEncoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncomingEncodingUndefined: Self = StObject.set(x, "incomingEncoding", js.undefined)
+      inline def setIncomingEncodingUndefined: Self = StObject.set(x, "incomingEncoding", js.undefined)
       
-      @scala.inline
-      def setJQuery(value: js.Any): Self = StObject.set(x, "jQuery", value.asInstanceOf[js.Any])
+      inline def setJQuery(value: js.Any): Self = StObject.set(x, "jQuery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJQueryUndefined: Self = StObject.set(x, "jQuery", js.undefined)
+      inline def setJQueryUndefined: Self = StObject.set(x, "jQuery", js.undefined)
       
-      @scala.inline
-      def setLogger(value: Log): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: Log): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+      inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
-      @scala.inline
-      def setMaxConnections(value: Double): Self = StObject.set(x, "maxConnections", value.asInstanceOf[js.Any])
+      inline def setMaxConnections(value: Double): Self = StObject.set(x, "maxConnections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxConnectionsUndefined: Self = StObject.set(x, "maxConnections", js.undefined)
+      inline def setMaxConnectionsUndefined: Self = StObject.set(x, "maxConnections", js.undefined)
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setPreRequest(
+      inline def setPreRequest(
         value: (/* options */ CrawlerRequestOptions, /* doRequest */ js.Function1[/* err */ js.UndefOr[Error], Unit]) => Unit
       ): Self = StObject.set(x, "preRequest", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPreRequestUndefined: Self = StObject.set(x, "preRequest", js.undefined)
+      inline def setPreRequestUndefined: Self = StObject.set(x, "preRequest", js.undefined)
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriorityRange(value: Double): Self = StObject.set(x, "priorityRange", value.asInstanceOf[js.Any])
+      inline def setPriorityRange(value: Double): Self = StObject.set(x, "priorityRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriorityRangeUndefined: Self = StObject.set(x, "priorityRange", js.undefined)
+      inline def setPriorityRangeUndefined: Self = StObject.set(x, "priorityRange", js.undefined)
       
-      @scala.inline
-      def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
       
-      @scala.inline
-      def setRateLimit(value: Double): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
+      inline def setRateLimit(value: Double): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRateLimitUndefined: Self = StObject.set(x, "rateLimit", js.undefined)
+      inline def setRateLimitUndefined: Self = StObject.set(x, "rateLimit", js.undefined)
       
-      @scala.inline
-      def setReferer(value: `false` | String): Self = StObject.set(x, "referer", value.asInstanceOf[js.Any])
+      inline def setReferer(value: `false` | String): Self = StObject.set(x, "referer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefererUndefined: Self = StObject.set(x, "referer", js.undefined)
+      inline def setRefererUndefined: Self = StObject.set(x, "referer", js.undefined)
       
-      @scala.inline
-      def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
+      inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
+      inline def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
       
-      @scala.inline
-      def setRetryTimeout(value: Double): Self = StObject.set(x, "retryTimeout", value.asInstanceOf[js.Any])
+      inline def setRetryTimeout(value: Double): Self = StObject.set(x, "retryTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryTimeoutUndefined: Self = StObject.set(x, "retryTimeout", js.undefined)
+      inline def setRetryTimeoutUndefined: Self = StObject.set(x, "retryTimeout", js.undefined)
       
-      @scala.inline
-      def setRotateUA(value: Boolean): Self = StObject.set(x, "rotateUA", value.asInstanceOf[js.Any])
+      inline def setRotateUA(value: Boolean): Self = StObject.set(x, "rotateUA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotateUAUndefined: Self = StObject.set(x, "rotateUA", js.undefined)
+      inline def setRotateUAUndefined: Self = StObject.set(x, "rotateUA", js.undefined)
       
-      @scala.inline
-      def setSeenreq(value: js.Any): Self = StObject.set(x, "seenreq", value.asInstanceOf[js.Any])
+      inline def setSeenreq(value: js.Any): Self = StObject.set(x, "seenreq", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeenreqUndefined: Self = StObject.set(x, "seenreq", js.undefined)
+      inline def setSeenreqUndefined: Self = StObject.set(x, "seenreq", js.undefined)
       
-      @scala.inline
-      def setSkipDuplicates(value: Boolean): Self = StObject.set(x, "skipDuplicates", value.asInstanceOf[js.Any])
+      inline def setSkipDuplicates(value: Boolean): Self = StObject.set(x, "skipDuplicates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipDuplicatesUndefined: Self = StObject.set(x, "skipDuplicates", js.undefined)
+      inline def setSkipDuplicatesUndefined: Self = StObject.set(x, "skipDuplicates", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setUserAgent(value: String | js.Array[String]): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
+      inline def setUserAgent(value: String | js.Array[String]): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
+      inline def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
       
-      @scala.inline
-      def setUserAgentVarargs(value: String*): Self = StObject.set(x, "userAgent", js.Array(value :_*))
+      inline def setUserAgentVarargs(value: String*): Self = StObject.set(x, "userAgent", js.Array(value :_*))
     }
   }
   
@@ -464,23 +384,18 @@ object mod {
   }
   object RequestAsJSON {
     
-    @scala.inline
-    def apply(headers: Headers, method: String, uri: Url): RequestAsJSON = {
+    inline def apply(headers: Headers, method: String, uri: Url): RequestAsJSON = {
       val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequestAsJSON]
     }
     
-    @scala.inline
-    implicit class RequestAsJSONMutableBuilder[Self <: RequestAsJSON] (val x: Self) extends AnyVal {
+    extension [Self <: RequestAsJSON](x: Self) {
       
-      @scala.inline
-      def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUri(value: Url): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: Url): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     }
   }
 }

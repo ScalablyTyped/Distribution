@@ -35,49 +35,35 @@ trait GetAccessPointResult extends StObject {
 }
 object GetAccessPointResult {
   
-  @scala.inline
-  def apply(): GetAccessPointResult = {
+  inline def apply(): GetAccessPointResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAccessPointResult]
   }
   
-  @scala.inline
-  implicit class GetAccessPointResultMutableBuilder[Self <: GetAccessPointResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetAccessPointResult](x: Self) {
     
-    @scala.inline
-    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketUndefined: Self = StObject.set(x, "Bucket", js.undefined)
+    inline def setBucketUndefined: Self = StObject.set(x, "Bucket", js.undefined)
     
-    @scala.inline
-    def setCreationDate(value: CreationDate): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: CreationDate): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
-    @scala.inline
-    def setName(value: AccessPointName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: AccessPointName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setNetworkOrigin(value: NetworkOrigin): Self = StObject.set(x, "NetworkOrigin", value.asInstanceOf[js.Any])
+    inline def setNetworkOrigin(value: NetworkOrigin): Self = StObject.set(x, "NetworkOrigin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkOriginUndefined: Self = StObject.set(x, "NetworkOrigin", js.undefined)
+    inline def setNetworkOriginUndefined: Self = StObject.set(x, "NetworkOrigin", js.undefined)
     
-    @scala.inline
-    def setPublicAccessBlockConfiguration(value: PublicAccessBlockConfiguration): Self = StObject.set(x, "PublicAccessBlockConfiguration", value.asInstanceOf[js.Any])
+    inline def setPublicAccessBlockConfiguration(value: PublicAccessBlockConfiguration): Self = StObject.set(x, "PublicAccessBlockConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicAccessBlockConfigurationUndefined: Self = StObject.set(x, "PublicAccessBlockConfiguration", js.undefined)
+    inline def setPublicAccessBlockConfigurationUndefined: Self = StObject.set(x, "PublicAccessBlockConfiguration", js.undefined)
     
-    @scala.inline
-    def setVpcConfiguration(value: VpcConfiguration): Self = StObject.set(x, "VpcConfiguration", value.asInstanceOf[js.Any])
+    inline def setVpcConfiguration(value: VpcConfiguration): Self = StObject.set(x, "VpcConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcConfigurationUndefined: Self = StObject.set(x, "VpcConfiguration", js.undefined)
+    inline def setVpcConfigurationUndefined: Self = StObject.set(x, "VpcConfiguration", js.undefined)
   }
 }

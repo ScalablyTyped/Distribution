@@ -12,16 +12,13 @@ trait BuildDeletedEvent
 }
 object BuildDeletedEvent {
   
-  @scala.inline
-  def apply(build: Build, buildId: Double): BuildDeletedEvent = {
+  inline def apply(build: Build, buildId: Double): BuildDeletedEvent = {
     val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], buildId = buildId.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildDeletedEvent]
   }
   
-  @scala.inline
-  implicit class BuildDeletedEventMutableBuilder[Self <: BuildDeletedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: BuildDeletedEvent](x: Self) {
     
-    @scala.inline
-    def setBuild(value: Build): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
+    inline def setBuild(value: Build): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
   }
 }

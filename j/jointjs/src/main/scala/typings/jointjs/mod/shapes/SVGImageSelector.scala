@@ -14,19 +14,15 @@ trait SVGImageSelector
 }
 object SVGImageSelector {
   
-  @scala.inline
-  def apply(): SVGImageSelector = {
+  inline def apply(): SVGImageSelector = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SVGImageSelector]
   }
   
-  @scala.inline
-  implicit class SVGImageSelectorMutableBuilder[Self <: SVGImageSelector] (val x: Self) extends AnyVal {
+  extension [Self <: SVGImageSelector](x: Self) {
     
-    @scala.inline
-    def setImage(value: SVGImageAttributes): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: SVGImageAttributes): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
   }
 }

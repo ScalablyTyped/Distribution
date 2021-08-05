@@ -14,16 +14,13 @@ trait RemoteSystemStatusTypeFilter
 }
 object RemoteSystemStatusTypeFilter {
   
-  @scala.inline
-  def apply(remoteSystemStatusType: RemoteSystemStatusType): RemoteSystemStatusTypeFilter = {
+  inline def apply(remoteSystemStatusType: RemoteSystemStatusType): RemoteSystemStatusTypeFilter = {
     val __obj = js.Dynamic.literal(remoteSystemStatusType = remoteSystemStatusType.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteSystemStatusTypeFilter]
   }
   
-  @scala.inline
-  implicit class RemoteSystemStatusTypeFilterMutableBuilder[Self <: RemoteSystemStatusTypeFilter] (val x: Self) extends AnyVal {
+  extension [Self <: RemoteSystemStatusTypeFilter](x: Self) {
     
-    @scala.inline
-    def setRemoteSystemStatusType(value: RemoteSystemStatusType): Self = StObject.set(x, "remoteSystemStatusType", value.asInstanceOf[js.Any])
+    inline def setRemoteSystemStatusType(value: RemoteSystemStatusType): Self = StObject.set(x, "remoteSystemStatusType", value.asInstanceOf[js.Any])
   }
 }

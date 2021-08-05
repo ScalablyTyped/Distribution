@@ -14,20 +14,16 @@ object anon {
   }
   object Invalid {
     
-    @scala.inline
-    def apply(invalid: String, valid: String): Invalid = {
+    inline def apply(invalid: String, valid: String): Invalid = {
       val __obj = js.Dynamic.literal(invalid = invalid.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any])
       __obj.asInstanceOf[Invalid]
     }
     
-    @scala.inline
-    implicit class InvalidMutableBuilder[Self <: Invalid] (val x: Self) extends AnyVal {
+    extension [Self <: Invalid](x: Self) {
       
-      @scala.inline
-      def setInvalid(value: String): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
+      inline def setInvalid(value: String): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValid(value: String): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+      inline def setValid(value: String): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
     }
   }
 }

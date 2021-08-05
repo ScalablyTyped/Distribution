@@ -15,31 +15,23 @@ trait ITpStateEntry extends StObject {
 }
 object ITpStateEntry {
   
-  @scala.inline
-  def apply(): ITpStateEntry = {
+  inline def apply(): ITpStateEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITpStateEntry]
   }
   
-  @scala.inline
-  implicit class ITpStateEntryMutableBuilder[Self <: ITpStateEntry] (val x: Self) extends AnyVal {
+  extension [Self <: ITpStateEntry](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressNull: Self = StObject.set(x, "address", null)
+    inline def setAddressNull: Self = StObject.set(x, "address", null)
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setData(value: Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataNull: Self = StObject.set(x, "data", null)
+    inline def setDataNull: Self = StObject.set(x, "data", null)
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
   }
 }

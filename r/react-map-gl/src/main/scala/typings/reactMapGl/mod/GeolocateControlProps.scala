@@ -34,79 +34,55 @@ trait GeolocateControlProps
 }
 object GeolocateControlProps {
   
-  @scala.inline
-  def apply(): GeolocateControlProps = {
+  inline def apply(): GeolocateControlProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GeolocateControlProps]
   }
   
-  @scala.inline
-  implicit class GeolocateControlPropsMutableBuilder[Self <: GeolocateControlProps] (val x: Self) extends AnyVal {
+  extension [Self <: GeolocateControlProps](x: Self) {
     
-    @scala.inline
-    def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
+    inline def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoUndefined: Self = StObject.set(x, "auto", js.undefined)
+    inline def setAutoUndefined: Self = StObject.set(x, "auto", js.undefined)
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setFitBoundsOptions(value: FitBoundsOptions): Self = StObject.set(x, "fitBoundsOptions", value.asInstanceOf[js.Any])
+    inline def setFitBoundsOptions(value: FitBoundsOptions): Self = StObject.set(x, "fitBoundsOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFitBoundsOptionsUndefined: Self = StObject.set(x, "fitBoundsOptions", js.undefined)
+    inline def setFitBoundsOptionsUndefined: Self = StObject.set(x, "fitBoundsOptions", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setOnGeolocate(value: /* options */ PositionOptions => Unit): Self = StObject.set(x, "onGeolocate", js.Any.fromFunction1(value))
+    inline def setOnGeolocate(value: /* options */ PositionOptions => Unit): Self = StObject.set(x, "onGeolocate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnGeolocateUndefined: Self = StObject.set(x, "onGeolocate", js.undefined)
+    inline def setOnGeolocateUndefined: Self = StObject.set(x, "onGeolocate", js.undefined)
     
-    @scala.inline
-    def setOnViewStateChange(value: /* info */ ViewStateChangeInfo => Unit): Self = StObject.set(x, "onViewStateChange", js.Any.fromFunction1(value))
+    inline def setOnViewStateChange(value: /* info */ ViewStateChangeInfo => Unit): Self = StObject.set(x, "onViewStateChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnViewStateChangeUndefined: Self = StObject.set(x, "onViewStateChange", js.undefined)
+    inline def setOnViewStateChangeUndefined: Self = StObject.set(x, "onViewStateChange", js.undefined)
     
-    @scala.inline
-    def setOnViewportChange(value: /* viewState */ ViewportProps => Unit): Self = StObject.set(x, "onViewportChange", js.Any.fromFunction1(value))
+    inline def setOnViewportChange(value: /* viewState */ ViewportProps => Unit): Self = StObject.set(x, "onViewportChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnViewportChangeUndefined: Self = StObject.set(x, "onViewportChange", js.undefined)
+    inline def setOnViewportChangeUndefined: Self = StObject.set(x, "onViewportChange", js.undefined)
     
-    @scala.inline
-    def setPositionOptions(value: typings.mapboxGl.mod.PositionOptions): Self = StObject.set(x, "positionOptions", value.asInstanceOf[js.Any])
+    inline def setPositionOptions(value: typings.mapboxGl.mod.PositionOptions): Self = StObject.set(x, "positionOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionOptionsUndefined: Self = StObject.set(x, "positionOptions", js.undefined)
+    inline def setPositionOptionsUndefined: Self = StObject.set(x, "positionOptions", js.undefined)
     
-    @scala.inline
-    def setShowUserLocation(value: Boolean): Self = StObject.set(x, "showUserLocation", value.asInstanceOf[js.Any])
+    inline def setShowUserLocation(value: Boolean): Self = StObject.set(x, "showUserLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowUserLocationUndefined: Self = StObject.set(x, "showUserLocation", js.undefined)
+    inline def setShowUserLocationUndefined: Self = StObject.set(x, "showUserLocation", js.undefined)
     
-    @scala.inline
-    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setTrackUserLocation(value: Boolean): Self = StObject.set(x, "trackUserLocation", value.asInstanceOf[js.Any])
+    inline def setTrackUserLocation(value: Boolean): Self = StObject.set(x, "trackUserLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackUserLocationUndefined: Self = StObject.set(x, "trackUserLocation", js.undefined)
+    inline def setTrackUserLocationUndefined: Self = StObject.set(x, "trackUserLocation", js.undefined)
   }
 }

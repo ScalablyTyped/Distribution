@@ -23,49 +23,35 @@ trait ISnapshot extends StObject {
 }
 object ISnapshot {
   
-  @scala.inline
-  def apply(): ISnapshot = {
+  inline def apply(): ISnapshot = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ISnapshot]
   }
   
-  @scala.inline
-  implicit class ISnapshotMutableBuilder[Self <: ISnapshot] (val x: Self) extends AnyVal {
+  extension [Self <: ISnapshot](x: Self) {
     
-    @scala.inline
-    def setExpireTime(value: ITimestamp): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
+    inline def setExpireTime(value: ITimestamp): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpireTimeNull: Self = StObject.set(x, "expireTime", null)
+    inline def setExpireTimeNull: Self = StObject.set(x, "expireTime", null)
     
-    @scala.inline
-    def setExpireTimeUndefined: Self = StObject.set(x, "expireTime", js.undefined)
+    inline def setExpireTimeUndefined: Self = StObject.set(x, "expireTime", js.undefined)
     
-    @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsNull: Self = StObject.set(x, "labels", null)
+    inline def setLabelsNull: Self = StObject.set(x, "labels", null)
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicNull: Self = StObject.set(x, "topic", null)
+    inline def setTopicNull: Self = StObject.set(x, "topic", null)
     
-    @scala.inline
-    def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
+    inline def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
   }
 }

@@ -17,8 +17,7 @@ trait Exact[E /* <: js.Object */] extends StObject {
 }
 object Exact {
   
-  @scala.inline
-  def apply[E /* <: js.Object */](
+  inline def apply[E /* <: js.Object */](
     exact: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof E ]: lokijs.ExactIndex<E>}
     */ typings.lokijs.lokijsStrings.Exact & TopLevel[js.Any],
@@ -30,18 +29,15 @@ object Exact {
     __obj.asInstanceOf[Exact[E]]
   }
   
-  @scala.inline
-  implicit class ExactMutableBuilder[Self <: Exact[?], E /* <: js.Object */] (val x: Self & Exact[E]) extends AnyVal {
+  extension [Self <: Exact[?], E /* <: js.Object */](x: Self & Exact[E]) {
     
-    @scala.inline
-    def setExact(
+    inline def setExact(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof E ]: lokijs.ExactIndex<E>}
       */ typings.lokijs.lokijsStrings.Exact & TopLevel[js.Any]
     ): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnique(
+    inline def setUnique(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof E ]: lokijs.UniqueIndex<E>}
       */ typings.lokijs.lokijsStrings.Exact & TopLevel[js.Any]

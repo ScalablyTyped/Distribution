@@ -14,20 +14,16 @@ object anon {
   }
   object Comments {
     
-    @scala.inline
-    def apply(comments: String, pragmas: typings.jestDocblock.mod.Pragmas): Comments = {
+    inline def apply(comments: String, pragmas: typings.jestDocblock.mod.Pragmas): Comments = {
       val __obj = js.Dynamic.literal(comments = comments.asInstanceOf[js.Any], pragmas = pragmas.asInstanceOf[js.Any])
       __obj.asInstanceOf[Comments]
     }
     
-    @scala.inline
-    implicit class CommentsMutableBuilder[Self <: Comments] (val x: Self) extends AnyVal {
+    extension [Self <: Comments](x: Self) {
       
-      @scala.inline
-      def setComments(value: String): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+      inline def setComments(value: String): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPragmas(value: typings.jestDocblock.mod.Pragmas): Self = StObject.set(x, "pragmas", value.asInstanceOf[js.Any])
+      inline def setPragmas(value: typings.jestDocblock.mod.Pragmas): Self = StObject.set(x, "pragmas", value.asInstanceOf[js.Any])
     }
   }
   
@@ -39,26 +35,20 @@ object anon {
   }
   object Pragmas {
     
-    @scala.inline
-    def apply(): Pragmas = {
+    inline def apply(): Pragmas = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Pragmas]
     }
     
-    @scala.inline
-    implicit class PragmasMutableBuilder[Self <: Pragmas] (val x: Self) extends AnyVal {
+    extension [Self <: Pragmas](x: Self) {
       
-      @scala.inline
-      def setComments(value: String): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+      inline def setComments(value: String): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+      inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
       
-      @scala.inline
-      def setPragmas(value: typings.jestDocblock.mod.Pragmas): Self = StObject.set(x, "pragmas", value.asInstanceOf[js.Any])
+      inline def setPragmas(value: typings.jestDocblock.mod.Pragmas): Self = StObject.set(x, "pragmas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPragmasUndefined: Self = StObject.set(x, "pragmas", js.undefined)
+      inline def setPragmasUndefined: Self = StObject.set(x, "pragmas", js.undefined)
     }
   }
 }

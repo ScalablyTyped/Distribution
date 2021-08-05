@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(globs: String*): String = ^.asInstanceOf[js.Dynamic].apply(globs.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(globs: String*): String = ^.asInstanceOf[js.Dynamic].apply(globs.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("globjoin", JSImport.Namespace)
   @js.native

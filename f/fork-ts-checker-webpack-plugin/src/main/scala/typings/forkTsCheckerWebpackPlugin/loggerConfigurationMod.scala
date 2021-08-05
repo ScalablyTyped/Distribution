@@ -12,12 +12,10 @@ object loggerConfigurationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createLoggerConfiguration(
+  inline def createLoggerConfiguration(
     compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any
   ): LoggerConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createLoggerConfiguration")(compiler.asInstanceOf[js.Any]).asInstanceOf[LoggerConfiguration]
-  @scala.inline
-  def createLoggerConfiguration(
+  inline def createLoggerConfiguration(
     compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any,
     options: LoggerOptions
   ): LoggerConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("createLoggerConfiguration")(compiler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LoggerConfiguration]
@@ -32,23 +30,18 @@ object loggerConfigurationMod {
   }
   object LoggerConfiguration {
     
-    @scala.inline
-    def apply(devServer: Boolean, infrastructure: Logger, issues: Logger): LoggerConfiguration = {
+    inline def apply(devServer: Boolean, infrastructure: Logger, issues: Logger): LoggerConfiguration = {
       val __obj = js.Dynamic.literal(devServer = devServer.asInstanceOf[js.Any], infrastructure = infrastructure.asInstanceOf[js.Any], issues = issues.asInstanceOf[js.Any])
       __obj.asInstanceOf[LoggerConfiguration]
     }
     
-    @scala.inline
-    implicit class LoggerConfigurationMutableBuilder[Self <: LoggerConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: LoggerConfiguration](x: Self) {
       
-      @scala.inline
-      def setDevServer(value: Boolean): Self = StObject.set(x, "devServer", value.asInstanceOf[js.Any])
+      inline def setDevServer(value: Boolean): Self = StObject.set(x, "devServer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfrastructure(value: Logger): Self = StObject.set(x, "infrastructure", value.asInstanceOf[js.Any])
+      inline def setInfrastructure(value: Logger): Self = StObject.set(x, "infrastructure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIssues(value: Logger): Self = StObject.set(x, "issues", value.asInstanceOf[js.Any])
+      inline def setIssues(value: Logger): Self = StObject.set(x, "issues", value.asInstanceOf[js.Any])
     }
   }
 }

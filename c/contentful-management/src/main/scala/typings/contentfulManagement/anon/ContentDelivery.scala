@@ -18,8 +18,7 @@ trait ContentDelivery extends StObject {
 }
 object ContentDelivery {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ContentDelivery: js.Array[String] | String,
     ContentModel: js.Array[String],
     EnvironmentAliases: js.Array[String] | String,
@@ -30,37 +29,26 @@ object ContentDelivery {
     __obj.asInstanceOf[ContentDelivery]
   }
   
-  @scala.inline
-  implicit class ContentDeliveryMutableBuilder[Self <: ContentDelivery] (val x: Self) extends AnyVal {
+  extension [Self <: ContentDelivery](x: Self) {
     
-    @scala.inline
-    def setContentDelivery(value: js.Array[String] | String): Self = StObject.set(x, "ContentDelivery", value.asInstanceOf[js.Any])
+    inline def setContentDelivery(value: js.Array[String] | String): Self = StObject.set(x, "ContentDelivery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentDeliveryVarargs(value: String*): Self = StObject.set(x, "ContentDelivery", js.Array(value :_*))
+    inline def setContentDeliveryVarargs(value: String*): Self = StObject.set(x, "ContentDelivery", js.Array(value :_*))
     
-    @scala.inline
-    def setContentModel(value: js.Array[String]): Self = StObject.set(x, "ContentModel", value.asInstanceOf[js.Any])
+    inline def setContentModel(value: js.Array[String]): Self = StObject.set(x, "ContentModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentModelVarargs(value: String*): Self = StObject.set(x, "ContentModel", js.Array(value :_*))
+    inline def setContentModelVarargs(value: String*): Self = StObject.set(x, "ContentModel", js.Array(value :_*))
     
-    @scala.inline
-    def setEnvironmentAliases(value: js.Array[String] | String): Self = StObject.set(x, "EnvironmentAliases", value.asInstanceOf[js.Any])
+    inline def setEnvironmentAliases(value: js.Array[String] | String): Self = StObject.set(x, "EnvironmentAliases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentAliasesVarargs(value: String*): Self = StObject.set(x, "EnvironmentAliases", js.Array(value :_*))
+    inline def setEnvironmentAliasesVarargs(value: String*): Self = StObject.set(x, "EnvironmentAliases", js.Array(value :_*))
     
-    @scala.inline
-    def setEnvironments(value: js.Array[String] | String): Self = StObject.set(x, "Environments", value.asInstanceOf[js.Any])
+    inline def setEnvironments(value: js.Array[String] | String): Self = StObject.set(x, "Environments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentsVarargs(value: String*): Self = StObject.set(x, "Environments", js.Array(value :_*))
+    inline def setEnvironmentsVarargs(value: String*): Self = StObject.set(x, "Environments", js.Array(value :_*))
     
-    @scala.inline
-    def setSettings(value: js.Array[String] | String): Self = StObject.set(x, "Settings", value.asInstanceOf[js.Any])
+    inline def setSettings(value: js.Array[String] | String): Self = StObject.set(x, "Settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettingsVarargs(value: String*): Self = StObject.set(x, "Settings", js.Array(value :_*))
+    inline def setSettingsVarargs(value: String*): Self = StObject.set(x, "Settings", js.Array(value :_*))
   }
 }

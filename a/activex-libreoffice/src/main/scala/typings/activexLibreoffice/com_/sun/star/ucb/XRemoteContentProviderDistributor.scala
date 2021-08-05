@@ -38,8 +38,7 @@ trait XRemoteContentProviderDistributor
 }
 object XRemoteContentProviderDistributor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     connectToRemoteAcceptor: (String, String) => Boolean,
     disconnectFromAll: () => Unit,
@@ -51,16 +50,12 @@ object XRemoteContentProviderDistributor {
     __obj.asInstanceOf[XRemoteContentProviderDistributor]
   }
   
-  @scala.inline
-  implicit class XRemoteContentProviderDistributorMutableBuilder[Self <: XRemoteContentProviderDistributor] (val x: Self) extends AnyVal {
+  extension [Self <: XRemoteContentProviderDistributor](x: Self) {
     
-    @scala.inline
-    def setConnectToRemoteAcceptor(value: (String, String) => Boolean): Self = StObject.set(x, "connectToRemoteAcceptor", js.Any.fromFunction2(value))
+    inline def setConnectToRemoteAcceptor(value: (String, String) => Boolean): Self = StObject.set(x, "connectToRemoteAcceptor", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDisconnectFromAll(value: () => Unit): Self = StObject.set(x, "disconnectFromAll", js.Any.fromFunction0(value))
+    inline def setDisconnectFromAll(value: () => Unit): Self = StObject.set(x, "disconnectFromAll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDisconnectFromRemoteAcceptor(value: String => Boolean): Self = StObject.set(x, "disconnectFromRemoteAcceptor", js.Any.fromFunction1(value))
+    inline def setDisconnectFromRemoteAcceptor(value: String => Boolean): Self = StObject.set(x, "disconnectFromRemoteAcceptor", js.Any.fromFunction1(value))
   }
 }

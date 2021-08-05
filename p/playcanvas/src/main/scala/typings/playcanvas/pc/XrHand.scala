@@ -49,8 +49,7 @@ trait XrHand extends StObject {
 }
 object XrHand {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fingers: js.Array[XrFinger],
     getJointById: Double => XrJoint | Null,
     joints: js.Array[XrJoint],
@@ -61,37 +60,26 @@ object XrHand {
     __obj.asInstanceOf[XrHand]
   }
   
-  @scala.inline
-  implicit class XrHandMutableBuilder[Self <: XrHand] (val x: Self) extends AnyVal {
+  extension [Self <: XrHand](x: Self) {
     
-    @scala.inline
-    def setFingers(value: js.Array[XrFinger]): Self = StObject.set(x, "fingers", value.asInstanceOf[js.Any])
+    inline def setFingers(value: js.Array[XrFinger]): Self = StObject.set(x, "fingers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFingersVarargs(value: XrFinger*): Self = StObject.set(x, "fingers", js.Array(value :_*))
+    inline def setFingersVarargs(value: XrFinger*): Self = StObject.set(x, "fingers", js.Array(value :_*))
     
-    @scala.inline
-    def setGetJointById(value: Double => XrJoint | Null): Self = StObject.set(x, "getJointById", js.Any.fromFunction1(value))
+    inline def setGetJointById(value: Double => XrJoint | Null): Self = StObject.set(x, "getJointById", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setJoints(value: js.Array[XrJoint]): Self = StObject.set(x, "joints", value.asInstanceOf[js.Any])
+    inline def setJoints(value: js.Array[XrJoint]): Self = StObject.set(x, "joints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJointsVarargs(value: XrJoint*): Self = StObject.set(x, "joints", js.Array(value :_*))
+    inline def setJointsVarargs(value: XrJoint*): Self = StObject.set(x, "joints", js.Array(value :_*))
     
-    @scala.inline
-    def setTips(value: js.Array[XrJoint]): Self = StObject.set(x, "tips", value.asInstanceOf[js.Any])
+    inline def setTips(value: js.Array[XrJoint]): Self = StObject.set(x, "tips", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTipsVarargs(value: XrJoint*): Self = StObject.set(x, "tips", js.Array(value :_*))
+    inline def setTipsVarargs(value: XrJoint*): Self = StObject.set(x, "tips", js.Array(value :_*))
     
-    @scala.inline
-    def setTracking(value: Boolean): Self = StObject.set(x, "tracking", value.asInstanceOf[js.Any])
+    inline def setTracking(value: Boolean): Self = StObject.set(x, "tracking", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrist(value: XrJoint): Self = StObject.set(x, "wrist", value.asInstanceOf[js.Any])
+    inline def setWrist(value: XrJoint): Self = StObject.set(x, "wrist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWristNull: Self = StObject.set(x, "wrist", null)
+    inline def setWristNull: Self = StObject.set(x, "wrist", null)
   }
 }

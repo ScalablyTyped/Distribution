@@ -45,32 +45,24 @@ object ssoMod {
   }
   object AccountInfo {
     
-    @scala.inline
-    def apply(): AccountInfo = {
+    inline def apply(): AccountInfo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AccountInfo]
     }
     
-    @scala.inline
-    implicit class AccountInfoMutableBuilder[Self <: AccountInfo] (val x: Self) extends AnyVal {
+    extension [Self <: AccountInfo](x: Self) {
       
-      @scala.inline
-      def setAccountId(value: AccountIdType): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+      inline def setAccountId(value: AccountIdType): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+      inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
       
-      @scala.inline
-      def setAccountName(value: AccountNameType): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
+      inline def setAccountName(value: AccountNameType): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccountNameUndefined: Self = StObject.set(x, "accountName", js.undefined)
+      inline def setAccountNameUndefined: Self = StObject.set(x, "accountName", js.undefined)
       
-      @scala.inline
-      def setEmailAddress(value: EmailAddressType): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
+      inline def setEmailAddress(value: EmailAddressType): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
+      inline def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
     }
   }
   
@@ -89,20 +81,16 @@ object ssoMod {
   }
   object ClientApiVersions {
     
-    @scala.inline
-    def apply(): ClientApiVersions = {
+    inline def apply(): ClientApiVersions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientApiVersions]
     }
     
-    @scala.inline
-    implicit class ClientApiVersionsMutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
+    extension [Self <: ClientApiVersions](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     }
   }
   
@@ -134,23 +122,18 @@ object ssoMod {
   }
   object GetRoleCredentialsRequest {
     
-    @scala.inline
-    def apply(accessToken: AccessTokenType, accountId: AccountIdType, roleName: RoleNameType): GetRoleCredentialsRequest = {
+    inline def apply(accessToken: AccessTokenType, accountId: AccountIdType, roleName: RoleNameType): GetRoleCredentialsRequest = {
       val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], accountId = accountId.asInstanceOf[js.Any], roleName = roleName.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetRoleCredentialsRequest]
     }
     
-    @scala.inline
-    implicit class GetRoleCredentialsRequestMutableBuilder[Self <: GetRoleCredentialsRequest] (val x: Self) extends AnyVal {
+    extension [Self <: GetRoleCredentialsRequest](x: Self) {
       
-      @scala.inline
-      def setAccessToken(value: AccessTokenType): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+      inline def setAccessToken(value: AccessTokenType): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccountId(value: AccountIdType): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+      inline def setAccountId(value: AccountIdType): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleName(value: RoleNameType): Self = StObject.set(x, "roleName", value.asInstanceOf[js.Any])
+      inline def setRoleName(value: RoleNameType): Self = StObject.set(x, "roleName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -163,20 +146,16 @@ object ssoMod {
   }
   object GetRoleCredentialsResponse {
     
-    @scala.inline
-    def apply(): GetRoleCredentialsResponse = {
+    inline def apply(): GetRoleCredentialsResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetRoleCredentialsResponse]
     }
     
-    @scala.inline
-    implicit class GetRoleCredentialsResponseMutableBuilder[Self <: GetRoleCredentialsResponse] (val x: Self) extends AnyVal {
+    extension [Self <: GetRoleCredentialsResponse](x: Self) {
       
-      @scala.inline
-      def setRoleCredentials(value: RoleCredentials): Self = StObject.set(x, "roleCredentials", value.asInstanceOf[js.Any])
+      inline def setRoleCredentials(value: RoleCredentials): Self = StObject.set(x, "roleCredentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleCredentialsUndefined: Self = StObject.set(x, "roleCredentials", js.undefined)
+      inline def setRoleCredentialsUndefined: Self = StObject.set(x, "roleCredentials", js.undefined)
     }
   }
   
@@ -204,32 +183,24 @@ object ssoMod {
   }
   object ListAccountRolesRequest {
     
-    @scala.inline
-    def apply(accessToken: AccessTokenType, accountId: AccountIdType): ListAccountRolesRequest = {
+    inline def apply(accessToken: AccessTokenType, accountId: AccountIdType): ListAccountRolesRequest = {
       val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], accountId = accountId.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListAccountRolesRequest]
     }
     
-    @scala.inline
-    implicit class ListAccountRolesRequestMutableBuilder[Self <: ListAccountRolesRequest] (val x: Self) extends AnyVal {
+    extension [Self <: ListAccountRolesRequest](x: Self) {
       
-      @scala.inline
-      def setAccessToken(value: AccessTokenType): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+      inline def setAccessToken(value: AccessTokenType): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccountId(value: AccountIdType): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+      inline def setAccountId(value: AccountIdType): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxResults(value: MaxResultType): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+      inline def setMaxResults(value: MaxResultType): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+      inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
       
-      @scala.inline
-      def setNextToken(value: NextTokenType): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+      inline def setNextToken(value: NextTokenType): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+      inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     }
   }
   
@@ -247,29 +218,22 @@ object ssoMod {
   }
   object ListAccountRolesResponse {
     
-    @scala.inline
-    def apply(): ListAccountRolesResponse = {
+    inline def apply(): ListAccountRolesResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListAccountRolesResponse]
     }
     
-    @scala.inline
-    implicit class ListAccountRolesResponseMutableBuilder[Self <: ListAccountRolesResponse] (val x: Self) extends AnyVal {
+    extension [Self <: ListAccountRolesResponse](x: Self) {
       
-      @scala.inline
-      def setNextToken(value: NextTokenType): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+      inline def setNextToken(value: NextTokenType): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+      inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
       
-      @scala.inline
-      def setRoleList(value: RoleListType): Self = StObject.set(x, "roleList", value.asInstanceOf[js.Any])
+      inline def setRoleList(value: RoleListType): Self = StObject.set(x, "roleList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleListUndefined: Self = StObject.set(x, "roleList", js.undefined)
+      inline def setRoleListUndefined: Self = StObject.set(x, "roleList", js.undefined)
       
-      @scala.inline
-      def setRoleListVarargs(value: RoleInfo*): Self = StObject.set(x, "roleList", js.Array(value :_*))
+      inline def setRoleListVarargs(value: RoleInfo*): Self = StObject.set(x, "roleList", js.Array(value :_*))
     }
   }
   
@@ -292,29 +256,22 @@ object ssoMod {
   }
   object ListAccountsRequest {
     
-    @scala.inline
-    def apply(accessToken: AccessTokenType): ListAccountsRequest = {
+    inline def apply(accessToken: AccessTokenType): ListAccountsRequest = {
       val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListAccountsRequest]
     }
     
-    @scala.inline
-    implicit class ListAccountsRequestMutableBuilder[Self <: ListAccountsRequest] (val x: Self) extends AnyVal {
+    extension [Self <: ListAccountsRequest](x: Self) {
       
-      @scala.inline
-      def setAccessToken(value: AccessTokenType): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+      inline def setAccessToken(value: AccessTokenType): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxResults(value: MaxResultType): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+      inline def setMaxResults(value: MaxResultType): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+      inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
       
-      @scala.inline
-      def setNextToken(value: NextTokenType): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+      inline def setNextToken(value: NextTokenType): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+      inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     }
   }
   
@@ -332,29 +289,22 @@ object ssoMod {
   }
   object ListAccountsResponse {
     
-    @scala.inline
-    def apply(): ListAccountsResponse = {
+    inline def apply(): ListAccountsResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListAccountsResponse]
     }
     
-    @scala.inline
-    implicit class ListAccountsResponseMutableBuilder[Self <: ListAccountsResponse] (val x: Self) extends AnyVal {
+    extension [Self <: ListAccountsResponse](x: Self) {
       
-      @scala.inline
-      def setAccountList(value: AccountListType): Self = StObject.set(x, "accountList", value.asInstanceOf[js.Any])
+      inline def setAccountList(value: AccountListType): Self = StObject.set(x, "accountList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccountListUndefined: Self = StObject.set(x, "accountList", js.undefined)
+      inline def setAccountListUndefined: Self = StObject.set(x, "accountList", js.undefined)
       
-      @scala.inline
-      def setAccountListVarargs(value: AccountInfo*): Self = StObject.set(x, "accountList", js.Array(value :_*))
+      inline def setAccountListVarargs(value: AccountInfo*): Self = StObject.set(x, "accountList", js.Array(value :_*))
       
-      @scala.inline
-      def setNextToken(value: NextTokenType): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+      inline def setNextToken(value: NextTokenType): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+      inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     }
   }
   
@@ -367,17 +317,14 @@ object ssoMod {
   }
   object LogoutRequest {
     
-    @scala.inline
-    def apply(accessToken: AccessTokenType): LogoutRequest = {
+    inline def apply(accessToken: AccessTokenType): LogoutRequest = {
       val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any])
       __obj.asInstanceOf[LogoutRequest]
     }
     
-    @scala.inline
-    implicit class LogoutRequestMutableBuilder[Self <: LogoutRequest] (val x: Self) extends AnyVal {
+    extension [Self <: LogoutRequest](x: Self) {
       
-      @scala.inline
-      def setAccessToken(value: AccessTokenType): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+      inline def setAccessToken(value: AccessTokenType): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     }
   }
   
@@ -409,38 +356,28 @@ object ssoMod {
   }
   object RoleCredentials {
     
-    @scala.inline
-    def apply(): RoleCredentials = {
+    inline def apply(): RoleCredentials = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RoleCredentials]
     }
     
-    @scala.inline
-    implicit class RoleCredentialsMutableBuilder[Self <: RoleCredentials] (val x: Self) extends AnyVal {
+    extension [Self <: RoleCredentials](x: Self) {
       
-      @scala.inline
-      def setAccessKeyId(value: AccessKeyType): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
+      inline def setAccessKeyId(value: AccessKeyType): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessKeyIdUndefined: Self = StObject.set(x, "accessKeyId", js.undefined)
+      inline def setAccessKeyIdUndefined: Self = StObject.set(x, "accessKeyId", js.undefined)
       
-      @scala.inline
-      def setExpiration(value: ExpirationTimestampType): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
+      inline def setExpiration(value: ExpirationTimestampType): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpirationUndefined: Self = StObject.set(x, "expiration", js.undefined)
+      inline def setExpirationUndefined: Self = StObject.set(x, "expiration", js.undefined)
       
-      @scala.inline
-      def setSecretAccessKey(value: SecretAccessKeyType): Self = StObject.set(x, "secretAccessKey", value.asInstanceOf[js.Any])
+      inline def setSecretAccessKey(value: SecretAccessKeyType): Self = StObject.set(x, "secretAccessKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretAccessKeyUndefined: Self = StObject.set(x, "secretAccessKey", js.undefined)
+      inline def setSecretAccessKeyUndefined: Self = StObject.set(x, "secretAccessKey", js.undefined)
       
-      @scala.inline
-      def setSessionToken(value: SessionTokenType): Self = StObject.set(x, "sessionToken", value.asInstanceOf[js.Any])
+      inline def setSessionToken(value: SessionTokenType): Self = StObject.set(x, "sessionToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionTokenUndefined: Self = StObject.set(x, "sessionToken", js.undefined)
+      inline def setSessionTokenUndefined: Self = StObject.set(x, "sessionToken", js.undefined)
     }
   }
   
@@ -458,26 +395,20 @@ object ssoMod {
   }
   object RoleInfo {
     
-    @scala.inline
-    def apply(): RoleInfo = {
+    inline def apply(): RoleInfo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RoleInfo]
     }
     
-    @scala.inline
-    implicit class RoleInfoMutableBuilder[Self <: RoleInfo] (val x: Self) extends AnyVal {
+    extension [Self <: RoleInfo](x: Self) {
       
-      @scala.inline
-      def setAccountId(value: AccountIdType): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+      inline def setAccountId(value: AccountIdType): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+      inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
       
-      @scala.inline
-      def setRoleName(value: RoleNameType): Self = StObject.set(x, "roleName", value.asInstanceOf[js.Any])
+      inline def setRoleName(value: RoleNameType): Self = StObject.set(x, "roleName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleNameUndefined: Self = StObject.set(x, "roleName", js.undefined)
+      inline def setRoleNameUndefined: Self = StObject.set(x, "roleName", js.undefined)
     }
   }
   

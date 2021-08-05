@@ -29,26 +29,20 @@ object storeableMod {
   }
   object Storeable {
     
-    @scala.inline
-    def apply(): Storeable = {
+    inline def apply(): Storeable = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Storeable]
     }
     
-    @scala.inline
-    implicit class StoreableMutableBuilder[Self <: Storeable] (val x: Self) extends AnyVal {
+    extension [Self <: Storeable](x: Self) {
       
-      @scala.inline
-      def setIconIdResolver(value: /* id */ String => String): Self = StObject.set(x, "iconIdResolver", js.Any.fromFunction1(value))
+      inline def setIconIdResolver(value: /* id */ String => String): Self = StObject.set(x, "iconIdResolver", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIconIdResolverUndefined: Self = StObject.set(x, "iconIdResolver", js.undefined)
+      inline def setIconIdResolverUndefined: Self = StObject.set(x, "iconIdResolver", js.undefined)
       
-      @scala.inline
-      def setPreloadable(value: Boolean): Self = StObject.set(x, "preloadable", value.asInstanceOf[js.Any])
+      inline def setPreloadable(value: Boolean): Self = StObject.set(x, "preloadable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreloadableUndefined: Self = StObject.set(x, "preloadable", js.undefined)
+      inline def setPreloadableUndefined: Self = StObject.set(x, "preloadable", js.undefined)
     }
   }
 }

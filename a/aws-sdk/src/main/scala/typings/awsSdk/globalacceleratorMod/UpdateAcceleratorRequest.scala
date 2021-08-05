@@ -28,34 +28,25 @@ trait UpdateAcceleratorRequest extends StObject {
 }
 object UpdateAcceleratorRequest {
   
-  @scala.inline
-  def apply(AcceleratorArn: GenericString): UpdateAcceleratorRequest = {
+  inline def apply(AcceleratorArn: GenericString): UpdateAcceleratorRequest = {
     val __obj = js.Dynamic.literal(AcceleratorArn = AcceleratorArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAcceleratorRequest]
   }
   
-  @scala.inline
-  implicit class UpdateAcceleratorRequestMutableBuilder[Self <: UpdateAcceleratorRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateAcceleratorRequest](x: Self) {
     
-    @scala.inline
-    def setAcceleratorArn(value: GenericString): Self = StObject.set(x, "AcceleratorArn", value.asInstanceOf[js.Any])
+    inline def setAcceleratorArn(value: GenericString): Self = StObject.set(x, "AcceleratorArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: GenericBoolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: GenericBoolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
     
-    @scala.inline
-    def setIpAddressType(value: IpAddressType): Self = StObject.set(x, "IpAddressType", value.asInstanceOf[js.Any])
+    inline def setIpAddressType(value: IpAddressType): Self = StObject.set(x, "IpAddressType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddressTypeUndefined: Self = StObject.set(x, "IpAddressType", js.undefined)
+    inline def setIpAddressTypeUndefined: Self = StObject.set(x, "IpAddressType", js.undefined)
     
-    @scala.inline
-    def setName(value: GenericString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: GenericString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait DescribeRefreshSchemasStatusMessage extends StObject {
 }
 object DescribeRefreshSchemasStatusMessage {
   
-  @scala.inline
-  def apply(EndpointArn: String): DescribeRefreshSchemasStatusMessage = {
+  inline def apply(EndpointArn: String): DescribeRefreshSchemasStatusMessage = {
     val __obj = js.Dynamic.literal(EndpointArn = EndpointArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeRefreshSchemasStatusMessage]
   }
   
-  @scala.inline
-  implicit class DescribeRefreshSchemasStatusMessageMutableBuilder[Self <: DescribeRefreshSchemasStatusMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeRefreshSchemasStatusMessage](x: Self) {
     
-    @scala.inline
-    def setEndpointArn(value: String): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
+    inline def setEndpointArn(value: String): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
   }
 }

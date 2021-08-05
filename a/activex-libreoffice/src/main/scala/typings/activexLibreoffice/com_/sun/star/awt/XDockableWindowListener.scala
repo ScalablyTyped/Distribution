@@ -46,8 +46,7 @@ trait XDockableWindowListener
 }
 object XDockableWindowListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     closed: EventObject => Unit,
     disposing: EventObject => Unit,
@@ -64,28 +63,20 @@ object XDockableWindowListener {
     __obj.asInstanceOf[XDockableWindowListener]
   }
   
-  @scala.inline
-  implicit class XDockableWindowListenerMutableBuilder[Self <: XDockableWindowListener] (val x: Self) extends AnyVal {
+  extension [Self <: XDockableWindowListener](x: Self) {
     
-    @scala.inline
-    def setClosed(value: EventObject => Unit): Self = StObject.set(x, "closed", js.Any.fromFunction1(value))
+    inline def setClosed(value: EventObject => Unit): Self = StObject.set(x, "closed", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDocking(value: DockingEvent => DockingData): Self = StObject.set(x, "docking", js.Any.fromFunction1(value))
+    inline def setDocking(value: DockingEvent => DockingData): Self = StObject.set(x, "docking", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEndDocking(value: EndDockingEvent => Unit): Self = StObject.set(x, "endDocking", js.Any.fromFunction1(value))
+    inline def setEndDocking(value: EndDockingEvent => Unit): Self = StObject.set(x, "endDocking", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEndPopupMode(value: EndPopupModeEvent => Unit): Self = StObject.set(x, "endPopupMode", js.Any.fromFunction1(value))
+    inline def setEndPopupMode(value: EndPopupModeEvent => Unit): Self = StObject.set(x, "endPopupMode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPrepareToggleFloatingMode(value: EventObject => Boolean): Self = StObject.set(x, "prepareToggleFloatingMode", js.Any.fromFunction1(value))
+    inline def setPrepareToggleFloatingMode(value: EventObject => Boolean): Self = StObject.set(x, "prepareToggleFloatingMode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStartDocking(value: DockingEvent => Unit): Self = StObject.set(x, "startDocking", js.Any.fromFunction1(value))
+    inline def setStartDocking(value: DockingEvent => Unit): Self = StObject.set(x, "startDocking", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToggleFloatingMode(value: EventObject => Unit): Self = StObject.set(x, "toggleFloatingMode", js.Any.fromFunction1(value))
+    inline def setToggleFloatingMode(value: EventObject => Unit): Self = StObject.set(x, "toggleFloatingMode", js.Any.fromFunction1(value))
   }
 }

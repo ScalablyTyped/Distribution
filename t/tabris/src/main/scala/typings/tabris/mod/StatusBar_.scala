@@ -17,8 +17,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tabris", "StatusBar")
 @js.native
-class StatusBar_ protected () extends NativeObject {
-  protected def this(properties: Properties[StatusBar_, OmitStatusBarset]) = this()
+/* private */ class StatusBar_ () extends NativeObject {
+  /* private */ def this(properties: Properties[StatusBar_, OmitStatusBarset]) = this()
   
   /**
     * Background color of the status bar. Should be used in conjunction with the `theme` property to keep

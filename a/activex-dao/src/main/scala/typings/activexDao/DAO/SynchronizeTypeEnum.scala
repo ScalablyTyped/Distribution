@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SynchronizeTypeEnum extends StObject
 object SynchronizeTypeEnum {
   
-  @scala.inline
-  def dbRepExportChanges: `1` = 1.asInstanceOf[`1`]
+  inline def dbRepExportChanges: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def dbRepImpExpChanges: `4` = 4.asInstanceOf[`4`]
+  inline def dbRepImpExpChanges: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def dbRepImportChanges: `2` = 2.asInstanceOf[`2`]
+  inline def dbRepImportChanges: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def dbRepSyncInternet: `16` = 16.asInstanceOf[`16`]
+  inline def dbRepSyncInternet: `16` = 16.asInstanceOf[`16`]
 }

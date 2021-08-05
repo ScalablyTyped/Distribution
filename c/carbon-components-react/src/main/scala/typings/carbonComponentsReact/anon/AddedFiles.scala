@@ -11,19 +11,15 @@ trait AddedFiles extends StObject {
 }
 object AddedFiles {
   
-  @scala.inline
-  def apply(addedFiles: js.Array[File]): AddedFiles = {
+  inline def apply(addedFiles: js.Array[File]): AddedFiles = {
     val __obj = js.Dynamic.literal(addedFiles = addedFiles.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddedFiles]
   }
   
-  @scala.inline
-  implicit class AddedFilesMutableBuilder[Self <: AddedFiles] (val x: Self) extends AnyVal {
+  extension [Self <: AddedFiles](x: Self) {
     
-    @scala.inline
-    def setAddedFiles(value: js.Array[File]): Self = StObject.set(x, "addedFiles", value.asInstanceOf[js.Any])
+    inline def setAddedFiles(value: js.Array[File]): Self = StObject.set(x, "addedFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddedFilesVarargs(value: File*): Self = StObject.set(x, "addedFiles", js.Array(value :_*))
+    inline def setAddedFilesVarargs(value: File*): Self = StObject.set(x, "addedFiles", js.Array(value :_*))
   }
 }

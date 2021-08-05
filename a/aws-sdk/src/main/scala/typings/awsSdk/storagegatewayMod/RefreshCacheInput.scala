@@ -23,31 +23,23 @@ trait RefreshCacheInput extends StObject {
 }
 object RefreshCacheInput {
   
-  @scala.inline
-  def apply(FileShareARN: FileShareARN): RefreshCacheInput = {
+  inline def apply(FileShareARN: FileShareARN): RefreshCacheInput = {
     val __obj = js.Dynamic.literal(FileShareARN = FileShareARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefreshCacheInput]
   }
   
-  @scala.inline
-  implicit class RefreshCacheInputMutableBuilder[Self <: RefreshCacheInput] (val x: Self) extends AnyVal {
+  extension [Self <: RefreshCacheInput](x: Self) {
     
-    @scala.inline
-    def setFileShareARN(value: FileShareARN): Self = StObject.set(x, "FileShareARN", value.asInstanceOf[js.Any])
+    inline def setFileShareARN(value: FileShareARN): Self = StObject.set(x, "FileShareARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFolderList(value: FolderList): Self = StObject.set(x, "FolderList", value.asInstanceOf[js.Any])
+    inline def setFolderList(value: FolderList): Self = StObject.set(x, "FolderList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFolderListUndefined: Self = StObject.set(x, "FolderList", js.undefined)
+    inline def setFolderListUndefined: Self = StObject.set(x, "FolderList", js.undefined)
     
-    @scala.inline
-    def setFolderListVarargs(value: Folder*): Self = StObject.set(x, "FolderList", js.Array(value :_*))
+    inline def setFolderListVarargs(value: Folder*): Self = StObject.set(x, "FolderList", js.Array(value :_*))
     
-    @scala.inline
-    def setRecursive(value: Boolean): Self = StObject.set(x, "Recursive", value.asInstanceOf[js.Any])
+    inline def setRecursive(value: Boolean): Self = StObject.set(x, "Recursive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecursiveUndefined: Self = StObject.set(x, "Recursive", js.undefined)
+    inline def setRecursiveUndefined: Self = StObject.set(x, "Recursive", js.undefined)
   }
 }

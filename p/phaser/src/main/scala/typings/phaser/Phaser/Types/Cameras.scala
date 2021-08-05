@@ -61,68 +61,48 @@ object Cameras {
     }
     object FixedKeyControlConfig {
       
-      @scala.inline
-      def apply(): FixedKeyControlConfig = {
+      inline def apply(): FixedKeyControlConfig = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[FixedKeyControlConfig]
       }
       
-      @scala.inline
-      implicit class FixedKeyControlConfigMutableBuilder[Self <: FixedKeyControlConfig] (val x: Self) extends AnyVal {
+      extension [Self <: FixedKeyControlConfig](x: Self) {
         
-        @scala.inline
-        def setCamera(value: Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
+        inline def setCamera(value: Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCameraUndefined: Self = StObject.set(x, "camera", js.undefined)
+        inline def setCameraUndefined: Self = StObject.set(x, "camera", js.undefined)
         
-        @scala.inline
-        def setDown(value: Key): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
+        inline def setDown(value: Key): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
+        inline def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
         
-        @scala.inline
-        def setLeft(value: Key): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+        inline def setLeft(value: Key): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+        inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
         
-        @scala.inline
-        def setRight(value: Key): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+        inline def setRight(value: Key): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+        inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
         
-        @scala.inline
-        def setSpeed(value: Double | js.Object): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+        inline def setSpeed(value: Double | js.Object): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
+        inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
         
-        @scala.inline
-        def setUp(value: Key): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
+        inline def setUp(value: Key): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpUndefined: Self = StObject.set(x, "up", js.undefined)
+        inline def setUpUndefined: Self = StObject.set(x, "up", js.undefined)
         
-        @scala.inline
-        def setZoomIn(value: Key): Self = StObject.set(x, "zoomIn", value.asInstanceOf[js.Any])
+        inline def setZoomIn(value: Key): Self = StObject.set(x, "zoomIn", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setZoomInUndefined: Self = StObject.set(x, "zoomIn", js.undefined)
+        inline def setZoomInUndefined: Self = StObject.set(x, "zoomIn", js.undefined)
         
-        @scala.inline
-        def setZoomOut(value: Key): Self = StObject.set(x, "zoomOut", value.asInstanceOf[js.Any])
+        inline def setZoomOut(value: Key): Self = StObject.set(x, "zoomOut", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setZoomOutUndefined: Self = StObject.set(x, "zoomOut", js.undefined)
+        inline def setZoomOutUndefined: Self = StObject.set(x, "zoomOut", js.undefined)
         
-        @scala.inline
-        def setZoomSpeed(value: Double): Self = StObject.set(x, "zoomSpeed", value.asInstanceOf[js.Any])
+        inline def setZoomSpeed(value: Double): Self = StObject.set(x, "zoomSpeed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setZoomSpeedUndefined: Self = StObject.set(x, "zoomSpeed", js.undefined)
+        inline def setZoomSpeedUndefined: Self = StObject.set(x, "zoomSpeed", js.undefined)
       }
     }
     
@@ -185,80 +165,56 @@ object Cameras {
     }
     object SmoothedKeyControlConfig {
       
-      @scala.inline
-      def apply(): SmoothedKeyControlConfig = {
+      inline def apply(): SmoothedKeyControlConfig = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SmoothedKeyControlConfig]
       }
       
-      @scala.inline
-      implicit class SmoothedKeyControlConfigMutableBuilder[Self <: SmoothedKeyControlConfig] (val x: Self) extends AnyVal {
+      extension [Self <: SmoothedKeyControlConfig](x: Self) {
         
-        @scala.inline
-        def setAcceleration(value: Double | js.Object): Self = StObject.set(x, "acceleration", value.asInstanceOf[js.Any])
+        inline def setAcceleration(value: Double | js.Object): Self = StObject.set(x, "acceleration", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAccelerationUndefined: Self = StObject.set(x, "acceleration", js.undefined)
+        inline def setAccelerationUndefined: Self = StObject.set(x, "acceleration", js.undefined)
         
-        @scala.inline
-        def setCamera(value: Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
+        inline def setCamera(value: Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCameraUndefined: Self = StObject.set(x, "camera", js.undefined)
+        inline def setCameraUndefined: Self = StObject.set(x, "camera", js.undefined)
         
-        @scala.inline
-        def setDown(value: Key): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
+        inline def setDown(value: Key): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
+        inline def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
         
-        @scala.inline
-        def setDrag(value: Double | js.Object): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
+        inline def setDrag(value: Double | js.Object): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
+        inline def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
         
-        @scala.inline
-        def setLeft(value: Key): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+        inline def setLeft(value: Key): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+        inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
         
-        @scala.inline
-        def setMaxSpeed(value: Double | js.Object): Self = StObject.set(x, "maxSpeed", value.asInstanceOf[js.Any])
+        inline def setMaxSpeed(value: Double | js.Object): Self = StObject.set(x, "maxSpeed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaxSpeedUndefined: Self = StObject.set(x, "maxSpeed", js.undefined)
+        inline def setMaxSpeedUndefined: Self = StObject.set(x, "maxSpeed", js.undefined)
         
-        @scala.inline
-        def setRight(value: Key): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+        inline def setRight(value: Key): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+        inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
         
-        @scala.inline
-        def setUp(value: Key): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
+        inline def setUp(value: Key): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpUndefined: Self = StObject.set(x, "up", js.undefined)
+        inline def setUpUndefined: Self = StObject.set(x, "up", js.undefined)
         
-        @scala.inline
-        def setZoomIn(value: Key): Self = StObject.set(x, "zoomIn", value.asInstanceOf[js.Any])
+        inline def setZoomIn(value: Key): Self = StObject.set(x, "zoomIn", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setZoomInUndefined: Self = StObject.set(x, "zoomIn", js.undefined)
+        inline def setZoomInUndefined: Self = StObject.set(x, "zoomIn", js.undefined)
         
-        @scala.inline
-        def setZoomOut(value: Key): Self = StObject.set(x, "zoomOut", value.asInstanceOf[js.Any])
+        inline def setZoomOut(value: Key): Self = StObject.set(x, "zoomOut", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setZoomOutUndefined: Self = StObject.set(x, "zoomOut", js.undefined)
+        inline def setZoomOutUndefined: Self = StObject.set(x, "zoomOut", js.undefined)
         
-        @scala.inline
-        def setZoomSpeed(value: Double): Self = StObject.set(x, "zoomSpeed", value.asInstanceOf[js.Any])
+        inline def setZoomSpeed(value: Double): Self = StObject.set(x, "zoomSpeed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setZoomSpeedUndefined: Self = StObject.set(x, "zoomSpeed", js.undefined)
+        inline def setZoomSpeedUndefined: Self = StObject.set(x, "zoomSpeed", js.undefined)
       }
     }
   }
@@ -353,110 +309,76 @@ object Cameras {
     }
     object CameraConfig {
       
-      @scala.inline
-      def apply(): CameraConfig = {
+      inline def apply(): CameraConfig = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CameraConfig]
       }
       
-      @scala.inline
-      implicit class CameraConfigMutableBuilder[Self <: CameraConfig] (val x: Self) extends AnyVal {
+      extension [Self <: CameraConfig](x: Self) {
         
-        @scala.inline
-        def setBackgroundColor(value: `false` | String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+        inline def setBackgroundColor(value: `false` | String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+        inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
         
-        @scala.inline
-        def setBounds(value: js.Object): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+        inline def setBounds(value: js.Object): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBoundsDotheight(value: Double): Self = StObject.set(x, "bounds.height", value.asInstanceOf[js.Any])
+        inline def setBoundsDotheight(value: Double): Self = StObject.set(x, "bounds.height", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBoundsDotheightUndefined: Self = StObject.set(x, "bounds.height", js.undefined)
+        inline def setBoundsDotheightUndefined: Self = StObject.set(x, "bounds.height", js.undefined)
         
-        @scala.inline
-        def setBoundsDotwidth(value: Double): Self = StObject.set(x, "bounds.width", value.asInstanceOf[js.Any])
+        inline def setBoundsDotwidth(value: Double): Self = StObject.set(x, "bounds.width", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBoundsDotwidthUndefined: Self = StObject.set(x, "bounds.width", js.undefined)
+        inline def setBoundsDotwidthUndefined: Self = StObject.set(x, "bounds.width", js.undefined)
         
-        @scala.inline
-        def setBoundsDotx(value: Double): Self = StObject.set(x, "bounds.x", value.asInstanceOf[js.Any])
+        inline def setBoundsDotx(value: Double): Self = StObject.set(x, "bounds.x", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBoundsDotxUndefined: Self = StObject.set(x, "bounds.x", js.undefined)
+        inline def setBoundsDotxUndefined: Self = StObject.set(x, "bounds.x", js.undefined)
         
-        @scala.inline
-        def setBoundsDoty(value: Double): Self = StObject.set(x, "bounds.y", value.asInstanceOf[js.Any])
+        inline def setBoundsDoty(value: Double): Self = StObject.set(x, "bounds.y", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBoundsDotyUndefined: Self = StObject.set(x, "bounds.y", js.undefined)
+        inline def setBoundsDotyUndefined: Self = StObject.set(x, "bounds.y", js.undefined)
         
-        @scala.inline
-        def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
+        inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
         
-        @scala.inline
-        def setHeight(value: integer): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+        inline def setHeight(value: integer): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+        inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+        inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
+        inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
         
-        @scala.inline
-        def setRoundPixels(value: Boolean): Self = StObject.set(x, "roundPixels", value.asInstanceOf[js.Any])
+        inline def setRoundPixels(value: Boolean): Self = StObject.set(x, "roundPixels", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRoundPixelsUndefined: Self = StObject.set(x, "roundPixels", js.undefined)
+        inline def setRoundPixelsUndefined: Self = StObject.set(x, "roundPixels", js.undefined)
         
-        @scala.inline
-        def setScrollX(value: Double): Self = StObject.set(x, "scrollX", value.asInstanceOf[js.Any])
+        inline def setScrollX(value: Double): Self = StObject.set(x, "scrollX", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScrollXUndefined: Self = StObject.set(x, "scrollX", js.undefined)
+        inline def setScrollXUndefined: Self = StObject.set(x, "scrollX", js.undefined)
         
-        @scala.inline
-        def setScrollY(value: Double): Self = StObject.set(x, "scrollY", value.asInstanceOf[js.Any])
+        inline def setScrollY(value: Double): Self = StObject.set(x, "scrollY", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScrollYUndefined: Self = StObject.set(x, "scrollY", js.undefined)
+        inline def setScrollYUndefined: Self = StObject.set(x, "scrollY", js.undefined)
         
-        @scala.inline
-        def setWidth(value: integer): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+        inline def setWidth(value: integer): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+        inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
         
-        @scala.inline
-        def setX(value: integer): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+        inline def setX(value: integer): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+        inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
         
-        @scala.inline
-        def setY(value: integer): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+        inline def setY(value: integer): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+        inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
         
-        @scala.inline
-        def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+        inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
+        inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
       }
     }
     
@@ -534,8 +456,7 @@ object Cameras {
     }
     object JSONCamera {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         backgroundColor: String,
         height: Double,
         name: String,
@@ -552,47 +473,33 @@ object Cameras {
         __obj.asInstanceOf[JSONCamera]
       }
       
-      @scala.inline
-      implicit class JSONCameraMutableBuilder[Self <: JSONCamera] (val x: Self) extends AnyVal {
+      extension [Self <: JSONCamera](x: Self) {
         
-        @scala.inline
-        def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+        inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBounds(value: JSONCameraBounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+        inline def setBounds(value: JSONCameraBounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
+        inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
         
-        @scala.inline
-        def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+        inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+        inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRoundPixels(value: Boolean): Self = StObject.set(x, "roundPixels", value.asInstanceOf[js.Any])
+        inline def setRoundPixels(value: Boolean): Self = StObject.set(x, "roundPixels", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScrollX(value: Double): Self = StObject.set(x, "scrollX", value.asInstanceOf[js.Any])
+        inline def setScrollX(value: Double): Self = StObject.set(x, "scrollX", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScrollY(value: Double): Self = StObject.set(x, "scrollY", value.asInstanceOf[js.Any])
+        inline def setScrollY(value: Double): Self = StObject.set(x, "scrollY", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+        inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+        inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+        inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+        inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
       }
     }
     
@@ -620,26 +527,20 @@ object Cameras {
     }
     object JSONCameraBounds {
       
-      @scala.inline
-      def apply(height: Double, width: Double, x: Double, y: Double): JSONCameraBounds = {
+      inline def apply(height: Double, width: Double, x: Double, y: Double): JSONCameraBounds = {
         val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
         __obj.asInstanceOf[JSONCameraBounds]
       }
       
-      @scala.inline
-      implicit class JSONCameraBoundsMutableBuilder[Self <: JSONCameraBounds] (val x: Self) extends AnyVal {
+      extension [Self <: JSONCameraBounds](x: Self) {
         
-        @scala.inline
-        def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+        inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+        inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+        inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+        inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       }
     }
   }

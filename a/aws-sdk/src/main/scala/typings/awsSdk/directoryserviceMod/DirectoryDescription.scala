@@ -133,166 +133,113 @@ trait DirectoryDescription extends StObject {
 }
 object DirectoryDescription {
   
-  @scala.inline
-  def apply(): DirectoryDescription = {
+  inline def apply(): DirectoryDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DirectoryDescription]
   }
   
-  @scala.inline
-  implicit class DirectoryDescriptionMutableBuilder[Self <: DirectoryDescription] (val x: Self) extends AnyVal {
+  extension [Self <: DirectoryDescription](x: Self) {
     
-    @scala.inline
-    def setAccessUrl(value: AccessUrl): Self = StObject.set(x, "AccessUrl", value.asInstanceOf[js.Any])
+    inline def setAccessUrl(value: AccessUrl): Self = StObject.set(x, "AccessUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessUrlUndefined: Self = StObject.set(x, "AccessUrl", js.undefined)
+    inline def setAccessUrlUndefined: Self = StObject.set(x, "AccessUrl", js.undefined)
     
-    @scala.inline
-    def setAlias(value: AliasName): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
+    inline def setAlias(value: AliasName): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasUndefined: Self = StObject.set(x, "Alias", js.undefined)
+    inline def setAliasUndefined: Self = StObject.set(x, "Alias", js.undefined)
     
-    @scala.inline
-    def setConnectSettings(value: DirectoryConnectSettingsDescription): Self = StObject.set(x, "ConnectSettings", value.asInstanceOf[js.Any])
+    inline def setConnectSettings(value: DirectoryConnectSettingsDescription): Self = StObject.set(x, "ConnectSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectSettingsUndefined: Self = StObject.set(x, "ConnectSettings", js.undefined)
+    inline def setConnectSettingsUndefined: Self = StObject.set(x, "ConnectSettings", js.undefined)
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setDesiredNumberOfDomainControllers(value: DesiredNumberOfDomainControllers): Self = StObject.set(x, "DesiredNumberOfDomainControllers", value.asInstanceOf[js.Any])
+    inline def setDesiredNumberOfDomainControllers(value: DesiredNumberOfDomainControllers): Self = StObject.set(x, "DesiredNumberOfDomainControllers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesiredNumberOfDomainControllersUndefined: Self = StObject.set(x, "DesiredNumberOfDomainControllers", js.undefined)
+    inline def setDesiredNumberOfDomainControllersUndefined: Self = StObject.set(x, "DesiredNumberOfDomainControllers", js.undefined)
     
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
+    inline def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
     
-    @scala.inline
-    def setDnsIpAddrs(value: DnsIpAddrs): Self = StObject.set(x, "DnsIpAddrs", value.asInstanceOf[js.Any])
+    inline def setDnsIpAddrs(value: DnsIpAddrs): Self = StObject.set(x, "DnsIpAddrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDnsIpAddrsUndefined: Self = StObject.set(x, "DnsIpAddrs", js.undefined)
+    inline def setDnsIpAddrsUndefined: Self = StObject.set(x, "DnsIpAddrs", js.undefined)
     
-    @scala.inline
-    def setDnsIpAddrsVarargs(value: IpAddr*): Self = StObject.set(x, "DnsIpAddrs", js.Array(value :_*))
+    inline def setDnsIpAddrsVarargs(value: IpAddr*): Self = StObject.set(x, "DnsIpAddrs", js.Array(value :_*))
     
-    @scala.inline
-    def setEdition(value: DirectoryEdition): Self = StObject.set(x, "Edition", value.asInstanceOf[js.Any])
+    inline def setEdition(value: DirectoryEdition): Self = StObject.set(x, "Edition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditionUndefined: Self = StObject.set(x, "Edition", js.undefined)
+    inline def setEditionUndefined: Self = StObject.set(x, "Edition", js.undefined)
     
-    @scala.inline
-    def setLaunchTime(value: LaunchTime): Self = StObject.set(x, "LaunchTime", value.asInstanceOf[js.Any])
+    inline def setLaunchTime(value: LaunchTime): Self = StObject.set(x, "LaunchTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchTimeUndefined: Self = StObject.set(x, "LaunchTime", js.undefined)
+    inline def setLaunchTimeUndefined: Self = StObject.set(x, "LaunchTime", js.undefined)
     
-    @scala.inline
-    def setName(value: DirectoryName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: DirectoryName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setOwnerDirectoryDescription(value: OwnerDirectoryDescription): Self = StObject.set(x, "OwnerDirectoryDescription", value.asInstanceOf[js.Any])
+    inline def setOwnerDirectoryDescription(value: OwnerDirectoryDescription): Self = StObject.set(x, "OwnerDirectoryDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerDirectoryDescriptionUndefined: Self = StObject.set(x, "OwnerDirectoryDescription", js.undefined)
+    inline def setOwnerDirectoryDescriptionUndefined: Self = StObject.set(x, "OwnerDirectoryDescription", js.undefined)
     
-    @scala.inline
-    def setRadiusSettings(value: RadiusSettings): Self = StObject.set(x, "RadiusSettings", value.asInstanceOf[js.Any])
+    inline def setRadiusSettings(value: RadiusSettings): Self = StObject.set(x, "RadiusSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusSettingsUndefined: Self = StObject.set(x, "RadiusSettings", js.undefined)
+    inline def setRadiusSettingsUndefined: Self = StObject.set(x, "RadiusSettings", js.undefined)
     
-    @scala.inline
-    def setRadiusStatus(value: RadiusStatus): Self = StObject.set(x, "RadiusStatus", value.asInstanceOf[js.Any])
+    inline def setRadiusStatus(value: RadiusStatus): Self = StObject.set(x, "RadiusStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusStatusUndefined: Self = StObject.set(x, "RadiusStatus", js.undefined)
+    inline def setRadiusStatusUndefined: Self = StObject.set(x, "RadiusStatus", js.undefined)
     
-    @scala.inline
-    def setRegionsInfo(value: RegionsInfo): Self = StObject.set(x, "RegionsInfo", value.asInstanceOf[js.Any])
+    inline def setRegionsInfo(value: RegionsInfo): Self = StObject.set(x, "RegionsInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionsInfoUndefined: Self = StObject.set(x, "RegionsInfo", js.undefined)
+    inline def setRegionsInfoUndefined: Self = StObject.set(x, "RegionsInfo", js.undefined)
     
-    @scala.inline
-    def setShareMethod(value: ShareMethod): Self = StObject.set(x, "ShareMethod", value.asInstanceOf[js.Any])
+    inline def setShareMethod(value: ShareMethod): Self = StObject.set(x, "ShareMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShareMethodUndefined: Self = StObject.set(x, "ShareMethod", js.undefined)
+    inline def setShareMethodUndefined: Self = StObject.set(x, "ShareMethod", js.undefined)
     
-    @scala.inline
-    def setShareNotes(value: Notes): Self = StObject.set(x, "ShareNotes", value.asInstanceOf[js.Any])
+    inline def setShareNotes(value: Notes): Self = StObject.set(x, "ShareNotes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShareNotesUndefined: Self = StObject.set(x, "ShareNotes", js.undefined)
+    inline def setShareNotesUndefined: Self = StObject.set(x, "ShareNotes", js.undefined)
     
-    @scala.inline
-    def setShareStatus(value: ShareStatus): Self = StObject.set(x, "ShareStatus", value.asInstanceOf[js.Any])
+    inline def setShareStatus(value: ShareStatus): Self = StObject.set(x, "ShareStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShareStatusUndefined: Self = StObject.set(x, "ShareStatus", js.undefined)
+    inline def setShareStatusUndefined: Self = StObject.set(x, "ShareStatus", js.undefined)
     
-    @scala.inline
-    def setShortName(value: DirectoryShortName): Self = StObject.set(x, "ShortName", value.asInstanceOf[js.Any])
+    inline def setShortName(value: DirectoryShortName): Self = StObject.set(x, "ShortName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortNameUndefined: Self = StObject.set(x, "ShortName", js.undefined)
+    inline def setShortNameUndefined: Self = StObject.set(x, "ShortName", js.undefined)
     
-    @scala.inline
-    def setSize(value: DirectorySize): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+    inline def setSize(value: DirectorySize): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "Size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "Size", js.undefined)
     
-    @scala.inline
-    def setSsoEnabled(value: SsoEnabled): Self = StObject.set(x, "SsoEnabled", value.asInstanceOf[js.Any])
+    inline def setSsoEnabled(value: SsoEnabled): Self = StObject.set(x, "SsoEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsoEnabledUndefined: Self = StObject.set(x, "SsoEnabled", js.undefined)
+    inline def setSsoEnabledUndefined: Self = StObject.set(x, "SsoEnabled", js.undefined)
     
-    @scala.inline
-    def setStage(value: DirectoryStage): Self = StObject.set(x, "Stage", value.asInstanceOf[js.Any])
+    inline def setStage(value: DirectoryStage): Self = StObject.set(x, "Stage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStageLastUpdatedDateTime(value: LastUpdatedDateTime): Self = StObject.set(x, "StageLastUpdatedDateTime", value.asInstanceOf[js.Any])
+    inline def setStageLastUpdatedDateTime(value: LastUpdatedDateTime): Self = StObject.set(x, "StageLastUpdatedDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStageLastUpdatedDateTimeUndefined: Self = StObject.set(x, "StageLastUpdatedDateTime", js.undefined)
+    inline def setStageLastUpdatedDateTimeUndefined: Self = StObject.set(x, "StageLastUpdatedDateTime", js.undefined)
     
-    @scala.inline
-    def setStageReason(value: StageReason): Self = StObject.set(x, "StageReason", value.asInstanceOf[js.Any])
+    inline def setStageReason(value: StageReason): Self = StObject.set(x, "StageReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStageReasonUndefined: Self = StObject.set(x, "StageReason", js.undefined)
+    inline def setStageReasonUndefined: Self = StObject.set(x, "StageReason", js.undefined)
     
-    @scala.inline
-    def setStageUndefined: Self = StObject.set(x, "Stage", js.undefined)
+    inline def setStageUndefined: Self = StObject.set(x, "Stage", js.undefined)
     
-    @scala.inline
-    def setType(value: DirectoryType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: DirectoryType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
-    @scala.inline
-    def setVpcSettings(value: DirectoryVpcSettingsDescription): Self = StObject.set(x, "VpcSettings", value.asInstanceOf[js.Any])
+    inline def setVpcSettings(value: DirectoryVpcSettingsDescription): Self = StObject.set(x, "VpcSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcSettingsUndefined: Self = StObject.set(x, "VpcSettings", js.undefined)
+    inline def setVpcSettingsUndefined: Self = StObject.set(x, "VpcSettings", js.undefined)
   }
 }

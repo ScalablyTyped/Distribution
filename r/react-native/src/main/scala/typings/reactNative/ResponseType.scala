@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ResponseType extends StObject
 object ResponseType {
   
-  @scala.inline
-  def default: typings.reactNative.reactNativeStrings.default = "default".asInstanceOf[typings.reactNative.reactNativeStrings.default]
+  inline def default: typings.reactNative.reactNativeStrings.default = "default".asInstanceOf[typings.reactNative.reactNativeStrings.default]
   
-  @scala.inline
-  def basic: typings.reactNative.reactNativeStrings.basic = "basic".asInstanceOf[typings.reactNative.reactNativeStrings.basic]
+  inline def basic: typings.reactNative.reactNativeStrings.basic = "basic".asInstanceOf[typings.reactNative.reactNativeStrings.basic]
   
-  @scala.inline
-  def cors: typings.reactNative.reactNativeStrings.cors = "cors".asInstanceOf[typings.reactNative.reactNativeStrings.cors]
+  inline def cors: typings.reactNative.reactNativeStrings.cors = "cors".asInstanceOf[typings.reactNative.reactNativeStrings.cors]
   
-  @scala.inline
-  def error: typings.reactNative.reactNativeStrings.error = "error".asInstanceOf[typings.reactNative.reactNativeStrings.error]
+  inline def error: typings.reactNative.reactNativeStrings.error = "error".asInstanceOf[typings.reactNative.reactNativeStrings.error]
   
-  @scala.inline
-  def opaque: typings.reactNative.reactNativeStrings.opaque = "opaque".asInstanceOf[typings.reactNative.reactNativeStrings.opaque]
+  inline def opaque: typings.reactNative.reactNativeStrings.opaque = "opaque".asInstanceOf[typings.reactNative.reactNativeStrings.opaque]
   
-  @scala.inline
-  def opaqueredirect: typings.reactNative.reactNativeStrings.opaqueredirect = "opaqueredirect".asInstanceOf[typings.reactNative.reactNativeStrings.opaqueredirect]
+  inline def opaqueredirect: typings.reactNative.reactNativeStrings.opaqueredirect = "opaqueredirect".asInstanceOf[typings.reactNative.reactNativeStrings.opaqueredirect]
 }

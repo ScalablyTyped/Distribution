@@ -12,22 +12,17 @@ trait RequestPart extends StObject {
 }
 object RequestPart {
   
-  @scala.inline
-  def apply(body: js.Any): RequestPart = {
+  inline def apply(body: js.Any): RequestPart = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestPart]
   }
   
-  @scala.inline
-  implicit class RequestPartMutableBuilder[Self <: RequestPart] (val x: Self) extends AnyVal {
+  extension [Self <: RequestPart](x: Self) {
     
-    @scala.inline
-    def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
   }
 }

@@ -12,19 +12,15 @@ trait JumpPointFinderOptions
 }
 object JumpPointFinderOptions {
   
-  @scala.inline
-  def apply(): JumpPointFinderOptions = {
+  inline def apply(): JumpPointFinderOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JumpPointFinderOptions]
   }
   
-  @scala.inline
-  implicit class JumpPointFinderOptionsMutableBuilder[Self <: JumpPointFinderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: JumpPointFinderOptions](x: Self) {
     
-    @scala.inline
-    def setDiagonalMovement(value: DiagonalMovement): Self = StObject.set(x, "diagonalMovement", value.asInstanceOf[js.Any])
+    inline def setDiagonalMovement(value: DiagonalMovement): Self = StObject.set(x, "diagonalMovement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiagonalMovementUndefined: Self = StObject.set(x, "diagonalMovement", js.undefined)
+    inline def setDiagonalMovementUndefined: Self = StObject.set(x, "diagonalMovement", js.undefined)
   }
 }

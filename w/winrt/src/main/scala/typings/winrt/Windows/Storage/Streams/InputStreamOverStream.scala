@@ -13,8 +13,7 @@ trait InputStreamOverStream
 }
 object InputStreamOverStream {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     close: () => Unit,
     dispose: () => Unit,
     readAsync: (IBuffer, Double, InputStreamOptions) => IAsyncOperationWithProgress[IBuffer, Double]
@@ -23,10 +22,8 @@ object InputStreamOverStream {
     __obj.asInstanceOf[InputStreamOverStream]
   }
   
-  @scala.inline
-  implicit class InputStreamOverStreamMutableBuilder[Self <: InputStreamOverStream] (val x: Self) extends AnyVal {
+  extension [Self <: InputStreamOverStream](x: Self) {
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
   }
 }

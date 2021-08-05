@@ -13,22 +13,17 @@ trait EnvelopeAttachmentsResult extends StObject {
 }
 object EnvelopeAttachmentsResult {
   
-  @scala.inline
-  def apply(): EnvelopeAttachmentsResult = {
+  inline def apply(): EnvelopeAttachmentsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnvelopeAttachmentsResult]
   }
   
-  @scala.inline
-  implicit class EnvelopeAttachmentsResultMutableBuilder[Self <: EnvelopeAttachmentsResult] (val x: Self) extends AnyVal {
+  extension [Self <: EnvelopeAttachmentsResult](x: Self) {
     
-    @scala.inline
-    def setAttachments(value: js.Array[EnvelopeAttachment]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
+    inline def setAttachments(value: js.Array[EnvelopeAttachment]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
+    inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
-    @scala.inline
-    def setAttachmentsVarargs(value: EnvelopeAttachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+    inline def setAttachmentsVarargs(value: EnvelopeAttachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
   }
 }

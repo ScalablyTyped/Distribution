@@ -33,46 +33,33 @@ trait ConnectionAlias extends StObject {
 }
 object ConnectionAlias {
   
-  @scala.inline
-  def apply(): ConnectionAlias = {
+  inline def apply(): ConnectionAlias = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectionAlias]
   }
   
-  @scala.inline
-  implicit class ConnectionAliasMutableBuilder[Self <: ConnectionAlias] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionAlias](x: Self) {
     
-    @scala.inline
-    def setAliasId(value: ConnectionAliasId): Self = StObject.set(x, "AliasId", value.asInstanceOf[js.Any])
+    inline def setAliasId(value: ConnectionAliasId): Self = StObject.set(x, "AliasId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasIdUndefined: Self = StObject.set(x, "AliasId", js.undefined)
+    inline def setAliasIdUndefined: Self = StObject.set(x, "AliasId", js.undefined)
     
-    @scala.inline
-    def setAssociations(value: ConnectionAliasAssociationList): Self = StObject.set(x, "Associations", value.asInstanceOf[js.Any])
+    inline def setAssociations(value: ConnectionAliasAssociationList): Self = StObject.set(x, "Associations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationsUndefined: Self = StObject.set(x, "Associations", js.undefined)
+    inline def setAssociationsUndefined: Self = StObject.set(x, "Associations", js.undefined)
     
-    @scala.inline
-    def setAssociationsVarargs(value: ConnectionAliasAssociation*): Self = StObject.set(x, "Associations", js.Array(value :_*))
+    inline def setAssociationsVarargs(value: ConnectionAliasAssociation*): Self = StObject.set(x, "Associations", js.Array(value :_*))
     
-    @scala.inline
-    def setConnectionString(value: ConnectionString): Self = StObject.set(x, "ConnectionString", value.asInstanceOf[js.Any])
+    inline def setConnectionString(value: ConnectionString): Self = StObject.set(x, "ConnectionString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionStringUndefined: Self = StObject.set(x, "ConnectionString", js.undefined)
+    inline def setConnectionStringUndefined: Self = StObject.set(x, "ConnectionString", js.undefined)
     
-    @scala.inline
-    def setOwnerAccountId(value: AwsAccount): Self = StObject.set(x, "OwnerAccountId", value.asInstanceOf[js.Any])
+    inline def setOwnerAccountId(value: AwsAccount): Self = StObject.set(x, "OwnerAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerAccountIdUndefined: Self = StObject.set(x, "OwnerAccountId", js.undefined)
+    inline def setOwnerAccountIdUndefined: Self = StObject.set(x, "OwnerAccountId", js.undefined)
     
-    @scala.inline
-    def setState(value: ConnectionAliasState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: ConnectionAliasState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

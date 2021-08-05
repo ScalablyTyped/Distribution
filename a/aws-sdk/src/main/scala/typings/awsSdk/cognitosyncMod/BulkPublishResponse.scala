@@ -13,19 +13,15 @@ trait BulkPublishResponse extends StObject {
 }
 object BulkPublishResponse {
   
-  @scala.inline
-  def apply(): BulkPublishResponse = {
+  inline def apply(): BulkPublishResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BulkPublishResponse]
   }
   
-  @scala.inline
-  implicit class BulkPublishResponseMutableBuilder[Self <: BulkPublishResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BulkPublishResponse](x: Self) {
     
-    @scala.inline
-    def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
+    inline def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityPoolIdUndefined: Self = StObject.set(x, "IdentityPoolId", js.undefined)
+    inline def setIdentityPoolIdUndefined: Self = StObject.set(x, "IdentityPoolId", js.undefined)
   }
 }

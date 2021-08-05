@@ -242,10 +242,8 @@ object service {
       * @returns {H.service.Url} - the parsed URL object
       */
     /* static member */
-    @scala.inline
-    def parse(url: String): typings.heremaps.H.service.Url = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(url.asInstanceOf[js.Any]).asInstanceOf[typings.heremaps.H.service.Url]
-    @scala.inline
-    def parse(url: String, opt_baseURL: String): typings.heremaps.H.service.Url = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(url.asInstanceOf[js.Any], opt_baseURL.asInstanceOf[js.Any])).asInstanceOf[typings.heremaps.H.service.Url]
+    inline def parse(url: String): typings.heremaps.H.service.Url = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(url.asInstanceOf[js.Any]).asInstanceOf[typings.heremaps.H.service.Url]
+    inline def parse(url: String, opt_baseURL: String): typings.heremaps.H.service.Url = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(url.asInstanceOf[js.Any], opt_baseURL.asInstanceOf[js.Any])).asInstanceOf[typings.heremaps.H.service.Url]
   }
   
   object metaInfo {

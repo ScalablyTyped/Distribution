@@ -32,18 +32,15 @@ object pickerMod {
     @JSImport("@ant-design/react-native/lib/picker", "default.contextTypes")
     @js.native
     def contextTypes: AntLocale = js.native
-    @scala.inline
-    def contextTypes_=(x: AntLocale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    inline def contextTypes_=(x: AntLocale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/react-native/lib/picker", "default.defaultProps")
     @js.native
     def defaultProps: Format = js.native
-    @scala.inline
-    def defaultProps_=(x: Format): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Format): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def getDefaultProps(): Format = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultProps")().asInstanceOf[Format]
+  inline def getDefaultProps(): Format = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultProps")().asInstanceOf[Format]
   
   @js.native
   trait Picker
@@ -90,7 +87,7 @@ object pickerMod {
     
     def onVisibleChange(visible: Boolean): Unit = js.native
     
-    var scrollValue: js.Any = js.native
+    /* private */ var scrollValue: js.Any = js.native
     
     def setCasecadeScrollValue(v: js.Any): Unit = js.native
     
@@ -108,26 +105,20 @@ object pickerMod {
   }
   object PickerProps {
     
-    @scala.inline
-    def apply(data: js.Array[js.Array[PickerData] | PickerData]): PickerProps = {
+    inline def apply(data: js.Array[js.Array[PickerData] | PickerData]): PickerProps = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[PickerProps]
     }
     
-    @scala.inline
-    implicit class PickerPropsMutableBuilder[Self <: PickerProps] (val x: Self) extends AnyVal {
+    extension [Self <: PickerProps](x: Self) {
       
-      @scala.inline
-      def setPickerPrefixCls(value: String): Self = StObject.set(x, "pickerPrefixCls", value.asInstanceOf[js.Any])
+      inline def setPickerPrefixCls(value: String): Self = StObject.set(x, "pickerPrefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPickerPrefixClsUndefined: Self = StObject.set(x, "pickerPrefixCls", js.undefined)
+      inline def setPickerPrefixClsUndefined: Self = StObject.set(x, "pickerPrefixCls", js.undefined)
       
-      @scala.inline
-      def setPopupPrefixCls(value: String): Self = StObject.set(x, "popupPrefixCls", value.asInstanceOf[js.Any])
+      inline def setPopupPrefixCls(value: String): Self = StObject.set(x, "popupPrefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopupPrefixClsUndefined: Self = StObject.set(x, "popupPrefixCls", js.undefined)
+      inline def setPopupPrefixClsUndefined: Self = StObject.set(x, "popupPrefixCls", js.undefined)
     }
   }
 }

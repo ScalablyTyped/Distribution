@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): js.Function3[
+  inline def apply(): js.Function3[
     /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
     /* res */ Response_[js.Any], 
     /* next */ NextFunction, 
@@ -23,8 +22,7 @@ object mod {
     /* next */ NextFunction, 
     Unit
   ]]
-  @scala.inline
-  def apply(options: MongoSanitizeOptions): js.Function3[
+  inline def apply(options: MongoSanitizeOptions): js.Function3[
     /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
     /* res */ Response_[js.Any], 
     /* next */ NextFunction, 
@@ -40,13 +38,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def has(payload: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("has")(payload.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def has(payload: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("has")(payload.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def sanitize[T](payload: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitize")(payload.asInstanceOf[js.Any]).asInstanceOf[T]
-  @scala.inline
-  def sanitize[T](payload: T, options: MongoSanitizeOptions): T = (^.asInstanceOf[js.Dynamic].applyDynamic("sanitize")(payload.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def sanitize[T](payload: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitize")(payload.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def sanitize[T](payload: T, options: MongoSanitizeOptions): T = (^.asInstanceOf[js.Dynamic].applyDynamic("sanitize")(payload.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
   
   trait MongoSanitizeOptions extends StObject {
     
@@ -54,17 +49,14 @@ object mod {
   }
   object MongoSanitizeOptions {
     
-    @scala.inline
-    def apply(replaceWith: js.Any): MongoSanitizeOptions = {
+    inline def apply(replaceWith: js.Any): MongoSanitizeOptions = {
       val __obj = js.Dynamic.literal(replaceWith = replaceWith.asInstanceOf[js.Any])
       __obj.asInstanceOf[MongoSanitizeOptions]
     }
     
-    @scala.inline
-    implicit class MongoSanitizeOptionsMutableBuilder[Self <: MongoSanitizeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MongoSanitizeOptions](x: Self) {
       
-      @scala.inline
-      def setReplaceWith(value: js.Any): Self = StObject.set(x, "replaceWith", value.asInstanceOf[js.Any])
+      inline def setReplaceWith(value: js.Any): Self = StObject.set(x, "replaceWith", value.asInstanceOf[js.Any])
     }
   }
 }

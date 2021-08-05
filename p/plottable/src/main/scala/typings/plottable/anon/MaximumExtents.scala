@@ -14,8 +14,7 @@ trait MaximumExtents[D] extends StObject {
 }
 object MaximumExtents {
   
-  @scala.inline
-  def apply[D](
+  inline def apply[D](
     maximumExtents: Map[String | Double, StackExtent[D]],
     minimumExtents: Map[String | Double, StackExtent[D]]
   ): MaximumExtents[D] = {
@@ -23,13 +22,10 @@ object MaximumExtents {
     __obj.asInstanceOf[MaximumExtents[D]]
   }
   
-  @scala.inline
-  implicit class MaximumExtentsMutableBuilder[Self <: MaximumExtents[?], D] (val x: Self & MaximumExtents[D]) extends AnyVal {
+  extension [Self <: MaximumExtents[?], D](x: Self & MaximumExtents[D]) {
     
-    @scala.inline
-    def setMaximumExtents(value: Map[String | Double, StackExtent[D]]): Self = StObject.set(x, "maximumExtents", value.asInstanceOf[js.Any])
+    inline def setMaximumExtents(value: Map[String | Double, StackExtent[D]]): Self = StObject.set(x, "maximumExtents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumExtents(value: Map[String | Double, StackExtent[D]]): Self = StObject.set(x, "minimumExtents", value.asInstanceOf[js.Any])
+    inline def setMinimumExtents(value: Map[String | Double, StackExtent[D]]): Self = StObject.set(x, "minimumExtents", value.asInstanceOf[js.Any])
   }
 }

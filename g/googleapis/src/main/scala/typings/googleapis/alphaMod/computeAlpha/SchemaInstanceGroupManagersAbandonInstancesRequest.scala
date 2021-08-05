@@ -14,22 +14,17 @@ trait SchemaInstanceGroupManagersAbandonInstancesRequest extends StObject {
 }
 object SchemaInstanceGroupManagersAbandonInstancesRequest {
   
-  @scala.inline
-  def apply(): SchemaInstanceGroupManagersAbandonInstancesRequest = {
+  inline def apply(): SchemaInstanceGroupManagersAbandonInstancesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInstanceGroupManagersAbandonInstancesRequest]
   }
   
-  @scala.inline
-  implicit class SchemaInstanceGroupManagersAbandonInstancesRequestMutableBuilder[Self <: SchemaInstanceGroupManagersAbandonInstancesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInstanceGroupManagersAbandonInstancesRequest](x: Self) {
     
-    @scala.inline
-    def setInstances(value: js.Array[String]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
+    inline def setInstances(value: js.Array[String]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
+    inline def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
     
-    @scala.inline
-    def setInstancesVarargs(value: String*): Self = StObject.set(x, "instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: String*): Self = StObject.set(x, "instances", js.Array(value :_*))
   }
 }

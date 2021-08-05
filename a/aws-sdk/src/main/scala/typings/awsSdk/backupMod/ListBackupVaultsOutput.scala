@@ -18,28 +18,21 @@ trait ListBackupVaultsOutput extends StObject {
 }
 object ListBackupVaultsOutput {
   
-  @scala.inline
-  def apply(): ListBackupVaultsOutput = {
+  inline def apply(): ListBackupVaultsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListBackupVaultsOutput]
   }
   
-  @scala.inline
-  implicit class ListBackupVaultsOutputMutableBuilder[Self <: ListBackupVaultsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListBackupVaultsOutput](x: Self) {
     
-    @scala.inline
-    def setBackupVaultList(value: BackupVaultList): Self = StObject.set(x, "BackupVaultList", value.asInstanceOf[js.Any])
+    inline def setBackupVaultList(value: BackupVaultList): Self = StObject.set(x, "BackupVaultList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupVaultListUndefined: Self = StObject.set(x, "BackupVaultList", js.undefined)
+    inline def setBackupVaultListUndefined: Self = StObject.set(x, "BackupVaultList", js.undefined)
     
-    @scala.inline
-    def setBackupVaultListVarargs(value: BackupVaultListMember*): Self = StObject.set(x, "BackupVaultList", js.Array(value :_*))
+    inline def setBackupVaultListVarargs(value: BackupVaultListMember*): Self = StObject.set(x, "BackupVaultList", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -8,6 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Modality extends StObject
 object Modality {
   
-  @scala.inline
-  def apply: Modality = ^.asInstanceOf[js.Dynamic].selectDynamic("Modality").asInstanceOf[Modality]
+  inline def apply: Modality = ^.asInstanceOf[js.Dynamic].selectDynamic("Modality").asInstanceOf[Modality]
 }

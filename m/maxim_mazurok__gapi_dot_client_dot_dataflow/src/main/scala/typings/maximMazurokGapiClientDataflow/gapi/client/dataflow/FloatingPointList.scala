@@ -11,22 +11,17 @@ trait FloatingPointList extends StObject {
 }
 object FloatingPointList {
   
-  @scala.inline
-  def apply(): FloatingPointList = {
+  inline def apply(): FloatingPointList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FloatingPointList]
   }
   
-  @scala.inline
-  implicit class FloatingPointListMutableBuilder[Self <: FloatingPointList] (val x: Self) extends AnyVal {
+  extension [Self <: FloatingPointList](x: Self) {
     
-    @scala.inline
-    def setElements(value: js.Array[Double]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+    inline def setElements(value: js.Array[Double]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
+    inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
     
-    @scala.inline
-    def setElementsVarargs(value: Double*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: Double*): Self = StObject.set(x, "elements", js.Array(value :_*))
   }
 }

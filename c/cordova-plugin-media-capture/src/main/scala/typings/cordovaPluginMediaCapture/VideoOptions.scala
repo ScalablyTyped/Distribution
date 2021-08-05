@@ -18,25 +18,19 @@ trait VideoOptions extends StObject {
 }
 object VideoOptions {
   
-  @scala.inline
-  def apply(): VideoOptions = {
+  inline def apply(): VideoOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VideoOptions]
   }
   
-  @scala.inline
-  implicit class VideoOptionsMutableBuilder[Self <: VideoOptions] (val x: Self) extends AnyVal {
+  extension [Self <: VideoOptions](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
   }
 }

@@ -18,19 +18,15 @@ trait ModifyClusterDbRevisionMessage extends StObject {
 }
 object ModifyClusterDbRevisionMessage {
   
-  @scala.inline
-  def apply(ClusterIdentifier: String, RevisionTarget: String): ModifyClusterDbRevisionMessage = {
+  inline def apply(ClusterIdentifier: String, RevisionTarget: String): ModifyClusterDbRevisionMessage = {
     val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any], RevisionTarget = RevisionTarget.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyClusterDbRevisionMessage]
   }
   
-  @scala.inline
-  implicit class ModifyClusterDbRevisionMessageMutableBuilder[Self <: ModifyClusterDbRevisionMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyClusterDbRevisionMessage](x: Self) {
     
-    @scala.inline
-    def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionTarget(value: String): Self = StObject.set(x, "RevisionTarget", value.asInstanceOf[js.Any])
+    inline def setRevisionTarget(value: String): Self = StObject.set(x, "RevisionTarget", value.asInstanceOf[js.Any])
   }
 }

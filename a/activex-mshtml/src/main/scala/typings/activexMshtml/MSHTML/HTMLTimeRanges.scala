@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HTMLTimeRanges extends StObject {
   
-  @JSName("MSHTML.HTMLTimeRanges_typekey")
+  /* private */ @JSName("MSHTML.HTMLTimeRanges_typekey")
   var MSHTMLDotHTMLTimeRanges_typekey: HTMLTimeRanges
   
   def end(index: Double): Double
@@ -21,8 +21,7 @@ trait HTMLTimeRanges extends StObject {
 }
 object HTMLTimeRanges {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotHTMLTimeRanges_typekey: HTMLTimeRanges,
     end: Double => Double,
     endDouble: Double => Double,
@@ -35,25 +34,18 @@ object HTMLTimeRanges {
     __obj.asInstanceOf[HTMLTimeRanges]
   }
   
-  @scala.inline
-  implicit class HTMLTimeRangesMutableBuilder[Self <: HTMLTimeRanges] (val x: Self) extends AnyVal {
+  extension [Self <: HTMLTimeRanges](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Double => Double): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
+    inline def setEnd(value: Double => Double): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEndDouble(value: Double => Double): Self = StObject.set(x, "endDouble", js.Any.fromFunction1(value))
+    inline def setEndDouble(value: Double => Double): Self = StObject.set(x, "endDouble", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotHTMLTimeRanges_typekey(value: HTMLTimeRanges): Self = StObject.set(x, "MSHTML.HTMLTimeRanges_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotHTMLTimeRanges_typekey(value: HTMLTimeRanges): Self = StObject.set(x, "MSHTML.HTMLTimeRanges_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double => Double): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+    inline def setStart(value: Double => Double): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStartDouble(value: Double => Double): Self = StObject.set(x, "startDouble", js.Any.fromFunction1(value))
+    inline def setStartDouble(value: Double => Double): Self = StObject.set(x, "startDouble", js.Any.fromFunction1(value))
   }
 }

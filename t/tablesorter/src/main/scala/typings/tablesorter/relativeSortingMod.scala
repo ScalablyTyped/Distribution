@@ -15,16 +15,12 @@ object relativeSortingMod {
   trait RelativeSorting extends StObject
   object RelativeSorting {
     
-    @scala.inline
-    def a: typings.tablesorter.tablesorterStrings.a = "a".asInstanceOf[typings.tablesorter.tablesorterStrings.a]
+    inline def a: typings.tablesorter.tablesorterStrings.a = "a".asInstanceOf[typings.tablesorter.tablesorterStrings.a]
     
-    @scala.inline
-    def d: typings.tablesorter.tablesorterStrings.d = "d".asInstanceOf[typings.tablesorter.tablesorterStrings.d]
+    inline def d: typings.tablesorter.tablesorterStrings.d = "d".asInstanceOf[typings.tablesorter.tablesorterStrings.d]
     
-    @scala.inline
-    def o: typings.tablesorter.tablesorterStrings.o = "o".asInstanceOf[typings.tablesorter.tablesorterStrings.o]
+    inline def o: typings.tablesorter.tablesorterStrings.o = "o".asInstanceOf[typings.tablesorter.tablesorterStrings.o]
     
-    @scala.inline
-    def s: typings.tablesorter.tablesorterStrings.s = "s".asInstanceOf[typings.tablesorter.tablesorterStrings.s]
+    inline def s: typings.tablesorter.tablesorterStrings.s = "s".asInstanceOf[typings.tablesorter.tablesorterStrings.s]
   }
 }

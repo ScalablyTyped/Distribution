@@ -12,22 +12,17 @@ trait Uri extends StObject {
 }
 object Uri {
   
-  @scala.inline
-  def apply(uri: String): Uri = {
+  inline def apply(uri: String): Uri = {
     val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[Uri]
   }
   
-  @scala.inline
-  implicit class UriMutableBuilder[Self <: Uri] (val x: Self) extends AnyVal {
+  extension [Self <: Uri](x: Self) {
     
-    @scala.inline
-    def setByterange(value: typings.hlsParser.mod.Byterange): Self = StObject.set(x, "byterange", value.asInstanceOf[js.Any])
+    inline def setByterange(value: typings.hlsParser.mod.Byterange): Self = StObject.set(x, "byterange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByterangeUndefined: Self = StObject.set(x, "byterange", js.undefined)
+    inline def setByterangeUndefined: Self = StObject.set(x, "byterange", js.undefined)
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

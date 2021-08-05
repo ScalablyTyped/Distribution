@@ -25,22 +25,17 @@ trait SinonMock extends StObject {
 }
 object SinonMock {
   
-  @scala.inline
-  def apply(expects: String => SinonExpectation, restore: () => Unit, verify: () => Unit): SinonMock = {
+  inline def apply(expects: String => SinonExpectation, restore: () => Unit, verify: () => Unit): SinonMock = {
     val __obj = js.Dynamic.literal(expects = js.Any.fromFunction1(expects), restore = js.Any.fromFunction0(restore), verify = js.Any.fromFunction0(verify))
     __obj.asInstanceOf[SinonMock]
   }
   
-  @scala.inline
-  implicit class SinonMockMutableBuilder[Self <: SinonMock] (val x: Self) extends AnyVal {
+  extension [Self <: SinonMock](x: Self) {
     
-    @scala.inline
-    def setExpects(value: String => SinonExpectation): Self = StObject.set(x, "expects", js.Any.fromFunction1(value))
+    inline def setExpects(value: String => SinonExpectation): Self = StObject.set(x, "expects", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRestore(value: () => Unit): Self = StObject.set(x, "restore", js.Any.fromFunction0(value))
+    inline def setRestore(value: () => Unit): Self = StObject.set(x, "restore", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setVerify(value: () => Unit): Self = StObject.set(x, "verify", js.Any.fromFunction0(value))
+    inline def setVerify(value: () => Unit): Self = StObject.set(x, "verify", js.Any.fromFunction0(value))
   }
 }

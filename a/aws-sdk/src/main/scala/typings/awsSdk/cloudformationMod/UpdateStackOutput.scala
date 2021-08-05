@@ -13,19 +13,15 @@ trait UpdateStackOutput extends StObject {
 }
 object UpdateStackOutput {
   
-  @scala.inline
-  def apply(): UpdateStackOutput = {
+  inline def apply(): UpdateStackOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateStackOutput]
   }
   
-  @scala.inline
-  implicit class UpdateStackOutputMutableBuilder[Self <: UpdateStackOutput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateStackOutput](x: Self) {
     
-    @scala.inline
-    def setStackId(value: StackId): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
+    inline def setStackId(value: StackId): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
+    inline def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
   }
 }

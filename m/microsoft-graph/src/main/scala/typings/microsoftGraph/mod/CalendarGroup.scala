@@ -25,52 +25,37 @@ trait CalendarGroup
 }
 object CalendarGroup {
   
-  @scala.inline
-  def apply(): CalendarGroup = {
+  inline def apply(): CalendarGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CalendarGroup]
   }
   
-  @scala.inline
-  implicit class CalendarGroupMutableBuilder[Self <: CalendarGroup] (val x: Self) extends AnyVal {
+  extension [Self <: CalendarGroup](x: Self) {
     
-    @scala.inline
-    def setCalendars(value: NullableOption[js.Array[Calendar]]): Self = StObject.set(x, "calendars", value.asInstanceOf[js.Any])
+    inline def setCalendars(value: NullableOption[js.Array[Calendar]]): Self = StObject.set(x, "calendars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalendarsNull: Self = StObject.set(x, "calendars", null)
+    inline def setCalendarsNull: Self = StObject.set(x, "calendars", null)
     
-    @scala.inline
-    def setCalendarsUndefined: Self = StObject.set(x, "calendars", js.undefined)
+    inline def setCalendarsUndefined: Self = StObject.set(x, "calendars", js.undefined)
     
-    @scala.inline
-    def setCalendarsVarargs(value: Calendar*): Self = StObject.set(x, "calendars", js.Array(value :_*))
+    inline def setCalendarsVarargs(value: Calendar*): Self = StObject.set(x, "calendars", js.Array(value :_*))
     
-    @scala.inline
-    def setChangeKey(value: NullableOption[String]): Self = StObject.set(x, "changeKey", value.asInstanceOf[js.Any])
+    inline def setChangeKey(value: NullableOption[String]): Self = StObject.set(x, "changeKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeKeyNull: Self = StObject.set(x, "changeKey", null)
+    inline def setChangeKeyNull: Self = StObject.set(x, "changeKey", null)
     
-    @scala.inline
-    def setChangeKeyUndefined: Self = StObject.set(x, "changeKey", js.undefined)
+    inline def setChangeKeyUndefined: Self = StObject.set(x, "changeKey", js.undefined)
     
-    @scala.inline
-    def setClassId(value: NullableOption[String]): Self = StObject.set(x, "classId", value.asInstanceOf[js.Any])
+    inline def setClassId(value: NullableOption[String]): Self = StObject.set(x, "classId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassIdNull: Self = StObject.set(x, "classId", null)
+    inline def setClassIdNull: Self = StObject.set(x, "classId", null)
     
-    @scala.inline
-    def setClassIdUndefined: Self = StObject.set(x, "classId", js.undefined)
+    inline def setClassIdUndefined: Self = StObject.set(x, "classId", js.undefined)
     
-    @scala.inline
-    def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

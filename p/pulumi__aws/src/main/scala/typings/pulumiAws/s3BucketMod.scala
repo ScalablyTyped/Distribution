@@ -227,21 +227,16 @@ object s3BucketMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Bucket = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Bucket]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Bucket = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Bucket]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: BucketState): Bucket = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Bucket]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: BucketState, opts: CustomResourceOptions): Bucket = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Bucket]
+    inline def get(name: String, id: Input[ID]): Bucket = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Bucket]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Bucket = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Bucket]
+    inline def get(name: String, id: Input[ID], state: BucketState): Bucket = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Bucket]
+    inline def get(name: String, id: Input[ID], state: BucketState, opts: CustomResourceOptions): Bucket = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Bucket]
     
     /**
       * Returns true if the given object is an instance of Bucket.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucket.Bucket */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/bucket.Bucket */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucket.Bucket */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/bucket.Bucket */ Boolean]
   }
   
   trait BucketArgs extends StObject {
@@ -356,152 +351,104 @@ object s3BucketMod {
   }
   object BucketArgs {
     
-    @scala.inline
-    def apply(): BucketArgs = {
+    inline def apply(): BucketArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BucketArgs]
     }
     
-    @scala.inline
-    implicit class BucketArgsMutableBuilder[Self <: BucketArgs] (val x: Self) extends AnyVal {
+    extension [Self <: BucketArgs](x: Self) {
       
-      @scala.inline
-      def setAccelerationStatus(value: Input[String]): Self = StObject.set(x, "accelerationStatus", value.asInstanceOf[js.Any])
+      inline def setAccelerationStatus(value: Input[String]): Self = StObject.set(x, "accelerationStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccelerationStatusUndefined: Self = StObject.set(x, "accelerationStatus", js.undefined)
+      inline def setAccelerationStatusUndefined: Self = StObject.set(x, "accelerationStatus", js.undefined)
       
-      @scala.inline
-      def setAcl(value: Input[String | CannedAcl]): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
+      inline def setAcl(value: Input[String | CannedAcl]): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAclUndefined: Self = StObject.set(x, "acl", js.undefined)
+      inline def setAclUndefined: Self = StObject.set(x, "acl", js.undefined)
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBucketPrefix(value: Input[String]): Self = StObject.set(x, "bucketPrefix", value.asInstanceOf[js.Any])
+      inline def setBucketPrefix(value: Input[String]): Self = StObject.set(x, "bucketPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBucketPrefixUndefined: Self = StObject.set(x, "bucketPrefix", js.undefined)
+      inline def setBucketPrefixUndefined: Self = StObject.set(x, "bucketPrefix", js.undefined)
       
-      @scala.inline
-      def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
+      inline def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
       
-      @scala.inline
-      def setCorsRules(value: Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketCorsRule]]]): Self = StObject.set(x, "corsRules", value.asInstanceOf[js.Any])
+      inline def setCorsRules(value: Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketCorsRule]]]): Self = StObject.set(x, "corsRules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCorsRulesUndefined: Self = StObject.set(x, "corsRules", js.undefined)
+      inline def setCorsRulesUndefined: Self = StObject.set(x, "corsRules", js.undefined)
       
-      @scala.inline
-      def setCorsRulesVarargs(value: Input[typings.pulumiAws.inputMod.s3.BucketCorsRule]*): Self = StObject.set(x, "corsRules", js.Array(value :_*))
+      inline def setCorsRulesVarargs(value: Input[typings.pulumiAws.inputMod.s3.BucketCorsRule]*): Self = StObject.set(x, "corsRules", js.Array(value :_*))
       
-      @scala.inline
-      def setForceDestroy(value: Input[Boolean]): Self = StObject.set(x, "forceDestroy", value.asInstanceOf[js.Any])
+      inline def setForceDestroy(value: Input[Boolean]): Self = StObject.set(x, "forceDestroy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceDestroyUndefined: Self = StObject.set(x, "forceDestroy", js.undefined)
+      inline def setForceDestroyUndefined: Self = StObject.set(x, "forceDestroy", js.undefined)
       
-      @scala.inline
-      def setGrants(value: Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketGrant]]]): Self = StObject.set(x, "grants", value.asInstanceOf[js.Any])
+      inline def setGrants(value: Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketGrant]]]): Self = StObject.set(x, "grants", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrantsUndefined: Self = StObject.set(x, "grants", js.undefined)
+      inline def setGrantsUndefined: Self = StObject.set(x, "grants", js.undefined)
       
-      @scala.inline
-      def setGrantsVarargs(value: Input[typings.pulumiAws.inputMod.s3.BucketGrant]*): Self = StObject.set(x, "grants", js.Array(value :_*))
+      inline def setGrantsVarargs(value: Input[typings.pulumiAws.inputMod.s3.BucketGrant]*): Self = StObject.set(x, "grants", js.Array(value :_*))
       
-      @scala.inline
-      def setHostedZoneId(value: Input[String]): Self = StObject.set(x, "hostedZoneId", value.asInstanceOf[js.Any])
+      inline def setHostedZoneId(value: Input[String]): Self = StObject.set(x, "hostedZoneId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostedZoneIdUndefined: Self = StObject.set(x, "hostedZoneId", js.undefined)
+      inline def setHostedZoneIdUndefined: Self = StObject.set(x, "hostedZoneId", js.undefined)
       
-      @scala.inline
-      def setLifecycleRules(value: Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketLifecycleRule]]]): Self = StObject.set(x, "lifecycleRules", value.asInstanceOf[js.Any])
+      inline def setLifecycleRules(value: Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketLifecycleRule]]]): Self = StObject.set(x, "lifecycleRules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLifecycleRulesUndefined: Self = StObject.set(x, "lifecycleRules", js.undefined)
+      inline def setLifecycleRulesUndefined: Self = StObject.set(x, "lifecycleRules", js.undefined)
       
-      @scala.inline
-      def setLifecycleRulesVarargs(value: Input[typings.pulumiAws.inputMod.s3.BucketLifecycleRule]*): Self = StObject.set(x, "lifecycleRules", js.Array(value :_*))
+      inline def setLifecycleRulesVarargs(value: Input[typings.pulumiAws.inputMod.s3.BucketLifecycleRule]*): Self = StObject.set(x, "lifecycleRules", js.Array(value :_*))
       
-      @scala.inline
-      def setLoggings(value: Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketLogging]]]): Self = StObject.set(x, "loggings", value.asInstanceOf[js.Any])
+      inline def setLoggings(value: Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketLogging]]]): Self = StObject.set(x, "loggings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggingsUndefined: Self = StObject.set(x, "loggings", js.undefined)
+      inline def setLoggingsUndefined: Self = StObject.set(x, "loggings", js.undefined)
       
-      @scala.inline
-      def setLoggingsVarargs(value: Input[typings.pulumiAws.inputMod.s3.BucketLogging]*): Self = StObject.set(x, "loggings", js.Array(value :_*))
+      inline def setLoggingsVarargs(value: Input[typings.pulumiAws.inputMod.s3.BucketLogging]*): Self = StObject.set(x, "loggings", js.Array(value :_*))
       
-      @scala.inline
-      def setObjectLockConfiguration(value: Input[typings.pulumiAws.inputMod.s3.BucketObjectLockConfiguration]): Self = StObject.set(x, "objectLockConfiguration", value.asInstanceOf[js.Any])
+      inline def setObjectLockConfiguration(value: Input[typings.pulumiAws.inputMod.s3.BucketObjectLockConfiguration]): Self = StObject.set(x, "objectLockConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectLockConfigurationUndefined: Self = StObject.set(x, "objectLockConfiguration", js.undefined)
+      inline def setObjectLockConfigurationUndefined: Self = StObject.set(x, "objectLockConfiguration", js.undefined)
       
-      @scala.inline
-      def setPolicy(value: Input[String | PolicyDocument]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: Input[String | PolicyDocument]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+      inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
       
-      @scala.inline
-      def setReplicationConfiguration(value: Input[typings.pulumiAws.inputMod.s3.BucketReplicationConfiguration]): Self = StObject.set(x, "replicationConfiguration", value.asInstanceOf[js.Any])
+      inline def setReplicationConfiguration(value: Input[typings.pulumiAws.inputMod.s3.BucketReplicationConfiguration]): Self = StObject.set(x, "replicationConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicationConfigurationUndefined: Self = StObject.set(x, "replicationConfiguration", js.undefined)
+      inline def setReplicationConfigurationUndefined: Self = StObject.set(x, "replicationConfiguration", js.undefined)
       
-      @scala.inline
-      def setRequestPayer(value: Input[String]): Self = StObject.set(x, "requestPayer", value.asInstanceOf[js.Any])
+      inline def setRequestPayer(value: Input[String]): Self = StObject.set(x, "requestPayer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestPayerUndefined: Self = StObject.set(x, "requestPayer", js.undefined)
+      inline def setRequestPayerUndefined: Self = StObject.set(x, "requestPayer", js.undefined)
       
-      @scala.inline
-      def setServerSideEncryptionConfiguration(value: Input[typings.pulumiAws.inputMod.s3.BucketServerSideEncryptionConfiguration]): Self = StObject.set(x, "serverSideEncryptionConfiguration", value.asInstanceOf[js.Any])
+      inline def setServerSideEncryptionConfiguration(value: Input[typings.pulumiAws.inputMod.s3.BucketServerSideEncryptionConfiguration]): Self = StObject.set(x, "serverSideEncryptionConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerSideEncryptionConfigurationUndefined: Self = StObject.set(x, "serverSideEncryptionConfiguration", js.undefined)
+      inline def setServerSideEncryptionConfigurationUndefined: Self = StObject.set(x, "serverSideEncryptionConfiguration", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVersioning(value: Input[typings.pulumiAws.inputMod.s3.BucketVersioning]): Self = StObject.set(x, "versioning", value.asInstanceOf[js.Any])
+      inline def setVersioning(value: Input[typings.pulumiAws.inputMod.s3.BucketVersioning]): Self = StObject.set(x, "versioning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersioningUndefined: Self = StObject.set(x, "versioning", js.undefined)
+      inline def setVersioningUndefined: Self = StObject.set(x, "versioning", js.undefined)
       
-      @scala.inline
-      def setWebsite(value: Input[typings.pulumiAws.inputMod.s3.BucketWebsite]): Self = StObject.set(x, "website", value.asInstanceOf[js.Any])
+      inline def setWebsite(value: Input[typings.pulumiAws.inputMod.s3.BucketWebsite]): Self = StObject.set(x, "website", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebsiteDomain(value: Input[String]): Self = StObject.set(x, "websiteDomain", value.asInstanceOf[js.Any])
+      inline def setWebsiteDomain(value: Input[String]): Self = StObject.set(x, "websiteDomain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebsiteDomainUndefined: Self = StObject.set(x, "websiteDomain", js.undefined)
+      inline def setWebsiteDomainUndefined: Self = StObject.set(x, "websiteDomain", js.undefined)
       
-      @scala.inline
-      def setWebsiteEndpoint(value: Input[String]): Self = StObject.set(x, "websiteEndpoint", value.asInstanceOf[js.Any])
+      inline def setWebsiteEndpoint(value: Input[String]): Self = StObject.set(x, "websiteEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebsiteEndpointUndefined: Self = StObject.set(x, "websiteEndpoint", js.undefined)
+      inline def setWebsiteEndpointUndefined: Self = StObject.set(x, "websiteEndpoint", js.undefined)
       
-      @scala.inline
-      def setWebsiteUndefined: Self = StObject.set(x, "website", js.undefined)
+      inline def setWebsiteUndefined: Self = StObject.set(x, "website", js.undefined)
     }
   }
   
@@ -632,170 +579,116 @@ object s3BucketMod {
   }
   object BucketState {
     
-    @scala.inline
-    def apply(): BucketState = {
+    inline def apply(): BucketState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BucketState]
     }
     
-    @scala.inline
-    implicit class BucketStateMutableBuilder[Self <: BucketState] (val x: Self) extends AnyVal {
+    extension [Self <: BucketState](x: Self) {
       
-      @scala.inline
-      def setAccelerationStatus(value: Input[String]): Self = StObject.set(x, "accelerationStatus", value.asInstanceOf[js.Any])
+      inline def setAccelerationStatus(value: Input[String]): Self = StObject.set(x, "accelerationStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccelerationStatusUndefined: Self = StObject.set(x, "accelerationStatus", js.undefined)
+      inline def setAccelerationStatusUndefined: Self = StObject.set(x, "accelerationStatus", js.undefined)
       
-      @scala.inline
-      def setAcl(value: Input[String | CannedAcl]): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
+      inline def setAcl(value: Input[String | CannedAcl]): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAclUndefined: Self = StObject.set(x, "acl", js.undefined)
+      inline def setAclUndefined: Self = StObject.set(x, "acl", js.undefined)
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBucketDomainName(value: Input[String]): Self = StObject.set(x, "bucketDomainName", value.asInstanceOf[js.Any])
+      inline def setBucketDomainName(value: Input[String]): Self = StObject.set(x, "bucketDomainName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBucketDomainNameUndefined: Self = StObject.set(x, "bucketDomainName", js.undefined)
+      inline def setBucketDomainNameUndefined: Self = StObject.set(x, "bucketDomainName", js.undefined)
       
-      @scala.inline
-      def setBucketPrefix(value: Input[String]): Self = StObject.set(x, "bucketPrefix", value.asInstanceOf[js.Any])
+      inline def setBucketPrefix(value: Input[String]): Self = StObject.set(x, "bucketPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBucketPrefixUndefined: Self = StObject.set(x, "bucketPrefix", js.undefined)
+      inline def setBucketPrefixUndefined: Self = StObject.set(x, "bucketPrefix", js.undefined)
       
-      @scala.inline
-      def setBucketRegionalDomainName(value: Input[String]): Self = StObject.set(x, "bucketRegionalDomainName", value.asInstanceOf[js.Any])
+      inline def setBucketRegionalDomainName(value: Input[String]): Self = StObject.set(x, "bucketRegionalDomainName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBucketRegionalDomainNameUndefined: Self = StObject.set(x, "bucketRegionalDomainName", js.undefined)
+      inline def setBucketRegionalDomainNameUndefined: Self = StObject.set(x, "bucketRegionalDomainName", js.undefined)
       
-      @scala.inline
-      def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
+      inline def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
       
-      @scala.inline
-      def setCorsRules(value: Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketCorsRule]]]): Self = StObject.set(x, "corsRules", value.asInstanceOf[js.Any])
+      inline def setCorsRules(value: Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketCorsRule]]]): Self = StObject.set(x, "corsRules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCorsRulesUndefined: Self = StObject.set(x, "corsRules", js.undefined)
+      inline def setCorsRulesUndefined: Self = StObject.set(x, "corsRules", js.undefined)
       
-      @scala.inline
-      def setCorsRulesVarargs(value: Input[typings.pulumiAws.inputMod.s3.BucketCorsRule]*): Self = StObject.set(x, "corsRules", js.Array(value :_*))
+      inline def setCorsRulesVarargs(value: Input[typings.pulumiAws.inputMod.s3.BucketCorsRule]*): Self = StObject.set(x, "corsRules", js.Array(value :_*))
       
-      @scala.inline
-      def setForceDestroy(value: Input[Boolean]): Self = StObject.set(x, "forceDestroy", value.asInstanceOf[js.Any])
+      inline def setForceDestroy(value: Input[Boolean]): Self = StObject.set(x, "forceDestroy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceDestroyUndefined: Self = StObject.set(x, "forceDestroy", js.undefined)
+      inline def setForceDestroyUndefined: Self = StObject.set(x, "forceDestroy", js.undefined)
       
-      @scala.inline
-      def setGrants(value: Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketGrant]]]): Self = StObject.set(x, "grants", value.asInstanceOf[js.Any])
+      inline def setGrants(value: Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketGrant]]]): Self = StObject.set(x, "grants", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrantsUndefined: Self = StObject.set(x, "grants", js.undefined)
+      inline def setGrantsUndefined: Self = StObject.set(x, "grants", js.undefined)
       
-      @scala.inline
-      def setGrantsVarargs(value: Input[typings.pulumiAws.inputMod.s3.BucketGrant]*): Self = StObject.set(x, "grants", js.Array(value :_*))
+      inline def setGrantsVarargs(value: Input[typings.pulumiAws.inputMod.s3.BucketGrant]*): Self = StObject.set(x, "grants", js.Array(value :_*))
       
-      @scala.inline
-      def setHostedZoneId(value: Input[String]): Self = StObject.set(x, "hostedZoneId", value.asInstanceOf[js.Any])
+      inline def setHostedZoneId(value: Input[String]): Self = StObject.set(x, "hostedZoneId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostedZoneIdUndefined: Self = StObject.set(x, "hostedZoneId", js.undefined)
+      inline def setHostedZoneIdUndefined: Self = StObject.set(x, "hostedZoneId", js.undefined)
       
-      @scala.inline
-      def setLifecycleRules(value: Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketLifecycleRule]]]): Self = StObject.set(x, "lifecycleRules", value.asInstanceOf[js.Any])
+      inline def setLifecycleRules(value: Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketLifecycleRule]]]): Self = StObject.set(x, "lifecycleRules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLifecycleRulesUndefined: Self = StObject.set(x, "lifecycleRules", js.undefined)
+      inline def setLifecycleRulesUndefined: Self = StObject.set(x, "lifecycleRules", js.undefined)
       
-      @scala.inline
-      def setLifecycleRulesVarargs(value: Input[typings.pulumiAws.inputMod.s3.BucketLifecycleRule]*): Self = StObject.set(x, "lifecycleRules", js.Array(value :_*))
+      inline def setLifecycleRulesVarargs(value: Input[typings.pulumiAws.inputMod.s3.BucketLifecycleRule]*): Self = StObject.set(x, "lifecycleRules", js.Array(value :_*))
       
-      @scala.inline
-      def setLoggings(value: Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketLogging]]]): Self = StObject.set(x, "loggings", value.asInstanceOf[js.Any])
+      inline def setLoggings(value: Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketLogging]]]): Self = StObject.set(x, "loggings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggingsUndefined: Self = StObject.set(x, "loggings", js.undefined)
+      inline def setLoggingsUndefined: Self = StObject.set(x, "loggings", js.undefined)
       
-      @scala.inline
-      def setLoggingsVarargs(value: Input[typings.pulumiAws.inputMod.s3.BucketLogging]*): Self = StObject.set(x, "loggings", js.Array(value :_*))
+      inline def setLoggingsVarargs(value: Input[typings.pulumiAws.inputMod.s3.BucketLogging]*): Self = StObject.set(x, "loggings", js.Array(value :_*))
       
-      @scala.inline
-      def setObjectLockConfiguration(value: Input[typings.pulumiAws.inputMod.s3.BucketObjectLockConfiguration]): Self = StObject.set(x, "objectLockConfiguration", value.asInstanceOf[js.Any])
+      inline def setObjectLockConfiguration(value: Input[typings.pulumiAws.inputMod.s3.BucketObjectLockConfiguration]): Self = StObject.set(x, "objectLockConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectLockConfigurationUndefined: Self = StObject.set(x, "objectLockConfiguration", js.undefined)
+      inline def setObjectLockConfigurationUndefined: Self = StObject.set(x, "objectLockConfiguration", js.undefined)
       
-      @scala.inline
-      def setPolicy(value: Input[String | PolicyDocument]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: Input[String | PolicyDocument]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+      inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
       
-      @scala.inline
-      def setRegion(value: Input[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: Input[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+      inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
       
-      @scala.inline
-      def setReplicationConfiguration(value: Input[typings.pulumiAws.inputMod.s3.BucketReplicationConfiguration]): Self = StObject.set(x, "replicationConfiguration", value.asInstanceOf[js.Any])
+      inline def setReplicationConfiguration(value: Input[typings.pulumiAws.inputMod.s3.BucketReplicationConfiguration]): Self = StObject.set(x, "replicationConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicationConfigurationUndefined: Self = StObject.set(x, "replicationConfiguration", js.undefined)
+      inline def setReplicationConfigurationUndefined: Self = StObject.set(x, "replicationConfiguration", js.undefined)
       
-      @scala.inline
-      def setRequestPayer(value: Input[String]): Self = StObject.set(x, "requestPayer", value.asInstanceOf[js.Any])
+      inline def setRequestPayer(value: Input[String]): Self = StObject.set(x, "requestPayer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestPayerUndefined: Self = StObject.set(x, "requestPayer", js.undefined)
+      inline def setRequestPayerUndefined: Self = StObject.set(x, "requestPayer", js.undefined)
       
-      @scala.inline
-      def setServerSideEncryptionConfiguration(value: Input[typings.pulumiAws.inputMod.s3.BucketServerSideEncryptionConfiguration]): Self = StObject.set(x, "serverSideEncryptionConfiguration", value.asInstanceOf[js.Any])
+      inline def setServerSideEncryptionConfiguration(value: Input[typings.pulumiAws.inputMod.s3.BucketServerSideEncryptionConfiguration]): Self = StObject.set(x, "serverSideEncryptionConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerSideEncryptionConfigurationUndefined: Self = StObject.set(x, "serverSideEncryptionConfiguration", js.undefined)
+      inline def setServerSideEncryptionConfigurationUndefined: Self = StObject.set(x, "serverSideEncryptionConfiguration", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVersioning(value: Input[typings.pulumiAws.inputMod.s3.BucketVersioning]): Self = StObject.set(x, "versioning", value.asInstanceOf[js.Any])
+      inline def setVersioning(value: Input[typings.pulumiAws.inputMod.s3.BucketVersioning]): Self = StObject.set(x, "versioning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersioningUndefined: Self = StObject.set(x, "versioning", js.undefined)
+      inline def setVersioningUndefined: Self = StObject.set(x, "versioning", js.undefined)
       
-      @scala.inline
-      def setWebsite(value: Input[typings.pulumiAws.inputMod.s3.BucketWebsite]): Self = StObject.set(x, "website", value.asInstanceOf[js.Any])
+      inline def setWebsite(value: Input[typings.pulumiAws.inputMod.s3.BucketWebsite]): Self = StObject.set(x, "website", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebsiteDomain(value: Input[String]): Self = StObject.set(x, "websiteDomain", value.asInstanceOf[js.Any])
+      inline def setWebsiteDomain(value: Input[String]): Self = StObject.set(x, "websiteDomain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebsiteDomainUndefined: Self = StObject.set(x, "websiteDomain", js.undefined)
+      inline def setWebsiteDomainUndefined: Self = StObject.set(x, "websiteDomain", js.undefined)
       
-      @scala.inline
-      def setWebsiteEndpoint(value: Input[String]): Self = StObject.set(x, "websiteEndpoint", value.asInstanceOf[js.Any])
+      inline def setWebsiteEndpoint(value: Input[String]): Self = StObject.set(x, "websiteEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebsiteEndpointUndefined: Self = StObject.set(x, "websiteEndpoint", js.undefined)
+      inline def setWebsiteEndpointUndefined: Self = StObject.set(x, "websiteEndpoint", js.undefined)
       
-      @scala.inline
-      def setWebsiteUndefined: Self = StObject.set(x, "website", js.undefined)
+      inline def setWebsiteUndefined: Self = StObject.set(x, "website", js.undefined)
     }
   }
 }

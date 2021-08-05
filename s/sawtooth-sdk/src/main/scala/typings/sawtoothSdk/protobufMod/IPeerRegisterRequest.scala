@@ -14,31 +14,23 @@ trait IPeerRegisterRequest extends StObject {
 }
 object IPeerRegisterRequest {
   
-  @scala.inline
-  def apply(): IPeerRegisterRequest = {
+  inline def apply(): IPeerRegisterRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPeerRegisterRequest]
   }
   
-  @scala.inline
-  implicit class IPeerRegisterRequestMutableBuilder[Self <: IPeerRegisterRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IPeerRegisterRequest](x: Self) {
     
-    @scala.inline
-    def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointNull: Self = StObject.set(x, "endpoint", null)
+    inline def setEndpointNull: Self = StObject.set(x, "endpoint", null)
     
-    @scala.inline
-    def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
+    inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
     
-    @scala.inline
-    def setProtocolVersion(value: Double): Self = StObject.set(x, "protocolVersion", value.asInstanceOf[js.Any])
+    inline def setProtocolVersion(value: Double): Self = StObject.set(x, "protocolVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolVersionNull: Self = StObject.set(x, "protocolVersion", null)
+    inline def setProtocolVersionNull: Self = StObject.set(x, "protocolVersion", null)
     
-    @scala.inline
-    def setProtocolVersionUndefined: Self = StObject.set(x, "protocolVersion", js.undefined)
+    inline def setProtocolVersionUndefined: Self = StObject.set(x, "protocolVersion", js.undefined)
   }
 }

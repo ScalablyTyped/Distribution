@@ -19,49 +19,35 @@ trait Groups extends StObject {
 }
 object Groups {
   
-  @scala.inline
-  def apply(): Groups = {
+  inline def apply(): Groups = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Groups]
   }
   
-  @scala.inline
-  implicit class GroupsMutableBuilder[Self <: Groups] (val x: Self) extends AnyVal {
+  extension [Self <: Groups](x: Self) {
     
-    @scala.inline
-    def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
+    inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
-    @scala.inline
-    def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
     
-    @scala.inline
-    def setLocalizedRuleName(value: String): Self = StObject.set(x, "localizedRuleName", value.asInstanceOf[js.Any])
+    inline def setLocalizedRuleName(value: String): Self = StObject.set(x, "localizedRuleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalizedRuleNameUndefined: Self = StObject.set(x, "localizedRuleName", js.undefined)
+    inline def setLocalizedRuleNameUndefined: Self = StObject.set(x, "localizedRuleName", js.undefined)
     
-    @scala.inline
-    def setRuleImpact(value: Double): Self = StObject.set(x, "ruleImpact", value.asInstanceOf[js.Any])
+    inline def setRuleImpact(value: Double): Self = StObject.set(x, "ruleImpact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleImpactUndefined: Self = StObject.set(x, "ruleImpact", js.undefined)
+    inline def setRuleImpactUndefined: Self = StObject.set(x, "ruleImpact", js.undefined)
     
-    @scala.inline
-    def setSummary(value: SchemaPagespeedApiFormatStringV2): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: SchemaPagespeedApiFormatStringV2): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
+    inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
     
-    @scala.inline
-    def setUrlBlocks(value: js.Array[Urls]): Self = StObject.set(x, "urlBlocks", value.asInstanceOf[js.Any])
+    inline def setUrlBlocks(value: js.Array[Urls]): Self = StObject.set(x, "urlBlocks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlBlocksUndefined: Self = StObject.set(x, "urlBlocks", js.undefined)
+    inline def setUrlBlocksUndefined: Self = StObject.set(x, "urlBlocks", js.undefined)
     
-    @scala.inline
-    def setUrlBlocksVarargs(value: Urls*): Self = StObject.set(x, "urlBlocks", js.Array(value :_*))
+    inline def setUrlBlocksVarargs(value: Urls*): Self = StObject.set(x, "urlBlocks", js.Array(value :_*))
   }
 }

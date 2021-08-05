@@ -19,25 +19,19 @@ trait SchemaMonthDay extends StObject {
 }
 object SchemaMonthDay {
   
-  @scala.inline
-  def apply(): SchemaMonthDay = {
+  inline def apply(): SchemaMonthDay = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMonthDay]
   }
   
-  @scala.inline
-  implicit class SchemaMonthDayMutableBuilder[Self <: SchemaMonthDay] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMonthDay](x: Self) {
     
-    @scala.inline
-    def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+    inline def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
+    inline def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
     
-    @scala.inline
-    def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+    inline def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
+    inline def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
   }
 }

@@ -43,52 +43,37 @@ trait ProtocolsListData extends StObject {
 }
 object ProtocolsListData {
   
-  @scala.inline
-  def apply(ListName: ResourceName, ProtocolsList: ProtocolsList): ProtocolsListData = {
+  inline def apply(ListName: ResourceName, ProtocolsList: ProtocolsList): ProtocolsListData = {
     val __obj = js.Dynamic.literal(ListName = ListName.asInstanceOf[js.Any], ProtocolsList = ProtocolsList.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProtocolsListData]
   }
   
-  @scala.inline
-  implicit class ProtocolsListDataMutableBuilder[Self <: ProtocolsListData] (val x: Self) extends AnyVal {
+  extension [Self <: ProtocolsListData](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: TimeStamp): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: TimeStamp): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "CreateTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "CreateTime", js.undefined)
     
-    @scala.inline
-    def setLastUpdateTime(value: TimeStamp): Self = StObject.set(x, "LastUpdateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdateTime(value: TimeStamp): Self = StObject.set(x, "LastUpdateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdateTimeUndefined: Self = StObject.set(x, "LastUpdateTime", js.undefined)
+    inline def setLastUpdateTimeUndefined: Self = StObject.set(x, "LastUpdateTime", js.undefined)
     
-    @scala.inline
-    def setListId(value: ListId): Self = StObject.set(x, "ListId", value.asInstanceOf[js.Any])
+    inline def setListId(value: ListId): Self = StObject.set(x, "ListId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListIdUndefined: Self = StObject.set(x, "ListId", js.undefined)
+    inline def setListIdUndefined: Self = StObject.set(x, "ListId", js.undefined)
     
-    @scala.inline
-    def setListName(value: ResourceName): Self = StObject.set(x, "ListName", value.asInstanceOf[js.Any])
+    inline def setListName(value: ResourceName): Self = StObject.set(x, "ListName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListUpdateToken(value: UpdateToken): Self = StObject.set(x, "ListUpdateToken", value.asInstanceOf[js.Any])
+    inline def setListUpdateToken(value: UpdateToken): Self = StObject.set(x, "ListUpdateToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListUpdateTokenUndefined: Self = StObject.set(x, "ListUpdateToken", js.undefined)
+    inline def setListUpdateTokenUndefined: Self = StObject.set(x, "ListUpdateToken", js.undefined)
     
-    @scala.inline
-    def setPreviousProtocolsList(value: PreviousProtocolsList): Self = StObject.set(x, "PreviousProtocolsList", value.asInstanceOf[js.Any])
+    inline def setPreviousProtocolsList(value: PreviousProtocolsList): Self = StObject.set(x, "PreviousProtocolsList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousProtocolsListUndefined: Self = StObject.set(x, "PreviousProtocolsList", js.undefined)
+    inline def setPreviousProtocolsListUndefined: Self = StObject.set(x, "PreviousProtocolsList", js.undefined)
     
-    @scala.inline
-    def setProtocolsList(value: ProtocolsList): Self = StObject.set(x, "ProtocolsList", value.asInstanceOf[js.Any])
+    inline def setProtocolsList(value: ProtocolsList): Self = StObject.set(x, "ProtocolsList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolsListVarargs(value: Protocol*): Self = StObject.set(x, "ProtocolsList", js.Array(value :_*))
+    inline def setProtocolsListVarargs(value: Protocol*): Self = StObject.set(x, "ProtocolsList", js.Array(value :_*))
   }
 }

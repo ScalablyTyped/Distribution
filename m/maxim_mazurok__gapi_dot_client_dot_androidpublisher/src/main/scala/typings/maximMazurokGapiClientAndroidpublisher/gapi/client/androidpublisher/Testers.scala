@@ -11,22 +11,17 @@ trait Testers extends StObject {
 }
 object Testers {
   
-  @scala.inline
-  def apply(): Testers = {
+  inline def apply(): Testers = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Testers]
   }
   
-  @scala.inline
-  implicit class TestersMutableBuilder[Self <: Testers] (val x: Self) extends AnyVal {
+  extension [Self <: Testers](x: Self) {
     
-    @scala.inline
-    def setGoogleGroups(value: js.Array[String]): Self = StObject.set(x, "googleGroups", value.asInstanceOf[js.Any])
+    inline def setGoogleGroups(value: js.Array[String]): Self = StObject.set(x, "googleGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoogleGroupsUndefined: Self = StObject.set(x, "googleGroups", js.undefined)
+    inline def setGoogleGroupsUndefined: Self = StObject.set(x, "googleGroups", js.undefined)
     
-    @scala.inline
-    def setGoogleGroupsVarargs(value: String*): Self = StObject.set(x, "googleGroups", js.Array(value :_*))
+    inline def setGoogleGroupsVarargs(value: String*): Self = StObject.set(x, "googleGroups", js.Array(value :_*))
   }
 }

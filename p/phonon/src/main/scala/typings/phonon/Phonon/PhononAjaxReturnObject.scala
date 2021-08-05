@@ -10,16 +10,13 @@ trait PhononAjaxReturnObject extends StObject {
 }
 object PhononAjaxReturnObject {
   
-  @scala.inline
-  def apply(cancel: () => Unit): PhononAjaxReturnObject = {
+  inline def apply(cancel: () => Unit): PhononAjaxReturnObject = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel))
     __obj.asInstanceOf[PhononAjaxReturnObject]
   }
   
-  @scala.inline
-  implicit class PhononAjaxReturnObjectMutableBuilder[Self <: PhononAjaxReturnObject] (val x: Self) extends AnyVal {
+  extension [Self <: PhononAjaxReturnObject](x: Self) {
     
-    @scala.inline
-    def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+    inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
   }
 }

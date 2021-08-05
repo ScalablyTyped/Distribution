@@ -23,14 +23,11 @@ object sortableListMod {
   trait SortableListInsertPosition extends StObject
   object SortableListInsertPosition {
     
-    @scala.inline
-    def any: typings.wixStyleReact.wixStyleReactStrings.any = "any".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.any]
+    inline def any: typings.wixStyleReact.wixStyleReactStrings.any = "any".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.any]
     
-    @scala.inline
-    def end: typings.wixStyleReact.wixStyleReactStrings.end = "end".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.end]
+    inline def end: typings.wixStyleReact.wixStyleReactStrings.end = "end".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.end]
     
-    @scala.inline
-    def start: typings.wixStyleReact.wixStyleReactStrings.start = "start".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.start]
+    inline def start: typings.wixStyleReact.wixStyleReactStrings.start = "start".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.start]
   }
   
   trait SortableListProps
@@ -53,59 +50,42 @@ object sortableListMod {
   }
   object SortableListProps {
     
-    @scala.inline
-    def apply(): SortableListProps = {
+    inline def apply(): SortableListProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SortableListProps]
     }
     
-    @scala.inline
-    implicit class SortableListPropsMutableBuilder[Self <: SortableListProps] (val x: Self) extends AnyVal {
+    extension [Self <: SortableListProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setContentClassName(value: String): Self = StObject.set(x, "contentClassName", value.asInstanceOf[js.Any])
+      inline def setContentClassName(value: String): Self = StObject.set(x, "contentClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentClassNameUndefined: Self = StObject.set(x, "contentClassName", js.undefined)
+      inline def setContentClassNameUndefined: Self = StObject.set(x, "contentClassName", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setDragPreview(value: Boolean): Self = StObject.set(x, "dragPreview", value.asInstanceOf[js.Any])
+      inline def setDragPreview(value: Boolean): Self = StObject.set(x, "dragPreview", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragPreviewUndefined: Self = StObject.set(x, "dragPreview", js.undefined)
+      inline def setDragPreviewUndefined: Self = StObject.set(x, "dragPreview", js.undefined)
       
-      @scala.inline
-      def setInsertPosition(value: SortableListInsertPosition): Self = StObject.set(x, "insertPosition", value.asInstanceOf[js.Any])
+      inline def setInsertPosition(value: SortableListInsertPosition): Self = StObject.set(x, "insertPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsertPositionUndefined: Self = StObject.set(x, "insertPosition", js.undefined)
+      inline def setInsertPositionUndefined: Self = StObject.set(x, "insertPosition", js.undefined)
       
-      @scala.inline
-      def setItems(value: js.Array[js.Object]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[js.Object]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      @scala.inline
-      def setItemsVarargs(value: js.Object*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: js.Object*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setUsePortal(value: Boolean): Self = StObject.set(x, "usePortal", value.asInstanceOf[js.Any])
+      inline def setUsePortal(value: Boolean): Self = StObject.set(x, "usePortal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsePortalUndefined: Self = StObject.set(x, "usePortal", js.undefined)
+      inline def setUsePortalUndefined: Self = StObject.set(x, "usePortal", js.undefined)
     }
   }
 }

@@ -38,49 +38,35 @@ trait PutConformancePackRequest extends StObject {
 }
 object PutConformancePackRequest {
   
-  @scala.inline
-  def apply(ConformancePackName: ConformancePackName): PutConformancePackRequest = {
+  inline def apply(ConformancePackName: ConformancePackName): PutConformancePackRequest = {
     val __obj = js.Dynamic.literal(ConformancePackName = ConformancePackName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutConformancePackRequest]
   }
   
-  @scala.inline
-  implicit class PutConformancePackRequestMutableBuilder[Self <: PutConformancePackRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutConformancePackRequest](x: Self) {
     
-    @scala.inline
-    def setConformancePackInputParameters(value: ConformancePackInputParameters): Self = StObject.set(x, "ConformancePackInputParameters", value.asInstanceOf[js.Any])
+    inline def setConformancePackInputParameters(value: ConformancePackInputParameters): Self = StObject.set(x, "ConformancePackInputParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConformancePackInputParametersUndefined: Self = StObject.set(x, "ConformancePackInputParameters", js.undefined)
+    inline def setConformancePackInputParametersUndefined: Self = StObject.set(x, "ConformancePackInputParameters", js.undefined)
     
-    @scala.inline
-    def setConformancePackInputParametersVarargs(value: ConformancePackInputParameter*): Self = StObject.set(x, "ConformancePackInputParameters", js.Array(value :_*))
+    inline def setConformancePackInputParametersVarargs(value: ConformancePackInputParameter*): Self = StObject.set(x, "ConformancePackInputParameters", js.Array(value :_*))
     
-    @scala.inline
-    def setConformancePackName(value: ConformancePackName): Self = StObject.set(x, "ConformancePackName", value.asInstanceOf[js.Any])
+    inline def setConformancePackName(value: ConformancePackName): Self = StObject.set(x, "ConformancePackName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliveryS3Bucket(value: DeliveryS3Bucket): Self = StObject.set(x, "DeliveryS3Bucket", value.asInstanceOf[js.Any])
+    inline def setDeliveryS3Bucket(value: DeliveryS3Bucket): Self = StObject.set(x, "DeliveryS3Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliveryS3BucketUndefined: Self = StObject.set(x, "DeliveryS3Bucket", js.undefined)
+    inline def setDeliveryS3BucketUndefined: Self = StObject.set(x, "DeliveryS3Bucket", js.undefined)
     
-    @scala.inline
-    def setDeliveryS3KeyPrefix(value: DeliveryS3KeyPrefix): Self = StObject.set(x, "DeliveryS3KeyPrefix", value.asInstanceOf[js.Any])
+    inline def setDeliveryS3KeyPrefix(value: DeliveryS3KeyPrefix): Self = StObject.set(x, "DeliveryS3KeyPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliveryS3KeyPrefixUndefined: Self = StObject.set(x, "DeliveryS3KeyPrefix", js.undefined)
+    inline def setDeliveryS3KeyPrefixUndefined: Self = StObject.set(x, "DeliveryS3KeyPrefix", js.undefined)
     
-    @scala.inline
-    def setTemplateBody(value: TemplateBody): Self = StObject.set(x, "TemplateBody", value.asInstanceOf[js.Any])
+    inline def setTemplateBody(value: TemplateBody): Self = StObject.set(x, "TemplateBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateBodyUndefined: Self = StObject.set(x, "TemplateBody", js.undefined)
+    inline def setTemplateBodyUndefined: Self = StObject.set(x, "TemplateBody", js.undefined)
     
-    @scala.inline
-    def setTemplateS3Uri(value: TemplateS3Uri): Self = StObject.set(x, "TemplateS3Uri", value.asInstanceOf[js.Any])
+    inline def setTemplateS3Uri(value: TemplateS3Uri): Self = StObject.set(x, "TemplateS3Uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateS3UriUndefined: Self = StObject.set(x, "TemplateS3Uri", js.undefined)
+    inline def setTemplateS3UriUndefined: Self = StObject.set(x, "TemplateS3Uri", js.undefined)
   }
 }

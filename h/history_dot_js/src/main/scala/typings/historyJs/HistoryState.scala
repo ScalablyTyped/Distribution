@@ -18,40 +18,29 @@ trait HistoryState extends StObject {
 }
 object HistoryState {
   
-  @scala.inline
-  def apply(url: String): HistoryState = {
+  inline def apply(url: String): HistoryState = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistoryState]
   }
   
-  @scala.inline
-  implicit class HistoryStateMutableBuilder[Self <: HistoryState] (val x: Self) extends AnyVal {
+  extension [Self <: HistoryState](x: Self) {
     
-    @scala.inline
-    def setCleanUrl(value: String): Self = StObject.set(x, "cleanUrl", value.asInstanceOf[js.Any])
+    inline def setCleanUrl(value: String): Self = StObject.set(x, "cleanUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCleanUrlUndefined: Self = StObject.set(x, "cleanUrl", js.undefined)
+    inline def setCleanUrlUndefined: Self = StObject.set(x, "cleanUrl", js.undefined)
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setHashedUrl(value: String): Self = StObject.set(x, "hashedUrl", value.asInstanceOf[js.Any])
+    inline def setHashedUrl(value: String): Self = StObject.set(x, "hashedUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHashedUrlUndefined: Self = StObject.set(x, "hashedUrl", js.undefined)
+    inline def setHashedUrlUndefined: Self = StObject.set(x, "hashedUrl", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

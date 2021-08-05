@@ -30,34 +30,25 @@ trait OnBeforeNavigateDetails extends StObject {
 }
 object OnBeforeNavigateDetails {
   
-  @scala.inline
-  def apply(frameId: Double, parentFrameId: Double, tabId: Double, timeStamp: Double, url: String): OnBeforeNavigateDetails = {
+  inline def apply(frameId: Double, parentFrameId: Double, tabId: Double, timeStamp: Double, url: String): OnBeforeNavigateDetails = {
     val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any], parentFrameId = parentFrameId.asInstanceOf[js.Any], tabId = tabId.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnBeforeNavigateDetails]
   }
   
-  @scala.inline
-  implicit class OnBeforeNavigateDetailsMutableBuilder[Self <: OnBeforeNavigateDetails] (val x: Self) extends AnyVal {
+  extension [Self <: OnBeforeNavigateDetails](x: Self) {
     
-    @scala.inline
-    def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+    inline def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentFrameId(value: Double): Self = StObject.set(x, "parentFrameId", value.asInstanceOf[js.Any])
+    inline def setParentFrameId(value: Double): Self = StObject.set(x, "parentFrameId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessId(value: Double): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
+    inline def setProcessId(value: Double): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessIdUndefined: Self = StObject.set(x, "processId", js.undefined)
+    inline def setProcessIdUndefined: Self = StObject.set(x, "processId", js.undefined)
     
-    @scala.inline
-    def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+    inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+    inline def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -23,34 +23,25 @@ trait DetectModerationLabelsResponse extends StObject {
 }
 object DetectModerationLabelsResponse {
   
-  @scala.inline
-  def apply(): DetectModerationLabelsResponse = {
+  inline def apply(): DetectModerationLabelsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DetectModerationLabelsResponse]
   }
   
-  @scala.inline
-  implicit class DetectModerationLabelsResponseMutableBuilder[Self <: DetectModerationLabelsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DetectModerationLabelsResponse](x: Self) {
     
-    @scala.inline
-    def setHumanLoopActivationOutput(value: HumanLoopActivationOutput): Self = StObject.set(x, "HumanLoopActivationOutput", value.asInstanceOf[js.Any])
+    inline def setHumanLoopActivationOutput(value: HumanLoopActivationOutput): Self = StObject.set(x, "HumanLoopActivationOutput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHumanLoopActivationOutputUndefined: Self = StObject.set(x, "HumanLoopActivationOutput", js.undefined)
+    inline def setHumanLoopActivationOutputUndefined: Self = StObject.set(x, "HumanLoopActivationOutput", js.undefined)
     
-    @scala.inline
-    def setModerationLabels(value: ModerationLabels): Self = StObject.set(x, "ModerationLabels", value.asInstanceOf[js.Any])
+    inline def setModerationLabels(value: ModerationLabels): Self = StObject.set(x, "ModerationLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModerationLabelsUndefined: Self = StObject.set(x, "ModerationLabels", js.undefined)
+    inline def setModerationLabelsUndefined: Self = StObject.set(x, "ModerationLabels", js.undefined)
     
-    @scala.inline
-    def setModerationLabelsVarargs(value: ModerationLabel*): Self = StObject.set(x, "ModerationLabels", js.Array(value :_*))
+    inline def setModerationLabelsVarargs(value: ModerationLabel*): Self = StObject.set(x, "ModerationLabels", js.Array(value :_*))
     
-    @scala.inline
-    def setModerationModelVersion(value: String): Self = StObject.set(x, "ModerationModelVersion", value.asInstanceOf[js.Any])
+    inline def setModerationModelVersion(value: String): Self = StObject.set(x, "ModerationModelVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModerationModelVersionUndefined: Self = StObject.set(x, "ModerationModelVersion", js.undefined)
+    inline def setModerationModelVersionUndefined: Self = StObject.set(x, "ModerationModelVersion", js.undefined)
   }
 }

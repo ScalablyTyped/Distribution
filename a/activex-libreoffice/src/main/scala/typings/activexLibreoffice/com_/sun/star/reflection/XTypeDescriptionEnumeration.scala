@@ -23,8 +23,7 @@ trait XTypeDescriptionEnumeration
 }
 object XTypeDescriptionEnumeration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     hasMoreElements: () => Boolean,
     nextElement: () => js.Any,
@@ -36,10 +35,8 @@ object XTypeDescriptionEnumeration {
     __obj.asInstanceOf[XTypeDescriptionEnumeration]
   }
   
-  @scala.inline
-  implicit class XTypeDescriptionEnumerationMutableBuilder[Self <: XTypeDescriptionEnumeration] (val x: Self) extends AnyVal {
+  extension [Self <: XTypeDescriptionEnumeration](x: Self) {
     
-    @scala.inline
-    def setNextTypeDescription(value: () => XTypeDescription): Self = StObject.set(x, "nextTypeDescription", js.Any.fromFunction0(value))
+    inline def setNextTypeDescription(value: () => XTypeDescription): Self = StObject.set(x, "nextTypeDescription", js.Any.fromFunction0(value))
   }
 }

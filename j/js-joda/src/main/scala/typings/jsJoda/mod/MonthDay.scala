@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("js-joda", "MonthDay")
 @js.native
-class MonthDay protected () extends Temporal {
+/* private */ class MonthDay () extends Temporal {
   
   def adjustInto(temporal: Temporal): Temporal = js.native
   
@@ -47,46 +47,32 @@ object MonthDay {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def from(temporal: TemporalAccessor): MonthDay = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(temporal.asInstanceOf[js.Any]).asInstanceOf[MonthDay]
+  inline def from(temporal: TemporalAccessor): MonthDay = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(temporal.asInstanceOf[js.Any]).asInstanceOf[MonthDay]
   
   /* static member */
-  @scala.inline
-  def now(): MonthDay = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[MonthDay]
-  @scala.inline
-  def now(arg1: Clock): MonthDay = ^.asInstanceOf[js.Dynamic].applyDynamic("now")(arg1.asInstanceOf[js.Any]).asInstanceOf[MonthDay]
-  @scala.inline
-  def now(arg1: ZoneId): MonthDay = ^.asInstanceOf[js.Dynamic].applyDynamic("now")(arg1.asInstanceOf[js.Any]).asInstanceOf[MonthDay]
+  inline def now(): MonthDay = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[MonthDay]
+  inline def now(arg1: Clock): MonthDay = ^.asInstanceOf[js.Dynamic].applyDynamic("now")(arg1.asInstanceOf[js.Any]).asInstanceOf[MonthDay]
+  inline def now(arg1: ZoneId): MonthDay = ^.asInstanceOf[js.Dynamic].applyDynamic("now")(arg1.asInstanceOf[js.Any]).asInstanceOf[MonthDay]
   
-  @scala.inline
-  def of(monthOrNumber: Double): MonthDay = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(monthOrNumber.asInstanceOf[js.Any]).asInstanceOf[MonthDay]
-  @scala.inline
-  def of(monthOrNumber: Double, number: Double): MonthDay = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(monthOrNumber.asInstanceOf[js.Any], number.asInstanceOf[js.Any])).asInstanceOf[MonthDay]
+  inline def of(monthOrNumber: Double): MonthDay = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(monthOrNumber.asInstanceOf[js.Any]).asInstanceOf[MonthDay]
+  inline def of(monthOrNumber: Double, number: Double): MonthDay = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(monthOrNumber.asInstanceOf[js.Any], number.asInstanceOf[js.Any])).asInstanceOf[MonthDay]
   /* static member */
-  @scala.inline
-  def of(monthOrNumber: Month): MonthDay = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(monthOrNumber.asInstanceOf[js.Any]).asInstanceOf[MonthDay]
-  @scala.inline
-  def of(monthOrNumber: Month, number: Double): MonthDay = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(monthOrNumber.asInstanceOf[js.Any], number.asInstanceOf[js.Any])).asInstanceOf[MonthDay]
+  inline def of(monthOrNumber: Month): MonthDay = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(monthOrNumber.asInstanceOf[js.Any]).asInstanceOf[MonthDay]
+  inline def of(monthOrNumber: Month, number: Double): MonthDay = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(monthOrNumber.asInstanceOf[js.Any], number.asInstanceOf[js.Any])).asInstanceOf[MonthDay]
   
   /* static member */
-  @scala.inline
-  def ofMonthNumber(month: Month, dayOfMonth: Double): MonthDay = (^.asInstanceOf[js.Dynamic].applyDynamic("ofMonthNumber")(month.asInstanceOf[js.Any], dayOfMonth.asInstanceOf[js.Any])).asInstanceOf[MonthDay]
+  inline def ofMonthNumber(month: Month, dayOfMonth: Double): MonthDay = (^.asInstanceOf[js.Dynamic].applyDynamic("ofMonthNumber")(month.asInstanceOf[js.Any], dayOfMonth.asInstanceOf[js.Any])).asInstanceOf[MonthDay]
   
   /* static member */
-  @scala.inline
-  def ofNumberNumber(month: Double, dayOfMonth: Double): MonthDay = (^.asInstanceOf[js.Dynamic].applyDynamic("ofNumberNumber")(month.asInstanceOf[js.Any], dayOfMonth.asInstanceOf[js.Any])).asInstanceOf[MonthDay]
+  inline def ofNumberNumber(month: Double, dayOfMonth: Double): MonthDay = (^.asInstanceOf[js.Dynamic].applyDynamic("ofNumberNumber")(month.asInstanceOf[js.Any], dayOfMonth.asInstanceOf[js.Any])).asInstanceOf[MonthDay]
   
   /* static member */
-  @scala.inline
-  def parse(text: String): MonthDay = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[MonthDay]
-  @scala.inline
-  def parse(text: String, formatter: DateTimeFormatter): MonthDay = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any])).asInstanceOf[MonthDay]
+  inline def parse(text: String): MonthDay = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[MonthDay]
+  inline def parse(text: String, formatter: DateTimeFormatter): MonthDay = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any])).asInstanceOf[MonthDay]
   
   /* static member */
-  @scala.inline
-  def parseString(text: String): MonthDay = ^.asInstanceOf[js.Dynamic].applyDynamic("parseString")(text.asInstanceOf[js.Any]).asInstanceOf[MonthDay]
+  inline def parseString(text: String): MonthDay = ^.asInstanceOf[js.Dynamic].applyDynamic("parseString")(text.asInstanceOf[js.Any]).asInstanceOf[MonthDay]
   
   /* static member */
-  @scala.inline
-  def parseStringFormatter(text: String, formatter: DateTimeFormatter): MonthDay = (^.asInstanceOf[js.Dynamic].applyDynamic("parseStringFormatter")(text.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any])).asInstanceOf[MonthDay]
+  inline def parseStringFormatter(text: String, formatter: DateTimeFormatter): MonthDay = (^.asInstanceOf[js.Dynamic].applyDynamic("parseStringFormatter")(text.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any])).asInstanceOf[MonthDay]
 }

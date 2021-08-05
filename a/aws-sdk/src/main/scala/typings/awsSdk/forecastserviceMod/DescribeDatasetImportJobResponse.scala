@@ -63,79 +63,55 @@ trait DescribeDatasetImportJobResponse extends StObject {
 }
 object DescribeDatasetImportJobResponse {
   
-  @scala.inline
-  def apply(): DescribeDatasetImportJobResponse = {
+  inline def apply(): DescribeDatasetImportJobResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeDatasetImportJobResponse]
   }
   
-  @scala.inline
-  implicit class DescribeDatasetImportJobResponseMutableBuilder[Self <: DescribeDatasetImportJobResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDatasetImportJobResponse](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
-    @scala.inline
-    def setDataSize(value: Double): Self = StObject.set(x, "DataSize", value.asInstanceOf[js.Any])
+    inline def setDataSize(value: Double): Self = StObject.set(x, "DataSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSizeUndefined: Self = StObject.set(x, "DataSize", js.undefined)
+    inline def setDataSizeUndefined: Self = StObject.set(x, "DataSize", js.undefined)
     
-    @scala.inline
-    def setDataSource(value: DataSource): Self = StObject.set(x, "DataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: DataSource): Self = StObject.set(x, "DataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceUndefined: Self = StObject.set(x, "DataSource", js.undefined)
+    inline def setDataSourceUndefined: Self = StObject.set(x, "DataSource", js.undefined)
     
-    @scala.inline
-    def setDatasetArn(value: Arn): Self = StObject.set(x, "DatasetArn", value.asInstanceOf[js.Any])
+    inline def setDatasetArn(value: Arn): Self = StObject.set(x, "DatasetArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetArnUndefined: Self = StObject.set(x, "DatasetArn", js.undefined)
+    inline def setDatasetArnUndefined: Self = StObject.set(x, "DatasetArn", js.undefined)
     
-    @scala.inline
-    def setDatasetImportJobArn(value: Arn): Self = StObject.set(x, "DatasetImportJobArn", value.asInstanceOf[js.Any])
+    inline def setDatasetImportJobArn(value: Arn): Self = StObject.set(x, "DatasetImportJobArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetImportJobArnUndefined: Self = StObject.set(x, "DatasetImportJobArn", js.undefined)
+    inline def setDatasetImportJobArnUndefined: Self = StObject.set(x, "DatasetImportJobArn", js.undefined)
     
-    @scala.inline
-    def setDatasetImportJobName(value: Name): Self = StObject.set(x, "DatasetImportJobName", value.asInstanceOf[js.Any])
+    inline def setDatasetImportJobName(value: Name): Self = StObject.set(x, "DatasetImportJobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetImportJobNameUndefined: Self = StObject.set(x, "DatasetImportJobName", js.undefined)
+    inline def setDatasetImportJobNameUndefined: Self = StObject.set(x, "DatasetImportJobName", js.undefined)
     
-    @scala.inline
-    def setFieldStatistics(value: FieldStatistics): Self = StObject.set(x, "FieldStatistics", value.asInstanceOf[js.Any])
+    inline def setFieldStatistics(value: FieldStatistics): Self = StObject.set(x, "FieldStatistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldStatisticsUndefined: Self = StObject.set(x, "FieldStatistics", js.undefined)
+    inline def setFieldStatisticsUndefined: Self = StObject.set(x, "FieldStatistics", js.undefined)
     
-    @scala.inline
-    def setLastModificationTime(value: Timestamp): Self = StObject.set(x, "LastModificationTime", value.asInstanceOf[js.Any])
+    inline def setLastModificationTime(value: Timestamp): Self = StObject.set(x, "LastModificationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModificationTimeUndefined: Self = StObject.set(x, "LastModificationTime", js.undefined)
+    inline def setLastModificationTimeUndefined: Self = StObject.set(x, "LastModificationTime", js.undefined)
     
-    @scala.inline
-    def setMessage(value: Message): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Message): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setTimestampFormat(value: TimestampFormat): Self = StObject.set(x, "TimestampFormat", value.asInstanceOf[js.Any])
+    inline def setTimestampFormat(value: TimestampFormat): Self = StObject.set(x, "TimestampFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampFormatUndefined: Self = StObject.set(x, "TimestampFormat", js.undefined)
+    inline def setTimestampFormatUndefined: Self = StObject.set(x, "TimestampFormat", js.undefined)
   }
 }

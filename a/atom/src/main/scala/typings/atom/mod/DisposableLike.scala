@@ -10,16 +10,13 @@ trait DisposableLike extends StObject {
 }
 object DisposableLike {
   
-  @scala.inline
-  def apply(dispose: () => Unit): DisposableLike = {
+  inline def apply(dispose: () => Unit): DisposableLike = {
     val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose))
     __obj.asInstanceOf[DisposableLike]
   }
   
-  @scala.inline
-  implicit class DisposableLikeMutableBuilder[Self <: DisposableLike] (val x: Self) extends AnyVal {
+  extension [Self <: DisposableLike](x: Self) {
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
   }
 }

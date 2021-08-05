@@ -20,19 +20,14 @@ object TreeType {
   @js.native
   val ^ : TreeType = js.native
   
-  @scala.inline
-  implicit class TreeTypeMutableBuilder[Self <: TreeType] (val x: Self) extends AnyVal {
+  extension [Self <: TreeType](x: Self) {
     
-    @scala.inline
-    def setCheckbox(value: (js.Any, js.Any) => String): Self = StObject.set(x, "checkbox", js.Any.fromFunction2(value))
+    inline def setCheckbox(value: (js.Any, js.Any) => String): Self = StObject.set(x, "checkbox", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFolder(value: (js.Any, js.Any) => String): Self = StObject.set(x, "folder", js.Any.fromFunction2(value))
+    inline def setFolder(value: (js.Any, js.Any) => String): Self = StObject.set(x, "folder", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setIcon(value: (js.Any, js.Any) => String): Self = StObject.set(x, "icon", js.Any.fromFunction2(value))
+    inline def setIcon(value: (js.Any, js.Any) => String): Self = StObject.set(x, "icon", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSpace(value: (js.Any, js.Any) => String): Self = StObject.set(x, "space", js.Any.fromFunction2(value))
+    inline def setSpace(value: (js.Any, js.Any) => String): Self = StObject.set(x, "space", js.Any.fromFunction2(value))
   }
 }

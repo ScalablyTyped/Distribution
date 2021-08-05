@@ -27,19 +27,15 @@ trait EphemeralVolumeSource extends StObject {
 }
 object EphemeralVolumeSource {
   
-  @scala.inline
-  def apply(readOnly: Boolean, volumeClaimTemplate: PersistentVolumeClaimTemplate): EphemeralVolumeSource = {
+  inline def apply(readOnly: Boolean, volumeClaimTemplate: PersistentVolumeClaimTemplate): EphemeralVolumeSource = {
     val __obj = js.Dynamic.literal(readOnly = readOnly.asInstanceOf[js.Any], volumeClaimTemplate = volumeClaimTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[EphemeralVolumeSource]
   }
   
-  @scala.inline
-  implicit class EphemeralVolumeSourceMutableBuilder[Self <: EphemeralVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: EphemeralVolumeSource](x: Self) {
     
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeClaimTemplate(value: PersistentVolumeClaimTemplate): Self = StObject.set(x, "volumeClaimTemplate", value.asInstanceOf[js.Any])
+    inline def setVolumeClaimTemplate(value: PersistentVolumeClaimTemplate): Self = StObject.set(x, "volumeClaimTemplate", value.asInstanceOf[js.Any])
   }
 }

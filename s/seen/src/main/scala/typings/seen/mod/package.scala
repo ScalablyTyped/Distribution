@@ -5,102 +5,56 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def C(): typings.seen.mod.Color = typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("C")().asInstanceOf[typings.seen.mod.Color]
-@scala.inline
-def C(r: scala.Double): typings.seen.mod.Color = typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("C")(r.asInstanceOf[js.Any]).asInstanceOf[typings.seen.mod.Color]
-@scala.inline
-def C(r: scala.Double, g: scala.Double): typings.seen.mod.Color = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("C")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Color]
-@scala.inline
-def C(r: scala.Double, g: scala.Double, b: scala.Double): typings.seen.mod.Color = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("C")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Color]
-@scala.inline
-def C(r: scala.Double, g: scala.Double, b: scala.Double, a: scala.Double): typings.seen.mod.Color = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("C")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Color]
-@scala.inline
-def C(r: scala.Double, g: scala.Double, b: scala.Unit, a: scala.Double): typings.seen.mod.Color = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("C")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Color]
-@scala.inline
-def C(r: scala.Double, g: scala.Unit, b: scala.Double): typings.seen.mod.Color = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("C")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Color]
-@scala.inline
-def C(r: scala.Double, g: scala.Unit, b: scala.Double, a: scala.Double): typings.seen.mod.Color = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("C")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Color]
-@scala.inline
-def C(r: scala.Double, g: scala.Unit, b: scala.Unit, a: scala.Double): typings.seen.mod.Color = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("C")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Color]
-@scala.inline
-def C(r: scala.Unit, g: scala.Double): typings.seen.mod.Color = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("C")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Color]
-@scala.inline
-def C(r: scala.Unit, g: scala.Double, b: scala.Double): typings.seen.mod.Color = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("C")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Color]
-@scala.inline
-def C(r: scala.Unit, g: scala.Double, b: scala.Double, a: scala.Double): typings.seen.mod.Color = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("C")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Color]
-@scala.inline
-def C(r: scala.Unit, g: scala.Double, b: scala.Unit, a: scala.Double): typings.seen.mod.Color = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("C")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Color]
-@scala.inline
-def C(r: scala.Unit, g: scala.Unit, b: scala.Double): typings.seen.mod.Color = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("C")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Color]
-@scala.inline
-def C(r: scala.Unit, g: scala.Unit, b: scala.Double, a: scala.Double): typings.seen.mod.Color = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("C")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Color]
-@scala.inline
-def C(r: scala.Unit, g: scala.Unit, b: scala.Unit, a: scala.Double): typings.seen.mod.Color = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("C")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Color]
+inline def C(): typings.seen.mod.Color = typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("C")().asInstanceOf[typings.seen.mod.Color]
+inline def C(r: scala.Double): typings.seen.mod.Color = typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("C")(r.asInstanceOf[js.Any]).asInstanceOf[typings.seen.mod.Color]
+inline def C(r: scala.Double, g: scala.Double): typings.seen.mod.Color = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("C")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Color]
+inline def C(r: scala.Double, g: scala.Double, b: scala.Double): typings.seen.mod.Color = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("C")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Color]
+inline def C(r: scala.Double, g: scala.Double, b: scala.Double, a: scala.Double): typings.seen.mod.Color = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("C")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Color]
+inline def C(r: scala.Double, g: scala.Double, b: scala.Unit, a: scala.Double): typings.seen.mod.Color = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("C")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Color]
+inline def C(r: scala.Double, g: scala.Unit, b: scala.Double): typings.seen.mod.Color = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("C")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Color]
+inline def C(r: scala.Double, g: scala.Unit, b: scala.Double, a: scala.Double): typings.seen.mod.Color = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("C")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Color]
+inline def C(r: scala.Double, g: scala.Unit, b: scala.Unit, a: scala.Double): typings.seen.mod.Color = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("C")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Color]
+inline def C(r: scala.Unit, g: scala.Double): typings.seen.mod.Color = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("C")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Color]
+inline def C(r: scala.Unit, g: scala.Double, b: scala.Double): typings.seen.mod.Color = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("C")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Color]
+inline def C(r: scala.Unit, g: scala.Double, b: scala.Double, a: scala.Double): typings.seen.mod.Color = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("C")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Color]
+inline def C(r: scala.Unit, g: scala.Double, b: scala.Unit, a: scala.Double): typings.seen.mod.Color = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("C")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Color]
+inline def C(r: scala.Unit, g: scala.Unit, b: scala.Double): typings.seen.mod.Color = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("C")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Color]
+inline def C(r: scala.Unit, g: scala.Unit, b: scala.Double, a: scala.Double): typings.seen.mod.Color = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("C")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Color]
+inline def C(r: scala.Unit, g: scala.Unit, b: scala.Unit, a: scala.Double): typings.seen.mod.Color = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("C")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Color]
 
-@scala.inline
-def CanvasContext(elementOrId: java.lang.String): typings.seen.mod.CanvasRenderContext = typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("CanvasContext")(elementOrId.asInstanceOf[js.Any]).asInstanceOf[typings.seen.mod.CanvasRenderContext]
-@scala.inline
-def CanvasContext(elementOrId: java.lang.String, scene: typings.seen.mod.Scene): typings.seen.mod.CanvasRenderContext = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("CanvasContext")(elementOrId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.CanvasRenderContext]
-@scala.inline
-def CanvasContext(elementOrId: typings.std.HTMLElement): typings.seen.mod.CanvasRenderContext = typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("CanvasContext")(elementOrId.asInstanceOf[js.Any]).asInstanceOf[typings.seen.mod.CanvasRenderContext]
-@scala.inline
-def CanvasContext(elementOrId: typings.std.HTMLElement, scene: typings.seen.mod.Scene): typings.seen.mod.CanvasRenderContext = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("CanvasContext")(elementOrId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.CanvasRenderContext]
+inline def CanvasContext(elementOrId: java.lang.String): typings.seen.mod.CanvasRenderContext = typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("CanvasContext")(elementOrId.asInstanceOf[js.Any]).asInstanceOf[typings.seen.mod.CanvasRenderContext]
+inline def CanvasContext(elementOrId: java.lang.String, scene: typings.seen.mod.Scene): typings.seen.mod.CanvasRenderContext = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("CanvasContext")(elementOrId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.CanvasRenderContext]
+inline def CanvasContext(elementOrId: typings.std.HTMLElement): typings.seen.mod.CanvasRenderContext = typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("CanvasContext")(elementOrId.asInstanceOf[js.Any]).asInstanceOf[typings.seen.mod.CanvasRenderContext]
+inline def CanvasContext(elementOrId: typings.std.HTMLElement, scene: typings.seen.mod.Scene): typings.seen.mod.CanvasRenderContext = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("CanvasContext")(elementOrId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.CanvasRenderContext]
 
-@scala.inline
-def Context(elementOrId: java.lang.String): typings.seen.mod.RenderContext = typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Context")(elementOrId.asInstanceOf[js.Any]).asInstanceOf[typings.seen.mod.RenderContext]
-@scala.inline
-def Context(elementOrId: java.lang.String, scene: typings.seen.mod.Scene): typings.seen.mod.RenderContext = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Context")(elementOrId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.RenderContext]
-@scala.inline
-def Context(elementOrId: typings.std.HTMLElement): typings.seen.mod.RenderContext = typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Context")(elementOrId.asInstanceOf[js.Any]).asInstanceOf[typings.seen.mod.RenderContext]
-@scala.inline
-def Context(elementOrId: typings.std.HTMLElement, scene: typings.seen.mod.Scene): typings.seen.mod.RenderContext = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Context")(elementOrId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.RenderContext]
+inline def Context(elementOrId: java.lang.String): typings.seen.mod.RenderContext = typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Context")(elementOrId.asInstanceOf[js.Any]).asInstanceOf[typings.seen.mod.RenderContext]
+inline def Context(elementOrId: java.lang.String, scene: typings.seen.mod.Scene): typings.seen.mod.RenderContext = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Context")(elementOrId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.RenderContext]
+inline def Context(elementOrId: typings.std.HTMLElement): typings.seen.mod.RenderContext = typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Context")(elementOrId.asInstanceOf[js.Any]).asInstanceOf[typings.seen.mod.RenderContext]
+inline def Context(elementOrId: typings.std.HTMLElement, scene: typings.seen.mod.Scene): typings.seen.mod.RenderContext = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Context")(elementOrId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.RenderContext]
 
-@scala.inline
-def M(): typings.seen.mod.Matrix = typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("M")().asInstanceOf[typings.seen.mod.Matrix]
-@scala.inline
-def M(m: js.Array[scala.Double]): typings.seen.mod.Matrix = typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("M")(m.asInstanceOf[js.Any]).asInstanceOf[typings.seen.mod.Matrix]
+inline def M(): typings.seen.mod.Matrix = typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("M")().asInstanceOf[typings.seen.mod.Matrix]
+inline def M(m: js.Array[scala.Double]): typings.seen.mod.Matrix = typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("M")(m.asInstanceOf[js.Any]).asInstanceOf[typings.seen.mod.Matrix]
 
-@scala.inline
-def P(): typings.seen.mod.Point = typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("P")().asInstanceOf[typings.seen.mod.Point]
-@scala.inline
-def P(x: scala.Double): typings.seen.mod.Point = typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("P")(x.asInstanceOf[js.Any]).asInstanceOf[typings.seen.mod.Point]
-@scala.inline
-def P(x: scala.Double, y: scala.Double): typings.seen.mod.Point = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("P")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Point]
-@scala.inline
-def P(x: scala.Double, y: scala.Double, z: scala.Double): typings.seen.mod.Point = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("P")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Point]
-@scala.inline
-def P(x: scala.Double, y: scala.Double, z: scala.Double, w: scala.Double): typings.seen.mod.Point = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("P")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Point]
-@scala.inline
-def P(x: scala.Double, y: scala.Double, z: scala.Unit, w: scala.Double): typings.seen.mod.Point = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("P")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Point]
-@scala.inline
-def P(x: scala.Double, y: scala.Unit, z: scala.Double): typings.seen.mod.Point = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("P")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Point]
-@scala.inline
-def P(x: scala.Double, y: scala.Unit, z: scala.Double, w: scala.Double): typings.seen.mod.Point = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("P")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Point]
-@scala.inline
-def P(x: scala.Double, y: scala.Unit, z: scala.Unit, w: scala.Double): typings.seen.mod.Point = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("P")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Point]
-@scala.inline
-def P(x: scala.Unit, y: scala.Double): typings.seen.mod.Point = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("P")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Point]
-@scala.inline
-def P(x: scala.Unit, y: scala.Double, z: scala.Double): typings.seen.mod.Point = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("P")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Point]
-@scala.inline
-def P(x: scala.Unit, y: scala.Double, z: scala.Double, w: scala.Double): typings.seen.mod.Point = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("P")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Point]
-@scala.inline
-def P(x: scala.Unit, y: scala.Double, z: scala.Unit, w: scala.Double): typings.seen.mod.Point = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("P")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Point]
-@scala.inline
-def P(x: scala.Unit, y: scala.Unit, z: scala.Double): typings.seen.mod.Point = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("P")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Point]
-@scala.inline
-def P(x: scala.Unit, y: scala.Unit, z: scala.Double, w: scala.Double): typings.seen.mod.Point = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("P")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Point]
-@scala.inline
-def P(x: scala.Unit, y: scala.Unit, z: scala.Unit, w: scala.Double): typings.seen.mod.Point = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("P")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Point]
+inline def P(): typings.seen.mod.Point = typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("P")().asInstanceOf[typings.seen.mod.Point]
+inline def P(x: scala.Double): typings.seen.mod.Point = typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("P")(x.asInstanceOf[js.Any]).asInstanceOf[typings.seen.mod.Point]
+inline def P(x: scala.Double, y: scala.Double): typings.seen.mod.Point = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("P")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Point]
+inline def P(x: scala.Double, y: scala.Double, z: scala.Double): typings.seen.mod.Point = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("P")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Point]
+inline def P(x: scala.Double, y: scala.Double, z: scala.Double, w: scala.Double): typings.seen.mod.Point = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("P")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Point]
+inline def P(x: scala.Double, y: scala.Double, z: scala.Unit, w: scala.Double): typings.seen.mod.Point = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("P")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Point]
+inline def P(x: scala.Double, y: scala.Unit, z: scala.Double): typings.seen.mod.Point = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("P")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Point]
+inline def P(x: scala.Double, y: scala.Unit, z: scala.Double, w: scala.Double): typings.seen.mod.Point = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("P")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Point]
+inline def P(x: scala.Double, y: scala.Unit, z: scala.Unit, w: scala.Double): typings.seen.mod.Point = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("P")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Point]
+inline def P(x: scala.Unit, y: scala.Double): typings.seen.mod.Point = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("P")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Point]
+inline def P(x: scala.Unit, y: scala.Double, z: scala.Double): typings.seen.mod.Point = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("P")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Point]
+inline def P(x: scala.Unit, y: scala.Double, z: scala.Double, w: scala.Double): typings.seen.mod.Point = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("P")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Point]
+inline def P(x: scala.Unit, y: scala.Double, z: scala.Unit, w: scala.Double): typings.seen.mod.Point = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("P")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Point]
+inline def P(x: scala.Unit, y: scala.Unit, z: scala.Double): typings.seen.mod.Point = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("P")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Point]
+inline def P(x: scala.Unit, y: scala.Unit, z: scala.Double, w: scala.Double): typings.seen.mod.Point = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("P")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Point]
+inline def P(x: scala.Unit, y: scala.Unit, z: scala.Unit, w: scala.Double): typings.seen.mod.Point = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("P")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.Point]
 
-@scala.inline
-def SvgContext(elementOrId: java.lang.String): typings.seen.mod.SvgRenderContext = typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SvgContext")(elementOrId.asInstanceOf[js.Any]).asInstanceOf[typings.seen.mod.SvgRenderContext]
-@scala.inline
-def SvgContext(elementOrId: java.lang.String, scene: typings.seen.mod.Scene): typings.seen.mod.SvgRenderContext = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SvgContext")(elementOrId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.SvgRenderContext]
-@scala.inline
-def SvgContext(elementOrId: typings.std.HTMLElement): typings.seen.mod.SvgRenderContext = typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SvgContext")(elementOrId.asInstanceOf[js.Any]).asInstanceOf[typings.seen.mod.SvgRenderContext]
-@scala.inline
-def SvgContext(elementOrId: typings.std.HTMLElement, scene: typings.seen.mod.Scene): typings.seen.mod.SvgRenderContext = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SvgContext")(elementOrId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.SvgRenderContext]
+inline def SvgContext(elementOrId: java.lang.String): typings.seen.mod.SvgRenderContext = typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SvgContext")(elementOrId.asInstanceOf[js.Any]).asInstanceOf[typings.seen.mod.SvgRenderContext]
+inline def SvgContext(elementOrId: java.lang.String, scene: typings.seen.mod.Scene): typings.seen.mod.SvgRenderContext = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SvgContext")(elementOrId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.SvgRenderContext]
+inline def SvgContext(elementOrId: typings.std.HTMLElement): typings.seen.mod.SvgRenderContext = typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SvgContext")(elementOrId.asInstanceOf[js.Any]).asInstanceOf[typings.seen.mod.SvgRenderContext]
+inline def SvgContext(elementOrId: typings.std.HTMLElement, scene: typings.seen.mod.Scene): typings.seen.mod.SvgRenderContext = (typings.seen.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SvgContext")(elementOrId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.seen.mod.SvgRenderContext]
 
 type FrameHandler = js.Function2[/* timestamp */ scala.Double, /* deltaTimestamp */ scala.Double, scala.Unit]

@@ -33,49 +33,35 @@ trait UpdateRealtimeLogConfigRequest extends StObject {
 }
 object UpdateRealtimeLogConfigRequest {
   
-  @scala.inline
-  def apply(): UpdateRealtimeLogConfigRequest = {
+  inline def apply(): UpdateRealtimeLogConfigRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateRealtimeLogConfigRequest]
   }
   
-  @scala.inline
-  implicit class UpdateRealtimeLogConfigRequestMutableBuilder[Self <: UpdateRealtimeLogConfigRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateRealtimeLogConfigRequest](x: Self) {
     
-    @scala.inline
-    def setARN(value: String): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
+    inline def setARN(value: String): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setARNUndefined: Self = StObject.set(x, "ARN", js.undefined)
+    inline def setARNUndefined: Self = StObject.set(x, "ARN", js.undefined)
     
-    @scala.inline
-    def setEndPoints(value: EndPointList): Self = StObject.set(x, "EndPoints", value.asInstanceOf[js.Any])
+    inline def setEndPoints(value: EndPointList): Self = StObject.set(x, "EndPoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndPointsUndefined: Self = StObject.set(x, "EndPoints", js.undefined)
+    inline def setEndPointsUndefined: Self = StObject.set(x, "EndPoints", js.undefined)
     
-    @scala.inline
-    def setEndPointsVarargs(value: EndPoint*): Self = StObject.set(x, "EndPoints", js.Array(value :_*))
+    inline def setEndPointsVarargs(value: EndPoint*): Self = StObject.set(x, "EndPoints", js.Array(value :_*))
     
-    @scala.inline
-    def setFields(value: FieldList): Self = StObject.set(x, "Fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: FieldList): Self = StObject.set(x, "Fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "Fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "Fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: String*): Self = StObject.set(x, "Fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "Fields", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setSamplingRate(value: long): Self = StObject.set(x, "SamplingRate", value.asInstanceOf[js.Any])
+    inline def setSamplingRate(value: long): Self = StObject.set(x, "SamplingRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSamplingRateUndefined: Self = StObject.set(x, "SamplingRate", js.undefined)
+    inline def setSamplingRateUndefined: Self = StObject.set(x, "SamplingRate", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait WrappedSketchLayer extends StObject {
 }
 object WrappedSketchLayer {
   
-  @scala.inline
-  def apply(sketchObject: SketchLayer): WrappedSketchLayer = {
+  inline def apply(sketchObject: SketchLayer): WrappedSketchLayer = {
     val __obj = js.Dynamic.literal(sketchObject = sketchObject.asInstanceOf[js.Any])
     __obj.asInstanceOf[WrappedSketchLayer]
   }
   
-  @scala.inline
-  implicit class WrappedSketchLayerMutableBuilder[Self <: WrappedSketchLayer] (val x: Self) extends AnyVal {
+  extension [Self <: WrappedSketchLayer](x: Self) {
     
-    @scala.inline
-    def setSketchObject(value: SketchLayer): Self = StObject.set(x, "sketchObject", value.asInstanceOf[js.Any])
+    inline def setSketchObject(value: SketchLayer): Self = StObject.set(x, "sketchObject", value.asInstanceOf[js.Any])
   }
 }

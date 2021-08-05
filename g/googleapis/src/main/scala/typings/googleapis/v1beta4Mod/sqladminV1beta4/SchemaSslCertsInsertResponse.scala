@@ -35,37 +35,27 @@ trait SchemaSslCertsInsertResponse extends StObject {
 }
 object SchemaSslCertsInsertResponse {
   
-  @scala.inline
-  def apply(): SchemaSslCertsInsertResponse = {
+  inline def apply(): SchemaSslCertsInsertResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSslCertsInsertResponse]
   }
   
-  @scala.inline
-  implicit class SchemaSslCertsInsertResponseMutableBuilder[Self <: SchemaSslCertsInsertResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSslCertsInsertResponse](x: Self) {
     
-    @scala.inline
-    def setClientCert(value: SchemaSslCertDetail): Self = StObject.set(x, "clientCert", value.asInstanceOf[js.Any])
+    inline def setClientCert(value: SchemaSslCertDetail): Self = StObject.set(x, "clientCert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientCertUndefined: Self = StObject.set(x, "clientCert", js.undefined)
+    inline def setClientCertUndefined: Self = StObject.set(x, "clientCert", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setOperation(value: SchemaOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: SchemaOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
+    inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
     
-    @scala.inline
-    def setServerCaCert(value: SchemaSslCert): Self = StObject.set(x, "serverCaCert", value.asInstanceOf[js.Any])
+    inline def setServerCaCert(value: SchemaSslCert): Self = StObject.set(x, "serverCaCert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerCaCertUndefined: Self = StObject.set(x, "serverCaCert", js.undefined)
+    inline def setServerCaCertUndefined: Self = StObject.set(x, "serverCaCert", js.undefined)
   }
 }

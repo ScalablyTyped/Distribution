@@ -12,22 +12,17 @@ trait OneOffGrammars extends StObject {
 }
 object OneOffGrammars {
   
-  @scala.inline
-  def apply(grammar: typings.grammarkdown.mod.Grammar, oneOffGrammars: js.Array[GrammarEle]): OneOffGrammars = {
+  inline def apply(grammar: typings.grammarkdown.mod.Grammar, oneOffGrammars: js.Array[GrammarEle]): OneOffGrammars = {
     val __obj = js.Dynamic.literal(grammar = grammar.asInstanceOf[js.Any], oneOffGrammars = oneOffGrammars.asInstanceOf[js.Any])
     __obj.asInstanceOf[OneOffGrammars]
   }
   
-  @scala.inline
-  implicit class OneOffGrammarsMutableBuilder[Self <: OneOffGrammars] (val x: Self) extends AnyVal {
+  extension [Self <: OneOffGrammars](x: Self) {
     
-    @scala.inline
-    def setGrammar(value: typings.grammarkdown.mod.Grammar): Self = StObject.set(x, "grammar", value.asInstanceOf[js.Any])
+    inline def setGrammar(value: typings.grammarkdown.mod.Grammar): Self = StObject.set(x, "grammar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneOffGrammars(value: js.Array[GrammarEle]): Self = StObject.set(x, "oneOffGrammars", value.asInstanceOf[js.Any])
+    inline def setOneOffGrammars(value: js.Array[GrammarEle]): Self = StObject.set(x, "oneOffGrammars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneOffGrammarsVarargs(value: GrammarEle*): Self = StObject.set(x, "oneOffGrammars", js.Array(value :_*))
+    inline def setOneOffGrammarsVarargs(value: GrammarEle*): Self = StObject.set(x, "oneOffGrammars", js.Array(value :_*))
   }
 }

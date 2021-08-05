@@ -19,7 +19,7 @@ object PullHelpers {
     extends StObject
        with typings.typescriptServices.TypeScript.PullHelpers.OtherPullDeclsWalker {
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var currentlyWalkingOtherDecls: js.Any = js.native
     
     /* CompleteClass */
@@ -30,79 +30,62 @@ object PullHelpers {
     ): Unit = js.native
   }
   
-  @scala.inline
-  def diagnosticFromDecl(decl: typings.typescriptServices.TypeScript.PullDecl, diagnosticKey: String): typings.typescriptServices.TypeScript.Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("diagnosticFromDecl")(decl.asInstanceOf[js.Any], diagnosticKey.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.Diagnostic]
-  @scala.inline
-  def diagnosticFromDecl(
+  inline def diagnosticFromDecl(decl: typings.typescriptServices.TypeScript.PullDecl, diagnosticKey: String): typings.typescriptServices.TypeScript.Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("diagnosticFromDecl")(decl.asInstanceOf[js.Any], diagnosticKey.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.Diagnostic]
+  inline def diagnosticFromDecl(
     decl: typings.typescriptServices.TypeScript.PullDecl,
     diagnosticKey: String,
     _arguments: js.Array[js.Any]
   ): typings.typescriptServices.TypeScript.Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("diagnosticFromDecl")(decl.asInstanceOf[js.Any], diagnosticKey.asInstanceOf[js.Any], _arguments.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.Diagnostic]
-  @scala.inline
-  def diagnosticFromDecl(
+  inline def diagnosticFromDecl(
     decl: typings.typescriptServices.TypeScript.PullDecl,
     diagnosticKey: String,
     _arguments: js.Array[js.Any],
     additionalLocations: js.Array[typings.typescriptServices.TypeScript.Location]
   ): typings.typescriptServices.TypeScript.Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("diagnosticFromDecl")(decl.asInstanceOf[js.Any], diagnosticKey.asInstanceOf[js.Any], _arguments.asInstanceOf[js.Any], additionalLocations.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.Diagnostic]
-  @scala.inline
-  def diagnosticFromDecl(
+  inline def diagnosticFromDecl(
     decl: typings.typescriptServices.TypeScript.PullDecl,
     diagnosticKey: String,
     _arguments: Unit,
     additionalLocations: js.Array[typings.typescriptServices.TypeScript.Location]
   ): typings.typescriptServices.TypeScript.Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("diagnosticFromDecl")(decl.asInstanceOf[js.Any], diagnosticKey.asInstanceOf[js.Any], _arguments.asInstanceOf[js.Any], additionalLocations.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.Diagnostic]
   
-  @scala.inline
-  def getAccessorSymbol(
+  inline def getAccessorSymbol(
     getterOrSetter: typings.typescriptServices.TypeScript.AST,
     semanticInfoChain: typings.typescriptServices.TypeScript.SemanticInfoChain
   ): typings.typescriptServices.TypeScript.PullAccessorSymbol = (^.asInstanceOf[js.Dynamic].applyDynamic("getAccessorSymbol")(getterOrSetter.asInstanceOf[js.Any], semanticInfoChain.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.PullAccessorSymbol]
   
-  @scala.inline
-  def getGetterAndSetterFunction(
+  inline def getGetterAndSetterFunction(
     funcDecl: typings.typescriptServices.TypeScript.AST,
     semanticInfoChain: typings.typescriptServices.TypeScript.SemanticInfoChain
   ): Getter = (^.asInstanceOf[js.Dynamic].applyDynamic("getGetterAndSetterFunction")(funcDecl.asInstanceOf[js.Any], semanticInfoChain.asInstanceOf[js.Any])).asInstanceOf[Getter]
   
-  @scala.inline
-  def getRootType(`type`: typings.typescriptServices.TypeScript.PullTypeSymbol): typings.typescriptServices.TypeScript.PullTypeSymbol = ^.asInstanceOf[js.Dynamic].applyDynamic("getRootType")(`type`.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.PullTypeSymbol]
+  inline def getRootType(`type`: typings.typescriptServices.TypeScript.PullTypeSymbol): typings.typescriptServices.TypeScript.PullTypeSymbol = ^.asInstanceOf[js.Dynamic].applyDynamic("getRootType")(`type`.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.PullTypeSymbol]
   
-  @scala.inline
-  def getSignatureForFuncDecl(functionDecl: typings.typescriptServices.TypeScript.PullDecl): AllSignatures = ^.asInstanceOf[js.Dynamic].applyDynamic("getSignatureForFuncDecl")(functionDecl.asInstanceOf[js.Any]).asInstanceOf[AllSignatures]
+  inline def getSignatureForFuncDecl(functionDecl: typings.typescriptServices.TypeScript.PullDecl): AllSignatures = ^.asInstanceOf[js.Dynamic].applyDynamic("getSignatureForFuncDecl")(functionDecl.asInstanceOf[js.Any]).asInstanceOf[AllSignatures]
   
-  @scala.inline
-  def isExportedSymbolInClodule(symbol: typings.typescriptServices.TypeScript.PullSymbol): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExportedSymbolInClodule")(symbol.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isExportedSymbolInClodule(symbol: typings.typescriptServices.TypeScript.PullSymbol): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExportedSymbolInClodule")(symbol.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isNameNumeric(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNameNumeric")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isNameNumeric(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNameNumeric")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isSymbolDeclaredInScopeChain(
+  inline def isSymbolDeclaredInScopeChain(
     symbol: typings.typescriptServices.TypeScript.PullSymbol,
     scopeSymbol: typings.typescriptServices.TypeScript.PullSymbol
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSymbolDeclaredInScopeChain")(symbol.asInstanceOf[js.Any], scopeSymbol.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isSymbolLocal(symbol: typings.typescriptServices.TypeScript.PullSymbol): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSymbolLocal")(symbol.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isSymbolLocal(symbol: typings.typescriptServices.TypeScript.PullSymbol): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSymbolLocal")(symbol.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def resolveDeclaredSymbolToUseType(symbol: typings.typescriptServices.TypeScript.PullSymbol): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveDeclaredSymbolToUseType")(symbol.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def resolveDeclaredSymbolToUseType(symbol: typings.typescriptServices.TypeScript.PullSymbol): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveDeclaredSymbolToUseType")(symbol.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def symbolIsEnum(source: typings.typescriptServices.TypeScript.PullSymbol): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("symbolIsEnum")(source.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def symbolIsEnum(source: typings.typescriptServices.TypeScript.PullSymbol): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("symbolIsEnum")(source.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def symbolIsModule(symbol: typings.typescriptServices.TypeScript.PullSymbol): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("symbolIsModule")(symbol.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def symbolIsModule(symbol: typings.typescriptServices.TypeScript.PullSymbol): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("symbolIsModule")(symbol.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def typeSymbolsAreIdentical(
+  inline def typeSymbolsAreIdentical(
     a: typings.typescriptServices.TypeScript.PullTypeSymbol,
     b: typings.typescriptServices.TypeScript.PullTypeSymbol
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("typeSymbolsAreIdentical")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def walkPullTypeSymbolStructure(
+  inline def walkPullTypeSymbolStructure(
     typeSymbol: typings.typescriptServices.TypeScript.PullTypeSymbol,
     walker: PullTypeSymbolStructureWalker
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("walkPullTypeSymbolStructure")(typeSymbol.asInstanceOf[js.Any], walker.asInstanceOf[js.Any])).asInstanceOf[Unit]

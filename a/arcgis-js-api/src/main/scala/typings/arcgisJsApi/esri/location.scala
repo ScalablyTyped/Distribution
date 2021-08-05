@@ -20,16 +20,13 @@ trait location extends StObject {
 }
 object location {
   
-  @scala.inline
-  def apply(createRenderer: locationCreateRendererParams => js.Promise[locationRendererResult]): location = {
+  inline def apply(createRenderer: locationCreateRendererParams => js.Promise[locationRendererResult]): location = {
     val __obj = js.Dynamic.literal(createRenderer = js.Any.fromFunction1(createRenderer))
     __obj.asInstanceOf[location]
   }
   
-  @scala.inline
-  implicit class locationMutableBuilder[Self <: location] (val x: Self) extends AnyVal {
+  extension [Self <: location](x: Self) {
     
-    @scala.inline
-    def setCreateRenderer(value: locationCreateRendererParams => js.Promise[locationRendererResult]): Self = StObject.set(x, "createRenderer", js.Any.fromFunction1(value))
+    inline def setCreateRenderer(value: locationCreateRendererParams => js.Promise[locationRendererResult]): Self = StObject.set(x, "createRenderer", js.Any.fromFunction1(value))
   }
 }

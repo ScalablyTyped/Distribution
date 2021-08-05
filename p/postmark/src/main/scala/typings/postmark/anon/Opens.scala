@@ -14,22 +14,17 @@ trait Opens extends StObject {
 }
 object Opens {
   
-  @scala.inline
-  def apply(Date: String, Opens: Double, Unique: Double): Opens = {
+  inline def apply(Date: String, Opens: Double, Unique: Double): Opens = {
     val __obj = js.Dynamic.literal(Date = Date.asInstanceOf[js.Any], Opens = Opens.asInstanceOf[js.Any], Unique = Unique.asInstanceOf[js.Any])
     __obj.asInstanceOf[Opens]
   }
   
-  @scala.inline
-  implicit class OpensMutableBuilder[Self <: Opens] (val x: Self) extends AnyVal {
+  extension [Self <: Opens](x: Self) {
     
-    @scala.inline
-    def setDate(value: String): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
+    inline def setDate(value: String): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpens(value: Double): Self = StObject.set(x, "Opens", value.asInstanceOf[js.Any])
+    inline def setOpens(value: Double): Self = StObject.set(x, "Opens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnique(value: Double): Self = StObject.set(x, "Unique", value.asInstanceOf[js.Any])
+    inline def setUnique(value: Double): Self = StObject.set(x, "Unique", value.asInstanceOf[js.Any])
   }
 }

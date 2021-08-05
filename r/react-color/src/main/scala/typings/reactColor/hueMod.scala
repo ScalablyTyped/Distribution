@@ -30,20 +30,16 @@ object hueMod {
   }
   object HueProps {
     
-    @scala.inline
-    def apply(onChange: (/* color */ ColorResult, /* event */ ChangeEvent[HTMLInputElement]) => Unit): HueProps = {
+    inline def apply(onChange: (/* color */ ColorResult, /* event */ ChangeEvent[HTMLInputElement]) => Unit): HueProps = {
       val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction2(onChange))
       __obj.asInstanceOf[HueProps]
     }
     
-    @scala.inline
-    implicit class HuePropsMutableBuilder[Self <: HueProps] (val x: Self) extends AnyVal {
+    extension [Self <: HueProps](x: Self) {
       
-      @scala.inline
-      def setDirection(value: horizontal | vertical): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: horizontal | vertical): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     }
   }
 }

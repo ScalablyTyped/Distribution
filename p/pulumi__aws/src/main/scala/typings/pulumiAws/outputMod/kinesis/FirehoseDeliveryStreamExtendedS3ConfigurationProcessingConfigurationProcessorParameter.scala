@@ -18,19 +18,15 @@ trait FirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProces
 }
 object FirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorParameter {
   
-  @scala.inline
-  def apply(parameterName: String, parameterValue: String): FirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorParameter = {
+  inline def apply(parameterName: String, parameterValue: String): FirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorParameter = {
     val __obj = js.Dynamic.literal(parameterName = parameterName.asInstanceOf[js.Any], parameterValue = parameterValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorParameter]
   }
   
-  @scala.inline
-  implicit class FirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorParameterMutableBuilder[Self <: FirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorParameter] (val x: Self) extends AnyVal {
+  extension [Self <: FirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorParameter](x: Self) {
     
-    @scala.inline
-    def setParameterName(value: String): Self = StObject.set(x, "parameterName", value.asInstanceOf[js.Any])
+    inline def setParameterName(value: String): Self = StObject.set(x, "parameterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterValue(value: String): Self = StObject.set(x, "parameterValue", value.asInstanceOf[js.Any])
+    inline def setParameterValue(value: String): Self = StObject.set(x, "parameterValue", value.asInstanceOf[js.Any])
   }
 }

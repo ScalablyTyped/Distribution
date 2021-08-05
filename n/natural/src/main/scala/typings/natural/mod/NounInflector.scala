@@ -12,19 +12,15 @@ trait NounInflector extends StObject {
 }
 object NounInflector {
   
-  @scala.inline
-  def apply(pluralize: String => String, singularize: String => String): NounInflector = {
+  inline def apply(pluralize: String => String, singularize: String => String): NounInflector = {
     val __obj = js.Dynamic.literal(pluralize = js.Any.fromFunction1(pluralize), singularize = js.Any.fromFunction1(singularize))
     __obj.asInstanceOf[NounInflector]
   }
   
-  @scala.inline
-  implicit class NounInflectorMutableBuilder[Self <: NounInflector] (val x: Self) extends AnyVal {
+  extension [Self <: NounInflector](x: Self) {
     
-    @scala.inline
-    def setPluralize(value: String => String): Self = StObject.set(x, "pluralize", js.Any.fromFunction1(value))
+    inline def setPluralize(value: String => String): Self = StObject.set(x, "pluralize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSingularize(value: String => String): Self = StObject.set(x, "singularize", js.Any.fromFunction1(value))
+    inline def setSingularize(value: String => String): Self = StObject.set(x, "singularize", js.Any.fromFunction1(value))
   }
 }

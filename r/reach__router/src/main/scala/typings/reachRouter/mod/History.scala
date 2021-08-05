@@ -16,8 +16,7 @@ trait History extends StObject {
 }
 object History {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     listen: HistoryListener => HistoryUnsubscribe,
     location: HistoryLocation,
     navigate: NavigateFn,
@@ -27,19 +26,14 @@ object History {
     __obj.asInstanceOf[History]
   }
   
-  @scala.inline
-  implicit class HistoryMutableBuilder[Self <: History] (val x: Self) extends AnyVal {
+  extension [Self <: History](x: Self) {
     
-    @scala.inline
-    def setListen(value: HistoryListener => HistoryUnsubscribe): Self = StObject.set(x, "listen", js.Any.fromFunction1(value))
+    inline def setListen(value: HistoryListener => HistoryUnsubscribe): Self = StObject.set(x, "listen", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLocation(value: HistoryLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: HistoryLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigate(value: NavigateFn): Self = StObject.set(x, "navigate", value.asInstanceOf[js.Any])
+    inline def setNavigate(value: NavigateFn): Self = StObject.set(x, "navigate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitioning(value: Boolean): Self = StObject.set(x, "transitioning", value.asInstanceOf[js.Any])
+    inline def setTransitioning(value: Boolean): Self = StObject.set(x, "transitioning", value.asInstanceOf[js.Any])
   }
 }

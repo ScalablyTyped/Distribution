@@ -15,19 +15,15 @@ trait TypeofComboBox extends StObject {
 }
 object TypeofComboBox {
   
-  @scala.inline
-  def apply(extend: js.Object => ComboBox, fn: ComboBox): TypeofComboBox = {
+  inline def apply(extend: js.Object => ComboBox, fn: ComboBox): TypeofComboBox = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofComboBox]
   }
   
-  @scala.inline
-  implicit class TypeofComboBoxMutableBuilder[Self <: TypeofComboBox] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofComboBox](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => ComboBox): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => ComboBox): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: ComboBox): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: ComboBox): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

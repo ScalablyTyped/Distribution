@@ -18,28 +18,21 @@ trait DescribeAlarmHistoryOutput extends StObject {
 }
 object DescribeAlarmHistoryOutput {
   
-  @scala.inline
-  def apply(): DescribeAlarmHistoryOutput = {
+  inline def apply(): DescribeAlarmHistoryOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAlarmHistoryOutput]
   }
   
-  @scala.inline
-  implicit class DescribeAlarmHistoryOutputMutableBuilder[Self <: DescribeAlarmHistoryOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAlarmHistoryOutput](x: Self) {
     
-    @scala.inline
-    def setAlarmHistoryItems(value: AlarmHistoryItems): Self = StObject.set(x, "AlarmHistoryItems", value.asInstanceOf[js.Any])
+    inline def setAlarmHistoryItems(value: AlarmHistoryItems): Self = StObject.set(x, "AlarmHistoryItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlarmHistoryItemsUndefined: Self = StObject.set(x, "AlarmHistoryItems", js.undefined)
+    inline def setAlarmHistoryItemsUndefined: Self = StObject.set(x, "AlarmHistoryItems", js.undefined)
     
-    @scala.inline
-    def setAlarmHistoryItemsVarargs(value: AlarmHistoryItem*): Self = StObject.set(x, "AlarmHistoryItems", js.Array(value :_*))
+    inline def setAlarmHistoryItemsVarargs(value: AlarmHistoryItem*): Self = StObject.set(x, "AlarmHistoryItems", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

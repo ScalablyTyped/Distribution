@@ -10,16 +10,13 @@ trait ShouldFadeIn extends StObject {
 }
 object ShouldFadeIn {
   
-  @scala.inline
-  def apply(shouldFadeIn: Boolean): ShouldFadeIn = {
+  inline def apply(shouldFadeIn: Boolean): ShouldFadeIn = {
     val __obj = js.Dynamic.literal(shouldFadeIn = shouldFadeIn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShouldFadeIn]
   }
   
-  @scala.inline
-  implicit class ShouldFadeInMutableBuilder[Self <: ShouldFadeIn] (val x: Self) extends AnyVal {
+  extension [Self <: ShouldFadeIn](x: Self) {
     
-    @scala.inline
-    def setShouldFadeIn(value: Boolean): Self = StObject.set(x, "shouldFadeIn", value.asInstanceOf[js.Any])
+    inline def setShouldFadeIn(value: Boolean): Self = StObject.set(x, "shouldFadeIn", value.asInstanceOf[js.Any])
   }
 }

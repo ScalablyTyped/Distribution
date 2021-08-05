@@ -11,6 +11,5 @@ object tagMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def tag(literals: js.Array[String], substitutions: String*): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("tag")(literals.asInstanceOf[js.Any], substitutions.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def tag(literals: js.Array[String], substitutions: String*): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("tag")(literals.asInstanceOf[js.Any], substitutions.asInstanceOf[js.Any])).asInstanceOf[Element]
 }

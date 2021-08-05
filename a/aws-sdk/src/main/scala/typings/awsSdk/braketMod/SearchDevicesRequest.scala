@@ -23,31 +23,23 @@ trait SearchDevicesRequest extends StObject {
 }
 object SearchDevicesRequest {
   
-  @scala.inline
-  def apply(filters: SearchDevicesRequestFiltersList): SearchDevicesRequest = {
+  inline def apply(filters: SearchDevicesRequestFiltersList): SearchDevicesRequest = {
     val __obj = js.Dynamic.literal(filters = filters.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchDevicesRequest]
   }
   
-  @scala.inline
-  implicit class SearchDevicesRequestMutableBuilder[Self <: SearchDevicesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SearchDevicesRequest](x: Self) {
     
-    @scala.inline
-    def setFilters(value: SearchDevicesRequestFiltersList): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: SearchDevicesRequestFiltersList): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersVarargs(value: SearchDevicesFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: SearchDevicesFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxResults(value: SearchDevicesRequestMaxResultsInteger): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: SearchDevicesRequestMaxResultsInteger): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

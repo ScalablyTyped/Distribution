@@ -48,8 +48,7 @@ object tooltipTypesMod {
   }
   object ITooltip {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       destroy: () => Unit,
       getElement: () => HTMLElement,
       hide: () => Unit,
@@ -62,29 +61,21 @@ object tooltipTypesMod {
       __obj.asInstanceOf[ITooltip]
     }
     
-    @scala.inline
-    implicit class ITooltipMutableBuilder[Self <: ITooltip] (val x: Self) extends AnyVal {
+    extension [Self <: ITooltip](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetElement(value: () => HTMLElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+      inline def setGetElement(value: () => HTMLElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsHidden(value: Boolean): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
+      inline def setIsHidden(value: Boolean): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetStyle(value: StringDictionary[String | Double] => Unit): Self = StObject.set(x, "setStyle", js.Any.fromFunction1(value))
+      inline def setSetStyle(value: StringDictionary[String | Double] => Unit): Self = StObject.set(x, "setStyle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetText(value: String => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
+      inline def setSetText(value: String => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     }
   }
   
@@ -96,20 +87,16 @@ object tooltipTypesMod {
   }
   object ITooltipPosition {
     
-    @scala.inline
-    def apply(placement: TooltipPositionPlacement, x: Double): ITooltipPosition = {
+    inline def apply(placement: TooltipPositionPlacement, x: Double): ITooltipPosition = {
       val __obj = js.Dynamic.literal(placement = placement.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITooltipPosition]
     }
     
-    @scala.inline
-    implicit class ITooltipPositionMutableBuilder[Self <: ITooltipPosition] (val x: Self) extends AnyVal {
+    extension [Self <: ITooltipPosition](x: Self) {
       
-      @scala.inline
-      def setPlacement(value: TooltipPositionPlacement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: TooltipPositionPlacement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     }
   }
   
@@ -135,8 +122,7 @@ object tooltipTypesMod {
   }
   object ITooltipReference {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       destroy: () => Unit,
       disable: () => Unit,
       enable: () => Unit,
@@ -150,32 +136,23 @@ object tooltipTypesMod {
       __obj.asInstanceOf[ITooltipReference]
     }
     
-    @scala.inline
-    implicit class ITooltipReferenceMutableBuilder[Self <: ITooltipReference] (val x: Self) extends AnyVal {
+    extension [Self <: ITooltipReference](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
+      inline def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
+      inline def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
+      inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHidden(value: Boolean): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
+      inline def setIsHidden(value: Boolean): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetText(value: String => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
+      inline def setSetText(value: String => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     }
   }
   
@@ -187,26 +164,20 @@ object tooltipTypesMod {
   }
   object ITooltipReferenceOptions {
     
-    @scala.inline
-    def apply(): ITooltipReferenceOptions = {
+    inline def apply(): ITooltipReferenceOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ITooltipReferenceOptions]
     }
     
-    @scala.inline
-    implicit class ITooltipReferenceOptionsMutableBuilder[Self <: ITooltipReferenceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ITooltipReferenceOptions](x: Self) {
       
-      @scala.inline
-      def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+      inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
   
@@ -228,8 +199,7 @@ object tooltipTypesMod {
   }
   object ITooltipService {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       createReference: (HTMLElement, ITooltipReferenceOptions) => ITooltipReference,
       destroy: () => Unit,
       hide: () => Unit,
@@ -242,29 +212,21 @@ object tooltipTypesMod {
       __obj.asInstanceOf[ITooltipService]
     }
     
-    @scala.inline
-    implicit class ITooltipServiceMutableBuilder[Self <: ITooltipService] (val x: Self) extends AnyVal {
+    extension [Self <: ITooltipService](x: Self) {
       
-      @scala.inline
-      def setCreateReference(value: (HTMLElement, ITooltipReferenceOptions) => ITooltipReference): Self = StObject.set(x, "createReference", js.Any.fromFunction2(value))
+      inline def setCreateReference(value: (HTMLElement, ITooltipReferenceOptions) => ITooltipReference): Self = StObject.set(x, "createReference", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsHidden(value: Boolean): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
+      inline def setIsHidden(value: Boolean): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetText(value: String => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
+      inline def setSetText(value: String => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShow(value: ITooltipShowOptions => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
+      inline def setShow(value: ITooltipShowOptions => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTooltipContainerElement(value: HTMLElement): Self = StObject.set(x, "tooltipContainerElement", value.asInstanceOf[js.Any])
+      inline def setTooltipContainerElement(value: HTMLElement): Self = StObject.set(x, "tooltipContainerElement", value.asInstanceOf[js.Any])
     }
   }
   
@@ -278,32 +240,24 @@ object tooltipTypesMod {
   }
   object ITooltipShowOptions {
     
-    @scala.inline
-    def apply(position: ITooltipPosition | ITooltipPositionFunction): ITooltipShowOptions = {
+    inline def apply(position: ITooltipPosition | ITooltipPositionFunction): ITooltipShowOptions = {
       val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITooltipShowOptions]
     }
     
-    @scala.inline
-    implicit class ITooltipShowOptionsMutableBuilder[Self <: ITooltipShowOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ITooltipShowOptions](x: Self) {
       
-      @scala.inline
-      def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+      inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      @scala.inline
-      def setPosition(value: ITooltipPosition | ITooltipPositionFunction): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: ITooltipPosition | ITooltipPositionFunction): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionFunction1(value: /* tooltipContainerElement */ HTMLElement => ITooltipPosition): Self = StObject.set(x, "position", js.Any.fromFunction1(value))
+      inline def setPositionFunction1(value: /* tooltipContainerElement */ HTMLElement => ITooltipPosition): Self = StObject.set(x, "position", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
   
@@ -321,8 +275,7 @@ object tooltipTypesMod {
   }
   object ITooltipStyles {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       showAsElement: String,
       showAsText: String,
       tooltip: String,
@@ -333,23 +286,17 @@ object tooltipTypesMod {
       __obj.asInstanceOf[ITooltipStyles]
     }
     
-    @scala.inline
-    implicit class ITooltipStylesMutableBuilder[Self <: ITooltipStyles] (val x: Self) extends AnyVal {
+    extension [Self <: ITooltipStyles](x: Self) {
       
-      @scala.inline
-      def setShowAsElement(value: String): Self = StObject.set(x, "showAsElement", value.asInstanceOf[js.Any])
+      inline def setShowAsElement(value: String): Self = StObject.set(x, "showAsElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowAsText(value: String): Self = StObject.set(x, "showAsText", value.asInstanceOf[js.Any])
+      inline def setShowAsText(value: String): Self = StObject.set(x, "showAsText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+      inline def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipInner(value: String): Self = StObject.set(x, "tooltipInner", value.asInstanceOf[js.Any])
+      inline def setTooltipInner(value: String): Self = StObject.set(x, "tooltipInner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipVisible(value: String): Self = StObject.set(x, "tooltipVisible", value.asInstanceOf[js.Any])
+      inline def setTooltipVisible(value: String): Self = StObject.set(x, "tooltipVisible", value.asInstanceOf[js.Any])
     }
   }
 }

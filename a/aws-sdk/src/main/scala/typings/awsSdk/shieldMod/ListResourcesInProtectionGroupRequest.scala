@@ -23,28 +23,21 @@ trait ListResourcesInProtectionGroupRequest extends StObject {
 }
 object ListResourcesInProtectionGroupRequest {
   
-  @scala.inline
-  def apply(ProtectionGroupId: ProtectionGroupId): ListResourcesInProtectionGroupRequest = {
+  inline def apply(ProtectionGroupId: ProtectionGroupId): ListResourcesInProtectionGroupRequest = {
     val __obj = js.Dynamic.literal(ProtectionGroupId = ProtectionGroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListResourcesInProtectionGroupRequest]
   }
   
-  @scala.inline
-  implicit class ListResourcesInProtectionGroupRequestMutableBuilder[Self <: ListResourcesInProtectionGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListResourcesInProtectionGroupRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setProtectionGroupId(value: ProtectionGroupId): Self = StObject.set(x, "ProtectionGroupId", value.asInstanceOf[js.Any])
+    inline def setProtectionGroupId(value: ProtectionGroupId): Self = StObject.set(x, "ProtectionGroupId", value.asInstanceOf[js.Any])
   }
 }

@@ -25,6 +25,5 @@ object global {
   @JSGlobal("OAuth2")
   @js.native
   def OAuth2: typings.googleAppsScriptOauth2.GoogleAppsScriptOAuth2.OAuth2 = js.native
-  @scala.inline
-  def OAuth2_=(x: OAuth2): Unit = js.Dynamic.global.updateDynamic("OAuth2")(x.asInstanceOf[js.Any])
+  inline def OAuth2_=(x: OAuth2): Unit = js.Dynamic.global.updateDynamic("OAuth2")(x.asInstanceOf[js.Any])
 }

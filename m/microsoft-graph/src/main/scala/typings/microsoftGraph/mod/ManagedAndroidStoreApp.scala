@@ -19,34 +19,25 @@ trait ManagedAndroidStoreApp
 }
 object ManagedAndroidStoreApp {
   
-  @scala.inline
-  def apply(): ManagedAndroidStoreApp = {
+  inline def apply(): ManagedAndroidStoreApp = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ManagedAndroidStoreApp]
   }
   
-  @scala.inline
-  implicit class ManagedAndroidStoreAppMutableBuilder[Self <: ManagedAndroidStoreApp] (val x: Self) extends AnyVal {
+  extension [Self <: ManagedAndroidStoreApp](x: Self) {
     
-    @scala.inline
-    def setAppStoreUrl(value: String): Self = StObject.set(x, "appStoreUrl", value.asInstanceOf[js.Any])
+    inline def setAppStoreUrl(value: String): Self = StObject.set(x, "appStoreUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppStoreUrlUndefined: Self = StObject.set(x, "appStoreUrl", js.undefined)
+    inline def setAppStoreUrlUndefined: Self = StObject.set(x, "appStoreUrl", js.undefined)
     
-    @scala.inline
-    def setMinimumSupportedOperatingSystem(value: AndroidMinimumOperatingSystem): Self = StObject.set(x, "minimumSupportedOperatingSystem", value.asInstanceOf[js.Any])
+    inline def setMinimumSupportedOperatingSystem(value: AndroidMinimumOperatingSystem): Self = StObject.set(x, "minimumSupportedOperatingSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumSupportedOperatingSystemUndefined: Self = StObject.set(x, "minimumSupportedOperatingSystem", js.undefined)
+    inline def setMinimumSupportedOperatingSystemUndefined: Self = StObject.set(x, "minimumSupportedOperatingSystem", js.undefined)
     
-    @scala.inline
-    def setPackageId(value: NullableOption[String]): Self = StObject.set(x, "packageId", value.asInstanceOf[js.Any])
+    inline def setPackageId(value: NullableOption[String]): Self = StObject.set(x, "packageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageIdNull: Self = StObject.set(x, "packageId", null)
+    inline def setPackageIdNull: Self = StObject.set(x, "packageId", null)
     
-    @scala.inline
-    def setPackageIdUndefined: Self = StObject.set(x, "packageId", js.undefined)
+    inline def setPackageIdUndefined: Self = StObject.set(x, "packageId", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait ListGameServerGroupsInput extends StObject {
 }
 object ListGameServerGroupsInput {
   
-  @scala.inline
-  def apply(): ListGameServerGroupsInput = {
+  inline def apply(): ListGameServerGroupsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListGameServerGroupsInput]
   }
   
-  @scala.inline
-  implicit class ListGameServerGroupsInputMutableBuilder[Self <: ListGameServerGroupsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListGameServerGroupsInput](x: Self) {
     
-    @scala.inline
-    def setLimit(value: PositiveInteger): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: PositiveInteger): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

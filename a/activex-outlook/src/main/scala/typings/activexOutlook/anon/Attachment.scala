@@ -10,16 +10,13 @@ trait Attachment extends StObject {
 }
 object Attachment {
   
-  @scala.inline
-  def apply(Attachment: typings.activexOutlook.Outlook.Attachment): Attachment = {
+  inline def apply(Attachment: typings.activexOutlook.Outlook.Attachment): Attachment = {
     val __obj = js.Dynamic.literal(Attachment = Attachment.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attachment]
   }
   
-  @scala.inline
-  implicit class AttachmentMutableBuilder[Self <: Attachment] (val x: Self) extends AnyVal {
+  extension [Self <: Attachment](x: Self) {
     
-    @scala.inline
-    def setAttachment(value: typings.activexOutlook.Outlook.Attachment): Self = StObject.set(x, "Attachment", value.asInstanceOf[js.Any])
+    inline def setAttachment(value: typings.activexOutlook.Outlook.Attachment): Self = StObject.set(x, "Attachment", value.asInstanceOf[js.Any])
   }
 }

@@ -70,13 +70,10 @@ object srcTypeMod {
     val temporal: typings.vegaLite.vegaLiteStrings.temporal = js.native
   }
   
-  @scala.inline
-  def getFullName(`type`: String): js.UndefOr[Type] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFullName")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Type]]
-  @scala.inline
-  def getFullName(`type`: Type): js.UndefOr[Type] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFullName")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Type]]
+  inline def getFullName(`type`: String): js.UndefOr[Type] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFullName")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Type]]
+  inline def getFullName(`type`: Type): js.UndefOr[Type] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFullName")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Type]]
   
-  @scala.inline
-  def isType(t: js.Any): /* is vega-lite.vega-lite/build/src/type.Type */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isType")(t.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/type.Type */ Boolean]
+  inline def isType(t: js.Any): /* is vega-lite.vega-lite/build/src/type.Type */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isType")(t.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/type.Type */ Boolean]
   
   /* Rewritten from type alias, can be one of: 
     - typings.vegaLite.vegaLiteStrings.quantitative
@@ -87,16 +84,12 @@ object srcTypeMod {
   trait StandardType extends StObject
   object StandardType {
     
-    @scala.inline
-    def nominal: typings.vegaLite.vegaLiteStrings.nominal = "nominal".asInstanceOf[typings.vegaLite.vegaLiteStrings.nominal]
+    inline def nominal: typings.vegaLite.vegaLiteStrings.nominal = "nominal".asInstanceOf[typings.vegaLite.vegaLiteStrings.nominal]
     
-    @scala.inline
-    def ordinal: typings.vegaLite.vegaLiteStrings.ordinal = "ordinal".asInstanceOf[typings.vegaLite.vegaLiteStrings.ordinal]
+    inline def ordinal: typings.vegaLite.vegaLiteStrings.ordinal = "ordinal".asInstanceOf[typings.vegaLite.vegaLiteStrings.ordinal]
     
-    @scala.inline
-    def quantitative: typings.vegaLite.vegaLiteStrings.quantitative = "quantitative".asInstanceOf[typings.vegaLite.vegaLiteStrings.quantitative]
+    inline def quantitative: typings.vegaLite.vegaLiteStrings.quantitative = "quantitative".asInstanceOf[typings.vegaLite.vegaLiteStrings.quantitative]
     
-    @scala.inline
-    def temporal: typings.vegaLite.vegaLiteStrings.temporal = "temporal".asInstanceOf[typings.vegaLite.vegaLiteStrings.temporal]
+    inline def temporal: typings.vegaLite.vegaLiteStrings.temporal = "temporal".asInstanceOf[typings.vegaLite.vegaLiteStrings.temporal]
   }
 }

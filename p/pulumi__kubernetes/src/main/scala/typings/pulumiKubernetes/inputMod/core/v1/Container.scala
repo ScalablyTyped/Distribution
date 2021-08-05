@@ -122,163 +122,111 @@ trait Container extends StObject {
 }
 object Container {
   
-  @scala.inline
-  def apply(name: Input[String]): Container = {
+  inline def apply(name: Input[String]): Container = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Container]
   }
   
-  @scala.inline
-  implicit class ContainerMutableBuilder[Self <: Container] (val x: Self) extends AnyVal {
+  extension [Self <: Container](x: Self) {
     
-    @scala.inline
-    def setArgs(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+    inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    @scala.inline
-    def setArgsVarargs(value: Input[String]*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: Input[String]*): Self = StObject.set(x, "args", js.Array(value :_*))
     
-    @scala.inline
-    def setCommand(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
+    inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
     
-    @scala.inline
-    def setCommandVarargs(value: Input[String]*): Self = StObject.set(x, "command", js.Array(value :_*))
+    inline def setCommandVarargs(value: Input[String]*): Self = StObject.set(x, "command", js.Array(value :_*))
     
-    @scala.inline
-    def setEnv(value: Input[js.Array[Input[EnvVar]]]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+    inline def setEnv(value: Input[js.Array[Input[EnvVar]]]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvFrom(value: Input[js.Array[Input[EnvFromSource]]]): Self = StObject.set(x, "envFrom", value.asInstanceOf[js.Any])
+    inline def setEnvFrom(value: Input[js.Array[Input[EnvFromSource]]]): Self = StObject.set(x, "envFrom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvFromUndefined: Self = StObject.set(x, "envFrom", js.undefined)
+    inline def setEnvFromUndefined: Self = StObject.set(x, "envFrom", js.undefined)
     
-    @scala.inline
-    def setEnvFromVarargs(value: Input[EnvFromSource]*): Self = StObject.set(x, "envFrom", js.Array(value :_*))
+    inline def setEnvFromVarargs(value: Input[EnvFromSource]*): Self = StObject.set(x, "envFrom", js.Array(value :_*))
     
-    @scala.inline
-    def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+    inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
-    @scala.inline
-    def setEnvVarargs(value: Input[EnvVar]*): Self = StObject.set(x, "env", js.Array(value :_*))
+    inline def setEnvVarargs(value: Input[EnvVar]*): Self = StObject.set(x, "env", js.Array(value :_*))
     
-    @scala.inline
-    def setImage(value: Input[String]): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: Input[String]): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagePullPolicy(value: Input[String]): Self = StObject.set(x, "imagePullPolicy", value.asInstanceOf[js.Any])
+    inline def setImagePullPolicy(value: Input[String]): Self = StObject.set(x, "imagePullPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagePullPolicyUndefined: Self = StObject.set(x, "imagePullPolicy", js.undefined)
+    inline def setImagePullPolicyUndefined: Self = StObject.set(x, "imagePullPolicy", js.undefined)
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
-    @scala.inline
-    def setLifecycle(value: Input[Lifecycle]): Self = StObject.set(x, "lifecycle", value.asInstanceOf[js.Any])
+    inline def setLifecycle(value: Input[Lifecycle]): Self = StObject.set(x, "lifecycle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLifecycleUndefined: Self = StObject.set(x, "lifecycle", js.undefined)
+    inline def setLifecycleUndefined: Self = StObject.set(x, "lifecycle", js.undefined)
     
-    @scala.inline
-    def setLivenessProbe(value: Input[Probe]): Self = StObject.set(x, "livenessProbe", value.asInstanceOf[js.Any])
+    inline def setLivenessProbe(value: Input[Probe]): Self = StObject.set(x, "livenessProbe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLivenessProbeUndefined: Self = StObject.set(x, "livenessProbe", js.undefined)
+    inline def setLivenessProbeUndefined: Self = StObject.set(x, "livenessProbe", js.undefined)
     
-    @scala.inline
-    def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPorts(value: Input[js.Array[Input[ContainerPort]]]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
+    inline def setPorts(value: Input[js.Array[Input[ContainerPort]]]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
+    inline def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
     
-    @scala.inline
-    def setPortsVarargs(value: Input[ContainerPort]*): Self = StObject.set(x, "ports", js.Array(value :_*))
+    inline def setPortsVarargs(value: Input[ContainerPort]*): Self = StObject.set(x, "ports", js.Array(value :_*))
     
-    @scala.inline
-    def setReadinessProbe(value: Input[Probe]): Self = StObject.set(x, "readinessProbe", value.asInstanceOf[js.Any])
+    inline def setReadinessProbe(value: Input[Probe]): Self = StObject.set(x, "readinessProbe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadinessProbeUndefined: Self = StObject.set(x, "readinessProbe", js.undefined)
+    inline def setReadinessProbeUndefined: Self = StObject.set(x, "readinessProbe", js.undefined)
     
-    @scala.inline
-    def setResources(value: Input[ResourceRequirements]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: Input[ResourceRequirements]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
+    inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
-    @scala.inline
-    def setSecurityContext(value: Input[SecurityContext]): Self = StObject.set(x, "securityContext", value.asInstanceOf[js.Any])
+    inline def setSecurityContext(value: Input[SecurityContext]): Self = StObject.set(x, "securityContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityContextUndefined: Self = StObject.set(x, "securityContext", js.undefined)
+    inline def setSecurityContextUndefined: Self = StObject.set(x, "securityContext", js.undefined)
     
-    @scala.inline
-    def setStartupProbe(value: Input[Probe]): Self = StObject.set(x, "startupProbe", value.asInstanceOf[js.Any])
+    inline def setStartupProbe(value: Input[Probe]): Self = StObject.set(x, "startupProbe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartupProbeUndefined: Self = StObject.set(x, "startupProbe", js.undefined)
+    inline def setStartupProbeUndefined: Self = StObject.set(x, "startupProbe", js.undefined)
     
-    @scala.inline
-    def setStdin(value: Input[Boolean]): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
+    inline def setStdin(value: Input[Boolean]): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStdinOnce(value: Input[Boolean]): Self = StObject.set(x, "stdinOnce", value.asInstanceOf[js.Any])
+    inline def setStdinOnce(value: Input[Boolean]): Self = StObject.set(x, "stdinOnce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStdinOnceUndefined: Self = StObject.set(x, "stdinOnce", js.undefined)
+    inline def setStdinOnceUndefined: Self = StObject.set(x, "stdinOnce", js.undefined)
     
-    @scala.inline
-    def setStdinUndefined: Self = StObject.set(x, "stdin", js.undefined)
+    inline def setStdinUndefined: Self = StObject.set(x, "stdin", js.undefined)
     
-    @scala.inline
-    def setTerminationMessagePath(value: Input[String]): Self = StObject.set(x, "terminationMessagePath", value.asInstanceOf[js.Any])
+    inline def setTerminationMessagePath(value: Input[String]): Self = StObject.set(x, "terminationMessagePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerminationMessagePathUndefined: Self = StObject.set(x, "terminationMessagePath", js.undefined)
+    inline def setTerminationMessagePathUndefined: Self = StObject.set(x, "terminationMessagePath", js.undefined)
     
-    @scala.inline
-    def setTerminationMessagePolicy(value: Input[String]): Self = StObject.set(x, "terminationMessagePolicy", value.asInstanceOf[js.Any])
+    inline def setTerminationMessagePolicy(value: Input[String]): Self = StObject.set(x, "terminationMessagePolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerminationMessagePolicyUndefined: Self = StObject.set(x, "terminationMessagePolicy", js.undefined)
+    inline def setTerminationMessagePolicyUndefined: Self = StObject.set(x, "terminationMessagePolicy", js.undefined)
     
-    @scala.inline
-    def setTty(value: Input[Boolean]): Self = StObject.set(x, "tty", value.asInstanceOf[js.Any])
+    inline def setTty(value: Input[Boolean]): Self = StObject.set(x, "tty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTtyUndefined: Self = StObject.set(x, "tty", js.undefined)
+    inline def setTtyUndefined: Self = StObject.set(x, "tty", js.undefined)
     
-    @scala.inline
-    def setVolumeDevices(value: Input[js.Array[Input[VolumeDevice]]]): Self = StObject.set(x, "volumeDevices", value.asInstanceOf[js.Any])
+    inline def setVolumeDevices(value: Input[js.Array[Input[VolumeDevice]]]): Self = StObject.set(x, "volumeDevices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeDevicesUndefined: Self = StObject.set(x, "volumeDevices", js.undefined)
+    inline def setVolumeDevicesUndefined: Self = StObject.set(x, "volumeDevices", js.undefined)
     
-    @scala.inline
-    def setVolumeDevicesVarargs(value: Input[VolumeDevice]*): Self = StObject.set(x, "volumeDevices", js.Array(value :_*))
+    inline def setVolumeDevicesVarargs(value: Input[VolumeDevice]*): Self = StObject.set(x, "volumeDevices", js.Array(value :_*))
     
-    @scala.inline
-    def setVolumeMounts(value: Input[js.Array[Input[VolumeMount]]]): Self = StObject.set(x, "volumeMounts", value.asInstanceOf[js.Any])
+    inline def setVolumeMounts(value: Input[js.Array[Input[VolumeMount]]]): Self = StObject.set(x, "volumeMounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeMountsUndefined: Self = StObject.set(x, "volumeMounts", js.undefined)
+    inline def setVolumeMountsUndefined: Self = StObject.set(x, "volumeMounts", js.undefined)
     
-    @scala.inline
-    def setVolumeMountsVarargs(value: Input[VolumeMount]*): Self = StObject.set(x, "volumeMounts", js.Array(value :_*))
+    inline def setVolumeMountsVarargs(value: Input[VolumeMount]*): Self = StObject.set(x, "volumeMounts", js.Array(value :_*))
     
-    @scala.inline
-    def setWorkingDir(value: Input[String]): Self = StObject.set(x, "workingDir", value.asInstanceOf[js.Any])
+    inline def setWorkingDir(value: Input[String]): Self = StObject.set(x, "workingDir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkingDirUndefined: Self = StObject.set(x, "workingDir", js.undefined)
+    inline def setWorkingDirUndefined: Self = StObject.set(x, "workingDir", js.undefined)
   }
 }

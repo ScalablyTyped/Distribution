@@ -17,20 +17,15 @@ object typesMod {
   trait AltitudeKeys extends StObject
   object AltitudeKeys {
     
-    @scala.inline
-    def `2`: typings.geolib.geolibNumbers.`2` = 2.asInstanceOf[typings.geolib.geolibNumbers.`2`]
+    inline def `2`: typings.geolib.geolibNumbers.`2` = 2.asInstanceOf[typings.geolib.geolibNumbers.`2`]
     
-    @scala.inline
-    def alt: typings.geolib.geolibStrings.alt = "alt".asInstanceOf[typings.geolib.geolibStrings.alt]
+    inline def alt: typings.geolib.geolibStrings.alt = "alt".asInstanceOf[typings.geolib.geolibStrings.alt]
     
-    @scala.inline
-    def altitude: typings.geolib.geolibStrings.altitude = "altitude".asInstanceOf[typings.geolib.geolibStrings.altitude]
+    inline def altitude: typings.geolib.geolibStrings.altitude = "altitude".asInstanceOf[typings.geolib.geolibStrings.altitude]
     
-    @scala.inline
-    def elev: typings.geolib.geolibStrings.elev = "elev".asInstanceOf[typings.geolib.geolibStrings.elev]
+    inline def elev: typings.geolib.geolibStrings.elev = "elev".asInstanceOf[typings.geolib.geolibStrings.elev]
     
-    @scala.inline
-    def elevation: typings.geolib.geolibStrings.elevation = "elevation".asInstanceOf[typings.geolib.geolibStrings.elevation]
+    inline def elevation: typings.geolib.geolibStrings.elevation = "elevation".asInstanceOf[typings.geolib.geolibStrings.elevation]
   }
   
   type GeolibAltitudeInputValue = Double
@@ -52,26 +47,22 @@ object typesMod {
   trait GeolibInputAltitude extends StObject
   object GeolibInputAltitude {
     
-    @scala.inline
-    def `0`(): typings.geolib.anon.`0` = {
+    inline def `0`(): typings.geolib.anon.`0` = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.geolib.anon.`0`]
     }
     
-    @scala.inline
-    def Alt(): typings.geolib.anon.Alt = {
+    inline def Alt(): typings.geolib.anon.Alt = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.geolib.anon.Alt]
     }
     
-    @scala.inline
-    def Elev(): typings.geolib.anon.Elev = {
+    inline def Elev(): typings.geolib.anon.Elev = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.geolib.anon.Elev]
     }
     
-    @scala.inline
-    def Elevation(): typings.geolib.anon.Elevation = {
+    inline def Elevation(): typings.geolib.anon.Elevation = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.geolib.anon.Elevation]
     }
@@ -88,14 +79,12 @@ object typesMod {
   trait GeolibInputLatitude extends StObject
   object GeolibInputLatitude {
     
-    @scala.inline
-    def Lat(lat: GeolibLatitudeInputValue): typings.geolib.anon.Lat = {
+    inline def Lat(lat: GeolibLatitudeInputValue): typings.geolib.anon.Lat = {
       val __obj = js.Dynamic.literal(lat = lat.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.geolib.anon.Lat]
     }
     
-    @scala.inline
-    def LatitudeGeolibLatitudeInputValue(latitude: GeolibLatitudeInputValue): typings.geolib.anon.LatitudeGeolibLatitudeInputValue = {
+    inline def LatitudeGeolibLatitudeInputValue(latitude: GeolibLatitudeInputValue): typings.geolib.anon.LatitudeGeolibLatitudeInputValue = {
       val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.geolib.anon.LatitudeGeolibLatitudeInputValue]
     }
@@ -109,20 +98,17 @@ object typesMod {
   trait GeolibInputLongitude extends StObject
   object GeolibInputLongitude {
     
-    @scala.inline
-    def Lng(lng: GeolibLongitudeInputValue): typings.geolib.anon.Lng = {
+    inline def Lng(lng: GeolibLongitudeInputValue): typings.geolib.anon.Lng = {
       val __obj = js.Dynamic.literal(lng = lng.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.geolib.anon.Lng]
     }
     
-    @scala.inline
-    def Lon(lon: GeolibLongitudeInputValue): typings.geolib.anon.Lon = {
+    inline def Lon(lon: GeolibLongitudeInputValue): typings.geolib.anon.Lon = {
       val __obj = js.Dynamic.literal(lon = lon.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.geolib.anon.Lon]
     }
     
-    @scala.inline
-    def LongitudeGeolibLongitudeInputValue(longitude: GeolibLongitudeInputValue): typings.geolib.anon.LongitudeGeolibLongitudeInputValue = {
+    inline def LongitudeGeolibLongitudeInputValue(longitude: GeolibLongitudeInputValue): typings.geolib.anon.LongitudeGeolibLongitudeInputValue = {
       val __obj = js.Dynamic.literal(longitude = longitude.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.geolib.anon.LongitudeGeolibLongitudeInputValue]
     }
@@ -140,14 +126,11 @@ object typesMod {
   trait LatitudeKeys extends StObject
   object LatitudeKeys {
     
-    @scala.inline
-    def `1`: typings.geolib.geolibNumbers.`1` = 1.asInstanceOf[typings.geolib.geolibNumbers.`1`]
+    inline def `1`: typings.geolib.geolibNumbers.`1` = 1.asInstanceOf[typings.geolib.geolibNumbers.`1`]
     
-    @scala.inline
-    def lat: typings.geolib.geolibStrings.lat = "lat".asInstanceOf[typings.geolib.geolibStrings.lat]
+    inline def lat: typings.geolib.geolibStrings.lat = "lat".asInstanceOf[typings.geolib.geolibStrings.lat]
     
-    @scala.inline
-    def latitude: typings.geolib.geolibStrings.latitude = "latitude".asInstanceOf[typings.geolib.geolibStrings.latitude]
+    inline def latitude: typings.geolib.geolibStrings.latitude = "latitude".asInstanceOf[typings.geolib.geolibStrings.latitude]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -159,17 +142,13 @@ object typesMod {
   trait LongitudeKeys extends StObject
   object LongitudeKeys {
     
-    @scala.inline
-    def `0`: typings.geolib.geolibNumbers.`0` = 0.asInstanceOf[typings.geolib.geolibNumbers.`0`]
+    inline def `0`: typings.geolib.geolibNumbers.`0` = 0.asInstanceOf[typings.geolib.geolibNumbers.`0`]
     
-    @scala.inline
-    def lng: typings.geolib.geolibStrings.lng = "lng".asInstanceOf[typings.geolib.geolibStrings.lng]
+    inline def lng: typings.geolib.geolibStrings.lng = "lng".asInstanceOf[typings.geolib.geolibStrings.lng]
     
-    @scala.inline
-    def lon: typings.geolib.geolibStrings.lon = "lon".asInstanceOf[typings.geolib.geolibStrings.lon]
+    inline def lon: typings.geolib.geolibStrings.lon = "lon".asInstanceOf[typings.geolib.geolibStrings.lon]
     
-    @scala.inline
-    def longitude: typings.geolib.geolibStrings.longitude = "longitude".asInstanceOf[typings.geolib.geolibStrings.longitude]
+    inline def longitude: typings.geolib.geolibStrings.longitude = "longitude".asInstanceOf[typings.geolib.geolibStrings.longitude]
   }
   
   type Timestamp = Double

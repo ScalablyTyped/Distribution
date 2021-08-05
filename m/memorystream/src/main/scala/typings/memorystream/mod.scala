@@ -37,29 +37,22 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(bufoverflow: Double, frequence: Double, maxbufsize: Double, readable: Boolean, writeable: Boolean): Options = {
+    inline def apply(bufoverflow: Double, frequence: Double, maxbufsize: Double, readable: Boolean, writeable: Boolean): Options = {
       val __obj = js.Dynamic.literal(bufoverflow = bufoverflow.asInstanceOf[js.Any], frequence = frequence.asInstanceOf[js.Any], maxbufsize = maxbufsize.asInstanceOf[js.Any], readable = readable.asInstanceOf[js.Any], writeable = writeable.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBufoverflow(value: Double): Self = StObject.set(x, "bufoverflow", value.asInstanceOf[js.Any])
+      inline def setBufoverflow(value: Double): Self = StObject.set(x, "bufoverflow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrequence(value: Double): Self = StObject.set(x, "frequence", value.asInstanceOf[js.Any])
+      inline def setFrequence(value: Double): Self = StObject.set(x, "frequence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxbufsize(value: Double): Self = StObject.set(x, "maxbufsize", value.asInstanceOf[js.Any])
+      inline def setMaxbufsize(value: Double): Self = StObject.set(x, "maxbufsize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadable(value: Boolean): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
+      inline def setReadable(value: Boolean): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteable(value: Boolean): Self = StObject.set(x, "writeable", value.asInstanceOf[js.Any])
+      inline def setWriteable(value: Boolean): Self = StObject.set(x, "writeable", value.asInstanceOf[js.Any])
     }
   }
 }

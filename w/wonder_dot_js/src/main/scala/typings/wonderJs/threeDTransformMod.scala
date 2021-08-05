@@ -38,7 +38,7 @@ object threeDTransformMod {
     
     val normalMatrix: Matrix3 = js.native
     
-    @JSName("p_parent")
+    /* protected */ @JSName("p_parent")
     var p_parent_ThreeDTransform: ThreeDTransform = js.native
     
     var position: Vector3 = js.native
@@ -83,7 +83,6 @@ object threeDTransformMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(): ThreeDTransform = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ThreeDTransform]
+    inline def create(): ThreeDTransform = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ThreeDTransform]
   }
 }

@@ -33,8 +33,7 @@ trait GetEC2RecommendationProjectedMetricsRequest extends StObject {
 }
 object GetEC2RecommendationProjectedMetricsRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     endTime: Timestamp,
     instanceArn: InstanceArn,
     period: Period,
@@ -45,22 +44,16 @@ object GetEC2RecommendationProjectedMetricsRequest {
     __obj.asInstanceOf[GetEC2RecommendationProjectedMetricsRequest]
   }
   
-  @scala.inline
-  implicit class GetEC2RecommendationProjectedMetricsRequestMutableBuilder[Self <: GetEC2RecommendationProjectedMetricsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetEC2RecommendationProjectedMetricsRequest](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceArn(value: InstanceArn): Self = StObject.set(x, "instanceArn", value.asInstanceOf[js.Any])
+    inline def setInstanceArn(value: InstanceArn): Self = StObject.set(x, "instanceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStat(value: MetricStatistic): Self = StObject.set(x, "stat", value.asInstanceOf[js.Any])
+    inline def setStat(value: MetricStatistic): Self = StObject.set(x, "stat", value.asInstanceOf[js.Any])
   }
 }

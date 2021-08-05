@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "flexslider"
-version := "2.7-dt-20201001Z-9b7dde"
+version := "2.7-dt-20201001Z-b49eb3"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

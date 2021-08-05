@@ -16,19 +16,15 @@ trait CustomPropertyButton
 }
 object CustomPropertyButton {
   
-  @scala.inline
-  def apply(action: VisualizationOptions => Unit): CustomPropertyButton = {
+  inline def apply(action: VisualizationOptions => Unit): CustomPropertyButton = {
     val __obj = js.Dynamic.literal(action = js.Any.fromFunction1(action), component = "button")
     __obj.asInstanceOf[CustomPropertyButton]
   }
   
-  @scala.inline
-  implicit class CustomPropertyButtonMutableBuilder[Self <: CustomPropertyButton] (val x: Self) extends AnyVal {
+  extension [Self <: CustomPropertyButton](x: Self) {
     
-    @scala.inline
-    def setAction(value: VisualizationOptions => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
+    inline def setAction(value: VisualizationOptions => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setComponent(value: button): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: button): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
   }
 }

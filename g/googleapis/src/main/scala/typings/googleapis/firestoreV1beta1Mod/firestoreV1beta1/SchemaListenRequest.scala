@@ -27,31 +27,23 @@ trait SchemaListenRequest extends StObject {
 }
 object SchemaListenRequest {
   
-  @scala.inline
-  def apply(): SchemaListenRequest = {
+  inline def apply(): SchemaListenRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListenRequest]
   }
   
-  @scala.inline
-  implicit class SchemaListenRequestMutableBuilder[Self <: SchemaListenRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListenRequest](x: Self) {
     
-    @scala.inline
-    def setAddTarget(value: SchemaTarget): Self = StObject.set(x, "addTarget", value.asInstanceOf[js.Any])
+    inline def setAddTarget(value: SchemaTarget): Self = StObject.set(x, "addTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddTargetUndefined: Self = StObject.set(x, "addTarget", js.undefined)
+    inline def setAddTargetUndefined: Self = StObject.set(x, "addTarget", js.undefined)
     
-    @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setRemoveTarget(value: Double): Self = StObject.set(x, "removeTarget", value.asInstanceOf[js.Any])
+    inline def setRemoveTarget(value: Double): Self = StObject.set(x, "removeTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveTargetUndefined: Self = StObject.set(x, "removeTarget", js.undefined)
+    inline def setRemoveTargetUndefined: Self = StObject.set(x, "removeTarget", js.undefined)
   }
 }

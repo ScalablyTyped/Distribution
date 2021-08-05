@@ -19,8 +19,7 @@ object mappingMod {
     /* updateResult */ js.Function3[/* source */ js.Any, /* target */ js.Any, /* index */ Double, Unit], 
     Mapping[js.Any, js.Any]
   ] = js.native
-  @scala.inline
-  def createMapping_=(
+  inline def createMapping_=(
     x: js.Function3[
       /* getSourceKey */ js.Function1[/* source */ js.Any, String | Double], 
       /* createResult */ js.Function2[/* source */ js.Any, /* index */ Double, js.Any], 

@@ -35,6 +35,5 @@ object ModelArray {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def from[T](arr: js.Array[Model]): ModelArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(arr.asInstanceOf[js.Any]).asInstanceOf[ModelArray[T]]
+  inline def from[T](arr: js.Array[Model]): ModelArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(arr.asInstanceOf[js.Any]).asInstanceOf[ModelArray[T]]
 }

@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdExportFormat extends StObject
 object WdExportFormat {
   
-  @scala.inline
-  def wdExportFormatPDF: `17` = 17.asInstanceOf[`17`]
+  inline def wdExportFormatPDF: `17` = 17.asInstanceOf[`17`]
   
-  @scala.inline
-  def wdExportFormatXPS: `18` = 18.asInstanceOf[`18`]
+  inline def wdExportFormatXPS: `18` = 18.asInstanceOf[`18`]
 }

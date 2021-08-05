@@ -33,40 +33,29 @@ trait VirtualMFADevice extends StObject {
 }
 object VirtualMFADevice {
   
-  @scala.inline
-  def apply(SerialNumber: serialNumberType): VirtualMFADevice = {
+  inline def apply(SerialNumber: serialNumberType): VirtualMFADevice = {
     val __obj = js.Dynamic.literal(SerialNumber = SerialNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualMFADevice]
   }
   
-  @scala.inline
-  implicit class VirtualMFADeviceMutableBuilder[Self <: VirtualMFADevice] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualMFADevice](x: Self) {
     
-    @scala.inline
-    def setBase32StringSeed(value: BootstrapDatum): Self = StObject.set(x, "Base32StringSeed", value.asInstanceOf[js.Any])
+    inline def setBase32StringSeed(value: BootstrapDatum): Self = StObject.set(x, "Base32StringSeed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBase32StringSeedUndefined: Self = StObject.set(x, "Base32StringSeed", js.undefined)
+    inline def setBase32StringSeedUndefined: Self = StObject.set(x, "Base32StringSeed", js.undefined)
     
-    @scala.inline
-    def setEnableDate(value: dateType): Self = StObject.set(x, "EnableDate", value.asInstanceOf[js.Any])
+    inline def setEnableDate(value: dateType): Self = StObject.set(x, "EnableDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableDateUndefined: Self = StObject.set(x, "EnableDate", js.undefined)
+    inline def setEnableDateUndefined: Self = StObject.set(x, "EnableDate", js.undefined)
     
-    @scala.inline
-    def setQRCodePNG(value: BootstrapDatum): Self = StObject.set(x, "QRCodePNG", value.asInstanceOf[js.Any])
+    inline def setQRCodePNG(value: BootstrapDatum): Self = StObject.set(x, "QRCodePNG", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQRCodePNGUndefined: Self = StObject.set(x, "QRCodePNG", js.undefined)
+    inline def setQRCodePNGUndefined: Self = StObject.set(x, "QRCodePNG", js.undefined)
     
-    @scala.inline
-    def setSerialNumber(value: serialNumberType): Self = StObject.set(x, "SerialNumber", value.asInstanceOf[js.Any])
+    inline def setSerialNumber(value: serialNumberType): Self = StObject.set(x, "SerialNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: User): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
+    inline def setUser(value: User): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "User", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "User", js.undefined)
   }
 }

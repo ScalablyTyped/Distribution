@@ -24,8 +24,7 @@ trait WorkspaceInstance
 }
 object WorkspaceInstance {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activities: WorkspaceActivityResource,
     delete: RestMethod,
     events: WorkspaceEventResource,
@@ -42,28 +41,20 @@ object WorkspaceInstance {
     __obj.asInstanceOf[WorkspaceInstance]
   }
   
-  @scala.inline
-  implicit class WorkspaceInstanceMutableBuilder[Self <: WorkspaceInstance] (val x: Self) extends AnyVal {
+  extension [Self <: WorkspaceInstance](x: Self) {
     
-    @scala.inline
-    def setActivities(value: WorkspaceActivityResource): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
+    inline def setActivities(value: WorkspaceActivityResource): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvents(value: WorkspaceEventResource): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: WorkspaceEventResource): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatistics(value: WorkspaceInstanceStatisticResource): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
+    inline def setStatistics(value: WorkspaceInstanceStatisticResource): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskQueues(value: WorkspaceTaskQueueResource): Self = StObject.set(x, "taskQueues", value.asInstanceOf[js.Any])
+    inline def setTaskQueues(value: WorkspaceTaskQueueResource): Self = StObject.set(x, "taskQueues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTasks(value: WorkspaceTaskResource): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
+    inline def setTasks(value: WorkspaceTaskResource): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkers(value: WorkspaceWorkerResource): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
+    inline def setWorkers(value: WorkspaceWorkerResource): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkflows(value: WorkspaceWorkflowResource): Self = StObject.set(x, "workflows", value.asInstanceOf[js.Any])
+    inline def setWorkflows(value: WorkspaceWorkflowResource): Self = StObject.set(x, "workflows", value.asInstanceOf[js.Any])
   }
 }

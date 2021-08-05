@@ -40,37 +40,27 @@ trait FieldColumnConfigProperties
 }
 object FieldColumnConfigProperties {
   
-  @scala.inline
-  def apply(): FieldColumnConfigProperties = {
+  inline def apply(): FieldColumnConfigProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FieldColumnConfigProperties]
   }
   
-  @scala.inline
-  implicit class FieldColumnConfigPropertiesMutableBuilder[Self <: FieldColumnConfigProperties] (val x: Self) extends AnyVal {
+  extension [Self <: FieldColumnConfigProperties](x: Self) {
     
-    @scala.inline
-    def setDirection(value: asc_ | desc_ | js.Any): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: asc_ | desc_ | js.Any): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    @scala.inline
-    def setMenuConfig(value: ButtonMenuConfig): Self = StObject.set(x, "menuConfig", value.asInstanceOf[js.Any])
+    inline def setMenuConfig(value: ButtonMenuConfig): Self = StObject.set(x, "menuConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuConfigUndefined: Self = StObject.set(x, "menuConfig", js.undefined)
+    inline def setMenuConfigUndefined: Self = StObject.set(x, "menuConfig", js.undefined)
     
-    @scala.inline
-    def setSortable(value: Boolean): Self = StObject.set(x, "sortable", value.asInstanceOf[js.Any])
+    inline def setSortable(value: Boolean): Self = StObject.set(x, "sortable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortableUndefined: Self = StObject.set(x, "sortable", js.undefined)
+    inline def setSortableUndefined: Self = StObject.set(x, "sortable", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

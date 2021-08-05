@@ -35,8 +35,7 @@ trait EventPropTypeInterface[TTarget, TEventKey] extends StObject {
 }
 object EventPropTypeInterface {
   
-  @scala.inline
-  def apply[TTarget, TEventKey](
+  inline def apply[TTarget, TEventKey](
     eventHandlers: StringDictionary[
       js.Function1[
         /* event */ SyntheticEvent[js.Any, Event], 
@@ -49,17 +48,13 @@ object EventPropTypeInterface {
     __obj.asInstanceOf[EventPropTypeInterface[TTarget, TEventKey]]
   }
   
-  @scala.inline
-  implicit class EventPropTypeInterfaceMutableBuilder[Self <: EventPropTypeInterface[?, ?], TTarget, TEventKey] (val x: Self & (EventPropTypeInterface[TTarget, TEventKey])) extends AnyVal {
+  extension [Self <: EventPropTypeInterface[?, ?], TTarget, TEventKey](x: Self & (EventPropTypeInterface[TTarget, TEventKey])) {
     
-    @scala.inline
-    def setChildName(value: String): Self = StObject.set(x, "childName", value.asInstanceOf[js.Any])
+    inline def setChildName(value: String): Self = StObject.set(x, "childName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildNameUndefined: Self = StObject.set(x, "childName", js.undefined)
+    inline def setChildNameUndefined: Self = StObject.set(x, "childName", js.undefined)
     
-    @scala.inline
-    def setEventHandlers(
+    inline def setEventHandlers(
       value: StringDictionary[
           js.Function1[
             /* event */ SyntheticEvent[js.Any, Event], 
@@ -68,13 +63,10 @@ object EventPropTypeInterface {
         ]
     ): Self = StObject.set(x, "eventHandlers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventKey(value: TEventKey): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
+    inline def setEventKey(value: TEventKey): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventKeyUndefined: Self = StObject.set(x, "eventKey", js.undefined)
+    inline def setEventKeyUndefined: Self = StObject.set(x, "eventKey", js.undefined)
     
-    @scala.inline
-    def setTarget(value: TTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: TTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

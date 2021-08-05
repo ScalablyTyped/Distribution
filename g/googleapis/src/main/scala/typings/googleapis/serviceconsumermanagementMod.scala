@@ -40,8 +40,7 @@ object serviceconsumermanagementMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         Serviceconsumermanagement
       ] = js.native
-    @scala.inline
-    def v1_=(
+    inline def v1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -83,8 +82,7 @@ object serviceconsumermanagementMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -128,9 +126,7 @@ object serviceconsumermanagementMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def serviceconsumermanagement(options: Options): Serviceconsumermanagement = ^.asInstanceOf[js.Dynamic].applyDynamic("serviceconsumermanagement")(options.asInstanceOf[js.Any]).asInstanceOf[Serviceconsumermanagement]
+  inline def serviceconsumermanagement(options: Options): Serviceconsumermanagement = ^.asInstanceOf[js.Dynamic].applyDynamic("serviceconsumermanagement")(options.asInstanceOf[js.Any]).asInstanceOf[Serviceconsumermanagement]
   
-  @scala.inline
-  def serviceconsumermanagement_v1(version: v1): Serviceconsumermanagement = ^.asInstanceOf[js.Dynamic].applyDynamic("serviceconsumermanagement")(version.asInstanceOf[js.Any]).asInstanceOf[Serviceconsumermanagement]
+  inline def serviceconsumermanagement_v1(version: v1): Serviceconsumermanagement = ^.asInstanceOf[js.Dynamic].applyDynamic("serviceconsumermanagement")(version.asInstanceOf[js.Any]).asInstanceOf[Serviceconsumermanagement]
 }

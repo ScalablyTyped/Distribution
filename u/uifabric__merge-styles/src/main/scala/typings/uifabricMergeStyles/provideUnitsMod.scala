@@ -10,6 +10,5 @@ object provideUnitsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def provideUnits(rulePairs: js.Array[String | Double], index: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("provideUnits")(rulePairs.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def provideUnits(rulePairs: js.Array[String | Double], index: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("provideUnits")(rulePairs.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

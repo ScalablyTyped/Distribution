@@ -91,91 +91,67 @@ trait RouteOptionsValidate extends StObject {
 }
 object RouteOptionsValidate {
   
-  @scala.inline
-  def apply(): RouteOptionsValidate = {
+  inline def apply(): RouteOptionsValidate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RouteOptionsValidate]
   }
   
-  @scala.inline
-  implicit class RouteOptionsValidateMutableBuilder[Self <: RouteOptionsValidate] (val x: Self) extends AnyVal {
+  extension [Self <: RouteOptionsValidate](x: Self) {
     
-    @scala.inline
-    def setErrorFields(value: js.Object): Self = StObject.set(x, "errorFields", value.asInstanceOf[js.Any])
+    inline def setErrorFields(value: js.Object): Self = StObject.set(x, "errorFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorFieldsUndefined: Self = StObject.set(x, "errorFields", js.undefined)
+    inline def setErrorFieldsUndefined: Self = StObject.set(x, "errorFields", js.undefined)
     
-    @scala.inline
-    def setFailAction(value: FailAction): Self = StObject.set(x, "failAction", value.asInstanceOf[js.Any])
+    inline def setFailAction(value: FailAction): Self = StObject.set(x, "failAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailActionFunction3(
+    inline def setFailActionFunction3(
       value: (/* request */ Request, /* h */ ResponseToolkit, /* err */ js.UndefOr[Error]) => ReturnValue
     ): Self = StObject.set(x, "failAction", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setFailActionUndefined: Self = StObject.set(x, "failAction", js.undefined)
+    inline def setFailActionUndefined: Self = StObject.set(x, "failAction", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: RouteOptionsResponseSchema): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RouteOptionsResponseSchema): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersFunction2(
+    inline def setHeadersFunction2(
       value: (/* value */ js.Object | Buffer | String, /* options */ ValidationOptions) => js.Promise[js.Any]
     ): Self = StObject.set(x, "headers", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setOptions(value: ValidationOptions | js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: ValidationOptions | js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setParams(value: RouteOptionsResponseSchema): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: RouteOptionsResponseSchema): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsFunction2(
+    inline def setParamsFunction2(
       value: (/* value */ js.Object | Buffer | String, /* options */ ValidationOptions) => js.Promise[js.Any]
     ): Self = StObject.set(x, "params", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    @scala.inline
-    def setPayload(value: RouteOptionsResponseSchema): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: RouteOptionsResponseSchema): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadFunction2(
+    inline def setPayloadFunction2(
       value: (/* value */ js.Object | Buffer | String, /* options */ ValidationOptions) => js.Promise[js.Any]
     ): Self = StObject.set(x, "payload", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
-    @scala.inline
-    def setQuery(value: RouteOptionsResponseSchema): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: RouteOptionsResponseSchema): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryFunction2(
+    inline def setQueryFunction2(
       value: (/* value */ js.Object | Buffer | String, /* options */ ValidationOptions) => js.Promise[js.Any]
     ): Self = StObject.set(x, "query", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setState(value: RouteOptionsResponseSchema): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: RouteOptionsResponseSchema): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateFunction2(
+    inline def setStateFunction2(
       value: (/* value */ js.Object | Buffer | String, /* options */ ValidationOptions) => js.Promise[js.Any]
     ): Self = StObject.set(x, "state", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

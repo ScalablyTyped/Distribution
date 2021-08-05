@@ -98,7 +98,7 @@ object channelMod {
     /**
       * @private
       */
-    var _onMessageAdded: js.Any = js.native
+    /* private */ var _onMessageAdded: js.Any = js.native
     
     /**
       * Set channel status
@@ -167,7 +167,7 @@ object channelMod {
     
     def attributes: js.Object = js.native
     
-    var channelState: js.Any = js.native
+    /* private */ var channelState: js.Any = js.native
     
     def createdBy: String = js.native
     
@@ -187,11 +187,11 @@ object channelMod {
       */
     def delete(): js.Promise[Channel] = js.native
     
-    var entity: js.Any = js.native
+    /* private */ var entity: js.Any = js.native
     
-    var entityName: js.Any = js.native
+    /* private */ var entityName: js.Any = js.native
     
-    var entityPromise: js.Any = js.native
+    /* private */ var entityPromise: js.Any = js.native
     
     def friendlyName: String = js.native
     
@@ -311,11 +311,11 @@ object channelMod {
       */
     def leave(): js.Promise[Channel] = js.native
     
-    var members: js.Any = js.native
+    /* private */ var members: js.Any = js.native
     
-    var membersEntity: js.Any = js.native
+    /* private */ var membersEntity: js.Any = js.native
     
-    var messagesEntity: js.Any = js.native
+    /* private */ var messagesEntity: js.Any = js.native
     
     def notificationLevel: NotificationLevel = js.native
     
@@ -340,7 +340,7 @@ object channelMod {
     def sendMessage(message: SendMediaOptions): js.Promise[Double] = js.native
     def sendMessage(message: SendMediaOptions, messageAttributes: js.Any): js.Promise[Double] = js.native
     
-    var services: js.Any = js.native
+    /* private */ var services: js.Any = js.native
     
     /**
       * Set last consumed Channel's Message index to last known Message's index in this Channel.
@@ -367,7 +367,7 @@ object channelMod {
     
     def status: Status = js.native
     
-    var statusSource: js.Any = js.native
+    /* private */ var statusSource: js.Any = js.native
     
     def `type`: Type = js.native
     
@@ -419,8 +419,7 @@ object channelMod {
     @JSImport("twilio-chat/lib/channel", "Channel.preprocessUpdate")
     @js.native
     def preprocessUpdate: js.Any = js.native
-    @scala.inline
-    def preprocessUpdate_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("preprocessUpdate")(x.asInstanceOf[js.Any])
+    inline def preprocessUpdate_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("preprocessUpdate")(x.asInstanceOf[js.Any])
     
     trait LastMessage extends StObject {
       
@@ -430,26 +429,20 @@ object channelMod {
     }
     object LastMessage {
       
-      @scala.inline
-      def apply(): LastMessage = {
+      inline def apply(): LastMessage = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[LastMessage]
       }
       
-      @scala.inline
-      implicit class LastMessageMutableBuilder[Self <: LastMessage] (val x: Self) extends AnyVal {
+      extension [Self <: LastMessage](x: Self) {
         
-        @scala.inline
-        def setDateCreated(value: Date): Self = StObject.set(x, "dateCreated", value.asInstanceOf[js.Any])
+        inline def setDateCreated(value: Date): Self = StObject.set(x, "dateCreated", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDateCreatedUndefined: Self = StObject.set(x, "dateCreated", js.undefined)
+        inline def setDateCreatedUndefined: Self = StObject.set(x, "dateCreated", js.undefined)
         
-        @scala.inline
-        def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+        inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+        inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       }
     }
     
@@ -460,11 +453,9 @@ object channelMod {
     trait NotificationLevel extends StObject
     object NotificationLevel {
       
-      @scala.inline
-      def default: typings.twilioChat.twilioChatStrings.default = "default".asInstanceOf[typings.twilioChat.twilioChatStrings.default]
+      inline def default: typings.twilioChat.twilioChatStrings.default = "default".asInstanceOf[typings.twilioChat.twilioChatStrings.default]
       
-      @scala.inline
-      def muted: typings.twilioChat.twilioChatStrings.muted = "muted".asInstanceOf[typings.twilioChat.twilioChatStrings.muted]
+      inline def muted: typings.twilioChat.twilioChatStrings.muted = "muted".asInstanceOf[typings.twilioChat.twilioChatStrings.muted]
     }
     
     trait SendMediaOptions extends StObject {
@@ -475,20 +466,16 @@ object channelMod {
     }
     object SendMediaOptions {
       
-      @scala.inline
-      def apply(contentType: String, media: String | Buffer): SendMediaOptions = {
+      inline def apply(contentType: String, media: String | Buffer): SendMediaOptions = {
         val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], media = media.asInstanceOf[js.Any])
         __obj.asInstanceOf[SendMediaOptions]
       }
       
-      @scala.inline
-      implicit class SendMediaOptionsMutableBuilder[Self <: SendMediaOptions] (val x: Self) extends AnyVal {
+      extension [Self <: SendMediaOptions](x: Self) {
         
-        @scala.inline
-        def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+        inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMedia(value: String | Buffer): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+        inline def setMedia(value: String | Buffer): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
       }
     }
     
@@ -503,17 +490,13 @@ object channelMod {
     trait Status extends StObject
     object Status {
       
-      @scala.inline
-      def invited: typings.twilioChat.twilioChatStrings.invited = "invited".asInstanceOf[typings.twilioChat.twilioChatStrings.invited]
+      inline def invited: typings.twilioChat.twilioChatStrings.invited = "invited".asInstanceOf[typings.twilioChat.twilioChatStrings.invited]
       
-      @scala.inline
-      def joined: typings.twilioChat.twilioChatStrings.joined = "joined".asInstanceOf[typings.twilioChat.twilioChatStrings.joined]
+      inline def joined: typings.twilioChat.twilioChatStrings.joined = "joined".asInstanceOf[typings.twilioChat.twilioChatStrings.joined]
       
-      @scala.inline
-      def notParticipating: typings.twilioChat.twilioChatStrings.notParticipating = "notParticipating".asInstanceOf[typings.twilioChat.twilioChatStrings.notParticipating]
+      inline def notParticipating: typings.twilioChat.twilioChatStrings.notParticipating = "notParticipating".asInstanceOf[typings.twilioChat.twilioChatStrings.notParticipating]
       
-      @scala.inline
-      def unknown: typings.twilioChat.twilioChatStrings.unknown = "unknown".asInstanceOf[typings.twilioChat.twilioChatStrings.unknown]
+      inline def unknown: typings.twilioChat.twilioChatStrings.unknown = "unknown".asInstanceOf[typings.twilioChat.twilioChatStrings.unknown]
     }
     
     /* Rewritten from type alias, can be one of: 
@@ -523,11 +506,9 @@ object channelMod {
     trait Type extends StObject
     object Type {
       
-      @scala.inline
-      def `private`: typings.twilioChat.twilioChatStrings.`private` = "private".asInstanceOf[typings.twilioChat.twilioChatStrings.`private`]
+      inline def `private`: typings.twilioChat.twilioChatStrings.`private` = "private".asInstanceOf[typings.twilioChat.twilioChatStrings.`private`]
       
-      @scala.inline
-      def public: typings.twilioChat.twilioChatStrings.public = "public".asInstanceOf[typings.twilioChat.twilioChatStrings.public]
+      inline def public: typings.twilioChat.twilioChatStrings.public = "public".asInstanceOf[typings.twilioChat.twilioChatStrings.public]
     }
     
     /* Rewritten from type alias, can be one of: 
@@ -546,38 +527,27 @@ object channelMod {
     trait UpdateReason extends StObject
     object UpdateReason {
       
-      @scala.inline
-      def attributes: typings.twilioChat.twilioChatStrings.attributes = "attributes".asInstanceOf[typings.twilioChat.twilioChatStrings.attributes]
+      inline def attributes: typings.twilioChat.twilioChatStrings.attributes = "attributes".asInstanceOf[typings.twilioChat.twilioChatStrings.attributes]
       
-      @scala.inline
-      def createdBy: typings.twilioChat.twilioChatStrings.createdBy = "createdBy".asInstanceOf[typings.twilioChat.twilioChatStrings.createdBy]
+      inline def createdBy: typings.twilioChat.twilioChatStrings.createdBy = "createdBy".asInstanceOf[typings.twilioChat.twilioChatStrings.createdBy]
       
-      @scala.inline
-      def dateCreated: typings.twilioChat.twilioChatStrings.dateCreated = "dateCreated".asInstanceOf[typings.twilioChat.twilioChatStrings.dateCreated]
+      inline def dateCreated: typings.twilioChat.twilioChatStrings.dateCreated = "dateCreated".asInstanceOf[typings.twilioChat.twilioChatStrings.dateCreated]
       
-      @scala.inline
-      def dateUpdated: typings.twilioChat.twilioChatStrings.dateUpdated = "dateUpdated".asInstanceOf[typings.twilioChat.twilioChatStrings.dateUpdated]
+      inline def dateUpdated: typings.twilioChat.twilioChatStrings.dateUpdated = "dateUpdated".asInstanceOf[typings.twilioChat.twilioChatStrings.dateUpdated]
       
-      @scala.inline
-      def friendlyName: typings.twilioChat.twilioChatStrings.friendlyName = "friendlyName".asInstanceOf[typings.twilioChat.twilioChatStrings.friendlyName]
+      inline def friendlyName: typings.twilioChat.twilioChatStrings.friendlyName = "friendlyName".asInstanceOf[typings.twilioChat.twilioChatStrings.friendlyName]
       
-      @scala.inline
-      def lastConsumedMessageIndex: typings.twilioChat.twilioChatStrings.lastConsumedMessageIndex = "lastConsumedMessageIndex".asInstanceOf[typings.twilioChat.twilioChatStrings.lastConsumedMessageIndex]
+      inline def lastConsumedMessageIndex: typings.twilioChat.twilioChatStrings.lastConsumedMessageIndex = "lastConsumedMessageIndex".asInstanceOf[typings.twilioChat.twilioChatStrings.lastConsumedMessageIndex]
       
-      @scala.inline
-      def lastMessage: typings.twilioChat.twilioChatStrings.lastMessage = "lastMessage".asInstanceOf[typings.twilioChat.twilioChatStrings.lastMessage]
+      inline def lastMessage: typings.twilioChat.twilioChatStrings.lastMessage = "lastMessage".asInstanceOf[typings.twilioChat.twilioChatStrings.lastMessage]
       
-      @scala.inline
-      def notificationLevel: typings.twilioChat.twilioChatStrings.notificationLevel = "notificationLevel".asInstanceOf[typings.twilioChat.twilioChatStrings.notificationLevel]
+      inline def notificationLevel: typings.twilioChat.twilioChatStrings.notificationLevel = "notificationLevel".asInstanceOf[typings.twilioChat.twilioChatStrings.notificationLevel]
       
-      @scala.inline
-      def state: typings.twilioChat.twilioChatStrings.state = "state".asInstanceOf[typings.twilioChat.twilioChatStrings.state]
+      inline def state: typings.twilioChat.twilioChatStrings.state = "state".asInstanceOf[typings.twilioChat.twilioChatStrings.state]
       
-      @scala.inline
-      def status: typings.twilioChat.twilioChatStrings.status = "status".asInstanceOf[typings.twilioChat.twilioChatStrings.status]
+      inline def status: typings.twilioChat.twilioChatStrings.status = "status".asInstanceOf[typings.twilioChat.twilioChatStrings.status]
       
-      @scala.inline
-      def uniqueName: typings.twilioChat.twilioChatStrings.uniqueName = "uniqueName".asInstanceOf[typings.twilioChat.twilioChatStrings.uniqueName]
+      inline def uniqueName: typings.twilioChat.twilioChatStrings.uniqueName = "uniqueName".asInstanceOf[typings.twilioChat.twilioChatStrings.uniqueName]
     }
     
     trait UpdatedEventArgs extends StObject {
@@ -588,23 +558,18 @@ object channelMod {
     }
     object UpdatedEventArgs {
       
-      @scala.inline
-      def apply(channel: Channel, updateReasons: js.Array[UpdateReason]): UpdatedEventArgs = {
+      inline def apply(channel: Channel, updateReasons: js.Array[UpdateReason]): UpdatedEventArgs = {
         val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], updateReasons = updateReasons.asInstanceOf[js.Any])
         __obj.asInstanceOf[UpdatedEventArgs]
       }
       
-      @scala.inline
-      implicit class UpdatedEventArgsMutableBuilder[Self <: UpdatedEventArgs] (val x: Self) extends AnyVal {
+      extension [Self <: UpdatedEventArgs](x: Self) {
         
-        @scala.inline
-        def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+        inline def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpdateReasons(value: js.Array[UpdateReason]): Self = StObject.set(x, "updateReasons", value.asInstanceOf[js.Any])
+        inline def setUpdateReasons(value: js.Array[UpdateReason]): Self = StObject.set(x, "updateReasons", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpdateReasonsVarargs(value: UpdateReason*): Self = StObject.set(x, "updateReasons", js.Array(value :_*))
+        inline def setUpdateReasonsVarargs(value: UpdateReason*): Self = StObject.set(x, "updateReasons", js.Array(value :_*))
       }
     }
   }
@@ -635,8 +600,7 @@ object channelMod {
   }
   object ChannelDescriptor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attributes: js.Any,
       channel: String,
       dateCreated: js.Any,
@@ -652,47 +616,33 @@ object channelMod {
       __obj.asInstanceOf[ChannelDescriptor]
     }
     
-    @scala.inline
-    implicit class ChannelDescriptorMutableBuilder[Self <: ChannelDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: ChannelDescriptor](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedBy(value: String): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
+      inline def setCreatedBy(value: String): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedByUndefined: Self = StObject.set(x, "createdBy", js.undefined)
+      inline def setCreatedByUndefined: Self = StObject.set(x, "createdBy", js.undefined)
       
-      @scala.inline
-      def setDateCreated(value: js.Any): Self = StObject.set(x, "dateCreated", value.asInstanceOf[js.Any])
+      inline def setDateCreated(value: js.Any): Self = StObject.set(x, "dateCreated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateUpdated(value: js.Any): Self = StObject.set(x, "dateUpdated", value.asInstanceOf[js.Any])
+      inline def setDateUpdated(value: js.Any): Self = StObject.set(x, "dateUpdated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntityName(value: String): Self = StObject.set(x, "entityName", value.asInstanceOf[js.Any])
+      inline def setEntityName(value: String): Self = StObject.set(x, "entityName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
+      inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastConsumedMessageIndex(value: Double): Self = StObject.set(x, "lastConsumedMessageIndex", value.asInstanceOf[js.Any])
+      inline def setLastConsumedMessageIndex(value: Double): Self = StObject.set(x, "lastConsumedMessageIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotificationLevel(value: NotificationLevel): Self = StObject.set(x, "notificationLevel", value.asInstanceOf[js.Any])
+      inline def setNotificationLevel(value: NotificationLevel): Self = StObject.set(x, "notificationLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotificationLevelUndefined: Self = StObject.set(x, "notificationLevel", js.undefined)
+      inline def setNotificationLevelUndefined: Self = StObject.set(x, "notificationLevel", js.undefined)
       
-      @scala.inline
-      def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
+      inline def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -714,8 +664,7 @@ object channelMod {
   }
   object ChannelServices {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       consumptionHorizon: ConsumptionHorizon,
       mcsClient: McsClient,
       network: Network,
@@ -728,29 +677,21 @@ object channelMod {
       __obj.asInstanceOf[ChannelServices]
     }
     
-    @scala.inline
-    implicit class ChannelServicesMutableBuilder[Self <: ChannelServices] (val x: Self) extends AnyVal {
+    extension [Self <: ChannelServices](x: Self) {
       
-      @scala.inline
-      def setConsumptionHorizon(value: ConsumptionHorizon): Self = StObject.set(x, "consumptionHorizon", value.asInstanceOf[js.Any])
+      inline def setConsumptionHorizon(value: ConsumptionHorizon): Self = StObject.set(x, "consumptionHorizon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMcsClient(value: McsClient): Self = StObject.set(x, "mcsClient", value.asInstanceOf[js.Any])
+      inline def setMcsClient(value: McsClient): Self = StObject.set(x, "mcsClient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetwork(value: Network): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+      inline def setNetwork(value: Network): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+      inline def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyncClient(value: SyncClient): Self = StObject.set(x, "syncClient", value.asInstanceOf[js.Any])
+      inline def setSyncClient(value: SyncClient): Self = StObject.set(x, "syncClient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypingIndicator(value: TypingIndicator): Self = StObject.set(x, "typingIndicator", value.asInstanceOf[js.Any])
+      inline def setTypingIndicator(value: TypingIndicator): Self = StObject.set(x, "typingIndicator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsers(value: Users): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+      inline def setUsers(value: Users): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -28,43 +28,31 @@ trait DescribeInstanceInformationRequest extends StObject {
 }
 object DescribeInstanceInformationRequest {
   
-  @scala.inline
-  def apply(): DescribeInstanceInformationRequest = {
+  inline def apply(): DescribeInstanceInformationRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeInstanceInformationRequest]
   }
   
-  @scala.inline
-  implicit class DescribeInstanceInformationRequestMutableBuilder[Self <: DescribeInstanceInformationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeInstanceInformationRequest](x: Self) {
     
-    @scala.inline
-    def setFilters(value: InstanceInformationStringFilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: InstanceInformationStringFilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: InstanceInformationStringFilter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: InstanceInformationStringFilter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
-    @scala.inline
-    def setInstanceInformationFilterList(value: InstanceInformationFilterList): Self = StObject.set(x, "InstanceInformationFilterList", value.asInstanceOf[js.Any])
+    inline def setInstanceInformationFilterList(value: InstanceInformationFilterList): Self = StObject.set(x, "InstanceInformationFilterList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceInformationFilterListUndefined: Self = StObject.set(x, "InstanceInformationFilterList", js.undefined)
+    inline def setInstanceInformationFilterListUndefined: Self = StObject.set(x, "InstanceInformationFilterList", js.undefined)
     
-    @scala.inline
-    def setInstanceInformationFilterListVarargs(value: InstanceInformationFilter*): Self = StObject.set(x, "InstanceInformationFilterList", js.Array(value :_*))
+    inline def setInstanceInformationFilterListVarargs(value: InstanceInformationFilter*): Self = StObject.set(x, "InstanceInformationFilterList", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxResults(value: MaxResultsEC2Compatible): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResultsEC2Compatible): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -24,20 +24,17 @@ object variableInputMod {
     @JSImport("wix-style-react/dist/es/src/VariableInput", "SIZE.large")
     @js.native
     def large: VariableInputSize = js.native
-    @scala.inline
-    def large_=(x: VariableInputSize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("large")(x.asInstanceOf[js.Any])
+    inline def large_=(x: VariableInputSize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("large")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/es/src/VariableInput", "SIZE.medium")
     @js.native
     def medium: VariableInputSize = js.native
-    @scala.inline
-    def medium_=(x: VariableInputSize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("medium")(x.asInstanceOf[js.Any])
+    inline def medium_=(x: VariableInputSize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("medium")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/es/src/VariableInput", "SIZE.small")
     @js.native
     def small: VariableInputSize = js.native
-    @scala.inline
-    def small_=(x: VariableInputSize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("small")(x.asInstanceOf[js.Any])
+    inline def small_=(x: VariableInputSize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("small")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -85,110 +82,76 @@ object variableInputMod {
   }
   object VariableInputProps {
     
-    @scala.inline
-    def apply(): VariableInputProps = {
+    inline def apply(): VariableInputProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VariableInputProps]
     }
     
-    @scala.inline
-    implicit class VariableInputPropsMutableBuilder[Self <: VariableInputProps] (val x: Self) extends AnyVal {
+    extension [Self <: VariableInputProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setInitialValue(value: String): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
+      inline def setInitialValue(value: String): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialValueUndefined: Self = StObject.set(x, "initialValue", js.undefined)
+      inline def setInitialValueUndefined: Self = StObject.set(x, "initialValue", js.undefined)
       
-      @scala.inline
-      def setMultiline(value: Boolean): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
+      inline def setMultiline(value: Boolean): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultilineUndefined: Self = StObject.set(x, "multiline", js.undefined)
+      inline def setMultilineUndefined: Self = StObject.set(x, "multiline", js.undefined)
       
-      @scala.inline
-      def setOnBlur(value: /* value */ String => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: /* value */ String => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+      inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* value */ String => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* value */ String => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnSubmit(value: /* value */ String => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
+      inline def setOnSubmit(value: /* value */ String => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
+      inline def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
       
-      @scala.inline
-      def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      @scala.inline
-      def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+      inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+      inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
-      @scala.inline
-      def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+      inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
       
-      @scala.inline
-      def setSize(value: VariableInputSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: VariableInputSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setStatus(value: StatusIndicatorState): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: StatusIndicatorState): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusMessage(value: ReactNode): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
+      inline def setStatusMessage(value: ReactNode): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
+      inline def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setVariableParser(value: /* value */ String => String | Boolean): Self = StObject.set(x, "variableParser", js.Any.fromFunction1(value))
+      inline def setVariableParser(value: /* value */ String => String | Boolean): Self = StObject.set(x, "variableParser", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVariableParserUndefined: Self = StObject.set(x, "variableParser", js.undefined)
+      inline def setVariableParserUndefined: Self = StObject.set(x, "variableParser", js.undefined)
       
-      @scala.inline
-      def setVariableTemplate(value: Prefix): Self = StObject.set(x, "variableTemplate", value.asInstanceOf[js.Any])
+      inline def setVariableTemplate(value: Prefix): Self = StObject.set(x, "variableTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariableTemplateUndefined: Self = StObject.set(x, "variableTemplate", js.undefined)
+      inline def setVariableTemplateUndefined: Self = StObject.set(x, "variableTemplate", js.undefined)
     }
   }
   
@@ -200,13 +163,10 @@ object variableInputMod {
   trait VariableInputSize extends StObject
   object VariableInputSize {
     
-    @scala.inline
-    def large: typings.wixStyleReact.wixStyleReactStrings.large = "large".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.large]
+    inline def large: typings.wixStyleReact.wixStyleReactStrings.large = "large".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.large]
     
-    @scala.inline
-    def medium: typings.wixStyleReact.wixStyleReactStrings.medium = "medium".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.medium]
+    inline def medium: typings.wixStyleReact.wixStyleReactStrings.medium = "medium".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.medium]
     
-    @scala.inline
-    def small: typings.wixStyleReact.wixStyleReactStrings.small = "small".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.small]
+    inline def small: typings.wixStyleReact.wixStyleReactStrings.small = "small".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.small]
   }
 }

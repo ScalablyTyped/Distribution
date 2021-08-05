@@ -12,25 +12,19 @@ trait QueryType extends StObject {
 }
 object QueryType {
   
-  @scala.inline
-  def apply(sql: String): QueryType = {
+  inline def apply(sql: String): QueryType = {
     val __obj = js.Dynamic.literal(sql = sql.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryType]
   }
   
-  @scala.inline
-  implicit class QueryTypeMutableBuilder[Self <: QueryType] (val x: Self) extends AnyVal {
+  extension [Self <: QueryType](x: Self) {
     
-    @scala.inline
-    def setSql(value: String): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
+    inline def setSql(value: String): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: js.Array[PrimitiveValueExpressionType]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[PrimitiveValueExpressionType]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: PrimitiveValueExpressionType*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: PrimitiveValueExpressionType*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

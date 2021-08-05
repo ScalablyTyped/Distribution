@@ -18,28 +18,21 @@ trait ListBatchInferenceJobsResponse extends StObject {
 }
 object ListBatchInferenceJobsResponse {
   
-  @scala.inline
-  def apply(): ListBatchInferenceJobsResponse = {
+  inline def apply(): ListBatchInferenceJobsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListBatchInferenceJobsResponse]
   }
   
-  @scala.inline
-  implicit class ListBatchInferenceJobsResponseMutableBuilder[Self <: ListBatchInferenceJobsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListBatchInferenceJobsResponse](x: Self) {
     
-    @scala.inline
-    def setBatchInferenceJobs(value: BatchInferenceJobs): Self = StObject.set(x, "batchInferenceJobs", value.asInstanceOf[js.Any])
+    inline def setBatchInferenceJobs(value: BatchInferenceJobs): Self = StObject.set(x, "batchInferenceJobs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchInferenceJobsUndefined: Self = StObject.set(x, "batchInferenceJobs", js.undefined)
+    inline def setBatchInferenceJobsUndefined: Self = StObject.set(x, "batchInferenceJobs", js.undefined)
     
-    @scala.inline
-    def setBatchInferenceJobsVarargs(value: BatchInferenceJobSummary*): Self = StObject.set(x, "batchInferenceJobs", js.Array(value :_*))
+    inline def setBatchInferenceJobsVarargs(value: BatchInferenceJobSummary*): Self = StObject.set(x, "batchInferenceJobs", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

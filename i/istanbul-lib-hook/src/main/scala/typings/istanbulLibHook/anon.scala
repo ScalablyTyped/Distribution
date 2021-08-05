@@ -17,35 +17,26 @@ object anon {
   }
   object PartialHookRequireOptions {
     
-    @scala.inline
-    def apply(): PartialHookRequireOptions = {
+    inline def apply(): PartialHookRequireOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialHookRequireOptions]
     }
     
-    @scala.inline
-    implicit class PartialHookRequireOptionsMutableBuilder[Self <: PartialHookRequireOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PartialHookRequireOptions](x: Self) {
       
-      @scala.inline
-      def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+      inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      @scala.inline
-      def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
       
-      @scala.inline
-      def setPostLoadHook(value: /* filename */ String => Unit): Self = StObject.set(x, "postLoadHook", js.Any.fromFunction1(value))
+      inline def setPostLoadHook(value: /* filename */ String => Unit): Self = StObject.set(x, "postLoadHook", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPostLoadHookUndefined: Self = StObject.set(x, "postLoadHook", js.undefined)
+      inline def setPostLoadHookUndefined: Self = StObject.set(x, "postLoadHook", js.undefined)
       
-      @scala.inline
-      def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     }
   }
   
@@ -58,26 +49,20 @@ object anon {
   }
   object PartialHookRunInContextOp {
     
-    @scala.inline
-    def apply(): PartialHookRunInContextOp = {
+    inline def apply(): PartialHookRunInContextOp = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialHookRunInContextOp]
     }
     
-    @scala.inline
-    implicit class PartialHookRunInContextOpMutableBuilder[Self <: PartialHookRunInContextOp] (val x: Self) extends AnyVal {
+    extension [Self <: PartialHookRunInContextOp](x: Self) {
       
-      @scala.inline
-      def setCoverageVariable(value: String): Self = StObject.set(x, "coverageVariable", value.asInstanceOf[js.Any])
+      inline def setCoverageVariable(value: String): Self = StObject.set(x, "coverageVariable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoverageVariableUndefined: Self = StObject.set(x, "coverageVariable", js.undefined)
+      inline def setCoverageVariableUndefined: Self = StObject.set(x, "coverageVariable", js.undefined)
       
-      @scala.inline
-      def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     }
   }
   
@@ -88,20 +73,16 @@ object anon {
   }
   object PartialOptions {
     
-    @scala.inline
-    def apply(): PartialOptions = {
+    inline def apply(): PartialOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialOptions]
     }
     
-    @scala.inline
-    implicit class PartialOptionsMutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PartialOptions](x: Self) {
       
-      @scala.inline
-      def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     }
   }
 }

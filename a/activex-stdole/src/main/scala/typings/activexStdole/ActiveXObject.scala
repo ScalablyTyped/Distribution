@@ -18,19 +18,16 @@ trait ActiveXObject extends StObject {
 }
 object ActiveXObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     on: (StdFont, FontChanged, js.Array[PropertyName], js.ThisFunction1[/* this */ StdFont, /* parameter */ typings.activexStdole.anon.PropertyName, Unit]) => Unit
   ): ActiveXObject = {
     val __obj = js.Dynamic.literal(on = js.Any.fromFunction4(on))
     __obj.asInstanceOf[ActiveXObject]
   }
   
-  @scala.inline
-  implicit class ActiveXObjectMutableBuilder[Self <: ActiveXObject] (val x: Self) extends AnyVal {
+  extension [Self <: ActiveXObject](x: Self) {
     
-    @scala.inline
-    def setOn(
+    inline def setOn(
       value: (StdFont, FontChanged, js.Array[PropertyName], js.ThisFunction1[/* this */ StdFont, /* parameter */ typings.activexStdole.anon.PropertyName, Unit]) => Unit
     ): Self = StObject.set(x, "on", js.Any.fromFunction4(value))
   }

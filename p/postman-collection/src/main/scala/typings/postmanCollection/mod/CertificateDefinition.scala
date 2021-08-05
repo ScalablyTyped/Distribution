@@ -19,40 +19,29 @@ trait CertificateDefinition
 }
 object CertificateDefinition {
   
-  @scala.inline
-  def apply(): CertificateDefinition = {
+  inline def apply(): CertificateDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CertificateDefinition]
   }
   
-  @scala.inline
-  implicit class CertificateDefinitionMutableBuilder[Self <: CertificateDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: CertificateDefinition](x: Self) {
     
-    @scala.inline
-    def setCert(value: Src | String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
+    inline def setCert(value: Src | String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
+    inline def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
     
-    @scala.inline
-    def setKey(value: Src | String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Src | String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setMatches(value: js.Array[String] | UrlMatchPatternList): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+    inline def setMatches(value: js.Array[String] | UrlMatchPatternList): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
+    inline def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
     
-    @scala.inline
-    def setMatchesVarargs(value: String*): Self = StObject.set(x, "matches", js.Array(value :_*))
+    inline def setMatchesVarargs(value: String*): Self = StObject.set(x, "matches", js.Array(value :_*))
     
-    @scala.inline
-    def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
+    inline def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
+    inline def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
   }
 }

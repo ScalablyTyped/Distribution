@@ -62,17 +62,13 @@ object application {
     trait Constants extends StObject
     object Constants {
       
-      @scala.inline
-      def AskUser: `3` = 3.asInstanceOf[`3`]
+      inline def AskUser: `3` = 3.asInstanceOf[`3`]
       
-      @scala.inline
-      def CallNextHandler: `1` = 1.asInstanceOf[`1`]
+      inline def CallNextHandler: `1` = 1.asInstanceOf[`1`]
       
-      @scala.inline
-      def Cancel: `2` = 2.asInstanceOf[`2`]
+      inline def Cancel: `2` = 2.asInstanceOf[`2`]
       
-      @scala.inline
-      def Proceed: `0` = 0.asInstanceOf[`0`]
+      inline def Proceed: `0` = 0.asInstanceOf[`0`]
     }
   }
   
@@ -87,17 +83,13 @@ object application {
     trait Constants extends StObject
     object Constants {
       
-      @scala.inline
-      def AppendData: `3` = 3.asInstanceOf[`3`]
+      inline def AppendData: `3` = 3.asInstanceOf[`3`]
       
-      @scala.inline
-      def CopyDefinitionAndData: `0` = 0.asInstanceOf[`0`]
+      inline def CopyDefinitionAndData: `0` = 0.asInstanceOf[`0`]
       
-      @scala.inline
-      def CopyDefinitionOnly: `1` = 1.asInstanceOf[`1`]
+      inline def CopyDefinitionOnly: `1` = 1.asInstanceOf[`1`]
       
-      @scala.inline
-      def CreateAsView: `2` = 2.asInstanceOf[`2`]
+      inline def CreateAsView: `2` = 2.asInstanceOf[`2`]
     }
   }
   
@@ -124,20 +116,16 @@ object application {
   }
   object CopyTableRowEvent {
     
-    @scala.inline
-    def apply(Error: js.Any, Source: XInterface, SourceData: XResultSet): CopyTableRowEvent = {
+    inline def apply(Error: js.Any, Source: XInterface, SourceData: XResultSet): CopyTableRowEvent = {
       val __obj = js.Dynamic.literal(Error = Error.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any], SourceData = SourceData.asInstanceOf[js.Any])
       __obj.asInstanceOf[CopyTableRowEvent]
     }
     
-    @scala.inline
-    implicit class CopyTableRowEventMutableBuilder[Self <: CopyTableRowEvent] (val x: Self) extends AnyVal {
+    extension [Self <: CopyTableRowEvent](x: Self) {
       
-      @scala.inline
-      def setError(value: js.Any): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Any): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceData(value: XResultSet): Self = StObject.set(x, "SourceData", value.asInstanceOf[js.Any])
+      inline def setSourceData(value: XResultSet): Self = StObject.set(x, "SourceData", value.asInstanceOf[js.Any])
     }
   }
   
@@ -202,8 +190,7 @@ object application {
   }
   object CopyTableWizard {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       CreatePrimaryKey: Optional[String],
       DestinationTableName: String,
       Operation: Double,
@@ -222,14 +209,11 @@ object application {
       __obj.asInstanceOf[CopyTableWizard]
     }
     
-    @scala.inline
-    implicit class CopyTableWizardMutableBuilder[Self <: CopyTableWizard] (val x: Self) extends AnyVal {
+    extension [Self <: CopyTableWizard](x: Self) {
       
-      @scala.inline
-      def setCreate(value: (XPropertySet, XPropertySet) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+      inline def setCreate(value: (XPropertySet, XPropertySet) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCreateWithInteractionHandler(value: (XPropertySet, XPropertySet, XInteractionHandler) => Unit): Self = StObject.set(x, "createWithInteractionHandler", js.Any.fromFunction3(value))
+      inline def setCreateWithInteractionHandler(value: (XPropertySet, XPropertySet, XInteractionHandler) => Unit): Self = StObject.set(x, "createWithInteractionHandler", js.Any.fromFunction3(value))
     }
   }
   
@@ -242,11 +226,9 @@ object application {
     trait Constants extends StObject
     object Constants {
       
-      @scala.inline
-      def FORM: `2` = 2.asInstanceOf[`2`]
+      inline def FORM: `2` = 2.asInstanceOf[`2`]
       
-      @scala.inline
-      def REPORT: `3` = 3.asInstanceOf[`3`]
+      inline def REPORT: `3` = 3.asInstanceOf[`3`]
     }
   }
   
@@ -266,32 +248,23 @@ object application {
     trait Constants extends StObject
     object Constants {
       
-      @scala.inline
-      def CATALOG: `1005` = 1005.asInstanceOf[`1005`]
+      inline def CATALOG: `1005` = 1005.asInstanceOf[`1005`]
       
-      @scala.inline
-      def DATA_SOURCE: `1004` = 1004.asInstanceOf[`1004`]
+      inline def DATA_SOURCE: `1004` = 1004.asInstanceOf[`1004`]
       
-      @scala.inline
-      def FORMS: `1002` = 1002.asInstanceOf[`1002`]
+      inline def FORMS: `1002` = 1002.asInstanceOf[`1002`]
       
-      @scala.inline
-      def FORMS_FOLDER: `1007` = 1007.asInstanceOf[`1007`]
+      inline def FORMS_FOLDER: `1007` = 1007.asInstanceOf[`1007`]
       
-      @scala.inline
-      def QUERIES: `1001` = 1001.asInstanceOf[`1001`]
+      inline def QUERIES: `1001` = 1001.asInstanceOf[`1001`]
       
-      @scala.inline
-      def REPORTS: `1003` = 1003.asInstanceOf[`1003`]
+      inline def REPORTS: `1003` = 1003.asInstanceOf[`1003`]
       
-      @scala.inline
-      def REPORTS_FOLDER: `1008` = 1008.asInstanceOf[`1008`]
+      inline def REPORTS_FOLDER: `1008` = 1008.asInstanceOf[`1008`]
       
-      @scala.inline
-      def SCHEMA: `1006` = 1006.asInstanceOf[`1006`]
+      inline def SCHEMA: `1006` = 1006.asInstanceOf[`1006`]
       
-      @scala.inline
-      def TABLES: `1000` = 1000.asInstanceOf[`1000`]
+      inline def TABLES: `1000` = 1000.asInstanceOf[`1000`]
     }
   }
   
@@ -304,8 +277,7 @@ object application {
        with XDatabaseDocumentUI
   object DefaultViewController {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ActiveConnection: XConnection,
       ApplicationMainWindow: XWindow,
       DataSource: XDataSource,
@@ -370,8 +342,7 @@ object application {
   }
   object MacroMigrationWizard {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       createWithDocument: XOfficeDatabaseDocument => Unit,
       execute: () => Double,
@@ -383,11 +354,9 @@ object application {
       __obj.asInstanceOf[MacroMigrationWizard]
     }
     
-    @scala.inline
-    implicit class MacroMigrationWizardMutableBuilder[Self <: MacroMigrationWizard] (val x: Self) extends AnyVal {
+    extension [Self <: MacroMigrationWizard](x: Self) {
       
-      @scala.inline
-      def setCreateWithDocument(value: XOfficeDatabaseDocument => Unit): Self = StObject.set(x, "createWithDocument", js.Any.fromFunction1(value))
+      inline def setCreateWithDocument(value: XOfficeDatabaseDocument => Unit): Self = StObject.set(x, "createWithDocument", js.Any.fromFunction1(value))
     }
   }
   
@@ -429,20 +398,16 @@ object application {
   }
   object NamedDatabaseObject {
     
-    @scala.inline
-    def apply(Name: String, Type: Double): NamedDatabaseObject = {
+    inline def apply(Name: String, Type: Double): NamedDatabaseObject = {
       val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
       __obj.asInstanceOf[NamedDatabaseObject]
     }
     
-    @scala.inline
-    implicit class NamedDatabaseObjectMutableBuilder[Self <: NamedDatabaseObject] (val x: Self) extends AnyVal {
+    extension [Self <: NamedDatabaseObject](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      inline def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -480,8 +445,7 @@ object application {
   }
   object XCopyTableListener {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       copiedRow: CopyTableRowEvent => Unit,
       copyRowError: CopyTableRowEvent => Double,
@@ -494,17 +458,13 @@ object application {
       __obj.asInstanceOf[XCopyTableListener]
     }
     
-    @scala.inline
-    implicit class XCopyTableListenerMutableBuilder[Self <: XCopyTableListener] (val x: Self) extends AnyVal {
+    extension [Self <: XCopyTableListener](x: Self) {
       
-      @scala.inline
-      def setCopiedRow(value: CopyTableRowEvent => Unit): Self = StObject.set(x, "copiedRow", js.Any.fromFunction1(value))
+      inline def setCopiedRow(value: CopyTableRowEvent => Unit): Self = StObject.set(x, "copiedRow", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCopyRowError(value: CopyTableRowEvent => Double): Self = StObject.set(x, "copyRowError", js.Any.fromFunction1(value))
+      inline def setCopyRowError(value: CopyTableRowEvent => Double): Self = StObject.set(x, "copyRowError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCopyingRow(value: CopyTableRowEvent => Unit): Self = StObject.set(x, "copyingRow", js.Any.fromFunction1(value))
+      inline def setCopyingRow(value: CopyTableRowEvent => Unit): Self = StObject.set(x, "copyingRow", js.Any.fromFunction1(value))
     }
   }
   
@@ -581,8 +541,7 @@ object application {
   }
   object XCopyTableWizard {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       CreatePrimaryKey: Optional[String],
       DestinationTableName: String,
       Operation: Double,
@@ -599,26 +558,19 @@ object application {
       __obj.asInstanceOf[XCopyTableWizard]
     }
     
-    @scala.inline
-    implicit class XCopyTableWizardMutableBuilder[Self <: XCopyTableWizard] (val x: Self) extends AnyVal {
+    extension [Self <: XCopyTableWizard](x: Self) {
       
-      @scala.inline
-      def setAddCopyTableListener(value: XCopyTableListener => Unit): Self = StObject.set(x, "addCopyTableListener", js.Any.fromFunction1(value))
+      inline def setAddCopyTableListener(value: XCopyTableListener => Unit): Self = StObject.set(x, "addCopyTableListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCreatePrimaryKey(value: Optional[String]): Self = StObject.set(x, "CreatePrimaryKey", value.asInstanceOf[js.Any])
+      inline def setCreatePrimaryKey(value: Optional[String]): Self = StObject.set(x, "CreatePrimaryKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationTableName(value: String): Self = StObject.set(x, "DestinationTableName", value.asInstanceOf[js.Any])
+      inline def setDestinationTableName(value: String): Self = StObject.set(x, "DestinationTableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperation(value: Double): Self = StObject.set(x, "Operation", value.asInstanceOf[js.Any])
+      inline def setOperation(value: Double): Self = StObject.set(x, "Operation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveCopyTableListener(value: XCopyTableListener => Unit): Self = StObject.set(x, "removeCopyTableListener", js.Any.fromFunction1(value))
+      inline def setRemoveCopyTableListener(value: XCopyTableListener => Unit): Self = StObject.set(x, "removeCopyTableListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUseHeaderLineAsColumnNames(value: Boolean): Self = StObject.set(x, "UseHeaderLineAsColumnNames", value.asInstanceOf[js.Any])
+      inline def setUseHeaderLineAsColumnNames(value: Boolean): Self = StObject.set(x, "UseHeaderLineAsColumnNames", value.asInstanceOf[js.Any])
     }
   }
   
@@ -758,8 +710,7 @@ object application {
   }
   object XDatabaseDocumentUI {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ActiveConnection: XConnection,
       ApplicationMainWindow: XWindow,
       DataSource: XDataSource,
@@ -777,44 +728,31 @@ object application {
       __obj.asInstanceOf[XDatabaseDocumentUI]
     }
     
-    @scala.inline
-    implicit class XDatabaseDocumentUIMutableBuilder[Self <: XDatabaseDocumentUI] (val x: Self) extends AnyVal {
+    extension [Self <: XDatabaseDocumentUI](x: Self) {
       
-      @scala.inline
-      def setActiveConnection(value: XConnection): Self = StObject.set(x, "ActiveConnection", value.asInstanceOf[js.Any])
+      inline def setActiveConnection(value: XConnection): Self = StObject.set(x, "ActiveConnection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationMainWindow(value: XWindow): Self = StObject.set(x, "ApplicationMainWindow", value.asInstanceOf[js.Any])
+      inline def setApplicationMainWindow(value: XWindow): Self = StObject.set(x, "ApplicationMainWindow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseSubComponents(value: () => Boolean): Self = StObject.set(x, "closeSubComponents", js.Any.fromFunction0(value))
+      inline def setCloseSubComponents(value: () => Boolean): Self = StObject.set(x, "closeSubComponents", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setConnect(value: () => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction0(value))
+      inline def setConnect(value: () => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCreateComponent(value: (Double, js.Array[XComponent]) => XComponent): Self = StObject.set(x, "createComponent", js.Any.fromFunction2(value))
+      inline def setCreateComponent(value: (Double, js.Array[XComponent]) => XComponent): Self = StObject.set(x, "createComponent", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCreateComponentWithArguments(value: (Double, SeqEquiv[PropertyValue], js.Array[XComponent]) => XComponent): Self = StObject.set(x, "createComponentWithArguments", js.Any.fromFunction3(value))
+      inline def setCreateComponentWithArguments(value: (Double, SeqEquiv[PropertyValue], js.Array[XComponent]) => XComponent): Self = StObject.set(x, "createComponentWithArguments", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setDataSource(value: XDataSource): Self = StObject.set(x, "DataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: XDataSource): Self = StObject.set(x, "DataSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentifySubComponent(value: XComponent => Pair[Double, String]): Self = StObject.set(x, "identifySubComponent", js.Any.fromFunction1(value))
+      inline def setIdentifySubComponent(value: XComponent => Pair[Double, String]): Self = StObject.set(x, "identifySubComponent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsConnected(value: () => Boolean): Self = StObject.set(x, "isConnected", js.Any.fromFunction0(value))
+      inline def setIsConnected(value: () => Boolean): Self = StObject.set(x, "isConnected", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLoadComponent(value: (Double, String, Boolean) => XComponent): Self = StObject.set(x, "loadComponent", js.Any.fromFunction3(value))
+      inline def setLoadComponent(value: (Double, String, Boolean) => XComponent): Self = StObject.set(x, "loadComponent", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setLoadComponentWithArguments(value: (Double, String, Boolean, SeqEquiv[PropertyValue]) => XComponent): Self = StObject.set(x, "loadComponentWithArguments", js.Any.fromFunction4(value))
+      inline def setLoadComponentWithArguments(value: (Double, String, Boolean, SeqEquiv[PropertyValue]) => XComponent): Self = StObject.set(x, "loadComponentWithArguments", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setSubComponents(value: SafeArray[XComponent]): Self = StObject.set(x, "SubComponents", value.asInstanceOf[js.Any])
+      inline def setSubComponents(value: SafeArray[XComponent]): Self = StObject.set(x, "SubComponents", value.asInstanceOf[js.Any])
     }
   }
   
@@ -848,8 +786,7 @@ object application {
   }
   object XTableUIProvider {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getTableEditor: (XDatabaseDocumentUI, String) => XInterface,
       getTableIcon: (String, Double) => XGraphic
     ): XTableUIProvider = {
@@ -857,14 +794,11 @@ object application {
       __obj.asInstanceOf[XTableUIProvider]
     }
     
-    @scala.inline
-    implicit class XTableUIProviderMutableBuilder[Self <: XTableUIProvider] (val x: Self) extends AnyVal {
+    extension [Self <: XTableUIProvider](x: Self) {
       
-      @scala.inline
-      def setGetTableEditor(value: (XDatabaseDocumentUI, String) => XInterface): Self = StObject.set(x, "getTableEditor", js.Any.fromFunction2(value))
+      inline def setGetTableEditor(value: (XDatabaseDocumentUI, String) => XInterface): Self = StObject.set(x, "getTableEditor", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetTableIcon(value: (String, Double) => XGraphic): Self = StObject.set(x, "getTableIcon", js.Any.fromFunction2(value))
+      inline def setGetTableIcon(value: (String, Double) => XGraphic): Self = StObject.set(x, "getTableIcon", js.Any.fromFunction2(value))
     }
   }
 }

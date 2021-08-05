@@ -78,73 +78,51 @@ trait SchemaAuthorizedCertificate extends StObject {
 }
 object SchemaAuthorizedCertificate {
   
-  @scala.inline
-  def apply(): SchemaAuthorizedCertificate = {
+  inline def apply(): SchemaAuthorizedCertificate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAuthorizedCertificate]
   }
   
-  @scala.inline
-  implicit class SchemaAuthorizedCertificateMutableBuilder[Self <: SchemaAuthorizedCertificate] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAuthorizedCertificate](x: Self) {
     
-    @scala.inline
-    def setCertificateRawData(value: SchemaCertificateRawData): Self = StObject.set(x, "certificateRawData", value.asInstanceOf[js.Any])
+    inline def setCertificateRawData(value: SchemaCertificateRawData): Self = StObject.set(x, "certificateRawData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateRawDataUndefined: Self = StObject.set(x, "certificateRawData", js.undefined)
+    inline def setCertificateRawDataUndefined: Self = StObject.set(x, "certificateRawData", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setDomainMappingsCount(value: Double): Self = StObject.set(x, "domainMappingsCount", value.asInstanceOf[js.Any])
+    inline def setDomainMappingsCount(value: Double): Self = StObject.set(x, "domainMappingsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainMappingsCountUndefined: Self = StObject.set(x, "domainMappingsCount", js.undefined)
+    inline def setDomainMappingsCountUndefined: Self = StObject.set(x, "domainMappingsCount", js.undefined)
     
-    @scala.inline
-    def setDomainNames(value: js.Array[String]): Self = StObject.set(x, "domainNames", value.asInstanceOf[js.Any])
+    inline def setDomainNames(value: js.Array[String]): Self = StObject.set(x, "domainNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainNamesUndefined: Self = StObject.set(x, "domainNames", js.undefined)
+    inline def setDomainNamesUndefined: Self = StObject.set(x, "domainNames", js.undefined)
     
-    @scala.inline
-    def setDomainNamesVarargs(value: String*): Self = StObject.set(x, "domainNames", js.Array(value :_*))
+    inline def setDomainNamesVarargs(value: String*): Self = StObject.set(x, "domainNames", js.Array(value :_*))
     
-    @scala.inline
-    def setExpireTime(value: String): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
+    inline def setExpireTime(value: String): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpireTimeUndefined: Self = StObject.set(x, "expireTime", js.undefined)
+    inline def setExpireTimeUndefined: Self = StObject.set(x, "expireTime", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setManagedCertificate(value: SchemaManagedCertificate): Self = StObject.set(x, "managedCertificate", value.asInstanceOf[js.Any])
+    inline def setManagedCertificate(value: SchemaManagedCertificate): Self = StObject.set(x, "managedCertificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedCertificateUndefined: Self = StObject.set(x, "managedCertificate", js.undefined)
+    inline def setManagedCertificateUndefined: Self = StObject.set(x, "managedCertificate", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setVisibleDomainMappings(value: js.Array[String]): Self = StObject.set(x, "visibleDomainMappings", value.asInstanceOf[js.Any])
+    inline def setVisibleDomainMappings(value: js.Array[String]): Self = StObject.set(x, "visibleDomainMappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleDomainMappingsUndefined: Self = StObject.set(x, "visibleDomainMappings", js.undefined)
+    inline def setVisibleDomainMappingsUndefined: Self = StObject.set(x, "visibleDomainMappings", js.undefined)
     
-    @scala.inline
-    def setVisibleDomainMappingsVarargs(value: String*): Self = StObject.set(x, "visibleDomainMappings", js.Array(value :_*))
+    inline def setVisibleDomainMappingsVarargs(value: String*): Self = StObject.set(x, "visibleDomainMappings", js.Array(value :_*))
   }
 }

@@ -16,22 +16,17 @@ trait SchemaGoogleCloudDialogflowV2beta1IntentMessageSuggestions extends StObjec
 }
 object SchemaGoogleCloudDialogflowV2beta1IntentMessageSuggestions {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudDialogflowV2beta1IntentMessageSuggestions = {
+  inline def apply(): SchemaGoogleCloudDialogflowV2beta1IntentMessageSuggestions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2beta1IntentMessageSuggestions]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2beta1IntentMessageSuggestionsMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2beta1IntentMessageSuggestions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudDialogflowV2beta1IntentMessageSuggestions](x: Self) {
     
-    @scala.inline
-    def setSuggestions(value: js.Array[SchemaGoogleCloudDialogflowV2beta1IntentMessageSuggestion]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
+    inline def setSuggestions(value: js.Array[SchemaGoogleCloudDialogflowV2beta1IntentMessageSuggestion]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestionsUndefined: Self = StObject.set(x, "suggestions", js.undefined)
+    inline def setSuggestionsUndefined: Self = StObject.set(x, "suggestions", js.undefined)
     
-    @scala.inline
-    def setSuggestionsVarargs(value: SchemaGoogleCloudDialogflowV2beta1IntentMessageSuggestion*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
+    inline def setSuggestionsVarargs(value: SchemaGoogleCloudDialogflowV2beta1IntentMessageSuggestion*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
   }
 }

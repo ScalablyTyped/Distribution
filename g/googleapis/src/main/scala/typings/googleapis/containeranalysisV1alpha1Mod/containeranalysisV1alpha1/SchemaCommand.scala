@@ -44,58 +44,41 @@ trait SchemaCommand extends StObject {
 }
 object SchemaCommand {
   
-  @scala.inline
-  def apply(): SchemaCommand = {
+  inline def apply(): SchemaCommand = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCommand]
   }
   
-  @scala.inline
-  implicit class SchemaCommandMutableBuilder[Self <: SchemaCommand] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCommand](x: Self) {
     
-    @scala.inline
-    def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+    inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    @scala.inline
-    def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
     
-    @scala.inline
-    def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+    inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+    inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
     
-    @scala.inline
-    def setEnv(value: js.Array[String]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+    inline def setEnv(value: js.Array[String]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+    inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
-    @scala.inline
-    def setEnvVarargs(value: String*): Self = StObject.set(x, "env", js.Array(value :_*))
+    inline def setEnvVarargs(value: String*): Self = StObject.set(x, "env", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setWaitFor(value: js.Array[String]): Self = StObject.set(x, "waitFor", value.asInstanceOf[js.Any])
+    inline def setWaitFor(value: js.Array[String]): Self = StObject.set(x, "waitFor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaitForUndefined: Self = StObject.set(x, "waitFor", js.undefined)
+    inline def setWaitForUndefined: Self = StObject.set(x, "waitFor", js.undefined)
     
-    @scala.inline
-    def setWaitForVarargs(value: String*): Self = StObject.set(x, "waitFor", js.Array(value :_*))
+    inline def setWaitForVarargs(value: String*): Self = StObject.set(x, "waitFor", js.Array(value :_*))
   }
 }

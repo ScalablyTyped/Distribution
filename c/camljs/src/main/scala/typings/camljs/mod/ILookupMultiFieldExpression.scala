@@ -29,8 +29,7 @@ trait ILookupMultiFieldExpression extends StObject {
 }
 object ILookupMultiFieldExpression {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     EqualTo: js.Any => IExpression,
     Includes: js.Any => IExpression,
     IncludesSuchItemThat: () => ILookupFieldExpression,
@@ -43,28 +42,20 @@ object ILookupMultiFieldExpression {
     __obj.asInstanceOf[ILookupMultiFieldExpression]
   }
   
-  @scala.inline
-  implicit class ILookupMultiFieldExpressionMutableBuilder[Self <: ILookupMultiFieldExpression] (val x: Self) extends AnyVal {
+  extension [Self <: ILookupMultiFieldExpression](x: Self) {
     
-    @scala.inline
-    def setEqualTo(value: js.Any => IExpression): Self = StObject.set(x, "EqualTo", js.Any.fromFunction1(value))
+    inline def setEqualTo(value: js.Any => IExpression): Self = StObject.set(x, "EqualTo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIncludes(value: js.Any => IExpression): Self = StObject.set(x, "Includes", js.Any.fromFunction1(value))
+    inline def setIncludes(value: js.Any => IExpression): Self = StObject.set(x, "Includes", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIncludesSuchItemThat(value: () => ILookupFieldExpression): Self = StObject.set(x, "IncludesSuchItemThat", js.Any.fromFunction0(value))
+    inline def setIncludesSuchItemThat(value: () => ILookupFieldExpression): Self = StObject.set(x, "IncludesSuchItemThat", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsNotNull(value: () => IExpression): Self = StObject.set(x, "IsNotNull", js.Any.fromFunction0(value))
+    inline def setIsNotNull(value: () => IExpression): Self = StObject.set(x, "IsNotNull", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsNull(value: () => IExpression): Self = StObject.set(x, "IsNull", js.Any.fromFunction0(value))
+    inline def setIsNull(value: () => IExpression): Self = StObject.set(x, "IsNull", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNotEqualTo(value: js.Any => IExpression): Self = StObject.set(x, "NotEqualTo", js.Any.fromFunction1(value))
+    inline def setNotEqualTo(value: js.Any => IExpression): Self = StObject.set(x, "NotEqualTo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNotIncludes(value: js.Any => IExpression): Self = StObject.set(x, "NotIncludes", js.Any.fromFunction1(value))
+    inline def setNotIncludes(value: js.Any => IExpression): Self = StObject.set(x, "NotIncludes", js.Any.fromFunction1(value))
   }
 }

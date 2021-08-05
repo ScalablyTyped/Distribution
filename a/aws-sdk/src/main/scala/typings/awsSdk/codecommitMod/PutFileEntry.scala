@@ -28,34 +28,25 @@ trait PutFileEntry extends StObject {
 }
 object PutFileEntry {
   
-  @scala.inline
-  def apply(filePath: Path): PutFileEntry = {
+  inline def apply(filePath: Path): PutFileEntry = {
     val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutFileEntry]
   }
   
-  @scala.inline
-  implicit class PutFileEntryMutableBuilder[Self <: PutFileEntry] (val x: Self) extends AnyVal {
+  extension [Self <: PutFileEntry](x: Self) {
     
-    @scala.inline
-    def setFileContent(value: FileContent): Self = StObject.set(x, "fileContent", value.asInstanceOf[js.Any])
+    inline def setFileContent(value: FileContent): Self = StObject.set(x, "fileContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileContentUndefined: Self = StObject.set(x, "fileContent", js.undefined)
+    inline def setFileContentUndefined: Self = StObject.set(x, "fileContent", js.undefined)
     
-    @scala.inline
-    def setFileMode(value: FileModeTypeEnum): Self = StObject.set(x, "fileMode", value.asInstanceOf[js.Any])
+    inline def setFileMode(value: FileModeTypeEnum): Self = StObject.set(x, "fileMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileModeUndefined: Self = StObject.set(x, "fileMode", js.undefined)
+    inline def setFileModeUndefined: Self = StObject.set(x, "fileMode", js.undefined)
     
-    @scala.inline
-    def setFilePath(value: Path): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: Path): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceFile(value: SourceFileSpecifier): Self = StObject.set(x, "sourceFile", value.asInstanceOf[js.Any])
+    inline def setSourceFile(value: SourceFileSpecifier): Self = StObject.set(x, "sourceFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceFileUndefined: Self = StObject.set(x, "sourceFile", js.undefined)
+    inline def setSourceFileUndefined: Self = StObject.set(x, "sourceFile", js.undefined)
   }
 }

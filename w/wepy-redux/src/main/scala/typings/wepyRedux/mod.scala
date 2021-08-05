@@ -14,14 +14,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def connect(mapStateToProps: MapStateToProps, mapDispatchToProps: MapDispatchToProps): js.Function1[/* original */ Component, Component] = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(mapStateToProps.asInstanceOf[js.Any], mapDispatchToProps.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* original */ Component, Component]]
+  inline def connect(mapStateToProps: MapStateToProps, mapDispatchToProps: MapDispatchToProps): js.Function1[/* original */ Component, Component] = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(mapStateToProps.asInstanceOf[js.Any], mapDispatchToProps.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* original */ Component, Component]]
   
-  @scala.inline
-  def getStore(): Store[js.Any, AnyAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStore")().asInstanceOf[Store[js.Any, AnyAction]]
+  inline def getStore(): Store[js.Any, AnyAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStore")().asInstanceOf[Store[js.Any, AnyAction]]
   
-  @scala.inline
-  def setStore(store: Store[js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setStore")(store.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setStore(store: Store[js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setStore")(store.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type MapDispatchToProps = StringDictionary[(js.Function2[/* store */ js.Any, /* repeated */ js.Any, Unit]) | String]
   

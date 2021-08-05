@@ -49,10 +49,8 @@ object WebPartComponent {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def getInstance(): typings.sharepoint.SP.Ribbon.WebPartComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("get_instance")().asInstanceOf[typings.sharepoint.SP.Ribbon.WebPartComponent]
+  inline def getInstance(): typings.sharepoint.SP.Ribbon.WebPartComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("get_instance")().asInstanceOf[typings.sharepoint.SP.Ribbon.WebPartComponent]
   
   /* static member */
-  @scala.inline
-  def registerWithPageManager(initInfo: WebPartComponentInitInfo): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerWithPageManager")(initInfo.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def registerWithPageManager(initInfo: WebPartComponentInitInfo): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerWithPageManager")(initInfo.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -20,8 +20,7 @@ trait IgLoadingMethods extends StObject {
 }
 object IgLoadingMethods {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destroy: () => Unit,
     hide: () => Unit,
     indicator: () => Unit,
@@ -33,25 +32,18 @@ object IgLoadingMethods {
     __obj.asInstanceOf[IgLoadingMethods]
   }
   
-  @scala.inline
-  implicit class IgLoadingMethodsMutableBuilder[Self <: IgLoadingMethods] (val x: Self) extends AnyVal {
+  extension [Self <: IgLoadingMethods](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIndicator(value: () => Unit): Self = StObject.set(x, "indicator", js.Any.fromFunction0(value))
+    inline def setIndicator(value: () => Unit): Self = StObject.set(x, "indicator", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIndicatorElement(value: () => Unit): Self = StObject.set(x, "indicatorElement", js.Any.fromFunction0(value))
+    inline def setIndicatorElement(value: () => Unit): Self = StObject.set(x, "indicatorElement", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRefreshPos(value: () => Unit): Self = StObject.set(x, "refreshPos", js.Any.fromFunction0(value))
+    inline def setRefreshPos(value: () => Unit): Self = StObject.set(x, "refreshPos", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShow(value: js.Object => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
+    inline def setShow(value: js.Object => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
   }
 }

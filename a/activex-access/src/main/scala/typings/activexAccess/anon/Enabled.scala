@@ -12,19 +12,15 @@ trait Enabled extends StObject {
 }
 object Enabled {
   
-  @scala.inline
-  def apply(Command: js.Any, Enabled: js.Any): Enabled = {
+  inline def apply(Command: js.Any, Enabled: js.Any): Enabled = {
     val __obj = js.Dynamic.literal(Command = Command.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[Enabled]
   }
   
-  @scala.inline
-  implicit class EnabledMutableBuilder[Self <: Enabled] (val x: Self) extends AnyVal {
+  extension [Self <: Enabled](x: Self) {
     
-    @scala.inline
-    def setCommand(value: js.Any): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: js.Any): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: js.Any): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: js.Any): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
   }
 }

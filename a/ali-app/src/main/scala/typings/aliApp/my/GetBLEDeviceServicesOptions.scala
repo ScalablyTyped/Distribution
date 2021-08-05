@@ -22,19 +22,15 @@ trait GetBLEDeviceServicesOptions
 }
 object GetBLEDeviceServicesOptions {
   
-  @scala.inline
-  def apply(deviceId: String, success: servicesArrayserviceIdstr => Unit): GetBLEDeviceServicesOptions = {
+  inline def apply(deviceId: String, success: servicesArrayserviceIdstr => Unit): GetBLEDeviceServicesOptions = {
     val __obj = js.Dynamic.literal(deviceId = deviceId.asInstanceOf[js.Any], success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[GetBLEDeviceServicesOptions]
   }
   
-  @scala.inline
-  implicit class GetBLEDeviceServicesOptionsMutableBuilder[Self <: GetBLEDeviceServicesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetBLEDeviceServicesOptions](x: Self) {
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: servicesArrayserviceIdstr => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: servicesArrayserviceIdstr => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

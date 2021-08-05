@@ -11,10 +11,8 @@ object getReplicationGroupMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getReplicationGroup(args: GetReplicationGroupArgs): js.Promise[GetReplicationGroupResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getReplicationGroup")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetReplicationGroupResult]]
-  @scala.inline
-  def getReplicationGroup(args: GetReplicationGroupArgs, opts: InvokeOptions): js.Promise[GetReplicationGroupResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getReplicationGroup")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetReplicationGroupResult]]
+  inline def getReplicationGroup(args: GetReplicationGroupArgs): js.Promise[GetReplicationGroupResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getReplicationGroup")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetReplicationGroupResult]]
+  inline def getReplicationGroup(args: GetReplicationGroupArgs, opts: InvokeOptions): js.Promise[GetReplicationGroupResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getReplicationGroup")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetReplicationGroupResult]]
   
   trait GetReplicationGroupArgs extends StObject {
     
@@ -25,17 +23,14 @@ object getReplicationGroupMod {
   }
   object GetReplicationGroupArgs {
     
-    @scala.inline
-    def apply(replicationGroupId: String): GetReplicationGroupArgs = {
+    inline def apply(replicationGroupId: String): GetReplicationGroupArgs = {
       val __obj = js.Dynamic.literal(replicationGroupId = replicationGroupId.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetReplicationGroupArgs]
     }
     
-    @scala.inline
-    implicit class GetReplicationGroupArgsMutableBuilder[Self <: GetReplicationGroupArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetReplicationGroupArgs](x: Self) {
       
-      @scala.inline
-      def setReplicationGroupId(value: String): Self = StObject.set(x, "replicationGroupId", value.asInstanceOf[js.Any])
+      inline def setReplicationGroupId(value: String): Self = StObject.set(x, "replicationGroupId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -108,8 +103,7 @@ object getReplicationGroupMod {
   }
   object GetReplicationGroupResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       authTokenEnabled: Boolean,
       automaticFailoverEnabled: Boolean,
       configurationEndpointAddress: String,
@@ -128,50 +122,35 @@ object getReplicationGroupMod {
       __obj.asInstanceOf[GetReplicationGroupResult]
     }
     
-    @scala.inline
-    implicit class GetReplicationGroupResultMutableBuilder[Self <: GetReplicationGroupResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetReplicationGroupResult](x: Self) {
       
-      @scala.inline
-      def setAuthTokenEnabled(value: Boolean): Self = StObject.set(x, "authTokenEnabled", value.asInstanceOf[js.Any])
+      inline def setAuthTokenEnabled(value: Boolean): Self = StObject.set(x, "authTokenEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutomaticFailoverEnabled(value: Boolean): Self = StObject.set(x, "automaticFailoverEnabled", value.asInstanceOf[js.Any])
+      inline def setAutomaticFailoverEnabled(value: Boolean): Self = StObject.set(x, "automaticFailoverEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigurationEndpointAddress(value: String): Self = StObject.set(x, "configurationEndpointAddress", value.asInstanceOf[js.Any])
+      inline def setConfigurationEndpointAddress(value: String): Self = StObject.set(x, "configurationEndpointAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemberClusters(value: js.Array[String]): Self = StObject.set(x, "memberClusters", value.asInstanceOf[js.Any])
+      inline def setMemberClusters(value: js.Array[String]): Self = StObject.set(x, "memberClusters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemberClustersVarargs(value: String*): Self = StObject.set(x, "memberClusters", js.Array(value :_*))
+      inline def setMemberClustersVarargs(value: String*): Self = StObject.set(x, "memberClusters", js.Array(value :_*))
       
-      @scala.inline
-      def setNodeType(value: String): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
+      inline def setNodeType(value: String): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberCacheClusters(value: Double): Self = StObject.set(x, "numberCacheClusters", value.asInstanceOf[js.Any])
+      inline def setNumberCacheClusters(value: Double): Self = StObject.set(x, "numberCacheClusters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryEndpointAddress(value: String): Self = StObject.set(x, "primaryEndpointAddress", value.asInstanceOf[js.Any])
+      inline def setPrimaryEndpointAddress(value: String): Self = StObject.set(x, "primaryEndpointAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicationGroupDescription(value: String): Self = StObject.set(x, "replicationGroupDescription", value.asInstanceOf[js.Any])
+      inline def setReplicationGroupDescription(value: String): Self = StObject.set(x, "replicationGroupDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicationGroupId(value: String): Self = StObject.set(x, "replicationGroupId", value.asInstanceOf[js.Any])
+      inline def setReplicationGroupId(value: String): Self = StObject.set(x, "replicationGroupId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnapshotRetentionLimit(value: Double): Self = StObject.set(x, "snapshotRetentionLimit", value.asInstanceOf[js.Any])
+      inline def setSnapshotRetentionLimit(value: Double): Self = StObject.set(x, "snapshotRetentionLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnapshotWindow(value: String): Self = StObject.set(x, "snapshotWindow", value.asInstanceOf[js.Any])
+      inline def setSnapshotWindow(value: String): Self = StObject.set(x, "snapshotWindow", value.asInstanceOf[js.Any])
     }
   }
 }

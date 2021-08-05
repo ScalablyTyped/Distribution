@@ -20,25 +20,19 @@ trait TemporalFilterSettings extends StObject {
 }
 object TemporalFilterSettings {
   
-  @scala.inline
-  def apply(): TemporalFilterSettings = {
+  inline def apply(): TemporalFilterSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TemporalFilterSettings]
   }
   
-  @scala.inline
-  implicit class TemporalFilterSettingsMutableBuilder[Self <: TemporalFilterSettings] (val x: Self) extends AnyVal {
+  extension [Self <: TemporalFilterSettings](x: Self) {
     
-    @scala.inline
-    def setPostFilterSharpening(value: TemporalFilterPostFilterSharpening): Self = StObject.set(x, "PostFilterSharpening", value.asInstanceOf[js.Any])
+    inline def setPostFilterSharpening(value: TemporalFilterPostFilterSharpening): Self = StObject.set(x, "PostFilterSharpening", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostFilterSharpeningUndefined: Self = StObject.set(x, "PostFilterSharpening", js.undefined)
+    inline def setPostFilterSharpeningUndefined: Self = StObject.set(x, "PostFilterSharpening", js.undefined)
     
-    @scala.inline
-    def setStrength(value: TemporalFilterStrength): Self = StObject.set(x, "Strength", value.asInstanceOf[js.Any])
+    inline def setStrength(value: TemporalFilterStrength): Self = StObject.set(x, "Strength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrengthUndefined: Self = StObject.set(x, "Strength", js.undefined)
+    inline def setStrengthUndefined: Self = StObject.set(x, "Strength", js.undefined)
   }
 }

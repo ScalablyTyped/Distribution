@@ -31,32 +31,24 @@ object typesListTagsOfResourceOutputMod {
   }
   object ListTagsOfResourceOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): ListTagsOfResourceOutput = {
+    inline def apply($metadata: ResponseMetadata): ListTagsOfResourceOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListTagsOfResourceOutput]
     }
     
-    @scala.inline
-    implicit class ListTagsOfResourceOutputMutableBuilder[Self <: ListTagsOfResourceOutput] (val x: Self) extends AnyVal {
+    extension [Self <: ListTagsOfResourceOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+      inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+      inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
       
-      @scala.inline
-      def setTags(value: js.Array[UnmarshalledTag]): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[UnmarshalledTag]): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
       
-      @scala.inline
-      def setTagsVarargs(value: UnmarshalledTag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: UnmarshalledTag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     }
   }
 }

@@ -14,8 +14,7 @@ trait ObjectType
 }
 object ObjectType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -42,13 +41,10 @@ object ObjectType {
     __obj.asInstanceOf[ObjectType]
   }
   
-  @scala.inline
-  implicit class ObjectTypeMutableBuilder[Self <: ObjectType] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectType](x: Self) {
     
-    @scala.inline
-    def setStructuralEquals(value: (ObjectType, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (ObjectType, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTypeMembers(value: ISeparatedSyntaxList2): Self = StObject.set(x, "typeMembers", value.asInstanceOf[js.Any])
+    inline def setTypeMembers(value: ISeparatedSyntaxList2): Self = StObject.set(x, "typeMembers", value.asInstanceOf[js.Any])
   }
 }

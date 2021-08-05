@@ -13,16 +13,13 @@ trait DescribeIdentityInput extends StObject {
 }
 object DescribeIdentityInput {
   
-  @scala.inline
-  def apply(IdentityId: IdentityId): DescribeIdentityInput = {
+  inline def apply(IdentityId: IdentityId): DescribeIdentityInput = {
     val __obj = js.Dynamic.literal(IdentityId = IdentityId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeIdentityInput]
   }
   
-  @scala.inline
-  implicit class DescribeIdentityInputMutableBuilder[Self <: DescribeIdentityInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeIdentityInput](x: Self) {
     
-    @scala.inline
-    def setIdentityId(value: IdentityId): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
+    inline def setIdentityId(value: IdentityId): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
   }
 }

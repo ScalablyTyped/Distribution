@@ -19,6 +19,5 @@ object LiveEntity {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getUrlAndKey(info: Broadcastid): LiveRtmpSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("getUrlAndKey")(info.asInstanceOf[js.Any]).asInstanceOf[LiveRtmpSettings]
+  inline def getUrlAndKey(info: Broadcastid): LiveRtmpSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("getUrlAndKey")(info.asInstanceOf[js.Any]).asInstanceOf[LiveRtmpSettings]
 }

@@ -35,21 +35,17 @@ object migrationGenerateCommandMod {
     /**
       * Gets contents of the migration file.
       */
-    @scala.inline
-    def getTemplate(name: String, timestamp: Double, upSqls: js.Array[String], downSqls: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTemplate")(name.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any], upSqls.asInstanceOf[js.Any], downSqls.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def getTemplate(name: String, timestamp: Double, upSqls: js.Array[String], downSqls: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTemplate")(name.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any], upSqls.asInstanceOf[js.Any], downSqls.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       *
       */
-    @scala.inline
-    def prettifyQuery(query: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prettifyQuery")(query.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def prettifyQuery(query: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prettifyQuery")(query.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Formats query parameters for migration queries if parameters actually exist
       */
-    @scala.inline
-    def queryParams(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("queryParams")().asInstanceOf[String]
-    @scala.inline
-    def queryParams(parameters: js.Array[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("queryParams")(parameters.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def queryParams(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("queryParams")().asInstanceOf[String]
+    inline def queryParams(parameters: js.Array[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("queryParams")(parameters.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

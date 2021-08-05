@@ -42,8 +42,7 @@ object fSMod {
     @JSImport("browserfs/dist/node/core/FS", "default.Stats")
     @js.native
     def Stats: TypeofStats = js.native
-    @scala.inline
-    def Stats_=(x: TypeofStats): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Stats")(x.asInstanceOf[js.Any])
+    inline def Stats_=(x: TypeofStats): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Stats")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -231,7 +230,7 @@ object fSMod {
     
     /* private */ def fd2file(fd: js.Any): js.Any = js.native
     
-    var fdMap: js.Any = js.native
+    /* private */ var fdMap: js.Any = js.native
     
     /**
       * Asynchronous fdatasync.
@@ -432,7 +431,7 @@ object fSMod {
     def mkdirSync(path: String, mode: String): Unit = js.native
     def mkdirSync(path: String, mode: Double): Unit = js.native
     
-    var nextFd: js.Any = js.native
+    /* private */ var nextFd: js.Any = js.native
     
     /**
       * Asynchronous file open.
@@ -668,7 +667,7 @@ object fSMod {
       */
     def rmdirSync(path: String): Unit = js.native
     
-    var root: js.Any = js.native
+    /* private */ var root: js.Any = js.native
     
     /**
       * Asynchronous `stat`.

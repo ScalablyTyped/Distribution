@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): WritableStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[WritableStream]
+  inline def apply(): WritableStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[WritableStream]
   
   @JSImport("gulp-dtsm", JSImport.Namespace)
   @js.native

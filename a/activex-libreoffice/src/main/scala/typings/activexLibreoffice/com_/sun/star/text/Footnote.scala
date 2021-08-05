@@ -20,8 +20,7 @@ trait Footnote
 }
 object Footnote {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     End: XTextRange,
     Label: String,
@@ -54,10 +53,8 @@ object Footnote {
     __obj.asInstanceOf[Footnote]
   }
   
-  @scala.inline
-  implicit class FootnoteMutableBuilder[Self <: Footnote] (val x: Self) extends AnyVal {
+  extension [Self <: Footnote](x: Self) {
     
-    @scala.inline
-    def setReferenceId(value: Double): Self = StObject.set(x, "ReferenceId", value.asInstanceOf[js.Any])
+    inline def setReferenceId(value: Double): Self = StObject.set(x, "ReferenceId", value.asInstanceOf[js.Any])
   }
 }

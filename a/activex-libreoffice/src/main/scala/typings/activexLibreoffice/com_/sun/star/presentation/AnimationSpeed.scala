@@ -17,14 +17,11 @@ trait AnimationSpeed extends StObject
 object AnimationSpeed {
   
   /** set the speed from the animation/fade to fast. */
-  @scala.inline
-  def FAST: `2` = 2.asInstanceOf[`2`]
+  inline def FAST: `2` = 2.asInstanceOf[`2`]
   
   /** set the speed from the animation/fade to medium. */
-  @scala.inline
-  def MEDIUM: `1` = 1.asInstanceOf[`1`]
+  inline def MEDIUM: `1` = 1.asInstanceOf[`1`]
   
   /** set the speed from the animation/fade to slow. */
-  @scala.inline
-  def SLOW: `0` = 0.asInstanceOf[`0`]
+  inline def SLOW: `0` = 0.asInstanceOf[`0`]
 }

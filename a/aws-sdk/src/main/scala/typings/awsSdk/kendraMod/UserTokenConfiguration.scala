@@ -18,25 +18,19 @@ trait UserTokenConfiguration extends StObject {
 }
 object UserTokenConfiguration {
   
-  @scala.inline
-  def apply(): UserTokenConfiguration = {
+  inline def apply(): UserTokenConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserTokenConfiguration]
   }
   
-  @scala.inline
-  implicit class UserTokenConfigurationMutableBuilder[Self <: UserTokenConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: UserTokenConfiguration](x: Self) {
     
-    @scala.inline
-    def setJsonTokenTypeConfiguration(value: JsonTokenTypeConfiguration): Self = StObject.set(x, "JsonTokenTypeConfiguration", value.asInstanceOf[js.Any])
+    inline def setJsonTokenTypeConfiguration(value: JsonTokenTypeConfiguration): Self = StObject.set(x, "JsonTokenTypeConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsonTokenTypeConfigurationUndefined: Self = StObject.set(x, "JsonTokenTypeConfiguration", js.undefined)
+    inline def setJsonTokenTypeConfigurationUndefined: Self = StObject.set(x, "JsonTokenTypeConfiguration", js.undefined)
     
-    @scala.inline
-    def setJwtTokenTypeConfiguration(value: JwtTokenTypeConfiguration): Self = StObject.set(x, "JwtTokenTypeConfiguration", value.asInstanceOf[js.Any])
+    inline def setJwtTokenTypeConfiguration(value: JwtTokenTypeConfiguration): Self = StObject.set(x, "JwtTokenTypeConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJwtTokenTypeConfigurationUndefined: Self = StObject.set(x, "JwtTokenTypeConfiguration", js.undefined)
+    inline def setJwtTokenTypeConfigurationUndefined: Self = StObject.set(x, "JwtTokenTypeConfiguration", js.undefined)
   }
 }

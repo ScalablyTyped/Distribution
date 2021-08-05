@@ -12,6 +12,5 @@ object sharedMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(fork: Fork): Geq = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fork.asInstanceOf[js.Any]).asInstanceOf[Geq]
+  inline def default(fork: Fork): Geq = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fork.asInstanceOf[js.Any]).asInstanceOf[Geq]
 }

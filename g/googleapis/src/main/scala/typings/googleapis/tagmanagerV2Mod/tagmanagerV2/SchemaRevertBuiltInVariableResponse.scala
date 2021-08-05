@@ -16,19 +16,15 @@ trait SchemaRevertBuiltInVariableResponse extends StObject {
 }
 object SchemaRevertBuiltInVariableResponse {
   
-  @scala.inline
-  def apply(): SchemaRevertBuiltInVariableResponse = {
+  inline def apply(): SchemaRevertBuiltInVariableResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRevertBuiltInVariableResponse]
   }
   
-  @scala.inline
-  implicit class SchemaRevertBuiltInVariableResponseMutableBuilder[Self <: SchemaRevertBuiltInVariableResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRevertBuiltInVariableResponse](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
   }
 }

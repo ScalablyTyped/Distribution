@@ -28,37 +28,27 @@ trait DescribeAssociationRequest extends StObject {
 }
 object DescribeAssociationRequest {
   
-  @scala.inline
-  def apply(): DescribeAssociationRequest = {
+  inline def apply(): DescribeAssociationRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAssociationRequest]
   }
   
-  @scala.inline
-  implicit class DescribeAssociationRequestMutableBuilder[Self <: DescribeAssociationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAssociationRequest](x: Self) {
     
-    @scala.inline
-    def setAssociationId(value: AssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
+    inline def setAssociationId(value: AssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationIdUndefined: Self = StObject.set(x, "AssociationId", js.undefined)
+    inline def setAssociationIdUndefined: Self = StObject.set(x, "AssociationId", js.undefined)
     
-    @scala.inline
-    def setAssociationVersion(value: AssociationVersion): Self = StObject.set(x, "AssociationVersion", value.asInstanceOf[js.Any])
+    inline def setAssociationVersion(value: AssociationVersion): Self = StObject.set(x, "AssociationVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationVersionUndefined: Self = StObject.set(x, "AssociationVersion", js.undefined)
+    inline def setAssociationVersionUndefined: Self = StObject.set(x, "AssociationVersion", js.undefined)
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
-    @scala.inline
-    def setName(value: DocumentARN): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: DocumentARN): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

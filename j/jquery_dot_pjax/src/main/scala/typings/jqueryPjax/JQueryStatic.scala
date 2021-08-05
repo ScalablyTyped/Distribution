@@ -22,16 +22,13 @@ trait JQueryStatic extends StObject {
 }
 object JQueryStatic {
   
-  @scala.inline
-  def apply(pjax: PjaxStatic): JQueryStatic = {
+  inline def apply(pjax: PjaxStatic): JQueryStatic = {
     val __obj = js.Dynamic.literal(pjax = pjax.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  @scala.inline
-  implicit class JQueryStaticMutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryStatic](x: Self) {
     
-    @scala.inline
-    def setPjax(value: PjaxStatic): Self = StObject.set(x, "pjax", value.asInstanceOf[js.Any])
+    inline def setPjax(value: PjaxStatic): Self = StObject.set(x, "pjax", value.asInstanceOf[js.Any])
   }
 }

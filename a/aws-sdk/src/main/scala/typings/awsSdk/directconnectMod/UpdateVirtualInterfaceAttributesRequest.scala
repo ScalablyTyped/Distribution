@@ -18,22 +18,17 @@ trait UpdateVirtualInterfaceAttributesRequest extends StObject {
 }
 object UpdateVirtualInterfaceAttributesRequest {
   
-  @scala.inline
-  def apply(virtualInterfaceId: VirtualInterfaceId): UpdateVirtualInterfaceAttributesRequest = {
+  inline def apply(virtualInterfaceId: VirtualInterfaceId): UpdateVirtualInterfaceAttributesRequest = {
     val __obj = js.Dynamic.literal(virtualInterfaceId = virtualInterfaceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateVirtualInterfaceAttributesRequest]
   }
   
-  @scala.inline
-  implicit class UpdateVirtualInterfaceAttributesRequestMutableBuilder[Self <: UpdateVirtualInterfaceAttributesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateVirtualInterfaceAttributesRequest](x: Self) {
     
-    @scala.inline
-    def setMtu(value: MTU): Self = StObject.set(x, "mtu", value.asInstanceOf[js.Any])
+    inline def setMtu(value: MTU): Self = StObject.set(x, "mtu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMtuUndefined: Self = StObject.set(x, "mtu", js.undefined)
+    inline def setMtuUndefined: Self = StObject.set(x, "mtu", js.undefined)
     
-    @scala.inline
-    def setVirtualInterfaceId(value: VirtualInterfaceId): Self = StObject.set(x, "virtualInterfaceId", value.asInstanceOf[js.Any])
+    inline def setVirtualInterfaceId(value: VirtualInterfaceId): Self = StObject.set(x, "virtualInterfaceId", value.asInstanceOf[js.Any])
   }
 }

@@ -18,46 +18,33 @@ trait Placement extends StObject {
 }
 object Placement {
   
-  @scala.inline
-  def apply(): Placement = {
+  inline def apply(): Placement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Placement]
   }
   
-  @scala.inline
-  implicit class PlacementMutableBuilder[Self <: Placement] (val x: Self) extends AnyVal {
+  extension [Self <: Placement](x: Self) {
     
-    @scala.inline
-    def setConstraints(value: js.Array[String]): Self = StObject.set(x, "Constraints", value.asInstanceOf[js.Any])
+    inline def setConstraints(value: js.Array[String]): Self = StObject.set(x, "Constraints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstraintsUndefined: Self = StObject.set(x, "Constraints", js.undefined)
+    inline def setConstraintsUndefined: Self = StObject.set(x, "Constraints", js.undefined)
     
-    @scala.inline
-    def setConstraintsVarargs(value: String*): Self = StObject.set(x, "Constraints", js.Array(value :_*))
+    inline def setConstraintsVarargs(value: String*): Self = StObject.set(x, "Constraints", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxReplicas(value: Double): Self = StObject.set(x, "MaxReplicas", value.asInstanceOf[js.Any])
+    inline def setMaxReplicas(value: Double): Self = StObject.set(x, "MaxReplicas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxReplicasUndefined: Self = StObject.set(x, "MaxReplicas", js.undefined)
+    inline def setMaxReplicasUndefined: Self = StObject.set(x, "MaxReplicas", js.undefined)
     
-    @scala.inline
-    def setPlatforms(value: js.Array[Architecture]): Self = StObject.set(x, "Platforms", value.asInstanceOf[js.Any])
+    inline def setPlatforms(value: js.Array[Architecture]): Self = StObject.set(x, "Platforms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformsUndefined: Self = StObject.set(x, "Platforms", js.undefined)
+    inline def setPlatformsUndefined: Self = StObject.set(x, "Platforms", js.undefined)
     
-    @scala.inline
-    def setPlatformsVarargs(value: Architecture*): Self = StObject.set(x, "Platforms", js.Array(value :_*))
+    inline def setPlatformsVarargs(value: Architecture*): Self = StObject.set(x, "Platforms", js.Array(value :_*))
     
-    @scala.inline
-    def setPreferences(value: js.Array[Spread]): Self = StObject.set(x, "Preferences", value.asInstanceOf[js.Any])
+    inline def setPreferences(value: js.Array[Spread]): Self = StObject.set(x, "Preferences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferencesUndefined: Self = StObject.set(x, "Preferences", js.undefined)
+    inline def setPreferencesUndefined: Self = StObject.set(x, "Preferences", js.undefined)
     
-    @scala.inline
-    def setPreferencesVarargs(value: Spread*): Self = StObject.set(x, "Preferences", js.Array(value :_*))
+    inline def setPreferencesVarargs(value: Spread*): Self = StObject.set(x, "Preferences", js.Array(value :_*))
   }
 }

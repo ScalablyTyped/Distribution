@@ -11,16 +11,13 @@ trait UseResizeColumnsState[D /* <: js.Object */] extends StObject {
 }
 object UseResizeColumnsState {
   
-  @scala.inline
-  def apply[D /* <: js.Object */](columnResizing: ColumnWidth): UseResizeColumnsState[D] = {
+  inline def apply[D /* <: js.Object */](columnResizing: ColumnWidth): UseResizeColumnsState[D] = {
     val __obj = js.Dynamic.literal(columnResizing = columnResizing.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseResizeColumnsState[D]]
   }
   
-  @scala.inline
-  implicit class UseResizeColumnsStateMutableBuilder[Self <: UseResizeColumnsState[?], D /* <: js.Object */] (val x: Self & UseResizeColumnsState[D]) extends AnyVal {
+  extension [Self <: UseResizeColumnsState[?], D /* <: js.Object */](x: Self & UseResizeColumnsState[D]) {
     
-    @scala.inline
-    def setColumnResizing(value: ColumnWidth): Self = StObject.set(x, "columnResizing", value.asInstanceOf[js.Any])
+    inline def setColumnResizing(value: ColumnWidth): Self = StObject.set(x, "columnResizing", value.asInstanceOf[js.Any])
   }
 }

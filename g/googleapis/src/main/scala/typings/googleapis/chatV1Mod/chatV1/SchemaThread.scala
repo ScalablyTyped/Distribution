@@ -17,19 +17,15 @@ trait SchemaThread extends StObject {
 }
 object SchemaThread {
   
-  @scala.inline
-  def apply(): SchemaThread = {
+  inline def apply(): SchemaThread = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaThread]
   }
   
-  @scala.inline
-  implicit class SchemaThreadMutableBuilder[Self <: SchemaThread] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaThread](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

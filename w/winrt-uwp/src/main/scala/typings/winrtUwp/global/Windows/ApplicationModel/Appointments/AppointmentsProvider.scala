@@ -63,40 +63,35 @@ object AppointmentsProvider {
     @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentsProvider.AppointmentsProviderLaunchActionVerbs.addAppointment")
     @js.native
     def addAppointment: String = js.native
-    @scala.inline
-    def addAppointment_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("addAppointment")(x.asInstanceOf[js.Any])
+    inline def addAppointment_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("addAppointment")(x.asInstanceOf[js.Any])
     
     /** Gets the remove-appointment action that the appointments provider performs. */
     /* static member */
     @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentsProvider.AppointmentsProviderLaunchActionVerbs.removeAppointment")
     @js.native
     def removeAppointment: String = js.native
-    @scala.inline
-    def removeAppointment_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("removeAppointment")(x.asInstanceOf[js.Any])
+    inline def removeAppointment_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("removeAppointment")(x.asInstanceOf[js.Any])
     
     /** Gets the replace-appointment action that the appointments provider performs. */
     /* static member */
     @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentsProvider.AppointmentsProviderLaunchActionVerbs.replaceAppointment")
     @js.native
     def replaceAppointment: String = js.native
-    @scala.inline
-    def replaceAppointment_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("replaceAppointment")(x.asInstanceOf[js.Any])
+    inline def replaceAppointment_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("replaceAppointment")(x.asInstanceOf[js.Any])
     
     /** Gets the show-appointment-details action that the appointments provider performs. */
     /* static member */
     @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentsProvider.AppointmentsProviderLaunchActionVerbs.showAppointmentDetails")
     @js.native
     def showAppointmentDetails: String = js.native
-    @scala.inline
-    def showAppointmentDetails_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showAppointmentDetails")(x.asInstanceOf[js.Any])
+    inline def showAppointmentDetails_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showAppointmentDetails")(x.asInstanceOf[js.Any])
     
     /** Gets the show-time-frame action of an appointment that the appointments provider performs. */
     /* static member */
     @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentsProvider.AppointmentsProviderLaunchActionVerbs.showTimeFrame")
     @js.native
     def showTimeFrame: String = js.native
-    @scala.inline
-    def showTimeFrame_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showTimeFrame")(x.asInstanceOf[js.Any])
+    inline def showTimeFrame_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showTimeFrame")(x.asInstanceOf[js.Any])
   }
   
   /** Represents the operation object associated with removing an appointment. Appointments provider apps use this info to perform the operation. */

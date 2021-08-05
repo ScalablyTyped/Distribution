@@ -13,16 +13,13 @@ trait ResponsesObject
 }
 object ResponsesObject {
   
-  @scala.inline
-  def apply(default: Response): ResponsesObject = {
+  inline def apply(default: Response): ResponsesObject = {
     val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponsesObject]
   }
   
-  @scala.inline
-  implicit class ResponsesObjectMutableBuilder[Self <: ResponsesObject] (val x: Self) extends AnyVal {
+  extension [Self <: ResponsesObject](x: Self) {
     
-    @scala.inline
-    def setDefault(value: Response): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: Response): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
   }
 }

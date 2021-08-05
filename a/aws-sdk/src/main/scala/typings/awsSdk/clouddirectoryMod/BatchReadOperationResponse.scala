@@ -18,25 +18,19 @@ trait BatchReadOperationResponse extends StObject {
 }
 object BatchReadOperationResponse {
   
-  @scala.inline
-  def apply(): BatchReadOperationResponse = {
+  inline def apply(): BatchReadOperationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchReadOperationResponse]
   }
   
-  @scala.inline
-  implicit class BatchReadOperationResponseMutableBuilder[Self <: BatchReadOperationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchReadOperationResponse](x: Self) {
     
-    @scala.inline
-    def setExceptionResponse(value: BatchReadException): Self = StObject.set(x, "ExceptionResponse", value.asInstanceOf[js.Any])
+    inline def setExceptionResponse(value: BatchReadException): Self = StObject.set(x, "ExceptionResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExceptionResponseUndefined: Self = StObject.set(x, "ExceptionResponse", js.undefined)
+    inline def setExceptionResponseUndefined: Self = StObject.set(x, "ExceptionResponse", js.undefined)
     
-    @scala.inline
-    def setSuccessfulResponse(value: BatchReadSuccessfulResponse): Self = StObject.set(x, "SuccessfulResponse", value.asInstanceOf[js.Any])
+    inline def setSuccessfulResponse(value: BatchReadSuccessfulResponse): Self = StObject.set(x, "SuccessfulResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessfulResponseUndefined: Self = StObject.set(x, "SuccessfulResponse", js.undefined)
+    inline def setSuccessfulResponseUndefined: Self = StObject.set(x, "SuccessfulResponse", js.undefined)
   }
 }

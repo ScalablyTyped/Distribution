@@ -16,17 +16,14 @@ trait RecordingFailed
 }
 object RecordingFailed {
   
-  @scala.inline
-  def apply(application: String, recording: LiveRecording, timestamp: Date, `type`: String): RecordingFailed = {
+  inline def apply(application: String, recording: LiveRecording, timestamp: Date, `type`: String): RecordingFailed = {
     val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any], recording = recording.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecordingFailed]
   }
   
-  @scala.inline
-  implicit class RecordingFailedMutableBuilder[Self <: RecordingFailed] (val x: Self) extends AnyVal {
+  extension [Self <: RecordingFailed](x: Self) {
     
-    @scala.inline
-    def setRecording(value: LiveRecording): Self = StObject.set(x, "recording", value.asInstanceOf[js.Any])
+    inline def setRecording(value: LiveRecording): Self = StObject.set(x, "recording", value.asInstanceOf[js.Any])
   }
 }

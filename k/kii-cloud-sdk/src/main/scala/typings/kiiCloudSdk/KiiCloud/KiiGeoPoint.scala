@@ -21,19 +21,15 @@ trait KiiGeoPoint extends StObject {
 }
 object KiiGeoPoint {
   
-  @scala.inline
-  def apply(getLatitude: () => Double, getLongitude: () => Double): KiiGeoPoint = {
+  inline def apply(getLatitude: () => Double, getLongitude: () => Double): KiiGeoPoint = {
     val __obj = js.Dynamic.literal(getLatitude = js.Any.fromFunction0(getLatitude), getLongitude = js.Any.fromFunction0(getLongitude))
     __obj.asInstanceOf[KiiGeoPoint]
   }
   
-  @scala.inline
-  implicit class KiiGeoPointMutableBuilder[Self <: KiiGeoPoint] (val x: Self) extends AnyVal {
+  extension [Self <: KiiGeoPoint](x: Self) {
     
-    @scala.inline
-    def setGetLatitude(value: () => Double): Self = StObject.set(x, "getLatitude", js.Any.fromFunction0(value))
+    inline def setGetLatitude(value: () => Double): Self = StObject.set(x, "getLatitude", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLongitude(value: () => Double): Self = StObject.set(x, "getLongitude", js.Any.fromFunction0(value))
+    inline def setGetLongitude(value: () => Double): Self = StObject.set(x, "getLongitude", js.Any.fromFunction0(value))
   }
 }

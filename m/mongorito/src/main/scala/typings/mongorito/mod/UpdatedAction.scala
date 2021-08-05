@@ -15,20 +15,16 @@ trait UpdatedAction
 }
 object UpdatedAction {
   
-  @scala.inline
-  def apply(fields: js.Object, `type`: UPDATED): UpdatedAction = {
+  inline def apply(fields: js.Object, `type`: UPDATED): UpdatedAction = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdatedAction]
   }
   
-  @scala.inline
-  implicit class UpdatedActionMutableBuilder[Self <: UpdatedAction] (val x: Self) extends AnyVal {
+  extension [Self <: UpdatedAction](x: Self) {
     
-    @scala.inline
-    def setFields(value: js.Object): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Object): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: UPDATED): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: UPDATED): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

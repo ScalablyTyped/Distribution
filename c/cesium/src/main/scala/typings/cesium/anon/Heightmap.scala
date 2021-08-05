@@ -49,8 +49,7 @@ trait Heightmap extends StObject {
 }
 object Heightmap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     height: Double,
     heightmap: Int8Array | Uint8Array | Int16Array | Uint16Array | Float32Array | Float64Array,
     nativeRectangle: typings.cesium.mod.Rectangle,
@@ -62,94 +61,64 @@ object Heightmap {
     __obj.asInstanceOf[Heightmap]
   }
   
-  @scala.inline
-  implicit class HeightmapMutableBuilder[Self <: Heightmap] (val x: Self) extends AnyVal {
+  extension [Self <: Heightmap](x: Self) {
     
-    @scala.inline
-    def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
+    inline def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEllipsoidUndefined: Self = StObject.set(x, "ellipsoid", js.undefined)
+    inline def setEllipsoidUndefined: Self = StObject.set(x, "ellipsoid", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightmap(value: Int8Array | Uint8Array | Int16Array | Uint16Array | Float32Array | Float64Array): Self = StObject.set(x, "heightmap", value.asInstanceOf[js.Any])
+    inline def setHeightmap(value: Int8Array | Uint8Array | Int16Array | Uint16Array | Float32Array | Float64Array): Self = StObject.set(x, "heightmap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsGeographic(value: Boolean): Self = StObject.set(x, "isGeographic", value.asInstanceOf[js.Any])
+    inline def setIsGeographic(value: Boolean): Self = StObject.set(x, "isGeographic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsGeographicUndefined: Self = StObject.set(x, "isGeographic", js.undefined)
+    inline def setIsGeographicUndefined: Self = StObject.set(x, "isGeographic", js.undefined)
     
-    @scala.inline
-    def setNativeRectangle(value: typings.cesium.mod.Rectangle): Self = StObject.set(x, "nativeRectangle", value.asInstanceOf[js.Any])
+    inline def setNativeRectangle(value: typings.cesium.mod.Rectangle): Self = StObject.set(x, "nativeRectangle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRectangle(value: typings.cesium.mod.Rectangle): Self = StObject.set(x, "rectangle", value.asInstanceOf[js.Any])
+    inline def setRectangle(value: typings.cesium.mod.Rectangle): Self = StObject.set(x, "rectangle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRectangleUndefined: Self = StObject.set(x, "rectangle", js.undefined)
+    inline def setRectangleUndefined: Self = StObject.set(x, "rectangle", js.undefined)
     
-    @scala.inline
-    def setRelativetoCenter(value: Cartesian3): Self = StObject.set(x, "relativetoCenter", value.asInstanceOf[js.Any])
+    inline def setRelativetoCenter(value: Cartesian3): Self = StObject.set(x, "relativetoCenter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativetoCenterUndefined: Self = StObject.set(x, "relativetoCenter", js.undefined)
+    inline def setRelativetoCenterUndefined: Self = StObject.set(x, "relativetoCenter", js.undefined)
     
-    @scala.inline
-    def setSkirtHeight(value: Double): Self = StObject.set(x, "skirtHeight", value.asInstanceOf[js.Any])
+    inline def setSkirtHeight(value: Double): Self = StObject.set(x, "skirtHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructure(value: js.Any): Self = StObject.set(x, "structure", value.asInstanceOf[js.Any])
+    inline def setStructure(value: js.Any): Self = StObject.set(x, "structure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructureUndefined: Self = StObject.set(x, "structure", js.undefined)
+    inline def setStructureUndefined: Self = StObject.set(x, "structure", js.undefined)
     
-    @scala.inline
-    def setStructureelementMultiplier(value: Double): Self = StObject.set(x, "structureelementMultiplier", value.asInstanceOf[js.Any])
+    inline def setStructureelementMultiplier(value: Double): Self = StObject.set(x, "structureelementMultiplier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructureelementMultiplierUndefined: Self = StObject.set(x, "structureelementMultiplier", js.undefined)
+    inline def setStructureelementMultiplierUndefined: Self = StObject.set(x, "structureelementMultiplier", js.undefined)
     
-    @scala.inline
-    def setStructureelementsPerHeight(value: Double): Self = StObject.set(x, "structureelementsPerHeight", value.asInstanceOf[js.Any])
+    inline def setStructureelementsPerHeight(value: Double): Self = StObject.set(x, "structureelementsPerHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructureelementsPerHeightUndefined: Self = StObject.set(x, "structureelementsPerHeight", js.undefined)
+    inline def setStructureelementsPerHeightUndefined: Self = StObject.set(x, "structureelementsPerHeight", js.undefined)
     
-    @scala.inline
-    def setStructureheightOffset(value: Double): Self = StObject.set(x, "structureheightOffset", value.asInstanceOf[js.Any])
+    inline def setStructureheightOffset(value: Double): Self = StObject.set(x, "structureheightOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructureheightOffsetUndefined: Self = StObject.set(x, "structureheightOffset", js.undefined)
+    inline def setStructureheightOffsetUndefined: Self = StObject.set(x, "structureheightOffset", js.undefined)
     
-    @scala.inline
-    def setStructureheightScale(value: Double): Self = StObject.set(x, "structureheightScale", value.asInstanceOf[js.Any])
+    inline def setStructureheightScale(value: Double): Self = StObject.set(x, "structureheightScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructureheightScaleUndefined: Self = StObject.set(x, "structureheightScale", js.undefined)
+    inline def setStructureheightScaleUndefined: Self = StObject.set(x, "structureheightScale", js.undefined)
     
-    @scala.inline
-    def setStructureisBigEndian(value: Boolean): Self = StObject.set(x, "structureisBigEndian", value.asInstanceOf[js.Any])
+    inline def setStructureisBigEndian(value: Boolean): Self = StObject.set(x, "structureisBigEndian", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructureisBigEndianUndefined: Self = StObject.set(x, "structureisBigEndian", js.undefined)
+    inline def setStructureisBigEndianUndefined: Self = StObject.set(x, "structureisBigEndian", js.undefined)
     
-    @scala.inline
-    def setStructurestride(value: Double): Self = StObject.set(x, "structurestride", value.asInstanceOf[js.Any])
+    inline def setStructurestride(value: Double): Self = StObject.set(x, "structurestride", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructurestrideUndefined: Self = StObject.set(x, "structurestride", js.undefined)
+    inline def setStructurestrideUndefined: Self = StObject.set(x, "structurestride", js.undefined)
     
-    @scala.inline
-    def setVertices(value: js.Array[js.Any] | Float32Array): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
+    inline def setVertices(value: js.Array[js.Any] | Float32Array): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticesVarargs(value: js.Any*): Self = StObject.set(x, "vertices", js.Array(value :_*))
+    inline def setVerticesVarargs(value: js.Any*): Self = StObject.set(x, "vertices", js.Array(value :_*))
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

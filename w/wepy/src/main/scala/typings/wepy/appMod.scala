@@ -22,11 +22,9 @@ object appMod {
   trait AddOn extends StObject
   object AddOn {
     
-    @scala.inline
-    def promisify: typings.wepy.wepyStrings.promisify = "promisify".asInstanceOf[typings.wepy.wepyStrings.promisify]
+    inline def promisify: typings.wepy.wepyStrings.promisify = "promisify".asInstanceOf[typings.wepy.wepyStrings.promisify]
     
-    @scala.inline
-    def requestfix: typings.wepy.wepyStrings.requestfix = "requestfix".asInstanceOf[typings.wepy.wepyStrings.requestfix]
+    inline def requestfix: typings.wepy.wepyStrings.requestfix = "requestfix".asInstanceOf[typings.wepy.wepyStrings.requestfix]
   }
   
   trait AppConfig extends StObject {
@@ -39,41 +37,30 @@ object appMod {
   }
   object AppConfig {
     
-    @scala.inline
-    def apply(): AppConfig = {
+    inline def apply(): AppConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AppConfig]
     }
     
-    @scala.inline
-    implicit class AppConfigMutableBuilder[Self <: AppConfig] (val x: Self) extends AnyVal {
+    extension [Self <: AppConfig](x: Self) {
       
-      @scala.inline
-      def setAppEvents(value: js.Array[String]): Self = StObject.set(x, "appEvents", value.asInstanceOf[js.Any])
+      inline def setAppEvents(value: js.Array[String]): Self = StObject.set(x, "appEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppEventsUndefined: Self = StObject.set(x, "appEvents", js.undefined)
+      inline def setAppEventsUndefined: Self = StObject.set(x, "appEvents", js.undefined)
       
-      @scala.inline
-      def setAppEventsVarargs(value: String*): Self = StObject.set(x, "appEvents", js.Array(value :_*))
+      inline def setAppEventsVarargs(value: String*): Self = StObject.set(x, "appEvents", js.Array(value :_*))
       
-      @scala.inline
-      def setNoPromiseAPI(value: js.Array[String] | StringDictionary[Boolean]): Self = StObject.set(x, "noPromiseAPI", value.asInstanceOf[js.Any])
+      inline def setNoPromiseAPI(value: js.Array[String] | StringDictionary[Boolean]): Self = StObject.set(x, "noPromiseAPI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoPromiseAPIUndefined: Self = StObject.set(x, "noPromiseAPI", js.undefined)
+      inline def setNoPromiseAPIUndefined: Self = StObject.set(x, "noPromiseAPI", js.undefined)
       
-      @scala.inline
-      def setNoPromiseAPIVarargs(value: String*): Self = StObject.set(x, "noPromiseAPI", js.Array(value :_*))
+      inline def setNoPromiseAPIVarargs(value: String*): Self = StObject.set(x, "noPromiseAPI", js.Array(value :_*))
       
-      @scala.inline
-      def setPageEvents(value: js.Array[String]): Self = StObject.set(x, "pageEvents", value.asInstanceOf[js.Any])
+      inline def setPageEvents(value: js.Array[String]): Self = StObject.set(x, "pageEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageEventsUndefined: Self = StObject.set(x, "pageEvents", js.undefined)
+      inline def setPageEventsUndefined: Self = StObject.set(x, "pageEvents", js.undefined)
       
-      @scala.inline
-      def setPageEventsVarargs(value: String*): Self = StObject.set(x, "pageEvents", js.Array(value :_*))
+      inline def setPageEventsVarargs(value: String*): Self = StObject.set(x, "pageEvents", js.Array(value :_*))
     }
   }
   

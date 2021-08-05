@@ -21,20 +21,17 @@ object SearchFieldType {
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SearchFieldType.Hidden")
   @js.native
   def Hidden: SearchFieldType = js.native
-  @scala.inline
-  def Hidden_=(x: SearchFieldType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Hidden")(x.asInstanceOf[js.Any])
+  inline def Hidden_=(x: SearchFieldType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Hidden")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SearchFieldType.Normal")
   @js.native
   def Normal: SearchFieldType = js.native
-  @scala.inline
-  def Normal_=(x: SearchFieldType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Normal")(x.asInstanceOf[js.Any])
+  inline def Normal_=(x: SearchFieldType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Normal")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SearchFieldType.ReadOnly")
   @js.native
   def ReadOnly: SearchFieldType = js.native
-  @scala.inline
-  def ReadOnly_=(x: SearchFieldType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReadOnly")(x.asInstanceOf[js.Any])
+  inline def ReadOnly_=(x: SearchFieldType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReadOnly")(x.asInstanceOf[js.Any])
 }

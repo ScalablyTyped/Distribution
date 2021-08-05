@@ -18,8 +18,7 @@ trait ICachedFileUpdaterUI extends StObject {
 }
 object ICachedFileUpdaterUI {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     onfileupdaterequested: js.Any,
     onuirequested: js.Any,
     title: String,
@@ -30,22 +29,16 @@ object ICachedFileUpdaterUI {
     __obj.asInstanceOf[ICachedFileUpdaterUI]
   }
   
-  @scala.inline
-  implicit class ICachedFileUpdaterUIMutableBuilder[Self <: ICachedFileUpdaterUI] (val x: Self) extends AnyVal {
+  extension [Self <: ICachedFileUpdaterUI](x: Self) {
     
-    @scala.inline
-    def setOnfileupdaterequested(value: js.Any): Self = StObject.set(x, "onfileupdaterequested", value.asInstanceOf[js.Any])
+    inline def setOnfileupdaterequested(value: js.Any): Self = StObject.set(x, "onfileupdaterequested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnuirequested(value: js.Any): Self = StObject.set(x, "onuirequested", value.asInstanceOf[js.Any])
+    inline def setOnuirequested(value: js.Any): Self = StObject.set(x, "onuirequested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUIStatus(value: UIStatus): Self = StObject.set(x, "uIStatus", value.asInstanceOf[js.Any])
+    inline def setUIStatus(value: UIStatus): Self = StObject.set(x, "uIStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTarget(value: CachedFileTarget): Self = StObject.set(x, "updateTarget", value.asInstanceOf[js.Any])
+    inline def setUpdateTarget(value: CachedFileTarget): Self = StObject.set(x, "updateTarget", value.asInstanceOf[js.Any])
   }
 }

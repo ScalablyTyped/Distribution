@@ -98,124 +98,85 @@ trait Deployment extends StObject {
 }
 object Deployment {
   
-  @scala.inline
-  def apply(): Deployment = {
+  inline def apply(): Deployment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Deployment]
   }
   
-  @scala.inline
-  implicit class DeploymentMutableBuilder[Self <: Deployment] (val x: Self) extends AnyVal {
+  extension [Self <: Deployment](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: Id): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: Id): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationIdUndefined: Self = StObject.set(x, "ApplicationId", js.undefined)
+    inline def setApplicationIdUndefined: Self = StObject.set(x, "ApplicationId", js.undefined)
     
-    @scala.inline
-    def setCompletedAt(value: Iso8601DateTime): Self = StObject.set(x, "CompletedAt", value.asInstanceOf[js.Any])
+    inline def setCompletedAt(value: Iso8601DateTime): Self = StObject.set(x, "CompletedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletedAtUndefined: Self = StObject.set(x, "CompletedAt", js.undefined)
+    inline def setCompletedAtUndefined: Self = StObject.set(x, "CompletedAt", js.undefined)
     
-    @scala.inline
-    def setConfigurationLocationUri(value: Uri): Self = StObject.set(x, "ConfigurationLocationUri", value.asInstanceOf[js.Any])
+    inline def setConfigurationLocationUri(value: Uri): Self = StObject.set(x, "ConfigurationLocationUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationLocationUriUndefined: Self = StObject.set(x, "ConfigurationLocationUri", js.undefined)
+    inline def setConfigurationLocationUriUndefined: Self = StObject.set(x, "ConfigurationLocationUri", js.undefined)
     
-    @scala.inline
-    def setConfigurationName(value: Name): Self = StObject.set(x, "ConfigurationName", value.asInstanceOf[js.Any])
+    inline def setConfigurationName(value: Name): Self = StObject.set(x, "ConfigurationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationNameUndefined: Self = StObject.set(x, "ConfigurationName", js.undefined)
+    inline def setConfigurationNameUndefined: Self = StObject.set(x, "ConfigurationName", js.undefined)
     
-    @scala.inline
-    def setConfigurationProfileId(value: Id): Self = StObject.set(x, "ConfigurationProfileId", value.asInstanceOf[js.Any])
+    inline def setConfigurationProfileId(value: Id): Self = StObject.set(x, "ConfigurationProfileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationProfileIdUndefined: Self = StObject.set(x, "ConfigurationProfileId", js.undefined)
+    inline def setConfigurationProfileIdUndefined: Self = StObject.set(x, "ConfigurationProfileId", js.undefined)
     
-    @scala.inline
-    def setConfigurationVersion(value: Version): Self = StObject.set(x, "ConfigurationVersion", value.asInstanceOf[js.Any])
+    inline def setConfigurationVersion(value: Version): Self = StObject.set(x, "ConfigurationVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationVersionUndefined: Self = StObject.set(x, "ConfigurationVersion", js.undefined)
+    inline def setConfigurationVersionUndefined: Self = StObject.set(x, "ConfigurationVersion", js.undefined)
     
-    @scala.inline
-    def setDeploymentDurationInMinutes(value: MinutesBetween0And24Hours): Self = StObject.set(x, "DeploymentDurationInMinutes", value.asInstanceOf[js.Any])
+    inline def setDeploymentDurationInMinutes(value: MinutesBetween0And24Hours): Self = StObject.set(x, "DeploymentDurationInMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentDurationInMinutesUndefined: Self = StObject.set(x, "DeploymentDurationInMinutes", js.undefined)
+    inline def setDeploymentDurationInMinutesUndefined: Self = StObject.set(x, "DeploymentDurationInMinutes", js.undefined)
     
-    @scala.inline
-    def setDeploymentNumber(value: Integer): Self = StObject.set(x, "DeploymentNumber", value.asInstanceOf[js.Any])
+    inline def setDeploymentNumber(value: Integer): Self = StObject.set(x, "DeploymentNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentNumberUndefined: Self = StObject.set(x, "DeploymentNumber", js.undefined)
+    inline def setDeploymentNumberUndefined: Self = StObject.set(x, "DeploymentNumber", js.undefined)
     
-    @scala.inline
-    def setDeploymentStrategyId(value: Id): Self = StObject.set(x, "DeploymentStrategyId", value.asInstanceOf[js.Any])
+    inline def setDeploymentStrategyId(value: Id): Self = StObject.set(x, "DeploymentStrategyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentStrategyIdUndefined: Self = StObject.set(x, "DeploymentStrategyId", js.undefined)
+    inline def setDeploymentStrategyIdUndefined: Self = StObject.set(x, "DeploymentStrategyId", js.undefined)
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setEnvironmentId(value: Id): Self = StObject.set(x, "EnvironmentId", value.asInstanceOf[js.Any])
+    inline def setEnvironmentId(value: Id): Self = StObject.set(x, "EnvironmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentIdUndefined: Self = StObject.set(x, "EnvironmentId", js.undefined)
+    inline def setEnvironmentIdUndefined: Self = StObject.set(x, "EnvironmentId", js.undefined)
     
-    @scala.inline
-    def setEventLog(value: DeploymentEvents): Self = StObject.set(x, "EventLog", value.asInstanceOf[js.Any])
+    inline def setEventLog(value: DeploymentEvents): Self = StObject.set(x, "EventLog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventLogUndefined: Self = StObject.set(x, "EventLog", js.undefined)
+    inline def setEventLogUndefined: Self = StObject.set(x, "EventLog", js.undefined)
     
-    @scala.inline
-    def setEventLogVarargs(value: DeploymentEvent*): Self = StObject.set(x, "EventLog", js.Array(value :_*))
+    inline def setEventLogVarargs(value: DeploymentEvent*): Self = StObject.set(x, "EventLog", js.Array(value :_*))
     
-    @scala.inline
-    def setFinalBakeTimeInMinutes(value: MinutesBetween0And24Hours): Self = StObject.set(x, "FinalBakeTimeInMinutes", value.asInstanceOf[js.Any])
+    inline def setFinalBakeTimeInMinutes(value: MinutesBetween0And24Hours): Self = StObject.set(x, "FinalBakeTimeInMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalBakeTimeInMinutesUndefined: Self = StObject.set(x, "FinalBakeTimeInMinutes", js.undefined)
+    inline def setFinalBakeTimeInMinutesUndefined: Self = StObject.set(x, "FinalBakeTimeInMinutes", js.undefined)
     
-    @scala.inline
-    def setGrowthFactor(value: Percentage): Self = StObject.set(x, "GrowthFactor", value.asInstanceOf[js.Any])
+    inline def setGrowthFactor(value: Percentage): Self = StObject.set(x, "GrowthFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrowthFactorUndefined: Self = StObject.set(x, "GrowthFactor", js.undefined)
+    inline def setGrowthFactorUndefined: Self = StObject.set(x, "GrowthFactor", js.undefined)
     
-    @scala.inline
-    def setGrowthType(value: GrowthType): Self = StObject.set(x, "GrowthType", value.asInstanceOf[js.Any])
+    inline def setGrowthType(value: GrowthType): Self = StObject.set(x, "GrowthType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrowthTypeUndefined: Self = StObject.set(x, "GrowthType", js.undefined)
+    inline def setGrowthTypeUndefined: Self = StObject.set(x, "GrowthType", js.undefined)
     
-    @scala.inline
-    def setPercentageComplete(value: Percentage): Self = StObject.set(x, "PercentageComplete", value.asInstanceOf[js.Any])
+    inline def setPercentageComplete(value: Percentage): Self = StObject.set(x, "PercentageComplete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentageCompleteUndefined: Self = StObject.set(x, "PercentageComplete", js.undefined)
+    inline def setPercentageCompleteUndefined: Self = StObject.set(x, "PercentageComplete", js.undefined)
     
-    @scala.inline
-    def setStartedAt(value: Iso8601DateTime): Self = StObject.set(x, "StartedAt", value.asInstanceOf[js.Any])
+    inline def setStartedAt(value: Iso8601DateTime): Self = StObject.set(x, "StartedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartedAtUndefined: Self = StObject.set(x, "StartedAt", js.undefined)
+    inline def setStartedAtUndefined: Self = StObject.set(x, "StartedAt", js.undefined)
     
-    @scala.inline
-    def setState(value: DeploymentState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: DeploymentState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

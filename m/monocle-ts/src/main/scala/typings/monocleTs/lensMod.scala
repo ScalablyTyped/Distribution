@@ -28,21 +28,17 @@ object lensMod {
   val URI: /* "monocle-ts/Lens" */ String = js.native
   type URI = /* "monocle-ts/Lens" */ String
   
-  @scala.inline
-  def asOptional[S, A](sa: Lens[S, A]): Optional[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("asOptional")(sa.asInstanceOf[js.Any]).asInstanceOf[Optional[S, A]]
+  inline def asOptional[S, A](sa: Lens[S, A]): Optional[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("asOptional")(sa.asInstanceOf[js.Any]).asInstanceOf[Optional[S, A]]
   
-  @scala.inline
-  def asTraversal[S, A](sa: Lens[S, A]): Traversal[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("asTraversal")(sa.asInstanceOf[js.Any]).asInstanceOf[Traversal[S, A]]
+  inline def asTraversal[S, A](sa: Lens[S, A]): Traversal[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("asTraversal")(sa.asInstanceOf[js.Any]).asInstanceOf[Traversal[S, A]]
   
-  @scala.inline
-  def atKey(key: String): js.Function1[/* sa */ Lens[js.Any, Record[String, js.Any]], Lens[js.Any, Option_[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("atKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Lens[js.Any, Record[String, js.Any]], Lens[js.Any, Option_[js.Any]]]]
+  inline def atKey(key: String): js.Function1[/* sa */ Lens[js.Any, Record[String, js.Any]], Lens[js.Any, Option_[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("atKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Lens[js.Any, Record[String, js.Any]], Lens[js.Any, Option_[js.Any]]]]
   
   @JSImport("monocle-ts/lib/Lens", "categoryLens")
   @js.native
   val categoryLens: Category2[typings.monocleTs.lensMod.URI] = js.native
   
-  @scala.inline
-  def component[A /* <: js.Array[js.Any] */, P /* <: /* keyof A */ String */](prop: P): js.Function1[
+  inline def component[A /* <: js.Array[js.Any] */, P /* <: /* keyof A */ String */](prop: P): js.Function1[
     /* sa */ Lens[js.Any, A], 
     Lens[
       js.Any, 
@@ -56,51 +52,37 @@ object lensMod {
     ]
   ]]
   
-  @scala.inline
-  def compose[A, B](ab: Lens[A, B]): js.Function1[/* sa */ Lens[js.Any, A], Lens[js.Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(ab.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Lens[js.Any, A], Lens[js.Any, B]]]
+  inline def compose[A, B](ab: Lens[A, B]): js.Function1[/* sa */ Lens[js.Any, A], Lens[js.Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(ab.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Lens[js.Any, A], Lens[js.Any, B]]]
   
-  @scala.inline
-  def composeOptional[A, B](ab: Optional[A, B]): js.Function1[/* sa */ Lens[js.Any, A], Optional[js.Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeOptional")(ab.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Lens[js.Any, A], Optional[js.Any, B]]]
+  inline def composeOptional[A, B](ab: Optional[A, B]): js.Function1[/* sa */ Lens[js.Any, A], Optional[js.Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeOptional")(ab.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Lens[js.Any, A], Optional[js.Any, B]]]
   
-  @scala.inline
-  def composePrism[A, B](ab: Prism[A, B]): js.Function1[/* sa */ Lens[js.Any, A], Optional[js.Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("composePrism")(ab.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Lens[js.Any, A], Optional[js.Any, B]]]
+  inline def composePrism[A, B](ab: Prism[A, B]): js.Function1[/* sa */ Lens[js.Any, A], Optional[js.Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("composePrism")(ab.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Lens[js.Any, A], Optional[js.Any, B]]]
   
-  @scala.inline
-  def filter[A](predicate: Predicate[A]): js.Function1[/* sa */ Lens[js.Any, A], Optional[js.Any, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Lens[js.Any, A], Optional[js.Any, A]]]
+  inline def filter[A](predicate: Predicate[A]): js.Function1[/* sa */ Lens[js.Any, A], Optional[js.Any, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Lens[js.Any, A], Optional[js.Any, A]]]
   
-  @scala.inline
-  def filter_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* sa */ Lens[js.Any, A], Optional[js.Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Lens[js.Any, A], Optional[js.Any, B]]]
+  inline def filter_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* sa */ Lens[js.Any, A], Optional[js.Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Lens[js.Any, A], Optional[js.Any, B]]]
   
-  @scala.inline
-  def findFirst[A](predicate: Predicate[A]): js.Function1[/* sa */ Lens[js.Any, js.Array[A]], Optional[js.Any, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirst")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Lens[js.Any, js.Array[A]], Optional[js.Any, A]]]
+  inline def findFirst[A](predicate: Predicate[A]): js.Function1[/* sa */ Lens[js.Any, js.Array[A]], Optional[js.Any, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirst")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Lens[js.Any, js.Array[A]], Optional[js.Any, A]]]
   
-  @scala.inline
-  def fromNullable[S, A](sa: Lens[S, A]): Optional[S, NonNullable[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNullable")(sa.asInstanceOf[js.Any]).asInstanceOf[Optional[S, NonNullable[A]]]
+  inline def fromNullable[S, A](sa: Lens[S, A]): Optional[S, NonNullable[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNullable")(sa.asInstanceOf[js.Any]).asInstanceOf[Optional[S, NonNullable[A]]]
   
-  @scala.inline
-  def id[S](): Lens[S, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("id")().asInstanceOf[Lens[S, S]]
+  inline def id[S](): Lens[S, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("id")().asInstanceOf[Lens[S, S]]
   
-  @scala.inline
-  def imap[A, B](f: js.Function1[/* a */ A, B], g: js.Function1[/* b */ B, A]): js.Function1[/* sa */ Lens[js.Any, A], Lens[js.Any, B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("imap")(f.asInstanceOf[js.Any], g.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* sa */ Lens[js.Any, A], Lens[js.Any, B]]]
+  inline def imap[A, B](f: js.Function1[/* a */ A, B], g: js.Function1[/* b */ B, A]): js.Function1[/* sa */ Lens[js.Any, A], Lens[js.Any, B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("imap")(f.asInstanceOf[js.Any], g.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* sa */ Lens[js.Any, A], Lens[js.Any, B]]]
   
-  @scala.inline
-  def index(i: Double): js.Function1[/* sa */ Lens[js.Any, js.Array[js.Any]], Optional[js.Any, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("index")(i.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Lens[js.Any, js.Array[js.Any]], Optional[js.Any, js.Any]]]
+  inline def index(i: Double): js.Function1[/* sa */ Lens[js.Any, js.Array[js.Any]], Optional[js.Any, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("index")(i.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Lens[js.Any, js.Array[js.Any]], Optional[js.Any, js.Any]]]
   
   @JSImport("monocle-ts/lib/Lens", "invariantLens")
   @js.native
   val invariantLens: Invariant2[typings.monocleTs.lensMod.URI] = js.native
   
-  @scala.inline
-  def key(key: String): js.Function1[/* sa */ Lens[js.Any, Record[String, js.Any]], Optional[js.Any, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("key")(key.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Lens[js.Any, Record[String, js.Any]], Optional[js.Any, js.Any]]]
+  inline def key(key: String): js.Function1[/* sa */ Lens[js.Any, Record[String, js.Any]], Optional[js.Any, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("key")(key.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Lens[js.Any, Record[String, js.Any]], Optional[js.Any, js.Any]]]
   
-  @scala.inline
-  def left[S, E, A](sea: Lens[S, Either_[E, A]]): Optional[S, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("left")(sea.asInstanceOf[js.Any]).asInstanceOf[Optional[S, E]]
+  inline def left[S, E, A](sea: Lens[S, Either_[E, A]]): Optional[S, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("left")(sea.asInstanceOf[js.Any]).asInstanceOf[Optional[S, E]]
   
-  @scala.inline
-  def modify[A](f: js.Function1[/* a */ A, A]): js.Function1[/* sa */ Lens[js.Any, A], js.Function1[/* s */ js.Any, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("modify")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Lens[js.Any, A], js.Function1[/* s */ js.Any, js.Any]]]
+  inline def modify[A](f: js.Function1[/* a */ A, A]): js.Function1[/* sa */ Lens[js.Any, A], js.Function1[/* s */ js.Any, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("modify")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Lens[js.Any, A], js.Function1[/* s */ js.Any, js.Any]]]
   
-  @scala.inline
-  def prop[A, P /* <: /* keyof A */ String */](prop: P): js.Function1[
+  inline def prop[A, P /* <: /* keyof A */ String */](prop: P): js.Function1[
     /* sa */ Lens[js.Any, A], 
     Lens[
       js.Any, 
@@ -114,8 +96,7 @@ object lensMod {
     ]
   ]]
   
-  @scala.inline
-  def props[A, P /* <: /* keyof A */ String */](
+  inline def props[A, P /* <: /* keyof A */ String */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param props because its type [P, P, ...Array<P>] is not an array type */ props: Array[P]
   ): js.Function1[
     /* sa */ Lens[js.Any, A], 
@@ -135,14 +116,11 @@ object lensMod {
     ]
   ]]
   
-  @scala.inline
-  def right[S, E, A](sea: Lens[S, Either_[E, A]]): Optional[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("right")(sea.asInstanceOf[js.Any]).asInstanceOf[Optional[S, A]]
+  inline def right[S, E, A](sea: Lens[S, Either_[E, A]]): Optional[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("right")(sea.asInstanceOf[js.Any]).asInstanceOf[Optional[S, A]]
   
-  @scala.inline
-  def some[S, A](soa: Lens[S, Option_[A]]): Optional[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("some")(soa.asInstanceOf[js.Any]).asInstanceOf[Optional[S, A]]
+  inline def some[S, A](soa: Lens[S, Option_[A]]): Optional[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("some")(soa.asInstanceOf[js.Any]).asInstanceOf[Optional[S, A]]
   
-  @scala.inline
-  def traverse[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](T: Traversable1[T]): js.Function1[
+  inline def traverse[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](T: Traversable1[T]): js.Function1[
     /* sta */ Lens[
       js.Any, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<T, A> */ js.Any
@@ -164,20 +142,16 @@ object lensMod {
   }
   object Lens {
     
-    @scala.inline
-    def apply[S, A](get: S => A, set: A => js.Function1[/* s */ S, S]): Lens[S, A] = {
+    inline def apply[S, A](get: S => A, set: A => js.Function1[/* s */ S, S]): Lens[S, A] = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), set = js.Any.fromFunction1(set))
       __obj.asInstanceOf[Lens[S, A]]
     }
     
-    @scala.inline
-    implicit class LensMutableBuilder[Self <: Lens[?, ?], S, A] (val x: Self & (Lens[S, A])) extends AnyVal {
+    extension [Self <: Lens[?, ?], S, A](x: Self & (Lens[S, A])) {
       
-      @scala.inline
-      def setGet(value: S => A): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: S => A): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet(value: A => js.Function1[/* s */ S, S]): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+      inline def setSet(value: A => js.Function1[/* s */ S, S]): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
     }
   }
   

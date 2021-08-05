@@ -16,37 +16,27 @@ trait FinishingTrimming extends StObject {
 }
 object FinishingTrimming {
   
-  @scala.inline
-  def apply(): FinishingTrimming = {
+  inline def apply(): FinishingTrimming = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FinishingTrimming]
   }
   
-  @scala.inline
-  implicit class FinishingTrimmingMutableBuilder[Self <: FinishingTrimming] (val x: Self) extends AnyVal {
+  extension [Self <: FinishingTrimming](x: Self) {
     
-    @scala.inline
-    def `setTrimming-offset`(value: Double): Self = StObject.set(x, "trimming-offset", value.asInstanceOf[js.Any])
+    inline def `setTrimming-offset`(value: Double): Self = StObject.set(x, "trimming-offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setTrimming-offsetUndefined`: Self = StObject.set(x, "trimming-offset", js.undefined)
+    inline def `setTrimming-offsetUndefined`: Self = StObject.set(x, "trimming-offset", js.undefined)
     
-    @scala.inline
-    def `setTrimming-reference-edge`(value: ReferenceEdge): Self = StObject.set(x, "trimming-reference-edge", value.asInstanceOf[js.Any])
+    inline def `setTrimming-reference-edge`(value: ReferenceEdge): Self = StObject.set(x, "trimming-reference-edge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setTrimming-reference-edgeUndefined`: Self = StObject.set(x, "trimming-reference-edge", js.undefined)
+    inline def `setTrimming-reference-edgeUndefined`: Self = StObject.set(x, "trimming-reference-edge", js.undefined)
     
-    @scala.inline
-    def `setTrimming-type`(value: TrimmingType): Self = StObject.set(x, "trimming-type", value.asInstanceOf[js.Any])
+    inline def `setTrimming-type`(value: TrimmingType): Self = StObject.set(x, "trimming-type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setTrimming-typeUndefined`: Self = StObject.set(x, "trimming-type", js.undefined)
+    inline def `setTrimming-typeUndefined`: Self = StObject.set(x, "trimming-type", js.undefined)
     
-    @scala.inline
-    def `setTrimming-when`(value: String): Self = StObject.set(x, "trimming-when", value.asInstanceOf[js.Any])
+    inline def `setTrimming-when`(value: String): Self = StObject.set(x, "trimming-when", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setTrimming-whenUndefined`: Self = StObject.set(x, "trimming-when", js.undefined)
+    inline def `setTrimming-whenUndefined`: Self = StObject.set(x, "trimming-when", js.undefined)
   }
 }

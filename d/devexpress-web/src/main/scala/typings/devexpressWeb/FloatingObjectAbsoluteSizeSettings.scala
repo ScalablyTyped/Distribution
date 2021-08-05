@@ -21,19 +21,15 @@ trait FloatingObjectAbsoluteSizeSettings extends StObject {
 }
 object FloatingObjectAbsoluteSizeSettings {
   
-  @scala.inline
-  def apply(absoluteHeight: Double, absoluteWidth: Double): FloatingObjectAbsoluteSizeSettings = {
+  inline def apply(absoluteHeight: Double, absoluteWidth: Double): FloatingObjectAbsoluteSizeSettings = {
     val __obj = js.Dynamic.literal(absoluteHeight = absoluteHeight.asInstanceOf[js.Any], absoluteWidth = absoluteWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[FloatingObjectAbsoluteSizeSettings]
   }
   
-  @scala.inline
-  implicit class FloatingObjectAbsoluteSizeSettingsMutableBuilder[Self <: FloatingObjectAbsoluteSizeSettings] (val x: Self) extends AnyVal {
+  extension [Self <: FloatingObjectAbsoluteSizeSettings](x: Self) {
     
-    @scala.inline
-    def setAbsoluteHeight(value: Double): Self = StObject.set(x, "absoluteHeight", value.asInstanceOf[js.Any])
+    inline def setAbsoluteHeight(value: Double): Self = StObject.set(x, "absoluteHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbsoluteWidth(value: Double): Self = StObject.set(x, "absoluteWidth", value.asInstanceOf[js.Any])
+    inline def setAbsoluteWidth(value: Double): Self = StObject.set(x, "absoluteWidth", value.asInstanceOf[js.Any])
   }
 }

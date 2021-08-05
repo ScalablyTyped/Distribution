@@ -43,55 +43,39 @@ trait CreateNamespaceResponse extends StObject {
 }
 object CreateNamespaceResponse {
   
-  @scala.inline
-  def apply(): CreateNamespaceResponse = {
+  inline def apply(): CreateNamespaceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateNamespaceResponse]
   }
   
-  @scala.inline
-  implicit class CreateNamespaceResponseMutableBuilder[Self <: CreateNamespaceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateNamespaceResponse](x: Self) {
     
-    @scala.inline
-    def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setCapacityRegion(value: String): Self = StObject.set(x, "CapacityRegion", value.asInstanceOf[js.Any])
+    inline def setCapacityRegion(value: String): Self = StObject.set(x, "CapacityRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapacityRegionUndefined: Self = StObject.set(x, "CapacityRegion", js.undefined)
+    inline def setCapacityRegionUndefined: Self = StObject.set(x, "CapacityRegion", js.undefined)
     
-    @scala.inline
-    def setCreationStatus(value: NamespaceStatus): Self = StObject.set(x, "CreationStatus", value.asInstanceOf[js.Any])
+    inline def setCreationStatus(value: NamespaceStatus): Self = StObject.set(x, "CreationStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationStatusUndefined: Self = StObject.set(x, "CreationStatus", js.undefined)
+    inline def setCreationStatusUndefined: Self = StObject.set(x, "CreationStatus", js.undefined)
     
-    @scala.inline
-    def setIdentityStore(value: IdentityStore): Self = StObject.set(x, "IdentityStore", value.asInstanceOf[js.Any])
+    inline def setIdentityStore(value: IdentityStore): Self = StObject.set(x, "IdentityStore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityStoreUndefined: Self = StObject.set(x, "IdentityStore", js.undefined)
+    inline def setIdentityStoreUndefined: Self = StObject.set(x, "IdentityStore", js.undefined)
     
-    @scala.inline
-    def setName(value: Namespace): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: Namespace): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: StatusCode): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: StatusCode): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

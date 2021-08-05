@@ -23,28 +23,21 @@ trait ManagedRuleGroupStatement extends StObject {
 }
 object ManagedRuleGroupStatement {
   
-  @scala.inline
-  def apply(Name: EntityName, VendorName: VendorName): ManagedRuleGroupStatement = {
+  inline def apply(Name: EntityName, VendorName: VendorName): ManagedRuleGroupStatement = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], VendorName = VendorName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagedRuleGroupStatement]
   }
   
-  @scala.inline
-  implicit class ManagedRuleGroupStatementMutableBuilder[Self <: ManagedRuleGroupStatement] (val x: Self) extends AnyVal {
+  extension [Self <: ManagedRuleGroupStatement](x: Self) {
     
-    @scala.inline
-    def setExcludedRules(value: ExcludedRules): Self = StObject.set(x, "ExcludedRules", value.asInstanceOf[js.Any])
+    inline def setExcludedRules(value: ExcludedRules): Self = StObject.set(x, "ExcludedRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedRulesUndefined: Self = StObject.set(x, "ExcludedRules", js.undefined)
+    inline def setExcludedRulesUndefined: Self = StObject.set(x, "ExcludedRules", js.undefined)
     
-    @scala.inline
-    def setExcludedRulesVarargs(value: ExcludedRule*): Self = StObject.set(x, "ExcludedRules", js.Array(value :_*))
+    inline def setExcludedRulesVarargs(value: ExcludedRule*): Self = StObject.set(x, "ExcludedRules", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: EntityName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: EntityName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVendorName(value: VendorName): Self = StObject.set(x, "VendorName", value.asInstanceOf[js.Any])
+    inline def setVendorName(value: VendorName): Self = StObject.set(x, "VendorName", value.asInstanceOf[js.Any])
   }
 }

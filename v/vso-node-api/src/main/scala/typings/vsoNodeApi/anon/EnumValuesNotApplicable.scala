@@ -10,16 +10,13 @@ trait EnumValuesNotApplicable extends StObject {
 }
 object EnumValuesNotApplicable {
   
-  @scala.inline
-  def apply(enumValues: NotApplicable): EnumValuesNotApplicable = {
+  inline def apply(enumValues: NotApplicable): EnumValuesNotApplicable = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesNotApplicable]
   }
   
-  @scala.inline
-  implicit class EnumValuesNotApplicableMutableBuilder[Self <: EnumValuesNotApplicable] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesNotApplicable](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: NotApplicable): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: NotApplicable): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

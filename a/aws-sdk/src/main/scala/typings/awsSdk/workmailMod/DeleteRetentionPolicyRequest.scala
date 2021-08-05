@@ -18,19 +18,15 @@ trait DeleteRetentionPolicyRequest extends StObject {
 }
 object DeleteRetentionPolicyRequest {
   
-  @scala.inline
-  def apply(Id: ShortString, OrganizationId: OrganizationId): DeleteRetentionPolicyRequest = {
+  inline def apply(Id: ShortString, OrganizationId: OrganizationId): DeleteRetentionPolicyRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], OrganizationId = OrganizationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteRetentionPolicyRequest]
   }
   
-  @scala.inline
-  implicit class DeleteRetentionPolicyRequestMutableBuilder[Self <: DeleteRetentionPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteRetentionPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: ShortString): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: ShortString): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
+    inline def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
   }
 }

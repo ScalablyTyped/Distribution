@@ -51,9 +51,7 @@ object Broker {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(config: BrokerConfig, components: js.Any, next: CreateCb): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], components.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def create(config: BrokerConfig, components: js.Any, next: CreateCb): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], components.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /* static member */
-  @scala.inline
-  def create(config: BrokerConfig, next: CreateCb): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def create(config: BrokerConfig, next: CreateCb): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -23,8 +23,7 @@ object input {
        with XInitialization
   object SaxDocumentHandler {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       characters: String => Unit,
       endDocument: () => Unit,
@@ -120,8 +119,7 @@ object input {
   }
   object XAttributes {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Length: Double,
       acquire: () => Unit,
       getIndexByQName: String => Double,
@@ -140,38 +138,27 @@ object input {
       __obj.asInstanceOf[XAttributes]
     }
     
-    @scala.inline
-    implicit class XAttributesMutableBuilder[Self <: XAttributes] (val x: Self) extends AnyVal {
+    extension [Self <: XAttributes](x: Self) {
       
-      @scala.inline
-      def setGetIndexByQName(value: String => Double): Self = StObject.set(x, "getIndexByQName", js.Any.fromFunction1(value))
+      inline def setGetIndexByQName(value: String => Double): Self = StObject.set(x, "getIndexByQName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetIndexByUidName(value: (Double, String) => Double): Self = StObject.set(x, "getIndexByUidName", js.Any.fromFunction2(value))
+      inline def setGetIndexByUidName(value: (Double, String) => Double): Self = StObject.set(x, "getIndexByUidName", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
+      inline def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLocalNameByIndex(value: Double => String): Self = StObject.set(x, "getLocalNameByIndex", js.Any.fromFunction1(value))
+      inline def setGetLocalNameByIndex(value: Double => String): Self = StObject.set(x, "getLocalNameByIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetQNameByIndex(value: Double => String): Self = StObject.set(x, "getQNameByIndex", js.Any.fromFunction1(value))
+      inline def setGetQNameByIndex(value: Double => String): Self = StObject.set(x, "getQNameByIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetTypeByIndex(value: Double => String): Self = StObject.set(x, "getTypeByIndex", js.Any.fromFunction1(value))
+      inline def setGetTypeByIndex(value: Double => String): Self = StObject.set(x, "getTypeByIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetUidByIndex(value: Double => Double): Self = StObject.set(x, "getUidByIndex", js.Any.fromFunction1(value))
+      inline def setGetUidByIndex(value: Double => Double): Self = StObject.set(x, "getUidByIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetValueByIndex(value: Double => String): Self = StObject.set(x, "getValueByIndex", js.Any.fromFunction1(value))
+      inline def setGetValueByIndex(value: Double => String): Self = StObject.set(x, "getValueByIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetValueByUidName(value: (Double, String) => String): Self = StObject.set(x, "getValueByUidName", js.Any.fromFunction2(value))
+      inline def setGetValueByUidName(value: (Double, String) => String): Self = StObject.set(x, "getValueByUidName", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "Length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "Length", value.asInstanceOf[js.Any])
     }
   }
   
@@ -261,8 +248,7 @@ object input {
   }
   object XElement {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Attributes: XAttributes,
       LocalName: String,
       Parent: XElement,
@@ -284,47 +270,33 @@ object input {
       __obj.asInstanceOf[XElement]
     }
     
-    @scala.inline
-    implicit class XElementMutableBuilder[Self <: XElement] (val x: Self) extends AnyVal {
+    extension [Self <: XElement](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: XAttributes): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: XAttributes): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharacters(value: String => Unit): Self = StObject.set(x, "characters", js.Any.fromFunction1(value))
+      inline def setCharacters(value: String => Unit): Self = StObject.set(x, "characters", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEndElement(value: () => Unit): Self = StObject.set(x, "endElement", js.Any.fromFunction0(value))
+      inline def setEndElement(value: () => Unit): Self = StObject.set(x, "endElement", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAttributes(value: () => XAttributes): Self = StObject.set(x, "getAttributes", js.Any.fromFunction0(value))
+      inline def setGetAttributes(value: () => XAttributes): Self = StObject.set(x, "getAttributes", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLocalName(value: () => String): Self = StObject.set(x, "getLocalName", js.Any.fromFunction0(value))
+      inline def setGetLocalName(value: () => String): Self = StObject.set(x, "getLocalName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetParent(value: () => XElement): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
+      inline def setGetParent(value: () => XElement): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetUid(value: () => Double): Self = StObject.set(x, "getUid", js.Any.fromFunction0(value))
+      inline def setGetUid(value: () => Double): Self = StObject.set(x, "getUid", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIgnorableWhitespace(value: String => Unit): Self = StObject.set(x, "ignorableWhitespace", js.Any.fromFunction1(value))
+      inline def setIgnorableWhitespace(value: String => Unit): Self = StObject.set(x, "ignorableWhitespace", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLocalName(value: String): Self = StObject.set(x, "LocalName", value.asInstanceOf[js.Any])
+      inline def setLocalName(value: String): Self = StObject.set(x, "LocalName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent(value: XElement): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: XElement): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessingInstruction(value: (String, String) => Unit): Self = StObject.set(x, "processingInstruction", js.Any.fromFunction2(value))
+      inline def setProcessingInstruction(value: (String, String) => Unit): Self = StObject.set(x, "processingInstruction", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setStartChildElement(value: (Double, String, XAttributes) => XElement): Self = StObject.set(x, "startChildElement", js.Any.fromFunction3(value))
+      inline def setStartChildElement(value: (Double, String, XAttributes) => XElement): Self = StObject.set(x, "startChildElement", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setUid(value: Double): Self = StObject.set(x, "Uid", value.asInstanceOf[js.Any])
+      inline def setUid(value: Double): Self = StObject.set(x, "Uid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -349,8 +321,7 @@ object input {
   }
   object XNamespaceMapping {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       getUidByUri: String => Double,
       getUriByUid: Double => String,
@@ -361,14 +332,11 @@ object input {
       __obj.asInstanceOf[XNamespaceMapping]
     }
     
-    @scala.inline
-    implicit class XNamespaceMappingMutableBuilder[Self <: XNamespaceMapping] (val x: Self) extends AnyVal {
+    extension [Self <: XNamespaceMapping](x: Self) {
       
-      @scala.inline
-      def setGetUidByUri(value: String => Double): Self = StObject.set(x, "getUidByUri", js.Any.fromFunction1(value))
+      inline def setGetUidByUri(value: String => Double): Self = StObject.set(x, "getUidByUri", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetUriByUid(value: Double => String): Self = StObject.set(x, "getUriByUid", js.Any.fromFunction1(value))
+      inline def setGetUriByUid(value: Double => String): Self = StObject.set(x, "getUriByUid", js.Any.fromFunction1(value))
     }
   }
   
@@ -409,8 +377,7 @@ object input {
   }
   object XRoot {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       endDocument: () => Unit,
       processingInstruction: (String, String) => Unit,
@@ -424,23 +391,17 @@ object input {
       __obj.asInstanceOf[XRoot]
     }
     
-    @scala.inline
-    implicit class XRootMutableBuilder[Self <: XRoot] (val x: Self) extends AnyVal {
+    extension [Self <: XRoot](x: Self) {
       
-      @scala.inline
-      def setEndDocument(value: () => Unit): Self = StObject.set(x, "endDocument", js.Any.fromFunction0(value))
+      inline def setEndDocument(value: () => Unit): Self = StObject.set(x, "endDocument", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setProcessingInstruction(value: (String, String) => Unit): Self = StObject.set(x, "processingInstruction", js.Any.fromFunction2(value))
+      inline def setProcessingInstruction(value: (String, String) => Unit): Self = StObject.set(x, "processingInstruction", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetDocumentLocator(value: XLocator => Unit): Self = StObject.set(x, "setDocumentLocator", js.Any.fromFunction1(value))
+      inline def setSetDocumentLocator(value: XLocator => Unit): Self = StObject.set(x, "setDocumentLocator", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStartDocument(value: XNamespaceMapping => Unit): Self = StObject.set(x, "startDocument", js.Any.fromFunction1(value))
+      inline def setStartDocument(value: XNamespaceMapping => Unit): Self = StObject.set(x, "startDocument", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStartRootElement(value: (Double, String, XAttributes) => XElement): Self = StObject.set(x, "startRootElement", js.Any.fromFunction3(value))
+      inline def setStartRootElement(value: (Double, String, XAttributes) => XElement): Self = StObject.set(x, "startRootElement", js.Any.fromFunction3(value))
     }
   }
 }

@@ -13,19 +13,15 @@ trait StartTriggerResponse extends StObject {
 }
 object StartTriggerResponse {
   
-  @scala.inline
-  def apply(): StartTriggerResponse = {
+  inline def apply(): StartTriggerResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartTriggerResponse]
   }
   
-  @scala.inline
-  implicit class StartTriggerResponseMutableBuilder[Self <: StartTriggerResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StartTriggerResponse](x: Self) {
     
-    @scala.inline
-    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

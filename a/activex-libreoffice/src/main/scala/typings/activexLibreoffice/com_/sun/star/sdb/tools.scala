@@ -32,23 +32,17 @@ object tools {
     trait Constants extends StObject
     object Constants {
       
-      @scala.inline
-      def Complete: `5` = 5.asInstanceOf[`5`]
+      inline def Complete: `5` = 5.asInstanceOf[`5`]
       
-      @scala.inline
-      def ForDataManipulation: `2` = 2.asInstanceOf[`2`]
+      inline def ForDataManipulation: `2` = 2.asInstanceOf[`2`]
       
-      @scala.inline
-      def ForIndexDefinitions: `1` = 1.asInstanceOf[`1`]
+      inline def ForIndexDefinitions: `1` = 1.asInstanceOf[`1`]
       
-      @scala.inline
-      def ForPrivilegeDefinitions: `4` = 4.asInstanceOf[`4`]
+      inline def ForPrivilegeDefinitions: `4` = 4.asInstanceOf[`4`]
       
-      @scala.inline
-      def ForProcedureCalls: `3` = 3.asInstanceOf[`3`]
+      inline def ForProcedureCalls: `3` = 3.asInstanceOf[`3`]
       
-      @scala.inline
-      def ForTableDefinitions: `0` = 0.asInstanceOf[`0`]
+      inline def ForTableDefinitions: `0` = 0.asInstanceOf[`0`]
     }
   }
   
@@ -61,8 +55,7 @@ object tools {
   }
   object ConnectionTools {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       DataSourceMetaData: XDataSourceMetaData,
       ObjectNames: XObjectNames,
       createTableName: () => XTableName,
@@ -76,11 +69,9 @@ object tools {
       __obj.asInstanceOf[ConnectionTools]
     }
     
-    @scala.inline
-    implicit class ConnectionToolsMutableBuilder[Self <: ConnectionTools] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectionTools](x: Self) {
       
-      @scala.inline
-      def setCreateWithConnection(value: XConnection => Unit): Self = StObject.set(x, "createWithConnection", js.Any.fromFunction1(value))
+      inline def setCreateWithConnection(value: XConnection => Unit): Self = StObject.set(x, "createWithConnection", js.Any.fromFunction1(value))
     }
   }
   
@@ -98,8 +89,7 @@ object tools {
   }
   object XConnectionSupplier {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ActiveConnection: XConnection,
       acquire: () => Unit,
       initialize: SeqEquiv[js.Any] => Unit,
@@ -110,11 +100,9 @@ object tools {
       __obj.asInstanceOf[XConnectionSupplier]
     }
     
-    @scala.inline
-    implicit class XConnectionSupplierMutableBuilder[Self <: XConnectionSupplier] (val x: Self) extends AnyVal {
+    extension [Self <: XConnectionSupplier](x: Self) {
       
-      @scala.inline
-      def setActiveConnection(value: XConnection): Self = StObject.set(x, "ActiveConnection", value.asInstanceOf[js.Any])
+      inline def setActiveConnection(value: XConnection): Self = StObject.set(x, "ActiveConnection", value.asInstanceOf[js.Any])
     }
   }
   
@@ -179,8 +167,7 @@ object tools {
   }
   object XConnectionTools {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       DataSourceMetaData: XDataSourceMetaData,
       ObjectNames: XObjectNames,
       createTableName: () => XTableName,
@@ -193,29 +180,21 @@ object tools {
       __obj.asInstanceOf[XConnectionTools]
     }
     
-    @scala.inline
-    implicit class XConnectionToolsMutableBuilder[Self <: XConnectionTools] (val x: Self) extends AnyVal {
+    extension [Self <: XConnectionTools](x: Self) {
       
-      @scala.inline
-      def setCreateTableName(value: () => XTableName): Self = StObject.set(x, "createTableName", js.Any.fromFunction0(value))
+      inline def setCreateTableName(value: () => XTableName): Self = StObject.set(x, "createTableName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDataSourceMetaData(value: XDataSourceMetaData): Self = StObject.set(x, "DataSourceMetaData", value.asInstanceOf[js.Any])
+      inline def setDataSourceMetaData(value: XDataSourceMetaData): Self = StObject.set(x, "DataSourceMetaData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetComposer(value: (Double, String) => XSingleSelectQueryComposer): Self = StObject.set(x, "getComposer", js.Any.fromFunction2(value))
+      inline def setGetComposer(value: (Double, String) => XSingleSelectQueryComposer): Self = StObject.set(x, "getComposer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetDataSourceMetaData(value: () => XDataSourceMetaData): Self = StObject.set(x, "getDataSourceMetaData", js.Any.fromFunction0(value))
+      inline def setGetDataSourceMetaData(value: () => XDataSourceMetaData): Self = StObject.set(x, "getDataSourceMetaData", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFieldsByCommandDescriptor(value: (Double, String, js.Array[XComponent]) => XNameAccess): Self = StObject.set(x, "getFieldsByCommandDescriptor", js.Any.fromFunction3(value))
+      inline def setGetFieldsByCommandDescriptor(value: (Double, String, js.Array[XComponent]) => XNameAccess): Self = StObject.set(x, "getFieldsByCommandDescriptor", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetObjectNames(value: () => XObjectNames): Self = StObject.set(x, "getObjectNames", js.Any.fromFunction0(value))
+      inline def setGetObjectNames(value: () => XObjectNames): Self = StObject.set(x, "getObjectNames", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setObjectNames(value: XObjectNames): Self = StObject.set(x, "ObjectNames", value.asInstanceOf[js.Any])
+      inline def setObjectNames(value: XObjectNames): Self = StObject.set(x, "ObjectNames", value.asInstanceOf[js.Any])
     }
   }
   
@@ -226,17 +205,14 @@ object tools {
   }
   object XDataSourceMetaData {
     
-    @scala.inline
-    def apply(supportsQueriesInFrom: () => Boolean): XDataSourceMetaData = {
+    inline def apply(supportsQueriesInFrom: () => Boolean): XDataSourceMetaData = {
       val __obj = js.Dynamic.literal(supportsQueriesInFrom = js.Any.fromFunction0(supportsQueriesInFrom))
       __obj.asInstanceOf[XDataSourceMetaData]
     }
     
-    @scala.inline
-    implicit class XDataSourceMetaDataMutableBuilder[Self <: XDataSourceMetaData] (val x: Self) extends AnyVal {
+    extension [Self <: XDataSourceMetaData](x: Self) {
       
-      @scala.inline
-      def setSupportsQueriesInFrom(value: () => Boolean): Self = StObject.set(x, "supportsQueriesInFrom", js.Any.fromFunction0(value))
+      inline def setSupportsQueriesInFrom(value: () => Boolean): Self = StObject.set(x, "supportsQueriesInFrom", js.Any.fromFunction0(value))
     }
   }
   
@@ -270,8 +246,7 @@ object tools {
   }
   object XIndexAlteration {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ActiveConnection: XConnection,
       acquire: () => Unit,
       addIndex: (XPropertySet, XPropertySet) => Unit,
@@ -284,14 +259,11 @@ object tools {
       __obj.asInstanceOf[XIndexAlteration]
     }
     
-    @scala.inline
-    implicit class XIndexAlterationMutableBuilder[Self <: XIndexAlteration] (val x: Self) extends AnyVal {
+    extension [Self <: XIndexAlteration](x: Self) {
       
-      @scala.inline
-      def setAddIndex(value: (XPropertySet, XPropertySet) => Unit): Self = StObject.set(x, "addIndex", js.Any.fromFunction2(value))
+      inline def setAddIndex(value: (XPropertySet, XPropertySet) => Unit): Self = StObject.set(x, "addIndex", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDropIndex(value: (XPropertySet, String) => Unit): Self = StObject.set(x, "dropIndex", js.Any.fromFunction2(value))
+      inline def setDropIndex(value: (XPropertySet, String) => Unit): Self = StObject.set(x, "dropIndex", js.Any.fromFunction2(value))
     }
   }
   
@@ -325,8 +297,7 @@ object tools {
   }
   object XKeyAlteration {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ActiveConnection: XConnection,
       acquire: () => Unit,
       addKey: (XPropertySet, XPropertySet) => Unit,
@@ -339,14 +310,11 @@ object tools {
       __obj.asInstanceOf[XKeyAlteration]
     }
     
-    @scala.inline
-    implicit class XKeyAlterationMutableBuilder[Self <: XKeyAlteration] (val x: Self) extends AnyVal {
+    extension [Self <: XKeyAlteration](x: Self) {
       
-      @scala.inline
-      def setAddKey(value: (XPropertySet, XPropertySet) => Unit): Self = StObject.set(x, "addKey", js.Any.fromFunction2(value))
+      inline def setAddKey(value: (XPropertySet, XPropertySet) => Unit): Self = StObject.set(x, "addKey", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDropKey(value: (XPropertySet, XPropertySet) => Unit): Self = StObject.set(x, "dropKey", js.Any.fromFunction2(value))
+      inline def setDropKey(value: (XPropertySet, XPropertySet) => Unit): Self = StObject.set(x, "dropKey", js.Any.fromFunction2(value))
     }
   }
   
@@ -436,8 +404,7 @@ object tools {
   }
   object XObjectNames {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       checkNameForCreate: (Double, String) => Unit,
       convertToSQLName: String => String,
       isNameUsed: (Double, String) => Boolean,
@@ -448,23 +415,17 @@ object tools {
       __obj.asInstanceOf[XObjectNames]
     }
     
-    @scala.inline
-    implicit class XObjectNamesMutableBuilder[Self <: XObjectNames] (val x: Self) extends AnyVal {
+    extension [Self <: XObjectNames](x: Self) {
       
-      @scala.inline
-      def setCheckNameForCreate(value: (Double, String) => Unit): Self = StObject.set(x, "checkNameForCreate", js.Any.fromFunction2(value))
+      inline def setCheckNameForCreate(value: (Double, String) => Unit): Self = StObject.set(x, "checkNameForCreate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setConvertToSQLName(value: String => String): Self = StObject.set(x, "convertToSQLName", js.Any.fromFunction1(value))
+      inline def setConvertToSQLName(value: String => String): Self = StObject.set(x, "convertToSQLName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsNameUsed(value: (Double, String) => Boolean): Self = StObject.set(x, "isNameUsed", js.Any.fromFunction2(value))
+      inline def setIsNameUsed(value: (Double, String) => Boolean): Self = StObject.set(x, "isNameUsed", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIsNameValid(value: (Double, String) => Boolean): Self = StObject.set(x, "isNameValid", js.Any.fromFunction2(value))
+      inline def setIsNameValid(value: (Double, String) => Boolean): Self = StObject.set(x, "isNameValid", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSuggestName(value: (Double, String) => String): Self = StObject.set(x, "suggestName", js.Any.fromFunction2(value))
+      inline def setSuggestName(value: (Double, String) => String): Self = StObject.set(x, "suggestName", js.Any.fromFunction2(value))
     }
   }
   
@@ -512,8 +473,7 @@ object tools {
   }
   object XTableAlteration {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ActiveConnection: XConnection,
       acquire: () => Unit,
       addColumn: (XPropertySet, XPropertySet) => Unit,
@@ -527,17 +487,13 @@ object tools {
       __obj.asInstanceOf[XTableAlteration]
     }
     
-    @scala.inline
-    implicit class XTableAlterationMutableBuilder[Self <: XTableAlteration] (val x: Self) extends AnyVal {
+    extension [Self <: XTableAlteration](x: Self) {
       
-      @scala.inline
-      def setAddColumn(value: (XPropertySet, XPropertySet) => Unit): Self = StObject.set(x, "addColumn", js.Any.fromFunction2(value))
+      inline def setAddColumn(value: (XPropertySet, XPropertySet) => Unit): Self = StObject.set(x, "addColumn", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAlterColumnByName(value: (XPropertySet, String, XPropertySet) => Unit): Self = StObject.set(x, "alterColumnByName", js.Any.fromFunction3(value))
+      inline def setAlterColumnByName(value: (XPropertySet, String, XPropertySet) => Unit): Self = StObject.set(x, "alterColumnByName", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setDropColumn(value: (XPropertySet, String) => Unit): Self = StObject.set(x, "dropColumn", js.Any.fromFunction2(value))
+      inline def setDropColumn(value: (XPropertySet, String) => Unit): Self = StObject.set(x, "dropColumn", js.Any.fromFunction2(value))
     }
   }
   
@@ -608,8 +564,7 @@ object tools {
   }
   object XTableName {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       CatalogName: String,
       NameForSelect: String,
       SchemaName: String,
@@ -622,29 +577,21 @@ object tools {
       __obj.asInstanceOf[XTableName]
     }
     
-    @scala.inline
-    implicit class XTableNameMutableBuilder[Self <: XTableName] (val x: Self) extends AnyVal {
+    extension [Self <: XTableName](x: Self) {
       
-      @scala.inline
-      def setCatalogName(value: String): Self = StObject.set(x, "CatalogName", value.asInstanceOf[js.Any])
+      inline def setCatalogName(value: String): Self = StObject.set(x, "CatalogName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetComposedName(value: (Double, Boolean) => String): Self = StObject.set(x, "getComposedName", js.Any.fromFunction2(value))
+      inline def setGetComposedName(value: (Double, Boolean) => String): Self = StObject.set(x, "getComposedName", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNameForSelect(value: String): Self = StObject.set(x, "NameForSelect", value.asInstanceOf[js.Any])
+      inline def setNameForSelect(value: String): Self = StObject.set(x, "NameForSelect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaName(value: String): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
+      inline def setSchemaName(value: String): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetComposedName(value: (String, Double) => Unit): Self = StObject.set(x, "setComposedName", js.Any.fromFunction2(value))
+      inline def setSetComposedName(value: (String, Double) => Unit): Self = StObject.set(x, "setComposedName", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTable(value: XPropertySet): Self = StObject.set(x, "Table", value.asInstanceOf[js.Any])
+      inline def setTable(value: XPropertySet): Self = StObject.set(x, "Table", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableName(value: String): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: String): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -667,8 +614,7 @@ object tools {
   }
   object XTableRename {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ActiveConnection: XConnection,
       acquire: () => Unit,
       initialize: SeqEquiv[js.Any] => Unit,
@@ -680,11 +626,9 @@ object tools {
       __obj.asInstanceOf[XTableRename]
     }
     
-    @scala.inline
-    implicit class XTableRenameMutableBuilder[Self <: XTableRename] (val x: Self) extends AnyVal {
+    extension [Self <: XTableRename](x: Self) {
       
-      @scala.inline
-      def setRename(value: (XPropertySet, String) => Unit): Self = StObject.set(x, "rename", js.Any.fromFunction2(value))
+      inline def setRename(value: (XPropertySet, String) => Unit): Self = StObject.set(x, "rename", js.Any.fromFunction2(value))
     }
   }
   
@@ -715,8 +659,7 @@ object tools {
   }
   object XViewAccess {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ActiveConnection: XConnection,
       acquire: () => Unit,
       alterCommand: (XPropertySet, String) => Unit,
@@ -729,14 +672,11 @@ object tools {
       __obj.asInstanceOf[XViewAccess]
     }
     
-    @scala.inline
-    implicit class XViewAccessMutableBuilder[Self <: XViewAccess] (val x: Self) extends AnyVal {
+    extension [Self <: XViewAccess](x: Self) {
       
-      @scala.inline
-      def setAlterCommand(value: (XPropertySet, String) => Unit): Self = StObject.set(x, "alterCommand", js.Any.fromFunction2(value))
+      inline def setAlterCommand(value: (XPropertySet, String) => Unit): Self = StObject.set(x, "alterCommand", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetCommand(value: XPropertySet => String): Self = StObject.set(x, "getCommand", js.Any.fromFunction1(value))
+      inline def setGetCommand(value: XPropertySet => String): Self = StObject.set(x, "getCommand", js.Any.fromFunction1(value))
     }
   }
 }

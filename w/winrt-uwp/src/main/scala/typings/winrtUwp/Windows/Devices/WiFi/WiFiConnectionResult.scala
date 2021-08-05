@@ -12,16 +12,13 @@ trait WiFiConnectionResult extends StObject {
 }
 object WiFiConnectionResult {
   
-  @scala.inline
-  def apply(connectionStatus: WiFiConnectionStatus): WiFiConnectionResult = {
+  inline def apply(connectionStatus: WiFiConnectionStatus): WiFiConnectionResult = {
     val __obj = js.Dynamic.literal(connectionStatus = connectionStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[WiFiConnectionResult]
   }
   
-  @scala.inline
-  implicit class WiFiConnectionResultMutableBuilder[Self <: WiFiConnectionResult] (val x: Self) extends AnyVal {
+  extension [Self <: WiFiConnectionResult](x: Self) {
     
-    @scala.inline
-    def setConnectionStatus(value: WiFiConnectionStatus): Self = StObject.set(x, "connectionStatus", value.asInstanceOf[js.Any])
+    inline def setConnectionStatus(value: WiFiConnectionStatus): Self = StObject.set(x, "connectionStatus", value.asInstanceOf[js.Any])
   }
 }

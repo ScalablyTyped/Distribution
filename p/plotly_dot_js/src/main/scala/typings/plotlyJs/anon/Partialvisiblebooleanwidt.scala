@@ -17,40 +17,29 @@ trait Partialvisiblebooleanwidt extends StObject {
 }
 object Partialvisiblebooleanwidt {
   
-  @scala.inline
-  def apply(): Partialvisiblebooleanwidt = {
+  inline def apply(): Partialvisiblebooleanwidt = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Partialvisiblebooleanwidt]
   }
   
-  @scala.inline
-  implicit class PartialvisiblebooleanwidtMutableBuilder[Self <: Partialvisiblebooleanwidt] (val x: Self) extends AnyVal {
+  extension [Self <: Partialvisiblebooleanwidt](x: Self) {
     
-    @scala.inline
-    def setFillcolor(value: typings.plotlyJs.mod.Color): Self = StObject.set(x, "fillcolor", value.asInstanceOf[js.Any])
+    inline def setFillcolor(value: typings.plotlyJs.mod.Color): Self = StObject.set(x, "fillcolor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillcolorUndefined: Self = StObject.set(x, "fillcolor", js.undefined)
+    inline def setFillcolorUndefined: Self = StObject.set(x, "fillcolor", js.undefined)
     
-    @scala.inline
-    def setFillcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "fillcolor", js.Array(value :_*))
+    inline def setFillcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "fillcolor", js.Array(value :_*))
     
-    @scala.inline
-    def setLine(value: PartialcolorColorwidthnumColor): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: PartialcolorColorwidthnumColor): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

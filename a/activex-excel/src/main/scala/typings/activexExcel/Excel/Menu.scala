@@ -16,7 +16,7 @@ trait Menu extends StObject {
   
   var Enabled: Boolean
   
-  @JSName("Excel.Menu_typekey")
+  /* private */ @JSName("Excel.Menu_typekey")
   var ExcelDotMenu_typekey: Menu
   
   val Index: Double
@@ -29,8 +29,7 @@ trait Menu extends StObject {
 }
 object Menu {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Caption: String,
     Creator: XlCreator,
@@ -46,34 +45,24 @@ object Menu {
     __obj.asInstanceOf[Menu]
   }
   
-  @scala.inline
-  implicit class MenuMutableBuilder[Self <: Menu] (val x: Self) extends AnyVal {
+  extension [Self <: Menu](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotMenu_typekey(value: Menu): Self = StObject.set(x, "Excel.Menu_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotMenu_typekey(value: Menu): Self = StObject.set(x, "Excel.Menu_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuItems(value: MenuItems): Self = StObject.set(x, "MenuItems", value.asInstanceOf[js.Any])
+    inline def setMenuItems(value: MenuItems): Self = StObject.set(x, "MenuItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
   }
 }

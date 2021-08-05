@@ -15,17 +15,17 @@ object choiceGroupOptionBaseMod {
     extends Component[IChoiceGroupOptionProps, js.Object, js.Any] {
     def this(props: IChoiceGroupOptionProps) = this()
     
-    var _classNames: js.Any = js.native
+    /* private */ var _classNames: js.Any = js.native
     
-    var _onBlur: js.Any = js.native
+    /* private */ var _onBlur: js.Any = js.native
     
-    var _onChange: js.Any = js.native
+    /* private */ var _onChange: js.Any = js.native
     
-    var _onFocus: js.Any = js.native
+    /* private */ var _onFocus: js.Any = js.native
     
-    var _onRenderField: js.Any = js.native
+    /* private */ var _onRenderField: js.Any = js.native
     
-    var _onRenderLabel: js.Any = js.native
+    /* private */ var _onRenderLabel: js.Any = js.native
   }
   /* static members */
   object ChoiceGroupOptionBase {
@@ -37,7 +37,6 @@ object choiceGroupOptionBaseMod {
     @JSImport("office-ui-fabric-react/lib/components/ChoiceGroup/ChoiceGroupOption/ChoiceGroupOption.base", "ChoiceGroupOptionBase.defaultProps")
     @js.native
     def defaultProps: PartialIChoiceGroupOption = js.native
-    @scala.inline
-    def defaultProps_=(x: PartialIChoiceGroupOption): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PartialIChoiceGroupOption): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

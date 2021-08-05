@@ -18,26 +18,20 @@ object anon {
   }
   object ExpectedMessages {
     
-    @scala.inline
-    def apply(expectedMessages: Double, maxMessages: Double, pubsub: Boolean, topic: String): ExpectedMessages = {
+    inline def apply(expectedMessages: Double, maxMessages: Double, pubsub: Boolean, topic: String): ExpectedMessages = {
       val __obj = js.Dynamic.literal(expectedMessages = expectedMessages.asInstanceOf[js.Any], maxMessages = maxMessages.asInstanceOf[js.Any], pubsub = pubsub.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExpectedMessages]
     }
     
-    @scala.inline
-    implicit class ExpectedMessagesMutableBuilder[Self <: ExpectedMessages] (val x: Self) extends AnyVal {
+    extension [Self <: ExpectedMessages](x: Self) {
       
-      @scala.inline
-      def setExpectedMessages(value: Double): Self = StObject.set(x, "expectedMessages", value.asInstanceOf[js.Any])
+      inline def setExpectedMessages(value: Double): Self = StObject.set(x, "expectedMessages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxMessages(value: Double): Self = StObject.set(x, "maxMessages", value.asInstanceOf[js.Any])
+      inline def setMaxMessages(value: Double): Self = StObject.set(x, "maxMessages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPubsub(value: Boolean): Self = StObject.set(x, "pubsub", value.asInstanceOf[js.Any])
+      inline def setPubsub(value: Boolean): Self = StObject.set(x, "pubsub", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+      inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     }
   }
   
@@ -53,26 +47,20 @@ object anon {
   }
   object MaxMessages {
     
-    @scala.inline
-    def apply(maxMessages: Double, pubsub: Boolean, queue: String, topic: String): MaxMessages = {
+    inline def apply(maxMessages: Double, pubsub: Boolean, queue: String, topic: String): MaxMessages = {
       val __obj = js.Dynamic.literal(maxMessages = maxMessages.asInstanceOf[js.Any], pubsub = pubsub.asInstanceOf[js.Any], queue = queue.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
       __obj.asInstanceOf[MaxMessages]
     }
     
-    @scala.inline
-    implicit class MaxMessagesMutableBuilder[Self <: MaxMessages] (val x: Self) extends AnyVal {
+    extension [Self <: MaxMessages](x: Self) {
       
-      @scala.inline
-      def setMaxMessages(value: Double): Self = StObject.set(x, "maxMessages", value.asInstanceOf[js.Any])
+      inline def setMaxMessages(value: Double): Self = StObject.set(x, "maxMessages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPubsub(value: Boolean): Self = StObject.set(x, "pubsub", value.asInstanceOf[js.Any])
+      inline def setPubsub(value: Boolean): Self = StObject.set(x, "pubsub", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueue(value: String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+      inline def setQueue(value: String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+      inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     }
   }
 }

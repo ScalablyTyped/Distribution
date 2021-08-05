@@ -21,8 +21,7 @@ trait XNodeList
 }
 object XNodeList {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Length: Double,
     acquire: () => Unit,
     getLength: () => Double,
@@ -34,16 +33,12 @@ object XNodeList {
     __obj.asInstanceOf[XNodeList]
   }
   
-  @scala.inline
-  implicit class XNodeListMutableBuilder[Self <: XNodeList] (val x: Self) extends AnyVal {
+  extension [Self <: XNodeList](x: Self) {
     
-    @scala.inline
-    def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
+    inline def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setItem(value: Double => XNode): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => XNode): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "Length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "Length", value.asInstanceOf[js.Any])
   }
 }

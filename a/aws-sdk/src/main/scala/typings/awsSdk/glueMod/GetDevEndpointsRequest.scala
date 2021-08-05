@@ -18,25 +18,19 @@ trait GetDevEndpointsRequest extends StObject {
 }
 object GetDevEndpointsRequest {
   
-  @scala.inline
-  def apply(): GetDevEndpointsRequest = {
+  inline def apply(): GetDevEndpointsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDevEndpointsRequest]
   }
   
-  @scala.inline
-  implicit class GetDevEndpointsRequestMutableBuilder[Self <: GetDevEndpointsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDevEndpointsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

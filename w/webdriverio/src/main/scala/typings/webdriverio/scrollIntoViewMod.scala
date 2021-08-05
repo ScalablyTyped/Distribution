@@ -10,8 +10,6 @@ object scrollIntoViewMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Any]
-  @scala.inline
-  def default(scrollIntoViewOptions: Boolean): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(scrollIntoViewOptions.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def default(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Any]
+  inline def default(scrollIntoViewOptions: Boolean): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(scrollIntoViewOptions.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

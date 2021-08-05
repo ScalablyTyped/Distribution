@@ -22,8 +22,7 @@ trait IterableDeclarationMemberType
 }
 object IterableDeclarationMemberType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     arguments: js.Array[Argument],
     async: Boolean,
     extAttrs: js.Array[ExtendedAttribute],
@@ -35,19 +34,14 @@ object IterableDeclarationMemberType {
     __obj.asInstanceOf[IterableDeclarationMemberType]
   }
   
-  @scala.inline
-  implicit class IterableDeclarationMemberTypeMutableBuilder[Self <: IterableDeclarationMemberType] (val x: Self) extends AnyVal {
+  extension [Self <: IterableDeclarationMemberType](x: Self) {
     
-    @scala.inline
-    def setIdlType(value: js.Array[IDLTypeDescription] | (js.Tuple2[IDLTypeDescription, IDLTypeDescription])): Self = StObject.set(x, "idlType", value.asInstanceOf[js.Any])
+    inline def setIdlType(value: js.Array[IDLTypeDescription] | (js.Tuple2[IDLTypeDescription, IDLTypeDescription])): Self = StObject.set(x, "idlType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdlTypeVarargs(value: IDLTypeDescription*): Self = StObject.set(x, "idlType", js.Array(value :_*))
+    inline def setIdlTypeVarargs(value: IDLTypeDescription*): Self = StObject.set(x, "idlType", js.Array(value :_*))
     
-    @scala.inline
-    def setReadonly(value: `false`): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
+    inline def setReadonly(value: `false`): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: iterable): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: iterable): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

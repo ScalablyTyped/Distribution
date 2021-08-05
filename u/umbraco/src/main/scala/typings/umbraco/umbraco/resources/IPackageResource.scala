@@ -66,8 +66,7 @@ trait IPackageResource extends StObject {
 }
 object IPackageResource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cleanUp: String => Unit,
     fetch: String => String,
     `import`: String => Double,
@@ -79,22 +78,16 @@ object IPackageResource {
     __obj.asInstanceOf[IPackageResource]
   }
   
-  @scala.inline
-  implicit class IPackageResourceMutableBuilder[Self <: IPackageResource] (val x: Self) extends AnyVal {
+  extension [Self <: IPackageResource](x: Self) {
     
-    @scala.inline
-    def setCleanUp(value: String => Unit): Self = StObject.set(x, "cleanUp", js.Any.fromFunction1(value))
+    inline def setCleanUp(value: String => Unit): Self = StObject.set(x, "cleanUp", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFetch(value: String => String): Self = StObject.set(x, "fetch", js.Any.fromFunction1(value))
+    inline def setFetch(value: String => String): Self = StObject.set(x, "fetch", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setImport(value: String => Double): Self = StObject.set(x, "import", js.Any.fromFunction1(value))
+    inline def setImport(value: String => Double): Self = StObject.set(x, "import", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInstallData(value: String => Unit): Self = StObject.set(x, "installData", js.Any.fromFunction1(value))
+    inline def setInstallData(value: String => Unit): Self = StObject.set(x, "installData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInstallFiles(value: String => Unit): Self = StObject.set(x, "installFiles", js.Any.fromFunction1(value))
+    inline def setInstallFiles(value: String => Unit): Self = StObject.set(x, "installFiles", js.Any.fromFunction1(value))
   }
 }

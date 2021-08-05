@@ -10,16 +10,13 @@ trait RetentionPolicy extends StObject {
 }
 object RetentionPolicy {
   
-  @scala.inline
-  def apply(daysToKeep: Double): RetentionPolicy = {
+  inline def apply(daysToKeep: Double): RetentionPolicy = {
     val __obj = js.Dynamic.literal(daysToKeep = daysToKeep.asInstanceOf[js.Any])
     __obj.asInstanceOf[RetentionPolicy]
   }
   
-  @scala.inline
-  implicit class RetentionPolicyMutableBuilder[Self <: RetentionPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: RetentionPolicy](x: Self) {
     
-    @scala.inline
-    def setDaysToKeep(value: Double): Self = StObject.set(x, "daysToKeep", value.asInstanceOf[js.Any])
+    inline def setDaysToKeep(value: Double): Self = StObject.set(x, "daysToKeep", value.asInstanceOf[js.Any])
   }
 }

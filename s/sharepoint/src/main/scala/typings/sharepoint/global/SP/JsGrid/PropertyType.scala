@@ -193,8 +193,7 @@ object PropertyType {
   
   /** Register a custom property type. */
   /* static member */
-  @scala.inline
-  def RegisterNewCustomPropType(
+  inline def RegisterNewCustomPropType(
     propType: IPropertyType,
     displayCtrlName: java.lang.String,
     editControlName: java.lang.String,
@@ -203,15 +202,13 @@ object PropertyType {
   
   /** Register a custom property type, where display and edit controls, and also widgets, are derived from the specified parent property type. */
   /* static member */
-  @scala.inline
-  def RegisterNewDerivedCustomPropType(propType: IPropertyType, baseTypeName: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RegisterNewDerivedCustomPropType")(propType.asInstanceOf[js.Any], baseTypeName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def RegisterNewDerivedCustomPropType(propType: IPropertyType, baseTypeName: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RegisterNewDerivedCustomPropType")(propType.asInstanceOf[js.Any], baseTypeName.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** Lookup property type factory, based on SP.JsGrid.PropertyType.LookupTable class.
     displayCtrlName should be one of the following: SP.JsGrid.DisplayControl.Type.Image, SP.JsGrid.DisplayControl.Type.ImageText or SP.JsGrid.DisplayControl.Type.Text
     */
   /* static member */
-  @scala.inline
-  def RegisterNewLookupPropType(
+  inline def RegisterNewLookupPropType(
     id: java.lang.String,
     items: js.Array[js.Any],
     displayCtrlName: java.lang.String,
@@ -250,12 +247,10 @@ object PropertyType {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def RegisterDisplayControl(name: java.lang.String, singleton: js.Any, requiredFunctionNames: js.Array[java.lang.String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RegisterDisplayControl")(name.asInstanceOf[js.Any], singleton.asInstanceOf[js.Any], requiredFunctionNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def RegisterDisplayControl(name: java.lang.String, singleton: js.Any, requiredFunctionNames: js.Array[java.lang.String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RegisterDisplayControl")(name.asInstanceOf[js.Any], singleton.asInstanceOf[js.Any], requiredFunctionNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def RegisterEditControl(
+    inline def RegisterEditControl(
       name: java.lang.String,
       factory: js.Function2[
           /* gridContext */ IEditControlGridContext, 
@@ -266,15 +261,13 @@ object PropertyType {
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RegisterEditControl")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any], requiredFunctionNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def RegisterWidgetControl(
+    inline def RegisterWidgetControl(
       name: java.lang.String,
       factory: js.Function1[/* ddContext */ js.Any, IPropertyType],
       requiredFunctionNames: js.Array[java.lang.String]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RegisterWidgetControl")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any], requiredFunctionNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def UpdateDisplayControlForPropType(propTypeName: java.lang.String, displayControlType: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("UpdateDisplayControlForPropType")(propTypeName.asInstanceOf[js.Any], displayControlType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def UpdateDisplayControlForPropType(propTypeName: java.lang.String, displayControlType: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("UpdateDisplayControlForPropType")(propTypeName.asInstanceOf[js.Any], displayControlType.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

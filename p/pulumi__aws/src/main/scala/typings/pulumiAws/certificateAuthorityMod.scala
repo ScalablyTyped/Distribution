@@ -113,21 +113,16 @@ object certificateAuthorityMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): CertificateAuthority = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[CertificateAuthority]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): CertificateAuthority = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[CertificateAuthority]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: CertificateAuthorityState): CertificateAuthority = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[CertificateAuthority]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: CertificateAuthorityState, opts: CustomResourceOptions): CertificateAuthority = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[CertificateAuthority]
+    inline def get(name: String, id: Input[ID]): CertificateAuthority = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[CertificateAuthority]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): CertificateAuthority = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[CertificateAuthority]
+    inline def get(name: String, id: Input[ID], state: CertificateAuthorityState): CertificateAuthority = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[CertificateAuthority]
+    inline def get(name: String, id: Input[ID], state: CertificateAuthorityState, opts: CustomResourceOptions): CertificateAuthority = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[CertificateAuthority]
     
     /**
       * Returns true if the given object is an instance of CertificateAuthority.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/acmpca/certificateAuthority.CertificateAuthority */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/acmpca/certificateAuthority.CertificateAuthority */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/acmpca/certificateAuthority.CertificateAuthority */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/acmpca/certificateAuthority.CertificateAuthority */ Boolean]
   }
   
   trait CertificateAuthorityArgs extends StObject {
@@ -168,8 +163,7 @@ object certificateAuthorityMod {
   }
   object CertificateAuthorityArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       certificateAuthorityConfiguration: Input[
           typings.pulumiAws.inputMod.acmpca.CertificateAuthorityCertificateAuthorityConfiguration
         ]
@@ -178,45 +172,33 @@ object certificateAuthorityMod {
       __obj.asInstanceOf[CertificateAuthorityArgs]
     }
     
-    @scala.inline
-    implicit class CertificateAuthorityArgsMutableBuilder[Self <: CertificateAuthorityArgs] (val x: Self) extends AnyVal {
+    extension [Self <: CertificateAuthorityArgs](x: Self) {
       
-      @scala.inline
-      def setCertificateAuthorityConfiguration(
+      inline def setCertificateAuthorityConfiguration(
         value: Input[
               typings.pulumiAws.inputMod.acmpca.CertificateAuthorityCertificateAuthorityConfiguration
             ]
       ): Self = StObject.set(x, "certificateAuthorityConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setPermanentDeletionTimeInDays(value: Input[Double]): Self = StObject.set(x, "permanentDeletionTimeInDays", value.asInstanceOf[js.Any])
+      inline def setPermanentDeletionTimeInDays(value: Input[Double]): Self = StObject.set(x, "permanentDeletionTimeInDays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPermanentDeletionTimeInDaysUndefined: Self = StObject.set(x, "permanentDeletionTimeInDays", js.undefined)
+      inline def setPermanentDeletionTimeInDaysUndefined: Self = StObject.set(x, "permanentDeletionTimeInDays", js.undefined)
       
-      @scala.inline
-      def setRevocationConfiguration(value: Input[typings.pulumiAws.inputMod.acmpca.CertificateAuthorityRevocationConfiguration]): Self = StObject.set(x, "revocationConfiguration", value.asInstanceOf[js.Any])
+      inline def setRevocationConfiguration(value: Input[typings.pulumiAws.inputMod.acmpca.CertificateAuthorityRevocationConfiguration]): Self = StObject.set(x, "revocationConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevocationConfigurationUndefined: Self = StObject.set(x, "revocationConfiguration", js.undefined)
+      inline def setRevocationConfigurationUndefined: Self = StObject.set(x, "revocationConfiguration", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -300,102 +282,72 @@ object certificateAuthorityMod {
   }
   object CertificateAuthorityState {
     
-    @scala.inline
-    def apply(): CertificateAuthorityState = {
+    inline def apply(): CertificateAuthorityState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CertificateAuthorityState]
     }
     
-    @scala.inline
-    implicit class CertificateAuthorityStateMutableBuilder[Self <: CertificateAuthorityState] (val x: Self) extends AnyVal {
+    extension [Self <: CertificateAuthorityState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setCertificate(value: Input[String]): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+      inline def setCertificate(value: Input[String]): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificateAuthorityConfiguration(
+      inline def setCertificateAuthorityConfiguration(
         value: Input[
               typings.pulumiAws.inputMod.acmpca.CertificateAuthorityCertificateAuthorityConfiguration
             ]
       ): Self = StObject.set(x, "certificateAuthorityConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificateAuthorityConfigurationUndefined: Self = StObject.set(x, "certificateAuthorityConfiguration", js.undefined)
+      inline def setCertificateAuthorityConfigurationUndefined: Self = StObject.set(x, "certificateAuthorityConfiguration", js.undefined)
       
-      @scala.inline
-      def setCertificateChain(value: Input[String]): Self = StObject.set(x, "certificateChain", value.asInstanceOf[js.Any])
+      inline def setCertificateChain(value: Input[String]): Self = StObject.set(x, "certificateChain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificateChainUndefined: Self = StObject.set(x, "certificateChain", js.undefined)
+      inline def setCertificateChainUndefined: Self = StObject.set(x, "certificateChain", js.undefined)
       
-      @scala.inline
-      def setCertificateSigningRequest(value: Input[String]): Self = StObject.set(x, "certificateSigningRequest", value.asInstanceOf[js.Any])
+      inline def setCertificateSigningRequest(value: Input[String]): Self = StObject.set(x, "certificateSigningRequest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificateSigningRequestUndefined: Self = StObject.set(x, "certificateSigningRequest", js.undefined)
+      inline def setCertificateSigningRequestUndefined: Self = StObject.set(x, "certificateSigningRequest", js.undefined)
       
-      @scala.inline
-      def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
+      inline def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setNotAfter(value: Input[String]): Self = StObject.set(x, "notAfter", value.asInstanceOf[js.Any])
+      inline def setNotAfter(value: Input[String]): Self = StObject.set(x, "notAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotAfterUndefined: Self = StObject.set(x, "notAfter", js.undefined)
+      inline def setNotAfterUndefined: Self = StObject.set(x, "notAfter", js.undefined)
       
-      @scala.inline
-      def setNotBefore(value: Input[String]): Self = StObject.set(x, "notBefore", value.asInstanceOf[js.Any])
+      inline def setNotBefore(value: Input[String]): Self = StObject.set(x, "notBefore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotBeforeUndefined: Self = StObject.set(x, "notBefore", js.undefined)
+      inline def setNotBeforeUndefined: Self = StObject.set(x, "notBefore", js.undefined)
       
-      @scala.inline
-      def setPermanentDeletionTimeInDays(value: Input[Double]): Self = StObject.set(x, "permanentDeletionTimeInDays", value.asInstanceOf[js.Any])
+      inline def setPermanentDeletionTimeInDays(value: Input[Double]): Self = StObject.set(x, "permanentDeletionTimeInDays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPermanentDeletionTimeInDaysUndefined: Self = StObject.set(x, "permanentDeletionTimeInDays", js.undefined)
+      inline def setPermanentDeletionTimeInDaysUndefined: Self = StObject.set(x, "permanentDeletionTimeInDays", js.undefined)
       
-      @scala.inline
-      def setRevocationConfiguration(value: Input[typings.pulumiAws.inputMod.acmpca.CertificateAuthorityRevocationConfiguration]): Self = StObject.set(x, "revocationConfiguration", value.asInstanceOf[js.Any])
+      inline def setRevocationConfiguration(value: Input[typings.pulumiAws.inputMod.acmpca.CertificateAuthorityRevocationConfiguration]): Self = StObject.set(x, "revocationConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevocationConfigurationUndefined: Self = StObject.set(x, "revocationConfiguration", js.undefined)
+      inline def setRevocationConfigurationUndefined: Self = StObject.set(x, "revocationConfiguration", js.undefined)
       
-      @scala.inline
-      def setSerial(value: Input[String]): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
+      inline def setSerial(value: Input[String]): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerialUndefined: Self = StObject.set(x, "serial", js.undefined)
+      inline def setSerialUndefined: Self = StObject.set(x, "serial", js.undefined)
       
-      @scala.inline
-      def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

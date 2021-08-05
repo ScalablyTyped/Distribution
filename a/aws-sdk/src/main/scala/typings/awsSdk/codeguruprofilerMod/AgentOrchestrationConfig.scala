@@ -13,16 +13,13 @@ trait AgentOrchestrationConfig extends StObject {
 }
 object AgentOrchestrationConfig {
   
-  @scala.inline
-  def apply(profilingEnabled: Boolean): AgentOrchestrationConfig = {
+  inline def apply(profilingEnabled: Boolean): AgentOrchestrationConfig = {
     val __obj = js.Dynamic.literal(profilingEnabled = profilingEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[AgentOrchestrationConfig]
   }
   
-  @scala.inline
-  implicit class AgentOrchestrationConfigMutableBuilder[Self <: AgentOrchestrationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AgentOrchestrationConfig](x: Self) {
     
-    @scala.inline
-    def setProfilingEnabled(value: Boolean): Self = StObject.set(x, "profilingEnabled", value.asInstanceOf[js.Any])
+    inline def setProfilingEnabled(value: Boolean): Self = StObject.set(x, "profilingEnabled", value.asInstanceOf[js.Any])
   }
 }

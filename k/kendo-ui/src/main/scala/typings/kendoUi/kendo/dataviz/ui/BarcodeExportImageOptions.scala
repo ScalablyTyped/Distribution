@@ -12,25 +12,19 @@ trait BarcodeExportImageOptions extends StObject {
 }
 object BarcodeExportImageOptions {
   
-  @scala.inline
-  def apply(): BarcodeExportImageOptions = {
+  inline def apply(): BarcodeExportImageOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BarcodeExportImageOptions]
   }
   
-  @scala.inline
-  implicit class BarcodeExportImageOptionsMutableBuilder[Self <: BarcodeExportImageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BarcodeExportImageOptions](x: Self) {
     
-    @scala.inline
-    def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

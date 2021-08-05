@@ -13,8 +13,7 @@ object spacingMod {
   @JSImport("material-ui/styles/spacing", JSImport.Default)
   @js.native
   def default: Spacing = js.native
-  @scala.inline
-  def default_=(x: Spacing): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: Spacing): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   type Spacing = typings.materialUi.MaterialUI.Styles.Spacing
 }

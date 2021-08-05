@@ -44,8 +44,7 @@ trait HTMLElement extends StObject {
 }
 object HTMLElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     exitPointerLock: () => Unit,
     exitrequestFullscreen: () => Unit,
     requestFullscreen: () => js.Promise[Unit],
@@ -56,22 +55,16 @@ object HTMLElement {
     __obj.asInstanceOf[HTMLElement]
   }
   
-  @scala.inline
-  implicit class HTMLElementMutableBuilder[Self <: HTMLElement] (val x: Self) extends AnyVal {
+  extension [Self <: HTMLElement](x: Self) {
     
-    @scala.inline
-    def setExitPointerLock(value: () => Unit): Self = StObject.set(x, "exitPointerLock", js.Any.fromFunction0(value))
+    inline def setExitPointerLock(value: () => Unit): Self = StObject.set(x, "exitPointerLock", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExitrequestFullscreen(value: () => Unit): Self = StObject.set(x, "exitrequestFullscreen", js.Any.fromFunction0(value))
+    inline def setExitrequestFullscreen(value: () => Unit): Self = StObject.set(x, "exitrequestFullscreen", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRequestFullscreen(value: () => js.Promise[Unit]): Self = StObject.set(x, "requestFullscreen", js.Any.fromFunction0(value))
+    inline def setRequestFullscreen(value: () => js.Promise[Unit]): Self = StObject.set(x, "requestFullscreen", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRequestPointerLock(value: () => Unit): Self = StObject.set(x, "requestPointerLock", js.Any.fromFunction0(value))
+    inline def setRequestPointerLock(value: () => Unit): Self = StObject.set(x, "requestPointerLock", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWebkitRequestFullscreen(value: () => Unit): Self = StObject.set(x, "webkitRequestFullscreen", js.Any.fromFunction0(value))
+    inline def setWebkitRequestFullscreen(value: () => Unit): Self = StObject.set(x, "webkitRequestFullscreen", js.Any.fromFunction0(value))
   }
 }

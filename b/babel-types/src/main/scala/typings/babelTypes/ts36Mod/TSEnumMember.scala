@@ -30,19 +30,14 @@ object TSEnumMember {
   @js.native
   def apply(id: StringLiteral_, initializer: Expression): TSEnumMember = js.native
   
-  @scala.inline
-  implicit class TSEnumMemberMutableBuilder[Self <: TSEnumMember] (val x: Self) extends AnyVal {
+  extension [Self <: TSEnumMember](x: Self) {
     
-    @scala.inline
-    def setId(value: Identifier_ | StringLiteral_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Identifier_ | StringLiteral_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitializer(value: Expression): Self = StObject.set(x, "initializer", value.asInstanceOf[js.Any])
+    inline def setInitializer(value: Expression): Self = StObject.set(x, "initializer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitializerNull: Self = StObject.set(x, "initializer", null)
+    inline def setInitializerNull: Self = StObject.set(x, "initializer", null)
     
-    @scala.inline
-    def setType(value: typings.babelTypes.babelTypesStrings.TSEnumMember): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.babelTypes.babelTypesStrings.TSEnumMember): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

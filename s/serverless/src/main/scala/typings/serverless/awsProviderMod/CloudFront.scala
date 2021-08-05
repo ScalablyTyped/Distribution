@@ -16,25 +16,19 @@ trait CloudFront extends StObject {
 }
 object CloudFront {
   
-  @scala.inline
-  def apply(eventType: String, includeBody: Boolean, origin: Origin, pathPattern: String): CloudFront = {
+  inline def apply(eventType: String, includeBody: Boolean, origin: Origin, pathPattern: String): CloudFront = {
     val __obj = js.Dynamic.literal(eventType = eventType.asInstanceOf[js.Any], includeBody = includeBody.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], pathPattern = pathPattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudFront]
   }
   
-  @scala.inline
-  implicit class CloudFrontMutableBuilder[Self <: CloudFront] (val x: Self) extends AnyVal {
+  extension [Self <: CloudFront](x: Self) {
     
-    @scala.inline
-    def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
+    inline def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeBody(value: Boolean): Self = StObject.set(x, "includeBody", value.asInstanceOf[js.Any])
+    inline def setIncludeBody(value: Boolean): Self = StObject.set(x, "includeBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrigin(value: Origin): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: Origin): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathPattern(value: String): Self = StObject.set(x, "pathPattern", value.asInstanceOf[js.Any])
+    inline def setPathPattern(value: String): Self = StObject.set(x, "pathPattern", value.asInstanceOf[js.Any])
   }
 }

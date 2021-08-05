@@ -12,25 +12,19 @@ trait NavigationCompleteTransitionActionPayload extends StObject {
 }
 object NavigationCompleteTransitionActionPayload {
   
-  @scala.inline
-  def apply(): NavigationCompleteTransitionActionPayload = {
+  inline def apply(): NavigationCompleteTransitionActionPayload = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NavigationCompleteTransitionActionPayload]
   }
   
-  @scala.inline
-  implicit class NavigationCompleteTransitionActionPayloadMutableBuilder[Self <: NavigationCompleteTransitionActionPayload] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationCompleteTransitionActionPayload](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setToChildKey(value: String): Self = StObject.set(x, "toChildKey", value.asInstanceOf[js.Any])
+    inline def setToChildKey(value: String): Self = StObject.set(x, "toChildKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToChildKeyUndefined: Self = StObject.set(x, "toChildKey", js.undefined)
+    inline def setToChildKeyUndefined: Self = StObject.set(x, "toChildKey", js.undefined)
   }
 }

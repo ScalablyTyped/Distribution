@@ -18,19 +18,15 @@ trait DeleteSchemaVersionsInput extends StObject {
 }
 object DeleteSchemaVersionsInput {
   
-  @scala.inline
-  def apply(SchemaId: SchemaId, Versions: VersionsString): DeleteSchemaVersionsInput = {
+  inline def apply(SchemaId: SchemaId, Versions: VersionsString): DeleteSchemaVersionsInput = {
     val __obj = js.Dynamic.literal(SchemaId = SchemaId.asInstanceOf[js.Any], Versions = Versions.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteSchemaVersionsInput]
   }
   
-  @scala.inline
-  implicit class DeleteSchemaVersionsInputMutableBuilder[Self <: DeleteSchemaVersionsInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSchemaVersionsInput](x: Self) {
     
-    @scala.inline
-    def setSchemaId(value: SchemaId): Self = StObject.set(x, "SchemaId", value.asInstanceOf[js.Any])
+    inline def setSchemaId(value: SchemaId): Self = StObject.set(x, "SchemaId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersions(value: VersionsString): Self = StObject.set(x, "Versions", value.asInstanceOf[js.Any])
+    inline def setVersions(value: VersionsString): Self = StObject.set(x, "Versions", value.asInstanceOf[js.Any])
   }
 }

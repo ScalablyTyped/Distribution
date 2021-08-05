@@ -15,31 +15,23 @@ trait Displayname extends StObject {
 }
 object Displayname {
   
-  @scala.inline
-  def apply(): Displayname = {
+  inline def apply(): Displayname = {
     val __obj = js.Dynamic.literal(membership = null)
     __obj.asInstanceOf[Displayname]
   }
   
-  @scala.inline
-  implicit class DisplaynameMutableBuilder[Self <: Displayname] (val x: Self) extends AnyVal {
+  extension [Self <: Displayname](x: Self) {
     
-    @scala.inline
-    def setAvatar_url(value: String): Self = StObject.set(x, "avatar_url", value.asInstanceOf[js.Any])
+    inline def setAvatar_url(value: String): Self = StObject.set(x, "avatar_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvatar_urlUndefined: Self = StObject.set(x, "avatar_url", js.undefined)
+    inline def setAvatar_urlUndefined: Self = StObject.set(x, "avatar_url", js.undefined)
     
-    @scala.inline
-    def setDisplayname(value: String): Self = StObject.set(x, "displayname", value.asInstanceOf[js.Any])
+    inline def setDisplayname(value: String): Self = StObject.set(x, "displayname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplaynameUndefined: Self = StObject.set(x, "displayname", js.undefined)
+    inline def setDisplaynameUndefined: Self = StObject.set(x, "displayname", js.undefined)
     
-    @scala.inline
-    def setMembership(value: UserMembership): Self = StObject.set(x, "membership", value.asInstanceOf[js.Any])
+    inline def setMembership(value: UserMembership): Self = StObject.set(x, "membership", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembershipNull: Self = StObject.set(x, "membership", null)
+    inline def setMembershipNull: Self = StObject.set(x, "membership", null)
   }
 }

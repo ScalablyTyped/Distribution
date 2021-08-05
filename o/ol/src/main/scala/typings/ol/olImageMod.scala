@@ -35,12 +35,9 @@ object olImageMod {
     ) = this()
   }
   
-  @scala.inline
-  def listenImage(image: HTMLCanvasElement, loadHandler: js.Function0[js.Any], errorHandler: js.Function0[js.Any]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listenImage")(image.asInstanceOf[js.Any], loadHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
-  @scala.inline
-  def listenImage(image: HTMLImageElement, loadHandler: js.Function0[js.Any], errorHandler: js.Function0[js.Any]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listenImage")(image.asInstanceOf[js.Any], loadHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
-  @scala.inline
-  def listenImage(image: HTMLVideoElement, loadHandler: js.Function0[js.Any], errorHandler: js.Function0[js.Any]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listenImage")(image.asInstanceOf[js.Any], loadHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listenImage(image: HTMLCanvasElement, loadHandler: js.Function0[js.Any], errorHandler: js.Function0[js.Any]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listenImage")(image.asInstanceOf[js.Any], loadHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listenImage(image: HTMLImageElement, loadHandler: js.Function0[js.Any], errorHandler: js.Function0[js.Any]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listenImage")(image.asInstanceOf[js.Any], loadHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listenImage(image: HTMLVideoElement, loadHandler: js.Function0[js.Any], errorHandler: js.Function0[js.Any]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listenImage")(image.asInstanceOf[js.Any], loadHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
   @js.native
   trait ImageWrapper

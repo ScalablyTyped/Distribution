@@ -18,25 +18,19 @@ trait ListTagsForResourceMessage extends StObject {
 }
 object ListTagsForResourceMessage {
   
-  @scala.inline
-  def apply(ResourceName: String): ListTagsForResourceMessage = {
+  inline def apply(ResourceName: String): ListTagsForResourceMessage = {
     val __obj = js.Dynamic.literal(ResourceName = ResourceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTagsForResourceMessage]
   }
   
-  @scala.inline
-  implicit class ListTagsForResourceMessageMutableBuilder[Self <: ListTagsForResourceMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ListTagsForResourceMessage](x: Self) {
     
-    @scala.inline
-    def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceName(value: String): Self = StObject.set(x, "ResourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: String): Self = StObject.set(x, "ResourceName", value.asInstanceOf[js.Any])
   }
 }

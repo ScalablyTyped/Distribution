@@ -23,28 +23,21 @@ trait ListLogPatternSetsRequest extends StObject {
 }
 object ListLogPatternSetsRequest {
   
-  @scala.inline
-  def apply(ResourceGroupName: ResourceGroupName): ListLogPatternSetsRequest = {
+  inline def apply(ResourceGroupName: ResourceGroupName): ListLogPatternSetsRequest = {
     val __obj = js.Dynamic.literal(ResourceGroupName = ResourceGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListLogPatternSetsRequest]
   }
   
-  @scala.inline
-  implicit class ListLogPatternSetsRequestMutableBuilder[Self <: ListLogPatternSetsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListLogPatternSetsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: MaxEntities): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxEntities): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setResourceGroupName(value: ResourceGroupName): Self = StObject.set(x, "ResourceGroupName", value.asInstanceOf[js.Any])
+    inline def setResourceGroupName(value: ResourceGroupName): Self = StObject.set(x, "ResourceGroupName", value.asInstanceOf[js.Any])
   }
 }

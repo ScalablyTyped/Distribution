@@ -20,31 +20,23 @@ trait Content extends StObject {
 }
 object Content {
   
-  @scala.inline
-  def apply(content: js.Array[Label]): Content = {
+  inline def apply(content: js.Array[Label]): Content = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     __obj.asInstanceOf[Content]
   }
   
-  @scala.inline
-  implicit class ContentMutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
+  extension [Self <: Content](x: Self) {
     
-    @scala.inline
-    def setContent(value: js.Array[Label]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: js.Array[Label]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentVarargs(value: Label*): Self = StObject.set(x, "content", js.Array(value :_*))
+    inline def setContentVarargs(value: Label*): Self = StObject.set(x, "content", js.Array(value :_*))
     
-    @scala.inline
-    def setSmallSegmentGrouping(value: Color): Self = StObject.set(x, "smallSegmentGrouping", value.asInstanceOf[js.Any])
+    inline def setSmallSegmentGrouping(value: Color): Self = StObject.set(x, "smallSegmentGrouping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmallSegmentGroupingUndefined: Self = StObject.set(x, "smallSegmentGrouping", js.undefined)
+    inline def setSmallSegmentGroupingUndefined: Self = StObject.set(x, "smallSegmentGrouping", js.undefined)
     
-    @scala.inline
-    def setSortOrder(value: none | random | `value-asc` | `value-desc` | `label-asc` | `label-desc`): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
+    inline def setSortOrder(value: none | random | `value-asc` | `value-desc` | `label-asc` | `label-desc`): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
+    inline def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
   }
 }

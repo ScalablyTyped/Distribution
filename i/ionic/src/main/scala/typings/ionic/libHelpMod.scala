@@ -44,9 +44,9 @@ object libHelpMod {
     
     def formatIonicHeader(): js.Promise[String] = js.native
     
-    val inProject: Boolean = js.native
+    /* protected */ val inProject: Boolean = js.native
     
-    val version: String = js.native
+    /* protected */ val version: String = js.native
   }
   
   type CommandHelpFormatterDeps = typings.ionicCliFramework.helpMod.CommandHelpFormatterDeps[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption]
@@ -59,8 +59,7 @@ object libHelpMod {
   }
   object CommandHelpSchema {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       aliases: js.Array[String],
       description: String,
       exampleCommands: js.Array[String],
@@ -78,11 +77,9 @@ object libHelpMod {
       __obj.asInstanceOf[CommandHelpSchema]
     }
     
-    @scala.inline
-    implicit class CommandHelpSchemaMutableBuilder[Self <: CommandHelpSchema] (val x: Self) extends AnyVal {
+    extension [Self <: CommandHelpSchema](x: Self) {
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -96,8 +93,7 @@ object libHelpMod {
   }
   object NamespaceHelpFormatterDeps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       inProject: Boolean,
       location: NamespaceLocateResult[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption],
       namespace: INamespace,
@@ -107,14 +103,11 @@ object libHelpMod {
       __obj.asInstanceOf[NamespaceHelpFormatterDeps]
     }
     
-    @scala.inline
-    implicit class NamespaceHelpFormatterDepsMutableBuilder[Self <: NamespaceHelpFormatterDeps] (val x: Self) extends AnyVal {
+    extension [Self <: NamespaceHelpFormatterDeps](x: Self) {
       
-      @scala.inline
-      def setInProject(value: Boolean): Self = StObject.set(x, "inProject", value.asInstanceOf[js.Any])
+      inline def setInProject(value: Boolean): Self = StObject.set(x, "inProject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

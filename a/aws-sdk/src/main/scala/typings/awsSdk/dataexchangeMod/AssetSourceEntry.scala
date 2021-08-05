@@ -18,19 +18,15 @@ trait AssetSourceEntry extends StObject {
 }
 object AssetSourceEntry {
   
-  @scala.inline
-  def apply(Bucket: string, Key: string): AssetSourceEntry = {
+  inline def apply(Bucket: string, Key: string): AssetSourceEntry = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssetSourceEntry]
   }
   
-  @scala.inline
-  implicit class AssetSourceEntryMutableBuilder[Self <: AssetSourceEntry] (val x: Self) extends AnyVal {
+  extension [Self <: AssetSourceEntry](x: Self) {
     
-    @scala.inline
-    def setBucket(value: string): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: string): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: string): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: string): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
   }
 }

@@ -11,19 +11,15 @@ trait CategoryTargetingOptionDetails extends StObject {
 }
 object CategoryTargetingOptionDetails {
   
-  @scala.inline
-  def apply(): CategoryTargetingOptionDetails = {
+  inline def apply(): CategoryTargetingOptionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CategoryTargetingOptionDetails]
   }
   
-  @scala.inline
-  implicit class CategoryTargetingOptionDetailsMutableBuilder[Self <: CategoryTargetingOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: CategoryTargetingOptionDetails](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
   }
 }

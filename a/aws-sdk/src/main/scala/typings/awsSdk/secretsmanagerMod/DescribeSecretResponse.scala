@@ -83,106 +83,73 @@ trait DescribeSecretResponse extends StObject {
 }
 object DescribeSecretResponse {
   
-  @scala.inline
-  def apply(): DescribeSecretResponse = {
+  inline def apply(): DescribeSecretResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeSecretResponse]
   }
   
-  @scala.inline
-  implicit class DescribeSecretResponseMutableBuilder[Self <: DescribeSecretResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSecretResponse](x: Self) {
     
-    @scala.inline
-    def setARN(value: SecretARNType): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
+    inline def setARN(value: SecretARNType): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setARNUndefined: Self = StObject.set(x, "ARN", js.undefined)
+    inline def setARNUndefined: Self = StObject.set(x, "ARN", js.undefined)
     
-    @scala.inline
-    def setCreatedDate(value: TimestampType): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: TimestampType): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
+    inline def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
     
-    @scala.inline
-    def setDeletedDate(value: DeletedDateType): Self = StObject.set(x, "DeletedDate", value.asInstanceOf[js.Any])
+    inline def setDeletedDate(value: DeletedDateType): Self = StObject.set(x, "DeletedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletedDateUndefined: Self = StObject.set(x, "DeletedDate", js.undefined)
+    inline def setDeletedDateUndefined: Self = StObject.set(x, "DeletedDate", js.undefined)
     
-    @scala.inline
-    def setDescription(value: DescriptionType): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: DescriptionType): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setKmsKeyId(value: KmsKeyIdType): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
+    inline def setKmsKeyId(value: KmsKeyIdType): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
+    inline def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
-    @scala.inline
-    def setLastAccessedDate(value: LastAccessedDateType): Self = StObject.set(x, "LastAccessedDate", value.asInstanceOf[js.Any])
+    inline def setLastAccessedDate(value: LastAccessedDateType): Self = StObject.set(x, "LastAccessedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastAccessedDateUndefined: Self = StObject.set(x, "LastAccessedDate", js.undefined)
+    inline def setLastAccessedDateUndefined: Self = StObject.set(x, "LastAccessedDate", js.undefined)
     
-    @scala.inline
-    def setLastChangedDate(value: LastChangedDateType): Self = StObject.set(x, "LastChangedDate", value.asInstanceOf[js.Any])
+    inline def setLastChangedDate(value: LastChangedDateType): Self = StObject.set(x, "LastChangedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastChangedDateUndefined: Self = StObject.set(x, "LastChangedDate", js.undefined)
+    inline def setLastChangedDateUndefined: Self = StObject.set(x, "LastChangedDate", js.undefined)
     
-    @scala.inline
-    def setLastRotatedDate(value: LastRotatedDateType): Self = StObject.set(x, "LastRotatedDate", value.asInstanceOf[js.Any])
+    inline def setLastRotatedDate(value: LastRotatedDateType): Self = StObject.set(x, "LastRotatedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastRotatedDateUndefined: Self = StObject.set(x, "LastRotatedDate", js.undefined)
+    inline def setLastRotatedDateUndefined: Self = StObject.set(x, "LastRotatedDate", js.undefined)
     
-    @scala.inline
-    def setName(value: SecretNameType): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: SecretNameType): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setOwningService(value: OwningServiceType): Self = StObject.set(x, "OwningService", value.asInstanceOf[js.Any])
+    inline def setOwningService(value: OwningServiceType): Self = StObject.set(x, "OwningService", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwningServiceUndefined: Self = StObject.set(x, "OwningService", js.undefined)
+    inline def setOwningServiceUndefined: Self = StObject.set(x, "OwningService", js.undefined)
     
-    @scala.inline
-    def setRotationEnabled(value: RotationEnabledType): Self = StObject.set(x, "RotationEnabled", value.asInstanceOf[js.Any])
+    inline def setRotationEnabled(value: RotationEnabledType): Self = StObject.set(x, "RotationEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotationEnabledUndefined: Self = StObject.set(x, "RotationEnabled", js.undefined)
+    inline def setRotationEnabledUndefined: Self = StObject.set(x, "RotationEnabled", js.undefined)
     
-    @scala.inline
-    def setRotationLambdaARN(value: RotationLambdaARNType): Self = StObject.set(x, "RotationLambdaARN", value.asInstanceOf[js.Any])
+    inline def setRotationLambdaARN(value: RotationLambdaARNType): Self = StObject.set(x, "RotationLambdaARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotationLambdaARNUndefined: Self = StObject.set(x, "RotationLambdaARN", js.undefined)
+    inline def setRotationLambdaARNUndefined: Self = StObject.set(x, "RotationLambdaARN", js.undefined)
     
-    @scala.inline
-    def setRotationRules(value: RotationRulesType): Self = StObject.set(x, "RotationRules", value.asInstanceOf[js.Any])
+    inline def setRotationRules(value: RotationRulesType): Self = StObject.set(x, "RotationRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotationRulesUndefined: Self = StObject.set(x, "RotationRules", js.undefined)
+    inline def setRotationRulesUndefined: Self = StObject.set(x, "RotationRules", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagListType): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagListType): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
-    @scala.inline
-    def setVersionIdsToStages(value: SecretVersionsToStagesMapType): Self = StObject.set(x, "VersionIdsToStages", value.asInstanceOf[js.Any])
+    inline def setVersionIdsToStages(value: SecretVersionsToStagesMapType): Self = StObject.set(x, "VersionIdsToStages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionIdsToStagesUndefined: Self = StObject.set(x, "VersionIdsToStages", js.undefined)
+    inline def setVersionIdsToStagesUndefined: Self = StObject.set(x, "VersionIdsToStages", js.undefined)
   }
 }

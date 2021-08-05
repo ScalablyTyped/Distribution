@@ -10,8 +10,6 @@ object AsteriskMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): LanguageDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[LanguageDetail]
-  @scala.inline
-  def default(hljs: HLJSApi): LanguageDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hljs.asInstanceOf[js.Any]).asInstanceOf[LanguageDetail]
+  inline def default(): LanguageDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[LanguageDetail]
+  inline def default(hljs: HLJSApi): LanguageDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hljs.asInstanceOf[js.Any]).asInstanceOf[LanguageDetail]
 }

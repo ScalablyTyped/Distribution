@@ -14,25 +14,19 @@ trait Direction extends StObject {
 }
 object Direction {
   
-  @scala.inline
-  def apply(direction: String, id: Double | String): Direction = {
+  inline def apply(direction: String, id: Double | String): Direction = {
     val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Direction]
   }
   
-  @scala.inline
-  implicit class DirectionMutableBuilder[Self <: Direction] (val x: Self) extends AnyVal {
+  extension [Self <: Direction](x: Self) {
     
-    @scala.inline
-    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParams(value: String): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: String): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
   }
 }

@@ -53,33 +53,25 @@ trait ChartMapOptionsUpdateData extends StObject {
 }
 object ChartMapOptionsUpdateData {
   
-  @scala.inline
-  def apply(): ChartMapOptionsUpdateData = {
+  inline def apply(): ChartMapOptionsUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartMapOptionsUpdateData]
   }
   
-  @scala.inline
-  implicit class ChartMapOptionsUpdateDataMutableBuilder[Self <: ChartMapOptionsUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: ChartMapOptionsUpdateData](x: Self) {
     
-    @scala.inline
-    def setLabelStrategy(value: ChartMapLabelStrategy | None | BestFit | ShowAll): Self = StObject.set(x, "labelStrategy", value.asInstanceOf[js.Any])
+    inline def setLabelStrategy(value: ChartMapLabelStrategy | None | BestFit | ShowAll): Self = StObject.set(x, "labelStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelStrategyUndefined: Self = StObject.set(x, "labelStrategy", js.undefined)
+    inline def setLabelStrategyUndefined: Self = StObject.set(x, "labelStrategy", js.undefined)
     
-    @scala.inline
-    def setLevel(
+    inline def setLevel(
       value: ChartMapAreaLevel | Automatic | DataOnly | City | County | State | Country | Continent | World
     ): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
-    @scala.inline
-    def setProjectionType(value: ChartMapProjectionType | Automatic | Mercator | Miller | Robinson | Albers): Self = StObject.set(x, "projectionType", value.asInstanceOf[js.Any])
+    inline def setProjectionType(value: ChartMapProjectionType | Automatic | Mercator | Miller | Robinson | Albers): Self = StObject.set(x, "projectionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectionTypeUndefined: Self = StObject.set(x, "projectionType", js.undefined)
+    inline def setProjectionTypeUndefined: Self = StObject.set(x, "projectionType", js.undefined)
   }
 }

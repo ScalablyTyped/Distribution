@@ -13,16 +13,13 @@ trait DeleteCustomAvailabilityZoneMessage extends StObject {
 }
 object DeleteCustomAvailabilityZoneMessage {
   
-  @scala.inline
-  def apply(CustomAvailabilityZoneId: String): DeleteCustomAvailabilityZoneMessage = {
+  inline def apply(CustomAvailabilityZoneId: String): DeleteCustomAvailabilityZoneMessage = {
     val __obj = js.Dynamic.literal(CustomAvailabilityZoneId = CustomAvailabilityZoneId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteCustomAvailabilityZoneMessage]
   }
   
-  @scala.inline
-  implicit class DeleteCustomAvailabilityZoneMessageMutableBuilder[Self <: DeleteCustomAvailabilityZoneMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteCustomAvailabilityZoneMessage](x: Self) {
     
-    @scala.inline
-    def setCustomAvailabilityZoneId(value: String): Self = StObject.set(x, "CustomAvailabilityZoneId", value.asInstanceOf[js.Any])
+    inline def setCustomAvailabilityZoneId(value: String): Self = StObject.set(x, "CustomAvailabilityZoneId", value.asInstanceOf[js.Any])
   }
 }

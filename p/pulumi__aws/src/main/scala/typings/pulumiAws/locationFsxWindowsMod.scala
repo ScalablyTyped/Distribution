@@ -91,21 +91,16 @@ object locationFsxWindowsMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): LocationFsxWindows = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LocationFsxWindows]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LocationFsxWindows = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LocationFsxWindows]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: LocationFsxWindowsState): LocationFsxWindows = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LocationFsxWindows]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: LocationFsxWindowsState, opts: CustomResourceOptions): LocationFsxWindows = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LocationFsxWindows]
+    inline def get(name: String, id: Input[ID]): LocationFsxWindows = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LocationFsxWindows]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LocationFsxWindows = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LocationFsxWindows]
+    inline def get(name: String, id: Input[ID], state: LocationFsxWindowsState): LocationFsxWindows = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LocationFsxWindows]
+    inline def get(name: String, id: Input[ID], state: LocationFsxWindowsState, opts: CustomResourceOptions): LocationFsxWindows = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LocationFsxWindows]
     
     /**
       * Returns true if the given object is an instance of LocationFsxWindows.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/datasync/locationFsxWindows.LocationFsxWindows */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/datasync/locationFsxWindows.LocationFsxWindows */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/datasync/locationFsxWindows.LocationFsxWindows */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/datasync/locationFsxWindows.LocationFsxWindows */ Boolean]
   }
   
   trait LocationFsxWindowsArgs extends StObject {
@@ -147,8 +142,7 @@ object locationFsxWindowsMod {
   }
   object LocationFsxWindowsArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       fsxFilesystemArn: Input[String],
       password: Input[String],
       securityGroupArns: Input[js.Array[Input[String]]],
@@ -158,41 +152,29 @@ object locationFsxWindowsMod {
       __obj.asInstanceOf[LocationFsxWindowsArgs]
     }
     
-    @scala.inline
-    implicit class LocationFsxWindowsArgsMutableBuilder[Self <: LocationFsxWindowsArgs] (val x: Self) extends AnyVal {
+    extension [Self <: LocationFsxWindowsArgs](x: Self) {
       
-      @scala.inline
-      def setDomain(value: Input[String]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: Input[String]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+      inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      @scala.inline
-      def setFsxFilesystemArn(value: Input[String]): Self = StObject.set(x, "fsxFilesystemArn", value.asInstanceOf[js.Any])
+      inline def setFsxFilesystemArn(value: Input[String]): Self = StObject.set(x, "fsxFilesystemArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassword(value: Input[String]): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: Input[String]): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroupArns(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "securityGroupArns", value.asInstanceOf[js.Any])
+      inline def setSecurityGroupArns(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "securityGroupArns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroupArnsVarargs(value: Input[String]*): Self = StObject.set(x, "securityGroupArns", js.Array(value :_*))
+      inline def setSecurityGroupArnsVarargs(value: Input[String]*): Self = StObject.set(x, "securityGroupArns", js.Array(value :_*))
       
-      @scala.inline
-      def setSubdirectory(value: Input[String]): Self = StObject.set(x, "subdirectory", value.asInstanceOf[js.Any])
+      inline def setSubdirectory(value: Input[String]): Self = StObject.set(x, "subdirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubdirectoryUndefined: Self = StObject.set(x, "subdirectory", js.undefined)
+      inline def setSubdirectoryUndefined: Self = StObject.set(x, "subdirectory", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setUser(value: Input[String]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: Input[String]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
   
@@ -250,77 +232,54 @@ object locationFsxWindowsMod {
   }
   object LocationFsxWindowsState {
     
-    @scala.inline
-    def apply(): LocationFsxWindowsState = {
+    inline def apply(): LocationFsxWindowsState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LocationFsxWindowsState]
     }
     
-    @scala.inline
-    implicit class LocationFsxWindowsStateMutableBuilder[Self <: LocationFsxWindowsState] (val x: Self) extends AnyVal {
+    extension [Self <: LocationFsxWindowsState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setCreationTime(value: Input[String]): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+      inline def setCreationTime(value: Input[String]): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
+      inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
       
-      @scala.inline
-      def setDomain(value: Input[String]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: Input[String]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+      inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      @scala.inline
-      def setFsxFilesystemArn(value: Input[String]): Self = StObject.set(x, "fsxFilesystemArn", value.asInstanceOf[js.Any])
+      inline def setFsxFilesystemArn(value: Input[String]): Self = StObject.set(x, "fsxFilesystemArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFsxFilesystemArnUndefined: Self = StObject.set(x, "fsxFilesystemArn", js.undefined)
+      inline def setFsxFilesystemArnUndefined: Self = StObject.set(x, "fsxFilesystemArn", js.undefined)
       
-      @scala.inline
-      def setPassword(value: Input[String]): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: Input[String]): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
-      @scala.inline
-      def setSecurityGroupArns(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "securityGroupArns", value.asInstanceOf[js.Any])
+      inline def setSecurityGroupArns(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "securityGroupArns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroupArnsUndefined: Self = StObject.set(x, "securityGroupArns", js.undefined)
+      inline def setSecurityGroupArnsUndefined: Self = StObject.set(x, "securityGroupArns", js.undefined)
       
-      @scala.inline
-      def setSecurityGroupArnsVarargs(value: Input[String]*): Self = StObject.set(x, "securityGroupArns", js.Array(value :_*))
+      inline def setSecurityGroupArnsVarargs(value: Input[String]*): Self = StObject.set(x, "securityGroupArns", js.Array(value :_*))
       
-      @scala.inline
-      def setSubdirectory(value: Input[String]): Self = StObject.set(x, "subdirectory", value.asInstanceOf[js.Any])
+      inline def setSubdirectory(value: Input[String]): Self = StObject.set(x, "subdirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubdirectoryUndefined: Self = StObject.set(x, "subdirectory", js.undefined)
+      inline def setSubdirectoryUndefined: Self = StObject.set(x, "subdirectory", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setUri(value: Input[String]): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: Input[String]): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+      inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
       
-      @scala.inline
-      def setUser(value: Input[String]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: Input[String]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+      inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     }
   }
 }

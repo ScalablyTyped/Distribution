@@ -16,22 +16,17 @@ trait OnRecordsReordered
 }
 object OnRecordsReordered {
   
-  @scala.inline
-  def apply(changeKey: IChangeKey, reorderedKeys: js.Array[String]): OnRecordsReordered = {
+  inline def apply(changeKey: IChangeKey, reorderedKeys: js.Array[String]): OnRecordsReordered = {
     val __obj = js.Dynamic.literal(changeKey = changeKey.asInstanceOf[js.Any], reorderedKeys = reorderedKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnRecordsReordered]
   }
   
-  @scala.inline
-  implicit class OnRecordsReorderedMutableBuilder[Self <: OnRecordsReordered] (val x: Self) extends AnyVal {
+  extension [Self <: OnRecordsReordered](x: Self) {
     
-    @scala.inline
-    def setChangeKey(value: IChangeKey): Self = StObject.set(x, "changeKey", value.asInstanceOf[js.Any])
+    inline def setChangeKey(value: IChangeKey): Self = StObject.set(x, "changeKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReorderedKeys(value: js.Array[String]): Self = StObject.set(x, "reorderedKeys", value.asInstanceOf[js.Any])
+    inline def setReorderedKeys(value: js.Array[String]): Self = StObject.set(x, "reorderedKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReorderedKeysVarargs(value: String*): Self = StObject.set(x, "reorderedKeys", js.Array(value :_*))
+    inline def setReorderedKeysVarargs(value: String*): Self = StObject.set(x, "reorderedKeys", js.Array(value :_*))
   }
 }

@@ -18,17 +18,14 @@ object mod extends Shortcut {
   }
   object SwagStatic {
     
-    @scala.inline
-    def apply(registerHelpers: TypeofHandlebars => Unit): SwagStatic = {
+    inline def apply(registerHelpers: TypeofHandlebars => Unit): SwagStatic = {
       val __obj = js.Dynamic.literal(registerHelpers = js.Any.fromFunction1(registerHelpers))
       __obj.asInstanceOf[SwagStatic]
     }
     
-    @scala.inline
-    implicit class SwagStaticMutableBuilder[Self <: SwagStatic] (val x: Self) extends AnyVal {
+    extension [Self <: SwagStatic](x: Self) {
       
-      @scala.inline
-      def setRegisterHelpers(value: TypeofHandlebars => Unit): Self = StObject.set(x, "registerHelpers", js.Any.fromFunction1(value))
+      inline def setRegisterHelpers(value: TypeofHandlebars => Unit): Self = StObject.set(x, "registerHelpers", js.Any.fromFunction1(value))
     }
   }
   

@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StreamOpenOptionsEnum extends StObject
 object StreamOpenOptionsEnum {
   
-  @scala.inline
-  def adOpenStreamAsync: `1` = 1.asInstanceOf[`1`]
+  inline def adOpenStreamAsync: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def adOpenStreamFromRecord: `4` = 4.asInstanceOf[`4`]
+  inline def adOpenStreamFromRecord: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def adOpenStreamUnspecified: `-1` = -1.asInstanceOf[`-1`]
+  inline def adOpenStreamUnspecified: `-1` = -1.asInstanceOf[`-1`]
 }

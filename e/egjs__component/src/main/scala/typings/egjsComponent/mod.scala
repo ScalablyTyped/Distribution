@@ -18,32 +18,21 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def hasOn(eventName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasOn")(eventName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def hasOn(eventName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasOn")(eventName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def off(): Component = ^.asInstanceOf[js.Dynamic].applyDynamic("off")().asInstanceOf[Component]
-  @scala.inline
-  def off(eventName: String): Component = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(eventName.asInstanceOf[js.Any]).asInstanceOf[Component]
-  @scala.inline
-  def off(eventName: String, handlerToAttach: js.Function1[/* event */ StringDictionary[js.Any], js.Any]): Component = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(eventName.asInstanceOf[js.Any], handlerToAttach.asInstanceOf[js.Any])).asInstanceOf[Component]
-  @scala.inline
-  def off(eventName: Unit, handlerToAttach: js.Function1[/* event */ StringDictionary[js.Any], js.Any]): Component = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(eventName.asInstanceOf[js.Any], handlerToAttach.asInstanceOf[js.Any])).asInstanceOf[Component]
+  inline def off(): Component = ^.asInstanceOf[js.Dynamic].applyDynamic("off")().asInstanceOf[Component]
+  inline def off(eventName: String): Component = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(eventName.asInstanceOf[js.Any]).asInstanceOf[Component]
+  inline def off(eventName: String, handlerToAttach: js.Function1[/* event */ StringDictionary[js.Any], js.Any]): Component = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(eventName.asInstanceOf[js.Any], handlerToAttach.asInstanceOf[js.Any])).asInstanceOf[Component]
+  inline def off(eventName: Unit, handlerToAttach: js.Function1[/* event */ StringDictionary[js.Any], js.Any]): Component = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(eventName.asInstanceOf[js.Any], handlerToAttach.asInstanceOf[js.Any])).asInstanceOf[Component]
   
-  @scala.inline
-  def on(eventName: String, handlerToAttach: js.Function1[/* event */ StringDictionary[js.Any], js.Any]): Component = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], handlerToAttach.asInstanceOf[js.Any])).asInstanceOf[Component]
-  @scala.inline
-  def on(events: StringDictionary[js.Function1[/* event */ StringDictionary[js.Any], js.Any]]): Component = ^.asInstanceOf[js.Dynamic].applyDynamic("on")(events.asInstanceOf[js.Any]).asInstanceOf[Component]
+  inline def on(eventName: String, handlerToAttach: js.Function1[/* event */ StringDictionary[js.Any], js.Any]): Component = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], handlerToAttach.asInstanceOf[js.Any])).asInstanceOf[Component]
+  inline def on(events: StringDictionary[js.Function1[/* event */ StringDictionary[js.Any], js.Any]]): Component = ^.asInstanceOf[js.Dynamic].applyDynamic("on")(events.asInstanceOf[js.Any]).asInstanceOf[Component]
   
-  @scala.inline
-  def once(eventName: String, handlerToAttach: js.Function1[/* event */ StringDictionary[js.Any], js.Any]): Component = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(eventName.asInstanceOf[js.Any], handlerToAttach.asInstanceOf[js.Any])).asInstanceOf[Component]
-  @scala.inline
-  def once(events: StringDictionary[js.Function1[/* event */ StringDictionary[js.Any], js.Any]]): Component = ^.asInstanceOf[js.Dynamic].applyDynamic("once")(events.asInstanceOf[js.Any]).asInstanceOf[Component]
+  inline def once(eventName: String, handlerToAttach: js.Function1[/* event */ StringDictionary[js.Any], js.Any]): Component = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(eventName.asInstanceOf[js.Any], handlerToAttach.asInstanceOf[js.Any])).asInstanceOf[Component]
+  inline def once(events: StringDictionary[js.Function1[/* event */ StringDictionary[js.Any], js.Any]]): Component = ^.asInstanceOf[js.Dynamic].applyDynamic("once")(events.asInstanceOf[js.Any]).asInstanceOf[Component]
   
-  @scala.inline
-  def trigger(eventName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(eventName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def trigger(eventName: String, customEvent: StringDictionary[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(eventName.asInstanceOf[js.Any], customEvent.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def trigger(eventName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(eventName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def trigger(eventName: String, customEvent: StringDictionary[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(eventName.asInstanceOf[js.Any], customEvent.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @js.native
   trait Component extends StObject {

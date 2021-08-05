@@ -448,8 +448,7 @@ object amStockChartMod {
   }
   object AmStockChart {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addListener: (String, js.Function1[/* e */ Date, Unit]) => Unit,
       addPanel: typings.amcharts.stockPanelMod.default => Unit,
       addPanelAt: (typings.amcharts.stockPanelMod.default, Double) => Unit,
@@ -491,128 +490,87 @@ object amStockChartMod {
       __obj.asInstanceOf[AmStockChart]
     }
     
-    @scala.inline
-    implicit class AmStockChartMutableBuilder[Self <: AmStockChart] (val x: Self) extends AnyVal {
+    extension [Self <: AmStockChart](x: Self) {
       
-      @scala.inline
-      def setAddListener(value: (String, js.Function1[/* e */ Date, Unit]) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
+      inline def setAddListener(value: (String, js.Function1[/* e */ Date, Unit]) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAddPanel(value: typings.amcharts.stockPanelMod.default => Unit): Self = StObject.set(x, "addPanel", js.Any.fromFunction1(value))
+      inline def setAddPanel(value: typings.amcharts.stockPanelMod.default => Unit): Self = StObject.set(x, "addPanel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddPanelAt(value: (typings.amcharts.stockPanelMod.default, Double) => Unit): Self = StObject.set(x, "addPanelAt", js.Any.fromFunction2(value))
+      inline def setAddPanelAt(value: (typings.amcharts.stockPanelMod.default, Double) => Unit): Self = StObject.set(x, "addPanelAt", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAnimationPlayed(value: Boolean): Self = StObject.set(x, "animationPlayed", value.asInstanceOf[js.Any])
+      inline def setAnimationPlayed(value: Boolean): Self = StObject.set(x, "animationPlayed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBalloon(value: typings.amcharts.amBalloonMod.default): Self = StObject.set(x, "balloon", value.asInstanceOf[js.Any])
+      inline def setBalloon(value: typings.amcharts.amBalloonMod.default): Self = StObject.set(x, "balloon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCategoryAxesSettings(value: typings.amcharts.categoryAxesSettingsMod.default): Self = StObject.set(x, "categoryAxesSettings", value.asInstanceOf[js.Any])
+      inline def setCategoryAxesSettings(value: typings.amcharts.categoryAxesSettingsMod.default): Self = StObject.set(x, "categoryAxesSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChartCreated(value: Boolean): Self = StObject.set(x, "chartCreated", value.asInstanceOf[js.Any])
+      inline def setChartCreated(value: Boolean): Self = StObject.set(x, "chartCreated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChartCursorSettings(value: typings.amcharts.chartCursorSettingsMod.default): Self = StObject.set(x, "chartCursorSettings", value.asInstanceOf[js.Any])
+      inline def setChartCursorSettings(value: typings.amcharts.chartCursorSettingsMod.default): Self = StObject.set(x, "chartCursorSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChartScrollbarSettings(value: typings.amcharts.chartScrollbarSettingsMod.default): Self = StObject.set(x, "chartScrollbarSettings", value.asInstanceOf[js.Any])
+      inline def setChartScrollbarSettings(value: typings.amcharts.chartScrollbarSettingsMod.default): Self = StObject.set(x, "chartScrollbarSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setColors(value: js.Array[js.Any]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: js.Array[js.Any]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorsVarargs(value: js.Any*): Self = StObject.set(x, "colors", js.Array(value :_*))
+      inline def setColorsVarargs(value: js.Any*): Self = StObject.set(x, "colors", js.Array(value :_*))
       
-      @scala.inline
-      def setComparedDataSets(value: js.Array[js.Any]): Self = StObject.set(x, "comparedDataSets", value.asInstanceOf[js.Any])
+      inline def setComparedDataSets(value: js.Array[js.Any]): Self = StObject.set(x, "comparedDataSets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComparedDataSetsVarargs(value: js.Any*): Self = StObject.set(x, "comparedDataSets", js.Array(value :_*))
+      inline def setComparedDataSetsVarargs(value: js.Any*): Self = StObject.set(x, "comparedDataSets", js.Array(value :_*))
       
-      @scala.inline
-      def setDataSetSelector(value: typings.amcharts.dataSetSelectorMod.default): Self = StObject.set(x, "dataSetSelector", value.asInstanceOf[js.Any])
+      inline def setDataSetSelector(value: typings.amcharts.dataSetSelectorMod.default): Self = StObject.set(x, "dataSetSelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataSets(value: js.Array[js.Any]): Self = StObject.set(x, "dataSets", value.asInstanceOf[js.Any])
+      inline def setDataSets(value: js.Array[js.Any]): Self = StObject.set(x, "dataSets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataSetsVarargs(value: js.Any*): Self = StObject.set(x, "dataSets", js.Array(value :_*))
+      inline def setDataSetsVarargs(value: js.Any*): Self = StObject.set(x, "dataSets", js.Array(value :_*))
       
-      @scala.inline
-      def setEndDate(value: typings.std.Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+      inline def setEndDate(value: typings.std.Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstDayOfWeek(value: Double): Self = StObject.set(x, "firstDayOfWeek", value.asInstanceOf[js.Any])
+      inline def setFirstDayOfWeek(value: Double): Self = StObject.set(x, "firstDayOfWeek", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlueToTheEnd(value: Boolean): Self = StObject.set(x, "glueToTheEnd", value.asInstanceOf[js.Any])
+      inline def setGlueToTheEnd(value: Boolean): Self = StObject.set(x, "glueToTheEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideStockEvents(value: () => Unit): Self = StObject.set(x, "hideStockEvents", js.Any.fromFunction0(value))
+      inline def setHideStockEvents(value: () => Unit): Self = StObject.set(x, "hideStockEvents", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLegendSettings(value: typings.amcharts.legendSettingsMod.default): Self = StObject.set(x, "legendSettings", value.asInstanceOf[js.Any])
+      inline def setLegendSettings(value: typings.amcharts.legendSettingsMod.default): Self = StObject.set(x, "legendSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMainDataSet(value: typings.amcharts.dataSetMod.default): Self = StObject.set(x, "mainDataSet", value.asInstanceOf[js.Any])
+      inline def setMainDataSet(value: typings.amcharts.dataSetMod.default): Self = StObject.set(x, "mainDataSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanels(value: js.Array[js.Any]): Self = StObject.set(x, "panels", value.asInstanceOf[js.Any])
+      inline def setPanels(value: js.Array[js.Any]): Self = StObject.set(x, "panels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanelsSettings(value: typings.amcharts.panelSettingsMod.default): Self = StObject.set(x, "panelsSettings", value.asInstanceOf[js.Any])
+      inline def setPanelsSettings(value: typings.amcharts.panelSettingsMod.default): Self = StObject.set(x, "panelsSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanelsVarargs(value: js.Any*): Self = StObject.set(x, "panels", js.Array(value :_*))
+      inline def setPanelsVarargs(value: js.Any*): Self = StObject.set(x, "panels", js.Array(value :_*))
       
-      @scala.inline
-      def setPeriodSelector(value: typings.amcharts.periodSelectorMod.default): Self = StObject.set(x, "periodSelector", value.asInstanceOf[js.Any])
+      inline def setPeriodSelector(value: typings.amcharts.periodSelectorMod.default): Self = StObject.set(x, "periodSelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveListener(value: (typings.amcharts.amChartMod.default, String, js.Any) => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction3(value))
+      inline def setRemoveListener(value: (typings.amcharts.amChartMod.default, String, js.Any) => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRemovePanel(value: typings.amcharts.stockPanelMod.default => Unit): Self = StObject.set(x, "removePanel", js.Any.fromFunction1(value))
+      inline def setRemovePanel(value: typings.amcharts.stockPanelMod.default => Unit): Self = StObject.set(x, "removePanel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setScrollbarChart(value: typings.amcharts.amSerialChartMod.default): Self = StObject.set(x, "scrollbarChart", value.asInstanceOf[js.Any])
+      inline def setScrollbarChart(value: typings.amcharts.amSerialChartMod.default): Self = StObject.set(x, "scrollbarChart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowStockEvents(value: () => Unit): Self = StObject.set(x, "showStockEvents", js.Any.fromFunction0(value))
+      inline def setShowStockEvents(value: () => Unit): Self = StObject.set(x, "showStockEvents", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStartDate(value: typings.std.Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+      inline def setStartDate(value: typings.std.Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStockEventsSettings(value: js.Any): Self = StObject.set(x, "stockEventsSettings", value.asInstanceOf[js.Any])
+      inline def setStockEventsSettings(value: js.Any): Self = StObject.set(x, "stockEventsSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateData(value: () => Unit): Self = StObject.set(x, "validateData", js.Any.fromFunction0(value))
+      inline def setValidateData(value: () => Unit): Self = StObject.set(x, "validateData", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setValidateNow(value: () => Unit): Self = StObject.set(x, "validateNow", js.Any.fromFunction0(value))
+      inline def setValidateNow(value: () => Unit): Self = StObject.set(x, "validateNow", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setValueAxesSettings(value: typings.amcharts.valueAxesSettingsMod.default): Self = StObject.set(x, "valueAxesSettings", value.asInstanceOf[js.Any])
+      inline def setValueAxesSettings(value: typings.amcharts.valueAxesSettingsMod.default): Self = StObject.set(x, "valueAxesSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoom(value: (typings.std.Date, typings.std.Date) => Unit): Self = StObject.set(x, "zoom", js.Any.fromFunction2(value))
+      inline def setZoom(value: (typings.std.Date, typings.std.Date) => Unit): Self = StObject.set(x, "zoom", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setZoomOut(value: () => Unit): Self = StObject.set(x, "zoomOut", js.Any.fromFunction0(value))
+      inline def setZoomOut(value: () => Unit): Self = StObject.set(x, "zoomOut", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setZoomOutOnDataSetChange(value: Boolean): Self = StObject.set(x, "zoomOutOnDataSetChange", value.asInstanceOf[js.Any])
+      inline def setZoomOutOnDataSetChange(value: Boolean): Self = StObject.set(x, "zoomOutOnDataSetChange", value.asInstanceOf[js.Any])
     }
   }
 }

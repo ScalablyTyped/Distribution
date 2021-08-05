@@ -340,44 +340,32 @@ object downloadMod {
   }
   object DownloadCallback {
     
-    @scala.inline
-    def apply(): DownloadCallback = {
+    inline def apply(): DownloadCallback = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DownloadCallback]
     }
     
-    @scala.inline
-    implicit class DownloadCallbackMutableBuilder[Self <: DownloadCallback] (val x: Self) extends AnyVal {
+    extension [Self <: DownloadCallback](x: Self) {
       
-      @scala.inline
-      def setOncanceled(value: /* downloadId */ Double => Unit): Self = StObject.set(x, "oncanceled", js.Any.fromFunction1(value))
+      inline def setOncanceled(value: /* downloadId */ Double => Unit): Self = StObject.set(x, "oncanceled", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOncanceledUndefined: Self = StObject.set(x, "oncanceled", js.undefined)
+      inline def setOncanceledUndefined: Self = StObject.set(x, "oncanceled", js.undefined)
       
-      @scala.inline
-      def setOncompleted(value: (/* downloadId */ Double, /* path */ String) => Unit): Self = StObject.set(x, "oncompleted", js.Any.fromFunction2(value))
+      inline def setOncompleted(value: (/* downloadId */ Double, /* path */ String) => Unit): Self = StObject.set(x, "oncompleted", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOncompletedUndefined: Self = StObject.set(x, "oncompleted", js.undefined)
+      inline def setOncompletedUndefined: Self = StObject.set(x, "oncompleted", js.undefined)
       
-      @scala.inline
-      def setOnfailed(value: (/* downloadId */ Double, /* error */ WebAPIError) => Unit): Self = StObject.set(x, "onfailed", js.Any.fromFunction2(value))
+      inline def setOnfailed(value: (/* downloadId */ Double, /* error */ WebAPIError) => Unit): Self = StObject.set(x, "onfailed", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnfailedUndefined: Self = StObject.set(x, "onfailed", js.undefined)
+      inline def setOnfailedUndefined: Self = StObject.set(x, "onfailed", js.undefined)
       
-      @scala.inline
-      def setOnpaused(value: /* downloadId */ Double => Unit): Self = StObject.set(x, "onpaused", js.Any.fromFunction1(value))
+      inline def setOnpaused(value: /* downloadId */ Double => Unit): Self = StObject.set(x, "onpaused", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnpausedUndefined: Self = StObject.set(x, "onpaused", js.undefined)
+      inline def setOnpausedUndefined: Self = StObject.set(x, "onpaused", js.undefined)
       
-      @scala.inline
-      def setOnprogress(value: (/* downloadId */ Double, /* receivedSize */ Double, /* totalSize */ Double) => Unit): Self = StObject.set(x, "onprogress", js.Any.fromFunction3(value))
+      inline def setOnprogress(value: (/* downloadId */ Double, /* receivedSize */ Double, /* totalSize */ Double) => Unit): Self = StObject.set(x, "onprogress", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnprogressUndefined: Self = StObject.set(x, "onprogress", js.undefined)
+      inline def setOnprogressUndefined: Self = StObject.set(x, "onprogress", js.undefined)
     }
   }
   

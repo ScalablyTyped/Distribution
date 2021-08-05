@@ -18,13 +18,12 @@ trait MailMergeDataField extends StObject {
   
   val Value: String
   
-  @JSName("Word.MailMergeDataField_typekey")
+  /* private */ @JSName("Word.MailMergeDataField_typekey")
   var WordDotMailMergeDataField_typekey: MailMergeDataField
 }
 object MailMergeDataField {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: Double,
     Index: Double,
@@ -38,28 +37,20 @@ object MailMergeDataField {
     __obj.asInstanceOf[MailMergeDataField]
   }
   
-  @scala.inline
-  implicit class MailMergeDataFieldMutableBuilder[Self <: MailMergeDataField] (val x: Self) extends AnyVal {
+  extension [Self <: MailMergeDataField](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotMailMergeDataField_typekey(value: MailMergeDataField): Self = StObject.set(x, "Word.MailMergeDataField_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotMailMergeDataField_typekey(value: MailMergeDataField): Self = StObject.set(x, "Word.MailMergeDataField_typekey", value.asInstanceOf[js.Any])
   }
 }

@@ -22,25 +22,19 @@ trait PlotVwapParamsOptions extends StObject {
 }
 object PlotVwapParamsOptions {
   
-  @scala.inline
-  def apply(): PlotVwapParamsOptions = {
+  inline def apply(): PlotVwapParamsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotVwapParamsOptions]
   }
   
-  @scala.inline
-  implicit class PlotVwapParamsOptionsMutableBuilder[Self <: PlotVwapParamsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotVwapParamsOptions](x: Self) {
     
-    @scala.inline
-    def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
-    @scala.inline
-    def setVolumeSeriesID(value: String): Self = StObject.set(x, "volumeSeriesID", value.asInstanceOf[js.Any])
+    inline def setVolumeSeriesID(value: String): Self = StObject.set(x, "volumeSeriesID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeSeriesIDUndefined: Self = StObject.set(x, "volumeSeriesID", js.undefined)
+    inline def setVolumeSeriesIDUndefined: Self = StObject.set(x, "volumeSeriesID", js.undefined)
   }
 }

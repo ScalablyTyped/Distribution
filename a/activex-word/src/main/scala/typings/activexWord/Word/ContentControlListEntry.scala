@@ -26,13 +26,12 @@ trait ContentControlListEntry extends StObject {
   
   var Value: String
   
-  @JSName("Word.ContentControlListEntry_typekey")
+  /* private */ @JSName("Word.ContentControlListEntry_typekey")
   var WordDotContentControlListEntry_typekey: ContentControlListEntry
 }
 object ContentControlListEntry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: Double,
     Delete: () => Unit,
@@ -50,40 +49,28 @@ object ContentControlListEntry {
     __obj.asInstanceOf[ContentControlListEntry]
   }
   
-  @scala.inline
-  implicit class ContentControlListEntryMutableBuilder[Self <: ContentControlListEntry] (val x: Self) extends AnyVal {
+  extension [Self <: ContentControlListEntry](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveDown(value: () => Unit): Self = StObject.set(x, "MoveDown", js.Any.fromFunction0(value))
+    inline def setMoveDown(value: () => Unit): Self = StObject.set(x, "MoveDown", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMoveUp(value: () => Unit): Self = StObject.set(x, "MoveUp", js.Any.fromFunction0(value))
+    inline def setMoveUp(value: () => Unit): Self = StObject.set(x, "MoveUp", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelect(value: () => Unit): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
+    inline def setSelect(value: () => Unit): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotContentControlListEntry_typekey(value: ContentControlListEntry): Self = StObject.set(x, "Word.ContentControlListEntry_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotContentControlListEntry_typekey(value: ContentControlListEntry): Self = StObject.set(x, "Word.ContentControlListEntry_typekey", value.asInstanceOf[js.Any])
   }
 }

@@ -26,28 +26,21 @@ trait SchemaSignJwtRequest extends StObject {
 }
 object SchemaSignJwtRequest {
   
-  @scala.inline
-  def apply(): SchemaSignJwtRequest = {
+  inline def apply(): SchemaSignJwtRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSignJwtRequest]
   }
   
-  @scala.inline
-  implicit class SchemaSignJwtRequestMutableBuilder[Self <: SchemaSignJwtRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSignJwtRequest](x: Self) {
     
-    @scala.inline
-    def setDelegates(value: js.Array[String]): Self = StObject.set(x, "delegates", value.asInstanceOf[js.Any])
+    inline def setDelegates(value: js.Array[String]): Self = StObject.set(x, "delegates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelegatesUndefined: Self = StObject.set(x, "delegates", js.undefined)
+    inline def setDelegatesUndefined: Self = StObject.set(x, "delegates", js.undefined)
     
-    @scala.inline
-    def setDelegatesVarargs(value: String*): Self = StObject.set(x, "delegates", js.Array(value :_*))
+    inline def setDelegatesVarargs(value: String*): Self = StObject.set(x, "delegates", js.Array(value :_*))
     
-    @scala.inline
-    def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait GetDocumentResponse extends StObject {
 }
 object GetDocumentResponse {
   
-  @scala.inline
-  def apply(root: Node): GetDocumentResponse = {
+  inline def apply(root: Node): GetDocumentResponse = {
     val __obj = js.Dynamic.literal(root = root.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDocumentResponse]
   }
   
-  @scala.inline
-  implicit class GetDocumentResponseMutableBuilder[Self <: GetDocumentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetDocumentResponse](x: Self) {
     
-    @scala.inline
-    def setRoot(value: Node): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: Node): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
   }
 }

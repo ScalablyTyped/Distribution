@@ -37,8 +37,7 @@ object Buffer {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def from(data: js.Array[Double]): typings.pixiJs.PIXI.Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(data.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.Buffer]
+  inline def from(data: js.Array[Double]): typings.pixiJs.PIXI.Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(data.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.Buffer]
   /**
     * Helper function that creates a buffer based on an array or TypedArray
     *
@@ -47,6 +46,5 @@ object Buffer {
     * @return {PIXI.Buffer} A new Buffer based on the data provided.
     */
   /* static member */
-  @scala.inline
-  def from(data: ArrayBufferView): typings.pixiJs.PIXI.Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(data.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.Buffer]
+  inline def from(data: ArrayBufferView): typings.pixiJs.PIXI.Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(data.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.Buffer]
 }

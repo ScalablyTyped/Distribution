@@ -17,28 +17,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object SVGOverlayProps {
   
-  @scala.inline
-  def apply(): SVGOverlayProps = {
+  inline def apply(): SVGOverlayProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SVGOverlayProps]
   }
   
-  @scala.inline
-  implicit class SVGOverlayPropsMutableBuilder[Self <: SVGOverlayProps] (val x: Self) extends AnyVal {
+  extension [Self <: SVGOverlayProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: Children): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Children): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setLeaflet(value: LeafletContext): Self = StObject.set(x, "leaflet", value.asInstanceOf[js.Any])
+    inline def setLeaflet(value: LeafletContext): Self = StObject.set(x, "leaflet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeafletUndefined: Self = StObject.set(x, "leaflet", js.undefined)
+    inline def setLeafletUndefined: Self = StObject.set(x, "leaflet", js.undefined)
   }
 }

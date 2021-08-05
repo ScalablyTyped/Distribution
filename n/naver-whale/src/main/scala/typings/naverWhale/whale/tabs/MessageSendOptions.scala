@@ -11,19 +11,15 @@ trait MessageSendOptions extends StObject {
 }
 object MessageSendOptions {
   
-  @scala.inline
-  def apply(): MessageSendOptions = {
+  inline def apply(): MessageSendOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MessageSendOptions]
   }
   
-  @scala.inline
-  implicit class MessageSendOptionsMutableBuilder[Self <: MessageSendOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MessageSendOptions](x: Self) {
     
-    @scala.inline
-    def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+    inline def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameIdUndefined: Self = StObject.set(x, "frameId", js.undefined)
+    inline def setFrameIdUndefined: Self = StObject.set(x, "frameId", js.undefined)
   }
 }

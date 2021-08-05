@@ -13,22 +13,17 @@ trait InstructionsInitiallyVisible extends StObject {
 }
 object InstructionsInitiallyVisible {
   
-  @scala.inline
-  def apply(container: Element | String): InstructionsInitiallyVisible = {
+  inline def apply(container: Element | String): InstructionsInitiallyVisible = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstructionsInitiallyVisible]
   }
   
-  @scala.inline
-  implicit class InstructionsInitiallyVisibleMutableBuilder[Self <: InstructionsInitiallyVisible] (val x: Self) extends AnyVal {
+  extension [Self <: InstructionsInitiallyVisible](x: Self) {
     
-    @scala.inline
-    def setContainer(value: Element | String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: Element | String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstructionsInitiallyVisible(value: Boolean): Self = StObject.set(x, "instructionsInitiallyVisible", value.asInstanceOf[js.Any])
+    inline def setInstructionsInitiallyVisible(value: Boolean): Self = StObject.set(x, "instructionsInitiallyVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstructionsInitiallyVisibleUndefined: Self = StObject.set(x, "instructionsInitiallyVisible", js.undefined)
+    inline def setInstructionsInitiallyVisibleUndefined: Self = StObject.set(x, "instructionsInitiallyVisible", js.undefined)
   }
 }

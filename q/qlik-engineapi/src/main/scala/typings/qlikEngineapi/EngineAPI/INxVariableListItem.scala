@@ -69,8 +69,7 @@ trait INxVariableListItem extends StObject {
 }
 object INxVariableListItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qData: js.Any,
     qDefinition: String,
     qDescription: String,
@@ -82,43 +81,30 @@ object INxVariableListItem {
     __obj.asInstanceOf[INxVariableListItem]
   }
   
-  @scala.inline
-  implicit class INxVariableListItemMutableBuilder[Self <: INxVariableListItem] (val x: Self) extends AnyVal {
+  extension [Self <: INxVariableListItem](x: Self) {
     
-    @scala.inline
-    def setQData(value: js.Any): Self = StObject.set(x, "qData", value.asInstanceOf[js.Any])
+    inline def setQData(value: js.Any): Self = StObject.set(x, "qData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQDefinition(value: String): Self = StObject.set(x, "qDefinition", value.asInstanceOf[js.Any])
+    inline def setQDefinition(value: String): Self = StObject.set(x, "qDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQDescription(value: String): Self = StObject.set(x, "qDescription", value.asInstanceOf[js.Any])
+    inline def setQDescription(value: String): Self = StObject.set(x, "qDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQInfo(value: INxInfo): Self = StObject.set(x, "qInfo", value.asInstanceOf[js.Any])
+    inline def setQInfo(value: INxInfo): Self = StObject.set(x, "qInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQIsConfig(value: Boolean): Self = StObject.set(x, "qIsConfig", value.asInstanceOf[js.Any])
+    inline def setQIsConfig(value: Boolean): Self = StObject.set(x, "qIsConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQIsConfigUndefined: Self = StObject.set(x, "qIsConfig", js.undefined)
+    inline def setQIsConfigUndefined: Self = StObject.set(x, "qIsConfig", js.undefined)
     
-    @scala.inline
-    def setQIsReserved(value: Boolean): Self = StObject.set(x, "qIsReserved", value.asInstanceOf[js.Any])
+    inline def setQIsReserved(value: Boolean): Self = StObject.set(x, "qIsReserved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQIsReservedUndefined: Self = StObject.set(x, "qIsReserved", js.undefined)
+    inline def setQIsReservedUndefined: Self = StObject.set(x, "qIsReserved", js.undefined)
     
-    @scala.inline
-    def setQIsScriptCreated(value: Boolean): Self = StObject.set(x, "qIsScriptCreated", value.asInstanceOf[js.Any])
+    inline def setQIsScriptCreated(value: Boolean): Self = StObject.set(x, "qIsScriptCreated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQMeta(value: INxMeta): Self = StObject.set(x, "qMeta", value.asInstanceOf[js.Any])
+    inline def setQMeta(value: INxMeta): Self = StObject.set(x, "qMeta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQMetaUndefined: Self = StObject.set(x, "qMeta", js.undefined)
+    inline def setQMetaUndefined: Self = StObject.set(x, "qMeta", js.undefined)
     
-    @scala.inline
-    def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
+    inline def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
   }
 }

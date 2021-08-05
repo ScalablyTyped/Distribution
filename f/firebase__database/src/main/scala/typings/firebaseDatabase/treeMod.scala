@@ -95,16 +95,16 @@ object treeMod {
       */
     def name(): String = js.native
     
-    var name_ : js.Any = js.native
+    /* private */ var name_ : js.Any = js.native
     
-    var node_ : js.Any = js.native
+    /* private */ var node_ : js.Any = js.native
     
     /**
       * @return {?Tree} The parent tree node, or null if this is the root of the tree.
       */
     def parent(): Tree[T] | Null = js.native
     
-    var parent_ : js.Any = js.native
+    /* private */ var parent_ : js.Any = js.native
     
     /**
       * @return {!Path} The path of this tree node, as a Path.
@@ -134,14 +134,14 @@ object treeMod {
       * @param {!Tree.<T>} child The child to update.
       * @private
       */
-    var updateChild_ : js.Any = js.native
+    /* private */ var updateChild_ : js.Any = js.native
     
     /**
       * Adds or removes this child from its parent based on whether it's empty or not.
       *
       * @private
       */
-    var updateParents_ : js.Any = js.native
+    /* private */ var updateParents_ : js.Any = js.native
   }
   
   @JSImport("@firebase/database/dist/src/core/util/Tree", "TreeNode")

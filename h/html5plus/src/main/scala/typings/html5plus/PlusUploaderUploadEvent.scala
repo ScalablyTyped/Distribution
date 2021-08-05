@@ -21,19 +21,15 @@ trait PlusUploaderUploadEvent extends StObject {
 }
 object PlusUploaderUploadEvent {
   
-  @scala.inline
-  def apply(): PlusUploaderUploadEvent = {
+  inline def apply(): PlusUploaderUploadEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusUploaderUploadEvent]
   }
   
-  @scala.inline
-  implicit class PlusUploaderUploadEventMutableBuilder[Self <: PlusUploaderUploadEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PlusUploaderUploadEvent](x: Self) {
     
-    @scala.inline
-    def setStatechanged(value: String): Self = StObject.set(x, "statechanged", value.asInstanceOf[js.Any])
+    inline def setStatechanged(value: String): Self = StObject.set(x, "statechanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatechangedUndefined: Self = StObject.set(x, "statechanged", js.undefined)
+    inline def setStatechangedUndefined: Self = StObject.set(x, "statechanged", js.undefined)
   }
 }

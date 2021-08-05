@@ -16,15 +16,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UUIDVersion extends StObject
 object UUIDVersion {
   
-  @scala.inline
-  def `3`: typings.validator.validatorNumbers.`3` = 3.asInstanceOf[typings.validator.validatorNumbers.`3`]
+  inline def `3`: typings.validator.validatorNumbers.`3` = 3.asInstanceOf[typings.validator.validatorNumbers.`3`]
   
-  @scala.inline
-  def `4`: typings.validator.validatorNumbers.`4` = 4.asInstanceOf[typings.validator.validatorNumbers.`4`]
+  inline def `4`: typings.validator.validatorNumbers.`4` = 4.asInstanceOf[typings.validator.validatorNumbers.`4`]
   
-  @scala.inline
-  def `5`: typings.validator.validatorNumbers.`5` = 5.asInstanceOf[typings.validator.validatorNumbers.`5`]
+  inline def `5`: typings.validator.validatorNumbers.`5` = 5.asInstanceOf[typings.validator.validatorNumbers.`5`]
   
-  @scala.inline
-  def all: typings.validator.validatorStrings.all = "all".asInstanceOf[typings.validator.validatorStrings.all]
+  inline def all: typings.validator.validatorStrings.all = "all".asInstanceOf[typings.validator.validatorStrings.all]
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("sip.js", "Core.Exception")
 @js.native
-abstract class Exception protected ()
+/* protected */ abstract class Exception ()
   extends typings.sipJs.coreMod.Exception {
-  protected def this(message: String) = this()
+  /* protected */ def this(message: String) = this()
 }

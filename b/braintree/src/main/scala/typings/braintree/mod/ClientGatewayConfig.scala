@@ -14,19 +14,15 @@ trait ClientGatewayConfig
 }
 object ClientGatewayConfig {
   
-  @scala.inline
-  def apply(clientId: String, clientSecret: String): ClientGatewayConfig = {
+  inline def apply(clientId: String, clientSecret: String): ClientGatewayConfig = {
     val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientGatewayConfig]
   }
   
-  @scala.inline
-  implicit class ClientGatewayConfigMutableBuilder[Self <: ClientGatewayConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ClientGatewayConfig](x: Self) {
     
-    @scala.inline
-    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
+    inline def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
   }
 }

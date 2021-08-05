@@ -19,6 +19,5 @@ class BreadcrumbSection protected ()
 }
 object BreadcrumbSection {
   
-  @scala.inline
-  def apply: ComponentClass[BreadcrumbSectionProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("BreadcrumbSection").asInstanceOf[ComponentClass[BreadcrumbSectionProps, ComponentState]]
+  inline def apply: ComponentClass[BreadcrumbSectionProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("BreadcrumbSection").asInstanceOf[ComponentClass[BreadcrumbSectionProps, ComponentState]]
 }

@@ -13,19 +13,15 @@ trait AssociateExternalConnectionResult extends StObject {
 }
 object AssociateExternalConnectionResult {
   
-  @scala.inline
-  def apply(): AssociateExternalConnectionResult = {
+  inline def apply(): AssociateExternalConnectionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssociateExternalConnectionResult]
   }
   
-  @scala.inline
-  implicit class AssociateExternalConnectionResultMutableBuilder[Self <: AssociateExternalConnectionResult] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateExternalConnectionResult](x: Self) {
     
-    @scala.inline
-    def setRepository(value: RepositoryDescription): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    inline def setRepository(value: RepositoryDescription): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
+    inline def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
   }
 }

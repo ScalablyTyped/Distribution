@@ -18,28 +18,21 @@ trait DescribeReplicationTaskAssessmentRunsResponse extends StObject {
 }
 object DescribeReplicationTaskAssessmentRunsResponse {
   
-  @scala.inline
-  def apply(): DescribeReplicationTaskAssessmentRunsResponse = {
+  inline def apply(): DescribeReplicationTaskAssessmentRunsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeReplicationTaskAssessmentRunsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeReplicationTaskAssessmentRunsResponseMutableBuilder[Self <: DescribeReplicationTaskAssessmentRunsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeReplicationTaskAssessmentRunsResponse](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setReplicationTaskAssessmentRuns(value: ReplicationTaskAssessmentRunList): Self = StObject.set(x, "ReplicationTaskAssessmentRuns", value.asInstanceOf[js.Any])
+    inline def setReplicationTaskAssessmentRuns(value: ReplicationTaskAssessmentRunList): Self = StObject.set(x, "ReplicationTaskAssessmentRuns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationTaskAssessmentRunsUndefined: Self = StObject.set(x, "ReplicationTaskAssessmentRuns", js.undefined)
+    inline def setReplicationTaskAssessmentRunsUndefined: Self = StObject.set(x, "ReplicationTaskAssessmentRuns", js.undefined)
     
-    @scala.inline
-    def setReplicationTaskAssessmentRunsVarargs(value: ReplicationTaskAssessmentRun*): Self = StObject.set(x, "ReplicationTaskAssessmentRuns", js.Array(value :_*))
+    inline def setReplicationTaskAssessmentRunsVarargs(value: ReplicationTaskAssessmentRun*): Self = StObject.set(x, "ReplicationTaskAssessmentRuns", js.Array(value :_*))
   }
 }

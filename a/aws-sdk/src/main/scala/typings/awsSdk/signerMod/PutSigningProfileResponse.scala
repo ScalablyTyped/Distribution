@@ -13,19 +13,15 @@ trait PutSigningProfileResponse extends StObject {
 }
 object PutSigningProfileResponse {
   
-  @scala.inline
-  def apply(): PutSigningProfileResponse = {
+  inline def apply(): PutSigningProfileResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutSigningProfileResponse]
   }
   
-  @scala.inline
-  implicit class PutSigningProfileResponseMutableBuilder[Self <: PutSigningProfileResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PutSigningProfileResponse](x: Self) {
     
-    @scala.inline
-    def setArn(value: java.lang.String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: java.lang.String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
   }
 }

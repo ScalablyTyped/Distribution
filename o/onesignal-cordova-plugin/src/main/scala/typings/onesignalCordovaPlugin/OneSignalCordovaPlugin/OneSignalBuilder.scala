@@ -19,8 +19,7 @@ trait OneSignalBuilder extends StObject {
 }
 object OneSignalBuilder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     endInit: () => Unit,
     handleNotificationOpened: js.Function1[/* json */ OSNotificationOpenedResult, Unit] => OneSignalBuilder,
     handleNotificationReceived: js.Function1[/* json */ OSNotification, Unit] => OneSignalBuilder,
@@ -31,22 +30,16 @@ object OneSignalBuilder {
     __obj.asInstanceOf[OneSignalBuilder]
   }
   
-  @scala.inline
-  implicit class OneSignalBuilderMutableBuilder[Self <: OneSignalBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: OneSignalBuilder](x: Self) {
     
-    @scala.inline
-    def setEndInit(value: () => Unit): Self = StObject.set(x, "endInit", js.Any.fromFunction0(value))
+    inline def setEndInit(value: () => Unit): Self = StObject.set(x, "endInit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHandleNotificationOpened(value: js.Function1[/* json */ OSNotificationOpenedResult, Unit] => OneSignalBuilder): Self = StObject.set(x, "handleNotificationOpened", js.Any.fromFunction1(value))
+    inline def setHandleNotificationOpened(value: js.Function1[/* json */ OSNotificationOpenedResult, Unit] => OneSignalBuilder): Self = StObject.set(x, "handleNotificationOpened", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHandleNotificationReceived(value: js.Function1[/* json */ OSNotification, Unit] => OneSignalBuilder): Self = StObject.set(x, "handleNotificationReceived", js.Any.fromFunction1(value))
+    inline def setHandleNotificationReceived(value: js.Function1[/* json */ OSNotification, Unit] => OneSignalBuilder): Self = StObject.set(x, "handleNotificationReceived", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIOSSettings(value: KOSSettingsKeyAutoPrompt => OneSignalBuilder): Self = StObject.set(x, "iOSSettings", js.Any.fromFunction1(value))
+    inline def setIOSSettings(value: KOSSettingsKeyAutoPrompt => OneSignalBuilder): Self = StObject.set(x, "iOSSettings", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInFocusDisplaying(value: OSDisplayType => OneSignalBuilder): Self = StObject.set(x, "inFocusDisplaying", js.Any.fromFunction1(value))
+    inline def setInFocusDisplaying(value: OSDisplayType => OneSignalBuilder): Self = StObject.set(x, "inFocusDisplaying", js.Any.fromFunction1(value))
   }
 }

@@ -48,8 +48,7 @@ trait UpdateDashboardRequest extends StObject {
 }
 object UpdateDashboardRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AwsAccountId: AwsAccountId,
     DashboardId: RestrictiveResourceId,
     Name: DashboardName,
@@ -59,43 +58,30 @@ object UpdateDashboardRequest {
     __obj.asInstanceOf[UpdateDashboardRequest]
   }
   
-  @scala.inline
-  implicit class UpdateDashboardRequestMutableBuilder[Self <: UpdateDashboardRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDashboardRequest](x: Self) {
     
-    @scala.inline
-    def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
+    inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashboardId(value: RestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
+    inline def setDashboardId(value: RestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashboardPublishOptions(value: DashboardPublishOptions): Self = StObject.set(x, "DashboardPublishOptions", value.asInstanceOf[js.Any])
+    inline def setDashboardPublishOptions(value: DashboardPublishOptions): Self = StObject.set(x, "DashboardPublishOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashboardPublishOptionsUndefined: Self = StObject.set(x, "DashboardPublishOptions", js.undefined)
+    inline def setDashboardPublishOptionsUndefined: Self = StObject.set(x, "DashboardPublishOptions", js.undefined)
     
-    @scala.inline
-    def setName(value: DashboardName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: DashboardName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameters(value: Parameters): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: Parameters): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
-    @scala.inline
-    def setSourceEntity(value: DashboardSourceEntity): Self = StObject.set(x, "SourceEntity", value.asInstanceOf[js.Any])
+    inline def setSourceEntity(value: DashboardSourceEntity): Self = StObject.set(x, "SourceEntity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeArn(value: Arn): Self = StObject.set(x, "ThemeArn", value.asInstanceOf[js.Any])
+    inline def setThemeArn(value: Arn): Self = StObject.set(x, "ThemeArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeArnUndefined: Self = StObject.set(x, "ThemeArn", js.undefined)
+    inline def setThemeArnUndefined: Self = StObject.set(x, "ThemeArn", js.undefined)
     
-    @scala.inline
-    def setVersionDescription(value: VersionDescription): Self = StObject.set(x, "VersionDescription", value.asInstanceOf[js.Any])
+    inline def setVersionDescription(value: VersionDescription): Self = StObject.set(x, "VersionDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionDescriptionUndefined: Self = StObject.set(x, "VersionDescription", js.undefined)
+    inline def setVersionDescriptionUndefined: Self = StObject.set(x, "VersionDescription", js.undefined)
   }
 }

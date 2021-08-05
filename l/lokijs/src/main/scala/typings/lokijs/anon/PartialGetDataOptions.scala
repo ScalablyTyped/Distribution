@@ -22,36 +22,27 @@ trait PartialGetDataOptions extends StObject {
 }
 object PartialGetDataOptions {
   
-  @scala.inline
-  def apply(): PartialGetDataOptions = {
+  inline def apply(): PartialGetDataOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialGetDataOptions]
   }
   
-  @scala.inline
-  implicit class PartialGetDataOptionsMutableBuilder[Self <: PartialGetDataOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PartialGetDataOptions](x: Self) {
     
-    @scala.inline
-    def setForceCloneMethod(
+    inline def setForceCloneMethod(
       value: `parse-stringify` | `jquery-extend-deep` | shallow | `shallow-assign` | `shallow-recurse-objects`
     ): Self = StObject.set(x, "forceCloneMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceCloneMethodNull: Self = StObject.set(x, "forceCloneMethod", null)
+    inline def setForceCloneMethodNull: Self = StObject.set(x, "forceCloneMethod", null)
     
-    @scala.inline
-    def setForceCloneMethodUndefined: Self = StObject.set(x, "forceCloneMethod", js.undefined)
+    inline def setForceCloneMethodUndefined: Self = StObject.set(x, "forceCloneMethod", js.undefined)
     
-    @scala.inline
-    def setForceClones(value: Boolean): Self = StObject.set(x, "forceClones", value.asInstanceOf[js.Any])
+    inline def setForceClones(value: Boolean): Self = StObject.set(x, "forceClones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceClonesUndefined: Self = StObject.set(x, "forceClones", js.undefined)
+    inline def setForceClonesUndefined: Self = StObject.set(x, "forceClones", js.undefined)
     
-    @scala.inline
-    def setRemoveMeta(value: Boolean): Self = StObject.set(x, "removeMeta", value.asInstanceOf[js.Any])
+    inline def setRemoveMeta(value: Boolean): Self = StObject.set(x, "removeMeta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveMetaUndefined: Self = StObject.set(x, "removeMeta", js.undefined)
+    inline def setRemoveMetaUndefined: Self = StObject.set(x, "removeMeta", js.undefined)
   }
 }

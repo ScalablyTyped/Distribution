@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PpBaselineAlignment extends StObject
 object PpBaselineAlignment {
   
-  @scala.inline
-  def ppBaselineAlignAuto: `5` = 5.asInstanceOf[`5`]
+  inline def ppBaselineAlignAuto: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def ppBaselineAlignBaseline: `1` = 1.asInstanceOf[`1`]
+  inline def ppBaselineAlignBaseline: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def ppBaselineAlignCenter: `3` = 3.asInstanceOf[`3`]
+  inline def ppBaselineAlignCenter: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def ppBaselineAlignFarEast50: `4` = 4.asInstanceOf[`4`]
+  inline def ppBaselineAlignFarEast50: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def ppBaselineAlignMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def ppBaselineAlignMixed: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def ppBaselineAlignTop: `2` = 2.asInstanceOf[`2`]
+  inline def ppBaselineAlignTop: `2` = 2.asInstanceOf[`2`]
 }

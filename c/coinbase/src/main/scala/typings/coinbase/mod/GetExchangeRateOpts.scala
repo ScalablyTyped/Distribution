@@ -13,19 +13,15 @@ trait GetExchangeRateOpts extends StObject {
 }
 object GetExchangeRateOpts {
   
-  @scala.inline
-  def apply(): GetExchangeRateOpts = {
+  inline def apply(): GetExchangeRateOpts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetExchangeRateOpts]
   }
   
-  @scala.inline
-  implicit class GetExchangeRateOptsMutableBuilder[Self <: GetExchangeRateOpts] (val x: Self) extends AnyVal {
+  extension [Self <: GetExchangeRateOpts](x: Self) {
     
-    @scala.inline
-    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+    inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
+    inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
   }
 }

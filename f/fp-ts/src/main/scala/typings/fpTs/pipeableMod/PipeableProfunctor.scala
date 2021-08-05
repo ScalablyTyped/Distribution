@@ -13,8 +13,7 @@ trait PipeableProfunctor[F] extends StObject {
 }
 object PipeableProfunctor {
   
-  @scala.inline
-  def apply[F](
+  inline def apply[F](
     promap: (js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any]) => js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT2<F, E, A> */ /* fbc */ js.Any, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT2<F, D, B> */ js.Any
@@ -24,11 +23,9 @@ object PipeableProfunctor {
     __obj.asInstanceOf[PipeableProfunctor[F]]
   }
   
-  @scala.inline
-  implicit class PipeableProfunctorMutableBuilder[Self <: PipeableProfunctor[?], F] (val x: Self & PipeableProfunctor[F]) extends AnyVal {
+  extension [Self <: PipeableProfunctor[?], F](x: Self & PipeableProfunctor[F]) {
     
-    @scala.inline
-    def setPromap(
+    inline def setPromap(
       value: (js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any]) => js.Function1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT2<F, E, A> */ /* fbc */ js.Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT2<F, D, B> */ js.Any

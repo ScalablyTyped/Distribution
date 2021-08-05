@@ -18,25 +18,19 @@ trait Resource extends StObject {
 }
 object Resource {
   
-  @scala.inline
-  def apply(): Resource = {
+  inline def apply(): Resource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Resource]
   }
   
-  @scala.inline
-  implicit class ResourceMutableBuilder[Self <: Resource] (val x: Self) extends AnyVal {
+  extension [Self <: Resource](x: Self) {
     
-    @scala.inline
-    def setPortal(value: PortalResource): Self = StObject.set(x, "portal", value.asInstanceOf[js.Any])
+    inline def setPortal(value: PortalResource): Self = StObject.set(x, "portal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortalUndefined: Self = StObject.set(x, "portal", js.undefined)
+    inline def setPortalUndefined: Self = StObject.set(x, "portal", js.undefined)
     
-    @scala.inline
-    def setProject(value: ProjectResource): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: ProjectResource): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+    inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
   }
 }

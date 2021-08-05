@@ -12,19 +12,15 @@ trait OutlineOffset extends StObject {
 }
 object OutlineOffset {
   
-  @scala.inline
-  def apply(appearance: String, outlineOffset: String): OutlineOffset = {
+  inline def apply(appearance: String, outlineOffset: String): OutlineOffset = {
     val __obj = js.Dynamic.literal(appearance = appearance.asInstanceOf[js.Any], outlineOffset = outlineOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutlineOffset]
   }
   
-  @scala.inline
-  implicit class OutlineOffsetMutableBuilder[Self <: OutlineOffset] (val x: Self) extends AnyVal {
+  extension [Self <: OutlineOffset](x: Self) {
     
-    @scala.inline
-    def setAppearance(value: String): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
+    inline def setAppearance(value: String): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlineOffset(value: String): Self = StObject.set(x, "outlineOffset", value.asInstanceOf[js.Any])
+    inline def setOutlineOffset(value: String): Self = StObject.set(x, "outlineOffset", value.asInstanceOf[js.Any])
   }
 }

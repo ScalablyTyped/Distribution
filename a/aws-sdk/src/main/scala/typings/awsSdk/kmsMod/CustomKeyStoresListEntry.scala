@@ -43,55 +43,39 @@ trait CustomKeyStoresListEntry extends StObject {
 }
 object CustomKeyStoresListEntry {
   
-  @scala.inline
-  def apply(): CustomKeyStoresListEntry = {
+  inline def apply(): CustomKeyStoresListEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomKeyStoresListEntry]
   }
   
-  @scala.inline
-  implicit class CustomKeyStoresListEntryMutableBuilder[Self <: CustomKeyStoresListEntry] (val x: Self) extends AnyVal {
+  extension [Self <: CustomKeyStoresListEntry](x: Self) {
     
-    @scala.inline
-    def setCloudHsmClusterId(value: CloudHsmClusterIdType): Self = StObject.set(x, "CloudHsmClusterId", value.asInstanceOf[js.Any])
+    inline def setCloudHsmClusterId(value: CloudHsmClusterIdType): Self = StObject.set(x, "CloudHsmClusterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudHsmClusterIdUndefined: Self = StObject.set(x, "CloudHsmClusterId", js.undefined)
+    inline def setCloudHsmClusterIdUndefined: Self = StObject.set(x, "CloudHsmClusterId", js.undefined)
     
-    @scala.inline
-    def setConnectionErrorCode(value: ConnectionErrorCodeType): Self = StObject.set(x, "ConnectionErrorCode", value.asInstanceOf[js.Any])
+    inline def setConnectionErrorCode(value: ConnectionErrorCodeType): Self = StObject.set(x, "ConnectionErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionErrorCodeUndefined: Self = StObject.set(x, "ConnectionErrorCode", js.undefined)
+    inline def setConnectionErrorCodeUndefined: Self = StObject.set(x, "ConnectionErrorCode", js.undefined)
     
-    @scala.inline
-    def setConnectionState(value: ConnectionStateType): Self = StObject.set(x, "ConnectionState", value.asInstanceOf[js.Any])
+    inline def setConnectionState(value: ConnectionStateType): Self = StObject.set(x, "ConnectionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionStateUndefined: Self = StObject.set(x, "ConnectionState", js.undefined)
+    inline def setConnectionStateUndefined: Self = StObject.set(x, "ConnectionState", js.undefined)
     
-    @scala.inline
-    def setCreationDate(value: DateType): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: DateType): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
-    @scala.inline
-    def setCustomKeyStoreId(value: CustomKeyStoreIdType): Self = StObject.set(x, "CustomKeyStoreId", value.asInstanceOf[js.Any])
+    inline def setCustomKeyStoreId(value: CustomKeyStoreIdType): Self = StObject.set(x, "CustomKeyStoreId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomKeyStoreIdUndefined: Self = StObject.set(x, "CustomKeyStoreId", js.undefined)
+    inline def setCustomKeyStoreIdUndefined: Self = StObject.set(x, "CustomKeyStoreId", js.undefined)
     
-    @scala.inline
-    def setCustomKeyStoreName(value: CustomKeyStoreNameType): Self = StObject.set(x, "CustomKeyStoreName", value.asInstanceOf[js.Any])
+    inline def setCustomKeyStoreName(value: CustomKeyStoreNameType): Self = StObject.set(x, "CustomKeyStoreName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomKeyStoreNameUndefined: Self = StObject.set(x, "CustomKeyStoreName", js.undefined)
+    inline def setCustomKeyStoreNameUndefined: Self = StObject.set(x, "CustomKeyStoreName", js.undefined)
     
-    @scala.inline
-    def setTrustAnchorCertificate(value: TrustAnchorCertificateType): Self = StObject.set(x, "TrustAnchorCertificate", value.asInstanceOf[js.Any])
+    inline def setTrustAnchorCertificate(value: TrustAnchorCertificateType): Self = StObject.set(x, "TrustAnchorCertificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrustAnchorCertificateUndefined: Self = StObject.set(x, "TrustAnchorCertificate", js.undefined)
+    inline def setTrustAnchorCertificateUndefined: Self = StObject.set(x, "TrustAnchorCertificate", js.undefined)
   }
 }

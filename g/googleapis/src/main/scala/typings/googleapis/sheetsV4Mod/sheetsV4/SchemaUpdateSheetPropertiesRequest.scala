@@ -23,25 +23,19 @@ trait SchemaUpdateSheetPropertiesRequest extends StObject {
 }
 object SchemaUpdateSheetPropertiesRequest {
   
-  @scala.inline
-  def apply(): SchemaUpdateSheetPropertiesRequest = {
+  inline def apply(): SchemaUpdateSheetPropertiesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUpdateSheetPropertiesRequest]
   }
   
-  @scala.inline
-  implicit class SchemaUpdateSheetPropertiesRequestMutableBuilder[Self <: SchemaUpdateSheetPropertiesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUpdateSheetPropertiesRequest](x: Self) {
     
-    @scala.inline
-    def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setProperties(value: SchemaSheetProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: SchemaSheetProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
   }
 }

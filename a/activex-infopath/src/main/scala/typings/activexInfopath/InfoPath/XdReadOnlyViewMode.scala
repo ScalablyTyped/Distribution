@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XdReadOnlyViewMode extends StObject
 object XdReadOnlyViewMode {
   
-  @scala.inline
-  def xdDefault: `0` = 0.asInstanceOf[`0`]
+  inline def xdDefault: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xdFrozen: `2` = 2.asInstanceOf[`2`]
+  inline def xdFrozen: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xdNonEditable: `1` = 1.asInstanceOf[`1`]
+  inline def xdNonEditable: `1` = 1.asInstanceOf[`1`]
 }

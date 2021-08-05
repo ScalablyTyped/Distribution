@@ -13,25 +13,19 @@ trait PartialClassNameMapPagina extends StObject {
 }
 object PartialClassNameMapPagina {
   
-  @scala.inline
-  def apply(): PartialClassNameMapPagina = {
+  inline def apply(): PartialClassNameMapPagina = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapPagina]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapPaginaMutableBuilder[Self <: PartialClassNameMapPagina] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapPagina](x: Self) {
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setUl(value: String): Self = StObject.set(x, "ul", value.asInstanceOf[js.Any])
+    inline def setUl(value: String): Self = StObject.set(x, "ul", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUlUndefined: Self = StObject.set(x, "ul", js.undefined)
+    inline def setUlUndefined: Self = StObject.set(x, "ul", js.undefined)
   }
 }

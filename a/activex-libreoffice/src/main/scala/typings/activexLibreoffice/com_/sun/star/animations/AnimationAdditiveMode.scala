@@ -21,19 +21,14 @@ object AnimationAdditiveMode {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def BASE: `0` = 0.asInstanceOf[`0`]
+    inline def BASE: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def MULTIPLY: `3` = 3.asInstanceOf[`3`]
+    inline def MULTIPLY: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def NONE: `4` = 4.asInstanceOf[`4`]
+    inline def NONE: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def REPLACE: `2` = 2.asInstanceOf[`2`]
+    inline def REPLACE: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def SUM: `1` = 1.asInstanceOf[`1`]
+    inline def SUM: `1` = 1.asInstanceOf[`1`]
   }
 }

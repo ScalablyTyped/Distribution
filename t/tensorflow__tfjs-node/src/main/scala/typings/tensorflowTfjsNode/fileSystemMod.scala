@@ -55,12 +55,12 @@ object fileSystemMod {
     
     /* protected */ def loadJSONModel(): js.Promise[ModelArtifacts] = js.native
     
-    var loadWeights: js.Any = js.native
+    /* private */ var loadWeights: js.Any = js.native
     
     @JSName("load")
     def load_MNodeFileSystem(): js.Promise[ModelArtifacts] = js.native
     
-    val path: String | js.Array[String] = js.native
+    /* protected */ val path: String | js.Array[String] = js.native
     
     @JSName("save")
     def save_MNodeFileSystem(modelArtifacts: ModelArtifacts): js.Promise[SaveResult] = js.native
@@ -73,13 +73,9 @@ object fileSystemMod {
     val URL_SCHEME: /* "file://" */ String = js.native
   }
   
-  @scala.inline
-  def fileSystem(path: String): NodeFileSystem = ^.asInstanceOf[js.Dynamic].applyDynamic("fileSystem")(path.asInstanceOf[js.Any]).asInstanceOf[NodeFileSystem]
-  @scala.inline
-  def fileSystem(path: js.Array[String]): NodeFileSystem = ^.asInstanceOf[js.Dynamic].applyDynamic("fileSystem")(path.asInstanceOf[js.Any]).asInstanceOf[NodeFileSystem]
+  inline def fileSystem(path: String): NodeFileSystem = ^.asInstanceOf[js.Dynamic].applyDynamic("fileSystem")(path.asInstanceOf[js.Any]).asInstanceOf[NodeFileSystem]
+  inline def fileSystem(path: js.Array[String]): NodeFileSystem = ^.asInstanceOf[js.Dynamic].applyDynamic("fileSystem")(path.asInstanceOf[js.Any]).asInstanceOf[NodeFileSystem]
   
-  @scala.inline
-  def nodeFileSystemRouter(url: String): NodeFileSystem = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeFileSystemRouter")(url.asInstanceOf[js.Any]).asInstanceOf[NodeFileSystem]
-  @scala.inline
-  def nodeFileSystemRouter(url: js.Array[String]): NodeFileSystem = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeFileSystemRouter")(url.asInstanceOf[js.Any]).asInstanceOf[NodeFileSystem]
+  inline def nodeFileSystemRouter(url: String): NodeFileSystem = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeFileSystemRouter")(url.asInstanceOf[js.Any]).asInstanceOf[NodeFileSystem]
+  inline def nodeFileSystemRouter(url: js.Array[String]): NodeFileSystem = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeFileSystemRouter")(url.asInstanceOf[js.Any]).asInstanceOf[NodeFileSystem]
 }

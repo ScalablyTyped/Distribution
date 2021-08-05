@@ -174,8 +174,7 @@ object mod {
     @JSImport("pigpio", "Gpio.ALT0")
     @js.native
     def ALT0: Double = js.native
-    @scala.inline
-    def ALT0_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALT0")(x.asInstanceOf[js.Any])
+    inline def ALT0_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALT0")(x.asInstanceOf[js.Any])
     
     /**
       * Indicates that the GPIO is in alternative mode 1.
@@ -183,8 +182,7 @@ object mod {
     @JSImport("pigpio", "Gpio.ALT1")
     @js.native
     def ALT1: Double = js.native
-    @scala.inline
-    def ALT1_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALT1")(x.asInstanceOf[js.Any])
+    inline def ALT1_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALT1")(x.asInstanceOf[js.Any])
     
     /**
       * Indicates that the GPIO is in alternative mode 2.
@@ -192,8 +190,7 @@ object mod {
     @JSImport("pigpio", "Gpio.ALT2")
     @js.native
     def ALT2: Double = js.native
-    @scala.inline
-    def ALT2_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALT2")(x.asInstanceOf[js.Any])
+    inline def ALT2_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALT2")(x.asInstanceOf[js.Any])
     
     /**
       * Indicates that the GPIO is in alternative mode 03.
@@ -201,8 +198,7 @@ object mod {
     @JSImport("pigpio", "Gpio.ALT3")
     @js.native
     def ALT3: Double = js.native
-    @scala.inline
-    def ALT3_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALT3")(x.asInstanceOf[js.Any])
+    inline def ALT3_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALT3")(x.asInstanceOf[js.Any])
     
     /**
       * Indicates that the GPIO is in alternative mode 4.
@@ -210,8 +206,7 @@ object mod {
     @JSImport("pigpio", "Gpio.ALT4")
     @js.native
     def ALT4: Double = js.native
-    @scala.inline
-    def ALT4_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALT4")(x.asInstanceOf[js.Any])
+    inline def ALT4_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALT4")(x.asInstanceOf[js.Any])
     
     /**
       * Indicates that the GPIO is in alternative mode 5.
@@ -219,8 +214,7 @@ object mod {
     @JSImport("pigpio", "Gpio.ALT5")
     @js.native
     def ALT5: Double = js.native
-    @scala.inline
-    def ALT5_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALT5")(x.asInstanceOf[js.Any])
+    inline def ALT5_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALT5")(x.asInstanceOf[js.Any])
     
     /**
       * Indicates that the GPIO fires interrupts on both rising and falling edges.
@@ -228,8 +222,7 @@ object mod {
     @JSImport("pigpio", "Gpio.EITHER_EDGE")
     @js.native
     def EITHER_EDGE: Double = js.native
-    @scala.inline
-    def EITHER_EDGE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EITHER_EDGE")(x.asInstanceOf[js.Any])
+    inline def EITHER_EDGE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EITHER_EDGE")(x.asInstanceOf[js.Any])
     
     /**
       * Indicates that the GPIO fires interrupts on falling edges.
@@ -237,8 +230,7 @@ object mod {
     @JSImport("pigpio", "Gpio.FALLING_EDGE")
     @js.native
     def FALLING_EDGE: Double = js.native
-    @scala.inline
-    def FALLING_EDGE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FALLING_EDGE")(x.asInstanceOf[js.Any])
+    inline def FALLING_EDGE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FALLING_EDGE")(x.asInstanceOf[js.Any])
     
     /*----------------------*
       * mode
@@ -249,8 +241,7 @@ object mod {
     @JSImport("pigpio", "Gpio.INPUT")
     @js.native
     def INPUT: Double = js.native
-    @scala.inline
-    def INPUT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INPUT")(x.asInstanceOf[js.Any])
+    inline def INPUT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INPUT")(x.asInstanceOf[js.Any])
     
     /**
       * The largest GPIO number.
@@ -258,8 +249,7 @@ object mod {
     @JSImport("pigpio", "Gpio.MAX_GPIO")
     @js.native
     def MAX_GPIO: Double = js.native
-    @scala.inline
-    def MAX_GPIO_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_GPIO")(x.asInstanceOf[js.Any])
+    inline def MAX_GPIO_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_GPIO")(x.asInstanceOf[js.Any])
     
     /**
       * The largest user GPIO number.
@@ -267,8 +257,7 @@ object mod {
     @JSImport("pigpio", "Gpio.MAX_USER_GPIO")
     @js.native
     def MAX_USER_GPIO: Double = js.native
-    @scala.inline
-    def MAX_USER_GPIO_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_USER_GPIO")(x.asInstanceOf[js.Any])
+    inline def MAX_USER_GPIO_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_USER_GPIO")(x.asInstanceOf[js.Any])
     
     /*----------------------*
       * gpio numbers
@@ -279,8 +268,7 @@ object mod {
     @JSImport("pigpio", "Gpio.MIN_GPIO")
     @js.native
     def MIN_GPIO: Double = js.native
-    @scala.inline
-    def MIN_GPIO_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_GPIO")(x.asInstanceOf[js.Any])
+    inline def MIN_GPIO_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_GPIO")(x.asInstanceOf[js.Any])
     
     /**
       * Indicates that the GPIO is an output.
@@ -288,8 +276,7 @@ object mod {
     @JSImport("pigpio", "Gpio.OUTPUT")
     @js.native
     def OUTPUT: Double = js.native
-    @scala.inline
-    def OUTPUT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OUTPUT")(x.asInstanceOf[js.Any])
+    inline def OUTPUT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OUTPUT")(x.asInstanceOf[js.Any])
     
     /**
       * Enable pull-down resistor.
@@ -297,8 +284,7 @@ object mod {
     @JSImport("pigpio", "Gpio.PUD_DOWN")
     @js.native
     def PUD_DOWN: Double = js.native
-    @scala.inline
-    def PUD_DOWN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PUD_DOWN")(x.asInstanceOf[js.Any])
+    inline def PUD_DOWN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PUD_DOWN")(x.asInstanceOf[js.Any])
     
     /*----------------------*
       * pud
@@ -309,8 +295,7 @@ object mod {
     @JSImport("pigpio", "Gpio.PUD_OFF")
     @js.native
     def PUD_OFF: Double = js.native
-    @scala.inline
-    def PUD_OFF_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PUD_OFF")(x.asInstanceOf[js.Any])
+    inline def PUD_OFF_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PUD_OFF")(x.asInstanceOf[js.Any])
     
     /**
       * Enable pull-up resistor.
@@ -318,8 +303,7 @@ object mod {
     @JSImport("pigpio", "Gpio.PUD_UP")
     @js.native
     def PUD_UP: Double = js.native
-    @scala.inline
-    def PUD_UP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PUD_UP")(x.asInstanceOf[js.Any])
+    inline def PUD_UP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PUD_UP")(x.asInstanceOf[js.Any])
     
     /*----------------------*
       * isr
@@ -330,8 +314,7 @@ object mod {
     @JSImport("pigpio", "Gpio.RISING_EDGE")
     @js.native
     def RISING_EDGE: Double = js.native
-    @scala.inline
-    def RISING_EDGE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RISING_EDGE")(x.asInstanceOf[js.Any])
+    inline def RISING_EDGE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RISING_EDGE")(x.asInstanceOf[js.Any])
     
     /*----------------------*
       * timeout
@@ -342,8 +325,7 @@ object mod {
     @JSImport("pigpio", "Gpio.TIMEOUT")
     @js.native
     def TIMEOUT: Double = js.native
-    @scala.inline
-    def TIMEOUT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TIMEOUT")(x.asInstanceOf[js.Any])
+    inline def TIMEOUT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TIMEOUT")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("pigpio", "GpioBank")
@@ -390,8 +372,7 @@ object mod {
     @JSImport("pigpio", "GpioBank.BACK2")
     @js.native
     def BACK2: Double = js.native
-    @scala.inline
-    def BACK2_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BACK2")(x.asInstanceOf[js.Any])
+    inline def BACK2_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BACK2")(x.asInstanceOf[js.Any])
     
     /**
       * Identifies bank 1.
@@ -399,8 +380,7 @@ object mod {
     @JSImport("pigpio", "GpioBank.BANK1")
     @js.native
     def BANK1: Double = js.native
-    @scala.inline
-    def BANK1_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BANK1")(x.asInstanceOf[js.Any])
+    inline def BANK1_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BANK1")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("pigpio", "Notifier")
@@ -447,8 +427,7 @@ object mod {
     @JSImport("pigpio", "Notifier.NOTIFICATION_LENGTH")
     @js.native
     def NOTIFICATION_LENGTH: Double = js.native
-    @scala.inline
-    def NOTIFICATION_LENGTH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOTIFICATION_LENGTH")(x.asInstanceOf[js.Any])
+    inline def NOTIFICATION_LENGTH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOTIFICATION_LENGTH")(x.asInstanceOf[js.Any])
     
     /**
       * Indicates a keep alive signal on the stream and is sent once a minute in the absence of other notification activity.
@@ -456,28 +435,20 @@ object mod {
     @JSImport("pigpio", "Notifier.PI_NTFY_FLAGS_ALIVE")
     @js.native
     def PI_NTFY_FLAGS_ALIVE: Double = js.native
-    @scala.inline
-    def PI_NTFY_FLAGS_ALIVE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PI_NTFY_FLAGS_ALIVE")(x.asInstanceOf[js.Any])
+    inline def PI_NTFY_FLAGS_ALIVE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PI_NTFY_FLAGS_ALIVE")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def configureClock(microseconds: Double, peripheral: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("configureClock")(microseconds.asInstanceOf[js.Any], peripheral.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def configureClock(microseconds: Double, peripheral: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("configureClock")(microseconds.asInstanceOf[js.Any], peripheral.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def configureSocketPort(port: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configureSocketPort")(port.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def configureSocketPort(port: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configureSocketPort")(port.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def getTick(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getTick")().asInstanceOf[Double]
+  inline def getTick(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getTick")().asInstanceOf[Double]
   
-  @scala.inline
-  def hardwareRevision(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hardwareRevision")().asInstanceOf[Double]
+  inline def hardwareRevision(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hardwareRevision")().asInstanceOf[Double]
   
-  @scala.inline
-  def initialize(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")().asInstanceOf[Unit]
+  inline def initialize(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")().asInstanceOf[Unit]
   
-  @scala.inline
-  def terminate(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("terminate")().asInstanceOf[Unit]
+  inline def terminate(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("terminate")().asInstanceOf[Unit]
   
-  @scala.inline
-  def tickDiff(startTick: Double, endTick: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("tickDiff")(startTick.asInstanceOf[js.Any], endTick.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def tickDiff(startTick: Double, endTick: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("tickDiff")(startTick.asInstanceOf[js.Any], endTick.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

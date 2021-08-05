@@ -13,16 +13,13 @@ trait GetSamplingProfileReturnType extends StObject {
 }
 object GetSamplingProfileReturnType {
   
-  @scala.inline
-  def apply(profile: SamplingHeapProfile): GetSamplingProfileReturnType = {
+  inline def apply(profile: SamplingHeapProfile): GetSamplingProfileReturnType = {
     val __obj = js.Dynamic.literal(profile = profile.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSamplingProfileReturnType]
   }
   
-  @scala.inline
-  implicit class GetSamplingProfileReturnTypeMutableBuilder[Self <: GetSamplingProfileReturnType] (val x: Self) extends AnyVal {
+  extension [Self <: GetSamplingProfileReturnType](x: Self) {
     
-    @scala.inline
-    def setProfile(value: SamplingHeapProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+    inline def setProfile(value: SamplingHeapProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
   }
 }

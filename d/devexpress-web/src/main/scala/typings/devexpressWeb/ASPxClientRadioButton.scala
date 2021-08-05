@@ -12,8 +12,7 @@ trait ASPxClientRadioButton
      with ASPxClientCheckBox
 object ASPxClientRadioButton {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     CheckedChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientCheckBox]],
     Focus: () => Unit,

@@ -18,19 +18,15 @@ trait ShadowRootPushedEvent extends StObject {
 }
 object ShadowRootPushedEvent {
   
-  @scala.inline
-  def apply(hostId: NodeId, root: Node): ShadowRootPushedEvent = {
+  inline def apply(hostId: NodeId, root: Node): ShadowRootPushedEvent = {
     val __obj = js.Dynamic.literal(hostId = hostId.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShadowRootPushedEvent]
   }
   
-  @scala.inline
-  implicit class ShadowRootPushedEventMutableBuilder[Self <: ShadowRootPushedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ShadowRootPushedEvent](x: Self) {
     
-    @scala.inline
-    def setHostId(value: NodeId): Self = StObject.set(x, "hostId", value.asInstanceOf[js.Any])
+    inline def setHostId(value: NodeId): Self = StObject.set(x, "hostId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoot(value: Node): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: Node): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
   }
 }

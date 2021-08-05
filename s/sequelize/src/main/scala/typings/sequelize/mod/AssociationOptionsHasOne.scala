@@ -20,19 +20,15 @@ trait AssociationOptionsHasOne
 }
 object AssociationOptionsHasOne {
   
-  @scala.inline
-  def apply(): AssociationOptionsHasOne = {
+  inline def apply(): AssociationOptionsHasOne = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssociationOptionsHasOne]
   }
   
-  @scala.inline
-  implicit class AssociationOptionsHasOneMutableBuilder[Self <: AssociationOptionsHasOne] (val x: Self) extends AnyVal {
+  extension [Self <: AssociationOptionsHasOne](x: Self) {
     
-    @scala.inline
-    def setKeyType(value: DataTypeAbstract): Self = StObject.set(x, "keyType", value.asInstanceOf[js.Any])
+    inline def setKeyType(value: DataTypeAbstract): Self = StObject.set(x, "keyType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyTypeUndefined: Self = StObject.set(x, "keyType", js.undefined)
+    inline def setKeyTypeUndefined: Self = StObject.set(x, "keyType", js.undefined)
   }
 }

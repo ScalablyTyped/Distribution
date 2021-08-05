@@ -10,16 +10,13 @@ trait ItineraryBuilderOptions extends StObject {
 }
 object ItineraryBuilderOptions {
   
-  @scala.inline
-  def apply(containerClassName: String): ItineraryBuilderOptions = {
+  inline def apply(containerClassName: String): ItineraryBuilderOptions = {
     val __obj = js.Dynamic.literal(containerClassName = containerClassName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItineraryBuilderOptions]
   }
   
-  @scala.inline
-  implicit class ItineraryBuilderOptionsMutableBuilder[Self <: ItineraryBuilderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ItineraryBuilderOptions](x: Self) {
     
-    @scala.inline
-    def setContainerClassName(value: String): Self = StObject.set(x, "containerClassName", value.asInstanceOf[js.Any])
+    inline def setContainerClassName(value: String): Self = StObject.set(x, "containerClassName", value.asInstanceOf[js.Any])
   }
 }

@@ -23,34 +23,25 @@ trait ListResolverRuleAssociationsResponse extends StObject {
 }
 object ListResolverRuleAssociationsResponse {
   
-  @scala.inline
-  def apply(): ListResolverRuleAssociationsResponse = {
+  inline def apply(): ListResolverRuleAssociationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListResolverRuleAssociationsResponse]
   }
   
-  @scala.inline
-  implicit class ListResolverRuleAssociationsResponseMutableBuilder[Self <: ListResolverRuleAssociationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListResolverRuleAssociationsResponse](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setResolverRuleAssociations(value: ResolverRuleAssociations): Self = StObject.set(x, "ResolverRuleAssociations", value.asInstanceOf[js.Any])
+    inline def setResolverRuleAssociations(value: ResolverRuleAssociations): Self = StObject.set(x, "ResolverRuleAssociations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolverRuleAssociationsUndefined: Self = StObject.set(x, "ResolverRuleAssociations", js.undefined)
+    inline def setResolverRuleAssociationsUndefined: Self = StObject.set(x, "ResolverRuleAssociations", js.undefined)
     
-    @scala.inline
-    def setResolverRuleAssociationsVarargs(value: ResolverRuleAssociation*): Self = StObject.set(x, "ResolverRuleAssociations", js.Array(value :_*))
+    inline def setResolverRuleAssociationsVarargs(value: ResolverRuleAssociation*): Self = StObject.set(x, "ResolverRuleAssociations", js.Array(value :_*))
   }
 }

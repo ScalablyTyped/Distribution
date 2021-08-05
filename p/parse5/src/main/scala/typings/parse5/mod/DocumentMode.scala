@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DocumentMode extends StObject
 object DocumentMode {
   
-  @scala.inline
-  def `limited-quirks`: typings.parse5.parse5Strings.`limited-quirks` = "limited-quirks".asInstanceOf[typings.parse5.parse5Strings.`limited-quirks`]
+  inline def `limited-quirks`: typings.parse5.parse5Strings.`limited-quirks` = "limited-quirks".asInstanceOf[typings.parse5.parse5Strings.`limited-quirks`]
   
-  @scala.inline
-  def `no-quirks`: typings.parse5.parse5Strings.`no-quirks` = "no-quirks".asInstanceOf[typings.parse5.parse5Strings.`no-quirks`]
+  inline def `no-quirks`: typings.parse5.parse5Strings.`no-quirks` = "no-quirks".asInstanceOf[typings.parse5.parse5Strings.`no-quirks`]
   
-  @scala.inline
-  def quirks: typings.parse5.parse5Strings.quirks = "quirks".asInstanceOf[typings.parse5.parse5Strings.quirks]
+  inline def quirks: typings.parse5.parse5Strings.quirks = "quirks".asInstanceOf[typings.parse5.parse5Strings.quirks]
 }

@@ -25,8 +25,7 @@ object anon {
   }
   object AddDisposeCallback {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addDisposeCallback: (typings.std.Element, js.Function) => Unit,
       cleanNode: Node => typings.std.Element,
       removeDisposeCallback: (typings.std.Element, js.Function) => Unit,
@@ -36,20 +35,15 @@ object anon {
       __obj.asInstanceOf[AddDisposeCallback]
     }
     
-    @scala.inline
-    implicit class AddDisposeCallbackMutableBuilder[Self <: AddDisposeCallback] (val x: Self) extends AnyVal {
+    extension [Self <: AddDisposeCallback](x: Self) {
       
-      @scala.inline
-      def setAddDisposeCallback(value: (typings.std.Element, js.Function) => Unit): Self = StObject.set(x, "addDisposeCallback", js.Any.fromFunction2(value))
+      inline def setAddDisposeCallback(value: (typings.std.Element, js.Function) => Unit): Self = StObject.set(x, "addDisposeCallback", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCleanNode(value: Node => typings.std.Element): Self = StObject.set(x, "cleanNode", js.Any.fromFunction1(value))
+      inline def setCleanNode(value: Node => typings.std.Element): Self = StObject.set(x, "cleanNode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveDisposeCallback(value: (typings.std.Element, js.Function) => Unit): Self = StObject.set(x, "removeDisposeCallback", js.Any.fromFunction2(value))
+      inline def setRemoveDisposeCallback(value: (typings.std.Element, js.Function) => Unit): Self = StObject.set(x, "removeDisposeCallback", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemoveNode(value: Node => Unit): Self = StObject.set(x, "removeNode", js.Any.fromFunction1(value))
+      inline def setRemoveNode(value: Node => Unit): Self = StObject.set(x, "removeNode", js.Any.fromFunction1(value))
     }
   }
   
@@ -63,8 +57,7 @@ object anon {
   }
   object AddTemplate {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addTemplate: (String, String) => Unit,
       createJavaScriptEvaluatorBlock: String => String,
       renderTemplateSource: (js.Object, KnockoutBindingContext, js.Object) => js.Array[Node]
@@ -73,17 +66,13 @@ object anon {
       __obj.asInstanceOf[AddTemplate]
     }
     
-    @scala.inline
-    implicit class AddTemplateMutableBuilder[Self <: AddTemplate] (val x: Self) extends AnyVal {
+    extension [Self <: AddTemplate](x: Self) {
       
-      @scala.inline
-      def setAddTemplate(value: (String, String) => Unit): Self = StObject.set(x, "addTemplate", js.Any.fromFunction2(value))
+      inline def setAddTemplate(value: (String, String) => Unit): Self = StObject.set(x, "addTemplate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCreateJavaScriptEvaluatorBlock(value: String => String): Self = StObject.set(x, "createJavaScriptEvaluatorBlock", js.Any.fromFunction1(value))
+      inline def setCreateJavaScriptEvaluatorBlock(value: String => String): Self = StObject.set(x, "createJavaScriptEvaluatorBlock", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderTemplateSource(value: (js.Object, KnockoutBindingContext, js.Object) => js.Array[Node]): Self = StObject.set(x, "renderTemplateSource", js.Any.fromFunction3(value))
+      inline def setRenderTemplateSource(value: (js.Object, KnockoutBindingContext, js.Object) => js.Array[Node]): Self = StObject.set(x, "renderTemplateSource", js.Any.fromFunction3(value))
     }
   }
   
@@ -106,20 +95,16 @@ object anon {
   }
   object BindingRewriteValidators {
     
-    @scala.inline
-    def apply(bindingRewriteValidators: js.Any, parseObjectLiteral: String => js.Array[js.Any]): BindingRewriteValidators = {
+    inline def apply(bindingRewriteValidators: js.Any, parseObjectLiteral: String => js.Array[js.Any]): BindingRewriteValidators = {
       val __obj = js.Dynamic.literal(bindingRewriteValidators = bindingRewriteValidators.asInstanceOf[js.Any], parseObjectLiteral = js.Any.fromFunction1(parseObjectLiteral))
       __obj.asInstanceOf[BindingRewriteValidators]
     }
     
-    @scala.inline
-    implicit class BindingRewriteValidatorsMutableBuilder[Self <: BindingRewriteValidators] (val x: Self) extends AnyVal {
+    extension [Self <: BindingRewriteValidators](x: Self) {
       
-      @scala.inline
-      def setBindingRewriteValidators(value: js.Any): Self = StObject.set(x, "bindingRewriteValidators", value.asInstanceOf[js.Any])
+      inline def setBindingRewriteValidators(value: js.Any): Self = StObject.set(x, "bindingRewriteValidators", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParseObjectLiteral(value: String => js.Array[js.Any]): Self = StObject.set(x, "parseObjectLiteral", js.Any.fromFunction1(value))
+      inline def setParseObjectLiteral(value: String => js.Array[js.Any]): Self = StObject.set(x, "parseObjectLiteral", js.Any.fromFunction1(value))
     }
   }
   
@@ -135,8 +120,7 @@ object anon {
   }
   object Clear {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clear: typings.std.Element => Boolean,
       get: (typings.std.Element, String) => js.Any,
       getAll: (typings.std.Element, Boolean) => js.Any,
@@ -146,20 +130,15 @@ object anon {
       __obj.asInstanceOf[Clear]
     }
     
-    @scala.inline
-    implicit class ClearMutableBuilder[Self <: Clear] (val x: Self) extends AnyVal {
+    extension [Self <: Clear](x: Self) {
       
-      @scala.inline
-      def setClear(value: typings.std.Element => Boolean): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
+      inline def setClear(value: typings.std.Element => Boolean): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet(value: (typings.std.Element, String) => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+      inline def setGet(value: (typings.std.Element, String) => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetAll(value: (typings.std.Element, Boolean) => js.Any): Self = StObject.set(x, "getAll", js.Any.fromFunction2(value))
+      inline def setGetAll(value: (typings.std.Element, Boolean) => js.Any): Self = StObject.set(x, "getAll", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSet(value: (typings.std.Element, String, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction3(value))
+      inline def setSet(value: (typings.std.Element, String, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction3(value))
     }
   }
   
@@ -169,17 +148,14 @@ object anon {
   }
   object ControlsDescendantBindings {
     
-    @scala.inline
-    def apply(controlsDescendantBindings: Boolean): ControlsDescendantBindings = {
+    inline def apply(controlsDescendantBindings: Boolean): ControlsDescendantBindings = {
       val __obj = js.Dynamic.literal(controlsDescendantBindings = controlsDescendantBindings.asInstanceOf[js.Any])
       __obj.asInstanceOf[ControlsDescendantBindings]
     }
     
-    @scala.inline
-    implicit class ControlsDescendantBindingsMutableBuilder[Self <: ControlsDescendantBindings] (val x: Self) extends AnyVal {
+    extension [Self <: ControlsDescendantBindings](x: Self) {
       
-      @scala.inline
-      def setControlsDescendantBindings(value: Boolean): Self = StObject.set(x, "controlsDescendantBindings", value.asInstanceOf[js.Any])
+      inline def setControlsDescendantBindings(value: Boolean): Self = StObject.set(x, "controlsDescendantBindings", value.asInstanceOf[js.Any])
     }
   }
   
@@ -191,17 +167,14 @@ object anon {
   }
   object Dictindex {
     
-    @scala.inline
-    def apply(length: Double): Dictindex = {
+    inline def apply(length: Double): Dictindex = {
       val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dictindex]
     }
     
-    @scala.inline
-    implicit class DictindexMutableBuilder[Self <: Dictindex] (val x: Self) extends AnyVal {
+    extension [Self <: Dictindex](x: Self) {
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
@@ -213,17 +186,14 @@ object anon {
   }
   object Dictname {
     
-    @scala.inline
-    def apply(sliding: KnockoutSlidingPageGenerator): Dictname = {
+    inline def apply(sliding: KnockoutSlidingPageGenerator): Dictname = {
       val __obj = js.Dynamic.literal(sliding = sliding.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dictname]
     }
     
-    @scala.inline
-    implicit class DictnameMutableBuilder[Self <: Dictname] (val x: Self) extends AnyVal {
+    extension [Self <: Dictname](x: Self) {
       
-      @scala.inline
-      def setSliding(value: KnockoutSlidingPageGenerator): Self = StObject.set(x, "sliding", value.asInstanceOf[js.Any])
+      inline def setSliding(value: KnockoutSlidingPageGenerator): Self = StObject.set(x, "sliding", value.asInstanceOf[js.Any])
     }
   }
   
@@ -233,17 +203,14 @@ object anon {
   }
   object Element {
     
-    @scala.inline
-    def apply(element: Node): Element = {
+    inline def apply(element: Node): Element = {
       val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any])
       __obj.asInstanceOf[Element]
     }
     
-    @scala.inline
-    implicit class ElementMutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
+    extension [Self <: Element](x: Self) {
       
-      @scala.inline
-      def setElement(value: Node): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Node): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     }
   }
   
@@ -286,23 +253,18 @@ object anon {
   }
   object Method {
     
-    @scala.inline
-    def apply(timeout: Double): Method = {
+    inline def apply(timeout: Double): Method = {
       val __obj = js.Dynamic.literal(timeout = timeout.asInstanceOf[js.Any])
       __obj.asInstanceOf[Method]
     }
     
-    @scala.inline
-    implicit class MethodMutableBuilder[Self <: Method] (val x: Self) extends AnyVal {
+    extension [Self <: Method](x: Self) {
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     }
   }
   
@@ -312,17 +274,14 @@ object anon {
   }
   object Paged {
     
-    @scala.inline
-    def apply(paged: js.Any): Paged = {
+    inline def apply(paged: js.Any): Paged = {
       val __obj = js.Dynamic.literal(paged = paged.asInstanceOf[js.Any])
       __obj.asInstanceOf[Paged]
     }
     
-    @scala.inline
-    implicit class PagedMutableBuilder[Self <: Paged] (val x: Self) extends AnyVal {
+    extension [Self <: Paged](x: Self) {
       
-      @scala.inline
-      def setPaged(value: js.Any): Self = StObject.set(x, "paged", value.asInstanceOf[js.Any])
+      inline def setPaged(value: js.Any): Self = StObject.set(x, "paged", value.asInstanceOf[js.Any])
     }
   }
   
@@ -334,20 +293,16 @@ object anon {
   }
   object ReadValue {
     
-    @scala.inline
-    def apply(readValue: HTMLElement => js.Any, writeValue: (HTMLElement, js.Any) => Unit): ReadValue = {
+    inline def apply(readValue: HTMLElement => js.Any, writeValue: (HTMLElement, js.Any) => Unit): ReadValue = {
       val __obj = js.Dynamic.literal(readValue = js.Any.fromFunction1(readValue), writeValue = js.Any.fromFunction2(writeValue))
       __obj.asInstanceOf[ReadValue]
     }
     
-    @scala.inline
-    implicit class ReadValueMutableBuilder[Self <: ReadValue] (val x: Self) extends AnyVal {
+    extension [Self <: ReadValue](x: Self) {
       
-      @scala.inline
-      def setReadValue(value: HTMLElement => js.Any): Self = StObject.set(x, "readValue", js.Any.fromFunction1(value))
+      inline def setReadValue(value: HTMLElement => js.Any): Self = StObject.set(x, "readValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWriteValue(value: (HTMLElement, js.Any) => Unit): Self = StObject.set(x, "writeValue", js.Any.fromFunction2(value))
+      inline def setWriteValue(value: (HTMLElement, js.Any) => Unit): Self = StObject.set(x, "writeValue", js.Any.fromFunction2(value))
     }
   }
 }

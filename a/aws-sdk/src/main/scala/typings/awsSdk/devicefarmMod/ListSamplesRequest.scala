@@ -18,22 +18,17 @@ trait ListSamplesRequest extends StObject {
 }
 object ListSamplesRequest {
   
-  @scala.inline
-  def apply(arn: AmazonResourceName): ListSamplesRequest = {
+  inline def apply(arn: AmazonResourceName): ListSamplesRequest = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSamplesRequest]
   }
   
-  @scala.inline
-  implicit class ListSamplesRequestMutableBuilder[Self <: ListSamplesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListSamplesRequest](x: Self) {
     
-    @scala.inline
-    def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

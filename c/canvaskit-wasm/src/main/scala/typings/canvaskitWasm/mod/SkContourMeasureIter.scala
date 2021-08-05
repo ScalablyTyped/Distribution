@@ -18,8 +18,7 @@ trait SkContourMeasureIter
 }
 object SkContourMeasureIter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     delete: () => Unit,
     deleteAfter: () => Unit,
     isAliasOf: js.Any => Boolean,
@@ -30,10 +29,8 @@ object SkContourMeasureIter {
     __obj.asInstanceOf[SkContourMeasureIter]
   }
   
-  @scala.inline
-  implicit class SkContourMeasureIterMutableBuilder[Self <: SkContourMeasureIter] (val x: Self) extends AnyVal {
+  extension [Self <: SkContourMeasureIter](x: Self) {
     
-    @scala.inline
-    def setNext(value: () => SkContourMeasure | Null): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+    inline def setNext(value: () => SkContourMeasure | Null): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
   }
 }

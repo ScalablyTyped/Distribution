@@ -47,10 +47,8 @@ object Sentiment {
     * @returns Sentiment instance
     */
   /* static member */
-  @scala.inline
-  def create(): Sentiment = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Sentiment]
-  @scala.inline
-  def create(properties: ISentiment): Sentiment = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Sentiment]
+  inline def create(): Sentiment = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Sentiment]
+  inline def create(properties: ISentiment): Sentiment = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Sentiment]
   
   /**
     * Decodes a Sentiment message from the specified reader or buffer.
@@ -61,14 +59,10 @@ object Sentiment {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decode(reader: Reader): Sentiment = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Sentiment]
-  @scala.inline
-  def decode(reader: Reader, length: Double): Sentiment = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Sentiment]
-  @scala.inline
-  def decode(reader: Uint8Array): Sentiment = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Sentiment]
-  @scala.inline
-  def decode(reader: Uint8Array, length: Double): Sentiment = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Sentiment]
+  inline def decode(reader: Reader): Sentiment = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Sentiment]
+  inline def decode(reader: Reader, length: Double): Sentiment = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Sentiment]
+  inline def decode(reader: Uint8Array): Sentiment = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Sentiment]
+  inline def decode(reader: Uint8Array, length: Double): Sentiment = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Sentiment]
   
   /**
     * Decodes a Sentiment message from the specified reader or buffer, length delimited.
@@ -78,10 +72,8 @@ object Sentiment {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decodeDelimited(reader: Reader): Sentiment = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Sentiment]
-  @scala.inline
-  def decodeDelimited(reader: Uint8Array): Sentiment = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Sentiment]
+  inline def decodeDelimited(reader: Reader): Sentiment = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Sentiment]
+  inline def decodeDelimited(reader: Uint8Array): Sentiment = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Sentiment]
   
   /**
     * Encodes the specified Sentiment message. Does not implicitly {@link google.cloud.dialogflow.v2.Sentiment.verify|verify} messages.
@@ -90,10 +82,8 @@ object Sentiment {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encode(message: ISentiment): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encode(message: ISentiment, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encode(message: ISentiment): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encode(message: ISentiment, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified Sentiment message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2.Sentiment.verify|verify} messages.
@@ -102,10 +92,8 @@ object Sentiment {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encodeDelimited(message: ISentiment): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encodeDelimited(message: ISentiment, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encodeDelimited(message: ISentiment): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encodeDelimited(message: ISentiment, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a Sentiment message from a plain object. Also converts values to their respective internal types.
@@ -113,8 +101,7 @@ object Sentiment {
     * @returns Sentiment
     */
   /* static member */
-  @scala.inline
-  def fromObject(`object`: StringDictionary[js.Any]): Sentiment = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Sentiment]
+  inline def fromObject(`object`: StringDictionary[js.Any]): Sentiment = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Sentiment]
   
   /**
     * Creates a plain object from a Sentiment message. Also converts values to other types if specified.
@@ -123,10 +110,8 @@ object Sentiment {
     * @returns Plain object
     */
   /* static member */
-  @scala.inline
-  def toObject(message: Sentiment): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def toObject(message: Sentiment, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: Sentiment): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: Sentiment, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a Sentiment message.
@@ -134,6 +119,5 @@ object Sentiment {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @scala.inline
-  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

@@ -18,22 +18,17 @@ trait AddJobFlowStepsInput extends StObject {
 }
 object AddJobFlowStepsInput {
   
-  @scala.inline
-  def apply(JobFlowId: XmlStringMaxLen256, Steps: StepConfigList): AddJobFlowStepsInput = {
+  inline def apply(JobFlowId: XmlStringMaxLen256, Steps: StepConfigList): AddJobFlowStepsInput = {
     val __obj = js.Dynamic.literal(JobFlowId = JobFlowId.asInstanceOf[js.Any], Steps = Steps.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddJobFlowStepsInput]
   }
   
-  @scala.inline
-  implicit class AddJobFlowStepsInputMutableBuilder[Self <: AddJobFlowStepsInput] (val x: Self) extends AnyVal {
+  extension [Self <: AddJobFlowStepsInput](x: Self) {
     
-    @scala.inline
-    def setJobFlowId(value: XmlStringMaxLen256): Self = StObject.set(x, "JobFlowId", value.asInstanceOf[js.Any])
+    inline def setJobFlowId(value: XmlStringMaxLen256): Self = StObject.set(x, "JobFlowId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSteps(value: StepConfigList): Self = StObject.set(x, "Steps", value.asInstanceOf[js.Any])
+    inline def setSteps(value: StepConfigList): Self = StObject.set(x, "Steps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepsVarargs(value: StepConfig*): Self = StObject.set(x, "Steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: StepConfig*): Self = StObject.set(x, "Steps", js.Array(value :_*))
   }
 }

@@ -126,21 +126,16 @@ object userPoolClientMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): UserPoolClient = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[UserPoolClient]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): UserPoolClient = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserPoolClient]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: UserPoolClientState): UserPoolClient = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[UserPoolClient]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: UserPoolClientState, opts: CustomResourceOptions): UserPoolClient = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserPoolClient]
+    inline def get(name: String, id: Input[ID]): UserPoolClient = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[UserPoolClient]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): UserPoolClient = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserPoolClient]
+    inline def get(name: String, id: Input[ID], state: UserPoolClientState): UserPoolClient = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[UserPoolClient]
+    inline def get(name: String, id: Input[ID], state: UserPoolClientState, opts: CustomResourceOptions): UserPoolClient = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserPoolClient]
     
     /**
       * Returns true if the given object is an instance of UserPoolClient.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/userPoolClient.UserPoolClient */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cognito/userPoolClient.UserPoolClient */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/userPoolClient.UserPoolClient */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cognito/userPoolClient.UserPoolClient */ Boolean]
   }
   
   trait UserPoolClientArgs extends StObject {
@@ -227,131 +222,90 @@ object userPoolClientMod {
   }
   object UserPoolClientArgs {
     
-    @scala.inline
-    def apply(userPoolId: Input[String]): UserPoolClientArgs = {
+    inline def apply(userPoolId: Input[String]): UserPoolClientArgs = {
       val __obj = js.Dynamic.literal(userPoolId = userPoolId.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserPoolClientArgs]
     }
     
-    @scala.inline
-    implicit class UserPoolClientArgsMutableBuilder[Self <: UserPoolClientArgs] (val x: Self) extends AnyVal {
+    extension [Self <: UserPoolClientArgs](x: Self) {
       
-      @scala.inline
-      def setAllowedOauthFlows(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "allowedOauthFlows", value.asInstanceOf[js.Any])
+      inline def setAllowedOauthFlows(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "allowedOauthFlows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedOauthFlowsUndefined: Self = StObject.set(x, "allowedOauthFlows", js.undefined)
+      inline def setAllowedOauthFlowsUndefined: Self = StObject.set(x, "allowedOauthFlows", js.undefined)
       
-      @scala.inline
-      def setAllowedOauthFlowsUserPoolClient(value: Input[Boolean]): Self = StObject.set(x, "allowedOauthFlowsUserPoolClient", value.asInstanceOf[js.Any])
+      inline def setAllowedOauthFlowsUserPoolClient(value: Input[Boolean]): Self = StObject.set(x, "allowedOauthFlowsUserPoolClient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedOauthFlowsUserPoolClientUndefined: Self = StObject.set(x, "allowedOauthFlowsUserPoolClient", js.undefined)
+      inline def setAllowedOauthFlowsUserPoolClientUndefined: Self = StObject.set(x, "allowedOauthFlowsUserPoolClient", js.undefined)
       
-      @scala.inline
-      def setAllowedOauthFlowsVarargs(value: Input[String]*): Self = StObject.set(x, "allowedOauthFlows", js.Array(value :_*))
+      inline def setAllowedOauthFlowsVarargs(value: Input[String]*): Self = StObject.set(x, "allowedOauthFlows", js.Array(value :_*))
       
-      @scala.inline
-      def setAllowedOauthScopes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "allowedOauthScopes", value.asInstanceOf[js.Any])
+      inline def setAllowedOauthScopes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "allowedOauthScopes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedOauthScopesUndefined: Self = StObject.set(x, "allowedOauthScopes", js.undefined)
+      inline def setAllowedOauthScopesUndefined: Self = StObject.set(x, "allowedOauthScopes", js.undefined)
       
-      @scala.inline
-      def setAllowedOauthScopesVarargs(value: Input[String]*): Self = StObject.set(x, "allowedOauthScopes", js.Array(value :_*))
+      inline def setAllowedOauthScopesVarargs(value: Input[String]*): Self = StObject.set(x, "allowedOauthScopes", js.Array(value :_*))
       
-      @scala.inline
-      def setAnalyticsConfiguration(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolClientAnalyticsConfiguration]): Self = StObject.set(x, "analyticsConfiguration", value.asInstanceOf[js.Any])
+      inline def setAnalyticsConfiguration(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolClientAnalyticsConfiguration]): Self = StObject.set(x, "analyticsConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnalyticsConfigurationUndefined: Self = StObject.set(x, "analyticsConfiguration", js.undefined)
+      inline def setAnalyticsConfigurationUndefined: Self = StObject.set(x, "analyticsConfiguration", js.undefined)
       
-      @scala.inline
-      def setCallbackUrls(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "callbackUrls", value.asInstanceOf[js.Any])
+      inline def setCallbackUrls(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "callbackUrls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallbackUrlsUndefined: Self = StObject.set(x, "callbackUrls", js.undefined)
+      inline def setCallbackUrlsUndefined: Self = StObject.set(x, "callbackUrls", js.undefined)
       
-      @scala.inline
-      def setCallbackUrlsVarargs(value: Input[String]*): Self = StObject.set(x, "callbackUrls", js.Array(value :_*))
+      inline def setCallbackUrlsVarargs(value: Input[String]*): Self = StObject.set(x, "callbackUrls", js.Array(value :_*))
       
-      @scala.inline
-      def setDefaultRedirectUri(value: Input[String]): Self = StObject.set(x, "defaultRedirectUri", value.asInstanceOf[js.Any])
+      inline def setDefaultRedirectUri(value: Input[String]): Self = StObject.set(x, "defaultRedirectUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultRedirectUriUndefined: Self = StObject.set(x, "defaultRedirectUri", js.undefined)
+      inline def setDefaultRedirectUriUndefined: Self = StObject.set(x, "defaultRedirectUri", js.undefined)
       
-      @scala.inline
-      def setExplicitAuthFlows(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "explicitAuthFlows", value.asInstanceOf[js.Any])
+      inline def setExplicitAuthFlows(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "explicitAuthFlows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExplicitAuthFlowsUndefined: Self = StObject.set(x, "explicitAuthFlows", js.undefined)
+      inline def setExplicitAuthFlowsUndefined: Self = StObject.set(x, "explicitAuthFlows", js.undefined)
       
-      @scala.inline
-      def setExplicitAuthFlowsVarargs(value: Input[String]*): Self = StObject.set(x, "explicitAuthFlows", js.Array(value :_*))
+      inline def setExplicitAuthFlowsVarargs(value: Input[String]*): Self = StObject.set(x, "explicitAuthFlows", js.Array(value :_*))
       
-      @scala.inline
-      def setGenerateSecret(value: Input[Boolean]): Self = StObject.set(x, "generateSecret", value.asInstanceOf[js.Any])
+      inline def setGenerateSecret(value: Input[Boolean]): Self = StObject.set(x, "generateSecret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenerateSecretUndefined: Self = StObject.set(x, "generateSecret", js.undefined)
+      inline def setGenerateSecretUndefined: Self = StObject.set(x, "generateSecret", js.undefined)
       
-      @scala.inline
-      def setLogoutUrls(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "logoutUrls", value.asInstanceOf[js.Any])
+      inline def setLogoutUrls(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "logoutUrls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogoutUrlsUndefined: Self = StObject.set(x, "logoutUrls", js.undefined)
+      inline def setLogoutUrlsUndefined: Self = StObject.set(x, "logoutUrls", js.undefined)
       
-      @scala.inline
-      def setLogoutUrlsVarargs(value: Input[String]*): Self = StObject.set(x, "logoutUrls", js.Array(value :_*))
+      inline def setLogoutUrlsVarargs(value: Input[String]*): Self = StObject.set(x, "logoutUrls", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPreventUserExistenceErrors(value: Input[String]): Self = StObject.set(x, "preventUserExistenceErrors", value.asInstanceOf[js.Any])
+      inline def setPreventUserExistenceErrors(value: Input[String]): Self = StObject.set(x, "preventUserExistenceErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventUserExistenceErrorsUndefined: Self = StObject.set(x, "preventUserExistenceErrors", js.undefined)
+      inline def setPreventUserExistenceErrorsUndefined: Self = StObject.set(x, "preventUserExistenceErrors", js.undefined)
       
-      @scala.inline
-      def setReadAttributes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "readAttributes", value.asInstanceOf[js.Any])
+      inline def setReadAttributes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "readAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadAttributesUndefined: Self = StObject.set(x, "readAttributes", js.undefined)
+      inline def setReadAttributesUndefined: Self = StObject.set(x, "readAttributes", js.undefined)
       
-      @scala.inline
-      def setReadAttributesVarargs(value: Input[String]*): Self = StObject.set(x, "readAttributes", js.Array(value :_*))
+      inline def setReadAttributesVarargs(value: Input[String]*): Self = StObject.set(x, "readAttributes", js.Array(value :_*))
       
-      @scala.inline
-      def setRefreshTokenValidity(value: Input[Double]): Self = StObject.set(x, "refreshTokenValidity", value.asInstanceOf[js.Any])
+      inline def setRefreshTokenValidity(value: Input[Double]): Self = StObject.set(x, "refreshTokenValidity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefreshTokenValidityUndefined: Self = StObject.set(x, "refreshTokenValidity", js.undefined)
+      inline def setRefreshTokenValidityUndefined: Self = StObject.set(x, "refreshTokenValidity", js.undefined)
       
-      @scala.inline
-      def setSupportedIdentityProviders(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "supportedIdentityProviders", value.asInstanceOf[js.Any])
+      inline def setSupportedIdentityProviders(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "supportedIdentityProviders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportedIdentityProvidersUndefined: Self = StObject.set(x, "supportedIdentityProviders", js.undefined)
+      inline def setSupportedIdentityProvidersUndefined: Self = StObject.set(x, "supportedIdentityProviders", js.undefined)
       
-      @scala.inline
-      def setSupportedIdentityProvidersVarargs(value: Input[String]*): Self = StObject.set(x, "supportedIdentityProviders", js.Array(value :_*))
+      inline def setSupportedIdentityProvidersVarargs(value: Input[String]*): Self = StObject.set(x, "supportedIdentityProviders", js.Array(value :_*))
       
-      @scala.inline
-      def setUserPoolId(value: Input[String]): Self = StObject.set(x, "userPoolId", value.asInstanceOf[js.Any])
+      inline def setUserPoolId(value: Input[String]): Self = StObject.set(x, "userPoolId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteAttributes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "writeAttributes", value.asInstanceOf[js.Any])
+      inline def setWriteAttributes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "writeAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteAttributesUndefined: Self = StObject.set(x, "writeAttributes", js.undefined)
+      inline def setWriteAttributesUndefined: Self = StObject.set(x, "writeAttributes", js.undefined)
       
-      @scala.inline
-      def setWriteAttributesVarargs(value: Input[String]*): Self = StObject.set(x, "writeAttributes", js.Array(value :_*))
+      inline def setWriteAttributesVarargs(value: Input[String]*): Self = StObject.set(x, "writeAttributes", js.Array(value :_*))
     }
   }
   
@@ -444,140 +398,96 @@ object userPoolClientMod {
   }
   object UserPoolClientState {
     
-    @scala.inline
-    def apply(): UserPoolClientState = {
+    inline def apply(): UserPoolClientState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UserPoolClientState]
     }
     
-    @scala.inline
-    implicit class UserPoolClientStateMutableBuilder[Self <: UserPoolClientState] (val x: Self) extends AnyVal {
+    extension [Self <: UserPoolClientState](x: Self) {
       
-      @scala.inline
-      def setAllowedOauthFlows(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "allowedOauthFlows", value.asInstanceOf[js.Any])
+      inline def setAllowedOauthFlows(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "allowedOauthFlows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedOauthFlowsUndefined: Self = StObject.set(x, "allowedOauthFlows", js.undefined)
+      inline def setAllowedOauthFlowsUndefined: Self = StObject.set(x, "allowedOauthFlows", js.undefined)
       
-      @scala.inline
-      def setAllowedOauthFlowsUserPoolClient(value: Input[Boolean]): Self = StObject.set(x, "allowedOauthFlowsUserPoolClient", value.asInstanceOf[js.Any])
+      inline def setAllowedOauthFlowsUserPoolClient(value: Input[Boolean]): Self = StObject.set(x, "allowedOauthFlowsUserPoolClient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedOauthFlowsUserPoolClientUndefined: Self = StObject.set(x, "allowedOauthFlowsUserPoolClient", js.undefined)
+      inline def setAllowedOauthFlowsUserPoolClientUndefined: Self = StObject.set(x, "allowedOauthFlowsUserPoolClient", js.undefined)
       
-      @scala.inline
-      def setAllowedOauthFlowsVarargs(value: Input[String]*): Self = StObject.set(x, "allowedOauthFlows", js.Array(value :_*))
+      inline def setAllowedOauthFlowsVarargs(value: Input[String]*): Self = StObject.set(x, "allowedOauthFlows", js.Array(value :_*))
       
-      @scala.inline
-      def setAllowedOauthScopes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "allowedOauthScopes", value.asInstanceOf[js.Any])
+      inline def setAllowedOauthScopes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "allowedOauthScopes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedOauthScopesUndefined: Self = StObject.set(x, "allowedOauthScopes", js.undefined)
+      inline def setAllowedOauthScopesUndefined: Self = StObject.set(x, "allowedOauthScopes", js.undefined)
       
-      @scala.inline
-      def setAllowedOauthScopesVarargs(value: Input[String]*): Self = StObject.set(x, "allowedOauthScopes", js.Array(value :_*))
+      inline def setAllowedOauthScopesVarargs(value: Input[String]*): Self = StObject.set(x, "allowedOauthScopes", js.Array(value :_*))
       
-      @scala.inline
-      def setAnalyticsConfiguration(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolClientAnalyticsConfiguration]): Self = StObject.set(x, "analyticsConfiguration", value.asInstanceOf[js.Any])
+      inline def setAnalyticsConfiguration(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolClientAnalyticsConfiguration]): Self = StObject.set(x, "analyticsConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnalyticsConfigurationUndefined: Self = StObject.set(x, "analyticsConfiguration", js.undefined)
+      inline def setAnalyticsConfigurationUndefined: Self = StObject.set(x, "analyticsConfiguration", js.undefined)
       
-      @scala.inline
-      def setCallbackUrls(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "callbackUrls", value.asInstanceOf[js.Any])
+      inline def setCallbackUrls(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "callbackUrls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallbackUrlsUndefined: Self = StObject.set(x, "callbackUrls", js.undefined)
+      inline def setCallbackUrlsUndefined: Self = StObject.set(x, "callbackUrls", js.undefined)
       
-      @scala.inline
-      def setCallbackUrlsVarargs(value: Input[String]*): Self = StObject.set(x, "callbackUrls", js.Array(value :_*))
+      inline def setCallbackUrlsVarargs(value: Input[String]*): Self = StObject.set(x, "callbackUrls", js.Array(value :_*))
       
-      @scala.inline
-      def setClientSecret(value: Input[String]): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
+      inline def setClientSecret(value: Input[String]): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientSecretUndefined: Self = StObject.set(x, "clientSecret", js.undefined)
+      inline def setClientSecretUndefined: Self = StObject.set(x, "clientSecret", js.undefined)
       
-      @scala.inline
-      def setDefaultRedirectUri(value: Input[String]): Self = StObject.set(x, "defaultRedirectUri", value.asInstanceOf[js.Any])
+      inline def setDefaultRedirectUri(value: Input[String]): Self = StObject.set(x, "defaultRedirectUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultRedirectUriUndefined: Self = StObject.set(x, "defaultRedirectUri", js.undefined)
+      inline def setDefaultRedirectUriUndefined: Self = StObject.set(x, "defaultRedirectUri", js.undefined)
       
-      @scala.inline
-      def setExplicitAuthFlows(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "explicitAuthFlows", value.asInstanceOf[js.Any])
+      inline def setExplicitAuthFlows(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "explicitAuthFlows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExplicitAuthFlowsUndefined: Self = StObject.set(x, "explicitAuthFlows", js.undefined)
+      inline def setExplicitAuthFlowsUndefined: Self = StObject.set(x, "explicitAuthFlows", js.undefined)
       
-      @scala.inline
-      def setExplicitAuthFlowsVarargs(value: Input[String]*): Self = StObject.set(x, "explicitAuthFlows", js.Array(value :_*))
+      inline def setExplicitAuthFlowsVarargs(value: Input[String]*): Self = StObject.set(x, "explicitAuthFlows", js.Array(value :_*))
       
-      @scala.inline
-      def setGenerateSecret(value: Input[Boolean]): Self = StObject.set(x, "generateSecret", value.asInstanceOf[js.Any])
+      inline def setGenerateSecret(value: Input[Boolean]): Self = StObject.set(x, "generateSecret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenerateSecretUndefined: Self = StObject.set(x, "generateSecret", js.undefined)
+      inline def setGenerateSecretUndefined: Self = StObject.set(x, "generateSecret", js.undefined)
       
-      @scala.inline
-      def setLogoutUrls(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "logoutUrls", value.asInstanceOf[js.Any])
+      inline def setLogoutUrls(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "logoutUrls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogoutUrlsUndefined: Self = StObject.set(x, "logoutUrls", js.undefined)
+      inline def setLogoutUrlsUndefined: Self = StObject.set(x, "logoutUrls", js.undefined)
       
-      @scala.inline
-      def setLogoutUrlsVarargs(value: Input[String]*): Self = StObject.set(x, "logoutUrls", js.Array(value :_*))
+      inline def setLogoutUrlsVarargs(value: Input[String]*): Self = StObject.set(x, "logoutUrls", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPreventUserExistenceErrors(value: Input[String]): Self = StObject.set(x, "preventUserExistenceErrors", value.asInstanceOf[js.Any])
+      inline def setPreventUserExistenceErrors(value: Input[String]): Self = StObject.set(x, "preventUserExistenceErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventUserExistenceErrorsUndefined: Self = StObject.set(x, "preventUserExistenceErrors", js.undefined)
+      inline def setPreventUserExistenceErrorsUndefined: Self = StObject.set(x, "preventUserExistenceErrors", js.undefined)
       
-      @scala.inline
-      def setReadAttributes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "readAttributes", value.asInstanceOf[js.Any])
+      inline def setReadAttributes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "readAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadAttributesUndefined: Self = StObject.set(x, "readAttributes", js.undefined)
+      inline def setReadAttributesUndefined: Self = StObject.set(x, "readAttributes", js.undefined)
       
-      @scala.inline
-      def setReadAttributesVarargs(value: Input[String]*): Self = StObject.set(x, "readAttributes", js.Array(value :_*))
+      inline def setReadAttributesVarargs(value: Input[String]*): Self = StObject.set(x, "readAttributes", js.Array(value :_*))
       
-      @scala.inline
-      def setRefreshTokenValidity(value: Input[Double]): Self = StObject.set(x, "refreshTokenValidity", value.asInstanceOf[js.Any])
+      inline def setRefreshTokenValidity(value: Input[Double]): Self = StObject.set(x, "refreshTokenValidity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefreshTokenValidityUndefined: Self = StObject.set(x, "refreshTokenValidity", js.undefined)
+      inline def setRefreshTokenValidityUndefined: Self = StObject.set(x, "refreshTokenValidity", js.undefined)
       
-      @scala.inline
-      def setSupportedIdentityProviders(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "supportedIdentityProviders", value.asInstanceOf[js.Any])
+      inline def setSupportedIdentityProviders(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "supportedIdentityProviders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportedIdentityProvidersUndefined: Self = StObject.set(x, "supportedIdentityProviders", js.undefined)
+      inline def setSupportedIdentityProvidersUndefined: Self = StObject.set(x, "supportedIdentityProviders", js.undefined)
       
-      @scala.inline
-      def setSupportedIdentityProvidersVarargs(value: Input[String]*): Self = StObject.set(x, "supportedIdentityProviders", js.Array(value :_*))
+      inline def setSupportedIdentityProvidersVarargs(value: Input[String]*): Self = StObject.set(x, "supportedIdentityProviders", js.Array(value :_*))
       
-      @scala.inline
-      def setUserPoolId(value: Input[String]): Self = StObject.set(x, "userPoolId", value.asInstanceOf[js.Any])
+      inline def setUserPoolId(value: Input[String]): Self = StObject.set(x, "userPoolId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserPoolIdUndefined: Self = StObject.set(x, "userPoolId", js.undefined)
+      inline def setUserPoolIdUndefined: Self = StObject.set(x, "userPoolId", js.undefined)
       
-      @scala.inline
-      def setWriteAttributes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "writeAttributes", value.asInstanceOf[js.Any])
+      inline def setWriteAttributes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "writeAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteAttributesUndefined: Self = StObject.set(x, "writeAttributes", js.undefined)
+      inline def setWriteAttributesUndefined: Self = StObject.set(x, "writeAttributes", js.undefined)
       
-      @scala.inline
-      def setWriteAttributesVarargs(value: Input[String]*): Self = StObject.set(x, "writeAttributes", js.Array(value :_*))
+      inline def setWriteAttributesVarargs(value: Input[String]*): Self = StObject.set(x, "writeAttributes", js.Array(value :_*))
     }
   }
 }

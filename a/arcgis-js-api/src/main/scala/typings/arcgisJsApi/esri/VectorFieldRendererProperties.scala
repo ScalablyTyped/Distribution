@@ -59,48 +59,35 @@ trait VectorFieldRendererProperties extends StObject {
 }
 object VectorFieldRendererProperties {
   
-  @scala.inline
-  def apply(): VectorFieldRendererProperties = {
+  inline def apply(): VectorFieldRendererProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VectorFieldRendererProperties]
   }
   
-  @scala.inline
-  implicit class VectorFieldRendererPropertiesMutableBuilder[Self <: VectorFieldRendererProperties] (val x: Self) extends AnyVal {
+  extension [Self <: VectorFieldRendererProperties](x: Self) {
     
-    @scala.inline
-    def setAttributeField(value: Magnitude): Self = StObject.set(x, "attributeField", value.asInstanceOf[js.Any])
+    inline def setAttributeField(value: Magnitude): Self = StObject.set(x, "attributeField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeFieldUndefined: Self = StObject.set(x, "attributeField", js.undefined)
+    inline def setAttributeFieldUndefined: Self = StObject.set(x, "attributeField", js.undefined)
     
-    @scala.inline
-    def setFlowRepresentation(value: `flow-from` | `flow-to`): Self = StObject.set(x, "flowRepresentation", value.asInstanceOf[js.Any])
+    inline def setFlowRepresentation(value: `flow-from` | `flow-to`): Self = StObject.set(x, "flowRepresentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowRepresentationUndefined: Self = StObject.set(x, "flowRepresentation", js.undefined)
+    inline def setFlowRepresentationUndefined: Self = StObject.set(x, "flowRepresentation", js.undefined)
     
-    @scala.inline
-    def setStyle(
+    inline def setStyle(
       value: `beaufort-ft` | `beaufort-km` | `beaufort-kn` | `beaufort-m` | `beaufort-mi` | `classified-arrow` | `ocean-current-kn` | `ocean-current-m` | `simple-scalar` | `single-arrow` | `wind-speed`
     ): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setSymbolTileSize(value: Double): Self = StObject.set(x, "symbolTileSize", value.asInstanceOf[js.Any])
+    inline def setSymbolTileSize(value: Double): Self = StObject.set(x, "symbolTileSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolTileSizeUndefined: Self = StObject.set(x, "symbolTileSize", js.undefined)
+    inline def setSymbolTileSizeUndefined: Self = StObject.set(x, "symbolTileSize", js.undefined)
     
-    @scala.inline
-    def setVisualVariables(value: js.Array[VisualVariableProperties]): Self = StObject.set(x, "visualVariables", value.asInstanceOf[js.Any])
+    inline def setVisualVariables(value: js.Array[VisualVariableProperties]): Self = StObject.set(x, "visualVariables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisualVariablesUndefined: Self = StObject.set(x, "visualVariables", js.undefined)
+    inline def setVisualVariablesUndefined: Self = StObject.set(x, "visualVariables", js.undefined)
     
-    @scala.inline
-    def setVisualVariablesVarargs(value: VisualVariableProperties*): Self = StObject.set(x, "visualVariables", js.Array(value :_*))
+    inline def setVisualVariablesVarargs(value: VisualVariableProperties*): Self = StObject.set(x, "visualVariables", js.Array(value :_*))
   }
 }

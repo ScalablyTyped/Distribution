@@ -46,8 +46,7 @@ object systems {
   }
   object AbstractMaskSystem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       destroy: () => Unit,
       getStackLength: () => Double,
       maskStack: js.Array[MaskData],
@@ -58,20 +57,15 @@ object systems {
       __obj.asInstanceOf[AbstractMaskSystem]
     }
     
-    @scala.inline
-    implicit class AbstractMaskSystemMutableBuilder[Self <: AbstractMaskSystem] (val x: Self) extends AnyVal {
+    extension [Self <: AbstractMaskSystem](x: Self) {
       
-      @scala.inline
-      def setGetStackLength(value: () => Double): Self = StObject.set(x, "getStackLength", js.Any.fromFunction0(value))
+      inline def setGetStackLength(value: () => Double): Self = StObject.set(x, "getStackLength", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMaskStack(value: js.Array[MaskData]): Self = StObject.set(x, "maskStack", value.asInstanceOf[js.Any])
+      inline def setMaskStack(value: js.Array[MaskData]): Self = StObject.set(x, "maskStack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskStackVarargs(value: MaskData*): Self = StObject.set(x, "maskStack", js.Array(value :_*))
+      inline def setMaskStackVarargs(value: MaskData*): Self = StObject.set(x, "maskStack", js.Array(value :_*))
       
-      @scala.inline
-      def setSetMaskStack(value: js.Array[MaskData] => Unit): Self = StObject.set(x, "setMaskStack", js.Any.fromFunction1(value))
+      inline def setSetMaskStack(value: js.Array[MaskData] => Unit): Self = StObject.set(x, "setMaskStack", js.Any.fromFunction1(value))
     }
   }
   
@@ -146,8 +140,7 @@ object systems {
   }
   object BatchSystem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       boundArray: (BatchTextureArray, js.Array[BaseTexture], Double, Double) => Unit,
       copyBoundTextures: (js.Array[BaseTexture], Double) => Unit,
       currentRenderer: ObjectRenderer,
@@ -162,29 +155,21 @@ object systems {
       __obj.asInstanceOf[BatchSystem]
     }
     
-    @scala.inline
-    implicit class BatchSystemMutableBuilder[Self <: BatchSystem] (val x: Self) extends AnyVal {
+    extension [Self <: BatchSystem](x: Self) {
       
-      @scala.inline
-      def setBoundArray(value: (BatchTextureArray, js.Array[BaseTexture], Double, Double) => Unit): Self = StObject.set(x, "boundArray", js.Any.fromFunction4(value))
+      inline def setBoundArray(value: (BatchTextureArray, js.Array[BaseTexture], Double, Double) => Unit): Self = StObject.set(x, "boundArray", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setCopyBoundTextures(value: (js.Array[BaseTexture], Double) => Unit): Self = StObject.set(x, "copyBoundTextures", js.Any.fromFunction2(value))
+      inline def setCopyBoundTextures(value: (js.Array[BaseTexture], Double) => Unit): Self = StObject.set(x, "copyBoundTextures", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCurrentRenderer(value: ObjectRenderer): Self = StObject.set(x, "currentRenderer", value.asInstanceOf[js.Any])
+      inline def setCurrentRenderer(value: ObjectRenderer): Self = StObject.set(x, "currentRenderer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmptyRenderer(value: ObjectRenderer): Self = StObject.set(x, "emptyRenderer", value.asInstanceOf[js.Any])
+      inline def setEmptyRenderer(value: ObjectRenderer): Self = StObject.set(x, "emptyRenderer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
+      inline def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetObjectRenderer(value: ObjectRenderer => Unit): Self = StObject.set(x, "setObjectRenderer", js.Any.fromFunction1(value))
+      inline def setSetObjectRenderer(value: ObjectRenderer => Unit): Self = StObject.set(x, "setObjectRenderer", js.Any.fromFunction1(value))
     }
   }
   
@@ -298,8 +283,7 @@ object systems {
   }
   object ContextSystem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       contextChange: WebGLRenderingContext => Unit,
       createContext: (HTMLCanvasElement, js.Any) => WebGLRenderingContext,
       destroy: () => Unit,
@@ -319,44 +303,31 @@ object systems {
       __obj.asInstanceOf[ContextSystem]
     }
     
-    @scala.inline
-    implicit class ContextSystemMutableBuilder[Self <: ContextSystem] (val x: Self) extends AnyVal {
+    extension [Self <: ContextSystem](x: Self) {
       
-      @scala.inline
-      def setContextChange(value: WebGLRenderingContext => Unit): Self = StObject.set(x, "contextChange", js.Any.fromFunction1(value))
+      inline def setContextChange(value: WebGLRenderingContext => Unit): Self = StObject.set(x, "contextChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCreateContext(value: (HTMLCanvasElement, js.Any) => WebGLRenderingContext): Self = StObject.set(x, "createContext", js.Any.fromFunction2(value))
+      inline def setCreateContext(value: (HTMLCanvasElement, js.Any) => WebGLRenderingContext): Self = StObject.set(x, "createContext", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setExtensions(value: AnisotropicFiltering): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: AnisotropicFiltering): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetExtensions(value: () => Unit): Self = StObject.set(x, "getExtensions", js.Any.fromFunction0(value))
+      inline def setGetExtensions(value: () => Unit): Self = StObject.set(x, "getExtensions", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHandleContextLost(value: WebGLContextEvent => Unit): Self = StObject.set(x, "handleContextLost", js.Any.fromFunction1(value))
+      inline def setHandleContextLost(value: WebGLContextEvent => Unit): Self = StObject.set(x, "handleContextLost", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHandleContextRestored(value: () => Unit): Self = StObject.set(x, "handleContextRestored", js.Any.fromFunction0(value))
+      inline def setHandleContextRestored(value: () => Unit): Self = StObject.set(x, "handleContextRestored", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInitFromContext(value: WebGLRenderingContext => Unit): Self = StObject.set(x, "initFromContext", js.Any.fromFunction1(value))
+      inline def setInitFromContext(value: WebGLRenderingContext => Unit): Self = StObject.set(x, "initFromContext", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInitFromOptions(value: js.Any => Unit): Self = StObject.set(x, "initFromOptions", js.Any.fromFunction1(value))
+      inline def setInitFromOptions(value: js.Any => Unit): Self = StObject.set(x, "initFromOptions", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsLost(value: Boolean): Self = StObject.set(x, "isLost", value.asInstanceOf[js.Any])
+      inline def setIsLost(value: Boolean): Self = StObject.set(x, "isLost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPostrender(value: () => Unit): Self = StObject.set(x, "postrender", js.Any.fromFunction0(value))
+      inline def setPostrender(value: () => Unit): Self = StObject.set(x, "postrender", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setValidateContext(value: WebGLRenderingContext => Unit): Self = StObject.set(x, "validateContext", js.Any.fromFunction1(value))
+      inline def setValidateContext(value: WebGLRenderingContext => Unit): Self = StObject.set(x, "validateContext", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWebGLVersion(value: Double): Self = StObject.set(x, "webGLVersion", value.asInstanceOf[js.Any])
+      inline def setWebGLVersion(value: Double): Self = StObject.set(x, "webGLVersion", value.asInstanceOf[js.Any])
     }
   }
   
@@ -997,8 +968,7 @@ object systems {
   }
   object ProjectionSystem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       calculateProjection: (Rectangle, Rectangle, Double, Boolean) => Unit,
       defaultFrame: Rectangle,
       destinationFrame: Rectangle,
@@ -1014,32 +984,23 @@ object systems {
       __obj.asInstanceOf[ProjectionSystem]
     }
     
-    @scala.inline
-    implicit class ProjectionSystemMutableBuilder[Self <: ProjectionSystem] (val x: Self) extends AnyVal {
+    extension [Self <: ProjectionSystem](x: Self) {
       
-      @scala.inline
-      def setCalculateProjection(value: (Rectangle, Rectangle, Double, Boolean) => Unit): Self = StObject.set(x, "calculateProjection", js.Any.fromFunction4(value))
+      inline def setCalculateProjection(value: (Rectangle, Rectangle, Double, Boolean) => Unit): Self = StObject.set(x, "calculateProjection", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setDefaultFrame(value: Rectangle): Self = StObject.set(x, "defaultFrame", value.asInstanceOf[js.Any])
+      inline def setDefaultFrame(value: Rectangle): Self = StObject.set(x, "defaultFrame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationFrame(value: Rectangle): Self = StObject.set(x, "destinationFrame", value.asInstanceOf[js.Any])
+      inline def setDestinationFrame(value: Rectangle): Self = StObject.set(x, "destinationFrame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectionMatrix(value: Matrix): Self = StObject.set(x, "projectionMatrix", value.asInstanceOf[js.Any])
+      inline def setProjectionMatrix(value: Matrix): Self = StObject.set(x, "projectionMatrix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetTransform(value: Matrix => Unit): Self = StObject.set(x, "setTransform", js.Any.fromFunction1(value))
+      inline def setSetTransform(value: Matrix => Unit): Self = StObject.set(x, "setTransform", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSourceFrame(value: Rectangle): Self = StObject.set(x, "sourceFrame", value.asInstanceOf[js.Any])
+      inline def setSourceFrame(value: Rectangle): Self = StObject.set(x, "sourceFrame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransform(value: Matrix): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+      inline def setTransform(value: Matrix): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdate(value: (Rectangle, Rectangle, Double, Boolean) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction4(value))
+      inline def setUpdate(value: (Rectangle, Rectangle, Double, Boolean) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction4(value))
     }
   }
   
@@ -1151,20 +1112,16 @@ object systems {
   }
   object ScissorSystem {
     
-    @scala.inline
-    def apply(destroy: () => Unit, pop: () => Unit, push: MaskData => Unit, renderer: Renderer): ScissorSystem = {
+    inline def apply(destroy: () => Unit, pop: () => Unit, push: MaskData => Unit, renderer: Renderer): ScissorSystem = {
       val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), pop = js.Any.fromFunction0(pop), push = js.Any.fromFunction1(push), renderer = renderer.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScissorSystem]
     }
     
-    @scala.inline
-    implicit class ScissorSystemMutableBuilder[Self <: ScissorSystem] (val x: Self) extends AnyVal {
+    extension [Self <: ScissorSystem](x: Self) {
       
-      @scala.inline
-      def setPop(value: () => Unit): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
+      inline def setPop(value: () => Unit): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPush(value: MaskData => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+      inline def setPush(value: MaskData => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
     }
   }
   
@@ -1243,7 +1200,7 @@ object systems {
       * @member {boolean} PIXI.systems.StateSystem#_blendEq
       * @protected
       */
-    var _blendEq: Boolean
+    /* protected */ var _blendEq: Boolean
     
     /**
       * Blend mode
@@ -1377,8 +1334,7 @@ object systems {
   }
   object StateSystem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _blendEq: Boolean,
       blendMode: Double,
       checks: js.Array[js.Function1[/* repeated */ js.Any, js.Any]],
@@ -1405,71 +1361,49 @@ object systems {
       __obj.asInstanceOf[StateSystem]
     }
     
-    @scala.inline
-    implicit class StateSystemMutableBuilder[Self <: StateSystem] (val x: Self) extends AnyVal {
+    extension [Self <: StateSystem](x: Self) {
       
-      @scala.inline
-      def setBlendMode(value: Double): Self = StObject.set(x, "blendMode", value.asInstanceOf[js.Any])
+      inline def setBlendMode(value: Double): Self = StObject.set(x, "blendMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChecks(value: js.Array[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "checks", value.asInstanceOf[js.Any])
+      inline def setChecks(value: js.Array[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "checks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChecksVarargs(value: (js.Function1[/* repeated */ js.Any, js.Any])*): Self = StObject.set(x, "checks", js.Array(value :_*))
+      inline def setChecksVarargs(value: (js.Function1[/* repeated */ js.Any, js.Any])*): Self = StObject.set(x, "checks", js.Array(value :_*))
       
-      @scala.inline
-      def setDefaultState(value: State): Self = StObject.set(x, "defaultState", value.asInstanceOf[js.Any])
+      inline def setDefaultState(value: State): Self = StObject.set(x, "defaultState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceState(value: js.Any => Unit): Self = StObject.set(x, "forceState", js.Any.fromFunction1(value))
+      inline def setForceState(value: js.Any => Unit): Self = StObject.set(x, "forceState", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGl(value: WebGLRenderingContext): Self = StObject.set(x, "gl", value.asInstanceOf[js.Any])
+      inline def setGl(value: WebGLRenderingContext): Self = StObject.set(x, "gl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMap(value: js.Array[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: js.Array[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapVarargs(value: (js.Function1[/* repeated */ js.Any, js.Any])*): Self = StObject.set(x, "map", js.Array(value :_*))
+      inline def setMapVarargs(value: (js.Function1[/* repeated */ js.Any, js.Any])*): Self = StObject.set(x, "map", js.Array(value :_*))
       
-      @scala.inline
-      def setPolygonOffset(value: Double): Self = StObject.set(x, "polygonOffset", value.asInstanceOf[js.Any])
+      inline def setPolygonOffset(value: Double): Self = StObject.set(x, "polygonOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSet(value: js.Any => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+      inline def setSet(value: js.Any => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetBlend(value: Boolean => Unit): Self = StObject.set(x, "setBlend", js.Any.fromFunction1(value))
+      inline def setSetBlend(value: Boolean => Unit): Self = StObject.set(x, "setBlend", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetBlendMode(value: Double => Unit): Self = StObject.set(x, "setBlendMode", js.Any.fromFunction1(value))
+      inline def setSetBlendMode(value: Double => Unit): Self = StObject.set(x, "setBlendMode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetCullFace(value: Boolean => Unit): Self = StObject.set(x, "setCullFace", js.Any.fromFunction1(value))
+      inline def setSetCullFace(value: Boolean => Unit): Self = StObject.set(x, "setCullFace", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetDepthTest(value: Boolean => Unit): Self = StObject.set(x, "setDepthTest", js.Any.fromFunction1(value))
+      inline def setSetDepthTest(value: Boolean => Unit): Self = StObject.set(x, "setDepthTest", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetFrontFace(value: Boolean => Unit): Self = StObject.set(x, "setFrontFace", js.Any.fromFunction1(value))
+      inline def setSetFrontFace(value: Boolean => Unit): Self = StObject.set(x, "setFrontFace", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetOffset(value: Boolean => Unit): Self = StObject.set(x, "setOffset", js.Any.fromFunction1(value))
+      inline def setSetOffset(value: Boolean => Unit): Self = StObject.set(x, "setOffset", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetPolygonOffset(value: (Double, Double) => Unit): Self = StObject.set(x, "setPolygonOffset", js.Any.fromFunction2(value))
+      inline def setSetPolygonOffset(value: (Double, Double) => Unit): Self = StObject.set(x, "setPolygonOffset", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setStateId(value: Double): Self = StObject.set(x, "stateId", value.asInstanceOf[js.Any])
+      inline def setStateId(value: Double): Self = StObject.set(x, "stateId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateCheck(value: (js.Function1[/* repeated */ js.Any, js.Any], Boolean) => Unit): Self = StObject.set(x, "updateCheck", js.Any.fromFunction2(value))
+      inline def setUpdateCheck(value: (js.Function1[/* repeated */ js.Any, js.Any], Boolean) => Unit): Self = StObject.set(x, "updateCheck", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def set_blendEq(value: Boolean): Self = StObject.set(x, "_blendEq", value.asInstanceOf[js.Any])
+      inline def set_blendEq(value: Boolean): Self = StObject.set(x, "_blendEq", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1500,20 +1434,16 @@ object systems {
   }
   object StencilSystem {
     
-    @scala.inline
-    def apply(destroy: () => Unit, pop: DisplayObject => Unit, push: MaskData => Unit, renderer: Renderer): StencilSystem = {
+    inline def apply(destroy: () => Unit, pop: DisplayObject => Unit, push: MaskData => Unit, renderer: Renderer): StencilSystem = {
       val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), pop = js.Any.fromFunction1(pop), push = js.Any.fromFunction1(push), renderer = renderer.asInstanceOf[js.Any])
       __obj.asInstanceOf[StencilSystem]
     }
     
-    @scala.inline
-    implicit class StencilSystemMutableBuilder[Self <: StencilSystem] (val x: Self) extends AnyVal {
+    extension [Self <: StencilSystem](x: Self) {
       
-      @scala.inline
-      def setPop(value: DisplayObject => Unit): Self = StObject.set(x, "pop", js.Any.fromFunction1(value))
+      inline def setPop(value: DisplayObject => Unit): Self = StObject.set(x, "pop", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPush(value: MaskData => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+      inline def setPush(value: MaskData => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
     }
   }
   
@@ -1585,8 +1515,7 @@ object systems {
   }
   object TextureGCSystem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       checkCount: Double,
       checkCountMax: Double,
       count: Double,
@@ -1602,32 +1531,23 @@ object systems {
       __obj.asInstanceOf[TextureGCSystem]
     }
     
-    @scala.inline
-    implicit class TextureGCSystemMutableBuilder[Self <: TextureGCSystem] (val x: Self) extends AnyVal {
+    extension [Self <: TextureGCSystem](x: Self) {
       
-      @scala.inline
-      def setCheckCount(value: Double): Self = StObject.set(x, "checkCount", value.asInstanceOf[js.Any])
+      inline def setCheckCount(value: Double): Self = StObject.set(x, "checkCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckCountMax(value: Double): Self = StObject.set(x, "checkCountMax", value.asInstanceOf[js.Any])
+      inline def setCheckCountMax(value: Double): Self = StObject.set(x, "checkCountMax", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxIdle(value: Double): Self = StObject.set(x, "maxIdle", value.asInstanceOf[js.Any])
+      inline def setMaxIdle(value: Double): Self = StObject.set(x, "maxIdle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMode(value: GC_MODES): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: GC_MODES): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPostrender(value: () => Unit): Self = StObject.set(x, "postrender", js.Any.fromFunction0(value))
+      inline def setPostrender(value: () => Unit): Self = StObject.set(x, "postrender", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRun(value: () => Unit): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
+      inline def setRun(value: () => Unit): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUnload(value: DisplayObject => Unit): Self = StObject.set(x, "unload", js.Any.fromFunction1(value))
+      inline def setUnload(value: DisplayObject => Unit): Self = StObject.set(x, "unload", js.Any.fromFunction1(value))
     }
   }
   

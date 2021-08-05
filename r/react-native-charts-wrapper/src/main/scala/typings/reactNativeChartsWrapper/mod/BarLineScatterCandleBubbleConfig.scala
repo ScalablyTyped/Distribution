@@ -10,19 +10,15 @@ trait BarLineScatterCandleBubbleConfig extends StObject {
 }
 object BarLineScatterCandleBubbleConfig {
   
-  @scala.inline
-  def apply(): BarLineScatterCandleBubbleConfig = {
+  inline def apply(): BarLineScatterCandleBubbleConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BarLineScatterCandleBubbleConfig]
   }
   
-  @scala.inline
-  implicit class BarLineScatterCandleBubbleConfigMutableBuilder[Self <: BarLineScatterCandleBubbleConfig] (val x: Self) extends AnyVal {
+  extension [Self <: BarLineScatterCandleBubbleConfig](x: Self) {
     
-    @scala.inline
-    def setHighlightColor(value: Color): Self = StObject.set(x, "highlightColor", value.asInstanceOf[js.Any])
+    inline def setHighlightColor(value: Color): Self = StObject.set(x, "highlightColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightColorUndefined: Self = StObject.set(x, "highlightColor", js.undefined)
+    inline def setHighlightColorUndefined: Self = StObject.set(x, "highlightColor", js.undefined)
   }
 }

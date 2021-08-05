@@ -49,103 +49,71 @@ trait RegistryKeyState extends StObject {
 }
 object RegistryKeyState {
   
-  @scala.inline
-  def apply(): RegistryKeyState = {
+  inline def apply(): RegistryKeyState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegistryKeyState]
   }
   
-  @scala.inline
-  implicit class RegistryKeyStateMutableBuilder[Self <: RegistryKeyState] (val x: Self) extends AnyVal {
+  extension [Self <: RegistryKeyState](x: Self) {
     
-    @scala.inline
-    def setHive(value: NullableOption[RegistryHive]): Self = StObject.set(x, "hive", value.asInstanceOf[js.Any])
+    inline def setHive(value: NullableOption[RegistryHive]): Self = StObject.set(x, "hive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiveNull: Self = StObject.set(x, "hive", null)
+    inline def setHiveNull: Self = StObject.set(x, "hive", null)
     
-    @scala.inline
-    def setHiveUndefined: Self = StObject.set(x, "hive", js.undefined)
+    inline def setHiveUndefined: Self = StObject.set(x, "hive", js.undefined)
     
-    @scala.inline
-    def setKey(value: NullableOption[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: NullableOption[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyNull: Self = StObject.set(x, "key", null)
+    inline def setKeyNull: Self = StObject.set(x, "key", null)
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setOldKey(value: NullableOption[String]): Self = StObject.set(x, "oldKey", value.asInstanceOf[js.Any])
+    inline def setOldKey(value: NullableOption[String]): Self = StObject.set(x, "oldKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldKeyNull: Self = StObject.set(x, "oldKey", null)
+    inline def setOldKeyNull: Self = StObject.set(x, "oldKey", null)
     
-    @scala.inline
-    def setOldKeyUndefined: Self = StObject.set(x, "oldKey", js.undefined)
+    inline def setOldKeyUndefined: Self = StObject.set(x, "oldKey", js.undefined)
     
-    @scala.inline
-    def setOldValueData(value: NullableOption[String]): Self = StObject.set(x, "oldValueData", value.asInstanceOf[js.Any])
+    inline def setOldValueData(value: NullableOption[String]): Self = StObject.set(x, "oldValueData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValueDataNull: Self = StObject.set(x, "oldValueData", null)
+    inline def setOldValueDataNull: Self = StObject.set(x, "oldValueData", null)
     
-    @scala.inline
-    def setOldValueDataUndefined: Self = StObject.set(x, "oldValueData", js.undefined)
+    inline def setOldValueDataUndefined: Self = StObject.set(x, "oldValueData", js.undefined)
     
-    @scala.inline
-    def setOldValueName(value: NullableOption[String]): Self = StObject.set(x, "oldValueName", value.asInstanceOf[js.Any])
+    inline def setOldValueName(value: NullableOption[String]): Self = StObject.set(x, "oldValueName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValueNameNull: Self = StObject.set(x, "oldValueName", null)
+    inline def setOldValueNameNull: Self = StObject.set(x, "oldValueName", null)
     
-    @scala.inline
-    def setOldValueNameUndefined: Self = StObject.set(x, "oldValueName", js.undefined)
+    inline def setOldValueNameUndefined: Self = StObject.set(x, "oldValueName", js.undefined)
     
-    @scala.inline
-    def setOperation(value: NullableOption[RegistryOperation]): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: NullableOption[RegistryOperation]): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationNull: Self = StObject.set(x, "operation", null)
+    inline def setOperationNull: Self = StObject.set(x, "operation", null)
     
-    @scala.inline
-    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
+    inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
     
-    @scala.inline
-    def setProcessId(value: NullableOption[Double]): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
+    inline def setProcessId(value: NullableOption[Double]): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessIdNull: Self = StObject.set(x, "processId", null)
+    inline def setProcessIdNull: Self = StObject.set(x, "processId", null)
     
-    @scala.inline
-    def setProcessIdUndefined: Self = StObject.set(x, "processId", js.undefined)
+    inline def setProcessIdUndefined: Self = StObject.set(x, "processId", js.undefined)
     
-    @scala.inline
-    def setValueData(value: NullableOption[String]): Self = StObject.set(x, "valueData", value.asInstanceOf[js.Any])
+    inline def setValueData(value: NullableOption[String]): Self = StObject.set(x, "valueData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueDataNull: Self = StObject.set(x, "valueData", null)
+    inline def setValueDataNull: Self = StObject.set(x, "valueData", null)
     
-    @scala.inline
-    def setValueDataUndefined: Self = StObject.set(x, "valueData", js.undefined)
+    inline def setValueDataUndefined: Self = StObject.set(x, "valueData", js.undefined)
     
-    @scala.inline
-    def setValueName(value: NullableOption[String]): Self = StObject.set(x, "valueName", value.asInstanceOf[js.Any])
+    inline def setValueName(value: NullableOption[String]): Self = StObject.set(x, "valueName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueNameNull: Self = StObject.set(x, "valueName", null)
+    inline def setValueNameNull: Self = StObject.set(x, "valueName", null)
     
-    @scala.inline
-    def setValueNameUndefined: Self = StObject.set(x, "valueName", js.undefined)
+    inline def setValueNameUndefined: Self = StObject.set(x, "valueName", js.undefined)
     
-    @scala.inline
-    def setValueType(value: NullableOption[RegistryValueType]): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
+    inline def setValueType(value: NullableOption[RegistryValueType]): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueTypeNull: Self = StObject.set(x, "valueType", null)
+    inline def setValueTypeNull: Self = StObject.set(x, "valueType", null)
     
-    @scala.inline
-    def setValueTypeUndefined: Self = StObject.set(x, "valueType", js.undefined)
+    inline def setValueTypeUndefined: Self = StObject.set(x, "valueType", js.undefined)
   }
 }

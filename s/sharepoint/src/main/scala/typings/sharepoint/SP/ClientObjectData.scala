@@ -14,8 +14,7 @@ trait ClientObjectData extends StObject {
 }
 object ClientObjectData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     get_clientObjectProperties: () => js.Any,
     get_methodReturnObjects: () => js.Any,
     get_properties: () => js.Any
@@ -24,16 +23,12 @@ object ClientObjectData {
     __obj.asInstanceOf[ClientObjectData]
   }
   
-  @scala.inline
-  implicit class ClientObjectDataMutableBuilder[Self <: ClientObjectData] (val x: Self) extends AnyVal {
+  extension [Self <: ClientObjectData](x: Self) {
     
-    @scala.inline
-    def setGet_clientObjectProperties(value: () => js.Any): Self = StObject.set(x, "get_clientObjectProperties", js.Any.fromFunction0(value))
+    inline def setGet_clientObjectProperties(value: () => js.Any): Self = StObject.set(x, "get_clientObjectProperties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_methodReturnObjects(value: () => js.Any): Self = StObject.set(x, "get_methodReturnObjects", js.Any.fromFunction0(value))
+    inline def setGet_methodReturnObjects(value: () => js.Any): Self = StObject.set(x, "get_methodReturnObjects", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_properties(value: () => js.Any): Self = StObject.set(x, "get_properties", js.Any.fromFunction0(value))
+    inline def setGet_properties(value: () => js.Any): Self = StObject.set(x, "get_properties", js.Any.fromFunction0(value))
   }
 }

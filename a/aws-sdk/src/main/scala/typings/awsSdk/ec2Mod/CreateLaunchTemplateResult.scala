@@ -18,25 +18,19 @@ trait CreateLaunchTemplateResult extends StObject {
 }
 object CreateLaunchTemplateResult {
   
-  @scala.inline
-  def apply(): CreateLaunchTemplateResult = {
+  inline def apply(): CreateLaunchTemplateResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateLaunchTemplateResult]
   }
   
-  @scala.inline
-  implicit class CreateLaunchTemplateResultMutableBuilder[Self <: CreateLaunchTemplateResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateLaunchTemplateResult](x: Self) {
     
-    @scala.inline
-    def setLaunchTemplate(value: LaunchTemplate): Self = StObject.set(x, "LaunchTemplate", value.asInstanceOf[js.Any])
+    inline def setLaunchTemplate(value: LaunchTemplate): Self = StObject.set(x, "LaunchTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchTemplateUndefined: Self = StObject.set(x, "LaunchTemplate", js.undefined)
+    inline def setLaunchTemplateUndefined: Self = StObject.set(x, "LaunchTemplate", js.undefined)
     
-    @scala.inline
-    def setWarning(value: ValidationWarning): Self = StObject.set(x, "Warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: ValidationWarning): Self = StObject.set(x, "Warning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningUndefined: Self = StObject.set(x, "Warning", js.undefined)
+    inline def setWarningUndefined: Self = StObject.set(x, "Warning", js.undefined)
   }
 }

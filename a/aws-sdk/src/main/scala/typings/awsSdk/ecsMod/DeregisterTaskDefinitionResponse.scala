@@ -13,19 +13,15 @@ trait DeregisterTaskDefinitionResponse extends StObject {
 }
 object DeregisterTaskDefinitionResponse {
   
-  @scala.inline
-  def apply(): DeregisterTaskDefinitionResponse = {
+  inline def apply(): DeregisterTaskDefinitionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeregisterTaskDefinitionResponse]
   }
   
-  @scala.inline
-  implicit class DeregisterTaskDefinitionResponseMutableBuilder[Self <: DeregisterTaskDefinitionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeregisterTaskDefinitionResponse](x: Self) {
     
-    @scala.inline
-    def setTaskDefinition(value: TaskDefinition): Self = StObject.set(x, "taskDefinition", value.asInstanceOf[js.Any])
+    inline def setTaskDefinition(value: TaskDefinition): Self = StObject.set(x, "taskDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskDefinitionUndefined: Self = StObject.set(x, "taskDefinition", js.undefined)
+    inline def setTaskDefinitionUndefined: Self = StObject.set(x, "taskDefinition", js.undefined)
   }
 }

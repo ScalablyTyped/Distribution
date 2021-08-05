@@ -21,21 +21,16 @@ object objectLiteralSortKeysRuleMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def FAILURE_STRING_ALPHABETICAL(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING_ALPHABETICAL")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def FAILURE_STRING_ALPHABETICAL(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING_ALPHABETICAL")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def FAILURE_STRING_SHORTHAND_FIRST(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING_SHORTHAND_FIRST")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def FAILURE_STRING_SHORTHAND_FIRST(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING_SHORTHAND_FIRST")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def FAILURE_STRING_USE_DECLARATION_ORDER(propName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING_USE_DECLARATION_ORDER")(propName.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def FAILURE_STRING_USE_DECLARATION_ORDER(propName: String, typeName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING_USE_DECLARATION_ORDER")(propName.asInstanceOf[js.Any], typeName.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def FAILURE_STRING_USE_DECLARATION_ORDER(propName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING_USE_DECLARATION_ORDER")(propName.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def FAILURE_STRING_USE_DECLARATION_ORDER(propName: String, typeName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING_USE_DECLARATION_ORDER")(propName.asInstanceOf[js.Any], typeName.asInstanceOf[js.Any])).asInstanceOf[String]
     
     @JSImport("tslint/lib/rules/objectLiteralSortKeysRule", "Rule.metadata")
     @js.native
     def metadata: IRuleMetadata = js.native
-    @scala.inline
-    def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    inline def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
 }

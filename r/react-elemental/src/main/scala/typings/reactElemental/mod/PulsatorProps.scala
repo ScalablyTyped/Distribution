@@ -19,43 +19,31 @@ trait PulsatorProps extends StObject {
 }
 object PulsatorProps {
   
-  @scala.inline
-  def apply(): PulsatorProps = {
+  inline def apply(): PulsatorProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PulsatorProps]
   }
   
-  @scala.inline
-  implicit class PulsatorPropsMutableBuilder[Self <: PulsatorProps] (val x: Self) extends AnyVal {
+  extension [Self <: PulsatorProps](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setInactive(value: Boolean): Self = StObject.set(x, "inactive", value.asInstanceOf[js.Any])
+    inline def setInactive(value: Boolean): Self = StObject.set(x, "inactive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInactiveUndefined: Self = StObject.set(x, "inactive", js.undefined)
+    inline def setInactiveUndefined: Self = StObject.set(x, "inactive", js.undefined)
     
-    @scala.inline
-    def setSize(value: PulsatorSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: PulsatorSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
+    inline def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransparentUndefined: Self = StObject.set(x, "transparent", js.undefined)
+    inline def setTransparentUndefined: Self = StObject.set(x, "transparent", js.undefined)
   }
 }

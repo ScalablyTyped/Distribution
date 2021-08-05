@@ -10,16 +10,13 @@ trait ILanguageServicesDiagnostics extends StObject {
 }
 object ILanguageServicesDiagnostics {
   
-  @scala.inline
-  def apply(log: String => Unit): ILanguageServicesDiagnostics = {
+  inline def apply(log: String => Unit): ILanguageServicesDiagnostics = {
     val __obj = js.Dynamic.literal(log = js.Any.fromFunction1(log))
     __obj.asInstanceOf[ILanguageServicesDiagnostics]
   }
   
-  @scala.inline
-  implicit class ILanguageServicesDiagnosticsMutableBuilder[Self <: ILanguageServicesDiagnostics] (val x: Self) extends AnyVal {
+  extension [Self <: ILanguageServicesDiagnostics](x: Self) {
     
-    @scala.inline
-    def setLog(value: String => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
+    inline def setLog(value: String => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
   }
 }

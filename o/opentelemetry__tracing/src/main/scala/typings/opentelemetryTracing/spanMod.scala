@@ -86,17 +86,17 @@ object spanMod {
       startTime: TimeInput
     ) = this()
     
-    var _duration: js.Any = js.native
+    /* private */ var _duration: js.Any = js.native
     
-    var _ended: js.Any = js.native
+    /* private */ var _ended: js.Any = js.native
     
-    var _isSpanEnded: js.Any = js.native
+    /* private */ var _isSpanEnded: js.Any = js.native
     
-    val _logger: js.Any = js.native
+    /* private */ val _logger: js.Any = js.native
     
-    val _spanProcessor: js.Any = js.native
+    /* private */ val _spanProcessor: js.Any = js.native
     
-    val _traceParams: js.Any = js.native
+    /* private */ val _traceParams: js.Any = js.native
     
     /* CompleteClass */
     override val attributes: Attributes = js.native

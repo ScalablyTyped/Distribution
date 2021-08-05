@@ -16,25 +16,19 @@ trait Calendar extends StObject {
 }
 object Calendar {
   
-  @scala.inline
-  def apply(calendar: _empty, calendars: Standard, name: String, numberFormat: Currency): Calendar = {
+  inline def apply(calendar: _empty, calendars: Standard, name: String, numberFormat: Currency): Calendar = {
     val __obj = js.Dynamic.literal(calendar = calendar.asInstanceOf[js.Any], calendars = calendars.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], numberFormat = numberFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[Calendar]
   }
   
-  @scala.inline
-  implicit class CalendarMutableBuilder[Self <: Calendar] (val x: Self) extends AnyVal {
+  extension [Self <: Calendar](x: Self) {
     
-    @scala.inline
-    def setCalendar(value: _empty): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
+    inline def setCalendar(value: _empty): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalendars(value: Standard): Self = StObject.set(x, "calendars", value.asInstanceOf[js.Any])
+    inline def setCalendars(value: Standard): Self = StObject.set(x, "calendars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberFormat(value: Currency): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
+    inline def setNumberFormat(value: Currency): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
   }
 }

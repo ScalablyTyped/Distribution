@@ -12,8 +12,7 @@ trait Then extends StObject {
 }
 object Then {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `then`: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any => js.Any
   ): Then = {
     val __obj = js.Dynamic.literal()
@@ -21,11 +20,9 @@ object Then {
     __obj.asInstanceOf[Then]
   }
   
-  @scala.inline
-  implicit class ThenMutableBuilder[Self <: Then] (val x: Self) extends AnyVal {
+  extension [Self <: Then](x: Self) {
     
-    @scala.inline
-    def setThen(
+    inline def setThen(
       value: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any => js.Any
     ): Self = StObject.set(x, "then", js.Any.fromFunction1(value))
   }

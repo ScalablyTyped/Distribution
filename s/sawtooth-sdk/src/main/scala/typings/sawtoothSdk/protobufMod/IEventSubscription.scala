@@ -14,34 +14,25 @@ trait IEventSubscription extends StObject {
 }
 object IEventSubscription {
   
-  @scala.inline
-  def apply(): IEventSubscription = {
+  inline def apply(): IEventSubscription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IEventSubscription]
   }
   
-  @scala.inline
-  implicit class IEventSubscriptionMutableBuilder[Self <: IEventSubscription] (val x: Self) extends AnyVal {
+  extension [Self <: IEventSubscription](x: Self) {
     
-    @scala.inline
-    def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
+    inline def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTypeNull: Self = StObject.set(x, "eventType", null)
+    inline def setEventTypeNull: Self = StObject.set(x, "eventType", null)
     
-    @scala.inline
-    def setEventTypeUndefined: Self = StObject.set(x, "eventType", js.undefined)
+    inline def setEventTypeUndefined: Self = StObject.set(x, "eventType", js.undefined)
     
-    @scala.inline
-    def setFilters(value: js.Array[IEventFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: js.Array[IEventFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersNull: Self = StObject.set(x, "filters", null)
+    inline def setFiltersNull: Self = StObject.set(x, "filters", null)
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: IEventFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: IEventFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
   }
 }

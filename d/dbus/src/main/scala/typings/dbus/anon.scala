@@ -27,8 +27,7 @@ object anon {
   }
   object Bus {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bus: DBusConnection,
       getProperties: js.Function2[/* err */ Error | Null, /* properties */ StringDictionary[js.Any], Unit] => Unit,
       getProperty: (String, js.Function2[/* err */ Error | Null, /* name */ String, Unit]) => Unit,
@@ -41,31 +40,23 @@ object anon {
       __obj.asInstanceOf[Bus]
     }
     
-    @scala.inline
-    implicit class BusMutableBuilder[Self <: Bus] (val x: Self) extends AnyVal {
+    extension [Self <: Bus](x: Self) {
       
-      @scala.inline
-      def setBus(value: DBusConnection): Self = StObject.set(x, "bus", value.asInstanceOf[js.Any])
+      inline def setBus(value: DBusConnection): Self = StObject.set(x, "bus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetProperties(
+      inline def setGetProperties(
         value: js.Function2[/* err */ Error | Null, /* properties */ StringDictionary[js.Any], Unit] => Unit
       ): Self = StObject.set(x, "getProperties", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetProperty(value: (String, js.Function2[/* err */ Error | Null, /* name */ String, Unit]) => Unit): Self = StObject.set(x, "getProperty", js.Any.fromFunction2(value))
+      inline def setGetProperty(value: (String, js.Function2[/* err */ Error | Null, /* name */ String, Unit]) => Unit): Self = StObject.set(x, "getProperty", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInterfaceName(value: String): Self = StObject.set(x, "interfaceName", value.asInstanceOf[js.Any])
+      inline def setInterfaceName(value: String): Self = StObject.set(x, "interfaceName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectPath(value: String): Self = StObject.set(x, "objectPath", value.asInstanceOf[js.Any])
+      inline def setObjectPath(value: String): Self = StObject.set(x, "objectPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+      inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetProperty(value: (String, js.Any, js.Function1[/* err */ Error | Null, Unit]) => Unit): Self = StObject.set(x, "setProperty", js.Any.fromFunction3(value))
+      inline def setSetProperty(value: (String, js.Any, js.Function1[/* err */ Error | Null, Unit]) => Unit): Self = StObject.set(x, "setProperty", js.Any.fromFunction3(value))
     }
   }
   
@@ -79,27 +70,21 @@ object anon {
   }
   object Getter {
     
-    @scala.inline
-    def apply(getter: js.Function1[/* val */ String, Unit] => Unit, `type`: String): Getter = {
+    inline def apply(getter: js.Function1[/* val */ String, Unit] => Unit, `type`: String): Getter = {
       val __obj = js.Dynamic.literal(getter = js.Any.fromFunction1(getter))
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Getter]
     }
     
-    @scala.inline
-    implicit class GetterMutableBuilder[Self <: Getter] (val x: Self) extends AnyVal {
+    extension [Self <: Getter](x: Self) {
       
-      @scala.inline
-      def setGetter(value: js.Function1[/* val */ String, Unit] => Unit): Self = StObject.set(x, "getter", js.Any.fromFunction1(value))
+      inline def setGetter(value: js.Function1[/* val */ String, Unit] => Unit): Self = StObject.set(x, "getter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetter(value: (/* value */ js.Any, /* done */ js.Function0[Unit]) => Unit): Self = StObject.set(x, "setter", js.Any.fromFunction2(value))
+      inline def setSetter(value: (/* value */ js.Any, /* done */ js.Function0[Unit]) => Unit): Self = StObject.set(x, "setter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetterUndefined: Self = StObject.set(x, "setter", js.undefined)
+      inline def setSetterUndefined: Self = StObject.set(x, "setter", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -111,20 +96,16 @@ object anon {
   }
   object In {
     
-    @scala.inline
-    def apply(in: String, out: String): In = {
+    inline def apply(in: String, out: String): In = {
       val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any], out = out.asInstanceOf[js.Any])
       __obj.asInstanceOf[In]
     }
     
-    @scala.inline
-    implicit class InMutableBuilder[Self <: In] (val x: Self) extends AnyVal {
+    extension [Self <: In](x: Self) {
       
-      @scala.inline
-      def setIn(value: String): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+      inline def setIn(value: String): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOut(value: String): Self = StObject.set(x, "out", value.asInstanceOf[js.Any])
+      inline def setOut(value: String): Self = StObject.set(x, "out", value.asInstanceOf[js.Any])
     }
   }
   
@@ -134,20 +115,16 @@ object anon {
   }
   object Types {
     
-    @scala.inline
-    def apply(types: js.Array[String]): Types = {
+    inline def apply(types: js.Array[String]): Types = {
       val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any])
       __obj.asInstanceOf[Types]
     }
     
-    @scala.inline
-    implicit class TypesMutableBuilder[Self <: Types] (val x: Self) extends AnyVal {
+    extension [Self <: Types](x: Self) {
       
-      @scala.inline
-      def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+      inline def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
+      inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
     }
   }
 }

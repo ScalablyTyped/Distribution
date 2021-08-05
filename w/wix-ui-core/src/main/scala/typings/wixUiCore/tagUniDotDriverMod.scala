@@ -12,8 +12,7 @@ object tagUniDotDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def makeTagUniDriver(base: UniDriver[js.Any]): TagUniDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("makeTagUniDriver")(base.asInstanceOf[js.Any]).asInstanceOf[TagUniDriver]
+  inline def makeTagUniDriver(base: UniDriver[js.Any]): TagUniDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("makeTagUniDriver")(base.asInstanceOf[js.Any]).asInstanceOf[TagUniDriver]
   
   trait TagUniDriver
     extends StObject
@@ -31,8 +30,7 @@ object tagUniDotDriverMod {
   }
   object TagUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -46,23 +44,17 @@ object tagUniDotDriverMod {
       __obj.asInstanceOf[TagUniDriver]
     }
     
-    @scala.inline
-    implicit class TagUniDriverMutableBuilder[Self <: TagUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: TagUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetInput(value: () => UniDriver[js.Any]): Self = StObject.set(x, "getInput", js.Any.fromFunction0(value))
+      inline def setGetInput(value: () => UniDriver[js.Any]): Self = StObject.set(x, "getInput", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetText(value: () => js.Promise[String]): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+      inline def setGetText(value: () => js.Promise[String]): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetValue(value: () => js.Promise[String]): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+      inline def setGetValue(value: () => js.Promise[String]): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsChecked(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isChecked", js.Any.fromFunction0(value))
+      inline def setIsChecked(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isChecked", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSimulateClick(value: () => js.Promise[Unit]): Self = StObject.set(x, "simulateClick", js.Any.fromFunction0(value))
+      inline def setSimulateClick(value: () => js.Promise[Unit]): Self = StObject.set(x, "simulateClick", js.Any.fromFunction0(value))
     }
   }
 }

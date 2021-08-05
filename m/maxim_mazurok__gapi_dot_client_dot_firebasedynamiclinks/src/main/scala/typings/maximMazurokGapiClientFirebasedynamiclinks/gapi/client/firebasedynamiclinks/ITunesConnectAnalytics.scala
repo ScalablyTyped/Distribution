@@ -21,37 +21,27 @@ trait ITunesConnectAnalytics extends StObject {
 }
 object ITunesConnectAnalytics {
   
-  @scala.inline
-  def apply(): ITunesConnectAnalytics = {
+  inline def apply(): ITunesConnectAnalytics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITunesConnectAnalytics]
   }
   
-  @scala.inline
-  implicit class ITunesConnectAnalyticsMutableBuilder[Self <: ITunesConnectAnalytics] (val x: Self) extends AnyVal {
+  extension [Self <: ITunesConnectAnalytics](x: Self) {
     
-    @scala.inline
-    def setAt(value: String): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
+    inline def setAt(value: String): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAtUndefined: Self = StObject.set(x, "at", js.undefined)
+    inline def setAtUndefined: Self = StObject.set(x, "at", js.undefined)
     
-    @scala.inline
-    def setCt(value: String): Self = StObject.set(x, "ct", value.asInstanceOf[js.Any])
+    inline def setCt(value: String): Self = StObject.set(x, "ct", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCtUndefined: Self = StObject.set(x, "ct", js.undefined)
+    inline def setCtUndefined: Self = StObject.set(x, "ct", js.undefined)
     
-    @scala.inline
-    def setMt(value: String): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
+    inline def setMt(value: String): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMtUndefined: Self = StObject.set(x, "mt", js.undefined)
+    inline def setMtUndefined: Self = StObject.set(x, "mt", js.undefined)
     
-    @scala.inline
-    def setPt(value: String): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+    inline def setPt(value: String): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
+    inline def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
   }
 }

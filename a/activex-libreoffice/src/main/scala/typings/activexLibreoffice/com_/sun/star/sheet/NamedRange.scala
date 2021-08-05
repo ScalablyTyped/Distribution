@@ -43,8 +43,7 @@ trait NamedRange
 }
 object NamedRange {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Content: String,
     IsSharedFormula: Boolean,
     Name: String,
@@ -69,13 +68,10 @@ object NamedRange {
     __obj.asInstanceOf[NamedRange]
   }
   
-  @scala.inline
-  implicit class NamedRangeMutableBuilder[Self <: NamedRange] (val x: Self) extends AnyVal {
+  extension [Self <: NamedRange](x: Self) {
     
-    @scala.inline
-    def setIsSharedFormula(value: Boolean): Self = StObject.set(x, "IsSharedFormula", value.asInstanceOf[js.Any])
+    inline def setIsSharedFormula(value: Boolean): Self = StObject.set(x, "IsSharedFormula", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenIndex(value: Double): Self = StObject.set(x, "TokenIndex", value.asInstanceOf[js.Any])
+    inline def setTokenIndex(value: Double): Self = StObject.set(x, "TokenIndex", value.asInstanceOf[js.Any])
   }
 }

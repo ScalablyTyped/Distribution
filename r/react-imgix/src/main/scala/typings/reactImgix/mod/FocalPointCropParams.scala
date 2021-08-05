@@ -16,37 +16,27 @@ trait FocalPointCropParams extends StObject {
 }
 object FocalPointCropParams {
   
-  @scala.inline
-  def apply(): FocalPointCropParams = {
+  inline def apply(): FocalPointCropParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FocalPointCropParams]
   }
   
-  @scala.inline
-  implicit class FocalPointCropParamsMutableBuilder[Self <: FocalPointCropParams] (val x: Self) extends AnyVal {
+  extension [Self <: FocalPointCropParams](x: Self) {
     
-    @scala.inline
-    def `setFp-debug`(value: ImgixParamType): Self = StObject.set(x, "fp-debug", value.asInstanceOf[js.Any])
+    inline def `setFp-debug`(value: ImgixParamType): Self = StObject.set(x, "fp-debug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setFp-debugUndefined`: Self = StObject.set(x, "fp-debug", js.undefined)
+    inline def `setFp-debugUndefined`: Self = StObject.set(x, "fp-debug", js.undefined)
     
-    @scala.inline
-    def `setFp-x`(value: ImgixParamType): Self = StObject.set(x, "fp-x", value.asInstanceOf[js.Any])
+    inline def `setFp-x`(value: ImgixParamType): Self = StObject.set(x, "fp-x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setFp-xUndefined`: Self = StObject.set(x, "fp-x", js.undefined)
+    inline def `setFp-xUndefined`: Self = StObject.set(x, "fp-x", js.undefined)
     
-    @scala.inline
-    def `setFp-y`(value: ImgixParamType): Self = StObject.set(x, "fp-y", value.asInstanceOf[js.Any])
+    inline def `setFp-y`(value: ImgixParamType): Self = StObject.set(x, "fp-y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setFp-yUndefined`: Self = StObject.set(x, "fp-y", js.undefined)
+    inline def `setFp-yUndefined`: Self = StObject.set(x, "fp-y", js.undefined)
     
-    @scala.inline
-    def `setFp-z`(value: ImgixParamType): Self = StObject.set(x, "fp-z", value.asInstanceOf[js.Any])
+    inline def `setFp-z`(value: ImgixParamType): Self = StObject.set(x, "fp-z", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setFp-zUndefined`: Self = StObject.set(x, "fp-z", js.undefined)
+    inline def `setFp-zUndefined`: Self = StObject.set(x, "fp-z", js.undefined)
   }
 }

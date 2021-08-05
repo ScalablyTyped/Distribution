@@ -16,31 +16,23 @@ trait XRRenderState extends StObject {
 }
 object XRRenderState {
   
-  @scala.inline
-  def apply(depthFar: Double, depthNear: Double): XRRenderState = {
+  inline def apply(depthFar: Double, depthNear: Double): XRRenderState = {
     val __obj = js.Dynamic.literal(depthFar = depthFar.asInstanceOf[js.Any], depthNear = depthNear.asInstanceOf[js.Any])
     __obj.asInstanceOf[XRRenderState]
   }
   
-  @scala.inline
-  implicit class XRRenderStateMutableBuilder[Self <: XRRenderState] (val x: Self) extends AnyVal {
+  extension [Self <: XRRenderState](x: Self) {
     
-    @scala.inline
-    def setBaseLayer(value: XRWebGLLayer): Self = StObject.set(x, "baseLayer", value.asInstanceOf[js.Any])
+    inline def setBaseLayer(value: XRWebGLLayer): Self = StObject.set(x, "baseLayer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseLayerUndefined: Self = StObject.set(x, "baseLayer", js.undefined)
+    inline def setBaseLayerUndefined: Self = StObject.set(x, "baseLayer", js.undefined)
     
-    @scala.inline
-    def setDepthFar(value: Double): Self = StObject.set(x, "depthFar", value.asInstanceOf[js.Any])
+    inline def setDepthFar(value: Double): Self = StObject.set(x, "depthFar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepthNear(value: Double): Self = StObject.set(x, "depthNear", value.asInstanceOf[js.Any])
+    inline def setDepthNear(value: Double): Self = StObject.set(x, "depthNear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInlineVerticalFieldOfView(value: Double): Self = StObject.set(x, "inlineVerticalFieldOfView", value.asInstanceOf[js.Any])
+    inline def setInlineVerticalFieldOfView(value: Double): Self = StObject.set(x, "inlineVerticalFieldOfView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInlineVerticalFieldOfViewUndefined: Self = StObject.set(x, "inlineVerticalFieldOfView", js.undefined)
+    inline def setInlineVerticalFieldOfViewUndefined: Self = StObject.set(x, "inlineVerticalFieldOfView", js.undefined)
   }
 }

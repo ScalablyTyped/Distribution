@@ -26,35 +26,26 @@ trait UseGlobalFiltersOptions[D /* <: js.Object */] extends StObject {
 }
 object UseGlobalFiltersOptions {
   
-  @scala.inline
-  def apply[D /* <: js.Object */](): UseGlobalFiltersOptions[D] = {
+  inline def apply[D /* <: js.Object */](): UseGlobalFiltersOptions[D] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UseGlobalFiltersOptions[D]]
   }
   
-  @scala.inline
-  implicit class UseGlobalFiltersOptionsMutableBuilder[Self <: UseGlobalFiltersOptions[?], D /* <: js.Object */] (val x: Self & UseGlobalFiltersOptions[D]) extends AnyVal {
+  extension [Self <: UseGlobalFiltersOptions[?], D /* <: js.Object */](x: Self & UseGlobalFiltersOptions[D]) {
     
-    @scala.inline
-    def setAutoResetGlobalFilter(value: Boolean): Self = StObject.set(x, "autoResetGlobalFilter", value.asInstanceOf[js.Any])
+    inline def setAutoResetGlobalFilter(value: Boolean): Self = StObject.set(x, "autoResetGlobalFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoResetGlobalFilterUndefined: Self = StObject.set(x, "autoResetGlobalFilter", js.undefined)
+    inline def setAutoResetGlobalFilterUndefined: Self = StObject.set(x, "autoResetGlobalFilter", js.undefined)
     
-    @scala.inline
-    def setDisableGlobalFilter(value: Boolean): Self = StObject.set(x, "disableGlobalFilter", value.asInstanceOf[js.Any])
+    inline def setDisableGlobalFilter(value: Boolean): Self = StObject.set(x, "disableGlobalFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableGlobalFilterUndefined: Self = StObject.set(x, "disableGlobalFilter", js.undefined)
+    inline def setDisableGlobalFilterUndefined: Self = StObject.set(x, "disableGlobalFilter", js.undefined)
     
-    @scala.inline
-    def setFilterTypes(value: FilterTypes[D]): Self = StObject.set(x, "filterTypes", value.asInstanceOf[js.Any])
+    inline def setFilterTypes(value: FilterTypes[D]): Self = StObject.set(x, "filterTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterTypesUndefined: Self = StObject.set(x, "filterTypes", js.undefined)
+    inline def setFilterTypesUndefined: Self = StObject.set(x, "filterTypes", js.undefined)
     
-    @scala.inline
-    def setGlobalFilter(
+    inline def setGlobalFilter(
       value: (js.Function3[
           /* rows */ js.Array[Row[D]], 
           /* columnIds */ js.Array[IdType[D]], 
@@ -63,18 +54,14 @@ object UseGlobalFiltersOptions {
         ]) | String
     ): Self = StObject.set(x, "globalFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalFilterFunction3(
+    inline def setGlobalFilterFunction3(
       value: (/* rows */ js.Array[Row[D]], /* columnIds */ js.Array[IdType[D]], /* filterValue */ js.Any) => js.Array[Row[D]]
     ): Self = StObject.set(x, "globalFilter", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGlobalFilterUndefined: Self = StObject.set(x, "globalFilter", js.undefined)
+    inline def setGlobalFilterUndefined: Self = StObject.set(x, "globalFilter", js.undefined)
     
-    @scala.inline
-    def setManualGlobalFilter(value: Boolean): Self = StObject.set(x, "manualGlobalFilter", value.asInstanceOf[js.Any])
+    inline def setManualGlobalFilter(value: Boolean): Self = StObject.set(x, "manualGlobalFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManualGlobalFilterUndefined: Self = StObject.set(x, "manualGlobalFilter", js.undefined)
+    inline def setManualGlobalFilterUndefined: Self = StObject.set(x, "manualGlobalFilter", js.undefined)
   }
 }

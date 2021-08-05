@@ -14,19 +14,15 @@ trait BootstrapChartEventArgsBase
 }
 object BootstrapChartEventArgsBase {
   
-  @scala.inline
-  def apply(component: js.Any, element: js.Any, sender: Control): BootstrapChartEventArgsBase = {
+  inline def apply(component: js.Any, element: js.Any, sender: Control): BootstrapChartEventArgsBase = {
     val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootstrapChartEventArgsBase]
   }
   
-  @scala.inline
-  implicit class BootstrapChartEventArgsBaseMutableBuilder[Self <: BootstrapChartEventArgsBase] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapChartEventArgsBase](x: Self) {
     
-    @scala.inline
-    def setComponent(value: js.Any): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: js.Any): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
   }
 }

@@ -38,49 +38,35 @@ trait DomainEntry extends StObject {
 }
 object DomainEntry {
   
-  @scala.inline
-  def apply(): DomainEntry = {
+  inline def apply(): DomainEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DomainEntry]
   }
   
-  @scala.inline
-  implicit class DomainEntryMutableBuilder[Self <: DomainEntry] (val x: Self) extends AnyVal {
+  extension [Self <: DomainEntry](x: Self) {
     
-    @scala.inline
-    def setId(value: NonEmptyString): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: NonEmptyString): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setIsAlias(value: Boolean): Self = StObject.set(x, "isAlias", value.asInstanceOf[js.Any])
+    inline def setIsAlias(value: Boolean): Self = StObject.set(x, "isAlias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAliasUndefined: Self = StObject.set(x, "isAlias", js.undefined)
+    inline def setIsAliasUndefined: Self = StObject.set(x, "isAlias", js.undefined)
     
-    @scala.inline
-    def setName(value: DomainName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: DomainName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOptions(value: DomainEntryOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: DomainEntryOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    @scala.inline
-    def setType(value: DomainEntryType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: DomainEntryType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

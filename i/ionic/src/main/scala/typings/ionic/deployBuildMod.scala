@@ -53,8 +53,7 @@ object deployBuildMod {
   }
   object DeployBuild {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       automation_id: Double,
       automation_name: String,
       caller_id: Double,
@@ -74,53 +73,37 @@ object deployBuildMod {
       __obj.asInstanceOf[DeployBuild]
     }
     
-    @scala.inline
-    implicit class DeployBuildMutableBuilder[Self <: DeployBuild] (val x: Self) extends AnyVal {
+    extension [Self <: DeployBuild](x: Self) {
       
-      @scala.inline
-      def setAutomation_id(value: Double): Self = StObject.set(x, "automation_id", value.asInstanceOf[js.Any])
+      inline def setAutomation_id(value: Double): Self = StObject.set(x, "automation_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutomation_name(value: String): Self = StObject.set(x, "automation_name", value.asInstanceOf[js.Any])
+      inline def setAutomation_name(value: String): Self = StObject.set(x, "automation_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaller_id(value: Double): Self = StObject.set(x, "caller_id", value.asInstanceOf[js.Any])
+      inline def setCaller_id(value: Double): Self = StObject.set(x, "caller_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommit(value: js.Any): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+      inline def setCommit(value: js.Any): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvironment_id(value: Double): Self = StObject.set(x, "environment_id", value.asInstanceOf[js.Any])
+      inline def setEnvironment_id(value: Double): Self = StObject.set(x, "environment_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvironment_name(value: String): Self = StObject.set(x, "environment_name", value.asInstanceOf[js.Any])
+      inline def setEnvironment_name(value: String): Self = StObject.set(x, "environment_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFinished(value: String): Self = StObject.set(x, "finished", value.asInstanceOf[js.Any])
+      inline def setFinished(value: String): Self = StObject.set(x, "finished", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJob(value: js.Any): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
+      inline def setJob(value: js.Any): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJob_id(value: Double): Self = StObject.set(x, "job_id", value.asInstanceOf[js.Any])
+      inline def setJob_id(value: Double): Self = StObject.set(x, "job_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNative_config_id(value: Double): Self = StObject.set(x, "native_config_id", value.asInstanceOf[js.Any])
+      inline def setNative_config_id(value: Double): Self = StObject.set(x, "native_config_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPending_channels(value: js.Array[String]): Self = StObject.set(x, "pending_channels", value.asInstanceOf[js.Any])
+      inline def setPending_channels(value: js.Array[String]): Self = StObject.set(x, "pending_channels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPending_channelsVarargs(value: String*): Self = StObject.set(x, "pending_channels", js.Array(value :_*))
+      inline def setPending_channelsVarargs(value: String*): Self = StObject.set(x, "pending_channels", js.Array(value :_*))
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
 }

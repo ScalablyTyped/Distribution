@@ -23,22 +23,17 @@ trait ScanCodeData extends StObject {
 }
 object ScanCodeData {
   
-  @scala.inline
-  def apply(barCode: String, code: String, qrCode: String): ScanCodeData = {
+  inline def apply(barCode: String, code: String, qrCode: String): ScanCodeData = {
     val __obj = js.Dynamic.literal(barCode = barCode.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], qrCode = qrCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScanCodeData]
   }
   
-  @scala.inline
-  implicit class ScanCodeDataMutableBuilder[Self <: ScanCodeData] (val x: Self) extends AnyVal {
+  extension [Self <: ScanCodeData](x: Self) {
     
-    @scala.inline
-    def setBarCode(value: String): Self = StObject.set(x, "barCode", value.asInstanceOf[js.Any])
+    inline def setBarCode(value: String): Self = StObject.set(x, "barCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQrCode(value: String): Self = StObject.set(x, "qrCode", value.asInstanceOf[js.Any])
+    inline def setQrCode(value: String): Self = StObject.set(x, "qrCode", value.asInstanceOf[js.Any])
   }
 }

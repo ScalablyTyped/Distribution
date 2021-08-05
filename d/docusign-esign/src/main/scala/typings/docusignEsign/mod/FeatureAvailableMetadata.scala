@@ -12,25 +12,19 @@ trait FeatureAvailableMetadata extends StObject {
 }
 object FeatureAvailableMetadata {
   
-  @scala.inline
-  def apply(): FeatureAvailableMetadata = {
+  inline def apply(): FeatureAvailableMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FeatureAvailableMetadata]
   }
   
-  @scala.inline
-  implicit class FeatureAvailableMetadataMutableBuilder[Self <: FeatureAvailableMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: FeatureAvailableMetadata](x: Self) {
     
-    @scala.inline
-    def setAvailabilty(value: String): Self = StObject.set(x, "availabilty", value.asInstanceOf[js.Any])
+    inline def setAvailabilty(value: String): Self = StObject.set(x, "availabilty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabiltyUndefined: Self = StObject.set(x, "availabilty", js.undefined)
+    inline def setAvailabiltyUndefined: Self = StObject.set(x, "availabilty", js.undefined)
     
-    @scala.inline
-    def setFeatureName(value: String): Self = StObject.set(x, "featureName", value.asInstanceOf[js.Any])
+    inline def setFeatureName(value: String): Self = StObject.set(x, "featureName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureNameUndefined: Self = StObject.set(x, "featureName", js.undefined)
+    inline def setFeatureNameUndefined: Self = StObject.set(x, "featureName", js.undefined)
   }
 }

@@ -12,19 +12,15 @@ trait PullDownOption extends StObject {
 }
 object PullDownOption {
   
-  @scala.inline
-  def apply(stop: Double, threshold: Double): PullDownOption = {
+  inline def apply(stop: Double, threshold: Double): PullDownOption = {
     val __obj = js.Dynamic.literal(stop = stop.asInstanceOf[js.Any], threshold = threshold.asInstanceOf[js.Any])
     __obj.asInstanceOf[PullDownOption]
   }
   
-  @scala.inline
-  implicit class PullDownOptionMutableBuilder[Self <: PullDownOption] (val x: Self) extends AnyVal {
+  extension [Self <: PullDownOption](x: Self) {
     
-    @scala.inline
-    def setStop(value: Double): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
+    inline def setStop(value: Double): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+    inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
   }
 }

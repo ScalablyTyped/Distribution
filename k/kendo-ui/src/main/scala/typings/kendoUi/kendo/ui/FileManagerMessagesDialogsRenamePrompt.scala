@@ -18,43 +18,31 @@ trait FileManagerMessagesDialogsRenamePrompt extends StObject {
 }
 object FileManagerMessagesDialogsRenamePrompt {
   
-  @scala.inline
-  def apply(): FileManagerMessagesDialogsRenamePrompt = {
+  inline def apply(): FileManagerMessagesDialogsRenamePrompt = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileManagerMessagesDialogsRenamePrompt]
   }
   
-  @scala.inline
-  implicit class FileManagerMessagesDialogsRenamePromptMutableBuilder[Self <: FileManagerMessagesDialogsRenamePrompt] (val x: Self) extends AnyVal {
+  extension [Self <: FileManagerMessagesDialogsRenamePrompt](x: Self) {
     
-    @scala.inline
-    def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
-    @scala.inline
-    def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+    inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setOkText(value: String): Self = StObject.set(x, "okText", value.asInstanceOf[js.Any])
+    inline def setOkText(value: String): Self = StObject.set(x, "okText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOkTextUndefined: Self = StObject.set(x, "okText", js.undefined)
+    inline def setOkTextUndefined: Self = StObject.set(x, "okText", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

@@ -18,26 +18,20 @@ object anon {
   }
   object PartialIIconOptions {
     
-    @scala.inline
-    def apply(): PartialIIconOptions = {
+    inline def apply(): PartialIIconOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialIIconOptions]
     }
     
-    @scala.inline
-    implicit class PartialIIconOptionsMutableBuilder[Self <: PartialIIconOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PartialIIconOptions](x: Self) {
       
-      @scala.inline
-      def setDisableWarnings(value: Boolean): Self = StObject.set(x, "disableWarnings", value.asInstanceOf[js.Any])
+      inline def setDisableWarnings(value: Boolean): Self = StObject.set(x, "disableWarnings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableWarningsUndefined: Self = StObject.set(x, "disableWarnings", js.undefined)
+      inline def setDisableWarningsUndefined: Self = StObject.set(x, "disableWarnings", js.undefined)
       
-      @scala.inline
-      def setWarnOnMissingIcons(value: Boolean): Self = StObject.set(x, "warnOnMissingIcons", value.asInstanceOf[js.Any])
+      inline def setWarnOnMissingIcons(value: Boolean): Self = StObject.set(x, "warnOnMissingIcons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarnOnMissingIconsUndefined: Self = StObject.set(x, "warnOnMissingIcons", js.undefined)
+      inline def setWarnOnMissingIconsUndefined: Self = StObject.set(x, "warnOnMissingIcons", js.undefined)
     }
   }
 }

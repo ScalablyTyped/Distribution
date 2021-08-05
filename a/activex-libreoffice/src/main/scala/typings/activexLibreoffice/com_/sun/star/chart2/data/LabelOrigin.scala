@@ -27,24 +27,21 @@ object LabelOrigin {
     * If a range consists of more than one column the result of label generation may be empty. Of course, it could also succeed with a string like "Columns
     * A to B".
     */
-  @scala.inline
-  def COLUMN: `2` = 2.asInstanceOf[`2`]
+  inline def COLUMN: `2` = 2.asInstanceOf[`2`]
   
   /**
     * This is exactly the opposite of SHORT_SIDE. I.e., if SHORT_SIDE has the same effect as ROW, LONG_SIDE will have the same effect as COLUMN and the
     * other way round.
     * @see LabelOrigin.SHORT_SIDE
     */
-  @scala.inline
-  def LONG_SIDE: `1` = 1.asInstanceOf[`1`]
+  inline def LONG_SIDE: `1` = 1.asInstanceOf[`1`]
   
   /**
     * Uses the column name for label generation. A spreadsheet range A2:D2 could, e.g., result in "Row 2".
     *
     * If a range consists of more than one row the result of label generation may be empty. Of course, it could also succeed with a string like "Rows 1-3".
     */
-  @scala.inline
-  def ROW: `3` = 3.asInstanceOf[`3`]
+  inline def ROW: `3` = 3.asInstanceOf[`3`]
   
   /**
     * If a range spans a single row over more than one column, this parameter has the same effect as ROW. If the range spans a single column over more than
@@ -56,6 +53,5 @@ object LabelOrigin {
     * In case of a rectangular range, or a range that is composed of more than one contiguous sub-regions, the short side cannot be determined, thus {@link
     * XDataSequence.generateLabel()} will return an empty sequence.
     */
-  @scala.inline
-  def SHORT_SIDE: `0` = 0.asInstanceOf[`0`]
+  inline def SHORT_SIDE: `0` = 0.asInstanceOf[`0`]
 }

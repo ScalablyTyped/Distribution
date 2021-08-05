@@ -19,22 +19,17 @@ trait AdvancedCapturedPhoto extends StObject {
 }
 object AdvancedCapturedPhoto {
   
-  @scala.inline
-  def apply(context: js.Any, frame: CapturedFrame, mode: AdvancedPhotoMode): AdvancedCapturedPhoto = {
+  inline def apply(context: js.Any, frame: CapturedFrame, mode: AdvancedPhotoMode): AdvancedCapturedPhoto = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], frame = frame.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdvancedCapturedPhoto]
   }
   
-  @scala.inline
-  implicit class AdvancedCapturedPhotoMutableBuilder[Self <: AdvancedCapturedPhoto] (val x: Self) extends AnyVal {
+  extension [Self <: AdvancedCapturedPhoto](x: Self) {
     
-    @scala.inline
-    def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrame(value: CapturedFrame): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
+    inline def setFrame(value: CapturedFrame): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: AdvancedPhotoMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: AdvancedPhotoMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
   }
 }

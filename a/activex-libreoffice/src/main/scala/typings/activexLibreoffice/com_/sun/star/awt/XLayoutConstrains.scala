@@ -28,8 +28,7 @@ trait XLayoutConstrains
 }
 object XLayoutConstrains {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MinimumSize: Size,
     PreferredSize: Size,
     acquire: () => Unit,
@@ -43,22 +42,16 @@ object XLayoutConstrains {
     __obj.asInstanceOf[XLayoutConstrains]
   }
   
-  @scala.inline
-  implicit class XLayoutConstrainsMutableBuilder[Self <: XLayoutConstrains] (val x: Self) extends AnyVal {
+  extension [Self <: XLayoutConstrains](x: Self) {
     
-    @scala.inline
-    def setCalcAdjustedSize(value: Size => Size): Self = StObject.set(x, "calcAdjustedSize", js.Any.fromFunction1(value))
+    inline def setCalcAdjustedSize(value: Size => Size): Self = StObject.set(x, "calcAdjustedSize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetMinimumSize(value: () => Size): Self = StObject.set(x, "getMinimumSize", js.Any.fromFunction0(value))
+    inline def setGetMinimumSize(value: () => Size): Self = StObject.set(x, "getMinimumSize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPreferredSize(value: () => Size): Self = StObject.set(x, "getPreferredSize", js.Any.fromFunction0(value))
+    inline def setGetPreferredSize(value: () => Size): Self = StObject.set(x, "getPreferredSize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMinimumSize(value: Size): Self = StObject.set(x, "MinimumSize", value.asInstanceOf[js.Any])
+    inline def setMinimumSize(value: Size): Self = StObject.set(x, "MinimumSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferredSize(value: Size): Self = StObject.set(x, "PreferredSize", value.asInstanceOf[js.Any])
+    inline def setPreferredSize(value: Size): Self = StObject.set(x, "PreferredSize", value.asInstanceOf[js.Any])
   }
 }

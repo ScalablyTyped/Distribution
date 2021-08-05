@@ -49,8 +49,7 @@ object WebForms {
   }
   object BeginRequestEventArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Empty: EventArgs,
       get_postBackElement: () => HTMLElement,
       get_request: () => WebRequest,
@@ -60,17 +59,13 @@ object WebForms {
       __obj.asInstanceOf[BeginRequestEventArgs]
     }
     
-    @scala.inline
-    implicit class BeginRequestEventArgsMutableBuilder[Self <: BeginRequestEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: BeginRequestEventArgs](x: Self) {
       
-      @scala.inline
-      def setGet_postBackElement(value: () => HTMLElement): Self = StObject.set(x, "get_postBackElement", js.Any.fromFunction0(value))
+      inline def setGet_postBackElement(value: () => HTMLElement): Self = StObject.set(x, "get_postBackElement", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_request(value: () => WebRequest): Self = StObject.set(x, "get_request", js.Any.fromFunction0(value))
+      inline def setGet_request(value: () => WebRequest): Self = StObject.set(x, "get_request", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_updatePanelsToUpdate(value: () => js.Array[String]): Self = StObject.set(x, "get_updatePanelsToUpdate", js.Any.fromFunction0(value))
+      inline def setGet_updatePanelsToUpdate(value: () => js.Array[String]): Self = StObject.set(x, "get_updatePanelsToUpdate", js.Any.fromFunction0(value))
     }
   }
   
@@ -120,8 +115,7 @@ object WebForms {
   }
   object EndRequestEventArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Empty: EventArgs,
       get_dataItems: () => js.Any,
       get_error: () => Error,
@@ -133,23 +127,17 @@ object WebForms {
       __obj.asInstanceOf[EndRequestEventArgs]
     }
     
-    @scala.inline
-    implicit class EndRequestEventArgsMutableBuilder[Self <: EndRequestEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: EndRequestEventArgs](x: Self) {
       
-      @scala.inline
-      def setGet_dataItems(value: () => js.Any): Self = StObject.set(x, "get_dataItems", js.Any.fromFunction0(value))
+      inline def setGet_dataItems(value: () => js.Any): Self = StObject.set(x, "get_dataItems", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_error(value: () => Error): Self = StObject.set(x, "get_error", js.Any.fromFunction0(value))
+      inline def setGet_error(value: () => Error): Self = StObject.set(x, "get_error", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_errorHandled(value: () => Boolean): Self = StObject.set(x, "get_errorHandled", js.Any.fromFunction0(value))
+      inline def setGet_errorHandled(value: () => Boolean): Self = StObject.set(x, "get_errorHandled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_response(value: () => WebRequestExecutor): Self = StObject.set(x, "get_response", js.Any.fromFunction0(value))
+      inline def setGet_response(value: () => WebRequestExecutor): Self = StObject.set(x, "get_response", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSet_errorHandled(value: Boolean => Unit): Self = StObject.set(x, "set_errorHandled", js.Any.fromFunction1(value))
+      inline def setSet_errorHandled(value: Boolean => Unit): Self = StObject.set(x, "set_errorHandled", js.Any.fromFunction1(value))
     }
   }
   
@@ -185,8 +173,7 @@ object WebForms {
   }
   object InitializeRequestEventArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Empty: EventArgs,
       get_postBackElement: () => HTMLElement,
       get_request: () => WebRequestExecutor,
@@ -196,17 +183,13 @@ object WebForms {
       __obj.asInstanceOf[InitializeRequestEventArgs]
     }
     
-    @scala.inline
-    implicit class InitializeRequestEventArgsMutableBuilder[Self <: InitializeRequestEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: InitializeRequestEventArgs](x: Self) {
       
-      @scala.inline
-      def setGet_postBackElement(value: () => HTMLElement): Self = StObject.set(x, "get_postBackElement", js.Any.fromFunction0(value))
+      inline def setGet_postBackElement(value: () => HTMLElement): Self = StObject.set(x, "get_postBackElement", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_request(value: () => WebRequestExecutor): Self = StObject.set(x, "get_request", js.Any.fromFunction0(value))
+      inline def setGet_request(value: () => WebRequestExecutor): Self = StObject.set(x, "get_request", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_updatePanelsToUpdate(value: () => js.Array[String]): Self = StObject.set(x, "get_updatePanelsToUpdate", js.Any.fromFunction0(value))
+      inline def setGet_updatePanelsToUpdate(value: () => js.Array[String]): Self = StObject.set(x, "get_updatePanelsToUpdate", js.Any.fromFunction0(value))
     }
   }
   
@@ -248,8 +231,7 @@ object WebForms {
   }
   object PageLoadedEventArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Empty: EventArgs,
       get_dataItems: () => js.Any,
       get_panelsCreated: () => js.Array[HTMLDivElement],
@@ -259,17 +241,13 @@ object WebForms {
       __obj.asInstanceOf[PageLoadedEventArgs]
     }
     
-    @scala.inline
-    implicit class PageLoadedEventArgsMutableBuilder[Self <: PageLoadedEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: PageLoadedEventArgs](x: Self) {
       
-      @scala.inline
-      def setGet_dataItems(value: () => js.Any): Self = StObject.set(x, "get_dataItems", js.Any.fromFunction0(value))
+      inline def setGet_dataItems(value: () => js.Any): Self = StObject.set(x, "get_dataItems", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_panelsCreated(value: () => js.Array[HTMLDivElement]): Self = StObject.set(x, "get_panelsCreated", js.Any.fromFunction0(value))
+      inline def setGet_panelsCreated(value: () => js.Array[HTMLDivElement]): Self = StObject.set(x, "get_panelsCreated", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_panelsUpdated(value: () => js.Array[HTMLDivElement]): Self = StObject.set(x, "get_panelsUpdated", js.Any.fromFunction0(value))
+      inline def setGet_panelsUpdated(value: () => js.Array[HTMLDivElement]): Self = StObject.set(x, "get_panelsUpdated", js.Any.fromFunction0(value))
     }
   }
   
@@ -311,8 +289,7 @@ object WebForms {
   }
   object PageLoadingEventArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Empty: EventArgs,
       get_dataItems: () => js.Any,
       get_panelsDeleting: () => js.Array[HTMLDivElement],
@@ -322,17 +299,13 @@ object WebForms {
       __obj.asInstanceOf[PageLoadingEventArgs]
     }
     
-    @scala.inline
-    implicit class PageLoadingEventArgsMutableBuilder[Self <: PageLoadingEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: PageLoadingEventArgs](x: Self) {
       
-      @scala.inline
-      def setGet_dataItems(value: () => js.Any): Self = StObject.set(x, "get_dataItems", js.Any.fromFunction0(value))
+      inline def setGet_dataItems(value: () => js.Any): Self = StObject.set(x, "get_dataItems", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_panelsDeleting(value: () => js.Array[HTMLDivElement]): Self = StObject.set(x, "get_panelsDeleting", js.Any.fromFunction0(value))
+      inline def setGet_panelsDeleting(value: () => js.Array[HTMLDivElement]): Self = StObject.set(x, "get_panelsDeleting", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_panelsUpdating(value: () => js.Array[HTMLDivElement]): Self = StObject.set(x, "get_panelsUpdating", js.Any.fromFunction0(value))
+      inline def setGet_panelsUpdating(value: () => js.Array[HTMLDivElement]): Self = StObject.set(x, "get_panelsUpdating", js.Any.fromFunction0(value))
     }
   }
   

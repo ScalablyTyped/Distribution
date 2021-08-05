@@ -23,25 +23,19 @@ trait MergePullRequestByFastForwardInput extends StObject {
 }
 object MergePullRequestByFastForwardInput {
   
-  @scala.inline
-  def apply(pullRequestId: PullRequestId, repositoryName: RepositoryName): MergePullRequestByFastForwardInput = {
+  inline def apply(pullRequestId: PullRequestId, repositoryName: RepositoryName): MergePullRequestByFastForwardInput = {
     val __obj = js.Dynamic.literal(pullRequestId = pullRequestId.asInstanceOf[js.Any], repositoryName = repositoryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[MergePullRequestByFastForwardInput]
   }
   
-  @scala.inline
-  implicit class MergePullRequestByFastForwardInputMutableBuilder[Self <: MergePullRequestByFastForwardInput] (val x: Self) extends AnyVal {
+  extension [Self <: MergePullRequestByFastForwardInput](x: Self) {
     
-    @scala.inline
-    def setPullRequestId(value: PullRequestId): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
+    inline def setPullRequestId(value: PullRequestId): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+    inline def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceCommitId(value: ObjectId): Self = StObject.set(x, "sourceCommitId", value.asInstanceOf[js.Any])
+    inline def setSourceCommitId(value: ObjectId): Self = StObject.set(x, "sourceCommitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceCommitIdUndefined: Self = StObject.set(x, "sourceCommitId", js.undefined)
+    inline def setSourceCommitIdUndefined: Self = StObject.set(x, "sourceCommitId", js.undefined)
   }
 }

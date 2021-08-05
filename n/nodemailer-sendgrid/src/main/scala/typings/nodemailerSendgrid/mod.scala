@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(options: SendgridOptions): Transport = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Transport]
+  inline def apply(options: SendgridOptions): Transport = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Transport]
   
   @JSImport("nodemailer-sendgrid", JSImport.Namespace)
   @js.native
@@ -20,17 +19,14 @@ object mod {
   }
   object SendgridOptions {
     
-    @scala.inline
-    def apply(apiKey: String): SendgridOptions = {
+    inline def apply(apiKey: String): SendgridOptions = {
       val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[SendgridOptions]
     }
     
-    @scala.inline
-    implicit class SendgridOptionsMutableBuilder[Self <: SendgridOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SendgridOptions](x: Self) {
       
-      @scala.inline
-      def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
+      inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
     }
   }
 }

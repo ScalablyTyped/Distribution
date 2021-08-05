@@ -172,7 +172,7 @@ trait Paragraph extends StObject {
   
   var WidowControl: Double = js.native
   
-  @JSName("Word.Paragraph_typekey")
+  /* private */ @JSName("Word.Paragraph_typekey")
   var WordDotParagraph_typekey: Paragraph = js.native
   
   var WordWrap: Double = js.native

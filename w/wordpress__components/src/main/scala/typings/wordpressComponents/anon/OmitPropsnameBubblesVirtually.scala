@@ -17,31 +17,23 @@ trait OmitPropsnameBubblesVirtually extends StObject {
 }
 object OmitPropsnameBubblesVirtually {
   
-  @scala.inline
-  def apply(): OmitPropsnameBubblesVirtually = {
+  inline def apply(): OmitPropsnameBubblesVirtually = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OmitPropsnameBubblesVirtually]
   }
   
-  @scala.inline
-  implicit class OmitPropsnameBubblesVirtuallyMutableBuilder[Self <: OmitPropsnameBubblesVirtually] (val x: Self) extends AnyVal {
+  extension [Self <: OmitPropsnameBubblesVirtually](x: Self) {
     
-    @scala.inline
-    def setBubblesVirtually(value: Boolean): Self = StObject.set(x, "bubblesVirtually", value.asInstanceOf[js.Any])
+    inline def setBubblesVirtually(value: Boolean): Self = StObject.set(x, "bubblesVirtually", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBubblesVirtuallyUndefined: Self = StObject.set(x, "bubblesVirtually", js.undefined)
+    inline def setBubblesVirtuallyUndefined: Self = StObject.set(x, "bubblesVirtually", js.undefined)
     
-    @scala.inline
-    def setChildren(value: /* fills */ js.Array[js.Array[Element]] => Element | Null): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+    inline def setChildren(value: /* fills */ js.Array[js.Array[Element]] => Element | Null): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setFillProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "fillProps", value.asInstanceOf[js.Any])
+    inline def setFillProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "fillProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillPropsUndefined: Self = StObject.set(x, "fillProps", js.undefined)
+    inline def setFillPropsUndefined: Self = StObject.set(x, "fillProps", js.undefined)
   }
 }

@@ -27,31 +27,23 @@ trait SchemaRepositoryError extends StObject {
 }
 object SchemaRepositoryError {
   
-  @scala.inline
-  def apply(): SchemaRepositoryError = {
+  inline def apply(): SchemaRepositoryError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRepositoryError]
   }
   
-  @scala.inline
-  implicit class SchemaRepositoryErrorMutableBuilder[Self <: SchemaRepositoryError] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRepositoryError](x: Self) {
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
-    @scala.inline
-    def setHttpStatusCode(value: Double): Self = StObject.set(x, "httpStatusCode", value.asInstanceOf[js.Any])
+    inline def setHttpStatusCode(value: Double): Self = StObject.set(x, "httpStatusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpStatusCodeUndefined: Self = StObject.set(x, "httpStatusCode", js.undefined)
+    inline def setHttpStatusCodeUndefined: Self = StObject.set(x, "httpStatusCode", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

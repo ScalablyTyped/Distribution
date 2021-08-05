@@ -12,19 +12,15 @@ trait SettingsResource extends StObject {
 }
 object SettingsResource {
   
-  @scala.inline
-  def apply(datasources: DatasourcesResource, searchapplications: SearchapplicationsResource): SettingsResource = {
+  inline def apply(datasources: DatasourcesResource, searchapplications: SearchapplicationsResource): SettingsResource = {
     val __obj = js.Dynamic.literal(datasources = datasources.asInstanceOf[js.Any], searchapplications = searchapplications.asInstanceOf[js.Any])
     __obj.asInstanceOf[SettingsResource]
   }
   
-  @scala.inline
-  implicit class SettingsResourceMutableBuilder[Self <: SettingsResource] (val x: Self) extends AnyVal {
+  extension [Self <: SettingsResource](x: Self) {
     
-    @scala.inline
-    def setDatasources(value: DatasourcesResource): Self = StObject.set(x, "datasources", value.asInstanceOf[js.Any])
+    inline def setDatasources(value: DatasourcesResource): Self = StObject.set(x, "datasources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchapplications(value: SearchapplicationsResource): Self = StObject.set(x, "searchapplications", value.asInstanceOf[js.Any])
+    inline def setSearchapplications(value: SearchapplicationsResource): Self = StObject.set(x, "searchapplications", value.asInstanceOf[js.Any])
   }
 }

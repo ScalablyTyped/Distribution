@@ -13,16 +13,13 @@ trait CreateFlowDefinitionResponse extends StObject {
 }
 object CreateFlowDefinitionResponse {
   
-  @scala.inline
-  def apply(FlowDefinitionArn: FlowDefinitionArn): CreateFlowDefinitionResponse = {
+  inline def apply(FlowDefinitionArn: FlowDefinitionArn): CreateFlowDefinitionResponse = {
     val __obj = js.Dynamic.literal(FlowDefinitionArn = FlowDefinitionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateFlowDefinitionResponse]
   }
   
-  @scala.inline
-  implicit class CreateFlowDefinitionResponseMutableBuilder[Self <: CreateFlowDefinitionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateFlowDefinitionResponse](x: Self) {
     
-    @scala.inline
-    def setFlowDefinitionArn(value: FlowDefinitionArn): Self = StObject.set(x, "FlowDefinitionArn", value.asInstanceOf[js.Any])
+    inline def setFlowDefinitionArn(value: FlowDefinitionArn): Self = StObject.set(x, "FlowDefinitionArn", value.asInstanceOf[js.Any])
   }
 }

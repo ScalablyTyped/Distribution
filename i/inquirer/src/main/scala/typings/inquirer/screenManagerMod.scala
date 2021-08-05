@@ -32,8 +32,8 @@ object screenManagerMod {
       * @param width
       * The max width of each line.
       */
-    /* CompleteClass */
-    /* protected */ override def breakLines(text: String, width: Double): js.Array[String] = js.native
+    /* protected */ /* CompleteClass */
+    override def breakLines(text: String, width: Double): js.Array[String] = js.native
     
     /**
       * Cleans all lines expect the first `extraLines`.
@@ -65,8 +65,8 @@ object screenManagerMod {
       * @param width
       * The max width of each line.
       */
-    /* CompleteClass */
-    /* protected */ override def forceLineReturn(text: String, width: Double): String = js.native
+    /* protected */ /* CompleteClass */
+    override def forceLineReturn(text: String, width: Double): String = js.native
     
     /**
       * Gets or sets the height of the screen.
@@ -80,8 +80,8 @@ object screenManagerMod {
       * @returns
       * The width of the screen.
       */
-    /* CompleteClass */
-    /* protected */ override def normalizedCliWidth(): Double = js.native
+    /* protected */ /* CompleteClass */
+    override def normalizedCliWidth(): Double = js.native
     
     /**
       * Releases the cursor.
@@ -189,8 +189,7 @@ object screenManagerMod {
   }
   object ScreenManager {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       breakLines: (String, Double) => js.Array[String],
       clean: Double => Unit,
       done: () => Unit,
@@ -206,38 +205,27 @@ object screenManagerMod {
       __obj.asInstanceOf[ScreenManager]
     }
     
-    @scala.inline
-    implicit class ScreenManagerMutableBuilder[Self <: ScreenManager] (val x: Self) extends AnyVal {
+    extension [Self <: ScreenManager](x: Self) {
       
-      @scala.inline
-      def setBreakLines(value: (String, Double) => js.Array[String]): Self = StObject.set(x, "breakLines", js.Any.fromFunction2(value))
+      inline def setBreakLines(value: (String, Double) => js.Array[String]): Self = StObject.set(x, "breakLines", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setClean(value: Double => Unit): Self = StObject.set(x, "clean", js.Any.fromFunction1(value))
+      inline def setClean(value: Double => Unit): Self = StObject.set(x, "clean", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDone(value: () => Unit): Self = StObject.set(x, "done", js.Any.fromFunction0(value))
+      inline def setDone(value: () => Unit): Self = StObject.set(x, "done", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setExtraLinesUnderPrompt(value: Double): Self = StObject.set(x, "extraLinesUnderPrompt", value.asInstanceOf[js.Any])
+      inline def setExtraLinesUnderPrompt(value: Double): Self = StObject.set(x, "extraLinesUnderPrompt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceLineReturn(value: (String, Double) => String): Self = StObject.set(x, "forceLineReturn", js.Any.fromFunction2(value))
+      inline def setForceLineReturn(value: (String, Double) => String): Self = StObject.set(x, "forceLineReturn", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalizedCliWidth(value: () => Double): Self = StObject.set(x, "normalizedCliWidth", js.Any.fromFunction0(value))
+      inline def setNormalizedCliWidth(value: () => Double): Self = StObject.set(x, "normalizedCliWidth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReleaseCursor(value: () => Unit): Self = StObject.set(x, "releaseCursor", js.Any.fromFunction0(value))
+      inline def setReleaseCursor(value: () => Unit): Self = StObject.set(x, "releaseCursor", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRender(value: (String, String) => Unit): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
+      inline def setRender(value: (String, String) => Unit): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRl(value: Interface): Self = StObject.set(x, "rl", value.asInstanceOf[js.Any])
+      inline def setRl(value: Interface): Self = StObject.set(x, "rl", value.asInstanceOf[js.Any])
     }
   }
 }

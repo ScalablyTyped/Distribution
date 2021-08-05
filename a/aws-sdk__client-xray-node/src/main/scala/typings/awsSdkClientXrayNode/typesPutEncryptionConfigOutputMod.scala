@@ -26,23 +26,18 @@ object typesPutEncryptionConfigOutputMod {
   }
   object PutEncryptionConfigOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): PutEncryptionConfigOutput = {
+    inline def apply($metadata: ResponseMetadata): PutEncryptionConfigOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[PutEncryptionConfigOutput]
     }
     
-    @scala.inline
-    implicit class PutEncryptionConfigOutputMutableBuilder[Self <: PutEncryptionConfigOutput] (val x: Self) extends AnyVal {
+    extension [Self <: PutEncryptionConfigOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionConfig(value: UnmarshalledEncryptionConfig): Self = StObject.set(x, "EncryptionConfig", value.asInstanceOf[js.Any])
+      inline def setEncryptionConfig(value: UnmarshalledEncryptionConfig): Self = StObject.set(x, "EncryptionConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionConfigUndefined: Self = StObject.set(x, "EncryptionConfig", js.undefined)
+      inline def setEncryptionConfigUndefined: Self = StObject.set(x, "EncryptionConfig", js.undefined)
     }
   }
 }

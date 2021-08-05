@@ -14,27 +14,22 @@ trait BackgroundPositionProps[TLength] extends StObject {
 }
 object BackgroundPositionProps {
   
-  @scala.inline
-  def apply[TLength](): BackgroundPositionProps[TLength] = {
+  inline def apply[TLength](): BackgroundPositionProps[TLength] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BackgroundPositionProps[TLength]]
   }
   
-  @scala.inline
-  implicit class BackgroundPositionPropsMutableBuilder[Self <: BackgroundPositionProps[?], TLength] (val x: Self & BackgroundPositionProps[TLength]) extends AnyVal {
+  extension [Self <: BackgroundPositionProps[?], TLength](x: Self & BackgroundPositionProps[TLength]) {
     
-    @scala.inline
-    def setBackgroundPosition(
+    inline def setBackgroundPosition(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundPosition<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "backgroundPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundPositionUndefined: Self = StObject.set(x, "backgroundPosition", js.undefined)
+    inline def setBackgroundPositionUndefined: Self = StObject.set(x, "backgroundPosition", js.undefined)
     
-    @scala.inline
-    def setBackgroundPositionVarargs(
+    inline def setBackgroundPositionVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundPosition<TLength> */ js.Any)*
     ): Self = StObject.set(x, "backgroundPosition", js.Array(value :_*))
   }

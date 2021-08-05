@@ -15,7 +15,7 @@ object eventMod {
   @JSImport("wonder.js/dist/es2015/event/object/Event", "Event")
   @js.native
   abstract class Event protected () extends StObject {
-    protected def this(eventName: EEventName) = this()
+    /* protected */ def this(eventName: EEventName) = this()
     
     /* protected */ def copyMember(destination: Event, source: Event, memberArr: js.Array[js.Any]): Event = js.native
     

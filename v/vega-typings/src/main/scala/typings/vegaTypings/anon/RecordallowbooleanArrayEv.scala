@@ -15,19 +15,15 @@ trait RecordallowbooleanArrayEv
 }
 object RecordallowbooleanArrayEv {
   
-  @scala.inline
-  def apply(allow: Boolean | js.Array[EventType]): RecordallowbooleanArrayEv = {
+  inline def apply(allow: Boolean | js.Array[EventType]): RecordallowbooleanArrayEv = {
     val __obj = js.Dynamic.literal(allow = allow.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecordallowbooleanArrayEv]
   }
   
-  @scala.inline
-  implicit class RecordallowbooleanArrayEvMutableBuilder[Self <: RecordallowbooleanArrayEv] (val x: Self) extends AnyVal {
+  extension [Self <: RecordallowbooleanArrayEv](x: Self) {
     
-    @scala.inline
-    def setAllow(value: Boolean | js.Array[EventType]): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
+    inline def setAllow(value: Boolean | js.Array[EventType]): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowVarargs(value: EventType*): Self = StObject.set(x, "allow", js.Array(value :_*))
+    inline def setAllowVarargs(value: EventType*): Self = StObject.set(x, "allow", js.Array(value :_*))
   }
 }

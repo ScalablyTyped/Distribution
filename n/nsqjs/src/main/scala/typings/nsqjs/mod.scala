@@ -65,32 +65,27 @@ object mod {
     @JSImport("nsqjs", "Message.BACKOFF")
     @js.native
     def BACKOFF: String = js.native
-    @scala.inline
-    def BACKOFF_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BACKOFF")(x.asInstanceOf[js.Any])
+    inline def BACKOFF_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BACKOFF")(x.asInstanceOf[js.Any])
     
     @JSImport("nsqjs", "Message.FINISH")
     @js.native
     def FINISH: Double = js.native
-    @scala.inline
-    def FINISH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FINISH")(x.asInstanceOf[js.Any])
+    inline def FINISH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FINISH")(x.asInstanceOf[js.Any])
     
     @JSImport("nsqjs", "Message.REQUEUE")
     @js.native
     def REQUEUE: Double = js.native
-    @scala.inline
-    def REQUEUE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REQUEUE")(x.asInstanceOf[js.Any])
+    inline def REQUEUE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REQUEUE")(x.asInstanceOf[js.Any])
     
     @JSImport("nsqjs", "Message.RESPOND")
     @js.native
     def RESPOND: String = js.native
-    @scala.inline
-    def RESPOND_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RESPOND")(x.asInstanceOf[js.Any])
+    inline def RESPOND_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RESPOND")(x.asInstanceOf[js.Any])
     
     @JSImport("nsqjs", "Message.TOUCH")
     @js.native
     def TOUCH: Double = js.native
-    @scala.inline
-    def TOUCH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOUCH")(x.asInstanceOf[js.Any])
+    inline def TOUCH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOUCH")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("nsqjs", "Reader")
@@ -140,44 +135,37 @@ object mod {
     @JSImport("nsqjs", "Reader.DISCARD")
     @js.native
     def DISCARD: String = js.native
-    @scala.inline
-    def DISCARD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DISCARD")(x.asInstanceOf[js.Any])
+    inline def DISCARD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DISCARD")(x.asInstanceOf[js.Any])
     
     @JSImport("nsqjs", "Reader.ERROR")
     @js.native
     def ERROR: String = js.native
-    @scala.inline
-    def ERROR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERROR")(x.asInstanceOf[js.Any])
+    inline def ERROR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERROR")(x.asInstanceOf[js.Any])
     
     @JSImport("nsqjs", "Reader.MESSAGE")
     @js.native
     def MESSAGE: String = js.native
-    @scala.inline
-    def MESSAGE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MESSAGE")(x.asInstanceOf[js.Any])
+    inline def MESSAGE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MESSAGE")(x.asInstanceOf[js.Any])
     
     @JSImport("nsqjs", "Reader.NOT_READY")
     @js.native
     def NOT_READY: String = js.native
-    @scala.inline
-    def NOT_READY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOT_READY")(x.asInstanceOf[js.Any])
+    inline def NOT_READY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOT_READY")(x.asInstanceOf[js.Any])
     
     @JSImport("nsqjs", "Reader.NSQD_CLOSED")
     @js.native
     def NSQD_CLOSED: String = js.native
-    @scala.inline
-    def NSQD_CLOSED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NSQD_CLOSED")(x.asInstanceOf[js.Any])
+    inline def NSQD_CLOSED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NSQD_CLOSED")(x.asInstanceOf[js.Any])
     
     @JSImport("nsqjs", "Reader.NSQD_CONNECTED")
     @js.native
     def NSQD_CONNECTED: String = js.native
-    @scala.inline
-    def NSQD_CONNECTED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NSQD_CONNECTED")(x.asInstanceOf[js.Any])
+    inline def NSQD_CONNECTED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NSQD_CONNECTED")(x.asInstanceOf[js.Any])
     
     @JSImport("nsqjs", "Reader.READY")
     @js.native
     def READY: String = js.native
-    @scala.inline
-    def READY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("READY")(x.asInstanceOf[js.Any])
+    inline def READY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("READY")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("nsqjs", "Writer")
@@ -253,20 +241,17 @@ object mod {
     @JSImport("nsqjs", "Writer.CLOSED")
     @js.native
     def CLOSED: String = js.native
-    @scala.inline
-    def CLOSED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSED")(x.asInstanceOf[js.Any])
+    inline def CLOSED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSED")(x.asInstanceOf[js.Any])
     
     @JSImport("nsqjs", "Writer.ERROR")
     @js.native
     def ERROR: String = js.native
-    @scala.inline
-    def ERROR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERROR")(x.asInstanceOf[js.Any])
+    inline def ERROR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERROR")(x.asInstanceOf[js.Any])
     
     @JSImport("nsqjs", "Writer.READY")
     @js.native
     def READY: String = js.native
-    @scala.inline
-    def READY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("READY")(x.asInstanceOf[js.Any])
+    inline def READY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("READY")(x.asInstanceOf[js.Any])
   }
   
   trait ConnectionConfigOptions extends StObject {
@@ -303,104 +288,72 @@ object mod {
   }
   object ConnectionConfigOptions {
     
-    @scala.inline
-    def apply(): ConnectionConfigOptions = {
+    inline def apply(): ConnectionConfigOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConnectionConfigOptions]
     }
     
-    @scala.inline
-    implicit class ConnectionConfigOptionsMutableBuilder[Self <: ConnectionConfigOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectionConfigOptions](x: Self) {
       
-      @scala.inline
-      def setAuthSecret(value: String): Self = StObject.set(x, "authSecret", value.asInstanceOf[js.Any])
+      inline def setAuthSecret(value: String): Self = StObject.set(x, "authSecret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthSecretUndefined: Self = StObject.set(x, "authSecret", js.undefined)
+      inline def setAuthSecretUndefined: Self = StObject.set(x, "authSecret", js.undefined)
       
-      @scala.inline
-      def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+      inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+      inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
       
-      @scala.inline
-      def setDeflate(value: Boolean): Self = StObject.set(x, "deflate", value.asInstanceOf[js.Any])
+      inline def setDeflate(value: Boolean): Self = StObject.set(x, "deflate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeflateLevel(value: Double): Self = StObject.set(x, "deflateLevel", value.asInstanceOf[js.Any])
+      inline def setDeflateLevel(value: Double): Self = StObject.set(x, "deflateLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeflateLevelUndefined: Self = StObject.set(x, "deflateLevel", js.undefined)
+      inline def setDeflateLevelUndefined: Self = StObject.set(x, "deflateLevel", js.undefined)
       
-      @scala.inline
-      def setDeflateUndefined: Self = StObject.set(x, "deflate", js.undefined)
+      inline def setDeflateUndefined: Self = StObject.set(x, "deflate", js.undefined)
       
-      @scala.inline
-      def setHeartbeatInterval(value: Double): Self = StObject.set(x, "heartbeatInterval", value.asInstanceOf[js.Any])
+      inline def setHeartbeatInterval(value: Double): Self = StObject.set(x, "heartbeatInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeartbeatIntervalUndefined: Self = StObject.set(x, "heartbeatInterval", js.undefined)
+      inline def setHeartbeatIntervalUndefined: Self = StObject.set(x, "heartbeatInterval", js.undefined)
       
-      @scala.inline
-      def setIdleTimeout(value: Double): Self = StObject.set(x, "idleTimeout", value.asInstanceOf[js.Any])
+      inline def setIdleTimeout(value: Double): Self = StObject.set(x, "idleTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdleTimeoutUndefined: Self = StObject.set(x, "idleTimeout", js.undefined)
+      inline def setIdleTimeoutUndefined: Self = StObject.set(x, "idleTimeout", js.undefined)
       
-      @scala.inline
-      def setMaxInFlight(value: Double): Self = StObject.set(x, "maxInFlight", value.asInstanceOf[js.Any])
+      inline def setMaxInFlight(value: Double): Self = StObject.set(x, "maxInFlight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxInFlightUndefined: Self = StObject.set(x, "maxInFlight", js.undefined)
+      inline def setMaxInFlightUndefined: Self = StObject.set(x, "maxInFlight", js.undefined)
       
-      @scala.inline
-      def setMessageTimeout(value: Double): Self = StObject.set(x, "messageTimeout", value.asInstanceOf[js.Any])
+      inline def setMessageTimeout(value: Double): Self = StObject.set(x, "messageTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageTimeoutUndefined: Self = StObject.set(x, "messageTimeout", js.undefined)
+      inline def setMessageTimeoutUndefined: Self = StObject.set(x, "messageTimeout", js.undefined)
       
-      @scala.inline
-      def setOutputBufferSize(value: Double): Self = StObject.set(x, "outputBufferSize", value.asInstanceOf[js.Any])
+      inline def setOutputBufferSize(value: Double): Self = StObject.set(x, "outputBufferSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputBufferSizeUndefined: Self = StObject.set(x, "outputBufferSize", js.undefined)
+      inline def setOutputBufferSizeUndefined: Self = StObject.set(x, "outputBufferSize", js.undefined)
       
-      @scala.inline
-      def setOutputBufferTimeout(value: Double): Self = StObject.set(x, "outputBufferTimeout", value.asInstanceOf[js.Any])
+      inline def setOutputBufferTimeout(value: Double): Self = StObject.set(x, "outputBufferTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputBufferTimeoutUndefined: Self = StObject.set(x, "outputBufferTimeout", js.undefined)
+      inline def setOutputBufferTimeoutUndefined: Self = StObject.set(x, "outputBufferTimeout", js.undefined)
       
-      @scala.inline
-      def setRequeueDelay(value: Double): Self = StObject.set(x, "requeueDelay", value.asInstanceOf[js.Any])
+      inline def setRequeueDelay(value: Double): Self = StObject.set(x, "requeueDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequeueDelayUndefined: Self = StObject.set(x, "requeueDelay", js.undefined)
+      inline def setRequeueDelayUndefined: Self = StObject.set(x, "requeueDelay", js.undefined)
       
-      @scala.inline
-      def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
+      inline def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
+      inline def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
       
-      @scala.inline
-      def setSnappy(value: Boolean): Self = StObject.set(x, "snappy", value.asInstanceOf[js.Any])
+      inline def setSnappy(value: Boolean): Self = StObject.set(x, "snappy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnappyUndefined: Self = StObject.set(x, "snappy", js.undefined)
+      inline def setSnappyUndefined: Self = StObject.set(x, "snappy", js.undefined)
       
-      @scala.inline
-      def setTls(value: Boolean): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
+      inline def setTls(value: Boolean): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
+      inline def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
       
-      @scala.inline
-      def setTlsVerification(value: Boolean): Self = StObject.set(x, "tlsVerification", value.asInstanceOf[js.Any])
+      inline def setTlsVerification(value: Boolean): Self = StObject.set(x, "tlsVerification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTlsVerificationUndefined: Self = StObject.set(x, "tlsVerification", js.undefined)
+      inline def setTlsVerificationUndefined: Self = StObject.set(x, "tlsVerification", js.undefined)
     }
   }
   
@@ -426,68 +379,48 @@ object mod {
   }
   object ReaderConnectionConfigOptions {
     
-    @scala.inline
-    def apply(): ReaderConnectionConfigOptions = {
+    inline def apply(): ReaderConnectionConfigOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReaderConnectionConfigOptions]
     }
     
-    @scala.inline
-    implicit class ReaderConnectionConfigOptionsMutableBuilder[Self <: ReaderConnectionConfigOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ReaderConnectionConfigOptions](x: Self) {
       
-      @scala.inline
-      def setLookupdHTTPAddresses(value: String | js.Array[String]): Self = StObject.set(x, "lookupdHTTPAddresses", value.asInstanceOf[js.Any])
+      inline def setLookupdHTTPAddresses(value: String | js.Array[String]): Self = StObject.set(x, "lookupdHTTPAddresses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLookupdHTTPAddressesUndefined: Self = StObject.set(x, "lookupdHTTPAddresses", js.undefined)
+      inline def setLookupdHTTPAddressesUndefined: Self = StObject.set(x, "lookupdHTTPAddresses", js.undefined)
       
-      @scala.inline
-      def setLookupdHTTPAddressesVarargs(value: String*): Self = StObject.set(x, "lookupdHTTPAddresses", js.Array(value :_*))
+      inline def setLookupdHTTPAddressesVarargs(value: String*): Self = StObject.set(x, "lookupdHTTPAddresses", js.Array(value :_*))
       
-      @scala.inline
-      def setLookupdPollInterval(value: Double): Self = StObject.set(x, "lookupdPollInterval", value.asInstanceOf[js.Any])
+      inline def setLookupdPollInterval(value: Double): Self = StObject.set(x, "lookupdPollInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLookupdPollIntervalUndefined: Self = StObject.set(x, "lookupdPollInterval", js.undefined)
+      inline def setLookupdPollIntervalUndefined: Self = StObject.set(x, "lookupdPollInterval", js.undefined)
       
-      @scala.inline
-      def setLookupdPollJitter(value: Double): Self = StObject.set(x, "lookupdPollJitter", value.asInstanceOf[js.Any])
+      inline def setLookupdPollJitter(value: Double): Self = StObject.set(x, "lookupdPollJitter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLookupdPollJitterUndefined: Self = StObject.set(x, "lookupdPollJitter", js.undefined)
+      inline def setLookupdPollJitterUndefined: Self = StObject.set(x, "lookupdPollJitter", js.undefined)
       
-      @scala.inline
-      def setLowRdyTimeout(value: Double): Self = StObject.set(x, "lowRdyTimeout", value.asInstanceOf[js.Any])
+      inline def setLowRdyTimeout(value: Double): Self = StObject.set(x, "lowRdyTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLowRdyTimeoutUndefined: Self = StObject.set(x, "lowRdyTimeout", js.undefined)
+      inline def setLowRdyTimeoutUndefined: Self = StObject.set(x, "lowRdyTimeout", js.undefined)
       
-      @scala.inline
-      def setMaxAttempts(value: Double): Self = StObject.set(x, "maxAttempts", value.asInstanceOf[js.Any])
+      inline def setMaxAttempts(value: Double): Self = StObject.set(x, "maxAttempts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAttemptsUndefined: Self = StObject.set(x, "maxAttempts", js.undefined)
+      inline def setMaxAttemptsUndefined: Self = StObject.set(x, "maxAttempts", js.undefined)
       
-      @scala.inline
-      def setMaxBackoffDuration(value: Double): Self = StObject.set(x, "maxBackoffDuration", value.asInstanceOf[js.Any])
+      inline def setMaxBackoffDuration(value: Double): Self = StObject.set(x, "maxBackoffDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxBackoffDurationUndefined: Self = StObject.set(x, "maxBackoffDuration", js.undefined)
+      inline def setMaxBackoffDurationUndefined: Self = StObject.set(x, "maxBackoffDuration", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNsqdTCPAddresses(value: String | js.Array[String]): Self = StObject.set(x, "nsqdTCPAddresses", value.asInstanceOf[js.Any])
+      inline def setNsqdTCPAddresses(value: String | js.Array[String]): Self = StObject.set(x, "nsqdTCPAddresses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNsqdTCPAddressesUndefined: Self = StObject.set(x, "nsqdTCPAddresses", js.undefined)
+      inline def setNsqdTCPAddressesUndefined: Self = StObject.set(x, "nsqdTCPAddresses", js.undefined)
       
-      @scala.inline
-      def setNsqdTCPAddressesVarargs(value: String*): Self = StObject.set(x, "nsqdTCPAddresses", js.Array(value :_*))
+      inline def setNsqdTCPAddressesVarargs(value: String*): Self = StObject.set(x, "nsqdTCPAddresses", js.Array(value :_*))
     }
   }
 }

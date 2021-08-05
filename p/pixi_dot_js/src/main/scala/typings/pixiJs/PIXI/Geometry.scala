@@ -104,7 +104,7 @@ trait Geometry extends StObject {
     * @protected
     * @type {object}
     */
-  var glVertexArrayObjects: js.Any = js.native
+  /* protected */ var glVertexArrayObjects: js.Any = js.native
   
   /**
     * Number of instances in this geometry, pass it to `GeometrySystem.draw()`

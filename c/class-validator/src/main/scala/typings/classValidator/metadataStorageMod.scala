@@ -33,7 +33,7 @@ object metadataStorageMod {
       */
     def addValidationSchema(schema: ValidationSchema): Unit = js.native
     
-    var constraintMetadatas: js.Any = js.native
+    /* private */ var constraintMetadatas: js.Any = js.native
     
     /**
       * Gets all validation metadatas for the given object with the given groups.
@@ -53,9 +53,8 @@ object metadataStorageMod {
     
     val hasValidationMetaData: Boolean = js.native
     
-    var validationMetadatas: js.Any = js.native
+    /* private */ var validationMetadatas: js.Any = js.native
   }
   
-  @scala.inline
-  def getMetadataStorage(): MetadataStorage = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadataStorage")().asInstanceOf[MetadataStorage]
+  inline def getMetadataStorage(): MetadataStorage = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadataStorage")().asInstanceOf[MetadataStorage]
 }

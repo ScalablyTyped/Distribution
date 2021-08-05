@@ -23,22 +23,17 @@ trait SettingsCommand extends StObject {
 }
 object SettingsCommand {
   
-  @scala.inline
-  def apply(id: js.Any, invoked: /* command */ IUICommand => Unit, label: String): SettingsCommand = {
+  inline def apply(id: js.Any, invoked: /* command */ IUICommand => Unit, label: String): SettingsCommand = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], invoked = js.Any.fromFunction1(invoked), label = label.asInstanceOf[js.Any])
     __obj.asInstanceOf[SettingsCommand]
   }
   
-  @scala.inline
-  implicit class SettingsCommandMutableBuilder[Self <: SettingsCommand] (val x: Self) extends AnyVal {
+  extension [Self <: SettingsCommand](x: Self) {
     
-    @scala.inline
-    def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvoked(value: /* command */ IUICommand => Unit): Self = StObject.set(x, "invoked", js.Any.fromFunction1(value))
+    inline def setInvoked(value: /* command */ IUICommand => Unit): Self = StObject.set(x, "invoked", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
   }
 }

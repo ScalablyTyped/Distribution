@@ -20,20 +20,16 @@ object codeFrameCodeFrameMod {
   }
   object CodeFrameProps {
     
-    @scala.inline
-    def apply(codeFrame: String, stackFrame: StackFrame): CodeFrameProps = {
+    inline def apply(codeFrame: String, stackFrame: StackFrame): CodeFrameProps = {
       val __obj = js.Dynamic.literal(codeFrame = codeFrame.asInstanceOf[js.Any], stackFrame = stackFrame.asInstanceOf[js.Any])
       __obj.asInstanceOf[CodeFrameProps]
     }
     
-    @scala.inline
-    implicit class CodeFramePropsMutableBuilder[Self <: CodeFrameProps] (val x: Self) extends AnyVal {
+    extension [Self <: CodeFrameProps](x: Self) {
       
-      @scala.inline
-      def setCodeFrame(value: String): Self = StObject.set(x, "codeFrame", value.asInstanceOf[js.Any])
+      inline def setCodeFrame(value: String): Self = StObject.set(x, "codeFrame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackFrame(value: StackFrame): Self = StObject.set(x, "stackFrame", value.asInstanceOf[js.Any])
+      inline def setStackFrame(value: StackFrame): Self = StObject.set(x, "stackFrame", value.asInstanceOf[js.Any])
     }
   }
 }

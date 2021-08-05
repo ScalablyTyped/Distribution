@@ -12,18 +12,17 @@ trait WeightedGraph extends StObject {
   
   def adj(v: Double): js.Array[Edge]
   
-  var adjList: js.Array[js.Array[Edge]]
+  /* protected */ var adjList: js.Array[js.Array[Edge]]
   
   def edge(v: Double, w: Double): Edge | Null
   
   def node(v: Double): Node
   
-  var nodeInfo: js.Any
+  /* private */ var nodeInfo: js.Any
 }
 object WeightedGraph {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     V: Double,
     addEdge: Edge => Unit,
     adj: Double => js.Array[Edge],
@@ -36,31 +35,22 @@ object WeightedGraph {
     __obj.asInstanceOf[WeightedGraph]
   }
   
-  @scala.inline
-  implicit class WeightedGraphMutableBuilder[Self <: WeightedGraph] (val x: Self) extends AnyVal {
+  extension [Self <: WeightedGraph](x: Self) {
     
-    @scala.inline
-    def setAddEdge(value: Edge => Unit): Self = StObject.set(x, "addEdge", js.Any.fromFunction1(value))
+    inline def setAddEdge(value: Edge => Unit): Self = StObject.set(x, "addEdge", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAdj(value: Double => js.Array[Edge]): Self = StObject.set(x, "adj", js.Any.fromFunction1(value))
+    inline def setAdj(value: Double => js.Array[Edge]): Self = StObject.set(x, "adj", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAdjList(value: js.Array[js.Array[Edge]]): Self = StObject.set(x, "adjList", value.asInstanceOf[js.Any])
+    inline def setAdjList(value: js.Array[js.Array[Edge]]): Self = StObject.set(x, "adjList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdjListVarargs(value: js.Array[Edge]*): Self = StObject.set(x, "adjList", js.Array(value :_*))
+    inline def setAdjListVarargs(value: js.Array[Edge]*): Self = StObject.set(x, "adjList", js.Array(value :_*))
     
-    @scala.inline
-    def setEdge(value: (Double, Double) => Edge | Null): Self = StObject.set(x, "edge", js.Any.fromFunction2(value))
+    inline def setEdge(value: (Double, Double) => Edge | Null): Self = StObject.set(x, "edge", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setNode(value: Double => Node): Self = StObject.set(x, "node", js.Any.fromFunction1(value))
+    inline def setNode(value: Double => Node): Self = StObject.set(x, "node", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNodeInfo(value: js.Any): Self = StObject.set(x, "nodeInfo", value.asInstanceOf[js.Any])
+    inline def setNodeInfo(value: js.Any): Self = StObject.set(x, "nodeInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setV(value: Double): Self = StObject.set(x, "V", value.asInstanceOf[js.Any])
+    inline def setV(value: Double): Self = StObject.set(x, "V", value.asInstanceOf[js.Any])
   }
 }

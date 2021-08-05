@@ -8,6 +8,5 @@ object labeledStreamSplicerStrings {
   
   @js.native
   sealed trait close extends StObject
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
+  inline def close: close = "close".asInstanceOf[close]
 }

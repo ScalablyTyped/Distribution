@@ -86,21 +86,16 @@ object appMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): App = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[App]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): App = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[App]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AppState): App = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[App]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AppState, opts: CustomResourceOptions): App = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[App]
+    inline def get(name: String, id: Input[ID]): App = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[App]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): App = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[App]
+    inline def get(name: String, id: Input[ID], state: AppState): App = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[App]
+    inline def get(name: String, id: Input[ID], state: AppState, opts: CustomResourceOptions): App = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[App]
     
     /**
       * Returns true if the given object is an instance of App.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/app.App */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/pinpoint/app.App */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/app.App */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/pinpoint/app.App */ Boolean]
   }
   
   trait AppArgs extends StObject {
@@ -137,50 +132,36 @@ object appMod {
   }
   object AppArgs {
     
-    @scala.inline
-    def apply(): AppArgs = {
+    inline def apply(): AppArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AppArgs]
     }
     
-    @scala.inline
-    implicit class AppArgsMutableBuilder[Self <: AppArgs] (val x: Self) extends AnyVal {
+    extension [Self <: AppArgs](x: Self) {
       
-      @scala.inline
-      def setCampaignHook(value: Input[typings.pulumiAws.inputMod.pinpoint.AppCampaignHook]): Self = StObject.set(x, "campaignHook", value.asInstanceOf[js.Any])
+      inline def setCampaignHook(value: Input[typings.pulumiAws.inputMod.pinpoint.AppCampaignHook]): Self = StObject.set(x, "campaignHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCampaignHookUndefined: Self = StObject.set(x, "campaignHook", js.undefined)
+      inline def setCampaignHookUndefined: Self = StObject.set(x, "campaignHook", js.undefined)
       
-      @scala.inline
-      def setLimits(value: Input[typings.pulumiAws.inputMod.pinpoint.AppLimits]): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
+      inline def setLimits(value: Input[typings.pulumiAws.inputMod.pinpoint.AppLimits]): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitsUndefined: Self = StObject.set(x, "limits", js.undefined)
+      inline def setLimitsUndefined: Self = StObject.set(x, "limits", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
+      inline def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
+      inline def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setQuietTime(value: Input[typings.pulumiAws.inputMod.pinpoint.AppQuietTime]): Self = StObject.set(x, "quietTime", value.asInstanceOf[js.Any])
+      inline def setQuietTime(value: Input[typings.pulumiAws.inputMod.pinpoint.AppQuietTime]): Self = StObject.set(x, "quietTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuietTimeUndefined: Self = StObject.set(x, "quietTime", js.undefined)
+      inline def setQuietTimeUndefined: Self = StObject.set(x, "quietTime", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -228,62 +209,44 @@ object appMod {
   }
   object AppState {
     
-    @scala.inline
-    def apply(): AppState = {
+    inline def apply(): AppState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AppState]
     }
     
-    @scala.inline
-    implicit class AppStateMutableBuilder[Self <: AppState] (val x: Self) extends AnyVal {
+    extension [Self <: AppState](x: Self) {
       
-      @scala.inline
-      def setApplicationId(value: Input[String]): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
+      inline def setApplicationId(value: Input[String]): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationIdUndefined: Self = StObject.set(x, "applicationId", js.undefined)
+      inline def setApplicationIdUndefined: Self = StObject.set(x, "applicationId", js.undefined)
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setCampaignHook(value: Input[typings.pulumiAws.inputMod.pinpoint.AppCampaignHook]): Self = StObject.set(x, "campaignHook", value.asInstanceOf[js.Any])
+      inline def setCampaignHook(value: Input[typings.pulumiAws.inputMod.pinpoint.AppCampaignHook]): Self = StObject.set(x, "campaignHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCampaignHookUndefined: Self = StObject.set(x, "campaignHook", js.undefined)
+      inline def setCampaignHookUndefined: Self = StObject.set(x, "campaignHook", js.undefined)
       
-      @scala.inline
-      def setLimits(value: Input[typings.pulumiAws.inputMod.pinpoint.AppLimits]): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
+      inline def setLimits(value: Input[typings.pulumiAws.inputMod.pinpoint.AppLimits]): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitsUndefined: Self = StObject.set(x, "limits", js.undefined)
+      inline def setLimitsUndefined: Self = StObject.set(x, "limits", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
+      inline def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
+      inline def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setQuietTime(value: Input[typings.pulumiAws.inputMod.pinpoint.AppQuietTime]): Self = StObject.set(x, "quietTime", value.asInstanceOf[js.Any])
+      inline def setQuietTime(value: Input[typings.pulumiAws.inputMod.pinpoint.AppQuietTime]): Self = StObject.set(x, "quietTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuietTimeUndefined: Self = StObject.set(x, "quietTime", js.undefined)
+      inline def setQuietTimeUndefined: Self = StObject.set(x, "quietTime", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

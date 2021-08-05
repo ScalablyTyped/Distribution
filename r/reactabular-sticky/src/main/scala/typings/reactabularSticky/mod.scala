@@ -49,26 +49,20 @@ object mod {
   }
   object StickyBodyProps {
     
-    @scala.inline
-    def apply(): StickyBodyProps = {
+    inline def apply(): StickyBodyProps = {
       val __obj = js.Dynamic.literal(tableHeader = null)
       __obj.asInstanceOf[StickyBodyProps]
     }
     
-    @scala.inline
-    implicit class StickyBodyPropsMutableBuilder[Self <: StickyBodyProps] (val x: Self) extends AnyVal {
+    extension [Self <: StickyBodyProps](x: Self) {
       
-      @scala.inline
-      def setOnScroll(value: /* e */ PartialUIEvent => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+      inline def setOnScroll(value: /* e */ PartialUIEvent => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
+      inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
       
-      @scala.inline
-      def setTableHeader(value: HTMLElement): Self = StObject.set(x, "tableHeader", value.asInstanceOf[js.Any])
+      inline def setTableHeader(value: HTMLElement): Self = StObject.set(x, "tableHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableHeaderNull: Self = StObject.set(x, "tableHeader", null)
+      inline def setTableHeaderNull: Self = StObject.set(x, "tableHeader", null)
     }
   }
   
@@ -80,26 +74,20 @@ object mod {
   }
   object StickyHeaderProps {
     
-    @scala.inline
-    def apply(): StickyHeaderProps = {
+    inline def apply(): StickyHeaderProps = {
       val __obj = js.Dynamic.literal(tableBody = null)
       __obj.asInstanceOf[StickyHeaderProps]
     }
     
-    @scala.inline
-    implicit class StickyHeaderPropsMutableBuilder[Self <: StickyHeaderProps] (val x: Self) extends AnyVal {
+    extension [Self <: StickyHeaderProps](x: Self) {
       
-      @scala.inline
-      def setOnScroll(value: /* e */ PartialUIEvent => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+      inline def setOnScroll(value: /* e */ PartialUIEvent => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
+      inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
       
-      @scala.inline
-      def setTableBody(value: HTMLElement): Self = StObject.set(x, "tableBody", value.asInstanceOf[js.Any])
+      inline def setTableBody(value: HTMLElement): Self = StObject.set(x, "tableBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableBodyNull: Self = StObject.set(x, "tableBody", null)
+      inline def setTableBodyNull: Self = StObject.set(x, "tableBody", null)
     }
   }
 }

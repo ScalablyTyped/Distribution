@@ -76,88 +76,61 @@ trait SchemaScanConfig extends StObject {
 }
 object SchemaScanConfig {
   
-  @scala.inline
-  def apply(): SchemaScanConfig = {
+  inline def apply(): SchemaScanConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaScanConfig]
   }
   
-  @scala.inline
-  implicit class SchemaScanConfigMutableBuilder[Self <: SchemaScanConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaScanConfig](x: Self) {
     
-    @scala.inline
-    def setAuthentication(value: SchemaAuthentication): Self = StObject.set(x, "authentication", value.asInstanceOf[js.Any])
+    inline def setAuthentication(value: SchemaAuthentication): Self = StObject.set(x, "authentication", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationUndefined: Self = StObject.set(x, "authentication", js.undefined)
+    inline def setAuthenticationUndefined: Self = StObject.set(x, "authentication", js.undefined)
     
-    @scala.inline
-    def setBlacklistPatterns(value: js.Array[String]): Self = StObject.set(x, "blacklistPatterns", value.asInstanceOf[js.Any])
+    inline def setBlacklistPatterns(value: js.Array[String]): Self = StObject.set(x, "blacklistPatterns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlacklistPatternsUndefined: Self = StObject.set(x, "blacklistPatterns", js.undefined)
+    inline def setBlacklistPatternsUndefined: Self = StObject.set(x, "blacklistPatterns", js.undefined)
     
-    @scala.inline
-    def setBlacklistPatternsVarargs(value: String*): Self = StObject.set(x, "blacklistPatterns", js.Array(value :_*))
+    inline def setBlacklistPatternsVarargs(value: String*): Self = StObject.set(x, "blacklistPatterns", js.Array(value :_*))
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setExportToSecurityCommandCenter(value: String): Self = StObject.set(x, "exportToSecurityCommandCenter", value.asInstanceOf[js.Any])
+    inline def setExportToSecurityCommandCenter(value: String): Self = StObject.set(x, "exportToSecurityCommandCenter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportToSecurityCommandCenterUndefined: Self = StObject.set(x, "exportToSecurityCommandCenter", js.undefined)
+    inline def setExportToSecurityCommandCenterUndefined: Self = StObject.set(x, "exportToSecurityCommandCenter", js.undefined)
     
-    @scala.inline
-    def setLatestRun(value: SchemaScanRun): Self = StObject.set(x, "latestRun", value.asInstanceOf[js.Any])
+    inline def setLatestRun(value: SchemaScanRun): Self = StObject.set(x, "latestRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatestRunUndefined: Self = StObject.set(x, "latestRun", js.undefined)
+    inline def setLatestRunUndefined: Self = StObject.set(x, "latestRun", js.undefined)
     
-    @scala.inline
-    def setMaxQps(value: Double): Self = StObject.set(x, "maxQps", value.asInstanceOf[js.Any])
+    inline def setMaxQps(value: Double): Self = StObject.set(x, "maxQps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxQpsUndefined: Self = StObject.set(x, "maxQps", js.undefined)
+    inline def setMaxQpsUndefined: Self = StObject.set(x, "maxQps", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSchedule(value: SchemaSchedule): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
+    inline def setSchedule(value: SchemaSchedule): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
+    inline def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
     
-    @scala.inline
-    def setStartingUrls(value: js.Array[String]): Self = StObject.set(x, "startingUrls", value.asInstanceOf[js.Any])
+    inline def setStartingUrls(value: js.Array[String]): Self = StObject.set(x, "startingUrls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartingUrlsUndefined: Self = StObject.set(x, "startingUrls", js.undefined)
+    inline def setStartingUrlsUndefined: Self = StObject.set(x, "startingUrls", js.undefined)
     
-    @scala.inline
-    def setStartingUrlsVarargs(value: String*): Self = StObject.set(x, "startingUrls", js.Array(value :_*))
+    inline def setStartingUrlsVarargs(value: String*): Self = StObject.set(x, "startingUrls", js.Array(value :_*))
     
-    @scala.inline
-    def setTargetPlatforms(value: js.Array[String]): Self = StObject.set(x, "targetPlatforms", value.asInstanceOf[js.Any])
+    inline def setTargetPlatforms(value: js.Array[String]): Self = StObject.set(x, "targetPlatforms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetPlatformsUndefined: Self = StObject.set(x, "targetPlatforms", js.undefined)
+    inline def setTargetPlatformsUndefined: Self = StObject.set(x, "targetPlatforms", js.undefined)
     
-    @scala.inline
-    def setTargetPlatformsVarargs(value: String*): Self = StObject.set(x, "targetPlatforms", js.Array(value :_*))
+    inline def setTargetPlatformsVarargs(value: String*): Self = StObject.set(x, "targetPlatforms", js.Array(value :_*))
     
-    @scala.inline
-    def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
+    inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
+    inline def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
   }
 }

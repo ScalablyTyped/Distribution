@@ -22,22 +22,17 @@ trait TopologySelectorLabelRequirement extends StObject {
 }
 object TopologySelectorLabelRequirement {
   
-  @scala.inline
-  def apply(key: Input[String], values: Input[js.Array[Input[String]]]): TopologySelectorLabelRequirement = {
+  inline def apply(key: Input[String], values: Input[js.Array[Input[String]]]): TopologySelectorLabelRequirement = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopologySelectorLabelRequirement]
   }
   
-  @scala.inline
-  implicit class TopologySelectorLabelRequirementMutableBuilder[Self <: TopologySelectorLabelRequirement] (val x: Self) extends AnyVal {
+  extension [Self <: TopologySelectorLabelRequirement](x: Self) {
     
-    @scala.inline
-    def setKey(value: Input[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Input[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: Input[String]*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Input[String]*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

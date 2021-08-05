@@ -28,34 +28,25 @@ trait BlockDeviceMapping extends StObject {
 }
 object BlockDeviceMapping {
   
-  @scala.inline
-  def apply(DeviceName: XmlStringMaxLen255): BlockDeviceMapping = {
+  inline def apply(DeviceName: XmlStringMaxLen255): BlockDeviceMapping = {
     val __obj = js.Dynamic.literal(DeviceName = DeviceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockDeviceMapping]
   }
   
-  @scala.inline
-  implicit class BlockDeviceMappingMutableBuilder[Self <: BlockDeviceMapping] (val x: Self) extends AnyVal {
+  extension [Self <: BlockDeviceMapping](x: Self) {
     
-    @scala.inline
-    def setDeviceName(value: XmlStringMaxLen255): Self = StObject.set(x, "DeviceName", value.asInstanceOf[js.Any])
+    inline def setDeviceName(value: XmlStringMaxLen255): Self = StObject.set(x, "DeviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEbs(value: Ebs): Self = StObject.set(x, "Ebs", value.asInstanceOf[js.Any])
+    inline def setEbs(value: Ebs): Self = StObject.set(x, "Ebs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEbsUndefined: Self = StObject.set(x, "Ebs", js.undefined)
+    inline def setEbsUndefined: Self = StObject.set(x, "Ebs", js.undefined)
     
-    @scala.inline
-    def setNoDevice(value: NoDevice): Self = StObject.set(x, "NoDevice", value.asInstanceOf[js.Any])
+    inline def setNoDevice(value: NoDevice): Self = StObject.set(x, "NoDevice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoDeviceUndefined: Self = StObject.set(x, "NoDevice", js.undefined)
+    inline def setNoDeviceUndefined: Self = StObject.set(x, "NoDevice", js.undefined)
     
-    @scala.inline
-    def setVirtualName(value: XmlStringMaxLen255): Self = StObject.set(x, "VirtualName", value.asInstanceOf[js.Any])
+    inline def setVirtualName(value: XmlStringMaxLen255): Self = StObject.set(x, "VirtualName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualNameUndefined: Self = StObject.set(x, "VirtualName", js.undefined)
+    inline def setVirtualNameUndefined: Self = StObject.set(x, "VirtualName", js.undefined)
   }
 }

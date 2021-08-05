@@ -58,70 +58,49 @@ trait ADMChannelResponse extends StObject {
 }
 object ADMChannelResponse {
   
-  @scala.inline
-  def apply(Platform: string): ADMChannelResponse = {
+  inline def apply(Platform: string): ADMChannelResponse = {
     val __obj = js.Dynamic.literal(Platform = Platform.asInstanceOf[js.Any])
     __obj.asInstanceOf[ADMChannelResponse]
   }
   
-  @scala.inline
-  implicit class ADMChannelResponseMutableBuilder[Self <: ADMChannelResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ADMChannelResponse](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationIdUndefined: Self = StObject.set(x, "ApplicationId", js.undefined)
+    inline def setApplicationIdUndefined: Self = StObject.set(x, "ApplicationId", js.undefined)
     
-    @scala.inline
-    def setCreationDate(value: string): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: string): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
     
-    @scala.inline
-    def setHasCredential(value: boolean): Self = StObject.set(x, "HasCredential", value.asInstanceOf[js.Any])
+    inline def setHasCredential(value: boolean): Self = StObject.set(x, "HasCredential", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasCredentialUndefined: Self = StObject.set(x, "HasCredential", js.undefined)
+    inline def setHasCredentialUndefined: Self = StObject.set(x, "HasCredential", js.undefined)
     
-    @scala.inline
-    def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setIsArchived(value: boolean): Self = StObject.set(x, "IsArchived", value.asInstanceOf[js.Any])
+    inline def setIsArchived(value: boolean): Self = StObject.set(x, "IsArchived", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsArchivedUndefined: Self = StObject.set(x, "IsArchived", js.undefined)
+    inline def setIsArchivedUndefined: Self = StObject.set(x, "IsArchived", js.undefined)
     
-    @scala.inline
-    def setLastModifiedBy(value: string): Self = StObject.set(x, "LastModifiedBy", value.asInstanceOf[js.Any])
+    inline def setLastModifiedBy(value: string): Self = StObject.set(x, "LastModifiedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedByUndefined: Self = StObject.set(x, "LastModifiedBy", js.undefined)
+    inline def setLastModifiedByUndefined: Self = StObject.set(x, "LastModifiedBy", js.undefined)
     
-    @scala.inline
-    def setLastModifiedDate(value: string): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: string): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
+    inline def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
     
-    @scala.inline
-    def setPlatform(value: string): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: string): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: integer): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: integer): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

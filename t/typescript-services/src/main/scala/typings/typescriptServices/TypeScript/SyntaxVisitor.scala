@@ -12,8 +12,7 @@ trait SyntaxVisitor
 }
 object SyntaxVisitor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     defaultVisit: ISyntaxNodeOrToken => js.Any,
     visitArgumentList: ArgumentListSyntax => js.Any,
     visitArrayLiteralExpression: ArrayLiteralExpressionSyntax => js.Any,
@@ -106,10 +105,8 @@ object SyntaxVisitor {
     __obj.asInstanceOf[SyntaxVisitor]
   }
   
-  @scala.inline
-  implicit class SyntaxVisitorMutableBuilder[Self <: SyntaxVisitor] (val x: Self) extends AnyVal {
+  extension [Self <: SyntaxVisitor](x: Self) {
     
-    @scala.inline
-    def setDefaultVisit(value: ISyntaxNodeOrToken => js.Any): Self = StObject.set(x, "defaultVisit", js.Any.fromFunction1(value))
+    inline def setDefaultVisit(value: ISyntaxNodeOrToken => js.Any): Self = StObject.set(x, "defaultVisit", js.Any.fromFunction1(value))
   }
 }

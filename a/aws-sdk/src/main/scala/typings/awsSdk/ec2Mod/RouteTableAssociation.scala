@@ -38,49 +38,35 @@ trait RouteTableAssociation extends StObject {
 }
 object RouteTableAssociation {
   
-  @scala.inline
-  def apply(): RouteTableAssociation = {
+  inline def apply(): RouteTableAssociation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RouteTableAssociation]
   }
   
-  @scala.inline
-  implicit class RouteTableAssociationMutableBuilder[Self <: RouteTableAssociation] (val x: Self) extends AnyVal {
+  extension [Self <: RouteTableAssociation](x: Self) {
     
-    @scala.inline
-    def setAssociationState(value: RouteTableAssociationState): Self = StObject.set(x, "AssociationState", value.asInstanceOf[js.Any])
+    inline def setAssociationState(value: RouteTableAssociationState): Self = StObject.set(x, "AssociationState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationStateUndefined: Self = StObject.set(x, "AssociationState", js.undefined)
+    inline def setAssociationStateUndefined: Self = StObject.set(x, "AssociationState", js.undefined)
     
-    @scala.inline
-    def setGatewayId(value: String): Self = StObject.set(x, "GatewayId", value.asInstanceOf[js.Any])
+    inline def setGatewayId(value: String): Self = StObject.set(x, "GatewayId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayIdUndefined: Self = StObject.set(x, "GatewayId", js.undefined)
+    inline def setGatewayIdUndefined: Self = StObject.set(x, "GatewayId", js.undefined)
     
-    @scala.inline
-    def setMain(value: Boolean): Self = StObject.set(x, "Main", value.asInstanceOf[js.Any])
+    inline def setMain(value: Boolean): Self = StObject.set(x, "Main", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMainUndefined: Self = StObject.set(x, "Main", js.undefined)
+    inline def setMainUndefined: Self = StObject.set(x, "Main", js.undefined)
     
-    @scala.inline
-    def setRouteTableAssociationId(value: String): Self = StObject.set(x, "RouteTableAssociationId", value.asInstanceOf[js.Any])
+    inline def setRouteTableAssociationId(value: String): Self = StObject.set(x, "RouteTableAssociationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteTableAssociationIdUndefined: Self = StObject.set(x, "RouteTableAssociationId", js.undefined)
+    inline def setRouteTableAssociationIdUndefined: Self = StObject.set(x, "RouteTableAssociationId", js.undefined)
     
-    @scala.inline
-    def setRouteTableId(value: String): Self = StObject.set(x, "RouteTableId", value.asInstanceOf[js.Any])
+    inline def setRouteTableId(value: String): Self = StObject.set(x, "RouteTableId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteTableIdUndefined: Self = StObject.set(x, "RouteTableId", js.undefined)
+    inline def setRouteTableIdUndefined: Self = StObject.set(x, "RouteTableId", js.undefined)
     
-    @scala.inline
-    def setSubnetId(value: String): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
+    inline def setSubnetId(value: String): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetIdUndefined: Self = StObject.set(x, "SubnetId", js.undefined)
+    inline def setSubnetIdUndefined: Self = StObject.set(x, "SubnetId", js.undefined)
   }
 }

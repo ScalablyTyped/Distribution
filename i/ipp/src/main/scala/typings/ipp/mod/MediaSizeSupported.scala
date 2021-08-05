@@ -12,25 +12,19 @@ trait MediaSizeSupported extends StObject {
 }
 object MediaSizeSupported {
   
-  @scala.inline
-  def apply(): MediaSizeSupported = {
+  inline def apply(): MediaSizeSupported = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MediaSizeSupported]
   }
   
-  @scala.inline
-  implicit class MediaSizeSupportedMutableBuilder[Self <: MediaSizeSupported] (val x: Self) extends AnyVal {
+  extension [Self <: MediaSizeSupported](x: Self) {
     
-    @scala.inline
-    def `setX-dimension`(value: Double | String): Self = StObject.set(x, "x-dimension", value.asInstanceOf[js.Any])
+    inline def `setX-dimension`(value: Double | String): Self = StObject.set(x, "x-dimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setX-dimensionUndefined`: Self = StObject.set(x, "x-dimension", js.undefined)
+    inline def `setX-dimensionUndefined`: Self = StObject.set(x, "x-dimension", js.undefined)
     
-    @scala.inline
-    def `setY-dimension`(value: Double | String): Self = StObject.set(x, "y-dimension", value.asInstanceOf[js.Any])
+    inline def `setY-dimension`(value: Double | String): Self = StObject.set(x, "y-dimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setY-dimensionUndefined`: Self = StObject.set(x, "y-dimension", js.undefined)
+    inline def `setY-dimensionUndefined`: Self = StObject.set(x, "y-dimension", js.undefined)
   }
 }

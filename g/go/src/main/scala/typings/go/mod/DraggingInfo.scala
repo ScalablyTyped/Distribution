@@ -14,16 +14,13 @@ trait DraggingInfo extends StObject {
 }
 object DraggingInfo {
   
-  @scala.inline
-  def apply(point: Point): DraggingInfo = {
+  inline def apply(point: Point): DraggingInfo = {
     val __obj = js.Dynamic.literal(point = point.asInstanceOf[js.Any])
     __obj.asInstanceOf[DraggingInfo]
   }
   
-  @scala.inline
-  implicit class DraggingInfoMutableBuilder[Self <: DraggingInfo] (val x: Self) extends AnyVal {
+  extension [Self <: DraggingInfo](x: Self) {
     
-    @scala.inline
-    def setPoint(value: Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    inline def setPoint(value: Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
   }
 }

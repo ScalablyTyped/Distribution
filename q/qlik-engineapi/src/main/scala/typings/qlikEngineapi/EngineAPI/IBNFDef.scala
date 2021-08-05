@@ -118,8 +118,7 @@ trait IBNFDef extends StObject {
 }
 object IBNFDef {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qBnf: js.Array[Double],
     qFG: FunctionGroupType,
     qHelpId: Double,
@@ -133,82 +132,56 @@ object IBNFDef {
     __obj.asInstanceOf[IBNFDef]
   }
   
-  @scala.inline
-  implicit class IBNFDefMutableBuilder[Self <: IBNFDef] (val x: Self) extends AnyVal {
+  extension [Self <: IBNFDef](x: Self) {
     
-    @scala.inline
-    def setQAggrFunc(value: Boolean): Self = StObject.set(x, "qAggrFunc", value.asInstanceOf[js.Any])
+    inline def setQAggrFunc(value: Boolean): Self = StObject.set(x, "qAggrFunc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQAggrFuncUndefined: Self = StObject.set(x, "qAggrFunc", js.undefined)
+    inline def setQAggrFuncUndefined: Self = StObject.set(x, "qAggrFunc", js.undefined)
     
-    @scala.inline
-    def setQBnf(value: js.Array[Double]): Self = StObject.set(x, "qBnf", value.asInstanceOf[js.Any])
+    inline def setQBnf(value: js.Array[Double]): Self = StObject.set(x, "qBnf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQBnfLiteral(value: Boolean): Self = StObject.set(x, "qBnfLiteral", value.asInstanceOf[js.Any])
+    inline def setQBnfLiteral(value: Boolean): Self = StObject.set(x, "qBnfLiteral", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQBnfLiteralUndefined: Self = StObject.set(x, "qBnfLiteral", js.undefined)
+    inline def setQBnfLiteralUndefined: Self = StObject.set(x, "qBnfLiteral", js.undefined)
     
-    @scala.inline
-    def setQBnfVarargs(value: Double*): Self = StObject.set(x, "qBnf", js.Array(value :_*))
+    inline def setQBnfVarargs(value: Double*): Self = StObject.set(x, "qBnf", js.Array(value :_*))
     
-    @scala.inline
-    def setQControlStatement(value: Boolean): Self = StObject.set(x, "qControlStatement", value.asInstanceOf[js.Any])
+    inline def setQControlStatement(value: Boolean): Self = StObject.set(x, "qControlStatement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQControlStatementUndefined: Self = StObject.set(x, "qControlStatement", js.undefined)
+    inline def setQControlStatementUndefined: Self = StObject.set(x, "qControlStatement", js.undefined)
     
-    @scala.inline
-    def setQDepr(value: Boolean): Self = StObject.set(x, "qDepr", value.asInstanceOf[js.Any])
+    inline def setQDepr(value: Boolean): Self = StObject.set(x, "qDepr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQDeprUndefined: Self = StObject.set(x, "qDepr", js.undefined)
+    inline def setQDeprUndefined: Self = StObject.set(x, "qDepr", js.undefined)
     
-    @scala.inline
-    def setQFG(value: FunctionGroupType): Self = StObject.set(x, "qFG", value.asInstanceOf[js.Any])
+    inline def setQFG(value: FunctionGroupType): Self = StObject.set(x, "qFG", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQFieldFlag(value: Boolean): Self = StObject.set(x, "qFieldFlag", value.asInstanceOf[js.Any])
+    inline def setQFieldFlag(value: Boolean): Self = StObject.set(x, "qFieldFlag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQFieldFlagUndefined: Self = StObject.set(x, "qFieldFlag", js.undefined)
+    inline def setQFieldFlagUndefined: Self = StObject.set(x, "qFieldFlag", js.undefined)
     
-    @scala.inline
-    def setQHelpId(value: Double): Self = StObject.set(x, "qHelpId", value.asInstanceOf[js.Any])
+    inline def setQHelpId(value: Double): Self = StObject.set(x, "qHelpId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQIsBnfRule(value: Boolean): Self = StObject.set(x, "qIsBnfRule", value.asInstanceOf[js.Any])
+    inline def setQIsBnfRule(value: Boolean): Self = StObject.set(x, "qIsBnfRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQIsBnfRuleUndefined: Self = StObject.set(x, "qIsBnfRule", js.undefined)
+    inline def setQIsBnfRuleUndefined: Self = StObject.set(x, "qIsBnfRule", js.undefined)
     
-    @scala.inline
-    def setQMT(value: MTType): Self = StObject.set(x, "qMT", value.asInstanceOf[js.Any])
+    inline def setQMT(value: MTType): Self = StObject.set(x, "qMT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
+    inline def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQNbr(value: Double): Self = StObject.set(x, "qNbr", value.asInstanceOf[js.Any])
+    inline def setQNbr(value: Double): Self = StObject.set(x, "qNbr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQPNbr(value: Double): Self = StObject.set(x, "qPNbr", value.asInstanceOf[js.Any])
+    inline def setQPNbr(value: Double): Self = StObject.set(x, "qPNbr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQQvFunc(value: Boolean): Self = StObject.set(x, "qQvFunc", value.asInstanceOf[js.Any])
+    inline def setQQvFunc(value: Boolean): Self = StObject.set(x, "qQvFunc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQQvFuncUndefined: Self = StObject.set(x, "qQvFunc", js.undefined)
+    inline def setQQvFuncUndefined: Self = StObject.set(x, "qQvFunc", js.undefined)
     
-    @scala.inline
-    def setQScriptStatement(value: Boolean): Self = StObject.set(x, "qScriptStatement", value.asInstanceOf[js.Any])
+    inline def setQScriptStatement(value: Boolean): Self = StObject.set(x, "qScriptStatement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQScriptStatementUndefined: Self = StObject.set(x, "qScriptStatement", js.undefined)
+    inline def setQScriptStatementUndefined: Self = StObject.set(x, "qScriptStatement", js.undefined)
     
-    @scala.inline
-    def setQStr(value: String): Self = StObject.set(x, "qStr", value.asInstanceOf[js.Any])
+    inline def setQStr(value: String): Self = StObject.set(x, "qStr", value.asInstanceOf[js.Any])
   }
 }

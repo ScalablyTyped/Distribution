@@ -18,28 +18,21 @@ trait ListPermissionsResponse extends StObject {
 }
 object ListPermissionsResponse {
   
-  @scala.inline
-  def apply(): ListPermissionsResponse = {
+  inline def apply(): ListPermissionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListPermissionsResponse]
   }
   
-  @scala.inline
-  implicit class ListPermissionsResponseMutableBuilder[Self <: ListPermissionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListPermissionsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPrincipalResourcePermissions(value: PrincipalResourcePermissionsList): Self = StObject.set(x, "PrincipalResourcePermissions", value.asInstanceOf[js.Any])
+    inline def setPrincipalResourcePermissions(value: PrincipalResourcePermissionsList): Self = StObject.set(x, "PrincipalResourcePermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalResourcePermissionsUndefined: Self = StObject.set(x, "PrincipalResourcePermissions", js.undefined)
+    inline def setPrincipalResourcePermissionsUndefined: Self = StObject.set(x, "PrincipalResourcePermissions", js.undefined)
     
-    @scala.inline
-    def setPrincipalResourcePermissionsVarargs(value: PrincipalResourcePermissions*): Self = StObject.set(x, "PrincipalResourcePermissions", js.Array(value :_*))
+    inline def setPrincipalResourcePermissionsVarargs(value: PrincipalResourcePermissions*): Self = StObject.set(x, "PrincipalResourcePermissions", js.Array(value :_*))
   }
 }

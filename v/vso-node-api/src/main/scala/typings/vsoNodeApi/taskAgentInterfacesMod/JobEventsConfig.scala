@@ -14,22 +14,17 @@ trait JobEventsConfig extends StObject {
 }
 object JobEventsConfig {
   
-  @scala.inline
-  def apply(jobAssigned: JobEventConfig, jobCompleted: JobEventConfig, jobStarted: JobEventConfig): JobEventsConfig = {
+  inline def apply(jobAssigned: JobEventConfig, jobCompleted: JobEventConfig, jobStarted: JobEventConfig): JobEventsConfig = {
     val __obj = js.Dynamic.literal(jobAssigned = jobAssigned.asInstanceOf[js.Any], jobCompleted = jobCompleted.asInstanceOf[js.Any], jobStarted = jobStarted.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobEventsConfig]
   }
   
-  @scala.inline
-  implicit class JobEventsConfigMutableBuilder[Self <: JobEventsConfig] (val x: Self) extends AnyVal {
+  extension [Self <: JobEventsConfig](x: Self) {
     
-    @scala.inline
-    def setJobAssigned(value: JobEventConfig): Self = StObject.set(x, "jobAssigned", value.asInstanceOf[js.Any])
+    inline def setJobAssigned(value: JobEventConfig): Self = StObject.set(x, "jobAssigned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobCompleted(value: JobEventConfig): Self = StObject.set(x, "jobCompleted", value.asInstanceOf[js.Any])
+    inline def setJobCompleted(value: JobEventConfig): Self = StObject.set(x, "jobCompleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobStarted(value: JobEventConfig): Self = StObject.set(x, "jobStarted", value.asInstanceOf[js.Any])
+    inline def setJobStarted(value: JobEventConfig): Self = StObject.set(x, "jobStarted", value.asInstanceOf[js.Any])
   }
 }

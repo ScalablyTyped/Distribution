@@ -10,22 +10,17 @@ trait SchemaStreetSegmentList extends StObject {
 }
 object SchemaStreetSegmentList {
   
-  @scala.inline
-  def apply(): SchemaStreetSegmentList = {
+  inline def apply(): SchemaStreetSegmentList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaStreetSegmentList]
   }
   
-  @scala.inline
-  implicit class SchemaStreetSegmentListMutableBuilder[Self <: SchemaStreetSegmentList] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaStreetSegmentList](x: Self) {
     
-    @scala.inline
-    def setSegments(value: js.Array[SchemaStreetSegment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
+    inline def setSegments(value: js.Array[SchemaStreetSegment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
+    inline def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
     
-    @scala.inline
-    def setSegmentsVarargs(value: SchemaStreetSegment*): Self = StObject.set(x, "segments", js.Array(value :_*))
+    inline def setSegmentsVarargs(value: SchemaStreetSegment*): Self = StObject.set(x, "segments", js.Array(value :_*))
   }
 }

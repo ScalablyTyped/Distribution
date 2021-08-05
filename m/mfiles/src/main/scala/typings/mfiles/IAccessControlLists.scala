@@ -12,19 +12,15 @@ trait IAccessControlLists extends StObject {
 }
 object IAccessControlLists {
   
-  @scala.inline
-  def apply(Count: Double, Item: Double => IAccessControlList): IAccessControlLists = {
+  inline def apply(Count: Double, Item: Double => IAccessControlList): IAccessControlLists = {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item))
     __obj.asInstanceOf[IAccessControlLists]
   }
   
-  @scala.inline
-  implicit class IAccessControlListsMutableBuilder[Self <: IAccessControlLists] (val x: Self) extends AnyVal {
+  extension [Self <: IAccessControlLists](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Double => IAccessControlList): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => IAccessControlList): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
   }
 }

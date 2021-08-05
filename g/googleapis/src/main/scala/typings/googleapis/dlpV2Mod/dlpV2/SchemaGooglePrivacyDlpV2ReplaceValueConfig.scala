@@ -16,19 +16,15 @@ trait SchemaGooglePrivacyDlpV2ReplaceValueConfig extends StObject {
 }
 object SchemaGooglePrivacyDlpV2ReplaceValueConfig {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2ReplaceValueConfig = {
+  inline def apply(): SchemaGooglePrivacyDlpV2ReplaceValueConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2ReplaceValueConfig]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2ReplaceValueConfigMutableBuilder[Self <: SchemaGooglePrivacyDlpV2ReplaceValueConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2ReplaceValueConfig](x: Self) {
     
-    @scala.inline
-    def setNewValue(value: SchemaGooglePrivacyDlpV2Value): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: SchemaGooglePrivacyDlpV2Value): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
+    inline def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
   }
 }

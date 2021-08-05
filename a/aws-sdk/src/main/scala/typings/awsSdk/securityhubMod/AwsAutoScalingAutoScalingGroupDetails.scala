@@ -33,46 +33,33 @@ trait AwsAutoScalingAutoScalingGroupDetails extends StObject {
 }
 object AwsAutoScalingAutoScalingGroupDetails {
   
-  @scala.inline
-  def apply(): AwsAutoScalingAutoScalingGroupDetails = {
+  inline def apply(): AwsAutoScalingAutoScalingGroupDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsAutoScalingAutoScalingGroupDetails]
   }
   
-  @scala.inline
-  implicit class AwsAutoScalingAutoScalingGroupDetailsMutableBuilder[Self <: AwsAutoScalingAutoScalingGroupDetails] (val x: Self) extends AnyVal {
+  extension [Self <: AwsAutoScalingAutoScalingGroupDetails](x: Self) {
     
-    @scala.inline
-    def setCreatedTime(value: NonEmptyString): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: NonEmptyString): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
+    inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
-    @scala.inline
-    def setHealthCheckGracePeriod(value: Integer): Self = StObject.set(x, "HealthCheckGracePeriod", value.asInstanceOf[js.Any])
+    inline def setHealthCheckGracePeriod(value: Integer): Self = StObject.set(x, "HealthCheckGracePeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthCheckGracePeriodUndefined: Self = StObject.set(x, "HealthCheckGracePeriod", js.undefined)
+    inline def setHealthCheckGracePeriodUndefined: Self = StObject.set(x, "HealthCheckGracePeriod", js.undefined)
     
-    @scala.inline
-    def setHealthCheckType(value: NonEmptyString): Self = StObject.set(x, "HealthCheckType", value.asInstanceOf[js.Any])
+    inline def setHealthCheckType(value: NonEmptyString): Self = StObject.set(x, "HealthCheckType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthCheckTypeUndefined: Self = StObject.set(x, "HealthCheckType", js.undefined)
+    inline def setHealthCheckTypeUndefined: Self = StObject.set(x, "HealthCheckType", js.undefined)
     
-    @scala.inline
-    def setLaunchConfigurationName(value: NonEmptyString): Self = StObject.set(x, "LaunchConfigurationName", value.asInstanceOf[js.Any])
+    inline def setLaunchConfigurationName(value: NonEmptyString): Self = StObject.set(x, "LaunchConfigurationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchConfigurationNameUndefined: Self = StObject.set(x, "LaunchConfigurationName", js.undefined)
+    inline def setLaunchConfigurationNameUndefined: Self = StObject.set(x, "LaunchConfigurationName", js.undefined)
     
-    @scala.inline
-    def setLoadBalancerNames(value: StringList): Self = StObject.set(x, "LoadBalancerNames", value.asInstanceOf[js.Any])
+    inline def setLoadBalancerNames(value: StringList): Self = StObject.set(x, "LoadBalancerNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadBalancerNamesUndefined: Self = StObject.set(x, "LoadBalancerNames", js.undefined)
+    inline def setLoadBalancerNamesUndefined: Self = StObject.set(x, "LoadBalancerNames", js.undefined)
     
-    @scala.inline
-    def setLoadBalancerNamesVarargs(value: NonEmptyString*): Self = StObject.set(x, "LoadBalancerNames", js.Array(value :_*))
+    inline def setLoadBalancerNamesVarargs(value: NonEmptyString*): Self = StObject.set(x, "LoadBalancerNames", js.Array(value :_*))
   }
 }

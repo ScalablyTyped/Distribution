@@ -13,22 +13,17 @@ trait SchemaGetOrderDealsResponse extends StObject {
 }
 object SchemaGetOrderDealsResponse {
   
-  @scala.inline
-  def apply(): SchemaGetOrderDealsResponse = {
+  inline def apply(): SchemaGetOrderDealsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGetOrderDealsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGetOrderDealsResponseMutableBuilder[Self <: SchemaGetOrderDealsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGetOrderDealsResponse](x: Self) {
     
-    @scala.inline
-    def setDeals(value: js.Array[SchemaMarketplaceDeal]): Self = StObject.set(x, "deals", value.asInstanceOf[js.Any])
+    inline def setDeals(value: js.Array[SchemaMarketplaceDeal]): Self = StObject.set(x, "deals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDealsUndefined: Self = StObject.set(x, "deals", js.undefined)
+    inline def setDealsUndefined: Self = StObject.set(x, "deals", js.undefined)
     
-    @scala.inline
-    def setDealsVarargs(value: SchemaMarketplaceDeal*): Self = StObject.set(x, "deals", js.Array(value :_*))
+    inline def setDealsVarargs(value: SchemaMarketplaceDeal*): Self = StObject.set(x, "deals", js.Array(value :_*))
   }
 }

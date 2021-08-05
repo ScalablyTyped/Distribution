@@ -16,8 +16,7 @@ trait RegExp extends StObject {
 }
 object RegExp {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addFlags: java.lang.String => RegExp,
     getFlags: () => java.lang.String,
     removeFlags: java.lang.String => RegExp,
@@ -27,19 +26,14 @@ object RegExp {
     __obj.asInstanceOf[RegExp]
   }
   
-  @scala.inline
-  implicit class RegExpMutableBuilder[Self <: RegExp] (val x: Self) extends AnyVal {
+  extension [Self <: RegExp](x: Self) {
     
-    @scala.inline
-    def setAddFlags(value: java.lang.String => RegExp): Self = StObject.set(x, "addFlags", js.Any.fromFunction1(value))
+    inline def setAddFlags(value: java.lang.String => RegExp): Self = StObject.set(x, "addFlags", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetFlags(value: () => java.lang.String): Self = StObject.set(x, "getFlags", js.Any.fromFunction0(value))
+    inline def setGetFlags(value: () => java.lang.String): Self = StObject.set(x, "getFlags", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveFlags(value: java.lang.String => RegExp): Self = StObject.set(x, "removeFlags", js.Any.fromFunction1(value))
+    inline def setRemoveFlags(value: java.lang.String => RegExp): Self = StObject.set(x, "removeFlags", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFlags(value: java.lang.String => RegExp): Self = StObject.set(x, "setFlags", js.Any.fromFunction1(value))
+    inline def setSetFlags(value: java.lang.String => RegExp): Self = StObject.set(x, "setFlags", js.Any.fromFunction1(value))
   }
 }

@@ -40,8 +40,7 @@ trait Unit
 }
 object Unit {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abs: Unit => Unit,
     divide: Unit => Unit,
     equalBase: Unit => Boolean,
@@ -63,52 +62,36 @@ object Unit {
     __obj.asInstanceOf[Unit]
   }
   
-  @scala.inline
-  implicit class UnitMutableBuilder[Self <: Unit] (val x: Self) extends AnyVal {
+  extension [Self <: Unit](x: Self) {
     
-    @scala.inline
-    def setAbs(value: Unit => Unit): Self = StObject.set(x, "abs", js.Any.fromFunction1(value))
+    inline def setAbs(value: Unit => Unit): Self = StObject.set(x, "abs", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDivide(value: Unit => Unit): Self = StObject.set(x, "divide", js.Any.fromFunction1(value))
+    inline def setDivide(value: Unit => Unit): Self = StObject.set(x, "divide", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEqualBase(value: Unit => Boolean): Self = StObject.set(x, "equalBase", js.Any.fromFunction1(value))
+    inline def setEqualBase(value: Unit => Boolean): Self = StObject.set(x, "equalBase", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEquals_(value: Unit => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+    inline def setEquals_(value: Unit => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFormat(value: FormatOptions => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
+    inline def setFormat(value: FormatOptions => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFormatUnits(value: () => String): Self = StObject.set(x, "formatUnits", js.Any.fromFunction0(value))
+    inline def setFormatUnits(value: () => String): Self = StObject.set(x, "formatUnits", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasBase(value: js.Any => Boolean): Self = StObject.set(x, "hasBase", js.Any.fromFunction1(value))
+    inline def setHasBase(value: js.Any => Boolean): Self = StObject.set(x, "hasBase", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMultiply(value: Unit => Unit): Self = StObject.set(x, "multiply", js.Any.fromFunction1(value))
+    inline def setMultiply(value: Unit => Unit): Self = StObject.set(x, "multiply", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPow(value: Unit => Unit): Self = StObject.set(x, "pow", js.Any.fromFunction1(value))
+    inline def setPow(value: Unit => Unit): Self = StObject.set(x, "pow", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSplitUnit(value: js.Array[String | Unit] => js.Array[Unit]): Self = StObject.set(x, "splitUnit", js.Any.fromFunction1(value))
+    inline def setSplitUnit(value: js.Array[String | Unit] => js.Array[Unit]): Self = StObject.set(x, "splitUnit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTo(value: String => Unit): Self = StObject.set(x, "to", js.Any.fromFunction1(value))
+    inline def setTo(value: String => Unit): Self = StObject.set(x, "to", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToJSON(value: () => MathJSON): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => MathJSON): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToNumber(value: String => Double): Self = StObject.set(x, "toNumber", js.Any.fromFunction1(value))
+    inline def setToNumber(value: String => Double): Self = StObject.set(x, "toNumber", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToNumeric(value: String => Double | Fraction | BigNumber): Self = StObject.set(x, "toNumeric", js.Any.fromFunction1(value))
+    inline def setToNumeric(value: String => Double | Fraction | BigNumber): Self = StObject.set(x, "toNumeric", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToSI(value: () => Unit): Self = StObject.set(x, "toSI", js.Any.fromFunction0(value))
+    inline def setToSI(value: () => Unit): Self = StObject.set(x, "toSI", js.Any.fromFunction0(value))
   }
 }

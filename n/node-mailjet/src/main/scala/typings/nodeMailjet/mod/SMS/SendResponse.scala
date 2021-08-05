@@ -12,19 +12,15 @@ trait SendResponse extends StObject {
 }
 object SendResponse {
   
-  @scala.inline
-  def apply(body: PostResponseData, url: String): SendResponse = {
+  inline def apply(body: PostResponseData, url: String): SendResponse = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendResponse]
   }
   
-  @scala.inline
-  implicit class SendResponseMutableBuilder[Self <: SendResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SendResponse](x: Self) {
     
-    @scala.inline
-    def setBody(value: PostResponseData): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: PostResponseData): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

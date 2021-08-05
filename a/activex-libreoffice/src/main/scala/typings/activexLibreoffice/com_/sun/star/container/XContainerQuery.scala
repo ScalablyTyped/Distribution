@@ -39,8 +39,7 @@ trait XContainerQuery
 }
 object XContainerQuery {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createSubSetEnumerationByProperties: SeqEquiv[NamedValue] => XEnumeration,
     createSubSetEnumerationByQuery: String => XEnumeration,
@@ -51,13 +50,10 @@ object XContainerQuery {
     __obj.asInstanceOf[XContainerQuery]
   }
   
-  @scala.inline
-  implicit class XContainerQueryMutableBuilder[Self <: XContainerQuery] (val x: Self) extends AnyVal {
+  extension [Self <: XContainerQuery](x: Self) {
     
-    @scala.inline
-    def setCreateSubSetEnumerationByProperties(value: SeqEquiv[NamedValue] => XEnumeration): Self = StObject.set(x, "createSubSetEnumerationByProperties", js.Any.fromFunction1(value))
+    inline def setCreateSubSetEnumerationByProperties(value: SeqEquiv[NamedValue] => XEnumeration): Self = StObject.set(x, "createSubSetEnumerationByProperties", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateSubSetEnumerationByQuery(value: String => XEnumeration): Self = StObject.set(x, "createSubSetEnumerationByQuery", js.Any.fromFunction1(value))
+    inline def setCreateSubSetEnumerationByQuery(value: String => XEnumeration): Self = StObject.set(x, "createSubSetEnumerationByQuery", js.Any.fromFunction1(value))
   }
 }

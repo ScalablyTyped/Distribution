@@ -14,19 +14,15 @@ trait Sn extends StObject {
 }
 object Sn {
   
-  @scala.inline
-  def apply(sn: IntegerParam, time: StringParam): Sn = {
+  inline def apply(sn: IntegerParam, time: StringParam): Sn = {
     val __obj = js.Dynamic.literal(sn = sn.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
     __obj.asInstanceOf[Sn]
   }
   
-  @scala.inline
-  implicit class SnMutableBuilder[Self <: Sn] (val x: Self) extends AnyVal {
+  extension [Self <: Sn](x: Self) {
     
-    @scala.inline
-    def setSn(value: IntegerParam): Self = StObject.set(x, "sn", value.asInstanceOf[js.Any])
+    inline def setSn(value: IntegerParam): Self = StObject.set(x, "sn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime(value: StringParam): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: StringParam): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
   }
 }

@@ -21,19 +21,15 @@ trait SchemaSiteConfig extends StObject {
 }
 object SchemaSiteConfig {
   
-  @scala.inline
-  def apply(): SchemaSiteConfig = {
+  inline def apply(): SchemaSiteConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSiteConfig]
   }
   
-  @scala.inline
-  implicit class SchemaSiteConfigMutableBuilder[Self <: SchemaSiteConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSiteConfig](x: Self) {
     
-    @scala.inline
-    def setMaxVersions(value: String): Self = StObject.set(x, "maxVersions", value.asInstanceOf[js.Any])
+    inline def setMaxVersions(value: String): Self = StObject.set(x, "maxVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxVersionsUndefined: Self = StObject.set(x, "maxVersions", js.undefined)
+    inline def setMaxVersionsUndefined: Self = StObject.set(x, "maxVersions", js.undefined)
   }
 }

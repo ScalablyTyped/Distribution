@@ -19,24 +19,19 @@ object actorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createDeferredActor(entity: Spawnable, id: String): Actor[js.Any, AnyEventObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDeferredActor")(entity.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Actor[js.Any, AnyEventObject]]
-  @scala.inline
-  def createDeferredActor(entity: Spawnable, id: String, data: js.Any): Actor[js.Any, AnyEventObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDeferredActor")(entity.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Actor[js.Any, AnyEventObject]]
+  inline def createDeferredActor(entity: Spawnable, id: String): Actor[js.Any, AnyEventObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDeferredActor")(entity.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Actor[js.Any, AnyEventObject]]
+  inline def createDeferredActor(entity: Spawnable, id: String, data: js.Any): Actor[js.Any, AnyEventObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDeferredActor")(entity.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Actor[js.Any, AnyEventObject]]
   
-  @scala.inline
-  def createInvocableActor[TC, TE /* <: EventObject */](
+  inline def createInvocableActor[TC, TE /* <: EventObject */](
     invokeDefinition: InvokeDefinition[TC, TE],
     machine: StateMachine[TC, js.Any, TE, Context[TC]],
     context: TC,
     _event: Event[TE]
   ): Actor[js.Any, AnyEventObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("createInvocableActor")(invokeDefinition.asInstanceOf[js.Any], machine.asInstanceOf[js.Any], context.asInstanceOf[js.Any], _event.asInstanceOf[js.Any])).asInstanceOf[Actor[js.Any, AnyEventObject]]
   
-  @scala.inline
-  def createNullActor(id: String): Actor[js.Any, AnyEventObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("createNullActor")(id.asInstanceOf[js.Any]).asInstanceOf[Actor[js.Any, AnyEventObject]]
+  inline def createNullActor(id: String): Actor[js.Any, AnyEventObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("createNullActor")(id.asInstanceOf[js.Any]).asInstanceOf[Actor[js.Any, AnyEventObject]]
   
-  @scala.inline
-  def isActor(item: js.Any): /* is xstate.xstate/lib/Actor.Actor<any, xstate.xstate/lib/types.AnyEventObject> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isActor")(item.asInstanceOf[js.Any]).asInstanceOf[/* is xstate.xstate/lib/Actor.Actor<any, xstate.xstate/lib/types.AnyEventObject> */ Boolean]
+  inline def isActor(item: js.Any): /* is xstate.xstate/lib/Actor.Actor<any, xstate.xstate/lib/types.AnyEventObject> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isActor")(item.asInstanceOf[js.Any]).asInstanceOf[/* is xstate.xstate/lib/Actor.Actor<any, xstate.xstate/lib/types.AnyEventObject> */ Boolean]
   
   @js.native
   trait Actor[TContext, TEvent /* <: EventObject */]

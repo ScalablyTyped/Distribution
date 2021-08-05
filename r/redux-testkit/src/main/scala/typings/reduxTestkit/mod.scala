@@ -26,20 +26,15 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def createMiddleware(): (Middleware[js.Object, js.Any, Dispatch[AnyAction]]) & Flush = ^.asInstanceOf[js.Dynamic].applyDynamic("createMiddleware")().asInstanceOf[(Middleware[js.Object, js.Any, Dispatch[AnyAction]]) & Flush]
+    inline def createMiddleware(): (Middleware[js.Object, js.Any, Dispatch[AnyAction]]) & Flush = ^.asInstanceOf[js.Dynamic].applyDynamic("createMiddleware")().asInstanceOf[(Middleware[js.Object, js.Any, Dispatch[AnyAction]]) & Flush]
   }
   
-  @scala.inline
-  def Reducer(action: typings.redux.mod.Reducer[js.Any, AnyAction]): ReducerTestkitwithStatest = ^.asInstanceOf[js.Dynamic].applyDynamic("Reducer")(action.asInstanceOf[js.Any]).asInstanceOf[ReducerTestkitwithStatest]
+  inline def Reducer(action: typings.redux.mod.Reducer[js.Any, AnyAction]): ReducerTestkitwithStatest = ^.asInstanceOf[js.Dynamic].applyDynamic("Reducer")(action.asInstanceOf[js.Any]).asInstanceOf[ReducerTestkitwithStatest]
   
-  @scala.inline
-  def Selector(selector: js.Function2[/* state */ js.Any, /* action */ js.Any, js.Any]): Execute = ^.asInstanceOf[js.Dynamic].applyDynamic("Selector")(selector.asInstanceOf[js.Any]).asInstanceOf[Execute]
+  inline def Selector(selector: js.Function2[/* state */ js.Any, /* action */ js.Any, js.Any]): Execute = ^.asInstanceOf[js.Dynamic].applyDynamic("Selector")(selector.asInstanceOf[js.Any]).asInstanceOf[Execute]
   
-  @scala.inline
-  def Thunk(thunkFunc: ThunkAction[js.Any, js.Any, js.Any, js.Any]): ThunkTestkitwithStatestat = ^.asInstanceOf[js.Dynamic].applyDynamic("Thunk")(thunkFunc.asInstanceOf[js.Any]).asInstanceOf[ThunkTestkitwithStatestat]
-  @scala.inline
-  def Thunk(thunkFunc: ThunkAction[js.Any, js.Any, js.Any, js.Any], extraArg: js.Any): ThunkTestkitwithStatestat = (^.asInstanceOf[js.Dynamic].applyDynamic("Thunk")(thunkFunc.asInstanceOf[js.Any], extraArg.asInstanceOf[js.Any])).asInstanceOf[ThunkTestkitwithStatestat]
+  inline def Thunk(thunkFunc: ThunkAction[js.Any, js.Any, js.Any, js.Any]): ThunkTestkitwithStatestat = ^.asInstanceOf[js.Dynamic].applyDynamic("Thunk")(thunkFunc.asInstanceOf[js.Any]).asInstanceOf[ThunkTestkitwithStatestat]
+  inline def Thunk(thunkFunc: ThunkAction[js.Any, js.Any, js.Any, js.Any], extraArg: js.Any): ThunkTestkitwithStatestat = (^.asInstanceOf[js.Dynamic].applyDynamic("Thunk")(thunkFunc.asInstanceOf[js.Any], extraArg.asInstanceOf[js.Any])).asInstanceOf[ThunkTestkitwithStatestat]
   
   trait ReducerTestkit extends StObject {
     
@@ -49,20 +44,16 @@ object mod {
   }
   object ReducerTestkit {
     
-    @scala.inline
-    def apply(execute: Action[js.Any] => js.Any, expect: Action[js.Any] => ToChangeInState): ReducerTestkit = {
+    inline def apply(execute: Action[js.Any] => js.Any, expect: Action[js.Any] => ToChangeInState): ReducerTestkit = {
       val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), expect = js.Any.fromFunction1(expect))
       __obj.asInstanceOf[ReducerTestkit]
     }
     
-    @scala.inline
-    implicit class ReducerTestkitMutableBuilder[Self <: ReducerTestkit] (val x: Self) extends AnyVal {
+    extension [Self <: ReducerTestkit](x: Self) {
       
-      @scala.inline
-      def setExecute(value: Action[js.Any] => js.Any): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+      inline def setExecute(value: Action[js.Any] => js.Any): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExpect(value: Action[js.Any] => ToChangeInState): Self = StObject.set(x, "expect", js.Any.fromFunction1(value))
+      inline def setExpect(value: Action[js.Any] => ToChangeInState): Self = StObject.set(x, "expect", js.Any.fromFunction1(value))
     }
   }
   
@@ -72,17 +63,14 @@ object mod {
   }
   object ThunkTestkit {
     
-    @scala.inline
-    def apply(execute: /* repeated */ js.Any => js.Any): ThunkTestkit = {
+    inline def apply(execute: /* repeated */ js.Any => js.Any): ThunkTestkit = {
       val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute))
       __obj.asInstanceOf[ThunkTestkit]
     }
     
-    @scala.inline
-    implicit class ThunkTestkitMutableBuilder[Self <: ThunkTestkit] (val x: Self) extends AnyVal {
+    extension [Self <: ThunkTestkit](x: Self) {
       
-      @scala.inline
-      def setExecute(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+      inline def setExecute(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     }
   }
 }

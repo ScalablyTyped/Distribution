@@ -18,37 +18,27 @@ trait StyleHTMLAttributes[T]
 }
 object StyleHTMLAttributes {
   
-  @scala.inline
-  def apply[T](): StyleHTMLAttributes[T] = {
+  inline def apply[T](): StyleHTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StyleHTMLAttributes[T]]
   }
   
-  @scala.inline
-  implicit class StyleHTMLAttributesMutableBuilder[Self <: StyleHTMLAttributes[?], T] (val x: Self & StyleHTMLAttributes[T]) extends AnyVal {
+  extension [Self <: StyleHTMLAttributes[?], T](x: Self & StyleHTMLAttributes[T]) {
     
-    @scala.inline
-    def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
+    inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
     
-    @scala.inline
-    def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
+    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
-    @scala.inline
-    def setScoped(value: Boolean | String): Self = StObject.set(x, "scoped", value.asInstanceOf[js.Any])
+    inline def setScoped(value: Boolean | String): Self = StObject.set(x, "scoped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopedUndefined: Self = StObject.set(x, "scoped", js.undefined)
+    inline def setScopedUndefined: Self = StObject.set(x, "scoped", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

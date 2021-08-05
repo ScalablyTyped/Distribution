@@ -38,8 +38,7 @@ object anon {
   }
   object Attributes {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attributes: StringDictionary[js.UndefOr[StringDictionary[String]]],
       styles: StringDictionary[CSSProperties]
     ): Attributes = {
@@ -47,32 +46,23 @@ object anon {
       __obj.asInstanceOf[Attributes]
     }
     
-    @scala.inline
-    implicit class AttributesMutableBuilder[Self <: Attributes] (val x: Self) extends AnyVal {
+    extension [Self <: Attributes](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: StringDictionary[js.UndefOr[StringDictionary[String]]]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: StringDictionary[js.UndefOr[StringDictionary[String]]]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceUpdate(value: () => Unit): Self = StObject.set(x, "forceUpdate", js.Any.fromFunction0(value))
+      inline def setForceUpdate(value: () => Unit): Self = StObject.set(x, "forceUpdate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setForceUpdateNull: Self = StObject.set(x, "forceUpdate", null)
+      inline def setForceUpdateNull: Self = StObject.set(x, "forceUpdate", null)
       
-      @scala.inline
-      def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateNull: Self = StObject.set(x, "state", null)
+      inline def setStateNull: Self = StObject.set(x, "state", null)
       
-      @scala.inline
-      def setStyles(value: StringDictionary[CSSProperties]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: StringDictionary[CSSProperties]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdate(value: () => js.Promise[typings.popperjsCore.anon.PartialState]): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+      inline def setUpdate(value: () => js.Promise[typings.popperjsCore.anon.PartialState]): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdateNull: Self = StObject.set(x, "update", null)
+      inline def setUpdateNull: Self = StObject.set(x, "update", null)
     }
   }
   
@@ -84,29 +74,22 @@ object anon {
   }
   object CreatePopper {
     
-    @scala.inline
-    def apply[Modifiers](): CreatePopper[Modifiers] = {
+    inline def apply[Modifiers](): CreatePopper[Modifiers] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreatePopper[Modifiers]]
     }
     
-    @scala.inline
-    implicit class CreatePopperMutableBuilder[Self <: CreatePopper[?], Modifiers] (val x: Self & CreatePopper[Modifiers]) extends AnyVal {
+    extension [Self <: CreatePopper[?], Modifiers](x: Self & CreatePopper[Modifiers]) {
       
-      @scala.inline
-      def setCreatePopper(value: FnCall): Self = StObject.set(x, "createPopper", value.asInstanceOf[js.Any])
+      inline def setCreatePopper(value: FnCall): Self = StObject.set(x, "createPopper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatePopperUndefined: Self = StObject.set(x, "createPopper", js.undefined)
+      inline def setCreatePopperUndefined: Self = StObject.set(x, "createPopper", js.undefined)
       
-      @scala.inline
-      def setModifiers(value: js.Array[Modifier[Modifiers, js.Object]]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+      inline def setModifiers(value: js.Array[Modifier[Modifiers, js.Object]]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
+      inline def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
       
-      @scala.inline
-      def setModifiersVarargs(value: (Modifier[Modifiers, js.Object])*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
+      inline def setModifiersVarargs(value: (Modifier[Modifiers, js.Object])*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
     }
   }
   
@@ -130,32 +113,24 @@ object anon {
   }
   object OmitPartialOptionsmodifie {
     
-    @scala.inline
-    def apply(): OmitPartialOptionsmodifie = {
+    inline def apply(): OmitPartialOptionsmodifie = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OmitPartialOptionsmodifie]
     }
     
-    @scala.inline
-    implicit class OmitPartialOptionsmodifieMutableBuilder[Self <: OmitPartialOptionsmodifie] (val x: Self) extends AnyVal {
+    extension [Self <: OmitPartialOptionsmodifie](x: Self) {
       
-      @scala.inline
-      def setOnFirstUpdate(value: /* arg0 */ typings.popperjsCore.anon.PartialState => Unit): Self = StObject.set(x, "onFirstUpdate", js.Any.fromFunction1(value))
+      inline def setOnFirstUpdate(value: /* arg0 */ typings.popperjsCore.anon.PartialState => Unit): Self = StObject.set(x, "onFirstUpdate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFirstUpdateUndefined: Self = StObject.set(x, "onFirstUpdate", js.undefined)
+      inline def setOnFirstUpdateUndefined: Self = StObject.set(x, "onFirstUpdate", js.undefined)
       
-      @scala.inline
-      def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+      inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
       
-      @scala.inline
-      def setStrategy(value: PositioningStrategy): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
+      inline def setStrategy(value: PositioningStrategy): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
+      inline def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
     }
   }
   
@@ -186,83 +161,58 @@ object anon {
   }
   object PartialState {
     
-    @scala.inline
-    def apply(): PartialState = {
+    inline def apply(): PartialState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialState]
     }
     
-    @scala.inline
-    implicit class PartialStateMutableBuilder[Self <: PartialState] (val x: Self) extends AnyVal {
+    extension [Self <: PartialState](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: StringDictionary[StringDictionary[String | Boolean]]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: StringDictionary[StringDictionary[String | Boolean]]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setElements(value: Arrow): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+      inline def setElements(value: Arrow): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
+      inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
       
-      @scala.inline
-      def setModifiersData(value: Dictkey): Self = StObject.set(x, "modifiersData", value.asInstanceOf[js.Any])
+      inline def setModifiersData(value: Dictkey): Self = StObject.set(x, "modifiersData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModifiersDataUndefined: Self = StObject.set(x, "modifiersData", js.undefined)
+      inline def setModifiersDataUndefined: Self = StObject.set(x, "modifiersData", js.undefined)
       
-      @scala.inline
-      def setOptions(value: OptionsGeneric[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: OptionsGeneric[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setOrderedModifiers(value: js.Array[typings.popperjsCore.typesMod.Modifier[js.Any, js.Any]]): Self = StObject.set(x, "orderedModifiers", value.asInstanceOf[js.Any])
+      inline def setOrderedModifiers(value: js.Array[typings.popperjsCore.typesMod.Modifier[js.Any, js.Any]]): Self = StObject.set(x, "orderedModifiers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderedModifiersUndefined: Self = StObject.set(x, "orderedModifiers", js.undefined)
+      inline def setOrderedModifiersUndefined: Self = StObject.set(x, "orderedModifiers", js.undefined)
       
-      @scala.inline
-      def setOrderedModifiersVarargs(value: (typings.popperjsCore.typesMod.Modifier[js.Any, js.Any])*): Self = StObject.set(x, "orderedModifiers", js.Array(value :_*))
+      inline def setOrderedModifiersVarargs(value: (typings.popperjsCore.typesMod.Modifier[js.Any, js.Any])*): Self = StObject.set(x, "orderedModifiers", js.Array(value :_*))
       
-      @scala.inline
-      def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+      inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
       
-      @scala.inline
-      def setRects(value: StateRects): Self = StObject.set(x, "rects", value.asInstanceOf[js.Any])
+      inline def setRects(value: StateRects): Self = StObject.set(x, "rects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRectsUndefined: Self = StObject.set(x, "rects", js.undefined)
+      inline def setRectsUndefined: Self = StObject.set(x, "rects", js.undefined)
       
-      @scala.inline
-      def setReset(value: Boolean): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
+      inline def setReset(value: Boolean): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
+      inline def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
       
-      @scala.inline
-      def setScrollParents(value: Popper): Self = StObject.set(x, "scrollParents", value.asInstanceOf[js.Any])
+      inline def setScrollParents(value: Popper): Self = StObject.set(x, "scrollParents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollParentsUndefined: Self = StObject.set(x, "scrollParents", js.undefined)
+      inline def setScrollParentsUndefined: Self = StObject.set(x, "scrollParents", js.undefined)
       
-      @scala.inline
-      def setStrategy(value: PositioningStrategy): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
+      inline def setStrategy(value: PositioningStrategy): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
+      inline def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
       
-      @scala.inline
-      def setStyles(value: StringDictionary[PartialCSSStyleDeclaratio]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: StringDictionary[PartialCSSStyleDeclaratio]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     }
   }
 }

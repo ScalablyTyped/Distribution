@@ -22,26 +22,20 @@ object mod {
   }
   object ItemOfSelectInput {
     
-    @scala.inline
-    def apply(label: String, value: js.Any): ItemOfSelectInput = {
+    inline def apply(label: String, value: js.Any): ItemOfSelectInput = {
       val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ItemOfSelectInput]
     }
     
-    @scala.inline
-    implicit class ItemOfSelectInputMutableBuilder[Self <: ItemOfSelectInput] (val x: Self) extends AnyVal {
+    extension [Self <: ItemOfSelectInput](x: Self) {
       
-      @scala.inline
-      def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -65,59 +59,42 @@ object mod {
   }
   object SelectInputProps {
     
-    @scala.inline
-    def apply[T /* <: ItemOfSelectInput */](): SelectInputProps[T] = {
+    inline def apply[T /* <: ItemOfSelectInput */](): SelectInputProps[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SelectInputProps[T]]
     }
     
-    @scala.inline
-    implicit class SelectInputPropsMutableBuilder[Self <: SelectInputProps[?], T /* <: ItemOfSelectInput */] (val x: Self & SelectInputProps[T]) extends AnyVal {
+    extension [Self <: SelectInputProps[?], T /* <: ItemOfSelectInput */](x: Self & SelectInputProps[T]) {
       
-      @scala.inline
-      def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+      inline def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
+      inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
       
-      @scala.inline
-      def setIndicatorComponent(value: Component[js.Object, js.Object, js.Any]): Self = StObject.set(x, "indicatorComponent", value.asInstanceOf[js.Any])
+      inline def setIndicatorComponent(value: Component[js.Object, js.Object, js.Any]): Self = StObject.set(x, "indicatorComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndicatorComponentUndefined: Self = StObject.set(x, "indicatorComponent", js.undefined)
+      inline def setIndicatorComponentUndefined: Self = StObject.set(x, "indicatorComponent", js.undefined)
       
-      @scala.inline
-      def setInitialIndex(value: Double): Self = StObject.set(x, "initialIndex", value.asInstanceOf[js.Any])
+      inline def setInitialIndex(value: Double): Self = StObject.set(x, "initialIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialIndexUndefined: Self = StObject.set(x, "initialIndex", js.undefined)
+      inline def setInitialIndexUndefined: Self = StObject.set(x, "initialIndex", js.undefined)
       
-      @scala.inline
-      def setItemComponent(value: Component[js.Object, js.Object, js.Any]): Self = StObject.set(x, "itemComponent", value.asInstanceOf[js.Any])
+      inline def setItemComponent(value: Component[js.Object, js.Object, js.Any]): Self = StObject.set(x, "itemComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemComponentUndefined: Self = StObject.set(x, "itemComponent", js.undefined)
+      inline def setItemComponentUndefined: Self = StObject.set(x, "itemComponent", js.undefined)
       
-      @scala.inline
-      def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      @scala.inline
-      def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setOnSelect(value: /* item */ T => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+      inline def setOnSelect(value: /* item */ T => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
+      inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
     }
   }
 }

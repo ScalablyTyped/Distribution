@@ -12,19 +12,15 @@ trait TypeLabelComparison extends StObject {
 }
 object TypeLabelComparison {
   
-  @scala.inline
-  def apply(): TypeLabelComparison = {
+  inline def apply(): TypeLabelComparison = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TypeLabelComparison]
   }
   
-  @scala.inline
-  implicit class TypeLabelComparisonMutableBuilder[Self <: TypeLabelComparison] (val x: Self) extends AnyVal {
+  extension [Self <: TypeLabelComparison](x: Self) {
     
-    @scala.inline
-    def setLabel(value: Label): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: Label): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }
 }

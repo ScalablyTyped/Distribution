@@ -13,16 +13,13 @@ trait DescribeCodeReviewRequest extends StObject {
 }
 object DescribeCodeReviewRequest {
   
-  @scala.inline
-  def apply(CodeReviewArn: Arn): DescribeCodeReviewRequest = {
+  inline def apply(CodeReviewArn: Arn): DescribeCodeReviewRequest = {
     val __obj = js.Dynamic.literal(CodeReviewArn = CodeReviewArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeCodeReviewRequest]
   }
   
-  @scala.inline
-  implicit class DescribeCodeReviewRequestMutableBuilder[Self <: DescribeCodeReviewRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeCodeReviewRequest](x: Self) {
     
-    @scala.inline
-    def setCodeReviewArn(value: Arn): Self = StObject.set(x, "CodeReviewArn", value.asInstanceOf[js.Any])
+    inline def setCodeReviewArn(value: Arn): Self = StObject.set(x, "CodeReviewArn", value.asInstanceOf[js.Any])
   }
 }

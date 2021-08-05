@@ -16,37 +16,27 @@ trait LimitType extends StObject {
 }
 object LimitType {
   
-  @scala.inline
-  def apply(): LimitType = {
+  inline def apply(): LimitType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LimitType]
   }
   
-  @scala.inline
-  implicit class LimitTypeMutableBuilder[Self <: LimitType] (val x: Self) extends AnyVal {
+  extension [Self <: LimitType](x: Self) {
     
-    @scala.inline
-    def setAllowedCharacterCount(value: Double): Self = StObject.set(x, "allowedCharacterCount", value.asInstanceOf[js.Any])
+    inline def setAllowedCharacterCount(value: Double): Self = StObject.set(x, "allowedCharacterCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedCharacterCountUndefined: Self = StObject.set(x, "allowedCharacterCount", js.undefined)
+    inline def setAllowedCharacterCountUndefined: Self = StObject.set(x, "allowedCharacterCount", js.undefined)
     
-    @scala.inline
-    def setLimitType(value: String): Self = StObject.set(x, "limitType", value.asInstanceOf[js.Any])
+    inline def setLimitType(value: String): Self = StObject.set(x, "limitType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitTypeUndefined: Self = StObject.set(x, "limitType", js.undefined)
+    inline def setLimitTypeUndefined: Self = StObject.set(x, "limitType", js.undefined)
     
-    @scala.inline
-    def setRemainingCharacterCount(value: Double): Self = StObject.set(x, "remainingCharacterCount", value.asInstanceOf[js.Any])
+    inline def setRemainingCharacterCount(value: Double): Self = StObject.set(x, "remainingCharacterCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemainingCharacterCountUndefined: Self = StObject.set(x, "remainingCharacterCount", js.undefined)
+    inline def setRemainingCharacterCountUndefined: Self = StObject.set(x, "remainingCharacterCount", js.undefined)
     
-    @scala.inline
-    def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+    inline def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
+    inline def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
   }
 }

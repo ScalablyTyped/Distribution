@@ -56,10 +56,8 @@ object scrollspyMod {
       * with a DOM element
       */
     /* static member */
-    @scala.inline
-    def getInstance(element: Element): ScrollSpy = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[ScrollSpy]
-    @scala.inline
-    def getInstance(element: Element, options: PartialOptionsMethod): ScrollSpy = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ScrollSpy]
+    inline def getInstance(element: Element): ScrollSpy = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[ScrollSpy]
+    inline def getInstance(element: Element, options: PartialOptionsMethod): ScrollSpy = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ScrollSpy]
   }
   
   trait ScrollSpy extends StObject {
@@ -78,8 +76,7 @@ object scrollspyMod {
   }
   object ScrollSpy {
     
-    @scala.inline
-    def apply(dispose: () => Unit, refresh: () => Unit): ScrollSpy = {
+    inline def apply(dispose: () => Unit, refresh: () => Unit): ScrollSpy = {
       val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), refresh = js.Any.fromFunction0(refresh))
       __obj.asInstanceOf[ScrollSpy]
     }
@@ -127,34 +124,26 @@ object scrollspyMod {
     }
     object Options {
       
-      @scala.inline
-      def apply(method: auto | offset | position, offset: Double, target: String | Element | JQuery[HTMLElement]): Options = {
+      inline def apply(method: auto | offset | position, offset: Double, target: String | Element | JQuery[HTMLElement]): Options = {
         val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setMethod(value: auto | offset | position): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+        inline def setMethod(value: auto | offset | position): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+        inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTarget(value: String | Element | JQuery[HTMLElement]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+        inline def setTarget(value: String | Element | JQuery[HTMLElement]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       }
     }
     
-    @scala.inline
-    implicit class ScrollSpyMutableBuilder[Self <: ScrollSpy] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollSpy](x: Self) {
       
-      @scala.inline
-      def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
+      inline def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
     }
   }
 }

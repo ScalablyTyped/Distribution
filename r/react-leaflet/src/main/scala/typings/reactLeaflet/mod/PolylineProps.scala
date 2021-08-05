@@ -21,31 +21,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object PolylineProps {
   
-  @scala.inline
-  def apply(positions: js.Array[js.Array[LatLngExpression] | LatLngExpression]): PolylineProps = {
+  inline def apply(positions: js.Array[js.Array[LatLngExpression] | LatLngExpression]): PolylineProps = {
     val __obj = js.Dynamic.literal(positions = positions.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolylineProps]
   }
   
-  @scala.inline
-  implicit class PolylinePropsMutableBuilder[Self <: PolylineProps] (val x: Self) extends AnyVal {
+  extension [Self <: PolylineProps](x: Self) {
     
-    @scala.inline
-    def setNoClip(value: Boolean): Self = StObject.set(x, "noClip", value.asInstanceOf[js.Any])
+    inline def setNoClip(value: Boolean): Self = StObject.set(x, "noClip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoClipUndefined: Self = StObject.set(x, "noClip", js.undefined)
+    inline def setNoClipUndefined: Self = StObject.set(x, "noClip", js.undefined)
     
-    @scala.inline
-    def setPositions(value: js.Array[js.Array[LatLngExpression] | LatLngExpression]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
+    inline def setPositions(value: js.Array[js.Array[LatLngExpression] | LatLngExpression]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionsVarargs(value: (js.Array[LatLngExpression] | LatLngExpression)*): Self = StObject.set(x, "positions", js.Array(value :_*))
+    inline def setPositionsVarargs(value: (js.Array[LatLngExpression] | LatLngExpression)*): Self = StObject.set(x, "positions", js.Array(value :_*))
     
-    @scala.inline
-    def setSmoothFactor(value: Double): Self = StObject.set(x, "smoothFactor", value.asInstanceOf[js.Any])
+    inline def setSmoothFactor(value: Double): Self = StObject.set(x, "smoothFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmoothFactorUndefined: Self = StObject.set(x, "smoothFactor", js.undefined)
+    inline def setSmoothFactorUndefined: Self = StObject.set(x, "smoothFactor", js.undefined)
   }
 }

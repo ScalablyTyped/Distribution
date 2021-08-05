@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class ErrorMessageTracker () extends StObject {
   
-  var _messages: js.Any = js.native
+  /* private */ var _messages: js.Any = js.native
   
   /**
     * Add a message to the tracker.

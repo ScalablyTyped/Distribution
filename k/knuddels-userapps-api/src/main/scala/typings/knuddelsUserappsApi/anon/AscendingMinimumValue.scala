@@ -12,25 +12,19 @@ trait AscendingMinimumValue extends StObject {
 }
 object AscendingMinimumValue {
   
-  @scala.inline
-  def apply(): AscendingMinimumValue = {
+  inline def apply(): AscendingMinimumValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AscendingMinimumValue]
   }
   
-  @scala.inline
-  implicit class AscendingMinimumValueMutableBuilder[Self <: AscendingMinimumValue] (val x: Self) extends AnyVal {
+  extension [Self <: AscendingMinimumValue](x: Self) {
     
-    @scala.inline
-    def setAscending(value: Boolean): Self = StObject.set(x, "ascending", value.asInstanceOf[js.Any])
+    inline def setAscending(value: Boolean): Self = StObject.set(x, "ascending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAscendingUndefined: Self = StObject.set(x, "ascending", js.undefined)
+    inline def setAscendingUndefined: Self = StObject.set(x, "ascending", js.undefined)
     
-    @scala.inline
-    def setMinimumValue(value: Double): Self = StObject.set(x, "minimumValue", value.asInstanceOf[js.Any])
+    inline def setMinimumValue(value: Double): Self = StObject.set(x, "minimumValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumValueUndefined: Self = StObject.set(x, "minimumValue", js.undefined)
+    inline def setMinimumValueUndefined: Self = StObject.set(x, "minimumValue", js.undefined)
   }
 }

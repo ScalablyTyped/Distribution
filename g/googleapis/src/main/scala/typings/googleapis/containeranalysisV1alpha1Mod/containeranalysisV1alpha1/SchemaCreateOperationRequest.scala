@@ -21,25 +21,19 @@ trait SchemaCreateOperationRequest extends StObject {
 }
 object SchemaCreateOperationRequest {
   
-  @scala.inline
-  def apply(): SchemaCreateOperationRequest = {
+  inline def apply(): SchemaCreateOperationRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCreateOperationRequest]
   }
   
-  @scala.inline
-  implicit class SchemaCreateOperationRequestMutableBuilder[Self <: SchemaCreateOperationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCreateOperationRequest](x: Self) {
     
-    @scala.inline
-    def setOperation(value: SchemaOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: SchemaOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
+    inline def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
+    inline def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
     
-    @scala.inline
-    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
+    inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
   }
 }

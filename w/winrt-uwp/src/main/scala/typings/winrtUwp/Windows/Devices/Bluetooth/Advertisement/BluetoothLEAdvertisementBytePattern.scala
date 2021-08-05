@@ -19,22 +19,17 @@ trait BluetoothLEAdvertisementBytePattern extends StObject {
 }
 object BluetoothLEAdvertisementBytePattern {
   
-  @scala.inline
-  def apply(data: IBuffer, dataType: Double, offset: Double): BluetoothLEAdvertisementBytePattern = {
+  inline def apply(data: IBuffer, dataType: Double, offset: Double): BluetoothLEAdvertisementBytePattern = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], dataType = dataType.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[BluetoothLEAdvertisementBytePattern]
   }
   
-  @scala.inline
-  implicit class BluetoothLEAdvertisementBytePatternMutableBuilder[Self <: BluetoothLEAdvertisementBytePattern] (val x: Self) extends AnyVal {
+  extension [Self <: BluetoothLEAdvertisementBytePattern](x: Self) {
     
-    @scala.inline
-    def setData(value: IBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: IBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataType(value: Double): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+    inline def setDataType(value: Double): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
   }
 }

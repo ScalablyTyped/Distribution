@@ -19,22 +19,17 @@ trait Pointer
 }
 object Pointer {
   
-  @scala.inline
-  def apply(__type: String, className: String, objectId: String): Pointer = {
+  inline def apply(__type: String, className: String, objectId: String): Pointer = {
     val __obj = js.Dynamic.literal(__type = __type.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pointer]
   }
   
-  @scala.inline
-  implicit class PointerMutableBuilder[Self <: Pointer] (val x: Self) extends AnyVal {
+  extension [Self <: Pointer](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__type(value: String): Self = StObject.set(x, "__type", value.asInstanceOf[js.Any])
+    inline def set__type(value: String): Self = StObject.set(x, "__type", value.asInstanceOf[js.Any])
   }
 }

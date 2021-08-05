@@ -14,31 +14,23 @@ trait StartOfSourceMap extends StObject {
 }
 object StartOfSourceMap {
   
-  @scala.inline
-  def apply(): StartOfSourceMap = {
+  inline def apply(): StartOfSourceMap = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartOfSourceMap]
   }
   
-  @scala.inline
-  implicit class StartOfSourceMapMutableBuilder[Self <: StartOfSourceMap] (val x: Self) extends AnyVal {
+  extension [Self <: StartOfSourceMap](x: Self) {
     
-    @scala.inline
-    def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+    inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
-    @scala.inline
-    def setSkipValidation(value: Boolean): Self = StObject.set(x, "skipValidation", value.asInstanceOf[js.Any])
+    inline def setSkipValidation(value: Boolean): Self = StObject.set(x, "skipValidation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipValidationUndefined: Self = StObject.set(x, "skipValidation", js.undefined)
+    inline def setSkipValidationUndefined: Self = StObject.set(x, "skipValidation", js.undefined)
     
-    @scala.inline
-    def setSourceRoot(value: String): Self = StObject.set(x, "sourceRoot", value.asInstanceOf[js.Any])
+    inline def setSourceRoot(value: String): Self = StObject.set(x, "sourceRoot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceRootUndefined: Self = StObject.set(x, "sourceRoot", js.undefined)
+    inline def setSourceRootUndefined: Self = StObject.set(x, "sourceRoot", js.undefined)
   }
 }

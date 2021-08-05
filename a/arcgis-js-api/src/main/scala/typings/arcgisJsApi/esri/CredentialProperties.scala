@@ -57,55 +57,39 @@ trait CredentialProperties extends StObject {
 }
 object CredentialProperties {
   
-  @scala.inline
-  def apply(): CredentialProperties = {
+  inline def apply(): CredentialProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CredentialProperties]
   }
   
-  @scala.inline
-  implicit class CredentialPropertiesMutableBuilder[Self <: CredentialProperties] (val x: Self) extends AnyVal {
+  extension [Self <: CredentialProperties](x: Self) {
     
-    @scala.inline
-    def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+    inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
+    inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
     
-    @scala.inline
-    def setIsAdmin(value: Boolean): Self = StObject.set(x, "isAdmin", value.asInstanceOf[js.Any])
+    inline def setIsAdmin(value: Boolean): Self = StObject.set(x, "isAdmin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAdminUndefined: Self = StObject.set(x, "isAdmin", js.undefined)
+    inline def setIsAdminUndefined: Self = StObject.set(x, "isAdmin", js.undefined)
     
-    @scala.inline
-    def setOAuthState(value: js.Any): Self = StObject.set(x, "oAuthState", value.asInstanceOf[js.Any])
+    inline def setOAuthState(value: js.Any): Self = StObject.set(x, "oAuthState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOAuthStateUndefined: Self = StObject.set(x, "oAuthState", js.undefined)
+    inline def setOAuthStateUndefined: Self = StObject.set(x, "oAuthState", js.undefined)
     
-    @scala.inline
-    def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    inline def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
+    inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
     
-    @scala.inline
-    def setSsl(value: Boolean): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
+    inline def setSsl(value: Boolean): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
+    inline def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
     
-    @scala.inline
-    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+    inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
     
-    @scala.inline
-    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+    inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

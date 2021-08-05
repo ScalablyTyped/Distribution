@@ -30,8 +30,7 @@ trait Property
 }
 object Property {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     computed: Boolean,
     key: Expression,
     kind: init | get | set,
@@ -44,28 +43,20 @@ object Property {
     __obj.asInstanceOf[Property]
   }
   
-  @scala.inline
-  implicit class PropertyMutableBuilder[Self <: Property] (val x: Self) extends AnyVal {
+  extension [Self <: Property](x: Self) {
     
-    @scala.inline
-    def setComputed(value: Boolean): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
+    inline def setComputed(value: Boolean): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: Expression): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Expression): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: init | get | set): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: init | get | set): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: Boolean): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: Boolean): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShorthand(value: Boolean): Self = StObject.set(x, "shorthand", value.asInstanceOf[js.Any])
+    inline def setShorthand(value: Boolean): Self = StObject.set(x, "shorthand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.estree.estreeStrings.Property): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estree.estreeStrings.Property): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Expression | Pattern): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Expression | Pattern): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

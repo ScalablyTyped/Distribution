@@ -38,49 +38,35 @@ trait SegmentDemographics extends StObject {
 }
 object SegmentDemographics {
   
-  @scala.inline
-  def apply(): SegmentDemographics = {
+  inline def apply(): SegmentDemographics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SegmentDemographics]
   }
   
-  @scala.inline
-  implicit class SegmentDemographicsMutableBuilder[Self <: SegmentDemographics] (val x: Self) extends AnyVal {
+  extension [Self <: SegmentDemographics](x: Self) {
     
-    @scala.inline
-    def setAppVersion(value: SetDimension): Self = StObject.set(x, "AppVersion", value.asInstanceOf[js.Any])
+    inline def setAppVersion(value: SetDimension): Self = StObject.set(x, "AppVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppVersionUndefined: Self = StObject.set(x, "AppVersion", js.undefined)
+    inline def setAppVersionUndefined: Self = StObject.set(x, "AppVersion", js.undefined)
     
-    @scala.inline
-    def setChannel(value: SetDimension): Self = StObject.set(x, "Channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: SetDimension): Self = StObject.set(x, "Channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelUndefined: Self = StObject.set(x, "Channel", js.undefined)
+    inline def setChannelUndefined: Self = StObject.set(x, "Channel", js.undefined)
     
-    @scala.inline
-    def setDeviceType(value: SetDimension): Self = StObject.set(x, "DeviceType", value.asInstanceOf[js.Any])
+    inline def setDeviceType(value: SetDimension): Self = StObject.set(x, "DeviceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceTypeUndefined: Self = StObject.set(x, "DeviceType", js.undefined)
+    inline def setDeviceTypeUndefined: Self = StObject.set(x, "DeviceType", js.undefined)
     
-    @scala.inline
-    def setMake(value: SetDimension): Self = StObject.set(x, "Make", value.asInstanceOf[js.Any])
+    inline def setMake(value: SetDimension): Self = StObject.set(x, "Make", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMakeUndefined: Self = StObject.set(x, "Make", js.undefined)
+    inline def setMakeUndefined: Self = StObject.set(x, "Make", js.undefined)
     
-    @scala.inline
-    def setModel(value: SetDimension): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
+    inline def setModel(value: SetDimension): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "Model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "Model", js.undefined)
     
-    @scala.inline
-    def setPlatform(value: SetDimension): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: SetDimension): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformUndefined: Self = StObject.set(x, "Platform", js.undefined)
+    inline def setPlatformUndefined: Self = StObject.set(x, "Platform", js.undefined)
   }
 }

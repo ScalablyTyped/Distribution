@@ -18,8 +18,7 @@ trait AllowInInput extends StObject {
 }
 object AllowInInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allowInInput: Boolean,
     disabled: Boolean,
     global: Boolean,
@@ -30,22 +29,16 @@ object AllowInInput {
     __obj.asInstanceOf[AllowInInput]
   }
   
-  @scala.inline
-  implicit class AllowInInputMutableBuilder[Self <: AllowInInput] (val x: Self) extends AnyVal {
+  extension [Self <: AllowInInput](x: Self) {
     
-    @scala.inline
-    def setAllowInInput(value: Boolean): Self = StObject.set(x, "allowInInput", value.asInstanceOf[js.Any])
+    inline def setAllowInInput(value: Boolean): Self = StObject.set(x, "allowInInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+    inline def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreventDefault(value: Boolean): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
+    inline def setPreventDefault(value: Boolean): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopPropagation(value: Boolean): Self = StObject.set(x, "stopPropagation", value.asInstanceOf[js.Any])
+    inline def setStopPropagation(value: Boolean): Self = StObject.set(x, "stopPropagation", value.asInstanceOf[js.Any])
   }
 }

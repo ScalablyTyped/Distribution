@@ -10,6 +10,5 @@ object global {
   @JSGlobal("NativeKeyboard")
   @js.native
   def NativeKeyboard: typings.cordovaPluginNativeKeyboard.NativeKeyboard = js.native
-  @scala.inline
-  def NativeKeyboard_=(x: NativeKeyboard): Unit = js.Dynamic.global.updateDynamic("NativeKeyboard")(x.asInstanceOf[js.Any])
+  inline def NativeKeyboard_=(x: NativeKeyboard): Unit = js.Dynamic.global.updateDynamic("NativeKeyboard")(x.asInstanceOf[js.Any])
 }

@@ -48,8 +48,7 @@ trait StackItemObject extends StObject {
 }
 object StackItemObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alignOptions: AlignObject,
     axis: Axis,
     cumulative: Double,
@@ -63,31 +62,22 @@ object StackItemObject {
     __obj.asInstanceOf[StackItemObject]
   }
   
-  @scala.inline
-  implicit class StackItemObjectMutableBuilder[Self <: StackItemObject] (val x: Self) extends AnyVal {
+  extension [Self <: StackItemObject](x: Self) {
     
-    @scala.inline
-    def setAlignOptions(value: AlignObject): Self = StObject.set(x, "alignOptions", value.asInstanceOf[js.Any])
+    inline def setAlignOptions(value: AlignObject): Self = StObject.set(x, "alignOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxis(value: Axis): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: Axis): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCumulative(value: Double): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
+    inline def setCumulative(value: Double): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsNegative(value: Boolean): Self = StObject.set(x, "isNegative", value.asInstanceOf[js.Any])
+    inline def setIsNegative(value: Boolean): Self = StObject.set(x, "isNegative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: SVGElement): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: SVGElement): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: YAxisStackLabelsOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: YAxisStackLabelsOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
   }
 }

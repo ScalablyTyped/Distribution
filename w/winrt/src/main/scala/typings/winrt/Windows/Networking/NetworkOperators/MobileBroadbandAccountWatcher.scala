@@ -9,8 +9,7 @@ trait MobileBroadbandAccountWatcher
      with IMobileBroadbandAccountWatcher
 object MobileBroadbandAccountWatcher {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     onaccountadded: js.Any,
     onaccountremoved: js.Any,
     onaccountupdated: js.Any,

@@ -22,8 +22,7 @@ object anon {
   }
   object Clear {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       clear: /* repeated */ js.Any => Unit,
       peek: /* repeated */ js.Any => Unit | T,
       preload: /* repeated */ js.Any => Unit,
@@ -33,20 +32,15 @@ object anon {
       __obj.asInstanceOf[Clear[T]]
     }
     
-    @scala.inline
-    implicit class ClearMutableBuilder[Self <: Clear[?], T] (val x: Self & Clear[T]) extends AnyVal {
+    extension [Self <: Clear[?], T](x: Self & Clear[T]) {
       
-      @scala.inline
-      def setClear(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
+      inline def setClear(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPeek(value: /* repeated */ js.Any => Unit | T): Self = StObject.set(x, "peek", js.Any.fromFunction1(value))
+      inline def setPeek(value: /* repeated */ js.Any => Unit | T): Self = StObject.set(x, "peek", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPreload(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "preload", js.Any.fromFunction1(value))
+      inline def setPreload(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "preload", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRead(value: /* repeated */ js.Any => T): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
+      inline def setRead(value: /* repeated */ js.Any => T): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
     }
   }
 }

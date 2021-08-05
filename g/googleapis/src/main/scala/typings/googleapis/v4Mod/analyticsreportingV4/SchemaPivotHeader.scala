@@ -21,28 +21,21 @@ trait SchemaPivotHeader extends StObject {
 }
 object SchemaPivotHeader {
   
-  @scala.inline
-  def apply(): SchemaPivotHeader = {
+  inline def apply(): SchemaPivotHeader = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPivotHeader]
   }
   
-  @scala.inline
-  implicit class SchemaPivotHeaderMutableBuilder[Self <: SchemaPivotHeader] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPivotHeader](x: Self) {
     
-    @scala.inline
-    def setPivotHeaderEntries(value: js.Array[SchemaPivotHeaderEntry]): Self = StObject.set(x, "pivotHeaderEntries", value.asInstanceOf[js.Any])
+    inline def setPivotHeaderEntries(value: js.Array[SchemaPivotHeaderEntry]): Self = StObject.set(x, "pivotHeaderEntries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPivotHeaderEntriesUndefined: Self = StObject.set(x, "pivotHeaderEntries", js.undefined)
+    inline def setPivotHeaderEntriesUndefined: Self = StObject.set(x, "pivotHeaderEntries", js.undefined)
     
-    @scala.inline
-    def setPivotHeaderEntriesVarargs(value: SchemaPivotHeaderEntry*): Self = StObject.set(x, "pivotHeaderEntries", js.Array(value :_*))
+    inline def setPivotHeaderEntriesVarargs(value: SchemaPivotHeaderEntry*): Self = StObject.set(x, "pivotHeaderEntries", js.Array(value :_*))
     
-    @scala.inline
-    def setTotalPivotGroupsCount(value: Double): Self = StObject.set(x, "totalPivotGroupsCount", value.asInstanceOf[js.Any])
+    inline def setTotalPivotGroupsCount(value: Double): Self = StObject.set(x, "totalPivotGroupsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalPivotGroupsCountUndefined: Self = StObject.set(x, "totalPivotGroupsCount", js.undefined)
+    inline def setTotalPivotGroupsCountUndefined: Self = StObject.set(x, "totalPivotGroupsCount", js.undefined)
   }
 }

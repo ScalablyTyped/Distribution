@@ -55,20 +55,13 @@ object viewControllerMod {
     var state: Double = js.native
   }
   
-  @scala.inline
-  def convertToView(page: js.Any): ViewController | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToView")(page.asInstanceOf[js.Any]).asInstanceOf[ViewController | Null]
-  @scala.inline
-  def convertToView(page: js.Any, params: ComponentProps[Null]): ViewController | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToView")(page.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[ViewController | Null]
+  inline def convertToView(page: js.Any): ViewController | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToView")(page.asInstanceOf[js.Any]).asInstanceOf[ViewController | Null]
+  inline def convertToView(page: js.Any, params: ComponentProps[Null]): ViewController | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToView")(page.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[ViewController | Null]
   
-  @scala.inline
-  def convertToViews(pages: js.Array[NavComponentWithProps[js.Any]]): js.Array[ViewController] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToViews")(pages.asInstanceOf[js.Any]).asInstanceOf[js.Array[ViewController]]
+  inline def convertToViews(pages: js.Array[NavComponentWithProps[js.Any]]): js.Array[ViewController] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToViews")(pages.asInstanceOf[js.Any]).asInstanceOf[js.Array[ViewController]]
   
-  @scala.inline
-  def matches(view: Unit, id: String): /* is @ionic/core.@ionic/core/dist/types/components/nav/view-controller.ViewController */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(view.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[/* is @ionic/core.@ionic/core/dist/types/components/nav/view-controller.ViewController */ Boolean]
-  @scala.inline
-  def matches(view: Unit, id: String, params: ComponentProps[Null]): /* is @ionic/core.@ionic/core/dist/types/components/nav/view-controller.ViewController */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(view.asInstanceOf[js.Any], id.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[/* is @ionic/core.@ionic/core/dist/types/components/nav/view-controller.ViewController */ Boolean]
-  @scala.inline
-  def matches(view: ViewController, id: String): /* is @ionic/core.@ionic/core/dist/types/components/nav/view-controller.ViewController */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(view.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[/* is @ionic/core.@ionic/core/dist/types/components/nav/view-controller.ViewController */ Boolean]
-  @scala.inline
-  def matches(view: ViewController, id: String, params: ComponentProps[Null]): /* is @ionic/core.@ionic/core/dist/types/components/nav/view-controller.ViewController */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(view.asInstanceOf[js.Any], id.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[/* is @ionic/core.@ionic/core/dist/types/components/nav/view-controller.ViewController */ Boolean]
+  inline def matches(view: Unit, id: String): /* is @ionic/core.@ionic/core/dist/types/components/nav/view-controller.ViewController */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(view.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[/* is @ionic/core.@ionic/core/dist/types/components/nav/view-controller.ViewController */ Boolean]
+  inline def matches(view: Unit, id: String, params: ComponentProps[Null]): /* is @ionic/core.@ionic/core/dist/types/components/nav/view-controller.ViewController */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(view.asInstanceOf[js.Any], id.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[/* is @ionic/core.@ionic/core/dist/types/components/nav/view-controller.ViewController */ Boolean]
+  inline def matches(view: ViewController, id: String): /* is @ionic/core.@ionic/core/dist/types/components/nav/view-controller.ViewController */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(view.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[/* is @ionic/core.@ionic/core/dist/types/components/nav/view-controller.ViewController */ Boolean]
+  inline def matches(view: ViewController, id: String, params: ComponentProps[Null]): /* is @ionic/core.@ionic/core/dist/types/components/nav/view-controller.ViewController */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(view.asInstanceOf[js.Any], id.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[/* is @ionic/core.@ionic/core/dist/types/components/nav/view-controller.ViewController */ Boolean]
 }

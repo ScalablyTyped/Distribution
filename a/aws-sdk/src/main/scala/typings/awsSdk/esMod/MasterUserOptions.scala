@@ -23,31 +23,23 @@ trait MasterUserOptions extends StObject {
 }
 object MasterUserOptions {
   
-  @scala.inline
-  def apply(): MasterUserOptions = {
+  inline def apply(): MasterUserOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MasterUserOptions]
   }
   
-  @scala.inline
-  implicit class MasterUserOptionsMutableBuilder[Self <: MasterUserOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MasterUserOptions](x: Self) {
     
-    @scala.inline
-    def setMasterUserARN(value: ARN): Self = StObject.set(x, "MasterUserARN", value.asInstanceOf[js.Any])
+    inline def setMasterUserARN(value: ARN): Self = StObject.set(x, "MasterUserARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterUserARNUndefined: Self = StObject.set(x, "MasterUserARN", js.undefined)
+    inline def setMasterUserARNUndefined: Self = StObject.set(x, "MasterUserARN", js.undefined)
     
-    @scala.inline
-    def setMasterUserName(value: Username): Self = StObject.set(x, "MasterUserName", value.asInstanceOf[js.Any])
+    inline def setMasterUserName(value: Username): Self = StObject.set(x, "MasterUserName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterUserNameUndefined: Self = StObject.set(x, "MasterUserName", js.undefined)
+    inline def setMasterUserNameUndefined: Self = StObject.set(x, "MasterUserName", js.undefined)
     
-    @scala.inline
-    def setMasterUserPassword(value: Password): Self = StObject.set(x, "MasterUserPassword", value.asInstanceOf[js.Any])
+    inline def setMasterUserPassword(value: Password): Self = StObject.set(x, "MasterUserPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterUserPasswordUndefined: Self = StObject.set(x, "MasterUserPassword", js.undefined)
+    inline def setMasterUserPasswordUndefined: Self = StObject.set(x, "MasterUserPassword", js.undefined)
   }
 }

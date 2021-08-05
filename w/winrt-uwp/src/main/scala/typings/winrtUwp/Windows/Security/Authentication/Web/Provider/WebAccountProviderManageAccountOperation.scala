@@ -19,22 +19,17 @@ trait WebAccountProviderManageAccountOperation extends StObject {
 }
 object WebAccountProviderManageAccountOperation {
   
-  @scala.inline
-  def apply(kind: WebAccountProviderOperationKind, reportCompleted: () => Unit, webAccount: WebAccount): WebAccountProviderManageAccountOperation = {
+  inline def apply(kind: WebAccountProviderOperationKind, reportCompleted: () => Unit, webAccount: WebAccount): WebAccountProviderManageAccountOperation = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], reportCompleted = js.Any.fromFunction0(reportCompleted), webAccount = webAccount.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebAccountProviderManageAccountOperation]
   }
   
-  @scala.inline
-  implicit class WebAccountProviderManageAccountOperationMutableBuilder[Self <: WebAccountProviderManageAccountOperation] (val x: Self) extends AnyVal {
+  extension [Self <: WebAccountProviderManageAccountOperation](x: Self) {
     
-    @scala.inline
-    def setKind(value: WebAccountProviderOperationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: WebAccountProviderOperationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportCompleted(value: () => Unit): Self = StObject.set(x, "reportCompleted", js.Any.fromFunction0(value))
+    inline def setReportCompleted(value: () => Unit): Self = StObject.set(x, "reportCompleted", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWebAccount(value: WebAccount): Self = StObject.set(x, "webAccount", value.asInstanceOf[js.Any])
+    inline def setWebAccount(value: WebAccount): Self = StObject.set(x, "webAccount", value.asInstanceOf[js.Any])
   }
 }

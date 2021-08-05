@@ -43,65 +43,46 @@ object topSites {
   }
   object GetOptions {
     
-    @scala.inline
-    def apply(): GetOptions = {
+    inline def apply(): GetOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetOptions]
     }
     
-    @scala.inline
-    implicit class GetOptionsMutableBuilder[Self <: GetOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GetOptions](x: Self) {
       
-      @scala.inline
-      def setIncludeBlocked(value: Boolean): Self = StObject.set(x, "includeBlocked", value.asInstanceOf[js.Any])
+      inline def setIncludeBlocked(value: Boolean): Self = StObject.set(x, "includeBlocked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeBlockedUndefined: Self = StObject.set(x, "includeBlocked", js.undefined)
+      inline def setIncludeBlockedUndefined: Self = StObject.set(x, "includeBlocked", js.undefined)
       
-      @scala.inline
-      def setIncludeFavicon(value: Boolean): Self = StObject.set(x, "includeFavicon", value.asInstanceOf[js.Any])
+      inline def setIncludeFavicon(value: Boolean): Self = StObject.set(x, "includeFavicon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeFaviconUndefined: Self = StObject.set(x, "includeFavicon", js.undefined)
+      inline def setIncludeFaviconUndefined: Self = StObject.set(x, "includeFavicon", js.undefined)
       
-      @scala.inline
-      def setIncludePinned(value: Boolean): Self = StObject.set(x, "includePinned", value.asInstanceOf[js.Any])
+      inline def setIncludePinned(value: Boolean): Self = StObject.set(x, "includePinned", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludePinnedUndefined: Self = StObject.set(x, "includePinned", js.undefined)
+      inline def setIncludePinnedUndefined: Self = StObject.set(x, "includePinned", js.undefined)
       
-      @scala.inline
-      def setIncludeSearchShortcuts(value: Boolean): Self = StObject.set(x, "includeSearchShortcuts", value.asInstanceOf[js.Any])
+      inline def setIncludeSearchShortcuts(value: Boolean): Self = StObject.set(x, "includeSearchShortcuts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeSearchShortcutsUndefined: Self = StObject.set(x, "includeSearchShortcuts", js.undefined)
+      inline def setIncludeSearchShortcutsUndefined: Self = StObject.set(x, "includeSearchShortcuts", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setNewtab(value: Boolean): Self = StObject.set(x, "newtab", value.asInstanceOf[js.Any])
+      inline def setNewtab(value: Boolean): Self = StObject.set(x, "newtab", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewtabUndefined: Self = StObject.set(x, "newtab", js.undefined)
+      inline def setNewtabUndefined: Self = StObject.set(x, "newtab", js.undefined)
       
-      @scala.inline
-      def setOnePerDomain(value: Boolean): Self = StObject.set(x, "onePerDomain", value.asInstanceOf[js.Any])
+      inline def setOnePerDomain(value: Boolean): Self = StObject.set(x, "onePerDomain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnePerDomainUndefined: Self = StObject.set(x, "onePerDomain", js.undefined)
+      inline def setOnePerDomainUndefined: Self = StObject.set(x, "onePerDomain", js.undefined)
       
-      @scala.inline
-      def setProviders(value: js.Array[String]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
+      inline def setProviders(value: js.Array[String]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
+      inline def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
       
-      @scala.inline
-      def setProvidersVarargs(value: String*): Self = StObject.set(x, "providers", js.Array(value :_*))
+      inline def setProvidersVarargs(value: String*): Self = StObject.set(x, "providers", js.Array(value :_*))
     }
   }
   
@@ -123,35 +104,26 @@ object topSites {
   }
   object MostVisitedURL {
     
-    @scala.inline
-    def apply(url: String): MostVisitedURL = {
+    inline def apply(url: String): MostVisitedURL = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[MostVisitedURL]
     }
     
-    @scala.inline
-    implicit class MostVisitedURLMutableBuilder[Self <: MostVisitedURL] (val x: Self) extends AnyVal {
+    extension [Self <: MostVisitedURL](x: Self) {
       
-      @scala.inline
-      def setFavicon(value: String): Self = StObject.set(x, "favicon", value.asInstanceOf[js.Any])
+      inline def setFavicon(value: String): Self = StObject.set(x, "favicon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFaviconUndefined: Self = StObject.set(x, "favicon", js.undefined)
+      inline def setFaviconUndefined: Self = StObject.set(x, "favicon", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setType(value: MostVisitedURLType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: MostVisitedURLType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -163,10 +135,8 @@ object topSites {
   trait MostVisitedURLType extends StObject
   object MostVisitedURLType {
     
-    @scala.inline
-    def search: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.search = "search".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.search]
+    inline def search: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.search = "search".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.search]
     
-    @scala.inline
-    def url: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.url = "url".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.url]
+    inline def url: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.url = "url".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.url]
   }
 }

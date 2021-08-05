@@ -13,22 +13,17 @@ trait AppsListReposAccessibleToInstallationResponseData extends StObject {
 }
 object AppsListReposAccessibleToInstallationResponseData {
   
-  @scala.inline
-  def apply(repositories: js.Array[Allowrebasemerge], total_count: Double): AppsListReposAccessibleToInstallationResponseData = {
+  inline def apply(repositories: js.Array[Allowrebasemerge], total_count: Double): AppsListReposAccessibleToInstallationResponseData = {
     val __obj = js.Dynamic.literal(repositories = repositories.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppsListReposAccessibleToInstallationResponseData]
   }
   
-  @scala.inline
-  implicit class AppsListReposAccessibleToInstallationResponseDataMutableBuilder[Self <: AppsListReposAccessibleToInstallationResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: AppsListReposAccessibleToInstallationResponseData](x: Self) {
     
-    @scala.inline
-    def setRepositories(value: js.Array[Allowrebasemerge]): Self = StObject.set(x, "repositories", value.asInstanceOf[js.Any])
+    inline def setRepositories(value: js.Array[Allowrebasemerge]): Self = StObject.set(x, "repositories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoriesVarargs(value: Allowrebasemerge*): Self = StObject.set(x, "repositories", js.Array(value :_*))
+    inline def setRepositoriesVarargs(value: Allowrebasemerge*): Self = StObject.set(x, "repositories", js.Array(value :_*))
     
-    @scala.inline
-    def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
+    inline def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
   }
 }

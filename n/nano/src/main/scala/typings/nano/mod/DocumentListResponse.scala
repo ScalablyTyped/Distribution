@@ -22,31 +22,23 @@ trait DocumentListResponse[D] extends StObject {
 }
 object DocumentListResponse {
   
-  @scala.inline
-  def apply[D](offset: Double, rows: js.Array[DocumentResponseRow[D]], total_rows: Double): DocumentListResponse[D] = {
+  inline def apply[D](offset: Double, rows: js.Array[DocumentResponseRow[D]], total_rows: Double): DocumentListResponse[D] = {
     val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any], total_rows = total_rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentListResponse[D]]
   }
   
-  @scala.inline
-  implicit class DocumentListResponseMutableBuilder[Self <: DocumentListResponse[?], D] (val x: Self & DocumentListResponse[D]) extends AnyVal {
+  extension [Self <: DocumentListResponse[?], D](x: Self & DocumentListResponse[D]) {
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRows(value: js.Array[DocumentResponseRow[D]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[DocumentResponseRow[D]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsVarargs(value: DocumentResponseRow[D]*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: DocumentResponseRow[D]*): Self = StObject.set(x, "rows", js.Array(value :_*))
     
-    @scala.inline
-    def setTotal_rows(value: Double): Self = StObject.set(x, "total_rows", value.asInstanceOf[js.Any])
+    inline def setTotal_rows(value: Double): Self = StObject.set(x, "total_rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate_seq(value: Double): Self = StObject.set(x, "update_seq", value.asInstanceOf[js.Any])
+    inline def setUpdate_seq(value: Double): Self = StObject.set(x, "update_seq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate_seqUndefined: Self = StObject.set(x, "update_seq", js.undefined)
+    inline def setUpdate_seqUndefined: Self = StObject.set(x, "update_seq", js.undefined)
   }
 }

@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdSelectionFlags extends StObject
 object WdSelectionFlags {
   
-  @scala.inline
-  def wdSelActive: `8` = 8.asInstanceOf[`8`]
+  inline def wdSelActive: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def wdSelAtEOL: `2` = 2.asInstanceOf[`2`]
+  inline def wdSelAtEOL: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdSelOvertype: `4` = 4.asInstanceOf[`4`]
+  inline def wdSelOvertype: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def wdSelReplace: `16` = 16.asInstanceOf[`16`]
+  inline def wdSelReplace: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def wdSelStartActive: `1` = 1.asInstanceOf[`1`]
+  inline def wdSelStartActive: `1` = 1.asInstanceOf[`1`]
 }

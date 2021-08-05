@@ -36,15 +36,13 @@ object SettingsFlyout {
     * @param e An object that contains information about the event, received from the WinJS.Application.onsettings event. The detail property of this object contains the applicationcommands sub-property that you set to an array of settings commands. You then populate the SettingsFlyout with these commands by a call to populateSettings.
     **/
   /* static member */
-  @scala.inline
-  def populateSettings(e: CustomEvent[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("populateSettings")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def populateSettings(e: CustomEvent[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("populateSettings")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Shows the SettingsPane UI, if hidden, regardless of other state.
     **/
   /* static member */
-  @scala.inline
-  def show(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")().asInstanceOf[Unit]
+  inline def show(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")().asInstanceOf[Unit]
   
   /**
     * Show the Settings flyout using the Settings element identifier (ID) and the path of the page that contains the Settings element.
@@ -52,8 +50,7 @@ object SettingsFlyout {
     * @param path The path of the page that contains the Settings element.
     **/
   /* static member */
-  @scala.inline
-  def showSettings(id: String, path: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showSettings")(id.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def showSettings(id: String, path: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showSettings")(id.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Indicates that the object is compatibile with declarative processing.
@@ -62,6 +59,5 @@ object SettingsFlyout {
   @JSGlobal("WinJS.UI.SettingsFlyout.supportedForProcessing")
   @js.native
   def supportedForProcessing: Boolean = js.native
-  @scala.inline
-  def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
+  inline def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
 }

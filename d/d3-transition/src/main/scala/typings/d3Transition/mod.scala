@@ -20,38 +20,23 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def active[Datum, PElement /* <: BaseType */, PDatum](): (Transition_[Null, Datum, PElement, PDatum]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("active")().asInstanceOf[(Transition_[Null, Datum, PElement, PDatum]) | Null]
-  @scala.inline
-  def active[Datum, PElement /* <: BaseType */, PDatum](node: Null, name: String): (Transition_[Null, Datum, PElement, PDatum]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("active")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[(Transition_[Null, Datum, PElement, PDatum]) | Null]
-  @scala.inline
-  def active[Datum, PElement /* <: BaseType */, PDatum](node: EnterElement): (Transition_[EnterElement, Datum, PElement, PDatum]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("active")(node.asInstanceOf[js.Any]).asInstanceOf[(Transition_[EnterElement, Datum, PElement, PDatum]) | Null]
-  @scala.inline
-  def active[Datum, PElement /* <: BaseType */, PDatum](node: EnterElement, name: String): (Transition_[EnterElement, Datum, PElement, PDatum]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("active")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[(Transition_[EnterElement, Datum, PElement, PDatum]) | Null]
-  @scala.inline
-  def active[Datum, PElement /* <: BaseType */, PDatum](node: Document): (Transition_[Document, Datum, PElement, PDatum]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("active")(node.asInstanceOf[js.Any]).asInstanceOf[(Transition_[Document, Datum, PElement, PDatum]) | Null]
-  @scala.inline
-  def active[Datum, PElement /* <: BaseType */, PDatum](node: Document, name: String): (Transition_[Document, Datum, PElement, PDatum]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("active")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[(Transition_[Document, Datum, PElement, PDatum]) | Null]
-  @scala.inline
-  def active[Datum, PElement /* <: BaseType */, PDatum](node: Element): (Transition_[Element, Datum, PElement, PDatum]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("active")(node.asInstanceOf[js.Any]).asInstanceOf[(Transition_[Element, Datum, PElement, PDatum]) | Null]
-  @scala.inline
-  def active[Datum, PElement /* <: BaseType */, PDatum](node: Element, name: String): (Transition_[Element, Datum, PElement, PDatum]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("active")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[(Transition_[Element, Datum, PElement, PDatum]) | Null]
-  @scala.inline
-  def active[Datum, PElement /* <: BaseType */, PDatum](node: Window): (Transition_[Window, Datum, PElement, PDatum]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("active")(node.asInstanceOf[js.Any]).asInstanceOf[(Transition_[Window, Datum, PElement, PDatum]) | Null]
-  @scala.inline
-  def active[Datum, PElement /* <: BaseType */, PDatum](node: Window, name: String): (Transition_[Window, Datum, PElement, PDatum]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("active")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[(Transition_[Window, Datum, PElement, PDatum]) | Null]
+  inline def active[Datum, PElement /* <: BaseType */, PDatum](): (Transition_[Null, Datum, PElement, PDatum]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("active")().asInstanceOf[(Transition_[Null, Datum, PElement, PDatum]) | Null]
+  inline def active[Datum, PElement /* <: BaseType */, PDatum](node: Null, name: String): (Transition_[Null, Datum, PElement, PDatum]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("active")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[(Transition_[Null, Datum, PElement, PDatum]) | Null]
+  inline def active[Datum, PElement /* <: BaseType */, PDatum](node: EnterElement): (Transition_[EnterElement, Datum, PElement, PDatum]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("active")(node.asInstanceOf[js.Any]).asInstanceOf[(Transition_[EnterElement, Datum, PElement, PDatum]) | Null]
+  inline def active[Datum, PElement /* <: BaseType */, PDatum](node: EnterElement, name: String): (Transition_[EnterElement, Datum, PElement, PDatum]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("active")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[(Transition_[EnterElement, Datum, PElement, PDatum]) | Null]
+  inline def active[Datum, PElement /* <: BaseType */, PDatum](node: Document): (Transition_[Document, Datum, PElement, PDatum]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("active")(node.asInstanceOf[js.Any]).asInstanceOf[(Transition_[Document, Datum, PElement, PDatum]) | Null]
+  inline def active[Datum, PElement /* <: BaseType */, PDatum](node: Document, name: String): (Transition_[Document, Datum, PElement, PDatum]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("active")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[(Transition_[Document, Datum, PElement, PDatum]) | Null]
+  inline def active[Datum, PElement /* <: BaseType */, PDatum](node: Element): (Transition_[Element, Datum, PElement, PDatum]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("active")(node.asInstanceOf[js.Any]).asInstanceOf[(Transition_[Element, Datum, PElement, PDatum]) | Null]
+  inline def active[Datum, PElement /* <: BaseType */, PDatum](node: Element, name: String): (Transition_[Element, Datum, PElement, PDatum]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("active")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[(Transition_[Element, Datum, PElement, PDatum]) | Null]
+  inline def active[Datum, PElement /* <: BaseType */, PDatum](node: Window): (Transition_[Window, Datum, PElement, PDatum]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("active")(node.asInstanceOf[js.Any]).asInstanceOf[(Transition_[Window, Datum, PElement, PDatum]) | Null]
+  inline def active[Datum, PElement /* <: BaseType */, PDatum](node: Window, name: String): (Transition_[Window, Datum, PElement, PDatum]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("active")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[(Transition_[Window, Datum, PElement, PDatum]) | Null]
   
-  @scala.inline
-  def interrupt(node: BaseType): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("interrupt")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def interrupt(node: BaseType, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("interrupt")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def interrupt(node: BaseType): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("interrupt")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def interrupt(node: BaseType, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("interrupt")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def transition[OldDatum](): Transition_[HTMLElement, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("transition")().asInstanceOf[Transition_[HTMLElement, OldDatum, Null, Unit]]
-  @scala.inline
-  def transition[OldDatum](name: String): Transition_[HTMLElement, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("transition")(name.asInstanceOf[js.Any]).asInstanceOf[Transition_[HTMLElement, OldDatum, Null, Unit]]
-  @scala.inline
-  def transition[OldDatum](transition: Transition_[BaseType, js.Any, BaseType, js.Any]): Transition_[HTMLElement, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("transition")(transition.asInstanceOf[js.Any]).asInstanceOf[Transition_[HTMLElement, OldDatum, Null, Unit]]
+  inline def transition[OldDatum](): Transition_[HTMLElement, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("transition")().asInstanceOf[Transition_[HTMLElement, OldDatum, Null, Unit]]
+  inline def transition[OldDatum](name: String): Transition_[HTMLElement, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("transition")(name.asInstanceOf[js.Any]).asInstanceOf[Transition_[HTMLElement, OldDatum, Null, Unit]]
+  inline def transition[OldDatum](transition: Transition_[BaseType, js.Any, BaseType, js.Any]): Transition_[HTMLElement, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("transition")(transition.asInstanceOf[js.Any]).asInstanceOf[Transition_[HTMLElement, OldDatum, Null, Unit]]
   
   type SelectionOrTransition[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, PDatum] = (Selection_[GElement, Datum, PElement, PDatum]) | (Transition_[GElement, Datum, PElement, PDatum])
   

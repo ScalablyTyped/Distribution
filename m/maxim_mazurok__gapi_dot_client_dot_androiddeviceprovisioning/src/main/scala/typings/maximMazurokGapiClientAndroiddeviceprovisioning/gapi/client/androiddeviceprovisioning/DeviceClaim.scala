@@ -23,43 +23,31 @@ trait DeviceClaim extends StObject {
 }
 object DeviceClaim {
   
-  @scala.inline
-  def apply(): DeviceClaim = {
+  inline def apply(): DeviceClaim = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceClaim]
   }
   
-  @scala.inline
-  implicit class DeviceClaimMutableBuilder[Self <: DeviceClaim] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceClaim](x: Self) {
     
-    @scala.inline
-    def setOwnerCompanyId(value: String): Self = StObject.set(x, "ownerCompanyId", value.asInstanceOf[js.Any])
+    inline def setOwnerCompanyId(value: String): Self = StObject.set(x, "ownerCompanyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerCompanyIdUndefined: Self = StObject.set(x, "ownerCompanyId", js.undefined)
+    inline def setOwnerCompanyIdUndefined: Self = StObject.set(x, "ownerCompanyId", js.undefined)
     
-    @scala.inline
-    def setResellerId(value: String): Self = StObject.set(x, "resellerId", value.asInstanceOf[js.Any])
+    inline def setResellerId(value: String): Self = StObject.set(x, "resellerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResellerIdUndefined: Self = StObject.set(x, "resellerId", js.undefined)
+    inline def setResellerIdUndefined: Self = StObject.set(x, "resellerId", js.undefined)
     
-    @scala.inline
-    def setSectionType(value: String): Self = StObject.set(x, "sectionType", value.asInstanceOf[js.Any])
+    inline def setSectionType(value: String): Self = StObject.set(x, "sectionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectionTypeUndefined: Self = StObject.set(x, "sectionType", js.undefined)
+    inline def setSectionTypeUndefined: Self = StObject.set(x, "sectionType", js.undefined)
     
-    @scala.inline
-    def setVacationModeExpireTime(value: String): Self = StObject.set(x, "vacationModeExpireTime", value.asInstanceOf[js.Any])
+    inline def setVacationModeExpireTime(value: String): Self = StObject.set(x, "vacationModeExpireTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVacationModeExpireTimeUndefined: Self = StObject.set(x, "vacationModeExpireTime", js.undefined)
+    inline def setVacationModeExpireTimeUndefined: Self = StObject.set(x, "vacationModeExpireTime", js.undefined)
     
-    @scala.inline
-    def setVacationModeStartTime(value: String): Self = StObject.set(x, "vacationModeStartTime", value.asInstanceOf[js.Any])
+    inline def setVacationModeStartTime(value: String): Self = StObject.set(x, "vacationModeStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVacationModeStartTimeUndefined: Self = StObject.set(x, "vacationModeStartTime", js.undefined)
+    inline def setVacationModeStartTimeUndefined: Self = StObject.set(x, "vacationModeStartTime", js.undefined)
   }
 }

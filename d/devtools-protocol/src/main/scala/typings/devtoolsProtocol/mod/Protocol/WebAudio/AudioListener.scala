@@ -12,19 +12,15 @@ trait AudioListener extends StObject {
 }
 object AudioListener {
   
-  @scala.inline
-  def apply(contextId: GraphObjectId, listenerId: GraphObjectId): AudioListener = {
+  inline def apply(contextId: GraphObjectId, listenerId: GraphObjectId): AudioListener = {
     val __obj = js.Dynamic.literal(contextId = contextId.asInstanceOf[js.Any], listenerId = listenerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioListener]
   }
   
-  @scala.inline
-  implicit class AudioListenerMutableBuilder[Self <: AudioListener] (val x: Self) extends AnyVal {
+  extension [Self <: AudioListener](x: Self) {
     
-    @scala.inline
-    def setContextId(value: GraphObjectId): Self = StObject.set(x, "contextId", value.asInstanceOf[js.Any])
+    inline def setContextId(value: GraphObjectId): Self = StObject.set(x, "contextId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListenerId(value: GraphObjectId): Self = StObject.set(x, "listenerId", value.asInstanceOf[js.Any])
+    inline def setListenerId(value: GraphObjectId): Self = StObject.set(x, "listenerId", value.asInstanceOf[js.Any])
   }
 }

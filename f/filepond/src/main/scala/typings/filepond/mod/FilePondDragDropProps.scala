@@ -34,40 +34,29 @@ trait FilePondDragDropProps extends StObject {
 }
 object FilePondDragDropProps {
   
-  @scala.inline
-  def apply(): FilePondDragDropProps = {
+  inline def apply(): FilePondDragDropProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FilePondDragDropProps]
   }
   
-  @scala.inline
-  implicit class FilePondDragDropPropsMutableBuilder[Self <: FilePondDragDropProps] (val x: Self) extends AnyVal {
+  extension [Self <: FilePondDragDropProps](x: Self) {
     
-    @scala.inline
-    def setDropOnElement(value: Boolean): Self = StObject.set(x, "dropOnElement", value.asInstanceOf[js.Any])
+    inline def setDropOnElement(value: Boolean): Self = StObject.set(x, "dropOnElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropOnElementUndefined: Self = StObject.set(x, "dropOnElement", js.undefined)
+    inline def setDropOnElementUndefined: Self = StObject.set(x, "dropOnElement", js.undefined)
     
-    @scala.inline
-    def setDropOnPage(value: Boolean): Self = StObject.set(x, "dropOnPage", value.asInstanceOf[js.Any])
+    inline def setDropOnPage(value: Boolean): Self = StObject.set(x, "dropOnPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropOnPageUndefined: Self = StObject.set(x, "dropOnPage", js.undefined)
+    inline def setDropOnPageUndefined: Self = StObject.set(x, "dropOnPage", js.undefined)
     
-    @scala.inline
-    def setDropValidation(value: Boolean): Self = StObject.set(x, "dropValidation", value.asInstanceOf[js.Any])
+    inline def setDropValidation(value: Boolean): Self = StObject.set(x, "dropValidation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropValidationUndefined: Self = StObject.set(x, "dropValidation", js.undefined)
+    inline def setDropValidationUndefined: Self = StObject.set(x, "dropValidation", js.undefined)
     
-    @scala.inline
-    def setIgnoredFiles(value: js.Array[String]): Self = StObject.set(x, "ignoredFiles", value.asInstanceOf[js.Any])
+    inline def setIgnoredFiles(value: js.Array[String]): Self = StObject.set(x, "ignoredFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoredFilesUndefined: Self = StObject.set(x, "ignoredFiles", js.undefined)
+    inline def setIgnoredFilesUndefined: Self = StObject.set(x, "ignoredFiles", js.undefined)
     
-    @scala.inline
-    def setIgnoredFilesVarargs(value: String*): Self = StObject.set(x, "ignoredFiles", js.Array(value :_*))
+    inline def setIgnoredFilesVarargs(value: String*): Self = StObject.set(x, "ignoredFiles", js.Array(value :_*))
   }
 }

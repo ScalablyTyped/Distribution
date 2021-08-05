@@ -24,22 +24,17 @@ trait TestMessageLogDetails extends StObject {
 }
 object TestMessageLogDetails {
   
-  @scala.inline
-  def apply(dateCreated: Date, entryId: Double, message: String): TestMessageLogDetails = {
+  inline def apply(dateCreated: Date, entryId: Double, message: String): TestMessageLogDetails = {
     val __obj = js.Dynamic.literal(dateCreated = dateCreated.asInstanceOf[js.Any], entryId = entryId.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestMessageLogDetails]
   }
   
-  @scala.inline
-  implicit class TestMessageLogDetailsMutableBuilder[Self <: TestMessageLogDetails] (val x: Self) extends AnyVal {
+  extension [Self <: TestMessageLogDetails](x: Self) {
     
-    @scala.inline
-    def setDateCreated(value: Date): Self = StObject.set(x, "dateCreated", value.asInstanceOf[js.Any])
+    inline def setDateCreated(value: Date): Self = StObject.set(x, "dateCreated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntryId(value: Double): Self = StObject.set(x, "entryId", value.asInstanceOf[js.Any])
+    inline def setEntryId(value: Double): Self = StObject.set(x, "entryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

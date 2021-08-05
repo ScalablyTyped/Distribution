@@ -15,25 +15,19 @@ trait MuteConfig extends StObject {
 }
 object MuteConfig {
   
-  @scala.inline
-  def apply(): MuteConfig = {
+  inline def apply(): MuteConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MuteConfig]
   }
   
-  @scala.inline
-  implicit class MuteConfigMutableBuilder[Self <: MuteConfig] (val x: Self) extends AnyVal {
+  extension [Self <: MuteConfig](x: Self) {
     
-    @scala.inline
-    def setMuteEarphone(value: Boolean): Self = StObject.set(x, "muteEarphone", value.asInstanceOf[js.Any])
+    inline def setMuteEarphone(value: Boolean): Self = StObject.set(x, "muteEarphone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMuteEarphoneUndefined: Self = StObject.set(x, "muteEarphone", js.undefined)
+    inline def setMuteEarphoneUndefined: Self = StObject.set(x, "muteEarphone", js.undefined)
     
-    @scala.inline
-    def setMuteMicrophone(value: Boolean): Self = StObject.set(x, "muteMicrophone", value.asInstanceOf[js.Any])
+    inline def setMuteMicrophone(value: Boolean): Self = StObject.set(x, "muteMicrophone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMuteMicrophoneUndefined: Self = StObject.set(x, "muteMicrophone", js.undefined)
+    inline def setMuteMicrophoneUndefined: Self = StObject.set(x, "muteMicrophone", js.undefined)
   }
 }

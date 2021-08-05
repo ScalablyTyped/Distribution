@@ -12,19 +12,15 @@ trait SucceededBoolean extends StObject {
 }
 object SucceededBoolean {
   
-  @scala.inline
-  def apply(succeeded: Boolean, value: Boolean): SucceededBoolean = {
+  inline def apply(succeeded: Boolean, value: Boolean): SucceededBoolean = {
     val __obj = js.Dynamic.literal(succeeded = succeeded.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SucceededBoolean]
   }
   
-  @scala.inline
-  implicit class SucceededBooleanMutableBuilder[Self <: SucceededBoolean] (val x: Self) extends AnyVal {
+  extension [Self <: SucceededBoolean](x: Self) {
     
-    @scala.inline
-    def setSucceeded(value: Boolean): Self = StObject.set(x, "succeeded", value.asInstanceOf[js.Any])
+    inline def setSucceeded(value: Boolean): Self = StObject.set(x, "succeeded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

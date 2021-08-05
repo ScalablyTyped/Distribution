@@ -14,25 +14,19 @@ trait MetricRange extends StObject {
 }
 object MetricRange {
   
-  @scala.inline
-  def apply(): MetricRange = {
+  inline def apply(): MetricRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MetricRange]
   }
   
-  @scala.inline
-  implicit class MetricRangeMutableBuilder[Self <: MetricRange] (val x: Self) extends AnyVal {
+  extension [Self <: MetricRange](x: Self) {
     
-    @scala.inline
-    def setRange(value: GoogleMonitoringV3Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: GoogleMonitoringV3Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    @scala.inline
-    def setTimeSeries(value: String): Self = StObject.set(x, "timeSeries", value.asInstanceOf[js.Any])
+    inline def setTimeSeries(value: String): Self = StObject.set(x, "timeSeries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeSeriesUndefined: Self = StObject.set(x, "timeSeries", js.undefined)
+    inline def setTimeSeriesUndefined: Self = StObject.set(x, "timeSeries", js.undefined)
   }
 }

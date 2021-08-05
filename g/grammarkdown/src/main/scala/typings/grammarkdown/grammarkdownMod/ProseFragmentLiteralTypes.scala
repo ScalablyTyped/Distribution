@@ -21,8 +21,7 @@ trait ProseFragmentLiteralTypes extends StObject {
 }
 object ProseFragmentLiteralTypes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `49`: ProseFragmentLiteral[`49`],
     `50`: ProseFragmentLiteral[`50`],
     `51`: ProseFragmentLiteral[`51`],
@@ -36,19 +35,14 @@ object ProseFragmentLiteralTypes {
     __obj.asInstanceOf[ProseFragmentLiteralTypes]
   }
   
-  @scala.inline
-  implicit class ProseFragmentLiteralTypesMutableBuilder[Self <: ProseFragmentLiteralTypes] (val x: Self) extends AnyVal {
+  extension [Self <: ProseFragmentLiteralTypes](x: Self) {
     
-    @scala.inline
-    def set49(value: ProseFragmentLiteral[`49`]): Self = StObject.set(x, "49", value.asInstanceOf[js.Any])
+    inline def set49(value: ProseFragmentLiteral[`49`]): Self = StObject.set(x, "49", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set50(value: ProseFragmentLiteral[`50`]): Self = StObject.set(x, "50", value.asInstanceOf[js.Any])
+    inline def set50(value: ProseFragmentLiteral[`50`]): Self = StObject.set(x, "50", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set51(value: ProseFragmentLiteral[`51`]): Self = StObject.set(x, "51", value.asInstanceOf[js.Any])
+    inline def set51(value: ProseFragmentLiteral[`51`]): Self = StObject.set(x, "51", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set52(value: ProseFragmentLiteral[`52`]): Self = StObject.set(x, "52", value.asInstanceOf[js.Any])
+    inline def set52(value: ProseFragmentLiteral[`52`]): Self = StObject.set(x, "52", value.asInstanceOf[js.Any])
   }
 }

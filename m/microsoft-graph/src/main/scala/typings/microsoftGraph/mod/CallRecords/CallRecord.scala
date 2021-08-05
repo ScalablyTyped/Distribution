@@ -62,94 +62,65 @@ trait CallRecord
 }
 object CallRecord {
   
-  @scala.inline
-  def apply(): CallRecord = {
+  inline def apply(): CallRecord = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CallRecord]
   }
   
-  @scala.inline
-  implicit class CallRecordMutableBuilder[Self <: CallRecord] (val x: Self) extends AnyVal {
+  extension [Self <: CallRecord](x: Self) {
     
-    @scala.inline
-    def setEndDateTime(value: String): Self = StObject.set(x, "endDateTime", value.asInstanceOf[js.Any])
+    inline def setEndDateTime(value: String): Self = StObject.set(x, "endDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDateTimeUndefined: Self = StObject.set(x, "endDateTime", js.undefined)
+    inline def setEndDateTimeUndefined: Self = StObject.set(x, "endDateTime", js.undefined)
     
-    @scala.inline
-    def setJoinWebUrl(value: NullableOption[String]): Self = StObject.set(x, "joinWebUrl", value.asInstanceOf[js.Any])
+    inline def setJoinWebUrl(value: NullableOption[String]): Self = StObject.set(x, "joinWebUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJoinWebUrlNull: Self = StObject.set(x, "joinWebUrl", null)
+    inline def setJoinWebUrlNull: Self = StObject.set(x, "joinWebUrl", null)
     
-    @scala.inline
-    def setJoinWebUrlUndefined: Self = StObject.set(x, "joinWebUrl", js.undefined)
+    inline def setJoinWebUrlUndefined: Self = StObject.set(x, "joinWebUrl", js.undefined)
     
-    @scala.inline
-    def setLastModifiedDateTime(value: String): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDateTime(value: String): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
+    inline def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
     
-    @scala.inline
-    def setModalities(value: js.Array[Modality]): Self = StObject.set(x, "modalities", value.asInstanceOf[js.Any])
+    inline def setModalities(value: js.Array[Modality]): Self = StObject.set(x, "modalities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalitiesUndefined: Self = StObject.set(x, "modalities", js.undefined)
+    inline def setModalitiesUndefined: Self = StObject.set(x, "modalities", js.undefined)
     
-    @scala.inline
-    def setModalitiesVarargs(value: Modality*): Self = StObject.set(x, "modalities", js.Array(value :_*))
+    inline def setModalitiesVarargs(value: Modality*): Self = StObject.set(x, "modalities", js.Array(value :_*))
     
-    @scala.inline
-    def setOrganizer(value: NullableOption[IdentitySet]): Self = StObject.set(x, "organizer", value.asInstanceOf[js.Any])
+    inline def setOrganizer(value: NullableOption[IdentitySet]): Self = StObject.set(x, "organizer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizerNull: Self = StObject.set(x, "organizer", null)
+    inline def setOrganizerNull: Self = StObject.set(x, "organizer", null)
     
-    @scala.inline
-    def setOrganizerUndefined: Self = StObject.set(x, "organizer", js.undefined)
+    inline def setOrganizerUndefined: Self = StObject.set(x, "organizer", js.undefined)
     
-    @scala.inline
-    def setParticipants(value: NullableOption[js.Array[IdentitySet]]): Self = StObject.set(x, "participants", value.asInstanceOf[js.Any])
+    inline def setParticipants(value: NullableOption[js.Array[IdentitySet]]): Self = StObject.set(x, "participants", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParticipantsNull: Self = StObject.set(x, "participants", null)
+    inline def setParticipantsNull: Self = StObject.set(x, "participants", null)
     
-    @scala.inline
-    def setParticipantsUndefined: Self = StObject.set(x, "participants", js.undefined)
+    inline def setParticipantsUndefined: Self = StObject.set(x, "participants", js.undefined)
     
-    @scala.inline
-    def setParticipantsVarargs(value: IdentitySet*): Self = StObject.set(x, "participants", js.Array(value :_*))
+    inline def setParticipantsVarargs(value: IdentitySet*): Self = StObject.set(x, "participants", js.Array(value :_*))
     
-    @scala.inline
-    def setSessions(value: NullableOption[js.Array[Session]]): Self = StObject.set(x, "sessions", value.asInstanceOf[js.Any])
+    inline def setSessions(value: NullableOption[js.Array[Session]]): Self = StObject.set(x, "sessions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionsNull: Self = StObject.set(x, "sessions", null)
+    inline def setSessionsNull: Self = StObject.set(x, "sessions", null)
     
-    @scala.inline
-    def setSessionsUndefined: Self = StObject.set(x, "sessions", js.undefined)
+    inline def setSessionsUndefined: Self = StObject.set(x, "sessions", js.undefined)
     
-    @scala.inline
-    def setSessionsVarargs(value: Session*): Self = StObject.set(x, "sessions", js.Array(value :_*))
+    inline def setSessionsVarargs(value: Session*): Self = StObject.set(x, "sessions", js.Array(value :_*))
     
-    @scala.inline
-    def setStartDateTime(value: String): Self = StObject.set(x, "startDateTime", value.asInstanceOf[js.Any])
+    inline def setStartDateTime(value: String): Self = StObject.set(x, "startDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDateTimeUndefined: Self = StObject.set(x, "startDateTime", js.undefined)
+    inline def setStartDateTimeUndefined: Self = StObject.set(x, "startDateTime", js.undefined)
     
-    @scala.inline
-    def setType(value: CallType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: CallType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

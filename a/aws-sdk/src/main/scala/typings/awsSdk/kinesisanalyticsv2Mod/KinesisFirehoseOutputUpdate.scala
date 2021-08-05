@@ -13,16 +13,13 @@ trait KinesisFirehoseOutputUpdate extends StObject {
 }
 object KinesisFirehoseOutputUpdate {
   
-  @scala.inline
-  def apply(ResourceARNUpdate: ResourceARN): KinesisFirehoseOutputUpdate = {
+  inline def apply(ResourceARNUpdate: ResourceARN): KinesisFirehoseOutputUpdate = {
     val __obj = js.Dynamic.literal(ResourceARNUpdate = ResourceARNUpdate.asInstanceOf[js.Any])
     __obj.asInstanceOf[KinesisFirehoseOutputUpdate]
   }
   
-  @scala.inline
-  implicit class KinesisFirehoseOutputUpdateMutableBuilder[Self <: KinesisFirehoseOutputUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: KinesisFirehoseOutputUpdate](x: Self) {
     
-    @scala.inline
-    def setResourceARNUpdate(value: ResourceARN): Self = StObject.set(x, "ResourceARNUpdate", value.asInstanceOf[js.Any])
+    inline def setResourceARNUpdate(value: ResourceARN): Self = StObject.set(x, "ResourceARNUpdate", value.asInstanceOf[js.Any])
   }
 }

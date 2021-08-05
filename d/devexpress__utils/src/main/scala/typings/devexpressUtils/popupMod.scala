@@ -17,7 +17,6 @@ object popupMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def preventContextMenu(evt: MouseEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("preventContextMenu")(evt.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def preventContextMenu(evt: MouseEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("preventContextMenu")(evt.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

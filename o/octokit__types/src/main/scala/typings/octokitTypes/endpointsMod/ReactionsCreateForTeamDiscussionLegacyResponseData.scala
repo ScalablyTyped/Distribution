@@ -19,28 +19,21 @@ trait ReactionsCreateForTeamDiscussionLegacyResponseData extends StObject {
 }
 object ReactionsCreateForTeamDiscussionLegacyResponseData {
   
-  @scala.inline
-  def apply(content: String, created_at: String, id: Double, node_id: String, user: Avatarurl): ReactionsCreateForTeamDiscussionLegacyResponseData = {
+  inline def apply(content: String, created_at: String, id: Double, node_id: String, user: Avatarurl): ReactionsCreateForTeamDiscussionLegacyResponseData = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactionsCreateForTeamDiscussionLegacyResponseData]
   }
   
-  @scala.inline
-  implicit class ReactionsCreateForTeamDiscussionLegacyResponseDataMutableBuilder[Self <: ReactionsCreateForTeamDiscussionLegacyResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: ReactionsCreateForTeamDiscussionLegacyResponseData](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+    inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
+    inline def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: Avatarurl): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: Avatarurl): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

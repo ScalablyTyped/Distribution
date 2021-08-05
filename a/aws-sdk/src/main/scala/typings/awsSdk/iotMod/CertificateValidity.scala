@@ -18,25 +18,19 @@ trait CertificateValidity extends StObject {
 }
 object CertificateValidity {
   
-  @scala.inline
-  def apply(): CertificateValidity = {
+  inline def apply(): CertificateValidity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CertificateValidity]
   }
   
-  @scala.inline
-  implicit class CertificateValidityMutableBuilder[Self <: CertificateValidity] (val x: Self) extends AnyVal {
+  extension [Self <: CertificateValidity](x: Self) {
     
-    @scala.inline
-    def setNotAfter(value: DateType): Self = StObject.set(x, "notAfter", value.asInstanceOf[js.Any])
+    inline def setNotAfter(value: DateType): Self = StObject.set(x, "notAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotAfterUndefined: Self = StObject.set(x, "notAfter", js.undefined)
+    inline def setNotAfterUndefined: Self = StObject.set(x, "notAfter", js.undefined)
     
-    @scala.inline
-    def setNotBefore(value: DateType): Self = StObject.set(x, "notBefore", value.asInstanceOf[js.Any])
+    inline def setNotBefore(value: DateType): Self = StObject.set(x, "notBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotBeforeUndefined: Self = StObject.set(x, "notBefore", js.undefined)
+    inline def setNotBeforeUndefined: Self = StObject.set(x, "notBefore", js.undefined)
   }
 }

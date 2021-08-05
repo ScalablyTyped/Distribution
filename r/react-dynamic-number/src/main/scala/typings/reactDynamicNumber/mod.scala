@@ -65,70 +65,50 @@ object mod {
   }
   object DynamicNumberProps {
     
-    @scala.inline
-    def apply(): DynamicNumberProps = {
+    inline def apply(): DynamicNumberProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DynamicNumberProps]
     }
     
-    @scala.inline
-    implicit class DynamicNumberPropsMutableBuilder[Self <: DynamicNumberProps] (val x: Self) extends AnyVal {
+    extension [Self <: DynamicNumberProps](x: Self) {
       
-      @scala.inline
-      def setFraction(value: Double): Self = StObject.set(x, "fraction", value.asInstanceOf[js.Any])
+      inline def setFraction(value: Double): Self = StObject.set(x, "fraction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFractionUndefined: Self = StObject.set(x, "fraction", js.undefined)
+      inline def setFractionUndefined: Self = StObject.set(x, "fraction", js.undefined)
       
-      @scala.inline
-      def setInteger(value: Double): Self = StObject.set(x, "integer", value.asInstanceOf[js.Any])
+      inline def setInteger(value: Double): Self = StObject.set(x, "integer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntegerUndefined: Self = StObject.set(x, "integer", js.undefined)
+      inline def setIntegerUndefined: Self = StObject.set(x, "integer", js.undefined)
       
-      @scala.inline
-      def setNegative(value: Boolean): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
+      inline def setNegative(value: Boolean): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNegativeUndefined: Self = StObject.set(x, "negative", js.undefined)
+      inline def setNegativeUndefined: Self = StObject.set(x, "negative", js.undefined)
       
-      @scala.inline
-      def setOnChange(
+      inline def setOnChange(
         value: (/* event */ ChangeEvent[HTMLInputElement], /* modelValue */ Double, /* viewValue */ String) => Unit
       ): Self = StObject.set(x, "onChange", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      @scala.inline
-      def setPositive(value: Boolean): Self = StObject.set(x, "positive", value.asInstanceOf[js.Any])
+      inline def setPositive(value: Boolean): Self = StObject.set(x, "positive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositiveUndefined: Self = StObject.set(x, "positive", js.undefined)
+      inline def setPositiveUndefined: Self = StObject.set(x, "positive", js.undefined)
       
-      @scala.inline
-      def setSeparator(value: Dot | Comma): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+      inline def setSeparator(value: Dot | Comma): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+      inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
       
-      @scala.inline
-      def setThousand(value: Boolean | Space): Self = StObject.set(x, "thousand", value.asInstanceOf[js.Any])
+      inline def setThousand(value: Boolean | Space): Self = StObject.set(x, "thousand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThousandUndefined: Self = StObject.set(x, "thousand", js.undefined)
+      inline def setThousandUndefined: Self = StObject.set(x, "thousand", js.undefined)
       
-      @scala.inline
-      def setValue(value: Double | _empty): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double | _empty): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   

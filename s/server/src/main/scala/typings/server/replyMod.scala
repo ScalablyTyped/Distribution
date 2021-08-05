@@ -106,8 +106,7 @@ object replyMod {
   }
   object Reply {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cookie: (/* name */ String, /* value */ String, /* opts */ js.UndefOr[CookieOptions]) => Reply,
       download: (/* path */ String, /* filename */ js.UndefOr[String]) => js.Any,
       header: (/* field */ String, /* value */ js.UndefOr[String]) => Reply,
@@ -124,38 +123,27 @@ object replyMod {
       __obj.asInstanceOf[Reply]
     }
     
-    @scala.inline
-    implicit class ReplyMutableBuilder[Self <: Reply] (val x: Self) extends AnyVal {
+    extension [Self <: Reply](x: Self) {
       
-      @scala.inline
-      def setCookie(value: (/* name */ String, /* value */ String, /* opts */ js.UndefOr[CookieOptions]) => Reply): Self = StObject.set(x, "cookie", js.Any.fromFunction3(value))
+      inline def setCookie(value: (/* name */ String, /* value */ String, /* opts */ js.UndefOr[CookieOptions]) => Reply): Self = StObject.set(x, "cookie", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setDownload(value: (/* path */ String, /* filename */ js.UndefOr[String]) => js.Any): Self = StObject.set(x, "download", js.Any.fromFunction2(value))
+      inline def setDownload(value: (/* path */ String, /* filename */ js.UndefOr[String]) => js.Any): Self = StObject.set(x, "download", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setHeader(value: (/* field */ String, /* value */ js.UndefOr[String]) => Reply): Self = StObject.set(x, "header", js.Any.fromFunction2(value))
+      inline def setHeader(value: (/* field */ String, /* value */ js.UndefOr[String]) => Reply): Self = StObject.set(x, "header", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setJson(value: /* data */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "json", js.Any.fromFunction1(value))
+      inline def setJson(value: /* data */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "json", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setJsonp(value: /* data */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "jsonp", js.Any.fromFunction1(value))
+      inline def setJsonp(value: /* data */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "jsonp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRedirect(value: Redirect_): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
+      inline def setRedirect(value: Redirect_): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRender(value: (/* view */ String, /* locals */ js.UndefOr[js.Object]) => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
+      inline def setRender(value: (/* view */ String, /* locals */ js.UndefOr[js.Object]) => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSend(value: /* body */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
+      inline def setSend(value: /* body */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStatus(value: /* code */ Double => Reply): Self = StObject.set(x, "status", js.Any.fromFunction1(value))
+      inline def setStatus(value: /* code */ Double => Reply): Self = StObject.set(x, "status", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setType(value: /* type */ String => Reply): Self = StObject.set(x, "type", js.Any.fromFunction1(value))
+      inline def setType(value: /* type */ String => Reply): Self = StObject.set(x, "type", js.Any.fromFunction1(value))
     }
   }
   

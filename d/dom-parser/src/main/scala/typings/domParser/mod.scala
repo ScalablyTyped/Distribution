@@ -50,8 +50,7 @@ object mod {
   }
   object DOMSearchable {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getElementById: String => Node | Null,
       getElementsByClassName: String => js.Array[Node] | Null,
       getElementsByName: String => js.Array[Node] | Null,
@@ -61,20 +60,15 @@ object mod {
       __obj.asInstanceOf[DOMSearchable]
     }
     
-    @scala.inline
-    implicit class DOMSearchableMutableBuilder[Self <: DOMSearchable] (val x: Self) extends AnyVal {
+    extension [Self <: DOMSearchable](x: Self) {
       
-      @scala.inline
-      def setGetElementById(value: String => Node | Null): Self = StObject.set(x, "getElementById", js.Any.fromFunction1(value))
+      inline def setGetElementById(value: String => Node | Null): Self = StObject.set(x, "getElementById", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetElementsByClassName(value: String => js.Array[Node] | Null): Self = StObject.set(x, "getElementsByClassName", js.Any.fromFunction1(value))
+      inline def setGetElementsByClassName(value: String => js.Array[Node] | Null): Self = StObject.set(x, "getElementsByClassName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetElementsByName(value: String => js.Array[Node] | Null): Self = StObject.set(x, "getElementsByName", js.Any.fromFunction1(value))
+      inline def setGetElementsByName(value: String => js.Array[Node] | Null): Self = StObject.set(x, "getElementsByName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetElementsByTagName(value: String => js.Array[Node] | Null): Self = StObject.set(x, "getElementsByTagName", js.Any.fromFunction1(value))
+      inline def setGetElementsByTagName(value: String => js.Array[Node] | Null): Self = StObject.set(x, "getElementsByTagName", js.Any.fromFunction1(value))
     }
   }
   
@@ -86,8 +80,7 @@ object mod {
   }
   object Dom {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getElementById: String => Node | Null,
       getElementsByAttribute: String => js.Array[Node] | Null,
       getElementsByClassName: String => js.Array[Node] | Null,
@@ -98,11 +91,9 @@ object mod {
       __obj.asInstanceOf[Dom]
     }
     
-    @scala.inline
-    implicit class DomMutableBuilder[Self <: Dom] (val x: Self) extends AnyVal {
+    extension [Self <: Dom](x: Self) {
       
-      @scala.inline
-      def setGetElementsByAttribute(value: String => js.Array[Node] | Null): Self = StObject.set(x, "getElementsByAttribute", js.Any.fromFunction1(value))
+      inline def setGetElementsByAttribute(value: String => js.Array[Node] | Null): Self = StObject.set(x, "getElementsByAttribute", js.Any.fromFunction1(value))
     }
   }
   
@@ -112,17 +103,14 @@ object mod {
   }
   object DomParser {
     
-    @scala.inline
-    def apply(parseFromString: String => Dom): DomParser = {
+    inline def apply(parseFromString: String => Dom): DomParser = {
       val __obj = js.Dynamic.literal(parseFromString = js.Any.fromFunction1(parseFromString))
       __obj.asInstanceOf[DomParser]
     }
     
-    @scala.inline
-    implicit class DomParserMutableBuilder[Self <: DomParser] (val x: Self) extends AnyVal {
+    extension [Self <: DomParser](x: Self) {
       
-      @scala.inline
-      def setParseFromString(value: String => Dom): Self = StObject.set(x, "parseFromString", js.Any.fromFunction1(value))
+      inline def setParseFromString(value: String => Dom): Self = StObject.set(x, "parseFromString", js.Any.fromFunction1(value))
     }
   }
   
@@ -154,8 +142,7 @@ object mod {
   }
   object Node {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attributes: js.Array[String],
       childNodes: js.Array[Node],
       getAttribute: String => String | Null,
@@ -173,56 +160,39 @@ object mod {
       __obj.asInstanceOf[Node]
     }
     
-    @scala.inline
-    implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
+    extension [Self <: Node](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+      inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
       
-      @scala.inline
-      def setChildNodes(value: js.Array[Node]): Self = StObject.set(x, "childNodes", value.asInstanceOf[js.Any])
+      inline def setChildNodes(value: js.Array[Node]): Self = StObject.set(x, "childNodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildNodesVarargs(value: Node*): Self = StObject.set(x, "childNodes", js.Array(value :_*))
+      inline def setChildNodesVarargs(value: Node*): Self = StObject.set(x, "childNodes", js.Array(value :_*))
       
-      @scala.inline
-      def setFirstChild(value: Node): Self = StObject.set(x, "firstChild", value.asInstanceOf[js.Any])
+      inline def setFirstChild(value: Node): Self = StObject.set(x, "firstChild", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstChildNull: Self = StObject.set(x, "firstChild", null)
+      inline def setFirstChildNull: Self = StObject.set(x, "firstChild", null)
       
-      @scala.inline
-      def setGetAttribute(value: String => String | Null): Self = StObject.set(x, "getAttribute", js.Any.fromFunction1(value))
+      inline def setGetAttribute(value: String => String | Null): Self = StObject.set(x, "getAttribute", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInnerHTML(value: String): Self = StObject.set(x, "innerHTML", value.asInstanceOf[js.Any])
+      inline def setInnerHTML(value: String): Self = StObject.set(x, "innerHTML", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastChild(value: Node): Self = StObject.set(x, "lastChild", value.asInstanceOf[js.Any])
+      inline def setLastChild(value: Node): Self = StObject.set(x, "lastChild", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastChildNull: Self = StObject.set(x, "lastChild", null)
+      inline def setLastChildNull: Self = StObject.set(x, "lastChild", null)
       
-      @scala.inline
-      def setNodeName(value: String): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
+      inline def setNodeName(value: String): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeType(value: NodeType): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
+      inline def setNodeType(value: NodeType): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOuterHTML(value: String): Self = StObject.set(x, "outerHTML", value.asInstanceOf[js.Any])
+      inline def setOuterHTML(value: String): Self = StObject.set(x, "outerHTML", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentNode(value: Node): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
+      inline def setParentNode(value: Node): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentNodeNull: Self = StObject.set(x, "parentNode", null)
+      inline def setParentNodeNull: Self = StObject.set(x, "parentNode", null)
       
-      @scala.inline
-      def setTextContent(value: String): Self = StObject.set(x, "textContent", value.asInstanceOf[js.Any])
+      inline def setTextContent(value: String): Self = StObject.set(x, "textContent", value.asInstanceOf[js.Any])
     }
   }
 }

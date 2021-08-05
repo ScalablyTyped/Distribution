@@ -50,45 +50,33 @@ trait DataLayerProperties extends StObject {
 }
 object DataLayerProperties {
   
-  @scala.inline
-  def apply(): DataLayerProperties = {
+  inline def apply(): DataLayerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataLayerProperties]
   }
   
-  @scala.inline
-  implicit class DataLayerPropertiesMutableBuilder[Self <: DataLayerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: DataLayerProperties](x: Self) {
     
-    @scala.inline
-    def setGeometry(value: GeometryProperties): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    inline def setGeometry(value: GeometryProperties): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometryUndefined: Self = StObject.set(x, "geometry", js.undefined)
+    inline def setGeometryUndefined: Self = StObject.set(x, "geometry", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSpatialRelationship(
+    inline def setSpatialRelationship(
       value: intersects | contains | crosses | `envelope-intersects` | `index-intersects` | overlaps | touches | within | relation
     ): Self = StObject.set(x, "spatialRelationship", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpatialRelationshipUndefined: Self = StObject.set(x, "spatialRelationship", js.undefined)
+    inline def setSpatialRelationshipUndefined: Self = StObject.set(x, "spatialRelationship", js.undefined)
     
-    @scala.inline
-    def setType(value: layer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: layer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setWhere(value: String): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
+    inline def setWhere(value: String): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
+    inline def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
   }
 }

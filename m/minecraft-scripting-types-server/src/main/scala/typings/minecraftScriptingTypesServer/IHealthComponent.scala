@@ -23,19 +23,15 @@ trait IHealthComponent extends StObject {
 }
 object IHealthComponent {
   
-  @scala.inline
-  def apply(max: Double, value: Double): IHealthComponent = {
+  inline def apply(max: Double, value: Double): IHealthComponent = {
     val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHealthComponent]
   }
   
-  @scala.inline
-  implicit class IHealthComponentMutableBuilder[Self <: IHealthComponent] (val x: Self) extends AnyVal {
+  extension [Self <: IHealthComponent](x: Self) {
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

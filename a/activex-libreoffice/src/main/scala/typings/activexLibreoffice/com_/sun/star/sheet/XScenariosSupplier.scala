@@ -25,8 +25,7 @@ trait XScenariosSupplier
 }
 object XScenariosSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Scenarios: XScenarios,
     acquire: () => Unit,
     getScenarios: () => XScenarios,
@@ -37,13 +36,10 @@ object XScenariosSupplier {
     __obj.asInstanceOf[XScenariosSupplier]
   }
   
-  @scala.inline
-  implicit class XScenariosSupplierMutableBuilder[Self <: XScenariosSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XScenariosSupplier](x: Self) {
     
-    @scala.inline
-    def setGetScenarios(value: () => XScenarios): Self = StObject.set(x, "getScenarios", js.Any.fromFunction0(value))
+    inline def setGetScenarios(value: () => XScenarios): Self = StObject.set(x, "getScenarios", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setScenarios(value: XScenarios): Self = StObject.set(x, "Scenarios", value.asInstanceOf[js.Any])
+    inline def setScenarios(value: XScenarios): Self = StObject.set(x, "Scenarios", value.asInstanceOf[js.Any])
   }
 }

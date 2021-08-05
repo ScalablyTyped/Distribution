@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.DOMBeforeUnloadEvent")
 @js.native
-class DOMBeforeUnloadEvent protected ()
+/* private */ class DOMBeforeUnloadEvent ()
   extends StObject
      with typings.activexMshtml.MSHTML.DOMBeforeUnloadEvent {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.DOMBeforeUnloadEvent_typekey")
   var MSHTMLDotDOMBeforeUnloadEvent_typekey: typings.activexMshtml.MSHTML.DOMBeforeUnloadEvent = js.native
   

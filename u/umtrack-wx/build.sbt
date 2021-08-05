@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "umtrack-wx"
-version := "2.3-dt-20200515Z-e1a879"
+version := "2.3-dt-20200515Z-753ebd"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

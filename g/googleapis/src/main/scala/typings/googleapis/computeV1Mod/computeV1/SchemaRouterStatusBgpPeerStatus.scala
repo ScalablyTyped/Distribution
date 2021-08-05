@@ -59,76 +59,53 @@ trait SchemaRouterStatusBgpPeerStatus extends StObject {
 }
 object SchemaRouterStatusBgpPeerStatus {
   
-  @scala.inline
-  def apply(): SchemaRouterStatusBgpPeerStatus = {
+  inline def apply(): SchemaRouterStatusBgpPeerStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRouterStatusBgpPeerStatus]
   }
   
-  @scala.inline
-  implicit class SchemaRouterStatusBgpPeerStatusMutableBuilder[Self <: SchemaRouterStatusBgpPeerStatus] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRouterStatusBgpPeerStatus](x: Self) {
     
-    @scala.inline
-    def setAdvertisedRoutes(value: js.Array[SchemaRoute]): Self = StObject.set(x, "advertisedRoutes", value.asInstanceOf[js.Any])
+    inline def setAdvertisedRoutes(value: js.Array[SchemaRoute]): Self = StObject.set(x, "advertisedRoutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdvertisedRoutesUndefined: Self = StObject.set(x, "advertisedRoutes", js.undefined)
+    inline def setAdvertisedRoutesUndefined: Self = StObject.set(x, "advertisedRoutes", js.undefined)
     
-    @scala.inline
-    def setAdvertisedRoutesVarargs(value: SchemaRoute*): Self = StObject.set(x, "advertisedRoutes", js.Array(value :_*))
+    inline def setAdvertisedRoutesVarargs(value: SchemaRoute*): Self = StObject.set(x, "advertisedRoutes", js.Array(value :_*))
     
-    @scala.inline
-    def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
+    inline def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
+    inline def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
     
-    @scala.inline
-    def setLinkedVpnTunnel(value: String): Self = StObject.set(x, "linkedVpnTunnel", value.asInstanceOf[js.Any])
+    inline def setLinkedVpnTunnel(value: String): Self = StObject.set(x, "linkedVpnTunnel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkedVpnTunnelUndefined: Self = StObject.set(x, "linkedVpnTunnel", js.undefined)
+    inline def setLinkedVpnTunnelUndefined: Self = StObject.set(x, "linkedVpnTunnel", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNumLearnedRoutes(value: Double): Self = StObject.set(x, "numLearnedRoutes", value.asInstanceOf[js.Any])
+    inline def setNumLearnedRoutes(value: Double): Self = StObject.set(x, "numLearnedRoutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumLearnedRoutesUndefined: Self = StObject.set(x, "numLearnedRoutes", js.undefined)
+    inline def setNumLearnedRoutesUndefined: Self = StObject.set(x, "numLearnedRoutes", js.undefined)
     
-    @scala.inline
-    def setPeerIpAddress(value: String): Self = StObject.set(x, "peerIpAddress", value.asInstanceOf[js.Any])
+    inline def setPeerIpAddress(value: String): Self = StObject.set(x, "peerIpAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeerIpAddressUndefined: Self = StObject.set(x, "peerIpAddress", js.undefined)
+    inline def setPeerIpAddressUndefined: Self = StObject.set(x, "peerIpAddress", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setUptime(value: String): Self = StObject.set(x, "uptime", value.asInstanceOf[js.Any])
+    inline def setUptime(value: String): Self = StObject.set(x, "uptime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUptimeSeconds(value: String): Self = StObject.set(x, "uptimeSeconds", value.asInstanceOf[js.Any])
+    inline def setUptimeSeconds(value: String): Self = StObject.set(x, "uptimeSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUptimeSecondsUndefined: Self = StObject.set(x, "uptimeSeconds", js.undefined)
+    inline def setUptimeSecondsUndefined: Self = StObject.set(x, "uptimeSeconds", js.undefined)
     
-    @scala.inline
-    def setUptimeUndefined: Self = StObject.set(x, "uptime", js.undefined)
+    inline def setUptimeUndefined: Self = StObject.set(x, "uptime", js.undefined)
   }
 }

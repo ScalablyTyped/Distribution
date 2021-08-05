@@ -21,37 +21,27 @@ trait QueryEvidenceEntity extends StObject {
 }
 object QueryEvidenceEntity {
   
-  @scala.inline
-  def apply(): QueryEvidenceEntity = {
+  inline def apply(): QueryEvidenceEntity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryEvidenceEntity]
   }
   
-  @scala.inline
-  implicit class QueryEvidenceEntityMutableBuilder[Self <: QueryEvidenceEntity] (val x: Self) extends AnyVal {
+  extension [Self <: QueryEvidenceEntity](x: Self) {
     
-    @scala.inline
-    def setEnd_offset(value: Double): Self = StObject.set(x, "end_offset", value.asInstanceOf[js.Any])
+    inline def setEnd_offset(value: Double): Self = StObject.set(x, "end_offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd_offsetUndefined: Self = StObject.set(x, "end_offset", js.undefined)
+    inline def setEnd_offsetUndefined: Self = StObject.set(x, "end_offset", js.undefined)
     
-    @scala.inline
-    def setStart_offset(value: Double): Self = StObject.set(x, "start_offset", value.asInstanceOf[js.Any])
+    inline def setStart_offset(value: Double): Self = StObject.set(x, "start_offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart_offsetUndefined: Self = StObject.set(x, "start_offset", js.undefined)
+    inline def setStart_offsetUndefined: Self = StObject.set(x, "start_offset", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

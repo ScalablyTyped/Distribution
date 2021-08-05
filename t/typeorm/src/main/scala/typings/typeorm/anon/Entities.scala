@@ -12,25 +12,19 @@ trait Entities[Entity, T] extends StObject {
 }
 object Entities {
   
-  @scala.inline
-  def apply[Entity, T](entities: js.Array[Entity], raw: js.Array[T]): Entities[Entity, T] = {
+  inline def apply[Entity, T](entities: js.Array[Entity], raw: js.Array[T]): Entities[Entity, T] = {
     val __obj = js.Dynamic.literal(entities = entities.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any])
     __obj.asInstanceOf[Entities[Entity, T]]
   }
   
-  @scala.inline
-  implicit class EntitiesMutableBuilder[Self <: Entities[?, ?], Entity, T] (val x: Self & (Entities[Entity, T])) extends AnyVal {
+  extension [Self <: Entities[?, ?], Entity, T](x: Self & (Entities[Entity, T])) {
     
-    @scala.inline
-    def setEntities(value: js.Array[Entity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
+    inline def setEntities(value: js.Array[Entity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitiesVarargs(value: Entity*): Self = StObject.set(x, "entities", js.Array(value :_*))
+    inline def setEntitiesVarargs(value: Entity*): Self = StObject.set(x, "entities", js.Array(value :_*))
     
-    @scala.inline
-    def setRaw(value: js.Array[T]): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: js.Array[T]): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawVarargs(value: T*): Self = StObject.set(x, "raw", js.Array(value :_*))
+    inline def setRawVarargs(value: T*): Self = StObject.set(x, "raw", js.Array(value :_*))
   }
 }

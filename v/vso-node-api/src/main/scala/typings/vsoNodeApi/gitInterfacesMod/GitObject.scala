@@ -18,19 +18,15 @@ trait GitObject extends StObject {
 }
 object GitObject {
   
-  @scala.inline
-  def apply(objectId: String, objectType: GitObjectType): GitObject = {
+  inline def apply(objectId: String, objectType: GitObjectType): GitObject = {
     val __obj = js.Dynamic.literal(objectId = objectId.asInstanceOf[js.Any], objectType = objectType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitObject]
   }
   
-  @scala.inline
-  implicit class GitObjectMutableBuilder[Self <: GitObject] (val x: Self) extends AnyVal {
+  extension [Self <: GitObject](x: Self) {
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectType(value: GitObjectType): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
+    inline def setObjectType(value: GitObjectType): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
   }
 }

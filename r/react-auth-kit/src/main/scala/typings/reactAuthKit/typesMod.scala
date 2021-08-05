@@ -21,20 +21,16 @@ object typesMod {
   }
   object AuthContextInterface {
     
-    @scala.inline
-    def apply(authState: TokenInterface, setAuthState: SetStateAction[TokenInterface] => Unit): AuthContextInterface = {
+    inline def apply(authState: TokenInterface, setAuthState: SetStateAction[TokenInterface] => Unit): AuthContextInterface = {
       val __obj = js.Dynamic.literal(authState = authState.asInstanceOf[js.Any], setAuthState = js.Any.fromFunction1(setAuthState))
       __obj.asInstanceOf[AuthContextInterface]
     }
     
-    @scala.inline
-    implicit class AuthContextInterfaceMutableBuilder[Self <: AuthContextInterface] (val x: Self) extends AnyVal {
+    extension [Self <: AuthContextInterface](x: Self) {
       
-      @scala.inline
-      def setAuthState(value: TokenInterface): Self = StObject.set(x, "authState", value.asInstanceOf[js.Any])
+      inline def setAuthState(value: TokenInterface): Self = StObject.set(x, "authState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetAuthState(value: SetStateAction[TokenInterface] => Unit): Self = StObject.set(x, "setAuthState", js.Any.fromFunction1(value))
+      inline def setSetAuthState(value: SetStateAction[TokenInterface] => Unit): Self = StObject.set(x, "setAuthState", js.Any.fromFunction1(value))
     }
   }
   
@@ -46,8 +42,7 @@ object typesMod {
   }
   object AuthProviderProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       authStorageName: String,
       authStorageType: cookie | localstorage,
       authTimeStorageName: String,
@@ -58,11 +53,9 @@ object typesMod {
       __obj.asInstanceOf[AuthProviderProps]
     }
     
-    @scala.inline
-    implicit class AuthProviderPropsMutableBuilder[Self <: AuthProviderProps] (val x: Self) extends AnyVal {
+    extension [Self <: AuthProviderProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactChildren): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactChildren): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     }
   }
   
@@ -78,38 +71,28 @@ object typesMod {
   }
   object TokenInterface {
     
-    @scala.inline
-    def apply(): TokenInterface = {
+    inline def apply(): TokenInterface = {
       val __obj = js.Dynamic.literal(authState = null, authToken = null, authTokenType = null, expireAt = null)
       __obj.asInstanceOf[TokenInterface]
     }
     
-    @scala.inline
-    implicit class TokenInterfaceMutableBuilder[Self <: TokenInterface] (val x: Self) extends AnyVal {
+    extension [Self <: TokenInterface](x: Self) {
       
-      @scala.inline
-      def setAuthState(value: js.Object): Self = StObject.set(x, "authState", value.asInstanceOf[js.Any])
+      inline def setAuthState(value: js.Object): Self = StObject.set(x, "authState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthStateNull: Self = StObject.set(x, "authState", null)
+      inline def setAuthStateNull: Self = StObject.set(x, "authState", null)
       
-      @scala.inline
-      def setAuthToken(value: String): Self = StObject.set(x, "authToken", value.asInstanceOf[js.Any])
+      inline def setAuthToken(value: String): Self = StObject.set(x, "authToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthTokenNull: Self = StObject.set(x, "authToken", null)
+      inline def setAuthTokenNull: Self = StObject.set(x, "authToken", null)
       
-      @scala.inline
-      def setAuthTokenType(value: String): Self = StObject.set(x, "authTokenType", value.asInstanceOf[js.Any])
+      inline def setAuthTokenType(value: String): Self = StObject.set(x, "authTokenType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthTokenTypeNull: Self = StObject.set(x, "authTokenType", null)
+      inline def setAuthTokenTypeNull: Self = StObject.set(x, "authTokenType", null)
       
-      @scala.inline
-      def setExpireAt(value: Date): Self = StObject.set(x, "expireAt", value.asInstanceOf[js.Any])
+      inline def setExpireAt(value: Date): Self = StObject.set(x, "expireAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpireAtNull: Self = StObject.set(x, "expireAt", null)
+      inline def setExpireAtNull: Self = StObject.set(x, "expireAt", null)
     }
   }
   
@@ -129,8 +112,7 @@ object typesMod {
   }
   object TokenObjectParamsInterface {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       authStorageName: String,
       authStorageType: cookie | localstorage,
       authTimeStorageName: String,
@@ -140,32 +122,23 @@ object typesMod {
       __obj.asInstanceOf[TokenObjectParamsInterface]
     }
     
-    @scala.inline
-    implicit class TokenObjectParamsInterfaceMutableBuilder[Self <: TokenObjectParamsInterface] (val x: Self) extends AnyVal {
+    extension [Self <: TokenObjectParamsInterface](x: Self) {
       
-      @scala.inline
-      def setAuthStorageName(value: String): Self = StObject.set(x, "authStorageName", value.asInstanceOf[js.Any])
+      inline def setAuthStorageName(value: String): Self = StObject.set(x, "authStorageName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthStorageType(value: cookie | localstorage): Self = StObject.set(x, "authStorageType", value.asInstanceOf[js.Any])
+      inline def setAuthStorageType(value: cookie | localstorage): Self = StObject.set(x, "authStorageType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthTimeStorageName(value: String): Self = StObject.set(x, "authTimeStorageName", value.asInstanceOf[js.Any])
+      inline def setAuthTimeStorageName(value: String): Self = StObject.set(x, "authTimeStorageName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieDomain(value: String): Self = StObject.set(x, "cookieDomain", value.asInstanceOf[js.Any])
+      inline def setCookieDomain(value: String): Self = StObject.set(x, "cookieDomain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieDomainUndefined: Self = StObject.set(x, "cookieDomain", js.undefined)
+      inline def setCookieDomainUndefined: Self = StObject.set(x, "cookieDomain", js.undefined)
       
-      @scala.inline
-      def setCookieSecure(value: Boolean): Self = StObject.set(x, "cookieSecure", value.asInstanceOf[js.Any])
+      inline def setCookieSecure(value: Boolean): Self = StObject.set(x, "cookieSecure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieSecureUndefined: Self = StObject.set(x, "cookieSecure", js.undefined)
+      inline def setCookieSecureUndefined: Self = StObject.set(x, "cookieSecure", js.undefined)
       
-      @scala.inline
-      def setStateStorageName(value: String): Self = StObject.set(x, "stateStorageName", value.asInstanceOf[js.Any])
+      inline def setStateStorageName(value: String): Self = StObject.set(x, "stateStorageName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -181,26 +154,20 @@ object typesMod {
   }
   object signInFunctionParams {
     
-    @scala.inline
-    def apply(authState: js.Object, expiresIn: Double, token: String, tokenType: String | Bearer): signInFunctionParams = {
+    inline def apply(authState: js.Object, expiresIn: Double, token: String, tokenType: String | Bearer): signInFunctionParams = {
       val __obj = js.Dynamic.literal(authState = authState.asInstanceOf[js.Any], expiresIn = expiresIn.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any], tokenType = tokenType.asInstanceOf[js.Any])
       __obj.asInstanceOf[signInFunctionParams]
     }
     
-    @scala.inline
-    implicit class signInFunctionParamsMutableBuilder[Self <: signInFunctionParams] (val x: Self) extends AnyVal {
+    extension [Self <: signInFunctionParams](x: Self) {
       
-      @scala.inline
-      def setAuthState(value: js.Object): Self = StObject.set(x, "authState", value.asInstanceOf[js.Any])
+      inline def setAuthState(value: js.Object): Self = StObject.set(x, "authState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiresIn(value: Double): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
+      inline def setExpiresIn(value: Double): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenType(value: String | Bearer): Self = StObject.set(x, "tokenType", value.asInstanceOf[js.Any])
+      inline def setTokenType(value: String | Bearer): Self = StObject.set(x, "tokenType", value.asInstanceOf[js.Any])
     }
   }
 }

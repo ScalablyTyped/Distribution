@@ -31,8 +31,7 @@ trait JdbcParameterMetaData extends StObject {
 }
 object JdbcParameterMetaData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getParameterClassName: Integer => String,
     getParameterCount: () => Integer,
     getParameterMode: Integer => Integer,
@@ -47,34 +46,24 @@ object JdbcParameterMetaData {
     __obj.asInstanceOf[JdbcParameterMetaData]
   }
   
-  @scala.inline
-  implicit class JdbcParameterMetaDataMutableBuilder[Self <: JdbcParameterMetaData] (val x: Self) extends AnyVal {
+  extension [Self <: JdbcParameterMetaData](x: Self) {
     
-    @scala.inline
-    def setGetParameterClassName(value: Integer => String): Self = StObject.set(x, "getParameterClassName", js.Any.fromFunction1(value))
+    inline def setGetParameterClassName(value: Integer => String): Self = StObject.set(x, "getParameterClassName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetParameterCount(value: () => Integer): Self = StObject.set(x, "getParameterCount", js.Any.fromFunction0(value))
+    inline def setGetParameterCount(value: () => Integer): Self = StObject.set(x, "getParameterCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetParameterMode(value: Integer => Integer): Self = StObject.set(x, "getParameterMode", js.Any.fromFunction1(value))
+    inline def setGetParameterMode(value: Integer => Integer): Self = StObject.set(x, "getParameterMode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetParameterType(value: Integer => Integer): Self = StObject.set(x, "getParameterType", js.Any.fromFunction1(value))
+    inline def setGetParameterType(value: Integer => Integer): Self = StObject.set(x, "getParameterType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetParameterTypeName(value: Integer => String): Self = StObject.set(x, "getParameterTypeName", js.Any.fromFunction1(value))
+    inline def setGetParameterTypeName(value: Integer => String): Self = StObject.set(x, "getParameterTypeName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPrecision(value: Integer => Integer): Self = StObject.set(x, "getPrecision", js.Any.fromFunction1(value))
+    inline def setGetPrecision(value: Integer => Integer): Self = StObject.set(x, "getPrecision", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetScale(value: Integer => Integer): Self = StObject.set(x, "getScale", js.Any.fromFunction1(value))
+    inline def setGetScale(value: Integer => Integer): Self = StObject.set(x, "getScale", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsNullable(value: Integer => Integer): Self = StObject.set(x, "isNullable", js.Any.fromFunction1(value))
+    inline def setIsNullable(value: Integer => Integer): Self = StObject.set(x, "isNullable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsSigned(value: Integer => Boolean): Self = StObject.set(x, "isSigned", js.Any.fromFunction1(value))
+    inline def setIsSigned(value: Integer => Boolean): Self = StObject.set(x, "isSigned", js.Any.fromFunction1(value))
   }
 }

@@ -161,17 +161,14 @@ object SPAnimation {
   }
   object Object {
     
-    @scala.inline
-    def apply(RunAnimation: () => Unit): Object = {
+    inline def apply(RunAnimation: () => Unit): Object = {
       val __obj = js.Dynamic.literal(RunAnimation = js.Any.fromFunction0(RunAnimation))
       __obj.asInstanceOf[Object]
     }
     
-    @scala.inline
-    implicit class ObjectMutableBuilder[Self <: Object] (val x: Self) extends AnyVal {
+    extension [Self <: Object](x: Self) {
       
-      @scala.inline
-      def setRunAnimation(value: () => Unit): Self = StObject.set(x, "RunAnimation", js.Any.fromFunction0(value))
+      inline def setRunAnimation(value: () => Unit): Self = StObject.set(x, "RunAnimation", js.Any.fromFunction0(value))
     }
   }
   
@@ -187,8 +184,7 @@ object SPAnimation {
   }
   object State {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       GetAttribute: Attribute => Double,
       GetDataIndex: Attribute => Double,
       SetAttribute: (Attribute, Double) => Unit
@@ -197,17 +193,13 @@ object SPAnimation {
       __obj.asInstanceOf[State]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+    extension [Self <: State](x: Self) {
       
-      @scala.inline
-      def setGetAttribute(value: Attribute => Double): Self = StObject.set(x, "GetAttribute", js.Any.fromFunction1(value))
+      inline def setGetAttribute(value: Attribute => Double): Self = StObject.set(x, "GetAttribute", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetDataIndex(value: Attribute => Double): Self = StObject.set(x, "GetDataIndex", js.Any.fromFunction1(value))
+      inline def setGetDataIndex(value: Attribute => Double): Self = StObject.set(x, "GetDataIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetAttribute(value: (Attribute, Double) => Unit): Self = StObject.set(x, "SetAttribute", js.Any.fromFunction2(value))
+      inline def setSetAttribute(value: (Attribute, Double) => Unit): Self = StObject.set(x, "SetAttribute", js.Any.fromFunction2(value))
     }
   }
 }

@@ -17,25 +17,19 @@ trait Tooltip extends StObject {
 }
 object Tooltip {
   
-  @scala.inline
-  def apply(destroy: () => Unit, hide: () => Unit, show: () => Unit, toggle: () => Unit): Tooltip = {
+  inline def apply(destroy: () => Unit, hide: () => Unit, show: () => Unit, toggle: () => Unit): Tooltip = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction0(show), toggle = js.Any.fromFunction0(toggle))
     __obj.asInstanceOf[Tooltip]
   }
   
-  @scala.inline
-  implicit class TooltipMutableBuilder[Self <: Tooltip] (val x: Self) extends AnyVal {
+  extension [Self <: Tooltip](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
+    inline def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
   }
 }

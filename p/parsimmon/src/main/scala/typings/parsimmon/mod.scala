@@ -13,8 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[T](fn: js.Function2[/* input */ String, /* i */ Double, Reply[T]]): Parser[T] = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[Parser[T]]
+  inline def apply[T](fn: js.Function2[/* input */ String, /* i */ Double, Reply[T]]): Parser[T] = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[Parser[T]]
   
   @JSImport("parsimmon", JSImport.Namespace)
   @js.native
@@ -232,15 +231,13 @@ object mod {
   @js.native
   val all: Parser[String] = js.native
   
-  @scala.inline
-  def alt(parsers: Parser[js.Any]*): Parser[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(parsers.asInstanceOf[js.Any]).asInstanceOf[Parser[js.Any]]
+  inline def alt(parsers: Parser[js.Any]*): Parser[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(parsers.asInstanceOf[js.Any]).asInstanceOf[Parser[js.Any]]
   
   /**
     * accepts a variable number of parsers, and yields the value of the first one that succeeds,
     * backtracking in between.
     */
-  @scala.inline
-  def alt_U[U](parsers: Parser[U]*): Parser[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(parsers.asInstanceOf[js.Any]).asInstanceOf[Parser[U]]
+  inline def alt_U[U](parsers: Parser[U]*): Parser[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(parsers.asInstanceOf[js.Any]).asInstanceOf[Parser[U]]
   
   /**
     * consumes and yields the next character of the stream.
@@ -253,8 +250,7 @@ object mod {
     * Returns a parser that yields a byte (as a number) that matches the given input;
     * similar to Parsimmon.digit and Parsimmon.letter.
     */
-  @scala.inline
-  def bitSeq(alignments: js.Array[Double]): Parser[js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bitSeq")(alignments.asInstanceOf[js.Any]).asInstanceOf[Parser[js.Array[Double]]]
+  inline def bitSeq(alignments: js.Array[Double]): Parser[js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bitSeq")(alignments.asInstanceOf[js.Any]).asInstanceOf[Parser[js.Array[Double]]]
   
   /**
     * Works like Parsimmon.bitSeq except each item in the array is either a number of
@@ -262,8 +258,7 @@ object mod {
     * and put into an object based on the name supplied. If there's no name for the bits,
     * it will be parsed but discarded from the returned value.
     */
-  @scala.inline
-  def bitSeqObj[Key /* <: String */](namedAlignments: js.Array[(js.Tuple2[Key, Double]) | Double]): Parser[
+  inline def bitSeqObj[Key /* <: String */](namedAlignments: js.Array[(js.Tuple2[Key, Double]) | Double]): Parser[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in Key ]: number}
     */ typings.parsimmon.parsimmonStrings.bitSeqObj & TopLevel[js.Any]
@@ -277,8 +272,7 @@ object mod {
     * Returns a parser that yields a byte (as a number) that matches the given input;
     * similar to Parsimmon.digit and Parsimmon.letter.
     */
-  @scala.inline
-  def byte(int: Double): Parser[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("byte")(int.asInstanceOf[js.Any]).asInstanceOf[Parser[Double]]
+  inline def byte(int: Double): Parser[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("byte")(int.asInstanceOf[js.Any]).asInstanceOf[Parser[Double]]
   
   /**
     * Equivalent to Parsimmon.string("\r").
@@ -334,10 +328,8 @@ object mod {
     * there are no missing or superfluous rules in the language definition, and that the rules you access
     * on the resulting language do actually exist.
     */
-  @scala.inline
-  def createLanguage(rules: Rule): Language = ^.asInstanceOf[js.Dynamic].applyDynamic("createLanguage")(rules.asInstanceOf[js.Any]).asInstanceOf[Language]
-  @scala.inline
-  def createLanguage[TLanguageSpec](rules: TypedRule[TLanguageSpec]): TypedLanguage[TLanguageSpec] = ^.asInstanceOf[js.Dynamic].applyDynamic("createLanguage")(rules.asInstanceOf[js.Any]).asInstanceOf[TypedLanguage[TLanguageSpec]]
+  inline def createLanguage(rules: Rule): Language = ^.asInstanceOf[js.Dynamic].applyDynamic("createLanguage")(rules.asInstanceOf[js.Any]).asInstanceOf[Language]
+  inline def createLanguage[TLanguageSpec](rules: TypedRule[TLanguageSpec]): TypedLanguage[TLanguageSpec] = ^.asInstanceOf[js.Dynamic].applyDynamic("createLanguage")(rules.asInstanceOf[js.Any]).asInstanceOf[TypedLanguage[TLanguageSpec]]
   
   /**
     * Equivalent to Parsimmon.string("\r\n").
@@ -353,8 +345,7 @@ object mod {
   /**
     * allows to add custom primitive parsers.
     */
-  @scala.inline
-  def custom[U](
+  inline def custom[U](
     parsingFunction: js.Function2[
       /* success */ SuccessFunctionType[U], 
       /* failure */ FailureFunctionType[U], 
@@ -379,8 +370,7 @@ object mod {
   /**
     * Returns Parsimmon.fail("fantasy-land/empty").
     */
-  @scala.inline
-  def empty(): Parser[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[Parser[scala.Nothing]]
+  inline def empty(): Parser[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[Parser[scala.Nothing]]
   
   /**
     * Equivalent to Parsimmon.alt(Parsimmon.newline, Parsimmon.eof).
@@ -404,16 +394,14 @@ object mod {
   /**
     * fail paring with a message
     */
-  @scala.inline
-  def fail(message: String): Parser[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")(message.asInstanceOf[js.Any]).asInstanceOf[Parser[scala.Nothing]]
+  inline def fail(message: String): Parser[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")(message.asInstanceOf[js.Any]).asInstanceOf[Parser[scala.Nothing]]
   
   /**
     * Takes the string passed to parser.parse(string) and the error returned from
     * parser.parse(string) and turns it into a human readable error message string.
     * Note that there are certainly better ways to format errors, so feel free to write your own.
     */
-  @scala.inline
-  def formatError[T](string: String, error: Result[T]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatError")(string.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatError[T](string: String, error: Result[T]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatError")(string.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * is a parser that yields the current index of the parse.
@@ -425,17 +413,14 @@ object mod {
   /**
     * Returns true if obj is a Parsimmon parser, otherwise false.
     */
-  @scala.inline
-  def isParser(obj: js.Any): /* is parsimmon.parsimmon.Parser<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isParser")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is parsimmon.parsimmon.Parser<any> */ Boolean]
+  inline def isParser(obj: js.Any): /* is parsimmon.parsimmon.Parser<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isParser")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is parsimmon.parsimmon.Parser<any> */ Boolean]
   
-  @scala.inline
-  def `lazy`[U](description: String, f: js.Function0[Parser[U]]): Parser[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("lazy")(description.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Parser[U]]
+  inline def `lazy`[U](description: String, f: js.Function0[Parser[U]]): Parser[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("lazy")(description.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Parser[U]]
   /**
     * accepts a function that returns a parser, which is evaluated the first time the parser is used.
     * This is useful for referencing parsers that haven't yet been defined.
     */
-  @scala.inline
-  def `lazy`[U](f: js.Function0[Parser[U]]): Parser[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("lazy")(f.asInstanceOf[js.Any]).asInstanceOf[Parser[U]]
+  inline def `lazy`[U](f: js.Function0[Parser[U]]): Parser[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("lazy")(f.asInstanceOf[js.Any]).asInstanceOf[Parser[U]]
   
   /**
     * is equivalent to Parsimmon.regex(/[a-z]/i)
@@ -461,33 +446,27 @@ object mod {
   @js.native
   val lf: Parser[String] = js.native
   
-  @scala.inline
-  def lookahead(arg: String): Parser[_empty] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookahead")(arg.asInstanceOf[js.Any]).asInstanceOf[Parser[_empty]]
+  inline def lookahead(arg: String): Parser[_empty] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookahead")(arg.asInstanceOf[js.Any]).asInstanceOf[Parser[_empty]]
   /**
     * Parses using arg, but does not consume what it parses. Yields an empty string.
     */
-  @scala.inline
-  def lookahead(arg: Parser[js.Any]): Parser[_empty] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookahead")(arg.asInstanceOf[js.Any]).asInstanceOf[Parser[_empty]]
-  @scala.inline
-  def lookahead(arg: RegExp): Parser[_empty] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookahead")(arg.asInstanceOf[js.Any]).asInstanceOf[Parser[_empty]]
+  inline def lookahead(arg: Parser[js.Any]): Parser[_empty] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookahead")(arg.asInstanceOf[js.Any]).asInstanceOf[Parser[_empty]]
+  inline def lookahead(arg: RegExp): Parser[_empty] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookahead")(arg.asInstanceOf[js.Any]).asInstanceOf[Parser[_empty]]
   
   /**
     * To be used inside of Parsimmon(fn). Generates an object describing how
     * far the unsuccessful parse went (index), and what kind of syntax it
     * expected to see (expectation). See documentation for Parsimmon(fn).
     */
-  @scala.inline
-  def makeFailure(furthest: Double, expectation: String): FailureReply = (^.asInstanceOf[js.Dynamic].applyDynamic("makeFailure")(furthest.asInstanceOf[js.Any], expectation.asInstanceOf[js.Any])).asInstanceOf[FailureReply]
-  @scala.inline
-  def makeFailure(furthest: Double, expectation: js.Array[String]): FailureReply = (^.asInstanceOf[js.Dynamic].applyDynamic("makeFailure")(furthest.asInstanceOf[js.Any], expectation.asInstanceOf[js.Any])).asInstanceOf[FailureReply]
+  inline def makeFailure(furthest: Double, expectation: String): FailureReply = (^.asInstanceOf[js.Dynamic].applyDynamic("makeFailure")(furthest.asInstanceOf[js.Any], expectation.asInstanceOf[js.Any])).asInstanceOf[FailureReply]
+  inline def makeFailure(furthest: Double, expectation: js.Array[String]): FailureReply = (^.asInstanceOf[js.Dynamic].applyDynamic("makeFailure")(furthest.asInstanceOf[js.Any], expectation.asInstanceOf[js.Any])).asInstanceOf[FailureReply]
   
   /**
     * To be used inside of Parsimmon(fn). Generates an object describing how
     * far the successful parse went (index), and what value it created doing
     * so. See documentation for Parsimmon(fn).
     */
-  @scala.inline
-  def makeSuccess[T](index: Double, value: T): SuccessReply[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeSuccess")(index.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[SuccessReply[T]]
+  inline def makeSuccess[T](index: Double, value: T): SuccessReply[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeSuccess")(index.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[SuccessReply[T]]
   
   /**
     * This flexible parser will match any kind of text file line ending.
@@ -499,27 +478,23 @@ object mod {
   /**
     * Returns a parser that looks for exactly one character NOT from string, and yields that character.
     */
-  @scala.inline
-  def noneOf(string: String): Parser[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("noneOf")(string.asInstanceOf[js.Any]).asInstanceOf[Parser[String]]
+  inline def noneOf(string: String): Parser[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("noneOf")(string.asInstanceOf[js.Any]).asInstanceOf[Parser[String]]
   
   /**
     * Parses using parser, but does not consume what it parses. Yields null if the parser
     * does not match the input. Otherwise it fails.
     */
-  @scala.inline
-  def notFollowedBy(parser: Parser[js.Any]): Parser[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("notFollowedBy")(parser.asInstanceOf[js.Any]).asInstanceOf[Parser[Null]]
+  inline def notFollowedBy(parser: Parser[js.Any]): Parser[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("notFollowedBy")(parser.asInstanceOf[js.Any]).asInstanceOf[Parser[Null]]
   
   /**
     * This is an alias for Parsimmon.succeed(result).
     */
-  @scala.inline
-  def of[U](result: U): Parser[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(result.asInstanceOf[js.Any]).asInstanceOf[Parser[U]]
+  inline def of[U](result: U): Parser[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(result.asInstanceOf[js.Any]).asInstanceOf[Parser[U]]
   
   /**
     * Returns a parser that looks for exactly one character from string, and yields that character.
     */
-  @scala.inline
-  def oneOf(string: String): Parser[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("oneOf")(string.asInstanceOf[js.Any]).asInstanceOf[Parser[String]]
+  inline def oneOf(string: String): Parser[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("oneOf")(string.asInstanceOf[js.Any]).asInstanceOf[Parser[String]]
   
   /**
     * is equivalent to Parsimmon.regex(/\s*`/)
@@ -531,16 +506,13 @@ object mod {
   /**
     * Parsers a single character in from begin to end, inclusive.
     */
-  @scala.inline
-  def range(begin: String, end: String): Parser[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(begin.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Parser[String]]
+  inline def range(begin: String, end: String): Parser[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(begin.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Parser[String]]
   
   /**
     * This was the original name for Parsimmon.regexp, but now it is just an alias.
     */
-  @scala.inline
-  def regex(myregex: RegExp): Parser[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("regex")(myregex.asInstanceOf[js.Any]).asInstanceOf[Parser[String]]
-  @scala.inline
-  def regex(myregex: RegExp, group: Double): Parser[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("regex")(myregex.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Parser[String]]
+  inline def regex(myregex: RegExp): Parser[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("regex")(myregex.asInstanceOf[js.Any]).asInstanceOf[Parser[String]]
+  inline def regex(myregex: RegExp, group: Double): Parser[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("regex")(myregex.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Parser[String]]
   
   /**
     * Returns a parser that looks for a match to the regexp and yields the given match group
@@ -548,46 +520,33 @@ object mod {
     * parse location. The regexp may only use the following flags: imu. Any other flag will
     * result in an error being thrown.
     */
-  @scala.inline
-  def regexp(myregex: RegExp): Parser[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("regexp")(myregex.asInstanceOf[js.Any]).asInstanceOf[Parser[String]]
-  @scala.inline
-  def regexp(myregex: RegExp, group: Double): Parser[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("regexp")(myregex.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Parser[String]]
+  inline def regexp(myregex: RegExp): Parser[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("regexp")(myregex.asInstanceOf[js.Any]).asInstanceOf[Parser[String]]
+  inline def regexp(myregex: RegExp, group: Double): Parser[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("regexp")(myregex.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Parser[String]]
   
   /**
     * Accepts two parsers, and expects zero or more matches for content, separated by separator, yielding an array.
     */
-  @scala.inline
-  def sepBy[T, U](content: Parser[T], separator: Parser[U]): Parser[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("sepBy")(content.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[Parser[js.Array[T]]]
+  inline def sepBy[T, U](content: Parser[T], separator: Parser[U]): Parser[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("sepBy")(content.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[Parser[js.Array[T]]]
   
   /**
     * This is the same as Parsimmon.sepBy, but matches the content parser at least once.
     */
-  @scala.inline
-  def sepBy1[T, U](content: Parser[T], separator: Parser[U]): Parser[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("sepBy1")(content.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[Parser[js.Array[T]]]
+  inline def sepBy1[T, U](content: Parser[T], separator: Parser[U]): Parser[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("sepBy1")(content.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[Parser[js.Array[T]]]
   
   /**
     * accepts a variable number of parsers that it expects to find in order, yielding an array of the results.
     */
-  @scala.inline
-  def seq[T](p1: Parser[T]): Parser[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("seq")(p1.asInstanceOf[js.Any]).asInstanceOf[Parser[js.Array[T]]]
-  @scala.inline
-  def seq[T /* <: js.Array[js.Any] */](
+  inline def seq[T](p1: Parser[T]): Parser[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("seq")(p1.asInstanceOf[js.Any]).asInstanceOf[Parser[js.Array[T]]]
+  inline def seq[T /* <: js.Array[js.Any] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param parsers because its type T is not an array type */ parsers: T
   ): Parser[UnParser[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("seq")(parsers.asInstanceOf[js.Any]).asInstanceOf[Parser[UnParser[T]]]
-  @scala.inline
-  def seq[T](parsers: Parser[T]*): Parser[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("seq")(parsers.asInstanceOf[js.Any]).asInstanceOf[Parser[js.Array[T]]]
-  @scala.inline
-  def seq[T, U](p1: Parser[T], p2: Parser[U]): Parser[js.Tuple2[T, U]] = (^.asInstanceOf[js.Dynamic].applyDynamic("seq")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any])).asInstanceOf[Parser[js.Tuple2[T, U]]]
-  @scala.inline
-  def seq[T, U, V](p1: Parser[T], p2: Parser[U], p3: Parser[V]): Parser[js.Tuple3[T, U, V]] = (^.asInstanceOf[js.Dynamic].applyDynamic("seq")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any])).asInstanceOf[Parser[js.Tuple3[T, U, V]]]
-  @scala.inline
-  def seq[T, U, V, W](p1: Parser[T], p2: Parser[U], p3: Parser[V], p4: Parser[W]): Parser[js.Tuple4[T, U, V, W]] = (^.asInstanceOf[js.Dynamic].applyDynamic("seq")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any], p4.asInstanceOf[js.Any])).asInstanceOf[Parser[js.Tuple4[T, U, V, W]]]
-  @scala.inline
-  def seq[T, U, V, W, X](p1: Parser[T], p2: Parser[U], p3: Parser[V], p4: Parser[W], p5: Parser[X]): Parser[js.Tuple5[T, U, V, W, X]] = (^.asInstanceOf[js.Dynamic].applyDynamic("seq")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any], p4.asInstanceOf[js.Any], p5.asInstanceOf[js.Any])).asInstanceOf[Parser[js.Tuple5[T, U, V, W, X]]]
-  @scala.inline
-  def seq[T, U, V, W, X, Y](p1: Parser[T], p2: Parser[U], p3: Parser[V], p4: Parser[W], p5: Parser[X], p6: Parser[Y]): Parser[js.Tuple6[T, U, V, W, X, Y]] = (^.asInstanceOf[js.Dynamic].applyDynamic("seq")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any], p4.asInstanceOf[js.Any], p5.asInstanceOf[js.Any], p6.asInstanceOf[js.Any])).asInstanceOf[Parser[js.Tuple6[T, U, V, W, X, Y]]]
-  @scala.inline
-  def seq[T, U, V, W, X, Y, Z](
+  inline def seq[T](parsers: Parser[T]*): Parser[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("seq")(parsers.asInstanceOf[js.Any]).asInstanceOf[Parser[js.Array[T]]]
+  inline def seq[T, U](p1: Parser[T], p2: Parser[U]): Parser[js.Tuple2[T, U]] = (^.asInstanceOf[js.Dynamic].applyDynamic("seq")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any])).asInstanceOf[Parser[js.Tuple2[T, U]]]
+  inline def seq[T, U, V](p1: Parser[T], p2: Parser[U], p3: Parser[V]): Parser[js.Tuple3[T, U, V]] = (^.asInstanceOf[js.Dynamic].applyDynamic("seq")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any])).asInstanceOf[Parser[js.Tuple3[T, U, V]]]
+  inline def seq[T, U, V, W](p1: Parser[T], p2: Parser[U], p3: Parser[V], p4: Parser[W]): Parser[js.Tuple4[T, U, V, W]] = (^.asInstanceOf[js.Dynamic].applyDynamic("seq")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any], p4.asInstanceOf[js.Any])).asInstanceOf[Parser[js.Tuple4[T, U, V, W]]]
+  inline def seq[T, U, V, W, X](p1: Parser[T], p2: Parser[U], p3: Parser[V], p4: Parser[W], p5: Parser[X]): Parser[js.Tuple5[T, U, V, W, X]] = (^.asInstanceOf[js.Dynamic].applyDynamic("seq")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any], p4.asInstanceOf[js.Any], p5.asInstanceOf[js.Any])).asInstanceOf[Parser[js.Tuple5[T, U, V, W, X]]]
+  inline def seq[T, U, V, W, X, Y](p1: Parser[T], p2: Parser[U], p3: Parser[V], p4: Parser[W], p5: Parser[X], p6: Parser[Y]): Parser[js.Tuple6[T, U, V, W, X, Y]] = (^.asInstanceOf[js.Dynamic].applyDynamic("seq")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any], p4.asInstanceOf[js.Any], p5.asInstanceOf[js.Any], p6.asInstanceOf[js.Any])).asInstanceOf[Parser[js.Tuple6[T, U, V, W, X, Y]]]
+  inline def seq[T, U, V, W, X, Y, Z](
     p1: Parser[T],
     p2: Parser[U],
     p3: Parser[V],
@@ -601,27 +560,22 @@ object mod {
     * Matches all parsers sequentially, and passes their results as the arguments to a function.
     * Similar to calling Parsimmon.seq and then .map, but the values are not put in an array.
     */
-  @scala.inline
-  def seqMap[T, U](p1: Parser[T], cb: js.Function1[/* a1 */ T, U]): Parser[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("seqMap")(p1.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Parser[U]]
-  @scala.inline
-  def seqMap[T, U, V](p1: Parser[T], p2: Parser[U], cb: js.Function2[/* a1 */ T, /* a2 */ U, V]): Parser[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("seqMap")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Parser[V]]
-  @scala.inline
-  def seqMap[T, U, V, W](
+  inline def seqMap[T, U](p1: Parser[T], cb: js.Function1[/* a1 */ T, U]): Parser[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("seqMap")(p1.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Parser[U]]
+  inline def seqMap[T, U, V](p1: Parser[T], p2: Parser[U], cb: js.Function2[/* a1 */ T, /* a2 */ U, V]): Parser[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("seqMap")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Parser[V]]
+  inline def seqMap[T, U, V, W](
     p1: Parser[T],
     p2: Parser[U],
     p3: Parser[V],
     cb: js.Function3[/* a1 */ T, /* a2 */ U, /* a3 */ V, W]
   ): Parser[W] = (^.asInstanceOf[js.Dynamic].applyDynamic("seqMap")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Parser[W]]
-  @scala.inline
-  def seqMap[T, U, V, W, X](
+  inline def seqMap[T, U, V, W, X](
     p1: Parser[T],
     p2: Parser[U],
     p3: Parser[V],
     p4: Parser[W],
     cb: js.Function4[/* a1 */ T, /* a2 */ U, /* a3 */ V, /* a4 */ W, X]
   ): Parser[X] = (^.asInstanceOf[js.Dynamic].applyDynamic("seqMap")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any], p4.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Parser[X]]
-  @scala.inline
-  def seqMap[T, U, V, W, X, Y](
+  inline def seqMap[T, U, V, W, X, Y](
     p1: Parser[T],
     p2: Parser[U],
     p3: Parser[V],
@@ -629,8 +583,7 @@ object mod {
     p5: Parser[X],
     cb: js.Function5[/* a1 */ T, /* a2 */ U, /* a3 */ V, /* a4 */ W, /* a5 */ X, Y]
   ): Parser[Y] = (^.asInstanceOf[js.Dynamic].applyDynamic("seqMap")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any], p4.asInstanceOf[js.Any], p5.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Parser[Y]]
-  @scala.inline
-  def seqMap[T, U, V, W, X, Y, Z](
+  inline def seqMap[T, U, V, W, X, Y, Z](
     p1: Parser[T],
     p2: Parser[U],
     p3: Parser[V],
@@ -639,8 +592,7 @@ object mod {
     p6: Parser[Y],
     cb: js.Function6[/* a1 */ T, /* a2 */ U, /* a3 */ V, /* a4 */ W, /* a5 */ X, /* a6 */ Y, Z]
   ): Parser[Z] = (^.asInstanceOf[js.Dynamic].applyDynamic("seqMap")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any], p4.asInstanceOf[js.Any], p5.asInstanceOf[js.Any], p6.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Parser[Z]]
-  @scala.inline
-  def seqMap[T, U, V, W, X, Y, Z, A](
+  inline def seqMap[T, U, V, W, X, Y, Z, A](
     p1: Parser[T],
     p2: Parser[U],
     p3: Parser[V],
@@ -650,8 +602,7 @@ object mod {
     p7: Parser[Z],
     cb: js.Function7[/* a1 */ T, /* a2 */ U, /* a3 */ V, /* a4 */ W, /* a5 */ X, /* a6 */ Y, /* a7 */ Z, A]
   ): Parser[A] = (^.asInstanceOf[js.Dynamic].applyDynamic("seqMap")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any], p4.asInstanceOf[js.Any], p5.asInstanceOf[js.Any], p6.asInstanceOf[js.Any], p7.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Parser[A]]
-  @scala.inline
-  def seqMap[T, U, V, W, X, Y, Z, A, B](
+  inline def seqMap[T, U, V, W, X, Y, Z, A, B](
     p1: Parser[T],
     p2: Parser[U],
     p3: Parser[V],
@@ -672,8 +623,7 @@ object mod {
       B
     ]
   ): Parser[B] = (^.asInstanceOf[js.Dynamic].applyDynamic("seqMap")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any], p4.asInstanceOf[js.Any], p5.asInstanceOf[js.Any], p6.asInstanceOf[js.Any], p7.asInstanceOf[js.Any], p8.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Parser[B]]
-  @scala.inline
-  def seqMap[T, U, V, W, X, Y, Z, A, B, C](
+  inline def seqMap[T, U, V, W, X, Y, Z, A, B, C](
     p1: Parser[T],
     p2: Parser[U],
     p3: Parser[V],
@@ -696,8 +646,7 @@ object mod {
       C
     ]
   ): Parser[C] = (^.asInstanceOf[js.Dynamic].applyDynamic("seqMap")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any], p4.asInstanceOf[js.Any], p5.asInstanceOf[js.Any], p6.asInstanceOf[js.Any], p7.asInstanceOf[js.Any], p8.asInstanceOf[js.Any], p9.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Parser[C]]
-  @scala.inline
-  def seqMap[T, U, V, W, X, Y, Z, A, B, C, D](
+  inline def seqMap[T, U, V, W, X, Y, Z, A, B, C, D](
     p1: Parser[T],
     p2: Parser[U],
     p3: Parser[V],
@@ -723,8 +672,7 @@ object mod {
     ]
   ): Parser[D] = (^.asInstanceOf[js.Dynamic].applyDynamic("seqMap")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any], p4.asInstanceOf[js.Any], p5.asInstanceOf[js.Any], p6.asInstanceOf[js.Any], p7.asInstanceOf[js.Any], p8.asInstanceOf[js.Any], p9.asInstanceOf[js.Any], p10.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Parser[D]]
   
-  @scala.inline
-  def seqObj[T, Key /* <: /* keyof T */ String */](
+  inline def seqObj[T, Key /* <: /* keyof T */ String */](
     args: ((js.Tuple2[
       Key, 
       Parser[
@@ -744,26 +692,22 @@ object mod {
   /**
     * is a parser that expects to find "my-string", and will yield the same.
     */
-  @scala.inline
-  def string(string: String): Parser[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("string")(string.asInstanceOf[js.Any]).asInstanceOf[Parser[String]]
+  inline def string(string: String): Parser[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("string")(string.asInstanceOf[js.Any]).asInstanceOf[Parser[String]]
   
   /**
     * Returns a parser that doesn't consume any of the string, and yields result.
     */
-  @scala.inline
-  def succeed[U](result: U): Parser[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("succeed")(result.asInstanceOf[js.Any]).asInstanceOf[Parser[U]]
+  inline def succeed[U](result: U): Parser[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("succeed")(result.asInstanceOf[js.Any]).asInstanceOf[Parser[U]]
   
   /**
     * Returns a parser yield a string containing all the next characters that pass the predicate
     */
-  @scala.inline
-  def takeWhile(predicate: js.Function1[/* char */ String, Boolean]): Parser[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("takeWhile")(predicate.asInstanceOf[js.Any]).asInstanceOf[Parser[String]]
+  inline def takeWhile(predicate: js.Function1[/* char */ String, Boolean]): Parser[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("takeWhile")(predicate.asInstanceOf[js.Any]).asInstanceOf[Parser[String]]
   
   /**
     * Returns a parser that yield a single character if it passes the predicate
     */
-  @scala.inline
-  def test(predicate: js.Function1[/* char */ String, Boolean]): Parser[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(predicate.asInstanceOf[js.Any]).asInstanceOf[Parser[String]]
+  inline def test(predicate: js.Function1[/* char */ String, Boolean]): Parser[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(predicate.asInstanceOf[js.Any]).asInstanceOf[Parser[String]]
   
   /**
     * is equivalent to Parsimmon.regex(/\s+/)
@@ -784,26 +728,20 @@ object mod {
   }
   object Failure {
     
-    @scala.inline
-    def apply(expected: js.Array[String], index: Index_): Failure = {
+    inline def apply(expected: js.Array[String], index: Index_): Failure = {
       val __obj = js.Dynamic.literal(expected = expected.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], status = false)
       __obj.asInstanceOf[Failure]
     }
     
-    @scala.inline
-    implicit class FailureMutableBuilder[Self <: Failure] (val x: Self) extends AnyVal {
+    extension [Self <: Failure](x: Self) {
       
-      @scala.inline
-      def setExpected(value: js.Array[String]): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
+      inline def setExpected(value: js.Array[String]): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpectedVarargs(value: String*): Self = StObject.set(x, "expected", js.Array(value :_*))
+      inline def setExpectedVarargs(value: String*): Self = StObject.set(x, "expected", js.Array(value :_*))
       
-      @scala.inline
-      def setIndex(value: Index_): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Index_): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: `false`): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: `false`): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -825,32 +763,24 @@ object mod {
   }
   object FailureReply {
     
-    @scala.inline
-    def apply(expected: js.Array[String], furthest: Double, value: Null): FailureReply = {
+    inline def apply(expected: js.Array[String], furthest: Double, value: Null): FailureReply = {
       val __obj = js.Dynamic.literal(expected = expected.asInstanceOf[js.Any], furthest = furthest.asInstanceOf[js.Any], index = -1, status = false, value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[FailureReply]
     }
     
-    @scala.inline
-    implicit class FailureReplyMutableBuilder[Self <: FailureReply] (val x: Self) extends AnyVal {
+    extension [Self <: FailureReply](x: Self) {
       
-      @scala.inline
-      def setExpected(value: js.Array[String]): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
+      inline def setExpected(value: js.Array[String]): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpectedVarargs(value: String*): Self = StObject.set(x, "expected", js.Array(value :_*))
+      inline def setExpectedVarargs(value: String*): Self = StObject.set(x, "expected", js.Array(value :_*))
       
-      @scala.inline
-      def setFurthest(value: Double): Self = StObject.set(x, "furthest", value.asInstanceOf[js.Any])
+      inline def setFurthest(value: Double): Self = StObject.set(x, "furthest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: `-1`): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: `-1`): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: `false`): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: `false`): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Null): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Null): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -867,23 +797,18 @@ object mod {
   }
   object Index_ {
     
-    @scala.inline
-    def apply(column: Double, line: Double, offset: Double): Index_ = {
+    inline def apply(column: Double, line: Double, offset: Double): Index_ = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
       __obj.asInstanceOf[Index_]
     }
     
-    @scala.inline
-    implicit class Index_MutableBuilder[Self <: Index_] (val x: Self) extends AnyVal {
+    extension [Self <: Index_](x: Self) {
       
-      @scala.inline
-      def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     }
   }
   
@@ -899,23 +824,18 @@ object mod {
   }
   object Mark {
     
-    @scala.inline
-    def apply[T](end: Index_, start: Index_, value: T): Mark[T] = {
+    inline def apply[T](end: Index_, start: Index_, value: T): Mark[T] = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Mark[T]]
     }
     
-    @scala.inline
-    implicit class MarkMutableBuilder[Self <: Mark[?], T] (val x: Self & Mark[T]) extends AnyVal {
+    extension [Self <: Mark[?], T](x: Self & Mark[T]) {
       
-      @scala.inline
-      def setEnd(value: Index_): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Index_): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: Index_): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Index_): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -927,17 +847,14 @@ object mod {
   }
   object Node {
     
-    @scala.inline
-    def apply[Name /* <: String */, T](end: Index_, name: Name, start: Index_, value: T): Node[Name, T] = {
+    inline def apply[Name /* <: String */, T](end: Index_, name: Name, start: Index_, value: T): Node[Name, T] = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Node[Name, T]]
     }
     
-    @scala.inline
-    implicit class NodeMutableBuilder[Self <: Node[?, ?], Name /* <: String */, T] (val x: Self & (Node[Name, T])) extends AnyVal {
+    extension [Self <: Node[?, ?], Name /* <: String */, T](x: Self & (Node[Name, T])) {
       
-      @scala.inline
-      def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -950,14 +867,12 @@ object mod {
   trait Reply[T] extends StObject
   object Reply {
     
-    @scala.inline
-    def FailureReply(expected: js.Array[String], furthest: Double, value: Null): typings.parsimmon.mod.FailureReply = {
+    inline def FailureReply(expected: js.Array[String], furthest: Double, value: Null): typings.parsimmon.mod.FailureReply = {
       val __obj = js.Dynamic.literal(expected = expected.asInstanceOf[js.Any], furthest = furthest.asInstanceOf[js.Any], index = -1, status = false, value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.parsimmon.mod.FailureReply]
     }
     
-    @scala.inline
-    def SuccessReply[T](expected: js.Array[String], index: Double, value: T): typings.parsimmon.mod.SuccessReply[T] = {
+    inline def SuccessReply[T](expected: js.Array[String], index: Double, value: T): typings.parsimmon.mod.SuccessReply[T] = {
       val __obj = js.Dynamic.literal(expected = expected.asInstanceOf[js.Any], furthest = -1, index = index.asInstanceOf[js.Any], status = true, value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.parsimmon.mod.SuccessReply[T]]
     }
@@ -970,14 +885,12 @@ object mod {
   trait Result[T] extends StObject
   object Result {
     
-    @scala.inline
-    def Failure(expected: js.Array[String], index: Index_): typings.parsimmon.mod.Failure = {
+    inline def Failure(expected: js.Array[String], index: Index_): typings.parsimmon.mod.Failure = {
       val __obj = js.Dynamic.literal(expected = expected.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], status = false)
       __obj.asInstanceOf[typings.parsimmon.mod.Failure]
     }
     
-    @scala.inline
-    def Success[T](value: T): typings.parsimmon.mod.Success[T] = {
+    inline def Success[T](value: T): typings.parsimmon.mod.Success[T] = {
       val __obj = js.Dynamic.literal(status = true, value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.parsimmon.mod.Success[T]]
     }
@@ -997,20 +910,16 @@ object mod {
   }
   object Success {
     
-    @scala.inline
-    def apply[T](value: T): Success[T] = {
+    inline def apply[T](value: T): Success[T] = {
       val __obj = js.Dynamic.literal(status = true, value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Success[T]]
     }
     
-    @scala.inline
-    implicit class SuccessMutableBuilder[Self <: Success[?], T] (val x: Self & Success[T]) extends AnyVal {
+    extension [Self <: Success[?], T](x: Self & Success[T]) {
       
-      @scala.inline
-      def setStatus(value: `true`): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: `true`): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1032,32 +941,24 @@ object mod {
   }
   object SuccessReply {
     
-    @scala.inline
-    def apply[T](expected: js.Array[String], index: Double, value: T): SuccessReply[T] = {
+    inline def apply[T](expected: js.Array[String], index: Double, value: T): SuccessReply[T] = {
       val __obj = js.Dynamic.literal(expected = expected.asInstanceOf[js.Any], furthest = -1, index = index.asInstanceOf[js.Any], status = true, value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[SuccessReply[T]]
     }
     
-    @scala.inline
-    implicit class SuccessReplyMutableBuilder[Self <: SuccessReply[?], T] (val x: Self & SuccessReply[T]) extends AnyVal {
+    extension [Self <: SuccessReply[?], T](x: Self & SuccessReply[T]) {
       
-      @scala.inline
-      def setExpected(value: js.Array[String]): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
+      inline def setExpected(value: js.Array[String]): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpectedVarargs(value: String*): Self = StObject.set(x, "expected", js.Array(value :_*))
+      inline def setExpectedVarargs(value: String*): Self = StObject.set(x, "expected", js.Array(value :_*))
       
-      @scala.inline
-      def setFurthest(value: `-1`): Self = StObject.set(x, "furthest", value.asInstanceOf[js.Any])
+      inline def setFurthest(value: `-1`): Self = StObject.set(x, "furthest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: `true`): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: `true`): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

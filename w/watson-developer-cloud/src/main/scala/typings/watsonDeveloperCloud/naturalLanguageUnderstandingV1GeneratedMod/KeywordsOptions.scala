@@ -18,31 +18,23 @@ trait KeywordsOptions extends StObject {
 }
 object KeywordsOptions {
   
-  @scala.inline
-  def apply(): KeywordsOptions = {
+  inline def apply(): KeywordsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KeywordsOptions]
   }
   
-  @scala.inline
-  implicit class KeywordsOptionsMutableBuilder[Self <: KeywordsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: KeywordsOptions](x: Self) {
     
-    @scala.inline
-    def setEmotion(value: Boolean): Self = StObject.set(x, "emotion", value.asInstanceOf[js.Any])
+    inline def setEmotion(value: Boolean): Self = StObject.set(x, "emotion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmotionUndefined: Self = StObject.set(x, "emotion", js.undefined)
+    inline def setEmotionUndefined: Self = StObject.set(x, "emotion", js.undefined)
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setSentiment(value: Boolean): Self = StObject.set(x, "sentiment", value.asInstanceOf[js.Any])
+    inline def setSentiment(value: Boolean): Self = StObject.set(x, "sentiment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSentimentUndefined: Self = StObject.set(x, "sentiment", js.undefined)
+    inline def setSentimentUndefined: Self = StObject.set(x, "sentiment", js.undefined)
   }
 }

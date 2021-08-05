@@ -18,10 +18,8 @@ object mod {
     *
     * @link https://github.com/ehmicky/log-process-errors/blob/master/docs/API.md#logprocesserrorsoptions
     */
-  @scala.inline
-  def apply(): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function0[Unit]]
-  @scala.inline
-  def apply(options: Options): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+  inline def apply(): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function0[Unit]]
+  inline def apply(options: Options): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
   
   @JSImport("log-process-errors", JSImport.Namespace)
   @js.native
@@ -40,20 +38,15 @@ object mod {
   trait ExceptionType extends StObject
   object ExceptionType {
     
-    @scala.inline
-    def multipleResolves: typings.logProcessErrors.logProcessErrorsStrings.multipleResolves = "multipleResolves".asInstanceOf[typings.logProcessErrors.logProcessErrorsStrings.multipleResolves]
+    inline def multipleResolves: typings.logProcessErrors.logProcessErrorsStrings.multipleResolves = "multipleResolves".asInstanceOf[typings.logProcessErrors.logProcessErrorsStrings.multipleResolves]
     
-    @scala.inline
-    def rejectionHandled: typings.logProcessErrors.logProcessErrorsStrings.rejectionHandled = "rejectionHandled".asInstanceOf[typings.logProcessErrors.logProcessErrorsStrings.rejectionHandled]
+    inline def rejectionHandled: typings.logProcessErrors.logProcessErrorsStrings.rejectionHandled = "rejectionHandled".asInstanceOf[typings.logProcessErrors.logProcessErrorsStrings.rejectionHandled]
     
-    @scala.inline
-    def uncaughtException: typings.logProcessErrors.logProcessErrorsStrings.uncaughtException = "uncaughtException".asInstanceOf[typings.logProcessErrors.logProcessErrorsStrings.uncaughtException]
+    inline def uncaughtException: typings.logProcessErrors.logProcessErrorsStrings.uncaughtException = "uncaughtException".asInstanceOf[typings.logProcessErrors.logProcessErrorsStrings.uncaughtException]
     
-    @scala.inline
-    def unhandledRejection: typings.logProcessErrors.logProcessErrorsStrings.unhandledRejection = "unhandledRejection".asInstanceOf[typings.logProcessErrors.logProcessErrorsStrings.unhandledRejection]
+    inline def unhandledRejection: typings.logProcessErrors.logProcessErrorsStrings.unhandledRejection = "unhandledRejection".asInstanceOf[typings.logProcessErrors.logProcessErrorsStrings.unhandledRejection]
     
-    @scala.inline
-    def warning: typings.logProcessErrors.logProcessErrorsStrings.warning = "warning".asInstanceOf[typings.logProcessErrors.logProcessErrorsStrings.warning]
+    inline def warning: typings.logProcessErrors.logProcessErrorsStrings.warning = "warning".asInstanceOf[typings.logProcessErrors.logProcessErrorsStrings.warning]
   }
   
   /**
@@ -70,23 +63,17 @@ object mod {
   trait LogLevel extends StObject
   object LogLevel {
     
-    @scala.inline
-    def default: typings.logProcessErrors.logProcessErrorsStrings.default = "default".asInstanceOf[typings.logProcessErrors.logProcessErrorsStrings.default]
+    inline def default: typings.logProcessErrors.logProcessErrorsStrings.default = "default".asInstanceOf[typings.logProcessErrors.logProcessErrorsStrings.default]
     
-    @scala.inline
-    def debug: typings.logProcessErrors.logProcessErrorsStrings.debug = "debug".asInstanceOf[typings.logProcessErrors.logProcessErrorsStrings.debug]
+    inline def debug: typings.logProcessErrors.logProcessErrorsStrings.debug = "debug".asInstanceOf[typings.logProcessErrors.logProcessErrorsStrings.debug]
     
-    @scala.inline
-    def error: typings.logProcessErrors.logProcessErrorsStrings.error = "error".asInstanceOf[typings.logProcessErrors.logProcessErrorsStrings.error]
+    inline def error: typings.logProcessErrors.logProcessErrorsStrings.error = "error".asInstanceOf[typings.logProcessErrors.logProcessErrorsStrings.error]
     
-    @scala.inline
-    def info: typings.logProcessErrors.logProcessErrorsStrings.info = "info".asInstanceOf[typings.logProcessErrors.logProcessErrorsStrings.info]
+    inline def info: typings.logProcessErrors.logProcessErrorsStrings.info = "info".asInstanceOf[typings.logProcessErrors.logProcessErrorsStrings.info]
     
-    @scala.inline
-    def silent: typings.logProcessErrors.logProcessErrorsStrings.silent = "silent".asInstanceOf[typings.logProcessErrors.logProcessErrorsStrings.silent]
+    inline def silent: typings.logProcessErrors.logProcessErrorsStrings.silent = "silent".asInstanceOf[typings.logProcessErrors.logProcessErrorsStrings.silent]
     
-    @scala.inline
-    def warn: typings.logProcessErrors.logProcessErrorsStrings.warn = "warn".asInstanceOf[typings.logProcessErrors.logProcessErrorsStrings.warn]
+    inline def warn: typings.logProcessErrors.logProcessErrorsStrings.warn = "warn".asInstanceOf[typings.logProcessErrors.logProcessErrorsStrings.warn]
   }
   
   /**
@@ -131,47 +118,34 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setColors(value: Boolean): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: Boolean): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+      inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
       
-      @scala.inline
-      def setExitOn(value: js.Array[ExceptionType]): Self = StObject.set(x, "exitOn", value.asInstanceOf[js.Any])
+      inline def setExitOn(value: js.Array[ExceptionType]): Self = StObject.set(x, "exitOn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExitOnUndefined: Self = StObject.set(x, "exitOn", js.undefined)
+      inline def setExitOnUndefined: Self = StObject.set(x, "exitOn", js.undefined)
       
-      @scala.inline
-      def setExitOnVarargs(value: ExceptionType*): Self = StObject.set(x, "exitOn", js.Array(value :_*))
+      inline def setExitOnVarargs(value: ExceptionType*): Self = StObject.set(x, "exitOn", js.Array(value :_*))
       
-      @scala.inline
-      def setLevel(value: PartialRecordExceptionTyp): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: PartialRecordExceptionTyp): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      @scala.inline
-      def setLog(value: (/* error */ Error, /* level */ LogLevel) => js.Promise[Unit] | Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
+      inline def setLog(value: (/* error */ Error, /* level */ LogLevel) => js.Promise[Unit] | Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+      inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
       
-      @scala.inline
-      def setTesting(value: ava | mocha | jasmine | tape | `node-tap`): Self = StObject.set(x, "testing", value.asInstanceOf[js.Any])
+      inline def setTesting(value: ava | mocha | jasmine | tape | `node-tap`): Self = StObject.set(x, "testing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTestingUndefined: Self = StObject.set(x, "testing", js.undefined)
+      inline def setTestingUndefined: Self = StObject.set(x, "testing", js.undefined)
     }
   }
 }

@@ -16,22 +16,17 @@ trait SchemaInstanceGroupManagersCreateInstancesRequest extends StObject {
 }
 object SchemaInstanceGroupManagersCreateInstancesRequest {
   
-  @scala.inline
-  def apply(): SchemaInstanceGroupManagersCreateInstancesRequest = {
+  inline def apply(): SchemaInstanceGroupManagersCreateInstancesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInstanceGroupManagersCreateInstancesRequest]
   }
   
-  @scala.inline
-  implicit class SchemaInstanceGroupManagersCreateInstancesRequestMutableBuilder[Self <: SchemaInstanceGroupManagersCreateInstancesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInstanceGroupManagersCreateInstancesRequest](x: Self) {
     
-    @scala.inline
-    def setInstances(value: js.Array[SchemaPerInstanceConfig]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
+    inline def setInstances(value: js.Array[SchemaPerInstanceConfig]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
+    inline def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
     
-    @scala.inline
-    def setInstancesVarargs(value: SchemaPerInstanceConfig*): Self = StObject.set(x, "instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: SchemaPerInstanceConfig*): Self = StObject.set(x, "instances", js.Array(value :_*))
   }
 }

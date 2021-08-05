@@ -70,8 +70,7 @@ trait XHyphenator
 }
 object XHyphenator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Locales: SafeArray[Locale],
     acquire: () => Unit,
     createPossibleHyphens: (String, Locale, PropertyValues) => XPossibleHyphens,
@@ -86,16 +85,12 @@ object XHyphenator {
     __obj.asInstanceOf[XHyphenator]
   }
   
-  @scala.inline
-  implicit class XHyphenatorMutableBuilder[Self <: XHyphenator] (val x: Self) extends AnyVal {
+  extension [Self <: XHyphenator](x: Self) {
     
-    @scala.inline
-    def setCreatePossibleHyphens(value: (String, Locale, PropertyValues) => XPossibleHyphens): Self = StObject.set(x, "createPossibleHyphens", js.Any.fromFunction3(value))
+    inline def setCreatePossibleHyphens(value: (String, Locale, PropertyValues) => XPossibleHyphens): Self = StObject.set(x, "createPossibleHyphens", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setHyphenate(value: (String, Locale, Double, PropertyValues) => XHyphenatedWord): Self = StObject.set(x, "hyphenate", js.Any.fromFunction4(value))
+    inline def setHyphenate(value: (String, Locale, Double, PropertyValues) => XHyphenatedWord): Self = StObject.set(x, "hyphenate", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setQueryAlternativeSpelling(value: (String, Locale, Double, PropertyValues) => XHyphenatedWord): Self = StObject.set(x, "queryAlternativeSpelling", js.Any.fromFunction4(value))
+    inline def setQueryAlternativeSpelling(value: (String, Locale, Double, PropertyValues) => XHyphenatedWord): Self = StObject.set(x, "queryAlternativeSpelling", js.Any.fromFunction4(value))
   }
 }

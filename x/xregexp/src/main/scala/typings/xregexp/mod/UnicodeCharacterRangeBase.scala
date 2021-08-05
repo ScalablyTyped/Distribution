@@ -48,46 +48,33 @@ trait UnicodeCharacterRangeBase extends StObject {
 }
 object UnicodeCharacterRangeBase {
   
-  @scala.inline
-  def apply(name: String): UnicodeCharacterRangeBase = {
+  inline def apply(name: String): UnicodeCharacterRangeBase = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnicodeCharacterRangeBase]
   }
   
-  @scala.inline
-  implicit class UnicodeCharacterRangeBaseMutableBuilder[Self <: UnicodeCharacterRangeBase] (val x: Self) extends AnyVal {
+  extension [Self <: UnicodeCharacterRangeBase](x: Self) {
     
-    @scala.inline
-    def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+    inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+    inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
     
-    @scala.inline
-    def setAstral(value: String): Self = StObject.set(x, "astral", value.asInstanceOf[js.Any])
+    inline def setAstral(value: String): Self = StObject.set(x, "astral", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAstralUndefined: Self = StObject.set(x, "astral", js.undefined)
+    inline def setAstralUndefined: Self = StObject.set(x, "astral", js.undefined)
     
-    @scala.inline
-    def setBmp(value: String): Self = StObject.set(x, "bmp", value.asInstanceOf[js.Any])
+    inline def setBmp(value: String): Self = StObject.set(x, "bmp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBmpUndefined: Self = StObject.set(x, "bmp", js.undefined)
+    inline def setBmpUndefined: Self = StObject.set(x, "bmp", js.undefined)
     
-    @scala.inline
-    def setInverseOf(value: String): Self = StObject.set(x, "inverseOf", value.asInstanceOf[js.Any])
+    inline def setInverseOf(value: String): Self = StObject.set(x, "inverseOf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInverseOfUndefined: Self = StObject.set(x, "inverseOf", js.undefined)
+    inline def setInverseOfUndefined: Self = StObject.set(x, "inverseOf", js.undefined)
     
-    @scala.inline
-    def setIsBmpLast(value: Boolean): Self = StObject.set(x, "isBmpLast", value.asInstanceOf[js.Any])
+    inline def setIsBmpLast(value: Boolean): Self = StObject.set(x, "isBmpLast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsBmpLastUndefined: Self = StObject.set(x, "isBmpLast", js.undefined)
+    inline def setIsBmpLastUndefined: Self = StObject.set(x, "isBmpLast", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

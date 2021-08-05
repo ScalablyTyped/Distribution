@@ -21,25 +21,19 @@ trait SchemaLandmark extends StObject {
 }
 object SchemaLandmark {
   
-  @scala.inline
-  def apply(): SchemaLandmark = {
+  inline def apply(): SchemaLandmark = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLandmark]
   }
   
-  @scala.inline
-  implicit class SchemaLandmarkMutableBuilder[Self <: SchemaLandmark] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLandmark](x: Self) {
     
-    @scala.inline
-    def setPosition(value: SchemaPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: SchemaPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

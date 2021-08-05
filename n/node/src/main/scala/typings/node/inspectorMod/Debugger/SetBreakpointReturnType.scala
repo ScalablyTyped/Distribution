@@ -18,19 +18,15 @@ trait SetBreakpointReturnType extends StObject {
 }
 object SetBreakpointReturnType {
   
-  @scala.inline
-  def apply(actualLocation: Location, breakpointId: BreakpointId): SetBreakpointReturnType = {
+  inline def apply(actualLocation: Location, breakpointId: BreakpointId): SetBreakpointReturnType = {
     val __obj = js.Dynamic.literal(actualLocation = actualLocation.asInstanceOf[js.Any], breakpointId = breakpointId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetBreakpointReturnType]
   }
   
-  @scala.inline
-  implicit class SetBreakpointReturnTypeMutableBuilder[Self <: SetBreakpointReturnType] (val x: Self) extends AnyVal {
+  extension [Self <: SetBreakpointReturnType](x: Self) {
     
-    @scala.inline
-    def setActualLocation(value: Location): Self = StObject.set(x, "actualLocation", value.asInstanceOf[js.Any])
+    inline def setActualLocation(value: Location): Self = StObject.set(x, "actualLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBreakpointId(value: BreakpointId): Self = StObject.set(x, "breakpointId", value.asInstanceOf[js.Any])
+    inline def setBreakpointId(value: BreakpointId): Self = StObject.set(x, "breakpointId", value.asInstanceOf[js.Any])
   }
 }

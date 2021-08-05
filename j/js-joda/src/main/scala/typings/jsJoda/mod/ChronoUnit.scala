@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("js-joda", "ChronoUnit")
 @js.native
-class ChronoUnit protected () extends TemporalUnit {
+/* private */ class ChronoUnit () extends TemporalUnit {
   
   def compareTo(other: TemporalUnit): Double = js.native
 }
@@ -20,111 +20,95 @@ object ChronoUnit {
   @JSImport("js-joda", "ChronoUnit.CENTURIES")
   @js.native
   def CENTURIES: ChronoUnit = js.native
-  @scala.inline
-  def CENTURIES_=(x: ChronoUnit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CENTURIES")(x.asInstanceOf[js.Any])
+  inline def CENTURIES_=(x: ChronoUnit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CENTURIES")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("js-joda", "ChronoUnit.DAYS")
   @js.native
   def DAYS: ChronoUnit = js.native
-  @scala.inline
-  def DAYS_=(x: ChronoUnit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DAYS")(x.asInstanceOf[js.Any])
+  inline def DAYS_=(x: ChronoUnit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DAYS")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("js-joda", "ChronoUnit.DECADES")
   @js.native
   def DECADES: ChronoUnit = js.native
-  @scala.inline
-  def DECADES_=(x: ChronoUnit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DECADES")(x.asInstanceOf[js.Any])
+  inline def DECADES_=(x: ChronoUnit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DECADES")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("js-joda", "ChronoUnit.ERAS")
   @js.native
   def ERAS: ChronoUnit = js.native
-  @scala.inline
-  def ERAS_=(x: ChronoUnit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERAS")(x.asInstanceOf[js.Any])
+  inline def ERAS_=(x: ChronoUnit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERAS")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("js-joda", "ChronoUnit.FOREVER")
   @js.native
   def FOREVER: ChronoUnit = js.native
-  @scala.inline
-  def FOREVER_=(x: ChronoUnit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FOREVER")(x.asInstanceOf[js.Any])
+  inline def FOREVER_=(x: ChronoUnit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FOREVER")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("js-joda", "ChronoUnit.HALF_DAYS")
   @js.native
   def HALF_DAYS: ChronoUnit = js.native
-  @scala.inline
-  def HALF_DAYS_=(x: ChronoUnit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HALF_DAYS")(x.asInstanceOf[js.Any])
+  inline def HALF_DAYS_=(x: ChronoUnit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HALF_DAYS")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("js-joda", "ChronoUnit.HOURS")
   @js.native
   def HOURS: ChronoUnit = js.native
-  @scala.inline
-  def HOURS_=(x: ChronoUnit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HOURS")(x.asInstanceOf[js.Any])
+  inline def HOURS_=(x: ChronoUnit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HOURS")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("js-joda", "ChronoUnit.MICROS")
   @js.native
   def MICROS: ChronoUnit = js.native
-  @scala.inline
-  def MICROS_=(x: ChronoUnit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MICROS")(x.asInstanceOf[js.Any])
+  inline def MICROS_=(x: ChronoUnit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MICROS")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("js-joda", "ChronoUnit.MILLENNIA")
   @js.native
   def MILLENNIA: ChronoUnit = js.native
-  @scala.inline
-  def MILLENNIA_=(x: ChronoUnit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MILLENNIA")(x.asInstanceOf[js.Any])
+  inline def MILLENNIA_=(x: ChronoUnit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MILLENNIA")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("js-joda", "ChronoUnit.MILLIS")
   @js.native
   def MILLIS: ChronoUnit = js.native
-  @scala.inline
-  def MILLIS_=(x: ChronoUnit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MILLIS")(x.asInstanceOf[js.Any])
+  inline def MILLIS_=(x: ChronoUnit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MILLIS")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("js-joda", "ChronoUnit.MINUTES")
   @js.native
   def MINUTES: ChronoUnit = js.native
-  @scala.inline
-  def MINUTES_=(x: ChronoUnit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MINUTES")(x.asInstanceOf[js.Any])
+  inline def MINUTES_=(x: ChronoUnit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MINUTES")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("js-joda", "ChronoUnit.MONTHS")
   @js.native
   def MONTHS: ChronoUnit = js.native
-  @scala.inline
-  def MONTHS_=(x: ChronoUnit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MONTHS")(x.asInstanceOf[js.Any])
+  inline def MONTHS_=(x: ChronoUnit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MONTHS")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("js-joda", "ChronoUnit.NANOS")
   @js.native
   def NANOS: ChronoUnit = js.native
-  @scala.inline
-  def NANOS_=(x: ChronoUnit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NANOS")(x.asInstanceOf[js.Any])
+  inline def NANOS_=(x: ChronoUnit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NANOS")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("js-joda", "ChronoUnit.SECONDS")
   @js.native
   def SECONDS: ChronoUnit = js.native
-  @scala.inline
-  def SECONDS_=(x: ChronoUnit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SECONDS")(x.asInstanceOf[js.Any])
+  inline def SECONDS_=(x: ChronoUnit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SECONDS")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("js-joda", "ChronoUnit.WEEKS")
   @js.native
   def WEEKS: ChronoUnit = js.native
-  @scala.inline
-  def WEEKS_=(x: ChronoUnit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WEEKS")(x.asInstanceOf[js.Any])
+  inline def WEEKS_=(x: ChronoUnit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WEEKS")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("js-joda", "ChronoUnit.YEARS")
   @js.native
   def YEARS: ChronoUnit = js.native
-  @scala.inline
-  def YEARS_=(x: ChronoUnit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("YEARS")(x.asInstanceOf[js.Any])
+  inline def YEARS_=(x: ChronoUnit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("YEARS")(x.asInstanceOf[js.Any])
 }

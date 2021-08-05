@@ -12,19 +12,15 @@ trait MotionPullUpProps
 }
 object MotionPullUpProps {
   
-  @scala.inline
-  def apply(): MotionPullUpProps = {
+  inline def apply(): MotionPullUpProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MotionPullUpProps]
   }
   
-  @scala.inline
-  implicit class MotionPullUpPropsMutableBuilder[Self <: MotionPullUpProps] (val x: Self) extends AnyVal {
+  extension [Self <: MotionPullUpProps](x: Self) {
     
-    @scala.inline
-    def setDropHeight(value: Double): Self = StObject.set(x, "dropHeight", value.asInstanceOf[js.Any])
+    inline def setDropHeight(value: Double): Self = StObject.set(x, "dropHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropHeightUndefined: Self = StObject.set(x, "dropHeight", js.undefined)
+    inline def setDropHeightUndefined: Self = StObject.set(x, "dropHeight", js.undefined)
   }
 }

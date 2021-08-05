@@ -18,19 +18,15 @@ trait SipAddress extends StObject {
 }
 object SipAddress {
   
-  @scala.inline
-  def apply(Type: SipType, Uri: SipUri): SipAddress = {
+  inline def apply(Type: SipType, Uri: SipUri): SipAddress = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any], Uri = Uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[SipAddress]
   }
   
-  @scala.inline
-  implicit class SipAddressMutableBuilder[Self <: SipAddress] (val x: Self) extends AnyVal {
+  extension [Self <: SipAddress](x: Self) {
     
-    @scala.inline
-    def setType(value: SipType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: SipType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: SipUri): Self = StObject.set(x, "Uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: SipUri): Self = StObject.set(x, "Uri", value.asInstanceOf[js.Any])
   }
 }

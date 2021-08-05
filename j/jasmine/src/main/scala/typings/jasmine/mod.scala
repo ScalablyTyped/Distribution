@@ -18,8 +18,7 @@ object mod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def ConsoleReporter(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ConsoleReporter")().asInstanceOf[js.Any]
+  inline def ConsoleReporter(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ConsoleReporter")().asInstanceOf[js.Any]
   
   @js.native
   trait jasmine extends StObject {

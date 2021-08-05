@@ -17,25 +17,19 @@ trait TimeData extends StObject {
 }
 object TimeData {
   
-  @scala.inline
-  def apply(current: String, timezone: String, timezoneName: String, uptime: String): TimeData = {
+  inline def apply(current: String, timezone: String, timezoneName: String, uptime: String): TimeData = {
     val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], timezone = timezone.asInstanceOf[js.Any], timezoneName = timezoneName.asInstanceOf[js.Any], uptime = uptime.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeData]
   }
   
-  @scala.inline
-  implicit class TimeDataMutableBuilder[Self <: TimeData] (val x: Self) extends AnyVal {
+  extension [Self <: TimeData](x: Self) {
     
-    @scala.inline
-    def setCurrent(value: String): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+    inline def setCurrent(value: String): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
+    inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimezoneName(value: String): Self = StObject.set(x, "timezoneName", value.asInstanceOf[js.Any])
+    inline def setTimezoneName(value: String): Self = StObject.set(x, "timezoneName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUptime(value: String): Self = StObject.set(x, "uptime", value.asInstanceOf[js.Any])
+    inline def setUptime(value: String): Self = StObject.set(x, "uptime", value.asInstanceOf[js.Any])
   }
 }

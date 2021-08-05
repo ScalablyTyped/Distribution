@@ -55,20 +55,15 @@ object mod extends Shortcut {
   trait EnvType extends StObject
   object EnvType {
     
-    @scala.inline
-    def default: typings.eggMock.eggMockStrings.default = "default".asInstanceOf[typings.eggMock.eggMockStrings.default]
+    inline def default: typings.eggMock.eggMockStrings.default = "default".asInstanceOf[typings.eggMock.eggMockStrings.default]
     
-    @scala.inline
-    def local: typings.eggMock.eggMockStrings.local = "local".asInstanceOf[typings.eggMock.eggMockStrings.local]
+    inline def local: typings.eggMock.eggMockStrings.local = "local".asInstanceOf[typings.eggMock.eggMockStrings.local]
     
-    @scala.inline
-    def prod: typings.eggMock.eggMockStrings.prod = "prod".asInstanceOf[typings.eggMock.eggMockStrings.prod]
+    inline def prod: typings.eggMock.eggMockStrings.prod = "prod".asInstanceOf[typings.eggMock.eggMockStrings.prod]
     
-    @scala.inline
-    def test: typings.eggMock.eggMockStrings.test = "test".asInstanceOf[typings.eggMock.eggMockStrings.test]
+    inline def test: typings.eggMock.eggMockStrings.test = "test".asInstanceOf[typings.eggMock.eggMockStrings.test]
     
-    @scala.inline
-    def unittest: typings.eggMock.eggMockStrings.unittest = "unittest".asInstanceOf[typings.eggMock.eggMockStrings.unittest]
+    inline def unittest: typings.eggMock.eggMockStrings.unittest = "unittest".asInstanceOf[typings.eggMock.eggMockStrings.unittest]
   }
   
   @js.native
@@ -138,50 +133,36 @@ object mod extends Shortcut {
   }
   object MockOption {
     
-    @scala.inline
-    def apply(): MockOption = {
+    inline def apply(): MockOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MockOption]
     }
     
-    @scala.inline
-    implicit class MockOptionMutableBuilder[Self <: MockOption] (val x: Self) extends AnyVal {
+    extension [Self <: MockOption](x: Self) {
       
-      @scala.inline
-      def setBaseDir(value: String): Self = StObject.set(x, "baseDir", value.asInstanceOf[js.Any])
+      inline def setBaseDir(value: String): Self = StObject.set(x, "baseDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseDirUndefined: Self = StObject.set(x, "baseDir", js.undefined)
+      inline def setBaseDirUndefined: Self = StObject.set(x, "baseDir", js.undefined)
       
-      @scala.inline
-      def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setClean(value: Boolean): Self = StObject.set(x, "clean", value.asInstanceOf[js.Any])
+      inline def setClean(value: Boolean): Self = StObject.set(x, "clean", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCleanUndefined: Self = StObject.set(x, "clean", js.undefined)
+      inline def setCleanUndefined: Self = StObject.set(x, "clean", js.undefined)
       
-      @scala.inline
-      def setCoverage(value: Boolean): Self = StObject.set(x, "coverage", value.asInstanceOf[js.Any])
+      inline def setCoverage(value: Boolean): Self = StObject.set(x, "coverage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoverageUndefined: Self = StObject.set(x, "coverage", js.undefined)
+      inline def setCoverageUndefined: Self = StObject.set(x, "coverage", js.undefined)
       
-      @scala.inline
-      def setFramework(value: String): Self = StObject.set(x, "framework", value.asInstanceOf[js.Any])
+      inline def setFramework(value: String): Self = StObject.set(x, "framework", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameworkUndefined: Self = StObject.set(x, "framework", js.undefined)
+      inline def setFrameworkUndefined: Self = StObject.set(x, "framework", js.undefined)
       
-      @scala.inline
-      def setPlugins(value: js.Any): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: js.Any): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     }
   }
   

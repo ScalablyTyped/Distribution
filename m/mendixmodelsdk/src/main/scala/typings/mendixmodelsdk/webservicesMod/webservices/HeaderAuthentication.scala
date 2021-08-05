@@ -21,20 +21,17 @@ object HeaderAuthentication {
   @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.HeaderAuthentication.Custom")
   @js.native
   def Custom: HeaderAuthentication = js.native
-  @scala.inline
-  def Custom_=(x: HeaderAuthentication): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Custom")(x.asInstanceOf[js.Any])
+  inline def Custom_=(x: HeaderAuthentication): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Custom")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.HeaderAuthentication.None")
   @js.native
   def None: HeaderAuthentication = js.native
-  @scala.inline
-  def None_=(x: HeaderAuthentication): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
+  inline def None_=(x: HeaderAuthentication): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.HeaderAuthentication.UsernamePassword")
   @js.native
   def UsernamePassword: HeaderAuthentication = js.native
-  @scala.inline
-  def UsernamePassword_=(x: HeaderAuthentication): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UsernamePassword")(x.asInstanceOf[js.Any])
+  inline def UsernamePassword_=(x: HeaderAuthentication): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UsernamePassword")(x.asInstanceOf[js.Any])
 }

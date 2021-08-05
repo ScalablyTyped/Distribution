@@ -14,8 +14,7 @@ object objectToReactMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def objectToReactElement(
+  inline def objectToReactElement(
     obj: VDOMEl,
     onVDOMEvent: js.Function2[/* targetName */ String, /* event */ SerializedEvent[js.Any], Unit]
   ): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("objectToReactElement")(obj.asInstanceOf[js.Any], onVDOMEvent.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
@@ -38,41 +37,30 @@ object objectToReactMod {
   }
   object VDOMEl {
     
-    @scala.inline
-    def apply(attributes: Attributes, tagName: String): VDOMEl = {
+    inline def apply(attributes: Attributes, tagName: String): VDOMEl = {
       val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any], key = null)
       __obj.asInstanceOf[VDOMEl]
     }
     
-    @scala.inline
-    implicit class VDOMElMutableBuilder[Self <: VDOMEl] (val x: Self) extends AnyVal {
+    extension [Self <: VDOMEl](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildren(value: ReactNode | VDOMEl | (js.Array[ReactNode | VDOMEl])): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode | VDOMEl | (js.Array[ReactNode | VDOMEl])): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: (ReactNode | VDOMEl)*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: (ReactNode | VDOMEl)*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setEventHandlers(value: EventHandlers): Self = StObject.set(x, "eventHandlers", value.asInstanceOf[js.Any])
+      inline def setEventHandlers(value: EventHandlers): Self = StObject.set(x, "eventHandlers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventHandlersUndefined: Self = StObject.set(x, "eventHandlers", js.undefined)
+      inline def setEventHandlersUndefined: Self = StObject.set(x, "eventHandlers", js.undefined)
       
-      @scala.inline
-      def setKey(value: Double | String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Double | String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyNull: Self = StObject.set(x, "key", null)
+      inline def setKeyNull: Self = StObject.set(x, "key", null)
       
-      @scala.inline
-      def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+      inline def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     }
   }
 }

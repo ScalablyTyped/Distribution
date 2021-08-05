@@ -50,49 +50,35 @@ trait NodeInfo extends StObject {
 }
 object NodeInfo {
   
-  @scala.inline
-  def apply(): NodeInfo = {
+  inline def apply(): NodeInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodeInfo]
   }
   
-  @scala.inline
-  implicit class NodeInfoMutableBuilder[Self <: NodeInfo] (val x: Self) extends AnyVal {
+  extension [Self <: NodeInfo](x: Self) {
     
-    @scala.inline
-    def setAddedToClusterTime(value: string): Self = StObject.set(x, "AddedToClusterTime", value.asInstanceOf[js.Any])
+    inline def setAddedToClusterTime(value: string): Self = StObject.set(x, "AddedToClusterTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddedToClusterTimeUndefined: Self = StObject.set(x, "AddedToClusterTime", js.undefined)
+    inline def setAddedToClusterTimeUndefined: Self = StObject.set(x, "AddedToClusterTime", js.undefined)
     
-    @scala.inline
-    def setBrokerNodeInfo(value: BrokerNodeInfo): Self = StObject.set(x, "BrokerNodeInfo", value.asInstanceOf[js.Any])
+    inline def setBrokerNodeInfo(value: BrokerNodeInfo): Self = StObject.set(x, "BrokerNodeInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrokerNodeInfoUndefined: Self = StObject.set(x, "BrokerNodeInfo", js.undefined)
+    inline def setBrokerNodeInfoUndefined: Self = StObject.set(x, "BrokerNodeInfo", js.undefined)
     
-    @scala.inline
-    def setInstanceType(value: string): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: string): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
+    inline def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
     
-    @scala.inline
-    def setNodeARN(value: string): Self = StObject.set(x, "NodeARN", value.asInstanceOf[js.Any])
+    inline def setNodeARN(value: string): Self = StObject.set(x, "NodeARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeARNUndefined: Self = StObject.set(x, "NodeARN", js.undefined)
+    inline def setNodeARNUndefined: Self = StObject.set(x, "NodeARN", js.undefined)
     
-    @scala.inline
-    def setNodeType(value: NodeType): Self = StObject.set(x, "NodeType", value.asInstanceOf[js.Any])
+    inline def setNodeType(value: NodeType): Self = StObject.set(x, "NodeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeTypeUndefined: Self = StObject.set(x, "NodeType", js.undefined)
+    inline def setNodeTypeUndefined: Self = StObject.set(x, "NodeType", js.undefined)
     
-    @scala.inline
-    def setZookeeperNodeInfo(value: ZookeeperNodeInfo): Self = StObject.set(x, "ZookeeperNodeInfo", value.asInstanceOf[js.Any])
+    inline def setZookeeperNodeInfo(value: ZookeeperNodeInfo): Self = StObject.set(x, "ZookeeperNodeInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZookeeperNodeInfoUndefined: Self = StObject.set(x, "ZookeeperNodeInfo", js.undefined)
+    inline def setZookeeperNodeInfoUndefined: Self = StObject.set(x, "ZookeeperNodeInfo", js.undefined)
   }
 }

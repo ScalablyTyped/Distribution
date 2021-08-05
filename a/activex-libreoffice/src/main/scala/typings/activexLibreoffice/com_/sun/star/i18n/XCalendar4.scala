@@ -44,8 +44,7 @@ trait XCalendar4
 }
 object XCalendar4 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DateTime: Double,
     Days: SafeArray[CalendarItem],
     Days2: SafeArray[CalendarItem2],
@@ -97,16 +96,12 @@ object XCalendar4 {
     __obj.asInstanceOf[XCalendar4]
   }
   
-  @scala.inline
-  implicit class XCalendar4MutableBuilder[Self <: XCalendar4] (val x: Self) extends AnyVal {
+  extension [Self <: XCalendar4](x: Self) {
     
-    @scala.inline
-    def setGetLocalDateTime(value: () => Double): Self = StObject.set(x, "getLocalDateTime", js.Any.fromFunction0(value))
+    inline def setGetLocalDateTime(value: () => Double): Self = StObject.set(x, "getLocalDateTime", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLocalDateTime(value: Double): Self = StObject.set(x, "LocalDateTime", value.asInstanceOf[js.Any])
+    inline def setLocalDateTime(value: Double): Self = StObject.set(x, "LocalDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetLocalDateTime(value: Double => Unit): Self = StObject.set(x, "setLocalDateTime", js.Any.fromFunction1(value))
+    inline def setSetLocalDateTime(value: Double => Unit): Self = StObject.set(x, "setLocalDateTime", js.Any.fromFunction1(value))
   }
 }

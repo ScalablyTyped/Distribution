@@ -12,8 +12,7 @@ trait IPAccessControlListInstance
 }
 object IPAccessControlListInstance {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     delete: RestMethod,
     get: RestMethod,
     ipAddresses: IPAddressResource,
@@ -24,10 +23,8 @@ object IPAccessControlListInstance {
     __obj.asInstanceOf[IPAccessControlListInstance]
   }
   
-  @scala.inline
-  implicit class IPAccessControlListInstanceMutableBuilder[Self <: IPAccessControlListInstance] (val x: Self) extends AnyVal {
+  extension [Self <: IPAccessControlListInstance](x: Self) {
     
-    @scala.inline
-    def setIpAddresses(value: IPAddressResource): Self = StObject.set(x, "ipAddresses", value.asInstanceOf[js.Any])
+    inline def setIpAddresses(value: IPAddressResource): Self = StObject.set(x, "ipAddresses", value.asInstanceOf[js.Any])
   }
 }

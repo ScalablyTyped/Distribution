@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DBCredentials extends StObject
 object DBCredentials {
   
-  @scala.inline
-  def ConnectString(connectString: String, password: String, user: String): typings.oracledb.anon.ConnectString = {
+  inline def ConnectString(connectString: String, password: String, user: String): typings.oracledb.anon.ConnectString = {
     val __obj = js.Dynamic.literal(connectString = connectString.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.oracledb.anon.ConnectString]
   }
   
-  @scala.inline
-  def ConnectionString(connectionString: String, password: String, user: String): typings.oracledb.anon.ConnectionString = {
+  inline def ConnectionString(connectionString: String, password: String, user: String): typings.oracledb.anon.ConnectionString = {
     val __obj = js.Dynamic.literal(connectionString = connectionString.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.oracledb.anon.ConnectionString]
   }

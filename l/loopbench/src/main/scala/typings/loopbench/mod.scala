@@ -12,10 +12,8 @@ object mod {
   /**
     * Creates a new instance of loopbench.
     */
-  @scala.inline
-  def apply(): LoopBench = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[LoopBench]
-  @scala.inline
-  def apply(options: Options): LoopBench = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[LoopBench]
+  inline def apply(): LoopBench = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[LoopBench]
+  inline def apply(options: Options): LoopBench = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[LoopBench]
   
   @JSImport("loopbench", JSImport.Namespace)
   @js.native
@@ -126,26 +124,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setSampleInterval(value: Double): Self = StObject.set(x, "sampleInterval", value.asInstanceOf[js.Any])
+      inline def setSampleInterval(value: Double): Self = StObject.set(x, "sampleInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSampleIntervalUndefined: Self = StObject.set(x, "sampleInterval", js.undefined)
+      inline def setSampleIntervalUndefined: Self = StObject.set(x, "sampleInterval", js.undefined)
     }
   }
 }

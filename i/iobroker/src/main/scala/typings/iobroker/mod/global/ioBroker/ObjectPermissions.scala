@@ -21,8 +21,7 @@ trait ObjectPermissions extends StObject {
 }
 object ObjectPermissions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     file: ObjectOperationPermissions,
     `object`: ObjectOperationPermissions,
     users: ObjectOperationPermissions
@@ -32,22 +31,16 @@ object ObjectPermissions {
     __obj.asInstanceOf[ObjectPermissions]
   }
   
-  @scala.inline
-  implicit class ObjectPermissionsMutableBuilder[Self <: ObjectPermissions] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectPermissions](x: Self) {
     
-    @scala.inline
-    def setFile(value: ObjectOperationPermissions): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: ObjectOperationPermissions): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObject(value: ObjectOperationPermissions): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: ObjectOperationPermissions): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: ObjectOperationPermissions): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: ObjectOperationPermissions): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setUsers(value: ObjectOperationPermissions): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+    inline def setUsers(value: ObjectOperationPermissions): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
   }
 }

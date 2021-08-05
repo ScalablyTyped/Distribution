@@ -26,8 +26,7 @@ trait QuantitativeFilter
 }
 object QuantitativeFilter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getDomainMax: () => DataValue,
     getDomainMin: () => DataValue,
     getFieldAsync: () => js.Promise[Field],
@@ -42,22 +41,16 @@ object QuantitativeFilter {
     __obj.asInstanceOf[QuantitativeFilter]
   }
   
-  @scala.inline
-  implicit class QuantitativeFilterMutableBuilder[Self <: QuantitativeFilter] (val x: Self) extends AnyVal {
+  extension [Self <: QuantitativeFilter](x: Self) {
     
-    @scala.inline
-    def setGetDomainMax(value: () => DataValue): Self = StObject.set(x, "getDomainMax", js.Any.fromFunction0(value))
+    inline def setGetDomainMax(value: () => DataValue): Self = StObject.set(x, "getDomainMax", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDomainMin(value: () => DataValue): Self = StObject.set(x, "getDomainMin", js.Any.fromFunction0(value))
+    inline def setGetDomainMin(value: () => DataValue): Self = StObject.set(x, "getDomainMin", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIncludeNullValues(value: () => Boolean): Self = StObject.set(x, "getIncludeNullValues", js.Any.fromFunction0(value))
+    inline def setGetIncludeNullValues(value: () => Boolean): Self = StObject.set(x, "getIncludeNullValues", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMax(value: () => DataValue): Self = StObject.set(x, "getMax", js.Any.fromFunction0(value))
+    inline def setGetMax(value: () => DataValue): Self = StObject.set(x, "getMax", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMin(value: () => DataValue): Self = StObject.set(x, "getMin", js.Any.fromFunction0(value))
+    inline def setGetMin(value: () => DataValue): Self = StObject.set(x, "getMin", js.Any.fromFunction0(value))
   }
 }

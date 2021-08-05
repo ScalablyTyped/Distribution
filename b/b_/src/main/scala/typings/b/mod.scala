@@ -60,56 +60,40 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setClassSeparator(value: String): Self = StObject.set(x, "classSeparator", value.asInstanceOf[js.Any])
+      inline def setClassSeparator(value: String): Self = StObject.set(x, "classSeparator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassSeparatorUndefined: Self = StObject.set(x, "classSeparator", js.undefined)
+      inline def setClassSeparatorUndefined: Self = StObject.set(x, "classSeparator", js.undefined)
       
-      @scala.inline
-      def setElementSeparator(value: String): Self = StObject.set(x, "elementSeparator", value.asInstanceOf[js.Any])
+      inline def setElementSeparator(value: String): Self = StObject.set(x, "elementSeparator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementSeparatorUndefined: Self = StObject.set(x, "elementSeparator", js.undefined)
+      inline def setElementSeparatorUndefined: Self = StObject.set(x, "elementSeparator", js.undefined)
       
-      @scala.inline
-      def setIsFullBoolValue(value: Boolean): Self = StObject.set(x, "isFullBoolValue", value.asInstanceOf[js.Any])
+      inline def setIsFullBoolValue(value: Boolean): Self = StObject.set(x, "isFullBoolValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFullBoolValueUndefined: Self = StObject.set(x, "isFullBoolValue", js.undefined)
+      inline def setIsFullBoolValueUndefined: Self = StObject.set(x, "isFullBoolValue", js.undefined)
       
-      @scala.inline
-      def setIsFullModifier(value: Boolean): Self = StObject.set(x, "isFullModifier", value.asInstanceOf[js.Any])
+      inline def setIsFullModifier(value: Boolean): Self = StObject.set(x, "isFullModifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFullModifierUndefined: Self = StObject.set(x, "isFullModifier", js.undefined)
+      inline def setIsFullModifierUndefined: Self = StObject.set(x, "isFullModifier", js.undefined)
       
-      @scala.inline
-      def setModSeparator(value: String): Self = StObject.set(x, "modSeparator", value.asInstanceOf[js.Any])
+      inline def setModSeparator(value: String): Self = StObject.set(x, "modSeparator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModSeparatorUndefined: Self = StObject.set(x, "modSeparator", js.undefined)
+      inline def setModSeparatorUndefined: Self = StObject.set(x, "modSeparator", js.undefined)
       
-      @scala.inline
-      def setModValueSeparator(value: String): Self = StObject.set(x, "modValueSeparator", value.asInstanceOf[js.Any])
+      inline def setModValueSeparator(value: String): Self = StObject.set(x, "modValueSeparator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModValueSeparatorUndefined: Self = StObject.set(x, "modValueSeparator", js.undefined)
+      inline def setModValueSeparatorUndefined: Self = StObject.set(x, "modValueSeparator", js.undefined)
       
-      @scala.inline
-      def setTailSpace(value: String): Self = StObject.set(x, "tailSpace", value.asInstanceOf[js.Any])
+      inline def setTailSpace(value: String): Self = StObject.set(x, "tailSpace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTailSpaceUndefined: Self = StObject.set(x, "tailSpace", js.undefined)
+      inline def setTailSpaceUndefined: Self = StObject.set(x, "tailSpace", js.undefined)
     }
   }
   

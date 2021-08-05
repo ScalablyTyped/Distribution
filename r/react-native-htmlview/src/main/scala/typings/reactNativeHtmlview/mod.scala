@@ -35,35 +35,26 @@ object mod {
   }
   object HTMLViewNode {
     
-    @scala.inline
-    def apply(attribs: StringDictionary[String]): HTMLViewNode = {
+    inline def apply(attribs: StringDictionary[String]): HTMLViewNode = {
       val __obj = js.Dynamic.literal(attribs = attribs.asInstanceOf[js.Any])
       __obj.asInstanceOf[HTMLViewNode]
     }
     
-    @scala.inline
-    implicit class HTMLViewNodeMutableBuilder[Self <: HTMLViewNode] (val x: Self) extends AnyVal {
+    extension [Self <: HTMLViewNode](x: Self) {
       
-      @scala.inline
-      def setAttribs(value: StringDictionary[String]): Self = StObject.set(x, "attribs", value.asInstanceOf[js.Any])
+      inline def setAttribs(value: StringDictionary[String]): Self = StObject.set(x, "attribs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -158,103 +149,72 @@ object mod {
   }
   object HTMLViewProps {
     
-    @scala.inline
-    def apply(value: String): HTMLViewProps = {
+    inline def apply(value: String): HTMLViewProps = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[HTMLViewProps]
     }
     
-    @scala.inline
-    implicit class HTMLViewPropsMutableBuilder[Self <: HTMLViewProps] (val x: Self) extends AnyVal {
+    extension [Self <: HTMLViewProps](x: Self) {
       
-      @scala.inline
-      def setAddLineBreaks(value: Boolean): Self = StObject.set(x, "addLineBreaks", value.asInstanceOf[js.Any])
+      inline def setAddLineBreaks(value: Boolean): Self = StObject.set(x, "addLineBreaks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddLineBreaksUndefined: Self = StObject.set(x, "addLineBreaks", js.undefined)
+      inline def setAddLineBreaksUndefined: Self = StObject.set(x, "addLineBreaks", js.undefined)
       
-      @scala.inline
-      def setBullet(value: String): Self = StObject.set(x, "bullet", value.asInstanceOf[js.Any])
+      inline def setBullet(value: String): Self = StObject.set(x, "bullet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBulletUndefined: Self = StObject.set(x, "bullet", js.undefined)
+      inline def setBulletUndefined: Self = StObject.set(x, "bullet", js.undefined)
       
-      @scala.inline
-      def setLineBreak(value: String): Self = StObject.set(x, "lineBreak", value.asInstanceOf[js.Any])
+      inline def setLineBreak(value: String): Self = StObject.set(x, "lineBreak", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineBreakUndefined: Self = StObject.set(x, "lineBreak", js.undefined)
+      inline def setLineBreakUndefined: Self = StObject.set(x, "lineBreak", js.undefined)
       
-      @scala.inline
-      def setNodeComponent(value: ComponentType[js.Object]): Self = StObject.set(x, "NodeComponent", value.asInstanceOf[js.Any])
+      inline def setNodeComponent(value: ComponentType[js.Object]): Self = StObject.set(x, "NodeComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeComponentProps(value: TextProperties): Self = StObject.set(x, "nodeComponentProps", value.asInstanceOf[js.Any])
+      inline def setNodeComponentProps(value: TextProperties): Self = StObject.set(x, "nodeComponentProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeComponentPropsUndefined: Self = StObject.set(x, "nodeComponentProps", js.undefined)
+      inline def setNodeComponentPropsUndefined: Self = StObject.set(x, "nodeComponentProps", js.undefined)
       
-      @scala.inline
-      def setNodeComponentUndefined: Self = StObject.set(x, "NodeComponent", js.undefined)
+      inline def setNodeComponentUndefined: Self = StObject.set(x, "NodeComponent", js.undefined)
       
-      @scala.inline
-      def setOnLinkLongPress(value: /* url */ String => Unit): Self = StObject.set(x, "onLinkLongPress", js.Any.fromFunction1(value))
+      inline def setOnLinkLongPress(value: /* url */ String => Unit): Self = StObject.set(x, "onLinkLongPress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLinkLongPressUndefined: Self = StObject.set(x, "onLinkLongPress", js.undefined)
+      inline def setOnLinkLongPressUndefined: Self = StObject.set(x, "onLinkLongPress", js.undefined)
       
-      @scala.inline
-      def setOnLinkPress(value: /* url */ String => Unit): Self = StObject.set(x, "onLinkPress", js.Any.fromFunction1(value))
+      inline def setOnLinkPress(value: /* url */ String => Unit): Self = StObject.set(x, "onLinkPress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLinkPressUndefined: Self = StObject.set(x, "onLinkPress", js.undefined)
+      inline def setOnLinkPressUndefined: Self = StObject.set(x, "onLinkPress", js.undefined)
       
-      @scala.inline
-      def setParagraphBreak(value: String): Self = StObject.set(x, "paragraphBreak", value.asInstanceOf[js.Any])
+      inline def setParagraphBreak(value: String): Self = StObject.set(x, "paragraphBreak", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParagraphBreakUndefined: Self = StObject.set(x, "paragraphBreak", js.undefined)
+      inline def setParagraphBreakUndefined: Self = StObject.set(x, "paragraphBreak", js.undefined)
       
-      @scala.inline
-      def setRenderNode(
+      inline def setRenderNode(
         value: (/* node */ HTMLViewNode, /* index */ Double, /* siblings */ HTMLViewNode, /* parent */ HTMLViewNode, /* defaultRenderer */ js.Function2[/* node */ HTMLViewNode, /* parent */ HTMLViewNode, ReactNode]) => ReactNode
       ): Self = StObject.set(x, "renderNode", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setRenderNodeUndefined: Self = StObject.set(x, "renderNode", js.undefined)
+      inline def setRenderNodeUndefined: Self = StObject.set(x, "renderNode", js.undefined)
       
-      @scala.inline
-      def setRootComponent(value: ComponentType[js.Object]): Self = StObject.set(x, "RootComponent", value.asInstanceOf[js.Any])
+      inline def setRootComponent(value: ComponentType[js.Object]): Self = StObject.set(x, "RootComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootComponentProps(value: ViewProperties): Self = StObject.set(x, "rootComponentProps", value.asInstanceOf[js.Any])
+      inline def setRootComponentProps(value: ViewProperties): Self = StObject.set(x, "rootComponentProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootComponentPropsUndefined: Self = StObject.set(x, "rootComponentProps", js.undefined)
+      inline def setRootComponentPropsUndefined: Self = StObject.set(x, "rootComponentProps", js.undefined)
       
-      @scala.inline
-      def setRootComponentUndefined: Self = StObject.set(x, "RootComponent", js.undefined)
+      inline def setRootComponentUndefined: Self = StObject.set(x, "RootComponent", js.undefined)
       
-      @scala.inline
-      def setStylesheet(value: StringDictionary[StyleProp[ViewStyle | TextStyle | ImageStyle]]): Self = StObject.set(x, "stylesheet", value.asInstanceOf[js.Any])
+      inline def setStylesheet(value: StringDictionary[StyleProp[ViewStyle | TextStyle | ImageStyle]]): Self = StObject.set(x, "stylesheet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesheetUndefined: Self = StObject.set(x, "stylesheet", js.undefined)
+      inline def setStylesheetUndefined: Self = StObject.set(x, "stylesheet", js.undefined)
       
-      @scala.inline
-      def setTextComponent(value: ComponentType[js.Object]): Self = StObject.set(x, "TextComponent", value.asInstanceOf[js.Any])
+      inline def setTextComponent(value: ComponentType[js.Object]): Self = StObject.set(x, "TextComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextComponentProps(value: TextProperties): Self = StObject.set(x, "textComponentProps", value.asInstanceOf[js.Any])
+      inline def setTextComponentProps(value: TextProperties): Self = StObject.set(x, "textComponentProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextComponentPropsUndefined: Self = StObject.set(x, "textComponentProps", js.undefined)
+      inline def setTextComponentPropsUndefined: Self = StObject.set(x, "textComponentProps", js.undefined)
       
-      @scala.inline
-      def setTextComponentUndefined: Self = StObject.set(x, "TextComponent", js.undefined)
+      inline def setTextComponentUndefined: Self = StObject.set(x, "TextComponent", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

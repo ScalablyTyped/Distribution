@@ -28,37 +28,27 @@ trait DeleteLabelsRequest extends StObject {
 }
 object DeleteLabelsRequest {
   
-  @scala.inline
-  def apply(ResourceId: ResourceIdType): DeleteLabelsRequest = {
+  inline def apply(ResourceId: ResourceIdType): DeleteLabelsRequest = {
     val __obj = js.Dynamic.literal(ResourceId = ResourceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteLabelsRequest]
   }
   
-  @scala.inline
-  implicit class DeleteLabelsRequestMutableBuilder[Self <: DeleteLabelsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteLabelsRequest](x: Self) {
     
-    @scala.inline
-    def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
+    inline def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
+    inline def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
     
-    @scala.inline
-    def setDeleteAll(value: BooleanType): Self = StObject.set(x, "DeleteAll", value.asInstanceOf[js.Any])
+    inline def setDeleteAll(value: BooleanType): Self = StObject.set(x, "DeleteAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteAllUndefined: Self = StObject.set(x, "DeleteAll", js.undefined)
+    inline def setDeleteAllUndefined: Self = StObject.set(x, "DeleteAll", js.undefined)
     
-    @scala.inline
-    def setLabels(value: SharedLabels): Self = StObject.set(x, "Labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: SharedLabels): Self = StObject.set(x, "Labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "Labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "Labels", js.undefined)
     
-    @scala.inline
-    def setLabelsVarargs(value: SharedLabel*): Self = StObject.set(x, "Labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: SharedLabel*): Self = StObject.set(x, "Labels", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceId(value: ResourceIdType): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: ResourceIdType): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
   }
 }

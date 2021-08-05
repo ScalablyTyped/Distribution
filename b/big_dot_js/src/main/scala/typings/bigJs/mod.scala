@@ -322,14 +322,11 @@ object mod extends Shortcut {
       trait Comparison extends StObject
       object Comparison {
         
-        @scala.inline
-        def EQ: `0` = 0.asInstanceOf[`0`]
+        inline def EQ: `0` = 0.asInstanceOf[`0`]
         
-        @scala.inline
-        def GT: `1` = 1.asInstanceOf[`1`]
+        inline def GT: `1` = 1.asInstanceOf[`1`]
         
-        @scala.inline
-        def LT: `-1` = -1.asInstanceOf[`-1`]
+        inline def LT: `-1` = -1.asInstanceOf[`-1`]
       }
       
       /* Rewritten from type alias, can be one of: 
@@ -345,28 +342,24 @@ object mod extends Shortcut {
           * Rounds towards zero.
           * I.e. truncate, no rounding.
           */
-        @scala.inline
-        def RoundDown: `0` = 0.asInstanceOf[`0`]
+        inline def RoundDown: `0` = 0.asInstanceOf[`0`]
         
         /**
           * Rounds towards nearest neighbour.
           * If equidistant, rounds towards even neighbour.
           */
-        @scala.inline
-        def RoundHalfEven: `2` = 2.asInstanceOf[`2`]
+        inline def RoundHalfEven: `2` = 2.asInstanceOf[`2`]
         
         /**
           * Rounds towards nearest neighbour.
           * If equidistant, rounds away from zero.
           */
-        @scala.inline
-        def RoundHalfUp: `1` = 1.asInstanceOf[`1`]
+        inline def RoundHalfUp: `1` = 1.asInstanceOf[`1`]
         
         /**
           * Rounds away from zero.
           */
-        @scala.inline
-        def RoundUp: `3` = 3.asInstanceOf[`3`]
+        inline def RoundUp: `3` = 3.asInstanceOf[`3`]
       }
     }
   }
@@ -456,14 +449,11 @@ object mod extends Shortcut {
   trait Comparison extends StObject
   object Comparison {
     
-    @scala.inline
-    def EQ: `0` = 0.asInstanceOf[`0`]
+    inline def EQ: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def GT: `1` = 1.asInstanceOf[`1`]
+    inline def GT: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def LT: `-1` = -1.asInstanceOf[`-1`]
+    inline def LT: `-1` = -1.asInstanceOf[`-1`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -479,28 +469,24 @@ object mod extends Shortcut {
       * Rounds towards zero.
       * I.e. truncate, no rounding.
       */
-    @scala.inline
-    def RoundDown: `0` = 0.asInstanceOf[`0`]
+    inline def RoundDown: `0` = 0.asInstanceOf[`0`]
     
     /**
       * Rounds towards nearest neighbour.
       * If equidistant, rounds towards even neighbour.
       */
-    @scala.inline
-    def RoundHalfEven: `2` = 2.asInstanceOf[`2`]
+    inline def RoundHalfEven: `2` = 2.asInstanceOf[`2`]
     
     /**
       * Rounds towards nearest neighbour.
       * If equidistant, rounds away from zero.
       */
-    @scala.inline
-    def RoundHalfUp: `1` = 1.asInstanceOf[`1`]
+    inline def RoundHalfUp: `1` = 1.asInstanceOf[`1`]
     
     /**
       * Rounds away from zero.
       */
-    @scala.inline
-    def RoundUp: `3` = 3.asInstanceOf[`3`]
+    inline def RoundUp: `3` = 3.asInstanceOf[`3`]
   }
   
   type _To = BigConstructor

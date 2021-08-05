@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ManagedAppDataEncryptionType extends StObject
 object ManagedAppDataEncryptionType {
   
-  @scala.inline
-  def afterDeviceRestart: typings.microsoftGraph.microsoftGraphStrings.afterDeviceRestart = "afterDeviceRestart".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.afterDeviceRestart]
+  inline def afterDeviceRestart: typings.microsoftGraph.microsoftGraphStrings.afterDeviceRestart = "afterDeviceRestart".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.afterDeviceRestart]
   
-  @scala.inline
-  def useDeviceSettings: typings.microsoftGraph.microsoftGraphStrings.useDeviceSettings = "useDeviceSettings".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.useDeviceSettings]
+  inline def useDeviceSettings: typings.microsoftGraph.microsoftGraphStrings.useDeviceSettings = "useDeviceSettings".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.useDeviceSettings]
   
-  @scala.inline
-  def whenDeviceLocked: typings.microsoftGraph.microsoftGraphStrings.whenDeviceLocked = "whenDeviceLocked".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.whenDeviceLocked]
+  inline def whenDeviceLocked: typings.microsoftGraph.microsoftGraphStrings.whenDeviceLocked = "whenDeviceLocked".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.whenDeviceLocked]
   
-  @scala.inline
-  def whenDeviceLockedExceptOpenFiles: typings.microsoftGraph.microsoftGraphStrings.whenDeviceLockedExceptOpenFiles = "whenDeviceLockedExceptOpenFiles".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.whenDeviceLockedExceptOpenFiles]
+  inline def whenDeviceLockedExceptOpenFiles: typings.microsoftGraph.microsoftGraphStrings.whenDeviceLockedExceptOpenFiles = "whenDeviceLockedExceptOpenFiles".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.whenDeviceLockedExceptOpenFiles]
 }

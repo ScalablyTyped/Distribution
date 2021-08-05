@@ -13,19 +13,15 @@ trait SpatialInteractionSourceLocation extends StObject {
 }
 object SpatialInteractionSourceLocation {
   
-  @scala.inline
-  def apply(position: js.Any, velocity: js.Any): SpatialInteractionSourceLocation = {
+  inline def apply(position: js.Any, velocity: js.Any): SpatialInteractionSourceLocation = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any], velocity = velocity.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpatialInteractionSourceLocation]
   }
   
-  @scala.inline
-  implicit class SpatialInteractionSourceLocationMutableBuilder[Self <: SpatialInteractionSourceLocation] (val x: Self) extends AnyVal {
+  extension [Self <: SpatialInteractionSourceLocation](x: Self) {
     
-    @scala.inline
-    def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVelocity(value: js.Any): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
+    inline def setVelocity(value: js.Any): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
   }
 }

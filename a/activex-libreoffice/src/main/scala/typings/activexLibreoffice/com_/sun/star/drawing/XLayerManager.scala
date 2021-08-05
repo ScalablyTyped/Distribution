@@ -43,8 +43,7 @@ trait XLayerManager
 }
 object XLayerManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     ElementType: `type`,
     acquire: () => Unit,
@@ -63,19 +62,14 @@ object XLayerManager {
     __obj.asInstanceOf[XLayerManager]
   }
   
-  @scala.inline
-  implicit class XLayerManagerMutableBuilder[Self <: XLayerManager] (val x: Self) extends AnyVal {
+  extension [Self <: XLayerManager](x: Self) {
     
-    @scala.inline
-    def setAttachShapeToLayer(value: (XShape, XLayer) => Unit): Self = StObject.set(x, "attachShapeToLayer", js.Any.fromFunction2(value))
+    inline def setAttachShapeToLayer(value: (XShape, XLayer) => Unit): Self = StObject.set(x, "attachShapeToLayer", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetLayerForShape(value: XShape => XLayer): Self = StObject.set(x, "getLayerForShape", js.Any.fromFunction1(value))
+    inline def setGetLayerForShape(value: XShape => XLayer): Self = StObject.set(x, "getLayerForShape", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInsertNewByIndex(value: Double => XLayer): Self = StObject.set(x, "insertNewByIndex", js.Any.fromFunction1(value))
+    inline def setInsertNewByIndex(value: Double => XLayer): Self = StObject.set(x, "insertNewByIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove(value: XLayer => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: XLayer => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
   }
 }

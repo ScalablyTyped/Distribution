@@ -35,38 +35,28 @@ object glviewnativeMod {
   }
   object GLViewNativeProps {
     
-    @scala.inline
-    def apply(): GLViewNativeProps = {
+    inline def apply(): GLViewNativeProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GLViewNativeProps]
     }
     
-    @scala.inline
-    implicit class GLViewNativePropsMutableBuilder[Self <: GLViewNativeProps] (val x: Self) extends AnyVal {
+    extension [Self <: GLViewNativeProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setOnContextCreate(value: /* gl */ WebGLRenderingContext => Unit): Self = StObject.set(x, "onContextCreate", js.Any.fromFunction1(value))
+      inline def setOnContextCreate(value: /* gl */ WebGLRenderingContext => Unit): Self = StObject.set(x, "onContextCreate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnContextCreateUndefined: Self = StObject.set(x, "onContextCreate", js.undefined)
+      inline def setOnContextCreateUndefined: Self = StObject.set(x, "onContextCreate", js.undefined)
       
-      @scala.inline
-      def setOnContextFailure(value: /* e */ Error => Unit): Self = StObject.set(x, "onContextFailure", js.Any.fromFunction1(value))
+      inline def setOnContextFailure(value: /* e */ Error => Unit): Self = StObject.set(x, "onContextFailure", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnContextFailureUndefined: Self = StObject.set(x, "onContextFailure", js.undefined)
+      inline def setOnContextFailureUndefined: Self = StObject.set(x, "onContextFailure", js.undefined)
       
-      @scala.inline
-      def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

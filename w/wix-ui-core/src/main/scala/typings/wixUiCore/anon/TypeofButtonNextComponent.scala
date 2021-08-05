@@ -14,19 +14,15 @@ trait TypeofButtonNextComponent extends StObject {
 }
 object TypeofButtonNextComponent {
   
-  @scala.inline
-  def apply(defaultProps: As, displayName: String): TypeofButtonNextComponent = {
+  inline def apply(defaultProps: As, displayName: String): TypeofButtonNextComponent = {
     val __obj = js.Dynamic.literal(defaultProps = defaultProps.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofButtonNextComponent]
   }
   
-  @scala.inline
-  implicit class TypeofButtonNextComponentMutableBuilder[Self <: TypeofButtonNextComponent] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofButtonNextComponent](x: Self) {
     
-    @scala.inline
-    def setDefaultProps(value: As): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
+    inline def setDefaultProps(value: As): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
   }
 }

@@ -63,8 +63,7 @@ trait CreateGameServerGroupInput extends StObject {
 }
 object CreateGameServerGroupInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GameServerGroupName: GameServerGroupName,
     InstanceDefinitions: InstanceDefinitions,
     LaunchTemplate: LaunchTemplateSpecification,
@@ -76,64 +75,44 @@ object CreateGameServerGroupInput {
     __obj.asInstanceOf[CreateGameServerGroupInput]
   }
   
-  @scala.inline
-  implicit class CreateGameServerGroupInputMutableBuilder[Self <: CreateGameServerGroupInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateGameServerGroupInput](x: Self) {
     
-    @scala.inline
-    def setAutoScalingPolicy(value: GameServerGroupAutoScalingPolicy): Self = StObject.set(x, "AutoScalingPolicy", value.asInstanceOf[js.Any])
+    inline def setAutoScalingPolicy(value: GameServerGroupAutoScalingPolicy): Self = StObject.set(x, "AutoScalingPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoScalingPolicyUndefined: Self = StObject.set(x, "AutoScalingPolicy", js.undefined)
+    inline def setAutoScalingPolicyUndefined: Self = StObject.set(x, "AutoScalingPolicy", js.undefined)
     
-    @scala.inline
-    def setBalancingStrategy(value: BalancingStrategy): Self = StObject.set(x, "BalancingStrategy", value.asInstanceOf[js.Any])
+    inline def setBalancingStrategy(value: BalancingStrategy): Self = StObject.set(x, "BalancingStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBalancingStrategyUndefined: Self = StObject.set(x, "BalancingStrategy", js.undefined)
+    inline def setBalancingStrategyUndefined: Self = StObject.set(x, "BalancingStrategy", js.undefined)
     
-    @scala.inline
-    def setGameServerGroupName(value: GameServerGroupName): Self = StObject.set(x, "GameServerGroupName", value.asInstanceOf[js.Any])
+    inline def setGameServerGroupName(value: GameServerGroupName): Self = StObject.set(x, "GameServerGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameServerProtectionPolicy(value: GameServerProtectionPolicy): Self = StObject.set(x, "GameServerProtectionPolicy", value.asInstanceOf[js.Any])
+    inline def setGameServerProtectionPolicy(value: GameServerProtectionPolicy): Self = StObject.set(x, "GameServerProtectionPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameServerProtectionPolicyUndefined: Self = StObject.set(x, "GameServerProtectionPolicy", js.undefined)
+    inline def setGameServerProtectionPolicyUndefined: Self = StObject.set(x, "GameServerProtectionPolicy", js.undefined)
     
-    @scala.inline
-    def setInstanceDefinitions(value: InstanceDefinitions): Self = StObject.set(x, "InstanceDefinitions", value.asInstanceOf[js.Any])
+    inline def setInstanceDefinitions(value: InstanceDefinitions): Self = StObject.set(x, "InstanceDefinitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceDefinitionsVarargs(value: InstanceDefinition*): Self = StObject.set(x, "InstanceDefinitions", js.Array(value :_*))
+    inline def setInstanceDefinitionsVarargs(value: InstanceDefinition*): Self = StObject.set(x, "InstanceDefinitions", js.Array(value :_*))
     
-    @scala.inline
-    def setLaunchTemplate(value: LaunchTemplateSpecification): Self = StObject.set(x, "LaunchTemplate", value.asInstanceOf[js.Any])
+    inline def setLaunchTemplate(value: LaunchTemplateSpecification): Self = StObject.set(x, "LaunchTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSize(value: PositiveInteger): Self = StObject.set(x, "MaxSize", value.asInstanceOf[js.Any])
+    inline def setMaxSize(value: PositiveInteger): Self = StObject.set(x, "MaxSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinSize(value: WholeNumber): Self = StObject.set(x, "MinSize", value.asInstanceOf[js.Any])
+    inline def setMinSize(value: WholeNumber): Self = StObject.set(x, "MinSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: IamRoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: IamRoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
-    @scala.inline
-    def setVpcSubnets(value: VpcSubnets): Self = StObject.set(x, "VpcSubnets", value.asInstanceOf[js.Any])
+    inline def setVpcSubnets(value: VpcSubnets): Self = StObject.set(x, "VpcSubnets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcSubnetsUndefined: Self = StObject.set(x, "VpcSubnets", js.undefined)
+    inline def setVpcSubnetsUndefined: Self = StObject.set(x, "VpcSubnets", js.undefined)
     
-    @scala.inline
-    def setVpcSubnetsVarargs(value: VpcSubnet*): Self = StObject.set(x, "VpcSubnets", js.Array(value :_*))
+    inline def setVpcSubnetsVarargs(value: VpcSubnet*): Self = StObject.set(x, "VpcSubnets", js.Array(value :_*))
   }
 }

@@ -38,52 +38,37 @@ trait DescribeContributorInsightsOutput extends StObject {
 }
 object DescribeContributorInsightsOutput {
   
-  @scala.inline
-  def apply(): DescribeContributorInsightsOutput = {
+  inline def apply(): DescribeContributorInsightsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeContributorInsightsOutput]
   }
   
-  @scala.inline
-  implicit class DescribeContributorInsightsOutputMutableBuilder[Self <: DescribeContributorInsightsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeContributorInsightsOutput](x: Self) {
     
-    @scala.inline
-    def setContributorInsightsRuleList(value: ContributorInsightsRuleList): Self = StObject.set(x, "ContributorInsightsRuleList", value.asInstanceOf[js.Any])
+    inline def setContributorInsightsRuleList(value: ContributorInsightsRuleList): Self = StObject.set(x, "ContributorInsightsRuleList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContributorInsightsRuleListUndefined: Self = StObject.set(x, "ContributorInsightsRuleList", js.undefined)
+    inline def setContributorInsightsRuleListUndefined: Self = StObject.set(x, "ContributorInsightsRuleList", js.undefined)
     
-    @scala.inline
-    def setContributorInsightsRuleListVarargs(value: ContributorInsightsRule*): Self = StObject.set(x, "ContributorInsightsRuleList", js.Array(value :_*))
+    inline def setContributorInsightsRuleListVarargs(value: ContributorInsightsRule*): Self = StObject.set(x, "ContributorInsightsRuleList", js.Array(value :_*))
     
-    @scala.inline
-    def setContributorInsightsStatus(value: ContributorInsightsStatus): Self = StObject.set(x, "ContributorInsightsStatus", value.asInstanceOf[js.Any])
+    inline def setContributorInsightsStatus(value: ContributorInsightsStatus): Self = StObject.set(x, "ContributorInsightsStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContributorInsightsStatusUndefined: Self = StObject.set(x, "ContributorInsightsStatus", js.undefined)
+    inline def setContributorInsightsStatusUndefined: Self = StObject.set(x, "ContributorInsightsStatus", js.undefined)
     
-    @scala.inline
-    def setFailureException(value: FailureException): Self = StObject.set(x, "FailureException", value.asInstanceOf[js.Any])
+    inline def setFailureException(value: FailureException): Self = StObject.set(x, "FailureException", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureExceptionUndefined: Self = StObject.set(x, "FailureException", js.undefined)
+    inline def setFailureExceptionUndefined: Self = StObject.set(x, "FailureException", js.undefined)
     
-    @scala.inline
-    def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
+    inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
+    inline def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
     
-    @scala.inline
-    def setLastUpdateDateTime(value: LastUpdateDateTime): Self = StObject.set(x, "LastUpdateDateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdateDateTime(value: LastUpdateDateTime): Self = StObject.set(x, "LastUpdateDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdateDateTimeUndefined: Self = StObject.set(x, "LastUpdateDateTime", js.undefined)
+    inline def setLastUpdateDateTimeUndefined: Self = StObject.set(x, "LastUpdateDateTime", js.undefined)
     
-    @scala.inline
-    def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
+    inline def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
   }
 }

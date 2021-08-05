@@ -21,28 +21,21 @@ trait FreeBusy_ extends StObject {
 }
 object FreeBusy_ {
   
-  @scala.inline
-  def apply(calendars: String => Busy, groups: String => Calendars, timeMax: datetime, timeMin: datetime): FreeBusy_ = {
+  inline def apply(calendars: String => Busy, groups: String => Calendars, timeMax: datetime, timeMin: datetime): FreeBusy_ = {
     val __obj = js.Dynamic.literal(calendars = js.Any.fromFunction1(calendars), groups = js.Any.fromFunction1(groups), kind = "calendar#freeBusy", timeMax = timeMax.asInstanceOf[js.Any], timeMin = timeMin.asInstanceOf[js.Any])
     __obj.asInstanceOf[FreeBusy_]
   }
   
-  @scala.inline
-  implicit class FreeBusy_MutableBuilder[Self <: FreeBusy_] (val x: Self) extends AnyVal {
+  extension [Self <: FreeBusy_](x: Self) {
     
-    @scala.inline
-    def setCalendars(value: String => Busy): Self = StObject.set(x, "calendars", js.Any.fromFunction1(value))
+    inline def setCalendars(value: String => Busy): Self = StObject.set(x, "calendars", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGroups(value: String => Calendars): Self = StObject.set(x, "groups", js.Any.fromFunction1(value))
+    inline def setGroups(value: String => Calendars): Self = StObject.set(x, "groups", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setKind(value: calendarNumbersignfreeBusy): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: calendarNumbersignfreeBusy): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeMax(value: datetime): Self = StObject.set(x, "timeMax", value.asInstanceOf[js.Any])
+    inline def setTimeMax(value: datetime): Self = StObject.set(x, "timeMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeMin(value: datetime): Self = StObject.set(x, "timeMin", value.asInstanceOf[js.Any])
+    inline def setTimeMin(value: datetime): Self = StObject.set(x, "timeMin", value.asInstanceOf[js.Any])
   }
 }

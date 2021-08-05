@@ -35,10 +35,8 @@ object mod {
     *
     * @param setup
     */
-  @scala.inline
-  def apply(): Instance = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Instance]
-  @scala.inline
-  def apply(setup: setup): Instance = ^.asInstanceOf[js.Dynamic].apply(setup.asInstanceOf[js.Any]).asInstanceOf[Instance]
+  inline def apply(): Instance = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Instance]
+  inline def apply(setup: setup): Instance = ^.asInstanceOf[js.Dynamic].apply(setup.asInstanceOf[js.Any]).asInstanceOf[Instance]
   
   @JSImport("graygelf", JSImport.Namespace)
   @js.native
@@ -58,8 +56,7 @@ object mod {
   @JSImport("graygelf", "CHUNK_LAN")
   @js.native
   def CHUNK_LAN: `8154` = js.native
-  @scala.inline
-  def CHUNK_LAN_=(x: `8154`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CHUNK_LAN")(x.asInstanceOf[js.Any])
+  inline def CHUNK_LAN_=(x: `8154`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CHUNK_LAN")(x.asInstanceOf[js.Any])
   
   /**
     * Chunk size for wide network
@@ -68,8 +65,7 @@ object mod {
   @JSImport("graygelf", "CHUNK_WAN")
   @js.native
   def CHUNK_WAN: `1240` = js.native
-  @scala.inline
-  def CHUNK_WAN_=(x: `1240`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CHUNK_WAN")(x.asInstanceOf[js.Any])
+  inline def CHUNK_WAN_=(x: `1240`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CHUNK_WAN")(x.asInstanceOf[js.Any])
   
   /**
     * GELF log levels
@@ -84,68 +80,57 @@ object mod {
     @JSImport("graygelf", "LOG_LEVELS.alert")
     @js.native
     def alert: `1` = js.native
-    @scala.inline
-    def alert_=(x: `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alert")(x.asInstanceOf[js.Any])
+    inline def alert_=(x: `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alert")(x.asInstanceOf[js.Any])
     
     @JSImport("graygelf", "LOG_LEVELS.crit")
     @js.native
     def crit: `2` = js.native
-    @scala.inline
-    def crit_=(x: `2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("crit")(x.asInstanceOf[js.Any])
+    inline def crit_=(x: `2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("crit")(x.asInstanceOf[js.Any])
     
     @JSImport("graygelf", "LOG_LEVELS.debug")
     @js.native
     def debug: `7` = js.native
-    @scala.inline
-    def debug_=(x: `7`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("debug")(x.asInstanceOf[js.Any])
+    inline def debug_=(x: `7`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("debug")(x.asInstanceOf[js.Any])
     
     @JSImport("graygelf", "LOG_LEVELS.emerg")
     @js.native
     def emerg: `0` = js.native
-    @scala.inline
-    def emerg_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("emerg")(x.asInstanceOf[js.Any])
+    inline def emerg_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("emerg")(x.asInstanceOf[js.Any])
     
     @JSImport("graygelf", "LOG_LEVELS.err")
     @js.native
     def err: `3` = js.native
-    @scala.inline
-    def err_=(x: `3`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("err")(x.asInstanceOf[js.Any])
+    inline def err_=(x: `3`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("err")(x.asInstanceOf[js.Any])
     
     @JSImport("graygelf", "LOG_LEVELS.error")
     @js.native
     def error: `3` = js.native
-    @scala.inline
-    def error_=(x: `3`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("error")(x.asInstanceOf[js.Any])
+    inline def error_=(x: `3`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("error")(x.asInstanceOf[js.Any])
     
     @JSImport("graygelf", "LOG_LEVELS.info")
     @js.native
     def info: `6` = js.native
-    @scala.inline
-    def info_=(x: `6`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("info")(x.asInstanceOf[js.Any])
+    inline def info_=(x: `6`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("info")(x.asInstanceOf[js.Any])
     
     @JSImport("graygelf", "LOG_LEVELS.notice")
     @js.native
     def notice: `5` = js.native
-    @scala.inline
-    def notice_=(x: `5`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("notice")(x.asInstanceOf[js.Any])
+    inline def notice_=(x: `5`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("notice")(x.asInstanceOf[js.Any])
     
     @JSImport("graygelf", "LOG_LEVELS.panic")
     @js.native
     def panic: `0` = js.native
-    @scala.inline
-    def panic_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("panic")(x.asInstanceOf[js.Any])
+    inline def panic_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("panic")(x.asInstanceOf[js.Any])
     
     @JSImport("graygelf", "LOG_LEVELS.warn")
     @js.native
     def warn: `4` = js.native
-    @scala.inline
-    def warn_=(x: `4`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warn")(x.asInstanceOf[js.Any])
+    inline def warn_=(x: `4`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warn")(x.asInstanceOf[js.Any])
     
     @JSImport("graygelf", "LOG_LEVELS.warning")
     @js.native
     def warning: `4` = js.native
-    @scala.inline
-    def warning_=(x: `4`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warning")(x.asInstanceOf[js.Any])
+    inline def warning_=(x: `4`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warning")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -217,52 +202,38 @@ object mod {
   }
   object GelfMessage {
     
-    @scala.inline
-    def apply(): GelfMessage = {
+    inline def apply(): GelfMessage = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GelfMessage]
     }
     
-    @scala.inline
-    implicit class GelfMessageMutableBuilder[Self <: GelfMessage] (val x: Self) extends AnyVal {
+    extension [Self <: GelfMessage](x: Self) {
       
-      @scala.inline
-      def setFull_message(value: String | Double): Self = StObject.set(x, "full_message", value.asInstanceOf[js.Any])
+      inline def setFull_message(value: String | Double): Self = StObject.set(x, "full_message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFull_messageUndefined: Self = StObject.set(x, "full_message", js.undefined)
+      inline def setFull_messageUndefined: Self = StObject.set(x, "full_message", js.undefined)
       
-      @scala.inline
-      def setHost(value: String | Double): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String | Double): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setLevel(
+      inline def setLevel(
         value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | typings.graygelf.graygelfStrings.`0` | typings.graygelf.graygelfStrings.`1` | typings.graygelf.graygelfStrings.`2` | typings.graygelf.graygelfStrings.`3` | typings.graygelf.graygelfStrings.`4` | typings.graygelf.graygelfStrings.`5` | typings.graygelf.graygelfStrings.`6` | typings.graygelf.graygelfStrings.`7`
       ): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      @scala.inline
-      def setShort_message(value: String | Double): Self = StObject.set(x, "short_message", value.asInstanceOf[js.Any])
+      inline def setShort_message(value: String | Double): Self = StObject.set(x, "short_message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShort_messageUndefined: Self = StObject.set(x, "short_message", js.undefined)
+      inline def setShort_messageUndefined: Self = StObject.set(x, "short_message", js.undefined)
       
-      @scala.inline
-      def setTimestamp(value: String | Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: String | Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+      inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String | Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String | Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   

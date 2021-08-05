@@ -38,8 +38,7 @@ trait SendBounceRequest extends StObject {
 }
 object SendBounceRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BounceSender: Address,
     BouncedRecipientInfoList: BouncedRecipientInfoList,
     OriginalMessageId: MessageId
@@ -48,37 +47,26 @@ object SendBounceRequest {
     __obj.asInstanceOf[SendBounceRequest]
   }
   
-  @scala.inline
-  implicit class SendBounceRequestMutableBuilder[Self <: SendBounceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SendBounceRequest](x: Self) {
     
-    @scala.inline
-    def setBounceSender(value: Address): Self = StObject.set(x, "BounceSender", value.asInstanceOf[js.Any])
+    inline def setBounceSender(value: Address): Self = StObject.set(x, "BounceSender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBounceSenderArn(value: AmazonResourceName): Self = StObject.set(x, "BounceSenderArn", value.asInstanceOf[js.Any])
+    inline def setBounceSenderArn(value: AmazonResourceName): Self = StObject.set(x, "BounceSenderArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBounceSenderArnUndefined: Self = StObject.set(x, "BounceSenderArn", js.undefined)
+    inline def setBounceSenderArnUndefined: Self = StObject.set(x, "BounceSenderArn", js.undefined)
     
-    @scala.inline
-    def setBouncedRecipientInfoList(value: BouncedRecipientInfoList): Self = StObject.set(x, "BouncedRecipientInfoList", value.asInstanceOf[js.Any])
+    inline def setBouncedRecipientInfoList(value: BouncedRecipientInfoList): Self = StObject.set(x, "BouncedRecipientInfoList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBouncedRecipientInfoListVarargs(value: BouncedRecipientInfo*): Self = StObject.set(x, "BouncedRecipientInfoList", js.Array(value :_*))
+    inline def setBouncedRecipientInfoListVarargs(value: BouncedRecipientInfo*): Self = StObject.set(x, "BouncedRecipientInfoList", js.Array(value :_*))
     
-    @scala.inline
-    def setExplanation(value: Explanation): Self = StObject.set(x, "Explanation", value.asInstanceOf[js.Any])
+    inline def setExplanation(value: Explanation): Self = StObject.set(x, "Explanation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExplanationUndefined: Self = StObject.set(x, "Explanation", js.undefined)
+    inline def setExplanationUndefined: Self = StObject.set(x, "Explanation", js.undefined)
     
-    @scala.inline
-    def setMessageDsn(value: MessageDsn): Self = StObject.set(x, "MessageDsn", value.asInstanceOf[js.Any])
+    inline def setMessageDsn(value: MessageDsn): Self = StObject.set(x, "MessageDsn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageDsnUndefined: Self = StObject.set(x, "MessageDsn", js.undefined)
+    inline def setMessageDsnUndefined: Self = StObject.set(x, "MessageDsn", js.undefined)
     
-    @scala.inline
-    def setOriginalMessageId(value: MessageId): Self = StObject.set(x, "OriginalMessageId", value.asInstanceOf[js.Any])
+    inline def setOriginalMessageId(value: MessageId): Self = StObject.set(x, "OriginalMessageId", value.asInstanceOf[js.Any])
   }
 }

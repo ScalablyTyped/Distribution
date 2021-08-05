@@ -18,13 +18,12 @@ object injectMod {
   class LazyServiceIdentifer[T] protected () extends StObject {
     def this(cb: js.Function0[ServiceIdentifier[T]]) = this()
     
-    var _cb: js.Any = js.native
+    /* private */ var _cb: js.Any = js.native
     
     def unwrap(): String | js.Symbol | Newable[T] | Abstract[T] = js.native
   }
   
-  @scala.inline
-  def inject(serviceIdentifier: ServiceIdentifierOrFunc): js.Function3[/* target */ js.Any, /* targetKey */ String, /* index */ js.UndefOr[Double], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(serviceIdentifier.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* target */ js.Any, /* targetKey */ String, /* index */ js.UndefOr[Double], Unit]]
+  inline def inject(serviceIdentifier: ServiceIdentifierOrFunc): js.Function3[/* target */ js.Any, /* targetKey */ String, /* index */ js.UndefOr[Double], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(serviceIdentifier.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* target */ js.Any, /* targetKey */ String, /* index */ js.UndefOr[Double], Unit]]
   
   type ServiceIdentifierOrFunc = ServiceIdentifier[js.Any] | LazyServiceIdentifer[js.Any]
 }

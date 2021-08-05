@@ -14,7 +14,7 @@ trait DownBars extends StObject {
   
   def Delete(): js.Any
   
-  @JSName("Excel.DownBars_typekey")
+  /* private */ @JSName("Excel.DownBars_typekey")
   var ExcelDotDownBars_typekey: DownBars
   
   val Fill: ChartFillFormat
@@ -31,8 +31,7 @@ trait DownBars extends StObject {
 }
 object DownBars {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Border: Border,
     Creator: XlCreator,
@@ -50,40 +49,28 @@ object DownBars {
     __obj.asInstanceOf[DownBars]
   }
   
-  @scala.inline
-  implicit class DownBarsMutableBuilder[Self <: DownBars] (val x: Self) extends AnyVal {
+  extension [Self <: DownBars](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorder(value: Border): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: Border): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => js.Any): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => js.Any): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExcelDotDownBars_typekey(value: DownBars): Self = StObject.set(x, "Excel.DownBars_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotDownBars_typekey(value: DownBars): Self = StObject.set(x, "Excel.DownBars_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFill(value: ChartFillFormat): Self = StObject.set(x, "Fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: ChartFillFormat): Self = StObject.set(x, "Fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: ChartFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: ChartFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterior(value: Interior): Self = StObject.set(x, "Interior", value.asInstanceOf[js.Any])
+    inline def setInterior(value: Interior): Self = StObject.set(x, "Interior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelect(value: () => js.Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
+    inline def setSelect(value: () => js.Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
   }
 }

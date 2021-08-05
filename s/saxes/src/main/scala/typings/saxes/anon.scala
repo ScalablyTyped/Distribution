@@ -32,20 +32,16 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply(): `0` = {
+    inline def apply(): `0` = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[`0`]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+    extension [Self <: `0`](x: Self) {
       
-      @scala.inline
-      def setXmlns(value: `false`): Self = StObject.set(x, "xmlns", value.asInstanceOf[js.Any])
+      inline def setXmlns(value: `false`): Self = StObject.set(x, "xmlns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXmlnsUndefined: Self = StObject.set(x, "xmlns", js.undefined)
+      inline def setXmlnsUndefined: Self = StObject.set(x, "xmlns", js.undefined)
     }
   }
   
@@ -105,8 +101,7 @@ object anon {
   }
   object Attribute {
     
-    @scala.inline
-    def apply[O](
+    inline def apply[O](
       attribute: /* attribute */ AttributeEventForOptions[O] => Unit,
       cdata: /* cdata */ String => Unit,
       closetag: /* tag */ TagForOptions[O] => Unit,
@@ -125,47 +120,33 @@ object anon {
       __obj.asInstanceOf[Attribute[O]]
     }
     
-    @scala.inline
-    implicit class AttributeMutableBuilder[Self <: Attribute[?], O] (val x: Self & Attribute[O]) extends AnyVal {
+    extension [Self <: Attribute[?], O](x: Self & Attribute[O]) {
       
-      @scala.inline
-      def setAttribute(value: /* attribute */ AttributeEventForOptions[O] => Unit): Self = StObject.set(x, "attribute", js.Any.fromFunction1(value))
+      inline def setAttribute(value: /* attribute */ AttributeEventForOptions[O] => Unit): Self = StObject.set(x, "attribute", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCdata(value: /* cdata */ String => Unit): Self = StObject.set(x, "cdata", js.Any.fromFunction1(value))
+      inline def setCdata(value: /* cdata */ String => Unit): Self = StObject.set(x, "cdata", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClosetag(value: /* tag */ TagForOptions[O] => Unit): Self = StObject.set(x, "closetag", js.Any.fromFunction1(value))
+      inline def setClosetag(value: /* tag */ TagForOptions[O] => Unit): Self = StObject.set(x, "closetag", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComment(value: /* comment */ String => Unit): Self = StObject.set(x, "comment", js.Any.fromFunction1(value))
+      inline def setComment(value: /* comment */ String => Unit): Self = StObject.set(x, "comment", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDoctype(value: /* doctype */ String => Unit): Self = StObject.set(x, "doctype", js.Any.fromFunction1(value))
+      inline def setDoctype(value: /* doctype */ String => Unit): Self = StObject.set(x, "doctype", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
+      inline def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setError(value: /* err */ Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* err */ Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOpentag(value: /* tag */ TagForOptions[O] => Unit): Self = StObject.set(x, "opentag", js.Any.fromFunction1(value))
+      inline def setOpentag(value: /* tag */ TagForOptions[O] => Unit): Self = StObject.set(x, "opentag", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOpentagstart(value: /* tag */ StartTagForOptions[O] => Unit): Self = StObject.set(x, "opentagstart", js.Any.fromFunction1(value))
+      inline def setOpentagstart(value: /* tag */ StartTagForOptions[O] => Unit): Self = StObject.set(x, "opentagstart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setProcessinginstruction(value: /* data */ Body => Unit): Self = StObject.set(x, "processinginstruction", js.Any.fromFunction1(value))
+      inline def setProcessinginstruction(value: /* data */ Body => Unit): Self = StObject.set(x, "processinginstruction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReady(value: () => Unit): Self = StObject.set(x, "ready", js.Any.fromFunction0(value))
+      inline def setReady(value: () => Unit): Self = StObject.set(x, "ready", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setText(value: /* text */ String => Unit): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
+      inline def setText(value: /* text */ String => Unit): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setXmldecl(value: /* decl */ XMLDecl => Unit): Self = StObject.set(x, "xmldecl", js.Any.fromFunction1(value))
+      inline def setXmldecl(value: /* decl */ XMLDecl => Unit): Self = StObject.set(x, "xmldecl", js.Any.fromFunction1(value))
     }
   }
   
@@ -177,20 +158,16 @@ object anon {
   }
   object Body {
     
-    @scala.inline
-    def apply(body: String, target: String): Body = {
+    inline def apply(body: String, target: String): Body = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[Body]
     }
     
-    @scala.inline
-    implicit class BodyMutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
+    extension [Self <: Body](x: Self) {
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
   
@@ -200,17 +177,14 @@ object anon {
   }
   object Xmlns {
     
-    @scala.inline
-    def apply(): Xmlns = {
+    inline def apply(): Xmlns = {
       val __obj = js.Dynamic.literal(xmlns = true)
       __obj.asInstanceOf[Xmlns]
     }
     
-    @scala.inline
-    implicit class XmlnsMutableBuilder[Self <: Xmlns] (val x: Self) extends AnyVal {
+    extension [Self <: Xmlns](x: Self) {
       
-      @scala.inline
-      def setXmlns(value: `true`): Self = StObject.set(x, "xmlns", value.asInstanceOf[js.Any])
+      inline def setXmlns(value: `true`): Self = StObject.set(x, "xmlns", value.asInstanceOf[js.Any])
     }
   }
 }

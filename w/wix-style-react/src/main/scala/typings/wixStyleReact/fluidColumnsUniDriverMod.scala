@@ -15,8 +15,7 @@ object fluidColumnsUniDriverMod {
   }
   object FluidColumnsUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -26,11 +25,9 @@ object fluidColumnsUniDriverMod {
       __obj.asInstanceOf[FluidColumnsUniDriver]
     }
     
-    @scala.inline
-    implicit class FluidColumnsUniDriverMutableBuilder[Self <: FluidColumnsUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: FluidColumnsUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetNumberOfItems(value: () => js.Promise[Double]): Self = StObject.set(x, "getNumberOfItems", js.Any.fromFunction0(value))
+      inline def setGetNumberOfItems(value: () => js.Promise[Double]): Self = StObject.set(x, "getNumberOfItems", js.Any.fromFunction0(value))
     }
   }
 }

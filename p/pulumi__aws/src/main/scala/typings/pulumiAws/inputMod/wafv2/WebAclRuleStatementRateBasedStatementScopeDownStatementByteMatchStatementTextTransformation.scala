@@ -19,20 +19,16 @@ trait WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementT
 }
 object WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementTextTransformation {
   
-  @scala.inline
-  def apply(priority: Input[Double], `type`: Input[String]): WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementTextTransformation = {
+  inline def apply(priority: Input[Double], `type`: Input[String]): WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementTextTransformation = {
     val __obj = js.Dynamic.literal(priority = priority.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementTextTransformation]
   }
   
-  @scala.inline
-  implicit class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementTextTransformationMutableBuilder[Self <: WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementTextTransformation] (val x: Self) extends AnyVal {
+  extension [Self <: WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementTextTransformation](x: Self) {
     
-    @scala.inline
-    def setPriority(value: Input[Double]): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Input[Double]): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

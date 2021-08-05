@@ -23,22 +23,17 @@ trait FileMapping extends StObject {
 }
 object FileMapping {
   
-  @scala.inline
-  def apply(offset: Double, path: String, size: Double): FileMapping = {
+  inline def apply(offset: Double, path: String, size: Double): FileMapping = {
     val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileMapping]
   }
   
-  @scala.inline
-  implicit class FileMappingMutableBuilder[Self <: FileMapping] (val x: Self) extends AnyVal {
+  extension [Self <: FileMapping](x: Self) {
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

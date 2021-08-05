@@ -16,17 +16,14 @@ trait Descendant
 }
 object Descendant {
   
-  @scala.inline
-  def apply(left: SubjectSelector, right: SubjectSelector): Descendant = {
+  inline def apply(left: SubjectSelector, right: SubjectSelector): Descendant = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("descendant")
     __obj.asInstanceOf[Descendant]
   }
   
-  @scala.inline
-  implicit class DescendantMutableBuilder[Self <: Descendant] (val x: Self) extends AnyVal {
+  extension [Self <: Descendant](x: Self) {
     
-    @scala.inline
-    def setType(value: descendant): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: descendant): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

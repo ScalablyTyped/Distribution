@@ -100,90 +100,64 @@ object typesEndpointBatchItemMod {
   }
   object EndpointBatchItem {
     
-    @scala.inline
-    def apply(): EndpointBatchItem = {
+    inline def apply(): EndpointBatchItem = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EndpointBatchItem]
     }
     
-    @scala.inline
-    implicit class EndpointBatchItemMutableBuilder[Self <: EndpointBatchItem] (val x: Self) extends AnyVal {
+    extension [Self <: EndpointBatchItem](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddressUndefined: Self = StObject.set(x, "Address", js.undefined)
+      inline def setAddressUndefined: Self = StObject.set(x, "Address", js.undefined)
       
-      @scala.inline
-      def setAttributes(
+      inline def setAttributes(
         value: (StringDictionary[js.Array[String] | Iterable[String]]) | (Iterable[js.Tuple2[String, js.Array[String] | Iterable[String]]])
       ): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
       
-      @scala.inline
-      def setChannelType(
+      inline def setChannelType(
         value: GCM | APNS | APNS_SANDBOX | APNS_VOIP | APNS_VOIP_SANDBOX | ADM | SMS | EMAIL | BAIDU | CUSTOM | String
       ): Self = StObject.set(x, "ChannelType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelTypeUndefined: Self = StObject.set(x, "ChannelType", js.undefined)
+      inline def setChannelTypeUndefined: Self = StObject.set(x, "ChannelType", js.undefined)
       
-      @scala.inline
-      def setDemographic(value: EndpointDemographic): Self = StObject.set(x, "Demographic", value.asInstanceOf[js.Any])
+      inline def setDemographic(value: EndpointDemographic): Self = StObject.set(x, "Demographic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDemographicUndefined: Self = StObject.set(x, "Demographic", js.undefined)
+      inline def setDemographicUndefined: Self = StObject.set(x, "Demographic", js.undefined)
       
-      @scala.inline
-      def setEffectiveDate(value: String): Self = StObject.set(x, "EffectiveDate", value.asInstanceOf[js.Any])
+      inline def setEffectiveDate(value: String): Self = StObject.set(x, "EffectiveDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEffectiveDateUndefined: Self = StObject.set(x, "EffectiveDate", js.undefined)
+      inline def setEffectiveDateUndefined: Self = StObject.set(x, "EffectiveDate", js.undefined)
       
-      @scala.inline
-      def setEndpointStatus(value: String): Self = StObject.set(x, "EndpointStatus", value.asInstanceOf[js.Any])
+      inline def setEndpointStatus(value: String): Self = StObject.set(x, "EndpointStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointStatusUndefined: Self = StObject.set(x, "EndpointStatus", js.undefined)
+      inline def setEndpointStatusUndefined: Self = StObject.set(x, "EndpointStatus", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
       
-      @scala.inline
-      def setLocation(value: EndpointLocation): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: EndpointLocation): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
       
-      @scala.inline
-      def setMetrics(value: StringDictionary[Double] | (Iterable[js.Tuple2[String, Double]])): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
+      inline def setMetrics(value: StringDictionary[Double] | (Iterable[js.Tuple2[String, Double]])): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
+      inline def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
       
-      @scala.inline
-      def setOptOut(value: String): Self = StObject.set(x, "OptOut", value.asInstanceOf[js.Any])
+      inline def setOptOut(value: String): Self = StObject.set(x, "OptOut", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptOutUndefined: Self = StObject.set(x, "OptOut", js.undefined)
+      inline def setOptOutUndefined: Self = StObject.set(x, "OptOut", js.undefined)
       
-      @scala.inline
-      def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
+      inline def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
+      inline def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
       
-      @scala.inline
-      def setUser(value: EndpointUser): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
+      inline def setUser(value: EndpointUser): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserUndefined: Self = StObject.set(x, "User", js.undefined)
+      inline def setUserUndefined: Self = StObject.set(x, "User", js.undefined)
     }
   }
   
@@ -225,44 +199,32 @@ object typesEndpointBatchItemMod {
   }
   object UnmarshalledEndpointBatchItem {
     
-    @scala.inline
-    def apply(): UnmarshalledEndpointBatchItem = {
+    inline def apply(): UnmarshalledEndpointBatchItem = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledEndpointBatchItem]
     }
     
-    @scala.inline
-    implicit class UnmarshalledEndpointBatchItemMutableBuilder[Self <: UnmarshalledEndpointBatchItem] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledEndpointBatchItem](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
       
-      @scala.inline
-      def setDemographic(value: UnmarshalledEndpointDemographic): Self = StObject.set(x, "Demographic", value.asInstanceOf[js.Any])
+      inline def setDemographic(value: UnmarshalledEndpointDemographic): Self = StObject.set(x, "Demographic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDemographicUndefined: Self = StObject.set(x, "Demographic", js.undefined)
+      inline def setDemographicUndefined: Self = StObject.set(x, "Demographic", js.undefined)
       
-      @scala.inline
-      def setLocation(value: UnmarshalledEndpointLocation): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: UnmarshalledEndpointLocation): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
       
-      @scala.inline
-      def setMetrics(value: StringDictionary[Double]): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
+      inline def setMetrics(value: StringDictionary[Double]): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
+      inline def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
       
-      @scala.inline
-      def setUser(value: UnmarshalledEndpointUser): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
+      inline def setUser(value: UnmarshalledEndpointUser): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserUndefined: Self = StObject.set(x, "User", js.undefined)
+      inline def setUserUndefined: Self = StObject.set(x, "User", js.undefined)
     }
   }
 }

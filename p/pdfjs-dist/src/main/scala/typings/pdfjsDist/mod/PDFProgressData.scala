@@ -12,19 +12,15 @@ trait PDFProgressData extends StObject {
 }
 object PDFProgressData {
   
-  @scala.inline
-  def apply(loaded: Double, total: Double): PDFProgressData = {
+  inline def apply(loaded: Double, total: Double): PDFProgressData = {
     val __obj = js.Dynamic.literal(loaded = loaded.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDFProgressData]
   }
   
-  @scala.inline
-  implicit class PDFProgressDataMutableBuilder[Self <: PDFProgressData] (val x: Self) extends AnyVal {
+  extension [Self <: PDFProgressData](x: Self) {
     
-    @scala.inline
-    def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+    inline def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
   }
 }

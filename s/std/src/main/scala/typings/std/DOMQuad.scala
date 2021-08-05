@@ -20,8 +20,7 @@ trait DOMQuad extends StObject {
 }
 object DOMQuad {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getBounds: () => DOMRect,
     p1: DOMPoint,
     p2: DOMPoint,
@@ -33,25 +32,18 @@ object DOMQuad {
     __obj.asInstanceOf[DOMQuad]
   }
   
-  @scala.inline
-  implicit class DOMQuadMutableBuilder[Self <: DOMQuad] (val x: Self) extends AnyVal {
+  extension [Self <: DOMQuad](x: Self) {
     
-    @scala.inline
-    def setGetBounds(value: () => DOMRect): Self = StObject.set(x, "getBounds", js.Any.fromFunction0(value))
+    inline def setGetBounds(value: () => DOMRect): Self = StObject.set(x, "getBounds", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setP1(value: DOMPoint): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
+    inline def setP1(value: DOMPoint): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setP2(value: DOMPoint): Self = StObject.set(x, "p2", value.asInstanceOf[js.Any])
+    inline def setP2(value: DOMPoint): Self = StObject.set(x, "p2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setP3(value: DOMPoint): Self = StObject.set(x, "p3", value.asInstanceOf[js.Any])
+    inline def setP3(value: DOMPoint): Self = StObject.set(x, "p3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setP4(value: DOMPoint): Self = StObject.set(x, "p4", value.asInstanceOf[js.Any])
+    inline def setP4(value: DOMPoint): Self = StObject.set(x, "p4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }
 }

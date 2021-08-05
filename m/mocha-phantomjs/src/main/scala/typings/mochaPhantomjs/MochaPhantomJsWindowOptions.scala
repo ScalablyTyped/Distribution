@@ -20,8 +20,7 @@ trait MochaPhantomJsWindowOptions
 }
 object MochaPhantomJsWindowOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ended: Boolean,
     env: js.Any,
     failures: Double,
@@ -33,22 +32,16 @@ object MochaPhantomJsWindowOptions {
     __obj.asInstanceOf[MochaPhantomJsWindowOptions]
   }
   
-  @scala.inline
-  implicit class MochaPhantomJsWindowOptionsMutableBuilder[Self <: MochaPhantomJsWindowOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MochaPhantomJsWindowOptions](x: Self) {
     
-    @scala.inline
-    def setEnded(value: Boolean): Self = StObject.set(x, "ended", value.asInstanceOf[js.Any])
+    inline def setEnded(value: Boolean): Self = StObject.set(x, "ended", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnv(value: js.Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+    inline def setEnv(value: js.Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailures(value: Double): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
+    inline def setFailures(value: Double): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRun(value: () => Unit): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
+    inline def setRun(value: () => Unit): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStarted(value: Boolean): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
+    inline def setStarted(value: Boolean): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
   }
 }

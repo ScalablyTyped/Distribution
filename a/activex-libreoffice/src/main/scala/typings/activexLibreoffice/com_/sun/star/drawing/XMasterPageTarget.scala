@@ -28,8 +28,7 @@ trait XMasterPageTarget
 }
 object XMasterPageTarget {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MasterPage: XDrawPage,
     acquire: () => Unit,
     getMasterPage: () => XDrawPage,
@@ -41,16 +40,12 @@ object XMasterPageTarget {
     __obj.asInstanceOf[XMasterPageTarget]
   }
   
-  @scala.inline
-  implicit class XMasterPageTargetMutableBuilder[Self <: XMasterPageTarget] (val x: Self) extends AnyVal {
+  extension [Self <: XMasterPageTarget](x: Self) {
     
-    @scala.inline
-    def setGetMasterPage(value: () => XDrawPage): Self = StObject.set(x, "getMasterPage", js.Any.fromFunction0(value))
+    inline def setGetMasterPage(value: () => XDrawPage): Self = StObject.set(x, "getMasterPage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMasterPage(value: XDrawPage): Self = StObject.set(x, "MasterPage", value.asInstanceOf[js.Any])
+    inline def setMasterPage(value: XDrawPage): Self = StObject.set(x, "MasterPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetMasterPage(value: XDrawPage => Unit): Self = StObject.set(x, "setMasterPage", js.Any.fromFunction1(value))
+    inline def setSetMasterPage(value: XDrawPage => Unit): Self = StObject.set(x, "setMasterPage", js.Any.fromFunction1(value))
   }
 }

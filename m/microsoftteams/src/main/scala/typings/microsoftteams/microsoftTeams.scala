@@ -92,86 +92,60 @@ object microsoftTeams {
   }
   object Context {
     
-    @scala.inline
-    def apply(entityId: String, locale: String): Context = {
+    inline def apply(entityId: String, locale: String): Context = {
       val __obj = js.Dynamic.literal(entityId = entityId.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any])
       __obj.asInstanceOf[Context]
     }
     
-    @scala.inline
-    implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
+    extension [Self <: Context](x: Self) {
       
-      @scala.inline
-      def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
+      inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
+      inline def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
       
-      @scala.inline
-      def setChannelName(value: String): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
+      inline def setChannelName(value: String): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelNameUndefined: Self = StObject.set(x, "channelName", js.undefined)
+      inline def setChannelNameUndefined: Self = StObject.set(x, "channelName", js.undefined)
       
-      @scala.inline
-      def setEntityId(value: String): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
+      inline def setEntityId(value: String): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
+      inline def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
+      inline def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
       
-      @scala.inline
-      def setIsFullScreen(value: Boolean): Self = StObject.set(x, "isFullScreen", value.asInstanceOf[js.Any])
+      inline def setIsFullScreen(value: Boolean): Self = StObject.set(x, "isFullScreen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFullScreenUndefined: Self = StObject.set(x, "isFullScreen", js.undefined)
+      inline def setIsFullScreenUndefined: Self = StObject.set(x, "isFullScreen", js.undefined)
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubEntityId(value: String): Self = StObject.set(x, "subEntityId", value.asInstanceOf[js.Any])
+      inline def setSubEntityId(value: String): Self = StObject.set(x, "subEntityId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubEntityIdUndefined: Self = StObject.set(x, "subEntityId", js.undefined)
+      inline def setSubEntityIdUndefined: Self = StObject.set(x, "subEntityId", js.undefined)
       
-      @scala.inline
-      def setTeamId(value: String): Self = StObject.set(x, "teamId", value.asInstanceOf[js.Any])
+      inline def setTeamId(value: String): Self = StObject.set(x, "teamId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeamIdUndefined: Self = StObject.set(x, "teamId", js.undefined)
+      inline def setTeamIdUndefined: Self = StObject.set(x, "teamId", js.undefined)
       
-      @scala.inline
-      def setTeamName(value: String): Self = StObject.set(x, "teamName", value.asInstanceOf[js.Any])
+      inline def setTeamName(value: String): Self = StObject.set(x, "teamName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeamNameUndefined: Self = StObject.set(x, "teamName", js.undefined)
+      inline def setTeamNameUndefined: Self = StObject.set(x, "teamName", js.undefined)
       
-      @scala.inline
-      def setTeamType(value: TeamType): Self = StObject.set(x, "teamType", value.asInstanceOf[js.Any])
+      inline def setTeamType(value: TeamType): Self = StObject.set(x, "teamType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeamTypeUndefined: Self = StObject.set(x, "teamType", js.undefined)
+      inline def setTeamTypeUndefined: Self = StObject.set(x, "teamType", js.undefined)
       
-      @scala.inline
-      def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setTid(value: String): Self = StObject.set(x, "tid", value.asInstanceOf[js.Any])
+      inline def setTid(value: String): Self = StObject.set(x, "tid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTidUndefined: Self = StObject.set(x, "tid", js.undefined)
+      inline def setTidUndefined: Self = StObject.set(x, "tid", js.undefined)
       
-      @scala.inline
-      def setUpn(value: String): Self = StObject.set(x, "upn", value.asInstanceOf[js.Any])
+      inline def setUpn(value: String): Self = StObject.set(x, "upn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpnUndefined: Self = StObject.set(x, "upn", js.undefined)
+      inline def setUpnUndefined: Self = StObject.set(x, "upn", js.undefined)
     }
   }
   
@@ -196,26 +170,20 @@ object microsoftTeams {
   }
   object DeepLinkParameters {
     
-    @scala.inline
-    def apply(subEntityId: String, subEntityLabel: String): DeepLinkParameters = {
+    inline def apply(subEntityId: String, subEntityLabel: String): DeepLinkParameters = {
       val __obj = js.Dynamic.literal(subEntityId = subEntityId.asInstanceOf[js.Any], subEntityLabel = subEntityLabel.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeepLinkParameters]
     }
     
-    @scala.inline
-    implicit class DeepLinkParametersMutableBuilder[Self <: DeepLinkParameters] (val x: Self) extends AnyVal {
+    extension [Self <: DeepLinkParameters](x: Self) {
       
-      @scala.inline
-      def setSubEntityId(value: String): Self = StObject.set(x, "subEntityId", value.asInstanceOf[js.Any])
+      inline def setSubEntityId(value: String): Self = StObject.set(x, "subEntityId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubEntityLabel(value: String): Self = StObject.set(x, "subEntityLabel", value.asInstanceOf[js.Any])
+      inline def setSubEntityLabel(value: String): Self = StObject.set(x, "subEntityLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubEntityWebUrl(value: String): Self = StObject.set(x, "subEntityWebUrl", value.asInstanceOf[js.Any])
+      inline def setSubEntityWebUrl(value: String): Self = StObject.set(x, "subEntityWebUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubEntityWebUrlUndefined: Self = StObject.set(x, "subEntityWebUrl", js.undefined)
+      inline def setSubEntityWebUrlUndefined: Self = StObject.set(x, "subEntityWebUrl", js.undefined)
     }
   }
   
@@ -225,20 +193,16 @@ object microsoftTeams {
   }
   object TabInformation {
     
-    @scala.inline
-    def apply(teamTabs: js.Array[TabInstance]): TabInformation = {
+    inline def apply(teamTabs: js.Array[TabInstance]): TabInformation = {
       val __obj = js.Dynamic.literal(teamTabs = teamTabs.asInstanceOf[js.Any])
       __obj.asInstanceOf[TabInformation]
     }
     
-    @scala.inline
-    implicit class TabInformationMutableBuilder[Self <: TabInformation] (val x: Self) extends AnyVal {
+    extension [Self <: TabInformation](x: Self) {
       
-      @scala.inline
-      def setTeamTabs(value: js.Array[TabInstance]): Self = StObject.set(x, "teamTabs", value.asInstanceOf[js.Any])
+      inline def setTeamTabs(value: js.Array[TabInstance]): Self = StObject.set(x, "teamTabs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeamTabsVarargs(value: TabInstance*): Self = StObject.set(x, "teamTabs", js.Array(value :_*))
+      inline def setTeamTabsVarargs(value: TabInstance*): Self = StObject.set(x, "teamTabs", js.Array(value :_*))
     }
   }
   
@@ -272,89 +236,62 @@ object microsoftTeams {
   }
   object TabInstance {
     
-    @scala.inline
-    def apply(tabName: String): TabInstance = {
+    inline def apply(tabName: String): TabInstance = {
       val __obj = js.Dynamic.literal(tabName = tabName.asInstanceOf[js.Any])
       __obj.asInstanceOf[TabInstance]
     }
     
-    @scala.inline
-    implicit class TabInstanceMutableBuilder[Self <: TabInstance] (val x: Self) extends AnyVal {
+    extension [Self <: TabInstance](x: Self) {
       
-      @scala.inline
-      def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
+      inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
+      inline def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
       
-      @scala.inline
-      def setChannelIsFavorite(value: Boolean): Self = StObject.set(x, "channelIsFavorite", value.asInstanceOf[js.Any])
+      inline def setChannelIsFavorite(value: Boolean): Self = StObject.set(x, "channelIsFavorite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelIsFavoriteUndefined: Self = StObject.set(x, "channelIsFavorite", js.undefined)
+      inline def setChannelIsFavoriteUndefined: Self = StObject.set(x, "channelIsFavorite", js.undefined)
       
-      @scala.inline
-      def setChannelName(value: String): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
+      inline def setChannelName(value: String): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelNameUndefined: Self = StObject.set(x, "channelName", js.undefined)
+      inline def setChannelNameUndefined: Self = StObject.set(x, "channelName", js.undefined)
       
-      @scala.inline
-      def setEntityId(value: String): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
+      inline def setEntityId(value: String): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntityIdUndefined: Self = StObject.set(x, "entityId", js.undefined)
+      inline def setEntityIdUndefined: Self = StObject.set(x, "entityId", js.undefined)
       
-      @scala.inline
-      def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
+      inline def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
+      inline def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
       
-      @scala.inline
-      def setInternalTabInstanceId(value: String): Self = StObject.set(x, "internalTabInstanceId", value.asInstanceOf[js.Any])
+      inline def setInternalTabInstanceId(value: String): Self = StObject.set(x, "internalTabInstanceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInternalTabInstanceIdUndefined: Self = StObject.set(x, "internalTabInstanceId", js.undefined)
+      inline def setInternalTabInstanceIdUndefined: Self = StObject.set(x, "internalTabInstanceId", js.undefined)
       
-      @scala.inline
-      def setLastViewUnixEpochTime(value: String): Self = StObject.set(x, "lastViewUnixEpochTime", value.asInstanceOf[js.Any])
+      inline def setLastViewUnixEpochTime(value: String): Self = StObject.set(x, "lastViewUnixEpochTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastViewUnixEpochTimeUndefined: Self = StObject.set(x, "lastViewUnixEpochTime", js.undefined)
+      inline def setLastViewUnixEpochTimeUndefined: Self = StObject.set(x, "lastViewUnixEpochTime", js.undefined)
       
-      @scala.inline
-      def setTabName(value: String): Self = StObject.set(x, "tabName", value.asInstanceOf[js.Any])
+      inline def setTabName(value: String): Self = StObject.set(x, "tabName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeamId(value: String): Self = StObject.set(x, "teamId", value.asInstanceOf[js.Any])
+      inline def setTeamId(value: String): Self = StObject.set(x, "teamId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeamIdUndefined: Self = StObject.set(x, "teamId", js.undefined)
+      inline def setTeamIdUndefined: Self = StObject.set(x, "teamId", js.undefined)
       
-      @scala.inline
-      def setTeamIsFavorite(value: Boolean): Self = StObject.set(x, "teamIsFavorite", value.asInstanceOf[js.Any])
+      inline def setTeamIsFavorite(value: Boolean): Self = StObject.set(x, "teamIsFavorite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeamIsFavoriteUndefined: Self = StObject.set(x, "teamIsFavorite", js.undefined)
+      inline def setTeamIsFavoriteUndefined: Self = StObject.set(x, "teamIsFavorite", js.undefined)
       
-      @scala.inline
-      def setTeamName(value: String): Self = StObject.set(x, "teamName", value.asInstanceOf[js.Any])
+      inline def setTeamName(value: String): Self = StObject.set(x, "teamName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeamNameUndefined: Self = StObject.set(x, "teamName", js.undefined)
+      inline def setTeamNameUndefined: Self = StObject.set(x, "teamName", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
-      @scala.inline
-      def setWebsiteUrl(value: String): Self = StObject.set(x, "websiteUrl", value.asInstanceOf[js.Any])
+      inline def setWebsiteUrl(value: String): Self = StObject.set(x, "websiteUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebsiteUrlUndefined: Self = StObject.set(x, "websiteUrl", js.undefined)
+      inline def setWebsiteUrlUndefined: Self = StObject.set(x, "websiteUrl", js.undefined)
     }
   }
   
@@ -372,26 +309,20 @@ object microsoftTeams {
   }
   object TabInstanceParameters {
     
-    @scala.inline
-    def apply(): TabInstanceParameters = {
+    inline def apply(): TabInstanceParameters = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TabInstanceParameters]
     }
     
-    @scala.inline
-    implicit class TabInstanceParametersMutableBuilder[Self <: TabInstanceParameters] (val x: Self) extends AnyVal {
+    extension [Self <: TabInstanceParameters](x: Self) {
       
-      @scala.inline
-      def setFavoriteChannelsOnly(value: Boolean): Self = StObject.set(x, "favoriteChannelsOnly", value.asInstanceOf[js.Any])
+      inline def setFavoriteChannelsOnly(value: Boolean): Self = StObject.set(x, "favoriteChannelsOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFavoriteChannelsOnlyUndefined: Self = StObject.set(x, "favoriteChannelsOnly", js.undefined)
+      inline def setFavoriteChannelsOnlyUndefined: Self = StObject.set(x, "favoriteChannelsOnly", js.undefined)
       
-      @scala.inline
-      def setFavoriteTeamsOnly(value: Boolean): Self = StObject.set(x, "favoriteTeamsOnly", value.asInstanceOf[js.Any])
+      inline def setFavoriteTeamsOnly(value: Boolean): Self = StObject.set(x, "favoriteTeamsOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFavoriteTeamsOnlyUndefined: Self = StObject.set(x, "favoriteTeamsOnly", js.undefined)
+      inline def setFavoriteTeamsOnlyUndefined: Self = StObject.set(x, "favoriteTeamsOnly", js.undefined)
     }
   }
   
@@ -405,20 +336,15 @@ object microsoftTeams {
   trait TeamType extends StObject
   object TeamType {
     
-    @scala.inline
-    def Class: `2` = 2.asInstanceOf[`2`]
+    inline def Class: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def Edu: `1` = 1.asInstanceOf[`1`]
+    inline def Edu: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def Plc: `3` = 3.asInstanceOf[`3`]
+    inline def Plc: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def Staff: `4` = 4.asInstanceOf[`4`]
+    inline def Staff: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def Standard: `0` = 0.asInstanceOf[`0`]
+    inline def Standard: `0` = 0.asInstanceOf[`0`]
   }
   
   /**
@@ -446,32 +372,24 @@ object microsoftTeams {
     }
     object AuthTokenRequest {
       
-      @scala.inline
-      def apply(resources: js.Array[String]): AuthTokenRequest = {
+      inline def apply(resources: js.Array[String]): AuthTokenRequest = {
         val __obj = js.Dynamic.literal(resources = resources.asInstanceOf[js.Any])
         __obj.asInstanceOf[AuthTokenRequest]
       }
       
-      @scala.inline
-      implicit class AuthTokenRequestMutableBuilder[Self <: AuthTokenRequest] (val x: Self) extends AnyVal {
+      extension [Self <: AuthTokenRequest](x: Self) {
         
-        @scala.inline
-        def setFailureCallback(value: /* reason */ String => Unit): Self = StObject.set(x, "failureCallback", js.Any.fromFunction1(value))
+        inline def setFailureCallback(value: /* reason */ String => Unit): Self = StObject.set(x, "failureCallback", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setFailureCallbackUndefined: Self = StObject.set(x, "failureCallback", js.undefined)
+        inline def setFailureCallbackUndefined: Self = StObject.set(x, "failureCallback", js.undefined)
         
-        @scala.inline
-        def setResources(value: js.Array[String]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+        inline def setResources(value: js.Array[String]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
+        inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
         
-        @scala.inline
-        def setSuccessCallback(value: /* token */ String => Unit): Self = StObject.set(x, "successCallback", js.Any.fromFunction1(value))
+        inline def setSuccessCallback(value: /* token */ String => Unit): Self = StObject.set(x, "successCallback", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSuccessCallbackUndefined: Self = StObject.set(x, "successCallback", js.undefined)
+        inline def setSuccessCallbackUndefined: Self = StObject.set(x, "successCallback", js.undefined)
       }
     }
     
@@ -504,41 +422,30 @@ object microsoftTeams {
     }
     object AuthenticateParameters {
       
-      @scala.inline
-      def apply(url: String): AuthenticateParameters = {
+      inline def apply(url: String): AuthenticateParameters = {
         val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
         __obj.asInstanceOf[AuthenticateParameters]
       }
       
-      @scala.inline
-      implicit class AuthenticateParametersMutableBuilder[Self <: AuthenticateParameters] (val x: Self) extends AnyVal {
+      extension [Self <: AuthenticateParameters](x: Self) {
         
-        @scala.inline
-        def setFailureCallback(value: /* reason */ js.UndefOr[String] => Unit): Self = StObject.set(x, "failureCallback", js.Any.fromFunction1(value))
+        inline def setFailureCallback(value: /* reason */ js.UndefOr[String] => Unit): Self = StObject.set(x, "failureCallback", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setFailureCallbackUndefined: Self = StObject.set(x, "failureCallback", js.undefined)
+        inline def setFailureCallbackUndefined: Self = StObject.set(x, "failureCallback", js.undefined)
         
-        @scala.inline
-        def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+        inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+        inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
         
-        @scala.inline
-        def setSuccessCallback(value: /* result */ js.UndefOr[String] => Unit): Self = StObject.set(x, "successCallback", js.Any.fromFunction1(value))
+        inline def setSuccessCallback(value: /* result */ js.UndefOr[String] => Unit): Self = StObject.set(x, "successCallback", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSuccessCallbackUndefined: Self = StObject.set(x, "successCallback", js.undefined)
+        inline def setSuccessCallbackUndefined: Self = StObject.set(x, "successCallback", js.undefined)
         
-        @scala.inline
-        def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+        inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+        inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+        inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       }
     }
     
@@ -626,8 +533,7 @@ object microsoftTeams {
     }
     object UserProfile {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         amr: js.Array[String],
         aud: String,
         exp: Double,
@@ -647,53 +553,37 @@ object microsoftTeams {
         __obj.asInstanceOf[UserProfile]
       }
       
-      @scala.inline
-      implicit class UserProfileMutableBuilder[Self <: UserProfile] (val x: Self) extends AnyVal {
+      extension [Self <: UserProfile](x: Self) {
         
-        @scala.inline
-        def setAmr(value: js.Array[String]): Self = StObject.set(x, "amr", value.asInstanceOf[js.Any])
+        inline def setAmr(value: js.Array[String]): Self = StObject.set(x, "amr", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAmrVarargs(value: String*): Self = StObject.set(x, "amr", js.Array(value :_*))
+        inline def setAmrVarargs(value: String*): Self = StObject.set(x, "amr", js.Array(value :_*))
         
-        @scala.inline
-        def setAud(value: String): Self = StObject.set(x, "aud", value.asInstanceOf[js.Any])
+        inline def setAud(value: String): Self = StObject.set(x, "aud", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExp(value: Double): Self = StObject.set(x, "exp", value.asInstanceOf[js.Any])
+        inline def setExp(value: Double): Self = StObject.set(x, "exp", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFamily_name(value: String): Self = StObject.set(x, "family_name", value.asInstanceOf[js.Any])
+        inline def setFamily_name(value: String): Self = StObject.set(x, "family_name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGiven_name(value: String): Self = StObject.set(x, "given_name", value.asInstanceOf[js.Any])
+        inline def setGiven_name(value: String): Self = StObject.set(x, "given_name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIat(value: Double): Self = StObject.set(x, "iat", value.asInstanceOf[js.Any])
+        inline def setIat(value: Double): Self = StObject.set(x, "iat", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIss(value: String): Self = StObject.set(x, "iss", value.asInstanceOf[js.Any])
+        inline def setIss(value: String): Self = StObject.set(x, "iss", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNbf(value: Double): Self = StObject.set(x, "nbf", value.asInstanceOf[js.Any])
+        inline def setNbf(value: Double): Self = StObject.set(x, "nbf", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOid(value: String): Self = StObject.set(x, "oid", value.asInstanceOf[js.Any])
+        inline def setOid(value: String): Self = StObject.set(x, "oid", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSub(value: String): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
+        inline def setSub(value: String): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTid(value: String): Self = StObject.set(x, "tid", value.asInstanceOf[js.Any])
+        inline def setTid(value: String): Self = StObject.set(x, "tid", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUnique_name(value: String): Self = StObject.set(x, "unique_name", value.asInstanceOf[js.Any])
+        inline def setUnique_name(value: String): Self = StObject.set(x, "unique_name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpn(value: String): Self = StObject.set(x, "upn", value.asInstanceOf[js.Any])
+        inline def setUpn(value: String): Self = StObject.set(x, "upn", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVer(value: String): Self = StObject.set(x, "ver", value.asInstanceOf[js.Any])
+        inline def setVer(value: String): Self = StObject.set(x, "ver", value.asInstanceOf[js.Any])
       }
     }
     
@@ -711,26 +601,20 @@ object microsoftTeams {
     }
     object UserRequest {
       
-      @scala.inline
-      def apply(): UserRequest = {
+      inline def apply(): UserRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[UserRequest]
       }
       
-      @scala.inline
-      implicit class UserRequestMutableBuilder[Self <: UserRequest] (val x: Self) extends AnyVal {
+      extension [Self <: UserRequest](x: Self) {
         
-        @scala.inline
-        def setFailureCallback(value: /* reason */ String => Unit): Self = StObject.set(x, "failureCallback", js.Any.fromFunction1(value))
+        inline def setFailureCallback(value: /* reason */ String => Unit): Self = StObject.set(x, "failureCallback", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setFailureCallbackUndefined: Self = StObject.set(x, "failureCallback", js.undefined)
+        inline def setFailureCallbackUndefined: Self = StObject.set(x, "failureCallback", js.undefined)
         
-        @scala.inline
-        def setSuccessCallback(value: /* user */ UserProfile => Unit): Self = StObject.set(x, "successCallback", js.Any.fromFunction1(value))
+        inline def setSuccessCallback(value: /* user */ UserProfile => Unit): Self = StObject.set(x, "successCallback", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSuccessCallbackUndefined: Self = StObject.set(x, "successCallback", js.undefined)
+        inline def setSuccessCallbackUndefined: Self = StObject.set(x, "successCallback", js.undefined)
       }
     }
   }
@@ -803,38 +687,28 @@ object microsoftTeams {
     }
     object Settings {
       
-      @scala.inline
-      def apply(contentUrl: String, entityId: String): Settings = {
+      inline def apply(contentUrl: String, entityId: String): Settings = {
         val __obj = js.Dynamic.literal(contentUrl = contentUrl.asInstanceOf[js.Any], entityId = entityId.asInstanceOf[js.Any])
         __obj.asInstanceOf[Settings]
       }
       
-      @scala.inline
-      implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
+      extension [Self <: Settings](x: Self) {
         
-        @scala.inline
-        def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
+        inline def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEntityId(value: String): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
+        inline def setEntityId(value: String): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRemoveUrl(value: String): Self = StObject.set(x, "removeUrl", value.asInstanceOf[js.Any])
+        inline def setRemoveUrl(value: String): Self = StObject.set(x, "removeUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRemoveUrlUndefined: Self = StObject.set(x, "removeUrl", js.undefined)
+        inline def setRemoveUrlUndefined: Self = StObject.set(x, "removeUrl", js.undefined)
         
-        @scala.inline
-        def setSuggestedDisplayName(value: String): Self = StObject.set(x, "suggestedDisplayName", value.asInstanceOf[js.Any])
+        inline def setSuggestedDisplayName(value: String): Self = StObject.set(x, "suggestedDisplayName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestedDisplayNameUndefined: Self = StObject.set(x, "suggestedDisplayName", js.undefined)
+        inline def setSuggestedDisplayNameUndefined: Self = StObject.set(x, "suggestedDisplayName", js.undefined)
         
-        @scala.inline
-        def setWebsiteUrl(value: String): Self = StObject.set(x, "websiteUrl", value.asInstanceOf[js.Any])
+        inline def setWebsiteUrl(value: String): Self = StObject.set(x, "websiteUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWebsiteUrlUndefined: Self = StObject.set(x, "websiteUrl", js.undefined)
+        inline def setWebsiteUrlUndefined: Self = StObject.set(x, "websiteUrl", js.undefined)
       }
     }
   }

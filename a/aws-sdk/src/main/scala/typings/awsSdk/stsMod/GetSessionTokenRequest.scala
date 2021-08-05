@@ -26,31 +26,23 @@ trait GetSessionTokenRequest
 }
 object GetSessionTokenRequest {
   
-  @scala.inline
-  def apply(): GetSessionTokenRequest = {
+  inline def apply(): GetSessionTokenRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSessionTokenRequest]
   }
   
-  @scala.inline
-  implicit class GetSessionTokenRequestMutableBuilder[Self <: GetSessionTokenRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetSessionTokenRequest](x: Self) {
     
-    @scala.inline
-    def setDurationSeconds(value: durationSecondsType): Self = StObject.set(x, "DurationSeconds", value.asInstanceOf[js.Any])
+    inline def setDurationSeconds(value: durationSecondsType): Self = StObject.set(x, "DurationSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationSecondsUndefined: Self = StObject.set(x, "DurationSeconds", js.undefined)
+    inline def setDurationSecondsUndefined: Self = StObject.set(x, "DurationSeconds", js.undefined)
     
-    @scala.inline
-    def setSerialNumber(value: serialNumberType): Self = StObject.set(x, "SerialNumber", value.asInstanceOf[js.Any])
+    inline def setSerialNumber(value: serialNumberType): Self = StObject.set(x, "SerialNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerialNumberUndefined: Self = StObject.set(x, "SerialNumber", js.undefined)
+    inline def setSerialNumberUndefined: Self = StObject.set(x, "SerialNumber", js.undefined)
     
-    @scala.inline
-    def setTokenCode(value: tokenCodeType): Self = StObject.set(x, "TokenCode", value.asInstanceOf[js.Any])
+    inline def setTokenCode(value: tokenCodeType): Self = StObject.set(x, "TokenCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenCodeUndefined: Self = StObject.set(x, "TokenCode", js.undefined)
+    inline def setTokenCodeUndefined: Self = StObject.set(x, "TokenCode", js.undefined)
   }
 }

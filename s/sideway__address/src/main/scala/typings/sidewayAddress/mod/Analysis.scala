@@ -18,19 +18,15 @@ trait Analysis extends StObject {
 }
 object Analysis {
   
-  @scala.inline
-  def apply(code: String, error: String): Analysis = {
+  inline def apply(code: String, error: String): Analysis = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[Analysis]
   }
   
-  @scala.inline
-  implicit class AnalysisMutableBuilder[Self <: Analysis] (val x: Self) extends AnyVal {
+  extension [Self <: Analysis](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }
 }

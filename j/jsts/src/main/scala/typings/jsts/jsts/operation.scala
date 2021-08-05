@@ -17,20 +17,16 @@ object operation {
   }
   object GeometryGraphOperation {
     
-    @scala.inline
-    def apply(getArgGeometry: Double => Geometry, setComputationPrecision: PrecisionModel => Unit): GeometryGraphOperation = {
+    inline def apply(getArgGeometry: Double => Geometry, setComputationPrecision: PrecisionModel => Unit): GeometryGraphOperation = {
       val __obj = js.Dynamic.literal(getArgGeometry = js.Any.fromFunction1(getArgGeometry), setComputationPrecision = js.Any.fromFunction1(setComputationPrecision))
       __obj.asInstanceOf[GeometryGraphOperation]
     }
     
-    @scala.inline
-    implicit class GeometryGraphOperationMutableBuilder[Self <: GeometryGraphOperation] (val x: Self) extends AnyVal {
+    extension [Self <: GeometryGraphOperation](x: Self) {
       
-      @scala.inline
-      def setGetArgGeometry(value: Double => Geometry): Self = StObject.set(x, "getArgGeometry", js.Any.fromFunction1(value))
+      inline def setGetArgGeometry(value: Double => Geometry): Self = StObject.set(x, "getArgGeometry", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetComputationPrecision(value: PrecisionModel => Unit): Self = StObject.set(x, "setComputationPrecision", js.Any.fromFunction1(value))
+      inline def setSetComputationPrecision(value: PrecisionModel => Unit): Self = StObject.set(x, "setComputationPrecision", js.Any.fromFunction1(value))
     }
   }
   
@@ -79,8 +75,7 @@ object operation {
     }
     object BufferOp {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         bufferFixedPrecision: PrecisionModel => Unit,
         bufferReducedPrecision2: Double => Unit,
         getResultGeometry: Double => Geometry,
@@ -91,23 +86,17 @@ object operation {
         __obj.asInstanceOf[BufferOp]
       }
       
-      @scala.inline
-      implicit class BufferOpMutableBuilder[Self <: BufferOp] (val x: Self) extends AnyVal {
+      extension [Self <: BufferOp](x: Self) {
         
-        @scala.inline
-        def setBufferFixedPrecision(value: PrecisionModel => Unit): Self = StObject.set(x, "bufferFixedPrecision", js.Any.fromFunction1(value))
+        inline def setBufferFixedPrecision(value: PrecisionModel => Unit): Self = StObject.set(x, "bufferFixedPrecision", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setBufferReducedPrecision2(value: Double => Unit): Self = StObject.set(x, "bufferReducedPrecision2", js.Any.fromFunction1(value))
+        inline def setBufferReducedPrecision2(value: Double => Unit): Self = StObject.set(x, "bufferReducedPrecision2", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setGetResultGeometry(value: Double => Geometry): Self = StObject.set(x, "getResultGeometry", js.Any.fromFunction1(value))
+        inline def setGetResultGeometry(value: Double => Geometry): Self = StObject.set(x, "getResultGeometry", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetEndCapStyle(value: Double => Unit): Self = StObject.set(x, "setEndCapStyle", js.Any.fromFunction1(value))
+        inline def setSetEndCapStyle(value: Double => Unit): Self = StObject.set(x, "setEndCapStyle", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetQuadrantSegments(value: Double => Unit): Self = StObject.set(x, "setQuadrantSegments", js.Any.fromFunction1(value))
+        inline def setSetQuadrantSegments(value: Double => Unit): Self = StObject.set(x, "setQuadrantSegments", js.Any.fromFunction1(value))
       }
     }
     
@@ -222,8 +211,7 @@ object operation {
     }
     object BufferParameters {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         bufferDistanceError: Double => Double,
         getEndCapStyle: () => Double,
         getJoinStyle: () => Double,
@@ -240,41 +228,29 @@ object operation {
         __obj.asInstanceOf[BufferParameters]
       }
       
-      @scala.inline
-      implicit class BufferParametersMutableBuilder[Self <: BufferParameters] (val x: Self) extends AnyVal {
+      extension [Self <: BufferParameters](x: Self) {
         
-        @scala.inline
-        def setBufferDistanceError(value: Double => Double): Self = StObject.set(x, "bufferDistanceError", js.Any.fromFunction1(value))
+        inline def setBufferDistanceError(value: Double => Double): Self = StObject.set(x, "bufferDistanceError", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setGetEndCapStyle(value: () => Double): Self = StObject.set(x, "getEndCapStyle", js.Any.fromFunction0(value))
+        inline def setGetEndCapStyle(value: () => Double): Self = StObject.set(x, "getEndCapStyle", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetJoinStyle(value: () => Double): Self = StObject.set(x, "getJoinStyle", js.Any.fromFunction0(value))
+        inline def setGetJoinStyle(value: () => Double): Self = StObject.set(x, "getJoinStyle", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetMitreLimit(value: () => Double): Self = StObject.set(x, "getMitreLimit", js.Any.fromFunction0(value))
+        inline def setGetMitreLimit(value: () => Double): Self = StObject.set(x, "getMitreLimit", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetQuadrantSegments(value: () => Double): Self = StObject.set(x, "getQuadrantSegments", js.Any.fromFunction0(value))
+        inline def setGetQuadrantSegments(value: () => Double): Self = StObject.set(x, "getQuadrantSegments", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setIsSingleSided(value: () => Boolean): Self = StObject.set(x, "isSingleSided", js.Any.fromFunction0(value))
+        inline def setIsSingleSided(value: () => Boolean): Self = StObject.set(x, "isSingleSided", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setSetEndCapStyle(value: Double => Unit): Self = StObject.set(x, "setEndCapStyle", js.Any.fromFunction1(value))
+        inline def setSetEndCapStyle(value: Double => Unit): Self = StObject.set(x, "setEndCapStyle", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetJoinStyle(value: Double => Unit): Self = StObject.set(x, "setJoinStyle", js.Any.fromFunction1(value))
+        inline def setSetJoinStyle(value: Double => Unit): Self = StObject.set(x, "setJoinStyle", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetMitreLimit(value: Double => Unit): Self = StObject.set(x, "setMitreLimit", js.Any.fromFunction1(value))
+        inline def setSetMitreLimit(value: Double => Unit): Self = StObject.set(x, "setMitreLimit", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetQuadrantSegments(value: Double => Unit): Self = StObject.set(x, "setQuadrantSegments", js.Any.fromFunction1(value))
+        inline def setSetQuadrantSegments(value: Double => Unit): Self = StObject.set(x, "setQuadrantSegments", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetSingleSided(value: Boolean => Unit): Self = StObject.set(x, "setSingleSided", js.Any.fromFunction1(value))
+        inline def setSetSingleSided(value: Boolean => Unit): Self = StObject.set(x, "setSingleSided", js.Any.fromFunction1(value))
       }
     }
   }
@@ -289,8 +265,7 @@ object operation {
     }
     object RelateOp {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         getArgGeometry: Double => Geometry,
         getIntersectionMatrix: () => IntersectionMatrix,
         setComputationPrecision: PrecisionModel => Unit
@@ -299,11 +274,9 @@ object operation {
         __obj.asInstanceOf[RelateOp]
       }
       
-      @scala.inline
-      implicit class RelateOpMutableBuilder[Self <: RelateOp] (val x: Self) extends AnyVal {
+      extension [Self <: RelateOp](x: Self) {
         
-        @scala.inline
-        def setGetIntersectionMatrix(value: () => IntersectionMatrix): Self = StObject.set(x, "getIntersectionMatrix", js.Any.fromFunction0(value))
+        inline def setGetIntersectionMatrix(value: () => IntersectionMatrix): Self = StObject.set(x, "getIntersectionMatrix", js.Any.fromFunction0(value))
       }
     }
   }

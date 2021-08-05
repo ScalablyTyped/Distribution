@@ -18,8 +18,7 @@ trait NodeGroupResource extends StObject {
 }
 object NodeGroupResource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     autoscalingGroups: js.Array[NodeGroupResourceAutoscalingGroup],
     remoteAccessSecurityGroupId: String
   ): NodeGroupResource = {
@@ -27,16 +26,12 @@ object NodeGroupResource {
     __obj.asInstanceOf[NodeGroupResource]
   }
   
-  @scala.inline
-  implicit class NodeGroupResourceMutableBuilder[Self <: NodeGroupResource] (val x: Self) extends AnyVal {
+  extension [Self <: NodeGroupResource](x: Self) {
     
-    @scala.inline
-    def setAutoscalingGroups(value: js.Array[NodeGroupResourceAutoscalingGroup]): Self = StObject.set(x, "autoscalingGroups", value.asInstanceOf[js.Any])
+    inline def setAutoscalingGroups(value: js.Array[NodeGroupResourceAutoscalingGroup]): Self = StObject.set(x, "autoscalingGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoscalingGroupsVarargs(value: NodeGroupResourceAutoscalingGroup*): Self = StObject.set(x, "autoscalingGroups", js.Array(value :_*))
+    inline def setAutoscalingGroupsVarargs(value: NodeGroupResourceAutoscalingGroup*): Self = StObject.set(x, "autoscalingGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setRemoteAccessSecurityGroupId(value: String): Self = StObject.set(x, "remoteAccessSecurityGroupId", value.asInstanceOf[js.Any])
+    inline def setRemoteAccessSecurityGroupId(value: String): Self = StObject.set(x, "remoteAccessSecurityGroupId", value.asInstanceOf[js.Any])
   }
 }

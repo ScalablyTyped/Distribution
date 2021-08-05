@@ -28,34 +28,25 @@ trait GetTagsRequest extends StObject {
 }
 object GetTagsRequest {
   
-  @scala.inline
-  def apply(TimePeriod: DateInterval): GetTagsRequest = {
+  inline def apply(TimePeriod: DateInterval): GetTagsRequest = {
     val __obj = js.Dynamic.literal(TimePeriod = TimePeriod.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTagsRequest]
   }
   
-  @scala.inline
-  implicit class GetTagsRequestMutableBuilder[Self <: GetTagsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetTagsRequest](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: NextPageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: NextPageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
     
-    @scala.inline
-    def setSearchString(value: SearchString): Self = StObject.set(x, "SearchString", value.asInstanceOf[js.Any])
+    inline def setSearchString(value: SearchString): Self = StObject.set(x, "SearchString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchStringUndefined: Self = StObject.set(x, "SearchString", js.undefined)
+    inline def setSearchStringUndefined: Self = StObject.set(x, "SearchString", js.undefined)
     
-    @scala.inline
-    def setTagKey(value: TagKey): Self = StObject.set(x, "TagKey", value.asInstanceOf[js.Any])
+    inline def setTagKey(value: TagKey): Self = StObject.set(x, "TagKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagKeyUndefined: Self = StObject.set(x, "TagKey", js.undefined)
+    inline def setTagKeyUndefined: Self = StObject.set(x, "TagKey", js.undefined)
     
-    @scala.inline
-    def setTimePeriod(value: DateInterval): Self = StObject.set(x, "TimePeriod", value.asInstanceOf[js.Any])
+    inline def setTimePeriod(value: DateInterval): Self = StObject.set(x, "TimePeriod", value.asInstanceOf[js.Any])
   }
 }

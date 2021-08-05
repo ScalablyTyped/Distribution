@@ -33,6 +33,5 @@ trait Role[T /* <: Attributes */]
 }
 object Role {
   
-  @scala.inline
-  def apply: RoleConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("Role").asInstanceOf[RoleConstructor]
+  inline def apply: RoleConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("Role").asInstanceOf[RoleConstructor]
 }

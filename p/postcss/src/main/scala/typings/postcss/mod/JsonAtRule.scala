@@ -21,25 +21,19 @@ trait JsonAtRule
 }
 object JsonAtRule {
   
-  @scala.inline
-  def apply(): JsonAtRule = {
+  inline def apply(): JsonAtRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JsonAtRule]
   }
   
-  @scala.inline
-  implicit class JsonAtRuleMutableBuilder[Self <: JsonAtRule] (val x: Self) extends AnyVal {
+  extension [Self <: JsonAtRule](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setParams(value: String): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: String): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
   }
 }

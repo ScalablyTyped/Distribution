@@ -11,6 +11,5 @@ object setStyleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def setStyle(elem: HTMLElement, styles: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStyle")(elem.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setStyle(elem: HTMLElement, styles: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStyle")(elem.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

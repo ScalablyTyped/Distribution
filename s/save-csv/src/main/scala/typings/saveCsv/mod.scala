@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(array: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def apply(array: js.Array[js.Any], options: SaveCsvProps): Unit = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(array: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(array: js.Array[js.Any], options: SaveCsvProps): Unit = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("save-csv", JSImport.Namespace)
   @js.native
@@ -34,53 +32,38 @@ object mod {
   }
   object SaveCsvProps {
     
-    @scala.inline
-    def apply(filename: String): SaveCsvProps = {
+    inline def apply(filename: String): SaveCsvProps = {
       val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any])
       __obj.asInstanceOf[SaveCsvProps]
     }
     
-    @scala.inline
-    implicit class SaveCsvPropsMutableBuilder[Self <: SaveCsvProps] (val x: Self) extends AnyVal {
+    extension [Self <: SaveCsvProps](x: Self) {
       
-      @scala.inline
-      def setBom(value: Boolean): Self = StObject.set(x, "bom", value.asInstanceOf[js.Any])
+      inline def setBom(value: Boolean): Self = StObject.set(x, "bom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBomUndefined: Self = StObject.set(x, "bom", js.undefined)
+      inline def setBomUndefined: Self = StObject.set(x, "bom", js.undefined)
       
-      @scala.inline
-      def setEol(value: String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
+      inline def setEol(value: String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEolUndefined: Self = StObject.set(x, "eol", js.undefined)
+      inline def setEolUndefined: Self = StObject.set(x, "eol", js.undefined)
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatter(value: /* value */ String | JSON => Unit): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
+      inline def setFormatter(value: /* value */ String | JSON => Unit): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
+      inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
       
-      @scala.inline
-      def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
+      inline def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
+      inline def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
       
-      @scala.inline
-      def setQuote(value: String): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
+      inline def setQuote(value: String): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuoteUndefined: Self = StObject.set(x, "quote", js.undefined)
+      inline def setQuoteUndefined: Self = StObject.set(x, "quote", js.undefined)
       
-      @scala.inline
-      def setSep(value: String): Self = StObject.set(x, "sep", value.asInstanceOf[js.Any])
+      inline def setSep(value: String): Self = StObject.set(x, "sep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSepUndefined: Self = StObject.set(x, "sep", js.undefined)
+      inline def setSepUndefined: Self = StObject.set(x, "sep", js.undefined)
     }
   }
 }

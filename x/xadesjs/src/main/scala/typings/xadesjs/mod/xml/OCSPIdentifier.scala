@@ -13,6 +13,5 @@ class OCSPIdentifier ()
   extends typings.xadesjs.xmlMod.OCSPIdentifier
 object OCSPIdentifier {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.OCSPIdentifier] = ^.asInstanceOf[js.Dynamic].selectDynamic("OCSPIdentifier").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.OCSPIdentifier]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.OCSPIdentifier] = ^.asInstanceOf[js.Dynamic].selectDynamic("OCSPIdentifier").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.OCSPIdentifier]]
 }

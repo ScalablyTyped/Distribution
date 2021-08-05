@@ -15,16 +15,13 @@ trait StreamStream extends StObject {
 }
 object StreamStream {
   
-  @scala.inline
-  def apply(stream: typings.agoraRtcSdk.mod.Stream): StreamStream = {
+  inline def apply(stream: typings.agoraRtcSdk.mod.Stream): StreamStream = {
     val __obj = js.Dynamic.literal(stream = stream.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamStream]
   }
   
-  @scala.inline
-  implicit class StreamStreamMutableBuilder[Self <: StreamStream] (val x: Self) extends AnyVal {
+  extension [Self <: StreamStream](x: Self) {
     
-    @scala.inline
-    def setStream(value: typings.agoraRtcSdk.mod.Stream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+    inline def setStream(value: typings.agoraRtcSdk.mod.Stream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
   }
 }

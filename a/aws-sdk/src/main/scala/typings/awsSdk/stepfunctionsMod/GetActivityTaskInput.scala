@@ -18,22 +18,17 @@ trait GetActivityTaskInput extends StObject {
 }
 object GetActivityTaskInput {
   
-  @scala.inline
-  def apply(activityArn: Arn): GetActivityTaskInput = {
+  inline def apply(activityArn: Arn): GetActivityTaskInput = {
     val __obj = js.Dynamic.literal(activityArn = activityArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetActivityTaskInput]
   }
   
-  @scala.inline
-  implicit class GetActivityTaskInputMutableBuilder[Self <: GetActivityTaskInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetActivityTaskInput](x: Self) {
     
-    @scala.inline
-    def setActivityArn(value: Arn): Self = StObject.set(x, "activityArn", value.asInstanceOf[js.Any])
+    inline def setActivityArn(value: Arn): Self = StObject.set(x, "activityArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerName(value: Name): Self = StObject.set(x, "workerName", value.asInstanceOf[js.Any])
+    inline def setWorkerName(value: Name): Self = StObject.set(x, "workerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerNameUndefined: Self = StObject.set(x, "workerName", js.undefined)
+    inline def setWorkerNameUndefined: Self = StObject.set(x, "workerName", js.undefined)
   }
 }

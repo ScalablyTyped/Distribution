@@ -28,22 +28,17 @@ trait ASPxClientTreeListCustomButtonEventArgs
 }
 object ASPxClientTreeListCustomButtonEventArgs {
   
-  @scala.inline
-  def apply(buttonID: String, buttonIndex: Double, nodeKey: String, processOnServer: Boolean): ASPxClientTreeListCustomButtonEventArgs = {
+  inline def apply(buttonID: String, buttonIndex: Double, nodeKey: String, processOnServer: Boolean): ASPxClientTreeListCustomButtonEventArgs = {
     val __obj = js.Dynamic.literal(buttonID = buttonID.asInstanceOf[js.Any], buttonIndex = buttonIndex.asInstanceOf[js.Any], nodeKey = nodeKey.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientTreeListCustomButtonEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientTreeListCustomButtonEventArgsMutableBuilder[Self <: ASPxClientTreeListCustomButtonEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientTreeListCustomButtonEventArgs](x: Self) {
     
-    @scala.inline
-    def setButtonID(value: String): Self = StObject.set(x, "buttonID", value.asInstanceOf[js.Any])
+    inline def setButtonID(value: String): Self = StObject.set(x, "buttonID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonIndex(value: Double): Self = StObject.set(x, "buttonIndex", value.asInstanceOf[js.Any])
+    inline def setButtonIndex(value: Double): Self = StObject.set(x, "buttonIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeKey(value: String): Self = StObject.set(x, "nodeKey", value.asInstanceOf[js.Any])
+    inline def setNodeKey(value: String): Self = StObject.set(x, "nodeKey", value.asInstanceOf[js.Any])
   }
 }

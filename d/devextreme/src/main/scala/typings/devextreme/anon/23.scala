@@ -13,25 +13,19 @@ trait `23` extends StObject {
 }
 object `23` {
   
-  @scala.inline
-  def apply(): `23` = {
+  inline def apply(): `23` = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`23`]
   }
   
-  @scala.inline
-  implicit class `23MutableBuilder`[Self <: `23`] (val x: Self) extends AnyVal {
+  extension [Self <: `23`](x: Self) {
     
-    @scala.inline
-    def setItem(value: dxFunnelItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: dxFunnelItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

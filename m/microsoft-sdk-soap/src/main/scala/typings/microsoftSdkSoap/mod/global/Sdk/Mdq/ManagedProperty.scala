@@ -14,22 +14,17 @@ trait ManagedProperty[T] extends StObject {
 }
 object ManagedProperty {
   
-  @scala.inline
-  def apply[T](CanBeChanged: Boolean, ManagedPropertyLogicalName: String, Value: T): ManagedProperty[T] = {
+  inline def apply[T](CanBeChanged: Boolean, ManagedPropertyLogicalName: String, Value: T): ManagedProperty[T] = {
     val __obj = js.Dynamic.literal(CanBeChanged = CanBeChanged.asInstanceOf[js.Any], ManagedPropertyLogicalName = ManagedPropertyLogicalName.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagedProperty[T]]
   }
   
-  @scala.inline
-  implicit class ManagedPropertyMutableBuilder[Self <: ManagedProperty[?], T] (val x: Self & ManagedProperty[T]) extends AnyVal {
+  extension [Self <: ManagedProperty[?], T](x: Self & ManagedProperty[T]) {
     
-    @scala.inline
-    def setCanBeChanged(value: Boolean): Self = StObject.set(x, "CanBeChanged", value.asInstanceOf[js.Any])
+    inline def setCanBeChanged(value: Boolean): Self = StObject.set(x, "CanBeChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedPropertyLogicalName(value: String): Self = StObject.set(x, "ManagedPropertyLogicalName", value.asInstanceOf[js.Any])
+    inline def setManagedPropertyLogicalName(value: String): Self = StObject.set(x, "ManagedPropertyLogicalName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: T): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: T): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

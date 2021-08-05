@@ -8,14 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(view: View): Transform = ^.asInstanceOf[js.Dynamic].apply(view.asInstanceOf[js.Any]).asInstanceOf[Transform]
-  @scala.inline
-  def apply(view: View, options: Unit, partials: Hash): Transform = (^.asInstanceOf[js.Dynamic].apply(view.asInstanceOf[js.Any], options.asInstanceOf[js.Any], partials.asInstanceOf[js.Any])).asInstanceOf[Transform]
-  @scala.inline
-  def apply(view: View, options: Options): Transform = (^.asInstanceOf[js.Dynamic].apply(view.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Transform]
-  @scala.inline
-  def apply(view: View, options: Options, partials: Hash): Transform = (^.asInstanceOf[js.Dynamic].apply(view.asInstanceOf[js.Any], options.asInstanceOf[js.Any], partials.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  inline def apply(view: View): Transform = ^.asInstanceOf[js.Dynamic].apply(view.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  inline def apply(view: View, options: Unit, partials: Hash): Transform = (^.asInstanceOf[js.Dynamic].apply(view.asInstanceOf[js.Any], options.asInstanceOf[js.Any], partials.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  inline def apply(view: View, options: Options): Transform = (^.asInstanceOf[js.Dynamic].apply(view.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  inline def apply(view: View, options: Options, partials: Hash): Transform = (^.asInstanceOf[js.Dynamic].apply(view.asInstanceOf[js.Any], options.asInstanceOf[js.Any], partials.asInstanceOf[js.Any])).asInstanceOf[Transform]
   
   @JSImport("gulp-mustache", JSImport.Namespace)
   @js.native
@@ -31,29 +27,22 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+      inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
+      inline def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
       
-      @scala.inline
-      def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     }
   }
   

@@ -11,7 +11,7 @@ trait MergeEventObject extends StObject {
   
   val DOM: IXMLDOMDocument
   
-  @JSName("InfoPath.MergeEventObject_typekey")
+  /* private */ @JSName("InfoPath.MergeEventObject_typekey")
   var InfoPathDotMergeEventObject_typekey: MergeEventObject
   
   var ReturnStatus: Boolean
@@ -24,8 +24,7 @@ trait MergeEventObject extends StObject {
 }
 object MergeEventObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     DOM: IXMLDOMDocument,
     InfoPathDotMergeEventObject_typekey: MergeEventObject,
@@ -39,28 +38,20 @@ object MergeEventObject {
     __obj.asInstanceOf[MergeEventObject]
   }
   
-  @scala.inline
-  implicit class MergeEventObjectMutableBuilder[Self <: MergeEventObject] (val x: Self) extends AnyVal {
+  extension [Self <: MergeEventObject](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDOM(value: IXMLDOMDocument): Self = StObject.set(x, "DOM", value.asInstanceOf[js.Any])
+    inline def setDOM(value: IXMLDOMDocument): Self = StObject.set(x, "DOM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoPathDotMergeEventObject_typekey(value: MergeEventObject): Self = StObject.set(x, "InfoPath.MergeEventObject_typekey", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotMergeEventObject_typekey(value: MergeEventObject): Self = StObject.set(x, "InfoPath.MergeEventObject_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnStatus(value: Boolean): Self = StObject.set(x, "ReturnStatus", value.asInstanceOf[js.Any])
+    inline def setReturnStatus(value: Boolean): Self = StObject.set(x, "ReturnStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRollBack(value: Boolean): Self = StObject.set(x, "RollBack", value.asInstanceOf[js.Any])
+    inline def setRollBack(value: Boolean): Self = StObject.set(x, "RollBack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXDocument(value: _XDocument): Self = StObject.set(x, "XDocument", value.asInstanceOf[js.Any])
+    inline def setXDocument(value: _XDocument): Self = StObject.set(x, "XDocument", value.asInstanceOf[js.Any])
   }
 }

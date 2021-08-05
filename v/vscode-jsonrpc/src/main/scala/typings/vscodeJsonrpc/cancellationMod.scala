@@ -41,15 +41,14 @@ object cancellationMod {
     @js.native
     val None: CancellationToken = js.native
     
-    @scala.inline
-    def is(value: js.Any): /* is vscode-jsonrpc.vscode-jsonrpc/lib/cancellation.CancellationToken */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-jsonrpc.vscode-jsonrpc/lib/cancellation.CancellationToken */ Boolean]
+    inline def is(value: js.Any): /* is vscode-jsonrpc.vscode-jsonrpc/lib/cancellation.CancellationToken */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-jsonrpc.vscode-jsonrpc/lib/cancellation.CancellationToken */ Boolean]
   }
   
   @JSImport("vscode-jsonrpc/lib/cancellation", "CancellationTokenSource")
   @js.native
   class CancellationTokenSource () extends StObject {
     
-    var _token: js.Any = js.native
+    /* private */ var _token: js.Any = js.native
     
     def cancel(): Unit = js.native
     

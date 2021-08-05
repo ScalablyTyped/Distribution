@@ -13,19 +13,15 @@ trait CreateVaultOutput extends StObject {
 }
 object CreateVaultOutput {
   
-  @scala.inline
-  def apply(): CreateVaultOutput = {
+  inline def apply(): CreateVaultOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateVaultOutput]
   }
   
-  @scala.inline
-  implicit class CreateVaultOutputMutableBuilder[Self <: CreateVaultOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateVaultOutput](x: Self) {
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
   }
 }

@@ -16,17 +16,13 @@ object mod {
   trait FetchStatus extends StObject
   object FetchStatus {
     
-    @scala.inline
-    def failure: typings.firebaseRemoteConfigTypes.firebaseRemoteConfigTypesStrings.failure = "failure".asInstanceOf[typings.firebaseRemoteConfigTypes.firebaseRemoteConfigTypesStrings.failure]
+    inline def failure: typings.firebaseRemoteConfigTypes.firebaseRemoteConfigTypesStrings.failure = "failure".asInstanceOf[typings.firebaseRemoteConfigTypes.firebaseRemoteConfigTypesStrings.failure]
     
-    @scala.inline
-    def `no-fetch-yet`: typings.firebaseRemoteConfigTypes.firebaseRemoteConfigTypesStrings.`no-fetch-yet` = "no-fetch-yet".asInstanceOf[typings.firebaseRemoteConfigTypes.firebaseRemoteConfigTypesStrings.`no-fetch-yet`]
+    inline def `no-fetch-yet`: typings.firebaseRemoteConfigTypes.firebaseRemoteConfigTypesStrings.`no-fetch-yet` = "no-fetch-yet".asInstanceOf[typings.firebaseRemoteConfigTypes.firebaseRemoteConfigTypesStrings.`no-fetch-yet`]
     
-    @scala.inline
-    def success: typings.firebaseRemoteConfigTypes.firebaseRemoteConfigTypesStrings.success = "success".asInstanceOf[typings.firebaseRemoteConfigTypes.firebaseRemoteConfigTypesStrings.success]
+    inline def success: typings.firebaseRemoteConfigTypes.firebaseRemoteConfigTypesStrings.success = "success".asInstanceOf[typings.firebaseRemoteConfigTypes.firebaseRemoteConfigTypesStrings.success]
     
-    @scala.inline
-    def throttle: typings.firebaseRemoteConfigTypes.firebaseRemoteConfigTypesStrings.throttle = "throttle".asInstanceOf[typings.firebaseRemoteConfigTypes.firebaseRemoteConfigTypesStrings.throttle]
+    inline def throttle: typings.firebaseRemoteConfigTypes.firebaseRemoteConfigTypesStrings.throttle = "throttle".asInstanceOf[typings.firebaseRemoteConfigTypes.firebaseRemoteConfigTypesStrings.throttle]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -37,14 +33,11 @@ object mod {
   trait LogLevel extends StObject
   object LogLevel {
     
-    @scala.inline
-    def debug: typings.firebaseRemoteConfigTypes.firebaseRemoteConfigTypesStrings.debug = "debug".asInstanceOf[typings.firebaseRemoteConfigTypes.firebaseRemoteConfigTypesStrings.debug]
+    inline def debug: typings.firebaseRemoteConfigTypes.firebaseRemoteConfigTypesStrings.debug = "debug".asInstanceOf[typings.firebaseRemoteConfigTypes.firebaseRemoteConfigTypesStrings.debug]
     
-    @scala.inline
-    def error: typings.firebaseRemoteConfigTypes.firebaseRemoteConfigTypesStrings.error = "error".asInstanceOf[typings.firebaseRemoteConfigTypes.firebaseRemoteConfigTypesStrings.error]
+    inline def error: typings.firebaseRemoteConfigTypes.firebaseRemoteConfigTypesStrings.error = "error".asInstanceOf[typings.firebaseRemoteConfigTypes.firebaseRemoteConfigTypesStrings.error]
     
-    @scala.inline
-    def silent: typings.firebaseRemoteConfigTypes.firebaseRemoteConfigTypesStrings.silent = "silent".asInstanceOf[typings.firebaseRemoteConfigTypes.firebaseRemoteConfigTypesStrings.silent]
+    inline def silent: typings.firebaseRemoteConfigTypes.firebaseRemoteConfigTypesStrings.silent = "silent".asInstanceOf[typings.firebaseRemoteConfigTypes.firebaseRemoteConfigTypesStrings.silent]
   }
   
   trait RemoteConfig extends StObject {
@@ -133,8 +126,7 @@ object mod {
   }
   object RemoteConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       activate: () => js.Promise[Boolean],
       defaultConfig: StringDictionary[String | Double | Boolean],
       ensureInitialized: () => js.Promise[Unit],
@@ -154,50 +146,35 @@ object mod {
       __obj.asInstanceOf[RemoteConfig]
     }
     
-    @scala.inline
-    implicit class RemoteConfigMutableBuilder[Self <: RemoteConfig] (val x: Self) extends AnyVal {
+    extension [Self <: RemoteConfig](x: Self) {
       
-      @scala.inline
-      def setActivate(value: () => js.Promise[Boolean]): Self = StObject.set(x, "activate", js.Any.fromFunction0(value))
+      inline def setActivate(value: () => js.Promise[Boolean]): Self = StObject.set(x, "activate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDefaultConfig(value: StringDictionary[String | Double | Boolean]): Self = StObject.set(x, "defaultConfig", value.asInstanceOf[js.Any])
+      inline def setDefaultConfig(value: StringDictionary[String | Double | Boolean]): Self = StObject.set(x, "defaultConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnsureInitialized(value: () => js.Promise[Unit]): Self = StObject.set(x, "ensureInitialized", js.Any.fromFunction0(value))
+      inline def setEnsureInitialized(value: () => js.Promise[Unit]): Self = StObject.set(x, "ensureInitialized", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFetch(value: () => js.Promise[Unit]): Self = StObject.set(x, "fetch", js.Any.fromFunction0(value))
+      inline def setFetch(value: () => js.Promise[Unit]): Self = StObject.set(x, "fetch", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFetchAndActivate(value: () => js.Promise[Boolean]): Self = StObject.set(x, "fetchAndActivate", js.Any.fromFunction0(value))
+      inline def setFetchAndActivate(value: () => js.Promise[Boolean]): Self = StObject.set(x, "fetchAndActivate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFetchTimeMillis(value: Double): Self = StObject.set(x, "fetchTimeMillis", value.asInstanceOf[js.Any])
+      inline def setFetchTimeMillis(value: Double): Self = StObject.set(x, "fetchTimeMillis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetAll(value: () => StringDictionary[Value]): Self = StObject.set(x, "getAll", js.Any.fromFunction0(value))
+      inline def setGetAll(value: () => StringDictionary[Value]): Self = StObject.set(x, "getAll", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetBoolean(value: String => Boolean): Self = StObject.set(x, "getBoolean", js.Any.fromFunction1(value))
+      inline def setGetBoolean(value: String => Boolean): Self = StObject.set(x, "getBoolean", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetNumber(value: String => Double): Self = StObject.set(x, "getNumber", js.Any.fromFunction1(value))
+      inline def setGetNumber(value: String => Double): Self = StObject.set(x, "getNumber", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetString(value: String => String): Self = StObject.set(x, "getString", js.Any.fromFunction1(value))
+      inline def setGetString(value: String => String): Self = StObject.set(x, "getString", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetValue(value: String => Value): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
+      inline def setGetValue(value: String => Value): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLastFetchStatus(value: FetchStatus): Self = StObject.set(x, "lastFetchStatus", value.asInstanceOf[js.Any])
+      inline def setLastFetchStatus(value: FetchStatus): Self = StObject.set(x, "lastFetchStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetLogLevel(value: LogLevel => Unit): Self = StObject.set(x, "setLogLevel", js.Any.fromFunction1(value))
+      inline def setSetLogLevel(value: LogLevel => Unit): Self = StObject.set(x, "setLogLevel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSettings(value: Settings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      inline def setSettings(value: Settings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     }
   }
   
@@ -217,20 +194,16 @@ object mod {
   }
   object Settings {
     
-    @scala.inline
-    def apply(fetchTimeoutMillis: Double, minimumFetchIntervalMillis: Double): Settings = {
+    inline def apply(fetchTimeoutMillis: Double, minimumFetchIntervalMillis: Double): Settings = {
       val __obj = js.Dynamic.literal(fetchTimeoutMillis = fetchTimeoutMillis.asInstanceOf[js.Any], minimumFetchIntervalMillis = minimumFetchIntervalMillis.asInstanceOf[js.Any])
       __obj.asInstanceOf[Settings]
     }
     
-    @scala.inline
-    implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
+    extension [Self <: Settings](x: Self) {
       
-      @scala.inline
-      def setFetchTimeoutMillis(value: Double): Self = StObject.set(x, "fetchTimeoutMillis", value.asInstanceOf[js.Any])
+      inline def setFetchTimeoutMillis(value: Double): Self = StObject.set(x, "fetchTimeoutMillis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimumFetchIntervalMillis(value: Double): Self = StObject.set(x, "minimumFetchIntervalMillis", value.asInstanceOf[js.Any])
+      inline def setMinimumFetchIntervalMillis(value: Double): Self = StObject.set(x, "minimumFetchIntervalMillis", value.asInstanceOf[js.Any])
     }
   }
   
@@ -261,8 +234,7 @@ object mod {
   }
   object Value {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       asBoolean: () => Boolean,
       asNumber: () => Double,
       asString: () => String,
@@ -272,20 +244,15 @@ object mod {
       __obj.asInstanceOf[Value]
     }
     
-    @scala.inline
-    implicit class ValueMutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
+    extension [Self <: Value](x: Self) {
       
-      @scala.inline
-      def setAsBoolean(value: () => Boolean): Self = StObject.set(x, "asBoolean", js.Any.fromFunction0(value))
+      inline def setAsBoolean(value: () => Boolean): Self = StObject.set(x, "asBoolean", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAsNumber(value: () => Double): Self = StObject.set(x, "asNumber", js.Any.fromFunction0(value))
+      inline def setAsNumber(value: () => Double): Self = StObject.set(x, "asNumber", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAsString(value: () => String): Self = StObject.set(x, "asString", js.Any.fromFunction0(value))
+      inline def setAsString(value: () => String): Self = StObject.set(x, "asString", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSource(value: () => ValueSource): Self = StObject.set(x, "getSource", js.Any.fromFunction0(value))
+      inline def setGetSource(value: () => ValueSource): Self = StObject.set(x, "getSource", js.Any.fromFunction0(value))
     }
   }
   
@@ -297,14 +264,11 @@ object mod {
   trait ValueSource extends StObject
   object ValueSource {
     
-    @scala.inline
-    def default: typings.firebaseRemoteConfigTypes.firebaseRemoteConfigTypesStrings.default = "default".asInstanceOf[typings.firebaseRemoteConfigTypes.firebaseRemoteConfigTypesStrings.default]
+    inline def default: typings.firebaseRemoteConfigTypes.firebaseRemoteConfigTypesStrings.default = "default".asInstanceOf[typings.firebaseRemoteConfigTypes.firebaseRemoteConfigTypesStrings.default]
     
-    @scala.inline
-    def remote: typings.firebaseRemoteConfigTypes.firebaseRemoteConfigTypesStrings.remote = "remote".asInstanceOf[typings.firebaseRemoteConfigTypes.firebaseRemoteConfigTypesStrings.remote]
+    inline def remote: typings.firebaseRemoteConfigTypes.firebaseRemoteConfigTypesStrings.remote = "remote".asInstanceOf[typings.firebaseRemoteConfigTypes.firebaseRemoteConfigTypesStrings.remote]
     
-    @scala.inline
-    def static: typings.firebaseRemoteConfigTypes.firebaseRemoteConfigTypesStrings.static = "static".asInstanceOf[typings.firebaseRemoteConfigTypes.firebaseRemoteConfigTypesStrings.static]
+    inline def static: typings.firebaseRemoteConfigTypes.firebaseRemoteConfigTypesStrings.static = "static".asInstanceOf[typings.firebaseRemoteConfigTypes.firebaseRemoteConfigTypesStrings.static]
   }
   
   object firebaseComponentAugmentingMod {
@@ -315,17 +279,14 @@ object mod {
     }
     object NameServiceMapping {
       
-      @scala.inline
-      def apply(remoteConfig: RemoteConfig): NameServiceMapping = {
+      inline def apply(remoteConfig: RemoteConfig): NameServiceMapping = {
         val __obj = js.Dynamic.literal(remoteConfig = remoteConfig.asInstanceOf[js.Any])
         __obj.asInstanceOf[NameServiceMapping]
       }
       
-      @scala.inline
-      implicit class NameServiceMappingMutableBuilder[Self <: NameServiceMapping] (val x: Self) extends AnyVal {
+      extension [Self <: NameServiceMapping](x: Self) {
         
-        @scala.inline
-        def setRemoteConfig(value: RemoteConfig): Self = StObject.set(x, "remoteConfig", value.asInstanceOf[js.Any])
+        inline def setRemoteConfig(value: RemoteConfig): Self = StObject.set(x, "remoteConfig", value.asInstanceOf[js.Any])
       }
     }
   }

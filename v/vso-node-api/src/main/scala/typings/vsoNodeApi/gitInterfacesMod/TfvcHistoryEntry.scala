@@ -20,8 +20,7 @@ trait TfvcHistoryEntry
 }
 object TfvcHistoryEntry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     changeList: ChangeList[TfvcItem],
     encoding: Double,
     fileId: Double,
@@ -32,13 +31,10 @@ object TfvcHistoryEntry {
     __obj.asInstanceOf[TfvcHistoryEntry]
   }
   
-  @scala.inline
-  implicit class TfvcHistoryEntryMutableBuilder[Self <: TfvcHistoryEntry] (val x: Self) extends AnyVal {
+  extension [Self <: TfvcHistoryEntry](x: Self) {
     
-    @scala.inline
-    def setEncoding(value: Double): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: Double): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileId(value: Double): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
+    inline def setFileId(value: Double): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
   }
 }

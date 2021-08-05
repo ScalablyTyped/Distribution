@@ -8,11 +8,9 @@ object fastifyStaticStrings {
   
   @js.native
   sealed trait html extends StObject
-  @scala.inline
-  def html: html = "html".asInstanceOf[html]
+  inline def html: html = "html".asInstanceOf[html]
   
   @js.native
   sealed trait json extends StObject
-  @scala.inline
-  def json: json = "json".asInstanceOf[json]
+  inline def json: json = "json".asInstanceOf[json]
 }

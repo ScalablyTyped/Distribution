@@ -20,31 +20,23 @@ trait RoboDirective extends StObject {
 }
 object RoboDirective {
   
-  @scala.inline
-  def apply(): RoboDirective = {
+  inline def apply(): RoboDirective = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RoboDirective]
   }
   
-  @scala.inline
-  implicit class RoboDirectiveMutableBuilder[Self <: RoboDirective] (val x: Self) extends AnyVal {
+  extension [Self <: RoboDirective](x: Self) {
     
-    @scala.inline
-    def setActionType(value: String): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
+    inline def setActionType(value: String): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionTypeUndefined: Self = StObject.set(x, "actionType", js.undefined)
+    inline def setActionTypeUndefined: Self = StObject.set(x, "actionType", js.undefined)
     
-    @scala.inline
-    def setInputText(value: String): Self = StObject.set(x, "inputText", value.asInstanceOf[js.Any])
+    inline def setInputText(value: String): Self = StObject.set(x, "inputText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputTextUndefined: Self = StObject.set(x, "inputText", js.undefined)
+    inline def setInputTextUndefined: Self = StObject.set(x, "inputText", js.undefined)
     
-    @scala.inline
-    def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
+    inline def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
   }
 }

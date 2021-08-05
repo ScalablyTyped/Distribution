@@ -13,17 +13,14 @@ object anon {
   }
   object PostTransformNode {
     
-    @scala.inline
-    def apply(postTransformNode: ASTNode => Unit): PostTransformNode = {
+    inline def apply(postTransformNode: ASTNode => Unit): PostTransformNode = {
       val __obj = js.Dynamic.literal(postTransformNode = js.Any.fromFunction1(postTransformNode))
       __obj.asInstanceOf[PostTransformNode]
     }
     
-    @scala.inline
-    implicit class PostTransformNodeMutableBuilder[Self <: PostTransformNode] (val x: Self) extends AnyVal {
+    extension [Self <: PostTransformNode](x: Self) {
       
-      @scala.inline
-      def setPostTransformNode(value: ASTNode => Unit): Self = StObject.set(x, "postTransformNode", js.Any.fromFunction1(value))
+      inline def setPostTransformNode(value: ASTNode => Unit): Self = StObject.set(x, "postTransformNode", js.Any.fromFunction1(value))
     }
   }
 }

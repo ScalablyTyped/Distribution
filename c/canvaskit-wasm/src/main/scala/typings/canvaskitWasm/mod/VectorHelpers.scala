@@ -68,8 +68,7 @@ trait VectorHelpers extends StObject {
 }
 object VectorHelpers {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: (VectorN, VectorN) => VectorN,
     cross: (Vector3, Vector3) => Vector3,
     dist: (VectorN, VectorN) => Double,
@@ -84,34 +83,24 @@ object VectorHelpers {
     __obj.asInstanceOf[VectorHelpers]
   }
   
-  @scala.inline
-  implicit class VectorHelpersMutableBuilder[Self <: VectorHelpers] (val x: Self) extends AnyVal {
+  extension [Self <: VectorHelpers](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (VectorN, VectorN) => VectorN): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (VectorN, VectorN) => VectorN): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCross(value: (Vector3, Vector3) => Vector3): Self = StObject.set(x, "cross", js.Any.fromFunction2(value))
+    inline def setCross(value: (Vector3, Vector3) => Vector3): Self = StObject.set(x, "cross", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDist(value: (VectorN, VectorN) => Double): Self = StObject.set(x, "dist", js.Any.fromFunction2(value))
+    inline def setDist(value: (VectorN, VectorN) => Double): Self = StObject.set(x, "dist", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDot(value: (VectorN, VectorN) => Double): Self = StObject.set(x, "dot", js.Any.fromFunction2(value))
+    inline def setDot(value: (VectorN, VectorN) => Double): Self = StObject.set(x, "dot", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLength(value: VectorN => Double): Self = StObject.set(x, "length", js.Any.fromFunction1(value))
+    inline def setLength(value: VectorN => Double): Self = StObject.set(x, "length", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLengthSquared(value: VectorN => Double): Self = StObject.set(x, "lengthSquared", js.Any.fromFunction1(value))
+    inline def setLengthSquared(value: VectorN => Double): Self = StObject.set(x, "lengthSquared", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMulScalar(value: (VectorN, Double) => VectorN): Self = StObject.set(x, "mulScalar", js.Any.fromFunction2(value))
+    inline def setMulScalar(value: (VectorN, Double) => VectorN): Self = StObject.set(x, "mulScalar", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setNormalize(value: VectorN => VectorN): Self = StObject.set(x, "normalize", js.Any.fromFunction1(value))
+    inline def setNormalize(value: VectorN => VectorN): Self = StObject.set(x, "normalize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSub(value: (VectorN, VectorN) => VectorN): Self = StObject.set(x, "sub", js.Any.fromFunction2(value))
+    inline def setSub(value: (VectorN, VectorN) => VectorN): Self = StObject.set(x, "sub", js.Any.fromFunction2(value))
   }
 }

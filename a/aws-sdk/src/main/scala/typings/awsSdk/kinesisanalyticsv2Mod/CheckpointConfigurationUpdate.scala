@@ -28,37 +28,27 @@ trait CheckpointConfigurationUpdate extends StObject {
 }
 object CheckpointConfigurationUpdate {
   
-  @scala.inline
-  def apply(): CheckpointConfigurationUpdate = {
+  inline def apply(): CheckpointConfigurationUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CheckpointConfigurationUpdate]
   }
   
-  @scala.inline
-  implicit class CheckpointConfigurationUpdateMutableBuilder[Self <: CheckpointConfigurationUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: CheckpointConfigurationUpdate](x: Self) {
     
-    @scala.inline
-    def setCheckpointIntervalUpdate(value: CheckpointInterval): Self = StObject.set(x, "CheckpointIntervalUpdate", value.asInstanceOf[js.Any])
+    inline def setCheckpointIntervalUpdate(value: CheckpointInterval): Self = StObject.set(x, "CheckpointIntervalUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckpointIntervalUpdateUndefined: Self = StObject.set(x, "CheckpointIntervalUpdate", js.undefined)
+    inline def setCheckpointIntervalUpdateUndefined: Self = StObject.set(x, "CheckpointIntervalUpdate", js.undefined)
     
-    @scala.inline
-    def setCheckpointingEnabledUpdate(value: BooleanObject): Self = StObject.set(x, "CheckpointingEnabledUpdate", value.asInstanceOf[js.Any])
+    inline def setCheckpointingEnabledUpdate(value: BooleanObject): Self = StObject.set(x, "CheckpointingEnabledUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckpointingEnabledUpdateUndefined: Self = StObject.set(x, "CheckpointingEnabledUpdate", js.undefined)
+    inline def setCheckpointingEnabledUpdateUndefined: Self = StObject.set(x, "CheckpointingEnabledUpdate", js.undefined)
     
-    @scala.inline
-    def setConfigurationTypeUpdate(value: ConfigurationType): Self = StObject.set(x, "ConfigurationTypeUpdate", value.asInstanceOf[js.Any])
+    inline def setConfigurationTypeUpdate(value: ConfigurationType): Self = StObject.set(x, "ConfigurationTypeUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationTypeUpdateUndefined: Self = StObject.set(x, "ConfigurationTypeUpdate", js.undefined)
+    inline def setConfigurationTypeUpdateUndefined: Self = StObject.set(x, "ConfigurationTypeUpdate", js.undefined)
     
-    @scala.inline
-    def setMinPauseBetweenCheckpointsUpdate(value: MinPauseBetweenCheckpoints): Self = StObject.set(x, "MinPauseBetweenCheckpointsUpdate", value.asInstanceOf[js.Any])
+    inline def setMinPauseBetweenCheckpointsUpdate(value: MinPauseBetweenCheckpoints): Self = StObject.set(x, "MinPauseBetweenCheckpointsUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinPauseBetweenCheckpointsUpdateUndefined: Self = StObject.set(x, "MinPauseBetweenCheckpointsUpdate", js.undefined)
+    inline def setMinPauseBetweenCheckpointsUpdateUndefined: Self = StObject.set(x, "MinPauseBetweenCheckpointsUpdate", js.undefined)
   }
 }

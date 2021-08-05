@@ -18,8 +18,7 @@ trait WaypointGroup extends StObject {
 }
 object WaypointGroup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     axis: String,
     first: () => Waypoint,
     last: () => Waypoint,
@@ -30,25 +29,18 @@ object WaypointGroup {
     __obj.asInstanceOf[WaypointGroup]
   }
   
-  @scala.inline
-  implicit class WaypointGroupMutableBuilder[Self <: WaypointGroup] (val x: Self) extends AnyVal {
+  extension [Self <: WaypointGroup](x: Self) {
     
-    @scala.inline
-    def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirst(value: () => Waypoint): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+    inline def setFirst(value: () => Waypoint): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLast(value: () => Waypoint): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
+    inline def setLast(value: () => Waypoint): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaypoints(value: js.Array[Waypoint]): Self = StObject.set(x, "waypoints", value.asInstanceOf[js.Any])
+    inline def setWaypoints(value: js.Array[Waypoint]): Self = StObject.set(x, "waypoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaypointsVarargs(value: Waypoint*): Self = StObject.set(x, "waypoints", js.Array(value :_*))
+    inline def setWaypointsVarargs(value: Waypoint*): Self = StObject.set(x, "waypoints", js.Array(value :_*))
   }
 }

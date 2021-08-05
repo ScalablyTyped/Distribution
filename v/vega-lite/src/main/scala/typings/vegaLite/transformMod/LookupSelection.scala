@@ -16,16 +16,13 @@ trait LookupSelection
 }
 object LookupSelection {
   
-  @scala.inline
-  def apply(key: FieldName, selection: String): LookupSelection = {
+  inline def apply(key: FieldName, selection: String): LookupSelection = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any])
     __obj.asInstanceOf[LookupSelection]
   }
   
-  @scala.inline
-  implicit class LookupSelectionMutableBuilder[Self <: LookupSelection] (val x: Self) extends AnyVal {
+  extension [Self <: LookupSelection](x: Self) {
     
-    @scala.inline
-    def setSelection(value: String): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+    inline def setSelection(value: String): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
   }
 }

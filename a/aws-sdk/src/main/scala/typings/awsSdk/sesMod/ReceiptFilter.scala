@@ -18,19 +18,15 @@ trait ReceiptFilter extends StObject {
 }
 object ReceiptFilter {
   
-  @scala.inline
-  def apply(IpFilter: ReceiptIpFilter, Name: ReceiptFilterName): ReceiptFilter = {
+  inline def apply(IpFilter: ReceiptIpFilter, Name: ReceiptFilterName): ReceiptFilter = {
     val __obj = js.Dynamic.literal(IpFilter = IpFilter.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReceiptFilter]
   }
   
-  @scala.inline
-  implicit class ReceiptFilterMutableBuilder[Self <: ReceiptFilter] (val x: Self) extends AnyVal {
+  extension [Self <: ReceiptFilter](x: Self) {
     
-    @scala.inline
-    def setIpFilter(value: ReceiptIpFilter): Self = StObject.set(x, "IpFilter", value.asInstanceOf[js.Any])
+    inline def setIpFilter(value: ReceiptIpFilter): Self = StObject.set(x, "IpFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: ReceiptFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ReceiptFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

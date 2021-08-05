@@ -17,6 +17,5 @@ object global {
   @JSGlobal("Blazy")
   @js.native
   def Blazy: typings.blazy.Blazy = js.native
-  @scala.inline
-  def Blazy_=(x: typings.blazy.Blazy): Unit = js.Dynamic.global.updateDynamic("Blazy")(x.asInstanceOf[js.Any])
+  inline def Blazy_=(x: typings.blazy.Blazy): Unit = js.Dynamic.global.updateDynamic("Blazy")(x.asInstanceOf[js.Any])
 }

@@ -26,8 +26,7 @@ trait AlreadyUpToDate extends StObject {
 }
 object AlreadyUpToDate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alreadyUpToDate: scala.Double,
     inlineUpdateReceived: scala.Double,
     installed: scala.Double,
@@ -42,34 +41,24 @@ object AlreadyUpToDate {
     __obj.asInstanceOf[AlreadyUpToDate]
   }
   
-  @scala.inline
-  implicit class AlreadyUpToDateMutableBuilder[Self <: AlreadyUpToDate] (val x: Self) extends AnyVal {
+  extension [Self <: AlreadyUpToDate](x: Self) {
     
-    @scala.inline
-    def setAlreadyUpToDate(value: scala.Double): Self = StObject.set(x, "alreadyUpToDate", value.asInstanceOf[js.Any])
+    inline def setAlreadyUpToDate(value: scala.Double): Self = StObject.set(x, "alreadyUpToDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInlineUpdateReceived(value: scala.Double): Self = StObject.set(x, "inlineUpdateReceived", value.asInstanceOf[js.Any])
+    inline def setInlineUpdateReceived(value: scala.Double): Self = StObject.set(x, "inlineUpdateReceived", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstalled(value: scala.Double): Self = StObject.set(x, "installed", value.asInstanceOf[js.Any])
+    inline def setInstalled(value: scala.Double): Self = StObject.set(x, "installed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreinstalled(value: scala.Double): Self = StObject.set(x, "preinstalled", value.asInstanceOf[js.Any])
+    inline def setPreinstalled(value: scala.Double): Self = StObject.set(x, "preinstalled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceivedInstallOrUpdate(value: scala.Double): Self = StObject.set(x, "receivedInstallOrUpdate", value.asInstanceOf[js.Any])
+    inline def setReceivedInstallOrUpdate(value: scala.Double): Self = StObject.set(x, "receivedInstallOrUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceivedUninstall(value: scala.Double): Self = StObject.set(x, "receivedUninstall", value.asInstanceOf[js.Any])
+    inline def setReceivedUninstall(value: scala.Double): Self = StObject.set(x, "receivedUninstall", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestedUpdate(value: scala.Double): Self = StObject.set(x, "requestedUpdate", value.asInstanceOf[js.Any])
+    inline def setRequestedUpdate(value: scala.Double): Self = StObject.set(x, "requestedUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUninstalled(value: scala.Double): Self = StObject.set(x, "uninstalled", value.asInstanceOf[js.Any])
+    inline def setUninstalled(value: scala.Double): Self = StObject.set(x, "uninstalled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdated(value: scala.Double): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+    inline def setUpdated(value: scala.Double): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
   }
 }

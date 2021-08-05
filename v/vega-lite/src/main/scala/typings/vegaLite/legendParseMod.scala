@@ -15,12 +15,9 @@ object legendParseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def mergeLegendComponent(mergedLegend: LegendComponent, childLegend: LegendComponent): LegendComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeLegendComponent")(mergedLegend.asInstanceOf[js.Any], childLegend.asInstanceOf[js.Any])).asInstanceOf[LegendComponent]
+  inline def mergeLegendComponent(mergedLegend: LegendComponent, childLegend: LegendComponent): LegendComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeLegendComponent")(mergedLegend.asInstanceOf[js.Any], childLegend.asInstanceOf[js.Any])).asInstanceOf[LegendComponent]
   
-  @scala.inline
-  def parseLegend(model: Model): PartialRecordfillstrokeco = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLegend")(model.asInstanceOf[js.Any]).asInstanceOf[PartialRecordfillstrokeco]
+  inline def parseLegend(model: Model): PartialRecordfillstrokeco = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLegend")(model.asInstanceOf[js.Any]).asInstanceOf[PartialRecordfillstrokeco]
   
-  @scala.inline
-  def parseLegendForChannel(model: UnitModel, channel: NonPositionScaleChannel): LegendComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("parseLegendForChannel")(model.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[LegendComponent]
+  inline def parseLegendForChannel(model: UnitModel, channel: NonPositionScaleChannel): LegendComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("parseLegendForChannel")(model.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[LegendComponent]
 }

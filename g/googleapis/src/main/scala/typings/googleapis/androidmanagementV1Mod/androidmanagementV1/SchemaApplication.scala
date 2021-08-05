@@ -32,43 +32,31 @@ trait SchemaApplication extends StObject {
 }
 object SchemaApplication {
   
-  @scala.inline
-  def apply(): SchemaApplication = {
+  inline def apply(): SchemaApplication = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaApplication]
   }
   
-  @scala.inline
-  implicit class SchemaApplicationMutableBuilder[Self <: SchemaApplication] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaApplication](x: Self) {
     
-    @scala.inline
-    def setManagedProperties(value: js.Array[SchemaManagedProperty]): Self = StObject.set(x, "managedProperties", value.asInstanceOf[js.Any])
+    inline def setManagedProperties(value: js.Array[SchemaManagedProperty]): Self = StObject.set(x, "managedProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedPropertiesUndefined: Self = StObject.set(x, "managedProperties", js.undefined)
+    inline def setManagedPropertiesUndefined: Self = StObject.set(x, "managedProperties", js.undefined)
     
-    @scala.inline
-    def setManagedPropertiesVarargs(value: SchemaManagedProperty*): Self = StObject.set(x, "managedProperties", js.Array(value :_*))
+    inline def setManagedPropertiesVarargs(value: SchemaManagedProperty*): Self = StObject.set(x, "managedProperties", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPermissions(value: js.Array[SchemaApplicationPermission]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: js.Array[SchemaApplicationPermission]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
+    inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
-    @scala.inline
-    def setPermissionsVarargs(value: SchemaApplicationPermission*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: SchemaApplicationPermission*): Self = StObject.set(x, "permissions", js.Array(value :_*))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

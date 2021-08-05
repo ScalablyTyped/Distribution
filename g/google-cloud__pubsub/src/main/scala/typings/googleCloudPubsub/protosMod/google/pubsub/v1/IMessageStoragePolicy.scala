@@ -12,25 +12,19 @@ trait IMessageStoragePolicy extends StObject {
 }
 object IMessageStoragePolicy {
   
-  @scala.inline
-  def apply(): IMessageStoragePolicy = {
+  inline def apply(): IMessageStoragePolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IMessageStoragePolicy]
   }
   
-  @scala.inline
-  implicit class IMessageStoragePolicyMutableBuilder[Self <: IMessageStoragePolicy] (val x: Self) extends AnyVal {
+  extension [Self <: IMessageStoragePolicy](x: Self) {
     
-    @scala.inline
-    def setAllowedPersistenceRegions(value: js.Array[String]): Self = StObject.set(x, "allowedPersistenceRegions", value.asInstanceOf[js.Any])
+    inline def setAllowedPersistenceRegions(value: js.Array[String]): Self = StObject.set(x, "allowedPersistenceRegions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedPersistenceRegionsNull: Self = StObject.set(x, "allowedPersistenceRegions", null)
+    inline def setAllowedPersistenceRegionsNull: Self = StObject.set(x, "allowedPersistenceRegions", null)
     
-    @scala.inline
-    def setAllowedPersistenceRegionsUndefined: Self = StObject.set(x, "allowedPersistenceRegions", js.undefined)
+    inline def setAllowedPersistenceRegionsUndefined: Self = StObject.set(x, "allowedPersistenceRegions", js.undefined)
     
-    @scala.inline
-    def setAllowedPersistenceRegionsVarargs(value: String*): Self = StObject.set(x, "allowedPersistenceRegions", js.Array(value :_*))
+    inline def setAllowedPersistenceRegionsVarargs(value: String*): Self = StObject.set(x, "allowedPersistenceRegions", js.Array(value :_*))
   }
 }

@@ -18,25 +18,19 @@ trait SecurityConfigurationEncryptionConfigurationCloudwatchEncryption extends S
 }
 object SecurityConfigurationEncryptionConfigurationCloudwatchEncryption {
   
-  @scala.inline
-  def apply(): SecurityConfigurationEncryptionConfigurationCloudwatchEncryption = {
+  inline def apply(): SecurityConfigurationEncryptionConfigurationCloudwatchEncryption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SecurityConfigurationEncryptionConfigurationCloudwatchEncryption]
   }
   
-  @scala.inline
-  implicit class SecurityConfigurationEncryptionConfigurationCloudwatchEncryptionMutableBuilder[Self <: SecurityConfigurationEncryptionConfigurationCloudwatchEncryption] (val x: Self) extends AnyVal {
+  extension [Self <: SecurityConfigurationEncryptionConfigurationCloudwatchEncryption](x: Self) {
     
-    @scala.inline
-    def setCloudwatchEncryptionMode(value: String): Self = StObject.set(x, "cloudwatchEncryptionMode", value.asInstanceOf[js.Any])
+    inline def setCloudwatchEncryptionMode(value: String): Self = StObject.set(x, "cloudwatchEncryptionMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudwatchEncryptionModeUndefined: Self = StObject.set(x, "cloudwatchEncryptionMode", js.undefined)
+    inline def setCloudwatchEncryptionModeUndefined: Self = StObject.set(x, "cloudwatchEncryptionMode", js.undefined)
     
-    @scala.inline
-    def setKmsKeyArn(value: String): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
+    inline def setKmsKeyArn(value: String): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyArnUndefined: Self = StObject.set(x, "kmsKeyArn", js.undefined)
+    inline def setKmsKeyArnUndefined: Self = StObject.set(x, "kmsKeyArn", js.undefined)
   }
 }

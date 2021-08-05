@@ -16,19 +16,15 @@ trait LabelOffsetSupport extends StObject {
 }
 object LabelOffsetSupport {
   
-  @scala.inline
-  def apply(): LabelOffsetSupport = {
+  inline def apply(): LabelOffsetSupport = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LabelOffsetSupport]
   }
   
-  @scala.inline
-  implicit class LabelOffsetSupportMutableBuilder[Self <: LabelOffsetSupport] (val x: Self) extends AnyVal {
+  extension [Self <: LabelOffsetSupport](x: Self) {
     
-    @scala.inline
-    def setLabelOffsetSupport(value: Boolean): Self = StObject.set(x, "labelOffsetSupport", value.asInstanceOf[js.Any])
+    inline def setLabelOffsetSupport(value: Boolean): Self = StObject.set(x, "labelOffsetSupport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelOffsetSupportUndefined: Self = StObject.set(x, "labelOffsetSupport", js.undefined)
+    inline def setLabelOffsetSupportUndefined: Self = StObject.set(x, "labelOffsetSupport", js.undefined)
   }
 }

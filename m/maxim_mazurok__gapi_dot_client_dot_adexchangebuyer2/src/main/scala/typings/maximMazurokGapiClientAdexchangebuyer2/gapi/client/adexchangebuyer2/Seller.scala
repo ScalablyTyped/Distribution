@@ -14,25 +14,19 @@ trait Seller extends StObject {
 }
 object Seller {
   
-  @scala.inline
-  def apply(): Seller = {
+  inline def apply(): Seller = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Seller]
   }
   
-  @scala.inline
-  implicit class SellerMutableBuilder[Self <: Seller] (val x: Self) extends AnyVal {
+  extension [Self <: Seller](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setSubAccountId(value: String): Self = StObject.set(x, "subAccountId", value.asInstanceOf[js.Any])
+    inline def setSubAccountId(value: String): Self = StObject.set(x, "subAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubAccountIdUndefined: Self = StObject.set(x, "subAccountId", js.undefined)
+    inline def setSubAccountIdUndefined: Self = StObject.set(x, "subAccountId", js.undefined)
   }
 }

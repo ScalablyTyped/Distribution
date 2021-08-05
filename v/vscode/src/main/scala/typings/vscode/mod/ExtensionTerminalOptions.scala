@@ -19,19 +19,15 @@ trait ExtensionTerminalOptions extends StObject {
 }
 object ExtensionTerminalOptions {
   
-  @scala.inline
-  def apply(name: String, pty: Pseudoterminal): ExtensionTerminalOptions = {
+  inline def apply(name: String, pty: Pseudoterminal): ExtensionTerminalOptions = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], pty = pty.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionTerminalOptions]
   }
   
-  @scala.inline
-  implicit class ExtensionTerminalOptionsMutableBuilder[Self <: ExtensionTerminalOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionTerminalOptions](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPty(value: Pseudoterminal): Self = StObject.set(x, "pty", value.asInstanceOf[js.Any])
+    inline def setPty(value: Pseudoterminal): Self = StObject.set(x, "pty", value.asInstanceOf[js.Any])
   }
 }

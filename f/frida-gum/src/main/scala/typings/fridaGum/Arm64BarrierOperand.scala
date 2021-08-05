@@ -16,20 +16,16 @@ trait Arm64BarrierOperand
 }
 object Arm64BarrierOperand {
   
-  @scala.inline
-  def apply(value: Double): Arm64BarrierOperand = {
+  inline def apply(value: Double): Arm64BarrierOperand = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("barrier")
     __obj.asInstanceOf[Arm64BarrierOperand]
   }
   
-  @scala.inline
-  implicit class Arm64BarrierOperandMutableBuilder[Self <: Arm64BarrierOperand] (val x: Self) extends AnyVal {
+  extension [Self <: Arm64BarrierOperand](x: Self) {
     
-    @scala.inline
-    def setType(value: barrier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: barrier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

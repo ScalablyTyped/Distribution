@@ -10,15 +10,11 @@ object authRadius {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def proxyAuthorize(srealm: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("proxy_authorize")(srealm.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def proxyAuthorize(srealm: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("proxy_authorize")(srealm.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def proxyAuthorizeUser(srealm: String, suser: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("proxy_authorize_user")(srealm.asInstanceOf[js.Any], suser.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def proxyAuthorizeUser(srealm: String, suser: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("proxy_authorize_user")(srealm.asInstanceOf[js.Any], suser.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def wwwAuthorize(srealm: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("www_authorize")(srealm.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def wwwAuthorize(srealm: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("www_authorize")(srealm.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def wwwAuthorizeUser(srealm: String, suser: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("www_authorize_user")(srealm.asInstanceOf[js.Any], suser.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def wwwAuthorizeUser(srealm: String, suser: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("www_authorize_user")(srealm.asInstanceOf[js.Any], suser.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

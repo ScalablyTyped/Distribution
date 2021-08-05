@@ -20,8 +20,7 @@ trait KmlAltitudeGeometry
 }
 object KmlAltitudeGeometry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
     equals_ : KmlObject => Boolean,
@@ -44,13 +43,10 @@ object KmlAltitudeGeometry {
     __obj.asInstanceOf[KmlAltitudeGeometry]
   }
   
-  @scala.inline
-  implicit class KmlAltitudeGeometryMutableBuilder[Self <: KmlAltitudeGeometry] (val x: Self) extends AnyVal {
+  extension [Self <: KmlAltitudeGeometry](x: Self) {
     
-    @scala.inline
-    def setGetAltitudeMode(value: () => KmlAltitudeModeEnum): Self = StObject.set(x, "getAltitudeMode", js.Any.fromFunction0(value))
+    inline def setGetAltitudeMode(value: () => KmlAltitudeModeEnum): Self = StObject.set(x, "getAltitudeMode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetAltitudeMode(value: KmlAltitudeModeEnum => Unit): Self = StObject.set(x, "setAltitudeMode", js.Any.fromFunction1(value))
+    inline def setSetAltitudeMode(value: KmlAltitudeModeEnum => Unit): Self = StObject.set(x, "setAltitudeMode", js.Any.fromFunction1(value))
   }
 }

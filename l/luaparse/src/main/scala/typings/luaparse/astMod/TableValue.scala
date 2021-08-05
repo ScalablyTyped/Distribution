@@ -13,17 +13,14 @@ trait TableValue
 }
 object TableValue {
   
-  @scala.inline
-  def apply(value: Expression): TableValue = {
+  inline def apply(value: Expression): TableValue = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TableValue")
     __obj.asInstanceOf[TableValue]
   }
   
-  @scala.inline
-  implicit class TableValueMutableBuilder[Self <: TableValue] (val x: Self) extends AnyVal {
+  extension [Self <: TableValue](x: Self) {
     
-    @scala.inline
-    def setValue(value: Expression): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Expression): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

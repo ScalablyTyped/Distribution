@@ -27,28 +27,21 @@ trait PostBody extends StObject {
 }
 object PostBody {
   
-  @scala.inline
-  def apply(contentType: String, data: js.Array[PostData]): PostBody = {
+  inline def apply(contentType: String, data: js.Array[PostData]): PostBody = {
     val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostBody]
   }
   
-  @scala.inline
-  implicit class PostBodyMutableBuilder[Self <: PostBody] (val x: Self) extends AnyVal {
+  extension [Self <: PostBody](x: Self) {
     
-    @scala.inline
-    def setBoundary(value: String): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
+    inline def setBoundary(value: String): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundaryUndefined: Self = StObject.set(x, "boundary", js.undefined)
+    inline def setBoundaryUndefined: Self = StObject.set(x, "boundary", js.undefined)
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: js.Array[PostData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[PostData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: PostData*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: PostData*): Self = StObject.set(x, "data", js.Array(value :_*))
   }
 }

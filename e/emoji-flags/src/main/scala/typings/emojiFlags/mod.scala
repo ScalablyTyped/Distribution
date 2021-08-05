@@ -1014,8 +1014,7 @@ object mod {
   @js.native
   val codes: js.Array[String] = js.native
   
-  @scala.inline
-  def countryCode(countryCode: String): CountryData = ^.asInstanceOf[js.Dynamic].applyDynamic("countryCode")(countryCode.asInstanceOf[js.Any]).asInstanceOf[CountryData]
+  inline def countryCode(countryCode: String): CountryData = ^.asInstanceOf[js.Dynamic].applyDynamic("countryCode")(countryCode.asInstanceOf[js.Any]).asInstanceOf[CountryData]
   
   @JSImport("emoji-flags", "data")
   @js.native
@@ -1047,29 +1046,22 @@ object mod {
   }
   object CountryData {
     
-    @scala.inline
-    def apply(code: String, emoji: String, name: String, title: String, unicode: String): CountryData = {
+    inline def apply(code: String, emoji: String, name: String, title: String, unicode: String): CountryData = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], emoji = emoji.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], unicode = unicode.asInstanceOf[js.Any])
       __obj.asInstanceOf[CountryData]
     }
     
-    @scala.inline
-    implicit class CountryDataMutableBuilder[Self <: CountryData] (val x: Self) extends AnyVal {
+    extension [Self <: CountryData](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmoji(value: String): Self = StObject.set(x, "emoji", value.asInstanceOf[js.Any])
+      inline def setEmoji(value: String): Self = StObject.set(x, "emoji", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnicode(value: String): Self = StObject.set(x, "unicode", value.asInstanceOf[js.Any])
+      inline def setUnicode(value: String): Self = StObject.set(x, "unicode", value.asInstanceOf[js.Any])
     }
   }
 }

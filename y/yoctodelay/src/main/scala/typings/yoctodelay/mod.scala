@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(ms: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(ms.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def apply(ms: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(ms.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   @JSImport("yoctodelay", JSImport.Namespace)
   @js.native

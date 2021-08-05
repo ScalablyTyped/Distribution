@@ -71,64 +71,45 @@ trait CrashReporterStartOptions extends StObject {
 }
 object CrashReporterStartOptions {
   
-  @scala.inline
-  def apply(submitURL: String): CrashReporterStartOptions = {
+  inline def apply(submitURL: String): CrashReporterStartOptions = {
     val __obj = js.Dynamic.literal(submitURL = submitURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[CrashReporterStartOptions]
   }
   
-  @scala.inline
-  implicit class CrashReporterStartOptionsMutableBuilder[Self <: CrashReporterStartOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CrashReporterStartOptions](x: Self) {
     
-    @scala.inline
-    def setCompanyName(value: String): Self = StObject.set(x, "companyName", value.asInstanceOf[js.Any])
+    inline def setCompanyName(value: String): Self = StObject.set(x, "companyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompanyNameUndefined: Self = StObject.set(x, "companyName", js.undefined)
+    inline def setCompanyNameUndefined: Self = StObject.set(x, "companyName", js.undefined)
     
-    @scala.inline
-    def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
+    inline def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
+    inline def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
     
-    @scala.inline
-    def setExtra(value: Record[String, String]): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+    inline def setExtra(value: Record[String, String]): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
+    inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
     
-    @scala.inline
-    def setGlobalExtra(value: Record[String, String]): Self = StObject.set(x, "globalExtra", value.asInstanceOf[js.Any])
+    inline def setGlobalExtra(value: Record[String, String]): Self = StObject.set(x, "globalExtra", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalExtraUndefined: Self = StObject.set(x, "globalExtra", js.undefined)
+    inline def setGlobalExtraUndefined: Self = StObject.set(x, "globalExtra", js.undefined)
     
-    @scala.inline
-    def setIgnoreSystemCrashHandler(value: Boolean): Self = StObject.set(x, "ignoreSystemCrashHandler", value.asInstanceOf[js.Any])
+    inline def setIgnoreSystemCrashHandler(value: Boolean): Self = StObject.set(x, "ignoreSystemCrashHandler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreSystemCrashHandlerUndefined: Self = StObject.set(x, "ignoreSystemCrashHandler", js.undefined)
+    inline def setIgnoreSystemCrashHandlerUndefined: Self = StObject.set(x, "ignoreSystemCrashHandler", js.undefined)
     
-    @scala.inline
-    def setProductName(value: String): Self = StObject.set(x, "productName", value.asInstanceOf[js.Any])
+    inline def setProductName(value: String): Self = StObject.set(x, "productName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductNameUndefined: Self = StObject.set(x, "productName", js.undefined)
+    inline def setProductNameUndefined: Self = StObject.set(x, "productName", js.undefined)
     
-    @scala.inline
-    def setRateLimit(value: Boolean): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
+    inline def setRateLimit(value: Boolean): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRateLimitUndefined: Self = StObject.set(x, "rateLimit", js.undefined)
+    inline def setRateLimitUndefined: Self = StObject.set(x, "rateLimit", js.undefined)
     
-    @scala.inline
-    def setSubmitURL(value: String): Self = StObject.set(x, "submitURL", value.asInstanceOf[js.Any])
+    inline def setSubmitURL(value: String): Self = StObject.set(x, "submitURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadToServer(value: Boolean): Self = StObject.set(x, "uploadToServer", value.asInstanceOf[js.Any])
+    inline def setUploadToServer(value: Boolean): Self = StObject.set(x, "uploadToServer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadToServerUndefined: Self = StObject.set(x, "uploadToServer", js.undefined)
+    inline def setUploadToServerUndefined: Self = StObject.set(x, "uploadToServer", js.undefined)
   }
 }

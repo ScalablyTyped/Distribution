@@ -33,8 +33,7 @@ trait SystemMusicProperties extends StObject {
 }
 object SystemMusicProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     albumArtist: String,
     albumTitle: String,
     artist: String,
@@ -48,31 +47,22 @@ object SystemMusicProperties {
     __obj.asInstanceOf[SystemMusicProperties]
   }
   
-  @scala.inline
-  implicit class SystemMusicPropertiesMutableBuilder[Self <: SystemMusicProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SystemMusicProperties](x: Self) {
     
-    @scala.inline
-    def setAlbumArtist(value: String): Self = StObject.set(x, "albumArtist", value.asInstanceOf[js.Any])
+    inline def setAlbumArtist(value: String): Self = StObject.set(x, "albumArtist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlbumTitle(value: String): Self = StObject.set(x, "albumTitle", value.asInstanceOf[js.Any])
+    inline def setAlbumTitle(value: String): Self = StObject.set(x, "albumTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtist(value: String): Self = StObject.set(x, "artist", value.asInstanceOf[js.Any])
+    inline def setArtist(value: String): Self = StObject.set(x, "artist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComposer(value: String): Self = StObject.set(x, "composer", value.asInstanceOf[js.Any])
+    inline def setComposer(value: String): Self = StObject.set(x, "composer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConductor(value: String): Self = StObject.set(x, "conductor", value.asInstanceOf[js.Any])
+    inline def setConductor(value: String): Self = StObject.set(x, "conductor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayArtist(value: String): Self = StObject.set(x, "displayArtist", value.asInstanceOf[js.Any])
+    inline def setDisplayArtist(value: String): Self = StObject.set(x, "displayArtist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenre(value: String): Self = StObject.set(x, "genre", value.asInstanceOf[js.Any])
+    inline def setGenre(value: String): Self = StObject.set(x, "genre", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackNumber(value: String): Self = StObject.set(x, "trackNumber", value.asInstanceOf[js.Any])
+    inline def setTrackNumber(value: String): Self = StObject.set(x, "trackNumber", value.asInstanceOf[js.Any])
   }
 }

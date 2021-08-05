@@ -13,8 +13,7 @@ trait AnyNullableObjectSchema
      with _AnySchema
 object AnyNullableObjectSchema {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     properties: Record[String, AnySchema],
     required: js.Array[String],
     `type`: js.Array[`object` | `null`]

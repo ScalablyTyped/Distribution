@@ -26,8 +26,7 @@ trait UniqueValuesResultUniqueValueInfos
 }
 object UniqueValuesResultUniqueValueInfos {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     count: Double,
     hasOwnProperty: PropertyKey => Boolean,
@@ -38,13 +37,10 @@ object UniqueValuesResultUniqueValueInfos {
     __obj.asInstanceOf[UniqueValuesResultUniqueValueInfos]
   }
   
-  @scala.inline
-  implicit class UniqueValuesResultUniqueValueInfosMutableBuilder[Self <: UniqueValuesResultUniqueValueInfos] (val x: Self) extends AnyVal {
+  extension [Self <: UniqueValuesResultUniqueValueInfos](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

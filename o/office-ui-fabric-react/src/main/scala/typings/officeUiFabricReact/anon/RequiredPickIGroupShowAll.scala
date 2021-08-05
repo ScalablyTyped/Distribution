@@ -12,16 +12,13 @@ trait RequiredPickIGroupShowAll extends StObject {
 }
 object RequiredPickIGroupShowAll {
   
-  @scala.inline
-  def apply(theme: ITheme): RequiredPickIGroupShowAll = {
+  inline def apply(theme: ITheme): RequiredPickIGroupShowAll = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequiredPickIGroupShowAll]
   }
   
-  @scala.inline
-  implicit class RequiredPickIGroupShowAllMutableBuilder[Self <: RequiredPickIGroupShowAll] (val x: Self) extends AnyVal {
+  extension [Self <: RequiredPickIGroupShowAll](x: Self) {
     
-    @scala.inline
-    def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait IMouseEventArgs extends StObject {
 }
 object IMouseEventArgs {
   
-  @scala.inline
-  def apply(mouseDelta: MouseDelta): IMouseEventArgs = {
+  inline def apply(mouseDelta: MouseDelta): IMouseEventArgs = {
     val __obj = js.Dynamic.literal(mouseDelta = mouseDelta.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMouseEventArgs]
   }
   
-  @scala.inline
-  implicit class IMouseEventArgsMutableBuilder[Self <: IMouseEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IMouseEventArgs](x: Self) {
     
-    @scala.inline
-    def setMouseDelta(value: MouseDelta): Self = StObject.set(x, "mouseDelta", value.asInstanceOf[js.Any])
+    inline def setMouseDelta(value: MouseDelta): Self = StObject.set(x, "mouseDelta", value.asInstanceOf[js.Any])
   }
 }

@@ -18,19 +18,15 @@ trait GetHostedZoneLimitRequest extends StObject {
 }
 object GetHostedZoneLimitRequest {
   
-  @scala.inline
-  def apply(HostedZoneId: ResourceId, Type: HostedZoneLimitType): GetHostedZoneLimitRequest = {
+  inline def apply(HostedZoneId: ResourceId, Type: HostedZoneLimitType): GetHostedZoneLimitRequest = {
     val __obj = js.Dynamic.literal(HostedZoneId = HostedZoneId.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetHostedZoneLimitRequest]
   }
   
-  @scala.inline
-  implicit class GetHostedZoneLimitRequestMutableBuilder[Self <: GetHostedZoneLimitRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetHostedZoneLimitRequest](x: Self) {
     
-    @scala.inline
-    def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
+    inline def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: HostedZoneLimitType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: HostedZoneLimitType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

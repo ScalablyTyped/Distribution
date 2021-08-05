@@ -30,8 +30,7 @@ trait XHierarchiesSupplier
 }
 object XHierarchiesSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Hierarchies: XNameAccess,
     acquire: () => Unit,
     getHierarchies: () => XNameAccess,
@@ -42,13 +41,10 @@ object XHierarchiesSupplier {
     __obj.asInstanceOf[XHierarchiesSupplier]
   }
   
-  @scala.inline
-  implicit class XHierarchiesSupplierMutableBuilder[Self <: XHierarchiesSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XHierarchiesSupplier](x: Self) {
     
-    @scala.inline
-    def setGetHierarchies(value: () => XNameAccess): Self = StObject.set(x, "getHierarchies", js.Any.fromFunction0(value))
+    inline def setGetHierarchies(value: () => XNameAccess): Self = StObject.set(x, "getHierarchies", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHierarchies(value: XNameAccess): Self = StObject.set(x, "Hierarchies", value.asInstanceOf[js.Any])
+    inline def setHierarchies(value: XNameAccess): Self = StObject.set(x, "Hierarchies", value.asInstanceOf[js.Any])
   }
 }

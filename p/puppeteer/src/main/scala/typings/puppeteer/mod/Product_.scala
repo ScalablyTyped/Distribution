@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Product_ extends StObject
 object Product_ {
   
-  @scala.inline
-  def chrome: typings.puppeteer.puppeteerStrings.chrome = "chrome".asInstanceOf[typings.puppeteer.puppeteerStrings.chrome]
+  inline def chrome: typings.puppeteer.puppeteerStrings.chrome = "chrome".asInstanceOf[typings.puppeteer.puppeteerStrings.chrome]
   
-  @scala.inline
-  def firefox: typings.puppeteer.puppeteerStrings.firefox = "firefox".asInstanceOf[typings.puppeteer.puppeteerStrings.firefox]
+  inline def firefox: typings.puppeteer.puppeteerStrings.firefox = "firefox".asInstanceOf[typings.puppeteer.puppeteerStrings.firefox]
 }

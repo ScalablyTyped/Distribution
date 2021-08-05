@@ -18,19 +18,15 @@ trait CognitoConfig extends StObject {
 }
 object CognitoConfig {
   
-  @scala.inline
-  def apply(ClientId: ClientId, UserPool: CognitoUserPool): CognitoConfig = {
+  inline def apply(ClientId: ClientId, UserPool: CognitoUserPool): CognitoConfig = {
     val __obj = js.Dynamic.literal(ClientId = ClientId.asInstanceOf[js.Any], UserPool = UserPool.asInstanceOf[js.Any])
     __obj.asInstanceOf[CognitoConfig]
   }
   
-  @scala.inline
-  implicit class CognitoConfigMutableBuilder[Self <: CognitoConfig] (val x: Self) extends AnyVal {
+  extension [Self <: CognitoConfig](x: Self) {
     
-    @scala.inline
-    def setClientId(value: ClientId): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: ClientId): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserPool(value: CognitoUserPool): Self = StObject.set(x, "UserPool", value.asInstanceOf[js.Any])
+    inline def setUserPool(value: CognitoUserPool): Self = StObject.set(x, "UserPool", value.asInstanceOf[js.Any])
   }
 }

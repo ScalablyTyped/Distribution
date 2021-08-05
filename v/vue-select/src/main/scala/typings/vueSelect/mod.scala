@@ -38,8 +38,7 @@ object mod extends Shortcut {
   }
   object DropdownClasses {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       disabled: Boolean,
       loading: Boolean,
       open: Boolean,
@@ -53,32 +52,23 @@ object mod extends Shortcut {
       __obj.asInstanceOf[DropdownClasses]
     }
     
-    @scala.inline
-    implicit class DropdownClassesMutableBuilder[Self <: DropdownClasses] (val x: Self) extends AnyVal {
+    extension [Self <: DropdownClasses](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
+      inline def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchable(value: Boolean): Self = StObject.set(x, "searchable", value.asInstanceOf[js.Any])
+      inline def setSearchable(value: Boolean): Self = StObject.set(x, "searchable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearching(value: Boolean): Self = StObject.set(x, "searching", value.asInstanceOf[js.Any])
+      inline def setSearching(value: Boolean): Self = StObject.set(x, "searching", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSingle(value: Boolean): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
+      inline def setSingle(value: Boolean): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsearchable(value: Boolean): Self = StObject.set(x, "unsearchable", value.asInstanceOf[js.Any])
+      inline def setUnsearchable(value: Boolean): Self = StObject.set(x, "unsearchable", value.asInstanceOf[js.Any])
     }
   }
   
@@ -106,8 +96,7 @@ object mod extends Shortcut {
   }
   object VueSelectComputed {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clearSearchOnBlur: () => Boolean,
       dropdownClasses: () => DropdownClasses,
       dropdownOpen: () => Boolean,
@@ -122,35 +111,25 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VueSelectComputed]
     }
     
-    @scala.inline
-    implicit class VueSelectComputedMutableBuilder[Self <: VueSelectComputed] (val x: Self) extends AnyVal {
+    extension [Self <: VueSelectComputed](x: Self) {
       
-      @scala.inline
-      def setClearSearchOnBlur(value: () => Boolean): Self = StObject.set(x, "clearSearchOnBlur", js.Any.fromFunction0(value))
+      inline def setClearSearchOnBlur(value: () => Boolean): Self = StObject.set(x, "clearSearchOnBlur", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDropdownClasses(value: () => DropdownClasses): Self = StObject.set(x, "dropdownClasses", js.Any.fromFunction0(value))
+      inline def setDropdownClasses(value: () => DropdownClasses): Self = StObject.set(x, "dropdownClasses", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDropdownOpen(value: () => Boolean): Self = StObject.set(x, "dropdownOpen", js.Any.fromFunction0(value))
+      inline def setDropdownOpen(value: () => Boolean): Self = StObject.set(x, "dropdownOpen", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFilteredOptions(value: () => js.Array[js.Any]): Self = StObject.set(x, "filteredOptions", js.Any.fromFunction0(value))
+      inline def setFilteredOptions(value: () => js.Array[js.Any]): Self = StObject.set(x, "filteredOptions", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsValueEmpty(value: () => Boolean): Self = StObject.set(x, "isValueEmpty", js.Any.fromFunction0(value))
+      inline def setIsValueEmpty(value: () => Boolean): Self = StObject.set(x, "isValueEmpty", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSearchPlaceholder(value: () => Boolean): Self = StObject.set(x, "searchPlaceholder", js.Any.fromFunction0(value))
+      inline def setSearchPlaceholder(value: () => Boolean): Self = StObject.set(x, "searchPlaceholder", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSearching(value: () => Boolean): Self = StObject.set(x, "searching", js.Any.fromFunction0(value))
+      inline def setSearching(value: () => Boolean): Self = StObject.set(x, "searching", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShowClearButton(value: () => Boolean): Self = StObject.set(x, "showClearButton", js.Any.fromFunction0(value))
+      inline def setShowClearButton(value: () => Boolean): Self = StObject.set(x, "showClearButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setValueAsArray(value: () => js.Array[js.Any]): Self = StObject.set(x, "valueAsArray", js.Any.fromFunction0(value))
+      inline def setValueAsArray(value: () => js.Array[js.Any]): Self = StObject.set(x, "valueAsArray", js.Any.fromFunction0(value))
     }
   }
   
@@ -182,29 +161,22 @@ object mod extends Shortcut {
   }
   object VueSelectData {
     
-    @scala.inline
-    def apply(mutableOptions: js.Array[js.Any], mutableValue: js.Any, open: Boolean, search: String): VueSelectData = {
+    inline def apply(mutableOptions: js.Array[js.Any], mutableValue: js.Any, open: Boolean, search: String): VueSelectData = {
       val __obj = js.Dynamic.literal(mutableOptions = mutableOptions.asInstanceOf[js.Any], mutableValue = mutableValue.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any])
       __obj.asInstanceOf[VueSelectData]
     }
     
-    @scala.inline
-    implicit class VueSelectDataMutableBuilder[Self <: VueSelectData] (val x: Self) extends AnyVal {
+    extension [Self <: VueSelectData](x: Self) {
       
-      @scala.inline
-      def setMutableOptions(value: js.Array[js.Any]): Self = StObject.set(x, "mutableOptions", value.asInstanceOf[js.Any])
+      inline def setMutableOptions(value: js.Array[js.Any]): Self = StObject.set(x, "mutableOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMutableOptionsVarargs(value: js.Any*): Self = StObject.set(x, "mutableOptions", js.Array(value :_*))
+      inline def setMutableOptionsVarargs(value: js.Any*): Self = StObject.set(x, "mutableOptions", js.Array(value :_*))
       
-      @scala.inline
-      def setMutableValue(value: js.Any): Self = StObject.set(x, "mutableValue", value.asInstanceOf[js.Any])
+      inline def setMutableValue(value: js.Any): Self = StObject.set(x, "mutableValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     }
   }
   
@@ -244,8 +216,7 @@ object mod extends Shortcut {
   }
   object VueSelectMethods {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clearSelection: () => Unit,
       deselect: /* option */ js.Any => Unit,
       isOptionSelected: js.Any => Boolean,
@@ -263,44 +234,31 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VueSelectMethods]
     }
     
-    @scala.inline
-    implicit class VueSelectMethodsMutableBuilder[Self <: VueSelectMethods] (val x: Self) extends AnyVal {
+    extension [Self <: VueSelectMethods](x: Self) {
       
-      @scala.inline
-      def setClearSelection(value: () => Unit): Self = StObject.set(x, "clearSelection", js.Any.fromFunction0(value))
+      inline def setClearSelection(value: () => Unit): Self = StObject.set(x, "clearSelection", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDeselect(value: /* option */ js.Any => Unit): Self = StObject.set(x, "deselect", js.Any.fromFunction1(value))
+      inline def setDeselect(value: /* option */ js.Any => Unit): Self = StObject.set(x, "deselect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsOptionSelected(value: js.Any => Boolean): Self = StObject.set(x, "isOptionSelected", js.Any.fromFunction1(value))
+      inline def setIsOptionSelected(value: js.Any => Boolean): Self = StObject.set(x, "isOptionSelected", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMaybeDeleteValue(value: () => Unit): Self = StObject.set(x, "maybeDeleteValue", js.Any.fromFunction0(value))
+      inline def setMaybeDeleteValue(value: () => Unit): Self = StObject.set(x, "maybeDeleteValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMaybePushTag(value: /* option */ js.Any => Unit): Self = StObject.set(x, "maybePushTag", js.Any.fromFunction1(value))
+      inline def setMaybePushTag(value: /* option */ js.Any => Unit): Self = StObject.set(x, "maybePushTag", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAfterSelect(value: /* option */ js.Any => Unit): Self = StObject.set(x, "onAfterSelect", js.Any.fromFunction1(value))
+      inline def setOnAfterSelect(value: /* option */ js.Any => Unit): Self = StObject.set(x, "onAfterSelect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEscape(value: () => Unit): Self = StObject.set(x, "onEscape", js.Any.fromFunction0(value))
+      inline def setOnEscape(value: () => Unit): Self = StObject.set(x, "onEscape", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnSearchBlur(value: () => Unit): Self = StObject.set(x, "onSearchBlur", js.Any.fromFunction0(value))
+      inline def setOnSearchBlur(value: () => Unit): Self = StObject.set(x, "onSearchBlur", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnSearchFocus(value: () => Unit): Self = StObject.set(x, "onSearchFocus", js.Any.fromFunction0(value))
+      inline def setOnSearchFocus(value: () => Unit): Self = StObject.set(x, "onSearchFocus", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOptionExists(value: js.Any => Boolean): Self = StObject.set(x, "optionExists", js.Any.fromFunction1(value))
+      inline def setOptionExists(value: js.Any => Boolean): Self = StObject.set(x, "optionExists", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSelect(value: /* option */ js.Any => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+      inline def setSelect(value: /* option */ js.Any => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToggleDropdown(value: Event => Unit): Self = StObject.set(x, "toggleDropdown", js.Any.fromFunction1(value))
+      inline def setToggleDropdown(value: Event => Unit): Self = StObject.set(x, "toggleDropdown", js.Any.fromFunction1(value))
     }
   }
   
@@ -368,8 +326,7 @@ object mod extends Shortcut {
   }
   object VueSelectProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       autocomplete: String,
       clearSearchOnSelect: Boolean,
       clearable: Boolean,
@@ -402,110 +359,75 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VueSelectProps]
     }
     
-    @scala.inline
-    implicit class VueSelectPropsMutableBuilder[Self <: VueSelectProps] (val x: Self) extends AnyVal {
+    extension [Self <: VueSelectProps](x: Self) {
       
-      @scala.inline
-      def setAutocomplete(value: String): Self = StObject.set(x, "autocomplete", value.asInstanceOf[js.Any])
+      inline def setAutocomplete(value: String): Self = StObject.set(x, "autocomplete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearSearchOnSelect(value: Boolean): Self = StObject.set(x, "clearSearchOnSelect", value.asInstanceOf[js.Any])
+      inline def setClearSearchOnSelect(value: Boolean): Self = StObject.set(x, "clearSearchOnSelect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearable(value: Boolean): Self = StObject.set(x, "clearable", value.asInstanceOf[js.Any])
+      inline def setClearable(value: Boolean): Self = StObject.set(x, "clearable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseOnSelect(value: Boolean): Self = StObject.set(x, "closeOnSelect", value.asInstanceOf[js.Any])
+      inline def setCloseOnSelect(value: Boolean): Self = StObject.set(x, "closeOnSelect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateOption(value: js.Any => js.Any): Self = StObject.set(x, "createOption", js.Any.fromFunction1(value))
+      inline def setCreateOption(value: js.Any => js.Any): Self = StObject.set(x, "createOption", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter(value: (js.Array[js.Any], String) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
+      inline def setFilter(value: (js.Array[js.Any], String) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFilterBy(value: (js.Any, String, String) => Boolean): Self = StObject.set(x, "filterBy", js.Any.fromFunction3(value))
+      inline def setFilterBy(value: (js.Any, String, String) => Boolean): Self = StObject.set(x, "filterBy", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setFilterable(value: Boolean): Self = StObject.set(x, "filterable", value.asInstanceOf[js.Any])
+      inline def setFilterable(value: Boolean): Self = StObject.set(x, "filterable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetOptionLabel(value: js.Any => String): Self = StObject.set(x, "getOptionLabel", js.Any.fromFunction1(value))
+      inline def setGetOptionLabel(value: js.Any => String): Self = StObject.set(x, "getOptionLabel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexNull: Self = StObject.set(x, "index", null)
+      inline def setIndexNull: Self = StObject.set(x, "index", null)
       
-      @scala.inline
-      def setInputId(value: String): Self = StObject.set(x, "inputId", value.asInstanceOf[js.Any])
+      inline def setInputId(value: String): Self = StObject.set(x, "inputId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputIdNull: Self = StObject.set(x, "inputId", null)
+      inline def setInputIdNull: Self = StObject.set(x, "inputId", null)
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxHeight(value: String): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+      inline def setMaxHeight(value: String): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+      inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoDrop(value: Boolean): Self = StObject.set(x, "noDrop", value.asInstanceOf[js.Any])
+      inline def setNoDrop(value: Boolean): Self = StObject.set(x, "noDrop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnChange(value: js.Any => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: js.Any => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnInput(value: js.Any => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
+      inline def setOnInput(value: js.Any => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTab(value: () => Unit): Self = StObject.set(x, "onTab", js.Any.fromFunction0(value))
+      inline def setOnTab(value: () => Unit): Self = StObject.set(x, "onTab", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOptions(value: js.Array[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Array[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsVarargs(value: js.Any*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: js.Any*): Self = StObject.set(x, "options", js.Array(value :_*))
       
-      @scala.inline
-      def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPushTags(value: Boolean): Self = StObject.set(x, "pushTags", value.asInstanceOf[js.Any])
+      inline def setPushTags(value: Boolean): Self = StObject.set(x, "pushTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResetOnOptionsChange(value: Boolean): Self = StObject.set(x, "resetOnOptionsChange", value.asInstanceOf[js.Any])
+      inline def setResetOnOptionsChange(value: Boolean): Self = StObject.set(x, "resetOnOptionsChange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchable(value: Boolean): Self = StObject.set(x, "searchable", value.asInstanceOf[js.Any])
+      inline def setSearchable(value: Boolean): Self = StObject.set(x, "searchable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectOnTab(value: Boolean): Self = StObject.set(x, "selectOnTab", value.asInstanceOf[js.Any])
+      inline def setSelectOnTab(value: Boolean): Self = StObject.set(x, "selectOnTab", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabindex(value: Double): Self = StObject.set(x, "tabindex", value.asInstanceOf[js.Any])
+      inline def setTabindex(value: Double): Self = StObject.set(x, "tabindex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabindexNull: Self = StObject.set(x, "tabindex", null)
+      inline def setTabindexNull: Self = StObject.set(x, "tabindex", null)
       
-      @scala.inline
-      def setTaggable(value: Boolean): Self = StObject.set(x, "taggable", value.asInstanceOf[js.Any])
+      inline def setTaggable(value: Boolean): Self = StObject.set(x, "taggable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+      inline def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -525,8 +447,7 @@ object mod extends Shortcut {
   }
   object VueSelectWatch {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       created: () => Unit,
       multiple: Boolean => Unit,
       mutableOptions: () => Unit,
@@ -538,26 +459,19 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VueSelectWatch]
     }
     
-    @scala.inline
-    implicit class VueSelectWatchMutableBuilder[Self <: VueSelectWatch] (val x: Self) extends AnyVal {
+    extension [Self <: VueSelectWatch](x: Self) {
       
-      @scala.inline
-      def setCreated(value: () => Unit): Self = StObject.set(x, "created", js.Any.fromFunction0(value))
+      inline def setCreated(value: () => Unit): Self = StObject.set(x, "created", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMultiple(value: Boolean => Unit): Self = StObject.set(x, "multiple", js.Any.fromFunction1(value))
+      inline def setMultiple(value: Boolean => Unit): Self = StObject.set(x, "multiple", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMutableOptions(value: () => Unit): Self = StObject.set(x, "mutableOptions", js.Any.fromFunction0(value))
+      inline def setMutableOptions(value: () => Unit): Self = StObject.set(x, "mutableOptions", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMutableValue(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "mutableValue", js.Any.fromFunction2(value))
+      inline def setMutableValue(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "mutableValue", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOptions(value: js.Any => Unit): Self = StObject.set(x, "options", js.Any.fromFunction1(value))
+      inline def setOptions(value: js.Any => Unit): Self = StObject.set(x, "options", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValue(value: js.Any => Unit): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
+      inline def setValue(value: js.Any => Unit): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
     }
   }
   

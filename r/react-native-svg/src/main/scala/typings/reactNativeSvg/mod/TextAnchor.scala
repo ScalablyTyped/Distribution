@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TextAnchor extends StObject
 object TextAnchor {
   
-  @scala.inline
-  def end: typings.reactNativeSvg.reactNativeSvgStrings.end = "end".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.end]
+  inline def end: typings.reactNativeSvg.reactNativeSvgStrings.end = "end".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.end]
   
-  @scala.inline
-  def middle: typings.reactNativeSvg.reactNativeSvgStrings.middle = "middle".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.middle]
+  inline def middle: typings.reactNativeSvg.reactNativeSvgStrings.middle = "middle".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.middle]
   
-  @scala.inline
-  def start: typings.reactNativeSvg.reactNativeSvgStrings.start = "start".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.start]
+  inline def start: typings.reactNativeSvg.reactNativeSvgStrings.start = "start".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.start]
 }

@@ -13,7 +13,7 @@ trait OldHTMLDocument extends StObject {
   def FireEvent(bstrEventName: String): Boolean = js.native
   def FireEvent(bstrEventName: String, pvarEventObject: js.Any): Boolean = js.native
   
-  @JSName("MSHTML.OldHTMLDocument_typekey")
+  /* private */ @JSName("MSHTML.OldHTMLDocument_typekey")
   var MSHTMLDotOldHTMLDocument_typekey: OldHTMLDocument = js.native
   
   val Script: js.Any = js.native

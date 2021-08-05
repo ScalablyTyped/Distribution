@@ -13,19 +13,15 @@ trait Source extends StObject {
 }
 object Source {
   
-  @scala.inline
-  def apply(): Source = {
+  inline def apply(): Source = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Source]
   }
   
-  @scala.inline
-  implicit class SourceMutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
+  extension [Self <: Source](x: Self) {
     
-    @scala.inline
-    def setS3(value: S3Source): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
+    inline def setS3(value: S3Source): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3Undefined: Self = StObject.set(x, "s3", js.undefined)
+    inline def setS3Undefined: Self = StObject.set(x, "s3", js.undefined)
   }
 }

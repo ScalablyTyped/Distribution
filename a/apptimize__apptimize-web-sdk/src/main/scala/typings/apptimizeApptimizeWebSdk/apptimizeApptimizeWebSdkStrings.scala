@@ -8,31 +8,25 @@ object apptimizeApptimizeWebSdkStrings {
   
   @js.native
   sealed trait LOG_LEVEL_DEBUG extends StObject
-  @scala.inline
-  def LOG_LEVEL_DEBUG: LOG_LEVEL_DEBUG = "LOG_LEVEL_DEBUG".asInstanceOf[LOG_LEVEL_DEBUG]
+  inline def LOG_LEVEL_DEBUG: LOG_LEVEL_DEBUG = "LOG_LEVEL_DEBUG".asInstanceOf[LOG_LEVEL_DEBUG]
   
   @js.native
   sealed trait LOG_LEVEL_ERROR extends StObject
-  @scala.inline
-  def LOG_LEVEL_ERROR: LOG_LEVEL_ERROR = "LOG_LEVEL_ERROR".asInstanceOf[LOG_LEVEL_ERROR]
+  inline def LOG_LEVEL_ERROR: LOG_LEVEL_ERROR = "LOG_LEVEL_ERROR".asInstanceOf[LOG_LEVEL_ERROR]
   
   @js.native
   sealed trait LOG_LEVEL_INFO extends StObject
-  @scala.inline
-  def LOG_LEVEL_INFO: LOG_LEVEL_INFO = "LOG_LEVEL_INFO".asInstanceOf[LOG_LEVEL_INFO]
+  inline def LOG_LEVEL_INFO: LOG_LEVEL_INFO = "LOG_LEVEL_INFO".asInstanceOf[LOG_LEVEL_INFO]
   
   @js.native
   sealed trait LOG_LEVEL_NONE extends StObject
-  @scala.inline
-  def LOG_LEVEL_NONE: LOG_LEVEL_NONE = "LOG_LEVEL_NONE".asInstanceOf[LOG_LEVEL_NONE]
+  inline def LOG_LEVEL_NONE: LOG_LEVEL_NONE = "LOG_LEVEL_NONE".asInstanceOf[LOG_LEVEL_NONE]
   
   @js.native
   sealed trait LOG_LEVEL_VERBOSE extends StObject
-  @scala.inline
-  def LOG_LEVEL_VERBOSE: LOG_LEVEL_VERBOSE = "LOG_LEVEL_VERBOSE".asInstanceOf[LOG_LEVEL_VERBOSE]
+  inline def LOG_LEVEL_VERBOSE: LOG_LEVEL_VERBOSE = "LOG_LEVEL_VERBOSE".asInstanceOf[LOG_LEVEL_VERBOSE]
   
   @js.native
   sealed trait LOG_LEVEL_WARN extends StObject
-  @scala.inline
-  def LOG_LEVEL_WARN: LOG_LEVEL_WARN = "LOG_LEVEL_WARN".asInstanceOf[LOG_LEVEL_WARN]
+  inline def LOG_LEVEL_WARN: LOG_LEVEL_WARN = "LOG_LEVEL_WARN".asInstanceOf[LOG_LEVEL_WARN]
 }

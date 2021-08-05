@@ -11,16 +11,13 @@ trait PickImplinterruptRequests extends StObject {
 }
 object PickImplinterruptRequests {
   
-  @scala.inline
-  def apply(interruptRequests: Boolean): PickImplinterruptRequests = {
+  inline def apply(interruptRequests: Boolean): PickImplinterruptRequests = {
     val __obj = js.Dynamic.literal(interruptRequests = interruptRequests.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplinterruptRequests]
   }
   
-  @scala.inline
-  implicit class PickImplinterruptRequestsMutableBuilder[Self <: PickImplinterruptRequests] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplinterruptRequests](x: Self) {
     
-    @scala.inline
-    def setInterruptRequests(value: Boolean): Self = StObject.set(x, "interruptRequests", value.asInstanceOf[js.Any])
+    inline def setInterruptRequests(value: Boolean): Self = StObject.set(x, "interruptRequests", value.asInstanceOf[js.Any])
   }
 }

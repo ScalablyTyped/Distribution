@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[C, T, R](context: C, worker: worker[C, T, R], concurrency: Double): queue[T, R] = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], worker.asInstanceOf[js.Any], concurrency.asInstanceOf[js.Any])).asInstanceOf[queue[T, R]]
-  @scala.inline
-  def apply[C, T, R](worker: worker[C, T, R], concurrency: Double): queue[T, R] = (^.asInstanceOf[js.Dynamic].apply(worker.asInstanceOf[js.Any], concurrency.asInstanceOf[js.Any])).asInstanceOf[queue[T, R]]
+  inline def apply[C, T, R](context: C, worker: worker[C, T, R], concurrency: Double): queue[T, R] = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], worker.asInstanceOf[js.Any], concurrency.asInstanceOf[js.Any])).asInstanceOf[queue[T, R]]
+  inline def apply[C, T, R](worker: worker[C, T, R], concurrency: Double): queue[T, R] = (^.asInstanceOf[js.Dynamic].apply(worker.asInstanceOf[js.Any], concurrency.asInstanceOf[js.Any])).asInstanceOf[queue[T, R]]
   
   @JSImport("fastq", JSImport.Namespace)
   @js.native
@@ -52,8 +50,7 @@ object mod {
   }
   object queue {
     
-    @scala.inline
-    def apply[T, R](
+    inline def apply[T, R](
       concurrency: Double,
       drain: () => js.Any,
       empty: () => Unit,
@@ -73,50 +70,35 @@ object mod {
       __obj.asInstanceOf[queue[T, R]]
     }
     
-    @scala.inline
-    implicit class queueMutableBuilder[Self <: queue[?, ?], T, R] (val x: Self & (queue[T, R])) extends AnyVal {
+    extension [Self <: queue[?, ?], T, R](x: Self & (queue[T, R])) {
       
-      @scala.inline
-      def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
+      inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrain(value: () => js.Any): Self = StObject.set(x, "drain", js.Any.fromFunction0(value))
+      inline def setDrain(value: () => js.Any): Self = StObject.set(x, "drain", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEmpty(value: () => Unit): Self = StObject.set(x, "empty", js.Any.fromFunction0(value))
+      inline def setEmpty(value: () => Unit): Self = StObject.set(x, "empty", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setError(value: errorHandler[js.Any] => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: errorHandler[js.Any] => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetQueue(value: () => js.Array[T]): Self = StObject.set(x, "getQueue", js.Any.fromFunction0(value))
+      inline def setGetQueue(value: () => js.Array[T]): Self = StObject.set(x, "getQueue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIdle(value: () => Boolean): Self = StObject.set(x, "idle", js.Any.fromFunction0(value))
+      inline def setIdle(value: () => Boolean): Self = StObject.set(x, "idle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setKill(value: () => js.Any): Self = StObject.set(x, "kill", js.Any.fromFunction0(value))
+      inline def setKill(value: () => js.Any): Self = StObject.set(x, "kill", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setKillAndDrain(value: () => js.Any): Self = StObject.set(x, "killAndDrain", js.Any.fromFunction0(value))
+      inline def setKillAndDrain(value: () => js.Any): Self = StObject.set(x, "killAndDrain", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLength(value: () => Double): Self = StObject.set(x, "length", js.Any.fromFunction0(value))
+      inline def setLength(value: () => Double): Self = StObject.set(x, "length", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPause(value: () => js.Any): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
+      inline def setPause(value: () => js.Any): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPush(value: (T, done[R]) => Unit): Self = StObject.set(x, "push", js.Any.fromFunction2(value))
+      inline def setPush(value: (T, done[R]) => Unit): Self = StObject.set(x, "push", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setResume(value: () => js.Any): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
+      inline def setResume(value: () => js.Any): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSaturated(value: () => Unit): Self = StObject.set(x, "saturated", js.Any.fromFunction0(value))
+      inline def setSaturated(value: () => Unit): Self = StObject.set(x, "saturated", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUnshift(value: (T, done[R]) => Unit): Self = StObject.set(x, "unshift", js.Any.fromFunction2(value))
+      inline def setUnshift(value: (T, done[R]) => Unit): Self = StObject.set(x, "unshift", js.Any.fromFunction2(value))
     }
   }
   

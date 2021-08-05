@@ -15,19 +15,15 @@ trait FileReference extends StObject {
 }
 object FileReference {
   
-  @scala.inline
-  def apply(): FileReference = {
+  inline def apply(): FileReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileReference]
   }
   
-  @scala.inline
-  implicit class FileReferenceMutableBuilder[Self <: FileReference] (val x: Self) extends AnyVal {
+  extension [Self <: FileReference](x: Self) {
     
-    @scala.inline
-    def setFileUri(value: String): Self = StObject.set(x, "fileUri", value.asInstanceOf[js.Any])
+    inline def setFileUri(value: String): Self = StObject.set(x, "fileUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileUriUndefined: Self = StObject.set(x, "fileUri", js.undefined)
+    inline def setFileUriUndefined: Self = StObject.set(x, "fileUri", js.undefined)
   }
 }

@@ -18,28 +18,21 @@ trait ListBackupsOutput extends StObject {
 }
 object ListBackupsOutput {
   
-  @scala.inline
-  def apply(): ListBackupsOutput = {
+  inline def apply(): ListBackupsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListBackupsOutput]
   }
   
-  @scala.inline
-  implicit class ListBackupsOutputMutableBuilder[Self <: ListBackupsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListBackupsOutput](x: Self) {
     
-    @scala.inline
-    def setBackupSummaries(value: BackupSummaries): Self = StObject.set(x, "BackupSummaries", value.asInstanceOf[js.Any])
+    inline def setBackupSummaries(value: BackupSummaries): Self = StObject.set(x, "BackupSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupSummariesUndefined: Self = StObject.set(x, "BackupSummaries", js.undefined)
+    inline def setBackupSummariesUndefined: Self = StObject.set(x, "BackupSummaries", js.undefined)
     
-    @scala.inline
-    def setBackupSummariesVarargs(value: BackupSummary*): Self = StObject.set(x, "BackupSummaries", js.Array(value :_*))
+    inline def setBackupSummariesVarargs(value: BackupSummary*): Self = StObject.set(x, "BackupSummaries", js.Array(value :_*))
     
-    @scala.inline
-    def setLastEvaluatedBackupArn(value: BackupArn): Self = StObject.set(x, "LastEvaluatedBackupArn", value.asInstanceOf[js.Any])
+    inline def setLastEvaluatedBackupArn(value: BackupArn): Self = StObject.set(x, "LastEvaluatedBackupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastEvaluatedBackupArnUndefined: Self = StObject.set(x, "LastEvaluatedBackupArn", js.undefined)
+    inline def setLastEvaluatedBackupArnUndefined: Self = StObject.set(x, "LastEvaluatedBackupArn", js.undefined)
   }
 }

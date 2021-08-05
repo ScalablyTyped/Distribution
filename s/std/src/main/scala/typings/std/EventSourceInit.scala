@@ -10,19 +10,15 @@ trait EventSourceInit extends StObject {
 }
 object EventSourceInit {
   
-  @scala.inline
-  def apply(): EventSourceInit = {
+  inline def apply(): EventSourceInit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EventSourceInit]
   }
   
-  @scala.inline
-  implicit class EventSourceInitMutableBuilder[Self <: EventSourceInit] (val x: Self) extends AnyVal {
+  extension [Self <: EventSourceInit](x: Self) {
     
-    @scala.inline
-    def setWithCredentials(value: scala.Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
+    inline def setWithCredentials(value: scala.Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
+    inline def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
   }
 }

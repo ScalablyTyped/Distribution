@@ -18,28 +18,21 @@ trait IpfsPath extends StObject {
 }
 object IpfsPath {
   
-  @scala.inline
-  def apply(ctx: Print, ipfsPath: js.Any, length: js.Any, offset: js.Any, timeout: js.Any): IpfsPath = {
+  inline def apply(ctx: Print, ipfsPath: js.Any, length: js.Any, offset: js.Any, timeout: js.Any): IpfsPath = {
     val __obj = js.Dynamic.literal(ctx = ctx.asInstanceOf[js.Any], ipfsPath = ipfsPath.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[IpfsPath]
   }
   
-  @scala.inline
-  implicit class IpfsPathMutableBuilder[Self <: IpfsPath] (val x: Self) extends AnyVal {
+  extension [Self <: IpfsPath](x: Self) {
     
-    @scala.inline
-    def setCtx(value: Print): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
+    inline def setCtx(value: Print): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpfsPath(value: js.Any): Self = StObject.set(x, "ipfsPath", value.asInstanceOf[js.Any])
+    inline def setIpfsPath(value: js.Any): Self = StObject.set(x, "ipfsPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLength(value: js.Any): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: js.Any): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: js.Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: js.Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

@@ -26,8 +26,7 @@ trait EmailMailboxChangeReader extends StObject {
 }
 object EmailMailboxChangeReader {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acceptChanges: () => Unit,
     acceptChangesThrough: EmailMailboxChange => Unit,
     readBatchAsync: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]
@@ -36,16 +35,12 @@ object EmailMailboxChangeReader {
     __obj.asInstanceOf[EmailMailboxChangeReader]
   }
   
-  @scala.inline
-  implicit class EmailMailboxChangeReaderMutableBuilder[Self <: EmailMailboxChangeReader] (val x: Self) extends AnyVal {
+  extension [Self <: EmailMailboxChangeReader](x: Self) {
     
-    @scala.inline
-    def setAcceptChanges(value: () => Unit): Self = StObject.set(x, "acceptChanges", js.Any.fromFunction0(value))
+    inline def setAcceptChanges(value: () => Unit): Self = StObject.set(x, "acceptChanges", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAcceptChangesThrough(value: EmailMailboxChange => Unit): Self = StObject.set(x, "acceptChangesThrough", js.Any.fromFunction1(value))
+    inline def setAcceptChangesThrough(value: EmailMailboxChange => Unit): Self = StObject.set(x, "acceptChangesThrough", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReadBatchAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]): Self = StObject.set(x, "readBatchAsync", js.Any.fromFunction0(value))
+    inline def setReadBatchAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]): Self = StObject.set(x, "readBatchAsync", js.Any.fromFunction0(value))
   }
 }

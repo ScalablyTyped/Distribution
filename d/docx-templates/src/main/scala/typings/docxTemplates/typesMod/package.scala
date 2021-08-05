@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def BUILT_IN_COMMANDS: js.Tuple12[
+inline def BUILT_IN_COMMANDS: js.Tuple12[
 typings.docxTemplates.docxTemplatesStrings.QUERY, 
 typings.docxTemplates.docxTemplatesStrings.CMD_NODE, 
 typings.docxTemplates.docxTemplatesStrings.ALIAS, 
@@ -32,8 +31,7 @@ typings.docxTemplates.docxTemplatesStrings.IMAGE,
 typings.docxTemplates.docxTemplatesStrings.LINK, 
 typings.docxTemplates.docxTemplatesStrings.HTML]]
 
-@scala.inline
-def ImageExtensions: js.Tuple5[
+inline def ImageExtensions: js.Tuple5[
 typings.docxTemplates.docxTemplatesStrings.Dotpng, 
 typings.docxTemplates.docxTemplatesStrings.Dotgif, 
 typings.docxTemplates.docxTemplatesStrings.Dotjpg, 

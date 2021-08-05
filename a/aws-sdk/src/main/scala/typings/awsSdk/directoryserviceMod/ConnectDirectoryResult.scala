@@ -13,19 +13,15 @@ trait ConnectDirectoryResult extends StObject {
 }
 object ConnectDirectoryResult {
   
-  @scala.inline
-  def apply(): ConnectDirectoryResult = {
+  inline def apply(): ConnectDirectoryResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectDirectoryResult]
   }
   
-  @scala.inline
-  implicit class ConnectDirectoryResultMutableBuilder[Self <: ConnectDirectoryResult] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectDirectoryResult](x: Self) {
     
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
+    inline def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
   }
 }

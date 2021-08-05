@@ -16,13 +16,12 @@ trait Placeholders extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.Placeholders_typekey")
+  /* private */ @JSName("PowerPoint.Placeholders_typekey")
   var PowerPointDotPlaceholders_typekey: Placeholders
 }
 object Placeholders {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Count: Double,
     FindByName: js.Any => Shape,
@@ -35,25 +34,18 @@ object Placeholders {
     __obj.asInstanceOf[Placeholders]
   }
   
-  @scala.inline
-  implicit class PlaceholdersMutableBuilder[Self <: Placeholders] (val x: Self) extends AnyVal {
+  extension [Self <: Placeholders](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindByName(value: js.Any => Shape): Self = StObject.set(x, "FindByName", js.Any.fromFunction1(value))
+    inline def setFindByName(value: js.Any => Shape): Self = StObject.set(x, "FindByName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setItem(value: Double => Shape): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => Shape): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotPlaceholders_typekey(value: Placeholders): Self = StObject.set(x, "PowerPoint.Placeholders_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotPlaceholders_typekey(value: Placeholders): Self = StObject.set(x, "PowerPoint.Placeholders_typekey", value.asInstanceOf[js.Any])
   }
 }

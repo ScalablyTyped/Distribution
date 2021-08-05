@@ -21,37 +21,37 @@ object navBaseMod {
        with INav {
     def this(props: INavProps) = this()
     
-    var _focusZone: js.Any = js.native
+    /* private */ var _focusZone: js.Any = js.native
     
-    var _isGroupExpanded: js.Any = js.native
+    /* private */ var _isGroupExpanded: js.Any = js.native
     
-    var _isLinkSelected: js.Any = js.native
+    /* private */ var _isLinkSelected: js.Any = js.native
     
-    var _onGroupHeaderClicked: js.Any = js.native
+    /* private */ var _onGroupHeaderClicked: js.Any = js.native
     
-    var _onLinkExpandClicked: js.Any = js.native
+    /* private */ var _onLinkExpandClicked: js.Any = js.native
     
-    var _onNavAnchorLinkClicked: js.Any = js.native
+    /* private */ var _onNavAnchorLinkClicked: js.Any = js.native
     
-    var _onNavButtonLinkClicked: js.Any = js.native
+    /* private */ var _onNavButtonLinkClicked: js.Any = js.native
     
-    var _onRenderLink: js.Any = js.native
+    /* private */ var _onRenderLink: js.Any = js.native
     
-    var _preventBounce: js.Any = js.native
+    /* private */ var _preventBounce: js.Any = js.native
     
-    var _renderCompositeLink: js.Any = js.native
+    /* private */ var _renderCompositeLink: js.Any = js.native
     
-    var _renderGroup: js.Any = js.native
+    /* private */ var _renderGroup: js.Any = js.native
     
-    var _renderGroupHeader: js.Any = js.native
+    /* private */ var _renderGroupHeader: js.Any = js.native
     
-    var _renderLink: js.Any = js.native
+    /* private */ var _renderLink: js.Any = js.native
     
-    var _renderLinks: js.Any = js.native
+    /* private */ var _renderLinks: js.Any = js.native
     
-    var _renderNavLink: js.Any = js.native
+    /* private */ var _renderNavLink: js.Any = js.native
     
-    var _toggleCollapsed: js.Any = js.native
+    /* private */ var _toggleCollapsed: js.Any = js.native
   }
   /* static members */
   object NavBase {
@@ -63,12 +63,10 @@ object navBaseMod {
     @JSImport("office-ui-fabric-react/lib/components/Nav/Nav.base", "NavBase.defaultProps")
     @js.native
     def defaultProps: INavProps = js.native
-    @scala.inline
-    def defaultProps_=(x: INavProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: INavProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def isRelativeUrl(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRelativeUrl")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isRelativeUrl(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRelativeUrl")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   trait INavState extends StObject {
     
@@ -80,29 +78,22 @@ object navBaseMod {
   }
   object INavState {
     
-    @scala.inline
-    def apply(isGroupCollapsed: StringDictionary[Boolean]): INavState = {
+    inline def apply(isGroupCollapsed: StringDictionary[Boolean]): INavState = {
       val __obj = js.Dynamic.literal(isGroupCollapsed = isGroupCollapsed.asInstanceOf[js.Any])
       __obj.asInstanceOf[INavState]
     }
     
-    @scala.inline
-    implicit class INavStateMutableBuilder[Self <: INavState] (val x: Self) extends AnyVal {
+    extension [Self <: INavState](x: Self) {
       
-      @scala.inline
-      def setIsGroupCollapsed(value: StringDictionary[Boolean]): Self = StObject.set(x, "isGroupCollapsed", value.asInstanceOf[js.Any])
+      inline def setIsGroupCollapsed(value: StringDictionary[Boolean]): Self = StObject.set(x, "isGroupCollapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLinkExpandStateChanged(value: Boolean): Self = StObject.set(x, "isLinkExpandStateChanged", value.asInstanceOf[js.Any])
+      inline def setIsLinkExpandStateChanged(value: Boolean): Self = StObject.set(x, "isLinkExpandStateChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLinkExpandStateChangedUndefined: Self = StObject.set(x, "isLinkExpandStateChanged", js.undefined)
+      inline def setIsLinkExpandStateChangedUndefined: Self = StObject.set(x, "isLinkExpandStateChanged", js.undefined)
       
-      @scala.inline
-      def setSelectedKey(value: String): Self = StObject.set(x, "selectedKey", value.asInstanceOf[js.Any])
+      inline def setSelectedKey(value: String): Self = StObject.set(x, "selectedKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedKeyUndefined: Self = StObject.set(x, "selectedKey", js.undefined)
+      inline def setSelectedKeyUndefined: Self = StObject.set(x, "selectedKey", js.undefined)
     }
   }
 }

@@ -93,7 +93,7 @@ trait JournalItem extends StObject {
   
   var NoAging: Boolean = js.native
   
-  @JSName("Outlook.JournalItem_typekey")
+  /* private */ @JSName("Outlook.JournalItem_typekey")
   var OutlookDotJournalItem_typekey: JournalItem = js.native
   
   val OutlookInternalVersion: Double = js.native

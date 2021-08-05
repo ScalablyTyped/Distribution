@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.ChartArea")
 @js.native
-class ChartArea protected ()
+/* private */ class ChartArea ()
   extends StObject
      with typings.activexExcel.Excel.ChartArea {
   
@@ -35,7 +35,7 @@ class ChartArea protected ()
   /* CompleteClass */
   override val Creator: XlCreator = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.ChartArea_typekey")
   var ExcelDotChartArea_typekey: typings.activexExcel.Excel.ChartArea = js.native
   

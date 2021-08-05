@@ -13,12 +13,9 @@ object mergeMapToMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def mergeMapTo[T, O /* <: ObservableInput[js.Any] */](innerObservable: O): OperatorFunction[js.Any, ObservedValueOf[O]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeMapTo")(innerObservable.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[js.Any, ObservedValueOf[O]]]
-  @scala.inline
-  def mergeMapTo[T, O /* <: ObservableInput[js.Any] */](innerObservable: O, concurrent: Double): OperatorFunction[js.Any, ObservedValueOf[O]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeMapTo")(innerObservable.asInstanceOf[js.Any], concurrent.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[js.Any, ObservedValueOf[O]]]
-  @scala.inline
-  def mergeMapTo[T, R, O /* <: ObservableInput[js.Any] */](
+  inline def mergeMapTo[T, O /* <: ObservableInput[js.Any] */](innerObservable: O): OperatorFunction[js.Any, ObservedValueOf[O]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeMapTo")(innerObservable.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[js.Any, ObservedValueOf[O]]]
+  inline def mergeMapTo[T, O /* <: ObservableInput[js.Any] */](innerObservable: O, concurrent: Double): OperatorFunction[js.Any, ObservedValueOf[O]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeMapTo")(innerObservable.asInstanceOf[js.Any], concurrent.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[js.Any, ObservedValueOf[O]]]
+  inline def mergeMapTo[T, R, O /* <: ObservableInput[js.Any] */](
     innerObservable: O,
     resultSelector: js.Function4[
       /* outerValue */ T, 
@@ -28,8 +25,7 @@ object mergeMapToMod {
       R
     ]
   ): OperatorFunction[T, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeMapTo")(innerObservable.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, R]]
-  @scala.inline
-  def mergeMapTo[T, R, O /* <: ObservableInput[js.Any] */](
+  inline def mergeMapTo[T, R, O /* <: ObservableInput[js.Any] */](
     innerObservable: O,
     resultSelector: js.Function4[
       /* outerValue */ T, 

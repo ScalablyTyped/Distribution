@@ -39,8 +39,7 @@ object typesConsumerDescriptionMod {
   }
   object ConsumerDescription {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ConsumerARN: String,
       ConsumerCreationTimestamp: Date | String | Double,
       ConsumerName: String,
@@ -51,23 +50,17 @@ object typesConsumerDescriptionMod {
       __obj.asInstanceOf[ConsumerDescription]
     }
     
-    @scala.inline
-    implicit class ConsumerDescriptionMutableBuilder[Self <: ConsumerDescription] (val x: Self) extends AnyVal {
+    extension [Self <: ConsumerDescription](x: Self) {
       
-      @scala.inline
-      def setConsumerARN(value: String): Self = StObject.set(x, "ConsumerARN", value.asInstanceOf[js.Any])
+      inline def setConsumerARN(value: String): Self = StObject.set(x, "ConsumerARN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsumerCreationTimestamp(value: Date | String | Double): Self = StObject.set(x, "ConsumerCreationTimestamp", value.asInstanceOf[js.Any])
+      inline def setConsumerCreationTimestamp(value: Date | String | Double): Self = StObject.set(x, "ConsumerCreationTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsumerName(value: String): Self = StObject.set(x, "ConsumerName", value.asInstanceOf[js.Any])
+      inline def setConsumerName(value: String): Self = StObject.set(x, "ConsumerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsumerStatus(value: CREATING | DELETING | ACTIVE | String): Self = StObject.set(x, "ConsumerStatus", value.asInstanceOf[js.Any])
+      inline def setConsumerStatus(value: CREATING | DELETING | ACTIVE | String): Self = StObject.set(x, "ConsumerStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamARN(value: String): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
+      inline def setStreamARN(value: String): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
     }
   }
   
@@ -83,8 +76,7 @@ object typesConsumerDescriptionMod {
   }
   object UnmarshalledConsumerDescription {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ConsumerARN: String,
       ConsumerCreationTimestamp: Date,
       ConsumerName: String,
@@ -95,11 +87,9 @@ object typesConsumerDescriptionMod {
       __obj.asInstanceOf[UnmarshalledConsumerDescription]
     }
     
-    @scala.inline
-    implicit class UnmarshalledConsumerDescriptionMutableBuilder[Self <: UnmarshalledConsumerDescription] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledConsumerDescription](x: Self) {
       
-      @scala.inline
-      def setConsumerCreationTimestamp(value: Date): Self = StObject.set(x, "ConsumerCreationTimestamp", value.asInstanceOf[js.Any])
+      inline def setConsumerCreationTimestamp(value: Date): Self = StObject.set(x, "ConsumerCreationTimestamp", value.asInstanceOf[js.Any])
     }
   }
 }

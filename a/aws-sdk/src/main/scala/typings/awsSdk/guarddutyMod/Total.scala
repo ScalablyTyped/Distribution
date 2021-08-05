@@ -18,25 +18,19 @@ trait Total extends StObject {
 }
 object Total {
   
-  @scala.inline
-  def apply(): Total = {
+  inline def apply(): Total = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Total]
   }
   
-  @scala.inline
-  implicit class TotalMutableBuilder[Self <: Total] (val x: Self) extends AnyVal {
+  extension [Self <: Total](x: Self) {
     
-    @scala.inline
-    def setAmount(value: String): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: String): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmountUndefined: Self = StObject.set(x, "Amount", js.undefined)
+    inline def setAmountUndefined: Self = StObject.set(x, "Amount", js.undefined)
     
-    @scala.inline
-    def setUnit(value: String): Self = StObject.set(x, "Unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: String): Self = StObject.set(x, "Unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitUndefined: Self = StObject.set(x, "Unit", js.undefined)
+    inline def setUnitUndefined: Self = StObject.set(x, "Unit", js.undefined)
   }
 }

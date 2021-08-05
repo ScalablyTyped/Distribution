@@ -18,31 +18,23 @@ trait BatchGetJobsResponse extends StObject {
 }
 object BatchGetJobsResponse {
   
-  @scala.inline
-  def apply(): BatchGetJobsResponse = {
+  inline def apply(): BatchGetJobsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchGetJobsResponse]
   }
   
-  @scala.inline
-  implicit class BatchGetJobsResponseMutableBuilder[Self <: BatchGetJobsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetJobsResponse](x: Self) {
     
-    @scala.inline
-    def setJobs(value: JobList): Self = StObject.set(x, "Jobs", value.asInstanceOf[js.Any])
+    inline def setJobs(value: JobList): Self = StObject.set(x, "Jobs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobsNotFound(value: JobNameList): Self = StObject.set(x, "JobsNotFound", value.asInstanceOf[js.Any])
+    inline def setJobsNotFound(value: JobNameList): Self = StObject.set(x, "JobsNotFound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobsNotFoundUndefined: Self = StObject.set(x, "JobsNotFound", js.undefined)
+    inline def setJobsNotFoundUndefined: Self = StObject.set(x, "JobsNotFound", js.undefined)
     
-    @scala.inline
-    def setJobsNotFoundVarargs(value: NameString*): Self = StObject.set(x, "JobsNotFound", js.Array(value :_*))
+    inline def setJobsNotFoundVarargs(value: NameString*): Self = StObject.set(x, "JobsNotFound", js.Array(value :_*))
     
-    @scala.inline
-    def setJobsUndefined: Self = StObject.set(x, "Jobs", js.undefined)
+    inline def setJobsUndefined: Self = StObject.set(x, "Jobs", js.undefined)
     
-    @scala.inline
-    def setJobsVarargs(value: Job*): Self = StObject.set(x, "Jobs", js.Array(value :_*))
+    inline def setJobsVarargs(value: Job*): Self = StObject.set(x, "Jobs", js.Array(value :_*))
   }
 }

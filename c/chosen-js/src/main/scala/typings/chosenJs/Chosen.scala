@@ -16,20 +16,15 @@ object Chosen {
   trait OnEvent extends StObject
   object OnEvent {
     
-    @scala.inline
-    def chosenColonhiding_dropdown: typings.chosenJs.chosenJsStrings.chosenColonhiding_dropdown = "chosen:hiding_dropdown".asInstanceOf[typings.chosenJs.chosenJsStrings.chosenColonhiding_dropdown]
+    inline def chosenColonhiding_dropdown: typings.chosenJs.chosenJsStrings.chosenColonhiding_dropdown = "chosen:hiding_dropdown".asInstanceOf[typings.chosenJs.chosenJsStrings.chosenColonhiding_dropdown]
     
-    @scala.inline
-    def chosenColonmaxselected: typings.chosenJs.chosenJsStrings.chosenColonmaxselected = "chosen:maxselected".asInstanceOf[typings.chosenJs.chosenJsStrings.chosenColonmaxselected]
+    inline def chosenColonmaxselected: typings.chosenJs.chosenJsStrings.chosenColonmaxselected = "chosen:maxselected".asInstanceOf[typings.chosenJs.chosenJsStrings.chosenColonmaxselected]
     
-    @scala.inline
-    def chosenColonno_results: typings.chosenJs.chosenJsStrings.chosenColonno_results = "chosen:no_results".asInstanceOf[typings.chosenJs.chosenJsStrings.chosenColonno_results]
+    inline def chosenColonno_results: typings.chosenJs.chosenJsStrings.chosenColonno_results = "chosen:no_results".asInstanceOf[typings.chosenJs.chosenJsStrings.chosenColonno_results]
     
-    @scala.inline
-    def chosenColonready: typings.chosenJs.chosenJsStrings.chosenColonready = "chosen:ready".asInstanceOf[typings.chosenJs.chosenJsStrings.chosenColonready]
+    inline def chosenColonready: typings.chosenJs.chosenJsStrings.chosenColonready = "chosen:ready".asInstanceOf[typings.chosenJs.chosenJsStrings.chosenColonready]
     
-    @scala.inline
-    def chosenColonshowing_dropdown: typings.chosenJs.chosenJsStrings.chosenColonshowing_dropdown = "chosen:showing_dropdown".asInstanceOf[typings.chosenJs.chosenJsStrings.chosenColonshowing_dropdown]
+    inline def chosenColonshowing_dropdown: typings.chosenJs.chosenJsStrings.chosenColonshowing_dropdown = "chosen:showing_dropdown".asInstanceOf[typings.chosenJs.chosenJsStrings.chosenColonshowing_dropdown]
   }
   
   trait Options extends StObject {
@@ -159,134 +154,92 @@ object Chosen {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAllow_single_deselect(value: Boolean): Self = StObject.set(x, "allow_single_deselect", value.asInstanceOf[js.Any])
+      inline def setAllow_single_deselect(value: Boolean): Self = StObject.set(x, "allow_single_deselect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllow_single_deselectUndefined: Self = StObject.set(x, "allow_single_deselect", js.undefined)
+      inline def setAllow_single_deselectUndefined: Self = StObject.set(x, "allow_single_deselect", js.undefined)
       
-      @scala.inline
-      def setCase_sensitive_search(value: Boolean): Self = StObject.set(x, "case_sensitive_search", value.asInstanceOf[js.Any])
+      inline def setCase_sensitive_search(value: Boolean): Self = StObject.set(x, "case_sensitive_search", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCase_sensitive_searchUndefined: Self = StObject.set(x, "case_sensitive_search", js.undefined)
+      inline def setCase_sensitive_searchUndefined: Self = StObject.set(x, "case_sensitive_search", js.undefined)
       
-      @scala.inline
-      def setDisable_search(value: Boolean): Self = StObject.set(x, "disable_search", value.asInstanceOf[js.Any])
+      inline def setDisable_search(value: Boolean): Self = StObject.set(x, "disable_search", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisable_searchUndefined: Self = StObject.set(x, "disable_search", js.undefined)
+      inline def setDisable_searchUndefined: Self = StObject.set(x, "disable_search", js.undefined)
       
-      @scala.inline
-      def setDisable_search_threshold(value: Double): Self = StObject.set(x, "disable_search_threshold", value.asInstanceOf[js.Any])
+      inline def setDisable_search_threshold(value: Double): Self = StObject.set(x, "disable_search_threshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisable_search_thresholdUndefined: Self = StObject.set(x, "disable_search_threshold", js.undefined)
+      inline def setDisable_search_thresholdUndefined: Self = StObject.set(x, "disable_search_threshold", js.undefined)
       
-      @scala.inline
-      def setDisplay_disabled_options(value: Boolean): Self = StObject.set(x, "display_disabled_options", value.asInstanceOf[js.Any])
+      inline def setDisplay_disabled_options(value: Boolean): Self = StObject.set(x, "display_disabled_options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplay_disabled_optionsUndefined: Self = StObject.set(x, "display_disabled_options", js.undefined)
+      inline def setDisplay_disabled_optionsUndefined: Self = StObject.set(x, "display_disabled_options", js.undefined)
       
-      @scala.inline
-      def setDisplay_selected_options(value: Boolean): Self = StObject.set(x, "display_selected_options", value.asInstanceOf[js.Any])
+      inline def setDisplay_selected_options(value: Boolean): Self = StObject.set(x, "display_selected_options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplay_selected_optionsUndefined: Self = StObject.set(x, "display_selected_options", js.undefined)
+      inline def setDisplay_selected_optionsUndefined: Self = StObject.set(x, "display_selected_options", js.undefined)
       
-      @scala.inline
-      def setEnable_split_word_search(value: Boolean): Self = StObject.set(x, "enable_split_word_search", value.asInstanceOf[js.Any])
+      inline def setEnable_split_word_search(value: Boolean): Self = StObject.set(x, "enable_split_word_search", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnable_split_word_searchUndefined: Self = StObject.set(x, "enable_split_word_search", js.undefined)
+      inline def setEnable_split_word_searchUndefined: Self = StObject.set(x, "enable_split_word_search", js.undefined)
       
-      @scala.inline
-      def setGroup_search(value: Boolean): Self = StObject.set(x, "group_search", value.asInstanceOf[js.Any])
+      inline def setGroup_search(value: Boolean): Self = StObject.set(x, "group_search", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroup_searchUndefined: Self = StObject.set(x, "group_search", js.undefined)
+      inline def setGroup_searchUndefined: Self = StObject.set(x, "group_search", js.undefined)
       
-      @scala.inline
-      def setHide_results_on_select(value: Boolean): Self = StObject.set(x, "hide_results_on_select", value.asInstanceOf[js.Any])
+      inline def setHide_results_on_select(value: Boolean): Self = StObject.set(x, "hide_results_on_select", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHide_results_on_selectUndefined: Self = StObject.set(x, "hide_results_on_select", js.undefined)
+      inline def setHide_results_on_selectUndefined: Self = StObject.set(x, "hide_results_on_select", js.undefined)
       
-      @scala.inline
-      def setInclude_group_label_in_selected(value: Boolean): Self = StObject.set(x, "include_group_label_in_selected", value.asInstanceOf[js.Any])
+      inline def setInclude_group_label_in_selected(value: Boolean): Self = StObject.set(x, "include_group_label_in_selected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInclude_group_label_in_selectedUndefined: Self = StObject.set(x, "include_group_label_in_selected", js.undefined)
+      inline def setInclude_group_label_in_selectedUndefined: Self = StObject.set(x, "include_group_label_in_selected", js.undefined)
       
-      @scala.inline
-      def setInherit_select_classes(value: Boolean): Self = StObject.set(x, "inherit_select_classes", value.asInstanceOf[js.Any])
+      inline def setInherit_select_classes(value: Boolean): Self = StObject.set(x, "inherit_select_classes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInherit_select_classesUndefined: Self = StObject.set(x, "inherit_select_classes", js.undefined)
+      inline def setInherit_select_classesUndefined: Self = StObject.set(x, "inherit_select_classes", js.undefined)
       
-      @scala.inline
-      def setMax_selected_options(value: Double): Self = StObject.set(x, "max_selected_options", value.asInstanceOf[js.Any])
+      inline def setMax_selected_options(value: Double): Self = StObject.set(x, "max_selected_options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax_selected_optionsUndefined: Self = StObject.set(x, "max_selected_options", js.undefined)
+      inline def setMax_selected_optionsUndefined: Self = StObject.set(x, "max_selected_options", js.undefined)
       
-      @scala.inline
-      def setMax_shown_results(value: Double): Self = StObject.set(x, "max_shown_results", value.asInstanceOf[js.Any])
+      inline def setMax_shown_results(value: Double): Self = StObject.set(x, "max_shown_results", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax_shown_resultsUndefined: Self = StObject.set(x, "max_shown_results", js.undefined)
+      inline def setMax_shown_resultsUndefined: Self = StObject.set(x, "max_shown_results", js.undefined)
       
-      @scala.inline
-      def setNo_results_text(value: String): Self = StObject.set(x, "no_results_text", value.asInstanceOf[js.Any])
+      inline def setNo_results_text(value: String): Self = StObject.set(x, "no_results_text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNo_results_textUndefined: Self = StObject.set(x, "no_results_text", js.undefined)
+      inline def setNo_results_textUndefined: Self = StObject.set(x, "no_results_text", js.undefined)
       
-      @scala.inline
-      def setPlaceholder_text_multiple(value: String): Self = StObject.set(x, "placeholder_text_multiple", value.asInstanceOf[js.Any])
+      inline def setPlaceholder_text_multiple(value: String): Self = StObject.set(x, "placeholder_text_multiple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholder_text_multipleUndefined: Self = StObject.set(x, "placeholder_text_multiple", js.undefined)
+      inline def setPlaceholder_text_multipleUndefined: Self = StObject.set(x, "placeholder_text_multiple", js.undefined)
       
-      @scala.inline
-      def setPlaceholder_text_single(value: String): Self = StObject.set(x, "placeholder_text_single", value.asInstanceOf[js.Any])
+      inline def setPlaceholder_text_single(value: String): Self = StObject.set(x, "placeholder_text_single", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholder_text_singleUndefined: Self = StObject.set(x, "placeholder_text_single", js.undefined)
+      inline def setPlaceholder_text_singleUndefined: Self = StObject.set(x, "placeholder_text_single", js.undefined)
       
-      @scala.inline
-      def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
+      inline def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRtlUndefined: Self = StObject.set(x, "rtl", js.undefined)
+      inline def setRtlUndefined: Self = StObject.set(x, "rtl", js.undefined)
       
-      @scala.inline
-      def setSearch_contains(value: Boolean): Self = StObject.set(x, "search_contains", value.asInstanceOf[js.Any])
+      inline def setSearch_contains(value: Boolean): Self = StObject.set(x, "search_contains", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearch_containsUndefined: Self = StObject.set(x, "search_contains", js.undefined)
+      inline def setSearch_containsUndefined: Self = StObject.set(x, "search_contains", js.undefined)
       
-      @scala.inline
-      def setSingle_backstroke_delete(value: Boolean): Self = StObject.set(x, "single_backstroke_delete", value.asInstanceOf[js.Any])
+      inline def setSingle_backstroke_delete(value: Boolean): Self = StObject.set(x, "single_backstroke_delete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSingle_backstroke_deleteUndefined: Self = StObject.set(x, "single_backstroke_delete", js.undefined)
+      inline def setSingle_backstroke_deleteUndefined: Self = StObject.set(x, "single_backstroke_delete", js.undefined)
       
-      @scala.inline
-      def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -298,20 +251,16 @@ object Chosen {
   }
   object SelectedData {
     
-    @scala.inline
-    def apply(deselected: String, selected: String): SelectedData = {
+    inline def apply(deselected: String, selected: String): SelectedData = {
       val __obj = js.Dynamic.literal(deselected = deselected.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
       __obj.asInstanceOf[SelectedData]
     }
     
-    @scala.inline
-    implicit class SelectedDataMutableBuilder[Self <: SelectedData] (val x: Self) extends AnyVal {
+    extension [Self <: SelectedData](x: Self) {
       
-      @scala.inline
-      def setDeselected(value: String): Self = StObject.set(x, "deselected", value.asInstanceOf[js.Any])
+      inline def setDeselected(value: String): Self = StObject.set(x, "deselected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     }
   }
   
@@ -324,16 +273,12 @@ object Chosen {
   trait TriggerEvent extends StObject
   object TriggerEvent {
     
-    @scala.inline
-    def chosenColonactivate: typings.chosenJs.chosenJsStrings.chosenColonactivate = "chosen:activate".asInstanceOf[typings.chosenJs.chosenJsStrings.chosenColonactivate]
+    inline def chosenColonactivate: typings.chosenJs.chosenJsStrings.chosenColonactivate = "chosen:activate".asInstanceOf[typings.chosenJs.chosenJsStrings.chosenColonactivate]
     
-    @scala.inline
-    def chosenColonclose: typings.chosenJs.chosenJsStrings.chosenColonclose = "chosen:close".asInstanceOf[typings.chosenJs.chosenJsStrings.chosenColonclose]
+    inline def chosenColonclose: typings.chosenJs.chosenJsStrings.chosenColonclose = "chosen:close".asInstanceOf[typings.chosenJs.chosenJsStrings.chosenColonclose]
     
-    @scala.inline
-    def chosenColonopen: typings.chosenJs.chosenJsStrings.chosenColonopen = "chosen:open".asInstanceOf[typings.chosenJs.chosenJsStrings.chosenColonopen]
+    inline def chosenColonopen: typings.chosenJs.chosenJsStrings.chosenColonopen = "chosen:open".asInstanceOf[typings.chosenJs.chosenJsStrings.chosenColonopen]
     
-    @scala.inline
-    def chosenColonupdated: typings.chosenJs.chosenJsStrings.chosenColonupdated = "chosen:updated".asInstanceOf[typings.chosenJs.chosenJsStrings.chosenColonupdated]
+    inline def chosenColonupdated: typings.chosenJs.chosenJsStrings.chosenColonupdated = "chosen:updated".asInstanceOf[typings.chosenJs.chosenJsStrings.chosenColonupdated]
   }
 }

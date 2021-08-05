@@ -18,19 +18,15 @@ trait CreateContactMethodRequest extends StObject {
 }
 object CreateContactMethodRequest {
   
-  @scala.inline
-  def apply(contactEndpoint: StringMax256, protocol: ContactProtocol): CreateContactMethodRequest = {
+  inline def apply(contactEndpoint: StringMax256, protocol: ContactProtocol): CreateContactMethodRequest = {
     val __obj = js.Dynamic.literal(contactEndpoint = contactEndpoint.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateContactMethodRequest]
   }
   
-  @scala.inline
-  implicit class CreateContactMethodRequestMutableBuilder[Self <: CreateContactMethodRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateContactMethodRequest](x: Self) {
     
-    @scala.inline
-    def setContactEndpoint(value: StringMax256): Self = StObject.set(x, "contactEndpoint", value.asInstanceOf[js.Any])
+    inline def setContactEndpoint(value: StringMax256): Self = StObject.set(x, "contactEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocol(value: ContactProtocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: ContactProtocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
   }
 }

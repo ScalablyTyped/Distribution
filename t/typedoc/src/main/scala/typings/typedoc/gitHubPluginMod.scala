@@ -14,17 +14,17 @@ object gitHubPluginMod {
     def this(owner: js.Symbol) = this()
     def this(owner: Converter) = this()
     
-    var getRepository: js.Any = js.native
+    /* private */ var getRepository: js.Any = js.native
     
     val gitRemote: String = js.native
     
     val gitRevision: String = js.native
     
-    var ignoredPaths: js.Any = js.native
+    /* private */ var ignoredPaths: js.Any = js.native
     
-    var onEndResolve: js.Any = js.native
+    /* private */ var onEndResolve: js.Any = js.native
     
-    var repositories: js.Any = js.native
+    /* private */ var repositories: js.Any = js.native
   }
   
   @JSImport("typedoc/dist/lib/converter/plugins/GitHubPlugin", "Repository")
@@ -55,7 +55,6 @@ object gitHubPluginMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def tryCreateRepository(path: String, gitRevision: String, gitRemote: String): js.UndefOr[Repository] = (^.asInstanceOf[js.Dynamic].applyDynamic("tryCreateRepository")(path.asInstanceOf[js.Any], gitRevision.asInstanceOf[js.Any], gitRemote.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Repository]]
+    inline def tryCreateRepository(path: String, gitRevision: String, gitRemote: String): js.UndefOr[Repository] = (^.asInstanceOf[js.Dynamic].applyDynamic("tryCreateRepository")(path.asInstanceOf[js.Any], gitRevision.asInstanceOf[js.Any], gitRemote.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Repository]]
   }
 }

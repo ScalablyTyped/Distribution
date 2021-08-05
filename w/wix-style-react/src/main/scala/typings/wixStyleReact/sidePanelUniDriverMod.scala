@@ -31,8 +31,7 @@ object sidePanelUniDriverMod {
   }
   object SidePanelUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       clickClose: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
@@ -47,26 +46,19 @@ object sidePanelUniDriverMod {
       __obj.asInstanceOf[SidePanelUniDriver]
     }
     
-    @scala.inline
-    implicit class SidePanelUniDriverMutableBuilder[Self <: SidePanelUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: SidePanelUniDriver](x: Self) {
       
-      @scala.inline
-      def setClickClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickClose", js.Any.fromFunction0(value))
+      inline def setClickClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTitleText(value: () => js.Promise[String]): Self = StObject.set(x, "getTitleText", js.Any.fromFunction0(value))
+      inline def setGetTitleText(value: () => js.Promise[String]): Self = StObject.set(x, "getTitleText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTooltipContent(value: () => js.Promise[String]): Self = StObject.set(x, "getTooltipContent", js.Any.fromFunction0(value))
+      inline def setGetTooltipContent(value: () => js.Promise[String]): Self = StObject.set(x, "getTooltipContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsCloseButtonExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isCloseButtonExists", js.Any.fromFunction0(value))
+      inline def setIsCloseButtonExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isCloseButtonExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsFooterDividerExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isFooterDividerExists", js.Any.fromFunction0(value))
+      inline def setIsFooterDividerExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isFooterDividerExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsHeaderDividerExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isHeaderDividerExists", js.Any.fromFunction0(value))
+      inline def setIsHeaderDividerExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isHeaderDividerExists", js.Any.fromFunction0(value))
     }
   }
 }

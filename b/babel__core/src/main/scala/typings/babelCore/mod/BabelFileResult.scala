@@ -20,52 +20,37 @@ trait BabelFileResult extends StObject {
 }
 object BabelFileResult {
   
-  @scala.inline
-  def apply(): BabelFileResult = {
+  inline def apply(): BabelFileResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BabelFileResult]
   }
   
-  @scala.inline
-  implicit class BabelFileResultMutableBuilder[Self <: BabelFileResult] (val x: Self) extends AnyVal {
+  extension [Self <: BabelFileResult](x: Self) {
     
-    @scala.inline
-    def setAst(value: File_): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
+    inline def setAst(value: File_): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAstNull: Self = StObject.set(x, "ast", null)
+    inline def setAstNull: Self = StObject.set(x, "ast", null)
     
-    @scala.inline
-    def setAstUndefined: Self = StObject.set(x, "ast", js.undefined)
+    inline def setAstUndefined: Self = StObject.set(x, "ast", js.undefined)
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeNull: Self = StObject.set(x, "code", null)
+    inline def setCodeNull: Self = StObject.set(x, "code", null)
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setIgnored(value: Boolean): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
+    inline def setIgnored(value: Boolean): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoredUndefined: Self = StObject.set(x, "ignored", js.undefined)
+    inline def setIgnoredUndefined: Self = StObject.set(x, "ignored", js.undefined)
     
-    @scala.inline
-    def setMap(value: File): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: File): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapNull: Self = StObject.set(x, "map", null)
+    inline def setMapNull: Self = StObject.set(x, "map", null)
     
-    @scala.inline
-    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+    inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: BabelFileMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: BabelFileMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
   }
 }

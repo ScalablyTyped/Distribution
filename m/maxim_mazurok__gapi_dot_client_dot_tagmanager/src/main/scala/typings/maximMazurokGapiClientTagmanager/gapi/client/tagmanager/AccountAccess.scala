@@ -11,19 +11,15 @@ trait AccountAccess extends StObject {
 }
 object AccountAccess {
   
-  @scala.inline
-  def apply(): AccountAccess = {
+  inline def apply(): AccountAccess = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountAccess]
   }
   
-  @scala.inline
-  implicit class AccountAccessMutableBuilder[Self <: AccountAccess] (val x: Self) extends AnyVal {
+  extension [Self <: AccountAccess](x: Self) {
     
-    @scala.inline
-    def setPermission(value: String): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
+    inline def setPermission(value: String): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
+    inline def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
   }
 }

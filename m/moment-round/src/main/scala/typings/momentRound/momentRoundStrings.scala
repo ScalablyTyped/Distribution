@@ -8,16 +8,13 @@ object momentRoundStrings {
   
   @js.native
   sealed trait ceil extends StObject
-  @scala.inline
-  def ceil: ceil = "ceil".asInstanceOf[ceil]
+  inline def ceil: ceil = "ceil".asInstanceOf[ceil]
   
   @js.native
   sealed trait floor extends StObject
-  @scala.inline
-  def floor: floor = "floor".asInstanceOf[floor]
+  inline def floor: floor = "floor".asInstanceOf[floor]
   
   @js.native
   sealed trait round extends StObject
-  @scala.inline
-  def round: round = "round".asInstanceOf[round]
+  inline def round: round = "round".asInstanceOf[round]
 }

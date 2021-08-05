@@ -41,8 +41,7 @@ trait XRemoteContentProviderAcceptor
 }
 object XRemoteContentProviderAcceptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addRemoteContentProvider: (String, XMultiServiceFactory, SeqEquiv[String], XRemoteContentProviderDoneListener) => Boolean,
     queryInterface: `type` => js.Any,
@@ -53,15 +52,12 @@ object XRemoteContentProviderAcceptor {
     __obj.asInstanceOf[XRemoteContentProviderAcceptor]
   }
   
-  @scala.inline
-  implicit class XRemoteContentProviderAcceptorMutableBuilder[Self <: XRemoteContentProviderAcceptor] (val x: Self) extends AnyVal {
+  extension [Self <: XRemoteContentProviderAcceptor](x: Self) {
     
-    @scala.inline
-    def setAddRemoteContentProvider(
+    inline def setAddRemoteContentProvider(
       value: (String, XMultiServiceFactory, SeqEquiv[String], XRemoteContentProviderDoneListener) => Boolean
     ): Self = StObject.set(x, "addRemoteContentProvider", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setRemoveRemoteContentProvider(value: String => Boolean): Self = StObject.set(x, "removeRemoteContentProvider", js.Any.fromFunction1(value))
+    inline def setRemoveRemoteContentProvider(value: String => Boolean): Self = StObject.set(x, "removeRemoteContentProvider", js.Any.fromFunction1(value))
   }
 }

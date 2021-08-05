@@ -14,19 +14,15 @@ trait SchemaReservationsResizeRequest extends StObject {
 }
 object SchemaReservationsResizeRequest {
   
-  @scala.inline
-  def apply(): SchemaReservationsResizeRequest = {
+  inline def apply(): SchemaReservationsResizeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaReservationsResizeRequest]
   }
   
-  @scala.inline
-  implicit class SchemaReservationsResizeRequestMutableBuilder[Self <: SchemaReservationsResizeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaReservationsResizeRequest](x: Self) {
     
-    @scala.inline
-    def setSpecificSkuCount(value: String): Self = StObject.set(x, "specificSkuCount", value.asInstanceOf[js.Any])
+    inline def setSpecificSkuCount(value: String): Self = StObject.set(x, "specificSkuCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecificSkuCountUndefined: Self = StObject.set(x, "specificSkuCount", js.undefined)
+    inline def setSpecificSkuCountUndefined: Self = StObject.set(x, "specificSkuCount", js.undefined)
   }
 }

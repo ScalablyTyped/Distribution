@@ -23,34 +23,25 @@ trait GetCurrentMetricDataResponse extends StObject {
 }
 object GetCurrentMetricDataResponse {
   
-  @scala.inline
-  def apply(): GetCurrentMetricDataResponse = {
+  inline def apply(): GetCurrentMetricDataResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetCurrentMetricDataResponse]
   }
   
-  @scala.inline
-  implicit class GetCurrentMetricDataResponseMutableBuilder[Self <: GetCurrentMetricDataResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetCurrentMetricDataResponse](x: Self) {
     
-    @scala.inline
-    def setDataSnapshotTime(value: timestamp): Self = StObject.set(x, "DataSnapshotTime", value.asInstanceOf[js.Any])
+    inline def setDataSnapshotTime(value: timestamp): Self = StObject.set(x, "DataSnapshotTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSnapshotTimeUndefined: Self = StObject.set(x, "DataSnapshotTime", js.undefined)
+    inline def setDataSnapshotTimeUndefined: Self = StObject.set(x, "DataSnapshotTime", js.undefined)
     
-    @scala.inline
-    def setMetricResults(value: CurrentMetricResults): Self = StObject.set(x, "MetricResults", value.asInstanceOf[js.Any])
+    inline def setMetricResults(value: CurrentMetricResults): Self = StObject.set(x, "MetricResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricResultsUndefined: Self = StObject.set(x, "MetricResults", js.undefined)
+    inline def setMetricResultsUndefined: Self = StObject.set(x, "MetricResults", js.undefined)
     
-    @scala.inline
-    def setMetricResultsVarargs(value: CurrentMetricResult*): Self = StObject.set(x, "MetricResults", js.Array(value :_*))
+    inline def setMetricResultsVarargs(value: CurrentMetricResult*): Self = StObject.set(x, "MetricResults", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

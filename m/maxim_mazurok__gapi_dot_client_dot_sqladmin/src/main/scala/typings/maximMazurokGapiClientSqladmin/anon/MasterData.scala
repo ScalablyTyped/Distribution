@@ -15,19 +15,15 @@ trait MasterData extends StObject {
 }
 object MasterData {
   
-  @scala.inline
-  def apply(): MasterData = {
+  inline def apply(): MasterData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MasterData]
   }
   
-  @scala.inline
-  implicit class MasterDataMutableBuilder[Self <: MasterData] (val x: Self) extends AnyVal {
+  extension [Self <: MasterData](x: Self) {
     
-    @scala.inline
-    def setMasterData(value: Double): Self = StObject.set(x, "masterData", value.asInstanceOf[js.Any])
+    inline def setMasterData(value: Double): Self = StObject.set(x, "masterData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterDataUndefined: Self = StObject.set(x, "masterData", js.undefined)
+    inline def setMasterDataUndefined: Self = StObject.set(x, "masterData", js.undefined)
   }
 }

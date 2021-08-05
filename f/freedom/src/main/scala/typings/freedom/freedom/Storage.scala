@@ -26,8 +26,7 @@ object Storage {
   }
   object Storage {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clear: () => js.Promise[Unit],
       get: String => js.Promise[String],
       keys: () => js.Promise[js.Array[String]],
@@ -38,23 +37,17 @@ object Storage {
       __obj.asInstanceOf[typings.freedom.freedom.Storage.Storage]
     }
     
-    @scala.inline
-    implicit class StorageMutableBuilder[Self <: typings.freedom.freedom.Storage.Storage] (val x: Self) extends AnyVal {
+    extension [Self <: typings.freedom.freedom.Storage.Storage](x: Self) {
       
-      @scala.inline
-      def setClear(value: () => js.Promise[Unit]): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => js.Promise[Unit]): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet(value: String => js.Promise[String]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => js.Promise[String]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setKeys(value: () => js.Promise[js.Array[String]]): Self = StObject.set(x, "keys", js.Any.fromFunction0(value))
+      inline def setKeys(value: () => js.Promise[js.Array[String]]): Self = StObject.set(x, "keys", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemove(value: String => js.Promise[String]): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+      inline def setRemove(value: String => js.Promise[String]): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet(value: (String, String) => js.Promise[String]): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (String, String) => js.Promise[String]): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     }
   }
 }

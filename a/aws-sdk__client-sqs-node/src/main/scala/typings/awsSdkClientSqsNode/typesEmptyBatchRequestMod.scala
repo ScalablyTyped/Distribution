@@ -20,17 +20,14 @@ object typesEmptyBatchRequestMod {
   }
   object EmptyBatchRequest {
     
-    @scala.inline
-    def apply(): EmptyBatchRequest = {
+    inline def apply(): EmptyBatchRequest = {
       val __obj = js.Dynamic.literal(name = "EmptyBatchRequest")
       __obj.asInstanceOf[EmptyBatchRequest]
     }
     
-    @scala.inline
-    implicit class EmptyBatchRequestMutableBuilder[Self <: EmptyBatchRequest] (val x: Self) extends AnyVal {
+    extension [Self <: EmptyBatchRequest](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.EmptyBatchRequest): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.EmptyBatchRequest): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

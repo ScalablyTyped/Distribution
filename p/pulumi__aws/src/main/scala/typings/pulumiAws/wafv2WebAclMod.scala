@@ -91,21 +91,16 @@ object wafv2WebAclMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): WebAcl = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[WebAcl]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): WebAcl = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[WebAcl]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: WebAclState): WebAcl = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[WebAcl]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: WebAclState, opts: CustomResourceOptions): WebAcl = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[WebAcl]
+    inline def get(name: String, id: Input[ID]): WebAcl = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[WebAcl]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): WebAcl = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[WebAcl]
+    inline def get(name: String, id: Input[ID], state: WebAclState): WebAcl = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[WebAcl]
+    inline def get(name: String, id: Input[ID], state: WebAclState, opts: CustomResourceOptions): WebAcl = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[WebAcl]
     
     /**
       * Returns true if the given object is an instance of WebAcl.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/wafv2/webAcl.WebAcl */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/wafv2/webAcl.WebAcl */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/wafv2/webAcl.WebAcl */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/wafv2/webAcl.WebAcl */ Boolean]
   }
   
   trait WebAclArgs extends StObject {
@@ -147,8 +142,7 @@ object wafv2WebAclMod {
   }
   object WebAclArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       defaultAction: Input[typings.pulumiAws.inputMod.wafv2.WebAclDefaultAction],
       scope: Input[String],
       visibilityConfig: Input[typings.pulumiAws.inputMod.wafv2.WebAclVisibilityConfig]
@@ -157,44 +151,31 @@ object wafv2WebAclMod {
       __obj.asInstanceOf[WebAclArgs]
     }
     
-    @scala.inline
-    implicit class WebAclArgsMutableBuilder[Self <: WebAclArgs] (val x: Self) extends AnyVal {
+    extension [Self <: WebAclArgs](x: Self) {
       
-      @scala.inline
-      def setDefaultAction(value: Input[typings.pulumiAws.inputMod.wafv2.WebAclDefaultAction]): Self = StObject.set(x, "defaultAction", value.asInstanceOf[js.Any])
+      inline def setDefaultAction(value: Input[typings.pulumiAws.inputMod.wafv2.WebAclDefaultAction]): Self = StObject.set(x, "defaultAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRules(value: Input[js.Array[Input[typings.pulumiAws.inputMod.wafv2.WebAclRule]]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: Input[js.Array[Input[typings.pulumiAws.inputMod.wafv2.WebAclRule]]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+      inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
       
-      @scala.inline
-      def setRulesVarargs(value: Input[typings.pulumiAws.inputMod.wafv2.WebAclRule]*): Self = StObject.set(x, "rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: Input[typings.pulumiAws.inputMod.wafv2.WebAclRule]*): Self = StObject.set(x, "rules", js.Array(value :_*))
       
-      @scala.inline
-      def setScope(value: Input[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: Input[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVisibilityConfig(value: Input[typings.pulumiAws.inputMod.wafv2.WebAclVisibilityConfig]): Self = StObject.set(x, "visibilityConfig", value.asInstanceOf[js.Any])
+      inline def setVisibilityConfig(value: Input[typings.pulumiAws.inputMod.wafv2.WebAclVisibilityConfig]): Self = StObject.set(x, "visibilityConfig", value.asInstanceOf[js.Any])
     }
   }
   
@@ -249,77 +230,54 @@ object wafv2WebAclMod {
   }
   object WebAclState {
     
-    @scala.inline
-    def apply(): WebAclState = {
+    inline def apply(): WebAclState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WebAclState]
     }
     
-    @scala.inline
-    implicit class WebAclStateMutableBuilder[Self <: WebAclState] (val x: Self) extends AnyVal {
+    extension [Self <: WebAclState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setCapacity(value: Input[Double]): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
+      inline def setCapacity(value: Input[Double]): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCapacityUndefined: Self = StObject.set(x, "capacity", js.undefined)
+      inline def setCapacityUndefined: Self = StObject.set(x, "capacity", js.undefined)
       
-      @scala.inline
-      def setDefaultAction(value: Input[typings.pulumiAws.inputMod.wafv2.WebAclDefaultAction]): Self = StObject.set(x, "defaultAction", value.asInstanceOf[js.Any])
+      inline def setDefaultAction(value: Input[typings.pulumiAws.inputMod.wafv2.WebAclDefaultAction]): Self = StObject.set(x, "defaultAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultActionUndefined: Self = StObject.set(x, "defaultAction", js.undefined)
+      inline def setDefaultActionUndefined: Self = StObject.set(x, "defaultAction", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setLockToken(value: Input[String]): Self = StObject.set(x, "lockToken", value.asInstanceOf[js.Any])
+      inline def setLockToken(value: Input[String]): Self = StObject.set(x, "lockToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLockTokenUndefined: Self = StObject.set(x, "lockToken", js.undefined)
+      inline def setLockTokenUndefined: Self = StObject.set(x, "lockToken", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRules(value: Input[js.Array[Input[typings.pulumiAws.inputMod.wafv2.WebAclRule]]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: Input[js.Array[Input[typings.pulumiAws.inputMod.wafv2.WebAclRule]]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+      inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
       
-      @scala.inline
-      def setRulesVarargs(value: Input[typings.pulumiAws.inputMod.wafv2.WebAclRule]*): Self = StObject.set(x, "rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: Input[typings.pulumiAws.inputMod.wafv2.WebAclRule]*): Self = StObject.set(x, "rules", js.Array(value :_*))
       
-      @scala.inline
-      def setScope(value: Input[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: Input[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVisibilityConfig(value: Input[typings.pulumiAws.inputMod.wafv2.WebAclVisibilityConfig]): Self = StObject.set(x, "visibilityConfig", value.asInstanceOf[js.Any])
+      inline def setVisibilityConfig(value: Input[typings.pulumiAws.inputMod.wafv2.WebAclVisibilityConfig]): Self = StObject.set(x, "visibilityConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibilityConfigUndefined: Self = StObject.set(x, "visibilityConfig", js.undefined)
+      inline def setVisibilityConfigUndefined: Self = StObject.set(x, "visibilityConfig", js.undefined)
     }
   }
 }

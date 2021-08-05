@@ -37,18 +37,14 @@ object BigDecimal {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def fromBuffer(buf: Buffer): BigDecimal = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buf.asInstanceOf[js.Any]).asInstanceOf[BigDecimal]
+  inline def fromBuffer(buf: Buffer): BigDecimal = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buf.asInstanceOf[js.Any]).asInstanceOf[BigDecimal]
   
   /* static member */
-  @scala.inline
-  def fromNumber(value: Double): BigDecimal = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(value.asInstanceOf[js.Any]).asInstanceOf[BigDecimal]
+  inline def fromNumber(value: Double): BigDecimal = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(value.asInstanceOf[js.Any]).asInstanceOf[BigDecimal]
   
   /* static member */
-  @scala.inline
-  def fromString(value: String): BigDecimal = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[BigDecimal]
+  inline def fromString(value: String): BigDecimal = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[BigDecimal]
   
   /* static member */
-  @scala.inline
-  def toBuffer(value: BigDecimal): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(value.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def toBuffer(value: BigDecimal): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(value.asInstanceOf[js.Any]).asInstanceOf[Buffer]
 }

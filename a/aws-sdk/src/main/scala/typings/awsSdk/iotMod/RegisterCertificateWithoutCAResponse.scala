@@ -18,25 +18,19 @@ trait RegisterCertificateWithoutCAResponse extends StObject {
 }
 object RegisterCertificateWithoutCAResponse {
   
-  @scala.inline
-  def apply(): RegisterCertificateWithoutCAResponse = {
+  inline def apply(): RegisterCertificateWithoutCAResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegisterCertificateWithoutCAResponse]
   }
   
-  @scala.inline
-  implicit class RegisterCertificateWithoutCAResponseMutableBuilder[Self <: RegisterCertificateWithoutCAResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterCertificateWithoutCAResponse](x: Self) {
     
-    @scala.inline
-    def setCertificateArn(value: CertificateArn): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
+    inline def setCertificateArn(value: CertificateArn): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateArnUndefined: Self = StObject.set(x, "certificateArn", js.undefined)
+    inline def setCertificateArnUndefined: Self = StObject.set(x, "certificateArn", js.undefined)
     
-    @scala.inline
-    def setCertificateId(value: CertificateId): Self = StObject.set(x, "certificateId", value.asInstanceOf[js.Any])
+    inline def setCertificateId(value: CertificateId): Self = StObject.set(x, "certificateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateIdUndefined: Self = StObject.set(x, "certificateId", js.undefined)
+    inline def setCertificateIdUndefined: Self = StObject.set(x, "certificateId", js.undefined)
   }
 }

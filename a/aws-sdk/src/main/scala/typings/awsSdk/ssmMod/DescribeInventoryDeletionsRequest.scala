@@ -23,31 +23,23 @@ trait DescribeInventoryDeletionsRequest extends StObject {
 }
 object DescribeInventoryDeletionsRequest {
   
-  @scala.inline
-  def apply(): DescribeInventoryDeletionsRequest = {
+  inline def apply(): DescribeInventoryDeletionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeInventoryDeletionsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeInventoryDeletionsRequestMutableBuilder[Self <: DescribeInventoryDeletionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeInventoryDeletionsRequest](x: Self) {
     
-    @scala.inline
-    def setDeletionId(value: UUID): Self = StObject.set(x, "DeletionId", value.asInstanceOf[js.Any])
+    inline def setDeletionId(value: UUID): Self = StObject.set(x, "DeletionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletionIdUndefined: Self = StObject.set(x, "DeletionId", js.undefined)
+    inline def setDeletionIdUndefined: Self = StObject.set(x, "DeletionId", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

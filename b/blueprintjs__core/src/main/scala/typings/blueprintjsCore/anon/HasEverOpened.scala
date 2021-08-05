@@ -11,16 +11,13 @@ trait HasEverOpened extends StObject {
 }
 object HasEverOpened {
   
-  @scala.inline
-  def apply(): HasEverOpened = {
+  inline def apply(): HasEverOpened = {
     val __obj = js.Dynamic.literal(hasEverOpened = true)
     __obj.asInstanceOf[HasEverOpened]
   }
   
-  @scala.inline
-  implicit class HasEverOpenedMutableBuilder[Self <: HasEverOpened] (val x: Self) extends AnyVal {
+  extension [Self <: HasEverOpened](x: Self) {
     
-    @scala.inline
-    def setHasEverOpened(value: `true`): Self = StObject.set(x, "hasEverOpened", value.asInstanceOf[js.Any])
+    inline def setHasEverOpened(value: `true`): Self = StObject.set(x, "hasEverOpened", value.asInstanceOf[js.Any])
   }
 }

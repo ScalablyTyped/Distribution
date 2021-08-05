@@ -27,25 +27,19 @@ trait AggregatedFieldDef extends StObject {
 }
 object AggregatedFieldDef {
   
-  @scala.inline
-  def apply(as: FieldName, op: AggregateOp): AggregatedFieldDef = {
+  inline def apply(as: FieldName, op: AggregateOp): AggregatedFieldDef = {
     val __obj = js.Dynamic.literal(as = as.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any])
     __obj.asInstanceOf[AggregatedFieldDef]
   }
   
-  @scala.inline
-  implicit class AggregatedFieldDefMutableBuilder[Self <: AggregatedFieldDef] (val x: Self) extends AnyVal {
+  extension [Self <: AggregatedFieldDef](x: Self) {
     
-    @scala.inline
-    def setAs(value: FieldName): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def setAs(value: FieldName): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setField(value: FieldName): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: FieldName): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setOp(value: AggregateOp): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+    inline def setOp(value: AggregateOp): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
   }
 }

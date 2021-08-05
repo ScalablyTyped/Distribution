@@ -13,16 +13,13 @@ trait DisassociateMemberAccountRequest extends StObject {
 }
 object DisassociateMemberAccountRequest {
   
-  @scala.inline
-  def apply(memberAccountId: AWSAccountId): DisassociateMemberAccountRequest = {
+  inline def apply(memberAccountId: AWSAccountId): DisassociateMemberAccountRequest = {
     val __obj = js.Dynamic.literal(memberAccountId = memberAccountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateMemberAccountRequest]
   }
   
-  @scala.inline
-  implicit class DisassociateMemberAccountRequestMutableBuilder[Self <: DisassociateMemberAccountRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateMemberAccountRequest](x: Self) {
     
-    @scala.inline
-    def setMemberAccountId(value: AWSAccountId): Self = StObject.set(x, "memberAccountId", value.asInstanceOf[js.Any])
+    inline def setMemberAccountId(value: AWSAccountId): Self = StObject.set(x, "memberAccountId", value.asInstanceOf[js.Any])
   }
 }

@@ -14,19 +14,15 @@ trait BluetoothLEScan
 }
 object BluetoothLEScan {
   
-  @scala.inline
-  def apply(active: Boolean, stop: () => Unit): BluetoothLEScan = {
+  inline def apply(active: Boolean, stop: () => Unit): BluetoothLEScan = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], stop = js.Any.fromFunction0(stop))
     __obj.asInstanceOf[BluetoothLEScan]
   }
   
-  @scala.inline
-  implicit class BluetoothLEScanMutableBuilder[Self <: BluetoothLEScan] (val x: Self) extends AnyVal {
+  extension [Self <: BluetoothLEScan](x: Self) {
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+    inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
   }
 }

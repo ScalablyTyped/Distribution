@@ -70,8 +70,7 @@ trait ISearchService extends StObject {
 }
 object ISearchService {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     searchAll: ISearchArgs => IPromise[js.Any],
     searchContent: ISearchArgs => IPromise[js.Array[ISearchContent]],
     searchMedia: ISearchArgs => IPromise[js.Array[ISearchMedia]],
@@ -81,19 +80,14 @@ object ISearchService {
     __obj.asInstanceOf[ISearchService]
   }
   
-  @scala.inline
-  implicit class ISearchServiceMutableBuilder[Self <: ISearchService] (val x: Self) extends AnyVal {
+  extension [Self <: ISearchService](x: Self) {
     
-    @scala.inline
-    def setSearchAll(value: ISearchArgs => IPromise[js.Any]): Self = StObject.set(x, "searchAll", js.Any.fromFunction1(value))
+    inline def setSearchAll(value: ISearchArgs => IPromise[js.Any]): Self = StObject.set(x, "searchAll", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSearchContent(value: ISearchArgs => IPromise[js.Array[ISearchContent]]): Self = StObject.set(x, "searchContent", js.Any.fromFunction1(value))
+    inline def setSearchContent(value: ISearchArgs => IPromise[js.Array[ISearchContent]]): Self = StObject.set(x, "searchContent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSearchMedia(value: ISearchArgs => IPromise[js.Array[ISearchMedia]]): Self = StObject.set(x, "searchMedia", js.Any.fromFunction1(value))
+    inline def setSearchMedia(value: ISearchArgs => IPromise[js.Array[ISearchMedia]]): Self = StObject.set(x, "searchMedia", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSearchMembers(value: ISearchArgs => IPromise[js.Array[ISearchMember]]): Self = StObject.set(x, "searchMembers", js.Any.fromFunction1(value))
+    inline def setSearchMembers(value: ISearchArgs => IPromise[js.Array[ISearchMember]]): Self = StObject.set(x, "searchMembers", js.Any.fromFunction1(value))
   }
 }

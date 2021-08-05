@@ -43,16 +43,12 @@ object mod {
     def write(values: Buffer): Double = js.native
   }
   
-  @scala.inline
-  def devices(): js.Array[Device] = ^.asInstanceOf[js.Dynamic].applyDynamic("devices")().asInstanceOf[js.Array[Device]]
-  @scala.inline
-  def devices(vid: Double, pid: Double): js.Array[Device] = (^.asInstanceOf[js.Dynamic].applyDynamic("devices")(vid.asInstanceOf[js.Any], pid.asInstanceOf[js.Any])).asInstanceOf[js.Array[Device]]
+  inline def devices(): js.Array[Device] = ^.asInstanceOf[js.Dynamic].applyDynamic("devices")().asInstanceOf[js.Array[Device]]
+  inline def devices(vid: Double, pid: Double): js.Array[Device] = (^.asInstanceOf[js.Dynamic].applyDynamic("devices")(vid.asInstanceOf[js.Any], pid.asInstanceOf[js.Any])).asInstanceOf[js.Array[Device]]
   
-  @scala.inline
-  def setDriverType_hidraw(`type`: hidraw): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDriverType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setDriverType_hidraw(`type`: hidraw): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDriverType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setDriverType_libusb(`type`: libusb): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDriverType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setDriverType_libusb(`type`: libusb): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDriverType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait Device extends StObject {
     
@@ -78,62 +74,44 @@ object mod {
   }
   object Device {
     
-    @scala.inline
-    def apply(interface: Double, productId: Double, release: Double, vendorId: Double): Device = {
+    inline def apply(interface: Double, productId: Double, release: Double, vendorId: Double): Device = {
       val __obj = js.Dynamic.literal(interface = interface.asInstanceOf[js.Any], productId = productId.asInstanceOf[js.Any], release = release.asInstanceOf[js.Any], vendorId = vendorId.asInstanceOf[js.Any])
       __obj.asInstanceOf[Device]
     }
     
-    @scala.inline
-    implicit class DeviceMutableBuilder[Self <: Device] (val x: Self) extends AnyVal {
+    extension [Self <: Device](x: Self) {
       
-      @scala.inline
-      def setInterface(value: Double): Self = StObject.set(x, "interface", value.asInstanceOf[js.Any])
+      inline def setInterface(value: Double): Self = StObject.set(x, "interface", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
+      inline def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManufacturerUndefined: Self = StObject.set(x, "manufacturer", js.undefined)
+      inline def setManufacturerUndefined: Self = StObject.set(x, "manufacturer", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
+      inline def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductId(value: Double): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+      inline def setProductId(value: Double): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
+      inline def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
       
-      @scala.inline
-      def setRelease(value: Double): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
+      inline def setRelease(value: Double): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
+      inline def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerialNumberUndefined: Self = StObject.set(x, "serialNumber", js.undefined)
+      inline def setSerialNumberUndefined: Self = StObject.set(x, "serialNumber", js.undefined)
       
-      @scala.inline
-      def setUsage(value: Double): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
+      inline def setUsage(value: Double): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsagePage(value: Double): Self = StObject.set(x, "usagePage", value.asInstanceOf[js.Any])
+      inline def setUsagePage(value: Double): Self = StObject.set(x, "usagePage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsagePageUndefined: Self = StObject.set(x, "usagePage", js.undefined)
+      inline def setUsagePageUndefined: Self = StObject.set(x, "usagePage", js.undefined)
       
-      @scala.inline
-      def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
+      inline def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
       
-      @scala.inline
-      def setVendorId(value: Double): Self = StObject.set(x, "vendorId", value.asInstanceOf[js.Any])
+      inline def setVendorId(value: Double): Self = StObject.set(x, "vendorId", value.asInstanceOf[js.Any])
     }
   }
 }

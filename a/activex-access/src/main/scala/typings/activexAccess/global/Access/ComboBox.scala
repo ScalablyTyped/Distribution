@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.ComboBox")
 @js.native
-class ComboBox protected ()
+/* private */ class ComboBox ()
   extends StObject
      with typings.activexAccess.Access.ComboBox

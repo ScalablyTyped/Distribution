@@ -12,19 +12,15 @@ trait Bind extends StObject {
 }
 object Bind {
   
-  @scala.inline
-  def apply(bind: js.Object, files: RelativeTo): Bind = {
+  inline def apply(bind: js.Object, files: RelativeTo): Bind = {
     val __obj = js.Dynamic.literal(bind = bind.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bind]
   }
   
-  @scala.inline
-  implicit class BindMutableBuilder[Self <: Bind] (val x: Self) extends AnyVal {
+  extension [Self <: Bind](x: Self) {
     
-    @scala.inline
-    def setBind(value: js.Object): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
+    inline def setBind(value: js.Object): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiles(value: RelativeTo): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: RelativeTo): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
   }
 }

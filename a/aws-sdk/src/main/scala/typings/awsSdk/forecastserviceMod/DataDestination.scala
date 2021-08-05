@@ -13,16 +13,13 @@ trait DataDestination extends StObject {
 }
 object DataDestination {
   
-  @scala.inline
-  def apply(S3Config: S3Config): DataDestination = {
+  inline def apply(S3Config: S3Config): DataDestination = {
     val __obj = js.Dynamic.literal(S3Config = S3Config.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataDestination]
   }
   
-  @scala.inline
-  implicit class DataDestinationMutableBuilder[Self <: DataDestination] (val x: Self) extends AnyVal {
+  extension [Self <: DataDestination](x: Self) {
     
-    @scala.inline
-    def setS3Config(value: S3Config): Self = StObject.set(x, "S3Config", value.asInstanceOf[js.Any])
+    inline def setS3Config(value: S3Config): Self = StObject.set(x, "S3Config", value.asInstanceOf[js.Any])
   }
 }

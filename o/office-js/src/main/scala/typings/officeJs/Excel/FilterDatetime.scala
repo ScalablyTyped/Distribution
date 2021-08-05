@@ -36,19 +36,15 @@ trait FilterDatetime extends StObject {
 }
 object FilterDatetime {
   
-  @scala.inline
-  def apply(date: String, specificity: FilterDatetimeSpecificity | Year | Month | Day | Hour | Minute | Second): FilterDatetime = {
+  inline def apply(date: String, specificity: FilterDatetimeSpecificity | Year | Month | Day | Hour | Minute | Second): FilterDatetime = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], specificity = specificity.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterDatetime]
   }
   
-  @scala.inline
-  implicit class FilterDatetimeMutableBuilder[Self <: FilterDatetime] (val x: Self) extends AnyVal {
+  extension [Self <: FilterDatetime](x: Self) {
     
-    @scala.inline
-    def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecificity(value: FilterDatetimeSpecificity | Year | Month | Day | Hour | Minute | Second): Self = StObject.set(x, "specificity", value.asInstanceOf[js.Any])
+    inline def setSpecificity(value: FilterDatetimeSpecificity | Year | Month | Day | Hour | Minute | Second): Self = StObject.set(x, "specificity", value.asInstanceOf[js.Any])
   }
 }

@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoDiagramNodeType extends StObject
 object MsoDiagramNodeType {
   
-  @scala.inline
-  def msoDiagramAssistant: `2` = 2.asInstanceOf[`2`]
+  inline def msoDiagramAssistant: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoDiagramNode: `1` = 1.asInstanceOf[`1`]
+  inline def msoDiagramNode: `1` = 1.asInstanceOf[`1`]
 }

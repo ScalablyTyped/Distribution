@@ -25,23 +25,18 @@ object arrowMod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(padding: Padding): Options = {
+    inline def apply(padding: Padding): Options = {
       val __obj = js.Dynamic.literal(padding = padding.asInstanceOf[js.Any], element = null)
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setElement(value: HTMLElement | String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: HTMLElement | String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementNull: Self = StObject.set(x, "element", null)
+      inline def setElementNull: Self = StObject.set(x, "element", null)
       
-      @scala.inline
-      def setPadding(value: Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     }
   }
   

@@ -14,8 +14,7 @@ trait JsonObject
      with IMap[String, IJsonValue]
 object JsonObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clear: () => Unit,
     first: () => IIterator[IKeyValuePair[String, IJsonValue]],
     getArray: () => JsonArray,

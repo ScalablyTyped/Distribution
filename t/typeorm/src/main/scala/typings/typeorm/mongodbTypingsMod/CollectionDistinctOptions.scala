@@ -14,19 +14,15 @@ trait CollectionDistinctOptions extends StObject {
 }
 object CollectionDistinctOptions {
   
-  @scala.inline
-  def apply(): CollectionDistinctOptions = {
+  inline def apply(): CollectionDistinctOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CollectionDistinctOptions]
   }
   
-  @scala.inline
-  implicit class CollectionDistinctOptionsMutableBuilder[Self <: CollectionDistinctOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CollectionDistinctOptions](x: Self) {
     
-    @scala.inline
-    def setReadPreference(value: ReadPreference | String): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
+    inline def setReadPreference(value: ReadPreference | String): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
+    inline def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
   }
 }

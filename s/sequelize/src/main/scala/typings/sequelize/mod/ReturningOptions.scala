@@ -13,19 +13,15 @@ trait ReturningOptions extends StObject {
 }
 object ReturningOptions {
   
-  @scala.inline
-  def apply(): ReturningOptions = {
+  inline def apply(): ReturningOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReturningOptions]
   }
   
-  @scala.inline
-  implicit class ReturningOptionsMutableBuilder[Self <: ReturningOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ReturningOptions](x: Self) {
     
-    @scala.inline
-    def setReturning(value: Boolean): Self = StObject.set(x, "returning", value.asInstanceOf[js.Any])
+    inline def setReturning(value: Boolean): Self = StObject.set(x, "returning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturningUndefined: Self = StObject.set(x, "returning", js.undefined)
+    inline def setReturningUndefined: Self = StObject.set(x, "returning", js.undefined)
   }
 }

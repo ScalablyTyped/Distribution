@@ -10,16 +10,13 @@ trait StopDragOptions extends StObject {
 }
 object StopDragOptions {
   
-  @scala.inline
-  def apply(shouldBlockNextClick: Boolean): StopDragOptions = {
+  inline def apply(shouldBlockNextClick: Boolean): StopDragOptions = {
     val __obj = js.Dynamic.literal(shouldBlockNextClick = shouldBlockNextClick.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopDragOptions]
   }
   
-  @scala.inline
-  implicit class StopDragOptionsMutableBuilder[Self <: StopDragOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StopDragOptions](x: Self) {
     
-    @scala.inline
-    def setShouldBlockNextClick(value: Boolean): Self = StObject.set(x, "shouldBlockNextClick", value.asInstanceOf[js.Any])
+    inline def setShouldBlockNextClick(value: Boolean): Self = StObject.set(x, "shouldBlockNextClick", value.asInstanceOf[js.Any])
   }
 }

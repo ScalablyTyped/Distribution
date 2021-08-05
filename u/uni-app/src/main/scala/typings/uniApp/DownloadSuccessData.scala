@@ -18,25 +18,19 @@ trait DownloadSuccessData extends StObject {
 }
 object DownloadSuccessData {
   
-  @scala.inline
-  def apply(): DownloadSuccessData = {
+  inline def apply(): DownloadSuccessData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DownloadSuccessData]
   }
   
-  @scala.inline
-  implicit class DownloadSuccessDataMutableBuilder[Self <: DownloadSuccessData] (val x: Self) extends AnyVal {
+  extension [Self <: DownloadSuccessData](x: Self) {
     
-    @scala.inline
-    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+    inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
     
-    @scala.inline
-    def setTempFilePath(value: String): Self = StObject.set(x, "tempFilePath", value.asInstanceOf[js.Any])
+    inline def setTempFilePath(value: String): Self = StObject.set(x, "tempFilePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTempFilePathUndefined: Self = StObject.set(x, "tempFilePath", js.undefined)
+    inline def setTempFilePathUndefined: Self = StObject.set(x, "tempFilePath", js.undefined)
   }
 }

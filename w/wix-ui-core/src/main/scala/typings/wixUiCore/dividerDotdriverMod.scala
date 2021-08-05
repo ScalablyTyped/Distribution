@@ -12,6 +12,5 @@ object dividerDotdriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def dividerDriverFactory(hasElement: ElementAny): IsVertical = ^.asInstanceOf[js.Dynamic].applyDynamic("dividerDriverFactory")(hasElement.asInstanceOf[js.Any]).asInstanceOf[IsVertical]
+  inline def dividerDriverFactory(hasElement: ElementAny): IsVertical = ^.asInstanceOf[js.Dynamic].applyDynamic("dividerDriverFactory")(hasElement.asInstanceOf[js.Any]).asInstanceOf[IsVertical]
 }

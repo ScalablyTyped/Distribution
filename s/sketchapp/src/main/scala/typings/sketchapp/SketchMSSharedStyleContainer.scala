@@ -13,22 +13,17 @@ trait SketchMSSharedStyleContainer extends StObject {
 }
 object SketchMSSharedStyleContainer {
   
-  @scala.inline
-  def apply(objects: js.Array[SketchMSSharedStyle]): SketchMSSharedStyleContainer = {
+  inline def apply(objects: js.Array[SketchMSSharedStyle]): SketchMSSharedStyleContainer = {
     val __obj = js.Dynamic.literal(_class = "sharedStyleContainer", objects = objects.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSSharedStyleContainer]
   }
   
-  @scala.inline
-  implicit class SketchMSSharedStyleContainerMutableBuilder[Self <: SketchMSSharedStyleContainer] (val x: Self) extends AnyVal {
+  extension [Self <: SketchMSSharedStyleContainer](x: Self) {
     
-    @scala.inline
-    def setObjects(value: js.Array[SketchMSSharedStyle]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
+    inline def setObjects(value: js.Array[SketchMSSharedStyle]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectsVarargs(value: SketchMSSharedStyle*): Self = StObject.set(x, "objects", js.Array(value :_*))
+    inline def setObjectsVarargs(value: SketchMSSharedStyle*): Self = StObject.set(x, "objects", js.Array(value :_*))
     
-    @scala.inline
-    def set_class(value: sharedStyleContainer): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
+    inline def set_class(value: sharedStyleContainer): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

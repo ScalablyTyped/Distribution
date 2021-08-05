@@ -17,8 +17,7 @@ trait ActionTextUnderlayColor extends StObject {
 }
 object ActionTextUnderlayColor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     WrapComponent: View,
     actionTextActiveOpacity: Double,
     actionTextUnderlayColor: String,
@@ -28,19 +27,14 @@ object ActionTextUnderlayColor {
     __obj.asInstanceOf[ActionTextUnderlayColor]
   }
   
-  @scala.inline
-  implicit class ActionTextUnderlayColorMutableBuilder[Self <: ActionTextUnderlayColor] (val x: Self) extends AnyVal {
+  extension [Self <: ActionTextUnderlayColor](x: Self) {
     
-    @scala.inline
-    def setActionTextActiveOpacity(value: Double): Self = StObject.set(x, "actionTextActiveOpacity", value.asInstanceOf[js.Any])
+    inline def setActionTextActiveOpacity(value: Double): Self = StObject.set(x, "actionTextActiveOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionTextUnderlayColor(value: String): Self = StObject.set(x, "actionTextUnderlayColor", value.asInstanceOf[js.Any])
+    inline def setActionTextUnderlayColor(value: String): Self = StObject.set(x, "actionTextUnderlayColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerType(value: String): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
+    inline def setTriggerType(value: String): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrapComponent(value: View): Self = StObject.set(x, "WrapComponent", value.asInstanceOf[js.Any])
+    inline def setWrapComponent(value: View): Self = StObject.set(x, "WrapComponent", value.asInstanceOf[js.Any])
   }
 }

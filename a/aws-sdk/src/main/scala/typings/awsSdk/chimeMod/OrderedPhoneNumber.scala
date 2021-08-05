@@ -18,25 +18,19 @@ trait OrderedPhoneNumber extends StObject {
 }
 object OrderedPhoneNumber {
   
-  @scala.inline
-  def apply(): OrderedPhoneNumber = {
+  inline def apply(): OrderedPhoneNumber = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrderedPhoneNumber]
   }
   
-  @scala.inline
-  implicit class OrderedPhoneNumberMutableBuilder[Self <: OrderedPhoneNumber] (val x: Self) extends AnyVal {
+  extension [Self <: OrderedPhoneNumber](x: Self) {
     
-    @scala.inline
-    def setE164PhoneNumber(value: E164PhoneNumber): Self = StObject.set(x, "E164PhoneNumber", value.asInstanceOf[js.Any])
+    inline def setE164PhoneNumber(value: E164PhoneNumber): Self = StObject.set(x, "E164PhoneNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setE164PhoneNumberUndefined: Self = StObject.set(x, "E164PhoneNumber", js.undefined)
+    inline def setE164PhoneNumberUndefined: Self = StObject.set(x, "E164PhoneNumber", js.undefined)
     
-    @scala.inline
-    def setStatus(value: OrderedPhoneNumberStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: OrderedPhoneNumberStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

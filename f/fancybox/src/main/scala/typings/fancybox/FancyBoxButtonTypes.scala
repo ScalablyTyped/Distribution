@@ -22,8 +22,7 @@ trait FancyBoxButtonTypes extends StObject {
 }
 object FancyBoxButtonTypes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     close: String,
     download: String,
     fullScreen: String,
@@ -36,28 +35,20 @@ object FancyBoxButtonTypes {
     __obj.asInstanceOf[FancyBoxButtonTypes]
   }
   
-  @scala.inline
-  implicit class FancyBoxButtonTypesMutableBuilder[Self <: FancyBoxButtonTypes] (val x: Self) extends AnyVal {
+  extension [Self <: FancyBoxButtonTypes](x: Self) {
     
-    @scala.inline
-    def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownload(value: String): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+    inline def setDownload(value: String): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullScreen(value: String): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
+    inline def setFullScreen(value: String): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShare(value: String): Self = StObject.set(x, "share", value.asInstanceOf[js.Any])
+    inline def setShare(value: String): Self = StObject.set(x, "share", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlideShow(value: String): Self = StObject.set(x, "slideShow", value.asInstanceOf[js.Any])
+    inline def setSlideShow(value: String): Self = StObject.set(x, "slideShow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbs(value: String): Self = StObject.set(x, "thumbs", value.asInstanceOf[js.Any])
+    inline def setThumbs(value: String): Self = StObject.set(x, "thumbs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoom(value: String): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    inline def setZoom(value: String): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
   }
 }

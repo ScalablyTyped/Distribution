@@ -24,8 +24,7 @@ trait XDirectInvocation
 }
 object XDirectInvocation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     directInvoke: (String, SeqEquiv[js.Any]) => js.Any,
     hasMember: String => Boolean,
@@ -36,13 +35,10 @@ object XDirectInvocation {
     __obj.asInstanceOf[XDirectInvocation]
   }
   
-  @scala.inline
-  implicit class XDirectInvocationMutableBuilder[Self <: XDirectInvocation] (val x: Self) extends AnyVal {
+  extension [Self <: XDirectInvocation](x: Self) {
     
-    @scala.inline
-    def setDirectInvoke(value: (String, SeqEquiv[js.Any]) => js.Any): Self = StObject.set(x, "directInvoke", js.Any.fromFunction2(value))
+    inline def setDirectInvoke(value: (String, SeqEquiv[js.Any]) => js.Any): Self = StObject.set(x, "directInvoke", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setHasMember(value: String => Boolean): Self = StObject.set(x, "hasMember", js.Any.fromFunction1(value))
+    inline def setHasMember(value: String => Boolean): Self = StObject.set(x, "hasMember", js.Any.fromFunction1(value))
   }
 }

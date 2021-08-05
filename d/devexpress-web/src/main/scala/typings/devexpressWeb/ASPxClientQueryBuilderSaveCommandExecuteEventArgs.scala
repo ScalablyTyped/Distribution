@@ -18,16 +18,13 @@ trait ASPxClientQueryBuilderSaveCommandExecuteEventArgs
 }
 object ASPxClientQueryBuilderSaveCommandExecuteEventArgs {
   
-  @scala.inline
-  def apply(handled: Boolean): ASPxClientQueryBuilderSaveCommandExecuteEventArgs = {
+  inline def apply(handled: Boolean): ASPxClientQueryBuilderSaveCommandExecuteEventArgs = {
     val __obj = js.Dynamic.literal(handled = handled.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientQueryBuilderSaveCommandExecuteEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientQueryBuilderSaveCommandExecuteEventArgsMutableBuilder[Self <: ASPxClientQueryBuilderSaveCommandExecuteEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientQueryBuilderSaveCommandExecuteEventArgs](x: Self) {
     
-    @scala.inline
-    def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
+    inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
   }
 }

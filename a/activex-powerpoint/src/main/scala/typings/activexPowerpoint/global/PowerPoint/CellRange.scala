@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.CellRange")
 @js.native
-class CellRange protected ()
+/* private */ class CellRange ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.CellRange {
   
@@ -25,7 +25,7 @@ class CellRange protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.CellRange_typekey")
   var PowerPointDotCellRange_typekey: typings.activexPowerpoint.PowerPoint.CellRange = js.native
 }

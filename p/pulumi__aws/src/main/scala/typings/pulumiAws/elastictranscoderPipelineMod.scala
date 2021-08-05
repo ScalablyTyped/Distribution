@@ -97,21 +97,16 @@ object elastictranscoderPipelineMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Pipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Pipeline]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Pipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Pipeline]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: PipelineState): Pipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Pipeline]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: PipelineState, opts: CustomResourceOptions): Pipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Pipeline]
+    inline def get(name: String, id: Input[ID]): Pipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Pipeline]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Pipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Pipeline]
+    inline def get(name: String, id: Input[ID], state: PipelineState): Pipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Pipeline]
+    inline def get(name: String, id: Input[ID], state: PipelineState, opts: CustomResourceOptions): Pipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Pipeline]
     
     /**
       * Returns true if the given object is an instance of Pipeline.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elastictranscoder/pipeline.Pipeline */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elastictranscoder/pipeline.Pipeline */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elastictranscoder/pipeline.Pipeline */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elastictranscoder/pipeline.Pipeline */ Boolean]
   }
   
   trait PipelineArgs extends StObject {
@@ -180,26 +175,20 @@ object elastictranscoderPipelineMod {
   }
   object PipelineArgs {
     
-    @scala.inline
-    def apply(inputBucket: Input[String], role: Input[String]): PipelineArgs = {
+    inline def apply(inputBucket: Input[String], role: Input[String]): PipelineArgs = {
       val __obj = js.Dynamic.literal(inputBucket = inputBucket.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any])
       __obj.asInstanceOf[PipelineArgs]
     }
     
-    @scala.inline
-    implicit class PipelineArgsMutableBuilder[Self <: PipelineArgs] (val x: Self) extends AnyVal {
+    extension [Self <: PipelineArgs](x: Self) {
       
-      @scala.inline
-      def setAwsKmsKeyArn(value: Input[String]): Self = StObject.set(x, "awsKmsKeyArn", value.asInstanceOf[js.Any])
+      inline def setAwsKmsKeyArn(value: Input[String]): Self = StObject.set(x, "awsKmsKeyArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAwsKmsKeyArnUndefined: Self = StObject.set(x, "awsKmsKeyArn", js.undefined)
+      inline def setAwsKmsKeyArnUndefined: Self = StObject.set(x, "awsKmsKeyArn", js.undefined)
       
-      @scala.inline
-      def setContentConfig(value: Input[typings.pulumiAws.inputMod.elastictranscoder.PipelineContentConfig]): Self = StObject.set(x, "contentConfig", value.asInstanceOf[js.Any])
+      inline def setContentConfig(value: Input[typings.pulumiAws.inputMod.elastictranscoder.PipelineContentConfig]): Self = StObject.set(x, "contentConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentConfigPermissions(
+      inline def setContentConfigPermissions(
         value: Input[
               js.Array[
                 Input[typings.pulumiAws.inputMod.elastictranscoder.PipelineContentConfigPermission]
@@ -207,44 +196,31 @@ object elastictranscoderPipelineMod {
             ]
       ): Self = StObject.set(x, "contentConfigPermissions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentConfigPermissionsUndefined: Self = StObject.set(x, "contentConfigPermissions", js.undefined)
+      inline def setContentConfigPermissionsUndefined: Self = StObject.set(x, "contentConfigPermissions", js.undefined)
       
-      @scala.inline
-      def setContentConfigPermissionsVarargs(value: Input[typings.pulumiAws.inputMod.elastictranscoder.PipelineContentConfigPermission]*): Self = StObject.set(x, "contentConfigPermissions", js.Array(value :_*))
+      inline def setContentConfigPermissionsVarargs(value: Input[typings.pulumiAws.inputMod.elastictranscoder.PipelineContentConfigPermission]*): Self = StObject.set(x, "contentConfigPermissions", js.Array(value :_*))
       
-      @scala.inline
-      def setContentConfigUndefined: Self = StObject.set(x, "contentConfig", js.undefined)
+      inline def setContentConfigUndefined: Self = StObject.set(x, "contentConfig", js.undefined)
       
-      @scala.inline
-      def setInputBucket(value: Input[String]): Self = StObject.set(x, "inputBucket", value.asInstanceOf[js.Any])
+      inline def setInputBucket(value: Input[String]): Self = StObject.set(x, "inputBucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNotifications(value: Input[typings.pulumiAws.inputMod.elastictranscoder.PipelineNotifications]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
+      inline def setNotifications(value: Input[typings.pulumiAws.inputMod.elastictranscoder.PipelineNotifications]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotificationsUndefined: Self = StObject.set(x, "notifications", js.undefined)
+      inline def setNotificationsUndefined: Self = StObject.set(x, "notifications", js.undefined)
       
-      @scala.inline
-      def setOutputBucket(value: Input[String]): Self = StObject.set(x, "outputBucket", value.asInstanceOf[js.Any])
+      inline def setOutputBucket(value: Input[String]): Self = StObject.set(x, "outputBucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputBucketUndefined: Self = StObject.set(x, "outputBucket", js.undefined)
+      inline def setOutputBucketUndefined: Self = StObject.set(x, "outputBucket", js.undefined)
       
-      @scala.inline
-      def setRole(value: Input[String]): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: Input[String]): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnailConfig(value: Input[typings.pulumiAws.inputMod.elastictranscoder.PipelineThumbnailConfig]): Self = StObject.set(x, "thumbnailConfig", value.asInstanceOf[js.Any])
+      inline def setThumbnailConfig(value: Input[typings.pulumiAws.inputMod.elastictranscoder.PipelineThumbnailConfig]): Self = StObject.set(x, "thumbnailConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnailConfigPermissions(
+      inline def setThumbnailConfigPermissions(
         value: Input[
               js.Array[
                 Input[typings.pulumiAws.inputMod.elastictranscoder.PipelineThumbnailConfigPermission]
@@ -252,14 +228,11 @@ object elastictranscoderPipelineMod {
             ]
       ): Self = StObject.set(x, "thumbnailConfigPermissions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnailConfigPermissionsUndefined: Self = StObject.set(x, "thumbnailConfigPermissions", js.undefined)
+      inline def setThumbnailConfigPermissionsUndefined: Self = StObject.set(x, "thumbnailConfigPermissions", js.undefined)
       
-      @scala.inline
-      def setThumbnailConfigPermissionsVarargs(value: Input[typings.pulumiAws.inputMod.elastictranscoder.PipelineThumbnailConfigPermission]*): Self = StObject.set(x, "thumbnailConfigPermissions", js.Array(value :_*))
+      inline def setThumbnailConfigPermissionsVarargs(value: Input[typings.pulumiAws.inputMod.elastictranscoder.PipelineThumbnailConfigPermission]*): Self = StObject.set(x, "thumbnailConfigPermissions", js.Array(value :_*))
       
-      @scala.inline
-      def setThumbnailConfigUndefined: Self = StObject.set(x, "thumbnailConfig", js.undefined)
+      inline def setThumbnailConfigUndefined: Self = StObject.set(x, "thumbnailConfig", js.undefined)
     }
   }
   
@@ -331,32 +304,24 @@ object elastictranscoderPipelineMod {
   }
   object PipelineState {
     
-    @scala.inline
-    def apply(): PipelineState = {
+    inline def apply(): PipelineState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PipelineState]
     }
     
-    @scala.inline
-    implicit class PipelineStateMutableBuilder[Self <: PipelineState] (val x: Self) extends AnyVal {
+    extension [Self <: PipelineState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setAwsKmsKeyArn(value: Input[String]): Self = StObject.set(x, "awsKmsKeyArn", value.asInstanceOf[js.Any])
+      inline def setAwsKmsKeyArn(value: Input[String]): Self = StObject.set(x, "awsKmsKeyArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAwsKmsKeyArnUndefined: Self = StObject.set(x, "awsKmsKeyArn", js.undefined)
+      inline def setAwsKmsKeyArnUndefined: Self = StObject.set(x, "awsKmsKeyArn", js.undefined)
       
-      @scala.inline
-      def setContentConfig(value: Input[typings.pulumiAws.inputMod.elastictranscoder.PipelineContentConfig]): Self = StObject.set(x, "contentConfig", value.asInstanceOf[js.Any])
+      inline def setContentConfig(value: Input[typings.pulumiAws.inputMod.elastictranscoder.PipelineContentConfig]): Self = StObject.set(x, "contentConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentConfigPermissions(
+      inline def setContentConfigPermissions(
         value: Input[
               js.Array[
                 Input[typings.pulumiAws.inputMod.elastictranscoder.PipelineContentConfigPermission]
@@ -364,50 +329,35 @@ object elastictranscoderPipelineMod {
             ]
       ): Self = StObject.set(x, "contentConfigPermissions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentConfigPermissionsUndefined: Self = StObject.set(x, "contentConfigPermissions", js.undefined)
+      inline def setContentConfigPermissionsUndefined: Self = StObject.set(x, "contentConfigPermissions", js.undefined)
       
-      @scala.inline
-      def setContentConfigPermissionsVarargs(value: Input[typings.pulumiAws.inputMod.elastictranscoder.PipelineContentConfigPermission]*): Self = StObject.set(x, "contentConfigPermissions", js.Array(value :_*))
+      inline def setContentConfigPermissionsVarargs(value: Input[typings.pulumiAws.inputMod.elastictranscoder.PipelineContentConfigPermission]*): Self = StObject.set(x, "contentConfigPermissions", js.Array(value :_*))
       
-      @scala.inline
-      def setContentConfigUndefined: Self = StObject.set(x, "contentConfig", js.undefined)
+      inline def setContentConfigUndefined: Self = StObject.set(x, "contentConfig", js.undefined)
       
-      @scala.inline
-      def setInputBucket(value: Input[String]): Self = StObject.set(x, "inputBucket", value.asInstanceOf[js.Any])
+      inline def setInputBucket(value: Input[String]): Self = StObject.set(x, "inputBucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputBucketUndefined: Self = StObject.set(x, "inputBucket", js.undefined)
+      inline def setInputBucketUndefined: Self = StObject.set(x, "inputBucket", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNotifications(value: Input[typings.pulumiAws.inputMod.elastictranscoder.PipelineNotifications]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
+      inline def setNotifications(value: Input[typings.pulumiAws.inputMod.elastictranscoder.PipelineNotifications]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotificationsUndefined: Self = StObject.set(x, "notifications", js.undefined)
+      inline def setNotificationsUndefined: Self = StObject.set(x, "notifications", js.undefined)
       
-      @scala.inline
-      def setOutputBucket(value: Input[String]): Self = StObject.set(x, "outputBucket", value.asInstanceOf[js.Any])
+      inline def setOutputBucket(value: Input[String]): Self = StObject.set(x, "outputBucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputBucketUndefined: Self = StObject.set(x, "outputBucket", js.undefined)
+      inline def setOutputBucketUndefined: Self = StObject.set(x, "outputBucket", js.undefined)
       
-      @scala.inline
-      def setRole(value: Input[String]): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: Input[String]): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
-      @scala.inline
-      def setThumbnailConfig(value: Input[typings.pulumiAws.inputMod.elastictranscoder.PipelineThumbnailConfig]): Self = StObject.set(x, "thumbnailConfig", value.asInstanceOf[js.Any])
+      inline def setThumbnailConfig(value: Input[typings.pulumiAws.inputMod.elastictranscoder.PipelineThumbnailConfig]): Self = StObject.set(x, "thumbnailConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnailConfigPermissions(
+      inline def setThumbnailConfigPermissions(
         value: Input[
               js.Array[
                 Input[typings.pulumiAws.inputMod.elastictranscoder.PipelineThumbnailConfigPermission]
@@ -415,14 +365,11 @@ object elastictranscoderPipelineMod {
             ]
       ): Self = StObject.set(x, "thumbnailConfigPermissions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnailConfigPermissionsUndefined: Self = StObject.set(x, "thumbnailConfigPermissions", js.undefined)
+      inline def setThumbnailConfigPermissionsUndefined: Self = StObject.set(x, "thumbnailConfigPermissions", js.undefined)
       
-      @scala.inline
-      def setThumbnailConfigPermissionsVarargs(value: Input[typings.pulumiAws.inputMod.elastictranscoder.PipelineThumbnailConfigPermission]*): Self = StObject.set(x, "thumbnailConfigPermissions", js.Array(value :_*))
+      inline def setThumbnailConfigPermissionsVarargs(value: Input[typings.pulumiAws.inputMod.elastictranscoder.PipelineThumbnailConfigPermission]*): Self = StObject.set(x, "thumbnailConfigPermissions", js.Array(value :_*))
       
-      @scala.inline
-      def setThumbnailConfigUndefined: Self = StObject.set(x, "thumbnailConfig", js.undefined)
+      inline def setThumbnailConfigUndefined: Self = StObject.set(x, "thumbnailConfig", js.undefined)
     }
   }
 }

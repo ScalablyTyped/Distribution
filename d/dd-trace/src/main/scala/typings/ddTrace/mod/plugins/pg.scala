@@ -20,22 +20,17 @@ trait pg
 }
 object pg {
   
-  @scala.inline
-  def apply(): pg = {
+  inline def apply(): pg = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[pg]
   }
   
-  @scala.inline
-  implicit class pgMutableBuilder[Self <: pg] (val x: Self) extends AnyVal {
+  extension [Self <: pg](x: Self) {
     
-    @scala.inline
-    def setService(value: String | (js.Function1[/* params */ js.Any, String])): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    inline def setService(value: String | (js.Function1[/* params */ js.Any, String])): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceFunction1(value: /* params */ js.Any => String): Self = StObject.set(x, "service", js.Any.fromFunction1(value))
+    inline def setServiceFunction1(value: /* params */ js.Any => String): Self = StObject.set(x, "service", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+    inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
   }
 }

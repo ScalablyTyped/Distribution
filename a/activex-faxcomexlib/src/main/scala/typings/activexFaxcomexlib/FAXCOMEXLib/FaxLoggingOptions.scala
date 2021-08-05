@@ -13,13 +13,12 @@ trait FaxLoggingOptions extends StObject {
   /** Event logging configuration object */
   val EventLogging: FaxEventLogging
   
-  @JSName("FAXCOMEXLib.FaxLoggingOptions_typekey")
+  /* private */ @JSName("FAXCOMEXLib.FaxLoggingOptions_typekey")
   var FAXCOMEXLibDotFaxLoggingOptions_typekey: FaxLoggingOptions
 }
 object FaxLoggingOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActivityLogging: FaxActivityLogging,
     EventLogging: FaxEventLogging,
     FAXCOMEXLibDotFaxLoggingOptions_typekey: FaxLoggingOptions
@@ -29,16 +28,12 @@ object FaxLoggingOptions {
     __obj.asInstanceOf[FaxLoggingOptions]
   }
   
-  @scala.inline
-  implicit class FaxLoggingOptionsMutableBuilder[Self <: FaxLoggingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FaxLoggingOptions](x: Self) {
     
-    @scala.inline
-    def setActivityLogging(value: FaxActivityLogging): Self = StObject.set(x, "ActivityLogging", value.asInstanceOf[js.Any])
+    inline def setActivityLogging(value: FaxActivityLogging): Self = StObject.set(x, "ActivityLogging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventLogging(value: FaxEventLogging): Self = StObject.set(x, "EventLogging", value.asInstanceOf[js.Any])
+    inline def setEventLogging(value: FaxEventLogging): Self = StObject.set(x, "EventLogging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFAXCOMEXLibDotFaxLoggingOptions_typekey(value: FaxLoggingOptions): Self = StObject.set(x, "FAXCOMEXLib.FaxLoggingOptions_typekey", value.asInstanceOf[js.Any])
+    inline def setFAXCOMEXLibDotFaxLoggingOptions_typekey(value: FaxLoggingOptions): Self = StObject.set(x, "FAXCOMEXLib.FaxLoggingOptions_typekey", value.asInstanceOf[js.Any])
   }
 }

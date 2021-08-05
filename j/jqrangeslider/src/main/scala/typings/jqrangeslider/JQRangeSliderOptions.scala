@@ -40,82 +40,57 @@ trait JQRangeSliderOptions extends StObject {
 }
 object JQRangeSliderOptions {
   
-  @scala.inline
-  def apply(): JQRangeSliderOptions = {
+  inline def apply(): JQRangeSliderOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JQRangeSliderOptions]
   }
   
-  @scala.inline
-  implicit class JQRangeSliderOptionsMutableBuilder[Self <: JQRangeSliderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: JQRangeSliderOptions](x: Self) {
     
-    @scala.inline
-    def setArrows(value: Boolean): Self = StObject.set(x, "arrows", value.asInstanceOf[js.Any])
+    inline def setArrows(value: Boolean): Self = StObject.set(x, "arrows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrowsUndefined: Self = StObject.set(x, "arrows", js.undefined)
+    inline def setArrowsUndefined: Self = StObject.set(x, "arrows", js.undefined)
     
-    @scala.inline
-    def setDelayOut(value: Double): Self = StObject.set(x, "delayOut", value.asInstanceOf[js.Any])
+    inline def setDelayOut(value: Double): Self = StObject.set(x, "delayOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayOutUndefined: Self = StObject.set(x, "delayOut", js.undefined)
+    inline def setDelayOutUndefined: Self = StObject.set(x, "delayOut", js.undefined)
     
-    @scala.inline
-    def setDurationIn(value: Double): Self = StObject.set(x, "durationIn", value.asInstanceOf[js.Any])
+    inline def setDurationIn(value: Double): Self = StObject.set(x, "durationIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationInUndefined: Self = StObject.set(x, "durationIn", js.undefined)
+    inline def setDurationInUndefined: Self = StObject.set(x, "durationIn", js.undefined)
     
-    @scala.inline
-    def setDurationOut(value: Double): Self = StObject.set(x, "durationOut", value.asInstanceOf[js.Any])
+    inline def setDurationOut(value: Double): Self = StObject.set(x, "durationOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationOutUndefined: Self = StObject.set(x, "durationOut", js.undefined)
+    inline def setDurationOutUndefined: Self = StObject.set(x, "durationOut", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setRange(value: Boolean | JQRangeSliderRangeLength): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Boolean | JQRangeSliderRangeLength): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    @scala.inline
-    def setScales(value: js.Array[jQRangeSliderScale]): Self = StObject.set(x, "scales", value.asInstanceOf[js.Any])
+    inline def setScales(value: js.Array[jQRangeSliderScale]): Self = StObject.set(x, "scales", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalesUndefined: Self = StObject.set(x, "scales", js.undefined)
+    inline def setScalesUndefined: Self = StObject.set(x, "scales", js.undefined)
     
-    @scala.inline
-    def setScalesVarargs(value: jQRangeSliderScale*): Self = StObject.set(x, "scales", js.Array(value :_*))
+    inline def setScalesVarargs(value: jQRangeSliderScale*): Self = StObject.set(x, "scales", js.Array(value :_*))
     
-    @scala.inline
-    def setSymmetricPositionning(value: Boolean): Self = StObject.set(x, "symmetricPositionning", value.asInstanceOf[js.Any])
+    inline def setSymmetricPositionning(value: Boolean): Self = StObject.set(x, "symmetricPositionning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymmetricPositionningUndefined: Self = StObject.set(x, "symmetricPositionning", js.undefined)
+    inline def setSymmetricPositionningUndefined: Self = StObject.set(x, "symmetricPositionning", js.undefined)
     
-    @scala.inline
-    def setValueLabels(value: String): Self = StObject.set(x, "valueLabels", value.asInstanceOf[js.Any])
+    inline def setValueLabels(value: String): Self = StObject.set(x, "valueLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueLabelsUndefined: Self = StObject.set(x, "valueLabels", js.undefined)
+    inline def setValueLabelsUndefined: Self = StObject.set(x, "valueLabels", js.undefined)
     
-    @scala.inline
-    def setWheelMode(value: String): Self = StObject.set(x, "wheelMode", value.asInstanceOf[js.Any])
+    inline def setWheelMode(value: String): Self = StObject.set(x, "wheelMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWheelModeUndefined: Self = StObject.set(x, "wheelMode", js.undefined)
+    inline def setWheelModeUndefined: Self = StObject.set(x, "wheelMode", js.undefined)
     
-    @scala.inline
-    def setWheelSpeed(value: Double): Self = StObject.set(x, "wheelSpeed", value.asInstanceOf[js.Any])
+    inline def setWheelSpeed(value: Double): Self = StObject.set(x, "wheelSpeed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWheelSpeedUndefined: Self = StObject.set(x, "wheelSpeed", js.undefined)
+    inline def setWheelSpeedUndefined: Self = StObject.set(x, "wheelSpeed", js.undefined)
   }
 }

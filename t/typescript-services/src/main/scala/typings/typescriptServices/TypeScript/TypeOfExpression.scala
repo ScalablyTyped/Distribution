@@ -14,8 +14,7 @@ trait TypeOfExpression
 }
 object TypeOfExpression {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -42,13 +41,10 @@ object TypeOfExpression {
     __obj.asInstanceOf[TypeOfExpression]
   }
   
-  @scala.inline
-  implicit class TypeOfExpressionMutableBuilder[Self <: TypeOfExpression] (val x: Self) extends AnyVal {
+  extension [Self <: TypeOfExpression](x: Self) {
     
-    @scala.inline
-    def setExpression(value: AST): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: AST): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructuralEquals(value: (TypeOfExpression, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (TypeOfExpression, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
   }
 }

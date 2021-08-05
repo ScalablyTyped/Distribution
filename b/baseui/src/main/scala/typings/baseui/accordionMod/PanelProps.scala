@@ -12,19 +12,15 @@ trait PanelProps
 }
 object PanelProps {
   
-  @scala.inline
-  def apply(): PanelProps = {
+  inline def apply(): PanelProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PanelProps]
   }
   
-  @scala.inline
-  implicit class PanelPropsMutableBuilder[Self <: PanelProps] (val x: Self) extends AnyVal {
+  extension [Self <: PanelProps](x: Self) {
     
-    @scala.inline
-    def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+    inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
+    inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
   }
 }

@@ -10,19 +10,15 @@ trait AnnotationsMeasureControlPointOptions extends StObject {
 }
 object AnnotationsMeasureControlPointOptions {
   
-  @scala.inline
-  def apply(): AnnotationsMeasureControlPointOptions = {
+  inline def apply(): AnnotationsMeasureControlPointOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnnotationsMeasureControlPointOptions]
   }
   
-  @scala.inline
-  implicit class AnnotationsMeasureControlPointOptionsMutableBuilder[Self <: AnnotationsMeasureControlPointOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AnnotationsMeasureControlPointOptions](x: Self) {
     
-    @scala.inline
-    def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
   }
 }

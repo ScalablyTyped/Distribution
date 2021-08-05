@@ -15,8 +15,7 @@ object injectableCompiler2Mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def compileInjectable(meta: R3InjectableMetadata): InjectableDef = ^.asInstanceOf[js.Dynamic].applyDynamic("compileInjectable")(meta.asInstanceOf[js.Any]).asInstanceOf[InjectableDef]
+  inline def compileInjectable(meta: R3InjectableMetadata): InjectableDef = ^.asInstanceOf[js.Dynamic].applyDynamic("compileInjectable")(meta.asInstanceOf[js.Any]).asInstanceOf[InjectableDef]
   
   trait InjectableDef extends StObject {
     
@@ -28,27 +27,21 @@ object injectableCompiler2Mod {
   }
   object InjectableDef {
     
-    @scala.inline
-    def apply(expression: Expression, statements: js.Array[Statement], `type`: Type): InjectableDef = {
+    inline def apply(expression: Expression, statements: js.Array[Statement], `type`: Type): InjectableDef = {
       val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], statements = statements.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[InjectableDef]
     }
     
-    @scala.inline
-    implicit class InjectableDefMutableBuilder[Self <: InjectableDef] (val x: Self) extends AnyVal {
+    extension [Self <: InjectableDef](x: Self) {
       
-      @scala.inline
-      def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+      inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatements(value: js.Array[Statement]): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
+      inline def setStatements(value: js.Array[Statement]): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatementsVarargs(value: Statement*): Self = StObject.set(x, "statements", js.Array(value :_*))
+      inline def setStatementsVarargs(value: Statement*): Self = StObject.set(x, "statements", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -76,8 +69,7 @@ object injectableCompiler2Mod {
   }
   object R3InjectableMetadata {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       internalType: Expression,
       name: String,
       providedIn: Expression,
@@ -89,56 +81,39 @@ object injectableCompiler2Mod {
       __obj.asInstanceOf[R3InjectableMetadata]
     }
     
-    @scala.inline
-    implicit class R3InjectableMetadataMutableBuilder[Self <: R3InjectableMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: R3InjectableMetadata](x: Self) {
       
-      @scala.inline
-      def setInternalType(value: Expression): Self = StObject.set(x, "internalType", value.asInstanceOf[js.Any])
+      inline def setInternalType(value: Expression): Self = StObject.set(x, "internalType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvidedIn(value: Expression): Self = StObject.set(x, "providedIn", value.asInstanceOf[js.Any])
+      inline def setProvidedIn(value: Expression): Self = StObject.set(x, "providedIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: R3Reference): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: R3Reference): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeArgumentCount(value: Double): Self = StObject.set(x, "typeArgumentCount", value.asInstanceOf[js.Any])
+      inline def setTypeArgumentCount(value: Double): Self = StObject.set(x, "typeArgumentCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseClass(value: Expression): Self = StObject.set(x, "useClass", value.asInstanceOf[js.Any])
+      inline def setUseClass(value: Expression): Self = StObject.set(x, "useClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseClassUndefined: Self = StObject.set(x, "useClass", js.undefined)
+      inline def setUseClassUndefined: Self = StObject.set(x, "useClass", js.undefined)
       
-      @scala.inline
-      def setUseExisting(value: Expression): Self = StObject.set(x, "useExisting", value.asInstanceOf[js.Any])
+      inline def setUseExisting(value: Expression): Self = StObject.set(x, "useExisting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseExistingUndefined: Self = StObject.set(x, "useExisting", js.undefined)
+      inline def setUseExistingUndefined: Self = StObject.set(x, "useExisting", js.undefined)
       
-      @scala.inline
-      def setUseFactory(value: Expression): Self = StObject.set(x, "useFactory", value.asInstanceOf[js.Any])
+      inline def setUseFactory(value: Expression): Self = StObject.set(x, "useFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseFactoryUndefined: Self = StObject.set(x, "useFactory", js.undefined)
+      inline def setUseFactoryUndefined: Self = StObject.set(x, "useFactory", js.undefined)
       
-      @scala.inline
-      def setUseValue(value: Expression): Self = StObject.set(x, "useValue", value.asInstanceOf[js.Any])
+      inline def setUseValue(value: Expression): Self = StObject.set(x, "useValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseValueUndefined: Self = StObject.set(x, "useValue", js.undefined)
+      inline def setUseValueUndefined: Self = StObject.set(x, "useValue", js.undefined)
       
-      @scala.inline
-      def setUserDeps(value: js.Array[R3DependencyMetadata]): Self = StObject.set(x, "userDeps", value.asInstanceOf[js.Any])
+      inline def setUserDeps(value: js.Array[R3DependencyMetadata]): Self = StObject.set(x, "userDeps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserDepsUndefined: Self = StObject.set(x, "userDeps", js.undefined)
+      inline def setUserDepsUndefined: Self = StObject.set(x, "userDeps", js.undefined)
       
-      @scala.inline
-      def setUserDepsVarargs(value: R3DependencyMetadata*): Self = StObject.set(x, "userDeps", js.Array(value :_*))
+      inline def setUserDepsVarargs(value: R3DependencyMetadata*): Self = StObject.set(x, "userDeps", js.Array(value :_*))
     }
   }
 }

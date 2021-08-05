@@ -22,19 +22,15 @@ trait OlapResultCell extends StObject {
 }
 object OlapResultCell {
   
-  @scala.inline
-  def apply(cellOrdinal: js.Object => Double, properties: js.Object => js.Object): OlapResultCell = {
+  inline def apply(cellOrdinal: js.Object => Double, properties: js.Object => js.Object): OlapResultCell = {
     val __obj = js.Dynamic.literal(cellOrdinal = js.Any.fromFunction1(cellOrdinal), properties = js.Any.fromFunction1(properties))
     __obj.asInstanceOf[OlapResultCell]
   }
   
-  @scala.inline
-  implicit class OlapResultCellMutableBuilder[Self <: OlapResultCell] (val x: Self) extends AnyVal {
+  extension [Self <: OlapResultCell](x: Self) {
     
-    @scala.inline
-    def setCellOrdinal(value: js.Object => Double): Self = StObject.set(x, "cellOrdinal", js.Any.fromFunction1(value))
+    inline def setCellOrdinal(value: js.Object => Double): Self = StObject.set(x, "cellOrdinal", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setProperties(value: js.Object => js.Object): Self = StObject.set(x, "properties", js.Any.fromFunction1(value))
+    inline def setProperties(value: js.Object => js.Object): Self = StObject.set(x, "properties", js.Any.fromFunction1(value))
   }
 }

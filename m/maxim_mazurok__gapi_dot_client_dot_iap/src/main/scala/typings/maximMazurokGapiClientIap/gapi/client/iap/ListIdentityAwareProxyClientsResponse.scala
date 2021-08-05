@@ -14,28 +14,21 @@ trait ListIdentityAwareProxyClientsResponse extends StObject {
 }
 object ListIdentityAwareProxyClientsResponse {
   
-  @scala.inline
-  def apply(): ListIdentityAwareProxyClientsResponse = {
+  inline def apply(): ListIdentityAwareProxyClientsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListIdentityAwareProxyClientsResponse]
   }
   
-  @scala.inline
-  implicit class ListIdentityAwareProxyClientsResponseMutableBuilder[Self <: ListIdentityAwareProxyClientsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListIdentityAwareProxyClientsResponse](x: Self) {
     
-    @scala.inline
-    def setIdentityAwareProxyClients(value: js.Array[IdentityAwareProxyClient]): Self = StObject.set(x, "identityAwareProxyClients", value.asInstanceOf[js.Any])
+    inline def setIdentityAwareProxyClients(value: js.Array[IdentityAwareProxyClient]): Self = StObject.set(x, "identityAwareProxyClients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityAwareProxyClientsUndefined: Self = StObject.set(x, "identityAwareProxyClients", js.undefined)
+    inline def setIdentityAwareProxyClientsUndefined: Self = StObject.set(x, "identityAwareProxyClients", js.undefined)
     
-    @scala.inline
-    def setIdentityAwareProxyClientsVarargs(value: IdentityAwareProxyClient*): Self = StObject.set(x, "identityAwareProxyClients", js.Array(value :_*))
+    inline def setIdentityAwareProxyClientsVarargs(value: IdentityAwareProxyClient*): Self = StObject.set(x, "identityAwareProxyClients", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

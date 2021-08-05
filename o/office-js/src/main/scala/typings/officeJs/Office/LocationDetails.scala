@@ -23,22 +23,17 @@ trait LocationDetails extends StObject {
 }
 object LocationDetails {
   
-  @scala.inline
-  def apply(displayName: String, emailAddress: String, locationIdentifier: LocationIdentifier): LocationDetails = {
+  inline def apply(displayName: String, emailAddress: String, locationIdentifier: LocationIdentifier): LocationDetails = {
     val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], emailAddress = emailAddress.asInstanceOf[js.Any], locationIdentifier = locationIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationDetails]
   }
   
-  @scala.inline
-  implicit class LocationDetailsMutableBuilder[Self <: LocationDetails] (val x: Self) extends AnyVal {
+  extension [Self <: LocationDetails](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
+    inline def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationIdentifier(value: LocationIdentifier): Self = StObject.set(x, "locationIdentifier", value.asInstanceOf[js.Any])
+    inline def setLocationIdentifier(value: LocationIdentifier): Self = StObject.set(x, "locationIdentifier", value.asInstanceOf[js.Any])
   }
 }

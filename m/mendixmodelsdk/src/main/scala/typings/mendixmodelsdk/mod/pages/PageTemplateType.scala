@@ -21,20 +21,17 @@ object PageTemplateType {
   @JSImport("mendixmodelsdk", "pages.PageTemplateType.Edit")
   @js.native
   def Edit: typings.mendixmodelsdk.pagesMod.pages.PageTemplateType = js.native
-  @scala.inline
-  def Edit_=(x: typings.mendixmodelsdk.pagesMod.pages.PageTemplateType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Edit")(x.asInstanceOf[js.Any])
+  inline def Edit_=(x: typings.mendixmodelsdk.pagesMod.pages.PageTemplateType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Edit")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.PageTemplateType.Select")
   @js.native
   def Select: typings.mendixmodelsdk.pagesMod.pages.PageTemplateType = js.native
-  @scala.inline
-  def Select_=(x: typings.mendixmodelsdk.pagesMod.pages.PageTemplateType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Select")(x.asInstanceOf[js.Any])
+  inline def Select_=(x: typings.mendixmodelsdk.pagesMod.pages.PageTemplateType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Select")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.PageTemplateType.Standard")
   @js.native
   def Standard: typings.mendixmodelsdk.pagesMod.pages.PageTemplateType = js.native
-  @scala.inline
-  def Standard_=(x: typings.mendixmodelsdk.pagesMod.pages.PageTemplateType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Standard")(x.asInstanceOf[js.Any])
+  inline def Standard_=(x: typings.mendixmodelsdk.pagesMod.pages.PageTemplateType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Standard")(x.asInstanceOf[js.Any])
 }

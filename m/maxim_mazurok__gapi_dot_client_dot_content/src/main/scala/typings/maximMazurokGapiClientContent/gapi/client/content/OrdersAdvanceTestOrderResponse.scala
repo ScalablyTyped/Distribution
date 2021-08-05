@@ -11,19 +11,15 @@ trait OrdersAdvanceTestOrderResponse extends StObject {
 }
 object OrdersAdvanceTestOrderResponse {
   
-  @scala.inline
-  def apply(): OrdersAdvanceTestOrderResponse = {
+  inline def apply(): OrdersAdvanceTestOrderResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrdersAdvanceTestOrderResponse]
   }
   
-  @scala.inline
-  implicit class OrdersAdvanceTestOrderResponseMutableBuilder[Self <: OrdersAdvanceTestOrderResponse] (val x: Self) extends AnyVal {
+  extension [Self <: OrdersAdvanceTestOrderResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

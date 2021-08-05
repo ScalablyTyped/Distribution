@@ -13,6 +13,5 @@ object stylerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasOnReadOnRenderUncachedValuesUseCache: Config): js.Function1[/* hasProps */ js.UndefOr[Props], Styler] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasOnReadOnRenderUncachedValuesUseCache.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* hasProps */ js.UndefOr[Props], Styler]]
+  inline def default(hasOnReadOnRenderUncachedValuesUseCache: Config): js.Function1[/* hasProps */ js.UndefOr[Props], Styler] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasOnReadOnRenderUncachedValuesUseCache.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* hasProps */ js.UndefOr[Props], Styler]]
 }

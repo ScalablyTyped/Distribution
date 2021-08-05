@@ -28,19 +28,16 @@ object toHaveNumberWithinRangeMod {
       }
       object Matchers {
         
-        @scala.inline
-        def apply[T](
+        inline def apply[T](
           toHaveNumberWithinRange: (/* key */ String, /* floor */ Double, /* ceiling */ Double, /* expectationFailOutput */ js.UndefOr[js.Any]) => Boolean
         ): Matchers[T] = {
           val __obj = js.Dynamic.literal(toHaveNumberWithinRange = js.Any.fromFunction4(toHaveNumberWithinRange))
           __obj.asInstanceOf[Matchers[T]]
         }
         
-        @scala.inline
-        implicit class MatchersMutableBuilder[Self <: Matchers[?], T] (val x: Self & Matchers[T]) extends AnyVal {
+        extension [Self <: Matchers[?], T](x: Self & Matchers[T]) {
           
-          @scala.inline
-          def setToHaveNumberWithinRange(
+          inline def setToHaveNumberWithinRange(
             value: (/* key */ String, /* floor */ Double, /* ceiling */ Double, /* expectationFailOutput */ js.UndefOr[js.Any]) => Boolean
           ): Self = StObject.set(x, "toHaveNumberWithinRange", js.Any.fromFunction4(value))
         }

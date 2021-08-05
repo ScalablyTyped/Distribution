@@ -12,19 +12,15 @@ trait Ahead extends StObject {
 }
 object Ahead {
   
-  @scala.inline
-  def apply(ahead: Double, behind: Double): Ahead = {
+  inline def apply(ahead: Double, behind: Double): Ahead = {
     val __obj = js.Dynamic.literal(ahead = ahead.asInstanceOf[js.Any], behind = behind.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ahead]
   }
   
-  @scala.inline
-  implicit class AheadMutableBuilder[Self <: Ahead] (val x: Self) extends AnyVal {
+  extension [Self <: Ahead](x: Self) {
     
-    @scala.inline
-    def setAhead(value: Double): Self = StObject.set(x, "ahead", value.asInstanceOf[js.Any])
+    inline def setAhead(value: Double): Self = StObject.set(x, "ahead", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBehind(value: Double): Self = StObject.set(x, "behind", value.asInstanceOf[js.Any])
+    inline def setBehind(value: Double): Self = StObject.set(x, "behind", value.asInstanceOf[js.Any])
   }
 }

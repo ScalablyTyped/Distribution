@@ -15,20 +15,16 @@ object anon {
   }
   object PickDisplayNamesOptionslo {
     
-    @scala.inline
-    def apply(): PickDisplayNamesOptionslo = {
+    inline def apply(): PickDisplayNamesOptionslo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PickDisplayNamesOptionslo]
     }
     
-    @scala.inline
-    implicit class PickDisplayNamesOptionsloMutableBuilder[Self <: PickDisplayNamesOptionslo] (val x: Self) extends AnyVal {
+    extension [Self <: PickDisplayNamesOptionslo](x: Self) {
       
-      @scala.inline
-      def setLocaleMatcher(value: lookup | (`best fit`)): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
+      inline def setLocaleMatcher(value: lookup | (`best fit`)): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
+      inline def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
     }
   }
 }

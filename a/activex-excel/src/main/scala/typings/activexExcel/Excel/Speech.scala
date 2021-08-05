@@ -9,7 +9,7 @@ trait Speech extends StObject {
   
   var Direction: XlSpeakDirection = js.native
   
-  @JSName("Excel.Speech_typekey")
+  /* private */ @JSName("Excel.Speech_typekey")
   var ExcelDotSpeech_typekey: Speech = js.native
   
   def Speak(Text: String): Unit = js.native

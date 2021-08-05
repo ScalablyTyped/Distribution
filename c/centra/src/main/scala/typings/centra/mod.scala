@@ -193,8 +193,7 @@ object mod extends Shortcut {
   }
   object Response {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       body: Buffer,
       coreRes: IncomingMessage,
       headers: IncomingHttpHeaders,
@@ -205,29 +204,21 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Response]
     }
     
-    @scala.inline
-    implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
+    extension [Self <: Response](x: Self) {
       
-      @scala.inline
-      def setBody(value: Buffer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: Buffer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoreRes(value: IncomingMessage): Self = StObject.set(x, "coreRes", value.asInstanceOf[js.Any])
+      inline def setCoreRes(value: IncomingMessage): Self = StObject.set(x, "coreRes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: IncomingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: IncomingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJson(value: () => js.Promise[js.Any]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
+      inline def setJson(value: () => js.Promise[js.Any]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+      inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
       
-      @scala.inline
-      def setText(value: () => js.Promise[String]): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
+      inline def setText(value: () => js.Promise[String]): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
     }
   }
   

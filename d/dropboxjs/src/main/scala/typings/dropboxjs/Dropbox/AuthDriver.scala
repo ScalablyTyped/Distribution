@@ -20,8 +20,7 @@ trait AuthDriver extends StObject {
 }
 object AuthDriver {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     authType: () => String,
     doAuthorize: (String, String, Client, QueryParamsCallback) => Unit,
     getStateParam: (Client, js.Function1[/* state */ String, Unit]) => Unit,
@@ -33,26 +32,19 @@ object AuthDriver {
     __obj.asInstanceOf[AuthDriver]
   }
   
-  @scala.inline
-  implicit class AuthDriverMutableBuilder[Self <: AuthDriver] (val x: Self) extends AnyVal {
+  extension [Self <: AuthDriver](x: Self) {
     
-    @scala.inline
-    def setAuthType(value: () => String): Self = StObject.set(x, "authType", js.Any.fromFunction0(value))
+    inline def setAuthType(value: () => String): Self = StObject.set(x, "authType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDoAuthorize(value: (String, String, Client, QueryParamsCallback) => Unit): Self = StObject.set(x, "doAuthorize", js.Any.fromFunction4(value))
+    inline def setDoAuthorize(value: (String, String, Client, QueryParamsCallback) => Unit): Self = StObject.set(x, "doAuthorize", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setGetStateParam(value: (Client, js.Function1[/* state */ String, Unit]) => Unit): Self = StObject.set(x, "getStateParam", js.Any.fromFunction2(value))
+    inline def setGetStateParam(value: (Client, js.Function1[/* state */ String, Unit]) => Unit): Self = StObject.set(x, "getStateParam", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnAuthStepChange(value: (Client, js.Function0[Unit]) => Unit): Self = StObject.set(x, "onAuthStepChange", js.Any.fromFunction2(value))
+    inline def setOnAuthStepChange(value: (Client, js.Function0[Unit]) => Unit): Self = StObject.set(x, "onAuthStepChange", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setResumeAuthorize(value: (String, Client, QueryParamsCallback) => Unit): Self = StObject.set(x, "resumeAuthorize", js.Any.fromFunction3(value))
+    inline def setResumeAuthorize(value: (String, Client, QueryParamsCallback) => Unit): Self = StObject.set(x, "resumeAuthorize", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setUrl(value: () => String): Self = StObject.set(x, "url", js.Any.fromFunction0(value))
+    inline def setUrl(value: () => String): Self = StObject.set(x, "url", js.Any.fromFunction0(value))
   }
   
   trait BrowserBase extends StObject {
@@ -65,8 +57,7 @@ object AuthDriver {
   }
   object BrowserBase {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       authType: () => String,
       locationStateParam: String => String,
       onAuthStepChange: (Client, js.Function0[Unit]) => Unit
@@ -75,17 +66,13 @@ object AuthDriver {
       __obj.asInstanceOf[BrowserBase]
     }
     
-    @scala.inline
-    implicit class BrowserBaseMutableBuilder[Self <: BrowserBase] (val x: Self) extends AnyVal {
+    extension [Self <: BrowserBase](x: Self) {
       
-      @scala.inline
-      def setAuthType(value: () => String): Self = StObject.set(x, "authType", js.Any.fromFunction0(value))
+      inline def setAuthType(value: () => String): Self = StObject.set(x, "authType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLocationStateParam(value: String => String): Self = StObject.set(x, "locationStateParam", js.Any.fromFunction1(value))
+      inline def setLocationStateParam(value: String => String): Self = StObject.set(x, "locationStateParam", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAuthStepChange(value: (Client, js.Function0[Unit]) => Unit): Self = StObject.set(x, "onAuthStepChange", js.Any.fromFunction2(value))
+      inline def setOnAuthStepChange(value: (Client, js.Function0[Unit]) => Unit): Self = StObject.set(x, "onAuthStepChange", js.Any.fromFunction2(value))
     }
   }
   
@@ -148,8 +135,7 @@ object AuthDriver {
   }
   object Redirect {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       doAuthorize: (String, String, Client) => Unit,
       resumeAuthorize: (String, Client, QueryParamsCallback) => Unit,
       url: () => String
@@ -158,17 +144,13 @@ object AuthDriver {
       __obj.asInstanceOf[Redirect]
     }
     
-    @scala.inline
-    implicit class RedirectMutableBuilder[Self <: Redirect] (val x: Self) extends AnyVal {
+    extension [Self <: Redirect](x: Self) {
       
-      @scala.inline
-      def setDoAuthorize(value: (String, String, Client) => Unit): Self = StObject.set(x, "doAuthorize", js.Any.fromFunction3(value))
+      inline def setDoAuthorize(value: (String, String, Client) => Unit): Self = StObject.set(x, "doAuthorize", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setResumeAuthorize(value: (String, Client, QueryParamsCallback) => Unit): Self = StObject.set(x, "resumeAuthorize", js.Any.fromFunction3(value))
+      inline def setResumeAuthorize(value: (String, Client, QueryParamsCallback) => Unit): Self = StObject.set(x, "resumeAuthorize", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setUrl(value: () => String): Self = StObject.set(x, "url", js.Any.fromFunction0(value))
+      inline def setUrl(value: () => String): Self = StObject.set(x, "url", js.Any.fromFunction0(value))
     }
   }
 }

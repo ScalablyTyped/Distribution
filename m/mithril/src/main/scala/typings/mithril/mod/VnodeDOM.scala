@@ -19,22 +19,17 @@ trait VnodeDOM[Attrs, State /* <: Lifecycle[Attrs, State] */]
 }
 object VnodeDOM {
   
-  @scala.inline
-  def apply[Attrs, State /* <: Lifecycle[Attrs, State] */](attrs: Attrs, dom: Element, state: State, tag: String | (ComponentTypes[Attrs, State])): VnodeDOM[Attrs, State] = {
+  inline def apply[Attrs, State /* <: Lifecycle[Attrs, State] */](attrs: Attrs, dom: Element, state: State, tag: String | (ComponentTypes[Attrs, State])): VnodeDOM[Attrs, State] = {
     val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], dom = dom.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[VnodeDOM[Attrs, State]]
   }
   
-  @scala.inline
-  implicit class VnodeDOMMutableBuilder[Self <: VnodeDOM[?, ?], Attrs, State /* <: Lifecycle[Attrs, State] */] (val x: Self & (VnodeDOM[Attrs, State])) extends AnyVal {
+  extension [Self <: VnodeDOM[?, ?], Attrs, State /* <: Lifecycle[Attrs, State] */](x: Self & (VnodeDOM[Attrs, State])) {
     
-    @scala.inline
-    def setDom(value: Element): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
+    inline def setDom(value: Element): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomSize(value: Double): Self = StObject.set(x, "domSize", value.asInstanceOf[js.Any])
+    inline def setDomSize(value: Double): Self = StObject.set(x, "domSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomSizeUndefined: Self = StObject.set(x, "domSize", js.undefined)
+    inline def setDomSizeUndefined: Self = StObject.set(x, "domSize", js.undefined)
   }
 }

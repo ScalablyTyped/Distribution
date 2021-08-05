@@ -16,19 +16,15 @@ trait RoomStatusTemporary
 }
 object RoomStatusTemporary {
   
-  @scala.inline
-  def apply(status: novice | respawn, timestamp: Double): RoomStatusTemporary = {
+  inline def apply(status: novice | respawn, timestamp: Double): RoomStatusTemporary = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoomStatusTemporary]
   }
   
-  @scala.inline
-  implicit class RoomStatusTemporaryMutableBuilder[Self <: RoomStatusTemporary] (val x: Self) extends AnyVal {
+  extension [Self <: RoomStatusTemporary](x: Self) {
     
-    @scala.inline
-    def setStatus(value: novice | respawn): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: novice | respawn): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

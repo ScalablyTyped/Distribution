@@ -10,16 +10,13 @@ trait SignEventPayload extends StObject {
 }
 object SignEventPayload {
   
-  @scala.inline
-  def apply(signatureId: String): SignEventPayload = {
+  inline def apply(signatureId: String): SignEventPayload = {
     val __obj = js.Dynamic.literal(signatureId = signatureId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignEventPayload]
   }
   
-  @scala.inline
-  implicit class SignEventPayloadMutableBuilder[Self <: SignEventPayload] (val x: Self) extends AnyVal {
+  extension [Self <: SignEventPayload](x: Self) {
     
-    @scala.inline
-    def setSignatureId(value: String): Self = StObject.set(x, "signatureId", value.asInstanceOf[js.Any])
+    inline def setSignatureId(value: String): Self = StObject.set(x, "signatureId", value.asInstanceOf[js.Any])
   }
 }

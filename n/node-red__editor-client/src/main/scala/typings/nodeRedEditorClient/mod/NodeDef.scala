@@ -146,140 +146,97 @@ trait NodeDef[TProps /* <: NodeProperties */, TCreds, TInstProps /* <: TProps */
 }
 object NodeDef {
   
-  @scala.inline
-  def apply[TProps /* <: NodeProperties */, TCreds, TInstProps /* <: TProps */](category: config | String, defaults: NodePropertiesDef[TProps, TInstProps]): NodeDef[TProps, TCreds, TInstProps] = {
+  inline def apply[TProps /* <: NodeProperties */, TCreds, TInstProps /* <: TProps */](category: config | String, defaults: NodePropertiesDef[TProps, TInstProps]): NodeDef[TProps, TCreds, TInstProps] = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], defaults = defaults.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeDef[TProps, TCreds, TInstProps]]
   }
   
-  @scala.inline
-  implicit class NodeDefMutableBuilder[Self <: NodeDef[?, ?, ?], TProps /* <: NodeProperties */, TCreds, TInstProps /* <: TProps */] (val x: Self & (NodeDef[TProps, TCreds, TInstProps])) extends AnyVal {
+  extension [Self <: NodeDef[?, ?, ?], TProps /* <: NodeProperties */, TCreds, TInstProps /* <: TProps */](x: Self & (NodeDef[TProps, TCreds, TInstProps])) {
     
-    @scala.inline
-    def setAlign(value: left | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: left | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    @scala.inline
-    def setButton(value: Enabled[TInstProps, TProps]): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setButton(value: Enabled[TInstProps, TProps]): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+    inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
-    @scala.inline
-    def setCategory(value: config | String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: config | String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setCredentials(value: NodeCredentials[TCreds]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+    inline def setCredentials(value: NodeCredentials[TCreds]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
+    inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
     
-    @scala.inline
-    def setDefaults(value: NodePropertiesDef[TProps, TInstProps]): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+    inline def setDefaults(value: NodePropertiesDef[TProps, TInstProps]): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setInputLabels(value: String | (js.ThisFunction0[/* this */ NodeInstance[TInstProps], String])): Self = StObject.set(x, "inputLabels", value.asInstanceOf[js.Any])
+    inline def setInputLabels(value: String | (js.ThisFunction0[/* this */ NodeInstance[TInstProps], String])): Self = StObject.set(x, "inputLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputLabelsUndefined: Self = StObject.set(x, "inputLabels", js.undefined)
+    inline def setInputLabelsUndefined: Self = StObject.set(x, "inputLabels", js.undefined)
     
-    @scala.inline
-    def setInputs(value: `0` | `1`): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: `0` | `1`): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
+    inline def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String | (js.ThisFunction0[/* this */ NodeInstance[TInstProps], String])): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String | (js.ThisFunction0[/* this */ NodeInstance[TInstProps], String])): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelStyle(
+    inline def setLabelStyle(
       value: node_label | node_label_italic | String | (js.ThisFunction0[/* this */ NodeInstance[TInstProps], node_label | node_label_italic | String])
     ): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
+    inline def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setOneditcancel(value: js.ThisFunction0[/* this */ NodeInstance[TInstProps], Unit]): Self = StObject.set(x, "oneditcancel", value.asInstanceOf[js.Any])
+    inline def setOneditcancel(value: js.ThisFunction0[/* this */ NodeInstance[TInstProps], Unit]): Self = StObject.set(x, "oneditcancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneditcancelUndefined: Self = StObject.set(x, "oneditcancel", js.undefined)
+    inline def setOneditcancelUndefined: Self = StObject.set(x, "oneditcancel", js.undefined)
     
-    @scala.inline
-    def setOneditdelete(value: js.ThisFunction0[/* this */ NodeInstance[TInstProps], Unit]): Self = StObject.set(x, "oneditdelete", value.asInstanceOf[js.Any])
+    inline def setOneditdelete(value: js.ThisFunction0[/* this */ NodeInstance[TInstProps], Unit]): Self = StObject.set(x, "oneditdelete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneditdeleteUndefined: Self = StObject.set(x, "oneditdelete", js.undefined)
+    inline def setOneditdeleteUndefined: Self = StObject.set(x, "oneditdelete", js.undefined)
     
-    @scala.inline
-    def setOneditprepare(value: js.ThisFunction0[/* this */ NodeInstance[TInstProps], Unit]): Self = StObject.set(x, "oneditprepare", value.asInstanceOf[js.Any])
+    inline def setOneditprepare(value: js.ThisFunction0[/* this */ NodeInstance[TInstProps], Unit]): Self = StObject.set(x, "oneditprepare", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneditprepareUndefined: Self = StObject.set(x, "oneditprepare", js.undefined)
+    inline def setOneditprepareUndefined: Self = StObject.set(x, "oneditprepare", js.undefined)
     
-    @scala.inline
-    def setOneditresize(value: js.ThisFunction1[/* this */ NodeInstance[TInstProps], /* size */ Height, Unit]): Self = StObject.set(x, "oneditresize", value.asInstanceOf[js.Any])
+    inline def setOneditresize(value: js.ThisFunction1[/* this */ NodeInstance[TInstProps], /* size */ Height, Unit]): Self = StObject.set(x, "oneditresize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneditresizeUndefined: Self = StObject.set(x, "oneditresize", js.undefined)
+    inline def setOneditresizeUndefined: Self = StObject.set(x, "oneditresize", js.undefined)
     
-    @scala.inline
-    def setOneditsave(value: js.ThisFunction0[/* this */ NodeInstance[TInstProps], Unit]): Self = StObject.set(x, "oneditsave", value.asInstanceOf[js.Any])
+    inline def setOneditsave(value: js.ThisFunction0[/* this */ NodeInstance[TInstProps], Unit]): Self = StObject.set(x, "oneditsave", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneditsaveUndefined: Self = StObject.set(x, "oneditsave", js.undefined)
+    inline def setOneditsaveUndefined: Self = StObject.set(x, "oneditsave", js.undefined)
     
-    @scala.inline
-    def setOnpaletteadd(value: js.ThisFunction0[/* this */ NodeInstance[TInstProps], Unit]): Self = StObject.set(x, "onpaletteadd", value.asInstanceOf[js.Any])
+    inline def setOnpaletteadd(value: js.ThisFunction0[/* this */ NodeInstance[TInstProps], Unit]): Self = StObject.set(x, "onpaletteadd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnpaletteaddUndefined: Self = StObject.set(x, "onpaletteadd", js.undefined)
+    inline def setOnpaletteaddUndefined: Self = StObject.set(x, "onpaletteadd", js.undefined)
     
-    @scala.inline
-    def setOnpaletteremove(value: js.ThisFunction0[/* this */ NodeInstance[TInstProps], Unit]): Self = StObject.set(x, "onpaletteremove", value.asInstanceOf[js.Any])
+    inline def setOnpaletteremove(value: js.ThisFunction0[/* this */ NodeInstance[TInstProps], Unit]): Self = StObject.set(x, "onpaletteremove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnpaletteremoveUndefined: Self = StObject.set(x, "onpaletteremove", js.undefined)
+    inline def setOnpaletteremoveUndefined: Self = StObject.set(x, "onpaletteremove", js.undefined)
     
-    @scala.inline
-    def setOutputLabels(
+    inline def setOutputLabels(
       value: String | js.Array[String] | (js.ThisFunction1[/* this */ NodeInstance[TInstProps], /* idx */ Double, js.UndefOr[String]])
     ): Self = StObject.set(x, "outputLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputLabelsUndefined: Self = StObject.set(x, "outputLabels", js.undefined)
+    inline def setOutputLabelsUndefined: Self = StObject.set(x, "outputLabels", js.undefined)
     
-    @scala.inline
-    def setOutputLabelsVarargs(value: String*): Self = StObject.set(x, "outputLabels", js.Array(value :_*))
+    inline def setOutputLabelsVarargs(value: String*): Self = StObject.set(x, "outputLabels", js.Array(value :_*))
     
-    @scala.inline
-    def setOutputs(value: Double): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
+    inline def setOutputs(value: Double): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
+    inline def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
     
-    @scala.inline
-    def setPaletteLabel(value: String | (js.ThisFunction0[/* this */ NodeInstance[TInstProps], String])): Self = StObject.set(x, "paletteLabel", value.asInstanceOf[js.Any])
+    inline def setPaletteLabel(value: String | (js.ThisFunction0[/* this */ NodeInstance[TInstProps], String])): Self = StObject.set(x, "paletteLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaletteLabelUndefined: Self = StObject.set(x, "paletteLabel", js.undefined)
+    inline def setPaletteLabelUndefined: Self = StObject.set(x, "paletteLabel", js.undefined)
   }
 }

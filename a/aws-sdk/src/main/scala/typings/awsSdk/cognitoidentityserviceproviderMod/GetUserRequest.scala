@@ -13,16 +13,13 @@ trait GetUserRequest extends StObject {
 }
 object GetUserRequest {
   
-  @scala.inline
-  def apply(AccessToken: TokenModelType): GetUserRequest = {
+  inline def apply(AccessToken: TokenModelType): GetUserRequest = {
     val __obj = js.Dynamic.literal(AccessToken = AccessToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUserRequest]
   }
   
-  @scala.inline
-  implicit class GetUserRequestMutableBuilder[Self <: GetUserRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetUserRequest](x: Self) {
     
-    @scala.inline
-    def setAccessToken(value: TokenModelType): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
+    inline def setAccessToken(value: TokenModelType): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
   }
 }

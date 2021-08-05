@@ -28,37 +28,27 @@ trait SnapshotErrorMessage extends StObject {
 }
 object SnapshotErrorMessage {
   
-  @scala.inline
-  def apply(): SnapshotErrorMessage = {
+  inline def apply(): SnapshotErrorMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SnapshotErrorMessage]
   }
   
-  @scala.inline
-  implicit class SnapshotErrorMessageMutableBuilder[Self <: SnapshotErrorMessage] (val x: Self) extends AnyVal {
+  extension [Self <: SnapshotErrorMessage](x: Self) {
     
-    @scala.inline
-    def setFailureCode(value: String): Self = StObject.set(x, "FailureCode", value.asInstanceOf[js.Any])
+    inline def setFailureCode(value: String): Self = StObject.set(x, "FailureCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureCodeUndefined: Self = StObject.set(x, "FailureCode", js.undefined)
+    inline def setFailureCodeUndefined: Self = StObject.set(x, "FailureCode", js.undefined)
     
-    @scala.inline
-    def setFailureReason(value: String): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
+    inline def setFailureReason(value: String): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
+    inline def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
     
-    @scala.inline
-    def setSnapshotClusterIdentifier(value: String): Self = StObject.set(x, "SnapshotClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setSnapshotClusterIdentifier(value: String): Self = StObject.set(x, "SnapshotClusterIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotClusterIdentifierUndefined: Self = StObject.set(x, "SnapshotClusterIdentifier", js.undefined)
+    inline def setSnapshotClusterIdentifierUndefined: Self = StObject.set(x, "SnapshotClusterIdentifier", js.undefined)
     
-    @scala.inline
-    def setSnapshotIdentifier(value: String): Self = StObject.set(x, "SnapshotIdentifier", value.asInstanceOf[js.Any])
+    inline def setSnapshotIdentifier(value: String): Self = StObject.set(x, "SnapshotIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotIdentifierUndefined: Self = StObject.set(x, "SnapshotIdentifier", js.undefined)
+    inline def setSnapshotIdentifierUndefined: Self = StObject.set(x, "SnapshotIdentifier", js.undefined)
   }
 }

@@ -19,7 +19,7 @@ trait TimeZones extends StObject {
   
   def Item(Index: js.Any): TimeZone
   
-  @JSName("Outlook.TimeZones_typekey")
+  /* private */ @JSName("Outlook.TimeZones_typekey")
   var OutlookDotTimeZones_typekey: TimeZones
   
   val Parent: js.Any
@@ -28,8 +28,7 @@ trait TimeZones extends StObject {
 }
 object TimeZones {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Class: OlObjectClass,
     ConvertTime: (VarDate, TimeZone, TimeZone) => VarDate,
@@ -45,34 +44,24 @@ object TimeZones {
     __obj.asInstanceOf[TimeZones]
   }
   
-  @scala.inline
-  implicit class TimeZonesMutableBuilder[Self <: TimeZones] (val x: Self) extends AnyVal {
+  extension [Self <: TimeZones](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConvertTime(value: (VarDate, TimeZone, TimeZone) => VarDate): Self = StObject.set(x, "ConvertTime", js.Any.fromFunction3(value))
+    inline def setConvertTime(value: (VarDate, TimeZone, TimeZone) => VarDate): Self = StObject.set(x, "ConvertTime", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentTimeZone(value: TimeZone): Self = StObject.set(x, "CurrentTimeZone", value.asInstanceOf[js.Any])
+    inline def setCurrentTimeZone(value: TimeZone): Self = StObject.set(x, "CurrentTimeZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: js.Any => TimeZone): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: js.Any => TimeZone): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOutlookDotTimeZones_typekey(value: TimeZones): Self = StObject.set(x, "Outlook.TimeZones_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotTimeZones_typekey(value: TimeZones): Self = StObject.set(x, "Outlook.TimeZones_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }
 }

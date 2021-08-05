@@ -9,6 +9,5 @@ object global {
   @JSGlobal("QRScanner")
   @js.native
   def QRScanner: typings.cordovaPluginQrscanner.QRScanner = js.native
-  @scala.inline
-  def QRScanner_=(x: QRScanner): Unit = js.Dynamic.global.updateDynamic("QRScanner")(x.asInstanceOf[js.Any])
+  inline def QRScanner_=(x: QRScanner): Unit = js.Dynamic.global.updateDynamic("QRScanner")(x.asInstanceOf[js.Any])
 }

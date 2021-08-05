@@ -13,19 +13,15 @@ trait WizardActivateEvent
 }
 object WizardActivateEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Wizard): WizardActivateEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Wizard): WizardActivateEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[WizardActivateEvent]
   }
   
-  @scala.inline
-  implicit class WizardActivateEventMutableBuilder[Self <: WizardActivateEvent] (val x: Self) extends AnyVal {
+  extension [Self <: WizardActivateEvent](x: Self) {
     
-    @scala.inline
-    def setStep(value: Step): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Step): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
   }
 }

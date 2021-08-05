@@ -24,6 +24,5 @@ object mod {
     var name: String = js.native
   }
   
-  @scala.inline
-  def timeout[T](promise: js.Promise[T], timeoutMillis: Double): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(promise.asInstanceOf[js.Any], timeoutMillis.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def timeout[T](promise: js.Promise[T], timeoutMillis: Double): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(promise.asInstanceOf[js.Any], timeoutMillis.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
 }

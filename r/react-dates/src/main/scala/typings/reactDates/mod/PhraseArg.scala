@@ -10,16 +10,13 @@ trait PhraseArg extends StObject {
 }
 object PhraseArg {
   
-  @scala.inline
-  def apply(date: String): PhraseArg = {
+  inline def apply(date: String): PhraseArg = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhraseArg]
   }
   
-  @scala.inline
-  implicit class PhraseArgMutableBuilder[Self <: PhraseArg] (val x: Self) extends AnyVal {
+  extension [Self <: PhraseArg](x: Self) {
     
-    @scala.inline
-    def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
   }
 }

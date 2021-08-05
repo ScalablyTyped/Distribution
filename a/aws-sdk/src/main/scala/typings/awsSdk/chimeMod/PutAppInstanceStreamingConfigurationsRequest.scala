@@ -18,8 +18,7 @@ trait PutAppInstanceStreamingConfigurationsRequest extends StObject {
 }
 object PutAppInstanceStreamingConfigurationsRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AppInstanceArn: ChimeArn,
     AppInstanceStreamingConfigurations: AppInstanceStreamingConfigurationList
   ): PutAppInstanceStreamingConfigurationsRequest = {
@@ -27,16 +26,12 @@ object PutAppInstanceStreamingConfigurationsRequest {
     __obj.asInstanceOf[PutAppInstanceStreamingConfigurationsRequest]
   }
   
-  @scala.inline
-  implicit class PutAppInstanceStreamingConfigurationsRequestMutableBuilder[Self <: PutAppInstanceStreamingConfigurationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutAppInstanceStreamingConfigurationsRequest](x: Self) {
     
-    @scala.inline
-    def setAppInstanceArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceArn", value.asInstanceOf[js.Any])
+    inline def setAppInstanceArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppInstanceStreamingConfigurations(value: AppInstanceStreamingConfigurationList): Self = StObject.set(x, "AppInstanceStreamingConfigurations", value.asInstanceOf[js.Any])
+    inline def setAppInstanceStreamingConfigurations(value: AppInstanceStreamingConfigurationList): Self = StObject.set(x, "AppInstanceStreamingConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppInstanceStreamingConfigurationsVarargs(value: AppInstanceStreamingConfiguration*): Self = StObject.set(x, "AppInstanceStreamingConfigurations", js.Array(value :_*))
+    inline def setAppInstanceStreamingConfigurationsVarargs(value: AppInstanceStreamingConfiguration*): Self = StObject.set(x, "AppInstanceStreamingConfigurations", js.Array(value :_*))
   }
 }

@@ -10,6 +10,5 @@ object global {
   @JSGlobal("Pebble")
   @js.native
   def Pebble: typings.pebblekitjs.PebbleKit.Pebble = js.native
-  @scala.inline
-  def Pebble_=(x: Pebble): Unit = js.Dynamic.global.updateDynamic("Pebble")(x.asInstanceOf[js.Any])
+  inline def Pebble_=(x: Pebble): Unit = js.Dynamic.global.updateDynamic("Pebble")(x.asInstanceOf[js.Any])
 }

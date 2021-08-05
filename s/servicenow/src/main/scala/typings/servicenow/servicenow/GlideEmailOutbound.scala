@@ -20,8 +20,7 @@ trait GlideEmailOutbound extends StObject {
 }
 object GlideEmailOutbound {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addAddress: (String, String, String) => Unit,
     getSubject: () => String,
     setBody: String => Unit,
@@ -33,25 +32,18 @@ object GlideEmailOutbound {
     __obj.asInstanceOf[GlideEmailOutbound]
   }
   
-  @scala.inline
-  implicit class GlideEmailOutboundMutableBuilder[Self <: GlideEmailOutbound] (val x: Self) extends AnyVal {
+  extension [Self <: GlideEmailOutbound](x: Self) {
     
-    @scala.inline
-    def setAddAddress(value: (String, String, String) => Unit): Self = StObject.set(x, "addAddress", js.Any.fromFunction3(value))
+    inline def setAddAddress(value: (String, String, String) => Unit): Self = StObject.set(x, "addAddress", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetSubject(value: () => String): Self = StObject.set(x, "getSubject", js.Any.fromFunction0(value))
+    inline def setGetSubject(value: () => String): Self = StObject.set(x, "getSubject", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetBody(value: String => Unit): Self = StObject.set(x, "setBody", js.Any.fromFunction1(value))
+    inline def setSetBody(value: String => Unit): Self = StObject.set(x, "setBody", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFrom(value: String => Unit): Self = StObject.set(x, "setFrom", js.Any.fromFunction1(value))
+    inline def setSetFrom(value: String => Unit): Self = StObject.set(x, "setFrom", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetReplyTo(value: String => Unit): Self = StObject.set(x, "setReplyTo", js.Any.fromFunction1(value))
+    inline def setSetReplyTo(value: String => Unit): Self = StObject.set(x, "setReplyTo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSubject(value: String => Unit): Self = StObject.set(x, "setSubject", js.Any.fromFunction1(value))
+    inline def setSetSubject(value: String => Unit): Self = StObject.set(x, "setSubject", js.Any.fromFunction1(value))
   }
 }

@@ -23,22 +23,17 @@ trait ListenerDescriptor[T /* <: Ractive[T] */] extends StObject {
 }
 object ListenerDescriptor {
   
-  @scala.inline
-  def apply[T /* <: Ractive[T] */](handler: ListenerCallback[T]): ListenerDescriptor[T] = {
+  inline def apply[T /* <: Ractive[T] */](handler: ListenerCallback[T]): ListenerDescriptor[T] = {
     val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListenerDescriptor[T]]
   }
   
-  @scala.inline
-  implicit class ListenerDescriptorMutableBuilder[Self <: ListenerDescriptor[?], T /* <: Ractive[T] */] (val x: Self & ListenerDescriptor[T]) extends AnyVal {
+  extension [Self <: ListenerDescriptor[?], T /* <: Ractive[T] */](x: Self & ListenerDescriptor[T]) {
     
-    @scala.inline
-    def setHandler(value: ListenerCallback[T]): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+    inline def setHandler(value: ListenerCallback[T]): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
+    inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
+    inline def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
   }
 }

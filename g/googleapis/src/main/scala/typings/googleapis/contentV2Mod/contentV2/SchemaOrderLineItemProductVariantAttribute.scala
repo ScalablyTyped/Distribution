@@ -18,25 +18,19 @@ trait SchemaOrderLineItemProductVariantAttribute extends StObject {
 }
 object SchemaOrderLineItemProductVariantAttribute {
   
-  @scala.inline
-  def apply(): SchemaOrderLineItemProductVariantAttribute = {
+  inline def apply(): SchemaOrderLineItemProductVariantAttribute = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOrderLineItemProductVariantAttribute]
   }
   
-  @scala.inline
-  implicit class SchemaOrderLineItemProductVariantAttributeMutableBuilder[Self <: SchemaOrderLineItemProductVariantAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOrderLineItemProductVariantAttribute](x: Self) {
     
-    @scala.inline
-    def setDimension(value: String): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
+    inline def setDimension(value: String): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionUndefined: Self = StObject.set(x, "dimension", js.undefined)
+    inline def setDimensionUndefined: Self = StObject.set(x, "dimension", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

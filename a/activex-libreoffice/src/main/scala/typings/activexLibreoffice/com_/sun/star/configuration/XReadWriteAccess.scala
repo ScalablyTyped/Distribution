@@ -17,8 +17,7 @@ trait XReadWriteAccess
      with XHierarchicalPropertySetInfo
 object XReadWriteAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     PendingChanges: ChangesSet,
     acquire: () => Unit,
     commitChanges: () => Unit,

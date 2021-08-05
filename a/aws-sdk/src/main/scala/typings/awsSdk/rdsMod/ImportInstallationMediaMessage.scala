@@ -33,8 +33,7 @@ trait ImportInstallationMediaMessage extends StObject {
 }
 object ImportInstallationMediaMessage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CustomAvailabilityZoneId: String,
     Engine: String,
     EngineInstallationMediaPath: String,
@@ -45,22 +44,16 @@ object ImportInstallationMediaMessage {
     __obj.asInstanceOf[ImportInstallationMediaMessage]
   }
   
-  @scala.inline
-  implicit class ImportInstallationMediaMessageMutableBuilder[Self <: ImportInstallationMediaMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ImportInstallationMediaMessage](x: Self) {
     
-    @scala.inline
-    def setCustomAvailabilityZoneId(value: String): Self = StObject.set(x, "CustomAvailabilityZoneId", value.asInstanceOf[js.Any])
+    inline def setCustomAvailabilityZoneId(value: String): Self = StObject.set(x, "CustomAvailabilityZoneId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngine(value: String): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
+    inline def setEngine(value: String): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineInstallationMediaPath(value: String): Self = StObject.set(x, "EngineInstallationMediaPath", value.asInstanceOf[js.Any])
+    inline def setEngineInstallationMediaPath(value: String): Self = StObject.set(x, "EngineInstallationMediaPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineVersion(value: String): Self = StObject.set(x, "EngineVersion", value.asInstanceOf[js.Any])
+    inline def setEngineVersion(value: String): Self = StObject.set(x, "EngineVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOSInstallationMediaPath(value: String): Self = StObject.set(x, "OSInstallationMediaPath", value.asInstanceOf[js.Any])
+    inline def setOSInstallationMediaPath(value: String): Self = StObject.set(x, "OSInstallationMediaPath", value.asInstanceOf[js.Any])
   }
 }

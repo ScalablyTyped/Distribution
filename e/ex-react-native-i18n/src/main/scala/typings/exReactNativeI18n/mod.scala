@@ -19,48 +19,38 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def currentLocale(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("currentLocale")().asInstanceOf[String]
+    inline def currentLocale(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("currentLocale")().asInstanceOf[String]
     
     @JSImport("ex-react-native-i18n", "default.defaultLocale")
     @js.native
     def defaultLocale: String = js.native
-    @scala.inline
-    def defaultLocale_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultLocale")(x.asInstanceOf[js.Any])
+    inline def defaultLocale_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultLocale")(x.asInstanceOf[js.Any])
     
     @JSImport("ex-react-native-i18n", "default.fallbacks")
     @js.native
     def fallbacks: Boolean = js.native
-    @scala.inline
-    def fallbacks_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fallbacks")(x.asInstanceOf[js.Any])
+    inline def fallbacks_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fallbacks")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def getFallbackLocale(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFallbackLocale")().asInstanceOf[String]
+    inline def getFallbackLocale(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFallbackLocale")().asInstanceOf[String]
     
-    @scala.inline
-    def localShort(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("localShort")().asInstanceOf[String]
+    inline def localShort(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("localShort")().asInstanceOf[String]
     
     @JSImport("ex-react-native-i18n", "default.locale")
     @js.native
     def locale: String = js.native
-    @scala.inline
-    def locale_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("locale")(x.asInstanceOf[js.Any])
+    inline def locale_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("locale")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def missingTranslation(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("missingTranslation")().asInstanceOf[String]
+    inline def missingTranslation(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("missingTranslation")().asInstanceOf[String]
     
-    @scala.inline
-    def t(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("t")(text.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def t(text: String, interpolation: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(text.asInstanceOf[js.Any], interpolation.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def t(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("t")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def t(text: String, interpolation: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(text.asInstanceOf[js.Any], interpolation.asInstanceOf[js.Any])).asInstanceOf[String]
     
     @JSImport("ex-react-native-i18n", "default.translations")
     @js.native
     def translations: StringDictionary[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeRequireFunction */ js.Any
       ] = js.native
-    @scala.inline
-    def translations_=(
+    inline def translations_=(
       x: StringDictionary[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeRequireFunction */ js.Any
         ]

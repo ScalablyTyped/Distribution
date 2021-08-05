@@ -11,22 +11,17 @@ trait DetectLanguageResponse extends StObject {
 }
 object DetectLanguageResponse {
   
-  @scala.inline
-  def apply(): DetectLanguageResponse = {
+  inline def apply(): DetectLanguageResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DetectLanguageResponse]
   }
   
-  @scala.inline
-  implicit class DetectLanguageResponseMutableBuilder[Self <: DetectLanguageResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DetectLanguageResponse](x: Self) {
     
-    @scala.inline
-    def setLanguages(value: js.Array[DetectedLanguage]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
+    inline def setLanguages(value: js.Array[DetectedLanguage]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
+    inline def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
     
-    @scala.inline
-    def setLanguagesVarargs(value: DetectedLanguage*): Self = StObject.set(x, "languages", js.Array(value :_*))
+    inline def setLanguagesVarargs(value: DetectedLanguage*): Self = StObject.set(x, "languages", js.Array(value :_*))
   }
 }

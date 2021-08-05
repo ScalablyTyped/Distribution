@@ -56,63 +56,45 @@ trait ICartesianChart
 }
 object ICartesianChart {
   
-  @scala.inline
-  def apply(): ICartesianChart = {
+  inline def apply(): ICartesianChart = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ICartesianChart]
   }
   
-  @scala.inline
-  implicit class ICartesianChartMutableBuilder[Self <: ICartesianChart] (val x: Self) extends AnyVal {
+  extension [Self <: ICartesianChart](x: Self) {
     
-    @scala.inline
-    def setAxis(value: js.Any): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: js.Any): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+    inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
-    @scala.inline
-    def setEachYValue(
+    inline def setEachYValue(
       value: (/* record */ js.UndefOr[IModel], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
     ): Self = StObject.set(x, "eachYValue", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setEachYValueUndefined: Self = StObject.set(x, "eachYValue", js.undefined)
+    inline def setEachYValueUndefined: Self = StObject.set(x, "eachYValue", js.undefined)
     
-    @scala.inline
-    def setGetMinMaxXValues(value: () => Array): Self = StObject.set(x, "getMinMaxXValues", js.Any.fromFunction0(value))
+    inline def setGetMinMaxXValues(value: () => Array): Self = StObject.set(x, "getMinMaxXValues", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMinMaxXValuesUndefined: Self = StObject.set(x, "getMinMaxXValues", js.undefined)
+    inline def setGetMinMaxXValuesUndefined: Self = StObject.set(x, "getMinMaxXValues", js.undefined)
     
-    @scala.inline
-    def setGetMinMaxYValues(value: () => Array): Self = StObject.set(x, "getMinMaxYValues", js.Any.fromFunction0(value))
+    inline def setGetMinMaxYValues(value: () => Array): Self = StObject.set(x, "getMinMaxYValues", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMinMaxYValuesUndefined: Self = StObject.set(x, "getMinMaxYValues", js.undefined)
+    inline def setGetMinMaxYValuesUndefined: Self = StObject.set(x, "getMinMaxYValues", js.undefined)
     
-    @scala.inline
-    def setGetYValueAccessors(value: () => Array): Self = StObject.set(x, "getYValueAccessors", js.Any.fromFunction0(value))
+    inline def setGetYValueAccessors(value: () => Array): Self = StObject.set(x, "getYValueAccessors", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetYValueAccessorsUndefined: Self = StObject.set(x, "getYValueAccessors", js.undefined)
+    inline def setGetYValueAccessorsUndefined: Self = StObject.set(x, "getYValueAccessors", js.undefined)
     
-    @scala.inline
-    def setGetYValueCount(value: () => Double): Self = StObject.set(x, "getYValueCount", js.Any.fromFunction0(value))
+    inline def setGetYValueCount(value: () => Double): Self = StObject.set(x, "getYValueCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetYValueCountUndefined: Self = StObject.set(x, "getYValueCount", js.undefined)
+    inline def setGetYValueCountUndefined: Self = StObject.set(x, "getYValueCount", js.undefined)
     
-    @scala.inline
-    def setXField(value: String): Self = StObject.set(x, "xField", value.asInstanceOf[js.Any])
+    inline def setXField(value: String): Self = StObject.set(x, "xField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXFieldUndefined: Self = StObject.set(x, "xField", js.undefined)
+    inline def setXFieldUndefined: Self = StObject.set(x, "xField", js.undefined)
     
-    @scala.inline
-    def setYField(value: js.Any): Self = StObject.set(x, "yField", value.asInstanceOf[js.Any])
+    inline def setYField(value: js.Any): Self = StObject.set(x, "yField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYFieldUndefined: Self = StObject.set(x, "yField", js.undefined)
+    inline def setYFieldUndefined: Self = StObject.set(x, "yField", js.undefined)
   }
 }

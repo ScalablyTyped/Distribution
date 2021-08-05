@@ -13,19 +13,15 @@ trait MessagingSessionEndpoint extends StObject {
 }
 object MessagingSessionEndpoint {
   
-  @scala.inline
-  def apply(): MessagingSessionEndpoint = {
+  inline def apply(): MessagingSessionEndpoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MessagingSessionEndpoint]
   }
   
-  @scala.inline
-  implicit class MessagingSessionEndpointMutableBuilder[Self <: MessagingSessionEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: MessagingSessionEndpoint](x: Self) {
     
-    @scala.inline
-    def setUrl(value: UrlType): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: UrlType): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
   }
 }

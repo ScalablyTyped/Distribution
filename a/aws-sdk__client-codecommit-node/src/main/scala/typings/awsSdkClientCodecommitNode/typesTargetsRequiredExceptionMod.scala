@@ -16,17 +16,14 @@ object typesTargetsRequiredExceptionMod {
   }
   object TargetsRequiredException {
     
-    @scala.inline
-    def apply(): TargetsRequiredException = {
+    inline def apply(): TargetsRequiredException = {
       val __obj = js.Dynamic.literal(name = "TargetsRequiredException")
       __obj.asInstanceOf[TargetsRequiredException]
     }
     
-    @scala.inline
-    implicit class TargetsRequiredExceptionMutableBuilder[Self <: TargetsRequiredException] (val x: Self) extends AnyVal {
+    extension [Self <: TargetsRequiredException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.TargetsRequiredException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

@@ -21,8 +21,7 @@ trait LayerUpdateMerger
      with XInitialization
 object LayerUpdateMerger {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addOrReplaceNode: (String, Double) => Unit,
     addOrReplaceNodeFromTemplate: (String, Double, TemplateIdentifier) => Unit,

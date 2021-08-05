@@ -10,16 +10,13 @@ trait FusedBatchNormAttrs extends StObject {
 }
 object FusedBatchNormAttrs {
   
-  @scala.inline
-  def apply(varianceEpsilon: Double): FusedBatchNormAttrs = {
+  inline def apply(varianceEpsilon: Double): FusedBatchNormAttrs = {
     val __obj = js.Dynamic.literal(varianceEpsilon = varianceEpsilon.asInstanceOf[js.Any])
     __obj.asInstanceOf[FusedBatchNormAttrs]
   }
   
-  @scala.inline
-  implicit class FusedBatchNormAttrsMutableBuilder[Self <: FusedBatchNormAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: FusedBatchNormAttrs](x: Self) {
     
-    @scala.inline
-    def setVarianceEpsilon(value: Double): Self = StObject.set(x, "varianceEpsilon", value.asInstanceOf[js.Any])
+    inline def setVarianceEpsilon(value: Double): Self = StObject.set(x, "varianceEpsilon", value.asInstanceOf[js.Any])
   }
 }

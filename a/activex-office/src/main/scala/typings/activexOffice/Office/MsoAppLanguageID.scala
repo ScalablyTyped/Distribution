@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoAppLanguageID extends StObject
 object MsoAppLanguageID {
   
-  @scala.inline
-  def msoLanguageIDExeMode: `4` = 4.asInstanceOf[`4`]
+  inline def msoLanguageIDExeMode: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def msoLanguageIDHelp: `3` = 3.asInstanceOf[`3`]
+  inline def msoLanguageIDHelp: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoLanguageIDInstall: `1` = 1.asInstanceOf[`1`]
+  inline def msoLanguageIDInstall: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoLanguageIDUI: `2` = 2.asInstanceOf[`2`]
+  inline def msoLanguageIDUI: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoLanguageIDUIPrevious: `5` = 5.asInstanceOf[`5`]
+  inline def msoLanguageIDUIPrevious: `5` = 5.asInstanceOf[`5`]
 }

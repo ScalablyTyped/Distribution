@@ -16,25 +16,19 @@ trait ReadPreferenceOptions extends StObject {
 }
 object ReadPreferenceOptions {
   
-  @scala.inline
-  def apply(): ReadPreferenceOptions = {
+  inline def apply(): ReadPreferenceOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReadPreferenceOptions]
   }
   
-  @scala.inline
-  implicit class ReadPreferenceOptionsMutableBuilder[Self <: ReadPreferenceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ReadPreferenceOptions](x: Self) {
     
-    @scala.inline
-    def setHedge(value: Enabled): Self = StObject.set(x, "hedge", value.asInstanceOf[js.Any])
+    inline def setHedge(value: Enabled): Self = StObject.set(x, "hedge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHedgeUndefined: Self = StObject.set(x, "hedge", js.undefined)
+    inline def setHedgeUndefined: Self = StObject.set(x, "hedge", js.undefined)
     
-    @scala.inline
-    def setMaxStalenessSeconds(value: scala.Double): Self = StObject.set(x, "maxStalenessSeconds", value.asInstanceOf[js.Any])
+    inline def setMaxStalenessSeconds(value: scala.Double): Self = StObject.set(x, "maxStalenessSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxStalenessSecondsUndefined: Self = StObject.set(x, "maxStalenessSeconds", js.undefined)
+    inline def setMaxStalenessSecondsUndefined: Self = StObject.set(x, "maxStalenessSeconds", js.undefined)
   }
 }

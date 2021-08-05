@@ -13,16 +13,13 @@ trait RawMessage extends StObject {
 }
 object RawMessage {
   
-  @scala.inline
-  def apply(Data: RawMessageData): RawMessage = {
+  inline def apply(Data: RawMessageData): RawMessage = {
     val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any])
     __obj.asInstanceOf[RawMessage]
   }
   
-  @scala.inline
-  implicit class RawMessageMutableBuilder[Self <: RawMessage] (val x: Self) extends AnyVal {
+  extension [Self <: RawMessage](x: Self) {
     
-    @scala.inline
-    def setData(value: RawMessageData): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+    inline def setData(value: RawMessageData): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
   }
 }

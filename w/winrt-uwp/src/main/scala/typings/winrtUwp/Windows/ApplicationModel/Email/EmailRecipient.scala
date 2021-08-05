@@ -15,19 +15,15 @@ trait EmailRecipient extends StObject {
 }
 object EmailRecipient {
   
-  @scala.inline
-  def apply(address: String, name: String): EmailRecipient = {
+  inline def apply(address: String, name: String): EmailRecipient = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmailRecipient]
   }
   
-  @scala.inline
-  implicit class EmailRecipientMutableBuilder[Self <: EmailRecipient] (val x: Self) extends AnyVal {
+  extension [Self <: EmailRecipient](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

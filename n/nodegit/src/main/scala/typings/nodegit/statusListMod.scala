@@ -26,9 +26,7 @@ object statusListMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(repo: Repository): js.Promise[StatusList] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[StatusList]]
-    @scala.inline
-    def create(repo: Repository, opts: StatusOptions): js.Promise[StatusList] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StatusList]]
+    inline def create(repo: Repository): js.Promise[StatusList] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[StatusList]]
+    inline def create(repo: Repository, opts: StatusOptions): js.Promise[StatusList] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StatusList]]
   }
 }

@@ -18,22 +18,17 @@ trait DeactivatePipelineInput extends StObject {
 }
 object DeactivatePipelineInput {
   
-  @scala.inline
-  def apply(pipelineId: id): DeactivatePipelineInput = {
+  inline def apply(pipelineId: id): DeactivatePipelineInput = {
     val __obj = js.Dynamic.literal(pipelineId = pipelineId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeactivatePipelineInput]
   }
   
-  @scala.inline
-  implicit class DeactivatePipelineInputMutableBuilder[Self <: DeactivatePipelineInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeactivatePipelineInput](x: Self) {
     
-    @scala.inline
-    def setCancelActive(value: cancelActive): Self = StObject.set(x, "cancelActive", value.asInstanceOf[js.Any])
+    inline def setCancelActive(value: cancelActive): Self = StObject.set(x, "cancelActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelActiveUndefined: Self = StObject.set(x, "cancelActive", js.undefined)
+    inline def setCancelActiveUndefined: Self = StObject.set(x, "cancelActive", js.undefined)
     
-    @scala.inline
-    def setPipelineId(value: id): Self = StObject.set(x, "pipelineId", value.asInstanceOf[js.Any])
+    inline def setPipelineId(value: id): Self = StObject.set(x, "pipelineId", value.asInstanceOf[js.Any])
   }
 }

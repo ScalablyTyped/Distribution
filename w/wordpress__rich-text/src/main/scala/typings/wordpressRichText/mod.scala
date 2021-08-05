@@ -20,129 +20,81 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def applyFormat(value: Value, format: Format): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("applyFormat")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Value]
-  @scala.inline
-  def applyFormat(value: Value, format: Format, startIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("applyFormat")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
-  @scala.inline
-  def applyFormat(value: Value, format: Format, startIndex: Double, endIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("applyFormat")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
-  @scala.inline
-  def applyFormat(value: Value, format: Format, startIndex: Unit, endIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("applyFormat")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
+  inline def applyFormat(value: Value, format: Format): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("applyFormat")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Value]
+  inline def applyFormat(value: Value, format: Format, startIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("applyFormat")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
+  inline def applyFormat(value: Value, format: Format, startIndex: Double, endIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("applyFormat")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
+  inline def applyFormat(value: Value, format: Format, startIndex: Unit, endIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("applyFormat")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
   
-  @scala.inline
-  def concat(values: Value*): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(values.asInstanceOf[js.Any]).asInstanceOf[Value]
+  inline def concat(values: Value*): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(values.asInstanceOf[js.Any]).asInstanceOf[Value]
   
-  @scala.inline
-  def create(): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Value]
-  @scala.inline
-  def create(args: Element): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(args.asInstanceOf[js.Any]).asInstanceOf[Value]
-  @scala.inline
-  def create(args: Html): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(args.asInstanceOf[js.Any]).asInstanceOf[Value]
-  @scala.inline
-  def create(args: Text): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(args.asInstanceOf[js.Any]).asInstanceOf[Value]
+  inline def create(): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Value]
+  inline def create(args: Element): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(args.asInstanceOf[js.Any]).asInstanceOf[Value]
+  inline def create(args: Html): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(args.asInstanceOf[js.Any]).asInstanceOf[Value]
+  inline def create(args: Text): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(args.asInstanceOf[js.Any]).asInstanceOf[Value]
   
-  @scala.inline
-  def getActiveFormat(value: Value, formatType: String): js.UndefOr[Format] = (^.asInstanceOf[js.Dynamic].applyDynamic("getActiveFormat")(value.asInstanceOf[js.Any], formatType.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Format]]
+  inline def getActiveFormat(value: Value, formatType: String): js.UndefOr[Format] = (^.asInstanceOf[js.Dynamic].applyDynamic("getActiveFormat")(value.asInstanceOf[js.Any], formatType.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Format]]
   
-  @scala.inline
-  def getActiveObject(value: Value): js.UndefOr[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveObject")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Object]]
+  inline def getActiveObject(value: Value): js.UndefOr[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveObject")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Object]]
   
-  @scala.inline
-  def getTextContent(value: Value): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTextContent")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getTextContent(value: Value): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTextContent")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def insert(value: Value, valueToInsert: Value): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(value.asInstanceOf[js.Any], valueToInsert.asInstanceOf[js.Any])).asInstanceOf[Value]
-  @scala.inline
-  def insert(value: Value, valueToInsert: Value, startIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(value.asInstanceOf[js.Any], valueToInsert.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
-  @scala.inline
-  def insert(value: Value, valueToInsert: Value, startIndex: Double, endIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(value.asInstanceOf[js.Any], valueToInsert.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
-  @scala.inline
-  def insert(value: Value, valueToInsert: Value, startIndex: Unit, endIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(value.asInstanceOf[js.Any], valueToInsert.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
+  inline def insert(value: Value, valueToInsert: Value): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(value.asInstanceOf[js.Any], valueToInsert.asInstanceOf[js.Any])).asInstanceOf[Value]
+  inline def insert(value: Value, valueToInsert: Value, startIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(value.asInstanceOf[js.Any], valueToInsert.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
+  inline def insert(value: Value, valueToInsert: Value, startIndex: Double, endIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(value.asInstanceOf[js.Any], valueToInsert.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
+  inline def insert(value: Value, valueToInsert: Value, startIndex: Unit, endIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(value.asInstanceOf[js.Any], valueToInsert.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
   
-  @scala.inline
-  def insertObject(value: Value, formatToInsert: Format): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("insertObject")(value.asInstanceOf[js.Any], formatToInsert.asInstanceOf[js.Any])).asInstanceOf[Value]
+  inline def insertObject(value: Value, formatToInsert: Format): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("insertObject")(value.asInstanceOf[js.Any], formatToInsert.asInstanceOf[js.Any])).asInstanceOf[Value]
   
-  @scala.inline
-  def isCollapsed(value: Value): js.UndefOr[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isCollapsed")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Boolean]]
+  inline def isCollapsed(value: Value): js.UndefOr[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isCollapsed")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Boolean]]
   
-  @scala.inline
-  def isEmpty(value: Value): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isEmpty(value: Value): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def join(values: js.Array[Value]): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(values.asInstanceOf[js.Any]).asInstanceOf[Value]
-  @scala.inline
-  def join(values: js.Array[Value], separator: String): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(values.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[Value]
-  @scala.inline
-  def join(values: js.Array[Value], separator: Value): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(values.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[Value]
+  inline def join(values: js.Array[Value]): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(values.asInstanceOf[js.Any]).asInstanceOf[Value]
+  inline def join(values: js.Array[Value], separator: String): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(values.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[Value]
+  inline def join(values: js.Array[Value], separator: Value): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(values.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[Value]
   
-  @scala.inline
-  def registerFormatType(name: String, config: FormatConfiguration): js.UndefOr[NamedFormatConfiguration] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerFormatType")(name.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NamedFormatConfiguration]]
+  inline def registerFormatType(name: String, config: FormatConfiguration): js.UndefOr[NamedFormatConfiguration] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerFormatType")(name.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NamedFormatConfiguration]]
   
-  @scala.inline
-  def remove(value: Value): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(value.asInstanceOf[js.Any]).asInstanceOf[Value]
-  @scala.inline
-  def remove(value: Value, startIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
-  @scala.inline
-  def remove(value: Value, startIndex: Double, endIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
-  @scala.inline
-  def remove(value: Value, startIndex: Unit, endIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
+  inline def remove(value: Value): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(value.asInstanceOf[js.Any]).asInstanceOf[Value]
+  inline def remove(value: Value, startIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
+  inline def remove(value: Value, startIndex: Double, endIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
+  inline def remove(value: Value, startIndex: Unit, endIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
   
-  @scala.inline
-  def removeFormat(value: Value, formatType: String): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("removeFormat")(value.asInstanceOf[js.Any], formatType.asInstanceOf[js.Any])).asInstanceOf[Value]
-  @scala.inline
-  def removeFormat(value: Value, formatType: String, startIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("removeFormat")(value.asInstanceOf[js.Any], formatType.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
-  @scala.inline
-  def removeFormat(value: Value, formatType: String, startIndex: Double, endIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("removeFormat")(value.asInstanceOf[js.Any], formatType.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
-  @scala.inline
-  def removeFormat(value: Value, formatType: String, startIndex: Unit, endIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("removeFormat")(value.asInstanceOf[js.Any], formatType.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
+  inline def removeFormat(value: Value, formatType: String): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("removeFormat")(value.asInstanceOf[js.Any], formatType.asInstanceOf[js.Any])).asInstanceOf[Value]
+  inline def removeFormat(value: Value, formatType: String, startIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("removeFormat")(value.asInstanceOf[js.Any], formatType.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
+  inline def removeFormat(value: Value, formatType: String, startIndex: Double, endIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("removeFormat")(value.asInstanceOf[js.Any], formatType.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
+  inline def removeFormat(value: Value, formatType: String, startIndex: Unit, endIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("removeFormat")(value.asInstanceOf[js.Any], formatType.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
   
-  @scala.inline
-  def replace(value: Value, pattern: String, replacement: String): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(value.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[Value]
-  @scala.inline
-  def replace(
+  inline def replace(value: Value, pattern: String, replacement: String): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(value.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[Value]
+  inline def replace(
     value: Value,
     pattern: String,
     replacement: js.Function2[/* match */ String, /* repeated */ js.Any, String]
   ): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(value.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[Value]
-  @scala.inline
-  def replace(value: Value, pattern: RegExp, replacement: String): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(value.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[Value]
-  @scala.inline
-  def replace(
+  inline def replace(value: Value, pattern: RegExp, replacement: String): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(value.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[Value]
+  inline def replace(
     value: Value,
     pattern: RegExp,
     replacement: js.Function2[/* match */ String, /* repeated */ js.Any, String]
   ): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(value.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[Value]
   
-  @scala.inline
-  def slice(value: Value): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("slice")(value.asInstanceOf[js.Any]).asInstanceOf[Value]
-  @scala.inline
-  def slice(value: Value, startIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("slice")(value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
-  @scala.inline
-  def slice(value: Value, startIndex: Double, endIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("slice")(value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
-  @scala.inline
-  def slice(value: Value, startIndex: Unit, endIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("slice")(value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
+  inline def slice(value: Value): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("slice")(value.asInstanceOf[js.Any]).asInstanceOf[Value]
+  inline def slice(value: Value, startIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("slice")(value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
+  inline def slice(value: Value, startIndex: Double, endIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("slice")(value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
+  inline def slice(value: Value, startIndex: Unit, endIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("slice")(value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
   
-  @scala.inline
-  def split(value: Value): js.Array[Value] = ^.asInstanceOf[js.Dynamic].applyDynamic("split")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[Value]]
-  @scala.inline
-  def split(value: Value, separator: String): js.Array[Value] = (^.asInstanceOf[js.Dynamic].applyDynamic("split")(value.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[js.Array[Value]]
-  @scala.inline
-  def split(value: Value, separator: String, limit: Double): js.Array[Value] = (^.asInstanceOf[js.Dynamic].applyDynamic("split")(value.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Array[Value]]
-  @scala.inline
-  def split(value: Value, separator: Double): js.Array[Value] = (^.asInstanceOf[js.Dynamic].applyDynamic("split")(value.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[js.Array[Value]]
-  @scala.inline
-  def split(value: Value, separator: Double, limit: Double): js.Array[Value] = (^.asInstanceOf[js.Dynamic].applyDynamic("split")(value.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Array[Value]]
-  @scala.inline
-  def split(value: Value, separator: Unit, limit: Double): js.Array[Value] = (^.asInstanceOf[js.Dynamic].applyDynamic("split")(value.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Array[Value]]
+  inline def split(value: Value): js.Array[Value] = ^.asInstanceOf[js.Dynamic].applyDynamic("split")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[Value]]
+  inline def split(value: Value, separator: String): js.Array[Value] = (^.asInstanceOf[js.Dynamic].applyDynamic("split")(value.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[js.Array[Value]]
+  inline def split(value: Value, separator: String, limit: Double): js.Array[Value] = (^.asInstanceOf[js.Dynamic].applyDynamic("split")(value.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Array[Value]]
+  inline def split(value: Value, separator: Double): js.Array[Value] = (^.asInstanceOf[js.Dynamic].applyDynamic("split")(value.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[js.Array[Value]]
+  inline def split(value: Value, separator: Double, limit: Double): js.Array[Value] = (^.asInstanceOf[js.Dynamic].applyDynamic("split")(value.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Array[Value]]
+  inline def split(value: Value, separator: Unit, limit: Double): js.Array[Value] = (^.asInstanceOf[js.Dynamic].applyDynamic("split")(value.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Array[Value]]
   
-  @scala.inline
-  def toHTMLString(args: MultilineTag): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHTMLString")(args.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toHTMLString(args: MultilineTag): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHTMLString")(args.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def toggleFormat(value: Value, format: Format): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("toggleFormat")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Value]
+  inline def toggleFormat(value: Value, format: Format): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("toggleFormat")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Value]
   
-  @scala.inline
-  def unregisterFormatType(name: String): js.UndefOr[NamedFormatConfiguration] = ^.asInstanceOf[js.Dynamic].applyDynamic("unregisterFormatType")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[NamedFormatConfiguration]]
+  inline def unregisterFormatType(name: String): js.UndefOr[NamedFormatConfiguration] = ^.asInstanceOf[js.Dynamic].applyDynamic("unregisterFormatType")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[NamedFormatConfiguration]]
   
   /* augmented module */
   object wordpressDataAugmentingMod {
@@ -151,11 +103,9 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def dispatch_corerichtext(key: `coreSlashrich-text`): TypeofimportedActions = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(key.asInstanceOf[js.Any]).asInstanceOf[TypeofimportedActions]
+    inline def dispatch_corerichtext(key: `coreSlashrich-text`): TypeofimportedActions = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(key.asInstanceOf[js.Any]).asInstanceOf[TypeofimportedActions]
     
-    @scala.inline
-    def select_corerichtext(key: `coreSlashrich-text`): TypeofimportedSelectors = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(key.asInstanceOf[js.Any]).asInstanceOf[TypeofimportedSelectors]
+    inline def select_corerichtext(key: `coreSlashrich-text`): TypeofimportedSelectors = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(key.asInstanceOf[js.Any]).asInstanceOf[TypeofimportedSelectors]
   }
   
   trait Format extends StObject {
@@ -170,36 +120,27 @@ object mod {
   }
   object Format {
     
-    @scala.inline
-    def apply(`type`: String): Format = {
+    inline def apply(`type`: String): Format = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Format]
     }
     
-    @scala.inline
-    implicit class FormatMutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
+    extension [Self <: Format](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: Record[String, String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: Record[String, String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setObject(value: Boolean): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: Boolean): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
+      inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnregisteredAttributes(value: Record[String, String]): Self = StObject.set(x, "unregisteredAttributes", value.asInstanceOf[js.Any])
+      inline def setUnregisteredAttributes(value: Record[String, String]): Self = StObject.set(x, "unregisteredAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnregisteredAttributesUndefined: Self = StObject.set(x, "unregisteredAttributes", js.undefined)
+      inline def setUnregisteredAttributesUndefined: Self = StObject.set(x, "unregisteredAttributes", js.undefined)
     }
   }
   
@@ -228,8 +169,7 @@ object mod {
   }
   object FormatConfiguration {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       edit: ComponentType[FormatProps],
       tagName: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any) & String,
       title: String
@@ -238,46 +178,33 @@ object mod {
       __obj.asInstanceOf[FormatConfiguration]
     }
     
-    @scala.inline
-    implicit class FormatConfigurationMutableBuilder[Self <: FormatConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: FormatConfiguration](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: Record[String, String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: Record[String, String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameNull: Self = StObject.set(x, "className", null)
+      inline def setClassNameNull: Self = StObject.set(x, "className", null)
       
-      @scala.inline
-      def setEdit(value: ComponentType[FormatProps]): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
+      inline def setEdit(value: ComponentType[FormatProps]): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeywords(value: js.Array[String] | (js.Tuple2[String, String]) | (js.Tuple3[String, String, String])): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
+      inline def setKeywords(value: js.Array[String] | (js.Tuple2[String, String]) | (js.Tuple3[String, String, String])): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
+      inline def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
       
-      @scala.inline
-      def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value :_*))
+      inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value :_*))
       
-      @scala.inline
-      def setObject(value: Boolean): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: Boolean): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
+      inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
       
-      @scala.inline
-      def setTagName(
+      inline def setTagName(
         value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any) & String
       ): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -293,26 +220,20 @@ object mod {
   }
   object FormatProps {
     
-    @scala.inline
-    def apply(activeAttributes: Record[String, String], isActive: Boolean, onChange: Value => Unit, value: Value): FormatProps = {
+    inline def apply(activeAttributes: Record[String, String], isActive: Boolean, onChange: Value => Unit, value: Value): FormatProps = {
       val __obj = js.Dynamic.literal(activeAttributes = activeAttributes.asInstanceOf[js.Any], isActive = isActive.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange), value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[FormatProps]
     }
     
-    @scala.inline
-    implicit class FormatPropsMutableBuilder[Self <: FormatProps] (val x: Self) extends AnyVal {
+    extension [Self <: FormatProps](x: Self) {
       
-      @scala.inline
-      def setActiveAttributes(value: Record[String, String]): Self = StObject.set(x, "activeAttributes", value.asInstanceOf[js.Any])
+      inline def setActiveAttributes(value: Record[String, String]): Self = StObject.set(x, "activeAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+      inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnChange(value: Value => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: Value => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -324,8 +245,7 @@ object mod {
   }
   object NamedFormatConfiguration {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       edit: ComponentType[FormatProps],
       name: String,
       tagName: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any) & String,
@@ -335,11 +255,9 @@ object mod {
       __obj.asInstanceOf[NamedFormatConfiguration]
     }
     
-    @scala.inline
-    implicit class NamedFormatConfigurationMutableBuilder[Self <: NamedFormatConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: NamedFormatConfiguration](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -359,8 +277,7 @@ object mod {
   }
   object Value {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       formats: js.Array[js.UndefOr[js.Array[Format]]],
       replacements: js.Array[js.UndefOr[js.Array[Format]]],
       text: String
@@ -369,44 +286,31 @@ object mod {
       __obj.asInstanceOf[Value]
     }
     
-    @scala.inline
-    implicit class ValueMutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
+    extension [Self <: Value](x: Self) {
       
-      @scala.inline
-      def setActiveFormats(value: js.Array[Format]): Self = StObject.set(x, "activeFormats", value.asInstanceOf[js.Any])
+      inline def setActiveFormats(value: js.Array[Format]): Self = StObject.set(x, "activeFormats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveFormatsUndefined: Self = StObject.set(x, "activeFormats", js.undefined)
+      inline def setActiveFormatsUndefined: Self = StObject.set(x, "activeFormats", js.undefined)
       
-      @scala.inline
-      def setActiveFormatsVarargs(value: Format*): Self = StObject.set(x, "activeFormats", js.Array(value :_*))
+      inline def setActiveFormatsVarargs(value: Format*): Self = StObject.set(x, "activeFormats", js.Array(value :_*))
       
-      @scala.inline
-      def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
-      @scala.inline
-      def setFormats(value: js.Array[js.UndefOr[js.Array[Format]]]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+      inline def setFormats(value: js.Array[js.UndefOr[js.Array[Format]]]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatsVarargs(value: js.UndefOr[js.Array[Format]]*): Self = StObject.set(x, "formats", js.Array(value :_*))
+      inline def setFormatsVarargs(value: js.UndefOr[js.Array[Format]]*): Self = StObject.set(x, "formats", js.Array(value :_*))
       
-      @scala.inline
-      def setReplacements(value: js.Array[js.UndefOr[js.Array[Format]]]): Self = StObject.set(x, "replacements", value.asInstanceOf[js.Any])
+      inline def setReplacements(value: js.Array[js.UndefOr[js.Array[Format]]]): Self = StObject.set(x, "replacements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplacementsVarargs(value: js.UndefOr[js.Array[Format]]*): Self = StObject.set(x, "replacements", js.Array(value :_*))
+      inline def setReplacementsVarargs(value: js.UndefOr[js.Array[Format]]*): Self = StObject.set(x, "replacements", js.Array(value :_*))
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class N1qlQuery () extends StObject {
   
   // Private declaration to avoid other queries being misstaken for N1qlQuery
-  var __nominal: Unit = js.native
+  /* private */ var __nominal: Unit = js.native
 }
 object N1qlQuery {
   
@@ -65,6 +65,5 @@ object N1qlQuery {
     * @param str
     */
   /* static member */
-  @scala.inline
-  def fromString(str: String): N1qlStringQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[N1qlStringQuery]
+  inline def fromString(str: String): N1qlStringQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[N1qlStringQuery]
 }

@@ -31,8 +31,7 @@ trait XUsedAreaCursor
 }
 object XUsedAreaCursor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     gotoEndOfUsedArea: Boolean => Unit,
     gotoStartOfUsedArea: Boolean => Unit,
@@ -43,13 +42,10 @@ object XUsedAreaCursor {
     __obj.asInstanceOf[XUsedAreaCursor]
   }
   
-  @scala.inline
-  implicit class XUsedAreaCursorMutableBuilder[Self <: XUsedAreaCursor] (val x: Self) extends AnyVal {
+  extension [Self <: XUsedAreaCursor](x: Self) {
     
-    @scala.inline
-    def setGotoEndOfUsedArea(value: Boolean => Unit): Self = StObject.set(x, "gotoEndOfUsedArea", js.Any.fromFunction1(value))
+    inline def setGotoEndOfUsedArea(value: Boolean => Unit): Self = StObject.set(x, "gotoEndOfUsedArea", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGotoStartOfUsedArea(value: Boolean => Unit): Self = StObject.set(x, "gotoStartOfUsedArea", js.Any.fromFunction1(value))
+    inline def setGotoStartOfUsedArea(value: Boolean => Unit): Self = StObject.set(x, "gotoStartOfUsedArea", js.Any.fromFunction1(value))
   }
 }

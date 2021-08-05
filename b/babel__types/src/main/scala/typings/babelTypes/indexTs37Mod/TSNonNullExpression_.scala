@@ -18,20 +18,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object TSNonNullExpression_ {
   
-  @scala.inline
-  def apply(expression: Expression): TSNonNullExpression_ = {
+  inline def apply(expression: Expression): TSNonNullExpression_ = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("TSNonNullExpression")
     __obj.asInstanceOf[TSNonNullExpression_]
   }
   
-  @scala.inline
-  implicit class TSNonNullExpression_MutableBuilder[Self <: TSNonNullExpression_] (val x: Self) extends AnyVal {
+  extension [Self <: TSNonNullExpression_](x: Self) {
     
-    @scala.inline
-    def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: TSNonNullExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TSNonNullExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

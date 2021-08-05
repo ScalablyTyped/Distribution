@@ -18,28 +18,21 @@ trait CreatePortfolioOutput extends StObject {
 }
 object CreatePortfolioOutput {
   
-  @scala.inline
-  def apply(): CreatePortfolioOutput = {
+  inline def apply(): CreatePortfolioOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreatePortfolioOutput]
   }
   
-  @scala.inline
-  implicit class CreatePortfolioOutputMutableBuilder[Self <: CreatePortfolioOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePortfolioOutput](x: Self) {
     
-    @scala.inline
-    def setPortfolioDetail(value: PortfolioDetail): Self = StObject.set(x, "PortfolioDetail", value.asInstanceOf[js.Any])
+    inline def setPortfolioDetail(value: PortfolioDetail): Self = StObject.set(x, "PortfolioDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortfolioDetailUndefined: Self = StObject.set(x, "PortfolioDetail", js.undefined)
+    inline def setPortfolioDetailUndefined: Self = StObject.set(x, "PortfolioDetail", js.undefined)
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

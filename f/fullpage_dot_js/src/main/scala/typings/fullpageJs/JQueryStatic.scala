@@ -13,16 +13,13 @@ trait JQueryStatic extends StObject {
 }
 object JQueryStatic {
   
-  @scala.inline
-  def apply(fullpage: FullPageJsMethods): JQueryStatic = {
+  inline def apply(fullpage: FullPageJsMethods): JQueryStatic = {
     val __obj = js.Dynamic.literal(fullpage = fullpage.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  @scala.inline
-  implicit class JQueryStaticMutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryStatic](x: Self) {
     
-    @scala.inline
-    def setFullpage(value: FullPageJsMethods): Self = StObject.set(x, "fullpage", value.asInstanceOf[js.Any])
+    inline def setFullpage(value: FullPageJsMethods): Self = StObject.set(x, "fullpage", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait RotateTransform extends StObject {
 }
 object RotateTransform {
   
-  @scala.inline
-  def apply(rotate: String): RotateTransform = {
+  inline def apply(rotate: String): RotateTransform = {
     val __obj = js.Dynamic.literal(rotate = rotate.asInstanceOf[js.Any])
     __obj.asInstanceOf[RotateTransform]
   }
   
-  @scala.inline
-  implicit class RotateTransformMutableBuilder[Self <: RotateTransform] (val x: Self) extends AnyVal {
+  extension [Self <: RotateTransform](x: Self) {
     
-    @scala.inline
-    def setRotate(value: String): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+    inline def setRotate(value: String): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
   }
 }

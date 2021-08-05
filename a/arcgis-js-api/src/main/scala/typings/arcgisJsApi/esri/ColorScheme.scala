@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ColorScheme extends StObject
 object ColorScheme {
   
-  @scala.inline
-  def ColorSchemeForMesh(
+  inline def ColorSchemeForMesh(
     colors: js.Array[Color_],
     colorsForClassBreaks: js.Array[ColorSchemeForMeshColorsForClassBreaks],
     constructor: js.Function,
@@ -32,8 +31,7 @@ object ColorScheme {
     __obj.asInstanceOf[typings.arcgisJsApi.esri.ColorSchemeForMesh]
   }
   
-  @scala.inline
-  def ColorSchemeForPoint(
+  inline def ColorSchemeForPoint(
     colors: js.Array[Color_],
     colorsForClassBreaks: js.Array[ColorSchemeForPointColorsForClassBreaks],
     constructor: js.Function,
@@ -52,8 +50,7 @@ object ColorScheme {
     __obj.asInstanceOf[typings.arcgisJsApi.esri.ColorSchemeForPoint]
   }
   
-  @scala.inline
-  def ColorSchemeForPolygon(
+  inline def ColorSchemeForPolygon(
     colors: js.Array[Color_],
     colorsForClassBreaks: js.Array[ColorSchemeForPolygonColorsForClassBreaks],
     constructor: js.Function,
@@ -71,8 +68,7 @@ object ColorScheme {
     __obj.asInstanceOf[typings.arcgisJsApi.esri.ColorSchemeForPolygon]
   }
   
-  @scala.inline
-  def ColorSchemeForPolyline(
+  inline def ColorSchemeForPolyline(
     colors: js.Array[Color_],
     colorsForClassBreaks: js.Array[ColorSchemeForPolylineColorsForClassBreaks],
     constructor: js.Function,

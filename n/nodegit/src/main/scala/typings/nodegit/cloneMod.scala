@@ -25,13 +25,10 @@ object cloneMod {
     /**
       * Patch repository cloning to automatically coerce objects.
       */
-    @scala.inline
-    def clone(url: String, localPath: String): js.Promise[Repository] = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(url.asInstanceOf[js.Any], localPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Repository]]
-    @scala.inline
-    def clone(url: String, localPath: String, options: CloneOptions): js.Promise[Repository] = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(url.asInstanceOf[js.Any], localPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Repository]]
+    inline def clone(url: String, localPath: String): js.Promise[Repository] = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(url.asInstanceOf[js.Any], localPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Repository]]
+    inline def clone(url: String, localPath: String, options: CloneOptions): js.Promise[Repository] = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(url.asInstanceOf[js.Any], localPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Repository]]
     
-    @scala.inline
-    def initOptions(opts: CloneOptions, version: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("initOptions")(opts.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def initOptions(opts: CloneOptions, version: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("initOptions")(opts.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /* Rewritten from type alias, can be one of: 
       - typings.nodegit.nodegitNumbers.`0`
@@ -42,17 +39,13 @@ object cloneMod {
     trait LOCAL extends StObject
     object LOCAL {
       
-      @scala.inline
-      def AUTO: `0` = 0.asInstanceOf[`0`]
+      inline def AUTO: `0` = 0.asInstanceOf[`0`]
       
-      @scala.inline
-      def LOCAL: `1` = 1.asInstanceOf[`1`]
+      inline def LOCAL: `1` = 1.asInstanceOf[`1`]
       
-      @scala.inline
-      def NO_LINKS: `3` = 3.asInstanceOf[`3`]
+      inline def NO_LINKS: `3` = 3.asInstanceOf[`3`]
       
-      @scala.inline
-      def NO_LOCAL: `2` = 2.asInstanceOf[`2`]
+      inline def NO_LOCAL: `2` = 2.asInstanceOf[`2`]
     }
   }
 }

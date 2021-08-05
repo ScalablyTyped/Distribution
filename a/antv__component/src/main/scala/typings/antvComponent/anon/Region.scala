@@ -12,19 +12,15 @@ trait Region extends StObject {
 }
 object Region {
   
-  @scala.inline
-  def apply(region: Style, text: ContentStyle): Region = {
+  inline def apply(region: Style, text: ContentStyle): Region = {
     val __obj = js.Dynamic.literal(region = region.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Region]
   }
   
-  @scala.inline
-  implicit class RegionMutableBuilder[Self <: Region] (val x: Self) extends AnyVal {
+  extension [Self <: Region](x: Self) {
     
-    @scala.inline
-    def setRegion(value: Style): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: Style): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: ContentStyle): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: ContentStyle): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

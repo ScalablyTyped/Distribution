@@ -26,23 +26,18 @@ object typesGetDataRetrievalPolicyOutputMod {
   }
   object GetDataRetrievalPolicyOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): GetDataRetrievalPolicyOutput = {
+    inline def apply($metadata: ResponseMetadata): GetDataRetrievalPolicyOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetDataRetrievalPolicyOutput]
     }
     
-    @scala.inline
-    implicit class GetDataRetrievalPolicyOutputMutableBuilder[Self <: GetDataRetrievalPolicyOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetDataRetrievalPolicyOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicy(value: UnmarshalledDataRetrievalPolicy): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: UnmarshalledDataRetrievalPolicy): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
+      inline def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
     }
   }
 }

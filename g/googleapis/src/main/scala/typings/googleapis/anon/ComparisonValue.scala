@@ -12,25 +12,19 @@ trait ComparisonValue extends StObject {
 }
 object ComparisonValue {
   
-  @scala.inline
-  def apply(): ComparisonValue = {
+  inline def apply(): ComparisonValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ComparisonValue]
   }
   
-  @scala.inline
-  implicit class ComparisonValueMutableBuilder[Self <: ComparisonValue] (val x: Self) extends AnyVal {
+  extension [Self <: ComparisonValue](x: Self) {
     
-    @scala.inline
-    def setComparisonType(value: String): Self = StObject.set(x, "comparisonType", value.asInstanceOf[js.Any])
+    inline def setComparisonType(value: String): Self = StObject.set(x, "comparisonType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComparisonTypeUndefined: Self = StObject.set(x, "comparisonType", js.undefined)
+    inline def setComparisonTypeUndefined: Self = StObject.set(x, "comparisonType", js.undefined)
     
-    @scala.inline
-    def setComparisonValue(value: String): Self = StObject.set(x, "comparisonValue", value.asInstanceOf[js.Any])
+    inline def setComparisonValue(value: String): Self = StObject.set(x, "comparisonValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComparisonValueUndefined: Self = StObject.set(x, "comparisonValue", js.undefined)
+    inline def setComparisonValueUndefined: Self = StObject.set(x, "comparisonValue", js.undefined)
   }
 }

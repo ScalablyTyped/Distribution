@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(source: String): js.UndefOr[String | Buffer | Unit] = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String | Buffer | Unit]]
-  @scala.inline
-  def apply(source: Buffer): js.UndefOr[String | Buffer | Unit] = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String | Buffer | Unit]]
+  inline def apply(source: String): js.UndefOr[String | Buffer | Unit] = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String | Buffer | Unit]]
+  inline def apply(source: Buffer): js.UndefOr[String | Buffer | Unit] = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String | Buffer | Unit]]
   
   @JSImport("svg-sprite-loader", JSImport.Namespace)
   @js.native

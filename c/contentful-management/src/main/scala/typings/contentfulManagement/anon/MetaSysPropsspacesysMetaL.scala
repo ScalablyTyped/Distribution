@@ -35,8 +35,7 @@ trait MetaSysPropsspacesysMetaL extends StObject {
 }
 object MetaSysPropsspacesysMetaL {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contentType: Sys,
     createdAt: String,
     environment: Sys,
@@ -51,61 +50,42 @@ object MetaSysPropsspacesysMetaL {
     __obj.asInstanceOf[MetaSysPropsspacesysMetaL]
   }
   
-  @scala.inline
-  implicit class MetaSysPropsspacesysMetaLMutableBuilder[Self <: MetaSysPropsspacesysMetaL] (val x: Self) extends AnyVal {
+  extension [Self <: MetaSysPropsspacesysMetaL](x: Self) {
     
-    @scala.inline
-    def setArchivedVersion(value: Double): Self = StObject.set(x, "archivedVersion", value.asInstanceOf[js.Any])
+    inline def setArchivedVersion(value: Double): Self = StObject.set(x, "archivedVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArchivedVersionUndefined: Self = StObject.set(x, "archivedVersion", js.undefined)
+    inline def setArchivedVersionUndefined: Self = StObject.set(x, "archivedVersion", js.undefined)
     
-    @scala.inline
-    def setContentType(value: Sys): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: Sys): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAt(value: String): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: String): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedBy(value: Sys): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
+    inline def setCreatedBy(value: Sys): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedByUndefined: Self = StObject.set(x, "createdBy", js.undefined)
+    inline def setCreatedByUndefined: Self = StObject.set(x, "createdBy", js.undefined)
     
-    @scala.inline
-    def setEnvironment(value: Sys): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: Sys): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishedVersion(value: Double): Self = StObject.set(x, "publishedVersion", value.asInstanceOf[js.Any])
+    inline def setPublishedVersion(value: Double): Self = StObject.set(x, "publishedVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishedVersionUndefined: Self = StObject.set(x, "publishedVersion", js.undefined)
+    inline def setPublishedVersionUndefined: Self = StObject.set(x, "publishedVersion", js.undefined)
     
-    @scala.inline
-    def setSpace(value: js.UndefOr[Sys] & Sys): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
+    inline def setSpace(value: js.UndefOr[Sys] & Sys): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: Sys): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Sys): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedAt(value: String): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: String): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedBy(value: Sys): Self = StObject.set(x, "updatedBy", value.asInstanceOf[js.Any])
+    inline def setUpdatedBy(value: Sys): Self = StObject.set(x, "updatedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedByUndefined: Self = StObject.set(x, "updatedBy", js.undefined)
+    inline def setUpdatedByUndefined: Self = StObject.set(x, "updatedBy", js.undefined)
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

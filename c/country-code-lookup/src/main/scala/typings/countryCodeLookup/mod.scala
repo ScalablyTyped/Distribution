@@ -10,19 +10,14 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def byCountry(country: String): CountryCode = ^.asInstanceOf[js.Dynamic].applyDynamic("byCountry")(country.asInstanceOf[js.Any]).asInstanceOf[CountryCode]
+  inline def byCountry(country: String): CountryCode = ^.asInstanceOf[js.Dynamic].applyDynamic("byCountry")(country.asInstanceOf[js.Any]).asInstanceOf[CountryCode]
   
-  @scala.inline
-  def byFips(code: String): CountryCode = ^.asInstanceOf[js.Dynamic].applyDynamic("byFips")(code.asInstanceOf[js.Any]).asInstanceOf[CountryCode]
+  inline def byFips(code: String): CountryCode = ^.asInstanceOf[js.Dynamic].applyDynamic("byFips")(code.asInstanceOf[js.Any]).asInstanceOf[CountryCode]
   
-  @scala.inline
-  def byInternet(code: String): CountryCode = ^.asInstanceOf[js.Dynamic].applyDynamic("byInternet")(code.asInstanceOf[js.Any]).asInstanceOf[CountryCode]
+  inline def byInternet(code: String): CountryCode = ^.asInstanceOf[js.Dynamic].applyDynamic("byInternet")(code.asInstanceOf[js.Any]).asInstanceOf[CountryCode]
   
-  @scala.inline
-  def byIso(code: String): CountryCode = ^.asInstanceOf[js.Dynamic].applyDynamic("byIso")(code.asInstanceOf[js.Any]).asInstanceOf[CountryCode]
-  @scala.inline
-  def byIso(code: Double): CountryCode = ^.asInstanceOf[js.Dynamic].applyDynamic("byIso")(code.asInstanceOf[js.Any]).asInstanceOf[CountryCode]
+  inline def byIso(code: String): CountryCode = ^.asInstanceOf[js.Dynamic].applyDynamic("byIso")(code.asInstanceOf[js.Any]).asInstanceOf[CountryCode]
+  inline def byIso(code: Double): CountryCode = ^.asInstanceOf[js.Dynamic].applyDynamic("byIso")(code.asInstanceOf[js.Any]).asInstanceOf[CountryCode]
   
   @JSImport("country-code-lookup", "countries")
   @js.native
@@ -50,8 +45,7 @@ object mod {
   }
   object CountryCode {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       capital: String,
       continent: String,
       country: String,
@@ -66,35 +60,25 @@ object mod {
       __obj.asInstanceOf[CountryCode]
     }
     
-    @scala.inline
-    implicit class CountryCodeMutableBuilder[Self <: CountryCode] (val x: Self) extends AnyVal {
+    extension [Self <: CountryCode](x: Self) {
       
-      @scala.inline
-      def setCapital(value: String): Self = StObject.set(x, "capital", value.asInstanceOf[js.Any])
+      inline def setCapital(value: String): Self = StObject.set(x, "capital", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContinent(value: String): Self = StObject.set(x, "continent", value.asInstanceOf[js.Any])
+      inline def setContinent(value: String): Self = StObject.set(x, "continent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+      inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFips(value: String): Self = StObject.set(x, "fips", value.asInstanceOf[js.Any])
+      inline def setFips(value: String): Self = StObject.set(x, "fips", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInternet(value: String): Self = StObject.set(x, "internet", value.asInstanceOf[js.Any])
+      inline def setInternet(value: String): Self = StObject.set(x, "internet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIso2(value: String): Self = StObject.set(x, "iso2", value.asInstanceOf[js.Any])
+      inline def setIso2(value: String): Self = StObject.set(x, "iso2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIso3(value: String): Self = StObject.set(x, "iso3", value.asInstanceOf[js.Any])
+      inline def setIso3(value: String): Self = StObject.set(x, "iso3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsoNo(value: String): Self = StObject.set(x, "isoNo", value.asInstanceOf[js.Any])
+      inline def setIsoNo(value: String): Self = StObject.set(x, "isoNo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     }
   }
 }

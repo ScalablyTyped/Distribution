@@ -18,28 +18,21 @@ trait ListRepositoriesForApprovalRuleTemplateOutput extends StObject {
 }
 object ListRepositoriesForApprovalRuleTemplateOutput {
   
-  @scala.inline
-  def apply(): ListRepositoriesForApprovalRuleTemplateOutput = {
+  inline def apply(): ListRepositoriesForApprovalRuleTemplateOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListRepositoriesForApprovalRuleTemplateOutput]
   }
   
-  @scala.inline
-  implicit class ListRepositoriesForApprovalRuleTemplateOutputMutableBuilder[Self <: ListRepositoriesForApprovalRuleTemplateOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListRepositoriesForApprovalRuleTemplateOutput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setRepositoryNames(value: RepositoryNameList): Self = StObject.set(x, "repositoryNames", value.asInstanceOf[js.Any])
+    inline def setRepositoryNames(value: RepositoryNameList): Self = StObject.set(x, "repositoryNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryNamesUndefined: Self = StObject.set(x, "repositoryNames", js.undefined)
+    inline def setRepositoryNamesUndefined: Self = StObject.set(x, "repositoryNames", js.undefined)
     
-    @scala.inline
-    def setRepositoryNamesVarargs(value: RepositoryName*): Self = StObject.set(x, "repositoryNames", js.Array(value :_*))
+    inline def setRepositoryNamesVarargs(value: RepositoryName*): Self = StObject.set(x, "repositoryNames", js.Array(value :_*))
   }
 }

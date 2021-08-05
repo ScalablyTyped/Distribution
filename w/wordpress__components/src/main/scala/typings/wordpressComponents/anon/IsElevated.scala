@@ -36,43 +36,31 @@ trait IsElevated[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was un
 }
 object IsElevated {
   
-  @scala.inline
-  def apply[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */](): IsElevated[T] = {
+  inline def apply[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */](): IsElevated[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IsElevated[T]]
   }
   
-  @scala.inline
-  implicit class IsElevatedMutableBuilder[Self <: IsElevated[?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */] (val x: Self & IsElevated[T]) extends AnyVal {
+  extension [Self <: IsElevated[?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */](x: Self & IsElevated[T]) {
     
-    @scala.inline
-    def setAs(value: T): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def setAs(value: T): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+    inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setIsBorderless(value: Boolean): Self = StObject.set(x, "isBorderless", value.asInstanceOf[js.Any])
+    inline def setIsBorderless(value: Boolean): Self = StObject.set(x, "isBorderless", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsBorderlessUndefined: Self = StObject.set(x, "isBorderless", js.undefined)
+    inline def setIsBorderlessUndefined: Self = StObject.set(x, "isBorderless", js.undefined)
     
-    @scala.inline
-    def setIsElevated(value: Boolean): Self = StObject.set(x, "isElevated", value.asInstanceOf[js.Any])
+    inline def setIsElevated(value: Boolean): Self = StObject.set(x, "isElevated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsElevatedUndefined: Self = StObject.set(x, "isElevated", js.undefined)
+    inline def setIsElevatedUndefined: Self = StObject.set(x, "isElevated", js.undefined)
     
-    @scala.inline
-    def setSize(value: CardSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: CardSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

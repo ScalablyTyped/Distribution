@@ -22,12 +22,10 @@ object ConfigValidator {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromSchemaFile(filename: String): typings.matrixAppserviceBridge.configValidatorMod.ConfigValidator = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSchemaFile")(filename.asInstanceOf[js.Any]).asInstanceOf[typings.matrixAppserviceBridge.configValidatorMod.ConfigValidator]
+  inline def fromSchemaFile(filename: String): typings.matrixAppserviceBridge.configValidatorMod.ConfigValidator = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSchemaFile")(filename.asInstanceOf[js.Any]).asInstanceOf[typings.matrixAppserviceBridge.configValidatorMod.ConfigValidator]
   
   @JSImport("matrix-appservice-bridge", "ConfigValidator.loadFromFile")
   @js.native
   def loadFromFile: js.Any = js.native
-  @scala.inline
-  def loadFromFile_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("loadFromFile")(x.asInstanceOf[js.Any])
+  inline def loadFromFile_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("loadFromFile")(x.asInstanceOf[js.Any])
 }

@@ -18,19 +18,15 @@ trait SetIdentityFeedbackForwardingEnabledRequest extends StObject {
 }
 object SetIdentityFeedbackForwardingEnabledRequest {
   
-  @scala.inline
-  def apply(ForwardingEnabled: Enabled, Identity: Identity): SetIdentityFeedbackForwardingEnabledRequest = {
+  inline def apply(ForwardingEnabled: Enabled, Identity: Identity): SetIdentityFeedbackForwardingEnabledRequest = {
     val __obj = js.Dynamic.literal(ForwardingEnabled = ForwardingEnabled.asInstanceOf[js.Any], Identity = Identity.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetIdentityFeedbackForwardingEnabledRequest]
   }
   
-  @scala.inline
-  implicit class SetIdentityFeedbackForwardingEnabledRequestMutableBuilder[Self <: SetIdentityFeedbackForwardingEnabledRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetIdentityFeedbackForwardingEnabledRequest](x: Self) {
     
-    @scala.inline
-    def setForwardingEnabled(value: Enabled): Self = StObject.set(x, "ForwardingEnabled", value.asInstanceOf[js.Any])
+    inline def setForwardingEnabled(value: Enabled): Self = StObject.set(x, "ForwardingEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentity(value: Identity): Self = StObject.set(x, "Identity", value.asInstanceOf[js.Any])
+    inline def setIdentity(value: Identity): Self = StObject.set(x, "Identity", value.asInstanceOf[js.Any])
   }
 }

@@ -22,20 +22,16 @@ object refundMod extends Shortcut {
   }
   object RefundProps {
     
-    @scala.inline
-    def apply(): RefundProps = {
+    inline def apply(): RefundProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RefundProps]
     }
     
-    @scala.inline
-    implicit class RefundPropsMutableBuilder[Self <: RefundProps] (val x: Self) extends AnyVal {
+    extension [Self <: RefundProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

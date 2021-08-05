@@ -20,19 +20,15 @@ trait SchemaManualScaling extends StObject {
 }
 object SchemaManualScaling {
   
-  @scala.inline
-  def apply(): SchemaManualScaling = {
+  inline def apply(): SchemaManualScaling = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaManualScaling]
   }
   
-  @scala.inline
-  implicit class SchemaManualScalingMutableBuilder[Self <: SchemaManualScaling] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaManualScaling](x: Self) {
     
-    @scala.inline
-    def setInstances(value: Double): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
+    inline def setInstances(value: Double): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
+    inline def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait TracingConfig extends StObject {
 }
 object TracingConfig {
   
-  @scala.inline
-  def apply(): TracingConfig = {
+  inline def apply(): TracingConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TracingConfig]
   }
   
-  @scala.inline
-  implicit class TracingConfigMutableBuilder[Self <: TracingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: TracingConfig](x: Self) {
     
-    @scala.inline
-    def setMode(value: TracingMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: TracingMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "Mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "Mode", js.undefined)
   }
 }

@@ -15,28 +15,21 @@ trait EntityMention extends StObject {
 }
 object EntityMention {
   
-  @scala.inline
-  def apply(): EntityMention = {
+  inline def apply(): EntityMention = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EntityMention]
   }
   
-  @scala.inline
-  implicit class EntityMentionMutableBuilder[Self <: EntityMention] (val x: Self) extends AnyVal {
+  extension [Self <: EntityMention](x: Self) {
     
-    @scala.inline
-    def setLocation(value: js.Array[Double]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: js.Array[Double]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value :_*))
+    inline def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value :_*))
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

@@ -37,14 +37,12 @@ object scrollablePaneTypesMod {
     @JSImport("office-ui-fabric-react/lib/components/ScrollablePane/ScrollablePane.types", "ScrollbarVisibility.always")
     @js.native
     def always: typings.officeUiFabricReact.officeUiFabricReactStrings.always = js.native
-    @scala.inline
-    def always_=(x: always): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("always")(x.asInstanceOf[js.Any])
+    inline def always_=(x: always): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("always")(x.asInstanceOf[js.Any])
     
     @JSImport("office-ui-fabric-react/lib/components/ScrollablePane/ScrollablePane.types", "ScrollbarVisibility.auto")
     @js.native
     def auto: typings.officeUiFabricReact.officeUiFabricReactStrings.auto = js.native
-    @scala.inline
-    def auto_=(x: auto): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("auto")(x.asInstanceOf[js.Any])
+    inline def auto_=(x: auto): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("auto")(x.asInstanceOf[js.Any])
   }
   
   trait IScrollablePane extends StObject {
@@ -57,20 +55,16 @@ object scrollablePaneTypesMod {
   }
   object IScrollablePane {
     
-    @scala.inline
-    def apply(forceLayoutUpdate: () => Unit, getScrollPosition: () => Double): IScrollablePane = {
+    inline def apply(forceLayoutUpdate: () => Unit, getScrollPosition: () => Double): IScrollablePane = {
       val __obj = js.Dynamic.literal(forceLayoutUpdate = js.Any.fromFunction0(forceLayoutUpdate), getScrollPosition = js.Any.fromFunction0(getScrollPosition))
       __obj.asInstanceOf[IScrollablePane]
     }
     
-    @scala.inline
-    implicit class IScrollablePaneMutableBuilder[Self <: IScrollablePane] (val x: Self) extends AnyVal {
+    extension [Self <: IScrollablePane](x: Self) {
       
-      @scala.inline
-      def setForceLayoutUpdate(value: () => Unit): Self = StObject.set(x, "forceLayoutUpdate", js.Any.fromFunction0(value))
+      inline def setForceLayoutUpdate(value: () => Unit): Self = StObject.set(x, "forceLayoutUpdate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetScrollPosition(value: () => Double): Self = StObject.set(x, "getScrollPosition", js.Any.fromFunction0(value))
+      inline def setGetScrollPosition(value: () => Double): Self = StObject.set(x, "getScrollPosition", js.Any.fromFunction0(value))
     }
   }
   
@@ -80,20 +74,16 @@ object scrollablePaneTypesMod {
   }
   object IScrollablePaneContext {
     
-    @scala.inline
-    def apply(): IScrollablePaneContext = {
+    inline def apply(): IScrollablePaneContext = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IScrollablePaneContext]
     }
     
-    @scala.inline
-    implicit class IScrollablePaneContextMutableBuilder[Self <: IScrollablePaneContext] (val x: Self) extends AnyVal {
+    extension [Self <: IScrollablePaneContext](x: Self) {
       
-      @scala.inline
-      def setScrollablePane(value: AddSticky): Self = StObject.set(x, "scrollablePane", value.asInstanceOf[js.Any])
+      inline def setScrollablePane(value: AddSticky): Self = StObject.set(x, "scrollablePane", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollablePaneUndefined: Self = StObject.set(x, "scrollablePane", js.undefined)
+      inline def setScrollablePaneUndefined: Self = StObject.set(x, "scrollablePane", js.undefined)
     }
   }
   
@@ -126,50 +116,36 @@ object scrollablePaneTypesMod {
   }
   object IScrollablePaneProps {
     
-    @scala.inline
-    def apply(): IScrollablePaneProps = {
+    inline def apply(): IScrollablePaneProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IScrollablePaneProps]
     }
     
-    @scala.inline
-    implicit class IScrollablePanePropsMutableBuilder[Self <: IScrollablePaneProps] (val x: Self) extends AnyVal {
+    extension [Self <: IScrollablePaneProps](x: Self) {
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[IScrollablePane]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[IScrollablePane]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ IScrollablePane | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ IScrollablePane | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setInitialScrollPosition(value: Double): Self = StObject.set(x, "initialScrollPosition", value.asInstanceOf[js.Any])
+      inline def setInitialScrollPosition(value: Double): Self = StObject.set(x, "initialScrollPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialScrollPositionUndefined: Self = StObject.set(x, "initialScrollPosition", js.undefined)
+      inline def setInitialScrollPositionUndefined: Self = StObject.set(x, "initialScrollPosition", js.undefined)
       
-      @scala.inline
-      def setScrollbarVisibility(value: ScrollbarVisibility): Self = StObject.set(x, "scrollbarVisibility", value.asInstanceOf[js.Any])
+      inline def setScrollbarVisibility(value: ScrollbarVisibility): Self = StObject.set(x, "scrollbarVisibility", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollbarVisibilityUndefined: Self = StObject.set(x, "scrollbarVisibility", js.undefined)
+      inline def setScrollbarVisibilityUndefined: Self = StObject.set(x, "scrollbarVisibility", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[IScrollablePaneStyleProps, IScrollablePaneStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[IScrollablePaneStyleProps, IScrollablePaneStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: IScrollablePaneStyleProps => DeepPartial[IScrollablePaneStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: IScrollablePaneStyleProps => DeepPartial[IScrollablePaneStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -189,29 +165,22 @@ object scrollablePaneTypesMod {
   }
   object IScrollablePaneStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): IScrollablePaneStyleProps = {
+    inline def apply(theme: ITheme): IScrollablePaneStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[IScrollablePaneStyleProps]
     }
     
-    @scala.inline
-    implicit class IScrollablePaneStylePropsMutableBuilder[Self <: IScrollablePaneStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IScrollablePaneStyleProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setScrollbarVisibility(value: ScrollbarVisibility): Self = StObject.set(x, "scrollbarVisibility", value.asInstanceOf[js.Any])
+      inline def setScrollbarVisibility(value: ScrollbarVisibility): Self = StObject.set(x, "scrollbarVisibility", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollbarVisibilityUndefined: Self = StObject.set(x, "scrollbarVisibility", js.undefined)
+      inline def setScrollbarVisibilityUndefined: Self = StObject.set(x, "scrollbarVisibility", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -244,59 +213,42 @@ object scrollablePaneTypesMod {
   }
   object IScrollablePaneStyles {
     
-    @scala.inline
-    def apply(): IScrollablePaneStyles = {
+    inline def apply(): IScrollablePaneStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IScrollablePaneStyles]
     }
     
-    @scala.inline
-    implicit class IScrollablePaneStylesMutableBuilder[Self <: IScrollablePaneStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IScrollablePaneStyles](x: Self) {
       
-      @scala.inline
-      def setContentContainer(value: IStyle): Self = StObject.set(x, "contentContainer", value.asInstanceOf[js.Any])
+      inline def setContentContainer(value: IStyle): Self = StObject.set(x, "contentContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentContainerNull: Self = StObject.set(x, "contentContainer", null)
+      inline def setContentContainerNull: Self = StObject.set(x, "contentContainer", null)
       
-      @scala.inline
-      def setContentContainerUndefined: Self = StObject.set(x, "contentContainer", js.undefined)
+      inline def setContentContainerUndefined: Self = StObject.set(x, "contentContainer", js.undefined)
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setStickyAbove(value: IStyle): Self = StObject.set(x, "stickyAbove", value.asInstanceOf[js.Any])
+      inline def setStickyAbove(value: IStyle): Self = StObject.set(x, "stickyAbove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStickyAboveNull: Self = StObject.set(x, "stickyAbove", null)
+      inline def setStickyAboveNull: Self = StObject.set(x, "stickyAbove", null)
       
-      @scala.inline
-      def setStickyAboveUndefined: Self = StObject.set(x, "stickyAbove", js.undefined)
+      inline def setStickyAboveUndefined: Self = StObject.set(x, "stickyAbove", js.undefined)
       
-      @scala.inline
-      def setStickyBelow(value: IStyle): Self = StObject.set(x, "stickyBelow", value.asInstanceOf[js.Any])
+      inline def setStickyBelow(value: IStyle): Self = StObject.set(x, "stickyBelow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStickyBelowItems(value: IStyle): Self = StObject.set(x, "stickyBelowItems", value.asInstanceOf[js.Any])
+      inline def setStickyBelowItems(value: IStyle): Self = StObject.set(x, "stickyBelowItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStickyBelowItemsNull: Self = StObject.set(x, "stickyBelowItems", null)
+      inline def setStickyBelowItemsNull: Self = StObject.set(x, "stickyBelowItems", null)
       
-      @scala.inline
-      def setStickyBelowItemsUndefined: Self = StObject.set(x, "stickyBelowItems", js.undefined)
+      inline def setStickyBelowItemsUndefined: Self = StObject.set(x, "stickyBelowItems", js.undefined)
       
-      @scala.inline
-      def setStickyBelowNull: Self = StObject.set(x, "stickyBelow", null)
+      inline def setStickyBelowNull: Self = StObject.set(x, "stickyBelow", null)
       
-      @scala.inline
-      def setStickyBelowUndefined: Self = StObject.set(x, "stickyBelow", js.undefined)
+      inline def setStickyBelowUndefined: Self = StObject.set(x, "stickyBelow", js.undefined)
     }
   }
 }

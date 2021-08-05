@@ -21,8 +21,7 @@ object externalApplicationMod {
   }
   object ExternalApplicationEvents {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       connected: RuntimeEvent[externalapplication, connected],
       disconnected: RuntimeEvent[externalapplication, disconnected],
       listenerRemoved: String,
@@ -32,14 +31,11 @@ object externalApplicationMod {
       __obj.asInstanceOf[ExternalApplicationEvents]
     }
     
-    @scala.inline
-    implicit class ExternalApplicationEventsMutableBuilder[Self <: ExternalApplicationEvents] (val x: Self) extends AnyVal {
+    extension [Self <: ExternalApplicationEvents](x: Self) {
       
-      @scala.inline
-      def setConnected(value: RuntimeEvent[externalapplication, connected]): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
+      inline def setConnected(value: RuntimeEvent[externalapplication, connected]): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisconnected(value: RuntimeEvent[externalapplication, disconnected]): Self = StObject.set(x, "disconnected", value.asInstanceOf[js.Any])
+      inline def setDisconnected(value: RuntimeEvent[externalapplication, disconnected]): Self = StObject.set(x, "disconnected", value.asInstanceOf[js.Any])
     }
   }
 }

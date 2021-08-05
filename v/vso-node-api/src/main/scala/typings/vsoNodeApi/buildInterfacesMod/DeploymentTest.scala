@@ -12,17 +12,14 @@ trait DeploymentTest
 }
 object DeploymentTest {
   
-  @scala.inline
-  def apply(runId: Double, `type`: String): DeploymentTest = {
+  inline def apply(runId: Double, `type`: String): DeploymentTest = {
     val __obj = js.Dynamic.literal(runId = runId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentTest]
   }
   
-  @scala.inline
-  implicit class DeploymentTestMutableBuilder[Self <: DeploymentTest] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentTest](x: Self) {
     
-    @scala.inline
-    def setRunId(value: Double): Self = StObject.set(x, "runId", value.asInstanceOf[js.Any])
+    inline def setRunId(value: Double): Self = StObject.set(x, "runId", value.asInstanceOf[js.Any])
   }
 }

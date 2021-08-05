@@ -20,25 +20,19 @@ trait GitCreateTagRequestOptions extends StObject {
 }
 object GitCreateTagRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): GitCreateTagRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): GitCreateTagRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "POST", request = request.asInstanceOf[js.Any], url = "/repos/:owner/:repo/git/tags")
     __obj.asInstanceOf[GitCreateTagRequestOptions]
   }
   
-  @scala.inline
-  implicit class GitCreateTagRequestOptionsMutableBuilder[Self <: GitCreateTagRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GitCreateTagRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashreposSlashColonownerSlashColonrepoSlashgitSlashtags): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashreposSlashColonownerSlashColonrepoSlashgitSlashtags): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

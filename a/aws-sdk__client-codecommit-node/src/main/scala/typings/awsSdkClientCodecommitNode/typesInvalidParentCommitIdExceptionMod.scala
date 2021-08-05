@@ -18,17 +18,14 @@ object typesInvalidParentCommitIdExceptionMod {
   }
   object InvalidParentCommitIdException {
     
-    @scala.inline
-    def apply(): InvalidParentCommitIdException = {
+    inline def apply(): InvalidParentCommitIdException = {
       val __obj = js.Dynamic.literal(name = "InvalidParentCommitIdException")
       __obj.asInstanceOf[InvalidParentCommitIdException]
     }
     
-    @scala.inline
-    implicit class InvalidParentCommitIdExceptionMutableBuilder[Self <: InvalidParentCommitIdException] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidParentCommitIdException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidParentCommitIdException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

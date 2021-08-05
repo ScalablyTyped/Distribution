@@ -14,31 +14,23 @@ trait ImplicitGrantSettings extends StObject {
 }
 object ImplicitGrantSettings {
   
-  @scala.inline
-  def apply(): ImplicitGrantSettings = {
+  inline def apply(): ImplicitGrantSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImplicitGrantSettings]
   }
   
-  @scala.inline
-  implicit class ImplicitGrantSettingsMutableBuilder[Self <: ImplicitGrantSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ImplicitGrantSettings](x: Self) {
     
-    @scala.inline
-    def setEnableAccessTokenIssuance(value: NullableOption[Boolean]): Self = StObject.set(x, "enableAccessTokenIssuance", value.asInstanceOf[js.Any])
+    inline def setEnableAccessTokenIssuance(value: NullableOption[Boolean]): Self = StObject.set(x, "enableAccessTokenIssuance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableAccessTokenIssuanceNull: Self = StObject.set(x, "enableAccessTokenIssuance", null)
+    inline def setEnableAccessTokenIssuanceNull: Self = StObject.set(x, "enableAccessTokenIssuance", null)
     
-    @scala.inline
-    def setEnableAccessTokenIssuanceUndefined: Self = StObject.set(x, "enableAccessTokenIssuance", js.undefined)
+    inline def setEnableAccessTokenIssuanceUndefined: Self = StObject.set(x, "enableAccessTokenIssuance", js.undefined)
     
-    @scala.inline
-    def setEnableIdTokenIssuance(value: NullableOption[Boolean]): Self = StObject.set(x, "enableIdTokenIssuance", value.asInstanceOf[js.Any])
+    inline def setEnableIdTokenIssuance(value: NullableOption[Boolean]): Self = StObject.set(x, "enableIdTokenIssuance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableIdTokenIssuanceNull: Self = StObject.set(x, "enableIdTokenIssuance", null)
+    inline def setEnableIdTokenIssuanceNull: Self = StObject.set(x, "enableIdTokenIssuance", null)
     
-    @scala.inline
-    def setEnableIdTokenIssuanceUndefined: Self = StObject.set(x, "enableIdTokenIssuance", js.undefined)
+    inline def setEnableIdTokenIssuanceUndefined: Self = StObject.set(x, "enableIdTokenIssuance", js.undefined)
   }
 }

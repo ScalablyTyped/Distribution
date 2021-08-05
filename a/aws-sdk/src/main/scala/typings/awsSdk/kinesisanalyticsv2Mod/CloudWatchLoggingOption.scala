@@ -13,16 +13,13 @@ trait CloudWatchLoggingOption extends StObject {
 }
 object CloudWatchLoggingOption {
   
-  @scala.inline
-  def apply(LogStreamARN: LogStreamARN): CloudWatchLoggingOption = {
+  inline def apply(LogStreamARN: LogStreamARN): CloudWatchLoggingOption = {
     val __obj = js.Dynamic.literal(LogStreamARN = LogStreamARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudWatchLoggingOption]
   }
   
-  @scala.inline
-  implicit class CloudWatchLoggingOptionMutableBuilder[Self <: CloudWatchLoggingOption] (val x: Self) extends AnyVal {
+  extension [Self <: CloudWatchLoggingOption](x: Self) {
     
-    @scala.inline
-    def setLogStreamARN(value: LogStreamARN): Self = StObject.set(x, "LogStreamARN", value.asInstanceOf[js.Any])
+    inline def setLogStreamARN(value: LogStreamARN): Self = StObject.set(x, "LogStreamARN", value.asInstanceOf[js.Any])
   }
 }

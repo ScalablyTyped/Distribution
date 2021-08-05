@@ -34,7 +34,7 @@ object cellMod {
       */
     def calmRefEq(): Cell[A] = js.native
     
-    var cleanup: js.Any = js.native
+    /* private */ var cleanup: js.Any = js.native
     
     @JSName("fantasy-land/ap")
     def `fantasy-landSlashap`[B](cf: Cell[js.Function1[/* a */ A, B]]): Cell[B] = js.native
@@ -46,7 +46,7 @@ object cellMod {
     
     def getVertex__(): Vertex = js.native
     
-    var lazyInitValue: Lazy[A] = js.native
+    /* protected */ var lazyInitValue: Lazy[A] = js.native
     
     /**
       * Lift a binary function into cells, so the returned Cell always reflects the specified
@@ -164,7 +164,7 @@ object cellMod {
     
     /* protected */ def setStream(str: Stream[A]): Unit = js.native
     
-    var str: js.Any = js.native
+    /* private */ var str: js.Any = js.native
     
     /**
       * High order depenency traking. If any newly created sodium objects within a value of a cell of a sodium object
@@ -172,11 +172,11 @@ object cellMod {
       */
     def tracking(extractor: js.Function1[/* a */ A, js.Array[Stream[js.Any] | Cell[js.Any]]]): Cell[A] = js.native
     
-    var value: A = js.native
+    /* protected */ var value: A = js.native
     
-    var valueUpdate: A = js.native
+    /* protected */ var valueUpdate: A = js.native
     
-    var vertex: js.Any = js.native
+    /* private */ var vertex: js.Any = js.native
   }
   /* static members */
   object Cell {
@@ -188,42 +188,35 @@ object cellMod {
     @JSImport("sodiumjs/dist/typings/sodium/Cell", "Cell._liftArray")
     @js.native
     def _liftArray: js.Any = js.native
-    @scala.inline
-    def _liftArray_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_liftArray")(x.asInstanceOf[js.Any])
+    inline def _liftArray_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_liftArray")(x.asInstanceOf[js.Any])
     
     /**
       * Apply a value inside a cell to a function inside a cell. This is the
       * primitive for all function lifting.
       */
-    @scala.inline
-    def apply[A, B](cf: Cell[js.Function1[/* a */ A, B]], ca: Cell[A]): Cell[B] = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(cf.asInstanceOf[js.Any], ca.asInstanceOf[js.Any])).asInstanceOf[Cell[B]]
-    @scala.inline
-    def apply[A, B](cf: Cell[js.Function1[/* a */ A, B]], ca: Cell[A], sources: js.Array[Source]): Cell[B] = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(cf.asInstanceOf[js.Any], ca.asInstanceOf[js.Any], sources.asInstanceOf[js.Any])).asInstanceOf[Cell[B]]
+    inline def apply[A, B](cf: Cell[js.Function1[/* a */ A, B]], ca: Cell[A]): Cell[B] = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(cf.asInstanceOf[js.Any], ca.asInstanceOf[js.Any])).asInstanceOf[Cell[B]]
+    inline def apply[A, B](cf: Cell[js.Function1[/* a */ A, B]], ca: Cell[A], sources: js.Array[Source]): Cell[B] = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(cf.asInstanceOf[js.Any], ca.asInstanceOf[js.Any], sources.asInstanceOf[js.Any])).asInstanceOf[Cell[B]]
     
     /**
       * Fantasy-land Algebraic Data Type Compatability.
       * Cell satisfies the Functor, Apply, Applicative categories
       * @see {@link https://github.com/fantasyland/fantasy-land} for more info
       */
-    @scala.inline
-    def `fantasy-landSlashof`[A](a: A): Cell[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fantasy-land/of")(a.asInstanceOf[js.Any]).asInstanceOf[Cell[A]]
+    inline def `fantasy-landSlashof`[A](a: A): Cell[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fantasy-land/of")(a.asInstanceOf[js.Any]).asInstanceOf[Cell[A]]
     
     /**
       * Lift an array of cells into a cell of an array.
       */
-    @scala.inline
-    def liftArray[A](ca: js.Array[Cell[A]]): Cell[js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("liftArray")(ca.asInstanceOf[js.Any]).asInstanceOf[Cell[js.Array[A]]]
+    inline def liftArray[A](ca: js.Array[Cell[A]]): Cell[js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("liftArray")(ca.asInstanceOf[js.Any]).asInstanceOf[Cell[js.Array[A]]]
     
     /**
       * Unwrap a cell inside another cell to give a time-varying cell implementation.
       */
-    @scala.inline
-    def switchC[A](cca: Cell[Cell[A]]): Cell[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("switchC")(cca.asInstanceOf[js.Any]).asInstanceOf[Cell[A]]
+    inline def switchC[A](cca: Cell[Cell[A]]): Cell[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("switchC")(cca.asInstanceOf[js.Any]).asInstanceOf[Cell[A]]
     
     /**
       * Unwrap a stream inside a cell to give a time-varying stream implementation.
       */
-    @scala.inline
-    def switchS[A](csa: Cell[Stream[A]]): Stream[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("switchS")(csa.asInstanceOf[js.Any]).asInstanceOf[Stream[A]]
+    inline def switchS[A](csa: Cell[Stream[A]]): Stream[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("switchS")(csa.asInstanceOf[js.Any]).asInstanceOf[Stream[A]]
   }
 }

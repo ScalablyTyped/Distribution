@@ -23,31 +23,23 @@ trait UserPoolAdminCreateUserConfigInviteMessageTemplate extends StObject {
 }
 object UserPoolAdminCreateUserConfigInviteMessageTemplate {
   
-  @scala.inline
-  def apply(): UserPoolAdminCreateUserConfigInviteMessageTemplate = {
+  inline def apply(): UserPoolAdminCreateUserConfigInviteMessageTemplate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserPoolAdminCreateUserConfigInviteMessageTemplate]
   }
   
-  @scala.inline
-  implicit class UserPoolAdminCreateUserConfigInviteMessageTemplateMutableBuilder[Self <: UserPoolAdminCreateUserConfigInviteMessageTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: UserPoolAdminCreateUserConfigInviteMessageTemplate](x: Self) {
     
-    @scala.inline
-    def setEmailMessage(value: String): Self = StObject.set(x, "emailMessage", value.asInstanceOf[js.Any])
+    inline def setEmailMessage(value: String): Self = StObject.set(x, "emailMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailMessageUndefined: Self = StObject.set(x, "emailMessage", js.undefined)
+    inline def setEmailMessageUndefined: Self = StObject.set(x, "emailMessage", js.undefined)
     
-    @scala.inline
-    def setEmailSubject(value: String): Self = StObject.set(x, "emailSubject", value.asInstanceOf[js.Any])
+    inline def setEmailSubject(value: String): Self = StObject.set(x, "emailSubject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailSubjectUndefined: Self = StObject.set(x, "emailSubject", js.undefined)
+    inline def setEmailSubjectUndefined: Self = StObject.set(x, "emailSubject", js.undefined)
     
-    @scala.inline
-    def setSmsMessage(value: String): Self = StObject.set(x, "smsMessage", value.asInstanceOf[js.Any])
+    inline def setSmsMessage(value: String): Self = StObject.set(x, "smsMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmsMessageUndefined: Self = StObject.set(x, "smsMessage", js.undefined)
+    inline def setSmsMessageUndefined: Self = StObject.set(x, "smsMessage", js.undefined)
   }
 }

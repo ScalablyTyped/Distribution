@@ -24,20 +24,16 @@ object tensorTypesMod {
   }
   object NamedTensor {
     
-    @scala.inline
-    def apply(name: String, tensor: Tensor[Rank]): NamedTensor = {
+    inline def apply(name: String, tensor: Tensor[Rank]): NamedTensor = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], tensor = tensor.asInstanceOf[js.Any])
       __obj.asInstanceOf[NamedTensor]
     }
     
-    @scala.inline
-    implicit class NamedTensorMutableBuilder[Self <: NamedTensor] (val x: Self) extends AnyVal {
+    extension [Self <: NamedTensor](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTensor(value: Tensor[Rank]): Self = StObject.set(x, "tensor", value.asInstanceOf[js.Any])
+      inline def setTensor(value: Tensor[Rank]): Self = StObject.set(x, "tensor", value.asInstanceOf[js.Any])
     }
   }
   
@@ -71,8 +67,7 @@ object tensorTypesMod {
        with _TensorContainer
   object TensorContainerObject {
     
-    @scala.inline
-    def apply(): TensorContainerObject = {
+    inline def apply(): TensorContainerObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TensorContainerObject]
     }

@@ -25,31 +25,23 @@ trait Options extends StObject {
 }
 object Options {
   
-  @scala.inline
-  def apply(): Options = {
+  inline def apply(): Options = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Options]
   }
   
-  @scala.inline
-  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+  extension [Self <: Options](x: Self) {
     
-    @scala.inline
-    def setEncryptionScheme(value: EncryptionScheme | AdvancedEncryptionScheme): Self = StObject.set(x, "encryptionScheme", value.asInstanceOf[js.Any])
+    inline def setEncryptionScheme(value: EncryptionScheme | AdvancedEncryptionScheme): Self = StObject.set(x, "encryptionScheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionSchemeUndefined: Self = StObject.set(x, "encryptionScheme", js.undefined)
+    inline def setEncryptionSchemeUndefined: Self = StObject.set(x, "encryptionScheme", js.undefined)
     
-    @scala.inline
-    def setEnvironment(value: browser | node): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: browser | node): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+    inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
-    @scala.inline
-    def setSigningScheme(value: SigningScheme | SigningSchemeHash | AdvancedSigningScheme): Self = StObject.set(x, "signingScheme", value.asInstanceOf[js.Any])
+    inline def setSigningScheme(value: SigningScheme | SigningSchemeHash | AdvancedSigningScheme): Self = StObject.set(x, "signingScheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigningSchemeUndefined: Self = StObject.set(x, "signingScheme", js.undefined)
+    inline def setSigningSchemeUndefined: Self = StObject.set(x, "signingScheme", js.undefined)
   }
 }

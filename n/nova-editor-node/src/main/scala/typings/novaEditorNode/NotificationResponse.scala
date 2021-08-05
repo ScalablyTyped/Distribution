@@ -15,28 +15,21 @@ trait NotificationResponse extends StObject {
 }
 object NotificationResponse {
   
-  @scala.inline
-  def apply(identifier: String): NotificationResponse = {
+  inline def apply(identifier: String): NotificationResponse = {
     val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any], actionIdx = null)
     __obj.asInstanceOf[NotificationResponse]
   }
   
-  @scala.inline
-  implicit class NotificationResponseMutableBuilder[Self <: NotificationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationResponse](x: Self) {
     
-    @scala.inline
-    def setActionIdx(value: Double): Self = StObject.set(x, "actionIdx", value.asInstanceOf[js.Any])
+    inline def setActionIdx(value: Double): Self = StObject.set(x, "actionIdx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionIdxNull: Self = StObject.set(x, "actionIdx", null)
+    inline def setActionIdxNull: Self = StObject.set(x, "actionIdx", null)
     
-    @scala.inline
-    def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextInputValue(value: String): Self = StObject.set(x, "textInputValue", value.asInstanceOf[js.Any])
+    inline def setTextInputValue(value: String): Self = StObject.set(x, "textInputValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextInputValueUndefined: Self = StObject.set(x, "textInputValue", js.undefined)
+    inline def setTextInputValueUndefined: Self = StObject.set(x, "textInputValue", js.undefined)
   }
 }

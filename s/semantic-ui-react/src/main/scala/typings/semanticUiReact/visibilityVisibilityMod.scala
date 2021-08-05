@@ -176,149 +176,102 @@ object visibilityVisibilityMod extends Shortcut {
   }
   object StrictVisibilityProps {
     
-    @scala.inline
-    def apply(): StrictVisibilityProps = {
+    inline def apply(): StrictVisibilityProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictVisibilityProps]
     }
     
-    @scala.inline
-    implicit class StrictVisibilityPropsMutableBuilder[Self <: StrictVisibilityProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictVisibilityProps](x: Self) {
       
-      @scala.inline
-      def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setContext(value: Document | Window | HTMLElement): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Document | Window | HTMLElement): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setContinuous(value: Boolean): Self = StObject.set(x, "continuous", value.asInstanceOf[js.Any])
+      inline def setContinuous(value: Boolean): Self = StObject.set(x, "continuous", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContinuousUndefined: Self = StObject.set(x, "continuous", js.undefined)
+      inline def setContinuousUndefined: Self = StObject.set(x, "continuous", js.undefined)
       
-      @scala.inline
-      def setFireOnMount(value: Boolean): Self = StObject.set(x, "fireOnMount", value.asInstanceOf[js.Any])
+      inline def setFireOnMount(value: Boolean): Self = StObject.set(x, "fireOnMount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFireOnMountUndefined: Self = StObject.set(x, "fireOnMount", js.undefined)
+      inline def setFireOnMountUndefined: Self = StObject.set(x, "fireOnMount", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Double | String | (js.Array[Double | String])): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double | String | (js.Array[Double | String])): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setOffsetVarargs(value: (Double | String)*): Self = StObject.set(x, "offset", js.Array(value :_*))
+      inline def setOffsetVarargs(value: (Double | String)*): Self = StObject.set(x, "offset", js.Array(value :_*))
       
-      @scala.inline
-      def setOnBottomPassed(value: (/* nothing */ Null, /* data */ VisibilityEventData) => Unit): Self = StObject.set(x, "onBottomPassed", js.Any.fromFunction2(value))
+      inline def setOnBottomPassed(value: (/* nothing */ Null, /* data */ VisibilityEventData) => Unit): Self = StObject.set(x, "onBottomPassed", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnBottomPassedReverse(value: (/* nothing */ Null, /* data */ VisibilityEventData) => Unit): Self = StObject.set(x, "onBottomPassedReverse", js.Any.fromFunction2(value))
+      inline def setOnBottomPassedReverse(value: (/* nothing */ Null, /* data */ VisibilityEventData) => Unit): Self = StObject.set(x, "onBottomPassedReverse", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnBottomPassedReverseUndefined: Self = StObject.set(x, "onBottomPassedReverse", js.undefined)
+      inline def setOnBottomPassedReverseUndefined: Self = StObject.set(x, "onBottomPassedReverse", js.undefined)
       
-      @scala.inline
-      def setOnBottomPassedUndefined: Self = StObject.set(x, "onBottomPassed", js.undefined)
+      inline def setOnBottomPassedUndefined: Self = StObject.set(x, "onBottomPassed", js.undefined)
       
-      @scala.inline
-      def setOnBottomVisible(value: (/* nothing */ Null, /* data */ VisibilityEventData) => Unit): Self = StObject.set(x, "onBottomVisible", js.Any.fromFunction2(value))
+      inline def setOnBottomVisible(value: (/* nothing */ Null, /* data */ VisibilityEventData) => Unit): Self = StObject.set(x, "onBottomVisible", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnBottomVisibleReverse(value: (/* nothing */ Null, /* data */ VisibilityEventData) => Unit): Self = StObject.set(x, "onBottomVisibleReverse", js.Any.fromFunction2(value))
+      inline def setOnBottomVisibleReverse(value: (/* nothing */ Null, /* data */ VisibilityEventData) => Unit): Self = StObject.set(x, "onBottomVisibleReverse", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnBottomVisibleReverseUndefined: Self = StObject.set(x, "onBottomVisibleReverse", js.undefined)
+      inline def setOnBottomVisibleReverseUndefined: Self = StObject.set(x, "onBottomVisibleReverse", js.undefined)
       
-      @scala.inline
-      def setOnBottomVisibleUndefined: Self = StObject.set(x, "onBottomVisible", js.undefined)
+      inline def setOnBottomVisibleUndefined: Self = StObject.set(x, "onBottomVisible", js.undefined)
       
-      @scala.inline
-      def setOnOffScreen(value: (/* nothing */ Null, /* data */ VisibilityEventData) => Unit): Self = StObject.set(x, "onOffScreen", js.Any.fromFunction2(value))
+      inline def setOnOffScreen(value: (/* nothing */ Null, /* data */ VisibilityEventData) => Unit): Self = StObject.set(x, "onOffScreen", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnOffScreenUndefined: Self = StObject.set(x, "onOffScreen", js.undefined)
+      inline def setOnOffScreenUndefined: Self = StObject.set(x, "onOffScreen", js.undefined)
       
-      @scala.inline
-      def setOnOnScreen(value: (/* nothing */ Null, /* data */ VisibilityEventData) => Unit): Self = StObject.set(x, "onOnScreen", js.Any.fromFunction2(value))
+      inline def setOnOnScreen(value: (/* nothing */ Null, /* data */ VisibilityEventData) => Unit): Self = StObject.set(x, "onOnScreen", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnOnScreenUndefined: Self = StObject.set(x, "onOnScreen", js.undefined)
+      inline def setOnOnScreenUndefined: Self = StObject.set(x, "onOnScreen", js.undefined)
       
-      @scala.inline
-      def setOnPassed(value: VisibilityOnPassed): Self = StObject.set(x, "onPassed", value.asInstanceOf[js.Any])
+      inline def setOnPassed(value: VisibilityOnPassed): Self = StObject.set(x, "onPassed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnPassedUndefined: Self = StObject.set(x, "onPassed", js.undefined)
+      inline def setOnPassedUndefined: Self = StObject.set(x, "onPassed", js.undefined)
       
-      @scala.inline
-      def setOnPassing(value: (/* nothing */ Null, /* data */ VisibilityEventData) => Unit): Self = StObject.set(x, "onPassing", js.Any.fromFunction2(value))
+      inline def setOnPassing(value: (/* nothing */ Null, /* data */ VisibilityEventData) => Unit): Self = StObject.set(x, "onPassing", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnPassingReverse(value: (/* nothing */ Null, /* data */ VisibilityEventData) => Unit): Self = StObject.set(x, "onPassingReverse", js.Any.fromFunction2(value))
+      inline def setOnPassingReverse(value: (/* nothing */ Null, /* data */ VisibilityEventData) => Unit): Self = StObject.set(x, "onPassingReverse", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnPassingReverseUndefined: Self = StObject.set(x, "onPassingReverse", js.undefined)
+      inline def setOnPassingReverseUndefined: Self = StObject.set(x, "onPassingReverse", js.undefined)
       
-      @scala.inline
-      def setOnPassingUndefined: Self = StObject.set(x, "onPassing", js.undefined)
+      inline def setOnPassingUndefined: Self = StObject.set(x, "onPassing", js.undefined)
       
-      @scala.inline
-      def setOnTopPassed(value: (/* nothing */ Null, /* data */ VisibilityEventData) => Unit): Self = StObject.set(x, "onTopPassed", js.Any.fromFunction2(value))
+      inline def setOnTopPassed(value: (/* nothing */ Null, /* data */ VisibilityEventData) => Unit): Self = StObject.set(x, "onTopPassed", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnTopPassedReverse(value: (/* nothing */ Null, /* data */ VisibilityEventData) => Unit): Self = StObject.set(x, "onTopPassedReverse", js.Any.fromFunction2(value))
+      inline def setOnTopPassedReverse(value: (/* nothing */ Null, /* data */ VisibilityEventData) => Unit): Self = StObject.set(x, "onTopPassedReverse", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnTopPassedReverseUndefined: Self = StObject.set(x, "onTopPassedReverse", js.undefined)
+      inline def setOnTopPassedReverseUndefined: Self = StObject.set(x, "onTopPassedReverse", js.undefined)
       
-      @scala.inline
-      def setOnTopPassedUndefined: Self = StObject.set(x, "onTopPassed", js.undefined)
+      inline def setOnTopPassedUndefined: Self = StObject.set(x, "onTopPassed", js.undefined)
       
-      @scala.inline
-      def setOnTopVisible(value: (/* nothing */ Null, /* data */ VisibilityEventData) => Unit): Self = StObject.set(x, "onTopVisible", js.Any.fromFunction2(value))
+      inline def setOnTopVisible(value: (/* nothing */ Null, /* data */ VisibilityEventData) => Unit): Self = StObject.set(x, "onTopVisible", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnTopVisibleReverse(value: (/* nothing */ Null, /* data */ VisibilityEventData) => Unit): Self = StObject.set(x, "onTopVisibleReverse", js.Any.fromFunction2(value))
+      inline def setOnTopVisibleReverse(value: (/* nothing */ Null, /* data */ VisibilityEventData) => Unit): Self = StObject.set(x, "onTopVisibleReverse", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnTopVisibleReverseUndefined: Self = StObject.set(x, "onTopVisibleReverse", js.undefined)
+      inline def setOnTopVisibleReverseUndefined: Self = StObject.set(x, "onTopVisibleReverse", js.undefined)
       
-      @scala.inline
-      def setOnTopVisibleUndefined: Self = StObject.set(x, "onTopVisible", js.undefined)
+      inline def setOnTopVisibleUndefined: Self = StObject.set(x, "onTopVisible", js.undefined)
       
-      @scala.inline
-      def setOnUpdate(value: (/* nothing */ Null, /* data */ VisibilityEventData) => Unit): Self = StObject.set(x, "onUpdate", js.Any.fromFunction2(value))
+      inline def setOnUpdate(value: (/* nothing */ Null, /* data */ VisibilityEventData) => Unit): Self = StObject.set(x, "onUpdate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
+      inline def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
       
-      @scala.inline
-      def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
+      inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
+      inline def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
       
-      @scala.inline
-      def setUpdateOn(value: events | repaint): Self = StObject.set(x, "updateOn", value.asInstanceOf[js.Any])
+      inline def setUpdateOn(value: events | repaint): Self = StObject.set(x, "updateOn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateOnUndefined: Self = StObject.set(x, "updateOn", js.undefined)
+      inline def setUpdateOnUndefined: Self = StObject.set(x, "updateOn", js.undefined)
     }
   }
   
@@ -352,8 +305,7 @@ object visibilityVisibilityMod extends Shortcut {
   }
   object VisibilityCalculations {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bottomPassed: Boolean,
       bottomVisible: Boolean,
       direction: down | up,
@@ -372,47 +324,33 @@ object visibilityVisibilityMod extends Shortcut {
       __obj.asInstanceOf[VisibilityCalculations]
     }
     
-    @scala.inline
-    implicit class VisibilityCalculationsMutableBuilder[Self <: VisibilityCalculations] (val x: Self) extends AnyVal {
+    extension [Self <: VisibilityCalculations](x: Self) {
       
-      @scala.inline
-      def setBottomPassed(value: Boolean): Self = StObject.set(x, "bottomPassed", value.asInstanceOf[js.Any])
+      inline def setBottomPassed(value: Boolean): Self = StObject.set(x, "bottomPassed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottomVisible(value: Boolean): Self = StObject.set(x, "bottomVisible", value.asInstanceOf[js.Any])
+      inline def setBottomVisible(value: Boolean): Self = StObject.set(x, "bottomVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirection(value: down | up): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: down | up): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFits(value: Boolean): Self = StObject.set(x, "fits", value.asInstanceOf[js.Any])
+      inline def setFits(value: Boolean): Self = StObject.set(x, "fits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffScreen(value: Boolean): Self = StObject.set(x, "offScreen", value.asInstanceOf[js.Any])
+      inline def setOffScreen(value: Boolean): Self = StObject.set(x, "offScreen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnScreen(value: Boolean): Self = StObject.set(x, "onScreen", value.asInstanceOf[js.Any])
+      inline def setOnScreen(value: Boolean): Self = StObject.set(x, "onScreen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassing(value: Boolean): Self = StObject.set(x, "passing", value.asInstanceOf[js.Any])
+      inline def setPassing(value: Boolean): Self = StObject.set(x, "passing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercentagePassed(value: Double): Self = StObject.set(x, "percentagePassed", value.asInstanceOf[js.Any])
+      inline def setPercentagePassed(value: Double): Self = StObject.set(x, "percentagePassed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPixelsPassed(value: Double): Self = StObject.set(x, "pixelsPassed", value.asInstanceOf[js.Any])
+      inline def setPixelsPassed(value: Double): Self = StObject.set(x, "pixelsPassed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopPassed(value: Boolean): Self = StObject.set(x, "topPassed", value.asInstanceOf[js.Any])
+      inline def setTopPassed(value: Boolean): Self = StObject.set(x, "topPassed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopVisible(value: Boolean): Self = StObject.set(x, "topVisible", value.asInstanceOf[js.Any])
+      inline def setTopVisible(value: Boolean): Self = StObject.set(x, "topVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -424,17 +362,14 @@ object visibilityVisibilityMod extends Shortcut {
   }
   object VisibilityEventData {
     
-    @scala.inline
-    def apply(calculations: VisibilityCalculations): VisibilityEventData = {
+    inline def apply(calculations: VisibilityCalculations): VisibilityEventData = {
       val __obj = js.Dynamic.literal(calculations = calculations.asInstanceOf[js.Any])
       __obj.asInstanceOf[VisibilityEventData]
     }
     
-    @scala.inline
-    implicit class VisibilityEventDataMutableBuilder[Self <: VisibilityEventData] (val x: Self) extends AnyVal {
+    extension [Self <: VisibilityEventData](x: Self) {
       
-      @scala.inline
-      def setCalculations(value: VisibilityCalculations): Self = StObject.set(x, "calculations", value.asInstanceOf[js.Any])
+      inline def setCalculations(value: VisibilityCalculations): Self = StObject.set(x, "calculations", value.asInstanceOf[js.Any])
     }
   }
   
@@ -446,8 +381,7 @@ object visibilityVisibilityMod extends Shortcut {
        with /* key */ StringDictionary[js.Any]
   object VisibilityProps {
     
-    @scala.inline
-    def apply(): VisibilityProps = {
+    inline def apply(): VisibilityProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VisibilityProps]
     }

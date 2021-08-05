@@ -15,10 +15,8 @@ trait Icon_
 }
 object Icon_ {
   
-  @scala.inline
-  implicit class Icon_MutableBuilder[Self <: Icon_] (val x: Self) extends AnyVal {
+  extension [Self <: Icon_](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.icon): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.icon): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -8,16 +8,13 @@ object reactSizemeStrings {
   
   @js.native
   sealed trait debounce extends StObject
-  @scala.inline
-  def debounce: debounce = "debounce".asInstanceOf[debounce]
+  inline def debounce: debounce = "debounce".asInstanceOf[debounce]
   
   @js.native
   sealed trait size extends StObject
-  @scala.inline
-  def size: size = "size".asInstanceOf[size]
+  inline def size: size = "size".asInstanceOf[size]
   
   @js.native
   sealed trait throttle extends StObject
-  @scala.inline
-  def throttle: throttle = "throttle".asInstanceOf[throttle]
+  inline def throttle: throttle = "throttle".asInstanceOf[throttle]
 }

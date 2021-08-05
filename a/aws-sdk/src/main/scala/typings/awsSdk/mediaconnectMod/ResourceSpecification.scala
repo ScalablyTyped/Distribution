@@ -18,22 +18,17 @@ trait ResourceSpecification extends StObject {
 }
 object ResourceSpecification {
   
-  @scala.inline
-  def apply(ResourceType: ResourceType): ResourceSpecification = {
+  inline def apply(ResourceType: ResourceType): ResourceSpecification = {
     val __obj = js.Dynamic.literal(ResourceType = ResourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceSpecification]
   }
   
-  @scala.inline
-  implicit class ResourceSpecificationMutableBuilder[Self <: ResourceSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceSpecification](x: Self) {
     
-    @scala.inline
-    def setReservedBitrate(value: integer): Self = StObject.set(x, "ReservedBitrate", value.asInstanceOf[js.Any])
+    inline def setReservedBitrate(value: integer): Self = StObject.set(x, "ReservedBitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedBitrateUndefined: Self = StObject.set(x, "ReservedBitrate", js.undefined)
+    inline def setReservedBitrateUndefined: Self = StObject.set(x, "ReservedBitrate", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
   }
 }

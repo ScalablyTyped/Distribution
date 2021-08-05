@@ -38,46 +38,33 @@ trait IndexFacesRequest extends StObject {
 }
 object IndexFacesRequest {
   
-  @scala.inline
-  def apply(CollectionId: CollectionId, Image: Image): IndexFacesRequest = {
+  inline def apply(CollectionId: CollectionId, Image: Image): IndexFacesRequest = {
     val __obj = js.Dynamic.literal(CollectionId = CollectionId.asInstanceOf[js.Any], Image = Image.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexFacesRequest]
   }
   
-  @scala.inline
-  implicit class IndexFacesRequestMutableBuilder[Self <: IndexFacesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IndexFacesRequest](x: Self) {
     
-    @scala.inline
-    def setCollectionId(value: CollectionId): Self = StObject.set(x, "CollectionId", value.asInstanceOf[js.Any])
+    inline def setCollectionId(value: CollectionId): Self = StObject.set(x, "CollectionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectionAttributes(value: Attributes): Self = StObject.set(x, "DetectionAttributes", value.asInstanceOf[js.Any])
+    inline def setDetectionAttributes(value: Attributes): Self = StObject.set(x, "DetectionAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectionAttributesUndefined: Self = StObject.set(x, "DetectionAttributes", js.undefined)
+    inline def setDetectionAttributesUndefined: Self = StObject.set(x, "DetectionAttributes", js.undefined)
     
-    @scala.inline
-    def setDetectionAttributesVarargs(value: Attribute*): Self = StObject.set(x, "DetectionAttributes", js.Array(value :_*))
+    inline def setDetectionAttributesVarargs(value: Attribute*): Self = StObject.set(x, "DetectionAttributes", js.Array(value :_*))
     
-    @scala.inline
-    def setExternalImageId(value: ExternalImageId): Self = StObject.set(x, "ExternalImageId", value.asInstanceOf[js.Any])
+    inline def setExternalImageId(value: ExternalImageId): Self = StObject.set(x, "ExternalImageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalImageIdUndefined: Self = StObject.set(x, "ExternalImageId", js.undefined)
+    inline def setExternalImageIdUndefined: Self = StObject.set(x, "ExternalImageId", js.undefined)
     
-    @scala.inline
-    def setImage(value: Image): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
+    inline def setImage(value: Image): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxFaces(value: MaxFacesToIndex): Self = StObject.set(x, "MaxFaces", value.asInstanceOf[js.Any])
+    inline def setMaxFaces(value: MaxFacesToIndex): Self = StObject.set(x, "MaxFaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxFacesUndefined: Self = StObject.set(x, "MaxFaces", js.undefined)
+    inline def setMaxFacesUndefined: Self = StObject.set(x, "MaxFaces", js.undefined)
     
-    @scala.inline
-    def setQualityFilter(value: QualityFilter): Self = StObject.set(x, "QualityFilter", value.asInstanceOf[js.Any])
+    inline def setQualityFilter(value: QualityFilter): Self = StObject.set(x, "QualityFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualityFilterUndefined: Self = StObject.set(x, "QualityFilter", js.undefined)
+    inline def setQualityFilterUndefined: Self = StObject.set(x, "QualityFilter", js.undefined)
   }
 }

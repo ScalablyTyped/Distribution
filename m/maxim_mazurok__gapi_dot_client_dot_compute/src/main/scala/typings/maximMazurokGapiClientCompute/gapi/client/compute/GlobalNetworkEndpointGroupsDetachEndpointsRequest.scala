@@ -11,22 +11,17 @@ trait GlobalNetworkEndpointGroupsDetachEndpointsRequest extends StObject {
 }
 object GlobalNetworkEndpointGroupsDetachEndpointsRequest {
   
-  @scala.inline
-  def apply(): GlobalNetworkEndpointGroupsDetachEndpointsRequest = {
+  inline def apply(): GlobalNetworkEndpointGroupsDetachEndpointsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GlobalNetworkEndpointGroupsDetachEndpointsRequest]
   }
   
-  @scala.inline
-  implicit class GlobalNetworkEndpointGroupsDetachEndpointsRequestMutableBuilder[Self <: GlobalNetworkEndpointGroupsDetachEndpointsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalNetworkEndpointGroupsDetachEndpointsRequest](x: Self) {
     
-    @scala.inline
-    def setNetworkEndpoints(value: js.Array[NetworkEndpoint]): Self = StObject.set(x, "networkEndpoints", value.asInstanceOf[js.Any])
+    inline def setNetworkEndpoints(value: js.Array[NetworkEndpoint]): Self = StObject.set(x, "networkEndpoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkEndpointsUndefined: Self = StObject.set(x, "networkEndpoints", js.undefined)
+    inline def setNetworkEndpointsUndefined: Self = StObject.set(x, "networkEndpoints", js.undefined)
     
-    @scala.inline
-    def setNetworkEndpointsVarargs(value: NetworkEndpoint*): Self = StObject.set(x, "networkEndpoints", js.Array(value :_*))
+    inline def setNetworkEndpointsVarargs(value: NetworkEndpoint*): Self = StObject.set(x, "networkEndpoints", js.Array(value :_*))
   }
 }

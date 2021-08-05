@@ -16,17 +16,14 @@ object typesSourceAndDestinationAreSameExceptionMod {
   }
   object SourceAndDestinationAreSameException {
     
-    @scala.inline
-    def apply(): SourceAndDestinationAreSameException = {
+    inline def apply(): SourceAndDestinationAreSameException = {
       val __obj = js.Dynamic.literal(name = "SourceAndDestinationAreSameException")
       __obj.asInstanceOf[SourceAndDestinationAreSameException]
     }
     
-    @scala.inline
-    implicit class SourceAndDestinationAreSameExceptionMutableBuilder[Self <: SourceAndDestinationAreSameException] (val x: Self) extends AnyVal {
+    extension [Self <: SourceAndDestinationAreSameException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.SourceAndDestinationAreSameException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

@@ -13,19 +13,15 @@ trait RTCIceServer extends StObject {
 }
 object RTCIceServer {
   
-  @scala.inline
-  def apply(): RTCIceServer = {
+  inline def apply(): RTCIceServer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RTCIceServer]
   }
   
-  @scala.inline
-  implicit class RTCIceServerMutableBuilder[Self <: RTCIceServer] (val x: Self) extends AnyVal {
+  extension [Self <: RTCIceServer](x: Self) {
     
-    @scala.inline
-    def setCredentialType(value: RTCIceCredentialType): Self = StObject.set(x, "credentialType", value.asInstanceOf[js.Any])
+    inline def setCredentialType(value: RTCIceCredentialType): Self = StObject.set(x, "credentialType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentialTypeUndefined: Self = StObject.set(x, "credentialType", js.undefined)
+    inline def setCredentialTypeUndefined: Self = StObject.set(x, "credentialType", js.undefined)
   }
 }

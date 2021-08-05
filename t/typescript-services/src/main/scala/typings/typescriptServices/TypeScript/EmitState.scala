@@ -14,22 +14,17 @@ trait EmitState extends StObject {
 }
 object EmitState {
   
-  @scala.inline
-  def apply(column: Double, container: EmitContainer, line: Double): EmitState = {
+  inline def apply(column: Double, container: EmitContainer, line: Double): EmitState = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmitState]
   }
   
-  @scala.inline
-  implicit class EmitStateMutableBuilder[Self <: EmitState] (val x: Self) extends AnyVal {
+  extension [Self <: EmitState](x: Self) {
     
-    @scala.inline
-    def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainer(value: EmitContainer): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: EmitContainer): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
   }
 }

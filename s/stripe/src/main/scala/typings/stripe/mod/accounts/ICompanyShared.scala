@@ -72,73 +72,51 @@ trait ICompanyShared extends StObject {
 }
 object ICompanyShared {
   
-  @scala.inline
-  def apply(): ICompanyShared = {
+  inline def apply(): ICompanyShared = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ICompanyShared]
   }
   
-  @scala.inline
-  implicit class ICompanySharedMutableBuilder[Self <: ICompanyShared] (val x: Self) extends AnyVal {
+  extension [Self <: ICompanyShared](x: Self) {
     
-    @scala.inline
-    def setAddress(value: IAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: IAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setAddress_kana(value: IAddressKana): Self = StObject.set(x, "address_kana", value.asInstanceOf[js.Any])
+    inline def setAddress_kana(value: IAddressKana): Self = StObject.set(x, "address_kana", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddress_kanaUndefined: Self = StObject.set(x, "address_kana", js.undefined)
+    inline def setAddress_kanaUndefined: Self = StObject.set(x, "address_kana", js.undefined)
     
-    @scala.inline
-    def setAddress_kanji(value: IAddressKanji): Self = StObject.set(x, "address_kanji", value.asInstanceOf[js.Any])
+    inline def setAddress_kanji(value: IAddressKanji): Self = StObject.set(x, "address_kanji", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddress_kanjiUndefined: Self = StObject.set(x, "address_kanji", js.undefined)
+    inline def setAddress_kanjiUndefined: Self = StObject.set(x, "address_kanji", js.undefined)
     
-    @scala.inline
-    def setDirectors_provided(value: Boolean): Self = StObject.set(x, "directors_provided", value.asInstanceOf[js.Any])
+    inline def setDirectors_provided(value: Boolean): Self = StObject.set(x, "directors_provided", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectors_providedUndefined: Self = StObject.set(x, "directors_provided", js.undefined)
+    inline def setDirectors_providedUndefined: Self = StObject.set(x, "directors_provided", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setName_kana(value: String): Self = StObject.set(x, "name_kana", value.asInstanceOf[js.Any])
+    inline def setName_kana(value: String): Self = StObject.set(x, "name_kana", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName_kanaUndefined: Self = StObject.set(x, "name_kana", js.undefined)
+    inline def setName_kanaUndefined: Self = StObject.set(x, "name_kana", js.undefined)
     
-    @scala.inline
-    def setName_kanji(value: String): Self = StObject.set(x, "name_kanji", value.asInstanceOf[js.Any])
+    inline def setName_kanji(value: String): Self = StObject.set(x, "name_kanji", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName_kanjiUndefined: Self = StObject.set(x, "name_kanji", js.undefined)
+    inline def setName_kanjiUndefined: Self = StObject.set(x, "name_kanji", js.undefined)
     
-    @scala.inline
-    def setOwners_provided(value: Boolean): Self = StObject.set(x, "owners_provided", value.asInstanceOf[js.Any])
+    inline def setOwners_provided(value: Boolean): Self = StObject.set(x, "owners_provided", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwners_providedUndefined: Self = StObject.set(x, "owners_provided", js.undefined)
+    inline def setOwners_providedUndefined: Self = StObject.set(x, "owners_provided", js.undefined)
     
-    @scala.inline
-    def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+    inline def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
+    inline def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
     
-    @scala.inline
-    def setTax_id_registrar(value: String): Self = StObject.set(x, "tax_id_registrar", value.asInstanceOf[js.Any])
+    inline def setTax_id_registrar(value: String): Self = StObject.set(x, "tax_id_registrar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTax_id_registrarUndefined: Self = StObject.set(x, "tax_id_registrar", js.undefined)
+    inline def setTax_id_registrarUndefined: Self = StObject.set(x, "tax_id_registrar", js.undefined)
   }
 }

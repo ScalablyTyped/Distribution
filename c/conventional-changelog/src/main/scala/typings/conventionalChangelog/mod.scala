@@ -23,189 +23,157 @@ object mod {
     * @param writerOpts
     */
   // tslint:disable-next-line max-line-length
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](): Readable = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](): Readable = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Readable]
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
     options: Unit,
     context: Unit,
     gitRawCommitsOpts: Unit,
     parserOpts: Unit,
     writerOpts: WriterOptions[TCommit, TContext]
   ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](options: Unit, context: Unit, gitRawCommitsOpts: Unit, parserOpts: ParserOptions): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](options: Unit, context: Unit, gitRawCommitsOpts: Unit, parserOpts: ParserOptions): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
     options: Unit,
     context: Unit,
     gitRawCommitsOpts: Unit,
     parserOpts: ParserOptions,
     writerOpts: WriterOptions[TCommit, TContext]
   ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](options: Unit, context: Unit, gitRawCommitsOpts: GitRawCommitsOptions): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](options: Unit, context: Unit, gitRawCommitsOpts: GitRawCommitsOptions): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
     options: Unit,
     context: Unit,
     gitRawCommitsOpts: GitRawCommitsOptions,
     parserOpts: Unit,
     writerOpts: WriterOptions[TCommit, TContext]
   ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](options: Unit, context: Unit, gitRawCommitsOpts: GitRawCommitsOptions, parserOpts: ParserOptions): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](options: Unit, context: Unit, gitRawCommitsOpts: GitRawCommitsOptions, parserOpts: ParserOptions): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
     options: Unit,
     context: Unit,
     gitRawCommitsOpts: GitRawCommitsOptions,
     parserOpts: ParserOptions,
     writerOpts: WriterOptions[TCommit, TContext]
   ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](options: Unit, context: Partial[TContext]): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](options: Unit, context: Partial[TContext]): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
     options: Unit,
     context: Partial[TContext],
     gitRawCommitsOpts: Unit,
     parserOpts: Unit,
     writerOpts: WriterOptions[TCommit, TContext]
   ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](options: Unit, context: Partial[TContext], gitRawCommitsOpts: Unit, parserOpts: ParserOptions): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](options: Unit, context: Partial[TContext], gitRawCommitsOpts: Unit, parserOpts: ParserOptions): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
     options: Unit,
     context: Partial[TContext],
     gitRawCommitsOpts: Unit,
     parserOpts: ParserOptions,
     writerOpts: WriterOptions[TCommit, TContext]
   ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](options: Unit, context: Partial[TContext], gitRawCommitsOpts: GitRawCommitsOptions): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](options: Unit, context: Partial[TContext], gitRawCommitsOpts: GitRawCommitsOptions): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
     options: Unit,
     context: Partial[TContext],
     gitRawCommitsOpts: GitRawCommitsOptions,
     parserOpts: Unit,
     writerOpts: WriterOptions[TCommit, TContext]
   ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
     options: Unit,
     context: Partial[TContext],
     gitRawCommitsOpts: GitRawCommitsOptions,
     parserOpts: ParserOptions
   ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
     options: Unit,
     context: Partial[TContext],
     gitRawCommitsOpts: GitRawCommitsOptions,
     parserOpts: ParserOptions,
     writerOpts: WriterOptions[TCommit, TContext]
   ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](options: Options[TCommit, TContext]): Readable = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](options: Options[TCommit, TContext]): Readable = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Readable]
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
     options: Options[TCommit, TContext],
     context: Unit,
     gitRawCommitsOpts: Unit,
     parserOpts: Unit,
     writerOpts: WriterOptions[TCommit, TContext]
   ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
     options: Options[TCommit, TContext],
     context: Unit,
     gitRawCommitsOpts: Unit,
     parserOpts: ParserOptions
   ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
     options: Options[TCommit, TContext],
     context: Unit,
     gitRawCommitsOpts: Unit,
     parserOpts: ParserOptions,
     writerOpts: WriterOptions[TCommit, TContext]
   ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](options: Options[TCommit, TContext], context: Unit, gitRawCommitsOpts: GitRawCommitsOptions): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](options: Options[TCommit, TContext], context: Unit, gitRawCommitsOpts: GitRawCommitsOptions): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
     options: Options[TCommit, TContext],
     context: Unit,
     gitRawCommitsOpts: GitRawCommitsOptions,
     parserOpts: Unit,
     writerOpts: WriterOptions[TCommit, TContext]
   ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
     options: Options[TCommit, TContext],
     context: Unit,
     gitRawCommitsOpts: GitRawCommitsOptions,
     parserOpts: ParserOptions
   ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
     options: Options[TCommit, TContext],
     context: Unit,
     gitRawCommitsOpts: GitRawCommitsOptions,
     parserOpts: ParserOptions,
     writerOpts: WriterOptions[TCommit, TContext]
   ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](options: Options[TCommit, TContext], context: Partial[TContext]): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](options: Options[TCommit, TContext], context: Partial[TContext]): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
     options: Options[TCommit, TContext],
     context: Partial[TContext],
     gitRawCommitsOpts: Unit,
     parserOpts: Unit,
     writerOpts: WriterOptions[TCommit, TContext]
   ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
     options: Options[TCommit, TContext],
     context: Partial[TContext],
     gitRawCommitsOpts: Unit,
     parserOpts: ParserOptions
   ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
     options: Options[TCommit, TContext],
     context: Partial[TContext],
     gitRawCommitsOpts: Unit,
     parserOpts: ParserOptions,
     writerOpts: WriterOptions[TCommit, TContext]
   ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
     options: Options[TCommit, TContext],
     context: Partial[TContext],
     gitRawCommitsOpts: GitRawCommitsOptions
   ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
     options: Options[TCommit, TContext],
     context: Partial[TContext],
     gitRawCommitsOpts: GitRawCommitsOptions,
     parserOpts: Unit,
     writerOpts: WriterOptions[TCommit, TContext]
   ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
     options: Options[TCommit, TContext],
     context: Partial[TContext],
     gitRawCommitsOpts: GitRawCommitsOptions,
     parserOpts: ParserOptions
   ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
     options: Options[TCommit, TContext],
     context: Partial[TContext],
     gitRawCommitsOpts: GitRawCommitsOptions,
@@ -240,20 +208,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](): Options[TCommit, TContext] = {
+    inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](): Options[TCommit, TContext] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options[TCommit, TContext]]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[?, ?], TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */] (val x: Self & (Options[TCommit, TContext])) extends AnyVal {
+    extension [Self <: Options[?, ?], TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](x: Self & (Options[TCommit, TContext])) {
       
-      @scala.inline
-      def setPreset(value: String): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
+      inline def setPreset(value: String): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPresetUndefined: Self = StObject.set(x, "preset", js.undefined)
+      inline def setPresetUndefined: Self = StObject.set(x, "preset", js.undefined)
     }
   }
 }

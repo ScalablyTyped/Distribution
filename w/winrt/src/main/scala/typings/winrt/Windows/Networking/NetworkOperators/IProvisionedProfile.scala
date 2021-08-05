@@ -13,19 +13,15 @@ trait IProvisionedProfile extends StObject {
 }
 object IProvisionedProfile {
   
-  @scala.inline
-  def apply(updateCost: NetworkCostType => Unit, updateUsage: ProfileUsage => Unit): IProvisionedProfile = {
+  inline def apply(updateCost: NetworkCostType => Unit, updateUsage: ProfileUsage => Unit): IProvisionedProfile = {
     val __obj = js.Dynamic.literal(updateCost = js.Any.fromFunction1(updateCost), updateUsage = js.Any.fromFunction1(updateUsage))
     __obj.asInstanceOf[IProvisionedProfile]
   }
   
-  @scala.inline
-  implicit class IProvisionedProfileMutableBuilder[Self <: IProvisionedProfile] (val x: Self) extends AnyVal {
+  extension [Self <: IProvisionedProfile](x: Self) {
     
-    @scala.inline
-    def setUpdateCost(value: NetworkCostType => Unit): Self = StObject.set(x, "updateCost", js.Any.fromFunction1(value))
+    inline def setUpdateCost(value: NetworkCostType => Unit): Self = StObject.set(x, "updateCost", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdateUsage(value: ProfileUsage => Unit): Self = StObject.set(x, "updateUsage", js.Any.fromFunction1(value))
+    inline def setUpdateUsage(value: ProfileUsage => Unit): Self = StObject.set(x, "updateUsage", js.Any.fromFunction1(value))
   }
 }

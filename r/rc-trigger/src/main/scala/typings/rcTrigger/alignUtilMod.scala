@@ -12,9 +12,7 @@ object alignUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getAlignFromPlacement(builtinPlacements: BuildInPlacements, placementStr: String, align: AlignType): AlignType = (^.asInstanceOf[js.Dynamic].applyDynamic("getAlignFromPlacement")(builtinPlacements.asInstanceOf[js.Any], placementStr.asInstanceOf[js.Any], align.asInstanceOf[js.Any])).asInstanceOf[AlignType]
+  inline def getAlignFromPlacement(builtinPlacements: BuildInPlacements, placementStr: String, align: AlignType): AlignType = (^.asInstanceOf[js.Dynamic].applyDynamic("getAlignFromPlacement")(builtinPlacements.asInstanceOf[js.Any], placementStr.asInstanceOf[js.Any], align.asInstanceOf[js.Any])).asInstanceOf[AlignType]
   
-  @scala.inline
-  def getAlignPopupClassName(builtinPlacements: BuildInPlacements, prefixCls: String, align: AlignType, isAlignPoint: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getAlignPopupClassName")(builtinPlacements.asInstanceOf[js.Any], prefixCls.asInstanceOf[js.Any], align.asInstanceOf[js.Any], isAlignPoint.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getAlignPopupClassName(builtinPlacements: BuildInPlacements, prefixCls: String, align: AlignType, isAlignPoint: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getAlignPopupClassName")(builtinPlacements.asInstanceOf[js.Any], prefixCls.asInstanceOf[js.Any], align.asInstanceOf[js.Any], isAlignPoint.asInstanceOf[js.Any])).asInstanceOf[String]
 }

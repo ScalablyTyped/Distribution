@@ -29,8 +29,7 @@ trait XTextRangeCompare
 }
 object XTextRangeCompare {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     compareRegionEnds: (XTextRange, XTextRange) => Double,
     compareRegionStarts: (XTextRange, XTextRange) => Double,
@@ -41,13 +40,10 @@ object XTextRangeCompare {
     __obj.asInstanceOf[XTextRangeCompare]
   }
   
-  @scala.inline
-  implicit class XTextRangeCompareMutableBuilder[Self <: XTextRangeCompare] (val x: Self) extends AnyVal {
+  extension [Self <: XTextRangeCompare](x: Self) {
     
-    @scala.inline
-    def setCompareRegionEnds(value: (XTextRange, XTextRange) => Double): Self = StObject.set(x, "compareRegionEnds", js.Any.fromFunction2(value))
+    inline def setCompareRegionEnds(value: (XTextRange, XTextRange) => Double): Self = StObject.set(x, "compareRegionEnds", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCompareRegionStarts(value: (XTextRange, XTextRange) => Double): Self = StObject.set(x, "compareRegionStarts", js.Any.fromFunction2(value))
+    inline def setCompareRegionStarts(value: (XTextRange, XTextRange) => Double): Self = StObject.set(x, "compareRegionStarts", js.Any.fromFunction2(value))
   }
 }

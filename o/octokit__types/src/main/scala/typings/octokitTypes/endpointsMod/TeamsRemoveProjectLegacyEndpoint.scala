@@ -12,19 +12,15 @@ trait TeamsRemoveProjectLegacyEndpoint extends StObject {
 }
 object TeamsRemoveProjectLegacyEndpoint {
   
-  @scala.inline
-  def apply(project_id: Double, team_id: Double): TeamsRemoveProjectLegacyEndpoint = {
+  inline def apply(project_id: Double, team_id: Double): TeamsRemoveProjectLegacyEndpoint = {
     val __obj = js.Dynamic.literal(project_id = project_id.asInstanceOf[js.Any], team_id = team_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamsRemoveProjectLegacyEndpoint]
   }
   
-  @scala.inline
-  implicit class TeamsRemoveProjectLegacyEndpointMutableBuilder[Self <: TeamsRemoveProjectLegacyEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: TeamsRemoveProjectLegacyEndpoint](x: Self) {
     
-    @scala.inline
-    def setProject_id(value: Double): Self = StObject.set(x, "project_id", value.asInstanceOf[js.Any])
+    inline def setProject_id(value: Double): Self = StObject.set(x, "project_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeam_id(value: Double): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
+    inline def setTeam_id(value: Double): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
   }
 }

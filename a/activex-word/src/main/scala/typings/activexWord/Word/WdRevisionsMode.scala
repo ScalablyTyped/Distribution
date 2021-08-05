@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdRevisionsMode extends StObject
 object WdRevisionsMode {
   
-  @scala.inline
-  def wdBalloonRevisions: `0` = 0.asInstanceOf[`0`]
+  inline def wdBalloonRevisions: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdInLineRevisions: `1` = 1.asInstanceOf[`1`]
+  inline def wdInLineRevisions: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdMixedRevisions: `2` = 2.asInstanceOf[`2`]
+  inline def wdMixedRevisions: `2` = 2.asInstanceOf[`2`]
 }

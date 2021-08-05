@@ -11,11 +11,8 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def stringify(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def stringify(obj: js.Any, options: JFReadOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringify(obj: js.Any, options: JFReadOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def stripBom(content: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stripBom")(content.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stripBom(content: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stripBom")(content.asInstanceOf[js.Any]).asInstanceOf[String]
 }

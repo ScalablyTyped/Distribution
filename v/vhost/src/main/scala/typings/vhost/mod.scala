@@ -8,10 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(hostname: String, handler: Handler): String = (^.asInstanceOf[js.Dynamic].apply(hostname.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(hostname: RegExp, handler: Handler): String = (^.asInstanceOf[js.Dynamic].apply(hostname.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(hostname: String, handler: Handler): String = (^.asInstanceOf[js.Dynamic].apply(hostname.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(hostname: RegExp, handler: Handler): String = (^.asInstanceOf[js.Dynamic].apply(hostname.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("vhost", JSImport.Namespace)
   @js.native

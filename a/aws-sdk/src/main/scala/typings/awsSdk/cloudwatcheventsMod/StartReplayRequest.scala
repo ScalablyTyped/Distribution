@@ -38,8 +38,7 @@ trait StartReplayRequest extends StObject {
 }
 object StartReplayRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Destination: ReplayDestination,
     EventEndTime: Timestamp,
     EventSourceArn: Arn,
@@ -50,28 +49,20 @@ object StartReplayRequest {
     __obj.asInstanceOf[StartReplayRequest]
   }
   
-  @scala.inline
-  implicit class StartReplayRequestMutableBuilder[Self <: StartReplayRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartReplayRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: ReplayDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: ReplayDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setDestination(value: ReplayDestination): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: ReplayDestination): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventEndTime(value: Timestamp): Self = StObject.set(x, "EventEndTime", value.asInstanceOf[js.Any])
+    inline def setEventEndTime(value: Timestamp): Self = StObject.set(x, "EventEndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventSourceArn(value: Arn): Self = StObject.set(x, "EventSourceArn", value.asInstanceOf[js.Any])
+    inline def setEventSourceArn(value: Arn): Self = StObject.set(x, "EventSourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventStartTime(value: Timestamp): Self = StObject.set(x, "EventStartTime", value.asInstanceOf[js.Any])
+    inline def setEventStartTime(value: Timestamp): Self = StObject.set(x, "EventStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplayName(value: ReplayName): Self = StObject.set(x, "ReplayName", value.asInstanceOf[js.Any])
+    inline def setReplayName(value: ReplayName): Self = StObject.set(x, "ReplayName", value.asInstanceOf[js.Any])
   }
 }

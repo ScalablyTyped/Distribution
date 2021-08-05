@@ -14,16 +14,13 @@ trait PickImplcacheType extends StObject {
 }
 object PickImplcacheType {
   
-  @scala.inline
-  def apply(cacheType: response | DOM | html): PickImplcacheType = {
+  inline def apply(cacheType: response | DOM | html): PickImplcacheType = {
     val __obj = js.Dynamic.literal(cacheType = cacheType.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplcacheType]
   }
   
-  @scala.inline
-  implicit class PickImplcacheTypeMutableBuilder[Self <: PickImplcacheType] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplcacheType](x: Self) {
     
-    @scala.inline
-    def setCacheType(value: response | DOM | html): Self = StObject.set(x, "cacheType", value.asInstanceOf[js.Any])
+    inline def setCacheType(value: response | DOM | html): Self = StObject.set(x, "cacheType", value.asInstanceOf[js.Any])
   }
 }

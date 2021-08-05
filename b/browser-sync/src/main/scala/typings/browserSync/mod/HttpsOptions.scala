@@ -12,25 +12,19 @@ trait HttpsOptions extends StObject {
 }
 object HttpsOptions {
   
-  @scala.inline
-  def apply(): HttpsOptions = {
+  inline def apply(): HttpsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HttpsOptions]
   }
   
-  @scala.inline
-  implicit class HttpsOptionsMutableBuilder[Self <: HttpsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: HttpsOptions](x: Self) {
     
-    @scala.inline
-    def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
+    inline def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
+    inline def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
   }
 }

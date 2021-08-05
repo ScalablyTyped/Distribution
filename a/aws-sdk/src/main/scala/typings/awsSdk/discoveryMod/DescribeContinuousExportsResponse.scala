@@ -18,28 +18,21 @@ trait DescribeContinuousExportsResponse extends StObject {
 }
 object DescribeContinuousExportsResponse {
   
-  @scala.inline
-  def apply(): DescribeContinuousExportsResponse = {
+  inline def apply(): DescribeContinuousExportsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeContinuousExportsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeContinuousExportsResponseMutableBuilder[Self <: DescribeContinuousExportsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeContinuousExportsResponse](x: Self) {
     
-    @scala.inline
-    def setDescriptions(value: ContinuousExportDescriptions): Self = StObject.set(x, "descriptions", value.asInstanceOf[js.Any])
+    inline def setDescriptions(value: ContinuousExportDescriptions): Self = StObject.set(x, "descriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionsUndefined: Self = StObject.set(x, "descriptions", js.undefined)
+    inline def setDescriptionsUndefined: Self = StObject.set(x, "descriptions", js.undefined)
     
-    @scala.inline
-    def setDescriptionsVarargs(value: ContinuousExportDescription*): Self = StObject.set(x, "descriptions", js.Array(value :_*))
+    inline def setDescriptionsVarargs(value: ContinuousExportDescription*): Self = StObject.set(x, "descriptions", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

@@ -16,31 +16,23 @@ trait BlockedByResponseIssueDetails extends StObject {
 }
 object BlockedByResponseIssueDetails {
   
-  @scala.inline
-  def apply(reason: BlockedByResponseReason, request: AffectedRequest): BlockedByResponseIssueDetails = {
+  inline def apply(reason: BlockedByResponseReason, request: AffectedRequest): BlockedByResponseIssueDetails = {
     val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockedByResponseIssueDetails]
   }
   
-  @scala.inline
-  implicit class BlockedByResponseIssueDetailsMutableBuilder[Self <: BlockedByResponseIssueDetails] (val x: Self) extends AnyVal {
+  extension [Self <: BlockedByResponseIssueDetails](x: Self) {
     
-    @scala.inline
-    def setBlockedFrame(value: AffectedFrame): Self = StObject.set(x, "blockedFrame", value.asInstanceOf[js.Any])
+    inline def setBlockedFrame(value: AffectedFrame): Self = StObject.set(x, "blockedFrame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockedFrameUndefined: Self = StObject.set(x, "blockedFrame", js.undefined)
+    inline def setBlockedFrameUndefined: Self = StObject.set(x, "blockedFrame", js.undefined)
     
-    @scala.inline
-    def setParentFrame(value: AffectedFrame): Self = StObject.set(x, "parentFrame", value.asInstanceOf[js.Any])
+    inline def setParentFrame(value: AffectedFrame): Self = StObject.set(x, "parentFrame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentFrameUndefined: Self = StObject.set(x, "parentFrame", js.undefined)
+    inline def setParentFrameUndefined: Self = StObject.set(x, "parentFrame", js.undefined)
     
-    @scala.inline
-    def setReason(value: BlockedByResponseReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: BlockedByResponseReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: AffectedRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: AffectedRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
   }
 }

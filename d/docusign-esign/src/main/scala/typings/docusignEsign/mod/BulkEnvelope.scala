@@ -62,69 +62,49 @@ trait BulkEnvelope extends StObject {
 }
 object BulkEnvelope {
   
-  @scala.inline
-  def apply(): BulkEnvelope = {
+  inline def apply(): BulkEnvelope = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BulkEnvelope]
   }
   
-  @scala.inline
-  implicit class BulkEnvelopeMutableBuilder[Self <: BulkEnvelope] (val x: Self) extends AnyVal {
+  extension [Self <: BulkEnvelope](x: Self) {
     
-    @scala.inline
-    def setBulkRecipientRow(value: String): Self = StObject.set(x, "bulkRecipientRow", value.asInstanceOf[js.Any])
+    inline def setBulkRecipientRow(value: String): Self = StObject.set(x, "bulkRecipientRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulkRecipientRowUndefined: Self = StObject.set(x, "bulkRecipientRow", js.undefined)
+    inline def setBulkRecipientRowUndefined: Self = StObject.set(x, "bulkRecipientRow", js.undefined)
     
-    @scala.inline
-    def setBulkStatus(value: String): Self = StObject.set(x, "bulkStatus", value.asInstanceOf[js.Any])
+    inline def setBulkStatus(value: String): Self = StObject.set(x, "bulkStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulkStatusUndefined: Self = StObject.set(x, "bulkStatus", js.undefined)
+    inline def setBulkStatusUndefined: Self = StObject.set(x, "bulkStatus", js.undefined)
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setEnvelopeId(value: String): Self = StObject.set(x, "envelopeId", value.asInstanceOf[js.Any])
+    inline def setEnvelopeId(value: String): Self = StObject.set(x, "envelopeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvelopeIdUndefined: Self = StObject.set(x, "envelopeId", js.undefined)
+    inline def setEnvelopeIdUndefined: Self = StObject.set(x, "envelopeId", js.undefined)
     
-    @scala.inline
-    def setEnvelopeUri(value: String): Self = StObject.set(x, "envelopeUri", value.asInstanceOf[js.Any])
+    inline def setEnvelopeUri(value: String): Self = StObject.set(x, "envelopeUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvelopeUriUndefined: Self = StObject.set(x, "envelopeUri", js.undefined)
+    inline def setEnvelopeUriUndefined: Self = StObject.set(x, "envelopeUri", js.undefined)
     
-    @scala.inline
-    def setErrorDetails(
+    inline def setErrorDetails(
       value: /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
     ): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
+    inline def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSubmittedDateTime(value: String): Self = StObject.set(x, "submittedDateTime", value.asInstanceOf[js.Any])
+    inline def setSubmittedDateTime(value: String): Self = StObject.set(x, "submittedDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmittedDateTimeUndefined: Self = StObject.set(x, "submittedDateTime", js.undefined)
+    inline def setSubmittedDateTimeUndefined: Self = StObject.set(x, "submittedDateTime", js.undefined)
     
-    @scala.inline
-    def setTransactionId(value: String): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
+    inline def setTransactionId(value: String): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionIdUndefined: Self = StObject.set(x, "transactionId", js.undefined)
+    inline def setTransactionIdUndefined: Self = StObject.set(x, "transactionId", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait PrivateKey extends StObject {
 }
 object PrivateKey {
   
-  @scala.inline
-  def apply(privateKey: KeyObject, publicKey: KeyObject): PrivateKey = {
+  inline def apply(privateKey: KeyObject, publicKey: KeyObject): PrivateKey = {
     val __obj = js.Dynamic.literal(privateKey = privateKey.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrivateKey]
   }
   
-  @scala.inline
-  implicit class PrivateKeyMutableBuilder[Self <: PrivateKey] (val x: Self) extends AnyVal {
+  extension [Self <: PrivateKey](x: Self) {
     
-    @scala.inline
-    def setPrivateKey(value: KeyObject): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
+    inline def setPrivateKey(value: KeyObject): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKey(value: KeyObject): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+    inline def setPublicKey(value: KeyObject): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
   }
 }

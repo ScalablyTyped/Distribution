@@ -30,40 +30,29 @@ trait IonRadioGroup extends StObject {
 }
 object IonRadioGroup {
   
-  @scala.inline
-  def apply(): IonRadioGroup = {
+  inline def apply(): IonRadioGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IonRadioGroup]
   }
   
-  @scala.inline
-  implicit class IonRadioGroupMutableBuilder[Self <: IonRadioGroup] (val x: Self) extends AnyVal {
+  extension [Self <: IonRadioGroup](x: Self) {
     
-    @scala.inline
-    def setAllowEmptySelection(value: Boolean): Self = StObject.set(x, "allowEmptySelection", value.asInstanceOf[js.Any])
+    inline def setAllowEmptySelection(value: Boolean): Self = StObject.set(x, "allowEmptySelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowEmptySelectionUndefined: Self = StObject.set(x, "allowEmptySelection", js.undefined)
+    inline def setAllowEmptySelectionUndefined: Self = StObject.set(x, "allowEmptySelection", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOnIonChange(value: /* event */ CustomEvent[RadioGroupChangeEventDetail] => Unit): Self = StObject.set(x, "onIonChange", js.Any.fromFunction1(value))
+    inline def setOnIonChange(value: /* event */ CustomEvent[RadioGroupChangeEventDetail] => Unit): Self = StObject.set(x, "onIonChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnIonChangeUndefined: Self = StObject.set(x, "onIonChange", js.undefined)
+    inline def setOnIonChangeUndefined: Self = StObject.set(x, "onIonChange", js.undefined)
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueNull: Self = StObject.set(x, "value", null)
+    inline def setValueNull: Self = StObject.set(x, "value", null)
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

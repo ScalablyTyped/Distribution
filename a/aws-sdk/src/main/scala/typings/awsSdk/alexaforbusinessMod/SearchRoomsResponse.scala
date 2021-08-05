@@ -23,34 +23,25 @@ trait SearchRoomsResponse extends StObject {
 }
 object SearchRoomsResponse {
   
-  @scala.inline
-  def apply(): SearchRoomsResponse = {
+  inline def apply(): SearchRoomsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchRoomsResponse]
   }
   
-  @scala.inline
-  implicit class SearchRoomsResponseMutableBuilder[Self <: SearchRoomsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SearchRoomsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setRooms(value: RoomDataList): Self = StObject.set(x, "Rooms", value.asInstanceOf[js.Any])
+    inline def setRooms(value: RoomDataList): Self = StObject.set(x, "Rooms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoomsUndefined: Self = StObject.set(x, "Rooms", js.undefined)
+    inline def setRoomsUndefined: Self = StObject.set(x, "Rooms", js.undefined)
     
-    @scala.inline
-    def setRoomsVarargs(value: RoomData*): Self = StObject.set(x, "Rooms", js.Array(value :_*))
+    inline def setRoomsVarargs(value: RoomData*): Self = StObject.set(x, "Rooms", js.Array(value :_*))
     
-    @scala.inline
-    def setTotalCount(value: TotalCount): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
+    inline def setTotalCount(value: TotalCount): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalCountUndefined: Self = StObject.set(x, "TotalCount", js.undefined)
+    inline def setTotalCountUndefined: Self = StObject.set(x, "TotalCount", js.undefined)
   }
 }

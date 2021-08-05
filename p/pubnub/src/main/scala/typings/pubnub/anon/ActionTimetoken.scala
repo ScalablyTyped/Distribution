@@ -12,19 +12,15 @@ trait ActionTimetoken extends StObject {
 }
 object ActionTimetoken {
   
-  @scala.inline
-  def apply(actionTimetoken: String | Double, uuid: String): ActionTimetoken = {
+  inline def apply(actionTimetoken: String | Double, uuid: String): ActionTimetoken = {
     val __obj = js.Dynamic.literal(actionTimetoken = actionTimetoken.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionTimetoken]
   }
   
-  @scala.inline
-  implicit class ActionTimetokenMutableBuilder[Self <: ActionTimetoken] (val x: Self) extends AnyVal {
+  extension [Self <: ActionTimetoken](x: Self) {
     
-    @scala.inline
-    def setActionTimetoken(value: String | Double): Self = StObject.set(x, "actionTimetoken", value.asInstanceOf[js.Any])
+    inline def setActionTimetoken(value: String | Double): Self = StObject.set(x, "actionTimetoken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
   }
 }

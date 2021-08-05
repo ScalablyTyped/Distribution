@@ -25,26 +25,20 @@ object mod {
   }
   object ToggleIcons {
     
-    @scala.inline
-    def apply(): ToggleIcons = {
+    inline def apply(): ToggleIcons = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ToggleIcons]
     }
     
-    @scala.inline
-    implicit class ToggleIconsMutableBuilder[Self <: ToggleIcons] (val x: Self) extends AnyVal {
+    extension [Self <: ToggleIcons](x: Self) {
       
-      @scala.inline
-      def setChecked(value: ReactNode): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+      inline def setChecked(value: ReactNode): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+      inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
       
-      @scala.inline
-      def setUnchecked(value: ReactNode): Self = StObject.set(x, "unchecked", value.asInstanceOf[js.Any])
+      inline def setUnchecked(value: ReactNode): Self = StObject.set(x, "unchecked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUncheckedUndefined: Self = StObject.set(x, "unchecked", js.undefined)
+      inline def setUncheckedUndefined: Self = StObject.set(x, "unchecked", js.undefined)
     }
   }
   
@@ -56,20 +50,16 @@ object mod {
   }
   object ToggleProps {
     
-    @scala.inline
-    def apply(): ToggleProps = {
+    inline def apply(): ToggleProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ToggleProps]
     }
     
-    @scala.inline
-    implicit class TogglePropsMutableBuilder[Self <: ToggleProps] (val x: Self) extends AnyVal {
+    extension [Self <: ToggleProps](x: Self) {
       
-      @scala.inline
-      def setIcons(value: Boolean | ToggleIcons): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+      inline def setIcons(value: Boolean | ToggleIcons): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
+      inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     }
   }
 }

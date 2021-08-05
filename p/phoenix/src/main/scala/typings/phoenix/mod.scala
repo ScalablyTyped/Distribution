@@ -21,20 +21,14 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def appendParams(url: String, params: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("appendParams")(url.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def appendParams(url: String, params: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("appendParams")(url.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def parseJSON(resp: String): JSON = ^.asInstanceOf[js.Dynamic].applyDynamic("parseJSON")(resp.asInstanceOf[js.Any]).asInstanceOf[JSON]
+    inline def parseJSON(resp: String): JSON = ^.asInstanceOf[js.Dynamic].applyDynamic("parseJSON")(resp.asInstanceOf[js.Any]).asInstanceOf[JSON]
     
-    @scala.inline
-    def request(method: String, endPoint: String, accept: String, body: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def request(method: String, endPoint: String, accept: String, body: js.Any, timeout: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def request(method: String, endPoint: String, accept: String, body: js.Any, timeout: Double, ontimeout: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def request(
+    inline def request(method: String, endPoint: String, accept: String, body: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def request(method: String, endPoint: String, accept: String, body: js.Any, timeout: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def request(method: String, endPoint: String, accept: String, body: js.Any, timeout: Double, ontimeout: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def request(
       method: String,
       endPoint: String,
       accept: String,
@@ -43,8 +37,7 @@ object mod {
       ontimeout: js.Any,
       callback: js.Function1[/* response */ js.UndefOr[js.Any], Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def request(
+    inline def request(
       method: String,
       endPoint: String,
       accept: String,
@@ -53,10 +46,8 @@ object mod {
       ontimeout: Unit,
       callback: js.Function1[/* response */ js.UndefOr[js.Any], Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def request(method: String, endPoint: String, accept: String, body: js.Any, timeout: Unit, ontimeout: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def request(
+    inline def request(method: String, endPoint: String, accept: String, body: js.Any, timeout: Unit, ontimeout: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def request(
       method: String,
       endPoint: String,
       accept: String,
@@ -65,8 +56,7 @@ object mod {
       ontimeout: js.Any,
       callback: js.Function1[/* response */ js.UndefOr[js.Any], Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def request(
+    inline def request(
       method: String,
       endPoint: String,
       accept: String,
@@ -76,23 +66,17 @@ object mod {
       callback: js.Function1[/* response */ js.UndefOr[js.Any], Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def serialize(obj: js.Any, parentKey: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(obj.asInstanceOf[js.Any], parentKey.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def serialize(obj: js.Any, parentKey: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(obj.asInstanceOf[js.Any], parentKey.asInstanceOf[js.Any])).asInstanceOf[String]
     
     @JSImport("phoenix", "Ajax.states")
     @js.native
     def states: StringDictionary[Double] = js.native
-    @scala.inline
-    def states_=(x: StringDictionary[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("states")(x.asInstanceOf[js.Any])
+    inline def states_=(x: StringDictionary[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("states")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def xdomainRequest(req: js.Any, method: String, endPoint: String, body: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xdomainRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def xdomainRequest(req: js.Any, method: String, endPoint: String, body: js.Any, timeout: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xdomainRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def xdomainRequest(req: js.Any, method: String, endPoint: String, body: js.Any, timeout: Double, ontimeout: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xdomainRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def xdomainRequest(
+    inline def xdomainRequest(req: js.Any, method: String, endPoint: String, body: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xdomainRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def xdomainRequest(req: js.Any, method: String, endPoint: String, body: js.Any, timeout: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xdomainRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def xdomainRequest(req: js.Any, method: String, endPoint: String, body: js.Any, timeout: Double, ontimeout: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xdomainRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def xdomainRequest(
       req: js.Any,
       method: String,
       endPoint: String,
@@ -101,8 +85,7 @@ object mod {
       ontimeout: js.Any,
       callback: js.Function1[/* response */ js.UndefOr[js.Any], Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xdomainRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def xdomainRequest(
+    inline def xdomainRequest(
       req: js.Any,
       method: String,
       endPoint: String,
@@ -111,10 +94,8 @@ object mod {
       ontimeout: Unit,
       callback: js.Function1[/* response */ js.UndefOr[js.Any], Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xdomainRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def xdomainRequest(req: js.Any, method: String, endPoint: String, body: js.Any, timeout: Unit, ontimeout: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xdomainRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def xdomainRequest(
+    inline def xdomainRequest(req: js.Any, method: String, endPoint: String, body: js.Any, timeout: Unit, ontimeout: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xdomainRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def xdomainRequest(
       req: js.Any,
       method: String,
       endPoint: String,
@@ -123,8 +104,7 @@ object mod {
       ontimeout: js.Any,
       callback: js.Function1[/* response */ js.UndefOr[js.Any], Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xdomainRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def xdomainRequest(
+    inline def xdomainRequest(
       req: js.Any,
       method: String,
       endPoint: String,
@@ -134,12 +114,9 @@ object mod {
       callback: js.Function1[/* response */ js.UndefOr[js.Any], Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xdomainRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def xhrRequest(req: js.Any, method: String, endPoint: String, accept: String, body: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xhrRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def xhrRequest(req: js.Any, method: String, endPoint: String, accept: String, body: js.Any, timeout: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xhrRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def xhrRequest(
+    inline def xhrRequest(req: js.Any, method: String, endPoint: String, accept: String, body: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xhrRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def xhrRequest(req: js.Any, method: String, endPoint: String, accept: String, body: js.Any, timeout: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xhrRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def xhrRequest(
       req: js.Any,
       method: String,
       endPoint: String,
@@ -148,8 +125,7 @@ object mod {
       timeout: Double,
       ontimeout: js.Any
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xhrRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def xhrRequest(
+    inline def xhrRequest(
       req: js.Any,
       method: String,
       endPoint: String,
@@ -159,8 +135,7 @@ object mod {
       ontimeout: js.Any,
       callback: js.Function1[/* response */ js.UndefOr[js.Any], Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xhrRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def xhrRequest(
+    inline def xhrRequest(
       req: js.Any,
       method: String,
       endPoint: String,
@@ -170,8 +145,7 @@ object mod {
       ontimeout: Unit,
       callback: js.Function1[/* response */ js.UndefOr[js.Any], Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xhrRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def xhrRequest(
+    inline def xhrRequest(
       req: js.Any,
       method: String,
       endPoint: String,
@@ -180,8 +154,7 @@ object mod {
       timeout: Unit,
       ontimeout: js.Any
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xhrRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def xhrRequest(
+    inline def xhrRequest(
       req: js.Any,
       method: String,
       endPoint: String,
@@ -191,8 +164,7 @@ object mod {
       ontimeout: js.Any,
       callback: js.Function1[/* response */ js.UndefOr[js.Any], Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xhrRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def xhrRequest(
+    inline def xhrRequest(
       req: js.Any,
       method: String,
       endPoint: String,
@@ -282,33 +254,23 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def list[T](presences: js.Object): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(presences.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
-    @scala.inline
-    def list[T](presences: js.Object, chooser: js.Function2[/* key */ String, /* presence */ js.Any, T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(presences.asInstanceOf[js.Any], chooser.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+    inline def list[T](presences: js.Object): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(presences.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+    inline def list[T](presences: js.Object, chooser: js.Function2[/* key */ String, /* presence */ js.Any, T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(presences.asInstanceOf[js.Any], chooser.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
     
-    @scala.inline
-    def syncDiff(currentState: js.Object, diff: Joins): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("syncDiff")(currentState.asInstanceOf[js.Any], diff.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def syncDiff(currentState: js.Object, diff: Joins, onJoin: Unit, onLeave: PresenceOnLeaveCallback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("syncDiff")(currentState.asInstanceOf[js.Any], diff.asInstanceOf[js.Any], onJoin.asInstanceOf[js.Any], onLeave.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def syncDiff(currentState: js.Object, diff: Joins, onJoin: PresenceOnJoinCallback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("syncDiff")(currentState.asInstanceOf[js.Any], diff.asInstanceOf[js.Any], onJoin.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def syncDiff(
+    inline def syncDiff(currentState: js.Object, diff: Joins): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("syncDiff")(currentState.asInstanceOf[js.Any], diff.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def syncDiff(currentState: js.Object, diff: Joins, onJoin: Unit, onLeave: PresenceOnLeaveCallback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("syncDiff")(currentState.asInstanceOf[js.Any], diff.asInstanceOf[js.Any], onJoin.asInstanceOf[js.Any], onLeave.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def syncDiff(currentState: js.Object, diff: Joins, onJoin: PresenceOnJoinCallback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("syncDiff")(currentState.asInstanceOf[js.Any], diff.asInstanceOf[js.Any], onJoin.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def syncDiff(
       currentState: js.Object,
       diff: Joins,
       onJoin: PresenceOnJoinCallback,
       onLeave: PresenceOnLeaveCallback
     ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("syncDiff")(currentState.asInstanceOf[js.Any], diff.asInstanceOf[js.Any], onJoin.asInstanceOf[js.Any], onLeave.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @scala.inline
-    def syncState(currentState: js.Object, newState: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("syncState")(currentState.asInstanceOf[js.Any], newState.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def syncState(currentState: js.Object, newState: js.Object, onJoin: Unit, onLeave: PresenceOnLeaveCallback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("syncState")(currentState.asInstanceOf[js.Any], newState.asInstanceOf[js.Any], onJoin.asInstanceOf[js.Any], onLeave.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def syncState(currentState: js.Object, newState: js.Object, onJoin: PresenceOnJoinCallback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("syncState")(currentState.asInstanceOf[js.Any], newState.asInstanceOf[js.Any], onJoin.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def syncState(
+    inline def syncState(currentState: js.Object, newState: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("syncState")(currentState.asInstanceOf[js.Any], newState.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def syncState(currentState: js.Object, newState: js.Object, onJoin: Unit, onLeave: PresenceOnLeaveCallback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("syncState")(currentState.asInstanceOf[js.Any], newState.asInstanceOf[js.Any], onJoin.asInstanceOf[js.Any], onLeave.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def syncState(currentState: js.Object, newState: js.Object, onJoin: PresenceOnJoinCallback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("syncState")(currentState.asInstanceOf[js.Any], newState.asInstanceOf[js.Any], onJoin.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def syncState(
       currentState: js.Object,
       newState: js.Object,
       onJoin: PresenceOnJoinCallback,
@@ -395,11 +357,9 @@ object mod {
   trait BinaryType extends StObject
   object BinaryType {
     
-    @scala.inline
-    def arraybuffer: typings.phoenix.phoenixStrings.arraybuffer = "arraybuffer".asInstanceOf[typings.phoenix.phoenixStrings.arraybuffer]
+    inline def arraybuffer: typings.phoenix.phoenixStrings.arraybuffer = "arraybuffer".asInstanceOf[typings.phoenix.phoenixStrings.arraybuffer]
     
-    @scala.inline
-    def blob: typings.phoenix.phoenixStrings.blob = "blob".asInstanceOf[typings.phoenix.phoenixStrings.blob]
+    inline def blob: typings.phoenix.phoenixStrings.blob = "blob".asInstanceOf[typings.phoenix.phoenixStrings.blob]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -411,17 +371,13 @@ object mod {
   trait ConnectionState extends StObject
   object ConnectionState {
     
-    @scala.inline
-    def closed: typings.phoenix.phoenixStrings.closed = "closed".asInstanceOf[typings.phoenix.phoenixStrings.closed]
+    inline def closed: typings.phoenix.phoenixStrings.closed = "closed".asInstanceOf[typings.phoenix.phoenixStrings.closed]
     
-    @scala.inline
-    def closing: typings.phoenix.phoenixStrings.closing = "closing".asInstanceOf[typings.phoenix.phoenixStrings.closing]
+    inline def closing: typings.phoenix.phoenixStrings.closing = "closing".asInstanceOf[typings.phoenix.phoenixStrings.closing]
     
-    @scala.inline
-    def connecting: typings.phoenix.phoenixStrings.connecting = "connecting".asInstanceOf[typings.phoenix.phoenixStrings.connecting]
+    inline def connecting: typings.phoenix.phoenixStrings.connecting = "connecting".asInstanceOf[typings.phoenix.phoenixStrings.connecting]
     
-    @scala.inline
-    def open: typings.phoenix.phoenixStrings.open = "open".asInstanceOf[typings.phoenix.phoenixStrings.open]
+    inline def open: typings.phoenix.phoenixStrings.open = "open".asInstanceOf[typings.phoenix.phoenixStrings.open]
   }
   
   type MessageRef = String
@@ -446,20 +402,16 @@ object mod {
   }
   object PresenceOpts {
     
-    @scala.inline
-    def apply(): PresenceOpts = {
+    inline def apply(): PresenceOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PresenceOpts]
     }
     
-    @scala.inline
-    implicit class PresenceOptsMutableBuilder[Self <: PresenceOpts] (val x: Self) extends AnyVal {
+    extension [Self <: PresenceOpts](x: Self) {
       
-      @scala.inline
-      def setEvents(value: Diff): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: Diff): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+      inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     }
   }
   
@@ -491,8 +443,7 @@ object mod {
   }
   object SocketConnectOption {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       binaryType: BinaryType,
       decode: (String, js.Function1[/* decoded */ js.Any, Unit]) => Unit,
       encode: (js.Object, js.Function1[/* encoded */ js.Any, Unit]) => Unit,
@@ -510,47 +461,33 @@ object mod {
       __obj.asInstanceOf[SocketConnectOption]
     }
     
-    @scala.inline
-    implicit class SocketConnectOptionMutableBuilder[Self <: SocketConnectOption] (val x: Self) extends AnyVal {
+    extension [Self <: SocketConnectOption](x: Self) {
       
-      @scala.inline
-      def setBinaryType(value: BinaryType): Self = StObject.set(x, "binaryType", value.asInstanceOf[js.Any])
+      inline def setBinaryType(value: BinaryType): Self = StObject.set(x, "binaryType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecode(value: (String, js.Function1[/* decoded */ js.Any, Unit]) => Unit): Self = StObject.set(x, "decode", js.Any.fromFunction2(value))
+      inline def setDecode(value: (String, js.Function1[/* decoded */ js.Any, Unit]) => Unit): Self = StObject.set(x, "decode", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEncode(value: (js.Object, js.Function1[/* encoded */ js.Any, Unit]) => Unit): Self = StObject.set(x, "encode", js.Any.fromFunction2(value))
+      inline def setEncode(value: (js.Object, js.Function1[/* encoded */ js.Any, Unit]) => Unit): Self = StObject.set(x, "encode", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setHeartbeatIntervalMs(value: Double): Self = StObject.set(x, "heartbeatIntervalMs", value.asInstanceOf[js.Any])
+      inline def setHeartbeatIntervalMs(value: Double): Self = StObject.set(x, "heartbeatIntervalMs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogger(value: (String, String, js.Any) => Unit): Self = StObject.set(x, "logger", js.Any.fromFunction3(value))
+      inline def setLogger(value: (String, String, js.Any) => Unit): Self = StObject.set(x, "logger", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setLongpollerTimeout(value: Double): Self = StObject.set(x, "longpollerTimeout", value.asInstanceOf[js.Any])
+      inline def setLongpollerTimeout(value: Double): Self = StObject.set(x, "longpollerTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParams(value: js.Object | js.Function0[js.Object]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Object | js.Function0[js.Object]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsFunction0(value: () => js.Object): Self = StObject.set(x, "params", js.Any.fromFunction0(value))
+      inline def setParamsFunction0(value: () => js.Object): Self = StObject.set(x, "params", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReconnectAfterMs(value: Double => Double): Self = StObject.set(x, "reconnectAfterMs", js.Any.fromFunction1(value))
+      inline def setReconnectAfterMs(value: Double => Double): Self = StObject.set(x, "reconnectAfterMs", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRejoinAfterMs(value: Double => Double): Self = StObject.set(x, "rejoinAfterMs", js.Any.fromFunction1(value))
+      inline def setRejoinAfterMs(value: Double => Double): Self = StObject.set(x, "rejoinAfterMs", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransport(value: String): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
+      inline def setTransport(value: String): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVsn(value: String): Self = StObject.set(x, "vsn", value.asInstanceOf[js.Any])
+      inline def setVsn(value: String): Self = StObject.set(x, "vsn", value.asInstanceOf[js.Any])
     }
   }
 }

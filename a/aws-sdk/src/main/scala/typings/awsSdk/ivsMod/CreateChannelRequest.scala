@@ -33,43 +33,31 @@ trait CreateChannelRequest extends StObject {
 }
 object CreateChannelRequest {
   
-  @scala.inline
-  def apply(): CreateChannelRequest = {
+  inline def apply(): CreateChannelRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateChannelRequest]
   }
   
-  @scala.inline
-  implicit class CreateChannelRequestMutableBuilder[Self <: CreateChannelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateChannelRequest](x: Self) {
     
-    @scala.inline
-    def setAuthorized(value: Boolean): Self = StObject.set(x, "authorized", value.asInstanceOf[js.Any])
+    inline def setAuthorized(value: Boolean): Self = StObject.set(x, "authorized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizedUndefined: Self = StObject.set(x, "authorized", js.undefined)
+    inline def setAuthorizedUndefined: Self = StObject.set(x, "authorized", js.undefined)
     
-    @scala.inline
-    def setLatencyMode(value: ChannelLatencyMode): Self = StObject.set(x, "latencyMode", value.asInstanceOf[js.Any])
+    inline def setLatencyMode(value: ChannelLatencyMode): Self = StObject.set(x, "latencyMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatencyModeUndefined: Self = StObject.set(x, "latencyMode", js.undefined)
+    inline def setLatencyModeUndefined: Self = StObject.set(x, "latencyMode", js.undefined)
     
-    @scala.inline
-    def setName(value: ChannelName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ChannelName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setType(value: ChannelType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ChannelType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

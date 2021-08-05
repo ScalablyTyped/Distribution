@@ -48,58 +48,41 @@ trait ListRecoveryPointsByBackupVaultInput extends StObject {
 }
 object ListRecoveryPointsByBackupVaultInput {
   
-  @scala.inline
-  def apply(BackupVaultName: BackupVaultName): ListRecoveryPointsByBackupVaultInput = {
+  inline def apply(BackupVaultName: BackupVaultName): ListRecoveryPointsByBackupVaultInput = {
     val __obj = js.Dynamic.literal(BackupVaultName = BackupVaultName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListRecoveryPointsByBackupVaultInput]
   }
   
-  @scala.inline
-  implicit class ListRecoveryPointsByBackupVaultInputMutableBuilder[Self <: ListRecoveryPointsByBackupVaultInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListRecoveryPointsByBackupVaultInput](x: Self) {
     
-    @scala.inline
-    def setBackupVaultName(value: BackupVaultName): Self = StObject.set(x, "BackupVaultName", value.asInstanceOf[js.Any])
+    inline def setBackupVaultName(value: BackupVaultName): Self = StObject.set(x, "BackupVaultName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByBackupPlanId(value: String): Self = StObject.set(x, "ByBackupPlanId", value.asInstanceOf[js.Any])
+    inline def setByBackupPlanId(value: String): Self = StObject.set(x, "ByBackupPlanId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByBackupPlanIdUndefined: Self = StObject.set(x, "ByBackupPlanId", js.undefined)
+    inline def setByBackupPlanIdUndefined: Self = StObject.set(x, "ByBackupPlanId", js.undefined)
     
-    @scala.inline
-    def setByCreatedAfter(value: timestamp): Self = StObject.set(x, "ByCreatedAfter", value.asInstanceOf[js.Any])
+    inline def setByCreatedAfter(value: timestamp): Self = StObject.set(x, "ByCreatedAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByCreatedAfterUndefined: Self = StObject.set(x, "ByCreatedAfter", js.undefined)
+    inline def setByCreatedAfterUndefined: Self = StObject.set(x, "ByCreatedAfter", js.undefined)
     
-    @scala.inline
-    def setByCreatedBefore(value: timestamp): Self = StObject.set(x, "ByCreatedBefore", value.asInstanceOf[js.Any])
+    inline def setByCreatedBefore(value: timestamp): Self = StObject.set(x, "ByCreatedBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByCreatedBeforeUndefined: Self = StObject.set(x, "ByCreatedBefore", js.undefined)
+    inline def setByCreatedBeforeUndefined: Self = StObject.set(x, "ByCreatedBefore", js.undefined)
     
-    @scala.inline
-    def setByResourceArn(value: ARN): Self = StObject.set(x, "ByResourceArn", value.asInstanceOf[js.Any])
+    inline def setByResourceArn(value: ARN): Self = StObject.set(x, "ByResourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByResourceArnUndefined: Self = StObject.set(x, "ByResourceArn", js.undefined)
+    inline def setByResourceArnUndefined: Self = StObject.set(x, "ByResourceArn", js.undefined)
     
-    @scala.inline
-    def setByResourceType(value: ResourceType): Self = StObject.set(x, "ByResourceType", value.asInstanceOf[js.Any])
+    inline def setByResourceType(value: ResourceType): Self = StObject.set(x, "ByResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByResourceTypeUndefined: Self = StObject.set(x, "ByResourceType", js.undefined)
+    inline def setByResourceTypeUndefined: Self = StObject.set(x, "ByResourceType", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -8,14 +8,13 @@ trait RootPullDecl
   extends StObject
      with PullDecl {
   
-  var _fileName: js.Any
+  /* private */ var _fileName: js.Any
   
-  var _isExternalModule: js.Any
+  /* private */ var _isExternalModule: js.Any
 }
 object RootPullDecl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _fileName: js.Any,
     _getEnclosingDeclFromParentDecl: () => PullDecl,
     _isExternalModule: js.Any,
@@ -68,13 +67,10 @@ object RootPullDecl {
     __obj.asInstanceOf[RootPullDecl]
   }
   
-  @scala.inline
-  implicit class RootPullDeclMutableBuilder[Self <: RootPullDecl] (val x: Self) extends AnyVal {
+  extension [Self <: RootPullDecl](x: Self) {
     
-    @scala.inline
-    def set_fileName(value: js.Any): Self = StObject.set(x, "_fileName", value.asInstanceOf[js.Any])
+    inline def set_fileName(value: js.Any): Self = StObject.set(x, "_fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_isExternalModule(value: js.Any): Self = StObject.set(x, "_isExternalModule", value.asInstanceOf[js.Any])
+    inline def set_isExternalModule(value: js.Any): Self = StObject.set(x, "_isExternalModule", value.asInstanceOf[js.Any])
   }
 }

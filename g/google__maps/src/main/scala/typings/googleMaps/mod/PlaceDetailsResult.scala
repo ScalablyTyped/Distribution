@@ -172,8 +172,7 @@ trait PlaceDetailsResult extends StObject {
 }
 object PlaceDetailsResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     address_components: js.Array[AddressComponent[AddressType | PlaceDetailsAddressComponentType]],
     adr_address: String,
     alt_ids: js.Array[AlternativePlaceId],
@@ -202,91 +201,62 @@ object PlaceDetailsResult {
     __obj.asInstanceOf[PlaceDetailsResult]
   }
   
-  @scala.inline
-  implicit class PlaceDetailsResultMutableBuilder[Self <: PlaceDetailsResult] (val x: Self) extends AnyVal {
+  extension [Self <: PlaceDetailsResult](x: Self) {
     
-    @scala.inline
-    def setAddress_components(value: js.Array[AddressComponent[AddressType | PlaceDetailsAddressComponentType]]): Self = StObject.set(x, "address_components", value.asInstanceOf[js.Any])
+    inline def setAddress_components(value: js.Array[AddressComponent[AddressType | PlaceDetailsAddressComponentType]]): Self = StObject.set(x, "address_components", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddress_componentsVarargs(value: (AddressComponent[AddressType | PlaceDetailsAddressComponentType])*): Self = StObject.set(x, "address_components", js.Array(value :_*))
+    inline def setAddress_componentsVarargs(value: (AddressComponent[AddressType | PlaceDetailsAddressComponentType])*): Self = StObject.set(x, "address_components", js.Array(value :_*))
     
-    @scala.inline
-    def setAdr_address(value: String): Self = StObject.set(x, "adr_address", value.asInstanceOf[js.Any])
+    inline def setAdr_address(value: String): Self = StObject.set(x, "adr_address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlt_ids(value: js.Array[AlternativePlaceId]): Self = StObject.set(x, "alt_ids", value.asInstanceOf[js.Any])
+    inline def setAlt_ids(value: js.Array[AlternativePlaceId]): Self = StObject.set(x, "alt_ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlt_idsVarargs(value: AlternativePlaceId*): Self = StObject.set(x, "alt_ids", js.Array(value :_*))
+    inline def setAlt_idsVarargs(value: AlternativePlaceId*): Self = StObject.set(x, "alt_ids", js.Array(value :_*))
     
-    @scala.inline
-    def setFormatted_address(value: String): Self = StObject.set(x, "formatted_address", value.asInstanceOf[js.Any])
+    inline def setFormatted_address(value: String): Self = StObject.set(x, "formatted_address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatted_phone_number(value: String): Self = StObject.set(x, "formatted_phone_number", value.asInstanceOf[js.Any])
+    inline def setFormatted_phone_number(value: String): Self = StObject.set(x, "formatted_phone_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometry(value: AddressGeometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    inline def setGeometry(value: AddressGeometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInternational_phone_number(value: String): Self = StObject.set(x, "international_phone_number", value.asInstanceOf[js.Any])
+    inline def setInternational_phone_number(value: String): Self = StObject.set(x, "international_phone_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpening_hours(value: OpeningHours): Self = StObject.set(x, "opening_hours", value.asInstanceOf[js.Any])
+    inline def setOpening_hours(value: OpeningHours): Self = StObject.set(x, "opening_hours", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermanently_closed(value: Boolean): Self = StObject.set(x, "permanently_closed", value.asInstanceOf[js.Any])
+    inline def setPermanently_closed(value: Boolean): Self = StObject.set(x, "permanently_closed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhotos(value: js.Array[PlacePhoto]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
+    inline def setPhotos(value: js.Array[PlacePhoto]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhotosVarargs(value: PlacePhoto*): Self = StObject.set(x, "photos", js.Array(value :_*))
+    inline def setPhotosVarargs(value: PlacePhoto*): Self = StObject.set(x, "photos", js.Array(value :_*))
     
-    @scala.inline
-    def setPlace_id(value: String): Self = StObject.set(x, "place_id", value.asInstanceOf[js.Any])
+    inline def setPlace_id(value: String): Self = StObject.set(x, "place_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlus_code(value: PlusCode): Self = StObject.set(x, "plus_code", value.asInstanceOf[js.Any])
+    inline def setPlus_code(value: PlusCode): Self = StObject.set(x, "plus_code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrice_level(value: Double): Self = StObject.set(x, "price_level", value.asInstanceOf[js.Any])
+    inline def setPrice_level(value: Double): Self = StObject.set(x, "price_level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRating(value: Double): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
+    inline def setRating(value: Double): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReviews(value: js.Array[PlaceReview]): Self = StObject.set(x, "reviews", value.asInstanceOf[js.Any])
+    inline def setReviews(value: js.Array[PlaceReview]): Self = StObject.set(x, "reviews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReviewsVarargs(value: PlaceReview*): Self = StObject.set(x, "reviews", js.Array(value :_*))
+    inline def setReviewsVarargs(value: PlaceReview*): Self = StObject.set(x, "reviews", js.Array(value :_*))
     
-    @scala.inline
-    def setScope(value: PlaceIdScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: PlaceIdScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypes(value: js.Array[AddressType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: js.Array[AddressType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesVarargs(value: AddressType*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: AddressType*): Self = StObject.set(x, "types", js.Array(value :_*))
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtc_offset(value: Double): Self = StObject.set(x, "utc_offset", value.asInstanceOf[js.Any])
+    inline def setUtc_offset(value: Double): Self = StObject.set(x, "utc_offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVicinity(value: String): Self = StObject.set(x, "vicinity", value.asInstanceOf[js.Any])
+    inline def setVicinity(value: String): Self = StObject.set(x, "vicinity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebsite(value: String): Self = StObject.set(x, "website", value.asInstanceOf[js.Any])
+    inline def setWebsite(value: String): Self = StObject.set(x, "website", value.asInstanceOf[js.Any])
   }
 }

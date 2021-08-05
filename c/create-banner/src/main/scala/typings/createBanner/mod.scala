@@ -22,10 +22,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
-  @scala.inline
-  def apply(options: Options): String = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
+  inline def apply(options: Options): String = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("create-banner", JSImport.Namespace)
   @js.native
@@ -47,26 +45,20 @@ object mod {
   }
   object BannerData {
     
-    @scala.inline
-    def apply(): BannerData = {
+    inline def apply(): BannerData = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BannerData]
     }
     
-    @scala.inline
-    implicit class BannerDataMutableBuilder[Self <: BannerData] (val x: Self) extends AnyVal {
+    extension [Self <: BannerData](x: Self) {
       
-      @scala.inline
-      def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      @scala.inline
-      def setYear(value: String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+      inline def setYear(value: String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
+      inline def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
     }
   }
   
@@ -108,46 +100,35 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCase(
+      inline def setCase(
         value: LiteralUnion[
               `camel-case` | `capital-case` | `constant-case` | `dot-case` | `header-case` | `no-case` | `param-case` | `pascal-case` | `path-case` | `sentence-case` | `snake-case`, 
               String
             ]
       ): Self = StObject.set(x, "case", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaseUndefined: Self = StObject.set(x, "case", js.undefined)
+      inline def setCaseUndefined: Self = StObject.set(x, "case", js.undefined)
       
-      @scala.inline
-      def setData(value: BannerData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: BannerData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setPkg(value: StringDictionary[js.Any]): Self = StObject.set(x, "pkg", value.asInstanceOf[js.Any])
+      inline def setPkg(value: StringDictionary[js.Any]): Self = StObject.set(x, "pkg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPkgNull: Self = StObject.set(x, "pkg", null)
+      inline def setPkgNull: Self = StObject.set(x, "pkg", null)
       
-      @scala.inline
-      def setPkgUndefined: Self = StObject.set(x, "pkg", js.undefined)
+      inline def setPkgUndefined: Self = StObject.set(x, "pkg", js.undefined)
       
-      @scala.inline
-      def setTemplate(value: LiteralUnion[normal | simple | `inline`, String]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: LiteralUnion[normal | simple | `inline`, String]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+      inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     }
   }
   

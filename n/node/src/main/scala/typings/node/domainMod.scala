@@ -27,8 +27,7 @@ object domainMod {
     var members: js.Array[EventEmitter | Timer] = js.native
   }
   
-  @scala.inline
-  def create(): Domain = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Domain]
+  inline def create(): Domain = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Domain]
   
   object global {
     

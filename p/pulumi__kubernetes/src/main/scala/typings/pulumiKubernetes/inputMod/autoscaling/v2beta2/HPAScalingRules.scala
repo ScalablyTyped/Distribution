@@ -27,34 +27,25 @@ trait HPAScalingRules extends StObject {
 }
 object HPAScalingRules {
   
-  @scala.inline
-  def apply(): HPAScalingRules = {
+  inline def apply(): HPAScalingRules = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HPAScalingRules]
   }
   
-  @scala.inline
-  implicit class HPAScalingRulesMutableBuilder[Self <: HPAScalingRules] (val x: Self) extends AnyVal {
+  extension [Self <: HPAScalingRules](x: Self) {
     
-    @scala.inline
-    def setPolicies(value: Input[js.Array[Input[HPAScalingPolicy]]]): Self = StObject.set(x, "policies", value.asInstanceOf[js.Any])
+    inline def setPolicies(value: Input[js.Array[Input[HPAScalingPolicy]]]): Self = StObject.set(x, "policies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoliciesUndefined: Self = StObject.set(x, "policies", js.undefined)
+    inline def setPoliciesUndefined: Self = StObject.set(x, "policies", js.undefined)
     
-    @scala.inline
-    def setPoliciesVarargs(value: Input[HPAScalingPolicy]*): Self = StObject.set(x, "policies", js.Array(value :_*))
+    inline def setPoliciesVarargs(value: Input[HPAScalingPolicy]*): Self = StObject.set(x, "policies", js.Array(value :_*))
     
-    @scala.inline
-    def setSelectPolicy(value: Input[String]): Self = StObject.set(x, "selectPolicy", value.asInstanceOf[js.Any])
+    inline def setSelectPolicy(value: Input[String]): Self = StObject.set(x, "selectPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectPolicyUndefined: Self = StObject.set(x, "selectPolicy", js.undefined)
+    inline def setSelectPolicyUndefined: Self = StObject.set(x, "selectPolicy", js.undefined)
     
-    @scala.inline
-    def setStabilizationWindowSeconds(value: Input[Double]): Self = StObject.set(x, "stabilizationWindowSeconds", value.asInstanceOf[js.Any])
+    inline def setStabilizationWindowSeconds(value: Input[Double]): Self = StObject.set(x, "stabilizationWindowSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStabilizationWindowSecondsUndefined: Self = StObject.set(x, "stabilizationWindowSeconds", js.undefined)
+    inline def setStabilizationWindowSecondsUndefined: Self = StObject.set(x, "stabilizationWindowSeconds", js.undefined)
   }
 }

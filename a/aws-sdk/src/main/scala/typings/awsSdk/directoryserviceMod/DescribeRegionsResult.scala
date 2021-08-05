@@ -18,28 +18,21 @@ trait DescribeRegionsResult extends StObject {
 }
 object DescribeRegionsResult {
   
-  @scala.inline
-  def apply(): DescribeRegionsResult = {
+  inline def apply(): DescribeRegionsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeRegionsResult]
   }
   
-  @scala.inline
-  implicit class DescribeRegionsResultMutableBuilder[Self <: DescribeRegionsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeRegionsResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setRegionsDescription(value: RegionsDescription): Self = StObject.set(x, "RegionsDescription", value.asInstanceOf[js.Any])
+    inline def setRegionsDescription(value: RegionsDescription): Self = StObject.set(x, "RegionsDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionsDescriptionUndefined: Self = StObject.set(x, "RegionsDescription", js.undefined)
+    inline def setRegionsDescriptionUndefined: Self = StObject.set(x, "RegionsDescription", js.undefined)
     
-    @scala.inline
-    def setRegionsDescriptionVarargs(value: RegionDescription*): Self = StObject.set(x, "RegionsDescription", js.Array(value :_*))
+    inline def setRegionsDescriptionVarargs(value: RegionDescription*): Self = StObject.set(x, "RegionsDescription", js.Array(value :_*))
   }
 }

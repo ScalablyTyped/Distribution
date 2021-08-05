@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PaymentIntendDataFutureUsageOptions extends StObject
 object PaymentIntendDataFutureUsageOptions {
   
-  @scala.inline
-  def off_session: typings.stripe.stripeStrings.off_session = "off_session".asInstanceOf[typings.stripe.stripeStrings.off_session]
+  inline def off_session: typings.stripe.stripeStrings.off_session = "off_session".asInstanceOf[typings.stripe.stripeStrings.off_session]
   
-  @scala.inline
-  def on_session: typings.stripe.stripeStrings.on_session = "on_session".asInstanceOf[typings.stripe.stripeStrings.on_session]
+  inline def on_session: typings.stripe.stripeStrings.on_session = "on_session".asInstanceOf[typings.stripe.stripeStrings.on_session]
 }

@@ -13,19 +13,15 @@ trait IFileData extends StObject {
 }
 object IFileData {
   
-  @scala.inline
-  def apply(element: HTMLInputElement, name: String): IFileData = {
+  inline def apply(element: HTMLInputElement, name: String): IFileData = {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFileData]
   }
   
-  @scala.inline
-  implicit class IFileDataMutableBuilder[Self <: IFileData] (val x: Self) extends AnyVal {
+  extension [Self <: IFileData](x: Self) {
     
-    @scala.inline
-    def setElement(value: HTMLInputElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: HTMLInputElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

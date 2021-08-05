@@ -20,35 +20,26 @@ object schemaMod {
   }
   object FastifyRouteSchemaDef {
     
-    @scala.inline
-    def apply(method: String, schema: FastifySchema, url: String): FastifyRouteSchemaDef = {
+    inline def apply(method: String, schema: FastifySchema, url: String): FastifyRouteSchemaDef = {
       val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[FastifyRouteSchemaDef]
     }
     
-    @scala.inline
-    implicit class FastifyRouteSchemaDefMutableBuilder[Self <: FastifyRouteSchemaDef] (val x: Self) extends AnyVal {
+    extension [Self <: FastifyRouteSchemaDef](x: Self) {
       
-      @scala.inline
-      def setHttpPart(value: String): Self = StObject.set(x, "httpPart", value.asInstanceOf[js.Any])
+      inline def setHttpPart(value: String): Self = StObject.set(x, "httpPart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpPartUndefined: Self = StObject.set(x, "httpPart", js.undefined)
+      inline def setHttpPartUndefined: Self = StObject.set(x, "httpPart", js.undefined)
       
-      @scala.inline
-      def setHttpStatus(value: String): Self = StObject.set(x, "httpStatus", value.asInstanceOf[js.Any])
+      inline def setHttpStatus(value: String): Self = StObject.set(x, "httpStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpStatusUndefined: Self = StObject.set(x, "httpStatus", js.undefined)
+      inline def setHttpStatusUndefined: Self = StObject.set(x, "httpStatus", js.undefined)
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchema(value: FastifySchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: FastifySchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -66,44 +57,32 @@ object schemaMod {
   }
   object FastifySchema {
     
-    @scala.inline
-    def apply(): FastifySchema = {
+    inline def apply(): FastifySchema = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FastifySchema]
     }
     
-    @scala.inline
-    implicit class FastifySchemaMutableBuilder[Self <: FastifySchema] (val x: Self) extends AnyVal {
+    extension [Self <: FastifySchema](x: Self) {
       
-      @scala.inline
-      def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setQuerystring(value: js.Any): Self = StObject.set(x, "querystring", value.asInstanceOf[js.Any])
+      inline def setQuerystring(value: js.Any): Self = StObject.set(x, "querystring", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuerystringUndefined: Self = StObject.set(x, "querystring", js.undefined)
+      inline def setQuerystringUndefined: Self = StObject.set(x, "querystring", js.undefined)
       
-      @scala.inline
-      def setResponse(value: js.Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: js.Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+      inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     }
   }
   
@@ -117,23 +96,18 @@ object schemaMod {
   }
   object FastifySchemaValidationError {
     
-    @scala.inline
-    def apply(dataPath: String): FastifySchemaValidationError = {
+    inline def apply(dataPath: String): FastifySchemaValidationError = {
       val __obj = js.Dynamic.literal(dataPath = dataPath.asInstanceOf[js.Any])
       __obj.asInstanceOf[FastifySchemaValidationError]
     }
     
-    @scala.inline
-    implicit class FastifySchemaValidationErrorMutableBuilder[Self <: FastifySchemaValidationError] (val x: Self) extends AnyVal {
+    extension [Self <: FastifySchemaValidationError](x: Self) {
       
-      @scala.inline
-      def setDataPath(value: String): Self = StObject.set(x, "dataPath", value.asInstanceOf[js.Any])
+      inline def setDataPath(value: String): Self = StObject.set(x, "dataPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
   
@@ -143,26 +117,20 @@ object schemaMod {
   }
   object FastifyValidationResult {
     
-    @scala.inline
-    def apply(): FastifyValidationResult = {
+    inline def apply(): FastifyValidationResult = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FastifyValidationResult]
     }
     
-    @scala.inline
-    implicit class FastifyValidationResultMutableBuilder[Self <: FastifyValidationResult] (val x: Self) extends AnyVal {
+    extension [Self <: FastifyValidationResult](x: Self) {
       
-      @scala.inline
-      def setErrors(value: js.Array[FastifySchemaValidationError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[FastifySchemaValidationError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsNull: Self = StObject.set(x, "errors", null)
+      inline def setErrorsNull: Self = StObject.set(x, "errors", null)
       
-      @scala.inline
-      def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+      inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
       
-      @scala.inline
-      def setErrorsVarargs(value: FastifySchemaValidationError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: FastifySchemaValidationError*): Self = StObject.set(x, "errors", js.Array(value :_*))
     }
   }
 }

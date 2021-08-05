@@ -17,25 +17,19 @@ trait HeaderRowProps
 }
 object HeaderRowProps {
   
-  @scala.inline
-  def apply(): HeaderRowProps = {
+  inline def apply(): HeaderRowProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HeaderRowProps]
   }
   
-  @scala.inline
-  implicit class HeaderRowPropsMutableBuilder[Self <: HeaderRowProps] (val x: Self) extends AnyVal {
+  extension [Self <: HeaderRowProps](x: Self) {
     
-    @scala.inline
-    def setHideSpacer(value: Boolean): Self = StObject.set(x, "hideSpacer", value.asInstanceOf[js.Any])
+    inline def setHideSpacer(value: Boolean): Self = StObject.set(x, "hideSpacer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideSpacerUndefined: Self = StObject.set(x, "hideSpacer", js.undefined)
+    inline def setHideSpacerUndefined: Self = StObject.set(x, "hideSpacer", js.undefined)
     
-    @scala.inline
-    def setTitle(value: js.Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: js.Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

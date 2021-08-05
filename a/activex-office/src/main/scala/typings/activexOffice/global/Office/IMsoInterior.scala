@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.IMsoInterior")
 @js.native
-class IMsoInterior protected ()
+/* private */ class IMsoInterior ()
   extends StObject
      with typings.activexOffice.Office.IMsoInterior {
   
@@ -25,7 +25,7 @@ class IMsoInterior protected ()
   /* CompleteClass */
   var InvertIfNegative: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.IMsoInterior_typekey")
   var OfficeDotIMsoInterior_typekey: typings.activexOffice.Office.IMsoInterior = js.native
   

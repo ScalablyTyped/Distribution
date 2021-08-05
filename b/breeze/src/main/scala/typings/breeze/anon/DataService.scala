@@ -15,22 +15,17 @@ trait DataService extends StObject {
 }
 object DataService {
   
-  @scala.inline
-  def apply(dataService: typings.breeze.breeze.DataService, getUrl: () => String, query: EntityQuery): DataService = {
+  inline def apply(dataService: typings.breeze.breeze.DataService, getUrl: () => String, query: EntityQuery): DataService = {
     val __obj = js.Dynamic.literal(dataService = dataService.asInstanceOf[js.Any], getUrl = js.Any.fromFunction0(getUrl), query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataService]
   }
   
-  @scala.inline
-  implicit class DataServiceMutableBuilder[Self <: DataService] (val x: Self) extends AnyVal {
+  extension [Self <: DataService](x: Self) {
     
-    @scala.inline
-    def setDataService(value: typings.breeze.breeze.DataService): Self = StObject.set(x, "dataService", value.asInstanceOf[js.Any])
+    inline def setDataService(value: typings.breeze.breeze.DataService): Self = StObject.set(x, "dataService", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetUrl(value: () => String): Self = StObject.set(x, "getUrl", js.Any.fromFunction0(value))
+    inline def setGetUrl(value: () => String): Self = StObject.set(x, "getUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setQuery(value: EntityQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: EntityQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }
 }

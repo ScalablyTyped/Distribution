@@ -18,8 +18,7 @@ trait AggregatedResultsDifference extends StObject {
 }
 object AggregatedResultsDifference {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     increaseInDuration: js.Any,
     increaseInFailures: Double,
     increaseInOtherTests: Double,
@@ -30,22 +29,16 @@ object AggregatedResultsDifference {
     __obj.asInstanceOf[AggregatedResultsDifference]
   }
   
-  @scala.inline
-  implicit class AggregatedResultsDifferenceMutableBuilder[Self <: AggregatedResultsDifference] (val x: Self) extends AnyVal {
+  extension [Self <: AggregatedResultsDifference](x: Self) {
     
-    @scala.inline
-    def setIncreaseInDuration(value: js.Any): Self = StObject.set(x, "increaseInDuration", value.asInstanceOf[js.Any])
+    inline def setIncreaseInDuration(value: js.Any): Self = StObject.set(x, "increaseInDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncreaseInFailures(value: Double): Self = StObject.set(x, "increaseInFailures", value.asInstanceOf[js.Any])
+    inline def setIncreaseInFailures(value: Double): Self = StObject.set(x, "increaseInFailures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncreaseInOtherTests(value: Double): Self = StObject.set(x, "increaseInOtherTests", value.asInstanceOf[js.Any])
+    inline def setIncreaseInOtherTests(value: Double): Self = StObject.set(x, "increaseInOtherTests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncreaseInPassedTests(value: Double): Self = StObject.set(x, "increaseInPassedTests", value.asInstanceOf[js.Any])
+    inline def setIncreaseInPassedTests(value: Double): Self = StObject.set(x, "increaseInPassedTests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncreaseInTotalTests(value: Double): Self = StObject.set(x, "increaseInTotalTests", value.asInstanceOf[js.Any])
+    inline def setIncreaseInTotalTests(value: Double): Self = StObject.set(x, "increaseInTotalTests", value.asInstanceOf[js.Any])
   }
 }

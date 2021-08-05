@@ -20,40 +20,29 @@ trait MemoryRouterProps extends StObject {
 }
 object MemoryRouterProps {
   
-  @scala.inline
-  def apply(): MemoryRouterProps = {
+  inline def apply(): MemoryRouterProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MemoryRouterProps]
   }
   
-  @scala.inline
-  implicit class MemoryRouterPropsMutableBuilder[Self <: MemoryRouterProps] (val x: Self) extends AnyVal {
+  extension [Self <: MemoryRouterProps](x: Self) {
     
-    @scala.inline
-    def setGetUserConfirmation(value: (/* message */ String, /* callback */ js.Function1[/* ok */ Boolean, Unit]) => Unit): Self = StObject.set(x, "getUserConfirmation", js.Any.fromFunction2(value))
+    inline def setGetUserConfirmation(value: (/* message */ String, /* callback */ js.Function1[/* ok */ Boolean, Unit]) => Unit): Self = StObject.set(x, "getUserConfirmation", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetUserConfirmationUndefined: Self = StObject.set(x, "getUserConfirmation", js.undefined)
+    inline def setGetUserConfirmationUndefined: Self = StObject.set(x, "getUserConfirmation", js.undefined)
     
-    @scala.inline
-    def setInitialEntries(value: js.Array[LocationDescriptor[LocationState]]): Self = StObject.set(x, "initialEntries", value.asInstanceOf[js.Any])
+    inline def setInitialEntries(value: js.Array[LocationDescriptor[LocationState]]): Self = StObject.set(x, "initialEntries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialEntriesUndefined: Self = StObject.set(x, "initialEntries", js.undefined)
+    inline def setInitialEntriesUndefined: Self = StObject.set(x, "initialEntries", js.undefined)
     
-    @scala.inline
-    def setInitialEntriesVarargs(value: LocationDescriptor[LocationState]*): Self = StObject.set(x, "initialEntries", js.Array(value :_*))
+    inline def setInitialEntriesVarargs(value: LocationDescriptor[LocationState]*): Self = StObject.set(x, "initialEntries", js.Array(value :_*))
     
-    @scala.inline
-    def setInitialIndex(value: Double): Self = StObject.set(x, "initialIndex", value.asInstanceOf[js.Any])
+    inline def setInitialIndex(value: Double): Self = StObject.set(x, "initialIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialIndexUndefined: Self = StObject.set(x, "initialIndex", js.undefined)
+    inline def setInitialIndexUndefined: Self = StObject.set(x, "initialIndex", js.undefined)
     
-    @scala.inline
-    def setKeyLength(value: Double): Self = StObject.set(x, "keyLength", value.asInstanceOf[js.Any])
+    inline def setKeyLength(value: Double): Self = StObject.set(x, "keyLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyLengthUndefined: Self = StObject.set(x, "keyLength", js.undefined)
+    inline def setKeyLengthUndefined: Self = StObject.set(x, "keyLength", js.undefined)
   }
 }

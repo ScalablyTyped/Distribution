@@ -18,19 +18,15 @@ trait FindOrInitializeOptions[TAttributes]
 }
 object FindOrInitializeOptions {
   
-  @scala.inline
-  def apply[TAttributes](): FindOrInitializeOptions[TAttributes] = {
+  inline def apply[TAttributes](): FindOrInitializeOptions[TAttributes] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FindOrInitializeOptions[TAttributes]]
   }
   
-  @scala.inline
-  implicit class FindOrInitializeOptionsMutableBuilder[Self <: FindOrInitializeOptions[?], TAttributes] (val x: Self & FindOrInitializeOptions[TAttributes]) extends AnyVal {
+  extension [Self <: FindOrInitializeOptions[?], TAttributes](x: Self & FindOrInitializeOptions[TAttributes]) {
     
-    @scala.inline
-    def setDefaults(value: TAttributes): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+    inline def setDefaults(value: TAttributes): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
+    inline def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
   }
 }

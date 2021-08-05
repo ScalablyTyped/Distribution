@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IHTMLRuleStyle")
 @js.native
-class IHTMLRuleStyle protected ()
+/* private */ class IHTMLRuleStyle ()
   extends StObject
      with typings.activexMshtml.MSHTML.IHTMLRuleStyle

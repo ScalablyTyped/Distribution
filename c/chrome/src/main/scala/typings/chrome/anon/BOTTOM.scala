@@ -20,25 +20,19 @@ trait BOTTOM extends StObject {
 }
 object BOTTOM {
   
-  @scala.inline
-  def apply(): BOTTOM = {
+  inline def apply(): BOTTOM = {
     val __obj = js.Dynamic.literal(BOTTOM = "bottom", LEFT = "left", RIGHT = "right", TOP = "top")
     __obj.asInstanceOf[BOTTOM]
   }
   
-  @scala.inline
-  implicit class BOTTOMMutableBuilder[Self <: BOTTOM] (val x: Self) extends AnyVal {
+  extension [Self <: BOTTOM](x: Self) {
     
-    @scala.inline
-    def setBOTTOM(value: bottom): Self = StObject.set(x, "BOTTOM", value.asInstanceOf[js.Any])
+    inline def setBOTTOM(value: bottom): Self = StObject.set(x, "BOTTOM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLEFT(value: left): Self = StObject.set(x, "LEFT", value.asInstanceOf[js.Any])
+    inline def setLEFT(value: left): Self = StObject.set(x, "LEFT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRIGHT(value: right): Self = StObject.set(x, "RIGHT", value.asInstanceOf[js.Any])
+    inline def setRIGHT(value: right): Self = StObject.set(x, "RIGHT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTOP(value: top): Self = StObject.set(x, "TOP", value.asInstanceOf[js.Any])
+    inline def setTOP(value: top): Self = StObject.set(x, "TOP", value.asInstanceOf[js.Any])
   }
 }

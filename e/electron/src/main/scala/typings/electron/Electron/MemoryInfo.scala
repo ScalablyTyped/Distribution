@@ -27,25 +27,19 @@ trait MemoryInfo extends StObject {
 }
 object MemoryInfo {
   
-  @scala.inline
-  def apply(peakWorkingSetSize: Double, workingSetSize: Double): MemoryInfo = {
+  inline def apply(peakWorkingSetSize: Double, workingSetSize: Double): MemoryInfo = {
     val __obj = js.Dynamic.literal(peakWorkingSetSize = peakWorkingSetSize.asInstanceOf[js.Any], workingSetSize = workingSetSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[MemoryInfo]
   }
   
-  @scala.inline
-  implicit class MemoryInfoMutableBuilder[Self <: MemoryInfo] (val x: Self) extends AnyVal {
+  extension [Self <: MemoryInfo](x: Self) {
     
-    @scala.inline
-    def setPeakWorkingSetSize(value: Double): Self = StObject.set(x, "peakWorkingSetSize", value.asInstanceOf[js.Any])
+    inline def setPeakWorkingSetSize(value: Double): Self = StObject.set(x, "peakWorkingSetSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateBytes(value: Double): Self = StObject.set(x, "privateBytes", value.asInstanceOf[js.Any])
+    inline def setPrivateBytes(value: Double): Self = StObject.set(x, "privateBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateBytesUndefined: Self = StObject.set(x, "privateBytes", js.undefined)
+    inline def setPrivateBytesUndefined: Self = StObject.set(x, "privateBytes", js.undefined)
     
-    @scala.inline
-    def setWorkingSetSize(value: Double): Self = StObject.set(x, "workingSetSize", value.asInstanceOf[js.Any])
+    inline def setWorkingSetSize(value: Double): Self = StObject.set(x, "workingSetSize", value.asInstanceOf[js.Any])
   }
 }

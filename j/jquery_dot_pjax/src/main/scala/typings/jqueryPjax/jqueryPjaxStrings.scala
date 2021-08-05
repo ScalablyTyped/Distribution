@@ -8,6 +8,5 @@ object jqueryPjaxStrings {
   
   @js.native
   sealed trait pjaxColonpopstate extends StObject
-  @scala.inline
-  def pjaxColonpopstate: pjaxColonpopstate = "pjax:popstate".asInstanceOf[pjaxColonpopstate]
+  inline def pjaxColonpopstate: pjaxColonpopstate = "pjax:popstate".asInstanceOf[pjaxColonpopstate]
 }

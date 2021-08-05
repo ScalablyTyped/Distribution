@@ -13,97 +13,83 @@ object browserSyncStrings {
   sealed trait add
     extends StObject
        with WatchEvents
-  @scala.inline
-  def add: add = "add".asInstanceOf[add]
+  inline def add: add = "add".asInstanceOf[add]
   
   @js.native
   sealed trait addDir
     extends StObject
        with WatchEvents
-  @scala.inline
-  def addDir: addDir = "addDir".asInstanceOf[addDir]
+  inline def addDir: addDir = "addDir".asInstanceOf[addDir]
   
   @js.native
   sealed trait change
     extends StObject
        with WatchEvents
-  @scala.inline
-  def change: change = "change".asInstanceOf[change]
+  inline def change: change = "change".asInstanceOf[change]
   
   @js.native
   sealed trait debug
     extends StObject
        with LogLevel
-  @scala.inline
-  def debug: debug = "debug".asInstanceOf[debug]
+  inline def debug: debug = "debug".asInstanceOf[debug]
   
   @js.native
   sealed trait external
     extends StObject
        with OpenOptions
-  @scala.inline
-  def external: external = "external".asInstanceOf[external]
+  inline def external: external = "external".asInstanceOf[external]
   
   @js.native
   sealed trait info
     extends StObject
        with LogLevel
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
+  inline def info: info = "info".asInstanceOf[info]
   
   @js.native
   sealed trait local
     extends StObject
        with OpenOptions
-  @scala.inline
-  def local: local = "local".asInstanceOf[local]
+  inline def local: local = "local".asInstanceOf[local]
   
   @js.native
   sealed trait silent
     extends StObject
        with LogLevel
-  @scala.inline
-  def silent: silent = "silent".asInstanceOf[silent]
+  inline def silent: silent = "silent".asInstanceOf[silent]
   
   @js.native
   sealed trait tunnel
     extends StObject
        with OpenOptions
-  @scala.inline
-  def tunnel: tunnel = "tunnel".asInstanceOf[tunnel]
+  inline def tunnel: tunnel = "tunnel".asInstanceOf[tunnel]
   
   @js.native
   sealed trait ui
     extends StObject
        with OpenOptions
-  @scala.inline
-  def ui: ui = "ui".asInstanceOf[ui]
+  inline def ui: ui = "ui".asInstanceOf[ui]
   
   @js.native
   sealed trait `ui-external`
     extends StObject
        with OpenOptions
-  @scala.inline
-  def `ui-external`: `ui-external` = "ui-external".asInstanceOf[`ui-external`]
+  inline def `ui-external`: `ui-external` = "ui-external".asInstanceOf[`ui-external`]
   
   @js.native
   sealed trait unlink
     extends StObject
        with WatchEvents
-  @scala.inline
-  def unlink: unlink = "unlink".asInstanceOf[unlink]
+  inline def unlink: unlink = "unlink".asInstanceOf[unlink]
   
   @js.native
   sealed trait unlinkDir
     extends StObject
        with WatchEvents
-  @scala.inline
-  def unlinkDir: unlinkDir = "unlinkDir".asInstanceOf[unlinkDir]
+  inline def unlinkDir: unlinkDir = "unlinkDir".asInstanceOf[unlinkDir]
   
   @js.native
   sealed trait warn
     extends StObject
        with LogLevel
-  @scala.inline
-  def warn: warn = "warn".asInstanceOf[warn]
+  inline def warn: warn = "warn".asInstanceOf[warn]
 }

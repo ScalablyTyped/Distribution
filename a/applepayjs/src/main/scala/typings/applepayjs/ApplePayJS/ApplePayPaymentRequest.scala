@@ -82,8 +82,7 @@ trait ApplePayPaymentRequest extends StObject {
 }
 object ApplePayPaymentRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     countryCode: String,
     currencyCode: String,
     merchantCapabilities: js.Array[ApplePayMerchantCapability],
@@ -94,97 +93,66 @@ object ApplePayPaymentRequest {
     __obj.asInstanceOf[ApplePayPaymentRequest]
   }
   
-  @scala.inline
-  implicit class ApplePayPaymentRequestMutableBuilder[Self <: ApplePayPaymentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ApplePayPaymentRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationData(value: String): Self = StObject.set(x, "applicationData", value.asInstanceOf[js.Any])
+    inline def setApplicationData(value: String): Self = StObject.set(x, "applicationData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationDataUndefined: Self = StObject.set(x, "applicationData", js.undefined)
+    inline def setApplicationDataUndefined: Self = StObject.set(x, "applicationData", js.undefined)
     
-    @scala.inline
-    def setBillingContact(value: ApplePayPaymentContact): Self = StObject.set(x, "billingContact", value.asInstanceOf[js.Any])
+    inline def setBillingContact(value: ApplePayPaymentContact): Self = StObject.set(x, "billingContact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillingContactUndefined: Self = StObject.set(x, "billingContact", js.undefined)
+    inline def setBillingContactUndefined: Self = StObject.set(x, "billingContact", js.undefined)
     
-    @scala.inline
-    def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
+    inline def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
+    inline def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineItems(value: js.Array[ApplePayLineItem]): Self = StObject.set(x, "lineItems", value.asInstanceOf[js.Any])
+    inline def setLineItems(value: js.Array[ApplePayLineItem]): Self = StObject.set(x, "lineItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineItemsUndefined: Self = StObject.set(x, "lineItems", js.undefined)
+    inline def setLineItemsUndefined: Self = StObject.set(x, "lineItems", js.undefined)
     
-    @scala.inline
-    def setLineItemsVarargs(value: ApplePayLineItem*): Self = StObject.set(x, "lineItems", js.Array(value :_*))
+    inline def setLineItemsVarargs(value: ApplePayLineItem*): Self = StObject.set(x, "lineItems", js.Array(value :_*))
     
-    @scala.inline
-    def setMerchantCapabilities(value: js.Array[ApplePayMerchantCapability]): Self = StObject.set(x, "merchantCapabilities", value.asInstanceOf[js.Any])
+    inline def setMerchantCapabilities(value: js.Array[ApplePayMerchantCapability]): Self = StObject.set(x, "merchantCapabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerchantCapabilitiesVarargs(value: ApplePayMerchantCapability*): Self = StObject.set(x, "merchantCapabilities", js.Array(value :_*))
+    inline def setMerchantCapabilitiesVarargs(value: ApplePayMerchantCapability*): Self = StObject.set(x, "merchantCapabilities", js.Array(value :_*))
     
-    @scala.inline
-    def setRequiredBillingContactFields(value: js.Array[ApplePayContactField]): Self = StObject.set(x, "requiredBillingContactFields", value.asInstanceOf[js.Any])
+    inline def setRequiredBillingContactFields(value: js.Array[ApplePayContactField]): Self = StObject.set(x, "requiredBillingContactFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredBillingContactFieldsUndefined: Self = StObject.set(x, "requiredBillingContactFields", js.undefined)
+    inline def setRequiredBillingContactFieldsUndefined: Self = StObject.set(x, "requiredBillingContactFields", js.undefined)
     
-    @scala.inline
-    def setRequiredBillingContactFieldsVarargs(value: ApplePayContactField*): Self = StObject.set(x, "requiredBillingContactFields", js.Array(value :_*))
+    inline def setRequiredBillingContactFieldsVarargs(value: ApplePayContactField*): Self = StObject.set(x, "requiredBillingContactFields", js.Array(value :_*))
     
-    @scala.inline
-    def setRequiredShippingContactFields(value: js.Array[ApplePayContactField]): Self = StObject.set(x, "requiredShippingContactFields", value.asInstanceOf[js.Any])
+    inline def setRequiredShippingContactFields(value: js.Array[ApplePayContactField]): Self = StObject.set(x, "requiredShippingContactFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredShippingContactFieldsUndefined: Self = StObject.set(x, "requiredShippingContactFields", js.undefined)
+    inline def setRequiredShippingContactFieldsUndefined: Self = StObject.set(x, "requiredShippingContactFields", js.undefined)
     
-    @scala.inline
-    def setRequiredShippingContactFieldsVarargs(value: ApplePayContactField*): Self = StObject.set(x, "requiredShippingContactFields", js.Array(value :_*))
+    inline def setRequiredShippingContactFieldsVarargs(value: ApplePayContactField*): Self = StObject.set(x, "requiredShippingContactFields", js.Array(value :_*))
     
-    @scala.inline
-    def setShippingContact(value: ApplePayPaymentContact): Self = StObject.set(x, "shippingContact", value.asInstanceOf[js.Any])
+    inline def setShippingContact(value: ApplePayPaymentContact): Self = StObject.set(x, "shippingContact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShippingContactUndefined: Self = StObject.set(x, "shippingContact", js.undefined)
+    inline def setShippingContactUndefined: Self = StObject.set(x, "shippingContact", js.undefined)
     
-    @scala.inline
-    def setShippingMethods(value: js.Array[ApplePayShippingMethod]): Self = StObject.set(x, "shippingMethods", value.asInstanceOf[js.Any])
+    inline def setShippingMethods(value: js.Array[ApplePayShippingMethod]): Self = StObject.set(x, "shippingMethods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShippingMethodsUndefined: Self = StObject.set(x, "shippingMethods", js.undefined)
+    inline def setShippingMethodsUndefined: Self = StObject.set(x, "shippingMethods", js.undefined)
     
-    @scala.inline
-    def setShippingMethodsVarargs(value: ApplePayShippingMethod*): Self = StObject.set(x, "shippingMethods", js.Array(value :_*))
+    inline def setShippingMethodsVarargs(value: ApplePayShippingMethod*): Self = StObject.set(x, "shippingMethods", js.Array(value :_*))
     
-    @scala.inline
-    def setShippingType(value: ApplePayShippingType): Self = StObject.set(x, "shippingType", value.asInstanceOf[js.Any])
+    inline def setShippingType(value: ApplePayShippingType): Self = StObject.set(x, "shippingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShippingTypeUndefined: Self = StObject.set(x, "shippingType", js.undefined)
+    inline def setShippingTypeUndefined: Self = StObject.set(x, "shippingType", js.undefined)
     
-    @scala.inline
-    def setSupportedCountries(value: js.Array[String]): Self = StObject.set(x, "supportedCountries", value.asInstanceOf[js.Any])
+    inline def setSupportedCountries(value: js.Array[String]): Self = StObject.set(x, "supportedCountries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedCountriesUndefined: Self = StObject.set(x, "supportedCountries", js.undefined)
+    inline def setSupportedCountriesUndefined: Self = StObject.set(x, "supportedCountries", js.undefined)
     
-    @scala.inline
-    def setSupportedCountriesVarargs(value: String*): Self = StObject.set(x, "supportedCountries", js.Array(value :_*))
+    inline def setSupportedCountriesVarargs(value: String*): Self = StObject.set(x, "supportedCountries", js.Array(value :_*))
     
-    @scala.inline
-    def setSupportedNetworks(value: js.Array[String]): Self = StObject.set(x, "supportedNetworks", value.asInstanceOf[js.Any])
+    inline def setSupportedNetworks(value: js.Array[String]): Self = StObject.set(x, "supportedNetworks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedNetworksVarargs(value: String*): Self = StObject.set(x, "supportedNetworks", js.Array(value :_*))
+    inline def setSupportedNetworksVarargs(value: String*): Self = StObject.set(x, "supportedNetworks", js.Array(value :_*))
     
-    @scala.inline
-    def setTotal(value: ApplePayLineItem): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: ApplePayLineItem): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
   }
 }

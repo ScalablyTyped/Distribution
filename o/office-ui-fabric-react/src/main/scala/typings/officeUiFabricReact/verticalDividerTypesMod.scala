@@ -24,20 +24,16 @@ object verticalDividerTypesMod {
   }
   object IVerticalDividerClassNames {
     
-    @scala.inline
-    def apply(divider: String, wrapper: String): IVerticalDividerClassNames = {
+    inline def apply(divider: String, wrapper: String): IVerticalDividerClassNames = {
       val __obj = js.Dynamic.literal(divider = divider.asInstanceOf[js.Any], wrapper = wrapper.asInstanceOf[js.Any])
       __obj.asInstanceOf[IVerticalDividerClassNames]
     }
     
-    @scala.inline
-    implicit class IVerticalDividerClassNamesMutableBuilder[Self <: IVerticalDividerClassNames] (val x: Self) extends AnyVal {
+    extension [Self <: IVerticalDividerClassNames](x: Self) {
       
-      @scala.inline
-      def setDivider(value: String): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
+      inline def setDivider(value: String): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapper(value: String): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+      inline def setWrapper(value: String): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
     }
   }
   
@@ -66,41 +62,30 @@ object verticalDividerTypesMod {
   }
   object IVerticalDividerProps {
     
-    @scala.inline
-    def apply(): IVerticalDividerProps = {
+    inline def apply(): IVerticalDividerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IVerticalDividerProps]
     }
     
-    @scala.inline
-    implicit class IVerticalDividerPropsMutableBuilder[Self <: IVerticalDividerProps] (val x: Self) extends AnyVal {
+    extension [Self <: IVerticalDividerProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setGetClassNames(value: /* theme */ ITheme => IVerticalDividerClassNames): Self = StObject.set(x, "getClassNames", js.Any.fromFunction1(value))
+      inline def setGetClassNames(value: /* theme */ ITheme => IVerticalDividerClassNames): Self = StObject.set(x, "getClassNames", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetClassNamesUndefined: Self = StObject.set(x, "getClassNames", js.undefined)
+      inline def setGetClassNamesUndefined: Self = StObject.set(x, "getClassNames", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[IVerticalDividerPropsStyles, IVerticalDividerStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[IVerticalDividerPropsStyles, IVerticalDividerStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: IVerticalDividerPropsStyles => DeepPartial[IVerticalDividerStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: IVerticalDividerPropsStyles => DeepPartial[IVerticalDividerStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -115,32 +100,24 @@ object verticalDividerTypesMod {
   }
   object IVerticalDividerPropsStyles {
     
-    @scala.inline
-    def apply(): IVerticalDividerPropsStyles = {
+    inline def apply(): IVerticalDividerPropsStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IVerticalDividerPropsStyles]
     }
     
-    @scala.inline
-    implicit class IVerticalDividerPropsStylesMutableBuilder[Self <: IVerticalDividerPropsStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IVerticalDividerPropsStyles](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setGetClassNames(value: /* theme */ ITheme => IVerticalDividerClassNames): Self = StObject.set(x, "getClassNames", js.Any.fromFunction1(value))
+      inline def setGetClassNames(value: /* theme */ ITheme => IVerticalDividerClassNames): Self = StObject.set(x, "getClassNames", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetClassNamesUndefined: Self = StObject.set(x, "getClassNames", js.undefined)
+      inline def setGetClassNamesUndefined: Self = StObject.set(x, "getClassNames", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -158,32 +135,24 @@ object verticalDividerTypesMod {
   }
   object IVerticalDividerStyles {
     
-    @scala.inline
-    def apply(): IVerticalDividerStyles = {
+    inline def apply(): IVerticalDividerStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IVerticalDividerStyles]
     }
     
-    @scala.inline
-    implicit class IVerticalDividerStylesMutableBuilder[Self <: IVerticalDividerStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IVerticalDividerStyles](x: Self) {
       
-      @scala.inline
-      def setDivider(value: IStyle): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
+      inline def setDivider(value: IStyle): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDividerNull: Self = StObject.set(x, "divider", null)
+      inline def setDividerNull: Self = StObject.set(x, "divider", null)
       
-      @scala.inline
-      def setDividerUndefined: Self = StObject.set(x, "divider", js.undefined)
+      inline def setDividerUndefined: Self = StObject.set(x, "divider", js.undefined)
       
-      @scala.inline
-      def setWrapper(value: IStyle): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+      inline def setWrapper(value: IStyle): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapperNull: Self = StObject.set(x, "wrapper", null)
+      inline def setWrapperNull: Self = StObject.set(x, "wrapper", null)
       
-      @scala.inline
-      def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
+      inline def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
     }
   }
 }

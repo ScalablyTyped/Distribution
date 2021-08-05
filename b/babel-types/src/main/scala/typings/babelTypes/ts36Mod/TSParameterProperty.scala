@@ -30,25 +30,18 @@ object TSParameterProperty {
   @js.native
   def apply(parameter: Identifier_): TSParameterProperty = js.native
   
-  @scala.inline
-  implicit class TSParameterPropertyMutableBuilder[Self <: TSParameterProperty] (val x: Self) extends AnyVal {
+  extension [Self <: TSParameterProperty](x: Self) {
     
-    @scala.inline
-    def setAccessibility(value: public | `private` | `protected`): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
+    inline def setAccessibility(value: public | `private` | `protected`): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessibilityNull: Self = StObject.set(x, "accessibility", null)
+    inline def setAccessibilityNull: Self = StObject.set(x, "accessibility", null)
     
-    @scala.inline
-    def setParameter(value: Identifier_ | AssignmentPattern_): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
+    inline def setParameter(value: Identifier_ | AssignmentPattern_): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
+    inline def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadonlyNull: Self = StObject.set(x, "readonly", null)
+    inline def setReadonlyNull: Self = StObject.set(x, "readonly", null)
     
-    @scala.inline
-    def setType(value: typings.babelTypes.babelTypesStrings.TSParameterProperty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.babelTypes.babelTypesStrings.TSParameterProperty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

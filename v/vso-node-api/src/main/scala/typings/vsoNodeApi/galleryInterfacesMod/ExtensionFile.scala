@@ -14,22 +14,17 @@ trait ExtensionFile extends StObject {
 }
 object ExtensionFile {
   
-  @scala.inline
-  def apply(assetType: String, language: String, source: String): ExtensionFile = {
+  inline def apply(assetType: String, language: String, source: String): ExtensionFile = {
     val __obj = js.Dynamic.literal(assetType = assetType.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionFile]
   }
   
-  @scala.inline
-  implicit class ExtensionFileMutableBuilder[Self <: ExtensionFile] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionFile](x: Self) {
     
-    @scala.inline
-    def setAssetType(value: String): Self = StObject.set(x, "assetType", value.asInstanceOf[js.Any])
+    inline def setAssetType(value: String): Self = StObject.set(x, "assetType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

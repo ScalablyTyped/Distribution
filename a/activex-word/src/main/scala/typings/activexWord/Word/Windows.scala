@@ -31,6 +31,6 @@ trait Windows extends StObject {
   
   var SyncScrollingSideBySide: Boolean = js.native
   
-  @JSName("Word.Windows_typekey")
+  /* private */ @JSName("Word.Windows_typekey")
   var WordDotWindows_typekey: Windows = js.native
 }

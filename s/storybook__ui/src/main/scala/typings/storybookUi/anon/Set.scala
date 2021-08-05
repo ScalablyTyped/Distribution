@@ -12,19 +12,15 @@ trait Set extends StObject {
 }
 object Set {
   
-  @scala.inline
-  def apply(set: Double => Unit): Set = {
+  inline def apply(set: Double => Unit): Set = {
     val __obj = js.Dynamic.literal(set = js.Any.fromFunction1(set), value = 1)
     __obj.asInstanceOf[Set]
   }
   
-  @scala.inline
-  implicit class SetMutableBuilder[Self <: Set] (val x: Self) extends AnyVal {
+  extension [Self <: Set](x: Self) {
     
-    @scala.inline
-    def setSet(value: Double => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+    inline def setSet(value: Double => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValue(value: typings.storybookUi.storybookUiNumbers.`1`): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: typings.storybookUi.storybookUiNumbers.`1`): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

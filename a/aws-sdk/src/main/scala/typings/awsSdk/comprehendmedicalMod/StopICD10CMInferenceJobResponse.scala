@@ -13,19 +13,15 @@ trait StopICD10CMInferenceJobResponse extends StObject {
 }
 object StopICD10CMInferenceJobResponse {
   
-  @scala.inline
-  def apply(): StopICD10CMInferenceJobResponse = {
+  inline def apply(): StopICD10CMInferenceJobResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StopICD10CMInferenceJobResponse]
   }
   
-  @scala.inline
-  implicit class StopICD10CMInferenceJobResponseMutableBuilder[Self <: StopICD10CMInferenceJobResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StopICD10CMInferenceJobResponse](x: Self) {
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
+    inline def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
   }
 }

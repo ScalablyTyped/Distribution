@@ -23,21 +23,18 @@ object gcMod {
     @JSImport("ipfs-cli/dist/src/commands/repo/gc", "builder.quiet")
     @js.native
     def quiet: Desc = js.native
-    @scala.inline
-    def quiet_=(x: Desc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("quiet")(x.asInstanceOf[js.Any])
+    inline def quiet_=(x: Desc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("quiet")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/repo/gc", "builder.stream-errors")
     @js.native
     def streamErrors: DefaultDesc = js.native
     
-    @scala.inline
-    def streamErrors_=(x: DefaultDesc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stream-errors")(x.asInstanceOf[js.Any])
+    inline def streamErrors_=(x: DefaultDesc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stream-errors")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/repo/gc", "builder.timeout")
     @js.native
     def timeout: CoerceType = js.native
-    @scala.inline
-    def timeout_=(x: CoerceType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
+    inline def timeout_=(x: CoerceType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("ipfs-cli/dist/src/commands/repo/gc", "command")
@@ -48,6 +45,5 @@ object gcMod {
   @js.native
   val describe: String = js.native
   
-  @scala.inline
-  def handler(hasHasIpfsPrintQuietStreamErrorsTimeout: StreamErrors): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintQuietStreamErrorsTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def handler(hasHasIpfsPrintQuietStreamErrorsTimeout: StreamErrors): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintQuietStreamErrorsTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

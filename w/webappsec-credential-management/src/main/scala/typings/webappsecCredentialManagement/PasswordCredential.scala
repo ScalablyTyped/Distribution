@@ -55,35 +55,26 @@ trait PasswordCredential
 }
 object PasswordCredential {
   
-  @scala.inline
-  def apply(id: String, idName: String, passwordName: String): PasswordCredential = {
+  inline def apply(id: String, idName: String, passwordName: String): PasswordCredential = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], idName = idName.asInstanceOf[js.Any], passwordName = passwordName.asInstanceOf[js.Any], additionalData = null, iconURL = null, name = null)
     __obj.updateDynamic("type")("password")
     __obj.asInstanceOf[PasswordCredential]
   }
   
-  @scala.inline
-  implicit class PasswordCredentialMutableBuilder[Self <: PasswordCredential] (val x: Self) extends AnyVal {
+  extension [Self <: PasswordCredential](x: Self) {
     
-    @scala.inline
-    def setAdditionalData(value: CredentialBodyType): Self = StObject.set(x, "additionalData", value.asInstanceOf[js.Any])
+    inline def setAdditionalData(value: CredentialBodyType): Self = StObject.set(x, "additionalData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalDataNull: Self = StObject.set(x, "additionalData", null)
+    inline def setAdditionalDataNull: Self = StObject.set(x, "additionalData", null)
     
-    @scala.inline
-    def setIdName(value: String): Self = StObject.set(x, "idName", value.asInstanceOf[js.Any])
+    inline def setIdName(value: String): Self = StObject.set(x, "idName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordName(value: String): Self = StObject.set(x, "passwordName", value.asInstanceOf[js.Any])
+    inline def setPasswordName(value: String): Self = StObject.set(x, "passwordName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
-    @scala.inline
-    def setType(value: password): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: password): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

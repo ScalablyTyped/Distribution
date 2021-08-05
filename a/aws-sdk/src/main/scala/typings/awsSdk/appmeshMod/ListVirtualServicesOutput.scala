@@ -18,25 +18,19 @@ trait ListVirtualServicesOutput extends StObject {
 }
 object ListVirtualServicesOutput {
   
-  @scala.inline
-  def apply(virtualServices: VirtualServiceList): ListVirtualServicesOutput = {
+  inline def apply(virtualServices: VirtualServiceList): ListVirtualServicesOutput = {
     val __obj = js.Dynamic.literal(virtualServices = virtualServices.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListVirtualServicesOutput]
   }
   
-  @scala.inline
-  implicit class ListVirtualServicesOutputMutableBuilder[Self <: ListVirtualServicesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListVirtualServicesOutput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setVirtualServices(value: VirtualServiceList): Self = StObject.set(x, "virtualServices", value.asInstanceOf[js.Any])
+    inline def setVirtualServices(value: VirtualServiceList): Self = StObject.set(x, "virtualServices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualServicesVarargs(value: VirtualServiceRef*): Self = StObject.set(x, "virtualServices", js.Array(value :_*))
+    inline def setVirtualServicesVarargs(value: VirtualServiceRef*): Self = StObject.set(x, "virtualServices", js.Array(value :_*))
   }
 }

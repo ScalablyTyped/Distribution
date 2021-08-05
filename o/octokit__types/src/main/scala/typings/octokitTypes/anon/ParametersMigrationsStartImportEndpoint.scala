@@ -18,8 +18,7 @@ trait ParametersMigrationsStartImportEndpoint extends StObject {
 }
 object ParametersMigrationsStartImportEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: MigrationsStartImportEndpoint,
     request: MigrationsStartImportRequestOptions,
     response: OctokitResponse[MigrationsStartImportResponseData]
@@ -28,16 +27,12 @@ object ParametersMigrationsStartImportEndpoint {
     __obj.asInstanceOf[ParametersMigrationsStartImportEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersMigrationsStartImportEndpointMutableBuilder[Self <: ParametersMigrationsStartImportEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersMigrationsStartImportEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: MigrationsStartImportEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: MigrationsStartImportEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: MigrationsStartImportRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: MigrationsStartImportRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[MigrationsStartImportResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[MigrationsStartImportResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

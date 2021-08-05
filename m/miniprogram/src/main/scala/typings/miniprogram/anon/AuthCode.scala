@@ -14,25 +14,19 @@ trait AuthCode extends StObject {
 }
 object AuthCode {
   
-  @scala.inline
-  def apply(authCode: String, authErrorScopes: js.Any, authSuccessScopes: js.Array[String]): AuthCode = {
+  inline def apply(authCode: String, authErrorScopes: js.Any, authSuccessScopes: js.Array[String]): AuthCode = {
     val __obj = js.Dynamic.literal(authCode = authCode.asInstanceOf[js.Any], authErrorScopes = authErrorScopes.asInstanceOf[js.Any], authSuccessScopes = authSuccessScopes.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthCode]
   }
   
-  @scala.inline
-  implicit class AuthCodeMutableBuilder[Self <: AuthCode] (val x: Self) extends AnyVal {
+  extension [Self <: AuthCode](x: Self) {
     
-    @scala.inline
-    def setAuthCode(value: String): Self = StObject.set(x, "authCode", value.asInstanceOf[js.Any])
+    inline def setAuthCode(value: String): Self = StObject.set(x, "authCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthErrorScopes(value: js.Any): Self = StObject.set(x, "authErrorScopes", value.asInstanceOf[js.Any])
+    inline def setAuthErrorScopes(value: js.Any): Self = StObject.set(x, "authErrorScopes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthSuccessScopes(value: js.Array[String]): Self = StObject.set(x, "authSuccessScopes", value.asInstanceOf[js.Any])
+    inline def setAuthSuccessScopes(value: js.Array[String]): Self = StObject.set(x, "authSuccessScopes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthSuccessScopesVarargs(value: String*): Self = StObject.set(x, "authSuccessScopes", js.Array(value :_*))
+    inline def setAuthSuccessScopesVarargs(value: String*): Self = StObject.set(x, "authSuccessScopes", js.Array(value :_*))
   }
 }

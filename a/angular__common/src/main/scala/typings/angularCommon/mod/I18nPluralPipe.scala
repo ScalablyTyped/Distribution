@@ -13,7 +13,7 @@ class I18nPluralPipe protected ()
      with PipeTransform {
   def this(_localization: NgLocalization) = this()
   
-  var _localization: js.Any = js.native
+  /* private */ var _localization: js.Any = js.native
   
   /* CompleteClass */
   override def transform(value: js.Any, args: js.Any*): js.Any = js.native

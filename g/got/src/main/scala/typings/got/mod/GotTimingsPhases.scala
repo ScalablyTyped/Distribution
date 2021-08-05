@@ -23,8 +23,7 @@ trait GotTimingsPhases extends StObject {
 }
 object GotTimingsPhases {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dns: Double,
     download: Double,
     firstByte: Double,
@@ -38,28 +37,20 @@ object GotTimingsPhases {
     __obj.asInstanceOf[GotTimingsPhases]
   }
   
-  @scala.inline
-  implicit class GotTimingsPhasesMutableBuilder[Self <: GotTimingsPhases] (val x: Self) extends AnyVal {
+  extension [Self <: GotTimingsPhases](x: Self) {
     
-    @scala.inline
-    def setDns(value: Double): Self = StObject.set(x, "dns", value.asInstanceOf[js.Any])
+    inline def setDns(value: Double): Self = StObject.set(x, "dns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownload(value: Double): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+    inline def setDownload(value: Double): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstByte(value: Double): Self = StObject.set(x, "firstByte", value.asInstanceOf[js.Any])
+    inline def setFirstByte(value: Double): Self = StObject.set(x, "firstByte", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: Double): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: Double): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTcp(value: Double): Self = StObject.set(x, "tcp", value.asInstanceOf[js.Any])
+    inline def setTcp(value: Double): Self = StObject.set(x, "tcp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWait_(value: Double): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
+    inline def setWait_(value: Double): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
   }
 }

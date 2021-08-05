@@ -132,26 +132,20 @@ object mod {
   }
   object ClientOptions {
     
-    @scala.inline
-    def apply(password: String, username: String): ClientOptions = {
+    inline def apply(password: String, username: String): ClientOptions = {
       val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClientOptions]
     }
     
-    @scala.inline
-    implicit class ClientOptionsMutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ClientOptions](x: Self) {
       
-      @scala.inline
-      def setLength(value: `2048` | `4096`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: `2048` | `4096`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+      inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
   
@@ -165,26 +159,20 @@ object mod {
   }
   object ServerOptions {
     
-    @scala.inline
-    def apply(salt: String, verifier: String): ServerOptions = {
+    inline def apply(salt: String, verifier: String): ServerOptions = {
       val __obj = js.Dynamic.literal(salt = salt.asInstanceOf[js.Any], verifier = verifier.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServerOptions]
     }
     
-    @scala.inline
-    implicit class ServerOptionsMutableBuilder[Self <: ServerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ServerOptions](x: Self) {
       
-      @scala.inline
-      def setLength(value: `2048` | `4096`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: `2048` | `4096`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+      inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
       
-      @scala.inline
-      def setSalt(value: String): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
+      inline def setSalt(value: String): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerifier(value: String): Self = StObject.set(x, "verifier", value.asInstanceOf[js.Any])
+      inline def setVerifier(value: String): Self = StObject.set(x, "verifier", value.asInstanceOf[js.Any])
     }
   }
   
@@ -196,20 +184,16 @@ object mod {
   }
   object Verifier {
     
-    @scala.inline
-    def apply(salt: String, verifier: String): Verifier = {
+    inline def apply(salt: String, verifier: String): Verifier = {
       val __obj = js.Dynamic.literal(salt = salt.asInstanceOf[js.Any], verifier = verifier.asInstanceOf[js.Any])
       __obj.asInstanceOf[Verifier]
     }
     
-    @scala.inline
-    implicit class VerifierMutableBuilder[Self <: Verifier] (val x: Self) extends AnyVal {
+    extension [Self <: Verifier](x: Self) {
       
-      @scala.inline
-      def setSalt(value: String): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
+      inline def setSalt(value: String): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerifier(value: String): Self = StObject.set(x, "verifier", value.asInstanceOf[js.Any])
+      inline def setVerifier(value: String): Self = StObject.set(x, "verifier", value.asInstanceOf[js.Any])
     }
   }
 }

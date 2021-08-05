@@ -12,19 +12,15 @@ trait StateRects extends StObject {
 }
 object StateRects {
   
-  @scala.inline
-  def apply(popper: Rect, reference: Rect): StateRects = {
+  inline def apply(popper: Rect, reference: Rect): StateRects = {
     val __obj = js.Dynamic.literal(popper = popper.asInstanceOf[js.Any], reference = reference.asInstanceOf[js.Any])
     __obj.asInstanceOf[StateRects]
   }
   
-  @scala.inline
-  implicit class StateRectsMutableBuilder[Self <: StateRects] (val x: Self) extends AnyVal {
+  extension [Self <: StateRects](x: Self) {
     
-    @scala.inline
-    def setPopper(value: Rect): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
+    inline def setPopper(value: Rect): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReference(value: Rect): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+    inline def setReference(value: Rect): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
   }
 }

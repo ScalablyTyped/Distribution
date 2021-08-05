@@ -20,8 +20,7 @@ String] */] extends StObject {
 }
 object `19` {
   
-  @scala.inline
-  def apply[EventName /* <: Extract[
+  inline def apply[EventName /* <: Extract[
     /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/stack/types.StackNavigationEventMap */ transitionStart | transitionEnd | gestureStart | gestureEnd | gestureCancel, 
     String
   ] */](): `19`[EventName] = {
@@ -29,18 +28,15 @@ object `19` {
     __obj.asInstanceOf[`19`[EventName]]
   }
   
-  @scala.inline
-  implicit class `19MutableBuilder`[Self <: `19`[?], EventName /* <: Extract[
+  extension [Self <: `19`[?], EventName /* <: Extract[
     /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/stack/types.StackNavigationEventMap */ transitionStart | transitionEnd | gestureStart | gestureEnd | gestureCancel, 
     String
-  ] */] (val x: Self & `19`[EventName]) extends AnyVal {
+  ] */](x: Self & `19`[EventName]) {
     
-    @scala.inline
-    def setData(
+    inline def setData(
       value: /* import warning: importer.ImportType#apply Failed type conversion: tuya-panel-kit.tuya-panel-kit/@react-navigation/stack/types.StackNavigationEventMap[EventName]['data'] */ js.Any
     ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
   }
 }

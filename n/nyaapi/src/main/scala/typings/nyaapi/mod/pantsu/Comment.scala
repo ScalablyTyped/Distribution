@@ -20,8 +20,7 @@ trait Comment extends StObject {
 }
 object Comment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     content: String,
     date: String,
     user_avatar: String,
@@ -33,25 +32,18 @@ object Comment {
     __obj.asInstanceOf[Comment]
   }
   
-  @scala.inline
-  implicit class CommentMutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
+  extension [Self <: Comment](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser_avatar(value: String): Self = StObject.set(x, "user_avatar", value.asInstanceOf[js.Any])
+    inline def setUser_avatar(value: String): Self = StObject.set(x, "user_avatar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser_id(value: Double): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
+    inline def setUser_id(value: Double): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser_status(value: String): Self = StObject.set(x, "user_status", value.asInstanceOf[js.Any])
+    inline def setUser_status(value: String): Self = StObject.set(x, "user_status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

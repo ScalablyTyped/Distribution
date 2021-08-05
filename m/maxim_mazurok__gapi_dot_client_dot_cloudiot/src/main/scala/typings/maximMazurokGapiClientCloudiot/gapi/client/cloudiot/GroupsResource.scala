@@ -21,8 +21,7 @@ trait GroupsResource extends StObject {
 }
 object GroupsResource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     devices: DevicesResource,
     getIamPolicy: (Resource, GetIamPolicyRequest) => Request[Policy],
     setIamPolicy: (Resource, SetIamPolicyRequest) => Request[Policy],
@@ -32,19 +31,14 @@ object GroupsResource {
     __obj.asInstanceOf[GroupsResource]
   }
   
-  @scala.inline
-  implicit class GroupsResourceMutableBuilder[Self <: GroupsResource] (val x: Self) extends AnyVal {
+  extension [Self <: GroupsResource](x: Self) {
     
-    @scala.inline
-    def setDevices(value: DevicesResource): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
+    inline def setDevices(value: DevicesResource): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetIamPolicy(value: (Resource, GetIamPolicyRequest) => Request[Policy]): Self = StObject.set(x, "getIamPolicy", js.Any.fromFunction2(value))
+    inline def setGetIamPolicy(value: (Resource, GetIamPolicyRequest) => Request[Policy]): Self = StObject.set(x, "getIamPolicy", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetIamPolicy(value: (Resource, SetIamPolicyRequest) => Request[Policy]): Self = StObject.set(x, "setIamPolicy", js.Any.fromFunction2(value))
+    inline def setSetIamPolicy(value: (Resource, SetIamPolicyRequest) => Request[Policy]): Self = StObject.set(x, "setIamPolicy", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTestIamPermissions(value: (Resource, TestIamPermissionsRequest) => Request[TestIamPermissionsResponse]): Self = StObject.set(x, "testIamPermissions", js.Any.fromFunction2(value))
+    inline def setTestIamPermissions(value: (Resource, TestIamPermissionsRequest) => Request[TestIamPermissionsResponse]): Self = StObject.set(x, "testIamPermissions", js.Any.fromFunction2(value))
   }
 }

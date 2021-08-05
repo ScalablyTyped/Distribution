@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoBarRow extends StObject
 object MsoBarRow {
   
-  @scala.inline
-  def msoBarRowFirst: `0` = 0.asInstanceOf[`0`]
+  inline def msoBarRowFirst: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def msoBarRowLast: `-1` = -1.asInstanceOf[`-1`]
+  inline def msoBarRowLast: `-1` = -1.asInstanceOf[`-1`]
 }

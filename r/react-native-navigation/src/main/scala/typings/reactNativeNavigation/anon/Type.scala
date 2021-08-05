@@ -16,23 +16,18 @@ trait Type
 }
 object Type {
   
-  @scala.inline
-  def apply(): Type = {
+  inline def apply(): Type = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("decelerate")
     __obj.asInstanceOf[Type]
   }
   
-  @scala.inline
-  implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
+  extension [Self <: Type](x: Self) {
     
-    @scala.inline
-    def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
+    inline def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFactorUndefined: Self = StObject.set(x, "factor", js.undefined)
+    inline def setFactorUndefined: Self = StObject.set(x, "factor", js.undefined)
     
-    @scala.inline
-    def setType(value: decelerate): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: decelerate): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -11,97 +11,81 @@ object cliBoxStrings {
   sealed trait b
     extends StObject
        with MarksKeys
-  @scala.inline
-  def b: b = "b".asInstanceOf[b]
+  inline def b: b = "b".asInstanceOf[b]
   
   @js.native
   sealed trait bottom extends StObject
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
   sealed trait center extends StObject
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
+  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
   sealed trait e
     extends StObject
        with MarksKeys
-  @scala.inline
-  def e: e = "e".asInstanceOf[e]
+  inline def e: e = "e".asInstanceOf[e]
   
   @js.native
   sealed trait left extends StObject
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
   sealed trait middle extends StObject
-  @scala.inline
-  def middle: middle = "middle".asInstanceOf[middle]
+  inline def middle: middle = "middle".asInstanceOf[middle]
   
   @js.native
   sealed trait n
     extends StObject
        with MarksKeys
-  @scala.inline
-  def n: n = "n".asInstanceOf[n]
+  inline def n: n = "n".asInstanceOf[n]
   
   @js.native
   sealed trait ne
     extends StObject
        with MarksKeys
-  @scala.inline
-  def ne: ne = "ne".asInstanceOf[ne]
+  inline def ne: ne = "ne".asInstanceOf[ne]
   
   @js.native
   sealed trait nw
     extends StObject
        with MarksKeys
-  @scala.inline
-  def nw: nw = "nw".asInstanceOf[nw]
+  inline def nw: nw = "nw".asInstanceOf[nw]
   
   @js.native
   sealed trait right extends StObject
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
   sealed trait s
     extends StObject
        with MarksKeys
-  @scala.inline
-  def s: s = "s".asInstanceOf[s]
+  inline def s: s = "s".asInstanceOf[s]
   
   @js.native
   sealed trait se
     extends StObject
        with MarksKeys
-  @scala.inline
-  def se: se = "se".asInstanceOf[se]
+  inline def se: se = "se".asInstanceOf[se]
   
   @js.native
   sealed trait stringify extends StObject
-  @scala.inline
-  def stringify: stringify = "stringify".asInstanceOf[stringify]
+  inline def stringify: stringify = "stringify".asInstanceOf[stringify]
   
   @js.native
   sealed trait sw
     extends StObject
        with MarksKeys
-  @scala.inline
-  def sw: sw = "sw".asInstanceOf[sw]
+  inline def sw: sw = "sw".asInstanceOf[sw]
   
   @js.native
   sealed trait top extends StObject
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
+  inline def top: top = "top".asInstanceOf[top]
   
   @js.native
   sealed trait w
     extends StObject
        with MarksKeys
-  @scala.inline
-  def w: w = "w".asInstanceOf[w]
+  inline def w: w = "w".asInstanceOf[w]
 }

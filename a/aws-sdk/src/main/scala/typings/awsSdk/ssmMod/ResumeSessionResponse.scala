@@ -23,31 +23,23 @@ trait ResumeSessionResponse extends StObject {
 }
 object ResumeSessionResponse {
   
-  @scala.inline
-  def apply(): ResumeSessionResponse = {
+  inline def apply(): ResumeSessionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResumeSessionResponse]
   }
   
-  @scala.inline
-  implicit class ResumeSessionResponseMutableBuilder[Self <: ResumeSessionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ResumeSessionResponse](x: Self) {
     
-    @scala.inline
-    def setSessionId(value: SessionId): Self = StObject.set(x, "SessionId", value.asInstanceOf[js.Any])
+    inline def setSessionId(value: SessionId): Self = StObject.set(x, "SessionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionIdUndefined: Self = StObject.set(x, "SessionId", js.undefined)
+    inline def setSessionIdUndefined: Self = StObject.set(x, "SessionId", js.undefined)
     
-    @scala.inline
-    def setStreamUrl(value: StreamUrl): Self = StObject.set(x, "StreamUrl", value.asInstanceOf[js.Any])
+    inline def setStreamUrl(value: StreamUrl): Self = StObject.set(x, "StreamUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamUrlUndefined: Self = StObject.set(x, "StreamUrl", js.undefined)
+    inline def setStreamUrlUndefined: Self = StObject.set(x, "StreamUrl", js.undefined)
     
-    @scala.inline
-    def setTokenValue(value: TokenValue): Self = StObject.set(x, "TokenValue", value.asInstanceOf[js.Any])
+    inline def setTokenValue(value: TokenValue): Self = StObject.set(x, "TokenValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenValueUndefined: Self = StObject.set(x, "TokenValue", js.undefined)
+    inline def setTokenValueUndefined: Self = StObject.set(x, "TokenValue", js.undefined)
   }
 }

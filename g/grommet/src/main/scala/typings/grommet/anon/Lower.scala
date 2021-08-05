@@ -12,25 +12,19 @@ trait Lower extends StObject {
 }
 object Lower {
   
-  @scala.inline
-  def apply(): Lower = {
+  inline def apply(): Lower = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Lower]
   }
   
-  @scala.inline
-  implicit class LowerMutableBuilder[Self <: Lower] (val x: Self) extends AnyVal {
+  extension [Self <: Lower](x: Self) {
     
-    @scala.inline
-    def setLower(value: String): Self = StObject.set(x, "lower", value.asInstanceOf[js.Any])
+    inline def setLower(value: String): Self = StObject.set(x, "lower", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowerUndefined: Self = StObject.set(x, "lower", js.undefined)
+    inline def setLowerUndefined: Self = StObject.set(x, "lower", js.undefined)
     
-    @scala.inline
-    def setUpper(value: String): Self = StObject.set(x, "upper", value.asInstanceOf[js.Any])
+    inline def setUpper(value: String): Self = StObject.set(x, "upper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpperUndefined: Self = StObject.set(x, "upper", js.undefined)
+    inline def setUpperUndefined: Self = StObject.set(x, "upper", js.undefined)
   }
 }

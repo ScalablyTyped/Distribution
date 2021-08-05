@@ -14,16 +14,13 @@ trait AnalyticsCallOptions extends StObject {
 }
 object AnalyticsCallOptions {
   
-  @scala.inline
-  def apply(global: Boolean): AnalyticsCallOptions = {
+  inline def apply(global: Boolean): AnalyticsCallOptions = {
     val __obj = js.Dynamic.literal(global = global.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyticsCallOptions]
   }
   
-  @scala.inline
-  implicit class AnalyticsCallOptionsMutableBuilder[Self <: AnalyticsCallOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AnalyticsCallOptions](x: Self) {
     
-    @scala.inline
-    def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+    inline def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
   }
 }

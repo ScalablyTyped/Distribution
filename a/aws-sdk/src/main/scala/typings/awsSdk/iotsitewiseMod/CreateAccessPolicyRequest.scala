@@ -33,34 +33,25 @@ trait CreateAccessPolicyRequest extends StObject {
 }
 object CreateAccessPolicyRequest {
   
-  @scala.inline
-  def apply(accessPolicyIdentity: Identity, accessPolicyPermission: Permission, accessPolicyResource: Resource): CreateAccessPolicyRequest = {
+  inline def apply(accessPolicyIdentity: Identity, accessPolicyPermission: Permission, accessPolicyResource: Resource): CreateAccessPolicyRequest = {
     val __obj = js.Dynamic.literal(accessPolicyIdentity = accessPolicyIdentity.asInstanceOf[js.Any], accessPolicyPermission = accessPolicyPermission.asInstanceOf[js.Any], accessPolicyResource = accessPolicyResource.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAccessPolicyRequest]
   }
   
-  @scala.inline
-  implicit class CreateAccessPolicyRequestMutableBuilder[Self <: CreateAccessPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateAccessPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setAccessPolicyIdentity(value: Identity): Self = StObject.set(x, "accessPolicyIdentity", value.asInstanceOf[js.Any])
+    inline def setAccessPolicyIdentity(value: Identity): Self = StObject.set(x, "accessPolicyIdentity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessPolicyPermission(value: Permission): Self = StObject.set(x, "accessPolicyPermission", value.asInstanceOf[js.Any])
+    inline def setAccessPolicyPermission(value: Permission): Self = StObject.set(x, "accessPolicyPermission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessPolicyResource(value: Resource): Self = StObject.set(x, "accessPolicyResource", value.asInstanceOf[js.Any])
+    inline def setAccessPolicyResource(value: Resource): Self = StObject.set(x, "accessPolicyResource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

@@ -19,8 +19,7 @@ trait CellValueChangedEvent
 }
 object CellValueChangedEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     api: GridApi,
     colDef: ColDef,
     column: Column,
@@ -40,13 +39,10 @@ object CellValueChangedEvent {
     __obj.asInstanceOf[CellValueChangedEvent]
   }
   
-  @scala.inline
-  implicit class CellValueChangedEventMutableBuilder[Self <: CellValueChangedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: CellValueChangedEvent](x: Self) {
     
-    @scala.inline
-    def setNewValue(value: js.Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: js.Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValue(value: js.Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+    inline def setOldValue(value: js.Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
   }
 }

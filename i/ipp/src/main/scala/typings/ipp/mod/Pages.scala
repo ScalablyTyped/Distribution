@@ -12,25 +12,19 @@ trait Pages extends StObject {
 }
 object Pages {
   
-  @scala.inline
-  def apply(): Pages = {
+  inline def apply(): Pages = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Pages]
   }
   
-  @scala.inline
-  implicit class PagesMutableBuilder[Self <: Pages] (val x: Self) extends AnyVal {
+  extension [Self <: Pages](x: Self) {
     
-    @scala.inline
-    def `setFull-color`(value: Double): Self = StObject.set(x, "full-color", value.asInstanceOf[js.Any])
+    inline def `setFull-color`(value: Double): Self = StObject.set(x, "full-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setFull-colorUndefined`: Self = StObject.set(x, "full-color", js.undefined)
+    inline def `setFull-colorUndefined`: Self = StObject.set(x, "full-color", js.undefined)
     
-    @scala.inline
-    def setMonochrome(value: Double): Self = StObject.set(x, "monochrome", value.asInstanceOf[js.Any])
+    inline def setMonochrome(value: Double): Self = StObject.set(x, "monochrome", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonochromeUndefined: Self = StObject.set(x, "monochrome", js.undefined)
+    inline def setMonochromeUndefined: Self = StObject.set(x, "monochrome", js.undefined)
   }
 }

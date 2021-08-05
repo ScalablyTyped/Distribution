@@ -19,22 +19,17 @@ trait PhotoImportSidecar extends StObject {
 }
 object PhotoImportSidecar {
   
-  @scala.inline
-  def apply(date: Date, name: String, sizeInBytes: Double): PhotoImportSidecar = {
+  inline def apply(date: Date, name: String, sizeInBytes: Double): PhotoImportSidecar = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], sizeInBytes = sizeInBytes.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhotoImportSidecar]
   }
   
-  @scala.inline
-  implicit class PhotoImportSidecarMutableBuilder[Self <: PhotoImportSidecar] (val x: Self) extends AnyVal {
+  extension [Self <: PhotoImportSidecar](x: Self) {
     
-    @scala.inline
-    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeInBytes(value: Double): Self = StObject.set(x, "sizeInBytes", value.asInstanceOf[js.Any])
+    inline def setSizeInBytes(value: Double): Self = StObject.set(x, "sizeInBytes", value.asInstanceOf[js.Any])
   }
 }

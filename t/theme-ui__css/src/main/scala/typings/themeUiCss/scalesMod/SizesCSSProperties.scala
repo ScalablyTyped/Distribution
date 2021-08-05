@@ -213,97 +213,67 @@ trait SizesCSSProperties extends StObject {
 }
 object SizesCSSProperties {
   
-  @scala.inline
-  def apply(): SizesCSSProperties = {
+  inline def apply(): SizesCSSProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SizesCSSProperties]
   }
   
-  @scala.inline
-  implicit class SizesCSSPropertiesMutableBuilder[Self <: SizesCSSProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SizesCSSProperties](x: Self) {
     
-    @scala.inline
-    def setBlockSize(value: Sizes): Self = StObject.set(x, "blockSize", value.asInstanceOf[js.Any])
+    inline def setBlockSize(value: Sizes): Self = StObject.set(x, "blockSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockSizeUndefined: Self = StObject.set(x, "blockSize", js.undefined)
+    inline def setBlockSizeUndefined: Self = StObject.set(x, "blockSize", js.undefined)
     
-    @scala.inline
-    def setFlexBasis(value: Sizes): Self = StObject.set(x, "flexBasis", value.asInstanceOf[js.Any])
+    inline def setFlexBasis(value: Sizes): Self = StObject.set(x, "flexBasis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlexBasisUndefined: Self = StObject.set(x, "flexBasis", js.undefined)
+    inline def setFlexBasisUndefined: Self = StObject.set(x, "flexBasis", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Sizes): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Sizes): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setInlineSize(value: Sizes): Self = StObject.set(x, "inlineSize", value.asInstanceOf[js.Any])
+    inline def setInlineSize(value: Sizes): Self = StObject.set(x, "inlineSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInlineSizeUndefined: Self = StObject.set(x, "inlineSize", js.undefined)
+    inline def setInlineSizeUndefined: Self = StObject.set(x, "inlineSize", js.undefined)
     
-    @scala.inline
-    def setMaxBlockSize(value: Sizes): Self = StObject.set(x, "maxBlockSize", value.asInstanceOf[js.Any])
+    inline def setMaxBlockSize(value: Sizes): Self = StObject.set(x, "maxBlockSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxBlockSizeUndefined: Self = StObject.set(x, "maxBlockSize", js.undefined)
+    inline def setMaxBlockSizeUndefined: Self = StObject.set(x, "maxBlockSize", js.undefined)
     
-    @scala.inline
-    def setMaxHeight(value: Sizes): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+    inline def setMaxHeight(value: Sizes): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+    inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
     
-    @scala.inline
-    def setMaxInlineSize(value: Sizes): Self = StObject.set(x, "maxInlineSize", value.asInstanceOf[js.Any])
+    inline def setMaxInlineSize(value: Sizes): Self = StObject.set(x, "maxInlineSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxInlineSizeUndefined: Self = StObject.set(x, "maxInlineSize", js.undefined)
+    inline def setMaxInlineSizeUndefined: Self = StObject.set(x, "maxInlineSize", js.undefined)
     
-    @scala.inline
-    def setMaxWidth(value: Sizes): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    inline def setMaxWidth(value: Sizes): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+    inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
-    @scala.inline
-    def setMinBlockSize(value: Sizes): Self = StObject.set(x, "minBlockSize", value.asInstanceOf[js.Any])
+    inline def setMinBlockSize(value: Sizes): Self = StObject.set(x, "minBlockSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinBlockSizeUndefined: Self = StObject.set(x, "minBlockSize", js.undefined)
+    inline def setMinBlockSizeUndefined: Self = StObject.set(x, "minBlockSize", js.undefined)
     
-    @scala.inline
-    def setMinHeight(value: Sizes): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+    inline def setMinHeight(value: Sizes): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
+    inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
     
-    @scala.inline
-    def setMinInlineSize(value: Sizes): Self = StObject.set(x, "minInlineSize", value.asInstanceOf[js.Any])
+    inline def setMinInlineSize(value: Sizes): Self = StObject.set(x, "minInlineSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinInlineSizeUndefined: Self = StObject.set(x, "minInlineSize", js.undefined)
+    inline def setMinInlineSizeUndefined: Self = StObject.set(x, "minInlineSize", js.undefined)
     
-    @scala.inline
-    def setMinWidth(value: Sizes): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+    inline def setMinWidth(value: Sizes): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+    inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
-    @scala.inline
-    def setSize(value: Sizes): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Sizes): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Sizes): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Sizes): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

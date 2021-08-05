@@ -25,41 +25,30 @@ object typesMod {
   }
   object BootstrapNode {
     
-    @scala.inline
-    def apply(comment: String, id: String, ip: String, location: String, port: Double | String): BootstrapNode = {
+    inline def apply(comment: String, id: String, ip: String, location: String, port: Double | String): BootstrapNode = {
       val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], ip = ip.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[BootstrapNode]
     }
     
-    @scala.inline
-    implicit class BootstrapNodeMutableBuilder[Self <: BootstrapNode] (val x: Self) extends AnyVal {
+    extension [Self <: BootstrapNode](x: Self) {
       
-      @scala.inline
-      def setChainId(value: Double): Self = StObject.set(x, "chainId", value.asInstanceOf[js.Any])
+      inline def setChainId(value: Double): Self = StObject.set(x, "chainId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChainIdUndefined: Self = StObject.set(x, "chainId", js.undefined)
+      inline def setChainIdUndefined: Self = StObject.set(x, "chainId", js.undefined)
       
-      @scala.inline
-      def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+      inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+      inline def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
+      inline def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double | String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double | String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     }
   }
   
@@ -83,8 +72,7 @@ object typesMod {
   }
   object Chain {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bootstrapNodes: js.Array[BootstrapNode],
       chainId: Double,
       comment: String,
@@ -98,38 +86,27 @@ object typesMod {
       __obj.asInstanceOf[Chain]
     }
     
-    @scala.inline
-    implicit class ChainMutableBuilder[Self <: Chain] (val x: Self) extends AnyVal {
+    extension [Self <: Chain](x: Self) {
       
-      @scala.inline
-      def setBootstrapNodes(value: js.Array[BootstrapNode]): Self = StObject.set(x, "bootstrapNodes", value.asInstanceOf[js.Any])
+      inline def setBootstrapNodes(value: js.Array[BootstrapNode]): Self = StObject.set(x, "bootstrapNodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBootstrapNodesVarargs(value: BootstrapNode*): Self = StObject.set(x, "bootstrapNodes", js.Array(value :_*))
+      inline def setBootstrapNodesVarargs(value: BootstrapNode*): Self = StObject.set(x, "bootstrapNodes", js.Array(value :_*))
       
-      @scala.inline
-      def setChainId(value: Double): Self = StObject.set(x, "chainId", value.asInstanceOf[js.Any])
+      inline def setChainId(value: Double): Self = StObject.set(x, "chainId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenesis(value: GenesisBlock): Self = StObject.set(x, "genesis", value.asInstanceOf[js.Any])
+      inline def setGenesis(value: GenesisBlock): Self = StObject.set(x, "genesis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHardforks(value: js.Array[Hardfork]): Self = StObject.set(x, "hardforks", value.asInstanceOf[js.Any])
+      inline def setHardforks(value: js.Array[Hardfork]): Self = StObject.set(x, "hardforks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHardforksVarargs(value: Hardfork*): Self = StObject.set(x, "hardforks", js.Array(value :_*))
+      inline def setHardforksVarargs(value: Hardfork*): Self = StObject.set(x, "hardforks", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkId(value: Double): Self = StObject.set(x, "networkId", value.asInstanceOf[js.Any])
+      inline def setNetworkId(value: Double): Self = StObject.set(x, "networkId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -151,8 +128,7 @@ object typesMod {
   }
   object GenesisBlock {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       difficulty: Double,
       extraData: String,
       gasLimit: Double,
@@ -164,32 +140,23 @@ object typesMod {
       __obj.asInstanceOf[GenesisBlock]
     }
     
-    @scala.inline
-    implicit class GenesisBlockMutableBuilder[Self <: GenesisBlock] (val x: Self) extends AnyVal {
+    extension [Self <: GenesisBlock](x: Self) {
       
-      @scala.inline
-      def setDifficulty(value: Double): Self = StObject.set(x, "difficulty", value.asInstanceOf[js.Any])
+      inline def setDifficulty(value: Double): Self = StObject.set(x, "difficulty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraData(value: String): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
+      inline def setExtraData(value: String): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGasLimit(value: Double): Self = StObject.set(x, "gasLimit", value.asInstanceOf[js.Any])
+      inline def setGasLimit(value: Double): Self = StObject.set(x, "gasLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateRoot(value: String): Self = StObject.set(x, "stateRoot", value.asInstanceOf[js.Any])
+      inline def setStateRoot(value: String): Self = StObject.set(x, "stateRoot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestampNull: Self = StObject.set(x, "timestamp", null)
+      inline def setTimestampNull: Self = StObject.set(x, "timestamp", null)
     }
   }
   
@@ -205,29 +172,22 @@ object typesMod {
   }
   object Hardfork {
     
-    @scala.inline
-    def apply(consensus: String, finality: js.Any, name: String): Hardfork = {
+    inline def apply(consensus: String, finality: js.Any, name: String): Hardfork = {
       val __obj = js.Dynamic.literal(consensus = consensus.asInstanceOf[js.Any], finality = finality.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], block = null)
       __obj.asInstanceOf[Hardfork]
     }
     
-    @scala.inline
-    implicit class HardforkMutableBuilder[Self <: Hardfork] (val x: Self) extends AnyVal {
+    extension [Self <: Hardfork](x: Self) {
       
-      @scala.inline
-      def setBlock(value: Double): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+      inline def setBlock(value: Double): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockNull: Self = StObject.set(x, "block", null)
+      inline def setBlockNull: Self = StObject.set(x, "block", null)
       
-      @scala.inline
-      def setConsensus(value: String): Self = StObject.set(x, "consensus", value.asInstanceOf[js.Any])
+      inline def setConsensus(value: String): Self = StObject.set(x, "consensus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFinality(value: js.Any): Self = StObject.set(x, "finality", value.asInstanceOf[js.Any])
+      inline def setFinality(value: js.Any): Self = StObject.set(x, "finality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -239,17 +199,14 @@ object typesMod {
   }
   object chainsType {
     
-    @scala.inline
-    def apply(names: StringDictionary[String]): chainsType = {
+    inline def apply(names: StringDictionary[String]): chainsType = {
       val __obj = js.Dynamic.literal(names = names.asInstanceOf[js.Any])
       __obj.asInstanceOf[chainsType]
     }
     
-    @scala.inline
-    implicit class chainsTypeMutableBuilder[Self <: chainsType] (val x: Self) extends AnyVal {
+    extension [Self <: chainsType](x: Self) {
       
-      @scala.inline
-      def setNames(value: StringDictionary[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+      inline def setNames(value: StringDictionary[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     }
   }
   
@@ -261,17 +218,14 @@ object typesMod {
   }
   object genesisStatesType {
     
-    @scala.inline
-    def apply(names: StringDictionary[String]): genesisStatesType = {
+    inline def apply(names: StringDictionary[String]): genesisStatesType = {
       val __obj = js.Dynamic.literal(names = names.asInstanceOf[js.Any])
       __obj.asInstanceOf[genesisStatesType]
     }
     
-    @scala.inline
-    implicit class genesisStatesTypeMutableBuilder[Self <: genesisStatesType] (val x: Self) extends AnyVal {
+    extension [Self <: genesisStatesType](x: Self) {
       
-      @scala.inline
-      def setNames(value: StringDictionary[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+      inline def setNames(value: StringDictionary[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     }
   }
 }

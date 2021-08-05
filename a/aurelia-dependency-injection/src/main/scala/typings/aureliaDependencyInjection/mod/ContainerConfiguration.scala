@@ -18,27 +18,21 @@ trait ContainerConfiguration extends StObject {
 }
 object ContainerConfiguration {
   
-  @scala.inline
-  def apply(): ContainerConfiguration = {
+  inline def apply(): ContainerConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContainerConfiguration]
   }
   
-  @scala.inline
-  implicit class ContainerConfigurationMutableBuilder[Self <: ContainerConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerConfiguration](x: Self) {
     
-    @scala.inline
-    def setHandlers(value: Map[js.Any, js.Any]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
+    inline def setHandlers(value: Map[js.Any, js.Any]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandlersUndefined: Self = StObject.set(x, "handlers", js.undefined)
+    inline def setHandlersUndefined: Self = StObject.set(x, "handlers", js.undefined)
     
-    @scala.inline
-    def setOnHandlerCreated(
+    inline def setOnHandlerCreated(
       value: /* handler */ InvocationHandler[js.Any, js.Any, js.Any] => InvocationHandler[js.Any, js.Any, js.Any]
     ): Self = StObject.set(x, "onHandlerCreated", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnHandlerCreatedUndefined: Self = StObject.set(x, "onHandlerCreated", js.undefined)
+    inline def setOnHandlerCreatedUndefined: Self = StObject.set(x, "onHandlerCreated", js.undefined)
   }
 }

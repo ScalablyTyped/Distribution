@@ -13,6 +13,5 @@ object expm1Mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def expm1[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("expm1")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def expm1[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("expm1")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 }

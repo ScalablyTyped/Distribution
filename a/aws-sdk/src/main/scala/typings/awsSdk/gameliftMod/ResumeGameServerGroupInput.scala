@@ -18,22 +18,17 @@ trait ResumeGameServerGroupInput extends StObject {
 }
 object ResumeGameServerGroupInput {
   
-  @scala.inline
-  def apply(GameServerGroupName: GameServerGroupNameOrArn, ResumeActions: GameServerGroupActions): ResumeGameServerGroupInput = {
+  inline def apply(GameServerGroupName: GameServerGroupNameOrArn, ResumeActions: GameServerGroupActions): ResumeGameServerGroupInput = {
     val __obj = js.Dynamic.literal(GameServerGroupName = GameServerGroupName.asInstanceOf[js.Any], ResumeActions = ResumeActions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResumeGameServerGroupInput]
   }
   
-  @scala.inline
-  implicit class ResumeGameServerGroupInputMutableBuilder[Self <: ResumeGameServerGroupInput] (val x: Self) extends AnyVal {
+  extension [Self <: ResumeGameServerGroupInput](x: Self) {
     
-    @scala.inline
-    def setGameServerGroupName(value: GameServerGroupNameOrArn): Self = StObject.set(x, "GameServerGroupName", value.asInstanceOf[js.Any])
+    inline def setGameServerGroupName(value: GameServerGroupNameOrArn): Self = StObject.set(x, "GameServerGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResumeActions(value: GameServerGroupActions): Self = StObject.set(x, "ResumeActions", value.asInstanceOf[js.Any])
+    inline def setResumeActions(value: GameServerGroupActions): Self = StObject.set(x, "ResumeActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResumeActionsVarargs(value: GameServerGroupAction*): Self = StObject.set(x, "ResumeActions", js.Array(value :_*))
+    inline def setResumeActionsVarargs(value: GameServerGroupAction*): Self = StObject.set(x, "ResumeActions", js.Array(value :_*))
   }
 }

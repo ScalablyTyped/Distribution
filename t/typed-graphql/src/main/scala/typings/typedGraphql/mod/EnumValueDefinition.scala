@@ -16,25 +16,19 @@ trait EnumValueDefinition
 }
 object EnumValueDefinition {
   
-  @scala.inline
-  def apply(kind: String, name: Name): EnumValueDefinition = {
+  inline def apply(kind: String, name: Name): EnumValueDefinition = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValueDefinition]
   }
   
-  @scala.inline
-  implicit class EnumValueDefinitionMutableBuilder[Self <: EnumValueDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValueDefinition](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoc(value: Location): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
+    inline def setLoc(value: Location): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
+    inline def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

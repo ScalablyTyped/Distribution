@@ -10,8 +10,7 @@ trait PackageId
      with IPackageId
 object PackageId {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     architecture: ProcessorArchitecture,
     familyName: String,
     fullName: String,

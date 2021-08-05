@@ -45,7 +45,7 @@ object writeTreeMod {
       * @type {!Array.<!WriteRecord>}
       * @private
       */
-    var allWrites_ : js.Any = js.native
+    /* private */ var allWrites_ : js.Any = js.native
     
     /**
       * Returns a complete child for a given server snap after applying all user writes or null if there is no
@@ -167,9 +167,9 @@ object writeTreeMod {
       */
     def getWrite(writeId: Double): WriteRecord | Null = js.native
     
-    var lastWriteId_ : js.Any = js.native
+    /* private */ var lastWriteId_ : js.Any = js.native
     
-    var recordContainsPath_ : js.Any = js.native
+    /* private */ var recordContainsPath_ : js.Any = js.native
     
     /**
       * Remove a write (either an overwrite or merge) that has been successfully acknowledge by the server. Recalculates
@@ -184,7 +184,7 @@ object writeTreeMod {
     /**
       * Re-layer the writes and merges into a tree so we can efficiently calculate event snapshots
       */
-    var resetTree_ : js.Any = js.native
+    /* private */ var resetTree_ : js.Any = js.native
     
     /**
       * Returns a node if there is a complete overwrite for this path. More specifically, if there is a write at
@@ -200,7 +200,7 @@ object writeTreeMod {
       * @type {!CompoundWrite}
       * @private
       */
-    var visibleWrites_ : js.Any = js.native
+    /* private */ var visibleWrites_ : js.Any = js.native
   }
   /* static members */
   object WriteTree {
@@ -215,8 +215,7 @@ object writeTreeMod {
     @JSImport("@firebase/database/dist/src/core/WriteTree", "WriteTree.DefaultFilter_")
     @js.native
     def DefaultFilter_ : js.Any = js.native
-    @scala.inline
-    def DefaultFilter__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultFilter_")(x.asInstanceOf[js.Any])
+    inline def DefaultFilter__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultFilter_")(x.asInstanceOf[js.Any])
     
     /**
       * Static method. Given an array of WriteRecords, a filter for which ones to include, and a path, construct the tree of
@@ -225,8 +224,7 @@ object writeTreeMod {
     @JSImport("@firebase/database/dist/src/core/WriteTree", "WriteTree.layerTree_")
     @js.native
     def layerTree_ : js.Any = js.native
-    @scala.inline
-    def layerTree__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("layerTree_")(x.asInstanceOf[js.Any])
+    inline def layerTree__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("layerTree_")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@firebase/database/dist/src/core/WriteTree", "WriteTreeRef")
@@ -341,7 +339,7 @@ object writeTreeMod {
       * @private
       * @const
       */
-    val treePath_ : js.Any = js.native
+    /* private */ val treePath_ : js.Any = js.native
     
     /**
       * * A reference to the actual tree of write data. All methods are pass-through to the tree, but with the appropriate
@@ -354,7 +352,7 @@ object writeTreeMod {
       * @private
       * @const
       */
-    val writeTree_ : js.Any = js.native
+    /* private */ val writeTree_ : js.Any = js.native
   }
   
   trait WriteRecord extends StObject {
@@ -371,41 +369,30 @@ object writeTreeMod {
   }
   object WriteRecord {
     
-    @scala.inline
-    def apply(path: Path, visible: Boolean, writeId: Double): WriteRecord = {
+    inline def apply(path: Path, visible: Boolean, writeId: Double): WriteRecord = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], writeId = writeId.asInstanceOf[js.Any])
       __obj.asInstanceOf[WriteRecord]
     }
     
-    @scala.inline
-    implicit class WriteRecordMutableBuilder[Self <: WriteRecord] (val x: Self) extends AnyVal {
+    extension [Self <: WriteRecord](x: Self) {
       
-      @scala.inline
-      def setChildren(value: StringDictionary[Node]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: StringDictionary[Node]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenNull: Self = StObject.set(x, "children", null)
+      inline def setChildrenNull: Self = StObject.set(x, "children", null)
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setPath(value: Path): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: Path): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnap(value: Node): Self = StObject.set(x, "snap", value.asInstanceOf[js.Any])
+      inline def setSnap(value: Node): Self = StObject.set(x, "snap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnapNull: Self = StObject.set(x, "snap", null)
+      inline def setSnapNull: Self = StObject.set(x, "snap", null)
       
-      @scala.inline
-      def setSnapUndefined: Self = StObject.set(x, "snap", js.undefined)
+      inline def setSnapUndefined: Self = StObject.set(x, "snap", js.undefined)
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteId(value: Double): Self = StObject.set(x, "writeId", value.asInstanceOf[js.Any])
+      inline def setWriteId(value: Double): Self = StObject.set(x, "writeId", value.asInstanceOf[js.Any])
     }
   }
 }

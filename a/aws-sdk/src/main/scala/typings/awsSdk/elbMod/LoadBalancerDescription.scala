@@ -88,127 +88,87 @@ trait LoadBalancerDescription extends StObject {
 }
 object LoadBalancerDescription {
   
-  @scala.inline
-  def apply(): LoadBalancerDescription = {
+  inline def apply(): LoadBalancerDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoadBalancerDescription]
   }
   
-  @scala.inline
-  implicit class LoadBalancerDescriptionMutableBuilder[Self <: LoadBalancerDescription] (val x: Self) extends AnyVal {
+  extension [Self <: LoadBalancerDescription](x: Self) {
     
-    @scala.inline
-    def setAvailabilityZones(value: AvailabilityZones): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZones(value: AvailabilityZones): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
+    inline def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
     
-    @scala.inline
-    def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
+    inline def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
     
-    @scala.inline
-    def setBackendServerDescriptions(value: BackendServerDescriptions): Self = StObject.set(x, "BackendServerDescriptions", value.asInstanceOf[js.Any])
+    inline def setBackendServerDescriptions(value: BackendServerDescriptions): Self = StObject.set(x, "BackendServerDescriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackendServerDescriptionsUndefined: Self = StObject.set(x, "BackendServerDescriptions", js.undefined)
+    inline def setBackendServerDescriptionsUndefined: Self = StObject.set(x, "BackendServerDescriptions", js.undefined)
     
-    @scala.inline
-    def setBackendServerDescriptionsVarargs(value: BackendServerDescription*): Self = StObject.set(x, "BackendServerDescriptions", js.Array(value :_*))
+    inline def setBackendServerDescriptionsVarargs(value: BackendServerDescription*): Self = StObject.set(x, "BackendServerDescriptions", js.Array(value :_*))
     
-    @scala.inline
-    def setCanonicalHostedZoneName(value: DNSName): Self = StObject.set(x, "CanonicalHostedZoneName", value.asInstanceOf[js.Any])
+    inline def setCanonicalHostedZoneName(value: DNSName): Self = StObject.set(x, "CanonicalHostedZoneName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanonicalHostedZoneNameID(value: DNSName): Self = StObject.set(x, "CanonicalHostedZoneNameID", value.asInstanceOf[js.Any])
+    inline def setCanonicalHostedZoneNameID(value: DNSName): Self = StObject.set(x, "CanonicalHostedZoneNameID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanonicalHostedZoneNameIDUndefined: Self = StObject.set(x, "CanonicalHostedZoneNameID", js.undefined)
+    inline def setCanonicalHostedZoneNameIDUndefined: Self = StObject.set(x, "CanonicalHostedZoneNameID", js.undefined)
     
-    @scala.inline
-    def setCanonicalHostedZoneNameUndefined: Self = StObject.set(x, "CanonicalHostedZoneName", js.undefined)
+    inline def setCanonicalHostedZoneNameUndefined: Self = StObject.set(x, "CanonicalHostedZoneName", js.undefined)
     
-    @scala.inline
-    def setCreatedTime(value: CreatedTime): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: CreatedTime): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
+    inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
-    @scala.inline
-    def setDNSName(value: DNSName): Self = StObject.set(x, "DNSName", value.asInstanceOf[js.Any])
+    inline def setDNSName(value: DNSName): Self = StObject.set(x, "DNSName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDNSNameUndefined: Self = StObject.set(x, "DNSName", js.undefined)
+    inline def setDNSNameUndefined: Self = StObject.set(x, "DNSName", js.undefined)
     
-    @scala.inline
-    def setHealthCheck(value: HealthCheck): Self = StObject.set(x, "HealthCheck", value.asInstanceOf[js.Any])
+    inline def setHealthCheck(value: HealthCheck): Self = StObject.set(x, "HealthCheck", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthCheckUndefined: Self = StObject.set(x, "HealthCheck", js.undefined)
+    inline def setHealthCheckUndefined: Self = StObject.set(x, "HealthCheck", js.undefined)
     
-    @scala.inline
-    def setInstances(value: Instances): Self = StObject.set(x, "Instances", value.asInstanceOf[js.Any])
+    inline def setInstances(value: Instances): Self = StObject.set(x, "Instances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancesUndefined: Self = StObject.set(x, "Instances", js.undefined)
+    inline def setInstancesUndefined: Self = StObject.set(x, "Instances", js.undefined)
     
-    @scala.inline
-    def setInstancesVarargs(value: Instance*): Self = StObject.set(x, "Instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: Instance*): Self = StObject.set(x, "Instances", js.Array(value :_*))
     
-    @scala.inline
-    def setListenerDescriptions(value: ListenerDescriptions): Self = StObject.set(x, "ListenerDescriptions", value.asInstanceOf[js.Any])
+    inline def setListenerDescriptions(value: ListenerDescriptions): Self = StObject.set(x, "ListenerDescriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListenerDescriptionsUndefined: Self = StObject.set(x, "ListenerDescriptions", js.undefined)
+    inline def setListenerDescriptionsUndefined: Self = StObject.set(x, "ListenerDescriptions", js.undefined)
     
-    @scala.inline
-    def setListenerDescriptionsVarargs(value: ListenerDescription*): Self = StObject.set(x, "ListenerDescriptions", js.Array(value :_*))
+    inline def setListenerDescriptionsVarargs(value: ListenerDescription*): Self = StObject.set(x, "ListenerDescriptions", js.Array(value :_*))
     
-    @scala.inline
-    def setLoadBalancerName(value: AccessPointName): Self = StObject.set(x, "LoadBalancerName", value.asInstanceOf[js.Any])
+    inline def setLoadBalancerName(value: AccessPointName): Self = StObject.set(x, "LoadBalancerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadBalancerNameUndefined: Self = StObject.set(x, "LoadBalancerName", js.undefined)
+    inline def setLoadBalancerNameUndefined: Self = StObject.set(x, "LoadBalancerName", js.undefined)
     
-    @scala.inline
-    def setPolicies(value: Policies): Self = StObject.set(x, "Policies", value.asInstanceOf[js.Any])
+    inline def setPolicies(value: Policies): Self = StObject.set(x, "Policies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoliciesUndefined: Self = StObject.set(x, "Policies", js.undefined)
+    inline def setPoliciesUndefined: Self = StObject.set(x, "Policies", js.undefined)
     
-    @scala.inline
-    def setScheme(value: LoadBalancerScheme): Self = StObject.set(x, "Scheme", value.asInstanceOf[js.Any])
+    inline def setScheme(value: LoadBalancerScheme): Self = StObject.set(x, "Scheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemeUndefined: Self = StObject.set(x, "Scheme", js.undefined)
+    inline def setSchemeUndefined: Self = StObject.set(x, "Scheme", js.undefined)
     
-    @scala.inline
-    def setSecurityGroups(value: SecurityGroups): Self = StObject.set(x, "SecurityGroups", value.asInstanceOf[js.Any])
+    inline def setSecurityGroups(value: SecurityGroups): Self = StObject.set(x, "SecurityGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
+    inline def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
     
-    @scala.inline
-    def setSecurityGroupsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
+    inline def setSecurityGroupsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setSourceSecurityGroup(value: SourceSecurityGroup): Self = StObject.set(x, "SourceSecurityGroup", value.asInstanceOf[js.Any])
+    inline def setSourceSecurityGroup(value: SourceSecurityGroup): Self = StObject.set(x, "SourceSecurityGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceSecurityGroupUndefined: Self = StObject.set(x, "SourceSecurityGroup", js.undefined)
+    inline def setSourceSecurityGroupUndefined: Self = StObject.set(x, "SourceSecurityGroup", js.undefined)
     
-    @scala.inline
-    def setSubnets(value: Subnets): Self = StObject.set(x, "Subnets", value.asInstanceOf[js.Any])
+    inline def setSubnets(value: Subnets): Self = StObject.set(x, "Subnets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetsUndefined: Self = StObject.set(x, "Subnets", js.undefined)
+    inline def setSubnetsUndefined: Self = StObject.set(x, "Subnets", js.undefined)
     
-    @scala.inline
-    def setSubnetsVarargs(value: SubnetId*): Self = StObject.set(x, "Subnets", js.Array(value :_*))
+    inline def setSubnetsVarargs(value: SubnetId*): Self = StObject.set(x, "Subnets", js.Array(value :_*))
     
-    @scala.inline
-    def setVPCId(value: VPCId): Self = StObject.set(x, "VPCId", value.asInstanceOf[js.Any])
+    inline def setVPCId(value: VPCId): Self = StObject.set(x, "VPCId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVPCIdUndefined: Self = StObject.set(x, "VPCId", js.undefined)
+    inline def setVPCIdUndefined: Self = StObject.set(x, "VPCId", js.undefined)
   }
 }

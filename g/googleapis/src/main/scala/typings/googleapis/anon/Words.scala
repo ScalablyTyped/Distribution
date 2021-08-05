@@ -12,28 +12,21 @@ trait Words extends StObject {
 }
 object Words {
   
-  @scala.inline
-  def apply(): Words = {
+  inline def apply(): Words = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Words]
   }
   
-  @scala.inline
-  implicit class WordsMutableBuilder[Self <: Words] (val x: Self) extends AnyVal {
+  extension [Self <: Words](x: Self) {
     
-    @scala.inline
-    def setSource(value: Attribution): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Attribution): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setWords(value: js.Array[Derivatives]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
+    inline def setWords(value: js.Array[Derivatives]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordsUndefined: Self = StObject.set(x, "words", js.undefined)
+    inline def setWordsUndefined: Self = StObject.set(x, "words", js.undefined)
     
-    @scala.inline
-    def setWordsVarargs(value: Derivatives*): Self = StObject.set(x, "words", js.Array(value :_*))
+    inline def setWordsVarargs(value: Derivatives*): Self = StObject.set(x, "words", js.Array(value :_*))
   }
 }

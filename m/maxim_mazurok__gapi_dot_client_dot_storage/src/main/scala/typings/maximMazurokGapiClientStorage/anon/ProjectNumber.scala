@@ -14,25 +14,19 @@ trait ProjectNumber extends StObject {
 }
 object ProjectNumber {
   
-  @scala.inline
-  def apply(): ProjectNumber = {
+  inline def apply(): ProjectNumber = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProjectNumber]
   }
   
-  @scala.inline
-  implicit class ProjectNumberMutableBuilder[Self <: ProjectNumber] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectNumber](x: Self) {
     
-    @scala.inline
-    def setProjectNumber(value: String): Self = StObject.set(x, "projectNumber", value.asInstanceOf[js.Any])
+    inline def setProjectNumber(value: String): Self = StObject.set(x, "projectNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectNumberUndefined: Self = StObject.set(x, "projectNumber", js.undefined)
+    inline def setProjectNumberUndefined: Self = StObject.set(x, "projectNumber", js.undefined)
     
-    @scala.inline
-    def setTeam(value: String): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
+    inline def setTeam(value: String): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeamUndefined: Self = StObject.set(x, "team", js.undefined)
+    inline def setTeamUndefined: Self = StObject.set(x, "team", js.undefined)
   }
 }

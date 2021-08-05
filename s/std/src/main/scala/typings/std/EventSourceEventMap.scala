@@ -14,22 +14,17 @@ trait EventSourceEventMap extends StObject {
 }
 object EventSourceEventMap {
   
-  @scala.inline
-  def apply(error: Event, message: MessageEvent[js.Any], open: Event): EventSourceEventMap = {
+  inline def apply(error: Event, message: MessageEvent[js.Any], open: Event): EventSourceEventMap = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventSourceEventMap]
   }
   
-  @scala.inline
-  implicit class EventSourceEventMapMutableBuilder[Self <: EventSourceEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: EventSourceEventMap](x: Self) {
     
-    @scala.inline
-    def setError(value: Event): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Event): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: MessageEvent[js.Any]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: MessageEvent[js.Any]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpen(value: Event): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    inline def setOpen(value: Event): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
   }
 }

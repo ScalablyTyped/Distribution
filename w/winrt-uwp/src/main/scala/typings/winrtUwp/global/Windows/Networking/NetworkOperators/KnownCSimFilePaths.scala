@@ -22,22 +22,19 @@ object KnownCSimFilePaths {
   @JSGlobal("Windows.Networking.NetworkOperators.KnownCSimFilePaths.efSpn")
   @js.native
   def efSpn: IVectorView[Double] = js.native
-  @scala.inline
-  def efSpn_=(x: IVectorView[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("efSpn")(x.asInstanceOf[js.Any])
+  inline def efSpn_=(x: IVectorView[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("efSpn")(x.asInstanceOf[js.Any])
   
   /** Static property that gets the GID1 path. */
   /* static member */
   @JSGlobal("Windows.Networking.NetworkOperators.KnownCSimFilePaths.gid1")
   @js.native
   def gid1: IVectorView[Double] = js.native
-  @scala.inline
-  def gid1_=(x: IVectorView[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gid1")(x.asInstanceOf[js.Any])
+  inline def gid1_=(x: IVectorView[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gid1")(x.asInstanceOf[js.Any])
   
   /** Static property that gets the GID2 path. */
   /* static member */
   @JSGlobal("Windows.Networking.NetworkOperators.KnownCSimFilePaths.gid2")
   @js.native
   def gid2: IVectorView[Double] = js.native
-  @scala.inline
-  def gid2_=(x: IVectorView[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gid2")(x.asInstanceOf[js.Any])
+  inline def gid2_=(x: IVectorView[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gid2")(x.asInstanceOf[js.Any])
 }

@@ -26,8 +26,7 @@ object resolutionErrorMod {
        with Error
   object ResolutionError {
     
-    @scala.inline
-    def apply(message: String, name: String): ResolutionError = {
+    inline def apply(message: String, name: String): ResolutionError = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResolutionError]
     }

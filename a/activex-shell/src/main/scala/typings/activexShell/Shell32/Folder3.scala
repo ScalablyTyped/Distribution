@@ -59,7 +59,7 @@ trait Folder3 extends StObject {
   /** Folder's FolderItem interface */
   val Self: ShellFolderItem = js.native
   
-  @JSName("Shell32.Folder3_typekey")
+  /* private */ @JSName("Shell32.Folder3_typekey")
   var Shell32DotFolder3_typekey: Folder3 = js.native
   
   /** Ask if the WebView barricade should be shown or not */

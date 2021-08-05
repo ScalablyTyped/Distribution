@@ -21,8 +21,7 @@ object monadThrowMod {
   }
   object MonadThrow {
     
-    @scala.inline
-    def apply[M](
+    inline def apply[M](
       URI: M,
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, (a : A): B> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any) => js.Any,
       chain: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any, js.Function1[
@@ -37,11 +36,9 @@ object monadThrowMod {
       __obj.asInstanceOf[MonadThrow[M]]
     }
     
-    @scala.inline
-    implicit class MonadThrowMutableBuilder[Self <: MonadThrow[?], M] (val x: Self & MonadThrow[M]) extends AnyVal {
+    extension [Self <: MonadThrow[?], M](x: Self & MonadThrow[M]) {
       
-      @scala.inline
-      def setThrowError(value: js.Any => js.Any): Self = StObject.set(x, "throwError", js.Any.fromFunction1(value))
+      inline def setThrowError(value: js.Any => js.Any): Self = StObject.set(x, "throwError", js.Any.fromFunction1(value))
     }
   }
   
@@ -53,8 +50,7 @@ object monadThrowMod {
   }
   object MonadThrow1 {
     
-    @scala.inline
-    def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
       URI: M,
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, (a : A): B> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ js.Any) => js.Any,
       chain: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ js.Any, js.Function1[
@@ -69,11 +65,9 @@ object monadThrowMod {
       __obj.asInstanceOf[MonadThrow1[M]]
     }
     
-    @scala.inline
-    implicit class MonadThrow1MutableBuilder[Self <: MonadThrow1[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */] (val x: Self & MonadThrow1[M]) extends AnyVal {
+    extension [Self <: MonadThrow1[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](x: Self & MonadThrow1[M]) {
       
-      @scala.inline
-      def setThrowError(value: js.Any => js.Any): Self = StObject.set(x, "throwError", js.Any.fromFunction1(value))
+      inline def setThrowError(value: js.Any => js.Any): Self = StObject.set(x, "throwError", js.Any.fromFunction1(value))
     }
   }
   
@@ -85,8 +79,7 @@ object monadThrowMod {
   }
   object MonadThrow2 {
     
-    @scala.inline
-    def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
       URI: M,
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, (a : A): B> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any) => js.Any,
       chain: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any, js.Function1[
@@ -101,11 +94,9 @@ object monadThrowMod {
       __obj.asInstanceOf[MonadThrow2[M]]
     }
     
-    @scala.inline
-    implicit class MonadThrow2MutableBuilder[Self <: MonadThrow2[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */] (val x: Self & MonadThrow2[M]) extends AnyVal {
+    extension [Self <: MonadThrow2[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](x: Self & MonadThrow2[M]) {
       
-      @scala.inline
-      def setThrowError(value: js.Any => js.Any): Self = StObject.set(x, "throwError", js.Any.fromFunction1(value))
+      inline def setThrowError(value: js.Any => js.Any): Self = StObject.set(x, "throwError", js.Any.fromFunction1(value))
     }
   }
   
@@ -117,8 +108,7 @@ object monadThrowMod {
   }
   object MonadThrow2C {
     
-    @scala.inline
-    def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
       URI: M,
       _E: E,
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, (a : A): B> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any) => js.Any,
@@ -134,11 +124,9 @@ object monadThrowMod {
       __obj.asInstanceOf[MonadThrow2C[M, E]]
     }
     
-    @scala.inline
-    implicit class MonadThrow2CMutableBuilder[Self <: MonadThrow2C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E] (val x: Self & (MonadThrow2C[M, E])) extends AnyVal {
+    extension [Self <: MonadThrow2C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](x: Self & (MonadThrow2C[M, E])) {
       
-      @scala.inline
-      def setThrowError(value: E => js.Any): Self = StObject.set(x, "throwError", js.Any.fromFunction1(value))
+      inline def setThrowError(value: E => js.Any): Self = StObject.set(x, "throwError", js.Any.fromFunction1(value))
     }
   }
   
@@ -150,8 +138,7 @@ object monadThrowMod {
   }
   object MonadThrow3 {
     
-    @scala.inline
-    def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](
       URI: M,
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, (a : A): B> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any) => js.Any,
       chain: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any, js.Function1[
@@ -166,11 +153,9 @@ object monadThrowMod {
       __obj.asInstanceOf[MonadThrow3[M]]
     }
     
-    @scala.inline
-    implicit class MonadThrow3MutableBuilder[Self <: MonadThrow3[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */] (val x: Self & MonadThrow3[M]) extends AnyVal {
+    extension [Self <: MonadThrow3[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](x: Self & MonadThrow3[M]) {
       
-      @scala.inline
-      def setThrowError(value: js.Any => js.Any): Self = StObject.set(x, "throwError", js.Any.fromFunction1(value))
+      inline def setThrowError(value: js.Any => js.Any): Self = StObject.set(x, "throwError", js.Any.fromFunction1(value))
     }
   }
   
@@ -182,8 +167,7 @@ object monadThrowMod {
   }
   object MonadThrow3C {
     
-    @scala.inline
-    def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](
       URI: M,
       _E: E,
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, (a : A): B> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any) => js.Any,
@@ -199,11 +183,9 @@ object monadThrowMod {
       __obj.asInstanceOf[MonadThrow3C[M, E]]
     }
     
-    @scala.inline
-    implicit class MonadThrow3CMutableBuilder[Self <: MonadThrow3C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E] (val x: Self & (MonadThrow3C[M, E])) extends AnyVal {
+    extension [Self <: MonadThrow3C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](x: Self & (MonadThrow3C[M, E])) {
       
-      @scala.inline
-      def setThrowError(value: E => js.Any): Self = StObject.set(x, "throwError", js.Any.fromFunction1(value))
+      inline def setThrowError(value: E => js.Any): Self = StObject.set(x, "throwError", js.Any.fromFunction1(value))
     }
   }
   
@@ -215,8 +197,7 @@ object monadThrowMod {
   }
   object MonadThrow4 {
     
-    @scala.inline
-    def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](
       URI: M,
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, (a : A): B> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ js.Any) => js.Any,
       chain: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ js.Any, js.Function1[
@@ -231,11 +212,9 @@ object monadThrowMod {
       __obj.asInstanceOf[MonadThrow4[M]]
     }
     
-    @scala.inline
-    implicit class MonadThrow4MutableBuilder[Self <: MonadThrow4[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */] (val x: Self & MonadThrow4[M]) extends AnyVal {
+    extension [Self <: MonadThrow4[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](x: Self & MonadThrow4[M]) {
       
-      @scala.inline
-      def setThrowError(value: js.Any => js.Any): Self = StObject.set(x, "throwError", js.Any.fromFunction1(value))
+      inline def setThrowError(value: js.Any => js.Any): Self = StObject.set(x, "throwError", js.Any.fromFunction1(value))
     }
   }
 }

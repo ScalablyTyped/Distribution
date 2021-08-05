@@ -19,19 +19,15 @@ trait SaveImageToPhotosAlbumOptions
 }
 object SaveImageToPhotosAlbumOptions {
   
-  @scala.inline
-  def apply(filePath: String, success: ErrMsg => Unit): SaveImageToPhotosAlbumOptions = {
+  inline def apply(filePath: String, success: ErrMsg => Unit): SaveImageToPhotosAlbumOptions = {
     val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any], success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[SaveImageToPhotosAlbumOptions]
   }
   
-  @scala.inline
-  implicit class SaveImageToPhotosAlbumOptionsMutableBuilder[Self <: SaveImageToPhotosAlbumOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SaveImageToPhotosAlbumOptions](x: Self) {
     
-    @scala.inline
-    def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: ErrMsg => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: ErrMsg => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

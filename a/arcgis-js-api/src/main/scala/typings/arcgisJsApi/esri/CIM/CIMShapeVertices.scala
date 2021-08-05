@@ -20,29 +20,22 @@ trait CIMShapeVertices extends StObject {
 }
 object CIMShapeVertices {
   
-  @scala.inline
-  def apply(): CIMShapeVertices = {
+  inline def apply(): CIMShapeVertices = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMShapeVertices")
     __obj.asInstanceOf[CIMShapeVertices]
   }
   
-  @scala.inline
-  implicit class CIMShapeVerticesMutableBuilder[Self <: CIMShapeVertices] (val x: Self) extends AnyVal {
+  extension [Self <: CIMShapeVertices](x: Self) {
     
-    @scala.inline
-    def setIndices(value: Double): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+    inline def setIndices(value: Double): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndicesUndefined: Self = StObject.set(x, "indices", js.undefined)
+    inline def setIndicesUndefined: Self = StObject.set(x, "indices", js.undefined)
     
-    @scala.inline
-    def setShapes(value: String): Self = StObject.set(x, "shapes", value.asInstanceOf[js.Any])
+    inline def setShapes(value: String): Self = StObject.set(x, "shapes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapesUndefined: Self = StObject.set(x, "shapes", js.undefined)
+    inline def setShapesUndefined: Self = StObject.set(x, "shapes", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMShapeVertices): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMShapeVertices): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

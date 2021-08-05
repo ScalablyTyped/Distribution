@@ -34,6 +34,5 @@ object FieldPath {
     * Returns a special sentinel `FieldPath` to refer to the ID of a document.
     * It can be used in queries to sort or filter by the document ID.
     */
-  @scala.inline
-  def documentId(): typings.firebase.mod.firebase.firestore.FieldPath = ^.asInstanceOf[js.Dynamic].applyDynamic("documentId")().asInstanceOf[typings.firebase.mod.firebase.firestore.FieldPath]
+  inline def documentId(): typings.firebase.mod.firebase.firestore.FieldPath = ^.asInstanceOf[js.Dynamic].applyDynamic("documentId")().asInstanceOf[typings.firebase.mod.firebase.firestore.FieldPath]
 }

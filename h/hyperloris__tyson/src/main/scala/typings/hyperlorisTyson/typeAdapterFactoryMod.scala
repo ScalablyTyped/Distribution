@@ -15,17 +15,14 @@ object typeAdapterFactoryMod {
   }
   object TypeAdapterFactory {
     
-    @scala.inline
-    def apply(create: (Tyson, TypeToken[js.Any]) => js.UndefOr[TypeAdapter[js.Any]]): TypeAdapterFactory = {
+    inline def apply(create: (Tyson, TypeToken[js.Any]) => js.UndefOr[TypeAdapter[js.Any]]): TypeAdapterFactory = {
       val __obj = js.Dynamic.literal(create = js.Any.fromFunction2(create))
       __obj.asInstanceOf[TypeAdapterFactory]
     }
     
-    @scala.inline
-    implicit class TypeAdapterFactoryMutableBuilder[Self <: TypeAdapterFactory] (val x: Self) extends AnyVal {
+    extension [Self <: TypeAdapterFactory](x: Self) {
       
-      @scala.inline
-      def setCreate(value: (Tyson, TypeToken[js.Any]) => js.UndefOr[TypeAdapter[js.Any]]): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+      inline def setCreate(value: (Tyson, TypeToken[js.Any]) => js.UndefOr[TypeAdapter[js.Any]]): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     }
   }
 }

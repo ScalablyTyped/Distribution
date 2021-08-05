@@ -21,8 +21,7 @@ trait Direction extends StObject {
 }
 object Direction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     direction: Orientation,
     legendConfig: typings.vegaLite.legendMod.LegendConfig[SignalRef],
     model: typings.vegaLite.modelMod.Model,
@@ -33,22 +32,16 @@ object Direction {
     __obj.asInstanceOf[Direction]
   }
   
-  @scala.inline
-  implicit class DirectionMutableBuilder[Self <: Direction] (val x: Self) extends AnyVal {
+  extension [Self <: Direction](x: Self) {
     
-    @scala.inline
-    def setDirection(value: Orientation): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: Orientation): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendConfig(value: typings.vegaLite.legendMod.LegendConfig[SignalRef]): Self = StObject.set(x, "legendConfig", value.asInstanceOf[js.Any])
+    inline def setLegendConfig(value: typings.vegaLite.legendMod.LegendConfig[SignalRef]): Self = StObject.set(x, "legendConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModel(value: typings.vegaLite.modelMod.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: typings.vegaLite.modelMod.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrient(value: LegendOrient): Self = StObject.set(x, "orient", value.asInstanceOf[js.Any])
+    inline def setOrient(value: LegendOrient): Self = StObject.set(x, "orient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleType(value: typings.vegaLite.scaleMod.ScaleType): Self = StObject.set(x, "scaleType", value.asInstanceOf[js.Any])
+    inline def setScaleType(value: typings.vegaLite.scaleMod.ScaleType): Self = StObject.set(x, "scaleType", value.asInstanceOf[js.Any])
   }
 }

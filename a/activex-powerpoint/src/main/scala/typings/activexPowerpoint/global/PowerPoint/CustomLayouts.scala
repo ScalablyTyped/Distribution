@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.CustomLayouts")
 @js.native
-class CustomLayouts protected ()
+/* private */ class CustomLayouts ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.CustomLayouts

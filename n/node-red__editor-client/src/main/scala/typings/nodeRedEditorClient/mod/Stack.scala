@@ -11,16 +11,13 @@ trait Stack extends StObject {
 }
 object Stack {
   
-  @scala.inline
-  def apply(create: Fill => StackInstance): Stack = {
+  inline def apply(create: Fill => StackInstance): Stack = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
     __obj.asInstanceOf[Stack]
   }
   
-  @scala.inline
-  implicit class StackMutableBuilder[Self <: Stack] (val x: Self) extends AnyVal {
+  extension [Self <: Stack](x: Self) {
     
-    @scala.inline
-    def setCreate(value: Fill => StackInstance): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: Fill => StackInstance): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
   }
 }

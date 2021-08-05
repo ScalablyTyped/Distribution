@@ -105,86 +105,60 @@ object mod {
   }
   object SliderProps {
     
-    @scala.inline
-    def apply(): SliderProps = {
+    inline def apply(): SliderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SliderProps]
     }
     
-    @scala.inline
-    implicit class SliderPropsMutableBuilder[Self <: SliderProps] (val x: Self) extends AnyVal {
+    extension [Self <: SliderProps](x: Self) {
       
-      @scala.inline
-      def setAfterSlide(value: /* currentIndex */ Double => Unit): Self = StObject.set(x, "afterSlide", js.Any.fromFunction1(value))
+      inline def setAfterSlide(value: /* currentIndex */ Double => Unit): Self = StObject.set(x, "afterSlide", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAfterSlideUndefined: Self = StObject.set(x, "afterSlide", js.undefined)
+      inline def setAfterSlideUndefined: Self = StObject.set(x, "afterSlide", js.undefined)
       
-      @scala.inline
-      def setAlign(value: left | center | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: left | center | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setAutoHeight(value: Boolean): Self = StObject.set(x, "autoHeight", value.asInstanceOf[js.Any])
+      inline def setAutoHeight(value: Boolean): Self = StObject.set(x, "autoHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoHeightUndefined: Self = StObject.set(x, "autoHeight", js.undefined)
+      inline def setAutoHeightUndefined: Self = StObject.set(x, "autoHeight", js.undefined)
       
-      @scala.inline
-      def setBeforeSlide(value: (/* currentIndex */ Double, /* nextIndex */ Double) => Unit): Self = StObject.set(x, "beforeSlide", js.Any.fromFunction2(value))
+      inline def setBeforeSlide(value: (/* currentIndex */ Double, /* nextIndex */ Double) => Unit): Self = StObject.set(x, "beforeSlide", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBeforeSlideUndefined: Self = StObject.set(x, "beforeSlide", js.undefined)
+      inline def setBeforeSlideUndefined: Self = StObject.set(x, "beforeSlide", js.undefined)
       
-      @scala.inline
-      def setCurrentIndex(value: Double): Self = StObject.set(x, "currentIndex", value.asInstanceOf[js.Any])
+      inline def setCurrentIndex(value: Double): Self = StObject.set(x, "currentIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentIndexUndefined: Self = StObject.set(x, "currentIndex", js.undefined)
+      inline def setCurrentIndexUndefined: Self = StObject.set(x, "currentIndex", js.undefined)
       
-      @scala.inline
-      def setCurrentKey(value: String | Double): Self = StObject.set(x, "currentKey", value.asInstanceOf[js.Any])
+      inline def setCurrentKey(value: String | Double): Self = StObject.set(x, "currentKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentKeyUndefined: Self = StObject.set(x, "currentKey", js.undefined)
+      inline def setCurrentKeyUndefined: Self = StObject.set(x, "currentKey", js.undefined)
       
-      @scala.inline
-      def setFlickTimeout(value: Double): Self = StObject.set(x, "flickTimeout", value.asInstanceOf[js.Any])
+      inline def setFlickTimeout(value: Double): Self = StObject.set(x, "flickTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlickTimeoutUndefined: Self = StObject.set(x, "flickTimeout", js.undefined)
+      inline def setFlickTimeoutUndefined: Self = StObject.set(x, "flickTimeout", js.undefined)
       
-      @scala.inline
-      def setSlidesToMove(value: Double): Self = StObject.set(x, "slidesToMove", value.asInstanceOf[js.Any])
+      inline def setSlidesToMove(value: Double): Self = StObject.set(x, "slidesToMove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlidesToMoveUndefined: Self = StObject.set(x, "slidesToMove", js.undefined)
+      inline def setSlidesToMoveUndefined: Self = StObject.set(x, "slidesToMove", js.undefined)
       
-      @scala.inline
-      def setSlidesToShow(value: Double): Self = StObject.set(x, "slidesToShow", value.asInstanceOf[js.Any])
+      inline def setSlidesToShow(value: Double): Self = StObject.set(x, "slidesToShow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlidesToShowUndefined: Self = StObject.set(x, "slidesToShow", js.undefined)
+      inline def setSlidesToShowUndefined: Self = StObject.set(x, "slidesToShow", js.undefined)
       
-      @scala.inline
-      def setSpringConfig(value: OpaqueConfig): Self = StObject.set(x, "springConfig", value.asInstanceOf[js.Any])
+      inline def setSpringConfig(value: OpaqueConfig): Self = StObject.set(x, "springConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpringConfigUndefined: Self = StObject.set(x, "springConfig", js.undefined)
+      inline def setSpringConfigUndefined: Self = StObject.set(x, "springConfig", js.undefined)
       
-      @scala.inline
-      def setSwipe(value: Boolean | touch | mouse): Self = StObject.set(x, "swipe", value.asInstanceOf[js.Any])
+      inline def setSwipe(value: Boolean | touch | mouse): Self = StObject.set(x, "swipe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwipeThreshold(value: Double): Self = StObject.set(x, "swipeThreshold", value.asInstanceOf[js.Any])
+      inline def setSwipeThreshold(value: Double): Self = StObject.set(x, "swipeThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwipeThresholdUndefined: Self = StObject.set(x, "swipeThreshold", js.undefined)
+      inline def setSwipeThresholdUndefined: Self = StObject.set(x, "swipeThreshold", js.undefined)
       
-      @scala.inline
-      def setSwipeUndefined: Self = StObject.set(x, "swipe", js.undefined)
+      inline def setSwipeUndefined: Self = StObject.set(x, "swipe", js.undefined)
     }
   }
 }

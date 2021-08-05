@@ -8,6 +8,5 @@ object domScreenWakeLockStrings {
   
   @js.native
   sealed trait screen extends StObject
-  @scala.inline
-  def screen: screen = "screen".asInstanceOf[screen]
+  inline def screen: screen = "screen".asInstanceOf[screen]
 }

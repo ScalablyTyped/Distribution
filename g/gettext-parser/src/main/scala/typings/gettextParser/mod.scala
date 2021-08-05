@@ -30,29 +30,22 @@ object mod {
   }
   object GetTextComment {
     
-    @scala.inline
-    def apply(extracted: String, flag: String, previous: String, reference: String, translator: String): GetTextComment = {
+    inline def apply(extracted: String, flag: String, previous: String, reference: String, translator: String): GetTextComment = {
       val __obj = js.Dynamic.literal(extracted = extracted.asInstanceOf[js.Any], flag = flag.asInstanceOf[js.Any], previous = previous.asInstanceOf[js.Any], reference = reference.asInstanceOf[js.Any], translator = translator.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetTextComment]
     }
     
-    @scala.inline
-    implicit class GetTextCommentMutableBuilder[Self <: GetTextComment] (val x: Self) extends AnyVal {
+    extension [Self <: GetTextComment](x: Self) {
       
-      @scala.inline
-      def setExtracted(value: String): Self = StObject.set(x, "extracted", value.asInstanceOf[js.Any])
+      inline def setExtracted(value: String): Self = StObject.set(x, "extracted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlag(value: String): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
+      inline def setFlag(value: String): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevious(value: String): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
+      inline def setPrevious(value: String): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReference(value: String): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+      inline def setReference(value: String): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslator(value: String): Self = StObject.set(x, "translator", value.asInstanceOf[js.Any])
+      inline def setTranslator(value: String): Self = StObject.set(x, "translator", value.asInstanceOf[js.Any])
     }
   }
   
@@ -70,41 +63,30 @@ object mod {
   }
   object GetTextTranslation {
     
-    @scala.inline
-    def apply(msgid: String, msgstr: js.Array[String]): GetTextTranslation = {
+    inline def apply(msgid: String, msgstr: js.Array[String]): GetTextTranslation = {
       val __obj = js.Dynamic.literal(msgid = msgid.asInstanceOf[js.Any], msgstr = msgstr.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetTextTranslation]
     }
     
-    @scala.inline
-    implicit class GetTextTranslationMutableBuilder[Self <: GetTextTranslation] (val x: Self) extends AnyVal {
+    extension [Self <: GetTextTranslation](x: Self) {
       
-      @scala.inline
-      def setComments(value: GetTextComment): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+      inline def setComments(value: GetTextComment): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+      inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
       
-      @scala.inline
-      def setMsgctxt(value: String): Self = StObject.set(x, "msgctxt", value.asInstanceOf[js.Any])
+      inline def setMsgctxt(value: String): Self = StObject.set(x, "msgctxt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgctxtUndefined: Self = StObject.set(x, "msgctxt", js.undefined)
+      inline def setMsgctxtUndefined: Self = StObject.set(x, "msgctxt", js.undefined)
       
-      @scala.inline
-      def setMsgid(value: String): Self = StObject.set(x, "msgid", value.asInstanceOf[js.Any])
+      inline def setMsgid(value: String): Self = StObject.set(x, "msgid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgid_plural(value: js.Any): Self = StObject.set(x, "msgid_plural", value.asInstanceOf[js.Any])
+      inline def setMsgid_plural(value: js.Any): Self = StObject.set(x, "msgid_plural", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgid_pluralUndefined: Self = StObject.set(x, "msgid_plural", js.undefined)
+      inline def setMsgid_pluralUndefined: Self = StObject.set(x, "msgid_plural", js.undefined)
       
-      @scala.inline
-      def setMsgstr(value: js.Array[String]): Self = StObject.set(x, "msgstr", value.asInstanceOf[js.Any])
+      inline def setMsgstr(value: js.Array[String]): Self = StObject.set(x, "msgstr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgstrVarargs(value: String*): Self = StObject.set(x, "msgstr", js.Array(value :_*))
+      inline def setMsgstrVarargs(value: String*): Self = StObject.set(x, "msgstr", js.Array(value :_*))
     }
   }
   
@@ -118,8 +100,7 @@ object mod {
   }
   object GetTextTranslations {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       charset: String,
       headers: StringDictionary[String],
       translations: StringDictionary[StringDictionary[GetTextTranslation]]
@@ -128,17 +109,13 @@ object mod {
       __obj.asInstanceOf[GetTextTranslations]
     }
     
-    @scala.inline
-    implicit class GetTextTranslationsMutableBuilder[Self <: GetTextTranslations] (val x: Self) extends AnyVal {
+    extension [Self <: GetTextTranslations](x: Self) {
       
-      @scala.inline
-      def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
+      inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslations(value: StringDictionary[StringDictionary[GetTextTranslation]]): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+      inline def setTranslations(value: StringDictionary[StringDictionary[GetTextTranslation]]): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     }
   }
   

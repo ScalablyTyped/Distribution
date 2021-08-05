@@ -23,49 +23,35 @@ trait MKProgressProperties
 }
 object MKProgressProperties {
   
-  @scala.inline
-  def apply(): MKProgressProperties = {
+  inline def apply(): MKProgressProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MKProgressProperties]
   }
   
-  @scala.inline
-  implicit class MKProgressPropertiesMutableBuilder[Self <: MKProgressProperties] (val x: Self) extends AnyVal {
+  extension [Self <: MKProgressProperties](x: Self) {
     
-    @scala.inline
-    def setBuffer(value: Double): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+    inline def setBuffer(value: Double): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBufferAniDuration(value: Double): Self = StObject.set(x, "bufferAniDuration", value.asInstanceOf[js.Any])
+    inline def setBufferAniDuration(value: Double): Self = StObject.set(x, "bufferAniDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBufferAniDurationUndefined: Self = StObject.set(x, "bufferAniDuration", js.undefined)
+    inline def setBufferAniDurationUndefined: Self = StObject.set(x, "bufferAniDuration", js.undefined)
     
-    @scala.inline
-    def setBufferColor(value: String): Self = StObject.set(x, "bufferColor", value.asInstanceOf[js.Any])
+    inline def setBufferColor(value: String): Self = StObject.set(x, "bufferColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBufferColorUndefined: Self = StObject.set(x, "bufferColor", js.undefined)
+    inline def setBufferColorUndefined: Self = StObject.set(x, "bufferColor", js.undefined)
     
-    @scala.inline
-    def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
+    inline def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
     
-    @scala.inline
-    def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressAniDuration(value: Double): Self = StObject.set(x, "progressAniDuration", value.asInstanceOf[js.Any])
+    inline def setProgressAniDuration(value: Double): Self = StObject.set(x, "progressAniDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressAniDurationUndefined: Self = StObject.set(x, "progressAniDuration", js.undefined)
+    inline def setProgressAniDurationUndefined: Self = StObject.set(x, "progressAniDuration", js.undefined)
     
-    @scala.inline
-    def setProgressColor(value: String): Self = StObject.set(x, "progressColor", value.asInstanceOf[js.Any])
+    inline def setProgressColor(value: String): Self = StObject.set(x, "progressColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressColorUndefined: Self = StObject.set(x, "progressColor", js.undefined)
+    inline def setProgressColorUndefined: Self = StObject.set(x, "progressColor", js.undefined)
     
-    @scala.inline
-    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+    inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
   }
 }

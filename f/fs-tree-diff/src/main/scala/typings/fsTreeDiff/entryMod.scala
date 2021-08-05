@@ -39,14 +39,11 @@ object entryMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromStat(relativePath: String, stat: Stats): Entry = (^.asInstanceOf[js.Dynamic].applyDynamic("fromStat")(relativePath.asInstanceOf[js.Any], stat.asInstanceOf[js.Any])).asInstanceOf[Entry]
+    inline def fromStat(relativePath: String, stat: Stats): Entry = (^.asInstanceOf[js.Dynamic].applyDynamic("fromStat")(relativePath.asInstanceOf[js.Any], stat.asInstanceOf[js.Any])).asInstanceOf[Entry]
     
-    @scala.inline
-    def isDirectory(entry: Entry): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDirectory")(entry.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isDirectory(entry: Entry): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDirectory")(entry.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isFile(entry: Entry): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFile")(entry.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isFile(entry: Entry): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFile")(entry.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   trait BaseEntry extends StObject {
@@ -57,20 +54,16 @@ object entryMod {
   }
   object BaseEntry {
     
-    @scala.inline
-    def apply(isDirectory: () => Boolean, relativePath: String): BaseEntry = {
+    inline def apply(isDirectory: () => Boolean, relativePath: String): BaseEntry = {
       val __obj = js.Dynamic.literal(isDirectory = js.Any.fromFunction0(isDirectory), relativePath = relativePath.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseEntry]
     }
     
-    @scala.inline
-    implicit class BaseEntryMutableBuilder[Self <: BaseEntry] (val x: Self) extends AnyVal {
+    extension [Self <: BaseEntry](x: Self) {
       
-      @scala.inline
-      def setIsDirectory(value: () => Boolean): Self = StObject.set(x, "isDirectory", js.Any.fromFunction0(value))
+      inline def setIsDirectory(value: () => Boolean): Self = StObject.set(x, "isDirectory", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRelativePath(value: String): Self = StObject.set(x, "relativePath", value.asInstanceOf[js.Any])
+      inline def setRelativePath(value: String): Self = StObject.set(x, "relativePath", value.asInstanceOf[js.Any])
     }
   }
   
@@ -86,32 +79,24 @@ object entryMod {
   }
   object DefaultEntry {
     
-    @scala.inline
-    def apply(isDirectory: () => Boolean, relativePath: String): DefaultEntry = {
+    inline def apply(isDirectory: () => Boolean, relativePath: String): DefaultEntry = {
       val __obj = js.Dynamic.literal(isDirectory = js.Any.fromFunction0(isDirectory), relativePath = relativePath.asInstanceOf[js.Any])
       __obj.asInstanceOf[DefaultEntry]
     }
     
-    @scala.inline
-    implicit class DefaultEntryMutableBuilder[Self <: DefaultEntry] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultEntry](x: Self) {
       
-      @scala.inline
-      def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setMtime(value: Double | Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+      inline def setMtime(value: Double | Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
+      inline def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -120,8 +105,7 @@ object entryMod {
        with DefaultEntry
   object Entry {
     
-    @scala.inline
-    def apply(isDirectory: () => Boolean, relativePath: String): Entry = {
+    inline def apply(isDirectory: () => Boolean, relativePath: String): Entry = {
       val __obj = js.Dynamic.literal(isDirectory = js.Any.fromFunction0(isDirectory), relativePath = relativePath.asInstanceOf[js.Any])
       __obj.asInstanceOf[Entry]
     }

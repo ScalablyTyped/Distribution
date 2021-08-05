@@ -17,31 +17,23 @@ trait ISnapshot extends StObject {
 }
 object ISnapshot {
   
-  @scala.inline
-  def apply(docChanges: js.Array[ISingleDBEvent], docs: Record[String, js.Any], id: Double): ISnapshot = {
+  inline def apply(docChanges: js.Array[ISingleDBEvent], docs: Record[String, js.Any], id: Double): ISnapshot = {
     val __obj = js.Dynamic.literal(docChanges = docChanges.asInstanceOf[js.Any], docs = docs.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISnapshot]
   }
   
-  @scala.inline
-  implicit class ISnapshotMutableBuilder[Self <: ISnapshot] (val x: Self) extends AnyVal {
+  extension [Self <: ISnapshot](x: Self) {
     
-    @scala.inline
-    def setDocChanges(value: js.Array[ISingleDBEvent]): Self = StObject.set(x, "docChanges", value.asInstanceOf[js.Any])
+    inline def setDocChanges(value: js.Array[ISingleDBEvent]): Self = StObject.set(x, "docChanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocChangesVarargs(value: ISingleDBEvent*): Self = StObject.set(x, "docChanges", js.Array(value :_*))
+    inline def setDocChangesVarargs(value: ISingleDBEvent*): Self = StObject.set(x, "docChanges", js.Array(value :_*))
     
-    @scala.inline
-    def setDocs(value: Record[String, js.Any]): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
+    inline def setDocs(value: Record[String, js.Any]): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: SnapshotType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: SnapshotType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

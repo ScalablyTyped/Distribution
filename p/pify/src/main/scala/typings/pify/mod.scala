@@ -8,14 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(input: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(input: js.Any, options: PifyOptions): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(input: js.Function): js.Function1[/* repeated */ js.Any, js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, js.Promise[js.Any]]]
-  @scala.inline
-  def apply(input: js.Function, options: PifyOptions): js.Function1[/* repeated */ js.Any, js.Promise[js.Any]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, js.Promise[js.Any]]]
+  inline def apply(input: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(input: js.Any, options: PifyOptions): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(input: js.Function): js.Function1[/* repeated */ js.Any, js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, js.Promise[js.Any]]]
+  inline def apply(input: js.Function, options: PifyOptions): js.Function1[/* repeated */ js.Any, js.Promise[js.Any]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, js.Promise[js.Any]]]
   
   @JSImport("pify", JSImport.Namespace)
   @js.native
@@ -37,56 +33,40 @@ object mod {
   }
   object PifyOptions {
     
-    @scala.inline
-    def apply(): PifyOptions = {
+    inline def apply(): PifyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PifyOptions]
     }
     
-    @scala.inline
-    implicit class PifyOptionsMutableBuilder[Self <: PifyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PifyOptions](x: Self) {
       
-      @scala.inline
-      def setErrorFirst(value: Boolean): Self = StObject.set(x, "errorFirst", value.asInstanceOf[js.Any])
+      inline def setErrorFirst(value: Boolean): Self = StObject.set(x, "errorFirst", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorFirstUndefined: Self = StObject.set(x, "errorFirst", js.undefined)
+      inline def setErrorFirstUndefined: Self = StObject.set(x, "errorFirst", js.undefined)
       
-      @scala.inline
-      def setExclude(value: js.Array[String | RegExp]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: js.Array[String | RegExp]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeMain(value: Boolean): Self = StObject.set(x, "excludeMain", value.asInstanceOf[js.Any])
+      inline def setExcludeMain(value: Boolean): Self = StObject.set(x, "excludeMain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeMainUndefined: Self = StObject.set(x, "excludeMain", js.undefined)
+      inline def setExcludeMainUndefined: Self = StObject.set(x, "excludeMain", js.undefined)
       
-      @scala.inline
-      def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+      inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      @scala.inline
-      def setExcludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "exclude", js.Array(value :_*))
       
-      @scala.inline
-      def setInclude(value: js.Array[String | RegExp]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: js.Array[String | RegExp]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+      inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      @scala.inline
-      def setIncludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "include", js.Array(value :_*))
       
-      @scala.inline
-      def setMultiArgs(value: Boolean): Self = StObject.set(x, "multiArgs", value.asInstanceOf[js.Any])
+      inline def setMultiArgs(value: Boolean): Self = StObject.set(x, "multiArgs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiArgsUndefined: Self = StObject.set(x, "multiArgs", js.undefined)
+      inline def setMultiArgsUndefined: Self = StObject.set(x, "multiArgs", js.undefined)
       
-      @scala.inline
-      def setPromiseModule(value: PromiseModule): Self = StObject.set(x, "promiseModule", value.asInstanceOf[js.Any])
+      inline def setPromiseModule(value: PromiseModule): Self = StObject.set(x, "promiseModule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromiseModuleUndefined: Self = StObject.set(x, "promiseModule", js.undefined)
+      inline def setPromiseModuleUndefined: Self = StObject.set(x, "promiseModule", js.undefined)
     }
   }
   

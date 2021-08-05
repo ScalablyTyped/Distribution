@@ -18,25 +18,19 @@ trait WorkspaceFoldersChangeEvent extends StObject {
 }
 object WorkspaceFoldersChangeEvent {
   
-  @scala.inline
-  def apply(added: js.Array[WorkspaceFolder], removed: js.Array[WorkspaceFolder]): WorkspaceFoldersChangeEvent = {
+  inline def apply(added: js.Array[WorkspaceFolder], removed: js.Array[WorkspaceFolder]): WorkspaceFoldersChangeEvent = {
     val __obj = js.Dynamic.literal(added = added.asInstanceOf[js.Any], removed = removed.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkspaceFoldersChangeEvent]
   }
   
-  @scala.inline
-  implicit class WorkspaceFoldersChangeEventMutableBuilder[Self <: WorkspaceFoldersChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: WorkspaceFoldersChangeEvent](x: Self) {
     
-    @scala.inline
-    def setAdded(value: js.Array[WorkspaceFolder]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
+    inline def setAdded(value: js.Array[WorkspaceFolder]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddedVarargs(value: WorkspaceFolder*): Self = StObject.set(x, "added", js.Array(value :_*))
+    inline def setAddedVarargs(value: WorkspaceFolder*): Self = StObject.set(x, "added", js.Array(value :_*))
     
-    @scala.inline
-    def setRemoved(value: js.Array[WorkspaceFolder]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
+    inline def setRemoved(value: js.Array[WorkspaceFolder]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovedVarargs(value: WorkspaceFolder*): Self = StObject.set(x, "removed", js.Array(value :_*))
+    inline def setRemovedVarargs(value: WorkspaceFolder*): Self = StObject.set(x, "removed", js.Array(value :_*))
   }
 }

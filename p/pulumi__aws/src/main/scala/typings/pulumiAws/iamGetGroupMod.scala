@@ -12,10 +12,8 @@ object iamGetGroupMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getGroup(args: GetGroupArgs): js.Promise[GetGroupResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getGroup")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetGroupResult]]
-  @scala.inline
-  def getGroup(args: GetGroupArgs, opts: InvokeOptions): js.Promise[GetGroupResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getGroup")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetGroupResult]]
+  inline def getGroup(args: GetGroupArgs): js.Promise[GetGroupResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getGroup")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetGroupResult]]
+  inline def getGroup(args: GetGroupArgs, opts: InvokeOptions): js.Promise[GetGroupResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getGroup")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetGroupResult]]
   
   trait GetGroupArgs extends StObject {
     
@@ -26,17 +24,14 @@ object iamGetGroupMod {
   }
   object GetGroupArgs {
     
-    @scala.inline
-    def apply(groupName: String): GetGroupArgs = {
+    inline def apply(groupName: String): GetGroupArgs = {
       val __obj = js.Dynamic.literal(groupName = groupName.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetGroupArgs]
     }
     
-    @scala.inline
-    implicit class GetGroupArgsMutableBuilder[Self <: GetGroupArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetGroupArgs](x: Self) {
       
-      @scala.inline
-      def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
+      inline def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -71,8 +66,7 @@ object iamGetGroupMod {
   }
   object GetGroupResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arn: String,
       groupId: String,
       groupName: String,
@@ -84,29 +78,21 @@ object iamGetGroupMod {
       __obj.asInstanceOf[GetGroupResult]
     }
     
-    @scala.inline
-    implicit class GetGroupResultMutableBuilder[Self <: GetGroupResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetGroupResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
+      inline def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
+      inline def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsers(value: js.Array[GetGroupUser]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+      inline def setUsers(value: js.Array[GetGroupUser]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsersVarargs(value: GetGroupUser*): Self = StObject.set(x, "users", js.Array(value :_*))
+      inline def setUsersVarargs(value: GetGroupUser*): Self = StObject.set(x, "users", js.Array(value :_*))
     }
   }
 }

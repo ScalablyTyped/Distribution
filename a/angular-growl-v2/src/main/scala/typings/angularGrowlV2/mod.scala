@@ -40,23 +40,18 @@ object mod {
     }
     object IGrowlMessage {
       
-      @scala.inline
-      def apply(destroy: () => Unit, setText: String => Unit, text: String): IGrowlMessage = {
+      inline def apply(destroy: () => Unit, setText: String => Unit, text: String): IGrowlMessage = {
         val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), setText = js.Any.fromFunction1(setText), text = text.asInstanceOf[js.Any])
         __obj.asInstanceOf[IGrowlMessage]
       }
       
-      @scala.inline
-      implicit class IGrowlMessageMutableBuilder[Self <: IGrowlMessage] (val x: Self) extends AnyVal {
+      extension [Self <: IGrowlMessage](x: Self) {
         
-        @scala.inline
-        def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+        inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setSetText(value: String => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
+        inline def setSetText(value: String => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+        inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       }
     }
     
@@ -89,80 +84,56 @@ object mod {
     }
     object IGrowlMessageConfig {
       
-      @scala.inline
-      def apply(): IGrowlMessageConfig = {
+      inline def apply(): IGrowlMessageConfig = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IGrowlMessageConfig]
       }
       
-      @scala.inline
-      implicit class IGrowlMessageConfigMutableBuilder[Self <: IGrowlMessageConfig] (val x: Self) extends AnyVal {
+      extension [Self <: IGrowlMessageConfig](x: Self) {
         
-        @scala.inline
-        def setDisableCloseButton(value: Boolean): Self = StObject.set(x, "disableCloseButton", value.asInstanceOf[js.Any])
+        inline def setDisableCloseButton(value: Boolean): Self = StObject.set(x, "disableCloseButton", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDisableCloseButtonUndefined: Self = StObject.set(x, "disableCloseButton", js.undefined)
+        inline def setDisableCloseButtonUndefined: Self = StObject.set(x, "disableCloseButton", js.undefined)
         
-        @scala.inline
-        def setDisableCountDown(value: Boolean): Self = StObject.set(x, "disableCountDown", value.asInstanceOf[js.Any])
+        inline def setDisableCountDown(value: Boolean): Self = StObject.set(x, "disableCountDown", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDisableCountDownUndefined: Self = StObject.set(x, "disableCountDown", js.undefined)
+        inline def setDisableCountDownUndefined: Self = StObject.set(x, "disableCountDown", js.undefined)
         
-        @scala.inline
-        def setDisableIcons(value: Boolean): Self = StObject.set(x, "disableIcons", value.asInstanceOf[js.Any])
+        inline def setDisableIcons(value: Boolean): Self = StObject.set(x, "disableIcons", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDisableIconsUndefined: Self = StObject.set(x, "disableIcons", js.undefined)
+        inline def setDisableIconsUndefined: Self = StObject.set(x, "disableIcons", js.undefined)
         
-        @scala.inline
-        def setOnclose(value: Function): Self = StObject.set(x, "onclose", value.asInstanceOf[js.Any])
+        inline def setOnclose(value: Function): Self = StObject.set(x, "onclose", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOncloseUndefined: Self = StObject.set(x, "onclose", js.undefined)
+        inline def setOncloseUndefined: Self = StObject.set(x, "onclose", js.undefined)
         
-        @scala.inline
-        def setOnopen(value: Function): Self = StObject.set(x, "onopen", value.asInstanceOf[js.Any])
+        inline def setOnopen(value: Function): Self = StObject.set(x, "onopen", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnopenUndefined: Self = StObject.set(x, "onopen", js.undefined)
+        inline def setOnopenUndefined: Self = StObject.set(x, "onopen", js.undefined)
         
-        @scala.inline
-        def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+        inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+        inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
         
-        @scala.inline
-        def setReferenceId(value: Double): Self = StObject.set(x, "referenceId", value.asInstanceOf[js.Any])
+        inline def setReferenceId(value: Double): Self = StObject.set(x, "referenceId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReferenceIdUndefined: Self = StObject.set(x, "referenceId", js.undefined)
+        inline def setReferenceIdUndefined: Self = StObject.set(x, "referenceId", js.undefined)
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+        inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
         
-        @scala.inline
-        def setTranslateMessage(value: Boolean): Self = StObject.set(x, "translateMessage", value.asInstanceOf[js.Any])
+        inline def setTranslateMessage(value: Boolean): Self = StObject.set(x, "translateMessage", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTranslateMessageUndefined: Self = StObject.set(x, "translateMessage", js.undefined)
+        inline def setTranslateMessageUndefined: Self = StObject.set(x, "translateMessage", js.undefined)
         
-        @scala.inline
-        def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+        inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+        inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
         
-        @scala.inline
-        def setVariables(value: StringDictionary[js.Any]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+        inline def setVariables(value: StringDictionary[js.Any]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
+        inline def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
       }
     }
     
@@ -410,38 +381,28 @@ object mod {
     }
     object IGrowlTTLConfig {
       
-      @scala.inline
-      def apply(): IGrowlTTLConfig = {
+      inline def apply(): IGrowlTTLConfig = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IGrowlTTLConfig]
       }
       
-      @scala.inline
-      implicit class IGrowlTTLConfigMutableBuilder[Self <: IGrowlTTLConfig] (val x: Self) extends AnyVal {
+      extension [Self <: IGrowlTTLConfig](x: Self) {
         
-        @scala.inline
-        def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+        inline def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+        inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
         
-        @scala.inline
-        def setInfo(value: Double): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+        inline def setInfo(value: Double): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
+        inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
         
-        @scala.inline
-        def setSuccess(value: Double): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+        inline def setSuccess(value: Double): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+        inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
         
-        @scala.inline
-        def setWarning(value: Double): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+        inline def setWarning(value: Double): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+        inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
       }
     }
   }

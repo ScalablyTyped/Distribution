@@ -12,19 +12,15 @@ trait PhononBrowserObject extends StObject {
 }
 object PhononBrowserObject {
   
-  @scala.inline
-  def apply(name: String, version: String): PhononBrowserObject = {
+  inline def apply(name: String, version: String): PhononBrowserObject = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhononBrowserObject]
   }
   
-  @scala.inline
-  implicit class PhononBrowserObjectMutableBuilder[Self <: PhononBrowserObject] (val x: Self) extends AnyVal {
+  extension [Self <: PhononBrowserObject](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

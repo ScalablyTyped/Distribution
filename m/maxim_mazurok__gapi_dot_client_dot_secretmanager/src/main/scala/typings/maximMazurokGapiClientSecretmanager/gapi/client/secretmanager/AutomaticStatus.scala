@@ -11,19 +11,15 @@ trait AutomaticStatus extends StObject {
 }
 object AutomaticStatus {
   
-  @scala.inline
-  def apply(): AutomaticStatus = {
+  inline def apply(): AutomaticStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutomaticStatus]
   }
   
-  @scala.inline
-  implicit class AutomaticStatusMutableBuilder[Self <: AutomaticStatus] (val x: Self) extends AnyVal {
+  extension [Self <: AutomaticStatus](x: Self) {
     
-    @scala.inline
-    def setCustomerManagedEncryption(value: CustomerManagedEncryptionStatus): Self = StObject.set(x, "customerManagedEncryption", value.asInstanceOf[js.Any])
+    inline def setCustomerManagedEncryption(value: CustomerManagedEncryptionStatus): Self = StObject.set(x, "customerManagedEncryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerManagedEncryptionUndefined: Self = StObject.set(x, "customerManagedEncryption", js.undefined)
+    inline def setCustomerManagedEncryptionUndefined: Self = StObject.set(x, "customerManagedEncryption", js.undefined)
   }
 }

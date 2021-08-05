@@ -23,8 +23,7 @@ object menuMenuMenuMod extends Shortcut {
        with /* key */ StringDictionary[js.Any]
   object MenuMenuProps {
     
-    @scala.inline
-    def apply(): MenuMenuProps = {
+    inline def apply(): MenuMenuProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MenuMenuProps]
     }
@@ -49,44 +48,32 @@ object menuMenuMenuMod extends Shortcut {
   }
   object StrictMenuMenuProps {
     
-    @scala.inline
-    def apply(): StrictMenuMenuProps = {
+    inline def apply(): StrictMenuMenuProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictMenuMenuProps]
     }
     
-    @scala.inline
-    implicit class StrictMenuMenuPropsMutableBuilder[Self <: StrictMenuMenuProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictMenuMenuProps](x: Self) {
       
-      @scala.inline
-      def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setContent(value: SemanticShorthandContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: SemanticShorthandContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setPosition(value: left | right): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: left | right): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     }
   }
   

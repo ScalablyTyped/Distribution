@@ -34,43 +34,31 @@ trait ArtifactLocation extends StObject {
 }
 object ArtifactLocation {
   
-  @scala.inline
-  def apply(): ArtifactLocation = {
+  inline def apply(): ArtifactLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ArtifactLocation]
   }
   
-  @scala.inline
-  implicit class ArtifactLocationMutableBuilder[Self <: ArtifactLocation] (val x: Self) extends AnyVal {
+  extension [Self <: ArtifactLocation](x: Self) {
     
-    @scala.inline
-    def setDescription(value: Message): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Message): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriBaseId(value: String): Self = StObject.set(x, "uriBaseId", value.asInstanceOf[js.Any])
+    inline def setUriBaseId(value: String): Self = StObject.set(x, "uriBaseId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriBaseIdUndefined: Self = StObject.set(x, "uriBaseId", js.undefined)
+    inline def setUriBaseIdUndefined: Self = StObject.set(x, "uriBaseId", js.undefined)
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

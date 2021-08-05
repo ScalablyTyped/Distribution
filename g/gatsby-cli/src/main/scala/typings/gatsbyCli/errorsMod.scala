@@ -14,14 +14,10 @@ object errorsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createErrorFromString(errorStr: String, sourceMapFile: String): js.Promise[Error | ErrorWithCodeFrame] = (^.asInstanceOf[js.Dynamic].applyDynamic("createErrorFromString")(errorStr.asInstanceOf[js.Any], sourceMapFile.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Error | ErrorWithCodeFrame]]
-  @scala.inline
-  def createErrorFromString(errorStr: Unit, sourceMapFile: String): js.Promise[Error | ErrorWithCodeFrame] = (^.asInstanceOf[js.Dynamic].applyDynamic("createErrorFromString")(errorStr.asInstanceOf[js.Any], sourceMapFile.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Error | ErrorWithCodeFrame]]
+  inline def createErrorFromString(errorStr: String, sourceMapFile: String): js.Promise[Error | ErrorWithCodeFrame] = (^.asInstanceOf[js.Dynamic].applyDynamic("createErrorFromString")(errorStr.asInstanceOf[js.Any], sourceMapFile.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Error | ErrorWithCodeFrame]]
+  inline def createErrorFromString(errorStr: Unit, sourceMapFile: String): js.Promise[Error | ErrorWithCodeFrame] = (^.asInstanceOf[js.Dynamic].applyDynamic("createErrorFromString")(errorStr.asInstanceOf[js.Any], sourceMapFile.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Error | ErrorWithCodeFrame]]
   
-  @scala.inline
-  def getErrorFormatter(): typings.prettyError.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("getErrorFormatter")().asInstanceOf[typings.prettyError.mod.^]
+  inline def getErrorFormatter(): typings.prettyError.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("getErrorFormatter")().asInstanceOf[typings.prettyError.mod.^]
   
-  @scala.inline
-  def sanitizeStructuredStackTrace(stack: js.Array[StackFrame]): js.Array[IStructuredStackFrame] = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeStructuredStackTrace")(stack.asInstanceOf[js.Any]).asInstanceOf[js.Array[IStructuredStackFrame]]
+  inline def sanitizeStructuredStackTrace(stack: js.Array[StackFrame]): js.Array[IStructuredStackFrame] = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeStructuredStackTrace")(stack.asInstanceOf[js.Any]).asInstanceOf[js.Array[IStructuredStackFrame]]
 }

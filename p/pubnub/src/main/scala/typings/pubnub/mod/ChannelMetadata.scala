@@ -16,31 +16,23 @@ trait ChannelMetadata[Custom /* <: ObjectCustom */] extends StObject {
 }
 object ChannelMetadata {
   
-  @scala.inline
-  def apply[Custom /* <: ObjectCustom */](): ChannelMetadata[Custom] = {
+  inline def apply[Custom /* <: ObjectCustom */](): ChannelMetadata[Custom] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChannelMetadata[Custom]]
   }
   
-  @scala.inline
-  implicit class ChannelMetadataMutableBuilder[Self <: ChannelMetadata[?], Custom /* <: ObjectCustom */] (val x: Self & ChannelMetadata[Custom]) extends AnyVal {
+  extension [Self <: ChannelMetadata[?], Custom /* <: ObjectCustom */](x: Self & ChannelMetadata[Custom]) {
     
-    @scala.inline
-    def setCustom(value: Custom): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: Custom): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+    inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

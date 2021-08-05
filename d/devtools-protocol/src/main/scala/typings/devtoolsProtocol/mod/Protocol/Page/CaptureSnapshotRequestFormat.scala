@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object CaptureSnapshotRequestFormat {
   
-  @scala.inline
-  def MHTML: mhtml = "mhtml".asInstanceOf[mhtml]
+  inline def MHTML: mhtml = "mhtml".asInstanceOf[mhtml]
 }

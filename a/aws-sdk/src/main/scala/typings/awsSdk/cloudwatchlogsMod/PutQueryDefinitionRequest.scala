@@ -28,34 +28,25 @@ trait PutQueryDefinitionRequest extends StObject {
 }
 object PutQueryDefinitionRequest {
   
-  @scala.inline
-  def apply(name: QueryDefinitionName, queryString: QueryDefinitionString): PutQueryDefinitionRequest = {
+  inline def apply(name: QueryDefinitionName, queryString: QueryDefinitionString): PutQueryDefinitionRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], queryString = queryString.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutQueryDefinitionRequest]
   }
   
-  @scala.inline
-  implicit class PutQueryDefinitionRequestMutableBuilder[Self <: PutQueryDefinitionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutQueryDefinitionRequest](x: Self) {
     
-    @scala.inline
-    def setLogGroupNames(value: LogGroupNames): Self = StObject.set(x, "logGroupNames", value.asInstanceOf[js.Any])
+    inline def setLogGroupNames(value: LogGroupNames): Self = StObject.set(x, "logGroupNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogGroupNamesUndefined: Self = StObject.set(x, "logGroupNames", js.undefined)
+    inline def setLogGroupNamesUndefined: Self = StObject.set(x, "logGroupNames", js.undefined)
     
-    @scala.inline
-    def setLogGroupNamesVarargs(value: LogGroupName*): Self = StObject.set(x, "logGroupNames", js.Array(value :_*))
+    inline def setLogGroupNamesVarargs(value: LogGroupName*): Self = StObject.set(x, "logGroupNames", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: QueryDefinitionName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: QueryDefinitionName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryDefinitionId(value: QueryId): Self = StObject.set(x, "queryDefinitionId", value.asInstanceOf[js.Any])
+    inline def setQueryDefinitionId(value: QueryId): Self = StObject.set(x, "queryDefinitionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryDefinitionIdUndefined: Self = StObject.set(x, "queryDefinitionId", js.undefined)
+    inline def setQueryDefinitionIdUndefined: Self = StObject.set(x, "queryDefinitionId", js.undefined)
     
-    @scala.inline
-    def setQueryString(value: QueryDefinitionString): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
+    inline def setQueryString(value: QueryDefinitionString): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
   }
 }

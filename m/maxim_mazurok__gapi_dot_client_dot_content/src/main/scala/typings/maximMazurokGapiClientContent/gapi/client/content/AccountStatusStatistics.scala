@@ -20,37 +20,27 @@ trait AccountStatusStatistics extends StObject {
 }
 object AccountStatusStatistics {
   
-  @scala.inline
-  def apply(): AccountStatusStatistics = {
+  inline def apply(): AccountStatusStatistics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountStatusStatistics]
   }
   
-  @scala.inline
-  implicit class AccountStatusStatisticsMutableBuilder[Self <: AccountStatusStatistics] (val x: Self) extends AnyVal {
+  extension [Self <: AccountStatusStatistics](x: Self) {
     
-    @scala.inline
-    def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    @scala.inline
-    def setDisapproved(value: String): Self = StObject.set(x, "disapproved", value.asInstanceOf[js.Any])
+    inline def setDisapproved(value: String): Self = StObject.set(x, "disapproved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisapprovedUndefined: Self = StObject.set(x, "disapproved", js.undefined)
+    inline def setDisapprovedUndefined: Self = StObject.set(x, "disapproved", js.undefined)
     
-    @scala.inline
-    def setExpiring(value: String): Self = StObject.set(x, "expiring", value.asInstanceOf[js.Any])
+    inline def setExpiring(value: String): Self = StObject.set(x, "expiring", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiringUndefined: Self = StObject.set(x, "expiring", js.undefined)
+    inline def setExpiringUndefined: Self = StObject.set(x, "expiring", js.undefined)
     
-    @scala.inline
-    def setPending(value: String): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+    inline def setPending(value: String): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingUndefined: Self = StObject.set(x, "pending", js.undefined)
+    inline def setPendingUndefined: Self = StObject.set(x, "pending", js.undefined)
   }
 }

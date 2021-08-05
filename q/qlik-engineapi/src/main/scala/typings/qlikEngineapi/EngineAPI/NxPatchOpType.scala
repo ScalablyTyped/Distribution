@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NxPatchOpType extends StObject
 object NxPatchOpType {
   
-  @scala.inline
-  def Add: typings.qlikEngineapi.qlikEngineapiStrings.Add = "Add".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.Add]
+  inline def Add: typings.qlikEngineapi.qlikEngineapiStrings.Add = "Add".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.Add]
   
-  @scala.inline
-  def Remove: typings.qlikEngineapi.qlikEngineapiStrings.Remove = "Remove".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.Remove]
+  inline def Remove: typings.qlikEngineapi.qlikEngineapiStrings.Remove = "Remove".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.Remove]
   
-  @scala.inline
-  def Replace: typings.qlikEngineapi.qlikEngineapiStrings.Replace = "Replace".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.Replace]
+  inline def Replace: typings.qlikEngineapi.qlikEngineapiStrings.Replace = "Replace".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.Replace]
 }

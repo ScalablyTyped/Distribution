@@ -198,7 +198,7 @@ trait InternetExplorerMedium extends StObject {
   /** Controls whether the window is resizable */
   var Resizable: Boolean = js.native
   
-  @JSName("SHDocVw.InternetExplorerMedium_typekey")
+  /* private */ @JSName("SHDocVw.InternetExplorerMedium_typekey")
   var SHDocVwDotInternetExplorerMedium_typekey: InternetExplorerMedium = js.native
   
   /** Set BrowserBar to Clsid */

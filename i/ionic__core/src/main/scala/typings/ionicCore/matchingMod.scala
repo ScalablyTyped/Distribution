@@ -20,30 +20,22 @@ object matchingMod {
     
     def next(): String = js.native
     
-    var path: js.Any = js.native
+    /* private */ var path: js.Any = js.native
   }
   
-  @scala.inline
-  def computePriority(chain: RouteChain): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("computePriority")(chain.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def computePriority(chain: RouteChain): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("computePriority")(chain.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def matchesIDs(ids: js.Array[String], chain: RouteChain): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("matchesIDs")(ids.asInstanceOf[js.Any], chain.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def matchesIDs(ids: js.Array[String], chain: RouteChain): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("matchesIDs")(ids.asInstanceOf[js.Any], chain.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def matchesPath(inputPath: js.Array[String], chain: RouteChain): RouteChain | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchesPath")(inputPath.asInstanceOf[js.Any], chain.asInstanceOf[js.Any])).asInstanceOf[RouteChain | Null]
+  inline def matchesPath(inputPath: js.Array[String], chain: RouteChain): RouteChain | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchesPath")(inputPath.asInstanceOf[js.Any], chain.asInstanceOf[js.Any])).asInstanceOf[RouteChain | Null]
   
-  @scala.inline
-  def matchesRedirect(input: js.Array[String], route: RouteRedirect): /* is @ionic/core.@ionic/core/dist/types/components/router/utils/interface.RouteRedirect */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchesRedirect")(input.asInstanceOf[js.Any], route.asInstanceOf[js.Any])).asInstanceOf[/* is @ionic/core.@ionic/core/dist/types/components/router/utils/interface.RouteRedirect */ Boolean]
+  inline def matchesRedirect(input: js.Array[String], route: RouteRedirect): /* is @ionic/core.@ionic/core/dist/types/components/router/utils/interface.RouteRedirect */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchesRedirect")(input.asInstanceOf[js.Any], route.asInstanceOf[js.Any])).asInstanceOf[/* is @ionic/core.@ionic/core/dist/types/components/router/utils/interface.RouteRedirect */ Boolean]
   
-  @scala.inline
-  def mergeParams(a: js.Any, b: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeParams")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def mergeParams(a: js.Any, b: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeParams")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def routeRedirect(path: js.Array[String], routes: js.Array[RouteRedirect]): js.UndefOr[RouteRedirect] = (^.asInstanceOf[js.Dynamic].applyDynamic("routeRedirect")(path.asInstanceOf[js.Any], routes.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[RouteRedirect]]
+  inline def routeRedirect(path: js.Array[String], routes: js.Array[RouteRedirect]): js.UndefOr[RouteRedirect] = (^.asInstanceOf[js.Dynamic].applyDynamic("routeRedirect")(path.asInstanceOf[js.Any], routes.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[RouteRedirect]]
   
-  @scala.inline
-  def routerIDsToChain(ids: js.Array[RouteID], chains: js.Array[RouteChain]): RouteChain | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("routerIDsToChain")(ids.asInstanceOf[js.Any], chains.asInstanceOf[js.Any])).asInstanceOf[RouteChain | Null]
+  inline def routerIDsToChain(ids: js.Array[RouteID], chains: js.Array[RouteChain]): RouteChain | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("routerIDsToChain")(ids.asInstanceOf[js.Any], chains.asInstanceOf[js.Any])).asInstanceOf[RouteChain | Null]
   
-  @scala.inline
-  def routerPathToChain(path: js.Array[String], chains: js.Array[RouteChain]): RouteChain | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("routerPathToChain")(path.asInstanceOf[js.Any], chains.asInstanceOf[js.Any])).asInstanceOf[RouteChain | Null]
+  inline def routerPathToChain(path: js.Array[String], chains: js.Array[RouteChain]): RouteChain | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("routerPathToChain")(path.asInstanceOf[js.Any], chains.asInstanceOf[js.Any])).asInstanceOf[RouteChain | Null]
 }

@@ -15,28 +15,21 @@ trait MessageAttachmentIconDescriptorBase extends StObject {
 }
 object MessageAttachmentIconDescriptorBase {
   
-  @scala.inline
-  def apply(tooltip: String | HTMLElement): MessageAttachmentIconDescriptorBase = {
+  inline def apply(tooltip: String | HTMLElement): MessageAttachmentIconDescriptorBase = {
     val __obj = js.Dynamic.literal(tooltip = tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageAttachmentIconDescriptorBase]
   }
   
-  @scala.inline
-  implicit class MessageAttachmentIconDescriptorBaseMutableBuilder[Self <: MessageAttachmentIconDescriptorBase] (val x: Self) extends AnyVal {
+  extension [Self <: MessageAttachmentIconDescriptorBase](x: Self) {
     
-    @scala.inline
-    def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+    inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
+    inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
     
-    @scala.inline
-    def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
+    inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+    inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
-    @scala.inline
-    def setTooltip(value: String | HTMLElement): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: String | HTMLElement): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
   }
 }

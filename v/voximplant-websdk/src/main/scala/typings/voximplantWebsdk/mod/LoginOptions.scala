@@ -21,25 +21,19 @@ trait LoginOptions extends StObject {
 }
 object LoginOptions {
   
-  @scala.inline
-  def apply(): LoginOptions = {
+  inline def apply(): LoginOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoginOptions]
   }
   
-  @scala.inline
-  implicit class LoginOptionsMutableBuilder[Self <: LoginOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LoginOptions](x: Self) {
     
-    @scala.inline
-    def setReceiveCalls(value: Boolean): Self = StObject.set(x, "receiveCalls", value.asInstanceOf[js.Any])
+    inline def setReceiveCalls(value: Boolean): Self = StObject.set(x, "receiveCalls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceiveCallsUndefined: Self = StObject.set(x, "receiveCalls", js.undefined)
+    inline def setReceiveCallsUndefined: Self = StObject.set(x, "receiveCalls", js.undefined)
     
-    @scala.inline
-    def setServerPresenceControl(value: Boolean): Self = StObject.set(x, "serverPresenceControl", value.asInstanceOf[js.Any])
+    inline def setServerPresenceControl(value: Boolean): Self = StObject.set(x, "serverPresenceControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerPresenceControlUndefined: Self = StObject.set(x, "serverPresenceControl", js.undefined)
+    inline def setServerPresenceControlUndefined: Self = StObject.set(x, "serverPresenceControl", js.undefined)
   }
 }

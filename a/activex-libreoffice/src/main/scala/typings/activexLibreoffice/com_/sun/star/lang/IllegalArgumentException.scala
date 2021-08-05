@@ -20,16 +20,13 @@ trait IllegalArgumentException
 }
 object IllegalArgumentException {
   
-  @scala.inline
-  def apply(ArgumentPosition: Double, Context: XInterface, Message: String): IllegalArgumentException = {
+  inline def apply(ArgumentPosition: Double, Context: XInterface, Message: String): IllegalArgumentException = {
     val __obj = js.Dynamic.literal(ArgumentPosition = ArgumentPosition.asInstanceOf[js.Any], Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any])
     __obj.asInstanceOf[IllegalArgumentException]
   }
   
-  @scala.inline
-  implicit class IllegalArgumentExceptionMutableBuilder[Self <: IllegalArgumentException] (val x: Self) extends AnyVal {
+  extension [Self <: IllegalArgumentException](x: Self) {
     
-    @scala.inline
-    def setArgumentPosition(value: Double): Self = StObject.set(x, "ArgumentPosition", value.asInstanceOf[js.Any])
+    inline def setArgumentPosition(value: Double): Self = StObject.set(x, "ArgumentPosition", value.asInstanceOf[js.Any])
   }
 }

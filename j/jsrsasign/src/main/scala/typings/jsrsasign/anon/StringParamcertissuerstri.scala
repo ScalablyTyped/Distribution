@@ -15,28 +15,21 @@ trait StringParamcertissuerstri extends StObject {
 }
 object StringParamcertissuerstri {
   
-  @scala.inline
-  def apply(str: String): StringParamcertissuerstri = {
+  inline def apply(str: String): StringParamcertissuerstri = {
     val __obj = js.Dynamic.literal(str = str.asInstanceOf[js.Any])
     __obj.asInstanceOf[StringParamcertissuerstri]
   }
   
-  @scala.inline
-  implicit class StringParamcertissuerstriMutableBuilder[Self <: StringParamcertissuerstri] (val x: Self) extends AnyVal {
+  extension [Self <: StringParamcertissuerstri](x: Self) {
     
-    @scala.inline
-    def setCertissuer(value: String): Self = StObject.set(x, "certissuer", value.asInstanceOf[js.Any])
+    inline def setCertissuer(value: String): Self = StObject.set(x, "certissuer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertissuerUndefined: Self = StObject.set(x, "certissuer", js.undefined)
+    inline def setCertissuerUndefined: Self = StObject.set(x, "certissuer", js.undefined)
     
-    @scala.inline
-    def setCertsubject(value: String): Self = StObject.set(x, "certsubject", value.asInstanceOf[js.Any])
+    inline def setCertsubject(value: String): Self = StObject.set(x, "certsubject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertsubjectUndefined: Self = StObject.set(x, "certsubject", js.undefined)
+    inline def setCertsubjectUndefined: Self = StObject.set(x, "certsubject", js.undefined)
     
-    @scala.inline
-    def setStr(value: String): Self = StObject.set(x, "str", value.asInstanceOf[js.Any])
+    inline def setStr(value: String): Self = StObject.set(x, "str", value.asInstanceOf[js.Any])
   }
 }

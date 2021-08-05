@@ -12,22 +12,17 @@ trait IPickleAccepted extends StObject {
 }
 object IPickleAccepted {
   
-  @scala.inline
-  def apply(): IPickleAccepted = {
+  inline def apply(): IPickleAccepted = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPickleAccepted]
   }
   
-  @scala.inline
-  implicit class IPickleAcceptedMutableBuilder[Self <: IPickleAccepted] (val x: Self) extends AnyVal {
+  extension [Self <: IPickleAccepted](x: Self) {
     
-    @scala.inline
-    def setPickleId(value: String): Self = StObject.set(x, "pickleId", value.asInstanceOf[js.Any])
+    inline def setPickleId(value: String): Self = StObject.set(x, "pickleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickleIdNull: Self = StObject.set(x, "pickleId", null)
+    inline def setPickleIdNull: Self = StObject.set(x, "pickleId", null)
     
-    @scala.inline
-    def setPickleIdUndefined: Self = StObject.set(x, "pickleId", js.undefined)
+    inline def setPickleIdUndefined: Self = StObject.set(x, "pickleId", js.undefined)
   }
 }

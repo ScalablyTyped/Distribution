@@ -21,20 +21,16 @@ object svgMod extends Shortcut {
   }
   object SvgProps {
     
-    @scala.inline
-    def apply(): SvgProps = {
+    inline def apply(): SvgProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SvgProps]
     }
     
-    @scala.inline
-    implicit class SvgPropsMutableBuilder[Self <: SvgProps] (val x: Self) extends AnyVal {
+    extension [Self <: SvgProps](x: Self) {
       
-      @scala.inline
-      def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+      inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
+      inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
     }
   }
   

@@ -11,16 +11,13 @@ trait IAccelerometerShakenEventArgs extends StObject {
 }
 object IAccelerometerShakenEventArgs {
   
-  @scala.inline
-  def apply(timestamp: Date): IAccelerometerShakenEventArgs = {
+  inline def apply(timestamp: Date): IAccelerometerShakenEventArgs = {
     val __obj = js.Dynamic.literal(timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAccelerometerShakenEventArgs]
   }
   
-  @scala.inline
-  implicit class IAccelerometerShakenEventArgsMutableBuilder[Self <: IAccelerometerShakenEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IAccelerometerShakenEventArgs](x: Self) {
     
-    @scala.inline
-    def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

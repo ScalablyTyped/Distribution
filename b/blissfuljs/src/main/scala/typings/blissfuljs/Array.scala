@@ -13,17 +13,14 @@ trait Array[T] extends StObject {
 }
 object Array {
   
-  @scala.inline
-  def apply[T](_underscore: BlissBindedArray[T] & BlissCollectionArray[T]): Array[T] = {
+  inline def apply[T](_underscore: BlissBindedArray[T] & BlissCollectionArray[T]): Array[T] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("_")(_underscore.asInstanceOf[js.Any])
     __obj.asInstanceOf[Array[T]]
   }
   
-  @scala.inline
-  implicit class ArrayMutableBuilder[Self <: Array[?], T] (val x: Self & Array[T]) extends AnyVal {
+  extension [Self <: Array[?], T](x: Self & Array[T]) {
     
-    @scala.inline
-    def set_underscore(value: BlissBindedArray[T] & BlissCollectionArray[T]): Self = StObject.set(x, "_", value.asInstanceOf[js.Any])
+    inline def set_underscore(value: BlissBindedArray[T] & BlissCollectionArray[T]): Self = StObject.set(x, "_", value.asInstanceOf[js.Any])
   }
 }

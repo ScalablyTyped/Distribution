@@ -42,37 +42,27 @@ trait MeshTextureProperties extends StObject {
 }
 object MeshTextureProperties {
   
-  @scala.inline
-  def apply(): MeshTextureProperties = {
+  inline def apply(): MeshTextureProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MeshTextureProperties]
   }
   
-  @scala.inline
-  implicit class MeshTexturePropertiesMutableBuilder[Self <: MeshTextureProperties] (val x: Self) extends AnyVal {
+  extension [Self <: MeshTextureProperties](x: Self) {
     
-    @scala.inline
-    def setData(value: HTMLImageElement | HTMLCanvasElement | js.Any | ImageData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: HTMLImageElement | HTMLCanvasElement | js.Any | ImageData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
+    inline def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransparentUndefined: Self = StObject.set(x, "transparent", js.undefined)
+    inline def setTransparentUndefined: Self = StObject.set(x, "transparent", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    @scala.inline
-    def setWrap(value: clamp | repeat | mirror | SeparableWrapModes): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+    inline def setWrap(value: clamp | repeat | mirror | SeparableWrapModes): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
+    inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
   }
 }

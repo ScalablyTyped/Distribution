@@ -18,8 +18,7 @@ trait ASPxClientAverageTrueRange
 }
 object ASPxClientAverageTrueRange {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     axisY: String,
     chart: ASPxClientWebChart,
     name: String,
@@ -31,10 +30,8 @@ object ASPxClientAverageTrueRange {
     __obj.asInstanceOf[ASPxClientAverageTrueRange]
   }
   
-  @scala.inline
-  implicit class ASPxClientAverageTrueRangeMutableBuilder[Self <: ASPxClientAverageTrueRange] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientAverageTrueRange](x: Self) {
     
-    @scala.inline
-    def setPointsCount(value: Double): Self = StObject.set(x, "pointsCount", value.asInstanceOf[js.Any])
+    inline def setPointsCount(value: Double): Self = StObject.set(x, "pointsCount", value.asInstanceOf[js.Any])
   }
 }

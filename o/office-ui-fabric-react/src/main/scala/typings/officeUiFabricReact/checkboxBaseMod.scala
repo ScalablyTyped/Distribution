@@ -24,21 +24,21 @@ object checkboxBaseMod {
     def this(props: ICheckboxProps) = this()
     def this(props: ICheckboxProps, context: js.Any) = this()
     
-    var _checkBox: js.Any = js.native
+    /* private */ var _checkBox: js.Any = js.native
     
-    var _classNames: js.Any = js.native
+    /* private */ var _classNames: js.Any = js.native
     
-    var _id: js.Any = js.native
+    /* private */ var _id: js.Any = js.native
     
-    var _onBlur: js.Any = js.native
+    /* private */ var _onBlur: js.Any = js.native
     
-    var _onChange: js.Any = js.native
+    /* private */ var _onChange: js.Any = js.native
     
-    var _onFocus: js.Any = js.native
+    /* private */ var _onFocus: js.Any = js.native
     
-    var _onRenderLabel: js.Any = js.native
+    /* private */ var _onRenderLabel: js.Any = js.native
     
-    var _renderContent: js.Any = js.native
+    /* private */ var _renderContent: js.Any = js.native
     
     /** Gets the current checked state. */
     /* CompleteClass */
@@ -62,11 +62,9 @@ object checkboxBaseMod {
     @JSImport("office-ui-fabric-react/lib/components/Checkbox/Checkbox.base", "CheckboxBase.defaultProps")
     @js.native
     def defaultProps: ICheckboxProps = js.native
-    @scala.inline
-    def defaultProps_=(x: ICheckboxProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: ICheckboxProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def getDerivedStateFromProps(nextProps: ReadonlyICheckboxProps, prevState: ReadonlyICheckboxState): ICheckboxState | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[ICheckboxState | Null]
+    inline def getDerivedStateFromProps(nextProps: ReadonlyICheckboxProps, prevState: ReadonlyICheckboxState): ICheckboxState | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[ICheckboxState | Null]
   }
   
   trait ICheckboxState extends StObject {
@@ -78,26 +76,20 @@ object checkboxBaseMod {
   }
   object ICheckboxState {
     
-    @scala.inline
-    def apply(): ICheckboxState = {
+    inline def apply(): ICheckboxState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICheckboxState]
     }
     
-    @scala.inline
-    implicit class ICheckboxStateMutableBuilder[Self <: ICheckboxState] (val x: Self) extends AnyVal {
+    extension [Self <: ICheckboxState](x: Self) {
       
-      @scala.inline
-      def setIsChecked(value: Boolean): Self = StObject.set(x, "isChecked", value.asInstanceOf[js.Any])
+      inline def setIsChecked(value: Boolean): Self = StObject.set(x, "isChecked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCheckedUndefined: Self = StObject.set(x, "isChecked", js.undefined)
+      inline def setIsCheckedUndefined: Self = StObject.set(x, "isChecked", js.undefined)
       
-      @scala.inline
-      def setIsIndeterminate(value: Boolean): Self = StObject.set(x, "isIndeterminate", value.asInstanceOf[js.Any])
+      inline def setIsIndeterminate(value: Boolean): Self = StObject.set(x, "isIndeterminate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsIndeterminateUndefined: Self = StObject.set(x, "isIndeterminate", js.undefined)
+      inline def setIsIndeterminateUndefined: Self = StObject.set(x, "isIndeterminate", js.undefined)
     }
   }
 }

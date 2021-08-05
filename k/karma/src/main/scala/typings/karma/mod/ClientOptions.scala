@@ -55,52 +55,37 @@ trait ClientOptions extends StObject {
 }
 object ClientOptions {
   
-  @scala.inline
-  def apply(): ClientOptions = {
+  inline def apply(): ClientOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClientOptions]
   }
   
-  @scala.inline
-  implicit class ClientOptionsMutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ClientOptions](x: Self) {
     
-    @scala.inline
-    def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+    inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    @scala.inline
-    def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
     
-    @scala.inline
-    def setCaptureConsole(value: Boolean): Self = StObject.set(x, "captureConsole", value.asInstanceOf[js.Any])
+    inline def setCaptureConsole(value: Boolean): Self = StObject.set(x, "captureConsole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptureConsoleUndefined: Self = StObject.set(x, "captureConsole", js.undefined)
+    inline def setCaptureConsoleUndefined: Self = StObject.set(x, "captureConsole", js.undefined)
     
-    @scala.inline
-    def setClearContext(value: Boolean): Self = StObject.set(x, "clearContext", value.asInstanceOf[js.Any])
+    inline def setClearContext(value: Boolean): Self = StObject.set(x, "clearContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearContextUndefined: Self = StObject.set(x, "clearContext", js.undefined)
+    inline def setClearContextUndefined: Self = StObject.set(x, "clearContext", js.undefined)
     
-    @scala.inline
-    def setClientDisplayNone(value: Boolean): Self = StObject.set(x, "clientDisplayNone", value.asInstanceOf[js.Any])
+    inline def setClientDisplayNone(value: Boolean): Self = StObject.set(x, "clientDisplayNone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientDisplayNoneUndefined: Self = StObject.set(x, "clientDisplayNone", js.undefined)
+    inline def setClientDisplayNoneUndefined: Self = StObject.set(x, "clientDisplayNone", js.undefined)
     
-    @scala.inline
-    def setRunInParent(value: Boolean): Self = StObject.set(x, "runInParent", value.asInstanceOf[js.Any])
+    inline def setRunInParent(value: Boolean): Self = StObject.set(x, "runInParent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunInParentUndefined: Self = StObject.set(x, "runInParent", js.undefined)
+    inline def setRunInParentUndefined: Self = StObject.set(x, "runInParent", js.undefined)
     
-    @scala.inline
-    def setUseIframe(value: Boolean): Self = StObject.set(x, "useIframe", value.asInstanceOf[js.Any])
+    inline def setUseIframe(value: Boolean): Self = StObject.set(x, "useIframe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseIframeUndefined: Self = StObject.set(x, "useIframe", js.undefined)
+    inline def setUseIframeUndefined: Self = StObject.set(x, "useIframe", js.undefined)
   }
 }

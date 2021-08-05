@@ -21,37 +21,27 @@ trait StatefulContainerProps extends StObject {
 }
 object StatefulContainerProps {
   
-  @scala.inline
-  def apply(): StatefulContainerProps = {
+  inline def apply(): StatefulContainerProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StatefulContainerProps]
   }
   
-  @scala.inline
-  implicit class StatefulContainerPropsMutableBuilder[Self <: StatefulContainerProps] (val x: Self) extends AnyVal {
+  extension [Self <: StatefulContainerProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setInitialState(value: State): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
+    inline def setInitialState(value: State): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
+    inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
     
-    @scala.inline
-    def setOnChange(value: FormEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: FormEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+    inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
-    @scala.inline
-    def setStateReducer(value: (change_, /* nextState */ State, /* currentState */ State) => State): Self = StObject.set(x, "stateReducer", js.Any.fromFunction3(value))
+    inline def setStateReducer(value: (change_, /* nextState */ State, /* currentState */ State) => State): Self = StObject.set(x, "stateReducer", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setStateReducerUndefined: Self = StObject.set(x, "stateReducer", js.undefined)
+    inline def setStateReducerUndefined: Self = StObject.set(x, "stateReducer", js.undefined)
   }
 }

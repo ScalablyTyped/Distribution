@@ -18,25 +18,19 @@ trait ThingGroupProperties extends StObject {
 }
 object ThingGroupProperties {
   
-  @scala.inline
-  def apply(): ThingGroupProperties = {
+  inline def apply(): ThingGroupProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThingGroupProperties]
   }
   
-  @scala.inline
-  implicit class ThingGroupPropertiesMutableBuilder[Self <: ThingGroupProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ThingGroupProperties](x: Self) {
     
-    @scala.inline
-    def setAttributePayload(value: AttributePayload): Self = StObject.set(x, "attributePayload", value.asInstanceOf[js.Any])
+    inline def setAttributePayload(value: AttributePayload): Self = StObject.set(x, "attributePayload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributePayloadUndefined: Self = StObject.set(x, "attributePayload", js.undefined)
+    inline def setAttributePayloadUndefined: Self = StObject.set(x, "attributePayload", js.undefined)
     
-    @scala.inline
-    def setThingGroupDescription(value: ThingGroupDescription): Self = StObject.set(x, "thingGroupDescription", value.asInstanceOf[js.Any])
+    inline def setThingGroupDescription(value: ThingGroupDescription): Self = StObject.set(x, "thingGroupDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingGroupDescriptionUndefined: Self = StObject.set(x, "thingGroupDescription", js.undefined)
+    inline def setThingGroupDescriptionUndefined: Self = StObject.set(x, "thingGroupDescription", js.undefined)
   }
 }

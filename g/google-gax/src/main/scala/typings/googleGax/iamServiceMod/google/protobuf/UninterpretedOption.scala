@@ -100,10 +100,8 @@ object UninterpretedOption {
       * @returns NamePart instance
       */
     /* static member */
-    @scala.inline
-    def create(): NamePart = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[NamePart]
-    @scala.inline
-    def create(properties: INamePart): NamePart = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[NamePart]
+    inline def create(): NamePart = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[NamePart]
+    inline def create(properties: INamePart): NamePart = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[NamePart]
     
     /**
       * Decodes a NamePart message from the specified reader or buffer.
@@ -114,14 +112,10 @@ object UninterpretedOption {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decode(reader: Reader): NamePart = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[NamePart]
-    @scala.inline
-    def decode(reader: Reader, length: Double): NamePart = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[NamePart]
-    @scala.inline
-    def decode(reader: Uint8Array): NamePart = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[NamePart]
-    @scala.inline
-    def decode(reader: Uint8Array, length: Double): NamePart = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[NamePart]
+    inline def decode(reader: Reader): NamePart = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[NamePart]
+    inline def decode(reader: Reader, length: Double): NamePart = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[NamePart]
+    inline def decode(reader: Uint8Array): NamePart = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[NamePart]
+    inline def decode(reader: Uint8Array, length: Double): NamePart = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[NamePart]
     
     /**
       * Decodes a NamePart message from the specified reader or buffer, length delimited.
@@ -131,10 +125,8 @@ object UninterpretedOption {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decodeDelimited(reader: Reader): NamePart = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[NamePart]
-    @scala.inline
-    def decodeDelimited(reader: Uint8Array): NamePart = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[NamePart]
+    inline def decodeDelimited(reader: Reader): NamePart = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[NamePart]
+    inline def decodeDelimited(reader: Uint8Array): NamePart = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[NamePart]
     
     /**
       * Encodes the specified NamePart message. Does not implicitly {@link google.protobuf.UninterpretedOption.NamePart.verify|verify} messages.
@@ -143,10 +135,8 @@ object UninterpretedOption {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encode(message: INamePart): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encode(message: INamePart, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encode(message: INamePart): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encode(message: INamePart, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified NamePart message, length delimited. Does not implicitly {@link google.protobuf.UninterpretedOption.NamePart.verify|verify} messages.
@@ -155,10 +145,8 @@ object UninterpretedOption {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encodeDelimited(message: INamePart): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encodeDelimited(message: INamePart, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encodeDelimited(message: INamePart): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encodeDelimited(message: INamePart, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a NamePart message from a plain object. Also converts values to their respective internal types.
@@ -166,8 +154,7 @@ object UninterpretedOption {
       * @returns NamePart
       */
     /* static member */
-    @scala.inline
-    def fromObject(`object`: StringDictionary[js.Any]): NamePart = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[NamePart]
+    inline def fromObject(`object`: StringDictionary[js.Any]): NamePart = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[NamePart]
     
     /**
       * Creates a plain object from a NamePart message. Also converts values to other types if specified.
@@ -176,10 +163,8 @@ object UninterpretedOption {
       * @returns Plain object
       */
     /* static member */
-    @scala.inline
-    def toObject(message: NamePart): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    @scala.inline
-    def toObject(message: NamePart, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: NamePart): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: NamePart, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a NamePart message.
@@ -187,8 +172,7 @@ object UninterpretedOption {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @scala.inline
-    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /**
@@ -197,10 +181,8 @@ object UninterpretedOption {
     * @returns UninterpretedOption instance
     */
   /* static member */
-  @scala.inline
-  def create(): UninterpretedOption = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[UninterpretedOption]
-  @scala.inline
-  def create(properties: IUninterpretedOption): UninterpretedOption = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[UninterpretedOption]
+  inline def create(): UninterpretedOption = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[UninterpretedOption]
+  inline def create(properties: IUninterpretedOption): UninterpretedOption = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[UninterpretedOption]
   
   /**
     * Decodes an UninterpretedOption message from the specified reader or buffer.
@@ -211,14 +193,10 @@ object UninterpretedOption {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decode(reader: Reader): UninterpretedOption = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[UninterpretedOption]
-  @scala.inline
-  def decode(reader: Reader, length: Double): UninterpretedOption = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[UninterpretedOption]
-  @scala.inline
-  def decode(reader: Uint8Array): UninterpretedOption = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[UninterpretedOption]
-  @scala.inline
-  def decode(reader: Uint8Array, length: Double): UninterpretedOption = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[UninterpretedOption]
+  inline def decode(reader: Reader): UninterpretedOption = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[UninterpretedOption]
+  inline def decode(reader: Reader, length: Double): UninterpretedOption = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[UninterpretedOption]
+  inline def decode(reader: Uint8Array): UninterpretedOption = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[UninterpretedOption]
+  inline def decode(reader: Uint8Array, length: Double): UninterpretedOption = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[UninterpretedOption]
   
   /**
     * Decodes an UninterpretedOption message from the specified reader or buffer, length delimited.
@@ -228,10 +206,8 @@ object UninterpretedOption {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decodeDelimited(reader: Reader): UninterpretedOption = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[UninterpretedOption]
-  @scala.inline
-  def decodeDelimited(reader: Uint8Array): UninterpretedOption = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[UninterpretedOption]
+  inline def decodeDelimited(reader: Reader): UninterpretedOption = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[UninterpretedOption]
+  inline def decodeDelimited(reader: Uint8Array): UninterpretedOption = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[UninterpretedOption]
   
   /**
     * Encodes the specified UninterpretedOption message. Does not implicitly {@link google.protobuf.UninterpretedOption.verify|verify} messages.
@@ -240,10 +216,8 @@ object UninterpretedOption {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encode(message: IUninterpretedOption): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encode(message: IUninterpretedOption, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encode(message: IUninterpretedOption): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encode(message: IUninterpretedOption, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified UninterpretedOption message, length delimited. Does not implicitly {@link google.protobuf.UninterpretedOption.verify|verify} messages.
@@ -252,10 +226,8 @@ object UninterpretedOption {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encodeDelimited(message: IUninterpretedOption): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encodeDelimited(message: IUninterpretedOption, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IUninterpretedOption): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IUninterpretedOption, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates an UninterpretedOption message from a plain object. Also converts values to their respective internal types.
@@ -263,8 +235,7 @@ object UninterpretedOption {
     * @returns UninterpretedOption
     */
   /* static member */
-  @scala.inline
-  def fromObject(`object`: StringDictionary[js.Any]): UninterpretedOption = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[UninterpretedOption]
+  inline def fromObject(`object`: StringDictionary[js.Any]): UninterpretedOption = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[UninterpretedOption]
   
   /**
     * Creates a plain object from an UninterpretedOption message. Also converts values to other types if specified.
@@ -273,10 +244,8 @@ object UninterpretedOption {
     * @returns Plain object
     */
   /* static member */
-  @scala.inline
-  def toObject(message: UninterpretedOption): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def toObject(message: UninterpretedOption, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: UninterpretedOption): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: UninterpretedOption, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies an UninterpretedOption message.
@@ -284,8 +253,7 @@ object UninterpretedOption {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @scala.inline
-  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   /** Properties of a NamePart. */
   trait INamePart extends StObject {
@@ -298,20 +266,16 @@ object UninterpretedOption {
   }
   object INamePart {
     
-    @scala.inline
-    def apply(isExtension: Boolean, namePart: String): INamePart = {
+    inline def apply(isExtension: Boolean, namePart: String): INamePart = {
       val __obj = js.Dynamic.literal(isExtension = isExtension.asInstanceOf[js.Any], namePart = namePart.asInstanceOf[js.Any])
       __obj.asInstanceOf[INamePart]
     }
     
-    @scala.inline
-    implicit class INamePartMutableBuilder[Self <: INamePart] (val x: Self) extends AnyVal {
+    extension [Self <: INamePart](x: Self) {
       
-      @scala.inline
-      def setIsExtension(value: Boolean): Self = StObject.set(x, "isExtension", value.asInstanceOf[js.Any])
+      inline def setIsExtension(value: Boolean): Self = StObject.set(x, "isExtension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePart(value: String): Self = StObject.set(x, "namePart", value.asInstanceOf[js.Any])
+      inline def setNamePart(value: String): Self = StObject.set(x, "namePart", value.asInstanceOf[js.Any])
     }
   }
 }

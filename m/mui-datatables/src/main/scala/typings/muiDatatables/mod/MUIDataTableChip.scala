@@ -14,31 +14,23 @@ trait MUIDataTableChip extends StObject {
 }
 object MUIDataTableChip {
   
-  @scala.inline
-  def apply(): MUIDataTableChip = {
+  inline def apply(): MUIDataTableChip = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MUIDataTableChip]
   }
   
-  @scala.inline
-  implicit class MUIDataTableChipMutableBuilder[Self <: MUIDataTableChip] (val x: Self) extends AnyVal {
+  extension [Self <: MUIDataTableChip](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setColor(value: ChipColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: ChipColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setVariant(value: ChipVariant): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+    inline def setVariant(value: ChipVariant): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
+    inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
   }
 }

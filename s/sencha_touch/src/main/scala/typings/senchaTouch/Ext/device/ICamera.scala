@@ -10,8 +10,7 @@ trait ICamera
      with IAbstract
 object ICamera {
   
-  @scala.inline
-  def apply(): ICamera = {
+  inline def apply(): ICamera = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ICamera]
   }

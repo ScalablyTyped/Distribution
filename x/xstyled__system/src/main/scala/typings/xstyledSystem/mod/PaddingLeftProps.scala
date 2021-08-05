@@ -20,42 +20,34 @@ trait PaddingLeftProps[TLength] extends StObject {
 }
 object PaddingLeftProps {
   
-  @scala.inline
-  def apply[TLength](): PaddingLeftProps[TLength] = {
+  inline def apply[TLength](): PaddingLeftProps[TLength] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PaddingLeftProps[TLength]]
   }
   
-  @scala.inline
-  implicit class PaddingLeftPropsMutableBuilder[Self <: PaddingLeftProps[?], TLength] (val x: Self & PaddingLeftProps[TLength]) extends AnyVal {
+  extension [Self <: PaddingLeftProps[?], TLength](x: Self & PaddingLeftProps[TLength]) {
     
-    @scala.inline
-    def setPaddingLeft(
+    inline def setPaddingLeft(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingLeft<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingLeftUndefined: Self = StObject.set(x, "paddingLeft", js.undefined)
+    inline def setPaddingLeftUndefined: Self = StObject.set(x, "paddingLeft", js.undefined)
     
-    @scala.inline
-    def setPaddingLeftVarargs(
+    inline def setPaddingLeftVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingLeft<TLength> */ js.Any)*
     ): Self = StObject.set(x, "paddingLeft", js.Array(value :_*))
     
-    @scala.inline
-    def setPl(
+    inline def setPl(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingLeft<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlUndefined: Self = StObject.set(x, "pl", js.undefined)
+    inline def setPlUndefined: Self = StObject.set(x, "pl", js.undefined)
     
-    @scala.inline
-    def setPlVarargs(
+    inline def setPlVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingLeft<TLength> */ js.Any)*
     ): Self = StObject.set(x, "pl", js.Array(value :_*))
   }

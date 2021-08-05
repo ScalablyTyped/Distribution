@@ -25,6 +25,5 @@ object Geometry {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def computeNumberOfVertices(geometry: Cartesian3): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("computeNumberOfVertices")(geometry.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def computeNumberOfVertices(geometry: Cartesian3): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("computeNumberOfVertices")(geometry.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

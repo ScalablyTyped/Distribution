@@ -12,8 +12,6 @@ object validatePromiseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ValidatePromise(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ValidatePromise")().asInstanceOf[PropertyDecorator]
-  @scala.inline
-  def ValidatePromise(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ValidatePromise")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  inline def ValidatePromise(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ValidatePromise")().asInstanceOf[PropertyDecorator]
+  inline def ValidatePromise(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ValidatePromise")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
 }

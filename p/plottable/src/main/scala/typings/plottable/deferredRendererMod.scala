@@ -17,15 +17,15 @@ object deferredRendererMod {
     
     /* private */ def applyTransform(): js.Any = js.native
     
-    var applyTransformCallback: js.Any = js.native
+    /* private */ var applyTransformCallback: js.Any = js.native
     
-    var domainTransformX: js.Any = js.native
+    /* private */ var domainTransformX: js.Any = js.native
     
-    var domainTransformY: js.Any = js.native
+    /* private */ var domainTransformY: js.Any = js.native
     
-    var renderCallback: js.Any = js.native
+    /* private */ var renderCallback: js.Any = js.native
     
-    var renderDeferred: js.Any = js.native
+    /* private */ var renderDeferred: js.Any = js.native
     
     def resetTransforms(): Unit = js.native
     
@@ -34,7 +34,7 @@ object deferredRendererMod {
     def setDomains(scaleX: ITransformableScale): Unit = js.native
     def setDomains(scaleX: ITransformableScale, scaleY: ITransformableScale): Unit = js.native
     
-    var timeoutToken: js.Any = js.native
+    /* private */ var timeoutToken: js.Any = js.native
     
     def updateDomains(): Unit = js.native
     def updateDomains(scaleX: Unit, scaleY: ITransformableScale): Unit = js.native
@@ -51,7 +51,6 @@ object deferredRendererMod {
     @JSImport("plottable/build/src/plots/deferredRenderer", "DeferredRenderer.DEFERRED_RENDERING_DELAY")
     @js.native
     def DEFERRED_RENDERING_DELAY: Double = js.native
-    @scala.inline
-    def DEFERRED_RENDERING_DELAY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFERRED_RENDERING_DELAY")(x.asInstanceOf[js.Any])
+    inline def DEFERRED_RENDERING_DELAY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFERRED_RENDERING_DELAY")(x.asInstanceOf[js.Any])
   }
 }

@@ -29,18 +29,13 @@ object siderMenuSiderMenuMod {
   @js.native
   val default: FC[SiderMenuProps & PrivateSiderMenuProps] = js.native
   
-  @scala.inline
-  def defaultRenderCollapsedButton(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultRenderCollapsedButton")().asInstanceOf[Element]
-  @scala.inline
-  def defaultRenderCollapsedButton(collapsed: Boolean): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultRenderCollapsedButton")(collapsed.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def defaultRenderCollapsedButton(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultRenderCollapsedButton")().asInstanceOf[Element]
+  inline def defaultRenderCollapsedButton(collapsed: Boolean): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultRenderCollapsedButton")(collapsed.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @scala.inline
-  def defaultRenderLogo(logo: ReactNode): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultRenderLogo")(logo.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  inline def defaultRenderLogo(logo: ReactNode): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultRenderLogo")(logo.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
   
-  @scala.inline
-  def defaultRenderLogoAndTitle(props: SiderMenuProps): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultRenderLogoAndTitle")(props.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
-  @scala.inline
-  def defaultRenderLogoAndTitle(props: SiderMenuProps, renderKey: String): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultRenderLogoAndTitle")(props.asInstanceOf[js.Any], renderKey.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  inline def defaultRenderLogoAndTitle(props: SiderMenuProps): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultRenderLogoAndTitle")(props.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  inline def defaultRenderLogoAndTitle(props: SiderMenuProps, renderKey: String): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultRenderLogoAndTitle")(props.asInstanceOf[js.Any], renderKey.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
   
   trait PrivateSiderMenuProps extends StObject {
     
@@ -48,20 +43,16 @@ object siderMenuSiderMenuMod {
   }
   object PrivateSiderMenuProps {
     
-    @scala.inline
-    def apply(matchMenuKeys: js.Array[String]): PrivateSiderMenuProps = {
+    inline def apply(matchMenuKeys: js.Array[String]): PrivateSiderMenuProps = {
       val __obj = js.Dynamic.literal(matchMenuKeys = matchMenuKeys.asInstanceOf[js.Any])
       __obj.asInstanceOf[PrivateSiderMenuProps]
     }
     
-    @scala.inline
-    implicit class PrivateSiderMenuPropsMutableBuilder[Self <: PrivateSiderMenuProps] (val x: Self) extends AnyVal {
+    extension [Self <: PrivateSiderMenuProps](x: Self) {
       
-      @scala.inline
-      def setMatchMenuKeys(value: js.Array[String]): Self = StObject.set(x, "matchMenuKeys", value.asInstanceOf[js.Any])
+      inline def setMatchMenuKeys(value: js.Array[String]): Self = StObject.set(x, "matchMenuKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchMenuKeysVarargs(value: String*): Self = StObject.set(x, "matchMenuKeys", js.Array(value :_*))
+      inline def setMatchMenuKeysVarargs(value: String*): Self = StObject.set(x, "matchMenuKeys", js.Array(value :_*))
     }
   }
   
@@ -111,92 +102,64 @@ object siderMenuSiderMenuMod {
   }
   object SiderMenuProps {
     
-    @scala.inline
-    def apply(): SiderMenuProps = {
+    inline def apply(): SiderMenuProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SiderMenuProps]
     }
     
-    @scala.inline
-    implicit class SiderMenuPropsMutableBuilder[Self <: SiderMenuProps] (val x: Self) extends AnyVal {
+    extension [Self <: SiderMenuProps](x: Self) {
       
-      @scala.inline
-      def setBreakpoint(value: xs | sm | md | lg | xl | xxl | `false`): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
+      inline def setBreakpoint(value: xs | sm | md | lg | xl | xxl | `false`): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBreakpointUndefined: Self = StObject.set(x, "breakpoint", js.undefined)
+      inline def setBreakpointUndefined: Self = StObject.set(x, "breakpoint", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setCollapsedButtonRender(value: WithFalse[js.Function1[/* collapsed */ js.UndefOr[Boolean], ReactNode]]): Self = StObject.set(x, "collapsedButtonRender", value.asInstanceOf[js.Any])
+      inline def setCollapsedButtonRender(value: WithFalse[js.Function1[/* collapsed */ js.UndefOr[Boolean], ReactNode]]): Self = StObject.set(x, "collapsedButtonRender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapsedButtonRenderFunction1(value: /* collapsed */ js.UndefOr[Boolean] => ReactNode): Self = StObject.set(x, "collapsedButtonRender", js.Any.fromFunction1(value))
+      inline def setCollapsedButtonRenderFunction1(value: /* collapsed */ js.UndefOr[Boolean] => ReactNode): Self = StObject.set(x, "collapsedButtonRender", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCollapsedButtonRenderUndefined: Self = StObject.set(x, "collapsedButtonRender", js.undefined)
+      inline def setCollapsedButtonRenderUndefined: Self = StObject.set(x, "collapsedButtonRender", js.undefined)
       
-      @scala.inline
-      def setGetContainer(value: `false`): Self = StObject.set(x, "getContainer", value.asInstanceOf[js.Any])
+      inline def setGetContainer(value: `false`): Self = StObject.set(x, "getContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetContainerUndefined: Self = StObject.set(x, "getContainer", js.undefined)
+      inline def setGetContainerUndefined: Self = StObject.set(x, "getContainer", js.undefined)
       
-      @scala.inline
-      def setHide(value: Boolean): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+      inline def setHide(value: Boolean): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
+      inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
       
-      @scala.inline
-      def setLinks(value: js.Array[ReactNode]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+      inline def setLinks(value: js.Array[ReactNode]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
+      inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
       
-      @scala.inline
-      def setLinksVarargs(value: ReactNode*): Self = StObject.set(x, "links", js.Array(value :_*))
+      inline def setLinksVarargs(value: ReactNode*): Self = StObject.set(x, "links", js.Array(value :_*))
       
-      @scala.inline
-      def setLogo(value: ReactNode): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
+      inline def setLogo(value: ReactNode): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
+      inline def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
       
-      @scala.inline
-      def setMenuContentRender(value: WithFalse[js.Function2[SiderMenuProps, /* defaultDom */ ReactNode, ReactNode]]): Self = StObject.set(x, "menuContentRender", value.asInstanceOf[js.Any])
+      inline def setMenuContentRender(value: WithFalse[js.Function2[SiderMenuProps, /* defaultDom */ ReactNode, ReactNode]]): Self = StObject.set(x, "menuContentRender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuContentRenderFunction2(value: (SiderMenuProps, /* defaultDom */ ReactNode) => ReactNode): Self = StObject.set(x, "menuContentRender", js.Any.fromFunction2(value))
+      inline def setMenuContentRenderFunction2(value: (SiderMenuProps, /* defaultDom */ ReactNode) => ReactNode): Self = StObject.set(x, "menuContentRender", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMenuContentRenderUndefined: Self = StObject.set(x, "menuContentRender", js.undefined)
+      inline def setMenuContentRenderUndefined: Self = StObject.set(x, "menuContentRender", js.undefined)
       
-      @scala.inline
-      def setMenuExtraRender(value: WithFalse[js.Function1[SiderMenuProps, ReactNode]]): Self = StObject.set(x, "menuExtraRender", value.asInstanceOf[js.Any])
+      inline def setMenuExtraRender(value: WithFalse[js.Function1[SiderMenuProps, ReactNode]]): Self = StObject.set(x, "menuExtraRender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuExtraRenderFunction1(value: SiderMenuProps => ReactNode): Self = StObject.set(x, "menuExtraRender", js.Any.fromFunction1(value))
+      inline def setMenuExtraRenderFunction1(value: SiderMenuProps => ReactNode): Self = StObject.set(x, "menuExtraRender", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMenuExtraRenderUndefined: Self = StObject.set(x, "menuExtraRender", js.undefined)
+      inline def setMenuExtraRenderUndefined: Self = StObject.set(x, "menuExtraRender", js.undefined)
       
-      @scala.inline
-      def setMenuFooterRender(value: WithFalse[js.Function1[/* props */ js.UndefOr[SiderMenuProps], ReactNode]]): Self = StObject.set(x, "menuFooterRender", value.asInstanceOf[js.Any])
+      inline def setMenuFooterRender(value: WithFalse[js.Function1[/* props */ js.UndefOr[SiderMenuProps], ReactNode]]): Self = StObject.set(x, "menuFooterRender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuFooterRenderFunction1(value: /* props */ js.UndefOr[SiderMenuProps] => ReactNode): Self = StObject.set(x, "menuFooterRender", js.Any.fromFunction1(value))
+      inline def setMenuFooterRenderFunction1(value: /* props */ js.UndefOr[SiderMenuProps] => ReactNode): Self = StObject.set(x, "menuFooterRender", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMenuFooterRenderUndefined: Self = StObject.set(x, "menuFooterRender", js.undefined)
+      inline def setMenuFooterRenderUndefined: Self = StObject.set(x, "menuFooterRender", js.undefined)
       
-      @scala.inline
-      def setMenuHeaderRender(
+      inline def setMenuHeaderRender(
         value: WithFalse[
               js.Function3[
                 /* logo */ ReactNode, 
@@ -207,37 +170,27 @@ object siderMenuSiderMenuMod {
             ]
       ): Self = StObject.set(x, "menuHeaderRender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuHeaderRenderFunction3(
+      inline def setMenuHeaderRenderFunction3(
         value: (/* logo */ ReactNode, /* title */ ReactNode, /* props */ js.UndefOr[SiderMenuProps]) => ReactNode
       ): Self = StObject.set(x, "menuHeaderRender", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setMenuHeaderRenderUndefined: Self = StObject.set(x, "menuHeaderRender", js.undefined)
+      inline def setMenuHeaderRenderUndefined: Self = StObject.set(x, "menuHeaderRender", js.undefined)
       
-      @scala.inline
-      def setOnMenuHeaderClick(value: /* e */ MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMenuHeaderClick", js.Any.fromFunction1(value))
+      inline def setOnMenuHeaderClick(value: /* e */ MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMenuHeaderClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMenuHeaderClickUndefined: Self = StObject.set(x, "onMenuHeaderClick", js.undefined)
+      inline def setOnMenuHeaderClickUndefined: Self = StObject.set(x, "onMenuHeaderClick", js.undefined)
       
-      @scala.inline
-      def setOnOpenChange(value: /* openKeys */ WithFalse[js.Array[String]] => Unit): Self = StObject.set(x, "onOpenChange", js.Any.fromFunction1(value))
+      inline def setOnOpenChange(value: /* openKeys */ WithFalse[js.Array[String]] => Unit): Self = StObject.set(x, "onOpenChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnOpenChangeUndefined: Self = StObject.set(x, "onOpenChange", js.undefined)
+      inline def setOnOpenChangeUndefined: Self = StObject.set(x, "onOpenChange", js.undefined)
       
-      @scala.inline
-      def setSiderWidth(value: Double): Self = StObject.set(x, "siderWidth", value.asInstanceOf[js.Any])
+      inline def setSiderWidth(value: Double): Self = StObject.set(x, "siderWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSiderWidthUndefined: Self = StObject.set(x, "siderWidth", js.undefined)
+      inline def setSiderWidthUndefined: Self = StObject.set(x, "siderWidth", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

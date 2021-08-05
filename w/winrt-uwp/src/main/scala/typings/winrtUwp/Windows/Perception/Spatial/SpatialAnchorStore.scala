@@ -19,25 +19,19 @@ trait SpatialAnchorStore extends StObject {
 }
 object SpatialAnchorStore {
   
-  @scala.inline
-  def apply(clear: js.Any, getAllSavedAnchors: js.Any, remove: js.Any, trySave: js.Any): SpatialAnchorStore = {
+  inline def apply(clear: js.Any, getAllSavedAnchors: js.Any, remove: js.Any, trySave: js.Any): SpatialAnchorStore = {
     val __obj = js.Dynamic.literal(clear = clear.asInstanceOf[js.Any], getAllSavedAnchors = getAllSavedAnchors.asInstanceOf[js.Any], remove = remove.asInstanceOf[js.Any], trySave = trySave.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpatialAnchorStore]
   }
   
-  @scala.inline
-  implicit class SpatialAnchorStoreMutableBuilder[Self <: SpatialAnchorStore] (val x: Self) extends AnyVal {
+  extension [Self <: SpatialAnchorStore](x: Self) {
     
-    @scala.inline
-    def setClear(value: js.Any): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
+    inline def setClear(value: js.Any): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAllSavedAnchors(value: js.Any): Self = StObject.set(x, "getAllSavedAnchors", value.asInstanceOf[js.Any])
+    inline def setGetAllSavedAnchors(value: js.Any): Self = StObject.set(x, "getAllSavedAnchors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemove(value: js.Any): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+    inline def setRemove(value: js.Any): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrySave(value: js.Any): Self = StObject.set(x, "trySave", value.asInstanceOf[js.Any])
+    inline def setTrySave(value: js.Any): Self = StObject.set(x, "trySave", value.asInstanceOf[js.Any])
   }
 }

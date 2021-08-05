@@ -18,22 +18,17 @@ trait DeleteSmsTemplateRequest extends StObject {
 }
 object DeleteSmsTemplateRequest {
   
-  @scala.inline
-  def apply(TemplateName: string): DeleteSmsTemplateRequest = {
+  inline def apply(TemplateName: string): DeleteSmsTemplateRequest = {
     val __obj = js.Dynamic.literal(TemplateName = TemplateName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteSmsTemplateRequest]
   }
   
-  @scala.inline
-  implicit class DeleteSmsTemplateRequestMutableBuilder[Self <: DeleteSmsTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSmsTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setTemplateName(value: string): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
+    inline def setTemplateName(value: string): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: string): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: string): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

@@ -12,19 +12,15 @@ trait NearestRoadsResponse extends StObject {
 }
 object NearestRoadsResponse {
   
-  @scala.inline
-  def apply(snappedPoints: js.Array[Location]): NearestRoadsResponse = {
+  inline def apply(snappedPoints: js.Array[Location]): NearestRoadsResponse = {
     val __obj = js.Dynamic.literal(snappedPoints = snappedPoints.asInstanceOf[js.Any])
     __obj.asInstanceOf[NearestRoadsResponse]
   }
   
-  @scala.inline
-  implicit class NearestRoadsResponseMutableBuilder[Self <: NearestRoadsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: NearestRoadsResponse](x: Self) {
     
-    @scala.inline
-    def setSnappedPoints(value: js.Array[Location]): Self = StObject.set(x, "snappedPoints", value.asInstanceOf[js.Any])
+    inline def setSnappedPoints(value: js.Array[Location]): Self = StObject.set(x, "snappedPoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnappedPointsVarargs(value: Location*): Self = StObject.set(x, "snappedPoints", js.Array(value :_*))
+    inline def setSnappedPointsVarargs(value: Location*): Self = StObject.set(x, "snappedPoints", js.Array(value :_*))
   }
 }

@@ -27,33 +27,27 @@ trait ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSc
 }
 object ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParameters {
   
-  @scala.inline
-  def apply(): ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParameters = {
+  inline def apply(): ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParameters]
   }
   
-  @scala.inline
-  implicit class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersMutableBuilder[Self <: ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParameters] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParameters](x: Self) {
     
-    @scala.inline
-    def setCsvMappingParameters(
+    inline def setCsvMappingParameters(
       value: Input[
           ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersCsvMappingParameters
         ]
     ): Self = StObject.set(x, "csvMappingParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCsvMappingParametersUndefined: Self = StObject.set(x, "csvMappingParameters", js.undefined)
+    inline def setCsvMappingParametersUndefined: Self = StObject.set(x, "csvMappingParameters", js.undefined)
     
-    @scala.inline
-    def setJsonMappingParameters(
+    inline def setJsonMappingParameters(
       value: Input[
           ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersJsonMappingParameters
         ]
     ): Self = StObject.set(x, "jsonMappingParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsonMappingParametersUndefined: Self = StObject.set(x, "jsonMappingParameters", js.undefined)
+    inline def setJsonMappingParametersUndefined: Self = StObject.set(x, "jsonMappingParameters", js.undefined)
   }
 }

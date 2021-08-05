@@ -36,25 +36,19 @@ trait ChatRoomPresenceUpdate
 }
 object ChatRoomPresenceUpdate {
   
-  @scala.inline
-  def apply(message: String, participant: ParticipantInfo, presence: UserStatuses, room: String): ChatRoomPresenceUpdate = {
+  inline def apply(message: String, participant: ParticipantInfo, presence: UserStatuses, room: String): ChatRoomPresenceUpdate = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], participant = participant.asInstanceOf[js.Any], presence = presence.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatRoomPresenceUpdate]
   }
   
-  @scala.inline
-  implicit class ChatRoomPresenceUpdateMutableBuilder[Self <: ChatRoomPresenceUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: ChatRoomPresenceUpdate](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParticipant(value: ParticipantInfo): Self = StObject.set(x, "participant", value.asInstanceOf[js.Any])
+    inline def setParticipant(value: ParticipantInfo): Self = StObject.set(x, "participant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPresence(value: UserStatuses): Self = StObject.set(x, "presence", value.asInstanceOf[js.Any])
+    inline def setPresence(value: UserStatuses): Self = StObject.set(x, "presence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoom(value: String): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
+    inline def setRoom(value: String): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
   }
 }

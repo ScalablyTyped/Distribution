@@ -14,16 +14,13 @@ trait FullscreenSetDetails
 }
 object FullscreenSetDetails {
   
-  @scala.inline
-  def apply(primaryPattern: String): FullscreenSetDetails = {
+  inline def apply(primaryPattern: String): FullscreenSetDetails = {
     val __obj = js.Dynamic.literal(primaryPattern = primaryPattern.asInstanceOf[js.Any], setting = "allow")
     __obj.asInstanceOf[FullscreenSetDetails]
   }
   
-  @scala.inline
-  implicit class FullscreenSetDetailsMutableBuilder[Self <: FullscreenSetDetails] (val x: Self) extends AnyVal {
+  extension [Self <: FullscreenSetDetails](x: Self) {
     
-    @scala.inline
-    def setSetting(value: allow): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
+    inline def setSetting(value: allow): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
   }
 }

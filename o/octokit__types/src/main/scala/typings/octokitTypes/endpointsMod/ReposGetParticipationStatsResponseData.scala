@@ -12,25 +12,19 @@ trait ReposGetParticipationStatsResponseData extends StObject {
 }
 object ReposGetParticipationStatsResponseData {
   
-  @scala.inline
-  def apply(all: js.Array[Double], owner: js.Array[Double]): ReposGetParticipationStatsResponseData = {
+  inline def apply(all: js.Array[Double], owner: js.Array[Double]): ReposGetParticipationStatsResponseData = {
     val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposGetParticipationStatsResponseData]
   }
   
-  @scala.inline
-  implicit class ReposGetParticipationStatsResponseDataMutableBuilder[Self <: ReposGetParticipationStatsResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: ReposGetParticipationStatsResponseData](x: Self) {
     
-    @scala.inline
-    def setAll(value: js.Array[Double]): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    inline def setAll(value: js.Array[Double]): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllVarargs(value: Double*): Self = StObject.set(x, "all", js.Array(value :_*))
+    inline def setAllVarargs(value: Double*): Self = StObject.set(x, "all", js.Array(value :_*))
     
-    @scala.inline
-    def setOwner(value: js.Array[Double]): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Array[Double]): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerVarargs(value: Double*): Self = StObject.set(x, "owner", js.Array(value :_*))
+    inline def setOwnerVarargs(value: Double*): Self = StObject.set(x, "owner", js.Array(value :_*))
   }
 }

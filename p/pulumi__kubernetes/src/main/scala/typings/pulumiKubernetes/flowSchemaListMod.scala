@@ -64,17 +64,14 @@ object flowSchemaListMod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): FlowSchemaList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[FlowSchemaList]
-    @scala.inline
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): FlowSchemaList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[FlowSchemaList]
+    inline def get(name: String, id: Input[ID]): FlowSchemaList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[FlowSchemaList]
+    inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): FlowSchemaList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[FlowSchemaList]
     
     /**
       * Returns true if the given object is an instance of FlowSchemaList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/flowcontrol/v1alpha1/flowSchemaList.FlowSchemaList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/flowcontrol/v1alpha1/flowSchemaList.FlowSchemaList */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/flowcontrol/v1alpha1/flowSchemaList.FlowSchemaList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/flowcontrol/v1alpha1/flowSchemaList.FlowSchemaList */ Boolean]
   }
   
   trait FlowSchemaListArgs extends StObject {
@@ -103,8 +100,7 @@ object flowSchemaListMod {
   }
   object FlowSchemaListArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       items: Input[
           js.Array[Input[typings.pulumiKubernetes.inputMod.flowcontrol.v1alpha1.FlowSchema]]
         ]
@@ -113,36 +109,27 @@ object flowSchemaListMod {
       __obj.asInstanceOf[FlowSchemaListArgs]
     }
     
-    @scala.inline
-    implicit class FlowSchemaListArgsMutableBuilder[Self <: FlowSchemaListArgs] (val x: Self) extends AnyVal {
+    extension [Self <: FlowSchemaListArgs](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: Input[flowcontrolDotapiserverDotk8sDotioSlashv1alpha1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: Input[flowcontrolDotapiserverDotk8sDotioSlashv1alpha1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
       
-      @scala.inline
-      def setItems(
+      inline def setItems(
         value: Input[
               js.Array[Input[typings.pulumiKubernetes.inputMod.flowcontrol.v1alpha1.FlowSchema]]
             ]
       ): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: Input[typings.pulumiKubernetes.inputMod.flowcontrol.v1alpha1.FlowSchema]*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: Input[typings.pulumiKubernetes.inputMod.flowcontrol.v1alpha1.FlowSchema]*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.FlowSchemaList]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.FlowSchemaList]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+      inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: Input[typings.pulumiKubernetes.inputMod.meta.v1.ListMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: Input[typings.pulumiKubernetes.inputMod.meta.v1.ListMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     }
   }
 }

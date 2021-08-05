@@ -25,31 +25,23 @@ trait Expirations extends StObject {
 }
 object Expirations {
   
-  @scala.inline
-  def apply(): Expirations = {
+  inline def apply(): Expirations = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Expirations]
   }
   
-  @scala.inline
-  implicit class ExpirationsMutableBuilder[Self <: Expirations] (val x: Self) extends AnyVal {
+  extension [Self <: Expirations](x: Self) {
     
-    @scala.inline
-    def setExpireAfter(value: String): Self = StObject.set(x, "expireAfter", value.asInstanceOf[js.Any])
+    inline def setExpireAfter(value: String): Self = StObject.set(x, "expireAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpireAfterUndefined: Self = StObject.set(x, "expireAfter", js.undefined)
+    inline def setExpireAfterUndefined: Self = StObject.set(x, "expireAfter", js.undefined)
     
-    @scala.inline
-    def setExpireEnabled(value: String): Self = StObject.set(x, "expireEnabled", value.asInstanceOf[js.Any])
+    inline def setExpireEnabled(value: String): Self = StObject.set(x, "expireEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpireEnabledUndefined: Self = StObject.set(x, "expireEnabled", js.undefined)
+    inline def setExpireEnabledUndefined: Self = StObject.set(x, "expireEnabled", js.undefined)
     
-    @scala.inline
-    def setExpireWarn(value: String): Self = StObject.set(x, "expireWarn", value.asInstanceOf[js.Any])
+    inline def setExpireWarn(value: String): Self = StObject.set(x, "expireWarn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpireWarnUndefined: Self = StObject.set(x, "expireWarn", js.undefined)
+    inline def setExpireWarnUndefined: Self = StObject.set(x, "expireWarn", js.undefined)
   }
 }

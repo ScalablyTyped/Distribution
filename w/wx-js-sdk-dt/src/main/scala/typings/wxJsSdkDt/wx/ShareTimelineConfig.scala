@@ -25,25 +25,19 @@ trait ShareTimelineConfig
 }
 object ShareTimelineConfig {
   
-  @scala.inline
-  def apply(link: String, title: String): ShareTimelineConfig = {
+  inline def apply(link: String, title: String): ShareTimelineConfig = {
     val __obj = js.Dynamic.literal(link = link.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShareTimelineConfig]
   }
   
-  @scala.inline
-  implicit class ShareTimelineConfigMutableBuilder[Self <: ShareTimelineConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ShareTimelineConfig](x: Self) {
     
-    @scala.inline
-    def setImgUrl(value: String): Self = StObject.set(x, "imgUrl", value.asInstanceOf[js.Any])
+    inline def setImgUrl(value: String): Self = StObject.set(x, "imgUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImgUrlUndefined: Self = StObject.set(x, "imgUrl", js.undefined)
+    inline def setImgUrlUndefined: Self = StObject.set(x, "imgUrl", js.undefined)
     
-    @scala.inline
-    def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

@@ -16,19 +16,15 @@ trait StorePurchaseResult extends StObject {
 }
 object StorePurchaseResult {
   
-  @scala.inline
-  def apply(extendedError: WinRTError, status: StorePurchaseStatus): StorePurchaseResult = {
+  inline def apply(extendedError: WinRTError, status: StorePurchaseStatus): StorePurchaseResult = {
     val __obj = js.Dynamic.literal(extendedError = extendedError.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[StorePurchaseResult]
   }
   
-  @scala.inline
-  implicit class StorePurchaseResultMutableBuilder[Self <: StorePurchaseResult] (val x: Self) extends AnyVal {
+  extension [Self <: StorePurchaseResult](x: Self) {
     
-    @scala.inline
-    def setExtendedError(value: WinRTError): Self = StObject.set(x, "extendedError", value.asInstanceOf[js.Any])
+    inline def setExtendedError(value: WinRTError): Self = StObject.set(x, "extendedError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: StorePurchaseStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: StorePurchaseStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

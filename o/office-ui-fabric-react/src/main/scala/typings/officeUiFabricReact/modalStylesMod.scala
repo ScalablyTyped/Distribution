@@ -16,6 +16,5 @@ object modalStylesMod {
   @js.native
   val animationDuration: String = js.native
   
-  @scala.inline
-  def getStyles(props: IModalStyleProps): IModalStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IModalStyles]
+  inline def getStyles(props: IModalStyleProps): IModalStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IModalStyles]
 }

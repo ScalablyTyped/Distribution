@@ -28,37 +28,27 @@ trait GetTransitGatewayRegistrationsRequest extends StObject {
 }
 object GetTransitGatewayRegistrationsRequest {
   
-  @scala.inline
-  def apply(GlobalNetworkId: String): GetTransitGatewayRegistrationsRequest = {
+  inline def apply(GlobalNetworkId: String): GetTransitGatewayRegistrationsRequest = {
     val __obj = js.Dynamic.literal(GlobalNetworkId = GlobalNetworkId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTransitGatewayRegistrationsRequest]
   }
   
-  @scala.inline
-  implicit class GetTransitGatewayRegistrationsRequestMutableBuilder[Self <: GetTransitGatewayRegistrationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetTransitGatewayRegistrationsRequest](x: Self) {
     
-    @scala.inline
-    def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
+    inline def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTransitGatewayArns(value: StringList): Self = StObject.set(x, "TransitGatewayArns", value.asInstanceOf[js.Any])
+    inline def setTransitGatewayArns(value: StringList): Self = StObject.set(x, "TransitGatewayArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitGatewayArnsUndefined: Self = StObject.set(x, "TransitGatewayArns", js.undefined)
+    inline def setTransitGatewayArnsUndefined: Self = StObject.set(x, "TransitGatewayArns", js.undefined)
     
-    @scala.inline
-    def setTransitGatewayArnsVarargs(value: String*): Self = StObject.set(x, "TransitGatewayArns", js.Array(value :_*))
+    inline def setTransitGatewayArnsVarargs(value: String*): Self = StObject.set(x, "TransitGatewayArns", js.Array(value :_*))
   }
 }

@@ -23,19 +23,15 @@ trait ASPxClientImageGalleryCancelEventArgs
 }
 object ASPxClientImageGalleryCancelEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, index: Double, name: String): ASPxClientImageGalleryCancelEventArgs = {
+  inline def apply(cancel: Boolean, index: Double, name: String): ASPxClientImageGalleryCancelEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientImageGalleryCancelEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientImageGalleryCancelEventArgsMutableBuilder[Self <: ASPxClientImageGalleryCancelEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientImageGalleryCancelEventArgs](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

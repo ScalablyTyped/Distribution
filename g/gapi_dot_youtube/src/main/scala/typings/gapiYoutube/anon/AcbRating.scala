@@ -83,8 +83,7 @@ trait AcbRating extends StObject {
 }
 object AcbRating {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acbRating: String,
     bbfcRating: String,
     cbfcRating: String,
@@ -105,52 +104,36 @@ object AcbRating {
     __obj.asInstanceOf[AcbRating]
   }
   
-  @scala.inline
-  implicit class AcbRatingMutableBuilder[Self <: AcbRating] (val x: Self) extends AnyVal {
+  extension [Self <: AcbRating](x: Self) {
     
-    @scala.inline
-    def setAcbRating(value: String): Self = StObject.set(x, "acbRating", value.asInstanceOf[js.Any])
+    inline def setAcbRating(value: String): Self = StObject.set(x, "acbRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBbfcRating(value: String): Self = StObject.set(x, "bbfcRating", value.asInstanceOf[js.Any])
+    inline def setBbfcRating(value: String): Self = StObject.set(x, "bbfcRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCbfcRating(value: String): Self = StObject.set(x, "cbfcRating", value.asInstanceOf[js.Any])
+    inline def setCbfcRating(value: String): Self = StObject.set(x, "cbfcRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChvrsRating(value: String): Self = StObject.set(x, "chvrsRating", value.asInstanceOf[js.Any])
+    inline def setChvrsRating(value: String): Self = StObject.set(x, "chvrsRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDjctqRating(value: String): Self = StObject.set(x, "djctqRating", value.asInstanceOf[js.Any])
+    inline def setDjctqRating(value: String): Self = StObject.set(x, "djctqRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEirinRating(value: String): Self = StObject.set(x, "eirinRating", value.asInstanceOf[js.Any])
+    inline def setEirinRating(value: String): Self = StObject.set(x, "eirinRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFmocRating(value: String): Self = StObject.set(x, "fmocRating", value.asInstanceOf[js.Any])
+    inline def setFmocRating(value: String): Self = StObject.set(x, "fmocRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFskRating(value: String): Self = StObject.set(x, "fskRating", value.asInstanceOf[js.Any])
+    inline def setFskRating(value: String): Self = StObject.set(x, "fskRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcaaRating(value: String): Self = StObject.set(x, "icaaRating", value.asInstanceOf[js.Any])
+    inline def setIcaaRating(value: String): Self = StObject.set(x, "icaaRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmrbRating(value: String): Self = StObject.set(x, "kmrbRating", value.asInstanceOf[js.Any])
+    inline def setKmrbRating(value: String): Self = StObject.set(x, "kmrbRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMpaaRating(value: String): Self = StObject.set(x, "mpaaRating", value.asInstanceOf[js.Any])
+    inline def setMpaaRating(value: String): Self = StObject.set(x, "mpaaRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOflcRating(value: String): Self = StObject.set(x, "oflcRating", value.asInstanceOf[js.Any])
+    inline def setOflcRating(value: String): Self = StObject.set(x, "oflcRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRtcRating(value: String): Self = StObject.set(x, "rtcRating", value.asInstanceOf[js.Any])
+    inline def setRtcRating(value: String): Self = StObject.set(x, "rtcRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRussiaRating(value: String): Self = StObject.set(x, "russiaRating", value.asInstanceOf[js.Any])
+    inline def setRussiaRating(value: String): Self = StObject.set(x, "russiaRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTvpgRating(value: String): Self = StObject.set(x, "tvpgRating", value.asInstanceOf[js.Any])
+    inline def setTvpgRating(value: String): Self = StObject.set(x, "tvpgRating", value.asInstanceOf[js.Any])
   }
 }

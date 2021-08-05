@@ -16,12 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Express = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Express]
-  @scala.inline
-  def apply(options: String): Express = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Express]
-  @scala.inline
-  def apply(options: Options): Express = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Express]
+  inline def apply(): Express = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Express]
+  inline def apply(options: String): Express = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Express]
+  inline def apply(options: Options): Express = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Express]
   
   @JSImport("kraken-js", JSImport.Namespace)
   @js.native
@@ -69,64 +66,46 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBasedir(value: String): Self = StObject.set(x, "basedir", value.asInstanceOf[js.Any])
+      inline def setBasedir(value: String): Self = StObject.set(x, "basedir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasedirUndefined: Self = StObject.set(x, "basedir", js.undefined)
+      inline def setBasedirUndefined: Self = StObject.set(x, "basedir", js.undefined)
       
-      @scala.inline
-      def setConfigdir(value: String): Self = StObject.set(x, "configdir", value.asInstanceOf[js.Any])
+      inline def setConfigdir(value: String): Self = StObject.set(x, "configdir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigdirUndefined: Self = StObject.set(x, "configdir", js.undefined)
+      inline def setConfigdirUndefined: Self = StObject.set(x, "configdir", js.undefined)
       
-      @scala.inline
-      def setInheritViews(value: Boolean): Self = StObject.set(x, "inheritViews", value.asInstanceOf[js.Any])
+      inline def setInheritViews(value: Boolean): Self = StObject.set(x, "inheritViews", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInheritViewsUndefined: Self = StObject.set(x, "inheritViews", js.undefined)
+      inline def setInheritViewsUndefined: Self = StObject.set(x, "inheritViews", js.undefined)
       
-      @scala.inline
-      def setMountpath(value: String): Self = StObject.set(x, "mountpath", value.asInstanceOf[js.Any])
+      inline def setMountpath(value: String): Self = StObject.set(x, "mountpath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMountpathUndefined: Self = StObject.set(x, "mountpath", js.undefined)
+      inline def setMountpathUndefined: Self = StObject.set(x, "mountpath", js.undefined)
       
-      @scala.inline
-      def setOnconfig(
+      inline def setOnconfig(
         value: (/* config */ Map[String, js.Any], /* next */ js.Function2[/* err */ Error | Null, /* config */ js.UndefOr[js.Object], js.Any]) => js.Any
       ): Self = StObject.set(x, "onconfig", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnconfigUndefined: Self = StObject.set(x, "onconfig", js.undefined)
+      inline def setOnconfigUndefined: Self = StObject.set(x, "onconfig", js.undefined)
       
-      @scala.inline
-      def setProtocols(value: js.Object): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
+      inline def setProtocols(value: js.Object): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
+      inline def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
       
-      @scala.inline
-      def setStartupHeaders(value: StringDictionary[String]): Self = StObject.set(x, "startupHeaders", value.asInstanceOf[js.Any])
+      inline def setStartupHeaders(value: StringDictionary[String]): Self = StObject.set(x, "startupHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartupHeadersUndefined: Self = StObject.set(x, "startupHeaders", js.undefined)
+      inline def setStartupHeadersUndefined: Self = StObject.set(x, "startupHeaders", js.undefined)
       
-      @scala.inline
-      def setUncaughtException(value: /* err */ Error => js.Any): Self = StObject.set(x, "uncaughtException", js.Any.fromFunction1(value))
+      inline def setUncaughtException(value: /* err */ Error => js.Any): Self = StObject.set(x, "uncaughtException", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUncaughtExceptionUndefined: Self = StObject.set(x, "uncaughtException", js.undefined)
+      inline def setUncaughtExceptionUndefined: Self = StObject.set(x, "uncaughtException", js.undefined)
     }
   }
 }

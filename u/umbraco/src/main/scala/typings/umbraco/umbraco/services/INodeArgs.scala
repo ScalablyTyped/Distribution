@@ -15,19 +15,15 @@ trait INodeArgs extends StObject {
 }
 object INodeArgs {
   
-  @scala.inline
-  def apply(node: js.Any, section: js.Any): INodeArgs = {
+  inline def apply(node: js.Any, section: js.Any): INodeArgs = {
     val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], section = section.asInstanceOf[js.Any])
     __obj.asInstanceOf[INodeArgs]
   }
   
-  @scala.inline
-  implicit class INodeArgsMutableBuilder[Self <: INodeArgs] (val x: Self) extends AnyVal {
+  extension [Self <: INodeArgs](x: Self) {
     
-    @scala.inline
-    def setNode(value: js.Any): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: js.Any): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSection(value: js.Any): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
+    inline def setSection(value: js.Any): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
   }
 }

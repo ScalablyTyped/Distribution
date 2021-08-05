@@ -23,25 +23,19 @@ trait PutBucketLifecycleConfigurationRequest extends StObject {
 }
 object PutBucketLifecycleConfigurationRequest {
   
-  @scala.inline
-  def apply(AccountId: AccountId, Bucket: BucketName): PutBucketLifecycleConfigurationRequest = {
+  inline def apply(AccountId: AccountId, Bucket: BucketName): PutBucketLifecycleConfigurationRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], Bucket = Bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBucketLifecycleConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class PutBucketLifecycleConfigurationRequestMutableBuilder[Self <: PutBucketLifecycleConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutBucketLifecycleConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLifecycleConfiguration(value: LifecycleConfiguration): Self = StObject.set(x, "LifecycleConfiguration", value.asInstanceOf[js.Any])
+    inline def setLifecycleConfiguration(value: LifecycleConfiguration): Self = StObject.set(x, "LifecycleConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLifecycleConfigurationUndefined: Self = StObject.set(x, "LifecycleConfiguration", js.undefined)
+    inline def setLifecycleConfigurationUndefined: Self = StObject.set(x, "LifecycleConfiguration", js.undefined)
   }
 }

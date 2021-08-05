@@ -13,19 +13,15 @@ trait Extractor extends StObject {
 }
 object Extractor {
   
-  @scala.inline
-  def apply(extractor: typings.angularCompiler.extractorMod.Extractor, staticReflector: StaticReflector): Extractor = {
+  inline def apply(extractor: typings.angularCompiler.extractorMod.Extractor, staticReflector: StaticReflector): Extractor = {
     val __obj = js.Dynamic.literal(extractor = extractor.asInstanceOf[js.Any], staticReflector = staticReflector.asInstanceOf[js.Any])
     __obj.asInstanceOf[Extractor]
   }
   
-  @scala.inline
-  implicit class ExtractorMutableBuilder[Self <: Extractor] (val x: Self) extends AnyVal {
+  extension [Self <: Extractor](x: Self) {
     
-    @scala.inline
-    def setExtractor(value: typings.angularCompiler.extractorMod.Extractor): Self = StObject.set(x, "extractor", value.asInstanceOf[js.Any])
+    inline def setExtractor(value: typings.angularCompiler.extractorMod.Extractor): Self = StObject.set(x, "extractor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaticReflector(value: StaticReflector): Self = StObject.set(x, "staticReflector", value.asInstanceOf[js.Any])
+    inline def setStaticReflector(value: StaticReflector): Self = StObject.set(x, "staticReflector", value.asInstanceOf[js.Any])
   }
 }

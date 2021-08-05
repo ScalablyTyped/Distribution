@@ -10,16 +10,13 @@ trait UrlQuery extends StObject {
 }
 object UrlQuery {
   
-  @scala.inline
-  def apply(clear: () => Unit): UrlQuery = {
+  inline def apply(clear: () => Unit): UrlQuery = {
     val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear))
     __obj.asInstanceOf[UrlQuery]
   }
   
-  @scala.inline
-  implicit class UrlQueryMutableBuilder[Self <: UrlQuery] (val x: Self) extends AnyVal {
+  extension [Self <: UrlQuery](x: Self) {
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
   }
 }

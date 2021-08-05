@@ -22,8 +22,7 @@ trait ISmsDeviceMessageStore extends StObject {
 }
 object ISmsDeviceMessageStore {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deleteMessageAsync: Double => IAsyncAction,
     deleteMessagesAsync: SmsMessageFilter => IAsyncAction,
     getMessageAsync: Double => IAsyncOperation[ISmsMessage],
@@ -34,22 +33,16 @@ object ISmsDeviceMessageStore {
     __obj.asInstanceOf[ISmsDeviceMessageStore]
   }
   
-  @scala.inline
-  implicit class ISmsDeviceMessageStoreMutableBuilder[Self <: ISmsDeviceMessageStore] (val x: Self) extends AnyVal {
+  extension [Self <: ISmsDeviceMessageStore](x: Self) {
     
-    @scala.inline
-    def setDeleteMessageAsync(value: Double => IAsyncAction): Self = StObject.set(x, "deleteMessageAsync", js.Any.fromFunction1(value))
+    inline def setDeleteMessageAsync(value: Double => IAsyncAction): Self = StObject.set(x, "deleteMessageAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDeleteMessagesAsync(value: SmsMessageFilter => IAsyncAction): Self = StObject.set(x, "deleteMessagesAsync", js.Any.fromFunction1(value))
+    inline def setDeleteMessagesAsync(value: SmsMessageFilter => IAsyncAction): Self = StObject.set(x, "deleteMessagesAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetMessageAsync(value: Double => IAsyncOperation[ISmsMessage]): Self = StObject.set(x, "getMessageAsync", js.Any.fromFunction1(value))
+    inline def setGetMessageAsync(value: Double => IAsyncOperation[ISmsMessage]): Self = StObject.set(x, "getMessageAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetMessagesAsync(value: SmsMessageFilter => IAsyncOperationWithProgress[IVectorView[ISmsMessage], Double]): Self = StObject.set(x, "getMessagesAsync", js.Any.fromFunction1(value))
+    inline def setGetMessagesAsync(value: SmsMessageFilter => IAsyncOperationWithProgress[IVectorView[ISmsMessage], Double]): Self = StObject.set(x, "getMessagesAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMaxMessages(value: Double): Self = StObject.set(x, "maxMessages", value.asInstanceOf[js.Any])
+    inline def setMaxMessages(value: Double): Self = StObject.set(x, "maxMessages", value.asInstanceOf[js.Any])
   }
 }

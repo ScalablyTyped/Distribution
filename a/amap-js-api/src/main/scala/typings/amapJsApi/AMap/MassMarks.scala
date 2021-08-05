@@ -62,23 +62,18 @@ object MassMarks {
   }
   object Data {
     
-    @scala.inline
-    def apply(lnglat: LocationValue): Data = {
+    inline def apply(lnglat: LocationValue): Data = {
       val __obj = js.Dynamic.literal(lnglat = lnglat.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data]
     }
     
-    @scala.inline
-    implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+    extension [Self <: Data](x: Self) {
       
-      @scala.inline
-      def setLnglat(value: LocationValue): Self = StObject.set(x, "lnglat", value.asInstanceOf[js.Any])
+      inline def setLnglat(value: LocationValue): Self = StObject.set(x, "lnglat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: Double): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Double): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -102,8 +97,7 @@ object MassMarks {
   }
   object EventMap {
     
-    @scala.inline
-    def apply[I](
+    inline def apply[I](
       click: UIEvent[click, I],
       dblclick: UIEvent[dblclick, I],
       mousedown: UIEvent[mousedown, I],
@@ -117,32 +111,23 @@ object MassMarks {
       __obj.asInstanceOf[EventMap[I]]
     }
     
-    @scala.inline
-    implicit class EventMapMutableBuilder[Self <: EventMap[?], I] (val x: Self & EventMap[I]) extends AnyVal {
+    extension [Self <: EventMap[?], I](x: Self & EventMap[I]) {
       
-      @scala.inline
-      def setClick(value: UIEvent[click, I]): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
+      inline def setClick(value: UIEvent[click, I]): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDblclick(value: UIEvent[dblclick, I]): Self = StObject.set(x, "dblclick", value.asInstanceOf[js.Any])
+      inline def setDblclick(value: UIEvent[dblclick, I]): Self = StObject.set(x, "dblclick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMousedown(value: UIEvent[mousedown, I]): Self = StObject.set(x, "mousedown", value.asInstanceOf[js.Any])
+      inline def setMousedown(value: UIEvent[mousedown, I]): Self = StObject.set(x, "mousedown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMouseout(value: UIEvent[mouseout, I]): Self = StObject.set(x, "mouseout", value.asInstanceOf[js.Any])
+      inline def setMouseout(value: UIEvent[mouseout, I]): Self = StObject.set(x, "mouseout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMouseover(value: UIEvent[mouseover, I]): Self = StObject.set(x, "mouseover", value.asInstanceOf[js.Any])
+      inline def setMouseover(value: UIEvent[mouseover, I]): Self = StObject.set(x, "mouseover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMouseup(value: UIEvent[mouseup, I]): Self = StObject.set(x, "mouseup", value.asInstanceOf[js.Any])
+      inline def setMouseup(value: UIEvent[mouseup, I]): Self = StObject.set(x, "mouseup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchend(value: UIEvent[touchend, I]): Self = StObject.set(x, "touchend", value.asInstanceOf[js.Any])
+      inline def setTouchend(value: UIEvent[touchend, I]): Self = StObject.set(x, "touchend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchstart(value: UIEvent[touchstart, I]): Self = StObject.set(x, "touchstart", value.asInstanceOf[js.Any])
+      inline def setTouchstart(value: UIEvent[touchstart, I]): Self = StObject.set(x, "touchstart", value.asInstanceOf[js.Any])
     }
   }
   
@@ -172,38 +157,28 @@ object MassMarks {
   }
   object Options {
     
-    @scala.inline
-    def apply(style: Style | js.Array[Style]): Options = {
+    inline def apply(style: Style | js.Array[Style]): Options = {
       val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAlwayRender(value: Boolean): Self = StObject.set(x, "alwayRender", value.asInstanceOf[js.Any])
+      inline def setAlwayRender(value: Boolean): Self = StObject.set(x, "alwayRender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlwayRenderUndefined: Self = StObject.set(x, "alwayRender", js.undefined)
+      inline def setAlwayRenderUndefined: Self = StObject.set(x, "alwayRender", js.undefined)
       
-      @scala.inline
-      def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+      inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+      inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
       
-      @scala.inline
-      def setStyle(value: Style | js.Array[Style]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Style | js.Array[Style]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleVarargs(value: Style*): Self = StObject.set(x, "style", js.Array(value :_*))
+      inline def setStyleVarargs(value: Style*): Self = StObject.set(x, "style", js.Array(value :_*))
       
-      @scala.inline
-      def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+      inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+      inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     }
   }
   
@@ -231,29 +206,22 @@ object MassMarks {
   }
   object Style {
     
-    @scala.inline
-    def apply(anchor: Pixel, size: Size, url: String): Style = {
+    inline def apply(anchor: Pixel, size: Size, url: String): Style = {
       val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[Style]
     }
     
-    @scala.inline
-    implicit class StyleMutableBuilder[Self <: Style] (val x: Self) extends AnyVal {
+    extension [Self <: Style](x: Self) {
       
-      @scala.inline
-      def setAnchor(value: Pixel): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+      inline def setAnchor(value: Pixel): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+      inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
+      inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
       
-      @scala.inline
-      def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   

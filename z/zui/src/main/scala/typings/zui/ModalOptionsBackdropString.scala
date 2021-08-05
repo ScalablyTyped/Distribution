@@ -17,37 +17,27 @@ trait ModalOptionsBackdropString extends StObject {
 }
 object ModalOptionsBackdropString {
   
-  @scala.inline
-  def apply(): ModalOptionsBackdropString = {
+  inline def apply(): ModalOptionsBackdropString = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModalOptionsBackdropString]
   }
   
-  @scala.inline
-  implicit class ModalOptionsBackdropStringMutableBuilder[Self <: ModalOptionsBackdropString] (val x: Self) extends AnyVal {
+  extension [Self <: ModalOptionsBackdropString](x: Self) {
     
-    @scala.inline
-    def setBackdrop(value: String): Self = StObject.set(x, "backdrop", value.asInstanceOf[js.Any])
+    inline def setBackdrop(value: String): Self = StObject.set(x, "backdrop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackdropUndefined: Self = StObject.set(x, "backdrop", js.undefined)
+    inline def setBackdropUndefined: Self = StObject.set(x, "backdrop", js.undefined)
     
-    @scala.inline
-    def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
+    inline def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
+    inline def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
     
-    @scala.inline
-    def setRemote(value: String): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
+    inline def setRemote(value: String): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteUndefined: Self = StObject.set(x, "remote", js.undefined)
+    inline def setRemoteUndefined: Self = StObject.set(x, "remote", js.undefined)
     
-    @scala.inline
-    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
   }
 }

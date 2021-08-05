@@ -29,70 +29,49 @@ trait Auth0LockShowOptions extends StObject {
 }
 object Auth0LockShowOptions {
   
-  @scala.inline
-  def apply(): Auth0LockShowOptions = {
+  inline def apply(): Auth0LockShowOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Auth0LockShowOptions]
   }
   
-  @scala.inline
-  implicit class Auth0LockShowOptionsMutableBuilder[Self <: Auth0LockShowOptions] (val x: Self) extends AnyVal {
+  extension [Self <: Auth0LockShowOptions](x: Self) {
     
-    @scala.inline
-    def setAllowForgotPassword(value: Boolean): Self = StObject.set(x, "allowForgotPassword", value.asInstanceOf[js.Any])
+    inline def setAllowForgotPassword(value: Boolean): Self = StObject.set(x, "allowForgotPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowForgotPasswordUndefined: Self = StObject.set(x, "allowForgotPassword", js.undefined)
+    inline def setAllowForgotPasswordUndefined: Self = StObject.set(x, "allowForgotPassword", js.undefined)
     
-    @scala.inline
-    def setAllowLogin(value: Boolean): Self = StObject.set(x, "allowLogin", value.asInstanceOf[js.Any])
+    inline def setAllowLogin(value: Boolean): Self = StObject.set(x, "allowLogin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowLoginUndefined: Self = StObject.set(x, "allowLogin", js.undefined)
+    inline def setAllowLoginUndefined: Self = StObject.set(x, "allowLogin", js.undefined)
     
-    @scala.inline
-    def setAllowSignUp(value: Boolean): Self = StObject.set(x, "allowSignUp", value.asInstanceOf[js.Any])
+    inline def setAllowSignUp(value: Boolean): Self = StObject.set(x, "allowSignUp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowSignUpUndefined: Self = StObject.set(x, "allowSignUp", js.undefined)
+    inline def setAllowSignUpUndefined: Self = StObject.set(x, "allowSignUp", js.undefined)
     
-    @scala.inline
-    def setAllowedConnections(value: js.Array[String]): Self = StObject.set(x, "allowedConnections", value.asInstanceOf[js.Any])
+    inline def setAllowedConnections(value: js.Array[String]): Self = StObject.set(x, "allowedConnections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedConnectionsUndefined: Self = StObject.set(x, "allowedConnections", js.undefined)
+    inline def setAllowedConnectionsUndefined: Self = StObject.set(x, "allowedConnections", js.undefined)
     
-    @scala.inline
-    def setAllowedConnectionsVarargs(value: String*): Self = StObject.set(x, "allowedConnections", js.Array(value :_*))
+    inline def setAllowedConnectionsVarargs(value: String*): Self = StObject.set(x, "allowedConnections", js.Array(value :_*))
     
-    @scala.inline
-    def setAuth(value: Auth0LockAuthOptions): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: Auth0LockAuthOptions): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setFlashMessage(value: Auth0LockFlashMessageOptions): Self = StObject.set(x, "flashMessage", value.asInstanceOf[js.Any])
+    inline def setFlashMessage(value: Auth0LockFlashMessageOptions): Self = StObject.set(x, "flashMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlashMessageUndefined: Self = StObject.set(x, "flashMessage", js.undefined)
+    inline def setFlashMessageUndefined: Self = StObject.set(x, "flashMessage", js.undefined)
     
-    @scala.inline
-    def setInitialScreen(value: login | signUp | forgotPassword): Self = StObject.set(x, "initialScreen", value.asInstanceOf[js.Any])
+    inline def setInitialScreen(value: login | signUp | forgotPassword): Self = StObject.set(x, "initialScreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialScreenUndefined: Self = StObject.set(x, "initialScreen", js.undefined)
+    inline def setInitialScreenUndefined: Self = StObject.set(x, "initialScreen", js.undefined)
     
-    @scala.inline
-    def setLanguageDictionary(value: js.Any): Self = StObject.set(x, "languageDictionary", value.asInstanceOf[js.Any])
+    inline def setLanguageDictionary(value: js.Any): Self = StObject.set(x, "languageDictionary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageDictionaryUndefined: Self = StObject.set(x, "languageDictionary", js.undefined)
+    inline def setLanguageDictionaryUndefined: Self = StObject.set(x, "languageDictionary", js.undefined)
     
-    @scala.inline
-    def setRememberLastLogin(value: Boolean): Self = StObject.set(x, "rememberLastLogin", value.asInstanceOf[js.Any])
+    inline def setRememberLastLogin(value: Boolean): Self = StObject.set(x, "rememberLastLogin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRememberLastLoginUndefined: Self = StObject.set(x, "rememberLastLogin", js.undefined)
+    inline def setRememberLastLoginUndefined: Self = StObject.set(x, "rememberLastLogin", js.undefined)
   }
 }

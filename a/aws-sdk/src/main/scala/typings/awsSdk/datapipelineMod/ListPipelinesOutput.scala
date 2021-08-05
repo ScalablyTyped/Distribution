@@ -23,31 +23,23 @@ trait ListPipelinesOutput extends StObject {
 }
 object ListPipelinesOutput {
   
-  @scala.inline
-  def apply(pipelineIdList: pipelineList): ListPipelinesOutput = {
+  inline def apply(pipelineIdList: pipelineList): ListPipelinesOutput = {
     val __obj = js.Dynamic.literal(pipelineIdList = pipelineIdList.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPipelinesOutput]
   }
   
-  @scala.inline
-  implicit class ListPipelinesOutputMutableBuilder[Self <: ListPipelinesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListPipelinesOutput](x: Self) {
     
-    @scala.inline
-    def setHasMoreResults(value: Boolean): Self = StObject.set(x, "hasMoreResults", value.asInstanceOf[js.Any])
+    inline def setHasMoreResults(value: Boolean): Self = StObject.set(x, "hasMoreResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasMoreResultsUndefined: Self = StObject.set(x, "hasMoreResults", js.undefined)
+    inline def setHasMoreResultsUndefined: Self = StObject.set(x, "hasMoreResults", js.undefined)
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
-    @scala.inline
-    def setPipelineIdList(value: pipelineList): Self = StObject.set(x, "pipelineIdList", value.asInstanceOf[js.Any])
+    inline def setPipelineIdList(value: pipelineList): Self = StObject.set(x, "pipelineIdList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipelineIdListVarargs(value: PipelineIdName*): Self = StObject.set(x, "pipelineIdList", js.Array(value :_*))
+    inline def setPipelineIdListVarargs(value: PipelineIdName*): Self = StObject.set(x, "pipelineIdList", js.Array(value :_*))
   }
 }

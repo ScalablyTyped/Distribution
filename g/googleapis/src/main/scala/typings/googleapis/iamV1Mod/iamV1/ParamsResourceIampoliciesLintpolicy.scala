@@ -24,25 +24,19 @@ trait ParamsResourceIampoliciesLintpolicy
 }
 object ParamsResourceIampoliciesLintpolicy {
   
-  @scala.inline
-  def apply(): ParamsResourceIampoliciesLintpolicy = {
+  inline def apply(): ParamsResourceIampoliciesLintpolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceIampoliciesLintpolicy]
   }
   
-  @scala.inline
-  implicit class ParamsResourceIampoliciesLintpolicyMutableBuilder[Self <: ParamsResourceIampoliciesLintpolicy] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceIampoliciesLintpolicy](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaLintPolicyRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaLintPolicyRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }
 }

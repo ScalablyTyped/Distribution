@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SupportOptionType extends StObject
 object SupportOptionType {
   
-  @scala.inline
-  def boolean: typings.prettier.prettierStrings.boolean = "boolean".asInstanceOf[typings.prettier.prettierStrings.boolean]
+  inline def boolean: typings.prettier.prettierStrings.boolean = "boolean".asInstanceOf[typings.prettier.prettierStrings.boolean]
   
-  @scala.inline
-  def choice: typings.prettier.prettierStrings.choice = "choice".asInstanceOf[typings.prettier.prettierStrings.choice]
+  inline def choice: typings.prettier.prettierStrings.choice = "choice".asInstanceOf[typings.prettier.prettierStrings.choice]
   
-  @scala.inline
-  def int: typings.prettier.prettierStrings.int = "int".asInstanceOf[typings.prettier.prettierStrings.int]
+  inline def int: typings.prettier.prettierStrings.int = "int".asInstanceOf[typings.prettier.prettierStrings.int]
   
-  @scala.inline
-  def path: typings.prettier.prettierStrings.path = "path".asInstanceOf[typings.prettier.prettierStrings.path]
+  inline def path: typings.prettier.prettierStrings.path = "path".asInstanceOf[typings.prettier.prettierStrings.path]
 }

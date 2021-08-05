@@ -41,8 +41,7 @@ trait KeyDescriptor
 }
 object KeyDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Columns: XNameAccess,
     DeleteRule: Double,
     Name: String,
@@ -66,19 +65,14 @@ object KeyDescriptor {
     __obj.asInstanceOf[KeyDescriptor]
   }
   
-  @scala.inline
-  implicit class KeyDescriptorMutableBuilder[Self <: KeyDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: KeyDescriptor](x: Self) {
     
-    @scala.inline
-    def setDeleteRule(value: Double): Self = StObject.set(x, "DeleteRule", value.asInstanceOf[js.Any])
+    inline def setDeleteRule(value: Double): Self = StObject.set(x, "DeleteRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferencedTable(value: String): Self = StObject.set(x, "ReferencedTable", value.asInstanceOf[js.Any])
+    inline def setReferencedTable(value: String): Self = StObject.set(x, "ReferencedTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateRule(value: Double): Self = StObject.set(x, "UpdateRule", value.asInstanceOf[js.Any])
+    inline def setUpdateRule(value: Double): Self = StObject.set(x, "UpdateRule", value.asInstanceOf[js.Any])
   }
 }

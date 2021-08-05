@@ -108,8 +108,7 @@ trait ITextRange extends StObject {
 }
 object ITextRange {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canPaste: Double => Boolean,
     changeCase: LetterCase => Unit,
     character: String,
@@ -158,136 +157,92 @@ object ITextRange {
     __obj.asInstanceOf[ITextRange]
   }
   
-  @scala.inline
-  implicit class ITextRangeMutableBuilder[Self <: ITextRange] (val x: Self) extends AnyVal {
+  extension [Self <: ITextRange](x: Self) {
     
-    @scala.inline
-    def setCanPaste(value: Double => Boolean): Self = StObject.set(x, "canPaste", js.Any.fromFunction1(value))
+    inline def setCanPaste(value: Double => Boolean): Self = StObject.set(x, "canPaste", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChangeCase(value: LetterCase => Unit): Self = StObject.set(x, "changeCase", js.Any.fromFunction1(value))
+    inline def setChangeCase(value: LetterCase => Unit): Self = StObject.set(x, "changeCase", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCharacter(value: String): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
+    inline def setCharacter(value: String): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharacterFormat(value: ITextCharacterFormat): Self = StObject.set(x, "characterFormat", value.asInstanceOf[js.Any])
+    inline def setCharacterFormat(value: ITextCharacterFormat): Self = StObject.set(x, "characterFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollapse(value: Boolean => Unit): Self = StObject.set(x, "collapse", js.Any.fromFunction1(value))
+    inline def setCollapse(value: Boolean => Unit): Self = StObject.set(x, "collapse", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCopy(value: () => Unit): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
+    inline def setCopy(value: () => Unit): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCut(value: () => Unit): Self = StObject.set(x, "cut", js.Any.fromFunction0(value))
+    inline def setCut(value: () => Unit): Self = StObject.set(x, "cut", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDelete_(value: (TextRangeUnit, Double) => Double): Self = StObject.set(x, "delete_", js.Any.fromFunction2(value))
+    inline def setDelete_(value: (TextRangeUnit, Double) => Double): Self = StObject.set(x, "delete_", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEndOf(value: (TextRangeUnit, Boolean) => Double): Self = StObject.set(x, "endOf", js.Any.fromFunction2(value))
+    inline def setEndOf(value: (TextRangeUnit, Boolean) => Double): Self = StObject.set(x, "endOf", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEndPosition(value: Double): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
+    inline def setEndPosition(value: Double): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpand(value: TextRangeUnit => Double): Self = StObject.set(x, "expand", js.Any.fromFunction1(value))
+    inline def setExpand(value: TextRangeUnit => Double): Self = StObject.set(x, "expand", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFindText(value: (String, Double, FindOptions) => Double): Self = StObject.set(x, "findText", js.Any.fromFunction3(value))
+    inline def setFindText(value: (String, Double, FindOptions) => Double): Self = StObject.set(x, "findText", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setFormattedText(value: ITextRange): Self = StObject.set(x, "formattedText", value.asInstanceOf[js.Any])
+    inline def setFormattedText(value: ITextRange): Self = StObject.set(x, "formattedText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCharacterUtf32(value: Double => Double): Self = StObject.set(x, "getCharacterUtf32", js.Any.fromFunction1(value))
+    inline def setGetCharacterUtf32(value: Double => Double): Self = StObject.set(x, "getCharacterUtf32", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetClone(value: () => ITextRange): Self = StObject.set(x, "getClone", js.Any.fromFunction0(value))
+    inline def setGetClone(value: () => ITextRange): Self = StObject.set(x, "getClone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIndex(value: TextRangeUnit => Double): Self = StObject.set(x, "getIndex", js.Any.fromFunction1(value))
+    inline def setGetIndex(value: TextRangeUnit => Double): Self = StObject.set(x, "getIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPoint(value: (HorizontalCharacterAlignment, VerticalCharacterAlignment, PointOptions) => Point): Self = StObject.set(x, "getPoint", js.Any.fromFunction3(value))
+    inline def setGetPoint(value: (HorizontalCharacterAlignment, VerticalCharacterAlignment, PointOptions) => Point): Self = StObject.set(x, "getPoint", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetRect(value: PointOptions => Hit): Self = StObject.set(x, "getRect", js.Any.fromFunction1(value))
+    inline def setGetRect(value: PointOptions => Hit): Self = StObject.set(x, "getRect", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetText(value: TextGetOptions => String): Self = StObject.set(x, "getText", js.Any.fromFunction1(value))
+    inline def setGetText(value: TextGetOptions => String): Self = StObject.set(x, "getText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetTextViaStream(value: (TextGetOptions, IRandomAccessStream) => Unit): Self = StObject.set(x, "getTextViaStream", js.Any.fromFunction2(value))
+    inline def setGetTextViaStream(value: (TextGetOptions, IRandomAccessStream) => Unit): Self = StObject.set(x, "getTextViaStream", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGravity(value: RangeGravity): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
+    inline def setGravity(value: RangeGravity): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInRange(value: ITextRange => Boolean): Self = StObject.set(x, "inRange", js.Any.fromFunction1(value))
+    inline def setInRange(value: ITextRange => Boolean): Self = StObject.set(x, "inRange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInStory(value: ITextRange => Boolean): Self = StObject.set(x, "inStory", js.Any.fromFunction1(value))
+    inline def setInStory(value: ITextRange => Boolean): Self = StObject.set(x, "inStory", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInsertImage(value: (Double, Double, Double, VerticalCharacterAlignment, String, IRandomAccessStream) => Unit): Self = StObject.set(x, "insertImage", js.Any.fromFunction6(value))
+    inline def setInsertImage(value: (Double, Double, Double, VerticalCharacterAlignment, String, IRandomAccessStream) => Unit): Self = StObject.set(x, "insertImage", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setIsEqual(value: ITextRange => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
+    inline def setIsEqual(value: ITextRange => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchSelection(value: () => Unit): Self = StObject.set(x, "matchSelection", js.Any.fromFunction0(value))
+    inline def setMatchSelection(value: () => Unit): Self = StObject.set(x, "matchSelection", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMove(value: (TextRangeUnit, Double) => Double): Self = StObject.set(x, "move", js.Any.fromFunction2(value))
+    inline def setMove(value: (TextRangeUnit, Double) => Double): Self = StObject.set(x, "move", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMoveEnd(value: (TextRangeUnit, Double) => Double): Self = StObject.set(x, "moveEnd", js.Any.fromFunction2(value))
+    inline def setMoveEnd(value: (TextRangeUnit, Double) => Double): Self = StObject.set(x, "moveEnd", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMoveStart(value: (TextRangeUnit, Double) => Double): Self = StObject.set(x, "moveStart", js.Any.fromFunction2(value))
+    inline def setMoveStart(value: (TextRangeUnit, Double) => Double): Self = StObject.set(x, "moveStart", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setParagraphFormat(value: ITextParagraphFormat): Self = StObject.set(x, "paragraphFormat", value.asInstanceOf[js.Any])
+    inline def setParagraphFormat(value: ITextParagraphFormat): Self = StObject.set(x, "paragraphFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaste(value: Double => Unit): Self = StObject.set(x, "paste", js.Any.fromFunction1(value))
+    inline def setPaste(value: Double => Unit): Self = StObject.set(x, "paste", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setScrollIntoView(value: PointOptions => Unit): Self = StObject.set(x, "scrollIntoView", js.Any.fromFunction1(value))
+    inline def setScrollIntoView(value: PointOptions => Unit): Self = StObject.set(x, "scrollIntoView", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetIndex(value: (TextRangeUnit, Double, Boolean) => Unit): Self = StObject.set(x, "setIndex", js.Any.fromFunction3(value))
+    inline def setSetIndex(value: (TextRangeUnit, Double, Boolean) => Unit): Self = StObject.set(x, "setIndex", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSetPoint(value: (Point, PointOptions, Boolean) => Unit): Self = StObject.set(x, "setPoint", js.Any.fromFunction3(value))
+    inline def setSetPoint(value: (Point, PointOptions, Boolean) => Unit): Self = StObject.set(x, "setPoint", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSetRange(value: (Double, Double) => Unit): Self = StObject.set(x, "setRange", js.Any.fromFunction2(value))
+    inline def setSetRange(value: (Double, Double) => Unit): Self = StObject.set(x, "setRange", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetText(value: (TextSetOptions, String) => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction2(value))
+    inline def setSetText(value: (TextSetOptions, String) => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetTextViaStream(value: (TextSetOptions, IRandomAccessStream) => Unit): Self = StObject.set(x, "setTextViaStream", js.Any.fromFunction2(value))
+    inline def setSetTextViaStream(value: (TextSetOptions, IRandomAccessStream) => Unit): Self = StObject.set(x, "setTextViaStream", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStartOf(value: (TextRangeUnit, Boolean) => Double): Self = StObject.set(x, "startOf", js.Any.fromFunction2(value))
+    inline def setStartOf(value: (TextRangeUnit, Boolean) => Double): Self = StObject.set(x, "startOf", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStartPosition(value: Double): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
+    inline def setStartPosition(value: Double): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoryLength(value: Double): Self = StObject.set(x, "storyLength", value.asInstanceOf[js.Any])
+    inline def setStoryLength(value: Double): Self = StObject.set(x, "storyLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

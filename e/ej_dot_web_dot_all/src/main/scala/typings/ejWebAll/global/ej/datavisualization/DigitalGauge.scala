@@ -87,13 +87,11 @@ object DigitalGauge {
   @JSGlobal("ej.datavisualization.DigitalGauge.Locale")
   @js.native
   def Locale: js.Any = js.native
-  @scala.inline
-  def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  inline def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("ej.datavisualization.DigitalGauge.fn")
   @js.native
   def fn: typings.ejWebAll.ej.datavisualization.DigitalGauge = js.native
-  @scala.inline
-  def fn_=(x: typings.ejWebAll.ej.datavisualization.DigitalGauge): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+  inline def fn_=(x: typings.ejWebAll.ej.datavisualization.DigitalGauge): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

@@ -10,6 +10,5 @@ object toolsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getLinuxToolsPath(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLinuxToolsPath")().asInstanceOf[js.Promise[String]]
+  inline def getLinuxToolsPath(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLinuxToolsPath")().asInstanceOf[js.Promise[String]]
 }

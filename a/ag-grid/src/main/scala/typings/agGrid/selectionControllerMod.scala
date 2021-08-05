@@ -13,7 +13,7 @@ object selectionControllerMod {
     
     def clearOtherNodes(rowNodeToKeepSelected: RowNode): Double = js.native
     
-    var columnApi: js.Any = js.native
+    /* private */ var columnApi: js.Any = js.native
     
     def deselectAllRowNodes(): Unit = js.native
     def deselectAllRowNodes(justFiltered: Boolean): Unit = js.native
@@ -22,7 +22,7 @@ object selectionControllerMod {
     
     def deselectNode(rowNode: RowNode): Unit = js.native
     
-    var eventService: js.Any = js.native
+    /* private */ var eventService: js.Any = js.native
     
     def getBestCostNodeSelection(): js.Any = js.native
     
@@ -34,19 +34,19 @@ object selectionControllerMod {
     
     def getSelectedRows(): js.Array[js.Any] = js.native
     
-    var gridApi: js.Any = js.native
+    /* private */ var gridApi: js.Any = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
-    var groupSelectsChildren: js.Any = js.native
+    /* private */ var groupSelectsChildren: js.Any = js.native
     
     def init(): Unit = js.native
     
     def isEmpty(): Boolean = js.native
     
-    var lastSelectedNode: js.Any = js.native
+    /* private */ var lastSelectedNode: js.Any = js.native
     
-    var logger: js.Any = js.native
+    /* private */ var logger: js.Any = js.native
     
     /* private */ def onRowSelected(event: js.Any): js.Any = js.native
     
@@ -54,7 +54,7 @@ object selectionControllerMod {
     
     def reset(): Unit = js.native
     
-    var rowModel: js.Any = js.native
+    /* private */ var rowModel: js.Any = js.native
     
     def selectAllRowNodes(): Unit = js.native
     def selectAllRowNodes(justFiltered: Boolean): Unit = js.native
@@ -63,7 +63,7 @@ object selectionControllerMod {
     
     def selectNode(rowNode: RowNode, tryMulti: Boolean): Unit = js.native
     
-    var selectedNodes: js.Any = js.native
+    /* private */ var selectedNodes: js.Any = js.native
     
     /* private */ def setBeans(loggerFactory: js.Any): js.Any = js.native
     

@@ -38,36 +38,31 @@ object lexMod {
   trait LexDialogAction extends StObject
   object LexDialogAction {
     
-    @scala.inline
-    def LexDialogActionClose(fulfillmentState: Fulfilled | Failed_): typings.awsLambda.lexMod.LexDialogActionClose = {
+    inline def LexDialogActionClose(fulfillmentState: Fulfilled | Failed_): typings.awsLambda.lexMod.LexDialogActionClose = {
       val __obj = js.Dynamic.literal(fulfillmentState = fulfillmentState.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("Close")
       __obj.asInstanceOf[typings.awsLambda.lexMod.LexDialogActionClose]
     }
     
-    @scala.inline
-    def LexDialogActionConfirmIntent(intentName: String, slots: StringDictionary[String | Null]): typings.awsLambda.lexMod.LexDialogActionConfirmIntent = {
+    inline def LexDialogActionConfirmIntent(intentName: String, slots: StringDictionary[String | Null]): typings.awsLambda.lexMod.LexDialogActionConfirmIntent = {
       val __obj = js.Dynamic.literal(intentName = intentName.asInstanceOf[js.Any], slots = slots.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("ConfirmIntent")
       __obj.asInstanceOf[typings.awsLambda.lexMod.LexDialogActionConfirmIntent]
     }
     
-    @scala.inline
-    def LexDialogActionDelegate(slots: StringDictionary[String | Null]): typings.awsLambda.lexMod.LexDialogActionDelegate = {
+    inline def LexDialogActionDelegate(slots: StringDictionary[String | Null]): typings.awsLambda.lexMod.LexDialogActionDelegate = {
       val __obj = js.Dynamic.literal(slots = slots.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("Delegate")
       __obj.asInstanceOf[typings.awsLambda.lexMod.LexDialogActionDelegate]
     }
     
-    @scala.inline
-    def LexDialogActionElicitIntent(): typings.awsLambda.lexMod.LexDialogActionElicitIntent = {
+    inline def LexDialogActionElicitIntent(): typings.awsLambda.lexMod.LexDialogActionElicitIntent = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("ElicitIntent")
       __obj.asInstanceOf[typings.awsLambda.lexMod.LexDialogActionElicitIntent]
     }
     
-    @scala.inline
-    def LexDialogActionElicitSlot(intentName: String, slotToElicit: String, slots: StringDictionary[String | Null]): typings.awsLambda.lexMod.LexDialogActionElicitSlot = {
+    inline def LexDialogActionElicitSlot(intentName: String, slotToElicit: String, slots: StringDictionary[String | Null]): typings.awsLambda.lexMod.LexDialogActionElicitSlot = {
       val __obj = js.Dynamic.literal(intentName = intentName.asInstanceOf[js.Any], slotToElicit = slotToElicit.asInstanceOf[js.Any], slots = slots.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("ElicitSlot")
       __obj.asInstanceOf[typings.awsLambda.lexMod.LexDialogActionElicitSlot]
@@ -84,30 +79,23 @@ object lexMod {
   }
   object LexDialogActionBase {
     
-    @scala.inline
-    def apply(`type`: Close | ElicitIntent | ElicitSlot | ConfirmIntent): LexDialogActionBase = {
+    inline def apply(`type`: Close | ElicitIntent | ElicitSlot | ConfirmIntent): LexDialogActionBase = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[LexDialogActionBase]
     }
     
-    @scala.inline
-    implicit class LexDialogActionBaseMutableBuilder[Self <: LexDialogActionBase] (val x: Self) extends AnyVal {
+    extension [Self <: LexDialogActionBase](x: Self) {
       
-      @scala.inline
-      def setMessage(value: Content): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: Content): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setResponseCard(value: ContentType): Self = StObject.set(x, "responseCard", value.asInstanceOf[js.Any])
+      inline def setResponseCard(value: ContentType): Self = StObject.set(x, "responseCard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseCardUndefined: Self = StObject.set(x, "responseCard", js.undefined)
+      inline def setResponseCardUndefined: Self = StObject.set(x, "responseCard", js.undefined)
       
-      @scala.inline
-      def setType(value: Close | ElicitIntent | ElicitSlot | ConfirmIntent): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Close | ElicitIntent | ElicitSlot | ConfirmIntent): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -123,21 +111,17 @@ object lexMod {
   }
   object LexDialogActionClose {
     
-    @scala.inline
-    def apply(fulfillmentState: Fulfilled | Failed_): LexDialogActionClose = {
+    inline def apply(fulfillmentState: Fulfilled | Failed_): LexDialogActionClose = {
       val __obj = js.Dynamic.literal(fulfillmentState = fulfillmentState.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("Close")
       __obj.asInstanceOf[LexDialogActionClose]
     }
     
-    @scala.inline
-    implicit class LexDialogActionCloseMutableBuilder[Self <: LexDialogActionClose] (val x: Self) extends AnyVal {
+    extension [Self <: LexDialogActionClose](x: Self) {
       
-      @scala.inline
-      def setFulfillmentState(value: Fulfilled | Failed_): Self = StObject.set(x, "fulfillmentState", value.asInstanceOf[js.Any])
+      inline def setFulfillmentState(value: Fulfilled | Failed_): Self = StObject.set(x, "fulfillmentState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: Close): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Close): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -155,24 +139,19 @@ object lexMod {
   }
   object LexDialogActionConfirmIntent {
     
-    @scala.inline
-    def apply(intentName: String, slots: StringDictionary[String | Null]): LexDialogActionConfirmIntent = {
+    inline def apply(intentName: String, slots: StringDictionary[String | Null]): LexDialogActionConfirmIntent = {
       val __obj = js.Dynamic.literal(intentName = intentName.asInstanceOf[js.Any], slots = slots.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("ConfirmIntent")
       __obj.asInstanceOf[LexDialogActionConfirmIntent]
     }
     
-    @scala.inline
-    implicit class LexDialogActionConfirmIntentMutableBuilder[Self <: LexDialogActionConfirmIntent] (val x: Self) extends AnyVal {
+    extension [Self <: LexDialogActionConfirmIntent](x: Self) {
       
-      @scala.inline
-      def setIntentName(value: String): Self = StObject.set(x, "intentName", value.asInstanceOf[js.Any])
+      inline def setIntentName(value: String): Self = StObject.set(x, "intentName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlots(value: StringDictionary[String | Null]): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+      inline def setSlots(value: StringDictionary[String | Null]): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: ConfirmIntent): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ConfirmIntent): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -186,21 +165,17 @@ object lexMod {
   }
   object LexDialogActionDelegate {
     
-    @scala.inline
-    def apply(slots: StringDictionary[String | Null]): LexDialogActionDelegate = {
+    inline def apply(slots: StringDictionary[String | Null]): LexDialogActionDelegate = {
       val __obj = js.Dynamic.literal(slots = slots.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("Delegate")
       __obj.asInstanceOf[LexDialogActionDelegate]
     }
     
-    @scala.inline
-    implicit class LexDialogActionDelegateMutableBuilder[Self <: LexDialogActionDelegate] (val x: Self) extends AnyVal {
+    extension [Self <: LexDialogActionDelegate](x: Self) {
       
-      @scala.inline
-      def setSlots(value: StringDictionary[String | Null]): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+      inline def setSlots(value: StringDictionary[String | Null]): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: Delegate): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Delegate): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -214,18 +189,15 @@ object lexMod {
   }
   object LexDialogActionElicitIntent {
     
-    @scala.inline
-    def apply(): LexDialogActionElicitIntent = {
+    inline def apply(): LexDialogActionElicitIntent = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("ElicitIntent")
       __obj.asInstanceOf[LexDialogActionElicitIntent]
     }
     
-    @scala.inline
-    implicit class LexDialogActionElicitIntentMutableBuilder[Self <: LexDialogActionElicitIntent] (val x: Self) extends AnyVal {
+    extension [Self <: LexDialogActionElicitIntent](x: Self) {
       
-      @scala.inline
-      def setType(value: ElicitIntent): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ElicitIntent): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -245,27 +217,21 @@ object lexMod {
   }
   object LexDialogActionElicitSlot {
     
-    @scala.inline
-    def apply(intentName: String, slotToElicit: String, slots: StringDictionary[String | Null]): LexDialogActionElicitSlot = {
+    inline def apply(intentName: String, slotToElicit: String, slots: StringDictionary[String | Null]): LexDialogActionElicitSlot = {
       val __obj = js.Dynamic.literal(intentName = intentName.asInstanceOf[js.Any], slotToElicit = slotToElicit.asInstanceOf[js.Any], slots = slots.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("ElicitSlot")
       __obj.asInstanceOf[LexDialogActionElicitSlot]
     }
     
-    @scala.inline
-    implicit class LexDialogActionElicitSlotMutableBuilder[Self <: LexDialogActionElicitSlot] (val x: Self) extends AnyVal {
+    extension [Self <: LexDialogActionElicitSlot](x: Self) {
       
-      @scala.inline
-      def setIntentName(value: String): Self = StObject.set(x, "intentName", value.asInstanceOf[js.Any])
+      inline def setIntentName(value: String): Self = StObject.set(x, "intentName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlotToElicit(value: String): Self = StObject.set(x, "slotToElicit", value.asInstanceOf[js.Any])
+      inline def setSlotToElicit(value: String): Self = StObject.set(x, "slotToElicit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlots(value: StringDictionary[String | Null]): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+      inline def setSlots(value: StringDictionary[String | Null]): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: ElicitSlot): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ElicitSlot): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -291,8 +257,7 @@ object lexMod {
   }
   object LexEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bot: Alias,
       currentIntent: ConfirmationStatus,
       inputTranscript: String,
@@ -305,38 +270,27 @@ object lexMod {
       __obj.asInstanceOf[LexEvent]
     }
     
-    @scala.inline
-    implicit class LexEventMutableBuilder[Self <: LexEvent] (val x: Self) extends AnyVal {
+    extension [Self <: LexEvent](x: Self) {
       
-      @scala.inline
-      def setBot(value: Alias): Self = StObject.set(x, "bot", value.asInstanceOf[js.Any])
+      inline def setBot(value: Alias): Self = StObject.set(x, "bot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentIntent(value: ConfirmationStatus): Self = StObject.set(x, "currentIntent", value.asInstanceOf[js.Any])
+      inline def setCurrentIntent(value: ConfirmationStatus): Self = StObject.set(x, "currentIntent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputTranscript(value: String): Self = StObject.set(x, "inputTranscript", value.asInstanceOf[js.Any])
+      inline def setInputTranscript(value: String): Self = StObject.set(x, "inputTranscript", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvocationSource(value: DialogCodeHook | FulfillmentCodeHook): Self = StObject.set(x, "invocationSource", value.asInstanceOf[js.Any])
+      inline def setInvocationSource(value: DialogCodeHook | FulfillmentCodeHook): Self = StObject.set(x, "invocationSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageVersion(value: `1Dot0`): Self = StObject.set(x, "messageVersion", value.asInstanceOf[js.Any])
+      inline def setMessageVersion(value: `1Dot0`): Self = StObject.set(x, "messageVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputDialogMode(value: Text | Voice_): Self = StObject.set(x, "outputDialogMode", value.asInstanceOf[js.Any])
+      inline def setOutputDialogMode(value: Text | Voice_): Self = StObject.set(x, "outputDialogMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestAttributes(value: StringDictionary[String]): Self = StObject.set(x, "requestAttributes", value.asInstanceOf[js.Any])
+      inline def setRequestAttributes(value: StringDictionary[String]): Self = StObject.set(x, "requestAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestAttributesNull: Self = StObject.set(x, "requestAttributes", null)
+      inline def setRequestAttributesNull: Self = StObject.set(x, "requestAttributes", null)
       
-      @scala.inline
-      def setSessionAttributes(value: StringDictionary[String]): Self = StObject.set(x, "sessionAttributes", value.asInstanceOf[js.Any])
+      inline def setSessionAttributes(value: StringDictionary[String]): Self = StObject.set(x, "sessionAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+      inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -354,8 +308,7 @@ object lexMod {
   }
   object LexGenericAttachment {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attachmentLinkUrl: String,
       buttons: js.Array[typings.awsLambda.anon.Text],
       imageUrl: String,
@@ -366,26 +319,19 @@ object lexMod {
       __obj.asInstanceOf[LexGenericAttachment]
     }
     
-    @scala.inline
-    implicit class LexGenericAttachmentMutableBuilder[Self <: LexGenericAttachment] (val x: Self) extends AnyVal {
+    extension [Self <: LexGenericAttachment](x: Self) {
       
-      @scala.inline
-      def setAttachmentLinkUrl(value: String): Self = StObject.set(x, "attachmentLinkUrl", value.asInstanceOf[js.Any])
+      inline def setAttachmentLinkUrl(value: String): Self = StObject.set(x, "attachmentLinkUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtons(value: js.Array[typings.awsLambda.anon.Text]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+      inline def setButtons(value: js.Array[typings.awsLambda.anon.Text]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonsVarargs(value: typings.awsLambda.anon.Text*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+      inline def setButtonsVarargs(value: typings.awsLambda.anon.Text*): Self = StObject.set(x, "buttons", js.Array(value :_*))
       
-      @scala.inline
-      def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
+      inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubTitle(value: String): Self = StObject.set(x, "subTitle", value.asInstanceOf[js.Any])
+      inline def setSubTitle(value: String): Self = StObject.set(x, "subTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -399,23 +345,18 @@ object lexMod {
   }
   object LexResult {
     
-    @scala.inline
-    def apply(dialogAction: LexDialogAction): LexResult = {
+    inline def apply(dialogAction: LexDialogAction): LexResult = {
       val __obj = js.Dynamic.literal(dialogAction = dialogAction.asInstanceOf[js.Any])
       __obj.asInstanceOf[LexResult]
     }
     
-    @scala.inline
-    implicit class LexResultMutableBuilder[Self <: LexResult] (val x: Self) extends AnyVal {
+    extension [Self <: LexResult](x: Self) {
       
-      @scala.inline
-      def setDialogAction(value: LexDialogAction): Self = StObject.set(x, "dialogAction", value.asInstanceOf[js.Any])
+      inline def setDialogAction(value: LexDialogAction): Self = StObject.set(x, "dialogAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionAttributes(value: StringDictionary[String]): Self = StObject.set(x, "sessionAttributes", value.asInstanceOf[js.Any])
+      inline def setSessionAttributes(value: StringDictionary[String]): Self = StObject.set(x, "sessionAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionAttributesUndefined: Self = StObject.set(x, "sessionAttributes", js.undefined)
+      inline def setSessionAttributesUndefined: Self = StObject.set(x, "sessionAttributes", js.undefined)
     }
   }
   
@@ -427,17 +368,14 @@ object lexMod {
   }
   object LexSlotResolution {
     
-    @scala.inline
-    def apply(value: String): LexSlotResolution = {
+    inline def apply(value: String): LexSlotResolution = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[LexSlotResolution]
     }
     
-    @scala.inline
-    implicit class LexSlotResolutionMutableBuilder[Self <: LexSlotResolution] (val x: Self) extends AnyVal {
+    extension [Self <: LexSlotResolution](x: Self) {
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

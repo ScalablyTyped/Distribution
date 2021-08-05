@@ -58,73 +58,51 @@ trait Service extends StObject {
 }
 object Service {
   
-  @scala.inline
-  def apply(): Service = {
+  inline def apply(): Service = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Service]
   }
   
-  @scala.inline
-  implicit class ServiceMutableBuilder[Self <: Service] (val x: Self) extends AnyVal {
+  extension [Self <: Service](x: Self) {
     
-    @scala.inline
-    def setAction(value: Action): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: Action): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
     
-    @scala.inline
-    def setArchived(value: Boolean): Self = StObject.set(x, "Archived", value.asInstanceOf[js.Any])
+    inline def setArchived(value: Boolean): Self = StObject.set(x, "Archived", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArchivedUndefined: Self = StObject.set(x, "Archived", js.undefined)
+    inline def setArchivedUndefined: Self = StObject.set(x, "Archived", js.undefined)
     
-    @scala.inline
-    def setCount(value: Integer): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Integer): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
     
-    @scala.inline
-    def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
+    inline def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectorIdUndefined: Self = StObject.set(x, "DetectorId", js.undefined)
+    inline def setDetectorIdUndefined: Self = StObject.set(x, "DetectorId", js.undefined)
     
-    @scala.inline
-    def setEventFirstSeen(value: String): Self = StObject.set(x, "EventFirstSeen", value.asInstanceOf[js.Any])
+    inline def setEventFirstSeen(value: String): Self = StObject.set(x, "EventFirstSeen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventFirstSeenUndefined: Self = StObject.set(x, "EventFirstSeen", js.undefined)
+    inline def setEventFirstSeenUndefined: Self = StObject.set(x, "EventFirstSeen", js.undefined)
     
-    @scala.inline
-    def setEventLastSeen(value: String): Self = StObject.set(x, "EventLastSeen", value.asInstanceOf[js.Any])
+    inline def setEventLastSeen(value: String): Self = StObject.set(x, "EventLastSeen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventLastSeenUndefined: Self = StObject.set(x, "EventLastSeen", js.undefined)
+    inline def setEventLastSeenUndefined: Self = StObject.set(x, "EventLastSeen", js.undefined)
     
-    @scala.inline
-    def setEvidence(value: Evidence): Self = StObject.set(x, "Evidence", value.asInstanceOf[js.Any])
+    inline def setEvidence(value: Evidence): Self = StObject.set(x, "Evidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvidenceUndefined: Self = StObject.set(x, "Evidence", js.undefined)
+    inline def setEvidenceUndefined: Self = StObject.set(x, "Evidence", js.undefined)
     
-    @scala.inline
-    def setResourceRole(value: String): Self = StObject.set(x, "ResourceRole", value.asInstanceOf[js.Any])
+    inline def setResourceRole(value: String): Self = StObject.set(x, "ResourceRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceRoleUndefined: Self = StObject.set(x, "ResourceRole", js.undefined)
+    inline def setResourceRoleUndefined: Self = StObject.set(x, "ResourceRole", js.undefined)
     
-    @scala.inline
-    def setServiceName(value: String): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: String): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNameUndefined: Self = StObject.set(x, "ServiceName", js.undefined)
+    inline def setServiceNameUndefined: Self = StObject.set(x, "ServiceName", js.undefined)
     
-    @scala.inline
-    def setUserFeedback(value: String): Self = StObject.set(x, "UserFeedback", value.asInstanceOf[js.Any])
+    inline def setUserFeedback(value: String): Self = StObject.set(x, "UserFeedback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserFeedbackUndefined: Self = StObject.set(x, "UserFeedback", js.undefined)
+    inline def setUserFeedbackUndefined: Self = StObject.set(x, "UserFeedback", js.undefined)
   }
 }

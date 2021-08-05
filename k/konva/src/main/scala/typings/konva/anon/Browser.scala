@@ -18,28 +18,21 @@ trait Browser extends StObject {
 }
 object Browser {
   
-  @scala.inline
-  def apply(browser: js.Any, ieMobile: Boolean, isIE: Double | Boolean, mobile: Boolean, version: js.Any): Browser = {
+  inline def apply(browser: js.Any, ieMobile: Boolean, isIE: Double | Boolean, mobile: Boolean, version: js.Any): Browser = {
     val __obj = js.Dynamic.literal(browser = browser.asInstanceOf[js.Any], ieMobile = ieMobile.asInstanceOf[js.Any], isIE = isIE.asInstanceOf[js.Any], mobile = mobile.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Browser]
   }
   
-  @scala.inline
-  implicit class BrowserMutableBuilder[Self <: Browser] (val x: Self) extends AnyVal {
+  extension [Self <: Browser](x: Self) {
     
-    @scala.inline
-    def setBrowser(value: js.Any): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
+    inline def setBrowser(value: js.Any): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIeMobile(value: Boolean): Self = StObject.set(x, "ieMobile", value.asInstanceOf[js.Any])
+    inline def setIeMobile(value: Boolean): Self = StObject.set(x, "ieMobile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsIE(value: Double | Boolean): Self = StObject.set(x, "isIE", value.asInstanceOf[js.Any])
+    inline def setIsIE(value: Double | Boolean): Self = StObject.set(x, "isIE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMobile(value: Boolean): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
+    inline def setMobile(value: Boolean): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: js.Any): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: js.Any): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

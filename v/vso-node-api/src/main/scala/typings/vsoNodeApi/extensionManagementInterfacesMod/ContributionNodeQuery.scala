@@ -23,8 +23,7 @@ trait ContributionNodeQuery extends StObject {
 }
 object ContributionNodeQuery {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contributionIds: js.Array[String],
     includeProviderDetails: Boolean,
     queryOptions: ContributionQueryOptions
@@ -33,19 +32,14 @@ object ContributionNodeQuery {
     __obj.asInstanceOf[ContributionNodeQuery]
   }
   
-  @scala.inline
-  implicit class ContributionNodeQueryMutableBuilder[Self <: ContributionNodeQuery] (val x: Self) extends AnyVal {
+  extension [Self <: ContributionNodeQuery](x: Self) {
     
-    @scala.inline
-    def setContributionIds(value: js.Array[String]): Self = StObject.set(x, "contributionIds", value.asInstanceOf[js.Any])
+    inline def setContributionIds(value: js.Array[String]): Self = StObject.set(x, "contributionIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContributionIdsVarargs(value: String*): Self = StObject.set(x, "contributionIds", js.Array(value :_*))
+    inline def setContributionIdsVarargs(value: String*): Self = StObject.set(x, "contributionIds", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludeProviderDetails(value: Boolean): Self = StObject.set(x, "includeProviderDetails", value.asInstanceOf[js.Any])
+    inline def setIncludeProviderDetails(value: Boolean): Self = StObject.set(x, "includeProviderDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryOptions(value: ContributionQueryOptions): Self = StObject.set(x, "queryOptions", value.asInstanceOf[js.Any])
+    inline def setQueryOptions(value: ContributionQueryOptions): Self = StObject.set(x, "queryOptions", value.asInstanceOf[js.Any])
   }
 }

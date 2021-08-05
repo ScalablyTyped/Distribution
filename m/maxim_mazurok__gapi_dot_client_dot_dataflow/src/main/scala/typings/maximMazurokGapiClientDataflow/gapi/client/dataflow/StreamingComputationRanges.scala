@@ -14,28 +14,21 @@ trait StreamingComputationRanges extends StObject {
 }
 object StreamingComputationRanges {
   
-  @scala.inline
-  def apply(): StreamingComputationRanges = {
+  inline def apply(): StreamingComputationRanges = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StreamingComputationRanges]
   }
   
-  @scala.inline
-  implicit class StreamingComputationRangesMutableBuilder[Self <: StreamingComputationRanges] (val x: Self) extends AnyVal {
+  extension [Self <: StreamingComputationRanges](x: Self) {
     
-    @scala.inline
-    def setComputationId(value: String): Self = StObject.set(x, "computationId", value.asInstanceOf[js.Any])
+    inline def setComputationId(value: String): Self = StObject.set(x, "computationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputationIdUndefined: Self = StObject.set(x, "computationId", js.undefined)
+    inline def setComputationIdUndefined: Self = StObject.set(x, "computationId", js.undefined)
     
-    @scala.inline
-    def setRangeAssignments(value: js.Array[KeyRangeDataDiskAssignment]): Self = StObject.set(x, "rangeAssignments", value.asInstanceOf[js.Any])
+    inline def setRangeAssignments(value: js.Array[KeyRangeDataDiskAssignment]): Self = StObject.set(x, "rangeAssignments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeAssignmentsUndefined: Self = StObject.set(x, "rangeAssignments", js.undefined)
+    inline def setRangeAssignmentsUndefined: Self = StObject.set(x, "rangeAssignments", js.undefined)
     
-    @scala.inline
-    def setRangeAssignmentsVarargs(value: KeyRangeDataDiskAssignment*): Self = StObject.set(x, "rangeAssignments", js.Array(value :_*))
+    inline def setRangeAssignmentsVarargs(value: KeyRangeDataDiskAssignment*): Self = StObject.set(x, "rangeAssignments", js.Array(value :_*))
   }
 }

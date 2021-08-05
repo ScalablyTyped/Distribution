@@ -19,40 +19,29 @@ trait Platform
 }
 object Platform {
   
-  @scala.inline
-  def apply(): Platform = {
+  inline def apply(): Platform = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Platform]
   }
   
-  @scala.inline
-  implicit class PlatformMutableBuilder[Self <: Platform] (val x: Self) extends AnyVal {
+  extension [Self <: Platform](x: Self) {
     
-    @scala.inline
-    def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
+    inline def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowserUndefined: Self = StObject.set(x, "browser", js.undefined)
+    inline def setBrowserUndefined: Self = StObject.set(x, "browser", js.undefined)
     
-    @scala.inline
-    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+    inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
-    @scala.inline
-    def setResolutions(value: js.Array[String]): Self = StObject.set(x, "resolutions", value.asInstanceOf[js.Any])
+    inline def setResolutions(value: js.Array[String]): Self = StObject.set(x, "resolutions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolutionsUndefined: Self = StObject.set(x, "resolutions", js.undefined)
+    inline def setResolutionsUndefined: Self = StObject.set(x, "resolutions", js.undefined)
     
-    @scala.inline
-    def setResolutionsVarargs(value: String*): Self = StObject.set(x, "resolutions", js.Array(value :_*))
+    inline def setResolutionsVarargs(value: String*): Self = StObject.set(x, "resolutions", js.Array(value :_*))
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

@@ -18,28 +18,21 @@ trait BatchDetectEntitiesItemResult extends StObject {
 }
 object BatchDetectEntitiesItemResult {
   
-  @scala.inline
-  def apply(): BatchDetectEntitiesItemResult = {
+  inline def apply(): BatchDetectEntitiesItemResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchDetectEntitiesItemResult]
   }
   
-  @scala.inline
-  implicit class BatchDetectEntitiesItemResultMutableBuilder[Self <: BatchDetectEntitiesItemResult] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDetectEntitiesItemResult](x: Self) {
     
-    @scala.inline
-    def setEntities(value: ListOfEntities): Self = StObject.set(x, "Entities", value.asInstanceOf[js.Any])
+    inline def setEntities(value: ListOfEntities): Self = StObject.set(x, "Entities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitiesUndefined: Self = StObject.set(x, "Entities", js.undefined)
+    inline def setEntitiesUndefined: Self = StObject.set(x, "Entities", js.undefined)
     
-    @scala.inline
-    def setEntitiesVarargs(value: Entity*): Self = StObject.set(x, "Entities", js.Array(value :_*))
+    inline def setEntitiesVarargs(value: Entity*): Self = StObject.set(x, "Entities", js.Array(value :_*))
     
-    @scala.inline
-    def setIndex(value: Integer): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Integer): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "Index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "Index", js.undefined)
   }
 }

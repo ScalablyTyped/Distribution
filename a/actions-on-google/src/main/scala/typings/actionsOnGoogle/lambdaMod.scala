@@ -52,20 +52,16 @@ object lambdaMod {
   }
   object LambdaMetadata {
     
-    @scala.inline
-    def apply(context: Context, event: JsonObject): LambdaMetadata = {
+    inline def apply(context: Context, event: JsonObject): LambdaMetadata = {
       val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
       __obj.asInstanceOf[LambdaMetadata]
     }
     
-    @scala.inline
-    implicit class LambdaMetadataMutableBuilder[Self <: LambdaMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: LambdaMetadata](x: Self) {
       
-      @scala.inline
-      def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvent(value: JsonObject): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: JsonObject): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -14,10 +14,8 @@ object locale {
   @js.native
   val ^ : typings.webix.webix.locale = js.native
   
-  @scala.inline
-  implicit class localeMutableBuilder[Self <: locale] (val x: Self) extends AnyVal {
+  extension [Self <: locale](x: Self) {
     
-    @scala.inline
-    def setPager(value: js.Any): Self = StObject.set(x, "pager", value.asInstanceOf[js.Any])
+    inline def setPager(value: js.Any): Self = StObject.set(x, "pager", value.asInstanceOf[js.Any])
   }
 }

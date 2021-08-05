@@ -13,19 +13,15 @@ trait OIDC extends StObject {
 }
 object OIDC {
   
-  @scala.inline
-  def apply(): OIDC = {
+  inline def apply(): OIDC = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OIDC]
   }
   
-  @scala.inline
-  implicit class OIDCMutableBuilder[Self <: OIDC] (val x: Self) extends AnyVal {
+  extension [Self <: OIDC](x: Self) {
     
-    @scala.inline
-    def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+    inline def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
+    inline def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
   }
 }

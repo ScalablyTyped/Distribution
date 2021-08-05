@@ -32,10 +32,8 @@ object firebaseNamespaceMod {
   
   object app {
     
-    @scala.inline
-    def apply(): App = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[App]
-    @scala.inline
-    def apply(name: String): App = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[App]
+    inline def apply(): App = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[App]
+    inline def apply(name: String): App = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[App]
     
     @JSImport("firebase-admin/lib/firebase-namespace", "app")
     @js.native
@@ -48,10 +46,8 @@ object firebaseNamespaceMod {
   
   object auth {
     
-    @scala.inline
-    def apply(): Auth = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Auth]
-    @scala.inline
-    def apply(app: App): Auth = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[Auth]
+    inline def apply(): Auth = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Auth]
+    inline def apply(app: App): Auth = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[Auth]
     
     @JSImport("firebase-admin/lib/firebase-namespace", "auth")
     @js.native
@@ -98,10 +94,8 @@ object firebaseNamespaceMod {
       * @return {!admin.credential.Credential} A credential authenticated via Google
       *   Application Default Credentials that can be used to initialize an app.
       */
-    @scala.inline
-    def applicationDefault(): Credential = ^.asInstanceOf[js.Dynamic].applyDynamic("applicationDefault")().asInstanceOf[Credential]
-    @scala.inline
-    def applicationDefault(httpAgent: Agent): Credential = ^.asInstanceOf[js.Dynamic].applyDynamic("applicationDefault")(httpAgent.asInstanceOf[js.Any]).asInstanceOf[Credential]
+    inline def applicationDefault(): Credential = ^.asInstanceOf[js.Dynamic].applyDynamic("applicationDefault")().asInstanceOf[Credential]
+    inline def applicationDefault(httpAgent: Agent): Credential = ^.asInstanceOf[js.Dynamic].applyDynamic("applicationDefault")(httpAgent.asInstanceOf[js.Any]).asInstanceOf[Credential]
     
     /**
       * Returns a credential created from the provided service account that grants
@@ -148,14 +142,10 @@ object firebaseNamespaceMod {
       * @return A credential authenticated via the
       *   provided service account that can be used to initialize an app.
       */
-    @scala.inline
-    def cert(serviceAccountPathOrObject: String): Credential = ^.asInstanceOf[js.Dynamic].applyDynamic("cert")(serviceAccountPathOrObject.asInstanceOf[js.Any]).asInstanceOf[Credential]
-    @scala.inline
-    def cert(serviceAccountPathOrObject: String, httpAgent: Agent): Credential = (^.asInstanceOf[js.Dynamic].applyDynamic("cert")(serviceAccountPathOrObject.asInstanceOf[js.Any], httpAgent.asInstanceOf[js.Any])).asInstanceOf[Credential]
-    @scala.inline
-    def cert(serviceAccountPathOrObject: ServiceAccount): Credential = ^.asInstanceOf[js.Dynamic].applyDynamic("cert")(serviceAccountPathOrObject.asInstanceOf[js.Any]).asInstanceOf[Credential]
-    @scala.inline
-    def cert(serviceAccountPathOrObject: ServiceAccount, httpAgent: Agent): Credential = (^.asInstanceOf[js.Dynamic].applyDynamic("cert")(serviceAccountPathOrObject.asInstanceOf[js.Any], httpAgent.asInstanceOf[js.Any])).asInstanceOf[Credential]
+    inline def cert(serviceAccountPathOrObject: String): Credential = ^.asInstanceOf[js.Dynamic].applyDynamic("cert")(serviceAccountPathOrObject.asInstanceOf[js.Any]).asInstanceOf[Credential]
+    inline def cert(serviceAccountPathOrObject: String, httpAgent: Agent): Credential = (^.asInstanceOf[js.Dynamic].applyDynamic("cert")(serviceAccountPathOrObject.asInstanceOf[js.Any], httpAgent.asInstanceOf[js.Any])).asInstanceOf[Credential]
+    inline def cert(serviceAccountPathOrObject: ServiceAccount): Credential = ^.asInstanceOf[js.Dynamic].applyDynamic("cert")(serviceAccountPathOrObject.asInstanceOf[js.Any]).asInstanceOf[Credential]
+    inline def cert(serviceAccountPathOrObject: ServiceAccount, httpAgent: Agent): Credential = (^.asInstanceOf[js.Dynamic].applyDynamic("cert")(serviceAccountPathOrObject.asInstanceOf[js.Any], httpAgent.asInstanceOf[js.Any])).asInstanceOf[Credential]
     
     /**
       * Returns a credential created from the provided refresh token that grants
@@ -190,22 +180,16 @@ object firebaseNamespaceMod {
       * @return A credential authenticated via the
       *   provided service account that can be used to initialize an app.
       */
-    @scala.inline
-    def refreshToken(refreshTokenPathOrObject: String): Credential = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshToken")(refreshTokenPathOrObject.asInstanceOf[js.Any]).asInstanceOf[Credential]
-    @scala.inline
-    def refreshToken(refreshTokenPathOrObject: String, httpAgent: Agent): Credential = (^.asInstanceOf[js.Dynamic].applyDynamic("refreshToken")(refreshTokenPathOrObject.asInstanceOf[js.Any], httpAgent.asInstanceOf[js.Any])).asInstanceOf[Credential]
-    @scala.inline
-    def refreshToken(refreshTokenPathOrObject: js.Object): Credential = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshToken")(refreshTokenPathOrObject.asInstanceOf[js.Any]).asInstanceOf[Credential]
-    @scala.inline
-    def refreshToken(refreshTokenPathOrObject: js.Object, httpAgent: Agent): Credential = (^.asInstanceOf[js.Dynamic].applyDynamic("refreshToken")(refreshTokenPathOrObject.asInstanceOf[js.Any], httpAgent.asInstanceOf[js.Any])).asInstanceOf[Credential]
+    inline def refreshToken(refreshTokenPathOrObject: String): Credential = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshToken")(refreshTokenPathOrObject.asInstanceOf[js.Any]).asInstanceOf[Credential]
+    inline def refreshToken(refreshTokenPathOrObject: String, httpAgent: Agent): Credential = (^.asInstanceOf[js.Dynamic].applyDynamic("refreshToken")(refreshTokenPathOrObject.asInstanceOf[js.Any], httpAgent.asInstanceOf[js.Any])).asInstanceOf[Credential]
+    inline def refreshToken(refreshTokenPathOrObject: js.Object): Credential = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshToken")(refreshTokenPathOrObject.asInstanceOf[js.Any]).asInstanceOf[Credential]
+    inline def refreshToken(refreshTokenPathOrObject: js.Object, httpAgent: Agent): Credential = (^.asInstanceOf[js.Dynamic].applyDynamic("refreshToken")(refreshTokenPathOrObject.asInstanceOf[js.Any], httpAgent.asInstanceOf[js.Any])).asInstanceOf[Credential]
   }
   
   object database {
     
-    @scala.inline
-    def apply(): Database = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Database]
-    @scala.inline
-    def apply(app: App): Database = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[Database]
+    inline def apply(): Database = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Database]
+    inline def apply(app: App): Database = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[Database]
     
     @JSImport("firebase-admin/lib/firebase-namespace", "database")
     @js.native
@@ -219,26 +203,18 @@ object firebaseNamespaceMod {
     @js.native
     val ServerValue: typings.firebaseDatabaseTypes.mod.ServerValue = js.native
     
-    @scala.inline
-    def enableLogging(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")().asInstanceOf[js.Any]
-    @scala.inline
-    def enableLogging(logger: js.Function1[/* a */ String, js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    @scala.inline
-    def enableLogging(logger: js.Function1[/* a */ String, js.Any], persistent: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger.asInstanceOf[js.Any], persistent.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def enableLogging(logger: Boolean): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    @scala.inline
-    def enableLogging(logger: Boolean, persistent: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger.asInstanceOf[js.Any], persistent.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def enableLogging(logger: Unit, persistent: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger.asInstanceOf[js.Any], persistent.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def enableLogging(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")().asInstanceOf[js.Any]
+    inline def enableLogging(logger: js.Function1[/* a */ String, js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def enableLogging(logger: js.Function1[/* a */ String, js.Any], persistent: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger.asInstanceOf[js.Any], persistent.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def enableLogging(logger: Boolean): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def enableLogging(logger: Boolean, persistent: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger.asInstanceOf[js.Any], persistent.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def enableLogging(logger: Unit, persistent: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger.asInstanceOf[js.Any], persistent.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
   object firestore {
     
-    @scala.inline
-    def apply(): typings.googleCloudFirestore.mod.Firestore = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.googleCloudFirestore.mod.Firestore]
-    @scala.inline
-    def apply(app: App): typings.googleCloudFirestore.mod.Firestore = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudFirestore.mod.Firestore]
+    inline def apply(): typings.googleCloudFirestore.mod.Firestore = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.googleCloudFirestore.mod.Firestore]
+    inline def apply(app: App): typings.googleCloudFirestore.mod.Firestore = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudFirestore.mod.Firestore]
     
     @JSImport("firebase-admin/lib/firebase-namespace", "firestore")
     @js.native
@@ -246,27 +222,27 @@ object firebaseNamespaceMod {
     
     @JSImport("firebase-admin/lib/firebase-namespace", "firestore.BulkWriter")
     @js.native
-    class BulkWriter protected ()
+    /* private */ class BulkWriter ()
       extends typings.firebaseAdmin.firestoreMod.firestore.BulkWriter
     
     @JSImport("firebase-admin/lib/firebase-namespace", "firestore.CollectionGroup")
     @js.native
-    class CollectionGroup[T] protected ()
+    /* private */ class CollectionGroup[T] ()
       extends typings.firebaseAdmin.firestoreMod.firestore.CollectionGroup[T]
     
     @JSImport("firebase-admin/lib/firebase-namespace", "firestore.CollectionReference")
     @js.native
-    class CollectionReference[T] protected ()
+    /* private */ class CollectionReference[T] ()
       extends typings.firebaseAdmin.firestoreMod.firestore.CollectionReference[T]
     
     @JSImport("firebase-admin/lib/firebase-namespace", "firestore.DocumentReference")
     @js.native
-    class DocumentReference[T] protected ()
+    /* private */ class DocumentReference[T] ()
       extends typings.firebaseAdmin.firestoreMod.firestore.DocumentReference[T]
     
     @JSImport("firebase-admin/lib/firebase-namespace", "firestore.DocumentSnapshot")
     @js.native
-    class DocumentSnapshot[T] protected ()
+    /* protected */ class DocumentSnapshot[T] ()
       extends typings.firebaseAdmin.firestoreMod.firestore.DocumentSnapshot[T]
     
     @JSImport("firebase-admin/lib/firebase-namespace", "firestore.FieldPath")
@@ -292,13 +268,12 @@ object firebaseNamespaceMod {
         * Returns a special sentinel FieldPath to refer to the ID of a document.
         * It can be used in queries to sort or filter by the document ID.
         */
-      @scala.inline
-      def documentId(): typings.googleCloudFirestore.FirebaseFirestore.FieldPath = ^.asInstanceOf[js.Dynamic].applyDynamic("documentId")().asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.FieldPath]
+      inline def documentId(): typings.googleCloudFirestore.FirebaseFirestore.FieldPath = ^.asInstanceOf[js.Dynamic].applyDynamic("documentId")().asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.FieldPath]
     }
     
     @JSImport("firebase-admin/lib/firebase-namespace", "firestore.FieldValue")
     @js.native
-    class FieldValue protected ()
+    /* private */ class FieldValue ()
       extends typings.firebaseAdmin.firestoreMod.firestore.FieldValue
     /* static members */
     object FieldValue {
@@ -318,8 +293,7 @@ object firebaseNamespaceMod {
         * @return The FieldValue sentinel for use in a call to set(), create() or
         * update().
         */
-      @scala.inline
-      def arrayRemove(elements: js.Any*): typings.googleCloudFirestore.FirebaseFirestore.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayRemove")(elements.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.FieldValue]
+      inline def arrayRemove(elements: js.Any*): typings.googleCloudFirestore.FirebaseFirestore.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayRemove")(elements.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.FieldValue]
       
       /**
         * Returns a special value that can be used with set(), create() or update()
@@ -333,8 +307,7 @@ object firebaseNamespaceMod {
         * @return The FieldValue sentinel for use in a call to set(), create() or
         * update().
         */
-      @scala.inline
-      def arrayUnion(elements: js.Any*): typings.googleCloudFirestore.FirebaseFirestore.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayUnion")(elements.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.FieldValue]
+      inline def arrayUnion(elements: js.Any*): typings.googleCloudFirestore.FirebaseFirestore.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayUnion")(elements.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.FieldValue]
       
       /**
         * Returns a sentinel for use with update() or set() with {merge:true} to
@@ -342,8 +315,7 @@ object firebaseNamespaceMod {
         *
         * @return The FieldValue sentinel for use in a call to set() or update().
         */
-      @scala.inline
-      def delete(): typings.googleCloudFirestore.FirebaseFirestore.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")().asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.FieldValue]
+      inline def delete(): typings.googleCloudFirestore.FirebaseFirestore.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")().asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.FieldValue]
       
       /**
         * Returns a special value that can be used with set(), create() or update()
@@ -362,8 +334,7 @@ object firebaseNamespaceMod {
         * @return The FieldValue sentinel for use in a call to set(), create() or
         * update().
         */
-      @scala.inline
-      def increment(n: Double): typings.googleCloudFirestore.FirebaseFirestore.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("increment")(n.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.FieldValue]
+      inline def increment(n: Double): typings.googleCloudFirestore.FirebaseFirestore.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("increment")(n.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.FieldValue]
       
       /**
         * Returns a sentinel used with set(), create() or update() to include a
@@ -372,8 +343,7 @@ object firebaseNamespaceMod {
         * @return The FieldValue sentinel for use in a call to set(), create() or
         * update().
         */
-      @scala.inline
-      def serverTimestamp(): typings.googleCloudFirestore.FirebaseFirestore.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("serverTimestamp")().asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.FieldValue]
+      inline def serverTimestamp(): typings.googleCloudFirestore.FirebaseFirestore.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("serverTimestamp")().asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.FieldValue]
     }
     
     @JSImport("firebase-admin/lib/firebase-namespace", "firestore.Firestore")
@@ -444,22 +414,22 @@ object firebaseNamespaceMod {
     
     @JSImport("firebase-admin/lib/firebase-namespace", "firestore.Query")
     @js.native
-    class Query[T] protected ()
+    /* protected */ class Query[T] ()
       extends typings.firebaseAdmin.firestoreMod.firestore.Query[T]
     
     @JSImport("firebase-admin/lib/firebase-namespace", "firestore.QueryDocumentSnapshot")
     @js.native
-    class QueryDocumentSnapshot[T] protected ()
+    /* private */ class QueryDocumentSnapshot[T] ()
       extends typings.firebaseAdmin.firestoreMod.firestore.QueryDocumentSnapshot[T]
     
     @JSImport("firebase-admin/lib/firebase-namespace", "firestore.QueryPartition")
     @js.native
-    class QueryPartition[T] protected ()
+    /* private */ class QueryPartition[T] ()
       extends typings.firebaseAdmin.firestoreMod.firestore.QueryPartition[T]
     
     @JSImport("firebase-admin/lib/firebase-namespace", "firestore.QuerySnapshot")
     @js.native
-    class QuerySnapshot[T] protected ()
+    /* private */ class QuerySnapshot[T] ()
       extends typings.firebaseAdmin.firestoreMod.firestore.QuerySnapshot[T]
     
     @JSImport("firebase-admin/lib/firebase-namespace", "firestore.Timestamp")
@@ -493,8 +463,7 @@ object firebaseNamespaceMod {
         * @return A new `Timestamp` representing the same point in time as the
         * given date.
         */
-      @scala.inline
-      def fromDate(date: Date): typings.googleCloudFirestore.FirebaseFirestore.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.Timestamp]
+      inline def fromDate(date: Date): typings.googleCloudFirestore.FirebaseFirestore.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.Timestamp]
       
       /**
         * Creates a new timestamp from the given number of milliseconds.
@@ -504,31 +473,29 @@ object firebaseNamespaceMod {
         * @return A new `Timestamp` representing the same point in time as the
         * given number of milliseconds.
         */
-      @scala.inline
-      def fromMillis(milliseconds: Double): typings.googleCloudFirestore.FirebaseFirestore.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMillis")(milliseconds.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.Timestamp]
+      inline def fromMillis(milliseconds: Double): typings.googleCloudFirestore.FirebaseFirestore.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMillis")(milliseconds.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.Timestamp]
       
       /**
         * Creates a new timestamp with the current date, with millisecond precision.
         *
         * @return A new `Timestamp` representing the current date.
         */
-      @scala.inline
-      def now(): typings.googleCloudFirestore.FirebaseFirestore.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.Timestamp]
+      inline def now(): typings.googleCloudFirestore.FirebaseFirestore.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.Timestamp]
     }
     
     @JSImport("firebase-admin/lib/firebase-namespace", "firestore.Transaction")
     @js.native
-    class Transaction protected ()
+    /* private */ class Transaction ()
       extends typings.firebaseAdmin.firestoreMod.firestore.Transaction
     
     @JSImport("firebase-admin/lib/firebase-namespace", "firestore.WriteBatch")
     @js.native
-    class WriteBatch protected ()
+    /* private */ class WriteBatch ()
       extends typings.firebaseAdmin.firestoreMod.firestore.WriteBatch
     
     @JSImport("firebase-admin/lib/firebase-namespace", "firestore.WriteResult")
     @js.native
-    class WriteResult protected ()
+    /* private */ class WriteResult ()
       extends typings.firebaseAdmin.firestoreMod.firestore.WriteResult
     
     /**
@@ -537,10 +504,8 @@ object firebaseNamespaceMod {
       * @param logger A log function that takes a message (such as `console.log`) or
       * `null` to turn off logging.
       */
-    @scala.inline
-    def setLogFunction(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogFunction")().asInstanceOf[Unit]
-    @scala.inline
-    def setLogFunction(logger: js.Function1[/* msg */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogFunction")(logger.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setLogFunction(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogFunction")().asInstanceOf[Unit]
+    inline def setLogFunction(logger: js.Function1[/* msg */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogFunction")(logger.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     object v1 {
       
@@ -551,14 +516,12 @@ object firebaseNamespaceMod {
       @JSImport("firebase-admin/lib/firebase-namespace", "firestore.v1.FirestoreAdminClient")
       @js.native
       def FirestoreAdminClient: js.Any = js.native
-      @scala.inline
-      def FirestoreAdminClient_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FirestoreAdminClient")(x.asInstanceOf[js.Any])
+      inline def FirestoreAdminClient_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FirestoreAdminClient")(x.asInstanceOf[js.Any])
       
       @JSImport("firebase-admin/lib/firebase-namespace", "firestore.v1.FirestoreClient")
       @js.native
       def FirestoreClient: js.Any = js.native
-      @scala.inline
-      def FirestoreClient_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FirestoreClient")(x.asInstanceOf[js.Any])
+      inline def FirestoreClient_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FirestoreClient")(x.asInstanceOf[js.Any])
     }
     
     @JSImport("firebase-admin/lib/firebase-namespace", "firestore.v1beta1")
@@ -566,21 +529,15 @@ object firebaseNamespaceMod {
     val v1beta1: js.Any = js.native
   }
   
-  @scala.inline
-  def initializeApp(): App = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeApp")().asInstanceOf[App]
-  @scala.inline
-  def initializeApp(options: Unit, name: String): App = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeApp")(options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[App]
-  @scala.inline
-  def initializeApp(options: AppOptions): App = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeApp")(options.asInstanceOf[js.Any]).asInstanceOf[App]
-  @scala.inline
-  def initializeApp(options: AppOptions, name: String): App = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeApp")(options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[App]
+  inline def initializeApp(): App = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeApp")().asInstanceOf[App]
+  inline def initializeApp(options: Unit, name: String): App = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeApp")(options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[App]
+  inline def initializeApp(options: AppOptions): App = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeApp")(options.asInstanceOf[js.Any]).asInstanceOf[App]
+  inline def initializeApp(options: AppOptions, name: String): App = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeApp")(options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[App]
   
   object instanceId {
     
-    @scala.inline
-    def apply(): InstanceId = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[InstanceId]
-    @scala.inline
-    def apply(app: App): InstanceId = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[InstanceId]
+    inline def apply(): InstanceId = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[InstanceId]
+    inline def apply(app: App): InstanceId = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[InstanceId]
     
     @JSImport("firebase-admin/lib/firebase-namespace", "instanceId")
     @js.native
@@ -589,10 +546,8 @@ object firebaseNamespaceMod {
   
   object machineLearning {
     
-    @scala.inline
-    def apply(): MachineLearning = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[MachineLearning]
-    @scala.inline
-    def apply(app: App): MachineLearning = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[MachineLearning]
+    inline def apply(): MachineLearning = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[MachineLearning]
+    inline def apply(app: App): MachineLearning = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[MachineLearning]
     
     @JSImport("firebase-admin/lib/firebase-namespace", "machineLearning")
     @js.native
@@ -601,10 +556,8 @@ object firebaseNamespaceMod {
   
   object messaging {
     
-    @scala.inline
-    def apply(): Messaging = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Messaging]
-    @scala.inline
-    def apply(app: App): Messaging = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[Messaging]
+    inline def apply(): Messaging = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Messaging]
+    inline def apply(app: App): Messaging = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[Messaging]
     
     @JSImport("firebase-admin/lib/firebase-namespace", "messaging")
     @js.native
@@ -613,10 +566,8 @@ object firebaseNamespaceMod {
   
   object projectManagement {
     
-    @scala.inline
-    def apply(): ProjectManagement = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ProjectManagement]
-    @scala.inline
-    def apply(app: App): ProjectManagement = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[ProjectManagement]
+    inline def apply(): ProjectManagement = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ProjectManagement]
+    inline def apply(app: App): ProjectManagement = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[ProjectManagement]
     
     @JSImport("firebase-admin/lib/firebase-namespace", "projectManagement")
     @js.native
@@ -644,10 +595,8 @@ object firebaseNamespaceMod {
   
   object remoteConfig {
     
-    @scala.inline
-    def apply(): RemoteConfig = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RemoteConfig]
-    @scala.inline
-    def apply(app: App): RemoteConfig = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[RemoteConfig]
+    inline def apply(): RemoteConfig = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RemoteConfig]
+    inline def apply(app: App): RemoteConfig = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[RemoteConfig]
     
     @JSImport("firebase-admin/lib/firebase-namespace", "remoteConfig")
     @js.native
@@ -656,10 +605,8 @@ object firebaseNamespaceMod {
   
   object securityRules {
     
-    @scala.inline
-    def apply(): SecurityRules = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[SecurityRules]
-    @scala.inline
-    def apply(app: App): SecurityRules = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[SecurityRules]
+    inline def apply(): SecurityRules = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[SecurityRules]
+    inline def apply(app: App): SecurityRules = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[SecurityRules]
     
     @JSImport("firebase-admin/lib/firebase-namespace", "securityRules")
     @js.native
@@ -668,10 +615,8 @@ object firebaseNamespaceMod {
   
   object storage {
     
-    @scala.inline
-    def apply(): Storage = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Storage]
-    @scala.inline
-    def apply(app: App): Storage = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[Storage]
+    inline def apply(): Storage = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Storage]
+    inline def apply(app: App): Storage = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[Storage]
     
     @JSImport("firebase-admin/lib/firebase-namespace", "storage")
     @js.native

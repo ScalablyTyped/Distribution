@@ -21,6 +21,6 @@ trait BuildingBlocks extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("Word.BuildingBlocks_typekey")
+  /* private */ @JSName("Word.BuildingBlocks_typekey")
   var WordDotBuildingBlocks_typekey: BuildingBlocks = js.native
 }

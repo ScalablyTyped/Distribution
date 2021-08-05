@@ -50,139 +50,95 @@ trait SafeRequire extends StObject {
 }
 object SafeRequire {
   
-  @scala.inline
-  def apply(): SafeRequire = {
+  inline def apply(): SafeRequire = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SafeRequire]
   }
   
-  @scala.inline
-  implicit class SafeRequireMutableBuilder[Self <: SafeRequire] (val x: Self) extends AnyVal {
+  extension [Self <: SafeRequire](x: Self) {
     
-    @scala.inline
-    def setAction(value: Boolean): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: Boolean): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setAmscd(value: Boolean): Self = StObject.set(x, "amscd", value.asInstanceOf[js.Any])
+    inline def setAmscd(value: Boolean): Self = StObject.set(x, "amscd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmscdUndefined: Self = StObject.set(x, "amscd", js.undefined)
+    inline def setAmscdUndefined: Self = StObject.set(x, "amscd", js.undefined)
     
-    @scala.inline
-    def setAmsmath(value: Boolean): Self = StObject.set(x, "amsmath", value.asInstanceOf[js.Any])
+    inline def setAmsmath(value: Boolean): Self = StObject.set(x, "amsmath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmsmathUndefined: Self = StObject.set(x, "amsmath", js.undefined)
+    inline def setAmsmathUndefined: Self = StObject.set(x, "amsmath", js.undefined)
     
-    @scala.inline
-    def setAmssymbols(value: Boolean): Self = StObject.set(x, "amssymbols", value.asInstanceOf[js.Any])
+    inline def setAmssymbols(value: Boolean): Self = StObject.set(x, "amssymbols", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmssymbolsUndefined: Self = StObject.set(x, "amssymbols", js.undefined)
+    inline def setAmssymbolsUndefined: Self = StObject.set(x, "amssymbols", js.undefined)
     
-    @scala.inline
-    def setAutobold(value: Boolean): Self = StObject.set(x, "autobold", value.asInstanceOf[js.Any])
+    inline def setAutobold(value: Boolean): Self = StObject.set(x, "autobold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoboldUndefined: Self = StObject.set(x, "autobold", js.undefined)
+    inline def setAutoboldUndefined: Self = StObject.set(x, "autobold", js.undefined)
     
-    @scala.inline
-    def `setAutoload-all`(value: Boolean): Self = StObject.set(x, "autoload-all", value.asInstanceOf[js.Any])
+    inline def `setAutoload-all`(value: Boolean): Self = StObject.set(x, "autoload-all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setAutoload-allUndefined`: Self = StObject.set(x, "autoload-all", js.undefined)
+    inline def `setAutoload-allUndefined`: Self = StObject.set(x, "autoload-all", js.undefined)
     
-    @scala.inline
-    def setBbox(value: Boolean): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
+    inline def setBbox(value: Boolean): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBboxUndefined: Self = StObject.set(x, "bbox", js.undefined)
+    inline def setBboxUndefined: Self = StObject.set(x, "bbox", js.undefined)
     
-    @scala.inline
-    def setBegingroup(value: Boolean): Self = StObject.set(x, "begingroup", value.asInstanceOf[js.Any])
+    inline def setBegingroup(value: Boolean): Self = StObject.set(x, "begingroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBegingroupUndefined: Self = StObject.set(x, "begingroup", js.undefined)
+    inline def setBegingroupUndefined: Self = StObject.set(x, "begingroup", js.undefined)
     
-    @scala.inline
-    def setBoldsymbol(value: Boolean): Self = StObject.set(x, "boldsymbol", value.asInstanceOf[js.Any])
+    inline def setBoldsymbol(value: Boolean): Self = StObject.set(x, "boldsymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoldsymbolUndefined: Self = StObject.set(x, "boldsymbol", js.undefined)
+    inline def setBoldsymbolUndefined: Self = StObject.set(x, "boldsymbol", js.undefined)
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
-    @scala.inline
-    def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setEnclose(value: Boolean): Self = StObject.set(x, "enclose", value.asInstanceOf[js.Any])
+    inline def setEnclose(value: Boolean): Self = StObject.set(x, "enclose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncloseUndefined: Self = StObject.set(x, "enclose", js.undefined)
+    inline def setEncloseUndefined: Self = StObject.set(x, "enclose", js.undefined)
     
-    @scala.inline
-    def setExtpfeil(value: Boolean): Self = StObject.set(x, "extpfeil", value.asInstanceOf[js.Any])
+    inline def setExtpfeil(value: Boolean): Self = StObject.set(x, "extpfeil", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtpfeilUndefined: Self = StObject.set(x, "extpfeil", js.undefined)
+    inline def setExtpfeilUndefined: Self = StObject.set(x, "extpfeil", js.undefined)
     
-    @scala.inline
-    def setHTML(value: Boolean): Self = StObject.set(x, "HTML", value.asInstanceOf[js.Any])
+    inline def setHTML(value: Boolean): Self = StObject.set(x, "HTML", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHTMLUndefined: Self = StObject.set(x, "HTML", js.undefined)
+    inline def setHTMLUndefined: Self = StObject.set(x, "HTML", js.undefined)
     
-    @scala.inline
-    def setMathchoice(value: Boolean): Self = StObject.set(x, "mathchoice", value.asInstanceOf[js.Any])
+    inline def setMathchoice(value: Boolean): Self = StObject.set(x, "mathchoice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMathchoiceUndefined: Self = StObject.set(x, "mathchoice", js.undefined)
+    inline def setMathchoiceUndefined: Self = StObject.set(x, "mathchoice", js.undefined)
     
-    @scala.inline
-    def setMhchem(value: Boolean): Self = StObject.set(x, "mhchem", value.asInstanceOf[js.Any])
+    inline def setMhchem(value: Boolean): Self = StObject.set(x, "mhchem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMhchemUndefined: Self = StObject.set(x, "mhchem", js.undefined)
+    inline def setMhchemUndefined: Self = StObject.set(x, "mhchem", js.undefined)
     
-    @scala.inline
-    def setNewcommand(value: Boolean): Self = StObject.set(x, "newcommand", value.asInstanceOf[js.Any])
+    inline def setNewcommand(value: Boolean): Self = StObject.set(x, "newcommand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewcommandUndefined: Self = StObject.set(x, "newcommand", js.undefined)
+    inline def setNewcommandUndefined: Self = StObject.set(x, "newcommand", js.undefined)
     
-    @scala.inline
-    def setNoErrors(value: Boolean): Self = StObject.set(x, "noErrors", value.asInstanceOf[js.Any])
+    inline def setNoErrors(value: Boolean): Self = StObject.set(x, "noErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoErrorsUndefined: Self = StObject.set(x, "noErrors", js.undefined)
+    inline def setNoErrorsUndefined: Self = StObject.set(x, "noErrors", js.undefined)
     
-    @scala.inline
-    def setNoUndefined(value: Boolean): Self = StObject.set(x, "noUndefined", value.asInstanceOf[js.Any])
+    inline def setNoUndefined(value: Boolean): Self = StObject.set(x, "noUndefined", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoUndefinedUndefined: Self = StObject.set(x, "noUndefined", js.undefined)
+    inline def setNoUndefinedUndefined: Self = StObject.set(x, "noUndefined", js.undefined)
     
-    @scala.inline
-    def setUnicode(value: Boolean): Self = StObject.set(x, "unicode", value.asInstanceOf[js.Any])
+    inline def setUnicode(value: Boolean): Self = StObject.set(x, "unicode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnicodeUndefined: Self = StObject.set(x, "unicode", js.undefined)
+    inline def setUnicodeUndefined: Self = StObject.set(x, "unicode", js.undefined)
     
-    @scala.inline
-    def setVerb(value: Boolean): Self = StObject.set(x, "verb", value.asInstanceOf[js.Any])
+    inline def setVerb(value: Boolean): Self = StObject.set(x, "verb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerbUndefined: Self = StObject.set(x, "verb", js.undefined)
+    inline def setVerbUndefined: Self = StObject.set(x, "verb", js.undefined)
   }
 }

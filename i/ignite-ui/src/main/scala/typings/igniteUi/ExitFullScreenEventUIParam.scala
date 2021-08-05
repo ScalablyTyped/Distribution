@@ -13,19 +13,15 @@ trait ExitFullScreenEventUIParam extends StObject {
 }
 object ExitFullScreenEventUIParam {
   
-  @scala.inline
-  def apply(): ExitFullScreenEventUIParam = {
+  inline def apply(): ExitFullScreenEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExitFullScreenEventUIParam]
   }
   
-  @scala.inline
-  implicit class ExitFullScreenEventUIParamMutableBuilder[Self <: ExitFullScreenEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: ExitFullScreenEventUIParam](x: Self) {
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

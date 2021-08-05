@@ -12,6 +12,5 @@ object scenarioValidationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def checkThatFeatureFileAndStepDefinitionsHaveSameScenarios(parsedFeature: ParsedFeature, featureFromStepDefinitions: FeatureFromStepDefinitions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkThatFeatureFileAndStepDefinitionsHaveSameScenarios")(parsedFeature.asInstanceOf[js.Any], featureFromStepDefinitions.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def checkThatFeatureFileAndStepDefinitionsHaveSameScenarios(parsedFeature: ParsedFeature, featureFromStepDefinitions: FeatureFromStepDefinitions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkThatFeatureFileAndStepDefinitionsHaveSameScenarios")(parsedFeature.asInstanceOf[js.Any], featureFromStepDefinitions.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

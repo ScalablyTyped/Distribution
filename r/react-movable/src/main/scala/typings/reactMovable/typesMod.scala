@@ -25,23 +25,18 @@ object typesMod {
   }
   object BeforeDragParams {
     
-    @scala.inline
-    def apply(elements: js.Array[Element], index: Double): BeforeDragParams = {
+    inline def apply(elements: js.Array[Element], index: Double): BeforeDragParams = {
       val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
       __obj.asInstanceOf[BeforeDragParams]
     }
     
-    @scala.inline
-    implicit class BeforeDragParamsMutableBuilder[Self <: BeforeDragParams] (val x: Self) extends AnyVal {
+    extension [Self <: BeforeDragParams](x: Self) {
       
-      @scala.inline
-      def setElements(value: js.Array[Element]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+      inline def setElements(value: js.Array[Element]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementsVarargs(value: Element*): Self = StObject.set(x, "elements", js.Array(value :_*))
+      inline def setElementsVarargs(value: Element*): Self = StObject.set(x, "elements", js.Array(value :_*))
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     }
   }
   
@@ -63,56 +58,40 @@ object typesMod {
   }
   object IItemProps {
     
-    @scala.inline
-    def apply(): IItemProps = {
+    inline def apply(): IItemProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IItemProps]
     }
     
-    @scala.inline
-    implicit class IItemPropsMutableBuilder[Self <: IItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: IItemProps](x: Self) {
       
-      @scala.inline
-      def `setAria-roledescription`(value: String): Self = StObject.set(x, "aria-roledescription", value.asInstanceOf[js.Any])
+      inline def `setAria-roledescription`(value: String): Self = StObject.set(x, "aria-roledescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-roledescriptionUndefined`: Self = StObject.set(x, "aria-roledescription", js.undefined)
+      inline def `setAria-roledescriptionUndefined`: Self = StObject.set(x, "aria-roledescription", js.undefined)
       
-      @scala.inline
-      def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setOnKeyDown(value: /* e */ KeyboardEvent[Element] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: /* e */ KeyboardEvent[Element] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
-      @scala.inline
-      def setOnWheel(value: /* e */ WheelEvent[Element] => Unit): Self = StObject.set(x, "onWheel", js.Any.fromFunction1(value))
+      inline def setOnWheel(value: /* e */ WheelEvent[Element] => Unit): Self = StObject.set(x, "onWheel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
+      inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
       
-      @scala.inline
-      def setRef(value: RefObject[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: RefObject[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+      inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
+      inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
     }
   }
   
@@ -140,8 +119,7 @@ object typesMod {
   }
   object IProps {
     
-    @scala.inline
-    def apply[Value](
+    inline def apply[Value](
       lockVertically: Boolean,
       onChange: OnChangeMeta => Unit,
       removableByMove: Boolean,
@@ -155,50 +133,35 @@ object typesMod {
       __obj.asInstanceOf[IProps[Value]]
     }
     
-    @scala.inline
-    implicit class IPropsMutableBuilder[Self <: IProps[?], Value] (val x: Self & IProps[Value]) extends AnyVal {
+    extension [Self <: IProps[?], Value](x: Self & IProps[Value]) {
       
-      @scala.inline
-      def setBeforeDrag(value: /* params */ BeforeDragParams => Unit): Self = StObject.set(x, "beforeDrag", js.Any.fromFunction1(value))
+      inline def setBeforeDrag(value: /* params */ BeforeDragParams => Unit): Self = StObject.set(x, "beforeDrag", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBeforeDragUndefined: Self = StObject.set(x, "beforeDrag", js.undefined)
+      inline def setBeforeDragUndefined: Self = StObject.set(x, "beforeDrag", js.undefined)
       
-      @scala.inline
-      def setContainer(value: Element): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: Element): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerNull: Self = StObject.set(x, "container", null)
+      inline def setContainerNull: Self = StObject.set(x, "container", null)
       
-      @scala.inline
-      def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
-      @scala.inline
-      def setLockVertically(value: Boolean): Self = StObject.set(x, "lockVertically", value.asInstanceOf[js.Any])
+      inline def setLockVertically(value: Boolean): Self = StObject.set(x, "lockVertically", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnChange(value: OnChangeMeta => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: OnChangeMeta => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemovableByMove(value: Boolean): Self = StObject.set(x, "removableByMove", value.asInstanceOf[js.Any])
+      inline def setRemovableByMove(value: Boolean): Self = StObject.set(x, "removableByMove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderItem(value: RenderItemParams[Value] => ReactNode): Self = StObject.set(x, "renderItem", js.Any.fromFunction1(value))
+      inline def setRenderItem(value: RenderItemParams[Value] => ReactNode): Self = StObject.set(x, "renderItem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderList(value: RenderListParams => ReactNode): Self = StObject.set(x, "renderList", js.Any.fromFunction1(value))
+      inline def setRenderList(value: RenderListParams => ReactNode): Self = StObject.set(x, "renderList", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTransitionDuration(value: Double): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
+      inline def setTransitionDuration(value: Double): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: js.Array[Value]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[Value]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesVarargs(value: Value*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Value*): Self = StObject.set(x, "values", js.Array(value :_*))
       
-      @scala.inline
-      def setVoiceover(value: IVoiceover): Self = StObject.set(x, "voiceover", value.asInstanceOf[js.Any])
+      inline def setVoiceover(value: IVoiceover): Self = StObject.set(x, "voiceover", value.asInstanceOf[js.Any])
     }
   }
   
@@ -216,8 +179,7 @@ object typesMod {
   }
   object IVoiceover {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       canceled: Double => String,
       dropped: (Double, Double) => String,
       item: Double => String,
@@ -228,23 +190,17 @@ object typesMod {
       __obj.asInstanceOf[IVoiceover]
     }
     
-    @scala.inline
-    implicit class IVoiceoverMutableBuilder[Self <: IVoiceover] (val x: Self) extends AnyVal {
+    extension [Self <: IVoiceover](x: Self) {
       
-      @scala.inline
-      def setCanceled(value: Double => String): Self = StObject.set(x, "canceled", js.Any.fromFunction1(value))
+      inline def setCanceled(value: Double => String): Self = StObject.set(x, "canceled", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDropped(value: (Double, Double) => String): Self = StObject.set(x, "dropped", js.Any.fromFunction2(value))
+      inline def setDropped(value: (Double, Double) => String): Self = StObject.set(x, "dropped", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setItem(value: Double => String): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
+      inline def setItem(value: Double => String): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLifted(value: Double => String): Self = StObject.set(x, "lifted", js.Any.fromFunction1(value))
+      inline def setLifted(value: Double => String): Self = StObject.set(x, "lifted", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMoved(value: (Double, Boolean) => String): Self = StObject.set(x, "moved", js.Any.fromFunction2(value))
+      inline def setMoved(value: (Double, Boolean) => String): Self = StObject.set(x, "moved", js.Any.fromFunction2(value))
     }
   }
   
@@ -258,23 +214,18 @@ object typesMod {
   }
   object OnChangeMeta {
     
-    @scala.inline
-    def apply(newIndex: Double, oldIndex: Double, targetRect: ClientRect): OnChangeMeta = {
+    inline def apply(newIndex: Double, oldIndex: Double, targetRect: ClientRect): OnChangeMeta = {
       val __obj = js.Dynamic.literal(newIndex = newIndex.asInstanceOf[js.Any], oldIndex = oldIndex.asInstanceOf[js.Any], targetRect = targetRect.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnChangeMeta]
     }
     
-    @scala.inline
-    implicit class OnChangeMetaMutableBuilder[Self <: OnChangeMeta] (val x: Self) extends AnyVal {
+    extension [Self <: OnChangeMeta](x: Self) {
       
-      @scala.inline
-      def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
+      inline def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldIndex(value: Double): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
+      inline def setOldIndex(value: Double): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetRect(value: ClientRect): Self = StObject.set(x, "targetRect", value.asInstanceOf[js.Any])
+      inline def setTargetRect(value: ClientRect): Self = StObject.set(x, "targetRect", value.asInstanceOf[js.Any])
     }
   }
   
@@ -294,35 +245,26 @@ object typesMod {
   }
   object RenderItemParams {
     
-    @scala.inline
-    def apply[Value](isDragged: Boolean, isOutOfBounds: Boolean, isSelected: Boolean, props: IItemProps, value: Value): RenderItemParams[Value] = {
+    inline def apply[Value](isDragged: Boolean, isOutOfBounds: Boolean, isSelected: Boolean, props: IItemProps, value: Value): RenderItemParams[Value] = {
       val __obj = js.Dynamic.literal(isDragged = isDragged.asInstanceOf[js.Any], isOutOfBounds = isOutOfBounds.asInstanceOf[js.Any], isSelected = isSelected.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[RenderItemParams[Value]]
     }
     
-    @scala.inline
-    implicit class RenderItemParamsMutableBuilder[Self <: RenderItemParams[?], Value] (val x: Self & RenderItemParams[Value]) extends AnyVal {
+    extension [Self <: RenderItemParams[?], Value](x: Self & RenderItemParams[Value]) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setIsDragged(value: Boolean): Self = StObject.set(x, "isDragged", value.asInstanceOf[js.Any])
+      inline def setIsDragged(value: Boolean): Self = StObject.set(x, "isDragged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOutOfBounds(value: Boolean): Self = StObject.set(x, "isOutOfBounds", value.asInstanceOf[js.Any])
+      inline def setIsOutOfBounds(value: Boolean): Self = StObject.set(x, "isOutOfBounds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
+      inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProps(value: IItemProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: IItemProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -336,26 +278,20 @@ object typesMod {
   }
   object RenderListParams {
     
-    @scala.inline
-    def apply(isDragged: Boolean, props: Ref): RenderListParams = {
+    inline def apply(isDragged: Boolean, props: Ref): RenderListParams = {
       val __obj = js.Dynamic.literal(isDragged = isDragged.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
       __obj.asInstanceOf[RenderListParams]
     }
     
-    @scala.inline
-    implicit class RenderListParamsMutableBuilder[Self <: RenderListParams] (val x: Self) extends AnyVal {
+    extension [Self <: RenderListParams](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setIsDragged(value: Boolean): Self = StObject.set(x, "isDragged", value.asInstanceOf[js.Any])
+      inline def setIsDragged(value: Boolean): Self = StObject.set(x, "isDragged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProps(value: Ref): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: Ref): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     }
   }
   

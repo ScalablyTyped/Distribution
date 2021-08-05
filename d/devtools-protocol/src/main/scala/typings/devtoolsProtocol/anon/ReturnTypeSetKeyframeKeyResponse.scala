@@ -14,22 +14,17 @@ trait ReturnTypeSetKeyframeKeyResponse extends StObject {
 }
 object ReturnTypeSetKeyframeKeyResponse {
   
-  @scala.inline
-  def apply(paramsType: js.Array[SetKeyframeKeyRequest], returnType: SetKeyframeKeyResponse): ReturnTypeSetKeyframeKeyResponse = {
+  inline def apply(paramsType: js.Array[SetKeyframeKeyRequest], returnType: SetKeyframeKeyResponse): ReturnTypeSetKeyframeKeyResponse = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnTypeSetKeyframeKeyResponse]
   }
   
-  @scala.inline
-  implicit class ReturnTypeSetKeyframeKeyResponseMutableBuilder[Self <: ReturnTypeSetKeyframeKeyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnTypeSetKeyframeKeyResponse](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[SetKeyframeKeyRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[SetKeyframeKeyRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: SetKeyframeKeyRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: SetKeyframeKeyRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: SetKeyframeKeyResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: SetKeyframeKeyResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

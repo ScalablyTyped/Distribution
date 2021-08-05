@@ -14,22 +14,17 @@ trait SqlQuery[T]
 }
 object SqlQuery {
   
-  @scala.inline
-  def apply[T](body: T): SqlQuery[T] = {
+  inline def apply[T](body: T): SqlQuery[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.asInstanceOf[SqlQuery[T]]
   }
   
-  @scala.inline
-  implicit class SqlQueryMutableBuilder[Self <: SqlQuery[?], T] (val x: Self & SqlQuery[T]) extends AnyVal {
+  extension [Self <: SqlQuery[?], T](x: Self & SqlQuery[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
   }
 }

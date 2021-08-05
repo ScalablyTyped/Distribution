@@ -33,43 +33,31 @@ trait IPAllocationPolicy extends StObject {
 }
 object IPAllocationPolicy {
   
-  @scala.inline
-  def apply(): IPAllocationPolicy = {
+  inline def apply(): IPAllocationPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPAllocationPolicy]
   }
   
-  @scala.inline
-  implicit class IPAllocationPolicyMutableBuilder[Self <: IPAllocationPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: IPAllocationPolicy](x: Self) {
     
-    @scala.inline
-    def setClusterIpv4CidrBlock(value: String): Self = StObject.set(x, "clusterIpv4CidrBlock", value.asInstanceOf[js.Any])
+    inline def setClusterIpv4CidrBlock(value: String): Self = StObject.set(x, "clusterIpv4CidrBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterIpv4CidrBlockUndefined: Self = StObject.set(x, "clusterIpv4CidrBlock", js.undefined)
+    inline def setClusterIpv4CidrBlockUndefined: Self = StObject.set(x, "clusterIpv4CidrBlock", js.undefined)
     
-    @scala.inline
-    def setClusterSecondaryRangeName(value: String): Self = StObject.set(x, "clusterSecondaryRangeName", value.asInstanceOf[js.Any])
+    inline def setClusterSecondaryRangeName(value: String): Self = StObject.set(x, "clusterSecondaryRangeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterSecondaryRangeNameUndefined: Self = StObject.set(x, "clusterSecondaryRangeName", js.undefined)
+    inline def setClusterSecondaryRangeNameUndefined: Self = StObject.set(x, "clusterSecondaryRangeName", js.undefined)
     
-    @scala.inline
-    def setServicesIpv4CidrBlock(value: String): Self = StObject.set(x, "servicesIpv4CidrBlock", value.asInstanceOf[js.Any])
+    inline def setServicesIpv4CidrBlock(value: String): Self = StObject.set(x, "servicesIpv4CidrBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServicesIpv4CidrBlockUndefined: Self = StObject.set(x, "servicesIpv4CidrBlock", js.undefined)
+    inline def setServicesIpv4CidrBlockUndefined: Self = StObject.set(x, "servicesIpv4CidrBlock", js.undefined)
     
-    @scala.inline
-    def setServicesSecondaryRangeName(value: String): Self = StObject.set(x, "servicesSecondaryRangeName", value.asInstanceOf[js.Any])
+    inline def setServicesSecondaryRangeName(value: String): Self = StObject.set(x, "servicesSecondaryRangeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServicesSecondaryRangeNameUndefined: Self = StObject.set(x, "servicesSecondaryRangeName", js.undefined)
+    inline def setServicesSecondaryRangeNameUndefined: Self = StObject.set(x, "servicesSecondaryRangeName", js.undefined)
     
-    @scala.inline
-    def setUseIpAliases(value: Boolean): Self = StObject.set(x, "useIpAliases", value.asInstanceOf[js.Any])
+    inline def setUseIpAliases(value: Boolean): Self = StObject.set(x, "useIpAliases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseIpAliasesUndefined: Self = StObject.set(x, "useIpAliases", js.undefined)
+    inline def setUseIpAliasesUndefined: Self = StObject.set(x, "useIpAliases", js.undefined)
   }
 }

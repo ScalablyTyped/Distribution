@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DirectionsProfile extends StObject
 object DirectionsProfile {
   
-  @scala.inline
-  def cycling: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.cycling = "cycling".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.cycling]
+  inline def cycling: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.cycling = "cycling".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.cycling]
   
-  @scala.inline
-  def driving: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.driving = "driving".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.driving]
+  inline def driving: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.driving = "driving".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.driving]
   
-  @scala.inline
-  def `driving-traffic`: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`driving-traffic` = "driving-traffic".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`driving-traffic`]
+  inline def `driving-traffic`: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`driving-traffic` = "driving-traffic".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`driving-traffic`]
   
-  @scala.inline
-  def walking: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.walking = "walking".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.walking]
+  inline def walking: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.walking = "walking".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.walking]
 }

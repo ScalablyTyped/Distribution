@@ -23,28 +23,21 @@ trait UpdateInputDeviceRequest extends StObject {
 }
 object UpdateInputDeviceRequest {
   
-  @scala.inline
-  def apply(InputDeviceId: string): UpdateInputDeviceRequest = {
+  inline def apply(InputDeviceId: string): UpdateInputDeviceRequest = {
     val __obj = js.Dynamic.literal(InputDeviceId = InputDeviceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateInputDeviceRequest]
   }
   
-  @scala.inline
-  implicit class UpdateInputDeviceRequestMutableBuilder[Self <: UpdateInputDeviceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateInputDeviceRequest](x: Self) {
     
-    @scala.inline
-    def setHdDeviceSettings(value: InputDeviceConfigurableSettings): Self = StObject.set(x, "HdDeviceSettings", value.asInstanceOf[js.Any])
+    inline def setHdDeviceSettings(value: InputDeviceConfigurableSettings): Self = StObject.set(x, "HdDeviceSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHdDeviceSettingsUndefined: Self = StObject.set(x, "HdDeviceSettings", js.undefined)
+    inline def setHdDeviceSettingsUndefined: Self = StObject.set(x, "HdDeviceSettings", js.undefined)
     
-    @scala.inline
-    def setInputDeviceId(value: string): Self = StObject.set(x, "InputDeviceId", value.asInstanceOf[js.Any])
+    inline def setInputDeviceId(value: string): Self = StObject.set(x, "InputDeviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

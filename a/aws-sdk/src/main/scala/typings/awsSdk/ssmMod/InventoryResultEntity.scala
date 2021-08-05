@@ -18,25 +18,19 @@ trait InventoryResultEntity extends StObject {
 }
 object InventoryResultEntity {
   
-  @scala.inline
-  def apply(): InventoryResultEntity = {
+  inline def apply(): InventoryResultEntity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InventoryResultEntity]
   }
   
-  @scala.inline
-  implicit class InventoryResultEntityMutableBuilder[Self <: InventoryResultEntity] (val x: Self) extends AnyVal {
+  extension [Self <: InventoryResultEntity](x: Self) {
     
-    @scala.inline
-    def setData(value: InventoryResultItemMap): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+    inline def setData(value: InventoryResultItemMap): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
     
-    @scala.inline
-    def setId(value: InventoryResultEntityId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: InventoryResultEntityId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
   }
 }

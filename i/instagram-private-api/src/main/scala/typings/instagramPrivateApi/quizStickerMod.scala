@@ -12,7 +12,7 @@ object quizStickerMod {
   @js.native
   class QuizSticker () extends InstaSticker {
     
-    var _options: js.Any = js.native
+    /* private */ var _options: js.Any = js.native
     
     var correctAnswer: Double = js.native
     

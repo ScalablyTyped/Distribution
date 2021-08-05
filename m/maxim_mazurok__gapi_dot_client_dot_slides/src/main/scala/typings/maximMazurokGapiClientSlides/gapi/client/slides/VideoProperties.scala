@@ -29,43 +29,31 @@ trait VideoProperties extends StObject {
 }
 object VideoProperties {
   
-  @scala.inline
-  def apply(): VideoProperties = {
+  inline def apply(): VideoProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VideoProperties]
   }
   
-  @scala.inline
-  implicit class VideoPropertiesMutableBuilder[Self <: VideoProperties] (val x: Self) extends AnyVal {
+  extension [Self <: VideoProperties](x: Self) {
     
-    @scala.inline
-    def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
+    inline def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoPlayUndefined: Self = StObject.set(x, "autoPlay", js.undefined)
+    inline def setAutoPlayUndefined: Self = StObject.set(x, "autoPlay", js.undefined)
     
-    @scala.inline
-    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    @scala.inline
-    def setMute(value: Boolean): Self = StObject.set(x, "mute", value.asInstanceOf[js.Any])
+    inline def setMute(value: Boolean): Self = StObject.set(x, "mute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMuteUndefined: Self = StObject.set(x, "mute", js.undefined)
+    inline def setMuteUndefined: Self = StObject.set(x, "mute", js.undefined)
     
-    @scala.inline
-    def setOutline(value: Outline): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
+    inline def setOutline(value: Outline): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
+    inline def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

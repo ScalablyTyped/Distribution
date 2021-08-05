@@ -44,49 +44,35 @@ trait IgPivotGridDataSourceOptions
 }
 object IgPivotGridDataSourceOptions {
   
-  @scala.inline
-  def apply(): IgPivotGridDataSourceOptions = {
+  inline def apply(): IgPivotGridDataSourceOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgPivotGridDataSourceOptions]
   }
   
-  @scala.inline
-  implicit class IgPivotGridDataSourceOptionsMutableBuilder[Self <: IgPivotGridDataSourceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IgPivotGridDataSourceOptions](x: Self) {
     
-    @scala.inline
-    def setColumns(value: String): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: String): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    @scala.inline
-    def setFilters(value: String): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: String): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    @scala.inline
-    def setFlatDataOptions(value: IgPivotGridDataSourceOptionsFlatDataOptions): Self = StObject.set(x, "flatDataOptions", value.asInstanceOf[js.Any])
+    inline def setFlatDataOptions(value: IgPivotGridDataSourceOptionsFlatDataOptions): Self = StObject.set(x, "flatDataOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlatDataOptionsUndefined: Self = StObject.set(x, "flatDataOptions", js.undefined)
+    inline def setFlatDataOptionsUndefined: Self = StObject.set(x, "flatDataOptions", js.undefined)
     
-    @scala.inline
-    def setMeasures(value: String): Self = StObject.set(x, "measures", value.asInstanceOf[js.Any])
+    inline def setMeasures(value: String): Self = StObject.set(x, "measures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasuresUndefined: Self = StObject.set(x, "measures", js.undefined)
+    inline def setMeasuresUndefined: Self = StObject.set(x, "measures", js.undefined)
     
-    @scala.inline
-    def setRows(value: String): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: String): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    @scala.inline
-    def setXmlaOptions(value: IgPivotGridDataSourceOptionsXmlaOptions): Self = StObject.set(x, "xmlaOptions", value.asInstanceOf[js.Any])
+    inline def setXmlaOptions(value: IgPivotGridDataSourceOptionsXmlaOptions): Self = StObject.set(x, "xmlaOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXmlaOptionsUndefined: Self = StObject.set(x, "xmlaOptions", js.undefined)
+    inline def setXmlaOptionsUndefined: Self = StObject.set(x, "xmlaOptions", js.undefined)
   }
 }

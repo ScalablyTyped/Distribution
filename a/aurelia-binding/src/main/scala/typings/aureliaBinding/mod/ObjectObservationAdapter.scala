@@ -11,16 +11,13 @@ trait ObjectObservationAdapter extends StObject {
 }
 object ObjectObservationAdapter {
   
-  @scala.inline
-  def apply(getObserver: (js.Any, String, PropertyDescriptor) => js.UndefOr[InternalPropertyObserver | Null]): ObjectObservationAdapter = {
+  inline def apply(getObserver: (js.Any, String, PropertyDescriptor) => js.UndefOr[InternalPropertyObserver | Null]): ObjectObservationAdapter = {
     val __obj = js.Dynamic.literal(getObserver = js.Any.fromFunction3(getObserver))
     __obj.asInstanceOf[ObjectObservationAdapter]
   }
   
-  @scala.inline
-  implicit class ObjectObservationAdapterMutableBuilder[Self <: ObjectObservationAdapter] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectObservationAdapter](x: Self) {
     
-    @scala.inline
-    def setGetObserver(value: (js.Any, String, PropertyDescriptor) => js.UndefOr[InternalPropertyObserver | Null]): Self = StObject.set(x, "getObserver", js.Any.fromFunction3(value))
+    inline def setGetObserver(value: (js.Any, String, PropertyDescriptor) => js.UndefOr[InternalPropertyObserver | Null]): Self = StObject.set(x, "getObserver", js.Any.fromFunction3(value))
   }
 }

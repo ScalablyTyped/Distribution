@@ -55,64 +55,45 @@ trait ViewMixinOptions extends StObject {
 }
 object ViewMixinOptions {
   
-  @scala.inline
-  def apply(): ViewMixinOptions = {
+  inline def apply(): ViewMixinOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ViewMixinOptions]
   }
   
-  @scala.inline
-  implicit class ViewMixinOptionsMutableBuilder[Self <: ViewMixinOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ViewMixinOptions](x: Self) {
     
-    @scala.inline
-    def setBehaviors(value: js.Array[Behavior]): Self = StObject.set(x, "behaviors", value.asInstanceOf[js.Any])
+    inline def setBehaviors(value: js.Array[Behavior]): Self = StObject.set(x, "behaviors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBehaviorsUndefined: Self = StObject.set(x, "behaviors", js.undefined)
+    inline def setBehaviorsUndefined: Self = StObject.set(x, "behaviors", js.undefined)
     
-    @scala.inline
-    def setBehaviorsVarargs(value: Behavior*): Self = StObject.set(x, "behaviors", js.Array(value :_*))
+    inline def setBehaviorsVarargs(value: Behavior*): Self = StObject.set(x, "behaviors", js.Array(value :_*))
     
-    @scala.inline
-    def setChildViewEventPrefix(value: String | `false`): Self = StObject.set(x, "childViewEventPrefix", value.asInstanceOf[js.Any])
+    inline def setChildViewEventPrefix(value: String | `false`): Self = StObject.set(x, "childViewEventPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildViewEventPrefixUndefined: Self = StObject.set(x, "childViewEventPrefix", js.undefined)
+    inline def setChildViewEventPrefixUndefined: Self = StObject.set(x, "childViewEventPrefix", js.undefined)
     
-    @scala.inline
-    def setChildViewEvents(value: EventsHash): Self = StObject.set(x, "childViewEvents", value.asInstanceOf[js.Any])
+    inline def setChildViewEvents(value: EventsHash): Self = StObject.set(x, "childViewEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildViewEventsUndefined: Self = StObject.set(x, "childViewEvents", js.undefined)
+    inline def setChildViewEventsUndefined: Self = StObject.set(x, "childViewEvents", js.undefined)
     
-    @scala.inline
-    def setChildViewTriggers(value: EventsHash): Self = StObject.set(x, "childViewTriggers", value.asInstanceOf[js.Any])
+    inline def setChildViewTriggers(value: EventsHash): Self = StObject.set(x, "childViewTriggers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildViewTriggersUndefined: Self = StObject.set(x, "childViewTriggers", js.undefined)
+    inline def setChildViewTriggersUndefined: Self = StObject.set(x, "childViewTriggers", js.undefined)
     
-    @scala.inline
-    def setCollectionEvents(value: EventsHash): Self = StObject.set(x, "collectionEvents", value.asInstanceOf[js.Any])
+    inline def setCollectionEvents(value: EventsHash): Self = StObject.set(x, "collectionEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollectionEventsUndefined: Self = StObject.set(x, "collectionEvents", js.undefined)
+    inline def setCollectionEventsUndefined: Self = StObject.set(x, "collectionEvents", js.undefined)
     
-    @scala.inline
-    def setModelEvents(value: EventsHash): Self = StObject.set(x, "modelEvents", value.asInstanceOf[js.Any])
+    inline def setModelEvents(value: EventsHash): Self = StObject.set(x, "modelEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelEventsUndefined: Self = StObject.set(x, "modelEvents", js.undefined)
+    inline def setModelEventsUndefined: Self = StObject.set(x, "modelEvents", js.undefined)
     
-    @scala.inline
-    def setTriggers(value: EventsHash): Self = StObject.set(x, "triggers", value.asInstanceOf[js.Any])
+    inline def setTriggers(value: EventsHash): Self = StObject.set(x, "triggers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggersUndefined: Self = StObject.set(x, "triggers", js.undefined)
+    inline def setTriggersUndefined: Self = StObject.set(x, "triggers", js.undefined)
     
-    @scala.inline
-    def setUi(value: js.Any): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
+    inline def setUi(value: js.Any): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUiUndefined: Self = StObject.set(x, "ui", js.undefined)
+    inline def setUiUndefined: Self = StObject.set(x, "ui", js.undefined)
   }
 }

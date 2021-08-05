@@ -23,23 +23,18 @@ trait ModuleExportDetails extends StObject {
 }
 object ModuleExportDetails {
   
-  @scala.inline
-  def apply(address: NativePointer, name: String, `type`: ModuleExportType): ModuleExportDetails = {
+  inline def apply(address: NativePointer, name: String, `type`: ModuleExportType): ModuleExportDetails = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModuleExportDetails]
   }
   
-  @scala.inline
-  implicit class ModuleExportDetailsMutableBuilder[Self <: ModuleExportDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ModuleExportDetails](x: Self) {
     
-    @scala.inline
-    def setAddress(value: NativePointer): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: NativePointer): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ModuleExportType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ModuleExportType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

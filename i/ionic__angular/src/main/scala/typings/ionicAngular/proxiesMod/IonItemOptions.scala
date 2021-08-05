@@ -18,7 +18,7 @@ class IonItemOptions protected ()
      with typings.ionicCore.componentsMod.Components.IonItemOptions {
   def this(c: ChangeDetectorRef, r: ElementRef[js.Any], z: NgZone) = this()
   
-  var el: HTMLElement = js.native
+  /* protected */ var el: HTMLElement = js.native
   
   /* CompleteClass */
   override def fireSwipeEvent(): js.Promise[Unit] = js.native
@@ -31,5 +31,5 @@ class IonItemOptions protected ()
   /* CompleteClass */
   var side: Side = js.native
   
-  var z: NgZone = js.native
+  /* protected */ var z: NgZone = js.native
 }

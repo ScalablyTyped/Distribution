@@ -31,8 +31,7 @@ object channelMod {
   }
   object SubAPI {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       collapseAll: () => Unit,
       emit: (String, /* repeated */ js.Any) => Unit,
       expandAll: () => Unit,
@@ -45,29 +44,21 @@ object channelMod {
       __obj.asInstanceOf[SubAPI]
     }
     
-    @scala.inline
-    implicit class SubAPIMutableBuilder[Self <: SubAPI] (val x: Self) extends AnyVal {
+    extension [Self <: SubAPI](x: Self) {
       
-      @scala.inline
-      def setCollapseAll(value: () => Unit): Self = StObject.set(x, "collapseAll", js.Any.fromFunction0(value))
+      inline def setCollapseAll(value: () => Unit): Self = StObject.set(x, "collapseAll", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEmit(value: (String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+      inline def setEmit(value: (String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setExpandAll(value: () => Unit): Self = StObject.set(x, "expandAll", js.Any.fromFunction0(value))
+      inline def setExpandAll(value: () => Unit): Self = StObject.set(x, "expandAll", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetChannel(value: () => Channel): Self = StObject.set(x, "getChannel", js.Any.fromFunction0(value))
+      inline def setGetChannel(value: () => Channel): Self = StObject.set(x, "getChannel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOff(value: (String, Listener) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
+      inline def setOff(value: (String, Listener) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOn(value: (String, Listener) => js.Function0[Unit]): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      inline def setOn(value: (String, Listener) => js.Function0[Unit]): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnce(value: (String, Listener) => Unit): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
+      inline def setOnce(value: (String, Listener) => Unit): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
     }
   }
 }

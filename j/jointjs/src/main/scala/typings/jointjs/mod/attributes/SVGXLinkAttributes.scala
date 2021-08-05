@@ -29,55 +29,39 @@ trait SVGXLinkAttributes extends StObject {
 }
 object SVGXLinkAttributes {
   
-  @scala.inline
-  def apply(): SVGXLinkAttributes = {
+  inline def apply(): SVGXLinkAttributes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SVGXLinkAttributes]
   }
   
-  @scala.inline
-  implicit class SVGXLinkAttributesMutableBuilder[Self <: SVGXLinkAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: SVGXLinkAttributes](x: Self) {
     
-    @scala.inline
-    def setXlinkColonactuate(value: String): Self = StObject.set(x, "xlink:actuate", value.asInstanceOf[js.Any])
+    inline def setXlinkColonactuate(value: String): Self = StObject.set(x, "xlink:actuate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXlinkColonactuateUndefined: Self = StObject.set(x, "xlink:actuate", js.undefined)
+    inline def setXlinkColonactuateUndefined: Self = StObject.set(x, "xlink:actuate", js.undefined)
     
-    @scala.inline
-    def setXlinkColonarcrole(value: String): Self = StObject.set(x, "xlink:arcrole", value.asInstanceOf[js.Any])
+    inline def setXlinkColonarcrole(value: String): Self = StObject.set(x, "xlink:arcrole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXlinkColonarcroleUndefined: Self = StObject.set(x, "xlink:arcrole", js.undefined)
+    inline def setXlinkColonarcroleUndefined: Self = StObject.set(x, "xlink:arcrole", js.undefined)
     
-    @scala.inline
-    def setXlinkColonhref(value: String): Self = StObject.set(x, "xlink:href", value.asInstanceOf[js.Any])
+    inline def setXlinkColonhref(value: String): Self = StObject.set(x, "xlink:href", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXlinkColonhrefUndefined: Self = StObject.set(x, "xlink:href", js.undefined)
+    inline def setXlinkColonhrefUndefined: Self = StObject.set(x, "xlink:href", js.undefined)
     
-    @scala.inline
-    def setXlinkColonrole(value: String): Self = StObject.set(x, "xlink:role", value.asInstanceOf[js.Any])
+    inline def setXlinkColonrole(value: String): Self = StObject.set(x, "xlink:role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXlinkColonroleUndefined: Self = StObject.set(x, "xlink:role", js.undefined)
+    inline def setXlinkColonroleUndefined: Self = StObject.set(x, "xlink:role", js.undefined)
     
-    @scala.inline
-    def setXlinkColonshow(value: String): Self = StObject.set(x, "xlink:show", value.asInstanceOf[js.Any])
+    inline def setXlinkColonshow(value: String): Self = StObject.set(x, "xlink:show", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXlinkColonshowUndefined: Self = StObject.set(x, "xlink:show", js.undefined)
+    inline def setXlinkColonshowUndefined: Self = StObject.set(x, "xlink:show", js.undefined)
     
-    @scala.inline
-    def setXlinkColontitle(value: String): Self = StObject.set(x, "xlink:title", value.asInstanceOf[js.Any])
+    inline def setXlinkColontitle(value: String): Self = StObject.set(x, "xlink:title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXlinkColontitleUndefined: Self = StObject.set(x, "xlink:title", js.undefined)
+    inline def setXlinkColontitleUndefined: Self = StObject.set(x, "xlink:title", js.undefined)
     
-    @scala.inline
-    def setXlinkColontype(value: String): Self = StObject.set(x, "xlink:type", value.asInstanceOf[js.Any])
+    inline def setXlinkColontype(value: String): Self = StObject.set(x, "xlink:type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXlinkColontypeUndefined: Self = StObject.set(x, "xlink:type", js.undefined)
+    inline def setXlinkColontypeUndefined: Self = StObject.set(x, "xlink:type", js.undefined)
   }
 }

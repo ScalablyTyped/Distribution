@@ -10,16 +10,13 @@ trait PostsInsightsFeedResponseImage extends StObject {
 }
 object PostsInsightsFeedResponseImage {
   
-  @scala.inline
-  def apply(uri: String): PostsInsightsFeedResponseImage = {
+  inline def apply(uri: String): PostsInsightsFeedResponseImage = {
     val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostsInsightsFeedResponseImage]
   }
   
-  @scala.inline
-  implicit class PostsInsightsFeedResponseImageMutableBuilder[Self <: PostsInsightsFeedResponseImage] (val x: Self) extends AnyVal {
+  extension [Self <: PostsInsightsFeedResponseImage](x: Self) {
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

@@ -28,13 +28,12 @@ trait ConditionalStyle extends StObject {
   
   var TopPadding: Double
   
-  @JSName("Word.ConditionalStyle_typekey")
+  /* private */ @JSName("Word.ConditionalStyle_typekey")
   var WordDotConditionalStyle_typekey: ConditionalStyle
 }
 object ConditionalStyle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Borders: Borders,
     BottomPadding: Double,
@@ -53,43 +52,30 @@ object ConditionalStyle {
     __obj.asInstanceOf[ConditionalStyle]
   }
   
-  @scala.inline
-  implicit class ConditionalStyleMutableBuilder[Self <: ConditionalStyle] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionalStyle](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorders(value: Borders): Self = StObject.set(x, "Borders", value.asInstanceOf[js.Any])
+    inline def setBorders(value: Borders): Self = StObject.set(x, "Borders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBottomPadding(value: Double): Self = StObject.set(x, "BottomPadding", value.asInstanceOf[js.Any])
+    inline def setBottomPadding(value: Double): Self = StObject.set(x, "BottomPadding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFont(value: Font): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
+    inline def setFont(value: Font): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftPadding(value: Double): Self = StObject.set(x, "LeftPadding", value.asInstanceOf[js.Any])
+    inline def setLeftPadding(value: Double): Self = StObject.set(x, "LeftPadding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParagraphFormat(value: ParagraphFormat): Self = StObject.set(x, "ParagraphFormat", value.asInstanceOf[js.Any])
+    inline def setParagraphFormat(value: ParagraphFormat): Self = StObject.set(x, "ParagraphFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightPadding(value: Double): Self = StObject.set(x, "RightPadding", value.asInstanceOf[js.Any])
+    inline def setRightPadding(value: Double): Self = StObject.set(x, "RightPadding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShading(value: Shading): Self = StObject.set(x, "Shading", value.asInstanceOf[js.Any])
+    inline def setShading(value: Shading): Self = StObject.set(x, "Shading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopPadding(value: Double): Self = StObject.set(x, "TopPadding", value.asInstanceOf[js.Any])
+    inline def setTopPadding(value: Double): Self = StObject.set(x, "TopPadding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotConditionalStyle_typekey(value: ConditionalStyle): Self = StObject.set(x, "Word.ConditionalStyle_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotConditionalStyle_typekey(value: ConditionalStyle): Self = StObject.set(x, "Word.ConditionalStyle_typekey", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait Channel extends StObject {
 }
 object Channel {
   
-  @scala.inline
-  def apply(channel: String): Channel = {
+  inline def apply(channel: String): Channel = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any])
     __obj.asInstanceOf[Channel]
   }
   
-  @scala.inline
-  implicit class ChannelMutableBuilder[Self <: Channel] (val x: Self) extends AnyVal {
+  extension [Self <: Channel](x: Self) {
     
-    @scala.inline
-    def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
   }
 }

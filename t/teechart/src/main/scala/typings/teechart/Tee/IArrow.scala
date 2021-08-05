@@ -14,8 +14,7 @@ trait IArrow
 }
 object IArrow {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     drawText: (IRectangle, String) => js.Any,
     ellipse: (Double, Double, Double, Double) => js.Any,
     fill: String,
@@ -37,13 +36,10 @@ object IArrow {
     __obj.asInstanceOf[IArrow]
   }
   
-  @scala.inline
-  implicit class IArrowMutableBuilder[Self <: IArrow] (val x: Self) extends AnyVal {
+  extension [Self <: IArrow](x: Self) {
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnderline(value: Boolean): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
+    inline def setUnderline(value: Boolean): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
   }
 }

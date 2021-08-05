@@ -53,29 +53,22 @@ object anon {
   }
   object Base64 {
     
-    @scala.inline
-    def apply(base64: Boolean, binary: Boolean, compression: Compression, date: Date, dir: Boolean): Base64 = {
+    inline def apply(base64: Boolean, binary: Boolean, compression: Compression, date: Date, dir: Boolean): Base64 = {
       val __obj = js.Dynamic.literal(base64 = base64.asInstanceOf[js.Any], binary = binary.asInstanceOf[js.Any], compression = compression.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], dir = dir.asInstanceOf[js.Any])
       __obj.asInstanceOf[Base64]
     }
     
-    @scala.inline
-    implicit class Base64MutableBuilder[Self <: Base64] (val x: Self) extends AnyVal {
+    extension [Self <: Base64](x: Self) {
       
-      @scala.inline
-      def setBase64(value: Boolean): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
+      inline def setBase64(value: Boolean): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
+      inline def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompression(value: Compression): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+      inline def setCompression(value: Compression): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDir(value: Boolean): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: Boolean): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     }
   }
   
@@ -157,63 +150,45 @@ object anon {
   }
   object GenerateOptionstypearrayb {
     
-    @scala.inline
-    def apply(`type`: (js.UndefOr[base64 | string | uint8array | arraybuffer | blob | nodebuffer]) & arraybuffer): GenerateOptionstypearrayb = {
+    inline def apply(`type`: (js.UndefOr[base64 | string | uint8array | arraybuffer | blob | nodebuffer]) & arraybuffer): GenerateOptionstypearrayb = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[GenerateOptionstypearrayb]
     }
     
-    @scala.inline
-    implicit class GenerateOptionstypearraybMutableBuilder[Self <: GenerateOptionstypearrayb] (val x: Self) extends AnyVal {
+    extension [Self <: GenerateOptionstypearrayb](x: Self) {
       
-      @scala.inline
-      def setBase64(value: Boolean): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
+      inline def setBase64(value: Boolean): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase64Undefined: Self = StObject.set(x, "base64", js.undefined)
+      inline def setBase64Undefined: Self = StObject.set(x, "base64", js.undefined)
       
-      @scala.inline
-      def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      @scala.inline
-      def setCompression(value: Compression): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+      inline def setCompression(value: Compression): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressionOptions(value: Level): Self = StObject.set(x, "compressionOptions", value.asInstanceOf[js.Any])
+      inline def setCompressionOptions(value: Level): Self = StObject.set(x, "compressionOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressionOptionsNull: Self = StObject.set(x, "compressionOptions", null)
+      inline def setCompressionOptionsNull: Self = StObject.set(x, "compressionOptions", null)
       
-      @scala.inline
-      def setCompressionOptionsUndefined: Self = StObject.set(x, "compressionOptions", js.undefined)
+      inline def setCompressionOptionsUndefined: Self = StObject.set(x, "compressionOptions", js.undefined)
       
-      @scala.inline
-      def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
+      inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
       
-      @scala.inline
-      def setEncodeFileName(value: /* name */ String => Buffer): Self = StObject.set(x, "encodeFileName", js.Any.fromFunction1(value))
+      inline def setEncodeFileName(value: /* name */ String => Buffer): Self = StObject.set(x, "encodeFileName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEncodeFileNameUndefined: Self = StObject.set(x, "encodeFileName", js.undefined)
+      inline def setEncodeFileNameUndefined: Self = StObject.set(x, "encodeFileName", js.undefined)
       
-      @scala.inline
-      def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+      inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+      inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
       
-      @scala.inline
-      def setPlatform(value: DOS | UNIX | Platform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: DOS | UNIX | Platform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+      inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
       
-      @scala.inline
-      def setType(value: (js.UndefOr[base64 | string | uint8array | arraybuffer | blob | nodebuffer]) & arraybuffer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: (js.UndefOr[base64 | string | uint8array | arraybuffer | blob | nodebuffer]) & arraybuffer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -295,63 +270,45 @@ object anon {
   }
   object GenerateOptionstypeblob {
     
-    @scala.inline
-    def apply(`type`: (js.UndefOr[base64 | string | uint8array | arraybuffer | blob | nodebuffer]) & blob): GenerateOptionstypeblob = {
+    inline def apply(`type`: (js.UndefOr[base64 | string | uint8array | arraybuffer | blob | nodebuffer]) & blob): GenerateOptionstypeblob = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[GenerateOptionstypeblob]
     }
     
-    @scala.inline
-    implicit class GenerateOptionstypeblobMutableBuilder[Self <: GenerateOptionstypeblob] (val x: Self) extends AnyVal {
+    extension [Self <: GenerateOptionstypeblob](x: Self) {
       
-      @scala.inline
-      def setBase64(value: Boolean): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
+      inline def setBase64(value: Boolean): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase64Undefined: Self = StObject.set(x, "base64", js.undefined)
+      inline def setBase64Undefined: Self = StObject.set(x, "base64", js.undefined)
       
-      @scala.inline
-      def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      @scala.inline
-      def setCompression(value: Compression): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+      inline def setCompression(value: Compression): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressionOptions(value: Level): Self = StObject.set(x, "compressionOptions", value.asInstanceOf[js.Any])
+      inline def setCompressionOptions(value: Level): Self = StObject.set(x, "compressionOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressionOptionsNull: Self = StObject.set(x, "compressionOptions", null)
+      inline def setCompressionOptionsNull: Self = StObject.set(x, "compressionOptions", null)
       
-      @scala.inline
-      def setCompressionOptionsUndefined: Self = StObject.set(x, "compressionOptions", js.undefined)
+      inline def setCompressionOptionsUndefined: Self = StObject.set(x, "compressionOptions", js.undefined)
       
-      @scala.inline
-      def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
+      inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
       
-      @scala.inline
-      def setEncodeFileName(value: /* name */ String => Buffer): Self = StObject.set(x, "encodeFileName", js.Any.fromFunction1(value))
+      inline def setEncodeFileName(value: /* name */ String => Buffer): Self = StObject.set(x, "encodeFileName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEncodeFileNameUndefined: Self = StObject.set(x, "encodeFileName", js.undefined)
+      inline def setEncodeFileNameUndefined: Self = StObject.set(x, "encodeFileName", js.undefined)
       
-      @scala.inline
-      def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+      inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+      inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
       
-      @scala.inline
-      def setPlatform(value: DOS | UNIX | Platform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: DOS | UNIX | Platform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+      inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
       
-      @scala.inline
-      def setType(value: (js.UndefOr[base64 | string | uint8array | arraybuffer | blob | nodebuffer]) & blob): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: (js.UndefOr[base64 | string | uint8array | arraybuffer | blob | nodebuffer]) & blob): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -433,63 +390,45 @@ object anon {
   }
   object GenerateOptionstypenodebu {
     
-    @scala.inline
-    def apply(`type`: (js.UndefOr[base64 | string | uint8array | arraybuffer | blob | nodebuffer]) & nodebuffer): GenerateOptionstypenodebu = {
+    inline def apply(`type`: (js.UndefOr[base64 | string | uint8array | arraybuffer | blob | nodebuffer]) & nodebuffer): GenerateOptionstypenodebu = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[GenerateOptionstypenodebu]
     }
     
-    @scala.inline
-    implicit class GenerateOptionstypenodebuMutableBuilder[Self <: GenerateOptionstypenodebu] (val x: Self) extends AnyVal {
+    extension [Self <: GenerateOptionstypenodebu](x: Self) {
       
-      @scala.inline
-      def setBase64(value: Boolean): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
+      inline def setBase64(value: Boolean): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase64Undefined: Self = StObject.set(x, "base64", js.undefined)
+      inline def setBase64Undefined: Self = StObject.set(x, "base64", js.undefined)
       
-      @scala.inline
-      def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      @scala.inline
-      def setCompression(value: Compression): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+      inline def setCompression(value: Compression): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressionOptions(value: Level): Self = StObject.set(x, "compressionOptions", value.asInstanceOf[js.Any])
+      inline def setCompressionOptions(value: Level): Self = StObject.set(x, "compressionOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressionOptionsNull: Self = StObject.set(x, "compressionOptions", null)
+      inline def setCompressionOptionsNull: Self = StObject.set(x, "compressionOptions", null)
       
-      @scala.inline
-      def setCompressionOptionsUndefined: Self = StObject.set(x, "compressionOptions", js.undefined)
+      inline def setCompressionOptionsUndefined: Self = StObject.set(x, "compressionOptions", js.undefined)
       
-      @scala.inline
-      def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
+      inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
       
-      @scala.inline
-      def setEncodeFileName(value: /* name */ String => Buffer): Self = StObject.set(x, "encodeFileName", js.Any.fromFunction1(value))
+      inline def setEncodeFileName(value: /* name */ String => Buffer): Self = StObject.set(x, "encodeFileName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEncodeFileNameUndefined: Self = StObject.set(x, "encodeFileName", js.undefined)
+      inline def setEncodeFileNameUndefined: Self = StObject.set(x, "encodeFileName", js.undefined)
       
-      @scala.inline
-      def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+      inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+      inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
       
-      @scala.inline
-      def setPlatform(value: DOS | UNIX | Platform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: DOS | UNIX | Platform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+      inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
       
-      @scala.inline
-      def setType(value: (js.UndefOr[base64 | string | uint8array | arraybuffer | blob | nodebuffer]) & nodebuffer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: (js.UndefOr[base64 | string | uint8array | arraybuffer | blob | nodebuffer]) & nodebuffer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -571,8 +510,7 @@ object anon {
   }
   object GenerateOptionstypestring {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `type`: (js.UndefOr[base64 | string | uint8array | arraybuffer | blob | nodebuffer]) & (js.UndefOr[string | base64])
     ): GenerateOptionstypestring = {
       val __obj = js.Dynamic.literal()
@@ -580,56 +518,39 @@ object anon {
       __obj.asInstanceOf[GenerateOptionstypestring]
     }
     
-    @scala.inline
-    implicit class GenerateOptionstypestringMutableBuilder[Self <: GenerateOptionstypestring] (val x: Self) extends AnyVal {
+    extension [Self <: GenerateOptionstypestring](x: Self) {
       
-      @scala.inline
-      def setBase64(value: Boolean): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
+      inline def setBase64(value: Boolean): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase64Undefined: Self = StObject.set(x, "base64", js.undefined)
+      inline def setBase64Undefined: Self = StObject.set(x, "base64", js.undefined)
       
-      @scala.inline
-      def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      @scala.inline
-      def setCompression(value: Compression): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+      inline def setCompression(value: Compression): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressionOptions(value: Level): Self = StObject.set(x, "compressionOptions", value.asInstanceOf[js.Any])
+      inline def setCompressionOptions(value: Level): Self = StObject.set(x, "compressionOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressionOptionsNull: Self = StObject.set(x, "compressionOptions", null)
+      inline def setCompressionOptionsNull: Self = StObject.set(x, "compressionOptions", null)
       
-      @scala.inline
-      def setCompressionOptionsUndefined: Self = StObject.set(x, "compressionOptions", js.undefined)
+      inline def setCompressionOptionsUndefined: Self = StObject.set(x, "compressionOptions", js.undefined)
       
-      @scala.inline
-      def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
+      inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
       
-      @scala.inline
-      def setEncodeFileName(value: /* name */ String => Buffer): Self = StObject.set(x, "encodeFileName", js.Any.fromFunction1(value))
+      inline def setEncodeFileName(value: /* name */ String => Buffer): Self = StObject.set(x, "encodeFileName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEncodeFileNameUndefined: Self = StObject.set(x, "encodeFileName", js.undefined)
+      inline def setEncodeFileNameUndefined: Self = StObject.set(x, "encodeFileName", js.undefined)
       
-      @scala.inline
-      def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+      inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+      inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
       
-      @scala.inline
-      def setPlatform(value: DOS | UNIX | Platform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: DOS | UNIX | Platform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+      inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
       
-      @scala.inline
-      def setType(
+      inline def setType(
         value: (js.UndefOr[base64 | string | uint8array | arraybuffer | blob | nodebuffer]) & (js.UndefOr[string | base64])
       ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -713,63 +634,45 @@ object anon {
   }
   object GenerateOptionstypeuint8a {
     
-    @scala.inline
-    def apply(`type`: (js.UndefOr[base64 | string | uint8array | arraybuffer | blob | nodebuffer]) & uint8array): GenerateOptionstypeuint8a = {
+    inline def apply(`type`: (js.UndefOr[base64 | string | uint8array | arraybuffer | blob | nodebuffer]) & uint8array): GenerateOptionstypeuint8a = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[GenerateOptionstypeuint8a]
     }
     
-    @scala.inline
-    implicit class GenerateOptionstypeuint8aMutableBuilder[Self <: GenerateOptionstypeuint8a] (val x: Self) extends AnyVal {
+    extension [Self <: GenerateOptionstypeuint8a](x: Self) {
       
-      @scala.inline
-      def setBase64(value: Boolean): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
+      inline def setBase64(value: Boolean): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase64Undefined: Self = StObject.set(x, "base64", js.undefined)
+      inline def setBase64Undefined: Self = StObject.set(x, "base64", js.undefined)
       
-      @scala.inline
-      def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      @scala.inline
-      def setCompression(value: Compression): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+      inline def setCompression(value: Compression): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressionOptions(value: Level): Self = StObject.set(x, "compressionOptions", value.asInstanceOf[js.Any])
+      inline def setCompressionOptions(value: Level): Self = StObject.set(x, "compressionOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressionOptionsNull: Self = StObject.set(x, "compressionOptions", null)
+      inline def setCompressionOptionsNull: Self = StObject.set(x, "compressionOptions", null)
       
-      @scala.inline
-      def setCompressionOptionsUndefined: Self = StObject.set(x, "compressionOptions", js.undefined)
+      inline def setCompressionOptionsUndefined: Self = StObject.set(x, "compressionOptions", js.undefined)
       
-      @scala.inline
-      def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
+      inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
       
-      @scala.inline
-      def setEncodeFileName(value: /* name */ String => Buffer): Self = StObject.set(x, "encodeFileName", js.Any.fromFunction1(value))
+      inline def setEncodeFileName(value: /* name */ String => Buffer): Self = StObject.set(x, "encodeFileName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEncodeFileNameUndefined: Self = StObject.set(x, "encodeFileName", js.undefined)
+      inline def setEncodeFileNameUndefined: Self = StObject.set(x, "encodeFileName", js.undefined)
       
-      @scala.inline
-      def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+      inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+      inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
       
-      @scala.inline
-      def setPlatform(value: DOS | UNIX | Platform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: DOS | UNIX | Platform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+      inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
       
-      @scala.inline
-      def setType(value: (js.UndefOr[base64 | string | uint8array | arraybuffer | blob | nodebuffer]) & uint8array): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: (js.UndefOr[base64 | string | uint8array | arraybuffer | blob | nodebuffer]) & uint8array): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -779,17 +682,14 @@ object anon {
   }
   object Level {
     
-    @scala.inline
-    def apply(level: `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9`): Level = {
+    inline def apply(level: `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9`): Level = {
       val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
       __obj.asInstanceOf[Level]
     }
     
-    @scala.inline
-    implicit class LevelMutableBuilder[Self <: Level] (val x: Self) extends AnyVal {
+    extension [Self <: Level](x: Self) {
       
-      @scala.inline
-      def setLevel(value: `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9`): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9`): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     }
   }
 }

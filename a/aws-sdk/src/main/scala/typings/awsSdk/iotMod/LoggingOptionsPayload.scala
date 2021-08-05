@@ -18,22 +18,17 @@ trait LoggingOptionsPayload extends StObject {
 }
 object LoggingOptionsPayload {
   
-  @scala.inline
-  def apply(roleArn: AwsArn): LoggingOptionsPayload = {
+  inline def apply(roleArn: AwsArn): LoggingOptionsPayload = {
     val __obj = js.Dynamic.literal(roleArn = roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoggingOptionsPayload]
   }
   
-  @scala.inline
-  implicit class LoggingOptionsPayloadMutableBuilder[Self <: LoggingOptionsPayload] (val x: Self) extends AnyVal {
+  extension [Self <: LoggingOptionsPayload](x: Self) {
     
-    @scala.inline
-    def setLogLevel(value: LogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+    inline def setLogLevel(value: LogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
+    inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
     
-    @scala.inline
-    def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
   }
 }

@@ -18,8 +18,7 @@ object maxPool3dBackpropMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def maxPool3dBackprop[T /* <: Tensor4D | Tensor5D */](
+  inline def maxPool3dBackprop[T /* <: Tensor4D | Tensor5D */](
     dy: T | TensorLike,
     input: T | TensorLike,
     output: T | TensorLike,

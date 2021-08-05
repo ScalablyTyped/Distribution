@@ -21,19 +21,15 @@ trait ComposeActionResponseBuilder extends StObject {
 }
 object ComposeActionResponseBuilder {
   
-  @scala.inline
-  def apply(build: () => ComposeActionResponse, setGmailDraft: GmailDraft => ComposeActionResponseBuilder): ComposeActionResponseBuilder = {
+  inline def apply(build: () => ComposeActionResponse, setGmailDraft: GmailDraft => ComposeActionResponseBuilder): ComposeActionResponseBuilder = {
     val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), setGmailDraft = js.Any.fromFunction1(setGmailDraft))
     __obj.asInstanceOf[ComposeActionResponseBuilder]
   }
   
-  @scala.inline
-  implicit class ComposeActionResponseBuilderMutableBuilder[Self <: ComposeActionResponseBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: ComposeActionResponseBuilder](x: Self) {
     
-    @scala.inline
-    def setBuild(value: () => ComposeActionResponse): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
+    inline def setBuild(value: () => ComposeActionResponse): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetGmailDraft(value: GmailDraft => ComposeActionResponseBuilder): Self = StObject.set(x, "setGmailDraft", js.Any.fromFunction1(value))
+    inline def setSetGmailDraft(value: GmailDraft => ComposeActionResponseBuilder): Self = StObject.set(x, "setGmailDraft", js.Any.fromFunction1(value))
   }
 }

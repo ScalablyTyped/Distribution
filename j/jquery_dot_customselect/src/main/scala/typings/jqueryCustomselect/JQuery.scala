@@ -10,16 +10,13 @@ trait JQuery extends StObject {
 }
 object JQuery {
   
-  @scala.inline
-  def apply(customSelect: JQueryCustomSelectOption => JQuery): JQuery = {
+  inline def apply(customSelect: JQueryCustomSelectOption => JQuery): JQuery = {
     val __obj = js.Dynamic.literal(customSelect = js.Any.fromFunction1(customSelect))
     __obj.asInstanceOf[JQuery]
   }
   
-  @scala.inline
-  implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+  extension [Self <: JQuery](x: Self) {
     
-    @scala.inline
-    def setCustomSelect(value: JQueryCustomSelectOption => JQuery): Self = StObject.set(x, "customSelect", js.Any.fromFunction1(value))
+    inline def setCustomSelect(value: JQueryCustomSelectOption => JQuery): Self = StObject.set(x, "customSelect", js.Any.fromFunction1(value))
   }
 }

@@ -11,22 +11,17 @@ trait AddOrderNotesRequest extends StObject {
 }
 object AddOrderNotesRequest {
   
-  @scala.inline
-  def apply(): AddOrderNotesRequest = {
+  inline def apply(): AddOrderNotesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddOrderNotesRequest]
   }
   
-  @scala.inline
-  implicit class AddOrderNotesRequestMutableBuilder[Self <: AddOrderNotesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AddOrderNotesRequest](x: Self) {
     
-    @scala.inline
-    def setNotes(value: js.Array[MarketplaceNote]): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+    inline def setNotes(value: js.Array[MarketplaceNote]): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
+    inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
     
-    @scala.inline
-    def setNotesVarargs(value: MarketplaceNote*): Self = StObject.set(x, "notes", js.Array(value :_*))
+    inline def setNotesVarargs(value: MarketplaceNote*): Self = StObject.set(x, "notes", js.Array(value :_*))
   }
 }

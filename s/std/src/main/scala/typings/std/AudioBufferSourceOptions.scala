@@ -20,52 +20,37 @@ trait AudioBufferSourceOptions extends StObject {
 }
 object AudioBufferSourceOptions {
   
-  @scala.inline
-  def apply(): AudioBufferSourceOptions = {
+  inline def apply(): AudioBufferSourceOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AudioBufferSourceOptions]
   }
   
-  @scala.inline
-  implicit class AudioBufferSourceOptionsMutableBuilder[Self <: AudioBufferSourceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AudioBufferSourceOptions](x: Self) {
     
-    @scala.inline
-    def setBuffer(value: AudioBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+    inline def setBuffer(value: AudioBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBufferNull: Self = StObject.set(x, "buffer", null)
+    inline def setBufferNull: Self = StObject.set(x, "buffer", null)
     
-    @scala.inline
-    def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
+    inline def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
     
-    @scala.inline
-    def setDetune(value: Double): Self = StObject.set(x, "detune", value.asInstanceOf[js.Any])
+    inline def setDetune(value: Double): Self = StObject.set(x, "detune", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetuneUndefined: Self = StObject.set(x, "detune", js.undefined)
+    inline def setDetuneUndefined: Self = StObject.set(x, "detune", js.undefined)
     
-    @scala.inline
-    def setLoop(value: scala.Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+    inline def setLoop(value: scala.Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoopEnd(value: Double): Self = StObject.set(x, "loopEnd", value.asInstanceOf[js.Any])
+    inline def setLoopEnd(value: Double): Self = StObject.set(x, "loopEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoopEndUndefined: Self = StObject.set(x, "loopEnd", js.undefined)
+    inline def setLoopEndUndefined: Self = StObject.set(x, "loopEnd", js.undefined)
     
-    @scala.inline
-    def setLoopStart(value: Double): Self = StObject.set(x, "loopStart", value.asInstanceOf[js.Any])
+    inline def setLoopStart(value: Double): Self = StObject.set(x, "loopStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoopStartUndefined: Self = StObject.set(x, "loopStart", js.undefined)
+    inline def setLoopStartUndefined: Self = StObject.set(x, "loopStart", js.undefined)
     
-    @scala.inline
-    def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+    inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
     
-    @scala.inline
-    def setPlaybackRate(value: Double): Self = StObject.set(x, "playbackRate", value.asInstanceOf[js.Any])
+    inline def setPlaybackRate(value: Double): Self = StObject.set(x, "playbackRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaybackRateUndefined: Self = StObject.set(x, "playbackRate", js.undefined)
+    inline def setPlaybackRateUndefined: Self = StObject.set(x, "playbackRate", js.undefined)
   }
 }

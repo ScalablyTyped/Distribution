@@ -18,22 +18,17 @@ trait ApplicationRestoreConfiguration extends StObject {
 }
 object ApplicationRestoreConfiguration {
   
-  @scala.inline
-  def apply(ApplicationRestoreType: ApplicationRestoreType): ApplicationRestoreConfiguration = {
+  inline def apply(ApplicationRestoreType: ApplicationRestoreType): ApplicationRestoreConfiguration = {
     val __obj = js.Dynamic.literal(ApplicationRestoreType = ApplicationRestoreType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationRestoreConfiguration]
   }
   
-  @scala.inline
-  implicit class ApplicationRestoreConfigurationMutableBuilder[Self <: ApplicationRestoreConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationRestoreConfiguration](x: Self) {
     
-    @scala.inline
-    def setApplicationRestoreType(value: ApplicationRestoreType): Self = StObject.set(x, "ApplicationRestoreType", value.asInstanceOf[js.Any])
+    inline def setApplicationRestoreType(value: ApplicationRestoreType): Self = StObject.set(x, "ApplicationRestoreType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotName(value: SnapshotName): Self = StObject.set(x, "SnapshotName", value.asInstanceOf[js.Any])
+    inline def setSnapshotName(value: SnapshotName): Self = StObject.set(x, "SnapshotName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotNameUndefined: Self = StObject.set(x, "SnapshotName", js.undefined)
+    inline def setSnapshotNameUndefined: Self = StObject.set(x, "SnapshotName", js.undefined)
   }
 }

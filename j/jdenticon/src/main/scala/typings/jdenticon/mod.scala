@@ -18,116 +18,69 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def configure(): JdenticonConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")().asInstanceOf[JdenticonConfig]
-  @scala.inline
-  def configure(newConfig: JdenticonConfig): JdenticonConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(newConfig.asInstanceOf[js.Any]).asInstanceOf[JdenticonConfig]
+  inline def configure(): JdenticonConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")().asInstanceOf[JdenticonConfig]
+  inline def configure(newConfig: JdenticonConfig): JdenticonConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(newConfig.asInstanceOf[js.Any]).asInstanceOf[JdenticonConfig]
   
-  @scala.inline
-  def drawIcon(ctx: JdenticonCompatibleCanvasRenderingContext2D, hashOrValue: js.Any, size: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawIcon")(ctx.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def drawIcon(
+  inline def drawIcon(ctx: JdenticonCompatibleCanvasRenderingContext2D, hashOrValue: js.Any, size: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawIcon")(ctx.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def drawIcon(
     ctx: JdenticonCompatibleCanvasRenderingContext2D,
     hashOrValue: js.Any,
     size: Double,
     config: Double
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawIcon")(ctx.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], size.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def drawIcon(
+  inline def drawIcon(
     ctx: JdenticonCompatibleCanvasRenderingContext2D,
     hashOrValue: js.Any,
     size: Double,
     config: JdenticonConfig
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawIcon")(ctx.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], size.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def toPng(hashOrValue: js.Any, size: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("toPng")(hashOrValue.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Buffer]
-  @scala.inline
-  def toPng(hashOrValue: js.Any, size: Double, config: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("toPng")(hashOrValue.asInstanceOf[js.Any], size.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Buffer]
-  @scala.inline
-  def toPng(hashOrValue: js.Any, size: Double, config: JdenticonConfig): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("toPng")(hashOrValue.asInstanceOf[js.Any], size.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def toPng(hashOrValue: js.Any, size: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("toPng")(hashOrValue.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def toPng(hashOrValue: js.Any, size: Double, config: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("toPng")(hashOrValue.asInstanceOf[js.Any], size.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def toPng(hashOrValue: js.Any, size: Double, config: JdenticonConfig): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("toPng")(hashOrValue.asInstanceOf[js.Any], size.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @scala.inline
-  def toSvg(hashOrValue: js.Any, size: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toSvg")(hashOrValue.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def toSvg(hashOrValue: js.Any, size: Double, config: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toSvg")(hashOrValue.asInstanceOf[js.Any], size.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def toSvg(hashOrValue: js.Any, size: Double, config: JdenticonConfig): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toSvg")(hashOrValue.asInstanceOf[js.Any], size.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def toSvg(hashOrValue: js.Any, size: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toSvg")(hashOrValue.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def toSvg(hashOrValue: js.Any, size: Double, config: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toSvg")(hashOrValue.asInstanceOf[js.Any], size.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def toSvg(hashOrValue: js.Any, size: Double, config: JdenticonConfig): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toSvg")(hashOrValue.asInstanceOf[js.Any], size.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def update(elementOrSelector: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(elementOrSelector.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def update(elementOrSelector: String, hashOrValue: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def update(elementOrSelector: String, hashOrValue: js.Any, config: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def update(elementOrSelector: String, hashOrValue: js.Any, config: JdenticonConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def update(elementOrSelector: String, hashOrValue: Unit, config: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def update(elementOrSelector: String, hashOrValue: Unit, config: JdenticonConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def update(elementOrSelector: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(elementOrSelector.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def update(elementOrSelector: Element, hashOrValue: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def update(elementOrSelector: Element, hashOrValue: js.Any, config: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def update(elementOrSelector: Element, hashOrValue: js.Any, config: JdenticonConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def update(elementOrSelector: Element, hashOrValue: Unit, config: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def update(elementOrSelector: Element, hashOrValue: Unit, config: JdenticonConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def update(elementOrSelector: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(elementOrSelector.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def update(elementOrSelector: String, hashOrValue: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def update(elementOrSelector: String, hashOrValue: js.Any, config: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def update(elementOrSelector: String, hashOrValue: js.Any, config: JdenticonConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def update(elementOrSelector: String, hashOrValue: Unit, config: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def update(elementOrSelector: String, hashOrValue: Unit, config: JdenticonConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def update(elementOrSelector: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(elementOrSelector.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def update(elementOrSelector: Element, hashOrValue: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def update(elementOrSelector: Element, hashOrValue: js.Any, config: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def update(elementOrSelector: Element, hashOrValue: js.Any, config: JdenticonConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def update(elementOrSelector: Element, hashOrValue: Unit, config: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def update(elementOrSelector: Element, hashOrValue: Unit, config: JdenticonConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def updateCanvas(elementOrSelector: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateCanvas")(elementOrSelector.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def updateCanvas(elementOrSelector: String, hashOrValue: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCanvas")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def updateCanvas(elementOrSelector: String, hashOrValue: js.Any, config: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCanvas")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def updateCanvas(elementOrSelector: String, hashOrValue: js.Any, config: JdenticonConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCanvas")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def updateCanvas(elementOrSelector: String, hashOrValue: Unit, config: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCanvas")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def updateCanvas(elementOrSelector: String, hashOrValue: Unit, config: JdenticonConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCanvas")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def updateCanvas(elementOrSelector: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateCanvas")(elementOrSelector.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def updateCanvas(elementOrSelector: Element, hashOrValue: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCanvas")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def updateCanvas(elementOrSelector: Element, hashOrValue: js.Any, config: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCanvas")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def updateCanvas(elementOrSelector: Element, hashOrValue: js.Any, config: JdenticonConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCanvas")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def updateCanvas(elementOrSelector: Element, hashOrValue: Unit, config: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCanvas")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def updateCanvas(elementOrSelector: Element, hashOrValue: Unit, config: JdenticonConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCanvas")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def updateCanvas(elementOrSelector: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateCanvas")(elementOrSelector.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def updateCanvas(elementOrSelector: String, hashOrValue: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCanvas")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def updateCanvas(elementOrSelector: String, hashOrValue: js.Any, config: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCanvas")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def updateCanvas(elementOrSelector: String, hashOrValue: js.Any, config: JdenticonConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCanvas")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def updateCanvas(elementOrSelector: String, hashOrValue: Unit, config: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCanvas")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def updateCanvas(elementOrSelector: String, hashOrValue: Unit, config: JdenticonConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCanvas")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def updateCanvas(elementOrSelector: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateCanvas")(elementOrSelector.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def updateCanvas(elementOrSelector: Element, hashOrValue: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCanvas")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def updateCanvas(elementOrSelector: Element, hashOrValue: js.Any, config: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCanvas")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def updateCanvas(elementOrSelector: Element, hashOrValue: js.Any, config: JdenticonConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCanvas")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def updateCanvas(elementOrSelector: Element, hashOrValue: Unit, config: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCanvas")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def updateCanvas(elementOrSelector: Element, hashOrValue: Unit, config: JdenticonConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCanvas")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def updateSvg(elementOrSelector: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateSvg")(elementOrSelector.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def updateSvg(elementOrSelector: String, hashOrValue: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSvg")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def updateSvg(elementOrSelector: String, hashOrValue: js.Any, config: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSvg")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def updateSvg(elementOrSelector: String, hashOrValue: js.Any, config: JdenticonConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSvg")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def updateSvg(elementOrSelector: String, hashOrValue: Unit, config: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSvg")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def updateSvg(elementOrSelector: String, hashOrValue: Unit, config: JdenticonConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSvg")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def updateSvg(elementOrSelector: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateSvg")(elementOrSelector.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def updateSvg(elementOrSelector: Element, hashOrValue: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSvg")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def updateSvg(elementOrSelector: Element, hashOrValue: js.Any, config: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSvg")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def updateSvg(elementOrSelector: Element, hashOrValue: js.Any, config: JdenticonConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSvg")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def updateSvg(elementOrSelector: Element, hashOrValue: Unit, config: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSvg")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def updateSvg(elementOrSelector: Element, hashOrValue: Unit, config: JdenticonConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSvg")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def updateSvg(elementOrSelector: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateSvg")(elementOrSelector.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def updateSvg(elementOrSelector: String, hashOrValue: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSvg")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def updateSvg(elementOrSelector: String, hashOrValue: js.Any, config: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSvg")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def updateSvg(elementOrSelector: String, hashOrValue: js.Any, config: JdenticonConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSvg")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def updateSvg(elementOrSelector: String, hashOrValue: Unit, config: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSvg")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def updateSvg(elementOrSelector: String, hashOrValue: Unit, config: JdenticonConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSvg")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def updateSvg(elementOrSelector: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateSvg")(elementOrSelector.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def updateSvg(elementOrSelector: Element, hashOrValue: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSvg")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def updateSvg(elementOrSelector: Element, hashOrValue: js.Any, config: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSvg")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def updateSvg(elementOrSelector: Element, hashOrValue: js.Any, config: JdenticonConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSvg")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def updateSvg(elementOrSelector: Element, hashOrValue: Unit, config: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSvg")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def updateSvg(elementOrSelector: Element, hashOrValue: Unit, config: JdenticonConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSvg")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("jdenticon", "version")
   @js.native
@@ -145,8 +98,7 @@ object mod {
   }
   object JdenticonCompatibleCanvas {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getContext: `2d` => JdenticonCompatibleCanvasRenderingContext2D | Null,
       height: Double,
       width: Double
@@ -155,17 +107,13 @@ object mod {
       __obj.asInstanceOf[JdenticonCompatibleCanvas]
     }
     
-    @scala.inline
-    implicit class JdenticonCompatibleCanvasMutableBuilder[Self <: JdenticonCompatibleCanvas] (val x: Self) extends AnyVal {
+    extension [Self <: JdenticonCompatibleCanvas](x: Self) {
       
-      @scala.inline
-      def setGetContext(value: `2d` => JdenticonCompatibleCanvasRenderingContext2D | Null): Self = StObject.set(x, "getContext", js.Any.fromFunction1(value))
+      inline def setGetContext(value: `2d` => JdenticonCompatibleCanvasRenderingContext2D | Null): Self = StObject.set(x, "getContext", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -264,53 +212,38 @@ object mod {
   }
   object JdenticonConfig {
     
-    @scala.inline
-    def apply(): JdenticonConfig = {
+    inline def apply(): JdenticonConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JdenticonConfig]
     }
     
-    @scala.inline
-    implicit class JdenticonConfigMutableBuilder[Self <: JdenticonConfig] (val x: Self) extends AnyVal {
+    extension [Self <: JdenticonConfig](x: Self) {
       
-      @scala.inline
-      def setBackColor(value: String): Self = StObject.set(x, "backColor", value.asInstanceOf[js.Any])
+      inline def setBackColor(value: String): Self = StObject.set(x, "backColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackColorUndefined: Self = StObject.set(x, "backColor", js.undefined)
+      inline def setBackColorUndefined: Self = StObject.set(x, "backColor", js.undefined)
       
-      @scala.inline
-      def setHues(value: js.Array[Double]): Self = StObject.set(x, "hues", value.asInstanceOf[js.Any])
+      inline def setHues(value: js.Array[Double]): Self = StObject.set(x, "hues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHuesUndefined: Self = StObject.set(x, "hues", js.undefined)
+      inline def setHuesUndefined: Self = StObject.set(x, "hues", js.undefined)
       
-      @scala.inline
-      def setHuesVarargs(value: Double*): Self = StObject.set(x, "hues", js.Array(value :_*))
+      inline def setHuesVarargs(value: Double*): Self = StObject.set(x, "hues", js.Array(value :_*))
       
-      @scala.inline
-      def setLightness(value: Color): Self = StObject.set(x, "lightness", value.asInstanceOf[js.Any])
+      inline def setLightness(value: Color): Self = StObject.set(x, "lightness", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLightnessUndefined: Self = StObject.set(x, "lightness", js.undefined)
+      inline def setLightnessUndefined: Self = StObject.set(x, "lightness", js.undefined)
       
-      @scala.inline
-      def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      @scala.inline
-      def setReplaceMode(value: never | once | observe): Self = StObject.set(x, "replaceMode", value.asInstanceOf[js.Any])
+      inline def setReplaceMode(value: never | once | observe): Self = StObject.set(x, "replaceMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplaceModeUndefined: Self = StObject.set(x, "replaceMode", js.undefined)
+      inline def setReplaceModeUndefined: Self = StObject.set(x, "replaceMode", js.undefined)
       
-      @scala.inline
-      def setSaturation(value: Grayscale | Double): Self = StObject.set(x, "saturation", value.asInstanceOf[js.Any])
+      inline def setSaturation(value: Grayscale | Double): Self = StObject.set(x, "saturation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaturationUndefined: Self = StObject.set(x, "saturation", js.undefined)
+      inline def setSaturationUndefined: Self = StObject.set(x, "saturation", js.undefined)
     }
   }
   
@@ -327,20 +260,16 @@ object mod {
     }
     object Window {
       
-      @scala.inline
-      def apply(): Window = {
+      inline def apply(): Window = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Window]
       }
       
-      @scala.inline
-      implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+      extension [Self <: Window](x: Self) {
         
-        @scala.inline
-        def setJdenticon_config(value: JdenticonConfig): Self = StObject.set(x, "jdenticon_config", value.asInstanceOf[js.Any])
+        inline def setJdenticon_config(value: JdenticonConfig): Self = StObject.set(x, "jdenticon_config", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setJdenticon_configUndefined: Self = StObject.set(x, "jdenticon_config", js.undefined)
+        inline def setJdenticon_configUndefined: Self = StObject.set(x, "jdenticon_config", js.undefined)
       }
     }
   }

@@ -136,85 +136,73 @@ object tagMod {
   @JSImport("language-tags/Tag", "ERR_DEPRECATED")
   @js.native
   def ERR_DEPRECATED: typings.languageTags.tagMod.ErrorCode.ERR_DEPRECATED = js.native
-  @scala.inline
-  def ERR_DEPRECATED_=(x: ERR_DEPRECATED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERR_DEPRECATED")(x.asInstanceOf[js.Any])
+  inline def ERR_DEPRECATED_=(x: ERR_DEPRECATED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERR_DEPRECATED")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("language-tags/Tag", "ERR_DUPLICATE_VARIANT")
   @js.native
   def ERR_DUPLICATE_VARIANT: typings.languageTags.tagMod.ErrorCode.ERR_DUPLICATE_VARIANT = js.native
-  @scala.inline
-  def ERR_DUPLICATE_VARIANT_=(x: ERR_DUPLICATE_VARIANT): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERR_DUPLICATE_VARIANT")(x.asInstanceOf[js.Any])
+  inline def ERR_DUPLICATE_VARIANT_=(x: ERR_DUPLICATE_VARIANT): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERR_DUPLICATE_VARIANT")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("language-tags/Tag", "ERR_EXTRA_EXTLANG")
   @js.native
   def ERR_EXTRA_EXTLANG: typings.languageTags.tagMod.ErrorCode.ERR_EXTRA_EXTLANG = js.native
-  @scala.inline
-  def ERR_EXTRA_EXTLANG_=(x: ERR_EXTRA_EXTLANG): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERR_EXTRA_EXTLANG")(x.asInstanceOf[js.Any])
+  inline def ERR_EXTRA_EXTLANG_=(x: ERR_EXTRA_EXTLANG): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERR_EXTRA_EXTLANG")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("language-tags/Tag", "ERR_EXTRA_LANGUAGE")
   @js.native
   def ERR_EXTRA_LANGUAGE: typings.languageTags.tagMod.ErrorCode.ERR_EXTRA_LANGUAGE = js.native
-  @scala.inline
-  def ERR_EXTRA_LANGUAGE_=(x: ERR_EXTRA_LANGUAGE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERR_EXTRA_LANGUAGE")(x.asInstanceOf[js.Any])
+  inline def ERR_EXTRA_LANGUAGE_=(x: ERR_EXTRA_LANGUAGE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERR_EXTRA_LANGUAGE")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("language-tags/Tag", "ERR_EXTRA_REGION")
   @js.native
   def ERR_EXTRA_REGION: typings.languageTags.tagMod.ErrorCode.ERR_EXTRA_REGION = js.native
-  @scala.inline
-  def ERR_EXTRA_REGION_=(x: ERR_EXTRA_REGION): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERR_EXTRA_REGION")(x.asInstanceOf[js.Any])
+  inline def ERR_EXTRA_REGION_=(x: ERR_EXTRA_REGION): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERR_EXTRA_REGION")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("language-tags/Tag", "ERR_EXTRA_SCRIPT")
   @js.native
   def ERR_EXTRA_SCRIPT: typings.languageTags.tagMod.ErrorCode.ERR_EXTRA_SCRIPT = js.native
-  @scala.inline
-  def ERR_EXTRA_SCRIPT_=(x: ERR_EXTRA_SCRIPT): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERR_EXTRA_SCRIPT")(x.asInstanceOf[js.Any])
+  inline def ERR_EXTRA_SCRIPT_=(x: ERR_EXTRA_SCRIPT): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERR_EXTRA_SCRIPT")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("language-tags/Tag", "ERR_NO_LANGUAGE")
   @js.native
   def ERR_NO_LANGUAGE: typings.languageTags.tagMod.ErrorCode.ERR_NO_LANGUAGE = js.native
-  @scala.inline
-  def ERR_NO_LANGUAGE_=(x: ERR_NO_LANGUAGE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERR_NO_LANGUAGE")(x.asInstanceOf[js.Any])
+  inline def ERR_NO_LANGUAGE_=(x: ERR_NO_LANGUAGE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERR_NO_LANGUAGE")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("language-tags/Tag", "ERR_SUBTAG_DEPRECATED")
   @js.native
   def ERR_SUBTAG_DEPRECATED: typings.languageTags.tagMod.ErrorCode.ERR_SUBTAG_DEPRECATED = js.native
-  @scala.inline
-  def ERR_SUBTAG_DEPRECATED_=(x: ERR_SUBTAG_DEPRECATED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERR_SUBTAG_DEPRECATED")(x.asInstanceOf[js.Any])
+  inline def ERR_SUBTAG_DEPRECATED_=(x: ERR_SUBTAG_DEPRECATED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERR_SUBTAG_DEPRECATED")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("language-tags/Tag", "ERR_SUPPRESS_SCRIPT")
   @js.native
   def ERR_SUPPRESS_SCRIPT: typings.languageTags.tagMod.ErrorCode.ERR_SUPPRESS_SCRIPT = js.native
-  @scala.inline
-  def ERR_SUPPRESS_SCRIPT_=(x: ERR_SUPPRESS_SCRIPT): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERR_SUPPRESS_SCRIPT")(x.asInstanceOf[js.Any])
+  inline def ERR_SUPPRESS_SCRIPT_=(x: ERR_SUPPRESS_SCRIPT): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERR_SUPPRESS_SCRIPT")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("language-tags/Tag", "ERR_TOO_LONG")
   @js.native
   def ERR_TOO_LONG: typings.languageTags.tagMod.ErrorCode.ERR_TOO_LONG = js.native
-  @scala.inline
-  def ERR_TOO_LONG_=(x: ERR_TOO_LONG): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERR_TOO_LONG")(x.asInstanceOf[js.Any])
+  inline def ERR_TOO_LONG_=(x: ERR_TOO_LONG): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERR_TOO_LONG")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("language-tags/Tag", "ERR_UNKNOWN")
   @js.native
   def ERR_UNKNOWN: typings.languageTags.tagMod.ErrorCode.ERR_UNKNOWN = js.native
-  @scala.inline
-  def ERR_UNKNOWN_=(x: ERR_UNKNOWN): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERR_UNKNOWN")(x.asInstanceOf[js.Any])
+  inline def ERR_UNKNOWN_=(x: ERR_UNKNOWN): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERR_UNKNOWN")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("language-tags/Tag", "ERR_WRONG_ORDER")
   @js.native
   def ERR_WRONG_ORDER: typings.languageTags.tagMod.ErrorCode.ERR_WRONG_ORDER = js.native
-  @scala.inline
-  def ERR_WRONG_ORDER_=(x: ERR_WRONG_ORDER): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERR_WRONG_ORDER")(x.asInstanceOf[js.Any])
+  inline def ERR_WRONG_ORDER_=(x: ERR_WRONG_ORDER): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERR_WRONG_ORDER")(x.asInstanceOf[js.Any])
   
   @js.native
   sealed trait ErrorCode extends StObject
@@ -297,23 +285,18 @@ object tagMod {
   }
   object LanguageTagsError {
     
-    @scala.inline
-    def apply(code: ErrorCode, message: String, name: String, subtag: typings.languageTags.subtagMod.^, tag: Tag): LanguageTagsError = {
+    inline def apply(code: ErrorCode, message: String, name: String, subtag: typings.languageTags.subtagMod.^, tag: Tag): LanguageTagsError = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], subtag = subtag.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
       __obj.asInstanceOf[LanguageTagsError]
     }
     
-    @scala.inline
-    implicit class LanguageTagsErrorMutableBuilder[Self <: LanguageTagsError] (val x: Self) extends AnyVal {
+    extension [Self <: LanguageTagsError](x: Self) {
       
-      @scala.inline
-      def setCode(value: ErrorCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: ErrorCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtag(value: typings.languageTags.subtagMod.^): Self = StObject.set(x, "subtag", value.asInstanceOf[js.Any])
+      inline def setSubtag(value: typings.languageTags.subtagMod.^): Self = StObject.set(x, "subtag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTag(value: Tag): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: Tag): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     }
   }
   
@@ -408,8 +391,7 @@ object tagMod {
   }
   object Tag {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       added: () => String,
       deprecated: () => String | Null,
       descriptions: () => js.Array[String],
@@ -429,47 +411,33 @@ object tagMod {
       __obj.asInstanceOf[Tag]
     }
     
-    @scala.inline
-    implicit class TagMutableBuilder[Self <: Tag] (val x: Self) extends AnyVal {
+    extension [Self <: Tag](x: Self) {
       
-      @scala.inline
-      def setAdded(value: () => String): Self = StObject.set(x, "added", js.Any.fromFunction0(value))
+      inline def setAdded(value: () => String): Self = StObject.set(x, "added", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDeprecated(value: () => String | Null): Self = StObject.set(x, "deprecated", js.Any.fromFunction0(value))
+      inline def setDeprecated(value: () => String | Null): Self = StObject.set(x, "deprecated", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDescriptions(value: () => js.Array[String]): Self = StObject.set(x, "descriptions", js.Any.fromFunction0(value))
+      inline def setDescriptions(value: () => js.Array[String]): Self = StObject.set(x, "descriptions", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setErrors(value: () => js.Array[LanguageTagsError]): Self = StObject.set(x, "errors", js.Any.fromFunction0(value))
+      inline def setErrors(value: () => js.Array[LanguageTagsError]): Self = StObject.set(x, "errors", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFind(value: String => typings.languageTags.subtagMod.^): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
+      inline def setFind(value: String => typings.languageTags.subtagMod.^): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFormat(value: () => String): Self = StObject.set(x, "format", js.Any.fromFunction0(value))
+      inline def setFormat(value: () => String): Self = StObject.set(x, "format", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLanguage(value: () => typings.languageTags.subtagMod.^): Self = StObject.set(x, "language", js.Any.fromFunction0(value))
+      inline def setLanguage(value: () => typings.languageTags.subtagMod.^): Self = StObject.set(x, "language", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPreferred(value: () => Tag): Self = StObject.set(x, "preferred", js.Any.fromFunction0(value))
+      inline def setPreferred(value: () => Tag): Self = StObject.set(x, "preferred", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRegion(value: () => typings.languageTags.subtagMod.^): Self = StObject.set(x, "region", js.Any.fromFunction0(value))
+      inline def setRegion(value: () => typings.languageTags.subtagMod.^): Self = StObject.set(x, "region", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setScript(value: () => typings.languageTags.subtagMod.^): Self = StObject.set(x, "script", js.Any.fromFunction0(value))
+      inline def setScript(value: () => typings.languageTags.subtagMod.^): Self = StObject.set(x, "script", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSubtags(value: () => js.Array[typings.languageTags.subtagMod.^]): Self = StObject.set(x, "subtags", js.Any.fromFunction0(value))
+      inline def setSubtags(value: () => js.Array[typings.languageTags.subtagMod.^]): Self = StObject.set(x, "subtags", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setType(value: () => grandfathered | redundant | tag): Self = StObject.set(x, "type", js.Any.fromFunction0(value))
+      inline def setType(value: () => grandfathered | redundant | tag): Self = StObject.set(x, "type", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setValid(value: () => Boolean): Self = StObject.set(x, "valid", js.Any.fromFunction0(value))
+      inline def setValid(value: () => Boolean): Self = StObject.set(x, "valid", js.Any.fromFunction0(value))
     }
   }
 }

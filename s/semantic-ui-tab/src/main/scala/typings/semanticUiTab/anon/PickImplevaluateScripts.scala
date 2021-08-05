@@ -12,16 +12,13 @@ trait PickImplevaluateScripts extends StObject {
 }
 object PickImplevaluateScripts {
   
-  @scala.inline
-  def apply(evaluateScripts: once | Boolean): PickImplevaluateScripts = {
+  inline def apply(evaluateScripts: once | Boolean): PickImplevaluateScripts = {
     val __obj = js.Dynamic.literal(evaluateScripts = evaluateScripts.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplevaluateScripts]
   }
   
-  @scala.inline
-  implicit class PickImplevaluateScriptsMutableBuilder[Self <: PickImplevaluateScripts] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplevaluateScripts](x: Self) {
     
-    @scala.inline
-    def setEvaluateScripts(value: once | Boolean): Self = StObject.set(x, "evaluateScripts", value.asInstanceOf[js.Any])
+    inline def setEvaluateScripts(value: once | Boolean): Self = StObject.set(x, "evaluateScripts", value.asInstanceOf[js.Any])
   }
 }

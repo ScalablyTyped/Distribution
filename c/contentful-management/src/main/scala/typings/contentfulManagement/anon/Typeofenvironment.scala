@@ -17,8 +17,7 @@ trait Typeofenvironment extends StObject {
 }
 object Typeofenvironment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     wrapEnvironment: (AxiosInstance, EnvironmentProps) => Environment,
     wrapEnvironmentCollection: (AxiosInstance, CollectionProp[EnvironmentProps]) => Collection[Environment, EnvironmentProps]
   ): Typeofenvironment = {
@@ -26,14 +25,11 @@ object Typeofenvironment {
     __obj.asInstanceOf[Typeofenvironment]
   }
   
-  @scala.inline
-  implicit class TypeofenvironmentMutableBuilder[Self <: Typeofenvironment] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofenvironment](x: Self) {
     
-    @scala.inline
-    def setWrapEnvironment(value: (AxiosInstance, EnvironmentProps) => Environment): Self = StObject.set(x, "wrapEnvironment", js.Any.fromFunction2(value))
+    inline def setWrapEnvironment(value: (AxiosInstance, EnvironmentProps) => Environment): Self = StObject.set(x, "wrapEnvironment", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWrapEnvironmentCollection(
+    inline def setWrapEnvironmentCollection(
       value: (AxiosInstance, CollectionProp[EnvironmentProps]) => Collection[Environment, EnvironmentProps]
     ): Self = StObject.set(x, "wrapEnvironmentCollection", js.Any.fromFunction2(value))
   }

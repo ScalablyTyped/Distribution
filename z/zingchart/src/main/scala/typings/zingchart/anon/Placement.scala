@@ -44,55 +44,39 @@ trait Placement extends StObject {
 }
 object Placement {
   
-  @scala.inline
-  def apply(): Placement = {
+  inline def apply(): Placement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Placement]
   }
   
-  @scala.inline
-  implicit class PlacementMutableBuilder[Self <: Placement] (val x: Self) extends AnyVal {
+  extension [Self <: Placement](x: Self) {
     
-    @scala.inline
-    def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+    inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+    inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     
-    @scala.inline
-    def `setLine-color`(value: String): Self = StObject.set(x, "line-color", value.asInstanceOf[js.Any])
+    inline def `setLine-color`(value: String): Self = StObject.set(x, "line-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setLine-colorUndefined`: Self = StObject.set(x, "line-color", js.undefined)
+    inline def `setLine-colorUndefined`: Self = StObject.set(x, "line-color", js.undefined)
     
-    @scala.inline
-    def `setLine-style`(value: String): Self = StObject.set(x, "line-style", value.asInstanceOf[js.Any])
+    inline def `setLine-style`(value: String): Self = StObject.set(x, "line-style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setLine-styleUndefined`: Self = StObject.set(x, "line-style", js.undefined)
+    inline def `setLine-styleUndefined`: Self = StObject.set(x, "line-style", js.undefined)
     
-    @scala.inline
-    def `setLine-width`(value: Double): Self = StObject.set(x, "line-width", value.asInstanceOf[js.Any])
+    inline def `setLine-width`(value: Double): Self = StObject.set(x, "line-width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setLine-widthUndefined`: Self = StObject.set(x, "line-width", js.undefined)
+    inline def `setLine-widthUndefined`: Self = StObject.set(x, "line-width", js.undefined)
     
-    @scala.inline
-    def setPlacement(value: String): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+    inline def setPlacement(value: String): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+    inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

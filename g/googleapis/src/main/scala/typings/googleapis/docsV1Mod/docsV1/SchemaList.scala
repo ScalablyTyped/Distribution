@@ -36,40 +36,29 @@ trait SchemaList extends StObject {
 }
 object SchemaList {
   
-  @scala.inline
-  def apply(): SchemaList = {
+  inline def apply(): SchemaList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaList]
   }
   
-  @scala.inline
-  implicit class SchemaListMutableBuilder[Self <: SchemaList] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaList](x: Self) {
     
-    @scala.inline
-    def setListProperties(value: SchemaListProperties): Self = StObject.set(x, "listProperties", value.asInstanceOf[js.Any])
+    inline def setListProperties(value: SchemaListProperties): Self = StObject.set(x, "listProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListPropertiesUndefined: Self = StObject.set(x, "listProperties", js.undefined)
+    inline def setListPropertiesUndefined: Self = StObject.set(x, "listProperties", js.undefined)
     
-    @scala.inline
-    def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
+    inline def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
+    inline def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
     
-    @scala.inline
-    def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
+    inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
     
-    @scala.inline
-    def setSuggestedInsertionId(value: String): Self = StObject.set(x, "suggestedInsertionId", value.asInstanceOf[js.Any])
+    inline def setSuggestedInsertionId(value: String): Self = StObject.set(x, "suggestedInsertionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestedInsertionIdUndefined: Self = StObject.set(x, "suggestedInsertionId", js.undefined)
+    inline def setSuggestedInsertionIdUndefined: Self = StObject.set(x, "suggestedInsertionId", js.undefined)
     
-    @scala.inline
-    def setSuggestedListPropertiesChanges(value: StringDictionary[SchemaSuggestedListProperties]): Self = StObject.set(x, "suggestedListPropertiesChanges", value.asInstanceOf[js.Any])
+    inline def setSuggestedListPropertiesChanges(value: StringDictionary[SchemaSuggestedListProperties]): Self = StObject.set(x, "suggestedListPropertiesChanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestedListPropertiesChangesUndefined: Self = StObject.set(x, "suggestedListPropertiesChanges", js.undefined)
+    inline def setSuggestedListPropertiesChangesUndefined: Self = StObject.set(x, "suggestedListPropertiesChanges", js.undefined)
   }
 }

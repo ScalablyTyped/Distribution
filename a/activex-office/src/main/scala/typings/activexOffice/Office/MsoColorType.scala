@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoColorType extends StObject
 object MsoColorType {
   
-  @scala.inline
-  def msoColorTypeCMS: `4` = 4.asInstanceOf[`4`]
+  inline def msoColorTypeCMS: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def msoColorTypeCMYK: `3` = 3.asInstanceOf[`3`]
+  inline def msoColorTypeCMYK: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoColorTypeInk: `5` = 5.asInstanceOf[`5`]
+  inline def msoColorTypeInk: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def msoColorTypeMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def msoColorTypeMixed: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def msoColorTypeRGB: `1` = 1.asInstanceOf[`1`]
+  inline def msoColorTypeRGB: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoColorTypeScheme: `2` = 2.asInstanceOf[`2`]
+  inline def msoColorTypeScheme: `2` = 2.asInstanceOf[`2`]
 }

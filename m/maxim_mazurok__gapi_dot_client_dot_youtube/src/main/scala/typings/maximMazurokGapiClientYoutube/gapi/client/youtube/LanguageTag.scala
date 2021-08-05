@@ -10,19 +10,15 @@ trait LanguageTag extends StObject {
 }
 object LanguageTag {
   
-  @scala.inline
-  def apply(): LanguageTag = {
+  inline def apply(): LanguageTag = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LanguageTag]
   }
   
-  @scala.inline
-  implicit class LanguageTagMutableBuilder[Self <: LanguageTag] (val x: Self) extends AnyVal {
+  extension [Self <: LanguageTag](x: Self) {
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

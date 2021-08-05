@@ -64,95 +64,66 @@ object tableRowMod extends Shortcut {
   }
   object StrictTableRowProps {
     
-    @scala.inline
-    def apply(): StrictTableRowProps = {
+    inline def apply(): StrictTableRowProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictTableRowProps]
     }
     
-    @scala.inline
-    implicit class StrictTableRowPropsMutableBuilder[Self <: StrictTableRowProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictTableRowProps](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setCellAs(value: js.Any): Self = StObject.set(x, "cellAs", value.asInstanceOf[js.Any])
+      inline def setCellAs(value: js.Any): Self = StObject.set(x, "cellAs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellAsUndefined: Self = StObject.set(x, "cellAs", js.undefined)
+      inline def setCellAsUndefined: Self = StObject.set(x, "cellAs", js.undefined)
       
-      @scala.inline
-      def setCells(value: SemanticShorthandCollection[TableCellProps]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
+      inline def setCells(value: SemanticShorthandCollection[TableCellProps]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
+      inline def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
       
-      @scala.inline
-      def setCellsVarargs(value: SemanticShorthandItem[TableCellProps]*): Self = StObject.set(x, "cells", js.Array(value :_*))
+      inline def setCellsVarargs(value: SemanticShorthandItem[TableCellProps]*): Self = StObject.set(x, "cells", js.Array(value :_*))
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setNegative(value: Boolean): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
+      inline def setNegative(value: Boolean): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNegativeUndefined: Self = StObject.set(x, "negative", js.undefined)
+      inline def setNegativeUndefined: Self = StObject.set(x, "negative", js.undefined)
       
-      @scala.inline
-      def setPositive(value: Boolean): Self = StObject.set(x, "positive", value.asInstanceOf[js.Any])
+      inline def setPositive(value: Boolean): Self = StObject.set(x, "positive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositiveUndefined: Self = StObject.set(x, "positive", js.undefined)
+      inline def setPositiveUndefined: Self = StObject.set(x, "positive", js.undefined)
       
-      @scala.inline
-      def setTextAlign(value: center | left | right): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+      inline def setTextAlign(value: center | left | right): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
+      inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
       
-      @scala.inline
-      def setVerticalAlign(value: SemanticVERTICALALIGNMENTS): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+      inline def setVerticalAlign(value: SemanticVERTICALALIGNMENTS): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
+      inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
       
-      @scala.inline
-      def setWarning(value: Boolean): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+      inline def setWarning(value: Boolean): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+      inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
     }
   }
   
@@ -162,8 +133,7 @@ object tableRowMod extends Shortcut {
        with /* key */ StringDictionary[js.Any]
   object TableRowProps {
     
-    @scala.inline
-    def apply(): TableRowProps = {
+    inline def apply(): TableRowProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableRowProps]
     }

@@ -21,28 +21,21 @@ trait SchemaPartitionResponse extends StObject {
 }
 object SchemaPartitionResponse {
   
-  @scala.inline
-  def apply(): SchemaPartitionResponse = {
+  inline def apply(): SchemaPartitionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPartitionResponse]
   }
   
-  @scala.inline
-  implicit class SchemaPartitionResponseMutableBuilder[Self <: SchemaPartitionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPartitionResponse](x: Self) {
     
-    @scala.inline
-    def setPartitions(value: js.Array[SchemaPartition]): Self = StObject.set(x, "partitions", value.asInstanceOf[js.Any])
+    inline def setPartitions(value: js.Array[SchemaPartition]): Self = StObject.set(x, "partitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionsUndefined: Self = StObject.set(x, "partitions", js.undefined)
+    inline def setPartitionsUndefined: Self = StObject.set(x, "partitions", js.undefined)
     
-    @scala.inline
-    def setPartitionsVarargs(value: SchemaPartition*): Self = StObject.set(x, "partitions", js.Array(value :_*))
+    inline def setPartitionsVarargs(value: SchemaPartition*): Self = StObject.set(x, "partitions", js.Array(value :_*))
     
-    @scala.inline
-    def setTransaction(value: SchemaTransaction): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
+    inline def setTransaction(value: SchemaTransaction): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
+    inline def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
   }
 }

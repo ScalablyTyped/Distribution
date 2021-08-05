@@ -12,16 +12,13 @@ trait INDProximityDetectionCompletedEventArgs extends StObject {
 }
 object INDProximityDetectionCompletedEventArgs {
   
-  @scala.inline
-  def apply(proximityDetectionRetryCount: Double): INDProximityDetectionCompletedEventArgs = {
+  inline def apply(proximityDetectionRetryCount: Double): INDProximityDetectionCompletedEventArgs = {
     val __obj = js.Dynamic.literal(proximityDetectionRetryCount = proximityDetectionRetryCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[INDProximityDetectionCompletedEventArgs]
   }
   
-  @scala.inline
-  implicit class INDProximityDetectionCompletedEventArgsMutableBuilder[Self <: INDProximityDetectionCompletedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: INDProximityDetectionCompletedEventArgs](x: Self) {
     
-    @scala.inline
-    def setProximityDetectionRetryCount(value: Double): Self = StObject.set(x, "proximityDetectionRetryCount", value.asInstanceOf[js.Any])
+    inline def setProximityDetectionRetryCount(value: Double): Self = StObject.set(x, "proximityDetectionRetryCount", value.asInstanceOf[js.Any])
   }
 }

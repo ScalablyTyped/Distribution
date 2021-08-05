@@ -15,78 +15,67 @@ object reactWindowStrings {
   sealed trait auto
     extends StObject
        with Align
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
   sealed trait backward
     extends StObject
        with ScrollDirection
-  @scala.inline
-  def backward: backward = "backward".asInstanceOf[backward]
+  inline def backward: backward = "backward".asInstanceOf[backward]
   
   @js.native
   sealed trait center
     extends StObject
        with Align
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
+  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
   sealed trait end
     extends StObject
        with Align
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
+  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
   sealed trait forward
     extends StObject
        with ScrollDirection
-  @scala.inline
-  def forward: forward = "forward".asInstanceOf[forward]
+  inline def forward: forward = "forward".asInstanceOf[forward]
   
   @js.native
   sealed trait horizontal
     extends StObject
        with Direction
        with Layout
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
   sealed trait ltr
     extends StObject
        with CSSDirection
-  @scala.inline
-  def ltr: ltr = "ltr".asInstanceOf[ltr]
+  inline def ltr: ltr = "ltr".asInstanceOf[ltr]
   
   @js.native
   sealed trait rtl
     extends StObject
        with CSSDirection
-  @scala.inline
-  def rtl: rtl = "rtl".asInstanceOf[rtl]
+  inline def rtl: rtl = "rtl".asInstanceOf[rtl]
   
   @js.native
   sealed trait smart
     extends StObject
        with Align
-  @scala.inline
-  def smart: smart = "smart".asInstanceOf[smart]
+  inline def smart: smart = "smart".asInstanceOf[smart]
   
   @js.native
   sealed trait start
     extends StObject
        with Align
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
+  inline def start: start = "start".asInstanceOf[start]
   
   @js.native
   sealed trait vertical
     extends StObject
        with Direction
        with Layout
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
+  inline def vertical: vertical = "vertical".asInstanceOf[vertical]
 }

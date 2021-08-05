@@ -18,16 +18,13 @@ trait IncreaseFontSizeCommand
 }
 object IncreaseFontSizeCommand {
   
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => SimpleCommandState): IncreaseFontSizeCommand = {
+  inline def apply(execute: () => Boolean, getState: () => SimpleCommandState): IncreaseFontSizeCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[IncreaseFontSizeCommand]
   }
   
-  @scala.inline
-  implicit class IncreaseFontSizeCommandMutableBuilder[Self <: IncreaseFontSizeCommand] (val x: Self) extends AnyVal {
+  extension [Self <: IncreaseFontSizeCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }
 }

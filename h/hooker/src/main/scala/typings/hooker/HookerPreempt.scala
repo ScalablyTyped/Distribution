@@ -12,16 +12,13 @@ trait HookerPreempt
 }
 object HookerPreempt {
   
-  @scala.inline
-  def apply(value: js.Any): HookerPreempt = {
+  inline def apply(value: js.Any): HookerPreempt = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[HookerPreempt]
   }
   
-  @scala.inline
-  implicit class HookerPreemptMutableBuilder[Self <: HookerPreempt] (val x: Self) extends AnyVal {
+  extension [Self <: HookerPreempt](x: Self) {
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

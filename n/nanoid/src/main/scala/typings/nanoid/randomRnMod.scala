@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object randomRnMod {
   
-  @scala.inline
-  def apply(bytes: Double): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].apply(bytes.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
+  inline def apply(bytes: Double): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].apply(bytes.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
   
   @JSImport("nanoid/async/random-rn", JSImport.Namespace)
   @js.native

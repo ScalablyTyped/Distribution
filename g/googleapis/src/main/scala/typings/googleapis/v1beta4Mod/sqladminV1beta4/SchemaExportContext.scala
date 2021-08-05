@@ -55,52 +55,37 @@ trait SchemaExportContext extends StObject {
 }
 object SchemaExportContext {
   
-  @scala.inline
-  def apply(): SchemaExportContext = {
+  inline def apply(): SchemaExportContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaExportContext]
   }
   
-  @scala.inline
-  implicit class SchemaExportContextMutableBuilder[Self <: SchemaExportContext] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaExportContext](x: Self) {
     
-    @scala.inline
-    def setCsvExportOptions(value: SelectQuery): Self = StObject.set(x, "csvExportOptions", value.asInstanceOf[js.Any])
+    inline def setCsvExportOptions(value: SelectQuery): Self = StObject.set(x, "csvExportOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCsvExportOptionsUndefined: Self = StObject.set(x, "csvExportOptions", js.undefined)
+    inline def setCsvExportOptionsUndefined: Self = StObject.set(x, "csvExportOptions", js.undefined)
     
-    @scala.inline
-    def setDatabases(value: js.Array[String]): Self = StObject.set(x, "databases", value.asInstanceOf[js.Any])
+    inline def setDatabases(value: js.Array[String]): Self = StObject.set(x, "databases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabasesUndefined: Self = StObject.set(x, "databases", js.undefined)
+    inline def setDatabasesUndefined: Self = StObject.set(x, "databases", js.undefined)
     
-    @scala.inline
-    def setDatabasesVarargs(value: String*): Self = StObject.set(x, "databases", js.Array(value :_*))
+    inline def setDatabasesVarargs(value: String*): Self = StObject.set(x, "databases", js.Array(value :_*))
     
-    @scala.inline
-    def setFileType(value: String): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
+    inline def setFileType(value: String): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
+    inline def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setSqlExportOptions(value: MysqlExportOptions): Self = StObject.set(x, "sqlExportOptions", value.asInstanceOf[js.Any])
+    inline def setSqlExportOptions(value: MysqlExportOptions): Self = StObject.set(x, "sqlExportOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSqlExportOptionsUndefined: Self = StObject.set(x, "sqlExportOptions", js.undefined)
+    inline def setSqlExportOptionsUndefined: Self = StObject.set(x, "sqlExportOptions", js.undefined)
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

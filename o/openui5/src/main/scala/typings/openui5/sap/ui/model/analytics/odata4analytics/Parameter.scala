@@ -77,8 +77,7 @@ trait Parameter extends StObject {
 }
 object Parameter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getContainingParameterization: () => Parameterization,
     getLabelText: () => String,
     getName: () => String,
@@ -95,40 +94,28 @@ object Parameter {
     __obj.asInstanceOf[Parameter]
   }
   
-  @scala.inline
-  implicit class ParameterMutableBuilder[Self <: Parameter] (val x: Self) extends AnyVal {
+  extension [Self <: Parameter](x: Self) {
     
-    @scala.inline
-    def setGetContainingParameterization(value: () => Parameterization): Self = StObject.set(x, "getContainingParameterization", js.Any.fromFunction0(value))
+    inline def setGetContainingParameterization(value: () => Parameterization): Self = StObject.set(x, "getContainingParameterization", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLabelText(value: () => String): Self = StObject.set(x, "getLabelText", js.Any.fromFunction0(value))
+    inline def setGetLabelText(value: () => String): Self = StObject.set(x, "getLabelText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPeerIntervalBoundaryParameter(value: () => Parameter): Self = StObject.set(x, "getPeerIntervalBoundaryParameter", js.Any.fromFunction0(value))
+    inline def setGetPeerIntervalBoundaryParameter(value: () => Parameter): Self = StObject.set(x, "getPeerIntervalBoundaryParameter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetProperty(value: () => js.Any): Self = StObject.set(x, "getProperty", js.Any.fromFunction0(value))
+    inline def setGetProperty(value: () => js.Any): Self = StObject.set(x, "getProperty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTextProperty(value: () => js.Any): Self = StObject.set(x, "getTextProperty", js.Any.fromFunction0(value))
+    inline def setGetTextProperty(value: () => js.Any): Self = StObject.set(x, "getTextProperty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetURIToValueEntitySet(value: String => Unit): Self = StObject.set(x, "getURIToValueEntitySet", js.Any.fromFunction1(value))
+    inline def setGetURIToValueEntitySet(value: String => Unit): Self = StObject.set(x, "getURIToValueEntitySet", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsIntervalBoundary(value: () => Boolean): Self = StObject.set(x, "isIntervalBoundary", js.Any.fromFunction0(value))
+    inline def setIsIntervalBoundary(value: () => Boolean): Self = StObject.set(x, "isIntervalBoundary", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsLowerIntervalBoundary(value: () => Boolean): Self = StObject.set(x, "isLowerIntervalBoundary", js.Any.fromFunction0(value))
+    inline def setIsLowerIntervalBoundary(value: () => Boolean): Self = StObject.set(x, "isLowerIntervalBoundary", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsOptional(value: () => Boolean): Self = StObject.set(x, "isOptional", js.Any.fromFunction0(value))
+    inline def setIsOptional(value: () => Boolean): Self = StObject.set(x, "isOptional", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsValueSetAvailable(value: () => Boolean): Self = StObject.set(x, "isValueSetAvailable", js.Any.fromFunction0(value))
+    inline def setIsValueSetAvailable(value: () => Boolean): Self = StObject.set(x, "isValueSetAvailable", js.Any.fromFunction0(value))
   }
 }

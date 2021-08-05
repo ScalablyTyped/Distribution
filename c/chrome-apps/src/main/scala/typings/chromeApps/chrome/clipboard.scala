@@ -49,8 +49,7 @@ object clipboard {
   }
   object AdditionalItems {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       data: String,
       `type`: ToStringLiteral[
           TEXTHTML, 
@@ -63,14 +62,11 @@ object clipboard {
       __obj.asInstanceOf[AdditionalItems]
     }
     
-    @scala.inline
-    implicit class AdditionalItemsMutableBuilder[Self <: AdditionalItems] (val x: Self) extends AnyVal {
+    extension [Self <: AdditionalItems](x: Self) {
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(
+      inline def setType(
         value: ToStringLiteral[
               TEXTHTML, 
               /* keyof chrome-apps.anon.TEXTHTML */ TEXT_PLAIN | TEXT_HTML, 
@@ -88,10 +84,8 @@ object clipboard {
   trait ImageType extends StObject
   object ImageType {
     
-    @scala.inline
-    def jpeg: typings.chromeApps.chromeAppsStrings.jpeg = "jpeg".asInstanceOf[typings.chromeApps.chromeAppsStrings.jpeg]
+    inline def jpeg: typings.chromeApps.chromeAppsStrings.jpeg = "jpeg".asInstanceOf[typings.chromeApps.chromeAppsStrings.jpeg]
     
-    @scala.inline
-    def png: typings.chromeApps.chromeAppsStrings.png = "png".asInstanceOf[typings.chromeApps.chromeAppsStrings.png]
+    inline def png: typings.chromeApps.chromeAppsStrings.png = "png".asInstanceOf[typings.chromeApps.chromeAppsStrings.png]
   }
 }

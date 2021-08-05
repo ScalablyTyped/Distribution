@@ -33,27 +33,21 @@ object Map {
   }
   object Object3DResult {
     
-    @scala.inline
-    def apply(distance: Double, index: Double, `object`: Object3D, point: Vector3): Object3DResult = {
+    inline def apply(distance: Double, index: Double, `object`: Object3D, point: Vector3): Object3DResult = {
       val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], point = point.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Object3DResult]
     }
     
-    @scala.inline
-    implicit class Object3DResultMutableBuilder[Self <: Object3DResult] (val x: Self) extends AnyVal {
+    extension [Self <: Object3DResult](x: Self) {
       
-      @scala.inline
-      def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+      inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject(value: Object3D): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: Object3D): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPoint(value: Vector3): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+      inline def setPoint(value: Vector3): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     }
   }
 }

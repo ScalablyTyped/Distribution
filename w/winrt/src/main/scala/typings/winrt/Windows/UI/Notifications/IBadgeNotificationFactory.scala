@@ -11,16 +11,13 @@ trait IBadgeNotificationFactory extends StObject {
 }
 object IBadgeNotificationFactory {
   
-  @scala.inline
-  def apply(createBadgeNotification: XmlDocument => BadgeNotification): IBadgeNotificationFactory = {
+  inline def apply(createBadgeNotification: XmlDocument => BadgeNotification): IBadgeNotificationFactory = {
     val __obj = js.Dynamic.literal(createBadgeNotification = js.Any.fromFunction1(createBadgeNotification))
     __obj.asInstanceOf[IBadgeNotificationFactory]
   }
   
-  @scala.inline
-  implicit class IBadgeNotificationFactoryMutableBuilder[Self <: IBadgeNotificationFactory] (val x: Self) extends AnyVal {
+  extension [Self <: IBadgeNotificationFactory](x: Self) {
     
-    @scala.inline
-    def setCreateBadgeNotification(value: XmlDocument => BadgeNotification): Self = StObject.set(x, "createBadgeNotification", js.Any.fromFunction1(value))
+    inline def setCreateBadgeNotification(value: XmlDocument => BadgeNotification): Self = StObject.set(x, "createBadgeNotification", js.Any.fromFunction1(value))
   }
 }

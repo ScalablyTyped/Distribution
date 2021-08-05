@@ -34,9 +34,9 @@ object beanStubMod {
     
     def destroy(): Unit = js.native
     
-    var destroyFunctions: js.Any = js.native
+    /* private */ var destroyFunctions: js.Any = js.native
     
-    var destroyed: js.Any = js.native
+    /* private */ var destroyed: js.Any = js.native
     
     def dispatchEvent[T /* <: AgEvent */](event: T): Unit = js.native
     
@@ -44,7 +44,7 @@ object beanStubMod {
     
     def isAlive(): Boolean = js.native
     
-    var localEventService: js.Any = js.native
+    /* private */ var localEventService: js.Any = js.native
   }
   /* static members */
   object BeanStub {
@@ -56,7 +56,6 @@ object beanStubMod {
     @JSImport("ag-grid/dist/lib/context/beanStub", "BeanStub.EVENT_DESTROYED")
     @js.native
     def EVENT_DESTROYED: String = js.native
-    @scala.inline
-    def EVENT_DESTROYED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_DESTROYED")(x.asInstanceOf[js.Any])
+    inline def EVENT_DESTROYED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_DESTROYED")(x.asInstanceOf[js.Any])
   }
 }

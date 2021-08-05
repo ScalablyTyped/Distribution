@@ -25,16 +25,13 @@ trait TwitterAuthProviderInstance
 }
 object TwitterAuthProviderInstance {
   
-  @scala.inline
-  def apply(providerId: String, setCustomParameters: js.Object => AuthProvider): TwitterAuthProviderInstance = {
+  inline def apply(providerId: String, setCustomParameters: js.Object => AuthProvider): TwitterAuthProviderInstance = {
     val __obj = js.Dynamic.literal(providerId = providerId.asInstanceOf[js.Any], setCustomParameters = js.Any.fromFunction1(setCustomParameters))
     __obj.asInstanceOf[TwitterAuthProviderInstance]
   }
   
-  @scala.inline
-  implicit class TwitterAuthProviderInstanceMutableBuilder[Self <: TwitterAuthProviderInstance] (val x: Self) extends AnyVal {
+  extension [Self <: TwitterAuthProviderInstance](x: Self) {
     
-    @scala.inline
-    def setSetCustomParameters(value: js.Object => AuthProvider): Self = StObject.set(x, "setCustomParameters", js.Any.fromFunction1(value))
+    inline def setSetCustomParameters(value: js.Object => AuthProvider): Self = StObject.set(x, "setCustomParameters", js.Any.fromFunction1(value))
   }
 }

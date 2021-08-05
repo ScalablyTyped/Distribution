@@ -14,10 +14,8 @@ object TreeTablePaste {
   @js.native
   val ^ : TreeTablePaste = js.native
   
-  @scala.inline
-  implicit class TreeTablePasteMutableBuilder[Self <: TreeTablePaste] (val x: Self) extends AnyVal {
+  extension [Self <: TreeTablePaste](x: Self) {
     
-    @scala.inline
-    def setInsert(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
+    inline def setInsert(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
   }
 }

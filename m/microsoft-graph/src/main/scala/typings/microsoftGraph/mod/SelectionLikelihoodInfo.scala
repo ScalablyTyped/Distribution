@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SelectionLikelihoodInfo extends StObject
 object SelectionLikelihoodInfo {
   
-  @scala.inline
-  def high: typings.microsoftGraph.microsoftGraphStrings.high = "high".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.high]
+  inline def high: typings.microsoftGraph.microsoftGraphStrings.high = "high".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.high]
   
-  @scala.inline
-  def notSpecified: typings.microsoftGraph.microsoftGraphStrings.notSpecified = "notSpecified".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notSpecified]
+  inline def notSpecified: typings.microsoftGraph.microsoftGraphStrings.notSpecified = "notSpecified".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notSpecified]
 }

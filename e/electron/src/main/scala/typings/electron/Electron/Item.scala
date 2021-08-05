@@ -18,22 +18,17 @@ trait Item extends StObject {
 }
 object Item {
   
-  @scala.inline
-  def apply(file: js.Array[String] | String, icon: NativeImage_ | String): Item = {
+  inline def apply(file: js.Array[String] | String, icon: NativeImage_ | String): Item = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any])
     __obj.asInstanceOf[Item]
   }
   
-  @scala.inline
-  implicit class ItemMutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
+  extension [Self <: Item](x: Self) {
     
-    @scala.inline
-    def setFile(value: js.Array[String] | String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: js.Array[String] | String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileVarargs(value: String*): Self = StObject.set(x, "file", js.Array(value :_*))
+    inline def setFileVarargs(value: String*): Self = StObject.set(x, "file", js.Array(value :_*))
     
-    @scala.inline
-    def setIcon(value: NativeImage_ | String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: NativeImage_ | String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
   }
 }

@@ -33,8 +33,6 @@ object DOMPointReadOnly {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromPoint(): typings.std.DOMPointReadOnly = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPoint")().asInstanceOf[typings.std.DOMPointReadOnly]
-  @scala.inline
-  def fromPoint(other: DOMPointInit): typings.std.DOMPointReadOnly = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPoint")(other.asInstanceOf[js.Any]).asInstanceOf[typings.std.DOMPointReadOnly]
+  inline def fromPoint(): typings.std.DOMPointReadOnly = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPoint")().asInstanceOf[typings.std.DOMPointReadOnly]
+  inline def fromPoint(other: DOMPointInit): typings.std.DOMPointReadOnly = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPoint")(other.asInstanceOf[js.Any]).asInstanceOf[typings.std.DOMPointReadOnly]
 }

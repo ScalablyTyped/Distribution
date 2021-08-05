@@ -10,16 +10,13 @@ trait Force extends StObject {
 }
 object Force {
   
-  @scala.inline
-  def apply(force: Boolean): Force = {
+  inline def apply(force: Boolean): Force = {
     val __obj = js.Dynamic.literal(force = force.asInstanceOf[js.Any])
     __obj.asInstanceOf[Force]
   }
   
-  @scala.inline
-  implicit class ForceMutableBuilder[Self <: Force] (val x: Self) extends AnyVal {
+  extension [Self <: Force](x: Self) {
     
-    @scala.inline
-    def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
   }
 }

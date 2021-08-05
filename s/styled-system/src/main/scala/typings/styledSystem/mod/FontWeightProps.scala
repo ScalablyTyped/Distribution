@@ -17,25 +17,19 @@ trait FontWeightProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] exten
 }
 object FontWeightProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): FontWeightProps[ThemeType, TVal] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): FontWeightProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FontWeightProps[ThemeType, TVal]]
   }
   
-  @scala.inline
-  implicit class FontWeightPropsMutableBuilder[Self <: FontWeightProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (FontWeightProps[ThemeType, TVal])) extends AnyVal {
+  extension [Self <: FontWeightProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (FontWeightProps[ThemeType, TVal])) {
     
-    @scala.inline
-    def setFontWeight(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+    inline def setFontWeight(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontWeightNull: Self = StObject.set(x, "fontWeight", null)
+    inline def setFontWeightNull: Self = StObject.set(x, "fontWeight", null)
     
-    @scala.inline
-    def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
+    inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
-    @scala.inline
-    def setFontWeightVarargs(value: (TVal | Null)*): Self = StObject.set(x, "fontWeight", js.Array(value :_*))
+    inline def setFontWeightVarargs(value: (TVal | Null)*): Self = StObject.set(x, "fontWeight", js.Array(value :_*))
   }
 }

@@ -97,8 +97,7 @@ object SetAccessorSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(
+  inline def create(
     setKeyword: ISyntaxToken,
     propertyName: ISyntaxToken,
     parameterList: typings.typescriptServices.TypeScript.ParameterListSyntax,
@@ -106,6 +105,5 @@ object SetAccessorSyntax {
   ): typings.typescriptServices.TypeScript.SetAccessorSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(setKeyword.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], parameterList.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.SetAccessorSyntax]
   
   /* static member */
-  @scala.inline
-  def create1(propertyName: ISyntaxToken): typings.typescriptServices.TypeScript.SetAccessorSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(propertyName.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.SetAccessorSyntax]
+  inline def create1(propertyName: ISyntaxToken): typings.typescriptServices.TypeScript.SetAccessorSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(propertyName.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.SetAccessorSyntax]
 }

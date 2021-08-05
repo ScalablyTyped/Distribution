@@ -25,37 +25,27 @@ trait ScatterDatasetConfig
 }
 object ScatterDatasetConfig {
   
-  @scala.inline
-  def apply(): ScatterDatasetConfig = {
+  inline def apply(): ScatterDatasetConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScatterDatasetConfig]
   }
   
-  @scala.inline
-  implicit class ScatterDatasetConfigMutableBuilder[Self <: ScatterDatasetConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ScatterDatasetConfig](x: Self) {
     
-    @scala.inline
-    def setScatterShape(value: SQUARE | CIRCLE | TRIANGLE | CROSS | X): Self = StObject.set(x, "scatterShape", value.asInstanceOf[js.Any])
+    inline def setScatterShape(value: SQUARE | CIRCLE | TRIANGLE | CROSS | X): Self = StObject.set(x, "scatterShape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScatterShapeHoleColor(value: Color): Self = StObject.set(x, "scatterShapeHoleColor", value.asInstanceOf[js.Any])
+    inline def setScatterShapeHoleColor(value: Color): Self = StObject.set(x, "scatterShapeHoleColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScatterShapeHoleColorUndefined: Self = StObject.set(x, "scatterShapeHoleColor", js.undefined)
+    inline def setScatterShapeHoleColorUndefined: Self = StObject.set(x, "scatterShapeHoleColor", js.undefined)
     
-    @scala.inline
-    def setScatterShapeHoleRadius(value: Double): Self = StObject.set(x, "scatterShapeHoleRadius", value.asInstanceOf[js.Any])
+    inline def setScatterShapeHoleRadius(value: Double): Self = StObject.set(x, "scatterShapeHoleRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScatterShapeHoleRadiusUndefined: Self = StObject.set(x, "scatterShapeHoleRadius", js.undefined)
+    inline def setScatterShapeHoleRadiusUndefined: Self = StObject.set(x, "scatterShapeHoleRadius", js.undefined)
     
-    @scala.inline
-    def setScatterShapeSize(value: Double): Self = StObject.set(x, "scatterShapeSize", value.asInstanceOf[js.Any])
+    inline def setScatterShapeSize(value: Double): Self = StObject.set(x, "scatterShapeSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScatterShapeSizeUndefined: Self = StObject.set(x, "scatterShapeSize", js.undefined)
+    inline def setScatterShapeSizeUndefined: Self = StObject.set(x, "scatterShapeSize", js.undefined)
     
-    @scala.inline
-    def setScatterShapeUndefined: Self = StObject.set(x, "scatterShape", js.undefined)
+    inline def setScatterShapeUndefined: Self = StObject.set(x, "scatterShape", js.undefined)
   }
 }

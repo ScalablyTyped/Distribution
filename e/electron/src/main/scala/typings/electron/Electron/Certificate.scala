@@ -59,8 +59,7 @@ trait Certificate extends StObject {
 }
 object Certificate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     data: String,
     fingerprint: String,
     issuer: CertificatePrincipal,
@@ -76,37 +75,26 @@ object Certificate {
     __obj.asInstanceOf[Certificate]
   }
   
-  @scala.inline
-  implicit class CertificateMutableBuilder[Self <: Certificate] (val x: Self) extends AnyVal {
+  extension [Self <: Certificate](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+    inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuer(value: CertificatePrincipal): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+    inline def setIssuer(value: CertificatePrincipal): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuerCert(value: Certificate): Self = StObject.set(x, "issuerCert", value.asInstanceOf[js.Any])
+    inline def setIssuerCert(value: Certificate): Self = StObject.set(x, "issuerCert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuerName(value: String): Self = StObject.set(x, "issuerName", value.asInstanceOf[js.Any])
+    inline def setIssuerName(value: String): Self = StObject.set(x, "issuerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
+    inline def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubject(value: CertificatePrincipal): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: CertificatePrincipal): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectName(value: String): Self = StObject.set(x, "subjectName", value.asInstanceOf[js.Any])
+    inline def setSubjectName(value: String): Self = StObject.set(x, "subjectName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidExpiry(value: Double): Self = StObject.set(x, "validExpiry", value.asInstanceOf[js.Any])
+    inline def setValidExpiry(value: Double): Self = StObject.set(x, "validExpiry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidStart(value: Double): Self = StObject.set(x, "validStart", value.asInstanceOf[js.Any])
+    inline def setValidStart(value: Double): Self = StObject.set(x, "validStart", value.asInstanceOf[js.Any])
   }
 }

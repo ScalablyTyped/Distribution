@@ -13,8 +13,7 @@ object segmentedControlStyleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(theme: Theme): SegmentControlStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[SegmentControlStyle]
+  inline def default(theme: Theme): SegmentControlStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[SegmentControlStyle]
   
   trait SegmentControlStyle extends StObject {
     
@@ -30,8 +29,7 @@ object segmentedControlStyleMod {
   }
   object SegmentControlStyle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       item: ViewStyle,
       itemLeftRadius: ViewStyle,
       itemRightRadius: ViewStyle,
@@ -42,23 +40,17 @@ object segmentedControlStyleMod {
       __obj.asInstanceOf[SegmentControlStyle]
     }
     
-    @scala.inline
-    implicit class SegmentControlStyleMutableBuilder[Self <: SegmentControlStyle] (val x: Self) extends AnyVal {
+    extension [Self <: SegmentControlStyle](x: Self) {
       
-      @scala.inline
-      def setItem(value: ViewStyle): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: ViewStyle): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemLeftRadius(value: ViewStyle): Self = StObject.set(x, "itemLeftRadius", value.asInstanceOf[js.Any])
+      inline def setItemLeftRadius(value: ViewStyle): Self = StObject.set(x, "itemLeftRadius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemRightRadius(value: ViewStyle): Self = StObject.set(x, "itemRightRadius", value.asInstanceOf[js.Any])
+      inline def setItemRightRadius(value: ViewStyle): Self = StObject.set(x, "itemRightRadius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemText(value: TextStyle): Self = StObject.set(x, "itemText", value.asInstanceOf[js.Any])
+      inline def setItemText(value: TextStyle): Self = StObject.set(x, "itemText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegment(value: ViewStyle): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
+      inline def setSegment(value: ViewStyle): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
     }
   }
 }

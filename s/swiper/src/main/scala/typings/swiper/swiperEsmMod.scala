@@ -258,8 +258,7 @@ object swiperEsmMod {
     /**
       * Installs modules on Swiper in runtime.
       */
-    @scala.inline
-    def use(modules: js.Array[SwiperModule]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(modules.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def use(modules: js.Array[SwiperModule]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(modules.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("swiper/js/swiper.esm", "Virtual")

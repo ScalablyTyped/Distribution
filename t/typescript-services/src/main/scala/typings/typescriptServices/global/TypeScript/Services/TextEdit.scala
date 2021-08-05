@@ -27,14 +27,11 @@ object TextEdit {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def createDelete(minChar: Double, limChar: Double): typings.typescriptServices.TypeScript.Services.TextEdit = (^.asInstanceOf[js.Dynamic].applyDynamic("createDelete")(minChar.asInstanceOf[js.Any], limChar.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.Services.TextEdit]
+  inline def createDelete(minChar: Double, limChar: Double): typings.typescriptServices.TypeScript.Services.TextEdit = (^.asInstanceOf[js.Dynamic].applyDynamic("createDelete")(minChar.asInstanceOf[js.Any], limChar.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.Services.TextEdit]
   
   /* static member */
-  @scala.inline
-  def createInsert(pos: Double, text: String): typings.typescriptServices.TypeScript.Services.TextEdit = (^.asInstanceOf[js.Dynamic].applyDynamic("createInsert")(pos.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.Services.TextEdit]
+  inline def createInsert(pos: Double, text: String): typings.typescriptServices.TypeScript.Services.TextEdit = (^.asInstanceOf[js.Dynamic].applyDynamic("createInsert")(pos.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.Services.TextEdit]
   
   /* static member */
-  @scala.inline
-  def createReplace(minChar: Double, limChar: Double, text: String): typings.typescriptServices.TypeScript.Services.TextEdit = (^.asInstanceOf[js.Dynamic].applyDynamic("createReplace")(minChar.asInstanceOf[js.Any], limChar.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.Services.TextEdit]
+  inline def createReplace(minChar: Double, limChar: Double, text: String): typings.typescriptServices.TypeScript.Services.TextEdit = (^.asInstanceOf[js.Dynamic].applyDynamic("createReplace")(minChar.asInstanceOf[js.Any], limChar.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.Services.TextEdit]
 }

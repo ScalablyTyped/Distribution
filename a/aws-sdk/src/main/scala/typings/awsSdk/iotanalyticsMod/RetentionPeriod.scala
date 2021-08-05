@@ -18,25 +18,19 @@ trait RetentionPeriod extends StObject {
 }
 object RetentionPeriod {
   
-  @scala.inline
-  def apply(): RetentionPeriod = {
+  inline def apply(): RetentionPeriod = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RetentionPeriod]
   }
   
-  @scala.inline
-  implicit class RetentionPeriodMutableBuilder[Self <: RetentionPeriod] (val x: Self) extends AnyVal {
+  extension [Self <: RetentionPeriod](x: Self) {
     
-    @scala.inline
-    def setNumberOfDays(value: RetentionPeriodInDays): Self = StObject.set(x, "numberOfDays", value.asInstanceOf[js.Any])
+    inline def setNumberOfDays(value: RetentionPeriodInDays): Self = StObject.set(x, "numberOfDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfDaysUndefined: Self = StObject.set(x, "numberOfDays", js.undefined)
+    inline def setNumberOfDaysUndefined: Self = StObject.set(x, "numberOfDays", js.undefined)
     
-    @scala.inline
-    def setUnlimited(value: UnlimitedRetentionPeriod): Self = StObject.set(x, "unlimited", value.asInstanceOf[js.Any])
+    inline def setUnlimited(value: UnlimitedRetentionPeriod): Self = StObject.set(x, "unlimited", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnlimitedUndefined: Self = StObject.set(x, "unlimited", js.undefined)
+    inline def setUnlimitedUndefined: Self = StObject.set(x, "unlimited", js.undefined)
   }
 }

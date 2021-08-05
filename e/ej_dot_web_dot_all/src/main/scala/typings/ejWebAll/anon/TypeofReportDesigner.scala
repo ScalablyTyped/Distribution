@@ -15,19 +15,15 @@ trait TypeofReportDesigner extends StObject {
 }
 object TypeofReportDesigner {
   
-  @scala.inline
-  def apply(Locale: js.Any, fn: ReportDesigner): TypeofReportDesigner = {
+  inline def apply(Locale: js.Any, fn: ReportDesigner): TypeofReportDesigner = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofReportDesigner]
   }
   
-  @scala.inline
-  implicit class TypeofReportDesignerMutableBuilder[Self <: TypeofReportDesigner] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofReportDesigner](x: Self) {
     
-    @scala.inline
-    def setFn(value: ReportDesigner): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: ReportDesigner): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

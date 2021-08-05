@@ -28,34 +28,25 @@ trait SchemaListUserAssetsResponse extends StObject {
 }
 object SchemaListUserAssetsResponse {
   
-  @scala.inline
-  def apply(): SchemaListUserAssetsResponse = {
+  inline def apply(): SchemaListUserAssetsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListUserAssetsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListUserAssetsResponseMutableBuilder[Self <: SchemaListUserAssetsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListUserAssetsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
+    inline def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalSizeUndefined: Self = StObject.set(x, "totalSize", js.undefined)
+    inline def setTotalSizeUndefined: Self = StObject.set(x, "totalSize", js.undefined)
     
-    @scala.inline
-    def setUserAssets(value: js.Array[SchemaUserAsset]): Self = StObject.set(x, "userAssets", value.asInstanceOf[js.Any])
+    inline def setUserAssets(value: js.Array[SchemaUserAsset]): Self = StObject.set(x, "userAssets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserAssetsUndefined: Self = StObject.set(x, "userAssets", js.undefined)
+    inline def setUserAssetsUndefined: Self = StObject.set(x, "userAssets", js.undefined)
     
-    @scala.inline
-    def setUserAssetsVarargs(value: SchemaUserAsset*): Self = StObject.set(x, "userAssets", js.Array(value :_*))
+    inline def setUserAssetsVarargs(value: SchemaUserAsset*): Self = StObject.set(x, "userAssets", js.Array(value :_*))
   }
 }

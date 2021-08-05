@@ -33,8 +33,7 @@ trait PrintTemplateExportOptions
 }
 object PrintTemplateExportOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -43,25 +42,18 @@ object PrintTemplateExportOptions {
     __obj.asInstanceOf[PrintTemplateExportOptions]
   }
   
-  @scala.inline
-  implicit class PrintTemplateExportOptionsMutableBuilder[Self <: PrintTemplateExportOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PrintTemplateExportOptions](x: Self) {
     
-    @scala.inline
-    def setDpi(value: Double): Self = StObject.set(x, "dpi", value.asInstanceOf[js.Any])
+    inline def setDpi(value: Double): Self = StObject.set(x, "dpi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDpiUndefined: Self = StObject.set(x, "dpi", js.undefined)
+    inline def setDpiUndefined: Self = StObject.set(x, "dpi", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

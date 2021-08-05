@@ -23,31 +23,23 @@ trait EsamSettings extends StObject {
 }
 object EsamSettings {
   
-  @scala.inline
-  def apply(): EsamSettings = {
+  inline def apply(): EsamSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EsamSettings]
   }
   
-  @scala.inline
-  implicit class EsamSettingsMutableBuilder[Self <: EsamSettings] (val x: Self) extends AnyVal {
+  extension [Self <: EsamSettings](x: Self) {
     
-    @scala.inline
-    def setManifestConfirmConditionNotification(value: EsamManifestConfirmConditionNotification): Self = StObject.set(x, "ManifestConfirmConditionNotification", value.asInstanceOf[js.Any])
+    inline def setManifestConfirmConditionNotification(value: EsamManifestConfirmConditionNotification): Self = StObject.set(x, "ManifestConfirmConditionNotification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManifestConfirmConditionNotificationUndefined: Self = StObject.set(x, "ManifestConfirmConditionNotification", js.undefined)
+    inline def setManifestConfirmConditionNotificationUndefined: Self = StObject.set(x, "ManifestConfirmConditionNotification", js.undefined)
     
-    @scala.inline
-    def setResponseSignalPreroll(value: integerMin0Max30000): Self = StObject.set(x, "ResponseSignalPreroll", value.asInstanceOf[js.Any])
+    inline def setResponseSignalPreroll(value: integerMin0Max30000): Self = StObject.set(x, "ResponseSignalPreroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseSignalPrerollUndefined: Self = StObject.set(x, "ResponseSignalPreroll", js.undefined)
+    inline def setResponseSignalPrerollUndefined: Self = StObject.set(x, "ResponseSignalPreroll", js.undefined)
     
-    @scala.inline
-    def setSignalProcessingNotification(value: EsamSignalProcessingNotification): Self = StObject.set(x, "SignalProcessingNotification", value.asInstanceOf[js.Any])
+    inline def setSignalProcessingNotification(value: EsamSignalProcessingNotification): Self = StObject.set(x, "SignalProcessingNotification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalProcessingNotificationUndefined: Self = StObject.set(x, "SignalProcessingNotification", js.undefined)
+    inline def setSignalProcessingNotificationUndefined: Self = StObject.set(x, "SignalProcessingNotification", js.undefined)
   }
 }

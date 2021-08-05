@@ -125,157 +125,107 @@ trait IDatePicker
 }
 object IDatePicker {
   
-  @scala.inline
-  def apply(): IDatePicker = {
+  inline def apply(): IDatePicker = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDatePicker]
   }
   
-  @scala.inline
-  implicit class IDatePickerMutableBuilder[Self <: IDatePicker] (val x: Self) extends AnyVal {
+  extension [Self <: IDatePicker](x: Self) {
     
-    @scala.inline
-    def setDayText(value: java.lang.String): Self = StObject.set(x, "dayText", value.asInstanceOf[js.Any])
+    inline def setDayText(value: java.lang.String): Self = StObject.set(x, "dayText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayTextUndefined: Self = StObject.set(x, "dayText", js.undefined)
+    inline def setDayTextUndefined: Self = StObject.set(x, "dayText", js.undefined)
     
-    @scala.inline
-    def setGetDayText(value: () => java.lang.String): Self = StObject.set(x, "getDayText", js.Any.fromFunction0(value))
+    inline def setGetDayText(value: () => java.lang.String): Self = StObject.set(x, "getDayText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDayTextUndefined: Self = StObject.set(x, "getDayText", js.undefined)
+    inline def setGetDayTextUndefined: Self = StObject.set(x, "getDayText", js.undefined)
     
-    @scala.inline
-    def setGetMonthText(value: () => java.lang.String): Self = StObject.set(x, "getMonthText", js.Any.fromFunction0(value))
+    inline def setGetMonthText(value: () => java.lang.String): Self = StObject.set(x, "getMonthText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMonthTextUndefined: Self = StObject.set(x, "getMonthText", js.undefined)
+    inline def setGetMonthTextUndefined: Self = StObject.set(x, "getMonthText", js.undefined)
     
-    @scala.inline
-    def setGetSlotOrder(value: () => Array): Self = StObject.set(x, "getSlotOrder", js.Any.fromFunction0(value))
+    inline def setGetSlotOrder(value: () => Array): Self = StObject.set(x, "getSlotOrder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSlotOrderUndefined: Self = StObject.set(x, "getSlotOrder", js.undefined)
+    inline def setGetSlotOrderUndefined: Self = StObject.set(x, "getSlotOrder", js.undefined)
     
-    @scala.inline
-    def setGetYearFrom(value: () => Double): Self = StObject.set(x, "getYearFrom", js.Any.fromFunction0(value))
+    inline def setGetYearFrom(value: () => Double): Self = StObject.set(x, "getYearFrom", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetYearFromUndefined: Self = StObject.set(x, "getYearFrom", js.undefined)
+    inline def setGetYearFromUndefined: Self = StObject.set(x, "getYearFrom", js.undefined)
     
-    @scala.inline
-    def setGetYearText(value: () => java.lang.String): Self = StObject.set(x, "getYearText", js.Any.fromFunction0(value))
+    inline def setGetYearText(value: () => java.lang.String): Self = StObject.set(x, "getYearText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetYearTextUndefined: Self = StObject.set(x, "getYearText", js.undefined)
+    inline def setGetYearTextUndefined: Self = StObject.set(x, "getYearText", js.undefined)
     
-    @scala.inline
-    def setGetYearTo(value: () => Double): Self = StObject.set(x, "getYearTo", js.Any.fromFunction0(value))
+    inline def setGetYearTo(value: () => Double): Self = StObject.set(x, "getYearTo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetYearToUndefined: Self = StObject.set(x, "getYearTo", js.undefined)
+    inline def setGetYearToUndefined: Self = StObject.set(x, "getYearTo", js.undefined)
     
-    @scala.inline
-    def setMonthText(value: java.lang.String): Self = StObject.set(x, "monthText", value.asInstanceOf[js.Any])
+    inline def setMonthText(value: java.lang.String): Self = StObject.set(x, "monthText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonthTextUndefined: Self = StObject.set(x, "monthText", js.undefined)
+    inline def setMonthTextUndefined: Self = StObject.set(x, "monthText", js.undefined)
     
-    @scala.inline
-    def setSetDayText(value: /* dayText */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setDayText", js.Any.fromFunction1(value))
+    inline def setSetDayText(value: /* dayText */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setDayText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDayTextUndefined: Self = StObject.set(x, "setDayText", js.undefined)
+    inline def setSetDayTextUndefined: Self = StObject.set(x, "setDayText", js.undefined)
     
-    @scala.inline
-    def setSetMonthText(value: /* monthText */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setMonthText", js.Any.fromFunction1(value))
+    inline def setSetMonthText(value: /* monthText */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setMonthText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMonthTextUndefined: Self = StObject.set(x, "setMonthText", js.undefined)
+    inline def setSetMonthTextUndefined: Self = StObject.set(x, "setMonthText", js.undefined)
     
-    @scala.inline
-    def setSetSlotOrder(value: /* slotOrder */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setSlotOrder", js.Any.fromFunction1(value))
+    inline def setSetSlotOrder(value: /* slotOrder */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setSlotOrder", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSlotOrderUndefined: Self = StObject.set(x, "setSlotOrder", js.undefined)
+    inline def setSetSlotOrderUndefined: Self = StObject.set(x, "setSlotOrder", js.undefined)
     
-    @scala.inline
-    def setSetValue(value: (/* value */ js.UndefOr[js.Any], /* animated */ js.UndefOr[js.Any]) => IPicker): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
+    inline def setSetValue(value: (/* value */ js.UndefOr[js.Any], /* animated */ js.UndefOr[js.Any]) => IPicker): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
+    inline def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
     
-    @scala.inline
-    def setSetYearFrom(value: /* yearFrom */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setYearFrom", js.Any.fromFunction1(value))
+    inline def setSetYearFrom(value: /* yearFrom */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setYearFrom", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetYearFromUndefined: Self = StObject.set(x, "setYearFrom", js.undefined)
+    inline def setSetYearFromUndefined: Self = StObject.set(x, "setYearFrom", js.undefined)
     
-    @scala.inline
-    def setSetYearText(value: /* yearText */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setYearText", js.Any.fromFunction1(value))
+    inline def setSetYearText(value: /* yearText */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setYearText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetYearTextUndefined: Self = StObject.set(x, "setYearText", js.undefined)
+    inline def setSetYearTextUndefined: Self = StObject.set(x, "setYearText", js.undefined)
     
-    @scala.inline
-    def setSetYearTo(value: /* yearTo */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setYearTo", js.Any.fromFunction1(value))
+    inline def setSetYearTo(value: /* yearTo */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setYearTo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetYearToUndefined: Self = StObject.set(x, "setYearTo", js.undefined)
+    inline def setSetYearToUndefined: Self = StObject.set(x, "setYearTo", js.undefined)
     
-    @scala.inline
-    def setSlotOrder(value: Array): Self = StObject.set(x, "slotOrder", value.asInstanceOf[js.Any])
+    inline def setSlotOrder(value: Array): Self = StObject.set(x, "slotOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlotOrderUndefined: Self = StObject.set(x, "slotOrder", js.undefined)
+    inline def setSlotOrderUndefined: Self = StObject.set(x, "slotOrder", js.undefined)
     
-    @scala.inline
-    def setUpdateDayText(value: (/* newDayText */ js.UndefOr[js.Any], /* oldDayText */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "updateDayText", js.Any.fromFunction2(value))
+    inline def setUpdateDayText(value: (/* newDayText */ js.UndefOr[js.Any], /* oldDayText */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "updateDayText", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUpdateDayTextUndefined: Self = StObject.set(x, "updateDayText", js.undefined)
+    inline def setUpdateDayTextUndefined: Self = StObject.set(x, "updateDayText", js.undefined)
     
-    @scala.inline
-    def setUpdateMonthText(value: (/* newMonthText */ js.UndefOr[js.Any], /* oldMonthText */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "updateMonthText", js.Any.fromFunction2(value))
+    inline def setUpdateMonthText(value: (/* newMonthText */ js.UndefOr[js.Any], /* oldMonthText */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "updateMonthText", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUpdateMonthTextUndefined: Self = StObject.set(x, "updateMonthText", js.undefined)
+    inline def setUpdateMonthTextUndefined: Self = StObject.set(x, "updateMonthText", js.undefined)
     
-    @scala.inline
-    def setUpdateYearFrom(value: () => Unit): Self = StObject.set(x, "updateYearFrom", js.Any.fromFunction0(value))
+    inline def setUpdateYearFrom(value: () => Unit): Self = StObject.set(x, "updateYearFrom", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdateYearFromUndefined: Self = StObject.set(x, "updateYearFrom", js.undefined)
+    inline def setUpdateYearFromUndefined: Self = StObject.set(x, "updateYearFrom", js.undefined)
     
-    @scala.inline
-    def setUpdateYearText(value: /* yearText */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "updateYearText", js.Any.fromFunction1(value))
+    inline def setUpdateYearText(value: /* yearText */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "updateYearText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdateYearTextUndefined: Self = StObject.set(x, "updateYearText", js.undefined)
+    inline def setUpdateYearTextUndefined: Self = StObject.set(x, "updateYearText", js.undefined)
     
-    @scala.inline
-    def setUpdateYearTo(value: () => Unit): Self = StObject.set(x, "updateYearTo", js.Any.fromFunction0(value))
+    inline def setUpdateYearTo(value: () => Unit): Self = StObject.set(x, "updateYearTo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdateYearToUndefined: Self = StObject.set(x, "updateYearTo", js.undefined)
+    inline def setUpdateYearToUndefined: Self = StObject.set(x, "updateYearTo", js.undefined)
     
-    @scala.inline
-    def setYearFrom(value: Double): Self = StObject.set(x, "yearFrom", value.asInstanceOf[js.Any])
+    inline def setYearFrom(value: Double): Self = StObject.set(x, "yearFrom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYearFromUndefined: Self = StObject.set(x, "yearFrom", js.undefined)
+    inline def setYearFromUndefined: Self = StObject.set(x, "yearFrom", js.undefined)
     
-    @scala.inline
-    def setYearText(value: java.lang.String): Self = StObject.set(x, "yearText", value.asInstanceOf[js.Any])
+    inline def setYearText(value: java.lang.String): Self = StObject.set(x, "yearText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYearTextUndefined: Self = StObject.set(x, "yearText", js.undefined)
+    inline def setYearTextUndefined: Self = StObject.set(x, "yearText", js.undefined)
     
-    @scala.inline
-    def setYearTo(value: Double): Self = StObject.set(x, "yearTo", value.asInstanceOf[js.Any])
+    inline def setYearTo(value: Double): Self = StObject.set(x, "yearTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYearToUndefined: Self = StObject.set(x, "yearTo", js.undefined)
+    inline def setYearToUndefined: Self = StObject.set(x, "yearTo", js.undefined)
   }
 }

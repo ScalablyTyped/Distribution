@@ -20,17 +20,14 @@ object typesPullRequestAlreadyClosedExceptionMod {
   }
   object PullRequestAlreadyClosedException {
     
-    @scala.inline
-    def apply(): PullRequestAlreadyClosedException = {
+    inline def apply(): PullRequestAlreadyClosedException = {
       val __obj = js.Dynamic.literal(name = "PullRequestAlreadyClosedException")
       __obj.asInstanceOf[PullRequestAlreadyClosedException]
     }
     
-    @scala.inline
-    implicit class PullRequestAlreadyClosedExceptionMutableBuilder[Self <: PullRequestAlreadyClosedException] (val x: Self) extends AnyVal {
+    extension [Self <: PullRequestAlreadyClosedException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.PullRequestAlreadyClosedException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

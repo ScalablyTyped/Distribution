@@ -14,8 +14,7 @@ object internalMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromTraversable[T](T: Traversable[T]): js.Function0[
+  inline def fromTraversable[T](T: Traversable[T]): js.Function0[
     Traversal[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<T, A> */ js.Any, 
       js.Any
@@ -26,8 +25,7 @@ object internalMod {
       js.Any
     ]
   ]]
-  @scala.inline
-  def fromTraversable[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](T: Traversable1[T]): js.Function0[
+  inline def fromTraversable[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](T: Traversable1[T]): js.Function0[
     Traversal[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<T, A> */ js.Any, 
       js.Any
@@ -38,8 +36,7 @@ object internalMod {
       js.Any
     ]
   ]]
-  @scala.inline
-  def fromTraversable[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](T: Traversable2[T]): js.Function0[
+  inline def fromTraversable[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](T: Traversable2[T]): js.Function0[
     Traversal[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<T, E, A> */ js.Any, 
       js.Any

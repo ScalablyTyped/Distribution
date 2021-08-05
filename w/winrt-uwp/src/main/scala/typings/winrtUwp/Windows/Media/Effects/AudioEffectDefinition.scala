@@ -16,19 +16,15 @@ trait AudioEffectDefinition extends StObject {
 }
 object AudioEffectDefinition {
   
-  @scala.inline
-  def apply(activatableClassId: String, properties: IPropertySet): AudioEffectDefinition = {
+  inline def apply(activatableClassId: String, properties: IPropertySet): AudioEffectDefinition = {
     val __obj = js.Dynamic.literal(activatableClassId = activatableClassId.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioEffectDefinition]
   }
   
-  @scala.inline
-  implicit class AudioEffectDefinitionMutableBuilder[Self <: AudioEffectDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: AudioEffectDefinition](x: Self) {
     
-    @scala.inline
-    def setActivatableClassId(value: String): Self = StObject.set(x, "activatableClassId", value.asInstanceOf[js.Any])
+    inline def setActivatableClassId(value: String): Self = StObject.set(x, "activatableClassId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: IPropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: IPropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
   }
 }

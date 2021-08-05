@@ -10,10 +10,8 @@ object colorizeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(str: String, color: String, `type`: ColorType): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any], color.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def default(str: String, color: Unit, `type`: ColorType): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any], color.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(str: String, color: String, `type`: ColorType): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any], color.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(str: String, color: Unit, `type`: ColorType): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any], color.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /* Rewritten from type alias, can be one of: 
     - typings.ink.inkStrings.foreground
@@ -22,10 +20,8 @@ object colorizeMod {
   trait ColorType extends StObject
   object ColorType {
     
-    @scala.inline
-    def background: typings.ink.inkStrings.background = "background".asInstanceOf[typings.ink.inkStrings.background]
+    inline def background: typings.ink.inkStrings.background = "background".asInstanceOf[typings.ink.inkStrings.background]
     
-    @scala.inline
-    def foreground: typings.ink.inkStrings.foreground = "foreground".asInstanceOf[typings.ink.inkStrings.foreground]
+    inline def foreground: typings.ink.inkStrings.foreground = "foreground".asInstanceOf[typings.ink.inkStrings.foreground]
   }
 }

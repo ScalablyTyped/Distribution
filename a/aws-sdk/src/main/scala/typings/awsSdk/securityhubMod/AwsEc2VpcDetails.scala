@@ -28,43 +28,31 @@ trait AwsEc2VpcDetails extends StObject {
 }
 object AwsEc2VpcDetails {
   
-  @scala.inline
-  def apply(): AwsEc2VpcDetails = {
+  inline def apply(): AwsEc2VpcDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsEc2VpcDetails]
   }
   
-  @scala.inline
-  implicit class AwsEc2VpcDetailsMutableBuilder[Self <: AwsEc2VpcDetails] (val x: Self) extends AnyVal {
+  extension [Self <: AwsEc2VpcDetails](x: Self) {
     
-    @scala.inline
-    def setCidrBlockAssociationSet(value: CidrBlockAssociationList): Self = StObject.set(x, "CidrBlockAssociationSet", value.asInstanceOf[js.Any])
+    inline def setCidrBlockAssociationSet(value: CidrBlockAssociationList): Self = StObject.set(x, "CidrBlockAssociationSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidrBlockAssociationSetUndefined: Self = StObject.set(x, "CidrBlockAssociationSet", js.undefined)
+    inline def setCidrBlockAssociationSetUndefined: Self = StObject.set(x, "CidrBlockAssociationSet", js.undefined)
     
-    @scala.inline
-    def setCidrBlockAssociationSetVarargs(value: CidrBlockAssociation*): Self = StObject.set(x, "CidrBlockAssociationSet", js.Array(value :_*))
+    inline def setCidrBlockAssociationSetVarargs(value: CidrBlockAssociation*): Self = StObject.set(x, "CidrBlockAssociationSet", js.Array(value :_*))
     
-    @scala.inline
-    def setDhcpOptionsId(value: NonEmptyString): Self = StObject.set(x, "DhcpOptionsId", value.asInstanceOf[js.Any])
+    inline def setDhcpOptionsId(value: NonEmptyString): Self = StObject.set(x, "DhcpOptionsId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDhcpOptionsIdUndefined: Self = StObject.set(x, "DhcpOptionsId", js.undefined)
+    inline def setDhcpOptionsIdUndefined: Self = StObject.set(x, "DhcpOptionsId", js.undefined)
     
-    @scala.inline
-    def setIpv6CidrBlockAssociationSet(value: Ipv6CidrBlockAssociationList): Self = StObject.set(x, "Ipv6CidrBlockAssociationSet", value.asInstanceOf[js.Any])
+    inline def setIpv6CidrBlockAssociationSet(value: Ipv6CidrBlockAssociationList): Self = StObject.set(x, "Ipv6CidrBlockAssociationSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpv6CidrBlockAssociationSetUndefined: Self = StObject.set(x, "Ipv6CidrBlockAssociationSet", js.undefined)
+    inline def setIpv6CidrBlockAssociationSetUndefined: Self = StObject.set(x, "Ipv6CidrBlockAssociationSet", js.undefined)
     
-    @scala.inline
-    def setIpv6CidrBlockAssociationSetVarargs(value: Ipv6CidrBlockAssociation*): Self = StObject.set(x, "Ipv6CidrBlockAssociationSet", js.Array(value :_*))
+    inline def setIpv6CidrBlockAssociationSetVarargs(value: Ipv6CidrBlockAssociation*): Self = StObject.set(x, "Ipv6CidrBlockAssociationSet", js.Array(value :_*))
     
-    @scala.inline
-    def setState(value: NonEmptyString): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: NonEmptyString): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

@@ -11,25 +11,19 @@ trait ITransactionList extends StObject {
 }
 object ITransactionList {
   
-  @scala.inline
-  def apply(): ITransactionList = {
+  inline def apply(): ITransactionList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITransactionList]
   }
   
-  @scala.inline
-  implicit class ITransactionListMutableBuilder[Self <: ITransactionList] (val x: Self) extends AnyVal {
+  extension [Self <: ITransactionList](x: Self) {
     
-    @scala.inline
-    def setTransactions(value: js.Array[ITransaction]): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
+    inline def setTransactions(value: js.Array[ITransaction]): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionsNull: Self = StObject.set(x, "transactions", null)
+    inline def setTransactionsNull: Self = StObject.set(x, "transactions", null)
     
-    @scala.inline
-    def setTransactionsUndefined: Self = StObject.set(x, "transactions", js.undefined)
+    inline def setTransactionsUndefined: Self = StObject.set(x, "transactions", js.undefined)
     
-    @scala.inline
-    def setTransactionsVarargs(value: ITransaction*): Self = StObject.set(x, "transactions", js.Array(value :_*))
+    inline def setTransactionsVarargs(value: ITransaction*): Self = StObject.set(x, "transactions", js.Array(value :_*))
   }
 }

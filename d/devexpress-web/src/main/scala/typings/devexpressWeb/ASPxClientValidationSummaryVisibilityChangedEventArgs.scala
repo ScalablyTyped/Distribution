@@ -18,16 +18,13 @@ trait ASPxClientValidationSummaryVisibilityChangedEventArgs
 }
 object ASPxClientValidationSummaryVisibilityChangedEventArgs {
   
-  @scala.inline
-  def apply(visible: Boolean): ASPxClientValidationSummaryVisibilityChangedEventArgs = {
+  inline def apply(visible: Boolean): ASPxClientValidationSummaryVisibilityChangedEventArgs = {
     val __obj = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientValidationSummaryVisibilityChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientValidationSummaryVisibilityChangedEventArgsMutableBuilder[Self <: ASPxClientValidationSummaryVisibilityChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientValidationSummaryVisibilityChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }
 }

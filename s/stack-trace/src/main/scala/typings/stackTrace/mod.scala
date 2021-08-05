@@ -11,13 +11,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def get(): js.Array[StackFrame] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Array[StackFrame]]
-  @scala.inline
-  def get(belowFn: js.Function0[Unit]): js.Array[StackFrame] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(belowFn.asInstanceOf[js.Any]).asInstanceOf[js.Array[StackFrame]]
+  inline def get(): js.Array[StackFrame] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Array[StackFrame]]
+  inline def get(belowFn: js.Function0[Unit]): js.Array[StackFrame] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(belowFn.asInstanceOf[js.Any]).asInstanceOf[js.Array[StackFrame]]
   
-  @scala.inline
-  def parse(err: Error): js.Array[StackFrame] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(err.asInstanceOf[js.Any]).asInstanceOf[js.Array[StackFrame]]
+  inline def parse(err: Error): js.Array[StackFrame] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(err.asInstanceOf[js.Any]).asInstanceOf[js.Array[StackFrame]]
   
   trait StackFrame extends StObject {
     
@@ -37,8 +34,7 @@ object mod {
   }
   object StackFrame {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getColumnNumber: () => Double,
       getFileName: () => String,
       getFunctionName: () => String,
@@ -51,29 +47,21 @@ object mod {
       __obj.asInstanceOf[StackFrame]
     }
     
-    @scala.inline
-    implicit class StackFrameMutableBuilder[Self <: StackFrame] (val x: Self) extends AnyVal {
+    extension [Self <: StackFrame](x: Self) {
       
-      @scala.inline
-      def setGetColumnNumber(value: () => Double): Self = StObject.set(x, "getColumnNumber", js.Any.fromFunction0(value))
+      inline def setGetColumnNumber(value: () => Double): Self = StObject.set(x, "getColumnNumber", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFileName(value: () => String): Self = StObject.set(x, "getFileName", js.Any.fromFunction0(value))
+      inline def setGetFileName(value: () => String): Self = StObject.set(x, "getFileName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFunctionName(value: () => String): Self = StObject.set(x, "getFunctionName", js.Any.fromFunction0(value))
+      inline def setGetFunctionName(value: () => String): Self = StObject.set(x, "getFunctionName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLineNumber(value: () => Double): Self = StObject.set(x, "getLineNumber", js.Any.fromFunction0(value))
+      inline def setGetLineNumber(value: () => Double): Self = StObject.set(x, "getLineNumber", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMethodName(value: () => String): Self = StObject.set(x, "getMethodName", js.Any.fromFunction0(value))
+      inline def setGetMethodName(value: () => String): Self = StObject.set(x, "getMethodName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTypeName(value: () => String): Self = StObject.set(x, "getTypeName", js.Any.fromFunction0(value))
+      inline def setGetTypeName(value: () => String): Self = StObject.set(x, "getTypeName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsNative(value: () => Boolean): Self = StObject.set(x, "isNative", js.Any.fromFunction0(value))
+      inline def setIsNative(value: () => Boolean): Self = StObject.set(x, "isNative", js.Any.fromFunction0(value))
     }
   }
 }

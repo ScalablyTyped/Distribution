@@ -14,16 +14,13 @@ trait PickImplonFixed extends StObject {
 }
 object PickImplonFixed {
   
-  @scala.inline
-  def apply(onFixed: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonFixed = {
+  inline def apply(onFixed: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonFixed = {
     val __obj = js.Dynamic.literal(onFixed = onFixed.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonFixed]
   }
   
-  @scala.inline
-  implicit class PickImplonFixedMutableBuilder[Self <: PickImplonFixed] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplonFixed](x: Self) {
     
-    @scala.inline
-    def setOnFixed(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onFixed", value.asInstanceOf[js.Any])
+    inline def setOnFixed(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onFixed", value.asInstanceOf[js.Any])
   }
 }

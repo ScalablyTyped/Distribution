@@ -11,22 +11,17 @@ trait DataSourceObjectReferences extends StObject {
 }
 object DataSourceObjectReferences {
   
-  @scala.inline
-  def apply(): DataSourceObjectReferences = {
+  inline def apply(): DataSourceObjectReferences = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSourceObjectReferences]
   }
   
-  @scala.inline
-  implicit class DataSourceObjectReferencesMutableBuilder[Self <: DataSourceObjectReferences] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceObjectReferences](x: Self) {
     
-    @scala.inline
-    def setReferences(value: js.Array[DataSourceObjectReference]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
+    inline def setReferences(value: js.Array[DataSourceObjectReference]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferencesUndefined: Self = StObject.set(x, "references", js.undefined)
+    inline def setReferencesUndefined: Self = StObject.set(x, "references", js.undefined)
     
-    @scala.inline
-    def setReferencesVarargs(value: DataSourceObjectReference*): Self = StObject.set(x, "references", js.Array(value :_*))
+    inline def setReferencesVarargs(value: DataSourceObjectReference*): Self = StObject.set(x, "references", js.Array(value :_*))
   }
 }

@@ -20,37 +20,27 @@ trait DatePickerAndroidOpenOptions extends StObject {
 }
 object DatePickerAndroidOpenOptions {
   
-  @scala.inline
-  def apply(): DatePickerAndroidOpenOptions = {
+  inline def apply(): DatePickerAndroidOpenOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DatePickerAndroidOpenOptions]
   }
   
-  @scala.inline
-  implicit class DatePickerAndroidOpenOptionsMutableBuilder[Self <: DatePickerAndroidOpenOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DatePickerAndroidOpenOptions](x: Self) {
     
-    @scala.inline
-    def setDate(value: Date | Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Date | Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    @scala.inline
-    def setMaxDate(value: Date | Double): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+    inline def setMaxDate(value: Date | Double): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
+    inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
     
-    @scala.inline
-    def setMinDate(value: Date | Double): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+    inline def setMinDate(value: Date | Double): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
+    inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
     
-    @scala.inline
-    def setMode(value: calendar | spinner | default): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: calendar | spinner | default): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

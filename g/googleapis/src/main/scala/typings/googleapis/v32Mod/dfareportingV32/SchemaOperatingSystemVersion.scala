@@ -44,49 +44,35 @@ trait SchemaOperatingSystemVersion extends StObject {
 }
 object SchemaOperatingSystemVersion {
   
-  @scala.inline
-  def apply(): SchemaOperatingSystemVersion = {
+  inline def apply(): SchemaOperatingSystemVersion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOperatingSystemVersion]
   }
   
-  @scala.inline
-  implicit class SchemaOperatingSystemVersionMutableBuilder[Self <: SchemaOperatingSystemVersion] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOperatingSystemVersion](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setMajorVersion(value: String): Self = StObject.set(x, "majorVersion", value.asInstanceOf[js.Any])
+    inline def setMajorVersion(value: String): Self = StObject.set(x, "majorVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMajorVersionUndefined: Self = StObject.set(x, "majorVersion", js.undefined)
+    inline def setMajorVersionUndefined: Self = StObject.set(x, "majorVersion", js.undefined)
     
-    @scala.inline
-    def setMinorVersion(value: String): Self = StObject.set(x, "minorVersion", value.asInstanceOf[js.Any])
+    inline def setMinorVersion(value: String): Self = StObject.set(x, "minorVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinorVersionUndefined: Self = StObject.set(x, "minorVersion", js.undefined)
+    inline def setMinorVersionUndefined: Self = StObject.set(x, "minorVersion", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOperatingSystem(value: SchemaOperatingSystem): Self = StObject.set(x, "operatingSystem", value.asInstanceOf[js.Any])
+    inline def setOperatingSystem(value: SchemaOperatingSystem): Self = StObject.set(x, "operatingSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatingSystemUndefined: Self = StObject.set(x, "operatingSystem", js.undefined)
+    inline def setOperatingSystemUndefined: Self = StObject.set(x, "operatingSystem", js.undefined)
   }
 }

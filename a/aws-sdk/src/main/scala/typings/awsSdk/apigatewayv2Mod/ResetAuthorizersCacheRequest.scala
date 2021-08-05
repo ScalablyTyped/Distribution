@@ -18,19 +18,15 @@ trait ResetAuthorizersCacheRequest extends StObject {
 }
 object ResetAuthorizersCacheRequest {
   
-  @scala.inline
-  def apply(ApiId: string, StageName: string): ResetAuthorizersCacheRequest = {
+  inline def apply(ApiId: string, StageName: string): ResetAuthorizersCacheRequest = {
     val __obj = js.Dynamic.literal(ApiId = ApiId.asInstanceOf[js.Any], StageName = StageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResetAuthorizersCacheRequest]
   }
   
-  @scala.inline
-  implicit class ResetAuthorizersCacheRequestMutableBuilder[Self <: ResetAuthorizersCacheRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ResetAuthorizersCacheRequest](x: Self) {
     
-    @scala.inline
-    def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
+    inline def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStageName(value: string): Self = StObject.set(x, "StageName", value.asInstanceOf[js.Any])
+    inline def setStageName(value: string): Self = StObject.set(x, "StageName", value.asInstanceOf[js.Any])
   }
 }

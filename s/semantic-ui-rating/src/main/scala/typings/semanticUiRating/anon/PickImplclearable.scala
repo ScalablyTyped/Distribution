@@ -12,16 +12,13 @@ trait PickImplclearable extends StObject {
 }
 object PickImplclearable {
   
-  @scala.inline
-  def apply(clearable: auto | Boolean): PickImplclearable = {
+  inline def apply(clearable: auto | Boolean): PickImplclearable = {
     val __obj = js.Dynamic.literal(clearable = clearable.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplclearable]
   }
   
-  @scala.inline
-  implicit class PickImplclearableMutableBuilder[Self <: PickImplclearable] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplclearable](x: Self) {
     
-    @scala.inline
-    def setClearable(value: auto | Boolean): Self = StObject.set(x, "clearable", value.asInstanceOf[js.Any])
+    inline def setClearable(value: auto | Boolean): Self = StObject.set(x, "clearable", value.asInstanceOf[js.Any])
   }
 }

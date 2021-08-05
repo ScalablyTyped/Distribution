@@ -10,16 +10,13 @@ trait Resolver_ extends StObject {
 }
 object Resolver_ {
   
-  @scala.inline
-  def apply(get: (Container, js.Any) => js.Any): Resolver_ = {
+  inline def apply(get: (Container, js.Any) => js.Any): Resolver_ = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get))
     __obj.asInstanceOf[Resolver_]
   }
   
-  @scala.inline
-  implicit class Resolver_MutableBuilder[Self <: Resolver_] (val x: Self) extends AnyVal {
+  extension [Self <: Resolver_](x: Self) {
     
-    @scala.inline
-    def setGet(value: (Container, js.Any) => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+    inline def setGet(value: (Container, js.Any) => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
   }
 }

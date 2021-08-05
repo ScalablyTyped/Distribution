@@ -17,28 +17,21 @@ trait ListWorkflowTemplatesResponse extends StObject {
 }
 object ListWorkflowTemplatesResponse {
   
-  @scala.inline
-  def apply(): ListWorkflowTemplatesResponse = {
+  inline def apply(): ListWorkflowTemplatesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListWorkflowTemplatesResponse]
   }
   
-  @scala.inline
-  implicit class ListWorkflowTemplatesResponseMutableBuilder[Self <: ListWorkflowTemplatesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListWorkflowTemplatesResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setTemplates(value: js.Array[WorkflowTemplate]): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
+    inline def setTemplates(value: js.Array[WorkflowTemplate]): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplatesUndefined: Self = StObject.set(x, "templates", js.undefined)
+    inline def setTemplatesUndefined: Self = StObject.set(x, "templates", js.undefined)
     
-    @scala.inline
-    def setTemplatesVarargs(value: WorkflowTemplate*): Self = StObject.set(x, "templates", js.Array(value :_*))
+    inline def setTemplatesVarargs(value: WorkflowTemplate*): Self = StObject.set(x, "templates", js.Array(value :_*))
   }
 }

@@ -23,22 +23,17 @@ trait DecisionTaskTimedOutEventAttributes extends StObject {
 }
 object DecisionTaskTimedOutEventAttributes {
   
-  @scala.inline
-  def apply(scheduledEventId: EventId, startedEventId: EventId, timeoutType: DecisionTaskTimeoutType): DecisionTaskTimedOutEventAttributes = {
+  inline def apply(scheduledEventId: EventId, startedEventId: EventId, timeoutType: DecisionTaskTimeoutType): DecisionTaskTimedOutEventAttributes = {
     val __obj = js.Dynamic.literal(scheduledEventId = scheduledEventId.asInstanceOf[js.Any], startedEventId = startedEventId.asInstanceOf[js.Any], timeoutType = timeoutType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecisionTaskTimedOutEventAttributes]
   }
   
-  @scala.inline
-  implicit class DecisionTaskTimedOutEventAttributesMutableBuilder[Self <: DecisionTaskTimedOutEventAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: DecisionTaskTimedOutEventAttributes](x: Self) {
     
-    @scala.inline
-    def setScheduledEventId(value: EventId): Self = StObject.set(x, "scheduledEventId", value.asInstanceOf[js.Any])
+    inline def setScheduledEventId(value: EventId): Self = StObject.set(x, "scheduledEventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartedEventId(value: EventId): Self = StObject.set(x, "startedEventId", value.asInstanceOf[js.Any])
+    inline def setStartedEventId(value: EventId): Self = StObject.set(x, "startedEventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutType(value: DecisionTaskTimeoutType): Self = StObject.set(x, "timeoutType", value.asInstanceOf[js.Any])
+    inline def setTimeoutType(value: DecisionTaskTimeoutType): Self = StObject.set(x, "timeoutType", value.asInstanceOf[js.Any])
   }
 }

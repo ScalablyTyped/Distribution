@@ -15,17 +15,14 @@ object anon {
   }
   object SSL {
     
-    @scala.inline
-    def apply(SSL: Instantiable1[/* options */ js.UndefOr[ForeverAgentOptions], ForeverAgentSSL]): SSL = {
+    inline def apply(SSL: Instantiable1[/* options */ js.UndefOr[ForeverAgentOptions], ForeverAgentSSL]): SSL = {
       val __obj = js.Dynamic.literal(SSL = SSL.asInstanceOf[js.Any])
       __obj.asInstanceOf[SSL]
     }
     
-    @scala.inline
-    implicit class SSLMutableBuilder[Self <: SSL] (val x: Self) extends AnyVal {
+    extension [Self <: SSL](x: Self) {
       
-      @scala.inline
-      def setSSL(value: Instantiable1[/* options */ js.UndefOr[ForeverAgentOptions], ForeverAgentSSL]): Self = StObject.set(x, "SSL", value.asInstanceOf[js.Any])
+      inline def setSSL(value: Instantiable1[/* options */ js.UndefOr[ForeverAgentOptions], ForeverAgentSSL]): Self = StObject.set(x, "SSL", value.asInstanceOf[js.Any])
     }
   }
   
@@ -36,17 +33,14 @@ object anon {
   }
   object TypeofForeverAgent {
     
-    @scala.inline
-    def apply(defaultMinSockets: Double): TypeofForeverAgent = {
+    inline def apply(defaultMinSockets: Double): TypeofForeverAgent = {
       val __obj = js.Dynamic.literal(defaultMinSockets = defaultMinSockets.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeofForeverAgent]
     }
     
-    @scala.inline
-    implicit class TypeofForeverAgentMutableBuilder[Self <: TypeofForeverAgent] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofForeverAgent](x: Self) {
       
-      @scala.inline
-      def setDefaultMinSockets(value: Double): Self = StObject.set(x, "defaultMinSockets", value.asInstanceOf[js.Any])
+      inline def setDefaultMinSockets(value: Double): Self = StObject.set(x, "defaultMinSockets", value.asInstanceOf[js.Any])
     }
   }
 }

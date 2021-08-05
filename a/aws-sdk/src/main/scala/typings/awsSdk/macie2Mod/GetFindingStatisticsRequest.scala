@@ -28,34 +28,25 @@ trait GetFindingStatisticsRequest extends StObject {
 }
 object GetFindingStatisticsRequest {
   
-  @scala.inline
-  def apply(groupBy: GroupBy): GetFindingStatisticsRequest = {
+  inline def apply(groupBy: GroupBy): GetFindingStatisticsRequest = {
     val __obj = js.Dynamic.literal(groupBy = groupBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFindingStatisticsRequest]
   }
   
-  @scala.inline
-  implicit class GetFindingStatisticsRequestMutableBuilder[Self <: GetFindingStatisticsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetFindingStatisticsRequest](x: Self) {
     
-    @scala.inline
-    def setFindingCriteria(value: FindingCriteria): Self = StObject.set(x, "findingCriteria", value.asInstanceOf[js.Any])
+    inline def setFindingCriteria(value: FindingCriteria): Self = StObject.set(x, "findingCriteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingCriteriaUndefined: Self = StObject.set(x, "findingCriteria", js.undefined)
+    inline def setFindingCriteriaUndefined: Self = StObject.set(x, "findingCriteria", js.undefined)
     
-    @scala.inline
-    def setGroupBy(value: GroupBy): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
+    inline def setGroupBy(value: GroupBy): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: integer): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: integer): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setSortCriteria(value: FindingStatisticsSortCriteria): Self = StObject.set(x, "sortCriteria", value.asInstanceOf[js.Any])
+    inline def setSortCriteria(value: FindingStatisticsSortCriteria): Self = StObject.set(x, "sortCriteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortCriteriaUndefined: Self = StObject.set(x, "sortCriteria", js.undefined)
+    inline def setSortCriteriaUndefined: Self = StObject.set(x, "sortCriteria", js.undefined)
   }
 }

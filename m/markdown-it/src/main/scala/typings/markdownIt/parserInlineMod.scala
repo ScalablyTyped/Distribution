@@ -95,8 +95,7 @@ object parserInlineMod {
   }
   object ParserInline {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       State: Instantiable4[
           /* src */ String, 
           /* md */ MarkdownIt, 
@@ -114,23 +113,17 @@ object parserInlineMod {
       __obj.asInstanceOf[ParserInline]
     }
     
-    @scala.inline
-    implicit class ParserInlineMutableBuilder[Self <: ParserInline] (val x: Self) extends AnyVal {
+    extension [Self <: ParserInline](x: Self) {
       
-      @scala.inline
-      def setParse(value: (String, MarkdownIt, js.Any, js.Array[typings.markdownIt.tokenMod.^]) => Unit): Self = StObject.set(x, "parse", js.Any.fromFunction4(value))
+      inline def setParse(value: (String, MarkdownIt, js.Any, js.Array[typings.markdownIt.tokenMod.^]) => Unit): Self = StObject.set(x, "parse", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setRuler(value: typings.markdownIt.rulerMod.^[RuleInline]): Self = StObject.set(x, "ruler", value.asInstanceOf[js.Any])
+      inline def setRuler(value: typings.markdownIt.rulerMod.^[RuleInline]): Self = StObject.set(x, "ruler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuler2(value: typings.markdownIt.rulerMod.^[RuleInline2]): Self = StObject.set(x, "ruler2", value.asInstanceOf[js.Any])
+      inline def setRuler2(value: typings.markdownIt.rulerMod.^[RuleInline2]): Self = StObject.set(x, "ruler2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipToken(value: typings.markdownIt.stateInlineMod.^ => Unit): Self = StObject.set(x, "skipToken", js.Any.fromFunction1(value))
+      inline def setSkipToken(value: typings.markdownIt.stateInlineMod.^ => Unit): Self = StObject.set(x, "skipToken", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setState(
+      inline def setState(
         value: Instantiable4[
               /* src */ String, 
               /* md */ MarkdownIt, 
@@ -140,8 +133,7 @@ object parserInlineMod {
             ]
       ): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenize(value: typings.markdownIt.stateInlineMod.^ => Unit): Self = StObject.set(x, "tokenize", js.Any.fromFunction1(value))
+      inline def setTokenize(value: typings.markdownIt.stateInlineMod.^ => Unit): Self = StObject.set(x, "tokenize", js.Any.fromFunction1(value))
     }
   }
   

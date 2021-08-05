@@ -23,31 +23,23 @@ trait GetBucketResult extends StObject {
 }
 object GetBucketResult {
   
-  @scala.inline
-  def apply(): GetBucketResult = {
+  inline def apply(): GetBucketResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetBucketResult]
   }
   
-  @scala.inline
-  implicit class GetBucketResultMutableBuilder[Self <: GetBucketResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetBucketResult](x: Self) {
     
-    @scala.inline
-    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketUndefined: Self = StObject.set(x, "Bucket", js.undefined)
+    inline def setBucketUndefined: Self = StObject.set(x, "Bucket", js.undefined)
     
-    @scala.inline
-    def setCreationDate(value: CreationDate): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: CreationDate): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
-    @scala.inline
-    def setPublicAccessBlockEnabled(value: PublicAccessBlockEnabled): Self = StObject.set(x, "PublicAccessBlockEnabled", value.asInstanceOf[js.Any])
+    inline def setPublicAccessBlockEnabled(value: PublicAccessBlockEnabled): Self = StObject.set(x, "PublicAccessBlockEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicAccessBlockEnabledUndefined: Self = StObject.set(x, "PublicAccessBlockEnabled", js.undefined)
+    inline def setPublicAccessBlockEnabledUndefined: Self = StObject.set(x, "PublicAccessBlockEnabled", js.undefined)
   }
 }

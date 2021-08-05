@@ -13,16 +13,13 @@ trait StopJobRunResponse extends StObject {
 }
 object StopJobRunResponse {
   
-  @scala.inline
-  def apply(RunId: JobRunId): StopJobRunResponse = {
+  inline def apply(RunId: JobRunId): StopJobRunResponse = {
     val __obj = js.Dynamic.literal(RunId = RunId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopJobRunResponse]
   }
   
-  @scala.inline
-  implicit class StopJobRunResponseMutableBuilder[Self <: StopJobRunResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StopJobRunResponse](x: Self) {
     
-    @scala.inline
-    def setRunId(value: JobRunId): Self = StObject.set(x, "RunId", value.asInstanceOf[js.Any])
+    inline def setRunId(value: JobRunId): Self = StObject.set(x, "RunId", value.asInstanceOf[js.Any])
   }
 }

@@ -116,21 +116,16 @@ object gameliftFleetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Fleet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Fleet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Fleet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Fleet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: FleetState): Fleet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Fleet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: FleetState, opts: CustomResourceOptions): Fleet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Fleet]
+    inline def get(name: String, id: Input[ID]): Fleet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Fleet]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Fleet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Fleet]
+    inline def get(name: String, id: Input[ID], state: FleetState): Fleet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Fleet]
+    inline def get(name: String, id: Input[ID], state: FleetState, opts: CustomResourceOptions): Fleet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Fleet]
     
     /**
       * Returns true if the given object is an instance of Fleet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/gamelift/fleet.Fleet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/gamelift/fleet.Fleet */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/gamelift/fleet.Fleet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/gamelift/fleet.Fleet */ Boolean]
   }
   
   trait FleetArgs extends StObject {
@@ -199,86 +194,60 @@ object gameliftFleetMod {
   }
   object FleetArgs {
     
-    @scala.inline
-    def apply(buildId: Input[String], ec2InstanceType: Input[String]): FleetArgs = {
+    inline def apply(buildId: Input[String], ec2InstanceType: Input[String]): FleetArgs = {
       val __obj = js.Dynamic.literal(buildId = buildId.asInstanceOf[js.Any], ec2InstanceType = ec2InstanceType.asInstanceOf[js.Any])
       __obj.asInstanceOf[FleetArgs]
     }
     
-    @scala.inline
-    implicit class FleetArgsMutableBuilder[Self <: FleetArgs] (val x: Self) extends AnyVal {
+    extension [Self <: FleetArgs](x: Self) {
       
-      @scala.inline
-      def setBuildId(value: Input[String]): Self = StObject.set(x, "buildId", value.asInstanceOf[js.Any])
+      inline def setBuildId(value: Input[String]): Self = StObject.set(x, "buildId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setEc2InboundPermissions(value: Input[js.Array[Input[typings.pulumiAws.inputMod.gamelift.FleetEc2InboundPermission]]]): Self = StObject.set(x, "ec2InboundPermissions", value.asInstanceOf[js.Any])
+      inline def setEc2InboundPermissions(value: Input[js.Array[Input[typings.pulumiAws.inputMod.gamelift.FleetEc2InboundPermission]]]): Self = StObject.set(x, "ec2InboundPermissions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEc2InboundPermissionsUndefined: Self = StObject.set(x, "ec2InboundPermissions", js.undefined)
+      inline def setEc2InboundPermissionsUndefined: Self = StObject.set(x, "ec2InboundPermissions", js.undefined)
       
-      @scala.inline
-      def setEc2InboundPermissionsVarargs(value: Input[typings.pulumiAws.inputMod.gamelift.FleetEc2InboundPermission]*): Self = StObject.set(x, "ec2InboundPermissions", js.Array(value :_*))
+      inline def setEc2InboundPermissionsVarargs(value: Input[typings.pulumiAws.inputMod.gamelift.FleetEc2InboundPermission]*): Self = StObject.set(x, "ec2InboundPermissions", js.Array(value :_*))
       
-      @scala.inline
-      def setEc2InstanceType(value: Input[String]): Self = StObject.set(x, "ec2InstanceType", value.asInstanceOf[js.Any])
+      inline def setEc2InstanceType(value: Input[String]): Self = StObject.set(x, "ec2InstanceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFleetType(value: Input[String]): Self = StObject.set(x, "fleetType", value.asInstanceOf[js.Any])
+      inline def setFleetType(value: Input[String]): Self = StObject.set(x, "fleetType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFleetTypeUndefined: Self = StObject.set(x, "fleetType", js.undefined)
+      inline def setFleetTypeUndefined: Self = StObject.set(x, "fleetType", js.undefined)
       
-      @scala.inline
-      def setInstanceRoleArn(value: Input[String]): Self = StObject.set(x, "instanceRoleArn", value.asInstanceOf[js.Any])
+      inline def setInstanceRoleArn(value: Input[String]): Self = StObject.set(x, "instanceRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceRoleArnUndefined: Self = StObject.set(x, "instanceRoleArn", js.undefined)
+      inline def setInstanceRoleArnUndefined: Self = StObject.set(x, "instanceRoleArn", js.undefined)
       
-      @scala.inline
-      def setMetricGroups(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "metricGroups", value.asInstanceOf[js.Any])
+      inline def setMetricGroups(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "metricGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetricGroupsUndefined: Self = StObject.set(x, "metricGroups", js.undefined)
+      inline def setMetricGroupsUndefined: Self = StObject.set(x, "metricGroups", js.undefined)
       
-      @scala.inline
-      def setMetricGroupsVarargs(value: Input[String]*): Self = StObject.set(x, "metricGroups", js.Array(value :_*))
+      inline def setMetricGroupsVarargs(value: Input[String]*): Self = StObject.set(x, "metricGroups", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNewGameSessionProtectionPolicy(value: Input[String]): Self = StObject.set(x, "newGameSessionProtectionPolicy", value.asInstanceOf[js.Any])
+      inline def setNewGameSessionProtectionPolicy(value: Input[String]): Self = StObject.set(x, "newGameSessionProtectionPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewGameSessionProtectionPolicyUndefined: Self = StObject.set(x, "newGameSessionProtectionPolicy", js.undefined)
+      inline def setNewGameSessionProtectionPolicyUndefined: Self = StObject.set(x, "newGameSessionProtectionPolicy", js.undefined)
       
-      @scala.inline
-      def setResourceCreationLimitPolicy(value: Input[typings.pulumiAws.inputMod.gamelift.FleetResourceCreationLimitPolicy]): Self = StObject.set(x, "resourceCreationLimitPolicy", value.asInstanceOf[js.Any])
+      inline def setResourceCreationLimitPolicy(value: Input[typings.pulumiAws.inputMod.gamelift.FleetResourceCreationLimitPolicy]): Self = StObject.set(x, "resourceCreationLimitPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceCreationLimitPolicyUndefined: Self = StObject.set(x, "resourceCreationLimitPolicy", js.undefined)
+      inline def setResourceCreationLimitPolicyUndefined: Self = StObject.set(x, "resourceCreationLimitPolicy", js.undefined)
       
-      @scala.inline
-      def setRuntimeConfiguration(value: Input[typings.pulumiAws.inputMod.gamelift.FleetRuntimeConfiguration]): Self = StObject.set(x, "runtimeConfiguration", value.asInstanceOf[js.Any])
+      inline def setRuntimeConfiguration(value: Input[typings.pulumiAws.inputMod.gamelift.FleetRuntimeConfiguration]): Self = StObject.set(x, "runtimeConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuntimeConfigurationUndefined: Self = StObject.set(x, "runtimeConfiguration", js.undefined)
+      inline def setRuntimeConfigurationUndefined: Self = StObject.set(x, "runtimeConfiguration", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -360,113 +329,78 @@ object gameliftFleetMod {
   }
   object FleetState {
     
-    @scala.inline
-    def apply(): FleetState = {
+    inline def apply(): FleetState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FleetState]
     }
     
-    @scala.inline
-    implicit class FleetStateMutableBuilder[Self <: FleetState] (val x: Self) extends AnyVal {
+    extension [Self <: FleetState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setBuildId(value: Input[String]): Self = StObject.set(x, "buildId", value.asInstanceOf[js.Any])
+      inline def setBuildId(value: Input[String]): Self = StObject.set(x, "buildId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuildIdUndefined: Self = StObject.set(x, "buildId", js.undefined)
+      inline def setBuildIdUndefined: Self = StObject.set(x, "buildId", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setEc2InboundPermissions(value: Input[js.Array[Input[typings.pulumiAws.inputMod.gamelift.FleetEc2InboundPermission]]]): Self = StObject.set(x, "ec2InboundPermissions", value.asInstanceOf[js.Any])
+      inline def setEc2InboundPermissions(value: Input[js.Array[Input[typings.pulumiAws.inputMod.gamelift.FleetEc2InboundPermission]]]): Self = StObject.set(x, "ec2InboundPermissions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEc2InboundPermissionsUndefined: Self = StObject.set(x, "ec2InboundPermissions", js.undefined)
+      inline def setEc2InboundPermissionsUndefined: Self = StObject.set(x, "ec2InboundPermissions", js.undefined)
       
-      @scala.inline
-      def setEc2InboundPermissionsVarargs(value: Input[typings.pulumiAws.inputMod.gamelift.FleetEc2InboundPermission]*): Self = StObject.set(x, "ec2InboundPermissions", js.Array(value :_*))
+      inline def setEc2InboundPermissionsVarargs(value: Input[typings.pulumiAws.inputMod.gamelift.FleetEc2InboundPermission]*): Self = StObject.set(x, "ec2InboundPermissions", js.Array(value :_*))
       
-      @scala.inline
-      def setEc2InstanceType(value: Input[String]): Self = StObject.set(x, "ec2InstanceType", value.asInstanceOf[js.Any])
+      inline def setEc2InstanceType(value: Input[String]): Self = StObject.set(x, "ec2InstanceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEc2InstanceTypeUndefined: Self = StObject.set(x, "ec2InstanceType", js.undefined)
+      inline def setEc2InstanceTypeUndefined: Self = StObject.set(x, "ec2InstanceType", js.undefined)
       
-      @scala.inline
-      def setFleetType(value: Input[String]): Self = StObject.set(x, "fleetType", value.asInstanceOf[js.Any])
+      inline def setFleetType(value: Input[String]): Self = StObject.set(x, "fleetType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFleetTypeUndefined: Self = StObject.set(x, "fleetType", js.undefined)
+      inline def setFleetTypeUndefined: Self = StObject.set(x, "fleetType", js.undefined)
       
-      @scala.inline
-      def setInstanceRoleArn(value: Input[String]): Self = StObject.set(x, "instanceRoleArn", value.asInstanceOf[js.Any])
+      inline def setInstanceRoleArn(value: Input[String]): Self = StObject.set(x, "instanceRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceRoleArnUndefined: Self = StObject.set(x, "instanceRoleArn", js.undefined)
+      inline def setInstanceRoleArnUndefined: Self = StObject.set(x, "instanceRoleArn", js.undefined)
       
-      @scala.inline
-      def setLogPaths(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "logPaths", value.asInstanceOf[js.Any])
+      inline def setLogPaths(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "logPaths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogPathsUndefined: Self = StObject.set(x, "logPaths", js.undefined)
+      inline def setLogPathsUndefined: Self = StObject.set(x, "logPaths", js.undefined)
       
-      @scala.inline
-      def setLogPathsVarargs(value: Input[String]*): Self = StObject.set(x, "logPaths", js.Array(value :_*))
+      inline def setLogPathsVarargs(value: Input[String]*): Self = StObject.set(x, "logPaths", js.Array(value :_*))
       
-      @scala.inline
-      def setMetricGroups(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "metricGroups", value.asInstanceOf[js.Any])
+      inline def setMetricGroups(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "metricGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetricGroupsUndefined: Self = StObject.set(x, "metricGroups", js.undefined)
+      inline def setMetricGroupsUndefined: Self = StObject.set(x, "metricGroups", js.undefined)
       
-      @scala.inline
-      def setMetricGroupsVarargs(value: Input[String]*): Self = StObject.set(x, "metricGroups", js.Array(value :_*))
+      inline def setMetricGroupsVarargs(value: Input[String]*): Self = StObject.set(x, "metricGroups", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNewGameSessionProtectionPolicy(value: Input[String]): Self = StObject.set(x, "newGameSessionProtectionPolicy", value.asInstanceOf[js.Any])
+      inline def setNewGameSessionProtectionPolicy(value: Input[String]): Self = StObject.set(x, "newGameSessionProtectionPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewGameSessionProtectionPolicyUndefined: Self = StObject.set(x, "newGameSessionProtectionPolicy", js.undefined)
+      inline def setNewGameSessionProtectionPolicyUndefined: Self = StObject.set(x, "newGameSessionProtectionPolicy", js.undefined)
       
-      @scala.inline
-      def setOperatingSystem(value: Input[String]): Self = StObject.set(x, "operatingSystem", value.asInstanceOf[js.Any])
+      inline def setOperatingSystem(value: Input[String]): Self = StObject.set(x, "operatingSystem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperatingSystemUndefined: Self = StObject.set(x, "operatingSystem", js.undefined)
+      inline def setOperatingSystemUndefined: Self = StObject.set(x, "operatingSystem", js.undefined)
       
-      @scala.inline
-      def setResourceCreationLimitPolicy(value: Input[typings.pulumiAws.inputMod.gamelift.FleetResourceCreationLimitPolicy]): Self = StObject.set(x, "resourceCreationLimitPolicy", value.asInstanceOf[js.Any])
+      inline def setResourceCreationLimitPolicy(value: Input[typings.pulumiAws.inputMod.gamelift.FleetResourceCreationLimitPolicy]): Self = StObject.set(x, "resourceCreationLimitPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceCreationLimitPolicyUndefined: Self = StObject.set(x, "resourceCreationLimitPolicy", js.undefined)
+      inline def setResourceCreationLimitPolicyUndefined: Self = StObject.set(x, "resourceCreationLimitPolicy", js.undefined)
       
-      @scala.inline
-      def setRuntimeConfiguration(value: Input[typings.pulumiAws.inputMod.gamelift.FleetRuntimeConfiguration]): Self = StObject.set(x, "runtimeConfiguration", value.asInstanceOf[js.Any])
+      inline def setRuntimeConfiguration(value: Input[typings.pulumiAws.inputMod.gamelift.FleetRuntimeConfiguration]): Self = StObject.set(x, "runtimeConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuntimeConfigurationUndefined: Self = StObject.set(x, "runtimeConfiguration", js.undefined)
+      inline def setRuntimeConfigurationUndefined: Self = StObject.set(x, "runtimeConfiguration", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

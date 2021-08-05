@@ -16,19 +16,15 @@ trait SchemaReadOnly extends StObject {
 }
 object SchemaReadOnly {
   
-  @scala.inline
-  def apply(): SchemaReadOnly = {
+  inline def apply(): SchemaReadOnly = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaReadOnly]
   }
   
-  @scala.inline
-  implicit class SchemaReadOnlyMutableBuilder[Self <: SchemaReadOnly] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaReadOnly](x: Self) {
     
-    @scala.inline
-    def setReadTime(value: String): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
+    inline def setReadTime(value: String): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadTimeUndefined: Self = StObject.set(x, "readTime", js.undefined)
+    inline def setReadTimeUndefined: Self = StObject.set(x, "readTime", js.undefined)
   }
 }

@@ -21,19 +21,15 @@ trait MouseEvent extends StObject {
 }
 object MouseEvent {
   
-  @scala.inline
-  def apply(latLng: LatLng, stop: () => Unit): MouseEvent = {
+  inline def apply(latLng: LatLng, stop: () => Unit): MouseEvent = {
     val __obj = js.Dynamic.literal(latLng = latLng.asInstanceOf[js.Any], stop = js.Any.fromFunction0(stop))
     __obj.asInstanceOf[MouseEvent]
   }
   
-  @scala.inline
-  implicit class MouseEventMutableBuilder[Self <: MouseEvent] (val x: Self) extends AnyVal {
+  extension [Self <: MouseEvent](x: Self) {
     
-    @scala.inline
-    def setLatLng(value: LatLng): Self = StObject.set(x, "latLng", value.asInstanceOf[js.Any])
+    inline def setLatLng(value: LatLng): Self = StObject.set(x, "latLng", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+    inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
   }
 }

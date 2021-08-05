@@ -11,25 +11,21 @@ object trustedTypesStrings {
   sealed trait createHTML
     extends StObject
        with FnNames
-  @scala.inline
-  def createHTML: createHTML = "createHTML".asInstanceOf[createHTML]
+  inline def createHTML: createHTML = "createHTML".asInstanceOf[createHTML]
   
   @js.native
   sealed trait createScript
     extends StObject
        with FnNames
-  @scala.inline
-  def createScript: createScript = "createScript".asInstanceOf[createScript]
+  inline def createScript: createScript = "createScript".asInstanceOf[createScript]
   
   @js.native
   sealed trait createScriptURL
     extends StObject
        with FnNames
-  @scala.inline
-  def createScriptURL: createScriptURL = "createScriptURL".asInstanceOf[createScriptURL]
+  inline def createScriptURL: createScriptURL = "createScriptURL".asInstanceOf[createScriptURL]
   
   @js.native
   sealed trait name extends StObject
-  @scala.inline
-  def name: name = "name".asInstanceOf[name]
+  inline def name: name = "name".asInstanceOf[name]
 }

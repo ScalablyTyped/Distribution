@@ -26,8 +26,7 @@ trait SystemInfoDeviceOrientation
 }
 object SystemInfoDeviceOrientation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isAutoRotation: Boolean,
     status: SystemInfoDeviceOrientationStatus | PORTRAIT_PRIMARY | PORTRAIT_SECONDARY | LANDSCAPE_PRIMARY | LANDSCAPE_SECONDARY
   ): SystemInfoDeviceOrientation = {
@@ -35,14 +34,11 @@ object SystemInfoDeviceOrientation {
     __obj.asInstanceOf[SystemInfoDeviceOrientation]
   }
   
-  @scala.inline
-  implicit class SystemInfoDeviceOrientationMutableBuilder[Self <: SystemInfoDeviceOrientation] (val x: Self) extends AnyVal {
+  extension [Self <: SystemInfoDeviceOrientation](x: Self) {
     
-    @scala.inline
-    def setIsAutoRotation(value: Boolean): Self = StObject.set(x, "isAutoRotation", value.asInstanceOf[js.Any])
+    inline def setIsAutoRotation(value: Boolean): Self = StObject.set(x, "isAutoRotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(
+    inline def setStatus(
       value: SystemInfoDeviceOrientationStatus | PORTRAIT_PRIMARY | PORTRAIT_SECONDARY | LANDSCAPE_PRIMARY | LANDSCAPE_SECONDARY
     ): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

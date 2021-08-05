@@ -11,6 +11,5 @@ object createHashMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createHash(kind: String): Hash = ^.asInstanceOf[js.Dynamic].applyDynamic("createHash")(kind.asInstanceOf[js.Any]).asInstanceOf[Hash]
+  inline def createHash(kind: String): Hash = ^.asInstanceOf[js.Dynamic].applyDynamic("createHash")(kind.asInstanceOf[js.Any]).asInstanceOf[Hash]
 }

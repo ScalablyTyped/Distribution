@@ -10,16 +10,13 @@ trait JQueryStatic extends StObject {
 }
 object JQueryStatic {
   
-  @scala.inline
-  def apply(jStorage: JStorageStatic): JQueryStatic = {
+  inline def apply(jStorage: JStorageStatic): JQueryStatic = {
     val __obj = js.Dynamic.literal(jStorage = jStorage.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  @scala.inline
-  implicit class JQueryStaticMutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryStatic](x: Self) {
     
-    @scala.inline
-    def setJStorage(value: JStorageStatic): Self = StObject.set(x, "jStorage", value.asInstanceOf[js.Any])
+    inline def setJStorage(value: JStorageStatic): Self = StObject.set(x, "jStorage", value.asInstanceOf[js.Any])
   }
 }

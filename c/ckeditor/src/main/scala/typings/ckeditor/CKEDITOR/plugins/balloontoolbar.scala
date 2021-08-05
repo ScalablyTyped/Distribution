@@ -44,41 +44,30 @@ object balloontoolbar {
   }
   object contextDefinition {
     
-    @scala.inline
-    def apply(): contextDefinition = {
+    inline def apply(): contextDefinition = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[contextDefinition]
     }
     
-    @scala.inline
-    implicit class contextDefinitionMutableBuilder[Self <: contextDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: contextDefinition](x: Self) {
       
-      @scala.inline
-      def setCssSelector(value: String): Self = StObject.set(x, "cssSelector", value.asInstanceOf[js.Any])
+      inline def setCssSelector(value: String): Self = StObject.set(x, "cssSelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssSelectorUndefined: Self = StObject.set(x, "cssSelector", js.undefined)
+      inline def setCssSelectorUndefined: Self = StObject.set(x, "cssSelector", js.undefined)
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
       
-      @scala.inline
-      def setRefresh(value: (/* editor */ editor, /* path */ elementPath, /* selection */ selection) => element): Self = StObject.set(x, "refresh", js.Any.fromFunction3(value))
+      inline def setRefresh(value: (/* editor */ editor, /* path */ elementPath, /* selection */ selection) => element): Self = StObject.set(x, "refresh", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRefreshUndefined: Self = StObject.set(x, "refresh", js.undefined)
+      inline def setRefreshUndefined: Self = StObject.set(x, "refresh", js.undefined)
       
-      @scala.inline
-      def setWidgets(value: js.Array[String] | String): Self = StObject.set(x, "widgets", value.asInstanceOf[js.Any])
+      inline def setWidgets(value: js.Array[String] | String): Self = StObject.set(x, "widgets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidgetsUndefined: Self = StObject.set(x, "widgets", js.undefined)
+      inline def setWidgetsUndefined: Self = StObject.set(x, "widgets", js.undefined)
       
-      @scala.inline
-      def setWidgetsVarargs(value: String*): Self = StObject.set(x, "widgets", js.Array(value :_*))
+      inline def setWidgetsVarargs(value: String*): Self = StObject.set(x, "widgets", js.Array(value :_*))
     }
   }
   

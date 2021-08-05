@@ -10,16 +10,13 @@ trait JsonApiVersionJsonapi extends StObject {
 }
 object JsonApiVersionJsonapi {
   
-  @scala.inline
-  def apply(version: String): JsonApiVersionJsonapi = {
+  inline def apply(version: String): JsonApiVersionJsonapi = {
     val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[JsonApiVersionJsonapi]
   }
   
-  @scala.inline
-  implicit class JsonApiVersionJsonapiMutableBuilder[Self <: JsonApiVersionJsonapi] (val x: Self) extends AnyVal {
+  extension [Self <: JsonApiVersionJsonapi](x: Self) {
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

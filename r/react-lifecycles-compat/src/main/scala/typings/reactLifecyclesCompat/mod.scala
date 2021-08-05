@@ -12,6 +12,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def polyfill[T /* <: ComponentType[js.Any] */](Comp: T): T & typings.reactLifecyclesCompat.reactLifecyclesCompatStrings.polyfill & TopLevel[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("polyfill")(Comp.asInstanceOf[js.Any]).asInstanceOf[T & typings.reactLifecyclesCompat.reactLifecyclesCompatStrings.polyfill & TopLevel[T]]
+  inline def polyfill[T /* <: ComponentType[js.Any] */](Comp: T): T & typings.reactLifecyclesCompat.reactLifecyclesCompatStrings.polyfill & TopLevel[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("polyfill")(Comp.asInstanceOf[js.Any]).asInstanceOf[T & typings.reactLifecyclesCompat.reactLifecyclesCompatStrings.polyfill & TopLevel[T]]
 }

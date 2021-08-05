@@ -71,70 +71,49 @@ trait SchemaDistribution extends StObject {
 }
 object SchemaDistribution {
   
-  @scala.inline
-  def apply(): SchemaDistribution = {
+  inline def apply(): SchemaDistribution = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDistribution]
   }
   
-  @scala.inline
-  implicit class SchemaDistributionMutableBuilder[Self <: SchemaDistribution] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDistribution](x: Self) {
     
-    @scala.inline
-    def setBucketCounts(value: js.Array[String]): Self = StObject.set(x, "bucketCounts", value.asInstanceOf[js.Any])
+    inline def setBucketCounts(value: js.Array[String]): Self = StObject.set(x, "bucketCounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketCountsUndefined: Self = StObject.set(x, "bucketCounts", js.undefined)
+    inline def setBucketCountsUndefined: Self = StObject.set(x, "bucketCounts", js.undefined)
     
-    @scala.inline
-    def setBucketCountsVarargs(value: String*): Self = StObject.set(x, "bucketCounts", js.Array(value :_*))
+    inline def setBucketCountsVarargs(value: String*): Self = StObject.set(x, "bucketCounts", js.Array(value :_*))
     
-    @scala.inline
-    def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setExplicitBuckets(value: SchemaExplicitBuckets): Self = StObject.set(x, "explicitBuckets", value.asInstanceOf[js.Any])
+    inline def setExplicitBuckets(value: SchemaExplicitBuckets): Self = StObject.set(x, "explicitBuckets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExplicitBucketsUndefined: Self = StObject.set(x, "explicitBuckets", js.undefined)
+    inline def setExplicitBucketsUndefined: Self = StObject.set(x, "explicitBuckets", js.undefined)
     
-    @scala.inline
-    def setExponentialBuckets(value: SchemaExponentialBuckets): Self = StObject.set(x, "exponentialBuckets", value.asInstanceOf[js.Any])
+    inline def setExponentialBuckets(value: SchemaExponentialBuckets): Self = StObject.set(x, "exponentialBuckets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExponentialBucketsUndefined: Self = StObject.set(x, "exponentialBuckets", js.undefined)
+    inline def setExponentialBucketsUndefined: Self = StObject.set(x, "exponentialBuckets", js.undefined)
     
-    @scala.inline
-    def setLinearBuckets(value: SchemaLinearBuckets): Self = StObject.set(x, "linearBuckets", value.asInstanceOf[js.Any])
+    inline def setLinearBuckets(value: SchemaLinearBuckets): Self = StObject.set(x, "linearBuckets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinearBucketsUndefined: Self = StObject.set(x, "linearBuckets", js.undefined)
+    inline def setLinearBucketsUndefined: Self = StObject.set(x, "linearBuckets", js.undefined)
     
-    @scala.inline
-    def setMaximum(value: Double): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
+    inline def setMaximum(value: Double): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
+    inline def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
     
-    @scala.inline
-    def setMean(value: Double): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
+    inline def setMean(value: Double): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeanUndefined: Self = StObject.set(x, "mean", js.undefined)
+    inline def setMeanUndefined: Self = StObject.set(x, "mean", js.undefined)
     
-    @scala.inline
-    def setMinimum(value: Double): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
+    inline def setMinimum(value: Double): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
+    inline def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
     
-    @scala.inline
-    def setSumOfSquaredDeviation(value: Double): Self = StObject.set(x, "sumOfSquaredDeviation", value.asInstanceOf[js.Any])
+    inline def setSumOfSquaredDeviation(value: Double): Self = StObject.set(x, "sumOfSquaredDeviation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSumOfSquaredDeviationUndefined: Self = StObject.set(x, "sumOfSquaredDeviation", js.undefined)
+    inline def setSumOfSquaredDeviationUndefined: Self = StObject.set(x, "sumOfSquaredDeviation", js.undefined)
   }
 }

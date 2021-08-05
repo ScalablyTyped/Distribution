@@ -14,7 +14,7 @@ object methodActionMod {
     
     var args: js.Array[js.Any] = js.native
     
-    var callIndex: js.Any = js.native
+    /* private */ var callIndex: js.Any = js.native
     
     def getCallIndex(): Double = js.native
     
@@ -34,7 +34,6 @@ object methodActionMod {
     @JSImport("ts-mockito/lib/MethodAction", "MethodAction.globalCallIndex")
     @js.native
     def globalCallIndex: js.Any = js.native
-    @scala.inline
-    def globalCallIndex_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("globalCallIndex")(x.asInstanceOf[js.Any])
+    inline def globalCallIndex_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("globalCallIndex")(x.asInstanceOf[js.Any])
   }
 }

@@ -32,61 +32,43 @@ trait Attachment extends StObject {
 }
 object Attachment {
   
-  @scala.inline
-  def apply(): Attachment = {
+  inline def apply(): Attachment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Attachment]
   }
   
-  @scala.inline
-  implicit class AttachmentMutableBuilder[Self <: Attachment] (val x: Self) extends AnyVal {
+  extension [Self <: Attachment](x: Self) {
     
-    @scala.inline
-    def setAttachmentDataRef(value: AttachmentDataRef): Self = StObject.set(x, "attachmentDataRef", value.asInstanceOf[js.Any])
+    inline def setAttachmentDataRef(value: AttachmentDataRef): Self = StObject.set(x, "attachmentDataRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentDataRefUndefined: Self = StObject.set(x, "attachmentDataRef", js.undefined)
+    inline def setAttachmentDataRefUndefined: Self = StObject.set(x, "attachmentDataRef", js.undefined)
     
-    @scala.inline
-    def setContentName(value: String): Self = StObject.set(x, "contentName", value.asInstanceOf[js.Any])
+    inline def setContentName(value: String): Self = StObject.set(x, "contentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentNameUndefined: Self = StObject.set(x, "contentName", js.undefined)
+    inline def setContentNameUndefined: Self = StObject.set(x, "contentName", js.undefined)
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    @scala.inline
-    def setDownloadUri(value: String): Self = StObject.set(x, "downloadUri", value.asInstanceOf[js.Any])
+    inline def setDownloadUri(value: String): Self = StObject.set(x, "downloadUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadUriUndefined: Self = StObject.set(x, "downloadUri", js.undefined)
+    inline def setDownloadUriUndefined: Self = StObject.set(x, "downloadUri", js.undefined)
     
-    @scala.inline
-    def setDriveDataRef(value: DriveDataRef): Self = StObject.set(x, "driveDataRef", value.asInstanceOf[js.Any])
+    inline def setDriveDataRef(value: DriveDataRef): Self = StObject.set(x, "driveDataRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDriveDataRefUndefined: Self = StObject.set(x, "driveDataRef", js.undefined)
+    inline def setDriveDataRefUndefined: Self = StObject.set(x, "driveDataRef", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setThumbnailUri(value: String): Self = StObject.set(x, "thumbnailUri", value.asInstanceOf[js.Any])
+    inline def setThumbnailUri(value: String): Self = StObject.set(x, "thumbnailUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnailUriUndefined: Self = StObject.set(x, "thumbnailUri", js.undefined)
+    inline def setThumbnailUriUndefined: Self = StObject.set(x, "thumbnailUri", js.undefined)
   }
 }

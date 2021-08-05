@@ -21,39 +21,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GoogleActionsV2OrdersOrderUpdateActionType extends StObject
 object GoogleActionsV2OrdersOrderUpdateActionType {
   
-  @scala.inline
-  def CALL: typings.actionsOnGoogle.actionsOnGoogleStrings.CALL = "CALL".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.CALL]
+  inline def CALL: typings.actionsOnGoogle.actionsOnGoogleStrings.CALL = "CALL".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.CALL]
   
-  @scala.inline
-  def CANCEL: typings.actionsOnGoogle.actionsOnGoogleStrings.CANCEL = "CANCEL".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.CANCEL]
+  inline def CANCEL: typings.actionsOnGoogle.actionsOnGoogleStrings.CANCEL = "CANCEL".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.CANCEL]
   
-  @scala.inline
-  def CUSTOMER_SERVICE: typings.actionsOnGoogle.actionsOnGoogleStrings.CUSTOMER_SERVICE = "CUSTOMER_SERVICE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.CUSTOMER_SERVICE]
+  inline def CUSTOMER_SERVICE: typings.actionsOnGoogle.actionsOnGoogleStrings.CUSTOMER_SERVICE = "CUSTOMER_SERVICE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.CUSTOMER_SERVICE]
   
-  @scala.inline
-  def EMAIL: typings.actionsOnGoogle.actionsOnGoogleStrings.EMAIL = "EMAIL".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.EMAIL]
+  inline def EMAIL: typings.actionsOnGoogle.actionsOnGoogleStrings.EMAIL = "EMAIL".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.EMAIL]
   
-  @scala.inline
-  def EXCHANGE: typings.actionsOnGoogle.actionsOnGoogleStrings.EXCHANGE = "EXCHANGE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.EXCHANGE]
+  inline def EXCHANGE: typings.actionsOnGoogle.actionsOnGoogleStrings.EXCHANGE = "EXCHANGE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.EXCHANGE]
   
-  @scala.inline
-  def FIX_ISSUE: typings.actionsOnGoogle.actionsOnGoogleStrings.FIX_ISSUE = "FIX_ISSUE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.FIX_ISSUE]
+  inline def FIX_ISSUE: typings.actionsOnGoogle.actionsOnGoogleStrings.FIX_ISSUE = "FIX_ISSUE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.FIX_ISSUE]
   
-  @scala.inline
-  def MODIFY: typings.actionsOnGoogle.actionsOnGoogleStrings.MODIFY = "MODIFY".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.MODIFY]
+  inline def MODIFY: typings.actionsOnGoogle.actionsOnGoogleStrings.MODIFY = "MODIFY".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.MODIFY]
   
-  @scala.inline
-  def REORDER: typings.actionsOnGoogle.actionsOnGoogleStrings.REORDER = "REORDER".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.REORDER]
+  inline def REORDER: typings.actionsOnGoogle.actionsOnGoogleStrings.REORDER = "REORDER".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.REORDER]
   
-  @scala.inline
-  def RETURN: typings.actionsOnGoogle.actionsOnGoogleStrings.RETURN = "RETURN".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.RETURN]
+  inline def RETURN: typings.actionsOnGoogle.actionsOnGoogleStrings.RETURN = "RETURN".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.RETURN]
   
-  @scala.inline
-  def REVIEW: typings.actionsOnGoogle.actionsOnGoogleStrings.REVIEW = "REVIEW".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.REVIEW]
+  inline def REVIEW: typings.actionsOnGoogle.actionsOnGoogleStrings.REVIEW = "REVIEW".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.REVIEW]
   
-  @scala.inline
-  def UNKNOWN: typings.actionsOnGoogle.actionsOnGoogleStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.UNKNOWN]
+  inline def UNKNOWN: typings.actionsOnGoogle.actionsOnGoogleStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.UNKNOWN]
   
-  @scala.inline
-  def VIEW_DETAILS: typings.actionsOnGoogle.actionsOnGoogleStrings.VIEW_DETAILS = "VIEW_DETAILS".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.VIEW_DETAILS]
+  inline def VIEW_DETAILS: typings.actionsOnGoogle.actionsOnGoogleStrings.VIEW_DETAILS = "VIEW_DETAILS".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.VIEW_DETAILS]
 }

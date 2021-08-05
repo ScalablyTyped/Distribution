@@ -45,8 +45,7 @@ object vectorRenderTileMod {
   }
   object ReplayState {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dirty: Boolean,
       renderedRenderOrder: (/* p0 */ FeatureLike, /* p1 */ FeatureLike) => Double,
       renderedResolution: Double,
@@ -60,32 +59,23 @@ object vectorRenderTileMod {
       __obj.asInstanceOf[ReplayState]
     }
     
-    @scala.inline
-    implicit class ReplayStateMutableBuilder[Self <: ReplayState] (val x: Self) extends AnyVal {
+    extension [Self <: ReplayState](x: Self) {
       
-      @scala.inline
-      def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
+      inline def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderedRenderOrder(value: (/* p0 */ FeatureLike, /* p1 */ FeatureLike) => Double): Self = StObject.set(x, "renderedRenderOrder", js.Any.fromFunction2(value))
+      inline def setRenderedRenderOrder(value: (/* p0 */ FeatureLike, /* p1 */ FeatureLike) => Double): Self = StObject.set(x, "renderedRenderOrder", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRenderedResolution(value: Double): Self = StObject.set(x, "renderedResolution", value.asInstanceOf[js.Any])
+      inline def setRenderedResolution(value: Double): Self = StObject.set(x, "renderedResolution", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderedRevision(value: Double): Self = StObject.set(x, "renderedRevision", value.asInstanceOf[js.Any])
+      inline def setRenderedRevision(value: Double): Self = StObject.set(x, "renderedRevision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderedTileResolution(value: Double): Self = StObject.set(x, "renderedTileResolution", value.asInstanceOf[js.Any])
+      inline def setRenderedTileResolution(value: Double): Self = StObject.set(x, "renderedTileResolution", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderedTileRevision(value: Double): Self = StObject.set(x, "renderedTileRevision", value.asInstanceOf[js.Any])
+      inline def setRenderedTileRevision(value: Double): Self = StObject.set(x, "renderedTileRevision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderedTileZ(value: Double): Self = StObject.set(x, "renderedTileZ", value.asInstanceOf[js.Any])
+      inline def setRenderedTileZ(value: Double): Self = StObject.set(x, "renderedTileZ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderedZ(value: Double): Self = StObject.set(x, "renderedZ", value.asInstanceOf[js.Any])
+      inline def setRenderedZ(value: Double): Self = StObject.set(x, "renderedZ", value.asInstanceOf[js.Any])
     }
   }
   

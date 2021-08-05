@@ -27,35 +27,27 @@ trait GoogleCloudDialogflowV2OriginalDetectIntentRequest extends StObject {
 }
 object GoogleCloudDialogflowV2OriginalDetectIntentRequest {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2OriginalDetectIntentRequest = {
+  inline def apply(): GoogleCloudDialogflowV2OriginalDetectIntentRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2OriginalDetectIntentRequest]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2OriginalDetectIntentRequestMutableBuilder[Self <: GoogleCloudDialogflowV2OriginalDetectIntentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2OriginalDetectIntentRequest](x: Self) {
     
-    @scala.inline
-    def setPayload(
+    inline def setPayload(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2OriginalDetectIntentRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

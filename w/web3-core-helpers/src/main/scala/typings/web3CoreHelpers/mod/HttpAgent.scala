@@ -15,31 +15,23 @@ trait HttpAgent extends StObject {
 }
 object HttpAgent {
   
-  @scala.inline
-  def apply(): HttpAgent = {
+  inline def apply(): HttpAgent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HttpAgent]
   }
   
-  @scala.inline
-  implicit class HttpAgentMutableBuilder[Self <: HttpAgent] (val x: Self) extends AnyVal {
+  extension [Self <: HttpAgent](x: Self) {
     
-    @scala.inline
-    def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+    inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
+    inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
     
-    @scala.inline
-    def setHttp(value: Agent): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
+    inline def setHttp(value: Agent): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpUndefined: Self = StObject.set(x, "http", js.undefined)
+    inline def setHttpUndefined: Self = StObject.set(x, "http", js.undefined)
     
-    @scala.inline
-    def setHttps(value: typings.node.httpsMod.Agent): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
+    inline def setHttps(value: typings.node.httpsMod.Agent): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpsUndefined: Self = StObject.set(x, "https", js.undefined)
+    inline def setHttpsUndefined: Self = StObject.set(x, "https", js.undefined)
   }
 }

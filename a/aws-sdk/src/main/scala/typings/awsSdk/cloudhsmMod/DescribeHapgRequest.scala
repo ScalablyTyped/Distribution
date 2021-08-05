@@ -13,16 +13,13 @@ trait DescribeHapgRequest extends StObject {
 }
 object DescribeHapgRequest {
   
-  @scala.inline
-  def apply(HapgArn: HapgArn): DescribeHapgRequest = {
+  inline def apply(HapgArn: HapgArn): DescribeHapgRequest = {
     val __obj = js.Dynamic.literal(HapgArn = HapgArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeHapgRequest]
   }
   
-  @scala.inline
-  implicit class DescribeHapgRequestMutableBuilder[Self <: DescribeHapgRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeHapgRequest](x: Self) {
     
-    @scala.inline
-    def setHapgArn(value: HapgArn): Self = StObject.set(x, "HapgArn", value.asInstanceOf[js.Any])
+    inline def setHapgArn(value: HapgArn): Self = StObject.set(x, "HapgArn", value.asInstanceOf[js.Any])
   }
 }

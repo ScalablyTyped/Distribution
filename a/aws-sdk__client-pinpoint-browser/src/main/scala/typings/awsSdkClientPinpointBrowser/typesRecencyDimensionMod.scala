@@ -32,26 +32,20 @@ object typesRecencyDimensionMod {
   }
   object RecencyDimension {
     
-    @scala.inline
-    def apply(): RecencyDimension = {
+    inline def apply(): RecencyDimension = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RecencyDimension]
     }
     
-    @scala.inline
-    implicit class RecencyDimensionMutableBuilder[Self <: RecencyDimension] (val x: Self) extends AnyVal {
+    extension [Self <: RecencyDimension](x: Self) {
       
-      @scala.inline
-      def setDuration(value: HR_24 | DAY_7 | DAY_14 | DAY_30 | String): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: HR_24 | DAY_7 | DAY_14 | DAY_30 | String): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
       
-      @scala.inline
-      def setRecencyType(value: ACTIVE | INACTIVE | String): Self = StObject.set(x, "RecencyType", value.asInstanceOf[js.Any])
+      inline def setRecencyType(value: ACTIVE | INACTIVE | String): Self = StObject.set(x, "RecencyType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecencyTypeUndefined: Self = StObject.set(x, "RecencyType", js.undefined)
+      inline def setRecencyTypeUndefined: Self = StObject.set(x, "RecencyType", js.undefined)
     }
   }
   

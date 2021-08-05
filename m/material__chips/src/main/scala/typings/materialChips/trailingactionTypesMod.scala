@@ -22,17 +22,14 @@ object trailingactionTypesMod {
   }
   object MDCChipTrailingActionInteractionEventDetail {
     
-    @scala.inline
-    def apply(trigger: InteractionTrigger): MDCChipTrailingActionInteractionEventDetail = {
+    inline def apply(trigger: InteractionTrigger): MDCChipTrailingActionInteractionEventDetail = {
       val __obj = js.Dynamic.literal(trigger = trigger.asInstanceOf[js.Any])
       __obj.asInstanceOf[MDCChipTrailingActionInteractionEventDetail]
     }
     
-    @scala.inline
-    implicit class MDCChipTrailingActionInteractionEventDetailMutableBuilder[Self <: MDCChipTrailingActionInteractionEventDetail] (val x: Self) extends AnyVal {
+    extension [Self <: MDCChipTrailingActionInteractionEventDetail](x: Self) {
       
-      @scala.inline
-      def setTrigger(value: InteractionTrigger): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+      inline def setTrigger(value: InteractionTrigger): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
     }
   }
   
@@ -50,17 +47,14 @@ object trailingactionTypesMod {
   }
   object MDCChipTrailingActionNavigationEventDetail {
     
-    @scala.inline
-    def apply(key: String): MDCChipTrailingActionNavigationEventDetail = {
+    inline def apply(key: String): MDCChipTrailingActionNavigationEventDetail = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[MDCChipTrailingActionNavigationEventDetail]
     }
     
-    @scala.inline
-    implicit class MDCChipTrailingActionNavigationEventDetailMutableBuilder[Self <: MDCChipTrailingActionNavigationEventDetail] (val x: Self) extends AnyVal {
+    extension [Self <: MDCChipTrailingActionNavigationEventDetail](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }
   }
 }

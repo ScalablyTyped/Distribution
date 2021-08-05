@@ -22,19 +22,19 @@ object documentationMod {
     /* CompleteClass */
     override val componentFullfilePath: String = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var dataMap: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var docsBlocks: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var eventsMap: js.Any = js.native
     
     /* CompleteClass */
     override def get(key: String): js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var getDescriptor: js.Any = js.native
     
     /* CompleteClass */
@@ -43,7 +43,7 @@ object documentationMod {
     /* CompleteClass */
     override def getMethodDescriptor(methodName: String): MethodDescriptor = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var getObjectFromDescriptor: js.Any = js.native
     
     /* CompleteClass */
@@ -52,13 +52,13 @@ object documentationMod {
     /* CompleteClass */
     override def getSlotDescriptor(slotName: String): SlotDescriptor = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var methodsMap: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var originExtendsMixin: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var propsMap: js.Any = js.native
     
     /* CompleteClass */
@@ -70,7 +70,7 @@ object documentationMod {
     /* CompleteClass */
     override def setOrigin(origin: Descriptor): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var slotsMap: js.Any = js.native
     
     /* CompleteClass */
@@ -81,31 +81,31 @@ object documentationMod {
     
     val componentFullfilePath: String
     
-    var dataMap: js.Any
+    /* private */ var dataMap: js.Any
     
-    var docsBlocks: js.Any
+    /* private */ var docsBlocks: js.Any
     
-    var eventsMap: js.Any
+    /* private */ var eventsMap: js.Any
     
     def get(key: String): js.Any
     
-    var getDescriptor: js.Any
+    /* private */ var getDescriptor: js.Any
     
     def getEventDescriptor(eventName: String): EventDescriptor
     
     def getMethodDescriptor(methodName: String): MethodDescriptor
     
-    var getObjectFromDescriptor: js.Any
+    /* private */ var getObjectFromDescriptor: js.Any
     
     def getPropDescriptor(propName: String): PropDescriptor
     
     def getSlotDescriptor(slotName: String): SlotDescriptor
     
-    var methodsMap: js.Any
+    /* private */ var methodsMap: js.Any
     
-    var originExtendsMixin: js.Any
+    /* private */ var originExtendsMixin: js.Any
     
-    var propsMap: js.Any
+    /* private */ var propsMap: js.Any
     
     def set(key: String, value: js.Any): Unit
     
@@ -113,14 +113,13 @@ object documentationMod {
     
     def setOrigin(origin: Descriptor): Unit
     
-    var slotsMap: js.Any
+    /* private */ var slotsMap: js.Any
     
     def toObject(): ComponentDoc
   }
   object Documentation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       componentFullfilePath: String,
       dataMap: js.Any,
       docsBlocks: js.Any,
@@ -145,65 +144,45 @@ object documentationMod {
       __obj.asInstanceOf[Documentation]
     }
     
-    @scala.inline
-    implicit class DocumentationMutableBuilder[Self <: Documentation] (val x: Self) extends AnyVal {
+    extension [Self <: Documentation](x: Self) {
       
-      @scala.inline
-      def setComponentFullfilePath(value: String): Self = StObject.set(x, "componentFullfilePath", value.asInstanceOf[js.Any])
+      inline def setComponentFullfilePath(value: String): Self = StObject.set(x, "componentFullfilePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataMap(value: js.Any): Self = StObject.set(x, "dataMap", value.asInstanceOf[js.Any])
+      inline def setDataMap(value: js.Any): Self = StObject.set(x, "dataMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocsBlocks(value: js.Any): Self = StObject.set(x, "docsBlocks", value.asInstanceOf[js.Any])
+      inline def setDocsBlocks(value: js.Any): Self = StObject.set(x, "docsBlocks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsMap(value: js.Any): Self = StObject.set(x, "eventsMap", value.asInstanceOf[js.Any])
+      inline def setEventsMap(value: js.Any): Self = StObject.set(x, "eventsMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetDescriptor(value: js.Any): Self = StObject.set(x, "getDescriptor", value.asInstanceOf[js.Any])
+      inline def setGetDescriptor(value: js.Any): Self = StObject.set(x, "getDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetEventDescriptor(value: String => EventDescriptor): Self = StObject.set(x, "getEventDescriptor", js.Any.fromFunction1(value))
+      inline def setGetEventDescriptor(value: String => EventDescriptor): Self = StObject.set(x, "getEventDescriptor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetMethodDescriptor(value: String => MethodDescriptor): Self = StObject.set(x, "getMethodDescriptor", js.Any.fromFunction1(value))
+      inline def setGetMethodDescriptor(value: String => MethodDescriptor): Self = StObject.set(x, "getMethodDescriptor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetObjectFromDescriptor(value: js.Any): Self = StObject.set(x, "getObjectFromDescriptor", value.asInstanceOf[js.Any])
+      inline def setGetObjectFromDescriptor(value: js.Any): Self = StObject.set(x, "getObjectFromDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetPropDescriptor(value: String => PropDescriptor): Self = StObject.set(x, "getPropDescriptor", js.Any.fromFunction1(value))
+      inline def setGetPropDescriptor(value: String => PropDescriptor): Self = StObject.set(x, "getPropDescriptor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetSlotDescriptor(value: String => SlotDescriptor): Self = StObject.set(x, "getSlotDescriptor", js.Any.fromFunction1(value))
+      inline def setGetSlotDescriptor(value: String => SlotDescriptor): Self = StObject.set(x, "getSlotDescriptor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMethodsMap(value: js.Any): Self = StObject.set(x, "methodsMap", value.asInstanceOf[js.Any])
+      inline def setMethodsMap(value: js.Any): Self = StObject.set(x, "methodsMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginExtendsMixin(value: js.Any): Self = StObject.set(x, "originExtendsMixin", value.asInstanceOf[js.Any])
+      inline def setOriginExtendsMixin(value: js.Any): Self = StObject.set(x, "originExtendsMixin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropsMap(value: js.Any): Self = StObject.set(x, "propsMap", value.asInstanceOf[js.Any])
+      inline def setPropsMap(value: js.Any): Self = StObject.set(x, "propsMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSet(value: (String, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (String, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetDocsBlocks(value: js.Array[String] => Unit): Self = StObject.set(x, "setDocsBlocks", js.Any.fromFunction1(value))
+      inline def setSetDocsBlocks(value: js.Array[String] => Unit): Self = StObject.set(x, "setDocsBlocks", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetOrigin(value: Descriptor => Unit): Self = StObject.set(x, "setOrigin", js.Any.fromFunction1(value))
+      inline def setSetOrigin(value: Descriptor => Unit): Self = StObject.set(x, "setOrigin", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSlotsMap(value: js.Any): Self = StObject.set(x, "slotsMap", value.asInstanceOf[js.Any])
+      inline def setSlotsMap(value: js.Any): Self = StObject.set(x, "slotsMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToObject(value: () => ComponentDoc): Self = StObject.set(x, "toObject", js.Any.fromFunction0(value))
+      inline def setToObject(value: () => ComponentDoc): Self = StObject.set(x, "toObject", js.Any.fromFunction0(value))
     }
   }
 }

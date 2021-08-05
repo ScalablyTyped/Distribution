@@ -24,34 +24,25 @@ trait Kernel_ extends StObject {
 }
 object Kernel_ {
   
-  @scala.inline
-  def apply(height: Double, kernel: ArrayLike[Double], width: Double): Kernel_ = {
+  inline def apply(height: Double, kernel: ArrayLike[Double], width: Double): Kernel_ = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], kernel = kernel.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Kernel_]
   }
   
-  @scala.inline
-  implicit class Kernel_MutableBuilder[Self <: Kernel_] (val x: Self) extends AnyVal {
+  extension [Self <: Kernel_](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKernel(value: ArrayLike[Double]): Self = StObject.set(x, "kernel", value.asInstanceOf[js.Any])
+    inline def setKernel(value: ArrayLike[Double]): Self = StObject.set(x, "kernel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

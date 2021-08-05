@@ -59,7 +59,7 @@ object connectionMod {
       lastSessionId: String
     ) = this()
     
-    var applicationId_ : js.Any = js.native
+    /* private */ var applicationId_ : js.Any = js.native
     
     /**
       * Cleans up this connection, calling the appropriate callbacks
@@ -70,33 +70,33 @@ object connectionMod {
       *
       * @private
       */
-    var closeConnections_ : js.Any = js.native
+    /* private */ var closeConnections_ : js.Any = js.native
     
-    var connReceiver_ : js.Any = js.native
+    /* private */ var connReceiver_ : js.Any = js.native
     
-    var conn_ : js.Any = js.native
+    /* private */ var conn_ : js.Any = js.native
     
     var connectionCount: Double = js.native
     
-    var disconnReceiver_ : js.Any = js.native
+    /* private */ var disconnReceiver_ : js.Any = js.native
     
-    var healthyTimeout_ : js.Any = js.native
+    /* private */ var healthyTimeout_ : js.Any = js.native
     
     var id: String = js.native
     
-    var isHealthy_ : js.Any = js.native
+    /* private */ var isHealthy_ : js.Any = js.native
     
     var lastSessionId: js.UndefOr[String] = js.native
     
-    var log_ : js.Any = js.native
+    /* private */ var log_ : js.Any = js.native
     
     /**
       * @return {!string}
       * @private
       */
-    var nextTransportId_ : js.Any = js.native
+    /* private */ var nextTransportId_ : js.Any = js.native
     
-    var onConnectionEstablished_ : js.Any = js.native
+    /* private */ var onConnectionEstablished_ : js.Any = js.native
     
     /**
       *
@@ -104,63 +104,63 @@ object connectionMod {
       * we should flush the host cache
       * @private
       */
-    var onConnectionLost_ : js.Any = js.native
+    /* private */ var onConnectionLost_ : js.Any = js.native
     
     /**
       *
       * @param {string} reason
       * @private
       */
-    var onConnectionShutdown_ : js.Any = js.native
+    /* private */ var onConnectionShutdown_ : js.Any = js.native
     
-    var onControl_ : js.Any = js.native
+    /* private */ var onControl_ : js.Any = js.native
     
-    var onDataMessage_ : js.Any = js.native
+    /* private */ var onDataMessage_ : js.Any = js.native
     
-    var onDisconnect_ : js.Any = js.native
+    /* private */ var onDisconnect_ : js.Any = js.native
     
     /**
       *
       * @param {Object} handshake The handshake data returned from the server
       * @private
       */
-    var onHandshake_ : js.Any = js.native
+    /* private */ var onHandshake_ : js.Any = js.native
     
-    var onKill_ : js.Any = js.native
+    /* private */ var onKill_ : js.Any = js.native
     
-    var onMessage_ : js.Any = js.native
+    /* private */ var onMessage_ : js.Any = js.native
     
-    var onPrimaryMessageReceived_ : js.Any = js.native
+    /* private */ var onPrimaryMessageReceived_ : js.Any = js.native
     
-    var onPrimaryResponse_ : js.Any = js.native
+    /* private */ var onPrimaryResponse_ : js.Any = js.native
     
-    var onReady_ : js.Any = js.native
+    /* private */ var onReady_ : js.Any = js.native
     
-    var onReset_ : js.Any = js.native
+    /* private */ var onReset_ : js.Any = js.native
     
-    var onSecondaryConnectionLost_ : js.Any = js.native
+    /* private */ var onSecondaryConnectionLost_ : js.Any = js.native
     
-    var onSecondaryControl_ : js.Any = js.native
+    /* private */ var onSecondaryControl_ : js.Any = js.native
     
-    var onSecondaryMessageReceived_ : js.Any = js.native
+    /* private */ var onSecondaryMessageReceived_ : js.Any = js.native
     
     var pendingDataMessages: js.Array[js.Any] = js.native
     
-    var primaryResponsesRequired_ : js.Any = js.native
+    /* private */ var primaryResponsesRequired_ : js.Any = js.native
     
-    var proceedWithUpgrade_ : js.Any = js.native
+    /* private */ var proceedWithUpgrade_ : js.Any = js.native
     
-    var repoInfo_ : js.Any = js.native
+    /* private */ var repoInfo_ : js.Any = js.native
     
-    var rx_ : js.Any = js.native
+    /* private */ var rx_ : js.Any = js.native
     
-    var secondaryConn_ : js.Any = js.native
+    /* private */ var secondaryConn_ : js.Any = js.native
     
-    var secondaryResponsesRequired_ : js.Any = js.native
+    /* private */ var secondaryResponsesRequired_ : js.Any = js.native
     
-    var sendData_ : js.Any = js.native
+    /* private */ var sendData_ : js.Any = js.native
     
-    var sendPingOnPrimaryIfNecessary_ : js.Any = js.native
+    /* private */ var sendPingOnPrimaryIfNecessary_ : js.Any = js.native
     
     /**
       *
@@ -170,24 +170,24 @@ object connectionMod {
     
     var sessionId: String = js.native
     
-    var startUpgrade_ : js.Any = js.native
+    /* private */ var startUpgrade_ : js.Any = js.native
     
     /**
       * Starts a connection attempt
       * @private
       */
-    var start_ : js.Any = js.native
+    /* private */ var start_ : js.Any = js.native
     
-    var state_ : js.Any = js.native
+    /* private */ var state_ : js.Any = js.native
     
-    var transportManager_ : js.Any = js.native
+    /* private */ var transportManager_ : js.Any = js.native
     
     def tryCleanupConnection(): Unit = js.native
     
-    var tryStartUpgrade_ : js.Any = js.native
+    /* private */ var tryStartUpgrade_ : js.Any = js.native
     
-    var tx_ : js.Any = js.native
+    /* private */ var tx_ : js.Any = js.native
     
-    var upgradeIfSecondaryHealthy_ : js.Any = js.native
+    /* private */ var upgradeIfSecondaryHealthy_ : js.Any = js.native
   }
 }

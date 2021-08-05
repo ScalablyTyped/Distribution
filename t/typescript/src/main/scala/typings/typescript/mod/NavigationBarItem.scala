@@ -30,8 +30,7 @@ trait NavigationBarItem extends StObject {
 }
 object NavigationBarItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bolded: Boolean,
     childItems: js.Array[NavigationBarItem],
     grayed: Boolean,
@@ -45,37 +44,26 @@ object NavigationBarItem {
     __obj.asInstanceOf[NavigationBarItem]
   }
   
-  @scala.inline
-  implicit class NavigationBarItemMutableBuilder[Self <: NavigationBarItem] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationBarItem](x: Self) {
     
-    @scala.inline
-    def setBolded(value: Boolean): Self = StObject.set(x, "bolded", value.asInstanceOf[js.Any])
+    inline def setBolded(value: Boolean): Self = StObject.set(x, "bolded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildItems(value: js.Array[NavigationBarItem]): Self = StObject.set(x, "childItems", value.asInstanceOf[js.Any])
+    inline def setChildItems(value: js.Array[NavigationBarItem]): Self = StObject.set(x, "childItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildItemsVarargs(value: NavigationBarItem*): Self = StObject.set(x, "childItems", js.Array(value :_*))
+    inline def setChildItemsVarargs(value: NavigationBarItem*): Self = StObject.set(x, "childItems", js.Array(value :_*))
     
-    @scala.inline
-    def setGrayed(value: Boolean): Self = StObject.set(x, "grayed", value.asInstanceOf[js.Any])
+    inline def setGrayed(value: Boolean): Self = StObject.set(x, "grayed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+    inline def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: ScriptElementKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: ScriptElementKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindModifiers(value: java.lang.String): Self = StObject.set(x, "kindModifiers", value.asInstanceOf[js.Any])
+    inline def setKindModifiers(value: java.lang.String): Self = StObject.set(x, "kindModifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpans(value: js.Array[TextSpan]): Self = StObject.set(x, "spans", value.asInstanceOf[js.Any])
+    inline def setSpans(value: js.Array[TextSpan]): Self = StObject.set(x, "spans", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpansVarargs(value: TextSpan*): Self = StObject.set(x, "spans", js.Array(value :_*))
+    inline def setSpansVarargs(value: TextSpan*): Self = StObject.set(x, "spans", js.Array(value :_*))
     
-    @scala.inline
-    def setText(value: java.lang.String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: java.lang.String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

@@ -53,77 +53,53 @@ object typesMod {
   trait DATA_FIELD extends StObject
   object DATA_FIELD {
     
-    @scala.inline
-    def day: typings.intlRelativeformat.intlRelativeformatStrings.day = "day".asInstanceOf[typings.intlRelativeformat.intlRelativeformatStrings.day]
+    inline def day: typings.intlRelativeformat.intlRelativeformatStrings.day = "day".asInstanceOf[typings.intlRelativeformat.intlRelativeformatStrings.day]
     
-    @scala.inline
-    def dayNarrow: `day-narrow` = "day-narrow".asInstanceOf[`day-narrow`]
+    inline def dayNarrow: `day-narrow` = "day-narrow".asInstanceOf[`day-narrow`]
     
-    @scala.inline
-    def dayShort: `day-short` = "day-short".asInstanceOf[`day-short`]
+    inline def dayShort: `day-short` = "day-short".asInstanceOf[`day-short`]
     
-    @scala.inline
-    def hour: typings.intlRelativeformat.intlRelativeformatStrings.hour = "hour".asInstanceOf[typings.intlRelativeformat.intlRelativeformatStrings.hour]
+    inline def hour: typings.intlRelativeformat.intlRelativeformatStrings.hour = "hour".asInstanceOf[typings.intlRelativeformat.intlRelativeformatStrings.hour]
     
-    @scala.inline
-    def hourNarrow: `hour-narrow` = "hour-narrow".asInstanceOf[`hour-narrow`]
+    inline def hourNarrow: `hour-narrow` = "hour-narrow".asInstanceOf[`hour-narrow`]
     
-    @scala.inline
-    def hourShort: `hour-short` = "hour-short".asInstanceOf[`hour-short`]
+    inline def hourShort: `hour-short` = "hour-short".asInstanceOf[`hour-short`]
     
-    @scala.inline
-    def minute: typings.intlRelativeformat.intlRelativeformatStrings.minute = "minute".asInstanceOf[typings.intlRelativeformat.intlRelativeformatStrings.minute]
+    inline def minute: typings.intlRelativeformat.intlRelativeformatStrings.minute = "minute".asInstanceOf[typings.intlRelativeformat.intlRelativeformatStrings.minute]
     
-    @scala.inline
-    def minuteNarrow: `minute-narrow` = "minute-narrow".asInstanceOf[`minute-narrow`]
+    inline def minuteNarrow: `minute-narrow` = "minute-narrow".asInstanceOf[`minute-narrow`]
     
-    @scala.inline
-    def minuteShort: `minute-short` = "minute-short".asInstanceOf[`minute-short`]
+    inline def minuteShort: `minute-short` = "minute-short".asInstanceOf[`minute-short`]
     
-    @scala.inline
-    def month: typings.intlRelativeformat.intlRelativeformatStrings.month = "month".asInstanceOf[typings.intlRelativeformat.intlRelativeformatStrings.month]
+    inline def month: typings.intlRelativeformat.intlRelativeformatStrings.month = "month".asInstanceOf[typings.intlRelativeformat.intlRelativeformatStrings.month]
     
-    @scala.inline
-    def monthNarrow: `month-narrow` = "month-narrow".asInstanceOf[`month-narrow`]
+    inline def monthNarrow: `month-narrow` = "month-narrow".asInstanceOf[`month-narrow`]
     
-    @scala.inline
-    def monthShort: `month-short` = "month-short".asInstanceOf[`month-short`]
+    inline def monthShort: `month-short` = "month-short".asInstanceOf[`month-short`]
     
-    @scala.inline
-    def quarter: typings.intlRelativeformat.intlRelativeformatStrings.quarter = "quarter".asInstanceOf[typings.intlRelativeformat.intlRelativeformatStrings.quarter]
+    inline def quarter: typings.intlRelativeformat.intlRelativeformatStrings.quarter = "quarter".asInstanceOf[typings.intlRelativeformat.intlRelativeformatStrings.quarter]
     
-    @scala.inline
-    def quarterNarrow: `quarter-narrow` = "quarter-narrow".asInstanceOf[`quarter-narrow`]
+    inline def quarterNarrow: `quarter-narrow` = "quarter-narrow".asInstanceOf[`quarter-narrow`]
     
-    @scala.inline
-    def quarterShort: `quarter-short` = "quarter-short".asInstanceOf[`quarter-short`]
+    inline def quarterShort: `quarter-short` = "quarter-short".asInstanceOf[`quarter-short`]
     
-    @scala.inline
-    def second: typings.intlRelativeformat.intlRelativeformatStrings.second = "second".asInstanceOf[typings.intlRelativeformat.intlRelativeformatStrings.second]
+    inline def second: typings.intlRelativeformat.intlRelativeformatStrings.second = "second".asInstanceOf[typings.intlRelativeformat.intlRelativeformatStrings.second]
     
-    @scala.inline
-    def secondNarrow: `second-narrow` = "second-narrow".asInstanceOf[`second-narrow`]
+    inline def secondNarrow: `second-narrow` = "second-narrow".asInstanceOf[`second-narrow`]
     
-    @scala.inline
-    def secondShort: `second-short` = "second-short".asInstanceOf[`second-short`]
+    inline def secondShort: `second-short` = "second-short".asInstanceOf[`second-short`]
     
-    @scala.inline
-    def week: typings.intlRelativeformat.intlRelativeformatStrings.week = "week".asInstanceOf[typings.intlRelativeformat.intlRelativeformatStrings.week]
+    inline def week: typings.intlRelativeformat.intlRelativeformatStrings.week = "week".asInstanceOf[typings.intlRelativeformat.intlRelativeformatStrings.week]
     
-    @scala.inline
-    def weekNarrow: `week-narrow` = "week-narrow".asInstanceOf[`week-narrow`]
+    inline def weekNarrow: `week-narrow` = "week-narrow".asInstanceOf[`week-narrow`]
     
-    @scala.inline
-    def weekShort: `week-short` = "week-short".asInstanceOf[`week-short`]
+    inline def weekShort: `week-short` = "week-short".asInstanceOf[`week-short`]
     
-    @scala.inline
-    def year: typings.intlRelativeformat.intlRelativeformatStrings.year = "year".asInstanceOf[typings.intlRelativeformat.intlRelativeformatStrings.year]
+    inline def year: typings.intlRelativeformat.intlRelativeformatStrings.year = "year".asInstanceOf[typings.intlRelativeformat.intlRelativeformatStrings.year]
     
-    @scala.inline
-    def yearNarrow: `year-narrow` = "year-narrow".asInstanceOf[`year-narrow`]
+    inline def yearNarrow: `year-narrow` = "year-narrow".asInstanceOf[`year-narrow`]
     
-    @scala.inline
-    def yearShort: `year-short` = "year-short".asInstanceOf[`year-short`]
+    inline def yearShort: `year-short` = "year-short".asInstanceOf[`year-short`]
   }
   
   trait LocaleData extends StObject {
@@ -136,29 +112,22 @@ object typesMod {
   }
   object LocaleData {
     
-    @scala.inline
-    def apply(locale: String): LocaleData = {
+    inline def apply(locale: String): LocaleData = {
       val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any])
       __obj.asInstanceOf[LocaleData]
     }
     
-    @scala.inline
-    implicit class LocaleDataMutableBuilder[Self <: LocaleData] (val x: Self) extends AnyVal {
+    extension [Self <: LocaleData](x: Self) {
       
-      @scala.inline
-      def setFields(value: finDATAFIELDdisplayNamest): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: finDATAFIELDdisplayNamest): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+      inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentLocale(value: String): Self = StObject.set(x, "parentLocale", value.asInstanceOf[js.Any])
+      inline def setParentLocale(value: String): Self = StObject.set(x, "parentLocale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentLocaleUndefined: Self = StObject.set(x, "parentLocale", js.undefined)
+      inline def setParentLocaleUndefined: Self = StObject.set(x, "parentLocale", js.undefined)
     }
   }
   
@@ -169,11 +138,9 @@ object typesMod {
   trait STYLE extends StObject
   object STYLE {
     
-    @scala.inline
-    def bestFit: `best fit` = ("best fit").asInstanceOf[`best fit`]
+    inline def bestFit: `best fit` = ("best fit").asInstanceOf[`best fit`]
     
-    @scala.inline
-    def numeric: typings.intlRelativeformat.intlRelativeformatStrings.numeric = "numeric".asInstanceOf[typings.intlRelativeformat.intlRelativeformatStrings.numeric]
+    inline def numeric: typings.intlRelativeformat.intlRelativeformatStrings.numeric = "numeric".asInstanceOf[typings.intlRelativeformat.intlRelativeformatStrings.numeric]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -202,67 +169,46 @@ object typesMod {
   trait SUPPORTED_FIELD extends StObject
   object SUPPORTED_FIELD {
     
-    @scala.inline
-    def day: typings.intlRelativeformat.intlRelativeformatStrings.day = "day".asInstanceOf[typings.intlRelativeformat.intlRelativeformatStrings.day]
+    inline def day: typings.intlRelativeformat.intlRelativeformatStrings.day = "day".asInstanceOf[typings.intlRelativeformat.intlRelativeformatStrings.day]
     
-    @scala.inline
-    def dayNarrow: `day-narrow` = "day-narrow".asInstanceOf[`day-narrow`]
+    inline def dayNarrow: `day-narrow` = "day-narrow".asInstanceOf[`day-narrow`]
     
-    @scala.inline
-    def dayShort: `day-short` = "day-short".asInstanceOf[`day-short`]
+    inline def dayShort: `day-short` = "day-short".asInstanceOf[`day-short`]
     
-    @scala.inline
-    def hour: typings.intlRelativeformat.intlRelativeformatStrings.hour = "hour".asInstanceOf[typings.intlRelativeformat.intlRelativeformatStrings.hour]
+    inline def hour: typings.intlRelativeformat.intlRelativeformatStrings.hour = "hour".asInstanceOf[typings.intlRelativeformat.intlRelativeformatStrings.hour]
     
-    @scala.inline
-    def hourNarrow: `hour-narrow` = "hour-narrow".asInstanceOf[`hour-narrow`]
+    inline def hourNarrow: `hour-narrow` = "hour-narrow".asInstanceOf[`hour-narrow`]
     
-    @scala.inline
-    def hourShort: `hour-short` = "hour-short".asInstanceOf[`hour-short`]
+    inline def hourShort: `hour-short` = "hour-short".asInstanceOf[`hour-short`]
     
-    @scala.inline
-    def minute: typings.intlRelativeformat.intlRelativeformatStrings.minute = "minute".asInstanceOf[typings.intlRelativeformat.intlRelativeformatStrings.minute]
+    inline def minute: typings.intlRelativeformat.intlRelativeformatStrings.minute = "minute".asInstanceOf[typings.intlRelativeformat.intlRelativeformatStrings.minute]
     
-    @scala.inline
-    def minuteNarrow: `minute-narrow` = "minute-narrow".asInstanceOf[`minute-narrow`]
+    inline def minuteNarrow: `minute-narrow` = "minute-narrow".asInstanceOf[`minute-narrow`]
     
-    @scala.inline
-    def minuteShort: `minute-short` = "minute-short".asInstanceOf[`minute-short`]
+    inline def minuteShort: `minute-short` = "minute-short".asInstanceOf[`minute-short`]
     
-    @scala.inline
-    def month: typings.intlRelativeformat.intlRelativeformatStrings.month = "month".asInstanceOf[typings.intlRelativeformat.intlRelativeformatStrings.month]
+    inline def month: typings.intlRelativeformat.intlRelativeformatStrings.month = "month".asInstanceOf[typings.intlRelativeformat.intlRelativeformatStrings.month]
     
-    @scala.inline
-    def monthNarrow: `month-narrow` = "month-narrow".asInstanceOf[`month-narrow`]
+    inline def monthNarrow: `month-narrow` = "month-narrow".asInstanceOf[`month-narrow`]
     
-    @scala.inline
-    def monthShort: `month-short` = "month-short".asInstanceOf[`month-short`]
+    inline def monthShort: `month-short` = "month-short".asInstanceOf[`month-short`]
     
-    @scala.inline
-    def second: typings.intlRelativeformat.intlRelativeformatStrings.second = "second".asInstanceOf[typings.intlRelativeformat.intlRelativeformatStrings.second]
+    inline def second: typings.intlRelativeformat.intlRelativeformatStrings.second = "second".asInstanceOf[typings.intlRelativeformat.intlRelativeformatStrings.second]
     
-    @scala.inline
-    def secondNarrow: `second-narrow` = "second-narrow".asInstanceOf[`second-narrow`]
+    inline def secondNarrow: `second-narrow` = "second-narrow".asInstanceOf[`second-narrow`]
     
-    @scala.inline
-    def secondShort: `second-short` = "second-short".asInstanceOf[`second-short`]
+    inline def secondShort: `second-short` = "second-short".asInstanceOf[`second-short`]
     
-    @scala.inline
-    def week: typings.intlRelativeformat.intlRelativeformatStrings.week = "week".asInstanceOf[typings.intlRelativeformat.intlRelativeformatStrings.week]
+    inline def week: typings.intlRelativeformat.intlRelativeformatStrings.week = "week".asInstanceOf[typings.intlRelativeformat.intlRelativeformatStrings.week]
     
-    @scala.inline
-    def weekNarrow: `week-narrow` = "week-narrow".asInstanceOf[`week-narrow`]
+    inline def weekNarrow: `week-narrow` = "week-narrow".asInstanceOf[`week-narrow`]
     
-    @scala.inline
-    def weekShort: `week-short` = "week-short".asInstanceOf[`week-short`]
+    inline def weekShort: `week-short` = "week-short".asInstanceOf[`week-short`]
     
-    @scala.inline
-    def year: typings.intlRelativeformat.intlRelativeformatStrings.year = "year".asInstanceOf[typings.intlRelativeformat.intlRelativeformatStrings.year]
+    inline def year: typings.intlRelativeformat.intlRelativeformatStrings.year = "year".asInstanceOf[typings.intlRelativeformat.intlRelativeformatStrings.year]
     
-    @scala.inline
-    def yearNarrow: `year-narrow` = "year-narrow".asInstanceOf[`year-narrow`]
+    inline def yearNarrow: `year-narrow` = "year-narrow".asInstanceOf[`year-narrow`]
     
-    @scala.inline
-    def yearShort: `year-short` = "year-short".asInstanceOf[`year-short`]
+    inline def yearShort: `year-short` = "year-short".asInstanceOf[`year-short`]
   }
 }

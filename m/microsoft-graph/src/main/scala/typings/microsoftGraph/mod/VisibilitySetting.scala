@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VisibilitySetting extends StObject
 object VisibilitySetting {
   
-  @scala.inline
-  def hide: typings.microsoftGraph.microsoftGraphStrings.hide = "hide".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.hide]
+  inline def hide: typings.microsoftGraph.microsoftGraphStrings.hide = "hide".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.hide]
   
-  @scala.inline
-  def notConfigured: typings.microsoftGraph.microsoftGraphStrings.notConfigured = "notConfigured".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notConfigured]
+  inline def notConfigured: typings.microsoftGraph.microsoftGraphStrings.notConfigured = "notConfigured".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notConfigured]
   
-  @scala.inline
-  def show: typings.microsoftGraph.microsoftGraphStrings.show = "show".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.show]
+  inline def show: typings.microsoftGraph.microsoftGraphStrings.show = "show".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.show]
 }

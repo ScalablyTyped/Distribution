@@ -10,16 +10,13 @@ trait GroupContainerProperties extends StObject {
 }
 object GroupContainerProperties {
   
-  @scala.inline
-  def apply(collapsed: Boolean): GroupContainerProperties = {
+  inline def apply(collapsed: Boolean): GroupContainerProperties = {
     val __obj = js.Dynamic.literal(collapsed = collapsed.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupContainerProperties]
   }
   
-  @scala.inline
-  implicit class GroupContainerPropertiesMutableBuilder[Self <: GroupContainerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: GroupContainerProperties](x: Self) {
     
-    @scala.inline
-    def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+    inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
   }
 }

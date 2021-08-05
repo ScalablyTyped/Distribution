@@ -17,22 +17,17 @@ trait SourceFileUpload extends StObject {
 }
 object SourceFileUpload {
   
-  @scala.inline
-  def apply(file_name: String, file_size: Double, file_upload_time: String): SourceFileUpload = {
+  inline def apply(file_name: String, file_size: Double, file_upload_time: String): SourceFileUpload = {
     val __obj = js.Dynamic.literal(file_name = file_name.asInstanceOf[js.Any], file_size = file_size.asInstanceOf[js.Any], file_upload_time = file_upload_time.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceFileUpload]
   }
   
-  @scala.inline
-  implicit class SourceFileUploadMutableBuilder[Self <: SourceFileUpload] (val x: Self) extends AnyVal {
+  extension [Self <: SourceFileUpload](x: Self) {
     
-    @scala.inline
-    def setFile_name(value: String): Self = StObject.set(x, "file_name", value.asInstanceOf[js.Any])
+    inline def setFile_name(value: String): Self = StObject.set(x, "file_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFile_size(value: Double): Self = StObject.set(x, "file_size", value.asInstanceOf[js.Any])
+    inline def setFile_size(value: Double): Self = StObject.set(x, "file_size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFile_upload_time(value: String): Self = StObject.set(x, "file_upload_time", value.asInstanceOf[js.Any])
+    inline def setFile_upload_time(value: String): Self = StObject.set(x, "file_upload_time", value.asInstanceOf[js.Any])
   }
 }

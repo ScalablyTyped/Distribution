@@ -13,22 +13,17 @@ trait ReceiveMessageResult extends StObject {
 }
 object ReceiveMessageResult {
   
-  @scala.inline
-  def apply(): ReceiveMessageResult = {
+  inline def apply(): ReceiveMessageResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReceiveMessageResult]
   }
   
-  @scala.inline
-  implicit class ReceiveMessageResultMutableBuilder[Self <: ReceiveMessageResult] (val x: Self) extends AnyVal {
+  extension [Self <: ReceiveMessageResult](x: Self) {
     
-    @scala.inline
-    def setMessages(value: MessageList): Self = StObject.set(x, "Messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: MessageList): Self = StObject.set(x, "Messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesUndefined: Self = StObject.set(x, "Messages", js.undefined)
+    inline def setMessagesUndefined: Self = StObject.set(x, "Messages", js.undefined)
     
-    @scala.inline
-    def setMessagesVarargs(value: Message*): Self = StObject.set(x, "Messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: Message*): Self = StObject.set(x, "Messages", js.Array(value :_*))
   }
 }

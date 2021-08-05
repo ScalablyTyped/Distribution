@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@firebase/auth-types", "FirebaseAuth")
 @js.native
-class FirebaseAuth protected () extends StObject {
+/* private */ class FirebaseAuth () extends StObject {
   
   var app: FirebaseApp = js.native
   
@@ -121,6 +121,5 @@ object FirebaseAuth {
   @JSImport("@firebase/auth-types", "FirebaseAuth.Persistence")
   @js.native
   def Persistence: LOCAL = js.native
-  @scala.inline
-  def Persistence_=(x: LOCAL): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Persistence")(x.asInstanceOf[js.Any])
+  inline def Persistence_=(x: LOCAL): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Persistence")(x.asInstanceOf[js.Any])
 }

@@ -78,8 +78,7 @@ trait IDatabaseInfo extends StObject {
 }
 object IDatabaseInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qDBFirst: Boolean,
     qDBMSName: String,
     qDBSeparator: String,
@@ -96,43 +95,30 @@ object IDatabaseInfo {
     __obj.asInstanceOf[IDatabaseInfo]
   }
   
-  @scala.inline
-  implicit class IDatabaseInfoMutableBuilder[Self <: IDatabaseInfo] (val x: Self) extends AnyVal {
+  extension [Self <: IDatabaseInfo](x: Self) {
     
-    @scala.inline
-    def setQDBFirst(value: Boolean): Self = StObject.set(x, "qDBFirst", value.asInstanceOf[js.Any])
+    inline def setQDBFirst(value: Boolean): Self = StObject.set(x, "qDBFirst", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQDBMSName(value: String): Self = StObject.set(x, "qDBMSName", value.asInstanceOf[js.Any])
+    inline def setQDBMSName(value: String): Self = StObject.set(x, "qDBMSName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQDBSeparator(value: String): Self = StObject.set(x, "qDBSeparator", value.asInstanceOf[js.Any])
+    inline def setQDBSeparator(value: String): Self = StObject.set(x, "qDBSeparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQDBUsage(value: Boolean): Self = StObject.set(x, "qDBUsage", value.asInstanceOf[js.Any])
+    inline def setQDBUsage(value: Boolean): Self = StObject.set(x, "qDBUsage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQDefaultDatabase(value: String): Self = StObject.set(x, "qDefaultDatabase", value.asInstanceOf[js.Any])
+    inline def setQDefaultDatabase(value: String): Self = StObject.set(x, "qDefaultDatabase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQKeywords(value: js.Array[String]): Self = StObject.set(x, "qKeywords", value.asInstanceOf[js.Any])
+    inline def setQKeywords(value: js.Array[String]): Self = StObject.set(x, "qKeywords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQKeywordsVarargs(value: String*): Self = StObject.set(x, "qKeywords", js.Array(value :_*))
+    inline def setQKeywordsVarargs(value: String*): Self = StObject.set(x, "qKeywords", js.Array(value :_*))
     
-    @scala.inline
-    def setQOwnerSeparator(value: String): Self = StObject.set(x, "qOwnerSeparator", value.asInstanceOf[js.Any])
+    inline def setQOwnerSeparator(value: String): Self = StObject.set(x, "qOwnerSeparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQOwnerUsage(value: Boolean): Self = StObject.set(x, "qOwnerUsage", value.asInstanceOf[js.Any])
+    inline def setQOwnerUsage(value: Boolean): Self = StObject.set(x, "qOwnerUsage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQQuotePreffix(value: String): Self = StObject.set(x, "qQuotePreffix", value.asInstanceOf[js.Any])
+    inline def setQQuotePreffix(value: String): Self = StObject.set(x, "qQuotePreffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQQuoteSuffix(value: String): Self = StObject.set(x, "qQuoteSuffix", value.asInstanceOf[js.Any])
+    inline def setQQuoteSuffix(value: String): Self = StObject.set(x, "qQuoteSuffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQSpecialChars(value: String): Self = StObject.set(x, "qSpecialChars", value.asInstanceOf[js.Any])
+    inline def setQSpecialChars(value: String): Self = StObject.set(x, "qSpecialChars", value.asInstanceOf[js.Any])
   }
 }

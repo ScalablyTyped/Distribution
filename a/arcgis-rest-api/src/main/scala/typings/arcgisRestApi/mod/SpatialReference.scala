@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SpatialReference extends StObject
 object SpatialReference {
   
-  @scala.inline
-  def SpatialReferenceWkid(): typings.arcgisRestApi.mod.SpatialReferenceWkid = {
+  inline def SpatialReferenceWkid(): typings.arcgisRestApi.mod.SpatialReferenceWkid = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.arcgisRestApi.mod.SpatialReferenceWkid]
   }
   
-  @scala.inline
-  def SpatialReferenceWkt(): typings.arcgisRestApi.mod.SpatialReferenceWkt = {
+  inline def SpatialReferenceWkt(): typings.arcgisRestApi.mod.SpatialReferenceWkt = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.arcgisRestApi.mod.SpatialReferenceWkt]
   }

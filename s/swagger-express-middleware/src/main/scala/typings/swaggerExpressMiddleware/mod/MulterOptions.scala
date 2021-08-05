@@ -32,39 +32,29 @@ trait MulterOptions extends StObject {
 }
 object MulterOptions {
   
-  @scala.inline
-  def apply(): MulterOptions = {
+  inline def apply(): MulterOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MulterOptions]
   }
   
-  @scala.inline
-  implicit class MulterOptionsMutableBuilder[Self <: MulterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MulterOptions](x: Self) {
     
-    @scala.inline
-    def setDest(value: String): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
+    inline def setDest(value: String): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestUndefined: Self = StObject.set(x, "dest", js.undefined)
+    inline def setDestUndefined: Self = StObject.set(x, "dest", js.undefined)
     
-    @scala.inline
-    def setFileFilter(
+    inline def setFileFilter(
       value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* file */ File, /* callback */ js.Function2[/* error */ Error, /* acceptFile */ Boolean, Unit]) => Unit
     ): Self = StObject.set(x, "fileFilter", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setFileFilterUndefined: Self = StObject.set(x, "fileFilter", js.undefined)
+    inline def setFileFilterUndefined: Self = StObject.set(x, "fileFilter", js.undefined)
     
-    @scala.inline
-    def setLimits(value: FieldNameSize): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
+    inline def setLimits(value: FieldNameSize): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitsUndefined: Self = StObject.set(x, "limits", js.undefined)
+    inline def setLimitsUndefined: Self = StObject.set(x, "limits", js.undefined)
     
-    @scala.inline
-    def setStorage(value: StorageEngine): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+    inline def setStorage(value: StorageEngine): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
+    inline def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
   }
 }

@@ -15,19 +15,15 @@ trait TargetTransitionConfig[TContext, TEvent /* <: EventObject */]
 }
 object TargetTransitionConfig {
   
-  @scala.inline
-  def apply[TContext, TEvent /* <: EventObject */](target: TransitionTarget[TContext, TEvent]): TargetTransitionConfig[TContext, TEvent] = {
+  inline def apply[TContext, TEvent /* <: EventObject */](target: TransitionTarget[TContext, TEvent]): TargetTransitionConfig[TContext, TEvent] = {
     val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetTransitionConfig[TContext, TEvent]]
   }
   
-  @scala.inline
-  implicit class TargetTransitionConfigMutableBuilder[Self <: TargetTransitionConfig[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (TargetTransitionConfig[TContext, TEvent])) extends AnyVal {
+  extension [Self <: TargetTransitionConfig[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (TargetTransitionConfig[TContext, TEvent])) {
     
-    @scala.inline
-    def setTarget(value: TransitionTarget[TContext, TEvent]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: TransitionTarget[TContext, TEvent]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetVarargs(value: (String | (StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]]))*): Self = StObject.set(x, "target", js.Array(value :_*))
+    inline def setTargetVarargs(value: (String | (StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]]))*): Self = StObject.set(x, "target", js.Array(value :_*))
   }
 }

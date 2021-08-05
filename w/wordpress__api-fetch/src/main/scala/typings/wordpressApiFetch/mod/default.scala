@@ -9,10 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object default {
   
-  @scala.inline
-  def apply(options: APIFetchOptionsparsefalse): js.Promise[Response] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Response]]
-  @scala.inline
-  def apply[T](options: APIFetchOptions): js.Promise[T] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  inline def apply(options: APIFetchOptionsparsefalse): js.Promise[Response] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Response]]
+  inline def apply[T](options: APIFetchOptions): js.Promise[T] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
   
   @JSImport("@wordpress/api-fetch", JSImport.Default)
   @js.native
@@ -26,14 +24,11 @@ object default {
     * corresponding to the actively used nonce. You may also assign to this
     * property if you have a fresh nonce value to use.
     */
-  @scala.inline
-  def createNonceMiddleware(nonce: String): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("createNonceMiddleware")(nonce.asInstanceOf[js.Any]).asInstanceOf[Middleware]
+  inline def createNonceMiddleware(nonce: String): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("createNonceMiddleware")(nonce.asInstanceOf[js.Any]).asInstanceOf[Middleware]
   
-  @scala.inline
-  def createPreloadingMiddleware(data: Record[String, js.Any]): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("createPreloadingMiddleware")(data.asInstanceOf[js.Any]).asInstanceOf[Middleware]
+  inline def createPreloadingMiddleware(data: Record[String, js.Any]): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("createPreloadingMiddleware")(data.asInstanceOf[js.Any]).asInstanceOf[Middleware]
   
-  @scala.inline
-  def createRootURLMiddleware(rootUrl: String): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("createRootURLMiddleware")(rootUrl.asInstanceOf[js.Any]).asInstanceOf[Middleware]
+  inline def createRootURLMiddleware(rootUrl: String): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("createRootURLMiddleware")(rootUrl.asInstanceOf[js.Any]).asInstanceOf[Middleware]
   
   @JSImport("@wordpress/api-fetch", "default.fetchAllMiddleware")
   @js.native
@@ -45,9 +40,7 @@ object default {
     * custom fetch handler will receive the `options` passed to the `apiFetch`
     * calls.
     */
-  @scala.inline
-  def setFetchHandler(handler: js.Function1[/* options */ APIFetchOptions, js.Thenable[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setFetchHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setFetchHandler(handler: js.Function1[/* options */ APIFetchOptions, js.Thenable[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setFetchHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def use(middleware: Middleware): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(middleware.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def use(middleware: Middleware): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(middleware.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

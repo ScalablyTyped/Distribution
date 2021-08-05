@@ -12,6 +12,5 @@ object intMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def int(input: TensorInfo, backend: MathBackendWebGL): TensorInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("int")(input.asInstanceOf[js.Any], backend.asInstanceOf[js.Any])).asInstanceOf[TensorInfo]
+  inline def int(input: TensorInfo, backend: MathBackendWebGL): TensorInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("int")(input.asInstanceOf[js.Any], backend.asInstanceOf[js.Any])).asInstanceOf[TensorInfo]
 }

@@ -16,8 +16,7 @@ trait IPropertyValuesWithIconClues extends StObject {
 }
 object IPropertyValuesWithIconClues {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Clone: () => IPropertyValuesWithIconClues,
     IconClues: IPropertyValueIconClues,
     ObjVer: IObjVer,
@@ -27,19 +26,14 @@ object IPropertyValuesWithIconClues {
     __obj.asInstanceOf[IPropertyValuesWithIconClues]
   }
   
-  @scala.inline
-  implicit class IPropertyValuesWithIconCluesMutableBuilder[Self <: IPropertyValuesWithIconClues] (val x: Self) extends AnyVal {
+  extension [Self <: IPropertyValuesWithIconClues](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => IPropertyValuesWithIconClues): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IPropertyValuesWithIconClues): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIconClues(value: IPropertyValueIconClues): Self = StObject.set(x, "IconClues", value.asInstanceOf[js.Any])
+    inline def setIconClues(value: IPropertyValueIconClues): Self = StObject.set(x, "IconClues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjVer(value: IObjVer): Self = StObject.set(x, "ObjVer", value.asInstanceOf[js.Any])
+    inline def setObjVer(value: IObjVer): Self = StObject.set(x, "ObjVer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyValues(value: IPropertyValues): Self = StObject.set(x, "PropertyValues", value.asInstanceOf[js.Any])
+    inline def setPropertyValues(value: IPropertyValues): Self = StObject.set(x, "PropertyValues", value.asInstanceOf[js.Any])
   }
 }

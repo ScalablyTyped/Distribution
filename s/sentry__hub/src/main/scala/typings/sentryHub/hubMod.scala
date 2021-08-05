@@ -44,7 +44,7 @@ object hubMod {
     /**
       * Calls global extension method and binding current instance to the function call
       */
-    var _callExtensionMethod: js.Any = js.native
+    /* private */ var _callExtensionMethod: js.Any = js.native
     
     /**
       * Internal helper function to call a method on the top client if it exists.
@@ -52,15 +52,15 @@ object hubMod {
       * @param method The method to call on the client.
       * @param args Arguments to pass to the client function.
       */
-    var _invokeClient: js.Any = js.native
+    /* private */ var _invokeClient: js.Any = js.native
     
     /** Contains the last event id of a captured event.  */
-    var _lastEventId: js.Any = js.native
+    /* private */ var _lastEventId: js.Any = js.native
     
     /** Is a {@link Layer}[] containing the client and scope */
-    val _stack: js.Any = js.native
+    /* private */ val _stack: js.Any = js.native
     
-    val _version: js.Any = js.native
+    /* private */ val _version: js.Any = js.native
     
     /** Returns the scope of the top stack. */
     def getScope(): js.UndefOr[Scope] = js.native
@@ -72,21 +72,15 @@ object hubMod {
     def getStackTop(): Layer = js.native
   }
   
-  @scala.inline
-  def getActiveDomain(): js.UndefOr[DomainAsCarrier] = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveDomain")().asInstanceOf[js.UndefOr[DomainAsCarrier]]
+  inline def getActiveDomain(): js.UndefOr[DomainAsCarrier] = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveDomain")().asInstanceOf[js.UndefOr[DomainAsCarrier]]
   
-  @scala.inline
-  def getCurrentHub(): Hub = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentHub")().asInstanceOf[Hub]
+  inline def getCurrentHub(): Hub = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentHub")().asInstanceOf[Hub]
   
-  @scala.inline
-  def getHubFromCarrier(carrier: Carrier): Hub = ^.asInstanceOf[js.Dynamic].applyDynamic("getHubFromCarrier")(carrier.asInstanceOf[js.Any]).asInstanceOf[Hub]
+  inline def getHubFromCarrier(carrier: Carrier): Hub = ^.asInstanceOf[js.Dynamic].applyDynamic("getHubFromCarrier")(carrier.asInstanceOf[js.Any]).asInstanceOf[Hub]
   
-  @scala.inline
-  def getMainCarrier(): Carrier = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainCarrier")().asInstanceOf[Carrier]
+  inline def getMainCarrier(): Carrier = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainCarrier")().asInstanceOf[Carrier]
   
-  @scala.inline
-  def makeMain(hub: Hub): Hub = ^.asInstanceOf[js.Dynamic].applyDynamic("makeMain")(hub.asInstanceOf[js.Any]).asInstanceOf[Hub]
+  inline def makeMain(hub: Hub): Hub = ^.asInstanceOf[js.Dynamic].applyDynamic("makeMain")(hub.asInstanceOf[js.Any]).asInstanceOf[Hub]
   
-  @scala.inline
-  def setHubOnCarrier(carrier: Carrier, hub: Hub): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("setHubOnCarrier")(carrier.asInstanceOf[js.Any], hub.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def setHubOnCarrier(carrier: Carrier, hub: Hub): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("setHubOnCarrier")(carrier.asInstanceOf[js.Any], hub.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

@@ -29,26 +29,20 @@ object gapi {
       }
       object AndroidAppAsset {
         
-        @scala.inline
-        def apply(): AndroidAppAsset = {
+        inline def apply(): AndroidAppAsset = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[AndroidAppAsset]
         }
         
-        @scala.inline
-        implicit class AndroidAppAssetMutableBuilder[Self <: AndroidAppAsset] (val x: Self) extends AnyVal {
+        extension [Self <: AndroidAppAsset](x: Self) {
           
-          @scala.inline
-          def setCertificate(value: CertificateInfo): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+          inline def setCertificate(value: CertificateInfo): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
+          inline def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
           
-          @scala.inline
-          def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
+          inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
+          inline def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
         }
       }
       
@@ -62,26 +56,20 @@ object gapi {
       }
       object Asset {
         
-        @scala.inline
-        def apply(): Asset = {
+        inline def apply(): Asset = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[Asset]
         }
         
-        @scala.inline
-        implicit class AssetMutableBuilder[Self <: Asset] (val x: Self) extends AnyVal {
+        extension [Self <: Asset](x: Self) {
           
-          @scala.inline
-          def setAndroidApp(value: AndroidAppAsset): Self = StObject.set(x, "androidApp", value.asInstanceOf[js.Any])
+          inline def setAndroidApp(value: AndroidAppAsset): Self = StObject.set(x, "androidApp", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAndroidAppUndefined: Self = StObject.set(x, "androidApp", js.undefined)
+          inline def setAndroidAppUndefined: Self = StObject.set(x, "androidApp", js.undefined)
           
-          @scala.inline
-          def setWeb(value: WebAsset): Self = StObject.set(x, "web", value.asInstanceOf[js.Any])
+          inline def setWeb(value: WebAsset): Self = StObject.set(x, "web", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setWebUndefined: Self = StObject.set(x, "web", js.undefined)
+          inline def setWebUndefined: Self = StObject.set(x, "web", js.undefined)
         }
       }
       
@@ -116,20 +104,16 @@ object gapi {
       }
       object CertificateInfo {
         
-        @scala.inline
-        def apply(): CertificateInfo = {
+        inline def apply(): CertificateInfo = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[CertificateInfo]
         }
         
-        @scala.inline
-        implicit class CertificateInfoMutableBuilder[Self <: CertificateInfo] (val x: Self) extends AnyVal {
+        extension [Self <: CertificateInfo](x: Self) {
           
-          @scala.inline
-          def setSha256Fingerprint(value: String): Self = StObject.set(x, "sha256Fingerprint", value.asInstanceOf[js.Any])
+          inline def setSha256Fingerprint(value: String): Self = StObject.set(x, "sha256Fingerprint", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSha256FingerprintUndefined: Self = StObject.set(x, "sha256Fingerprint", js.undefined)
+          inline def setSha256FingerprintUndefined: Self = StObject.set(x, "sha256Fingerprint", js.undefined)
         }
       }
       
@@ -153,41 +137,30 @@ object gapi {
       }
       object CheckResponse {
         
-        @scala.inline
-        def apply(): CheckResponse = {
+        inline def apply(): CheckResponse = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[CheckResponse]
         }
         
-        @scala.inline
-        implicit class CheckResponseMutableBuilder[Self <: CheckResponse] (val x: Self) extends AnyVal {
+        extension [Self <: CheckResponse](x: Self) {
           
-          @scala.inline
-          def setDebugString(value: String): Self = StObject.set(x, "debugString", value.asInstanceOf[js.Any])
+          inline def setDebugString(value: String): Self = StObject.set(x, "debugString", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDebugStringUndefined: Self = StObject.set(x, "debugString", js.undefined)
+          inline def setDebugStringUndefined: Self = StObject.set(x, "debugString", js.undefined)
           
-          @scala.inline
-          def setErrorCode(value: js.Array[String]): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+          inline def setErrorCode(value: js.Array[String]): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
+          inline def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
           
-          @scala.inline
-          def setErrorCodeVarargs(value: String*): Self = StObject.set(x, "errorCode", js.Array(value :_*))
+          inline def setErrorCodeVarargs(value: String*): Self = StObject.set(x, "errorCode", js.Array(value :_*))
           
-          @scala.inline
-          def setLinked(value: Boolean): Self = StObject.set(x, "linked", value.asInstanceOf[js.Any])
+          inline def setLinked(value: Boolean): Self = StObject.set(x, "linked", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLinkedUndefined: Self = StObject.set(x, "linked", js.undefined)
+          inline def setLinkedUndefined: Self = StObject.set(x, "linked", js.undefined)
           
-          @scala.inline
-          def setMaxAge(value: String): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+          inline def setMaxAge(value: String): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+          inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
         }
       }
       
@@ -211,44 +184,32 @@ object gapi {
       }
       object ListResponse {
         
-        @scala.inline
-        def apply(): ListResponse = {
+        inline def apply(): ListResponse = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[ListResponse]
         }
         
-        @scala.inline
-        implicit class ListResponseMutableBuilder[Self <: ListResponse] (val x: Self) extends AnyVal {
+        extension [Self <: ListResponse](x: Self) {
           
-          @scala.inline
-          def setDebugString(value: String): Self = StObject.set(x, "debugString", value.asInstanceOf[js.Any])
+          inline def setDebugString(value: String): Self = StObject.set(x, "debugString", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDebugStringUndefined: Self = StObject.set(x, "debugString", js.undefined)
+          inline def setDebugStringUndefined: Self = StObject.set(x, "debugString", js.undefined)
           
-          @scala.inline
-          def setErrorCode(value: js.Array[String]): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+          inline def setErrorCode(value: js.Array[String]): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
+          inline def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
           
-          @scala.inline
-          def setErrorCodeVarargs(value: String*): Self = StObject.set(x, "errorCode", js.Array(value :_*))
+          inline def setErrorCodeVarargs(value: String*): Self = StObject.set(x, "errorCode", js.Array(value :_*))
           
-          @scala.inline
-          def setMaxAge(value: String): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+          inline def setMaxAge(value: String): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+          inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
           
-          @scala.inline
-          def setStatements(value: js.Array[Statement]): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
+          inline def setStatements(value: js.Array[Statement]): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setStatementsUndefined: Self = StObject.set(x, "statements", js.undefined)
+          inline def setStatementsUndefined: Self = StObject.set(x, "statements", js.undefined)
           
-          @scala.inline
-          def setStatementsVarargs(value: Statement*): Self = StObject.set(x, "statements", js.Array(value :_*))
+          inline def setStatementsVarargs(value: Statement*): Self = StObject.set(x, "statements", js.Array(value :_*))
         }
       }
       
@@ -270,32 +231,24 @@ object gapi {
       }
       object Statement {
         
-        @scala.inline
-        def apply(): Statement = {
+        inline def apply(): Statement = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[Statement]
         }
         
-        @scala.inline
-        implicit class StatementMutableBuilder[Self <: Statement] (val x: Self) extends AnyVal {
+        extension [Self <: Statement](x: Self) {
           
-          @scala.inline
-          def setRelation(value: String): Self = StObject.set(x, "relation", value.asInstanceOf[js.Any])
+          inline def setRelation(value: String): Self = StObject.set(x, "relation", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRelationUndefined: Self = StObject.set(x, "relation", js.undefined)
+          inline def setRelationUndefined: Self = StObject.set(x, "relation", js.undefined)
           
-          @scala.inline
-          def setSource(value: Asset): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+          inline def setSource(value: Asset): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+          inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
           
-          @scala.inline
-          def setTarget(value: Asset): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+          inline def setTarget(value: Asset): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+          inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
         }
       }
       
@@ -328,20 +281,16 @@ object gapi {
       }
       object WebAsset {
         
-        @scala.inline
-        def apply(): WebAsset = {
+        inline def apply(): WebAsset = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[WebAsset]
         }
         
-        @scala.inline
-        implicit class WebAssetMutableBuilder[Self <: WebAsset] (val x: Self) extends AnyVal {
+        extension [Self <: WebAsset](x: Self) {
           
-          @scala.inline
-          def setSite(value: String): Self = StObject.set(x, "site", value.asInstanceOf[js.Any])
+          inline def setSite(value: String): Self = StObject.set(x, "site", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSiteUndefined: Self = StObject.set(x, "site", js.undefined)
+          inline def setSiteUndefined: Self = StObject.set(x, "site", js.undefined)
         }
       }
     }

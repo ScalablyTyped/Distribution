@@ -20,49 +20,35 @@ trait GraphQLDirectiveConfig extends StObject {
 }
 object GraphQLDirectiveConfig {
   
-  @scala.inline
-  def apply(name: String): GraphQLDirectiveConfig = {
+  inline def apply(name: String): GraphQLDirectiveConfig = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLDirectiveConfig]
   }
   
-  @scala.inline
-  implicit class GraphQLDirectiveConfigMutableBuilder[Self <: GraphQLDirectiveConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GraphQLDirectiveConfig](x: Self) {
     
-    @scala.inline
-    def setArgs(value: js.Array[GraphQLArgument]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[GraphQLArgument]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+    inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    @scala.inline
-    def setArgsVarargs(value: GraphQLArgument*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: GraphQLArgument*): Self = StObject.set(x, "args", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnField(value: Boolean): Self = StObject.set(x, "onField", value.asInstanceOf[js.Any])
+    inline def setOnField(value: Boolean): Self = StObject.set(x, "onField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnFieldUndefined: Self = StObject.set(x, "onField", js.undefined)
+    inline def setOnFieldUndefined: Self = StObject.set(x, "onField", js.undefined)
     
-    @scala.inline
-    def setOnFragment(value: Boolean): Self = StObject.set(x, "onFragment", value.asInstanceOf[js.Any])
+    inline def setOnFragment(value: Boolean): Self = StObject.set(x, "onFragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnFragmentUndefined: Self = StObject.set(x, "onFragment", js.undefined)
+    inline def setOnFragmentUndefined: Self = StObject.set(x, "onFragment", js.undefined)
     
-    @scala.inline
-    def setOnOperation(value: Boolean): Self = StObject.set(x, "onOperation", value.asInstanceOf[js.Any])
+    inline def setOnOperation(value: Boolean): Self = StObject.set(x, "onOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnOperationUndefined: Self = StObject.set(x, "onOperation", js.undefined)
+    inline def setOnOperationUndefined: Self = StObject.set(x, "onOperation", js.undefined)
   }
 }

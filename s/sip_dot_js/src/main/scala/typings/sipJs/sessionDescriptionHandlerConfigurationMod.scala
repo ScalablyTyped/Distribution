@@ -23,26 +23,20 @@ object sessionDescriptionHandlerConfigurationMod {
   }
   object SessionDescriptionHandlerConfiguration {
     
-    @scala.inline
-    def apply(): SessionDescriptionHandlerConfiguration = {
+    inline def apply(): SessionDescriptionHandlerConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SessionDescriptionHandlerConfiguration]
     }
     
-    @scala.inline
-    implicit class SessionDescriptionHandlerConfigurationMutableBuilder[Self <: SessionDescriptionHandlerConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: SessionDescriptionHandlerConfiguration](x: Self) {
       
-      @scala.inline
-      def setIceGatheringTimeout(value: Double): Self = StObject.set(x, "iceGatheringTimeout", value.asInstanceOf[js.Any])
+      inline def setIceGatheringTimeout(value: Double): Self = StObject.set(x, "iceGatheringTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIceGatheringTimeoutUndefined: Self = StObject.set(x, "iceGatheringTimeout", js.undefined)
+      inline def setIceGatheringTimeoutUndefined: Self = StObject.set(x, "iceGatheringTimeout", js.undefined)
       
-      @scala.inline
-      def setPeerConnectionConfiguration(value: RTCConfiguration): Self = StObject.set(x, "peerConnectionConfiguration", value.asInstanceOf[js.Any])
+      inline def setPeerConnectionConfiguration(value: RTCConfiguration): Self = StObject.set(x, "peerConnectionConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeerConnectionConfigurationUndefined: Self = StObject.set(x, "peerConnectionConfiguration", js.undefined)
+      inline def setPeerConnectionConfigurationUndefined: Self = StObject.set(x, "peerConnectionConfiguration", js.undefined)
     }
   }
 }

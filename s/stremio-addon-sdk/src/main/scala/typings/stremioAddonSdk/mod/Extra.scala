@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Extra extends StObject
 object Extra {
   
-  @scala.inline
-  def genre: typings.stremioAddonSdk.stremioAddonSdkStrings.genre = "genre".asInstanceOf[typings.stremioAddonSdk.stremioAddonSdkStrings.genre]
+  inline def genre: typings.stremioAddonSdk.stremioAddonSdkStrings.genre = "genre".asInstanceOf[typings.stremioAddonSdk.stremioAddonSdkStrings.genre]
   
-  @scala.inline
-  def search: typings.stremioAddonSdk.stremioAddonSdkStrings.search = "search".asInstanceOf[typings.stremioAddonSdk.stremioAddonSdkStrings.search]
+  inline def search: typings.stremioAddonSdk.stremioAddonSdkStrings.search = "search".asInstanceOf[typings.stremioAddonSdk.stremioAddonSdkStrings.search]
   
-  @scala.inline
-  def skip: typings.stremioAddonSdk.stremioAddonSdkStrings.skip = "skip".asInstanceOf[typings.stremioAddonSdk.stremioAddonSdkStrings.skip]
+  inline def skip: typings.stremioAddonSdk.stremioAddonSdkStrings.skip = "skip".asInstanceOf[typings.stremioAddonSdk.stremioAddonSdkStrings.skip]
 }

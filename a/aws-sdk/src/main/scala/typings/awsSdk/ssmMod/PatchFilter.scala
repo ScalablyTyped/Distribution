@@ -18,22 +18,17 @@ trait PatchFilter extends StObject {
 }
 object PatchFilter {
   
-  @scala.inline
-  def apply(Key: PatchFilterKey, Values: PatchFilterValueList): PatchFilter = {
+  inline def apply(Key: PatchFilterKey, Values: PatchFilterValueList): PatchFilter = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], Values = Values.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatchFilter]
   }
   
-  @scala.inline
-  implicit class PatchFilterMutableBuilder[Self <: PatchFilter] (val x: Self) extends AnyVal {
+  extension [Self <: PatchFilter](x: Self) {
     
-    @scala.inline
-    def setKey(value: PatchFilterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: PatchFilterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: PatchFilterValueList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: PatchFilterValueList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: PatchFilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: PatchFilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

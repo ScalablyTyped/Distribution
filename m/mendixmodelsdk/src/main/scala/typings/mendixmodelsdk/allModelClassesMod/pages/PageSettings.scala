@@ -41,8 +41,7 @@ object PageSettings {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.PageSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PageSettings]
+  inline def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.PageSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PageSettings]
   
   /**
     * Creates and returns a new PageSettings instance in the SDK and on the server.
@@ -50,8 +49,7 @@ object PageSettings {
     * of the parent AssociationWidget element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInAssociationWidgetUnderSelectPageSettings(container: typings.mendixmodelsdk.pagesMod.pages.AssociationWidget): typings.mendixmodelsdk.pagesMod.pages.PageSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAssociationWidgetUnderSelectPageSettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PageSettings]
+  inline def createInAssociationWidgetUnderSelectPageSettings(container: typings.mendixmodelsdk.pagesMod.pages.AssociationWidget): typings.mendixmodelsdk.pagesMod.pages.PageSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAssociationWidgetUnderSelectPageSettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PageSettings]
   
   /**
     * Creates and returns a new PageSettings instance in the SDK and on the server.
@@ -62,8 +60,7 @@ object PageSettings {
     *  7.17.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInCreateObjectClientActionUnderPageSettings(container: typings.mendixmodelsdk.pagesMod.pages.CreateObjectClientAction): typings.mendixmodelsdk.pagesMod.pages.PageSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateObjectClientActionUnderPageSettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PageSettings]
+  inline def createInCreateObjectClientActionUnderPageSettings(container: typings.mendixmodelsdk.pagesMod.pages.CreateObjectClientAction): typings.mendixmodelsdk.pagesMod.pages.PageSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateObjectClientActionUnderPageSettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PageSettings]
   
   /**
     * Creates and returns a new PageSettings instance in the SDK and on the server.
@@ -71,8 +68,7 @@ object PageSettings {
     * of the parent DataGridAddButton element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInDataGridAddButtonUnderPageSettings(container: typings.mendixmodelsdk.pagesMod.pages.DataGridAddButton): typings.mendixmodelsdk.pagesMod.pages.PageSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataGridAddButtonUnderPageSettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PageSettings]
+  inline def createInDataGridAddButtonUnderPageSettings(container: typings.mendixmodelsdk.pagesMod.pages.DataGridAddButton): typings.mendixmodelsdk.pagesMod.pages.PageSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataGridAddButtonUnderPageSettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PageSettings]
   
   /**
     * Creates and returns a new PageSettings instance in the SDK and on the server.
@@ -83,8 +79,7 @@ object PageSettings {
     *  6.0.0 to 7.16.0
     */
   /* static member */
-  @scala.inline
-  def createInGridEditButtonUnderPageSettings(container: typings.mendixmodelsdk.pagesMod.pages.GridEditButton): typings.mendixmodelsdk.pagesMod.pages.PageSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridEditButtonUnderPageSettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PageSettings]
+  inline def createInGridEditButtonUnderPageSettings(container: typings.mendixmodelsdk.pagesMod.pages.GridEditButton): typings.mendixmodelsdk.pagesMod.pages.PageSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridEditButtonUnderPageSettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PageSettings]
   
   /**
     * Creates and returns a new PageSettings instance in the SDK and on the server.
@@ -92,8 +87,7 @@ object PageSettings {
     * of the parent GridNewButton element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInGridNewButtonUnderPageSettings(container: typings.mendixmodelsdk.pagesMod.pages.GridNewButton): typings.mendixmodelsdk.pagesMod.pages.PageSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridNewButtonUnderPageSettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PageSettings]
+  inline def createInGridNewButtonUnderPageSettings(container: typings.mendixmodelsdk.pagesMod.pages.GridNewButton): typings.mendixmodelsdk.pagesMod.pages.PageSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridNewButtonUnderPageSettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PageSettings]
   
   /**
     * Creates and returns a new PageSettings instance in the SDK and on the server.
@@ -104,8 +98,7 @@ object PageSettings {
     *  7.0.2 and higher
     */
   /* static member */
-  @scala.inline
-  def createInNavigationProfileUnderLoginPageSettings(container: NavigationProfile): typings.mendixmodelsdk.pagesMod.pages.PageSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationProfileUnderLoginPageSettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PageSettings]
+  inline def createInNavigationProfileUnderLoginPageSettings(container: NavigationProfile): typings.mendixmodelsdk.pagesMod.pages.PageSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationProfileUnderLoginPageSettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PageSettings]
   
   /**
     * Creates and returns a new PageSettings instance in the SDK and on the server.
@@ -116,8 +109,7 @@ object PageSettings {
     *  6.0.0 to 7.16.0
     */
   /* static member */
-  @scala.inline
-  def createInNewButtonUnderPageSettings(container: typings.mendixmodelsdk.pagesMod.pages.NewButton): typings.mendixmodelsdk.pagesMod.pages.PageSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNewButtonUnderPageSettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PageSettings]
+  inline def createInNewButtonUnderPageSettings(container: typings.mendixmodelsdk.pagesMod.pages.NewButton): typings.mendixmodelsdk.pagesMod.pages.PageSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNewButtonUnderPageSettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PageSettings]
   
   /**
     * Creates and returns a new PageSettings instance in the SDK and on the server.
@@ -125,8 +117,7 @@ object PageSettings {
     * of the parent PageClientAction element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInPageClientActionUnderPageSettings(container: typings.mendixmodelsdk.pagesMod.pages.PageClientAction): typings.mendixmodelsdk.pagesMod.pages.PageSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageClientActionUnderPageSettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PageSettings]
+  inline def createInPageClientActionUnderPageSettings(container: typings.mendixmodelsdk.pagesMod.pages.PageClientAction): typings.mendixmodelsdk.pagesMod.pages.PageSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageClientActionUnderPageSettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PageSettings]
   
   /**
     * Creates and returns a new PageSettings instance in the SDK and on the server.
@@ -134,8 +125,7 @@ object PageSettings {
     * of the parent PageForSpecialization element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInPageForSpecializationUnderPageSettings(container: typings.mendixmodelsdk.pagesMod.pages.PageForSpecialization): typings.mendixmodelsdk.pagesMod.pages.PageSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageForSpecializationUnderPageSettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PageSettings]
+  inline def createInPageForSpecializationUnderPageSettings(container: typings.mendixmodelsdk.pagesMod.pages.PageForSpecialization): typings.mendixmodelsdk.pagesMod.pages.PageSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageForSpecializationUnderPageSettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PageSettings]
   
   /**
     * Creates and returns a new PageSettings instance in the SDK and on the server.
@@ -143,8 +133,7 @@ object PageSettings {
     * of the parent ReferenceSelector element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInReferenceSelectorUnderGotoPageSettings(container: typings.mendixmodelsdk.pagesMod.pages.ReferenceSelector): typings.mendixmodelsdk.pagesMod.pages.PageSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSelectorUnderGotoPageSettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PageSettings]
+  inline def createInReferenceSelectorUnderGotoPageSettings(container: typings.mendixmodelsdk.pagesMod.pages.ReferenceSelector): typings.mendixmodelsdk.pagesMod.pages.PageSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSelectorUnderGotoPageSettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PageSettings]
   
   /**
     * Creates and returns a new PageSettings instance in the SDK and on the server.
@@ -152,20 +141,17 @@ object PageSettings {
     * of the parent microflows.ShowPageAction element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInShowPageActionUnderPageSettings(container: ShowPageAction): typings.mendixmodelsdk.pagesMod.pages.PageSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInShowPageActionUnderPageSettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PageSettings]
+  inline def createInShowPageActionUnderPageSettings(container: ShowPageAction): typings.mendixmodelsdk.pagesMod.pages.PageSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInShowPageActionUnderPageSettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PageSettings]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.PageSettings.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.PageSettings.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

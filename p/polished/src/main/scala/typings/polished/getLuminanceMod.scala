@@ -10,6 +10,5 @@ object getLuminanceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(color: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(color.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def default(color: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(color.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

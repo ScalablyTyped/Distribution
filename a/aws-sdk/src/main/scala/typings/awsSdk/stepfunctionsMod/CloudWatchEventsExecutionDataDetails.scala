@@ -13,19 +13,15 @@ trait CloudWatchEventsExecutionDataDetails extends StObject {
 }
 object CloudWatchEventsExecutionDataDetails {
   
-  @scala.inline
-  def apply(): CloudWatchEventsExecutionDataDetails = {
+  inline def apply(): CloudWatchEventsExecutionDataDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CloudWatchEventsExecutionDataDetails]
   }
   
-  @scala.inline
-  implicit class CloudWatchEventsExecutionDataDetailsMutableBuilder[Self <: CloudWatchEventsExecutionDataDetails] (val x: Self) extends AnyVal {
+  extension [Self <: CloudWatchEventsExecutionDataDetails](x: Self) {
     
-    @scala.inline
-    def setIncluded(value: included): Self = StObject.set(x, "included", value.asInstanceOf[js.Any])
+    inline def setIncluded(value: included): Self = StObject.set(x, "included", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludedUndefined: Self = StObject.set(x, "included", js.undefined)
+    inline def setIncludedUndefined: Self = StObject.set(x, "included", js.undefined)
   }
 }

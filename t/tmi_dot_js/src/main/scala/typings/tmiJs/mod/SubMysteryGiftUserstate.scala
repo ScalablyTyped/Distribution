@@ -16,25 +16,19 @@ trait SubMysteryGiftUserstate
 }
 object SubMysteryGiftUserstate {
   
-  @scala.inline
-  def apply(): SubMysteryGiftUserstate = {
+  inline def apply(): SubMysteryGiftUserstate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SubMysteryGiftUserstate]
   }
   
-  @scala.inline
-  implicit class SubMysteryGiftUserstateMutableBuilder[Self <: SubMysteryGiftUserstate] (val x: Self) extends AnyVal {
+  extension [Self <: SubMysteryGiftUserstate](x: Self) {
     
-    @scala.inline
-    def `setMessage-type`(value: submysterygift): Self = StObject.set(x, "message-type", value.asInstanceOf[js.Any])
+    inline def `setMessage-type`(value: submysterygift): Self = StObject.set(x, "message-type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMessage-typeUndefined`: Self = StObject.set(x, "message-type", js.undefined)
+    inline def `setMessage-typeUndefined`: Self = StObject.set(x, "message-type", js.undefined)
     
-    @scala.inline
-    def `setMsg-param-sender-count`(value: String | Boolean): Self = StObject.set(x, "msg-param-sender-count", value.asInstanceOf[js.Any])
+    inline def `setMsg-param-sender-count`(value: String | Boolean): Self = StObject.set(x, "msg-param-sender-count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMsg-param-sender-countUndefined`: Self = StObject.set(x, "msg-param-sender-count", js.undefined)
+    inline def `setMsg-param-sender-countUndefined`: Self = StObject.set(x, "msg-param-sender-count", js.undefined)
   }
 }

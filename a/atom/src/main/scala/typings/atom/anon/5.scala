@@ -12,28 +12,21 @@ trait `5` extends StObject {
 }
 object `5` {
   
-  @scala.inline
-  def apply(): `5` = {
+  inline def apply(): `5` = {
     val __obj = js.Dynamic.literal(newValue = null)
     __obj.asInstanceOf[`5`]
   }
   
-  @scala.inline
-  implicit class `5MutableBuilder`[Self <: `5`] (val x: Self) extends AnyVal {
+  extension [Self <: `5`](x: Self) {
     
-    @scala.inline
-    def setNewValue(value: String): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: String): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewValueNull: Self = StObject.set(x, "newValue", null)
+    inline def setNewValueNull: Self = StObject.set(x, "newValue", null)
     
-    @scala.inline
-    def setOldValue(value: String): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+    inline def setOldValue(value: String): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValueNull: Self = StObject.set(x, "oldValue", null)
+    inline def setOldValueNull: Self = StObject.set(x, "oldValue", null)
     
-    @scala.inline
-    def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
+    inline def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
   }
 }

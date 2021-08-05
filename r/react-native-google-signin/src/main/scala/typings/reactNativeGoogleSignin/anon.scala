@@ -22,50 +22,36 @@ object anon {
   }
   object Email {
     
-    @scala.inline
-    def apply(): Email = {
+    inline def apply(): Email = {
       val __obj = js.Dynamic.literal(email = null, familyName = null, givenName = null, id = null, name = null, photo = null)
       __obj.asInstanceOf[Email]
     }
     
-    @scala.inline
-    implicit class EmailMutableBuilder[Self <: Email] (val x: Self) extends AnyVal {
+    extension [Self <: Email](x: Self) {
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailNull: Self = StObject.set(x, "email", null)
+      inline def setEmailNull: Self = StObject.set(x, "email", null)
       
-      @scala.inline
-      def setFamilyName(value: String): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
+      inline def setFamilyName(value: String): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFamilyNameNull: Self = StObject.set(x, "familyName", null)
+      inline def setFamilyNameNull: Self = StObject.set(x, "familyName", null)
       
-      @scala.inline
-      def setGivenName(value: String): Self = StObject.set(x, "givenName", value.asInstanceOf[js.Any])
+      inline def setGivenName(value: String): Self = StObject.set(x, "givenName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGivenNameNull: Self = StObject.set(x, "givenName", null)
+      inline def setGivenNameNull: Self = StObject.set(x, "givenName", null)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdNull: Self = StObject.set(x, "id", null)
+      inline def setIdNull: Self = StObject.set(x, "id", null)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameNull: Self = StObject.set(x, "name", null)
+      inline def setNameNull: Self = StObject.set(x, "name", null)
       
-      @scala.inline
-      def setPhoto(value: String): Self = StObject.set(x, "photo", value.asInstanceOf[js.Any])
+      inline def setPhoto(value: String): Self = StObject.set(x, "photo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhotoNull: Self = StObject.set(x, "photo", null)
+      inline def setPhotoNull: Self = StObject.set(x, "photo", null)
     }
   }
 }

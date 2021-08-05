@@ -13,7 +13,7 @@ trait Outline extends StObject {
   
   val Creator: XlCreator = js.native
   
-  @JSName("Excel.Outline_typekey")
+  /* private */ @JSName("Excel.Outline_typekey")
   var ExcelDotOutline_typekey: Outline = js.native
   
   val Parent: js.Any = js.native

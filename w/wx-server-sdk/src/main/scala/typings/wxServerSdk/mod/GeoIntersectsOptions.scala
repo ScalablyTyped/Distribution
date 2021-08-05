@@ -10,16 +10,13 @@ trait GeoIntersectsOptions extends StObject {
 }
 object GeoIntersectsOptions {
   
-  @scala.inline
-  def apply(geometry: Point | LineString | MultiPoint | MultiLineString | Polygon | MultiPolygon): GeoIntersectsOptions = {
+  inline def apply(geometry: Point | LineString | MultiPoint | MultiLineString | Polygon | MultiPolygon): GeoIntersectsOptions = {
     val __obj = js.Dynamic.literal(geometry = geometry.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoIntersectsOptions]
   }
   
-  @scala.inline
-  implicit class GeoIntersectsOptionsMutableBuilder[Self <: GeoIntersectsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GeoIntersectsOptions](x: Self) {
     
-    @scala.inline
-    def setGeometry(value: Point | LineString | MultiPoint | MultiLineString | Polygon | MultiPolygon): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    inline def setGeometry(value: Point | LineString | MultiPoint | MultiLineString | Polygon | MultiPolygon): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
   }
 }

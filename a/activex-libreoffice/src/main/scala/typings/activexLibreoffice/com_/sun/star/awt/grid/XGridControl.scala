@@ -70,8 +70,7 @@ trait XGridControl extends StObject {
 }
 object XGridControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CurrentColumn: Double,
     CurrentRow: Double,
     getColumnAtPoint: (Double, Double) => Double,
@@ -84,28 +83,20 @@ object XGridControl {
     __obj.asInstanceOf[XGridControl]
   }
   
-  @scala.inline
-  implicit class XGridControlMutableBuilder[Self <: XGridControl] (val x: Self) extends AnyVal {
+  extension [Self <: XGridControl](x: Self) {
     
-    @scala.inline
-    def setCurrentColumn(value: Double): Self = StObject.set(x, "CurrentColumn", value.asInstanceOf[js.Any])
+    inline def setCurrentColumn(value: Double): Self = StObject.set(x, "CurrentColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentRow(value: Double): Self = StObject.set(x, "CurrentRow", value.asInstanceOf[js.Any])
+    inline def setCurrentRow(value: Double): Self = StObject.set(x, "CurrentRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetColumnAtPoint(value: (Double, Double) => Double): Self = StObject.set(x, "getColumnAtPoint", js.Any.fromFunction2(value))
+    inline def setGetColumnAtPoint(value: (Double, Double) => Double): Self = StObject.set(x, "getColumnAtPoint", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetCurrentColumn(value: () => Double): Self = StObject.set(x, "getCurrentColumn", js.Any.fromFunction0(value))
+    inline def setGetCurrentColumn(value: () => Double): Self = StObject.set(x, "getCurrentColumn", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCurrentRow(value: () => Double): Self = StObject.set(x, "getCurrentRow", js.Any.fromFunction0(value))
+    inline def setGetCurrentRow(value: () => Double): Self = StObject.set(x, "getCurrentRow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRowAtPoint(value: (Double, Double) => Double): Self = StObject.set(x, "getRowAtPoint", js.Any.fromFunction2(value))
+    inline def setGetRowAtPoint(value: (Double, Double) => Double): Self = StObject.set(x, "getRowAtPoint", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGoToCell(value: (Double, Double) => Unit): Self = StObject.set(x, "goToCell", js.Any.fromFunction2(value))
+    inline def setGoToCell(value: (Double, Double) => Unit): Self = StObject.set(x, "goToCell", js.Any.fromFunction2(value))
   }
 }

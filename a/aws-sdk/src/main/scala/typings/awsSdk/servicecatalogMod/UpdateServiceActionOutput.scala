@@ -13,19 +13,15 @@ trait UpdateServiceActionOutput extends StObject {
 }
 object UpdateServiceActionOutput {
   
-  @scala.inline
-  def apply(): UpdateServiceActionOutput = {
+  inline def apply(): UpdateServiceActionOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateServiceActionOutput]
   }
   
-  @scala.inline
-  implicit class UpdateServiceActionOutputMutableBuilder[Self <: UpdateServiceActionOutput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateServiceActionOutput](x: Self) {
     
-    @scala.inline
-    def setServiceActionDetail(value: ServiceActionDetail): Self = StObject.set(x, "ServiceActionDetail", value.asInstanceOf[js.Any])
+    inline def setServiceActionDetail(value: ServiceActionDetail): Self = StObject.set(x, "ServiceActionDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceActionDetailUndefined: Self = StObject.set(x, "ServiceActionDetail", js.undefined)
+    inline def setServiceActionDetailUndefined: Self = StObject.set(x, "ServiceActionDetail", js.undefined)
   }
 }

@@ -38,49 +38,35 @@ trait InstanceNetworkInterfaceAttachment extends StObject {
 }
 object InstanceNetworkInterfaceAttachment {
   
-  @scala.inline
-  def apply(): InstanceNetworkInterfaceAttachment = {
+  inline def apply(): InstanceNetworkInterfaceAttachment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceNetworkInterfaceAttachment]
   }
   
-  @scala.inline
-  implicit class InstanceNetworkInterfaceAttachmentMutableBuilder[Self <: InstanceNetworkInterfaceAttachment] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceNetworkInterfaceAttachment](x: Self) {
     
-    @scala.inline
-    def setAttachTime(value: DateTime): Self = StObject.set(x, "AttachTime", value.asInstanceOf[js.Any])
+    inline def setAttachTime(value: DateTime): Self = StObject.set(x, "AttachTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachTimeUndefined: Self = StObject.set(x, "AttachTime", js.undefined)
+    inline def setAttachTimeUndefined: Self = StObject.set(x, "AttachTime", js.undefined)
     
-    @scala.inline
-    def setAttachmentId(value: String): Self = StObject.set(x, "AttachmentId", value.asInstanceOf[js.Any])
+    inline def setAttachmentId(value: String): Self = StObject.set(x, "AttachmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentIdUndefined: Self = StObject.set(x, "AttachmentId", js.undefined)
+    inline def setAttachmentIdUndefined: Self = StObject.set(x, "AttachmentId", js.undefined)
     
-    @scala.inline
-    def setDeleteOnTermination(value: Boolean): Self = StObject.set(x, "DeleteOnTermination", value.asInstanceOf[js.Any])
+    inline def setDeleteOnTermination(value: Boolean): Self = StObject.set(x, "DeleteOnTermination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteOnTerminationUndefined: Self = StObject.set(x, "DeleteOnTermination", js.undefined)
+    inline def setDeleteOnTerminationUndefined: Self = StObject.set(x, "DeleteOnTermination", js.undefined)
     
-    @scala.inline
-    def setDeviceIndex(value: Integer): Self = StObject.set(x, "DeviceIndex", value.asInstanceOf[js.Any])
+    inline def setDeviceIndex(value: Integer): Self = StObject.set(x, "DeviceIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceIndexUndefined: Self = StObject.set(x, "DeviceIndex", js.undefined)
+    inline def setDeviceIndexUndefined: Self = StObject.set(x, "DeviceIndex", js.undefined)
     
-    @scala.inline
-    def setNetworkCardIndex(value: Integer): Self = StObject.set(x, "NetworkCardIndex", value.asInstanceOf[js.Any])
+    inline def setNetworkCardIndex(value: Integer): Self = StObject.set(x, "NetworkCardIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkCardIndexUndefined: Self = StObject.set(x, "NetworkCardIndex", js.undefined)
+    inline def setNetworkCardIndexUndefined: Self = StObject.set(x, "NetworkCardIndex", js.undefined)
     
-    @scala.inline
-    def setStatus(value: AttachmentStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: AttachmentStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

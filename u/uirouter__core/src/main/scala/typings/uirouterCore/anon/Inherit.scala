@@ -12,25 +12,19 @@ trait Inherit extends StObject {
 }
 object Inherit {
   
-  @scala.inline
-  def apply(): Inherit = {
+  inline def apply(): Inherit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Inherit]
   }
   
-  @scala.inline
-  implicit class InheritMutableBuilder[Self <: Inherit] (val x: Self) extends AnyVal {
+  extension [Self <: Inherit](x: Self) {
     
-    @scala.inline
-    def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
+    inline def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
+    inline def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
     
-    @scala.inline
-    def setMatchingKeys(value: js.Any): Self = StObject.set(x, "matchingKeys", value.asInstanceOf[js.Any])
+    inline def setMatchingKeys(value: js.Any): Self = StObject.set(x, "matchingKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchingKeysUndefined: Self = StObject.set(x, "matchingKeys", js.undefined)
+    inline def setMatchingKeysUndefined: Self = StObject.set(x, "matchingKeys", js.undefined)
   }
 }

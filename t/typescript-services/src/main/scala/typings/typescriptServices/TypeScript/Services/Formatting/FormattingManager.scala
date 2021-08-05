@@ -21,18 +21,17 @@ trait FormattingManager extends StObject {
   
   /* private */ def formatSpan(span: js.Any, formattingRequestKind: js.Any): js.Any
   
-  var options: js.Any
+  /* private */ var options: js.Any
   
-  var rulesProvider: js.Any
+  /* private */ var rulesProvider: js.Any
   
-  var snapshot: js.Any
+  /* private */ var snapshot: js.Any
   
-  var syntaxTree: js.Any
+  /* private */ var syntaxTree: js.Any
 }
 object FormattingManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     formatDocument: (Double, Double) => js.Array[TextEdit],
     formatOnClosingCurlyBrace: Double => js.Array[TextEdit],
     formatOnEnter: Double => js.Array[TextEdit],
@@ -49,40 +48,28 @@ object FormattingManager {
     __obj.asInstanceOf[FormattingManager]
   }
   
-  @scala.inline
-  implicit class FormattingManagerMutableBuilder[Self <: FormattingManager] (val x: Self) extends AnyVal {
+  extension [Self <: FormattingManager](x: Self) {
     
-    @scala.inline
-    def setFormatDocument(value: (Double, Double) => js.Array[TextEdit]): Self = StObject.set(x, "formatDocument", js.Any.fromFunction2(value))
+    inline def setFormatDocument(value: (Double, Double) => js.Array[TextEdit]): Self = StObject.set(x, "formatDocument", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFormatOnClosingCurlyBrace(value: Double => js.Array[TextEdit]): Self = StObject.set(x, "formatOnClosingCurlyBrace", js.Any.fromFunction1(value))
+    inline def setFormatOnClosingCurlyBrace(value: Double => js.Array[TextEdit]): Self = StObject.set(x, "formatOnClosingCurlyBrace", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFormatOnEnter(value: Double => js.Array[TextEdit]): Self = StObject.set(x, "formatOnEnter", js.Any.fromFunction1(value))
+    inline def setFormatOnEnter(value: Double => js.Array[TextEdit]): Self = StObject.set(x, "formatOnEnter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFormatOnPaste(value: (Double, Double) => js.Array[TextEdit]): Self = StObject.set(x, "formatOnPaste", js.Any.fromFunction2(value))
+    inline def setFormatOnPaste(value: (Double, Double) => js.Array[TextEdit]): Self = StObject.set(x, "formatOnPaste", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFormatOnSemicolon(value: Double => js.Array[TextEdit]): Self = StObject.set(x, "formatOnSemicolon", js.Any.fromFunction1(value))
+    inline def setFormatOnSemicolon(value: Double => js.Array[TextEdit]): Self = StObject.set(x, "formatOnSemicolon", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFormatSelection(value: (Double, Double) => js.Array[TextEdit]): Self = StObject.set(x, "formatSelection", js.Any.fromFunction2(value))
+    inline def setFormatSelection(value: (Double, Double) => js.Array[TextEdit]): Self = StObject.set(x, "formatSelection", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFormatSpan(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "formatSpan", js.Any.fromFunction2(value))
+    inline def setFormatSpan(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "formatSpan", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesProvider(value: js.Any): Self = StObject.set(x, "rulesProvider", value.asInstanceOf[js.Any])
+    inline def setRulesProvider(value: js.Any): Self = StObject.set(x, "rulesProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshot(value: js.Any): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
+    inline def setSnapshot(value: js.Any): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyntaxTree(value: js.Any): Self = StObject.set(x, "syntaxTree", value.asInstanceOf[js.Any])
+    inline def setSyntaxTree(value: js.Any): Self = StObject.set(x, "syntaxTree", value.asInstanceOf[js.Any])
   }
 }

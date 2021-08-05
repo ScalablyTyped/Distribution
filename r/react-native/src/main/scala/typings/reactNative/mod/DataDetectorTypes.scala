@@ -16,21 +16,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DataDetectorTypes extends StObject
 object DataDetectorTypes {
   
-  @scala.inline
-  def address: typings.reactNative.reactNativeStrings.address = "address".asInstanceOf[typings.reactNative.reactNativeStrings.address]
+  inline def address: typings.reactNative.reactNativeStrings.address = "address".asInstanceOf[typings.reactNative.reactNativeStrings.address]
   
-  @scala.inline
-  def all: all_ = "all".asInstanceOf[all_]
+  inline def all: all_ = "all".asInstanceOf[all_]
   
-  @scala.inline
-  def calendarEvent: typings.reactNative.reactNativeStrings.calendarEvent = "calendarEvent".asInstanceOf[typings.reactNative.reactNativeStrings.calendarEvent]
+  inline def calendarEvent: typings.reactNative.reactNativeStrings.calendarEvent = "calendarEvent".asInstanceOf[typings.reactNative.reactNativeStrings.calendarEvent]
   
-  @scala.inline
-  def link: typings.reactNative.reactNativeStrings.link = "link".asInstanceOf[typings.reactNative.reactNativeStrings.link]
+  inline def link: typings.reactNative.reactNativeStrings.link = "link".asInstanceOf[typings.reactNative.reactNativeStrings.link]
   
-  @scala.inline
-  def none: typings.reactNative.reactNativeStrings.none = "none".asInstanceOf[typings.reactNative.reactNativeStrings.none]
+  inline def none: typings.reactNative.reactNativeStrings.none = "none".asInstanceOf[typings.reactNative.reactNativeStrings.none]
   
-  @scala.inline
-  def phoneNumber: typings.reactNative.reactNativeStrings.phoneNumber = "phoneNumber".asInstanceOf[typings.reactNative.reactNativeStrings.phoneNumber]
+  inline def phoneNumber: typings.reactNative.reactNativeStrings.phoneNumber = "phoneNumber".asInstanceOf[typings.reactNative.reactNativeStrings.phoneNumber]
 }

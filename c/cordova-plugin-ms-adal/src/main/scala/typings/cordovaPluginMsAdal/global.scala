@@ -53,10 +53,8 @@ object global {
           * @returns {Promise}  Promise either fulfilled with newly created authentication context or rejected with error
           */
         /* static member */
-        @scala.inline
-        def createAsync(authority: String): PromiseAuthenticationContext = ^.asInstanceOf[js.Dynamic].applyDynamic("createAsync")(authority.asInstanceOf[js.Any]).asInstanceOf[PromiseAuthenticationContext]
-        @scala.inline
-        def createAsync(authority: String, validateAuthority: Boolean): PromiseAuthenticationContext = (^.asInstanceOf[js.Dynamic].applyDynamic("createAsync")(authority.asInstanceOf[js.Any], validateAuthority.asInstanceOf[js.Any])).asInstanceOf[PromiseAuthenticationContext]
+        inline def createAsync(authority: String): PromiseAuthenticationContext = ^.asInstanceOf[js.Dynamic].applyDynamic("createAsync")(authority.asInstanceOf[js.Any]).asInstanceOf[PromiseAuthenticationContext]
+        inline def createAsync(authority: String, validateAuthority: Boolean): PromiseAuthenticationContext = (^.asInstanceOf[js.Dynamic].applyDynamic("createAsync")(authority.asInstanceOf[js.Any], validateAuthority.asInstanceOf[js.Any])).asInstanceOf[PromiseAuthenticationContext]
       }
       
       @JSGlobal("Microsoft.ADAL.AuthenticationResult")

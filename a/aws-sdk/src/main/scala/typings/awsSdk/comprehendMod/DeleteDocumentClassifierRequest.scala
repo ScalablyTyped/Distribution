@@ -13,16 +13,13 @@ trait DeleteDocumentClassifierRequest extends StObject {
 }
 object DeleteDocumentClassifierRequest {
   
-  @scala.inline
-  def apply(DocumentClassifierArn: DocumentClassifierArn): DeleteDocumentClassifierRequest = {
+  inline def apply(DocumentClassifierArn: DocumentClassifierArn): DeleteDocumentClassifierRequest = {
     val __obj = js.Dynamic.literal(DocumentClassifierArn = DocumentClassifierArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDocumentClassifierRequest]
   }
   
-  @scala.inline
-  implicit class DeleteDocumentClassifierRequestMutableBuilder[Self <: DeleteDocumentClassifierRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDocumentClassifierRequest](x: Self) {
     
-    @scala.inline
-    def setDocumentClassifierArn(value: DocumentClassifierArn): Self = StObject.set(x, "DocumentClassifierArn", value.asInstanceOf[js.Any])
+    inline def setDocumentClassifierArn(value: DocumentClassifierArn): Self = StObject.set(x, "DocumentClassifierArn", value.asInstanceOf[js.Any])
   }
 }

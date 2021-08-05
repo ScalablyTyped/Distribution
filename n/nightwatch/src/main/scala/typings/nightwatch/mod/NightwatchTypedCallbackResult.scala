@@ -18,22 +18,17 @@ trait NightwatchTypedCallbackResult[T]
 }
 object NightwatchTypedCallbackResult {
   
-  @scala.inline
-  def apply[T](state: Error | String, value: T): NightwatchTypedCallbackResult[T] = {
+  inline def apply[T](state: Error | String, value: T): NightwatchTypedCallbackResult[T] = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any], status = 0, value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[NightwatchTypedCallbackResult[T]]
   }
   
-  @scala.inline
-  implicit class NightwatchTypedCallbackResultMutableBuilder[Self <: NightwatchTypedCallbackResult[?], T] (val x: Self & NightwatchTypedCallbackResult[T]) extends AnyVal {
+  extension [Self <: NightwatchTypedCallbackResult[?], T](x: Self & NightwatchTypedCallbackResult[T]) {
     
-    @scala.inline
-    def setState(value: Error | String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: Error | String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: `0`): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: `0`): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait CSSMatrixComponentOptions extends StObject {
 }
 object CSSMatrixComponentOptions {
   
-  @scala.inline
-  def apply(is2D: Boolean): CSSMatrixComponentOptions = {
+  inline def apply(is2D: Boolean): CSSMatrixComponentOptions = {
     val __obj = js.Dynamic.literal(is2D = is2D.asInstanceOf[js.Any])
     __obj.asInstanceOf[CSSMatrixComponentOptions]
   }
   
-  @scala.inline
-  implicit class CSSMatrixComponentOptionsMutableBuilder[Self <: CSSMatrixComponentOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CSSMatrixComponentOptions](x: Self) {
     
-    @scala.inline
-    def setIs2D(value: Boolean): Self = StObject.set(x, "is2D", value.asInstanceOf[js.Any])
+    inline def setIs2D(value: Boolean): Self = StObject.set(x, "is2D", value.asInstanceOf[js.Any])
   }
 }

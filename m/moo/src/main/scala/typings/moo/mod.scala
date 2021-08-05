@@ -14,8 +14,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def compile(rules: Rules): Lexer = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(rules.asInstanceOf[js.Any]).asInstanceOf[Lexer]
+  inline def compile(rules: Rules): Lexer = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(rules.asInstanceOf[js.Any]).asInstanceOf[Lexer]
   
   @JSImport("moo", "error")
   @js.native
@@ -25,13 +24,10 @@ object mod {
   @js.native
   val fallback: FallbackRule = js.native
   
-  @scala.inline
-  def keywords(kws: StringDictionary[String | js.Array[String]]): TypeMapper = ^.asInstanceOf[js.Dynamic].applyDynamic("keywords")(kws.asInstanceOf[js.Any]).asInstanceOf[TypeMapper]
+  inline def keywords(kws: StringDictionary[String | js.Array[String]]): TypeMapper = ^.asInstanceOf[js.Dynamic].applyDynamic("keywords")(kws.asInstanceOf[js.Any]).asInstanceOf[TypeMapper]
   
-  @scala.inline
-  def states(states: StringDictionary[Rules]): Lexer = ^.asInstanceOf[js.Dynamic].applyDynamic("states")(states.asInstanceOf[js.Any]).asInstanceOf[Lexer]
-  @scala.inline
-  def states(states: StringDictionary[Rules], start: String): Lexer = (^.asInstanceOf[js.Dynamic].applyDynamic("states")(states.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Lexer]
+  inline def states(states: StringDictionary[Rules]): Lexer = ^.asInstanceOf[js.Dynamic].applyDynamic("states")(states.asInstanceOf[js.Any]).asInstanceOf[Lexer]
+  inline def states(states: StringDictionary[Rules], start: String): Lexer = (^.asInstanceOf[js.Dynamic].applyDynamic("states")(states.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Lexer]
   
   trait ErrorRule extends StObject {
     
@@ -39,17 +35,14 @@ object mod {
   }
   object ErrorRule {
     
-    @scala.inline
-    def apply(): ErrorRule = {
+    inline def apply(): ErrorRule = {
       val __obj = js.Dynamic.literal(error = true)
       __obj.asInstanceOf[ErrorRule]
     }
     
-    @scala.inline
-    implicit class ErrorRuleMutableBuilder[Self <: ErrorRule] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorRule](x: Self) {
       
-      @scala.inline
-      def setError(value: `true`): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: `true`): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
   }
   
@@ -59,17 +52,14 @@ object mod {
   }
   object FallbackRule {
     
-    @scala.inline
-    def apply(): FallbackRule = {
+    inline def apply(): FallbackRule = {
       val __obj = js.Dynamic.literal(fallback = true)
       __obj.asInstanceOf[FallbackRule]
     }
     
-    @scala.inline
-    implicit class FallbackRuleMutableBuilder[Self <: FallbackRule] (val x: Self) extends AnyVal {
+    extension [Self <: FallbackRule](x: Self) {
       
-      @scala.inline
-      def setFallback(value: `true`): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      inline def setFallback(value: `true`): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
     }
   }
   
@@ -137,23 +127,18 @@ object mod {
   }
   object LexerState {
     
-    @scala.inline
-    def apply(col: Double, line: Double, state: String): LexerState = {
+    inline def apply(col: Double, line: Double, state: String): LexerState = {
       val __obj = js.Dynamic.literal(col = col.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[LexerState]
     }
     
-    @scala.inline
-    implicit class LexerStateMutableBuilder[Self <: LexerState] (val x: Self) extends AnyVal {
+    extension [Self <: LexerState](x: Self) {
       
-      @scala.inline
-      def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
+      inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
@@ -202,65 +187,46 @@ object mod {
   }
   object Rule {
     
-    @scala.inline
-    def apply(): Rule = {
+    inline def apply(): Rule = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Rule]
     }
     
-    @scala.inline
-    implicit class RuleMutableBuilder[Self <: Rule] (val x: Self) extends AnyVal {
+    extension [Self <: Rule](x: Self) {
       
-      @scala.inline
-      def setError(value: `true`): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: `true`): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setLineBreaks(value: Boolean): Self = StObject.set(x, "lineBreaks", value.asInstanceOf[js.Any])
+      inline def setLineBreaks(value: Boolean): Self = StObject.set(x, "lineBreaks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineBreaksUndefined: Self = StObject.set(x, "lineBreaks", js.undefined)
+      inline def setLineBreaksUndefined: Self = StObject.set(x, "lineBreaks", js.undefined)
       
-      @scala.inline
-      def setMatch(value: RegExp | String | js.Array[String]): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+      inline def setMatch(value: RegExp | String | js.Array[String]): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
+      inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
       
-      @scala.inline
-      def setMatchVarargs(value: String*): Self = StObject.set(x, "match", js.Array(value :_*))
+      inline def setMatchVarargs(value: String*): Self = StObject.set(x, "match", js.Array(value :_*))
       
-      @scala.inline
-      def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+      inline def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+      inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
       
-      @scala.inline
-      def setPop(value: Double): Self = StObject.set(x, "pop", value.asInstanceOf[js.Any])
+      inline def setPop(value: Double): Self = StObject.set(x, "pop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopUndefined: Self = StObject.set(x, "pop", js.undefined)
+      inline def setPopUndefined: Self = StObject.set(x, "pop", js.undefined)
       
-      @scala.inline
-      def setPush(value: String): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
+      inline def setPush(value: String): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
+      inline def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
       
-      @scala.inline
-      def setType(value: /* x */ String => String): Self = StObject.set(x, "type", js.Any.fromFunction1(value))
+      inline def setType(value: /* x */ String => String): Self = StObject.set(x, "type", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setValue(value: /* x */ String => String): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
+      inline def setValue(value: /* x */ String => String): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -305,38 +271,28 @@ object mod {
   }
   object Token {
     
-    @scala.inline
-    def apply(col: Double, line: Double, lineBreaks: Double, offset: Double, text: String, value: String): Token = {
+    inline def apply(col: Double, line: Double, lineBreaks: Double, offset: Double, text: String, value: String): Token = {
       val __obj = js.Dynamic.literal(col = col.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], lineBreaks = lineBreaks.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Token]
     }
     
-    @scala.inline
-    implicit class TokenMutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
+    extension [Self <: Token](x: Self) {
       
-      @scala.inline
-      def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
+      inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineBreaks(value: Double): Self = StObject.set(x, "lineBreaks", value.asInstanceOf[js.Any])
+      inline def setLineBreaks(value: Double): Self = StObject.set(x, "lineBreaks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

@@ -21,6 +21,5 @@ object Popup {
   @JSImport("office-ui-fabric-react/lib/index.bundle", "Popup.defaultProps")
   @js.native
   def defaultProps: IPopupProps = js.native
-  @scala.inline
-  def defaultProps_=(x: IPopupProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: IPopupProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

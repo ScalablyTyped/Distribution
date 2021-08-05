@@ -11,19 +11,15 @@ trait PickAutocompleteupdateDat extends StObject {
 }
 object PickAutocompleteupdateDat {
   
-  @scala.inline
-  def apply(): PickAutocompleteupdateDat = {
+  inline def apply(): PickAutocompleteupdateDat = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PickAutocompleteupdateDat]
   }
   
-  @scala.inline
-  implicit class PickAutocompleteupdateDatMutableBuilder[Self <: PickAutocompleteupdateDat] (val x: Self) extends AnyVal {
+  extension [Self <: PickAutocompleteupdateDat](x: Self) {
     
-    @scala.inline
-    def setUpdateData(value: js.Any): Self = StObject.set(x, "updateData", value.asInstanceOf[js.Any])
+    inline def setUpdateData(value: js.Any): Self = StObject.set(x, "updateData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateDataUndefined: Self = StObject.set(x, "updateData", js.undefined)
+    inline def setUpdateDataUndefined: Self = StObject.set(x, "updateData", js.undefined)
   }
 }

@@ -13,6 +13,5 @@ object childrenMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(props: Props, state: State): PartialState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PartialState]
+  inline def default(props: Props, state: State): PartialState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PartialState]
 }

@@ -10,8 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createLock(): Lock = ^.asInstanceOf[js.Dynamic].applyDynamic("createLock")().asInstanceOf[Lock]
+  inline def createLock(): Lock = ^.asInstanceOf[js.Dynamic].applyDynamic("createLock")().asInstanceOf[Lock]
   
   type Callback = js.Function0[Unit]
   
@@ -31,8 +30,7 @@ object mod {
   }
   object Lock {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       count: Double,
       dispose: () => Unit,
       downgrade: () => Unit,
@@ -44,26 +42,19 @@ object mod {
       __obj.asInstanceOf[Lock]
     }
     
-    @scala.inline
-    implicit class LockMutableBuilder[Self <: Lock] (val x: Self) extends AnyVal {
+    extension [Self <: Lock](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDowngrade(value: () => Unit): Self = StObject.set(x, "downgrade", js.Any.fromFunction0(value))
+      inline def setDowngrade(value: () => Unit): Self = StObject.set(x, "downgrade", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setExclude(value: Callback => Unit): Self = StObject.set(x, "exclude", js.Any.fromFunction1(value))
+      inline def setExclude(value: Callback => Unit): Self = StObject.set(x, "exclude", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShare(value: Callback => Unit): Self = StObject.set(x, "share", js.Any.fromFunction1(value))
+      inline def setShare(value: Callback => Unit): Self = StObject.set(x, "share", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUnlock(value: () => Unit): Self = StObject.set(x, "unlock", js.Any.fromFunction0(value))
+      inline def setUnlock(value: () => Unit): Self = StObject.set(x, "unlock", js.Any.fromFunction0(value))
     }
   }
 }

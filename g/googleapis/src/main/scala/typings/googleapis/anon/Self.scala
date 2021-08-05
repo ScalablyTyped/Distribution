@@ -16,37 +16,27 @@ trait Self extends StObject {
 }
 object Self {
   
-  @scala.inline
-  def apply(): Self = {
+  inline def apply(): Self = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Self]
   }
   
-  @scala.inline
-  implicit class SelfMutableBuilder[Self_ <: Self] (val x: Self_) extends AnyVal {
+  extension [Self_ <: Self](x: Self_) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self_ = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self_ = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self_ = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self_ = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setEmail(value: String): Self_ = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self_ = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self_ = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self_ = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self_ = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self_ = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self_ = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self_ = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setSelf(value: Boolean): Self_ = StObject.set(x, "self", value.asInstanceOf[js.Any])
+    inline def setSelf(value: Boolean): Self_ = StObject.set(x, "self", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfUndefined: Self_ = StObject.set(x, "self", js.undefined)
+    inline def setSelfUndefined: Self_ = StObject.set(x, "self", js.undefined)
   }
 }

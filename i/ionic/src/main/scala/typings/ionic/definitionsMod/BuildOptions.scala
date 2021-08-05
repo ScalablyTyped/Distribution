@@ -12,18 +12,15 @@ trait BuildOptions[T /* <: ProjectType */]
 }
 object BuildOptions {
   
-  @scala.inline
-  def apply[T /* <: ProjectType */](`--`: js.Array[String], engine: String, `type`: T): BuildOptions[T] = {
+  inline def apply[T /* <: ProjectType */](`--`: js.Array[String], engine: String, `type`: T): BuildOptions[T] = {
     val __obj = js.Dynamic.literal(engine = engine.asInstanceOf[js.Any])
     __obj.updateDynamic("--")(`--`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildOptions[T]]
   }
   
-  @scala.inline
-  implicit class BuildOptionsMutableBuilder[Self <: BuildOptions[?], T /* <: ProjectType */] (val x: Self & BuildOptions[T]) extends AnyVal {
+  extension [Self <: BuildOptions[?], T /* <: ProjectType */](x: Self & BuildOptions[T]) {
     
-    @scala.inline
-    def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

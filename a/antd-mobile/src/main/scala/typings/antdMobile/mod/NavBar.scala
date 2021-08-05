@@ -19,6 +19,5 @@ object NavBar {
   @JSImport("antd-mobile", "NavBar.defaultProps")
   @js.native
   def defaultProps: Mode = js.native
-  @scala.inline
-  def defaultProps_=(x: Mode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: Mode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

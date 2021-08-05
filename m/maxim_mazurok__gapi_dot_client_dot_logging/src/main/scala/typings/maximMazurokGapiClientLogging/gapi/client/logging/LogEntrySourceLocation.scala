@@ -21,31 +21,23 @@ trait LogEntrySourceLocation extends StObject {
 }
 object LogEntrySourceLocation {
   
-  @scala.inline
-  def apply(): LogEntrySourceLocation = {
+  inline def apply(): LogEntrySourceLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LogEntrySourceLocation]
   }
   
-  @scala.inline
-  implicit class LogEntrySourceLocationMutableBuilder[Self <: LogEntrySourceLocation] (val x: Self) extends AnyVal {
+  extension [Self <: LogEntrySourceLocation](x: Self) {
     
-    @scala.inline
-    def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+    inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
-    @scala.inline
-    def setFunction(value: String): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
+    inline def setFunction(value: String): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
+    inline def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
     
-    @scala.inline
-    def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
   }
 }

@@ -32,55 +32,39 @@ trait GoogleCloudDatalabelingV1beta1Evaluation extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1Evaluation {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1Evaluation = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1Evaluation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1Evaluation]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1EvaluationMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1Evaluation] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1Evaluation](x: Self) {
     
-    @scala.inline
-    def setAnnotationType(value: String): Self = StObject.set(x, "annotationType", value.asInstanceOf[js.Any])
+    inline def setAnnotationType(value: String): Self = StObject.set(x, "annotationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationTypeUndefined: Self = StObject.set(x, "annotationType", js.undefined)
+    inline def setAnnotationTypeUndefined: Self = StObject.set(x, "annotationType", js.undefined)
     
-    @scala.inline
-    def setConfig(value: GoogleCloudDatalabelingV1beta1EvaluationConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: GoogleCloudDatalabelingV1beta1EvaluationConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setEvaluatedItemCount(value: String): Self = StObject.set(x, "evaluatedItemCount", value.asInstanceOf[js.Any])
+    inline def setEvaluatedItemCount(value: String): Self = StObject.set(x, "evaluatedItemCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluatedItemCountUndefined: Self = StObject.set(x, "evaluatedItemCount", js.undefined)
+    inline def setEvaluatedItemCountUndefined: Self = StObject.set(x, "evaluatedItemCount", js.undefined)
     
-    @scala.inline
-    def setEvaluationJobRunTime(value: String): Self = StObject.set(x, "evaluationJobRunTime", value.asInstanceOf[js.Any])
+    inline def setEvaluationJobRunTime(value: String): Self = StObject.set(x, "evaluationJobRunTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluationJobRunTimeUndefined: Self = StObject.set(x, "evaluationJobRunTime", js.undefined)
+    inline def setEvaluationJobRunTimeUndefined: Self = StObject.set(x, "evaluationJobRunTime", js.undefined)
     
-    @scala.inline
-    def setEvaluationMetrics(value: GoogleCloudDatalabelingV1beta1EvaluationMetrics): Self = StObject.set(x, "evaluationMetrics", value.asInstanceOf[js.Any])
+    inline def setEvaluationMetrics(value: GoogleCloudDatalabelingV1beta1EvaluationMetrics): Self = StObject.set(x, "evaluationMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluationMetricsUndefined: Self = StObject.set(x, "evaluationMetrics", js.undefined)
+    inline def setEvaluationMetricsUndefined: Self = StObject.set(x, "evaluationMetrics", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

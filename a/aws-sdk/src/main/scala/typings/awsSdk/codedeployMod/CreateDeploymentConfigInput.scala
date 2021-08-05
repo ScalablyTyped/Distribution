@@ -28,34 +28,25 @@ trait CreateDeploymentConfigInput extends StObject {
 }
 object CreateDeploymentConfigInput {
   
-  @scala.inline
-  def apply(deploymentConfigName: DeploymentConfigName): CreateDeploymentConfigInput = {
+  inline def apply(deploymentConfigName: DeploymentConfigName): CreateDeploymentConfigInput = {
     val __obj = js.Dynamic.literal(deploymentConfigName = deploymentConfigName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDeploymentConfigInput]
   }
   
-  @scala.inline
-  implicit class CreateDeploymentConfigInputMutableBuilder[Self <: CreateDeploymentConfigInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDeploymentConfigInput](x: Self) {
     
-    @scala.inline
-    def setComputePlatform(value: ComputePlatform): Self = StObject.set(x, "computePlatform", value.asInstanceOf[js.Any])
+    inline def setComputePlatform(value: ComputePlatform): Self = StObject.set(x, "computePlatform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputePlatformUndefined: Self = StObject.set(x, "computePlatform", js.undefined)
+    inline def setComputePlatformUndefined: Self = StObject.set(x, "computePlatform", js.undefined)
     
-    @scala.inline
-    def setDeploymentConfigName(value: DeploymentConfigName): Self = StObject.set(x, "deploymentConfigName", value.asInstanceOf[js.Any])
+    inline def setDeploymentConfigName(value: DeploymentConfigName): Self = StObject.set(x, "deploymentConfigName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumHealthyHosts(value: MinimumHealthyHosts): Self = StObject.set(x, "minimumHealthyHosts", value.asInstanceOf[js.Any])
+    inline def setMinimumHealthyHosts(value: MinimumHealthyHosts): Self = StObject.set(x, "minimumHealthyHosts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumHealthyHostsUndefined: Self = StObject.set(x, "minimumHealthyHosts", js.undefined)
+    inline def setMinimumHealthyHostsUndefined: Self = StObject.set(x, "minimumHealthyHosts", js.undefined)
     
-    @scala.inline
-    def setTrafficRoutingConfig(value: TrafficRoutingConfig): Self = StObject.set(x, "trafficRoutingConfig", value.asInstanceOf[js.Any])
+    inline def setTrafficRoutingConfig(value: TrafficRoutingConfig): Self = StObject.set(x, "trafficRoutingConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrafficRoutingConfigUndefined: Self = StObject.set(x, "trafficRoutingConfig", js.undefined)
+    inline def setTrafficRoutingConfigUndefined: Self = StObject.set(x, "trafficRoutingConfig", js.undefined)
   }
 }

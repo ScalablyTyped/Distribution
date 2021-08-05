@@ -89,44 +89,32 @@ object anon {
   }
   object CssProperty {
     
-    @scala.inline
-    def apply(cssProperty: String | js.Array[String], prop: String | js.Array[String]): CssProperty = {
+    inline def apply(cssProperty: String | js.Array[String], prop: String | js.Array[String]): CssProperty = {
       val __obj = js.Dynamic.literal(cssProperty = cssProperty.asInstanceOf[js.Any], prop = prop.asInstanceOf[js.Any])
       __obj.asInstanceOf[CssProperty]
     }
     
-    @scala.inline
-    implicit class CssPropertyMutableBuilder[Self <: CssProperty] (val x: Self) extends AnyVal {
+    extension [Self <: CssProperty](x: Self) {
       
-      @scala.inline
-      def setCssProperty(value: String | js.Array[String]): Self = StObject.set(x, "cssProperty", value.asInstanceOf[js.Any])
+      inline def setCssProperty(value: String | js.Array[String]): Self = StObject.set(x, "cssProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssPropertyVarargs(value: String*): Self = StObject.set(x, "cssProperty", js.Array(value :_*))
+      inline def setCssPropertyVarargs(value: String*): Self = StObject.set(x, "cssProperty", js.Array(value :_*))
       
-      @scala.inline
-      def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setProp(value: String | js.Array[String]): Self = StObject.set(x, "prop", value.asInstanceOf[js.Any])
+      inline def setProp(value: String | js.Array[String]): Self = StObject.set(x, "prop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropVarargs(value: String*): Self = StObject.set(x, "prop", js.Array(value :_*))
+      inline def setPropVarargs(value: String*): Self = StObject.set(x, "prop", js.Array(value :_*))
       
-      @scala.inline
-      def setThemeGet(value: js.Any): Self = StObject.set(x, "themeGet", value.asInstanceOf[js.Any])
+      inline def setThemeGet(value: js.Any): Self = StObject.set(x, "themeGet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeGetUndefined: Self = StObject.set(x, "themeGet", js.undefined)
+      inline def setThemeGetUndefined: Self = StObject.set(x, "themeGet", js.undefined)
       
-      @scala.inline
-      def setTransform(value: js.Any): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+      inline def setTransform(value: js.Any): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     }
   }
   
@@ -140,32 +128,24 @@ object anon {
   }
   object Generators {
     
-    @scala.inline
-    def apply(getStyle: js.Any, props: js.Array[String]): Generators = {
+    inline def apply(getStyle: js.Any, props: js.Array[String]): Generators = {
       val __obj = js.Dynamic.literal(getStyle = getStyle.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
       __obj.asInstanceOf[Generators]
     }
     
-    @scala.inline
-    implicit class GeneratorsMutableBuilder[Self <: Generators] (val x: Self) extends AnyVal {
+    extension [Self <: Generators](x: Self) {
       
-      @scala.inline
-      def setGenerators(value: js.Array[js.Any]): Self = StObject.set(x, "generators", value.asInstanceOf[js.Any])
+      inline def setGenerators(value: js.Array[js.Any]): Self = StObject.set(x, "generators", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeneratorsUndefined: Self = StObject.set(x, "generators", js.undefined)
+      inline def setGeneratorsUndefined: Self = StObject.set(x, "generators", js.undefined)
       
-      @scala.inline
-      def setGeneratorsVarargs(value: js.Any*): Self = StObject.set(x, "generators", js.Array(value :_*))
+      inline def setGeneratorsVarargs(value: js.Any*): Self = StObject.set(x, "generators", js.Array(value :_*))
       
-      @scala.inline
-      def setGetStyle(value: js.Any): Self = StObject.set(x, "getStyle", value.asInstanceOf[js.Any])
+      inline def setGetStyle(value: js.Any): Self = StObject.set(x, "getStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProps(value: js.Array[String]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: js.Array[String]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropsVarargs(value: String*): Self = StObject.set(x, "props", js.Array(value :_*))
+      inline def setPropsVarargs(value: String*): Self = StObject.set(x, "props", js.Array(value :_*))
     }
   }
   
@@ -197,20 +177,16 @@ object anon {
   }
   object TypeofComponent {
     
-    @scala.inline
-    def apply(): TypeofComponent = {
+    inline def apply(): TypeofComponent = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TypeofComponent]
     }
     
-    @scala.inline
-    implicit class TypeofComponentMutableBuilder[Self <: TypeofComponent] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofComponent](x: Self) {
       
-      @scala.inline
-      def setContextType(value: Context[js.Any]): Self = StObject.set(x, "contextType", value.asInstanceOf[js.Any])
+      inline def setContextType(value: Context[js.Any]): Self = StObject.set(x, "contextType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextTypeUndefined: Self = StObject.set(x, "contextType", js.undefined)
+      inline def setContextTypeUndefined: Self = StObject.set(x, "contextType", js.undefined)
     }
   }
   

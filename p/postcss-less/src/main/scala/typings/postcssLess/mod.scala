@@ -22,8 +22,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def nodeToString(node: Node): String = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeToString")(node.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def nodeToString(node: Node): String = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeToString")(node.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Function to generate AST by string.
@@ -31,12 +30,9 @@ object mod {
   @JSImport("postcss-less", "parse")
   @js.native
   def parse: js.UndefOr[Parser] = js.native
-  @scala.inline
-  def parse(css: ParserInput): Root_ = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(css.asInstanceOf[js.Any]).asInstanceOf[Root_]
-  @scala.inline
-  def parse(css: ParserInput, opts: PickProcessOptionsmapfrom): Root_ = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(css.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Root_]
-  @scala.inline
-  def parse_=(x: js.UndefOr[Parser]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parse")(x.asInstanceOf[js.Any])
+  inline def parse(css: ParserInput): Root_ = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(css.asInstanceOf[js.Any]).asInstanceOf[Root_]
+  inline def parse(css: ParserInput, opts: PickProcessOptionsmapfrom): Root_ = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(css.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Root_]
+  inline def parse_=(x: js.UndefOr[Parser]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parse")(x.asInstanceOf[js.Any])
   
   /**
     * Class to generate string by AST.
@@ -44,10 +40,8 @@ object mod {
   @JSImport("postcss-less", "stringify")
   @js.native
   def stringify: js.UndefOr[Stringifier] = js.native
-  @scala.inline
-  def stringify(node: Node, builder: Builder): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], builder.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def stringify_=(x: js.UndefOr[Stringifier]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stringify")(x.asInstanceOf[js.Any])
+  inline def stringify(node: Node, builder: Builder): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], builder.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def stringify_=(x: js.UndefOr[Stringifier]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stringify")(x.asInstanceOf[js.Any])
   
   /* Rewritten from type alias, can be one of: 
     - typings.postcssLess.mod.ImportAtRule

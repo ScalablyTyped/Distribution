@@ -13,22 +13,17 @@ trait UserAttributes extends StObject {
 }
 object UserAttributes {
   
-  @scala.inline
-  def apply(userAttributes: StringMap): UserAttributes = {
+  inline def apply(userAttributes: StringMap): UserAttributes = {
     val __obj = js.Dynamic.literal(userAttributes = userAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserAttributes]
   }
   
-  @scala.inline
-  implicit class UserAttributesMutableBuilder[Self <: UserAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: UserAttributes](x: Self) {
     
-    @scala.inline
-    def setClientMetadata(value: StringMap): Self = StObject.set(x, "clientMetadata", value.asInstanceOf[js.Any])
+    inline def setClientMetadata(value: StringMap): Self = StObject.set(x, "clientMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientMetadataUndefined: Self = StObject.set(x, "clientMetadata", js.undefined)
+    inline def setClientMetadataUndefined: Self = StObject.set(x, "clientMetadata", js.undefined)
     
-    @scala.inline
-    def setUserAttributes(value: StringMap): Self = StObject.set(x, "userAttributes", value.asInstanceOf[js.Any])
+    inline def setUserAttributes(value: StringMap): Self = StObject.set(x, "userAttributes", value.asInstanceOf[js.Any])
   }
 }

@@ -23,31 +23,23 @@ trait ViewChangingEventUIParam extends StObject {
 }
 object ViewChangingEventUIParam {
   
-  @scala.inline
-  def apply(): ViewChangingEventUIParam = {
+  inline def apply(): ViewChangingEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ViewChangingEventUIParam]
   }
   
-  @scala.inline
-  implicit class ViewChangingEventUIParamMutableBuilder[Self <: ViewChangingEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: ViewChangingEventUIParam](x: Self) {
     
-    @scala.inline
-    def setCurrentSelectedView(value: String): Self = StObject.set(x, "currentSelectedView", value.asInstanceOf[js.Any])
+    inline def setCurrentSelectedView(value: String): Self = StObject.set(x, "currentSelectedView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentSelectedViewUndefined: Self = StObject.set(x, "currentSelectedView", js.undefined)
+    inline def setCurrentSelectedViewUndefined: Self = StObject.set(x, "currentSelectedView", js.undefined)
     
-    @scala.inline
-    def setNewSelectedView(value: String): Self = StObject.set(x, "newSelectedView", value.asInstanceOf[js.Any])
+    inline def setNewSelectedView(value: String): Self = StObject.set(x, "newSelectedView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewSelectedViewUndefined: Self = StObject.set(x, "newSelectedView", js.undefined)
+    inline def setNewSelectedViewUndefined: Self = StObject.set(x, "newSelectedView", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

@@ -27,24 +27,21 @@ object ChartRegressionCurveType {
     *
     * <i>y</i> = <i>A</i>&sdot;e<sup><i>B</i>&sdot;<i>x</i></sup>.</p>
     */
-  @scala.inline
-  def EXPONENTIAL: `3` = 3.asInstanceOf[`3`]
+  inline def EXPONENTIAL: `3` = 3.asInstanceOf[`3`]
   
   /**
     * displays a linear regression curve. <p>The values of the series are approximated using the model
     *
     * <i>y</i> = <i>A</i>&sdot;<i>x</i> + <i>B</i>.</p>
     */
-  @scala.inline
-  def LINEAR: `1` = 1.asInstanceOf[`1`]
+  inline def LINEAR: `1` = 1.asInstanceOf[`1`]
   
   /**
     * displays a linear logarithmic regression curve. <p>The values of the series are approximated using the model
     *
     * <i>y</i> = <i>A</i>&sdot;log(<i>x</i>) + <i>B</i>.</p>
     */
-  @scala.inline
-  def LOGARITHM: `2` = 2.asInstanceOf[`2`]
+  inline def LOGARITHM: `2` = 2.asInstanceOf[`2`]
   
   /**
     * error indicators are not displayed.
@@ -61,12 +58,10 @@ object ChartRegressionCurveType {
     *
     * displays no regression curve.
     */
-  @scala.inline
-  def NONE: `0` = 0.asInstanceOf[`0`]
+  inline def NONE: `0` = 0.asInstanceOf[`0`]
   
   /** displays a polynomial regression curve. */
-  @scala.inline
-  def POLYNOMIAL: `4` = 4.asInstanceOf[`4`]
+  inline def POLYNOMIAL: `4` = 4.asInstanceOf[`4`]
   
   /**
     * displays a regression curve using a power function. <p>The values of the series are approximated using the model
@@ -75,6 +70,5 @@ object ChartRegressionCurveType {
     *
     *  displays a moving average regression curve.
     */
-  @scala.inline
-  def POWER: `5` = 5.asInstanceOf[`5`]
+  inline def POWER: `5` = 5.asInstanceOf[`5`]
 }

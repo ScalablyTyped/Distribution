@@ -36,31 +36,23 @@ trait RemoveDuplicatesResultLoadOptions extends StObject {
 }
 object RemoveDuplicatesResultLoadOptions {
   
-  @scala.inline
-  def apply(): RemoveDuplicatesResultLoadOptions = {
+  inline def apply(): RemoveDuplicatesResultLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RemoveDuplicatesResultLoadOptions]
   }
   
-  @scala.inline
-  implicit class RemoveDuplicatesResultLoadOptionsMutableBuilder[Self <: RemoveDuplicatesResultLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveDuplicatesResultLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setRemoved(value: Boolean): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
+    inline def setRemoved(value: Boolean): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovedUndefined: Self = StObject.set(x, "removed", js.undefined)
+    inline def setRemovedUndefined: Self = StObject.set(x, "removed", js.undefined)
     
-    @scala.inline
-    def setUniqueRemaining(value: Boolean): Self = StObject.set(x, "uniqueRemaining", value.asInstanceOf[js.Any])
+    inline def setUniqueRemaining(value: Boolean): Self = StObject.set(x, "uniqueRemaining", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueRemainingUndefined: Self = StObject.set(x, "uniqueRemaining", js.undefined)
+    inline def setUniqueRemainingUndefined: Self = StObject.set(x, "uniqueRemaining", js.undefined)
   }
 }

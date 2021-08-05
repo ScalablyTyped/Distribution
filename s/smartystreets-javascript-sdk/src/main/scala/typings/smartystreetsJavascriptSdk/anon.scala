@@ -22,8 +22,7 @@ object anon {
   }
   object AddressCount {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addressCount: Double,
       bytes: Double,
       characterCount: Double,
@@ -35,26 +34,19 @@ object anon {
       __obj.asInstanceOf[AddressCount]
     }
     
-    @scala.inline
-    implicit class AddressCountMutableBuilder[Self <: AddressCount] (val x: Self) extends AnyVal {
+    extension [Self <: AddressCount](x: Self) {
       
-      @scala.inline
-      def setAddressCount(value: Double): Self = StObject.set(x, "addressCount", value.asInstanceOf[js.Any])
+      inline def setAddressCount(value: Double): Self = StObject.set(x, "addressCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBytes(value: Double): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
+      inline def setBytes(value: Double): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharacterCount(value: Double): Self = StObject.set(x, "characterCount", value.asInstanceOf[js.Any])
+      inline def setCharacterCount(value: Double): Self = StObject.set(x, "characterCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLines(value: js.Any): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+      inline def setLines(value: js.Any): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnicode(value: js.Any): Self = StObject.set(x, "unicode", value.asInstanceOf[js.Any])
+      inline def setUnicode(value: js.Any): Self = StObject.set(x, "unicode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerifiedCount(value: Double): Self = StObject.set(x, "verifiedCount", value.asInstanceOf[js.Any])
+      inline def setVerifiedCount(value: Double): Self = StObject.set(x, "verifiedCount", value.asInstanceOf[js.Any])
     }
   }
   
@@ -66,20 +58,16 @@ object anon {
   }
   object Addresses {
     
-    @scala.inline
-    def apply(addresses: js.Any, meta: js.Any): Addresses = {
+    inline def apply(addresses: js.Any, meta: js.Any): Addresses = {
       val __obj = js.Dynamic.literal(addresses = addresses.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])
       __obj.asInstanceOf[Addresses]
     }
     
-    @scala.inline
-    implicit class AddressesMutableBuilder[Self <: Addresses] (val x: Self) extends AnyVal {
+    extension [Self <: Addresses](x: Self) {
       
-      @scala.inline
-      def setAddresses(value: js.Any): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
+      inline def setAddresses(value: js.Any): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     }
   }
 }

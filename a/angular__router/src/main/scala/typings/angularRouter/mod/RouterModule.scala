@@ -33,8 +33,7 @@ object RouterModule {
     * @return The new NgModule.
     *
     */
-  @scala.inline
-  def forChild(routes: Routes): ModuleWithProviders[RouterModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("forChild")(routes.asInstanceOf[js.Any]).asInstanceOf[ModuleWithProviders[RouterModule]]
+  inline def forChild(routes: Routes): ModuleWithProviders[RouterModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("forChild")(routes.asInstanceOf[js.Any]).asInstanceOf[ModuleWithProviders[RouterModule]]
   
   /**
     * Creates and configures a module with all the router providers and directives.
@@ -54,8 +53,6 @@ object RouterModule {
     * @return The new `NgModule`.
     *
     */
-  @scala.inline
-  def forRoot(routes: Routes): ModuleWithProviders[RouterModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("forRoot")(routes.asInstanceOf[js.Any]).asInstanceOf[ModuleWithProviders[RouterModule]]
-  @scala.inline
-  def forRoot(routes: Routes, config: ExtraOptions): ModuleWithProviders[RouterModule] = (^.asInstanceOf[js.Dynamic].applyDynamic("forRoot")(routes.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[ModuleWithProviders[RouterModule]]
+  inline def forRoot(routes: Routes): ModuleWithProviders[RouterModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("forRoot")(routes.asInstanceOf[js.Any]).asInstanceOf[ModuleWithProviders[RouterModule]]
+  inline def forRoot(routes: Routes, config: ExtraOptions): ModuleWithProviders[RouterModule] = (^.asInstanceOf[js.Dynamic].applyDynamic("forRoot")(routes.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[ModuleWithProviders[RouterModule]]
 }

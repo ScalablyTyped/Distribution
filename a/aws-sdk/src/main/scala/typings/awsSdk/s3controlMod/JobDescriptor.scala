@@ -93,118 +93,81 @@ trait JobDescriptor extends StObject {
 }
 object JobDescriptor {
   
-  @scala.inline
-  def apply(): JobDescriptor = {
+  inline def apply(): JobDescriptor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobDescriptor]
   }
   
-  @scala.inline
-  implicit class JobDescriptorMutableBuilder[Self <: JobDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: JobDescriptor](x: Self) {
     
-    @scala.inline
-    def setConfirmationRequired(value: ConfirmationRequired): Self = StObject.set(x, "ConfirmationRequired", value.asInstanceOf[js.Any])
+    inline def setConfirmationRequired(value: ConfirmationRequired): Self = StObject.set(x, "ConfirmationRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfirmationRequiredUndefined: Self = StObject.set(x, "ConfirmationRequired", js.undefined)
+    inline def setConfirmationRequiredUndefined: Self = StObject.set(x, "ConfirmationRequired", js.undefined)
     
-    @scala.inline
-    def setCreationTime(value: JobCreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: JobCreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
-    @scala.inline
-    def setDescription(value: NonEmptyMaxLength256String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: NonEmptyMaxLength256String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setFailureReasons(value: JobFailureList): Self = StObject.set(x, "FailureReasons", value.asInstanceOf[js.Any])
+    inline def setFailureReasons(value: JobFailureList): Self = StObject.set(x, "FailureReasons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureReasonsUndefined: Self = StObject.set(x, "FailureReasons", js.undefined)
+    inline def setFailureReasonsUndefined: Self = StObject.set(x, "FailureReasons", js.undefined)
     
-    @scala.inline
-    def setFailureReasonsVarargs(value: JobFailure*): Self = StObject.set(x, "FailureReasons", js.Array(value :_*))
+    inline def setFailureReasonsVarargs(value: JobFailure*): Self = StObject.set(x, "FailureReasons", js.Array(value :_*))
     
-    @scala.inline
-    def setJobArn(value: JobArn): Self = StObject.set(x, "JobArn", value.asInstanceOf[js.Any])
+    inline def setJobArn(value: JobArn): Self = StObject.set(x, "JobArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobArnUndefined: Self = StObject.set(x, "JobArn", js.undefined)
+    inline def setJobArnUndefined: Self = StObject.set(x, "JobArn", js.undefined)
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
+    inline def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
     
-    @scala.inline
-    def setManifest(value: JobManifest): Self = StObject.set(x, "Manifest", value.asInstanceOf[js.Any])
+    inline def setManifest(value: JobManifest): Self = StObject.set(x, "Manifest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManifestUndefined: Self = StObject.set(x, "Manifest", js.undefined)
+    inline def setManifestUndefined: Self = StObject.set(x, "Manifest", js.undefined)
     
-    @scala.inline
-    def setOperation(value: JobOperation): Self = StObject.set(x, "Operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: JobOperation): Self = StObject.set(x, "Operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationUndefined: Self = StObject.set(x, "Operation", js.undefined)
+    inline def setOperationUndefined: Self = StObject.set(x, "Operation", js.undefined)
     
-    @scala.inline
-    def setPriority(value: JobPriority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: JobPriority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "Priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "Priority", js.undefined)
     
-    @scala.inline
-    def setProgressSummary(value: JobProgressSummary): Self = StObject.set(x, "ProgressSummary", value.asInstanceOf[js.Any])
+    inline def setProgressSummary(value: JobProgressSummary): Self = StObject.set(x, "ProgressSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressSummaryUndefined: Self = StObject.set(x, "ProgressSummary", js.undefined)
+    inline def setProgressSummaryUndefined: Self = StObject.set(x, "ProgressSummary", js.undefined)
     
-    @scala.inline
-    def setReport(value: JobReport): Self = StObject.set(x, "Report", value.asInstanceOf[js.Any])
+    inline def setReport(value: JobReport): Self = StObject.set(x, "Report", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportUndefined: Self = StObject.set(x, "Report", js.undefined)
+    inline def setReportUndefined: Self = StObject.set(x, "Report", js.undefined)
     
-    @scala.inline
-    def setRoleArn(value: IAMRoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: IAMRoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
+    inline def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
     
-    @scala.inline
-    def setStatus(value: JobStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: JobStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setStatusUpdateReason(value: JobStatusUpdateReason): Self = StObject.set(x, "StatusUpdateReason", value.asInstanceOf[js.Any])
+    inline def setStatusUpdateReason(value: JobStatusUpdateReason): Self = StObject.set(x, "StatusUpdateReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUpdateReasonUndefined: Self = StObject.set(x, "StatusUpdateReason", js.undefined)
+    inline def setStatusUpdateReasonUndefined: Self = StObject.set(x, "StatusUpdateReason", js.undefined)
     
-    @scala.inline
-    def setSuspendedCause(value: SuspendedCause): Self = StObject.set(x, "SuspendedCause", value.asInstanceOf[js.Any])
+    inline def setSuspendedCause(value: SuspendedCause): Self = StObject.set(x, "SuspendedCause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuspendedCauseUndefined: Self = StObject.set(x, "SuspendedCause", js.undefined)
+    inline def setSuspendedCauseUndefined: Self = StObject.set(x, "SuspendedCause", js.undefined)
     
-    @scala.inline
-    def setSuspendedDate(value: SuspendedDate): Self = StObject.set(x, "SuspendedDate", value.asInstanceOf[js.Any])
+    inline def setSuspendedDate(value: SuspendedDate): Self = StObject.set(x, "SuspendedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuspendedDateUndefined: Self = StObject.set(x, "SuspendedDate", js.undefined)
+    inline def setSuspendedDateUndefined: Self = StObject.set(x, "SuspendedDate", js.undefined)
     
-    @scala.inline
-    def setTerminationDate(value: JobTerminationDate): Self = StObject.set(x, "TerminationDate", value.asInstanceOf[js.Any])
+    inline def setTerminationDate(value: JobTerminationDate): Self = StObject.set(x, "TerminationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerminationDateUndefined: Self = StObject.set(x, "TerminationDate", js.undefined)
+    inline def setTerminationDateUndefined: Self = StObject.set(x, "TerminationDate", js.undefined)
   }
 }

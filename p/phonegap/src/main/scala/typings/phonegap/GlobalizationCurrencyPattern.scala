@@ -20,8 +20,7 @@ trait GlobalizationCurrencyPattern extends StObject {
 }
 object GlobalizationCurrencyPattern {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     code: String,
     decimal: String,
     fraction: Double,
@@ -33,25 +32,18 @@ object GlobalizationCurrencyPattern {
     __obj.asInstanceOf[GlobalizationCurrencyPattern]
   }
   
-  @scala.inline
-  implicit class GlobalizationCurrencyPatternMutableBuilder[Self <: GlobalizationCurrencyPattern] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalizationCurrencyPattern](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
+    inline def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFraction(value: Double): Self = StObject.set(x, "fraction", value.asInstanceOf[js.Any])
+    inline def setFraction(value: Double): Self = StObject.set(x, "fraction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrouping(value: String): Self = StObject.set(x, "grouping", value.asInstanceOf[js.Any])
+    inline def setGrouping(value: String): Self = StObject.set(x, "grouping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRounding(value: Double): Self = StObject.set(x, "rounding", value.asInstanceOf[js.Any])
+    inline def setRounding(value: Double): Self = StObject.set(x, "rounding", value.asInstanceOf[js.Any])
   }
 }

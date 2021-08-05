@@ -15,8 +15,7 @@ trait UpsertOptions
      with ReturningOptions
 object UpsertOptions {
   
-  @scala.inline
-  def apply(): UpsertOptions = {
+  inline def apply(): UpsertOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpsertOptions]
   }

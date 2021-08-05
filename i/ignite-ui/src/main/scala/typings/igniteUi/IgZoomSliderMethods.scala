@@ -24,8 +24,7 @@ trait IgZoomSliderMethods extends StObject {
 }
 object IgZoomSliderMethods {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destroy: () => Unit,
     flush: () => Unit,
     notifySizeChanged: () => Unit,
@@ -36,22 +35,16 @@ object IgZoomSliderMethods {
     __obj.asInstanceOf[IgZoomSliderMethods]
   }
   
-  @scala.inline
-  implicit class IgZoomSliderMethodsMutableBuilder[Self <: IgZoomSliderMethods] (val x: Self) extends AnyVal {
+  extension [Self <: IgZoomSliderMethods](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
+    inline def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNotifySizeChanged(value: () => Unit): Self = StObject.set(x, "notifySizeChanged", js.Any.fromFunction0(value))
+    inline def setNotifySizeChanged(value: () => Unit): Self = StObject.set(x, "notifySizeChanged", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnAttachedToUI(value: () => Unit): Self = StObject.set(x, "onAttachedToUI", js.Any.fromFunction0(value))
+    inline def setOnAttachedToUI(value: () => Unit): Self = StObject.set(x, "onAttachedToUI", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnDetachedFromUI(value: () => Unit): Self = StObject.set(x, "onDetachedFromUI", js.Any.fromFunction0(value))
+    inline def setOnDetachedFromUI(value: () => Unit): Self = StObject.set(x, "onDetachedFromUI", js.Any.fromFunction0(value))
   }
 }

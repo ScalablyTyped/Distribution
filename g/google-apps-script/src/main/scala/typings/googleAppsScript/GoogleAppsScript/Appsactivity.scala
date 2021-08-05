@@ -12,20 +12,16 @@ trait Appsactivity extends StObject {
 }
 object Appsactivity {
   
-  @scala.inline
-  def apply(): Appsactivity = {
+  inline def apply(): Appsactivity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Appsactivity]
   }
   
-  @scala.inline
-  implicit class AppsactivityMutableBuilder[Self <: Appsactivity] (val x: Self) extends AnyVal {
+  extension [Self <: Appsactivity](x: Self) {
     
-    @scala.inline
-    def setActivities(value: ActivitiesCollection): Self = StObject.set(x, "Activities", value.asInstanceOf[js.Any])
+    inline def setActivities(value: ActivitiesCollection): Self = StObject.set(x, "Activities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivitiesUndefined: Self = StObject.set(x, "Activities", js.undefined)
+    inline def setActivitiesUndefined: Self = StObject.set(x, "Activities", js.undefined)
   }
   
   object Collection {
@@ -50,29 +46,22 @@ object Appsactivity {
     }
     object Activity {
       
-      @scala.inline
-      def apply(): Activity = {
+      inline def apply(): Activity = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Activity]
       }
       
-      @scala.inline
-      implicit class ActivityMutableBuilder[Self <: Activity] (val x: Self) extends AnyVal {
+      extension [Self <: Activity](x: Self) {
         
-        @scala.inline
-        def setCombinedEvent(value: Event): Self = StObject.set(x, "combinedEvent", value.asInstanceOf[js.Any])
+        inline def setCombinedEvent(value: Event): Self = StObject.set(x, "combinedEvent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCombinedEventUndefined: Self = StObject.set(x, "combinedEvent", js.undefined)
+        inline def setCombinedEventUndefined: Self = StObject.set(x, "combinedEvent", js.undefined)
         
-        @scala.inline
-        def setSingleEvents(value: js.Array[Event]): Self = StObject.set(x, "singleEvents", value.asInstanceOf[js.Any])
+        inline def setSingleEvents(value: js.Array[Event]): Self = StObject.set(x, "singleEvents", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSingleEventsUndefined: Self = StObject.set(x, "singleEvents", js.undefined)
+        inline def setSingleEventsUndefined: Self = StObject.set(x, "singleEvents", js.undefined)
         
-        @scala.inline
-        def setSingleEventsVarargs(value: Event*): Self = StObject.set(x, "singleEvents", js.Array(value :_*))
+        inline def setSingleEventsVarargs(value: Event*): Self = StObject.set(x, "singleEvents", js.Array(value :_*))
       }
     }
     
@@ -98,74 +87,52 @@ object Appsactivity {
     }
     object Event {
       
-      @scala.inline
-      def apply(): Event = {
+      inline def apply(): Event = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Event]
       }
       
-      @scala.inline
-      implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
+      extension [Self <: Event](x: Self) {
         
-        @scala.inline
-        def setAdditionalEventTypes(value: js.Array[String]): Self = StObject.set(x, "additionalEventTypes", value.asInstanceOf[js.Any])
+        inline def setAdditionalEventTypes(value: js.Array[String]): Self = StObject.set(x, "additionalEventTypes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAdditionalEventTypesUndefined: Self = StObject.set(x, "additionalEventTypes", js.undefined)
+        inline def setAdditionalEventTypesUndefined: Self = StObject.set(x, "additionalEventTypes", js.undefined)
         
-        @scala.inline
-        def setAdditionalEventTypesVarargs(value: String*): Self = StObject.set(x, "additionalEventTypes", js.Array(value :_*))
+        inline def setAdditionalEventTypesVarargs(value: String*): Self = StObject.set(x, "additionalEventTypes", js.Array(value :_*))
         
-        @scala.inline
-        def setEventTimeMillis(value: String): Self = StObject.set(x, "eventTimeMillis", value.asInstanceOf[js.Any])
+        inline def setEventTimeMillis(value: String): Self = StObject.set(x, "eventTimeMillis", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEventTimeMillisUndefined: Self = StObject.set(x, "eventTimeMillis", js.undefined)
+        inline def setEventTimeMillisUndefined: Self = StObject.set(x, "eventTimeMillis", js.undefined)
         
-        @scala.inline
-        def setFromUserDeletion(value: Boolean): Self = StObject.set(x, "fromUserDeletion", value.asInstanceOf[js.Any])
+        inline def setFromUserDeletion(value: Boolean): Self = StObject.set(x, "fromUserDeletion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFromUserDeletionUndefined: Self = StObject.set(x, "fromUserDeletion", js.undefined)
+        inline def setFromUserDeletionUndefined: Self = StObject.set(x, "fromUserDeletion", js.undefined)
         
-        @scala.inline
-        def setMove(value: Move): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
+        inline def setMove(value: Move): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMoveUndefined: Self = StObject.set(x, "move", js.undefined)
+        inline def setMoveUndefined: Self = StObject.set(x, "move", js.undefined)
         
-        @scala.inline
-        def setPermissionChanges(value: js.Array[PermissionChange]): Self = StObject.set(x, "permissionChanges", value.asInstanceOf[js.Any])
+        inline def setPermissionChanges(value: js.Array[PermissionChange]): Self = StObject.set(x, "permissionChanges", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPermissionChangesUndefined: Self = StObject.set(x, "permissionChanges", js.undefined)
+        inline def setPermissionChangesUndefined: Self = StObject.set(x, "permissionChanges", js.undefined)
         
-        @scala.inline
-        def setPermissionChangesVarargs(value: PermissionChange*): Self = StObject.set(x, "permissionChanges", js.Array(value :_*))
+        inline def setPermissionChangesVarargs(value: PermissionChange*): Self = StObject.set(x, "permissionChanges", js.Array(value :_*))
         
-        @scala.inline
-        def setPrimaryEventType(value: String): Self = StObject.set(x, "primaryEventType", value.asInstanceOf[js.Any])
+        inline def setPrimaryEventType(value: String): Self = StObject.set(x, "primaryEventType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrimaryEventTypeUndefined: Self = StObject.set(x, "primaryEventType", js.undefined)
+        inline def setPrimaryEventTypeUndefined: Self = StObject.set(x, "primaryEventType", js.undefined)
         
-        @scala.inline
-        def setRename(value: Rename): Self = StObject.set(x, "rename", value.asInstanceOf[js.Any])
+        inline def setRename(value: Rename): Self = StObject.set(x, "rename", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRenameUndefined: Self = StObject.set(x, "rename", js.undefined)
+        inline def setRenameUndefined: Self = StObject.set(x, "rename", js.undefined)
         
-        @scala.inline
-        def setTarget(value: Target): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+        inline def setTarget(value: Target): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+        inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
         
-        @scala.inline
-        def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+        inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+        inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
       }
     }
     
@@ -177,29 +144,22 @@ object Appsactivity {
     }
     object ListActivitiesResponse {
       
-      @scala.inline
-      def apply(): ListActivitiesResponse = {
+      inline def apply(): ListActivitiesResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ListActivitiesResponse]
       }
       
-      @scala.inline
-      implicit class ListActivitiesResponseMutableBuilder[Self <: ListActivitiesResponse] (val x: Self) extends AnyVal {
+      extension [Self <: ListActivitiesResponse](x: Self) {
         
-        @scala.inline
-        def setActivities(value: js.Array[Activity]): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
+        inline def setActivities(value: js.Array[Activity]): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setActivitiesUndefined: Self = StObject.set(x, "activities", js.undefined)
+        inline def setActivitiesUndefined: Self = StObject.set(x, "activities", js.undefined)
         
-        @scala.inline
-        def setActivitiesVarargs(value: Activity*): Self = StObject.set(x, "activities", js.Array(value :_*))
+        inline def setActivitiesVarargs(value: Activity*): Self = StObject.set(x, "activities", js.Array(value :_*))
         
-        @scala.inline
-        def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+        inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+        inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
       }
     }
     
@@ -211,32 +171,24 @@ object Appsactivity {
     }
     object Move {
       
-      @scala.inline
-      def apply(): Move = {
+      inline def apply(): Move = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Move]
       }
       
-      @scala.inline
-      implicit class MoveMutableBuilder[Self <: Move] (val x: Self) extends AnyVal {
+      extension [Self <: Move](x: Self) {
         
-        @scala.inline
-        def setAddedParents(value: js.Array[Parent]): Self = StObject.set(x, "addedParents", value.asInstanceOf[js.Any])
+        inline def setAddedParents(value: js.Array[Parent]): Self = StObject.set(x, "addedParents", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAddedParentsUndefined: Self = StObject.set(x, "addedParents", js.undefined)
+        inline def setAddedParentsUndefined: Self = StObject.set(x, "addedParents", js.undefined)
         
-        @scala.inline
-        def setAddedParentsVarargs(value: Parent*): Self = StObject.set(x, "addedParents", js.Array(value :_*))
+        inline def setAddedParentsVarargs(value: Parent*): Self = StObject.set(x, "addedParents", js.Array(value :_*))
         
-        @scala.inline
-        def setRemovedParents(value: js.Array[Parent]): Self = StObject.set(x, "removedParents", value.asInstanceOf[js.Any])
+        inline def setRemovedParents(value: js.Array[Parent]): Self = StObject.set(x, "removedParents", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRemovedParentsUndefined: Self = StObject.set(x, "removedParents", js.undefined)
+        inline def setRemovedParentsUndefined: Self = StObject.set(x, "removedParents", js.undefined)
         
-        @scala.inline
-        def setRemovedParentsVarargs(value: Parent*): Self = StObject.set(x, "removedParents", js.Array(value :_*))
+        inline def setRemovedParentsVarargs(value: Parent*): Self = StObject.set(x, "removedParents", js.Array(value :_*))
       }
     }
     
@@ -250,32 +202,24 @@ object Appsactivity {
     }
     object Parent {
       
-      @scala.inline
-      def apply(): Parent = {
+      inline def apply(): Parent = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Parent]
       }
       
-      @scala.inline
-      implicit class ParentMutableBuilder[Self <: Parent] (val x: Self) extends AnyVal {
+      extension [Self <: Parent](x: Self) {
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+        inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
         
-        @scala.inline
-        def setIsRoot(value: Boolean): Self = StObject.set(x, "isRoot", value.asInstanceOf[js.Any])
+        inline def setIsRoot(value: Boolean): Self = StObject.set(x, "isRoot", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsRootUndefined: Self = StObject.set(x, "isRoot", js.undefined)
+        inline def setIsRootUndefined: Self = StObject.set(x, "isRoot", js.undefined)
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+        inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       }
     }
     
@@ -295,50 +239,36 @@ object Appsactivity {
     }
     object Permission {
       
-      @scala.inline
-      def apply(): Permission = {
+      inline def apply(): Permission = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Permission]
       }
       
-      @scala.inline
-      implicit class PermissionMutableBuilder[Self <: Permission] (val x: Self) extends AnyVal {
+      extension [Self <: Permission](x: Self) {
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setPermissionId(value: String): Self = StObject.set(x, "permissionId", value.asInstanceOf[js.Any])
+        inline def setPermissionId(value: String): Self = StObject.set(x, "permissionId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPermissionIdUndefined: Self = StObject.set(x, "permissionId", js.undefined)
+        inline def setPermissionIdUndefined: Self = StObject.set(x, "permissionId", js.undefined)
         
-        @scala.inline
-        def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+        inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+        inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
         
-        @scala.inline
-        def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+        inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+        inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
         
-        @scala.inline
-        def setWithLink(value: Boolean): Self = StObject.set(x, "withLink", value.asInstanceOf[js.Any])
+        inline def setWithLink(value: Boolean): Self = StObject.set(x, "withLink", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWithLinkUndefined: Self = StObject.set(x, "withLink", js.undefined)
+        inline def setWithLinkUndefined: Self = StObject.set(x, "withLink", js.undefined)
       }
     }
     
@@ -350,32 +280,24 @@ object Appsactivity {
     }
     object PermissionChange {
       
-      @scala.inline
-      def apply(): PermissionChange = {
+      inline def apply(): PermissionChange = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[PermissionChange]
       }
       
-      @scala.inline
-      implicit class PermissionChangeMutableBuilder[Self <: PermissionChange] (val x: Self) extends AnyVal {
+      extension [Self <: PermissionChange](x: Self) {
         
-        @scala.inline
-        def setAddedPermissions(value: js.Array[Permission]): Self = StObject.set(x, "addedPermissions", value.asInstanceOf[js.Any])
+        inline def setAddedPermissions(value: js.Array[Permission]): Self = StObject.set(x, "addedPermissions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAddedPermissionsUndefined: Self = StObject.set(x, "addedPermissions", js.undefined)
+        inline def setAddedPermissionsUndefined: Self = StObject.set(x, "addedPermissions", js.undefined)
         
-        @scala.inline
-        def setAddedPermissionsVarargs(value: Permission*): Self = StObject.set(x, "addedPermissions", js.Array(value :_*))
+        inline def setAddedPermissionsVarargs(value: Permission*): Self = StObject.set(x, "addedPermissions", js.Array(value :_*))
         
-        @scala.inline
-        def setRemovedPermissions(value: js.Array[Permission]): Self = StObject.set(x, "removedPermissions", value.asInstanceOf[js.Any])
+        inline def setRemovedPermissions(value: js.Array[Permission]): Self = StObject.set(x, "removedPermissions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRemovedPermissionsUndefined: Self = StObject.set(x, "removedPermissions", js.undefined)
+        inline def setRemovedPermissionsUndefined: Self = StObject.set(x, "removedPermissions", js.undefined)
         
-        @scala.inline
-        def setRemovedPermissionsVarargs(value: Permission*): Self = StObject.set(x, "removedPermissions", js.Array(value :_*))
+        inline def setRemovedPermissionsVarargs(value: Permission*): Self = StObject.set(x, "removedPermissions", js.Array(value :_*))
       }
     }
     
@@ -385,20 +307,16 @@ object Appsactivity {
     }
     object Photo {
       
-      @scala.inline
-      def apply(): Photo = {
+      inline def apply(): Photo = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Photo]
       }
       
-      @scala.inline
-      implicit class PhotoMutableBuilder[Self <: Photo] (val x: Self) extends AnyVal {
+      extension [Self <: Photo](x: Self) {
         
-        @scala.inline
-        def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+        inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+        inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       }
     }
     
@@ -410,26 +328,20 @@ object Appsactivity {
     }
     object Rename {
       
-      @scala.inline
-      def apply(): Rename = {
+      inline def apply(): Rename = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Rename]
       }
       
-      @scala.inline
-      implicit class RenameMutableBuilder[Self <: Rename] (val x: Self) extends AnyVal {
+      extension [Self <: Rename](x: Self) {
         
-        @scala.inline
-        def setNewTitle(value: String): Self = StObject.set(x, "newTitle", value.asInstanceOf[js.Any])
+        inline def setNewTitle(value: String): Self = StObject.set(x, "newTitle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNewTitleUndefined: Self = StObject.set(x, "newTitle", js.undefined)
+        inline def setNewTitleUndefined: Self = StObject.set(x, "newTitle", js.undefined)
         
-        @scala.inline
-        def setOldTitle(value: String): Self = StObject.set(x, "oldTitle", value.asInstanceOf[js.Any])
+        inline def setOldTitle(value: String): Self = StObject.set(x, "oldTitle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOldTitleUndefined: Self = StObject.set(x, "oldTitle", js.undefined)
+        inline def setOldTitleUndefined: Self = StObject.set(x, "oldTitle", js.undefined)
       }
     }
     
@@ -443,32 +355,24 @@ object Appsactivity {
     }
     object Target {
       
-      @scala.inline
-      def apply(): Target = {
+      inline def apply(): Target = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Target]
       }
       
-      @scala.inline
-      implicit class TargetMutableBuilder[Self <: Target] (val x: Self) extends AnyVal {
+      extension [Self <: Target](x: Self) {
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+        inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
         
-        @scala.inline
-        def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+        inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+        inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       }
     }
     
@@ -486,44 +390,32 @@ object Appsactivity {
     }
     object User {
       
-      @scala.inline
-      def apply(): User = {
+      inline def apply(): User = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[User]
       }
       
-      @scala.inline
-      implicit class UserMutableBuilder[Self <: User] (val x: Self) extends AnyVal {
+      extension [Self <: User](x: Self) {
         
-        @scala.inline
-        def setIsDeleted(value: Boolean): Self = StObject.set(x, "isDeleted", value.asInstanceOf[js.Any])
+        inline def setIsDeleted(value: Boolean): Self = StObject.set(x, "isDeleted", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsDeletedUndefined: Self = StObject.set(x, "isDeleted", js.undefined)
+        inline def setIsDeletedUndefined: Self = StObject.set(x, "isDeleted", js.undefined)
         
-        @scala.inline
-        def setIsMe(value: Boolean): Self = StObject.set(x, "isMe", value.asInstanceOf[js.Any])
+        inline def setIsMe(value: Boolean): Self = StObject.set(x, "isMe", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsMeUndefined: Self = StObject.set(x, "isMe", js.undefined)
+        inline def setIsMeUndefined: Self = StObject.set(x, "isMe", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setPermissionId(value: String): Self = StObject.set(x, "permissionId", value.asInstanceOf[js.Any])
+        inline def setPermissionId(value: String): Self = StObject.set(x, "permissionId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPermissionIdUndefined: Self = StObject.set(x, "permissionId", js.undefined)
+        inline def setPermissionIdUndefined: Self = StObject.set(x, "permissionId", js.undefined)
         
-        @scala.inline
-        def setPhoto(value: Photo): Self = StObject.set(x, "photo", value.asInstanceOf[js.Any])
+        inline def setPhoto(value: Photo): Self = StObject.set(x, "photo", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPhotoUndefined: Self = StObject.set(x, "photo", js.undefined)
+        inline def setPhotoUndefined: Self = StObject.set(x, "photo", js.undefined)
       }
     }
   }

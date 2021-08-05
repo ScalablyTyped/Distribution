@@ -11,16 +11,13 @@ trait PickImplsetFluidWidth extends StObject {
 }
 object PickImplsetFluidWidth {
   
-  @scala.inline
-  def apply(setFluidWidth: Boolean): PickImplsetFluidWidth = {
+  inline def apply(setFluidWidth: Boolean): PickImplsetFluidWidth = {
     val __obj = js.Dynamic.literal(setFluidWidth = setFluidWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplsetFluidWidth]
   }
   
-  @scala.inline
-  implicit class PickImplsetFluidWidthMutableBuilder[Self <: PickImplsetFluidWidth] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplsetFluidWidth](x: Self) {
     
-    @scala.inline
-    def setSetFluidWidth(value: Boolean): Self = StObject.set(x, "setFluidWidth", value.asInstanceOf[js.Any])
+    inline def setSetFluidWidth(value: Boolean): Self = StObject.set(x, "setFluidWidth", value.asInstanceOf[js.Any])
   }
 }

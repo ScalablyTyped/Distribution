@@ -15,31 +15,23 @@ trait After extends StObject {
 }
 object After {
   
-  @scala.inline
-  def apply(): After = {
+  inline def apply(): After = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[After]
   }
   
-  @scala.inline
-  implicit class AfterMutableBuilder[Self <: After] (val x: Self) extends AnyVal {
+  extension [Self <: After](x: Self) {
     
-    @scala.inline
-    def setAfter(value: /* datum */ js.Any => AnimationStyle): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
+    inline def setAfter(value: /* datum */ js.Any => AnimationStyle): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+    inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
     
-    @scala.inline
-    def setBefore(value: /* datum */ js.Any => AnimationStyle): Self = StObject.set(x, "before", js.Any.fromFunction1(value))
+    inline def setBefore(value: /* datum */ js.Any => AnimationStyle): Self = StObject.set(x, "before", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+    inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
   }
 }

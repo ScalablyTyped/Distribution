@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ObjectTypeEnum extends StObject
 object ObjectTypeEnum {
   
-  @scala.inline
-  def adPermObjColumn: `2` = 2.asInstanceOf[`2`]
+  inline def adPermObjColumn: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def adPermObjDatabase: `3` = 3.asInstanceOf[`3`]
+  inline def adPermObjDatabase: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def adPermObjProcedure: `4` = 4.asInstanceOf[`4`]
+  inline def adPermObjProcedure: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def adPermObjProviderSpecific: `-1` = -1.asInstanceOf[`-1`]
+  inline def adPermObjProviderSpecific: `-1` = -1.asInstanceOf[`-1`]
   
-  @scala.inline
-  def adPermObjTable: `1` = 1.asInstanceOf[`1`]
+  inline def adPermObjTable: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def adPermObjView: `5` = 5.asInstanceOf[`5`]
+  inline def adPermObjView: `5` = 5.asInstanceOf[`5`]
 }

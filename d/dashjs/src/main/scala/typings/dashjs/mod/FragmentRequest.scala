@@ -58,8 +58,7 @@ trait FragmentRequest extends StObject {
 }
 object FragmentRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     action: String,
     availabilityEndTime: Double,
     availabilityStartTime: Date,
@@ -86,73 +85,50 @@ object FragmentRequest {
     __obj.asInstanceOf[FragmentRequest]
   }
   
-  @scala.inline
-  implicit class FragmentRequestMutableBuilder[Self <: FragmentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: FragmentRequest](x: Self) {
     
-    @scala.inline
-    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityEndTime(value: Double): Self = StObject.set(x, "availabilityEndTime", value.asInstanceOf[js.Any])
+    inline def setAvailabilityEndTime(value: Double): Self = StObject.set(x, "availabilityEndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityStartTime(value: Date): Self = StObject.set(x, "availabilityStartTime", value.asInstanceOf[js.Any])
+    inline def setAvailabilityStartTime(value: Date): Self = StObject.set(x, "availabilityStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesLoaded(value: Double): Self = StObject.set(x, "bytesLoaded", value.asInstanceOf[js.Any])
+    inline def setBytesLoaded(value: Double): Self = StObject.set(x, "bytesLoaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesTotal(value: Double): Self = StObject.set(x, "bytesTotal", value.asInstanceOf[js.Any])
+    inline def setBytesTotal(value: Double): Self = StObject.set(x, "bytesTotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayLoadingTime(value: Double): Self = StObject.set(x, "delayLoadingTime", value.asInstanceOf[js.Any])
+    inline def setDelayLoadingTime(value: Double): Self = StObject.set(x, "delayLoadingTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstByteDate(value: Date): Self = StObject.set(x, "firstByteDate", value.asInstanceOf[js.Any])
+    inline def setFirstByteDate(value: Date): Self = StObject.set(x, "firstByteDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaInfo(value: MediaInfo): Self = StObject.set(x, "mediaInfo", value.asInstanceOf[js.Any])
+    inline def setMediaInfo(value: MediaInfo): Self = StObject.set(x, "mediaInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaType(value: video | audio | text | fragmentedText | embeddedText): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+    inline def setMediaType(value: video | audio | text | fragmentedText | embeddedText): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+    inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepresentationId(value: String): Self = StObject.set(x, "representationId", value.asInstanceOf[js.Any])
+    inline def setRepresentationId(value: String): Self = StObject.set(x, "representationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestEndDate(value: Date): Self = StObject.set(x, "requestEndDate", value.asInstanceOf[js.Any])
+    inline def setRequestEndDate(value: Date): Self = StObject.set(x, "requestEndDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestEndDateNull: Self = StObject.set(x, "requestEndDate", null)
+    inline def setRequestEndDateNull: Self = StObject.set(x, "requestEndDate", null)
     
-    @scala.inline
-    def setRequestStartDate(value: Date): Self = StObject.set(x, "requestStartDate", value.asInstanceOf[js.Any])
+    inline def setRequestStartDate(value: Date): Self = StObject.set(x, "requestStartDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+    inline def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceLocation(value: String): Self = StObject.set(x, "serviceLocation", value.asInstanceOf[js.Any])
+    inline def setServiceLocation(value: String): Self = StObject.set(x, "serviceLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimescale(value: Double): Self = StObject.set(x, "timescale", value.asInstanceOf[js.Any])
+    inline def setTimescale(value: Double): Self = StObject.set(x, "timescale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: InitializationSegment | MediaSegment): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: InitializationSegment | MediaSegment): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait ContentPageReference
 }
 object ContentPageReference {
   
-  @scala.inline
-  def apply(pageReference: String): ContentPageReference = {
+  inline def apply(pageReference: String): ContentPageReference = {
     val __obj = js.Dynamic.literal(pageReference = pageReference.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentPageReference]
   }
   
-  @scala.inline
-  implicit class ContentPageReferenceMutableBuilder[Self <: ContentPageReference] (val x: Self) extends AnyVal {
+  extension [Self <: ContentPageReference](x: Self) {
     
-    @scala.inline
-    def setPageReference(value: String): Self = StObject.set(x, "pageReference", value.asInstanceOf[js.Any])
+    inline def setPageReference(value: String): Self = StObject.set(x, "pageReference", value.asInstanceOf[js.Any])
   }
 }

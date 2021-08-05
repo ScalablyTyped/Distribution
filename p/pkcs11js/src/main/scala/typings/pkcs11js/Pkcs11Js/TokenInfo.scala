@@ -44,8 +44,7 @@ trait TokenInfo extends StObject {
 }
 object TokenInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     firmwareVersion: Version,
     flags: Double,
     freePrivateMemory: Double,
@@ -69,61 +68,42 @@ object TokenInfo {
     __obj.asInstanceOf[TokenInfo]
   }
   
-  @scala.inline
-  implicit class TokenInfoMutableBuilder[Self <: TokenInfo] (val x: Self) extends AnyVal {
+  extension [Self <: TokenInfo](x: Self) {
     
-    @scala.inline
-    def setFirmwareVersion(value: Version): Self = StObject.set(x, "firmwareVersion", value.asInstanceOf[js.Any])
+    inline def setFirmwareVersion(value: Version): Self = StObject.set(x, "firmwareVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFreePrivateMemory(value: Double): Self = StObject.set(x, "freePrivateMemory", value.asInstanceOf[js.Any])
+    inline def setFreePrivateMemory(value: Double): Self = StObject.set(x, "freePrivateMemory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFreePublicMemory(value: Double): Self = StObject.set(x, "freePublicMemory", value.asInstanceOf[js.Any])
+    inline def setFreePublicMemory(value: Double): Self = StObject.set(x, "freePublicMemory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHardwareVersion(value: Version): Self = StObject.set(x, "hardwareVersion", value.asInstanceOf[js.Any])
+    inline def setHardwareVersion(value: Version): Self = StObject.set(x, "hardwareVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManufacturerID(value: String): Self = StObject.set(x, "manufacturerID", value.asInstanceOf[js.Any])
+    inline def setManufacturerID(value: String): Self = StObject.set(x, "manufacturerID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxPinLen(value: Double): Self = StObject.set(x, "maxPinLen", value.asInstanceOf[js.Any])
+    inline def setMaxPinLen(value: Double): Self = StObject.set(x, "maxPinLen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRwSessionCount(value: Double): Self = StObject.set(x, "maxRwSessionCount", value.asInstanceOf[js.Any])
+    inline def setMaxRwSessionCount(value: Double): Self = StObject.set(x, "maxRwSessionCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSessionCount(value: Double): Self = StObject.set(x, "maxSessionCount", value.asInstanceOf[js.Any])
+    inline def setMaxSessionCount(value: Double): Self = StObject.set(x, "maxSessionCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinPinLen(value: Double): Self = StObject.set(x, "minPinLen", value.asInstanceOf[js.Any])
+    inline def setMinPinLen(value: Double): Self = StObject.set(x, "minPinLen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRwSessionCount(value: Double): Self = StObject.set(x, "rwSessionCount", value.asInstanceOf[js.Any])
+    inline def setRwSessionCount(value: Double): Self = StObject.set(x, "rwSessionCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
+    inline def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionCount(value: Double): Self = StObject.set(x, "sessionCount", value.asInstanceOf[js.Any])
+    inline def setSessionCount(value: Double): Self = StObject.set(x, "sessionCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalPrivateMemory(value: Double): Self = StObject.set(x, "totalPrivateMemory", value.asInstanceOf[js.Any])
+    inline def setTotalPrivateMemory(value: Double): Self = StObject.set(x, "totalPrivateMemory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalPublicMemory(value: Double): Self = StObject.set(x, "totalPublicMemory", value.asInstanceOf[js.Any])
+    inline def setTotalPublicMemory(value: Double): Self = StObject.set(x, "totalPublicMemory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtcTime(value: String): Self = StObject.set(x, "utcTime", value.asInstanceOf[js.Any])
+    inline def setUtcTime(value: String): Self = StObject.set(x, "utcTime", value.asInstanceOf[js.Any])
   }
 }

@@ -36,22 +36,17 @@ trait HTTPIngressPath extends StObject {
 }
 object HTTPIngressPath {
   
-  @scala.inline
-  def apply(backend: IngressBackend, path: String, pathType: String): HTTPIngressPath = {
+  inline def apply(backend: IngressBackend, path: String, pathType: String): HTTPIngressPath = {
     val __obj = js.Dynamic.literal(backend = backend.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pathType = pathType.asInstanceOf[js.Any])
     __obj.asInstanceOf[HTTPIngressPath]
   }
   
-  @scala.inline
-  implicit class HTTPIngressPathMutableBuilder[Self <: HTTPIngressPath] (val x: Self) extends AnyVal {
+  extension [Self <: HTTPIngressPath](x: Self) {
     
-    @scala.inline
-    def setBackend(value: IngressBackend): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
+    inline def setBackend(value: IngressBackend): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathType(value: String): Self = StObject.set(x, "pathType", value.asInstanceOf[js.Any])
+    inline def setPathType(value: String): Self = StObject.set(x, "pathType", value.asInstanceOf[js.Any])
   }
 }

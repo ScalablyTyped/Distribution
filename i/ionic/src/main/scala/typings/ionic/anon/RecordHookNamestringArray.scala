@@ -21,49 +21,35 @@ trait RecordHookNamestringArray extends StObject {
 }
 object RecordHookNamestringArray {
   
-  @scala.inline
-  def apply(): RecordHookNamestringArray = {
+  inline def apply(): RecordHookNamestringArray = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecordHookNamestringArray]
   }
   
-  @scala.inline
-  implicit class RecordHookNamestringArrayMutableBuilder[Self <: RecordHookNamestringArray] (val x: Self) extends AnyVal {
+  extension [Self <: RecordHookNamestringArray](x: Self) {
     
-    @scala.inline
-    def setBuildColonafter(value: String | js.Array[String]): Self = StObject.set(x, "build:after", value.asInstanceOf[js.Any])
+    inline def setBuildColonafter(value: String | js.Array[String]): Self = StObject.set(x, "build:after", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildColonafterUndefined: Self = StObject.set(x, "build:after", js.undefined)
+    inline def setBuildColonafterUndefined: Self = StObject.set(x, "build:after", js.undefined)
     
-    @scala.inline
-    def setBuildColonafterVarargs(value: String*): Self = StObject.set(x, "build:after", js.Array(value :_*))
+    inline def setBuildColonafterVarargs(value: String*): Self = StObject.set(x, "build:after", js.Array(value :_*))
     
-    @scala.inline
-    def setBuildColonbefore(value: String | js.Array[String]): Self = StObject.set(x, "build:before", value.asInstanceOf[js.Any])
+    inline def setBuildColonbefore(value: String | js.Array[String]): Self = StObject.set(x, "build:before", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildColonbeforeUndefined: Self = StObject.set(x, "build:before", js.undefined)
+    inline def setBuildColonbeforeUndefined: Self = StObject.set(x, "build:before", js.undefined)
     
-    @scala.inline
-    def setBuildColonbeforeVarargs(value: String*): Self = StObject.set(x, "build:before", js.Array(value :_*))
+    inline def setBuildColonbeforeVarargs(value: String*): Self = StObject.set(x, "build:before", js.Array(value :_*))
     
-    @scala.inline
-    def setServeColonafter(value: String | js.Array[String]): Self = StObject.set(x, "serve:after", value.asInstanceOf[js.Any])
+    inline def setServeColonafter(value: String | js.Array[String]): Self = StObject.set(x, "serve:after", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServeColonafterUndefined: Self = StObject.set(x, "serve:after", js.undefined)
+    inline def setServeColonafterUndefined: Self = StObject.set(x, "serve:after", js.undefined)
     
-    @scala.inline
-    def setServeColonafterVarargs(value: String*): Self = StObject.set(x, "serve:after", js.Array(value :_*))
+    inline def setServeColonafterVarargs(value: String*): Self = StObject.set(x, "serve:after", js.Array(value :_*))
     
-    @scala.inline
-    def setServeColonbefore(value: String | js.Array[String]): Self = StObject.set(x, "serve:before", value.asInstanceOf[js.Any])
+    inline def setServeColonbefore(value: String | js.Array[String]): Self = StObject.set(x, "serve:before", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServeColonbeforeUndefined: Self = StObject.set(x, "serve:before", js.undefined)
+    inline def setServeColonbeforeUndefined: Self = StObject.set(x, "serve:before", js.undefined)
     
-    @scala.inline
-    def setServeColonbeforeVarargs(value: String*): Self = StObject.set(x, "serve:before", js.Array(value :_*))
+    inline def setServeColonbeforeVarargs(value: String*): Self = StObject.set(x, "serve:before", js.Array(value :_*))
   }
 }

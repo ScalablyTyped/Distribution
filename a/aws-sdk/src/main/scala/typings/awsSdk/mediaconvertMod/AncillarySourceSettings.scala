@@ -23,31 +23,23 @@ trait AncillarySourceSettings extends StObject {
 }
 object AncillarySourceSettings {
   
-  @scala.inline
-  def apply(): AncillarySourceSettings = {
+  inline def apply(): AncillarySourceSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AncillarySourceSettings]
   }
   
-  @scala.inline
-  implicit class AncillarySourceSettingsMutableBuilder[Self <: AncillarySourceSettings] (val x: Self) extends AnyVal {
+  extension [Self <: AncillarySourceSettings](x: Self) {
     
-    @scala.inline
-    def setConvert608To708(value: AncillaryConvert608To708): Self = StObject.set(x, "Convert608To708", value.asInstanceOf[js.Any])
+    inline def setConvert608To708(value: AncillaryConvert608To708): Self = StObject.set(x, "Convert608To708", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConvert608To708Undefined: Self = StObject.set(x, "Convert608To708", js.undefined)
+    inline def setConvert608To708Undefined: Self = StObject.set(x, "Convert608To708", js.undefined)
     
-    @scala.inline
-    def setSourceAncillaryChannelNumber(value: integerMin1Max4): Self = StObject.set(x, "SourceAncillaryChannelNumber", value.asInstanceOf[js.Any])
+    inline def setSourceAncillaryChannelNumber(value: integerMin1Max4): Self = StObject.set(x, "SourceAncillaryChannelNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceAncillaryChannelNumberUndefined: Self = StObject.set(x, "SourceAncillaryChannelNumber", js.undefined)
+    inline def setSourceAncillaryChannelNumberUndefined: Self = StObject.set(x, "SourceAncillaryChannelNumber", js.undefined)
     
-    @scala.inline
-    def setTerminateCaptions(value: AncillaryTerminateCaptions): Self = StObject.set(x, "TerminateCaptions", value.asInstanceOf[js.Any])
+    inline def setTerminateCaptions(value: AncillaryTerminateCaptions): Self = StObject.set(x, "TerminateCaptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerminateCaptionsUndefined: Self = StObject.set(x, "TerminateCaptions", js.undefined)
+    inline def setTerminateCaptionsUndefined: Self = StObject.set(x, "TerminateCaptions", js.undefined)
   }
 }

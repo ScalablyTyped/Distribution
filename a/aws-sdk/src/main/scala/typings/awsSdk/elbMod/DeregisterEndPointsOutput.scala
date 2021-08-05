@@ -13,22 +13,17 @@ trait DeregisterEndPointsOutput extends StObject {
 }
 object DeregisterEndPointsOutput {
   
-  @scala.inline
-  def apply(): DeregisterEndPointsOutput = {
+  inline def apply(): DeregisterEndPointsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeregisterEndPointsOutput]
   }
   
-  @scala.inline
-  implicit class DeregisterEndPointsOutputMutableBuilder[Self <: DeregisterEndPointsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DeregisterEndPointsOutput](x: Self) {
     
-    @scala.inline
-    def setInstances(value: Instances): Self = StObject.set(x, "Instances", value.asInstanceOf[js.Any])
+    inline def setInstances(value: Instances): Self = StObject.set(x, "Instances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancesUndefined: Self = StObject.set(x, "Instances", js.undefined)
+    inline def setInstancesUndefined: Self = StObject.set(x, "Instances", js.undefined)
     
-    @scala.inline
-    def setInstancesVarargs(value: Instance*): Self = StObject.set(x, "Instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: Instance*): Self = StObject.set(x, "Instances", js.Array(value :_*))
   }
 }

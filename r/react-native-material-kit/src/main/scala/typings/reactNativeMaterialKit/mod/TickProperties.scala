@@ -15,25 +15,19 @@ trait TickProperties
 }
 object TickProperties {
   
-  @scala.inline
-  def apply(): TickProperties = {
+  inline def apply(): TickProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TickProperties]
   }
   
-  @scala.inline
-  implicit class TickPropertiesMutableBuilder[Self <: TickProperties] (val x: Self) extends AnyVal {
+  extension [Self <: TickProperties](x: Self) {
     
-    @scala.inline
-    def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
+    inline def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
+    inline def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
     
-    @scala.inline
-    def setInset(value: Double): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
+    inline def setInset(value: Double): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
+    inline def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
   }
 }

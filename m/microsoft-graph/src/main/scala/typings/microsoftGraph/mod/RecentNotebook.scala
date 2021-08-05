@@ -27,49 +27,35 @@ trait RecentNotebook extends StObject {
 }
 object RecentNotebook {
   
-  @scala.inline
-  def apply(): RecentNotebook = {
+  inline def apply(): RecentNotebook = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecentNotebook]
   }
   
-  @scala.inline
-  implicit class RecentNotebookMutableBuilder[Self <: RecentNotebook] (val x: Self) extends AnyVal {
+  extension [Self <: RecentNotebook](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setLastAccessedTime(value: NullableOption[String]): Self = StObject.set(x, "lastAccessedTime", value.asInstanceOf[js.Any])
+    inline def setLastAccessedTime(value: NullableOption[String]): Self = StObject.set(x, "lastAccessedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastAccessedTimeNull: Self = StObject.set(x, "lastAccessedTime", null)
+    inline def setLastAccessedTimeNull: Self = StObject.set(x, "lastAccessedTime", null)
     
-    @scala.inline
-    def setLastAccessedTimeUndefined: Self = StObject.set(x, "lastAccessedTime", js.undefined)
+    inline def setLastAccessedTimeUndefined: Self = StObject.set(x, "lastAccessedTime", js.undefined)
     
-    @scala.inline
-    def setLinks(value: NullableOption[RecentNotebookLinks]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    inline def setLinks(value: NullableOption[RecentNotebookLinks]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinksNull: Self = StObject.set(x, "links", null)
+    inline def setLinksNull: Self = StObject.set(x, "links", null)
     
-    @scala.inline
-    def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
+    inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
-    @scala.inline
-    def setSourceService(value: NullableOption[OnenoteSourceService]): Self = StObject.set(x, "sourceService", value.asInstanceOf[js.Any])
+    inline def setSourceService(value: NullableOption[OnenoteSourceService]): Self = StObject.set(x, "sourceService", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceServiceNull: Self = StObject.set(x, "sourceService", null)
+    inline def setSourceServiceNull: Self = StObject.set(x, "sourceService", null)
     
-    @scala.inline
-    def setSourceServiceUndefined: Self = StObject.set(x, "sourceService", js.undefined)
+    inline def setSourceServiceUndefined: Self = StObject.set(x, "sourceService", js.undefined)
   }
 }

@@ -9,107 +9,89 @@ object serverlessStrings {
   
   @js.native
   sealed trait Allow extends StObject
-  @scala.inline
-  def Allow: Allow = "Allow".asInstanceOf[Allow]
+  inline def Allow: Allow = "Allow".asInstanceOf[Allow]
   
   @js.native
   sealed trait Deny extends StObject
-  @scala.inline
-  def Deny: Deny = "Deny".asInstanceOf[Deny]
+  inline def Deny: Deny = "Deny".asInstanceOf[Deny]
   
   @js.native
   sealed trait any
     extends StObject
        with HttpMethod
-  @scala.inline
-  def any: any = "any".asInstanceOf[any]
+  inline def any: any = "any".asInstanceOf[any]
   
   @js.native
   sealed trait aws extends StObject
-  @scala.inline
-  def aws: aws = "aws".asInstanceOf[aws]
+  inline def aws: aws = "aws".asInstanceOf[aws]
   
   @js.native
   sealed trait cognito extends StObject
-  @scala.inline
-  def cognito: cognito = "cognito".asInstanceOf[cognito]
+  inline def cognito: cognito = "cognito".asInstanceOf[cognito]
   
   @js.native
   sealed trait delete
     extends StObject
        with HttpMethod
-  @scala.inline
-  def delete: delete = "delete".asInstanceOf[delete]
+  inline def delete: delete = "delete".asInstanceOf[delete]
   
   @js.native
   sealed trait edge extends StObject
-  @scala.inline
-  def edge: edge = "edge".asInstanceOf[edge]
+  inline def edge: edge = "edge".asInstanceOf[edge]
   
   @js.native
   sealed trait get
     extends StObject
        with HttpMethod
-  @scala.inline
-  def get: get = "get".asInstanceOf[get]
+  inline def get: get = "get".asInstanceOf[get]
   
   @js.native
   sealed trait head
     extends StObject
        with HttpMethod
-  @scala.inline
-  def head: head = "head".asInstanceOf[head]
+  inline def head: head = "head".asInstanceOf[head]
   
   @js.native
   sealed trait lambda extends StObject
-  @scala.inline
-  def lambda: lambda = "lambda".asInstanceOf[lambda]
+  inline def lambda: lambda = "lambda".asInstanceOf[lambda]
   
   @js.native
   sealed trait mock extends StObject
-  @scala.inline
-  def mock: mock = "mock".asInstanceOf[mock]
+  inline def mock: mock = "mock".asInstanceOf[mock]
   
   @js.native
   sealed trait oidc extends StObject
-  @scala.inline
-  def oidc: oidc = "oidc".asInstanceOf[oidc]
+  inline def oidc: oidc = "oidc".asInstanceOf[oidc]
   
   @js.native
   sealed trait options
     extends StObject
        with HttpMethod
-  @scala.inline
-  def options: options = "options".asInstanceOf[options]
+  inline def options: options = "options".asInstanceOf[options]
   
   @js.native
   sealed trait patch
     extends StObject
        with HttpMethod
-  @scala.inline
-  def patch: patch = "patch".asInstanceOf[patch]
+  inline def patch: patch = "patch".asInstanceOf[patch]
   
   @js.native
   sealed trait post
     extends StObject
        with HttpMethod
-  @scala.inline
-  def post: post = "post".asInstanceOf[post]
+  inline def post: post = "post".asInstanceOf[post]
   
   @js.native
   sealed trait `private` extends StObject
-  @scala.inline
-  def `private`: `private` = "private".asInstanceOf[`private`]
+  inline def `private`: `private` = "private".asInstanceOf[`private`]
   
   @js.native
   sealed trait put
     extends StObject
        with HttpMethod
-  @scala.inline
-  def put: put = "put".asInstanceOf[put]
+  inline def put: put = "put".asInstanceOf[put]
   
   @js.native
   sealed trait regional extends StObject
-  @scala.inline
-  def regional: regional = "regional".asInstanceOf[regional]
+  inline def regional: regional = "regional".asInstanceOf[regional]
 }

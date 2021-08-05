@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConsistencyLevel extends StObject
 object ConsistencyLevel {
   
-  @scala.inline
-  def BoundedStaleness: typings.documentdb.documentdbStrings.BoundedStaleness = "BoundedStaleness".asInstanceOf[typings.documentdb.documentdbStrings.BoundedStaleness]
+  inline def BoundedStaleness: typings.documentdb.documentdbStrings.BoundedStaleness = "BoundedStaleness".asInstanceOf[typings.documentdb.documentdbStrings.BoundedStaleness]
   
-  @scala.inline
-  def Eventual: typings.documentdb.documentdbStrings.Eventual = "Eventual".asInstanceOf[typings.documentdb.documentdbStrings.Eventual]
+  inline def Eventual: typings.documentdb.documentdbStrings.Eventual = "Eventual".asInstanceOf[typings.documentdb.documentdbStrings.Eventual]
   
-  @scala.inline
-  def Session: typings.documentdb.documentdbStrings.Session = "Session".asInstanceOf[typings.documentdb.documentdbStrings.Session]
+  inline def Session: typings.documentdb.documentdbStrings.Session = "Session".asInstanceOf[typings.documentdb.documentdbStrings.Session]
   
-  @scala.inline
-  def Strong: typings.documentdb.documentdbStrings.Strong = "Strong".asInstanceOf[typings.documentdb.documentdbStrings.Strong]
+  inline def Strong: typings.documentdb.documentdbStrings.Strong = "Strong".asInstanceOf[typings.documentdb.documentdbStrings.Strong]
 }

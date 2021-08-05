@@ -18,19 +18,15 @@ trait MemoryRange extends StObject {
 }
 object MemoryRange {
   
-  @scala.inline
-  def apply(base: NativePointer, size: Double): MemoryRange = {
+  inline def apply(base: NativePointer, size: Double): MemoryRange = {
     val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[MemoryRange]
   }
   
-  @scala.inline
-  implicit class MemoryRangeMutableBuilder[Self <: MemoryRange] (val x: Self) extends AnyVal {
+  extension [Self <: MemoryRange](x: Self) {
     
-    @scala.inline
-    def setBase(value: NativePointer): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    inline def setBase(value: NativePointer): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

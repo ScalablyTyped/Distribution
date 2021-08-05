@@ -26,8 +26,7 @@ trait ICalendarIdentifiersStatics extends StObject {
 }
 object ICalendarIdentifiersStatics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     gregorian: String,
     hebrew: String,
     hijri: String,
@@ -42,34 +41,24 @@ object ICalendarIdentifiersStatics {
     __obj.asInstanceOf[ICalendarIdentifiersStatics]
   }
   
-  @scala.inline
-  implicit class ICalendarIdentifiersStaticsMutableBuilder[Self <: ICalendarIdentifiersStatics] (val x: Self) extends AnyVal {
+  extension [Self <: ICalendarIdentifiersStatics](x: Self) {
     
-    @scala.inline
-    def setGregorian(value: String): Self = StObject.set(x, "gregorian", value.asInstanceOf[js.Any])
+    inline def setGregorian(value: String): Self = StObject.set(x, "gregorian", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHebrew(value: String): Self = StObject.set(x, "hebrew", value.asInstanceOf[js.Any])
+    inline def setHebrew(value: String): Self = StObject.set(x, "hebrew", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHijri(value: String): Self = StObject.set(x, "hijri", value.asInstanceOf[js.Any])
+    inline def setHijri(value: String): Self = StObject.set(x, "hijri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJapanese(value: String): Self = StObject.set(x, "japanese", value.asInstanceOf[js.Any])
+    inline def setJapanese(value: String): Self = StObject.set(x, "japanese", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJulian(value: String): Self = StObject.set(x, "julian", value.asInstanceOf[js.Any])
+    inline def setJulian(value: String): Self = StObject.set(x, "julian", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKorean(value: String): Self = StObject.set(x, "korean", value.asInstanceOf[js.Any])
+    inline def setKorean(value: String): Self = StObject.set(x, "korean", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaiwan(value: String): Self = StObject.set(x, "taiwan", value.asInstanceOf[js.Any])
+    inline def setTaiwan(value: String): Self = StObject.set(x, "taiwan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThai(value: String): Self = StObject.set(x, "thai", value.asInstanceOf[js.Any])
+    inline def setThai(value: String): Self = StObject.set(x, "thai", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUmAlQura(value: String): Self = StObject.set(x, "umAlQura", value.asInstanceOf[js.Any])
+    inline def setUmAlQura(value: String): Self = StObject.set(x, "umAlQura", value.asInstanceOf[js.Any])
   }
 }

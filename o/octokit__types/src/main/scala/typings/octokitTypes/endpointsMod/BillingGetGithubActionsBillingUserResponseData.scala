@@ -26,8 +26,7 @@ trait BillingGetGithubActionsBillingUserResponseData extends StObject {
 }
 object BillingGetGithubActionsBillingUserResponseData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     included_minutes: Double,
     minutes_used_breakdown: WINDOWS,
     total_minutes_used: Double,
@@ -37,19 +36,14 @@ object BillingGetGithubActionsBillingUserResponseData {
     __obj.asInstanceOf[BillingGetGithubActionsBillingUserResponseData]
   }
   
-  @scala.inline
-  implicit class BillingGetGithubActionsBillingUserResponseDataMutableBuilder[Self <: BillingGetGithubActionsBillingUserResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: BillingGetGithubActionsBillingUserResponseData](x: Self) {
     
-    @scala.inline
-    def setIncluded_minutes(value: Double): Self = StObject.set(x, "included_minutes", value.asInstanceOf[js.Any])
+    inline def setIncluded_minutes(value: Double): Self = StObject.set(x, "included_minutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinutes_used_breakdown(value: WINDOWS): Self = StObject.set(x, "minutes_used_breakdown", value.asInstanceOf[js.Any])
+    inline def setMinutes_used_breakdown(value: WINDOWS): Self = StObject.set(x, "minutes_used_breakdown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal_minutes_used(value: Double): Self = StObject.set(x, "total_minutes_used", value.asInstanceOf[js.Any])
+    inline def setTotal_minutes_used(value: Double): Self = StObject.set(x, "total_minutes_used", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal_paid_minutes_used(value: Double): Self = StObject.set(x, "total_paid_minutes_used", value.asInstanceOf[js.Any])
+    inline def setTotal_paid_minutes_used(value: Double): Self = StObject.set(x, "total_paid_minutes_used", value.asInstanceOf[js.Any])
   }
 }

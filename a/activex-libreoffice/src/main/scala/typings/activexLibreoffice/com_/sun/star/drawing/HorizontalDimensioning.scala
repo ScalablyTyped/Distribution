@@ -23,16 +23,14 @@ object HorizontalDimensioning {
     *
     * Set this to have the application select the best horizontal position for the text.
     */
-  @scala.inline
-  def AUTO: `0` = 0.asInstanceOf[`0`]
+  inline def AUTO: `0` = 0.asInstanceOf[`0`]
   
   /**
     * The text is positioned at the center.
     *
     * The text is positioned over the main line.
     */
-  @scala.inline
-  def CENTERED: `2` = 2.asInstanceOf[`2`]
+  inline def CENTERED: `2` = 2.asInstanceOf[`2`]
   
   /**
     * the connection line leaves the connected object to the left,
@@ -41,8 +39,7 @@ object HorizontalDimensioning {
     *
     * The left edge of the text is adjusted to the left edge of the shape.
     */
-  @scala.inline
-  def LEFT: `1` = 1.asInstanceOf[`1`]
+  inline def LEFT: `1` = 1.asInstanceOf[`1`]
   
   /**
     * the connection line leaves the connected object to the right,
@@ -51,6 +48,5 @@ object HorizontalDimensioning {
     *
     * The right edge of the text is adjusted to the right edge of the shape.
     */
-  @scala.inline
-  def RIGHT: `3` = 3.asInstanceOf[`3`]
+  inline def RIGHT: `3` = 3.asInstanceOf[`3`]
 }

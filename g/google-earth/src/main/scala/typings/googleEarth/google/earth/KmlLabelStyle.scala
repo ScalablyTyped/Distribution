@@ -20,8 +20,7 @@ trait KmlLabelStyle
 }
 object KmlLabelStyle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
     equals_ : KmlObject => Boolean,
@@ -47,13 +46,10 @@ object KmlLabelStyle {
     __obj.asInstanceOf[KmlLabelStyle]
   }
   
-  @scala.inline
-  implicit class KmlLabelStyleMutableBuilder[Self <: KmlLabelStyle] (val x: Self) extends AnyVal {
+  extension [Self <: KmlLabelStyle](x: Self) {
     
-    @scala.inline
-    def setGetScale(value: () => Double): Self = StObject.set(x, "getScale", js.Any.fromFunction0(value))
+    inline def setGetScale(value: () => Double): Self = StObject.set(x, "getScale", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetScale(value: Double => Unit): Self = StObject.set(x, "setScale", js.Any.fromFunction1(value))
+    inline def setSetScale(value: Double => Unit): Self = StObject.set(x, "setScale", js.Any.fromFunction1(value))
   }
 }

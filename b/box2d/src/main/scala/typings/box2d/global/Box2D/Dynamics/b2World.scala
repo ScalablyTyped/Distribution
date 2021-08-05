@@ -30,8 +30,7 @@ object b2World {
   @JSGlobal("Box2D.Dynamics.b2World.e_locked")
   @js.native
   def e_locked: Double = js.native
-  @scala.inline
-  def e_locked_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("e_locked")(x.asInstanceOf[js.Any])
+  inline def e_locked_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("e_locked")(x.asInstanceOf[js.Any])
   
   /**
     * New Fixture
@@ -39,6 +38,5 @@ object b2World {
   @JSGlobal("Box2D.Dynamics.b2World.e_newFixture")
   @js.native
   def e_newFixture: Double = js.native
-  @scala.inline
-  def e_newFixture_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("e_newFixture")(x.asInstanceOf[js.Any])
+  inline def e_newFixture_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("e_newFixture")(x.asInstanceOf[js.Any])
 }

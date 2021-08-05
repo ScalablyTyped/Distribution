@@ -29,26 +29,20 @@ object cacheExpirationMod {
   }
   object CacheExpirationConfig {
     
-    @scala.inline
-    def apply(): CacheExpirationConfig = {
+    inline def apply(): CacheExpirationConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CacheExpirationConfig]
     }
     
-    @scala.inline
-    implicit class CacheExpirationConfigMutableBuilder[Self <: CacheExpirationConfig] (val x: Self) extends AnyVal {
+    extension [Self <: CacheExpirationConfig](x: Self) {
       
-      @scala.inline
-      def setMaxAgeSeconds(value: Double): Self = StObject.set(x, "maxAgeSeconds", value.asInstanceOf[js.Any])
+      inline def setMaxAgeSeconds(value: Double): Self = StObject.set(x, "maxAgeSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAgeSecondsUndefined: Self = StObject.set(x, "maxAgeSeconds", js.undefined)
+      inline def setMaxAgeSecondsUndefined: Self = StObject.set(x, "maxAgeSeconds", js.undefined)
       
-      @scala.inline
-      def setMaxEntries(value: Double): Self = StObject.set(x, "maxEntries", value.asInstanceOf[js.Any])
+      inline def setMaxEntries(value: Double): Self = StObject.set(x, "maxEntries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxEntriesUndefined: Self = StObject.set(x, "maxEntries", js.undefined)
+      inline def setMaxEntriesUndefined: Self = StObject.set(x, "maxEntries", js.undefined)
     }
   }
 }

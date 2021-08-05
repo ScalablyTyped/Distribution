@@ -12,6 +12,5 @@ object toastAnimationsMdLeaveMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def mdLeaveAnimation(baseEl: ShadowRoot): Animation = ^.asInstanceOf[js.Dynamic].applyDynamic("mdLeaveAnimation")(baseEl.asInstanceOf[js.Any]).asInstanceOf[Animation]
+  inline def mdLeaveAnimation(baseEl: ShadowRoot): Animation = ^.asInstanceOf[js.Dynamic].applyDynamic("mdLeaveAnimation")(baseEl.asInstanceOf[js.Any]).asInstanceOf[Animation]
 }

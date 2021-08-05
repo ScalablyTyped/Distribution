@@ -45,8 +45,7 @@ trait InstalledDetails extends StObject {
 }
 object InstalledDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     reason: ToStringLiteral[
       CHROMEUPDATE, 
       /* keyof chrome-apps.anon.CHROMEUPDATE */ INSTALL | UPDATE | CHROME_UPDATE | SHARED_MODULE_UPDATE, 
@@ -60,23 +59,17 @@ object InstalledDetails {
     __obj.asInstanceOf[InstalledDetails]
   }
   
-  @scala.inline
-  implicit class InstalledDetailsMutableBuilder[Self <: InstalledDetails] (val x: Self) extends AnyVal {
+  extension [Self <: InstalledDetails](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setPreviousVersion(value: String): Self = StObject.set(x, "previousVersion", value.asInstanceOf[js.Any])
+    inline def setPreviousVersion(value: String): Self = StObject.set(x, "previousVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousVersionUndefined: Self = StObject.set(x, "previousVersion", js.undefined)
+    inline def setPreviousVersionUndefined: Self = StObject.set(x, "previousVersion", js.undefined)
     
-    @scala.inline
-    def setReason(
+    inline def setReason(
       value: ToStringLiteral[
           CHROMEUPDATE, 
           /* keyof chrome-apps.anon.CHROMEUPDATE */ INSTALL | UPDATE | CHROME_UPDATE | SHARED_MODULE_UPDATE, 

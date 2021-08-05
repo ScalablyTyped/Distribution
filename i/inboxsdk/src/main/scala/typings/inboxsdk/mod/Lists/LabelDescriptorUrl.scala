@@ -15,22 +15,17 @@ trait LabelDescriptorUrl
 }
 object LabelDescriptorUrl {
   
-  @scala.inline
-  def apply(iconUrl: String, title: String): LabelDescriptorUrl = {
+  inline def apply(iconUrl: String, title: String): LabelDescriptorUrl = {
     val __obj = js.Dynamic.literal(iconUrl = iconUrl.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelDescriptorUrl]
   }
   
-  @scala.inline
-  implicit class LabelDescriptorUrlMutableBuilder[Self <: LabelDescriptorUrl] (val x: Self) extends AnyVal {
+  extension [Self <: LabelDescriptorUrl](x: Self) {
     
-    @scala.inline
-    def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+    inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
+    inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
     
-    @scala.inline
-    def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
+    inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
   }
 }

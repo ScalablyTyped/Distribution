@@ -18,25 +18,19 @@ trait EngineAttribute extends StObject {
 }
 object EngineAttribute {
   
-  @scala.inline
-  def apply(): EngineAttribute = {
+  inline def apply(): EngineAttribute = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EngineAttribute]
   }
   
-  @scala.inline
-  implicit class EngineAttributeMutableBuilder[Self <: EngineAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: EngineAttribute](x: Self) {
     
-    @scala.inline
-    def setName(value: EngineAttributeName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: EngineAttributeName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setValue(value: EngineAttributeValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: EngineAttributeValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

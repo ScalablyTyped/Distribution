@@ -14,8 +14,7 @@ trait AvailablePhoneNumberInstance extends StObject {
 }
 object AvailablePhoneNumberInstance {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     local: AvailablePhoneNumberResourceGroup,
     mobile: AvailablePhoneNumberResourceGroup,
     tollFree: AvailablePhoneNumberResourceGroup
@@ -24,16 +23,12 @@ object AvailablePhoneNumberInstance {
     __obj.asInstanceOf[AvailablePhoneNumberInstance]
   }
   
-  @scala.inline
-  implicit class AvailablePhoneNumberInstanceMutableBuilder[Self <: AvailablePhoneNumberInstance] (val x: Self) extends AnyVal {
+  extension [Self <: AvailablePhoneNumberInstance](x: Self) {
     
-    @scala.inline
-    def setLocal(value: AvailablePhoneNumberResourceGroup): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+    inline def setLocal(value: AvailablePhoneNumberResourceGroup): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMobile(value: AvailablePhoneNumberResourceGroup): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
+    inline def setMobile(value: AvailablePhoneNumberResourceGroup): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTollFree(value: AvailablePhoneNumberResourceGroup): Self = StObject.set(x, "tollFree", value.asInstanceOf[js.Any])
+    inline def setTollFree(value: AvailablePhoneNumberResourceGroup): Self = StObject.set(x, "tollFree", value.asInstanceOf[js.Any])
   }
 }

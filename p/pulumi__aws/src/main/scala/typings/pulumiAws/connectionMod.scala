@@ -81,21 +81,16 @@ object connectionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Connection]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Connection]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ConnectionState): Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Connection]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ConnectionState, opts: CustomResourceOptions): Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Connection]
+    inline def get(name: String, id: Input[ID]): Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Connection]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Connection]
+    inline def get(name: String, id: Input[ID], state: ConnectionState): Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Connection]
+    inline def get(name: String, id: Input[ID], state: ConnectionState, opts: CustomResourceOptions): Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Connection]
     
     /**
       * Returns true if the given object is an instance of Connection.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/connection.Connection */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directconnect/connection.Connection */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/connection.Connection */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directconnect/connection.Connection */ Boolean]
   }
   
   trait ConnectionArgs extends StObject {
@@ -122,32 +117,24 @@ object connectionMod {
   }
   object ConnectionArgs {
     
-    @scala.inline
-    def apply(bandwidth: Input[String], location: Input[String]): ConnectionArgs = {
+    inline def apply(bandwidth: Input[String], location: Input[String]): ConnectionArgs = {
       val __obj = js.Dynamic.literal(bandwidth = bandwidth.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConnectionArgs]
     }
     
-    @scala.inline
-    implicit class ConnectionArgsMutableBuilder[Self <: ConnectionArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectionArgs](x: Self) {
       
-      @scala.inline
-      def setBandwidth(value: Input[String]): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
+      inline def setBandwidth(value: Input[String]): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: Input[String]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: Input[String]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -195,62 +182,44 @@ object connectionMod {
   }
   object ConnectionState {
     
-    @scala.inline
-    def apply(): ConnectionState = {
+    inline def apply(): ConnectionState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConnectionState]
     }
     
-    @scala.inline
-    implicit class ConnectionStateMutableBuilder[Self <: ConnectionState] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectionState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setAwsDevice(value: Input[String]): Self = StObject.set(x, "awsDevice", value.asInstanceOf[js.Any])
+      inline def setAwsDevice(value: Input[String]): Self = StObject.set(x, "awsDevice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAwsDeviceUndefined: Self = StObject.set(x, "awsDevice", js.undefined)
+      inline def setAwsDeviceUndefined: Self = StObject.set(x, "awsDevice", js.undefined)
       
-      @scala.inline
-      def setBandwidth(value: Input[String]): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
+      inline def setBandwidth(value: Input[String]): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBandwidthUndefined: Self = StObject.set(x, "bandwidth", js.undefined)
+      inline def setBandwidthUndefined: Self = StObject.set(x, "bandwidth", js.undefined)
       
-      @scala.inline
-      def setHasLogicalRedundancy(value: Input[String]): Self = StObject.set(x, "hasLogicalRedundancy", value.asInstanceOf[js.Any])
+      inline def setHasLogicalRedundancy(value: Input[String]): Self = StObject.set(x, "hasLogicalRedundancy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasLogicalRedundancyUndefined: Self = StObject.set(x, "hasLogicalRedundancy", js.undefined)
+      inline def setHasLogicalRedundancyUndefined: Self = StObject.set(x, "hasLogicalRedundancy", js.undefined)
       
-      @scala.inline
-      def setJumboFrameCapable(value: Input[Boolean]): Self = StObject.set(x, "jumboFrameCapable", value.asInstanceOf[js.Any])
+      inline def setJumboFrameCapable(value: Input[Boolean]): Self = StObject.set(x, "jumboFrameCapable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJumboFrameCapableUndefined: Self = StObject.set(x, "jumboFrameCapable", js.undefined)
+      inline def setJumboFrameCapableUndefined: Self = StObject.set(x, "jumboFrameCapable", js.undefined)
       
-      @scala.inline
-      def setLocation(value: Input[String]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: Input[String]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

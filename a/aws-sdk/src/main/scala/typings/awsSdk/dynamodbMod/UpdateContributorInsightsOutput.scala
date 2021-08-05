@@ -23,31 +23,23 @@ trait UpdateContributorInsightsOutput extends StObject {
 }
 object UpdateContributorInsightsOutput {
   
-  @scala.inline
-  def apply(): UpdateContributorInsightsOutput = {
+  inline def apply(): UpdateContributorInsightsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateContributorInsightsOutput]
   }
   
-  @scala.inline
-  implicit class UpdateContributorInsightsOutputMutableBuilder[Self <: UpdateContributorInsightsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateContributorInsightsOutput](x: Self) {
     
-    @scala.inline
-    def setContributorInsightsStatus(value: ContributorInsightsStatus): Self = StObject.set(x, "ContributorInsightsStatus", value.asInstanceOf[js.Any])
+    inline def setContributorInsightsStatus(value: ContributorInsightsStatus): Self = StObject.set(x, "ContributorInsightsStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContributorInsightsStatusUndefined: Self = StObject.set(x, "ContributorInsightsStatus", js.undefined)
+    inline def setContributorInsightsStatusUndefined: Self = StObject.set(x, "ContributorInsightsStatus", js.undefined)
     
-    @scala.inline
-    def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
+    inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
+    inline def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
     
-    @scala.inline
-    def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
+    inline def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
   }
 }

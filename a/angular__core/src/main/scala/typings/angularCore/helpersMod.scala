@@ -23,8 +23,7 @@ object helpersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getHelper(name: HelperFunction, sourceFile: SourceFile, printer: Printer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getHelper")(name.asInstanceOf[js.Any], sourceFile.asInstanceOf[js.Any], printer.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getHelper(name: HelperFunction, sourceFile: SourceFile, printer: Printer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getHelper")(name.asInstanceOf[js.Any], sourceFile.asInstanceOf[js.Any], printer.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /* Rewritten from type alias, can be one of: 
     - typings.angularCore.angularCoreStrings.AnyDuringRendererMigration
@@ -42,37 +41,26 @@ object helpersMod {
   trait HelperFunction extends StObject
   object HelperFunction {
     
-    @scala.inline
-    def animate: __ngRendererAnimateHelper = "__ngRendererAnimateHelper".asInstanceOf[__ngRendererAnimateHelper]
+    inline def animate: __ngRendererAnimateHelper = "__ngRendererAnimateHelper".asInstanceOf[__ngRendererAnimateHelper]
     
-    @scala.inline
-    def any: AnyDuringRendererMigration = "AnyDuringRendererMigration".asInstanceOf[AnyDuringRendererMigration]
+    inline def any: AnyDuringRendererMigration = "AnyDuringRendererMigration".asInstanceOf[AnyDuringRendererMigration]
     
-    @scala.inline
-    def attachViewAfter: __ngRendererAttachViewAfterHelper = "__ngRendererAttachViewAfterHelper".asInstanceOf[__ngRendererAttachViewAfterHelper]
+    inline def attachViewAfter: __ngRendererAttachViewAfterHelper = "__ngRendererAttachViewAfterHelper".asInstanceOf[__ngRendererAttachViewAfterHelper]
     
-    @scala.inline
-    def createElement: __ngRendererCreateElementHelper = "__ngRendererCreateElementHelper".asInstanceOf[__ngRendererCreateElementHelper]
+    inline def createElement: __ngRendererCreateElementHelper = "__ngRendererCreateElementHelper".asInstanceOf[__ngRendererCreateElementHelper]
     
-    @scala.inline
-    def createTemplateAnchor: __ngRendererCreateTemplateAnchorHelper = "__ngRendererCreateTemplateAnchorHelper".asInstanceOf[__ngRendererCreateTemplateAnchorHelper]
+    inline def createTemplateAnchor: __ngRendererCreateTemplateAnchorHelper = "__ngRendererCreateTemplateAnchorHelper".asInstanceOf[__ngRendererCreateTemplateAnchorHelper]
     
-    @scala.inline
-    def createText: __ngRendererCreateTextHelper = "__ngRendererCreateTextHelper".asInstanceOf[__ngRendererCreateTextHelper]
+    inline def createText: __ngRendererCreateTextHelper = "__ngRendererCreateTextHelper".asInstanceOf[__ngRendererCreateTextHelper]
     
-    @scala.inline
-    def destroyView: __ngRendererDestroyViewHelper = "__ngRendererDestroyViewHelper".asInstanceOf[__ngRendererDestroyViewHelper]
+    inline def destroyView: __ngRendererDestroyViewHelper = "__ngRendererDestroyViewHelper".asInstanceOf[__ngRendererDestroyViewHelper]
     
-    @scala.inline
-    def detachView: __ngRendererDetachViewHelper = "__ngRendererDetachViewHelper".asInstanceOf[__ngRendererDetachViewHelper]
+    inline def detachView: __ngRendererDetachViewHelper = "__ngRendererDetachViewHelper".asInstanceOf[__ngRendererDetachViewHelper]
     
-    @scala.inline
-    def projectNodes: __ngRendererProjectNodesHelper = "__ngRendererProjectNodesHelper".asInstanceOf[__ngRendererProjectNodesHelper]
+    inline def projectNodes: __ngRendererProjectNodesHelper = "__ngRendererProjectNodesHelper".asInstanceOf[__ngRendererProjectNodesHelper]
     
-    @scala.inline
-    def setElementAttribute: __ngRendererSetElementAttributeHelper = "__ngRendererSetElementAttributeHelper".asInstanceOf[__ngRendererSetElementAttributeHelper]
+    inline def setElementAttribute: __ngRendererSetElementAttributeHelper = "__ngRendererSetElementAttributeHelper".asInstanceOf[__ngRendererSetElementAttributeHelper]
     
-    @scala.inline
-    def splitNamespace: __ngRendererSplitNamespaceHelper = "__ngRendererSplitNamespaceHelper".asInstanceOf[__ngRendererSplitNamespaceHelper]
+    inline def splitNamespace: __ngRendererSplitNamespaceHelper = "__ngRendererSplitNamespaceHelper".asInstanceOf[__ngRendererSplitNamespaceHelper]
   }
 }

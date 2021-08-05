@@ -20,8 +20,7 @@ trait AnnounceString extends StObject {
 }
 object AnnounceString {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     buttonID: AssistiveWindowButton,
     contextID: Double,
     highlighted: Boolean,
@@ -31,25 +30,18 @@ object AnnounceString {
     __obj.asInstanceOf[AnnounceString]
   }
   
-  @scala.inline
-  implicit class AnnounceStringMutableBuilder[Self <: AnnounceString] (val x: Self) extends AnyVal {
+  extension [Self <: AnnounceString](x: Self) {
     
-    @scala.inline
-    def setAnnounceString(value: String): Self = StObject.set(x, "announceString", value.asInstanceOf[js.Any])
+    inline def setAnnounceString(value: String): Self = StObject.set(x, "announceString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnounceStringUndefined: Self = StObject.set(x, "announceString", js.undefined)
+    inline def setAnnounceStringUndefined: Self = StObject.set(x, "announceString", js.undefined)
     
-    @scala.inline
-    def setButtonID(value: AssistiveWindowButton): Self = StObject.set(x, "buttonID", value.asInstanceOf[js.Any])
+    inline def setButtonID(value: AssistiveWindowButton): Self = StObject.set(x, "buttonID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextID(value: Double): Self = StObject.set(x, "contextID", value.asInstanceOf[js.Any])
+    inline def setContextID(value: Double): Self = StObject.set(x, "contextID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlighted(value: Boolean): Self = StObject.set(x, "highlighted", value.asInstanceOf[js.Any])
+    inline def setHighlighted(value: Boolean): Self = StObject.set(x, "highlighted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowType(value: AssistiveWindowType): Self = StObject.set(x, "windowType", value.asInstanceOf[js.Any])
+    inline def setWindowType(value: AssistiveWindowType): Self = StObject.set(x, "windowType", value.asInstanceOf[js.Any])
   }
 }

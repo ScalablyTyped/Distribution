@@ -119,157 +119,107 @@ trait IText
 }
 object IText {
   
-  @scala.inline
-  def apply(): IText = {
+  inline def apply(): IText = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IText]
   }
   
-  @scala.inline
-  implicit class ITextMutableBuilder[Self <: IText] (val x: Self) extends AnyVal {
+  extension [Self <: IText](x: Self) {
     
-    @scala.inline
-    def setAutoCapitalize(value: Boolean): Self = StObject.set(x, "autoCapitalize", value.asInstanceOf[js.Any])
+    inline def setAutoCapitalize(value: Boolean): Self = StObject.set(x, "autoCapitalize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoCapitalizeUndefined: Self = StObject.set(x, "autoCapitalize", js.undefined)
+    inline def setAutoCapitalizeUndefined: Self = StObject.set(x, "autoCapitalize", js.undefined)
     
-    @scala.inline
-    def setAutoComplete(value: Boolean): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
+    inline def setAutoComplete(value: Boolean): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
+    inline def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
     
-    @scala.inline
-    def setAutoCorrect(value: Boolean): Self = StObject.set(x, "autoCorrect", value.asInstanceOf[js.Any])
+    inline def setAutoCorrect(value: Boolean): Self = StObject.set(x, "autoCorrect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
+    inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
     
-    @scala.inline
-    def setBlur(value: () => IText): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
+    inline def setBlur(value: () => IText): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
+    inline def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
     
-    @scala.inline
-    def setFocus(value: () => IText): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+    inline def setFocus(value: () => IText): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
+    inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
     
-    @scala.inline
-    def setGetAutoCapitalize(value: () => Boolean): Self = StObject.set(x, "getAutoCapitalize", js.Any.fromFunction0(value))
+    inline def setGetAutoCapitalize(value: () => Boolean): Self = StObject.set(x, "getAutoCapitalize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAutoCapitalizeUndefined: Self = StObject.set(x, "getAutoCapitalize", js.undefined)
+    inline def setGetAutoCapitalizeUndefined: Self = StObject.set(x, "getAutoCapitalize", js.undefined)
     
-    @scala.inline
-    def setGetAutoComplete(value: () => Boolean): Self = StObject.set(x, "getAutoComplete", js.Any.fromFunction0(value))
+    inline def setGetAutoComplete(value: () => Boolean): Self = StObject.set(x, "getAutoComplete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAutoCompleteUndefined: Self = StObject.set(x, "getAutoComplete", js.undefined)
+    inline def setGetAutoCompleteUndefined: Self = StObject.set(x, "getAutoComplete", js.undefined)
     
-    @scala.inline
-    def setGetAutoCorrect(value: () => Boolean): Self = StObject.set(x, "getAutoCorrect", js.Any.fromFunction0(value))
+    inline def setGetAutoCorrect(value: () => Boolean): Self = StObject.set(x, "getAutoCorrect", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAutoCorrectUndefined: Self = StObject.set(x, "getAutoCorrect", js.undefined)
+    inline def setGetAutoCorrectUndefined: Self = StObject.set(x, "getAutoCorrect", js.undefined)
     
-    @scala.inline
-    def setGetMaxLength(value: () => Double): Self = StObject.set(x, "getMaxLength", js.Any.fromFunction0(value))
+    inline def setGetMaxLength(value: () => Double): Self = StObject.set(x, "getMaxLength", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMaxLengthUndefined: Self = StObject.set(x, "getMaxLength", js.undefined)
+    inline def setGetMaxLengthUndefined: Self = StObject.set(x, "getMaxLength", js.undefined)
     
-    @scala.inline
-    def setGetPlaceHolder(value: () => String): Self = StObject.set(x, "getPlaceHolder", js.Any.fromFunction0(value))
+    inline def setGetPlaceHolder(value: () => String): Self = StObject.set(x, "getPlaceHolder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPlaceHolderUndefined: Self = StObject.set(x, "getPlaceHolder", js.undefined)
+    inline def setGetPlaceHolderUndefined: Self = StObject.set(x, "getPlaceHolder", js.undefined)
     
-    @scala.inline
-    def setGetReadOnly(value: () => Boolean): Self = StObject.set(x, "getReadOnly", js.Any.fromFunction0(value))
+    inline def setGetReadOnly(value: () => Boolean): Self = StObject.set(x, "getReadOnly", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetReadOnlyUndefined: Self = StObject.set(x, "getReadOnly", js.undefined)
+    inline def setGetReadOnlyUndefined: Self = StObject.set(x, "getReadOnly", js.undefined)
     
-    @scala.inline
-    def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+    inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
+    inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
     
-    @scala.inline
-    def setPlaceHolder(value: String): Self = StObject.set(x, "placeHolder", value.asInstanceOf[js.Any])
+    inline def setPlaceHolder(value: String): Self = StObject.set(x, "placeHolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceHolderUndefined: Self = StObject.set(x, "placeHolder", js.undefined)
+    inline def setPlaceHolderUndefined: Self = StObject.set(x, "placeHolder", js.undefined)
     
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
-    @scala.inline
-    def setReset(value: () => typings.senchaTouch.Ext.field.IField): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => typings.senchaTouch.Ext.field.IField): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
+    inline def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
     
-    @scala.inline
-    def setSelect(value: () => IText): Self = StObject.set(x, "select", js.Any.fromFunction0(value))
+    inline def setSelect(value: () => IText): Self = StObject.set(x, "select", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+    inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
-    @scala.inline
-    def setSetAutoCapitalize(value: /* autoCapitalize */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAutoCapitalize", js.Any.fromFunction1(value))
+    inline def setSetAutoCapitalize(value: /* autoCapitalize */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAutoCapitalize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetAutoCapitalizeUndefined: Self = StObject.set(x, "setAutoCapitalize", js.undefined)
+    inline def setSetAutoCapitalizeUndefined: Self = StObject.set(x, "setAutoCapitalize", js.undefined)
     
-    @scala.inline
-    def setSetAutoComplete(value: /* autoComplete */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAutoComplete", js.Any.fromFunction1(value))
+    inline def setSetAutoComplete(value: /* autoComplete */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAutoComplete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetAutoCompleteUndefined: Self = StObject.set(x, "setAutoComplete", js.undefined)
+    inline def setSetAutoCompleteUndefined: Self = StObject.set(x, "setAutoComplete", js.undefined)
     
-    @scala.inline
-    def setSetAutoCorrect(value: /* autoCorrect */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAutoCorrect", js.Any.fromFunction1(value))
+    inline def setSetAutoCorrect(value: /* autoCorrect */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAutoCorrect", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetAutoCorrectUndefined: Self = StObject.set(x, "setAutoCorrect", js.undefined)
+    inline def setSetAutoCorrectUndefined: Self = StObject.set(x, "setAutoCorrect", js.undefined)
     
-    @scala.inline
-    def setSetBubbleEvents(value: /* bubbleEvents */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setBubbleEvents", js.Any.fromFunction1(value))
+    inline def setSetBubbleEvents(value: /* bubbleEvents */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setBubbleEvents", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetBubbleEventsUndefined: Self = StObject.set(x, "setBubbleEvents", js.undefined)
+    inline def setSetBubbleEventsUndefined: Self = StObject.set(x, "setBubbleEvents", js.undefined)
     
-    @scala.inline
-    def setSetMaxLength(value: /* maxLength */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMaxLength", js.Any.fromFunction1(value))
+    inline def setSetMaxLength(value: /* maxLength */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMaxLength", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMaxLengthUndefined: Self = StObject.set(x, "setMaxLength", js.undefined)
+    inline def setSetMaxLengthUndefined: Self = StObject.set(x, "setMaxLength", js.undefined)
     
-    @scala.inline
-    def setSetPlaceHolder(value: /* placeHolder */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setPlaceHolder", js.Any.fromFunction1(value))
+    inline def setSetPlaceHolder(value: /* placeHolder */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setPlaceHolder", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPlaceHolderUndefined: Self = StObject.set(x, "setPlaceHolder", js.undefined)
+    inline def setSetPlaceHolderUndefined: Self = StObject.set(x, "setPlaceHolder", js.undefined)
     
-    @scala.inline
-    def setSetReadOnly(value: /* readOnly */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setReadOnly", js.Any.fromFunction1(value))
+    inline def setSetReadOnly(value: /* readOnly */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setReadOnly", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetReadOnlyUndefined: Self = StObject.set(x, "setReadOnly", js.undefined)
+    inline def setSetReadOnlyUndefined: Self = StObject.set(x, "setReadOnly", js.undefined)
     
-    @scala.inline
-    def setStartValue(value: js.Any): Self = StObject.set(x, "startValue", value.asInstanceOf[js.Any])
+    inline def setStartValue(value: js.Any): Self = StObject.set(x, "startValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartValueUndefined: Self = StObject.set(x, "startValue", js.undefined)
+    inline def setStartValueUndefined: Self = StObject.set(x, "startValue", js.undefined)
   }
 }

@@ -56,8 +56,7 @@ object frameworkComponentWrapperMod {
   }
   object WrapableInterface {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addMethod: (String, js.Function) => Unit,
       callMethod: (String, IArguments) => Unit,
       hasMethod: String => Boolean
@@ -66,17 +65,13 @@ object frameworkComponentWrapperMod {
       __obj.asInstanceOf[WrapableInterface]
     }
     
-    @scala.inline
-    implicit class WrapableInterfaceMutableBuilder[Self <: WrapableInterface] (val x: Self) extends AnyVal {
+    extension [Self <: WrapableInterface](x: Self) {
       
-      @scala.inline
-      def setAddMethod(value: (String, js.Function) => Unit): Self = StObject.set(x, "addMethod", js.Any.fromFunction2(value))
+      inline def setAddMethod(value: (String, js.Function) => Unit): Self = StObject.set(x, "addMethod", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCallMethod(value: (String, IArguments) => Unit): Self = StObject.set(x, "callMethod", js.Any.fromFunction2(value))
+      inline def setCallMethod(value: (String, IArguments) => Unit): Self = StObject.set(x, "callMethod", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setHasMethod(value: String => Boolean): Self = StObject.set(x, "hasMethod", js.Any.fromFunction1(value))
+      inline def setHasMethod(value: String => Boolean): Self = StObject.set(x, "hasMethod", js.Any.fromFunction1(value))
     }
   }
 }

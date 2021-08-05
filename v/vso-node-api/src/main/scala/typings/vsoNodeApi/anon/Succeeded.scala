@@ -18,8 +18,7 @@ trait Succeeded extends StObject {
 }
 object Succeeded {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     failed: scala.Double,
     inProgress: scala.Double,
     none: scala.Double,
@@ -30,22 +29,16 @@ object Succeeded {
     __obj.asInstanceOf[Succeeded]
   }
   
-  @scala.inline
-  implicit class SucceededMutableBuilder[Self <: Succeeded] (val x: Self) extends AnyVal {
+  extension [Self <: Succeeded](x: Self) {
     
-    @scala.inline
-    def setFailed(value: scala.Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
+    inline def setFailed(value: scala.Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInProgress(value: scala.Double): Self = StObject.set(x, "inProgress", value.asInstanceOf[js.Any])
+    inline def setInProgress(value: scala.Double): Self = StObject.set(x, "inProgress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPending(value: scala.Double): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+    inline def setPending(value: scala.Double): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSucceeded(value: scala.Double): Self = StObject.set(x, "succeeded", value.asInstanceOf[js.Any])
+    inline def setSucceeded(value: scala.Double): Self = StObject.set(x, "succeeded", value.asInstanceOf[js.Any])
   }
 }

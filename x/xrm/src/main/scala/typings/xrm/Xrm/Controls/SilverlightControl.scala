@@ -38,8 +38,7 @@ trait SilverlightControl
 }
 object SilverlightControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getControlType: () => ControlType | String,
     getData: () => String,
     getLabel: () => String,
@@ -54,16 +53,12 @@ object SilverlightControl {
     __obj.asInstanceOf[SilverlightControl]
   }
   
-  @scala.inline
-  implicit class SilverlightControlMutableBuilder[Self <: SilverlightControl] (val x: Self) extends AnyVal {
+  extension [Self <: SilverlightControl](x: Self) {
     
-    @scala.inline
-    def setGetData(value: () => String): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
+    inline def setGetData(value: () => String): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetObject(value: () => HTMLObjectElement): Self = StObject.set(x, "getObject", js.Any.fromFunction0(value))
+    inline def setGetObject(value: () => HTMLObjectElement): Self = StObject.set(x, "getObject", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetData(value: String => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
+    inline def setSetData(value: String => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
   }
 }

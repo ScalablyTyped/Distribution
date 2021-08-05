@@ -48,8 +48,7 @@ object menuMod {
     @JSImport("react-select/src/components/Menu", "default.contextTypes")
     @js.native
     def contextTypes: GetPortalPlacement = js.native
-    @scala.inline
-    def contextTypes_=(x: GetPortalPlacement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    inline def contextTypes_=(x: GetPortalPlacement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-select/src/components/Menu", "LoadingMessage")
@@ -81,8 +80,7 @@ object menuMod {
     @JSImport("react-select/src/components/Menu", "Menu.contextTypes")
     @js.native
     def contextTypes: GetPortalPlacement = js.native
-    @scala.inline
-    def contextTypes_=(x: GetPortalPlacement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    inline def contextTypes_=(x: GetPortalPlacement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-select/src/components/Menu", "MenuList")
@@ -115,31 +113,24 @@ object menuMod {
     @JSImport("react-select/src/components/Menu", "MenuPortal.childContextTypes")
     @js.native
     def childContextTypes: GetPortalPlacement = js.native
-    @scala.inline
-    def childContextTypes_=(x: GetPortalPlacement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
+    inline def childContextTypes_=(x: GetPortalPlacement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-select/src/components/Menu", "NoOptionsMessage")
   @js.native
   val NoOptionsMessage: ComponentType[NoticeProps[js.Any]] = js.native
   
-  @scala.inline
-  def getMenuPlacement(args: PlacementArgs): MenuState = ^.asInstanceOf[js.Dynamic].applyDynamic("getMenuPlacement")(args.asInstanceOf[js.Any]).asInstanceOf[MenuState]
+  inline def getMenuPlacement(args: PlacementArgs): MenuState = ^.asInstanceOf[js.Dynamic].applyDynamic("getMenuPlacement")(args.asInstanceOf[js.Any]).asInstanceOf[MenuState]
   
-  @scala.inline
-  def loadingMessageCSS(): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("loadingMessageCSS")().asInstanceOf[CSSProperties]
+  inline def loadingMessageCSS(): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("loadingMessageCSS")().asInstanceOf[CSSProperties]
   
-  @scala.inline
-  def menuCSS(state: MenuState): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("menuCSS")(state.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
+  inline def menuCSS(state: MenuState): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("menuCSS")(state.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
   
-  @scala.inline
-  def menuListCSS(state: MenuState): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("menuListCSS")(state.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
+  inline def menuListCSS(state: MenuState): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("menuListCSS")(state.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
   
-  @scala.inline
-  def menuPortalCSS(args: PortalStyleArgs): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("menuPortalCSS")(args.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
+  inline def menuPortalCSS(args: PortalStyleArgs): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("menuPortalCSS")(args.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
   
-  @scala.inline
-  def noOptionsMessageCSS(): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("noOptionsMessageCSS")().asInstanceOf[CSSProperties]
+  inline def noOptionsMessageCSS(): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("noOptionsMessageCSS")().asInstanceOf[CSSProperties]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.reactSelect.menuMod.MenuListState because var conflicts: isMulti. Inlined maxHeight */ @js.native
@@ -162,29 +153,22 @@ object menuMod {
   }
   object MenuListProps {
     
-    @scala.inline
-    def apply(): MenuListProps = {
+    inline def apply(): MenuListProps = {
       val __obj = js.Dynamic.literal(innerRef = null)
       __obj.asInstanceOf[MenuListProps]
     }
     
-    @scala.inline
-    implicit class MenuListPropsMutableBuilder[Self <: MenuListProps] (val x: Self) extends AnyVal {
+    extension [Self <: MenuListProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setInnerRef(value: InnerRef): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      inline def setInnerRef(value: InnerRef): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      inline def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
+      inline def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
     }
   }
   
@@ -201,20 +185,16 @@ object menuMod {
   }
   object MenuListState {
     
-    @scala.inline
-    def apply(isMulti: Boolean, maxHeight: Double): MenuListState = {
+    inline def apply(isMulti: Boolean, maxHeight: Double): MenuListState = {
       val __obj = js.Dynamic.literal(isMulti = isMulti.asInstanceOf[js.Any], maxHeight = maxHeight.asInstanceOf[js.Any])
       __obj.asInstanceOf[MenuListState]
     }
     
-    @scala.inline
-    implicit class MenuListStateMutableBuilder[Self <: MenuListState] (val x: Self) extends AnyVal {
+    extension [Self <: MenuListState](x: Self) {
       
-      @scala.inline
-      def setIsMulti(value: Boolean): Self = StObject.set(x, "isMulti", value.asInstanceOf[js.Any])
+      inline def setIsMulti(value: Boolean): Self = StObject.set(x, "isMulti", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+      inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     }
   }
   
@@ -241,20 +221,16 @@ object menuMod {
   }
   object MenuPortalState {
     
-    @scala.inline
-    def apply(): MenuPortalState = {
+    inline def apply(): MenuPortalState = {
       val __obj = js.Dynamic.literal(placement = null)
       __obj.asInstanceOf[MenuPortalState]
     }
     
-    @scala.inline
-    implicit class MenuPortalStateMutableBuilder[Self <: MenuPortalState] (val x: Self) extends AnyVal {
+    extension [Self <: MenuPortalState](x: Self) {
       
-      @scala.inline
-      def setPlacement(value: bottom | top): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: bottom | top): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacementNull: Self = StObject.set(x, "placement", null)
+      inline def setPlacementNull: Self = StObject.set(x, "placement", null)
     }
   }
   
@@ -299,23 +275,18 @@ object menuMod {
   }
   object MenuState {
     
-    @scala.inline
-    def apply(maxHeight: Double): MenuState = {
+    inline def apply(maxHeight: Double): MenuState = {
       val __obj = js.Dynamic.literal(maxHeight = maxHeight.asInstanceOf[js.Any], placement = null)
       __obj.asInstanceOf[MenuState]
     }
     
-    @scala.inline
-    implicit class MenuStateMutableBuilder[Self <: MenuState] (val x: Self) extends AnyVal {
+    extension [Self <: MenuState](x: Self) {
       
-      @scala.inline
-      def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+      inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacement(value: bottom | top): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: bottom | top): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacementNull: Self = StObject.set(x, "placement", null)
+      inline def setPlacementNull: Self = StObject.set(x, "placement", null)
     }
   }
   
@@ -347,8 +318,7 @@ object menuMod {
   }
   object PlacementArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       isFixedPosition: Boolean,
       maxHeight: Double,
       minHeight: Double,
@@ -359,32 +329,23 @@ object menuMod {
       __obj.asInstanceOf[PlacementArgs]
     }
     
-    @scala.inline
-    implicit class PlacementArgsMutableBuilder[Self <: PlacementArgs] (val x: Self) extends AnyVal {
+    extension [Self <: PlacementArgs](x: Self) {
       
-      @scala.inline
-      def setIsFixedPosition(value: Boolean): Self = StObject.set(x, "isFixedPosition", value.asInstanceOf[js.Any])
+      inline def setIsFixedPosition(value: Boolean): Self = StObject.set(x, "isFixedPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+      inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuEl(value: Ref[js.Any]): Self = StObject.set(x, "menuEl", value.asInstanceOf[js.Any])
+      inline def setMenuEl(value: Ref[js.Any]): Self = StObject.set(x, "menuEl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuElFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "menuEl", js.Any.fromFunction1(value))
+      inline def setMenuElFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "menuEl", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMenuElNull: Self = StObject.set(x, "menuEl", null)
+      inline def setMenuElNull: Self = StObject.set(x, "menuEl", null)
       
-      @scala.inline
-      def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+      inline def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacement(value: bottom | top | auto): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: bottom | top | auto): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldScroll(value: Boolean): Self = StObject.set(x, "shouldScroll", value.asInstanceOf[js.Any])
+      inline def setShouldScroll(value: Boolean): Self = StObject.set(x, "shouldScroll", value.asInstanceOf[js.Any])
     }
   }
   
@@ -398,23 +359,18 @@ object menuMod {
   }
   object PortalStyleArgs {
     
-    @scala.inline
-    def apply(offset: Double, position: MenuPosition, rect: RectType): PortalStyleArgs = {
+    inline def apply(offset: Double, position: MenuPosition, rect: RectType): PortalStyleArgs = {
       val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], rect = rect.asInstanceOf[js.Any])
       __obj.asInstanceOf[PortalStyleArgs]
     }
     
-    @scala.inline
-    implicit class PortalStyleArgsMutableBuilder[Self <: PortalStyleArgs] (val x: Self) extends AnyVal {
+    extension [Self <: PortalStyleArgs](x: Self) {
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: MenuPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: MenuPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRect(value: RectType): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
+      inline def setRect(value: RectType): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
     }
   }
 }

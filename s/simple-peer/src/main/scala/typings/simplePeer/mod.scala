@@ -113,86 +113,60 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAnswerConstraints(value: js.Object): Self = StObject.set(x, "answerConstraints", value.asInstanceOf[js.Any])
+      inline def setAnswerConstraints(value: js.Object): Self = StObject.set(x, "answerConstraints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnswerConstraintsUndefined: Self = StObject.set(x, "answerConstraints", js.undefined)
+      inline def setAnswerConstraintsUndefined: Self = StObject.set(x, "answerConstraints", js.undefined)
       
-      @scala.inline
-      def setChannelConfig(value: js.Object): Self = StObject.set(x, "channelConfig", value.asInstanceOf[js.Any])
+      inline def setChannelConfig(value: js.Object): Self = StObject.set(x, "channelConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelConfigUndefined: Self = StObject.set(x, "channelConfig", js.undefined)
+      inline def setChannelConfigUndefined: Self = StObject.set(x, "channelConfig", js.undefined)
       
-      @scala.inline
-      def setChannelName(value: String): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
+      inline def setChannelName(value: String): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelNameUndefined: Self = StObject.set(x, "channelName", js.undefined)
+      inline def setChannelNameUndefined: Self = StObject.set(x, "channelName", js.undefined)
       
-      @scala.inline
-      def setConfig(value: js.Object): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: js.Object): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      @scala.inline
-      def setConstraints(value: js.Object): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
+      inline def setConstraints(value: js.Object): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)
+      inline def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)
       
-      @scala.inline
-      def setInitiator(value: Boolean): Self = StObject.set(x, "initiator", value.asInstanceOf[js.Any])
+      inline def setInitiator(value: Boolean): Self = StObject.set(x, "initiator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitiatorUndefined: Self = StObject.set(x, "initiator", js.undefined)
+      inline def setInitiatorUndefined: Self = StObject.set(x, "initiator", js.undefined)
       
-      @scala.inline
-      def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
+      inline def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
+      inline def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
       
-      @scala.inline
-      def setOfferConstraints(value: js.Object): Self = StObject.set(x, "offerConstraints", value.asInstanceOf[js.Any])
+      inline def setOfferConstraints(value: js.Object): Self = StObject.set(x, "offerConstraints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOfferConstraintsUndefined: Self = StObject.set(x, "offerConstraints", js.undefined)
+      inline def setOfferConstraintsUndefined: Self = StObject.set(x, "offerConstraints", js.undefined)
       
-      @scala.inline
-      def setSdpTransform(value: /* sdp */ js.Any => js.Any): Self = StObject.set(x, "sdpTransform", js.Any.fromFunction1(value))
+      inline def setSdpTransform(value: /* sdp */ js.Any => js.Any): Self = StObject.set(x, "sdpTransform", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSdpTransformUndefined: Self = StObject.set(x, "sdpTransform", js.undefined)
+      inline def setSdpTransformUndefined: Self = StObject.set(x, "sdpTransform", js.undefined)
       
-      @scala.inline
-      def setStream(value: MediaStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: MediaStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
+      inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
       
-      @scala.inline
-      def setTrickle(value: Boolean): Self = StObject.set(x, "trickle", value.asInstanceOf[js.Any])
+      inline def setTrickle(value: Boolean): Self = StObject.set(x, "trickle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrickleUndefined: Self = StObject.set(x, "trickle", js.undefined)
+      inline def setTrickleUndefined: Self = StObject.set(x, "trickle", js.undefined)
       
-      @scala.inline
-      def setWrtc(value: js.Object): Self = StObject.set(x, "wrtc", value.asInstanceOf[js.Any])
+      inline def setWrtc(value: js.Object): Self = StObject.set(x, "wrtc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrtcUndefined: Self = StObject.set(x, "wrtc", js.undefined)
+      inline def setWrtcUndefined: Self = StObject.set(x, "wrtc", js.undefined)
     }
   }
   
@@ -206,32 +180,24 @@ object mod extends Shortcut {
   }
   object SignalData {
     
-    @scala.inline
-    def apply(): SignalData = {
+    inline def apply(): SignalData = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SignalData]
     }
     
-    @scala.inline
-    implicit class SignalDataMutableBuilder[Self <: SignalData] (val x: Self) extends AnyVal {
+    extension [Self <: SignalData](x: Self) {
       
-      @scala.inline
-      def setCandidate(value: js.Any): Self = StObject.set(x, "candidate", value.asInstanceOf[js.Any])
+      inline def setCandidate(value: js.Any): Self = StObject.set(x, "candidate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCandidateUndefined: Self = StObject.set(x, "candidate", js.undefined)
+      inline def setCandidateUndefined: Self = StObject.set(x, "candidate", js.undefined)
       
-      @scala.inline
-      def setSdp(value: js.Any): Self = StObject.set(x, "sdp", value.asInstanceOf[js.Any])
+      inline def setSdp(value: js.Any): Self = StObject.set(x, "sdp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSdpUndefined: Self = StObject.set(x, "sdp", js.undefined)
+      inline def setSdpUndefined: Self = StObject.set(x, "sdp", js.undefined)
       
-      @scala.inline
-      def setType(value: offer | pranswer | answer | rollback): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: offer | pranswer | answer | rollback): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   

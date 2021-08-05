@@ -18,22 +18,17 @@ trait SetTerminationProtectionInput extends StObject {
 }
 object SetTerminationProtectionInput {
   
-  @scala.inline
-  def apply(JobFlowIds: XmlStringList, TerminationProtected: Boolean): SetTerminationProtectionInput = {
+  inline def apply(JobFlowIds: XmlStringList, TerminationProtected: Boolean): SetTerminationProtectionInput = {
     val __obj = js.Dynamic.literal(JobFlowIds = JobFlowIds.asInstanceOf[js.Any], TerminationProtected = TerminationProtected.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetTerminationProtectionInput]
   }
   
-  @scala.inline
-  implicit class SetTerminationProtectionInputMutableBuilder[Self <: SetTerminationProtectionInput] (val x: Self) extends AnyVal {
+  extension [Self <: SetTerminationProtectionInput](x: Self) {
     
-    @scala.inline
-    def setJobFlowIds(value: XmlStringList): Self = StObject.set(x, "JobFlowIds", value.asInstanceOf[js.Any])
+    inline def setJobFlowIds(value: XmlStringList): Self = StObject.set(x, "JobFlowIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobFlowIdsVarargs(value: XmlString*): Self = StObject.set(x, "JobFlowIds", js.Array(value :_*))
+    inline def setJobFlowIdsVarargs(value: XmlString*): Self = StObject.set(x, "JobFlowIds", js.Array(value :_*))
     
-    @scala.inline
-    def setTerminationProtected(value: Boolean): Self = StObject.set(x, "TerminationProtected", value.asInstanceOf[js.Any])
+    inline def setTerminationProtected(value: Boolean): Self = StObject.set(x, "TerminationProtected", value.asInstanceOf[js.Any])
   }
 }

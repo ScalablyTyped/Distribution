@@ -23,31 +23,23 @@ trait GetTemplateInput extends StObject {
 }
 object GetTemplateInput {
   
-  @scala.inline
-  def apply(): GetTemplateInput = {
+  inline def apply(): GetTemplateInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetTemplateInput]
   }
   
-  @scala.inline
-  implicit class GetTemplateInputMutableBuilder[Self <: GetTemplateInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetTemplateInput](x: Self) {
     
-    @scala.inline
-    def setChangeSetName(value: ChangeSetNameOrId): Self = StObject.set(x, "ChangeSetName", value.asInstanceOf[js.Any])
+    inline def setChangeSetName(value: ChangeSetNameOrId): Self = StObject.set(x, "ChangeSetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeSetNameUndefined: Self = StObject.set(x, "ChangeSetName", js.undefined)
+    inline def setChangeSetNameUndefined: Self = StObject.set(x, "ChangeSetName", js.undefined)
     
-    @scala.inline
-    def setStackName(value: StackName): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
+    inline def setStackName(value: StackName): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackNameUndefined: Self = StObject.set(x, "StackName", js.undefined)
+    inline def setStackNameUndefined: Self = StObject.set(x, "StackName", js.undefined)
     
-    @scala.inline
-    def setTemplateStage(value: TemplateStage): Self = StObject.set(x, "TemplateStage", value.asInstanceOf[js.Any])
+    inline def setTemplateStage(value: TemplateStage): Self = StObject.set(x, "TemplateStage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateStageUndefined: Self = StObject.set(x, "TemplateStage", js.undefined)
+    inline def setTemplateStageUndefined: Self = StObject.set(x, "TemplateStage", js.undefined)
   }
 }

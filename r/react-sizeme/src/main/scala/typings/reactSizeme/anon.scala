@@ -14,26 +14,20 @@ object anon {
   }
   object Height {
     
-    @scala.inline
-    def apply(): Height = {
+    inline def apply(): Height = {
       val __obj = js.Dynamic.literal(height = null, width = null)
       __obj.asInstanceOf[Height]
     }
     
-    @scala.inline
-    implicit class HeightMutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
+    extension [Self <: Height](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightNull: Self = StObject.set(x, "height", null)
+      inline def setHeightNull: Self = StObject.set(x, "height", null)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthNull: Self = StObject.set(x, "width", null)
+      inline def setWidthNull: Self = StObject.set(x, "width", null)
     }
   }
 }

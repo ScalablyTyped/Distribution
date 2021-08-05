@@ -32,24 +32,19 @@ object reactNativeReactNativeConnectionOptionsMod {
   }
   object ReactNativeConnectionOptions {
     
-    @scala.inline
-    def apply(database: String, location: String): ReactNativeConnectionOptions = {
+    inline def apply(database: String, location: String): ReactNativeConnectionOptions = {
       val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("react-native")
       __obj.asInstanceOf[ReactNativeConnectionOptions]
     }
     
-    @scala.inline
-    implicit class ReactNativeConnectionOptionsMutableBuilder[Self <: ReactNativeConnectionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ReactNativeConnectionOptions](x: Self) {
       
-      @scala.inline
-      def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+      inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: `react-native`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: `react-native`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

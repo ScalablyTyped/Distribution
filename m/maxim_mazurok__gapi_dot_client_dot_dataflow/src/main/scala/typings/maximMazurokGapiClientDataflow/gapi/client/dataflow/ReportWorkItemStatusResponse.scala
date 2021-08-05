@@ -22,32 +22,25 @@ trait ReportWorkItemStatusResponse extends StObject {
 }
 object ReportWorkItemStatusResponse {
   
-  @scala.inline
-  def apply(): ReportWorkItemStatusResponse = {
+  inline def apply(): ReportWorkItemStatusResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReportWorkItemStatusResponse]
   }
   
-  @scala.inline
-  implicit class ReportWorkItemStatusResponseMutableBuilder[Self <: ReportWorkItemStatusResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReportWorkItemStatusResponse](x: Self) {
     
-    @scala.inline
-    def setUnifiedWorkerResponse(
+    inline def setUnifiedWorkerResponse(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.ReportWorkItemStatusResponse & TopLevel[js.Any]
     ): Self = StObject.set(x, "unifiedWorkerResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnifiedWorkerResponseUndefined: Self = StObject.set(x, "unifiedWorkerResponse", js.undefined)
+    inline def setUnifiedWorkerResponseUndefined: Self = StObject.set(x, "unifiedWorkerResponse", js.undefined)
     
-    @scala.inline
-    def setWorkItemServiceStates(value: js.Array[WorkItemServiceState]): Self = StObject.set(x, "workItemServiceStates", value.asInstanceOf[js.Any])
+    inline def setWorkItemServiceStates(value: js.Array[WorkItemServiceState]): Self = StObject.set(x, "workItemServiceStates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkItemServiceStatesUndefined: Self = StObject.set(x, "workItemServiceStates", js.undefined)
+    inline def setWorkItemServiceStatesUndefined: Self = StObject.set(x, "workItemServiceStates", js.undefined)
     
-    @scala.inline
-    def setWorkItemServiceStatesVarargs(value: WorkItemServiceState*): Self = StObject.set(x, "workItemServiceStates", js.Array(value :_*))
+    inline def setWorkItemServiceStatesVarargs(value: WorkItemServiceState*): Self = StObject.set(x, "workItemServiceStates", js.Array(value :_*))
   }
 }

@@ -57,21 +57,16 @@ object identityPoolRoleAttachmentMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): IdentityPoolRoleAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[IdentityPoolRoleAttachment]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): IdentityPoolRoleAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IdentityPoolRoleAttachment]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: IdentityPoolRoleAttachmentState): IdentityPoolRoleAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[IdentityPoolRoleAttachment]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: IdentityPoolRoleAttachmentState, opts: CustomResourceOptions): IdentityPoolRoleAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IdentityPoolRoleAttachment]
+    inline def get(name: String, id: Input[ID]): IdentityPoolRoleAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[IdentityPoolRoleAttachment]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): IdentityPoolRoleAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IdentityPoolRoleAttachment]
+    inline def get(name: String, id: Input[ID], state: IdentityPoolRoleAttachmentState): IdentityPoolRoleAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[IdentityPoolRoleAttachment]
+    inline def get(name: String, id: Input[ID], state: IdentityPoolRoleAttachmentState, opts: CustomResourceOptions): IdentityPoolRoleAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IdentityPoolRoleAttachment]
     
     /**
       * Returns true if the given object is an instance of IdentityPoolRoleAttachment.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/identityPoolRoleAttachment.IdentityPoolRoleAttachment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cognito/identityPoolRoleAttachment.IdentityPoolRoleAttachment */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/identityPoolRoleAttachment.IdentityPoolRoleAttachment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cognito/identityPoolRoleAttachment.IdentityPoolRoleAttachment */ Boolean]
   }
   
   trait IdentityPoolRoleAttachmentArgs extends StObject {
@@ -97,33 +92,26 @@ object identityPoolRoleAttachmentMod {
   }
   object IdentityPoolRoleAttachmentArgs {
     
-    @scala.inline
-    def apply(identityPoolId: Input[String], roles: Input[StringDictionary[Input[String]]]): IdentityPoolRoleAttachmentArgs = {
+    inline def apply(identityPoolId: Input[String], roles: Input[StringDictionary[Input[String]]]): IdentityPoolRoleAttachmentArgs = {
       val __obj = js.Dynamic.literal(identityPoolId = identityPoolId.asInstanceOf[js.Any], roles = roles.asInstanceOf[js.Any])
       __obj.asInstanceOf[IdentityPoolRoleAttachmentArgs]
     }
     
-    @scala.inline
-    implicit class IdentityPoolRoleAttachmentArgsMutableBuilder[Self <: IdentityPoolRoleAttachmentArgs] (val x: Self) extends AnyVal {
+    extension [Self <: IdentityPoolRoleAttachmentArgs](x: Self) {
       
-      @scala.inline
-      def setIdentityPoolId(value: Input[String]): Self = StObject.set(x, "identityPoolId", value.asInstanceOf[js.Any])
+      inline def setIdentityPoolId(value: Input[String]): Self = StObject.set(x, "identityPoolId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleMappings(
+      inline def setRoleMappings(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.cognito.IdentityPoolRoleAttachmentRoleMapping]]
             ]
       ): Self = StObject.set(x, "roleMappings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleMappingsUndefined: Self = StObject.set(x, "roleMappings", js.undefined)
+      inline def setRoleMappingsUndefined: Self = StObject.set(x, "roleMappings", js.undefined)
       
-      @scala.inline
-      def setRoleMappingsVarargs(value: Input[typings.pulumiAws.inputMod.cognito.IdentityPoolRoleAttachmentRoleMapping]*): Self = StObject.set(x, "roleMappings", js.Array(value :_*))
+      inline def setRoleMappingsVarargs(value: Input[typings.pulumiAws.inputMod.cognito.IdentityPoolRoleAttachmentRoleMapping]*): Self = StObject.set(x, "roleMappings", js.Array(value :_*))
       
-      @scala.inline
-      def setRoles(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
+      inline def setRoles(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
     }
   }
   
@@ -150,39 +138,30 @@ object identityPoolRoleAttachmentMod {
   }
   object IdentityPoolRoleAttachmentState {
     
-    @scala.inline
-    def apply(): IdentityPoolRoleAttachmentState = {
+    inline def apply(): IdentityPoolRoleAttachmentState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IdentityPoolRoleAttachmentState]
     }
     
-    @scala.inline
-    implicit class IdentityPoolRoleAttachmentStateMutableBuilder[Self <: IdentityPoolRoleAttachmentState] (val x: Self) extends AnyVal {
+    extension [Self <: IdentityPoolRoleAttachmentState](x: Self) {
       
-      @scala.inline
-      def setIdentityPoolId(value: Input[String]): Self = StObject.set(x, "identityPoolId", value.asInstanceOf[js.Any])
+      inline def setIdentityPoolId(value: Input[String]): Self = StObject.set(x, "identityPoolId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentityPoolIdUndefined: Self = StObject.set(x, "identityPoolId", js.undefined)
+      inline def setIdentityPoolIdUndefined: Self = StObject.set(x, "identityPoolId", js.undefined)
       
-      @scala.inline
-      def setRoleMappings(
+      inline def setRoleMappings(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.cognito.IdentityPoolRoleAttachmentRoleMapping]]
             ]
       ): Self = StObject.set(x, "roleMappings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleMappingsUndefined: Self = StObject.set(x, "roleMappings", js.undefined)
+      inline def setRoleMappingsUndefined: Self = StObject.set(x, "roleMappings", js.undefined)
       
-      @scala.inline
-      def setRoleMappingsVarargs(value: Input[typings.pulumiAws.inputMod.cognito.IdentityPoolRoleAttachmentRoleMapping]*): Self = StObject.set(x, "roleMappings", js.Array(value :_*))
+      inline def setRoleMappingsVarargs(value: Input[typings.pulumiAws.inputMod.cognito.IdentityPoolRoleAttachmentRoleMapping]*): Self = StObject.set(x, "roleMappings", js.Array(value :_*))
       
-      @scala.inline
-      def setRoles(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
+      inline def setRoles(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
+      inline def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
     }
   }
 }

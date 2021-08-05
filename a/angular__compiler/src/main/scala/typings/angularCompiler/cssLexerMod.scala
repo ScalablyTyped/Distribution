@@ -119,7 +119,7 @@ object cssLexerMod {
     def this(input: String) = this()
     def this(input: String, _trackComments: Boolean) = this()
     
-    var _trackComments: js.Any = js.native
+    /* private */ var _trackComments: js.Any = js.native
     
     def advance(): Unit = js.native
     
@@ -276,21 +276,15 @@ object cssLexerMod {
     var token: CssToken = js.native
   }
   
-  @scala.inline
-  def cssScannerError(token: CssToken, message: String): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("cssScannerError")(token.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Error]
+  inline def cssScannerError(token: CssToken, message: String): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("cssScannerError")(token.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Error]
   
-  @scala.inline
-  def findProblemCode(input: String, errorValue: String, index: Double, column: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("findProblemCode")(input.asInstanceOf[js.Any], errorValue.asInstanceOf[js.Any], index.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def findProblemCode(input: String, errorValue: String, index: Double, column: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("findProblemCode")(input.asInstanceOf[js.Any], errorValue.asInstanceOf[js.Any], index.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def generateErrorMessage(input: String, message: String, errorValue: String, index: Double, row: Double, column: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateErrorMessage")(input.asInstanceOf[js.Any], message.asInstanceOf[js.Any], errorValue.asInstanceOf[js.Any], index.asInstanceOf[js.Any], row.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def generateErrorMessage(input: String, message: String, errorValue: String, index: Double, row: Double, column: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateErrorMessage")(input.asInstanceOf[js.Any], message.asInstanceOf[js.Any], errorValue.asInstanceOf[js.Any], index.asInstanceOf[js.Any], row.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def getRawMessage(error: Error): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRawMessage")(error.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getRawMessage(error: Error): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRawMessage")(error.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def getToken(error: Error): CssToken = ^.asInstanceOf[js.Dynamic].applyDynamic("getToken")(error.asInstanceOf[js.Any]).asInstanceOf[CssToken]
+  inline def getToken(error: Error): CssToken = ^.asInstanceOf[js.Dynamic].applyDynamic("getToken")(error.asInstanceOf[js.Any]).asInstanceOf[CssToken]
   
-  @scala.inline
-  def isNewline(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNewline")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isNewline(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNewline")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -23,40 +23,29 @@ trait UpdateTableColumnPropertiesRequest extends StObject {
 }
 object UpdateTableColumnPropertiesRequest {
   
-  @scala.inline
-  def apply(): UpdateTableColumnPropertiesRequest = {
+  inline def apply(): UpdateTableColumnPropertiesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateTableColumnPropertiesRequest]
   }
   
-  @scala.inline
-  implicit class UpdateTableColumnPropertiesRequestMutableBuilder[Self <: UpdateTableColumnPropertiesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateTableColumnPropertiesRequest](x: Self) {
     
-    @scala.inline
-    def setColumnIndices(value: js.Array[Double]): Self = StObject.set(x, "columnIndices", value.asInstanceOf[js.Any])
+    inline def setColumnIndices(value: js.Array[Double]): Self = StObject.set(x, "columnIndices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnIndicesUndefined: Self = StObject.set(x, "columnIndices", js.undefined)
+    inline def setColumnIndicesUndefined: Self = StObject.set(x, "columnIndices", js.undefined)
     
-    @scala.inline
-    def setColumnIndicesVarargs(value: Double*): Self = StObject.set(x, "columnIndices", js.Array(value :_*))
+    inline def setColumnIndicesVarargs(value: Double*): Self = StObject.set(x, "columnIndices", js.Array(value :_*))
     
-    @scala.inline
-    def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setTableColumnProperties(value: TableColumnProperties): Self = StObject.set(x, "tableColumnProperties", value.asInstanceOf[js.Any])
+    inline def setTableColumnProperties(value: TableColumnProperties): Self = StObject.set(x, "tableColumnProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableColumnPropertiesUndefined: Self = StObject.set(x, "tableColumnProperties", js.undefined)
+    inline def setTableColumnPropertiesUndefined: Self = StObject.set(x, "tableColumnProperties", js.undefined)
     
-    @scala.inline
-    def setTableStartLocation(value: Location): Self = StObject.set(x, "tableStartLocation", value.asInstanceOf[js.Any])
+    inline def setTableStartLocation(value: Location): Self = StObject.set(x, "tableStartLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableStartLocationUndefined: Self = StObject.set(x, "tableStartLocation", js.undefined)
+    inline def setTableStartLocationUndefined: Self = StObject.set(x, "tableStartLocation", js.undefined)
   }
 }

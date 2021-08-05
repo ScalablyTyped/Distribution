@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlPivotTableVersionList extends StObject
 object XlPivotTableVersionList {
   
-  @scala.inline
-  def xlPivotTableVersion10: `1` = 1.asInstanceOf[`1`]
+  inline def xlPivotTableVersion10: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlPivotTableVersion11: `2` = 2.asInstanceOf[`2`]
+  inline def xlPivotTableVersion11: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlPivotTableVersion12: `3` = 3.asInstanceOf[`3`]
+  inline def xlPivotTableVersion12: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def xlPivotTableVersion14: `4` = 4.asInstanceOf[`4`]
+  inline def xlPivotTableVersion14: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def xlPivotTableVersion2000: `0` = 0.asInstanceOf[`0`]
+  inline def xlPivotTableVersion2000: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xlPivotTableVersionCurrent: `-1` = -1.asInstanceOf[`-1`]
+  inline def xlPivotTableVersionCurrent: `-1` = -1.asInstanceOf[`-1`]
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LocalVar extends StObject {
   
-  @JSName("Access.LocalVar_typekey")
+  /* private */ @JSName("Access.LocalVar_typekey")
   var AccessDotLocalVar_typekey: LocalVar
   
   def IsMemberSafe(dispid: Double): Boolean
@@ -19,8 +19,7 @@ trait LocalVar extends StObject {
 }
 object LocalVar {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessDotLocalVar_typekey: LocalVar,
     IsMemberSafe: Double => Boolean,
     Name: String,
@@ -32,22 +31,16 @@ object LocalVar {
     __obj.asInstanceOf[LocalVar]
   }
   
-  @scala.inline
-  implicit class LocalVarMutableBuilder[Self <: LocalVar] (val x: Self) extends AnyVal {
+  extension [Self <: LocalVar](x: Self) {
     
-    @scala.inline
-    def setAccessDotLocalVar_typekey(value: LocalVar): Self = StObject.set(x, "Access.LocalVar_typekey", value.asInstanceOf[js.Any])
+    inline def setAccessDotLocalVar_typekey(value: LocalVar): Self = StObject.set(x, "Access.LocalVar_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
+    inline def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_Value(value: js.Any): Self = StObject.set(x, "_Value", value.asInstanceOf[js.Any])
+    inline def set_Value(value: js.Any): Self = StObject.set(x, "_Value", value.asInstanceOf[js.Any])
   }
 }

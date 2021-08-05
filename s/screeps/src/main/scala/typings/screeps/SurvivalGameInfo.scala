@@ -26,22 +26,17 @@ trait SurvivalGameInfo extends StObject {
 }
 object SurvivalGameInfo {
   
-  @scala.inline
-  def apply(score: Double, timeToWave: Double, wave: Double): SurvivalGameInfo = {
+  inline def apply(score: Double, timeToWave: Double, wave: Double): SurvivalGameInfo = {
     val __obj = js.Dynamic.literal(score = score.asInstanceOf[js.Any], timeToWave = timeToWave.asInstanceOf[js.Any], wave = wave.asInstanceOf[js.Any])
     __obj.asInstanceOf[SurvivalGameInfo]
   }
   
-  @scala.inline
-  implicit class SurvivalGameInfoMutableBuilder[Self <: SurvivalGameInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SurvivalGameInfo](x: Self) {
     
-    @scala.inline
-    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeToWave(value: Double): Self = StObject.set(x, "timeToWave", value.asInstanceOf[js.Any])
+    inline def setTimeToWave(value: Double): Self = StObject.set(x, "timeToWave", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWave(value: Double): Self = StObject.set(x, "wave", value.asInstanceOf[js.Any])
+    inline def setWave(value: Double): Self = StObject.set(x, "wave", value.asInstanceOf[js.Any])
   }
 }

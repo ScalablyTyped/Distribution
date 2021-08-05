@@ -10,16 +10,13 @@ trait URL extends StObject {
 }
 object URL {
   
-  @scala.inline
-  def apply(URL: String): URL = {
+  inline def apply(URL: String): URL = {
     val __obj = js.Dynamic.literal(URL = URL.asInstanceOf[js.Any])
     __obj.asInstanceOf[URL]
   }
   
-  @scala.inline
-  implicit class URLMutableBuilder[Self <: URL] (val x: Self) extends AnyVal {
+  extension [Self <: URL](x: Self) {
     
-    @scala.inline
-    def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
+    inline def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
   }
 }

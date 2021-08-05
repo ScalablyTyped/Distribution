@@ -12,6 +12,5 @@ object dropdownOptionDropdownOptionDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def dropdownOptionDriverFactory(hasElementEventTrigger: Element): ClassName = ^.asInstanceOf[js.Dynamic].applyDynamic("dropdownOptionDriverFactory")(hasElementEventTrigger.asInstanceOf[js.Any]).asInstanceOf[ClassName]
+  inline def dropdownOptionDriverFactory(hasElementEventTrigger: Element): ClassName = ^.asInstanceOf[js.Dynamic].applyDynamic("dropdownOptionDriverFactory")(hasElementEventTrigger.asInstanceOf[js.Any]).asInstanceOf[ClassName]
 }

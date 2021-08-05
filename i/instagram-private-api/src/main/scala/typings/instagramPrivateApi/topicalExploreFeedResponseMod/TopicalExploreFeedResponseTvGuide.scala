@@ -10,19 +10,15 @@ trait TopicalExploreFeedResponseTvGuide extends StObject {
 }
 object TopicalExploreFeedResponseTvGuide {
   
-  @scala.inline
-  def apply(channels: js.Array[TopicalExploreFeedResponseChannelsItem]): TopicalExploreFeedResponseTvGuide = {
+  inline def apply(channels: js.Array[TopicalExploreFeedResponseChannelsItem]): TopicalExploreFeedResponseTvGuide = {
     val __obj = js.Dynamic.literal(channels = channels.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopicalExploreFeedResponseTvGuide]
   }
   
-  @scala.inline
-  implicit class TopicalExploreFeedResponseTvGuideMutableBuilder[Self <: TopicalExploreFeedResponseTvGuide] (val x: Self) extends AnyVal {
+  extension [Self <: TopicalExploreFeedResponseTvGuide](x: Self) {
     
-    @scala.inline
-    def setChannels(value: js.Array[TopicalExploreFeedResponseChannelsItem]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+    inline def setChannels(value: js.Array[TopicalExploreFeedResponseChannelsItem]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelsVarargs(value: TopicalExploreFeedResponseChannelsItem*): Self = StObject.set(x, "channels", js.Array(value :_*))
+    inline def setChannelsVarargs(value: TopicalExploreFeedResponseChannelsItem*): Self = StObject.set(x, "channels", js.Array(value :_*))
   }
 }

@@ -23,31 +23,23 @@ trait EvaluationResult extends StObject {
 }
 object EvaluationResult {
   
-  @scala.inline
-  def apply(): EvaluationResult = {
+  inline def apply(): EvaluationResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EvaluationResult]
   }
   
-  @scala.inline
-  implicit class EvaluationResultMutableBuilder[Self <: EvaluationResult] (val x: Self) extends AnyVal {
+  extension [Self <: EvaluationResult](x: Self) {
     
-    @scala.inline
-    def setComplianceStatus(value: PolicyComplianceStatusType): Self = StObject.set(x, "ComplianceStatus", value.asInstanceOf[js.Any])
+    inline def setComplianceStatus(value: PolicyComplianceStatusType): Self = StObject.set(x, "ComplianceStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComplianceStatusUndefined: Self = StObject.set(x, "ComplianceStatus", js.undefined)
+    inline def setComplianceStatusUndefined: Self = StObject.set(x, "ComplianceStatus", js.undefined)
     
-    @scala.inline
-    def setEvaluationLimitExceeded(value: Boolean): Self = StObject.set(x, "EvaluationLimitExceeded", value.asInstanceOf[js.Any])
+    inline def setEvaluationLimitExceeded(value: Boolean): Self = StObject.set(x, "EvaluationLimitExceeded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluationLimitExceededUndefined: Self = StObject.set(x, "EvaluationLimitExceeded", js.undefined)
+    inline def setEvaluationLimitExceededUndefined: Self = StObject.set(x, "EvaluationLimitExceeded", js.undefined)
     
-    @scala.inline
-    def setViolatorCount(value: ResourceCount): Self = StObject.set(x, "ViolatorCount", value.asInstanceOf[js.Any])
+    inline def setViolatorCount(value: ResourceCount): Self = StObject.set(x, "ViolatorCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViolatorCountUndefined: Self = StObject.set(x, "ViolatorCount", js.undefined)
+    inline def setViolatorCountUndefined: Self = StObject.set(x, "ViolatorCount", js.undefined)
   }
 }

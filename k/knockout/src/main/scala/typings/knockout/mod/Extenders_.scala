@@ -41,8 +41,7 @@ trait Extenders_[T]
 }
 object Extenders_ {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     deferred: (Subscribable_[js.Any], `true`) => Subscribable_[js.Any],
     notify_ : (Subscribable_[js.Any], always | js.Any) => Subscribable_[js.Any],
     rateLimit: (Subscribable_[js.Any], Double | RateLimitOptions) => Subscribable_[js.Any],
@@ -54,22 +53,16 @@ object Extenders_ {
     __obj.asInstanceOf[Extenders_[T]]
   }
   
-  @scala.inline
-  implicit class Extenders_MutableBuilder[Self <: Extenders_[?], T] (val x: Self & Extenders_[T]) extends AnyVal {
+  extension [Self <: Extenders_[?], T](x: Self & Extenders_[T]) {
     
-    @scala.inline
-    def setDeferred(value: (Subscribable_[js.Any], `true`) => Subscribable_[js.Any]): Self = StObject.set(x, "deferred", js.Any.fromFunction2(value))
+    inline def setDeferred(value: (Subscribable_[js.Any], `true`) => Subscribable_[js.Any]): Self = StObject.set(x, "deferred", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setNotify_(value: (Subscribable_[js.Any], always | js.Any) => Subscribable_[js.Any]): Self = StObject.set(x, "notify", js.Any.fromFunction2(value))
+    inline def setNotify_(value: (Subscribable_[js.Any], always | js.Any) => Subscribable_[js.Any]): Self = StObject.set(x, "notify", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRateLimit(value: (Subscribable_[js.Any], Double | RateLimitOptions) => Subscribable_[js.Any]): Self = StObject.set(x, "rateLimit", js.Any.fromFunction2(value))
+    inline def setRateLimit(value: (Subscribable_[js.Any], Double | RateLimitOptions) => Subscribable_[js.Any]): Self = StObject.set(x, "rateLimit", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setThrottle(value: (Subscribable_[js.Any], Double) => Subscribable_[js.Any]): Self = StObject.set(x, "throttle", js.Any.fromFunction2(value))
+    inline def setThrottle(value: (Subscribable_[js.Any], Double) => Subscribable_[js.Any]): Self = StObject.set(x, "throttle", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTrackArrayChanges(value: (Subscribable_[js.Any], `true` | CompareArraysOptions) => Subscribable_[js.Any]): Self = StObject.set(x, "trackArrayChanges", js.Any.fromFunction2(value))
+    inline def setTrackArrayChanges(value: (Subscribable_[js.Any], `true` | CompareArraysOptions) => Subscribable_[js.Any]): Self = StObject.set(x, "trackArrayChanges", js.Any.fromFunction2(value))
   }
 }

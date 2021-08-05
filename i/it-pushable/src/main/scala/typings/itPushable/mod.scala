@@ -14,12 +14,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](): Pushable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Pushable[T]]
-  @scala.inline
-  def default[T](options: Options): Pushable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Pushable[T]]
-  @scala.inline
-  def default[T](options: OptionsV): PushableV[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[PushableV[T]]
+  inline def default[T](): Pushable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Pushable[T]]
+  inline def default[T](options: Options): Pushable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Pushable[T]]
+  inline def default[T](options: OptionsV): PushableV[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[PushableV[T]]
   
   trait Options extends StObject {
     
@@ -29,26 +26,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setOnEnd(value: /* err */ js.UndefOr[Error] => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction1(value))
+      inline def setOnEnd(value: /* err */ js.UndefOr[Error] => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
+      inline def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
       
-      @scala.inline
-      def setWritev(value: `false`): Self = StObject.set(x, "writev", value.asInstanceOf[js.Any])
+      inline def setWritev(value: `false`): Self = StObject.set(x, "writev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWritevUndefined: Self = StObject.set(x, "writev", js.undefined)
+      inline def setWritevUndefined: Self = StObject.set(x, "writev", js.undefined)
     }
   }
   
@@ -60,23 +51,18 @@ object mod {
   }
   object OptionsV {
     
-    @scala.inline
-    def apply(): OptionsV = {
+    inline def apply(): OptionsV = {
       val __obj = js.Dynamic.literal(writev = true)
       __obj.asInstanceOf[OptionsV]
     }
     
-    @scala.inline
-    implicit class OptionsVMutableBuilder[Self <: OptionsV] (val x: Self) extends AnyVal {
+    extension [Self <: OptionsV](x: Self) {
       
-      @scala.inline
-      def setOnEnd(value: /* err */ js.UndefOr[Error] => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction1(value))
+      inline def setOnEnd(value: /* err */ js.UndefOr[Error] => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
+      inline def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
       
-      @scala.inline
-      def setWritev(value: `true`): Self = StObject.set(x, "writev", value.asInstanceOf[js.Any])
+      inline def setWritev(value: `true`): Self = StObject.set(x, "writev", value.asInstanceOf[js.Any])
     }
   }
   

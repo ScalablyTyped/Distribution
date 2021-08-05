@@ -26,53 +26,38 @@ trait ExistsParams
 }
 object ExistsParams {
   
-  @scala.inline
-  def apply(id: String, index: String, `type`: String): ExistsParams = {
+  inline def apply(id: String, index: String, `type`: String): ExistsParams = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExistsParams]
   }
   
-  @scala.inline
-  implicit class ExistsParamsMutableBuilder[Self <: ExistsParams] (val x: Self) extends AnyVal {
+  extension [Self <: ExistsParams](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
-    @scala.inline
-    def setPreference(value: String): Self = StObject.set(x, "preference", value.asInstanceOf[js.Any])
+    inline def setPreference(value: String): Self = StObject.set(x, "preference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferenceUndefined: Self = StObject.set(x, "preference", js.undefined)
+    inline def setPreferenceUndefined: Self = StObject.set(x, "preference", js.undefined)
     
-    @scala.inline
-    def setRealtime(value: Boolean): Self = StObject.set(x, "realtime", value.asInstanceOf[js.Any])
+    inline def setRealtime(value: Boolean): Self = StObject.set(x, "realtime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRealtimeUndefined: Self = StObject.set(x, "realtime", js.undefined)
+    inline def setRealtimeUndefined: Self = StObject.set(x, "realtime", js.undefined)
     
-    @scala.inline
-    def setRefresh(value: Boolean): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
+    inline def setRefresh(value: Boolean): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshUndefined: Self = StObject.set(x, "refresh", js.undefined)
+    inline def setRefreshUndefined: Self = StObject.set(x, "refresh", js.undefined)
     
-    @scala.inline
-    def setRouting(value: String): Self = StObject.set(x, "routing", value.asInstanceOf[js.Any])
+    inline def setRouting(value: String): Self = StObject.set(x, "routing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutingUndefined: Self = StObject.set(x, "routing", js.undefined)
+    inline def setRoutingUndefined: Self = StObject.set(x, "routing", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

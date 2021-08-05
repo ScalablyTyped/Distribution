@@ -19,23 +19,18 @@ object iobserverMod {
   }
   object IObserver {
     
-    @scala.inline
-    def apply(completed: () => js.Any, dispose: () => Unit, error: js.Any => js.Any, next: js.Any => js.Any): IObserver = {
+    inline def apply(completed: () => js.Any, dispose: () => Unit, error: js.Any => js.Any, next: js.Any => js.Any): IObserver = {
       val __obj = js.Dynamic.literal(completed = js.Any.fromFunction0(completed), dispose = js.Any.fromFunction0(dispose), error = js.Any.fromFunction1(error), next = js.Any.fromFunction1(next))
       __obj.asInstanceOf[IObserver]
     }
     
-    @scala.inline
-    implicit class IObserverMutableBuilder[Self <: IObserver] (val x: Self) extends AnyVal {
+    extension [Self <: IObserver](x: Self) {
       
-      @scala.inline
-      def setCompleted(value: () => js.Any): Self = StObject.set(x, "completed", js.Any.fromFunction0(value))
+      inline def setCompleted(value: () => js.Any): Self = StObject.set(x, "completed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setError(value: js.Any => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: js.Any => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNext(value: js.Any => js.Any): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
+      inline def setNext(value: js.Any => js.Any): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
     }
   }
 }

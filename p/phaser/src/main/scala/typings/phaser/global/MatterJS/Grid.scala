@@ -28,8 +28,7 @@ object Grid {
     * @param {grid} grid
     */
   /* static member */
-  @scala.inline
-  def clear(grid: typings.phaser.MatterJS.Grid): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(grid.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def clear(grid: typings.phaser.MatterJS.Grid): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(grid.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Creates a new grid.
@@ -38,10 +37,8 @@ object Grid {
     * @return {grid} A new grid
     */
   /* static member */
-  @scala.inline
-  def create(): typings.phaser.MatterJS.Grid = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.phaser.MatterJS.Grid]
-  @scala.inline
-  def create(options: IGridDefinition): typings.phaser.MatterJS.Grid = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.MatterJS.Grid]
+  inline def create(): typings.phaser.MatterJS.Grid = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.phaser.MatterJS.Grid]
+  inline def create(options: IGridDefinition): typings.phaser.MatterJS.Grid = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.MatterJS.Grid]
   
   /**
     * Updates the grid.
@@ -52,8 +49,7 @@ object Grid {
     * @param {boolean} forceUpdate
     */
   /* static member */
-  @scala.inline
-  def update(
+  inline def update(
     grid: typings.phaser.MatterJS.Grid,
     bodies: js.Array[BodyType],
     engine: typings.phaser.MatterJS.Engine,

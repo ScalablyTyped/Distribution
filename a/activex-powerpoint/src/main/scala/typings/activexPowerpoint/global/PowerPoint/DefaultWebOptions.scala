@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.DefaultWebOptions")
 @js.native
-class DefaultWebOptions protected ()
+/* private */ class DefaultWebOptions ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.DefaultWebOptions {
   
@@ -52,7 +52,7 @@ class DefaultWebOptions protected ()
   /* CompleteClass */
   var OrganizeInFolder: MsoTriState = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.DefaultWebOptions_typekey")
   var PowerPointDotDefaultWebOptions_typekey: typings.activexPowerpoint.PowerPoint.DefaultWebOptions = js.native
   

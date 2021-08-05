@@ -17,22 +17,17 @@ trait WebpBoolean
 }
 object WebpBoolean {
   
-  @scala.inline
-  def apply(alpha: scala.Boolean, animation: scala.Boolean, lossless: scala.Boolean): WebpBoolean = {
+  inline def apply(alpha: scala.Boolean, animation: scala.Boolean, lossless: scala.Boolean): WebpBoolean = {
     val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any], animation = animation.asInstanceOf[js.Any], lossless = lossless.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebpBoolean]
   }
   
-  @scala.inline
-  implicit class WebpBooleanMutableBuilder[Self <: WebpBoolean] (val x: Self) extends AnyVal {
+  extension [Self <: WebpBoolean](x: Self) {
     
-    @scala.inline
-    def setAlpha(value: scala.Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+    inline def setAlpha(value: scala.Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimation(value: scala.Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: scala.Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLossless(value: scala.Boolean): Self = StObject.set(x, "lossless", value.asInstanceOf[js.Any])
+    inline def setLossless(value: scala.Boolean): Self = StObject.set(x, "lossless", value.asInstanceOf[js.Any])
   }
 }

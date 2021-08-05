@@ -21,25 +21,19 @@ trait RenameClientCapabilities extends StObject {
 }
 object RenameClientCapabilities {
   
-  @scala.inline
-  def apply(): RenameClientCapabilities = {
+  inline def apply(): RenameClientCapabilities = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RenameClientCapabilities]
   }
   
-  @scala.inline
-  implicit class RenameClientCapabilitiesMutableBuilder[Self <: RenameClientCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: RenameClientCapabilities](x: Self) {
     
-    @scala.inline
-    def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
+    inline def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
+    inline def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
     
-    @scala.inline
-    def setPrepareSupport(value: Boolean): Self = StObject.set(x, "prepareSupport", value.asInstanceOf[js.Any])
+    inline def setPrepareSupport(value: Boolean): Self = StObject.set(x, "prepareSupport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrepareSupportUndefined: Self = StObject.set(x, "prepareSupport", js.undefined)
+    inline def setPrepareSupportUndefined: Self = StObject.set(x, "prepareSupport", js.undefined)
   }
 }

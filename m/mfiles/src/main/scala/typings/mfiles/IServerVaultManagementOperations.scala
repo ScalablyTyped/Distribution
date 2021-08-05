@@ -34,8 +34,7 @@ trait IServerVaultManagementOperations extends StObject {
 }
 object IServerVaultManagementOperations {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AttachVault: (IVaultProperties, Boolean) => IVaultProperties,
     AttachVaultWithOptions: (IVaultProperties, IAttachVaultOptions) => IVaultProperties,
     BackupVault: IBackupJob => Unit,
@@ -54,46 +53,32 @@ object IServerVaultManagementOperations {
     __obj.asInstanceOf[IServerVaultManagementOperations]
   }
   
-  @scala.inline
-  implicit class IServerVaultManagementOperationsMutableBuilder[Self <: IServerVaultManagementOperations] (val x: Self) extends AnyVal {
+  extension [Self <: IServerVaultManagementOperations](x: Self) {
     
-    @scala.inline
-    def setAttachVault(value: (IVaultProperties, Boolean) => IVaultProperties): Self = StObject.set(x, "AttachVault", js.Any.fromFunction2(value))
+    inline def setAttachVault(value: (IVaultProperties, Boolean) => IVaultProperties): Self = StObject.set(x, "AttachVault", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAttachVaultWithOptions(value: (IVaultProperties, IAttachVaultOptions) => IVaultProperties): Self = StObject.set(x, "AttachVaultWithOptions", js.Any.fromFunction2(value))
+    inline def setAttachVaultWithOptions(value: (IVaultProperties, IAttachVaultOptions) => IVaultProperties): Self = StObject.set(x, "AttachVaultWithOptions", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBackupVault(value: IBackupJob => Unit): Self = StObject.set(x, "BackupVault", js.Any.fromFunction1(value))
+    inline def setBackupVault(value: IBackupJob => Unit): Self = StObject.set(x, "BackupVault", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBringVaultOnline(value: String => Unit): Self = StObject.set(x, "BringVaultOnline", js.Any.fromFunction1(value))
+    inline def setBringVaultOnline(value: String => Unit): Self = StObject.set(x, "BringVaultOnline", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCopyVault(value: ICopyVaultJob => ICopyVaultJobOutputInfo): Self = StObject.set(x, "CopyVault", js.Any.fromFunction1(value))
+    inline def setCopyVault(value: ICopyVaultJob => ICopyVaultJobOutputInfo): Self = StObject.set(x, "CopyVault", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateNewVault(value: IVaultProperties => String): Self = StObject.set(x, "CreateNewVault", js.Any.fromFunction1(value))
+    inline def setCreateNewVault(value: IVaultProperties => String): Self = StObject.set(x, "CreateNewVault", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDestroyVault(value: String => Unit): Self = StObject.set(x, "DestroyVault", js.Any.fromFunction1(value))
+    inline def setDestroyVault(value: String => Unit): Self = StObject.set(x, "DestroyVault", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDetachVault(value: String => Unit): Self = StObject.set(x, "DetachVault", js.Any.fromFunction1(value))
+    inline def setDetachVault(value: String => Unit): Self = StObject.set(x, "DetachVault", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetBackupFileContents(value: (String, String, IImpersonation) => IVaultProperties): Self = StObject.set(x, "GetBackupFileContents", js.Any.fromFunction3(value))
+    inline def setGetBackupFileContents(value: (String, String, IImpersonation) => IVaultProperties): Self = StObject.set(x, "GetBackupFileContents", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetVaultProperties(value: String => IVaultProperties): Self = StObject.set(x, "GetVaultProperties", js.Any.fromFunction1(value))
+    inline def setGetVaultProperties(value: String => IVaultProperties): Self = StObject.set(x, "GetVaultProperties", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOptimizeVault(value: IOptimizeVaultJob => Unit): Self = StObject.set(x, "OptimizeVault", js.Any.fromFunction1(value))
+    inline def setOptimizeVault(value: IOptimizeVaultJob => Unit): Self = StObject.set(x, "OptimizeVault", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRestoreVault(value: IRestoreJob => Unit): Self = StObject.set(x, "RestoreVault", js.Any.fromFunction1(value))
+    inline def setRestoreVault(value: IRestoreJob => Unit): Self = StObject.set(x, "RestoreVault", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTakeVaultOffline(value: (String, Boolean) => Unit): Self = StObject.set(x, "TakeVaultOffline", js.Any.fromFunction2(value))
+    inline def setTakeVaultOffline(value: (String, Boolean) => Unit): Self = StObject.set(x, "TakeVaultOffline", js.Any.fromFunction2(value))
   }
 }

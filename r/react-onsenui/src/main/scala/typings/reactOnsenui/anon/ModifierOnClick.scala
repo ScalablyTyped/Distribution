@@ -15,25 +15,19 @@ trait ModifierOnClick extends StObject {
 }
 object ModifierOnClick {
   
-  @scala.inline
-  def apply(): ModifierOnClick = {
+  inline def apply(): ModifierOnClick = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifierOnClick]
   }
   
-  @scala.inline
-  implicit class ModifierOnClickMutableBuilder[Self <: ModifierOnClick] (val x: Self) extends AnyVal {
+  extension [Self <: ModifierOnClick](x: Self) {
     
-    @scala.inline
-    def setModifier(value: String): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
+    inline def setModifier(value: String): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
+    inline def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
     
-    @scala.inline
-    def setOnClick(value: MouseEvent[js.Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: MouseEvent[js.Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+    inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
   }
 }

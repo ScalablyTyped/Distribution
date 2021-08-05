@@ -15,26 +15,20 @@ object anon {
   }
   object Data {
     
-    @scala.inline
-    def apply(promise: js.Promise[js.Any] | AsyncFunction): Data = {
+    inline def apply(promise: js.Promise[js.Any] | AsyncFunction): Data = {
       val __obj = js.Dynamic.literal(promise = promise.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data]
     }
     
-    @scala.inline
-    implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+    extension [Self <: Data](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setPromise(value: js.Promise[js.Any] | AsyncFunction): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: js.Promise[js.Any] | AsyncFunction): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromiseFunction0(value: () => js.Promise[js.Any]): Self = StObject.set(x, "promise", js.Any.fromFunction0(value))
+      inline def setPromiseFunction0(value: () => js.Promise[js.Any]): Self = StObject.set(x, "promise", js.Any.fromFunction0(value))
     }
   }
 }

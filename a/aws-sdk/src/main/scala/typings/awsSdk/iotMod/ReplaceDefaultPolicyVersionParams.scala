@@ -13,16 +13,13 @@ trait ReplaceDefaultPolicyVersionParams extends StObject {
 }
 object ReplaceDefaultPolicyVersionParams {
   
-  @scala.inline
-  def apply(templateName: PolicyTemplateName): ReplaceDefaultPolicyVersionParams = {
+  inline def apply(templateName: PolicyTemplateName): ReplaceDefaultPolicyVersionParams = {
     val __obj = js.Dynamic.literal(templateName = templateName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplaceDefaultPolicyVersionParams]
   }
   
-  @scala.inline
-  implicit class ReplaceDefaultPolicyVersionParamsMutableBuilder[Self <: ReplaceDefaultPolicyVersionParams] (val x: Self) extends AnyVal {
+  extension [Self <: ReplaceDefaultPolicyVersionParams](x: Self) {
     
-    @scala.inline
-    def setTemplateName(value: PolicyTemplateName): Self = StObject.set(x, "templateName", value.asInstanceOf[js.Any])
+    inline def setTemplateName(value: PolicyTemplateName): Self = StObject.set(x, "templateName", value.asInstanceOf[js.Any])
   }
 }

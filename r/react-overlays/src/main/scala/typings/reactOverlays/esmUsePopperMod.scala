@@ -33,66 +33,52 @@ object esmUsePopperMod {
     *
     * @returns {UsePopperState} The popper state
     */
-  @scala.inline
-  def default(): UsePopperState = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[UsePopperState]
-  @scala.inline
-  def default(
+  inline def default(): UsePopperState = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[UsePopperState]
+  inline def default(
     referenceElement: Null,
     popperElement: Null,
     hasEnabledPlacementStrategyModifiersConfig: UsePopperOptions
   ): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], hasEnabledPlacementStrategyModifiersConfig.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
-  @scala.inline
-  def default(
+  inline def default(
     referenceElement: Null,
     popperElement: Unit,
     hasEnabledPlacementStrategyModifiersConfig: UsePopperOptions
   ): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], hasEnabledPlacementStrategyModifiersConfig.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
-  @scala.inline
-  def default(referenceElement: Null, popperElement: HTMLElement): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
-  @scala.inline
-  def default(
+  inline def default(referenceElement: Null, popperElement: HTMLElement): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
+  inline def default(
     referenceElement: Null,
     popperElement: HTMLElement,
     hasEnabledPlacementStrategyModifiersConfig: UsePopperOptions
   ): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], hasEnabledPlacementStrategyModifiersConfig.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
-  @scala.inline
-  def default(
+  inline def default(
     referenceElement: Unit,
     popperElement: Null,
     hasEnabledPlacementStrategyModifiersConfig: UsePopperOptions
   ): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], hasEnabledPlacementStrategyModifiersConfig.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
-  @scala.inline
-  def default(
+  inline def default(
     referenceElement: Unit,
     popperElement: Unit,
     hasEnabledPlacementStrategyModifiersConfig: UsePopperOptions
   ): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], hasEnabledPlacementStrategyModifiersConfig.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
-  @scala.inline
-  def default(referenceElement: Unit, popperElement: HTMLElement): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
-  @scala.inline
-  def default(
+  inline def default(referenceElement: Unit, popperElement: HTMLElement): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
+  inline def default(
     referenceElement: Unit,
     popperElement: HTMLElement,
     hasEnabledPlacementStrategyModifiersConfig: UsePopperOptions
   ): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], hasEnabledPlacementStrategyModifiersConfig.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
-  @scala.inline
-  def default(referenceElement: VirtualElement): UsePopperState = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any]).asInstanceOf[UsePopperState]
-  @scala.inline
-  def default(
+  inline def default(referenceElement: VirtualElement): UsePopperState = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any]).asInstanceOf[UsePopperState]
+  inline def default(
     referenceElement: VirtualElement,
     popperElement: Null,
     hasEnabledPlacementStrategyModifiersConfig: UsePopperOptions
   ): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], hasEnabledPlacementStrategyModifiersConfig.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
-  @scala.inline
-  def default(
+  inline def default(
     referenceElement: VirtualElement,
     popperElement: Unit,
     hasEnabledPlacementStrategyModifiersConfig: UsePopperOptions
   ): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], hasEnabledPlacementStrategyModifiersConfig.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
-  @scala.inline
-  def default(referenceElement: VirtualElement, popperElement: HTMLElement): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
-  @scala.inline
-  def default(
+  inline def default(referenceElement: VirtualElement, popperElement: HTMLElement): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
+  inline def default(
     referenceElement: VirtualElement,
     popperElement: HTMLElement,
     hasEnabledPlacementStrategyModifiersConfig: UsePopperOptions
@@ -142,95 +128,65 @@ object esmUsePopperMod {
   trait Modifiers extends StObject
   object Modifiers {
     
-    @scala.inline
-    def concat: typings.reactOverlays.reactOverlaysStrings.concat = "concat".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.concat]
+    inline def concat: typings.reactOverlays.reactOverlaysStrings.concat = "concat".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.concat]
     
-    @scala.inline
-    def copyWithin: typings.reactOverlays.reactOverlaysStrings.copyWithin = "copyWithin".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.copyWithin]
+    inline def copyWithin: typings.reactOverlays.reactOverlaysStrings.copyWithin = "copyWithin".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.copyWithin]
     
-    @scala.inline
-    def entries: typings.reactOverlays.reactOverlaysStrings.entries = "entries".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.entries]
+    inline def entries: typings.reactOverlays.reactOverlaysStrings.entries = "entries".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.entries]
     
-    @scala.inline
-    def every: typings.reactOverlays.reactOverlaysStrings.every = "every".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.every]
+    inline def every: typings.reactOverlays.reactOverlaysStrings.every = "every".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.every]
     
-    @scala.inline
-    def fill: typings.reactOverlays.reactOverlaysStrings.fill = "fill".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.fill]
+    inline def fill: typings.reactOverlays.reactOverlaysStrings.fill = "fill".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.fill]
     
-    @scala.inline
-    def filter: typings.reactOverlays.reactOverlaysStrings.filter = "filter".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.filter]
+    inline def filter: typings.reactOverlays.reactOverlaysStrings.filter = "filter".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.filter]
     
-    @scala.inline
-    def find: typings.reactOverlays.reactOverlaysStrings.find = "find".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.find]
+    inline def find: typings.reactOverlays.reactOverlaysStrings.find = "find".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.find]
     
-    @scala.inline
-    def findIndex: typings.reactOverlays.reactOverlaysStrings.findIndex = "findIndex".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.findIndex]
+    inline def findIndex: typings.reactOverlays.reactOverlaysStrings.findIndex = "findIndex".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.findIndex]
     
-    @scala.inline
-    def flat: typings.reactOverlays.reactOverlaysStrings.flat = "flat".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.flat]
+    inline def flat: typings.reactOverlays.reactOverlaysStrings.flat = "flat".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.flat]
     
-    @scala.inline
-    def flatMap: typings.reactOverlays.reactOverlaysStrings.flatMap = "flatMap".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.flatMap]
+    inline def flatMap: typings.reactOverlays.reactOverlaysStrings.flatMap = "flatMap".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.flatMap]
     
-    @scala.inline
-    def forEach: typings.reactOverlays.reactOverlaysStrings.forEach = "forEach".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.forEach]
+    inline def forEach: typings.reactOverlays.reactOverlaysStrings.forEach = "forEach".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.forEach]
     
-    @scala.inline
-    def includes: typings.reactOverlays.reactOverlaysStrings.includes = "includes".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.includes]
+    inline def includes: typings.reactOverlays.reactOverlaysStrings.includes = "includes".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.includes]
     
-    @scala.inline
-    def indexOf: typings.reactOverlays.reactOverlaysStrings.indexOf = "indexOf".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.indexOf]
+    inline def indexOf: typings.reactOverlays.reactOverlaysStrings.indexOf = "indexOf".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.indexOf]
     
-    @scala.inline
-    def join: typings.reactOverlays.reactOverlaysStrings.join = "join".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.join]
+    inline def join: typings.reactOverlays.reactOverlaysStrings.join = "join".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.join]
     
-    @scala.inline
-    def keys: typings.reactOverlays.reactOverlaysStrings.keys = "keys".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.keys]
+    inline def keys: typings.reactOverlays.reactOverlaysStrings.keys = "keys".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.keys]
     
-    @scala.inline
-    def lastIndexOf: typings.reactOverlays.reactOverlaysStrings.lastIndexOf = "lastIndexOf".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.lastIndexOf]
+    inline def lastIndexOf: typings.reactOverlays.reactOverlaysStrings.lastIndexOf = "lastIndexOf".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.lastIndexOf]
     
-    @scala.inline
-    def length: typings.reactOverlays.reactOverlaysStrings.length = "length".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.length]
+    inline def length: typings.reactOverlays.reactOverlaysStrings.length = "length".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.length]
     
-    @scala.inline
-    def map: typings.reactOverlays.reactOverlaysStrings.map = "map".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.map]
+    inline def map: typings.reactOverlays.reactOverlaysStrings.map = "map".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.map]
     
-    @scala.inline
-    def pop: typings.reactOverlays.reactOverlaysStrings.pop = "pop".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.pop]
+    inline def pop: typings.reactOverlays.reactOverlaysStrings.pop = "pop".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.pop]
     
-    @scala.inline
-    def push: typings.reactOverlays.reactOverlaysStrings.push = "push".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.push]
+    inline def push: typings.reactOverlays.reactOverlaysStrings.push = "push".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.push]
     
-    @scala.inline
-    def reduce: typings.reactOverlays.reactOverlaysStrings.reduce = "reduce".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.reduce]
+    inline def reduce: typings.reactOverlays.reactOverlaysStrings.reduce = "reduce".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.reduce]
     
-    @scala.inline
-    def reduceRight: typings.reactOverlays.reactOverlaysStrings.reduceRight = "reduceRight".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.reduceRight]
+    inline def reduceRight: typings.reactOverlays.reactOverlaysStrings.reduceRight = "reduceRight".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.reduceRight]
     
-    @scala.inline
-    def reverse: typings.reactOverlays.reactOverlaysStrings.reverse = "reverse".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.reverse]
+    inline def reverse: typings.reactOverlays.reactOverlaysStrings.reverse = "reverse".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.reverse]
     
-    @scala.inline
-    def shift: typings.reactOverlays.reactOverlaysStrings.shift = "shift".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.shift]
+    inline def shift: typings.reactOverlays.reactOverlaysStrings.shift = "shift".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.shift]
     
-    @scala.inline
-    def slice: typings.reactOverlays.reactOverlaysStrings.slice = "slice".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.slice]
+    inline def slice: typings.reactOverlays.reactOverlaysStrings.slice = "slice".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.slice]
     
-    @scala.inline
-    def some: typings.reactOverlays.reactOverlaysStrings.some = "some".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.some]
+    inline def some: typings.reactOverlays.reactOverlaysStrings.some = "some".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.some]
     
-    @scala.inline
-    def sort: typings.reactOverlays.reactOverlaysStrings.sort = "sort".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.sort]
+    inline def sort: typings.reactOverlays.reactOverlaysStrings.sort = "sort".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.sort]
     
-    @scala.inline
-    def splice: typings.reactOverlays.reactOverlaysStrings.splice = "splice".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.splice]
+    inline def splice: typings.reactOverlays.reactOverlaysStrings.splice = "splice".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.splice]
     
-    @scala.inline
-    def unshift: typings.reactOverlays.reactOverlaysStrings.unshift = "unshift".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.unshift]
+    inline def unshift: typings.reactOverlays.reactOverlaysStrings.unshift = "unshift".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.unshift]
     
-    @scala.inline
-    def values: typings.reactOverlays.reactOverlaysStrings.values = "values".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.values]
+    inline def values: typings.reactOverlays.reactOverlaysStrings.values = "values".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.values]
   }
   
   type Offset = OffsetFunction | OffsetValue
@@ -260,47 +216,34 @@ object esmUsePopperMod {
   }
   object UsePopperOptions {
     
-    @scala.inline
-    def apply(): UsePopperOptions = {
+    inline def apply(): UsePopperOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UsePopperOptions]
     }
     
-    @scala.inline
-    implicit class UsePopperOptionsMutableBuilder[Self <: UsePopperOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UsePopperOptions](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setModifiers(value: js.Array[typings.popperjsCore.anon.PartialModifieranyany]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+      inline def setModifiers(value: js.Array[typings.popperjsCore.anon.PartialModifieranyany]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
+      inline def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
       
-      @scala.inline
-      def setModifiersVarargs(value: typings.popperjsCore.anon.PartialModifieranyany*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
+      inline def setModifiersVarargs(value: typings.popperjsCore.anon.PartialModifieranyany*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
       
-      @scala.inline
-      def setOnFirstUpdate(value: /* arg0 */ PartialState => Unit): Self = StObject.set(x, "onFirstUpdate", js.Any.fromFunction1(value))
+      inline def setOnFirstUpdate(value: /* arg0 */ PartialState => Unit): Self = StObject.set(x, "onFirstUpdate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFirstUpdateUndefined: Self = StObject.set(x, "onFirstUpdate", js.undefined)
+      inline def setOnFirstUpdateUndefined: Self = StObject.set(x, "onFirstUpdate", js.undefined)
       
-      @scala.inline
-      def setPlacement(value: typings.popperjsCore.enumsMod.Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: typings.popperjsCore.enumsMod.Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+      inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
       
-      @scala.inline
-      def setStrategy(value: PositioningStrategy): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
+      inline def setStrategy(value: PositioningStrategy): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
+      inline def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
     }
   }
   
@@ -320,8 +263,7 @@ object esmUsePopperMod {
   }
   object UsePopperState {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attributes: Record[String, Record[String, js.Any]],
       forceUpdate: () => Unit,
       placement: Placement,
@@ -332,29 +274,21 @@ object esmUsePopperMod {
       __obj.asInstanceOf[UsePopperState]
     }
     
-    @scala.inline
-    implicit class UsePopperStateMutableBuilder[Self <: UsePopperState] (val x: Self) extends AnyVal {
+    extension [Self <: UsePopperState](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: Record[String, Record[String, js.Any]]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: Record[String, Record[String, js.Any]]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceUpdate(value: () => Unit): Self = StObject.set(x, "forceUpdate", js.Any.fromFunction0(value))
+      inline def setForceUpdate(value: () => Unit): Self = StObject.set(x, "forceUpdate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
-      @scala.inline
-      def setStyles(value: Record[String, PartialCSSStyleDeclaratio]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: Record[String, PartialCSSStyleDeclaratio]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+      inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     }
   }
   

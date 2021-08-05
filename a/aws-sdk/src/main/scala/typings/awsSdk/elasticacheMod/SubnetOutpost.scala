@@ -13,19 +13,15 @@ trait SubnetOutpost extends StObject {
 }
 object SubnetOutpost {
   
-  @scala.inline
-  def apply(): SubnetOutpost = {
+  inline def apply(): SubnetOutpost = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SubnetOutpost]
   }
   
-  @scala.inline
-  implicit class SubnetOutpostMutableBuilder[Self <: SubnetOutpost] (val x: Self) extends AnyVal {
+  extension [Self <: SubnetOutpost](x: Self) {
     
-    @scala.inline
-    def setSubnetOutpostArn(value: String): Self = StObject.set(x, "SubnetOutpostArn", value.asInstanceOf[js.Any])
+    inline def setSubnetOutpostArn(value: String): Self = StObject.set(x, "SubnetOutpostArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetOutpostArnUndefined: Self = StObject.set(x, "SubnetOutpostArn", js.undefined)
+    inline def setSubnetOutpostArnUndefined: Self = StObject.set(x, "SubnetOutpostArn", js.undefined)
   }
 }

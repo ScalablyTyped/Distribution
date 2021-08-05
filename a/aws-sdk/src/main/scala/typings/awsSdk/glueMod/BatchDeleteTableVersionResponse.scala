@@ -13,22 +13,17 @@ trait BatchDeleteTableVersionResponse extends StObject {
 }
 object BatchDeleteTableVersionResponse {
   
-  @scala.inline
-  def apply(): BatchDeleteTableVersionResponse = {
+  inline def apply(): BatchDeleteTableVersionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchDeleteTableVersionResponse]
   }
   
-  @scala.inline
-  implicit class BatchDeleteTableVersionResponseMutableBuilder[Self <: BatchDeleteTableVersionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDeleteTableVersionResponse](x: Self) {
     
-    @scala.inline
-    def setErrors(value: TableVersionErrors): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: TableVersionErrors): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
     
-    @scala.inline
-    def setErrorsVarargs(value: TableVersionError*): Self = StObject.set(x, "Errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: TableVersionError*): Self = StObject.set(x, "Errors", js.Array(value :_*))
   }
 }

@@ -10,16 +10,13 @@ trait AppOnline extends StObject {
 }
 object AppOnline {
   
-  @scala.inline
-  def apply(appOnline: Boolean): AppOnline = {
+  inline def apply(appOnline: Boolean): AppOnline = {
     val __obj = js.Dynamic.literal(appOnline = appOnline.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppOnline]
   }
   
-  @scala.inline
-  implicit class AppOnlineMutableBuilder[Self <: AppOnline] (val x: Self) extends AnyVal {
+  extension [Self <: AppOnline](x: Self) {
     
-    @scala.inline
-    def setAppOnline(value: Boolean): Self = StObject.set(x, "appOnline", value.asInstanceOf[js.Any])
+    inline def setAppOnline(value: Boolean): Self = StObject.set(x, "appOnline", value.asInstanceOf[js.Any])
   }
 }

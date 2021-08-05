@@ -17,19 +17,15 @@ trait X86WriterOptions extends StObject {
 }
 object X86WriterOptions {
   
-  @scala.inline
-  def apply(): X86WriterOptions = {
+  inline def apply(): X86WriterOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[X86WriterOptions]
   }
   
-  @scala.inline
-  implicit class X86WriterOptionsMutableBuilder[Self <: X86WriterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: X86WriterOptions](x: Self) {
     
-    @scala.inline
-    def setPc(value: NativePointer): Self = StObject.set(x, "pc", value.asInstanceOf[js.Any])
+    inline def setPc(value: NativePointer): Self = StObject.set(x, "pc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPcUndefined: Self = StObject.set(x, "pc", js.undefined)
+    inline def setPcUndefined: Self = StObject.set(x, "pc", js.undefined)
   }
 }

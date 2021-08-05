@@ -33,34 +33,25 @@ trait UpdateMultiFactorInfoRequest extends StObject {
 }
 object UpdateMultiFactorInfoRequest {
   
-  @scala.inline
-  def apply(factorId: String): UpdateMultiFactorInfoRequest = {
+  inline def apply(factorId: String): UpdateMultiFactorInfoRequest = {
     val __obj = js.Dynamic.literal(factorId = factorId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateMultiFactorInfoRequest]
   }
   
-  @scala.inline
-  implicit class UpdateMultiFactorInfoRequestMutableBuilder[Self <: UpdateMultiFactorInfoRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateMultiFactorInfoRequest](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setEnrollmentTime(value: String): Self = StObject.set(x, "enrollmentTime", value.asInstanceOf[js.Any])
+    inline def setEnrollmentTime(value: String): Self = StObject.set(x, "enrollmentTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnrollmentTimeUndefined: Self = StObject.set(x, "enrollmentTime", js.undefined)
+    inline def setEnrollmentTimeUndefined: Self = StObject.set(x, "enrollmentTime", js.undefined)
     
-    @scala.inline
-    def setFactorId(value: String): Self = StObject.set(x, "factorId", value.asInstanceOf[js.Any])
+    inline def setFactorId(value: String): Self = StObject.set(x, "factorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+    inline def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
+    inline def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
   }
 }

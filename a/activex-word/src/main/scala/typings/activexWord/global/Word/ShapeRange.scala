@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.ShapeRange")
 @js.native
-class ShapeRange protected ()
+/* private */ class ShapeRange ()
   extends StObject
      with typings.activexWord.Word.ShapeRange

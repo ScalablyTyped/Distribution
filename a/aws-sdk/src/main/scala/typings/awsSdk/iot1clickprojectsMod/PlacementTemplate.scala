@@ -18,25 +18,19 @@ trait PlacementTemplate extends StObject {
 }
 object PlacementTemplate {
   
-  @scala.inline
-  def apply(): PlacementTemplate = {
+  inline def apply(): PlacementTemplate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlacementTemplate]
   }
   
-  @scala.inline
-  implicit class PlacementTemplateMutableBuilder[Self <: PlacementTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: PlacementTemplate](x: Self) {
     
-    @scala.inline
-    def setDefaultAttributes(value: DefaultPlacementAttributeMap): Self = StObject.set(x, "defaultAttributes", value.asInstanceOf[js.Any])
+    inline def setDefaultAttributes(value: DefaultPlacementAttributeMap): Self = StObject.set(x, "defaultAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultAttributesUndefined: Self = StObject.set(x, "defaultAttributes", js.undefined)
+    inline def setDefaultAttributesUndefined: Self = StObject.set(x, "defaultAttributes", js.undefined)
     
-    @scala.inline
-    def setDeviceTemplates(value: DeviceTemplateMap): Self = StObject.set(x, "deviceTemplates", value.asInstanceOf[js.Any])
+    inline def setDeviceTemplates(value: DeviceTemplateMap): Self = StObject.set(x, "deviceTemplates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceTemplatesUndefined: Self = StObject.set(x, "deviceTemplates", js.undefined)
+    inline def setDeviceTemplatesUndefined: Self = StObject.set(x, "deviceTemplates", js.undefined)
   }
 }

@@ -25,13 +25,10 @@ object mod {
   @js.native
   val REVERT: /* "@@optimist/REVERT" */ String = js.native
   
-  @scala.inline
-  def ensureState[TState](state: TState): TState = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureState")(state.asInstanceOf[js.Any]).asInstanceOf[TState]
-  @scala.inline
-  def ensureState[TState](state: OptimisticState[TState]): TState = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureState")(state.asInstanceOf[js.Any]).asInstanceOf[TState]
+  inline def ensureState[TState](state: TState): TState = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureState")(state.asInstanceOf[js.Any]).asInstanceOf[TState]
+  inline def ensureState[TState](state: OptimisticState[TState]): TState = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureState")(state.asInstanceOf[js.Any]).asInstanceOf[TState]
   
-  @scala.inline
-  def optimistic[TState](reducer: Reducer[TState, AnyAction]): Reducer[OptimisticState[TState], AnyAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("optimistic")(reducer.asInstanceOf[js.Any]).asInstanceOf[Reducer[OptimisticState[TState], AnyAction]]
+  inline def optimistic[TState](reducer: Reducer[TState, AnyAction]): Reducer[OptimisticState[TState], AnyAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("optimistic")(reducer.asInstanceOf[js.Any]).asInstanceOf[Reducer[OptimisticState[TState], AnyAction]]
   
   trait OptimisticAction extends StObject {
     
@@ -39,17 +36,14 @@ object mod {
   }
   object OptimisticAction {
     
-    @scala.inline
-    def apply(meta: Optimistic): OptimisticAction = {
+    inline def apply(meta: Optimistic): OptimisticAction = {
       val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptimisticAction]
     }
     
-    @scala.inline
-    implicit class OptimisticActionMutableBuilder[Self <: OptimisticAction] (val x: Self) extends AnyVal {
+    extension [Self <: OptimisticAction](x: Self) {
       
-      @scala.inline
-      def setMeta(value: Optimistic): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: Optimistic): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     }
   }
   
@@ -73,23 +67,18 @@ object mod {
   }
   object OptimisticState {
     
-    @scala.inline
-    def apply[TState](beforeState: TState, current: TState, history: js.Any): OptimisticState[TState] = {
+    inline def apply[TState](beforeState: TState, current: TState, history: js.Any): OptimisticState[TState] = {
       val __obj = js.Dynamic.literal(beforeState = beforeState.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], history = history.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptimisticState[TState]]
     }
     
-    @scala.inline
-    implicit class OptimisticStateMutableBuilder[Self <: OptimisticState[?], TState] (val x: Self & OptimisticState[TState]) extends AnyVal {
+    extension [Self <: OptimisticState[?], TState](x: Self & OptimisticState[TState]) {
       
-      @scala.inline
-      def setBeforeState(value: TState): Self = StObject.set(x, "beforeState", value.asInstanceOf[js.Any])
+      inline def setBeforeState(value: TState): Self = StObject.set(x, "beforeState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrent(value: TState): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: TState): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHistory(value: js.Any): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      inline def setHistory(value: js.Any): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     }
   }
 }

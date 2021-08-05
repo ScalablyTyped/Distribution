@@ -24,28 +24,21 @@ trait BaseLayerView2DProperties
 }
 object BaseLayerView2DProperties {
   
-  @scala.inline
-  def apply(): BaseLayerView2DProperties = {
+  inline def apply(): BaseLayerView2DProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BaseLayerView2DProperties]
   }
   
-  @scala.inline
-  implicit class BaseLayerView2DPropertiesMutableBuilder[Self <: BaseLayerView2DProperties] (val x: Self) extends AnyVal {
+  extension [Self <: BaseLayerView2DProperties](x: Self) {
     
-    @scala.inline
-    def setTiles(value: js.Array[Tile]): Self = StObject.set(x, "tiles", value.asInstanceOf[js.Any])
+    inline def setTiles(value: js.Array[Tile]): Self = StObject.set(x, "tiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTilesUndefined: Self = StObject.set(x, "tiles", js.undefined)
+    inline def setTilesUndefined: Self = StObject.set(x, "tiles", js.undefined)
     
-    @scala.inline
-    def setTilesVarargs(value: Tile*): Self = StObject.set(x, "tiles", js.Array(value :_*))
+    inline def setTilesVarargs(value: Tile*): Self = StObject.set(x, "tiles", js.Array(value :_*))
     
-    @scala.inline
-    def setView(value: MapViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

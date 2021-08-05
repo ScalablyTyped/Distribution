@@ -26,25 +26,19 @@ trait FillSymbolProperties
 }
 object FillSymbolProperties {
   
-  @scala.inline
-  def apply(): FillSymbolProperties = {
+  inline def apply(): FillSymbolProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FillSymbolProperties]
   }
   
-  @scala.inline
-  implicit class FillSymbolPropertiesMutableBuilder[Self <: FillSymbolProperties] (val x: Self) extends AnyVal {
+  extension [Self <: FillSymbolProperties](x: Self) {
     
-    @scala.inline
-    def setOutline(value: SimpleLineSymbolProperties): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
+    inline def setOutline(value: SimpleLineSymbolProperties): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
+    inline def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
     
-    @scala.inline
-    def setType(value: `simple-fill` | `picture-fill`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `simple-fill` | `picture-fill`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

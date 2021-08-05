@@ -18,31 +18,23 @@ trait Arguments extends StObject {
 }
 object Arguments {
   
-  @scala.inline
-  def apply(arguments: js.Array[String], entrypoint: String, privileged: Boolean, tty: Boolean, user: String): Arguments = {
+  inline def apply(arguments: js.Array[String], entrypoint: String, privileged: Boolean, tty: Boolean, user: String): Arguments = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], entrypoint = entrypoint.asInstanceOf[js.Any], privileged = privileged.asInstanceOf[js.Any], tty = tty.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[Arguments]
   }
   
-  @scala.inline
-  implicit class ArgumentsMutableBuilder[Self <: Arguments] (val x: Self) extends AnyVal {
+  extension [Self <: Arguments](x: Self) {
     
-    @scala.inline
-    def setArguments(value: js.Array[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: js.Array[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgumentsVarargs(value: String*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: String*): Self = StObject.set(x, "arguments", js.Array(value :_*))
     
-    @scala.inline
-    def setEntrypoint(value: String): Self = StObject.set(x, "entrypoint", value.asInstanceOf[js.Any])
+    inline def setEntrypoint(value: String): Self = StObject.set(x, "entrypoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivileged(value: Boolean): Self = StObject.set(x, "privileged", value.asInstanceOf[js.Any])
+    inline def setPrivileged(value: Boolean): Self = StObject.set(x, "privileged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTty(value: Boolean): Self = StObject.set(x, "tty", value.asInstanceOf[js.Any])
+    inline def setTty(value: Boolean): Self = StObject.set(x, "tty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

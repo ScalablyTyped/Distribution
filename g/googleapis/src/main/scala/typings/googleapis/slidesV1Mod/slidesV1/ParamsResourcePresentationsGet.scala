@@ -24,25 +24,19 @@ trait ParamsResourcePresentationsGet
 }
 object ParamsResourcePresentationsGet {
   
-  @scala.inline
-  def apply(): ParamsResourcePresentationsGet = {
+  inline def apply(): ParamsResourcePresentationsGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourcePresentationsGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourcePresentationsGetMutableBuilder[Self <: ParamsResourcePresentationsGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourcePresentationsGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setPresentationId(value: String): Self = StObject.set(x, "presentationId", value.asInstanceOf[js.Any])
+    inline def setPresentationId(value: String): Self = StObject.set(x, "presentationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPresentationIdUndefined: Self = StObject.set(x, "presentationId", js.undefined)
+    inline def setPresentationIdUndefined: Self = StObject.set(x, "presentationId", js.undefined)
   }
 }

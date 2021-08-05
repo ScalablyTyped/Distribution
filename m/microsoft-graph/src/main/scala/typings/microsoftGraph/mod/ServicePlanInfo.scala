@@ -29,49 +29,35 @@ trait ServicePlanInfo extends StObject {
 }
 object ServicePlanInfo {
   
-  @scala.inline
-  def apply(): ServicePlanInfo = {
+  inline def apply(): ServicePlanInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServicePlanInfo]
   }
   
-  @scala.inline
-  implicit class ServicePlanInfoMutableBuilder[Self <: ServicePlanInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ServicePlanInfo](x: Self) {
     
-    @scala.inline
-    def setAppliesTo(value: NullableOption[String]): Self = StObject.set(x, "appliesTo", value.asInstanceOf[js.Any])
+    inline def setAppliesTo(value: NullableOption[String]): Self = StObject.set(x, "appliesTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppliesToNull: Self = StObject.set(x, "appliesTo", null)
+    inline def setAppliesToNull: Self = StObject.set(x, "appliesTo", null)
     
-    @scala.inline
-    def setAppliesToUndefined: Self = StObject.set(x, "appliesTo", js.undefined)
+    inline def setAppliesToUndefined: Self = StObject.set(x, "appliesTo", js.undefined)
     
-    @scala.inline
-    def setProvisioningStatus(value: NullableOption[String]): Self = StObject.set(x, "provisioningStatus", value.asInstanceOf[js.Any])
+    inline def setProvisioningStatus(value: NullableOption[String]): Self = StObject.set(x, "provisioningStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisioningStatusNull: Self = StObject.set(x, "provisioningStatus", null)
+    inline def setProvisioningStatusNull: Self = StObject.set(x, "provisioningStatus", null)
     
-    @scala.inline
-    def setProvisioningStatusUndefined: Self = StObject.set(x, "provisioningStatus", js.undefined)
+    inline def setProvisioningStatusUndefined: Self = StObject.set(x, "provisioningStatus", js.undefined)
     
-    @scala.inline
-    def setServicePlanId(value: NullableOption[String]): Self = StObject.set(x, "servicePlanId", value.asInstanceOf[js.Any])
+    inline def setServicePlanId(value: NullableOption[String]): Self = StObject.set(x, "servicePlanId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServicePlanIdNull: Self = StObject.set(x, "servicePlanId", null)
+    inline def setServicePlanIdNull: Self = StObject.set(x, "servicePlanId", null)
     
-    @scala.inline
-    def setServicePlanIdUndefined: Self = StObject.set(x, "servicePlanId", js.undefined)
+    inline def setServicePlanIdUndefined: Self = StObject.set(x, "servicePlanId", js.undefined)
     
-    @scala.inline
-    def setServicePlanName(value: NullableOption[String]): Self = StObject.set(x, "servicePlanName", value.asInstanceOf[js.Any])
+    inline def setServicePlanName(value: NullableOption[String]): Self = StObject.set(x, "servicePlanName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServicePlanNameNull: Self = StObject.set(x, "servicePlanName", null)
+    inline def setServicePlanNameNull: Self = StObject.set(x, "servicePlanName", null)
     
-    @scala.inline
-    def setServicePlanNameUndefined: Self = StObject.set(x, "servicePlanName", js.undefined)
+    inline def setServicePlanNameUndefined: Self = StObject.set(x, "servicePlanName", js.undefined)
   }
 }

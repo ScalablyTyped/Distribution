@@ -23,8 +23,7 @@ object binders {
     extends StObject
        with typings.kendoUi.kendo.data.Binder
   
-  @scala.inline
-  def dataSourceBinding(bindingName: String, fieldName: String, setter: String): DataSourceBinder = (^.asInstanceOf[js.Dynamic].applyDynamic("dataSourceBinding")(bindingName.asInstanceOf[js.Any], fieldName.asInstanceOf[js.Any], setter.asInstanceOf[js.Any])).asInstanceOf[DataSourceBinder]
+  inline def dataSourceBinding(bindingName: String, fieldName: String, setter: String): DataSourceBinder = (^.asInstanceOf[js.Dynamic].applyDynamic("dataSourceBinding")(bindingName.asInstanceOf[js.Any], fieldName.asInstanceOf[js.Any], setter.asInstanceOf[js.Any])).asInstanceOf[DataSourceBinder]
   
   @JSGlobal("kendo.data.binders.disabled")
   @js.native
@@ -167,8 +166,7 @@ object binders {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def dependencies(bindingName: String, fieldName: String, setter: String): DataSourceBinder = (^.asInstanceOf[js.Dynamic].applyDynamic("dependencies")(bindingName.asInstanceOf[js.Any], fieldName.asInstanceOf[js.Any], setter.asInstanceOf[js.Any])).asInstanceOf[DataSourceBinder]
+      inline def dependencies(bindingName: String, fieldName: String, setter: String): DataSourceBinder = (^.asInstanceOf[js.Dynamic].applyDynamic("dependencies")(bindingName.asInstanceOf[js.Any], fieldName.asInstanceOf[js.Any], setter.asInstanceOf[js.Any])).asInstanceOf[DataSourceBinder]
     }
     
     object grid {
@@ -177,8 +175,7 @@ object binders {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def source(bindingName: String, fieldName: String, setter: String): DataSourceBinder = (^.asInstanceOf[js.Dynamic].applyDynamic("source")(bindingName.asInstanceOf[js.Any], fieldName.asInstanceOf[js.Any], setter.asInstanceOf[js.Any])).asInstanceOf[DataSourceBinder]
+      inline def source(bindingName: String, fieldName: String, setter: String): DataSourceBinder = (^.asInstanceOf[js.Dynamic].applyDynamic("source")(bindingName.asInstanceOf[js.Any], fieldName.asInstanceOf[js.Any], setter.asInstanceOf[js.Any])).asInstanceOf[DataSourceBinder]
     }
     
     @JSGlobal("kendo.data.binders.widget.invisible")
@@ -202,12 +199,10 @@ object binders {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def source(bindingName: String, fieldName: String, setter: String): DataSourceBinder = (^.asInstanceOf[js.Dynamic].applyDynamic("source")(bindingName.asInstanceOf[js.Any], fieldName.asInstanceOf[js.Any], setter.asInstanceOf[js.Any])).asInstanceOf[DataSourceBinder]
+      inline def source(bindingName: String, fieldName: String, setter: String): DataSourceBinder = (^.asInstanceOf[js.Dynamic].applyDynamic("source")(bindingName.asInstanceOf[js.Any], fieldName.asInstanceOf[js.Any], setter.asInstanceOf[js.Any])).asInstanceOf[DataSourceBinder]
     }
     
-    @scala.inline
-    def source(bindingName: String, fieldName: String, setter: String): DataSourceBinder = (^.asInstanceOf[js.Dynamic].applyDynamic("source")(bindingName.asInstanceOf[js.Any], fieldName.asInstanceOf[js.Any], setter.asInstanceOf[js.Any])).asInstanceOf[DataSourceBinder]
+    inline def source(bindingName: String, fieldName: String, setter: String): DataSourceBinder = (^.asInstanceOf[js.Dynamic].applyDynamic("source")(bindingName.asInstanceOf[js.Any], fieldName.asInstanceOf[js.Any], setter.asInstanceOf[js.Any])).asInstanceOf[DataSourceBinder]
     
     @JSGlobal("kendo.data.binders.widget.start")
     @js.native

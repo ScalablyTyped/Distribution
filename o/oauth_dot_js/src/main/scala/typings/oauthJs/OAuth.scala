@@ -27,32 +27,24 @@ object OAuth {
   }
   object Accessor {
     
-    @scala.inline
-    def apply(consumerKey: String, consumerSecret: String, token: String, tokenSecret: String): Accessor = {
+    inline def apply(consumerKey: String, consumerSecret: String, token: String, tokenSecret: String): Accessor = {
       val __obj = js.Dynamic.literal(consumerKey = consumerKey.asInstanceOf[js.Any], consumerSecret = consumerSecret.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any], tokenSecret = tokenSecret.asInstanceOf[js.Any])
       __obj.asInstanceOf[Accessor]
     }
     
-    @scala.inline
-    implicit class AccessorMutableBuilder[Self <: Accessor] (val x: Self) extends AnyVal {
+    extension [Self <: Accessor](x: Self) {
       
-      @scala.inline
-      def setAccessorSecret(value: String): Self = StObject.set(x, "accessorSecret", value.asInstanceOf[js.Any])
+      inline def setAccessorSecret(value: String): Self = StObject.set(x, "accessorSecret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessorSecretUndefined: Self = StObject.set(x, "accessorSecret", js.undefined)
+      inline def setAccessorSecretUndefined: Self = StObject.set(x, "accessorSecret", js.undefined)
       
-      @scala.inline
-      def setConsumerKey(value: String): Self = StObject.set(x, "consumerKey", value.asInstanceOf[js.Any])
+      inline def setConsumerKey(value: String): Self = StObject.set(x, "consumerKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsumerSecret(value: String): Self = StObject.set(x, "consumerSecret", value.asInstanceOf[js.Any])
+      inline def setConsumerSecret(value: String): Self = StObject.set(x, "consumerSecret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenSecret(value: String): Self = StObject.set(x, "tokenSecret", value.asInstanceOf[js.Any])
+      inline def setTokenSecret(value: String): Self = StObject.set(x, "tokenSecret", value.asInstanceOf[js.Any])
     }
   }
   
@@ -70,26 +62,20 @@ object OAuth {
   }
   object Message {
     
-    @scala.inline
-    def apply(action: String, method: String, parameters: ParameterListOrMap): Message = {
+    inline def apply(action: String, method: String, parameters: ParameterListOrMap): Message = {
       val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any])
       __obj.asInstanceOf[Message]
     }
     
-    @scala.inline
-    implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
+    extension [Self <: Message](x: Self) {
       
-      @scala.inline
-      def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParameters(value: ParameterListOrMap): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: ParameterListOrMap): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParametersVarargs(value: (js.Tuple2[String, String])*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+      inline def setParametersVarargs(value: (js.Tuple2[String, String])*): Self = StObject.set(x, "parameters", js.Array(value :_*))
     }
   }
   
@@ -115,8 +101,7 @@ object OAuth {
   }
   object SignatureMethod {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getSignature: String => String,
       initialize: (String, Accessor) => Unit,
       key: String,
@@ -126,20 +111,15 @@ object OAuth {
       __obj.asInstanceOf[SignatureMethod]
     }
     
-    @scala.inline
-    implicit class SignatureMethodMutableBuilder[Self <: SignatureMethod] (val x: Self) extends AnyVal {
+    extension [Self <: SignatureMethod](x: Self) {
       
-      @scala.inline
-      def setGetSignature(value: String => String): Self = StObject.set(x, "getSignature", js.Any.fromFunction1(value))
+      inline def setGetSignature(value: String => String): Self = StObject.set(x, "getSignature", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInitialize(value: (String, Accessor) => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction2(value))
+      inline def setInitialize(value: (String, Accessor) => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSign(value: Message => String): Self = StObject.set(x, "sign", js.Any.fromFunction1(value))
+      inline def setSign(value: Message => String): Self = StObject.set(x, "sign", js.Any.fromFunction1(value))
     }
   }
   
@@ -182,8 +162,7 @@ object OAuth {
   }
   object SignatureMethodStatic {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       REGISTERED: StringDictionary[Instantiable],
       getBaseString: Message => String,
       makeSubclass: js.Function1[/* baseString */ String, String] => Instantiable,
@@ -198,35 +177,25 @@ object OAuth {
       __obj.asInstanceOf[SignatureMethodStatic]
     }
     
-    @scala.inline
-    implicit class SignatureMethodStaticMutableBuilder[Self <: SignatureMethodStatic] (val x: Self) extends AnyVal {
+    extension [Self <: SignatureMethodStatic](x: Self) {
       
-      @scala.inline
-      def setGetBaseString(value: Message => String): Self = StObject.set(x, "getBaseString", js.Any.fromFunction1(value))
+      inline def setGetBaseString(value: Message => String): Self = StObject.set(x, "getBaseString", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMakeSubclass(value: js.Function1[/* baseString */ String, String] => Instantiable): Self = StObject.set(x, "makeSubclass", js.Any.fromFunction1(value))
+      inline def setMakeSubclass(value: js.Function1[/* baseString */ String, String] => Instantiable): Self = StObject.set(x, "makeSubclass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNewMethod(value: (String, Accessor) => SignatureMethod): Self = StObject.set(x, "newMethod", js.Any.fromFunction2(value))
+      inline def setNewMethod(value: (String, Accessor) => SignatureMethod): Self = StObject.set(x, "newMethod", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNormalizeParameters(value: ParameterListOrMap => String): Self = StObject.set(x, "normalizeParameters", js.Any.fromFunction1(value))
+      inline def setNormalizeParameters(value: ParameterListOrMap => String): Self = StObject.set(x, "normalizeParameters", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNormalizeUrl(value: String => String): Self = StObject.set(x, "normalizeUrl", js.Any.fromFunction1(value))
+      inline def setNormalizeUrl(value: String => String): Self = StObject.set(x, "normalizeUrl", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setParseUri(value: String => Uri): Self = StObject.set(x, "parseUri", js.Any.fromFunction1(value))
+      inline def setParseUri(value: String => Uri): Self = StObject.set(x, "parseUri", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setREGISTERED(value: StringDictionary[Instantiable]): Self = StObject.set(x, "REGISTERED", value.asInstanceOf[js.Any])
+      inline def setREGISTERED(value: StringDictionary[Instantiable]): Self = StObject.set(x, "REGISTERED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegisterMethodClass(value: (js.Array[String], Instantiable) => Unit): Self = StObject.set(x, "registerMethodClass", js.Any.fromFunction2(value))
+      inline def setRegisterMethodClass(value: (js.Array[String], Instantiable) => Unit): Self = StObject.set(x, "registerMethodClass", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSign(value: (Message, Accessor) => Unit): Self = StObject.set(x, "sign", js.Any.fromFunction2(value))
+      inline def setSign(value: (Message, Accessor) => Unit): Self = StObject.set(x, "sign", js.Any.fromFunction2(value))
     }
   }
   
@@ -262,8 +231,7 @@ object OAuth {
   }
   object Uri {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       anchor: String,
       authority: String,
       directory: String,
@@ -283,50 +251,35 @@ object OAuth {
       __obj.asInstanceOf[Uri]
     }
     
-    @scala.inline
-    implicit class UriMutableBuilder[Self <: Uri] (val x: Self) extends AnyVal {
+    extension [Self <: Uri](x: Self) {
       
-      @scala.inline
-      def setAnchor(value: String): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+      inline def setAnchor(value: String): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthority(value: String): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
+      inline def setAuthority(value: String): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
+      inline def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelative(value: String): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
+      inline def setRelative(value: String): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserInfo(value: String): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
+      inline def setUserInfo(value: String): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -34,7 +34,7 @@ object mod {
     def this(filename: Config, saveOnPush: Unit, humanReadable: Boolean, separator: String) = this()
     def this(filename: Config, saveOnPush: Unit, humanReadable: Unit, separator: String) = this()
     
-    val config: js.Any = js.native
+    /* private */ val config: js.Any = js.native
     
     /**
       * Returns the number of element which constitutes the array
@@ -42,7 +42,7 @@ object mod {
       */
     def count(dataPath: String): Double = js.native
     
-    var data: js.Any = js.native
+    /* private */ var data: js.Any = js.native
     
     /**
       * Delete the data
@@ -84,7 +84,7 @@ object mod {
     def getIndex(dataPath: String, value: String): Double = js.native
     def getIndex(dataPath: String, value: String, item: String): Double = js.native
     
-    var getParentData: js.Any = js.native
+    /* private */ var getParentData: js.Any = js.native
     
     /**
       * Manually load the database
@@ -92,13 +92,13 @@ object mod {
       */
     def load(): Unit = js.native
     
-    var loaded: js.Any = js.native
+    /* private */ var loaded: js.Any = js.native
     
     /**
       * Process datapath into different parts
       * @param dataPath
       */
-    var processDataPath: js.Any = js.native
+    /* private */ var processDataPath: js.Any = js.native
     
     /**
       * Pushing data into the database
@@ -121,7 +121,7 @@ object mod {
       */
     def resetData(data: js.Any): Unit = js.native
     
-    var retrieveData: js.Any = js.native
+    /* private */ var retrieveData: js.Any = js.native
     
     /**
       * Manually save the database

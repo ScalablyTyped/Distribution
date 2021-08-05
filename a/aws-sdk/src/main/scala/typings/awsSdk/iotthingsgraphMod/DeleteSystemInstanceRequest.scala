@@ -13,19 +13,15 @@ trait DeleteSystemInstanceRequest extends StObject {
 }
 object DeleteSystemInstanceRequest {
   
-  @scala.inline
-  def apply(): DeleteSystemInstanceRequest = {
+  inline def apply(): DeleteSystemInstanceRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteSystemInstanceRequest]
   }
   
-  @scala.inline
-  implicit class DeleteSystemInstanceRequestMutableBuilder[Self <: DeleteSystemInstanceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSystemInstanceRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: Urn): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Urn): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

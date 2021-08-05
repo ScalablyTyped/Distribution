@@ -24,37 +24,27 @@ trait Duration
 }
 object Duration {
   
-  @scala.inline
-  def apply(duration: Double, output: js.Array[String], result: RollupBuild): Duration = {
+  inline def apply(duration: Double, output: js.Array[String], result: RollupBuild): Duration = {
     val __obj = js.Dynamic.literal(code = "BUNDLE_END", duration = duration.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[Duration]
   }
   
-  @scala.inline
-  implicit class DurationMutableBuilder[Self <: Duration] (val x: Self) extends AnyVal {
+  extension [Self <: Duration](x: Self) {
     
-    @scala.inline
-    def setCode(value: BUNDLE_END): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: BUNDLE_END): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInput(value: InputOption): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: InputOption): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    @scala.inline
-    def setInputVarargs(value: String*): Self = StObject.set(x, "input", js.Array(value :_*))
+    inline def setInputVarargs(value: String*): Self = StObject.set(x, "input", js.Array(value :_*))
     
-    @scala.inline
-    def setOutput(value: js.Array[String]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: js.Array[String]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputVarargs(value: String*): Self = StObject.set(x, "output", js.Array(value :_*))
+    inline def setOutputVarargs(value: String*): Self = StObject.set(x, "output", js.Array(value :_*))
     
-    @scala.inline
-    def setResult(value: RollupBuild): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: RollupBuild): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

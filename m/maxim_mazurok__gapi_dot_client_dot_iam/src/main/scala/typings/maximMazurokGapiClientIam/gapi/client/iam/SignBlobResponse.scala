@@ -14,25 +14,19 @@ trait SignBlobResponse extends StObject {
 }
 object SignBlobResponse {
   
-  @scala.inline
-  def apply(): SignBlobResponse = {
+  inline def apply(): SignBlobResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SignBlobResponse]
   }
   
-  @scala.inline
-  implicit class SignBlobResponseMutableBuilder[Self <: SignBlobResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SignBlobResponse](x: Self) {
     
-    @scala.inline
-    def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
+    inline def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyIdUndefined: Self = StObject.set(x, "keyId", js.undefined)
+    inline def setKeyIdUndefined: Self = StObject.set(x, "keyId", js.undefined)
     
-    @scala.inline
-    def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
+    inline def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
   }
 }

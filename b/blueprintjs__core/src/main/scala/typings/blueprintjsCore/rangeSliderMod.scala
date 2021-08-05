@@ -25,14 +25,12 @@ object rangeSliderMod {
     @JSImport("@blueprintjs/core/lib/esm/components/slider/rangeSlider", "RangeSlider.defaultProps")
     @js.native
     def defaultProps: IRangeSliderProps = js.native
-    @scala.inline
-    def defaultProps_=(x: IRangeSliderProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IRangeSliderProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/slider/rangeSlider", "RangeSlider.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   trait IRangeSliderProps
@@ -53,32 +51,24 @@ object rangeSliderMod {
   }
   object IRangeSliderProps {
     
-    @scala.inline
-    def apply(): IRangeSliderProps = {
+    inline def apply(): IRangeSliderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IRangeSliderProps]
     }
     
-    @scala.inline
-    implicit class IRangeSliderPropsMutableBuilder[Self <: IRangeSliderProps] (val x: Self) extends AnyVal {
+    extension [Self <: IRangeSliderProps](x: Self) {
       
-      @scala.inline
-      def setOnChange(value: /* value */ NumberRange => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* value */ NumberRange => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnRelease(value: /* value */ NumberRange => Unit): Self = StObject.set(x, "onRelease", js.Any.fromFunction1(value))
+      inline def setOnRelease(value: /* value */ NumberRange => Unit): Self = StObject.set(x, "onRelease", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnReleaseUndefined: Self = StObject.set(x, "onRelease", js.undefined)
+      inline def setOnReleaseUndefined: Self = StObject.set(x, "onRelease", js.undefined)
       
-      @scala.inline
-      def setValue(value: NumberRange): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: NumberRange): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   

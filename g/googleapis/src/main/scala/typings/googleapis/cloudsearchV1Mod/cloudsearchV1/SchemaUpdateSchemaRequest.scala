@@ -23,31 +23,23 @@ trait SchemaUpdateSchemaRequest extends StObject {
 }
 object SchemaUpdateSchemaRequest {
   
-  @scala.inline
-  def apply(): SchemaUpdateSchemaRequest = {
+  inline def apply(): SchemaUpdateSchemaRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUpdateSchemaRequest]
   }
   
-  @scala.inline
-  implicit class SchemaUpdateSchemaRequestMutableBuilder[Self <: SchemaUpdateSchemaRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUpdateSchemaRequest](x: Self) {
     
-    @scala.inline
-    def setDebugOptions(value: SchemaDebugOptions): Self = StObject.set(x, "debugOptions", value.asInstanceOf[js.Any])
+    inline def setDebugOptions(value: SchemaDebugOptions): Self = StObject.set(x, "debugOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugOptionsUndefined: Self = StObject.set(x, "debugOptions", js.undefined)
+    inline def setDebugOptionsUndefined: Self = StObject.set(x, "debugOptions", js.undefined)
     
-    @scala.inline
-    def setSchema(value: SchemaSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: SchemaSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+    inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
-    @scala.inline
-    def setValidateOnly(value: Boolean): Self = StObject.set(x, "validateOnly", value.asInstanceOf[js.Any])
+    inline def setValidateOnly(value: Boolean): Self = StObject.set(x, "validateOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidateOnlyUndefined: Self = StObject.set(x, "validateOnly", js.undefined)
+    inline def setValidateOnlyUndefined: Self = StObject.set(x, "validateOnly", js.undefined)
   }
 }

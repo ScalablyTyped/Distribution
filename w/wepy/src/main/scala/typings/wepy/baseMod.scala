@@ -25,8 +25,7 @@ object baseMod {
         ]
       ] = js.native
     
-    @scala.inline
-    def createApp_=(
+    inline def createApp_=(
       x: js.UndefOr[
           js.Function2[
             /* appClass */ AppConstructor, 
@@ -46,8 +45,7 @@ object baseMod {
         ]
       ] = js.native
     
-    @scala.inline
-    def createPage_=(
+    inline def createPage_=(
       x: js.UndefOr[
           js.Function2[
             /* pageClass */ PageConstructor, 

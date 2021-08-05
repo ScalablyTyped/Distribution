@@ -16,19 +16,15 @@ trait AvailableGenreSeedsResponse extends StObject {
 }
 object AvailableGenreSeedsResponse {
   
-  @scala.inline
-  def apply(genres: js.Array[String]): AvailableGenreSeedsResponse = {
+  inline def apply(genres: js.Array[String]): AvailableGenreSeedsResponse = {
     val __obj = js.Dynamic.literal(genres = genres.asInstanceOf[js.Any])
     __obj.asInstanceOf[AvailableGenreSeedsResponse]
   }
   
-  @scala.inline
-  implicit class AvailableGenreSeedsResponseMutableBuilder[Self <: AvailableGenreSeedsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AvailableGenreSeedsResponse](x: Self) {
     
-    @scala.inline
-    def setGenres(value: js.Array[String]): Self = StObject.set(x, "genres", value.asInstanceOf[js.Any])
+    inline def setGenres(value: js.Array[String]): Self = StObject.set(x, "genres", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenresVarargs(value: String*): Self = StObject.set(x, "genres", js.Array(value :_*))
+    inline def setGenresVarargs(value: String*): Self = StObject.set(x, "genres", js.Array(value :_*))
   }
 }

@@ -18,28 +18,21 @@ trait DescribeResourcePermissionsResponse extends StObject {
 }
 object DescribeResourcePermissionsResponse {
   
-  @scala.inline
-  def apply(): DescribeResourcePermissionsResponse = {
+  inline def apply(): DescribeResourcePermissionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeResourcePermissionsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeResourcePermissionsResponseMutableBuilder[Self <: DescribeResourcePermissionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeResourcePermissionsResponse](x: Self) {
     
-    @scala.inline
-    def setMarker(value: PageMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: PageMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setPrincipals(value: PrincipalList): Self = StObject.set(x, "Principals", value.asInstanceOf[js.Any])
+    inline def setPrincipals(value: PrincipalList): Self = StObject.set(x, "Principals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalsUndefined: Self = StObject.set(x, "Principals", js.undefined)
+    inline def setPrincipalsUndefined: Self = StObject.set(x, "Principals", js.undefined)
     
-    @scala.inline
-    def setPrincipalsVarargs(value: Principal*): Self = StObject.set(x, "Principals", js.Array(value :_*))
+    inline def setPrincipalsVarargs(value: Principal*): Self = StObject.set(x, "Principals", js.Array(value :_*))
   }
 }

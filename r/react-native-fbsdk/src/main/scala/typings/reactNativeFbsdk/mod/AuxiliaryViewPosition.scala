@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AuxiliaryViewPosition extends StObject
 object AuxiliaryViewPosition {
   
-  @scala.inline
-  def bottom: typings.reactNativeFbsdk.reactNativeFbsdkStrings.bottom = "bottom".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.bottom]
+  inline def bottom: typings.reactNativeFbsdk.reactNativeFbsdkStrings.bottom = "bottom".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.bottom]
   
-  @scala.inline
-  def `inline`: typings.reactNativeFbsdk.reactNativeFbsdkStrings.`inline` = "inline".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.`inline`]
+  inline def `inline`: typings.reactNativeFbsdk.reactNativeFbsdkStrings.`inline` = "inline".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.`inline`]
   
-  @scala.inline
-  def top: typings.reactNativeFbsdk.reactNativeFbsdkStrings.top = "top".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.top]
+  inline def top: typings.reactNativeFbsdk.reactNativeFbsdkStrings.top = "top".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.top]
 }

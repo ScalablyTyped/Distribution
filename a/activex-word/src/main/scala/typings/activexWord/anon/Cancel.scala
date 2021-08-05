@@ -13,19 +13,15 @@ trait Cancel extends StObject {
 }
 object Cancel {
   
-  @scala.inline
-  def apply(Cancel: Boolean, Doc: Document): Cancel = {
+  inline def apply(Cancel: Boolean, Doc: Document): Cancel = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Doc = Doc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cancel]
   }
   
-  @scala.inline
-  implicit class CancelMutableBuilder[Self <: Cancel] (val x: Self) extends AnyVal {
+  extension [Self <: Cancel](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoc(value: Document): Self = StObject.set(x, "Doc", value.asInstanceOf[js.Any])
+    inline def setDoc(value: Document): Self = StObject.set(x, "Doc", value.asInstanceOf[js.Any])
   }
 }

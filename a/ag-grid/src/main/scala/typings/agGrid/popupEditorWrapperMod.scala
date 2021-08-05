@@ -23,7 +23,7 @@ object popupEditorWrapperMod {
     @JSName("afterGuiAttached")
     def afterGuiAttached_MPopupEditorWrapper(): Unit = js.native
     
-    var cellEditor: js.Any = js.native
+    /* private */ var cellEditor: js.Any = js.native
     
     @JSName("focusIn")
     def focusIn_MPopupEditorWrapper(): Unit = js.native
@@ -31,7 +31,7 @@ object popupEditorWrapperMod {
     @JSName("focusOut")
     def focusOut_MPopupEditorWrapper(): Unit = js.native
     
-    var getGuiCalledOnChild: js.Any = js.native
+    /* private */ var getGuiCalledOnChild: js.Any = js.native
     
     /** Return the final value - called by the grid once after editing is complete */
     /* CompleteClass */
@@ -53,7 +53,7 @@ object popupEditorWrapperMod {
     
     /* private */ def onKeyDown(event: js.Any): js.Any = js.native
     
-    var params: js.Any = js.native
+    /* private */ var params: js.Any = js.native
   }
   /* static members */
   object PopupEditorWrapper {
@@ -65,7 +65,6 @@ object popupEditorWrapperMod {
     @JSImport("ag-grid/dist/lib/rendering/cellEditors/popupEditorWrapper", "PopupEditorWrapper.DOM_KEY_POPUP_EDITOR_WRAPPER")
     @js.native
     def DOM_KEY_POPUP_EDITOR_WRAPPER: String = js.native
-    @scala.inline
-    def DOM_KEY_POPUP_EDITOR_WRAPPER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOM_KEY_POPUP_EDITOR_WRAPPER")(x.asInstanceOf[js.Any])
+    inline def DOM_KEY_POPUP_EDITOR_WRAPPER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOM_KEY_POPUP_EDITOR_WRAPPER")(x.asInstanceOf[js.Any])
   }
 }

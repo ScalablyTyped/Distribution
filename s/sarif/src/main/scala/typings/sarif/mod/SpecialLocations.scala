@@ -18,25 +18,19 @@ trait SpecialLocations extends StObject {
 }
 object SpecialLocations {
   
-  @scala.inline
-  def apply(): SpecialLocations = {
+  inline def apply(): SpecialLocations = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SpecialLocations]
   }
   
-  @scala.inline
-  implicit class SpecialLocationsMutableBuilder[Self <: SpecialLocations] (val x: Self) extends AnyVal {
+  extension [Self <: SpecialLocations](x: Self) {
     
-    @scala.inline
-    def setDisplayBase(value: ArtifactLocation): Self = StObject.set(x, "displayBase", value.asInstanceOf[js.Any])
+    inline def setDisplayBase(value: ArtifactLocation): Self = StObject.set(x, "displayBase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayBaseUndefined: Self = StObject.set(x, "displayBase", js.undefined)
+    inline def setDisplayBaseUndefined: Self = StObject.set(x, "displayBase", js.undefined)
     
-    @scala.inline
-    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
   }
 }

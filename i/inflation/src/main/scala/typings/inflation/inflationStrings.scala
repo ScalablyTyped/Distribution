@@ -8,16 +8,13 @@ object inflationStrings {
   
   @js.native
   sealed trait deflate extends StObject
-  @scala.inline
-  def deflate: deflate = "deflate".asInstanceOf[deflate]
+  inline def deflate: deflate = "deflate".asInstanceOf[deflate]
   
   @js.native
   sealed trait gzip extends StObject
-  @scala.inline
-  def gzip: gzip = "gzip".asInstanceOf[gzip]
+  inline def gzip: gzip = "gzip".asInstanceOf[gzip]
   
   @js.native
   sealed trait identity extends StObject
-  @scala.inline
-  def identity: identity = "identity".asInstanceOf[identity]
+  inline def identity: identity = "identity".asInstanceOf[identity]
 }

@@ -28,31 +28,23 @@ trait SchemaAccessConfig extends StObject {
 }
 object SchemaAccessConfig {
   
-  @scala.inline
-  def apply(): SchemaAccessConfig = {
+  inline def apply(): SchemaAccessConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAccessConfig]
   }
   
-  @scala.inline
-  implicit class SchemaAccessConfigMutableBuilder[Self <: SchemaAccessConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAccessConfig](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNatIp(value: String): Self = StObject.set(x, "natIp", value.asInstanceOf[js.Any])
+    inline def setNatIp(value: String): Self = StObject.set(x, "natIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNatIpUndefined: Self = StObject.set(x, "natIp", js.undefined)
+    inline def setNatIpUndefined: Self = StObject.set(x, "natIp", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

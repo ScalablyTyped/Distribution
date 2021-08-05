@@ -10,8 +10,7 @@ trait RemoveAttributesInput
      with typings.awsSdkClientPinpointBrowser.typesRemoveAttributesInputMod.RemoveAttributesInput
 object RemoveAttributesInput {
   
-  @scala.inline
-  def apply(ApplicationId: String, AttributeType: String, UpdateAttributesRequest: UpdateAttributesRequest): RemoveAttributesInput = {
+  inline def apply(ApplicationId: String, AttributeType: String, UpdateAttributesRequest: UpdateAttributesRequest): RemoveAttributesInput = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], AttributeType = AttributeType.asInstanceOf[js.Any], UpdateAttributesRequest = UpdateAttributesRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveAttributesInput]
   }

@@ -52,21 +52,18 @@ object Portal {
     @JSImport("@ant-design/react-native", "Portal.Host.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   /* static member */
   @JSImport("@ant-design/react-native", "Portal.add")
   @js.native
   def add: js.Function1[/* e */ ReactNode, Double] = js.native
-  @scala.inline
-  def add_=(x: js.Function1[/* e */ ReactNode, Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("add")(x.asInstanceOf[js.Any])
+  inline def add_=(x: js.Function1[/* e */ ReactNode, Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("add")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("@ant-design/react-native", "Portal.remove")
   @js.native
   def remove: js.Function1[/* key */ Double, Unit] = js.native
-  @scala.inline
-  def remove_=(x: js.Function1[/* key */ Double, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("remove")(x.asInstanceOf[js.Any])
+  inline def remove_=(x: js.Function1[/* key */ Double, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("remove")(x.asInstanceOf[js.Any])
 }

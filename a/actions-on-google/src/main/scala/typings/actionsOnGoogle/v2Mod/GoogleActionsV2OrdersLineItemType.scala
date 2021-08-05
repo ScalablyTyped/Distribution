@@ -17,27 +17,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GoogleActionsV2OrdersLineItemType extends StObject
 object GoogleActionsV2OrdersLineItemType {
   
-  @scala.inline
-  def DELIVERY: typings.actionsOnGoogle.actionsOnGoogleStrings.DELIVERY = "DELIVERY".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.DELIVERY]
+  inline def DELIVERY: typings.actionsOnGoogle.actionsOnGoogleStrings.DELIVERY = "DELIVERY".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.DELIVERY]
   
-  @scala.inline
-  def DISCOUNT: typings.actionsOnGoogle.actionsOnGoogleStrings.DISCOUNT = "DISCOUNT".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.DISCOUNT]
+  inline def DISCOUNT: typings.actionsOnGoogle.actionsOnGoogleStrings.DISCOUNT = "DISCOUNT".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.DISCOUNT]
   
-  @scala.inline
-  def FEE: typings.actionsOnGoogle.actionsOnGoogleStrings.FEE = "FEE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.FEE]
+  inline def FEE: typings.actionsOnGoogle.actionsOnGoogleStrings.FEE = "FEE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.FEE]
   
-  @scala.inline
-  def GRATUITY: typings.actionsOnGoogle.actionsOnGoogleStrings.GRATUITY = "GRATUITY".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.GRATUITY]
+  inline def GRATUITY: typings.actionsOnGoogle.actionsOnGoogleStrings.GRATUITY = "GRATUITY".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.GRATUITY]
   
-  @scala.inline
-  def REGULAR: typings.actionsOnGoogle.actionsOnGoogleStrings.REGULAR = "REGULAR".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.REGULAR]
+  inline def REGULAR: typings.actionsOnGoogle.actionsOnGoogleStrings.REGULAR = "REGULAR".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.REGULAR]
   
-  @scala.inline
-  def SUBTOTAL: typings.actionsOnGoogle.actionsOnGoogleStrings.SUBTOTAL = "SUBTOTAL".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.SUBTOTAL]
+  inline def SUBTOTAL: typings.actionsOnGoogle.actionsOnGoogleStrings.SUBTOTAL = "SUBTOTAL".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.SUBTOTAL]
   
-  @scala.inline
-  def TAX: typings.actionsOnGoogle.actionsOnGoogleStrings.TAX = "TAX".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.TAX]
+  inline def TAX: typings.actionsOnGoogle.actionsOnGoogleStrings.TAX = "TAX".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.TAX]
   
-  @scala.inline
-  def UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.UNSPECIFIED = "UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.UNSPECIFIED]
+  inline def UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.UNSPECIFIED = "UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.UNSPECIFIED]
 }

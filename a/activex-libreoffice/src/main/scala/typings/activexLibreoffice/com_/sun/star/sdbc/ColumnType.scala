@@ -17,13 +17,10 @@ object ColumnType {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def NOT_PSEUDO: `1` = 1.asInstanceOf[`1`]
+    inline def NOT_PSEUDO: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def PSEUDO: `2` = 2.asInstanceOf[`2`]
+    inline def PSEUDO: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def UNKNOWN: `0` = 0.asInstanceOf[`0`]
+    inline def UNKNOWN: `0` = 0.asInstanceOf[`0`]
   }
 }

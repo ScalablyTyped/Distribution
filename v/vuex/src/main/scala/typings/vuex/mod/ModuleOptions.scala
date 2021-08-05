@@ -10,19 +10,15 @@ trait ModuleOptions extends StObject {
 }
 object ModuleOptions {
   
-  @scala.inline
-  def apply(): ModuleOptions = {
+  inline def apply(): ModuleOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModuleOptions]
   }
   
-  @scala.inline
-  implicit class ModuleOptionsMutableBuilder[Self <: ModuleOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ModuleOptions](x: Self) {
     
-    @scala.inline
-    def setPreserveState(value: Boolean): Self = StObject.set(x, "preserveState", value.asInstanceOf[js.Any])
+    inline def setPreserveState(value: Boolean): Self = StObject.set(x, "preserveState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveStateUndefined: Self = StObject.set(x, "preserveState", js.undefined)
+    inline def setPreserveStateUndefined: Self = StObject.set(x, "preserveState", js.undefined)
   }
 }

@@ -77,53 +77,38 @@ object providerMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(): Props = {
+      inline def apply(): Props = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+        inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+        inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
         
-        @scala.inline
-        def setOnChange(value: /* blocks */ js.Array[BlockInstance[StringDictionary[js.Any]]] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+        inline def setOnChange(value: /* blocks */ js.Array[BlockInstance[StringDictionary[js.Any]]] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+        inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
         
-        @scala.inline
-        def setOnInput(value: /* blocks */ js.Array[BlockInstance[StringDictionary[js.Any]]] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
+        inline def setOnInput(value: /* blocks */ js.Array[BlockInstance[StringDictionary[js.Any]]] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
+        inline def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
         
-        @scala.inline
-        def setSettings(value: PartialEditorSettingsEdit): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+        inline def setSettings(value: PartialEditorSettingsEdit): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
+        inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
         
-        @scala.inline
-        def setUseSubRegistry(value: Boolean): Self = StObject.set(x, "useSubRegistry", value.asInstanceOf[js.Any])
+        inline def setUseSubRegistry(value: Boolean): Self = StObject.set(x, "useSubRegistry", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUseSubRegistryUndefined: Self = StObject.set(x, "useSubRegistry", js.undefined)
+        inline def setUseSubRegistryUndefined: Self = StObject.set(x, "useSubRegistry", js.undefined)
         
-        @scala.inline
-        def setValue(value: js.Array[BlockInstance[StringDictionary[js.Any]]]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: js.Array[BlockInstance[StringDictionary[js.Any]]]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+        inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
         
-        @scala.inline
-        def setValueVarargs(value: BlockInstance[StringDictionary[js.Any]]*): Self = StObject.set(x, "value", js.Array(value :_*))
+        inline def setValueVarargs(value: BlockInstance[StringDictionary[js.Any]]*): Self = StObject.set(x, "value", js.Array(value :_*))
       }
     }
   }

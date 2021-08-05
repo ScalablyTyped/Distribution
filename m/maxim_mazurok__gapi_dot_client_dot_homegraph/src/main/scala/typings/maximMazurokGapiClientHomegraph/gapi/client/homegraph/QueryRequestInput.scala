@@ -11,19 +11,15 @@ trait QueryRequestInput extends StObject {
 }
 object QueryRequestInput {
   
-  @scala.inline
-  def apply(): QueryRequestInput = {
+  inline def apply(): QueryRequestInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryRequestInput]
   }
   
-  @scala.inline
-  implicit class QueryRequestInputMutableBuilder[Self <: QueryRequestInput] (val x: Self) extends AnyVal {
+  extension [Self <: QueryRequestInput](x: Self) {
     
-    @scala.inline
-    def setPayload(value: QueryRequestPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: QueryRequestPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
   }
 }

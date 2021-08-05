@@ -56,11 +56,9 @@ object sideNavigationMod {
     @js.native
     val ^ : STATE_CHANGE_TYPE = js.native
     
-    @scala.inline
-    implicit class STATE_CHANGE_TYPEMutableBuilder[Self <: STATE_CHANGE_TYPE] (val x: Self) extends AnyVal {
+    extension [Self <: STATE_CHANGE_TYPE](x: Self) {
       
-      @scala.inline
-      def setChange(value: change_): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
+      inline def setChange(value: change_): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
     }
   }
   
@@ -96,41 +94,30 @@ object sideNavigationMod {
   }
   object Item {
     
-    @scala.inline
-    def apply(): Item = {
+    inline def apply(): Item = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Item]
     }
     
-    @scala.inline
-    implicit class ItemMutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
+    extension [Self <: Item](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
+      inline def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
+      inline def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
       
-      @scala.inline
-      def setSubNav(value: js.Array[Item]): Self = StObject.set(x, "subNav", value.asInstanceOf[js.Any])
+      inline def setSubNav(value: js.Array[Item]): Self = StObject.set(x, "subNav", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubNavUndefined: Self = StObject.set(x, "subNav", js.undefined)
+      inline def setSubNavUndefined: Self = StObject.set(x, "subNav", js.undefined)
       
-      @scala.inline
-      def setSubNavVarargs(value: Item*): Self = StObject.set(x, "subNav", js.Array(value :_*))
+      inline def setSubNavVarargs(value: Item*): Self = StObject.set(x, "subNav", js.Array(value :_*))
       
-      @scala.inline
-      def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -146,30 +133,24 @@ object sideNavigationMod {
   }
   object NavItemOverrides {
     
-    @scala.inline
-    def apply(): NavItemOverrides = {
+    inline def apply(): NavItemOverrides = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NavItemOverrides]
     }
     
-    @scala.inline
-    implicit class NavItemOverridesMutableBuilder[Self <: NavItemOverrides] (val x: Self) extends AnyVal {
+    extension [Self <: NavItemOverrides](x: Self) {
       
-      @scala.inline
-      def setNavItem(
+      inline def setNavItem(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "NavItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavItemUndefined: Self = StObject.set(x, "NavItem", js.undefined)
+      inline def setNavItemUndefined: Self = StObject.set(x, "NavItem", js.undefined)
       
-      @scala.inline
-      def setNavLink(
+      inline def setNavLink(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "NavLink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavLinkUndefined: Self = StObject.set(x, "NavLink", js.undefined)
+      inline def setNavLinkUndefined: Self = StObject.set(x, "NavLink", js.undefined)
     }
   }
   
@@ -192,47 +173,34 @@ object sideNavigationMod {
   }
   object NavItemProps {
     
-    @scala.inline
-    def apply(item: Item): NavItemProps = {
+    inline def apply(item: Item): NavItemProps = {
       val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any])
       __obj.asInstanceOf[NavItemProps]
     }
     
-    @scala.inline
-    implicit class NavItemPropsMutableBuilder[Self <: NavItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: NavItemProps](x: Self) {
       
-      @scala.inline
-      def set$active(value: Boolean): Self = StObject.set(x, "$active", value.asInstanceOf[js.Any])
+      inline def set$active(value: Boolean): Self = StObject.set(x, "$active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$activeUndefined: Self = StObject.set(x, "$active", js.undefined)
+      inline def set$activeUndefined: Self = StObject.set(x, "$active", js.undefined)
       
-      @scala.inline
-      def set$level(value: Double): Self = StObject.set(x, "$level", value.asInstanceOf[js.Any])
+      inline def set$level(value: Double): Self = StObject.set(x, "$level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$levelUndefined: Self = StObject.set(x, "$level", js.undefined)
+      inline def set$levelUndefined: Self = StObject.set(x, "$level", js.undefined)
       
-      @scala.inline
-      def set$selectable(value: Boolean): Self = StObject.set(x, "$selectable", value.asInstanceOf[js.Any])
+      inline def set$selectable(value: Boolean): Self = StObject.set(x, "$selectable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$selectableUndefined: Self = StObject.set(x, "$selectable", js.undefined)
+      inline def set$selectableUndefined: Self = StObject.set(x, "$selectable", js.undefined)
       
-      @scala.inline
-      def setItem(value: Item): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: Item): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnSelect(value: /* args */ ItemAny => js.Any): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+      inline def setOnSelect(value: /* args */ ItemAny => js.Any): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
+      inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
-      @scala.inline
-      def setOverrides(value: NavItemOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: NavItemOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     }
   }
   
@@ -260,54 +228,42 @@ object sideNavigationMod {
   }
   object NavigationOverrides {
     
-    @scala.inline
-    def apply(): NavigationOverrides = {
+    inline def apply(): NavigationOverrides = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NavigationOverrides]
     }
     
-    @scala.inline
-    implicit class NavigationOverridesMutableBuilder[Self <: NavigationOverrides] (val x: Self) extends AnyVal {
+    extension [Self <: NavigationOverrides](x: Self) {
       
-      @scala.inline
-      def setNavItem(
+      inline def setNavItem(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "NavItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavItemContainer(
+      inline def setNavItemContainer(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "NavItemContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavItemContainerUndefined: Self = StObject.set(x, "NavItemContainer", js.undefined)
+      inline def setNavItemContainerUndefined: Self = StObject.set(x, "NavItemContainer", js.undefined)
       
-      @scala.inline
-      def setNavItemUndefined: Self = StObject.set(x, "NavItem", js.undefined)
+      inline def setNavItemUndefined: Self = StObject.set(x, "NavItem", js.undefined)
       
-      @scala.inline
-      def setNavLink(
+      inline def setNavLink(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "NavLink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavLinkUndefined: Self = StObject.set(x, "NavLink", js.undefined)
+      inline def setNavLinkUndefined: Self = StObject.set(x, "NavLink", js.undefined)
       
-      @scala.inline
-      def setRoot(
+      inline def setRoot(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
       
-      @scala.inline
-      def setSubNavContainer(
+      inline def setSubNavContainer(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "SubNavContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubNavContainerUndefined: Self = StObject.set(x, "SubNavContainer", js.undefined)
+      inline def setSubNavContainerUndefined: Self = StObject.set(x, "SubNavContainer", js.undefined)
     }
   }
   
@@ -327,50 +283,36 @@ object sideNavigationMod {
   }
   object NavigationProps {
     
-    @scala.inline
-    def apply(activeItemId: String): NavigationProps = {
+    inline def apply(activeItemId: String): NavigationProps = {
       val __obj = js.Dynamic.literal(activeItemId = activeItemId.asInstanceOf[js.Any])
       __obj.asInstanceOf[NavigationProps]
     }
     
-    @scala.inline
-    implicit class NavigationPropsMutableBuilder[Self <: NavigationProps] (val x: Self) extends AnyVal {
+    extension [Self <: NavigationProps](x: Self) {
       
-      @scala.inline
-      def setActiveItemId(value: String): Self = StObject.set(x, "activeItemId", value.asInstanceOf[js.Any])
+      inline def setActiveItemId(value: String): Self = StObject.set(x, "activeItemId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActivePredicate(value: (/* item */ js.Any, /* activeItemId */ String) => Boolean): Self = StObject.set(x, "activePredicate", js.Any.fromFunction2(value))
+      inline def setActivePredicate(value: (/* item */ js.Any, /* activeItemId */ String) => Boolean): Self = StObject.set(x, "activePredicate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setActivePredicateUndefined: Self = StObject.set(x, "activePredicate", js.undefined)
+      inline def setActivePredicateUndefined: Self = StObject.set(x, "activePredicate", js.undefined)
       
-      @scala.inline
-      def setItems(value: js.Array[Item]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[Item]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      @scala.inline
-      def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setMapItem(value: /* item */ Item => Item): Self = StObject.set(x, "mapItem", js.Any.fromFunction1(value))
+      inline def setMapItem(value: /* item */ Item => Item): Self = StObject.set(x, "mapItem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMapItemUndefined: Self = StObject.set(x, "mapItem", js.undefined)
+      inline def setMapItemUndefined: Self = StObject.set(x, "mapItem", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* args */ EventItem => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* args */ EventItem => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOverrides(value: NavigationOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: NavigationOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     }
   }
 }

@@ -51,8 +51,7 @@ trait SignedXMLAsync extends StObject {
 }
 object SignedXMLAsync {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Content: (// tslint:disable-line ban-types
   js.Promise[Unpacked[String]]) | PromisifiedFunction[String],
     DigestMethod: (// tslint:disable-line ban-types
@@ -84,49 +83,39 @@ object SignedXMLAsync {
     __obj.asInstanceOf[SignedXMLAsync]
   }
   
-  @scala.inline
-  implicit class SignedXMLAsyncMutableBuilder[Self <: SignedXMLAsync] (val x: Self) extends AnyVal {
+  extension [Self <: SignedXMLAsync](x: Self) {
     
-    @scala.inline
-    def setContent(
+    inline def setContent(
       value: (// tslint:disable-line ban-types
     js.Promise[Unpacked[String]]) | PromisifiedFunction[String]
     ): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentFunction1(
+    inline def setContentFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
       */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "Content", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDigestMethod(
+    inline def setDigestMethod(
       value: (// tslint:disable-line ban-types
     js.Promise[Unpacked[String]]) | PromisifiedFunction[String]
     ): Self = StObject.set(x, "DigestMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigestMethodFunction1(
+    inline def setDigestMethodFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
       */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "DigestMethod", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPropset_Content(value: String => js.Promise[Unit]): Self = StObject.set(x, "propset_Content", js.Any.fromFunction1(value))
+    inline def setPropset_Content(value: String => js.Promise[Unit]): Self = StObject.set(x, "propset_Content", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPropset_DigestMethod(value: String => js.Promise[Unit]): Self = StObject.set(x, "propset_DigestMethod", js.Any.fromFunction1(value))
+    inline def setPropset_DigestMethod(value: String => js.Promise[Unit]): Self = StObject.set(x, "propset_DigestMethod", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPropset_SignatureMethod(value: String => js.Promise[Unit]): Self = StObject.set(x, "propset_SignatureMethod", js.Any.fromFunction1(value))
+    inline def setPropset_SignatureMethod(value: String => js.Promise[Unit]): Self = StObject.set(x, "propset_SignatureMethod", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPropset_SignatureType(value: ValuesOf[CADESCOM_XML_SIGNATURE_TYPE] => js.Promise[Unit]): Self = StObject.set(x, "propset_SignatureType", js.Any.fromFunction1(value))
+    inline def setPropset_SignatureType(value: ValuesOf[CADESCOM_XML_SIGNATURE_TYPE] => js.Promise[Unit]): Self = StObject.set(x, "propset_SignatureType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSign(
+    inline def setSign(
       value: (// tslint:disable-line ban-types
     js.Promise[
           Unpacked[
@@ -137,71 +126,60 @@ object SignedXMLAsync {
         ])
     ): Self = StObject.set(x, "Sign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignFunction1(
+    inline def setSignFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
       */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "Sign", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSignFunction2(value: (/* signer */ js.UndefOr[CPSigner], /* XPath */ js.UndefOr[String]) => String): Self = StObject.set(x, "Sign", js.Any.fromFunction2(value))
+    inline def setSignFunction2(value: (/* signer */ js.UndefOr[CPSigner], /* XPath */ js.UndefOr[String]) => String): Self = StObject.set(x, "Sign", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSignatureMethod(
+    inline def setSignatureMethod(
       value: (// tslint:disable-line ban-types
     js.Promise[Unpacked[String]]) | PromisifiedFunction[String]
     ): Self = StObject.set(x, "SignatureMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureMethodFunction1(
+    inline def setSignatureMethodFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
       */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "SignatureMethod", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSignatureType(
+    inline def setSignatureType(
       value: (// tslint:disable-line ban-types
     js.Promise[Unpacked[ValuesOf[CADESCOM_XML_SIGNATURE_TYPE]]]) | PromisifiedFunction[ValuesOf[CADESCOM_XML_SIGNATURE_TYPE]]
     ): Self = StObject.set(x, "SignatureType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureTypeFunction1(
+    inline def setSignatureTypeFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
       */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "SignatureType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSigners(
+    inline def setSigners(
       value: (// tslint:disable-line ban-types
     js.Promise[Unpacked[Signers]]) | PromisifiedFunction[Signers]
     ): Self = StObject.set(x, "Signers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignersFunction1(
+    inline def setSignersFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
       */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "Signers", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVerify(
+    inline def setVerify(
       value: (// tslint:disable-line ban-types
     js.Promise[
           Unpacked[js.Function2[/* SignedMessage */ String, /* XPath */ js.UndefOr[String], Unit]]
         ]) | (PromisifiedFunction[js.Function2[/* SignedMessage */ String, /* XPath */ js.UndefOr[String], Unit]])
     ): Self = StObject.set(x, "Verify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerifyFunction1(
+    inline def setVerifyFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
       */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "Verify", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVerifyFunction2(value: (/* SignedMessage */ String, /* XPath */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "Verify", js.Any.fromFunction2(value))
+    inline def setVerifyFunction2(value: (/* SignedMessage */ String, /* XPath */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "Verify", js.Any.fromFunction2(value))
   }
 }

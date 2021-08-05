@@ -17,37 +17,27 @@ trait FusionTablesStyle extends StObject {
 }
 object FusionTablesStyle {
   
-  @scala.inline
-  def apply(): FusionTablesStyle = {
+  inline def apply(): FusionTablesStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FusionTablesStyle]
   }
   
-  @scala.inline
-  implicit class FusionTablesStyleMutableBuilder[Self <: FusionTablesStyle] (val x: Self) extends AnyVal {
+  extension [Self <: FusionTablesStyle](x: Self) {
     
-    @scala.inline
-    def setMarkerOptions(value: FusionTablesMarkerOptions): Self = StObject.set(x, "markerOptions", value.asInstanceOf[js.Any])
+    inline def setMarkerOptions(value: FusionTablesMarkerOptions): Self = StObject.set(x, "markerOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerOptionsUndefined: Self = StObject.set(x, "markerOptions", js.undefined)
+    inline def setMarkerOptionsUndefined: Self = StObject.set(x, "markerOptions", js.undefined)
     
-    @scala.inline
-    def setPolygonOptions(value: FusionTablesPolygonOptions): Self = StObject.set(x, "polygonOptions", value.asInstanceOf[js.Any])
+    inline def setPolygonOptions(value: FusionTablesPolygonOptions): Self = StObject.set(x, "polygonOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolygonOptionsUndefined: Self = StObject.set(x, "polygonOptions", js.undefined)
+    inline def setPolygonOptionsUndefined: Self = StObject.set(x, "polygonOptions", js.undefined)
     
-    @scala.inline
-    def setPolylineOptions(value: FusionTablesPolylineOptions): Self = StObject.set(x, "polylineOptions", value.asInstanceOf[js.Any])
+    inline def setPolylineOptions(value: FusionTablesPolylineOptions): Self = StObject.set(x, "polylineOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolylineOptionsUndefined: Self = StObject.set(x, "polylineOptions", js.undefined)
+    inline def setPolylineOptionsUndefined: Self = StObject.set(x, "polylineOptions", js.undefined)
     
-    @scala.inline
-    def setWhere(value: String): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
+    inline def setWhere(value: String): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
+    inline def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
   }
 }

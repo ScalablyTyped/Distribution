@@ -21,8 +21,7 @@ trait UnoControlContainer
      with XContainer
 object UnoControlContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleContext: XAccessibleContext,
     Context: XInterface,
     Controls: SafeArray[XControl],

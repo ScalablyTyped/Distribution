@@ -13,19 +13,15 @@ trait CreateStreamProcessorResponse extends StObject {
 }
 object CreateStreamProcessorResponse {
   
-  @scala.inline
-  def apply(): CreateStreamProcessorResponse = {
+  inline def apply(): CreateStreamProcessorResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateStreamProcessorResponse]
   }
   
-  @scala.inline
-  implicit class CreateStreamProcessorResponseMutableBuilder[Self <: CreateStreamProcessorResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateStreamProcessorResponse](x: Self) {
     
-    @scala.inline
-    def setStreamProcessorArn(value: StreamProcessorArn): Self = StObject.set(x, "StreamProcessorArn", value.asInstanceOf[js.Any])
+    inline def setStreamProcessorArn(value: StreamProcessorArn): Self = StObject.set(x, "StreamProcessorArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamProcessorArnUndefined: Self = StObject.set(x, "StreamProcessorArn", js.undefined)
+    inline def setStreamProcessorArnUndefined: Self = StObject.set(x, "StreamProcessorArn", js.undefined)
   }
 }

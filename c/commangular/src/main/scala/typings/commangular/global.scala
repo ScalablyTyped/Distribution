@@ -27,8 +27,7 @@ object global {
   * @param callback The function that will be called upon the completion of the command
   *         function should expecte an ICommandInfo parameter.
   */
-  @scala.inline
-  def dispatch(ec: ICommandCall, callback: js.Function): Unit = (js.Dynamic.global.applyDynamic("dispatch")(ec.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def dispatch(ec: ICommandCall, callback: js.Function): Unit = (js.Dynamic.global.applyDynamic("dispatch")(ec.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Extending the angular rootScope to include the dispatch function in all scopes.

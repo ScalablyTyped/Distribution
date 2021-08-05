@@ -11,13 +11,11 @@ object angularLocalStorageStrings {
   sealed trait localStorage
     extends StObject
        with StorageType
-  @scala.inline
-  def localStorage: localStorage = "localStorage".asInstanceOf[localStorage]
+  inline def localStorage: localStorage = "localStorage".asInstanceOf[localStorage]
   
   @js.native
   sealed trait sessionStorage
     extends StObject
        with StorageType
-  @scala.inline
-  def sessionStorage: sessionStorage = "sessionStorage".asInstanceOf[sessionStorage]
+  inline def sessionStorage: sessionStorage = "sessionStorage".asInstanceOf[sessionStorage]
 }

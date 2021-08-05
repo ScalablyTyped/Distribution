@@ -16,31 +16,23 @@ trait WatcherExecuteWatch[T]
 }
 object WatcherExecuteWatch {
   
-  @scala.inline
-  def apply[T](): WatcherExecuteWatch[T] = {
+  inline def apply[T](): WatcherExecuteWatch[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WatcherExecuteWatch[T]]
   }
   
-  @scala.inline
-  implicit class WatcherExecuteWatchMutableBuilder[Self <: WatcherExecuteWatch[?], T] (val x: Self & WatcherExecuteWatch[T]) extends AnyVal {
+  extension [Self <: WatcherExecuteWatch[?], T](x: Self & WatcherExecuteWatch[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+    inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

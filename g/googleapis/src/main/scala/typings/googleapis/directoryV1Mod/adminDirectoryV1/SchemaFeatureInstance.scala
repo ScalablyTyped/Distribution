@@ -17,19 +17,15 @@ trait SchemaFeatureInstance extends StObject {
 }
 object SchemaFeatureInstance {
   
-  @scala.inline
-  def apply(): SchemaFeatureInstance = {
+  inline def apply(): SchemaFeatureInstance = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFeatureInstance]
   }
   
-  @scala.inline
-  implicit class SchemaFeatureInstanceMutableBuilder[Self <: SchemaFeatureInstance] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFeatureInstance](x: Self) {
     
-    @scala.inline
-    def setFeature(value: SchemaFeature): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
+    inline def setFeature(value: SchemaFeature): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureUndefined: Self = StObject.set(x, "feature", js.undefined)
+    inline def setFeatureUndefined: Self = StObject.set(x, "feature", js.undefined)
   }
 }

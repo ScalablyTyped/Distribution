@@ -12,19 +12,15 @@ trait NxInfo extends StObject {
 }
 object NxInfo {
   
-  @scala.inline
-  def apply(qId: String, qType: String): NxInfo = {
+  inline def apply(qId: String, qType: String): NxInfo = {
     val __obj = js.Dynamic.literal(qId = qId.asInstanceOf[js.Any], qType = qType.asInstanceOf[js.Any])
     __obj.asInstanceOf[NxInfo]
   }
   
-  @scala.inline
-  implicit class NxInfoMutableBuilder[Self <: NxInfo] (val x: Self) extends AnyVal {
+  extension [Self <: NxInfo](x: Self) {
     
-    @scala.inline
-    def setQId(value: String): Self = StObject.set(x, "qId", value.asInstanceOf[js.Any])
+    inline def setQId(value: String): Self = StObject.set(x, "qId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQType(value: String): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
+    inline def setQType(value: String): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
   }
 }

@@ -17,37 +17,27 @@ trait PartialClassNameMapExpans extends StObject {
 }
 object PartialClassNameMapExpans {
   
-  @scala.inline
-  def apply(): PartialClassNameMapExpans = {
+  inline def apply(): PartialClassNameMapExpans = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapExpans]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapExpansMutableBuilder[Self <: PartialClassNameMapExpans] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapExpans](x: Self) {
     
-    @scala.inline
-    def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setExpanded(value: String): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+    inline def setExpanded(value: String): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
+    inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setRounded(value: String): Self = StObject.set(x, "rounded", value.asInstanceOf[js.Any])
+    inline def setRounded(value: String): Self = StObject.set(x, "rounded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoundedUndefined: Self = StObject.set(x, "rounded", js.undefined)
+    inline def setRoundedUndefined: Self = StObject.set(x, "rounded", js.undefined)
   }
 }

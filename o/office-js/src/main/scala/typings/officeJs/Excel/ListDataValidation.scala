@@ -31,19 +31,15 @@ trait ListDataValidation extends StObject {
 }
 object ListDataValidation {
   
-  @scala.inline
-  def apply(inCellDropDown: Boolean, source: String | Range): ListDataValidation = {
+  inline def apply(inCellDropDown: Boolean, source: String | Range): ListDataValidation = {
     val __obj = js.Dynamic.literal(inCellDropDown = inCellDropDown.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDataValidation]
   }
   
-  @scala.inline
-  implicit class ListDataValidationMutableBuilder[Self <: ListDataValidation] (val x: Self) extends AnyVal {
+  extension [Self <: ListDataValidation](x: Self) {
     
-    @scala.inline
-    def setInCellDropDown(value: Boolean): Self = StObject.set(x, "inCellDropDown", value.asInstanceOf[js.Any])
+    inline def setInCellDropDown(value: Boolean): Self = StObject.set(x, "inCellDropDown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: String | Range): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String | Range): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

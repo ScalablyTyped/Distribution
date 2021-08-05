@@ -13,19 +13,15 @@ trait NativeKeyboardHideOptions extends StObject {
 }
 object NativeKeyboardHideOptions {
   
-  @scala.inline
-  def apply(): NativeKeyboardHideOptions = {
+  inline def apply(): NativeKeyboardHideOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NativeKeyboardHideOptions]
   }
   
-  @scala.inline
-  implicit class NativeKeyboardHideOptionsMutableBuilder[Self <: NativeKeyboardHideOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NativeKeyboardHideOptions](x: Self) {
     
-    @scala.inline
-    def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
+    inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
+    inline def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
   }
 }

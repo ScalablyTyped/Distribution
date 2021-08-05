@@ -20,43 +20,31 @@ trait DisplayMode extends StObject {
 }
 object DisplayMode {
   
-  @scala.inline
-  def apply(): DisplayMode = {
+  inline def apply(): DisplayMode = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisplayMode]
   }
   
-  @scala.inline
-  implicit class DisplayModeMutableBuilder[Self <: DisplayMode] (val x: Self) extends AnyVal {
+  extension [Self <: DisplayMode](x: Self) {
     
-    @scala.inline
-    def setDisplayMode(value: String): Self = StObject.set(x, "displayMode", value.asInstanceOf[js.Any])
+    inline def setDisplayMode(value: String): Self = StObject.set(x, "displayMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayModeUndefined: Self = StObject.set(x, "displayMode", js.undefined)
+    inline def setDisplayModeUndefined: Self = StObject.set(x, "displayMode", js.undefined)
     
-    @scala.inline
-    def setGoToThumbnail(value: Boolean): Self = StObject.set(x, "goToThumbnail", value.asInstanceOf[js.Any])
+    inline def setGoToThumbnail(value: Boolean): Self = StObject.set(x, "goToThumbnail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoToThumbnailUndefined: Self = StObject.set(x, "goToThumbnail", js.undefined)
+    inline def setGoToThumbnailUndefined: Self = StObject.set(x, "goToThumbnail", js.undefined)
     
-    @scala.inline
-    def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+    inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
+    inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
     
-    @scala.inline
-    def setSelectedColor(value: String): Self = StObject.set(x, "selectedColor", value.asInstanceOf[js.Any])
+    inline def setSelectedColor(value: String): Self = StObject.set(x, "selectedColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedColorUndefined: Self = StObject.set(x, "selectedColor", js.undefined)
+    inline def setSelectedColorUndefined: Self = StObject.set(x, "selectedColor", js.undefined)
     
-    @scala.inline
-    def setVisibility(value: Boolean): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: Boolean): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
+    inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }
 }

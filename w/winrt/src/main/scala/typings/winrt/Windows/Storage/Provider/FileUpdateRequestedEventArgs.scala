@@ -9,8 +9,7 @@ trait FileUpdateRequestedEventArgs
      with IFileUpdateRequestedEventArgs
 object FileUpdateRequestedEventArgs {
   
-  @scala.inline
-  def apply(request: FileUpdateRequest): FileUpdateRequestedEventArgs = {
+  inline def apply(request: FileUpdateRequest): FileUpdateRequestedEventArgs = {
     val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileUpdateRequestedEventArgs]
   }

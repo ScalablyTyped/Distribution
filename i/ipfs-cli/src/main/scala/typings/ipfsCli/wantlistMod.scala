@@ -24,20 +24,17 @@ object wantlistMod {
     @js.native
     def cidBase: Choices = js.native
     
-    @scala.inline
-    def cidBase_=(x: Choices): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cid-base")(x.asInstanceOf[js.Any])
+    inline def cidBase_=(x: Choices): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cid-base")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/bitswap/wantlist", "builder.peer")
     @js.native
     def peer: AliasDescribe = js.native
-    @scala.inline
-    def peer_=(x: AliasDescribe): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("peer")(x.asInstanceOf[js.Any])
+    inline def peer_=(x: AliasDescribe): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("peer")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/bitswap/wantlist", "builder.timeout")
     @js.native
     def timeout: CoerceType = js.native
-    @scala.inline
-    def timeout_=(x: CoerceType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
+    inline def timeout_=(x: CoerceType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("ipfs-cli/dist/src/commands/bitswap/wantlist", "command")
@@ -48,6 +45,5 @@ object wantlistMod {
   @js.native
   val describe: String = js.native
   
-  @scala.inline
-  def handler(hasCtxPeerCidBaseTimeout: Peer): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasCtxPeerCidBaseTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def handler(hasCtxPeerCidBaseTimeout: Peer): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasCtxPeerCidBaseTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

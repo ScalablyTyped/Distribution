@@ -34,8 +34,7 @@ object anon {
   }
   object Datatype {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       datatype: TermTypeValue,
       language: PropType[Literal, language],
       termType: PropType[Literal, termType],
@@ -45,20 +44,15 @@ object anon {
       __obj.asInstanceOf[Datatype]
     }
     
-    @scala.inline
-    implicit class DatatypeMutableBuilder[Self <: Datatype] (val x: Self) extends AnyVal {
+    extension [Self <: Datatype](x: Self) {
       
-      @scala.inline
-      def setDatatype(value: TermTypeValue): Self = StObject.set(x, "datatype", value.asInstanceOf[js.Any])
+      inline def setDatatype(value: TermTypeValue): Self = StObject.set(x, "datatype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguage(value: PropType[Literal, language]): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: PropType[Literal, language]): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTermType(value: PropType[Literal, termType]): Self = StObject.set(x, "termType", value.asInstanceOf[js.Any])
+      inline def setTermType(value: PropType[Literal, termType]): Self = StObject.set(x, "termType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: PropType[Literal, value]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: PropType[Literal, value]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -74,8 +68,7 @@ object anon {
   }
   object Graph {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       graph: ReturnType[PropType[PropType[QuadExt, graph], toJSON]],
       `object`: ReturnType[PropType[PropType[QuadExt, `object`], toJSON]],
       predicate: ReturnType[PropType[PropType[QuadExt, predicate], toJSON]],
@@ -86,20 +79,15 @@ object anon {
       __obj.asInstanceOf[Graph]
     }
     
-    @scala.inline
-    implicit class GraphMutableBuilder[Self <: Graph] (val x: Self) extends AnyVal {
+    extension [Self <: Graph](x: Self) {
       
-      @scala.inline
-      def setGraph(value: ReturnType[PropType[PropType[QuadExt, graph], toJSON]]): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
+      inline def setGraph(value: ReturnType[PropType[PropType[QuadExt, graph], toJSON]]): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject(value: ReturnType[PropType[PropType[QuadExt, `object`], toJSON]]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: ReturnType[PropType[PropType[QuadExt, `object`], toJSON]]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPredicate(value: ReturnType[PropType[PropType[QuadExt, predicate], toJSON]]): Self = StObject.set(x, "predicate", value.asInstanceOf[js.Any])
+      inline def setPredicate(value: ReturnType[PropType[PropType[QuadExt, predicate], toJSON]]): Self = StObject.set(x, "predicate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubject(value: ReturnType[PropType[PropType[QuadExt, subject], toJSON]]): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+      inline def setSubject(value: ReturnType[PropType[PropType[QuadExt, subject], toJSON]]): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     }
   }
   
@@ -111,20 +99,16 @@ object anon {
   }
   object TermType {
     
-    @scala.inline
-    def apply(termType: PropType[BlankNode, termType], value: PropType[BlankNode, value]): TermType = {
+    inline def apply(termType: PropType[BlankNode, termType], value: PropType[BlankNode, value]): TermType = {
       val __obj = js.Dynamic.literal(termType = termType.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[TermType]
     }
     
-    @scala.inline
-    implicit class TermTypeMutableBuilder[Self <: TermType] (val x: Self) extends AnyVal {
+    extension [Self <: TermType](x: Self) {
       
-      @scala.inline
-      def setTermType(value: PropType[BlankNode, termType]): Self = StObject.set(x, "termType", value.asInstanceOf[js.Any])
+      inline def setTermType(value: PropType[BlankNode, termType]): Self = StObject.set(x, "termType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: PropType[BlankNode, value]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: PropType[BlankNode, value]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -136,20 +120,16 @@ object anon {
   }
   object TermTypePropType {
     
-    @scala.inline
-    def apply(termType: PropType[Variable, termType], value: PropType[Variable, value]): TermTypePropType = {
+    inline def apply(termType: PropType[Variable, termType], value: PropType[Variable, value]): TermTypePropType = {
       val __obj = js.Dynamic.literal(termType = termType.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[TermTypePropType]
     }
     
-    @scala.inline
-    implicit class TermTypePropTypeMutableBuilder[Self <: TermTypePropType] (val x: Self) extends AnyVal {
+    extension [Self <: TermTypePropType](x: Self) {
       
-      @scala.inline
-      def setTermType(value: PropType[Variable, termType]): Self = StObject.set(x, "termType", value.asInstanceOf[js.Any])
+      inline def setTermType(value: PropType[Variable, termType]): Self = StObject.set(x, "termType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: PropType[Variable, value]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: PropType[Variable, value]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -161,20 +141,16 @@ object anon {
   }
   object TermTypeValue {
     
-    @scala.inline
-    def apply(termType: PropType[NamedNode[String], termType], value: PropType[NamedNode[String], value]): TermTypeValue = {
+    inline def apply(termType: PropType[NamedNode[String], termType], value: PropType[NamedNode[String], value]): TermTypeValue = {
       val __obj = js.Dynamic.literal(termType = termType.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[TermTypeValue]
     }
     
-    @scala.inline
-    implicit class TermTypeValueMutableBuilder[Self <: TermTypeValue] (val x: Self) extends AnyVal {
+    extension [Self <: TermTypeValue](x: Self) {
       
-      @scala.inline
-      def setTermType(value: PropType[NamedNode[String], termType]): Self = StObject.set(x, "termType", value.asInstanceOf[js.Any])
+      inline def setTermType(value: PropType[NamedNode[String], termType]): Self = StObject.set(x, "termType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: PropType[NamedNode[String], value]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: PropType[NamedNode[String], value]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -186,20 +162,16 @@ object anon {
   }
   object Value {
     
-    @scala.inline
-    def apply(termType: PropType[DefaultGraph, termType], value: PropType[DefaultGraph, value]): Value = {
+    inline def apply(termType: PropType[DefaultGraph, termType], value: PropType[DefaultGraph, value]): Value = {
       val __obj = js.Dynamic.literal(termType = termType.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Value]
     }
     
-    @scala.inline
-    implicit class ValueMutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
+    extension [Self <: Value](x: Self) {
       
-      @scala.inline
-      def setTermType(value: PropType[DefaultGraph, termType]): Self = StObject.set(x, "termType", value.asInstanceOf[js.Any])
+      inline def setTermType(value: PropType[DefaultGraph, termType]): Self = StObject.set(x, "termType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: PropType[DefaultGraph, value]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: PropType[DefaultGraph, value]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

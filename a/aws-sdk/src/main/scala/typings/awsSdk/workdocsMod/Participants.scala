@@ -18,31 +18,23 @@ trait Participants extends StObject {
 }
 object Participants {
   
-  @scala.inline
-  def apply(): Participants = {
+  inline def apply(): Participants = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Participants]
   }
   
-  @scala.inline
-  implicit class ParticipantsMutableBuilder[Self <: Participants] (val x: Self) extends AnyVal {
+  extension [Self <: Participants](x: Self) {
     
-    @scala.inline
-    def setGroups(value: GroupMetadataList): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: GroupMetadataList): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
+    inline def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
     
-    @scala.inline
-    def setGroupsVarargs(value: GroupMetadata*): Self = StObject.set(x, "Groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: GroupMetadata*): Self = StObject.set(x, "Groups", js.Array(value :_*))
     
-    @scala.inline
-    def setUsers(value: UserMetadataList): Self = StObject.set(x, "Users", value.asInstanceOf[js.Any])
+    inline def setUsers(value: UserMetadataList): Self = StObject.set(x, "Users", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsersUndefined: Self = StObject.set(x, "Users", js.undefined)
+    inline def setUsersUndefined: Self = StObject.set(x, "Users", js.undefined)
     
-    @scala.inline
-    def setUsersVarargs(value: UserMetadata*): Self = StObject.set(x, "Users", js.Array(value :_*))
+    inline def setUsersVarargs(value: UserMetadata*): Self = StObject.set(x, "Users", js.Array(value :_*))
   }
 }

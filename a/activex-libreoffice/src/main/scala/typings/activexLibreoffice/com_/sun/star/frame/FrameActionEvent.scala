@@ -22,19 +22,15 @@ trait FrameActionEvent
 }
 object FrameActionEvent {
   
-  @scala.inline
-  def apply(Action: FrameAction, Frame: XFrame, Source: XInterface): FrameActionEvent = {
+  inline def apply(Action: FrameAction, Frame: XFrame, Source: XInterface): FrameActionEvent = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], Frame = Frame.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[FrameActionEvent]
   }
   
-  @scala.inline
-  implicit class FrameActionEventMutableBuilder[Self <: FrameActionEvent] (val x: Self) extends AnyVal {
+  extension [Self <: FrameActionEvent](x: Self) {
     
-    @scala.inline
-    def setAction(value: FrameAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: FrameAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrame(value: XFrame): Self = StObject.set(x, "Frame", value.asInstanceOf[js.Any])
+    inline def setFrame(value: XFrame): Self = StObject.set(x, "Frame", value.asInstanceOf[js.Any])
   }
 }

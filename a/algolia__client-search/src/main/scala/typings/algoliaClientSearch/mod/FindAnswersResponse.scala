@@ -19,8 +19,7 @@ trait FindAnswersResponse[TObject]
 }
 object FindAnswersResponse {
   
-  @scala.inline
-  def apply[TObject](
+  inline def apply[TObject](
     exhaustiveNbHits: Boolean,
     hits: js.Array[Hit[TObject & Answer]],
     hitsPerPage: Double,
@@ -35,13 +34,10 @@ object FindAnswersResponse {
     __obj.asInstanceOf[FindAnswersResponse[TObject]]
   }
   
-  @scala.inline
-  implicit class FindAnswersResponseMutableBuilder[Self <: FindAnswersResponse[?], TObject] (val x: Self & FindAnswersResponse[TObject]) extends AnyVal {
+  extension [Self <: FindAnswersResponse[?], TObject](x: Self & FindAnswersResponse[TObject]) {
     
-    @scala.inline
-    def setHits(value: js.Array[Hit[TObject & Answer]]): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
+    inline def setHits(value: js.Array[Hit[TObject & Answer]]): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHitsVarargs(value: (Hit[TObject & Answer])*): Self = StObject.set(x, "hits", js.Array(value :_*))
+    inline def setHitsVarargs(value: (Hit[TObject & Answer])*): Self = StObject.set(x, "hits", js.Array(value :_*))
   }
 }

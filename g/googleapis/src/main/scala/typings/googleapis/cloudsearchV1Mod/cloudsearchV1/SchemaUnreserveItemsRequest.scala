@@ -24,31 +24,23 @@ trait SchemaUnreserveItemsRequest extends StObject {
 }
 object SchemaUnreserveItemsRequest {
   
-  @scala.inline
-  def apply(): SchemaUnreserveItemsRequest = {
+  inline def apply(): SchemaUnreserveItemsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUnreserveItemsRequest]
   }
   
-  @scala.inline
-  implicit class SchemaUnreserveItemsRequestMutableBuilder[Self <: SchemaUnreserveItemsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUnreserveItemsRequest](x: Self) {
     
-    @scala.inline
-    def setConnectorName(value: String): Self = StObject.set(x, "connectorName", value.asInstanceOf[js.Any])
+    inline def setConnectorName(value: String): Self = StObject.set(x, "connectorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectorNameUndefined: Self = StObject.set(x, "connectorName", js.undefined)
+    inline def setConnectorNameUndefined: Self = StObject.set(x, "connectorName", js.undefined)
     
-    @scala.inline
-    def setDebugOptions(value: SchemaDebugOptions): Self = StObject.set(x, "debugOptions", value.asInstanceOf[js.Any])
+    inline def setDebugOptions(value: SchemaDebugOptions): Self = StObject.set(x, "debugOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugOptionsUndefined: Self = StObject.set(x, "debugOptions", js.undefined)
+    inline def setDebugOptionsUndefined: Self = StObject.set(x, "debugOptions", js.undefined)
     
-    @scala.inline
-    def setQueue(value: String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+    inline def setQueue(value: String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
+    inline def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
   }
 }

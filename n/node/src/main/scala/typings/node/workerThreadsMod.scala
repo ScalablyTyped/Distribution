@@ -263,8 +263,7 @@ object workerThreadsMod {
     *
     * This operation cannot be undone.
     */
-  @scala.inline
-  def markAsUntransferable(`object`: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("markAsUntransferable")(`object`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def markAsUntransferable(`object`: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("markAsUntransferable")(`object`.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Transfer a `MessagePort` to a different `vm` Context. The original `port`
@@ -280,8 +279,7 @@ object workerThreadsMod {
     * `EventEmitter`, and only `port.onmessage()` can be used to receive
     * events using it.
     */
-  @scala.inline
-  def moveMessagePortToContext(port: MessagePort, context: Context): MessagePort = (^.asInstanceOf[js.Dynamic].applyDynamic("moveMessagePortToContext")(port.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[MessagePort]
+  inline def moveMessagePortToContext(port: MessagePort, context: Context): MessagePort = (^.asInstanceOf[js.Dynamic].applyDynamic("moveMessagePortToContext")(port.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[MessagePort]
   
   @JSImport("worker_threads", "parentPort")
   @js.native
@@ -293,8 +291,7 @@ object workerThreadsMod {
     * that contains the message payload, corresponding to the oldest message in the
     * `MessagePort`’s queue.
     */
-  @scala.inline
-  def receiveMessageOnPort(port: MessagePort): js.UndefOr[Message] = ^.asInstanceOf[js.Dynamic].applyDynamic("receiveMessageOnPort")(port.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Message]]
+  inline def receiveMessageOnPort(port: MessagePort): js.UndefOr[Message] = ^.asInstanceOf[js.Dynamic].applyDynamic("receiveMessageOnPort")(port.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Message]]
   
   @JSImport("worker_threads", "resourceLimits")
   @js.native
@@ -333,38 +330,28 @@ object workerThreadsMod {
   }
   object ResourceLimits_ {
     
-    @scala.inline
-    def apply(): ResourceLimits_ = {
+    inline def apply(): ResourceLimits_ = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ResourceLimits_]
     }
     
-    @scala.inline
-    implicit class ResourceLimits_MutableBuilder[Self <: ResourceLimits_] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceLimits_](x: Self) {
       
-      @scala.inline
-      def setCodeRangeSizeMb(value: Double): Self = StObject.set(x, "codeRangeSizeMb", value.asInstanceOf[js.Any])
+      inline def setCodeRangeSizeMb(value: Double): Self = StObject.set(x, "codeRangeSizeMb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeRangeSizeMbUndefined: Self = StObject.set(x, "codeRangeSizeMb", js.undefined)
+      inline def setCodeRangeSizeMbUndefined: Self = StObject.set(x, "codeRangeSizeMb", js.undefined)
       
-      @scala.inline
-      def setMaxOldGenerationSizeMb(value: Double): Self = StObject.set(x, "maxOldGenerationSizeMb", value.asInstanceOf[js.Any])
+      inline def setMaxOldGenerationSizeMb(value: Double): Self = StObject.set(x, "maxOldGenerationSizeMb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxOldGenerationSizeMbUndefined: Self = StObject.set(x, "maxOldGenerationSizeMb", js.undefined)
+      inline def setMaxOldGenerationSizeMbUndefined: Self = StObject.set(x, "maxOldGenerationSizeMb", js.undefined)
       
-      @scala.inline
-      def setMaxYoungGenerationSizeMb(value: Double): Self = StObject.set(x, "maxYoungGenerationSizeMb", value.asInstanceOf[js.Any])
+      inline def setMaxYoungGenerationSizeMb(value: Double): Self = StObject.set(x, "maxYoungGenerationSizeMb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxYoungGenerationSizeMbUndefined: Self = StObject.set(x, "maxYoungGenerationSizeMb", js.undefined)
+      inline def setMaxYoungGenerationSizeMbUndefined: Self = StObject.set(x, "maxYoungGenerationSizeMb", js.undefined)
       
-      @scala.inline
-      def setStackSizeMb(value: Double): Self = StObject.set(x, "stackSizeMb", value.asInstanceOf[js.Any])
+      inline def setStackSizeMb(value: Double): Self = StObject.set(x, "stackSizeMb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackSizeMbUndefined: Self = StObject.set(x, "stackSizeMb", js.undefined)
+      inline def setStackSizeMbUndefined: Self = StObject.set(x, "stackSizeMb", js.undefined)
     }
   }
   
@@ -410,89 +397,62 @@ object workerThreadsMod {
   }
   object WorkerOptions {
     
-    @scala.inline
-    def apply(): WorkerOptions = {
+    inline def apply(): WorkerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WorkerOptions]
     }
     
-    @scala.inline
-    implicit class WorkerOptionsMutableBuilder[Self <: WorkerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WorkerOptions](x: Self) {
       
-      @scala.inline
-      def setArgv(value: js.Array[js.Any]): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
+      inline def setArgv(value: js.Array[js.Any]): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgvUndefined: Self = StObject.set(x, "argv", js.undefined)
+      inline def setArgvUndefined: Self = StObject.set(x, "argv", js.undefined)
       
-      @scala.inline
-      def setArgvVarargs(value: js.Any*): Self = StObject.set(x, "argv", js.Array(value :_*))
+      inline def setArgvVarargs(value: js.Any*): Self = StObject.set(x, "argv", js.Array(value :_*))
       
-      @scala.inline
-      def setEnv(value: Dict[java.lang.String] | js.Symbol): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: Dict[java.lang.String] | js.Symbol): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+      inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
       
-      @scala.inline
-      def setEval(value: Boolean): Self = StObject.set(x, "eval", value.asInstanceOf[js.Any])
+      inline def setEval(value: Boolean): Self = StObject.set(x, "eval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvalUndefined: Self = StObject.set(x, "eval", js.undefined)
+      inline def setEvalUndefined: Self = StObject.set(x, "eval", js.undefined)
       
-      @scala.inline
-      def setExecArgv(value: js.Array[java.lang.String]): Self = StObject.set(x, "execArgv", value.asInstanceOf[js.Any])
+      inline def setExecArgv(value: js.Array[java.lang.String]): Self = StObject.set(x, "execArgv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecArgvUndefined: Self = StObject.set(x, "execArgv", js.undefined)
+      inline def setExecArgvUndefined: Self = StObject.set(x, "execArgv", js.undefined)
       
-      @scala.inline
-      def setExecArgvVarargs(value: java.lang.String*): Self = StObject.set(x, "execArgv", js.Array(value :_*))
+      inline def setExecArgvVarargs(value: java.lang.String*): Self = StObject.set(x, "execArgv", js.Array(value :_*))
       
-      @scala.inline
-      def setResourceLimits(value: ResourceLimits_): Self = StObject.set(x, "resourceLimits", value.asInstanceOf[js.Any])
+      inline def setResourceLimits(value: ResourceLimits_): Self = StObject.set(x, "resourceLimits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceLimitsUndefined: Self = StObject.set(x, "resourceLimits", js.undefined)
+      inline def setResourceLimitsUndefined: Self = StObject.set(x, "resourceLimits", js.undefined)
       
-      @scala.inline
-      def setStderr(value: Boolean): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
+      inline def setStderr(value: Boolean): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
+      inline def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
       
-      @scala.inline
-      def setStdin(value: Boolean): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
+      inline def setStdin(value: Boolean): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdinUndefined: Self = StObject.set(x, "stdin", js.undefined)
+      inline def setStdinUndefined: Self = StObject.set(x, "stdin", js.undefined)
       
-      @scala.inline
-      def setStdout(value: Boolean): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+      inline def setStdout(value: Boolean): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
+      inline def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
       
-      @scala.inline
-      def setTrackUnmanagedFds(value: Boolean): Self = StObject.set(x, "trackUnmanagedFds", value.asInstanceOf[js.Any])
+      inline def setTrackUnmanagedFds(value: Boolean): Self = StObject.set(x, "trackUnmanagedFds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackUnmanagedFdsUndefined: Self = StObject.set(x, "trackUnmanagedFds", js.undefined)
+      inline def setTrackUnmanagedFdsUndefined: Self = StObject.set(x, "trackUnmanagedFds", js.undefined)
       
-      @scala.inline
-      def setTransferList(value: js.Array[TransferListItem]): Self = StObject.set(x, "transferList", value.asInstanceOf[js.Any])
+      inline def setTransferList(value: js.Array[TransferListItem]): Self = StObject.set(x, "transferList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransferListUndefined: Self = StObject.set(x, "transferList", js.undefined)
+      inline def setTransferListUndefined: Self = StObject.set(x, "transferList", js.undefined)
       
-      @scala.inline
-      def setTransferListVarargs(value: TransferListItem*): Self = StObject.set(x, "transferList", js.Array(value :_*))
+      inline def setTransferListVarargs(value: TransferListItem*): Self = StObject.set(x, "transferList", js.Array(value :_*))
       
-      @scala.inline
-      def setWorkerData(value: js.Any): Self = StObject.set(x, "workerData", value.asInstanceOf[js.Any])
+      inline def setWorkerData(value: js.Any): Self = StObject.set(x, "workerData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkerDataUndefined: Self = StObject.set(x, "workerData", js.undefined)
+      inline def setWorkerDataUndefined: Self = StObject.set(x, "workerData", js.undefined)
     }
   }
   

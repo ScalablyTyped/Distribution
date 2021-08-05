@@ -12,24 +12,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Stringifier = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Stringifier]
-  @scala.inline
-  def apply(callback: Callback): Stringifier = ^.asInstanceOf[js.Dynamic].apply(callback.asInstanceOf[js.Any]).asInstanceOf[Stringifier]
-  @scala.inline
-  def apply(input: Input): Stringifier = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Stringifier]
-  @scala.inline
-  def apply(input: Input, callback: Callback): Stringifier = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Stringifier]
-  @scala.inline
-  def apply(input: Input, options: Unit, callback: Callback): Stringifier = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Stringifier]
-  @scala.inline
-  def apply(input: Input, options: Options): Stringifier = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Stringifier]
-  @scala.inline
-  def apply(input: Input, options: Options, callback: Callback): Stringifier = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Stringifier]
-  @scala.inline
-  def apply(options: Options): Stringifier = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Stringifier]
-  @scala.inline
-  def apply(options: Options, callback: Callback): Stringifier = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Stringifier]
+  inline def apply(): Stringifier = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Stringifier]
+  inline def apply(callback: Callback): Stringifier = ^.asInstanceOf[js.Dynamic].apply(callback.asInstanceOf[js.Any]).asInstanceOf[Stringifier]
+  inline def apply(input: Input): Stringifier = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Stringifier]
+  inline def apply(input: Input, callback: Callback): Stringifier = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Stringifier]
+  inline def apply(input: Input, options: Unit, callback: Callback): Stringifier = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Stringifier]
+  inline def apply(input: Input, options: Options): Stringifier = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Stringifier]
+  inline def apply(input: Input, options: Options, callback: Callback): Stringifier = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Stringifier]
+  inline def apply(options: Options): Stringifier = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Stringifier]
+  inline def apply(options: Options, callback: Callback): Stringifier = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Stringifier]
   
   @JSImport("csv-stringify", JSImport.Namespace)
   @js.native
@@ -59,29 +50,22 @@ object mod {
   }
   object CastingContext {
     
-    @scala.inline
-    def apply(header: Boolean, index: Double, records: Double): CastingContext = {
+    inline def apply(header: Boolean, index: Double, records: Double): CastingContext = {
       val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], records = records.asInstanceOf[js.Any])
       __obj.asInstanceOf[CastingContext]
     }
     
-    @scala.inline
-    implicit class CastingContextMutableBuilder[Self <: CastingContext] (val x: Self) extends AnyVal {
+    extension [Self <: CastingContext](x: Self) {
       
-      @scala.inline
-      def setColumn(value: Double | String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Double | String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+      inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
       
-      @scala.inline
-      def setHeader(value: Boolean): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: Boolean): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecords(value: Double): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
+      inline def setRecords(value: Double): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
     }
   }
   
@@ -93,23 +77,18 @@ object mod {
   }
   object ColumnOption {
     
-    @scala.inline
-    def apply(key: String): ColumnOption = {
+    inline def apply(key: String): ColumnOption = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[ColumnOption]
     }
     
-    @scala.inline
-    implicit class ColumnOptionMutableBuilder[Self <: ColumnOption] (val x: Self) extends AnyVal {
+    extension [Self <: ColumnOption](x: Self) {
       
-      @scala.inline
-      def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }
   }
   
@@ -191,95 +170,66 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBom(value: Boolean): Self = StObject.set(x, "bom", value.asInstanceOf[js.Any])
+      inline def setBom(value: Boolean): Self = StObject.set(x, "bom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBomUndefined: Self = StObject.set(x, "bom", js.undefined)
+      inline def setBomUndefined: Self = StObject.set(x, "bom", js.undefined)
       
-      @scala.inline
-      def setCast(value: Date): Self = StObject.set(x, "cast", value.asInstanceOf[js.Any])
+      inline def setCast(value: Date): Self = StObject.set(x, "cast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCastUndefined: Self = StObject.set(x, "cast", js.undefined)
+      inline def setCastUndefined: Self = StObject.set(x, "cast", js.undefined)
       
-      @scala.inline
-      def setColumns(value: (js.Array[ColumnOption | String]) | PlainObject[String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: (js.Array[ColumnOption | String]) | PlainObject[String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+      inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      @scala.inline
-      def setColumnsVarargs(value: (ColumnOption | String)*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: (ColumnOption | String)*): Self = StObject.set(x, "columns", js.Array(value :_*))
       
-      @scala.inline
-      def setDelimiter(value: String | Buffer): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+      inline def setDelimiter(value: String | Buffer): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+      inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
       
-      @scala.inline
-      def setEof(value: Boolean): Self = StObject.set(x, "eof", value.asInstanceOf[js.Any])
+      inline def setEof(value: Boolean): Self = StObject.set(x, "eof", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEofUndefined: Self = StObject.set(x, "eof", js.undefined)
+      inline def setEofUndefined: Self = StObject.set(x, "eof", js.undefined)
       
-      @scala.inline
-      def setEscape(value: String | Buffer): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
+      inline def setEscape(value: String | Buffer): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
+      inline def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
       
-      @scala.inline
-      def setHeader(value: Boolean): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: Boolean): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setQuote(value: String | Buffer | Boolean): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
+      inline def setQuote(value: String | Buffer | Boolean): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuoteUndefined: Self = StObject.set(x, "quote", js.undefined)
+      inline def setQuoteUndefined: Self = StObject.set(x, "quote", js.undefined)
       
-      @scala.inline
-      def setQuoted(value: Boolean): Self = StObject.set(x, "quoted", value.asInstanceOf[js.Any])
+      inline def setQuoted(value: Boolean): Self = StObject.set(x, "quoted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuotedUndefined: Self = StObject.set(x, "quoted", js.undefined)
+      inline def setQuotedUndefined: Self = StObject.set(x, "quoted", js.undefined)
       
-      @scala.inline
-      def setQuoted_empty(value: Boolean): Self = StObject.set(x, "quoted_empty", value.asInstanceOf[js.Any])
+      inline def setQuoted_empty(value: Boolean): Self = StObject.set(x, "quoted_empty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuoted_emptyUndefined: Self = StObject.set(x, "quoted_empty", js.undefined)
+      inline def setQuoted_emptyUndefined: Self = StObject.set(x, "quoted_empty", js.undefined)
       
-      @scala.inline
-      def setQuoted_match(value: String | RegExp): Self = StObject.set(x, "quoted_match", value.asInstanceOf[js.Any])
+      inline def setQuoted_match(value: String | RegExp): Self = StObject.set(x, "quoted_match", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuoted_matchUndefined: Self = StObject.set(x, "quoted_match", js.undefined)
+      inline def setQuoted_matchUndefined: Self = StObject.set(x, "quoted_match", js.undefined)
       
-      @scala.inline
-      def setQuoted_string(value: Boolean): Self = StObject.set(x, "quoted_string", value.asInstanceOf[js.Any])
+      inline def setQuoted_string(value: Boolean): Self = StObject.set(x, "quoted_string", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuoted_stringUndefined: Self = StObject.set(x, "quoted_string", js.undefined)
+      inline def setQuoted_stringUndefined: Self = StObject.set(x, "quoted_string", js.undefined)
       
-      @scala.inline
-      def setRecord_delimiter(value: RecordDelimiter): Self = StObject.set(x, "record_delimiter", value.asInstanceOf[js.Any])
+      inline def setRecord_delimiter(value: RecordDelimiter): Self = StObject.set(x, "record_delimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecord_delimiterUndefined: Self = StObject.set(x, "record_delimiter", js.undefined)
+      inline def setRecord_delimiterUndefined: Self = StObject.set(x, "record_delimiter", js.undefined)
     }
   }
   

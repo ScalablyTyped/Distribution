@@ -39,43 +39,31 @@ trait SchemaTypedValue extends StObject {
 }
 object SchemaTypedValue {
   
-  @scala.inline
-  def apply(): SchemaTypedValue = {
+  inline def apply(): SchemaTypedValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTypedValue]
   }
   
-  @scala.inline
-  implicit class SchemaTypedValueMutableBuilder[Self <: SchemaTypedValue] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTypedValue](x: Self) {
     
-    @scala.inline
-    def setBoolValue(value: Boolean): Self = StObject.set(x, "boolValue", value.asInstanceOf[js.Any])
+    inline def setBoolValue(value: Boolean): Self = StObject.set(x, "boolValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoolValueUndefined: Self = StObject.set(x, "boolValue", js.undefined)
+    inline def setBoolValueUndefined: Self = StObject.set(x, "boolValue", js.undefined)
     
-    @scala.inline
-    def setDistributionValue(value: SchemaDistribution): Self = StObject.set(x, "distributionValue", value.asInstanceOf[js.Any])
+    inline def setDistributionValue(value: SchemaDistribution): Self = StObject.set(x, "distributionValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributionValueUndefined: Self = StObject.set(x, "distributionValue", js.undefined)
+    inline def setDistributionValueUndefined: Self = StObject.set(x, "distributionValue", js.undefined)
     
-    @scala.inline
-    def setDoubleValue(value: Double): Self = StObject.set(x, "doubleValue", value.asInstanceOf[js.Any])
+    inline def setDoubleValue(value: Double): Self = StObject.set(x, "doubleValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoubleValueUndefined: Self = StObject.set(x, "doubleValue", js.undefined)
+    inline def setDoubleValueUndefined: Self = StObject.set(x, "doubleValue", js.undefined)
     
-    @scala.inline
-    def setInt64Value(value: String): Self = StObject.set(x, "int64Value", value.asInstanceOf[js.Any])
+    inline def setInt64Value(value: String): Self = StObject.set(x, "int64Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInt64ValueUndefined: Self = StObject.set(x, "int64Value", js.undefined)
+    inline def setInt64ValueUndefined: Self = StObject.set(x, "int64Value", js.undefined)
     
-    @scala.inline
-    def setStringValue(value: String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
+    inline def setStringValue(value: String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
+    inline def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
   }
 }

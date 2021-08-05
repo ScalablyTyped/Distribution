@@ -13,16 +13,13 @@ trait InitiateDeviceClaimRequest extends StObject {
 }
 object InitiateDeviceClaimRequest {
   
-  @scala.inline
-  def apply(DeviceId: string): InitiateDeviceClaimRequest = {
+  inline def apply(DeviceId: string): InitiateDeviceClaimRequest = {
     val __obj = js.Dynamic.literal(DeviceId = DeviceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitiateDeviceClaimRequest]
   }
   
-  @scala.inline
-  implicit class InitiateDeviceClaimRequestMutableBuilder[Self <: InitiateDeviceClaimRequest] (val x: Self) extends AnyVal {
+  extension [Self <: InitiateDeviceClaimRequest](x: Self) {
     
-    @scala.inline
-    def setDeviceId(value: string): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: string): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
   }
 }

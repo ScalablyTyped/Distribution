@@ -66,8 +66,7 @@ object commonMod {
     }
     object InternationalizationOptions {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         cancel: String,
         clear: String,
         done: String,
@@ -83,53 +82,37 @@ object commonMod {
         __obj.asInstanceOf[InternationalizationOptions]
       }
       
-      @scala.inline
-      implicit class InternationalizationOptionsMutableBuilder[Self <: InternationalizationOptions] (val x: Self) extends AnyVal {
+      extension [Self <: InternationalizationOptions](x: Self) {
         
-        @scala.inline
-        def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+        inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClear(value: String): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
+        inline def setClear(value: String): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDone(value: String): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+        inline def setDone(value: String): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMonths(value: js.Array[String]): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
+        inline def setMonths(value: js.Array[String]): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMonthsShort(value: js.Array[String]): Self = StObject.set(x, "monthsShort", value.asInstanceOf[js.Any])
+        inline def setMonthsShort(value: js.Array[String]): Self = StObject.set(x, "monthsShort", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMonthsShortVarargs(value: String*): Self = StObject.set(x, "monthsShort", js.Array(value :_*))
+        inline def setMonthsShortVarargs(value: String*): Self = StObject.set(x, "monthsShort", js.Array(value :_*))
         
-        @scala.inline
-        def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value :_*))
+        inline def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value :_*))
         
-        @scala.inline
-        def setNextMonth(value: String): Self = StObject.set(x, "nextMonth", value.asInstanceOf[js.Any])
+        inline def setNextMonth(value: String): Self = StObject.set(x, "nextMonth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPreviousMonth(value: String): Self = StObject.set(x, "previousMonth", value.asInstanceOf[js.Any])
+        inline def setPreviousMonth(value: String): Self = StObject.set(x, "previousMonth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWeekdays(value: js.Array[String]): Self = StObject.set(x, "weekdays", value.asInstanceOf[js.Any])
+        inline def setWeekdays(value: js.Array[String]): Self = StObject.set(x, "weekdays", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWeekdaysAbbrev(value: js.Array[String]): Self = StObject.set(x, "weekdaysAbbrev", value.asInstanceOf[js.Any])
+        inline def setWeekdaysAbbrev(value: js.Array[String]): Self = StObject.set(x, "weekdaysAbbrev", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWeekdaysAbbrevVarargs(value: String*): Self = StObject.set(x, "weekdaysAbbrev", js.Array(value :_*))
+        inline def setWeekdaysAbbrevVarargs(value: String*): Self = StObject.set(x, "weekdaysAbbrev", js.Array(value :_*))
         
-        @scala.inline
-        def setWeekdaysShort(value: js.Array[String]): Self = StObject.set(x, "weekdaysShort", value.asInstanceOf[js.Any])
+        inline def setWeekdaysShort(value: js.Array[String]): Self = StObject.set(x, "weekdaysShort", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWeekdaysShortVarargs(value: String*): Self = StObject.set(x, "weekdaysShort", js.Array(value :_*))
+        inline def setWeekdaysShortVarargs(value: String*): Self = StObject.set(x, "weekdaysShort", js.Array(value :_*))
         
-        @scala.inline
-        def setWeekdaysVarargs(value: String*): Self = StObject.set(x, "weekdays", js.Array(value :_*))
+        inline def setWeekdaysVarargs(value: String*): Self = StObject.set(x, "weekdays", js.Array(value :_*))
       }
     }
     
@@ -143,23 +126,18 @@ object commonMod {
     }
     object Openable {
       
-      @scala.inline
-      def apply(close: () => Unit, isOpen: Boolean, open: () => Unit): Openable = {
+      inline def apply(close: () => Unit, isOpen: Boolean, open: () => Unit): Openable = {
         val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), isOpen = isOpen.asInstanceOf[js.Any], open = js.Any.fromFunction0(open))
         __obj.asInstanceOf[Openable]
       }
       
-      @scala.inline
-      implicit class OpenableMutableBuilder[Self <: Openable] (val x: Self) extends AnyVal {
+      extension [Self <: Openable](x: Self) {
         
-        @scala.inline
-        def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+        inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+        inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
+        inline def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
       }
     }
   }

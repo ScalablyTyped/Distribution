@@ -18,21 +18,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TaskState extends StObject
 object TaskState {
   
-  @scala.inline
-  def canceling: typings.zoneJs.zoneJsStrings.canceling = "canceling".asInstanceOf[typings.zoneJs.zoneJsStrings.canceling]
+  inline def canceling: typings.zoneJs.zoneJsStrings.canceling = "canceling".asInstanceOf[typings.zoneJs.zoneJsStrings.canceling]
   
-  @scala.inline
-  def notScheduled: typings.zoneJs.zoneJsStrings.notScheduled = "notScheduled".asInstanceOf[typings.zoneJs.zoneJsStrings.notScheduled]
+  inline def notScheduled: typings.zoneJs.zoneJsStrings.notScheduled = "notScheduled".asInstanceOf[typings.zoneJs.zoneJsStrings.notScheduled]
   
-  @scala.inline
-  def running: typings.zoneJs.zoneJsStrings.running = "running".asInstanceOf[typings.zoneJs.zoneJsStrings.running]
+  inline def running: typings.zoneJs.zoneJsStrings.running = "running".asInstanceOf[typings.zoneJs.zoneJsStrings.running]
   
-  @scala.inline
-  def scheduled: typings.zoneJs.zoneJsStrings.scheduled = "scheduled".asInstanceOf[typings.zoneJs.zoneJsStrings.scheduled]
+  inline def scheduled: typings.zoneJs.zoneJsStrings.scheduled = "scheduled".asInstanceOf[typings.zoneJs.zoneJsStrings.scheduled]
   
-  @scala.inline
-  def scheduling: typings.zoneJs.zoneJsStrings.scheduling = "scheduling".asInstanceOf[typings.zoneJs.zoneJsStrings.scheduling]
+  inline def scheduling: typings.zoneJs.zoneJsStrings.scheduling = "scheduling".asInstanceOf[typings.zoneJs.zoneJsStrings.scheduling]
   
-  @scala.inline
-  def unknown: typings.zoneJs.zoneJsStrings.unknown = "unknown".asInstanceOf[typings.zoneJs.zoneJsStrings.unknown]
+  inline def unknown: typings.zoneJs.zoneJsStrings.unknown = "unknown".asInstanceOf[typings.zoneJs.zoneJsStrings.unknown]
 }

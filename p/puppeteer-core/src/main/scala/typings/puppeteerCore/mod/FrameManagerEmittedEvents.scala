@@ -13,26 +13,22 @@ object FrameManagerEmittedEvents {
   @JSImport("puppeteer-core/lib/cjs/puppeteer/api-docs-entry", "FrameManagerEmittedEvents.ExecutionContextCreated")
   @js.native
   def ExecutionContextCreated: js.Symbol = js.native
-  @scala.inline
-  def ExecutionContextCreated_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExecutionContextCreated")(x.asInstanceOf[js.Any])
+  inline def ExecutionContextCreated_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExecutionContextCreated")(x.asInstanceOf[js.Any])
   
   @JSImport("puppeteer-core/lib/cjs/puppeteer/api-docs-entry", "FrameManagerEmittedEvents.ExecutionContextDestroyed")
   @js.native
   def ExecutionContextDestroyed: js.Symbol = js.native
-  @scala.inline
-  def ExecutionContextDestroyed_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExecutionContextDestroyed")(x.asInstanceOf[js.Any])
+  inline def ExecutionContextDestroyed_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExecutionContextDestroyed")(x.asInstanceOf[js.Any])
   
   @JSImport("puppeteer-core/lib/cjs/puppeteer/api-docs-entry", "FrameManagerEmittedEvents.FrameAttached")
   @js.native
   def FrameAttached: js.Symbol = js.native
-  @scala.inline
-  def FrameAttached_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FrameAttached")(x.asInstanceOf[js.Any])
+  inline def FrameAttached_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FrameAttached")(x.asInstanceOf[js.Any])
   
   @JSImport("puppeteer-core/lib/cjs/puppeteer/api-docs-entry", "FrameManagerEmittedEvents.FrameDetached")
   @js.native
   def FrameDetached: js.Symbol = js.native
-  @scala.inline
-  def FrameDetached_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FrameDetached")(x.asInstanceOf[js.Any])
+  inline def FrameDetached_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FrameDetached")(x.asInstanceOf[js.Any])
   
   @JSImport("puppeteer-core/lib/cjs/puppeteer/api-docs-entry", "FrameManagerEmittedEvents.FrameNavigated")
   @js.native
@@ -41,15 +37,12 @@ object FrameManagerEmittedEvents {
   @JSImport("puppeteer-core/lib/cjs/puppeteer/api-docs-entry", "FrameManagerEmittedEvents.FrameNavigatedWithinDocument")
   @js.native
   def FrameNavigatedWithinDocument: js.Symbol = js.native
-  @scala.inline
-  def FrameNavigatedWithinDocument_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FrameNavigatedWithinDocument")(x.asInstanceOf[js.Any])
+  inline def FrameNavigatedWithinDocument_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FrameNavigatedWithinDocument")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def FrameNavigated_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FrameNavigated")(x.asInstanceOf[js.Any])
+  inline def FrameNavigated_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FrameNavigated")(x.asInstanceOf[js.Any])
   
   @JSImport("puppeteer-core/lib/cjs/puppeteer/api-docs-entry", "FrameManagerEmittedEvents.LifecycleEvent")
   @js.native
   def LifecycleEvent: js.Symbol = js.native
-  @scala.inline
-  def LifecycleEvent_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LifecycleEvent")(x.asInstanceOf[js.Any])
+  inline def LifecycleEvent_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LifecycleEvent")(x.asInstanceOf[js.Any])
 }

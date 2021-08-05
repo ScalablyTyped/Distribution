@@ -14,15 +14,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RejectReason extends StObject
 object RejectReason {
   
-  @scala.inline
-  def busy: typings.microsoftGraph.microsoftGraphStrings.busy = "busy".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.busy]
+  inline def busy: typings.microsoftGraph.microsoftGraphStrings.busy = "busy".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.busy]
   
-  @scala.inline
-  def forbidden: typings.microsoftGraph.microsoftGraphStrings.forbidden = "forbidden".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.forbidden]
+  inline def forbidden: typings.microsoftGraph.microsoftGraphStrings.forbidden = "forbidden".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.forbidden]
   
-  @scala.inline
-  def none: none_ = "none".asInstanceOf[none_]
+  inline def none: none_ = "none".asInstanceOf[none_]
   
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }

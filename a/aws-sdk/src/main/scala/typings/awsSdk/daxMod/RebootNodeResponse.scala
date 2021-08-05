@@ -13,19 +13,15 @@ trait RebootNodeResponse extends StObject {
 }
 object RebootNodeResponse {
   
-  @scala.inline
-  def apply(): RebootNodeResponse = {
+  inline def apply(): RebootNodeResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RebootNodeResponse]
   }
   
-  @scala.inline
-  implicit class RebootNodeResponseMutableBuilder[Self <: RebootNodeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RebootNodeResponse](x: Self) {
     
-    @scala.inline
-    def setCluster(value: Cluster): Self = StObject.set(x, "Cluster", value.asInstanceOf[js.Any])
+    inline def setCluster(value: Cluster): Self = StObject.set(x, "Cluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterUndefined: Self = StObject.set(x, "Cluster", js.undefined)
+    inline def setClusterUndefined: Self = StObject.set(x, "Cluster", js.undefined)
   }
 }

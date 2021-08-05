@@ -32,25 +32,19 @@ trait X64WordArray extends StObject {
 }
 object X64WordArray {
   
-  @scala.inline
-  def apply(sigBytes: Double, toX32: () => WordArray, words: js.Array[Double]): X64WordArray = {
+  inline def apply(sigBytes: Double, toX32: () => WordArray, words: js.Array[Double]): X64WordArray = {
     val __obj = js.Dynamic.literal(sigBytes = sigBytes.asInstanceOf[js.Any], toX32 = js.Any.fromFunction0(toX32), words = words.asInstanceOf[js.Any])
     __obj.asInstanceOf[X64WordArray]
   }
   
-  @scala.inline
-  implicit class X64WordArrayMutableBuilder[Self <: X64WordArray] (val x: Self) extends AnyVal {
+  extension [Self <: X64WordArray](x: Self) {
     
-    @scala.inline
-    def setSigBytes(value: Double): Self = StObject.set(x, "sigBytes", value.asInstanceOf[js.Any])
+    inline def setSigBytes(value: Double): Self = StObject.set(x, "sigBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToX32(value: () => WordArray): Self = StObject.set(x, "toX32", js.Any.fromFunction0(value))
+    inline def setToX32(value: () => WordArray): Self = StObject.set(x, "toX32", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWords(value: js.Array[Double]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
+    inline def setWords(value: js.Array[Double]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordsVarargs(value: Double*): Self = StObject.set(x, "words", js.Array(value :_*))
+    inline def setWordsVarargs(value: Double*): Self = StObject.set(x, "words", js.Array(value :_*))
   }
 }

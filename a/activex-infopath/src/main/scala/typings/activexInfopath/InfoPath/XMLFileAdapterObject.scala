@@ -8,7 +8,7 @@ trait XMLFileAdapterObject extends StObject {
   
   var FileURL: String
   
-  @JSName("InfoPath.XMLFileAdapterObject_typekey")
+  /* private */ @JSName("InfoPath.XMLFileAdapterObject_typekey")
   var InfoPathDotXMLFileAdapterObject_typekey: XMLFileAdapterObject
   
   val Name: String
@@ -23,8 +23,7 @@ trait XMLFileAdapterObject extends StObject {
 }
 object XMLFileAdapterObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FileURL: String,
     InfoPathDotXMLFileAdapterObject_typekey: XMLFileAdapterObject,
     Name: String,
@@ -38,28 +37,20 @@ object XMLFileAdapterObject {
     __obj.asInstanceOf[XMLFileAdapterObject]
   }
   
-  @scala.inline
-  implicit class XMLFileAdapterObjectMutableBuilder[Self <: XMLFileAdapterObject] (val x: Self) extends AnyVal {
+  extension [Self <: XMLFileAdapterObject](x: Self) {
     
-    @scala.inline
-    def setFileURL(value: String): Self = StObject.set(x, "FileURL", value.asInstanceOf[js.Any])
+    inline def setFileURL(value: String): Self = StObject.set(x, "FileURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoPathDotXMLFileAdapterObject_typekey(value: XMLFileAdapterObject): Self = StObject.set(x, "InfoPath.XMLFileAdapterObject_typekey", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotXMLFileAdapterObject_typekey(value: XMLFileAdapterObject): Self = StObject.set(x, "InfoPath.XMLFileAdapterObject_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: () => Unit): Self = StObject.set(x, "Query", js.Any.fromFunction0(value))
+    inline def setQuery(value: () => Unit): Self = StObject.set(x, "Query", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setQueryAllowed(value: Boolean): Self = StObject.set(x, "QueryAllowed", value.asInstanceOf[js.Any])
+    inline def setQueryAllowed(value: Boolean): Self = StObject.set(x, "QueryAllowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmit(value: () => Unit): Self = StObject.set(x, "Submit", js.Any.fromFunction0(value))
+    inline def setSubmit(value: () => Unit): Self = StObject.set(x, "Submit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSubmitAllowed(value: Boolean): Self = StObject.set(x, "SubmitAllowed", value.asInstanceOf[js.Any])
+    inline def setSubmitAllowed(value: Boolean): Self = StObject.set(x, "SubmitAllowed", value.asInstanceOf[js.Any])
   }
 }

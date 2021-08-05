@@ -23,28 +23,21 @@ trait HealthCheckConfig extends StObject {
 }
 object HealthCheckConfig {
   
-  @scala.inline
-  def apply(Type: HealthCheckType): HealthCheckConfig = {
+  inline def apply(Type: HealthCheckType): HealthCheckConfig = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[HealthCheckConfig]
   }
   
-  @scala.inline
-  implicit class HealthCheckConfigMutableBuilder[Self <: HealthCheckConfig] (val x: Self) extends AnyVal {
+  extension [Self <: HealthCheckConfig](x: Self) {
     
-    @scala.inline
-    def setFailureThreshold(value: FailureThreshold): Self = StObject.set(x, "FailureThreshold", value.asInstanceOf[js.Any])
+    inline def setFailureThreshold(value: FailureThreshold): Self = StObject.set(x, "FailureThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureThresholdUndefined: Self = StObject.set(x, "FailureThreshold", js.undefined)
+    inline def setFailureThresholdUndefined: Self = StObject.set(x, "FailureThreshold", js.undefined)
     
-    @scala.inline
-    def setResourcePath(value: ResourcePath): Self = StObject.set(x, "ResourcePath", value.asInstanceOf[js.Any])
+    inline def setResourcePath(value: ResourcePath): Self = StObject.set(x, "ResourcePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcePathUndefined: Self = StObject.set(x, "ResourcePath", js.undefined)
+    inline def setResourcePathUndefined: Self = StObject.set(x, "ResourcePath", js.undefined)
     
-    @scala.inline
-    def setType(value: HealthCheckType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: HealthCheckType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

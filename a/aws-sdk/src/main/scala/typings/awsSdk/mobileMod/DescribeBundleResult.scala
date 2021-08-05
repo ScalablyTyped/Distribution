@@ -13,19 +13,15 @@ trait DescribeBundleResult extends StObject {
 }
 object DescribeBundleResult {
   
-  @scala.inline
-  def apply(): DescribeBundleResult = {
+  inline def apply(): DescribeBundleResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeBundleResult]
   }
   
-  @scala.inline
-  implicit class DescribeBundleResultMutableBuilder[Self <: DescribeBundleResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeBundleResult](x: Self) {
     
-    @scala.inline
-    def setDetails(value: BundleDetails): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: BundleDetails): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
   }
 }

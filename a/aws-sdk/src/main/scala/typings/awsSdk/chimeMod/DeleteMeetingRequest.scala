@@ -13,16 +13,13 @@ trait DeleteMeetingRequest extends StObject {
 }
 object DeleteMeetingRequest {
   
-  @scala.inline
-  def apply(MeetingId: GuidString): DeleteMeetingRequest = {
+  inline def apply(MeetingId: GuidString): DeleteMeetingRequest = {
     val __obj = js.Dynamic.literal(MeetingId = MeetingId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteMeetingRequest]
   }
   
-  @scala.inline
-  implicit class DeleteMeetingRequestMutableBuilder[Self <: DeleteMeetingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteMeetingRequest](x: Self) {
     
-    @scala.inline
-    def setMeetingId(value: GuidString): Self = StObject.set(x, "MeetingId", value.asInstanceOf[js.Any])
+    inline def setMeetingId(value: GuidString): Self = StObject.set(x, "MeetingId", value.asInstanceOf[js.Any])
   }
 }

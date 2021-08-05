@@ -38,43 +38,31 @@ trait GetMetricDataInput extends StObject {
 }
 object GetMetricDataInput {
   
-  @scala.inline
-  def apply(EndTime: Timestamp, MetricDataQueries: MetricDataQueries, StartTime: Timestamp): GetMetricDataInput = {
+  inline def apply(EndTime: Timestamp, MetricDataQueries: MetricDataQueries, StartTime: Timestamp): GetMetricDataInput = {
     val __obj = js.Dynamic.literal(EndTime = EndTime.asInstanceOf[js.Any], MetricDataQueries = MetricDataQueries.asInstanceOf[js.Any], StartTime = StartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMetricDataInput]
   }
   
-  @scala.inline
-  implicit class GetMetricDataInputMutableBuilder[Self <: GetMetricDataInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetMetricDataInput](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDatapoints(value: GetMetricDataMaxDatapoints): Self = StObject.set(x, "MaxDatapoints", value.asInstanceOf[js.Any])
+    inline def setMaxDatapoints(value: GetMetricDataMaxDatapoints): Self = StObject.set(x, "MaxDatapoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDatapointsUndefined: Self = StObject.set(x, "MaxDatapoints", js.undefined)
+    inline def setMaxDatapointsUndefined: Self = StObject.set(x, "MaxDatapoints", js.undefined)
     
-    @scala.inline
-    def setMetricDataQueries(value: MetricDataQueries): Self = StObject.set(x, "MetricDataQueries", value.asInstanceOf[js.Any])
+    inline def setMetricDataQueries(value: MetricDataQueries): Self = StObject.set(x, "MetricDataQueries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricDataQueriesVarargs(value: MetricDataQuery*): Self = StObject.set(x, "MetricDataQueries", js.Array(value :_*))
+    inline def setMetricDataQueriesVarargs(value: MetricDataQuery*): Self = StObject.set(x, "MetricDataQueries", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setScanBy(value: ScanBy): Self = StObject.set(x, "ScanBy", value.asInstanceOf[js.Any])
+    inline def setScanBy(value: ScanBy): Self = StObject.set(x, "ScanBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScanByUndefined: Self = StObject.set(x, "ScanBy", js.undefined)
+    inline def setScanByUndefined: Self = StObject.set(x, "ScanBy", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
   }
 }

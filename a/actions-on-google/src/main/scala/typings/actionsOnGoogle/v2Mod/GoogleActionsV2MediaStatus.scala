@@ -13,19 +13,15 @@ trait GoogleActionsV2MediaStatus extends StObject {
 }
 object GoogleActionsV2MediaStatus {
   
-  @scala.inline
-  def apply(): GoogleActionsV2MediaStatus = {
+  inline def apply(): GoogleActionsV2MediaStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2MediaStatus]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2MediaStatusMutableBuilder[Self <: GoogleActionsV2MediaStatus] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2MediaStatus](x: Self) {
     
-    @scala.inline
-    def setStatus(value: GoogleActionsV2MediaStatusStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: GoogleActionsV2MediaStatusStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

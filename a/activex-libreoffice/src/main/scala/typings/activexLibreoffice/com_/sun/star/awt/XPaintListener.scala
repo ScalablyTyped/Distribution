@@ -17,8 +17,7 @@ trait XPaintListener
 }
 object XPaintListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     queryInterface: `type` => js.Any,
@@ -29,10 +28,8 @@ object XPaintListener {
     __obj.asInstanceOf[XPaintListener]
   }
   
-  @scala.inline
-  implicit class XPaintListenerMutableBuilder[Self <: XPaintListener] (val x: Self) extends AnyVal {
+  extension [Self <: XPaintListener](x: Self) {
     
-    @scala.inline
-    def setWindowPaint(value: PaintEvent => Unit): Self = StObject.set(x, "windowPaint", js.Any.fromFunction1(value))
+    inline def setWindowPaint(value: PaintEvent => Unit): Self = StObject.set(x, "windowPaint", js.Any.fromFunction1(value))
   }
 }

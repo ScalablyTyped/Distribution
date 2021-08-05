@@ -12,19 +12,15 @@ trait DocumentLookupFailure extends StObject {
 }
 object DocumentLookupFailure {
   
-  @scala.inline
-  def apply(error: String, key: String): DocumentLookupFailure = {
+  inline def apply(error: String, key: String): DocumentLookupFailure = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentLookupFailure]
   }
   
-  @scala.inline
-  implicit class DocumentLookupFailureMutableBuilder[Self <: DocumentLookupFailure] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentLookupFailure](x: Self) {
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

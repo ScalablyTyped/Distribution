@@ -69,21 +69,16 @@ object policyAttachmentMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): PolicyAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[PolicyAttachment]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): PolicyAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PolicyAttachment]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: PolicyAttachmentState): PolicyAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PolicyAttachment]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: PolicyAttachmentState, opts: CustomResourceOptions): PolicyAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PolicyAttachment]
+    inline def get(name: String, id: Input[ID]): PolicyAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[PolicyAttachment]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): PolicyAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PolicyAttachment]
+    inline def get(name: String, id: Input[ID], state: PolicyAttachmentState): PolicyAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PolicyAttachment]
+    inline def get(name: String, id: Input[ID], state: PolicyAttachmentState, opts: CustomResourceOptions): PolicyAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PolicyAttachment]
     
     /**
       * Returns true if the given object is an instance of PolicyAttachment.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/policyAttachment.PolicyAttachment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iam/policyAttachment.PolicyAttachment */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/policyAttachment.PolicyAttachment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iam/policyAttachment.PolicyAttachment */ Boolean]
   }
   
   trait PolicyAttachmentArgs extends StObject {
@@ -115,44 +110,31 @@ object policyAttachmentMod {
   }
   object PolicyAttachmentArgs {
     
-    @scala.inline
-    implicit class PolicyAttachmentArgsMutableBuilder[Self <: PolicyAttachmentArgs] (val x: Self) extends AnyVal {
+    extension [Self <: PolicyAttachmentArgs](x: Self) {
       
-      @scala.inline
-      def setGroups(value: Input[js.Array[Input[String | Group]]]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+      inline def setGroups(value: Input[js.Array[Input[String | Group]]]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
+      inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
       
-      @scala.inline
-      def setGroupsVarargs(value: (Input[String | Group])*): Self = StObject.set(x, "groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: (Input[String | Group])*): Self = StObject.set(x, "groups", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPolicyArn(value: Input[ARN]): Self = StObject.set(x, "policyArn", value.asInstanceOf[js.Any])
+      inline def setPolicyArn(value: Input[ARN]): Self = StObject.set(x, "policyArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoles(value: Input[js.Array[Input[String | Role]]]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
+      inline def setRoles(value: Input[js.Array[Input[String | Role]]]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
+      inline def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
       
-      @scala.inline
-      def setRolesVarargs(value: (Input[String | Role])*): Self = StObject.set(x, "roles", js.Array(value :_*))
+      inline def setRolesVarargs(value: (Input[String | Role])*): Self = StObject.set(x, "roles", js.Array(value :_*))
       
-      @scala.inline
-      def setUsers(value: Input[js.Array[Input[String | User]]]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+      inline def setUsers(value: Input[js.Array[Input[String | User]]]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
+      inline def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
       
-      @scala.inline
-      def setUsersVarargs(value: (Input[String | User])*): Self = StObject.set(x, "users", js.Array(value :_*))
+      inline def setUsersVarargs(value: (Input[String | User])*): Self = StObject.set(x, "users", js.Array(value :_*))
     }
   }
   
@@ -185,53 +167,38 @@ object policyAttachmentMod {
   }
   object PolicyAttachmentState {
     
-    @scala.inline
-    def apply(): PolicyAttachmentState = {
+    inline def apply(): PolicyAttachmentState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PolicyAttachmentState]
     }
     
-    @scala.inline
-    implicit class PolicyAttachmentStateMutableBuilder[Self <: PolicyAttachmentState] (val x: Self) extends AnyVal {
+    extension [Self <: PolicyAttachmentState](x: Self) {
       
-      @scala.inline
-      def setGroups(value: Input[js.Array[Input[String | Group]]]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+      inline def setGroups(value: Input[js.Array[Input[String | Group]]]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
+      inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
       
-      @scala.inline
-      def setGroupsVarargs(value: (Input[String | Group])*): Self = StObject.set(x, "groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: (Input[String | Group])*): Self = StObject.set(x, "groups", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPolicyArn(value: Input[ARN]): Self = StObject.set(x, "policyArn", value.asInstanceOf[js.Any])
+      inline def setPolicyArn(value: Input[ARN]): Self = StObject.set(x, "policyArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyArnUndefined: Self = StObject.set(x, "policyArn", js.undefined)
+      inline def setPolicyArnUndefined: Self = StObject.set(x, "policyArn", js.undefined)
       
-      @scala.inline
-      def setRoles(value: Input[js.Array[Input[String | Role]]]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
+      inline def setRoles(value: Input[js.Array[Input[String | Role]]]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
+      inline def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
       
-      @scala.inline
-      def setRolesVarargs(value: (Input[String | Role])*): Self = StObject.set(x, "roles", js.Array(value :_*))
+      inline def setRolesVarargs(value: (Input[String | Role])*): Self = StObject.set(x, "roles", js.Array(value :_*))
       
-      @scala.inline
-      def setUsers(value: Input[js.Array[Input[String | User]]]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+      inline def setUsers(value: Input[js.Array[Input[String | User]]]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
+      inline def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
       
-      @scala.inline
-      def setUsersVarargs(value: (Input[String | User])*): Self = StObject.set(x, "users", js.Array(value :_*))
+      inline def setUsersVarargs(value: (Input[String | User])*): Self = StObject.set(x, "users", js.Array(value :_*))
     }
   }
 }

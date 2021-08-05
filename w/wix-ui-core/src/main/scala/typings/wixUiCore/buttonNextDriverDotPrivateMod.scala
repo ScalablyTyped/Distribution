@@ -12,8 +12,7 @@ object buttonNextDriverDotPrivateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def buttonNextPrivateDriverFactory(base: UniDriver[js.Any]): ButtonNextPrivateDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("buttonNextPrivateDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[ButtonNextPrivateDriver]
+  inline def buttonNextPrivateDriverFactory(base: UniDriver[js.Any]): ButtonNextPrivateDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("buttonNextPrivateDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[ButtonNextPrivateDriver]
   
   trait ButtonNextPrivateDriver
     extends StObject
@@ -29,8 +28,7 @@ object buttonNextDriverDotPrivateMod {
   }
   object ButtonNextPrivateDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -46,20 +44,15 @@ object buttonNextDriverDotPrivateMod {
       __obj.asInstanceOf[ButtonNextPrivateDriver]
     }
     
-    @scala.inline
-    implicit class ButtonNextPrivateDriverMutableBuilder[Self <: ButtonNextPrivateDriver] (val x: Self) extends AnyVal {
+    extension [Self <: ButtonNextPrivateDriver](x: Self) {
       
-      @scala.inline
-      def setHasPrefixClass(value: js.Any => js.Promise[Boolean]): Self = StObject.set(x, "hasPrefixClass", js.Any.fromFunction1(value))
+      inline def setHasPrefixClass(value: js.Any => js.Promise[Boolean]): Self = StObject.set(x, "hasPrefixClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasSuffixClass(value: js.Any => js.Promise[Boolean]): Self = StObject.set(x, "hasSuffixClass", js.Any.fromFunction1(value))
+      inline def setHasSuffixClass(value: js.Any => js.Promise[Boolean]): Self = StObject.set(x, "hasSuffixClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPrefixExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "prefixExists", js.Any.fromFunction0(value))
+      inline def setPrefixExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "prefixExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSuffixExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "suffixExists", js.Any.fromFunction0(value))
+      inline def setSuffixExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "suffixExists", js.Any.fromFunction0(value))
     }
   }
 }

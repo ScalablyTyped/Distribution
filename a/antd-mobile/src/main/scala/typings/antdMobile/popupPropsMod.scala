@@ -15,19 +15,16 @@ object popupPropsMod {
     @JSImport("antd-mobile/lib/picker/popupProps", "default.WrapComponent")
     @js.native
     def WrapComponent: String = js.native
-    @scala.inline
-    def WrapComponent_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WrapComponent")(x.asInstanceOf[js.Any])
+    inline def WrapComponent_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WrapComponent")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile/lib/picker/popupProps", "default.maskTransitionName")
     @js.native
     def maskTransitionName: String = js.native
-    @scala.inline
-    def maskTransitionName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maskTransitionName")(x.asInstanceOf[js.Any])
+    inline def maskTransitionName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maskTransitionName")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile/lib/picker/popupProps", "default.transitionName")
     @js.native
     def transitionName: String = js.native
-    @scala.inline
-    def transitionName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("transitionName")(x.asInstanceOf[js.Any])
+    inline def transitionName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("transitionName")(x.asInstanceOf[js.Any])
   }
 }

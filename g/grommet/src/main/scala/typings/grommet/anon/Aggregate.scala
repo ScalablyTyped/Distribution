@@ -10,19 +10,15 @@ trait Aggregate extends StObject {
 }
 object Aggregate {
   
-  @scala.inline
-  def apply(): Aggregate = {
+  inline def apply(): Aggregate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Aggregate]
   }
   
-  @scala.inline
-  implicit class AggregateMutableBuilder[Self <: Aggregate] (val x: Self) extends AnyVal {
+  extension [Self <: Aggregate](x: Self) {
     
-    @scala.inline
-    def setAggregate(value: Boolean): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
+    inline def setAggregate(value: Boolean): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregateUndefined: Self = StObject.set(x, "aggregate", js.undefined)
+    inline def setAggregateUndefined: Self = StObject.set(x, "aggregate", js.undefined)
   }
 }

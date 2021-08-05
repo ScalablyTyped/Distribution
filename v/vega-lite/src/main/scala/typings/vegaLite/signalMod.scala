@@ -24,8 +24,7 @@ object signalMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromName(rename: Rename, signalName: String): SignalRefWrapper = (^.asInstanceOf[js.Dynamic].applyDynamic("fromName")(rename.asInstanceOf[js.Any], signalName.asInstanceOf[js.Any])).asInstanceOf[SignalRefWrapper]
+    inline def fromName(rename: Rename, signalName: String): SignalRefWrapper = (^.asInstanceOf[js.Dynamic].applyDynamic("fromName")(rename.asInstanceOf[js.Any], signalName.asInstanceOf[js.Any])).asInstanceOf[SignalRefWrapper]
   }
   
   type Rename = js.Function1[/* oldSignalName */ String, String]

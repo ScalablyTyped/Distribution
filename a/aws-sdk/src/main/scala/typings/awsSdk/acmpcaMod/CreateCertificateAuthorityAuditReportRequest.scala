@@ -23,8 +23,7 @@ trait CreateCertificateAuthorityAuditReportRequest extends StObject {
 }
 object CreateCertificateAuthorityAuditReportRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AuditReportResponseFormat: AuditReportResponseFormat,
     CertificateAuthorityArn: Arn,
     S3BucketName: S3BucketName
@@ -33,16 +32,12 @@ object CreateCertificateAuthorityAuditReportRequest {
     __obj.asInstanceOf[CreateCertificateAuthorityAuditReportRequest]
   }
   
-  @scala.inline
-  implicit class CreateCertificateAuthorityAuditReportRequestMutableBuilder[Self <: CreateCertificateAuthorityAuditReportRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCertificateAuthorityAuditReportRequest](x: Self) {
     
-    @scala.inline
-    def setAuditReportResponseFormat(value: AuditReportResponseFormat): Self = StObject.set(x, "AuditReportResponseFormat", value.asInstanceOf[js.Any])
+    inline def setAuditReportResponseFormat(value: AuditReportResponseFormat): Self = StObject.set(x, "AuditReportResponseFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateAuthorityArn(value: Arn): Self = StObject.set(x, "CertificateAuthorityArn", value.asInstanceOf[js.Any])
+    inline def setCertificateAuthorityArn(value: Arn): Self = StObject.set(x, "CertificateAuthorityArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3BucketName(value: S3BucketName): Self = StObject.set(x, "S3BucketName", value.asInstanceOf[js.Any])
+    inline def setS3BucketName(value: S3BucketName): Self = StObject.set(x, "S3BucketName", value.asInstanceOf[js.Any])
   }
 }

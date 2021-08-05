@@ -20,25 +20,19 @@ trait Transaction extends StObject {
 }
 object Transaction {
   
-  @scala.inline
-  def apply(): Transaction = {
+  inline def apply(): Transaction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Transaction]
   }
   
-  @scala.inline
-  implicit class TransactionMutableBuilder[Self <: Transaction] (val x: Self) extends AnyVal {
+  extension [Self <: Transaction](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setReadTimestamp(value: String): Self = StObject.set(x, "readTimestamp", value.asInstanceOf[js.Any])
+    inline def setReadTimestamp(value: String): Self = StObject.set(x, "readTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadTimestampUndefined: Self = StObject.set(x, "readTimestamp", js.undefined)
+    inline def setReadTimestampUndefined: Self = StObject.set(x, "readTimestamp", js.undefined)
   }
 }

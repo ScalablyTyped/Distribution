@@ -8,6 +8,5 @@ object naturalSortStrings {
   
   @js.native
   sealed trait desc extends StObject
-  @scala.inline
-  def desc: desc = "desc".asInstanceOf[desc]
+  inline def desc: desc = "desc".asInstanceOf[desc]
 }

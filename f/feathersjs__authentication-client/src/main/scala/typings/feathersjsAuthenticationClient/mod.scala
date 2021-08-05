@@ -23,50 +23,42 @@ object mod extends Shortcut {
     @JSImport("@feathersjs/authentication-client", "defaults.cookie")
     @js.native
     def cookie: String = js.native
-    @scala.inline
-    def cookie_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookie")(x.asInstanceOf[js.Any])
+    inline def cookie_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookie")(x.asInstanceOf[js.Any])
     
     @JSImport("@feathersjs/authentication-client", "defaults.entity")
     @js.native
     def entity: String = js.native
-    @scala.inline
-    def entity_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("entity")(x.asInstanceOf[js.Any])
+    inline def entity_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("entity")(x.asInstanceOf[js.Any])
     
     @JSImport("@feathersjs/authentication-client", "defaults.header")
     @js.native
     def header: String = js.native
-    @scala.inline
-    def header_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("header")(x.asInstanceOf[js.Any])
+    inline def header_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("header")(x.asInstanceOf[js.Any])
     
     @JSImport("@feathersjs/authentication-client", "defaults.jwtStrategy")
     @js.native
     def jwtStrategy: String = js.native
-    @scala.inline
-    def jwtStrategy_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jwtStrategy")(x.asInstanceOf[js.Any])
+    inline def jwtStrategy_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jwtStrategy")(x.asInstanceOf[js.Any])
     
     @JSImport("@feathersjs/authentication-client", "defaults.path")
     @js.native
     def path: String = js.native
-    @scala.inline
-    def path_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("path")(x.asInstanceOf[js.Any])
+    inline def path_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("path")(x.asInstanceOf[js.Any])
     
     @JSImport("@feathersjs/authentication-client", "defaults.service")
     @js.native
     def service: String = js.native
-    @scala.inline
-    def service_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("service")(x.asInstanceOf[js.Any])
+    inline def service_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("service")(x.asInstanceOf[js.Any])
     
     @JSImport("@feathersjs/authentication-client", "defaults.storageKey")
     @js.native
     def storageKey: String = js.native
-    @scala.inline
-    def storageKey_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("storageKey")(x.asInstanceOf[js.Any])
+    inline def storageKey_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("storageKey")(x.asInstanceOf[js.Any])
     
     @JSImport("@feathersjs/authentication-client", "defaults.timeout")
     @js.native
     def timeout: Double = js.native
-    @scala.inline
-    def timeout_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
+    inline def timeout_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
   }
   
   trait FeathersAuthClientConfig extends StObject {
@@ -89,62 +81,44 @@ object mod extends Shortcut {
   }
   object FeathersAuthClientConfig {
     
-    @scala.inline
-    def apply(): FeathersAuthClientConfig = {
+    inline def apply(): FeathersAuthClientConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FeathersAuthClientConfig]
     }
     
-    @scala.inline
-    implicit class FeathersAuthClientConfigMutableBuilder[Self <: FeathersAuthClientConfig] (val x: Self) extends AnyVal {
+    extension [Self <: FeathersAuthClientConfig](x: Self) {
       
-      @scala.inline
-      def setCookie(value: String): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
+      inline def setCookie(value: String): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
+      inline def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
       
-      @scala.inline
-      def setEntity(value: String): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+      inline def setEntity(value: String): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
+      inline def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
       
-      @scala.inline
-      def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setJwtStrategy(value: String): Self = StObject.set(x, "jwtStrategy", value.asInstanceOf[js.Any])
+      inline def setJwtStrategy(value: String): Self = StObject.set(x, "jwtStrategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJwtStrategyUndefined: Self = StObject.set(x, "jwtStrategy", js.undefined)
+      inline def setJwtStrategyUndefined: Self = StObject.set(x, "jwtStrategy", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+      inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+      inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
       
-      @scala.inline
-      def setStorage(value: Storage): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+      inline def setStorage(value: Storage): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageKey(value: String): Self = StObject.set(x, "storageKey", value.asInstanceOf[js.Any])
+      inline def setStorageKey(value: String): Self = StObject.set(x, "storageKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageKeyUndefined: Self = StObject.set(x, "storageKey", js.undefined)
+      inline def setStorageKeyUndefined: Self = StObject.set(x, "storageKey", js.undefined)
       
-      @scala.inline
-      def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
+      inline def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
     }
   }
   
@@ -156,17 +130,14 @@ object mod extends Shortcut {
   }
   object FeathersAuthCredentials {
     
-    @scala.inline
-    def apply(strategy: String): FeathersAuthCredentials = {
+    inline def apply(strategy: String): FeathersAuthCredentials = {
       val __obj = js.Dynamic.literal(strategy = strategy.asInstanceOf[js.Any])
       __obj.asInstanceOf[FeathersAuthCredentials]
     }
     
-    @scala.inline
-    implicit class FeathersAuthCredentialsMutableBuilder[Self <: FeathersAuthCredentials] (val x: Self) extends AnyVal {
+    extension [Self <: FeathersAuthCredentials](x: Self) {
       
-      @scala.inline
-      def setStrategy(value: String): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
+      inline def setStrategy(value: String): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
     }
   }
   

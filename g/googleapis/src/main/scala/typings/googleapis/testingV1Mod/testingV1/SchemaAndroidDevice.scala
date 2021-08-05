@@ -35,37 +35,27 @@ trait SchemaAndroidDevice extends StObject {
 }
 object SchemaAndroidDevice {
   
-  @scala.inline
-  def apply(): SchemaAndroidDevice = {
+  inline def apply(): SchemaAndroidDevice = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAndroidDevice]
   }
   
-  @scala.inline
-  implicit class SchemaAndroidDeviceMutableBuilder[Self <: SchemaAndroidDevice] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAndroidDevice](x: Self) {
     
-    @scala.inline
-    def setAndroidModelId(value: String): Self = StObject.set(x, "androidModelId", value.asInstanceOf[js.Any])
+    inline def setAndroidModelId(value: String): Self = StObject.set(x, "androidModelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidModelIdUndefined: Self = StObject.set(x, "androidModelId", js.undefined)
+    inline def setAndroidModelIdUndefined: Self = StObject.set(x, "androidModelId", js.undefined)
     
-    @scala.inline
-    def setAndroidVersionId(value: String): Self = StObject.set(x, "androidVersionId", value.asInstanceOf[js.Any])
+    inline def setAndroidVersionId(value: String): Self = StObject.set(x, "androidVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidVersionIdUndefined: Self = StObject.set(x, "androidVersionId", js.undefined)
+    inline def setAndroidVersionIdUndefined: Self = StObject.set(x, "androidVersionId", js.undefined)
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
   }
 }

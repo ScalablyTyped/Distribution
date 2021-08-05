@@ -18,22 +18,17 @@ trait UplinkSpectrumConfig extends StObject {
 }
 object UplinkSpectrumConfig {
   
-  @scala.inline
-  def apply(centerFrequency: Frequency): UplinkSpectrumConfig = {
+  inline def apply(centerFrequency: Frequency): UplinkSpectrumConfig = {
     val __obj = js.Dynamic.literal(centerFrequency = centerFrequency.asInstanceOf[js.Any])
     __obj.asInstanceOf[UplinkSpectrumConfig]
   }
   
-  @scala.inline
-  implicit class UplinkSpectrumConfigMutableBuilder[Self <: UplinkSpectrumConfig] (val x: Self) extends AnyVal {
+  extension [Self <: UplinkSpectrumConfig](x: Self) {
     
-    @scala.inline
-    def setCenterFrequency(value: Frequency): Self = StObject.set(x, "centerFrequency", value.asInstanceOf[js.Any])
+    inline def setCenterFrequency(value: Frequency): Self = StObject.set(x, "centerFrequency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolarization(value: Polarization): Self = StObject.set(x, "polarization", value.asInstanceOf[js.Any])
+    inline def setPolarization(value: Polarization): Self = StObject.set(x, "polarization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolarizationUndefined: Self = StObject.set(x, "polarization", js.undefined)
+    inline def setPolarizationUndefined: Self = StObject.set(x, "polarization", js.undefined)
   }
 }

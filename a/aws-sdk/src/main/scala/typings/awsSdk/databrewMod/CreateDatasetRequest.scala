@@ -22,31 +22,23 @@ trait CreateDatasetRequest extends StObject {
 }
 object CreateDatasetRequest {
   
-  @scala.inline
-  def apply(Input: Input, Name: DatasetName): CreateDatasetRequest = {
+  inline def apply(Input: Input, Name: DatasetName): CreateDatasetRequest = {
     val __obj = js.Dynamic.literal(Input = Input.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDatasetRequest]
   }
   
-  @scala.inline
-  implicit class CreateDatasetRequestMutableBuilder[Self <: CreateDatasetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDatasetRequest](x: Self) {
     
-    @scala.inline
-    def setFormatOptions(value: FormatOptions): Self = StObject.set(x, "FormatOptions", value.asInstanceOf[js.Any])
+    inline def setFormatOptions(value: FormatOptions): Self = StObject.set(x, "FormatOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatOptionsUndefined: Self = StObject.set(x, "FormatOptions", js.undefined)
+    inline def setFormatOptionsUndefined: Self = StObject.set(x, "FormatOptions", js.undefined)
     
-    @scala.inline
-    def setInput(value: Input): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
+    inline def setInput(value: Input): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: DatasetName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: DatasetName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

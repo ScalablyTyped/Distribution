@@ -13,22 +13,17 @@ trait DeleteInstanceSnapshotResult extends StObject {
 }
 object DeleteInstanceSnapshotResult {
   
-  @scala.inline
-  def apply(): DeleteInstanceSnapshotResult = {
+  inline def apply(): DeleteInstanceSnapshotResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteInstanceSnapshotResult]
   }
   
-  @scala.inline
-  implicit class DeleteInstanceSnapshotResultMutableBuilder[Self <: DeleteInstanceSnapshotResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteInstanceSnapshotResult](x: Self) {
     
-    @scala.inline
-    def setOperations(value: OperationList): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+    inline def setOperations(value: OperationList): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
+    inline def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
     
-    @scala.inline
-    def setOperationsVarargs(value: Operation*): Self = StObject.set(x, "operations", js.Array(value :_*))
+    inline def setOperationsVarargs(value: Operation*): Self = StObject.set(x, "operations", js.Array(value :_*))
   }
 }

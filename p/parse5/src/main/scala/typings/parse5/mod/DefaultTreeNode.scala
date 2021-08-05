@@ -13,16 +13,13 @@ trait DefaultTreeNode extends StObject {
 }
 object DefaultTreeNode {
   
-  @scala.inline
-  def apply(nodeName: String): DefaultTreeNode = {
+  inline def apply(nodeName: String): DefaultTreeNode = {
     val __obj = js.Dynamic.literal(nodeName = nodeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultTreeNode]
   }
   
-  @scala.inline
-  implicit class DefaultTreeNodeMutableBuilder[Self <: DefaultTreeNode] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultTreeNode](x: Self) {
     
-    @scala.inline
-    def setNodeName(value: String): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
+    inline def setNodeName(value: String): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
   }
 }

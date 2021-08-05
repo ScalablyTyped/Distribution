@@ -23,25 +23,19 @@ trait UpdateAssessmentTargetRequest extends StObject {
 }
 object UpdateAssessmentTargetRequest {
   
-  @scala.inline
-  def apply(assessmentTargetArn: Arn, assessmentTargetName: AssessmentTargetName): UpdateAssessmentTargetRequest = {
+  inline def apply(assessmentTargetArn: Arn, assessmentTargetName: AssessmentTargetName): UpdateAssessmentTargetRequest = {
     val __obj = js.Dynamic.literal(assessmentTargetArn = assessmentTargetArn.asInstanceOf[js.Any], assessmentTargetName = assessmentTargetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAssessmentTargetRequest]
   }
   
-  @scala.inline
-  implicit class UpdateAssessmentTargetRequestMutableBuilder[Self <: UpdateAssessmentTargetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateAssessmentTargetRequest](x: Self) {
     
-    @scala.inline
-    def setAssessmentTargetArn(value: Arn): Self = StObject.set(x, "assessmentTargetArn", value.asInstanceOf[js.Any])
+    inline def setAssessmentTargetArn(value: Arn): Self = StObject.set(x, "assessmentTargetArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssessmentTargetName(value: AssessmentTargetName): Self = StObject.set(x, "assessmentTargetName", value.asInstanceOf[js.Any])
+    inline def setAssessmentTargetName(value: AssessmentTargetName): Self = StObject.set(x, "assessmentTargetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceGroupArn(value: Arn): Self = StObject.set(x, "resourceGroupArn", value.asInstanceOf[js.Any])
+    inline def setResourceGroupArn(value: Arn): Self = StObject.set(x, "resourceGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceGroupArnUndefined: Self = StObject.set(x, "resourceGroupArn", js.undefined)
+    inline def setResourceGroupArnUndefined: Self = StObject.set(x, "resourceGroupArn", js.undefined)
   }
 }

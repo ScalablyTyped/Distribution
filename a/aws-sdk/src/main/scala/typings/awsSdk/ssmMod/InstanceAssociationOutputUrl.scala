@@ -13,19 +13,15 @@ trait InstanceAssociationOutputUrl extends StObject {
 }
 object InstanceAssociationOutputUrl {
   
-  @scala.inline
-  def apply(): InstanceAssociationOutputUrl = {
+  inline def apply(): InstanceAssociationOutputUrl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceAssociationOutputUrl]
   }
   
-  @scala.inline
-  implicit class InstanceAssociationOutputUrlMutableBuilder[Self <: InstanceAssociationOutputUrl] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceAssociationOutputUrl](x: Self) {
     
-    @scala.inline
-    def setS3OutputUrl(value: S3OutputUrl): Self = StObject.set(x, "S3OutputUrl", value.asInstanceOf[js.Any])
+    inline def setS3OutputUrl(value: S3OutputUrl): Self = StObject.set(x, "S3OutputUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3OutputUrlUndefined: Self = StObject.set(x, "S3OutputUrl", js.undefined)
+    inline def setS3OutputUrlUndefined: Self = StObject.set(x, "S3OutputUrl", js.undefined)
   }
 }

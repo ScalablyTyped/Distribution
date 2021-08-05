@@ -17,19 +17,15 @@ trait SetStorageOptions
 }
 object SetStorageOptions {
   
-  @scala.inline
-  def apply(data: js.Any, key: String): SetStorageOptions = {
+  inline def apply(data: js.Any, key: String): SetStorageOptions = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetStorageOptions]
   }
   
-  @scala.inline
-  implicit class SetStorageOptionsMutableBuilder[Self <: SetStorageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SetStorageOptions](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

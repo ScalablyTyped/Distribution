@@ -17,13 +17,10 @@ object FontPitch {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def DONTKNOW: `0` = 0.asInstanceOf[`0`]
+    inline def DONTKNOW: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def FIXED: `1` = 1.asInstanceOf[`1`]
+    inline def FIXED: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def VARIABLE: `2` = 2.asInstanceOf[`2`]
+    inline def VARIABLE: `2` = 2.asInstanceOf[`2`]
   }
 }

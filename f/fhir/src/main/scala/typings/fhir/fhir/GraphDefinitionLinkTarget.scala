@@ -43,53 +43,38 @@ trait GraphDefinitionLinkTarget
 }
 object GraphDefinitionLinkTarget {
   
-  @scala.inline
-  def apply(`type`: code): GraphDefinitionLinkTarget = {
+  inline def apply(`type`: code): GraphDefinitionLinkTarget = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphDefinitionLinkTarget]
   }
   
-  @scala.inline
-  implicit class GraphDefinitionLinkTargetMutableBuilder[Self <: GraphDefinitionLinkTarget] (val x: Self) extends AnyVal {
+  extension [Self <: GraphDefinitionLinkTarget](x: Self) {
     
-    @scala.inline
-    def setCompartment(value: js.Array[GraphDefinitionLinkTargetCompartment]): Self = StObject.set(x, "compartment", value.asInstanceOf[js.Any])
+    inline def setCompartment(value: js.Array[GraphDefinitionLinkTargetCompartment]): Self = StObject.set(x, "compartment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompartmentUndefined: Self = StObject.set(x, "compartment", js.undefined)
+    inline def setCompartmentUndefined: Self = StObject.set(x, "compartment", js.undefined)
     
-    @scala.inline
-    def setCompartmentVarargs(value: GraphDefinitionLinkTargetCompartment*): Self = StObject.set(x, "compartment", js.Array(value :_*))
+    inline def setCompartmentVarargs(value: GraphDefinitionLinkTargetCompartment*): Self = StObject.set(x, "compartment", js.Array(value :_*))
     
-    @scala.inline
-    def setLink(value: js.Array[GraphDefinitionLink]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: js.Array[GraphDefinitionLink]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+    inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
-    @scala.inline
-    def setLinkVarargs(value: GraphDefinitionLink*): Self = StObject.set(x, "link", js.Array(value :_*))
+    inline def setLinkVarargs(value: GraphDefinitionLink*): Self = StObject.set(x, "link", js.Array(value :_*))
     
-    @scala.inline
-    def setProfile(value: uri): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+    inline def setProfile(value: uri): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
+    inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
     
-    @scala.inline
-    def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_profile(value: Element): Self = StObject.set(x, "_profile", value.asInstanceOf[js.Any])
+    inline def set_profile(value: Element): Self = StObject.set(x, "_profile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_profileUndefined: Self = StObject.set(x, "_profile", js.undefined)
+    inline def set_profileUndefined: Self = StObject.set(x, "_profile", js.undefined)
     
-    @scala.inline
-    def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
+    inline def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
+    inline def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
   }
 }

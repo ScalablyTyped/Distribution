@@ -16,19 +16,15 @@ trait InteractionsRemoveRestrictionsForRepoEndpoint
 }
 object InteractionsRemoveRestrictionsForRepoEndpoint {
   
-  @scala.inline
-  def apply(mediaType: `0`[sombra], owner: String, repo: String): InteractionsRemoveRestrictionsForRepoEndpoint = {
+  inline def apply(mediaType: `0`[sombra], owner: String, repo: String): InteractionsRemoveRestrictionsForRepoEndpoint = {
     val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[InteractionsRemoveRestrictionsForRepoEndpoint]
   }
   
-  @scala.inline
-  implicit class InteractionsRemoveRestrictionsForRepoEndpointMutableBuilder[Self <: InteractionsRemoveRestrictionsForRepoEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: InteractionsRemoveRestrictionsForRepoEndpoint](x: Self) {
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

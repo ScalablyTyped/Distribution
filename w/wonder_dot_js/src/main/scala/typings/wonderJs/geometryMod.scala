@@ -48,29 +48,22 @@ object geometryMod {
   }
   object GeometryDataType {
     
-    @scala.inline
-    def apply(vertices: js.Array[Double]): GeometryDataType = {
+    inline def apply(vertices: js.Array[Double]): GeometryDataType = {
       val __obj = js.Dynamic.literal(vertices = vertices.asInstanceOf[js.Any])
       __obj.asInstanceOf[GeometryDataType]
     }
     
-    @scala.inline
-    implicit class GeometryDataTypeMutableBuilder[Self <: GeometryDataType] (val x: Self) extends AnyVal {
+    extension [Self <: GeometryDataType](x: Self) {
       
-      @scala.inline
-      def setFaces(value: js.Array[Face3]): Self = StObject.set(x, "faces", value.asInstanceOf[js.Any])
+      inline def setFaces(value: js.Array[Face3]): Self = StObject.set(x, "faces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFacesUndefined: Self = StObject.set(x, "faces", js.undefined)
+      inline def setFacesUndefined: Self = StObject.set(x, "faces", js.undefined)
       
-      @scala.inline
-      def setFacesVarargs(value: Face3*): Self = StObject.set(x, "faces", js.Array(value :_*))
+      inline def setFacesVarargs(value: Face3*): Self = StObject.set(x, "faces", js.Array(value :_*))
       
-      @scala.inline
-      def setVertices(value: js.Array[Double]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
+      inline def setVertices(value: js.Array[Double]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticesVarargs(value: Double*): Self = StObject.set(x, "vertices", js.Array(value :_*))
+      inline def setVerticesVarargs(value: Double*): Self = StObject.set(x, "vertices", js.Array(value :_*))
     }
   }
 }

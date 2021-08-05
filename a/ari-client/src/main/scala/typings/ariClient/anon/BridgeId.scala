@@ -14,31 +14,23 @@ trait BridgeId extends StObject {
 }
 object BridgeId {
   
-  @scala.inline
-  def apply(): BridgeId = {
+  inline def apply(): BridgeId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BridgeId]
   }
   
-  @scala.inline
-  implicit class BridgeIdMutableBuilder[Self <: BridgeId] (val x: Self) extends AnyVal {
+  extension [Self <: BridgeId](x: Self) {
     
-    @scala.inline
-    def setBridgeId(value: String): Self = StObject.set(x, "bridgeId", value.asInstanceOf[js.Any])
+    inline def setBridgeId(value: String): Self = StObject.set(x, "bridgeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBridgeIdUndefined: Self = StObject.set(x, "bridgeId", js.undefined)
+    inline def setBridgeIdUndefined: Self = StObject.set(x, "bridgeId", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

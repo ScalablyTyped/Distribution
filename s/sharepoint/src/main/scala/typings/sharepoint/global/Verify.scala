@@ -11,6 +11,5 @@ object Verify {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ArgumentType(arg: String, expected: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ArgumentType")(arg.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ArgumentType(arg: String, expected: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ArgumentType")(arg.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

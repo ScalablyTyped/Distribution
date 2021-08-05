@@ -11,19 +11,15 @@ trait TestTiming extends StObject {
 }
 object TestTiming {
   
-  @scala.inline
-  def apply(): TestTiming = {
+  inline def apply(): TestTiming = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TestTiming]
   }
   
-  @scala.inline
-  implicit class TestTimingMutableBuilder[Self <: TestTiming] (val x: Self) extends AnyVal {
+  extension [Self <: TestTiming](x: Self) {
     
-    @scala.inline
-    def setTestProcessDuration(value: Duration): Self = StObject.set(x, "testProcessDuration", value.asInstanceOf[js.Any])
+    inline def setTestProcessDuration(value: Duration): Self = StObject.set(x, "testProcessDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestProcessDurationUndefined: Self = StObject.set(x, "testProcessDuration", js.undefined)
+    inline def setTestProcessDurationUndefined: Self = StObject.set(x, "testProcessDuration", js.undefined)
   }
 }

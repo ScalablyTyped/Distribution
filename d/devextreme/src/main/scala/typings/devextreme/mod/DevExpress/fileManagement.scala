@@ -124,94 +124,70 @@ object fileManagement {
   }
   object CustomFileSystemProviderOptions {
     
-    @scala.inline
-    def apply(): CustomFileSystemProviderOptions = {
+    inline def apply(): CustomFileSystemProviderOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CustomFileSystemProviderOptions]
     }
     
-    @scala.inline
-    implicit class CustomFileSystemProviderOptionsMutableBuilder[Self <: CustomFileSystemProviderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CustomFileSystemProviderOptions](x: Self) {
       
-      @scala.inline
-      def setAbortFileUpload(
+      inline def setAbortFileUpload(
         value: (/* file */ File, /* uploadInfo */ UploadInfo, /* destinationDirectory */ FileSystemItem) => Promise[js.Any] | JQueryPromise[js.Any] | js.Any
       ): Self = StObject.set(x, "abortFileUpload", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setAbortFileUploadUndefined: Self = StObject.set(x, "abortFileUpload", js.undefined)
+      inline def setAbortFileUploadUndefined: Self = StObject.set(x, "abortFileUpload", js.undefined)
       
-      @scala.inline
-      def setCopyItem(
+      inline def setCopyItem(
         value: (/* item */ FileSystemItem, /* destinationDirectory */ FileSystemItem) => Promise[js.Any] | JQueryPromise[js.Any] | js.Any
       ): Self = StObject.set(x, "copyItem", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCopyItemUndefined: Self = StObject.set(x, "copyItem", js.undefined)
+      inline def setCopyItemUndefined: Self = StObject.set(x, "copyItem", js.undefined)
       
-      @scala.inline
-      def setCreateDirectory(
+      inline def setCreateDirectory(
         value: (/* parentDirectory */ FileSystemItem, /* name */ String) => Promise[js.Any] | JQueryPromise[js.Any] | js.Any
       ): Self = StObject.set(x, "createDirectory", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCreateDirectoryUndefined: Self = StObject.set(x, "createDirectory", js.undefined)
+      inline def setCreateDirectoryUndefined: Self = StObject.set(x, "createDirectory", js.undefined)
       
-      @scala.inline
-      def setDeleteItem(value: /* item */ FileSystemItem => Promise[js.Any] | JQueryPromise[js.Any] | js.Any): Self = StObject.set(x, "deleteItem", js.Any.fromFunction1(value))
+      inline def setDeleteItem(value: /* item */ FileSystemItem => Promise[js.Any] | JQueryPromise[js.Any] | js.Any): Self = StObject.set(x, "deleteItem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDeleteItemUndefined: Self = StObject.set(x, "deleteItem", js.undefined)
+      inline def setDeleteItemUndefined: Self = StObject.set(x, "deleteItem", js.undefined)
       
-      @scala.inline
-      def setDownloadItems(value: /* items */ js.Array[FileSystemItem] => js.Any): Self = StObject.set(x, "downloadItems", js.Any.fromFunction1(value))
+      inline def setDownloadItems(value: /* items */ js.Array[FileSystemItem] => js.Any): Self = StObject.set(x, "downloadItems", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDownloadItemsUndefined: Self = StObject.set(x, "downloadItems", js.undefined)
+      inline def setDownloadItemsUndefined: Self = StObject.set(x, "downloadItems", js.undefined)
       
-      @scala.inline
-      def setGetItems(
+      inline def setGetItems(
         value: /* parentDirectory */ FileSystemItem => Promise[js.Array[js.Any]] | JQueryPromise[js.Array[js.Any]] | js.Array[js.Any]
       ): Self = StObject.set(x, "getItems", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetItemsContent(value: /* items */ js.Array[FileSystemItem] => Promise[js.Any] | JQueryPromise[js.Any] | js.Any): Self = StObject.set(x, "getItemsContent", js.Any.fromFunction1(value))
+      inline def setGetItemsContent(value: /* items */ js.Array[FileSystemItem] => Promise[js.Any] | JQueryPromise[js.Any] | js.Any): Self = StObject.set(x, "getItemsContent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetItemsContentUndefined: Self = StObject.set(x, "getItemsContent", js.undefined)
+      inline def setGetItemsContentUndefined: Self = StObject.set(x, "getItemsContent", js.undefined)
       
-      @scala.inline
-      def setGetItemsUndefined: Self = StObject.set(x, "getItems", js.undefined)
+      inline def setGetItemsUndefined: Self = StObject.set(x, "getItems", js.undefined)
       
-      @scala.inline
-      def setHasSubDirectoriesExpr(value: String | js.Function): Self = StObject.set(x, "hasSubDirectoriesExpr", value.asInstanceOf[js.Any])
+      inline def setHasSubDirectoriesExpr(value: String | js.Function): Self = StObject.set(x, "hasSubDirectoriesExpr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasSubDirectoriesExprUndefined: Self = StObject.set(x, "hasSubDirectoriesExpr", js.undefined)
+      inline def setHasSubDirectoriesExprUndefined: Self = StObject.set(x, "hasSubDirectoriesExpr", js.undefined)
       
-      @scala.inline
-      def setMoveItem(
+      inline def setMoveItem(
         value: (/* item */ FileSystemItem, /* destinationDirectory */ FileSystemItem) => Promise[js.Any] | JQueryPromise[js.Any] | js.Any
       ): Self = StObject.set(x, "moveItem", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMoveItemUndefined: Self = StObject.set(x, "moveItem", js.undefined)
+      inline def setMoveItemUndefined: Self = StObject.set(x, "moveItem", js.undefined)
       
-      @scala.inline
-      def setRenameItem(
+      inline def setRenameItem(
         value: (/* item */ FileSystemItem, /* newName */ String) => Promise[js.Any] | JQueryPromise[js.Any] | js.Any
       ): Self = StObject.set(x, "renameItem", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRenameItemUndefined: Self = StObject.set(x, "renameItem", js.undefined)
+      inline def setRenameItemUndefined: Self = StObject.set(x, "renameItem", js.undefined)
       
-      @scala.inline
-      def setUploadFileChunk(
+      inline def setUploadFileChunk(
         value: (/* file */ File, /* uploadInfo */ UploadInfo, /* destinationDirectory */ FileSystemItem) => Promise[js.Any] | JQueryPromise[js.Any] | js.Any
       ): Self = StObject.set(x, "uploadFileChunk", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setUploadFileChunkUndefined: Self = StObject.set(x, "uploadFileChunk", js.undefined)
+      inline def setUploadFileChunkUndefined: Self = StObject.set(x, "uploadFileChunk", js.undefined)
     }
   }
   
@@ -274,8 +250,7 @@ object fileManagement {
   }
   object FileSystemItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dataItem: js.Any,
       dateModified: Date,
       getFileExtension: () => String,
@@ -292,44 +267,31 @@ object fileManagement {
       __obj.asInstanceOf[FileSystemItem]
     }
     
-    @scala.inline
-    implicit class FileSystemItemMutableBuilder[Self <: FileSystemItem] (val x: Self) extends AnyVal {
+    extension [Self <: FileSystemItem](x: Self) {
       
-      @scala.inline
-      def setDataItem(value: js.Any): Self = StObject.set(x, "dataItem", value.asInstanceOf[js.Any])
+      inline def setDataItem(value: js.Any): Self = StObject.set(x, "dataItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateModified(value: Date): Self = StObject.set(x, "dateModified", value.asInstanceOf[js.Any])
+      inline def setDateModified(value: Date): Self = StObject.set(x, "dateModified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetFileExtension(value: () => String): Self = StObject.set(x, "getFileExtension", js.Any.fromFunction0(value))
+      inline def setGetFileExtension(value: () => String): Self = StObject.set(x, "getFileExtension", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasSubDirectories(value: Boolean): Self = StObject.set(x, "hasSubDirectories", value.asInstanceOf[js.Any])
+      inline def setHasSubDirectories(value: Boolean): Self = StObject.set(x, "hasSubDirectories", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDirectory(value: Boolean): Self = StObject.set(x, "isDirectory", value.asInstanceOf[js.Any])
+      inline def setIsDirectory(value: Boolean): Self = StObject.set(x, "isDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathKeys(value: js.Array[String]): Self = StObject.set(x, "pathKeys", value.asInstanceOf[js.Any])
+      inline def setPathKeys(value: js.Array[String]): Self = StObject.set(x, "pathKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathKeysVarargs(value: String*): Self = StObject.set(x, "pathKeys", js.Array(value :_*))
+      inline def setPathKeysVarargs(value: String*): Self = StObject.set(x, "pathKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+      inline def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     }
   }
   
@@ -387,8 +349,7 @@ object fileManagement {
   }
   object FileSystemProviderBase {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abortFileUpload: (File, UploadInfo, FileSystemItem) => Promise[js.Any] & JQueryPromise[js.Any],
       copyItems: (js.Array[FileSystemItem], FileSystemItem) => js.Array[Promise[js.Any] | JQueryPromise[js.Any]],
       createDirectory: (FileSystemItem, String) => Promise[js.Any] & JQueryPromise[js.Any],
@@ -404,44 +365,33 @@ object fileManagement {
       __obj.asInstanceOf[FileSystemProviderBase]
     }
     
-    @scala.inline
-    implicit class FileSystemProviderBaseMutableBuilder[Self <: FileSystemProviderBase] (val x: Self) extends AnyVal {
+    extension [Self <: FileSystemProviderBase](x: Self) {
       
-      @scala.inline
-      def setAbortFileUpload(value: (File, UploadInfo, FileSystemItem) => Promise[js.Any] & JQueryPromise[js.Any]): Self = StObject.set(x, "abortFileUpload", js.Any.fromFunction3(value))
+      inline def setAbortFileUpload(value: (File, UploadInfo, FileSystemItem) => Promise[js.Any] & JQueryPromise[js.Any]): Self = StObject.set(x, "abortFileUpload", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setCopyItems(
+      inline def setCopyItems(
         value: (js.Array[FileSystemItem], FileSystemItem) => js.Array[Promise[js.Any] | JQueryPromise[js.Any]]
       ): Self = StObject.set(x, "copyItems", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCreateDirectory(value: (FileSystemItem, String) => Promise[js.Any] & JQueryPromise[js.Any]): Self = StObject.set(x, "createDirectory", js.Any.fromFunction2(value))
+      inline def setCreateDirectory(value: (FileSystemItem, String) => Promise[js.Any] & JQueryPromise[js.Any]): Self = StObject.set(x, "createDirectory", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDeleteItems(value: js.Array[FileSystemItem] => js.Array[Promise[js.Any] | JQueryPromise[js.Any]]): Self = StObject.set(x, "deleteItems", js.Any.fromFunction1(value))
+      inline def setDeleteItems(value: js.Array[FileSystemItem] => js.Array[Promise[js.Any] | JQueryPromise[js.Any]]): Self = StObject.set(x, "deleteItems", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDownloadItems(value: js.Array[FileSystemItem] => Unit): Self = StObject.set(x, "downloadItems", js.Any.fromFunction1(value))
+      inline def setDownloadItems(value: js.Array[FileSystemItem] => Unit): Self = StObject.set(x, "downloadItems", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetItems(
+      inline def setGetItems(
         value: FileSystemItem => Promise[js.Array[FileSystemItem]] & JQueryPromise[js.Array[FileSystemItem]]
       ): Self = StObject.set(x, "getItems", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetItemsContent(value: js.Array[FileSystemItem] => Promise[js.Any] & JQueryPromise[js.Any]): Self = StObject.set(x, "getItemsContent", js.Any.fromFunction1(value))
+      inline def setGetItemsContent(value: js.Array[FileSystemItem] => Promise[js.Any] & JQueryPromise[js.Any]): Self = StObject.set(x, "getItemsContent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMoveItems(
+      inline def setMoveItems(
         value: (js.Array[FileSystemItem], FileSystemItem) => js.Array[Promise[js.Any] | JQueryPromise[js.Any]]
       ): Self = StObject.set(x, "moveItems", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRenameItem(value: (FileSystemItem, String) => Promise[js.Any] & JQueryPromise[js.Any]): Self = StObject.set(x, "renameItem", js.Any.fromFunction2(value))
+      inline def setRenameItem(value: (FileSystemItem, String) => Promise[js.Any] & JQueryPromise[js.Any]): Self = StObject.set(x, "renameItem", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUploadFileChunk(value: (File, UploadInfo, FileSystemItem) => Promise[js.Any] & JQueryPromise[js.Any]): Self = StObject.set(x, "uploadFileChunk", js.Any.fromFunction3(value))
+      inline def setUploadFileChunk(value: (File, UploadInfo, FileSystemItem) => Promise[js.Any] & JQueryPromise[js.Any]): Self = StObject.set(x, "uploadFileChunk", js.Any.fromFunction3(value))
     }
   }
   
@@ -479,50 +429,36 @@ object fileManagement {
   }
   object FileSystemProviderBaseOptions {
     
-    @scala.inline
-    def apply[T](): FileSystemProviderBaseOptions[T] = {
+    inline def apply[T](): FileSystemProviderBaseOptions[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FileSystemProviderBaseOptions[T]]
     }
     
-    @scala.inline
-    implicit class FileSystemProviderBaseOptionsMutableBuilder[Self <: FileSystemProviderBaseOptions[?], T] (val x: Self & FileSystemProviderBaseOptions[T]) extends AnyVal {
+    extension [Self <: FileSystemProviderBaseOptions[?], T](x: Self & FileSystemProviderBaseOptions[T]) {
       
-      @scala.inline
-      def setDateModifiedExpr(value: String | js.Function): Self = StObject.set(x, "dateModifiedExpr", value.asInstanceOf[js.Any])
+      inline def setDateModifiedExpr(value: String | js.Function): Self = StObject.set(x, "dateModifiedExpr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateModifiedExprUndefined: Self = StObject.set(x, "dateModifiedExpr", js.undefined)
+      inline def setDateModifiedExprUndefined: Self = StObject.set(x, "dateModifiedExpr", js.undefined)
       
-      @scala.inline
-      def setIsDirectoryExpr(value: String | js.Function): Self = StObject.set(x, "isDirectoryExpr", value.asInstanceOf[js.Any])
+      inline def setIsDirectoryExpr(value: String | js.Function): Self = StObject.set(x, "isDirectoryExpr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDirectoryExprUndefined: Self = StObject.set(x, "isDirectoryExpr", js.undefined)
+      inline def setIsDirectoryExprUndefined: Self = StObject.set(x, "isDirectoryExpr", js.undefined)
       
-      @scala.inline
-      def setKeyExpr(value: String | js.Function): Self = StObject.set(x, "keyExpr", value.asInstanceOf[js.Any])
+      inline def setKeyExpr(value: String | js.Function): Self = StObject.set(x, "keyExpr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyExprUndefined: Self = StObject.set(x, "keyExpr", js.undefined)
+      inline def setKeyExprUndefined: Self = StObject.set(x, "keyExpr", js.undefined)
       
-      @scala.inline
-      def setNameExpr(value: String | js.Function): Self = StObject.set(x, "nameExpr", value.asInstanceOf[js.Any])
+      inline def setNameExpr(value: String | js.Function): Self = StObject.set(x, "nameExpr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameExprUndefined: Self = StObject.set(x, "nameExpr", js.undefined)
+      inline def setNameExprUndefined: Self = StObject.set(x, "nameExpr", js.undefined)
       
-      @scala.inline
-      def setSizeExpr(value: String | js.Function): Self = StObject.set(x, "sizeExpr", value.asInstanceOf[js.Any])
+      inline def setSizeExpr(value: String | js.Function): Self = StObject.set(x, "sizeExpr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeExprUndefined: Self = StObject.set(x, "sizeExpr", js.undefined)
+      inline def setSizeExprUndefined: Self = StObject.set(x, "sizeExpr", js.undefined)
       
-      @scala.inline
-      def setThumbnailExpr(value: String | js.Function): Self = StObject.set(x, "thumbnailExpr", value.asInstanceOf[js.Any])
+      inline def setThumbnailExpr(value: String | js.Function): Self = StObject.set(x, "thumbnailExpr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnailExprUndefined: Self = StObject.set(x, "thumbnailExpr", js.undefined)
+      inline def setThumbnailExprUndefined: Self = StObject.set(x, "thumbnailExpr", js.undefined)
     }
   }
   
@@ -549,35 +485,26 @@ object fileManagement {
   }
   object ObjectFileSystemProviderOptions {
     
-    @scala.inline
-    def apply(): ObjectFileSystemProviderOptions = {
+    inline def apply(): ObjectFileSystemProviderOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ObjectFileSystemProviderOptions]
     }
     
-    @scala.inline
-    implicit class ObjectFileSystemProviderOptionsMutableBuilder[Self <: ObjectFileSystemProviderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ObjectFileSystemProviderOptions](x: Self) {
       
-      @scala.inline
-      def setContentExpr(value: String | js.Function): Self = StObject.set(x, "contentExpr", value.asInstanceOf[js.Any])
+      inline def setContentExpr(value: String | js.Function): Self = StObject.set(x, "contentExpr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentExprUndefined: Self = StObject.set(x, "contentExpr", js.undefined)
+      inline def setContentExprUndefined: Self = StObject.set(x, "contentExpr", js.undefined)
       
-      @scala.inline
-      def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setItemsExpr(value: String | js.Function): Self = StObject.set(x, "itemsExpr", value.asInstanceOf[js.Any])
+      inline def setItemsExpr(value: String | js.Function): Self = StObject.set(x, "itemsExpr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsExprUndefined: Self = StObject.set(x, "itemsExpr", js.undefined)
+      inline def setItemsExprUndefined: Self = StObject.set(x, "itemsExpr", js.undefined)
     }
   }
   
@@ -599,26 +526,20 @@ object fileManagement {
   }
   object RemoteFileSystemProviderOptions {
     
-    @scala.inline
-    def apply(): RemoteFileSystemProviderOptions = {
+    inline def apply(): RemoteFileSystemProviderOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RemoteFileSystemProviderOptions]
     }
     
-    @scala.inline
-    implicit class RemoteFileSystemProviderOptionsMutableBuilder[Self <: RemoteFileSystemProviderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RemoteFileSystemProviderOptions](x: Self) {
       
-      @scala.inline
-      def setEndpointUrl(value: String): Self = StObject.set(x, "endpointUrl", value.asInstanceOf[js.Any])
+      inline def setEndpointUrl(value: String): Self = StObject.set(x, "endpointUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointUrlUndefined: Self = StObject.set(x, "endpointUrl", js.undefined)
+      inline def setEndpointUrlUndefined: Self = StObject.set(x, "endpointUrl", js.undefined)
       
-      @scala.inline
-      def setHasSubDirectoriesExpr(value: String | js.Function): Self = StObject.set(x, "hasSubDirectoriesExpr", value.asInstanceOf[js.Any])
+      inline def setHasSubDirectoriesExpr(value: String | js.Function): Self = StObject.set(x, "hasSubDirectoriesExpr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasSubDirectoriesExprUndefined: Self = StObject.set(x, "hasSubDirectoriesExpr", js.undefined)
+      inline def setHasSubDirectoriesExprUndefined: Self = StObject.set(x, "hasSubDirectoriesExpr", js.undefined)
     }
   }
   
@@ -651,29 +572,22 @@ object fileManagement {
   }
   object UploadInfo {
     
-    @scala.inline
-    def apply(bytesUploaded: Double, chunkBlob: Blob, chunkCount: Double, chunkIndex: Double, customData: js.Any): UploadInfo = {
+    inline def apply(bytesUploaded: Double, chunkBlob: Blob, chunkCount: Double, chunkIndex: Double, customData: js.Any): UploadInfo = {
       val __obj = js.Dynamic.literal(bytesUploaded = bytesUploaded.asInstanceOf[js.Any], chunkBlob = chunkBlob.asInstanceOf[js.Any], chunkCount = chunkCount.asInstanceOf[js.Any], chunkIndex = chunkIndex.asInstanceOf[js.Any], customData = customData.asInstanceOf[js.Any])
       __obj.asInstanceOf[UploadInfo]
     }
     
-    @scala.inline
-    implicit class UploadInfoMutableBuilder[Self <: UploadInfo] (val x: Self) extends AnyVal {
+    extension [Self <: UploadInfo](x: Self) {
       
-      @scala.inline
-      def setBytesUploaded(value: Double): Self = StObject.set(x, "bytesUploaded", value.asInstanceOf[js.Any])
+      inline def setBytesUploaded(value: Double): Self = StObject.set(x, "bytesUploaded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChunkBlob(value: Blob): Self = StObject.set(x, "chunkBlob", value.asInstanceOf[js.Any])
+      inline def setChunkBlob(value: Blob): Self = StObject.set(x, "chunkBlob", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChunkCount(value: Double): Self = StObject.set(x, "chunkCount", value.asInstanceOf[js.Any])
+      inline def setChunkCount(value: Double): Self = StObject.set(x, "chunkCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChunkIndex(value: Double): Self = StObject.set(x, "chunkIndex", value.asInstanceOf[js.Any])
+      inline def setChunkIndex(value: Double): Self = StObject.set(x, "chunkIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomData(value: js.Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+      inline def setCustomData(value: js.Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     }
   }
 }

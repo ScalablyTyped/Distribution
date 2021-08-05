@@ -16,8 +16,7 @@ trait SimpleArrowFunctionExpression
 }
 object SimpleArrowFunctionExpression {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -46,16 +45,12 @@ object SimpleArrowFunctionExpression {
     __obj.asInstanceOf[SimpleArrowFunctionExpression]
   }
   
-  @scala.inline
-  implicit class SimpleArrowFunctionExpressionMutableBuilder[Self <: SimpleArrowFunctionExpression] (val x: Self) extends AnyVal {
+  extension [Self <: SimpleArrowFunctionExpression](x: Self) {
     
-    @scala.inline
-    def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+    inline def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpression(value: AST): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: AST): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
   }
 }

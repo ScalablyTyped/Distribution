@@ -48,62 +48,44 @@ object invitationProgressOptionsMod {
   }
   object InvitationProgressOptions {
     
-    @scala.inline
-    def apply(): InvitationProgressOptions = {
+    inline def apply(): InvitationProgressOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InvitationProgressOptions]
     }
     
-    @scala.inline
-    implicit class InvitationProgressOptionsMutableBuilder[Self <: InvitationProgressOptions] (val x: Self) extends AnyVal {
+    extension [Self <: InvitationProgressOptions](x: Self) {
       
-      @scala.inline
-      def setBody(value: String | Body): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String | Body): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setExtraHeaders(value: js.Array[String]): Self = StObject.set(x, "extraHeaders", value.asInstanceOf[js.Any])
+      inline def setExtraHeaders(value: js.Array[String]): Self = StObject.set(x, "extraHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraHeadersUndefined: Self = StObject.set(x, "extraHeaders", js.undefined)
+      inline def setExtraHeadersUndefined: Self = StObject.set(x, "extraHeaders", js.undefined)
       
-      @scala.inline
-      def setExtraHeadersVarargs(value: String*): Self = StObject.set(x, "extraHeaders", js.Array(value :_*))
+      inline def setExtraHeadersVarargs(value: String*): Self = StObject.set(x, "extraHeaders", js.Array(value :_*))
       
-      @scala.inline
-      def setReasonPhrase(value: String): Self = StObject.set(x, "reasonPhrase", value.asInstanceOf[js.Any])
+      inline def setReasonPhrase(value: String): Self = StObject.set(x, "reasonPhrase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReasonPhraseUndefined: Self = StObject.set(x, "reasonPhrase", js.undefined)
+      inline def setReasonPhraseUndefined: Self = StObject.set(x, "reasonPhrase", js.undefined)
       
-      @scala.inline
-      def setRel100(value: Boolean): Self = StObject.set(x, "rel100", value.asInstanceOf[js.Any])
+      inline def setRel100(value: Boolean): Self = StObject.set(x, "rel100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRel100Undefined: Self = StObject.set(x, "rel100", js.undefined)
+      inline def setRel100Undefined: Self = StObject.set(x, "rel100", js.undefined)
       
-      @scala.inline
-      def setSessionDescriptionHandlerModifiers(value: js.Array[SessionDescriptionHandlerModifier]): Self = StObject.set(x, "sessionDescriptionHandlerModifiers", value.asInstanceOf[js.Any])
+      inline def setSessionDescriptionHandlerModifiers(value: js.Array[SessionDescriptionHandlerModifier]): Self = StObject.set(x, "sessionDescriptionHandlerModifiers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionDescriptionHandlerModifiersUndefined: Self = StObject.set(x, "sessionDescriptionHandlerModifiers", js.undefined)
+      inline def setSessionDescriptionHandlerModifiersUndefined: Self = StObject.set(x, "sessionDescriptionHandlerModifiers", js.undefined)
       
-      @scala.inline
-      def setSessionDescriptionHandlerModifiersVarargs(value: SessionDescriptionHandlerModifier*): Self = StObject.set(x, "sessionDescriptionHandlerModifiers", js.Array(value :_*))
+      inline def setSessionDescriptionHandlerModifiersVarargs(value: SessionDescriptionHandlerModifier*): Self = StObject.set(x, "sessionDescriptionHandlerModifiers", js.Array(value :_*))
       
-      @scala.inline
-      def setSessionDescriptionHandlerOptions(value: SessionDescriptionHandlerOptions): Self = StObject.set(x, "sessionDescriptionHandlerOptions", value.asInstanceOf[js.Any])
+      inline def setSessionDescriptionHandlerOptions(value: SessionDescriptionHandlerOptions): Self = StObject.set(x, "sessionDescriptionHandlerOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionDescriptionHandlerOptionsUndefined: Self = StObject.set(x, "sessionDescriptionHandlerOptions", js.undefined)
+      inline def setSessionDescriptionHandlerOptionsUndefined: Self = StObject.set(x, "sessionDescriptionHandlerOptions", js.undefined)
       
-      @scala.inline
-      def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+      inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
     }
   }
 }

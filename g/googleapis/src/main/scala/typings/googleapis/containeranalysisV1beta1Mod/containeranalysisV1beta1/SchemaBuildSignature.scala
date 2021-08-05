@@ -45,37 +45,27 @@ trait SchemaBuildSignature extends StObject {
 }
 object SchemaBuildSignature {
   
-  @scala.inline
-  def apply(): SchemaBuildSignature = {
+  inline def apply(): SchemaBuildSignature = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBuildSignature]
   }
   
-  @scala.inline
-  implicit class SchemaBuildSignatureMutableBuilder[Self <: SchemaBuildSignature] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBuildSignature](x: Self) {
     
-    @scala.inline
-    def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
+    inline def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyIdUndefined: Self = StObject.set(x, "keyId", js.undefined)
+    inline def setKeyIdUndefined: Self = StObject.set(x, "keyId", js.undefined)
     
-    @scala.inline
-    def setKeyType(value: String): Self = StObject.set(x, "keyType", value.asInstanceOf[js.Any])
+    inline def setKeyType(value: String): Self = StObject.set(x, "keyType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyTypeUndefined: Self = StObject.set(x, "keyType", js.undefined)
+    inline def setKeyTypeUndefined: Self = StObject.set(x, "keyType", js.undefined)
     
-    @scala.inline
-    def setPublicKey(value: String): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+    inline def setPublicKey(value: String): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKeyUndefined: Self = StObject.set(x, "publicKey", js.undefined)
+    inline def setPublicKeyUndefined: Self = StObject.set(x, "publicKey", js.undefined)
     
-    @scala.inline
-    def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
+    inline def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
   }
 }

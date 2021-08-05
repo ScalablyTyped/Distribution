@@ -44,61 +44,43 @@ trait IConversionOptions extends StObject {
 }
 object IConversionOptions {
   
-  @scala.inline
-  def apply(): IConversionOptions = {
+  inline def apply(): IConversionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IConversionOptions]
   }
   
-  @scala.inline
-  implicit class IConversionOptionsMutableBuilder[Self <: IConversionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IConversionOptions](x: Self) {
     
-    @scala.inline
-    def setArrays(value: Boolean): Self = StObject.set(x, "arrays", value.asInstanceOf[js.Any])
+    inline def setArrays(value: Boolean): Self = StObject.set(x, "arrays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArraysUndefined: Self = StObject.set(x, "arrays", js.undefined)
+    inline def setArraysUndefined: Self = StObject.set(x, "arrays", js.undefined)
     
-    @scala.inline
-    def setBytes(value: js.Function): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
+    inline def setBytes(value: js.Function): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesUndefined: Self = StObject.set(x, "bytes", js.undefined)
+    inline def setBytesUndefined: Self = StObject.set(x, "bytes", js.undefined)
     
-    @scala.inline
-    def setDefaults(value: Boolean): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+    inline def setDefaults(value: Boolean): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
+    inline def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
     
-    @scala.inline
-    def setEnums(value: js.Function): Self = StObject.set(x, "enums", value.asInstanceOf[js.Any])
+    inline def setEnums(value: js.Function): Self = StObject.set(x, "enums", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnumsUndefined: Self = StObject.set(x, "enums", js.undefined)
+    inline def setEnumsUndefined: Self = StObject.set(x, "enums", js.undefined)
     
-    @scala.inline
-    def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+    inline def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
+    inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
     
-    @scala.inline
-    def setLongs(value: js.Function): Self = StObject.set(x, "longs", value.asInstanceOf[js.Any])
+    inline def setLongs(value: js.Function): Self = StObject.set(x, "longs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongsUndefined: Self = StObject.set(x, "longs", js.undefined)
+    inline def setLongsUndefined: Self = StObject.set(x, "longs", js.undefined)
     
-    @scala.inline
-    def setObjects(value: Boolean): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
+    inline def setObjects(value: Boolean): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectsUndefined: Self = StObject.set(x, "objects", js.undefined)
+    inline def setObjectsUndefined: Self = StObject.set(x, "objects", js.undefined)
     
-    @scala.inline
-    def setOneofs(value: Boolean): Self = StObject.set(x, "oneofs", value.asInstanceOf[js.Any])
+    inline def setOneofs(value: Boolean): Self = StObject.set(x, "oneofs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneofsUndefined: Self = StObject.set(x, "oneofs", js.undefined)
+    inline def setOneofsUndefined: Self = StObject.set(x, "oneofs", js.undefined)
   }
 }

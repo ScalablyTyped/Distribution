@@ -29,28 +29,21 @@ trait CompileScriptRequest extends StObject {
 }
 object CompileScriptRequest {
   
-  @scala.inline
-  def apply(expression: String, persistScript: Boolean, sourceURL: String): CompileScriptRequest = {
+  inline def apply(expression: String, persistScript: Boolean, sourceURL: String): CompileScriptRequest = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], persistScript = persistScript.asInstanceOf[js.Any], sourceURL = sourceURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompileScriptRequest]
   }
   
-  @scala.inline
-  implicit class CompileScriptRequestMutableBuilder[Self <: CompileScriptRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CompileScriptRequest](x: Self) {
     
-    @scala.inline
-    def setExecutionContextId(value: ExecutionContextId): Self = StObject.set(x, "executionContextId", value.asInstanceOf[js.Any])
+    inline def setExecutionContextId(value: ExecutionContextId): Self = StObject.set(x, "executionContextId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionContextIdUndefined: Self = StObject.set(x, "executionContextId", js.undefined)
+    inline def setExecutionContextIdUndefined: Self = StObject.set(x, "executionContextId", js.undefined)
     
-    @scala.inline
-    def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersistScript(value: Boolean): Self = StObject.set(x, "persistScript", value.asInstanceOf[js.Any])
+    inline def setPersistScript(value: Boolean): Self = StObject.set(x, "persistScript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceURL(value: String): Self = StObject.set(x, "sourceURL", value.asInstanceOf[js.Any])
+    inline def setSourceURL(value: String): Self = StObject.set(x, "sourceURL", value.asInstanceOf[js.Any])
   }
 }

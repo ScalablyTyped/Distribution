@@ -26,8 +26,7 @@ trait SVGFile
      with File
 object SVGFile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addToCache: () => Unit,
     bytesLoaded: Double,
     bytesTotal: Double,

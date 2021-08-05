@@ -16,22 +16,17 @@ trait TargetPoolsRemoveHealthCheckRequest extends StObject {
 }
 object TargetPoolsRemoveHealthCheckRequest {
   
-  @scala.inline
-  def apply(): TargetPoolsRemoveHealthCheckRequest = {
+  inline def apply(): TargetPoolsRemoveHealthCheckRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TargetPoolsRemoveHealthCheckRequest]
   }
   
-  @scala.inline
-  implicit class TargetPoolsRemoveHealthCheckRequestMutableBuilder[Self <: TargetPoolsRemoveHealthCheckRequest] (val x: Self) extends AnyVal {
+  extension [Self <: TargetPoolsRemoveHealthCheckRequest](x: Self) {
     
-    @scala.inline
-    def setHealthChecks(value: js.Array[HealthCheckReference]): Self = StObject.set(x, "healthChecks", value.asInstanceOf[js.Any])
+    inline def setHealthChecks(value: js.Array[HealthCheckReference]): Self = StObject.set(x, "healthChecks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthChecksUndefined: Self = StObject.set(x, "healthChecks", js.undefined)
+    inline def setHealthChecksUndefined: Self = StObject.set(x, "healthChecks", js.undefined)
     
-    @scala.inline
-    def setHealthChecksVarargs(value: HealthCheckReference*): Self = StObject.set(x, "healthChecks", js.Array(value :_*))
+    inline def setHealthChecksVarargs(value: HealthCheckReference*): Self = StObject.set(x, "healthChecks", js.Array(value :_*))
   }
 }

@@ -26,8 +26,7 @@ trait StoryPoint extends StObject {
 }
 object StoryPoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getCaption: () => String,
     getContainedSheet: () => Sheet,
     getIndex: () => Double,
@@ -39,25 +38,18 @@ object StoryPoint {
     __obj.asInstanceOf[StoryPoint]
   }
   
-  @scala.inline
-  implicit class StoryPointMutableBuilder[Self <: StoryPoint] (val x: Self) extends AnyVal {
+  extension [Self <: StoryPoint](x: Self) {
     
-    @scala.inline
-    def setGetCaption(value: () => String): Self = StObject.set(x, "getCaption", js.Any.fromFunction0(value))
+    inline def setGetCaption(value: () => String): Self = StObject.set(x, "getCaption", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetContainedSheet(value: () => Sheet): Self = StObject.set(x, "getContainedSheet", js.Any.fromFunction0(value))
+    inline def setGetContainedSheet(value: () => Sheet): Self = StObject.set(x, "getContainedSheet", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIndex(value: () => Double): Self = StObject.set(x, "getIndex", js.Any.fromFunction0(value))
+    inline def setGetIndex(value: () => Double): Self = StObject.set(x, "getIndex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIsActive(value: () => Boolean): Self = StObject.set(x, "getIsActive", js.Any.fromFunction0(value))
+    inline def setGetIsActive(value: () => Boolean): Self = StObject.set(x, "getIsActive", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIsUpdated(value: () => Boolean): Self = StObject.set(x, "getIsUpdated", js.Any.fromFunction0(value))
+    inline def setGetIsUpdated(value: () => Boolean): Self = StObject.set(x, "getIsUpdated", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetParentStory(value: () => Story): Self = StObject.set(x, "getParentStory", js.Any.fromFunction0(value))
+    inline def setGetParentStory(value: () => Story): Self = StObject.set(x, "getParentStory", js.Any.fromFunction0(value))
   }
 }

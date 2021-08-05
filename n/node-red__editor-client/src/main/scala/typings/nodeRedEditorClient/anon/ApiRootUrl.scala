@@ -10,16 +10,13 @@ trait ApiRootUrl extends StObject {
 }
 object ApiRootUrl {
   
-  @scala.inline
-  def apply(apiRootUrl: String): ApiRootUrl = {
+  inline def apply(apiRootUrl: String): ApiRootUrl = {
     val __obj = js.Dynamic.literal(apiRootUrl = apiRootUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApiRootUrl]
   }
   
-  @scala.inline
-  implicit class ApiRootUrlMutableBuilder[Self <: ApiRootUrl] (val x: Self) extends AnyVal {
+  extension [Self <: ApiRootUrl](x: Self) {
     
-    @scala.inline
-    def setApiRootUrl(value: String): Self = StObject.set(x, "apiRootUrl", value.asInstanceOf[js.Any])
+    inline def setApiRootUrl(value: String): Self = StObject.set(x, "apiRootUrl", value.asInstanceOf[js.Any])
   }
 }

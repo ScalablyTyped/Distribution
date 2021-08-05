@@ -12,19 +12,15 @@ trait TimelineRecordsUpdatedEvent
 }
 object TimelineRecordsUpdatedEvent {
   
-  @scala.inline
-  def apply(buildId: Double, timelineRecords: js.Array[TimelineRecord]): TimelineRecordsUpdatedEvent = {
+  inline def apply(buildId: Double, timelineRecords: js.Array[TimelineRecord]): TimelineRecordsUpdatedEvent = {
     val __obj = js.Dynamic.literal(buildId = buildId.asInstanceOf[js.Any], timelineRecords = timelineRecords.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineRecordsUpdatedEvent]
   }
   
-  @scala.inline
-  implicit class TimelineRecordsUpdatedEventMutableBuilder[Self <: TimelineRecordsUpdatedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: TimelineRecordsUpdatedEvent](x: Self) {
     
-    @scala.inline
-    def setTimelineRecords(value: js.Array[TimelineRecord]): Self = StObject.set(x, "timelineRecords", value.asInstanceOf[js.Any])
+    inline def setTimelineRecords(value: js.Array[TimelineRecord]): Self = StObject.set(x, "timelineRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimelineRecordsVarargs(value: TimelineRecord*): Self = StObject.set(x, "timelineRecords", js.Array(value :_*))
+    inline def setTimelineRecordsVarargs(value: TimelineRecord*): Self = StObject.set(x, "timelineRecords", js.Array(value :_*))
   }
 }

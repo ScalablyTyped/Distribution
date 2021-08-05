@@ -17,8 +17,7 @@ trait TypeofapiKey extends StObject {
 }
 object TypeofapiKey {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     wrapApiKey: (AxiosInstance, ApiKeyProps) => ApiKey,
     wrapApiKeyCollection: (AxiosInstance, CollectionProp[ApiKeyProps]) => Collection[ApiKey, ApiKeyProps]
   ): TypeofapiKey = {
@@ -26,13 +25,10 @@ object TypeofapiKey {
     __obj.asInstanceOf[TypeofapiKey]
   }
   
-  @scala.inline
-  implicit class TypeofapiKeyMutableBuilder[Self <: TypeofapiKey] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofapiKey](x: Self) {
     
-    @scala.inline
-    def setWrapApiKey(value: (AxiosInstance, ApiKeyProps) => ApiKey): Self = StObject.set(x, "wrapApiKey", js.Any.fromFunction2(value))
+    inline def setWrapApiKey(value: (AxiosInstance, ApiKeyProps) => ApiKey): Self = StObject.set(x, "wrapApiKey", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWrapApiKeyCollection(value: (AxiosInstance, CollectionProp[ApiKeyProps]) => Collection[ApiKey, ApiKeyProps]): Self = StObject.set(x, "wrapApiKeyCollection", js.Any.fromFunction2(value))
+    inline def setWrapApiKeyCollection(value: (AxiosInstance, CollectionProp[ApiKeyProps]) => Collection[ApiKey, ApiKeyProps]): Self = StObject.set(x, "wrapApiKeyCollection", js.Any.fromFunction2(value))
   }
 }

@@ -12,16 +12,13 @@ trait PluginInlineStyles
 }
 object PluginInlineStyles {
   
-  @scala.inline
-  def apply(inlineStyles: Boolean | js.Object): PluginInlineStyles = {
+  inline def apply(inlineStyles: Boolean | js.Object): PluginInlineStyles = {
     val __obj = js.Dynamic.literal(inlineStyles = inlineStyles.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginInlineStyles]
   }
   
-  @scala.inline
-  implicit class PluginInlineStylesMutableBuilder[Self <: PluginInlineStyles] (val x: Self) extends AnyVal {
+  extension [Self <: PluginInlineStyles](x: Self) {
     
-    @scala.inline
-    def setInlineStyles(value: Boolean | js.Object): Self = StObject.set(x, "inlineStyles", value.asInstanceOf[js.Any])
+    inline def setInlineStyles(value: Boolean | js.Object): Self = StObject.set(x, "inlineStyles", value.asInstanceOf[js.Any])
   }
 }

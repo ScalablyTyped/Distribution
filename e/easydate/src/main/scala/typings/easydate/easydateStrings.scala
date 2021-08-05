@@ -8,11 +8,9 @@ object easydateStrings {
   
   @js.native
   sealed trait local extends StObject
-  @scala.inline
-  def local: local = "local".asInstanceOf[local]
+  inline def local: local = "local".asInstanceOf[local]
   
   @js.native
   sealed trait utc extends StObject
-  @scala.inline
-  def utc: utc = "utc".asInstanceOf[utc]
+  inline def utc: utc = "utc".asInstanceOf[utc]
 }

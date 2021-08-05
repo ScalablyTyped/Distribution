@@ -16,37 +16,27 @@ trait DataSourceTransportSignalrServer extends StObject {
 }
 object DataSourceTransportSignalrServer {
   
-  @scala.inline
-  def apply(): DataSourceTransportSignalrServer = {
+  inline def apply(): DataSourceTransportSignalrServer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSourceTransportSignalrServer]
   }
   
-  @scala.inline
-  implicit class DataSourceTransportSignalrServerMutableBuilder[Self <: DataSourceTransportSignalrServer] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceTransportSignalrServer](x: Self) {
     
-    @scala.inline
-    def setCreate(value: String): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+    inline def setCreate(value: String): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+    inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
-    @scala.inline
-    def setDestroy(value: String): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
+    inline def setDestroy(value: String): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+    inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
-    @scala.inline
-    def setRead(value: String): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+    inline def setRead(value: String): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
+    inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
     
-    @scala.inline
-    def setUpdate(value: String): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: String): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+    inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

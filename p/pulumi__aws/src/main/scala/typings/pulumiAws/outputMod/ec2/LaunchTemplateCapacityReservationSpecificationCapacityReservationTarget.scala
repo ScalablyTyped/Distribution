@@ -13,19 +13,15 @@ trait LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget ex
 }
 object LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget {
   
-  @scala.inline
-  def apply(): LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget = {
+  inline def apply(): LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget]
   }
   
-  @scala.inline
-  implicit class LaunchTemplateCapacityReservationSpecificationCapacityReservationTargetMutableBuilder[Self <: LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget] (val x: Self) extends AnyVal {
+  extension [Self <: LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget](x: Self) {
     
-    @scala.inline
-    def setCapacityReservationId(value: String): Self = StObject.set(x, "capacityReservationId", value.asInstanceOf[js.Any])
+    inline def setCapacityReservationId(value: String): Self = StObject.set(x, "capacityReservationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapacityReservationIdUndefined: Self = StObject.set(x, "capacityReservationId", js.undefined)
+    inline def setCapacityReservationIdUndefined: Self = StObject.set(x, "capacityReservationId", js.undefined)
   }
 }

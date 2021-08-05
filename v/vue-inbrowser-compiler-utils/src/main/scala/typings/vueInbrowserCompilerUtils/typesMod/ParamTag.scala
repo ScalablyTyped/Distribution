@@ -11,8 +11,7 @@ trait ParamTag
      with BlockTag
 object ParamTag {
   
-  @scala.inline
-  def apply(title: String): ParamTag = {
+  inline def apply(title: String): ParamTag = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamTag]
   }

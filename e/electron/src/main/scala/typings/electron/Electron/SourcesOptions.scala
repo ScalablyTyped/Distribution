@@ -29,31 +29,23 @@ trait SourcesOptions extends StObject {
 }
 object SourcesOptions {
   
-  @scala.inline
-  def apply(types: js.Array[String]): SourcesOptions = {
+  inline def apply(types: js.Array[String]): SourcesOptions = {
     val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourcesOptions]
   }
   
-  @scala.inline
-  implicit class SourcesOptionsMutableBuilder[Self <: SourcesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SourcesOptions](x: Self) {
     
-    @scala.inline
-    def setFetchWindowIcons(value: Boolean): Self = StObject.set(x, "fetchWindowIcons", value.asInstanceOf[js.Any])
+    inline def setFetchWindowIcons(value: Boolean): Self = StObject.set(x, "fetchWindowIcons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFetchWindowIconsUndefined: Self = StObject.set(x, "fetchWindowIcons", js.undefined)
+    inline def setFetchWindowIconsUndefined: Self = StObject.set(x, "fetchWindowIcons", js.undefined)
     
-    @scala.inline
-    def setThumbnailSize(value: Size): Self = StObject.set(x, "thumbnailSize", value.asInstanceOf[js.Any])
+    inline def setThumbnailSize(value: Size): Self = StObject.set(x, "thumbnailSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnailSizeUndefined: Self = StObject.set(x, "thumbnailSize", js.undefined)
+    inline def setThumbnailSizeUndefined: Self = StObject.set(x, "thumbnailSize", js.undefined)
     
-    @scala.inline
-    def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

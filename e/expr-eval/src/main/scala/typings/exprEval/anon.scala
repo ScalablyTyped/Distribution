@@ -102,290 +102,196 @@ object anon {
   }
   object Abs {
     
-    @scala.inline
-    def apply(): Abs = {
+    inline def apply(): Abs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Abs]
     }
     
-    @scala.inline
-    implicit class AbsMutableBuilder[Self <: Abs] (val x: Self) extends AnyVal {
+    extension [Self <: Abs](x: Self) {
       
-      @scala.inline
-      def setAbs(value: Boolean): Self = StObject.set(x, "abs", value.asInstanceOf[js.Any])
+      inline def setAbs(value: Boolean): Self = StObject.set(x, "abs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbsUndefined: Self = StObject.set(x, "abs", js.undefined)
+      inline def setAbsUndefined: Self = StObject.set(x, "abs", js.undefined)
       
-      @scala.inline
-      def setAcos(value: Boolean): Self = StObject.set(x, "acos", value.asInstanceOf[js.Any])
+      inline def setAcos(value: Boolean): Self = StObject.set(x, "acos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcosUndefined: Self = StObject.set(x, "acos", js.undefined)
+      inline def setAcosUndefined: Self = StObject.set(x, "acos", js.undefined)
       
-      @scala.inline
-      def setAcosh(value: Boolean): Self = StObject.set(x, "acosh", value.asInstanceOf[js.Any])
+      inline def setAcosh(value: Boolean): Self = StObject.set(x, "acosh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcoshUndefined: Self = StObject.set(x, "acosh", js.undefined)
+      inline def setAcoshUndefined: Self = StObject.set(x, "acosh", js.undefined)
       
-      @scala.inline
-      def setAdd(value: Boolean): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
+      inline def setAdd(value: Boolean): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
+      inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
       
-      @scala.inline
-      def setAsin(value: Boolean): Self = StObject.set(x, "asin", value.asInstanceOf[js.Any])
+      inline def setAsin(value: Boolean): Self = StObject.set(x, "asin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsinUndefined: Self = StObject.set(x, "asin", js.undefined)
+      inline def setAsinUndefined: Self = StObject.set(x, "asin", js.undefined)
       
-      @scala.inline
-      def setAsinh(value: Boolean): Self = StObject.set(x, "asinh", value.asInstanceOf[js.Any])
+      inline def setAsinh(value: Boolean): Self = StObject.set(x, "asinh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsinhUndefined: Self = StObject.set(x, "asinh", js.undefined)
+      inline def setAsinhUndefined: Self = StObject.set(x, "asinh", js.undefined)
       
-      @scala.inline
-      def setAssignment(value: Boolean): Self = StObject.set(x, "assignment", value.asInstanceOf[js.Any])
+      inline def setAssignment(value: Boolean): Self = StObject.set(x, "assignment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssignmentUndefined: Self = StObject.set(x, "assignment", js.undefined)
+      inline def setAssignmentUndefined: Self = StObject.set(x, "assignment", js.undefined)
       
-      @scala.inline
-      def setAtan(value: Boolean): Self = StObject.set(x, "atan", value.asInstanceOf[js.Any])
+      inline def setAtan(value: Boolean): Self = StObject.set(x, "atan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAtanUndefined: Self = StObject.set(x, "atan", js.undefined)
+      inline def setAtanUndefined: Self = StObject.set(x, "atan", js.undefined)
       
-      @scala.inline
-      def setAtanh(value: Boolean): Self = StObject.set(x, "atanh", value.asInstanceOf[js.Any])
+      inline def setAtanh(value: Boolean): Self = StObject.set(x, "atanh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAtanhUndefined: Self = StObject.set(x, "atanh", js.undefined)
+      inline def setAtanhUndefined: Self = StObject.set(x, "atanh", js.undefined)
       
-      @scala.inline
-      def setCbrt(value: Boolean): Self = StObject.set(x, "cbrt", value.asInstanceOf[js.Any])
+      inline def setCbrt(value: Boolean): Self = StObject.set(x, "cbrt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCbrtUndefined: Self = StObject.set(x, "cbrt", js.undefined)
+      inline def setCbrtUndefined: Self = StObject.set(x, "cbrt", js.undefined)
       
-      @scala.inline
-      def setCeil(value: Boolean): Self = StObject.set(x, "ceil", value.asInstanceOf[js.Any])
+      inline def setCeil(value: Boolean): Self = StObject.set(x, "ceil", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCeilUndefined: Self = StObject.set(x, "ceil", js.undefined)
+      inline def setCeilUndefined: Self = StObject.set(x, "ceil", js.undefined)
       
-      @scala.inline
-      def setComparison(value: Boolean): Self = StObject.set(x, "comparison", value.asInstanceOf[js.Any])
+      inline def setComparison(value: Boolean): Self = StObject.set(x, "comparison", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComparisonUndefined: Self = StObject.set(x, "comparison", js.undefined)
+      inline def setComparisonUndefined: Self = StObject.set(x, "comparison", js.undefined)
       
-      @scala.inline
-      def setConcatenate(value: Boolean): Self = StObject.set(x, "concatenate", value.asInstanceOf[js.Any])
+      inline def setConcatenate(value: Boolean): Self = StObject.set(x, "concatenate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConcatenateUndefined: Self = StObject.set(x, "concatenate", js.undefined)
+      inline def setConcatenateUndefined: Self = StObject.set(x, "concatenate", js.undefined)
       
-      @scala.inline
-      def setConditional(value: Boolean): Self = StObject.set(x, "conditional", value.asInstanceOf[js.Any])
+      inline def setConditional(value: Boolean): Self = StObject.set(x, "conditional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConditionalUndefined: Self = StObject.set(x, "conditional", js.undefined)
+      inline def setConditionalUndefined: Self = StObject.set(x, "conditional", js.undefined)
       
-      @scala.inline
-      def setCos(value: Boolean): Self = StObject.set(x, "cos", value.asInstanceOf[js.Any])
+      inline def setCos(value: Boolean): Self = StObject.set(x, "cos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCosUndefined: Self = StObject.set(x, "cos", js.undefined)
+      inline def setCosUndefined: Self = StObject.set(x, "cos", js.undefined)
       
-      @scala.inline
-      def setCosh(value: Boolean): Self = StObject.set(x, "cosh", value.asInstanceOf[js.Any])
+      inline def setCosh(value: Boolean): Self = StObject.set(x, "cosh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoshUndefined: Self = StObject.set(x, "cosh", js.undefined)
+      inline def setCoshUndefined: Self = StObject.set(x, "cosh", js.undefined)
       
-      @scala.inline
-      def setDivide(value: Boolean): Self = StObject.set(x, "divide", value.asInstanceOf[js.Any])
+      inline def setDivide(value: Boolean): Self = StObject.set(x, "divide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDivideUndefined: Self = StObject.set(x, "divide", js.undefined)
+      inline def setDivideUndefined: Self = StObject.set(x, "divide", js.undefined)
       
-      @scala.inline
-      def setExp(value: Boolean): Self = StObject.set(x, "exp", value.asInstanceOf[js.Any])
+      inline def setExp(value: Boolean): Self = StObject.set(x, "exp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpUndefined: Self = StObject.set(x, "exp", js.undefined)
+      inline def setExpUndefined: Self = StObject.set(x, "exp", js.undefined)
       
-      @scala.inline
-      def setExpm1(value: Boolean): Self = StObject.set(x, "expm1", value.asInstanceOf[js.Any])
+      inline def setExpm1(value: Boolean): Self = StObject.set(x, "expm1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpm1Undefined: Self = StObject.set(x, "expm1", js.undefined)
+      inline def setExpm1Undefined: Self = StObject.set(x, "expm1", js.undefined)
       
-      @scala.inline
-      def setFactorial(value: Boolean): Self = StObject.set(x, "factorial", value.asInstanceOf[js.Any])
+      inline def setFactorial(value: Boolean): Self = StObject.set(x, "factorial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFactorialUndefined: Self = StObject.set(x, "factorial", js.undefined)
+      inline def setFactorialUndefined: Self = StObject.set(x, "factorial", js.undefined)
       
-      @scala.inline
-      def setFloor(value: Boolean): Self = StObject.set(x, "floor", value.asInstanceOf[js.Any])
+      inline def setFloor(value: Boolean): Self = StObject.set(x, "floor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFloorUndefined: Self = StObject.set(x, "floor", js.undefined)
+      inline def setFloorUndefined: Self = StObject.set(x, "floor", js.undefined)
       
-      @scala.inline
-      def setFndef(value: Boolean): Self = StObject.set(x, "fndef", value.asInstanceOf[js.Any])
+      inline def setFndef(value: Boolean): Self = StObject.set(x, "fndef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFndefUndefined: Self = StObject.set(x, "fndef", js.undefined)
+      inline def setFndefUndefined: Self = StObject.set(x, "fndef", js.undefined)
       
-      @scala.inline
-      def setIn(value: Boolean): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+      inline def setIn(value: Boolean): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInUndefined: Self = StObject.set(x, "in", js.undefined)
+      inline def setInUndefined: Self = StObject.set(x, "in", js.undefined)
       
-      @scala.inline
-      def setLength(value: Boolean): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Boolean): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+      inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
       
-      @scala.inline
-      def setLg(value: Boolean): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
+      inline def setLg(value: Boolean): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLgUndefined: Self = StObject.set(x, "lg", js.undefined)
+      inline def setLgUndefined: Self = StObject.set(x, "lg", js.undefined)
       
-      @scala.inline
-      def setLn(value: Boolean): Self = StObject.set(x, "ln", value.asInstanceOf[js.Any])
+      inline def setLn(value: Boolean): Self = StObject.set(x, "ln", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLnUndefined: Self = StObject.set(x, "ln", js.undefined)
+      inline def setLnUndefined: Self = StObject.set(x, "ln", js.undefined)
       
-      @scala.inline
-      def setLog(value: Boolean): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: Boolean): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLog10(value: Boolean): Self = StObject.set(x, "log10", value.asInstanceOf[js.Any])
+      inline def setLog10(value: Boolean): Self = StObject.set(x, "log10", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLog10Undefined: Self = StObject.set(x, "log10", js.undefined)
+      inline def setLog10Undefined: Self = StObject.set(x, "log10", js.undefined)
       
-      @scala.inline
-      def setLog1p(value: Boolean): Self = StObject.set(x, "log1p", value.asInstanceOf[js.Any])
+      inline def setLog1p(value: Boolean): Self = StObject.set(x, "log1p", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLog1pUndefined: Self = StObject.set(x, "log1p", js.undefined)
+      inline def setLog1pUndefined: Self = StObject.set(x, "log1p", js.undefined)
       
-      @scala.inline
-      def setLog2(value: Boolean): Self = StObject.set(x, "log2", value.asInstanceOf[js.Any])
+      inline def setLog2(value: Boolean): Self = StObject.set(x, "log2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLog2Undefined: Self = StObject.set(x, "log2", js.undefined)
+      inline def setLog2Undefined: Self = StObject.set(x, "log2", js.undefined)
       
-      @scala.inline
-      def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+      inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
       
-      @scala.inline
-      def setLogical(value: Boolean): Self = StObject.set(x, "logical", value.asInstanceOf[js.Any])
+      inline def setLogical(value: Boolean): Self = StObject.set(x, "logical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogicalUndefined: Self = StObject.set(x, "logical", js.undefined)
+      inline def setLogicalUndefined: Self = StObject.set(x, "logical", js.undefined)
       
-      @scala.inline
-      def setMax(value: Boolean): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Boolean): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMin(value: Boolean): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Boolean): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      @scala.inline
-      def setMultiply(value: Boolean): Self = StObject.set(x, "multiply", value.asInstanceOf[js.Any])
+      inline def setMultiply(value: Boolean): Self = StObject.set(x, "multiply", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiplyUndefined: Self = StObject.set(x, "multiply", js.undefined)
+      inline def setMultiplyUndefined: Self = StObject.set(x, "multiply", js.undefined)
       
-      @scala.inline
-      def setPower(value: Boolean): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
+      inline def setPower(value: Boolean): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPowerUndefined: Self = StObject.set(x, "power", js.undefined)
+      inline def setPowerUndefined: Self = StObject.set(x, "power", js.undefined)
       
-      @scala.inline
-      def setRandom(value: Boolean): Self = StObject.set(x, "random", value.asInstanceOf[js.Any])
+      inline def setRandom(value: Boolean): Self = StObject.set(x, "random", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRandomUndefined: Self = StObject.set(x, "random", js.undefined)
+      inline def setRandomUndefined: Self = StObject.set(x, "random", js.undefined)
       
-      @scala.inline
-      def setRemainder(value: Boolean): Self = StObject.set(x, "remainder", value.asInstanceOf[js.Any])
+      inline def setRemainder(value: Boolean): Self = StObject.set(x, "remainder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemainderUndefined: Self = StObject.set(x, "remainder", js.undefined)
+      inline def setRemainderUndefined: Self = StObject.set(x, "remainder", js.undefined)
       
-      @scala.inline
-      def setRound(value: Boolean): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
+      inline def setRound(value: Boolean): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
+      inline def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
       
-      @scala.inline
-      def setSign(value: Boolean): Self = StObject.set(x, "sign", value.asInstanceOf[js.Any])
+      inline def setSign(value: Boolean): Self = StObject.set(x, "sign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignUndefined: Self = StObject.set(x, "sign", js.undefined)
+      inline def setSignUndefined: Self = StObject.set(x, "sign", js.undefined)
       
-      @scala.inline
-      def setSin(value: Boolean): Self = StObject.set(x, "sin", value.asInstanceOf[js.Any])
+      inline def setSin(value: Boolean): Self = StObject.set(x, "sin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSinUndefined: Self = StObject.set(x, "sin", js.undefined)
+      inline def setSinUndefined: Self = StObject.set(x, "sin", js.undefined)
       
-      @scala.inline
-      def setSinh(value: Boolean): Self = StObject.set(x, "sinh", value.asInstanceOf[js.Any])
+      inline def setSinh(value: Boolean): Self = StObject.set(x, "sinh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSinhUndefined: Self = StObject.set(x, "sinh", js.undefined)
+      inline def setSinhUndefined: Self = StObject.set(x, "sinh", js.undefined)
       
-      @scala.inline
-      def setSqrt(value: Boolean): Self = StObject.set(x, "sqrt", value.asInstanceOf[js.Any])
+      inline def setSqrt(value: Boolean): Self = StObject.set(x, "sqrt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSqrtUndefined: Self = StObject.set(x, "sqrt", js.undefined)
+      inline def setSqrtUndefined: Self = StObject.set(x, "sqrt", js.undefined)
       
-      @scala.inline
-      def setSubtract(value: Boolean): Self = StObject.set(x, "subtract", value.asInstanceOf[js.Any])
+      inline def setSubtract(value: Boolean): Self = StObject.set(x, "subtract", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtractUndefined: Self = StObject.set(x, "subtract", js.undefined)
+      inline def setSubtractUndefined: Self = StObject.set(x, "subtract", js.undefined)
       
-      @scala.inline
-      def setTan(value: Boolean): Self = StObject.set(x, "tan", value.asInstanceOf[js.Any])
+      inline def setTan(value: Boolean): Self = StObject.set(x, "tan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTanUndefined: Self = StObject.set(x, "tan", js.undefined)
+      inline def setTanUndefined: Self = StObject.set(x, "tan", js.undefined)
       
-      @scala.inline
-      def setTanh(value: Boolean): Self = StObject.set(x, "tanh", value.asInstanceOf[js.Any])
+      inline def setTanh(value: Boolean): Self = StObject.set(x, "tanh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTanhUndefined: Self = StObject.set(x, "tanh", js.undefined)
+      inline def setTanhUndefined: Self = StObject.set(x, "tanh", js.undefined)
       
-      @scala.inline
-      def setTrunc(value: Boolean): Self = StObject.set(x, "trunc", value.asInstanceOf[js.Any])
+      inline def setTrunc(value: Boolean): Self = StObject.set(x, "trunc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTruncUndefined: Self = StObject.set(x, "trunc", js.undefined)
+      inline def setTruncUndefined: Self = StObject.set(x, "trunc", js.undefined)
     }
   }
   
@@ -395,20 +301,16 @@ object anon {
   }
   object WithMembers {
     
-    @scala.inline
-    def apply(): WithMembers = {
+    inline def apply(): WithMembers = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WithMembers]
     }
     
-    @scala.inline
-    implicit class WithMembersMutableBuilder[Self <: WithMembers] (val x: Self) extends AnyVal {
+    extension [Self <: WithMembers](x: Self) {
       
-      @scala.inline
-      def setWithMembers(value: Boolean): Self = StObject.set(x, "withMembers", value.asInstanceOf[js.Any])
+      inline def setWithMembers(value: Boolean): Self = StObject.set(x, "withMembers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithMembersUndefined: Self = StObject.set(x, "withMembers", js.undefined)
+      inline def setWithMembersUndefined: Self = StObject.set(x, "withMembers", js.undefined)
     }
   }
 }

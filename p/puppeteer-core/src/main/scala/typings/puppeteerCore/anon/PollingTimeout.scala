@@ -12,25 +12,19 @@ trait PollingTimeout extends StObject {
 }
 object PollingTimeout {
   
-  @scala.inline
-  def apply(): PollingTimeout = {
+  inline def apply(): PollingTimeout = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PollingTimeout]
   }
   
-  @scala.inline
-  implicit class PollingTimeoutMutableBuilder[Self <: PollingTimeout] (val x: Self) extends AnyVal {
+  extension [Self <: PollingTimeout](x: Self) {
     
-    @scala.inline
-    def setPolling(value: String | Double): Self = StObject.set(x, "polling", value.asInstanceOf[js.Any])
+    inline def setPolling(value: String | Double): Self = StObject.set(x, "polling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPollingUndefined: Self = StObject.set(x, "polling", js.undefined)
+    inline def setPollingUndefined: Self = StObject.set(x, "polling", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

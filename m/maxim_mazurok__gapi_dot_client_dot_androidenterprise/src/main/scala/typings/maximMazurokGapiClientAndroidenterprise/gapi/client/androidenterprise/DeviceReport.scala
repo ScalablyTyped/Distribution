@@ -14,28 +14,21 @@ trait DeviceReport extends StObject {
 }
 object DeviceReport {
   
-  @scala.inline
-  def apply(): DeviceReport = {
+  inline def apply(): DeviceReport = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceReport]
   }
   
-  @scala.inline
-  implicit class DeviceReportMutableBuilder[Self <: DeviceReport] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceReport](x: Self) {
     
-    @scala.inline
-    def setAppState(value: js.Array[AppState]): Self = StObject.set(x, "appState", value.asInstanceOf[js.Any])
+    inline def setAppState(value: js.Array[AppState]): Self = StObject.set(x, "appState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppStateUndefined: Self = StObject.set(x, "appState", js.undefined)
+    inline def setAppStateUndefined: Self = StObject.set(x, "appState", js.undefined)
     
-    @scala.inline
-    def setAppStateVarargs(value: AppState*): Self = StObject.set(x, "appState", js.Array(value :_*))
+    inline def setAppStateVarargs(value: AppState*): Self = StObject.set(x, "appState", js.Array(value :_*))
     
-    @scala.inline
-    def setLastUpdatedTimestampMillis(value: String): Self = StObject.set(x, "lastUpdatedTimestampMillis", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTimestampMillis(value: String): Self = StObject.set(x, "lastUpdatedTimestampMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedTimestampMillisUndefined: Self = StObject.set(x, "lastUpdatedTimestampMillis", js.undefined)
+    inline def setLastUpdatedTimestampMillisUndefined: Self = StObject.set(x, "lastUpdatedTimestampMillis", js.undefined)
   }
 }

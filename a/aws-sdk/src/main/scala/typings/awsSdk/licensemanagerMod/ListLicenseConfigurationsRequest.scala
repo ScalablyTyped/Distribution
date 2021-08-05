@@ -28,43 +28,31 @@ trait ListLicenseConfigurationsRequest extends StObject {
 }
 object ListLicenseConfigurationsRequest {
   
-  @scala.inline
-  def apply(): ListLicenseConfigurationsRequest = {
+  inline def apply(): ListLicenseConfigurationsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListLicenseConfigurationsRequest]
   }
   
-  @scala.inline
-  implicit class ListLicenseConfigurationsRequestMutableBuilder[Self <: ListLicenseConfigurationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListLicenseConfigurationsRequest](x: Self) {
     
-    @scala.inline
-    def setFilters(value: Filters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: Filters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
-    @scala.inline
-    def setLicenseConfigurationArns(value: StringList): Self = StObject.set(x, "LicenseConfigurationArns", value.asInstanceOf[js.Any])
+    inline def setLicenseConfigurationArns(value: StringList): Self = StObject.set(x, "LicenseConfigurationArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicenseConfigurationArnsUndefined: Self = StObject.set(x, "LicenseConfigurationArns", js.undefined)
+    inline def setLicenseConfigurationArnsUndefined: Self = StObject.set(x, "LicenseConfigurationArns", js.undefined)
     
-    @scala.inline
-    def setLicenseConfigurationArnsVarargs(value: String*): Self = StObject.set(x, "LicenseConfigurationArns", js.Array(value :_*))
+    inline def setLicenseConfigurationArnsVarargs(value: String*): Self = StObject.set(x, "LicenseConfigurationArns", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxResults(value: BoxInteger): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: BoxInteger): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

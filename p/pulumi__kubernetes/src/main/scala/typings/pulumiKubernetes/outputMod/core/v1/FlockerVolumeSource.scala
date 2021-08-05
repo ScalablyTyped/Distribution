@@ -21,19 +21,15 @@ trait FlockerVolumeSource extends StObject {
 }
 object FlockerVolumeSource {
   
-  @scala.inline
-  def apply(datasetName: String, datasetUUID: String): FlockerVolumeSource = {
+  inline def apply(datasetName: String, datasetUUID: String): FlockerVolumeSource = {
     val __obj = js.Dynamic.literal(datasetName = datasetName.asInstanceOf[js.Any], datasetUUID = datasetUUID.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlockerVolumeSource]
   }
   
-  @scala.inline
-  implicit class FlockerVolumeSourceMutableBuilder[Self <: FlockerVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: FlockerVolumeSource](x: Self) {
     
-    @scala.inline
-    def setDatasetName(value: String): Self = StObject.set(x, "datasetName", value.asInstanceOf[js.Any])
+    inline def setDatasetName(value: String): Self = StObject.set(x, "datasetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetUUID(value: String): Self = StObject.set(x, "datasetUUID", value.asInstanceOf[js.Any])
+    inline def setDatasetUUID(value: String): Self = StObject.set(x, "datasetUUID", value.asInstanceOf[js.Any])
   }
 }

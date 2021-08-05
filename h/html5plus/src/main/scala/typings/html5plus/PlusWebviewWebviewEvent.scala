@@ -145,109 +145,75 @@ trait PlusWebviewWebviewEvent extends StObject {
 }
 object PlusWebviewWebviewEvent {
   
-  @scala.inline
-  def apply(): PlusWebviewWebviewEvent = {
+  inline def apply(): PlusWebviewWebviewEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusWebviewWebviewEvent]
   }
   
-  @scala.inline
-  implicit class PlusWebviewWebviewEventMutableBuilder[Self <: PlusWebviewWebviewEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PlusWebviewWebviewEvent](x: Self) {
     
-    @scala.inline
-    def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+    inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
-    @scala.inline
-    def setDragBounce(value: String): Self = StObject.set(x, "dragBounce", value.asInstanceOf[js.Any])
+    inline def setDragBounce(value: String): Self = StObject.set(x, "dragBounce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragBounceUndefined: Self = StObject.set(x, "dragBounce", js.undefined)
+    inline def setDragBounceUndefined: Self = StObject.set(x, "dragBounce", js.undefined)
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setHide(value: String): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+    inline def setHide(value: String): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
+    inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
-    @scala.inline
-    def setLoaded(value: String): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+    inline def setLoaded(value: String): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
+    inline def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
     
-    @scala.inline
-    def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+    inline def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+    inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
     
-    @scala.inline
-    def setMaskClick(value: String): Self = StObject.set(x, "maskClick", value.asInstanceOf[js.Any])
+    inline def setMaskClick(value: String): Self = StObject.set(x, "maskClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaskClickUndefined: Self = StObject.set(x, "maskClick", js.undefined)
+    inline def setMaskClickUndefined: Self = StObject.set(x, "maskClick", js.undefined)
     
-    @scala.inline
-    def setPopGesture(value: String): Self = StObject.set(x, "popGesture", value.asInstanceOf[js.Any])
+    inline def setPopGesture(value: String): Self = StObject.set(x, "popGesture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopGestureUndefined: Self = StObject.set(x, "popGesture", js.undefined)
+    inline def setPopGestureUndefined: Self = StObject.set(x, "popGesture", js.undefined)
     
-    @scala.inline
-    def setProgressChanged(value: String): Self = StObject.set(x, "progressChanged", value.asInstanceOf[js.Any])
+    inline def setProgressChanged(value: String): Self = StObject.set(x, "progressChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressChangedUndefined: Self = StObject.set(x, "progressChanged", js.undefined)
+    inline def setProgressChangedUndefined: Self = StObject.set(x, "progressChanged", js.undefined)
     
-    @scala.inline
-    def setPullToRefresh(value: String): Self = StObject.set(x, "pullToRefresh", value.asInstanceOf[js.Any])
+    inline def setPullToRefresh(value: String): Self = StObject.set(x, "pullToRefresh", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullToRefreshUndefined: Self = StObject.set(x, "pullToRefresh", js.undefined)
+    inline def setPullToRefreshUndefined: Self = StObject.set(x, "pullToRefresh", js.undefined)
     
-    @scala.inline
-    def setRendered(value: String): Self = StObject.set(x, "rendered", value.asInstanceOf[js.Any])
+    inline def setRendered(value: String): Self = StObject.set(x, "rendered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderedUndefined: Self = StObject.set(x, "rendered", js.undefined)
+    inline def setRenderedUndefined: Self = StObject.set(x, "rendered", js.undefined)
     
-    @scala.inline
-    def setRendering(value: String): Self = StObject.set(x, "rendering", value.asInstanceOf[js.Any])
+    inline def setRendering(value: String): Self = StObject.set(x, "rendering", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderingUndefined: Self = StObject.set(x, "rendering", js.undefined)
+    inline def setRenderingUndefined: Self = StObject.set(x, "rendering", js.undefined)
     
-    @scala.inline
-    def setShow(value: String): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: String): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
-    @scala.inline
-    def setSlideBounce(value: String): Self = StObject.set(x, "slideBounce", value.asInstanceOf[js.Any])
+    inline def setSlideBounce(value: String): Self = StObject.set(x, "slideBounce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlideBounceUndefined: Self = StObject.set(x, "slideBounce", js.undefined)
+    inline def setSlideBounceUndefined: Self = StObject.set(x, "slideBounce", js.undefined)
     
-    @scala.inline
-    def setTitleUpdate(value: String): Self = StObject.set(x, "titleUpdate", value.asInstanceOf[js.Any])
+    inline def setTitleUpdate(value: String): Self = StObject.set(x, "titleUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUpdateUndefined: Self = StObject.set(x, "titleUpdate", js.undefined)
+    inline def setTitleUpdateUndefined: Self = StObject.set(x, "titleUpdate", js.undefined)
     
-    @scala.inline
-    def setTouchstart(value: String): Self = StObject.set(x, "touchstart", value.asInstanceOf[js.Any])
+    inline def setTouchstart(value: String): Self = StObject.set(x, "touchstart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchstartUndefined: Self = StObject.set(x, "touchstart", js.undefined)
+    inline def setTouchstartUndefined: Self = StObject.set(x, "touchstart", js.undefined)
   }
 }

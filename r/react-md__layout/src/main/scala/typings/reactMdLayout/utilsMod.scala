@@ -13,22 +13,17 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getLayoutType(
+  inline def getLayoutType(
     hasAppSizePhoneLayoutTabletLayoutLandscapeTabletLayoutDesktopLayoutLargeDesktopLayout: GetLayoutOptions
   ): SupportedWideLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("getLayoutType")(hasAppSizePhoneLayoutTabletLayoutLandscapeTabletLayoutDesktopLayoutLargeDesktopLayout.asInstanceOf[js.Any]).asInstanceOf[SupportedWideLayout]
   
-  @scala.inline
-  def isFullHeightLayout(layout: SupportedWideLayout): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFullHeightLayout")(layout.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isFullHeightLayout(layout: SupportedWideLayout): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFullHeightLayout")(layout.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isPersistentLayout(layout: SupportedWideLayout): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPersistentLayout")(layout.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isPersistentLayout(layout: SupportedWideLayout): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPersistentLayout")(layout.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isTemporaryLayout(layout: SupportedWideLayout): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTemporaryLayout")(layout.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isTemporaryLayout(layout: SupportedWideLayout): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTemporaryLayout")(layout.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isToggleableLayout(layout: SupportedWideLayout): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isToggleableLayout")(layout.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isToggleableLayout(layout: SupportedWideLayout): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isToggleableLayout")(layout.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   trait GetLayoutOptions
     extends StObject
@@ -42,17 +37,14 @@ object utilsMod {
   }
   object GetLayoutOptions {
     
-    @scala.inline
-    def apply(appSize: AppSize): GetLayoutOptions = {
+    inline def apply(appSize: AppSize): GetLayoutOptions = {
       val __obj = js.Dynamic.literal(appSize = appSize.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetLayoutOptions]
     }
     
-    @scala.inline
-    implicit class GetLayoutOptionsMutableBuilder[Self <: GetLayoutOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GetLayoutOptions](x: Self) {
       
-      @scala.inline
-      def setAppSize(value: AppSize): Self = StObject.set(x, "appSize", value.asInstanceOf[js.Any])
+      inline def setAppSize(value: AppSize): Self = StObject.set(x, "appSize", value.asInstanceOf[js.Any])
     }
   }
 }

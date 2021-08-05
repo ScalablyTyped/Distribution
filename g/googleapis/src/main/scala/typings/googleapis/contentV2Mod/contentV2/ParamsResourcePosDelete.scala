@@ -41,43 +41,31 @@ trait ParamsResourcePosDelete
 }
 object ParamsResourcePosDelete {
   
-  @scala.inline
-  def apply(): ParamsResourcePosDelete = {
+  inline def apply(): ParamsResourcePosDelete = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourcePosDelete]
   }
   
-  @scala.inline
-  implicit class ParamsResourcePosDeleteMutableBuilder[Self <: ParamsResourcePosDelete] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourcePosDelete](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
     
-    @scala.inline
-    def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
+    inline def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
+    inline def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
     
-    @scala.inline
-    def setStoreCode(value: String): Self = StObject.set(x, "storeCode", value.asInstanceOf[js.Any])
+    inline def setStoreCode(value: String): Self = StObject.set(x, "storeCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoreCodeUndefined: Self = StObject.set(x, "storeCode", js.undefined)
+    inline def setStoreCodeUndefined: Self = StObject.set(x, "storeCode", js.undefined)
     
-    @scala.inline
-    def setTargetMerchantId(value: String): Self = StObject.set(x, "targetMerchantId", value.asInstanceOf[js.Any])
+    inline def setTargetMerchantId(value: String): Self = StObject.set(x, "targetMerchantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetMerchantIdUndefined: Self = StObject.set(x, "targetMerchantId", js.undefined)
+    inline def setTargetMerchantIdUndefined: Self = StObject.set(x, "targetMerchantId", js.undefined)
   }
 }

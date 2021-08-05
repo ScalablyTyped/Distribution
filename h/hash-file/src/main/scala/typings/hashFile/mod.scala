@@ -6,13 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(src: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def apply(src: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
   @JSImport("hash-file", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def sync(src: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(src.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def sync(src: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(src.asInstanceOf[js.Any]).asInstanceOf[String]
 }

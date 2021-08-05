@@ -15,19 +15,15 @@ trait Collection[K]
 }
 object Collection {
   
-  @scala.inline
-  def apply[K](clear: () => Unit, delete: K => Boolean, has: K => Boolean, keys: () => Iterator[K], size: Double): Collection[K] = {
+  inline def apply[K](clear: () => Unit, delete: K => Boolean, has: K => Boolean, keys: () => Iterator[K], size: Double): Collection[K] = {
     val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), delete = js.Any.fromFunction1(delete), has = js.Any.fromFunction1(has), keys = js.Any.fromFunction0(keys), size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[Collection[K]]
   }
   
-  @scala.inline
-  implicit class CollectionMutableBuilder[Self <: Collection[?], K] (val x: Self & Collection[K]) extends AnyVal {
+  extension [Self <: Collection[?], K](x: Self & Collection[K]) {
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDelete(value: K => Boolean): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
+    inline def setDelete(value: K => Boolean): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
   }
 }

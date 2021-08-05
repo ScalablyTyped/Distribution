@@ -16,13 +16,12 @@ trait Adjustments extends StObject {
   
   val Parent: js.Any
   
-  @JSName("Word.Adjustments_typekey")
+  /* private */ @JSName("Word.Adjustments_typekey")
   var WordDotAdjustments_typekey: Adjustments
 }
 object Adjustments {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Count: Double,
     Creator: Double,
@@ -35,25 +34,18 @@ object Adjustments {
     __obj.asInstanceOf[Adjustments]
   }
   
-  @scala.inline
-  implicit class AdjustmentsMutableBuilder[Self <: Adjustments] (val x: Self) extends AnyVal {
+  extension [Self <: Adjustments](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Double => Double): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => Double): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotAdjustments_typekey(value: Adjustments): Self = StObject.set(x, "Word.Adjustments_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotAdjustments_typekey(value: Adjustments): Self = StObject.set(x, "Word.Adjustments_typekey", value.asInstanceOf[js.Any])
   }
 }

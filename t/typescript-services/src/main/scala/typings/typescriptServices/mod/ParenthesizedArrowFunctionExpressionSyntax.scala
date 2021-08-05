@@ -114,13 +114,11 @@ object ParenthesizedArrowFunctionExpressionSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(
+  inline def create(
     callSignature: typings.typescriptServices.TypeScript.CallSignatureSyntax,
     equalsGreaterThanToken: ISyntaxToken
   ): typings.typescriptServices.TypeScript.ParenthesizedArrowFunctionExpressionSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(callSignature.asInstanceOf[js.Any], equalsGreaterThanToken.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.ParenthesizedArrowFunctionExpressionSyntax]
   
   /* static member */
-  @scala.inline
-  def create1(): typings.typescriptServices.TypeScript.ParenthesizedArrowFunctionExpressionSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")().asInstanceOf[typings.typescriptServices.TypeScript.ParenthesizedArrowFunctionExpressionSyntax]
+  inline def create1(): typings.typescriptServices.TypeScript.ParenthesizedArrowFunctionExpressionSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")().asInstanceOf[typings.typescriptServices.TypeScript.ParenthesizedArrowFunctionExpressionSyntax]
 }

@@ -64,20 +64,16 @@ object mod {
     }
     object HTMLElement {
       
-      @scala.inline
-      def apply(config: TablesorterConfigurationStore[HTMLElement], hasInitialized: Boolean): HTMLElement = {
+      inline def apply(config: TablesorterConfigurationStore[HTMLElement], hasInitialized: Boolean): HTMLElement = {
         val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], hasInitialized = hasInitialized.asInstanceOf[js.Any])
         __obj.asInstanceOf[HTMLElement]
       }
       
-      @scala.inline
-      implicit class HTMLElementMutableBuilder[Self <: HTMLElement] (val x: Self) extends AnyVal {
+      extension [Self <: HTMLElement](x: Self) {
         
-        @scala.inline
-        def setConfig(value: TablesorterConfigurationStore[HTMLElement]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+        inline def setConfig(value: TablesorterConfigurationStore[HTMLElement]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHasInitialized(value: Boolean): Self = StObject.set(x, "hasInitialized", value.asInstanceOf[js.Any])
+        inline def setHasInitialized(value: Boolean): Self = StObject.set(x, "hasInitialized", value.asInstanceOf[js.Any])
       }
     }
     
@@ -194,17 +190,14 @@ object mod {
     }
     object JQueryStatic {
       
-      @scala.inline
-      def apply[TElement](tablesorter: Tablesorter[TElement]): JQueryStatic[TElement] = {
+      inline def apply[TElement](tablesorter: Tablesorter[TElement]): JQueryStatic[TElement] = {
         val __obj = js.Dynamic.literal(tablesorter = tablesorter.asInstanceOf[js.Any])
         __obj.asInstanceOf[JQueryStatic[TElement]]
       }
       
-      @scala.inline
-      implicit class JQueryStaticMutableBuilder[Self <: JQueryStatic[?], TElement] (val x: Self & JQueryStatic[TElement]) extends AnyVal {
+      extension [Self <: JQueryStatic[?], TElement](x: Self & JQueryStatic[TElement]) {
         
-        @scala.inline
-        def setTablesorter(value: Tablesorter[TElement]): Self = StObject.set(x, "tablesorter", value.asInstanceOf[js.Any])
+        inline def setTablesorter(value: Tablesorter[TElement]): Self = StObject.set(x, "tablesorter", value.asInstanceOf[js.Any])
       }
     }
   }

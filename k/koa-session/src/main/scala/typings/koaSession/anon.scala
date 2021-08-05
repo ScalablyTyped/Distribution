@@ -24,23 +24,18 @@ object anon {
   }
   object Changed {
     
-    @scala.inline
-    def apply(changed: Boolean): Changed = {
+    inline def apply(changed: Boolean): Changed = {
       val __obj = js.Dynamic.literal(changed = changed.asInstanceOf[js.Any])
       __obj.asInstanceOf[Changed]
     }
     
-    @scala.inline
-    implicit class ChangedMutableBuilder[Self <: Changed] (val x: Self) extends AnyVal {
+    extension [Self <: Changed](x: Self) {
       
-      @scala.inline
-      def setChanged(value: Boolean): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
+      inline def setChanged(value: Boolean): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRolling(value: Boolean): Self = StObject.set(x, "rolling", value.asInstanceOf[js.Any])
+      inline def setRolling(value: Boolean): Self = StObject.set(x, "rolling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRollingUndefined: Self = StObject.set(x, "rolling", js.undefined)
+      inline def setRollingUndefined: Self = StObject.set(x, "rolling", js.undefined)
     }
   }
   
@@ -66,50 +61,36 @@ object anon {
   }
   object PartialSession {
     
-    @scala.inline
-    def apply(): PartialSession = {
+    inline def apply(): PartialSession = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialSession]
     }
     
-    @scala.inline
-    implicit class PartialSessionMutableBuilder[Self <: PartialSession] (val x: Self) extends AnyVal {
+    extension [Self <: PartialSession](x: Self) {
       
-      @scala.inline
-      def setInspect(value: () => js.Object): Self = StObject.set(x, "inspect", js.Any.fromFunction0(value))
+      inline def setInspect(value: () => js.Object): Self = StObject.set(x, "inspect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInspectUndefined: Self = StObject.set(x, "inspect", js.undefined)
+      inline def setInspectUndefined: Self = StObject.set(x, "inspect", js.undefined)
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+      inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
       
-      @scala.inline
-      def setMaxAge(value: Double | session): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      inline def setMaxAge(value: Double | session): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+      inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
       
-      @scala.inline
-      def setPopulated(value: Boolean): Self = StObject.set(x, "populated", value.asInstanceOf[js.Any])
+      inline def setPopulated(value: Boolean): Self = StObject.set(x, "populated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopulatedUndefined: Self = StObject.set(x, "populated", js.undefined)
+      inline def setPopulatedUndefined: Self = StObject.set(x, "populated", js.undefined)
       
-      @scala.inline
-      def setSave(value: () => Unit): Self = StObject.set(x, "save", js.Any.fromFunction0(value))
+      inline def setSave(value: () => Unit): Self = StObject.set(x, "save", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
+      inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
       
-      @scala.inline
-      def setToJSON(value: () => js.Object): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => js.Object): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToJSONUndefined: Self = StObject.set(x, "toJSON", js.undefined)
+      inline def setToJSONUndefined: Self = StObject.set(x, "toJSON", js.undefined)
     }
   }
   
@@ -134,62 +115,44 @@ object anon {
   }
   object PartialSessionexpirenumbe {
     
-    @scala.inline
-    def apply(): PartialSessionexpirenumbe = {
+    inline def apply(): PartialSessionexpirenumbe = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialSessionexpirenumbe]
     }
     
-    @scala.inline
-    implicit class PartialSessionexpirenumbeMutableBuilder[Self <: PartialSessionexpirenumbe] (val x: Self) extends AnyVal {
+    extension [Self <: PartialSessionexpirenumbe](x: Self) {
       
-      @scala.inline
-      def setInspect(value: () => js.Object): Self = StObject.set(x, "inspect", js.Any.fromFunction0(value))
+      inline def setInspect(value: () => js.Object): Self = StObject.set(x, "inspect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInspectUndefined: Self = StObject.set(x, "inspect", js.undefined)
+      inline def setInspectUndefined: Self = StObject.set(x, "inspect", js.undefined)
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+      inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
       
-      @scala.inline
-      def setMaxAge(value: Double | session): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      inline def setMaxAge(value: Double | session): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+      inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
       
-      @scala.inline
-      def setPopulated(value: Boolean): Self = StObject.set(x, "populated", value.asInstanceOf[js.Any])
+      inline def setPopulated(value: Boolean): Self = StObject.set(x, "populated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopulatedUndefined: Self = StObject.set(x, "populated", js.undefined)
+      inline def setPopulatedUndefined: Self = StObject.set(x, "populated", js.undefined)
       
-      @scala.inline
-      def setSave(value: () => Unit): Self = StObject.set(x, "save", js.Any.fromFunction0(value))
+      inline def setSave(value: () => Unit): Self = StObject.set(x, "save", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
+      inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
       
-      @scala.inline
-      def setToJSON(value: () => js.Object): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => js.Object): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToJSONUndefined: Self = StObject.set(x, "toJSON", js.undefined)
+      inline def setToJSONUndefined: Self = StObject.set(x, "toJSON", js.undefined)
       
-      @scala.inline
-      def set_expire(value: Double): Self = StObject.set(x, "_expire", value.asInstanceOf[js.Any])
+      inline def set_expire(value: Double): Self = StObject.set(x, "_expire", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_expireUndefined: Self = StObject.set(x, "_expire", js.undefined)
+      inline def set_expireUndefined: Self = StObject.set(x, "_expire", js.undefined)
       
-      @scala.inline
-      def set_maxAge(value: Double): Self = StObject.set(x, "_maxAge", value.asInstanceOf[js.Any])
+      inline def set_maxAge(value: Double): Self = StObject.set(x, "_maxAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_maxAgeUndefined: Self = StObject.set(x, "_maxAge", js.undefined)
+      inline def set_maxAgeUndefined: Self = StObject.set(x, "_maxAge", js.undefined)
     }
   }
   
@@ -242,146 +205,100 @@ object anon {
   }
   object Partialopts {
     
-    @scala.inline
-    def apply(): Partialopts = {
+    inline def apply(): Partialopts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Partialopts]
     }
     
-    @scala.inline
-    implicit class PartialoptsMutableBuilder[Self <: Partialopts] (val x: Self) extends AnyVal {
+    extension [Self <: Partialopts](x: Self) {
       
-      @scala.inline
-      def setBeforeSave(value: (/* ctx */ Context, /* session */ Session) => Unit): Self = StObject.set(x, "beforeSave", js.Any.fromFunction2(value))
+      inline def setBeforeSave(value: (/* ctx */ Context, /* session */ Session) => Unit): Self = StObject.set(x, "beforeSave", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBeforeSaveUndefined: Self = StObject.set(x, "beforeSave", js.undefined)
+      inline def setBeforeSaveUndefined: Self = StObject.set(x, "beforeSave", js.undefined)
       
-      @scala.inline
-      def setContextStore(value: Instantiable): Self = StObject.set(x, "ContextStore", value.asInstanceOf[js.Any])
+      inline def setContextStore(value: Instantiable): Self = StObject.set(x, "ContextStore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextStoreUndefined: Self = StObject.set(x, "ContextStore", js.undefined)
+      inline def setContextStoreUndefined: Self = StObject.set(x, "ContextStore", js.undefined)
       
-      @scala.inline
-      def setDecode(value: /* str */ String => js.Object): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
+      inline def setDecode(value: /* str */ String => js.Object): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDecodeUndefined: Self = StObject.set(x, "decode", js.undefined)
+      inline def setDecodeUndefined: Self = StObject.set(x, "decode", js.undefined)
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+      inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      @scala.inline
-      def setEncode(value: /* obj */ js.Object => String): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
+      inline def setEncode(value: /* obj */ js.Object => String): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
+      inline def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
       
-      @scala.inline
-      def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
+      inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
       
-      @scala.inline
-      def setExternalKey(value: ExternalKeys): Self = StObject.set(x, "externalKey", value.asInstanceOf[js.Any])
+      inline def setExternalKey(value: ExternalKeys): Self = StObject.set(x, "externalKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternalKeyUndefined: Self = StObject.set(x, "externalKey", js.undefined)
+      inline def setExternalKeyUndefined: Self = StObject.set(x, "externalKey", js.undefined)
       
-      @scala.inline
-      def setGenid(value: () => String): Self = StObject.set(x, "genid", js.Any.fromFunction0(value))
+      inline def setGenid(value: () => String): Self = StObject.set(x, "genid", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGenidUndefined: Self = StObject.set(x, "genid", js.undefined)
+      inline def setGenidUndefined: Self = StObject.set(x, "genid", js.undefined)
       
-      @scala.inline
-      def setHttpOnly(value: Boolean): Self = StObject.set(x, "httpOnly", value.asInstanceOf[js.Any])
+      inline def setHttpOnly(value: Boolean): Self = StObject.set(x, "httpOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpOnlyUndefined: Self = StObject.set(x, "httpOnly", js.undefined)
+      inline def setHttpOnlyUndefined: Self = StObject.set(x, "httpOnly", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setMaxAge(value: Double | session): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      inline def setMaxAge(value: Double | session): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+      inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
       
-      @scala.inline
-      def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
+      inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
+      inline def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setRenew(value: Boolean): Self = StObject.set(x, "renew", value.asInstanceOf[js.Any])
+      inline def setRenew(value: Boolean): Self = StObject.set(x, "renew", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenewUndefined: Self = StObject.set(x, "renew", js.undefined)
+      inline def setRenewUndefined: Self = StObject.set(x, "renew", js.undefined)
       
-      @scala.inline
-      def setRolling(value: Boolean): Self = StObject.set(x, "rolling", value.asInstanceOf[js.Any])
+      inline def setRolling(value: Boolean): Self = StObject.set(x, "rolling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRollingUndefined: Self = StObject.set(x, "rolling", js.undefined)
+      inline def setRollingUndefined: Self = StObject.set(x, "rolling", js.undefined)
       
-      @scala.inline
-      def setSameSite(value: strict | lax | none | Boolean): Self = StObject.set(x, "sameSite", value.asInstanceOf[js.Any])
+      inline def setSameSite(value: strict | lax | none | Boolean): Self = StObject.set(x, "sameSite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSameSiteUndefined: Self = StObject.set(x, "sameSite", js.undefined)
+      inline def setSameSiteUndefined: Self = StObject.set(x, "sameSite", js.undefined)
       
-      @scala.inline
-      def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+      inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecureProxy(value: Boolean): Self = StObject.set(x, "secureProxy", value.asInstanceOf[js.Any])
+      inline def setSecureProxy(value: Boolean): Self = StObject.set(x, "secureProxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecureProxyUndefined: Self = StObject.set(x, "secureProxy", js.undefined)
+      inline def setSecureProxyUndefined: Self = StObject.set(x, "secureProxy", js.undefined)
       
-      @scala.inline
-      def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
+      inline def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
       
-      @scala.inline
-      def setSigned(value: Boolean): Self = StObject.set(x, "signed", value.asInstanceOf[js.Any])
+      inline def setSigned(value: Boolean): Self = StObject.set(x, "signed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignedUndefined: Self = StObject.set(x, "signed", js.undefined)
+      inline def setSignedUndefined: Self = StObject.set(x, "signed", js.undefined)
       
-      @scala.inline
-      def setStore(value: stores): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      inline def setStore(value: stores): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
+      inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
       
-      @scala.inline
-      def setValid(value: (/* ctx */ Context, /* session */ PartialSession) => Unit): Self = StObject.set(x, "valid", js.Any.fromFunction2(value))
+      inline def setValid(value: (/* ctx */ Context, /* session */ PartialSession) => Unit): Self = StObject.set(x, "valid", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
+      inline def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
     }
   }
   
@@ -391,20 +308,16 @@ object anon {
   }
   object Rolling {
     
-    @scala.inline
-    def apply(): Rolling = {
+    inline def apply(): Rolling = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Rolling]
     }
     
-    @scala.inline
-    implicit class RollingMutableBuilder[Self <: Rolling] (val x: Self) extends AnyVal {
+    extension [Self <: Rolling](x: Self) {
       
-      @scala.inline
-      def setRolling(value: Boolean): Self = StObject.set(x, "rolling", value.asInstanceOf[js.Any])
+      inline def setRolling(value: Boolean): Self = StObject.set(x, "rolling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRollingUndefined: Self = StObject.set(x, "rolling", js.undefined)
+      inline def setRollingUndefined: Self = StObject.set(x, "rolling", js.undefined)
     }
   }
 }

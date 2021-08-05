@@ -43,10 +43,8 @@ object boundaryMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def makeByConstInterval(interval: ConstInterval): BoundaryInterval = ^.asInstanceOf[js.Dynamic].applyDynamic("makeByConstInterval")(interval.asInstanceOf[js.Any]).asInstanceOf[BoundaryInterval]
+    inline def makeByConstInterval(interval: ConstInterval): BoundaryInterval = ^.asInstanceOf[js.Dynamic].applyDynamic("makeByConstInterval")(interval.asInstanceOf[js.Any]).asInstanceOf[BoundaryInterval]
     
-    @scala.inline
-    def normalized(pointA: Double, pointB: Double): BoundaryInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("normalized")(pointA.asInstanceOf[js.Any], pointB.asInstanceOf[js.Any])).asInstanceOf[BoundaryInterval]
+    inline def normalized(pointA: Double, pointB: Double): BoundaryInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("normalized")(pointA.asInstanceOf[js.Any], pointB.asInstanceOf[js.Any])).asInstanceOf[BoundaryInterval]
   }
 }

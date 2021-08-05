@@ -34,46 +34,33 @@ trait Scheduling extends StObject {
 }
 object Scheduling {
   
-  @scala.inline
-  def apply(): Scheduling = {
+  inline def apply(): Scheduling = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Scheduling]
   }
   
-  @scala.inline
-  implicit class SchedulingMutableBuilder[Self <: Scheduling] (val x: Self) extends AnyVal {
+  extension [Self <: Scheduling](x: Self) {
     
-    @scala.inline
-    def setAutomaticRestart(value: Boolean): Self = StObject.set(x, "automaticRestart", value.asInstanceOf[js.Any])
+    inline def setAutomaticRestart(value: Boolean): Self = StObject.set(x, "automaticRestart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutomaticRestartUndefined: Self = StObject.set(x, "automaticRestart", js.undefined)
+    inline def setAutomaticRestartUndefined: Self = StObject.set(x, "automaticRestart", js.undefined)
     
-    @scala.inline
-    def setMinNodeCpus(value: Double): Self = StObject.set(x, "minNodeCpus", value.asInstanceOf[js.Any])
+    inline def setMinNodeCpus(value: Double): Self = StObject.set(x, "minNodeCpus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinNodeCpusUndefined: Self = StObject.set(x, "minNodeCpus", js.undefined)
+    inline def setMinNodeCpusUndefined: Self = StObject.set(x, "minNodeCpus", js.undefined)
     
-    @scala.inline
-    def setNodeAffinities(value: js.Array[SchedulingNodeAffinity]): Self = StObject.set(x, "nodeAffinities", value.asInstanceOf[js.Any])
+    inline def setNodeAffinities(value: js.Array[SchedulingNodeAffinity]): Self = StObject.set(x, "nodeAffinities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeAffinitiesUndefined: Self = StObject.set(x, "nodeAffinities", js.undefined)
+    inline def setNodeAffinitiesUndefined: Self = StObject.set(x, "nodeAffinities", js.undefined)
     
-    @scala.inline
-    def setNodeAffinitiesVarargs(value: SchedulingNodeAffinity*): Self = StObject.set(x, "nodeAffinities", js.Array(value :_*))
+    inline def setNodeAffinitiesVarargs(value: SchedulingNodeAffinity*): Self = StObject.set(x, "nodeAffinities", js.Array(value :_*))
     
-    @scala.inline
-    def setOnHostMaintenance(value: String): Self = StObject.set(x, "onHostMaintenance", value.asInstanceOf[js.Any])
+    inline def setOnHostMaintenance(value: String): Self = StObject.set(x, "onHostMaintenance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnHostMaintenanceUndefined: Self = StObject.set(x, "onHostMaintenance", js.undefined)
+    inline def setOnHostMaintenanceUndefined: Self = StObject.set(x, "onHostMaintenance", js.undefined)
     
-    @scala.inline
-    def setPreemptible(value: Boolean): Self = StObject.set(x, "preemptible", value.asInstanceOf[js.Any])
+    inline def setPreemptible(value: Boolean): Self = StObject.set(x, "preemptible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreemptibleUndefined: Self = StObject.set(x, "preemptible", js.undefined)
+    inline def setPreemptibleUndefined: Self = StObject.set(x, "preemptible", js.undefined)
   }
 }

@@ -12,22 +12,17 @@ trait BestPath extends StObject {
 }
 object BestPath {
   
-  @scala.inline
-  def apply(componenets: js.Array[Change], newPos: Double): BestPath = {
+  inline def apply(componenets: js.Array[Change], newPos: Double): BestPath = {
     val __obj = js.Dynamic.literal(componenets = componenets.asInstanceOf[js.Any], newPos = newPos.asInstanceOf[js.Any])
     __obj.asInstanceOf[BestPath]
   }
   
-  @scala.inline
-  implicit class BestPathMutableBuilder[Self <: BestPath] (val x: Self) extends AnyVal {
+  extension [Self <: BestPath](x: Self) {
     
-    @scala.inline
-    def setComponenets(value: js.Array[Change]): Self = StObject.set(x, "componenets", value.asInstanceOf[js.Any])
+    inline def setComponenets(value: js.Array[Change]): Self = StObject.set(x, "componenets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponenetsVarargs(value: Change*): Self = StObject.set(x, "componenets", js.Array(value :_*))
+    inline def setComponenetsVarargs(value: Change*): Self = StObject.set(x, "componenets", js.Array(value :_*))
     
-    @scala.inline
-    def setNewPos(value: Double): Self = StObject.set(x, "newPos", value.asInstanceOf[js.Any])
+    inline def setNewPos(value: Double): Self = StObject.set(x, "newPos", value.asInstanceOf[js.Any])
   }
 }

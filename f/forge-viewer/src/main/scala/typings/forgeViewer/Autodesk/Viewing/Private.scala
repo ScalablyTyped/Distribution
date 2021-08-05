@@ -41,8 +41,7 @@ object Private {
   }
   object BoundsCallback {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       onCircularArc: (Double, Double, Double, Double, Double, Double) => Unit,
       onEllipticalArc: (Double, Double, Double, Double, Double, Double, Double, Double) => Unit,
       onLineSegment: (Double, Double, Double, Double, Double) => Unit,
@@ -54,26 +53,19 @@ object Private {
       __obj.asInstanceOf[BoundsCallback]
     }
     
-    @scala.inline
-    implicit class BoundsCallbackMutableBuilder[Self <: BoundsCallback] (val x: Self) extends AnyVal {
+    extension [Self <: BoundsCallback](x: Self) {
       
-      @scala.inline
-      def setOnCircularArc(value: (Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "onCircularArc", js.Any.fromFunction6(value))
+      inline def setOnCircularArc(value: (Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "onCircularArc", js.Any.fromFunction6(value))
       
-      @scala.inline
-      def setOnEllipticalArc(value: (Double, Double, Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "onEllipticalArc", js.Any.fromFunction8(value))
+      inline def setOnEllipticalArc(value: (Double, Double, Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "onEllipticalArc", js.Any.fromFunction8(value))
       
-      @scala.inline
-      def setOnLineSegment(value: (Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "onLineSegment", js.Any.fromFunction5(value))
+      inline def setOnLineSegment(value: (Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "onLineSegment", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setOnOneTriangle(value: (Double, Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "onOneTriangle", js.Any.fromFunction7(value))
+      inline def setOnOneTriangle(value: (Double, Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "onOneTriangle", js.Any.fromFunction7(value))
       
-      @scala.inline
-      def setOnTexQuad(value: (Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "onTexQuad", js.Any.fromFunction6(value))
+      inline def setOnTexQuad(value: (Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "onTexQuad", js.Any.fromFunction6(value))
       
-      @scala.inline
-      def setOnVertex(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "onVertex", js.Any.fromFunction3(value))
+      inline def setOnVertex(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "onVertex", js.Any.fromFunction3(value))
     }
   }
   
@@ -85,20 +77,16 @@ object Private {
   }
   object Dimensions {
     
-    @scala.inline
-    def apply(height: Double, width: Double): Dimensions = {
+    inline def apply(height: Double, width: Double): Dimensions = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dimensions]
     }
     
-    @scala.inline
-    implicit class DimensionsMutableBuilder[Self <: Dimensions] (val x: Self) extends AnyVal {
+    extension [Self <: Dimensions](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -124,8 +112,7 @@ object Private {
   }
   object HitTestResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dbId: Double,
       distance: Double,
       face: Face3,
@@ -141,35 +128,25 @@ object Private {
       __obj.asInstanceOf[HitTestResult]
     }
     
-    @scala.inline
-    implicit class HitTestResultMutableBuilder[Self <: HitTestResult] (val x: Self) extends AnyVal {
+    extension [Self <: HitTestResult](x: Self) {
       
-      @scala.inline
-      def setDbId(value: Double): Self = StObject.set(x, "dbId", value.asInstanceOf[js.Any])
+      inline def setDbId(value: Double): Self = StObject.set(x, "dbId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+      inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFace(value: Face3): Self = StObject.set(x, "face", value.asInstanceOf[js.Any])
+      inline def setFace(value: Face3): Self = StObject.set(x, "face", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFaceIndex(value: Double): Self = StObject.set(x, "faceIndex", value.asInstanceOf[js.Any])
+      inline def setFaceIndex(value: Double): Self = StObject.set(x, "faceIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFragId(value: Double): Self = StObject.set(x, "fragId", value.asInstanceOf[js.Any])
+      inline def setFragId(value: Double): Self = StObject.set(x, "fragId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntersectPoint(value: Vector3): Self = StObject.set(x, "intersectPoint", value.asInstanceOf[js.Any])
+      inline def setIntersectPoint(value: Vector3): Self = StObject.set(x, "intersectPoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModel(value: Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPoint(value: Vector3): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+      inline def setPoint(value: Vector3): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     }
   }
   
@@ -218,26 +195,20 @@ object Private {
   }
   object PreferencesOptions {
     
-    @scala.inline
-    def apply(): PreferencesOptions = {
+    inline def apply(): PreferencesOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PreferencesOptions]
     }
     
-    @scala.inline
-    implicit class PreferencesOptionsMutableBuilder[Self <: PreferencesOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PreferencesOptions](x: Self) {
       
-      @scala.inline
-      def setLocalStorage(value: Boolean): Self = StObject.set(x, "localStorage", value.asInstanceOf[js.Any])
+      inline def setLocalStorage(value: Boolean): Self = StObject.set(x, "localStorage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalStorageUndefined: Self = StObject.set(x, "localStorage", js.undefined)
+      inline def setLocalStorageUndefined: Self = StObject.set(x, "localStorage", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     }
   }
   
@@ -251,8 +222,7 @@ object Private {
   }
   object VertexBufferReader {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       enumGeoms: (js.Any, js.Any) => Unit,
       enumGeomsForObject: (Double, js.Any) => Unit,
       enumGeomsForVisibleLayer: (js.Array[Double], js.Any) => Unit
@@ -261,17 +231,13 @@ object Private {
       __obj.asInstanceOf[VertexBufferReader]
     }
     
-    @scala.inline
-    implicit class VertexBufferReaderMutableBuilder[Self <: VertexBufferReader] (val x: Self) extends AnyVal {
+    extension [Self <: VertexBufferReader](x: Self) {
       
-      @scala.inline
-      def setEnumGeoms(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "enumGeoms", js.Any.fromFunction2(value))
+      inline def setEnumGeoms(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "enumGeoms", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEnumGeomsForObject(value: (Double, js.Any) => Unit): Self = StObject.set(x, "enumGeomsForObject", js.Any.fromFunction2(value))
+      inline def setEnumGeomsForObject(value: (Double, js.Any) => Unit): Self = StObject.set(x, "enumGeomsForObject", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEnumGeomsForVisibleLayer(value: (js.Array[Double], js.Any) => Unit): Self = StObject.set(x, "enumGeomsForVisibleLayer", js.Any.fromFunction2(value))
+      inline def setEnumGeomsForVisibleLayer(value: (js.Array[Double], js.Any) => Unit): Self = StObject.set(x, "enumGeomsForVisibleLayer", js.Any.fromFunction2(value))
     }
   }
   

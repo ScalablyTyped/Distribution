@@ -19,43 +19,31 @@ trait ScatterPoint extends StObject {
 }
 object ScatterPoint {
   
-  @scala.inline
-  def apply(): ScatterPoint = {
+  inline def apply(): ScatterPoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScatterPoint]
   }
   
-  @scala.inline
-  implicit class ScatterPointMutableBuilder[Self <: ScatterPoint] (val x: Self) extends AnyVal {
+  extension [Self <: ScatterPoint](x: Self) {
     
-    @scala.inline
-    def setCx(value: Double): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
+    inline def setCx(value: Double): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCxUndefined: Self = StObject.set(x, "cx", js.undefined)
+    inline def setCxUndefined: Self = StObject.set(x, "cx", js.undefined)
     
-    @scala.inline
-    def setCy(value: Double): Self = StObject.set(x, "cy", value.asInstanceOf[js.Any])
+    inline def setCy(value: Double): Self = StObject.set(x, "cy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCyUndefined: Self = StObject.set(x, "cy", js.undefined)
+    inline def setCyUndefined: Self = StObject.set(x, "cy", js.undefined)
     
-    @scala.inline
-    def setNode(value: X): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: X): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+    inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
     
-    @scala.inline
-    def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait GetGraphqlApiRequest extends StObject {
 }
 object GetGraphqlApiRequest {
   
-  @scala.inline
-  def apply(apiId: String): GetGraphqlApiRequest = {
+  inline def apply(apiId: String): GetGraphqlApiRequest = {
     val __obj = js.Dynamic.literal(apiId = apiId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetGraphqlApiRequest]
   }
   
-  @scala.inline
-  implicit class GetGraphqlApiRequestMutableBuilder[Self <: GetGraphqlApiRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetGraphqlApiRequest](x: Self) {
     
-    @scala.inline
-    def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
+    inline def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
   }
 }

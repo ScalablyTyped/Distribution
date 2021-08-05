@@ -44,8 +44,7 @@ object AdvancedRequestHandling {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): AdvancedRequestHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[AdvancedRequestHandling]
+  inline def create(model: IModel): AdvancedRequestHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[AdvancedRequestHandling]
   
   /**
     * Creates and returns a new AdvancedRequestHandling instance in the SDK and on the server.
@@ -56,8 +55,7 @@ object AdvancedRequestHandling {
     *  6.6.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInRestCallActionUnderRequestHandling(container: RestCallAction): AdvancedRequestHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestCallActionUnderRequestHandling")(container.asInstanceOf[js.Any]).asInstanceOf[AdvancedRequestHandling]
+  inline def createInRestCallActionUnderRequestHandling(container: RestCallAction): AdvancedRequestHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestCallActionUnderRequestHandling")(container.asInstanceOf[js.Any]).asInstanceOf[AdvancedRequestHandling]
   
   /**
     * Creates and returns a new AdvancedRequestHandling instance in the SDK and on the server.
@@ -65,8 +63,7 @@ object AdvancedRequestHandling {
     * of the parent WebServiceCallAction element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInWebServiceCallActionUnderRequestBodyHandling(container: WebServiceCallAction): AdvancedRequestHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderRequestBodyHandling")(container.asInstanceOf[js.Any]).asInstanceOf[AdvancedRequestHandling]
+  inline def createInWebServiceCallActionUnderRequestBodyHandling(container: WebServiceCallAction): AdvancedRequestHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderRequestBodyHandling")(container.asInstanceOf[js.Any]).asInstanceOf[AdvancedRequestHandling]
   
   /**
     * Creates and returns a new AdvancedRequestHandling instance in the SDK and on the server.
@@ -74,20 +71,17 @@ object AdvancedRequestHandling {
     * of the parent WebServiceCallAction element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInWebServiceCallActionUnderRequestHeaderHandling(container: WebServiceCallAction): AdvancedRequestHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderRequestHeaderHandling")(container.asInstanceOf[js.Any]).asInstanceOf[AdvancedRequestHandling]
+  inline def createInWebServiceCallActionUnderRequestHeaderHandling(container: WebServiceCallAction): AdvancedRequestHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderRequestHeaderHandling")(container.asInstanceOf[js.Any]).asInstanceOf[AdvancedRequestHandling]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.AdvancedRequestHandling.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.AdvancedRequestHandling.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

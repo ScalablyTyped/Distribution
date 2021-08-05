@@ -10,16 +10,13 @@ trait AppsGetUserInstallationEndpoint extends StObject {
 }
 object AppsGetUserInstallationEndpoint {
   
-  @scala.inline
-  def apply(username: String): AppsGetUserInstallationEndpoint = {
+  inline def apply(username: String): AppsGetUserInstallationEndpoint = {
     val __obj = js.Dynamic.literal(username = username.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppsGetUserInstallationEndpoint]
   }
   
-  @scala.inline
-  implicit class AppsGetUserInstallationEndpointMutableBuilder[Self <: AppsGetUserInstallationEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: AppsGetUserInstallationEndpoint](x: Self) {
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

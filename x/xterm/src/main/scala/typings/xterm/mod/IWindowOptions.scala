@@ -157,145 +157,99 @@ trait IWindowOptions extends StObject {
 }
 object IWindowOptions {
   
-  @scala.inline
-  def apply(): IWindowOptions = {
+  inline def apply(): IWindowOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IWindowOptions]
   }
   
-  @scala.inline
-  implicit class IWindowOptionsMutableBuilder[Self <: IWindowOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IWindowOptions](x: Self) {
     
-    @scala.inline
-    def setFullscreenWin(value: Boolean): Self = StObject.set(x, "fullscreenWin", value.asInstanceOf[js.Any])
+    inline def setFullscreenWin(value: Boolean): Self = StObject.set(x, "fullscreenWin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullscreenWinUndefined: Self = StObject.set(x, "fullscreenWin", js.undefined)
+    inline def setFullscreenWinUndefined: Self = StObject.set(x, "fullscreenWin", js.undefined)
     
-    @scala.inline
-    def setGetCellSizePixels(value: Boolean): Self = StObject.set(x, "getCellSizePixels", value.asInstanceOf[js.Any])
+    inline def setGetCellSizePixels(value: Boolean): Self = StObject.set(x, "getCellSizePixels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCellSizePixelsUndefined: Self = StObject.set(x, "getCellSizePixels", js.undefined)
+    inline def setGetCellSizePixelsUndefined: Self = StObject.set(x, "getCellSizePixels", js.undefined)
     
-    @scala.inline
-    def setGetIconTitle(value: Boolean): Self = StObject.set(x, "getIconTitle", value.asInstanceOf[js.Any])
+    inline def setGetIconTitle(value: Boolean): Self = StObject.set(x, "getIconTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetIconTitleUndefined: Self = StObject.set(x, "getIconTitle", js.undefined)
+    inline def setGetIconTitleUndefined: Self = StObject.set(x, "getIconTitle", js.undefined)
     
-    @scala.inline
-    def setGetScreenSizeChars(value: Boolean): Self = StObject.set(x, "getScreenSizeChars", value.asInstanceOf[js.Any])
+    inline def setGetScreenSizeChars(value: Boolean): Self = StObject.set(x, "getScreenSizeChars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetScreenSizeCharsUndefined: Self = StObject.set(x, "getScreenSizeChars", js.undefined)
+    inline def setGetScreenSizeCharsUndefined: Self = StObject.set(x, "getScreenSizeChars", js.undefined)
     
-    @scala.inline
-    def setGetScreenSizePixels(value: Boolean): Self = StObject.set(x, "getScreenSizePixels", value.asInstanceOf[js.Any])
+    inline def setGetScreenSizePixels(value: Boolean): Self = StObject.set(x, "getScreenSizePixels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetScreenSizePixelsUndefined: Self = StObject.set(x, "getScreenSizePixels", js.undefined)
+    inline def setGetScreenSizePixelsUndefined: Self = StObject.set(x, "getScreenSizePixels", js.undefined)
     
-    @scala.inline
-    def setGetWinPosition(value: Boolean): Self = StObject.set(x, "getWinPosition", value.asInstanceOf[js.Any])
+    inline def setGetWinPosition(value: Boolean): Self = StObject.set(x, "getWinPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetWinPositionUndefined: Self = StObject.set(x, "getWinPosition", js.undefined)
+    inline def setGetWinPositionUndefined: Self = StObject.set(x, "getWinPosition", js.undefined)
     
-    @scala.inline
-    def setGetWinSizeChars(value: Boolean): Self = StObject.set(x, "getWinSizeChars", value.asInstanceOf[js.Any])
+    inline def setGetWinSizeChars(value: Boolean): Self = StObject.set(x, "getWinSizeChars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetWinSizeCharsUndefined: Self = StObject.set(x, "getWinSizeChars", js.undefined)
+    inline def setGetWinSizeCharsUndefined: Self = StObject.set(x, "getWinSizeChars", js.undefined)
     
-    @scala.inline
-    def setGetWinSizePixels(value: Boolean): Self = StObject.set(x, "getWinSizePixels", value.asInstanceOf[js.Any])
+    inline def setGetWinSizePixels(value: Boolean): Self = StObject.set(x, "getWinSizePixels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetWinSizePixelsUndefined: Self = StObject.set(x, "getWinSizePixels", js.undefined)
+    inline def setGetWinSizePixelsUndefined: Self = StObject.set(x, "getWinSizePixels", js.undefined)
     
-    @scala.inline
-    def setGetWinState(value: Boolean): Self = StObject.set(x, "getWinState", value.asInstanceOf[js.Any])
+    inline def setGetWinState(value: Boolean): Self = StObject.set(x, "getWinState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetWinStateUndefined: Self = StObject.set(x, "getWinState", js.undefined)
+    inline def setGetWinStateUndefined: Self = StObject.set(x, "getWinState", js.undefined)
     
-    @scala.inline
-    def setGetWinTitle(value: Boolean): Self = StObject.set(x, "getWinTitle", value.asInstanceOf[js.Any])
+    inline def setGetWinTitle(value: Boolean): Self = StObject.set(x, "getWinTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetWinTitleUndefined: Self = StObject.set(x, "getWinTitle", js.undefined)
+    inline def setGetWinTitleUndefined: Self = StObject.set(x, "getWinTitle", js.undefined)
     
-    @scala.inline
-    def setLowerWin(value: Boolean): Self = StObject.set(x, "lowerWin", value.asInstanceOf[js.Any])
+    inline def setLowerWin(value: Boolean): Self = StObject.set(x, "lowerWin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowerWinUndefined: Self = StObject.set(x, "lowerWin", js.undefined)
+    inline def setLowerWinUndefined: Self = StObject.set(x, "lowerWin", js.undefined)
     
-    @scala.inline
-    def setMaximizeWin(value: Boolean): Self = StObject.set(x, "maximizeWin", value.asInstanceOf[js.Any])
+    inline def setMaximizeWin(value: Boolean): Self = StObject.set(x, "maximizeWin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximizeWinUndefined: Self = StObject.set(x, "maximizeWin", js.undefined)
+    inline def setMaximizeWinUndefined: Self = StObject.set(x, "maximizeWin", js.undefined)
     
-    @scala.inline
-    def setMinimizeWin(value: Boolean): Self = StObject.set(x, "minimizeWin", value.asInstanceOf[js.Any])
+    inline def setMinimizeWin(value: Boolean): Self = StObject.set(x, "minimizeWin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimizeWinUndefined: Self = StObject.set(x, "minimizeWin", js.undefined)
+    inline def setMinimizeWinUndefined: Self = StObject.set(x, "minimizeWin", js.undefined)
     
-    @scala.inline
-    def setPopTitle(value: Boolean): Self = StObject.set(x, "popTitle", value.asInstanceOf[js.Any])
+    inline def setPopTitle(value: Boolean): Self = StObject.set(x, "popTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopTitleUndefined: Self = StObject.set(x, "popTitle", js.undefined)
+    inline def setPopTitleUndefined: Self = StObject.set(x, "popTitle", js.undefined)
     
-    @scala.inline
-    def setPushTitle(value: Boolean): Self = StObject.set(x, "pushTitle", value.asInstanceOf[js.Any])
+    inline def setPushTitle(value: Boolean): Self = StObject.set(x, "pushTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPushTitleUndefined: Self = StObject.set(x, "pushTitle", js.undefined)
+    inline def setPushTitleUndefined: Self = StObject.set(x, "pushTitle", js.undefined)
     
-    @scala.inline
-    def setRaiseWin(value: Boolean): Self = StObject.set(x, "raiseWin", value.asInstanceOf[js.Any])
+    inline def setRaiseWin(value: Boolean): Self = StObject.set(x, "raiseWin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRaiseWinUndefined: Self = StObject.set(x, "raiseWin", js.undefined)
+    inline def setRaiseWinUndefined: Self = StObject.set(x, "raiseWin", js.undefined)
     
-    @scala.inline
-    def setRefreshWin(value: Boolean): Self = StObject.set(x, "refreshWin", value.asInstanceOf[js.Any])
+    inline def setRefreshWin(value: Boolean): Self = StObject.set(x, "refreshWin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshWinUndefined: Self = StObject.set(x, "refreshWin", js.undefined)
+    inline def setRefreshWinUndefined: Self = StObject.set(x, "refreshWin", js.undefined)
     
-    @scala.inline
-    def setRestoreWin(value: Boolean): Self = StObject.set(x, "restoreWin", value.asInstanceOf[js.Any])
+    inline def setRestoreWin(value: Boolean): Self = StObject.set(x, "restoreWin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestoreWinUndefined: Self = StObject.set(x, "restoreWin", js.undefined)
+    inline def setRestoreWinUndefined: Self = StObject.set(x, "restoreWin", js.undefined)
     
-    @scala.inline
-    def setSetWinLines(value: Boolean): Self = StObject.set(x, "setWinLines", value.asInstanceOf[js.Any])
+    inline def setSetWinLines(value: Boolean): Self = StObject.set(x, "setWinLines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetWinLinesUndefined: Self = StObject.set(x, "setWinLines", js.undefined)
+    inline def setSetWinLinesUndefined: Self = StObject.set(x, "setWinLines", js.undefined)
     
-    @scala.inline
-    def setSetWinPosition(value: Boolean): Self = StObject.set(x, "setWinPosition", value.asInstanceOf[js.Any])
+    inline def setSetWinPosition(value: Boolean): Self = StObject.set(x, "setWinPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetWinPositionUndefined: Self = StObject.set(x, "setWinPosition", js.undefined)
+    inline def setSetWinPositionUndefined: Self = StObject.set(x, "setWinPosition", js.undefined)
     
-    @scala.inline
-    def setSetWinSizeChars(value: Boolean): Self = StObject.set(x, "setWinSizeChars", value.asInstanceOf[js.Any])
+    inline def setSetWinSizeChars(value: Boolean): Self = StObject.set(x, "setWinSizeChars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetWinSizeCharsUndefined: Self = StObject.set(x, "setWinSizeChars", js.undefined)
+    inline def setSetWinSizeCharsUndefined: Self = StObject.set(x, "setWinSizeChars", js.undefined)
     
-    @scala.inline
-    def setSetWinSizePixels(value: Boolean): Self = StObject.set(x, "setWinSizePixels", value.asInstanceOf[js.Any])
+    inline def setSetWinSizePixels(value: Boolean): Self = StObject.set(x, "setWinSizePixels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetWinSizePixelsUndefined: Self = StObject.set(x, "setWinSizePixels", js.undefined)
+    inline def setSetWinSizePixelsUndefined: Self = StObject.set(x, "setWinSizePixels", js.undefined)
   }
 }

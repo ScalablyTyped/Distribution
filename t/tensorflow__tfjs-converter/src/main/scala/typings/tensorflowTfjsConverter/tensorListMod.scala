@@ -122,22 +122,17 @@ object tensorListMod {
     val tensors: js.Array[Tensor[Rank]] = js.native
   }
   
-  @scala.inline
-  def fromTensor(tensor: Tensor[Rank], elementShape: js.Array[Double], elementDtype: DataType): TensorList = (^.asInstanceOf[js.Dynamic].applyDynamic("fromTensor")(tensor.asInstanceOf[js.Any], elementShape.asInstanceOf[js.Any], elementDtype.asInstanceOf[js.Any])).asInstanceOf[TensorList]
+  inline def fromTensor(tensor: Tensor[Rank], elementShape: js.Array[Double], elementDtype: DataType): TensorList = (^.asInstanceOf[js.Dynamic].applyDynamic("fromTensor")(tensor.asInstanceOf[js.Any], elementShape.asInstanceOf[js.Any], elementDtype.asInstanceOf[js.Any])).asInstanceOf[TensorList]
   
-  @scala.inline
-  def reserve(elementShape: js.Array[Double], elementDtype: DataType, numElements: Double): TensorList = (^.asInstanceOf[js.Dynamic].applyDynamic("reserve")(elementShape.asInstanceOf[js.Any], elementDtype.asInstanceOf[js.Any], numElements.asInstanceOf[js.Any])).asInstanceOf[TensorList]
+  inline def reserve(elementShape: js.Array[Double], elementDtype: DataType, numElements: Double): TensorList = (^.asInstanceOf[js.Dynamic].applyDynamic("reserve")(elementShape.asInstanceOf[js.Any], elementDtype.asInstanceOf[js.Any], numElements.asInstanceOf[js.Any])).asInstanceOf[TensorList]
   
-  @scala.inline
-  def scatter(tensor: Tensor[Rank], indices: js.Array[Double], elementShape: js.Array[Double]): TensorList = (^.asInstanceOf[js.Dynamic].applyDynamic("scatter")(tensor.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], elementShape.asInstanceOf[js.Any])).asInstanceOf[TensorList]
-  @scala.inline
-  def scatter(
+  inline def scatter(tensor: Tensor[Rank], indices: js.Array[Double], elementShape: js.Array[Double]): TensorList = (^.asInstanceOf[js.Dynamic].applyDynamic("scatter")(tensor.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], elementShape.asInstanceOf[js.Any])).asInstanceOf[TensorList]
+  inline def scatter(
     tensor: Tensor[Rank],
     indices: js.Array[Double],
     elementShape: js.Array[Double],
     numElements: Double
   ): TensorList = (^.asInstanceOf[js.Dynamic].applyDynamic("scatter")(tensor.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], elementShape.asInstanceOf[js.Any], numElements.asInstanceOf[js.Any])).asInstanceOf[TensorList]
   
-  @scala.inline
-  def split(tensor: Tensor[Rank], length: js.Array[Double], elementShape: js.Array[Double]): TensorList = (^.asInstanceOf[js.Dynamic].applyDynamic("split")(tensor.asInstanceOf[js.Any], length.asInstanceOf[js.Any], elementShape.asInstanceOf[js.Any])).asInstanceOf[TensorList]
+  inline def split(tensor: Tensor[Rank], length: js.Array[Double], elementShape: js.Array[Double]): TensorList = (^.asInstanceOf[js.Dynamic].applyDynamic("split")(tensor.asInstanceOf[js.Any], length.asInstanceOf[js.Any], elementShape.asInstanceOf[js.Any])).asInstanceOf[TensorList]
 }

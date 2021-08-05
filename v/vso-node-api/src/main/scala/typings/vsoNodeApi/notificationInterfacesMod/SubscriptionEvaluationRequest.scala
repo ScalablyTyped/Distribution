@@ -19,19 +19,15 @@ trait SubscriptionEvaluationRequest extends StObject {
 }
 object SubscriptionEvaluationRequest {
   
-  @scala.inline
-  def apply(minEventsCreatedDate: Date, subscriptionCreateParameters: NotificationSubscriptionCreateParameters): SubscriptionEvaluationRequest = {
+  inline def apply(minEventsCreatedDate: Date, subscriptionCreateParameters: NotificationSubscriptionCreateParameters): SubscriptionEvaluationRequest = {
     val __obj = js.Dynamic.literal(minEventsCreatedDate = minEventsCreatedDate.asInstanceOf[js.Any], subscriptionCreateParameters = subscriptionCreateParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriptionEvaluationRequest]
   }
   
-  @scala.inline
-  implicit class SubscriptionEvaluationRequestMutableBuilder[Self <: SubscriptionEvaluationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SubscriptionEvaluationRequest](x: Self) {
     
-    @scala.inline
-    def setMinEventsCreatedDate(value: Date): Self = StObject.set(x, "minEventsCreatedDate", value.asInstanceOf[js.Any])
+    inline def setMinEventsCreatedDate(value: Date): Self = StObject.set(x, "minEventsCreatedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionCreateParameters(value: NotificationSubscriptionCreateParameters): Self = StObject.set(x, "subscriptionCreateParameters", value.asInstanceOf[js.Any])
+    inline def setSubscriptionCreateParameters(value: NotificationSubscriptionCreateParameters): Self = StObject.set(x, "subscriptionCreateParameters", value.asInstanceOf[js.Any])
   }
 }

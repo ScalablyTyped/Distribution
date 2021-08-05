@@ -24,17 +24,14 @@ object mod {
   
   object default {
     
-    @scala.inline
-    def apply(url: RequestInfo): js.Promise[Response] = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Response]]
-    @scala.inline
-    def apply(url: RequestInfo, init: RequestInit): js.Promise[Response] = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Response]]
+    inline def apply(url: RequestInfo): js.Promise[Response] = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Response]]
+    inline def apply(url: RequestInfo, init: RequestInit): js.Promise[Response] = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Response]]
     
     @JSImport("node-fetch", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def isRedirect(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRedirect")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isRedirect(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRedirect")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   @JSImport("node-fetch", "Blob")
@@ -198,11 +195,9 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def error(): Response = ^.asInstanceOf[js.Dynamic].applyDynamic("error")().asInstanceOf[Response]
+    inline def error(): Response = ^.asInstanceOf[js.Dynamic].applyDynamic("error")().asInstanceOf[Response]
     
-    @scala.inline
-    def redirect(url: String, status: Double): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[Response]
+    inline def redirect(url: String, status: Double): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[Response]
   }
   
   trait BlobOptions extends StObject {
@@ -213,26 +208,20 @@ object mod {
   }
   object BlobOptions {
     
-    @scala.inline
-    def apply(): BlobOptions = {
+    inline def apply(): BlobOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BlobOptions]
     }
     
-    @scala.inline
-    implicit class BlobOptionsMutableBuilder[Self <: BlobOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BlobOptions](x: Self) {
       
-      @scala.inline
-      def setEndings(value: transparent | native): Self = StObject.set(x, "endings", value.asInstanceOf[js.Any])
+      inline def setEndings(value: transparent | native): Self = StObject.set(x, "endings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndingsUndefined: Self = StObject.set(x, "endings", js.undefined)
+      inline def setEndingsUndefined: Self = StObject.set(x, "endings", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -255,23 +244,17 @@ object mod {
   trait RequestCache extends StObject
   object RequestCache {
     
-    @scala.inline
-    def default: typings.nodeFetch.nodeFetchStrings.default = "default".asInstanceOf[typings.nodeFetch.nodeFetchStrings.default]
+    inline def default: typings.nodeFetch.nodeFetchStrings.default = "default".asInstanceOf[typings.nodeFetch.nodeFetchStrings.default]
     
-    @scala.inline
-    def `force-cache`: typings.nodeFetch.nodeFetchStrings.`force-cache` = "force-cache".asInstanceOf[typings.nodeFetch.nodeFetchStrings.`force-cache`]
+    inline def `force-cache`: typings.nodeFetch.nodeFetchStrings.`force-cache` = "force-cache".asInstanceOf[typings.nodeFetch.nodeFetchStrings.`force-cache`]
     
-    @scala.inline
-    def `no-cache`: typings.nodeFetch.nodeFetchStrings.`no-cache` = "no-cache".asInstanceOf[typings.nodeFetch.nodeFetchStrings.`no-cache`]
+    inline def `no-cache`: typings.nodeFetch.nodeFetchStrings.`no-cache` = "no-cache".asInstanceOf[typings.nodeFetch.nodeFetchStrings.`no-cache`]
     
-    @scala.inline
-    def `no-store`: typings.nodeFetch.nodeFetchStrings.`no-store` = "no-store".asInstanceOf[typings.nodeFetch.nodeFetchStrings.`no-store`]
+    inline def `no-store`: typings.nodeFetch.nodeFetchStrings.`no-store` = "no-store".asInstanceOf[typings.nodeFetch.nodeFetchStrings.`no-store`]
     
-    @scala.inline
-    def `only-if-cached`: typings.nodeFetch.nodeFetchStrings.`only-if-cached` = "only-if-cached".asInstanceOf[typings.nodeFetch.nodeFetchStrings.`only-if-cached`]
+    inline def `only-if-cached`: typings.nodeFetch.nodeFetchStrings.`only-if-cached` = "only-if-cached".asInstanceOf[typings.nodeFetch.nodeFetchStrings.`only-if-cached`]
     
-    @scala.inline
-    def reload: typings.nodeFetch.nodeFetchStrings.reload = "reload".asInstanceOf[typings.nodeFetch.nodeFetchStrings.reload]
+    inline def reload: typings.nodeFetch.nodeFetchStrings.reload = "reload".asInstanceOf[typings.nodeFetch.nodeFetchStrings.reload]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -312,104 +295,71 @@ object mod {
   trait RequestContext extends StObject
   object RequestContext {
     
-    @scala.inline
-    def audio: typings.nodeFetch.nodeFetchStrings.audio = "audio".asInstanceOf[typings.nodeFetch.nodeFetchStrings.audio]
+    inline def audio: typings.nodeFetch.nodeFetchStrings.audio = "audio".asInstanceOf[typings.nodeFetch.nodeFetchStrings.audio]
     
-    @scala.inline
-    def beacon: typings.nodeFetch.nodeFetchStrings.beacon = "beacon".asInstanceOf[typings.nodeFetch.nodeFetchStrings.beacon]
+    inline def beacon: typings.nodeFetch.nodeFetchStrings.beacon = "beacon".asInstanceOf[typings.nodeFetch.nodeFetchStrings.beacon]
     
-    @scala.inline
-    def cspreport: typings.nodeFetch.nodeFetchStrings.cspreport = "cspreport".asInstanceOf[typings.nodeFetch.nodeFetchStrings.cspreport]
+    inline def cspreport: typings.nodeFetch.nodeFetchStrings.cspreport = "cspreport".asInstanceOf[typings.nodeFetch.nodeFetchStrings.cspreport]
     
-    @scala.inline
-    def download: typings.nodeFetch.nodeFetchStrings.download = "download".asInstanceOf[typings.nodeFetch.nodeFetchStrings.download]
+    inline def download: typings.nodeFetch.nodeFetchStrings.download = "download".asInstanceOf[typings.nodeFetch.nodeFetchStrings.download]
     
-    @scala.inline
-    def embed: typings.nodeFetch.nodeFetchStrings.embed = "embed".asInstanceOf[typings.nodeFetch.nodeFetchStrings.embed]
+    inline def embed: typings.nodeFetch.nodeFetchStrings.embed = "embed".asInstanceOf[typings.nodeFetch.nodeFetchStrings.embed]
     
-    @scala.inline
-    def eventsource: typings.nodeFetch.nodeFetchStrings.eventsource = "eventsource".asInstanceOf[typings.nodeFetch.nodeFetchStrings.eventsource]
+    inline def eventsource: typings.nodeFetch.nodeFetchStrings.eventsource = "eventsource".asInstanceOf[typings.nodeFetch.nodeFetchStrings.eventsource]
     
-    @scala.inline
-    def favicon: typings.nodeFetch.nodeFetchStrings.favicon = "favicon".asInstanceOf[typings.nodeFetch.nodeFetchStrings.favicon]
+    inline def favicon: typings.nodeFetch.nodeFetchStrings.favicon = "favicon".asInstanceOf[typings.nodeFetch.nodeFetchStrings.favicon]
     
-    @scala.inline
-    def fetch: typings.nodeFetch.nodeFetchStrings.fetch = "fetch".asInstanceOf[typings.nodeFetch.nodeFetchStrings.fetch]
+    inline def fetch: typings.nodeFetch.nodeFetchStrings.fetch = "fetch".asInstanceOf[typings.nodeFetch.nodeFetchStrings.fetch]
     
-    @scala.inline
-    def font: typings.nodeFetch.nodeFetchStrings.font = "font".asInstanceOf[typings.nodeFetch.nodeFetchStrings.font]
+    inline def font: typings.nodeFetch.nodeFetchStrings.font = "font".asInstanceOf[typings.nodeFetch.nodeFetchStrings.font]
     
-    @scala.inline
-    def form: typings.nodeFetch.nodeFetchStrings.form = "form".asInstanceOf[typings.nodeFetch.nodeFetchStrings.form]
+    inline def form: typings.nodeFetch.nodeFetchStrings.form = "form".asInstanceOf[typings.nodeFetch.nodeFetchStrings.form]
     
-    @scala.inline
-    def frame: typings.nodeFetch.nodeFetchStrings.frame = "frame".asInstanceOf[typings.nodeFetch.nodeFetchStrings.frame]
+    inline def frame: typings.nodeFetch.nodeFetchStrings.frame = "frame".asInstanceOf[typings.nodeFetch.nodeFetchStrings.frame]
     
-    @scala.inline
-    def hyperlink: typings.nodeFetch.nodeFetchStrings.hyperlink = "hyperlink".asInstanceOf[typings.nodeFetch.nodeFetchStrings.hyperlink]
+    inline def hyperlink: typings.nodeFetch.nodeFetchStrings.hyperlink = "hyperlink".asInstanceOf[typings.nodeFetch.nodeFetchStrings.hyperlink]
     
-    @scala.inline
-    def iframe: typings.nodeFetch.nodeFetchStrings.iframe = "iframe".asInstanceOf[typings.nodeFetch.nodeFetchStrings.iframe]
+    inline def iframe: typings.nodeFetch.nodeFetchStrings.iframe = "iframe".asInstanceOf[typings.nodeFetch.nodeFetchStrings.iframe]
     
-    @scala.inline
-    def image: typings.nodeFetch.nodeFetchStrings.image = "image".asInstanceOf[typings.nodeFetch.nodeFetchStrings.image]
+    inline def image: typings.nodeFetch.nodeFetchStrings.image = "image".asInstanceOf[typings.nodeFetch.nodeFetchStrings.image]
     
-    @scala.inline
-    def imageset: typings.nodeFetch.nodeFetchStrings.imageset = "imageset".asInstanceOf[typings.nodeFetch.nodeFetchStrings.imageset]
+    inline def imageset: typings.nodeFetch.nodeFetchStrings.imageset = "imageset".asInstanceOf[typings.nodeFetch.nodeFetchStrings.imageset]
     
-    @scala.inline
-    def `import`: typings.nodeFetch.nodeFetchStrings.`import` = "import".asInstanceOf[typings.nodeFetch.nodeFetchStrings.`import`]
+    inline def `import`: typings.nodeFetch.nodeFetchStrings.`import` = "import".asInstanceOf[typings.nodeFetch.nodeFetchStrings.`import`]
     
-    @scala.inline
-    def internal: typings.nodeFetch.nodeFetchStrings.internal = "internal".asInstanceOf[typings.nodeFetch.nodeFetchStrings.internal]
+    inline def internal: typings.nodeFetch.nodeFetchStrings.internal = "internal".asInstanceOf[typings.nodeFetch.nodeFetchStrings.internal]
     
-    @scala.inline
-    def location: typings.nodeFetch.nodeFetchStrings.location = "location".asInstanceOf[typings.nodeFetch.nodeFetchStrings.location]
+    inline def location: typings.nodeFetch.nodeFetchStrings.location = "location".asInstanceOf[typings.nodeFetch.nodeFetchStrings.location]
     
-    @scala.inline
-    def manifest: typings.nodeFetch.nodeFetchStrings.manifest = "manifest".asInstanceOf[typings.nodeFetch.nodeFetchStrings.manifest]
+    inline def manifest: typings.nodeFetch.nodeFetchStrings.manifest = "manifest".asInstanceOf[typings.nodeFetch.nodeFetchStrings.manifest]
     
-    @scala.inline
-    def `object`: typings.nodeFetch.nodeFetchStrings.`object` = "object".asInstanceOf[typings.nodeFetch.nodeFetchStrings.`object`]
+    inline def `object`: typings.nodeFetch.nodeFetchStrings.`object` = "object".asInstanceOf[typings.nodeFetch.nodeFetchStrings.`object`]
     
-    @scala.inline
-    def ping: typings.nodeFetch.nodeFetchStrings.ping = "ping".asInstanceOf[typings.nodeFetch.nodeFetchStrings.ping]
+    inline def ping: typings.nodeFetch.nodeFetchStrings.ping = "ping".asInstanceOf[typings.nodeFetch.nodeFetchStrings.ping]
     
-    @scala.inline
-    def plugin: typings.nodeFetch.nodeFetchStrings.plugin = "plugin".asInstanceOf[typings.nodeFetch.nodeFetchStrings.plugin]
+    inline def plugin: typings.nodeFetch.nodeFetchStrings.plugin = "plugin".asInstanceOf[typings.nodeFetch.nodeFetchStrings.plugin]
     
-    @scala.inline
-    def prefetch: typings.nodeFetch.nodeFetchStrings.prefetch = "prefetch".asInstanceOf[typings.nodeFetch.nodeFetchStrings.prefetch]
+    inline def prefetch: typings.nodeFetch.nodeFetchStrings.prefetch = "prefetch".asInstanceOf[typings.nodeFetch.nodeFetchStrings.prefetch]
     
-    @scala.inline
-    def script: typings.nodeFetch.nodeFetchStrings.script = "script".asInstanceOf[typings.nodeFetch.nodeFetchStrings.script]
+    inline def script: typings.nodeFetch.nodeFetchStrings.script = "script".asInstanceOf[typings.nodeFetch.nodeFetchStrings.script]
     
-    @scala.inline
-    def serviceworker: typings.nodeFetch.nodeFetchStrings.serviceworker = "serviceworker".asInstanceOf[typings.nodeFetch.nodeFetchStrings.serviceworker]
+    inline def serviceworker: typings.nodeFetch.nodeFetchStrings.serviceworker = "serviceworker".asInstanceOf[typings.nodeFetch.nodeFetchStrings.serviceworker]
     
-    @scala.inline
-    def sharedworker: typings.nodeFetch.nodeFetchStrings.sharedworker = "sharedworker".asInstanceOf[typings.nodeFetch.nodeFetchStrings.sharedworker]
+    inline def sharedworker: typings.nodeFetch.nodeFetchStrings.sharedworker = "sharedworker".asInstanceOf[typings.nodeFetch.nodeFetchStrings.sharedworker]
     
-    @scala.inline
-    def style: typings.nodeFetch.nodeFetchStrings.style = "style".asInstanceOf[typings.nodeFetch.nodeFetchStrings.style]
+    inline def style: typings.nodeFetch.nodeFetchStrings.style = "style".asInstanceOf[typings.nodeFetch.nodeFetchStrings.style]
     
-    @scala.inline
-    def subresource: typings.nodeFetch.nodeFetchStrings.subresource = "subresource".asInstanceOf[typings.nodeFetch.nodeFetchStrings.subresource]
+    inline def subresource: typings.nodeFetch.nodeFetchStrings.subresource = "subresource".asInstanceOf[typings.nodeFetch.nodeFetchStrings.subresource]
     
-    @scala.inline
-    def track: typings.nodeFetch.nodeFetchStrings.track = "track".asInstanceOf[typings.nodeFetch.nodeFetchStrings.track]
+    inline def track: typings.nodeFetch.nodeFetchStrings.track = "track".asInstanceOf[typings.nodeFetch.nodeFetchStrings.track]
     
-    @scala.inline
-    def video: typings.nodeFetch.nodeFetchStrings.video = "video".asInstanceOf[typings.nodeFetch.nodeFetchStrings.video]
+    inline def video: typings.nodeFetch.nodeFetchStrings.video = "video".asInstanceOf[typings.nodeFetch.nodeFetchStrings.video]
     
-    @scala.inline
-    def worker: typings.nodeFetch.nodeFetchStrings.worker = "worker".asInstanceOf[typings.nodeFetch.nodeFetchStrings.worker]
+    inline def worker: typings.nodeFetch.nodeFetchStrings.worker = "worker".asInstanceOf[typings.nodeFetch.nodeFetchStrings.worker]
     
-    @scala.inline
-    def xmlhttprequest: typings.nodeFetch.nodeFetchStrings.xmlhttprequest = "xmlhttprequest".asInstanceOf[typings.nodeFetch.nodeFetchStrings.xmlhttprequest]
+    inline def xmlhttprequest: typings.nodeFetch.nodeFetchStrings.xmlhttprequest = "xmlhttprequest".asInstanceOf[typings.nodeFetch.nodeFetchStrings.xmlhttprequest]
     
-    @scala.inline
-    def xslt: typings.nodeFetch.nodeFetchStrings.xslt = "xslt".asInstanceOf[typings.nodeFetch.nodeFetchStrings.xslt]
+    inline def xslt: typings.nodeFetch.nodeFetchStrings.xslt = "xslt".asInstanceOf[typings.nodeFetch.nodeFetchStrings.xslt]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -420,14 +370,11 @@ object mod {
   trait RequestCredentials extends StObject
   object RequestCredentials {
     
-    @scala.inline
-    def include: typings.nodeFetch.nodeFetchStrings.include = "include".asInstanceOf[typings.nodeFetch.nodeFetchStrings.include]
+    inline def include: typings.nodeFetch.nodeFetchStrings.include = "include".asInstanceOf[typings.nodeFetch.nodeFetchStrings.include]
     
-    @scala.inline
-    def omit: typings.nodeFetch.nodeFetchStrings.omit = "omit".asInstanceOf[typings.nodeFetch.nodeFetchStrings.omit]
+    inline def omit: typings.nodeFetch.nodeFetchStrings.omit = "omit".asInstanceOf[typings.nodeFetch.nodeFetchStrings.omit]
     
-    @scala.inline
-    def `same-origin`: typings.nodeFetch.nodeFetchStrings.`same-origin` = "same-origin".asInstanceOf[typings.nodeFetch.nodeFetchStrings.`same-origin`]
+    inline def `same-origin`: typings.nodeFetch.nodeFetchStrings.`same-origin` = "same-origin".asInstanceOf[typings.nodeFetch.nodeFetchStrings.`same-origin`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -467,83 +414,58 @@ object mod {
   }
   object RequestInit {
     
-    @scala.inline
-    def apply(): RequestInit = {
+    inline def apply(): RequestInit = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RequestInit]
     }
     
-    @scala.inline
-    implicit class RequestInitMutableBuilder[Self <: RequestInit] (val x: Self) extends AnyVal {
+    extension [Self <: RequestInit](x: Self) {
       
-      @scala.inline
-      def setAgent(value: Agent | (js.Function1[/* parsedUrl */ URL_, Agent])): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+      inline def setAgent(value: Agent | (js.Function1[/* parsedUrl */ URL_, Agent])): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAgentFunction1(value: /* parsedUrl */ URL_ => Agent): Self = StObject.set(x, "agent", js.Any.fromFunction1(value))
+      inline def setAgentFunction1(value: /* parsedUrl */ URL_ => Agent): Self = StObject.set(x, "agent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
+      inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
       
-      @scala.inline
-      def setBody(value: BodyInit): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: BodyInit): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
+      inline def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
+      inline def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
       
-      @scala.inline
-      def setFollow(value: Double): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
+      inline def setFollow(value: Double): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowUndefined: Self = StObject.set(x, "follow", js.undefined)
+      inline def setFollowUndefined: Self = StObject.set(x, "follow", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: HeadersInit): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: HeadersInit): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setHeadersVarargs(value: js.Array[String]*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: js.Array[String]*): Self = StObject.set(x, "headers", js.Array(value :_*))
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setRedirect(value: RequestRedirect): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
+      inline def setRedirect(value: RequestRedirect): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
+      inline def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
       
-      @scala.inline
-      def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignalNull: Self = StObject.set(x, "signal", null)
+      inline def setSignalNull: Self = StObject.set(x, "signal", null)
       
-      @scala.inline
-      def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+      inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -555,14 +477,11 @@ object mod {
   trait RequestMode extends StObject
   object RequestMode {
     
-    @scala.inline
-    def cors: typings.nodeFetch.nodeFetchStrings.cors = "cors".asInstanceOf[typings.nodeFetch.nodeFetchStrings.cors]
+    inline def cors: typings.nodeFetch.nodeFetchStrings.cors = "cors".asInstanceOf[typings.nodeFetch.nodeFetchStrings.cors]
     
-    @scala.inline
-    def `no-cors`: typings.nodeFetch.nodeFetchStrings.`no-cors` = "no-cors".asInstanceOf[typings.nodeFetch.nodeFetchStrings.`no-cors`]
+    inline def `no-cors`: typings.nodeFetch.nodeFetchStrings.`no-cors` = "no-cors".asInstanceOf[typings.nodeFetch.nodeFetchStrings.`no-cors`]
     
-    @scala.inline
-    def `same-origin`: typings.nodeFetch.nodeFetchStrings.`same-origin` = "same-origin".asInstanceOf[typings.nodeFetch.nodeFetchStrings.`same-origin`]
+    inline def `same-origin`: typings.nodeFetch.nodeFetchStrings.`same-origin` = "same-origin".asInstanceOf[typings.nodeFetch.nodeFetchStrings.`same-origin`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -573,14 +492,11 @@ object mod {
   trait RequestRedirect extends StObject
   object RequestRedirect {
     
-    @scala.inline
-    def error: typings.nodeFetch.nodeFetchStrings.error = "error".asInstanceOf[typings.nodeFetch.nodeFetchStrings.error]
+    inline def error: typings.nodeFetch.nodeFetchStrings.error = "error".asInstanceOf[typings.nodeFetch.nodeFetchStrings.error]
     
-    @scala.inline
-    def follow: typings.nodeFetch.nodeFetchStrings.follow = "follow".asInstanceOf[typings.nodeFetch.nodeFetchStrings.follow]
+    inline def follow: typings.nodeFetch.nodeFetchStrings.follow = "follow".asInstanceOf[typings.nodeFetch.nodeFetchStrings.follow]
     
-    @scala.inline
-    def manual: typings.nodeFetch.nodeFetchStrings.manual = "manual".asInstanceOf[typings.nodeFetch.nodeFetchStrings.manual]
+    inline def manual: typings.nodeFetch.nodeFetchStrings.manual = "manual".asInstanceOf[typings.nodeFetch.nodeFetchStrings.manual]
   }
   
   trait ResponseInit extends StObject {
@@ -599,53 +515,38 @@ object mod {
   }
   object ResponseInit {
     
-    @scala.inline
-    def apply(): ResponseInit = {
+    inline def apply(): ResponseInit = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ResponseInit]
     }
     
-    @scala.inline
-    implicit class ResponseInitMutableBuilder[Self <: ResponseInit] (val x: Self) extends AnyVal {
+    extension [Self <: ResponseInit](x: Self) {
       
-      @scala.inline
-      def setHeaders(value: HeadersInit): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: HeadersInit): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setHeadersVarargs(value: js.Array[String]*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: js.Array[String]*): Self = StObject.set(x, "headers", js.Array(value :_*))
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
+      inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusTextUndefined: Self = StObject.set(x, "statusText", js.undefined)
+      inline def setStatusTextUndefined: Self = StObject.set(x, "statusText", js.undefined)
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -660,23 +561,17 @@ object mod {
   trait ResponseType extends StObject
   object ResponseType {
     
-    @scala.inline
-    def default: typings.nodeFetch.nodeFetchStrings.default = "default".asInstanceOf[typings.nodeFetch.nodeFetchStrings.default]
+    inline def default: typings.nodeFetch.nodeFetchStrings.default = "default".asInstanceOf[typings.nodeFetch.nodeFetchStrings.default]
     
-    @scala.inline
-    def basic: typings.nodeFetch.nodeFetchStrings.basic = "basic".asInstanceOf[typings.nodeFetch.nodeFetchStrings.basic]
+    inline def basic: typings.nodeFetch.nodeFetchStrings.basic = "basic".asInstanceOf[typings.nodeFetch.nodeFetchStrings.basic]
     
-    @scala.inline
-    def cors: typings.nodeFetch.nodeFetchStrings.cors = "cors".asInstanceOf[typings.nodeFetch.nodeFetchStrings.cors]
+    inline def cors: typings.nodeFetch.nodeFetchStrings.cors = "cors".asInstanceOf[typings.nodeFetch.nodeFetchStrings.cors]
     
-    @scala.inline
-    def error: typings.nodeFetch.nodeFetchStrings.error = "error".asInstanceOf[typings.nodeFetch.nodeFetchStrings.error]
+    inline def error: typings.nodeFetch.nodeFetchStrings.error = "error".asInstanceOf[typings.nodeFetch.nodeFetchStrings.error]
     
-    @scala.inline
-    def opaque: typings.nodeFetch.nodeFetchStrings.opaque = "opaque".asInstanceOf[typings.nodeFetch.nodeFetchStrings.opaque]
+    inline def opaque: typings.nodeFetch.nodeFetchStrings.opaque = "opaque".asInstanceOf[typings.nodeFetch.nodeFetchStrings.opaque]
     
-    @scala.inline
-    def opaqueredirect: typings.nodeFetch.nodeFetchStrings.opaqueredirect = "opaqueredirect".asInstanceOf[typings.nodeFetch.nodeFetchStrings.opaqueredirect]
+    inline def opaqueredirect: typings.nodeFetch.nodeFetchStrings.opaqueredirect = "opaqueredirect".asInstanceOf[typings.nodeFetch.nodeFetchStrings.opaqueredirect]
   }
   
   trait SystemError
@@ -687,20 +582,16 @@ object mod {
   }
   object SystemError {
     
-    @scala.inline
-    def apply(message: String, name: String): SystemError = {
+    inline def apply(message: String, name: String): SystemError = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[SystemError]
     }
     
-    @scala.inline
-    implicit class SystemErrorMutableBuilder[Self <: SystemError] (val x: Self) extends AnyVal {
+    extension [Self <: SystemError](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     }
   }
   
@@ -712,17 +603,14 @@ object mod {
   }
   object URLLike {
     
-    @scala.inline
-    def apply(href: String): URLLike = {
+    inline def apply(href: String): URLLike = {
       val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
       __obj.asInstanceOf[URLLike]
     }
     
-    @scala.inline
-    implicit class URLLikeMutableBuilder[Self <: URLLike] (val x: Self) extends AnyVal {
+    extension [Self <: URLLike](x: Self) {
       
-      @scala.inline
-      def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     }
   }
   

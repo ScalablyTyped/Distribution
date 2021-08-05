@@ -27,8 +27,7 @@ object Menu {
     * become properties of the constructed menu items.
     */
   /* static member */
-  @scala.inline
-  def buildFromTemplate(template: js.Array[MenuItemConstructorOptions | typings.electron.Electron.MenuItem]): typings.electron.Electron.Menu = ^.asInstanceOf[js.Dynamic].applyDynamic("buildFromTemplate")(template.asInstanceOf[js.Any]).asInstanceOf[typings.electron.Electron.Menu]
+  inline def buildFromTemplate(template: js.Array[MenuItemConstructorOptions | typings.electron.Electron.MenuItem]): typings.electron.Electron.Menu = ^.asInstanceOf[js.Dynamic].applyDynamic("buildFromTemplate")(template.asInstanceOf[js.Any]).asInstanceOf[typings.electron.Electron.Menu]
   
   /**
     * The application menu, if set, or `null`, if not set.
@@ -37,8 +36,7 @@ object Menu {
     * removal of menu items. Instance properties can still be dynamically modified.
     */
   /* static member */
-  @scala.inline
-  def getApplicationMenu(): typings.electron.Electron.Menu | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplicationMenu")().asInstanceOf[typings.electron.Electron.Menu | Null]
+  inline def getApplicationMenu(): typings.electron.Electron.Menu | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplicationMenu")().asInstanceOf[typings.electron.Electron.Menu | Null]
   
   /**
     * Sends the `action` to the first responder of application. This is used for
@@ -51,8 +49,7 @@ object Menu {
     * @platform darwin
     */
   /* static member */
-  @scala.inline
-  def sendActionToFirstResponder(action: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendActionToFirstResponder")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def sendActionToFirstResponder(action: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendActionToFirstResponder")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Sets `menu` as the application menu on macOS. On Windows and Linux, the `menu`
@@ -72,8 +69,6 @@ object Menu {
     * `Help`.
     */
   /* static member */
-  @scala.inline
-  def setApplicationMenu(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setApplicationMenu")().asInstanceOf[Unit]
-  @scala.inline
-  def setApplicationMenu(menu: typings.electron.Electron.Menu): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setApplicationMenu")(menu.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setApplicationMenu(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setApplicationMenu")().asInstanceOf[Unit]
+  inline def setApplicationMenu(menu: typings.electron.Electron.Menu): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setApplicationMenu")(menu.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

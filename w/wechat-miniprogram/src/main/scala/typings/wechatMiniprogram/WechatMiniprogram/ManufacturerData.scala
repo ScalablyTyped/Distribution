@@ -16,22 +16,17 @@ trait ManufacturerData extends StObject {
 }
 object ManufacturerData {
   
-  @scala.inline
-  def apply(manufacturerId: String): ManufacturerData = {
+  inline def apply(manufacturerId: String): ManufacturerData = {
     val __obj = js.Dynamic.literal(manufacturerId = manufacturerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManufacturerData]
   }
   
-  @scala.inline
-  implicit class ManufacturerDataMutableBuilder[Self <: ManufacturerData] (val x: Self) extends AnyVal {
+  extension [Self <: ManufacturerData](x: Self) {
     
-    @scala.inline
-    def setManufacturerId(value: String): Self = StObject.set(x, "manufacturerId", value.asInstanceOf[js.Any])
+    inline def setManufacturerId(value: String): Self = StObject.set(x, "manufacturerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManufacturerSpecificData(value: ArrayBuffer): Self = StObject.set(x, "manufacturerSpecificData", value.asInstanceOf[js.Any])
+    inline def setManufacturerSpecificData(value: ArrayBuffer): Self = StObject.set(x, "manufacturerSpecificData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManufacturerSpecificDataUndefined: Self = StObject.set(x, "manufacturerSpecificData", js.undefined)
+    inline def setManufacturerSpecificDataUndefined: Self = StObject.set(x, "manufacturerSpecificData", js.undefined)
   }
 }

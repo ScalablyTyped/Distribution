@@ -13,19 +13,15 @@ trait NamespaceOptions[Value /* <: js.UndefOr[String] */]
 }
 object NamespaceOptions {
   
-  @scala.inline
-  def apply[Value /* <: js.UndefOr[String] */](value: Value): NamespaceOptions[Value] = {
+  inline def apply[Value /* <: js.UndefOr[String] */](value: Value): NamespaceOptions[Value] = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[NamespaceOptions[Value]]
   }
   
-  @scala.inline
-  implicit class NamespaceOptionsMutableBuilder[Self <: NamespaceOptions[?], Value /* <: js.UndefOr[String] */] (val x: Self & NamespaceOptions[Value]) extends AnyVal {
+  extension [Self <: NamespaceOptions[?], Value /* <: js.UndefOr[String] */](x: Self & NamespaceOptions[Value]) {
     
-    @scala.inline
-    def setNamespace(value: String | `true`): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: String | `true`): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+    inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
   }
 }

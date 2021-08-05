@@ -13,16 +13,13 @@ trait SetDiscoverTargetsRequest extends StObject {
 }
 object SetDiscoverTargetsRequest {
   
-  @scala.inline
-  def apply(discover: Boolean): SetDiscoverTargetsRequest = {
+  inline def apply(discover: Boolean): SetDiscoverTargetsRequest = {
     val __obj = js.Dynamic.literal(discover = discover.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetDiscoverTargetsRequest]
   }
   
-  @scala.inline
-  implicit class SetDiscoverTargetsRequestMutableBuilder[Self <: SetDiscoverTargetsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetDiscoverTargetsRequest](x: Self) {
     
-    @scala.inline
-    def setDiscover(value: Boolean): Self = StObject.set(x, "discover", value.asInstanceOf[js.Any])
+    inline def setDiscover(value: Boolean): Self = StObject.set(x, "discover", value.asInstanceOf[js.Any])
   }
 }

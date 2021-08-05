@@ -30,46 +30,34 @@ object anon {
   }
   object AutoFreeze {
     
-    @scala.inline
-    def apply(): AutoFreeze = {
+    inline def apply(): AutoFreeze = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AutoFreeze]
     }
     
-    @scala.inline
-    implicit class AutoFreezeMutableBuilder[Self <: AutoFreeze] (val x: Self) extends AnyVal {
+    extension [Self <: AutoFreeze](x: Self) {
       
-      @scala.inline
-      def setAutoFreeze(value: Boolean): Self = StObject.set(x, "autoFreeze", value.asInstanceOf[js.Any])
+      inline def setAutoFreeze(value: Boolean): Self = StObject.set(x, "autoFreeze", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoFreezeUndefined: Self = StObject.set(x, "autoFreeze", js.undefined)
+      inline def setAutoFreezeUndefined: Self = StObject.set(x, "autoFreeze", js.undefined)
       
-      @scala.inline
-      def setOnAssign(
+      inline def setOnAssign(
         value: (/* state */ ImmerState[js.Any], /* keyof any */ /* prop */ String, /* value */ js.Any) => Unit
       ): Self = StObject.set(x, "onAssign", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnAssignUndefined: Self = StObject.set(x, "onAssign", js.undefined)
+      inline def setOnAssignUndefined: Self = StObject.set(x, "onAssign", js.undefined)
       
-      @scala.inline
-      def setOnCopy(value: /* state */ ImmerState[js.Any] => Unit): Self = StObject.set(x, "onCopy", js.Any.fromFunction1(value))
+      inline def setOnCopy(value: /* state */ ImmerState[js.Any] => Unit): Self = StObject.set(x, "onCopy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCopyUndefined: Self = StObject.set(x, "onCopy", js.undefined)
+      inline def setOnCopyUndefined: Self = StObject.set(x, "onCopy", js.undefined)
       
-      @scala.inline
-      def setOnDelete(value: (/* state */ ImmerState[js.Any], /* keyof any */ /* prop */ String) => Unit): Self = StObject.set(x, "onDelete", js.Any.fromFunction2(value))
+      inline def setOnDelete(value: (/* state */ ImmerState[js.Any], /* keyof any */ /* prop */ String) => Unit): Self = StObject.set(x, "onDelete", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnDeleteUndefined: Self = StObject.set(x, "onDelete", js.undefined)
+      inline def setOnDeleteUndefined: Self = StObject.set(x, "onDelete", js.undefined)
       
-      @scala.inline
-      def setUseProxies(value: Boolean): Self = StObject.set(x, "useProxies", value.asInstanceOf[js.Any])
+      inline def setUseProxies(value: Boolean): Self = StObject.set(x, "useProxies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseProxiesUndefined: Self = StObject.set(x, "useProxies", js.undefined)
+      inline def setUseProxiesUndefined: Self = StObject.set(x, "useProxies", js.undefined)
     }
   }
 }

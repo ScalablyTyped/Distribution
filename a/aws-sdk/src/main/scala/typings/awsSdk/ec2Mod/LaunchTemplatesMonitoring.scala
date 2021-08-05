@@ -13,19 +13,15 @@ trait LaunchTemplatesMonitoring extends StObject {
 }
 object LaunchTemplatesMonitoring {
   
-  @scala.inline
-  def apply(): LaunchTemplatesMonitoring = {
+  inline def apply(): LaunchTemplatesMonitoring = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LaunchTemplatesMonitoring]
   }
   
-  @scala.inline
-  implicit class LaunchTemplatesMonitoringMutableBuilder[Self <: LaunchTemplatesMonitoring] (val x: Self) extends AnyVal {
+  extension [Self <: LaunchTemplatesMonitoring](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
   }
 }

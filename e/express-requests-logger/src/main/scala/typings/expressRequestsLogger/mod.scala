@@ -20,10 +20,8 @@ object mod {
   /**
     * Middleware for logging request/responses in Express apps
     */
-  @scala.inline
-  def apply(): NextFunction = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[NextFunction]
-  @scala.inline
-  def apply(options: Options): NextFunction = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[NextFunction]
+  inline def apply(): NextFunction = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[NextFunction]
+  inline def apply(options: Options): NextFunction = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[NextFunction]
   
   @JSImport("express-requests-logger", JSImport.Namespace)
   @js.native
@@ -75,71 +73,50 @@ object mod {
   }
   object CommonOptions {
     
-    @scala.inline
-    def apply(): CommonOptions = {
+    inline def apply(): CommonOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CommonOptions]
     }
     
-    @scala.inline
-    implicit class CommonOptionsMutableBuilder[Self <: CommonOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CommonOptions](x: Self) {
       
-      @scala.inline
-      def setAudit(value: Boolean): Self = StObject.set(x, "audit", value.asInstanceOf[js.Any])
+      inline def setAudit(value: Boolean): Self = StObject.set(x, "audit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuditUndefined: Self = StObject.set(x, "audit", js.undefined)
+      inline def setAuditUndefined: Self = StObject.set(x, "audit", js.undefined)
       
-      @scala.inline
-      def setExcludeBody(value: js.Array[String]): Self = StObject.set(x, "excludeBody", value.asInstanceOf[js.Any])
+      inline def setExcludeBody(value: js.Array[String]): Self = StObject.set(x, "excludeBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeBodyUndefined: Self = StObject.set(x, "excludeBody", js.undefined)
+      inline def setExcludeBodyUndefined: Self = StObject.set(x, "excludeBody", js.undefined)
       
-      @scala.inline
-      def setExcludeBodyVarargs(value: String*): Self = StObject.set(x, "excludeBody", js.Array(value :_*))
+      inline def setExcludeBodyVarargs(value: String*): Self = StObject.set(x, "excludeBody", js.Array(value :_*))
       
-      @scala.inline
-      def setExcludeHeaders(value: js.Array[String]): Self = StObject.set(x, "excludeHeaders", value.asInstanceOf[js.Any])
+      inline def setExcludeHeaders(value: js.Array[String]): Self = StObject.set(x, "excludeHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeHeadersUndefined: Self = StObject.set(x, "excludeHeaders", js.undefined)
+      inline def setExcludeHeadersUndefined: Self = StObject.set(x, "excludeHeaders", js.undefined)
       
-      @scala.inline
-      def setExcludeHeadersVarargs(value: String*): Self = StObject.set(x, "excludeHeaders", js.Array(value :_*))
+      inline def setExcludeHeadersVarargs(value: String*): Self = StObject.set(x, "excludeHeaders", js.Array(value :_*))
       
-      @scala.inline
-      def setMaskBody(value: js.Array[String]): Self = StObject.set(x, "maskBody", value.asInstanceOf[js.Any])
+      inline def setMaskBody(value: js.Array[String]): Self = StObject.set(x, "maskBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskBodyUndefined: Self = StObject.set(x, "maskBody", js.undefined)
+      inline def setMaskBodyUndefined: Self = StObject.set(x, "maskBody", js.undefined)
       
-      @scala.inline
-      def setMaskBodyVarargs(value: String*): Self = StObject.set(x, "maskBody", js.Array(value :_*))
+      inline def setMaskBodyVarargs(value: String*): Self = StObject.set(x, "maskBody", js.Array(value :_*))
       
-      @scala.inline
-      def setMaskHeaders(value: js.Array[String]): Self = StObject.set(x, "maskHeaders", value.asInstanceOf[js.Any])
+      inline def setMaskHeaders(value: js.Array[String]): Self = StObject.set(x, "maskHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskHeadersUndefined: Self = StObject.set(x, "maskHeaders", js.undefined)
+      inline def setMaskHeadersUndefined: Self = StObject.set(x, "maskHeaders", js.undefined)
       
-      @scala.inline
-      def setMaskHeadersVarargs(value: String*): Self = StObject.set(x, "maskHeaders", js.Array(value :_*))
+      inline def setMaskHeadersVarargs(value: String*): Self = StObject.set(x, "maskHeaders", js.Array(value :_*))
       
-      @scala.inline
-      def setMaskQuery(value: js.Array[String]): Self = StObject.set(x, "maskQuery", value.asInstanceOf[js.Any])
+      inline def setMaskQuery(value: js.Array[String]): Self = StObject.set(x, "maskQuery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskQueryUndefined: Self = StObject.set(x, "maskQuery", js.undefined)
+      inline def setMaskQueryUndefined: Self = StObject.set(x, "maskQuery", js.undefined)
       
-      @scala.inline
-      def setMaskQueryVarargs(value: String*): Self = StObject.set(x, "maskQuery", js.Array(value :_*))
+      inline def setMaskQueryVarargs(value: String*): Self = StObject.set(x, "maskQuery", js.Array(value :_*))
       
-      @scala.inline
-      def setMaxBodyLength(value: Double): Self = StObject.set(x, "maxBodyLength", value.asInstanceOf[js.Any])
+      inline def setMaxBodyLength(value: Double): Self = StObject.set(x, "maxBodyLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxBodyLengthUndefined: Self = StObject.set(x, "maxBodyLength", js.undefined)
+      inline def setMaxBodyLengthUndefined: Self = StObject.set(x, "maxBodyLength", js.undefined)
     }
   }
   
@@ -149,17 +126,14 @@ object mod {
   }
   object Logger {
     
-    @scala.inline
-    def apply(info: (js.Object, /* repeated */ js.Any) => Unit): Logger = {
+    inline def apply(info: (js.Object, /* repeated */ js.Any) => Unit): Logger = {
       val __obj = js.Dynamic.literal(info = js.Any.fromFunction2(info))
       __obj.asInstanceOf[Logger]
     }
     
-    @scala.inline
-    implicit class LoggerMutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
+    extension [Self <: Logger](x: Self) {
       
-      @scala.inline
-      def setInfo(value: (js.Object, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "info", js.Any.fromFunction2(value))
+      inline def setInfo(value: (js.Object, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "info", js.Any.fromFunction2(value))
     }
   }
   
@@ -215,53 +189,38 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCustomMaskBodyFunc(value: /* req */ Request[ParamsDictionary, js.Any, js.Any, ParsedQs] => String): Self = StObject.set(x, "customMaskBodyFunc", js.Any.fromFunction1(value))
+      inline def setCustomMaskBodyFunc(value: /* req */ Request[ParamsDictionary, js.Any, js.Any, ParsedQs] => String): Self = StObject.set(x, "customMaskBodyFunc", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCustomMaskBodyFuncUndefined: Self = StObject.set(x, "customMaskBodyFunc", js.undefined)
+      inline def setCustomMaskBodyFuncUndefined: Self = StObject.set(x, "customMaskBodyFunc", js.undefined)
       
-      @scala.inline
-      def setDoubleAudit(value: Boolean): Self = StObject.set(x, "doubleAudit", value.asInstanceOf[js.Any])
+      inline def setDoubleAudit(value: Boolean): Self = StObject.set(x, "doubleAudit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDoubleAuditUndefined: Self = StObject.set(x, "doubleAudit", js.undefined)
+      inline def setDoubleAuditUndefined: Self = StObject.set(x, "doubleAudit", js.undefined)
       
-      @scala.inline
-      def setExcludeURLs(value: js.Array[String]): Self = StObject.set(x, "excludeURLs", value.asInstanceOf[js.Any])
+      inline def setExcludeURLs(value: js.Array[String]): Self = StObject.set(x, "excludeURLs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeURLsUndefined: Self = StObject.set(x, "excludeURLs", js.undefined)
+      inline def setExcludeURLsUndefined: Self = StObject.set(x, "excludeURLs", js.undefined)
       
-      @scala.inline
-      def setExcludeURLsVarargs(value: String*): Self = StObject.set(x, "excludeURLs", js.Array(value :_*))
+      inline def setExcludeURLsVarargs(value: String*): Self = StObject.set(x, "excludeURLs", js.Array(value :_*))
       
-      @scala.inline
-      def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+      inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
-      @scala.inline
-      def setRequest(value: js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+      inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
       
-      @scala.inline
-      def setResponse(value: ResponseOptions): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: ResponseOptions): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+      inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     }
   }
   
@@ -278,20 +237,16 @@ object mod {
   }
   object ResponseOptions {
     
-    @scala.inline
-    def apply(): ResponseOptions = {
+    inline def apply(): ResponseOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ResponseOptions]
     }
     
-    @scala.inline
-    implicit class ResponseOptionsMutableBuilder[Self <: ResponseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ResponseOptions](x: Self) {
       
-      @scala.inline
-      def setLevels(value: StatusCodeMap): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
+      inline def setLevels(value: StatusCodeMap): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
+      inline def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
     }
   }
   
@@ -307,17 +262,14 @@ object mod {
       }
       object Request {
         
-        @scala.inline
-        def apply(maxBodyLength: Double): typings.expressRequestsLogger.mod.global.Express.Request = {
+        inline def apply(maxBodyLength: Double): typings.expressRequestsLogger.mod.global.Express.Request = {
           val __obj = js.Dynamic.literal(maxBodyLength = maxBodyLength.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.expressRequestsLogger.mod.global.Express.Request]
         }
         
-        @scala.inline
-        implicit class RequestMutableBuilder[Self <: typings.expressRequestsLogger.mod.global.Express.Request] (val x: Self) extends AnyVal {
+        extension [Self <: typings.expressRequestsLogger.mod.global.Express.Request](x: Self) {
           
-          @scala.inline
-          def setMaxBodyLength(value: Double): Self = StObject.set(x, "maxBodyLength", value.asInstanceOf[js.Any])
+          inline def setMaxBodyLength(value: Double): Self = StObject.set(x, "maxBodyLength", value.asInstanceOf[js.Any])
         }
       }
       
@@ -329,20 +281,16 @@ object mod {
       }
       object Response {
         
-        @scala.inline
-        def apply(maxBodyLength: Double, timestamp: Date): Response = {
+        inline def apply(maxBodyLength: Double, timestamp: Date): Response = {
           val __obj = js.Dynamic.literal(maxBodyLength = maxBodyLength.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
           __obj.asInstanceOf[Response]
         }
         
-        @scala.inline
-        implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
+        extension [Self <: Response](x: Self) {
           
-          @scala.inline
-          def setMaxBodyLength(value: Double): Self = StObject.set(x, "maxBodyLength", value.asInstanceOf[js.Any])
+          inline def setMaxBodyLength(value: Double): Self = StObject.set(x, "maxBodyLength", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+          inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
         }
       }
     }

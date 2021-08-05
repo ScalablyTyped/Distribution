@@ -22,19 +22,15 @@ trait PlusWebviewWebviewListenResourceOptions extends StObject {
 }
 object PlusWebviewWebviewListenResourceOptions {
   
-  @scala.inline
-  def apply(): PlusWebviewWebviewListenResourceOptions = {
+  inline def apply(): PlusWebviewWebviewListenResourceOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusWebviewWebviewListenResourceOptions]
   }
   
-  @scala.inline
-  implicit class PlusWebviewWebviewListenResourceOptionsMutableBuilder[Self <: PlusWebviewWebviewListenResourceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlusWebviewWebviewListenResourceOptions](x: Self) {
     
-    @scala.inline
-    def setMatch(value: String): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+    inline def setMatch(value: String): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
+    inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
   }
 }

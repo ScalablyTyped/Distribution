@@ -10,16 +10,13 @@ trait IHasOptions[T /* <: IOptions */] extends StObject {
 }
 object IHasOptions {
   
-  @scala.inline
-  def apply[T /* <: IOptions */](options: T): IHasOptions[T] = {
+  inline def apply[T /* <: IOptions */](options: T): IHasOptions[T] = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHasOptions[T]]
   }
   
-  @scala.inline
-  implicit class IHasOptionsMutableBuilder[Self <: IHasOptions[?], T /* <: IOptions */] (val x: Self & IHasOptions[T]) extends AnyVal {
+  extension [Self <: IHasOptions[?], T /* <: IOptions */](x: Self & IHasOptions[T]) {
     
-    @scala.inline
-    def setOptions(value: T): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: T): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

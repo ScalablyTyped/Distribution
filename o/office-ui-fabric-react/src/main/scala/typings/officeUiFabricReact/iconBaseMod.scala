@@ -14,7 +14,7 @@ object iconBaseMod {
     extends Component[IIconProps, IIconState, js.Any] {
     def this(props: IIconProps) = this()
     
-    var _onImageLoadingStateChange: js.Any = js.native
+    /* private */ var _onImageLoadingStateChange: js.Any = js.native
   }
   
   trait IIconState extends StObject {
@@ -23,17 +23,14 @@ object iconBaseMod {
   }
   object IIconState {
     
-    @scala.inline
-    def apply(imageLoadError: Boolean): IIconState = {
+    inline def apply(imageLoadError: Boolean): IIconState = {
       val __obj = js.Dynamic.literal(imageLoadError = imageLoadError.asInstanceOf[js.Any])
       __obj.asInstanceOf[IIconState]
     }
     
-    @scala.inline
-    implicit class IIconStateMutableBuilder[Self <: IIconState] (val x: Self) extends AnyVal {
+    extension [Self <: IIconState](x: Self) {
       
-      @scala.inline
-      def setImageLoadError(value: Boolean): Self = StObject.set(x, "imageLoadError", value.asInstanceOf[js.Any])
+      inline def setImageLoadError(value: Boolean): Self = StObject.set(x, "imageLoadError", value.asInstanceOf[js.Any])
     }
   }
 }

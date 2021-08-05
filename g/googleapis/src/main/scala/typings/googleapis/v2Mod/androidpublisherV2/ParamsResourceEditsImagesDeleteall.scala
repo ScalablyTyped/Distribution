@@ -42,43 +42,31 @@ trait ParamsResourceEditsImagesDeleteall
 }
 object ParamsResourceEditsImagesDeleteall {
   
-  @scala.inline
-  def apply(): ParamsResourceEditsImagesDeleteall = {
+  inline def apply(): ParamsResourceEditsImagesDeleteall = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceEditsImagesDeleteall]
   }
   
-  @scala.inline
-  implicit class ParamsResourceEditsImagesDeleteallMutableBuilder[Self <: ParamsResourceEditsImagesDeleteall] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceEditsImagesDeleteall](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setEditId(value: String): Self = StObject.set(x, "editId", value.asInstanceOf[js.Any])
+    inline def setEditId(value: String): Self = StObject.set(x, "editId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditIdUndefined: Self = StObject.set(x, "editId", js.undefined)
+    inline def setEditIdUndefined: Self = StObject.set(x, "editId", js.undefined)
     
-    @scala.inline
-    def setImageType(value: String): Self = StObject.set(x, "imageType", value.asInstanceOf[js.Any])
+    inline def setImageType(value: String): Self = StObject.set(x, "imageType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageTypeUndefined: Self = StObject.set(x, "imageType", js.undefined)
+    inline def setImageTypeUndefined: Self = StObject.set(x, "imageType", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
+    inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
+    inline def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
   }
 }

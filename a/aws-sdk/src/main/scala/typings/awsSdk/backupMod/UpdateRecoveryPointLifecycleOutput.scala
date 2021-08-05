@@ -28,37 +28,27 @@ trait UpdateRecoveryPointLifecycleOutput extends StObject {
 }
 object UpdateRecoveryPointLifecycleOutput {
   
-  @scala.inline
-  def apply(): UpdateRecoveryPointLifecycleOutput = {
+  inline def apply(): UpdateRecoveryPointLifecycleOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateRecoveryPointLifecycleOutput]
   }
   
-  @scala.inline
-  implicit class UpdateRecoveryPointLifecycleOutputMutableBuilder[Self <: UpdateRecoveryPointLifecycleOutput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateRecoveryPointLifecycleOutput](x: Self) {
     
-    @scala.inline
-    def setBackupVaultArn(value: ARN): Self = StObject.set(x, "BackupVaultArn", value.asInstanceOf[js.Any])
+    inline def setBackupVaultArn(value: ARN): Self = StObject.set(x, "BackupVaultArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupVaultArnUndefined: Self = StObject.set(x, "BackupVaultArn", js.undefined)
+    inline def setBackupVaultArnUndefined: Self = StObject.set(x, "BackupVaultArn", js.undefined)
     
-    @scala.inline
-    def setCalculatedLifecycle(value: CalculatedLifecycle): Self = StObject.set(x, "CalculatedLifecycle", value.asInstanceOf[js.Any])
+    inline def setCalculatedLifecycle(value: CalculatedLifecycle): Self = StObject.set(x, "CalculatedLifecycle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalculatedLifecycleUndefined: Self = StObject.set(x, "CalculatedLifecycle", js.undefined)
+    inline def setCalculatedLifecycleUndefined: Self = StObject.set(x, "CalculatedLifecycle", js.undefined)
     
-    @scala.inline
-    def setLifecycle(value: Lifecycle): Self = StObject.set(x, "Lifecycle", value.asInstanceOf[js.Any])
+    inline def setLifecycle(value: Lifecycle): Self = StObject.set(x, "Lifecycle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLifecycleUndefined: Self = StObject.set(x, "Lifecycle", js.undefined)
+    inline def setLifecycleUndefined: Self = StObject.set(x, "Lifecycle", js.undefined)
     
-    @scala.inline
-    def setRecoveryPointArn(value: ARN): Self = StObject.set(x, "RecoveryPointArn", value.asInstanceOf[js.Any])
+    inline def setRecoveryPointArn(value: ARN): Self = StObject.set(x, "RecoveryPointArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecoveryPointArnUndefined: Self = StObject.set(x, "RecoveryPointArn", js.undefined)
+    inline def setRecoveryPointArnUndefined: Self = StObject.set(x, "RecoveryPointArn", js.undefined)
   }
 }

@@ -17,22 +17,17 @@ trait ThreeSignsSet
 }
 object ThreeSignsSet {
   
-  @scala.inline
-  def apply(greenCircle: Icon, redDiamond: Icon, yellowTriangle: Icon): ThreeSignsSet = {
+  inline def apply(greenCircle: Icon, redDiamond: Icon, yellowTriangle: Icon): ThreeSignsSet = {
     val __obj = js.Dynamic.literal(greenCircle = greenCircle.asInstanceOf[js.Any], redDiamond = redDiamond.asInstanceOf[js.Any], yellowTriangle = yellowTriangle.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThreeSignsSet]
   }
   
-  @scala.inline
-  implicit class ThreeSignsSetMutableBuilder[Self <: ThreeSignsSet] (val x: Self) extends AnyVal {
+  extension [Self <: ThreeSignsSet](x: Self) {
     
-    @scala.inline
-    def setGreenCircle(value: Icon): Self = StObject.set(x, "greenCircle", value.asInstanceOf[js.Any])
+    inline def setGreenCircle(value: Icon): Self = StObject.set(x, "greenCircle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedDiamond(value: Icon): Self = StObject.set(x, "redDiamond", value.asInstanceOf[js.Any])
+    inline def setRedDiamond(value: Icon): Self = StObject.set(x, "redDiamond", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYellowTriangle(value: Icon): Self = StObject.set(x, "yellowTriangle", value.asInstanceOf[js.Any])
+    inline def setYellowTriangle(value: Icon): Self = StObject.set(x, "yellowTriangle", value.asInstanceOf[js.Any])
   }
 }

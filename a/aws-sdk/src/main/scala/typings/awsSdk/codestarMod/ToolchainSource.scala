@@ -13,16 +13,13 @@ trait ToolchainSource extends StObject {
 }
 object ToolchainSource {
   
-  @scala.inline
-  def apply(s3: S3Location): ToolchainSource = {
+  inline def apply(s3: S3Location): ToolchainSource = {
     val __obj = js.Dynamic.literal(s3 = s3.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolchainSource]
   }
   
-  @scala.inline
-  implicit class ToolchainSourceMutableBuilder[Self <: ToolchainSource] (val x: Self) extends AnyVal {
+  extension [Self <: ToolchainSource](x: Self) {
     
-    @scala.inline
-    def setS3(value: S3Location): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
+    inline def setS3(value: S3Location): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
   }
 }

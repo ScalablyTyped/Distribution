@@ -12,16 +12,13 @@ trait ApplicationViewConsolidatedEventArgs extends StObject {
 }
 object ApplicationViewConsolidatedEventArgs {
   
-  @scala.inline
-  def apply(isUserInitiated: Boolean): ApplicationViewConsolidatedEventArgs = {
+  inline def apply(isUserInitiated: Boolean): ApplicationViewConsolidatedEventArgs = {
     val __obj = js.Dynamic.literal(isUserInitiated = isUserInitiated.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationViewConsolidatedEventArgs]
   }
   
-  @scala.inline
-  implicit class ApplicationViewConsolidatedEventArgsMutableBuilder[Self <: ApplicationViewConsolidatedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationViewConsolidatedEventArgs](x: Self) {
     
-    @scala.inline
-    def setIsUserInitiated(value: Boolean): Self = StObject.set(x, "isUserInitiated", value.asInstanceOf[js.Any])
+    inline def setIsUserInitiated(value: Boolean): Self = StObject.set(x, "isUserInitiated", value.asInstanceOf[js.Any])
   }
 }

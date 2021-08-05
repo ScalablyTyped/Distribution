@@ -13,22 +13,17 @@ trait AppsListInstallationsForAuthenticatedUserResponseData extends StObject {
 }
 object AppsListInstallationsForAuthenticatedUserResponseData {
   
-  @scala.inline
-  def apply(installations: js.Array[Account], total_count: Double): AppsListInstallationsForAuthenticatedUserResponseData = {
+  inline def apply(installations: js.Array[Account], total_count: Double): AppsListInstallationsForAuthenticatedUserResponseData = {
     val __obj = js.Dynamic.literal(installations = installations.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppsListInstallationsForAuthenticatedUserResponseData]
   }
   
-  @scala.inline
-  implicit class AppsListInstallationsForAuthenticatedUserResponseDataMutableBuilder[Self <: AppsListInstallationsForAuthenticatedUserResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: AppsListInstallationsForAuthenticatedUserResponseData](x: Self) {
     
-    @scala.inline
-    def setInstallations(value: js.Array[Account]): Self = StObject.set(x, "installations", value.asInstanceOf[js.Any])
+    inline def setInstallations(value: js.Array[Account]): Self = StObject.set(x, "installations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstallationsVarargs(value: Account*): Self = StObject.set(x, "installations", js.Array(value :_*))
+    inline def setInstallationsVarargs(value: Account*): Self = StObject.set(x, "installations", js.Array(value :_*))
     
-    @scala.inline
-    def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
+    inline def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
   }
 }

@@ -59,49 +59,35 @@ trait TimeOptions extends StObject {
 }
 object TimeOptions {
   
-  @scala.inline
-  def apply(): TimeOptions = {
+  inline def apply(): TimeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimeOptions]
   }
   
-  @scala.inline
-  implicit class TimeOptionsMutableBuilder[Self <: TimeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TimeOptions](x: Self) {
     
-    @scala.inline
-    def setDate(value: js.Any): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Any): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateUndefined: Self = StObject.set(x, "Date", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "Date", js.undefined)
     
-    @scala.inline
-    def setGetTimezoneOffset(value: /* timestamp */ Double => Double): Self = StObject.set(x, "getTimezoneOffset", js.Any.fromFunction1(value))
+    inline def setGetTimezoneOffset(value: /* timestamp */ Double => Double): Self = StObject.set(x, "getTimezoneOffset", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetTimezoneOffsetUndefined: Self = StObject.set(x, "getTimezoneOffset", js.undefined)
+    inline def setGetTimezoneOffsetUndefined: Self = StObject.set(x, "getTimezoneOffset", js.undefined)
     
-    @scala.inline
-    def setMoment(value: js.Function): Self = StObject.set(x, "moment", value.asInstanceOf[js.Any])
+    inline def setMoment(value: js.Function): Self = StObject.set(x, "moment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMomentUndefined: Self = StObject.set(x, "moment", js.undefined)
+    inline def setMomentUndefined: Self = StObject.set(x, "moment", js.undefined)
     
-    @scala.inline
-    def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
+    inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimezoneOffset(value: Double): Self = StObject.set(x, "timezoneOffset", value.asInstanceOf[js.Any])
+    inline def setTimezoneOffset(value: Double): Self = StObject.set(x, "timezoneOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimezoneOffsetUndefined: Self = StObject.set(x, "timezoneOffset", js.undefined)
+    inline def setTimezoneOffsetUndefined: Self = StObject.set(x, "timezoneOffset", js.undefined)
     
-    @scala.inline
-    def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
+    inline def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
     
-    @scala.inline
-    def setUseUTC(value: Boolean): Self = StObject.set(x, "useUTC", value.asInstanceOf[js.Any])
+    inline def setUseUTC(value: Boolean): Self = StObject.set(x, "useUTC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseUTCUndefined: Self = StObject.set(x, "useUTC", js.undefined)
+    inline def setUseUTCUndefined: Self = StObject.set(x, "useUTC", js.undefined)
   }
 }

@@ -26,64 +26,45 @@ trait FilterableOptions extends StObject {
 }
 object FilterableOptions {
   
-  @scala.inline
-  def apply(input: js.Any): FilterableOptions = {
+  inline def apply(input: js.Any): FilterableOptions = {
     val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterableOptions]
   }
   
-  @scala.inline
-  implicit class FilterableOptionsMutableBuilder[Self <: FilterableOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FilterableOptions](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setDefaults(value: Boolean): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+    inline def setDefaults(value: Boolean): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
+    inline def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setEnhanced(value: Boolean): Self = StObject.set(x, "enhanced", value.asInstanceOf[js.Any])
+    inline def setEnhanced(value: Boolean): Self = StObject.set(x, "enhanced", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnhancedUndefined: Self = StObject.set(x, "enhanced", js.undefined)
+    inline def setEnhancedUndefined: Self = StObject.set(x, "enhanced", js.undefined)
     
-    @scala.inline
-    def setFilterCallback(value: (/* index */ Double, /* searchValue */ js.UndefOr[String]) => Boolean): Self = StObject.set(x, "filterCallback", js.Any.fromFunction2(value))
+    inline def setFilterCallback(value: (/* index */ Double, /* searchValue */ js.UndefOr[String]) => Boolean): Self = StObject.set(x, "filterCallback", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFilterCallbackUndefined: Self = StObject.set(x, "filterCallback", js.undefined)
+    inline def setFilterCallbackUndefined: Self = StObject.set(x, "filterCallback", js.undefined)
     
-    @scala.inline
-    def setFilterPlaceholder(value: String): Self = StObject.set(x, "filterPlaceholder", value.asInstanceOf[js.Any])
+    inline def setFilterPlaceholder(value: String): Self = StObject.set(x, "filterPlaceholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterPlaceholderUndefined: Self = StObject.set(x, "filterPlaceholder", js.undefined)
+    inline def setFilterPlaceholderUndefined: Self = StObject.set(x, "filterPlaceholder", js.undefined)
     
-    @scala.inline
-    def setFilterReveal(value: Boolean): Self = StObject.set(x, "filterReveal", value.asInstanceOf[js.Any])
+    inline def setFilterReveal(value: Boolean): Self = StObject.set(x, "filterReveal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterRevealUndefined: Self = StObject.set(x, "filterReveal", js.undefined)
+    inline def setFilterRevealUndefined: Self = StObject.set(x, "filterReveal", js.undefined)
     
-    @scala.inline
-    def setFilterTheme(value: String): Self = StObject.set(x, "filterTheme", value.asInstanceOf[js.Any])
+    inline def setFilterTheme(value: String): Self = StObject.set(x, "filterTheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterThemeUndefined: Self = StObject.set(x, "filterTheme", js.undefined)
+    inline def setFilterThemeUndefined: Self = StObject.set(x, "filterTheme", js.undefined)
     
-    @scala.inline
-    def setInput(value: js.Any): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: js.Any): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
   }
 }

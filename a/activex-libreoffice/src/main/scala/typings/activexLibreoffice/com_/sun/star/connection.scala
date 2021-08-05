@@ -62,20 +62,16 @@ object connection {
   }
   object SocketPermission {
     
-    @scala.inline
-    def apply(Actions: String, Host: String): SocketPermission = {
+    inline def apply(Actions: String, Host: String): SocketPermission = {
       val __obj = js.Dynamic.literal(Actions = Actions.asInstanceOf[js.Any], Host = Host.asInstanceOf[js.Any])
       __obj.asInstanceOf[SocketPermission]
     }
     
-    @scala.inline
-    implicit class SocketPermissionMutableBuilder[Self <: SocketPermission] (val x: Self) extends AnyVal {
+    extension [Self <: SocketPermission](x: Self) {
       
-      @scala.inline
-      def setActions(value: String): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: String): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
     }
   }
   
@@ -105,8 +101,7 @@ object connection {
   }
   object XAcceptor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       accept: String => XConnection,
       acquire: () => Unit,
       queryInterface: `type` => js.Any,
@@ -117,14 +112,11 @@ object connection {
       __obj.asInstanceOf[XAcceptor]
     }
     
-    @scala.inline
-    implicit class XAcceptorMutableBuilder[Self <: XAcceptor] (val x: Self) extends AnyVal {
+    extension [Self <: XAcceptor](x: Self) {
       
-      @scala.inline
-      def setAccept(value: String => XConnection): Self = StObject.set(x, "accept", js.Any.fromFunction1(value))
+      inline def setAccept(value: String => XConnection): Self = StObject.set(x, "accept", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStopAccepting(value: () => Unit): Self = StObject.set(x, "stopAccepting", js.Any.fromFunction0(value))
+      inline def setStopAccepting(value: () => Unit): Self = StObject.set(x, "stopAccepting", js.Any.fromFunction0(value))
     }
   }
   
@@ -184,8 +176,7 @@ object connection {
   }
   object XConnection {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Description: String,
       acquire: () => Unit,
       close: () => Unit,
@@ -200,26 +191,19 @@ object connection {
       __obj.asInstanceOf[XConnection]
     }
     
-    @scala.inline
-    implicit class XConnectionMutableBuilder[Self <: XConnection] (val x: Self) extends AnyVal {
+    extension [Self <: XConnection](x: Self) {
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
+      inline def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDescription(value: () => String): Self = StObject.set(x, "getDescription", js.Any.fromFunction0(value))
+      inline def setGetDescription(value: () => String): Self = StObject.set(x, "getDescription", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRead(value: (js.Array[SeqEquiv[Double]], Double) => Double): Self = StObject.set(x, "read", js.Any.fromFunction2(value))
+      inline def setRead(value: (js.Array[SeqEquiv[Double]], Double) => Double): Self = StObject.set(x, "read", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWrite(value: SeqEquiv[Double] => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+      inline def setWrite(value: SeqEquiv[Double] => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     }
   }
   
@@ -236,8 +220,7 @@ object connection {
   }
   object XConnection2 {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Description: String,
       acquire: () => Unit,
       available: () => Double,
@@ -254,14 +237,11 @@ object connection {
       __obj.asInstanceOf[XConnection2]
     }
     
-    @scala.inline
-    implicit class XConnection2MutableBuilder[Self <: XConnection2] (val x: Self) extends AnyVal {
+    extension [Self <: XConnection2](x: Self) {
       
-      @scala.inline
-      def setAvailable(value: () => Double): Self = StObject.set(x, "available", js.Any.fromFunction0(value))
+      inline def setAvailable(value: () => Double): Self = StObject.set(x, "available", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReadSomeBytes(value: (js.Array[SeqEquiv[Double]], Double) => Double): Self = StObject.set(x, "readSomeBytes", js.Any.fromFunction2(value))
+      inline def setReadSomeBytes(value: (js.Array[SeqEquiv[Double]], Double) => Double): Self = StObject.set(x, "readSomeBytes", js.Any.fromFunction2(value))
     }
   }
   
@@ -290,8 +270,7 @@ object connection {
   }
   object XConnectionBroadcaster {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       addStreamListener: XStreamListener => Unit,
       queryInterface: `type` => js.Any,
@@ -302,14 +281,11 @@ object connection {
       __obj.asInstanceOf[XConnectionBroadcaster]
     }
     
-    @scala.inline
-    implicit class XConnectionBroadcasterMutableBuilder[Self <: XConnectionBroadcaster] (val x: Self) extends AnyVal {
+    extension [Self <: XConnectionBroadcaster](x: Self) {
       
-      @scala.inline
-      def setAddStreamListener(value: XStreamListener => Unit): Self = StObject.set(x, "addStreamListener", js.Any.fromFunction1(value))
+      inline def setAddStreamListener(value: XStreamListener => Unit): Self = StObject.set(x, "addStreamListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveStreamListener(value: XStreamListener => Unit): Self = StObject.set(x, "removeStreamListener", js.Any.fromFunction1(value))
+      inline def setRemoveStreamListener(value: XStreamListener => Unit): Self = StObject.set(x, "removeStreamListener", js.Any.fromFunction1(value))
     }
   }
   
@@ -331,8 +307,7 @@ object connection {
   }
   object XConnector {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       connect: String => XConnection,
       queryInterface: `type` => js.Any,
@@ -342,11 +317,9 @@ object connection {
       __obj.asInstanceOf[XConnector]
     }
     
-    @scala.inline
-    implicit class XConnectorMutableBuilder[Self <: XConnector] (val x: Self) extends AnyVal {
+    extension [Self <: XConnector](x: Self) {
       
-      @scala.inline
-      def setConnect(value: String => XConnection): Self = StObject.set(x, "connect", js.Any.fromFunction1(value))
+      inline def setConnect(value: String => XConnection): Self = StObject.set(x, "connect", js.Any.fromFunction1(value))
     }
   }
 }

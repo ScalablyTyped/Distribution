@@ -16,13 +16,12 @@ trait CoAuthUpdates extends StObject {
   
   val Parent: js.Any
   
-  @JSName("Word.CoAuthUpdates_typekey")
+  /* private */ @JSName("Word.CoAuthUpdates_typekey")
   var WordDotCoAuthUpdates_typekey: CoAuthUpdates
 }
 object CoAuthUpdates {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Count: Double,
     Creator: Double,
@@ -35,25 +34,18 @@ object CoAuthUpdates {
     __obj.asInstanceOf[CoAuthUpdates]
   }
   
-  @scala.inline
-  implicit class CoAuthUpdatesMutableBuilder[Self <: CoAuthUpdates] (val x: Self) extends AnyVal {
+  extension [Self <: CoAuthUpdates](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Double => CoAuthUpdate): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => CoAuthUpdate): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotCoAuthUpdates_typekey(value: CoAuthUpdates): Self = StObject.set(x, "Word.CoAuthUpdates_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotCoAuthUpdates_typekey(value: CoAuthUpdates): Self = StObject.set(x, "Word.CoAuthUpdates_typekey", value.asInstanceOf[js.Any])
   }
 }

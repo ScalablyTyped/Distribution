@@ -14,10 +14,8 @@ object ecrGetRepositoryMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getRepository(args: GetRepositoryArgs): js.Promise[GetRepositoryResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRepository")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetRepositoryResult]]
-  @scala.inline
-  def getRepository(args: GetRepositoryArgs, opts: InvokeOptions): js.Promise[GetRepositoryResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRepository")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRepositoryResult]]
+  inline def getRepository(args: GetRepositoryArgs): js.Promise[GetRepositoryResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRepository")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetRepositoryResult]]
+  inline def getRepository(args: GetRepositoryArgs, opts: InvokeOptions): js.Promise[GetRepositoryResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRepository")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRepositoryResult]]
   
   trait GetRepositoryArgs extends StObject {
     
@@ -38,29 +36,22 @@ object ecrGetRepositoryMod {
   }
   object GetRepositoryArgs {
     
-    @scala.inline
-    def apply(name: String): GetRepositoryArgs = {
+    inline def apply(name: String): GetRepositoryArgs = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetRepositoryArgs]
     }
     
-    @scala.inline
-    implicit class GetRepositoryArgsMutableBuilder[Self <: GetRepositoryArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetRepositoryArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegistryId(value: String): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
+      inline def setRegistryId(value: String): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
+      inline def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -107,8 +98,7 @@ object ecrGetRepositoryMod {
   }
   object GetRepositoryResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arn: String,
       encryptionConfigurations: js.Array[GetRepositoryEncryptionConfiguration],
       id: String,
@@ -123,41 +113,29 @@ object ecrGetRepositoryMod {
       __obj.asInstanceOf[GetRepositoryResult]
     }
     
-    @scala.inline
-    implicit class GetRepositoryResultMutableBuilder[Self <: GetRepositoryResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetRepositoryResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionConfigurations(value: js.Array[GetRepositoryEncryptionConfiguration]): Self = StObject.set(x, "encryptionConfigurations", value.asInstanceOf[js.Any])
+      inline def setEncryptionConfigurations(value: js.Array[GetRepositoryEncryptionConfiguration]): Self = StObject.set(x, "encryptionConfigurations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionConfigurationsVarargs(value: GetRepositoryEncryptionConfiguration*): Self = StObject.set(x, "encryptionConfigurations", js.Array(value :_*))
+      inline def setEncryptionConfigurationsVarargs(value: GetRepositoryEncryptionConfiguration*): Self = StObject.set(x, "encryptionConfigurations", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageScanningConfigurations(value: js.Array[GetRepositoryImageScanningConfiguration]): Self = StObject.set(x, "imageScanningConfigurations", value.asInstanceOf[js.Any])
+      inline def setImageScanningConfigurations(value: js.Array[GetRepositoryImageScanningConfiguration]): Self = StObject.set(x, "imageScanningConfigurations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageScanningConfigurationsVarargs(value: GetRepositoryImageScanningConfiguration*): Self = StObject.set(x, "imageScanningConfigurations", js.Array(value :_*))
+      inline def setImageScanningConfigurationsVarargs(value: GetRepositoryImageScanningConfiguration*): Self = StObject.set(x, "imageScanningConfigurations", js.Array(value :_*))
       
-      @scala.inline
-      def setImageTagMutability(value: String): Self = StObject.set(x, "imageTagMutability", value.asInstanceOf[js.Any])
+      inline def setImageTagMutability(value: String): Self = StObject.set(x, "imageTagMutability", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegistryId(value: String): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
+      inline def setRegistryId(value: String): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepositoryUrl(value: String): Self = StObject.set(x, "repositoryUrl", value.asInstanceOf[js.Any])
+      inline def setRepositoryUrl(value: String): Self = StObject.set(x, "repositoryUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     }
   }
 }

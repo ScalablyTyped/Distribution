@@ -17,19 +17,15 @@ trait SchemaUndeleteTenantProjectRequest extends StObject {
 }
 object SchemaUndeleteTenantProjectRequest {
   
-  @scala.inline
-  def apply(): SchemaUndeleteTenantProjectRequest = {
+  inline def apply(): SchemaUndeleteTenantProjectRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUndeleteTenantProjectRequest]
   }
   
-  @scala.inline
-  implicit class SchemaUndeleteTenantProjectRequestMutableBuilder[Self <: SchemaUndeleteTenantProjectRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUndeleteTenantProjectRequest](x: Self) {
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

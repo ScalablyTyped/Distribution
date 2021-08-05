@@ -16,20 +16,16 @@ object inspectorMod {
   }
   object Inspector {
     
-    @scala.inline
-    def apply(findConstructor: Constructor => Constructor, getDependencies: js.Function => js.Array[Dependency]): Inspector = {
+    inline def apply(findConstructor: Constructor => Constructor, getDependencies: js.Function => js.Array[Dependency]): Inspector = {
       val __obj = js.Dynamic.literal(findConstructor = js.Any.fromFunction1(findConstructor), getDependencies = js.Any.fromFunction1(getDependencies))
       __obj.asInstanceOf[Inspector]
     }
     
-    @scala.inline
-    implicit class InspectorMutableBuilder[Self <: Inspector] (val x: Self) extends AnyVal {
+    extension [Self <: Inspector](x: Self) {
       
-      @scala.inline
-      def setFindConstructor(value: Constructor => Constructor): Self = StObject.set(x, "findConstructor", js.Any.fromFunction1(value))
+      inline def setFindConstructor(value: Constructor => Constructor): Self = StObject.set(x, "findConstructor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetDependencies(value: js.Function => js.Array[Dependency]): Self = StObject.set(x, "getDependencies", js.Any.fromFunction1(value))
+      inline def setGetDependencies(value: js.Function => js.Array[Dependency]): Self = StObject.set(x, "getDependencies", js.Any.fromFunction1(value))
     }
   }
 }

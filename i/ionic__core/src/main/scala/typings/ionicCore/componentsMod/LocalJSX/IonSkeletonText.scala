@@ -13,19 +13,15 @@ trait IonSkeletonText extends StObject {
 }
 object IonSkeletonText {
   
-  @scala.inline
-  def apply(): IonSkeletonText = {
+  inline def apply(): IonSkeletonText = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IonSkeletonText]
   }
   
-  @scala.inline
-  implicit class IonSkeletonTextMutableBuilder[Self <: IonSkeletonText] (val x: Self) extends AnyVal {
+  extension [Self <: IonSkeletonText](x: Self) {
     
-    @scala.inline
-    def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
+    inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
+    inline def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
   }
 }

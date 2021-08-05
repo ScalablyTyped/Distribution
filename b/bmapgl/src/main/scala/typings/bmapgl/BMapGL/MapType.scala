@@ -22,8 +22,7 @@ trait MapType extends StObject {
 }
 object MapType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getMaxZoom: () => Double,
     getMinZoom: () => Double,
     getName: () => String,
@@ -36,28 +35,20 @@ object MapType {
     __obj.asInstanceOf[MapType]
   }
   
-  @scala.inline
-  implicit class MapTypeMutableBuilder[Self <: MapType] (val x: Self) extends AnyVal {
+  extension [Self <: MapType](x: Self) {
     
-    @scala.inline
-    def setGetMaxZoom(value: () => Double): Self = StObject.set(x, "getMaxZoom", js.Any.fromFunction0(value))
+    inline def setGetMaxZoom(value: () => Double): Self = StObject.set(x, "getMaxZoom", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMinZoom(value: () => Double): Self = StObject.set(x, "getMinZoom", js.Any.fromFunction0(value))
+    inline def setGetMinZoom(value: () => Double): Self = StObject.set(x, "getMinZoom", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetProjection(value: () => Projection): Self = StObject.set(x, "getProjection", js.Any.fromFunction0(value))
+    inline def setGetProjection(value: () => Projection): Self = StObject.set(x, "getProjection", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTextColor(value: () => String): Self = StObject.set(x, "getTextColor", js.Any.fromFunction0(value))
+    inline def setGetTextColor(value: () => String): Self = StObject.set(x, "getTextColor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTileLayer(value: () => TileLayer): Self = StObject.set(x, "getTileLayer", js.Any.fromFunction0(value))
+    inline def setGetTileLayer(value: () => TileLayer): Self = StObject.set(x, "getTileLayer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTips(value: () => String): Self = StObject.set(x, "getTips", js.Any.fromFunction0(value))
+    inline def setGetTips(value: () => String): Self = StObject.set(x, "getTips", js.Any.fromFunction0(value))
   }
 }

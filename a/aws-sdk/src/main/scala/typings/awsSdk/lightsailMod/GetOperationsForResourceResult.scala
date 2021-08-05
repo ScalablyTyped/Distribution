@@ -23,34 +23,25 @@ trait GetOperationsForResourceResult extends StObject {
 }
 object GetOperationsForResourceResult {
   
-  @scala.inline
-  def apply(): GetOperationsForResourceResult = {
+  inline def apply(): GetOperationsForResourceResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetOperationsForResourceResult]
   }
   
-  @scala.inline
-  implicit class GetOperationsForResourceResultMutableBuilder[Self <: GetOperationsForResourceResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetOperationsForResourceResult](x: Self) {
     
-    @scala.inline
-    def setNextPageCount(value: String): Self = StObject.set(x, "nextPageCount", value.asInstanceOf[js.Any])
+    inline def setNextPageCount(value: String): Self = StObject.set(x, "nextPageCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageCountUndefined: Self = StObject.set(x, "nextPageCount", js.undefined)
+    inline def setNextPageCountUndefined: Self = StObject.set(x, "nextPageCount", js.undefined)
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setOperations(value: OperationList): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+    inline def setOperations(value: OperationList): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
+    inline def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
     
-    @scala.inline
-    def setOperationsVarargs(value: Operation*): Self = StObject.set(x, "operations", js.Array(value :_*))
+    inline def setOperationsVarargs(value: Operation*): Self = StObject.set(x, "operations", js.Array(value :_*))
   }
 }

@@ -198,10 +198,8 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def wrap(color: String, text: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(color.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def wrap(color: String, text: String, reset_color: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(color.asInstanceOf[js.Any], text.asInstanceOf[js.Any], reset_color.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def wrap(color: String, text: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(color.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def wrap(color: String, text: String, reset_color: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(color.asInstanceOf[js.Any], text.asInstanceOf[js.Any], reset_color.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   trait IChannel extends StObject {
@@ -217,23 +215,18 @@ object mod {
   }
   object IChannel {
     
-    @scala.inline
-    def apply(name: String, topic: String, users: String): IChannel = {
+    inline def apply(name: String, topic: String, users: String): IChannel = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
       __obj.asInstanceOf[IChannel]
     }
     
-    @scala.inline
-    implicit class IChannelMutableBuilder[Self <: IChannel] (val x: Self) extends AnyVal {
+    extension [Self <: IChannel](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+      inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsers(value: String): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+      inline def setUsers(value: String): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     }
   }
   
@@ -363,137 +356,94 @@ object mod {
   }
   object IClientOpts {
     
-    @scala.inline
-    def apply(): IClientOpts = {
+    inline def apply(): IClientOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IClientOpts]
     }
     
-    @scala.inline
-    implicit class IClientOptsMutableBuilder[Self <: IClientOpts] (val x: Self) extends AnyVal {
+    extension [Self <: IClientOpts](x: Self) {
       
-      @scala.inline
-      def setAutoConnect(value: Boolean): Self = StObject.set(x, "autoConnect", value.asInstanceOf[js.Any])
+      inline def setAutoConnect(value: Boolean): Self = StObject.set(x, "autoConnect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoConnectUndefined: Self = StObject.set(x, "autoConnect", js.undefined)
+      inline def setAutoConnectUndefined: Self = StObject.set(x, "autoConnect", js.undefined)
       
-      @scala.inline
-      def setAutoRejoin(value: Boolean): Self = StObject.set(x, "autoRejoin", value.asInstanceOf[js.Any])
+      inline def setAutoRejoin(value: Boolean): Self = StObject.set(x, "autoRejoin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoRejoinUndefined: Self = StObject.set(x, "autoRejoin", js.undefined)
+      inline def setAutoRejoinUndefined: Self = StObject.set(x, "autoRejoin", js.undefined)
       
-      @scala.inline
-      def setCertExpired(value: Boolean): Self = StObject.set(x, "certExpired", value.asInstanceOf[js.Any])
+      inline def setCertExpired(value: Boolean): Self = StObject.set(x, "certExpired", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertExpiredUndefined: Self = StObject.set(x, "certExpired", js.undefined)
+      inline def setCertExpiredUndefined: Self = StObject.set(x, "certExpired", js.undefined)
       
-      @scala.inline
-      def setChannelPrefixes(value: String): Self = StObject.set(x, "channelPrefixes", value.asInstanceOf[js.Any])
+      inline def setChannelPrefixes(value: String): Self = StObject.set(x, "channelPrefixes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelPrefixesUndefined: Self = StObject.set(x, "channelPrefixes", js.undefined)
+      inline def setChannelPrefixesUndefined: Self = StObject.set(x, "channelPrefixes", js.undefined)
       
-      @scala.inline
-      def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+      inline def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
+      inline def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
       
-      @scala.inline
-      def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
+      inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setFloodProtection(value: Boolean): Self = StObject.set(x, "floodProtection", value.asInstanceOf[js.Any])
+      inline def setFloodProtection(value: Boolean): Self = StObject.set(x, "floodProtection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFloodProtectionDelay(value: Double): Self = StObject.set(x, "floodProtectionDelay", value.asInstanceOf[js.Any])
+      inline def setFloodProtectionDelay(value: Double): Self = StObject.set(x, "floodProtectionDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFloodProtectionDelayUndefined: Self = StObject.set(x, "floodProtectionDelay", js.undefined)
+      inline def setFloodProtectionDelayUndefined: Self = StObject.set(x, "floodProtectionDelay", js.undefined)
       
-      @scala.inline
-      def setFloodProtectionUndefined: Self = StObject.set(x, "floodProtection", js.undefined)
+      inline def setFloodProtectionUndefined: Self = StObject.set(x, "floodProtection", js.undefined)
       
-      @scala.inline
-      def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
+      inline def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalAddressUndefined: Self = StObject.set(x, "localAddress", js.undefined)
+      inline def setLocalAddressUndefined: Self = StObject.set(x, "localAddress", js.undefined)
       
-      @scala.inline
-      def setMessageSplit(value: Double): Self = StObject.set(x, "messageSplit", value.asInstanceOf[js.Any])
+      inline def setMessageSplit(value: Double): Self = StObject.set(x, "messageSplit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageSplitUndefined: Self = StObject.set(x, "messageSplit", js.undefined)
+      inline def setMessageSplitUndefined: Self = StObject.set(x, "messageSplit", js.undefined)
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setRealName(value: String): Self = StObject.set(x, "realName", value.asInstanceOf[js.Any])
+      inline def setRealName(value: String): Self = StObject.set(x, "realName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRealNameUndefined: Self = StObject.set(x, "realName", js.undefined)
+      inline def setRealNameUndefined: Self = StObject.set(x, "realName", js.undefined)
       
-      @scala.inline
-      def setSasl(value: Boolean): Self = StObject.set(x, "sasl", value.asInstanceOf[js.Any])
+      inline def setSasl(value: Boolean): Self = StObject.set(x, "sasl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaslUndefined: Self = StObject.set(x, "sasl", js.undefined)
+      inline def setSaslUndefined: Self = StObject.set(x, "sasl", js.undefined)
       
-      @scala.inline
-      def setSecure(value: Boolean | SecureContext): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+      inline def setSecure(value: Boolean | SecureContext): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
+      inline def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
       
-      @scala.inline
-      def setSelfSigned(value: Boolean): Self = StObject.set(x, "selfSigned", value.asInstanceOf[js.Any])
+      inline def setSelfSigned(value: Boolean): Self = StObject.set(x, "selfSigned", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelfSignedUndefined: Self = StObject.set(x, "selfSigned", js.undefined)
+      inline def setSelfSignedUndefined: Self = StObject.set(x, "selfSigned", js.undefined)
       
-      @scala.inline
-      def setShowErrors(value: Boolean): Self = StObject.set(x, "showErrors", value.asInstanceOf[js.Any])
+      inline def setShowErrors(value: Boolean): Self = StObject.set(x, "showErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowErrorsUndefined: Self = StObject.set(x, "showErrors", js.undefined)
+      inline def setShowErrorsUndefined: Self = StObject.set(x, "showErrors", js.undefined)
       
-      @scala.inline
-      def setStripColors(value: Boolean): Self = StObject.set(x, "stripColors", value.asInstanceOf[js.Any])
+      inline def setStripColors(value: Boolean): Self = StObject.set(x, "stripColors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripColorsUndefined: Self = StObject.set(x, "stripColors", js.undefined)
+      inline def setStripColorsUndefined: Self = StObject.set(x, "stripColors", js.undefined)
       
-      @scala.inline
-      def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
+      inline def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
+      inline def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
     }
   }
   
@@ -516,35 +466,26 @@ object mod {
   }
   object IMessage {
     
-    @scala.inline
-    def apply(args: js.Array[String], command: String, commandType: CommandType, rawCommand: String): IMessage = {
+    inline def apply(args: js.Array[String], command: String, commandType: CommandType, rawCommand: String): IMessage = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any], commandType = commandType.asInstanceOf[js.Any], rawCommand = rawCommand.asInstanceOf[js.Any])
       __obj.asInstanceOf[IMessage]
     }
     
-    @scala.inline
-    implicit class IMessageMutableBuilder[Self <: IMessage] (val x: Self) extends AnyVal {
+    extension [Self <: IMessage](x: Self) {
       
-      @scala.inline
-      def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
       
-      @scala.inline
-      def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+      inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommandType(value: CommandType): Self = StObject.set(x, "commandType", value.asInstanceOf[js.Any])
+      inline def setCommandType(value: CommandType): Self = StObject.set(x, "commandType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setRawCommand(value: String): Self = StObject.set(x, "rawCommand", value.asInstanceOf[js.Any])
+      inline def setRawCommand(value: String): Self = StObject.set(x, "rawCommand", value.asInstanceOf[js.Any])
     }
   }
   
@@ -576,8 +517,7 @@ object mod {
   }
   object IWhoisData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       channels: js.Array[String],
       host: String,
       nick: String,
@@ -591,35 +531,25 @@ object mod {
       __obj.asInstanceOf[IWhoisData]
     }
     
-    @scala.inline
-    implicit class IWhoisDataMutableBuilder[Self <: IWhoisData] (val x: Self) extends AnyVal {
+    extension [Self <: IWhoisData](x: Self) {
       
-      @scala.inline
-      def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+      inline def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
+      inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNick(value: String): Self = StObject.set(x, "nick", value.asInstanceOf[js.Any])
+      inline def setNick(value: String): Self = StObject.set(x, "nick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+      inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRealname(value: String): Self = StObject.set(x, "realname", value.asInstanceOf[js.Any])
+      inline def setRealname(value: String): Self = StObject.set(x, "realname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+      inline def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerinfo(value: String): Self = StObject.set(x, "serverinfo", value.asInstanceOf[js.Any])
+      inline def setServerinfo(value: String): Self = StObject.set(x, "serverinfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
   

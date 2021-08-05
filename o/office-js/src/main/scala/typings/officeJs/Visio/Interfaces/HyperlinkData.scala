@@ -41,37 +41,27 @@ trait HyperlinkData extends StObject {
 }
 object HyperlinkData {
   
-  @scala.inline
-  def apply(): HyperlinkData = {
+  inline def apply(): HyperlinkData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HyperlinkData]
   }
   
-  @scala.inline
-  implicit class HyperlinkDataMutableBuilder[Self <: HyperlinkData] (val x: Self) extends AnyVal {
+  extension [Self <: HyperlinkData](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setExtraInfo(value: String): Self = StObject.set(x, "extraInfo", value.asInstanceOf[js.Any])
+    inline def setExtraInfo(value: String): Self = StObject.set(x, "extraInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraInfoUndefined: Self = StObject.set(x, "extraInfo", js.undefined)
+    inline def setExtraInfoUndefined: Self = StObject.set(x, "extraInfo", js.undefined)
     
-    @scala.inline
-    def setSubAddress(value: String): Self = StObject.set(x, "subAddress", value.asInstanceOf[js.Any])
+    inline def setSubAddress(value: String): Self = StObject.set(x, "subAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubAddressUndefined: Self = StObject.set(x, "subAddress", js.undefined)
+    inline def setSubAddressUndefined: Self = StObject.set(x, "subAddress", js.undefined)
   }
 }

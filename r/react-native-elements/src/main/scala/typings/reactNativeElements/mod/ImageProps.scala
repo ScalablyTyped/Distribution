@@ -70,73 +70,51 @@ trait ImageProps
 }
 object ImageProps {
   
-  @scala.inline
-  def apply(source: ImageSourcePropType): ImageProps = {
+  inline def apply(source: ImageSourcePropType): ImageProps = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageProps]
   }
   
-  @scala.inline
-  implicit class ImagePropsMutableBuilder[Self <: ImageProps] (val x: Self) extends AnyVal {
+  extension [Self <: ImageProps](x: Self) {
     
-    @scala.inline
-    def setComponent(value: ComponentClass[js.Object, ComponentState]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: ComponentClass[js.Object, ComponentState]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "Component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "Component", js.undefined)
     
-    @scala.inline
-    def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
+    inline def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerStyleNull: Self = StObject.set(x, "containerStyle", null)
+    inline def setContainerStyleNull: Self = StObject.set(x, "containerStyle", null)
     
-    @scala.inline
-    def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
+    inline def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
     
-    @scala.inline
-    def setImageComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "ImageComponent", value.asInstanceOf[js.Any])
+    inline def setImageComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "ImageComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageComponentUndefined: Self = StObject.set(x, "ImageComponent", js.undefined)
+    inline def setImageComponentUndefined: Self = StObject.set(x, "ImageComponent", js.undefined)
     
-    @scala.inline
-    def setOnLongPress(value: () => Unit): Self = StObject.set(x, "onLongPress", js.Any.fromFunction0(value))
+    inline def setOnLongPress(value: () => Unit): Self = StObject.set(x, "onLongPress", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnLongPressUndefined: Self = StObject.set(x, "onLongPress", js.undefined)
+    inline def setOnLongPressUndefined: Self = StObject.set(x, "onLongPress", js.undefined)
     
-    @scala.inline
-    def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
+    inline def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
+    inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
     
-    @scala.inline
-    def setPlaceholderContent(value: ReactElement): Self = StObject.set(x, "PlaceholderContent", value.asInstanceOf[js.Any])
+    inline def setPlaceholderContent(value: ReactElement): Self = StObject.set(x, "PlaceholderContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholderContentUndefined: Self = StObject.set(x, "PlaceholderContent", js.undefined)
+    inline def setPlaceholderContentUndefined: Self = StObject.set(x, "PlaceholderContent", js.undefined)
     
-    @scala.inline
-    def setPlaceholderStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "placeholderStyle", value.asInstanceOf[js.Any])
+    inline def setPlaceholderStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "placeholderStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholderStyleNull: Self = StObject.set(x, "placeholderStyle", null)
+    inline def setPlaceholderStyleNull: Self = StObject.set(x, "placeholderStyle", null)
     
-    @scala.inline
-    def setPlaceholderStyleUndefined: Self = StObject.set(x, "placeholderStyle", js.undefined)
+    inline def setPlaceholderStyleUndefined: Self = StObject.set(x, "placeholderStyle", js.undefined)
     
-    @scala.inline
-    def setTransition(value: Boolean): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+    inline def setTransition(value: Boolean): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionDuration(value: Double): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
+    inline def setTransitionDuration(value: Double): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
+    inline def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
     
-    @scala.inline
-    def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
+    inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
   }
 }

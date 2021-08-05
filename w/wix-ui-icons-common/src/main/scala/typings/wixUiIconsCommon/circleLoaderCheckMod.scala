@@ -22,20 +22,16 @@ object circleLoaderCheckMod extends Shortcut {
   }
   object CircleLoaderCheckProps {
     
-    @scala.inline
-    def apply(): CircleLoaderCheckProps = {
+    inline def apply(): CircleLoaderCheckProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CircleLoaderCheckProps]
     }
     
-    @scala.inline
-    implicit class CircleLoaderCheckPropsMutableBuilder[Self <: CircleLoaderCheckProps] (val x: Self) extends AnyVal {
+    extension [Self <: CircleLoaderCheckProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

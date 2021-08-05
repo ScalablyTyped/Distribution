@@ -122,74 +122,52 @@ object menuMod {
   }
   object BaseMenuProps {
     
-    @scala.inline
-    def apply(controlId: String, id: String, onRequestClose: () => Unit, visible: Boolean): BaseMenuProps = {
+    inline def apply(controlId: String, id: String, onRequestClose: () => Unit, visible: Boolean): BaseMenuProps = {
       val __obj = js.Dynamic.literal(controlId = controlId.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], onRequestClose = js.Any.fromFunction0(onRequestClose), visible = visible.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseMenuProps]
     }
     
-    @scala.inline
-    implicit class BaseMenuPropsMutableBuilder[Self <: BaseMenuProps] (val x: Self) extends AnyVal {
+    extension [Self <: BaseMenuProps](x: Self) {
       
-      @scala.inline
-      def setAnchor(value: PositionAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+      inline def setAnchor(value: PositionAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+      inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
       
-      @scala.inline
-      def setCloseOnResize(value: Boolean): Self = StObject.set(x, "closeOnResize", value.asInstanceOf[js.Any])
+      inline def setCloseOnResize(value: Boolean): Self = StObject.set(x, "closeOnResize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseOnResizeUndefined: Self = StObject.set(x, "closeOnResize", js.undefined)
+      inline def setCloseOnResizeUndefined: Self = StObject.set(x, "closeOnResize", js.undefined)
       
-      @scala.inline
-      def setCloseOnScroll(value: Boolean): Self = StObject.set(x, "closeOnScroll", value.asInstanceOf[js.Any])
+      inline def setCloseOnScroll(value: Boolean): Self = StObject.set(x, "closeOnScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseOnScrollUndefined: Self = StObject.set(x, "closeOnScroll", js.undefined)
+      inline def setCloseOnScrollUndefined: Self = StObject.set(x, "closeOnScroll", js.undefined)
       
-      @scala.inline
-      def setControlId(value: String): Self = StObject.set(x, "controlId", value.asInstanceOf[js.Any])
+      inline def setControlId(value: String): Self = StObject.set(x, "controlId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultFocus(value: first | last | String): Self = StObject.set(x, "defaultFocus", value.asInstanceOf[js.Any])
+      inline def setDefaultFocus(value: first | last | String): Self = StObject.set(x, "defaultFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultFocusUndefined: Self = StObject.set(x, "defaultFocus", js.undefined)
+      inline def setDefaultFocusUndefined: Self = StObject.set(x, "defaultFocus", js.undefined)
       
-      @scala.inline
-      def setDisableControlClickOkay(value: Boolean): Self = StObject.set(x, "disableControlClickOkay", value.asInstanceOf[js.Any])
+      inline def setDisableControlClickOkay(value: Boolean): Self = StObject.set(x, "disableControlClickOkay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableControlClickOkayUndefined: Self = StObject.set(x, "disableControlClickOkay", js.undefined)
+      inline def setDisableControlClickOkayUndefined: Self = StObject.set(x, "disableControlClickOkay", js.undefined)
       
-      @scala.inline
-      def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+      inline def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
+      inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnRequestClose(value: () => Unit): Self = StObject.set(x, "onRequestClose", js.Any.fromFunction0(value))
+      inline def setOnRequestClose(value: () => Unit): Self = StObject.set(x, "onRequestClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPositionOptions(value: MenuPositionOptions): Self = StObject.set(x, "positionOptions", value.asInstanceOf[js.Any])
+      inline def setPositionOptions(value: MenuPositionOptions): Self = StObject.set(x, "positionOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionOptionsUndefined: Self = StObject.set(x, "positionOptions", js.undefined)
+      inline def setPositionOptionsUndefined: Self = StObject.set(x, "positionOptions", js.undefined)
       
-      @scala.inline
-      def setRole(value: menu): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: menu): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     }
   }
   
@@ -220,80 +198,56 @@ object menuMod {
   }
   object MenuPositionOptions {
     
-    @scala.inline
-    def apply(): MenuPositionOptions = {
+    inline def apply(): MenuPositionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MenuPositionOptions]
     }
     
-    @scala.inline
-    implicit class MenuPositionOptionsMutableBuilder[Self <: MenuPositionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MenuPositionOptions](x: Self) {
       
-      @scala.inline
-      def setDisableSwapping(value: Boolean): Self = StObject.set(x, "disableSwapping", value.asInstanceOf[js.Any])
+      inline def setDisableSwapping(value: Boolean): Self = StObject.set(x, "disableSwapping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableSwappingUndefined: Self = StObject.set(x, "disableSwapping", js.undefined)
+      inline def setDisableSwappingUndefined: Self = StObject.set(x, "disableSwapping", js.undefined)
       
-      @scala.inline
-      def setDisableVHBounds(value: Boolean): Self = StObject.set(x, "disableVHBounds", value.asInstanceOf[js.Any])
+      inline def setDisableVHBounds(value: Boolean): Self = StObject.set(x, "disableVHBounds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableVHBoundsUndefined: Self = StObject.set(x, "disableVHBounds", js.undefined)
+      inline def setDisableVHBoundsUndefined: Self = StObject.set(x, "disableVHBounds", js.undefined)
       
-      @scala.inline
-      def setInitialX(value: Double): Self = StObject.set(x, "initialX", value.asInstanceOf[js.Any])
+      inline def setInitialX(value: Double): Self = StObject.set(x, "initialX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialXUndefined: Self = StObject.set(x, "initialX", js.undefined)
+      inline def setInitialXUndefined: Self = StObject.set(x, "initialX", js.undefined)
       
-      @scala.inline
-      def setInitialY(value: Double): Self = StObject.set(x, "initialY", value.asInstanceOf[js.Any])
+      inline def setInitialY(value: Double): Self = StObject.set(x, "initialY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialYUndefined: Self = StObject.set(x, "initialY", js.undefined)
+      inline def setInitialYUndefined: Self = StObject.set(x, "initialY", js.undefined)
       
-      @scala.inline
-      def setPreventOverlap(value: Boolean): Self = StObject.set(x, "preventOverlap", value.asInstanceOf[js.Any])
+      inline def setPreventOverlap(value: Boolean): Self = StObject.set(x, "preventOverlap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventOverlapUndefined: Self = StObject.set(x, "preventOverlap", js.undefined)
+      inline def setPreventOverlapUndefined: Self = StObject.set(x, "preventOverlap", js.undefined)
       
-      @scala.inline
-      def setTransformOrigin(value: Boolean): Self = StObject.set(x, "transformOrigin", value.asInstanceOf[js.Any])
+      inline def setTransformOrigin(value: Boolean): Self = StObject.set(x, "transformOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformOriginUndefined: Self = StObject.set(x, "transformOrigin", js.undefined)
+      inline def setTransformOriginUndefined: Self = StObject.set(x, "transformOrigin", js.undefined)
       
-      @scala.inline
-      def setVhMargin(value: Double): Self = StObject.set(x, "vhMargin", value.asInstanceOf[js.Any])
+      inline def setVhMargin(value: Double): Self = StObject.set(x, "vhMargin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVhMarginUndefined: Self = StObject.set(x, "vhMargin", js.undefined)
+      inline def setVhMarginUndefined: Self = StObject.set(x, "vhMargin", js.undefined)
       
-      @scala.inline
-      def setVwMargin(value: Double): Self = StObject.set(x, "vwMargin", value.asInstanceOf[js.Any])
+      inline def setVwMargin(value: Double): Self = StObject.set(x, "vwMargin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVwMarginUndefined: Self = StObject.set(x, "vwMargin", js.undefined)
+      inline def setVwMarginUndefined: Self = StObject.set(x, "vwMargin", js.undefined)
       
-      @scala.inline
-      def setWidth(value: PositionWidth): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: PositionWidth): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      @scala.inline
-      def setXMargin(value: Double): Self = StObject.set(x, "xMargin", value.asInstanceOf[js.Any])
+      inline def setXMargin(value: Double): Self = StObject.set(x, "xMargin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXMarginUndefined: Self = StObject.set(x, "xMargin", js.undefined)
+      inline def setXMarginUndefined: Self = StObject.set(x, "xMargin", js.undefined)
       
-      @scala.inline
-      def setYMargin(value: Double): Self = StObject.set(x, "yMargin", value.asInstanceOf[js.Any])
+      inline def setYMargin(value: Double): Self = StObject.set(x, "yMargin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYMarginUndefined: Self = StObject.set(x, "yMargin", js.undefined)
+      inline def setYMarginUndefined: Self = StObject.set(x, "yMargin", js.undefined)
     }
   }
   

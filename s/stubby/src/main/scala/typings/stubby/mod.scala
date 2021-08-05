@@ -53,17 +53,14 @@ object mod {
   }
   object Endpoint {
     
-    @scala.inline
-    def apply(matches: StubbyRequest => StubbyRequest | Null): Endpoint = {
+    inline def apply(matches: StubbyRequest => StubbyRequest | Null): Endpoint = {
       val __obj = js.Dynamic.literal(matches = js.Any.fromFunction1(matches))
       __obj.asInstanceOf[Endpoint]
     }
     
-    @scala.inline
-    implicit class EndpointMutableBuilder[Self <: Endpoint] (val x: Self) extends AnyVal {
+    extension [Self <: Endpoint](x: Self) {
       
-      @scala.inline
-      def setMatches(value: StubbyRequest => StubbyRequest | Null): Self = StObject.set(x, "matches", js.Any.fromFunction1(value))
+      inline def setMatches(value: StubbyRequest => StubbyRequest | Null): Self = StObject.set(x, "matches", js.Any.fromFunction1(value))
     }
   }
   
@@ -120,71 +117,50 @@ object mod {
   }
   object StubbyCommonOptions {
     
-    @scala.inline
-    def apply(): StubbyCommonOptions = {
+    inline def apply(): StubbyCommonOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StubbyCommonOptions]
     }
     
-    @scala.inline
-    implicit class StubbyCommonOptionsMutableBuilder[Self <: StubbyCommonOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StubbyCommonOptions](x: Self) {
       
-      @scala.inline
-      def setAdmin(value: Double): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
+      inline def setAdmin(value: Double): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdminUndefined: Self = StObject.set(x, "admin", js.undefined)
+      inline def setAdminUndefined: Self = StObject.set(x, "admin", js.undefined)
       
-      @scala.inline
-      def setData(value: StubbyData | js.Array[StubbyData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: StubbyData | js.Array[StubbyData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDataVarargs(value: StubbyData*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: StubbyData*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setDatadir(value: String): Self = StObject.set(x, "datadir", value.asInstanceOf[js.Any])
+      inline def setDatadir(value: String): Self = StObject.set(x, "datadir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatadirUndefined: Self = StObject.set(x, "datadir", js.undefined)
+      inline def setDatadirUndefined: Self = StObject.set(x, "datadir", js.undefined)
       
-      @scala.inline
-      def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
-      @scala.inline
-      def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
+      inline def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
+      inline def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
       
-      @scala.inline
-      def setStubs(value: Double): Self = StObject.set(x, "stubs", value.asInstanceOf[js.Any])
+      inline def setStubs(value: Double): Self = StObject.set(x, "stubs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStubsUndefined: Self = StObject.set(x, "stubs", js.undefined)
+      inline def setStubsUndefined: Self = StObject.set(x, "stubs", js.undefined)
       
-      @scala.inline
-      def setTls(value: Double): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
+      inline def setTls(value: Double): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
+      inline def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
       
-      @scala.inline
-      def setWatch(value: String): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
+      inline def setWatch(value: String): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
+      inline def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
       
-      @scala.inline
-      def set_httpsOptions(value: TlsOptions): Self = StObject.set(x, "_httpsOptions", value.asInstanceOf[js.Any])
+      inline def set_httpsOptions(value: TlsOptions): Self = StObject.set(x, "_httpsOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_httpsOptionsUndefined: Self = StObject.set(x, "_httpsOptions", js.undefined)
+      inline def set_httpsOptionsUndefined: Self = StObject.set(x, "_httpsOptions", js.undefined)
     }
   }
   
@@ -213,26 +189,20 @@ object mod {
   }
   object StubbyData {
     
-    @scala.inline
-    def apply(request: StubbyRequest): StubbyData = {
+    inline def apply(request: StubbyRequest): StubbyData = {
       val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
       __obj.asInstanceOf[StubbyData]
     }
     
-    @scala.inline
-    implicit class StubbyDataMutableBuilder[Self <: StubbyData] (val x: Self) extends AnyVal {
+    extension [Self <: StubbyData](x: Self) {
       
-      @scala.inline
-      def setRequest(value: StubbyRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: StubbyRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse(value: String | StubbyResponse | (js.Array[String | StubbyResponse])): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: String | StubbyResponse | (js.Array[String | StubbyResponse])): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+      inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
       
-      @scala.inline
-      def setResponseVarargs(value: (String | StubbyResponse)*): Self = StObject.set(x, "response", js.Array(value :_*))
+      inline def setResponseVarargs(value: (String | StubbyResponse)*): Self = StObject.set(x, "response", js.Array(value :_*))
     }
   }
   
@@ -250,32 +220,23 @@ object mod {
   trait StubbyMethod extends StObject
   object StubbyMethod {
     
-    @scala.inline
-    def CONNECT: typings.stubby.stubbyStrings.CONNECT = "CONNECT".asInstanceOf[typings.stubby.stubbyStrings.CONNECT]
+    inline def CONNECT: typings.stubby.stubbyStrings.CONNECT = "CONNECT".asInstanceOf[typings.stubby.stubbyStrings.CONNECT]
     
-    @scala.inline
-    def DELETE: typings.stubby.stubbyStrings.DELETE = "DELETE".asInstanceOf[typings.stubby.stubbyStrings.DELETE]
+    inline def DELETE: typings.stubby.stubbyStrings.DELETE = "DELETE".asInstanceOf[typings.stubby.stubbyStrings.DELETE]
     
-    @scala.inline
-    def GET: typings.stubby.stubbyStrings.GET = "GET".asInstanceOf[typings.stubby.stubbyStrings.GET]
+    inline def GET: typings.stubby.stubbyStrings.GET = "GET".asInstanceOf[typings.stubby.stubbyStrings.GET]
     
-    @scala.inline
-    def HEAD: typings.stubby.stubbyStrings.HEAD = "HEAD".asInstanceOf[typings.stubby.stubbyStrings.HEAD]
+    inline def HEAD: typings.stubby.stubbyStrings.HEAD = "HEAD".asInstanceOf[typings.stubby.stubbyStrings.HEAD]
     
-    @scala.inline
-    def OPTIONS: typings.stubby.stubbyStrings.OPTIONS = "OPTIONS".asInstanceOf[typings.stubby.stubbyStrings.OPTIONS]
+    inline def OPTIONS: typings.stubby.stubbyStrings.OPTIONS = "OPTIONS".asInstanceOf[typings.stubby.stubbyStrings.OPTIONS]
     
-    @scala.inline
-    def PATCH: typings.stubby.stubbyStrings.PATCH = "PATCH".asInstanceOf[typings.stubby.stubbyStrings.PATCH]
+    inline def PATCH: typings.stubby.stubbyStrings.PATCH = "PATCH".asInstanceOf[typings.stubby.stubbyStrings.PATCH]
     
-    @scala.inline
-    def POST: typings.stubby.stubbyStrings.POST = "POST".asInstanceOf[typings.stubby.stubbyStrings.POST]
+    inline def POST: typings.stubby.stubbyStrings.POST = "POST".asInstanceOf[typings.stubby.stubbyStrings.POST]
     
-    @scala.inline
-    def PUT: typings.stubby.stubbyStrings.PUT = "PUT".asInstanceOf[typings.stubby.stubbyStrings.PUT]
+    inline def PUT: typings.stubby.stubbyStrings.PUT = "PUT".asInstanceOf[typings.stubby.stubbyStrings.PUT]
     
-    @scala.inline
-    def TRACE: typings.stubby.stubbyStrings.TRACE = "TRACE".asInstanceOf[typings.stubby.stubbyStrings.TRACE]
+    inline def TRACE: typings.stubby.stubbyStrings.TRACE = "TRACE".asInstanceOf[typings.stubby.stubbyStrings.TRACE]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -285,8 +246,7 @@ object mod {
   trait StubbyOptions extends StObject
   object StubbyOptions {
     
-    @scala.inline
-    def StubbyWithKeyCertOptions(
+    inline def StubbyWithKeyCertOptions(
       cert: String | Buffer | (js.Array[String | Buffer]),
       key: String | Buffer | (js.Array[Buffer | js.Object])
     ): typings.stubby.mod.StubbyWithKeyCertOptions = {
@@ -294,8 +254,7 @@ object mod {
       __obj.asInstanceOf[typings.stubby.mod.StubbyWithKeyCertOptions]
     }
     
-    @scala.inline
-    def StubbyWithPfxOptions(): typings.stubby.mod.StubbyWithPfxOptions = {
+    inline def StubbyWithPfxOptions(): typings.stubby.mod.StubbyWithPfxOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.stubby.mod.StubbyWithPfxOptions]
     }
@@ -379,56 +338,40 @@ object mod {
   }
   object StubbyRequest {
     
-    @scala.inline
-    def apply(url: String): StubbyRequest = {
+    inline def apply(url: String): StubbyRequest = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[StubbyRequest]
     }
     
-    @scala.inline
-    implicit class StubbyRequestMutableBuilder[Self <: StubbyRequest] (val x: Self) extends AnyVal {
+    extension [Self <: StubbyRequest](x: Self) {
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+      inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setJson(value: String): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: String): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
+      inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
       
-      @scala.inline
-      def setMethod(value: StubbyMethod | js.Array[StubbyMethod]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: StubbyMethod | js.Array[StubbyMethod]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setMethodVarargs(value: StubbyMethod*): Self = StObject.set(x, "method", js.Array(value :_*))
+      inline def setMethodVarargs(value: StubbyMethod*): Self = StObject.set(x, "method", js.Array(value :_*))
       
-      @scala.inline
-      def setPost(value: String): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
+      inline def setPost(value: String): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
+      inline def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
       
-      @scala.inline
-      def setQuery(value: StringDictionary[String]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: StringDictionary[String]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -467,44 +410,32 @@ object mod {
   }
   object StubbyResponse {
     
-    @scala.inline
-    def apply(): StubbyResponse = {
+    inline def apply(): StubbyResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StubbyResponse]
     }
     
-    @scala.inline
-    implicit class StubbyResponseMutableBuilder[Self <: StubbyResponse] (val x: Self) extends AnyVal {
+    extension [Self <: StubbyResponse](x: Self) {
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+      inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setLatency(value: Double): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
+      inline def setLatency(value: Double): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatencyUndefined: Self = StObject.set(x, "latency", js.undefined)
+      inline def setLatencyUndefined: Self = StObject.set(x, "latency", js.undefined)
       
-      @scala.inline
-      def setStatus(value: Double | String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double | String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     }
   }
   
@@ -522,8 +453,7 @@ object mod {
   }
   object StubbyWithKeyCertOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cert: String | Buffer | (js.Array[String | Buffer]),
       key: String | Buffer | (js.Array[Buffer | js.Object])
     ): StubbyWithKeyCertOptions = {
@@ -531,20 +461,15 @@ object mod {
       __obj.asInstanceOf[StubbyWithKeyCertOptions]
     }
     
-    @scala.inline
-    implicit class StubbyWithKeyCertOptionsMutableBuilder[Self <: StubbyWithKeyCertOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StubbyWithKeyCertOptions](x: Self) {
       
-      @scala.inline
-      def setCert(value: String | Buffer | (js.Array[String | Buffer])): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
+      inline def setCert(value: String | Buffer | (js.Array[String | Buffer])): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertVarargs(value: (String | Buffer)*): Self = StObject.set(x, "cert", js.Array(value :_*))
+      inline def setCertVarargs(value: (String | Buffer)*): Self = StObject.set(x, "cert", js.Array(value :_*))
       
-      @scala.inline
-      def setKey(value: String | Buffer | (js.Array[Buffer | js.Object])): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String | Buffer | (js.Array[Buffer | js.Object])): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyVarargs(value: (Buffer | js.Object)*): Self = StObject.set(x, "key", js.Array(value :_*))
+      inline def setKeyVarargs(value: (Buffer | js.Object)*): Self = StObject.set(x, "key", js.Array(value :_*))
     }
   }
   
@@ -558,23 +483,18 @@ object mod {
   }
   object StubbyWithPfxOptions {
     
-    @scala.inline
-    def apply(): StubbyWithPfxOptions = {
+    inline def apply(): StubbyWithPfxOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StubbyWithPfxOptions]
     }
     
-    @scala.inline
-    implicit class StubbyWithPfxOptionsMutableBuilder[Self <: StubbyWithPfxOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StubbyWithPfxOptions](x: Self) {
       
-      @scala.inline
-      def setPfx(value: String | Buffer | (js.Array[String | Buffer | js.Object])): Self = StObject.set(x, "pfx", value.asInstanceOf[js.Any])
+      inline def setPfx(value: String | Buffer | (js.Array[String | Buffer | js.Object])): Self = StObject.set(x, "pfx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPfxUndefined: Self = StObject.set(x, "pfx", js.undefined)
+      inline def setPfxUndefined: Self = StObject.set(x, "pfx", js.undefined)
       
-      @scala.inline
-      def setPfxVarargs(value: (String | Buffer | js.Object)*): Self = StObject.set(x, "pfx", js.Array(value :_*))
+      inline def setPfxVarargs(value: (String | Buffer | js.Object)*): Self = StObject.set(x, "pfx", js.Array(value :_*))
     }
   }
 }

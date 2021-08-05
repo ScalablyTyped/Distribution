@@ -8,16 +8,13 @@ object childProcessPromiseStrings {
   
   @js.native
   sealed trait buffer extends StObject
-  @scala.inline
-  def buffer: buffer = "buffer".asInstanceOf[buffer]
+  inline def buffer: buffer = "buffer".asInstanceOf[buffer]
   
   @js.native
   sealed trait stderr extends StObject
-  @scala.inline
-  def stderr: stderr = "stderr".asInstanceOf[stderr]
+  inline def stderr: stderr = "stderr".asInstanceOf[stderr]
   
   @js.native
   sealed trait stdout extends StObject
-  @scala.inline
-  def stdout: stdout = "stdout".asInstanceOf[stdout]
+  inline def stdout: stdout = "stdout".asInstanceOf[stdout]
 }

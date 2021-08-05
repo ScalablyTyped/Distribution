@@ -26,17 +26,14 @@ object pluginLocaleDataMod extends Shortcut {
     }
     object Dayjs {
       
-      @scala.inline
-      def apply(localeData: () => InstanceLocaleDataReturn): Dayjs = {
+      inline def apply(localeData: () => InstanceLocaleDataReturn): Dayjs = {
         val __obj = js.Dynamic.literal(localeData = js.Any.fromFunction0(localeData))
         __obj.asInstanceOf[Dayjs]
       }
       
-      @scala.inline
-      implicit class DayjsMutableBuilder[Self <: Dayjs] (val x: Self) extends AnyVal {
+      extension [Self <: Dayjs](x: Self) {
         
-        @scala.inline
-        def setLocaleData(value: () => InstanceLocaleDataReturn): Self = StObject.set(x, "localeData", js.Any.fromFunction0(value))
+        inline def setLocaleData(value: () => InstanceLocaleDataReturn): Self = StObject.set(x, "localeData", js.Any.fromFunction0(value))
       }
     }
     

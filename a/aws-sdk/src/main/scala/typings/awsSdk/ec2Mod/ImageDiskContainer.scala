@@ -38,49 +38,35 @@ trait ImageDiskContainer extends StObject {
 }
 object ImageDiskContainer {
   
-  @scala.inline
-  def apply(): ImageDiskContainer = {
+  inline def apply(): ImageDiskContainer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImageDiskContainer]
   }
   
-  @scala.inline
-  implicit class ImageDiskContainerMutableBuilder[Self <: ImageDiskContainer] (val x: Self) extends AnyVal {
+  extension [Self <: ImageDiskContainer](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setDeviceName(value: String): Self = StObject.set(x, "DeviceName", value.asInstanceOf[js.Any])
+    inline def setDeviceName(value: String): Self = StObject.set(x, "DeviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceNameUndefined: Self = StObject.set(x, "DeviceName", js.undefined)
+    inline def setDeviceNameUndefined: Self = StObject.set(x, "DeviceName", js.undefined)
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
     
-    @scala.inline
-    def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
+    inline def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotIdUndefined: Self = StObject.set(x, "SnapshotId", js.undefined)
+    inline def setSnapshotIdUndefined: Self = StObject.set(x, "SnapshotId", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
     
-    @scala.inline
-    def setUserBucket(value: UserBucket): Self = StObject.set(x, "UserBucket", value.asInstanceOf[js.Any])
+    inline def setUserBucket(value: UserBucket): Self = StObject.set(x, "UserBucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserBucketUndefined: Self = StObject.set(x, "UserBucket", js.undefined)
+    inline def setUserBucketUndefined: Self = StObject.set(x, "UserBucket", js.undefined)
   }
 }

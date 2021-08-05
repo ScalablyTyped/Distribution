@@ -13,16 +13,13 @@ trait DeleteNamespaceRequest extends StObject {
 }
 object DeleteNamespaceRequest {
   
-  @scala.inline
-  def apply(Id: ResourceId): DeleteNamespaceRequest = {
+  inline def apply(Id: ResourceId): DeleteNamespaceRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteNamespaceRequest]
   }
   
-  @scala.inline
-  implicit class DeleteNamespaceRequestMutableBuilder[Self <: DeleteNamespaceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteNamespaceRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: ResourceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: ResourceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

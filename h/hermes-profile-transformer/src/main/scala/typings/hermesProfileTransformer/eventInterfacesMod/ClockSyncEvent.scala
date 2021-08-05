@@ -19,19 +19,15 @@ trait ClockSyncEvent
 }
 object ClockSyncEvent {
   
-  @scala.inline
-  def apply(args: Issuets, ph: CLOCK_SYNC_EVENTS): ClockSyncEvent = {
+  inline def apply(args: Issuets, ph: CLOCK_SYNC_EVENTS): ClockSyncEvent = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], ph = ph.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClockSyncEvent]
   }
   
-  @scala.inline
-  implicit class ClockSyncEventMutableBuilder[Self <: ClockSyncEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ClockSyncEvent](x: Self) {
     
-    @scala.inline
-    def setArgs(value: Issuets): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: Issuets): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPh(value: CLOCK_SYNC_EVENTS): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
+    inline def setPh(value: CLOCK_SYNC_EVENTS): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
   }
 }

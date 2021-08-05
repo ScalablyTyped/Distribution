@@ -10,8 +10,7 @@ trait CommandLineOptions
      with ParsedArgs
 object CommandLineOptions {
   
-  @scala.inline
-  def apply(_underscore: js.Array[String]): CommandLineOptions = {
+  inline def apply(_underscore: js.Array[String]): CommandLineOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("_")(_underscore.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandLineOptions]

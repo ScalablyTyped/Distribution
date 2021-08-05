@@ -47,8 +47,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with XColumnsSupplier
 object CallableStatement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Columns: XNameAccess,
     Connection: XConnection,
     CursorName: String,

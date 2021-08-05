@@ -54,8 +54,7 @@ trait StencilParameters extends StObject {
 }
 object StencilParameters {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fail: Double,
     func: Double,
     readMask: Double,
@@ -68,28 +67,20 @@ object StencilParameters {
     __obj.asInstanceOf[StencilParameters]
   }
   
-  @scala.inline
-  implicit class StencilParametersMutableBuilder[Self <: StencilParameters] (val x: Self) extends AnyVal {
+  extension [Self <: StencilParameters](x: Self) {
     
-    @scala.inline
-    def setFail(value: Double): Self = StObject.set(x, "fail", value.asInstanceOf[js.Any])
+    inline def setFail(value: Double): Self = StObject.set(x, "fail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunc(value: Double): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
+    inline def setFunc(value: Double): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadMask(value: Double): Self = StObject.set(x, "readMask", value.asInstanceOf[js.Any])
+    inline def setReadMask(value: Double): Self = StObject.set(x, "readMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRef(value: Double): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: Double): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteMask(value: Double): Self = StObject.set(x, "writeMask", value.asInstanceOf[js.Any])
+    inline def setWriteMask(value: Double): Self = StObject.set(x, "writeMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZfail(value: Double): Self = StObject.set(x, "zfail", value.asInstanceOf[js.Any])
+    inline def setZfail(value: Double): Self = StObject.set(x, "zfail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZpass(value: Double): Self = StObject.set(x, "zpass", value.asInstanceOf[js.Any])
+    inline def setZpass(value: Double): Self = StObject.set(x, "zpass", value.asInstanceOf[js.Any])
   }
 }

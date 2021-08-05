@@ -8,96 +8,77 @@ object nightmareStrings {
   
   @js.native
   sealed trait HTMLComplete extends StObject
-  @scala.inline
-  def HTMLComplete: HTMLComplete = "HTMLComplete".asInstanceOf[HTMLComplete]
+  inline def HTMLComplete: HTMLComplete = "HTMLComplete".asInstanceOf[HTMLComplete]
   
   @js.native
   sealed trait HTMLOnly extends StObject
-  @scala.inline
-  def HTMLOnly: HTMLOnly = "HTMLOnly".asInstanceOf[HTMLOnly]
+  inline def HTMLOnly: HTMLOnly = "HTMLOnly".asInstanceOf[HTMLOnly]
   
   @js.native
   sealed trait MHTML extends StObject
-  @scala.inline
-  def MHTML: MHTML = "MHTML".asInstanceOf[MHTML]
+  inline def MHTML: MHTML = "MHTML".asInstanceOf[MHTML]
   
   @js.native
   sealed trait alert extends StObject
-  @scala.inline
-  def alert: alert = "alert".asInstanceOf[alert]
+  inline def alert: alert = "alert".asInstanceOf[alert]
   
   @js.native
   sealed trait cancel extends StObject
-  @scala.inline
-  def cancel: cancel = "cancel".asInstanceOf[cancel]
+  inline def cancel: cancel = "cancel".asInstanceOf[cancel]
   
   @js.native
   sealed trait confirm extends StObject
-  @scala.inline
-  def confirm: confirm = "confirm".asInstanceOf[confirm]
+  inline def confirm: confirm = "confirm".asInstanceOf[confirm]
   
   @js.native
   sealed trait consoleMessage extends StObject
-  @scala.inline
-  def consoleMessage: consoleMessage = "consoleMessage".asInstanceOf[consoleMessage]
+  inline def consoleMessage: consoleMessage = "consoleMessage".asInstanceOf[consoleMessage]
   
   @js.native
   sealed trait continue extends StObject
-  @scala.inline
-  def continue: continue = "continue".asInstanceOf[continue]
+  inline def continue: continue = "continue".asInstanceOf[continue]
   
   @js.native
   sealed trait error extends StObject
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait initialized extends StObject
-  @scala.inline
-  def initialized: initialized = "initialized".asInstanceOf[initialized]
+  inline def initialized: initialized = "initialized".asInstanceOf[initialized]
   
   @js.native
   sealed trait loadFinished extends StObject
-  @scala.inline
-  def loadFinished: loadFinished = "loadFinished".asInstanceOf[loadFinished]
+  inline def loadFinished: loadFinished = "loadFinished".asInstanceOf[loadFinished]
   
   @js.native
   sealed trait loadStarted extends StObject
-  @scala.inline
-  def loadStarted: loadStarted = "loadStarted".asInstanceOf[loadStarted]
+  inline def loadStarted: loadStarted = "loadStarted".asInstanceOf[loadStarted]
   
   @js.native
   sealed trait navigationRequested extends StObject
-  @scala.inline
-  def navigationRequested: navigationRequested = "navigationRequested".asInstanceOf[navigationRequested]
+  inline def navigationRequested: navigationRequested = "navigationRequested".asInstanceOf[navigationRequested]
   
   @js.native
   sealed trait prompt extends StObject
-  @scala.inline
-  def prompt: prompt = "prompt".asInstanceOf[prompt]
+  inline def prompt: prompt = "prompt".asInstanceOf[prompt]
   
   @js.native
   sealed trait resourceError extends StObject
-  @scala.inline
-  def resourceError: resourceError = "resourceError".asInstanceOf[resourceError]
+  inline def resourceError: resourceError = "resourceError".asInstanceOf[resourceError]
   
   @js.native
   sealed trait resourceReceived extends StObject
-  @scala.inline
-  def resourceReceived: resourceReceived = "resourceReceived".asInstanceOf[resourceReceived]
+  inline def resourceReceived: resourceReceived = "resourceReceived".asInstanceOf[resourceReceived]
   
   @js.native
   sealed trait resourceRequested extends StObject
-  @scala.inline
-  def resourceRequested: resourceRequested = "resourceRequested".asInstanceOf[resourceRequested]
+  inline def resourceRequested: resourceRequested = "resourceRequested".asInstanceOf[resourceRequested]
   
   @js.native
   sealed trait timeout extends StObject
-  @scala.inline
-  def timeout: timeout = "timeout".asInstanceOf[timeout]
+  inline def timeout: timeout = "timeout".asInstanceOf[timeout]
   
   @js.native
   sealed trait urlChanged extends StObject
-  @scala.inline
-  def urlChanged: urlChanged = "urlChanged".asInstanceOf[urlChanged]
+  inline def urlChanged: urlChanged = "urlChanged".asInstanceOf[urlChanged]
 }

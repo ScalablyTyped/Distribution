@@ -34,26 +34,20 @@ object gridListCellMod {
   }
   object GridListCellProps {
     
-    @scala.inline
-    def apply(): GridListCellProps = {
+    inline def apply(): GridListCellProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GridListCellProps]
     }
     
-    @scala.inline
-    implicit class GridListCellPropsMutableBuilder[Self <: GridListCellProps] (val x: Self) extends AnyVal {
+    extension [Self <: GridListCellProps](x: Self) {
       
-      @scala.inline
-      def setClone_(value: Boolean): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
+      inline def setClone_(value: Boolean): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
+      inline def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
       
-      @scala.inline
-      def setSquare(value: Boolean): Self = StObject.set(x, "square", value.asInstanceOf[js.Any])
+      inline def setSquare(value: Boolean): Self = StObject.set(x, "square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSquareUndefined: Self = StObject.set(x, "square", js.undefined)
+      inline def setSquareUndefined: Self = StObject.set(x, "square", js.undefined)
     }
   }
 }

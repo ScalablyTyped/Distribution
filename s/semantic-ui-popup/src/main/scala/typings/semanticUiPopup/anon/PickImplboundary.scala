@@ -12,16 +12,13 @@ trait PickImplboundary extends StObject {
 }
 object PickImplboundary {
   
-  @scala.inline
-  def apply(boundary: String | JQuery): PickImplboundary = {
+  inline def apply(boundary: String | JQuery): PickImplboundary = {
     val __obj = js.Dynamic.literal(boundary = boundary.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplboundary]
   }
   
-  @scala.inline
-  implicit class PickImplboundaryMutableBuilder[Self <: PickImplboundary] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplboundary](x: Self) {
     
-    @scala.inline
-    def setBoundary(value: String | JQuery): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
+    inline def setBoundary(value: String | JQuery): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
   }
 }

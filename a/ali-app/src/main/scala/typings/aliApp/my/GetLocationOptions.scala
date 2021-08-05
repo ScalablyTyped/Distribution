@@ -31,23 +31,18 @@ trait GetLocationOptions
 }
 object GetLocationOptions {
   
-  @scala.inline
-  def apply(cacheTimeout: Double, success: LocationData => Unit, `type`: `0` | `1` | `2` | `3`): GetLocationOptions = {
+  inline def apply(cacheTimeout: Double, success: LocationData => Unit, `type`: `0` | `1` | `2` | `3`): GetLocationOptions = {
     val __obj = js.Dynamic.literal(cacheTimeout = cacheTimeout.asInstanceOf[js.Any], success = js.Any.fromFunction1(success))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLocationOptions]
   }
   
-  @scala.inline
-  implicit class GetLocationOptionsMutableBuilder[Self <: GetLocationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetLocationOptions](x: Self) {
     
-    @scala.inline
-    def setCacheTimeout(value: Double): Self = StObject.set(x, "cacheTimeout", value.asInstanceOf[js.Any])
+    inline def setCacheTimeout(value: Double): Self = StObject.set(x, "cacheTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: LocationData => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: LocationData => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setType(value: `0` | `1` | `2` | `3`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `0` | `1` | `2` | `3`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

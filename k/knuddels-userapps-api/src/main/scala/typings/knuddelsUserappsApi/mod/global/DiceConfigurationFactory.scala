@@ -46,6 +46,5 @@ object DiceConfigurationFactory {
   		 * @see https://developer.knuddels.de/docs/classes/DiceConfigurationFactory.html#method_fromString
   		 */
   /* static member */
-  @scala.inline
-  def fromString(diceConfigurationString: java.lang.String): DiceConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(diceConfigurationString.asInstanceOf[js.Any]).asInstanceOf[DiceConfiguration]
+  inline def fromString(diceConfigurationString: java.lang.String): DiceConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(diceConfigurationString.asInstanceOf[js.Any]).asInstanceOf[DiceConfiguration]
 }

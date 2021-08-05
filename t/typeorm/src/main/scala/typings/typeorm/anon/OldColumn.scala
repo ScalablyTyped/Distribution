@@ -13,19 +13,15 @@ trait OldColumn extends StObject {
 }
 object OldColumn {
   
-  @scala.inline
-  def apply(newColumn: TableColumn, oldColumn: TableColumn): OldColumn = {
+  inline def apply(newColumn: TableColumn, oldColumn: TableColumn): OldColumn = {
     val __obj = js.Dynamic.literal(newColumn = newColumn.asInstanceOf[js.Any], oldColumn = oldColumn.asInstanceOf[js.Any])
     __obj.asInstanceOf[OldColumn]
   }
   
-  @scala.inline
-  implicit class OldColumnMutableBuilder[Self <: OldColumn] (val x: Self) extends AnyVal {
+  extension [Self <: OldColumn](x: Self) {
     
-    @scala.inline
-    def setNewColumn(value: TableColumn): Self = StObject.set(x, "newColumn", value.asInstanceOf[js.Any])
+    inline def setNewColumn(value: TableColumn): Self = StObject.set(x, "newColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldColumn(value: TableColumn): Self = StObject.set(x, "oldColumn", value.asInstanceOf[js.Any])
+    inline def setOldColumn(value: TableColumn): Self = StObject.set(x, "oldColumn", value.asInstanceOf[js.Any])
   }
 }

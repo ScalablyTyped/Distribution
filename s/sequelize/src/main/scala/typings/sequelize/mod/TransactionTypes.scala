@@ -21,8 +21,7 @@ trait TransactionTypes extends StObject {
 }
 object TransactionTypes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DEFERRED: TransactionTypeDeferred,
     EXCLUSIVE: TransactionTypeExclusive,
     IMMEDIATE: TransactionTypeImmediate
@@ -31,16 +30,12 @@ object TransactionTypes {
     __obj.asInstanceOf[TransactionTypes]
   }
   
-  @scala.inline
-  implicit class TransactionTypesMutableBuilder[Self <: TransactionTypes] (val x: Self) extends AnyVal {
+  extension [Self <: TransactionTypes](x: Self) {
     
-    @scala.inline
-    def setDEFERRED(value: TransactionTypeDeferred): Self = StObject.set(x, "DEFERRED", value.asInstanceOf[js.Any])
+    inline def setDEFERRED(value: TransactionTypeDeferred): Self = StObject.set(x, "DEFERRED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEXCLUSIVE(value: TransactionTypeExclusive): Self = StObject.set(x, "EXCLUSIVE", value.asInstanceOf[js.Any])
+    inline def setEXCLUSIVE(value: TransactionTypeExclusive): Self = StObject.set(x, "EXCLUSIVE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIMMEDIATE(value: TransactionTypeImmediate): Self = StObject.set(x, "IMMEDIATE", value.asInstanceOf[js.Any])
+    inline def setIMMEDIATE(value: TransactionTypeImmediate): Self = StObject.set(x, "IMMEDIATE", value.asInstanceOf[js.Any])
   }
 }

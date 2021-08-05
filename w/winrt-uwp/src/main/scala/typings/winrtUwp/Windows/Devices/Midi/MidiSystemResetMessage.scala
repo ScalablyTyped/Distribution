@@ -19,23 +19,18 @@ trait MidiSystemResetMessage extends StObject {
 }
 object MidiSystemResetMessage {
   
-  @scala.inline
-  def apply(rawData: IBuffer, timestamp: Double, `type`: MidiMessageType): MidiSystemResetMessage = {
+  inline def apply(rawData: IBuffer, timestamp: Double, `type`: MidiMessageType): MidiSystemResetMessage = {
     val __obj = js.Dynamic.literal(rawData = rawData.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MidiSystemResetMessage]
   }
   
-  @scala.inline
-  implicit class MidiSystemResetMessageMutableBuilder[Self <: MidiSystemResetMessage] (val x: Self) extends AnyVal {
+  extension [Self <: MidiSystemResetMessage](x: Self) {
     
-    @scala.inline
-    def setRawData(value: IBuffer): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
+    inline def setRawData(value: IBuffer): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: MidiMessageType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: MidiMessageType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

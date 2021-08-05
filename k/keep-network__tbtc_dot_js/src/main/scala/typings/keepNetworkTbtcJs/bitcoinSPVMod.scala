@@ -30,26 +30,20 @@ object bitcoinSPVMod {
   }
   object Proof {
     
-    @scala.inline
-    def apply(chainHeaders: String, merkleProof: String, tx: String, txInBlockIndex: String): Proof = {
+    inline def apply(chainHeaders: String, merkleProof: String, tx: String, txInBlockIndex: String): Proof = {
       val __obj = js.Dynamic.literal(chainHeaders = chainHeaders.asInstanceOf[js.Any], merkleProof = merkleProof.asInstanceOf[js.Any], tx = tx.asInstanceOf[js.Any], txInBlockIndex = txInBlockIndex.asInstanceOf[js.Any])
       __obj.asInstanceOf[Proof]
     }
     
-    @scala.inline
-    implicit class ProofMutableBuilder[Self <: Proof] (val x: Self) extends AnyVal {
+    extension [Self <: Proof](x: Self) {
       
-      @scala.inline
-      def setChainHeaders(value: String): Self = StObject.set(x, "chainHeaders", value.asInstanceOf[js.Any])
+      inline def setChainHeaders(value: String): Self = StObject.set(x, "chainHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMerkleProof(value: String): Self = StObject.set(x, "merkleProof", value.asInstanceOf[js.Any])
+      inline def setMerkleProof(value: String): Self = StObject.set(x, "merkleProof", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTx(value: String): Self = StObject.set(x, "tx", value.asInstanceOf[js.Any])
+      inline def setTx(value: String): Self = StObject.set(x, "tx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTxInBlockIndex(value: String): Self = StObject.set(x, "txInBlockIndex", value.asInstanceOf[js.Any])
+      inline def setTxInBlockIndex(value: String): Self = StObject.set(x, "txInBlockIndex", value.asInstanceOf[js.Any])
     }
   }
 }

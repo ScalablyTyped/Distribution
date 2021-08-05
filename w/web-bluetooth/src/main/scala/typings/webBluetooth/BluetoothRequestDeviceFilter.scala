@@ -18,46 +18,33 @@ trait BluetoothRequestDeviceFilter extends StObject {
 }
 object BluetoothRequestDeviceFilter {
   
-  @scala.inline
-  def apply(): BluetoothRequestDeviceFilter = {
+  inline def apply(): BluetoothRequestDeviceFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BluetoothRequestDeviceFilter]
   }
   
-  @scala.inline
-  implicit class BluetoothRequestDeviceFilterMutableBuilder[Self <: BluetoothRequestDeviceFilter] (val x: Self) extends AnyVal {
+  extension [Self <: BluetoothRequestDeviceFilter](x: Self) {
     
-    @scala.inline
-    def setManufacturerId(value: Double): Self = StObject.set(x, "manufacturerId", value.asInstanceOf[js.Any])
+    inline def setManufacturerId(value: Double): Self = StObject.set(x, "manufacturerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManufacturerIdUndefined: Self = StObject.set(x, "manufacturerId", js.undefined)
+    inline def setManufacturerIdUndefined: Self = StObject.set(x, "manufacturerId", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamePrefix(value: String): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
+    inline def setNamePrefix(value: String): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
+    inline def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setServiceDataUUID(value: BluetoothServiceUUID): Self = StObject.set(x, "serviceDataUUID", value.asInstanceOf[js.Any])
+    inline def setServiceDataUUID(value: BluetoothServiceUUID): Self = StObject.set(x, "serviceDataUUID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceDataUUIDUndefined: Self = StObject.set(x, "serviceDataUUID", js.undefined)
+    inline def setServiceDataUUIDUndefined: Self = StObject.set(x, "serviceDataUUID", js.undefined)
     
-    @scala.inline
-    def setServices(value: js.Array[BluetoothServiceUUID]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
+    inline def setServices(value: js.Array[BluetoothServiceUUID]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
+    inline def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
     
-    @scala.inline
-    def setServicesVarargs(value: BluetoothServiceUUID*): Self = StObject.set(x, "services", js.Array(value :_*))
+    inline def setServicesVarargs(value: BluetoothServiceUUID*): Self = StObject.set(x, "services", js.Array(value :_*))
   }
 }

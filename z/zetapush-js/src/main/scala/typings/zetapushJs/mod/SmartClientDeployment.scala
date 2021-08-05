@@ -12,25 +12,19 @@ trait SmartClientDeployment extends StObject {
 }
 object SmartClientDeployment {
   
-  @scala.inline
-  def apply(): SmartClientDeployment = {
+  inline def apply(): SmartClientDeployment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SmartClientDeployment]
   }
   
-  @scala.inline
-  implicit class SmartClientDeploymentMutableBuilder[Self <: SmartClientDeployment] (val x: Self) extends AnyVal {
+  extension [Self <: SmartClientDeployment](x: Self) {
     
-    @scala.inline
-    def setSimple(value: String): Self = StObject.set(x, "simple", value.asInstanceOf[js.Any])
+    inline def setSimple(value: String): Self = StObject.set(x, "simple", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSimpleUndefined: Self = StObject.set(x, "simple", js.undefined)
+    inline def setSimpleUndefined: Self = StObject.set(x, "simple", js.undefined)
     
-    @scala.inline
-    def setWeak(value: String): Self = StObject.set(x, "weak", value.asInstanceOf[js.Any])
+    inline def setWeak(value: String): Self = StObject.set(x, "weak", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeakUndefined: Self = StObject.set(x, "weak", js.undefined)
+    inline def setWeakUndefined: Self = StObject.set(x, "weak", js.undefined)
   }
 }

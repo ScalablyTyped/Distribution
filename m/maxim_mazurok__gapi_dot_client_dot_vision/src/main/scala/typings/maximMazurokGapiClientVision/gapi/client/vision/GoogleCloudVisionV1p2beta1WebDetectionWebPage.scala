@@ -23,49 +23,35 @@ trait GoogleCloudVisionV1p2beta1WebDetectionWebPage extends StObject {
 }
 object GoogleCloudVisionV1p2beta1WebDetectionWebPage {
   
-  @scala.inline
-  def apply(): GoogleCloudVisionV1p2beta1WebDetectionWebPage = {
+  inline def apply(): GoogleCloudVisionV1p2beta1WebDetectionWebPage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVisionV1p2beta1WebDetectionWebPage]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVisionV1p2beta1WebDetectionWebPageMutableBuilder[Self <: GoogleCloudVisionV1p2beta1WebDetectionWebPage] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVisionV1p2beta1WebDetectionWebPage](x: Self) {
     
-    @scala.inline
-    def setFullMatchingImages(value: js.Array[GoogleCloudVisionV1p2beta1WebDetectionWebImage]): Self = StObject.set(x, "fullMatchingImages", value.asInstanceOf[js.Any])
+    inline def setFullMatchingImages(value: js.Array[GoogleCloudVisionV1p2beta1WebDetectionWebImage]): Self = StObject.set(x, "fullMatchingImages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullMatchingImagesUndefined: Self = StObject.set(x, "fullMatchingImages", js.undefined)
+    inline def setFullMatchingImagesUndefined: Self = StObject.set(x, "fullMatchingImages", js.undefined)
     
-    @scala.inline
-    def setFullMatchingImagesVarargs(value: GoogleCloudVisionV1p2beta1WebDetectionWebImage*): Self = StObject.set(x, "fullMatchingImages", js.Array(value :_*))
+    inline def setFullMatchingImagesVarargs(value: GoogleCloudVisionV1p2beta1WebDetectionWebImage*): Self = StObject.set(x, "fullMatchingImages", js.Array(value :_*))
     
-    @scala.inline
-    def setPageTitle(value: String): Self = StObject.set(x, "pageTitle", value.asInstanceOf[js.Any])
+    inline def setPageTitle(value: String): Self = StObject.set(x, "pageTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTitleUndefined: Self = StObject.set(x, "pageTitle", js.undefined)
+    inline def setPageTitleUndefined: Self = StObject.set(x, "pageTitle", js.undefined)
     
-    @scala.inline
-    def setPartialMatchingImages(value: js.Array[GoogleCloudVisionV1p2beta1WebDetectionWebImage]): Self = StObject.set(x, "partialMatchingImages", value.asInstanceOf[js.Any])
+    inline def setPartialMatchingImages(value: js.Array[GoogleCloudVisionV1p2beta1WebDetectionWebImage]): Self = StObject.set(x, "partialMatchingImages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartialMatchingImagesUndefined: Self = StObject.set(x, "partialMatchingImages", js.undefined)
+    inline def setPartialMatchingImagesUndefined: Self = StObject.set(x, "partialMatchingImages", js.undefined)
     
-    @scala.inline
-    def setPartialMatchingImagesVarargs(value: GoogleCloudVisionV1p2beta1WebDetectionWebImage*): Self = StObject.set(x, "partialMatchingImages", js.Array(value :_*))
+    inline def setPartialMatchingImagesVarargs(value: GoogleCloudVisionV1p2beta1WebDetectionWebImage*): Self = StObject.set(x, "partialMatchingImages", js.Array(value :_*))
     
-    @scala.inline
-    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
+    inline def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

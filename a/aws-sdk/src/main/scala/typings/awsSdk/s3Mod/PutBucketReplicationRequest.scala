@@ -30,37 +30,27 @@ trait PutBucketReplicationRequest extends StObject {
 }
 object PutBucketReplicationRequest {
   
-  @scala.inline
-  def apply(Bucket: BucketName, ReplicationConfiguration: ReplicationConfiguration): PutBucketReplicationRequest = {
+  inline def apply(Bucket: BucketName, ReplicationConfiguration: ReplicationConfiguration): PutBucketReplicationRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], ReplicationConfiguration = ReplicationConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBucketReplicationRequest]
   }
   
-  @scala.inline
-  implicit class PutBucketReplicationRequestMutableBuilder[Self <: PutBucketReplicationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutBucketReplicationRequest](x: Self) {
     
-    @scala.inline
-    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentMD5(value: ContentMD5): Self = StObject.set(x, "ContentMD5", value.asInstanceOf[js.Any])
+    inline def setContentMD5(value: ContentMD5): Self = StObject.set(x, "ContentMD5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentMD5Undefined: Self = StObject.set(x, "ContentMD5", js.undefined)
+    inline def setContentMD5Undefined: Self = StObject.set(x, "ContentMD5", js.undefined)
     
-    @scala.inline
-    def setExpectedBucketOwner(value: AccountId): Self = StObject.set(x, "ExpectedBucketOwner", value.asInstanceOf[js.Any])
+    inline def setExpectedBucketOwner(value: AccountId): Self = StObject.set(x, "ExpectedBucketOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedBucketOwnerUndefined: Self = StObject.set(x, "ExpectedBucketOwner", js.undefined)
+    inline def setExpectedBucketOwnerUndefined: Self = StObject.set(x, "ExpectedBucketOwner", js.undefined)
     
-    @scala.inline
-    def setReplicationConfiguration(value: ReplicationConfiguration): Self = StObject.set(x, "ReplicationConfiguration", value.asInstanceOf[js.Any])
+    inline def setReplicationConfiguration(value: ReplicationConfiguration): Self = StObject.set(x, "ReplicationConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToken(value: ObjectLockToken): Self = StObject.set(x, "Token", value.asInstanceOf[js.Any])
+    inline def setToken(value: ObjectLockToken): Self = StObject.set(x, "Token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenUndefined: Self = StObject.set(x, "Token", js.undefined)
+    inline def setTokenUndefined: Self = StObject.set(x, "Token", js.undefined)
   }
 }

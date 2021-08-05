@@ -412,9 +412,9 @@ object browserMod {
       */
     var ignoreSynchronization: Boolean = js.native
     
-    var internalIgnoreSynchronization: js.Any = js.native
+    /* private */ var internalIgnoreSynchronization: js.Any = js.native
     
-    var internalRootEl: js.Any = js.native
+    /* private */ var internalRootEl: js.Any = js.native
     
     def isElementPresent(locatorOrElement: ElementFinder): js.Promise[js.Any] = js.native
     /**
@@ -649,8 +649,7 @@ object browserMod {
     @JSImport("protractor/built/browser", "ProtractorBrowser.By")
     @js.native
     def By: ProtractorBy = js.native
-    @scala.inline
-    def By_=(x: ProtractorBy): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("By")(x.asInstanceOf[js.Any])
+    inline def By_=(x: ProtractorBy): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("By")(x.asInstanceOf[js.Any])
   }
   
   @js.native

@@ -64,14 +64,11 @@ object mod extends Shortcut {
     @js.native
     val ^ : Network = js.native
     
-    @scala.inline
-    implicit class NetworkMutableBuilder[Self <: Network] (val x: Self) extends AnyVal {
+    extension [Self <: Network](x: Self) {
       
-      @scala.inline
-      def setALL(value: String): Self = StObject.set(x, "ALL", value.asInstanceOf[js.Any])
+      inline def setALL(value: String): Self = StObject.set(x, "ALL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWIFI_ONLY(value: String): Self = StObject.set(x, "WIFI_ONLY", value.asInstanceOf[js.Any])
+      inline def setWIFI_ONLY(value: String): Self = StObject.set(x, "WIFI_ONLY", value.asInstanceOf[js.Any])
     }
   }
   
@@ -89,17 +86,13 @@ object mod extends Shortcut {
     @js.native
     val ^ : Priority = js.native
     
-    @scala.inline
-    implicit class PriorityMutableBuilder[Self <: Priority] (val x: Self) extends AnyVal {
+    extension [Self <: Priority](x: Self) {
       
-      @scala.inline
-      def setHIGH(value: String): Self = StObject.set(x, "HIGH", value.asInstanceOf[js.Any])
+      inline def setHIGH(value: String): Self = StObject.set(x, "HIGH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLOW(value: String): Self = StObject.set(x, "LOW", value.asInstanceOf[js.Any])
+      inline def setLOW(value: String): Self = StObject.set(x, "LOW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMEDIUM(value: String): Self = StObject.set(x, "MEDIUM", value.asInstanceOf[js.Any])
+      inline def setMEDIUM(value: String): Self = StObject.set(x, "MEDIUM", value.asInstanceOf[js.Any])
     }
   }
   
@@ -129,17 +122,14 @@ object mod extends Shortcut {
   }
   object Directories_ {
     
-    @scala.inline
-    def apply(documents: String): Directories_ = {
+    inline def apply(documents: String): Directories_ = {
       val __obj = js.Dynamic.literal(documents = documents.asInstanceOf[js.Any])
       __obj.asInstanceOf[Directories_]
     }
     
-    @scala.inline
-    implicit class Directories_MutableBuilder[Self <: Directories_] (val x: Self) extends AnyVal {
+    extension [Self <: Directories_](x: Self) {
       
-      @scala.inline
-      def setDocuments(value: String): Self = StObject.set(x, "documents", value.asInstanceOf[js.Any])
+      inline def setDocuments(value: String): Self = StObject.set(x, "documents", value.asInstanceOf[js.Any])
     }
   }
   
@@ -159,29 +149,22 @@ object mod extends Shortcut {
   }
   object DownloadOption {
     
-    @scala.inline
-    def apply(destination: String, id: String, url: String): DownloadOption = {
+    inline def apply(destination: String, id: String, url: String): DownloadOption = {
       val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[DownloadOption]
     }
     
-    @scala.inline
-    implicit class DownloadOptionMutableBuilder[Self <: DownloadOption] (val x: Self) extends AnyVal {
+    extension [Self <: DownloadOption](x: Self) {
       
-      @scala.inline
-      def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+      inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: DownloadHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: DownloadHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -229,8 +212,7 @@ object mod extends Shortcut {
   }
   object DownloadTask {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _beginHandler: /* expectedBytes */ Double => js.Any,
       _doneHandler: () => js.Any,
       _errorHandler: (/* error */ js.Any, /* errorCode */ js.Any) => js.Any,
@@ -252,56 +234,39 @@ object mod extends Shortcut {
       __obj.asInstanceOf[DownloadTask]
     }
     
-    @scala.inline
-    implicit class DownloadTaskMutableBuilder[Self <: DownloadTask] (val x: Self) extends AnyVal {
+    extension [Self <: DownloadTask](x: Self) {
       
-      @scala.inline
-      def setBegin(value: BeginHandler => DownloadTask): Self = StObject.set(x, "begin", js.Any.fromFunction1(value))
+      inline def setBegin(value: BeginHandler => DownloadTask): Self = StObject.set(x, "begin", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBytesWritten(value: Double): Self = StObject.set(x, "bytesWritten", value.asInstanceOf[js.Any])
+      inline def setBytesWritten(value: Double): Self = StObject.set(x, "bytesWritten", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDone(value: DoneHandler => DownloadTask): Self = StObject.set(x, "done", js.Any.fromFunction1(value))
+      inline def setDone(value: DoneHandler => DownloadTask): Self = StObject.set(x, "done", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setError(value: ErrorHandler => DownloadTask): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: ErrorHandler => DownloadTask): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPause(value: () => js.Any): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
+      inline def setPause(value: () => js.Any): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+      inline def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgress(value: ProgressHandler => DownloadTask): Self = StObject.set(x, "progress", js.Any.fromFunction1(value))
+      inline def setProgress(value: ProgressHandler => DownloadTask): Self = StObject.set(x, "progress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResume(value: () => js.Any): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
+      inline def setResume(value: () => js.Any): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setState(value: DownloadTaskState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: DownloadTaskState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStop(value: () => js.Any): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      inline def setStop(value: () => js.Any): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTotalBytes(value: Double): Self = StObject.set(x, "totalBytes", value.asInstanceOf[js.Any])
+      inline def setTotalBytes(value: Double): Self = StObject.set(x, "totalBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_beginHandler(value: /* expectedBytes */ Double => js.Any): Self = StObject.set(x, "_beginHandler", js.Any.fromFunction1(value))
+      inline def set_beginHandler(value: /* expectedBytes */ Double => js.Any): Self = StObject.set(x, "_beginHandler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_doneHandler(value: () => js.Any): Self = StObject.set(x, "_doneHandler", js.Any.fromFunction0(value))
+      inline def set_doneHandler(value: () => js.Any): Self = StObject.set(x, "_doneHandler", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_errorHandler(value: (/* error */ js.Any, /* errorCode */ js.Any) => js.Any): Self = StObject.set(x, "_errorHandler", js.Any.fromFunction2(value))
+      inline def set_errorHandler(value: (/* error */ js.Any, /* errorCode */ js.Any) => js.Any): Self = StObject.set(x, "_errorHandler", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def set_progressHandler(value: (/* percent */ Double, /* bytesWritten */ Double, /* totalBytes */ Double) => js.Any): Self = StObject.set(x, "_progressHandler", js.Any.fromFunction3(value))
+      inline def set_progressHandler(value: (/* percent */ Double, /* bytesWritten */ Double, /* totalBytes */ Double) => js.Any): Self = StObject.set(x, "_progressHandler", js.Any.fromFunction3(value))
     }
   }
   
@@ -333,8 +298,7 @@ object mod extends Shortcut {
   }
   object RNBackgroundDownloader {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Network: Network,
       Priority: Priority,
       checkForExistingDownloads: () => js.Promise[js.Array[DownloadTask]],
@@ -346,26 +310,19 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RNBackgroundDownloader]
     }
     
-    @scala.inline
-    implicit class RNBackgroundDownloaderMutableBuilder[Self <: RNBackgroundDownloader] (val x: Self) extends AnyVal {
+    extension [Self <: RNBackgroundDownloader](x: Self) {
       
-      @scala.inline
-      def setCheckForExistingDownloads(value: () => js.Promise[js.Array[DownloadTask]]): Self = StObject.set(x, "checkForExistingDownloads", js.Any.fromFunction0(value))
+      inline def setCheckForExistingDownloads(value: () => js.Promise[js.Array[DownloadTask]]): Self = StObject.set(x, "checkForExistingDownloads", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDirectories(value: Directories_): Self = StObject.set(x, "directories", value.asInstanceOf[js.Any])
+      inline def setDirectories(value: Directories_): Self = StObject.set(x, "directories", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownload(value: /* options */ DownloadOption => DownloadTask): Self = StObject.set(x, "download", js.Any.fromFunction1(value))
+      inline def setDownload(value: /* options */ DownloadOption => DownloadTask): Self = StObject.set(x, "download", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNetwork(value: Network): Self = StObject.set(x, "Network", value.asInstanceOf[js.Any])
+      inline def setNetwork(value: Network): Self = StObject.set(x, "Network", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriority(value: Priority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Priority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetHeaders(value: /* h */ DownloadHeaders => Unit): Self = StObject.set(x, "setHeaders", js.Any.fromFunction1(value))
+      inline def setSetHeaders(value: /* h */ DownloadHeaders => Unit): Self = StObject.set(x, "setHeaders", js.Any.fromFunction1(value))
     }
   }
   
@@ -385,26 +342,20 @@ object mod extends Shortcut {
   }
   object TaskInfoObject {
     
-    @scala.inline
-    def apply(bytesWritten: Double, id: String, percent: Double, totalBytes: Double): TaskInfoObject = {
+    inline def apply(bytesWritten: Double, id: String, percent: Double, totalBytes: Double): TaskInfoObject = {
       val __obj = js.Dynamic.literal(bytesWritten = bytesWritten.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any], totalBytes = totalBytes.asInstanceOf[js.Any])
       __obj.asInstanceOf[TaskInfoObject]
     }
     
-    @scala.inline
-    implicit class TaskInfoObjectMutableBuilder[Self <: TaskInfoObject] (val x: Self) extends AnyVal {
+    extension [Self <: TaskInfoObject](x: Self) {
       
-      @scala.inline
-      def setBytesWritten(value: Double): Self = StObject.set(x, "bytesWritten", value.asInstanceOf[js.Any])
+      inline def setBytesWritten(value: Double): Self = StObject.set(x, "bytesWritten", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+      inline def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalBytes(value: Double): Self = StObject.set(x, "totalBytes", value.asInstanceOf[js.Any])
+      inline def setTotalBytes(value: Double): Self = StObject.set(x, "totalBytes", value.asInstanceOf[js.Any])
     }
   }
   

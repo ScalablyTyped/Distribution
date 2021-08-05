@@ -253,6 +253,5 @@ trait Doc extends StObject {
 }
 object Doc {
   
-  @scala.inline
-  def apply: DocConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("Doc").asInstanceOf[DocConstructor]
+  inline def apply: DocConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("Doc").asInstanceOf[DocConstructor]
 }

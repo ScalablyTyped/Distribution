@@ -10,19 +10,15 @@ trait CapSQL extends StObject {
 }
 object CapSQL {
   
-  @scala.inline
-  def apply(): CapSQL = {
+  inline def apply(): CapSQL = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CapSQL]
   }
   
-  @scala.inline
-  implicit class CapSQLMutableBuilder[Self <: CapSQL] (val x: Self) extends AnyVal {
+  extension [Self <: CapSQL](x: Self) {
     
-    @scala.inline
-    def setCapSQL(value: Boolean): Self = StObject.set(x, "capSQL", value.asInstanceOf[js.Any])
+    inline def setCapSQL(value: Boolean): Self = StObject.set(x, "capSQL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapSQLUndefined: Self = StObject.set(x, "capSQL", js.undefined)
+    inline def setCapSQLUndefined: Self = StObject.set(x, "capSQL", js.undefined)
   }
 }

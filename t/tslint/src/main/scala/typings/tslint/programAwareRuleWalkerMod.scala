@@ -20,8 +20,8 @@ object programAwareRuleWalkerMod {
     
     def getTypeChecker(): TypeChecker = js.native
     
-    val program: js.Any = js.native
+    /* private */ val program: js.Any = js.native
     
-    val typeChecker: js.Any = js.native
+    /* private */ val typeChecker: js.Any = js.native
   }
 }

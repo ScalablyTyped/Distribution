@@ -30,31 +30,23 @@ trait SchemaRule extends StObject {
 }
 object SchemaRule {
   
-  @scala.inline
-  def apply(): SchemaRule = {
+  inline def apply(): SchemaRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRule]
   }
   
-  @scala.inline
-  implicit class SchemaRuleMutableBuilder[Self <: SchemaRule] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRule](x: Self) {
     
-    @scala.inline
-    def setAssetId(value: String): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
+    inline def setAssetId(value: String): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetIdUndefined: Self = StObject.set(x, "assetId", js.undefined)
+    inline def setAssetIdUndefined: Self = StObject.set(x, "assetId", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTargetingTemplateId(value: String): Self = StObject.set(x, "targetingTemplateId", value.asInstanceOf[js.Any])
+    inline def setTargetingTemplateId(value: String): Self = StObject.set(x, "targetingTemplateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetingTemplateIdUndefined: Self = StObject.set(x, "targetingTemplateId", js.undefined)
+    inline def setTargetingTemplateIdUndefined: Self = StObject.set(x, "targetingTemplateId", js.undefined)
   }
 }

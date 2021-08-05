@@ -12,19 +12,15 @@ trait RoomInfo extends StObject {
 }
 object RoomInfo {
   
-  @scala.inline
-  def apply(roomAttributes: AllRoomAttributes, roomSystemInfo: RoomSystemInfo): RoomInfo = {
+  inline def apply(roomAttributes: AllRoomAttributes, roomSystemInfo: RoomSystemInfo): RoomInfo = {
     val __obj = js.Dynamic.literal(roomAttributes = roomAttributes.asInstanceOf[js.Any], roomSystemInfo = roomSystemInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoomInfo]
   }
   
-  @scala.inline
-  implicit class RoomInfoMutableBuilder[Self <: RoomInfo] (val x: Self) extends AnyVal {
+  extension [Self <: RoomInfo](x: Self) {
     
-    @scala.inline
-    def setRoomAttributes(value: AllRoomAttributes): Self = StObject.set(x, "roomAttributes", value.asInstanceOf[js.Any])
+    inline def setRoomAttributes(value: AllRoomAttributes): Self = StObject.set(x, "roomAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoomSystemInfo(value: RoomSystemInfo): Self = StObject.set(x, "roomSystemInfo", value.asInstanceOf[js.Any])
+    inline def setRoomSystemInfo(value: RoomSystemInfo): Self = StObject.set(x, "roomSystemInfo", value.asInstanceOf[js.Any])
   }
 }

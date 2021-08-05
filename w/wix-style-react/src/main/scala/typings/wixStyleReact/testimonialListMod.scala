@@ -27,41 +27,30 @@ object testimonialListMod {
   }
   object TestimonialListProps {
     
-    @scala.inline
-    def apply(): TestimonialListProps = {
+    inline def apply(): TestimonialListProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TestimonialListProps]
     }
     
-    @scala.inline
-    implicit class TestimonialListPropsMutableBuilder[Self <: TestimonialListProps] (val x: Self) extends AnyVal {
+    extension [Self <: TestimonialListProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
+      inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
+      inline def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setTestimonials(value: js.Array[TestimonialType]): Self = StObject.set(x, "testimonials", value.asInstanceOf[js.Any])
+      inline def setTestimonials(value: js.Array[TestimonialType]): Self = StObject.set(x, "testimonials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTestimonialsUndefined: Self = StObject.set(x, "testimonials", js.undefined)
+      inline def setTestimonialsUndefined: Self = StObject.set(x, "testimonials", js.undefined)
       
-      @scala.inline
-      def setTestimonialsVarargs(value: TestimonialType*): Self = StObject.set(x, "testimonials", js.Array(value :_*))
+      inline def setTestimonialsVarargs(value: TestimonialType*): Self = StObject.set(x, "testimonials", js.Array(value :_*))
     }
   }
   
@@ -75,26 +64,20 @@ object testimonialListMod {
   }
   object TestimonialType {
     
-    @scala.inline
-    def apply(authorName: String, text: String): TestimonialType = {
+    inline def apply(authorName: String, text: String): TestimonialType = {
       val __obj = js.Dynamic.literal(authorName = authorName.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[TestimonialType]
     }
     
-    @scala.inline
-    implicit class TestimonialTypeMutableBuilder[Self <: TestimonialType] (val x: Self) extends AnyVal {
+    extension [Self <: TestimonialType](x: Self) {
       
-      @scala.inline
-      def setAuthorName(value: String): Self = StObject.set(x, "authorName", value.asInstanceOf[js.Any])
+      inline def setAuthorName(value: String): Self = StObject.set(x, "authorName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvatar(value: ReactNode): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
+      inline def setAvatar(value: ReactNode): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvatarUndefined: Self = StObject.set(x, "avatar", js.undefined)
+      inline def setAvatarUndefined: Self = StObject.set(x, "avatar", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
 }

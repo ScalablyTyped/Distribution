@@ -33,13 +33,12 @@ trait Protection extends StObject {
   
   val AllowUsingPivotTables: Boolean
   
-  @JSName("Excel.Protection_typekey")
+  /* private */ @JSName("Excel.Protection_typekey")
   var ExcelDotProtection_typekey: Protection
 }
 object Protection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AllowDeletingColumns: Boolean,
     AllowDeletingRows: Boolean,
     AllowEditRanges: AllowEditRanges,
@@ -59,46 +58,32 @@ object Protection {
     __obj.asInstanceOf[Protection]
   }
   
-  @scala.inline
-  implicit class ProtectionMutableBuilder[Self <: Protection] (val x: Self) extends AnyVal {
+  extension [Self <: Protection](x: Self) {
     
-    @scala.inline
-    def setAllowDeletingColumns(value: Boolean): Self = StObject.set(x, "AllowDeletingColumns", value.asInstanceOf[js.Any])
+    inline def setAllowDeletingColumns(value: Boolean): Self = StObject.set(x, "AllowDeletingColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowDeletingRows(value: Boolean): Self = StObject.set(x, "AllowDeletingRows", value.asInstanceOf[js.Any])
+    inline def setAllowDeletingRows(value: Boolean): Self = StObject.set(x, "AllowDeletingRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowEditRanges(value: AllowEditRanges): Self = StObject.set(x, "AllowEditRanges", value.asInstanceOf[js.Any])
+    inline def setAllowEditRanges(value: AllowEditRanges): Self = StObject.set(x, "AllowEditRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowFiltering(value: Boolean): Self = StObject.set(x, "AllowFiltering", value.asInstanceOf[js.Any])
+    inline def setAllowFiltering(value: Boolean): Self = StObject.set(x, "AllowFiltering", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowFormattingCells(value: Boolean): Self = StObject.set(x, "AllowFormattingCells", value.asInstanceOf[js.Any])
+    inline def setAllowFormattingCells(value: Boolean): Self = StObject.set(x, "AllowFormattingCells", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowFormattingColumns(value: Boolean): Self = StObject.set(x, "AllowFormattingColumns", value.asInstanceOf[js.Any])
+    inline def setAllowFormattingColumns(value: Boolean): Self = StObject.set(x, "AllowFormattingColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowFormattingRows(value: Boolean): Self = StObject.set(x, "AllowFormattingRows", value.asInstanceOf[js.Any])
+    inline def setAllowFormattingRows(value: Boolean): Self = StObject.set(x, "AllowFormattingRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowInsertingColumns(value: Boolean): Self = StObject.set(x, "AllowInsertingColumns", value.asInstanceOf[js.Any])
+    inline def setAllowInsertingColumns(value: Boolean): Self = StObject.set(x, "AllowInsertingColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowInsertingHyperlinks(value: Boolean): Self = StObject.set(x, "AllowInsertingHyperlinks", value.asInstanceOf[js.Any])
+    inline def setAllowInsertingHyperlinks(value: Boolean): Self = StObject.set(x, "AllowInsertingHyperlinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowInsertingRows(value: Boolean): Self = StObject.set(x, "AllowInsertingRows", value.asInstanceOf[js.Any])
+    inline def setAllowInsertingRows(value: Boolean): Self = StObject.set(x, "AllowInsertingRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowSorting(value: Boolean): Self = StObject.set(x, "AllowSorting", value.asInstanceOf[js.Any])
+    inline def setAllowSorting(value: Boolean): Self = StObject.set(x, "AllowSorting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowUsingPivotTables(value: Boolean): Self = StObject.set(x, "AllowUsingPivotTables", value.asInstanceOf[js.Any])
+    inline def setAllowUsingPivotTables(value: Boolean): Self = StObject.set(x, "AllowUsingPivotTables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotProtection_typekey(value: Protection): Self = StObject.set(x, "Excel.Protection_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotProtection_typekey(value: Protection): Self = StObject.set(x, "Excel.Protection_typekey", value.asInstanceOf[js.Any])
   }
 }

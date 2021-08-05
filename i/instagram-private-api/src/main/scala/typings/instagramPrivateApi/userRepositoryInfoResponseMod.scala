@@ -14,23 +14,18 @@ object userRepositoryInfoResponseMod {
   }
   object UserRepositoryInfoResponseBiographyWithEntities {
     
-    @scala.inline
-    def apply(entities: js.Array[js.Any], raw_text: String): UserRepositoryInfoResponseBiographyWithEntities = {
+    inline def apply(entities: js.Array[js.Any], raw_text: String): UserRepositoryInfoResponseBiographyWithEntities = {
       val __obj = js.Dynamic.literal(entities = entities.asInstanceOf[js.Any], raw_text = raw_text.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserRepositoryInfoResponseBiographyWithEntities]
     }
     
-    @scala.inline
-    implicit class UserRepositoryInfoResponseBiographyWithEntitiesMutableBuilder[Self <: UserRepositoryInfoResponseBiographyWithEntities] (val x: Self) extends AnyVal {
+    extension [Self <: UserRepositoryInfoResponseBiographyWithEntities](x: Self) {
       
-      @scala.inline
-      def setEntities(value: js.Array[js.Any]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
+      inline def setEntities(value: js.Array[js.Any]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntitiesVarargs(value: js.Any*): Self = StObject.set(x, "entities", js.Array(value :_*))
+      inline def setEntitiesVarargs(value: js.Any*): Self = StObject.set(x, "entities", js.Array(value :_*))
       
-      @scala.inline
-      def setRaw_text(value: String): Self = StObject.set(x, "raw_text", value.asInstanceOf[js.Any])
+      inline def setRaw_text(value: String): Self = StObject.set(x, "raw_text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -44,23 +39,18 @@ object userRepositoryInfoResponseMod {
   }
   object UserRepositoryInfoResponseHdProfilePicUrlInfo {
     
-    @scala.inline
-    def apply(height: Double, url: String, width: Double): UserRepositoryInfoResponseHdProfilePicUrlInfo = {
+    inline def apply(height: Double, url: String, width: Double): UserRepositoryInfoResponseHdProfilePicUrlInfo = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserRepositoryInfoResponseHdProfilePicUrlInfo]
     }
     
-    @scala.inline
-    implicit class UserRepositoryInfoResponseHdProfilePicUrlInfoMutableBuilder[Self <: UserRepositoryInfoResponseHdProfilePicUrlInfo] (val x: Self) extends AnyVal {
+    extension [Self <: UserRepositoryInfoResponseHdProfilePicUrlInfo](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -74,23 +64,18 @@ object userRepositoryInfoResponseMod {
   }
   object UserRepositoryInfoResponseHdProfilePicVersionsItem {
     
-    @scala.inline
-    def apply(height: Double, url: String, width: Double): UserRepositoryInfoResponseHdProfilePicVersionsItem = {
+    inline def apply(height: Double, url: String, width: Double): UserRepositoryInfoResponseHdProfilePicVersionsItem = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserRepositoryInfoResponseHdProfilePicVersionsItem]
     }
     
-    @scala.inline
-    implicit class UserRepositoryInfoResponseHdProfilePicVersionsItemMutableBuilder[Self <: UserRepositoryInfoResponseHdProfilePicVersionsItem] (val x: Self) extends AnyVal {
+    extension [Self <: UserRepositoryInfoResponseHdProfilePicVersionsItem](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -106,26 +91,20 @@ object userRepositoryInfoResponseMod {
   }
   object UserRepositoryInfoResponseNametag {
     
-    @scala.inline
-    def apply(emoji: String, gradient: String, mode: Double, selfie_sticker: String): UserRepositoryInfoResponseNametag = {
+    inline def apply(emoji: String, gradient: String, mode: Double, selfie_sticker: String): UserRepositoryInfoResponseNametag = {
       val __obj = js.Dynamic.literal(emoji = emoji.asInstanceOf[js.Any], gradient = gradient.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], selfie_sticker = selfie_sticker.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserRepositoryInfoResponseNametag]
     }
     
-    @scala.inline
-    implicit class UserRepositoryInfoResponseNametagMutableBuilder[Self <: UserRepositoryInfoResponseNametag] (val x: Self) extends AnyVal {
+    extension [Self <: UserRepositoryInfoResponseNametag](x: Self) {
       
-      @scala.inline
-      def setEmoji(value: String): Self = StObject.set(x, "emoji", value.asInstanceOf[js.Any])
+      inline def setEmoji(value: String): Self = StObject.set(x, "emoji", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGradient(value: String): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
+      inline def setGradient(value: String): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelfie_sticker(value: String): Self = StObject.set(x, "selfie_sticker", value.asInstanceOf[js.Any])
+      inline def setSelfie_sticker(value: String): Self = StObject.set(x, "selfie_sticker", value.asInstanceOf[js.Any])
     }
   }
   
@@ -137,20 +116,16 @@ object userRepositoryInfoResponseMod {
   }
   object UserRepositoryInfoResponseRootObject {
     
-    @scala.inline
-    def apply(status: String, user: UserRepositoryInfoResponseUser): UserRepositoryInfoResponseRootObject = {
+    inline def apply(status: String, user: UserRepositoryInfoResponseUser): UserRepositoryInfoResponseRootObject = {
       val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserRepositoryInfoResponseRootObject]
     }
     
-    @scala.inline
-    implicit class UserRepositoryInfoResponseRootObjectMutableBuilder[Self <: UserRepositoryInfoResponseRootObject] (val x: Self) extends AnyVal {
+    extension [Self <: UserRepositoryInfoResponseRootObject](x: Self) {
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: UserRepositoryInfoResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: UserRepositoryInfoResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
   
@@ -290,8 +265,7 @@ object userRepositoryInfoResponseMod {
   }
   object UserRepositoryInfoResponseUser {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       account_type: Double,
       aggregate_promote_engagement: Boolean,
       allowed_commenter_type: String,
@@ -358,224 +332,151 @@ object userRepositoryInfoResponseMod {
       __obj.asInstanceOf[UserRepositoryInfoResponseUser]
     }
     
-    @scala.inline
-    implicit class UserRepositoryInfoResponseUserMutableBuilder[Self <: UserRepositoryInfoResponseUser] (val x: Self) extends AnyVal {
+    extension [Self <: UserRepositoryInfoResponseUser](x: Self) {
       
-      @scala.inline
-      def setAccount_type(value: Double): Self = StObject.set(x, "account_type", value.asInstanceOf[js.Any])
+      inline def setAccount_type(value: Double): Self = StObject.set(x, "account_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddress_street(value: String): Self = StObject.set(x, "address_street", value.asInstanceOf[js.Any])
+      inline def setAddress_street(value: String): Self = StObject.set(x, "address_street", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddress_streetUndefined: Self = StObject.set(x, "address_street", js.undefined)
+      inline def setAddress_streetUndefined: Self = StObject.set(x, "address_street", js.undefined)
       
-      @scala.inline
-      def setAggregate_promote_engagement(value: Boolean): Self = StObject.set(x, "aggregate_promote_engagement", value.asInstanceOf[js.Any])
+      inline def setAggregate_promote_engagement(value: Boolean): Self = StObject.set(x, "aggregate_promote_engagement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowed_commenter_type(value: String): Self = StObject.set(x, "allowed_commenter_type", value.asInstanceOf[js.Any])
+      inline def setAllowed_commenter_type(value: String): Self = StObject.set(x, "allowed_commenter_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuto_expand_chaining(value: Boolean): Self = StObject.set(x, "auto_expand_chaining", value.asInstanceOf[js.Any])
+      inline def setAuto_expand_chaining(value: Boolean): Self = StObject.set(x, "auto_expand_chaining", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBesties_count(value: Double): Self = StObject.set(x, "besties_count", value.asInstanceOf[js.Any])
+      inline def setBesties_count(value: Double): Self = StObject.set(x, "besties_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBiography(value: String): Self = StObject.set(x, "biography", value.asInstanceOf[js.Any])
+      inline def setBiography(value: String): Self = StObject.set(x, "biography", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBiography_with_entities(value: UserRepositoryInfoResponseBiographyWithEntities): Self = StObject.set(x, "biography_with_entities", value.asInstanceOf[js.Any])
+      inline def setBiography_with_entities(value: UserRepositoryInfoResponseBiographyWithEntities): Self = StObject.set(x, "biography_with_entities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCan_be_reported_as_fraud(value: Boolean): Self = StObject.set(x, "can_be_reported_as_fraud", value.asInstanceOf[js.Any])
+      inline def setCan_be_reported_as_fraud(value: Boolean): Self = StObject.set(x, "can_be_reported_as_fraud", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCan_be_tagged_as_sponsor(value: Boolean): Self = StObject.set(x, "can_be_tagged_as_sponsor", value.asInstanceOf[js.Any])
+      inline def setCan_be_tagged_as_sponsor(value: Boolean): Self = StObject.set(x, "can_be_tagged_as_sponsor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCan_boost_post(value: Boolean): Self = StObject.set(x, "can_boost_post", value.asInstanceOf[js.Any])
+      inline def setCan_boost_post(value: Boolean): Self = StObject.set(x, "can_boost_post", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCan_convert_to_business(value: Boolean): Self = StObject.set(x, "can_convert_to_business", value.asInstanceOf[js.Any])
+      inline def setCan_convert_to_business(value: Boolean): Self = StObject.set(x, "can_convert_to_business", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCan_create_sponsor_tags(value: Boolean): Self = StObject.set(x, "can_create_sponsor_tags", value.asInstanceOf[js.Any])
+      inline def setCan_create_sponsor_tags(value: Boolean): Self = StObject.set(x, "can_create_sponsor_tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCan_follow_hashtag(value: Boolean): Self = StObject.set(x, "can_follow_hashtag", value.asInstanceOf[js.Any])
+      inline def setCan_follow_hashtag(value: Boolean): Self = StObject.set(x, "can_follow_hashtag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCan_link_entities_in_bio(value: Boolean): Self = StObject.set(x, "can_link_entities_in_bio", value.asInstanceOf[js.Any])
+      inline def setCan_link_entities_in_bio(value: Boolean): Self = StObject.set(x, "can_link_entities_in_bio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCan_see_organic_insights(value: Boolean): Self = StObject.set(x, "can_see_organic_insights", value.asInstanceOf[js.Any])
+      inline def setCan_see_organic_insights(value: Boolean): Self = StObject.set(x, "can_see_organic_insights", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCan_tag_products_from_merchants(value: Boolean): Self = StObject.set(x, "can_tag_products_from_merchants", value.asInstanceOf[js.Any])
+      inline def setCan_tag_products_from_merchants(value: Boolean): Self = StObject.set(x, "can_tag_products_from_merchants", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+      inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+      inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
       
-      @scala.inline
-      def setContact_phone_number(value: String): Self = StObject.set(x, "contact_phone_number", value.asInstanceOf[js.Any])
+      inline def setContact_phone_number(value: String): Self = StObject.set(x, "contact_phone_number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContact_phone_numberUndefined: Self = StObject.set(x, "contact_phone_number", js.undefined)
+      inline def setContact_phone_numberUndefined: Self = StObject.set(x, "contact_phone_number", js.undefined)
       
-      @scala.inline
-      def setExternal_url(value: String): Self = StObject.set(x, "external_url", value.asInstanceOf[js.Any])
+      inline def setExternal_url(value: String): Self = StObject.set(x, "external_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeed_post_reshare_disabled(value: Boolean): Self = StObject.set(x, "feed_post_reshare_disabled", value.asInstanceOf[js.Any])
+      inline def setFeed_post_reshare_disabled(value: Boolean): Self = StObject.set(x, "feed_post_reshare_disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollower_count(value: Double): Self = StObject.set(x, "follower_count", value.asInstanceOf[js.Any])
+      inline def setFollower_count(value: Double): Self = StObject.set(x, "follower_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowing_count(value: Double): Self = StObject.set(x, "following_count", value.asInstanceOf[js.Any])
+      inline def setFollowing_count(value: Double): Self = StObject.set(x, "following_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowing_tag_count(value: Double): Self = StObject.set(x, "following_tag_count", value.asInstanceOf[js.Any])
+      inline def setFollowing_tag_count(value: Double): Self = StObject.set(x, "following_tag_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
+      inline def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeo_media_count(value: Double): Self = StObject.set(x, "geo_media_count", value.asInstanceOf[js.Any])
+      inline def setGeo_media_count(value: Double): Self = StObject.set(x, "geo_media_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_anonymous_profile_picture(value: Boolean): Self = StObject.set(x, "has_anonymous_profile_picture", value.asInstanceOf[js.Any])
+      inline def setHas_anonymous_profile_picture(value: Boolean): Self = StObject.set(x, "has_anonymous_profile_picture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_biography_translation(value: Boolean): Self = StObject.set(x, "has_biography_translation", value.asInstanceOf[js.Any])
+      inline def setHas_biography_translation(value: Boolean): Self = StObject.set(x, "has_biography_translation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_chaining(value: Boolean): Self = StObject.set(x, "has_chaining", value.asInstanceOf[js.Any])
+      inline def setHas_chaining(value: Boolean): Self = StObject.set(x, "has_chaining", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_highlight_reels(value: Boolean): Self = StObject.set(x, "has_highlight_reels", value.asInstanceOf[js.Any])
+      inline def setHas_highlight_reels(value: Boolean): Self = StObject.set(x, "has_highlight_reels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_placed_orders(value: Boolean): Self = StObject.set(x, "has_placed_orders", value.asInstanceOf[js.Any])
+      inline def setHas_placed_orders(value: Boolean): Self = StObject.set(x, "has_placed_orders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_profile_video_feed(value: Boolean): Self = StObject.set(x, "has_profile_video_feed", value.asInstanceOf[js.Any])
+      inline def setHas_profile_video_feed(value: Boolean): Self = StObject.set(x, "has_profile_video_feed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_recommend_accounts(value: Boolean): Self = StObject.set(x, "has_recommend_accounts", value.asInstanceOf[js.Any])
+      inline def setHas_recommend_accounts(value: Boolean): Self = StObject.set(x, "has_recommend_accounts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHd_profile_pic_url_info(value: UserRepositoryInfoResponseHdProfilePicUrlInfo): Self = StObject.set(x, "hd_profile_pic_url_info", value.asInstanceOf[js.Any])
+      inline def setHd_profile_pic_url_info(value: UserRepositoryInfoResponseHdProfilePicUrlInfo): Self = StObject.set(x, "hd_profile_pic_url_info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHd_profile_pic_versions(value: js.Array[UserRepositoryInfoResponseHdProfilePicVersionsItem]): Self = StObject.set(x, "hd_profile_pic_versions", value.asInstanceOf[js.Any])
+      inline def setHd_profile_pic_versions(value: js.Array[UserRepositoryInfoResponseHdProfilePicVersionsItem]): Self = StObject.set(x, "hd_profile_pic_versions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHd_profile_pic_versionsVarargs(value: UserRepositoryInfoResponseHdProfilePicVersionsItem*): Self = StObject.set(x, "hd_profile_pic_versions", js.Array(value :_*))
+      inline def setHd_profile_pic_versionsVarargs(value: UserRepositoryInfoResponseHdProfilePicVersionsItem*): Self = StObject.set(x, "hd_profile_pic_versions", js.Array(value :_*))
       
-      @scala.inline
-      def setHighlight_reshare_disabled(value: Boolean): Self = StObject.set(x, "highlight_reshare_disabled", value.asInstanceOf[js.Any])
+      inline def setHighlight_reshare_disabled(value: Boolean): Self = StObject.set(x, "highlight_reshare_disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInclude_direct_blacklist_status(value: Boolean): Self = StObject.set(x, "include_direct_blacklist_status", value.asInstanceOf[js.Any])
+      inline def setInclude_direct_blacklist_status(value: Boolean): Self = StObject.set(x, "include_direct_blacklist_status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_business(value: Boolean): Self = StObject.set(x, "is_business", value.asInstanceOf[js.Any])
+      inline def setIs_business(value: Boolean): Self = StObject.set(x, "is_business", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_call_to_action_enabled(value: Null): Self = StObject.set(x, "is_call_to_action_enabled", value.asInstanceOf[js.Any])
+      inline def setIs_call_to_action_enabled(value: Null): Self = StObject.set(x, "is_call_to_action_enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_eligible_to_show_fb_cross_sharing_nux(value: Boolean): Self = StObject.set(x, "is_eligible_to_show_fb_cross_sharing_nux", value.asInstanceOf[js.Any])
+      inline def setIs_eligible_to_show_fb_cross_sharing_nux(value: Boolean): Self = StObject.set(x, "is_eligible_to_show_fb_cross_sharing_nux", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_interest_account(value: Boolean): Self = StObject.set(x, "is_interest_account", value.asInstanceOf[js.Any])
+      inline def setIs_interest_account(value: Boolean): Self = StObject.set(x, "is_interest_account", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_needy(value: Boolean): Self = StObject.set(x, "is_needy", value.asInstanceOf[js.Any])
+      inline def setIs_needy(value: Boolean): Self = StObject.set(x, "is_needy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_potential_business(value: Boolean): Self = StObject.set(x, "is_potential_business", value.asInstanceOf[js.Any])
+      inline def setIs_potential_business(value: Boolean): Self = StObject.set(x, "is_potential_business", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
+      inline def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_profile_action_needed(value: Boolean): Self = StObject.set(x, "is_profile_action_needed", value.asInstanceOf[js.Any])
+      inline def setIs_profile_action_needed(value: Boolean): Self = StObject.set(x, "is_profile_action_needed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
+      inline def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_video_creator(value: Boolean): Self = StObject.set(x, "is_video_creator", value.asInstanceOf[js.Any])
+      inline def setIs_video_creator(value: Boolean): Self = StObject.set(x, "is_video_creator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMedia_count(value: Double): Self = StObject.set(x, "media_count", value.asInstanceOf[js.Any])
+      inline def setMedia_count(value: Double): Self = StObject.set(x, "media_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNametag(value: UserRepositoryInfoResponseNametag): Self = StObject.set(x, "nametag", value.asInstanceOf[js.Any])
+      inline def setNametag(value: UserRepositoryInfoResponseNametag): Self = StObject.set(x, "nametag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPage_id_for_new_suma_biz_account(value: Null): Self = StObject.set(x, "page_id_for_new_suma_biz_account", value.asInstanceOf[js.Any])
+      inline def setPage_id_for_new_suma_biz_account(value: Null): Self = StObject.set(x, "page_id_for_new_suma_biz_account", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+      inline def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublic_email(value: String): Self = StObject.set(x, "public_email", value.asInstanceOf[js.Any])
+      inline def setPublic_email(value: String): Self = StObject.set(x, "public_email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublic_emailUndefined: Self = StObject.set(x, "public_email", js.undefined)
+      inline def setPublic_emailUndefined: Self = StObject.set(x, "public_email", js.undefined)
       
-      @scala.inline
-      def setPublic_phone_country_code(value: String): Self = StObject.set(x, "public_phone_country_code", value.asInstanceOf[js.Any])
+      inline def setPublic_phone_country_code(value: String): Self = StObject.set(x, "public_phone_country_code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublic_phone_country_codeUndefined: Self = StObject.set(x, "public_phone_country_code", js.undefined)
+      inline def setPublic_phone_country_codeUndefined: Self = StObject.set(x, "public_phone_country_code", js.undefined)
       
-      @scala.inline
-      def setRecently_bestied_by_count(value: Double): Self = StObject.set(x, "recently_bestied_by_count", value.asInstanceOf[js.Any])
+      inline def setRecently_bestied_by_count(value: Double): Self = StObject.set(x, "recently_bestied_by_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReel_auto_archive(value: String): Self = StObject.set(x, "reel_auto_archive", value.asInstanceOf[js.Any])
+      inline def setReel_auto_archive(value: String): Self = StObject.set(x, "reel_auto_archive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShow_besties_badge(value: Boolean): Self = StObject.set(x, "show_besties_badge", value.asInstanceOf[js.Any])
+      inline def setShow_besties_badge(value: Boolean): Self = StObject.set(x, "show_besties_badge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShow_business_conversion_icon(value: Boolean): Self = StObject.set(x, "show_business_conversion_icon", value.asInstanceOf[js.Any])
+      inline def setShow_business_conversion_icon(value: Boolean): Self = StObject.set(x, "show_business_conversion_icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShow_conversion_edit_entry(value: Boolean): Self = StObject.set(x, "show_conversion_edit_entry", value.asInstanceOf[js.Any])
+      inline def setShow_conversion_edit_entry(value: Boolean): Self = StObject.set(x, "show_conversion_edit_entry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShow_insights_terms(value: Boolean): Self = StObject.set(x, "show_insights_terms", value.asInstanceOf[js.Any])
+      inline def setShow_insights_terms(value: Boolean): Self = StObject.set(x, "show_insights_terms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal_ar_effects(value: Double): Self = StObject.set(x, "total_ar_effects", value.asInstanceOf[js.Any])
+      inline def setTotal_ar_effects(value: Double): Self = StObject.set(x, "total_ar_effects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal_igtv_videos(value: Double): Self = StObject.set(x, "total_igtv_videos", value.asInstanceOf[js.Any])
+      inline def setTotal_igtv_videos(value: Double): Self = StObject.set(x, "total_igtv_videos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsertag_review_enabled(value: Boolean): Self = StObject.set(x, "usertag_review_enabled", value.asInstanceOf[js.Any])
+      inline def setUsertag_review_enabled(value: Boolean): Self = StObject.set(x, "usertag_review_enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsertags_count(value: Double): Self = StObject.set(x, "usertags_count", value.asInstanceOf[js.Any])
+      inline def setUsertags_count(value: Double): Self = StObject.set(x, "usertags_count", value.asInstanceOf[js.Any])
     }
   }
 }

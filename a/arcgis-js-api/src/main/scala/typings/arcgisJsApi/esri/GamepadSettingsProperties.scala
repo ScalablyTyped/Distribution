@@ -18,19 +18,15 @@ trait GamepadSettingsProperties extends StObject {
 }
 object GamepadSettingsProperties {
   
-  @scala.inline
-  def apply(): GamepadSettingsProperties = {
+  inline def apply(): GamepadSettingsProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GamepadSettingsProperties]
   }
   
-  @scala.inline
-  implicit class GamepadSettingsPropertiesMutableBuilder[Self <: GamepadSettingsProperties] (val x: Self) extends AnyVal {
+  extension [Self <: GamepadSettingsProperties](x: Self) {
     
-    @scala.inline
-    def setEnabledFocusMode(value: document | view | none): Self = StObject.set(x, "enabledFocusMode", value.asInstanceOf[js.Any])
+    inline def setEnabledFocusMode(value: document | view | none): Self = StObject.set(x, "enabledFocusMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledFocusModeUndefined: Self = StObject.set(x, "enabledFocusMode", js.undefined)
+    inline def setEnabledFocusModeUndefined: Self = StObject.set(x, "enabledFocusMode", js.undefined)
   }
 }

@@ -15,20 +15,16 @@ object anon {
   }
   object Index {
     
-    @scala.inline
-    def apply(index: Double, nodesScope: IParentTreeNodeScope): Index = {
+    inline def apply(index: Double, nodesScope: IParentTreeNodeScope): Index = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], nodesScope = nodesScope.asInstanceOf[js.Any])
       __obj.asInstanceOf[Index]
     }
     
-    @scala.inline
-    implicit class IndexMutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
+    extension [Self <: Index](x: Self) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodesScope(value: IParentTreeNodeScope): Self = StObject.set(x, "nodesScope", value.asInstanceOf[js.Any])
+      inline def setNodesScope(value: IParentTreeNodeScope): Self = StObject.set(x, "nodesScope", value.asInstanceOf[js.Any])
     }
   }
 }

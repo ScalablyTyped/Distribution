@@ -11,16 +11,13 @@ trait PickImplsortSelect extends StObject {
 }
 object PickImplsortSelect {
   
-  @scala.inline
-  def apply(sortSelect: Boolean): PickImplsortSelect = {
+  inline def apply(sortSelect: Boolean): PickImplsortSelect = {
     val __obj = js.Dynamic.literal(sortSelect = sortSelect.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplsortSelect]
   }
   
-  @scala.inline
-  implicit class PickImplsortSelectMutableBuilder[Self <: PickImplsortSelect] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplsortSelect](x: Self) {
     
-    @scala.inline
-    def setSortSelect(value: Boolean): Self = StObject.set(x, "sortSelect", value.asInstanceOf[js.Any])
+    inline def setSortSelect(value: Boolean): Self = StObject.set(x, "sortSelect", value.asInstanceOf[js.Any])
   }
 }

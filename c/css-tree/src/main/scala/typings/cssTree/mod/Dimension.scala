@@ -19,23 +19,18 @@ trait Dimension
 }
 object Dimension {
   
-  @scala.inline
-  def apply(unit: String, value: String): Dimension = {
+  inline def apply(unit: String, value: String): Dimension = {
     val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Dimension")
     __obj.asInstanceOf[Dimension]
   }
   
-  @scala.inline
-  implicit class DimensionMutableBuilder[Self <: Dimension] (val x: Self) extends AnyVal {
+  extension [Self <: Dimension](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.cssTree.cssTreeStrings.Dimension): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.cssTree.cssTreeStrings.Dimension): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

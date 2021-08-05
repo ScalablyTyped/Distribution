@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.PageBreak")
 @js.native
-class PageBreak protected ()
+/* private */ class PageBreak ()
   extends StObject
      with typings.activexAccess.Access.PageBreak

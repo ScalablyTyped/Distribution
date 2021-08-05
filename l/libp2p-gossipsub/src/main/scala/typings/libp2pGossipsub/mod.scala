@@ -61,8 +61,7 @@ object mod {
   @JSImport("libp2p-gossipsub", "multicodec")
   @js.native
   def multicodec: String = js.native
-  @scala.inline
-  def multicodec_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("multicodec")(x.asInstanceOf[js.Any])
+  inline def multicodec_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("multicodec")(x.asInstanceOf[js.Any])
   
   trait GossipInputOptions extends StObject {
     
@@ -122,8 +121,7 @@ object mod {
   }
   object GossipInputOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       D: Double,
       Dhi: Double,
       Dlazy: Double,
@@ -146,62 +144,43 @@ object mod {
       __obj.asInstanceOf[GossipInputOptions]
     }
     
-    @scala.inline
-    implicit class GossipInputOptionsMutableBuilder[Self <: GossipInputOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GossipInputOptions](x: Self) {
       
-      @scala.inline
-      def setD(value: Double): Self = StObject.set(x, "D", value.asInstanceOf[js.Any])
+      inline def setD(value: Double): Self = StObject.set(x, "D", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDhi(value: Double): Self = StObject.set(x, "Dhi", value.asInstanceOf[js.Any])
+      inline def setDhi(value: Double): Self = StObject.set(x, "Dhi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectPeers(value: js.Array[AddrInfo]): Self = StObject.set(x, "directPeers", value.asInstanceOf[js.Any])
+      inline def setDirectPeers(value: js.Array[AddrInfo]): Self = StObject.set(x, "directPeers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectPeersVarargs(value: AddrInfo*): Self = StObject.set(x, "directPeers", js.Array(value :_*))
+      inline def setDirectPeersVarargs(value: AddrInfo*): Self = StObject.set(x, "directPeers", js.Array(value :_*))
       
-      @scala.inline
-      def setDlazy(value: Double): Self = StObject.set(x, "Dlazy", value.asInstanceOf[js.Any])
+      inline def setDlazy(value: Double): Self = StObject.set(x, "Dlazy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDlo(value: Double): Self = StObject.set(x, "Dlo", value.asInstanceOf[js.Any])
+      inline def setDlo(value: Double): Self = StObject.set(x, "Dlo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDoPX(value: Boolean): Self = StObject.set(x, "doPX", value.asInstanceOf[js.Any])
+      inline def setDoPX(value: Boolean): Self = StObject.set(x, "doPX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDout(value: Double): Self = StObject.set(x, "Dout", value.asInstanceOf[js.Any])
+      inline def setDout(value: Double): Self = StObject.set(x, "Dout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDscore(value: Double): Self = StObject.set(x, "Dscore", value.asInstanceOf[js.Any])
+      inline def setDscore(value: Double): Self = StObject.set(x, "Dscore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmitSelf(value: Boolean): Self = StObject.set(x, "emitSelf", value.asInstanceOf[js.Any])
+      inline def setEmitSelf(value: Boolean): Self = StObject.set(x, "emitSelf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackToFloodsub(value: Boolean): Self = StObject.set(x, "fallbackToFloodsub", value.asInstanceOf[js.Any])
+      inline def setFallbackToFloodsub(value: Boolean): Self = StObject.set(x, "fallbackToFloodsub", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFloodPublish(value: Boolean): Self = StObject.set(x, "floodPublish", value.asInstanceOf[js.Any])
+      inline def setFloodPublish(value: Boolean): Self = StObject.set(x, "floodPublish", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalSignaturePolicy(value: String): Self = StObject.set(x, "globalSignaturePolicy", value.asInstanceOf[js.Any])
+      inline def setGlobalSignaturePolicy(value: String): Self = StObject.set(x, "globalSignaturePolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGossipIncoming(value: Boolean): Self = StObject.set(x, "gossipIncoming", value.asInstanceOf[js.Any])
+      inline def setGossipIncoming(value: Boolean): Self = StObject.set(x, "gossipIncoming", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageCache(value: MessageCache): Self = StObject.set(x, "messageCache", value.asInstanceOf[js.Any])
+      inline def setMessageCache(value: MessageCache): Self = StObject.set(x, "messageCache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgIdFn(value: /* msg */ InMessage => Uint8Array): Self = StObject.set(x, "msgIdFn", js.Any.fromFunction1(value))
+      inline def setMsgIdFn(value: /* msg */ InMessage => Uint8Array): Self = StObject.set(x, "msgIdFn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setScoreParams(value: PartialPeerScoreParams): Self = StObject.set(x, "scoreParams", value.asInstanceOf[js.Any])
+      inline def setScoreParams(value: PartialPeerScoreParams): Self = StObject.set(x, "scoreParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScoreThresholds(value: PartialPeerScoreThreshold): Self = StObject.set(x, "scoreThresholds", value.asInstanceOf[js.Any])
+      inline def setScoreThresholds(value: PartialPeerScoreThreshold): Self = StObject.set(x, "scoreThresholds", value.asInstanceOf[js.Any])
     }
   }
   
@@ -217,8 +196,7 @@ object mod {
   }
   object GossipOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       D: Double,
       Dhi: Double,
       Dlazy: Double,
@@ -241,14 +219,11 @@ object mod {
       __obj.asInstanceOf[GossipOptions]
     }
     
-    @scala.inline
-    implicit class GossipOptionsMutableBuilder[Self <: GossipOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GossipOptions](x: Self) {
       
-      @scala.inline
-      def setScoreParams(value: PeerScoreParams): Self = StObject.set(x, "scoreParams", value.asInstanceOf[js.Any])
+      inline def setScoreParams(value: PeerScoreParams): Self = StObject.set(x, "scoreParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScoreThresholds(value: PeerScoreThresholds): Self = StObject.set(x, "scoreThresholds", value.asInstanceOf[js.Any])
+      inline def setScoreThresholds(value: PeerScoreThresholds): Self = StObject.set(x, "scoreThresholds", value.asInstanceOf[js.Any])
     }
   }
   

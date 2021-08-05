@@ -21,18 +21,14 @@ object Clock {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def fixed(fixedInstant: Instant, zoneOffset: ZoneOffset): Clock = (^.asInstanceOf[js.Dynamic].applyDynamic("fixed")(fixedInstant.asInstanceOf[js.Any], zoneOffset.asInstanceOf[js.Any])).asInstanceOf[Clock]
+  inline def fixed(fixedInstant: Instant, zoneOffset: ZoneOffset): Clock = (^.asInstanceOf[js.Dynamic].applyDynamic("fixed")(fixedInstant.asInstanceOf[js.Any], zoneOffset.asInstanceOf[js.Any])).asInstanceOf[Clock]
   
   /* static member */
-  @scala.inline
-  def system(zone: ZoneId): Clock = ^.asInstanceOf[js.Dynamic].applyDynamic("system")(zone.asInstanceOf[js.Any]).asInstanceOf[Clock]
+  inline def system(zone: ZoneId): Clock = ^.asInstanceOf[js.Dynamic].applyDynamic("system")(zone.asInstanceOf[js.Any]).asInstanceOf[Clock]
   
   /* static member */
-  @scala.inline
-  def systemDefaultZone(): Clock = ^.asInstanceOf[js.Dynamic].applyDynamic("systemDefaultZone")().asInstanceOf[Clock]
+  inline def systemDefaultZone(): Clock = ^.asInstanceOf[js.Dynamic].applyDynamic("systemDefaultZone")().asInstanceOf[Clock]
   
   /* static member */
-  @scala.inline
-  def systemUTC(): Clock = ^.asInstanceOf[js.Dynamic].applyDynamic("systemUTC")().asInstanceOf[Clock]
+  inline def systemUTC(): Clock = ^.asInstanceOf[js.Dynamic].applyDynamic("systemUTC")().asInstanceOf[Clock]
 }

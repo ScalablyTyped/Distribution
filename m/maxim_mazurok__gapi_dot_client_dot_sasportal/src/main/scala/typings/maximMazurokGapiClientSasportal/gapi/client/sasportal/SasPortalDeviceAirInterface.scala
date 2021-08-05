@@ -14,25 +14,19 @@ trait SasPortalDeviceAirInterface extends StObject {
 }
 object SasPortalDeviceAirInterface {
   
-  @scala.inline
-  def apply(): SasPortalDeviceAirInterface = {
+  inline def apply(): SasPortalDeviceAirInterface = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SasPortalDeviceAirInterface]
   }
   
-  @scala.inline
-  implicit class SasPortalDeviceAirInterfaceMutableBuilder[Self <: SasPortalDeviceAirInterface] (val x: Self) extends AnyVal {
+  extension [Self <: SasPortalDeviceAirInterface](x: Self) {
     
-    @scala.inline
-    def setRadioTechnology(value: String): Self = StObject.set(x, "radioTechnology", value.asInstanceOf[js.Any])
+    inline def setRadioTechnology(value: String): Self = StObject.set(x, "radioTechnology", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadioTechnologyUndefined: Self = StObject.set(x, "radioTechnology", js.undefined)
+    inline def setRadioTechnologyUndefined: Self = StObject.set(x, "radioTechnology", js.undefined)
     
-    @scala.inline
-    def setSupportedSpec(value: String): Self = StObject.set(x, "supportedSpec", value.asInstanceOf[js.Any])
+    inline def setSupportedSpec(value: String): Self = StObject.set(x, "supportedSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedSpecUndefined: Self = StObject.set(x, "supportedSpec", js.undefined)
+    inline def setSupportedSpecUndefined: Self = StObject.set(x, "supportedSpec", js.undefined)
   }
 }

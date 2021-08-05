@@ -12,22 +12,17 @@ trait QueueNode[T] extends StObject {
 }
 object QueueNode {
   
-  @scala.inline
-  def apply[T](value: T): QueueNode[T] = {
+  inline def apply[T](value: T): QueueNode[T] = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any], next = null)
     __obj.asInstanceOf[QueueNode[T]]
   }
   
-  @scala.inline
-  implicit class QueueNodeMutableBuilder[Self <: QueueNode[?], T] (val x: Self & QueueNode[T]) extends AnyVal {
+  extension [Self <: QueueNode[?], T](x: Self & QueueNode[T]) {
     
-    @scala.inline
-    def setNext(value: QueueNode[T]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: QueueNode[T]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextNull: Self = StObject.set(x, "next", null)
+    inline def setNextNull: Self = StObject.set(x, "next", null)
     
-    @scala.inline
-    def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

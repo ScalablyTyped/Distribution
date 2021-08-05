@@ -13,16 +13,13 @@ trait VirtualRouterServiceProvider extends StObject {
 }
 object VirtualRouterServiceProvider {
   
-  @scala.inline
-  def apply(virtualRouterName: ResourceName): VirtualRouterServiceProvider = {
+  inline def apply(virtualRouterName: ResourceName): VirtualRouterServiceProvider = {
     val __obj = js.Dynamic.literal(virtualRouterName = virtualRouterName.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualRouterServiceProvider]
   }
   
-  @scala.inline
-  implicit class VirtualRouterServiceProviderMutableBuilder[Self <: VirtualRouterServiceProvider] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualRouterServiceProvider](x: Self) {
     
-    @scala.inline
-    def setVirtualRouterName(value: ResourceName): Self = StObject.set(x, "virtualRouterName", value.asInstanceOf[js.Any])
+    inline def setVirtualRouterName(value: ResourceName): Self = StObject.set(x, "virtualRouterName", value.asInstanceOf[js.Any])
   }
 }

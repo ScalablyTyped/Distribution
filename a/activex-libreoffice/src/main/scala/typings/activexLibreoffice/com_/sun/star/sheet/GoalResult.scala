@@ -15,19 +15,15 @@ trait GoalResult extends StObject {
 }
 object GoalResult {
   
-  @scala.inline
-  def apply(Divergence: Double, Result: Double): GoalResult = {
+  inline def apply(Divergence: Double, Result: Double): GoalResult = {
     val __obj = js.Dynamic.literal(Divergence = Divergence.asInstanceOf[js.Any], Result = Result.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoalResult]
   }
   
-  @scala.inline
-  implicit class GoalResultMutableBuilder[Self <: GoalResult] (val x: Self) extends AnyVal {
+  extension [Self <: GoalResult](x: Self) {
     
-    @scala.inline
-    def setDivergence(value: Double): Self = StObject.set(x, "Divergence", value.asInstanceOf[js.Any])
+    inline def setDivergence(value: Double): Self = StObject.set(x, "Divergence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: Double): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Double): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
   }
 }

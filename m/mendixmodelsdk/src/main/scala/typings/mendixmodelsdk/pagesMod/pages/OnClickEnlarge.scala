@@ -38,8 +38,7 @@ object OnClickEnlarge {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): OnClickEnlarge = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[OnClickEnlarge]
+  inline def create(model: IModel): OnClickEnlarge = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[OnClickEnlarge]
   
   /**
     * Creates and returns a new OnClickEnlarge instance in the SDK and on the server.
@@ -50,20 +49,17 @@ object OnClickEnlarge {
     *  6.0.0 to 7.17.0
     */
   /* static member */
-  @scala.inline
-  def createIn(container: DynamicImageViewer): OnClickEnlarge = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[OnClickEnlarge]
+  inline def createIn(container: DynamicImageViewer): OnClickEnlarge = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[OnClickEnlarge]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.OnClickEnlarge.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.OnClickEnlarge.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

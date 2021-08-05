@@ -12,19 +12,15 @@ trait PredictDate extends StObject {
 }
 object PredictDate {
   
-  @scala.inline
-  def apply(hour: Double, weekday: Double): PredictDate = {
+  inline def apply(hour: Double, weekday: Double): PredictDate = {
     val __obj = js.Dynamic.literal(hour = hour.asInstanceOf[js.Any], weekday = weekday.asInstanceOf[js.Any])
     __obj.asInstanceOf[PredictDate]
   }
   
-  @scala.inline
-  implicit class PredictDateMutableBuilder[Self <: PredictDate] (val x: Self) extends AnyVal {
+  extension [Self <: PredictDate](x: Self) {
     
-    @scala.inline
-    def setHour(value: Double): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
+    inline def setHour(value: Double): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeekday(value: Double): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
+    inline def setWeekday(value: Double): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
   }
 }

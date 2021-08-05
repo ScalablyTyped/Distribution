@@ -18,19 +18,15 @@ trait DeleteAccessLogSettingsRequest extends StObject {
 }
 object DeleteAccessLogSettingsRequest {
   
-  @scala.inline
-  def apply(ApiId: string, StageName: string): DeleteAccessLogSettingsRequest = {
+  inline def apply(ApiId: string, StageName: string): DeleteAccessLogSettingsRequest = {
     val __obj = js.Dynamic.literal(ApiId = ApiId.asInstanceOf[js.Any], StageName = StageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAccessLogSettingsRequest]
   }
   
-  @scala.inline
-  implicit class DeleteAccessLogSettingsRequestMutableBuilder[Self <: DeleteAccessLogSettingsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAccessLogSettingsRequest](x: Self) {
     
-    @scala.inline
-    def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
+    inline def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStageName(value: string): Self = StObject.set(x, "StageName", value.asInstanceOf[js.Any])
+    inline def setStageName(value: string): Self = StObject.set(x, "StageName", value.asInstanceOf[js.Any])
   }
 }

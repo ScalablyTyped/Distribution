@@ -14,25 +14,19 @@ trait DomainWideTakeoutInitiated extends StObject {
 }
 object DomainWideTakeoutInitiated {
   
-  @scala.inline
-  def apply(): DomainWideTakeoutInitiated = {
+  inline def apply(): DomainWideTakeoutInitiated = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DomainWideTakeoutInitiated]
   }
   
-  @scala.inline
-  implicit class DomainWideTakeoutInitiatedMutableBuilder[Self <: DomainWideTakeoutInitiated] (val x: Self) extends AnyVal {
+  extension [Self <: DomainWideTakeoutInitiated](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setTakeoutRequestId(value: String): Self = StObject.set(x, "takeoutRequestId", value.asInstanceOf[js.Any])
+    inline def setTakeoutRequestId(value: String): Self = StObject.set(x, "takeoutRequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTakeoutRequestIdUndefined: Self = StObject.set(x, "takeoutRequestId", js.undefined)
+    inline def setTakeoutRequestIdUndefined: Self = StObject.set(x, "takeoutRequestId", js.undefined)
   }
 }

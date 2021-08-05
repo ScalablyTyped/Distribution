@@ -12,31 +12,23 @@ trait ConstrainStringParameters extends StObject {
 }
 object ConstrainStringParameters {
   
-  @scala.inline
-  def apply(): ConstrainStringParameters = {
+  inline def apply(): ConstrainStringParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConstrainStringParameters]
   }
   
-  @scala.inline
-  implicit class ConstrainStringParametersMutableBuilder[Self <: ConstrainStringParameters] (val x: Self) extends AnyVal {
+  extension [Self <: ConstrainStringParameters](x: Self) {
     
-    @scala.inline
-    def setExact(value: String | js.Array[String]): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
+    inline def setExact(value: String | js.Array[String]): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
+    inline def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
     
-    @scala.inline
-    def setExactVarargs(value: String*): Self = StObject.set(x, "exact", js.Array(value :_*))
+    inline def setExactVarargs(value: String*): Self = StObject.set(x, "exact", js.Array(value :_*))
     
-    @scala.inline
-    def setIdeal(value: String | js.Array[String]): Self = StObject.set(x, "ideal", value.asInstanceOf[js.Any])
+    inline def setIdeal(value: String | js.Array[String]): Self = StObject.set(x, "ideal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdealUndefined: Self = StObject.set(x, "ideal", js.undefined)
+    inline def setIdealUndefined: Self = StObject.set(x, "ideal", js.undefined)
     
-    @scala.inline
-    def setIdealVarargs(value: String*): Self = StObject.set(x, "ideal", js.Array(value :_*))
+    inline def setIdealVarargs(value: String*): Self = StObject.set(x, "ideal", js.Array(value :_*))
   }
 }

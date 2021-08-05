@@ -19,25 +19,19 @@ trait SchemaTransitTableTransitTimeRowTransitTimeValue extends StObject {
 }
 object SchemaTransitTableTransitTimeRowTransitTimeValue {
   
-  @scala.inline
-  def apply(): SchemaTransitTableTransitTimeRowTransitTimeValue = {
+  inline def apply(): SchemaTransitTableTransitTimeRowTransitTimeValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTransitTableTransitTimeRowTransitTimeValue]
   }
   
-  @scala.inline
-  implicit class SchemaTransitTableTransitTimeRowTransitTimeValueMutableBuilder[Self <: SchemaTransitTableTransitTimeRowTransitTimeValue] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTransitTableTransitTimeRowTransitTimeValue](x: Self) {
     
-    @scala.inline
-    def setMaxTransitTimeInDays(value: Double): Self = StObject.set(x, "maxTransitTimeInDays", value.asInstanceOf[js.Any])
+    inline def setMaxTransitTimeInDays(value: Double): Self = StObject.set(x, "maxTransitTimeInDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxTransitTimeInDaysUndefined: Self = StObject.set(x, "maxTransitTimeInDays", js.undefined)
+    inline def setMaxTransitTimeInDaysUndefined: Self = StObject.set(x, "maxTransitTimeInDays", js.undefined)
     
-    @scala.inline
-    def setMinTransitTimeInDays(value: Double): Self = StObject.set(x, "minTransitTimeInDays", value.asInstanceOf[js.Any])
+    inline def setMinTransitTimeInDays(value: Double): Self = StObject.set(x, "minTransitTimeInDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinTransitTimeInDaysUndefined: Self = StObject.set(x, "minTransitTimeInDays", js.undefined)
+    inline def setMinTransitTimeInDaysUndefined: Self = StObject.set(x, "minTransitTimeInDays", js.undefined)
   }
 }

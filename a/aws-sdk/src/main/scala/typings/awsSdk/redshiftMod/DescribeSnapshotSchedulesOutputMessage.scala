@@ -18,28 +18,21 @@ trait DescribeSnapshotSchedulesOutputMessage extends StObject {
 }
 object DescribeSnapshotSchedulesOutputMessage {
   
-  @scala.inline
-  def apply(): DescribeSnapshotSchedulesOutputMessage = {
+  inline def apply(): DescribeSnapshotSchedulesOutputMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeSnapshotSchedulesOutputMessage]
   }
   
-  @scala.inline
-  implicit class DescribeSnapshotSchedulesOutputMessageMutableBuilder[Self <: DescribeSnapshotSchedulesOutputMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSnapshotSchedulesOutputMessage](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setSnapshotSchedules(value: SnapshotScheduleList): Self = StObject.set(x, "SnapshotSchedules", value.asInstanceOf[js.Any])
+    inline def setSnapshotSchedules(value: SnapshotScheduleList): Self = StObject.set(x, "SnapshotSchedules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotSchedulesUndefined: Self = StObject.set(x, "SnapshotSchedules", js.undefined)
+    inline def setSnapshotSchedulesUndefined: Self = StObject.set(x, "SnapshotSchedules", js.undefined)
     
-    @scala.inline
-    def setSnapshotSchedulesVarargs(value: SnapshotSchedule*): Self = StObject.set(x, "SnapshotSchedules", js.Array(value :_*))
+    inline def setSnapshotSchedulesVarargs(value: SnapshotSchedule*): Self = StObject.set(x, "SnapshotSchedules", js.Array(value :_*))
   }
 }

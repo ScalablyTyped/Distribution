@@ -38,8 +38,7 @@ trait KmlViewerOptions
 }
 object KmlViewerOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
     equals_ : KmlObject => Boolean,
@@ -62,13 +61,10 @@ object KmlViewerOptions {
     __obj.asInstanceOf[KmlViewerOptions]
   }
   
-  @scala.inline
-  implicit class KmlViewerOptionsMutableBuilder[Self <: KmlViewerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: KmlViewerOptions](x: Self) {
     
-    @scala.inline
-    def setGetOption(value: GEViewerOptionsValueEnum => GEViewerOptionsValueEnum): Self = StObject.set(x, "getOption", js.Any.fromFunction1(value))
+    inline def setGetOption(value: GEViewerOptionsValueEnum => GEViewerOptionsValueEnum): Self = StObject.set(x, "getOption", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOption(value: (GEViewerOptionsTypeEnum, GEViewerOptionsValueEnum) => Unit): Self = StObject.set(x, "setOption", js.Any.fromFunction2(value))
+    inline def setSetOption(value: (GEViewerOptionsTypeEnum, GEViewerOptionsValueEnum) => Unit): Self = StObject.set(x, "setOption", js.Any.fromFunction2(value))
   }
 }

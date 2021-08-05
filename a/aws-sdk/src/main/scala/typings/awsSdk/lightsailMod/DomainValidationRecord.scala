@@ -18,25 +18,19 @@ trait DomainValidationRecord extends StObject {
 }
 object DomainValidationRecord {
   
-  @scala.inline
-  def apply(): DomainValidationRecord = {
+  inline def apply(): DomainValidationRecord = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DomainValidationRecord]
   }
   
-  @scala.inline
-  implicit class DomainValidationRecordMutableBuilder[Self <: DomainValidationRecord] (val x: Self) extends AnyVal {
+  extension [Self <: DomainValidationRecord](x: Self) {
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
+    inline def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
     
-    @scala.inline
-    def setResourceRecord(value: ResourceRecord): Self = StObject.set(x, "resourceRecord", value.asInstanceOf[js.Any])
+    inline def setResourceRecord(value: ResourceRecord): Self = StObject.set(x, "resourceRecord", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceRecordUndefined: Self = StObject.set(x, "resourceRecord", js.undefined)
+    inline def setResourceRecordUndefined: Self = StObject.set(x, "resourceRecord", js.undefined)
   }
 }

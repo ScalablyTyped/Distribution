@@ -19,19 +19,15 @@ trait CoreTextCompositionStartedEventArgs extends StObject {
 }
 object CoreTextCompositionStartedEventArgs {
   
-  @scala.inline
-  def apply(getDeferral: () => Deferral, isCanceled: Boolean): CoreTextCompositionStartedEventArgs = {
+  inline def apply(getDeferral: () => Deferral, isCanceled: Boolean): CoreTextCompositionStartedEventArgs = {
     val __obj = js.Dynamic.literal(getDeferral = js.Any.fromFunction0(getDeferral), isCanceled = isCanceled.asInstanceOf[js.Any])
     __obj.asInstanceOf[CoreTextCompositionStartedEventArgs]
   }
   
-  @scala.inline
-  implicit class CoreTextCompositionStartedEventArgsMutableBuilder[Self <: CoreTextCompositionStartedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: CoreTextCompositionStartedEventArgs](x: Self) {
     
-    @scala.inline
-    def setGetDeferral(value: () => Deferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
+    inline def setGetDeferral(value: () => Deferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsCanceled(value: Boolean): Self = StObject.set(x, "isCanceled", value.asInstanceOf[js.Any])
+    inline def setIsCanceled(value: Boolean): Self = StObject.set(x, "isCanceled", value.asInstanceOf[js.Any])
   }
 }

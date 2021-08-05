@@ -20,8 +20,7 @@ trait Danmaku extends StObject {
 }
 object Danmaku {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clear: () => Unit,
     draw: DPlayerDanmakuItem => Unit,
     hide: () => Unit,
@@ -33,25 +32,18 @@ object Danmaku {
     __obj.asInstanceOf[Danmaku]
   }
   
-  @scala.inline
-  implicit class DanmakuMutableBuilder[Self <: Danmaku] (val x: Self) extends AnyVal {
+  extension [Self <: Danmaku](x: Self) {
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDraw(value: DPlayerDanmakuItem => Unit): Self = StObject.set(x, "draw", js.Any.fromFunction1(value))
+    inline def setDraw(value: DPlayerDanmakuItem => Unit): Self = StObject.set(x, "draw", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOpacity(value: Double => Unit): Self = StObject.set(x, "opacity", js.Any.fromFunction1(value))
+    inline def setOpacity(value: Double => Unit): Self = StObject.set(x, "opacity", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSend(value: (DPlayerDanmakuItem, js.Function0[Unit]) => Unit): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
+    inline def setSend(value: (DPlayerDanmakuItem, js.Function0[Unit]) => Unit): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
   }
 }

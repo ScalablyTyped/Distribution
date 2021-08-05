@@ -33,8 +33,7 @@ trait GeometryMixin extends StObject {
 }
 object GeometryMixin {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dashPattern: js.Array[Double],
     fillStyleId: String | js.Symbol,
     fills: js.Array[Paint] | js.Symbol,
@@ -51,49 +50,34 @@ object GeometryMixin {
     __obj.asInstanceOf[GeometryMixin]
   }
   
-  @scala.inline
-  implicit class GeometryMixinMutableBuilder[Self <: GeometryMixin] (val x: Self) extends AnyVal {
+  extension [Self <: GeometryMixin](x: Self) {
     
-    @scala.inline
-    def setDashPattern(value: js.Array[Double]): Self = StObject.set(x, "dashPattern", value.asInstanceOf[js.Any])
+    inline def setDashPattern(value: js.Array[Double]): Self = StObject.set(x, "dashPattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashPatternVarargs(value: Double*): Self = StObject.set(x, "dashPattern", js.Array(value :_*))
+    inline def setDashPatternVarargs(value: Double*): Self = StObject.set(x, "dashPattern", js.Array(value :_*))
     
-    @scala.inline
-    def setFillStyleId(value: String | js.Symbol): Self = StObject.set(x, "fillStyleId", value.asInstanceOf[js.Any])
+    inline def setFillStyleId(value: String | js.Symbol): Self = StObject.set(x, "fillStyleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFills(value: js.Array[Paint] | js.Symbol): Self = StObject.set(x, "fills", value.asInstanceOf[js.Any])
+    inline def setFills(value: js.Array[Paint] | js.Symbol): Self = StObject.set(x, "fills", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillsVarargs(value: Paint*): Self = StObject.set(x, "fills", js.Array(value :_*))
+    inline def setFillsVarargs(value: Paint*): Self = StObject.set(x, "fills", js.Array(value :_*))
     
-    @scala.inline
-    def setOutlineStroke(value: () => VectorNode | Null): Self = StObject.set(x, "outlineStroke", js.Any.fromFunction0(value))
+    inline def setOutlineStroke(value: () => VectorNode | Null): Self = StObject.set(x, "outlineStroke", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStrokeAlign(value: CENTER | INSIDE | OUTSIDE): Self = StObject.set(x, "strokeAlign", value.asInstanceOf[js.Any])
+    inline def setStrokeAlign(value: CENTER | INSIDE | OUTSIDE): Self = StObject.set(x, "strokeAlign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeCap(value: StrokeCap | js.Symbol): Self = StObject.set(x, "strokeCap", value.asInstanceOf[js.Any])
+    inline def setStrokeCap(value: StrokeCap | js.Symbol): Self = StObject.set(x, "strokeCap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeJoin(value: StrokeJoin | js.Symbol): Self = StObject.set(x, "strokeJoin", value.asInstanceOf[js.Any])
+    inline def setStrokeJoin(value: StrokeJoin | js.Symbol): Self = StObject.set(x, "strokeJoin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeMiterLimit(value: Double): Self = StObject.set(x, "strokeMiterLimit", value.asInstanceOf[js.Any])
+    inline def setStrokeMiterLimit(value: Double): Self = StObject.set(x, "strokeMiterLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeStyleId(value: String): Self = StObject.set(x, "strokeStyleId", value.asInstanceOf[js.Any])
+    inline def setStrokeStyleId(value: String): Self = StObject.set(x, "strokeStyleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeWeight(value: Double): Self = StObject.set(x, "strokeWeight", value.asInstanceOf[js.Any])
+    inline def setStrokeWeight(value: Double): Self = StObject.set(x, "strokeWeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokes(value: js.Array[Paint]): Self = StObject.set(x, "strokes", value.asInstanceOf[js.Any])
+    inline def setStrokes(value: js.Array[Paint]): Self = StObject.set(x, "strokes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokesVarargs(value: Paint*): Self = StObject.set(x, "strokes", js.Array(value :_*))
+    inline def setStrokesVarargs(value: Paint*): Self = StObject.set(x, "strokes", js.Array(value :_*))
   }
 }

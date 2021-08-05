@@ -46,38 +46,29 @@ object blobMod {
       * @param len - length of the data
       * @returns - return the id of the written blob
       */
-    @scala.inline
-    def createFromBuffer(repo: Repository, buffer: Buffer, len: Double): js.Promise[Oid] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromBuffer")(repo.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Oid]]
+    inline def createFromBuffer(repo: Repository, buffer: Buffer, len: Double): js.Promise[Oid] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromBuffer")(repo.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Oid]]
     
     /**
       * @param repo - repository where the blob will be written. this repository can be bare or not
       * @param path - file from which the blob will be created
       */
-    @scala.inline
-    def createFromDisk(repo: Repository, path: String): js.Promise[Oid] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromDisk")(repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Oid]]
+    inline def createFromDisk(repo: Repository, path: String): js.Promise[Oid] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromDisk")(repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Oid]]
     
-    @scala.inline
-    def createFromStream(repo: Repository, hintPath: String): js.Promise[WriteStream] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromStream")(repo.asInstanceOf[js.Any], hintPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WriteStream]]
+    inline def createFromStream(repo: Repository, hintPath: String): js.Promise[WriteStream] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromStream")(repo.asInstanceOf[js.Any], hintPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WriteStream]]
     
     /**
       * @param repo - repository where the blob will be written. this repository cannot be bare
       * @param relativePath - file from which the blob will be created, relative to the repository's working dir
       * @returns - 0 or an error code
       */
-    @scala.inline
-    def createFromWorkdir(repo: Repository, relativePath: String): js.Promise[Oid] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromWorkdir")(repo.asInstanceOf[js.Any], relativePath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Oid]]
+    inline def createFromWorkdir(repo: Repository, relativePath: String): js.Promise[Oid] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromWorkdir")(repo.asInstanceOf[js.Any], relativePath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Oid]]
     
-    @scala.inline
-    def filteredContent(blob: Blob, as_path: String, check_for_binary_data: Double): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("filteredContent")(blob.asInstanceOf[js.Any], as_path.asInstanceOf[js.Any], check_for_binary_data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+    inline def filteredContent(blob: Blob, as_path: String, check_for_binary_data: Double): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("filteredContent")(blob.asInstanceOf[js.Any], as_path.asInstanceOf[js.Any], check_for_binary_data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
     
-    @scala.inline
-    def lookup(repo: Repository, id: String): js.Promise[Blob] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Blob]]
-    @scala.inline
-    def lookup(repo: Repository, id: Blob): js.Promise[Blob] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Blob]]
-    @scala.inline
-    def lookup(repo: Repository, id: Oid): js.Promise[Blob] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Blob]]
+    inline def lookup(repo: Repository, id: String): js.Promise[Blob] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Blob]]
+    inline def lookup(repo: Repository, id: Blob): js.Promise[Blob] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Blob]]
+    inline def lookup(repo: Repository, id: Oid): js.Promise[Blob] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Blob]]
     
-    @scala.inline
-    def lookupPrefix(repo: Repository, id: Oid, len: Double): js.Promise[Blob] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupPrefix")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Blob]]
+    inline def lookupPrefix(repo: Repository, id: Oid, len: Double): js.Promise[Blob] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupPrefix")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Blob]]
   }
 }

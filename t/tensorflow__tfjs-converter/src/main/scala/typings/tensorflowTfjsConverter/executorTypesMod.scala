@@ -19,8 +19,7 @@ object executorTypesMod {
   }
   object FunctionExecutor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       executeFunctionAsync: (js.Array[Tensor[Rank]], TensorArrayMap, TensorListMap) => js.Promise[js.Array[Tensor[Rank]]],
       weightMap: NamedTensorsMap
     ): FunctionExecutor = {
@@ -28,16 +27,13 @@ object executorTypesMod {
       __obj.asInstanceOf[FunctionExecutor]
     }
     
-    @scala.inline
-    implicit class FunctionExecutorMutableBuilder[Self <: FunctionExecutor] (val x: Self) extends AnyVal {
+    extension [Self <: FunctionExecutor](x: Self) {
       
-      @scala.inline
-      def setExecuteFunctionAsync(
+      inline def setExecuteFunctionAsync(
         value: (js.Array[Tensor[Rank]], TensorArrayMap, TensorListMap) => js.Promise[js.Array[Tensor[Rank]]]
       ): Self = StObject.set(x, "executeFunctionAsync", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setWeightMap(value: NamedTensorsMap): Self = StObject.set(x, "weightMap", value.asInstanceOf[js.Any])
+      inline def setWeightMap(value: NamedTensorsMap): Self = StObject.set(x, "weightMap", value.asInstanceOf[js.Any])
     }
   }
 }

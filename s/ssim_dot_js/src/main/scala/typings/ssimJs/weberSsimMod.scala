@@ -15,28 +15,21 @@ object weberSsimMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def partialSumMatrix1(pixels: ImageMatrix, f: js.Function3[/* v */ Double, /* x */ Double, /* y */ Double, Double]): Width = (^.asInstanceOf[js.Dynamic].applyDynamic("partialSumMatrix1")(pixels.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Width]
+  inline def partialSumMatrix1(pixels: ImageMatrix, f: js.Function3[/* v */ Double, /* x */ Double, /* y */ Double, Double]): Width = (^.asInstanceOf[js.Dynamic].applyDynamic("partialSumMatrix1")(pixels.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Width]
   
-  @scala.inline
-  def partialSumMatrix2(
+  inline def partialSumMatrix2(
     pixels1: ImageMatrix,
     pixels2: ImageMatrix,
     f: js.Function4[/* a */ Double, /* b */ Double, /* x */ Double, /* y */ Double, Double]
   ): Width = (^.asInstanceOf[js.Dynamic].applyDynamic("partialSumMatrix2")(pixels1.asInstanceOf[js.Any], pixels2.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Width]
   
-  @scala.inline
-  def weberSsim(pixels1: ImageMatrix, pixels2: ImageMatrix, options: Options): MSSIMMatrix = (^.asInstanceOf[js.Dynamic].applyDynamic("weberSsim")(pixels1.asInstanceOf[js.Any], pixels2.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MSSIMMatrix]
+  inline def weberSsim(pixels1: ImageMatrix, pixels2: ImageMatrix, options: Options): MSSIMMatrix = (^.asInstanceOf[js.Dynamic].applyDynamic("weberSsim")(pixels1.asInstanceOf[js.Any], pixels2.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MSSIMMatrix]
   
-  @scala.inline
-  def windowCovariance(pixels1: ImageMatrix, pixels2: ImageMatrix, sums1: js.Any, sums2: js.Any, windowSize: Double): DataHeight = (^.asInstanceOf[js.Dynamic].applyDynamic("windowCovariance")(pixels1.asInstanceOf[js.Any], pixels2.asInstanceOf[js.Any], sums1.asInstanceOf[js.Any], sums2.asInstanceOf[js.Any], windowSize.asInstanceOf[js.Any])).asInstanceOf[DataHeight]
+  inline def windowCovariance(pixels1: ImageMatrix, pixels2: ImageMatrix, sums1: js.Any, sums2: js.Any, windowSize: Double): DataHeight = (^.asInstanceOf[js.Dynamic].applyDynamic("windowCovariance")(pixels1.asInstanceOf[js.Any], pixels2.asInstanceOf[js.Any], sums1.asInstanceOf[js.Any], sums2.asInstanceOf[js.Any], windowSize.asInstanceOf[js.Any])).asInstanceOf[DataHeight]
   
-  @scala.inline
-  def windowMatrix(sumMatrix: js.Any, windowSize: Double, divisor: Double): DataHeight = (^.asInstanceOf[js.Dynamic].applyDynamic("windowMatrix")(sumMatrix.asInstanceOf[js.Any], windowSize.asInstanceOf[js.Any], divisor.asInstanceOf[js.Any])).asInstanceOf[DataHeight]
+  inline def windowMatrix(sumMatrix: js.Any, windowSize: Double, divisor: Double): DataHeight = (^.asInstanceOf[js.Dynamic].applyDynamic("windowMatrix")(sumMatrix.asInstanceOf[js.Any], windowSize.asInstanceOf[js.Any], divisor.asInstanceOf[js.Any])).asInstanceOf[DataHeight]
   
-  @scala.inline
-  def windowSums(pixels: ImageMatrix, windowSize: Double): DataHeight = (^.asInstanceOf[js.Dynamic].applyDynamic("windowSums")(pixels.asInstanceOf[js.Any], windowSize.asInstanceOf[js.Any])).asInstanceOf[DataHeight]
+  inline def windowSums(pixels: ImageMatrix, windowSize: Double): DataHeight = (^.asInstanceOf[js.Dynamic].applyDynamic("windowSums")(pixels.asInstanceOf[js.Any], windowSize.asInstanceOf[js.Any])).asInstanceOf[DataHeight]
   
-  @scala.inline
-  def windowVariance(pixels: ImageMatrix, sums: js.Any, windowSize: Double): DataHeight = (^.asInstanceOf[js.Dynamic].applyDynamic("windowVariance")(pixels.asInstanceOf[js.Any], sums.asInstanceOf[js.Any], windowSize.asInstanceOf[js.Any])).asInstanceOf[DataHeight]
+  inline def windowVariance(pixels: ImageMatrix, sums: js.Any, windowSize: Double): DataHeight = (^.asInstanceOf[js.Dynamic].applyDynamic("windowVariance")(pixels.asInstanceOf[js.Any], sums.asInstanceOf[js.Any], windowSize.asInstanceOf[js.Any])).asInstanceOf[DataHeight]
 }

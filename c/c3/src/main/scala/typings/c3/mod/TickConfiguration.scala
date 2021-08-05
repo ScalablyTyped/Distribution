@@ -32,40 +32,29 @@ trait TickConfiguration extends StObject {
 }
 object TickConfiguration {
   
-  @scala.inline
-  def apply(): TickConfiguration = {
+  inline def apply(): TickConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TickConfiguration]
   }
   
-  @scala.inline
-  implicit class TickConfigurationMutableBuilder[Self <: TickConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: TickConfiguration](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setOuter(value: Boolean): Self = StObject.set(x, "outer", value.asInstanceOf[js.Any])
+    inline def setOuter(value: Boolean): Self = StObject.set(x, "outer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOuterUndefined: Self = StObject.set(x, "outer", js.undefined)
+    inline def setOuterUndefined: Self = StObject.set(x, "outer", js.undefined)
     
-    @scala.inline
-    def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+    inline def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
+    inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
     
-    @scala.inline
-    def setValues(value: js.Array[Double | String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[Double | String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: (Double | String)*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: (Double | String)*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

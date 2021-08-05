@@ -12,25 +12,19 @@ trait HygrometerOption extends StObject {
 }
 object HygrometerOption {
   
-  @scala.inline
-  def apply(): HygrometerOption = {
+  inline def apply(): HygrometerOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HygrometerOption]
   }
   
-  @scala.inline
-  implicit class HygrometerOptionMutableBuilder[Self <: HygrometerOption] (val x: Self) extends AnyVal {
+  extension [Self <: HygrometerOption](x: Self) {
     
-    @scala.inline
-    def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+    inline def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
+    inline def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
     
-    @scala.inline
-    def setFreq(value: Double): Self = StObject.set(x, "freq", value.asInstanceOf[js.Any])
+    inline def setFreq(value: Double): Self = StObject.set(x, "freq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFreqUndefined: Self = StObject.set(x, "freq", js.undefined)
+    inline def setFreqUndefined: Self = StObject.set(x, "freq", js.undefined)
   }
 }

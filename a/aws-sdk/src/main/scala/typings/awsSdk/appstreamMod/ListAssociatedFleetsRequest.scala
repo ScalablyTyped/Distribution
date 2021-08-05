@@ -18,22 +18,17 @@ trait ListAssociatedFleetsRequest extends StObject {
 }
 object ListAssociatedFleetsRequest {
   
-  @scala.inline
-  def apply(StackName: String): ListAssociatedFleetsRequest = {
+  inline def apply(StackName: String): ListAssociatedFleetsRequest = {
     val __obj = js.Dynamic.literal(StackName = StackName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAssociatedFleetsRequest]
   }
   
-  @scala.inline
-  implicit class ListAssociatedFleetsRequestMutableBuilder[Self <: ListAssociatedFleetsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListAssociatedFleetsRequest](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setStackName(value: String): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
+    inline def setStackName(value: String): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
   }
 }

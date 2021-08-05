@@ -10,16 +10,13 @@ trait ShouldScale extends StObject {
 }
 object ShouldScale {
   
-  @scala.inline
-  def apply(shouldScale: Boolean): ShouldScale = {
+  inline def apply(shouldScale: Boolean): ShouldScale = {
     val __obj = js.Dynamic.literal(shouldScale = shouldScale.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShouldScale]
   }
   
-  @scala.inline
-  implicit class ShouldScaleMutableBuilder[Self <: ShouldScale] (val x: Self) extends AnyVal {
+  extension [Self <: ShouldScale](x: Self) {
     
-    @scala.inline
-    def setShouldScale(value: Boolean): Self = StObject.set(x, "shouldScale", value.asInstanceOf[js.Any])
+    inline def setShouldScale(value: Boolean): Self = StObject.set(x, "shouldScale", value.asInstanceOf[js.Any])
   }
 }

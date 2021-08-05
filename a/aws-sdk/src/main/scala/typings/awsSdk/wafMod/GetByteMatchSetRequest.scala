@@ -13,16 +13,13 @@ trait GetByteMatchSetRequest extends StObject {
 }
 object GetByteMatchSetRequest {
   
-  @scala.inline
-  def apply(ByteMatchSetId: ResourceId): GetByteMatchSetRequest = {
+  inline def apply(ByteMatchSetId: ResourceId): GetByteMatchSetRequest = {
     val __obj = js.Dynamic.literal(ByteMatchSetId = ByteMatchSetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetByteMatchSetRequest]
   }
   
-  @scala.inline
-  implicit class GetByteMatchSetRequestMutableBuilder[Self <: GetByteMatchSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetByteMatchSetRequest](x: Self) {
     
-    @scala.inline
-    def setByteMatchSetId(value: ResourceId): Self = StObject.set(x, "ByteMatchSetId", value.asInstanceOf[js.Any])
+    inline def setByteMatchSetId(value: ResourceId): Self = StObject.set(x, "ByteMatchSetId", value.asInstanceOf[js.Any])
   }
 }

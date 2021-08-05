@@ -24,8 +24,7 @@ trait BindingTypeEnum extends StObject {
 }
 object BindingTypeEnum {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ConstantValue: BindingType,
     Constructor: BindingType,
     DynamicValue: BindingType,
@@ -39,31 +38,22 @@ object BindingTypeEnum {
     __obj.asInstanceOf[BindingTypeEnum]
   }
   
-  @scala.inline
-  implicit class BindingTypeEnumMutableBuilder[Self <: BindingTypeEnum] (val x: Self) extends AnyVal {
+  extension [Self <: BindingTypeEnum](x: Self) {
     
-    @scala.inline
-    def setConstantValue(value: BindingType): Self = StObject.set(x, "ConstantValue", value.asInstanceOf[js.Any])
+    inline def setConstantValue(value: BindingType): Self = StObject.set(x, "ConstantValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstructor(value: BindingType): Self = StObject.set(x, "Constructor", value.asInstanceOf[js.Any])
+    inline def setConstructor(value: BindingType): Self = StObject.set(x, "Constructor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicValue(value: BindingType): Self = StObject.set(x, "DynamicValue", value.asInstanceOf[js.Any])
+    inline def setDynamicValue(value: BindingType): Self = StObject.set(x, "DynamicValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFactory(value: BindingType): Self = StObject.set(x, "Factory", value.asInstanceOf[js.Any])
+    inline def setFactory(value: BindingType): Self = StObject.set(x, "Factory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunction(value: BindingType): Self = StObject.set(x, "Function", value.asInstanceOf[js.Any])
+    inline def setFunction(value: BindingType): Self = StObject.set(x, "Function", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstance(value: BindingType): Self = StObject.set(x, "Instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: BindingType): Self = StObject.set(x, "Instance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalid(value: BindingType): Self = StObject.set(x, "Invalid", value.asInstanceOf[js.Any])
+    inline def setInvalid(value: BindingType): Self = StObject.set(x, "Invalid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvider(value: BindingType): Self = StObject.set(x, "Provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: BindingType): Self = StObject.set(x, "Provider", value.asInstanceOf[js.Any])
   }
 }

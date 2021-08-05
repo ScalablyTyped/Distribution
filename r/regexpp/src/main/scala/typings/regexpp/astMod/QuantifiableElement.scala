@@ -21,15 +21,13 @@ trait QuantifiableElement
      with Element
 object QuantifiableElement {
   
-  @scala.inline
-  def AnyCharacterSet(end: Double, parent: Alternative | Quantifier, raw: String, start: Double): typings.regexpp.astMod.AnyCharacterSet = {
+  inline def AnyCharacterSet(end: Double, parent: Alternative | Quantifier, raw: String, start: Double): typings.regexpp.astMod.AnyCharacterSet = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], kind = "any", parent = parent.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("CharacterSet")
     __obj.asInstanceOf[typings.regexpp.astMod.AnyCharacterSet]
   }
   
-  @scala.inline
-  def Backreference(
+  inline def Backreference(
     end: Double,
     parent: Alternative | Quantifier,
     raw: String,
@@ -42,8 +40,7 @@ object QuantifiableElement {
     __obj.asInstanceOf[typings.regexpp.astMod.Backreference]
   }
   
-  @scala.inline
-  def CapturingGroup(
+  inline def CapturingGroup(
     alternatives: js.Array[Alternative],
     end: Double,
     parent: Alternative | Quantifier,
@@ -56,8 +53,7 @@ object QuantifiableElement {
     __obj.asInstanceOf[typings.regexpp.astMod.CapturingGroup]
   }
   
-  @scala.inline
-  def Character(
+  inline def Character(
     end: Double,
     parent: Alternative | Quantifier | CharacterClass | CharacterClassRange,
     raw: String,
@@ -69,8 +65,7 @@ object QuantifiableElement {
     __obj.asInstanceOf[typings.regexpp.astMod.Character]
   }
   
-  @scala.inline
-  def CharacterClass(
+  inline def CharacterClass(
     elements: js.Array[CharacterClassElement],
     end: Double,
     negate: Boolean,
@@ -83,8 +78,7 @@ object QuantifiableElement {
     __obj.asInstanceOf[typings.regexpp.astMod.CharacterClass]
   }
   
-  @scala.inline
-  def EscapeCharacterSet(
+  inline def EscapeCharacterSet(
     end: Double,
     kind: digit | space | word,
     negate: Boolean,
@@ -97,8 +91,7 @@ object QuantifiableElement {
     __obj.asInstanceOf[typings.regexpp.astMod.EscapeCharacterSet]
   }
   
-  @scala.inline
-  def Group(
+  inline def Group(
     alternatives: js.Array[Alternative],
     end: Double,
     parent: Alternative | Quantifier,
@@ -110,8 +103,7 @@ object QuantifiableElement {
     __obj.asInstanceOf[typings.regexpp.astMod.Group]
   }
   
-  @scala.inline
-  def LookaheadAssertion(
+  inline def LookaheadAssertion(
     alternatives: js.Array[Alternative],
     end: Double,
     negate: Boolean,
@@ -124,8 +116,7 @@ object QuantifiableElement {
     __obj.asInstanceOf[typings.regexpp.astMod.LookaheadAssertion]
   }
   
-  @scala.inline
-  def UnicodePropertyCharacterSet(
+  inline def UnicodePropertyCharacterSet(
     end: Double,
     key: String,
     negate: Boolean,

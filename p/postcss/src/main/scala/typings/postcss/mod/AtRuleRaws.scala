@@ -12,19 +12,15 @@ trait AtRuleRaws
 }
 object AtRuleRaws {
   
-  @scala.inline
-  def apply(): AtRuleRaws = {
+  inline def apply(): AtRuleRaws = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AtRuleRaws]
   }
   
-  @scala.inline
-  implicit class AtRuleRawsMutableBuilder[Self <: AtRuleRaws] (val x: Self) extends AnyVal {
+  extension [Self <: AtRuleRaws](x: Self) {
     
-    @scala.inline
-    def setParams(value: String): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: String): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
   }
 }

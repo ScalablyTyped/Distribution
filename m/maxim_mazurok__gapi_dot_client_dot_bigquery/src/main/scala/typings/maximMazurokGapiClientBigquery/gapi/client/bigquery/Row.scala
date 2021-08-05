@@ -14,28 +14,21 @@ trait Row extends StObject {
 }
 object Row {
   
-  @scala.inline
-  def apply(): Row = {
+  inline def apply(): Row = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Row]
   }
   
-  @scala.inline
-  implicit class RowMutableBuilder[Self <: Row] (val x: Self) extends AnyVal {
+  extension [Self <: Row](x: Self) {
     
-    @scala.inline
-    def setActualLabel(value: String): Self = StObject.set(x, "actualLabel", value.asInstanceOf[js.Any])
+    inline def setActualLabel(value: String): Self = StObject.set(x, "actualLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActualLabelUndefined: Self = StObject.set(x, "actualLabel", js.undefined)
+    inline def setActualLabelUndefined: Self = StObject.set(x, "actualLabel", js.undefined)
     
-    @scala.inline
-    def setEntries(value: js.Array[Entry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: js.Array[Entry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
+    inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
-    @scala.inline
-    def setEntriesVarargs(value: Entry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: Entry*): Self = StObject.set(x, "entries", js.Array(value :_*))
   }
 }

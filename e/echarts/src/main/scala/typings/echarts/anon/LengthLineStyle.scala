@@ -34,31 +34,23 @@ trait LengthLineStyle extends StObject {
 }
 object LengthLineStyle {
   
-  @scala.inline
-  def apply(): LengthLineStyle = {
+  inline def apply(): LengthLineStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LengthLineStyle]
   }
   
-  @scala.inline
-  implicit class LengthLineStyleMutableBuilder[Self <: LengthLineStyle] (val x: Self) extends AnyVal {
+  extension [Self <: LengthLineStyle](x: Self) {
     
-    @scala.inline
-    def setLength(value: Double | String): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double | String): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
-    @scala.inline
-    def setLineStyle(value: ShadowBlur): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
+    inline def setLineStyle(value: ShadowBlur): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
+    inline def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
     
-    @scala.inline
-    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
   }
 }

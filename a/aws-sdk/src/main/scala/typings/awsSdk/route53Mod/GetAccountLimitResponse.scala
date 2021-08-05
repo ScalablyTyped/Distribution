@@ -18,19 +18,15 @@ trait GetAccountLimitResponse extends StObject {
 }
 object GetAccountLimitResponse {
   
-  @scala.inline
-  def apply(Count: UsageCount, Limit: AccountLimit): GetAccountLimitResponse = {
+  inline def apply(Count: UsageCount, Limit: AccountLimit): GetAccountLimitResponse = {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], Limit = Limit.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAccountLimitResponse]
   }
   
-  @scala.inline
-  implicit class GetAccountLimitResponseMutableBuilder[Self <: GetAccountLimitResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetAccountLimitResponse](x: Self) {
     
-    @scala.inline
-    def setCount(value: UsageCount): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: UsageCount): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimit(value: AccountLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: AccountLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
   }
 }

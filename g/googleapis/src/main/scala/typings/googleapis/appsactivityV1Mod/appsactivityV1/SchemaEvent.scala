@@ -61,73 +61,51 @@ trait SchemaEvent extends StObject {
 }
 object SchemaEvent {
   
-  @scala.inline
-  def apply(): SchemaEvent = {
+  inline def apply(): SchemaEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEvent]
   }
   
-  @scala.inline
-  implicit class SchemaEventMutableBuilder[Self <: SchemaEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaEvent](x: Self) {
     
-    @scala.inline
-    def setAdditionalEventTypes(value: js.Array[String]): Self = StObject.set(x, "additionalEventTypes", value.asInstanceOf[js.Any])
+    inline def setAdditionalEventTypes(value: js.Array[String]): Self = StObject.set(x, "additionalEventTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalEventTypesUndefined: Self = StObject.set(x, "additionalEventTypes", js.undefined)
+    inline def setAdditionalEventTypesUndefined: Self = StObject.set(x, "additionalEventTypes", js.undefined)
     
-    @scala.inline
-    def setAdditionalEventTypesVarargs(value: String*): Self = StObject.set(x, "additionalEventTypes", js.Array(value :_*))
+    inline def setAdditionalEventTypesVarargs(value: String*): Self = StObject.set(x, "additionalEventTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setEventTimeMillis(value: String): Self = StObject.set(x, "eventTimeMillis", value.asInstanceOf[js.Any])
+    inline def setEventTimeMillis(value: String): Self = StObject.set(x, "eventTimeMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTimeMillisUndefined: Self = StObject.set(x, "eventTimeMillis", js.undefined)
+    inline def setEventTimeMillisUndefined: Self = StObject.set(x, "eventTimeMillis", js.undefined)
     
-    @scala.inline
-    def setFromUserDeletion(value: Boolean): Self = StObject.set(x, "fromUserDeletion", value.asInstanceOf[js.Any])
+    inline def setFromUserDeletion(value: Boolean): Self = StObject.set(x, "fromUserDeletion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromUserDeletionUndefined: Self = StObject.set(x, "fromUserDeletion", js.undefined)
+    inline def setFromUserDeletionUndefined: Self = StObject.set(x, "fromUserDeletion", js.undefined)
     
-    @scala.inline
-    def setMove(value: SchemaMove): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
+    inline def setMove(value: SchemaMove): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveUndefined: Self = StObject.set(x, "move", js.undefined)
+    inline def setMoveUndefined: Self = StObject.set(x, "move", js.undefined)
     
-    @scala.inline
-    def setPermissionChanges(value: js.Array[SchemaPermissionChange]): Self = StObject.set(x, "permissionChanges", value.asInstanceOf[js.Any])
+    inline def setPermissionChanges(value: js.Array[SchemaPermissionChange]): Self = StObject.set(x, "permissionChanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionChangesUndefined: Self = StObject.set(x, "permissionChanges", js.undefined)
+    inline def setPermissionChangesUndefined: Self = StObject.set(x, "permissionChanges", js.undefined)
     
-    @scala.inline
-    def setPermissionChangesVarargs(value: SchemaPermissionChange*): Self = StObject.set(x, "permissionChanges", js.Array(value :_*))
+    inline def setPermissionChangesVarargs(value: SchemaPermissionChange*): Self = StObject.set(x, "permissionChanges", js.Array(value :_*))
     
-    @scala.inline
-    def setPrimaryEventType(value: String): Self = StObject.set(x, "primaryEventType", value.asInstanceOf[js.Any])
+    inline def setPrimaryEventType(value: String): Self = StObject.set(x, "primaryEventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryEventTypeUndefined: Self = StObject.set(x, "primaryEventType", js.undefined)
+    inline def setPrimaryEventTypeUndefined: Self = StObject.set(x, "primaryEventType", js.undefined)
     
-    @scala.inline
-    def setRename(value: SchemaRename): Self = StObject.set(x, "rename", value.asInstanceOf[js.Any])
+    inline def setRename(value: SchemaRename): Self = StObject.set(x, "rename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenameUndefined: Self = StObject.set(x, "rename", js.undefined)
+    inline def setRenameUndefined: Self = StObject.set(x, "rename", js.undefined)
     
-    @scala.inline
-    def setTarget(value: SchemaTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: SchemaTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    @scala.inline
-    def setUser(value: SchemaUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: SchemaUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

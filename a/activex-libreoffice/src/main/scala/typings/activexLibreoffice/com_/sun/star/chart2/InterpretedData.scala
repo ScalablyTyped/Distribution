@@ -15,19 +15,15 @@ trait InterpretedData extends StObject {
 }
 object InterpretedData {
   
-  @scala.inline
-  def apply(Categories: XLabeledDataSequence, Series: SafeArray[SafeArray[XDataSeries]]): InterpretedData = {
+  inline def apply(Categories: XLabeledDataSequence, Series: SafeArray[SafeArray[XDataSeries]]): InterpretedData = {
     val __obj = js.Dynamic.literal(Categories = Categories.asInstanceOf[js.Any], Series = Series.asInstanceOf[js.Any])
     __obj.asInstanceOf[InterpretedData]
   }
   
-  @scala.inline
-  implicit class InterpretedDataMutableBuilder[Self <: InterpretedData] (val x: Self) extends AnyVal {
+  extension [Self <: InterpretedData](x: Self) {
     
-    @scala.inline
-    def setCategories(value: XLabeledDataSequence): Self = StObject.set(x, "Categories", value.asInstanceOf[js.Any])
+    inline def setCategories(value: XLabeledDataSequence): Self = StObject.set(x, "Categories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeries(value: SafeArray[SafeArray[XDataSeries]]): Self = StObject.set(x, "Series", value.asInstanceOf[js.Any])
+    inline def setSeries(value: SafeArray[SafeArray[XDataSeries]]): Self = StObject.set(x, "Series", value.asInstanceOf[js.Any])
   }
 }

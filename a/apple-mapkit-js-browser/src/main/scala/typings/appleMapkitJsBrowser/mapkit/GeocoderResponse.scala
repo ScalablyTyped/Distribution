@@ -13,19 +13,15 @@ trait GeocoderResponse extends StObject {
 }
 object GeocoderResponse {
   
-  @scala.inline
-  def apply(results: js.Array[Place]): GeocoderResponse = {
+  inline def apply(results: js.Array[Place]): GeocoderResponse = {
     val __obj = js.Dynamic.literal(results = results.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeocoderResponse]
   }
   
-  @scala.inline
-  implicit class GeocoderResponseMutableBuilder[Self <: GeocoderResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GeocoderResponse](x: Self) {
     
-    @scala.inline
-    def setResults(value: js.Array[Place]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[Place]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsVarargs(value: Place*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: Place*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

@@ -20,17 +20,14 @@ object typesCreateAliasOutputMod {
   }
   object CreateAliasOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): CreateAliasOutput = {
+    inline def apply($metadata: ResponseMetadata): CreateAliasOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateAliasOutput]
     }
     
-    @scala.inline
-    implicit class CreateAliasOutputMutableBuilder[Self <: CreateAliasOutput] (val x: Self) extends AnyVal {
+    extension [Self <: CreateAliasOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -20,29 +20,23 @@ trait WeakValidationMapFilesTyp extends StObject {
 }
 object WeakValidationMapFilesTyp {
   
-  @scala.inline
-  def apply(): WeakValidationMapFilesTyp = {
+  inline def apply(): WeakValidationMapFilesTyp = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WeakValidationMapFilesTyp]
   }
   
-  @scala.inline
-  implicit class WeakValidationMapFilesTypMutableBuilder[Self <: WeakValidationMapFilesTyp] (val x: Self) extends AnyVal {
+  extension [Self <: WeakValidationMapFilesTyp](x: Self) {
     
-    @scala.inline
-    def setKnob(value: Validator[js.UndefOr[FileTypeKnob | Null]]): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
+    inline def setKnob(value: Validator[js.UndefOr[FileTypeKnob | Null]]): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKnobUndefined: Self = StObject.set(x, "knob", js.undefined)
+    inline def setKnobUndefined: Self = StObject.set(x, "knob", js.undefined)
     
-    @scala.inline
-    def setOnChange(
+    inline def setOnChange(
       value: Validator[
           js.UndefOr[(js.Function1[/* value */ DateTypeKnobValue, DateTypeKnobValue]) | Null]
         ]
     ): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+    inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
   }
 }

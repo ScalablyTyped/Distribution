@@ -22,8 +22,7 @@ trait XUpdatable2
 }
 object XUpdatable2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -35,13 +34,10 @@ object XUpdatable2 {
     __obj.asInstanceOf[XUpdatable2]
   }
   
-  @scala.inline
-  implicit class XUpdatable2MutableBuilder[Self <: XUpdatable2] (val x: Self) extends AnyVal {
+  extension [Self <: XUpdatable2](x: Self) {
     
-    @scala.inline
-    def setUpdateHard(value: () => Unit): Self = StObject.set(x, "updateHard", js.Any.fromFunction0(value))
+    inline def setUpdateHard(value: () => Unit): Self = StObject.set(x, "updateHard", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdateSoft(value: () => Unit): Self = StObject.set(x, "updateSoft", js.Any.fromFunction0(value))
+    inline def setUpdateSoft(value: () => Unit): Self = StObject.set(x, "updateSoft", js.Any.fromFunction0(value))
   }
 }

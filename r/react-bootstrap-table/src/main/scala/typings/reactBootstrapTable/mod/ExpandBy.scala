@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExpandBy extends StObject
 object ExpandBy {
   
-  @scala.inline
-  def column: typings.reactBootstrapTable.reactBootstrapTableStrings.column = "column".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.column]
+  inline def column: typings.reactBootstrapTable.reactBootstrapTableStrings.column = "column".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.column]
   
-  @scala.inline
-  def row: typings.reactBootstrapTable.reactBootstrapTableStrings.row = "row".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.row]
+  inline def row: typings.reactBootstrapTable.reactBootstrapTableStrings.row = "row".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.row]
 }

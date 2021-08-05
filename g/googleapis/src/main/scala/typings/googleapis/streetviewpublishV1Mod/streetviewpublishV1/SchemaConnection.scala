@@ -17,19 +17,15 @@ trait SchemaConnection extends StObject {
 }
 object SchemaConnection {
   
-  @scala.inline
-  def apply(): SchemaConnection = {
+  inline def apply(): SchemaConnection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaConnection]
   }
   
-  @scala.inline
-  implicit class SchemaConnectionMutableBuilder[Self <: SchemaConnection] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaConnection](x: Self) {
     
-    @scala.inline
-    def setTarget(value: SchemaPhotoId): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: SchemaPhotoId): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

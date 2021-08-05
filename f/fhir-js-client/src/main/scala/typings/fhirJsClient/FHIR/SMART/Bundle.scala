@@ -16,16 +16,13 @@ trait Bundle extends StObject {
 }
 object Bundle {
   
-  @scala.inline
-  def apply(bundle: Resource): Bundle = {
+  inline def apply(bundle: Resource): Bundle = {
     val __obj = js.Dynamic.literal(bundle = bundle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bundle]
   }
   
-  @scala.inline
-  implicit class BundleMutableBuilder[Self <: Bundle] (val x: Self) extends AnyVal {
+  extension [Self <: Bundle](x: Self) {
     
-    @scala.inline
-    def setBundle(value: Resource): Self = StObject.set(x, "bundle", value.asInstanceOf[js.Any])
+    inline def setBundle(value: Resource): Self = StObject.set(x, "bundle", value.asInstanceOf[js.Any])
   }
 }

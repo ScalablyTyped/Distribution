@@ -38,8 +38,7 @@ trait AccessibleTreeListBoxEntry
      with XAccessibleText
 object AccessibleTreeListBoxEntry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleActionCount: Double,
     AccessibleChildCount: Double,
     AccessibleDescription: String,

@@ -24,29 +24,22 @@ trait TrustTokenParams extends StObject {
 }
 object TrustTokenParams {
   
-  @scala.inline
-  def apply(refreshPolicy: UseCached | Refresh, `type`: TrustTokenOperationType): TrustTokenParams = {
+  inline def apply(refreshPolicy: UseCached | Refresh, `type`: TrustTokenOperationType): TrustTokenParams = {
     val __obj = js.Dynamic.literal(refreshPolicy = refreshPolicy.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrustTokenParams]
   }
   
-  @scala.inline
-  implicit class TrustTokenParamsMutableBuilder[Self <: TrustTokenParams] (val x: Self) extends AnyVal {
+  extension [Self <: TrustTokenParams](x: Self) {
     
-    @scala.inline
-    def setIssuers(value: js.Array[String]): Self = StObject.set(x, "issuers", value.asInstanceOf[js.Any])
+    inline def setIssuers(value: js.Array[String]): Self = StObject.set(x, "issuers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuersUndefined: Self = StObject.set(x, "issuers", js.undefined)
+    inline def setIssuersUndefined: Self = StObject.set(x, "issuers", js.undefined)
     
-    @scala.inline
-    def setIssuersVarargs(value: String*): Self = StObject.set(x, "issuers", js.Array(value :_*))
+    inline def setIssuersVarargs(value: String*): Self = StObject.set(x, "issuers", js.Array(value :_*))
     
-    @scala.inline
-    def setRefreshPolicy(value: UseCached | Refresh): Self = StObject.set(x, "refreshPolicy", value.asInstanceOf[js.Any])
+    inline def setRefreshPolicy(value: UseCached | Refresh): Self = StObject.set(x, "refreshPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: TrustTokenOperationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TrustTokenOperationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

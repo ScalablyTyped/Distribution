@@ -14,19 +14,15 @@ trait UniqueItemsParams
 }
 object UniqueItemsParams {
   
-  @scala.inline
-  def apply(i: Double, j: Double): UniqueItemsParams = {
+  inline def apply(i: Double, j: Double): UniqueItemsParams = {
     val __obj = js.Dynamic.literal(i = i.asInstanceOf[js.Any], j = j.asInstanceOf[js.Any])
     __obj.asInstanceOf[UniqueItemsParams]
   }
   
-  @scala.inline
-  implicit class UniqueItemsParamsMutableBuilder[Self <: UniqueItemsParams] (val x: Self) extends AnyVal {
+  extension [Self <: UniqueItemsParams](x: Self) {
     
-    @scala.inline
-    def setI(value: Double): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
+    inline def setI(value: Double): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJ(value: Double): Self = StObject.set(x, "j", value.asInstanceOf[js.Any])
+    inline def setJ(value: Double): Self = StObject.set(x, "j", value.asInstanceOf[js.Any])
   }
 }

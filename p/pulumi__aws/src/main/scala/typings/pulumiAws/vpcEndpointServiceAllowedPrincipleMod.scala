@@ -50,14 +50,10 @@ object vpcEndpointServiceAllowedPrincipleMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): VpcEndpointServiceAllowedPrinciple = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VpcEndpointServiceAllowedPrinciple]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VpcEndpointServiceAllowedPrinciple = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcEndpointServiceAllowedPrinciple]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: VpcEndpointServiceAllowedPrincipleState): VpcEndpointServiceAllowedPrinciple = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VpcEndpointServiceAllowedPrinciple]
-    @scala.inline
-    def get(
+    inline def get(name: String, id: Input[ID]): VpcEndpointServiceAllowedPrinciple = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VpcEndpointServiceAllowedPrinciple]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VpcEndpointServiceAllowedPrinciple = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcEndpointServiceAllowedPrinciple]
+    inline def get(name: String, id: Input[ID], state: VpcEndpointServiceAllowedPrincipleState): VpcEndpointServiceAllowedPrinciple = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VpcEndpointServiceAllowedPrinciple]
+    inline def get(
       name: String,
       id: Input[ID],
       state: VpcEndpointServiceAllowedPrincipleState,
@@ -68,8 +64,7 @@ object vpcEndpointServiceAllowedPrincipleMod {
       * Returns true if the given object is an instance of VpcEndpointServiceAllowedPrinciple.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcEndpointServiceAllowedPrinciple.VpcEndpointServiceAllowedPrinciple */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/vpcEndpointServiceAllowedPrinciple.VpcEndpointServiceAllowedPrinciple */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcEndpointServiceAllowedPrinciple.VpcEndpointServiceAllowedPrinciple */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/vpcEndpointServiceAllowedPrinciple.VpcEndpointServiceAllowedPrinciple */ Boolean]
   }
   
   trait VpcEndpointServiceAllowedPrincipleArgs extends StObject {
@@ -86,20 +81,16 @@ object vpcEndpointServiceAllowedPrincipleMod {
   }
   object VpcEndpointServiceAllowedPrincipleArgs {
     
-    @scala.inline
-    def apply(principalArn: Input[String], vpcEndpointServiceId: Input[String]): VpcEndpointServiceAllowedPrincipleArgs = {
+    inline def apply(principalArn: Input[String], vpcEndpointServiceId: Input[String]): VpcEndpointServiceAllowedPrincipleArgs = {
       val __obj = js.Dynamic.literal(principalArn = principalArn.asInstanceOf[js.Any], vpcEndpointServiceId = vpcEndpointServiceId.asInstanceOf[js.Any])
       __obj.asInstanceOf[VpcEndpointServiceAllowedPrincipleArgs]
     }
     
-    @scala.inline
-    implicit class VpcEndpointServiceAllowedPrincipleArgsMutableBuilder[Self <: VpcEndpointServiceAllowedPrincipleArgs] (val x: Self) extends AnyVal {
+    extension [Self <: VpcEndpointServiceAllowedPrincipleArgs](x: Self) {
       
-      @scala.inline
-      def setPrincipalArn(value: Input[String]): Self = StObject.set(x, "principalArn", value.asInstanceOf[js.Any])
+      inline def setPrincipalArn(value: Input[String]): Self = StObject.set(x, "principalArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcEndpointServiceId(value: Input[String]): Self = StObject.set(x, "vpcEndpointServiceId", value.asInstanceOf[js.Any])
+      inline def setVpcEndpointServiceId(value: Input[String]): Self = StObject.set(x, "vpcEndpointServiceId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -117,26 +108,20 @@ object vpcEndpointServiceAllowedPrincipleMod {
   }
   object VpcEndpointServiceAllowedPrincipleState {
     
-    @scala.inline
-    def apply(): VpcEndpointServiceAllowedPrincipleState = {
+    inline def apply(): VpcEndpointServiceAllowedPrincipleState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VpcEndpointServiceAllowedPrincipleState]
     }
     
-    @scala.inline
-    implicit class VpcEndpointServiceAllowedPrincipleStateMutableBuilder[Self <: VpcEndpointServiceAllowedPrincipleState] (val x: Self) extends AnyVal {
+    extension [Self <: VpcEndpointServiceAllowedPrincipleState](x: Self) {
       
-      @scala.inline
-      def setPrincipalArn(value: Input[String]): Self = StObject.set(x, "principalArn", value.asInstanceOf[js.Any])
+      inline def setPrincipalArn(value: Input[String]): Self = StObject.set(x, "principalArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrincipalArnUndefined: Self = StObject.set(x, "principalArn", js.undefined)
+      inline def setPrincipalArnUndefined: Self = StObject.set(x, "principalArn", js.undefined)
       
-      @scala.inline
-      def setVpcEndpointServiceId(value: Input[String]): Self = StObject.set(x, "vpcEndpointServiceId", value.asInstanceOf[js.Any])
+      inline def setVpcEndpointServiceId(value: Input[String]): Self = StObject.set(x, "vpcEndpointServiceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcEndpointServiceIdUndefined: Self = StObject.set(x, "vpcEndpointServiceId", js.undefined)
+      inline def setVpcEndpointServiceIdUndefined: Self = StObject.set(x, "vpcEndpointServiceId", js.undefined)
     }
   }
 }

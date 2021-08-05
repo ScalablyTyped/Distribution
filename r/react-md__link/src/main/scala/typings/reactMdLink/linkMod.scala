@@ -67,38 +67,28 @@ object linkMod {
   }
   object LinkProps {
     
-    @scala.inline
-    def apply(): LinkProps = {
+    inline def apply(): LinkProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LinkProps]
     }
     
-    @scala.inline
-    implicit class LinkPropsMutableBuilder[Self <: LinkProps] (val x: Self) extends AnyVal {
+    extension [Self <: LinkProps](x: Self) {
       
-      @scala.inline
-      def setComponent(value: ElementType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ElementType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      @scala.inline
-      def setFlexCentered(value: Boolean): Self = StObject.set(x, "flexCentered", value.asInstanceOf[js.Any])
+      inline def setFlexCentered(value: Boolean): Self = StObject.set(x, "flexCentered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexCenteredUndefined: Self = StObject.set(x, "flexCentered", js.undefined)
+      inline def setFlexCenteredUndefined: Self = StObject.set(x, "flexCentered", js.undefined)
       
-      @scala.inline
-      def setPreventMaliciousTarget(value: Boolean): Self = StObject.set(x, "preventMaliciousTarget", value.asInstanceOf[js.Any])
+      inline def setPreventMaliciousTarget(value: Boolean): Self = StObject.set(x, "preventMaliciousTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventMaliciousTargetUndefined: Self = StObject.set(x, "preventMaliciousTarget", js.undefined)
+      inline def setPreventMaliciousTargetUndefined: Self = StObject.set(x, "preventMaliciousTarget", js.undefined)
       
-      @scala.inline
-      def setTarget(value: _blank | _parent | _self | _top | String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: _blank | _parent | _self | _top | String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }
   }
   
@@ -117,17 +107,14 @@ object linkMod {
   }
   object LinkWithComponentProps {
     
-    @scala.inline
-    def apply(component: ElementType[js.Any]): LinkWithComponentProps = {
+    inline def apply(component: ElementType[js.Any]): LinkWithComponentProps = {
       val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
       __obj.asInstanceOf[LinkWithComponentProps]
     }
     
-    @scala.inline
-    implicit class LinkWithComponentPropsMutableBuilder[Self <: LinkWithComponentProps] (val x: Self) extends AnyVal {
+    extension [Self <: LinkWithComponentProps](x: Self) {
       
-      @scala.inline
-      def setComponent(value: ElementType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ElementType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     }
   }
 }

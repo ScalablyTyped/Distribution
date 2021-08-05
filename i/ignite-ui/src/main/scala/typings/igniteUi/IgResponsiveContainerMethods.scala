@@ -40,8 +40,7 @@ trait IgResponsiveContainerMethods extends StObject {
 }
 object IgResponsiveContainerMethods {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addCallback: (js.Function, js.Object, Double, js.Object) => Unit,
     destroy: () => Unit,
     removeCallback: Double => Unit,
@@ -52,22 +51,16 @@ object IgResponsiveContainerMethods {
     __obj.asInstanceOf[IgResponsiveContainerMethods]
   }
   
-  @scala.inline
-  implicit class IgResponsiveContainerMethodsMutableBuilder[Self <: IgResponsiveContainerMethods] (val x: Self) extends AnyVal {
+  extension [Self <: IgResponsiveContainerMethods](x: Self) {
     
-    @scala.inline
-    def setAddCallback(value: (js.Function, js.Object, Double, js.Object) => Unit): Self = StObject.set(x, "addCallback", js.Any.fromFunction4(value))
+    inline def setAddCallback(value: (js.Function, js.Object, Double, js.Object) => Unit): Self = StObject.set(x, "addCallback", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveCallback(value: Double => Unit): Self = StObject.set(x, "removeCallback", js.Any.fromFunction1(value))
+    inline def setRemoveCallback(value: Double => Unit): Self = StObject.set(x, "removeCallback", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStartPoller(value: () => Unit): Self = StObject.set(x, "startPoller", js.Any.fromFunction0(value))
+    inline def setStartPoller(value: () => Unit): Self = StObject.set(x, "startPoller", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStopPoller(value: () => Unit): Self = StObject.set(x, "stopPoller", js.Any.fromFunction0(value))
+    inline def setStopPoller(value: () => Unit): Self = StObject.set(x, "stopPoller", js.Any.fromFunction0(value))
   }
 }

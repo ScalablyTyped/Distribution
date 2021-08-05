@@ -25,14 +25,11 @@ object xhrFileReaderMod {
     @JSImport("jsmediatags/build2/XhrFileReader", "default._config")
     @js.native
     def _config: AvoidHeadRequests = js.native
-    @scala.inline
-    def _config_=(x: AvoidHeadRequests): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_config")(x.asInstanceOf[js.Any])
+    inline def _config_=(x: AvoidHeadRequests): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_config")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def canReadFile(file: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canReadFile")(file.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def canReadFile(file: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canReadFile")(file.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def setConfig(config: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setConfig")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setConfig(config: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setConfig")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   trait ContentRangeType extends StObject {
@@ -45,32 +42,24 @@ object xhrFileReaderMod {
   }
   object ContentRangeType {
     
-    @scala.inline
-    def apply(): ContentRangeType = {
+    inline def apply(): ContentRangeType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ContentRangeType]
     }
     
-    @scala.inline
-    implicit class ContentRangeTypeMutableBuilder[Self <: ContentRangeType] (val x: Self) extends AnyVal {
+    extension [Self <: ContentRangeType](x: Self) {
       
-      @scala.inline
-      def setFirstBytePosition(value: Double): Self = StObject.set(x, "firstBytePosition", value.asInstanceOf[js.Any])
+      inline def setFirstBytePosition(value: Double): Self = StObject.set(x, "firstBytePosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstBytePositionUndefined: Self = StObject.set(x, "firstBytePosition", js.undefined)
+      inline def setFirstBytePositionUndefined: Self = StObject.set(x, "firstBytePosition", js.undefined)
       
-      @scala.inline
-      def setInstanceLength(value: Double): Self = StObject.set(x, "instanceLength", value.asInstanceOf[js.Any])
+      inline def setInstanceLength(value: Double): Self = StObject.set(x, "instanceLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceLengthUndefined: Self = StObject.set(x, "instanceLength", js.undefined)
+      inline def setInstanceLengthUndefined: Self = StObject.set(x, "instanceLength", js.undefined)
       
-      @scala.inline
-      def setLastBytePosition(value: Double): Self = StObject.set(x, "lastBytePosition", value.asInstanceOf[js.Any])
+      inline def setLastBytePosition(value: Double): Self = StObject.set(x, "lastBytePosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastBytePositionUndefined: Self = StObject.set(x, "lastBytePosition", js.undefined)
+      inline def setLastBytePositionUndefined: Self = StObject.set(x, "lastBytePosition", js.undefined)
     }
   }
   

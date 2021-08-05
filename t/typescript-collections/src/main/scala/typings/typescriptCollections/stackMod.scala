@@ -78,7 +78,7 @@ object stackMod {
       * @type collections.LinkedList
       * @private
       */
-    var list: js.Any = js.native
+    /* private */ var list: js.Any = js.native
     
     /**
       * Looks at the object at the top of this stack without removing it from the

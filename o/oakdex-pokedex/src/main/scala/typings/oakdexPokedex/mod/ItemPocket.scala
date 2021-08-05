@@ -12,22 +12,17 @@ trait ItemPocket extends StObject {
 }
 object ItemPocket {
   
-  @scala.inline
-  def apply(generations: js.Array[Double], pocket: String): ItemPocket = {
+  inline def apply(generations: js.Array[Double], pocket: String): ItemPocket = {
     val __obj = js.Dynamic.literal(generations = generations.asInstanceOf[js.Any], pocket = pocket.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemPocket]
   }
   
-  @scala.inline
-  implicit class ItemPocketMutableBuilder[Self <: ItemPocket] (val x: Self) extends AnyVal {
+  extension [Self <: ItemPocket](x: Self) {
     
-    @scala.inline
-    def setGenerations(value: js.Array[Double]): Self = StObject.set(x, "generations", value.asInstanceOf[js.Any])
+    inline def setGenerations(value: js.Array[Double]): Self = StObject.set(x, "generations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenerationsVarargs(value: Double*): Self = StObject.set(x, "generations", js.Array(value :_*))
+    inline def setGenerationsVarargs(value: Double*): Self = StObject.set(x, "generations", js.Array(value :_*))
     
-    @scala.inline
-    def setPocket(value: String): Self = StObject.set(x, "pocket", value.asInstanceOf[js.Any])
+    inline def setPocket(value: String): Self = StObject.set(x, "pocket", value.asInstanceOf[js.Any])
   }
 }

@@ -10,19 +10,15 @@ trait FalsyOptions extends StObject {
 }
 object FalsyOptions {
   
-  @scala.inline
-  def apply(pool: js.Array[FalsyType]): FalsyOptions = {
+  inline def apply(pool: js.Array[FalsyType]): FalsyOptions = {
     val __obj = js.Dynamic.literal(pool = pool.asInstanceOf[js.Any])
     __obj.asInstanceOf[FalsyOptions]
   }
   
-  @scala.inline
-  implicit class FalsyOptionsMutableBuilder[Self <: FalsyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FalsyOptions](x: Self) {
     
-    @scala.inline
-    def setPool(value: js.Array[FalsyType]): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
+    inline def setPool(value: js.Array[FalsyType]): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoolVarargs(value: FalsyType*): Self = StObject.set(x, "pool", js.Array(value :_*))
+    inline def setPoolVarargs(value: FalsyType*): Self = StObject.set(x, "pool", js.Array(value :_*))
   }
 }

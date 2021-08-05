@@ -38,49 +38,35 @@ trait ConfigurationEvent extends StObject {
 }
 object ConfigurationEvent {
   
-  @scala.inline
-  def apply(): ConfigurationEvent = {
+  inline def apply(): ConfigurationEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfigurationEvent]
   }
   
-  @scala.inline
-  implicit class ConfigurationEventMutableBuilder[Self <: ConfigurationEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigurationEvent](x: Self) {
     
-    @scala.inline
-    def setEventDetail(value: ConfigurationEventDetail): Self = StObject.set(x, "EventDetail", value.asInstanceOf[js.Any])
+    inline def setEventDetail(value: ConfigurationEventDetail): Self = StObject.set(x, "EventDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventDetailUndefined: Self = StObject.set(x, "EventDetail", js.undefined)
+    inline def setEventDetailUndefined: Self = StObject.set(x, "EventDetail", js.undefined)
     
-    @scala.inline
-    def setEventResourceName(value: ConfigurationEventResourceName): Self = StObject.set(x, "EventResourceName", value.asInstanceOf[js.Any])
+    inline def setEventResourceName(value: ConfigurationEventResourceName): Self = StObject.set(x, "EventResourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventResourceNameUndefined: Self = StObject.set(x, "EventResourceName", js.undefined)
+    inline def setEventResourceNameUndefined: Self = StObject.set(x, "EventResourceName", js.undefined)
     
-    @scala.inline
-    def setEventResourceType(value: ConfigurationEventResourceType): Self = StObject.set(x, "EventResourceType", value.asInstanceOf[js.Any])
+    inline def setEventResourceType(value: ConfigurationEventResourceType): Self = StObject.set(x, "EventResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventResourceTypeUndefined: Self = StObject.set(x, "EventResourceType", js.undefined)
+    inline def setEventResourceTypeUndefined: Self = StObject.set(x, "EventResourceType", js.undefined)
     
-    @scala.inline
-    def setEventStatus(value: ConfigurationEventStatus): Self = StObject.set(x, "EventStatus", value.asInstanceOf[js.Any])
+    inline def setEventStatus(value: ConfigurationEventStatus): Self = StObject.set(x, "EventStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventStatusUndefined: Self = StObject.set(x, "EventStatus", js.undefined)
+    inline def setEventStatusUndefined: Self = StObject.set(x, "EventStatus", js.undefined)
     
-    @scala.inline
-    def setEventTime(value: ConfigurationEventTime): Self = StObject.set(x, "EventTime", value.asInstanceOf[js.Any])
+    inline def setEventTime(value: ConfigurationEventTime): Self = StObject.set(x, "EventTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTimeUndefined: Self = StObject.set(x, "EventTime", js.undefined)
+    inline def setEventTimeUndefined: Self = StObject.set(x, "EventTime", js.undefined)
     
-    @scala.inline
-    def setMonitoredResourceARN(value: ConfigurationEventMonitoredResourceARN): Self = StObject.set(x, "MonitoredResourceARN", value.asInstanceOf[js.Any])
+    inline def setMonitoredResourceARN(value: ConfigurationEventMonitoredResourceARN): Self = StObject.set(x, "MonitoredResourceARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitoredResourceARNUndefined: Self = StObject.set(x, "MonitoredResourceARN", js.undefined)
+    inline def setMonitoredResourceARNUndefined: Self = StObject.set(x, "MonitoredResourceARN", js.undefined)
   }
 }

@@ -37,97 +37,67 @@ trait GanttPdf extends StObject {
 }
 object GanttPdf {
   
-  @scala.inline
-  def apply(): GanttPdf = {
+  inline def apply(): GanttPdf = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GanttPdf]
   }
   
-  @scala.inline
-  implicit class GanttPdfMutableBuilder[Self <: GanttPdf] (val x: Self) extends AnyVal {
+  extension [Self <: GanttPdf](x: Self) {
     
-    @scala.inline
-    def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
+    inline def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
     
-    @scala.inline
-    def setAvoidLinks(value: Boolean | String): Self = StObject.set(x, "avoidLinks", value.asInstanceOf[js.Any])
+    inline def setAvoidLinks(value: Boolean | String): Self = StObject.set(x, "avoidLinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvoidLinksUndefined: Self = StObject.set(x, "avoidLinks", js.undefined)
+    inline def setAvoidLinksUndefined: Self = StObject.set(x, "avoidLinks", js.undefined)
     
-    @scala.inline
-    def setCreator(value: String): Self = StObject.set(x, "creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: String): Self = StObject.set(x, "creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatorUndefined: Self = StObject.set(x, "creator", js.undefined)
+    inline def setCreatorUndefined: Self = StObject.set(x, "creator", js.undefined)
     
-    @scala.inline
-    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+    inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
-    @scala.inline
-    def setForceProxy(value: Boolean): Self = StObject.set(x, "forceProxy", value.asInstanceOf[js.Any])
+    inline def setForceProxy(value: Boolean): Self = StObject.set(x, "forceProxy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceProxyUndefined: Self = StObject.set(x, "forceProxy", js.undefined)
+    inline def setForceProxyUndefined: Self = StObject.set(x, "forceProxy", js.undefined)
     
-    @scala.inline
-    def setKeywords(value: String): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
+    inline def setKeywords(value: String): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
+    inline def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
     
-    @scala.inline
-    def setLandscape(value: Boolean): Self = StObject.set(x, "landscape", value.asInstanceOf[js.Any])
+    inline def setLandscape(value: Boolean): Self = StObject.set(x, "landscape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLandscapeUndefined: Self = StObject.set(x, "landscape", js.undefined)
+    inline def setLandscapeUndefined: Self = StObject.set(x, "landscape", js.undefined)
     
-    @scala.inline
-    def setMargin(value: GanttPdfMargin): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: GanttPdfMargin): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
-    @scala.inline
-    def setPaperSize(value: String | js.Any): Self = StObject.set(x, "paperSize", value.asInstanceOf[js.Any])
+    inline def setPaperSize(value: String | js.Any): Self = StObject.set(x, "paperSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaperSizeUndefined: Self = StObject.set(x, "paperSize", js.undefined)
+    inline def setPaperSizeUndefined: Self = StObject.set(x, "paperSize", js.undefined)
     
-    @scala.inline
-    def setProxyTarget(value: String): Self = StObject.set(x, "proxyTarget", value.asInstanceOf[js.Any])
+    inline def setProxyTarget(value: String): Self = StObject.set(x, "proxyTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyTargetUndefined: Self = StObject.set(x, "proxyTarget", js.undefined)
+    inline def setProxyTargetUndefined: Self = StObject.set(x, "proxyTarget", js.undefined)
     
-    @scala.inline
-    def setProxyURL(value: String): Self = StObject.set(x, "proxyURL", value.asInstanceOf[js.Any])
+    inline def setProxyURL(value: String): Self = StObject.set(x, "proxyURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyURLUndefined: Self = StObject.set(x, "proxyURL", js.undefined)
+    inline def setProxyURLUndefined: Self = StObject.set(x, "proxyURL", js.undefined)
     
-    @scala.inline
-    def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+    inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

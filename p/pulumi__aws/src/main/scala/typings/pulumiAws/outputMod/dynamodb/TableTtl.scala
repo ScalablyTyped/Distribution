@@ -18,22 +18,17 @@ trait TableTtl extends StObject {
 }
 object TableTtl {
   
-  @scala.inline
-  def apply(attributeName: String): TableTtl = {
+  inline def apply(attributeName: String): TableTtl = {
     val __obj = js.Dynamic.literal(attributeName = attributeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableTtl]
   }
   
-  @scala.inline
-  implicit class TableTtlMutableBuilder[Self <: TableTtl] (val x: Self) extends AnyVal {
+  extension [Self <: TableTtl](x: Self) {
     
-    @scala.inline
-    def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
+    inline def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
   }
 }

@@ -17,50 +17,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FlowNode extends StObject
 object FlowNode {
   
-  @scala.inline
-  def FlowArrayMutation(antecedent: FlowNode, flags: FlowFlags, node: CallExpression | BinaryExpression): typings.typescript.mod.FlowArrayMutation = {
+  inline def FlowArrayMutation(antecedent: FlowNode, flags: FlowFlags, node: CallExpression | BinaryExpression): typings.typescript.mod.FlowArrayMutation = {
     val __obj = js.Dynamic.literal(antecedent = antecedent.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.typescript.mod.FlowArrayMutation]
   }
   
-  @scala.inline
-  def FlowAssignment(antecedent: FlowNode, flags: FlowFlags, node: Expression | VariableDeclaration | BindingElement): typings.typescript.mod.FlowAssignment = {
+  inline def FlowAssignment(antecedent: FlowNode, flags: FlowFlags, node: Expression | VariableDeclaration | BindingElement): typings.typescript.mod.FlowAssignment = {
     val __obj = js.Dynamic.literal(antecedent = antecedent.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.typescript.mod.FlowAssignment]
   }
   
-  @scala.inline
-  def FlowCall(antecedent: FlowNode, flags: FlowFlags, node: CallExpression): typings.typescript.mod.FlowCall = {
+  inline def FlowCall(antecedent: FlowNode, flags: FlowFlags, node: CallExpression): typings.typescript.mod.FlowCall = {
     val __obj = js.Dynamic.literal(antecedent = antecedent.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.typescript.mod.FlowCall]
   }
   
-  @scala.inline
-  def FlowCondition(antecedent: FlowNode, flags: FlowFlags, node: Expression): typings.typescript.mod.FlowCondition = {
+  inline def FlowCondition(antecedent: FlowNode, flags: FlowFlags, node: Expression): typings.typescript.mod.FlowCondition = {
     val __obj = js.Dynamic.literal(antecedent = antecedent.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.typescript.mod.FlowCondition]
   }
   
-  @scala.inline
-  def FlowLabel(flags: FlowFlags): typings.typescript.mod.FlowLabel = {
+  inline def FlowLabel(flags: FlowFlags): typings.typescript.mod.FlowLabel = {
     val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.typescript.mod.FlowLabel]
   }
   
-  @scala.inline
-  def FlowReduceLabel(antecedent: FlowNode, antecedents: js.Array[FlowNode], flags: FlowFlags, target: FlowLabel): typings.typescript.mod.FlowReduceLabel = {
+  inline def FlowReduceLabel(antecedent: FlowNode, antecedents: js.Array[FlowNode], flags: FlowFlags, target: FlowLabel): typings.typescript.mod.FlowReduceLabel = {
     val __obj = js.Dynamic.literal(antecedent = antecedent.asInstanceOf[js.Any], antecedents = antecedents.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.typescript.mod.FlowReduceLabel]
   }
   
-  @scala.inline
-  def FlowStart(flags: FlowFlags): typings.typescript.mod.FlowStart = {
+  inline def FlowStart(flags: FlowFlags): typings.typescript.mod.FlowStart = {
     val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.typescript.mod.FlowStart]
   }
   
-  @scala.inline
-  def FlowSwitchClause(
+  inline def FlowSwitchClause(
     antecedent: FlowNode,
     clauseEnd: Double,
     clauseStart: Double,

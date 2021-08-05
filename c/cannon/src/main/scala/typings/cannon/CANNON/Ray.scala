@@ -18,8 +18,7 @@ trait Ray extends StObject {
 }
 object Ray {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     checkCollisionResponse: Boolean,
     from: Vec3,
     getAABB: RaycastResult => Unit,
@@ -30,22 +29,16 @@ object Ray {
     __obj.asInstanceOf[Ray]
   }
   
-  @scala.inline
-  implicit class RayMutableBuilder[Self <: Ray] (val x: Self) extends AnyVal {
+  extension [Self <: Ray](x: Self) {
     
-    @scala.inline
-    def setCheckCollisionResponse(value: Boolean): Self = StObject.set(x, "checkCollisionResponse", value.asInstanceOf[js.Any])
+    inline def setCheckCollisionResponse(value: Boolean): Self = StObject.set(x, "checkCollisionResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrom(value: Vec3): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: Vec3): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAABB(value: RaycastResult => Unit): Self = StObject.set(x, "getAABB", js.Any.fromFunction1(value))
+    inline def setGetAABB(value: RaycastResult => Unit): Self = StObject.set(x, "getAABB", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+    inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTo(value: Vec3): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: Vec3): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }
 }

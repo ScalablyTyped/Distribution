@@ -12,19 +12,15 @@ trait SizeReturn extends StObject {
 }
 object SizeReturn {
   
-  @scala.inline
-  def apply(height: Double, width: Double): SizeReturn = {
+  inline def apply(height: Double, width: Double): SizeReturn = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[SizeReturn]
   }
   
-  @scala.inline
-  implicit class SizeReturnMutableBuilder[Self <: SizeReturn] (val x: Self) extends AnyVal {
+  extension [Self <: SizeReturn](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

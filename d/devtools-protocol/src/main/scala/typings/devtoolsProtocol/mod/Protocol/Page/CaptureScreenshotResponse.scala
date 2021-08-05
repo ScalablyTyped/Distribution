@@ -13,16 +13,13 @@ trait CaptureScreenshotResponse extends StObject {
 }
 object CaptureScreenshotResponse {
   
-  @scala.inline
-  def apply(data: String): CaptureScreenshotResponse = {
+  inline def apply(data: String): CaptureScreenshotResponse = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[CaptureScreenshotResponse]
   }
   
-  @scala.inline
-  implicit class CaptureScreenshotResponseMutableBuilder[Self <: CaptureScreenshotResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CaptureScreenshotResponse](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

@@ -14,26 +14,21 @@ trait AccountIdentityVerificationResponse extends StObject {
 }
 object AccountIdentityVerificationResponse {
   
-  @scala.inline
-  def apply(): AccountIdentityVerificationResponse = {
+  inline def apply(): AccountIdentityVerificationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountIdentityVerificationResponse]
   }
   
-  @scala.inline
-  implicit class AccountIdentityVerificationResponseMutableBuilder[Self <: AccountIdentityVerificationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AccountIdentityVerificationResponse](x: Self) {
     
-    @scala.inline
-    def setIdentityVerification(
+    inline def setIdentityVerification(
       value: js.Array[
           /* Specifies an Identity Verification workflow. */ AccountIdentityVerificationWorkflow
         ]
     ): Self = StObject.set(x, "identityVerification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityVerificationUndefined: Self = StObject.set(x, "identityVerification", js.undefined)
+    inline def setIdentityVerificationUndefined: Self = StObject.set(x, "identityVerification", js.undefined)
     
-    @scala.inline
-    def setIdentityVerificationVarargs(value: (/* Specifies an Identity Verification workflow. */ AccountIdentityVerificationWorkflow)*): Self = StObject.set(x, "identityVerification", js.Array(value :_*))
+    inline def setIdentityVerificationVarargs(value: (/* Specifies an Identity Verification workflow. */ AccountIdentityVerificationWorkflow)*): Self = StObject.set(x, "identityVerification", js.Array(value :_*))
   }
 }

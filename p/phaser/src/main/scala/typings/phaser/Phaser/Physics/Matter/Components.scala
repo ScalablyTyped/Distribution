@@ -25,17 +25,14 @@ object Components {
   }
   object Bounce {
     
-    @scala.inline
-    def apply(setBounce: Double => GameObject): Bounce = {
+    inline def apply(setBounce: Double => GameObject): Bounce = {
       val __obj = js.Dynamic.literal(setBounce = js.Any.fromFunction1(setBounce))
       __obj.asInstanceOf[Bounce]
     }
     
-    @scala.inline
-    implicit class BounceMutableBuilder[Self <: Bounce] (val x: Self) extends AnyVal {
+    extension [Self <: Bounce](x: Self) {
       
-      @scala.inline
-      def setSetBounce(value: Double => GameObject): Self = StObject.set(x, "setBounce", js.Any.fromFunction1(value))
+      inline def setSetBounce(value: Double => GameObject): Self = StObject.set(x, "setBounce", js.Any.fromFunction1(value))
     }
   }
   
@@ -162,8 +159,7 @@ object Components {
   }
   object Force {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       applyForce: Vector2 => GameObject,
       applyForceFrom: (Vector2, Vector2) => GameObject,
       thrust: Double => GameObject,
@@ -175,26 +171,19 @@ object Components {
       __obj.asInstanceOf[Force]
     }
     
-    @scala.inline
-    implicit class ForceMutableBuilder[Self <: Force] (val x: Self) extends AnyVal {
+    extension [Self <: Force](x: Self) {
       
-      @scala.inline
-      def setApplyForce(value: Vector2 => GameObject): Self = StObject.set(x, "applyForce", js.Any.fromFunction1(value))
+      inline def setApplyForce(value: Vector2 => GameObject): Self = StObject.set(x, "applyForce", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setApplyForceFrom(value: (Vector2, Vector2) => GameObject): Self = StObject.set(x, "applyForceFrom", js.Any.fromFunction2(value))
+      inline def setApplyForceFrom(value: (Vector2, Vector2) => GameObject): Self = StObject.set(x, "applyForceFrom", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setThrust(value: Double => GameObject): Self = StObject.set(x, "thrust", js.Any.fromFunction1(value))
+      inline def setThrust(value: Double => GameObject): Self = StObject.set(x, "thrust", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setThrustBack(value: Double => GameObject): Self = StObject.set(x, "thrustBack", js.Any.fromFunction1(value))
+      inline def setThrustBack(value: Double => GameObject): Self = StObject.set(x, "thrustBack", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setThrustLeft(value: Double => GameObject): Self = StObject.set(x, "thrustLeft", js.Any.fromFunction1(value))
+      inline def setThrustLeft(value: Double => GameObject): Self = StObject.set(x, "thrustLeft", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setThrustRight(value: Double => GameObject): Self = StObject.set(x, "thrustRight", js.Any.fromFunction1(value))
+      inline def setThrustRight(value: Double => GameObject): Self = StObject.set(x, "thrustRight", js.Any.fromFunction1(value))
     }
   }
   
@@ -245,17 +234,14 @@ object Components {
   }
   object Gravity {
     
-    @scala.inline
-    def apply(setIgnoreGravity: Boolean => GameObject): Gravity = {
+    inline def apply(setIgnoreGravity: Boolean => GameObject): Gravity = {
       val __obj = js.Dynamic.literal(setIgnoreGravity = js.Any.fromFunction1(setIgnoreGravity))
       __obj.asInstanceOf[Gravity]
     }
     
-    @scala.inline
-    implicit class GravityMutableBuilder[Self <: Gravity] (val x: Self) extends AnyVal {
+    extension [Self <: Gravity](x: Self) {
       
-      @scala.inline
-      def setSetIgnoreGravity(value: Boolean => GameObject): Self = StObject.set(x, "setIgnoreGravity", js.Any.fromFunction1(value))
+      inline def setSetIgnoreGravity(value: Boolean => GameObject): Self = StObject.set(x, "setIgnoreGravity", js.Any.fromFunction1(value))
     }
   }
   
@@ -287,23 +273,18 @@ object Components {
   }
   object Mass {
     
-    @scala.inline
-    def apply(centerOfMass: Vector2, setDensity: Double => GameObject, setMass: Double => GameObject): Mass = {
+    inline def apply(centerOfMass: Vector2, setDensity: Double => GameObject, setMass: Double => GameObject): Mass = {
       val __obj = js.Dynamic.literal(centerOfMass = centerOfMass.asInstanceOf[js.Any], setDensity = js.Any.fromFunction1(setDensity), setMass = js.Any.fromFunction1(setMass))
       __obj.asInstanceOf[Mass]
     }
     
-    @scala.inline
-    implicit class MassMutableBuilder[Self <: Mass] (val x: Self) extends AnyVal {
+    extension [Self <: Mass](x: Self) {
       
-      @scala.inline
-      def setCenterOfMass(value: Vector2): Self = StObject.set(x, "centerOfMass", value.asInstanceOf[js.Any])
+      inline def setCenterOfMass(value: Vector2): Self = StObject.set(x, "centerOfMass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetDensity(value: Double => GameObject): Self = StObject.set(x, "setDensity", js.Any.fromFunction1(value))
+      inline def setSetDensity(value: Double => GameObject): Self = StObject.set(x, "setDensity", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetMass(value: Double => GameObject): Self = StObject.set(x, "setMass", js.Any.fromFunction1(value))
+      inline def setSetMass(value: Double => GameObject): Self = StObject.set(x, "setMass", js.Any.fromFunction1(value))
     }
   }
   
@@ -326,20 +307,16 @@ object Components {
   }
   object Sensor {
     
-    @scala.inline
-    def apply(isSensor: () => Boolean, setSensor: Boolean => GameObject): Sensor = {
+    inline def apply(isSensor: () => Boolean, setSensor: Boolean => GameObject): Sensor = {
       val __obj = js.Dynamic.literal(isSensor = js.Any.fromFunction0(isSensor), setSensor = js.Any.fromFunction1(setSensor))
       __obj.asInstanceOf[Sensor]
     }
     
-    @scala.inline
-    implicit class SensorMutableBuilder[Self <: Sensor] (val x: Self) extends AnyVal {
+    extension [Self <: Sensor](x: Self) {
       
-      @scala.inline
-      def setIsSensor(value: () => Boolean): Self = StObject.set(x, "isSensor", js.Any.fromFunction0(value))
+      inline def setIsSensor(value: () => Boolean): Self = StObject.set(x, "isSensor", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetSensor(value: Boolean => GameObject): Self = StObject.set(x, "setSensor", js.Any.fromFunction1(value))
+      inline def setSetSensor(value: Boolean => GameObject): Self = StObject.set(x, "setSensor", js.Any.fromFunction1(value))
     }
   }
   
@@ -487,20 +464,16 @@ object Components {
   }
   object Static {
     
-    @scala.inline
-    def apply(isStatic: () => Boolean, setStatic: Boolean => GameObject): Static = {
+    inline def apply(isStatic: () => Boolean, setStatic: Boolean => GameObject): Static = {
       val __obj = js.Dynamic.literal(isStatic = js.Any.fromFunction0(isStatic), setStatic = js.Any.fromFunction1(setStatic))
       __obj.asInstanceOf[Static]
     }
     
-    @scala.inline
-    implicit class StaticMutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
+    extension [Self <: Static](x: Self) {
       
-      @scala.inline
-      def setIsStatic(value: () => Boolean): Self = StObject.set(x, "isStatic", js.Any.fromFunction0(value))
+      inline def setIsStatic(value: () => Boolean): Self = StObject.set(x, "isStatic", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetStatic(value: Boolean => GameObject): Self = StObject.set(x, "setStatic", js.Any.fromFunction1(value))
+      inline def setSetStatic(value: Boolean => GameObject): Self = StObject.set(x, "setStatic", js.Any.fromFunction1(value))
     }
   }
   

@@ -23,25 +23,19 @@ trait DescribeElasticsearchInstanceTypeLimitsRequest extends StObject {
 }
 object DescribeElasticsearchInstanceTypeLimitsRequest {
   
-  @scala.inline
-  def apply(ElasticsearchVersion: ElasticsearchVersionString, InstanceType: ESPartitionInstanceType): DescribeElasticsearchInstanceTypeLimitsRequest = {
+  inline def apply(ElasticsearchVersion: ElasticsearchVersionString, InstanceType: ESPartitionInstanceType): DescribeElasticsearchInstanceTypeLimitsRequest = {
     val __obj = js.Dynamic.literal(ElasticsearchVersion = ElasticsearchVersion.asInstanceOf[js.Any], InstanceType = InstanceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeElasticsearchInstanceTypeLimitsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeElasticsearchInstanceTypeLimitsRequestMutableBuilder[Self <: DescribeElasticsearchInstanceTypeLimitsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeElasticsearchInstanceTypeLimitsRequest](x: Self) {
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainNameUndefined: Self = StObject.set(x, "DomainName", js.undefined)
+    inline def setDomainNameUndefined: Self = StObject.set(x, "DomainName", js.undefined)
     
-    @scala.inline
-    def setElasticsearchVersion(value: ElasticsearchVersionString): Self = StObject.set(x, "ElasticsearchVersion", value.asInstanceOf[js.Any])
+    inline def setElasticsearchVersion(value: ElasticsearchVersionString): Self = StObject.set(x, "ElasticsearchVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceType(value: ESPartitionInstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: ESPartitionInstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
   }
 }

@@ -23,8 +23,7 @@ object barChartUniDriverMod {
   }
   object BarChartUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -38,23 +37,17 @@ object barChartUniDriverMod {
       __obj.asInstanceOf[BarChartUniDriver]
     }
     
-    @scala.inline
-    implicit class BarChartUniDriverMutableBuilder[Self <: BarChartUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: BarChartUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetDescription(value: Double => js.Promise[String]): Self = StObject.set(x, "getDescription", js.Any.fromFunction1(value))
+      inline def setGetDescription(value: Double => js.Promise[String]): Self = StObject.set(x, "getDescription", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetDescriptionInfo(value: Double => js.Promise[String]): Self = StObject.set(x, "getDescriptionInfo", js.Any.fromFunction1(value))
+      inline def setGetDescriptionInfo(value: Double => js.Promise[String]): Self = StObject.set(x, "getDescriptionInfo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetItemsCount(value: () => js.Promise[Double]): Self = StObject.set(x, "getItemsCount", js.Any.fromFunction0(value))
+      inline def setGetItemsCount(value: () => js.Promise[Double]): Self = StObject.set(x, "getItemsCount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetValue(value: Double => js.Promise[String]): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
+      inline def setGetValue(value: Double => js.Promise[String]): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetValueInShort(value: Double => js.Promise[String]): Self = StObject.set(x, "getValueInShort", js.Any.fromFunction1(value))
+      inline def setGetValueInShort(value: Double => js.Promise[String]): Self = StObject.set(x, "getValueInShort", js.Any.fromFunction1(value))
     }
   }
 }

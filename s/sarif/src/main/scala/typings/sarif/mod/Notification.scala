@@ -54,68 +54,48 @@ trait Notification extends StObject {
 }
 object Notification {
   
-  @scala.inline
-  def apply(message: Message): Notification = {
+  inline def apply(message: Message): Notification = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[Notification]
   }
   
-  @scala.inline
-  implicit class NotificationMutableBuilder[Self <: Notification] (val x: Self) extends AnyVal {
+  extension [Self <: Notification](x: Self) {
     
-    @scala.inline
-    def setAssociatedRule(value: ReportingDescriptorReference): Self = StObject.set(x, "associatedRule", value.asInstanceOf[js.Any])
+    inline def setAssociatedRule(value: ReportingDescriptorReference): Self = StObject.set(x, "associatedRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociatedRuleUndefined: Self = StObject.set(x, "associatedRule", js.undefined)
+    inline def setAssociatedRuleUndefined: Self = StObject.set(x, "associatedRule", js.undefined)
     
-    @scala.inline
-    def setDescriptor(value: ReportingDescriptorReference): Self = StObject.set(x, "descriptor", value.asInstanceOf[js.Any])
+    inline def setDescriptor(value: ReportingDescriptorReference): Self = StObject.set(x, "descriptor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptorUndefined: Self = StObject.set(x, "descriptor", js.undefined)
+    inline def setDescriptorUndefined: Self = StObject.set(x, "descriptor", js.undefined)
     
-    @scala.inline
-    def setException(value: Exception): Self = StObject.set(x, "exception", value.asInstanceOf[js.Any])
+    inline def setException(value: Exception): Self = StObject.set(x, "exception", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExceptionUndefined: Self = StObject.set(x, "exception", js.undefined)
+    inline def setExceptionUndefined: Self = StObject.set(x, "exception", js.undefined)
     
-    @scala.inline
-    def setLevel(value: level): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: level): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
-    @scala.inline
-    def setLocations(value: js.Array[Location]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+    inline def setLocations(value: js.Array[Location]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
+    inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
     
-    @scala.inline
-    def setLocationsVarargs(value: Location*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: Location*): Self = StObject.set(x, "locations", js.Array(value :_*))
     
-    @scala.inline
-    def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setThreadId(value: Double): Self = StObject.set(x, "threadId", value.asInstanceOf[js.Any])
+    inline def setThreadId(value: Double): Self = StObject.set(x, "threadId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreadIdUndefined: Self = StObject.set(x, "threadId", js.undefined)
+    inline def setThreadIdUndefined: Self = StObject.set(x, "threadId", js.undefined)
     
-    @scala.inline
-    def setTimeUtc(value: String): Self = StObject.set(x, "timeUtc", value.asInstanceOf[js.Any])
+    inline def setTimeUtc(value: String): Self = StObject.set(x, "timeUtc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUtcUndefined: Self = StObject.set(x, "timeUtc", js.undefined)
+    inline def setTimeUtcUndefined: Self = StObject.set(x, "timeUtc", js.undefined)
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -127,16 +107,12 @@ object Notification {
   trait level extends StObject
   object level {
     
-    @scala.inline
-    def error: typings.sarif.sarifStrings.error = "error".asInstanceOf[typings.sarif.sarifStrings.error]
+    inline def error: typings.sarif.sarifStrings.error = "error".asInstanceOf[typings.sarif.sarifStrings.error]
     
-    @scala.inline
-    def none: typings.sarif.sarifStrings.none = "none".asInstanceOf[typings.sarif.sarifStrings.none]
+    inline def none: typings.sarif.sarifStrings.none = "none".asInstanceOf[typings.sarif.sarifStrings.none]
     
-    @scala.inline
-    def note: typings.sarif.sarifStrings.note = "note".asInstanceOf[typings.sarif.sarifStrings.note]
+    inline def note: typings.sarif.sarifStrings.note = "note".asInstanceOf[typings.sarif.sarifStrings.note]
     
-    @scala.inline
-    def warning: typings.sarif.sarifStrings.warning = "warning".asInstanceOf[typings.sarif.sarifStrings.warning]
+    inline def warning: typings.sarif.sarifStrings.warning = "warning".asInstanceOf[typings.sarif.sarifStrings.warning]
   }
 }

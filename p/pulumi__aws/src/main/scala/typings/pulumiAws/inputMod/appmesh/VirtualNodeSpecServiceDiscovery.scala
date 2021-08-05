@@ -19,25 +19,19 @@ trait VirtualNodeSpecServiceDiscovery extends StObject {
 }
 object VirtualNodeSpecServiceDiscovery {
   
-  @scala.inline
-  def apply(): VirtualNodeSpecServiceDiscovery = {
+  inline def apply(): VirtualNodeSpecServiceDiscovery = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VirtualNodeSpecServiceDiscovery]
   }
   
-  @scala.inline
-  implicit class VirtualNodeSpecServiceDiscoveryMutableBuilder[Self <: VirtualNodeSpecServiceDiscovery] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualNodeSpecServiceDiscovery](x: Self) {
     
-    @scala.inline
-    def setAwsCloudMap(value: Input[VirtualNodeSpecServiceDiscoveryAwsCloudMap]): Self = StObject.set(x, "awsCloudMap", value.asInstanceOf[js.Any])
+    inline def setAwsCloudMap(value: Input[VirtualNodeSpecServiceDiscoveryAwsCloudMap]): Self = StObject.set(x, "awsCloudMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsCloudMapUndefined: Self = StObject.set(x, "awsCloudMap", js.undefined)
+    inline def setAwsCloudMapUndefined: Self = StObject.set(x, "awsCloudMap", js.undefined)
     
-    @scala.inline
-    def setDns(value: Input[VirtualNodeSpecServiceDiscoveryDns]): Self = StObject.set(x, "dns", value.asInstanceOf[js.Any])
+    inline def setDns(value: Input[VirtualNodeSpecServiceDiscoveryDns]): Self = StObject.set(x, "dns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDnsUndefined: Self = StObject.set(x, "dns", js.undefined)
+    inline def setDnsUndefined: Self = StObject.set(x, "dns", js.undefined)
   }
 }

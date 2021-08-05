@@ -10,19 +10,15 @@ trait ComponentRef extends StObject {
 }
 object ComponentRef {
   
-  @scala.inline
-  def apply(): ComponentRef = {
+  inline def apply(): ComponentRef = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ComponentRef]
   }
   
-  @scala.inline
-  implicit class ComponentRefMutableBuilder[Self <: ComponentRef] (val x: Self) extends AnyVal {
+  extension [Self <: ComponentRef](x: Self) {
     
-    @scala.inline
-    def setComponentRef(value: /* ref */ js.Any => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+    inline def setComponentRef(value: /* ref */ js.Any => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+    inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
   }
 }

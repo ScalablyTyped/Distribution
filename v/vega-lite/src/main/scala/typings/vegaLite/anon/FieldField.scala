@@ -10,16 +10,13 @@ trait FieldField extends StObject {
 }
 object FieldField {
   
-  @scala.inline
-  def apply(field: typings.vegaTypings.encodeMod.Field): FieldField = {
+  inline def apply(field: typings.vegaTypings.encodeMod.Field): FieldField = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldField]
   }
   
-  @scala.inline
-  implicit class FieldFieldMutableBuilder[Self <: FieldField] (val x: Self) extends AnyVal {
+  extension [Self <: FieldField](x: Self) {
     
-    @scala.inline
-    def setField(value: typings.vegaTypings.encodeMod.Field): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: typings.vegaTypings.encodeMod.Field): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
   }
 }

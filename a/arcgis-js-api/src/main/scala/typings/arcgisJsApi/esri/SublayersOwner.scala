@@ -22,19 +22,15 @@ trait SublayersOwner extends StObject {
 }
 object SublayersOwner {
   
-  @scala.inline
-  def apply(createServiceSublayers: () => Collection[Sublayer], findSublayerById: Double => Sublayer): SublayersOwner = {
+  inline def apply(createServiceSublayers: () => Collection[Sublayer], findSublayerById: Double => Sublayer): SublayersOwner = {
     val __obj = js.Dynamic.literal(createServiceSublayers = js.Any.fromFunction0(createServiceSublayers), findSublayerById = js.Any.fromFunction1(findSublayerById))
     __obj.asInstanceOf[SublayersOwner]
   }
   
-  @scala.inline
-  implicit class SublayersOwnerMutableBuilder[Self <: SublayersOwner] (val x: Self) extends AnyVal {
+  extension [Self <: SublayersOwner](x: Self) {
     
-    @scala.inline
-    def setCreateServiceSublayers(value: () => Collection[Sublayer]): Self = StObject.set(x, "createServiceSublayers", js.Any.fromFunction0(value))
+    inline def setCreateServiceSublayers(value: () => Collection[Sublayer]): Self = StObject.set(x, "createServiceSublayers", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFindSublayerById(value: Double => Sublayer): Self = StObject.set(x, "findSublayerById", js.Any.fromFunction1(value))
+    inline def setFindSublayerById(value: Double => Sublayer): Self = StObject.set(x, "findSublayerById", js.Any.fromFunction1(value))
   }
 }

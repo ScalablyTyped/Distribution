@@ -10,9 +10,7 @@ object caseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def camelToDashCase(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("camelToDashCase")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def camelToDashCase(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("camelToDashCase")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def dashToPascalCase(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dashToPascalCase")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def dashToPascalCase(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dashToPascalCase")(str.asInstanceOf[js.Any]).asInstanceOf[String]
 }

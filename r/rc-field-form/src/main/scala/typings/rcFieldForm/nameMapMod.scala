@@ -23,7 +23,7 @@ object nameMapMod {
     /* CompleteClass */
     override def get(key: InternalNamePath): T = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var list: js.Any = js.native
     
     /* CompleteClass */
@@ -47,23 +47,18 @@ object nameMapMod {
   }
   object KV {
     
-    @scala.inline
-    def apply[T](key: InternalNamePath, value: T): KV[T] = {
+    inline def apply[T](key: InternalNamePath, value: T): KV[T] = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[KV[T]]
     }
     
-    @scala.inline
-    implicit class KVMutableBuilder[Self <: KV[?], T] (val x: Self & KV[T]) extends AnyVal {
+    extension [Self <: KV[?], T](x: Self & KV[T]) {
       
-      @scala.inline
-      def setKey(value: InternalNamePath): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: InternalNamePath): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyVarargs(value: (String | Double)*): Self = StObject.set(x, "key", js.Array(value :_*))
+      inline def setKeyVarargs(value: (String | Double)*): Self = StObject.set(x, "key", js.Array(value :_*))
       
-      @scala.inline
-      def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -76,7 +71,7 @@ object nameMapMod {
     
     def get(key: InternalNamePath): T
     
-    var list: js.Any
+    /* private */ var list: js.Any
     
     def map[U](callback: js.Function1[/* kv */ KV[T], U]): js.Array[U]
     
@@ -88,8 +83,7 @@ object nameMapMod {
   }
   object NameMap {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       delete: InternalNamePath => Unit,
       get: InternalNamePath => T,
       list: js.Any,
@@ -102,29 +96,21 @@ object nameMapMod {
       __obj.asInstanceOf[NameMap[T]]
     }
     
-    @scala.inline
-    implicit class NameMapMutableBuilder[Self <: NameMap[?], T] (val x: Self & NameMap[T]) extends AnyVal {
+    extension [Self <: NameMap[?], T](x: Self & NameMap[T]) {
       
-      @scala.inline
-      def setDelete(value: InternalNamePath => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
+      inline def setDelete(value: InternalNamePath => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet(value: InternalNamePath => T): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: InternalNamePath => T): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setList(value: js.Any): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+      inline def setList(value: js.Any): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMap(value: js.Function1[/* kv */ KV[T], js.Any] => js.Array[js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+      inline def setMap(value: js.Function1[/* kv */ KV[T], js.Any] => js.Array[js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet(value: (InternalNamePath, T) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (InternalNamePath, T) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setToJSON(value: () => StringDictionary[T]): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => StringDictionary[T]): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdate(value: (InternalNamePath, js.Function1[/* origin */ T, T | Null]) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+      inline def setUpdate(value: (InternalNamePath, js.Function1[/* origin */ T, T | Null]) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
     }
   }
 }

@@ -13,16 +13,13 @@ trait DeleteReplicationTaskAssessmentRunMessage extends StObject {
 }
 object DeleteReplicationTaskAssessmentRunMessage {
   
-  @scala.inline
-  def apply(ReplicationTaskAssessmentRunArn: String): DeleteReplicationTaskAssessmentRunMessage = {
+  inline def apply(ReplicationTaskAssessmentRunArn: String): DeleteReplicationTaskAssessmentRunMessage = {
     val __obj = js.Dynamic.literal(ReplicationTaskAssessmentRunArn = ReplicationTaskAssessmentRunArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteReplicationTaskAssessmentRunMessage]
   }
   
-  @scala.inline
-  implicit class DeleteReplicationTaskAssessmentRunMessageMutableBuilder[Self <: DeleteReplicationTaskAssessmentRunMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteReplicationTaskAssessmentRunMessage](x: Self) {
     
-    @scala.inline
-    def setReplicationTaskAssessmentRunArn(value: String): Self = StObject.set(x, "ReplicationTaskAssessmentRunArn", value.asInstanceOf[js.Any])
+    inline def setReplicationTaskAssessmentRunArn(value: String): Self = StObject.set(x, "ReplicationTaskAssessmentRunArn", value.asInstanceOf[js.Any])
   }
 }

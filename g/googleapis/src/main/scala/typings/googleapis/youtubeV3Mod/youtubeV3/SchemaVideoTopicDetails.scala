@@ -32,40 +32,29 @@ trait SchemaVideoTopicDetails extends StObject {
 }
 object SchemaVideoTopicDetails {
   
-  @scala.inline
-  def apply(): SchemaVideoTopicDetails = {
+  inline def apply(): SchemaVideoTopicDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaVideoTopicDetails]
   }
   
-  @scala.inline
-  implicit class SchemaVideoTopicDetailsMutableBuilder[Self <: SchemaVideoTopicDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaVideoTopicDetails](x: Self) {
     
-    @scala.inline
-    def setRelevantTopicIds(value: js.Array[String]): Self = StObject.set(x, "relevantTopicIds", value.asInstanceOf[js.Any])
+    inline def setRelevantTopicIds(value: js.Array[String]): Self = StObject.set(x, "relevantTopicIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelevantTopicIdsUndefined: Self = StObject.set(x, "relevantTopicIds", js.undefined)
+    inline def setRelevantTopicIdsUndefined: Self = StObject.set(x, "relevantTopicIds", js.undefined)
     
-    @scala.inline
-    def setRelevantTopicIdsVarargs(value: String*): Self = StObject.set(x, "relevantTopicIds", js.Array(value :_*))
+    inline def setRelevantTopicIdsVarargs(value: String*): Self = StObject.set(x, "relevantTopicIds", js.Array(value :_*))
     
-    @scala.inline
-    def setTopicCategories(value: js.Array[String]): Self = StObject.set(x, "topicCategories", value.asInstanceOf[js.Any])
+    inline def setTopicCategories(value: js.Array[String]): Self = StObject.set(x, "topicCategories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicCategoriesUndefined: Self = StObject.set(x, "topicCategories", js.undefined)
+    inline def setTopicCategoriesUndefined: Self = StObject.set(x, "topicCategories", js.undefined)
     
-    @scala.inline
-    def setTopicCategoriesVarargs(value: String*): Self = StObject.set(x, "topicCategories", js.Array(value :_*))
+    inline def setTopicCategoriesVarargs(value: String*): Self = StObject.set(x, "topicCategories", js.Array(value :_*))
     
-    @scala.inline
-    def setTopicIds(value: js.Array[String]): Self = StObject.set(x, "topicIds", value.asInstanceOf[js.Any])
+    inline def setTopicIds(value: js.Array[String]): Self = StObject.set(x, "topicIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicIdsUndefined: Self = StObject.set(x, "topicIds", js.undefined)
+    inline def setTopicIdsUndefined: Self = StObject.set(x, "topicIds", js.undefined)
     
-    @scala.inline
-    def setTopicIdsVarargs(value: String*): Self = StObject.set(x, "topicIds", js.Array(value :_*))
+    inline def setTopicIdsVarargs(value: String*): Self = StObject.set(x, "topicIds", js.Array(value :_*))
   }
 }

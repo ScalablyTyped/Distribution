@@ -39,15 +39,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PaymentsErrorStatusCode extends StObject
 object PaymentsErrorStatusCode {
   
-  @scala.inline
-  def BUYER_ACCOUNT_ERROR: typings.googlepay.googlepayStrings.BUYER_ACCOUNT_ERROR = "BUYER_ACCOUNT_ERROR".asInstanceOf[typings.googlepay.googlepayStrings.BUYER_ACCOUNT_ERROR]
+  inline def BUYER_ACCOUNT_ERROR: typings.googlepay.googlepayStrings.BUYER_ACCOUNT_ERROR = "BUYER_ACCOUNT_ERROR".asInstanceOf[typings.googlepay.googlepayStrings.BUYER_ACCOUNT_ERROR]
   
-  @scala.inline
-  def DEVELOPER_ERROR: typings.googlepay.googlepayStrings.DEVELOPER_ERROR = "DEVELOPER_ERROR".asInstanceOf[typings.googlepay.googlepayStrings.DEVELOPER_ERROR]
+  inline def DEVELOPER_ERROR: typings.googlepay.googlepayStrings.DEVELOPER_ERROR = "DEVELOPER_ERROR".asInstanceOf[typings.googlepay.googlepayStrings.DEVELOPER_ERROR]
   
-  @scala.inline
-  def INTERNAL_ERROR: typings.googlepay.googlepayStrings.INTERNAL_ERROR = "INTERNAL_ERROR".asInstanceOf[typings.googlepay.googlepayStrings.INTERNAL_ERROR]
+  inline def INTERNAL_ERROR: typings.googlepay.googlepayStrings.INTERNAL_ERROR = "INTERNAL_ERROR".asInstanceOf[typings.googlepay.googlepayStrings.INTERNAL_ERROR]
   
-  @scala.inline
-  def MERCHANT_ACCOUNT_ERROR: typings.googlepay.googlepayStrings.MERCHANT_ACCOUNT_ERROR = "MERCHANT_ACCOUNT_ERROR".asInstanceOf[typings.googlepay.googlepayStrings.MERCHANT_ACCOUNT_ERROR]
+  inline def MERCHANT_ACCOUNT_ERROR: typings.googlepay.googlepayStrings.MERCHANT_ACCOUNT_ERROR = "MERCHANT_ACCOUNT_ERROR".asInstanceOf[typings.googlepay.googlepayStrings.MERCHANT_ACCOUNT_ERROR]
 }

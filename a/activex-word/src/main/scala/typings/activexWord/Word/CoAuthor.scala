@@ -22,13 +22,12 @@ trait CoAuthor extends StObject {
   
   val Parent: js.Any
   
-  @JSName("Word.CoAuthor_typekey")
+  /* private */ @JSName("Word.CoAuthor_typekey")
   var WordDotCoAuthor_typekey: CoAuthor
 }
 object CoAuthor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: Double,
     EmailAddress: String,
@@ -44,34 +43,24 @@ object CoAuthor {
     __obj.asInstanceOf[CoAuthor]
   }
   
-  @scala.inline
-  implicit class CoAuthorMutableBuilder[Self <: CoAuthor] (val x: Self) extends AnyVal {
+  extension [Self <: CoAuthor](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailAddress(value: String): Self = StObject.set(x, "EmailAddress", value.asInstanceOf[js.Any])
+    inline def setEmailAddress(value: String): Self = StObject.set(x, "EmailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMe(value: Boolean): Self = StObject.set(x, "IsMe", value.asInstanceOf[js.Any])
+    inline def setIsMe(value: Boolean): Self = StObject.set(x, "IsMe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocks(value: CoAuthLocks): Self = StObject.set(x, "Locks", value.asInstanceOf[js.Any])
+    inline def setLocks(value: CoAuthLocks): Self = StObject.set(x, "Locks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotCoAuthor_typekey(value: CoAuthor): Self = StObject.set(x, "Word.CoAuthor_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotCoAuthor_typekey(value: CoAuthor): Self = StObject.set(x, "Word.CoAuthor_typekey", value.asInstanceOf[js.Any])
   }
 }

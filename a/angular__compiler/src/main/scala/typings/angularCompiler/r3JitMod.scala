@@ -15,6 +15,6 @@ object r3JitMod {
     
     def componentModuleUrl(`type`: js.Any, cmpMetadata: js.Any): String = js.native
     
-    var context: js.Any = js.native
+    /* private */ var context: js.Any = js.native
   }
 }

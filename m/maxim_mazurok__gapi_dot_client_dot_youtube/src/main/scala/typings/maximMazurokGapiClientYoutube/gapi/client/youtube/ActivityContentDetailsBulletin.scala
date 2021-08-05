@@ -11,19 +11,15 @@ trait ActivityContentDetailsBulletin extends StObject {
 }
 object ActivityContentDetailsBulletin {
   
-  @scala.inline
-  def apply(): ActivityContentDetailsBulletin = {
+  inline def apply(): ActivityContentDetailsBulletin = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ActivityContentDetailsBulletin]
   }
   
-  @scala.inline
-  implicit class ActivityContentDetailsBulletinMutableBuilder[Self <: ActivityContentDetailsBulletin] (val x: Self) extends AnyVal {
+  extension [Self <: ActivityContentDetailsBulletin](x: Self) {
     
-    @scala.inline
-    def setResourceId(value: ResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: ResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
+    inline def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
   }
 }

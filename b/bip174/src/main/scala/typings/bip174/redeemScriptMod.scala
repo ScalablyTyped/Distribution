@@ -11,6 +11,5 @@ object redeemScriptMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def makeConverter(TYPE_BYTE: Double): Check = ^.asInstanceOf[js.Dynamic].applyDynamic("makeConverter")(TYPE_BYTE.asInstanceOf[js.Any]).asInstanceOf[Check]
+  inline def makeConverter(TYPE_BYTE: Double): Check = ^.asInstanceOf[js.Dynamic].applyDynamic("makeConverter")(TYPE_BYTE.asInstanceOf[js.Any]).asInstanceOf[Check]
 }

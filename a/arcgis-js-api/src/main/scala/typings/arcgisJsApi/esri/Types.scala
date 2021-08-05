@@ -15,8 +15,7 @@ trait Types[T /* <: Base */, Base] extends StObject {
 }
 object Types {
   
-  @scala.inline
-  def apply[T /* <: Base */, Base](
+  inline def apply[T /* <: Base */, Base](
     base: Constructor[Base] | js.Function,
     key: String | (js.Function1[/* obj */ js.Any, String]),
     typeMap: HashMap[Constructor[T]]
@@ -25,19 +24,14 @@ object Types {
     __obj.asInstanceOf[Types[T, Base]]
   }
   
-  @scala.inline
-  implicit class TypesMutableBuilder[Self <: Types[?, ?], T /* <: Base */, Base] (val x: Self & (Types[T, Base])) extends AnyVal {
+  extension [Self <: Types[?, ?], T /* <: Base */, Base](x: Self & (Types[T, Base])) {
     
-    @scala.inline
-    def setBase(value: Constructor[Base] | js.Function): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    inline def setBase(value: Constructor[Base] | js.Function): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: String | (js.Function1[/* obj */ js.Any, String])): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String | (js.Function1[/* obj */ js.Any, String])): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyFunction1(value: /* obj */ js.Any => String): Self = StObject.set(x, "key", js.Any.fromFunction1(value))
+    inline def setKeyFunction1(value: /* obj */ js.Any => String): Self = StObject.set(x, "key", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTypeMap(value: HashMap[Constructor[T]]): Self = StObject.set(x, "typeMap", value.asInstanceOf[js.Any])
+    inline def setTypeMap(value: HashMap[Constructor[T]]): Self = StObject.set(x, "typeMap", value.asInstanceOf[js.Any])
   }
 }

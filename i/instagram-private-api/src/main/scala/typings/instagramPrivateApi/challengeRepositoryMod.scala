@@ -24,7 +24,7 @@ object challengeRepositoryMod {
     @JSName("deltaLoginReview")
     def deltaLoginReview_1(choice: `1`): js.Promise[ChallengeStateResponse] = js.native
     
-    var middleware: js.Any = js.native
+    /* private */ var middleware: js.Any = js.native
     
     def replay(choice: String): js.Promise[ChallengeStateResponse] = js.native
     

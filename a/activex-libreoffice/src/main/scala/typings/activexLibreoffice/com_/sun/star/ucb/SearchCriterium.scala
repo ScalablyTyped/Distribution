@@ -13,16 +13,13 @@ trait SearchCriterium extends StObject {
 }
 object SearchCriterium {
   
-  @scala.inline
-  def apply(Terms: SafeArray[RuleTerm]): SearchCriterium = {
+  inline def apply(Terms: SafeArray[RuleTerm]): SearchCriterium = {
     val __obj = js.Dynamic.literal(Terms = Terms.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchCriterium]
   }
   
-  @scala.inline
-  implicit class SearchCriteriumMutableBuilder[Self <: SearchCriterium] (val x: Self) extends AnyVal {
+  extension [Self <: SearchCriterium](x: Self) {
     
-    @scala.inline
-    def setTerms(value: SafeArray[RuleTerm]): Self = StObject.set(x, "Terms", value.asInstanceOf[js.Any])
+    inline def setTerms(value: SafeArray[RuleTerm]): Self = StObject.set(x, "Terms", value.asInstanceOf[js.Any])
   }
 }

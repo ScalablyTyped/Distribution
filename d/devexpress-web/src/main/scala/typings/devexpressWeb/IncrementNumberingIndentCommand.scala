@@ -18,16 +18,13 @@ trait IncrementNumberingIndentCommand
 }
 object IncrementNumberingIndentCommand {
   
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => SimpleCommandState): IncrementNumberingIndentCommand = {
+  inline def apply(execute: () => Boolean, getState: () => SimpleCommandState): IncrementNumberingIndentCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[IncrementNumberingIndentCommand]
   }
   
-  @scala.inline
-  implicit class IncrementNumberingIndentCommandMutableBuilder[Self <: IncrementNumberingIndentCommand] (val x: Self) extends AnyVal {
+  extension [Self <: IncrementNumberingIndentCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }
 }

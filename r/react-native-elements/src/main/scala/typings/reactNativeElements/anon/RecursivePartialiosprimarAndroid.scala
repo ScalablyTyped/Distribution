@@ -14,25 +14,19 @@ trait RecursivePartialiosprimarAndroid extends StObject {
 }
 object RecursivePartialiosprimarAndroid {
   
-  @scala.inline
-  def apply(): RecursivePartialiosprimarAndroid = {
+  inline def apply(): RecursivePartialiosprimarAndroid = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecursivePartialiosprimarAndroid]
   }
   
-  @scala.inline
-  implicit class RecursivePartialiosprimarAndroidMutableBuilder[Self <: RecursivePartialiosprimarAndroid] (val x: Self) extends AnyVal {
+  extension [Self <: RecursivePartialiosprimarAndroid](x: Self) {
     
-    @scala.inline
-    def setAndroid(value: RecursivePartial[Error]): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
+    inline def setAndroid(value: RecursivePartial[Error]): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidUndefined: Self = StObject.set(x, "android", js.undefined)
+    inline def setAndroidUndefined: Self = StObject.set(x, "android", js.undefined)
     
-    @scala.inline
-    def setIos(value: RecursivePartial[Error]): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
+    inline def setIos(value: RecursivePartial[Error]): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIosUndefined: Self = StObject.set(x, "ios", js.undefined)
+    inline def setIosUndefined: Self = StObject.set(x, "ios", js.undefined)
   }
 }

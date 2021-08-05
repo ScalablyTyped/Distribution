@@ -11,19 +11,15 @@ trait TeamsListIdPGroupsInOrgResponseData extends StObject {
 }
 object TeamsListIdPGroupsInOrgResponseData {
   
-  @scala.inline
-  def apply(groups: js.Array[Groupdescription]): TeamsListIdPGroupsInOrgResponseData = {
+  inline def apply(groups: js.Array[Groupdescription]): TeamsListIdPGroupsInOrgResponseData = {
     val __obj = js.Dynamic.literal(groups = groups.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamsListIdPGroupsInOrgResponseData]
   }
   
-  @scala.inline
-  implicit class TeamsListIdPGroupsInOrgResponseDataMutableBuilder[Self <: TeamsListIdPGroupsInOrgResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: TeamsListIdPGroupsInOrgResponseData](x: Self) {
     
-    @scala.inline
-    def setGroups(value: js.Array[Groupdescription]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: js.Array[Groupdescription]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsVarargs(value: Groupdescription*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: Groupdescription*): Self = StObject.set(x, "groups", js.Array(value :_*))
   }
 }

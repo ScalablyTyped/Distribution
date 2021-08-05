@@ -12,8 +12,7 @@ object mod {
     * @param {string} moduleName Module to require
     * @returns {?Object} Required module if available and not empty, otherwise `null`
     */
-  @scala.inline
-  def apply(moduleName: String): js.Object = ^.asInstanceOf[js.Dynamic].apply(moduleName.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  inline def apply(moduleName: String): js.Object = ^.asInstanceOf[js.Dynamic].apply(moduleName.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
   @JSImport("@protobufjs/inquire", JSImport.Namespace)
   @js.native

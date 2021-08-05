@@ -22,8 +22,7 @@ trait Dra extends StObject {
 }
 object Dra {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dra: Splitter,
     dragHandle: SplitterHandle,
     hover: Splitter,
@@ -35,25 +34,18 @@ object Dra {
     __obj.asInstanceOf[Dra]
   }
   
-  @scala.inline
-  implicit class DraMutableBuilder[Self <: Dra] (val x: Self) extends AnyVal {
+  extension [Self <: Dra](x: Self) {
     
-    @scala.inline
-    def setDra(value: Splitter): Self = StObject.set(x, "dra", value.asInstanceOf[js.Any])
+    inline def setDra(value: Splitter): Self = StObject.set(x, "dra", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragHandle(value: SplitterHandle): Self = StObject.set(x, "dragHandle", value.asInstanceOf[js.Any])
+    inline def setDragHandle(value: SplitterHandle): Self = StObject.set(x, "dragHandle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHover(value: Splitter): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+    inline def setHover(value: Splitter): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverHandle(value: SplitterHandle): Self = StObject.set(x, "hoverHandle", value.asInstanceOf[js.Any])
+    inline def setHoverHandle(value: SplitterHandle): Self = StObject.set(x, "hoverHandle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormal(value: Splitter): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
+    inline def setNormal(value: Splitter): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalHandle(value: SplitterHandle): Self = StObject.set(x, "normalHandle", value.asInstanceOf[js.Any])
+    inline def setNormalHandle(value: SplitterHandle): Self = StObject.set(x, "normalHandle", value.asInstanceOf[js.Any])
   }
 }

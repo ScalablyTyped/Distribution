@@ -14,10 +14,8 @@ object cssMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(element: HTMLElement): Styler = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[Styler]
-  @scala.inline
-  def default(element: HTMLElement, hasEnableHardwareAccelerationAllowTransformNoneProps: Props): Styler = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], hasEnableHardwareAccelerationAllowTransformNoneProps.asInstanceOf[js.Any])).asInstanceOf[Styler]
+  inline def default(element: HTMLElement): Styler = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[Styler]
+  inline def default(element: HTMLElement, hasEnableHardwareAccelerationAllowTransformNoneProps: Props): Styler = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], hasEnableHardwareAccelerationAllowTransformNoneProps.asInstanceOf[js.Any])).asInstanceOf[Styler]
   
   trait CssStylerOptions extends StObject {
     
@@ -31,29 +29,22 @@ object cssMod {
   }
   object CssStylerOptions {
     
-    @scala.inline
-    def apply(buildStyles: State => ResolvedState, element: HTMLElement, preparseOutput: Boolean): CssStylerOptions = {
+    inline def apply(buildStyles: State => ResolvedState, element: HTMLElement, preparseOutput: Boolean): CssStylerOptions = {
       val __obj = js.Dynamic.literal(buildStyles = js.Any.fromFunction1(buildStyles), element = element.asInstanceOf[js.Any], preparseOutput = preparseOutput.asInstanceOf[js.Any])
       __obj.asInstanceOf[CssStylerOptions]
     }
     
-    @scala.inline
-    implicit class CssStylerOptionsMutableBuilder[Self <: CssStylerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CssStylerOptions](x: Self) {
       
-      @scala.inline
-      def setBuildStyles(value: State => ResolvedState): Self = StObject.set(x, "buildStyles", js.Any.fromFunction1(value))
+      inline def setBuildStyles(value: State => ResolvedState): Self = StObject.set(x, "buildStyles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasCSSVariable(value: Boolean): Self = StObject.set(x, "hasCSSVariable", value.asInstanceOf[js.Any])
+      inline def setHasCSSVariable(value: Boolean): Self = StObject.set(x, "hasCSSVariable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasCSSVariableUndefined: Self = StObject.set(x, "hasCSSVariable", js.undefined)
+      inline def setHasCSSVariableUndefined: Self = StObject.set(x, "hasCSSVariable", js.undefined)
       
-      @scala.inline
-      def setPreparseOutput(value: Boolean): Self = StObject.set(x, "preparseOutput", value.asInstanceOf[js.Any])
+      inline def setPreparseOutput(value: Boolean): Self = StObject.set(x, "preparseOutput", value.asInstanceOf[js.Any])
     }
   }
   
@@ -67,32 +58,24 @@ object cssMod {
   }
   object Props {
     
-    @scala.inline
-    def apply(): Props = {
+    inline def apply(): Props = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setAllowTransformNone(value: Boolean): Self = StObject.set(x, "allowTransformNone", value.asInstanceOf[js.Any])
+      inline def setAllowTransformNone(value: Boolean): Self = StObject.set(x, "allowTransformNone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowTransformNoneUndefined: Self = StObject.set(x, "allowTransformNone", js.undefined)
+      inline def setAllowTransformNoneUndefined: Self = StObject.set(x, "allowTransformNone", js.undefined)
       
-      @scala.inline
-      def setEnableHardwareAcceleration(value: Boolean): Self = StObject.set(x, "enableHardwareAcceleration", value.asInstanceOf[js.Any])
+      inline def setEnableHardwareAcceleration(value: Boolean): Self = StObject.set(x, "enableHardwareAcceleration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableHardwareAccelerationUndefined: Self = StObject.set(x, "enableHardwareAcceleration", js.undefined)
+      inline def setEnableHardwareAccelerationUndefined: Self = StObject.set(x, "enableHardwareAcceleration", js.undefined)
       
-      @scala.inline
-      def setPreparseOutput(value: Boolean): Self = StObject.set(x, "preparseOutput", value.asInstanceOf[js.Any])
+      inline def setPreparseOutput(value: Boolean): Self = StObject.set(x, "preparseOutput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreparseOutputUndefined: Self = StObject.set(x, "preparseOutput", js.undefined)
+      inline def setPreparseOutputUndefined: Self = StObject.set(x, "preparseOutput", js.undefined)
     }
   }
 }

@@ -31,32 +31,24 @@ object typesListJobsOutputMod {
   }
   object ListJobsOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): ListJobsOutput = {
+    inline def apply($metadata: ResponseMetadata): ListJobsOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListJobsOutput]
     }
     
-    @scala.inline
-    implicit class ListJobsOutputMutableBuilder[Self <: ListJobsOutput] (val x: Self) extends AnyVal {
+    extension [Self <: ListJobsOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJobList(value: js.Array[UnmarshalledGlacierJobDescription]): Self = StObject.set(x, "JobList", value.asInstanceOf[js.Any])
+      inline def setJobList(value: js.Array[UnmarshalledGlacierJobDescription]): Self = StObject.set(x, "JobList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJobListUndefined: Self = StObject.set(x, "JobList", js.undefined)
+      inline def setJobListUndefined: Self = StObject.set(x, "JobList", js.undefined)
       
-      @scala.inline
-      def setJobListVarargs(value: UnmarshalledGlacierJobDescription*): Self = StObject.set(x, "JobList", js.Array(value :_*))
+      inline def setJobListVarargs(value: UnmarshalledGlacierJobDescription*): Self = StObject.set(x, "JobList", js.Array(value :_*))
       
-      @scala.inline
-      def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+      inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+      inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     }
   }
 }

@@ -33,37 +33,27 @@ trait BuildConfiguration extends StObject {
 }
 object BuildConfiguration {
   
-  @scala.inline
-  def apply(CodeBuildServiceRole: NonEmptyString, Image: NonEmptyString): BuildConfiguration = {
+  inline def apply(CodeBuildServiceRole: NonEmptyString, Image: NonEmptyString): BuildConfiguration = {
     val __obj = js.Dynamic.literal(CodeBuildServiceRole = CodeBuildServiceRole.asInstanceOf[js.Any], Image = Image.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildConfiguration]
   }
   
-  @scala.inline
-  implicit class BuildConfigurationMutableBuilder[Self <: BuildConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: BuildConfiguration](x: Self) {
     
-    @scala.inline
-    def setArtifactName(value: String): Self = StObject.set(x, "ArtifactName", value.asInstanceOf[js.Any])
+    inline def setArtifactName(value: String): Self = StObject.set(x, "ArtifactName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtifactNameUndefined: Self = StObject.set(x, "ArtifactName", js.undefined)
+    inline def setArtifactNameUndefined: Self = StObject.set(x, "ArtifactName", js.undefined)
     
-    @scala.inline
-    def setCodeBuildServiceRole(value: NonEmptyString): Self = StObject.set(x, "CodeBuildServiceRole", value.asInstanceOf[js.Any])
+    inline def setCodeBuildServiceRole(value: NonEmptyString): Self = StObject.set(x, "CodeBuildServiceRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputeType(value: ComputeType): Self = StObject.set(x, "ComputeType", value.asInstanceOf[js.Any])
+    inline def setComputeType(value: ComputeType): Self = StObject.set(x, "ComputeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputeTypeUndefined: Self = StObject.set(x, "ComputeType", js.undefined)
+    inline def setComputeTypeUndefined: Self = StObject.set(x, "ComputeType", js.undefined)
     
-    @scala.inline
-    def setImage(value: NonEmptyString): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
+    inline def setImage(value: NonEmptyString): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutInMinutes(value: BoxedInt): Self = StObject.set(x, "TimeoutInMinutes", value.asInstanceOf[js.Any])
+    inline def setTimeoutInMinutes(value: BoxedInt): Self = StObject.set(x, "TimeoutInMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutInMinutesUndefined: Self = StObject.set(x, "TimeoutInMinutes", js.undefined)
+    inline def setTimeoutInMinutesUndefined: Self = StObject.set(x, "TimeoutInMinutes", js.undefined)
   }
 }

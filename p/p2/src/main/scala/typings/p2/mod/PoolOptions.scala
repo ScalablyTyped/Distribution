@@ -10,19 +10,15 @@ trait PoolOptions extends StObject {
 }
 object PoolOptions {
   
-  @scala.inline
-  def apply(): PoolOptions = {
+  inline def apply(): PoolOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PoolOptions]
   }
   
-  @scala.inline
-  implicit class PoolOptionsMutableBuilder[Self <: PoolOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PoolOptions](x: Self) {
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

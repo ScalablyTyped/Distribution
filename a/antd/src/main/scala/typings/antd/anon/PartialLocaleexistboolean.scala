@@ -52,121 +52,83 @@ trait PartialLocaleexistboolean extends StObject {
 }
 object PartialLocaleexistboolean {
   
-  @scala.inline
-  def apply(): PartialLocaleexistboolean = {
+  inline def apply(): PartialLocaleexistboolean = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialLocaleexistboolean]
   }
   
-  @scala.inline
-  implicit class PartialLocaleexistbooleanMutableBuilder[Self <: PartialLocaleexistboolean] (val x: Self) extends AnyVal {
+  extension [Self <: PartialLocaleexistboolean](x: Self) {
     
-    @scala.inline
-    def setCalendar(value: js.Object): Self = StObject.set(x, "Calendar", value.asInstanceOf[js.Any])
+    inline def setCalendar(value: js.Object): Self = StObject.set(x, "Calendar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalendarUndefined: Self = StObject.set(x, "Calendar", js.undefined)
+    inline def setCalendarUndefined: Self = StObject.set(x, "Calendar", js.undefined)
     
-    @scala.inline
-    def setDatePicker(value: PickerLocale): Self = StObject.set(x, "DatePicker", value.asInstanceOf[js.Any])
+    inline def setDatePicker(value: PickerLocale): Self = StObject.set(x, "DatePicker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatePickerUndefined: Self = StObject.set(x, "DatePicker", js.undefined)
+    inline def setDatePickerUndefined: Self = StObject.set(x, "DatePicker", js.undefined)
     
-    @scala.inline
-    def setEmpty(value: TransferLocale): Self = StObject.set(x, "Empty", value.asInstanceOf[js.Any])
+    inline def setEmpty(value: TransferLocale): Self = StObject.set(x, "Empty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmptyUndefined: Self = StObject.set(x, "Empty", js.undefined)
+    inline def setEmptyUndefined: Self = StObject.set(x, "Empty", js.undefined)
     
-    @scala.inline
-    def setExist(value: Boolean): Self = StObject.set(x, "exist", value.asInstanceOf[js.Any])
+    inline def setExist(value: Boolean): Self = StObject.set(x, "exist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExistUndefined: Self = StObject.set(x, "exist", js.undefined)
+    inline def setExistUndefined: Self = StObject.set(x, "exist", js.undefined)
     
-    @scala.inline
-    def setForm(value: DefaultValidateMessages): Self = StObject.set(x, "Form", value.asInstanceOf[js.Any])
+    inline def setForm(value: DefaultValidateMessages): Self = StObject.set(x, "Form", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormUndefined: Self = StObject.set(x, "Form", js.undefined)
+    inline def setFormUndefined: Self = StObject.set(x, "Form", js.undefined)
     
-    @scala.inline
-    def setGlobal(value: js.Object): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+    inline def setGlobal(value: js.Object): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
+    inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
     
-    @scala.inline
-    def setIcon(value: js.Object): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: js.Object): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "Icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "Icon", js.undefined)
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setModal(value: ModalLocale): Self = StObject.set(x, "Modal", value.asInstanceOf[js.Any])
+    inline def setModal(value: ModalLocale): Self = StObject.set(x, "Modal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalUndefined: Self = StObject.set(x, "Modal", js.undefined)
+    inline def setModalUndefined: Self = StObject.set(x, "Modal", js.undefined)
     
-    @scala.inline
-    def setPageHeader(value: js.Object): Self = StObject.set(x, "PageHeader", value.asInstanceOf[js.Any])
+    inline def setPageHeader(value: js.Object): Self = StObject.set(x, "PageHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageHeaderUndefined: Self = StObject.set(x, "PageHeader", js.undefined)
+    inline def setPageHeaderUndefined: Self = StObject.set(x, "PageHeader", js.undefined)
     
-    @scala.inline
-    def setPagination(value: PaginationLocale): Self = StObject.set(x, "Pagination", value.asInstanceOf[js.Any])
+    inline def setPagination(value: PaginationLocale): Self = StObject.set(x, "Pagination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaginationUndefined: Self = StObject.set(x, "Pagination", js.undefined)
+    inline def setPaginationUndefined: Self = StObject.set(x, "Pagination", js.undefined)
     
-    @scala.inline
-    def setPopconfirm(value: PopconfirmLocale): Self = StObject.set(x, "Popconfirm", value.asInstanceOf[js.Any])
+    inline def setPopconfirm(value: PopconfirmLocale): Self = StObject.set(x, "Popconfirm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopconfirmUndefined: Self = StObject.set(x, "Popconfirm", js.undefined)
+    inline def setPopconfirmUndefined: Self = StObject.set(x, "Popconfirm", js.undefined)
     
-    @scala.inline
-    def setSelect(value: js.Object): Self = StObject.set(x, "Select", value.asInstanceOf[js.Any])
+    inline def setSelect(value: js.Object): Self = StObject.set(x, "Select", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectUndefined: Self = StObject.set(x, "Select", js.undefined)
+    inline def setSelectUndefined: Self = StObject.set(x, "Select", js.undefined)
     
-    @scala.inline
-    def setTable(value: TableLocale): Self = StObject.set(x, "Table", value.asInstanceOf[js.Any])
+    inline def setTable(value: TableLocale): Self = StObject.set(x, "Table", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableUndefined: Self = StObject.set(x, "Table", js.undefined)
+    inline def setTableUndefined: Self = StObject.set(x, "Table", js.undefined)
     
-    @scala.inline
-    def setText(value: js.Object): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: js.Object): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "Text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "Text", js.undefined)
     
-    @scala.inline
-    def setTimePicker(value: js.Object): Self = StObject.set(x, "TimePicker", value.asInstanceOf[js.Any])
+    inline def setTimePicker(value: js.Object): Self = StObject.set(x, "TimePicker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimePickerUndefined: Self = StObject.set(x, "TimePicker", js.undefined)
+    inline def setTimePickerUndefined: Self = StObject.set(x, "TimePicker", js.undefined)
     
-    @scala.inline
-    def setTransfer(value: PartialTransferLocale): Self = StObject.set(x, "Transfer", value.asInstanceOf[js.Any])
+    inline def setTransfer(value: PartialTransferLocale): Self = StObject.set(x, "Transfer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransferUndefined: Self = StObject.set(x, "Transfer", js.undefined)
+    inline def setTransferUndefined: Self = StObject.set(x, "Transfer", js.undefined)
     
-    @scala.inline
-    def setUpload(value: UploadLocale): Self = StObject.set(x, "Upload", value.asInstanceOf[js.Any])
+    inline def setUpload(value: UploadLocale): Self = StObject.set(x, "Upload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadUndefined: Self = StObject.set(x, "Upload", js.undefined)
+    inline def setUploadUndefined: Self = StObject.set(x, "Upload", js.undefined)
   }
 }

@@ -23,31 +23,23 @@ trait DescribeTemplateAliasResponse extends StObject {
 }
 object DescribeTemplateAliasResponse {
   
-  @scala.inline
-  def apply(): DescribeTemplateAliasResponse = {
+  inline def apply(): DescribeTemplateAliasResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeTemplateAliasResponse]
   }
   
-  @scala.inline
-  implicit class DescribeTemplateAliasResponseMutableBuilder[Self <: DescribeTemplateAliasResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTemplateAliasResponse](x: Self) {
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: StatusCode): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: StatusCode): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setTemplateAlias(value: TemplateAlias): Self = StObject.set(x, "TemplateAlias", value.asInstanceOf[js.Any])
+    inline def setTemplateAlias(value: TemplateAlias): Self = StObject.set(x, "TemplateAlias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateAliasUndefined: Self = StObject.set(x, "TemplateAlias", js.undefined)
+    inline def setTemplateAliasUndefined: Self = StObject.set(x, "TemplateAlias", js.undefined)
   }
 }

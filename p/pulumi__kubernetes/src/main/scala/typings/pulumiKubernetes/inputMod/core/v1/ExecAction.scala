@@ -17,22 +17,17 @@ trait ExecAction extends StObject {
 }
 object ExecAction {
   
-  @scala.inline
-  def apply(): ExecAction = {
+  inline def apply(): ExecAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExecAction]
   }
   
-  @scala.inline
-  implicit class ExecActionMutableBuilder[Self <: ExecAction] (val x: Self) extends AnyVal {
+  extension [Self <: ExecAction](x: Self) {
     
-    @scala.inline
-    def setCommand(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
+    inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
     
-    @scala.inline
-    def setCommandVarargs(value: Input[String]*): Self = StObject.set(x, "command", js.Array(value :_*))
+    inline def setCommandVarargs(value: Input[String]*): Self = StObject.set(x, "command", js.Array(value :_*))
   }
 }

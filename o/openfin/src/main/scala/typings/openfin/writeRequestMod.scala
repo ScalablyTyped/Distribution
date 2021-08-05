@@ -15,23 +15,18 @@ object writeRequestMod {
   }
   object WriteAnyRequestType {
     
-    @scala.inline
-    def apply(data: Html): WriteAnyRequestType = {
+    inline def apply(data: Html): WriteAnyRequestType = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[WriteAnyRequestType]
     }
     
-    @scala.inline
-    implicit class WriteAnyRequestTypeMutableBuilder[Self <: WriteAnyRequestType] (val x: Self) extends AnyVal {
+    extension [Self <: WriteAnyRequestType](x: Self) {
       
-      @scala.inline
-      def setData(value: Html): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Html): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -43,23 +38,18 @@ object writeRequestMod {
   }
   object WriteRequestType {
     
-    @scala.inline
-    def apply(data: String): WriteRequestType = {
+    inline def apply(data: String): WriteRequestType = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[WriteRequestType]
     }
     
-    @scala.inline
-    implicit class WriteRequestTypeMutableBuilder[Self <: WriteRequestType] (val x: Self) extends AnyVal {
+    extension [Self <: WriteRequestType](x: Self) {
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

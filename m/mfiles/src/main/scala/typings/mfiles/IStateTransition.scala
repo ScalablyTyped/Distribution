@@ -37,8 +37,7 @@ trait IStateTransition extends StObject {
 }
 object IStateTransition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessControlList: IAccessControlList,
     Clone: () => IStateTransition,
     Description: String,
@@ -58,49 +57,34 @@ object IStateTransition {
     __obj.asInstanceOf[IStateTransition]
   }
   
-  @scala.inline
-  implicit class IStateTransitionMutableBuilder[Self <: IStateTransition] (val x: Self) extends AnyVal {
+  extension [Self <: IStateTransition](x: Self) {
     
-    @scala.inline
-    def setAccessControlList(value: IAccessControlList): Self = StObject.set(x, "AccessControlList", value.asInstanceOf[js.Any])
+    inline def setAccessControlList(value: IAccessControlList): Self = StObject.set(x, "AccessControlList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClone(value: () => IStateTransition): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IStateTransition): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluationOrderNumber(value: Double): Self = StObject.set(x, "EvaluationOrderNumber", value.asInstanceOf[js.Any])
+    inline def setEvaluationOrderNumber(value: Double): Self = StObject.set(x, "EvaluationOrderNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromState(value: Double): Self = StObject.set(x, "FromState", value.asInstanceOf[js.Any])
+    inline def setFromState(value: Double): Self = StObject.set(x, "FromState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSemanticAliases(value: ISemanticAliases): Self = StObject.set(x, "SemanticAliases", value.asInstanceOf[js.Any])
+    inline def setSemanticAliases(value: ISemanticAliases): Self = StObject.set(x, "SemanticAliases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureSettings(value: ISignatureSettings): Self = StObject.set(x, "SignatureSettings", value.asInstanceOf[js.Any])
+    inline def setSignatureSettings(value: ISignatureSettings): Self = StObject.set(x, "SignatureSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToState(value: Double): Self = StObject.set(x, "ToState", value.asInstanceOf[js.Any])
+    inline def setToState(value: Double): Self = StObject.set(x, "ToState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerAllowedByVBScript(value: String): Self = StObject.set(x, "TriggerAllowedByVBScript", value.asInstanceOf[js.Any])
+    inline def setTriggerAllowedByVBScript(value: String): Self = StObject.set(x, "TriggerAllowedByVBScript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerCriteria(value: ISearchConditions): Self = StObject.set(x, "TriggerCriteria", value.asInstanceOf[js.Any])
+    inline def setTriggerCriteria(value: ISearchConditions): Self = StObject.set(x, "TriggerCriteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerInDays(value: Double): Self = StObject.set(x, "TriggerInDays", value.asInstanceOf[js.Any])
+    inline def setTriggerInDays(value: Double): Self = StObject.set(x, "TriggerInDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerMode(value: MFAutoStateTransitionMode): Self = StObject.set(x, "TriggerMode", value.asInstanceOf[js.Any])
+    inline def setTriggerMode(value: MFAutoStateTransitionMode): Self = StObject.set(x, "TriggerMode", value.asInstanceOf[js.Any])
   }
 }

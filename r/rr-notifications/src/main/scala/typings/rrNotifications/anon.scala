@@ -35,47 +35,34 @@ object anon {
   }
   object AnimationDuration {
     
-    @scala.inline
-    def apply(renderNotification: Payload => Element): AnimationDuration = {
+    inline def apply(renderNotification: Payload => Element): AnimationDuration = {
       val __obj = js.Dynamic.literal(renderNotification = js.Any.fromFunction1(renderNotification))
       __obj.asInstanceOf[AnimationDuration]
     }
     
-    @scala.inline
-    implicit class AnimationDurationMutableBuilder[Self <: AnimationDuration] (val x: Self) extends AnyVal {
+    extension [Self <: AnimationDuration](x: Self) {
       
-      @scala.inline
-      def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
+      inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
+      inline def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
       
-      @scala.inline
-      def setAnimationEasing(value: String): Self = StObject.set(x, "animationEasing", value.asInstanceOf[js.Any])
+      inline def setAnimationEasing(value: String): Self = StObject.set(x, "animationEasing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationEasingUndefined: Self = StObject.set(x, "animationEasing", js.undefined)
+      inline def setAnimationEasingUndefined: Self = StObject.set(x, "animationEasing", js.undefined)
       
-      @scala.inline
-      def setDismissAfter(value: Double): Self = StObject.set(x, "dismissAfter", value.asInstanceOf[js.Any])
+      inline def setDismissAfter(value: Double): Self = StObject.set(x, "dismissAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDismissAfterUndefined: Self = StObject.set(x, "dismissAfter", js.undefined)
+      inline def setDismissAfterUndefined: Self = StObject.set(x, "dismissAfter", js.undefined)
       
-      @scala.inline
-      def setPosition(value: js.Tuple4[String, String, String, String]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: js.Tuple4[String, String, String, String]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setRenderNotification(value: Payload => Element): Self = StObject.set(x, "renderNotification", js.Any.fromFunction1(value))
+      inline def setRenderNotification(value: Payload => Element): Self = StObject.set(x, "renderNotification", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSlideFromSide(value: right | left): Self = StObject.set(x, "slideFromSide", value.asInstanceOf[js.Any])
+      inline def setSlideFromSide(value: right | left): Self = StObject.set(x, "slideFromSide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideFromSideUndefined: Self = StObject.set(x, "slideFromSide", js.undefined)
+      inline def setSlideFromSideUndefined: Self = StObject.set(x, "slideFromSide", js.undefined)
     }
   }
   
@@ -87,20 +74,16 @@ object anon {
   }
   object Payload {
     
-    @scala.inline
-    def apply(payload: NotificationPayload, removeNotification: () => Unit): Payload = {
+    inline def apply(payload: NotificationPayload, removeNotification: () => Unit): Payload = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any], removeNotification = js.Any.fromFunction0(removeNotification))
       __obj.asInstanceOf[Payload]
     }
     
-    @scala.inline
-    implicit class PayloadMutableBuilder[Self <: Payload] (val x: Self) extends AnyVal {
+    extension [Self <: Payload](x: Self) {
       
-      @scala.inline
-      def setPayload(value: NotificationPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: NotificationPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveNotification(value: () => Unit): Self = StObject.set(x, "removeNotification", js.Any.fromFunction0(value))
+      inline def setRemoveNotification(value: () => Unit): Self = StObject.set(x, "removeNotification", js.Any.fromFunction0(value))
     }
   }
 }

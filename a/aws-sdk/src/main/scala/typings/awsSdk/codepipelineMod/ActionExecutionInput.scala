@@ -40,58 +40,41 @@ trait ActionExecutionInput extends StObject {
 }
 object ActionExecutionInput {
   
-  @scala.inline
-  def apply(): ActionExecutionInput = {
+  inline def apply(): ActionExecutionInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ActionExecutionInput]
   }
   
-  @scala.inline
-  implicit class ActionExecutionInputMutableBuilder[Self <: ActionExecutionInput] (val x: Self) extends AnyVal {
+  extension [Self <: ActionExecutionInput](x: Self) {
     
-    @scala.inline
-    def setActionTypeId(value: ActionTypeId): Self = StObject.set(x, "actionTypeId", value.asInstanceOf[js.Any])
+    inline def setActionTypeId(value: ActionTypeId): Self = StObject.set(x, "actionTypeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionTypeIdUndefined: Self = StObject.set(x, "actionTypeId", js.undefined)
+    inline def setActionTypeIdUndefined: Self = StObject.set(x, "actionTypeId", js.undefined)
     
-    @scala.inline
-    def setConfiguration(value: ActionConfigurationMap): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+    inline def setConfiguration(value: ActionConfigurationMap): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
+    inline def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
     
-    @scala.inline
-    def setInputArtifacts(value: ArtifactDetailList): Self = StObject.set(x, "inputArtifacts", value.asInstanceOf[js.Any])
+    inline def setInputArtifacts(value: ArtifactDetailList): Self = StObject.set(x, "inputArtifacts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputArtifactsUndefined: Self = StObject.set(x, "inputArtifacts", js.undefined)
+    inline def setInputArtifactsUndefined: Self = StObject.set(x, "inputArtifacts", js.undefined)
     
-    @scala.inline
-    def setInputArtifactsVarargs(value: ArtifactDetail*): Self = StObject.set(x, "inputArtifacts", js.Array(value :_*))
+    inline def setInputArtifactsVarargs(value: ArtifactDetail*): Self = StObject.set(x, "inputArtifacts", js.Array(value :_*))
     
-    @scala.inline
-    def setNamespace(value: ActionNamespace): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: ActionNamespace): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+    inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
-    @scala.inline
-    def setRegion(value: AWSRegionName): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: AWSRegionName): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
-    @scala.inline
-    def setResolvedConfiguration(value: ResolvedActionConfigurationMap): Self = StObject.set(x, "resolvedConfiguration", value.asInstanceOf[js.Any])
+    inline def setResolvedConfiguration(value: ResolvedActionConfigurationMap): Self = StObject.set(x, "resolvedConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolvedConfigurationUndefined: Self = StObject.set(x, "resolvedConfiguration", js.undefined)
+    inline def setResolvedConfigurationUndefined: Self = StObject.set(x, "resolvedConfiguration", js.undefined)
     
-    @scala.inline
-    def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
+    inline def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
   }
 }

@@ -16,20 +16,16 @@ object chunkMod {
   }
   object IChunk {
     
-    @scala.inline
-    def apply(chunk: Buffer | String, encoding: BufferEncoding): IChunk = {
+    inline def apply(chunk: Buffer | String, encoding: BufferEncoding): IChunk = {
       val __obj = js.Dynamic.literal(chunk = chunk.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any])
       __obj.asInstanceOf[IChunk]
     }
     
-    @scala.inline
-    implicit class IChunkMutableBuilder[Self <: IChunk] (val x: Self) extends AnyVal {
+    extension [Self <: IChunk](x: Self) {
       
-      @scala.inline
-      def setChunk(value: Buffer | String): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
+      inline def setChunk(value: Buffer | String): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     }
   }
 }

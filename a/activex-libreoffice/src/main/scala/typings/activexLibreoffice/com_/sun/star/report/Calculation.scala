@@ -53,67 +53,46 @@ object Calculation {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def AVERAGE: `1` = 1.asInstanceOf[`1`]
+    inline def AVERAGE: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def CORRELATION: `2` = 2.asInstanceOf[`2`]
+    inline def CORRELATION: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def COUNT: `3` = 3.asInstanceOf[`3`]
+    inline def COUNT: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def COVARIANCE: `4` = 4.asInstanceOf[`4`]
+    inline def COVARIANCE: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def DISTINCTCOUNT: `5` = 5.asInstanceOf[`5`]
+    inline def DISTINCTCOUNT: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def MAXIMUM: `6` = 6.asInstanceOf[`6`]
+    inline def MAXIMUM: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def MEDIAN: `7` = 7.asInstanceOf[`7`]
+    inline def MEDIAN: `7` = 7.asInstanceOf[`7`]
     
-    @scala.inline
-    def MINIMUM: `8` = 8.asInstanceOf[`8`]
+    inline def MINIMUM: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def MODE: `9` = 9.asInstanceOf[`9`]
+    inline def MODE: `9` = 9.asInstanceOf[`9`]
     
-    @scala.inline
-    def NONE: `0` = 0.asInstanceOf[`0`]
+    inline def NONE: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def NTHLARGEST: `10` = 10.asInstanceOf[`10`]
+    inline def NTHLARGEST: `10` = 10.asInstanceOf[`10`]
     
-    @scala.inline
-    def NTHMOSTFREQUENT: `11` = 11.asInstanceOf[`11`]
+    inline def NTHMOSTFREQUENT: `11` = 11.asInstanceOf[`11`]
     
-    @scala.inline
-    def NTHSMALLEST: `12` = 12.asInstanceOf[`12`]
+    inline def NTHSMALLEST: `12` = 12.asInstanceOf[`12`]
     
-    @scala.inline
-    def PERCENTAGE: `13` = 13.asInstanceOf[`13`]
+    inline def PERCENTAGE: `13` = 13.asInstanceOf[`13`]
     
-    @scala.inline
-    def PERCENTILE: `14` = 14.asInstanceOf[`14`]
+    inline def PERCENTILE: `14` = 14.asInstanceOf[`14`]
     
-    @scala.inline
-    def POPSTANDARDDEVIATION: `15` = 15.asInstanceOf[`15`]
+    inline def POPSTANDARDDEVIATION: `15` = 15.asInstanceOf[`15`]
     
-    @scala.inline
-    def POPVARIANCE: `16` = 16.asInstanceOf[`16`]
+    inline def POPVARIANCE: `16` = 16.asInstanceOf[`16`]
     
-    @scala.inline
-    def SAMPLESTANDARDDEVIATION: `17` = 17.asInstanceOf[`17`]
+    inline def SAMPLESTANDARDDEVIATION: `17` = 17.asInstanceOf[`17`]
     
-    @scala.inline
-    def SAMPLEVARIANCE: `18` = 18.asInstanceOf[`18`]
+    inline def SAMPLEVARIANCE: `18` = 18.asInstanceOf[`18`]
     
-    @scala.inline
-    def SUM: `19` = 19.asInstanceOf[`19`]
+    inline def SUM: `19` = 19.asInstanceOf[`19`]
     
-    @scala.inline
-    def WEIGHTEDAVG: `20` = 20.asInstanceOf[`20`]
+    inline def WEIGHTEDAVG: `20` = 20.asInstanceOf[`20`]
   }
 }

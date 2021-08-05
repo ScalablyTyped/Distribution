@@ -23,34 +23,25 @@ trait DeleteTagsRequest extends StObject {
 }
 object DeleteTagsRequest {
   
-  @scala.inline
-  def apply(Resources: ResourceIdList): DeleteTagsRequest = {
+  inline def apply(Resources: ResourceIdList): DeleteTagsRequest = {
     val __obj = js.Dynamic.literal(Resources = Resources.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTagsRequest]
   }
   
-  @scala.inline
-  implicit class DeleteTagsRequestMutableBuilder[Self <: DeleteTagsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteTagsRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setResources(value: ResourceIdList): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: ResourceIdList): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesVarargs(value: TaggableResourceId*): Self = StObject.set(x, "Resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: TaggableResourceId*): Self = StObject.set(x, "Resources", js.Array(value :_*))
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

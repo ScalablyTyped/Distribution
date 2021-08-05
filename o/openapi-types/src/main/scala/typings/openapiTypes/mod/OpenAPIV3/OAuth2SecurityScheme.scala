@@ -16,20 +16,16 @@ trait OAuth2SecurityScheme
 }
 object OAuth2SecurityScheme {
   
-  @scala.inline
-  def apply(flows: AuthorizationCode): OAuth2SecurityScheme = {
+  inline def apply(flows: AuthorizationCode): OAuth2SecurityScheme = {
     val __obj = js.Dynamic.literal(flows = flows.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("oauth2")
     __obj.asInstanceOf[OAuth2SecurityScheme]
   }
   
-  @scala.inline
-  implicit class OAuth2SecuritySchemeMutableBuilder[Self <: OAuth2SecurityScheme] (val x: Self) extends AnyVal {
+  extension [Self <: OAuth2SecurityScheme](x: Self) {
     
-    @scala.inline
-    def setFlows(value: AuthorizationCode): Self = StObject.set(x, "flows", value.asInstanceOf[js.Any])
+    inline def setFlows(value: AuthorizationCode): Self = StObject.set(x, "flows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: oauth2): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: oauth2): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

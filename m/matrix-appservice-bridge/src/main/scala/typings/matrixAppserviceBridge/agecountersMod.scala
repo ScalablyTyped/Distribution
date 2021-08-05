@@ -27,9 +27,9 @@ object agecountersMod {
       */
     def bump(age: Double): Unit = js.native
     
-    var counterPeriods: js.Any = js.native
+    /* private */ var counterPeriods: js.Any = js.native
     
-    var counters: js.Any = js.native
+    /* private */ var counters: js.Any = js.native
     
     /**
       * Fetch the counts in the age buckets and set them as labeled observations in

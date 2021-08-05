@@ -29,8 +29,7 @@ trait Flags
 }
 object Flags {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dotAll: Boolean,
     end: Double,
     global: Boolean,
@@ -46,34 +45,24 @@ object Flags {
     __obj.asInstanceOf[Flags]
   }
   
-  @scala.inline
-  implicit class FlagsMutableBuilder[Self <: Flags] (val x: Self) extends AnyVal {
+  extension [Self <: Flags](x: Self) {
     
-    @scala.inline
-    def setDotAll(value: Boolean): Self = StObject.set(x, "dotAll", value.asInstanceOf[js.Any])
+    inline def setDotAll(value: Boolean): Self = StObject.set(x, "dotAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+    inline def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
+    inline def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiline(value: Boolean): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
+    inline def setMultiline(value: Boolean): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: RegExpLiteral): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: RegExpLiteral): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentNull: Self = StObject.set(x, "parent", null)
+    inline def setParentNull: Self = StObject.set(x, "parent", null)
     
-    @scala.inline
-    def setSticky(value: Boolean): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
+    inline def setSticky(value: Boolean): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.regexpp.regexppStrings.Flags): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.regexpp.regexppStrings.Flags): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnicode(value: Boolean): Self = StObject.set(x, "unicode", value.asInstanceOf[js.Any])
+    inline def setUnicode(value: Boolean): Self = StObject.set(x, "unicode", value.asInstanceOf[js.Any])
   }
 }

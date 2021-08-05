@@ -68,70 +68,49 @@ trait IViewZone extends StObject {
 }
 object IViewZone {
   
-  @scala.inline
-  def apply(afterLineNumber: Double, domNode: HTMLElement): IViewZone = {
+  inline def apply(afterLineNumber: Double, domNode: HTMLElement): IViewZone = {
     val __obj = js.Dynamic.literal(afterLineNumber = afterLineNumber.asInstanceOf[js.Any], domNode = domNode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IViewZone]
   }
   
-  @scala.inline
-  implicit class IViewZoneMutableBuilder[Self <: IViewZone] (val x: Self) extends AnyVal {
+  extension [Self <: IViewZone](x: Self) {
     
-    @scala.inline
-    def setAfterColumn(value: Double): Self = StObject.set(x, "afterColumn", value.asInstanceOf[js.Any])
+    inline def setAfterColumn(value: Double): Self = StObject.set(x, "afterColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfterColumnUndefined: Self = StObject.set(x, "afterColumn", js.undefined)
+    inline def setAfterColumnUndefined: Self = StObject.set(x, "afterColumn", js.undefined)
     
-    @scala.inline
-    def setAfterLineNumber(value: Double): Self = StObject.set(x, "afterLineNumber", value.asInstanceOf[js.Any])
+    inline def setAfterLineNumber(value: Double): Self = StObject.set(x, "afterLineNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomNode(value: HTMLElement): Self = StObject.set(x, "domNode", value.asInstanceOf[js.Any])
+    inline def setDomNode(value: HTMLElement): Self = StObject.set(x, "domNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightInLines(value: Double): Self = StObject.set(x, "heightInLines", value.asInstanceOf[js.Any])
+    inline def setHeightInLines(value: Double): Self = StObject.set(x, "heightInLines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightInLinesUndefined: Self = StObject.set(x, "heightInLines", js.undefined)
+    inline def setHeightInLinesUndefined: Self = StObject.set(x, "heightInLines", js.undefined)
     
-    @scala.inline
-    def setHeightInPx(value: Double): Self = StObject.set(x, "heightInPx", value.asInstanceOf[js.Any])
+    inline def setHeightInPx(value: Double): Self = StObject.set(x, "heightInPx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightInPxUndefined: Self = StObject.set(x, "heightInPx", js.undefined)
+    inline def setHeightInPxUndefined: Self = StObject.set(x, "heightInPx", js.undefined)
     
-    @scala.inline
-    def setMarginDomNode(value: HTMLElement): Self = StObject.set(x, "marginDomNode", value.asInstanceOf[js.Any])
+    inline def setMarginDomNode(value: HTMLElement): Self = StObject.set(x, "marginDomNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginDomNodeNull: Self = StObject.set(x, "marginDomNode", null)
+    inline def setMarginDomNodeNull: Self = StObject.set(x, "marginDomNode", null)
     
-    @scala.inline
-    def setMarginDomNodeUndefined: Self = StObject.set(x, "marginDomNode", js.undefined)
+    inline def setMarginDomNodeUndefined: Self = StObject.set(x, "marginDomNode", js.undefined)
     
-    @scala.inline
-    def setMinWidthInPx(value: Double): Self = StObject.set(x, "minWidthInPx", value.asInstanceOf[js.Any])
+    inline def setMinWidthInPx(value: Double): Self = StObject.set(x, "minWidthInPx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinWidthInPxUndefined: Self = StObject.set(x, "minWidthInPx", js.undefined)
+    inline def setMinWidthInPxUndefined: Self = StObject.set(x, "minWidthInPx", js.undefined)
     
-    @scala.inline
-    def setOnComputedHeight(value: /* height */ Double => Unit): Self = StObject.set(x, "onComputedHeight", js.Any.fromFunction1(value))
+    inline def setOnComputedHeight(value: /* height */ Double => Unit): Self = StObject.set(x, "onComputedHeight", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnComputedHeightUndefined: Self = StObject.set(x, "onComputedHeight", js.undefined)
+    inline def setOnComputedHeightUndefined: Self = StObject.set(x, "onComputedHeight", js.undefined)
     
-    @scala.inline
-    def setOnDomNodeTop(value: /* top */ Double => Unit): Self = StObject.set(x, "onDomNodeTop", js.Any.fromFunction1(value))
+    inline def setOnDomNodeTop(value: /* top */ Double => Unit): Self = StObject.set(x, "onDomNodeTop", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDomNodeTopUndefined: Self = StObject.set(x, "onDomNodeTop", js.undefined)
+    inline def setOnDomNodeTopUndefined: Self = StObject.set(x, "onDomNodeTop", js.undefined)
     
-    @scala.inline
-    def setSuppressMouseDown(value: Boolean): Self = StObject.set(x, "suppressMouseDown", value.asInstanceOf[js.Any])
+    inline def setSuppressMouseDown(value: Boolean): Self = StObject.set(x, "suppressMouseDown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuppressMouseDownUndefined: Self = StObject.set(x, "suppressMouseDown", js.undefined)
+    inline def setSuppressMouseDownUndefined: Self = StObject.set(x, "suppressMouseDown", js.undefined)
   }
 }

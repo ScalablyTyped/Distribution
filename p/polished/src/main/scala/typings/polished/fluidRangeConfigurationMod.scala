@@ -16,23 +16,18 @@ object fluidRangeConfigurationMod {
   }
   object FluidRangeConfiguration {
     
-    @scala.inline
-    def apply(fromSize: String | Double, prop: String, toSize: String | Double): FluidRangeConfiguration = {
+    inline def apply(fromSize: String | Double, prop: String, toSize: String | Double): FluidRangeConfiguration = {
       val __obj = js.Dynamic.literal(fromSize = fromSize.asInstanceOf[js.Any], prop = prop.asInstanceOf[js.Any], toSize = toSize.asInstanceOf[js.Any])
       __obj.asInstanceOf[FluidRangeConfiguration]
     }
     
-    @scala.inline
-    implicit class FluidRangeConfigurationMutableBuilder[Self <: FluidRangeConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: FluidRangeConfiguration](x: Self) {
       
-      @scala.inline
-      def setFromSize(value: String | Double): Self = StObject.set(x, "fromSize", value.asInstanceOf[js.Any])
+      inline def setFromSize(value: String | Double): Self = StObject.set(x, "fromSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProp(value: String): Self = StObject.set(x, "prop", value.asInstanceOf[js.Any])
+      inline def setProp(value: String): Self = StObject.set(x, "prop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToSize(value: String | Double): Self = StObject.set(x, "toSize", value.asInstanceOf[js.Any])
+      inline def setToSize(value: String | Double): Self = StObject.set(x, "toSize", value.asInstanceOf[js.Any])
     }
   }
 }

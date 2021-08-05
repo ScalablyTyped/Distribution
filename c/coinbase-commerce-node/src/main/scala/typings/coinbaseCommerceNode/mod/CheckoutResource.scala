@@ -36,31 +36,23 @@ trait CheckoutResource
 }
 object CheckoutResource {
   
-  @scala.inline
-  def apply(description: String, id: String, name: String, pricing_type: PricingType): CheckoutResource = {
+  inline def apply(description: String, id: String, name: String, pricing_type: PricingType): CheckoutResource = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pricing_type = pricing_type.asInstanceOf[js.Any], resource = "checkout")
     __obj.asInstanceOf[CheckoutResource]
   }
   
-  @scala.inline
-  implicit class CheckoutResourceMutableBuilder[Self <: CheckoutResource] (val x: Self) extends AnyVal {
+  extension [Self <: CheckoutResource](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocal_price(value: Price[FiatCurrency]): Self = StObject.set(x, "local_price", value.asInstanceOf[js.Any])
+    inline def setLocal_price(value: Price[FiatCurrency]): Self = StObject.set(x, "local_price", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocal_priceUndefined: Self = StObject.set(x, "local_price", js.undefined)
+    inline def setLocal_priceUndefined: Self = StObject.set(x, "local_price", js.undefined)
     
-    @scala.inline
-    def setLogo_url(value: String): Self = StObject.set(x, "logo_url", value.asInstanceOf[js.Any])
+    inline def setLogo_url(value: String): Self = StObject.set(x, "logo_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogo_urlUndefined: Self = StObject.set(x, "logo_url", js.undefined)
+    inline def setLogo_urlUndefined: Self = StObject.set(x, "logo_url", js.undefined)
     
-    @scala.inline
-    def setResource(value: checkout): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: checkout): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
   }
 }

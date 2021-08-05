@@ -26,40 +26,34 @@ object srcUtilsMod {
     @JSImport("react-intl/src/utils", "DEFAULT_INTL_CONFIG.defaultFormats")
     @js.native
     def defaultFormats: CustomFormats = js.native
-    @scala.inline
-    def defaultFormats_=(x: CustomFormats): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultFormats")(x.asInstanceOf[js.Any])
+    inline def defaultFormats_=(x: CustomFormats): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultFormats")(x.asInstanceOf[js.Any])
     
     @JSImport("react-intl/src/utils", "DEFAULT_INTL_CONFIG.defaultLocale")
     @js.native
     def defaultLocale: String = js.native
-    @scala.inline
-    def defaultLocale_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultLocale")(x.asInstanceOf[js.Any])
+    inline def defaultLocale_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultLocale")(x.asInstanceOf[js.Any])
     
     @JSImport("react-intl/src/utils", "DEFAULT_INTL_CONFIG.formats")
     @js.native
     def formats: CustomFormats = js.native
-    @scala.inline
-    def formats_=(x: CustomFormats): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formats")(x.asInstanceOf[js.Any])
+    inline def formats_=(x: CustomFormats): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formats")(x.asInstanceOf[js.Any])
     
     @JSImport("react-intl/src/utils", "DEFAULT_INTL_CONFIG.messages")
     @js.native
     def messages: Record[String, js.Array[MessageFormatElement] | String] = js.native
-    @scala.inline
-    def messages_=(x: Record[String, js.Array[MessageFormatElement] | String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("messages")(x.asInstanceOf[js.Any])
+    inline def messages_=(x: Record[String, js.Array[MessageFormatElement] | String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("messages")(x.asInstanceOf[js.Any])
     
     @JSImport("react-intl/src/utils", "DEFAULT_INTL_CONFIG.onError")
     @js.native
     def onError: OnErrorFn = js.native
-    @scala.inline
-    def onError_=(x: OnErrorFn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onError")(x.asInstanceOf[js.Any])
+    inline def onError_=(x: OnErrorFn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onError")(x.asInstanceOf[js.Any])
     
     @JSImport("react-intl/src/utils", "DEFAULT_INTL_CONFIG.textComponent")
     @js.native
     def textComponent: js.UndefOr[
         /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118 */ js.Any
       ] = js.native
-    @scala.inline
-    def textComponent_=(
+    inline def textComponent_=(
       x: js.UndefOr[
           /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118 */ js.Any
         ]
@@ -68,17 +62,13 @@ object srcUtilsMod {
     @JSImport("react-intl/src/utils", "DEFAULT_INTL_CONFIG.timeZone")
     @js.native
     def timeZone: js.UndefOr[String] = js.native
-    @scala.inline
-    def timeZone_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeZone")(x.asInstanceOf[js.Any])
+    inline def timeZone_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeZone")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def assignUniqueKeysToParts(
+  inline def assignUniqueKeysToParts(
     formatXMLElementFn: FormatXMLElementFn[ReactNode, String | ReactNode | (js.Array[String | ReactNode])]
   ): FormatXMLElementFn[ReactNode, String | ReactNode | (js.Array[String | ReactNode])] = ^.asInstanceOf[js.Dynamic].applyDynamic("assignUniqueKeysToParts")(formatXMLElementFn.asInstanceOf[js.Any]).asInstanceOf[FormatXMLElementFn[ReactNode, String | ReactNode | (js.Array[String | ReactNode])]]
   
-  @scala.inline
-  def invariantIntlContext(): /* asserts intl */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("invariantIntlContext")().asInstanceOf[/* asserts intl */ Boolean]
-  @scala.inline
-  def invariantIntlContext(intl: js.Any): /* asserts intl */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("invariantIntlContext")(intl.asInstanceOf[js.Any]).asInstanceOf[/* asserts intl */ Boolean]
+  inline def invariantIntlContext(): /* asserts intl */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("invariantIntlContext")().asInstanceOf[/* asserts intl */ Boolean]
+  inline def invariantIntlContext(intl: js.Any): /* asserts intl */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("invariantIntlContext")(intl.asInstanceOf[js.Any]).asInstanceOf[/* asserts intl */ Boolean]
 }

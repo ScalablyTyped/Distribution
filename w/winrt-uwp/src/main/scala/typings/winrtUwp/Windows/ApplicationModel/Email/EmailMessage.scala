@@ -131,8 +131,7 @@ trait EmailMessage extends StObject {
 }
 object EmailMessage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allowInternetImages: Boolean,
     attachments: IVector[EmailAttachment],
     bcc: IVector[EmailRecipient],
@@ -175,118 +174,80 @@ object EmailMessage {
     __obj.asInstanceOf[EmailMessage]
   }
   
-  @scala.inline
-  implicit class EmailMessageMutableBuilder[Self <: EmailMessage] (val x: Self) extends AnyVal {
+  extension [Self <: EmailMessage](x: Self) {
     
-    @scala.inline
-    def setAllowInternetImages(value: Boolean): Self = StObject.set(x, "allowInternetImages", value.asInstanceOf[js.Any])
+    inline def setAllowInternetImages(value: Boolean): Self = StObject.set(x, "allowInternetImages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachments(value: IVector[EmailAttachment]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
+    inline def setAttachments(value: IVector[EmailAttachment]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBcc(value: IVector[EmailRecipient]): Self = StObject.set(x, "bcc", value.asInstanceOf[js.Any])
+    inline def setBcc(value: IVector[EmailRecipient]): Self = StObject.set(x, "bcc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCc(value: IVector[EmailRecipient]): Self = StObject.set(x, "cc", value.asInstanceOf[js.Any])
+    inline def setCc(value: IVector[EmailRecipient]): Self = StObject.set(x, "cc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeNumber(value: Double): Self = StObject.set(x, "changeNumber", value.asInstanceOf[js.Any])
+    inline def setChangeNumber(value: Double): Self = StObject.set(x, "changeNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversationId(value: String): Self = StObject.set(x, "conversationId", value.asInstanceOf[js.Any])
+    inline def setConversationId(value: String): Self = StObject.set(x, "conversationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadState(value: EmailMessageDownloadState): Self = StObject.set(x, "downloadState", value.asInstanceOf[js.Any])
+    inline def setDownloadState(value: EmailMessageDownloadState): Self = StObject.set(x, "downloadState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedDownloadSizeInBytes(value: Double): Self = StObject.set(x, "estimatedDownloadSizeInBytes", value.asInstanceOf[js.Any])
+    inline def setEstimatedDownloadSizeInBytes(value: Double): Self = StObject.set(x, "estimatedDownloadSizeInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlagState(value: EmailFlagState): Self = StObject.set(x, "flagState", value.asInstanceOf[js.Any])
+    inline def setFlagState(value: EmailFlagState): Self = StObject.set(x, "flagState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFolderId(value: String): Self = StObject.set(x, "folderId", value.asInstanceOf[js.Any])
+    inline def setFolderId(value: String): Self = StObject.set(x, "folderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetBodyStream(value: EmailMessageBodyKind => IRandomAccessStreamReference): Self = StObject.set(x, "getBodyStream", js.Any.fromFunction1(value))
+    inline def setGetBodyStream(value: EmailMessageBodyKind => IRandomAccessStreamReference): Self = StObject.set(x, "getBodyStream", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHasPartialBodies(value: Boolean): Self = StObject.set(x, "hasPartialBodies", value.asInstanceOf[js.Any])
+    inline def setHasPartialBodies(value: Boolean): Self = StObject.set(x, "hasPartialBodies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportance(value: EmailImportance): Self = StObject.set(x, "importance", value.asInstanceOf[js.Any])
+    inline def setImportance(value: EmailImportance): Self = StObject.set(x, "importance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInResponseToMessageId(value: String): Self = StObject.set(x, "inResponseToMessageId", value.asInstanceOf[js.Any])
+    inline def setInResponseToMessageId(value: String): Self = StObject.set(x, "inResponseToMessageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIrmInfo(value: EmailIrmInfo): Self = StObject.set(x, "irmInfo", value.asInstanceOf[js.Any])
+    inline def setIrmInfo(value: EmailIrmInfo): Self = StObject.set(x, "irmInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDraftMessage(value: Boolean): Self = StObject.set(x, "isDraftMessage", value.asInstanceOf[js.Any])
+    inline def setIsDraftMessage(value: Boolean): Self = StObject.set(x, "isDraftMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRead(value: Boolean): Self = StObject.set(x, "isRead", value.asInstanceOf[js.Any])
+    inline def setIsRead(value: Boolean): Self = StObject.set(x, "isRead", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSeen(value: Boolean): Self = StObject.set(x, "isSeen", value.asInstanceOf[js.Any])
+    inline def setIsSeen(value: Boolean): Self = StObject.set(x, "isSeen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsServerSearchMessage(value: Boolean): Self = StObject.set(x, "isServerSearchMessage", value.asInstanceOf[js.Any])
+    inline def setIsServerSearchMessage(value: Boolean): Self = StObject.set(x, "isServerSearchMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSmartSendable(value: Boolean): Self = StObject.set(x, "isSmartSendable", value.asInstanceOf[js.Any])
+    inline def setIsSmartSendable(value: Boolean): Self = StObject.set(x, "isSmartSendable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastResponseKind(value: EmailMessageResponseKind): Self = StObject.set(x, "lastResponseKind", value.asInstanceOf[js.Any])
+    inline def setLastResponseKind(value: EmailMessageResponseKind): Self = StObject.set(x, "lastResponseKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMailboxId(value: String): Self = StObject.set(x, "mailboxId", value.asInstanceOf[js.Any])
+    inline def setMailboxId(value: String): Self = StObject.set(x, "mailboxId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeetingInfo(value: EmailMeetingInfo): Self = StObject.set(x, "meetingInfo", value.asInstanceOf[js.Any])
+    inline def setMeetingInfo(value: EmailMeetingInfo): Self = StObject.set(x, "meetingInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageClass(value: String): Self = StObject.set(x, "messageClass", value.asInstanceOf[js.Any])
+    inline def setMessageClass(value: String): Self = StObject.set(x, "messageClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalizedSubject(value: String): Self = StObject.set(x, "normalizedSubject", value.asInstanceOf[js.Any])
+    inline def setNormalizedSubject(value: String): Self = StObject.set(x, "normalizedSubject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalCodePage(value: Double): Self = StObject.set(x, "originalCodePage", value.asInstanceOf[js.Any])
+    inline def setOriginalCodePage(value: Double): Self = StObject.set(x, "originalCodePage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreview(value: String): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
+    inline def setPreview(value: String): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteId(value: String): Self = StObject.set(x, "remoteId", value.asInstanceOf[js.Any])
+    inline def setRemoteId(value: String): Self = StObject.set(x, "remoteId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSender(value: EmailRecipient): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: EmailRecipient): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSentTime(value: Date): Self = StObject.set(x, "sentTime", value.asInstanceOf[js.Any])
+    inline def setSentTime(value: Date): Self = StObject.set(x, "sentTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetBodyStream(value: (EmailMessageBodyKind, IRandomAccessStreamReference) => Unit): Self = StObject.set(x, "setBodyStream", js.Any.fromFunction2(value))
+    inline def setSetBodyStream(value: (EmailMessageBodyKind, IRandomAccessStreamReference) => Unit): Self = StObject.set(x, "setBodyStream", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSmimeData(value: IRandomAccessStreamReference): Self = StObject.set(x, "smimeData", value.asInstanceOf[js.Any])
+    inline def setSmimeData(value: IRandomAccessStreamReference): Self = StObject.set(x, "smimeData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmimeKind(value: EmailMessageSmimeKind): Self = StObject.set(x, "smimeKind", value.asInstanceOf[js.Any])
+    inline def setSmimeKind(value: EmailMessageSmimeKind): Self = StObject.set(x, "smimeKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTo(value: IVector[EmailRecipient]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: IVector[EmailRecipient]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }
 }

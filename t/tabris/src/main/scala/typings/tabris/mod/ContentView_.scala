@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tabris", "ContentView")
 @js.native
-class ContentView_[ChildType /* <: Widget */] protected ()
+/* protected */ class ContentView_[ChildType /* <: Widget */] ()
   extends typings.tabris.mod.widgets.Composite[ChildType] {
-  protected def this(properties: Properties[ContentView_[Widget], OmitContentViewWidgetset[ChildType]]) = this()
+  /* protected */ def this(properties: Properties[ContentView_[Widget], OmitContentViewWidgetset[ChildType]]) = this()
 }

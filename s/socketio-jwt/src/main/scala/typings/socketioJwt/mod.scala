@@ -30,10 +30,8 @@ object mod {
     var name: String = js.native
   }
   
-  @scala.inline
-  def authorize(options: JwtAuthOptions): js.Function1[/* socket */ Socket, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("authorize")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* socket */ Socket, Unit]]
-  @scala.inline
-  def authorize(options: JwtAuthOptions, callback: JwtAuthorizeCallback): js.Function1[/* socket */ Socket, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("authorize")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* socket */ Socket, Unit]]
+  inline def authorize(options: JwtAuthOptions): js.Function1[/* socket */ Socket, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("authorize")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* socket */ Socket, Unit]]
+  inline def authorize(options: JwtAuthOptions, callback: JwtAuthorizeCallback): js.Function1[/* socket */ Socket, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("authorize")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* socket */ Socket, Unit]]
   
   trait JwtAuthOptions extends StObject {
     
@@ -52,44 +50,32 @@ object mod {
   }
   object JwtAuthOptions {
     
-    @scala.inline
-    def apply(secret: String | JwtSecretFunc): JwtAuthOptions = {
+    inline def apply(secret: String | JwtSecretFunc): JwtAuthOptions = {
       val __obj = js.Dynamic.literal(secret = secret.asInstanceOf[js.Any])
       __obj.asInstanceOf[JwtAuthOptions]
     }
     
-    @scala.inline
-    implicit class JwtAuthOptionsMutableBuilder[Self <: JwtAuthOptions] (val x: Self) extends AnyVal {
+    extension [Self <: JwtAuthOptions](x: Self) {
       
-      @scala.inline
-      def setCallback(value: Boolean): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+      inline def setCallback(value: Boolean): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
-      @scala.inline
-      def setDecodedPropertyName(value: String): Self = StObject.set(x, "decodedPropertyName", value.asInstanceOf[js.Any])
+      inline def setDecodedPropertyName(value: String): Self = StObject.set(x, "decodedPropertyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecodedPropertyNameUndefined: Self = StObject.set(x, "decodedPropertyName", js.undefined)
+      inline def setDecodedPropertyNameUndefined: Self = StObject.set(x, "decodedPropertyName", js.undefined)
       
-      @scala.inline
-      def setHandshake(value: Boolean): Self = StObject.set(x, "handshake", value.asInstanceOf[js.Any])
+      inline def setHandshake(value: Boolean): Self = StObject.set(x, "handshake", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandshakeUndefined: Self = StObject.set(x, "handshake", js.undefined)
+      inline def setHandshakeUndefined: Self = StObject.set(x, "handshake", js.undefined)
       
-      @scala.inline
-      def setSecret(value: String | JwtSecretFunc): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+      inline def setSecret(value: String | JwtSecretFunc): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretFunction3(value: (/* request */ js.Any, /* payload */ js.Any, /* callback */ JwtSecretFuncCallback) => Unit): Self = StObject.set(x, "secret", js.Any.fromFunction3(value))
+      inline def setSecretFunction3(value: (/* request */ js.Any, /* payload */ js.Any, /* callback */ JwtSecretFuncCallback) => Unit): Self = StObject.set(x, "secret", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -105,24 +91,19 @@ object mod {
   }
   object JwtData {
     
-    @scala.inline
-    def apply(code: String, message: String, `type`: String): JwtData = {
+    inline def apply(code: String, message: String, `type`: String): JwtData = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[JwtData]
     }
     
-    @scala.inline
-    implicit class JwtDataMutableBuilder[Self <: JwtData] (val x: Self) extends AnyVal {
+    extension [Self <: JwtData](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FollowupFlagStatus extends StObject
 object FollowupFlagStatus {
   
-  @scala.inline
-  def complete: typings.microsoftGraph.microsoftGraphStrings.complete = "complete".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.complete]
+  inline def complete: typings.microsoftGraph.microsoftGraphStrings.complete = "complete".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.complete]
   
-  @scala.inline
-  def flagged: typings.microsoftGraph.microsoftGraphStrings.flagged = "flagged".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.flagged]
+  inline def flagged: typings.microsoftGraph.microsoftGraphStrings.flagged = "flagged".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.flagged]
   
-  @scala.inline
-  def notFlagged: typings.microsoftGraph.microsoftGraphStrings.notFlagged = "notFlagged".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notFlagged]
+  inline def notFlagged: typings.microsoftGraph.microsoftGraphStrings.notFlagged = "notFlagged".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notFlagged]
 }

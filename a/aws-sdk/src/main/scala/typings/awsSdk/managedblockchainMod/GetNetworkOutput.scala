@@ -13,19 +13,15 @@ trait GetNetworkOutput extends StObject {
 }
 object GetNetworkOutput {
   
-  @scala.inline
-  def apply(): GetNetworkOutput = {
+  inline def apply(): GetNetworkOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetNetworkOutput]
   }
   
-  @scala.inline
-  implicit class GetNetworkOutputMutableBuilder[Self <: GetNetworkOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetNetworkOutput](x: Self) {
     
-    @scala.inline
-    def setNetwork(value: Network): Self = StObject.set(x, "Network", value.asInstanceOf[js.Any])
+    inline def setNetwork(value: Network): Self = StObject.set(x, "Network", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkUndefined: Self = StObject.set(x, "Network", js.undefined)
+    inline def setNetworkUndefined: Self = StObject.set(x, "Network", js.undefined)
   }
 }

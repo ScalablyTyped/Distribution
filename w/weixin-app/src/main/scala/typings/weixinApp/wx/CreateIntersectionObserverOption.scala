@@ -17,31 +17,23 @@ trait CreateIntersectionObserverOption extends StObject {
 }
 object CreateIntersectionObserverOption {
   
-  @scala.inline
-  def apply(): CreateIntersectionObserverOption = {
+  inline def apply(): CreateIntersectionObserverOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateIntersectionObserverOption]
   }
   
-  @scala.inline
-  implicit class CreateIntersectionObserverOptionMutableBuilder[Self <: CreateIntersectionObserverOption] (val x: Self) extends AnyVal {
+  extension [Self <: CreateIntersectionObserverOption](x: Self) {
     
-    @scala.inline
-    def setInitialRatio(value: Double): Self = StObject.set(x, "initialRatio", value.asInstanceOf[js.Any])
+    inline def setInitialRatio(value: Double): Self = StObject.set(x, "initialRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialRatioUndefined: Self = StObject.set(x, "initialRatio", js.undefined)
+    inline def setInitialRatioUndefined: Self = StObject.set(x, "initialRatio", js.undefined)
     
-    @scala.inline
-    def setSelectAll(value: Boolean): Self = StObject.set(x, "selectAll", value.asInstanceOf[js.Any])
+    inline def setSelectAll(value: Boolean): Self = StObject.set(x, "selectAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectAllUndefined: Self = StObject.set(x, "selectAll", js.undefined)
+    inline def setSelectAllUndefined: Self = StObject.set(x, "selectAll", js.undefined)
     
-    @scala.inline
-    def setThresholds(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "thresholds", value.asInstanceOf[js.Any])
+    inline def setThresholds(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "thresholds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThresholdsUndefined: Self = StObject.set(x, "thresholds", js.undefined)
+    inline def setThresholdsUndefined: Self = StObject.set(x, "thresholds", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait BucketLevel extends StObject {
 }
 object BucketLevel {
   
-  @scala.inline
-  def apply(): BucketLevel = {
+  inline def apply(): BucketLevel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BucketLevel]
   }
   
-  @scala.inline
-  implicit class BucketLevelMutableBuilder[Self <: BucketLevel] (val x: Self) extends AnyVal {
+  extension [Self <: BucketLevel](x: Self) {
     
-    @scala.inline
-    def setActivityMetrics(value: ActivityMetrics): Self = StObject.set(x, "ActivityMetrics", value.asInstanceOf[js.Any])
+    inline def setActivityMetrics(value: ActivityMetrics): Self = StObject.set(x, "ActivityMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivityMetricsUndefined: Self = StObject.set(x, "ActivityMetrics", js.undefined)
+    inline def setActivityMetricsUndefined: Self = StObject.set(x, "ActivityMetrics", js.undefined)
     
-    @scala.inline
-    def setPrefixLevel(value: PrefixLevel): Self = StObject.set(x, "PrefixLevel", value.asInstanceOf[js.Any])
+    inline def setPrefixLevel(value: PrefixLevel): Self = StObject.set(x, "PrefixLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixLevelUndefined: Self = StObject.set(x, "PrefixLevel", js.undefined)
+    inline def setPrefixLevelUndefined: Self = StObject.set(x, "PrefixLevel", js.undefined)
   }
 }

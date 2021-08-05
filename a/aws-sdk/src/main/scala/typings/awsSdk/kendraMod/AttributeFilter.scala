@@ -58,79 +58,55 @@ trait AttributeFilter extends StObject {
 }
 object AttributeFilter {
   
-  @scala.inline
-  def apply(): AttributeFilter = {
+  inline def apply(): AttributeFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AttributeFilter]
   }
   
-  @scala.inline
-  implicit class AttributeFilterMutableBuilder[Self <: AttributeFilter] (val x: Self) extends AnyVal {
+  extension [Self <: AttributeFilter](x: Self) {
     
-    @scala.inline
-    def setAndAllFilters(value: AttributeFilterList): Self = StObject.set(x, "AndAllFilters", value.asInstanceOf[js.Any])
+    inline def setAndAllFilters(value: AttributeFilterList): Self = StObject.set(x, "AndAllFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndAllFiltersUndefined: Self = StObject.set(x, "AndAllFilters", js.undefined)
+    inline def setAndAllFiltersUndefined: Self = StObject.set(x, "AndAllFilters", js.undefined)
     
-    @scala.inline
-    def setAndAllFiltersVarargs(value: AttributeFilter*): Self = StObject.set(x, "AndAllFilters", js.Array(value :_*))
+    inline def setAndAllFiltersVarargs(value: AttributeFilter*): Self = StObject.set(x, "AndAllFilters", js.Array(value :_*))
     
-    @scala.inline
-    def setContainsAll(value: DocumentAttribute): Self = StObject.set(x, "ContainsAll", value.asInstanceOf[js.Any])
+    inline def setContainsAll(value: DocumentAttribute): Self = StObject.set(x, "ContainsAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainsAllUndefined: Self = StObject.set(x, "ContainsAll", js.undefined)
+    inline def setContainsAllUndefined: Self = StObject.set(x, "ContainsAll", js.undefined)
     
-    @scala.inline
-    def setContainsAny(value: DocumentAttribute): Self = StObject.set(x, "ContainsAny", value.asInstanceOf[js.Any])
+    inline def setContainsAny(value: DocumentAttribute): Self = StObject.set(x, "ContainsAny", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainsAnyUndefined: Self = StObject.set(x, "ContainsAny", js.undefined)
+    inline def setContainsAnyUndefined: Self = StObject.set(x, "ContainsAny", js.undefined)
     
-    @scala.inline
-    def setEqualsTo(value: DocumentAttribute): Self = StObject.set(x, "EqualsTo", value.asInstanceOf[js.Any])
+    inline def setEqualsTo(value: DocumentAttribute): Self = StObject.set(x, "EqualsTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEqualsToUndefined: Self = StObject.set(x, "EqualsTo", js.undefined)
+    inline def setEqualsToUndefined: Self = StObject.set(x, "EqualsTo", js.undefined)
     
-    @scala.inline
-    def setGreaterThan(value: DocumentAttribute): Self = StObject.set(x, "GreaterThan", value.asInstanceOf[js.Any])
+    inline def setGreaterThan(value: DocumentAttribute): Self = StObject.set(x, "GreaterThan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGreaterThanOrEquals(value: DocumentAttribute): Self = StObject.set(x, "GreaterThanOrEquals", value.asInstanceOf[js.Any])
+    inline def setGreaterThanOrEquals(value: DocumentAttribute): Self = StObject.set(x, "GreaterThanOrEquals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGreaterThanOrEqualsUndefined: Self = StObject.set(x, "GreaterThanOrEquals", js.undefined)
+    inline def setGreaterThanOrEqualsUndefined: Self = StObject.set(x, "GreaterThanOrEquals", js.undefined)
     
-    @scala.inline
-    def setGreaterThanUndefined: Self = StObject.set(x, "GreaterThan", js.undefined)
+    inline def setGreaterThanUndefined: Self = StObject.set(x, "GreaterThan", js.undefined)
     
-    @scala.inline
-    def setLessThan(value: DocumentAttribute): Self = StObject.set(x, "LessThan", value.asInstanceOf[js.Any])
+    inline def setLessThan(value: DocumentAttribute): Self = StObject.set(x, "LessThan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLessThanOrEquals(value: DocumentAttribute): Self = StObject.set(x, "LessThanOrEquals", value.asInstanceOf[js.Any])
+    inline def setLessThanOrEquals(value: DocumentAttribute): Self = StObject.set(x, "LessThanOrEquals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLessThanOrEqualsUndefined: Self = StObject.set(x, "LessThanOrEquals", js.undefined)
+    inline def setLessThanOrEqualsUndefined: Self = StObject.set(x, "LessThanOrEquals", js.undefined)
     
-    @scala.inline
-    def setLessThanUndefined: Self = StObject.set(x, "LessThan", js.undefined)
+    inline def setLessThanUndefined: Self = StObject.set(x, "LessThan", js.undefined)
     
-    @scala.inline
-    def setNotFilter(value: AttributeFilter): Self = StObject.set(x, "NotFilter", value.asInstanceOf[js.Any])
+    inline def setNotFilter(value: AttributeFilter): Self = StObject.set(x, "NotFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotFilterUndefined: Self = StObject.set(x, "NotFilter", js.undefined)
+    inline def setNotFilterUndefined: Self = StObject.set(x, "NotFilter", js.undefined)
     
-    @scala.inline
-    def setOrAllFilters(value: AttributeFilterList): Self = StObject.set(x, "OrAllFilters", value.asInstanceOf[js.Any])
+    inline def setOrAllFilters(value: AttributeFilterList): Self = StObject.set(x, "OrAllFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrAllFiltersUndefined: Self = StObject.set(x, "OrAllFilters", js.undefined)
+    inline def setOrAllFiltersUndefined: Self = StObject.set(x, "OrAllFilters", js.undefined)
     
-    @scala.inline
-    def setOrAllFiltersVarargs(value: AttributeFilter*): Self = StObject.set(x, "OrAllFilters", js.Array(value :_*))
+    inline def setOrAllFiltersVarargs(value: AttributeFilter*): Self = StObject.set(x, "OrAllFilters", js.Array(value :_*))
   }
 }

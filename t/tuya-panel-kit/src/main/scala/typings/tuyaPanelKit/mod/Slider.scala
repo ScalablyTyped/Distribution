@@ -27,12 +27,10 @@ object Slider {
   @JSImport("tuya-panel-kit", "Slider.Horizontal")
   @js.native
   def Horizontal: ElementType[SliderProps] = js.native
-  @scala.inline
-  def Horizontal_=(x: ElementType[SliderProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Horizontal")(x.asInstanceOf[js.Any])
+  inline def Horizontal_=(x: ElementType[SliderProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Horizontal")(x.asInstanceOf[js.Any])
   
   @JSImport("tuya-panel-kit", "Slider.Vertical")
   @js.native
   def Vertical: ElementType[SliderProps] = js.native
-  @scala.inline
-  def Vertical_=(x: ElementType[SliderProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Vertical")(x.asInstanceOf[js.Any])
+  inline def Vertical_=(x: ElementType[SliderProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Vertical")(x.asInstanceOf[js.Any])
 }

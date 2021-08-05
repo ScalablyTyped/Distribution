@@ -16,7 +16,7 @@ trait SlicerCache extends StObject {
   
   def Delete(): Unit
   
-  @JSName("Excel.SlicerCache_typekey")
+  /* private */ @JSName("Excel.SlicerCache_typekey")
   var ExcelDotSlicerCache_typekey: SlicerCache
   
   val Index: Double
@@ -70,8 +70,7 @@ trait SlicerCache extends StObject {
 }
 object SlicerCache {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     ClearManualFilter: () => Unit,
     Creator: XlCreator,
@@ -100,73 +99,50 @@ object SlicerCache {
     __obj.asInstanceOf[SlicerCache]
   }
   
-  @scala.inline
-  implicit class SlicerCacheMutableBuilder[Self <: SlicerCache] (val x: Self) extends AnyVal {
+  extension [Self <: SlicerCache](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearManualFilter(value: () => Unit): Self = StObject.set(x, "ClearManualFilter", js.Any.fromFunction0(value))
+    inline def setClearManualFilter(value: () => Unit): Self = StObject.set(x, "ClearManualFilter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrossFilterType(value: XlSlicerCrossFilterType): Self = StObject.set(x, "CrossFilterType", value.asInstanceOf[js.Any])
+    inline def setCrossFilterType(value: XlSlicerCrossFilterType): Self = StObject.set(x, "CrossFilterType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExcelDotSlicerCache_typekey(value: SlicerCache): Self = StObject.set(x, "Excel.SlicerCache_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotSlicerCache_typekey(value: SlicerCache): Self = StObject.set(x, "Excel.SlicerCache_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOLAP(value: Boolean): Self = StObject.set(x, "OLAP", value.asInstanceOf[js.Any])
+    inline def setOLAP(value: Boolean): Self = StObject.set(x, "OLAP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPivotTables(value: SlicerPivotTables): Self = StObject.set(x, "PivotTables", value.asInstanceOf[js.Any])
+    inline def setPivotTables(value: SlicerPivotTables): Self = StObject.set(x, "PivotTables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowAllItems(value: Boolean): Self = StObject.set(x, "ShowAllItems", value.asInstanceOf[js.Any])
+    inline def setShowAllItems(value: Boolean): Self = StObject.set(x, "ShowAllItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlicerCacheLevels(value: SlicerCacheLevels): Self = StObject.set(x, "SlicerCacheLevels", value.asInstanceOf[js.Any])
+    inline def setSlicerCacheLevels(value: SlicerCacheLevels): Self = StObject.set(x, "SlicerCacheLevels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlicerItems(value: SlicerItems): Self = StObject.set(x, "SlicerItems", value.asInstanceOf[js.Any])
+    inline def setSlicerItems(value: SlicerItems): Self = StObject.set(x, "SlicerItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlicers(value: Slicers): Self = StObject.set(x, "Slicers", value.asInstanceOf[js.Any])
+    inline def setSlicers(value: Slicers): Self = StObject.set(x, "Slicers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortItems(value: XlSlicerSort): Self = StObject.set(x, "SortItems", value.asInstanceOf[js.Any])
+    inline def setSortItems(value: XlSlicerSort): Self = StObject.set(x, "SortItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUsingCustomLists(value: Boolean): Self = StObject.set(x, "SortUsingCustomLists", value.asInstanceOf[js.Any])
+    inline def setSortUsingCustomLists(value: Boolean): Self = StObject.set(x, "SortUsingCustomLists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceName(value: String): Self = StObject.set(x, "SourceName", value.asInstanceOf[js.Any])
+    inline def setSourceName(value: String): Self = StObject.set(x, "SourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceType(value: XlPivotTableSourceType): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
+    inline def setSourceType(value: XlPivotTableSourceType): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleSlicerItems(value: SlicerItems): Self = StObject.set(x, "VisibleSlicerItems", value.asInstanceOf[js.Any])
+    inline def setVisibleSlicerItems(value: SlicerItems): Self = StObject.set(x, "VisibleSlicerItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleSlicerItemsList(value: js.Any): Self = StObject.set(x, "VisibleSlicerItemsList", value.asInstanceOf[js.Any])
+    inline def setVisibleSlicerItemsList(value: js.Any): Self = StObject.set(x, "VisibleSlicerItemsList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkbookConnection(value: WorkbookConnection): Self = StObject.set(x, "WorkbookConnection", value.asInstanceOf[js.Any])
+    inline def setWorkbookConnection(value: WorkbookConnection): Self = StObject.set(x, "WorkbookConnection", value.asInstanceOf[js.Any])
   }
 }

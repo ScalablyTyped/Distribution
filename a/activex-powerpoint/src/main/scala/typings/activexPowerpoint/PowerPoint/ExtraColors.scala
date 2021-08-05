@@ -19,13 +19,12 @@ trait ExtraColors extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.ExtraColors_typekey")
+  /* private */ @JSName("PowerPoint.ExtraColors_typekey")
   var PowerPointDotExtraColors_typekey: ExtraColors
 }
 object ExtraColors {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Add: MsoRGBType => Unit,
     Application: Application,
     Clear: () => Unit,
@@ -39,28 +38,20 @@ object ExtraColors {
     __obj.asInstanceOf[ExtraColors]
   }
   
-  @scala.inline
-  implicit class ExtraColorsMutableBuilder[Self <: ExtraColors] (val x: Self) extends AnyVal {
+  extension [Self <: ExtraColors](x: Self) {
     
-    @scala.inline
-    def setAdd(value: MsoRGBType => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
+    inline def setAdd(value: MsoRGBType => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Double => MsoRGBType): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => MsoRGBType): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotExtraColors_typekey(value: ExtraColors): Self = StObject.set(x, "PowerPoint.ExtraColors_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotExtraColors_typekey(value: ExtraColors): Self = StObject.set(x, "PowerPoint.ExtraColors_typekey", value.asInstanceOf[js.Any])
   }
 }

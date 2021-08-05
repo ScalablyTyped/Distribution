@@ -20,28 +20,21 @@ trait BatchDeleteDocumentRequest extends StObject {
 }
 object BatchDeleteDocumentRequest {
   
-  @scala.inline
-  def apply(DocumentIdList: DocumentIdList, IndexId: IndexId): BatchDeleteDocumentRequest = {
+  inline def apply(DocumentIdList: DocumentIdList, IndexId: IndexId): BatchDeleteDocumentRequest = {
     val __obj = js.Dynamic.literal(DocumentIdList = DocumentIdList.asInstanceOf[js.Any], IndexId = IndexId.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchDeleteDocumentRequest]
   }
   
-  @scala.inline
-  implicit class BatchDeleteDocumentRequestMutableBuilder[Self <: BatchDeleteDocumentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDeleteDocumentRequest](x: Self) {
     
-    @scala.inline
-    def setDataSourceSyncJobMetricTarget(value: DataSourceSyncJobMetricTarget): Self = StObject.set(x, "DataSourceSyncJobMetricTarget", value.asInstanceOf[js.Any])
+    inline def setDataSourceSyncJobMetricTarget(value: DataSourceSyncJobMetricTarget): Self = StObject.set(x, "DataSourceSyncJobMetricTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceSyncJobMetricTargetUndefined: Self = StObject.set(x, "DataSourceSyncJobMetricTarget", js.undefined)
+    inline def setDataSourceSyncJobMetricTargetUndefined: Self = StObject.set(x, "DataSourceSyncJobMetricTarget", js.undefined)
     
-    @scala.inline
-    def setDocumentIdList(value: DocumentIdList): Self = StObject.set(x, "DocumentIdList", value.asInstanceOf[js.Any])
+    inline def setDocumentIdList(value: DocumentIdList): Self = StObject.set(x, "DocumentIdList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentIdListVarargs(value: DocumentId*): Self = StObject.set(x, "DocumentIdList", js.Array(value :_*))
+    inline def setDocumentIdListVarargs(value: DocumentId*): Self = StObject.set(x, "DocumentIdList", js.Array(value :_*))
     
-    @scala.inline
-    def setIndexId(value: IndexId): Self = StObject.set(x, "IndexId", value.asInstanceOf[js.Any])
+    inline def setIndexId(value: IndexId): Self = StObject.set(x, "IndexId", value.asInstanceOf[js.Any])
   }
 }

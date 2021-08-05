@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Algorithm extends StObject
 object Algorithm {
   
-  @scala.inline
-  def sha1: typings.speakeasy.speakeasyStrings.sha1 = "sha1".asInstanceOf[typings.speakeasy.speakeasyStrings.sha1]
+  inline def sha1: typings.speakeasy.speakeasyStrings.sha1 = "sha1".asInstanceOf[typings.speakeasy.speakeasyStrings.sha1]
   
-  @scala.inline
-  def sha256: typings.speakeasy.speakeasyStrings.sha256 = "sha256".asInstanceOf[typings.speakeasy.speakeasyStrings.sha256]
+  inline def sha256: typings.speakeasy.speakeasyStrings.sha256 = "sha256".asInstanceOf[typings.speakeasy.speakeasyStrings.sha256]
   
-  @scala.inline
-  def sha512: typings.speakeasy.speakeasyStrings.sha512 = "sha512".asInstanceOf[typings.speakeasy.speakeasyStrings.sha512]
+  inline def sha512: typings.speakeasy.speakeasyStrings.sha512 = "sha512".asInstanceOf[typings.speakeasy.speakeasyStrings.sha512]
 }

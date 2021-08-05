@@ -10,6 +10,5 @@ object global {
   @JSGlobal("eqjs")
   @js.native
   def eqjs: EqjsStatic = js.native
-  @scala.inline
-  def eqjs_=(x: EqjsStatic): Unit = js.Dynamic.global.updateDynamic("eqjs")(x.asInstanceOf[js.Any])
+  inline def eqjs_=(x: EqjsStatic): Unit = js.Dynamic.global.updateDynamic("eqjs")(x.asInstanceOf[js.Any])
 }

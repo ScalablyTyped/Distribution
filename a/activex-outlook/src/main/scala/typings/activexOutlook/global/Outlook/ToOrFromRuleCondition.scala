@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.ToOrFromRuleCondition")
 @js.native
-class ToOrFromRuleCondition protected ()
+/* private */ class ToOrFromRuleCondition ()
   extends StObject
      with typings.activexOutlook.Outlook.ToOrFromRuleCondition {
   
@@ -24,7 +24,7 @@ class ToOrFromRuleCondition protected ()
   /* CompleteClass */
   var Enabled: Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.ToOrFromRuleCondition_typekey")
   var OutlookDotToOrFromRuleCondition_typekey: typings.activexOutlook.Outlook.ToOrFromRuleCondition = js.native
   

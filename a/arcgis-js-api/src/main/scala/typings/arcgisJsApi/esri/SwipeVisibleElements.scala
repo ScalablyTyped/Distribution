@@ -26,8 +26,7 @@ trait SwipeVisibleElements
 }
 object SwipeVisibleElements {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     divider: Boolean,
     handle: Boolean,
@@ -38,13 +37,10 @@ object SwipeVisibleElements {
     __obj.asInstanceOf[SwipeVisibleElements]
   }
   
-  @scala.inline
-  implicit class SwipeVisibleElementsMutableBuilder[Self <: SwipeVisibleElements] (val x: Self) extends AnyVal {
+  extension [Self <: SwipeVisibleElements](x: Self) {
     
-    @scala.inline
-    def setDivider(value: Boolean): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
+    inline def setDivider(value: Boolean): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandle(value: Boolean): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+    inline def setHandle(value: Boolean): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
   }
 }

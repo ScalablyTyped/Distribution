@@ -13,16 +13,13 @@ trait Field
 }
 object Field {
   
-  @scala.inline
-  def apply(field: typings.vegaTypings.encodeMod.Field): Field = {
+  inline def apply(field: typings.vegaTypings.encodeMod.Field): Field = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
     __obj.asInstanceOf[Field]
   }
   
-  @scala.inline
-  implicit class FieldMutableBuilder[Self <: Field] (val x: Self) extends AnyVal {
+  extension [Self <: Field](x: Self) {
     
-    @scala.inline
-    def setField(value: typings.vegaTypings.encodeMod.Field): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: typings.vegaTypings.encodeMod.Field): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
   }
 }

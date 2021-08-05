@@ -13,16 +13,13 @@ trait ApproveSkillRequest extends StObject {
 }
 object ApproveSkillRequest {
   
-  @scala.inline
-  def apply(SkillId: SkillId): ApproveSkillRequest = {
+  inline def apply(SkillId: SkillId): ApproveSkillRequest = {
     val __obj = js.Dynamic.literal(SkillId = SkillId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApproveSkillRequest]
   }
   
-  @scala.inline
-  implicit class ApproveSkillRequestMutableBuilder[Self <: ApproveSkillRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ApproveSkillRequest](x: Self) {
     
-    @scala.inline
-    def setSkillId(value: SkillId): Self = StObject.set(x, "SkillId", value.asInstanceOf[js.Any])
+    inline def setSkillId(value: SkillId): Self = StObject.set(x, "SkillId", value.asInstanceOf[js.Any])
   }
 }

@@ -14,8 +14,7 @@ trait BackgroundsProps
      with BackgroundRepeatProps
 object BackgroundsProps {
   
-  @scala.inline
-  def apply(): BackgroundsProps = {
+  inline def apply(): BackgroundsProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BackgroundsProps]
   }

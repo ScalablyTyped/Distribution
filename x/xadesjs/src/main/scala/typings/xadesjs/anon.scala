@@ -214,8 +214,7 @@ object anon {
   }
   object AllDataObjectsTimeStamp {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AllDataObjectsTimeStamp: String,
       AllSignedDataObjects: String,
       Any: String,
@@ -323,314 +322,211 @@ object anon {
       __obj.asInstanceOf[AllDataObjectsTimeStamp]
     }
     
-    @scala.inline
-    implicit class AllDataObjectsTimeStampMutableBuilder[Self <: AllDataObjectsTimeStamp] (val x: Self) extends AnyVal {
+    extension [Self <: AllDataObjectsTimeStamp](x: Self) {
       
-      @scala.inline
-      def setAllDataObjectsTimeStamp(value: String): Self = StObject.set(x, "AllDataObjectsTimeStamp", value.asInstanceOf[js.Any])
+      inline def setAllDataObjectsTimeStamp(value: String): Self = StObject.set(x, "AllDataObjectsTimeStamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllSignedDataObjects(value: String): Self = StObject.set(x, "AllSignedDataObjects", value.asInstanceOf[js.Any])
+      inline def setAllSignedDataObjects(value: String): Self = StObject.set(x, "AllSignedDataObjects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAny(value: String): Self = StObject.set(x, "Any", value.asInstanceOf[js.Any])
+      inline def setAny(value: String): Self = StObject.set(x, "Any", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArchiveTimeStamp(value: String): Self = StObject.set(x, "ArchiveTimeStamp", value.asInstanceOf[js.Any])
+      inline def setArchiveTimeStamp(value: String): Self = StObject.set(x, "ArchiveTimeStamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttrAuthoritiesCertValues(value: String): Self = StObject.set(x, "AttrAuthoritiesCertValues", value.asInstanceOf[js.Any])
+      inline def setAttrAuthoritiesCertValues(value: String): Self = StObject.set(x, "AttrAuthoritiesCertValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeCertificateRefs(value: String): Self = StObject.set(x, "AttributeCertificateRefs", value.asInstanceOf[js.Any])
+      inline def setAttributeCertificateRefs(value: String): Self = StObject.set(x, "AttributeCertificateRefs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeRevocationRefs(value: String): Self = StObject.set(x, "AttributeRevocationRefs", value.asInstanceOf[js.Any])
+      inline def setAttributeRevocationRefs(value: String): Self = StObject.set(x, "AttributeRevocationRefs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeRevocationValues(value: String): Self = StObject.set(x, "AttributeRevocationValues", value.asInstanceOf[js.Any])
+      inline def setAttributeRevocationValues(value: String): Self = StObject.set(x, "AttributeRevocationValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setByKey(value: String): Self = StObject.set(x, "ByKey", value.asInstanceOf[js.Any])
+      inline def setByKey(value: String): Self = StObject.set(x, "ByKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setByName(value: String): Self = StObject.set(x, "ByName", value.asInstanceOf[js.Any])
+      inline def setByName(value: String): Self = StObject.set(x, "ByName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCRLIdentifier(value: String): Self = StObject.set(x, "CRLIdentifier", value.asInstanceOf[js.Any])
+      inline def setCRLIdentifier(value: String): Self = StObject.set(x, "CRLIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCRLRef(value: String): Self = StObject.set(x, "CRLRef", value.asInstanceOf[js.Any])
+      inline def setCRLRef(value: String): Self = StObject.set(x, "CRLRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCRLRefs(value: String): Self = StObject.set(x, "CRLRefs", value.asInstanceOf[js.Any])
+      inline def setCRLRefs(value: String): Self = StObject.set(x, "CRLRefs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCRLValues(value: String): Self = StObject.set(x, "CRLValues", value.asInstanceOf[js.Any])
+      inline def setCRLValues(value: String): Self = StObject.set(x, "CRLValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCert(value: String): Self = StObject.set(x, "Cert", value.asInstanceOf[js.Any])
+      inline def setCert(value: String): Self = StObject.set(x, "Cert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertDigest(value: String): Self = StObject.set(x, "CertDigest", value.asInstanceOf[js.Any])
+      inline def setCertDigest(value: String): Self = StObject.set(x, "CertDigest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertRefs(value: String): Self = StObject.set(x, "CertRefs", value.asInstanceOf[js.Any])
+      inline def setCertRefs(value: String): Self = StObject.set(x, "CertRefs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificateValues(value: String): Self = StObject.set(x, "CertificateValues", value.asInstanceOf[js.Any])
+      inline def setCertificateValues(value: String): Self = StObject.set(x, "CertificateValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertifiedRole(value: String): Self = StObject.set(x, "CertifiedRole", value.asInstanceOf[js.Any])
+      inline def setCertifiedRole(value: String): Self = StObject.set(x, "CertifiedRole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertifiedRoles(value: String): Self = StObject.set(x, "CertifiedRoles", value.asInstanceOf[js.Any])
+      inline def setCertifiedRoles(value: String): Self = StObject.set(x, "CertifiedRoles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCity(value: String): Self = StObject.set(x, "City", value.asInstanceOf[js.Any])
+      inline def setCity(value: String): Self = StObject.set(x, "City", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClaimedRole(value: String): Self = StObject.set(x, "ClaimedRole", value.asInstanceOf[js.Any])
+      inline def setClaimedRole(value: String): Self = StObject.set(x, "ClaimedRole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClaimedRoles(value: String): Self = StObject.set(x, "ClaimedRoles", value.asInstanceOf[js.Any])
+      inline def setClaimedRoles(value: String): Self = StObject.set(x, "ClaimedRoles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommitmentTypeId(value: String): Self = StObject.set(x, "CommitmentTypeId", value.asInstanceOf[js.Any])
+      inline def setCommitmentTypeId(value: String): Self = StObject.set(x, "CommitmentTypeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommitmentTypeIndication(value: String): Self = StObject.set(x, "CommitmentTypeIndication", value.asInstanceOf[js.Any])
+      inline def setCommitmentTypeIndication(value: String): Self = StObject.set(x, "CommitmentTypeIndication", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommitmentTypeQualifier(value: String): Self = StObject.set(x, "CommitmentTypeQualifier", value.asInstanceOf[js.Any])
+      inline def setCommitmentTypeQualifier(value: String): Self = StObject.set(x, "CommitmentTypeQualifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommitmentTypeQualifiers(value: String): Self = StObject.set(x, "CommitmentTypeQualifiers", value.asInstanceOf[js.Any])
+      inline def setCommitmentTypeQualifiers(value: String): Self = StObject.set(x, "CommitmentTypeQualifiers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompleteCertificateRefs(value: String): Self = StObject.set(x, "CompleteCertificateRefs", value.asInstanceOf[js.Any])
+      inline def setCompleteCertificateRefs(value: String): Self = StObject.set(x, "CompleteCertificateRefs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompleteRevocationRefs(value: String): Self = StObject.set(x, "CompleteRevocationRefs", value.asInstanceOf[js.Any])
+      inline def setCompleteRevocationRefs(value: String): Self = StObject.set(x, "CompleteRevocationRefs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCounterSignature(value: String): Self = StObject.set(x, "CounterSignature", value.asInstanceOf[js.Any])
+      inline def setCounterSignature(value: String): Self = StObject.set(x, "CounterSignature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountryName(value: String): Self = StObject.set(x, "CountryName", value.asInstanceOf[js.Any])
+      inline def setCountryName(value: String): Self = StObject.set(x, "CountryName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataObjectFormat(value: String): Self = StObject.set(x, "DataObjectFormat", value.asInstanceOf[js.Any])
+      inline def setDataObjectFormat(value: String): Self = StObject.set(x, "DataObjectFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDigestAlgAndValue(value: String): Self = StObject.set(x, "DigestAlgAndValue", value.asInstanceOf[js.Any])
+      inline def setDigestAlgAndValue(value: String): Self = StObject.set(x, "DigestAlgAndValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentationReference(value: String): Self = StObject.set(x, "DocumentationReference", value.asInstanceOf[js.Any])
+      inline def setDocumentationReference(value: String): Self = StObject.set(x, "DocumentationReference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentationReferences(value: String): Self = StObject.set(x, "DocumentationReferences", value.asInstanceOf[js.Any])
+      inline def setDocumentationReferences(value: String): Self = StObject.set(x, "DocumentationReferences", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncapsulatedCRLValue(value: String): Self = StObject.set(x, "EncapsulatedCRLValue", value.asInstanceOf[js.Any])
+      inline def setEncapsulatedCRLValue(value: String): Self = StObject.set(x, "EncapsulatedCRLValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncapsulatedOCSPValue(value: String): Self = StObject.set(x, "EncapsulatedOCSPValue", value.asInstanceOf[js.Any])
+      inline def setEncapsulatedOCSPValue(value: String): Self = StObject.set(x, "EncapsulatedOCSPValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncapsulatedTimeStamp(value: String): Self = StObject.set(x, "EncapsulatedTimeStamp", value.asInstanceOf[js.Any])
+      inline def setEncapsulatedTimeStamp(value: String): Self = StObject.set(x, "EncapsulatedTimeStamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncapsulatedX509Certificate(value: String): Self = StObject.set(x, "EncapsulatedX509Certificate", value.asInstanceOf[js.Any])
+      inline def setEncapsulatedX509Certificate(value: String): Self = StObject.set(x, "EncapsulatedX509Certificate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "Encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "Encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExplicitText(value: String): Self = StObject.set(x, "ExplicitText", value.asInstanceOf[js.Any])
+      inline def setExplicitText(value: String): Self = StObject.set(x, "ExplicitText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashDataInfo(value: String): Self = StObject.set(x, "HashDataInfo", value.asInstanceOf[js.Any])
+      inline def setHashDataInfo(value: String): Self = StObject.set(x, "HashDataInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentifier(value: String): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
+      inline def setIdentifier(value: String): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInclude(value: String): Self = StObject.set(x, "Include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: String): Self = StObject.set(x, "Include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndividualDataObjectsTimeStamp(value: String): Self = StObject.set(x, "IndividualDataObjectsTimeStamp", value.asInstanceOf[js.Any])
+      inline def setIndividualDataObjectsTimeStamp(value: String): Self = StObject.set(x, "IndividualDataObjectsTimeStamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInt(value: String): Self = StObject.set(x, "Int", value.asInstanceOf[js.Any])
+      inline def setInt(value: String): Self = StObject.set(x, "Int", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIssueTime(value: String): Self = StObject.set(x, "IssueTime", value.asInstanceOf[js.Any])
+      inline def setIssueTime(value: String): Self = StObject.set(x, "IssueTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIssuer(value: String): Self = StObject.set(x, "Issuer", value.asInstanceOf[js.Any])
+      inline def setIssuer(value: String): Self = StObject.set(x, "Issuer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIssuerSerial(value: String): Self = StObject.set(x, "IssuerSerial", value.asInstanceOf[js.Any])
+      inline def setIssuerSerial(value: String): Self = StObject.set(x, "IssuerSerial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIssuerSerialV2(value: String): Self = StObject.set(x, "IssuerSerialV2", value.asInstanceOf[js.Any])
+      inline def setIssuerSerialV2(value: String): Self = StObject.set(x, "IssuerSerialV2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMimeType(value: String): Self = StObject.set(x, "MimeType", value.asInstanceOf[js.Any])
+      inline def setMimeType(value: String): Self = StObject.set(x, "MimeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoticeNumbers(value: String): Self = StObject.set(x, "NoticeNumbers", value.asInstanceOf[js.Any])
+      inline def setNoticeNumbers(value: String): Self = StObject.set(x, "NoticeNumbers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoticeRef(value: String): Self = StObject.set(x, "NoticeRef", value.asInstanceOf[js.Any])
+      inline def setNoticeRef(value: String): Self = StObject.set(x, "NoticeRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumber(value: String): Self = StObject.set(x, "Number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: String): Self = StObject.set(x, "Number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOCSPIdentifier(value: String): Self = StObject.set(x, "OCSPIdentifier", value.asInstanceOf[js.Any])
+      inline def setOCSPIdentifier(value: String): Self = StObject.set(x, "OCSPIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOCSPRef(value: String): Self = StObject.set(x, "OCSPRef", value.asInstanceOf[js.Any])
+      inline def setOCSPRef(value: String): Self = StObject.set(x, "OCSPRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOCSPRefs(value: String): Self = StObject.set(x, "OCSPRefs", value.asInstanceOf[js.Any])
+      inline def setOCSPRefs(value: String): Self = StObject.set(x, "OCSPRefs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOCSPValues(value: String): Self = StObject.set(x, "OCSPValues", value.asInstanceOf[js.Any])
+      inline def setOCSPValues(value: String): Self = StObject.set(x, "OCSPValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectIdentifier(value: String): Self = StObject.set(x, "ObjectIdentifier", value.asInstanceOf[js.Any])
+      inline def setObjectIdentifier(value: String): Self = StObject.set(x, "ObjectIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectReference(value: String): Self = StObject.set(x, "ObjectReference", value.asInstanceOf[js.Any])
+      inline def setObjectReference(value: String): Self = StObject.set(x, "ObjectReference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrganization(value: String): Self = StObject.set(x, "Organization", value.asInstanceOf[js.Any])
+      inline def setOrganization(value: String): Self = StObject.set(x, "Organization", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOtherCertificate(value: String): Self = StObject.set(x, "OtherCertificate", value.asInstanceOf[js.Any])
+      inline def setOtherCertificate(value: String): Self = StObject.set(x, "OtherCertificate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOtherRef(value: String): Self = StObject.set(x, "OtherRef", value.asInstanceOf[js.Any])
+      inline def setOtherRef(value: String): Self = StObject.set(x, "OtherRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOtherRefs(value: String): Self = StObject.set(x, "OtherRefs", value.asInstanceOf[js.Any])
+      inline def setOtherRefs(value: String): Self = StObject.set(x, "OtherRefs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOtherTimeStamp(value: String): Self = StObject.set(x, "OtherTimeStamp", value.asInstanceOf[js.Any])
+      inline def setOtherTimeStamp(value: String): Self = StObject.set(x, "OtherTimeStamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOtherValue(value: String): Self = StObject.set(x, "OtherValue", value.asInstanceOf[js.Any])
+      inline def setOtherValue(value: String): Self = StObject.set(x, "OtherValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOtherValues(value: String): Self = StObject.set(x, "OtherValues", value.asInstanceOf[js.Any])
+      inline def setOtherValues(value: String): Self = StObject.set(x, "OtherValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPostalCode(value: String): Self = StObject.set(x, "PostalCode", value.asInstanceOf[js.Any])
+      inline def setPostalCode(value: String): Self = StObject.set(x, "PostalCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProducedAt(value: String): Self = StObject.set(x, "ProducedAt", value.asInstanceOf[js.Any])
+      inline def setProducedAt(value: String): Self = StObject.set(x, "ProducedAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualifyingProperties(value: String): Self = StObject.set(x, "QualifyingProperties", value.asInstanceOf[js.Any])
+      inline def setQualifyingProperties(value: String): Self = StObject.set(x, "QualifyingProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualifyingPropertiesReference(value: String): Self = StObject.set(x, "QualifyingPropertiesReference", value.asInstanceOf[js.Any])
+      inline def setQualifyingPropertiesReference(value: String): Self = StObject.set(x, "QualifyingPropertiesReference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferenceInfo(value: String): Self = StObject.set(x, "ReferenceInfo", value.asInstanceOf[js.Any])
+      inline def setReferenceInfo(value: String): Self = StObject.set(x, "ReferenceInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefsOnlyTimeStamp(value: String): Self = StObject.set(x, "RefsOnlyTimeStamp", value.asInstanceOf[js.Any])
+      inline def setRefsOnlyTimeStamp(value: String): Self = StObject.set(x, "RefsOnlyTimeStamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponderID(value: String): Self = StObject.set(x, "ResponderID", value.asInstanceOf[js.Any])
+      inline def setResponderID(value: String): Self = StObject.set(x, "ResponderID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevocationValues(value: String): Self = StObject.set(x, "RevocationValues", value.asInstanceOf[js.Any])
+      inline def setRevocationValues(value: String): Self = StObject.set(x, "RevocationValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSPURI(value: String): Self = StObject.set(x, "SPURI", value.asInstanceOf[js.Any])
+      inline def setSPURI(value: String): Self = StObject.set(x, "SPURI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSPUserNotice(value: String): Self = StObject.set(x, "SPUserNotice", value.asInstanceOf[js.Any])
+      inline def setSPUserNotice(value: String): Self = StObject.set(x, "SPUserNotice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSigAndRefsTimeStamp(value: String): Self = StObject.set(x, "SigAndRefsTimeStamp", value.asInstanceOf[js.Any])
+      inline def setSigAndRefsTimeStamp(value: String): Self = StObject.set(x, "SigAndRefsTimeStamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSigPolicyHash(value: String): Self = StObject.set(x, "SigPolicyHash", value.asInstanceOf[js.Any])
+      inline def setSigPolicyHash(value: String): Self = StObject.set(x, "SigPolicyHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSigPolicyId(value: String): Self = StObject.set(x, "SigPolicyId", value.asInstanceOf[js.Any])
+      inline def setSigPolicyId(value: String): Self = StObject.set(x, "SigPolicyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSigPolicyQualifier(value: String): Self = StObject.set(x, "SigPolicyQualifier", value.asInstanceOf[js.Any])
+      inline def setSigPolicyQualifier(value: String): Self = StObject.set(x, "SigPolicyQualifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSigPolicyQualifiers(value: String): Self = StObject.set(x, "SigPolicyQualifiers", value.asInstanceOf[js.Any])
+      inline def setSigPolicyQualifiers(value: String): Self = StObject.set(x, "SigPolicyQualifiers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignaturePolicyId(value: String): Self = StObject.set(x, "SignaturePolicyId", value.asInstanceOf[js.Any])
+      inline def setSignaturePolicyId(value: String): Self = StObject.set(x, "SignaturePolicyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignaturePolicyIdentifier(value: String): Self = StObject.set(x, "SignaturePolicyIdentifier", value.asInstanceOf[js.Any])
+      inline def setSignaturePolicyIdentifier(value: String): Self = StObject.set(x, "SignaturePolicyIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignaturePolicyImplied(value: String): Self = StObject.set(x, "SignaturePolicyImplied", value.asInstanceOf[js.Any])
+      inline def setSignaturePolicyImplied(value: String): Self = StObject.set(x, "SignaturePolicyImplied", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignatureProductionPlace(value: String): Self = StObject.set(x, "SignatureProductionPlace", value.asInstanceOf[js.Any])
+      inline def setSignatureProductionPlace(value: String): Self = StObject.set(x, "SignatureProductionPlace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignatureTimeStamp(value: String): Self = StObject.set(x, "SignatureTimeStamp", value.asInstanceOf[js.Any])
+      inline def setSignatureTimeStamp(value: String): Self = StObject.set(x, "SignatureTimeStamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignedDataObjectProperties(value: String): Self = StObject.set(x, "SignedDataObjectProperties", value.asInstanceOf[js.Any])
+      inline def setSignedDataObjectProperties(value: String): Self = StObject.set(x, "SignedDataObjectProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignedProperties(value: String): Self = StObject.set(x, "SignedProperties", value.asInstanceOf[js.Any])
+      inline def setSignedProperties(value: String): Self = StObject.set(x, "SignedProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignedSignatureProperties(value: String): Self = StObject.set(x, "SignedSignatureProperties", value.asInstanceOf[js.Any])
+      inline def setSignedSignatureProperties(value: String): Self = StObject.set(x, "SignedSignatureProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignerRole(value: String): Self = StObject.set(x, "SignerRole", value.asInstanceOf[js.Any])
+      inline def setSignerRole(value: String): Self = StObject.set(x, "SignerRole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSigningCertificate(value: String): Self = StObject.set(x, "SigningCertificate", value.asInstanceOf[js.Any])
+      inline def setSigningCertificate(value: String): Self = StObject.set(x, "SigningCertificate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSigningCertificateV2(value: String): Self = StObject.set(x, "SigningCertificateV2", value.asInstanceOf[js.Any])
+      inline def setSigningCertificateV2(value: String): Self = StObject.set(x, "SigningCertificateV2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSigningTime(value: String): Self = StObject.set(x, "SigningTime", value.asInstanceOf[js.Any])
+      inline def setSigningTime(value: String): Self = StObject.set(x, "SigningTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateOrProvince(value: String): Self = StObject.set(x, "StateOrProvince", value.asInstanceOf[js.Any])
+      inline def setStateOrProvince(value: String): Self = StObject.set(x, "StateOrProvince", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsignedDataObjectProperties(value: String): Self = StObject.set(x, "UnsignedDataObjectProperties", value.asInstanceOf[js.Any])
+      inline def setUnsignedDataObjectProperties(value: String): Self = StObject.set(x, "UnsignedDataObjectProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsignedDataObjectProperty(value: String): Self = StObject.set(x, "UnsignedDataObjectProperty", value.asInstanceOf[js.Any])
+      inline def setUnsignedDataObjectProperty(value: String): Self = StObject.set(x, "UnsignedDataObjectProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsignedProperties(value: String): Self = StObject.set(x, "UnsignedProperties", value.asInstanceOf[js.Any])
+      inline def setUnsignedProperties(value: String): Self = StObject.set(x, "UnsignedProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsignedSignatureProperties(value: String): Self = StObject.set(x, "UnsignedSignatureProperties", value.asInstanceOf[js.Any])
+      inline def setUnsignedSignatureProperties(value: String): Self = StObject.set(x, "UnsignedSignatureProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXAdESTimeStamp(value: String): Self = StObject.set(x, "XAdESTimeStamp", value.asInstanceOf[js.Any])
+      inline def setXAdESTimeStamp(value: String): Self = StObject.set(x, "XAdESTimeStamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXMLTimeStamp(value: String): Self = StObject.set(x, "XMLTimeStamp", value.asInstanceOf[js.Any])
+      inline def setXMLTimeStamp(value: String): Self = StObject.set(x, "XMLTimeStamp", value.asInstanceOf[js.Any])
     }
   }
   
@@ -654,8 +550,7 @@ object anon {
   }
   object AttributeNames {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AttributeNames: Encoding,
       DefaultPrefix: String,
       ElementNames: AllDataObjectsTimeStamp,
@@ -666,23 +561,17 @@ object anon {
       __obj.asInstanceOf[AttributeNames]
     }
     
-    @scala.inline
-    implicit class AttributeNamesMutableBuilder[Self <: AttributeNames] (val x: Self) extends AnyVal {
+    extension [Self <: AttributeNames](x: Self) {
       
-      @scala.inline
-      def setAttributeNames(value: Encoding): Self = StObject.set(x, "AttributeNames", value.asInstanceOf[js.Any])
+      inline def setAttributeNames(value: Encoding): Self = StObject.set(x, "AttributeNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultPrefix(value: String): Self = StObject.set(x, "DefaultPrefix", value.asInstanceOf[js.Any])
+      inline def setDefaultPrefix(value: String): Self = StObject.set(x, "DefaultPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementNames(value: AllDataObjectsTimeStamp): Self = StObject.set(x, "ElementNames", value.asInstanceOf[js.Any])
+      inline def setElementNames(value: AllDataObjectsTimeStamp): Self = StObject.set(x, "ElementNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceURI(value: String): Self = StObject.set(x, "NamespaceURI", value.asInstanceOf[js.Any])
+      inline def setNamespaceURI(value: String): Self = StObject.set(x, "NamespaceURI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignedPropertiesType(value: String): Self = StObject.set(x, "SignedPropertiesType", value.asInstanceOf[js.Any])
+      inline def setSignedPropertiesType(value: String): Self = StObject.set(x, "SignedPropertiesType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -706,8 +595,7 @@ object anon {
   }
   object Encoding {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Encoding: String,
       Id: String,
       ObjectReference: String,
@@ -721,29 +609,21 @@ object anon {
       __obj.asInstanceOf[Encoding]
     }
     
-    @scala.inline
-    implicit class EncodingMutableBuilder[Self <: Encoding] (val x: Self) extends AnyVal {
+    extension [Self <: Encoding](x: Self) {
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "Encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "Encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectReference(value: String): Self = StObject.set(x, "ObjectReference", value.asInstanceOf[js.Any])
+      inline def setObjectReference(value: String): Self = StObject.set(x, "ObjectReference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualifier(value: String): Self = StObject.set(x, "Qualifier", value.asInstanceOf[js.Any])
+      inline def setQualifier(value: String): Self = StObject.set(x, "Qualifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferencedData(value: String): Self = StObject.set(x, "ReferencedData", value.asInstanceOf[js.Any])
+      inline def setReferencedData(value: String): Self = StObject.set(x, "ReferencedData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setURI(value: String): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+      inline def setURI(value: String): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     }
   }
 }

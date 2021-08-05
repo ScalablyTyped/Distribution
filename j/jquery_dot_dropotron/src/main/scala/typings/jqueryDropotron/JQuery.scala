@@ -18,16 +18,13 @@ trait JQuery extends StObject {
 }
 object JQuery {
   
-  @scala.inline
-  def apply(dropotron: /* config */ js.UndefOr[DropotronConfiguration] => Unit): JQuery = {
+  inline def apply(dropotron: /* config */ js.UndefOr[DropotronConfiguration] => Unit): JQuery = {
     val __obj = js.Dynamic.literal(dropotron = js.Any.fromFunction1(dropotron))
     __obj.asInstanceOf[JQuery]
   }
   
-  @scala.inline
-  implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+  extension [Self <: JQuery](x: Self) {
     
-    @scala.inline
-    def setDropotron(value: /* config */ js.UndefOr[DropotronConfiguration] => Unit): Self = StObject.set(x, "dropotron", js.Any.fromFunction1(value))
+    inline def setDropotron(value: /* config */ js.UndefOr[DropotronConfiguration] => Unit): Self = StObject.set(x, "dropotron", js.Any.fromFunction1(value))
   }
 }

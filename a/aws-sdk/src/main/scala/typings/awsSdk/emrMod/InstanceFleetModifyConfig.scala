@@ -23,28 +23,21 @@ trait InstanceFleetModifyConfig extends StObject {
 }
 object InstanceFleetModifyConfig {
   
-  @scala.inline
-  def apply(InstanceFleetId: InstanceFleetId): InstanceFleetModifyConfig = {
+  inline def apply(InstanceFleetId: InstanceFleetId): InstanceFleetModifyConfig = {
     val __obj = js.Dynamic.literal(InstanceFleetId = InstanceFleetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceFleetModifyConfig]
   }
   
-  @scala.inline
-  implicit class InstanceFleetModifyConfigMutableBuilder[Self <: InstanceFleetModifyConfig] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceFleetModifyConfig](x: Self) {
     
-    @scala.inline
-    def setInstanceFleetId(value: InstanceFleetId): Self = StObject.set(x, "InstanceFleetId", value.asInstanceOf[js.Any])
+    inline def setInstanceFleetId(value: InstanceFleetId): Self = StObject.set(x, "InstanceFleetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetOnDemandCapacity(value: WholeNumber): Self = StObject.set(x, "TargetOnDemandCapacity", value.asInstanceOf[js.Any])
+    inline def setTargetOnDemandCapacity(value: WholeNumber): Self = StObject.set(x, "TargetOnDemandCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetOnDemandCapacityUndefined: Self = StObject.set(x, "TargetOnDemandCapacity", js.undefined)
+    inline def setTargetOnDemandCapacityUndefined: Self = StObject.set(x, "TargetOnDemandCapacity", js.undefined)
     
-    @scala.inline
-    def setTargetSpotCapacity(value: WholeNumber): Self = StObject.set(x, "TargetSpotCapacity", value.asInstanceOf[js.Any])
+    inline def setTargetSpotCapacity(value: WholeNumber): Self = StObject.set(x, "TargetSpotCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetSpotCapacityUndefined: Self = StObject.set(x, "TargetSpotCapacity", js.undefined)
+    inline def setTargetSpotCapacityUndefined: Self = StObject.set(x, "TargetSpotCapacity", js.undefined)
   }
 }

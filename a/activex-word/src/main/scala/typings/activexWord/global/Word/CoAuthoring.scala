@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.CoAuthoring")
 @js.native
-class CoAuthoring protected ()
+/* private */ class CoAuthoring ()
   extends StObject
      with typings.activexWord.Word.CoAuthoring {
   
@@ -43,7 +43,7 @@ class CoAuthoring protected ()
   /* CompleteClass */
   override val Updates: typings.activexWord.Word.CoAuthUpdates = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.CoAuthoring_typekey")
   var WordDotCoAuthoring_typekey: typings.activexWord.Word.CoAuthoring = js.native
 }

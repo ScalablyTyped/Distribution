@@ -27,8 +27,7 @@ trait OS extends StObject {
 }
 object OS {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     android: Boolean,
     androidNative: Boolean,
     iOS: Boolean,
@@ -43,34 +42,24 @@ object OS {
     __obj.asInstanceOf[OS]
   }
   
-  @scala.inline
-  implicit class OSMutableBuilder[Self <: OS] (val x: Self) extends AnyVal {
+  extension [Self <: OS](x: Self) {
     
-    @scala.inline
-    def setAndroid(value: Boolean): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
+    inline def setAndroid(value: Boolean): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidNative(value: Boolean): Self = StObject.set(x, "androidNative", value.asInstanceOf[js.Any])
+    inline def setAndroidNative(value: Boolean): Self = StObject.set(x, "androidNative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIOS(value: Boolean): Self = StObject.set(x, "iOS", value.asInstanceOf[js.Any])
+    inline def setIOS(value: Boolean): Self = StObject.set(x, "iOS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIPad(value: Boolean): Self = StObject.set(x, "iPad", value.asInstanceOf[js.Any])
+    inline def setIPad(value: Boolean): Self = StObject.set(x, "iPad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIPhone(value: Boolean): Self = StObject.set(x, "iPhone", value.asInstanceOf[js.Any])
+    inline def setIPhone(value: Boolean): Self = StObject.set(x, "iPhone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMac(value: Boolean): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
+    inline def setMac(value: Boolean): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMobile(value: Boolean): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
+    inline def setMobile(value: Boolean): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindows(value: Boolean): Self = StObject.set(x, "windows", value.asInstanceOf[js.Any])
+    inline def setWindows(value: Boolean): Self = StObject.set(x, "windows", value.asInstanceOf[js.Any])
   }
 }

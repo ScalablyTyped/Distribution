@@ -29,8 +29,7 @@ trait QueryJs extends StObject {
 }
 object QueryJs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     includeDeleted: () => QueryJs,
     includeTotalCount: () => QueryJs,
     orderBy: String => QueryJs,
@@ -44,43 +43,30 @@ object QueryJs {
     __obj.asInstanceOf[QueryJs]
   }
   
-  @scala.inline
-  implicit class QueryJsMutableBuilder[Self <: QueryJs] (val x: Self) extends AnyVal {
+  extension [Self <: QueryJs](x: Self) {
     
-    @scala.inline
-    def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setIncludeDeleted(value: () => QueryJs): Self = StObject.set(x, "includeDeleted", js.Any.fromFunction0(value))
+    inline def setIncludeDeleted(value: () => QueryJs): Self = StObject.set(x, "includeDeleted", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIncludeTotalCount(value: () => QueryJs): Self = StObject.set(x, "includeTotalCount", js.Any.fromFunction0(value))
+    inline def setIncludeTotalCount(value: () => QueryJs): Self = StObject.set(x, "includeTotalCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOrderBy(value: String => QueryJs): Self = StObject.set(x, "orderBy", js.Any.fromFunction1(value))
+    inline def setOrderBy(value: String => QueryJs): Self = StObject.set(x, "orderBy", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOrderByDescending(value: String => QueryJs): Self = StObject.set(x, "orderByDescending", js.Any.fromFunction1(value))
+    inline def setOrderByDescending(value: String => QueryJs): Self = StObject.set(x, "orderByDescending", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSelect(value: String => QueryJs): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+    inline def setSelect(value: String => QueryJs): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSingle(value: Boolean): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
+    inline def setSingle(value: Boolean): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleUndefined: Self = StObject.set(x, "single", js.undefined)
+    inline def setSingleUndefined: Self = StObject.set(x, "single", js.undefined)
     
-    @scala.inline
-    def setSkip(value: Double => QueryJs): Self = StObject.set(x, "skip", js.Any.fromFunction1(value))
+    inline def setSkip(value: Double => QueryJs): Self = StObject.set(x, "skip", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTake(value: Double => QueryJs): Self = StObject.set(x, "take", js.Any.fromFunction1(value))
+    inline def setTake(value: Double => QueryJs): Self = StObject.set(x, "take", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWhere(value: js.Any => QueryJs): Self = StObject.set(x, "where", js.Any.fromFunction1(value))
+    inline def setWhere(value: js.Any => QueryJs): Self = StObject.set(x, "where", js.Any.fromFunction1(value))
   }
 }

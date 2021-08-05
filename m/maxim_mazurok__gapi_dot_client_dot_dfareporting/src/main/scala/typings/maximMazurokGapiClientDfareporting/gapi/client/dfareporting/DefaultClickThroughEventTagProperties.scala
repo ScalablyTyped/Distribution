@@ -14,25 +14,19 @@ trait DefaultClickThroughEventTagProperties extends StObject {
 }
 object DefaultClickThroughEventTagProperties {
   
-  @scala.inline
-  def apply(): DefaultClickThroughEventTagProperties = {
+  inline def apply(): DefaultClickThroughEventTagProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DefaultClickThroughEventTagProperties]
   }
   
-  @scala.inline
-  implicit class DefaultClickThroughEventTagPropertiesMutableBuilder[Self <: DefaultClickThroughEventTagProperties] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultClickThroughEventTagProperties](x: Self) {
     
-    @scala.inline
-    def setDefaultClickThroughEventTagId(value: String): Self = StObject.set(x, "defaultClickThroughEventTagId", value.asInstanceOf[js.Any])
+    inline def setDefaultClickThroughEventTagId(value: String): Self = StObject.set(x, "defaultClickThroughEventTagId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultClickThroughEventTagIdUndefined: Self = StObject.set(x, "defaultClickThroughEventTagId", js.undefined)
+    inline def setDefaultClickThroughEventTagIdUndefined: Self = StObject.set(x, "defaultClickThroughEventTagId", js.undefined)
     
-    @scala.inline
-    def setOverrideInheritedEventTag(value: Boolean): Self = StObject.set(x, "overrideInheritedEventTag", value.asInstanceOf[js.Any])
+    inline def setOverrideInheritedEventTag(value: Boolean): Self = StObject.set(x, "overrideInheritedEventTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrideInheritedEventTagUndefined: Self = StObject.set(x, "overrideInheritedEventTag", js.undefined)
+    inline def setOverrideInheritedEventTagUndefined: Self = StObject.set(x, "overrideInheritedEventTag", js.undefined)
   }
 }

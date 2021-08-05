@@ -13,244 +13,209 @@ object web3UtilsStrings {
   sealed trait Gwei
     extends StObject
        with Unit
-  @scala.inline
-  def Gwei: Gwei = "Gwei".asInstanceOf[Gwei]
+  inline def Gwei: Gwei = "Gwei".asInstanceOf[Gwei]
   
   @js.native
   sealed trait Kwei
     extends StObject
        with Unit
-  @scala.inline
-  def Kwei: Kwei = "Kwei".asInstanceOf[Kwei]
+  inline def Kwei: Kwei = "Kwei".asInstanceOf[Kwei]
   
   @js.native
   sealed trait Mwei
     extends StObject
        with Unit
-  @scala.inline
-  def Mwei: Mwei = "Mwei".asInstanceOf[Mwei]
+  inline def Mwei: Mwei = "Mwei".asInstanceOf[Mwei]
   
   @js.native
   sealed trait babbage
     extends StObject
        with Unit
-  @scala.inline
-  def babbage: babbage = "babbage".asInstanceOf[babbage]
+  inline def babbage: babbage = "babbage".asInstanceOf[babbage]
   
   @js.native
   sealed trait constructor
     extends StObject
        with AbiType
-  @scala.inline
-  def constructor: constructor = "constructor".asInstanceOf[constructor]
+  inline def constructor: constructor = "constructor".asInstanceOf[constructor]
   
   @js.native
   sealed trait ether
     extends StObject
        with Unit
-  @scala.inline
-  def ether: ether = "ether".asInstanceOf[ether]
+  inline def ether: ether = "ether".asInstanceOf[ether]
   
   @js.native
   sealed trait event
     extends StObject
        with AbiType
-  @scala.inline
-  def event: event = "event".asInstanceOf[event]
+  inline def event: event = "event".asInstanceOf[event]
   
   @js.native
   sealed trait fallback
     extends StObject
        with AbiType
-  @scala.inline
-  def fallback: fallback = "fallback".asInstanceOf[fallback]
+  inline def fallback: fallback = "fallback".asInstanceOf[fallback]
   
   @js.native
   sealed trait femtoether
     extends StObject
        with Unit
-  @scala.inline
-  def femtoether: femtoether = "femtoether".asInstanceOf[femtoether]
+  inline def femtoether: femtoether = "femtoether".asInstanceOf[femtoether]
   
   @js.native
   sealed trait finney
     extends StObject
        with Unit
-  @scala.inline
-  def finney: finney = "finney".asInstanceOf[finney]
+  inline def finney: finney = "finney".asInstanceOf[finney]
   
   @js.native
   sealed trait function
     extends StObject
        with AbiType
-  @scala.inline
-  def function: function = "function".asInstanceOf[function]
+  inline def function: function = "function".asInstanceOf[function]
   
   @js.native
   sealed trait gether
     extends StObject
        with Unit
-  @scala.inline
-  def gether: gether = "gether".asInstanceOf[gether]
+  inline def gether: gether = "gether".asInstanceOf[gether]
   
   @js.native
   sealed trait grand
     extends StObject
        with Unit
-  @scala.inline
-  def grand: grand = "grand".asInstanceOf[grand]
+  inline def grand: grand = "grand".asInstanceOf[grand]
   
   @js.native
   sealed trait gwei_
     extends StObject
        with Unit
-  @scala.inline
-  def gwei_ : gwei_ = "gwei".asInstanceOf[gwei_]
+  inline def gwei_ : gwei_ = "gwei".asInstanceOf[gwei_]
   
   @js.native
   sealed trait kether
     extends StObject
        with Unit
-  @scala.inline
-  def kether: kether = "kether".asInstanceOf[kether]
+  inline def kether: kether = "kether".asInstanceOf[kether]
   
   @js.native
   sealed trait kwei_
     extends StObject
        with Unit
-  @scala.inline
-  def kwei_ : kwei_ = "kwei".asInstanceOf[kwei_]
+  inline def kwei_ : kwei_ = "kwei".asInstanceOf[kwei_]
   
   @js.native
   sealed trait lovelace
     extends StObject
        with Unit
-  @scala.inline
-  def lovelace: lovelace = "lovelace".asInstanceOf[lovelace]
+  inline def lovelace: lovelace = "lovelace".asInstanceOf[lovelace]
   
   @js.native
   sealed trait mether
     extends StObject
        with Unit
-  @scala.inline
-  def mether: mether = "mether".asInstanceOf[mether]
+  inline def mether: mether = "mether".asInstanceOf[mether]
   
   @js.native
   sealed trait micro
     extends StObject
        with Unit
-  @scala.inline
-  def micro: micro = "micro".asInstanceOf[micro]
+  inline def micro: micro = "micro".asInstanceOf[micro]
   
   @js.native
   sealed trait microether
     extends StObject
        with Unit
-  @scala.inline
-  def microether: microether = "microether".asInstanceOf[microether]
+  inline def microether: microether = "microether".asInstanceOf[microether]
   
   @js.native
   sealed trait milli
     extends StObject
        with Unit
-  @scala.inline
-  def milli: milli = "milli".asInstanceOf[milli]
+  inline def milli: milli = "milli".asInstanceOf[milli]
   
   @js.native
   sealed trait milliether
     extends StObject
        with Unit
-  @scala.inline
-  def milliether: milliether = "milliether".asInstanceOf[milliether]
+  inline def milliether: milliether = "milliether".asInstanceOf[milliether]
   
   @js.native
   sealed trait mwei_
     extends StObject
        with Unit
-  @scala.inline
-  def mwei_ : mwei_ = "mwei".asInstanceOf[mwei_]
+  inline def mwei_ : mwei_ = "mwei".asInstanceOf[mwei_]
   
   @js.native
   sealed trait nano
     extends StObject
        with Unit
-  @scala.inline
-  def nano: nano = "nano".asInstanceOf[nano]
+  inline def nano: nano = "nano".asInstanceOf[nano]
   
   @js.native
   sealed trait nanoether
     extends StObject
        with Unit
-  @scala.inline
-  def nanoether: nanoether = "nanoether".asInstanceOf[nanoether]
+  inline def nanoether: nanoether = "nanoether".asInstanceOf[nanoether]
   
   @js.native
   sealed trait noether
     extends StObject
        with Unit
-  @scala.inline
-  def noether: noether = "noether".asInstanceOf[noether]
+  inline def noether: noether = "noether".asInstanceOf[noether]
   
   @js.native
   sealed trait nonpayable
     extends StObject
        with StateMutabilityType
-  @scala.inline
-  def nonpayable: nonpayable = "nonpayable".asInstanceOf[nonpayable]
+  inline def nonpayable: nonpayable = "nonpayable".asInstanceOf[nonpayable]
   
   @js.native
   sealed trait payable
     extends StObject
        with StateMutabilityType
-  @scala.inline
-  def payable: payable = "payable".asInstanceOf[payable]
+  inline def payable: payable = "payable".asInstanceOf[payable]
   
   @js.native
   sealed trait picoether
     extends StObject
        with Unit
-  @scala.inline
-  def picoether: picoether = "picoether".asInstanceOf[picoether]
+  inline def picoether: picoether = "picoether".asInstanceOf[picoether]
   
   @js.native
   sealed trait pure
     extends StObject
        with StateMutabilityType
-  @scala.inline
-  def pure: pure = "pure".asInstanceOf[pure]
+  inline def pure: pure = "pure".asInstanceOf[pure]
   
   @js.native
   sealed trait shannon
     extends StObject
        with Unit
-  @scala.inline
-  def shannon: shannon = "shannon".asInstanceOf[shannon]
+  inline def shannon: shannon = "shannon".asInstanceOf[shannon]
   
   @js.native
   sealed trait szabo
     extends StObject
        with Unit
-  @scala.inline
-  def szabo: szabo = "szabo".asInstanceOf[szabo]
+  inline def szabo: szabo = "szabo".asInstanceOf[szabo]
   
   @js.native
   sealed trait tether
     extends StObject
        with Unit
-  @scala.inline
-  def tether: tether = "tether".asInstanceOf[tether]
+  inline def tether: tether = "tether".asInstanceOf[tether]
   
   @js.native
   sealed trait view
     extends StObject
        with StateMutabilityType
-  @scala.inline
-  def view: view = "view".asInstanceOf[view]
+  inline def view: view = "view".asInstanceOf[view]
   
   @js.native
   sealed trait wei
     extends StObject
        with Unit
-  @scala.inline
-  def wei: wei = "wei".asInstanceOf[wei]
+  inline def wei: wei = "wei".asInstanceOf[wei]
 }

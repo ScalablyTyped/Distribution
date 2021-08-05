@@ -11,10 +11,8 @@ object getDefaultKmsKeyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getDefaultKmsKey(): js.Promise[GetDefaultKmsKeyResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultKmsKey")().asInstanceOf[js.Promise[GetDefaultKmsKeyResult]]
-  @scala.inline
-  def getDefaultKmsKey(opts: InvokeOptions): js.Promise[GetDefaultKmsKeyResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultKmsKey")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetDefaultKmsKeyResult]]
+  inline def getDefaultKmsKey(): js.Promise[GetDefaultKmsKeyResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultKmsKey")().asInstanceOf[js.Promise[GetDefaultKmsKeyResult]]
+  inline def getDefaultKmsKey(opts: InvokeOptions): js.Promise[GetDefaultKmsKeyResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultKmsKey")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetDefaultKmsKeyResult]]
   
   trait GetDefaultKmsKeyResult extends StObject {
     
@@ -30,20 +28,16 @@ object getDefaultKmsKeyMod {
   }
   object GetDefaultKmsKeyResult {
     
-    @scala.inline
-    def apply(id: String, keyArn: String): GetDefaultKmsKeyResult = {
+    inline def apply(id: String, keyArn: String): GetDefaultKmsKeyResult = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], keyArn = keyArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetDefaultKmsKeyResult]
     }
     
-    @scala.inline
-    implicit class GetDefaultKmsKeyResultMutableBuilder[Self <: GetDefaultKmsKeyResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetDefaultKmsKeyResult](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyArn(value: String): Self = StObject.set(x, "keyArn", value.asInstanceOf[js.Any])
+      inline def setKeyArn(value: String): Self = StObject.set(x, "keyArn", value.asInstanceOf[js.Any])
     }
   }
 }

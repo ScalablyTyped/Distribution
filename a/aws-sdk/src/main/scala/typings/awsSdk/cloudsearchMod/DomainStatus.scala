@@ -61,82 +61,57 @@ trait DomainStatus extends StObject {
 }
 object DomainStatus {
   
-  @scala.inline
-  def apply(DomainId: DomainId, DomainName: DomainName, RequiresIndexDocuments: Boolean): DomainStatus = {
+  inline def apply(DomainId: DomainId, DomainName: DomainName, RequiresIndexDocuments: Boolean): DomainStatus = {
     val __obj = js.Dynamic.literal(DomainId = DomainId.asInstanceOf[js.Any], DomainName = DomainName.asInstanceOf[js.Any], RequiresIndexDocuments = RequiresIndexDocuments.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainStatus]
   }
   
-  @scala.inline
-  implicit class DomainStatusMutableBuilder[Self <: DomainStatus] (val x: Self) extends AnyVal {
+  extension [Self <: DomainStatus](x: Self) {
     
-    @scala.inline
-    def setARN(value: ARN): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
+    inline def setARN(value: ARN): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setARNUndefined: Self = StObject.set(x, "ARN", js.undefined)
+    inline def setARNUndefined: Self = StObject.set(x, "ARN", js.undefined)
     
-    @scala.inline
-    def setCreated(value: Boolean): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: Boolean): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedUndefined: Self = StObject.set(x, "Created", js.undefined)
+    inline def setCreatedUndefined: Self = StObject.set(x, "Created", js.undefined)
     
-    @scala.inline
-    def setDeleted(value: Boolean): Self = StObject.set(x, "Deleted", value.asInstanceOf[js.Any])
+    inline def setDeleted(value: Boolean): Self = StObject.set(x, "Deleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletedUndefined: Self = StObject.set(x, "Deleted", js.undefined)
+    inline def setDeletedUndefined: Self = StObject.set(x, "Deleted", js.undefined)
     
-    @scala.inline
-    def setDocService(value: ServiceEndpoint): Self = StObject.set(x, "DocService", value.asInstanceOf[js.Any])
+    inline def setDocService(value: ServiceEndpoint): Self = StObject.set(x, "DocService", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocServiceUndefined: Self = StObject.set(x, "DocService", js.undefined)
+    inline def setDocServiceUndefined: Self = StObject.set(x, "DocService", js.undefined)
     
-    @scala.inline
-    def setDomainId(value: DomainId): Self = StObject.set(x, "DomainId", value.asInstanceOf[js.Any])
+    inline def setDomainId(value: DomainId): Self = StObject.set(x, "DomainId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimits(value: Limits): Self = StObject.set(x, "Limits", value.asInstanceOf[js.Any])
+    inline def setLimits(value: Limits): Self = StObject.set(x, "Limits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitsUndefined: Self = StObject.set(x, "Limits", js.undefined)
+    inline def setLimitsUndefined: Self = StObject.set(x, "Limits", js.undefined)
     
-    @scala.inline
-    def setProcessing(value: Boolean): Self = StObject.set(x, "Processing", value.asInstanceOf[js.Any])
+    inline def setProcessing(value: Boolean): Self = StObject.set(x, "Processing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessingUndefined: Self = StObject.set(x, "Processing", js.undefined)
+    inline def setProcessingUndefined: Self = StObject.set(x, "Processing", js.undefined)
     
-    @scala.inline
-    def setRequiresIndexDocuments(value: Boolean): Self = StObject.set(x, "RequiresIndexDocuments", value.asInstanceOf[js.Any])
+    inline def setRequiresIndexDocuments(value: Boolean): Self = StObject.set(x, "RequiresIndexDocuments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchInstanceCount(value: InstanceCount): Self = StObject.set(x, "SearchInstanceCount", value.asInstanceOf[js.Any])
+    inline def setSearchInstanceCount(value: InstanceCount): Self = StObject.set(x, "SearchInstanceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchInstanceCountUndefined: Self = StObject.set(x, "SearchInstanceCount", js.undefined)
+    inline def setSearchInstanceCountUndefined: Self = StObject.set(x, "SearchInstanceCount", js.undefined)
     
-    @scala.inline
-    def setSearchInstanceType(value: SearchInstanceType): Self = StObject.set(x, "SearchInstanceType", value.asInstanceOf[js.Any])
+    inline def setSearchInstanceType(value: SearchInstanceType): Self = StObject.set(x, "SearchInstanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchInstanceTypeUndefined: Self = StObject.set(x, "SearchInstanceType", js.undefined)
+    inline def setSearchInstanceTypeUndefined: Self = StObject.set(x, "SearchInstanceType", js.undefined)
     
-    @scala.inline
-    def setSearchPartitionCount(value: PartitionCount): Self = StObject.set(x, "SearchPartitionCount", value.asInstanceOf[js.Any])
+    inline def setSearchPartitionCount(value: PartitionCount): Self = StObject.set(x, "SearchPartitionCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchPartitionCountUndefined: Self = StObject.set(x, "SearchPartitionCount", js.undefined)
+    inline def setSearchPartitionCountUndefined: Self = StObject.set(x, "SearchPartitionCount", js.undefined)
     
-    @scala.inline
-    def setSearchService(value: ServiceEndpoint): Self = StObject.set(x, "SearchService", value.asInstanceOf[js.Any])
+    inline def setSearchService(value: ServiceEndpoint): Self = StObject.set(x, "SearchService", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchServiceUndefined: Self = StObject.set(x, "SearchService", js.undefined)
+    inline def setSearchServiceUndefined: Self = StObject.set(x, "SearchService", js.undefined)
   }
 }

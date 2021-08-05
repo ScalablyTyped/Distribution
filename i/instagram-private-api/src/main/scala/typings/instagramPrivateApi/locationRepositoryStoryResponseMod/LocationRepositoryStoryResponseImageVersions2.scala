@@ -10,19 +10,15 @@ trait LocationRepositoryStoryResponseImageVersions2 extends StObject {
 }
 object LocationRepositoryStoryResponseImageVersions2 {
   
-  @scala.inline
-  def apply(candidates: js.Array[LocationRepositoryStoryResponseCandidatesItem]): LocationRepositoryStoryResponseImageVersions2 = {
+  inline def apply(candidates: js.Array[LocationRepositoryStoryResponseCandidatesItem]): LocationRepositoryStoryResponseImageVersions2 = {
     val __obj = js.Dynamic.literal(candidates = candidates.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationRepositoryStoryResponseImageVersions2]
   }
   
-  @scala.inline
-  implicit class LocationRepositoryStoryResponseImageVersions2MutableBuilder[Self <: LocationRepositoryStoryResponseImageVersions2] (val x: Self) extends AnyVal {
+  extension [Self <: LocationRepositoryStoryResponseImageVersions2](x: Self) {
     
-    @scala.inline
-    def setCandidates(value: js.Array[LocationRepositoryStoryResponseCandidatesItem]): Self = StObject.set(x, "candidates", value.asInstanceOf[js.Any])
+    inline def setCandidates(value: js.Array[LocationRepositoryStoryResponseCandidatesItem]): Self = StObject.set(x, "candidates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCandidatesVarargs(value: LocationRepositoryStoryResponseCandidatesItem*): Self = StObject.set(x, "candidates", js.Array(value :_*))
+    inline def setCandidatesVarargs(value: LocationRepositoryStoryResponseCandidatesItem*): Self = StObject.set(x, "candidates", js.Array(value :_*))
   }
 }

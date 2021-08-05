@@ -30,31 +30,23 @@ trait SchemaFacetBucket extends StObject {
 }
 object SchemaFacetBucket {
   
-  @scala.inline
-  def apply(): SchemaFacetBucket = {
+  inline def apply(): SchemaFacetBucket = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFacetBucket]
   }
   
-  @scala.inline
-  implicit class SchemaFacetBucketMutableBuilder[Self <: SchemaFacetBucket] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFacetBucket](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
+    inline def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
+    inline def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
     
-    @scala.inline
-    def setValue(value: SchemaValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: SchemaValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

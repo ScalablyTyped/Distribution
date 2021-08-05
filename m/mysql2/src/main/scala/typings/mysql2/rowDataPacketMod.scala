@@ -18,17 +18,14 @@ object rowDataPacketMod {
   }
   object RowDataPacket {
     
-    @scala.inline
-    def apply(constructor: `3`): RowDataPacket = {
+    inline def apply(constructor: `3`): RowDataPacket = {
       val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any])
       __obj.asInstanceOf[RowDataPacket]
     }
     
-    @scala.inline
-    implicit class RowDataPacketMutableBuilder[Self <: RowDataPacket] (val x: Self) extends AnyVal {
+    extension [Self <: RowDataPacket](x: Self) {
       
-      @scala.inline
-      def setConstructor(value: `3`): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
+      inline def setConstructor(value: `3`): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
     }
   }
 }

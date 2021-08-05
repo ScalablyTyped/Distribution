@@ -12,19 +12,15 @@ trait Partitions extends StObject {
 }
 object Partitions {
   
-  @scala.inline
-  def apply(partitions: js.Array[WebViewPartition]): Partitions = {
+  inline def apply(partitions: js.Array[WebViewPartition]): Partitions = {
     val __obj = js.Dynamic.literal(partitions = partitions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Partitions]
   }
   
-  @scala.inline
-  implicit class PartitionsMutableBuilder[Self <: Partitions] (val x: Self) extends AnyVal {
+  extension [Self <: Partitions](x: Self) {
     
-    @scala.inline
-    def setPartitions(value: js.Array[WebViewPartition]): Self = StObject.set(x, "partitions", value.asInstanceOf[js.Any])
+    inline def setPartitions(value: js.Array[WebViewPartition]): Self = StObject.set(x, "partitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionsVarargs(value: WebViewPartition*): Self = StObject.set(x, "partitions", js.Array(value :_*))
+    inline def setPartitionsVarargs(value: WebViewPartition*): Self = StObject.set(x, "partitions", js.Array(value :_*))
   }
 }

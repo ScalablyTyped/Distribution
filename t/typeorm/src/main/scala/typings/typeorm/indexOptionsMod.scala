@@ -57,62 +57,44 @@ object indexOptionsMod {
   }
   object IndexOptions {
     
-    @scala.inline
-    def apply(): IndexOptions = {
+    inline def apply(): IndexOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IndexOptions]
     }
     
-    @scala.inline
-    implicit class IndexOptionsMutableBuilder[Self <: IndexOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IndexOptions](x: Self) {
       
-      @scala.inline
-      def setBackground(value: Boolean): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: Boolean): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+      inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
-      @scala.inline
-      def setExpireAfterSeconds(value: Double): Self = StObject.set(x, "expireAfterSeconds", value.asInstanceOf[js.Any])
+      inline def setExpireAfterSeconds(value: Double): Self = StObject.set(x, "expireAfterSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpireAfterSecondsUndefined: Self = StObject.set(x, "expireAfterSeconds", js.undefined)
+      inline def setExpireAfterSecondsUndefined: Self = StObject.set(x, "expireAfterSeconds", js.undefined)
       
-      @scala.inline
-      def setFulltext(value: Boolean): Self = StObject.set(x, "fulltext", value.asInstanceOf[js.Any])
+      inline def setFulltext(value: Boolean): Self = StObject.set(x, "fulltext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFulltextUndefined: Self = StObject.set(x, "fulltext", js.undefined)
+      inline def setFulltextUndefined: Self = StObject.set(x, "fulltext", js.undefined)
       
-      @scala.inline
-      def setParser(value: String): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
+      inline def setParser(value: String): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
+      inline def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
       
-      @scala.inline
-      def setSparse(value: Boolean): Self = StObject.set(x, "sparse", value.asInstanceOf[js.Any])
+      inline def setSparse(value: Boolean): Self = StObject.set(x, "sparse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSparseUndefined: Self = StObject.set(x, "sparse", js.undefined)
+      inline def setSparseUndefined: Self = StObject.set(x, "sparse", js.undefined)
       
-      @scala.inline
-      def setSpatial(value: Boolean): Self = StObject.set(x, "spatial", value.asInstanceOf[js.Any])
+      inline def setSpatial(value: Boolean): Self = StObject.set(x, "spatial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpatialUndefined: Self = StObject.set(x, "spatial", js.undefined)
+      inline def setSpatialUndefined: Self = StObject.set(x, "spatial", js.undefined)
       
-      @scala.inline
-      def setUnique(value: Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
+      inline def setUnique(value: Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
+      inline def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
       
-      @scala.inline
-      def setWhere(value: String): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
+      inline def setWhere(value: String): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
+      inline def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
     }
   }
 }

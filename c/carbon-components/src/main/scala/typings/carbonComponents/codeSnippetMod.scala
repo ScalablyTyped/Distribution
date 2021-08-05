@@ -30,8 +30,7 @@ object codeSnippetMod {
     @JSImport("carbon-components/components/code-snippet/code-snippet", "default.components")
     @js.native
     def components: WeakMap[js.Object, js.Any] = js.native
-    @scala.inline
-    def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+    inline def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -43,20 +42,16 @@ object codeSnippetMod {
   }
   object CodeSnippet {
     
-    @scala.inline
-    def apply(_handleClick: () => Unit, _initCodeSnippet: () => Unit): CodeSnippet = {
+    inline def apply(_handleClick: () => Unit, _initCodeSnippet: () => Unit): CodeSnippet = {
       val __obj = js.Dynamic.literal(_handleClick = js.Any.fromFunction0(_handleClick), _initCodeSnippet = js.Any.fromFunction0(_initCodeSnippet))
       __obj.asInstanceOf[CodeSnippet]
     }
     
-    @scala.inline
-    implicit class CodeSnippetMutableBuilder[Self <: CodeSnippet] (val x: Self) extends AnyVal {
+    extension [Self <: CodeSnippet](x: Self) {
       
-      @scala.inline
-      def set_handleClick(value: () => Unit): Self = StObject.set(x, "_handleClick", js.Any.fromFunction0(value))
+      inline def set_handleClick(value: () => Unit): Self = StObject.set(x, "_handleClick", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_initCodeSnippet(value: () => Unit): Self = StObject.set(x, "_initCodeSnippet", js.Any.fromFunction0(value))
+      inline def set_initCodeSnippet(value: () => Unit): Self = StObject.set(x, "_initCodeSnippet", js.Any.fromFunction0(value))
     }
   }
 }

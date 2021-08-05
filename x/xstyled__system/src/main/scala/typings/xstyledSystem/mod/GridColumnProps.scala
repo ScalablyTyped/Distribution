@@ -14,27 +14,22 @@ trait GridColumnProps extends StObject {
 }
 object GridColumnProps {
   
-  @scala.inline
-  def apply(): GridColumnProps = {
+  inline def apply(): GridColumnProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridColumnProps]
   }
   
-  @scala.inline
-  implicit class GridColumnPropsMutableBuilder[Self <: GridColumnProps] (val x: Self) extends AnyVal {
+  extension [Self <: GridColumnProps](x: Self) {
     
-    @scala.inline
-    def setGridColumn(
+    inline def setGridColumn(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridColumn */ js.Any
         ]
     ): Self = StObject.set(x, "gridColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridColumnUndefined: Self = StObject.set(x, "gridColumn", js.undefined)
+    inline def setGridColumnUndefined: Self = StObject.set(x, "gridColumn", js.undefined)
     
-    @scala.inline
-    def setGridColumnVarargs(
+    inline def setGridColumnVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridColumn */ js.Any)*
     ): Self = StObject.set(x, "gridColumn", js.Array(value :_*))
   }

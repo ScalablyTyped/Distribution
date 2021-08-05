@@ -43,10 +43,8 @@ object fixedMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromPositions(start: Double, end: Double): FixedInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPositions")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[FixedInterval]
+    inline def fromPositions(start: Double, end: Double): FixedInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPositions")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[FixedInterval]
     
-    @scala.inline
-    def makeByConstInterval(interval: ConstInterval): FixedInterval = ^.asInstanceOf[js.Dynamic].applyDynamic("makeByConstInterval")(interval.asInstanceOf[js.Any]).asInstanceOf[FixedInterval]
+    inline def makeByConstInterval(interval: ConstInterval): FixedInterval = ^.asInstanceOf[js.Dynamic].applyDynamic("makeByConstInterval")(interval.asInstanceOf[js.Any]).asInstanceOf[FixedInterval]
   }
 }

@@ -23,22 +23,17 @@ trait KeyGroup extends StObject {
 }
 object KeyGroup {
   
-  @scala.inline
-  def apply(Id: String, KeyGroupConfig: KeyGroupConfig, LastModifiedTime: timestamp): KeyGroup = {
+  inline def apply(Id: String, KeyGroupConfig: KeyGroupConfig, LastModifiedTime: timestamp): KeyGroup = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], KeyGroupConfig = KeyGroupConfig.asInstanceOf[js.Any], LastModifiedTime = LastModifiedTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyGroup]
   }
   
-  @scala.inline
-  implicit class KeyGroupMutableBuilder[Self <: KeyGroup] (val x: Self) extends AnyVal {
+  extension [Self <: KeyGroup](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyGroupConfig(value: KeyGroupConfig): Self = StObject.set(x, "KeyGroupConfig", value.asInstanceOf[js.Any])
+    inline def setKeyGroupConfig(value: KeyGroupConfig): Self = StObject.set(x, "KeyGroupConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedTime(value: timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
   }
 }

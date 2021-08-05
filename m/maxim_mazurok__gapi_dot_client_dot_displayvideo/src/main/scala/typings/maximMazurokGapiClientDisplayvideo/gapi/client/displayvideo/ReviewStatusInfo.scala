@@ -23,49 +23,35 @@ trait ReviewStatusInfo extends StObject {
 }
 object ReviewStatusInfo {
   
-  @scala.inline
-  def apply(): ReviewStatusInfo = {
+  inline def apply(): ReviewStatusInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReviewStatusInfo]
   }
   
-  @scala.inline
-  implicit class ReviewStatusInfoMutableBuilder[Self <: ReviewStatusInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ReviewStatusInfo](x: Self) {
     
-    @scala.inline
-    def setApprovalStatus(value: String): Self = StObject.set(x, "approvalStatus", value.asInstanceOf[js.Any])
+    inline def setApprovalStatus(value: String): Self = StObject.set(x, "approvalStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApprovalStatusUndefined: Self = StObject.set(x, "approvalStatus", js.undefined)
+    inline def setApprovalStatusUndefined: Self = StObject.set(x, "approvalStatus", js.undefined)
     
-    @scala.inline
-    def setContentAndPolicyReviewStatus(value: String): Self = StObject.set(x, "contentAndPolicyReviewStatus", value.asInstanceOf[js.Any])
+    inline def setContentAndPolicyReviewStatus(value: String): Self = StObject.set(x, "contentAndPolicyReviewStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentAndPolicyReviewStatusUndefined: Self = StObject.set(x, "contentAndPolicyReviewStatus", js.undefined)
+    inline def setContentAndPolicyReviewStatusUndefined: Self = StObject.set(x, "contentAndPolicyReviewStatus", js.undefined)
     
-    @scala.inline
-    def setCreativeAndLandingPageReviewStatus(value: String): Self = StObject.set(x, "creativeAndLandingPageReviewStatus", value.asInstanceOf[js.Any])
+    inline def setCreativeAndLandingPageReviewStatus(value: String): Self = StObject.set(x, "creativeAndLandingPageReviewStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreativeAndLandingPageReviewStatusUndefined: Self = StObject.set(x, "creativeAndLandingPageReviewStatus", js.undefined)
+    inline def setCreativeAndLandingPageReviewStatusUndefined: Self = StObject.set(x, "creativeAndLandingPageReviewStatus", js.undefined)
     
-    @scala.inline
-    def setExchangeReviewStatuses(value: js.Array[ExchangeReviewStatus]): Self = StObject.set(x, "exchangeReviewStatuses", value.asInstanceOf[js.Any])
+    inline def setExchangeReviewStatuses(value: js.Array[ExchangeReviewStatus]): Self = StObject.set(x, "exchangeReviewStatuses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExchangeReviewStatusesUndefined: Self = StObject.set(x, "exchangeReviewStatuses", js.undefined)
+    inline def setExchangeReviewStatusesUndefined: Self = StObject.set(x, "exchangeReviewStatuses", js.undefined)
     
-    @scala.inline
-    def setExchangeReviewStatusesVarargs(value: ExchangeReviewStatus*): Self = StObject.set(x, "exchangeReviewStatuses", js.Array(value :_*))
+    inline def setExchangeReviewStatusesVarargs(value: ExchangeReviewStatus*): Self = StObject.set(x, "exchangeReviewStatuses", js.Array(value :_*))
     
-    @scala.inline
-    def setPublisherReviewStatuses(value: js.Array[PublisherReviewStatus]): Self = StObject.set(x, "publisherReviewStatuses", value.asInstanceOf[js.Any])
+    inline def setPublisherReviewStatuses(value: js.Array[PublisherReviewStatus]): Self = StObject.set(x, "publisherReviewStatuses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublisherReviewStatusesUndefined: Self = StObject.set(x, "publisherReviewStatuses", js.undefined)
+    inline def setPublisherReviewStatusesUndefined: Self = StObject.set(x, "publisherReviewStatuses", js.undefined)
     
-    @scala.inline
-    def setPublisherReviewStatusesVarargs(value: PublisherReviewStatus*): Self = StObject.set(x, "publisherReviewStatuses", js.Array(value :_*))
+    inline def setPublisherReviewStatusesVarargs(value: PublisherReviewStatus*): Self = StObject.set(x, "publisherReviewStatuses", js.Array(value :_*))
   }
 }

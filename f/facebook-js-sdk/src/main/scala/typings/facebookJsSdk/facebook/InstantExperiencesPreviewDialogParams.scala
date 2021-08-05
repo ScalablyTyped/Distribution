@@ -19,22 +19,17 @@ trait InstantExperiencesPreviewDialogParams
 }
 object InstantExperiencesPreviewDialogParams {
   
-  @scala.inline
-  def apply(canvas_id: String): InstantExperiencesPreviewDialogParams = {
+  inline def apply(canvas_id: String): InstantExperiencesPreviewDialogParams = {
     val __obj = js.Dynamic.literal(canvas_id = canvas_id.asInstanceOf[js.Any], display = "popup", method = "canvas_preview")
     __obj.asInstanceOf[InstantExperiencesPreviewDialogParams]
   }
   
-  @scala.inline
-  implicit class InstantExperiencesPreviewDialogParamsMutableBuilder[Self <: InstantExperiencesPreviewDialogParams] (val x: Self) extends AnyVal {
+  extension [Self <: InstantExperiencesPreviewDialogParams](x: Self) {
     
-    @scala.inline
-    def setCanvas_id(value: String): Self = StObject.set(x, "canvas_id", value.asInstanceOf[js.Any])
+    inline def setCanvas_id(value: String): Self = StObject.set(x, "canvas_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplay(value: popup): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    inline def setDisplay(value: popup): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: canvas_preview): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: canvas_preview): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait AssociateIamInstanceProfileResult extends StObject {
 }
 object AssociateIamInstanceProfileResult {
   
-  @scala.inline
-  def apply(): AssociateIamInstanceProfileResult = {
+  inline def apply(): AssociateIamInstanceProfileResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssociateIamInstanceProfileResult]
   }
   
-  @scala.inline
-  implicit class AssociateIamInstanceProfileResultMutableBuilder[Self <: AssociateIamInstanceProfileResult] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateIamInstanceProfileResult](x: Self) {
     
-    @scala.inline
-    def setIamInstanceProfileAssociation(value: IamInstanceProfileAssociation): Self = StObject.set(x, "IamInstanceProfileAssociation", value.asInstanceOf[js.Any])
+    inline def setIamInstanceProfileAssociation(value: IamInstanceProfileAssociation): Self = StObject.set(x, "IamInstanceProfileAssociation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIamInstanceProfileAssociationUndefined: Self = StObject.set(x, "IamInstanceProfileAssociation", js.undefined)
+    inline def setIamInstanceProfileAssociationUndefined: Self = StObject.set(x, "IamInstanceProfileAssociation", js.undefined)
   }
 }

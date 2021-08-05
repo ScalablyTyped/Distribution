@@ -5,7 +5,5 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def config: typings.mockAwsS3.mod.MockConfigInstance = typings.mockAwsS3.mod.^.asInstanceOf[js.Dynamic].selectDynamic("config").asInstanceOf[typings.mockAwsS3.mod.MockConfigInstance]
-@scala.inline
-def config_=(x: typings.mockAwsS3.mod.MockConfigInstance): scala.Unit = typings.mockAwsS3.mod.^.asInstanceOf[js.Dynamic].updateDynamic("config")(x.asInstanceOf[js.Any])
+inline def config: typings.mockAwsS3.mod.MockConfigInstance = typings.mockAwsS3.mod.^.asInstanceOf[js.Dynamic].selectDynamic("config").asInstanceOf[typings.mockAwsS3.mod.MockConfigInstance]
+inline def config_=(x: typings.mockAwsS3.mod.MockConfigInstance): scala.Unit = typings.mockAwsS3.mod.^.asInstanceOf[js.Dynamic].updateDynamic("config")(x.asInstanceOf[js.Any])

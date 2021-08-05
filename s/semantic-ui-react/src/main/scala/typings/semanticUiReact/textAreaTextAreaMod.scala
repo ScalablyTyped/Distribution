@@ -54,44 +54,32 @@ object textAreaTextAreaMod {
   }
   object StrictTextAreaProps {
     
-    @scala.inline
-    def apply(): StrictTextAreaProps = {
+    inline def apply(): StrictTextAreaProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictTextAreaProps]
     }
     
-    @scala.inline
-    implicit class StrictTextAreaPropsMutableBuilder[Self <: StrictTextAreaProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictTextAreaProps](x: Self) {
       
-      @scala.inline
-      def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: (/* event */ ChangeEvent[HTMLTextAreaElement], /* data */ TextAreaProps) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      inline def setOnChange(value: (/* event */ ChangeEvent[HTMLTextAreaElement], /* data */ TextAreaProps) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnInput(value: (/* event */ FormEvent[HTMLTextAreaElement], /* data */ TextAreaProps) => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction2(value))
+      inline def setOnInput(value: (/* event */ FormEvent[HTMLTextAreaElement], /* data */ TextAreaProps) => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
+      inline def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
       
-      @scala.inline
-      def setRows(value: Double | String): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      inline def setRows(value: Double | String): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+      inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
       
-      @scala.inline
-      def setValue(value: Double | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   

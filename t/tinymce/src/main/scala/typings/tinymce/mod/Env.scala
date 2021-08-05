@@ -36,8 +36,7 @@ trait Env extends StObject {
 }
 object Env {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     android: Boolean,
     ceFalse: Boolean,
     contentEditable: Boolean,
@@ -57,49 +56,34 @@ object Env {
     __obj.asInstanceOf[Env]
   }
   
-  @scala.inline
-  implicit class EnvMutableBuilder[Self <: Env] (val x: Self) extends AnyVal {
+  extension [Self <: Env](x: Self) {
     
-    @scala.inline
-    def setAndroid(value: Boolean): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
+    inline def setAndroid(value: Boolean): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCeFalse(value: Boolean): Self = StObject.set(x, "ceFalse", value.asInstanceOf[js.Any])
+    inline def setCeFalse(value: Boolean): Self = StObject.set(x, "ceFalse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentEditable(value: Boolean): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
+    inline def setContentEditable(value: Boolean): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentMode(value: Boolean): Self = StObject.set(x, "documentMode", value.asInstanceOf[js.Any])
+    inline def setDocumentMode(value: Boolean): Self = StObject.set(x, "documentMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileApi(value: Boolean): Self = StObject.set(x, "fileApi", value.asInstanceOf[js.Any])
+    inline def setFileApi(value: Boolean): Self = StObject.set(x, "fileApi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGecko(value: Boolean): Self = StObject.set(x, "gecko", value.asInstanceOf[js.Any])
+    inline def setGecko(value: Boolean): Self = StObject.set(x, "gecko", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIOS(value: Boolean): Self = StObject.set(x, "iOS", value.asInstanceOf[js.Any])
+    inline def setIOS(value: Boolean): Self = StObject.set(x, "iOS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIe(value: Boolean): Self = StObject.set(x, "ie", value.asInstanceOf[js.Any])
+    inline def setIe(value: Boolean): Self = StObject.set(x, "ie", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMac(value: Boolean): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
+    inline def setMac(value: Boolean): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoCaretAfter(value: Boolean): Self = StObject.set(x, "noCaretAfter", value.asInstanceOf[js.Any])
+    inline def setNoCaretAfter(value: Boolean): Self = StObject.set(x, "noCaretAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpera(value: Boolean): Self = StObject.set(x, "opera", value.asInstanceOf[js.Any])
+    inline def setOpera(value: Boolean): Self = StObject.set(x, "opera", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: Boolean): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Boolean): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransparentSrc(value: Boolean): Self = StObject.set(x, "transparentSrc", value.asInstanceOf[js.Any])
+    inline def setTransparentSrc(value: Boolean): Self = StObject.set(x, "transparentSrc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebKit(value: Boolean): Self = StObject.set(x, "webKit", value.asInstanceOf[js.Any])
+    inline def setWebKit(value: Boolean): Self = StObject.set(x, "webKit", value.asInstanceOf[js.Any])
   }
 }

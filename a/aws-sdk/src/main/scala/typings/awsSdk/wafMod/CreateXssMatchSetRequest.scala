@@ -18,19 +18,15 @@ trait CreateXssMatchSetRequest extends StObject {
 }
 object CreateXssMatchSetRequest {
   
-  @scala.inline
-  def apply(ChangeToken: ChangeToken, Name: ResourceName): CreateXssMatchSetRequest = {
+  inline def apply(ChangeToken: ChangeToken, Name: ResourceName): CreateXssMatchSetRequest = {
     val __obj = js.Dynamic.literal(ChangeToken = ChangeToken.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateXssMatchSetRequest]
   }
   
-  @scala.inline
-  implicit class CreateXssMatchSetRequestMutableBuilder[Self <: CreateXssMatchSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateXssMatchSetRequest](x: Self) {
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

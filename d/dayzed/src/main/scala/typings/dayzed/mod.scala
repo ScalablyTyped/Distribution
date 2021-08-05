@@ -34,8 +34,7 @@ object mod {
   class default ()
     extends Component[Props, js.Object, js.Any]
   
-  @scala.inline
-  def useDayzed(props: OmitPropschildrenrender): RenderProps = ^.asInstanceOf[js.Dynamic].applyDynamic("useDayzed")(props.asInstanceOf[js.Any]).asInstanceOf[RenderProps]
+  inline def useDayzed(props: OmitPropschildrenrender): RenderProps = ^.asInstanceOf[js.Dynamic].applyDynamic("useDayzed")(props.asInstanceOf[js.Any]).asInstanceOf[RenderProps]
   
   trait Calendar extends StObject {
     
@@ -51,8 +50,7 @@ object mod {
   }
   object Calendar {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       firstDayOfMonth: Date,
       lastDayOfMonth: Date,
       month: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11`,
@@ -63,26 +61,19 @@ object mod {
       __obj.asInstanceOf[Calendar]
     }
     
-    @scala.inline
-    implicit class CalendarMutableBuilder[Self <: Calendar] (val x: Self) extends AnyVal {
+    extension [Self <: Calendar](x: Self) {
       
-      @scala.inline
-      def setFirstDayOfMonth(value: Date): Self = StObject.set(x, "firstDayOfMonth", value.asInstanceOf[js.Any])
+      inline def setFirstDayOfMonth(value: Date): Self = StObject.set(x, "firstDayOfMonth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastDayOfMonth(value: Date): Self = StObject.set(x, "lastDayOfMonth", value.asInstanceOf[js.Any])
+      inline def setLastDayOfMonth(value: Date): Self = StObject.set(x, "lastDayOfMonth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonth(value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11`): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+      inline def setMonth(value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11`): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeeks(value: js.Array[js.Array[DateObj | _empty]]): Self = StObject.set(x, "weeks", value.asInstanceOf[js.Any])
+      inline def setWeeks(value: js.Array[js.Array[DateObj | _empty]]): Self = StObject.set(x, "weeks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeeksVarargs(value: (js.Array[DateObj | _empty])*): Self = StObject.set(x, "weeks", js.Array(value :_*))
+      inline def setWeeksVarargs(value: (js.Array[DateObj | _empty])*): Self = StObject.set(x, "weeks", js.Array(value :_*))
       
-      @scala.inline
-      def setYear(value: Double): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+      inline def setYear(value: Double): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
     }
   }
   
@@ -102,8 +93,7 @@ object mod {
   }
   object DateObj {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       date: Date,
       nextMonth: Boolean,
       prevMonth: Boolean,
@@ -115,26 +105,19 @@ object mod {
       __obj.asInstanceOf[DateObj]
     }
     
-    @scala.inline
-    implicit class DateObjMutableBuilder[Self <: DateObj] (val x: Self) extends AnyVal {
+    extension [Self <: DateObj](x: Self) {
       
-      @scala.inline
-      def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextMonth(value: Boolean): Self = StObject.set(x, "nextMonth", value.asInstanceOf[js.Any])
+      inline def setNextMonth(value: Boolean): Self = StObject.set(x, "nextMonth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevMonth(value: Boolean): Self = StObject.set(x, "prevMonth", value.asInstanceOf[js.Any])
+      inline def setPrevMonth(value: Boolean): Self = StObject.set(x, "prevMonth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
+      inline def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToday(value: Boolean): Self = StObject.set(x, "today", value.asInstanceOf[js.Any])
+      inline def setToday(value: Boolean): Self = StObject.set(x, "today", value.asInstanceOf[js.Any])
     }
   }
   
@@ -168,86 +151,60 @@ object mod {
   }
   object Props {
     
-    @scala.inline
-    def apply(onDateSelected: DateObj => Unit): Props = {
+    inline def apply(onDateSelected: DateObj => Unit): Props = {
       val __obj = js.Dynamic.literal(onDateSelected = js.Any.fromFunction1(onDateSelected))
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setChildren(value: /* renderProps */ RenderProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: /* renderProps */ RenderProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      @scala.inline
-      def setFirstDayOfWeek(value: `0` | `1` | `2` | `3` | `4` | `5` | `6`): Self = StObject.set(x, "firstDayOfWeek", value.asInstanceOf[js.Any])
+      inline def setFirstDayOfWeek(value: `0` | `1` | `2` | `3` | `4` | `5` | `6`): Self = StObject.set(x, "firstDayOfWeek", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstDayOfWeekUndefined: Self = StObject.set(x, "firstDayOfWeek", js.undefined)
+      inline def setFirstDayOfWeekUndefined: Self = StObject.set(x, "firstDayOfWeek", js.undefined)
       
-      @scala.inline
-      def setMaxDate(value: Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+      inline def setMaxDate(value: Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
+      inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
       
-      @scala.inline
-      def setMinDate(value: Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+      inline def setMinDate(value: Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
+      inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
       
-      @scala.inline
-      def setMonthsToDisplay(value: Double): Self = StObject.set(x, "monthsToDisplay", value.asInstanceOf[js.Any])
+      inline def setMonthsToDisplay(value: Double): Self = StObject.set(x, "monthsToDisplay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthsToDisplayUndefined: Self = StObject.set(x, "monthsToDisplay", js.undefined)
+      inline def setMonthsToDisplayUndefined: Self = StObject.set(x, "monthsToDisplay", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setOnDateSelected(value: DateObj => Unit): Self = StObject.set(x, "onDateSelected", js.Any.fromFunction1(value))
+      inline def setOnDateSelected(value: DateObj => Unit): Self = StObject.set(x, "onDateSelected", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnOffsetChanged(value: /* offset */ Double => Unit): Self = StObject.set(x, "onOffsetChanged", js.Any.fromFunction1(value))
+      inline def setOnOffsetChanged(value: /* offset */ Double => Unit): Self = StObject.set(x, "onOffsetChanged", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnOffsetChangedUndefined: Self = StObject.set(x, "onOffsetChanged", js.undefined)
+      inline def setOnOffsetChangedUndefined: Self = StObject.set(x, "onOffsetChanged", js.undefined)
       
-      @scala.inline
-      def setRender(value: /* renderProps */ RenderProps => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      inline def setRender(value: /* renderProps */ RenderProps => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+      inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       
-      @scala.inline
-      def setSelected(value: Date | js.Array[Date]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: Date | js.Array[Date]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+      inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
       
-      @scala.inline
-      def setSelectedVarargs(value: Date*): Self = StObject.set(x, "selected", js.Array(value :_*))
+      inline def setSelectedVarargs(value: Date*): Self = StObject.set(x, "selected", js.Array(value :_*))
       
-      @scala.inline
-      def setShowOutsideDays(value: Boolean): Self = StObject.set(x, "showOutsideDays", value.asInstanceOf[js.Any])
+      inline def setShowOutsideDays(value: Boolean): Self = StObject.set(x, "showOutsideDays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowOutsideDaysUndefined: Self = StObject.set(x, "showOutsideDays", js.undefined)
+      inline def setShowOutsideDaysUndefined: Self = StObject.set(x, "showOutsideDays", js.undefined)
     }
   }
   
@@ -265,8 +222,7 @@ object mod {
   }
   object RenderProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       calendars: js.Array[Calendar],
       getBackProps: Calendars => Record[String, js.Any],
       getDateProps: typings.dayzed.anon.DateObj => Record[String, js.Any],
@@ -276,23 +232,17 @@ object mod {
       __obj.asInstanceOf[RenderProps]
     }
     
-    @scala.inline
-    implicit class RenderPropsMutableBuilder[Self <: RenderProps] (val x: Self) extends AnyVal {
+    extension [Self <: RenderProps](x: Self) {
       
-      @scala.inline
-      def setCalendars(value: js.Array[Calendar]): Self = StObject.set(x, "calendars", value.asInstanceOf[js.Any])
+      inline def setCalendars(value: js.Array[Calendar]): Self = StObject.set(x, "calendars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCalendarsVarargs(value: Calendar*): Self = StObject.set(x, "calendars", js.Array(value :_*))
+      inline def setCalendarsVarargs(value: Calendar*): Self = StObject.set(x, "calendars", js.Array(value :_*))
       
-      @scala.inline
-      def setGetBackProps(value: Calendars => Record[String, js.Any]): Self = StObject.set(x, "getBackProps", js.Any.fromFunction1(value))
+      inline def setGetBackProps(value: Calendars => Record[String, js.Any]): Self = StObject.set(x, "getBackProps", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetDateProps(value: typings.dayzed.anon.DateObj => Record[String, js.Any]): Self = StObject.set(x, "getDateProps", js.Any.fromFunction1(value))
+      inline def setGetDateProps(value: typings.dayzed.anon.DateObj => Record[String, js.Any]): Self = StObject.set(x, "getDateProps", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetForwardProps(value: Calendars => Record[String, js.Any]): Self = StObject.set(x, "getForwardProps", js.Any.fromFunction1(value))
+      inline def setGetForwardProps(value: Calendars => Record[String, js.Any]): Self = StObject.set(x, "getForwardProps", js.Any.fromFunction1(value))
     }
   }
 }

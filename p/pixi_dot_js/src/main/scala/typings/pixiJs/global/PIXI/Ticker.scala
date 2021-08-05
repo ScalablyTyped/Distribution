@@ -71,8 +71,7 @@ object Ticker {
   @JSGlobal("PIXI.Ticker.shared")
   @js.native
   def shared: typings.pixiJs.PIXI.Ticker = js.native
-  @scala.inline
-  def shared_=(x: typings.pixiJs.PIXI.Ticker): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shared")(x.asInstanceOf[js.Any])
+  inline def shared_=(x: typings.pixiJs.PIXI.Ticker): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shared")(x.asInstanceOf[js.Any])
   
   /**
     * The system ticker instance used by {@link PIXI.InteractionManager} and by
@@ -88,6 +87,5 @@ object Ticker {
   @JSGlobal("PIXI.Ticker.system")
   @js.native
   def system: typings.pixiJs.PIXI.Ticker = js.native
-  @scala.inline
-  def system_=(x: typings.pixiJs.PIXI.Ticker): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("system")(x.asInstanceOf[js.Any])
+  inline def system_=(x: typings.pixiJs.PIXI.Ticker): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("system")(x.asInstanceOf[js.Any])
 }

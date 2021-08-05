@@ -18,20 +18,16 @@ trait MockResultIncomplete
 }
 object MockResultIncomplete {
   
-  @scala.inline
-  def apply(value: Unit): MockResultIncomplete = {
+  inline def apply(value: Unit): MockResultIncomplete = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("incomplete")
     __obj.asInstanceOf[MockResultIncomplete]
   }
   
-  @scala.inline
-  implicit class MockResultIncompleteMutableBuilder[Self <: MockResultIncomplete] (val x: Self) extends AnyVal {
+  extension [Self <: MockResultIncomplete](x: Self) {
     
-    @scala.inline
-    def setType(value: incomplete): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: incomplete): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Unit): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Unit): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

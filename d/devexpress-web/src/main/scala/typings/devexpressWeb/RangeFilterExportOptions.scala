@@ -23,19 +23,15 @@ trait RangeFilterExportOptions extends StObject {
 }
 object RangeFilterExportOptions {
   
-  @scala.inline
-  def apply(AutomaticPageLayout: Boolean, SizeMode: String): RangeFilterExportOptions = {
+  inline def apply(AutomaticPageLayout: Boolean, SizeMode: String): RangeFilterExportOptions = {
     val __obj = js.Dynamic.literal(AutomaticPageLayout = AutomaticPageLayout.asInstanceOf[js.Any], SizeMode = SizeMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeFilterExportOptions]
   }
   
-  @scala.inline
-  implicit class RangeFilterExportOptionsMutableBuilder[Self <: RangeFilterExportOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RangeFilterExportOptions](x: Self) {
     
-    @scala.inline
-    def setAutomaticPageLayout(value: Boolean): Self = StObject.set(x, "AutomaticPageLayout", value.asInstanceOf[js.Any])
+    inline def setAutomaticPageLayout(value: Boolean): Self = StObject.set(x, "AutomaticPageLayout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeMode(value: String): Self = StObject.set(x, "SizeMode", value.asInstanceOf[js.Any])
+    inline def setSizeMode(value: String): Self = StObject.set(x, "SizeMode", value.asInstanceOf[js.Any])
   }
 }

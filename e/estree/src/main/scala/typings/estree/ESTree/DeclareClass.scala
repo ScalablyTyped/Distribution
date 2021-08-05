@@ -17,8 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object DeclareClass {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     body: ObjectTypeAnnotation,
     `extends`: js.Array[InterfaceExtends],
     id: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Identifier */ js.Any
@@ -28,30 +27,22 @@ object DeclareClass {
     __obj.asInstanceOf[DeclareClass]
   }
   
-  @scala.inline
-  implicit class DeclareClassMutableBuilder[Self <: DeclareClass] (val x: Self) extends AnyVal {
+  extension [Self <: DeclareClass](x: Self) {
     
-    @scala.inline
-    def setBody(value: ObjectTypeAnnotation): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: ObjectTypeAnnotation): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtends(value: js.Array[InterfaceExtends]): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
+    inline def setExtends(value: js.Array[InterfaceExtends]): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendsVarargs(value: InterfaceExtends*): Self = StObject.set(x, "extends", js.Array(value :_*))
+    inline def setExtendsVarargs(value: InterfaceExtends*): Self = StObject.set(x, "extends", js.Array(value :_*))
     
-    @scala.inline
-    def setId(
+    inline def setId(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Identifier */ js.Any
     ): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeParameters(value: TypeParameterDeclaration): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
+    inline def setTypeParameters(value: TypeParameterDeclaration): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeParametersNull: Self = StObject.set(x, "typeParameters", null)
+    inline def setTypeParametersNull: Self = StObject.set(x, "typeParameters", null)
     
-    @scala.inline
-    def setTypeParametersUndefined: Self = StObject.set(x, "typeParameters", js.undefined)
+    inline def setTypeParametersUndefined: Self = StObject.set(x, "typeParameters", js.undefined)
   }
 }

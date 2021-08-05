@@ -22,20 +22,16 @@ object userJoinMod extends Shortcut {
   }
   object UserJoinProps {
     
-    @scala.inline
-    def apply(): UserJoinProps = {
+    inline def apply(): UserJoinProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UserJoinProps]
     }
     
-    @scala.inline
-    implicit class UserJoinPropsMutableBuilder[Self <: UserJoinProps] (val x: Self) extends AnyVal {
+    extension [Self <: UserJoinProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

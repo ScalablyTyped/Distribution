@@ -14,22 +14,17 @@ trait ReturnTypeGetHistogramsResponse extends StObject {
 }
 object ReturnTypeGetHistogramsResponse {
   
-  @scala.inline
-  def apply(paramsType: js.Array[js.UndefOr[GetHistogramsRequest]], returnType: GetHistogramsResponse): ReturnTypeGetHistogramsResponse = {
+  inline def apply(paramsType: js.Array[js.UndefOr[GetHistogramsRequest]], returnType: GetHistogramsResponse): ReturnTypeGetHistogramsResponse = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnTypeGetHistogramsResponse]
   }
   
-  @scala.inline
-  implicit class ReturnTypeGetHistogramsResponseMutableBuilder[Self <: ReturnTypeGetHistogramsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnTypeGetHistogramsResponse](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[js.UndefOr[GetHistogramsRequest]]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[js.UndefOr[GetHistogramsRequest]]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: js.UndefOr[GetHistogramsRequest]*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: js.UndefOr[GetHistogramsRequest]*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: GetHistogramsResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: GetHistogramsResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

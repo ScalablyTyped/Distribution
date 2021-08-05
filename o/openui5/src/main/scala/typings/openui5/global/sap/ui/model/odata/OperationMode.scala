@@ -32,8 +32,7 @@ object OperationMode {
   @JSGlobal("sap.ui.model.odata.OperationMode.Auto")
   @js.native
   def Auto: js.Any = js.native
-  @scala.inline
-  def Auto_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Auto")(x.asInstanceOf[js.Any])
+  inline def Auto_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Auto")(x.asInstanceOf[js.Any])
   
   /**
     * Operations are executed on the client, all entries must be avilable to be able to do so.The initial
@@ -42,8 +41,7 @@ object OperationMode {
   @JSGlobal("sap.ui.model.odata.OperationMode.Client")
   @js.native
   def Client: js.Any = js.native
-  @scala.inline
-  def Client_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Client")(x.asInstanceOf[js.Any])
+  inline def Client_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Client")(x.asInstanceOf[js.Any])
   
   /**
     * Operations are executed on the Odata service, by appending corresponding URL parameters ($filter,
@@ -52,6 +50,5 @@ object OperationMode {
   @JSGlobal("sap.ui.model.odata.OperationMode.Server")
   @js.native
   def Server: js.Any = js.native
-  @scala.inline
-  def Server_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Server")(x.asInstanceOf[js.Any])
+  inline def Server_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Server")(x.asInstanceOf[js.Any])
 }

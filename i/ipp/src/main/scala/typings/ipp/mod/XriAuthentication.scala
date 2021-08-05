@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XriAuthentication extends StObject
 object XriAuthentication {
   
-  @scala.inline
-  def basic: typings.ipp.ippStrings.basic = "basic".asInstanceOf[typings.ipp.ippStrings.basic]
+  inline def basic: typings.ipp.ippStrings.basic = "basic".asInstanceOf[typings.ipp.ippStrings.basic]
   
-  @scala.inline
-  def certificate: typings.ipp.ippStrings.certificate = "certificate".asInstanceOf[typings.ipp.ippStrings.certificate]
+  inline def certificate: typings.ipp.ippStrings.certificate = "certificate".asInstanceOf[typings.ipp.ippStrings.certificate]
   
-  @scala.inline
-  def digest: typings.ipp.ippStrings.digest = "digest".asInstanceOf[typings.ipp.ippStrings.digest]
+  inline def digest: typings.ipp.ippStrings.digest = "digest".asInstanceOf[typings.ipp.ippStrings.digest]
   
-  @scala.inline
-  def none: typings.ipp.ippStrings.none = "none".asInstanceOf[typings.ipp.ippStrings.none]
+  inline def none: typings.ipp.ippStrings.none = "none".asInstanceOf[typings.ipp.ippStrings.none]
   
-  @scala.inline
-  def `requesting-user-name`: typings.ipp.ippStrings.`requesting-user-name` = "requesting-user-name".asInstanceOf[typings.ipp.ippStrings.`requesting-user-name`]
+  inline def `requesting-user-name`: typings.ipp.ippStrings.`requesting-user-name` = "requesting-user-name".asInstanceOf[typings.ipp.ippStrings.`requesting-user-name`]
 }

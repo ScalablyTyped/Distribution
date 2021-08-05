@@ -18,8 +18,7 @@ trait TabOrderDialog
 }
 object TabOrderDialog {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createWithModel: (XTabControllerModel, XControlContainer, XWindow) => Unit,
     execute: () => Double,
@@ -31,10 +30,8 @@ object TabOrderDialog {
     __obj.asInstanceOf[TabOrderDialog]
   }
   
-  @scala.inline
-  implicit class TabOrderDialogMutableBuilder[Self <: TabOrderDialog] (val x: Self) extends AnyVal {
+  extension [Self <: TabOrderDialog](x: Self) {
     
-    @scala.inline
-    def setCreateWithModel(value: (XTabControllerModel, XControlContainer, XWindow) => Unit): Self = StObject.set(x, "createWithModel", js.Any.fromFunction3(value))
+    inline def setCreateWithModel(value: (XTabControllerModel, XControlContainer, XWindow) => Unit): Self = StObject.set(x, "createWithModel", js.Any.fromFunction3(value))
   }
 }

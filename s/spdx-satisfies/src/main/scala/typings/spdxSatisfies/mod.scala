@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(first: String, second: String): Boolean = (^.asInstanceOf[js.Dynamic].apply(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(first: String, second: String): Boolean = (^.asInstanceOf[js.Dynamic].apply(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("spdx-satisfies", JSImport.Namespace)
   @js.native

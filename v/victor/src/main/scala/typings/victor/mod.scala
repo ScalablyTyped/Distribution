@@ -522,16 +522,14 @@ object mod {
     * @param arr array An array that contains the X component in the first element and the Y component in the second
     */
   /* static member */
-  @scala.inline
-  def fromArray(arr: js.Array[Double]): Victor = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(arr.asInstanceOf[js.Any]).asInstanceOf[Victor]
+  inline def fromArray(arr: js.Array[Double]): Victor = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(arr.asInstanceOf[js.Any]).asInstanceOf[Victor]
   
   /**
     * Creates vector from object.
     * @param obj An object containing the X component in the x property and the Y component in the y property
     */
   /* static member */
-  @scala.inline
-  def fromObject(obj: VictorCoordinates): Victor = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(obj.asInstanceOf[js.Any]).asInstanceOf[Victor]
+  inline def fromObject(obj: VictorCoordinates): Victor = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(obj.asInstanceOf[js.Any]).asInstanceOf[Victor]
   
   trait Victor extends StObject {
     
@@ -960,8 +958,7 @@ object mod {
   }
   object Victor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       absDistanceX: Victor => Double,
       absDistanceY: Victor => Double,
       add: Victor => Victor,
@@ -1039,224 +1036,151 @@ object mod {
       __obj.asInstanceOf[Victor]
     }
     
-    @scala.inline
-    implicit class VictorMutableBuilder[Self <: Victor] (val x: Self) extends AnyVal {
+    extension [Self <: Victor](x: Self) {
       
-      @scala.inline
-      def setAbsDistanceX(value: Victor => Double): Self = StObject.set(x, "absDistanceX", js.Any.fromFunction1(value))
+      inline def setAbsDistanceX(value: Victor => Double): Self = StObject.set(x, "absDistanceX", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAbsDistanceY(value: Victor => Double): Self = StObject.set(x, "absDistanceY", js.Any.fromFunction1(value))
+      inline def setAbsDistanceY(value: Victor => Double): Self = StObject.set(x, "absDistanceY", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAdd(value: Victor => Victor): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+      inline def setAdd(value: Victor => Victor): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddScalar(value: Double => Victor): Self = StObject.set(x, "addScalar", js.Any.fromFunction1(value))
+      inline def setAddScalar(value: Double => Victor): Self = StObject.set(x, "addScalar", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddScalarX(value: Double => Victor): Self = StObject.set(x, "addScalarX", js.Any.fromFunction1(value))
+      inline def setAddScalarX(value: Double => Victor): Self = StObject.set(x, "addScalarX", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddScalarY(value: Double => Victor): Self = StObject.set(x, "addScalarY", js.Any.fromFunction1(value))
+      inline def setAddScalarY(value: Double => Victor): Self = StObject.set(x, "addScalarY", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddX(value: Victor => Victor): Self = StObject.set(x, "addX", js.Any.fromFunction1(value))
+      inline def setAddX(value: Victor => Victor): Self = StObject.set(x, "addX", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddY(value: Victor => Victor): Self = StObject.set(x, "addY", js.Any.fromFunction1(value))
+      inline def setAddY(value: Victor => Victor): Self = StObject.set(x, "addY", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAngle(value: () => Double): Self = StObject.set(x, "angle", js.Any.fromFunction0(value))
+      inline def setAngle(value: () => Double): Self = StObject.set(x, "angle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAngleDeg(value: () => Double): Self = StObject.set(x, "angleDeg", js.Any.fromFunction0(value))
+      inline def setAngleDeg(value: () => Double): Self = StObject.set(x, "angleDeg", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCopy(value: Victor => Victor): Self = StObject.set(x, "copy", js.Any.fromFunction1(value))
+      inline def setCopy(value: Victor => Victor): Self = StObject.set(x, "copy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCopyX(value: Victor => Victor): Self = StObject.set(x, "copyX", js.Any.fromFunction1(value))
+      inline def setCopyX(value: Victor => Victor): Self = StObject.set(x, "copyX", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCopyY(value: Victor => Victor): Self = StObject.set(x, "copyY", js.Any.fromFunction1(value))
+      inline def setCopyY(value: Victor => Victor): Self = StObject.set(x, "copyY", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCross(value: Victor => Double): Self = StObject.set(x, "cross", js.Any.fromFunction1(value))
+      inline def setCross(value: Victor => Double): Self = StObject.set(x, "cross", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDirection(value: () => Double): Self = StObject.set(x, "direction", js.Any.fromFunction0(value))
+      inline def setDirection(value: () => Double): Self = StObject.set(x, "direction", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDistance(value: Victor => Double): Self = StObject.set(x, "distance", js.Any.fromFunction1(value))
+      inline def setDistance(value: Victor => Double): Self = StObject.set(x, "distance", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDistanceSq(value: Victor => Double): Self = StObject.set(x, "distanceSq", js.Any.fromFunction1(value))
+      inline def setDistanceSq(value: Victor => Double): Self = StObject.set(x, "distanceSq", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDistanceX(value: Victor => Double): Self = StObject.set(x, "distanceX", js.Any.fromFunction1(value))
+      inline def setDistanceX(value: Victor => Double): Self = StObject.set(x, "distanceX", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDistanceY(value: Victor => Double): Self = StObject.set(x, "distanceY", js.Any.fromFunction1(value))
+      inline def setDistanceY(value: Victor => Double): Self = StObject.set(x, "distanceY", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDivide(value: Victor => Victor): Self = StObject.set(x, "divide", js.Any.fromFunction1(value))
+      inline def setDivide(value: Victor => Victor): Self = StObject.set(x, "divide", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDivideScalar(value: Double => Victor): Self = StObject.set(x, "divideScalar", js.Any.fromFunction1(value))
+      inline def setDivideScalar(value: Double => Victor): Self = StObject.set(x, "divideScalar", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDivideScalarX(value: Double => Victor): Self = StObject.set(x, "divideScalarX", js.Any.fromFunction1(value))
+      inline def setDivideScalarX(value: Double => Victor): Self = StObject.set(x, "divideScalarX", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDivideScalarY(value: Double => Victor): Self = StObject.set(x, "divideScalarY", js.Any.fromFunction1(value))
+      inline def setDivideScalarY(value: Double => Victor): Self = StObject.set(x, "divideScalarY", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDivideX(value: Victor => Victor): Self = StObject.set(x, "divideX", js.Any.fromFunction1(value))
+      inline def setDivideX(value: Victor => Victor): Self = StObject.set(x, "divideX", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDivideY(value: Victor => Victor): Self = StObject.set(x, "divideY", js.Any.fromFunction1(value))
+      inline def setDivideY(value: Victor => Victor): Self = StObject.set(x, "divideY", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDot(value: Victor => Double): Self = StObject.set(x, "dot", js.Any.fromFunction1(value))
+      inline def setDot(value: Victor => Double): Self = StObject.set(x, "dot", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHorizontalAngle(value: () => Double): Self = StObject.set(x, "horizontalAngle", js.Any.fromFunction0(value))
+      inline def setHorizontalAngle(value: () => Double): Self = StObject.set(x, "horizontalAngle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHorizontalAngleDeg(value: () => Double): Self = StObject.set(x, "horizontalAngleDeg", js.Any.fromFunction0(value))
+      inline def setHorizontalAngleDeg(value: () => Double): Self = StObject.set(x, "horizontalAngleDeg", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInvert(value: () => Victor): Self = StObject.set(x, "invert", js.Any.fromFunction0(value))
+      inline def setInvert(value: () => Victor): Self = StObject.set(x, "invert", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInvertX(value: () => Victor): Self = StObject.set(x, "invertX", js.Any.fromFunction0(value))
+      inline def setInvertX(value: () => Victor): Self = StObject.set(x, "invertX", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInvertY(value: () => Victor): Self = StObject.set(x, "invertY", js.Any.fromFunction0(value))
+      inline def setInvertY(value: () => Victor): Self = StObject.set(x, "invertY", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsEqualTo(value: Victor => Boolean): Self = StObject.set(x, "isEqualTo", js.Any.fromFunction1(value))
+      inline def setIsEqualTo(value: Victor => Boolean): Self = StObject.set(x, "isEqualTo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsZero(value: () => Boolean): Self = StObject.set(x, "isZero", js.Any.fromFunction0(value))
+      inline def setIsZero(value: () => Boolean): Self = StObject.set(x, "isZero", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLength(value: () => Double): Self = StObject.set(x, "length", js.Any.fromFunction0(value))
+      inline def setLength(value: () => Double): Self = StObject.set(x, "length", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLengthSq(value: () => Double): Self = StObject.set(x, "lengthSq", js.Any.fromFunction0(value))
+      inline def setLengthSq(value: () => Double): Self = StObject.set(x, "lengthSq", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLimit(value: (Double, Double) => Victor): Self = StObject.set(x, "limit", js.Any.fromFunction2(value))
+      inline def setLimit(value: (Double, Double) => Victor): Self = StObject.set(x, "limit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMagnitude(value: () => Double): Self = StObject.set(x, "magnitude", js.Any.fromFunction0(value))
+      inline def setMagnitude(value: () => Double): Self = StObject.set(x, "magnitude", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMix(value: (Victor, Double) => Victor): Self = StObject.set(x, "mix", js.Any.fromFunction2(value))
+      inline def setMix(value: (Victor, Double) => Victor): Self = StObject.set(x, "mix", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMixX(value: (Victor, Double) => Victor): Self = StObject.set(x, "mixX", js.Any.fromFunction2(value))
+      inline def setMixX(value: (Victor, Double) => Victor): Self = StObject.set(x, "mixX", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMixY(value: (Victor, Double) => Victor): Self = StObject.set(x, "mixY", js.Any.fromFunction2(value))
+      inline def setMixY(value: (Victor, Double) => Victor): Self = StObject.set(x, "mixY", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMultiply(value: Victor => Victor): Self = StObject.set(x, "multiply", js.Any.fromFunction1(value))
+      inline def setMultiply(value: Victor => Victor): Self = StObject.set(x, "multiply", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMultiplyScalar(value: Double => Victor): Self = StObject.set(x, "multiplyScalar", js.Any.fromFunction1(value))
+      inline def setMultiplyScalar(value: Double => Victor): Self = StObject.set(x, "multiplyScalar", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMultiplyScalarX(value: Double => Victor): Self = StObject.set(x, "multiplyScalarX", js.Any.fromFunction1(value))
+      inline def setMultiplyScalarX(value: Double => Victor): Self = StObject.set(x, "multiplyScalarX", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMultiplyScalarY(value: Double => Victor): Self = StObject.set(x, "multiplyScalarY", js.Any.fromFunction1(value))
+      inline def setMultiplyScalarY(value: Double => Victor): Self = StObject.set(x, "multiplyScalarY", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMultiplyX(value: Victor => Victor): Self = StObject.set(x, "multiplyX", js.Any.fromFunction1(value))
+      inline def setMultiplyX(value: Victor => Victor): Self = StObject.set(x, "multiplyX", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMultiplyY(value: Victor => Victor): Self = StObject.set(x, "multiplyY", js.Any.fromFunction1(value))
+      inline def setMultiplyY(value: Victor => Victor): Self = StObject.set(x, "multiplyY", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNorm(value: () => Victor): Self = StObject.set(x, "norm", js.Any.fromFunction0(value))
+      inline def setNorm(value: () => Victor): Self = StObject.set(x, "norm", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNormalize(value: () => Victor): Self = StObject.set(x, "normalize", js.Any.fromFunction0(value))
+      inline def setNormalize(value: () => Victor): Self = StObject.set(x, "normalize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setProjectOnto(value: Victor => Victor): Self = StObject.set(x, "projectOnto", js.Any.fromFunction1(value))
+      inline def setProjectOnto(value: Victor => Victor): Self = StObject.set(x, "projectOnto", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRandomize(value: (Victor, Victor) => Victor): Self = StObject.set(x, "randomize", js.Any.fromFunction2(value))
+      inline def setRandomize(value: (Victor, Victor) => Victor): Self = StObject.set(x, "randomize", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRandomizeAny(value: (Victor, Victor) => Victor): Self = StObject.set(x, "randomizeAny", js.Any.fromFunction2(value))
+      inline def setRandomizeAny(value: (Victor, Victor) => Victor): Self = StObject.set(x, "randomizeAny", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRandomizeX(value: (Victor, Victor) => Victor): Self = StObject.set(x, "randomizeX", js.Any.fromFunction2(value))
+      inline def setRandomizeX(value: (Victor, Victor) => Victor): Self = StObject.set(x, "randomizeX", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRandomizeY(value: (Victor, Victor) => Victor): Self = StObject.set(x, "randomizeY", js.Any.fromFunction2(value))
+      inline def setRandomizeY(value: (Victor, Victor) => Victor): Self = StObject.set(x, "randomizeY", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRotate(value: Double => Victor): Self = StObject.set(x, "rotate", js.Any.fromFunction1(value))
+      inline def setRotate(value: Double => Victor): Self = StObject.set(x, "rotate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRotateBy(value: Double => Victor): Self = StObject.set(x, "rotateBy", js.Any.fromFunction1(value))
+      inline def setRotateBy(value: Double => Victor): Self = StObject.set(x, "rotateBy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRotateByDeg(value: Double => Victor): Self = StObject.set(x, "rotateByDeg", js.Any.fromFunction1(value))
+      inline def setRotateByDeg(value: Double => Victor): Self = StObject.set(x, "rotateByDeg", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRotateDeg(value: Double => Victor): Self = StObject.set(x, "rotateDeg", js.Any.fromFunction1(value))
+      inline def setRotateDeg(value: Double => Victor): Self = StObject.set(x, "rotateDeg", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSubtract(value: Victor => Victor): Self = StObject.set(x, "subtract", js.Any.fromFunction1(value))
+      inline def setSubtract(value: Victor => Victor): Self = StObject.set(x, "subtract", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSubtractScalar(value: Double => Victor): Self = StObject.set(x, "subtractScalar", js.Any.fromFunction1(value))
+      inline def setSubtractScalar(value: Double => Victor): Self = StObject.set(x, "subtractScalar", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSubtractScalarX(value: Double => Victor): Self = StObject.set(x, "subtractScalarX", js.Any.fromFunction1(value))
+      inline def setSubtractScalarX(value: Double => Victor): Self = StObject.set(x, "subtractScalarX", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSubtractScalarY(value: Double => Victor): Self = StObject.set(x, "subtractScalarY", js.Any.fromFunction1(value))
+      inline def setSubtractScalarY(value: Double => Victor): Self = StObject.set(x, "subtractScalarY", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSubtractX(value: Victor => Victor): Self = StObject.set(x, "subtractX", js.Any.fromFunction1(value))
+      inline def setSubtractX(value: Victor => Victor): Self = StObject.set(x, "subtractX", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSubtractY(value: Victor => Victor): Self = StObject.set(x, "subtractY", js.Any.fromFunction1(value))
+      inline def setSubtractY(value: Victor => Victor): Self = StObject.set(x, "subtractY", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToArray(value: () => js.Array[Double]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
+      inline def setToArray(value: () => js.Array[Double]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToFixed(value: () => Victor): Self = StObject.set(x, "toFixed", js.Any.fromFunction0(value))
+      inline def setToFixed(value: () => Victor): Self = StObject.set(x, "toFixed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToObject(value: () => VictorCoordinates): Self = StObject.set(x, "toObject", js.Any.fromFunction0(value))
+      inline def setToObject(value: () => VictorCoordinates): Self = StObject.set(x, "toObject", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUnfloat(value: () => Victor): Self = StObject.set(x, "unfloat", js.Any.fromFunction0(value))
+      inline def setUnfloat(value: () => Victor): Self = StObject.set(x, "unfloat", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setVerticalAngle(value: () => Double): Self = StObject.set(x, "verticalAngle", js.Any.fromFunction0(value))
+      inline def setVerticalAngle(value: () => Double): Self = StObject.set(x, "verticalAngle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setVerticalAngleDeg(value: () => Double): Self = StObject.set(x, "verticalAngleDeg", js.Any.fromFunction0(value))
+      inline def setVerticalAngleDeg(value: () => Double): Self = StObject.set(x, "verticalAngleDeg", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZero(value: () => Victor): Self = StObject.set(x, "zero", js.Any.fromFunction0(value))
+      inline def setZero(value: () => Victor): Self = StObject.set(x, "zero", js.Any.fromFunction0(value))
     }
   }
   
@@ -1268,20 +1192,16 @@ object mod {
   }
   object VictorCoordinates {
     
-    @scala.inline
-    def apply(x: Double, y: Double): VictorCoordinates = {
+    inline def apply(x: Double, y: Double): VictorCoordinates = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[VictorCoordinates]
     }
     
-    @scala.inline
-    implicit class VictorCoordinatesMutableBuilder[Self <: VictorCoordinates] (val x: Self) extends AnyVal {
+    extension [Self <: VictorCoordinates](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

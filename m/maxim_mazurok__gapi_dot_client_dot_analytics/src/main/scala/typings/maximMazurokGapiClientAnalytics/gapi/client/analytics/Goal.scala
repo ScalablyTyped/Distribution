@@ -66,121 +66,83 @@ trait Goal extends StObject {
 }
 object Goal {
   
-  @scala.inline
-  def apply(): Goal = {
+  inline def apply(): Goal = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Goal]
   }
   
-  @scala.inline
-  implicit class GoalMutableBuilder[Self <: Goal] (val x: Self) extends AnyVal {
+  extension [Self <: Goal](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    @scala.inline
-    def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+    inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
-    @scala.inline
-    def setEventDetails(value: EventConditions): Self = StObject.set(x, "eventDetails", value.asInstanceOf[js.Any])
+    inline def setEventDetails(value: EventConditions): Self = StObject.set(x, "eventDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventDetailsUndefined: Self = StObject.set(x, "eventDetails", js.undefined)
+    inline def setEventDetailsUndefined: Self = StObject.set(x, "eventDetails", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setInternalWebPropertyId(value: String): Self = StObject.set(x, "internalWebPropertyId", value.asInstanceOf[js.Any])
+    inline def setInternalWebPropertyId(value: String): Self = StObject.set(x, "internalWebPropertyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInternalWebPropertyIdUndefined: Self = StObject.set(x, "internalWebPropertyId", js.undefined)
+    inline def setInternalWebPropertyIdUndefined: Self = StObject.set(x, "internalWebPropertyId", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setParentLink(value: Href): Self = StObject.set(x, "parentLink", value.asInstanceOf[js.Any])
+    inline def setParentLink(value: Href): Self = StObject.set(x, "parentLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentLinkUndefined: Self = StObject.set(x, "parentLink", js.undefined)
+    inline def setParentLinkUndefined: Self = StObject.set(x, "parentLink", js.undefined)
     
-    @scala.inline
-    def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
+    inline def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileIdUndefined: Self = StObject.set(x, "profileId", js.undefined)
+    inline def setProfileIdUndefined: Self = StObject.set(x, "profileId", js.undefined)
     
-    @scala.inline
-    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+    inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+    inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+    inline def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
+    inline def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
     
-    @scala.inline
-    def setUrlDestinationDetails(value: FirstStepRequired): Self = StObject.set(x, "urlDestinationDetails", value.asInstanceOf[js.Any])
+    inline def setUrlDestinationDetails(value: FirstStepRequired): Self = StObject.set(x, "urlDestinationDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlDestinationDetailsUndefined: Self = StObject.set(x, "urlDestinationDetails", js.undefined)
+    inline def setUrlDestinationDetailsUndefined: Self = StObject.set(x, "urlDestinationDetails", js.undefined)
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    @scala.inline
-    def setVisitNumPagesDetails(value: ComparisonValue): Self = StObject.set(x, "visitNumPagesDetails", value.asInstanceOf[js.Any])
+    inline def setVisitNumPagesDetails(value: ComparisonValue): Self = StObject.set(x, "visitNumPagesDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisitNumPagesDetailsUndefined: Self = StObject.set(x, "visitNumPagesDetails", js.undefined)
+    inline def setVisitNumPagesDetailsUndefined: Self = StObject.set(x, "visitNumPagesDetails", js.undefined)
     
-    @scala.inline
-    def setVisitTimeOnSiteDetails(value: ComparisonValue): Self = StObject.set(x, "visitTimeOnSiteDetails", value.asInstanceOf[js.Any])
+    inline def setVisitTimeOnSiteDetails(value: ComparisonValue): Self = StObject.set(x, "visitTimeOnSiteDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisitTimeOnSiteDetailsUndefined: Self = StObject.set(x, "visitTimeOnSiteDetails", js.undefined)
+    inline def setVisitTimeOnSiteDetailsUndefined: Self = StObject.set(x, "visitTimeOnSiteDetails", js.undefined)
     
-    @scala.inline
-    def setWebPropertyId(value: String): Self = StObject.set(x, "webPropertyId", value.asInstanceOf[js.Any])
+    inline def setWebPropertyId(value: String): Self = StObject.set(x, "webPropertyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebPropertyIdUndefined: Self = StObject.set(x, "webPropertyId", js.undefined)
+    inline def setWebPropertyIdUndefined: Self = StObject.set(x, "webPropertyId", js.undefined)
   }
 }

@@ -22,20 +22,16 @@ object templateMod extends Shortcut {
   }
   object TemplateProps {
     
-    @scala.inline
-    def apply(): TemplateProps = {
+    inline def apply(): TemplateProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TemplateProps]
     }
     
-    @scala.inline
-    implicit class TemplatePropsMutableBuilder[Self <: TemplateProps] (val x: Self) extends AnyVal {
+    extension [Self <: TemplateProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

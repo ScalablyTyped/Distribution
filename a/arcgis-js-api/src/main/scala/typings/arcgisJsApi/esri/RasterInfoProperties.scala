@@ -131,115 +131,79 @@ trait RasterInfoProperties extends StObject {
 }
 object RasterInfoProperties {
   
-  @scala.inline
-  def apply(): RasterInfoProperties = {
+  inline def apply(): RasterInfoProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RasterInfoProperties]
   }
   
-  @scala.inline
-  implicit class RasterInfoPropertiesMutableBuilder[Self <: RasterInfoProperties] (val x: Self) extends AnyVal {
+  extension [Self <: RasterInfoProperties](x: Self) {
     
-    @scala.inline
-    def setAttributeTable(value: FeatureSetProperties): Self = StObject.set(x, "attributeTable", value.asInstanceOf[js.Any])
+    inline def setAttributeTable(value: FeatureSetProperties): Self = StObject.set(x, "attributeTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeTableUndefined: Self = StObject.set(x, "attributeTable", js.undefined)
+    inline def setAttributeTableUndefined: Self = StObject.set(x, "attributeTable", js.undefined)
     
-    @scala.inline
-    def setBandCount(value: Double): Self = StObject.set(x, "bandCount", value.asInstanceOf[js.Any])
+    inline def setBandCount(value: Double): Self = StObject.set(x, "bandCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBandCountUndefined: Self = StObject.set(x, "bandCount", js.undefined)
+    inline def setBandCountUndefined: Self = StObject.set(x, "bandCount", js.undefined)
     
-    @scala.inline
-    def setColormap(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "colormap", value.asInstanceOf[js.Any])
+    inline def setColormap(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "colormap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColormapUndefined: Self = StObject.set(x, "colormap", js.undefined)
+    inline def setColormapUndefined: Self = StObject.set(x, "colormap", js.undefined)
     
-    @scala.inline
-    def setColormapVarargs(value: js.Array[Double]*): Self = StObject.set(x, "colormap", js.Array(value :_*))
+    inline def setColormapVarargs(value: js.Array[Double]*): Self = StObject.set(x, "colormap", js.Array(value :_*))
     
-    @scala.inline
-    def setDataType(value: generic | elevation | thematic | processed | scientific | `vector-uv` | `vector-magdir`): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+    inline def setDataType(value: generic | elevation | thematic | processed | scientific | `vector-uv` | `vector-magdir`): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
+    inline def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
     
-    @scala.inline
-    def setExtent(value: ExtentProperties): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
+    inline def setExtent(value: ExtentProperties): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
+    inline def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setHistograms(value: js.Array[js.Any]): Self = StObject.set(x, "histograms", value.asInstanceOf[js.Any])
+    inline def setHistograms(value: js.Array[js.Any]): Self = StObject.set(x, "histograms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistogramsUndefined: Self = StObject.set(x, "histograms", js.undefined)
+    inline def setHistogramsUndefined: Self = StObject.set(x, "histograms", js.undefined)
     
-    @scala.inline
-    def setHistogramsVarargs(value: js.Any*): Self = StObject.set(x, "histograms", js.Array(value :_*))
+    inline def setHistogramsVarargs(value: js.Any*): Self = StObject.set(x, "histograms", js.Array(value :_*))
     
-    @scala.inline
-    def setKeyProperties(value: js.Any): Self = StObject.set(x, "keyProperties", value.asInstanceOf[js.Any])
+    inline def setKeyProperties(value: js.Any): Self = StObject.set(x, "keyProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyPropertiesUndefined: Self = StObject.set(x, "keyProperties", js.undefined)
+    inline def setKeyPropertiesUndefined: Self = StObject.set(x, "keyProperties", js.undefined)
     
-    @scala.inline
-    def setMultidimensionalInfo(value: js.Any): Self = StObject.set(x, "multidimensionalInfo", value.asInstanceOf[js.Any])
+    inline def setMultidimensionalInfo(value: js.Any): Self = StObject.set(x, "multidimensionalInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultidimensionalInfoUndefined: Self = StObject.set(x, "multidimensionalInfo", js.undefined)
+    inline def setMultidimensionalInfoUndefined: Self = StObject.set(x, "multidimensionalInfo", js.undefined)
     
-    @scala.inline
-    def setNoDataValue(value: Double | js.Array[Double]): Self = StObject.set(x, "noDataValue", value.asInstanceOf[js.Any])
+    inline def setNoDataValue(value: Double | js.Array[Double]): Self = StObject.set(x, "noDataValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoDataValueUndefined: Self = StObject.set(x, "noDataValue", js.undefined)
+    inline def setNoDataValueUndefined: Self = StObject.set(x, "noDataValue", js.undefined)
     
-    @scala.inline
-    def setNoDataValueVarargs(value: Double*): Self = StObject.set(x, "noDataValue", js.Array(value :_*))
+    inline def setNoDataValueVarargs(value: Double*): Self = StObject.set(x, "noDataValue", js.Array(value :_*))
     
-    @scala.inline
-    def setPixelSize(value: RasterInfoPixelSize): Self = StObject.set(x, "pixelSize", value.asInstanceOf[js.Any])
+    inline def setPixelSize(value: RasterInfoPixelSize): Self = StObject.set(x, "pixelSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPixelSizeUndefined: Self = StObject.set(x, "pixelSize", js.undefined)
+    inline def setPixelSizeUndefined: Self = StObject.set(x, "pixelSize", js.undefined)
     
-    @scala.inline
-    def setPixelType(value: unknown | s8 | s16 | s32 | u8 | u16 | u32 | f32 | f64): Self = StObject.set(x, "pixelType", value.asInstanceOf[js.Any])
+    inline def setPixelType(value: unknown | s8 | s16 | s32 | u8 | u16 | u32 | f32 | f64): Self = StObject.set(x, "pixelType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPixelTypeUndefined: Self = StObject.set(x, "pixelType", js.undefined)
+    inline def setPixelTypeUndefined: Self = StObject.set(x, "pixelType", js.undefined)
     
-    @scala.inline
-    def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
+    inline def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
+    inline def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
     
-    @scala.inline
-    def setStatistics(value: js.Array[RasterInfoStatistics]): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
+    inline def setStatistics(value: js.Array[RasterInfoStatistics]): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatisticsUndefined: Self = StObject.set(x, "statistics", js.undefined)
+    inline def setStatisticsUndefined: Self = StObject.set(x, "statistics", js.undefined)
     
-    @scala.inline
-    def setStatisticsVarargs(value: RasterInfoStatistics*): Self = StObject.set(x, "statistics", js.Array(value :_*))
+    inline def setStatisticsVarargs(value: RasterInfoStatistics*): Self = StObject.set(x, "statistics", js.Array(value :_*))
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

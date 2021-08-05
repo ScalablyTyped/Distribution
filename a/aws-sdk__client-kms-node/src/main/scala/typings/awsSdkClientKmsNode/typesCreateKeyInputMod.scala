@@ -71,73 +71,52 @@ object typesCreateKeyInputMod {
   }
   object CreateKeyInput {
     
-    @scala.inline
-    def apply(): CreateKeyInput = {
+    inline def apply(): CreateKeyInput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateKeyInput]
     }
     
-    @scala.inline
-    implicit class CreateKeyInputMutableBuilder[Self <: CreateKeyInput] (val x: Self) extends AnyVal {
+    extension [Self <: CreateKeyInput](x: Self) {
       
-      @scala.inline
-      def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
+      inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
+      inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
-      @scala.inline
-      def set$httpOptions(
+      inline def set$httpOptions(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
+      inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
       
-      @scala.inline
-      def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
+      inline def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
+      inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
-      @scala.inline
-      def setBypassPolicyLockoutSafetyCheck(value: Boolean): Self = StObject.set(x, "BypassPolicyLockoutSafetyCheck", value.asInstanceOf[js.Any])
+      inline def setBypassPolicyLockoutSafetyCheck(value: Boolean): Self = StObject.set(x, "BypassPolicyLockoutSafetyCheck", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBypassPolicyLockoutSafetyCheckUndefined: Self = StObject.set(x, "BypassPolicyLockoutSafetyCheck", js.undefined)
+      inline def setBypassPolicyLockoutSafetyCheckUndefined: Self = StObject.set(x, "BypassPolicyLockoutSafetyCheck", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
       
-      @scala.inline
-      def setKeyUsage(value: ENCRYPT_DECRYPT | String): Self = StObject.set(x, "KeyUsage", value.asInstanceOf[js.Any])
+      inline def setKeyUsage(value: ENCRYPT_DECRYPT | String): Self = StObject.set(x, "KeyUsage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUsageUndefined: Self = StObject.set(x, "KeyUsage", js.undefined)
+      inline def setKeyUsageUndefined: Self = StObject.set(x, "KeyUsage", js.undefined)
       
-      @scala.inline
-      def setOrigin(value: AWS_KMS | EXTERNAL | String): Self = StObject.set(x, "Origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: AWS_KMS | EXTERNAL | String): Self = StObject.set(x, "Origin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginUndefined: Self = StObject.set(x, "Origin", js.undefined)
+      inline def setOriginUndefined: Self = StObject.set(x, "Origin", js.undefined)
       
-      @scala.inline
-      def setPolicy(value: String): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: String): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
+      inline def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
       
-      @scala.inline
-      def setTags(value: js.Array[Tag] | Iterable[Tag]): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[Tag] | Iterable[Tag]): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
       
-      @scala.inline
-      def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     }
   }
 }

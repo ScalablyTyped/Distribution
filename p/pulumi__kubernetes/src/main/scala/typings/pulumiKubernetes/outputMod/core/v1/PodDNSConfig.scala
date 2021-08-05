@@ -26,31 +26,23 @@ trait PodDNSConfig extends StObject {
 }
 object PodDNSConfig {
   
-  @scala.inline
-  def apply(nameservers: js.Array[String], options: js.Array[PodDNSConfigOption], searches: js.Array[String]): PodDNSConfig = {
+  inline def apply(nameservers: js.Array[String], options: js.Array[PodDNSConfigOption], searches: js.Array[String]): PodDNSConfig = {
     val __obj = js.Dynamic.literal(nameservers = nameservers.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], searches = searches.asInstanceOf[js.Any])
     __obj.asInstanceOf[PodDNSConfig]
   }
   
-  @scala.inline
-  implicit class PodDNSConfigMutableBuilder[Self <: PodDNSConfig] (val x: Self) extends AnyVal {
+  extension [Self <: PodDNSConfig](x: Self) {
     
-    @scala.inline
-    def setNameservers(value: js.Array[String]): Self = StObject.set(x, "nameservers", value.asInstanceOf[js.Any])
+    inline def setNameservers(value: js.Array[String]): Self = StObject.set(x, "nameservers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameserversVarargs(value: String*): Self = StObject.set(x, "nameservers", js.Array(value :_*))
+    inline def setNameserversVarargs(value: String*): Self = StObject.set(x, "nameservers", js.Array(value :_*))
     
-    @scala.inline
-    def setOptions(value: js.Array[PodDNSConfigOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Array[PodDNSConfigOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsVarargs(value: PodDNSConfigOption*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: PodDNSConfigOption*): Self = StObject.set(x, "options", js.Array(value :_*))
     
-    @scala.inline
-    def setSearches(value: js.Array[String]): Self = StObject.set(x, "searches", value.asInstanceOf[js.Any])
+    inline def setSearches(value: js.Array[String]): Self = StObject.set(x, "searches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchesVarargs(value: String*): Self = StObject.set(x, "searches", js.Array(value :_*))
+    inline def setSearchesVarargs(value: String*): Self = StObject.set(x, "searches", js.Array(value :_*))
   }
 }

@@ -18,28 +18,21 @@ trait ListUserProfilesResponse extends StObject {
 }
 object ListUserProfilesResponse {
   
-  @scala.inline
-  def apply(): ListUserProfilesResponse = {
+  inline def apply(): ListUserProfilesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListUserProfilesResponse]
   }
   
-  @scala.inline
-  implicit class ListUserProfilesResponseMutableBuilder[Self <: ListUserProfilesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListUserProfilesResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setUserProfiles(value: UserProfileList): Self = StObject.set(x, "UserProfiles", value.asInstanceOf[js.Any])
+    inline def setUserProfiles(value: UserProfileList): Self = StObject.set(x, "UserProfiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserProfilesUndefined: Self = StObject.set(x, "UserProfiles", js.undefined)
+    inline def setUserProfilesUndefined: Self = StObject.set(x, "UserProfiles", js.undefined)
     
-    @scala.inline
-    def setUserProfilesVarargs(value: UserProfileDetails*): Self = StObject.set(x, "UserProfiles", js.Array(value :_*))
+    inline def setUserProfilesVarargs(value: UserProfileDetails*): Self = StObject.set(x, "UserProfiles", js.Array(value :_*))
   }
 }

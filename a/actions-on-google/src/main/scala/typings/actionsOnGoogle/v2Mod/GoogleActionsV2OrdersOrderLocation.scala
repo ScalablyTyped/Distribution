@@ -18,25 +18,19 @@ trait GoogleActionsV2OrdersOrderLocation extends StObject {
 }
 object GoogleActionsV2OrdersOrderLocation {
   
-  @scala.inline
-  def apply(): GoogleActionsV2OrdersOrderLocation = {
+  inline def apply(): GoogleActionsV2OrdersOrderLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2OrdersOrderLocation]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2OrdersOrderLocationMutableBuilder[Self <: GoogleActionsV2OrdersOrderLocation] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2OrdersOrderLocation](x: Self) {
     
-    @scala.inline
-    def setLocation(value: GoogleActionsV2Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: GoogleActionsV2Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setType(value: GoogleActionsV2OrdersOrderLocationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: GoogleActionsV2OrdersOrderLocationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

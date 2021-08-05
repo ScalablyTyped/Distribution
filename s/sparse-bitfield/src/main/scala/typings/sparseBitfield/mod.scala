@@ -110,8 +110,7 @@ object mod extends Shortcut {
   }
   object BitFieldInstance {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       get: Double => Boolean,
       getByte: Double => Double,
       pages: PagerInstance,
@@ -123,26 +122,19 @@ object mod extends Shortcut {
       __obj.asInstanceOf[BitFieldInstance]
     }
     
-    @scala.inline
-    implicit class BitFieldInstanceMutableBuilder[Self <: BitFieldInstance] (val x: Self) extends AnyVal {
+    extension [Self <: BitFieldInstance](x: Self) {
       
-      @scala.inline
-      def setGet(value: Double => Boolean): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: Double => Boolean): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetByte(value: Double => Double): Self = StObject.set(x, "getByte", js.Any.fromFunction1(value))
+      inline def setGetByte(value: Double => Double): Self = StObject.set(x, "getByte", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPages(value: PagerInstance): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+      inline def setPages(value: PagerInstance): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSet(value: (Double, Boolean) => Boolean): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (Double, Boolean) => Boolean): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetByte(value: (Double, Double) => Boolean): Self = StObject.set(x, "setByte", js.Any.fromFunction2(value))
+      inline def setSetByte(value: (Double, Double) => Boolean): Self = StObject.set(x, "setByte", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setToBuffer(value: () => Buffer): Self = StObject.set(x, "toBuffer", js.Any.fromFunction0(value))
+      inline def setToBuffer(value: () => Buffer): Self = StObject.set(x, "toBuffer", js.Any.fromFunction0(value))
     }
   }
   
@@ -177,44 +169,32 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBuffer(value: Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
+      inline def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
       
-      @scala.inline
-      def setPageOffset(value: Double): Self = StObject.set(x, "pageOffset", value.asInstanceOf[js.Any])
+      inline def setPageOffset(value: Double): Self = StObject.set(x, "pageOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageOffsetUndefined: Self = StObject.set(x, "pageOffset", js.undefined)
+      inline def setPageOffsetUndefined: Self = StObject.set(x, "pageOffset", js.undefined)
       
-      @scala.inline
-      def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+      inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+      inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
       
-      @scala.inline
-      def setPages(value: PagerInstance): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+      inline def setPages(value: PagerInstance): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
+      inline def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
       
-      @scala.inline
-      def setTrackUpdates(value: Boolean): Self = StObject.set(x, "trackUpdates", value.asInstanceOf[js.Any])
+      inline def setTrackUpdates(value: Boolean): Self = StObject.set(x, "trackUpdates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackUpdatesUndefined: Self = StObject.set(x, "trackUpdates", js.undefined)
+      inline def setTrackUpdatesUndefined: Self = StObject.set(x, "trackUpdates", js.undefined)
     }
   }
   

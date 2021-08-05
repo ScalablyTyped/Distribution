@@ -17,19 +17,15 @@ trait LeftButtonOptions
 }
 object LeftButtonOptions {
   
-  @scala.inline
-  def apply(color: String, onPress: () => Unit): LeftButtonOptions = {
+  inline def apply(color: String, onPress: () => Unit): LeftButtonOptions = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], onPress = js.Any.fromFunction0(onPress))
     __obj.asInstanceOf[LeftButtonOptions]
   }
   
-  @scala.inline
-  implicit class LeftButtonOptionsMutableBuilder[Self <: LeftButtonOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LeftButtonOptions](x: Self) {
     
-    @scala.inline
-    def setDisabledWhenTextEntered(value: Boolean): Self = StObject.set(x, "disabledWhenTextEntered", value.asInstanceOf[js.Any])
+    inline def setDisabledWhenTextEntered(value: Boolean): Self = StObject.set(x, "disabledWhenTextEntered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledWhenTextEnteredUndefined: Self = StObject.set(x, "disabledWhenTextEntered", js.undefined)
+    inline def setDisabledWhenTextEnteredUndefined: Self = StObject.set(x, "disabledWhenTextEntered", js.undefined)
   }
 }

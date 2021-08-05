@@ -13,19 +13,15 @@ trait UpdateSubscriptionRequest extends StObject {
 }
 object UpdateSubscriptionRequest {
   
-  @scala.inline
-  def apply(): UpdateSubscriptionRequest = {
+  inline def apply(): UpdateSubscriptionRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateSubscriptionRequest]
   }
   
-  @scala.inline
-  implicit class UpdateSubscriptionRequestMutableBuilder[Self <: UpdateSubscriptionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateSubscriptionRequest](x: Self) {
     
-    @scala.inline
-    def setAutoRenew(value: AutoRenew): Self = StObject.set(x, "AutoRenew", value.asInstanceOf[js.Any])
+    inline def setAutoRenew(value: AutoRenew): Self = StObject.set(x, "AutoRenew", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoRenewUndefined: Self = StObject.set(x, "AutoRenew", js.undefined)
+    inline def setAutoRenewUndefined: Self = StObject.set(x, "AutoRenew", js.undefined)
   }
 }

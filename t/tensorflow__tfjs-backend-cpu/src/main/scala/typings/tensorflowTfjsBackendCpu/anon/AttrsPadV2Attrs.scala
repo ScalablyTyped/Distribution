@@ -17,22 +17,17 @@ trait AttrsPadV2Attrs extends StObject {
 }
 object AttrsPadV2Attrs {
   
-  @scala.inline
-  def apply(attrs: PadV2Attrs, backend: MathBackendCPU, inputs: PadV2Inputs): AttrsPadV2Attrs = {
+  inline def apply(attrs: PadV2Attrs, backend: MathBackendCPU, inputs: PadV2Inputs): AttrsPadV2Attrs = {
     val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], backend = backend.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttrsPadV2Attrs]
   }
   
-  @scala.inline
-  implicit class AttrsPadV2AttrsMutableBuilder[Self <: AttrsPadV2Attrs] (val x: Self) extends AnyVal {
+  extension [Self <: AttrsPadV2Attrs](x: Self) {
     
-    @scala.inline
-    def setAttrs(value: PadV2Attrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+    inline def setAttrs(value: PadV2Attrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackend(value: MathBackendCPU): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
+    inline def setBackend(value: MathBackendCPU): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputs(value: PadV2Inputs): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: PadV2Inputs): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
   }
 }

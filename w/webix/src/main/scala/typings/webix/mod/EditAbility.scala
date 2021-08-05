@@ -31,6 +31,5 @@ trait EditAbility extends StObject {
 }
 object EditAbility {
   
-  @scala.inline
-  def apply: EditAbility = ^.asInstanceOf[js.Dynamic].selectDynamic("EditAbility").asInstanceOf[EditAbility]
+  inline def apply: EditAbility = ^.asInstanceOf[js.Dynamic].selectDynamic("EditAbility").asInstanceOf[EditAbility]
 }

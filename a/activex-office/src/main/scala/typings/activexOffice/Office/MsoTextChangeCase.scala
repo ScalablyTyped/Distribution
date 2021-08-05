@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoTextChangeCase extends StObject
 object MsoTextChangeCase {
   
-  @scala.inline
-  def msoCaseLower: `2` = 2.asInstanceOf[`2`]
+  inline def msoCaseLower: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoCaseSentence: `1` = 1.asInstanceOf[`1`]
+  inline def msoCaseSentence: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoCaseTitle: `4` = 4.asInstanceOf[`4`]
+  inline def msoCaseTitle: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def msoCaseToggle: `5` = 5.asInstanceOf[`5`]
+  inline def msoCaseToggle: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def msoCaseUpper: `3` = 3.asInstanceOf[`3`]
+  inline def msoCaseUpper: `3` = 3.asInstanceOf[`3`]
 }

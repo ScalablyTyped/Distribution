@@ -18,25 +18,19 @@ trait RevokeFlowEntitlementResponse extends StObject {
 }
 object RevokeFlowEntitlementResponse {
   
-  @scala.inline
-  def apply(): RevokeFlowEntitlementResponse = {
+  inline def apply(): RevokeFlowEntitlementResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RevokeFlowEntitlementResponse]
   }
   
-  @scala.inline
-  implicit class RevokeFlowEntitlementResponseMutableBuilder[Self <: RevokeFlowEntitlementResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RevokeFlowEntitlementResponse](x: Self) {
     
-    @scala.inline
-    def setEntitlementArn(value: string): Self = StObject.set(x, "EntitlementArn", value.asInstanceOf[js.Any])
+    inline def setEntitlementArn(value: string): Self = StObject.set(x, "EntitlementArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitlementArnUndefined: Self = StObject.set(x, "EntitlementArn", js.undefined)
+    inline def setEntitlementArnUndefined: Self = StObject.set(x, "EntitlementArn", js.undefined)
     
-    @scala.inline
-    def setFlowArn(value: string): Self = StObject.set(x, "FlowArn", value.asInstanceOf[js.Any])
+    inline def setFlowArn(value: string): Self = StObject.set(x, "FlowArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowArnUndefined: Self = StObject.set(x, "FlowArn", js.undefined)
+    inline def setFlowArnUndefined: Self = StObject.set(x, "FlowArn", js.undefined)
   }
 }

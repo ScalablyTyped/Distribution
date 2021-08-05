@@ -27,25 +27,19 @@ trait SchemaResourceId extends StObject {
 }
 object SchemaResourceId {
   
-  @scala.inline
-  def apply(): SchemaResourceId = {
+  inline def apply(): SchemaResourceId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaResourceId]
   }
   
-  @scala.inline
-  implicit class SchemaResourceIdMutableBuilder[Self <: SchemaResourceId] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaResourceId](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

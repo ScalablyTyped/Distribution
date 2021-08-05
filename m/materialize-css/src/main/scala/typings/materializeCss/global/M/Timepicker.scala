@@ -21,19 +21,16 @@ object Timepicker {
     * Get Instance
     */
   /* static member */
-  @scala.inline
-  def getInstance(elem: Element): typings.materializeCss.M.Timepicker = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(elem.asInstanceOf[js.Any]).asInstanceOf[typings.materializeCss.M.Timepicker]
+  inline def getInstance(elem: Element): typings.materializeCss.M.Timepicker = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(elem.asInstanceOf[js.Any]).asInstanceOf[typings.materializeCss.M.Timepicker]
   
   /**
     * Init Timepickers
     */
   /* static member */
-  @scala.inline
-  def init(
+  inline def init(
     els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ js.Any
   ): js.Array[typings.materializeCss.M.Timepicker] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.materializeCss.M.Timepicker]]
-  @scala.inline
-  def init(
+  inline def init(
     els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ js.Any,
     options: PartialTimepickerOptions
   ): js.Array[typings.materializeCss.M.Timepicker] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.materializeCss.M.Timepicker]]
@@ -41,8 +38,6 @@ object Timepicker {
     * Init Timepicker
     */
   /* static member */
-  @scala.inline
-  def init(els: Element): typings.materializeCss.M.Timepicker = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[typings.materializeCss.M.Timepicker]
-  @scala.inline
-  def init(els: Element, options: PartialTimepickerOptions): typings.materializeCss.M.Timepicker = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.materializeCss.M.Timepicker]
+  inline def init(els: Element): typings.materializeCss.M.Timepicker = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[typings.materializeCss.M.Timepicker]
+  inline def init(els: Element, options: PartialTimepickerOptions): typings.materializeCss.M.Timepicker = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.materializeCss.M.Timepicker]
 }

@@ -11,16 +11,12 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def digraph(id: String): Graph_ = ^.asInstanceOf[js.Dynamic].applyDynamic("digraph")(id.asInstanceOf[js.Any]).asInstanceOf[Graph_]
+  inline def digraph(id: String): Graph_ = ^.asInstanceOf[js.Dynamic].applyDynamic("digraph")(id.asInstanceOf[js.Any]).asInstanceOf[Graph_]
   
-  @scala.inline
-  def graph(id: String): Graph_ = ^.asInstanceOf[js.Dynamic].applyDynamic("graph")(id.asInstanceOf[js.Any]).asInstanceOf[Graph_]
+  inline def graph(id: String): Graph_ = ^.asInstanceOf[js.Dynamic].applyDynamic("graph")(id.asInstanceOf[js.Any]).asInstanceOf[Graph_]
   
-  @scala.inline
-  def parse(path: String, callback: ParseCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def parse(path: String, callback: ParseCallback, errback: ErrorCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def parse(path: String, callback: ParseCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def parse(path: String, callback: ParseCallback, errback: ErrorCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type Edge = HasAttributes
   
@@ -96,20 +92,16 @@ object mod {
   }
   object HasAttributes {
     
-    @scala.inline
-    def apply(get: String => PossibleValue, set: (String, PossibleValue) => Unit): HasAttributes = {
+    inline def apply(get: String => PossibleValue, set: (String, PossibleValue) => Unit): HasAttributes = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), set = js.Any.fromFunction2(set))
       __obj.asInstanceOf[HasAttributes]
     }
     
-    @scala.inline
-    implicit class HasAttributesMutableBuilder[Self <: HasAttributes] (val x: Self) extends AnyVal {
+    extension [Self <: HasAttributes](x: Self) {
       
-      @scala.inline
-      def setGet(value: String => PossibleValue): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => PossibleValue): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet(value: (String, PossibleValue) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (String, PossibleValue) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     }
   }
   
@@ -121,17 +113,14 @@ object mod {
   }
   object Node {
     
-    @scala.inline
-    def apply(get: String => PossibleValue, id: String, set: (String, PossibleValue) => Unit): Node = {
+    inline def apply(get: String => PossibleValue, id: String, set: (String, PossibleValue) => Unit): Node = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), id = id.asInstanceOf[js.Any], set = js.Any.fromFunction2(set))
       __obj.asInstanceOf[Node]
     }
     
-    @scala.inline
-    implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
+    extension [Self <: Node](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -154,23 +143,17 @@ object mod {
   trait RenderEngine extends StObject
   object RenderEngine {
     
-    @scala.inline
-    def circo: typings.graphviz.graphvizStrings.circo = "circo".asInstanceOf[typings.graphviz.graphvizStrings.circo]
+    inline def circo: typings.graphviz.graphvizStrings.circo = "circo".asInstanceOf[typings.graphviz.graphvizStrings.circo]
     
-    @scala.inline
-    def dot: typings.graphviz.graphvizStrings.dot = "dot".asInstanceOf[typings.graphviz.graphvizStrings.dot]
+    inline def dot: typings.graphviz.graphvizStrings.dot = "dot".asInstanceOf[typings.graphviz.graphvizStrings.dot]
     
-    @scala.inline
-    def fdp: typings.graphviz.graphvizStrings.fdp = "fdp".asInstanceOf[typings.graphviz.graphvizStrings.fdp]
+    inline def fdp: typings.graphviz.graphvizStrings.fdp = "fdp".asInstanceOf[typings.graphviz.graphvizStrings.fdp]
     
-    @scala.inline
-    def neato: typings.graphviz.graphvizStrings.neato = "neato".asInstanceOf[typings.graphviz.graphvizStrings.neato]
+    inline def neato: typings.graphviz.graphvizStrings.neato = "neato".asInstanceOf[typings.graphviz.graphvizStrings.neato]
     
-    @scala.inline
-    def osage: typings.graphviz.graphvizStrings.osage = "osage".asInstanceOf[typings.graphviz.graphvizStrings.osage]
+    inline def osage: typings.graphviz.graphvizStrings.osage = "osage".asInstanceOf[typings.graphviz.graphvizStrings.osage]
     
-    @scala.inline
-    def twopi: typings.graphviz.graphvizStrings.twopi = "twopi".asInstanceOf[typings.graphviz.graphvizStrings.twopi]
+    inline def twopi: typings.graphviz.graphvizStrings.twopi = "twopi".asInstanceOf[typings.graphviz.graphvizStrings.twopi]
   }
   
   trait RenderOptions extends StObject {
@@ -209,48 +192,35 @@ object mod {
   }
   object RenderOptions {
     
-    @scala.inline
-    def apply(`type`: RenderType): RenderOptions = {
+    inline def apply(`type`: RenderType): RenderOptions = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[RenderOptions]
     }
     
-    @scala.inline
-    implicit class RenderOptionsMutableBuilder[Self <: RenderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RenderOptions](x: Self) {
       
-      @scala.inline
-      def setE(value: Options): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
+      inline def setE(value: Options): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEUndefined: Self = StObject.set(x, "E", js.undefined)
+      inline def setEUndefined: Self = StObject.set(x, "E", js.undefined)
       
-      @scala.inline
-      def setG(value: Options): Self = StObject.set(x, "G", value.asInstanceOf[js.Any])
+      inline def setG(value: Options): Self = StObject.set(x, "G", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGUndefined: Self = StObject.set(x, "G", js.undefined)
+      inline def setGUndefined: Self = StObject.set(x, "G", js.undefined)
       
-      @scala.inline
-      def setN(value: Options): Self = StObject.set(x, "N", value.asInstanceOf[js.Any])
+      inline def setN(value: Options): Self = StObject.set(x, "N", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNUndefined: Self = StObject.set(x, "N", js.undefined)
+      inline def setNUndefined: Self = StObject.set(x, "N", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setType(value: RenderType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: RenderType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUse(value: RenderEngine): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
+      inline def setUse(value: RenderEngine): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
+      inline def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
     }
   }
   

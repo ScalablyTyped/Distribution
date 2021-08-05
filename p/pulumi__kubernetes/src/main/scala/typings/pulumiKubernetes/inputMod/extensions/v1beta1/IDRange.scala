@@ -22,19 +22,15 @@ trait IDRange extends StObject {
 }
 object IDRange {
   
-  @scala.inline
-  def apply(max: Input[Double], min: Input[Double]): IDRange = {
+  inline def apply(max: Input[Double], min: Input[Double]): IDRange = {
     val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDRange]
   }
   
-  @scala.inline
-  implicit class IDRangeMutableBuilder[Self <: IDRange] (val x: Self) extends AnyVal {
+  extension [Self <: IDRange](x: Self) {
     
-    @scala.inline
-    def setMax(value: Input[Double]): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Input[Double]): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: Input[Double]): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Input[Double]): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
   }
 }

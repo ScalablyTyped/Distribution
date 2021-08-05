@@ -28,22 +28,17 @@ trait GitRepoVolumeSource extends StObject {
 }
 object GitRepoVolumeSource {
   
-  @scala.inline
-  def apply(directory: String, repository: String, revision: String): GitRepoVolumeSource = {
+  inline def apply(directory: String, repository: String, revision: String): GitRepoVolumeSource = {
     val __obj = js.Dynamic.literal(directory = directory.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitRepoVolumeSource]
   }
   
-  @scala.inline
-  implicit class GitRepoVolumeSourceMutableBuilder[Self <: GitRepoVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: GitRepoVolumeSource](x: Self) {
     
-    @scala.inline
-    def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
+    inline def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepository(value: String): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    inline def setRepository(value: String): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+    inline def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait GetSnapshotLimitsRequest extends StObject {
 }
 object GetSnapshotLimitsRequest {
   
-  @scala.inline
-  def apply(DirectoryId: DirectoryId): GetSnapshotLimitsRequest = {
+  inline def apply(DirectoryId: DirectoryId): GetSnapshotLimitsRequest = {
     val __obj = js.Dynamic.literal(DirectoryId = DirectoryId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSnapshotLimitsRequest]
   }
   
-  @scala.inline
-  implicit class GetSnapshotLimitsRequestMutableBuilder[Self <: GetSnapshotLimitsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetSnapshotLimitsRequest](x: Self) {
     
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
   }
 }

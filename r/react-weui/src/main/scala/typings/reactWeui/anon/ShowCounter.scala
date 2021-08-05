@@ -12,19 +12,15 @@ trait ShowCounter extends StObject {
 }
 object ShowCounter {
   
-  @scala.inline
-  def apply(defaultValue: js.Any, showCounter: Boolean): ShowCounter = {
+  inline def apply(defaultValue: js.Any, showCounter: Boolean): ShowCounter = {
     val __obj = js.Dynamic.literal(defaultValue = defaultValue.asInstanceOf[js.Any], showCounter = showCounter.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShowCounter]
   }
   
-  @scala.inline
-  implicit class ShowCounterMutableBuilder[Self <: ShowCounter] (val x: Self) extends AnyVal {
+  extension [Self <: ShowCounter](x: Self) {
     
-    @scala.inline
-    def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowCounter(value: Boolean): Self = StObject.set(x, "showCounter", value.asInstanceOf[js.Any])
+    inline def setShowCounter(value: Boolean): Self = StObject.set(x, "showCounter", value.asInstanceOf[js.Any])
   }
 }

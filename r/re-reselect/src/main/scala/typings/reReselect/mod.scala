@@ -19,17 +19,14 @@ object mod {
     * Homogeneous selectors, array argument
     */
   /* one selector */
-  @scala.inline
-  def default[S, R1, T](selectors: js.Array[Selector[S, R1]], combiner: js.Function1[/* res */ R1, T]): OutputCachedSelector[S, T, js.Function1[/* res */ R1, T], js.Array[Selector[S, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selectors.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputCachedSelector[S, T, js.Function1[/* res */ R1, T], js.Array[Selector[S, R1]]]]
+  inline def default[S, R1, T](selectors: js.Array[Selector[S, R1]], combiner: js.Function1[/* res */ R1, T]): OutputCachedSelector[S, T, js.Function1[/* res */ R1, T], js.Array[Selector[S, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selectors.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputCachedSelector[S, T, js.Function1[/* res */ R1, T], js.Array[Selector[S, R1]]]]
   /*
     * Heterogeneous selectors, parameter types
     */
   /* one selector */
-  @scala.inline
-  def default[S1, R1, T](selector: Selector[S1, R1], combiner: js.Function1[/* res */ R1, T]): OutputCachedSelector[S1, T, js.Function1[/* res */ R1, T], js.Array[Selector[S1, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputCachedSelector[S1, T, js.Function1[/* res */ R1, T], js.Array[Selector[S1, R1]]]]
+  inline def default[S1, R1, T](selector: Selector[S1, R1], combiner: js.Function1[/* res */ R1, T]): OutputCachedSelector[S1, T, js.Function1[/* res */ R1, T], js.Array[Selector[S1, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputCachedSelector[S1, T, js.Function1[/* res */ R1, T], js.Array[Selector[S1, R1]]]]
   /* two selectors */
-  @scala.inline
-  def default[S, R1, R2, T](
+  inline def default[S, R1, R2, T](
     selector1: Selector[S, R1],
     selector2: Selector[S, R2],
     combiner: js.Function2[/* res1 */ R1, /* res2 */ R2, T]
@@ -45,8 +42,7 @@ object mod {
     js.Tuple2[Selector[S, R1], Selector[S, R2]]
   ]]
   /* two selectors */
-  @scala.inline
-  def default[S, R1, R2, T](
+  inline def default[S, R1, R2, T](
     selectors: js.Tuple2[Selector[S, R1], Selector[S, R2]],
     combiner: js.Function2[/* res1 */ R1, /* res2 */ R2, T]
   ): OutputCachedSelector[
@@ -60,10 +56,8 @@ object mod {
     js.Function2[/* res1 */ R1, /* res2 */ R2, T], 
     js.Tuple2[Selector[S, R1], Selector[S, R2]]
   ]]
-  @scala.inline
-  def default[S, P, R1, T](selector: ParametricSelector[S, P, R1], combiner: js.Function1[/* res */ R1, T]): OutputParametricCachedSelector[S, P, T, js.Function1[/* res */ R1, T], js.Array[ParametricSelector[S, P, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputParametricCachedSelector[S, P, T, js.Function1[/* res */ R1, T], js.Array[ParametricSelector[S, P, R1]]]]
-  @scala.inline
-  def default[S, P, R1, R2, T](
+  inline def default[S, P, R1, T](selector: ParametricSelector[S, P, R1], combiner: js.Function1[/* res */ R1, T]): OutputParametricCachedSelector[S, P, T, js.Function1[/* res */ R1, T], js.Array[ParametricSelector[S, P, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputParametricCachedSelector[S, P, T, js.Function1[/* res */ R1, T], js.Array[ParametricSelector[S, P, R1]]]]
+  inline def default[S, P, R1, R2, T](
     selector1: ParametricSelector[S, P, R1],
     selector2: ParametricSelector[S, P, R2],
     combiner: js.Function2[/* res1 */ R1, /* res2 */ R2, T]
@@ -81,8 +75,7 @@ object mod {
     js.Tuple2[ParametricSelector[S, P, R1], ParametricSelector[S, P, R2]]
   ]]
   /* three selectors */
-  @scala.inline
-  def default[S, R1, R2, R3, T](
+  inline def default[S, R1, R2, R3, T](
     selector1: Selector[S, R1],
     selector2: Selector[S, R2],
     selector3: Selector[S, R3],
@@ -99,8 +92,7 @@ object mod {
     js.Tuple3[Selector[S, R1], Selector[S, R2], Selector[S, R3]]
   ]]
   /* three selectors */
-  @scala.inline
-  def default[S, R1, R2, R3, T](
+  inline def default[S, R1, R2, R3, T](
     selectors: js.Tuple3[Selector[S, R1], Selector[S, R2], Selector[S, R3]],
     combiner: js.Function3[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, T]
   ): OutputCachedSelector[
@@ -114,8 +106,7 @@ object mod {
     js.Function3[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, T], 
     js.Tuple3[Selector[S, R1], Selector[S, R2], Selector[S, R3]]
   ]]
-  @scala.inline
-  def default[S, P, R1, R2, R3, T](
+  inline def default[S, P, R1, R2, R3, T](
     selector1: ParametricSelector[S, P, R1],
     selector2: ParametricSelector[S, P, R2],
     selector3: ParametricSelector[S, P, R3],
@@ -142,8 +133,7 @@ object mod {
     ]
   ]]
   /* four selectors */
-  @scala.inline
-  def default[S, R1, R2, R3, R4, T](
+  inline def default[S, R1, R2, R3, R4, T](
     selector1: Selector[S, R1],
     selector2: Selector[S, R2],
     selector3: Selector[S, R3],
@@ -161,8 +151,7 @@ object mod {
     js.Tuple4[Selector[S, R1], Selector[S, R2], Selector[S, R3], Selector[S, R4]]
   ]]
   /* four selectors */
-  @scala.inline
-  def default[S, R1, R2, R3, R4, T](
+  inline def default[S, R1, R2, R3, R4, T](
     selectors: js.Tuple4[Selector[S, R1], Selector[S, R2], Selector[S, R3], Selector[S, R4]],
     combiner: js.Function4[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, T]
   ): OutputCachedSelector[
@@ -176,8 +165,7 @@ object mod {
     js.Function4[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, T], 
     js.Tuple4[Selector[S, R1], Selector[S, R2], Selector[S, R3], Selector[S, R4]]
   ]]
-  @scala.inline
-  def default[S, P, R1, R2, R3, R4, T](
+  inline def default[S, P, R1, R2, R3, R4, T](
     selector1: ParametricSelector[S, P, R1],
     selector2: ParametricSelector[S, P, R2],
     selector3: ParametricSelector[S, P, R3],
@@ -207,8 +195,7 @@ object mod {
     ]
   ]]
   /* five selectors */
-  @scala.inline
-  def default[S, R1, R2, R3, R4, R5, T](
+  inline def default[S, R1, R2, R3, R4, R5, T](
     selector1: Selector[S, R1],
     selector2: Selector[S, R2],
     selector3: Selector[S, R3],
@@ -227,8 +214,7 @@ object mod {
     js.Tuple5[Selector[S, R1], Selector[S, R2], Selector[S, R3], Selector[S, R4], Selector[S, R5]]
   ]]
   /* five selectors */
-  @scala.inline
-  def default[S, R1, R2, R3, R4, R5, T](
+  inline def default[S, R1, R2, R3, R4, R5, T](
     selectors: js.Tuple5[Selector[S, R1], Selector[S, R2], Selector[S, R3], Selector[S, R4], Selector[S, R5]],
     combiner: js.Function5[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, /* res5 */ R5, T]
   ): OutputCachedSelector[
@@ -242,8 +228,7 @@ object mod {
     js.Function5[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, /* res5 */ R5, T], 
     js.Tuple5[Selector[S, R1], Selector[S, R2], Selector[S, R3], Selector[S, R4], Selector[S, R5]]
   ]]
-  @scala.inline
-  def default[S, P, R1, R2, R3, R4, R5, T](
+  inline def default[S, P, R1, R2, R3, R4, R5, T](
     selector1: ParametricSelector[S, P, R1],
     selector2: ParametricSelector[S, P, R2],
     selector3: ParametricSelector[S, P, R3],
@@ -276,8 +261,7 @@ object mod {
     ]
   ]]
   /* six selectors */
-  @scala.inline
-  def default[S, R1, R2, R3, R4, R5, R6, T](
+  inline def default[S, R1, R2, R3, R4, R5, R6, T](
     selector1: Selector[S, R1],
     selector2: Selector[S, R2],
     selector3: Selector[S, R3],
@@ -311,8 +295,7 @@ object mod {
     ]
   ]]
   /* six selectors */
-  @scala.inline
-  def default[S, R1, R2, R3, R4, R5, R6, T](
+  inline def default[S, R1, R2, R3, R4, R5, R6, T](
     selectors: js.Tuple6[
       Selector[S, R1], 
       Selector[S, R2], 
@@ -347,8 +330,7 @@ object mod {
       Selector[S, R6]
     ]
   ]]
-  @scala.inline
-  def default[S, P, R1, R2, R3, R4, R5, R6, T](
+  inline def default[S, P, R1, R2, R3, R4, R5, R6, T](
     selector1: ParametricSelector[S, P, R1],
     selector2: ParametricSelector[S, P, R2],
     selector3: ParametricSelector[S, P, R3],
@@ -384,8 +366,7 @@ object mod {
     ]
   ]]
   /* seven selectors */
-  @scala.inline
-  def default[S, R1, R2, R3, R4, R5, R6, R7, T](
+  inline def default[S, R1, R2, R3, R4, R5, R6, R7, T](
     selector1: Selector[S, R1],
     selector2: Selector[S, R2],
     selector3: Selector[S, R3],
@@ -449,8 +430,7 @@ object mod {
     ]
   ]]
   /* seven selectors */
-  @scala.inline
-  def default[S, R1, R2, R3, R4, R5, R6, R7, T](
+  inline def default[S, R1, R2, R3, R4, R5, R6, R7, T](
     selectors: js.Tuple7[
       Selector[S, R1], 
       Selector[S, R2], 
@@ -515,8 +495,7 @@ object mod {
       Selector[S, R7]
     ]
   ]]
-  @scala.inline
-  def default[S, P, R1, R2, R3, R4, R5, R6, R7, T](
+  inline def default[S, P, R1, R2, R3, R4, R5, R6, R7, T](
     selector1: ParametricSelector[S, P, R1],
     selector2: ParametricSelector[S, P, R2],
     selector3: ParametricSelector[S, P, R3],
@@ -582,8 +561,7 @@ object mod {
     ]
   ]]
   /* eight selectors */
-  @scala.inline
-  def default[S, R1, R2, R3, R4, R5, R6, R7, R8, T](
+  inline def default[S, R1, R2, R3, R4, R5, R6, R7, R8, T](
     selector1: Selector[S, R1],
     selector2: Selector[S, R2],
     selector3: Selector[S, R3],
@@ -653,8 +631,7 @@ object mod {
     ]
   ]]
   /* eight selectors */
-  @scala.inline
-  def default[S, R1, R2, R3, R4, R5, R6, R7, R8, T](
+  inline def default[S, R1, R2, R3, R4, R5, R6, R7, R8, T](
     selectors: js.Tuple8[
       Selector[S, R1], 
       Selector[S, R2], 
@@ -725,8 +702,7 @@ object mod {
       Selector[S, R8]
     ]
   ]]
-  @scala.inline
-  def default[S, P, R1, R2, R3, R4, R5, R6, R7, R8, T](
+  inline def default[S, P, R1, R2, R3, R4, R5, R6, R7, R8, T](
     selector1: ParametricSelector[S, P, R1],
     selector2: ParametricSelector[S, P, R2],
     selector3: ParametricSelector[S, P, R3],
@@ -798,8 +774,7 @@ object mod {
     ]
   ]]
   /* nine selectors */
-  @scala.inline
-  def default[S, R1, R2, R3, R4, R5, R6, R7, R8, R9, T](
+  inline def default[S, R1, R2, R3, R4, R5, R6, R7, R8, R9, T](
     selector1: Selector[S, R1],
     selector2: Selector[S, R2],
     selector3: Selector[S, R3],
@@ -875,8 +850,7 @@ object mod {
     ]
   ]]
   /* nine selectors */
-  @scala.inline
-  def default[S, R1, R2, R3, R4, R5, R6, R7, R8, R9, T](
+  inline def default[S, R1, R2, R3, R4, R5, R6, R7, R8, R9, T](
     selectors: js.Tuple9[
       Selector[S, R1], 
       Selector[S, R2], 
@@ -953,8 +927,7 @@ object mod {
       Selector[S, R9]
     ]
   ]]
-  @scala.inline
-  def default[S, P, R1, R2, R3, R4, R5, R6, R7, R8, R9, T](
+  inline def default[S, P, R1, R2, R3, R4, R5, R6, R7, R8, R9, T](
     selector1: ParametricSelector[S, P, R1],
     selector2: ParametricSelector[S, P, R2],
     selector3: ParametricSelector[S, P, R3],
@@ -1032,8 +1005,7 @@ object mod {
     ]
   ]]
   /* ten selectors */
-  @scala.inline
-  def default[S, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, T](
+  inline def default[S, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, T](
     selector1: Selector[S, R1],
     selector2: Selector[S, R2],
     selector3: Selector[S, R3],
@@ -1115,8 +1087,7 @@ object mod {
     ]
   ]]
   /* ten selectors */
-  @scala.inline
-  def default[S, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, T](
+  inline def default[S, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, T](
     selectors: js.Tuple10[
       Selector[S, R1], 
       Selector[S, R2], 
@@ -1199,8 +1170,7 @@ object mod {
       Selector[S, R10]
     ]
   ]]
-  @scala.inline
-  def default[S, P, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, T](
+  inline def default[S, P, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, T](
     selector1: ParametricSelector[S, P, R1],
     selector2: ParametricSelector[S, P, R2],
     selector3: ParametricSelector[S, P, R3],
@@ -1284,8 +1254,7 @@ object mod {
     ]
   ]]
   /* eleven selectors */
-  @scala.inline
-  def default[S, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, T](
+  inline def default[S, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, T](
     selector1: Selector[S, R1],
     selector2: Selector[S, R2],
     selector3: Selector[S, R3],
@@ -1373,8 +1342,7 @@ object mod {
     ]
   ]]
   /* eleven selectors */
-  @scala.inline
-  def default[S, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, T](
+  inline def default[S, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, T](
     selectors: js.Tuple11[
       Selector[S, R1], 
       Selector[S, R2], 
@@ -1463,8 +1431,7 @@ object mod {
       Selector[S, R11]
     ]
   ]]
-  @scala.inline
-  def default[S, P, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, T](
+  inline def default[S, P, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, T](
     selector1: ParametricSelector[S, P, R1],
     selector2: ParametricSelector[S, P, R2],
     selector3: ParametricSelector[S, P, R3],
@@ -1554,8 +1521,7 @@ object mod {
     ]
   ]]
   /* twelve selectors */
-  @scala.inline
-  def default[S, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, T](
+  inline def default[S, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, T](
     selector1: Selector[S, R1],
     selector2: Selector[S, R2],
     selector3: Selector[S, R3],
@@ -1649,8 +1615,7 @@ object mod {
     ]
   ]]
   /* twelve selectors */
-  @scala.inline
-  def default[S, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, T](
+  inline def default[S, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, T](
     selectors: js.Tuple12[
       Selector[S, R1], 
       Selector[S, R2], 
@@ -1745,8 +1710,7 @@ object mod {
       Selector[S, R12]
     ]
   ]]
-  @scala.inline
-  def default[S, P, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, T](
+  inline def default[S, P, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, T](
     selector1: ParametricSelector[S, P, R1],
     selector2: ParametricSelector[S, P, R2],
     selector3: ParametricSelector[S, P, R3],
@@ -1982,17 +1946,14 @@ object mod {
     * Homogeneous selectors, array argument
     */
   /* one selector */
-  @scala.inline
-  def createCachedSelector[S, R1, T](selectors: js.Array[Selector[S, R1]], combiner: js.Function1[/* res */ R1, T]): OutputCachedSelector[S, T, js.Function1[/* res */ R1, T], js.Array[Selector[S, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCachedSelector")(selectors.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputCachedSelector[S, T, js.Function1[/* res */ R1, T], js.Array[Selector[S, R1]]]]
+  inline def createCachedSelector[S, R1, T](selectors: js.Array[Selector[S, R1]], combiner: js.Function1[/* res */ R1, T]): OutputCachedSelector[S, T, js.Function1[/* res */ R1, T], js.Array[Selector[S, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCachedSelector")(selectors.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputCachedSelector[S, T, js.Function1[/* res */ R1, T], js.Array[Selector[S, R1]]]]
   /*
     * Heterogeneous selectors, parameter types
     */
   /* one selector */
-  @scala.inline
-  def createCachedSelector[S1, R1, T](selector: Selector[S1, R1], combiner: js.Function1[/* res */ R1, T]): OutputCachedSelector[S1, T, js.Function1[/* res */ R1, T], js.Array[Selector[S1, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCachedSelector")(selector.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputCachedSelector[S1, T, js.Function1[/* res */ R1, T], js.Array[Selector[S1, R1]]]]
+  inline def createCachedSelector[S1, R1, T](selector: Selector[S1, R1], combiner: js.Function1[/* res */ R1, T]): OutputCachedSelector[S1, T, js.Function1[/* res */ R1, T], js.Array[Selector[S1, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCachedSelector")(selector.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputCachedSelector[S1, T, js.Function1[/* res */ R1, T], js.Array[Selector[S1, R1]]]]
   /* two selectors */
-  @scala.inline
-  def createCachedSelector[S, R1, R2, T](
+  inline def createCachedSelector[S, R1, R2, T](
     selector1: Selector[S, R1],
     selector2: Selector[S, R2],
     combiner: js.Function2[/* res1 */ R1, /* res2 */ R2, T]
@@ -2008,8 +1969,7 @@ object mod {
     js.Tuple2[Selector[S, R1], Selector[S, R2]]
   ]]
   /* two selectors */
-  @scala.inline
-  def createCachedSelector[S, R1, R2, T](
+  inline def createCachedSelector[S, R1, R2, T](
     selectors: js.Tuple2[Selector[S, R1], Selector[S, R2]],
     combiner: js.Function2[/* res1 */ R1, /* res2 */ R2, T]
   ): OutputCachedSelector[
@@ -2023,10 +1983,8 @@ object mod {
     js.Function2[/* res1 */ R1, /* res2 */ R2, T], 
     js.Tuple2[Selector[S, R1], Selector[S, R2]]
   ]]
-  @scala.inline
-  def createCachedSelector[S, P, R1, T](selector: ParametricSelector[S, P, R1], combiner: js.Function1[/* res */ R1, T]): OutputParametricCachedSelector[S, P, T, js.Function1[/* res */ R1, T], js.Array[ParametricSelector[S, P, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCachedSelector")(selector.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputParametricCachedSelector[S, P, T, js.Function1[/* res */ R1, T], js.Array[ParametricSelector[S, P, R1]]]]
-  @scala.inline
-  def createCachedSelector[S, P, R1, R2, T](
+  inline def createCachedSelector[S, P, R1, T](selector: ParametricSelector[S, P, R1], combiner: js.Function1[/* res */ R1, T]): OutputParametricCachedSelector[S, P, T, js.Function1[/* res */ R1, T], js.Array[ParametricSelector[S, P, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCachedSelector")(selector.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputParametricCachedSelector[S, P, T, js.Function1[/* res */ R1, T], js.Array[ParametricSelector[S, P, R1]]]]
+  inline def createCachedSelector[S, P, R1, R2, T](
     selector1: ParametricSelector[S, P, R1],
     selector2: ParametricSelector[S, P, R2],
     combiner: js.Function2[/* res1 */ R1, /* res2 */ R2, T]
@@ -2044,8 +2002,7 @@ object mod {
     js.Tuple2[ParametricSelector[S, P, R1], ParametricSelector[S, P, R2]]
   ]]
   /* three selectors */
-  @scala.inline
-  def createCachedSelector[S, R1, R2, R3, T](
+  inline def createCachedSelector[S, R1, R2, R3, T](
     selector1: Selector[S, R1],
     selector2: Selector[S, R2],
     selector3: Selector[S, R3],
@@ -2062,8 +2019,7 @@ object mod {
     js.Tuple3[Selector[S, R1], Selector[S, R2], Selector[S, R3]]
   ]]
   /* three selectors */
-  @scala.inline
-  def createCachedSelector[S, R1, R2, R3, T](
+  inline def createCachedSelector[S, R1, R2, R3, T](
     selectors: js.Tuple3[Selector[S, R1], Selector[S, R2], Selector[S, R3]],
     combiner: js.Function3[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, T]
   ): OutputCachedSelector[
@@ -2077,8 +2033,7 @@ object mod {
     js.Function3[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, T], 
     js.Tuple3[Selector[S, R1], Selector[S, R2], Selector[S, R3]]
   ]]
-  @scala.inline
-  def createCachedSelector[S, P, R1, R2, R3, T](
+  inline def createCachedSelector[S, P, R1, R2, R3, T](
     selector1: ParametricSelector[S, P, R1],
     selector2: ParametricSelector[S, P, R2],
     selector3: ParametricSelector[S, P, R3],
@@ -2105,8 +2060,7 @@ object mod {
     ]
   ]]
   /* four selectors */
-  @scala.inline
-  def createCachedSelector[S, R1, R2, R3, R4, T](
+  inline def createCachedSelector[S, R1, R2, R3, R4, T](
     selector1: Selector[S, R1],
     selector2: Selector[S, R2],
     selector3: Selector[S, R3],
@@ -2124,8 +2078,7 @@ object mod {
     js.Tuple4[Selector[S, R1], Selector[S, R2], Selector[S, R3], Selector[S, R4]]
   ]]
   /* four selectors */
-  @scala.inline
-  def createCachedSelector[S, R1, R2, R3, R4, T](
+  inline def createCachedSelector[S, R1, R2, R3, R4, T](
     selectors: js.Tuple4[Selector[S, R1], Selector[S, R2], Selector[S, R3], Selector[S, R4]],
     combiner: js.Function4[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, T]
   ): OutputCachedSelector[
@@ -2139,8 +2092,7 @@ object mod {
     js.Function4[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, T], 
     js.Tuple4[Selector[S, R1], Selector[S, R2], Selector[S, R3], Selector[S, R4]]
   ]]
-  @scala.inline
-  def createCachedSelector[S, P, R1, R2, R3, R4, T](
+  inline def createCachedSelector[S, P, R1, R2, R3, R4, T](
     selector1: ParametricSelector[S, P, R1],
     selector2: ParametricSelector[S, P, R2],
     selector3: ParametricSelector[S, P, R3],
@@ -2170,8 +2122,7 @@ object mod {
     ]
   ]]
   /* five selectors */
-  @scala.inline
-  def createCachedSelector[S, R1, R2, R3, R4, R5, T](
+  inline def createCachedSelector[S, R1, R2, R3, R4, R5, T](
     selector1: Selector[S, R1],
     selector2: Selector[S, R2],
     selector3: Selector[S, R3],
@@ -2190,8 +2141,7 @@ object mod {
     js.Tuple5[Selector[S, R1], Selector[S, R2], Selector[S, R3], Selector[S, R4], Selector[S, R5]]
   ]]
   /* five selectors */
-  @scala.inline
-  def createCachedSelector[S, R1, R2, R3, R4, R5, T](
+  inline def createCachedSelector[S, R1, R2, R3, R4, R5, T](
     selectors: js.Tuple5[Selector[S, R1], Selector[S, R2], Selector[S, R3], Selector[S, R4], Selector[S, R5]],
     combiner: js.Function5[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, /* res5 */ R5, T]
   ): OutputCachedSelector[
@@ -2205,8 +2155,7 @@ object mod {
     js.Function5[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, /* res5 */ R5, T], 
     js.Tuple5[Selector[S, R1], Selector[S, R2], Selector[S, R3], Selector[S, R4], Selector[S, R5]]
   ]]
-  @scala.inline
-  def createCachedSelector[S, P, R1, R2, R3, R4, R5, T](
+  inline def createCachedSelector[S, P, R1, R2, R3, R4, R5, T](
     selector1: ParametricSelector[S, P, R1],
     selector2: ParametricSelector[S, P, R2],
     selector3: ParametricSelector[S, P, R3],
@@ -2239,8 +2188,7 @@ object mod {
     ]
   ]]
   /* six selectors */
-  @scala.inline
-  def createCachedSelector[S, R1, R2, R3, R4, R5, R6, T](
+  inline def createCachedSelector[S, R1, R2, R3, R4, R5, R6, T](
     selector1: Selector[S, R1],
     selector2: Selector[S, R2],
     selector3: Selector[S, R3],
@@ -2274,8 +2222,7 @@ object mod {
     ]
   ]]
   /* six selectors */
-  @scala.inline
-  def createCachedSelector[S, R1, R2, R3, R4, R5, R6, T](
+  inline def createCachedSelector[S, R1, R2, R3, R4, R5, R6, T](
     selectors: js.Tuple6[
       Selector[S, R1], 
       Selector[S, R2], 
@@ -2310,8 +2257,7 @@ object mod {
       Selector[S, R6]
     ]
   ]]
-  @scala.inline
-  def createCachedSelector[S, P, R1, R2, R3, R4, R5, R6, T](
+  inline def createCachedSelector[S, P, R1, R2, R3, R4, R5, R6, T](
     selector1: ParametricSelector[S, P, R1],
     selector2: ParametricSelector[S, P, R2],
     selector3: ParametricSelector[S, P, R3],
@@ -2347,8 +2293,7 @@ object mod {
     ]
   ]]
   /* seven selectors */
-  @scala.inline
-  def createCachedSelector[S, R1, R2, R3, R4, R5, R6, R7, T](
+  inline def createCachedSelector[S, R1, R2, R3, R4, R5, R6, R7, T](
     selector1: Selector[S, R1],
     selector2: Selector[S, R2],
     selector3: Selector[S, R3],
@@ -2412,8 +2357,7 @@ object mod {
     ]
   ]]
   /* seven selectors */
-  @scala.inline
-  def createCachedSelector[S, R1, R2, R3, R4, R5, R6, R7, T](
+  inline def createCachedSelector[S, R1, R2, R3, R4, R5, R6, R7, T](
     selectors: js.Tuple7[
       Selector[S, R1], 
       Selector[S, R2], 
@@ -2478,8 +2422,7 @@ object mod {
       Selector[S, R7]
     ]
   ]]
-  @scala.inline
-  def createCachedSelector[S, P, R1, R2, R3, R4, R5, R6, R7, T](
+  inline def createCachedSelector[S, P, R1, R2, R3, R4, R5, R6, R7, T](
     selector1: ParametricSelector[S, P, R1],
     selector2: ParametricSelector[S, P, R2],
     selector3: ParametricSelector[S, P, R3],
@@ -2545,8 +2488,7 @@ object mod {
     ]
   ]]
   /* eight selectors */
-  @scala.inline
-  def createCachedSelector[S, R1, R2, R3, R4, R5, R6, R7, R8, T](
+  inline def createCachedSelector[S, R1, R2, R3, R4, R5, R6, R7, R8, T](
     selector1: Selector[S, R1],
     selector2: Selector[S, R2],
     selector3: Selector[S, R3],
@@ -2616,8 +2558,7 @@ object mod {
     ]
   ]]
   /* eight selectors */
-  @scala.inline
-  def createCachedSelector[S, R1, R2, R3, R4, R5, R6, R7, R8, T](
+  inline def createCachedSelector[S, R1, R2, R3, R4, R5, R6, R7, R8, T](
     selectors: js.Tuple8[
       Selector[S, R1], 
       Selector[S, R2], 
@@ -2688,8 +2629,7 @@ object mod {
       Selector[S, R8]
     ]
   ]]
-  @scala.inline
-  def createCachedSelector[S, P, R1, R2, R3, R4, R5, R6, R7, R8, T](
+  inline def createCachedSelector[S, P, R1, R2, R3, R4, R5, R6, R7, R8, T](
     selector1: ParametricSelector[S, P, R1],
     selector2: ParametricSelector[S, P, R2],
     selector3: ParametricSelector[S, P, R3],
@@ -2761,8 +2701,7 @@ object mod {
     ]
   ]]
   /* nine selectors */
-  @scala.inline
-  def createCachedSelector[S, R1, R2, R3, R4, R5, R6, R7, R8, R9, T](
+  inline def createCachedSelector[S, R1, R2, R3, R4, R5, R6, R7, R8, R9, T](
     selector1: Selector[S, R1],
     selector2: Selector[S, R2],
     selector3: Selector[S, R3],
@@ -2838,8 +2777,7 @@ object mod {
     ]
   ]]
   /* nine selectors */
-  @scala.inline
-  def createCachedSelector[S, R1, R2, R3, R4, R5, R6, R7, R8, R9, T](
+  inline def createCachedSelector[S, R1, R2, R3, R4, R5, R6, R7, R8, R9, T](
     selectors: js.Tuple9[
       Selector[S, R1], 
       Selector[S, R2], 
@@ -2916,8 +2854,7 @@ object mod {
       Selector[S, R9]
     ]
   ]]
-  @scala.inline
-  def createCachedSelector[S, P, R1, R2, R3, R4, R5, R6, R7, R8, R9, T](
+  inline def createCachedSelector[S, P, R1, R2, R3, R4, R5, R6, R7, R8, R9, T](
     selector1: ParametricSelector[S, P, R1],
     selector2: ParametricSelector[S, P, R2],
     selector3: ParametricSelector[S, P, R3],
@@ -2995,8 +2932,7 @@ object mod {
     ]
   ]]
   /* ten selectors */
-  @scala.inline
-  def createCachedSelector[S, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, T](
+  inline def createCachedSelector[S, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, T](
     selector1: Selector[S, R1],
     selector2: Selector[S, R2],
     selector3: Selector[S, R3],
@@ -3078,8 +3014,7 @@ object mod {
     ]
   ]]
   /* ten selectors */
-  @scala.inline
-  def createCachedSelector[S, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, T](
+  inline def createCachedSelector[S, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, T](
     selectors: js.Tuple10[
       Selector[S, R1], 
       Selector[S, R2], 
@@ -3162,8 +3097,7 @@ object mod {
       Selector[S, R10]
     ]
   ]]
-  @scala.inline
-  def createCachedSelector[S, P, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, T](
+  inline def createCachedSelector[S, P, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, T](
     selector1: ParametricSelector[S, P, R1],
     selector2: ParametricSelector[S, P, R2],
     selector3: ParametricSelector[S, P, R3],
@@ -3247,8 +3181,7 @@ object mod {
     ]
   ]]
   /* eleven selectors */
-  @scala.inline
-  def createCachedSelector[S, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, T](
+  inline def createCachedSelector[S, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, T](
     selector1: Selector[S, R1],
     selector2: Selector[S, R2],
     selector3: Selector[S, R3],
@@ -3336,8 +3269,7 @@ object mod {
     ]
   ]]
   /* eleven selectors */
-  @scala.inline
-  def createCachedSelector[S, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, T](
+  inline def createCachedSelector[S, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, T](
     selectors: js.Tuple11[
       Selector[S, R1], 
       Selector[S, R2], 
@@ -3426,8 +3358,7 @@ object mod {
       Selector[S, R11]
     ]
   ]]
-  @scala.inline
-  def createCachedSelector[S, P, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, T](
+  inline def createCachedSelector[S, P, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, T](
     selector1: ParametricSelector[S, P, R1],
     selector2: ParametricSelector[S, P, R2],
     selector3: ParametricSelector[S, P, R3],
@@ -3517,8 +3448,7 @@ object mod {
     ]
   ]]
   /* twelve selectors */
-  @scala.inline
-  def createCachedSelector[S, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, T](
+  inline def createCachedSelector[S, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, T](
     selector1: Selector[S, R1],
     selector2: Selector[S, R2],
     selector3: Selector[S, R3],
@@ -3612,8 +3542,7 @@ object mod {
     ]
   ]]
   /* twelve selectors */
-  @scala.inline
-  def createCachedSelector[S, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, T](
+  inline def createCachedSelector[S, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, T](
     selectors: js.Tuple12[
       Selector[S, R1], 
       Selector[S, R2], 
@@ -3708,8 +3637,7 @@ object mod {
       Selector[S, R12]
     ]
   ]]
-  @scala.inline
-  def createCachedSelector[S, P, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, T](
+  inline def createCachedSelector[S, P, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, T](
     selector1: ParametricSelector[S, P, R1],
     selector2: ParametricSelector[S, P, R2],
     selector3: ParametricSelector[S, P, R3],
@@ -3805,21 +3733,17 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def createCachedSelector_S1P1R1T[S1, P1, R1, T](selector: ParametricSelector[S1, P1, R1], combiner: js.Function1[/* res */ R1, T]): OutputParametricCachedSelector[S1, P1, T, js.Function1[/* res */ R1, T], js.Array[ParametricSelector[S1, P1, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCachedSelector")(selector.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputParametricCachedSelector[S1, P1, T, js.Function1[/* res */ R1, T], js.Array[ParametricSelector[S1, P1, R1]]]]
+  inline def createCachedSelector_S1P1R1T[S1, P1, R1, T](selector: ParametricSelector[S1, P1, R1], combiner: js.Function1[/* res */ R1, T]): OutputParametricCachedSelector[S1, P1, T, js.Function1[/* res */ R1, T], js.Array[ParametricSelector[S1, P1, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCachedSelector")(selector.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputParametricCachedSelector[S1, P1, T, js.Function1[/* res */ R1, T], js.Array[ParametricSelector[S1, P1, R1]]]]
   
-  @scala.inline
-  def createCachedSelector_S1P1R1T_OutputParametricCachedSelector[S1, P1, R1, T](selectors: js.Array[ParametricSelector[S1, P1, R1]], combiner: js.Function1[/* res */ R1, T]): OutputParametricCachedSelector[S1, P1, T, js.Function1[/* res */ R1, T], js.Array[ParametricSelector[S1, P1, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCachedSelector")(selectors.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputParametricCachedSelector[S1, P1, T, js.Function1[/* res */ R1, T], js.Array[ParametricSelector[S1, P1, R1]]]]
+  inline def createCachedSelector_S1P1R1T_OutputParametricCachedSelector[S1, P1, R1, T](selectors: js.Array[ParametricSelector[S1, P1, R1]], combiner: js.Function1[/* res */ R1, T]): OutputParametricCachedSelector[S1, P1, T, js.Function1[/* res */ R1, T], js.Array[ParametricSelector[S1, P1, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCachedSelector")(selectors.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputParametricCachedSelector[S1, P1, T, js.Function1[/* res */ R1, T], js.Array[ParametricSelector[S1, P1, R1]]]]
   
   /*
     * Heterogeneous selectors, array argument
     */
   /* one selector */
-  @scala.inline
-  def createCachedSelector_S1R1T[S1, R1, T](selectors: js.Array[Selector[S1, R1]], combiner: js.Function1[/* res */ R1, T]): OutputCachedSelector[S1, T, js.Function1[/* res */ R1, T], js.Array[Selector[S1, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCachedSelector")(selectors.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputCachedSelector[S1, T, js.Function1[/* res */ R1, T], js.Array[Selector[S1, R1]]]]
+  inline def createCachedSelector_S1R1T[S1, R1, T](selectors: js.Array[Selector[S1, R1]], combiner: js.Function1[/* res */ R1, T]): OutputCachedSelector[S1, T, js.Function1[/* res */ R1, T], js.Array[Selector[S1, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCachedSelector")(selectors.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputCachedSelector[S1, T, js.Function1[/* res */ R1, T], js.Array[Selector[S1, R1]]]]
   
-  @scala.inline
-  def createCachedSelector_S1S2P1P2R1R2T[S1, S2, P1, P2, R1, R2, T](
+  inline def createCachedSelector_S1S2P1P2R1R2T[S1, S2, P1, P2, R1, R2, T](
     selector1: ParametricSelector[S1, P1, R1],
     selector2: ParametricSelector[S2, P2, R2],
     combiner: js.Function2[/* res1 */ R1, /* res2 */ R2, T]
@@ -3837,8 +3761,7 @@ object mod {
     js.Tuple2[ParametricSelector[S1, P1, R1], ParametricSelector[S2, P2, R2]]
   ]]
   
-  @scala.inline
-  def createCachedSelector_S1S2P1P2R1R2T_OutputParametricCachedSelector[S1, S2, P1, P2, R1, R2, T](
+  inline def createCachedSelector_S1S2P1P2R1R2T_OutputParametricCachedSelector[S1, S2, P1, P2, R1, R2, T](
     selectors: js.Tuple2[ParametricSelector[S1, P1, R1], ParametricSelector[S2, P2, R2]],
     combiner: js.Function2[/* res1 */ R1, /* res2 */ R2, T]
   ): OutputParametricCachedSelector[
@@ -3856,8 +3779,7 @@ object mod {
   ]]
   
   /* two selectors */
-  @scala.inline
-  def createCachedSelector_S1S2R1R2T[S1, S2, R1, R2, T](
+  inline def createCachedSelector_S1S2R1R2T[S1, S2, R1, R2, T](
     selector1: Selector[S1, R1],
     selector2: Selector[S2, R2],
     combiner: js.Function2[/* res1 */ R1, /* res2 */ R2, T]
@@ -3873,8 +3795,7 @@ object mod {
     js.Tuple2[Selector[S1, R1], Selector[S2, R2]]
   ]]
   /* two selectors */
-  @scala.inline
-  def createCachedSelector_S1S2R1R2T[S1, S2, R1, R2, T](
+  inline def createCachedSelector_S1S2R1R2T[S1, S2, R1, R2, T](
     selectors: js.Tuple2[Selector[S1, R1], Selector[S2, R2]],
     combiner: js.Function2[/* res1 */ R1, /* res2 */ R2, T]
   ): OutputCachedSelector[
@@ -3889,8 +3810,7 @@ object mod {
     js.Tuple2[Selector[S1, R1], Selector[S2, R2]]
   ]]
   
-  @scala.inline
-  def createCachedSelector_S1S2S3P1P2P3R1R2R3T[S1, S2, S3, P1, P2, P3, R1, R2, R3, T](
+  inline def createCachedSelector_S1S2S3P1P2P3R1R2R3T[S1, S2, S3, P1, P2, P3, R1, R2, R3, T](
     selector1: ParametricSelector[S1, P1, R1],
     selector2: ParametricSelector[S2, P2, R2],
     selector3: ParametricSelector[S3, P3, R3],
@@ -3917,8 +3837,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def createCachedSelector_S1S2S3P1P2P3R1R2R3T_OutputParametricCachedSelector[S1, S2, S3, P1, P2, P3, R1, R2, R3, T](
+  inline def createCachedSelector_S1S2S3P1P2P3R1R2R3T_OutputParametricCachedSelector[S1, S2, S3, P1, P2, P3, R1, R2, R3, T](
     selectors: js.Tuple3[
       ParametricSelector[S1, P1, R1], 
       ParametricSelector[S2, P2, R2], 
@@ -3948,8 +3867,7 @@ object mod {
   ]]
   
   /* three selectors */
-  @scala.inline
-  def createCachedSelector_S1S2S3R1R2R3T[S1, S2, S3, R1, R2, R3, T](
+  inline def createCachedSelector_S1S2S3R1R2R3T[S1, S2, S3, R1, R2, R3, T](
     selector1: Selector[S1, R1],
     selector2: Selector[S2, R2],
     selector3: Selector[S3, R3],
@@ -3966,8 +3884,7 @@ object mod {
     js.Tuple3[Selector[S1, R1], Selector[S2, R2], Selector[S3, R3]]
   ]]
   /* three selectors */
-  @scala.inline
-  def createCachedSelector_S1S2S3R1R2R3T[S1, S2, S3, R1, R2, R3, T](
+  inline def createCachedSelector_S1S2S3R1R2R3T[S1, S2, S3, R1, R2, R3, T](
     selectors: js.Tuple3[Selector[S1, R1], Selector[S2, R2], Selector[S3, R3]],
     combiner: js.Function3[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, T]
   ): OutputCachedSelector[
@@ -3982,8 +3899,7 @@ object mod {
     js.Tuple3[Selector[S1, R1], Selector[S2, R2], Selector[S3, R3]]
   ]]
   
-  @scala.inline
-  def createCachedSelector_S1S2S3S4P1P2P3P4R1R2R3R4T[S1, S2, S3, S4, P1, P2, P3, P4, R1, R2, R3, R4, T](
+  inline def createCachedSelector_S1S2S3S4P1P2P3P4R1R2R3R4T[S1, S2, S3, S4, P1, P2, P3, P4, R1, R2, R3, R4, T](
     selector1: ParametricSelector[S1, P1, R1],
     selector2: ParametricSelector[S2, P2, R2],
     selector3: ParametricSelector[S3, P3, R3],
@@ -4013,8 +3929,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def createCachedSelector_S1S2S3S4P1P2P3P4R1R2R3R4T_OutputParametricCachedSelector[S1, S2, S3, S4, P1, P2, P3, P4, R1, R2, R3, R4, T](
+  inline def createCachedSelector_S1S2S3S4P1P2P3P4R1R2R3R4T_OutputParametricCachedSelector[S1, S2, S3, S4, P1, P2, P3, P4, R1, R2, R3, R4, T](
     selectors: js.Tuple4[
       ParametricSelector[S1, P1, R1], 
       ParametricSelector[S2, P2, R2], 
@@ -4047,8 +3962,7 @@ object mod {
   ]]
   
   /* four selectors */
-  @scala.inline
-  def createCachedSelector_S1S2S3S4R1R2R3R4T[S1, S2, S3, S4, R1, R2, R3, R4, T](
+  inline def createCachedSelector_S1S2S3S4R1R2R3R4T[S1, S2, S3, S4, R1, R2, R3, R4, T](
     selector1: Selector[S1, R1],
     selector2: Selector[S2, R2],
     selector3: Selector[S3, R3],
@@ -4066,8 +3980,7 @@ object mod {
     js.Tuple4[Selector[S1, R1], Selector[S2, R2], Selector[S3, R3], Selector[S4, R4]]
   ]]
   /* four selectors */
-  @scala.inline
-  def createCachedSelector_S1S2S3S4R1R2R3R4T[S1, S2, S3, S4, R1, R2, R3, R4, T](
+  inline def createCachedSelector_S1S2S3S4R1R2R3R4T[S1, S2, S3, S4, R1, R2, R3, R4, T](
     selectors: js.Tuple4[Selector[S1, R1], Selector[S2, R2], Selector[S3, R3], Selector[S4, R4]],
     combiner: js.Function4[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, T]
   ): OutputCachedSelector[
@@ -4082,8 +3995,7 @@ object mod {
     js.Tuple4[Selector[S1, R1], Selector[S2, R2], Selector[S3, R3], Selector[S4, R4]]
   ]]
   
-  @scala.inline
-  def createCachedSelector_S1S2S3S4S5P1P2P3P4P5R1R2R3R4R5T[S1, S2, S3, S4, S5, P1, P2, P3, P4, P5, R1, R2, R3, R4, R5, T](
+  inline def createCachedSelector_S1S2S3S4S5P1P2P3P4P5R1R2R3R4R5T[S1, S2, S3, S4, S5, P1, P2, P3, P4, P5, R1, R2, R3, R4, R5, T](
     selector1: ParametricSelector[S1, P1, R1],
     selector2: ParametricSelector[S2, P2, R2],
     selector3: ParametricSelector[S3, P3, R3],
@@ -4116,8 +4028,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def createCachedSelector_S1S2S3S4S5P1P2P3P4P5R1R2R3R4R5T_OutputParametricCachedSelector[S1, S2, S3, S4, S5, P1, P2, P3, P4, P5, R1, R2, R3, R4, R5, T](
+  inline def createCachedSelector_S1S2S3S4S5P1P2P3P4P5R1R2R3R4R5T_OutputParametricCachedSelector[S1, S2, S3, S4, S5, P1, P2, P3, P4, P5, R1, R2, R3, R4, R5, T](
     selectors: js.Tuple5[
       ParametricSelector[S1, P1, R1], 
       ParametricSelector[S2, P2, R2], 
@@ -4153,8 +4064,7 @@ object mod {
   ]]
   
   /* five selectors */
-  @scala.inline
-  def createCachedSelector_S1S2S3S4S5R1R2R3R4R5T[S1, S2, S3, S4, S5, R1, R2, R3, R4, R5, T](
+  inline def createCachedSelector_S1S2S3S4S5R1R2R3R4R5T[S1, S2, S3, S4, S5, R1, R2, R3, R4, R5, T](
     selector1: Selector[S1, R1],
     selector2: Selector[S2, R2],
     selector3: Selector[S3, R3],
@@ -4173,8 +4083,7 @@ object mod {
     js.Tuple5[Selector[S1, R1], Selector[S2, R2], Selector[S3, R3], Selector[S4, R4], Selector[S5, R5]]
   ]]
   /* five selectors */
-  @scala.inline
-  def createCachedSelector_S1S2S3S4S5R1R2R3R4R5T[S1, S2, S3, S4, S5, R1, R2, R3, R4, R5, T](
+  inline def createCachedSelector_S1S2S3S4S5R1R2R3R4R5T[S1, S2, S3, S4, S5, R1, R2, R3, R4, R5, T](
     selectors: js.Tuple5[Selector[S1, R1], Selector[S2, R2], Selector[S3, R3], Selector[S4, R4], Selector[S5, R5]],
     combiner: js.Function5[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, /* res5 */ R5, T]
   ): OutputCachedSelector[
@@ -4189,8 +4098,7 @@ object mod {
     js.Tuple5[Selector[S1, R1], Selector[S2, R2], Selector[S3, R3], Selector[S4, R4], Selector[S5, R5]]
   ]]
   
-  @scala.inline
-  def createCachedSelector_S1S2S3S4S5S6P1P2P3P4P5P6R1R2R3R4R5R6T[S1, S2, S3, S4, S5, S6, P1, P2, P3, P4, P5, P6, R1, R2, R3, R4, R5, R6, T](
+  inline def createCachedSelector_S1S2S3S4S5S6P1P2P3P4P5P6R1R2R3R4R5R6T[S1, S2, S3, S4, S5, S6, P1, P2, P3, P4, P5, P6, R1, R2, R3, R4, R5, R6, T](
     selector1: ParametricSelector[S1, P1, R1],
     selector2: ParametricSelector[S2, P2, R2],
     selector3: ParametricSelector[S3, P3, R3],
@@ -4226,8 +4134,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def createCachedSelector_S1S2S3S4S5S6P1P2P3P4P5P6R1R2R3R4R5R6T_OutputParametricCachedSelector[S1, S2, S3, S4, S5, S6, P1, P2, P3, P4, P5, P6, R1, R2, R3, R4, R5, R6, T](
+  inline def createCachedSelector_S1S2S3S4S5S6P1P2P3P4P5P6R1R2R3R4R5R6T_OutputParametricCachedSelector[S1, S2, S3, S4, S5, S6, P1, P2, P3, P4, P5, P6, R1, R2, R3, R4, R5, R6, T](
     selectors: js.Tuple6[
       ParametricSelector[S1, P1, R1], 
       ParametricSelector[S2, P2, R2], 
@@ -4266,8 +4173,7 @@ object mod {
   ]]
   
   /* six selectors */
-  @scala.inline
-  def createCachedSelector_S1S2S3S4S5S6R1R2R3R4R5R6T[S1, S2, S3, S4, S5, S6, R1, R2, R3, R4, R5, R6, T](
+  inline def createCachedSelector_S1S2S3S4S5S6R1R2R3R4R5R6T[S1, S2, S3, S4, S5, S6, R1, R2, R3, R4, R5, R6, T](
     selector1: Selector[S1, R1],
     selector2: Selector[S2, R2],
     selector3: Selector[S3, R3],
@@ -4301,8 +4207,7 @@ object mod {
     ]
   ]]
   /* six selectors */
-  @scala.inline
-  def createCachedSelector_S1S2S3S4S5S6R1R2R3R4R5R6T[S1, S2, S3, S4, S5, S6, R1, R2, R3, R4, R5, R6, T](
+  inline def createCachedSelector_S1S2S3S4S5S6R1R2R3R4R5R6T[S1, S2, S3, S4, S5, S6, R1, R2, R3, R4, R5, R6, T](
     selectors: js.Tuple6[
       Selector[S1, R1], 
       Selector[S2, R2], 
@@ -4338,8 +4243,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def createCachedSelector_S1S2S3S4S5S6S7P1P2P3P4P5P6P7R1R2R3R4R5R6R7T[S1, S2, S3, S4, S5, S6, S7, P1, P2, P3, P4, P5, P6, P7, R1, R2, R3, R4, R5, R6, R7, T](
+  inline def createCachedSelector_S1S2S3S4S5S6S7P1P2P3P4P5P6P7R1R2R3R4R5R6R7T[S1, S2, S3, S4, S5, S6, S7, P1, P2, P3, P4, P5, P6, P7, R1, R2, R3, R4, R5, R6, R7, T](
     selector1: ParametricSelector[S1, P1, R1],
     selector2: ParametricSelector[S2, P2, R2],
     selector3: ParametricSelector[S3, P3, R3],
@@ -4405,8 +4309,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def createCachedSelector_S1S2S3S4S5S6S7P1P2P3P4P5P6P7R1R2R3R4R5R6R7T_OutputParametricCachedSelector[S1, S2, S3, S4, S5, S6, S7, P1, P2, P3, P4, P5, P6, P7, R1, R2, R3, R4, R5, R6, R7, T](
+  inline def createCachedSelector_S1S2S3S4S5S6S7P1P2P3P4P5P6P7R1R2R3R4R5R6R7T_OutputParametricCachedSelector[S1, S2, S3, S4, S5, S6, S7, P1, P2, P3, P4, P5, P6, P7, R1, R2, R3, R4, R5, R6, R7, T](
     selectors: js.Tuple7[
       ParametricSelector[S1, P1, R1], 
       ParametricSelector[S2, P2, R2], 
@@ -4475,8 +4378,7 @@ object mod {
   ]]
   
   /* seven selectors */
-  @scala.inline
-  def createCachedSelector_S1S2S3S4S5S6S7R1R2R3R4R5R6R7T[S1, S2, S3, S4, S5, S6, S7, R1, R2, R3, R4, R5, R6, R7, T](
+  inline def createCachedSelector_S1S2S3S4S5S6S7R1R2R3R4R5R6R7T[S1, S2, S3, S4, S5, S6, S7, R1, R2, R3, R4, R5, R6, R7, T](
     selector1: Selector[S1, R1],
     selector2: Selector[S2, R2],
     selector3: Selector[S3, R3],
@@ -4540,8 +4442,7 @@ object mod {
     ]
   ]]
   /* seven selectors */
-  @scala.inline
-  def createCachedSelector_S1S2S3S4S5S6S7R1R2R3R4R5R6R7T[S1, S2, S3, S4, S5, S6, S7, R1, R2, R3, R4, R5, R6, R7, T](
+  inline def createCachedSelector_S1S2S3S4S5S6S7R1R2R3R4R5R6R7T[S1, S2, S3, S4, S5, S6, S7, R1, R2, R3, R4, R5, R6, R7, T](
     selectors: js.Tuple7[
       Selector[S1, R1], 
       Selector[S2, R2], 
@@ -4607,8 +4508,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def createCachedSelector_S1S2S3S4S5S6S7S8P1P2P3P4P5P6P7P8R1R2R3R4R5R6R7R8T[S1, S2, S3, S4, S5, S6, S7, S8, P1, P2, P3, P4, P5, P6, P7, P8, R1, R2, R3, R4, R5, R6, R7, R8, T](
+  inline def createCachedSelector_S1S2S3S4S5S6S7S8P1P2P3P4P5P6P7P8R1R2R3R4R5R6R7R8T[S1, S2, S3, S4, S5, S6, S7, S8, P1, P2, P3, P4, P5, P6, P7, P8, R1, R2, R3, R4, R5, R6, R7, R8, T](
     selector1: ParametricSelector[S1, P1, R1],
     selector2: ParametricSelector[S2, P2, R2],
     selector3: ParametricSelector[S3, P3, R3],
@@ -4680,8 +4580,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def createCachedSelector_S1S2S3S4S5S6S7S8P1P2P3P4P5P6P7P8R1R2R3R4R5R6R7R8T_OutputParametricCachedSelector[S1, S2, S3, S4, S5, S6, S7, S8, P1, P2, P3, P4, P5, P6, P7, P8, R1, R2, R3, R4, R5, R6, R7, R8, T](
+  inline def createCachedSelector_S1S2S3S4S5S6S7S8P1P2P3P4P5P6P7P8R1R2R3R4R5R6R7R8T_OutputParametricCachedSelector[S1, S2, S3, S4, S5, S6, S7, S8, P1, P2, P3, P4, P5, P6, P7, P8, R1, R2, R3, R4, R5, R6, R7, R8, T](
     selectors: js.Tuple8[
       ParametricSelector[S1, P1, R1], 
       ParametricSelector[S2, P2, R2], 
@@ -4756,8 +4655,7 @@ object mod {
   ]]
   
   /* eight selectors */
-  @scala.inline
-  def createCachedSelector_S1S2S3S4S5S6S7S8R1R2R3R4R5R6R7R8T[S1, S2, S3, S4, S5, S6, S7, S8, R1, R2, R3, R4, R5, R6, R7, R8, T](
+  inline def createCachedSelector_S1S2S3S4S5S6S7S8R1R2R3R4R5R6R7R8T[S1, S2, S3, S4, S5, S6, S7, S8, R1, R2, R3, R4, R5, R6, R7, R8, T](
     selector1: Selector[S1, R1],
     selector2: Selector[S2, R2],
     selector3: Selector[S3, R3],
@@ -4827,8 +4725,7 @@ object mod {
     ]
   ]]
   /* eight selectors */
-  @scala.inline
-  def createCachedSelector_S1S2S3S4S5S6S7S8R1R2R3R4R5R6R7R8T[S1, S2, S3, S4, S5, S6, S7, S8, R1, R2, R3, R4, R5, R6, R7, R8, T](
+  inline def createCachedSelector_S1S2S3S4S5S6S7S8R1R2R3R4R5R6R7R8T[S1, S2, S3, S4, S5, S6, S7, S8, R1, R2, R3, R4, R5, R6, R7, R8, T](
     selectors: js.Tuple8[
       Selector[S1, R1], 
       Selector[S2, R2], 
@@ -4900,8 +4797,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def createCachedSelector_S1S2S3S4S5S6S7S8S9P1P2P3P4P5P6P7P8P9PR1R2R3R4R5R6R7R8R9T_OutputParametricCachedSelector[S1, S2, S3, S4, S5, S6, S7, S8, S9, P1, P2, P3, P4, P5, P6, P7, P8, P9, P, R1, R2, R3, R4, R5, R6, R7, R8, R9, T](
+  inline def createCachedSelector_S1S2S3S4S5S6S7S8S9P1P2P3P4P5P6P7P8P9PR1R2R3R4R5R6R7R8R9T_OutputParametricCachedSelector[S1, S2, S3, S4, S5, S6, S7, S8, S9, P1, P2, P3, P4, P5, P6, P7, P8, P9, P, R1, R2, R3, R4, R5, R6, R7, R8, R9, T](
     selectors: js.Tuple9[
       ParametricSelector[S1, P1, R1], 
       ParametricSelector[S2, P2, R2], 
@@ -4981,8 +4877,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def createCachedSelector_S1S2S3S4S5S6S7S8S9P1P2P3P4P5P6P7P8P9R1R2R3R4R5R6R7R8R9T[S1, S2, S3, S4, S5, S6, S7, S8, S9, P1, P2, P3, P4, P5, P6, P7, P8, P9, R1, R2, R3, R4, R5, R6, R7, R8, R9, T](
+  inline def createCachedSelector_S1S2S3S4S5S6S7S8S9P1P2P3P4P5P6P7P8P9R1R2R3R4R5R6R7R8R9T[S1, S2, S3, S4, S5, S6, S7, S8, S9, P1, P2, P3, P4, P5, P6, P7, P8, P9, R1, R2, R3, R4, R5, R6, R7, R8, R9, T](
     selector1: ParametricSelector[S1, P1, R1],
     selector2: ParametricSelector[S2, P2, R2],
     selector3: ParametricSelector[S3, P3, R3],
@@ -5061,8 +4956,7 @@ object mod {
   ]]
   
   /* nine selectors */
-  @scala.inline
-  def createCachedSelector_S1S2S3S4S5S6S7S8S9R1R2R3R4R5R6R7R8R9T[S1, S2, S3, S4, S5, S6, S7, S8, S9, R1, R2, R3, R4, R5, R6, R7, R8, R9, T](
+  inline def createCachedSelector_S1S2S3S4S5S6S7S8S9R1R2R3R4R5R6R7R8R9T[S1, S2, S3, S4, S5, S6, S7, S8, S9, R1, R2, R3, R4, R5, R6, R7, R8, R9, T](
     selector1: Selector[S1, R1],
     selector2: Selector[S2, R2],
     selector3: Selector[S3, R3],
@@ -5138,8 +5032,7 @@ object mod {
     ]
   ]]
   /* nine selectors */
-  @scala.inline
-  def createCachedSelector_S1S2S3S4S5S6S7S8S9R1R2R3R4R5R6R7R8R9T[S1, S2, S3, S4, S5, S6, S7, S8, S9, R1, R2, R3, R4, R5, R6, R7, R8, R9, T](
+  inline def createCachedSelector_S1S2S3S4S5S6S7S8S9R1R2R3R4R5R6R7R8R9T[S1, S2, S3, S4, S5, S6, S7, S8, S9, R1, R2, R3, R4, R5, R6, R7, R8, R9, T](
     selectors: js.Tuple9[
       Selector[S1, R1], 
       Selector[S2, R2], 
@@ -5217,8 +5110,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def createCachedSelector_S1S2S3S4S5S6S7S8S9S10P1P2P3P4P5P6P7P8P9P10R1R2R3R4R5R6R7R8R9R10T[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, T](
+  inline def createCachedSelector_S1S2S3S4S5S6S7S8S9S10P1P2P3P4P5P6P7P8P9P10R1R2R3R4R5R6R7R8R9R10T[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, T](
     selector1: ParametricSelector[S1, P1, R1],
     selector2: ParametricSelector[S2, P2, R2],
     selector3: ParametricSelector[S3, P3, R3],
@@ -5302,8 +5194,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def createCachedSelector_S1S2S3S4S5S6S7S8S9S10P1P2P3P4P5P6P7P8P9P10R1R2R3R4R5R6R7R8R9R10T_OutputParametricCachedSelector[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, T](
+  inline def createCachedSelector_S1S2S3S4S5S6S7S8S9S10P1P2P3P4P5P6P7P8P9P10R1R2R3R4R5R6R7R8R9R10T_OutputParametricCachedSelector[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, T](
     selectors: js.Tuple10[
       ParametricSelector[S1, P1, R1], 
       ParametricSelector[S2, P2, R2], 
@@ -5390,8 +5281,7 @@ object mod {
   ]]
   
   /* ten selectors */
-  @scala.inline
-  def createCachedSelector_S1S2S3S4S5S6S7S8S9S10R1R2R3R4R5R6R7R8R9R10T[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, T](
+  inline def createCachedSelector_S1S2S3S4S5S6S7S8S9S10R1R2R3R4R5R6R7R8R9R10T[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, T](
     selector1: Selector[S1, R1],
     selector2: Selector[S2, R2],
     selector3: Selector[S3, R3],
@@ -5473,8 +5363,7 @@ object mod {
     ]
   ]]
   /* ten selectors */
-  @scala.inline
-  def createCachedSelector_S1S2S3S4S5S6S7S8S9S10R1R2R3R4R5R6R7R8R9R10T[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, T](
+  inline def createCachedSelector_S1S2S3S4S5S6S7S8S9S10R1R2R3R4R5R6R7R8R9R10T[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, T](
     selectors: js.Tuple10[
       Selector[S1, R1], 
       Selector[S2, R2], 
@@ -5558,8 +5447,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def createCachedSelector_S1S2S3S4S5S6S7S8S9S10S11P1P2P3P4P5P6P7P8P9P10P11R1R2R3R4R5R6R7R8R9R10R11T[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P11, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, T](
+  inline def createCachedSelector_S1S2S3S4S5S6S7S8S9S10S11P1P2P3P4P5P6P7P8P9P10P11R1R2R3R4R5R6R7R8R9R10R11T[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P11, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, T](
     selector1: ParametricSelector[S1, P1, R1],
     selector2: ParametricSelector[S2, P2, R2],
     selector3: ParametricSelector[S3, P3, R3],
@@ -5649,8 +5537,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def createCachedSelector_S1S2S3S4S5S6S7S8S9S10S11P1P2P3P4P5P6P7P8P9P10P11R1R2R3R4R5R6R7R8R9R10R11T_OutputParametricCachedSelector[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P11, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, T](
+  inline def createCachedSelector_S1S2S3S4S5S6S7S8S9S10S11P1P2P3P4P5P6P7P8P9P10P11R1R2R3R4R5R6R7R8R9R10R11T_OutputParametricCachedSelector[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P11, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, T](
     selectors: js.Tuple11[
       ParametricSelector[S1, P1, R1], 
       ParametricSelector[S2, P2, R2], 
@@ -5743,8 +5630,7 @@ object mod {
   ]]
   
   /* eleven selectors */
-  @scala.inline
-  def createCachedSelector_S1S2S3S4S5S6S7S8S9S10S11R1R2R3R4R5R6R7R8R9R10R11T[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, T](
+  inline def createCachedSelector_S1S2S3S4S5S6S7S8S9S10S11R1R2R3R4R5R6R7R8R9R10R11T[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, T](
     selector1: Selector[S1, R1],
     selector2: Selector[S2, R2],
     selector3: Selector[S3, R3],
@@ -5832,8 +5718,7 @@ object mod {
     ]
   ]]
   /* eleven selectors */
-  @scala.inline
-  def createCachedSelector_S1S2S3S4S5S6S7S8S9S10S11R1R2R3R4R5R6R7R8R9R10R11T[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, T](
+  inline def createCachedSelector_S1S2S3S4S5S6S7S8S9S10S11R1R2R3R4R5R6R7R8R9R10R11T[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, T](
     selectors: js.Tuple11[
       Selector[S1, R1], 
       Selector[S2, R2], 
@@ -5923,8 +5808,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def createCachedSelector_S1S2S3S4S5S6S7S8S9S10S11S12P1P2P3P4P5P6P7P8P9P10P11P12R1R2R3R4R5R6R7R8R9R10R11R12T[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P11, P12, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, T](
+  inline def createCachedSelector_S1S2S3S4S5S6S7S8S9S10S11S12P1P2P3P4P5P6P7P8P9P10P11P12R1R2R3R4R5R6R7R8R9R10R11R12T[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P11, P12, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, T](
     selector1: ParametricSelector[S1, P1, R1],
     selector2: ParametricSelector[S2, P2, R2],
     selector3: ParametricSelector[S3, P3, R3],
@@ -6020,8 +5904,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def createCachedSelector_S1S2S3S4S5S6S7S8S9S10S11S12P1P2P3P4P5P6P7P8P9P10P11P12R1R2R3R4R5R6R7R8R9R10R11R12T_OutputParametricCachedSelector[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P11, P12, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, T](
+  inline def createCachedSelector_S1S2S3S4S5S6S7S8S9S10S11S12P1P2P3P4P5P6P7P8P9P10P11P12R1R2R3R4R5R6R7R8R9R10R11R12T_OutputParametricCachedSelector[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P11, P12, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, T](
     selectors: js.Tuple12[
       ParametricSelector[S1, P1, R1], 
       ParametricSelector[S2, P2, R2], 
@@ -6120,8 +6003,7 @@ object mod {
   ]]
   
   /* twelve selectors */
-  @scala.inline
-  def createCachedSelector_S1S2S3S4S5S6S7S8S9S10S11S12R1R2R3R4R5R6R7R8R9R10R11R12T[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, T](
+  inline def createCachedSelector_S1S2S3S4S5S6S7S8S9S10S11S12R1R2R3R4R5R6R7R8R9R10R11R12T[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, T](
     selector1: Selector[S1, R1],
     selector2: Selector[S2, R2],
     selector3: Selector[S3, R3],
@@ -6215,8 +6097,7 @@ object mod {
     ]
   ]]
   /* twelve selectors */
-  @scala.inline
-  def createCachedSelector_S1S2S3S4S5S6S7S8S9S10S11S12R1R2R3R4R5R6R7R8R9R10R11R12T[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, T](
+  inline def createCachedSelector_S1S2S3S4S5S6S7S8S9S10S11S12R1R2R3R4R5R6R7R8R9R10R11R12T[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, T](
     selectors: js.Tuple12[
       Selector[S1, R1], 
       Selector[S2, R2], 
@@ -6312,8 +6193,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def createCachedSelector_SPR1R2R3R4R5R6R7R8R9R10R11R12T_OutputParametricCachedSelector[S, P, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, T](
+  inline def createCachedSelector_SPR1R2R3R4R5R6R7R8R9R10R11R12T_OutputParametricCachedSelector[S, P, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, T](
     selectors: js.Tuple12[
       ParametricSelector[S, P, R1], 
       ParametricSelector[S, P, R2], 
@@ -6411,8 +6291,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def createCachedSelector_SPR1R2R3R4R5R6R7R8R9R10R11T_OutputParametricCachedSelector[S, P, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, T](
+  inline def createCachedSelector_SPR1R2R3R4R5R6R7R8R9R10R11T_OutputParametricCachedSelector[S, P, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, T](
     selectors: js.Tuple11[
       ParametricSelector[S, P, R1], 
       ParametricSelector[S, P, R2], 
@@ -6504,8 +6383,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def createCachedSelector_SPR1R2R3R4R5R6R7R8R9R10T_OutputParametricCachedSelector[S, P, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, T](
+  inline def createCachedSelector_SPR1R2R3R4R5R6R7R8R9R10T_OutputParametricCachedSelector[S, P, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, T](
     selectors: js.Tuple10[
       ParametricSelector[S, P, R1], 
       ParametricSelector[S, P, R2], 
@@ -6591,8 +6469,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def createCachedSelector_SPR1R2R3R4R5R6R7R8R9T_OutputParametricCachedSelector[S, P, R1, R2, R3, R4, R5, R6, R7, R8, R9, T](
+  inline def createCachedSelector_SPR1R2R3R4R5R6R7R8R9T_OutputParametricCachedSelector[S, P, R1, R2, R3, R4, R5, R6, R7, R8, R9, T](
     selectors: js.Tuple9[
       ParametricSelector[S, P, R1], 
       ParametricSelector[S, P, R2], 
@@ -6672,8 +6549,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def createCachedSelector_SPR1R2R3R4R5R6R7R8T_OutputParametricCachedSelector[S, P, R1, R2, R3, R4, R5, R6, R7, R8, T](
+  inline def createCachedSelector_SPR1R2R3R4R5R6R7R8T_OutputParametricCachedSelector[S, P, R1, R2, R3, R4, R5, R6, R7, R8, T](
     selectors: js.Tuple8[
       ParametricSelector[S, P, R1], 
       ParametricSelector[S, P, R2], 
@@ -6747,8 +6623,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def createCachedSelector_SPR1R2R3R4R5R6R7T_OutputParametricCachedSelector[S, P, R1, R2, R3, R4, R5, R6, R7, T](
+  inline def createCachedSelector_SPR1R2R3R4R5R6R7T_OutputParametricCachedSelector[S, P, R1, R2, R3, R4, R5, R6, R7, T](
     selectors: js.Tuple7[
       ParametricSelector[S, P, R1], 
       ParametricSelector[S, P, R2], 
@@ -6816,8 +6691,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def createCachedSelector_SPR1R2R3R4R5R6T_OutputParametricCachedSelector[S, P, R1, R2, R3, R4, R5, R6, T](
+  inline def createCachedSelector_SPR1R2R3R4R5R6T_OutputParametricCachedSelector[S, P, R1, R2, R3, R4, R5, R6, T](
     selectors: js.Tuple6[
       ParametricSelector[S, P, R1], 
       ParametricSelector[S, P, R2], 
@@ -6855,8 +6729,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def createCachedSelector_SPR1R2R3R4R5T_OutputParametricCachedSelector[S, P, R1, R2, R3, R4, R5, T](
+  inline def createCachedSelector_SPR1R2R3R4R5T_OutputParametricCachedSelector[S, P, R1, R2, R3, R4, R5, T](
     selectors: js.Tuple5[
       ParametricSelector[S, P, R1], 
       ParametricSelector[S, P, R2], 
@@ -6891,8 +6764,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def createCachedSelector_SPR1R2R3R4T_OutputParametricCachedSelector[S, P, R1, R2, R3, R4, T](
+  inline def createCachedSelector_SPR1R2R3R4T_OutputParametricCachedSelector[S, P, R1, R2, R3, R4, T](
     selectors: js.Tuple4[
       ParametricSelector[S, P, R1], 
       ParametricSelector[S, P, R2], 
@@ -6924,8 +6796,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def createCachedSelector_SPR1R2R3T_OutputParametricCachedSelector[S, P, R1, R2, R3, T](
+  inline def createCachedSelector_SPR1R2R3T_OutputParametricCachedSelector[S, P, R1, R2, R3, T](
     selectors: js.Tuple3[
       ParametricSelector[S, P, R1], 
       ParametricSelector[S, P, R2], 
@@ -6954,8 +6825,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def createCachedSelector_SPR1R2T_OutputParametricCachedSelector[S, P, R1, R2, T](
+  inline def createCachedSelector_SPR1R2T_OutputParametricCachedSelector[S, P, R1, R2, T](
     selectors: js.Tuple2[ParametricSelector[S, P, R1], ParametricSelector[S, P, R2]],
     combiner: js.Function2[/* res1 */ R1, /* res2 */ R2, T]
   ): OutputParametricCachedSelector[
@@ -6972,30 +6842,24 @@ object mod {
     js.Tuple2[ParametricSelector[S, P, R1], ParametricSelector[S, P, R2]]
   ]]
   
-  @scala.inline
-  def createCachedSelector_SPR1T_OutputParametricCachedSelector[S, P, R1, T](selectors: js.Array[ParametricSelector[S, P, R1]], combiner: js.Function1[/* res */ R1, T]): OutputParametricCachedSelector[S, P, T, js.Function1[/* res */ R1, T], js.Array[ParametricSelector[S, P, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCachedSelector")(selectors.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputParametricCachedSelector[S, P, T, js.Function1[/* res */ R1, T], js.Array[ParametricSelector[S, P, R1]]]]
+  inline def createCachedSelector_SPR1T_OutputParametricCachedSelector[S, P, R1, T](selectors: js.Array[ParametricSelector[S, P, R1]], combiner: js.Function1[/* res */ R1, T]): OutputParametricCachedSelector[S, P, T, js.Function1[/* res */ R1, T], js.Array[ParametricSelector[S, P, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCachedSelector")(selectors.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputParametricCachedSelector[S, P, T, js.Function1[/* res */ R1, T], js.Array[ParametricSelector[S, P, R1]]]]
   
-  @scala.inline
-  def createCachedSelector_SPRT_OutputParametricCachedSelector[S, P, R, T](selectors: js.Array[ParametricSelector[S, P, R]], combiner: js.Function1[/* repeated */ R, T]): OutputParametricCachedSelector[S, P, T, js.Function1[/* repeated */ R, T], js.Array[ParametricSelector[S, P, R]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCachedSelector")(selectors.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputParametricCachedSelector[S, P, T, js.Function1[/* repeated */ R, T], js.Array[ParametricSelector[S, P, R]]]]
+  inline def createCachedSelector_SPRT_OutputParametricCachedSelector[S, P, R, T](selectors: js.Array[ParametricSelector[S, P, R]], combiner: js.Function1[/* repeated */ R, T]): OutputParametricCachedSelector[S, P, T, js.Function1[/* repeated */ R, T], js.Array[ParametricSelector[S, P, R]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCachedSelector")(selectors.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputParametricCachedSelector[S, P, T, js.Function1[/* repeated */ R, T], js.Array[ParametricSelector[S, P, R]]]]
   
   /*
     * Homogeneous selectors, parameter types
     */
   /* one selector */
-  @scala.inline
-  def createCachedSelector_SR1T[S, R1, T](selector: Selector[S, R1], combiner: js.Function1[/* res */ R1, T]): OutputCachedSelector[S, T, js.Function1[/* res */ R1, T], js.Array[Selector[S, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCachedSelector")(selector.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputCachedSelector[S, T, js.Function1[/* res */ R1, T], js.Array[Selector[S, R1]]]]
+  inline def createCachedSelector_SR1T[S, R1, T](selector: Selector[S, R1], combiner: js.Function1[/* res */ R1, T]): OutputCachedSelector[S, T, js.Function1[/* res */ R1, T], js.Array[Selector[S, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCachedSelector")(selector.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputCachedSelector[S, T, js.Function1[/* res */ R1, T], js.Array[Selector[S, R1]]]]
   
   /*
     * Any number of uniform selectors
     */
-  @scala.inline
-  def createCachedSelector_SRT[S, R, T](selectors: js.Array[Selector[S, R]], combiner: js.Function1[/* repeated */ R, T]): OutputCachedSelector[S, T, js.Function1[/* repeated */ R, T], js.Array[Selector[S, R]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCachedSelector")(selectors.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputCachedSelector[S, T, js.Function1[/* repeated */ R, T], js.Array[Selector[S, R]]]]
+  inline def createCachedSelector_SRT[S, R, T](selectors: js.Array[Selector[S, R]], combiner: js.Function1[/* repeated */ R, T]): OutputCachedSelector[S, T, js.Function1[/* repeated */ R, T], js.Array[Selector[S, R]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCachedSelector")(selectors.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputCachedSelector[S, T, js.Function1[/* repeated */ R, T], js.Array[Selector[S, R]]]]
   
-  @scala.inline
-  def createStructuredCachedSelector[T /* <: StringDictionary[js.Function1[/* state */ js.Any, js.Any]] */, S, R](selectors: T): OutputCachedSelector[S, R, js.Function1[/* repeated */ Values[R], R], js.Array[Selector[S, Values[R]]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStructuredCachedSelector")(selectors.asInstanceOf[js.Any]).asInstanceOf[OutputCachedSelector[S, R, js.Function1[/* repeated */ Values[R], R], js.Array[Selector[S, Values[R]]]]]
+  inline def createStructuredCachedSelector[T /* <: StringDictionary[js.Function1[/* state */ js.Any, js.Any]] */, S, R](selectors: T): OutputCachedSelector[S, R, js.Function1[/* repeated */ Values[R], R], js.Array[Selector[S, Values[R]]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStructuredCachedSelector")(selectors.asInstanceOf[js.Any]).asInstanceOf[OutputCachedSelector[S, R, js.Function1[/* repeated */ Values[R], R], js.Array[Selector[S, Values[R]]]]]
   
-  @scala.inline
-  def createStructuredCachedSelector_T_StringDictionaryFunction3AnyAnyAnyAnySPR_OutputParametricCachedSelector[T /* <: StringDictionary[
+  inline def createStructuredCachedSelector_T_StringDictionaryFunction3AnyAnyAnyAnySPR_OutputParametricCachedSelector[T /* <: StringDictionary[
     js.Function3[/* state */ js.Any, /* props */ js.Any, /* repeated */ js.Any, js.Any]
   ] */, S, P, R](selectors: T): OutputParametricCachedSelector[
     S, 
@@ -7011,21 +6875,17 @@ object mod {
     js.Array[ParametricSelector[S, P, Values[R]]]
   ]]
   
-  @scala.inline
-  def default_S1P1R1T[S1, P1, R1, T](selector: ParametricSelector[S1, P1, R1], combiner: js.Function1[/* res */ R1, T]): OutputParametricCachedSelector[S1, P1, T, js.Function1[/* res */ R1, T], js.Array[ParametricSelector[S1, P1, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputParametricCachedSelector[S1, P1, T, js.Function1[/* res */ R1, T], js.Array[ParametricSelector[S1, P1, R1]]]]
+  inline def default_S1P1R1T[S1, P1, R1, T](selector: ParametricSelector[S1, P1, R1], combiner: js.Function1[/* res */ R1, T]): OutputParametricCachedSelector[S1, P1, T, js.Function1[/* res */ R1, T], js.Array[ParametricSelector[S1, P1, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputParametricCachedSelector[S1, P1, T, js.Function1[/* res */ R1, T], js.Array[ParametricSelector[S1, P1, R1]]]]
   
-  @scala.inline
-  def default_S1P1R1T_OutputParametricCachedSelector[S1, P1, R1, T](selectors: js.Array[ParametricSelector[S1, P1, R1]], combiner: js.Function1[/* res */ R1, T]): OutputParametricCachedSelector[S1, P1, T, js.Function1[/* res */ R1, T], js.Array[ParametricSelector[S1, P1, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selectors.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputParametricCachedSelector[S1, P1, T, js.Function1[/* res */ R1, T], js.Array[ParametricSelector[S1, P1, R1]]]]
+  inline def default_S1P1R1T_OutputParametricCachedSelector[S1, P1, R1, T](selectors: js.Array[ParametricSelector[S1, P1, R1]], combiner: js.Function1[/* res */ R1, T]): OutputParametricCachedSelector[S1, P1, T, js.Function1[/* res */ R1, T], js.Array[ParametricSelector[S1, P1, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selectors.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputParametricCachedSelector[S1, P1, T, js.Function1[/* res */ R1, T], js.Array[ParametricSelector[S1, P1, R1]]]]
   
   /*
     * Heterogeneous selectors, array argument
     */
   /* one selector */
-  @scala.inline
-  def default_S1R1T[S1, R1, T](selectors: js.Array[Selector[S1, R1]], combiner: js.Function1[/* res */ R1, T]): OutputCachedSelector[S1, T, js.Function1[/* res */ R1, T], js.Array[Selector[S1, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selectors.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputCachedSelector[S1, T, js.Function1[/* res */ R1, T], js.Array[Selector[S1, R1]]]]
+  inline def default_S1R1T[S1, R1, T](selectors: js.Array[Selector[S1, R1]], combiner: js.Function1[/* res */ R1, T]): OutputCachedSelector[S1, T, js.Function1[/* res */ R1, T], js.Array[Selector[S1, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selectors.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputCachedSelector[S1, T, js.Function1[/* res */ R1, T], js.Array[Selector[S1, R1]]]]
   
-  @scala.inline
-  def default_S1S2P1P2R1R2T[S1, S2, P1, P2, R1, R2, T](
+  inline def default_S1S2P1P2R1R2T[S1, S2, P1, P2, R1, R2, T](
     selector1: ParametricSelector[S1, P1, R1],
     selector2: ParametricSelector[S2, P2, R2],
     combiner: js.Function2[/* res1 */ R1, /* res2 */ R2, T]
@@ -7043,8 +6903,7 @@ object mod {
     js.Tuple2[ParametricSelector[S1, P1, R1], ParametricSelector[S2, P2, R2]]
   ]]
   
-  @scala.inline
-  def default_S1S2P1P2R1R2T_OutputParametricCachedSelector[S1, S2, P1, P2, R1, R2, T](
+  inline def default_S1S2P1P2R1R2T_OutputParametricCachedSelector[S1, S2, P1, P2, R1, R2, T](
     selectors: js.Tuple2[ParametricSelector[S1, P1, R1], ParametricSelector[S2, P2, R2]],
     combiner: js.Function2[/* res1 */ R1, /* res2 */ R2, T]
   ): OutputParametricCachedSelector[
@@ -7062,8 +6921,7 @@ object mod {
   ]]
   
   /* two selectors */
-  @scala.inline
-  def default_S1S2R1R2T[S1, S2, R1, R2, T](
+  inline def default_S1S2R1R2T[S1, S2, R1, R2, T](
     selector1: Selector[S1, R1],
     selector2: Selector[S2, R2],
     combiner: js.Function2[/* res1 */ R1, /* res2 */ R2, T]
@@ -7079,8 +6937,7 @@ object mod {
     js.Tuple2[Selector[S1, R1], Selector[S2, R2]]
   ]]
   /* two selectors */
-  @scala.inline
-  def default_S1S2R1R2T[S1, S2, R1, R2, T](
+  inline def default_S1S2R1R2T[S1, S2, R1, R2, T](
     selectors: js.Tuple2[Selector[S1, R1], Selector[S2, R2]],
     combiner: js.Function2[/* res1 */ R1, /* res2 */ R2, T]
   ): OutputCachedSelector[
@@ -7095,8 +6952,7 @@ object mod {
     js.Tuple2[Selector[S1, R1], Selector[S2, R2]]
   ]]
   
-  @scala.inline
-  def default_S1S2S3P1P2P3R1R2R3T[S1, S2, S3, P1, P2, P3, R1, R2, R3, T](
+  inline def default_S1S2S3P1P2P3R1R2R3T[S1, S2, S3, P1, P2, P3, R1, R2, R3, T](
     selector1: ParametricSelector[S1, P1, R1],
     selector2: ParametricSelector[S2, P2, R2],
     selector3: ParametricSelector[S3, P3, R3],
@@ -7123,8 +6979,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def default_S1S2S3P1P2P3R1R2R3T_OutputParametricCachedSelector[S1, S2, S3, P1, P2, P3, R1, R2, R3, T](
+  inline def default_S1S2S3P1P2P3R1R2R3T_OutputParametricCachedSelector[S1, S2, S3, P1, P2, P3, R1, R2, R3, T](
     selectors: js.Tuple3[
       ParametricSelector[S1, P1, R1], 
       ParametricSelector[S2, P2, R2], 
@@ -7154,8 +7009,7 @@ object mod {
   ]]
   
   /* three selectors */
-  @scala.inline
-  def default_S1S2S3R1R2R3T[S1, S2, S3, R1, R2, R3, T](
+  inline def default_S1S2S3R1R2R3T[S1, S2, S3, R1, R2, R3, T](
     selector1: Selector[S1, R1],
     selector2: Selector[S2, R2],
     selector3: Selector[S3, R3],
@@ -7172,8 +7026,7 @@ object mod {
     js.Tuple3[Selector[S1, R1], Selector[S2, R2], Selector[S3, R3]]
   ]]
   /* three selectors */
-  @scala.inline
-  def default_S1S2S3R1R2R3T[S1, S2, S3, R1, R2, R3, T](
+  inline def default_S1S2S3R1R2R3T[S1, S2, S3, R1, R2, R3, T](
     selectors: js.Tuple3[Selector[S1, R1], Selector[S2, R2], Selector[S3, R3]],
     combiner: js.Function3[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, T]
   ): OutputCachedSelector[
@@ -7188,8 +7041,7 @@ object mod {
     js.Tuple3[Selector[S1, R1], Selector[S2, R2], Selector[S3, R3]]
   ]]
   
-  @scala.inline
-  def default_S1S2S3S4P1P2P3P4R1R2R3R4T[S1, S2, S3, S4, P1, P2, P3, P4, R1, R2, R3, R4, T](
+  inline def default_S1S2S3S4P1P2P3P4R1R2R3R4T[S1, S2, S3, S4, P1, P2, P3, P4, R1, R2, R3, R4, T](
     selector1: ParametricSelector[S1, P1, R1],
     selector2: ParametricSelector[S2, P2, R2],
     selector3: ParametricSelector[S3, P3, R3],
@@ -7219,8 +7071,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def default_S1S2S3S4P1P2P3P4R1R2R3R4T_OutputParametricCachedSelector[S1, S2, S3, S4, P1, P2, P3, P4, R1, R2, R3, R4, T](
+  inline def default_S1S2S3S4P1P2P3P4R1R2R3R4T_OutputParametricCachedSelector[S1, S2, S3, S4, P1, P2, P3, P4, R1, R2, R3, R4, T](
     selectors: js.Tuple4[
       ParametricSelector[S1, P1, R1], 
       ParametricSelector[S2, P2, R2], 
@@ -7253,8 +7104,7 @@ object mod {
   ]]
   
   /* four selectors */
-  @scala.inline
-  def default_S1S2S3S4R1R2R3R4T[S1, S2, S3, S4, R1, R2, R3, R4, T](
+  inline def default_S1S2S3S4R1R2R3R4T[S1, S2, S3, S4, R1, R2, R3, R4, T](
     selector1: Selector[S1, R1],
     selector2: Selector[S2, R2],
     selector3: Selector[S3, R3],
@@ -7272,8 +7122,7 @@ object mod {
     js.Tuple4[Selector[S1, R1], Selector[S2, R2], Selector[S3, R3], Selector[S4, R4]]
   ]]
   /* four selectors */
-  @scala.inline
-  def default_S1S2S3S4R1R2R3R4T[S1, S2, S3, S4, R1, R2, R3, R4, T](
+  inline def default_S1S2S3S4R1R2R3R4T[S1, S2, S3, S4, R1, R2, R3, R4, T](
     selectors: js.Tuple4[Selector[S1, R1], Selector[S2, R2], Selector[S3, R3], Selector[S4, R4]],
     combiner: js.Function4[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, T]
   ): OutputCachedSelector[
@@ -7288,8 +7137,7 @@ object mod {
     js.Tuple4[Selector[S1, R1], Selector[S2, R2], Selector[S3, R3], Selector[S4, R4]]
   ]]
   
-  @scala.inline
-  def default_S1S2S3S4S5P1P2P3P4P5R1R2R3R4R5T[S1, S2, S3, S4, S5, P1, P2, P3, P4, P5, R1, R2, R3, R4, R5, T](
+  inline def default_S1S2S3S4S5P1P2P3P4P5R1R2R3R4R5T[S1, S2, S3, S4, S5, P1, P2, P3, P4, P5, R1, R2, R3, R4, R5, T](
     selector1: ParametricSelector[S1, P1, R1],
     selector2: ParametricSelector[S2, P2, R2],
     selector3: ParametricSelector[S3, P3, R3],
@@ -7322,8 +7170,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def default_S1S2S3S4S5P1P2P3P4P5R1R2R3R4R5T_OutputParametricCachedSelector[S1, S2, S3, S4, S5, P1, P2, P3, P4, P5, R1, R2, R3, R4, R5, T](
+  inline def default_S1S2S3S4S5P1P2P3P4P5R1R2R3R4R5T_OutputParametricCachedSelector[S1, S2, S3, S4, S5, P1, P2, P3, P4, P5, R1, R2, R3, R4, R5, T](
     selectors: js.Tuple5[
       ParametricSelector[S1, P1, R1], 
       ParametricSelector[S2, P2, R2], 
@@ -7359,8 +7206,7 @@ object mod {
   ]]
   
   /* five selectors */
-  @scala.inline
-  def default_S1S2S3S4S5R1R2R3R4R5T[S1, S2, S3, S4, S5, R1, R2, R3, R4, R5, T](
+  inline def default_S1S2S3S4S5R1R2R3R4R5T[S1, S2, S3, S4, S5, R1, R2, R3, R4, R5, T](
     selector1: Selector[S1, R1],
     selector2: Selector[S2, R2],
     selector3: Selector[S3, R3],
@@ -7379,8 +7225,7 @@ object mod {
     js.Tuple5[Selector[S1, R1], Selector[S2, R2], Selector[S3, R3], Selector[S4, R4], Selector[S5, R5]]
   ]]
   /* five selectors */
-  @scala.inline
-  def default_S1S2S3S4S5R1R2R3R4R5T[S1, S2, S3, S4, S5, R1, R2, R3, R4, R5, T](
+  inline def default_S1S2S3S4S5R1R2R3R4R5T[S1, S2, S3, S4, S5, R1, R2, R3, R4, R5, T](
     selectors: js.Tuple5[Selector[S1, R1], Selector[S2, R2], Selector[S3, R3], Selector[S4, R4], Selector[S5, R5]],
     combiner: js.Function5[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, /* res5 */ R5, T]
   ): OutputCachedSelector[
@@ -7395,8 +7240,7 @@ object mod {
     js.Tuple5[Selector[S1, R1], Selector[S2, R2], Selector[S3, R3], Selector[S4, R4], Selector[S5, R5]]
   ]]
   
-  @scala.inline
-  def default_S1S2S3S4S5S6P1P2P3P4P5P6R1R2R3R4R5R6T[S1, S2, S3, S4, S5, S6, P1, P2, P3, P4, P5, P6, R1, R2, R3, R4, R5, R6, T](
+  inline def default_S1S2S3S4S5S6P1P2P3P4P5P6R1R2R3R4R5R6T[S1, S2, S3, S4, S5, S6, P1, P2, P3, P4, P5, P6, R1, R2, R3, R4, R5, R6, T](
     selector1: ParametricSelector[S1, P1, R1],
     selector2: ParametricSelector[S2, P2, R2],
     selector3: ParametricSelector[S3, P3, R3],
@@ -7432,8 +7276,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def default_S1S2S3S4S5S6P1P2P3P4P5P6R1R2R3R4R5R6T_OutputParametricCachedSelector[S1, S2, S3, S4, S5, S6, P1, P2, P3, P4, P5, P6, R1, R2, R3, R4, R5, R6, T](
+  inline def default_S1S2S3S4S5S6P1P2P3P4P5P6R1R2R3R4R5R6T_OutputParametricCachedSelector[S1, S2, S3, S4, S5, S6, P1, P2, P3, P4, P5, P6, R1, R2, R3, R4, R5, R6, T](
     selectors: js.Tuple6[
       ParametricSelector[S1, P1, R1], 
       ParametricSelector[S2, P2, R2], 
@@ -7472,8 +7315,7 @@ object mod {
   ]]
   
   /* six selectors */
-  @scala.inline
-  def default_S1S2S3S4S5S6R1R2R3R4R5R6T[S1, S2, S3, S4, S5, S6, R1, R2, R3, R4, R5, R6, T](
+  inline def default_S1S2S3S4S5S6R1R2R3R4R5R6T[S1, S2, S3, S4, S5, S6, R1, R2, R3, R4, R5, R6, T](
     selector1: Selector[S1, R1],
     selector2: Selector[S2, R2],
     selector3: Selector[S3, R3],
@@ -7507,8 +7349,7 @@ object mod {
     ]
   ]]
   /* six selectors */
-  @scala.inline
-  def default_S1S2S3S4S5S6R1R2R3R4R5R6T[S1, S2, S3, S4, S5, S6, R1, R2, R3, R4, R5, R6, T](
+  inline def default_S1S2S3S4S5S6R1R2R3R4R5R6T[S1, S2, S3, S4, S5, S6, R1, R2, R3, R4, R5, R6, T](
     selectors: js.Tuple6[
       Selector[S1, R1], 
       Selector[S2, R2], 
@@ -7544,8 +7385,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def default_S1S2S3S4S5S6S7P1P2P3P4P5P6P7R1R2R3R4R5R6R7T[S1, S2, S3, S4, S5, S6, S7, P1, P2, P3, P4, P5, P6, P7, R1, R2, R3, R4, R5, R6, R7, T](
+  inline def default_S1S2S3S4S5S6S7P1P2P3P4P5P6P7R1R2R3R4R5R6R7T[S1, S2, S3, S4, S5, S6, S7, P1, P2, P3, P4, P5, P6, P7, R1, R2, R3, R4, R5, R6, R7, T](
     selector1: ParametricSelector[S1, P1, R1],
     selector2: ParametricSelector[S2, P2, R2],
     selector3: ParametricSelector[S3, P3, R3],
@@ -7611,8 +7451,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def default_S1S2S3S4S5S6S7P1P2P3P4P5P6P7R1R2R3R4R5R6R7T_OutputParametricCachedSelector[S1, S2, S3, S4, S5, S6, S7, P1, P2, P3, P4, P5, P6, P7, R1, R2, R3, R4, R5, R6, R7, T](
+  inline def default_S1S2S3S4S5S6S7P1P2P3P4P5P6P7R1R2R3R4R5R6R7T_OutputParametricCachedSelector[S1, S2, S3, S4, S5, S6, S7, P1, P2, P3, P4, P5, P6, P7, R1, R2, R3, R4, R5, R6, R7, T](
     selectors: js.Tuple7[
       ParametricSelector[S1, P1, R1], 
       ParametricSelector[S2, P2, R2], 
@@ -7681,8 +7520,7 @@ object mod {
   ]]
   
   /* seven selectors */
-  @scala.inline
-  def default_S1S2S3S4S5S6S7R1R2R3R4R5R6R7T[S1, S2, S3, S4, S5, S6, S7, R1, R2, R3, R4, R5, R6, R7, T](
+  inline def default_S1S2S3S4S5S6S7R1R2R3R4R5R6R7T[S1, S2, S3, S4, S5, S6, S7, R1, R2, R3, R4, R5, R6, R7, T](
     selector1: Selector[S1, R1],
     selector2: Selector[S2, R2],
     selector3: Selector[S3, R3],
@@ -7746,8 +7584,7 @@ object mod {
     ]
   ]]
   /* seven selectors */
-  @scala.inline
-  def default_S1S2S3S4S5S6S7R1R2R3R4R5R6R7T[S1, S2, S3, S4, S5, S6, S7, R1, R2, R3, R4, R5, R6, R7, T](
+  inline def default_S1S2S3S4S5S6S7R1R2R3R4R5R6R7T[S1, S2, S3, S4, S5, S6, S7, R1, R2, R3, R4, R5, R6, R7, T](
     selectors: js.Tuple7[
       Selector[S1, R1], 
       Selector[S2, R2], 
@@ -7813,8 +7650,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def default_S1S2S3S4S5S6S7S8P1P2P3P4P5P6P7P8R1R2R3R4R5R6R7R8T[S1, S2, S3, S4, S5, S6, S7, S8, P1, P2, P3, P4, P5, P6, P7, P8, R1, R2, R3, R4, R5, R6, R7, R8, T](
+  inline def default_S1S2S3S4S5S6S7S8P1P2P3P4P5P6P7P8R1R2R3R4R5R6R7R8T[S1, S2, S3, S4, S5, S6, S7, S8, P1, P2, P3, P4, P5, P6, P7, P8, R1, R2, R3, R4, R5, R6, R7, R8, T](
     selector1: ParametricSelector[S1, P1, R1],
     selector2: ParametricSelector[S2, P2, R2],
     selector3: ParametricSelector[S3, P3, R3],
@@ -7886,8 +7722,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def default_S1S2S3S4S5S6S7S8P1P2P3P4P5P6P7P8R1R2R3R4R5R6R7R8T_OutputParametricCachedSelector[S1, S2, S3, S4, S5, S6, S7, S8, P1, P2, P3, P4, P5, P6, P7, P8, R1, R2, R3, R4, R5, R6, R7, R8, T](
+  inline def default_S1S2S3S4S5S6S7S8P1P2P3P4P5P6P7P8R1R2R3R4R5R6R7R8T_OutputParametricCachedSelector[S1, S2, S3, S4, S5, S6, S7, S8, P1, P2, P3, P4, P5, P6, P7, P8, R1, R2, R3, R4, R5, R6, R7, R8, T](
     selectors: js.Tuple8[
       ParametricSelector[S1, P1, R1], 
       ParametricSelector[S2, P2, R2], 
@@ -7962,8 +7797,7 @@ object mod {
   ]]
   
   /* eight selectors */
-  @scala.inline
-  def default_S1S2S3S4S5S6S7S8R1R2R3R4R5R6R7R8T[S1, S2, S3, S4, S5, S6, S7, S8, R1, R2, R3, R4, R5, R6, R7, R8, T](
+  inline def default_S1S2S3S4S5S6S7S8R1R2R3R4R5R6R7R8T[S1, S2, S3, S4, S5, S6, S7, S8, R1, R2, R3, R4, R5, R6, R7, R8, T](
     selector1: Selector[S1, R1],
     selector2: Selector[S2, R2],
     selector3: Selector[S3, R3],
@@ -8033,8 +7867,7 @@ object mod {
     ]
   ]]
   /* eight selectors */
-  @scala.inline
-  def default_S1S2S3S4S5S6S7S8R1R2R3R4R5R6R7R8T[S1, S2, S3, S4, S5, S6, S7, S8, R1, R2, R3, R4, R5, R6, R7, R8, T](
+  inline def default_S1S2S3S4S5S6S7S8R1R2R3R4R5R6R7R8T[S1, S2, S3, S4, S5, S6, S7, S8, R1, R2, R3, R4, R5, R6, R7, R8, T](
     selectors: js.Tuple8[
       Selector[S1, R1], 
       Selector[S2, R2], 
@@ -8106,8 +7939,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def default_S1S2S3S4S5S6S7S8S9P1P2P3P4P5P6P7P8P9PR1R2R3R4R5R6R7R8R9T_OutputParametricCachedSelector[S1, S2, S3, S4, S5, S6, S7, S8, S9, P1, P2, P3, P4, P5, P6, P7, P8, P9, P, R1, R2, R3, R4, R5, R6, R7, R8, R9, T](
+  inline def default_S1S2S3S4S5S6S7S8S9P1P2P3P4P5P6P7P8P9PR1R2R3R4R5R6R7R8R9T_OutputParametricCachedSelector[S1, S2, S3, S4, S5, S6, S7, S8, S9, P1, P2, P3, P4, P5, P6, P7, P8, P9, P, R1, R2, R3, R4, R5, R6, R7, R8, R9, T](
     selectors: js.Tuple9[
       ParametricSelector[S1, P1, R1], 
       ParametricSelector[S2, P2, R2], 
@@ -8187,8 +8019,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def default_S1S2S3S4S5S6S7S8S9P1P2P3P4P5P6P7P8P9R1R2R3R4R5R6R7R8R9T[S1, S2, S3, S4, S5, S6, S7, S8, S9, P1, P2, P3, P4, P5, P6, P7, P8, P9, R1, R2, R3, R4, R5, R6, R7, R8, R9, T](
+  inline def default_S1S2S3S4S5S6S7S8S9P1P2P3P4P5P6P7P8P9R1R2R3R4R5R6R7R8R9T[S1, S2, S3, S4, S5, S6, S7, S8, S9, P1, P2, P3, P4, P5, P6, P7, P8, P9, R1, R2, R3, R4, R5, R6, R7, R8, R9, T](
     selector1: ParametricSelector[S1, P1, R1],
     selector2: ParametricSelector[S2, P2, R2],
     selector3: ParametricSelector[S3, P3, R3],
@@ -8267,8 +8098,7 @@ object mod {
   ]]
   
   /* nine selectors */
-  @scala.inline
-  def default_S1S2S3S4S5S6S7S8S9R1R2R3R4R5R6R7R8R9T[S1, S2, S3, S4, S5, S6, S7, S8, S9, R1, R2, R3, R4, R5, R6, R7, R8, R9, T](
+  inline def default_S1S2S3S4S5S6S7S8S9R1R2R3R4R5R6R7R8R9T[S1, S2, S3, S4, S5, S6, S7, S8, S9, R1, R2, R3, R4, R5, R6, R7, R8, R9, T](
     selector1: Selector[S1, R1],
     selector2: Selector[S2, R2],
     selector3: Selector[S3, R3],
@@ -8344,8 +8174,7 @@ object mod {
     ]
   ]]
   /* nine selectors */
-  @scala.inline
-  def default_S1S2S3S4S5S6S7S8S9R1R2R3R4R5R6R7R8R9T[S1, S2, S3, S4, S5, S6, S7, S8, S9, R1, R2, R3, R4, R5, R6, R7, R8, R9, T](
+  inline def default_S1S2S3S4S5S6S7S8S9R1R2R3R4R5R6R7R8R9T[S1, S2, S3, S4, S5, S6, S7, S8, S9, R1, R2, R3, R4, R5, R6, R7, R8, R9, T](
     selectors: js.Tuple9[
       Selector[S1, R1], 
       Selector[S2, R2], 
@@ -8423,8 +8252,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def default_S1S2S3S4S5S6S7S8S9S10P1P2P3P4P5P6P7P8P9P10R1R2R3R4R5R6R7R8R9R10T[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, T](
+  inline def default_S1S2S3S4S5S6S7S8S9S10P1P2P3P4P5P6P7P8P9P10R1R2R3R4R5R6R7R8R9R10T[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, T](
     selector1: ParametricSelector[S1, P1, R1],
     selector2: ParametricSelector[S2, P2, R2],
     selector3: ParametricSelector[S3, P3, R3],
@@ -8508,8 +8336,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def default_S1S2S3S4S5S6S7S8S9S10P1P2P3P4P5P6P7P8P9P10R1R2R3R4R5R6R7R8R9R10T_OutputParametricCachedSelector[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, T](
+  inline def default_S1S2S3S4S5S6S7S8S9S10P1P2P3P4P5P6P7P8P9P10R1R2R3R4R5R6R7R8R9R10T_OutputParametricCachedSelector[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, T](
     selectors: js.Tuple10[
       ParametricSelector[S1, P1, R1], 
       ParametricSelector[S2, P2, R2], 
@@ -8596,8 +8423,7 @@ object mod {
   ]]
   
   /* ten selectors */
-  @scala.inline
-  def default_S1S2S3S4S5S6S7S8S9S10R1R2R3R4R5R6R7R8R9R10T[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, T](
+  inline def default_S1S2S3S4S5S6S7S8S9S10R1R2R3R4R5R6R7R8R9R10T[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, T](
     selector1: Selector[S1, R1],
     selector2: Selector[S2, R2],
     selector3: Selector[S3, R3],
@@ -8679,8 +8505,7 @@ object mod {
     ]
   ]]
   /* ten selectors */
-  @scala.inline
-  def default_S1S2S3S4S5S6S7S8S9S10R1R2R3R4R5R6R7R8R9R10T[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, T](
+  inline def default_S1S2S3S4S5S6S7S8S9S10R1R2R3R4R5R6R7R8R9R10T[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, T](
     selectors: js.Tuple10[
       Selector[S1, R1], 
       Selector[S2, R2], 
@@ -8764,8 +8589,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def default_S1S2S3S4S5S6S7S8S9S10S11P1P2P3P4P5P6P7P8P9P10P11R1R2R3R4R5R6R7R8R9R10R11T[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P11, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, T](
+  inline def default_S1S2S3S4S5S6S7S8S9S10S11P1P2P3P4P5P6P7P8P9P10P11R1R2R3R4R5R6R7R8R9R10R11T[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P11, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, T](
     selector1: ParametricSelector[S1, P1, R1],
     selector2: ParametricSelector[S2, P2, R2],
     selector3: ParametricSelector[S3, P3, R3],
@@ -8855,8 +8679,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def default_S1S2S3S4S5S6S7S8S9S10S11P1P2P3P4P5P6P7P8P9P10P11R1R2R3R4R5R6R7R8R9R10R11T_OutputParametricCachedSelector[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P11, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, T](
+  inline def default_S1S2S3S4S5S6S7S8S9S10S11P1P2P3P4P5P6P7P8P9P10P11R1R2R3R4R5R6R7R8R9R10R11T_OutputParametricCachedSelector[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P11, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, T](
     selectors: js.Tuple11[
       ParametricSelector[S1, P1, R1], 
       ParametricSelector[S2, P2, R2], 
@@ -8949,8 +8772,7 @@ object mod {
   ]]
   
   /* eleven selectors */
-  @scala.inline
-  def default_S1S2S3S4S5S6S7S8S9S10S11R1R2R3R4R5R6R7R8R9R10R11T[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, T](
+  inline def default_S1S2S3S4S5S6S7S8S9S10S11R1R2R3R4R5R6R7R8R9R10R11T[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, T](
     selector1: Selector[S1, R1],
     selector2: Selector[S2, R2],
     selector3: Selector[S3, R3],
@@ -9038,8 +8860,7 @@ object mod {
     ]
   ]]
   /* eleven selectors */
-  @scala.inline
-  def default_S1S2S3S4S5S6S7S8S9S10S11R1R2R3R4R5R6R7R8R9R10R11T[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, T](
+  inline def default_S1S2S3S4S5S6S7S8S9S10S11R1R2R3R4R5R6R7R8R9R10R11T[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, T](
     selectors: js.Tuple11[
       Selector[S1, R1], 
       Selector[S2, R2], 
@@ -9129,8 +8950,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def default_S1S2S3S4S5S6S7S8S9S10S11S12P1P2P3P4P5P6P7P8P9P10P11P12R1R2R3R4R5R6R7R8R9R10R11R12T[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P11, P12, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, T](
+  inline def default_S1S2S3S4S5S6S7S8S9S10S11S12P1P2P3P4P5P6P7P8P9P10P11P12R1R2R3R4R5R6R7R8R9R10R11R12T[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P11, P12, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, T](
     selector1: ParametricSelector[S1, P1, R1],
     selector2: ParametricSelector[S2, P2, R2],
     selector3: ParametricSelector[S3, P3, R3],
@@ -9226,8 +9046,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def default_S1S2S3S4S5S6S7S8S9S10S11S12P1P2P3P4P5P6P7P8P9P10P11P12R1R2R3R4R5R6R7R8R9R10R11R12T_OutputParametricCachedSelector[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P11, P12, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, T](
+  inline def default_S1S2S3S4S5S6S7S8S9S10S11S12P1P2P3P4P5P6P7P8P9P10P11P12R1R2R3R4R5R6R7R8R9R10R11R12T_OutputParametricCachedSelector[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P11, P12, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, T](
     selectors: js.Tuple12[
       ParametricSelector[S1, P1, R1], 
       ParametricSelector[S2, P2, R2], 
@@ -9326,8 +9145,7 @@ object mod {
   ]]
   
   /* twelve selectors */
-  @scala.inline
-  def default_S1S2S3S4S5S6S7S8S9S10S11S12R1R2R3R4R5R6R7R8R9R10R11R12T[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, T](
+  inline def default_S1S2S3S4S5S6S7S8S9S10S11S12R1R2R3R4R5R6R7R8R9R10R11R12T[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, T](
     selector1: Selector[S1, R1],
     selector2: Selector[S2, R2],
     selector3: Selector[S3, R3],
@@ -9421,8 +9239,7 @@ object mod {
     ]
   ]]
   /* twelve selectors */
-  @scala.inline
-  def default_S1S2S3S4S5S6S7S8S9S10S11S12R1R2R3R4R5R6R7R8R9R10R11R12T[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, T](
+  inline def default_S1S2S3S4S5S6S7S8S9S10S11S12R1R2R3R4R5R6R7R8R9R10R11R12T[S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, T](
     selectors: js.Tuple12[
       Selector[S1, R1], 
       Selector[S2, R2], 
@@ -9518,8 +9335,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def default_SPR1R2R3R4R5R6R7R8R9R10R11R12T_OutputParametricCachedSelector[S, P, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, T](
+  inline def default_SPR1R2R3R4R5R6R7R8R9R10R11R12T_OutputParametricCachedSelector[S, P, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, T](
     selectors: js.Tuple12[
       ParametricSelector[S, P, R1], 
       ParametricSelector[S, P, R2], 
@@ -9617,8 +9433,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def default_SPR1R2R3R4R5R6R7R8R9R10R11T_OutputParametricCachedSelector[S, P, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, T](
+  inline def default_SPR1R2R3R4R5R6R7R8R9R10R11T_OutputParametricCachedSelector[S, P, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, T](
     selectors: js.Tuple11[
       ParametricSelector[S, P, R1], 
       ParametricSelector[S, P, R2], 
@@ -9710,8 +9525,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def default_SPR1R2R3R4R5R6R7R8R9R10T_OutputParametricCachedSelector[S, P, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, T](
+  inline def default_SPR1R2R3R4R5R6R7R8R9R10T_OutputParametricCachedSelector[S, P, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, T](
     selectors: js.Tuple10[
       ParametricSelector[S, P, R1], 
       ParametricSelector[S, P, R2], 
@@ -9797,8 +9611,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def default_SPR1R2R3R4R5R6R7R8R9T_OutputParametricCachedSelector[S, P, R1, R2, R3, R4, R5, R6, R7, R8, R9, T](
+  inline def default_SPR1R2R3R4R5R6R7R8R9T_OutputParametricCachedSelector[S, P, R1, R2, R3, R4, R5, R6, R7, R8, R9, T](
     selectors: js.Tuple9[
       ParametricSelector[S, P, R1], 
       ParametricSelector[S, P, R2], 
@@ -9878,8 +9691,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def default_SPR1R2R3R4R5R6R7R8T_OutputParametricCachedSelector[S, P, R1, R2, R3, R4, R5, R6, R7, R8, T](
+  inline def default_SPR1R2R3R4R5R6R7R8T_OutputParametricCachedSelector[S, P, R1, R2, R3, R4, R5, R6, R7, R8, T](
     selectors: js.Tuple8[
       ParametricSelector[S, P, R1], 
       ParametricSelector[S, P, R2], 
@@ -9953,8 +9765,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def default_SPR1R2R3R4R5R6R7T_OutputParametricCachedSelector[S, P, R1, R2, R3, R4, R5, R6, R7, T](
+  inline def default_SPR1R2R3R4R5R6R7T_OutputParametricCachedSelector[S, P, R1, R2, R3, R4, R5, R6, R7, T](
     selectors: js.Tuple7[
       ParametricSelector[S, P, R1], 
       ParametricSelector[S, P, R2], 
@@ -10022,8 +9833,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def default_SPR1R2R3R4R5R6T_OutputParametricCachedSelector[S, P, R1, R2, R3, R4, R5, R6, T](
+  inline def default_SPR1R2R3R4R5R6T_OutputParametricCachedSelector[S, P, R1, R2, R3, R4, R5, R6, T](
     selectors: js.Tuple6[
       ParametricSelector[S, P, R1], 
       ParametricSelector[S, P, R2], 
@@ -10061,8 +9871,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def default_SPR1R2R3R4R5T_OutputParametricCachedSelector[S, P, R1, R2, R3, R4, R5, T](
+  inline def default_SPR1R2R3R4R5T_OutputParametricCachedSelector[S, P, R1, R2, R3, R4, R5, T](
     selectors: js.Tuple5[
       ParametricSelector[S, P, R1], 
       ParametricSelector[S, P, R2], 
@@ -10097,8 +9906,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def default_SPR1R2R3R4T_OutputParametricCachedSelector[S, P, R1, R2, R3, R4, T](
+  inline def default_SPR1R2R3R4T_OutputParametricCachedSelector[S, P, R1, R2, R3, R4, T](
     selectors: js.Tuple4[
       ParametricSelector[S, P, R1], 
       ParametricSelector[S, P, R2], 
@@ -10130,8 +9938,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def default_SPR1R2R3T_OutputParametricCachedSelector[S, P, R1, R2, R3, T](
+  inline def default_SPR1R2R3T_OutputParametricCachedSelector[S, P, R1, R2, R3, T](
     selectors: js.Tuple3[
       ParametricSelector[S, P, R1], 
       ParametricSelector[S, P, R2], 
@@ -10160,8 +9967,7 @@ object mod {
     ]
   ]]
   
-  @scala.inline
-  def default_SPR1R2T_OutputParametricCachedSelector[S, P, R1, R2, T](
+  inline def default_SPR1R2T_OutputParametricCachedSelector[S, P, R1, R2, T](
     selectors: js.Tuple2[ParametricSelector[S, P, R1], ParametricSelector[S, P, R2]],
     combiner: js.Function2[/* res1 */ R1, /* res2 */ R2, T]
   ): OutputParametricCachedSelector[
@@ -10178,24 +9984,20 @@ object mod {
     js.Tuple2[ParametricSelector[S, P, R1], ParametricSelector[S, P, R2]]
   ]]
   
-  @scala.inline
-  def default_SPR1T_OutputParametricCachedSelector[S, P, R1, T](selectors: js.Array[ParametricSelector[S, P, R1]], combiner: js.Function1[/* res */ R1, T]): OutputParametricCachedSelector[S, P, T, js.Function1[/* res */ R1, T], js.Array[ParametricSelector[S, P, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selectors.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputParametricCachedSelector[S, P, T, js.Function1[/* res */ R1, T], js.Array[ParametricSelector[S, P, R1]]]]
+  inline def default_SPR1T_OutputParametricCachedSelector[S, P, R1, T](selectors: js.Array[ParametricSelector[S, P, R1]], combiner: js.Function1[/* res */ R1, T]): OutputParametricCachedSelector[S, P, T, js.Function1[/* res */ R1, T], js.Array[ParametricSelector[S, P, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selectors.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputParametricCachedSelector[S, P, T, js.Function1[/* res */ R1, T], js.Array[ParametricSelector[S, P, R1]]]]
   
-  @scala.inline
-  def default_SPRT_OutputParametricCachedSelector[S, P, R, T](selectors: js.Array[ParametricSelector[S, P, R]], combiner: js.Function1[/* repeated */ R, T]): OutputParametricCachedSelector[S, P, T, js.Function1[/* repeated */ R, T], js.Array[ParametricSelector[S, P, R]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selectors.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputParametricCachedSelector[S, P, T, js.Function1[/* repeated */ R, T], js.Array[ParametricSelector[S, P, R]]]]
+  inline def default_SPRT_OutputParametricCachedSelector[S, P, R, T](selectors: js.Array[ParametricSelector[S, P, R]], combiner: js.Function1[/* repeated */ R, T]): OutputParametricCachedSelector[S, P, T, js.Function1[/* repeated */ R, T], js.Array[ParametricSelector[S, P, R]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selectors.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputParametricCachedSelector[S, P, T, js.Function1[/* repeated */ R, T], js.Array[ParametricSelector[S, P, R]]]]
   
   /*
     * Homogeneous selectors, parameter types
     */
   /* one selector */
-  @scala.inline
-  def default_SR1T[S, R1, T](selector: Selector[S, R1], combiner: js.Function1[/* res */ R1, T]): OutputCachedSelector[S, T, js.Function1[/* res */ R1, T], js.Array[Selector[S, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputCachedSelector[S, T, js.Function1[/* res */ R1, T], js.Array[Selector[S, R1]]]]
+  inline def default_SR1T[S, R1, T](selector: Selector[S, R1], combiner: js.Function1[/* res */ R1, T]): OutputCachedSelector[S, T, js.Function1[/* res */ R1, T], js.Array[Selector[S, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputCachedSelector[S, T, js.Function1[/* res */ R1, T], js.Array[Selector[S, R1]]]]
   
   /*
     * Any number of uniform selectors
     */
-  @scala.inline
-  def default_SRT[S, R, T](selectors: js.Array[Selector[S, R]], combiner: js.Function1[/* repeated */ R, T]): OutputCachedSelector[S, T, js.Function1[/* repeated */ R, T], js.Array[Selector[S, R]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selectors.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputCachedSelector[S, T, js.Function1[/* repeated */ R, T], js.Array[Selector[S, R]]]]
+  inline def default_SRT[S, R, T](selectors: js.Array[Selector[S, R]], combiner: js.Function1[/* repeated */ R, T]): OutputCachedSelector[S, T, js.Function1[/* repeated */ R, T], js.Array[Selector[S, R]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selectors.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputCachedSelector[S, T, js.Function1[/* repeated */ R, T], js.Array[Selector[S, R]]]]
   
   @js.native
   trait CreateSelectorInstance extends StObject {
@@ -11089,32 +10891,24 @@ object mod {
   }
   object ICacheObject {
     
-    @scala.inline
-    def apply(clear: () => Unit, get: js.Any => js.Any, remove: js.Any => Unit, set: (js.Any, js.Any) => Unit): ICacheObject = {
+    inline def apply(clear: () => Unit, get: js.Any => js.Any, remove: js.Any => Unit, set: (js.Any, js.Any) => Unit): ICacheObject = {
       val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), get = js.Any.fromFunction1(get), remove = js.Any.fromFunction1(remove), set = js.Any.fromFunction2(set))
       __obj.asInstanceOf[ICacheObject]
     }
     
-    @scala.inline
-    implicit class ICacheObjectMutableBuilder[Self <: ICacheObject] (val x: Self) extends AnyVal {
+    extension [Self <: ICacheObject](x: Self) {
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet(value: js.Any => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: js.Any => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsValidCacheKey(value: /* key */ js.Any => Boolean): Self = StObject.set(x, "isValidCacheKey", js.Any.fromFunction1(value))
+      inline def setIsValidCacheKey(value: /* key */ js.Any => Boolean): Self = StObject.set(x, "isValidCacheKey", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsValidCacheKeyUndefined: Self = StObject.set(x, "isValidCacheKey", js.undefined)
+      inline def setIsValidCacheKeyUndefined: Self = StObject.set(x, "isValidCacheKey", js.undefined)
       
-      @scala.inline
-      def setRemove(value: js.Any => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+      inline def setRemove(value: js.Any => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     }
   }
   
@@ -11140,38 +10934,28 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply[S, C, D](): Options[S, C, D] = {
+    inline def apply[S, C, D](): Options[S, C, D] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options[S, C, D]]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[?, ?, ?], S, C, D] (val x: Self & (Options[S, C, D])) extends AnyVal {
+    extension [Self <: Options[?, ?, ?], S, C, D](x: Self & (Options[S, C, D])) {
       
-      @scala.inline
-      def setCacheObject(value: ICacheObject): Self = StObject.set(x, "cacheObject", value.asInstanceOf[js.Any])
+      inline def setCacheObject(value: ICacheObject): Self = StObject.set(x, "cacheObject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheObjectUndefined: Self = StObject.set(x, "cacheObject", js.undefined)
+      inline def setCacheObjectUndefined: Self = StObject.set(x, "cacheObject", js.undefined)
       
-      @scala.inline
-      def setKeySelector(value: KeySelector[S]): Self = StObject.set(x, "keySelector", value.asInstanceOf[js.Any])
+      inline def setKeySelector(value: KeySelector[S]): Self = StObject.set(x, "keySelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeySelectorCreator(value: /* selectorInputs */ InputSelectors[D, C, S] => KeySelector[S]): Self = StObject.set(x, "keySelectorCreator", js.Any.fromFunction1(value))
+      inline def setKeySelectorCreator(value: /* selectorInputs */ InputSelectors[D, C, S] => KeySelector[S]): Self = StObject.set(x, "keySelectorCreator", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setKeySelectorCreatorUndefined: Self = StObject.set(x, "keySelectorCreator", js.undefined)
+      inline def setKeySelectorCreatorUndefined: Self = StObject.set(x, "keySelectorCreator", js.undefined)
       
-      @scala.inline
-      def setKeySelectorUndefined: Self = StObject.set(x, "keySelector", js.undefined)
+      inline def setKeySelectorUndefined: Self = StObject.set(x, "keySelector", js.undefined)
       
-      @scala.inline
-      def setSelectorCreator(value: CreateSelectorInstance): Self = StObject.set(x, "selectorCreator", value.asInstanceOf[js.Any])
+      inline def setSelectorCreator(value: CreateSelectorInstance): Self = StObject.set(x, "selectorCreator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectorCreatorUndefined: Self = StObject.set(x, "selectorCreator", js.undefined)
+      inline def setSelectorCreatorUndefined: Self = StObject.set(x, "selectorCreator", js.undefined)
     }
   }
   
@@ -11234,40 +11018,30 @@ object mod {
   }
   object ParametricOptions {
     
-    @scala.inline
-    def apply[S, P, C, D](): ParametricOptions[S, P, C, D] = {
+    inline def apply[S, P, C, D](): ParametricOptions[S, P, C, D] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParametricOptions[S, P, C, D]]
     }
     
-    @scala.inline
-    implicit class ParametricOptionsMutableBuilder[Self <: ParametricOptions[?, ?, ?, ?], S, P, C, D] (val x: Self & (ParametricOptions[S, P, C, D])) extends AnyVal {
+    extension [Self <: ParametricOptions[?, ?, ?, ?], S, P, C, D](x: Self & (ParametricOptions[S, P, C, D])) {
       
-      @scala.inline
-      def setCacheObject(value: ICacheObject): Self = StObject.set(x, "cacheObject", value.asInstanceOf[js.Any])
+      inline def setCacheObject(value: ICacheObject): Self = StObject.set(x, "cacheObject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheObjectUndefined: Self = StObject.set(x, "cacheObject", js.undefined)
+      inline def setCacheObjectUndefined: Self = StObject.set(x, "cacheObject", js.undefined)
       
-      @scala.inline
-      def setKeySelector(value: ParametricKeySelector[S, P]): Self = StObject.set(x, "keySelector", value.asInstanceOf[js.Any])
+      inline def setKeySelector(value: ParametricKeySelector[S, P]): Self = StObject.set(x, "keySelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeySelectorCreator(
+      inline def setKeySelectorCreator(
         value: /* selectorInputs */ typings.reReselect.anon.KeySelector[D, C, S, P] => ParametricKeySelector[S, P]
       ): Self = StObject.set(x, "keySelectorCreator", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setKeySelectorCreatorUndefined: Self = StObject.set(x, "keySelectorCreator", js.undefined)
+      inline def setKeySelectorCreatorUndefined: Self = StObject.set(x, "keySelectorCreator", js.undefined)
       
-      @scala.inline
-      def setKeySelectorUndefined: Self = StObject.set(x, "keySelector", js.undefined)
+      inline def setKeySelectorUndefined: Self = StObject.set(x, "keySelector", js.undefined)
       
-      @scala.inline
-      def setSelectorCreator(value: CreateSelectorInstance): Self = StObject.set(x, "selectorCreator", value.asInstanceOf[js.Any])
+      inline def setSelectorCreator(value: CreateSelectorInstance): Self = StObject.set(x, "selectorCreator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectorCreatorUndefined: Self = StObject.set(x, "selectorCreator", js.undefined)
+      inline def setSelectorCreatorUndefined: Self = StObject.set(x, "selectorCreator", js.undefined)
     }
   }
   

@@ -32,44 +32,32 @@ object interfaceMod {
   }
   object DataEntity {
     
-    @scala.inline
-    def apply(index: Double, key: Key, level: Double, node: DataNode, pos: String): DataEntity = {
+    inline def apply(index: Double, key: Key, level: Double, node: DataNode, pos: String): DataEntity = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any])
       __obj.asInstanceOf[DataEntity]
     }
     
-    @scala.inline
-    implicit class DataEntityMutableBuilder[Self <: DataEntity] (val x: Self) extends AnyVal {
+    extension [Self <: DataEntity](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[DataEntity]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[DataEntity]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: DataEntity*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: DataEntity*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode(value: DataNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: DataNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent(value: DataEntity): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: DataEntity): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+      inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
       
-      @scala.inline
-      def setPos(value: String): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+      inline def setPos(value: String): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
     }
   }
   
@@ -102,92 +90,64 @@ object interfaceMod {
   }
   object DataNode {
     
-    @scala.inline
-    def apply(key: String | Double): DataNode = {
+    inline def apply(key: String | Double): DataNode = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[DataNode]
     }
     
-    @scala.inline
-    implicit class DataNodeMutableBuilder[Self <: DataNode] (val x: Self) extends AnyVal {
+    extension [Self <: DataNode](x: Self) {
       
-      @scala.inline
-      def setCheckable(value: Boolean): Self = StObject.set(x, "checkable", value.asInstanceOf[js.Any])
+      inline def setCheckable(value: Boolean): Self = StObject.set(x, "checkable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckableUndefined: Self = StObject.set(x, "checkable", js.undefined)
+      inline def setCheckableUndefined: Self = StObject.set(x, "checkable", js.undefined)
       
-      @scala.inline
-      def setChildren(value: js.Array[DataNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[DataNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: DataNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: DataNode*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDisableCheckbox(value: Boolean): Self = StObject.set(x, "disableCheckbox", value.asInstanceOf[js.Any])
+      inline def setDisableCheckbox(value: Boolean): Self = StObject.set(x, "disableCheckbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableCheckboxUndefined: Self = StObject.set(x, "disableCheckbox", js.undefined)
+      inline def setDisableCheckboxUndefined: Self = StObject.set(x, "disableCheckbox", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setIcon(value: IconType): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: IconType): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconFunction1(value: /* props */ TreeNodeProps => ReactNode): Self = StObject.set(x, "icon", js.Any.fromFunction1(value))
+      inline def setIconFunction1(value: /* props */ TreeNodeProps => ReactNode): Self = StObject.set(x, "icon", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setIsLeaf(value: Boolean): Self = StObject.set(x, "isLeaf", value.asInstanceOf[js.Any])
+      inline def setIsLeaf(value: Boolean): Self = StObject.set(x, "isLeaf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLeafUndefined: Self = StObject.set(x, "isLeaf", js.undefined)
+      inline def setIsLeafUndefined: Self = StObject.set(x, "isLeaf", js.undefined)
       
-      @scala.inline
-      def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
+      inline def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
+      inline def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setSwitcherIcon(value: IconType): Self = StObject.set(x, "switcherIcon", value.asInstanceOf[js.Any])
+      inline def setSwitcherIcon(value: IconType): Self = StObject.set(x, "switcherIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwitcherIconFunction1(value: /* props */ TreeNodeProps => ReactNode): Self = StObject.set(x, "switcherIcon", js.Any.fromFunction1(value))
+      inline def setSwitcherIconFunction1(value: /* props */ TreeNodeProps => ReactNode): Self = StObject.set(x, "switcherIcon", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSwitcherIconUndefined: Self = StObject.set(x, "switcherIcon", js.undefined)
+      inline def setSwitcherIconUndefined: Self = StObject.set(x, "switcherIcon", js.undefined)
       
-      @scala.inline
-      def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -207,41 +167,30 @@ object interfaceMod {
   }
   object Entity {
     
-    @scala.inline
-    def apply(index: Double, key: Key, node: NodeElement, pos: String): Entity = {
+    inline def apply(index: Double, key: Key, node: NodeElement, pos: String): Entity = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any])
       __obj.asInstanceOf[Entity]
     }
     
-    @scala.inline
-    implicit class EntityMutableBuilder[Self <: Entity] (val x: Self) extends AnyVal {
+    extension [Self <: Entity](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[Entity]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[Entity]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: Entity*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: Entity*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode(value: NodeElement): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: NodeElement): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent(value: Entity): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: Entity): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+      inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
       
-      @scala.inline
-      def setPos(value: String): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+      inline def setPos(value: String): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
     }
   }
   
@@ -273,8 +222,7 @@ object interfaceMod {
   }
   object EventDataNode {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       active: Boolean,
       checked: Boolean,
       dragOver: Boolean,
@@ -292,41 +240,29 @@ object interfaceMod {
       __obj.asInstanceOf[EventDataNode]
     }
     
-    @scala.inline
-    implicit class EventDataNodeMutableBuilder[Self <: EventDataNode] (val x: Self) extends AnyVal {
+    extension [Self <: EventDataNode](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+      inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragOver(value: Boolean): Self = StObject.set(x, "dragOver", value.asInstanceOf[js.Any])
+      inline def setDragOver(value: Boolean): Self = StObject.set(x, "dragOver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragOverGapBottom(value: Boolean): Self = StObject.set(x, "dragOverGapBottom", value.asInstanceOf[js.Any])
+      inline def setDragOverGapBottom(value: Boolean): Self = StObject.set(x, "dragOverGapBottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragOverGapTop(value: Boolean): Self = StObject.set(x, "dragOverGapTop", value.asInstanceOf[js.Any])
+      inline def setDragOverGapTop(value: Boolean): Self = StObject.set(x, "dragOverGapTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+      inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHalfChecked(value: Boolean): Self = StObject.set(x, "halfChecked", value.asInstanceOf[js.Any])
+      inline def setHalfChecked(value: Boolean): Self = StObject.set(x, "halfChecked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoaded(value: Boolean): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+      inline def setLoaded(value: Boolean): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPos(value: String): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+      inline def setPos(value: String): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     }
   }
   
@@ -346,8 +282,7 @@ object interfaceMod {
   }
   object FlattenNode {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       children: js.Array[FlattenNode],
       data: DataNode,
       isEnd: js.Array[Boolean],
@@ -358,38 +293,27 @@ object interfaceMod {
       __obj.asInstanceOf[FlattenNode]
     }
     
-    @scala.inline
-    implicit class FlattenNodeMutableBuilder[Self <: FlattenNode] (val x: Self) extends AnyVal {
+    extension [Self <: FlattenNode](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[FlattenNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[FlattenNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenVarargs(value: FlattenNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: FlattenNode*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setData(value: DataNode): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: DataNode): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEnd(value: js.Array[Boolean]): Self = StObject.set(x, "isEnd", value.asInstanceOf[js.Any])
+      inline def setIsEnd(value: js.Array[Boolean]): Self = StObject.set(x, "isEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEndVarargs(value: Boolean*): Self = StObject.set(x, "isEnd", js.Array(value :_*))
+      inline def setIsEndVarargs(value: Boolean*): Self = StObject.set(x, "isEnd", js.Array(value :_*))
       
-      @scala.inline
-      def setIsStart(value: js.Array[Boolean]): Self = StObject.set(x, "isStart", value.asInstanceOf[js.Any])
+      inline def setIsStart(value: js.Array[Boolean]): Self = StObject.set(x, "isStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsStartVarargs(value: Boolean*): Self = StObject.set(x, "isStart", js.Array(value :_*))
+      inline def setIsStartVarargs(value: Boolean*): Self = StObject.set(x, "isStart", js.Array(value :_*))
       
-      @scala.inline
-      def setParent(value: FlattenNode): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: FlattenNode): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentNull: Self = StObject.set(x, "parent", null)
+      inline def setParentNull: Self = StObject.set(x, "parent", null)
       
-      @scala.inline
-      def setPos(value: String): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+      inline def setPos(value: String): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
     }
   }
   
@@ -412,24 +336,19 @@ object interfaceMod {
   }
   object NodeElement {
     
-    @scala.inline
-    def apply(props: js.Any, `type`: IsTreeNode): NodeElement = {
+    inline def apply(props: js.Any, `type`: IsTreeNode): NodeElement = {
       val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], key = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[NodeElement]
     }
     
-    @scala.inline
-    implicit class NodeElementMutableBuilder[Self <: NodeElement] (val x: Self) extends AnyVal {
+    extension [Self <: NodeElement](x: Self) {
       
-      @scala.inline
-      def setSelectHandle(value: HTMLSpanElement): Self = StObject.set(x, "selectHandle", value.asInstanceOf[js.Any])
+      inline def setSelectHandle(value: HTMLSpanElement): Self = StObject.set(x, "selectHandle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectHandleUndefined: Self = StObject.set(x, "selectHandle", js.undefined)
+      inline def setSelectHandleUndefined: Self = StObject.set(x, "selectHandle", js.undefined)
       
-      @scala.inline
-      def setType(value: IsTreeNode): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: IsTreeNode): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

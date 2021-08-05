@@ -29,27 +29,21 @@ object anon {
   }
   object Arialive {
     
-    @scala.inline
-    def apply(`aria-live`: assertive | polite, message: String): Arialive = {
+    inline def apply(`aria-live`: assertive | polite, message: String): Arialive = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.updateDynamic("aria-live")(`aria-live`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Arialive]
     }
     
-    @scala.inline
-    implicit class ArialiveMutableBuilder[Self <: Arialive] (val x: Self) extends AnyVal {
+    extension [Self <: Arialive](x: Self) {
       
-      @scala.inline
-      def `setAria-live`(value: assertive | polite): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
+      inline def `setAria-live`(value: assertive | polite): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearOnUnmount(value: Boolean): Self = StObject.set(x, "clearOnUnmount", value.asInstanceOf[js.Any])
+      inline def setClearOnUnmount(value: Boolean): Self = StObject.set(x, "clearOnUnmount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearOnUnmountUndefined: Self = StObject.set(x, "clearOnUnmount", js.undefined)
+      inline def setClearOnUnmountUndefined: Self = StObject.set(x, "clearOnUnmount", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -59,17 +53,14 @@ object anon {
   }
   object Children {
     
-    @scala.inline
-    def apply(children: AnnounceAssertive => ReactNode): Children = {
+    inline def apply(children: AnnounceAssertive => ReactNode): Children = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
       __obj.asInstanceOf[Children]
     }
     
-    @scala.inline
-    implicit class ChildrenMutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
+    extension [Self <: Children](x: Self) {
       
-      @scala.inline
-      def setChildren(value: AnnounceAssertive => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: AnnounceAssertive => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     }
   }
 }

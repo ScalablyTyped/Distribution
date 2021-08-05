@@ -10,16 +10,13 @@ trait Total extends StObject {
 }
 object Total {
   
-  @scala.inline
-  def apply(total: Double): Total = {
+  inline def apply(total: Double): Total = {
     val __obj = js.Dynamic.literal(total = total.asInstanceOf[js.Any])
     __obj.asInstanceOf[Total]
   }
   
-  @scala.inline
-  implicit class TotalMutableBuilder[Self <: Total] (val x: Self) extends AnyVal {
+  extension [Self <: Total](x: Self) {
     
-    @scala.inline
-    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
   }
 }

@@ -27,8 +27,7 @@ object segmentedAndroidMod {
     @JSImport("antd-mobile-rn/lib/segmented-control/segmented.android", "default.defaultProps")
     @js.native
     def defaultProps: OnChange = js.native
-    @scala.inline
-    def defaultProps_=(x: OnChange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: OnChange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait SegmentControlNativeProps
@@ -41,29 +40,22 @@ object segmentedAndroidMod {
   }
   object SegmentControlNativeProps {
     
-    @scala.inline
-    def apply(): SegmentControlNativeProps = {
+    inline def apply(): SegmentControlNativeProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SegmentControlNativeProps]
     }
     
-    @scala.inline
-    implicit class SegmentControlNativePropsMutableBuilder[Self <: SegmentControlNativeProps] (val x: Self) extends AnyVal {
+    extension [Self <: SegmentControlNativeProps](x: Self) {
       
-      @scala.inline
-      def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setStyles(value: ISegmentControlStyle): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: ISegmentControlStyle): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     }
   }
   

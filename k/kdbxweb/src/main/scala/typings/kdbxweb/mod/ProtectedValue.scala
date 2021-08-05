@@ -28,9 +28,7 @@ object ProtectedValue {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromBinary(binary: ArrayBuffer): ProtectedValue = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(binary.asInstanceOf[js.Any]).asInstanceOf[ProtectedValue]
+  inline def fromBinary(binary: ArrayBuffer): ProtectedValue = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(binary.asInstanceOf[js.Any]).asInstanceOf[ProtectedValue]
   
-  @scala.inline
-  def fromString(str: String): ProtectedValue = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[ProtectedValue]
+  inline def fromString(str: String): ProtectedValue = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[ProtectedValue]
 }

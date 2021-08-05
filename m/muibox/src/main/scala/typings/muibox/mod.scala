@@ -11,14 +11,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def DialogProvider(_underscore: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("DialogProvider")(_underscore.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def DialogProvider(_underscore: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("DialogProvider")(_underscore.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def useDialog(): Dialog = ^.asInstanceOf[js.Dynamic].applyDynamic("useDialog")().asInstanceOf[Dialog]
+  inline def useDialog(): Dialog = ^.asInstanceOf[js.Dynamic].applyDynamic("useDialog")().asInstanceOf[Dialog]
   
-  @scala.inline
-  def withDialog(): js.Function1[/* WrappedComponent */ js.Any, js.Function1[/* props */ js.Any, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withDialog")().asInstanceOf[js.Function1[/* WrappedComponent */ js.Any, js.Function1[/* props */ js.Any, js.Any]]]
+  inline def withDialog(): js.Function1[/* WrappedComponent */ js.Any, js.Function1[/* props */ js.Any, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withDialog")().asInstanceOf[js.Function1[/* WrappedComponent */ js.Any, js.Function1[/* props */ js.Any, js.Any]]]
   
   trait AlertOptions extends StObject {
     
@@ -30,32 +27,24 @@ object mod {
   }
   object AlertOptions {
     
-    @scala.inline
-    def apply(): AlertOptions = {
+    inline def apply(): AlertOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AlertOptions]
     }
     
-    @scala.inline
-    implicit class AlertOptionsMutableBuilder[Self <: AlertOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AlertOptions](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String | ReactNode): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String | ReactNode): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setOk(value: DialogButtonOptions): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
+      inline def setOk(value: DialogButtonOptions): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOkUndefined: Self = StObject.set(x, "ok", js.undefined)
+      inline def setOkUndefined: Self = StObject.set(x, "ok", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -67,20 +56,16 @@ object mod {
   }
   object ConfirmOptions {
     
-    @scala.inline
-    def apply(): ConfirmOptions = {
+    inline def apply(): ConfirmOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfirmOptions]
     }
     
-    @scala.inline
-    implicit class ConfirmOptionsMutableBuilder[Self <: ConfirmOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConfirmOptions](x: Self) {
       
-      @scala.inline
-      def setCancel(value: DialogButtonOptions): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: DialogButtonOptions): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     }
   }
   
@@ -111,44 +96,32 @@ object mod {
   }
   object DialogButtonOptions {
     
-    @scala.inline
-    def apply(): DialogButtonOptions = {
+    inline def apply(): DialogButtonOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DialogButtonOptions]
     }
     
-    @scala.inline
-    implicit class DialogButtonOptionsMutableBuilder[Self <: DialogButtonOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DialogButtonOptions](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setEndIcon(value: ReactNode): Self = StObject.set(x, "endIcon", value.asInstanceOf[js.Any])
+      inline def setEndIcon(value: ReactNode): Self = StObject.set(x, "endIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndIconUndefined: Self = StObject.set(x, "endIcon", js.undefined)
+      inline def setEndIconUndefined: Self = StObject.set(x, "endIcon", js.undefined)
       
-      @scala.inline
-      def setStartIcon(value: ReactNode): Self = StObject.set(x, "startIcon", value.asInstanceOf[js.Any])
+      inline def setStartIcon(value: ReactNode): Self = StObject.set(x, "startIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartIconUndefined: Self = StObject.set(x, "startIcon", js.undefined)
+      inline def setStartIconUndefined: Self = StObject.set(x, "startIcon", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setVariant(value: String): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+      inline def setVariant(value: String): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
+      inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
     }
   }
   
@@ -164,32 +137,24 @@ object mod {
   }
   object PromptOptions {
     
-    @scala.inline
-    def apply(): PromptOptions = {
+    inline def apply(): PromptOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PromptOptions]
     }
     
-    @scala.inline
-    implicit class PromptOptionsMutableBuilder[Self <: PromptOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PromptOptions](x: Self) {
       
-      @scala.inline
-      def setDefaultValue(value: String | Double): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: String | Double): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      @scala.inline
-      def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+      inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     }
   }
 }

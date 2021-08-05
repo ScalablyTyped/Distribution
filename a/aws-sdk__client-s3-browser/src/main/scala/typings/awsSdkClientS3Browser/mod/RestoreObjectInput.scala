@@ -9,8 +9,7 @@ trait RestoreObjectInput
      with typings.awsSdkClientS3Browser.typesRestoreObjectInputMod.RestoreObjectInput
 object RestoreObjectInput {
   
-  @scala.inline
-  def apply(Bucket: String, Key: String): RestoreObjectInput = {
+  inline def apply(Bucket: String, Key: String): RestoreObjectInput = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestoreObjectInput]
   }

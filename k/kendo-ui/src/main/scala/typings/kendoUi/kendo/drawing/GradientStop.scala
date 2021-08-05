@@ -13,16 +13,13 @@ trait GradientStop
 }
 object GradientStop {
   
-  @scala.inline
-  def apply(options: GradientStopOptions): GradientStop = {
+  inline def apply(options: GradientStopOptions): GradientStop = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[GradientStop]
   }
   
-  @scala.inline
-  implicit class GradientStopMutableBuilder[Self <: GradientStop] (val x: Self) extends AnyVal {
+  extension [Self <: GradientStop](x: Self) {
     
-    @scala.inline
-    def setOptions(value: GradientStopOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: GradientStopOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

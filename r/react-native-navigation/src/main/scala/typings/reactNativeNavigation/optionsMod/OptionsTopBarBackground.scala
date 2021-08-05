@@ -37,43 +37,31 @@ trait OptionsTopBarBackground extends StObject {
 }
 object OptionsTopBarBackground {
   
-  @scala.inline
-  def apply(): OptionsTopBarBackground = {
+  inline def apply(): OptionsTopBarBackground = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OptionsTopBarBackground]
   }
   
-  @scala.inline
-  implicit class OptionsTopBarBackgroundMutableBuilder[Self <: OptionsTopBarBackground] (val x: Self) extends AnyVal {
+  extension [Self <: OptionsTopBarBackground](x: Self) {
     
-    @scala.inline
-    def setBlur(value: Boolean): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
+    inline def setBlur(value: Boolean): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
+    inline def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
     
-    @scala.inline
-    def setClipToBounds(value: Boolean): Self = StObject.set(x, "clipToBounds", value.asInstanceOf[js.Any])
+    inline def setClipToBounds(value: Boolean): Self = StObject.set(x, "clipToBounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClipToBoundsUndefined: Self = StObject.set(x, "clipToBounds", js.undefined)
+    inline def setClipToBoundsUndefined: Self = StObject.set(x, "clipToBounds", js.undefined)
     
-    @scala.inline
-    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setComponent(value: Name): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: Name): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
-    @scala.inline
-    def setTranslucent(value: Boolean): Self = StObject.set(x, "translucent", value.asInstanceOf[js.Any])
+    inline def setTranslucent(value: Boolean): Self = StObject.set(x, "translucent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslucentUndefined: Self = StObject.set(x, "translucent", js.undefined)
+    inline def setTranslucentUndefined: Self = StObject.set(x, "translucent", js.undefined)
   }
 }

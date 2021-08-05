@@ -13,10 +13,7 @@ object streamMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def readdirStream(dir: String): Readable = ^.asInstanceOf[js.Dynamic].applyDynamic("readdirStream")(dir.asInstanceOf[js.Any]).asInstanceOf[Readable]
-  @scala.inline
-  def readdirStream(dir: String, options: Optionsstatsfalseundefine): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirStream")(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  @scala.inline
-  def readdirStream(dir: String, options: Optionsstatstrue): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirStream")(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  inline def readdirStream(dir: String): Readable = ^.asInstanceOf[js.Dynamic].applyDynamic("readdirStream")(dir.asInstanceOf[js.Any]).asInstanceOf[Readable]
+  inline def readdirStream(dir: String, options: Optionsstatsfalseundefine): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirStream")(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  inline def readdirStream(dir: String, options: Optionsstatstrue): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirStream")(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Readable]
 }

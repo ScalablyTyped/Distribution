@@ -16,16 +16,13 @@ trait ISCEProvider
 }
 object ISCEProvider {
   
-  @scala.inline
-  def apply($get: js.Any, enabled: Boolean => Unit): ISCEProvider = {
+  inline def apply($get: js.Any, enabled: Boolean => Unit): ISCEProvider = {
     val __obj = js.Dynamic.literal($get = $get.asInstanceOf[js.Any], enabled = js.Any.fromFunction1(enabled))
     __obj.asInstanceOf[ISCEProvider]
   }
   
-  @scala.inline
-  implicit class ISCEProviderMutableBuilder[Self <: ISCEProvider] (val x: Self) extends AnyVal {
+  extension [Self <: ISCEProvider](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean => Unit): Self = StObject.set(x, "enabled", js.Any.fromFunction1(value))
+    inline def setEnabled(value: Boolean => Unit): Self = StObject.set(x, "enabled", js.Any.fromFunction1(value))
   }
 }

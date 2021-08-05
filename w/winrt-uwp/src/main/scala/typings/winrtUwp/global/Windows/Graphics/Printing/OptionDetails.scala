@@ -632,7 +632,6 @@ object OptionDetails {
       * @return Pointer to a PrintTaskOptionDetails object.
       */
     /* static member */
-    @scala.inline
-    def getFromPrintTaskOptions(printTaskOptions: typings.winrtUwp.Windows.Graphics.Printing.PrintTaskOptions): typings.winrtUwp.Windows.Graphics.Printing.OptionDetails.PrintTaskOptionDetails = ^.asInstanceOf[js.Dynamic].applyDynamic("getFromPrintTaskOptions")(printTaskOptions.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Graphics.Printing.OptionDetails.PrintTaskOptionDetails]
+    inline def getFromPrintTaskOptions(printTaskOptions: typings.winrtUwp.Windows.Graphics.Printing.PrintTaskOptions): typings.winrtUwp.Windows.Graphics.Printing.OptionDetails.PrintTaskOptionDetails = ^.asInstanceOf[js.Dynamic].applyDynamic("getFromPrintTaskOptions")(printTaskOptions.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Graphics.Printing.OptionDetails.PrintTaskOptionDetails]
   }
 }

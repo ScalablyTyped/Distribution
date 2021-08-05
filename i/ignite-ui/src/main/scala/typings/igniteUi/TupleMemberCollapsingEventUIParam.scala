@@ -33,43 +33,31 @@ trait TupleMemberCollapsingEventUIParam extends StObject {
 }
 object TupleMemberCollapsingEventUIParam {
   
-  @scala.inline
-  def apply(): TupleMemberCollapsingEventUIParam = {
+  inline def apply(): TupleMemberCollapsingEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TupleMemberCollapsingEventUIParam]
   }
   
-  @scala.inline
-  implicit class TupleMemberCollapsingEventUIParamMutableBuilder[Self <: TupleMemberCollapsingEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: TupleMemberCollapsingEventUIParam](x: Self) {
     
-    @scala.inline
-    def setAxisName(value: String): Self = StObject.set(x, "axisName", value.asInstanceOf[js.Any])
+    inline def setAxisName(value: String): Self = StObject.set(x, "axisName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisNameUndefined: Self = StObject.set(x, "axisName", js.undefined)
+    inline def setAxisNameUndefined: Self = StObject.set(x, "axisName", js.undefined)
     
-    @scala.inline
-    def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
-    @scala.inline
-    def setMemberIndex(value: Double): Self = StObject.set(x, "memberIndex", value.asInstanceOf[js.Any])
+    inline def setMemberIndex(value: Double): Self = StObject.set(x, "memberIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberIndexUndefined: Self = StObject.set(x, "memberIndex", js.undefined)
+    inline def setMemberIndexUndefined: Self = StObject.set(x, "memberIndex", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setTupleIndex(value: Double): Self = StObject.set(x, "tupleIndex", value.asInstanceOf[js.Any])
+    inline def setTupleIndex(value: Double): Self = StObject.set(x, "tupleIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTupleIndexUndefined: Self = StObject.set(x, "tupleIndex", js.undefined)
+    inline def setTupleIndexUndefined: Self = StObject.set(x, "tupleIndex", js.undefined)
   }
 }

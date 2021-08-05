@@ -28,40 +28,29 @@ trait Type extends StObject {
 }
 object Type {
   
-  @scala.inline
-  def apply(): Type = {
+  inline def apply(): Type = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Type]
   }
   
-  @scala.inline
-  implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
+  extension [Self <: Type](x: Self) {
     
-    @scala.inline
-    def setArrayColumnInfo(value: ColumnInfo): Self = StObject.set(x, "ArrayColumnInfo", value.asInstanceOf[js.Any])
+    inline def setArrayColumnInfo(value: ColumnInfo): Self = StObject.set(x, "ArrayColumnInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrayColumnInfoUndefined: Self = StObject.set(x, "ArrayColumnInfo", js.undefined)
+    inline def setArrayColumnInfoUndefined: Self = StObject.set(x, "ArrayColumnInfo", js.undefined)
     
-    @scala.inline
-    def setRowColumnInfo(value: ColumnInfoList): Self = StObject.set(x, "RowColumnInfo", value.asInstanceOf[js.Any])
+    inline def setRowColumnInfo(value: ColumnInfoList): Self = StObject.set(x, "RowColumnInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowColumnInfoUndefined: Self = StObject.set(x, "RowColumnInfo", js.undefined)
+    inline def setRowColumnInfoUndefined: Self = StObject.set(x, "RowColumnInfo", js.undefined)
     
-    @scala.inline
-    def setRowColumnInfoVarargs(value: ColumnInfo*): Self = StObject.set(x, "RowColumnInfo", js.Array(value :_*))
+    inline def setRowColumnInfoVarargs(value: ColumnInfo*): Self = StObject.set(x, "RowColumnInfo", js.Array(value :_*))
     
-    @scala.inline
-    def setScalarType(value: ScalarType): Self = StObject.set(x, "ScalarType", value.asInstanceOf[js.Any])
+    inline def setScalarType(value: ScalarType): Self = StObject.set(x, "ScalarType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalarTypeUndefined: Self = StObject.set(x, "ScalarType", js.undefined)
+    inline def setScalarTypeUndefined: Self = StObject.set(x, "ScalarType", js.undefined)
     
-    @scala.inline
-    def setTimeSeriesMeasureValueColumnInfo(value: ColumnInfo): Self = StObject.set(x, "TimeSeriesMeasureValueColumnInfo", value.asInstanceOf[js.Any])
+    inline def setTimeSeriesMeasureValueColumnInfo(value: ColumnInfo): Self = StObject.set(x, "TimeSeriesMeasureValueColumnInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeSeriesMeasureValueColumnInfoUndefined: Self = StObject.set(x, "TimeSeriesMeasureValueColumnInfo", js.undefined)
+    inline def setTimeSeriesMeasureValueColumnInfoUndefined: Self = StObject.set(x, "TimeSeriesMeasureValueColumnInfo", js.undefined)
   }
 }

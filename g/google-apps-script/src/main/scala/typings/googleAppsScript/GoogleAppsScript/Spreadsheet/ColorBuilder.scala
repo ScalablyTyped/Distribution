@@ -25,8 +25,7 @@ trait ColorBuilder extends StObject {
 }
 object ColorBuilder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     asRgbColor: () => RgbColor,
     asThemeColor: () => ThemeColor,
     build: () => Color,
@@ -38,25 +37,18 @@ object ColorBuilder {
     __obj.asInstanceOf[ColorBuilder]
   }
   
-  @scala.inline
-  implicit class ColorBuilderMutableBuilder[Self <: ColorBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: ColorBuilder](x: Self) {
     
-    @scala.inline
-    def setAsRgbColor(value: () => RgbColor): Self = StObject.set(x, "asRgbColor", js.Any.fromFunction0(value))
+    inline def setAsRgbColor(value: () => RgbColor): Self = StObject.set(x, "asRgbColor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAsThemeColor(value: () => ThemeColor): Self = StObject.set(x, "asThemeColor", js.Any.fromFunction0(value))
+    inline def setAsThemeColor(value: () => ThemeColor): Self = StObject.set(x, "asThemeColor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setBuild(value: () => Color): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
+    inline def setBuild(value: () => Color): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetColorType(value: () => ColorType): Self = StObject.set(x, "getColorType", js.Any.fromFunction0(value))
+    inline def setGetColorType(value: () => ColorType): Self = StObject.set(x, "getColorType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetRgbColor(value: String => ColorBuilder): Self = StObject.set(x, "setRgbColor", js.Any.fromFunction1(value))
+    inline def setSetRgbColor(value: String => ColorBuilder): Self = StObject.set(x, "setRgbColor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetThemeColor(value: ThemeColorType => ColorBuilder): Self = StObject.set(x, "setThemeColor", js.Any.fromFunction1(value))
+    inline def setSetThemeColor(value: ThemeColorType => ColorBuilder): Self = StObject.set(x, "setThemeColor", js.Any.fromFunction1(value))
   }
 }

@@ -12,8 +12,7 @@ object notificationImageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(props: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(props: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait Props extends StObject {
     
@@ -21,17 +20,14 @@ object notificationImageMod {
   }
   object Props {
     
-    @scala.inline
-    def apply(notification: Notification): Props = {
+    inline def apply(notification: Notification): Props = {
       val __obj = js.Dynamic.literal(notification = notification.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setNotification(value: Notification): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
+      inline def setNotification(value: Notification): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     }
   }
 }

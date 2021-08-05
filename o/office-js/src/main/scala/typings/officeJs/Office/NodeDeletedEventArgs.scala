@@ -29,22 +29,17 @@ trait NodeDeletedEventArgs extends StObject {
 }
 object NodeDeletedEventArgs {
   
-  @scala.inline
-  def apply(isUndoRedo: Boolean, oldNextSibling: CustomXmlNode, oldNode: CustomXmlNode): NodeDeletedEventArgs = {
+  inline def apply(isUndoRedo: Boolean, oldNextSibling: CustomXmlNode, oldNode: CustomXmlNode): NodeDeletedEventArgs = {
     val __obj = js.Dynamic.literal(isUndoRedo = isUndoRedo.asInstanceOf[js.Any], oldNextSibling = oldNextSibling.asInstanceOf[js.Any], oldNode = oldNode.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeDeletedEventArgs]
   }
   
-  @scala.inline
-  implicit class NodeDeletedEventArgsMutableBuilder[Self <: NodeDeletedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: NodeDeletedEventArgs](x: Self) {
     
-    @scala.inline
-    def setIsUndoRedo(value: Boolean): Self = StObject.set(x, "isUndoRedo", value.asInstanceOf[js.Any])
+    inline def setIsUndoRedo(value: Boolean): Self = StObject.set(x, "isUndoRedo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldNextSibling(value: CustomXmlNode): Self = StObject.set(x, "oldNextSibling", value.asInstanceOf[js.Any])
+    inline def setOldNextSibling(value: CustomXmlNode): Self = StObject.set(x, "oldNextSibling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldNode(value: CustomXmlNode): Self = StObject.set(x, "oldNode", value.asInstanceOf[js.Any])
+    inline def setOldNode(value: CustomXmlNode): Self = StObject.set(x, "oldNode", value.asInstanceOf[js.Any])
   }
 }

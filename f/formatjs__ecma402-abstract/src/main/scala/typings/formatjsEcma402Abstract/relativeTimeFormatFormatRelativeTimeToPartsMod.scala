@@ -14,6 +14,5 @@ object relativeTimeFormatFormatRelativeTimeToPartsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def FormatRelativeTimeToParts(rtf: RelativeTimeFormat, value: Double, unit: RelativeTimeFormattableUnit, implDetails: `0`): js.Array[RelativeTimePart] = (^.asInstanceOf[js.Dynamic].applyDynamic("FormatRelativeTimeToParts")(rtf.asInstanceOf[js.Any], value.asInstanceOf[js.Any], unit.asInstanceOf[js.Any], implDetails.asInstanceOf[js.Any])).asInstanceOf[js.Array[RelativeTimePart]]
+  inline def FormatRelativeTimeToParts(rtf: RelativeTimeFormat, value: Double, unit: RelativeTimeFormattableUnit, implDetails: `0`): js.Array[RelativeTimePart] = (^.asInstanceOf[js.Dynamic].applyDynamic("FormatRelativeTimeToParts")(rtf.asInstanceOf[js.Any], value.asInstanceOf[js.Any], unit.asInstanceOf[js.Any], implDetails.asInstanceOf[js.Any])).asInstanceOf[js.Array[RelativeTimePart]]
 }

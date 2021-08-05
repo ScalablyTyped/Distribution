@@ -23,34 +23,25 @@ trait ListKeyPoliciesResponse extends StObject {
 }
 object ListKeyPoliciesResponse {
   
-  @scala.inline
-  def apply(): ListKeyPoliciesResponse = {
+  inline def apply(): ListKeyPoliciesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListKeyPoliciesResponse]
   }
   
-  @scala.inline
-  implicit class ListKeyPoliciesResponseMutableBuilder[Self <: ListKeyPoliciesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListKeyPoliciesResponse](x: Self) {
     
-    @scala.inline
-    def setNextMarker(value: MarkerType): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
+    inline def setNextMarker(value: MarkerType): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
+    inline def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
     
-    @scala.inline
-    def setPolicyNames(value: PolicyNameList): Self = StObject.set(x, "PolicyNames", value.asInstanceOf[js.Any])
+    inline def setPolicyNames(value: PolicyNameList): Self = StObject.set(x, "PolicyNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyNamesUndefined: Self = StObject.set(x, "PolicyNames", js.undefined)
+    inline def setPolicyNamesUndefined: Self = StObject.set(x, "PolicyNames", js.undefined)
     
-    @scala.inline
-    def setPolicyNamesVarargs(value: PolicyNameType*): Self = StObject.set(x, "PolicyNames", js.Array(value :_*))
+    inline def setPolicyNamesVarargs(value: PolicyNameType*): Self = StObject.set(x, "PolicyNames", js.Array(value :_*))
     
-    @scala.inline
-    def setTruncated(value: BooleanType): Self = StObject.set(x, "Truncated", value.asInstanceOf[js.Any])
+    inline def setTruncated(value: BooleanType): Self = StObject.set(x, "Truncated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTruncatedUndefined: Self = StObject.set(x, "Truncated", js.undefined)
+    inline def setTruncatedUndefined: Self = StObject.set(x, "Truncated", js.undefined)
   }
 }

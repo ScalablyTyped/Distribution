@@ -34,91 +34,63 @@ trait AdvertiserName extends StObject {
 }
 object AdvertiserName {
   
-  @scala.inline
-  def apply(): AdvertiserName = {
+  inline def apply(): AdvertiserName = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AdvertiserName]
   }
   
-  @scala.inline
-  implicit class AdvertiserNameMutableBuilder[Self <: AdvertiserName] (val x: Self) extends AnyVal {
+  extension [Self <: AdvertiserName](x: Self) {
     
-    @scala.inline
-    def setAdvertiserName(value: String): Self = StObject.set(x, "advertiserName", value.asInstanceOf[js.Any])
+    inline def setAdvertiserName(value: String): Self = StObject.set(x, "advertiserName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdvertiserNameUndefined: Self = StObject.set(x, "advertiserName", js.undefined)
+    inline def setAdvertiserNameUndefined: Self = StObject.set(x, "advertiserName", js.undefined)
     
-    @scala.inline
-    def setDestinationUrl(value: String): Self = StObject.set(x, "destinationUrl", value.asInstanceOf[js.Any])
+    inline def setDestinationUrl(value: String): Self = StObject.set(x, "destinationUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationUrlUndefined: Self = StObject.set(x, "destinationUrl", js.undefined)
+    inline def setDestinationUrlUndefined: Self = StObject.set(x, "destinationUrl", js.undefined)
     
-    @scala.inline
-    def setDisplayFrequency(value: Double): Self = StObject.set(x, "displayFrequency", value.asInstanceOf[js.Any])
+    inline def setDisplayFrequency(value: Double): Self = StObject.set(x, "displayFrequency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayFrequencyUndefined: Self = StObject.set(x, "displayFrequency", js.undefined)
+    inline def setDisplayFrequencyUndefined: Self = StObject.set(x, "displayFrequency", js.undefined)
     
-    @scala.inline
-    def setDisplaySeconds(value: Double): Self = StObject.set(x, "displaySeconds", value.asInstanceOf[js.Any])
+    inline def setDisplaySeconds(value: Double): Self = StObject.set(x, "displaySeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplaySecondsUndefined: Self = StObject.set(x, "displaySeconds", js.undefined)
+    inline def setDisplaySecondsUndefined: Self = StObject.set(x, "displaySeconds", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+    inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageMime(value: String): Self = StObject.set(x, "imageMime", value.asInstanceOf[js.Any])
+    inline def setImageMime(value: String): Self = StObject.set(x, "imageMime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageMimeUndefined: Self = StObject.set(x, "imageMime", js.undefined)
+    inline def setImageMimeUndefined: Self = StObject.set(x, "imageMime", js.undefined)
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
-    @scala.inline
-    def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
+    inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
+    inline def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
     
-    @scala.inline
-    def setOpenInTrunk(value: Boolean): Self = StObject.set(x, "openInTrunk", value.asInstanceOf[js.Any])
+    inline def setOpenInTrunk(value: Boolean): Self = StObject.set(x, "openInTrunk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenInTrunkUndefined: Self = StObject.set(x, "openInTrunk", js.undefined)
+    inline def setOpenInTrunkUndefined: Self = StObject.set(x, "openInTrunk", js.undefined)
     
-    @scala.inline
-    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
+    inline def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

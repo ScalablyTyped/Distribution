@@ -32,8 +32,7 @@ trait ClusterCreationOptions extends StObject {
 }
 object ClusterCreationOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     defaultStorageAccountKey: String,
     defaultStorageAccountName: String,
     defaultStorageContainer: String,
@@ -47,52 +46,36 @@ object ClusterCreationOptions {
     __obj.asInstanceOf[ClusterCreationOptions]
   }
   
-  @scala.inline
-  implicit class ClusterCreationOptionsMutableBuilder[Self <: ClusterCreationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterCreationOptions](x: Self) {
     
-    @scala.inline
-    def setAdditionalStorageAccounts(value: js.Array[Key]): Self = StObject.set(x, "additionalStorageAccounts", value.asInstanceOf[js.Any])
+    inline def setAdditionalStorageAccounts(value: js.Array[Key]): Self = StObject.set(x, "additionalStorageAccounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalStorageAccountsUndefined: Self = StObject.set(x, "additionalStorageAccounts", js.undefined)
+    inline def setAdditionalStorageAccountsUndefined: Self = StObject.set(x, "additionalStorageAccounts", js.undefined)
     
-    @scala.inline
-    def setAdditionalStorageAccountsVarargs(value: Key*): Self = StObject.set(x, "additionalStorageAccounts", js.Array(value :_*))
+    inline def setAdditionalStorageAccountsVarargs(value: Key*): Self = StObject.set(x, "additionalStorageAccounts", js.Array(value :_*))
     
-    @scala.inline
-    def setDefaultStorageAccountKey(value: String): Self = StObject.set(x, "defaultStorageAccountKey", value.asInstanceOf[js.Any])
+    inline def setDefaultStorageAccountKey(value: String): Self = StObject.set(x, "defaultStorageAccountKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultStorageAccountName(value: String): Self = StObject.set(x, "defaultStorageAccountName", value.asInstanceOf[js.Any])
+    inline def setDefaultStorageAccountName(value: String): Self = StObject.set(x, "defaultStorageAccountName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultStorageContainer(value: String): Self = StObject.set(x, "defaultStorageContainer", value.asInstanceOf[js.Any])
+    inline def setDefaultStorageContainer(value: String): Self = StObject.set(x, "defaultStorageContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiveMetastore(value: Database): Self = StObject.set(x, "hiveMetastore", value.asInstanceOf[js.Any])
+    inline def setHiveMetastore(value: Database): Self = StObject.set(x, "hiveMetastore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiveMetastoreUndefined: Self = StObject.set(x, "hiveMetastore", js.undefined)
+    inline def setHiveMetastoreUndefined: Self = StObject.set(x, "hiveMetastore", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodes(value: Double): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: Double): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOozieMetastore(value: Database): Self = StObject.set(x, "oozieMetastore", value.asInstanceOf[js.Any])
+    inline def setOozieMetastore(value: Database): Self = StObject.set(x, "oozieMetastore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOozieMetastoreUndefined: Self = StObject.set(x, "oozieMetastore", js.undefined)
+    inline def setOozieMetastoreUndefined: Self = StObject.set(x, "oozieMetastore", js.undefined)
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

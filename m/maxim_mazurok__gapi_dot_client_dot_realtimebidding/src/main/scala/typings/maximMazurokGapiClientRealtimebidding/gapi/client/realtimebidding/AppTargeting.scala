@@ -14,25 +14,19 @@ trait AppTargeting extends StObject {
 }
 object AppTargeting {
   
-  @scala.inline
-  def apply(): AppTargeting = {
+  inline def apply(): AppTargeting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AppTargeting]
   }
   
-  @scala.inline
-  implicit class AppTargetingMutableBuilder[Self <: AppTargeting] (val x: Self) extends AnyVal {
+  extension [Self <: AppTargeting](x: Self) {
     
-    @scala.inline
-    def setMobileAppCategoryTargeting(value: NumericTargetingDimension): Self = StObject.set(x, "mobileAppCategoryTargeting", value.asInstanceOf[js.Any])
+    inline def setMobileAppCategoryTargeting(value: NumericTargetingDimension): Self = StObject.set(x, "mobileAppCategoryTargeting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMobileAppCategoryTargetingUndefined: Self = StObject.set(x, "mobileAppCategoryTargeting", js.undefined)
+    inline def setMobileAppCategoryTargetingUndefined: Self = StObject.set(x, "mobileAppCategoryTargeting", js.undefined)
     
-    @scala.inline
-    def setMobileAppTargeting(value: StringTargetingDimension): Self = StObject.set(x, "mobileAppTargeting", value.asInstanceOf[js.Any])
+    inline def setMobileAppTargeting(value: StringTargetingDimension): Self = StObject.set(x, "mobileAppTargeting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMobileAppTargetingUndefined: Self = StObject.set(x, "mobileAppTargeting", js.undefined)
+    inline def setMobileAppTargetingUndefined: Self = StObject.set(x, "mobileAppTargeting", js.undefined)
   }
 }

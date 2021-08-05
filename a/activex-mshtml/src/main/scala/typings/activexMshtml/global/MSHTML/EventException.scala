@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.EventException")
 @js.native
-class EventException protected ()
+/* private */ class EventException ()
   extends StObject
      with typings.activexMshtml.MSHTML.EventException {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.EventException_typekey")
   var MSHTMLDotEventException_typekey: typings.activexMshtml.MSHTML.EventException = js.native
 }

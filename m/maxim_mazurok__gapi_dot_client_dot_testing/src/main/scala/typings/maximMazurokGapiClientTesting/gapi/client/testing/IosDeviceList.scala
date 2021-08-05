@@ -11,22 +11,17 @@ trait IosDeviceList extends StObject {
 }
 object IosDeviceList {
   
-  @scala.inline
-  def apply(): IosDeviceList = {
+  inline def apply(): IosDeviceList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IosDeviceList]
   }
   
-  @scala.inline
-  implicit class IosDeviceListMutableBuilder[Self <: IosDeviceList] (val x: Self) extends AnyVal {
+  extension [Self <: IosDeviceList](x: Self) {
     
-    @scala.inline
-    def setIosDevices(value: js.Array[IosDevice]): Self = StObject.set(x, "iosDevices", value.asInstanceOf[js.Any])
+    inline def setIosDevices(value: js.Array[IosDevice]): Self = StObject.set(x, "iosDevices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIosDevicesUndefined: Self = StObject.set(x, "iosDevices", js.undefined)
+    inline def setIosDevicesUndefined: Self = StObject.set(x, "iosDevices", js.undefined)
     
-    @scala.inline
-    def setIosDevicesVarargs(value: IosDevice*): Self = StObject.set(x, "iosDevices", js.Array(value :_*))
+    inline def setIosDevicesVarargs(value: IosDevice*): Self = StObject.set(x, "iosDevices", js.Array(value :_*))
   }
 }

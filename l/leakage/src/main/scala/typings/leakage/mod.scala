@@ -22,19 +22,15 @@ object mod {
   
   object iterate {
     
-    @scala.inline
-    def apply(iteratorFn: js.Function0[Unit]): Result = ^.asInstanceOf[js.Dynamic].apply(iteratorFn.asInstanceOf[js.Any]).asInstanceOf[Result]
-    @scala.inline
-    def apply(iteratorFn: js.Function0[Unit], options: IterateOptions): Result = (^.asInstanceOf[js.Dynamic].apply(iteratorFn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
+    inline def apply(iteratorFn: js.Function0[Unit]): Result = ^.asInstanceOf[js.Dynamic].apply(iteratorFn.asInstanceOf[js.Any]).asInstanceOf[Result]
+    inline def apply(iteratorFn: js.Function0[Unit], options: IterateOptions): Result = (^.asInstanceOf[js.Dynamic].apply(iteratorFn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
     
     @JSImport("leakage", "iterate")
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def async(iteratorFn: js.Function0[js.Promise[Unit]]): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("async")(iteratorFn.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
-    @scala.inline
-    def async(iteratorFn: js.Function0[js.Promise[Unit]], options: IterateOptions): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(iteratorFn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
+    inline def async(iteratorFn: js.Function0[js.Promise[Unit]]): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("async")(iteratorFn.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
+    inline def async(iteratorFn: js.Function0[js.Promise[Unit]], options: IterateOptions): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(iteratorFn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   }
   
   trait IterateOptions extends StObject {
@@ -45,26 +41,20 @@ object mod {
   }
   object IterateOptions {
     
-    @scala.inline
-    def apply(): IterateOptions = {
+    inline def apply(): IterateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IterateOptions]
     }
     
-    @scala.inline
-    implicit class IterateOptionsMutableBuilder[Self <: IterateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IterateOptions](x: Self) {
       
-      @scala.inline
-      def setGcollections(value: Double): Self = StObject.set(x, "gcollections", value.asInstanceOf[js.Any])
+      inline def setGcollections(value: Double): Self = StObject.set(x, "gcollections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGcollectionsUndefined: Self = StObject.set(x, "gcollections", js.undefined)
+      inline def setGcollectionsUndefined: Self = StObject.set(x, "gcollections", js.undefined)
       
-      @scala.inline
-      def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
+      inline def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
+      inline def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
     }
   }
   

@@ -114,8 +114,7 @@ object mod {
   @JSImport("ansi-colors", "enabled")
   @js.native
   def enabled: Boolean = js.native
-  @scala.inline
-  def enabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enabled")(x.asInstanceOf[js.Any])
+  inline def enabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enabled")(x.asInstanceOf[js.Any])
   
   @JSImport("ansi-colors", "gray")
   @js.native
@@ -153,8 +152,7 @@ object mod {
   @js.native
   val magentaBright: StyleFunction = js.native
   
-  @scala.inline
-  def ok(args: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ok")(args.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def ok(args: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ok")(args.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("ansi-colors", "red")
   @js.native
@@ -172,11 +170,9 @@ object mod {
   @js.native
   val strikethrough: StyleFunction = js.native
   
-  @scala.inline
-  def strip(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("strip")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def strip(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("strip")(s.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def stripColor(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stripColor")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stripColor(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stripColor")(s.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("ansi-colors", "styles")
   @js.native
@@ -190,14 +186,12 @@ object mod {
   @js.native
   val underline: StyleFunction = js.native
   
-  @scala.inline
-  def unstyle(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unstyle")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def unstyle(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unstyle")(s.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("ansi-colors", "visible")
   @js.native
   def visible: Boolean = js.native
-  @scala.inline
-  def visible_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("visible")(x.asInstanceOf[js.Any])
+  inline def visible_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("visible")(x.asInstanceOf[js.Any])
   
   @JSImport("ansi-colors", "white")
   @js.native
@@ -225,23 +219,18 @@ object mod {
   }
   object StyleArrayProperties {
     
-    @scala.inline
-    def apply(close: String, closeRe: String, open: String): StyleArrayProperties = {
+    inline def apply(close: String, closeRe: String, open: String): StyleArrayProperties = {
       val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any], closeRe = closeRe.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
       __obj.asInstanceOf[StyleArrayProperties]
     }
     
-    @scala.inline
-    implicit class StyleArrayPropertiesMutableBuilder[Self <: StyleArrayProperties] (val x: Self) extends AnyVal {
+    extension [Self <: StyleArrayProperties](x: Self) {
       
-      @scala.inline
-      def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+      inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseRe(value: String): Self = StObject.set(x, "closeRe", value.asInstanceOf[js.Any])
+      inline def setCloseRe(value: String): Self = StObject.set(x, "closeRe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpen(value: String): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: String): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     }
   }
   
@@ -350,8 +339,7 @@ object mod {
   }
   object StylesType {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       bgBlack: T,
       bgBlackBright: T,
       bgBlue: T,
@@ -399,134 +387,91 @@ object mod {
       __obj.asInstanceOf[StylesType[T]]
     }
     
-    @scala.inline
-    implicit class StylesTypeMutableBuilder[Self <: StylesType[?], T] (val x: Self & StylesType[T]) extends AnyVal {
+    extension [Self <: StylesType[?], T](x: Self & StylesType[T]) {
       
-      @scala.inline
-      def setBgBlack(value: T): Self = StObject.set(x, "bgBlack", value.asInstanceOf[js.Any])
+      inline def setBgBlack(value: T): Self = StObject.set(x, "bgBlack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgBlackBright(value: T): Self = StObject.set(x, "bgBlackBright", value.asInstanceOf[js.Any])
+      inline def setBgBlackBright(value: T): Self = StObject.set(x, "bgBlackBright", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgBlue(value: T): Self = StObject.set(x, "bgBlue", value.asInstanceOf[js.Any])
+      inline def setBgBlue(value: T): Self = StObject.set(x, "bgBlue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgBlueBright(value: T): Self = StObject.set(x, "bgBlueBright", value.asInstanceOf[js.Any])
+      inline def setBgBlueBright(value: T): Self = StObject.set(x, "bgBlueBright", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgCyan(value: T): Self = StObject.set(x, "bgCyan", value.asInstanceOf[js.Any])
+      inline def setBgCyan(value: T): Self = StObject.set(x, "bgCyan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgCyanBright(value: T): Self = StObject.set(x, "bgCyanBright", value.asInstanceOf[js.Any])
+      inline def setBgCyanBright(value: T): Self = StObject.set(x, "bgCyanBright", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgGreen(value: T): Self = StObject.set(x, "bgGreen", value.asInstanceOf[js.Any])
+      inline def setBgGreen(value: T): Self = StObject.set(x, "bgGreen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgGreenBright(value: T): Self = StObject.set(x, "bgGreenBright", value.asInstanceOf[js.Any])
+      inline def setBgGreenBright(value: T): Self = StObject.set(x, "bgGreenBright", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgMagenta(value: T): Self = StObject.set(x, "bgMagenta", value.asInstanceOf[js.Any])
+      inline def setBgMagenta(value: T): Self = StObject.set(x, "bgMagenta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgMagentaBright(value: T): Self = StObject.set(x, "bgMagentaBright", value.asInstanceOf[js.Any])
+      inline def setBgMagentaBright(value: T): Self = StObject.set(x, "bgMagentaBright", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgRed(value: T): Self = StObject.set(x, "bgRed", value.asInstanceOf[js.Any])
+      inline def setBgRed(value: T): Self = StObject.set(x, "bgRed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgRedBright(value: T): Self = StObject.set(x, "bgRedBright", value.asInstanceOf[js.Any])
+      inline def setBgRedBright(value: T): Self = StObject.set(x, "bgRedBright", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgWhite(value: T): Self = StObject.set(x, "bgWhite", value.asInstanceOf[js.Any])
+      inline def setBgWhite(value: T): Self = StObject.set(x, "bgWhite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgWhiteBright(value: T): Self = StObject.set(x, "bgWhiteBright", value.asInstanceOf[js.Any])
+      inline def setBgWhiteBright(value: T): Self = StObject.set(x, "bgWhiteBright", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgYellow(value: T): Self = StObject.set(x, "bgYellow", value.asInstanceOf[js.Any])
+      inline def setBgYellow(value: T): Self = StObject.set(x, "bgYellow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgYellowBright(value: T): Self = StObject.set(x, "bgYellowBright", value.asInstanceOf[js.Any])
+      inline def setBgYellowBright(value: T): Self = StObject.set(x, "bgYellowBright", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlack(value: T): Self = StObject.set(x, "black", value.asInstanceOf[js.Any])
+      inline def setBlack(value: T): Self = StObject.set(x, "black", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlackBright(value: T): Self = StObject.set(x, "blackBright", value.asInstanceOf[js.Any])
+      inline def setBlackBright(value: T): Self = StObject.set(x, "blackBright", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlue(value: T): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
+      inline def setBlue(value: T): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlueBright(value: T): Self = StObject.set(x, "blueBright", value.asInstanceOf[js.Any])
+      inline def setBlueBright(value: T): Self = StObject.set(x, "blueBright", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBold(value: T): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
+      inline def setBold(value: T): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCyan(value: T): Self = StObject.set(x, "cyan", value.asInstanceOf[js.Any])
+      inline def setCyan(value: T): Self = StObject.set(x, "cyan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCyanBright(value: T): Self = StObject.set(x, "cyanBright", value.asInstanceOf[js.Any])
+      inline def setCyanBright(value: T): Self = StObject.set(x, "cyanBright", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDim(value: T): Self = StObject.set(x, "dim", value.asInstanceOf[js.Any])
+      inline def setDim(value: T): Self = StObject.set(x, "dim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGray(value: T): Self = StObject.set(x, "gray", value.asInstanceOf[js.Any])
+      inline def setGray(value: T): Self = StObject.set(x, "gray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreen(value: T): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
+      inline def setGreen(value: T): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreenBright(value: T): Self = StObject.set(x, "greenBright", value.asInstanceOf[js.Any])
+      inline def setGreenBright(value: T): Self = StObject.set(x, "greenBright", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrey(value: T): Self = StObject.set(x, "grey", value.asInstanceOf[js.Any])
+      inline def setGrey(value: T): Self = StObject.set(x, "grey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHidden(value: T): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: T): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInverse(value: T): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
+      inline def setInverse(value: T): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItalic(value: T): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
+      inline def setItalic(value: T): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMagenta(value: T): Self = StObject.set(x, "magenta", value.asInstanceOf[js.Any])
+      inline def setMagenta(value: T): Self = StObject.set(x, "magenta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMagentaBright(value: T): Self = StObject.set(x, "magentaBright", value.asInstanceOf[js.Any])
+      inline def setMagentaBright(value: T): Self = StObject.set(x, "magentaBright", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRed(value: T): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
+      inline def setRed(value: T): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedBright(value: T): Self = StObject.set(x, "redBright", value.asInstanceOf[js.Any])
+      inline def setRedBright(value: T): Self = StObject.set(x, "redBright", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReset(value: T): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
+      inline def setReset(value: T): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrikethrough(value: T): Self = StObject.set(x, "strikethrough", value.asInstanceOf[js.Any])
+      inline def setStrikethrough(value: T): Self = StObject.set(x, "strikethrough", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnderline(value: T): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
+      inline def setUnderline(value: T): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhite(value: T): Self = StObject.set(x, "white", value.asInstanceOf[js.Any])
+      inline def setWhite(value: T): Self = StObject.set(x, "white", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhiteBright(value: T): Self = StObject.set(x, "whiteBright", value.asInstanceOf[js.Any])
+      inline def setWhiteBright(value: T): Self = StObject.set(x, "whiteBright", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYellow(value: T): Self = StObject.set(x, "yellow", value.asInstanceOf[js.Any])
+      inline def setYellow(value: T): Self = StObject.set(x, "yellow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYellowBright(value: T): Self = StObject.set(x, "yellowBright", value.asInstanceOf[js.Any])
+      inline def setYellowBright(value: T): Self = StObject.set(x, "yellowBright", value.asInstanceOf[js.Any])
     }
   }
   
@@ -550,8 +495,7 @@ object mod {
   }
   object SymbolsType {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       check: String,
       cross: String,
       info: String,
@@ -565,32 +509,23 @@ object mod {
       __obj.asInstanceOf[SymbolsType]
     }
     
-    @scala.inline
-    implicit class SymbolsTypeMutableBuilder[Self <: SymbolsType] (val x: Self) extends AnyVal {
+    extension [Self <: SymbolsType](x: Self) {
       
-      @scala.inline
-      def setCheck(value: String): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
+      inline def setCheck(value: String): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCross(value: String): Self = StObject.set(x, "cross", value.asInstanceOf[js.Any])
+      inline def setCross(value: String): Self = StObject.set(x, "cross", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointer(value: String): Self = StObject.set(x, "pointer", value.asInstanceOf[js.Any])
+      inline def setPointer(value: String): Self = StObject.set(x, "pointer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointerSmall(value: String): Self = StObject.set(x, "pointerSmall", value.asInstanceOf[js.Any])
+      inline def setPointerSmall(value: String): Self = StObject.set(x, "pointerSmall", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuestion(value: String): Self = StObject.set(x, "question", value.asInstanceOf[js.Any])
+      inline def setQuestion(value: String): Self = StObject.set(x, "question", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarning(value: String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+      inline def setWarning(value: String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -14,31 +14,23 @@ trait Csv extends StObject {
 }
 object Csv {
   
-  @scala.inline
-  def apply(): Csv = {
+  inline def apply(): Csv = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Csv]
   }
   
-  @scala.inline
-  implicit class CsvMutableBuilder[Self <: Csv] (val x: Self) extends AnyVal {
+  extension [Self <: Csv](x: Self) {
     
-    @scala.inline
-    def setDataRows(value: js.Array[CsvRow]): Self = StObject.set(x, "dataRows", value.asInstanceOf[js.Any])
+    inline def setDataRows(value: js.Array[CsvRow]): Self = StObject.set(x, "dataRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataRowsUndefined: Self = StObject.set(x, "dataRows", js.undefined)
+    inline def setDataRowsUndefined: Self = StObject.set(x, "dataRows", js.undefined)
     
-    @scala.inline
-    def setDataRowsVarargs(value: CsvRow*): Self = StObject.set(x, "dataRows", js.Array(value :_*))
+    inline def setDataRowsVarargs(value: CsvRow*): Self = StObject.set(x, "dataRows", js.Array(value :_*))
     
-    @scala.inline
-    def setHeaders(value: js.Array[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Array[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value :_*))
   }
 }

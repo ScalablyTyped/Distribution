@@ -53,67 +53,47 @@ trait ResourceShareAssociation extends StObject {
 }
 object ResourceShareAssociation {
   
-  @scala.inline
-  def apply(): ResourceShareAssociation = {
+  inline def apply(): ResourceShareAssociation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceShareAssociation]
   }
   
-  @scala.inline
-  implicit class ResourceShareAssociationMutableBuilder[Self <: ResourceShareAssociation] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceShareAssociation](x: Self) {
     
-    @scala.inline
-    def setAssociatedEntity(value: String): Self = StObject.set(x, "associatedEntity", value.asInstanceOf[js.Any])
+    inline def setAssociatedEntity(value: String): Self = StObject.set(x, "associatedEntity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociatedEntityUndefined: Self = StObject.set(x, "associatedEntity", js.undefined)
+    inline def setAssociatedEntityUndefined: Self = StObject.set(x, "associatedEntity", js.undefined)
     
-    @scala.inline
-    def setAssociationType(value: ResourceShareAssociationType): Self = StObject.set(x, "associationType", value.asInstanceOf[js.Any])
+    inline def setAssociationType(value: ResourceShareAssociationType): Self = StObject.set(x, "associationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationTypeUndefined: Self = StObject.set(x, "associationType", js.undefined)
+    inline def setAssociationTypeUndefined: Self = StObject.set(x, "associationType", js.undefined)
     
-    @scala.inline
-    def setCreationTime(value: DateTime): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: DateTime): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
-    @scala.inline
-    def setExternal(value: Boolean): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
+    inline def setExternal(value: Boolean): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalUndefined: Self = StObject.set(x, "external", js.undefined)
+    inline def setExternalUndefined: Self = StObject.set(x, "external", js.undefined)
     
-    @scala.inline
-    def setLastUpdatedTime(value: DateTime): Self = StObject.set(x, "lastUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTime(value: DateTime): Self = StObject.set(x, "lastUpdatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedTimeUndefined: Self = StObject.set(x, "lastUpdatedTime", js.undefined)
+    inline def setLastUpdatedTimeUndefined: Self = StObject.set(x, "lastUpdatedTime", js.undefined)
     
-    @scala.inline
-    def setResourceShareArn(value: String): Self = StObject.set(x, "resourceShareArn", value.asInstanceOf[js.Any])
+    inline def setResourceShareArn(value: String): Self = StObject.set(x, "resourceShareArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceShareArnUndefined: Self = StObject.set(x, "resourceShareArn", js.undefined)
+    inline def setResourceShareArnUndefined: Self = StObject.set(x, "resourceShareArn", js.undefined)
     
-    @scala.inline
-    def setResourceShareName(value: String): Self = StObject.set(x, "resourceShareName", value.asInstanceOf[js.Any])
+    inline def setResourceShareName(value: String): Self = StObject.set(x, "resourceShareName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceShareNameUndefined: Self = StObject.set(x, "resourceShareName", js.undefined)
+    inline def setResourceShareNameUndefined: Self = StObject.set(x, "resourceShareName", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ResourceShareAssociationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ResourceShareAssociationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
+    inline def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
+    inline def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

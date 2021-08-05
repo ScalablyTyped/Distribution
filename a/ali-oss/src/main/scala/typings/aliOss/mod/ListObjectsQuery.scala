@@ -19,35 +19,26 @@ trait ListObjectsQuery extends StObject {
 }
 object ListObjectsQuery {
   
-  @scala.inline
-  def apply(`max-keys`: String | Double): ListObjectsQuery = {
+  inline def apply(`max-keys`: String | Double): ListObjectsQuery = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("max-keys")(`max-keys`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListObjectsQuery]
   }
   
-  @scala.inline
-  implicit class ListObjectsQueryMutableBuilder[Self <: ListObjectsQuery] (val x: Self) extends AnyVal {
+  extension [Self <: ListObjectsQuery](x: Self) {
     
-    @scala.inline
-    def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+    inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+    inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
-    @scala.inline
-    def `setMax-keys`(value: String | Double): Self = StObject.set(x, "max-keys", value.asInstanceOf[js.Any])
+    inline def `setMax-keys`(value: String | Double): Self = StObject.set(x, "max-keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
   }
 }

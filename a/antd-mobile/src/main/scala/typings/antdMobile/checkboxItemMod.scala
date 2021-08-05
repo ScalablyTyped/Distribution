@@ -22,8 +22,7 @@ object checkboxItemMod {
     @JSImport("antd-mobile/lib/checkbox/CheckboxItem", "default.defaultProps")
     @js.native
     def defaultProps: CheckboxProps = js.native
-    @scala.inline
-    def defaultProps_=(x: CheckboxProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: CheckboxProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -46,44 +45,32 @@ object checkboxItemMod {
   }
   object CheckboxItemProps {
     
-    @scala.inline
-    def apply(): CheckboxItemProps = {
+    inline def apply(): CheckboxItemProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CheckboxItemProps]
     }
     
-    @scala.inline
-    implicit class CheckboxItemPropsMutableBuilder[Self <: CheckboxItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: CheckboxItemProps](x: Self) {
       
-      @scala.inline
-      def setCheckboxProps(value: typings.antdMobile.checkboxCheckboxMod.CheckboxProps): Self = StObject.set(x, "checkboxProps", value.asInstanceOf[js.Any])
+      inline def setCheckboxProps(value: typings.antdMobile.checkboxCheckboxMod.CheckboxProps): Self = StObject.set(x, "checkboxProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckboxPropsUndefined: Self = StObject.set(x, "checkboxProps", js.undefined)
+      inline def setCheckboxPropsUndefined: Self = StObject.set(x, "checkboxProps", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setListPrefixCls(value: String): Self = StObject.set(x, "listPrefixCls", value.asInstanceOf[js.Any])
+      inline def setListPrefixCls(value: String): Self = StObject.set(x, "listPrefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListPrefixClsUndefined: Self = StObject.set(x, "listPrefixCls", js.undefined)
+      inline def setListPrefixClsUndefined: Self = StObject.set(x, "listPrefixCls", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setWrapLabel(value: Boolean): Self = StObject.set(x, "wrapLabel", value.asInstanceOf[js.Any])
+      inline def setWrapLabel(value: Boolean): Self = StObject.set(x, "wrapLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapLabelUndefined: Self = StObject.set(x, "wrapLabel", js.undefined)
+      inline def setWrapLabelUndefined: Self = StObject.set(x, "wrapLabel", js.undefined)
     }
   }
 }

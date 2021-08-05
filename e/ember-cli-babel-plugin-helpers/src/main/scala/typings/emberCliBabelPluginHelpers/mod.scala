@@ -12,24 +12,16 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addPlugin(config: js.Array[BabelPluginConfig], plugin: BabelPluginConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addPlugin")(config.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addPlugin(config: js.Array[BabelPluginConfig], plugin: BabelPluginConfig, options: AddPluginOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addPlugin")(config.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addPlugin(config: ConfigurationTarget, plugin: BabelPluginConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addPlugin")(config.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addPlugin(config: ConfigurationTarget, plugin: BabelPluginConfig, options: AddPluginOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addPlugin")(config.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addPlugin(config: js.Array[BabelPluginConfig], plugin: BabelPluginConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addPlugin")(config.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addPlugin(config: js.Array[BabelPluginConfig], plugin: BabelPluginConfig, options: AddPluginOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addPlugin")(config.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addPlugin(config: ConfigurationTarget, plugin: BabelPluginConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addPlugin")(config.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addPlugin(config: ConfigurationTarget, plugin: BabelPluginConfig, options: AddPluginOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addPlugin")(config.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def findPlugin(config: js.Array[BabelPluginConfig], plugin: String): js.UndefOr[BabelPluginConfig] = (^.asInstanceOf[js.Dynamic].applyDynamic("findPlugin")(config.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[BabelPluginConfig]]
-  @scala.inline
-  def findPlugin(config: ConfigurationTarget, plugin: String): js.UndefOr[BabelPluginConfig] = (^.asInstanceOf[js.Dynamic].applyDynamic("findPlugin")(config.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[BabelPluginConfig]]
+  inline def findPlugin(config: js.Array[BabelPluginConfig], plugin: String): js.UndefOr[BabelPluginConfig] = (^.asInstanceOf[js.Dynamic].applyDynamic("findPlugin")(config.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[BabelPluginConfig]]
+  inline def findPlugin(config: ConfigurationTarget, plugin: String): js.UndefOr[BabelPluginConfig] = (^.asInstanceOf[js.Dynamic].applyDynamic("findPlugin")(config.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[BabelPluginConfig]]
   
-  @scala.inline
-  def hasPlugin(config: js.Array[BabelPluginConfig], plugin: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasPlugin")(config.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def hasPlugin(config: ConfigurationTarget, plugin: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasPlugin")(config.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def hasPlugin(config: js.Array[BabelPluginConfig], plugin: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasPlugin")(config.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def hasPlugin(config: ConfigurationTarget, plugin: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasPlugin")(config.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   trait AddPluginOptions extends StObject {
     
@@ -45,32 +37,24 @@ object mod {
   }
   object AddPluginOptions {
     
-    @scala.inline
-    def apply(): AddPluginOptions = {
+    inline def apply(): AddPluginOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AddPluginOptions]
     }
     
-    @scala.inline
-    implicit class AddPluginOptionsMutableBuilder[Self <: AddPluginOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AddPluginOptions](x: Self) {
       
-      @scala.inline
-      def setAfter(value: js.Array[String]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+      inline def setAfter(value: js.Array[String]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+      inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
       
-      @scala.inline
-      def setAfterVarargs(value: String*): Self = StObject.set(x, "after", js.Array(value :_*))
+      inline def setAfterVarargs(value: String*): Self = StObject.set(x, "after", js.Array(value :_*))
       
-      @scala.inline
-      def setBefore(value: js.Array[String]): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+      inline def setBefore(value: js.Array[String]): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+      inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
       
-      @scala.inline
-      def setBeforeVarargs(value: String*): Self = StObject.set(x, "before", js.Array(value :_*))
+      inline def setBeforeVarargs(value: String*): Self = StObject.set(x, "before", js.Array(value :_*))
     }
   }
   
@@ -84,20 +68,16 @@ object mod {
   }
   object ConfigurationTarget {
     
-    @scala.inline
-    def apply(): ConfigurationTarget = {
+    inline def apply(): ConfigurationTarget = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigurationTarget]
     }
     
-    @scala.inline
-    implicit class ConfigurationTargetMutableBuilder[Self <: ConfigurationTarget] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigurationTarget](x: Self) {
       
-      @scala.inline
-      def setOptions(value: Babel): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Babel): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     }
   }
 }

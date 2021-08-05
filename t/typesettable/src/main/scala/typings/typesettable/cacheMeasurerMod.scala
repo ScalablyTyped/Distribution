@@ -18,6 +18,6 @@ object cacheMeasurerMod {
     
     def _measureNotFromCache(s: String): IDimensions = js.native
     
-    var dimCache: js.Any = js.native
+    /* private */ var dimCache: js.Any = js.native
   }
 }

@@ -13,8 +13,7 @@ trait IProcedureResult[T]
 }
 object IProcedureResult {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     output: StringDictionary[js.Any],
     recordset: IRecordSet[T],
     recordsets: js.Array[IRecordSet[T]],
@@ -25,10 +24,8 @@ object IProcedureResult {
     __obj.asInstanceOf[IProcedureResult[T]]
   }
   
-  @scala.inline
-  implicit class IProcedureResultMutableBuilder[Self <: IProcedureResult[?], T] (val x: Self & IProcedureResult[T]) extends AnyVal {
+  extension [Self <: IProcedureResult[?], T](x: Self & IProcedureResult[T]) {
     
-    @scala.inline
-    def setReturnValue(value: js.Any): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: js.Any): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

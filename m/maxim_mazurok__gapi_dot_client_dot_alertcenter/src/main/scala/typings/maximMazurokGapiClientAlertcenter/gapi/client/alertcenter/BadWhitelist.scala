@@ -20,40 +20,29 @@ trait BadWhitelist extends StObject {
 }
 object BadWhitelist {
   
-  @scala.inline
-  def apply(): BadWhitelist = {
+  inline def apply(): BadWhitelist = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BadWhitelist]
   }
   
-  @scala.inline
-  implicit class BadWhitelistMutableBuilder[Self <: BadWhitelist] (val x: Self) extends AnyVal {
+  extension [Self <: BadWhitelist](x: Self) {
     
-    @scala.inline
-    def setDomainId(value: DomainId): Self = StObject.set(x, "domainId", value.asInstanceOf[js.Any])
+    inline def setDomainId(value: DomainId): Self = StObject.set(x, "domainId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainIdUndefined: Self = StObject.set(x, "domainId", js.undefined)
+    inline def setDomainIdUndefined: Self = StObject.set(x, "domainId", js.undefined)
     
-    @scala.inline
-    def setMaliciousEntity(value: MaliciousEntity): Self = StObject.set(x, "maliciousEntity", value.asInstanceOf[js.Any])
+    inline def setMaliciousEntity(value: MaliciousEntity): Self = StObject.set(x, "maliciousEntity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaliciousEntityUndefined: Self = StObject.set(x, "maliciousEntity", js.undefined)
+    inline def setMaliciousEntityUndefined: Self = StObject.set(x, "maliciousEntity", js.undefined)
     
-    @scala.inline
-    def setMessages(value: js.Array[GmailMessageInfo]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: js.Array[GmailMessageInfo]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
-    @scala.inline
-    def setMessagesVarargs(value: GmailMessageInfo*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: GmailMessageInfo*): Self = StObject.set(x, "messages", js.Array(value :_*))
     
-    @scala.inline
-    def setSourceIp(value: String): Self = StObject.set(x, "sourceIp", value.asInstanceOf[js.Any])
+    inline def setSourceIp(value: String): Self = StObject.set(x, "sourceIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceIpUndefined: Self = StObject.set(x, "sourceIp", js.undefined)
+    inline def setSourceIpUndefined: Self = StObject.set(x, "sourceIp", js.undefined)
   }
 }

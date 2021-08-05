@@ -21,20 +21,17 @@ object RequestProxyType {
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.RequestProxyType.DefaultProxy")
   @js.native
   def DefaultProxy: RequestProxyType = js.native
-  @scala.inline
-  def DefaultProxy_=(x: RequestProxyType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultProxy")(x.asInstanceOf[js.Any])
+  inline def DefaultProxy_=(x: RequestProxyType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultProxy")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.RequestProxyType.NoProxy")
   @js.native
   def NoProxy: RequestProxyType = js.native
-  @scala.inline
-  def NoProxy_=(x: RequestProxyType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NoProxy")(x.asInstanceOf[js.Any])
+  inline def NoProxy_=(x: RequestProxyType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NoProxy")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.RequestProxyType.Override")
   @js.native
   def Override: RequestProxyType = js.native
-  @scala.inline
-  def Override_=(x: RequestProxyType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Override")(x.asInstanceOf[js.Any])
+  inline def Override_=(x: RequestProxyType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Override")(x.asInstanceOf[js.Any])
 }

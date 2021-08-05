@@ -36,8 +36,7 @@ object Sensors {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getDefault(): typings.winrt.Windows.Devices.Sensors.Accelerometer = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrt.Windows.Devices.Sensors.Accelerometer]
+    inline def getDefault(): typings.winrt.Windows.Devices.Sensors.Accelerometer = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrt.Windows.Devices.Sensors.Accelerometer]
   }
   
   @JSGlobal("Windows.Devices.Sensors.AccelerometerReading")
@@ -104,8 +103,7 @@ object Sensors {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getDefault(): typings.winrt.Windows.Devices.Sensors.Compass = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrt.Windows.Devices.Sensors.Compass]
+    inline def getDefault(): typings.winrt.Windows.Devices.Sensors.Compass = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrt.Windows.Devices.Sensors.Compass]
   }
   
   @JSGlobal("Windows.Devices.Sensors.CompassReading")
@@ -159,8 +157,7 @@ object Sensors {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getDefault(): typings.winrt.Windows.Devices.Sensors.Gyrometer = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrt.Windows.Devices.Sensors.Gyrometer]
+    inline def getDefault(): typings.winrt.Windows.Devices.Sensors.Gyrometer = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrt.Windows.Devices.Sensors.Gyrometer]
   }
   
   @JSGlobal("Windows.Devices.Sensors.GyrometerReading")
@@ -217,8 +214,7 @@ object Sensors {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getDefault(): typings.winrt.Windows.Devices.Sensors.Inclinometer = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrt.Windows.Devices.Sensors.Inclinometer]
+    inline def getDefault(): typings.winrt.Windows.Devices.Sensors.Inclinometer = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrt.Windows.Devices.Sensors.Inclinometer]
   }
   
   @JSGlobal("Windows.Devices.Sensors.InclinometerReading")
@@ -275,8 +271,7 @@ object Sensors {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getDefault(): typings.winrt.Windows.Devices.Sensors.LightSensor = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrt.Windows.Devices.Sensors.LightSensor]
+    inline def getDefault(): typings.winrt.Windows.Devices.Sensors.LightSensor = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrt.Windows.Devices.Sensors.LightSensor]
   }
   
   @JSGlobal("Windows.Devices.Sensors.LightSensorReading")
@@ -327,8 +322,7 @@ object Sensors {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getDefault(): typings.winrt.Windows.Devices.Sensors.OrientationSensor = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrt.Windows.Devices.Sensors.OrientationSensor]
+    inline def getDefault(): typings.winrt.Windows.Devices.Sensors.OrientationSensor = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrt.Windows.Devices.Sensors.OrientationSensor]
   }
   
   @JSGlobal("Windows.Devices.Sensors.OrientationSensorReading")
@@ -449,8 +443,7 @@ object Sensors {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getDefault(): typings.winrt.Windows.Devices.Sensors.SimpleOrientationSensor = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrt.Windows.Devices.Sensors.SimpleOrientationSensor]
+    inline def getDefault(): typings.winrt.Windows.Devices.Sensors.SimpleOrientationSensor = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrt.Windows.Devices.Sensors.SimpleOrientationSensor]
   }
   
   @JSGlobal("Windows.Devices.Sensors.SimpleOrientationSensorOrientationChangedEventArgs")

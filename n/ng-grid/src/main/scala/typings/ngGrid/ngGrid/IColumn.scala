@@ -92,8 +92,7 @@ trait IColumn extends StObject {
 }
 object IColumn {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     aggLabelFilter: js.Any,
     cellClass: String,
     cellEditableCondition: js.Any,
@@ -141,133 +140,90 @@ object IColumn {
     __obj.asInstanceOf[IColumn]
   }
   
-  @scala.inline
-  implicit class IColumnMutableBuilder[Self <: IColumn] (val x: Self) extends AnyVal {
+  extension [Self <: IColumn](x: Self) {
     
-    @scala.inline
-    def setAggLabelFilter(value: js.Any): Self = StObject.set(x, "aggLabelFilter", value.asInstanceOf[js.Any])
+    inline def setAggLabelFilter(value: js.Any): Self = StObject.set(x, "aggLabelFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellClass(value: String): Self = StObject.set(x, "cellClass", value.asInstanceOf[js.Any])
+    inline def setCellClass(value: String): Self = StObject.set(x, "cellClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellEditableCondition(value: js.Any): Self = StObject.set(x, "cellEditableCondition", value.asInstanceOf[js.Any])
+    inline def setCellEditableCondition(value: js.Any): Self = StObject.set(x, "cellEditableCondition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellFilter(value: js.Any): Self = StObject.set(x, "cellFilter", value.asInstanceOf[js.Any])
+    inline def setCellFilter(value: js.Any): Self = StObject.set(x, "cellFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellTemplate(value: String): Self = StObject.set(x, "cellTemplate", value.asInstanceOf[js.Any])
+    inline def setCellTemplate(value: String): Self = StObject.set(x, "cellTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColDef(value: IColumnDef): Self = StObject.set(x, "colDef", value.asInstanceOf[js.Any])
+    inline def setColDef(value: IColumnDef): Self = StObject.set(x, "colDef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopy(value: () => IColumn): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
+    inline def setCopy(value: () => IColumn): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+    inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableCellEdit(value: Boolean): Self = StObject.set(x, "enableCellEdit", value.asInstanceOf[js.Any])
+    inline def setEnableCellEdit(value: Boolean): Self = StObject.set(x, "enableCellEdit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGripClick(value: () => js.Any): Self = StObject.set(x, "gripClick", js.Any.fromFunction0(value))
+    inline def setGripClick(value: () => js.Any): Self = StObject.set(x, "gripClick", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGripOnMouseDown(value: js.Any => js.Any): Self = StObject.set(x, "gripOnMouseDown", js.Any.fromFunction1(value))
+    inline def setGripOnMouseDown(value: js.Any => js.Any): Self = StObject.set(x, "gripOnMouseDown", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGripOnMouseUp(value: js.Any => Unit): Self = StObject.set(x, "gripOnMouseUp", js.Any.fromFunction1(value))
+    inline def setGripOnMouseUp(value: js.Any => Unit): Self = StObject.set(x, "gripOnMouseUp", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGroupIndex(value: Double): Self = StObject.set(x, "groupIndex", value.asInstanceOf[js.Any])
+    inline def setGroupIndex(value: Double): Self = StObject.set(x, "groupIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupable(value: Boolean): Self = StObject.set(x, "groupable", value.asInstanceOf[js.Any])
+    inline def setGroupable(value: Boolean): Self = StObject.set(x, "groupable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupedByClass(value: () => String): Self = StObject.set(x, "groupedByClass", js.Any.fromFunction0(value))
+    inline def setGroupedByClass(value: () => String): Self = StObject.set(x, "groupedByClass", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHeaderCellTemplate(value: String): Self = StObject.set(x, "headerCellTemplate", value.asInstanceOf[js.Any])
+    inline def setHeaderCellTemplate(value: String): Self = StObject.set(x, "headerCellTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderClass(value: String): Self = StObject.set(x, "headerClass", value.asInstanceOf[js.Any])
+    inline def setHeaderClass(value: String): Self = StObject.set(x, "headerClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderRowHeight(value: Double): Self = StObject.set(x, "headerRowHeight", value.asInstanceOf[js.Any])
+    inline def setHeaderRowHeight(value: Double): Self = StObject.set(x, "headerRowHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAggCol(value: Boolean): Self = StObject.set(x, "isAggCol", value.asInstanceOf[js.Any])
+    inline def setIsAggCol(value: Boolean): Self = StObject.set(x, "isAggCol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsGroupedBy(value: Boolean): Self = StObject.set(x, "isGroupedBy", value.asInstanceOf[js.Any])
+    inline def setIsGroupedBy(value: Boolean): Self = StObject.set(x, "isGroupedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+    inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoSortVisible(value: () => Boolean): Self = StObject.set(x, "noSortVisible", js.Any.fromFunction0(value))
+    inline def setNoSortVisible(value: () => Boolean): Self = StObject.set(x, "noSortVisible", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnMouseMove(value: js.Any => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
+    inline def setOnMouseMove(value: js.Any => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOriginalIndex(value: Double): Self = StObject.set(x, "originalIndex", value.asInstanceOf[js.Any])
+    inline def setOriginalIndex(value: Double): Self = StObject.set(x, "originalIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPinnable(value: Boolean): Self = StObject.set(x, "pinnable", value.asInstanceOf[js.Any])
+    inline def setPinnable(value: Boolean): Self = StObject.set(x, "pinnable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPinned(value: Boolean): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
+    inline def setPinned(value: Boolean): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResizable(value: Boolean): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
+    inline def setResizable(value: Boolean): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetVars(value: IColumn => Unit): Self = StObject.set(x, "setVars", js.Any.fromFunction1(value))
+    inline def setSetVars(value: IColumn => Unit): Self = StObject.set(x, "setVars", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowSortButtonDown(value: () => Boolean): Self = StObject.set(x, "showSortButtonDown", js.Any.fromFunction0(value))
+    inline def setShowSortButtonDown(value: () => Boolean): Self = StObject.set(x, "showSortButtonDown", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShowSortButtonUp(value: () => Boolean): Self = StObject.set(x, "showSortButtonUp", js.Any.fromFunction0(value))
+    inline def setShowSortButtonUp(value: () => Boolean): Self = StObject.set(x, "showSortButtonUp", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSort(value: js.Any => Boolean): Self = StObject.set(x, "sort", js.Any.fromFunction1(value))
+    inline def setSort(value: js.Any => Boolean): Self = StObject.set(x, "sort", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSortDirection(value: String): Self = StObject.set(x, "sortDirection", value.asInstanceOf[js.Any])
+    inline def setSortDirection(value: String): Self = StObject.set(x, "sortDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortPriority(value: Double): Self = StObject.set(x, "sortPriority", value.asInstanceOf[js.Any])
+    inline def setSortPriority(value: Double): Self = StObject.set(x, "sortPriority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortable(value: Boolean): Self = StObject.set(x, "sortable", value.asInstanceOf[js.Any])
+    inline def setSortable(value: Boolean): Self = StObject.set(x, "sortable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortingAlgorithm(value: js.Function): Self = StObject.set(x, "sortingAlgorithm", value.asInstanceOf[js.Any])
+    inline def setSortingAlgorithm(value: js.Function): Self = StObject.set(x, "sortingAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleVisible(value: () => Unit): Self = StObject.set(x, "toggleVisible", js.Any.fromFunction0(value))
+    inline def setToggleVisible(value: () => Unit): Self = StObject.set(x, "toggleVisible", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

@@ -60,8 +60,7 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `0`: String,
       `1`: String,
       `10`: String,
@@ -117,83 +116,57 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+    extension [Self <: `0`](x: Self) {
       
-      @scala.inline
-      def set0(value: String): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
+      inline def set0(value: String): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set1(value: String): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
+      inline def set1(value: String): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set10(value: String): Self = StObject.set(x, "10", value.asInstanceOf[js.Any])
+      inline def set10(value: String): Self = StObject.set(x, "10", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set11(value: String): Self = StObject.set(x, "11", value.asInstanceOf[js.Any])
+      inline def set11(value: String): Self = StObject.set(x, "11", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set12(value: String): Self = StObject.set(x, "12", value.asInstanceOf[js.Any])
+      inline def set12(value: String): Self = StObject.set(x, "12", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set13(value: String): Self = StObject.set(x, "13", value.asInstanceOf[js.Any])
+      inline def set13(value: String): Self = StObject.set(x, "13", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set14(value: String): Self = StObject.set(x, "14", value.asInstanceOf[js.Any])
+      inline def set14(value: String): Self = StObject.set(x, "14", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set15(value: String): Self = StObject.set(x, "15", value.asInstanceOf[js.Any])
+      inline def set15(value: String): Self = StObject.set(x, "15", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set16(value: String): Self = StObject.set(x, "16", value.asInstanceOf[js.Any])
+      inline def set16(value: String): Self = StObject.set(x, "16", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set17(value: String): Self = StObject.set(x, "17", value.asInstanceOf[js.Any])
+      inline def set17(value: String): Self = StObject.set(x, "17", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set18(value: String): Self = StObject.set(x, "18", value.asInstanceOf[js.Any])
+      inline def set18(value: String): Self = StObject.set(x, "18", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set19(value: String): Self = StObject.set(x, "19", value.asInstanceOf[js.Any])
+      inline def set19(value: String): Self = StObject.set(x, "19", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set2(value: String): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
+      inline def set2(value: String): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set20(value: String): Self = StObject.set(x, "20", value.asInstanceOf[js.Any])
+      inline def set20(value: String): Self = StObject.set(x, "20", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set21(value: String): Self = StObject.set(x, "21", value.asInstanceOf[js.Any])
+      inline def set21(value: String): Self = StObject.set(x, "21", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set22(value: String): Self = StObject.set(x, "22", value.asInstanceOf[js.Any])
+      inline def set22(value: String): Self = StObject.set(x, "22", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set23(value: String): Self = StObject.set(x, "23", value.asInstanceOf[js.Any])
+      inline def set23(value: String): Self = StObject.set(x, "23", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set24(value: String): Self = StObject.set(x, "24", value.asInstanceOf[js.Any])
+      inline def set24(value: String): Self = StObject.set(x, "24", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set3(value: String): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
+      inline def set3(value: String): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set4(value: String): Self = StObject.set(x, "4", value.asInstanceOf[js.Any])
+      inline def set4(value: String): Self = StObject.set(x, "4", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set5(value: String): Self = StObject.set(x, "5", value.asInstanceOf[js.Any])
+      inline def set5(value: String): Self = StObject.set(x, "5", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set6(value: String): Self = StObject.set(x, "6", value.asInstanceOf[js.Any])
+      inline def set6(value: String): Self = StObject.set(x, "6", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set7(value: String): Self = StObject.set(x, "7", value.asInstanceOf[js.Any])
+      inline def set7(value: String): Self = StObject.set(x, "7", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set8(value: String): Self = StObject.set(x, "8", value.asInstanceOf[js.Any])
+      inline def set8(value: String): Self = StObject.set(x, "8", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set9(value: String): Self = StObject.set(x, "9", value.asInstanceOf[js.Any])
+      inline def set9(value: String): Self = StObject.set(x, "9", value.asInstanceOf[js.Any])
     }
   }
   
@@ -265,8 +238,7 @@ object anon {
   }
   object Background {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       background: String,
       `dark-background`: String,
       `dark-surface`: String,
@@ -329,104 +301,71 @@ object anon {
       __obj.asInstanceOf[Background]
     }
     
-    @scala.inline
-    implicit class BackgroundMutableBuilder[Self <: Background] (val x: Self) extends AnyVal {
+    extension [Self <: Background](x: Self) {
       
-      @scala.inline
-      def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDark-background`(value: String): Self = StObject.set(x, "dark-background", value.asInstanceOf[js.Any])
+      inline def `setDark-background`(value: String): Self = StObject.set(x, "dark-background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDark-surface`(value: String): Self = StObject.set(x, "dark-surface", value.asInstanceOf[js.Any])
+      inline def `setDark-surface`(value: String): Self = StObject.set(x, "dark-surface", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setLight-background`(value: String): Self = StObject.set(x, "light-background", value.asInstanceOf[js.Any])
+      inline def `setLight-background`(value: String): Self = StObject.set(x, "light-background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setLight-surface`(value: String): Self = StObject.set(x, "light-surface", value.asInstanceOf[js.Any])
+      inline def `setLight-surface`(value: String): Self = StObject.set(x, "light-surface", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setOn-error`(value: String): Self = StObject.set(x, "on-error", value.asInstanceOf[js.Any])
+      inline def `setOn-error`(value: String): Self = StObject.set(x, "on-error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setOn-primary`(value: String): Self = StObject.set(x, "on-primary", value.asInstanceOf[js.Any])
+      inline def `setOn-primary`(value: String): Self = StObject.set(x, "on-primary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setOn-secondary`(value: String): Self = StObject.set(x, "on-secondary", value.asInstanceOf[js.Any])
+      inline def `setOn-secondary`(value: String): Self = StObject.set(x, "on-secondary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setOn-success`(value: String): Self = StObject.set(x, "on-success", value.asInstanceOf[js.Any])
+      inline def `setOn-success`(value: String): Self = StObject.set(x, "on-success", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setOn-surface`(value: String): Self = StObject.set(x, "on-surface", value.asInstanceOf[js.Any])
+      inline def `setOn-surface`(value: String): Self = StObject.set(x, "on-surface", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setOn-warning`(value: String): Self = StObject.set(x, "on-warning", value.asInstanceOf[js.Any])
+      inline def `setOn-warning`(value: String): Self = StObject.set(x, "on-warning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimary(value: String): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+      inline def setPrimary(value: String): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondary(value: String): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
+      inline def setSecondary(value: String): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccess(value: String): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: String): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSurface(value: String): Self = StObject.set(x, "surface", value.asInstanceOf[js.Any])
+      inline def setSurface(value: String): Self = StObject.set(x, "surface", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setText-disabled-on-background`(value: String): Self = StObject.set(x, "text-disabled-on-background", value.asInstanceOf[js.Any])
+      inline def `setText-disabled-on-background`(value: String): Self = StObject.set(x, "text-disabled-on-background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setText-disabled-on-dark`(value: String): Self = StObject.set(x, "text-disabled-on-dark", value.asInstanceOf[js.Any])
+      inline def `setText-disabled-on-dark`(value: String): Self = StObject.set(x, "text-disabled-on-dark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setText-disabled-on-light`(value: String): Self = StObject.set(x, "text-disabled-on-light", value.asInstanceOf[js.Any])
+      inline def `setText-disabled-on-light`(value: String): Self = StObject.set(x, "text-disabled-on-light", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setText-hint-on-background`(value: String): Self = StObject.set(x, "text-hint-on-background", value.asInstanceOf[js.Any])
+      inline def `setText-hint-on-background`(value: String): Self = StObject.set(x, "text-hint-on-background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setText-hint-on-dark`(value: String): Self = StObject.set(x, "text-hint-on-dark", value.asInstanceOf[js.Any])
+      inline def `setText-hint-on-dark`(value: String): Self = StObject.set(x, "text-hint-on-dark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setText-hint-on-light`(value: String): Self = StObject.set(x, "text-hint-on-light", value.asInstanceOf[js.Any])
+      inline def `setText-hint-on-light`(value: String): Self = StObject.set(x, "text-hint-on-light", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setText-icon-on-background`(value: String): Self = StObject.set(x, "text-icon-on-background", value.asInstanceOf[js.Any])
+      inline def `setText-icon-on-background`(value: String): Self = StObject.set(x, "text-icon-on-background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setText-icon-on-dark`(value: String): Self = StObject.set(x, "text-icon-on-dark", value.asInstanceOf[js.Any])
+      inline def `setText-icon-on-dark`(value: String): Self = StObject.set(x, "text-icon-on-dark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setText-icon-on-light`(value: String): Self = StObject.set(x, "text-icon-on-light", value.asInstanceOf[js.Any])
+      inline def `setText-icon-on-light`(value: String): Self = StObject.set(x, "text-icon-on-light", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setText-primary-on-background`(value: String): Self = StObject.set(x, "text-primary-on-background", value.asInstanceOf[js.Any])
+      inline def `setText-primary-on-background`(value: String): Self = StObject.set(x, "text-primary-on-background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setText-primary-on-dark`(value: String): Self = StObject.set(x, "text-primary-on-dark", value.asInstanceOf[js.Any])
+      inline def `setText-primary-on-dark`(value: String): Self = StObject.set(x, "text-primary-on-dark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setText-primary-on-light`(value: String): Self = StObject.set(x, "text-primary-on-light", value.asInstanceOf[js.Any])
+      inline def `setText-primary-on-light`(value: String): Self = StObject.set(x, "text-primary-on-light", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setText-secondary-on-background`(value: String): Self = StObject.set(x, "text-secondary-on-background", value.asInstanceOf[js.Any])
+      inline def `setText-secondary-on-background`(value: String): Self = StObject.set(x, "text-secondary-on-background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setText-secondary-on-dark`(value: String): Self = StObject.set(x, "text-secondary-on-dark", value.asInstanceOf[js.Any])
+      inline def `setText-secondary-on-dark`(value: String): Self = StObject.set(x, "text-secondary-on-dark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setText-secondary-on-light`(value: String): Self = StObject.set(x, "text-secondary-on-light", value.asInstanceOf[js.Any])
+      inline def `setText-secondary-on-light`(value: String): Self = StObject.set(x, "text-secondary-on-light", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarning(value: String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+      inline def setWarning(value: String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     }
   }
   
@@ -444,29 +383,22 @@ object anon {
   }
   object Disabled {
     
-    @scala.inline
-    def apply(disabled: String, hint: String, icon: String, primary: String, secondary: String): Disabled = {
+    inline def apply(disabled: String, hint: String, icon: String, primary: String, secondary: String): Disabled = {
       val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], hint = hint.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], primary = primary.asInstanceOf[js.Any], secondary = secondary.asInstanceOf[js.Any])
       __obj.asInstanceOf[Disabled]
     }
     
-    @scala.inline
-    implicit class DisabledMutableBuilder[Self <: Disabled] (val x: Self) extends AnyVal {
+    extension [Self <: Disabled](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
+      inline def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimary(value: String): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+      inline def setPrimary(value: String): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondary(value: String): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
+      inline def setSecondary(value: String): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
     }
   }
   
@@ -986,8 +918,7 @@ object anon {
   }
   object Rmdamber100 {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `rmd-amber-100`: String,
       `rmd-amber-200`: String,
       `rmd-amber-300`: String,
@@ -1501,776 +1432,519 @@ object anon {
       __obj.asInstanceOf[Rmdamber100]
     }
     
-    @scala.inline
-    implicit class Rmdamber100MutableBuilder[Self <: Rmdamber100] (val x: Self) extends AnyVal {
+    extension [Self <: Rmdamber100](x: Self) {
       
-      @scala.inline
-      def `setRmd-amber-100`(value: String): Self = StObject.set(x, "rmd-amber-100", value.asInstanceOf[js.Any])
+      inline def `setRmd-amber-100`(value: String): Self = StObject.set(x, "rmd-amber-100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-amber-200`(value: String): Self = StObject.set(x, "rmd-amber-200", value.asInstanceOf[js.Any])
+      inline def `setRmd-amber-200`(value: String): Self = StObject.set(x, "rmd-amber-200", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-amber-300`(value: String): Self = StObject.set(x, "rmd-amber-300", value.asInstanceOf[js.Any])
+      inline def `setRmd-amber-300`(value: String): Self = StObject.set(x, "rmd-amber-300", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-amber-400`(value: String): Self = StObject.set(x, "rmd-amber-400", value.asInstanceOf[js.Any])
+      inline def `setRmd-amber-400`(value: String): Self = StObject.set(x, "rmd-amber-400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-amber-50`(value: String): Self = StObject.set(x, "rmd-amber-50", value.asInstanceOf[js.Any])
+      inline def `setRmd-amber-50`(value: String): Self = StObject.set(x, "rmd-amber-50", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-amber-500`(value: String): Self = StObject.set(x, "rmd-amber-500", value.asInstanceOf[js.Any])
+      inline def `setRmd-amber-500`(value: String): Self = StObject.set(x, "rmd-amber-500", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-amber-600`(value: String): Self = StObject.set(x, "rmd-amber-600", value.asInstanceOf[js.Any])
+      inline def `setRmd-amber-600`(value: String): Self = StObject.set(x, "rmd-amber-600", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-amber-700`(value: String): Self = StObject.set(x, "rmd-amber-700", value.asInstanceOf[js.Any])
+      inline def `setRmd-amber-700`(value: String): Self = StObject.set(x, "rmd-amber-700", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-amber-800`(value: String): Self = StObject.set(x, "rmd-amber-800", value.asInstanceOf[js.Any])
+      inline def `setRmd-amber-800`(value: String): Self = StObject.set(x, "rmd-amber-800", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-amber-900`(value: String): Self = StObject.set(x, "rmd-amber-900", value.asInstanceOf[js.Any])
+      inline def `setRmd-amber-900`(value: String): Self = StObject.set(x, "rmd-amber-900", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-amber-a-100`(value: String): Self = StObject.set(x, "rmd-amber-a-100", value.asInstanceOf[js.Any])
+      inline def `setRmd-amber-a-100`(value: String): Self = StObject.set(x, "rmd-amber-a-100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-amber-a-200`(value: String): Self = StObject.set(x, "rmd-amber-a-200", value.asInstanceOf[js.Any])
+      inline def `setRmd-amber-a-200`(value: String): Self = StObject.set(x, "rmd-amber-a-200", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-amber-a-400`(value: String): Self = StObject.set(x, "rmd-amber-a-400", value.asInstanceOf[js.Any])
+      inline def `setRmd-amber-a-400`(value: String): Self = StObject.set(x, "rmd-amber-a-400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-amber-a-700`(value: String): Self = StObject.set(x, "rmd-amber-a-700", value.asInstanceOf[js.Any])
+      inline def `setRmd-amber-a-700`(value: String): Self = StObject.set(x, "rmd-amber-a-700", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-black-base`(value: String): Self = StObject.set(x, "rmd-black-base", value.asInstanceOf[js.Any])
+      inline def `setRmd-black-base`(value: String): Self = StObject.set(x, "rmd-black-base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-blue-100`(value: String): Self = StObject.set(x, "rmd-blue-100", value.asInstanceOf[js.Any])
+      inline def `setRmd-blue-100`(value: String): Self = StObject.set(x, "rmd-blue-100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-blue-200`(value: String): Self = StObject.set(x, "rmd-blue-200", value.asInstanceOf[js.Any])
+      inline def `setRmd-blue-200`(value: String): Self = StObject.set(x, "rmd-blue-200", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-blue-300`(value: String): Self = StObject.set(x, "rmd-blue-300", value.asInstanceOf[js.Any])
+      inline def `setRmd-blue-300`(value: String): Self = StObject.set(x, "rmd-blue-300", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-blue-400`(value: String): Self = StObject.set(x, "rmd-blue-400", value.asInstanceOf[js.Any])
+      inline def `setRmd-blue-400`(value: String): Self = StObject.set(x, "rmd-blue-400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-blue-50`(value: String): Self = StObject.set(x, "rmd-blue-50", value.asInstanceOf[js.Any])
+      inline def `setRmd-blue-50`(value: String): Self = StObject.set(x, "rmd-blue-50", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-blue-500`(value: String): Self = StObject.set(x, "rmd-blue-500", value.asInstanceOf[js.Any])
+      inline def `setRmd-blue-500`(value: String): Self = StObject.set(x, "rmd-blue-500", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-blue-600`(value: String): Self = StObject.set(x, "rmd-blue-600", value.asInstanceOf[js.Any])
+      inline def `setRmd-blue-600`(value: String): Self = StObject.set(x, "rmd-blue-600", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-blue-700`(value: String): Self = StObject.set(x, "rmd-blue-700", value.asInstanceOf[js.Any])
+      inline def `setRmd-blue-700`(value: String): Self = StObject.set(x, "rmd-blue-700", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-blue-800`(value: String): Self = StObject.set(x, "rmd-blue-800", value.asInstanceOf[js.Any])
+      inline def `setRmd-blue-800`(value: String): Self = StObject.set(x, "rmd-blue-800", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-blue-900`(value: String): Self = StObject.set(x, "rmd-blue-900", value.asInstanceOf[js.Any])
+      inline def `setRmd-blue-900`(value: String): Self = StObject.set(x, "rmd-blue-900", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-blue-a-100`(value: String): Self = StObject.set(x, "rmd-blue-a-100", value.asInstanceOf[js.Any])
+      inline def `setRmd-blue-a-100`(value: String): Self = StObject.set(x, "rmd-blue-a-100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-blue-a-200`(value: String): Self = StObject.set(x, "rmd-blue-a-200", value.asInstanceOf[js.Any])
+      inline def `setRmd-blue-a-200`(value: String): Self = StObject.set(x, "rmd-blue-a-200", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-blue-a-400`(value: String): Self = StObject.set(x, "rmd-blue-a-400", value.asInstanceOf[js.Any])
+      inline def `setRmd-blue-a-400`(value: String): Self = StObject.set(x, "rmd-blue-a-400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-blue-a-700`(value: String): Self = StObject.set(x, "rmd-blue-a-700", value.asInstanceOf[js.Any])
+      inline def `setRmd-blue-a-700`(value: String): Self = StObject.set(x, "rmd-blue-a-700", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-blue-grey-100`(value: String): Self = StObject.set(x, "rmd-blue-grey-100", value.asInstanceOf[js.Any])
+      inline def `setRmd-blue-grey-100`(value: String): Self = StObject.set(x, "rmd-blue-grey-100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-blue-grey-200`(value: String): Self = StObject.set(x, "rmd-blue-grey-200", value.asInstanceOf[js.Any])
+      inline def `setRmd-blue-grey-200`(value: String): Self = StObject.set(x, "rmd-blue-grey-200", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-blue-grey-300`(value: String): Self = StObject.set(x, "rmd-blue-grey-300", value.asInstanceOf[js.Any])
+      inline def `setRmd-blue-grey-300`(value: String): Self = StObject.set(x, "rmd-blue-grey-300", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-blue-grey-400`(value: String): Self = StObject.set(x, "rmd-blue-grey-400", value.asInstanceOf[js.Any])
+      inline def `setRmd-blue-grey-400`(value: String): Self = StObject.set(x, "rmd-blue-grey-400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-blue-grey-50`(value: String): Self = StObject.set(x, "rmd-blue-grey-50", value.asInstanceOf[js.Any])
+      inline def `setRmd-blue-grey-50`(value: String): Self = StObject.set(x, "rmd-blue-grey-50", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-blue-grey-500`(value: String): Self = StObject.set(x, "rmd-blue-grey-500", value.asInstanceOf[js.Any])
+      inline def `setRmd-blue-grey-500`(value: String): Self = StObject.set(x, "rmd-blue-grey-500", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-blue-grey-600`(value: String): Self = StObject.set(x, "rmd-blue-grey-600", value.asInstanceOf[js.Any])
+      inline def `setRmd-blue-grey-600`(value: String): Self = StObject.set(x, "rmd-blue-grey-600", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-blue-grey-700`(value: String): Self = StObject.set(x, "rmd-blue-grey-700", value.asInstanceOf[js.Any])
+      inline def `setRmd-blue-grey-700`(value: String): Self = StObject.set(x, "rmd-blue-grey-700", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-blue-grey-800`(value: String): Self = StObject.set(x, "rmd-blue-grey-800", value.asInstanceOf[js.Any])
+      inline def `setRmd-blue-grey-800`(value: String): Self = StObject.set(x, "rmd-blue-grey-800", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-blue-grey-900`(value: String): Self = StObject.set(x, "rmd-blue-grey-900", value.asInstanceOf[js.Any])
+      inline def `setRmd-blue-grey-900`(value: String): Self = StObject.set(x, "rmd-blue-grey-900", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-brown-100`(value: String): Self = StObject.set(x, "rmd-brown-100", value.asInstanceOf[js.Any])
+      inline def `setRmd-brown-100`(value: String): Self = StObject.set(x, "rmd-brown-100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-brown-200`(value: String): Self = StObject.set(x, "rmd-brown-200", value.asInstanceOf[js.Any])
+      inline def `setRmd-brown-200`(value: String): Self = StObject.set(x, "rmd-brown-200", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-brown-300`(value: String): Self = StObject.set(x, "rmd-brown-300", value.asInstanceOf[js.Any])
+      inline def `setRmd-brown-300`(value: String): Self = StObject.set(x, "rmd-brown-300", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-brown-400`(value: String): Self = StObject.set(x, "rmd-brown-400", value.asInstanceOf[js.Any])
+      inline def `setRmd-brown-400`(value: String): Self = StObject.set(x, "rmd-brown-400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-brown-50`(value: String): Self = StObject.set(x, "rmd-brown-50", value.asInstanceOf[js.Any])
+      inline def `setRmd-brown-50`(value: String): Self = StObject.set(x, "rmd-brown-50", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-brown-500`(value: String): Self = StObject.set(x, "rmd-brown-500", value.asInstanceOf[js.Any])
+      inline def `setRmd-brown-500`(value: String): Self = StObject.set(x, "rmd-brown-500", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-brown-600`(value: String): Self = StObject.set(x, "rmd-brown-600", value.asInstanceOf[js.Any])
+      inline def `setRmd-brown-600`(value: String): Self = StObject.set(x, "rmd-brown-600", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-brown-700`(value: String): Self = StObject.set(x, "rmd-brown-700", value.asInstanceOf[js.Any])
+      inline def `setRmd-brown-700`(value: String): Self = StObject.set(x, "rmd-brown-700", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-brown-800`(value: String): Self = StObject.set(x, "rmd-brown-800", value.asInstanceOf[js.Any])
+      inline def `setRmd-brown-800`(value: String): Self = StObject.set(x, "rmd-brown-800", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-brown-900`(value: String): Self = StObject.set(x, "rmd-brown-900", value.asInstanceOf[js.Any])
+      inline def `setRmd-brown-900`(value: String): Self = StObject.set(x, "rmd-brown-900", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-cyan-100`(value: String): Self = StObject.set(x, "rmd-cyan-100", value.asInstanceOf[js.Any])
+      inline def `setRmd-cyan-100`(value: String): Self = StObject.set(x, "rmd-cyan-100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-cyan-200`(value: String): Self = StObject.set(x, "rmd-cyan-200", value.asInstanceOf[js.Any])
+      inline def `setRmd-cyan-200`(value: String): Self = StObject.set(x, "rmd-cyan-200", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-cyan-300`(value: String): Self = StObject.set(x, "rmd-cyan-300", value.asInstanceOf[js.Any])
+      inline def `setRmd-cyan-300`(value: String): Self = StObject.set(x, "rmd-cyan-300", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-cyan-400`(value: String): Self = StObject.set(x, "rmd-cyan-400", value.asInstanceOf[js.Any])
+      inline def `setRmd-cyan-400`(value: String): Self = StObject.set(x, "rmd-cyan-400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-cyan-50`(value: String): Self = StObject.set(x, "rmd-cyan-50", value.asInstanceOf[js.Any])
+      inline def `setRmd-cyan-50`(value: String): Self = StObject.set(x, "rmd-cyan-50", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-cyan-500`(value: String): Self = StObject.set(x, "rmd-cyan-500", value.asInstanceOf[js.Any])
+      inline def `setRmd-cyan-500`(value: String): Self = StObject.set(x, "rmd-cyan-500", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-cyan-600`(value: String): Self = StObject.set(x, "rmd-cyan-600", value.asInstanceOf[js.Any])
+      inline def `setRmd-cyan-600`(value: String): Self = StObject.set(x, "rmd-cyan-600", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-cyan-700`(value: String): Self = StObject.set(x, "rmd-cyan-700", value.asInstanceOf[js.Any])
+      inline def `setRmd-cyan-700`(value: String): Self = StObject.set(x, "rmd-cyan-700", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-cyan-800`(value: String): Self = StObject.set(x, "rmd-cyan-800", value.asInstanceOf[js.Any])
+      inline def `setRmd-cyan-800`(value: String): Self = StObject.set(x, "rmd-cyan-800", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-cyan-900`(value: String): Self = StObject.set(x, "rmd-cyan-900", value.asInstanceOf[js.Any])
+      inline def `setRmd-cyan-900`(value: String): Self = StObject.set(x, "rmd-cyan-900", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-cyan-a-100`(value: String): Self = StObject.set(x, "rmd-cyan-a-100", value.asInstanceOf[js.Any])
+      inline def `setRmd-cyan-a-100`(value: String): Self = StObject.set(x, "rmd-cyan-a-100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-cyan-a-200`(value: String): Self = StObject.set(x, "rmd-cyan-a-200", value.asInstanceOf[js.Any])
+      inline def `setRmd-cyan-a-200`(value: String): Self = StObject.set(x, "rmd-cyan-a-200", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-cyan-a-400`(value: String): Self = StObject.set(x, "rmd-cyan-a-400", value.asInstanceOf[js.Any])
+      inline def `setRmd-cyan-a-400`(value: String): Self = StObject.set(x, "rmd-cyan-a-400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-cyan-a-700`(value: String): Self = StObject.set(x, "rmd-cyan-a-700", value.asInstanceOf[js.Any])
+      inline def `setRmd-cyan-a-700`(value: String): Self = StObject.set(x, "rmd-cyan-a-700", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-deep-orange-100`(value: String): Self = StObject.set(x, "rmd-deep-orange-100", value.asInstanceOf[js.Any])
+      inline def `setRmd-deep-orange-100`(value: String): Self = StObject.set(x, "rmd-deep-orange-100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-deep-orange-200`(value: String): Self = StObject.set(x, "rmd-deep-orange-200", value.asInstanceOf[js.Any])
+      inline def `setRmd-deep-orange-200`(value: String): Self = StObject.set(x, "rmd-deep-orange-200", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-deep-orange-300`(value: String): Self = StObject.set(x, "rmd-deep-orange-300", value.asInstanceOf[js.Any])
+      inline def `setRmd-deep-orange-300`(value: String): Self = StObject.set(x, "rmd-deep-orange-300", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-deep-orange-400`(value: String): Self = StObject.set(x, "rmd-deep-orange-400", value.asInstanceOf[js.Any])
+      inline def `setRmd-deep-orange-400`(value: String): Self = StObject.set(x, "rmd-deep-orange-400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-deep-orange-50`(value: String): Self = StObject.set(x, "rmd-deep-orange-50", value.asInstanceOf[js.Any])
+      inline def `setRmd-deep-orange-50`(value: String): Self = StObject.set(x, "rmd-deep-orange-50", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-deep-orange-500`(value: String): Self = StObject.set(x, "rmd-deep-orange-500", value.asInstanceOf[js.Any])
+      inline def `setRmd-deep-orange-500`(value: String): Self = StObject.set(x, "rmd-deep-orange-500", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-deep-orange-600`(value: String): Self = StObject.set(x, "rmd-deep-orange-600", value.asInstanceOf[js.Any])
+      inline def `setRmd-deep-orange-600`(value: String): Self = StObject.set(x, "rmd-deep-orange-600", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-deep-orange-700`(value: String): Self = StObject.set(x, "rmd-deep-orange-700", value.asInstanceOf[js.Any])
+      inline def `setRmd-deep-orange-700`(value: String): Self = StObject.set(x, "rmd-deep-orange-700", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-deep-orange-800`(value: String): Self = StObject.set(x, "rmd-deep-orange-800", value.asInstanceOf[js.Any])
+      inline def `setRmd-deep-orange-800`(value: String): Self = StObject.set(x, "rmd-deep-orange-800", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-deep-orange-900`(value: String): Self = StObject.set(x, "rmd-deep-orange-900", value.asInstanceOf[js.Any])
+      inline def `setRmd-deep-orange-900`(value: String): Self = StObject.set(x, "rmd-deep-orange-900", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-deep-orange-a-100`(value: String): Self = StObject.set(x, "rmd-deep-orange-a-100", value.asInstanceOf[js.Any])
+      inline def `setRmd-deep-orange-a-100`(value: String): Self = StObject.set(x, "rmd-deep-orange-a-100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-deep-orange-a-200`(value: String): Self = StObject.set(x, "rmd-deep-orange-a-200", value.asInstanceOf[js.Any])
+      inline def `setRmd-deep-orange-a-200`(value: String): Self = StObject.set(x, "rmd-deep-orange-a-200", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-deep-orange-a-400`(value: String): Self = StObject.set(x, "rmd-deep-orange-a-400", value.asInstanceOf[js.Any])
+      inline def `setRmd-deep-orange-a-400`(value: String): Self = StObject.set(x, "rmd-deep-orange-a-400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-deep-orange-a-700`(value: String): Self = StObject.set(x, "rmd-deep-orange-a-700", value.asInstanceOf[js.Any])
+      inline def `setRmd-deep-orange-a-700`(value: String): Self = StObject.set(x, "rmd-deep-orange-a-700", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-deep-purple-100`(value: String): Self = StObject.set(x, "rmd-deep-purple-100", value.asInstanceOf[js.Any])
+      inline def `setRmd-deep-purple-100`(value: String): Self = StObject.set(x, "rmd-deep-purple-100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-deep-purple-200`(value: String): Self = StObject.set(x, "rmd-deep-purple-200", value.asInstanceOf[js.Any])
+      inline def `setRmd-deep-purple-200`(value: String): Self = StObject.set(x, "rmd-deep-purple-200", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-deep-purple-300`(value: String): Self = StObject.set(x, "rmd-deep-purple-300", value.asInstanceOf[js.Any])
+      inline def `setRmd-deep-purple-300`(value: String): Self = StObject.set(x, "rmd-deep-purple-300", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-deep-purple-400`(value: String): Self = StObject.set(x, "rmd-deep-purple-400", value.asInstanceOf[js.Any])
+      inline def `setRmd-deep-purple-400`(value: String): Self = StObject.set(x, "rmd-deep-purple-400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-deep-purple-50`(value: String): Self = StObject.set(x, "rmd-deep-purple-50", value.asInstanceOf[js.Any])
+      inline def `setRmd-deep-purple-50`(value: String): Self = StObject.set(x, "rmd-deep-purple-50", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-deep-purple-500`(value: String): Self = StObject.set(x, "rmd-deep-purple-500", value.asInstanceOf[js.Any])
+      inline def `setRmd-deep-purple-500`(value: String): Self = StObject.set(x, "rmd-deep-purple-500", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-deep-purple-600`(value: String): Self = StObject.set(x, "rmd-deep-purple-600", value.asInstanceOf[js.Any])
+      inline def `setRmd-deep-purple-600`(value: String): Self = StObject.set(x, "rmd-deep-purple-600", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-deep-purple-700`(value: String): Self = StObject.set(x, "rmd-deep-purple-700", value.asInstanceOf[js.Any])
+      inline def `setRmd-deep-purple-700`(value: String): Self = StObject.set(x, "rmd-deep-purple-700", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-deep-purple-800`(value: String): Self = StObject.set(x, "rmd-deep-purple-800", value.asInstanceOf[js.Any])
+      inline def `setRmd-deep-purple-800`(value: String): Self = StObject.set(x, "rmd-deep-purple-800", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-deep-purple-900`(value: String): Self = StObject.set(x, "rmd-deep-purple-900", value.asInstanceOf[js.Any])
+      inline def `setRmd-deep-purple-900`(value: String): Self = StObject.set(x, "rmd-deep-purple-900", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-deep-purple-a-100`(value: String): Self = StObject.set(x, "rmd-deep-purple-a-100", value.asInstanceOf[js.Any])
+      inline def `setRmd-deep-purple-a-100`(value: String): Self = StObject.set(x, "rmd-deep-purple-a-100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-deep-purple-a-200`(value: String): Self = StObject.set(x, "rmd-deep-purple-a-200", value.asInstanceOf[js.Any])
+      inline def `setRmd-deep-purple-a-200`(value: String): Self = StObject.set(x, "rmd-deep-purple-a-200", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-deep-purple-a-400`(value: String): Self = StObject.set(x, "rmd-deep-purple-a-400", value.asInstanceOf[js.Any])
+      inline def `setRmd-deep-purple-a-400`(value: String): Self = StObject.set(x, "rmd-deep-purple-a-400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-deep-purple-a-700`(value: String): Self = StObject.set(x, "rmd-deep-purple-a-700", value.asInstanceOf[js.Any])
+      inline def `setRmd-deep-purple-a-700`(value: String): Self = StObject.set(x, "rmd-deep-purple-a-700", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-green-100`(value: String): Self = StObject.set(x, "rmd-green-100", value.asInstanceOf[js.Any])
+      inline def `setRmd-green-100`(value: String): Self = StObject.set(x, "rmd-green-100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-green-200`(value: String): Self = StObject.set(x, "rmd-green-200", value.asInstanceOf[js.Any])
+      inline def `setRmd-green-200`(value: String): Self = StObject.set(x, "rmd-green-200", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-green-300`(value: String): Self = StObject.set(x, "rmd-green-300", value.asInstanceOf[js.Any])
+      inline def `setRmd-green-300`(value: String): Self = StObject.set(x, "rmd-green-300", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-green-400`(value: String): Self = StObject.set(x, "rmd-green-400", value.asInstanceOf[js.Any])
+      inline def `setRmd-green-400`(value: String): Self = StObject.set(x, "rmd-green-400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-green-50`(value: String): Self = StObject.set(x, "rmd-green-50", value.asInstanceOf[js.Any])
+      inline def `setRmd-green-50`(value: String): Self = StObject.set(x, "rmd-green-50", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-green-500`(value: String): Self = StObject.set(x, "rmd-green-500", value.asInstanceOf[js.Any])
+      inline def `setRmd-green-500`(value: String): Self = StObject.set(x, "rmd-green-500", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-green-600`(value: String): Self = StObject.set(x, "rmd-green-600", value.asInstanceOf[js.Any])
+      inline def `setRmd-green-600`(value: String): Self = StObject.set(x, "rmd-green-600", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-green-700`(value: String): Self = StObject.set(x, "rmd-green-700", value.asInstanceOf[js.Any])
+      inline def `setRmd-green-700`(value: String): Self = StObject.set(x, "rmd-green-700", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-green-800`(value: String): Self = StObject.set(x, "rmd-green-800", value.asInstanceOf[js.Any])
+      inline def `setRmd-green-800`(value: String): Self = StObject.set(x, "rmd-green-800", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-green-900`(value: String): Self = StObject.set(x, "rmd-green-900", value.asInstanceOf[js.Any])
+      inline def `setRmd-green-900`(value: String): Self = StObject.set(x, "rmd-green-900", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-green-a-100`(value: String): Self = StObject.set(x, "rmd-green-a-100", value.asInstanceOf[js.Any])
+      inline def `setRmd-green-a-100`(value: String): Self = StObject.set(x, "rmd-green-a-100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-green-a-200`(value: String): Self = StObject.set(x, "rmd-green-a-200", value.asInstanceOf[js.Any])
+      inline def `setRmd-green-a-200`(value: String): Self = StObject.set(x, "rmd-green-a-200", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-green-a-400`(value: String): Self = StObject.set(x, "rmd-green-a-400", value.asInstanceOf[js.Any])
+      inline def `setRmd-green-a-400`(value: String): Self = StObject.set(x, "rmd-green-a-400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-green-a-700`(value: String): Self = StObject.set(x, "rmd-green-a-700", value.asInstanceOf[js.Any])
+      inline def `setRmd-green-a-700`(value: String): Self = StObject.set(x, "rmd-green-a-700", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-grey-100`(value: String): Self = StObject.set(x, "rmd-grey-100", value.asInstanceOf[js.Any])
+      inline def `setRmd-grey-100`(value: String): Self = StObject.set(x, "rmd-grey-100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-grey-200`(value: String): Self = StObject.set(x, "rmd-grey-200", value.asInstanceOf[js.Any])
+      inline def `setRmd-grey-200`(value: String): Self = StObject.set(x, "rmd-grey-200", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-grey-300`(value: String): Self = StObject.set(x, "rmd-grey-300", value.asInstanceOf[js.Any])
+      inline def `setRmd-grey-300`(value: String): Self = StObject.set(x, "rmd-grey-300", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-grey-400`(value: String): Self = StObject.set(x, "rmd-grey-400", value.asInstanceOf[js.Any])
+      inline def `setRmd-grey-400`(value: String): Self = StObject.set(x, "rmd-grey-400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-grey-50`(value: String): Self = StObject.set(x, "rmd-grey-50", value.asInstanceOf[js.Any])
+      inline def `setRmd-grey-50`(value: String): Self = StObject.set(x, "rmd-grey-50", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-grey-500`(value: String): Self = StObject.set(x, "rmd-grey-500", value.asInstanceOf[js.Any])
+      inline def `setRmd-grey-500`(value: String): Self = StObject.set(x, "rmd-grey-500", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-grey-600`(value: String): Self = StObject.set(x, "rmd-grey-600", value.asInstanceOf[js.Any])
+      inline def `setRmd-grey-600`(value: String): Self = StObject.set(x, "rmd-grey-600", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-grey-700`(value: String): Self = StObject.set(x, "rmd-grey-700", value.asInstanceOf[js.Any])
+      inline def `setRmd-grey-700`(value: String): Self = StObject.set(x, "rmd-grey-700", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-grey-800`(value: String): Self = StObject.set(x, "rmd-grey-800", value.asInstanceOf[js.Any])
+      inline def `setRmd-grey-800`(value: String): Self = StObject.set(x, "rmd-grey-800", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-grey-900`(value: String): Self = StObject.set(x, "rmd-grey-900", value.asInstanceOf[js.Any])
+      inline def `setRmd-grey-900`(value: String): Self = StObject.set(x, "rmd-grey-900", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-indigo-100`(value: String): Self = StObject.set(x, "rmd-indigo-100", value.asInstanceOf[js.Any])
+      inline def `setRmd-indigo-100`(value: String): Self = StObject.set(x, "rmd-indigo-100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-indigo-200`(value: String): Self = StObject.set(x, "rmd-indigo-200", value.asInstanceOf[js.Any])
+      inline def `setRmd-indigo-200`(value: String): Self = StObject.set(x, "rmd-indigo-200", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-indigo-300`(value: String): Self = StObject.set(x, "rmd-indigo-300", value.asInstanceOf[js.Any])
+      inline def `setRmd-indigo-300`(value: String): Self = StObject.set(x, "rmd-indigo-300", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-indigo-400`(value: String): Self = StObject.set(x, "rmd-indigo-400", value.asInstanceOf[js.Any])
+      inline def `setRmd-indigo-400`(value: String): Self = StObject.set(x, "rmd-indigo-400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-indigo-50`(value: String): Self = StObject.set(x, "rmd-indigo-50", value.asInstanceOf[js.Any])
+      inline def `setRmd-indigo-50`(value: String): Self = StObject.set(x, "rmd-indigo-50", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-indigo-500`(value: String): Self = StObject.set(x, "rmd-indigo-500", value.asInstanceOf[js.Any])
+      inline def `setRmd-indigo-500`(value: String): Self = StObject.set(x, "rmd-indigo-500", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-indigo-600`(value: String): Self = StObject.set(x, "rmd-indigo-600", value.asInstanceOf[js.Any])
+      inline def `setRmd-indigo-600`(value: String): Self = StObject.set(x, "rmd-indigo-600", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-indigo-700`(value: String): Self = StObject.set(x, "rmd-indigo-700", value.asInstanceOf[js.Any])
+      inline def `setRmd-indigo-700`(value: String): Self = StObject.set(x, "rmd-indigo-700", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-indigo-800`(value: String): Self = StObject.set(x, "rmd-indigo-800", value.asInstanceOf[js.Any])
+      inline def `setRmd-indigo-800`(value: String): Self = StObject.set(x, "rmd-indigo-800", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-indigo-900`(value: String): Self = StObject.set(x, "rmd-indigo-900", value.asInstanceOf[js.Any])
+      inline def `setRmd-indigo-900`(value: String): Self = StObject.set(x, "rmd-indigo-900", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-indigo-a-100`(value: String): Self = StObject.set(x, "rmd-indigo-a-100", value.asInstanceOf[js.Any])
+      inline def `setRmd-indigo-a-100`(value: String): Self = StObject.set(x, "rmd-indigo-a-100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-indigo-a-200`(value: String): Self = StObject.set(x, "rmd-indigo-a-200", value.asInstanceOf[js.Any])
+      inline def `setRmd-indigo-a-200`(value: String): Self = StObject.set(x, "rmd-indigo-a-200", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-indigo-a-400`(value: String): Self = StObject.set(x, "rmd-indigo-a-400", value.asInstanceOf[js.Any])
+      inline def `setRmd-indigo-a-400`(value: String): Self = StObject.set(x, "rmd-indigo-a-400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-indigo-a-700`(value: String): Self = StObject.set(x, "rmd-indigo-a-700", value.asInstanceOf[js.Any])
+      inline def `setRmd-indigo-a-700`(value: String): Self = StObject.set(x, "rmd-indigo-a-700", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-light-blue-100`(value: String): Self = StObject.set(x, "rmd-light-blue-100", value.asInstanceOf[js.Any])
+      inline def `setRmd-light-blue-100`(value: String): Self = StObject.set(x, "rmd-light-blue-100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-light-blue-200`(value: String): Self = StObject.set(x, "rmd-light-blue-200", value.asInstanceOf[js.Any])
+      inline def `setRmd-light-blue-200`(value: String): Self = StObject.set(x, "rmd-light-blue-200", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-light-blue-300`(value: String): Self = StObject.set(x, "rmd-light-blue-300", value.asInstanceOf[js.Any])
+      inline def `setRmd-light-blue-300`(value: String): Self = StObject.set(x, "rmd-light-blue-300", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-light-blue-400`(value: String): Self = StObject.set(x, "rmd-light-blue-400", value.asInstanceOf[js.Any])
+      inline def `setRmd-light-blue-400`(value: String): Self = StObject.set(x, "rmd-light-blue-400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-light-blue-50`(value: String): Self = StObject.set(x, "rmd-light-blue-50", value.asInstanceOf[js.Any])
+      inline def `setRmd-light-blue-50`(value: String): Self = StObject.set(x, "rmd-light-blue-50", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-light-blue-500`(value: String): Self = StObject.set(x, "rmd-light-blue-500", value.asInstanceOf[js.Any])
+      inline def `setRmd-light-blue-500`(value: String): Self = StObject.set(x, "rmd-light-blue-500", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-light-blue-600`(value: String): Self = StObject.set(x, "rmd-light-blue-600", value.asInstanceOf[js.Any])
+      inline def `setRmd-light-blue-600`(value: String): Self = StObject.set(x, "rmd-light-blue-600", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-light-blue-700`(value: String): Self = StObject.set(x, "rmd-light-blue-700", value.asInstanceOf[js.Any])
+      inline def `setRmd-light-blue-700`(value: String): Self = StObject.set(x, "rmd-light-blue-700", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-light-blue-800`(value: String): Self = StObject.set(x, "rmd-light-blue-800", value.asInstanceOf[js.Any])
+      inline def `setRmd-light-blue-800`(value: String): Self = StObject.set(x, "rmd-light-blue-800", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-light-blue-900`(value: String): Self = StObject.set(x, "rmd-light-blue-900", value.asInstanceOf[js.Any])
+      inline def `setRmd-light-blue-900`(value: String): Self = StObject.set(x, "rmd-light-blue-900", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-light-blue-a-100`(value: String): Self = StObject.set(x, "rmd-light-blue-a-100", value.asInstanceOf[js.Any])
+      inline def `setRmd-light-blue-a-100`(value: String): Self = StObject.set(x, "rmd-light-blue-a-100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-light-blue-a-200`(value: String): Self = StObject.set(x, "rmd-light-blue-a-200", value.asInstanceOf[js.Any])
+      inline def `setRmd-light-blue-a-200`(value: String): Self = StObject.set(x, "rmd-light-blue-a-200", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-light-blue-a-400`(value: String): Self = StObject.set(x, "rmd-light-blue-a-400", value.asInstanceOf[js.Any])
+      inline def `setRmd-light-blue-a-400`(value: String): Self = StObject.set(x, "rmd-light-blue-a-400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-light-blue-a-700`(value: String): Self = StObject.set(x, "rmd-light-blue-a-700", value.asInstanceOf[js.Any])
+      inline def `setRmd-light-blue-a-700`(value: String): Self = StObject.set(x, "rmd-light-blue-a-700", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-light-green-100`(value: String): Self = StObject.set(x, "rmd-light-green-100", value.asInstanceOf[js.Any])
+      inline def `setRmd-light-green-100`(value: String): Self = StObject.set(x, "rmd-light-green-100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-light-green-200`(value: String): Self = StObject.set(x, "rmd-light-green-200", value.asInstanceOf[js.Any])
+      inline def `setRmd-light-green-200`(value: String): Self = StObject.set(x, "rmd-light-green-200", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-light-green-300`(value: String): Self = StObject.set(x, "rmd-light-green-300", value.asInstanceOf[js.Any])
+      inline def `setRmd-light-green-300`(value: String): Self = StObject.set(x, "rmd-light-green-300", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-light-green-400`(value: String): Self = StObject.set(x, "rmd-light-green-400", value.asInstanceOf[js.Any])
+      inline def `setRmd-light-green-400`(value: String): Self = StObject.set(x, "rmd-light-green-400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-light-green-50`(value: String): Self = StObject.set(x, "rmd-light-green-50", value.asInstanceOf[js.Any])
+      inline def `setRmd-light-green-50`(value: String): Self = StObject.set(x, "rmd-light-green-50", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-light-green-500`(value: String): Self = StObject.set(x, "rmd-light-green-500", value.asInstanceOf[js.Any])
+      inline def `setRmd-light-green-500`(value: String): Self = StObject.set(x, "rmd-light-green-500", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-light-green-600`(value: String): Self = StObject.set(x, "rmd-light-green-600", value.asInstanceOf[js.Any])
+      inline def `setRmd-light-green-600`(value: String): Self = StObject.set(x, "rmd-light-green-600", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-light-green-700`(value: String): Self = StObject.set(x, "rmd-light-green-700", value.asInstanceOf[js.Any])
+      inline def `setRmd-light-green-700`(value: String): Self = StObject.set(x, "rmd-light-green-700", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-light-green-800`(value: String): Self = StObject.set(x, "rmd-light-green-800", value.asInstanceOf[js.Any])
+      inline def `setRmd-light-green-800`(value: String): Self = StObject.set(x, "rmd-light-green-800", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-light-green-900`(value: String): Self = StObject.set(x, "rmd-light-green-900", value.asInstanceOf[js.Any])
+      inline def `setRmd-light-green-900`(value: String): Self = StObject.set(x, "rmd-light-green-900", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-light-green-a-100`(value: String): Self = StObject.set(x, "rmd-light-green-a-100", value.asInstanceOf[js.Any])
+      inline def `setRmd-light-green-a-100`(value: String): Self = StObject.set(x, "rmd-light-green-a-100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-light-green-a-200`(value: String): Self = StObject.set(x, "rmd-light-green-a-200", value.asInstanceOf[js.Any])
+      inline def `setRmd-light-green-a-200`(value: String): Self = StObject.set(x, "rmd-light-green-a-200", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-light-green-a-400`(value: String): Self = StObject.set(x, "rmd-light-green-a-400", value.asInstanceOf[js.Any])
+      inline def `setRmd-light-green-a-400`(value: String): Self = StObject.set(x, "rmd-light-green-a-400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-light-green-a-700`(value: String): Self = StObject.set(x, "rmd-light-green-a-700", value.asInstanceOf[js.Any])
+      inline def `setRmd-light-green-a-700`(value: String): Self = StObject.set(x, "rmd-light-green-a-700", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-lime-100`(value: String): Self = StObject.set(x, "rmd-lime-100", value.asInstanceOf[js.Any])
+      inline def `setRmd-lime-100`(value: String): Self = StObject.set(x, "rmd-lime-100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-lime-200`(value: String): Self = StObject.set(x, "rmd-lime-200", value.asInstanceOf[js.Any])
+      inline def `setRmd-lime-200`(value: String): Self = StObject.set(x, "rmd-lime-200", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-lime-300`(value: String): Self = StObject.set(x, "rmd-lime-300", value.asInstanceOf[js.Any])
+      inline def `setRmd-lime-300`(value: String): Self = StObject.set(x, "rmd-lime-300", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-lime-400`(value: String): Self = StObject.set(x, "rmd-lime-400", value.asInstanceOf[js.Any])
+      inline def `setRmd-lime-400`(value: String): Self = StObject.set(x, "rmd-lime-400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-lime-50`(value: String): Self = StObject.set(x, "rmd-lime-50", value.asInstanceOf[js.Any])
+      inline def `setRmd-lime-50`(value: String): Self = StObject.set(x, "rmd-lime-50", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-lime-500`(value: String): Self = StObject.set(x, "rmd-lime-500", value.asInstanceOf[js.Any])
+      inline def `setRmd-lime-500`(value: String): Self = StObject.set(x, "rmd-lime-500", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-lime-600`(value: String): Self = StObject.set(x, "rmd-lime-600", value.asInstanceOf[js.Any])
+      inline def `setRmd-lime-600`(value: String): Self = StObject.set(x, "rmd-lime-600", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-lime-700`(value: String): Self = StObject.set(x, "rmd-lime-700", value.asInstanceOf[js.Any])
+      inline def `setRmd-lime-700`(value: String): Self = StObject.set(x, "rmd-lime-700", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-lime-800`(value: String): Self = StObject.set(x, "rmd-lime-800", value.asInstanceOf[js.Any])
+      inline def `setRmd-lime-800`(value: String): Self = StObject.set(x, "rmd-lime-800", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-lime-900`(value: String): Self = StObject.set(x, "rmd-lime-900", value.asInstanceOf[js.Any])
+      inline def `setRmd-lime-900`(value: String): Self = StObject.set(x, "rmd-lime-900", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-lime-a-100`(value: String): Self = StObject.set(x, "rmd-lime-a-100", value.asInstanceOf[js.Any])
+      inline def `setRmd-lime-a-100`(value: String): Self = StObject.set(x, "rmd-lime-a-100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-lime-a-200`(value: String): Self = StObject.set(x, "rmd-lime-a-200", value.asInstanceOf[js.Any])
+      inline def `setRmd-lime-a-200`(value: String): Self = StObject.set(x, "rmd-lime-a-200", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-lime-a-400`(value: String): Self = StObject.set(x, "rmd-lime-a-400", value.asInstanceOf[js.Any])
+      inline def `setRmd-lime-a-400`(value: String): Self = StObject.set(x, "rmd-lime-a-400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-lime-a-700`(value: String): Self = StObject.set(x, "rmd-lime-a-700", value.asInstanceOf[js.Any])
+      inline def `setRmd-lime-a-700`(value: String): Self = StObject.set(x, "rmd-lime-a-700", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-orange-100`(value: String): Self = StObject.set(x, "rmd-orange-100", value.asInstanceOf[js.Any])
+      inline def `setRmd-orange-100`(value: String): Self = StObject.set(x, "rmd-orange-100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-orange-200`(value: String): Self = StObject.set(x, "rmd-orange-200", value.asInstanceOf[js.Any])
+      inline def `setRmd-orange-200`(value: String): Self = StObject.set(x, "rmd-orange-200", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-orange-300`(value: String): Self = StObject.set(x, "rmd-orange-300", value.asInstanceOf[js.Any])
+      inline def `setRmd-orange-300`(value: String): Self = StObject.set(x, "rmd-orange-300", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-orange-400`(value: String): Self = StObject.set(x, "rmd-orange-400", value.asInstanceOf[js.Any])
+      inline def `setRmd-orange-400`(value: String): Self = StObject.set(x, "rmd-orange-400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-orange-50`(value: String): Self = StObject.set(x, "rmd-orange-50", value.asInstanceOf[js.Any])
+      inline def `setRmd-orange-50`(value: String): Self = StObject.set(x, "rmd-orange-50", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-orange-500`(value: String): Self = StObject.set(x, "rmd-orange-500", value.asInstanceOf[js.Any])
+      inline def `setRmd-orange-500`(value: String): Self = StObject.set(x, "rmd-orange-500", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-orange-600`(value: String): Self = StObject.set(x, "rmd-orange-600", value.asInstanceOf[js.Any])
+      inline def `setRmd-orange-600`(value: String): Self = StObject.set(x, "rmd-orange-600", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-orange-700`(value: String): Self = StObject.set(x, "rmd-orange-700", value.asInstanceOf[js.Any])
+      inline def `setRmd-orange-700`(value: String): Self = StObject.set(x, "rmd-orange-700", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-orange-800`(value: String): Self = StObject.set(x, "rmd-orange-800", value.asInstanceOf[js.Any])
+      inline def `setRmd-orange-800`(value: String): Self = StObject.set(x, "rmd-orange-800", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-orange-900`(value: String): Self = StObject.set(x, "rmd-orange-900", value.asInstanceOf[js.Any])
+      inline def `setRmd-orange-900`(value: String): Self = StObject.set(x, "rmd-orange-900", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-orange-a-100`(value: String): Self = StObject.set(x, "rmd-orange-a-100", value.asInstanceOf[js.Any])
+      inline def `setRmd-orange-a-100`(value: String): Self = StObject.set(x, "rmd-orange-a-100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-orange-a-200`(value: String): Self = StObject.set(x, "rmd-orange-a-200", value.asInstanceOf[js.Any])
+      inline def `setRmd-orange-a-200`(value: String): Self = StObject.set(x, "rmd-orange-a-200", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-orange-a-400`(value: String): Self = StObject.set(x, "rmd-orange-a-400", value.asInstanceOf[js.Any])
+      inline def `setRmd-orange-a-400`(value: String): Self = StObject.set(x, "rmd-orange-a-400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-orange-a-700`(value: String): Self = StObject.set(x, "rmd-orange-a-700", value.asInstanceOf[js.Any])
+      inline def `setRmd-orange-a-700`(value: String): Self = StObject.set(x, "rmd-orange-a-700", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-pink-100`(value: String): Self = StObject.set(x, "rmd-pink-100", value.asInstanceOf[js.Any])
+      inline def `setRmd-pink-100`(value: String): Self = StObject.set(x, "rmd-pink-100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-pink-200`(value: String): Self = StObject.set(x, "rmd-pink-200", value.asInstanceOf[js.Any])
+      inline def `setRmd-pink-200`(value: String): Self = StObject.set(x, "rmd-pink-200", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-pink-300`(value: String): Self = StObject.set(x, "rmd-pink-300", value.asInstanceOf[js.Any])
+      inline def `setRmd-pink-300`(value: String): Self = StObject.set(x, "rmd-pink-300", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-pink-400`(value: String): Self = StObject.set(x, "rmd-pink-400", value.asInstanceOf[js.Any])
+      inline def `setRmd-pink-400`(value: String): Self = StObject.set(x, "rmd-pink-400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-pink-50`(value: String): Self = StObject.set(x, "rmd-pink-50", value.asInstanceOf[js.Any])
+      inline def `setRmd-pink-50`(value: String): Self = StObject.set(x, "rmd-pink-50", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-pink-500`(value: String): Self = StObject.set(x, "rmd-pink-500", value.asInstanceOf[js.Any])
+      inline def `setRmd-pink-500`(value: String): Self = StObject.set(x, "rmd-pink-500", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-pink-600`(value: String): Self = StObject.set(x, "rmd-pink-600", value.asInstanceOf[js.Any])
+      inline def `setRmd-pink-600`(value: String): Self = StObject.set(x, "rmd-pink-600", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-pink-700`(value: String): Self = StObject.set(x, "rmd-pink-700", value.asInstanceOf[js.Any])
+      inline def `setRmd-pink-700`(value: String): Self = StObject.set(x, "rmd-pink-700", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-pink-800`(value: String): Self = StObject.set(x, "rmd-pink-800", value.asInstanceOf[js.Any])
+      inline def `setRmd-pink-800`(value: String): Self = StObject.set(x, "rmd-pink-800", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-pink-900`(value: String): Self = StObject.set(x, "rmd-pink-900", value.asInstanceOf[js.Any])
+      inline def `setRmd-pink-900`(value: String): Self = StObject.set(x, "rmd-pink-900", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-pink-a-100`(value: String): Self = StObject.set(x, "rmd-pink-a-100", value.asInstanceOf[js.Any])
+      inline def `setRmd-pink-a-100`(value: String): Self = StObject.set(x, "rmd-pink-a-100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-pink-a-200`(value: String): Self = StObject.set(x, "rmd-pink-a-200", value.asInstanceOf[js.Any])
+      inline def `setRmd-pink-a-200`(value: String): Self = StObject.set(x, "rmd-pink-a-200", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-pink-a-400`(value: String): Self = StObject.set(x, "rmd-pink-a-400", value.asInstanceOf[js.Any])
+      inline def `setRmd-pink-a-400`(value: String): Self = StObject.set(x, "rmd-pink-a-400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-pink-a-700`(value: String): Self = StObject.set(x, "rmd-pink-a-700", value.asInstanceOf[js.Any])
+      inline def `setRmd-pink-a-700`(value: String): Self = StObject.set(x, "rmd-pink-a-700", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-purple-100`(value: String): Self = StObject.set(x, "rmd-purple-100", value.asInstanceOf[js.Any])
+      inline def `setRmd-purple-100`(value: String): Self = StObject.set(x, "rmd-purple-100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-purple-200`(value: String): Self = StObject.set(x, "rmd-purple-200", value.asInstanceOf[js.Any])
+      inline def `setRmd-purple-200`(value: String): Self = StObject.set(x, "rmd-purple-200", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-purple-300`(value: String): Self = StObject.set(x, "rmd-purple-300", value.asInstanceOf[js.Any])
+      inline def `setRmd-purple-300`(value: String): Self = StObject.set(x, "rmd-purple-300", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-purple-400`(value: String): Self = StObject.set(x, "rmd-purple-400", value.asInstanceOf[js.Any])
+      inline def `setRmd-purple-400`(value: String): Self = StObject.set(x, "rmd-purple-400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-purple-50`(value: String): Self = StObject.set(x, "rmd-purple-50", value.asInstanceOf[js.Any])
+      inline def `setRmd-purple-50`(value: String): Self = StObject.set(x, "rmd-purple-50", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-purple-500`(value: String): Self = StObject.set(x, "rmd-purple-500", value.asInstanceOf[js.Any])
+      inline def `setRmd-purple-500`(value: String): Self = StObject.set(x, "rmd-purple-500", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-purple-600`(value: String): Self = StObject.set(x, "rmd-purple-600", value.asInstanceOf[js.Any])
+      inline def `setRmd-purple-600`(value: String): Self = StObject.set(x, "rmd-purple-600", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-purple-700`(value: String): Self = StObject.set(x, "rmd-purple-700", value.asInstanceOf[js.Any])
+      inline def `setRmd-purple-700`(value: String): Self = StObject.set(x, "rmd-purple-700", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-purple-800`(value: String): Self = StObject.set(x, "rmd-purple-800", value.asInstanceOf[js.Any])
+      inline def `setRmd-purple-800`(value: String): Self = StObject.set(x, "rmd-purple-800", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-purple-900`(value: String): Self = StObject.set(x, "rmd-purple-900", value.asInstanceOf[js.Any])
+      inline def `setRmd-purple-900`(value: String): Self = StObject.set(x, "rmd-purple-900", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-purple-a-100`(value: String): Self = StObject.set(x, "rmd-purple-a-100", value.asInstanceOf[js.Any])
+      inline def `setRmd-purple-a-100`(value: String): Self = StObject.set(x, "rmd-purple-a-100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-purple-a-200`(value: String): Self = StObject.set(x, "rmd-purple-a-200", value.asInstanceOf[js.Any])
+      inline def `setRmd-purple-a-200`(value: String): Self = StObject.set(x, "rmd-purple-a-200", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-purple-a-400`(value: String): Self = StObject.set(x, "rmd-purple-a-400", value.asInstanceOf[js.Any])
+      inline def `setRmd-purple-a-400`(value: String): Self = StObject.set(x, "rmd-purple-a-400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-purple-a-700`(value: String): Self = StObject.set(x, "rmd-purple-a-700", value.asInstanceOf[js.Any])
+      inline def `setRmd-purple-a-700`(value: String): Self = StObject.set(x, "rmd-purple-a-700", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-red-100`(value: String): Self = StObject.set(x, "rmd-red-100", value.asInstanceOf[js.Any])
+      inline def `setRmd-red-100`(value: String): Self = StObject.set(x, "rmd-red-100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-red-200`(value: String): Self = StObject.set(x, "rmd-red-200", value.asInstanceOf[js.Any])
+      inline def `setRmd-red-200`(value: String): Self = StObject.set(x, "rmd-red-200", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-red-300`(value: String): Self = StObject.set(x, "rmd-red-300", value.asInstanceOf[js.Any])
+      inline def `setRmd-red-300`(value: String): Self = StObject.set(x, "rmd-red-300", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-red-400`(value: String): Self = StObject.set(x, "rmd-red-400", value.asInstanceOf[js.Any])
+      inline def `setRmd-red-400`(value: String): Self = StObject.set(x, "rmd-red-400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-red-50`(value: String): Self = StObject.set(x, "rmd-red-50", value.asInstanceOf[js.Any])
+      inline def `setRmd-red-50`(value: String): Self = StObject.set(x, "rmd-red-50", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-red-500`(value: String): Self = StObject.set(x, "rmd-red-500", value.asInstanceOf[js.Any])
+      inline def `setRmd-red-500`(value: String): Self = StObject.set(x, "rmd-red-500", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-red-600`(value: String): Self = StObject.set(x, "rmd-red-600", value.asInstanceOf[js.Any])
+      inline def `setRmd-red-600`(value: String): Self = StObject.set(x, "rmd-red-600", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-red-700`(value: String): Self = StObject.set(x, "rmd-red-700", value.asInstanceOf[js.Any])
+      inline def `setRmd-red-700`(value: String): Self = StObject.set(x, "rmd-red-700", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-red-800`(value: String): Self = StObject.set(x, "rmd-red-800", value.asInstanceOf[js.Any])
+      inline def `setRmd-red-800`(value: String): Self = StObject.set(x, "rmd-red-800", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-red-900`(value: String): Self = StObject.set(x, "rmd-red-900", value.asInstanceOf[js.Any])
+      inline def `setRmd-red-900`(value: String): Self = StObject.set(x, "rmd-red-900", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-red-a-100`(value: String): Self = StObject.set(x, "rmd-red-a-100", value.asInstanceOf[js.Any])
+      inline def `setRmd-red-a-100`(value: String): Self = StObject.set(x, "rmd-red-a-100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-red-a-200`(value: String): Self = StObject.set(x, "rmd-red-a-200", value.asInstanceOf[js.Any])
+      inline def `setRmd-red-a-200`(value: String): Self = StObject.set(x, "rmd-red-a-200", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-red-a-400`(value: String): Self = StObject.set(x, "rmd-red-a-400", value.asInstanceOf[js.Any])
+      inline def `setRmd-red-a-400`(value: String): Self = StObject.set(x, "rmd-red-a-400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-red-a-700`(value: String): Self = StObject.set(x, "rmd-red-a-700", value.asInstanceOf[js.Any])
+      inline def `setRmd-red-a-700`(value: String): Self = StObject.set(x, "rmd-red-a-700", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-teal-100`(value: String): Self = StObject.set(x, "rmd-teal-100", value.asInstanceOf[js.Any])
+      inline def `setRmd-teal-100`(value: String): Self = StObject.set(x, "rmd-teal-100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-teal-200`(value: String): Self = StObject.set(x, "rmd-teal-200", value.asInstanceOf[js.Any])
+      inline def `setRmd-teal-200`(value: String): Self = StObject.set(x, "rmd-teal-200", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-teal-300`(value: String): Self = StObject.set(x, "rmd-teal-300", value.asInstanceOf[js.Any])
+      inline def `setRmd-teal-300`(value: String): Self = StObject.set(x, "rmd-teal-300", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-teal-400`(value: String): Self = StObject.set(x, "rmd-teal-400", value.asInstanceOf[js.Any])
+      inline def `setRmd-teal-400`(value: String): Self = StObject.set(x, "rmd-teal-400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-teal-50`(value: String): Self = StObject.set(x, "rmd-teal-50", value.asInstanceOf[js.Any])
+      inline def `setRmd-teal-50`(value: String): Self = StObject.set(x, "rmd-teal-50", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-teal-500`(value: String): Self = StObject.set(x, "rmd-teal-500", value.asInstanceOf[js.Any])
+      inline def `setRmd-teal-500`(value: String): Self = StObject.set(x, "rmd-teal-500", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-teal-600`(value: String): Self = StObject.set(x, "rmd-teal-600", value.asInstanceOf[js.Any])
+      inline def `setRmd-teal-600`(value: String): Self = StObject.set(x, "rmd-teal-600", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-teal-700`(value: String): Self = StObject.set(x, "rmd-teal-700", value.asInstanceOf[js.Any])
+      inline def `setRmd-teal-700`(value: String): Self = StObject.set(x, "rmd-teal-700", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-teal-800`(value: String): Self = StObject.set(x, "rmd-teal-800", value.asInstanceOf[js.Any])
+      inline def `setRmd-teal-800`(value: String): Self = StObject.set(x, "rmd-teal-800", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-teal-900`(value: String): Self = StObject.set(x, "rmd-teal-900", value.asInstanceOf[js.Any])
+      inline def `setRmd-teal-900`(value: String): Self = StObject.set(x, "rmd-teal-900", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-teal-a-100`(value: String): Self = StObject.set(x, "rmd-teal-a-100", value.asInstanceOf[js.Any])
+      inline def `setRmd-teal-a-100`(value: String): Self = StObject.set(x, "rmd-teal-a-100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-teal-a-200`(value: String): Self = StObject.set(x, "rmd-teal-a-200", value.asInstanceOf[js.Any])
+      inline def `setRmd-teal-a-200`(value: String): Self = StObject.set(x, "rmd-teal-a-200", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-teal-a-400`(value: String): Self = StObject.set(x, "rmd-teal-a-400", value.asInstanceOf[js.Any])
+      inline def `setRmd-teal-a-400`(value: String): Self = StObject.set(x, "rmd-teal-a-400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-teal-a-700`(value: String): Self = StObject.set(x, "rmd-teal-a-700", value.asInstanceOf[js.Any])
+      inline def `setRmd-teal-a-700`(value: String): Self = StObject.set(x, "rmd-teal-a-700", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-white-base`(value: String): Self = StObject.set(x, "rmd-white-base", value.asInstanceOf[js.Any])
+      inline def `setRmd-white-base`(value: String): Self = StObject.set(x, "rmd-white-base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-yellow-100`(value: String): Self = StObject.set(x, "rmd-yellow-100", value.asInstanceOf[js.Any])
+      inline def `setRmd-yellow-100`(value: String): Self = StObject.set(x, "rmd-yellow-100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-yellow-200`(value: String): Self = StObject.set(x, "rmd-yellow-200", value.asInstanceOf[js.Any])
+      inline def `setRmd-yellow-200`(value: String): Self = StObject.set(x, "rmd-yellow-200", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-yellow-300`(value: String): Self = StObject.set(x, "rmd-yellow-300", value.asInstanceOf[js.Any])
+      inline def `setRmd-yellow-300`(value: String): Self = StObject.set(x, "rmd-yellow-300", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-yellow-400`(value: String): Self = StObject.set(x, "rmd-yellow-400", value.asInstanceOf[js.Any])
+      inline def `setRmd-yellow-400`(value: String): Self = StObject.set(x, "rmd-yellow-400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-yellow-50`(value: String): Self = StObject.set(x, "rmd-yellow-50", value.asInstanceOf[js.Any])
+      inline def `setRmd-yellow-50`(value: String): Self = StObject.set(x, "rmd-yellow-50", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-yellow-500`(value: String): Self = StObject.set(x, "rmd-yellow-500", value.asInstanceOf[js.Any])
+      inline def `setRmd-yellow-500`(value: String): Self = StObject.set(x, "rmd-yellow-500", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-yellow-600`(value: String): Self = StObject.set(x, "rmd-yellow-600", value.asInstanceOf[js.Any])
+      inline def `setRmd-yellow-600`(value: String): Self = StObject.set(x, "rmd-yellow-600", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-yellow-700`(value: String): Self = StObject.set(x, "rmd-yellow-700", value.asInstanceOf[js.Any])
+      inline def `setRmd-yellow-700`(value: String): Self = StObject.set(x, "rmd-yellow-700", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-yellow-800`(value: String): Self = StObject.set(x, "rmd-yellow-800", value.asInstanceOf[js.Any])
+      inline def `setRmd-yellow-800`(value: String): Self = StObject.set(x, "rmd-yellow-800", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-yellow-900`(value: String): Self = StObject.set(x, "rmd-yellow-900", value.asInstanceOf[js.Any])
+      inline def `setRmd-yellow-900`(value: String): Self = StObject.set(x, "rmd-yellow-900", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-yellow-a-100`(value: String): Self = StObject.set(x, "rmd-yellow-a-100", value.asInstanceOf[js.Any])
+      inline def `setRmd-yellow-a-100`(value: String): Self = StObject.set(x, "rmd-yellow-a-100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-yellow-a-200`(value: String): Self = StObject.set(x, "rmd-yellow-a-200", value.asInstanceOf[js.Any])
+      inline def `setRmd-yellow-a-200`(value: String): Self = StObject.set(x, "rmd-yellow-a-200", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-yellow-a-400`(value: String): Self = StObject.set(x, "rmd-yellow-a-400", value.asInstanceOf[js.Any])
+      inline def `setRmd-yellow-a-400`(value: String): Self = StObject.set(x, "rmd-yellow-a-400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRmd-yellow-a-700`(value: String): Self = StObject.set(x, "rmd-yellow-a-700", value.asInstanceOf[js.Any])
+      inline def `setRmd-yellow-a-700`(value: String): Self = StObject.set(x, "rmd-yellow-a-700", value.asInstanceOf[js.Any])
     }
   }
 }

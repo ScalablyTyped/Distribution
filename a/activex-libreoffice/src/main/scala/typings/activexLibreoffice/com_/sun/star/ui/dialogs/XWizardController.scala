@@ -46,8 +46,7 @@ trait XWizardController extends StObject {
 }
 object XWizardController {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canAdvance: () => Boolean,
     confirmFinish: () => Boolean,
     createPage: (XWindow, Double) => XWizardPage,
@@ -59,25 +58,18 @@ object XWizardController {
     __obj.asInstanceOf[XWizardController]
   }
   
-  @scala.inline
-  implicit class XWizardControllerMutableBuilder[Self <: XWizardController] (val x: Self) extends AnyVal {
+  extension [Self <: XWizardController](x: Self) {
     
-    @scala.inline
-    def setCanAdvance(value: () => Boolean): Self = StObject.set(x, "canAdvance", js.Any.fromFunction0(value))
+    inline def setCanAdvance(value: () => Boolean): Self = StObject.set(x, "canAdvance", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setConfirmFinish(value: () => Boolean): Self = StObject.set(x, "confirmFinish", js.Any.fromFunction0(value))
+    inline def setConfirmFinish(value: () => Boolean): Self = StObject.set(x, "confirmFinish", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreatePage(value: (XWindow, Double) => XWizardPage): Self = StObject.set(x, "createPage", js.Any.fromFunction2(value))
+    inline def setCreatePage(value: (XWindow, Double) => XWizardPage): Self = StObject.set(x, "createPage", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetPageTitle(value: Double => String): Self = StObject.set(x, "getPageTitle", js.Any.fromFunction1(value))
+    inline def setGetPageTitle(value: Double => String): Self = StObject.set(x, "getPageTitle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnActivatePage(value: Double => Unit): Self = StObject.set(x, "onActivatePage", js.Any.fromFunction1(value))
+    inline def setOnActivatePage(value: Double => Unit): Self = StObject.set(x, "onActivatePage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDeactivatePage(value: Double => Unit): Self = StObject.set(x, "onDeactivatePage", js.Any.fromFunction1(value))
+    inline def setOnDeactivatePage(value: Double => Unit): Self = StObject.set(x, "onDeactivatePage", js.Any.fromFunction1(value))
   }
 }

@@ -15,16 +15,13 @@ trait SystemInfoPeripheral
 }
 object SystemInfoPeripheral {
   
-  @scala.inline
-  def apply(isVideoOutputOn: Boolean): SystemInfoPeripheral = {
+  inline def apply(isVideoOutputOn: Boolean): SystemInfoPeripheral = {
     val __obj = js.Dynamic.literal(isVideoOutputOn = isVideoOutputOn.asInstanceOf[js.Any])
     __obj.asInstanceOf[SystemInfoPeripheral]
   }
   
-  @scala.inline
-  implicit class SystemInfoPeripheralMutableBuilder[Self <: SystemInfoPeripheral] (val x: Self) extends AnyVal {
+  extension [Self <: SystemInfoPeripheral](x: Self) {
     
-    @scala.inline
-    def setIsVideoOutputOn(value: Boolean): Self = StObject.set(x, "isVideoOutputOn", value.asInstanceOf[js.Any])
+    inline def setIsVideoOutputOn(value: Boolean): Self = StObject.set(x, "isVideoOutputOn", value.asInstanceOf[js.Any])
   }
 }

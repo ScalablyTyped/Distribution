@@ -13,19 +13,15 @@ trait GoogleActionsOrdersV3ActionActionMetadata extends StObject {
 }
 object GoogleActionsOrdersV3ActionActionMetadata {
   
-  @scala.inline
-  def apply(): GoogleActionsOrdersV3ActionActionMetadata = {
+  inline def apply(): GoogleActionsOrdersV3ActionActionMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsOrdersV3ActionActionMetadata]
   }
   
-  @scala.inline
-  implicit class GoogleActionsOrdersV3ActionActionMetadataMutableBuilder[Self <: GoogleActionsOrdersV3ActionActionMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsOrdersV3ActionActionMetadata](x: Self) {
     
-    @scala.inline
-    def setExpireTime(value: String): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
+    inline def setExpireTime(value: String): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpireTimeUndefined: Self = StObject.set(x, "expireTime", js.undefined)
+    inline def setExpireTimeUndefined: Self = StObject.set(x, "expireTime", js.undefined)
   }
 }

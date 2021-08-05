@@ -8,16 +8,13 @@ object rmcDialogNumbers {
   
   @js.native
   sealed trait `0` extends StObject
-  @scala.inline
-  def `0`: `0` = 0.asInstanceOf[`0`]
+  inline def `0`: `0` = 0.asInstanceOf[`0`]
   
   @js.native
   sealed trait `1` extends StObject
-  @scala.inline
-  def `1`: `1` = 1.asInstanceOf[`1`]
+  inline def `1`: `1` = 1.asInstanceOf[`1`]
   
   @js.native
   sealed trait `1.05` extends StObject
-  @scala.inline
-  def `1.05`: `1.05` = 1.05.asInstanceOf[`1.05`]
+  inline def `1.05`: `1.05` = 1.05.asInstanceOf[`1.05`]
 }

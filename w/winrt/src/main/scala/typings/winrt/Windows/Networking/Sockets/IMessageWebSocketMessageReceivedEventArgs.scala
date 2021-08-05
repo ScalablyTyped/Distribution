@@ -16,22 +16,17 @@ trait IMessageWebSocketMessageReceivedEventArgs extends StObject {
 }
 object IMessageWebSocketMessageReceivedEventArgs {
   
-  @scala.inline
-  def apply(getDataReader: () => DataReader, getDataStream: () => IInputStream, messageType: SocketMessageType): IMessageWebSocketMessageReceivedEventArgs = {
+  inline def apply(getDataReader: () => DataReader, getDataStream: () => IInputStream, messageType: SocketMessageType): IMessageWebSocketMessageReceivedEventArgs = {
     val __obj = js.Dynamic.literal(getDataReader = js.Any.fromFunction0(getDataReader), getDataStream = js.Any.fromFunction0(getDataStream), messageType = messageType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMessageWebSocketMessageReceivedEventArgs]
   }
   
-  @scala.inline
-  implicit class IMessageWebSocketMessageReceivedEventArgsMutableBuilder[Self <: IMessageWebSocketMessageReceivedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IMessageWebSocketMessageReceivedEventArgs](x: Self) {
     
-    @scala.inline
-    def setGetDataReader(value: () => DataReader): Self = StObject.set(x, "getDataReader", js.Any.fromFunction0(value))
+    inline def setGetDataReader(value: () => DataReader): Self = StObject.set(x, "getDataReader", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDataStream(value: () => IInputStream): Self = StObject.set(x, "getDataStream", js.Any.fromFunction0(value))
+    inline def setGetDataStream(value: () => IInputStream): Self = StObject.set(x, "getDataStream", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMessageType(value: SocketMessageType): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
+    inline def setMessageType(value: SocketMessageType): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
   }
 }

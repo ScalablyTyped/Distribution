@@ -8,16 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Transform = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Transform]
-  @scala.inline
-  def apply(pluginsOrOptions: js.Array[Plugin]): Transform = ^.asInstanceOf[js.Dynamic].apply(pluginsOrOptions.asInstanceOf[js.Any]).asInstanceOf[Transform]
-  @scala.inline
-  def apply(pluginsOrOptions: Options): Transform = ^.asInstanceOf[js.Dynamic].apply(pluginsOrOptions.asInstanceOf[js.Any]).asInstanceOf[Transform]
-  @scala.inline
-  def apply(plugins: js.Array[Plugin], options: Options): Transform = (^.asInstanceOf[js.Dynamic].apply(plugins.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Transform]
-  @scala.inline
-  def apply(plugins: Unit, options: Options): Transform = (^.asInstanceOf[js.Dynamic].apply(plugins.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  inline def apply(): Transform = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Transform]
+  inline def apply(pluginsOrOptions: js.Array[Plugin]): Transform = ^.asInstanceOf[js.Dynamic].apply(pluginsOrOptions.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  inline def apply(pluginsOrOptions: Options): Transform = ^.asInstanceOf[js.Dynamic].apply(pluginsOrOptions.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  inline def apply(plugins: js.Array[Plugin], options: Options): Transform = (^.asInstanceOf[js.Dynamic].apply(plugins.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  inline def apply(plugins: Unit, options: Options): Transform = (^.asInstanceOf[js.Dynamic].apply(plugins.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Transform]
   
   @JSImport("gulp-imagemin", JSImport.Namespace)
   @js.native
@@ -45,20 +40,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     }
   }
   

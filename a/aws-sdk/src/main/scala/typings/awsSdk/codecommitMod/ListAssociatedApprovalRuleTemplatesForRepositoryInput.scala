@@ -23,28 +23,21 @@ trait ListAssociatedApprovalRuleTemplatesForRepositoryInput extends StObject {
 }
 object ListAssociatedApprovalRuleTemplatesForRepositoryInput {
   
-  @scala.inline
-  def apply(repositoryName: RepositoryName): ListAssociatedApprovalRuleTemplatesForRepositoryInput = {
+  inline def apply(repositoryName: RepositoryName): ListAssociatedApprovalRuleTemplatesForRepositoryInput = {
     val __obj = js.Dynamic.literal(repositoryName = repositoryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAssociatedApprovalRuleTemplatesForRepositoryInput]
   }
   
-  @scala.inline
-  implicit class ListAssociatedApprovalRuleTemplatesForRepositoryInputMutableBuilder[Self <: ListAssociatedApprovalRuleTemplatesForRepositoryInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListAssociatedApprovalRuleTemplatesForRepositoryInput](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+    inline def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
   }
 }

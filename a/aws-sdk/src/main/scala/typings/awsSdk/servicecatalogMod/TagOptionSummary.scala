@@ -18,28 +18,21 @@ trait TagOptionSummary extends StObject {
 }
 object TagOptionSummary {
   
-  @scala.inline
-  def apply(): TagOptionSummary = {
+  inline def apply(): TagOptionSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TagOptionSummary]
   }
   
-  @scala.inline
-  implicit class TagOptionSummaryMutableBuilder[Self <: TagOptionSummary] (val x: Self) extends AnyVal {
+  extension [Self <: TagOptionSummary](x: Self) {
     
-    @scala.inline
-    def setKey(value: TagOptionKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: TagOptionKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
-    @scala.inline
-    def setValues(value: TagOptionValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: TagOptionValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: TagOptionValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: TagOptionValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

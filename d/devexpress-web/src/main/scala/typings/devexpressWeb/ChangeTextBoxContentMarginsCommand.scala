@@ -24,19 +24,15 @@ trait ChangeTextBoxContentMarginsCommand
 }
 object ChangeTextBoxContentMarginsCommand {
   
-  @scala.inline
-  def apply(execute: Margins => Boolean, getState: () => CommandState[Margins]): ChangeTextBoxContentMarginsCommand = {
+  inline def apply(execute: Margins => Boolean, getState: () => CommandState[Margins]): ChangeTextBoxContentMarginsCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[ChangeTextBoxContentMarginsCommand]
   }
   
-  @scala.inline
-  implicit class ChangeTextBoxContentMarginsCommandMutableBuilder[Self <: ChangeTextBoxContentMarginsCommand] (val x: Self) extends AnyVal {
+  extension [Self <: ChangeTextBoxContentMarginsCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: Margins => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+    inline def setExecute(value: Margins => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetState(value: () => CommandState[Margins]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    inline def setGetState(value: () => CommandState[Margins]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
   }
 }

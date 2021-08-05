@@ -28,8 +28,7 @@ trait MobileBroadbandDeviceService extends StObject {
 }
 object MobileBroadbandDeviceService {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deviceServiceId: String,
     openCommandSession: () => MobileBroadbandDeviceServiceCommandSession,
     openDataSession: () => MobileBroadbandDeviceServiceDataSession,
@@ -39,19 +38,14 @@ object MobileBroadbandDeviceService {
     __obj.asInstanceOf[MobileBroadbandDeviceService]
   }
   
-  @scala.inline
-  implicit class MobileBroadbandDeviceServiceMutableBuilder[Self <: MobileBroadbandDeviceService] (val x: Self) extends AnyVal {
+  extension [Self <: MobileBroadbandDeviceService](x: Self) {
     
-    @scala.inline
-    def setDeviceServiceId(value: String): Self = StObject.set(x, "deviceServiceId", value.asInstanceOf[js.Any])
+    inline def setDeviceServiceId(value: String): Self = StObject.set(x, "deviceServiceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenCommandSession(value: () => MobileBroadbandDeviceServiceCommandSession): Self = StObject.set(x, "openCommandSession", js.Any.fromFunction0(value))
+    inline def setOpenCommandSession(value: () => MobileBroadbandDeviceServiceCommandSession): Self = StObject.set(x, "openCommandSession", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOpenDataSession(value: () => MobileBroadbandDeviceServiceDataSession): Self = StObject.set(x, "openDataSession", js.Any.fromFunction0(value))
+    inline def setOpenDataSession(value: () => MobileBroadbandDeviceServiceDataSession): Self = StObject.set(x, "openDataSession", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSupportedCommands(value: IVectorView[Double]): Self = StObject.set(x, "supportedCommands", value.asInstanceOf[js.Any])
+    inline def setSupportedCommands(value: IVectorView[Double]): Self = StObject.set(x, "supportedCommands", value.asInstanceOf[js.Any])
   }
 }

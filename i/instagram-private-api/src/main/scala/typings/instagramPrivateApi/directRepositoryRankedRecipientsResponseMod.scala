@@ -14,26 +14,20 @@ object directRepositoryRankedRecipientsResponseMod {
   }
   object DirectRepositoryRankedRecipientsResponseRankedRecipientsItem {
     
-    @scala.inline
-    def apply(): DirectRepositoryRankedRecipientsResponseRankedRecipientsItem = {
+    inline def apply(): DirectRepositoryRankedRecipientsResponseRankedRecipientsItem = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DirectRepositoryRankedRecipientsResponseRankedRecipientsItem]
     }
     
-    @scala.inline
-    implicit class DirectRepositoryRankedRecipientsResponseRankedRecipientsItemMutableBuilder[Self <: DirectRepositoryRankedRecipientsResponseRankedRecipientsItem] (val x: Self) extends AnyVal {
+    extension [Self <: DirectRepositoryRankedRecipientsResponseRankedRecipientsItem](x: Self) {
       
-      @scala.inline
-      def setThread(value: DirectRepositoryRankedRecipientsResponseThread): Self = StObject.set(x, "thread", value.asInstanceOf[js.Any])
+      inline def setThread(value: DirectRepositoryRankedRecipientsResponseThread): Self = StObject.set(x, "thread", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThreadUndefined: Self = StObject.set(x, "thread", js.undefined)
+      inline def setThreadUndefined: Self = StObject.set(x, "thread", js.undefined)
       
-      @scala.inline
-      def setUser(value: DirectRepositoryRankedRecipientsResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: DirectRepositoryRankedRecipientsResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+      inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     }
   }
   
@@ -53,8 +47,7 @@ object directRepositoryRankedRecipientsResponseMod {
   }
   object DirectRepositoryRankedRecipientsResponseRootObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       expires: Double,
       filtered: Boolean,
       rank_token: String,
@@ -66,29 +59,21 @@ object directRepositoryRankedRecipientsResponseMod {
       __obj.asInstanceOf[DirectRepositoryRankedRecipientsResponseRootObject]
     }
     
-    @scala.inline
-    implicit class DirectRepositoryRankedRecipientsResponseRootObjectMutableBuilder[Self <: DirectRepositoryRankedRecipientsResponseRootObject] (val x: Self) extends AnyVal {
+    extension [Self <: DirectRepositoryRankedRecipientsResponseRootObject](x: Self) {
       
-      @scala.inline
-      def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltered(value: Boolean): Self = StObject.set(x, "filtered", value.asInstanceOf[js.Any])
+      inline def setFiltered(value: Boolean): Self = StObject.set(x, "filtered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRank_token(value: String): Self = StObject.set(x, "rank_token", value.asInstanceOf[js.Any])
+      inline def setRank_token(value: String): Self = StObject.set(x, "rank_token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRanked_recipients(value: js.Array[DirectRepositoryRankedRecipientsResponseRankedRecipientsItem]): Self = StObject.set(x, "ranked_recipients", value.asInstanceOf[js.Any])
+      inline def setRanked_recipients(value: js.Array[DirectRepositoryRankedRecipientsResponseRankedRecipientsItem]): Self = StObject.set(x, "ranked_recipients", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRanked_recipientsVarargs(value: DirectRepositoryRankedRecipientsResponseRankedRecipientsItem*): Self = StObject.set(x, "ranked_recipients", js.Array(value :_*))
+      inline def setRanked_recipientsVarargs(value: DirectRepositoryRankedRecipientsResponseRankedRecipientsItem*): Self = StObject.set(x, "ranked_recipients", js.Array(value :_*))
       
-      @scala.inline
-      def setRequest_id(value: String): Self = StObject.set(x, "request_id", value.asInstanceOf[js.Any])
+      inline def setRequest_id(value: String): Self = StObject.set(x, "request_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -112,8 +97,7 @@ object directRepositoryRankedRecipientsResponseMod {
   }
   object DirectRepositoryRankedRecipientsResponseThread {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       canonical: Boolean,
       named: Boolean,
       pending: Boolean,
@@ -127,35 +111,25 @@ object directRepositoryRankedRecipientsResponseMod {
       __obj.asInstanceOf[DirectRepositoryRankedRecipientsResponseThread]
     }
     
-    @scala.inline
-    implicit class DirectRepositoryRankedRecipientsResponseThreadMutableBuilder[Self <: DirectRepositoryRankedRecipientsResponseThread] (val x: Self) extends AnyVal {
+    extension [Self <: DirectRepositoryRankedRecipientsResponseThread](x: Self) {
       
-      @scala.inline
-      def setCanonical(value: Boolean): Self = StObject.set(x, "canonical", value.asInstanceOf[js.Any])
+      inline def setCanonical(value: Boolean): Self = StObject.set(x, "canonical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamed(value: Boolean): Self = StObject.set(x, "named", value.asInstanceOf[js.Any])
+      inline def setNamed(value: Boolean): Self = StObject.set(x, "named", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPending(value: Boolean): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+      inline def setPending(value: Boolean): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThread_id(value: String): Self = StObject.set(x, "thread_id", value.asInstanceOf[js.Any])
+      inline def setThread_id(value: String): Self = StObject.set(x, "thread_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThread_title(value: String): Self = StObject.set(x, "thread_title", value.asInstanceOf[js.Any])
+      inline def setThread_title(value: String): Self = StObject.set(x, "thread_title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThread_type(value: String): Self = StObject.set(x, "thread_type", value.asInstanceOf[js.Any])
+      inline def setThread_type(value: String): Self = StObject.set(x, "thread_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsers(value: js.Array[DirectRepositoryRankedRecipientsResponseUsersItem]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+      inline def setUsers(value: js.Array[DirectRepositoryRankedRecipientsResponseUsersItem]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsersVarargs(value: DirectRepositoryRankedRecipientsResponseUsersItem*): Self = StObject.set(x, "users", js.Array(value :_*))
+      inline def setUsersVarargs(value: DirectRepositoryRankedRecipientsResponseUsersItem*): Self = StObject.set(x, "users", js.Array(value :_*))
       
-      @scala.inline
-      def setViewer_id(value: Double): Self = StObject.set(x, "viewer_id", value.asInstanceOf[js.Any])
+      inline def setViewer_id(value: Double): Self = StObject.set(x, "viewer_id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -183,8 +157,7 @@ object directRepositoryRankedRecipientsResponseMod {
   }
   object DirectRepositoryRankedRecipientsResponseUser {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       full_name: String,
       has_anonymous_profile_picture: Boolean,
       is_directapp_installed: Boolean,
@@ -200,38 +173,27 @@ object directRepositoryRankedRecipientsResponseMod {
       __obj.asInstanceOf[DirectRepositoryRankedRecipientsResponseUser]
     }
     
-    @scala.inline
-    implicit class DirectRepositoryRankedRecipientsResponseUserMutableBuilder[Self <: DirectRepositoryRankedRecipientsResponseUser] (val x: Self) extends AnyVal {
+    extension [Self <: DirectRepositoryRankedRecipientsResponseUser](x: Self) {
       
-      @scala.inline
-      def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
+      inline def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_anonymous_profile_picture(value: Boolean): Self = StObject.set(x, "has_anonymous_profile_picture", value.asInstanceOf[js.Any])
+      inline def setHas_anonymous_profile_picture(value: Boolean): Self = StObject.set(x, "has_anonymous_profile_picture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_directapp_installed(value: Boolean): Self = StObject.set(x, "is_directapp_installed", value.asInstanceOf[js.Any])
+      inline def setIs_directapp_installed(value: Boolean): Self = StObject.set(x, "is_directapp_installed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
+      inline def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_using_unified_inbox_for_direct(value: Boolean): Self = StObject.set(x, "is_using_unified_inbox_for_direct", value.asInstanceOf[js.Any])
+      inline def setIs_using_unified_inbox_for_direct(value: Boolean): Self = StObject.set(x, "is_using_unified_inbox_for_direct", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
+      inline def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+      inline def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
   
@@ -259,8 +221,7 @@ object directRepositoryRankedRecipientsResponseMod {
   }
   object DirectRepositoryRankedRecipientsResponseUsersItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       full_name: String,
       has_anonymous_profile_picture: Boolean,
       is_directapp_installed: Boolean,
@@ -276,38 +237,27 @@ object directRepositoryRankedRecipientsResponseMod {
       __obj.asInstanceOf[DirectRepositoryRankedRecipientsResponseUsersItem]
     }
     
-    @scala.inline
-    implicit class DirectRepositoryRankedRecipientsResponseUsersItemMutableBuilder[Self <: DirectRepositoryRankedRecipientsResponseUsersItem] (val x: Self) extends AnyVal {
+    extension [Self <: DirectRepositoryRankedRecipientsResponseUsersItem](x: Self) {
       
-      @scala.inline
-      def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
+      inline def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_anonymous_profile_picture(value: Boolean): Self = StObject.set(x, "has_anonymous_profile_picture", value.asInstanceOf[js.Any])
+      inline def setHas_anonymous_profile_picture(value: Boolean): Self = StObject.set(x, "has_anonymous_profile_picture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_directapp_installed(value: Boolean): Self = StObject.set(x, "is_directapp_installed", value.asInstanceOf[js.Any])
+      inline def setIs_directapp_installed(value: Boolean): Self = StObject.set(x, "is_directapp_installed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
+      inline def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_using_unified_inbox_for_direct(value: Boolean): Self = StObject.set(x, "is_using_unified_inbox_for_direct", value.asInstanceOf[js.Any])
+      inline def setIs_using_unified_inbox_for_direct(value: Boolean): Self = StObject.set(x, "is_using_unified_inbox_for_direct", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
+      inline def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+      inline def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
 }

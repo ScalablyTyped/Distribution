@@ -39,8 +39,7 @@ trait SearchPanelProps extends StObject {
 }
 object SearchPanelProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clearBtn: ReactElement,
     clearBtnClick: () => Unit,
     defaultValue: String,
@@ -52,25 +51,18 @@ object SearchPanelProps {
     __obj.asInstanceOf[SearchPanelProps]
   }
   
-  @scala.inline
-  implicit class SearchPanelPropsMutableBuilder[Self <: SearchPanelProps] (val x: Self) extends AnyVal {
+  extension [Self <: SearchPanelProps](x: Self) {
     
-    @scala.inline
-    def setClearBtn(value: ReactElement): Self = StObject.set(x, "clearBtn", value.asInstanceOf[js.Any])
+    inline def setClearBtn(value: ReactElement): Self = StObject.set(x, "clearBtn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearBtnClick(value: () => Unit): Self = StObject.set(x, "clearBtnClick", js.Any.fromFunction0(value))
+    inline def setClearBtnClick(value: () => Unit): Self = StObject.set(x, "clearBtnClick", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearch(value: String => Unit): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
+    inline def setSearch(value: String => Unit): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSearchField(value: ReactElement): Self = StObject.set(x, "searchField", value.asInstanceOf[js.Any])
+    inline def setSearchField(value: ReactElement): Self = StObject.set(x, "searchField", value.asInstanceOf[js.Any])
   }
 }

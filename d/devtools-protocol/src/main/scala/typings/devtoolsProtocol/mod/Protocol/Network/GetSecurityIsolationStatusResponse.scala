@@ -10,16 +10,13 @@ trait GetSecurityIsolationStatusResponse extends StObject {
 }
 object GetSecurityIsolationStatusResponse {
   
-  @scala.inline
-  def apply(status: SecurityIsolationStatus): GetSecurityIsolationStatusResponse = {
+  inline def apply(status: SecurityIsolationStatus): GetSecurityIsolationStatusResponse = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSecurityIsolationStatusResponse]
   }
   
-  @scala.inline
-  implicit class GetSecurityIsolationStatusResponseMutableBuilder[Self <: GetSecurityIsolationStatusResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetSecurityIsolationStatusResponse](x: Self) {
     
-    @scala.inline
-    def setStatus(value: SecurityIsolationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: SecurityIsolationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

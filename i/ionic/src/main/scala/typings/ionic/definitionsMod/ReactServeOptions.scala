@@ -16,8 +16,7 @@ trait ReactServeOptions
 }
 object ReactServeOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `--`: js.Array[String],
     address: String,
     devapp: Boolean,
@@ -35,25 +34,18 @@ object ReactServeOptions {
     __obj.asInstanceOf[ReactServeOptions]
   }
   
-  @scala.inline
-  implicit class ReactServeOptionsMutableBuilder[Self <: ReactServeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ReactServeOptions](x: Self) {
     
-    @scala.inline
-    def setCi(value: Boolean): Self = StObject.set(x, "ci", value.asInstanceOf[js.Any])
+    inline def setCi(value: Boolean): Self = StObject.set(x, "ci", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCiUndefined: Self = StObject.set(x, "ci", js.undefined)
+    inline def setCiUndefined: Self = StObject.set(x, "ci", js.undefined)
     
-    @scala.inline
-    def setHttps(value: Boolean): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
+    inline def setHttps(value: Boolean): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpsUndefined: Self = StObject.set(x, "https", js.undefined)
+    inline def setHttpsUndefined: Self = StObject.set(x, "https", js.undefined)
     
-    @scala.inline
-    def setReactEditor(value: String): Self = StObject.set(x, "reactEditor", value.asInstanceOf[js.Any])
+    inline def setReactEditor(value: String): Self = StObject.set(x, "reactEditor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReactEditorUndefined: Self = StObject.set(x, "reactEditor", js.undefined)
+    inline def setReactEditorUndefined: Self = StObject.set(x, "reactEditor", js.undefined)
   }
 }

@@ -15,22 +15,17 @@ trait ReaderClientExtension
 }
 object ReaderClientExtension {
   
-  @scala.inline
-  def apply(kind: String, selections: js.Array[ReaderSelection]): ReaderClientExtension = {
+  inline def apply(kind: String, selections: js.Array[ReaderSelection]): ReaderClientExtension = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReaderClientExtension]
   }
   
-  @scala.inline
-  implicit class ReaderClientExtensionMutableBuilder[Self <: ReaderClientExtension] (val x: Self) extends AnyVal {
+  extension [Self <: ReaderClientExtension](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelections(value: js.Array[ReaderSelection]): Self = StObject.set(x, "selections", value.asInstanceOf[js.Any])
+    inline def setSelections(value: js.Array[ReaderSelection]): Self = StObject.set(x, "selections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionsVarargs(value: ReaderSelection*): Self = StObject.set(x, "selections", js.Array(value :_*))
+    inline def setSelectionsVarargs(value: ReaderSelection*): Self = StObject.set(x, "selections", js.Array(value :_*))
   }
 }

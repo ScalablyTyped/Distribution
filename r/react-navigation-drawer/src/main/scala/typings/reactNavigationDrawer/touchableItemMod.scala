@@ -25,8 +25,7 @@ object touchableItemMod {
     @JSImport("react-navigation-drawer/lib/typescript/src/views/TouchableItem", "default.defaultProps")
     @js.native
     def defaultProps: PressColor = js.native
-    @scala.inline
-    def defaultProps_=(x: PressColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PressColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   type Props = ComponentProps[Instantiable0[TouchableWithoutFeedback]] & Borderless

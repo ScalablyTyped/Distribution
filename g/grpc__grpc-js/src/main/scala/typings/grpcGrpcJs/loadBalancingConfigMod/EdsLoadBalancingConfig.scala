@@ -15,19 +15,15 @@ trait EdsLoadBalancingConfig
 }
 object EdsLoadBalancingConfig {
   
-  @scala.inline
-  def apply(eds: EdsLbConfig): EdsLoadBalancingConfig = {
+  inline def apply(eds: EdsLbConfig): EdsLoadBalancingConfig = {
     val __obj = js.Dynamic.literal(eds = eds.asInstanceOf[js.Any], name = "eds")
     __obj.asInstanceOf[EdsLoadBalancingConfig]
   }
   
-  @scala.inline
-  implicit class EdsLoadBalancingConfigMutableBuilder[Self <: EdsLoadBalancingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: EdsLoadBalancingConfig](x: Self) {
     
-    @scala.inline
-    def setEds(value: EdsLbConfig): Self = StObject.set(x, "eds", value.asInstanceOf[js.Any])
+    inline def setEds(value: EdsLbConfig): Self = StObject.set(x, "eds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: eds): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: eds): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

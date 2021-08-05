@@ -12,19 +12,15 @@ trait IsResizable extends StObject {
 }
 object IsResizable {
   
-  @scala.inline
-  def apply(isResizable: Boolean, minSize: Double): IsResizable = {
+  inline def apply(isResizable: Boolean, minSize: Double): IsResizable = {
     val __obj = js.Dynamic.literal(isResizable = isResizable.asInstanceOf[js.Any], minSize = minSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsResizable]
   }
   
-  @scala.inline
-  implicit class IsResizableMutableBuilder[Self <: IsResizable] (val x: Self) extends AnyVal {
+  extension [Self <: IsResizable](x: Self) {
     
-    @scala.inline
-    def setIsResizable(value: Boolean): Self = StObject.set(x, "isResizable", value.asInstanceOf[js.Any])
+    inline def setIsResizable(value: Boolean): Self = StObject.set(x, "isResizable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinSize(value: Double): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
+    inline def setMinSize(value: Double): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
   }
 }

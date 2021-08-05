@@ -15,25 +15,19 @@ trait SavedPlayerState extends StObject {
 }
 object SavedPlayerState {
   
-  @scala.inline
-  def apply(currentTime: Double, isPaused: Boolean): SavedPlayerState = {
+  inline def apply(currentTime: Double, isPaused: Boolean): SavedPlayerState = {
     val __obj = js.Dynamic.literal(currentTime = currentTime.asInstanceOf[js.Any], isPaused = isPaused.asInstanceOf[js.Any], mediaInfo = null)
     __obj.asInstanceOf[SavedPlayerState]
   }
   
-  @scala.inline
-  implicit class SavedPlayerStateMutableBuilder[Self <: SavedPlayerState] (val x: Self) extends AnyVal {
+  extension [Self <: SavedPlayerState](x: Self) {
     
-    @scala.inline
-    def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
+    inline def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPaused(value: Boolean): Self = StObject.set(x, "isPaused", value.asInstanceOf[js.Any])
+    inline def setIsPaused(value: Boolean): Self = StObject.set(x, "isPaused", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaInfo(value: PlayerState): Self = StObject.set(x, "mediaInfo", value.asInstanceOf[js.Any])
+    inline def setMediaInfo(value: PlayerState): Self = StObject.set(x, "mediaInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaInfoNull: Self = StObject.set(x, "mediaInfo", null)
+    inline def setMediaInfoNull: Self = StObject.set(x, "mediaInfo", null)
   }
 }

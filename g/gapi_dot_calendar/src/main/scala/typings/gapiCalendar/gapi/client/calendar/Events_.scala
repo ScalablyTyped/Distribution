@@ -33,8 +33,7 @@ trait Events_ extends StObject {
 }
 object Events_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accessRole: AccessRole,
     defaultReminders: js.Array[Method],
     description: String,
@@ -48,52 +47,36 @@ object Events_ {
     __obj.asInstanceOf[Events_]
   }
   
-  @scala.inline
-  implicit class Events_MutableBuilder[Self <: Events_] (val x: Self) extends AnyVal {
+  extension [Self <: Events_](x: Self) {
     
-    @scala.inline
-    def setAccessRole(value: AccessRole): Self = StObject.set(x, "accessRole", value.asInstanceOf[js.Any])
+    inline def setAccessRole(value: AccessRole): Self = StObject.set(x, "accessRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultReminders(value: js.Array[Method]): Self = StObject.set(x, "defaultReminders", value.asInstanceOf[js.Any])
+    inline def setDefaultReminders(value: js.Array[Method]): Self = StObject.set(x, "defaultReminders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultRemindersVarargs(value: Method*): Self = StObject.set(x, "defaultReminders", js.Array(value :_*))
+    inline def setDefaultRemindersVarargs(value: Method*): Self = StObject.set(x, "defaultReminders", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtag(value: etag): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: etag): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: js.Array[Event]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[Event]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: Event*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Event*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: calendarNumbersignevents): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: calendarNumbersignevents): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setNextSyncToken(value: String): Self = StObject.set(x, "nextSyncToken", value.asInstanceOf[js.Any])
+    inline def setNextSyncToken(value: String): Self = StObject.set(x, "nextSyncToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextSyncTokenUndefined: Self = StObject.set(x, "nextSyncToken", js.undefined)
+    inline def setNextSyncTokenUndefined: Self = StObject.set(x, "nextSyncToken", js.undefined)
     
-    @scala.inline
-    def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
+    inline def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdated(value: datetime): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+    inline def setUpdated(value: datetime): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
   }
 }

@@ -13,22 +13,17 @@ trait DescribeRaidArraysResult extends StObject {
 }
 object DescribeRaidArraysResult {
   
-  @scala.inline
-  def apply(): DescribeRaidArraysResult = {
+  inline def apply(): DescribeRaidArraysResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeRaidArraysResult]
   }
   
-  @scala.inline
-  implicit class DescribeRaidArraysResultMutableBuilder[Self <: DescribeRaidArraysResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeRaidArraysResult](x: Self) {
     
-    @scala.inline
-    def setRaidArrays(value: RaidArrays): Self = StObject.set(x, "RaidArrays", value.asInstanceOf[js.Any])
+    inline def setRaidArrays(value: RaidArrays): Self = StObject.set(x, "RaidArrays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRaidArraysUndefined: Self = StObject.set(x, "RaidArrays", js.undefined)
+    inline def setRaidArraysUndefined: Self = StObject.set(x, "RaidArrays", js.undefined)
     
-    @scala.inline
-    def setRaidArraysVarargs(value: RaidArray*): Self = StObject.set(x, "RaidArrays", js.Array(value :_*))
+    inline def setRaidArraysVarargs(value: RaidArray*): Self = StObject.set(x, "RaidArrays", js.Array(value :_*))
   }
 }

@@ -13,19 +13,15 @@ trait SchemaSubscriptionPurchasesDeferResponse extends StObject {
 }
 object SchemaSubscriptionPurchasesDeferResponse {
   
-  @scala.inline
-  def apply(): SchemaSubscriptionPurchasesDeferResponse = {
+  inline def apply(): SchemaSubscriptionPurchasesDeferResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSubscriptionPurchasesDeferResponse]
   }
   
-  @scala.inline
-  implicit class SchemaSubscriptionPurchasesDeferResponseMutableBuilder[Self <: SchemaSubscriptionPurchasesDeferResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSubscriptionPurchasesDeferResponse](x: Self) {
     
-    @scala.inline
-    def setNewExpiryTimeMillis(value: String): Self = StObject.set(x, "newExpiryTimeMillis", value.asInstanceOf[js.Any])
+    inline def setNewExpiryTimeMillis(value: String): Self = StObject.set(x, "newExpiryTimeMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewExpiryTimeMillisUndefined: Self = StObject.set(x, "newExpiryTimeMillis", js.undefined)
+    inline def setNewExpiryTimeMillisUndefined: Self = StObject.set(x, "newExpiryTimeMillis", js.undefined)
   }
 }

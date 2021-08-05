@@ -93,17 +93,14 @@ object positioningTypesMod {
   }
   object ICalloutBeakPositionedInfo {
     
-    @scala.inline
-    def apply(closestEdge: RectangleEdge, elementPosition: IPosition, targetEdge: RectangleEdge): ICalloutBeakPositionedInfo = {
+    inline def apply(closestEdge: RectangleEdge, elementPosition: IPosition, targetEdge: RectangleEdge): ICalloutBeakPositionedInfo = {
       val __obj = js.Dynamic.literal(closestEdge = closestEdge.asInstanceOf[js.Any], elementPosition = elementPosition.asInstanceOf[js.Any], targetEdge = targetEdge.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICalloutBeakPositionedInfo]
     }
     
-    @scala.inline
-    implicit class ICalloutBeakPositionedInfoMutableBuilder[Self <: ICalloutBeakPositionedInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ICalloutBeakPositionedInfo](x: Self) {
       
-      @scala.inline
-      def setClosestEdge(value: RectangleEdge): Self = StObject.set(x, "closestEdge", value.asInstanceOf[js.Any])
+      inline def setClosestEdge(value: RectangleEdge): Self = StObject.set(x, "closestEdge", value.asInstanceOf[js.Any])
     }
   }
   
@@ -123,26 +120,20 @@ object positioningTypesMod {
   }
   object ICalloutPositionProps {
     
-    @scala.inline
-    def apply(): ICalloutPositionProps = {
+    inline def apply(): ICalloutPositionProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICalloutPositionProps]
     }
     
-    @scala.inline
-    implicit class ICalloutPositionPropsMutableBuilder[Self <: ICalloutPositionProps] (val x: Self) extends AnyVal {
+    extension [Self <: ICalloutPositionProps](x: Self) {
       
-      @scala.inline
-      def setBeakWidth(value: Double): Self = StObject.set(x, "beakWidth", value.asInstanceOf[js.Any])
+      inline def setBeakWidth(value: Double): Self = StObject.set(x, "beakWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeakWidthUndefined: Self = StObject.set(x, "beakWidth", js.undefined)
+      inline def setBeakWidthUndefined: Self = StObject.set(x, "beakWidth", js.undefined)
       
-      @scala.inline
-      def setIsBeakVisible(value: Boolean): Self = StObject.set(x, "isBeakVisible", value.asInstanceOf[js.Any])
+      inline def setIsBeakVisible(value: Boolean): Self = StObject.set(x, "isBeakVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBeakVisibleUndefined: Self = StObject.set(x, "isBeakVisible", js.undefined)
+      inline def setIsBeakVisibleUndefined: Self = StObject.set(x, "isBeakVisible", js.undefined)
     }
   }
   
@@ -154,17 +145,14 @@ object positioningTypesMod {
   }
   object ICalloutPositionedInfo {
     
-    @scala.inline
-    def apply(beakPosition: ICalloutBeakPositionedInfo, elementPosition: IPosition, targetEdge: RectangleEdge): ICalloutPositionedInfo = {
+    inline def apply(beakPosition: ICalloutBeakPositionedInfo, elementPosition: IPosition, targetEdge: RectangleEdge): ICalloutPositionedInfo = {
       val __obj = js.Dynamic.literal(beakPosition = beakPosition.asInstanceOf[js.Any], elementPosition = elementPosition.asInstanceOf[js.Any], targetEdge = targetEdge.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICalloutPositionedInfo]
     }
     
-    @scala.inline
-    implicit class ICalloutPositionedInfoMutableBuilder[Self <: ICalloutPositionedInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ICalloutPositionedInfo](x: Self) {
       
-      @scala.inline
-      def setBeakPosition(value: ICalloutBeakPositionedInfo): Self = StObject.set(x, "beakPosition", value.asInstanceOf[js.Any])
+      inline def setBeakPosition(value: ICalloutBeakPositionedInfo): Self = StObject.set(x, "beakPosition", value.asInstanceOf[js.Any])
     }
   }
   
@@ -182,38 +170,28 @@ object positioningTypesMod {
   }
   object IPosition {
     
-    @scala.inline
-    def apply(): IPosition = {
+    inline def apply(): IPosition = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IPosition]
     }
     
-    @scala.inline
-    implicit class IPositionMutableBuilder[Self <: IPosition] (val x: Self) extends AnyVal {
+    extension [Self <: IPosition](x: Self) {
       
-      @scala.inline
-      def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+      inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+      inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
       
-      @scala.inline
-      def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+      inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+      inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     }
   }
   
@@ -229,35 +207,26 @@ object positioningTypesMod {
   }
   object IPositionDirectionalHintData {
     
-    @scala.inline
-    def apply(targetEdge: RectangleEdge): IPositionDirectionalHintData = {
+    inline def apply(targetEdge: RectangleEdge): IPositionDirectionalHintData = {
       val __obj = js.Dynamic.literal(targetEdge = targetEdge.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPositionDirectionalHintData]
     }
     
-    @scala.inline
-    implicit class IPositionDirectionalHintDataMutableBuilder[Self <: IPositionDirectionalHintData] (val x: Self) extends AnyVal {
+    extension [Self <: IPositionDirectionalHintData](x: Self) {
       
-      @scala.inline
-      def setAlignTargetEdge(value: Boolean): Self = StObject.set(x, "alignTargetEdge", value.asInstanceOf[js.Any])
+      inline def setAlignTargetEdge(value: Boolean): Self = StObject.set(x, "alignTargetEdge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignTargetEdgeUndefined: Self = StObject.set(x, "alignTargetEdge", js.undefined)
+      inline def setAlignTargetEdgeUndefined: Self = StObject.set(x, "alignTargetEdge", js.undefined)
       
-      @scala.inline
-      def setAlignmentEdge(value: RectangleEdge): Self = StObject.set(x, "alignmentEdge", value.asInstanceOf[js.Any])
+      inline def setAlignmentEdge(value: RectangleEdge): Self = StObject.set(x, "alignmentEdge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignmentEdgeUndefined: Self = StObject.set(x, "alignmentEdge", js.undefined)
+      inline def setAlignmentEdgeUndefined: Self = StObject.set(x, "alignmentEdge", js.undefined)
       
-      @scala.inline
-      def setIsAuto(value: Boolean): Self = StObject.set(x, "isAuto", value.asInstanceOf[js.Any])
+      inline def setIsAuto(value: Boolean): Self = StObject.set(x, "isAuto", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsAutoUndefined: Self = StObject.set(x, "isAuto", js.undefined)
+      inline def setIsAutoUndefined: Self = StObject.set(x, "isAuto", js.undefined)
       
-      @scala.inline
-      def setTargetEdge(value: RectangleEdge): Self = StObject.set(x, "targetEdge", value.asInstanceOf[js.Any])
+      inline def setTargetEdge(value: RectangleEdge): Self = StObject.set(x, "targetEdge", value.asInstanceOf[js.Any])
     }
   }
   
@@ -303,62 +272,44 @@ object positioningTypesMod {
   }
   object IPositionProps {
     
-    @scala.inline
-    def apply(): IPositionProps = {
+    inline def apply(): IPositionProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IPositionProps]
     }
     
-    @scala.inline
-    implicit class IPositionPropsMutableBuilder[Self <: IPositionProps] (val x: Self) extends AnyVal {
+    extension [Self <: IPositionProps](x: Self) {
       
-      @scala.inline
-      def setAlignTargetEdge(value: Boolean): Self = StObject.set(x, "alignTargetEdge", value.asInstanceOf[js.Any])
+      inline def setAlignTargetEdge(value: Boolean): Self = StObject.set(x, "alignTargetEdge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignTargetEdgeUndefined: Self = StObject.set(x, "alignTargetEdge", js.undefined)
+      inline def setAlignTargetEdgeUndefined: Self = StObject.set(x, "alignTargetEdge", js.undefined)
       
-      @scala.inline
-      def setBounds(value: IRectangle): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+      inline def setBounds(value: IRectangle): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
+      inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
       
-      @scala.inline
-      def setCoverTarget(value: Boolean): Self = StObject.set(x, "coverTarget", value.asInstanceOf[js.Any])
+      inline def setCoverTarget(value: Boolean): Self = StObject.set(x, "coverTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoverTargetUndefined: Self = StObject.set(x, "coverTarget", js.undefined)
+      inline def setCoverTargetUndefined: Self = StObject.set(x, "coverTarget", js.undefined)
       
-      @scala.inline
-      def setDirectionalHint(value: DirectionalHint): Self = StObject.set(x, "directionalHint", value.asInstanceOf[js.Any])
+      inline def setDirectionalHint(value: DirectionalHint): Self = StObject.set(x, "directionalHint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionalHintFixed(value: Boolean): Self = StObject.set(x, "directionalHintFixed", value.asInstanceOf[js.Any])
+      inline def setDirectionalHintFixed(value: Boolean): Self = StObject.set(x, "directionalHintFixed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionalHintFixedUndefined: Self = StObject.set(x, "directionalHintFixed", js.undefined)
+      inline def setDirectionalHintFixedUndefined: Self = StObject.set(x, "directionalHintFixed", js.undefined)
       
-      @scala.inline
-      def setDirectionalHintForRTL(value: DirectionalHint): Self = StObject.set(x, "directionalHintForRTL", value.asInstanceOf[js.Any])
+      inline def setDirectionalHintForRTL(value: DirectionalHint): Self = StObject.set(x, "directionalHintForRTL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionalHintForRTLUndefined: Self = StObject.set(x, "directionalHintForRTL", js.undefined)
+      inline def setDirectionalHintForRTLUndefined: Self = StObject.set(x, "directionalHintForRTL", js.undefined)
       
-      @scala.inline
-      def setDirectionalHintUndefined: Self = StObject.set(x, "directionalHint", js.undefined)
+      inline def setDirectionalHintUndefined: Self = StObject.set(x, "directionalHint", js.undefined)
       
-      @scala.inline
-      def setGapSpace(value: Double): Self = StObject.set(x, "gapSpace", value.asInstanceOf[js.Any])
+      inline def setGapSpace(value: Double): Self = StObject.set(x, "gapSpace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGapSpaceUndefined: Self = StObject.set(x, "gapSpace", js.undefined)
+      inline def setGapSpaceUndefined: Self = StObject.set(x, "gapSpace", js.undefined)
       
-      @scala.inline
-      def setTarget(value: Element | MouseEvent | Point): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Element | MouseEvent | Point): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }
   }
   
@@ -384,26 +335,20 @@ object positioningTypesMod {
   }
   object IPositionedData {
     
-    @scala.inline
-    def apply(elementPosition: IPosition, targetEdge: RectangleEdge): IPositionedData = {
+    inline def apply(elementPosition: IPosition, targetEdge: RectangleEdge): IPositionedData = {
       val __obj = js.Dynamic.literal(elementPosition = elementPosition.asInstanceOf[js.Any], targetEdge = targetEdge.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPositionedData]
     }
     
-    @scala.inline
-    implicit class IPositionedDataMutableBuilder[Self <: IPositionedData] (val x: Self) extends AnyVal {
+    extension [Self <: IPositionedData](x: Self) {
       
-      @scala.inline
-      def setAlignmentEdge(value: RectangleEdge): Self = StObject.set(x, "alignmentEdge", value.asInstanceOf[js.Any])
+      inline def setAlignmentEdge(value: RectangleEdge): Self = StObject.set(x, "alignmentEdge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignmentEdgeUndefined: Self = StObject.set(x, "alignmentEdge", js.undefined)
+      inline def setAlignmentEdgeUndefined: Self = StObject.set(x, "alignmentEdge", js.undefined)
       
-      @scala.inline
-      def setElementPosition(value: IPosition): Self = StObject.set(x, "elementPosition", value.asInstanceOf[js.Any])
+      inline def setElementPosition(value: IPosition): Self = StObject.set(x, "elementPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetEdge(value: RectangleEdge): Self = StObject.set(x, "targetEdge", value.asInstanceOf[js.Any])
+      inline def setTargetEdge(value: RectangleEdge): Self = StObject.set(x, "targetEdge", value.asInstanceOf[js.Any])
     }
   }
   
@@ -419,8 +364,7 @@ object positioningTypesMod {
   }
   object IRelativePositions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       beakPosition: typings.officeUiFabricReact.anon.Position,
       calloutPosition: IPosition,
       directionalClassName: String,
@@ -430,20 +374,15 @@ object positioningTypesMod {
       __obj.asInstanceOf[IRelativePositions]
     }
     
-    @scala.inline
-    implicit class IRelativePositionsMutableBuilder[Self <: IRelativePositions] (val x: Self) extends AnyVal {
+    extension [Self <: IRelativePositions](x: Self) {
       
-      @scala.inline
-      def setBeakPosition(value: typings.officeUiFabricReact.anon.Position): Self = StObject.set(x, "beakPosition", value.asInstanceOf[js.Any])
+      inline def setBeakPosition(value: typings.officeUiFabricReact.anon.Position): Self = StObject.set(x, "beakPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCalloutPosition(value: IPosition): Self = StObject.set(x, "calloutPosition", value.asInstanceOf[js.Any])
+      inline def setCalloutPosition(value: IPosition): Self = StObject.set(x, "calloutPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionalClassName(value: String): Self = StObject.set(x, "directionalClassName", value.asInstanceOf[js.Any])
+      inline def setDirectionalClassName(value: String): Self = StObject.set(x, "directionalClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubmenuDirection(value: DirectionalHint): Self = StObject.set(x, "submenuDirection", value.asInstanceOf[js.Any])
+      inline def setSubmenuDirection(value: DirectionalHint): Self = StObject.set(x, "submenuDirection", value.asInstanceOf[js.Any])
     }
   }
   

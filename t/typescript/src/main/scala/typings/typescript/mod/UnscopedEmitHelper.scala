@@ -17,19 +17,15 @@ trait UnscopedEmitHelper
 }
 object UnscopedEmitHelper {
   
-  @scala.inline
-  def apply(name: java.lang.String, text: java.lang.String): UnscopedEmitHelper = {
+  inline def apply(name: java.lang.String, text: java.lang.String): UnscopedEmitHelper = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], scoped = false, text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnscopedEmitHelper]
   }
   
-  @scala.inline
-  implicit class UnscopedEmitHelperMutableBuilder[Self <: UnscopedEmitHelper] (val x: Self) extends AnyVal {
+  extension [Self <: UnscopedEmitHelper](x: Self) {
     
-    @scala.inline
-    def setScoped(value: `false`): Self = StObject.set(x, "scoped", value.asInstanceOf[js.Any])
+    inline def setScoped(value: `false`): Self = StObject.set(x, "scoped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: java.lang.String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: java.lang.String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

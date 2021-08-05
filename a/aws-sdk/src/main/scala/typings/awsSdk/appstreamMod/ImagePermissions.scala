@@ -18,25 +18,19 @@ trait ImagePermissions extends StObject {
 }
 object ImagePermissions {
   
-  @scala.inline
-  def apply(): ImagePermissions = {
+  inline def apply(): ImagePermissions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImagePermissions]
   }
   
-  @scala.inline
-  implicit class ImagePermissionsMutableBuilder[Self <: ImagePermissions] (val x: Self) extends AnyVal {
+  extension [Self <: ImagePermissions](x: Self) {
     
-    @scala.inline
-    def setAllowFleet(value: BooleanObject): Self = StObject.set(x, "allowFleet", value.asInstanceOf[js.Any])
+    inline def setAllowFleet(value: BooleanObject): Self = StObject.set(x, "allowFleet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowFleetUndefined: Self = StObject.set(x, "allowFleet", js.undefined)
+    inline def setAllowFleetUndefined: Self = StObject.set(x, "allowFleet", js.undefined)
     
-    @scala.inline
-    def setAllowImageBuilder(value: BooleanObject): Self = StObject.set(x, "allowImageBuilder", value.asInstanceOf[js.Any])
+    inline def setAllowImageBuilder(value: BooleanObject): Self = StObject.set(x, "allowImageBuilder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowImageBuilderUndefined: Self = StObject.set(x, "allowImageBuilder", js.undefined)
+    inline def setAllowImageBuilderUndefined: Self = StObject.set(x, "allowImageBuilder", js.undefined)
   }
 }

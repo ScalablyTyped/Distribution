@@ -18,19 +18,15 @@ trait AliasProgrammaticPair extends StObject {
 }
 object AliasProgrammaticPair {
   
-  @scala.inline
-  def apply(Alias: String, ProgrammaticName: String): AliasProgrammaticPair = {
+  inline def apply(Alias: String, ProgrammaticName: String): AliasProgrammaticPair = {
     val __obj = js.Dynamic.literal(Alias = Alias.asInstanceOf[js.Any], ProgrammaticName = ProgrammaticName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AliasProgrammaticPair]
   }
   
-  @scala.inline
-  implicit class AliasProgrammaticPairMutableBuilder[Self <: AliasProgrammaticPair] (val x: Self) extends AnyVal {
+  extension [Self <: AliasProgrammaticPair](x: Self) {
     
-    @scala.inline
-    def setAlias(value: String): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
+    inline def setAlias(value: String): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgrammaticName(value: String): Self = StObject.set(x, "ProgrammaticName", value.asInstanceOf[js.Any])
+    inline def setProgrammaticName(value: String): Self = StObject.set(x, "ProgrammaticName", value.asInstanceOf[js.Any])
   }
 }

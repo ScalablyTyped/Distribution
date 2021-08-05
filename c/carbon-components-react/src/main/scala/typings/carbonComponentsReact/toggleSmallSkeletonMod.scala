@@ -24,20 +24,16 @@ object toggleSmallSkeletonMod {
   }
   object ToggleSmallSkeletonProps {
     
-    @scala.inline
-    def apply(): ToggleSmallSkeletonProps = {
+    inline def apply(): ToggleSmallSkeletonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ToggleSmallSkeletonProps]
     }
     
-    @scala.inline
-    implicit class ToggleSmallSkeletonPropsMutableBuilder[Self <: ToggleSmallSkeletonProps] (val x: Self) extends AnyVal {
+    extension [Self <: ToggleSmallSkeletonProps](x: Self) {
       
-      @scala.inline
-      def setLabelText(value: String): Self = StObject.set(x, "labelText", value.asInstanceOf[js.Any])
+      inline def setLabelText(value: String): Self = StObject.set(x, "labelText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelTextUndefined: Self = StObject.set(x, "labelText", js.undefined)
+      inline def setLabelTextUndefined: Self = StObject.set(x, "labelText", js.undefined)
     }
   }
 }

@@ -28,8 +28,7 @@ trait GestureHandlerProps extends StObject {
 }
 object GestureHandlerProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     keyboardDismissMode: String,
     `lazy`: Boolean,
     lazyPreloadDistance: Double,
@@ -45,34 +44,24 @@ object GestureHandlerProps {
     __obj.asInstanceOf[GestureHandlerProps]
   }
   
-  @scala.inline
-  implicit class GestureHandlerPropsMutableBuilder[Self <: GestureHandlerProps] (val x: Self) extends AnyVal {
+  extension [Self <: GestureHandlerProps](x: Self) {
     
-    @scala.inline
-    def setKeyboardDismissMode(value: String): Self = StObject.set(x, "keyboardDismissMode", value.asInstanceOf[js.Any])
+    inline def setKeyboardDismissMode(value: String): Self = StObject.set(x, "keyboardDismissMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
+    inline def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLazyPreloadDistance(value: Double): Self = StObject.set(x, "lazyPreloadDistance", value.asInstanceOf[js.Any])
+    inline def setLazyPreloadDistance(value: Double): Self = StObject.set(x, "lazyPreloadDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveClippedSubviews(value: Boolean): Self = StObject.set(x, "removeClippedSubviews", value.asInstanceOf[js.Any])
+    inline def setRemoveClippedSubviews(value: Boolean): Self = StObject.set(x, "removeClippedSubviews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderLazyPlaceholder(value: () => Null): Self = StObject.set(x, "renderLazyPlaceholder", js.Any.fromFunction0(value))
+    inline def setRenderLazyPlaceholder(value: () => Null): Self = StObject.set(x, "renderLazyPlaceholder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRenderPager(value: Props[js.Any] => Element): Self = StObject.set(x, "renderPager", js.Any.fromFunction1(value))
+    inline def setRenderPager(value: Props[js.Any] => Element): Self = StObject.set(x, "renderPager", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenderTabBar(value: typings.reactNativeTabView.tabBarMod.Props[js.Any] => Element): Self = StObject.set(x, "renderTabBar", js.Any.fromFunction1(value))
+    inline def setRenderTabBar(value: typings.reactNativeTabView.tabBarMod.Props[js.Any] => Element): Self = StObject.set(x, "renderTabBar", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSwipeEnabled(value: Boolean): Self = StObject.set(x, "swipeEnabled", value.asInstanceOf[js.Any])
+    inline def setSwipeEnabled(value: Boolean): Self = StObject.set(x, "swipeEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabBarPosition(value: String): Self = StObject.set(x, "tabBarPosition", value.asInstanceOf[js.Any])
+    inline def setTabBarPosition(value: String): Self = StObject.set(x, "tabBarPosition", value.asInstanceOf[js.Any])
   }
 }

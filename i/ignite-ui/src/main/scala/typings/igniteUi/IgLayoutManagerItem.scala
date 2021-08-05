@@ -52,49 +52,35 @@ trait IgLayoutManagerItem
 }
 object IgLayoutManagerItem {
   
-  @scala.inline
-  def apply(): IgLayoutManagerItem = {
+  inline def apply(): IgLayoutManagerItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgLayoutManagerItem]
   }
   
-  @scala.inline
-  implicit class IgLayoutManagerItemMutableBuilder[Self <: IgLayoutManagerItem] (val x: Self) extends AnyVal {
+  extension [Self <: IgLayoutManagerItem](x: Self) {
     
-    @scala.inline
-    def setColIndex(value: Double): Self = StObject.set(x, "colIndex", value.asInstanceOf[js.Any])
+    inline def setColIndex(value: Double): Self = StObject.set(x, "colIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColIndexUndefined: Self = StObject.set(x, "colIndex", js.undefined)
+    inline def setColIndexUndefined: Self = StObject.set(x, "colIndex", js.undefined)
     
-    @scala.inline
-    def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
+    inline def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColSpanUndefined: Self = StObject.set(x, "colSpan", js.undefined)
+    inline def setColSpanUndefined: Self = StObject.set(x, "colSpan", js.undefined)
     
-    @scala.inline
-    def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
+    inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
+    inline def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
     
-    @scala.inline
-    def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
+    inline def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
+    inline def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

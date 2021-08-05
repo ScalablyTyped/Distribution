@@ -18,19 +18,15 @@ trait PutAccountSettingDefaultRequest extends StObject {
 }
 object PutAccountSettingDefaultRequest {
   
-  @scala.inline
-  def apply(name: SettingName, value: String): PutAccountSettingDefaultRequest = {
+  inline def apply(name: SettingName, value: String): PutAccountSettingDefaultRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutAccountSettingDefaultRequest]
   }
   
-  @scala.inline
-  implicit class PutAccountSettingDefaultRequestMutableBuilder[Self <: PutAccountSettingDefaultRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutAccountSettingDefaultRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: SettingName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: SettingName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

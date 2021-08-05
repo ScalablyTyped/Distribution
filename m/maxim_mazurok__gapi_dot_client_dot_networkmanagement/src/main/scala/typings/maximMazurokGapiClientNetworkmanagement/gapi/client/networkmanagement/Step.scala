@@ -62,115 +62,79 @@ trait Step extends StObject {
 }
 object Step {
   
-  @scala.inline
-  def apply(): Step = {
+  inline def apply(): Step = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Step]
   }
   
-  @scala.inline
-  implicit class StepMutableBuilder[Self <: Step] (val x: Self) extends AnyVal {
+  extension [Self <: Step](x: Self) {
     
-    @scala.inline
-    def setAbort(value: AbortInfo): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
+    inline def setAbort(value: AbortInfo): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbortUndefined: Self = StObject.set(x, "abort", js.undefined)
+    inline def setAbortUndefined: Self = StObject.set(x, "abort", js.undefined)
     
-    @scala.inline
-    def setCausesDrop(value: Boolean): Self = StObject.set(x, "causesDrop", value.asInstanceOf[js.Any])
+    inline def setCausesDrop(value: Boolean): Self = StObject.set(x, "causesDrop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCausesDropUndefined: Self = StObject.set(x, "causesDrop", js.undefined)
+    inline def setCausesDropUndefined: Self = StObject.set(x, "causesDrop", js.undefined)
     
-    @scala.inline
-    def setDeliver(value: DeliverInfo): Self = StObject.set(x, "deliver", value.asInstanceOf[js.Any])
+    inline def setDeliver(value: DeliverInfo): Self = StObject.set(x, "deliver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliverUndefined: Self = StObject.set(x, "deliver", js.undefined)
+    inline def setDeliverUndefined: Self = StObject.set(x, "deliver", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDrop(value: DropInfo): Self = StObject.set(x, "drop", value.asInstanceOf[js.Any])
+    inline def setDrop(value: DropInfo): Self = StObject.set(x, "drop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
+    inline def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
     
-    @scala.inline
-    def setEndpoint(value: EndpointInfo): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpoint(value: EndpointInfo): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
+    inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
     
-    @scala.inline
-    def setFirewall(value: FirewallInfo): Self = StObject.set(x, "firewall", value.asInstanceOf[js.Any])
+    inline def setFirewall(value: FirewallInfo): Self = StObject.set(x, "firewall", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirewallUndefined: Self = StObject.set(x, "firewall", js.undefined)
+    inline def setFirewallUndefined: Self = StObject.set(x, "firewall", js.undefined)
     
-    @scala.inline
-    def setForward(value: ForwardInfo): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
+    inline def setForward(value: ForwardInfo): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardUndefined: Self = StObject.set(x, "forward", js.undefined)
+    inline def setForwardUndefined: Self = StObject.set(x, "forward", js.undefined)
     
-    @scala.inline
-    def setForwardingRule(value: ForwardingRuleInfo): Self = StObject.set(x, "forwardingRule", value.asInstanceOf[js.Any])
+    inline def setForwardingRule(value: ForwardingRuleInfo): Self = StObject.set(x, "forwardingRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardingRuleUndefined: Self = StObject.set(x, "forwardingRule", js.undefined)
+    inline def setForwardingRuleUndefined: Self = StObject.set(x, "forwardingRule", js.undefined)
     
-    @scala.inline
-    def setInstance(value: InstanceInfo): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: InstanceInfo): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
+    inline def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
     
-    @scala.inline
-    def setLoadBalancer(value: LoadBalancerInfo): Self = StObject.set(x, "loadBalancer", value.asInstanceOf[js.Any])
+    inline def setLoadBalancer(value: LoadBalancerInfo): Self = StObject.set(x, "loadBalancer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadBalancerUndefined: Self = StObject.set(x, "loadBalancer", js.undefined)
+    inline def setLoadBalancerUndefined: Self = StObject.set(x, "loadBalancer", js.undefined)
     
-    @scala.inline
-    def setNetwork(value: NetworkInfo): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+    inline def setNetwork(value: NetworkInfo): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
+    inline def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
-    @scala.inline
-    def setRoute(value: RouteInfo): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+    inline def setRoute(value: RouteInfo): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteUndefined: Self = StObject.set(x, "route", js.undefined)
+    inline def setRouteUndefined: Self = StObject.set(x, "route", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setVpnGateway(value: VpnGatewayInfo): Self = StObject.set(x, "vpnGateway", value.asInstanceOf[js.Any])
+    inline def setVpnGateway(value: VpnGatewayInfo): Self = StObject.set(x, "vpnGateway", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpnGatewayUndefined: Self = StObject.set(x, "vpnGateway", js.undefined)
+    inline def setVpnGatewayUndefined: Self = StObject.set(x, "vpnGateway", js.undefined)
     
-    @scala.inline
-    def setVpnTunnel(value: VpnTunnelInfo): Self = StObject.set(x, "vpnTunnel", value.asInstanceOf[js.Any])
+    inline def setVpnTunnel(value: VpnTunnelInfo): Self = StObject.set(x, "vpnTunnel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpnTunnelUndefined: Self = StObject.set(x, "vpnTunnel", js.undefined)
+    inline def setVpnTunnelUndefined: Self = StObject.set(x, "vpnTunnel", js.undefined)
   }
 }

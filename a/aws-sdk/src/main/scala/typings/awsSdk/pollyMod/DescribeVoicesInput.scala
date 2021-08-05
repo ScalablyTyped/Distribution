@@ -28,37 +28,27 @@ trait DescribeVoicesInput extends StObject {
 }
 object DescribeVoicesInput {
   
-  @scala.inline
-  def apply(): DescribeVoicesInput = {
+  inline def apply(): DescribeVoicesInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeVoicesInput]
   }
   
-  @scala.inline
-  implicit class DescribeVoicesInputMutableBuilder[Self <: DescribeVoicesInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeVoicesInput](x: Self) {
     
-    @scala.inline
-    def setEngine(value: Engine): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
+    inline def setEngine(value: Engine): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineUndefined: Self = StObject.set(x, "Engine", js.undefined)
+    inline def setEngineUndefined: Self = StObject.set(x, "Engine", js.undefined)
     
-    @scala.inline
-    def setIncludeAdditionalLanguageCodes(value: IncludeAdditionalLanguageCodes): Self = StObject.set(x, "IncludeAdditionalLanguageCodes", value.asInstanceOf[js.Any])
+    inline def setIncludeAdditionalLanguageCodes(value: IncludeAdditionalLanguageCodes): Self = StObject.set(x, "IncludeAdditionalLanguageCodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeAdditionalLanguageCodesUndefined: Self = StObject.set(x, "IncludeAdditionalLanguageCodes", js.undefined)
+    inline def setIncludeAdditionalLanguageCodesUndefined: Self = StObject.set(x, "IncludeAdditionalLanguageCodes", js.undefined)
     
-    @scala.inline
-    def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait scanType extends StObject
 object scanType {
   
-  @scala.inline
-  def barCode: typings.baiduApp.baiduAppStrings.barCode = "barCode".asInstanceOf[typings.baiduApp.baiduAppStrings.barCode]
+  inline def barCode: typings.baiduApp.baiduAppStrings.barCode = "barCode".asInstanceOf[typings.baiduApp.baiduAppStrings.barCode]
   
-  @scala.inline
-  def qrCode: typings.baiduApp.baiduAppStrings.qrCode = "qrCode".asInstanceOf[typings.baiduApp.baiduAppStrings.qrCode]
+  inline def qrCode: typings.baiduApp.baiduAppStrings.qrCode = "qrCode".asInstanceOf[typings.baiduApp.baiduAppStrings.qrCode]
 }

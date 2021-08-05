@@ -12,16 +12,13 @@ trait JobAssignedEvent
 }
 object JobAssignedEvent {
   
-  @scala.inline
-  def apply(jobId: String, name: String, request: TaskAgentJobRequest): JobAssignedEvent = {
+  inline def apply(jobId: String, name: String, request: TaskAgentJobRequest): JobAssignedEvent = {
     val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobAssignedEvent]
   }
   
-  @scala.inline
-  implicit class JobAssignedEventMutableBuilder[Self <: JobAssignedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: JobAssignedEvent](x: Self) {
     
-    @scala.inline
-    def setRequest(value: TaskAgentJobRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: TaskAgentJobRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
   }
 }

@@ -53,76 +53,53 @@ trait Option extends StObject {
 }
 object Option {
   
-  @scala.inline
-  def apply(): Option = {
+  inline def apply(): Option = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Option]
   }
   
-  @scala.inline
-  implicit class OptionMutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
+  extension [Self <: Option](x: Self) {
     
-    @scala.inline
-    def setDBSecurityGroupMemberships(value: DBSecurityGroupMembershipList): Self = StObject.set(x, "DBSecurityGroupMemberships", value.asInstanceOf[js.Any])
+    inline def setDBSecurityGroupMemberships(value: DBSecurityGroupMembershipList): Self = StObject.set(x, "DBSecurityGroupMemberships", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBSecurityGroupMembershipsUndefined: Self = StObject.set(x, "DBSecurityGroupMemberships", js.undefined)
+    inline def setDBSecurityGroupMembershipsUndefined: Self = StObject.set(x, "DBSecurityGroupMemberships", js.undefined)
     
-    @scala.inline
-    def setDBSecurityGroupMembershipsVarargs(value: DBSecurityGroupMembership*): Self = StObject.set(x, "DBSecurityGroupMemberships", js.Array(value :_*))
+    inline def setDBSecurityGroupMembershipsVarargs(value: DBSecurityGroupMembership*): Self = StObject.set(x, "DBSecurityGroupMemberships", js.Array(value :_*))
     
-    @scala.inline
-    def setOptionDescription(value: String): Self = StObject.set(x, "OptionDescription", value.asInstanceOf[js.Any])
+    inline def setOptionDescription(value: String): Self = StObject.set(x, "OptionDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionDescriptionUndefined: Self = StObject.set(x, "OptionDescription", js.undefined)
+    inline def setOptionDescriptionUndefined: Self = StObject.set(x, "OptionDescription", js.undefined)
     
-    @scala.inline
-    def setOptionName(value: String): Self = StObject.set(x, "OptionName", value.asInstanceOf[js.Any])
+    inline def setOptionName(value: String): Self = StObject.set(x, "OptionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionNameUndefined: Self = StObject.set(x, "OptionName", js.undefined)
+    inline def setOptionNameUndefined: Self = StObject.set(x, "OptionName", js.undefined)
     
-    @scala.inline
-    def setOptionSettings(value: OptionSettingConfigurationList): Self = StObject.set(x, "OptionSettings", value.asInstanceOf[js.Any])
+    inline def setOptionSettings(value: OptionSettingConfigurationList): Self = StObject.set(x, "OptionSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionSettingsUndefined: Self = StObject.set(x, "OptionSettings", js.undefined)
+    inline def setOptionSettingsUndefined: Self = StObject.set(x, "OptionSettings", js.undefined)
     
-    @scala.inline
-    def setOptionSettingsVarargs(value: OptionSetting*): Self = StObject.set(x, "OptionSettings", js.Array(value :_*))
+    inline def setOptionSettingsVarargs(value: OptionSetting*): Self = StObject.set(x, "OptionSettings", js.Array(value :_*))
     
-    @scala.inline
-    def setOptionVersion(value: String): Self = StObject.set(x, "OptionVersion", value.asInstanceOf[js.Any])
+    inline def setOptionVersion(value: String): Self = StObject.set(x, "OptionVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionVersionUndefined: Self = StObject.set(x, "OptionVersion", js.undefined)
+    inline def setOptionVersionUndefined: Self = StObject.set(x, "OptionVersion", js.undefined)
     
-    @scala.inline
-    def setPermanent(value: Boolean): Self = StObject.set(x, "Permanent", value.asInstanceOf[js.Any])
+    inline def setPermanent(value: Boolean): Self = StObject.set(x, "Permanent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermanentUndefined: Self = StObject.set(x, "Permanent", js.undefined)
+    inline def setPermanentUndefined: Self = StObject.set(x, "Permanent", js.undefined)
     
-    @scala.inline
-    def setPersistent(value: Boolean): Self = StObject.set(x, "Persistent", value.asInstanceOf[js.Any])
+    inline def setPersistent(value: Boolean): Self = StObject.set(x, "Persistent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersistentUndefined: Self = StObject.set(x, "Persistent", js.undefined)
+    inline def setPersistentUndefined: Self = StObject.set(x, "Persistent", js.undefined)
     
-    @scala.inline
-    def setPort(value: IntegerOptional): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
+    inline def setPort(value: IntegerOptional): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
     
-    @scala.inline
-    def setVpcSecurityGroupMemberships(value: VpcSecurityGroupMembershipList): Self = StObject.set(x, "VpcSecurityGroupMemberships", value.asInstanceOf[js.Any])
+    inline def setVpcSecurityGroupMemberships(value: VpcSecurityGroupMembershipList): Self = StObject.set(x, "VpcSecurityGroupMemberships", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcSecurityGroupMembershipsUndefined: Self = StObject.set(x, "VpcSecurityGroupMemberships", js.undefined)
+    inline def setVpcSecurityGroupMembershipsUndefined: Self = StObject.set(x, "VpcSecurityGroupMemberships", js.undefined)
     
-    @scala.inline
-    def setVpcSecurityGroupMembershipsVarargs(value: VpcSecurityGroupMembership*): Self = StObject.set(x, "VpcSecurityGroupMemberships", js.Array(value :_*))
+    inline def setVpcSecurityGroupMembershipsVarargs(value: VpcSecurityGroupMembership*): Self = StObject.set(x, "VpcSecurityGroupMemberships", js.Array(value :_*))
   }
 }

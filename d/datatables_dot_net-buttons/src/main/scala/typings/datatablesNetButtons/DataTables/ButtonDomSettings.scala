@@ -18,43 +18,31 @@ trait ButtonDomSettings extends StObject {
 }
 object ButtonDomSettings {
   
-  @scala.inline
-  def apply(): ButtonDomSettings = {
+  inline def apply(): ButtonDomSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ButtonDomSettings]
   }
   
-  @scala.inline
-  implicit class ButtonDomSettingsMutableBuilder[Self <: ButtonDomSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ButtonDomSettings](x: Self) {
     
-    @scala.inline
-    def setButton(value: ButtonDomButtomButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setButton(value: ButtonDomButtomButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonContainer(value: ButtonDomButtomCommon): Self = StObject.set(x, "buttonContainer", value.asInstanceOf[js.Any])
+    inline def setButtonContainer(value: ButtonDomButtomCommon): Self = StObject.set(x, "buttonContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonContainerUndefined: Self = StObject.set(x, "buttonContainer", js.undefined)
+    inline def setButtonContainerUndefined: Self = StObject.set(x, "buttonContainer", js.undefined)
     
-    @scala.inline
-    def setButtonLiner(value: ButtonDomButtomCommon): Self = StObject.set(x, "buttonLiner", value.asInstanceOf[js.Any])
+    inline def setButtonLiner(value: ButtonDomButtomCommon): Self = StObject.set(x, "buttonLiner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonLinerUndefined: Self = StObject.set(x, "buttonLiner", js.undefined)
+    inline def setButtonLinerUndefined: Self = StObject.set(x, "buttonLiner", js.undefined)
     
-    @scala.inline
-    def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+    inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
-    @scala.inline
-    def setCollection(value: ButtonDomButtomCommon): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+    inline def setCollection(value: ButtonDomButtomCommon): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollectionUndefined: Self = StObject.set(x, "collection", js.undefined)
+    inline def setCollectionUndefined: Self = StObject.set(x, "collection", js.undefined)
     
-    @scala.inline
-    def setContainer(value: ButtonDomButtomCommon): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: ButtonDomButtomCommon): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
   }
 }

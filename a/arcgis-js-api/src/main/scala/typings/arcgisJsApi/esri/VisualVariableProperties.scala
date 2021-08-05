@@ -36,37 +36,27 @@ trait VisualVariableProperties extends StObject {
 }
 object VisualVariableProperties {
   
-  @scala.inline
-  def apply(): VisualVariableProperties = {
+  inline def apply(): VisualVariableProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VisualVariableProperties]
   }
   
-  @scala.inline
-  implicit class VisualVariablePropertiesMutableBuilder[Self <: VisualVariableProperties] (val x: Self) extends AnyVal {
+  extension [Self <: VisualVariableProperties](x: Self) {
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setLegendOptions(value: VisualVariableLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
+    inline def setLegendOptions(value: VisualVariableLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendOptionsUndefined: Self = StObject.set(x, "legendOptions", js.undefined)
+    inline def setLegendOptionsUndefined: Self = StObject.set(x, "legendOptions", js.undefined)
     
-    @scala.inline
-    def setValueExpression(value: String): Self = StObject.set(x, "valueExpression", value.asInstanceOf[js.Any])
+    inline def setValueExpression(value: String): Self = StObject.set(x, "valueExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueExpressionTitle(value: String): Self = StObject.set(x, "valueExpressionTitle", value.asInstanceOf[js.Any])
+    inline def setValueExpressionTitle(value: String): Self = StObject.set(x, "valueExpressionTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueExpressionTitleUndefined: Self = StObject.set(x, "valueExpressionTitle", js.undefined)
+    inline def setValueExpressionTitleUndefined: Self = StObject.set(x, "valueExpressionTitle", js.undefined)
     
-    @scala.inline
-    def setValueExpressionUndefined: Self = StObject.set(x, "valueExpression", js.undefined)
+    inline def setValueExpressionUndefined: Self = StObject.set(x, "valueExpression", js.undefined)
   }
 }

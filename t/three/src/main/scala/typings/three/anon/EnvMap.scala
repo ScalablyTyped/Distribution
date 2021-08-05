@@ -19,8 +19,7 @@ trait EnvMap extends StObject {
 }
 object EnvMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     envMap: IUniform,
     flipEnvMap: IUniform,
     maxMipLevel: IUniform,
@@ -31,22 +30,16 @@ object EnvMap {
     __obj.asInstanceOf[EnvMap]
   }
   
-  @scala.inline
-  implicit class EnvMapMutableBuilder[Self <: EnvMap] (val x: Self) extends AnyVal {
+  extension [Self <: EnvMap](x: Self) {
     
-    @scala.inline
-    def setEnvMap(value: IUniform): Self = StObject.set(x, "envMap", value.asInstanceOf[js.Any])
+    inline def setEnvMap(value: IUniform): Self = StObject.set(x, "envMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlipEnvMap(value: IUniform): Self = StObject.set(x, "flipEnvMap", value.asInstanceOf[js.Any])
+    inline def setFlipEnvMap(value: IUniform): Self = StObject.set(x, "flipEnvMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxMipLevel(value: IUniform): Self = StObject.set(x, "maxMipLevel", value.asInstanceOf[js.Any])
+    inline def setMaxMipLevel(value: IUniform): Self = StObject.set(x, "maxMipLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReflectivity(value: IUniform): Self = StObject.set(x, "reflectivity", value.asInstanceOf[js.Any])
+    inline def setReflectivity(value: IUniform): Self = StObject.set(x, "reflectivity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefractionRatio(value: IUniform): Self = StObject.set(x, "refractionRatio", value.asInstanceOf[js.Any])
+    inline def setRefractionRatio(value: IUniform): Self = StObject.set(x, "refractionRatio", value.asInstanceOf[js.Any])
   }
 }

@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlTimeStyle extends StObject
 object OlTimeStyle {
   
-  @scala.inline
-  def olTimeStyleShortDuration: `4` = 4.asInstanceOf[`4`]
+  inline def olTimeStyleShortDuration: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def olTimeStyleTimeDuration: `1` = 1.asInstanceOf[`1`]
+  inline def olTimeStyleTimeDuration: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olTimeStyleTimeOnly: `0` = 0.asInstanceOf[`0`]
+  inline def olTimeStyleTimeOnly: `0` = 0.asInstanceOf[`0`]
 }

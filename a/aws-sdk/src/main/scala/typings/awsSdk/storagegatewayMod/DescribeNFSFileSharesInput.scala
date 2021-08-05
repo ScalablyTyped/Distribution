@@ -13,19 +13,15 @@ trait DescribeNFSFileSharesInput extends StObject {
 }
 object DescribeNFSFileSharesInput {
   
-  @scala.inline
-  def apply(FileShareARNList: FileShareARNList): DescribeNFSFileSharesInput = {
+  inline def apply(FileShareARNList: FileShareARNList): DescribeNFSFileSharesInput = {
     val __obj = js.Dynamic.literal(FileShareARNList = FileShareARNList.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeNFSFileSharesInput]
   }
   
-  @scala.inline
-  implicit class DescribeNFSFileSharesInputMutableBuilder[Self <: DescribeNFSFileSharesInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeNFSFileSharesInput](x: Self) {
     
-    @scala.inline
-    def setFileShareARNList(value: FileShareARNList): Self = StObject.set(x, "FileShareARNList", value.asInstanceOf[js.Any])
+    inline def setFileShareARNList(value: FileShareARNList): Self = StObject.set(x, "FileShareARNList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileShareARNListVarargs(value: FileShareARN*): Self = StObject.set(x, "FileShareARNList", js.Array(value :_*))
+    inline def setFileShareARNListVarargs(value: FileShareARN*): Self = StObject.set(x, "FileShareARNList", js.Array(value :_*))
   }
 }

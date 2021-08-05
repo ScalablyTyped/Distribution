@@ -12,16 +12,13 @@ trait RemoteSystemWatcherErrorOccurredEventArgs extends StObject {
 }
 object RemoteSystemWatcherErrorOccurredEventArgs {
   
-  @scala.inline
-  def apply(error: RemoteSystemWatcherError): RemoteSystemWatcherErrorOccurredEventArgs = {
+  inline def apply(error: RemoteSystemWatcherError): RemoteSystemWatcherErrorOccurredEventArgs = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteSystemWatcherErrorOccurredEventArgs]
   }
   
-  @scala.inline
-  implicit class RemoteSystemWatcherErrorOccurredEventArgsMutableBuilder[Self <: RemoteSystemWatcherErrorOccurredEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: RemoteSystemWatcherErrorOccurredEventArgs](x: Self) {
     
-    @scala.inline
-    def setError(value: RemoteSystemWatcherError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: RemoteSystemWatcherError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }
 }

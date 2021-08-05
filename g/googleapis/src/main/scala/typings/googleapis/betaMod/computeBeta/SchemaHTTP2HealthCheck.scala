@@ -58,55 +58,39 @@ trait SchemaHTTP2HealthCheck extends StObject {
 }
 object SchemaHTTP2HealthCheck {
   
-  @scala.inline
-  def apply(): SchemaHTTP2HealthCheck = {
+  inline def apply(): SchemaHTTP2HealthCheck = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaHTTP2HealthCheck]
   }
   
-  @scala.inline
-  implicit class SchemaHTTP2HealthCheckMutableBuilder[Self <: SchemaHTTP2HealthCheck] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaHTTP2HealthCheck](x: Self) {
     
-    @scala.inline
-    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortName(value: String): Self = StObject.set(x, "portName", value.asInstanceOf[js.Any])
+    inline def setPortName(value: String): Self = StObject.set(x, "portName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortNameUndefined: Self = StObject.set(x, "portName", js.undefined)
+    inline def setPortNameUndefined: Self = StObject.set(x, "portName", js.undefined)
     
-    @scala.inline
-    def setPortSpecification(value: String): Self = StObject.set(x, "portSpecification", value.asInstanceOf[js.Any])
+    inline def setPortSpecification(value: String): Self = StObject.set(x, "portSpecification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortSpecificationUndefined: Self = StObject.set(x, "portSpecification", js.undefined)
+    inline def setPortSpecificationUndefined: Self = StObject.set(x, "portSpecification", js.undefined)
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
-    @scala.inline
-    def setProxyHeader(value: String): Self = StObject.set(x, "proxyHeader", value.asInstanceOf[js.Any])
+    inline def setProxyHeader(value: String): Self = StObject.set(x, "proxyHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyHeaderUndefined: Self = StObject.set(x, "proxyHeader", js.undefined)
+    inline def setProxyHeaderUndefined: Self = StObject.set(x, "proxyHeader", js.undefined)
     
-    @scala.inline
-    def setRequestPath(value: String): Self = StObject.set(x, "requestPath", value.asInstanceOf[js.Any])
+    inline def setRequestPath(value: String): Self = StObject.set(x, "requestPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestPathUndefined: Self = StObject.set(x, "requestPath", js.undefined)
+    inline def setRequestPathUndefined: Self = StObject.set(x, "requestPath", js.undefined)
     
-    @scala.inline
-    def setResponse(value: String): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: String): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+    inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
   }
 }

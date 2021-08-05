@@ -8,15 +8,14 @@ trait SignatureLinesCollection extends StObject {
   
   val Count: Double
   
-  @JSName("InfoPath.SignatureLinesCollection_typekey")
+  /* private */ @JSName("InfoPath.SignatureLinesCollection_typekey")
   var InfoPathDotSignatureLinesCollection_typekey: SignatureLinesCollection
   
   def Item(varIndex: js.Any): SignatureLineObject
 }
 object SignatureLinesCollection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     InfoPathDotSignatureLinesCollection_typekey: SignatureLinesCollection,
     Item: js.Any => SignatureLineObject
@@ -26,16 +25,12 @@ object SignatureLinesCollection {
     __obj.asInstanceOf[SignatureLinesCollection]
   }
   
-  @scala.inline
-  implicit class SignatureLinesCollectionMutableBuilder[Self <: SignatureLinesCollection] (val x: Self) extends AnyVal {
+  extension [Self <: SignatureLinesCollection](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoPathDotSignatureLinesCollection_typekey(value: SignatureLinesCollection): Self = StObject.set(x, "InfoPath.SignatureLinesCollection_typekey", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotSignatureLinesCollection_typekey(value: SignatureLinesCollection): Self = StObject.set(x, "InfoPath.SignatureLinesCollection_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: js.Any => SignatureLineObject): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: js.Any => SignatureLineObject): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
   }
 }

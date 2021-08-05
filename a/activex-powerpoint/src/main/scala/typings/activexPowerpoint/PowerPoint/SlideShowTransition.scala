@@ -25,7 +25,7 @@ trait SlideShowTransition extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.SlideShowTransition_typekey")
+  /* private */ @JSName("PowerPoint.SlideShowTransition_typekey")
   var PowerPointDotSlideShowTransition_typekey: SlideShowTransition
   
   val SoundEffect: typings.activexPowerpoint.PowerPoint.SoundEffect
@@ -34,8 +34,7 @@ trait SlideShowTransition extends StObject {
 }
 object SlideShowTransition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdvanceOnClick: MsoTriState,
     AdvanceOnTime: MsoTriState,
     AdvanceTime: Double,
@@ -54,43 +53,30 @@ object SlideShowTransition {
     __obj.asInstanceOf[SlideShowTransition]
   }
   
-  @scala.inline
-  implicit class SlideShowTransitionMutableBuilder[Self <: SlideShowTransition] (val x: Self) extends AnyVal {
+  extension [Self <: SlideShowTransition](x: Self) {
     
-    @scala.inline
-    def setAdvanceOnClick(value: MsoTriState): Self = StObject.set(x, "AdvanceOnClick", value.asInstanceOf[js.Any])
+    inline def setAdvanceOnClick(value: MsoTriState): Self = StObject.set(x, "AdvanceOnClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdvanceOnTime(value: MsoTriState): Self = StObject.set(x, "AdvanceOnTime", value.asInstanceOf[js.Any])
+    inline def setAdvanceOnTime(value: MsoTriState): Self = StObject.set(x, "AdvanceOnTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdvanceTime(value: Double): Self = StObject.set(x, "AdvanceTime", value.asInstanceOf[js.Any])
+    inline def setAdvanceTime(value: Double): Self = StObject.set(x, "AdvanceTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntryEffect(value: PpEntryEffect): Self = StObject.set(x, "EntryEffect", value.asInstanceOf[js.Any])
+    inline def setEntryEffect(value: PpEntryEffect): Self = StObject.set(x, "EntryEffect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHidden(value: MsoTriState): Self = StObject.set(x, "Hidden", value.asInstanceOf[js.Any])
+    inline def setHidden(value: MsoTriState): Self = StObject.set(x, "Hidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoopSoundUntilNext(value: MsoTriState): Self = StObject.set(x, "LoopSoundUntilNext", value.asInstanceOf[js.Any])
+    inline def setLoopSoundUntilNext(value: MsoTriState): Self = StObject.set(x, "LoopSoundUntilNext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotSlideShowTransition_typekey(value: SlideShowTransition): Self = StObject.set(x, "PowerPoint.SlideShowTransition_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotSlideShowTransition_typekey(value: SlideShowTransition): Self = StObject.set(x, "PowerPoint.SlideShowTransition_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoundEffect(value: SoundEffect): Self = StObject.set(x, "SoundEffect", value.asInstanceOf[js.Any])
+    inline def setSoundEffect(value: SoundEffect): Self = StObject.set(x, "SoundEffect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeed(value: PpTransitionSpeed): Self = StObject.set(x, "Speed", value.asInstanceOf[js.Any])
+    inline def setSpeed(value: PpTransitionSpeed): Self = StObject.set(x, "Speed", value.asInstanceOf[js.Any])
   }
 }

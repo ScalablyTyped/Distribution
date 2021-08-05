@@ -70,8 +70,7 @@ trait DataPilotSourceDimension
 }
 object DataPilotSourceDimension {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Filter: SafeArray[TableFilterField],
     Flags: Double,
     Function: GeneralFunction,
@@ -103,34 +102,24 @@ object DataPilotSourceDimension {
     __obj.asInstanceOf[DataPilotSourceDimension]
   }
   
-  @scala.inline
-  implicit class DataPilotSourceDimensionMutableBuilder[Self <: DataPilotSourceDimension] (val x: Self) extends AnyVal {
+  extension [Self <: DataPilotSourceDimension](x: Self) {
     
-    @scala.inline
-    def setFilter(value: SafeArray[TableFilterField]): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: SafeArray[TableFilterField]): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlags(value: Double): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: Double): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunction(value: GeneralFunction): Self = StObject.set(x, "Function", value.asInstanceOf[js.Any])
+    inline def setFunction(value: GeneralFunction): Self = StObject.set(x, "Function", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunction2(value: Double): Self = StObject.set(x, "Function2", value.asInstanceOf[js.Any])
+    inline def setFunction2(value: Double): Self = StObject.set(x, "Function2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDataLayoutDimension(value: Boolean): Self = StObject.set(x, "IsDataLayoutDimension", value.asInstanceOf[js.Any])
+    inline def setIsDataLayoutDimension(value: Boolean): Self = StObject.set(x, "IsDataLayoutDimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientation(value: DataPilotFieldOrientation): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: DataPilotFieldOrientation): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginal(value: XNamed): Self = StObject.set(x, "Original", value.asInstanceOf[js.Any])
+    inline def setOriginal(value: XNamed): Self = StObject.set(x, "Original", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsedHierarchy(value: Double): Self = StObject.set(x, "UsedHierarchy", value.asInstanceOf[js.Any])
+    inline def setUsedHierarchy(value: Double): Self = StObject.set(x, "UsedHierarchy", value.asInstanceOf[js.Any])
   }
 }

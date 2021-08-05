@@ -32,51 +32,39 @@ trait LaunchTemplateParameters extends StObject {
 }
 object LaunchTemplateParameters {
   
-  @scala.inline
-  def apply(): LaunchTemplateParameters = {
+  inline def apply(): LaunchTemplateParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LaunchTemplateParameters]
   }
   
-  @scala.inline
-  implicit class LaunchTemplateParametersMutableBuilder[Self <: LaunchTemplateParameters] (val x: Self) extends AnyVal {
+  extension [Self <: LaunchTemplateParameters](x: Self) {
     
-    @scala.inline
-    def setEnvironment(value: RuntimeEnvironment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: RuntimeEnvironment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+    inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
-    @scala.inline
-    def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
+    inline def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobNameUndefined: Self = StObject.set(x, "jobName", js.undefined)
+    inline def setJobNameUndefined: Self = StObject.set(x, "jobName", js.undefined)
     
-    @scala.inline
-    def setParameters(
+    inline def setParameters(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LaunchTemplateParameters & TopLevel[js.Any]
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setTransformNameMapping(
+    inline def setTransformNameMapping(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LaunchTemplateParameters & TopLevel[js.Any]
     ): Self = StObject.set(x, "transformNameMapping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformNameMappingUndefined: Self = StObject.set(x, "transformNameMapping", js.undefined)
+    inline def setTransformNameMappingUndefined: Self = StObject.set(x, "transformNameMapping", js.undefined)
     
-    @scala.inline
-    def setUpdate(value: Boolean): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: Boolean): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+    inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

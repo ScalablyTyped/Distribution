@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlMeetingRecipientType extends StObject
 object OlMeetingRecipientType {
   
-  @scala.inline
-  def olOptional: `2` = 2.asInstanceOf[`2`]
+  inline def olOptional: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def olOrganizer: `0` = 0.asInstanceOf[`0`]
+  inline def olOrganizer: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def olRequired: `1` = 1.asInstanceOf[`1`]
+  inline def olRequired: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olResource: `3` = 3.asInstanceOf[`3`]
+  inline def olResource: `3` = 3.asInstanceOf[`3`]
 }

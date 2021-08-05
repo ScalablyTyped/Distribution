@@ -14,25 +14,19 @@ trait BuildBazelRemoteExecutionV2ToolDetails extends StObject {
 }
 object BuildBazelRemoteExecutionV2ToolDetails {
   
-  @scala.inline
-  def apply(): BuildBazelRemoteExecutionV2ToolDetails = {
+  inline def apply(): BuildBazelRemoteExecutionV2ToolDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuildBazelRemoteExecutionV2ToolDetails]
   }
   
-  @scala.inline
-  implicit class BuildBazelRemoteExecutionV2ToolDetailsMutableBuilder[Self <: BuildBazelRemoteExecutionV2ToolDetails] (val x: Self) extends AnyVal {
+  extension [Self <: BuildBazelRemoteExecutionV2ToolDetails](x: Self) {
     
-    @scala.inline
-    def setToolName(value: String): Self = StObject.set(x, "toolName", value.asInstanceOf[js.Any])
+    inline def setToolName(value: String): Self = StObject.set(x, "toolName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolNameUndefined: Self = StObject.set(x, "toolName", js.undefined)
+    inline def setToolNameUndefined: Self = StObject.set(x, "toolName", js.undefined)
     
-    @scala.inline
-    def setToolVersion(value: String): Self = StObject.set(x, "toolVersion", value.asInstanceOf[js.Any])
+    inline def setToolVersion(value: String): Self = StObject.set(x, "toolVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolVersionUndefined: Self = StObject.set(x, "toolVersion", js.undefined)
+    inline def setToolVersionUndefined: Self = StObject.set(x, "toolVersion", js.undefined)
   }
 }

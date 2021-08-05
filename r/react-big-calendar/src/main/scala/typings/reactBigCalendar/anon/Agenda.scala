@@ -20,43 +20,31 @@ trait Agenda extends StObject {
 }
 object Agenda {
   
-  @scala.inline
-  def apply(): Agenda = {
+  inline def apply(): Agenda = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Agenda]
   }
   
-  @scala.inline
-  implicit class AgendaMutableBuilder[Self <: Agenda] (val x: Self) extends AnyVal {
+  extension [Self <: Agenda](x: Self) {
     
-    @scala.inline
-    def setAgenda(value: Boolean | (ComponentType[js.Any] & ViewStatic)): Self = StObject.set(x, "agenda", value.asInstanceOf[js.Any])
+    inline def setAgenda(value: Boolean | (ComponentType[js.Any] & ViewStatic)): Self = StObject.set(x, "agenda", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgendaUndefined: Self = StObject.set(x, "agenda", js.undefined)
+    inline def setAgendaUndefined: Self = StObject.set(x, "agenda", js.undefined)
     
-    @scala.inline
-    def setDay(value: Boolean | (ComponentType[js.Any] & ViewStatic)): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+    inline def setDay(value: Boolean | (ComponentType[js.Any] & ViewStatic)): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
+    inline def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
     
-    @scala.inline
-    def setMonth(value: Boolean | (ComponentType[js.Any] & ViewStatic)): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+    inline def setMonth(value: Boolean | (ComponentType[js.Any] & ViewStatic)): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
+    inline def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
     
-    @scala.inline
-    def setWeek(value: Boolean | (ComponentType[js.Any] & ViewStatic)): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
+    inline def setWeek(value: Boolean | (ComponentType[js.Any] & ViewStatic)): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeekUndefined: Self = StObject.set(x, "week", js.undefined)
+    inline def setWeekUndefined: Self = StObject.set(x, "week", js.undefined)
     
-    @scala.inline
-    def setWork_week(value: Boolean | (ComponentType[js.Any] & ViewStatic)): Self = StObject.set(x, "work_week", value.asInstanceOf[js.Any])
+    inline def setWork_week(value: Boolean | (ComponentType[js.Any] & ViewStatic)): Self = StObject.set(x, "work_week", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWork_weekUndefined: Self = StObject.set(x, "work_week", js.undefined)
+    inline def setWork_weekUndefined: Self = StObject.set(x, "work_week", js.undefined)
   }
 }

@@ -12,6 +12,5 @@ object scrollAreaStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getScrollAreaStyles(theme: Theme): CSSObject = ^.asInstanceOf[js.Dynamic].applyDynamic("getScrollAreaStyles")(theme.asInstanceOf[js.Any]).asInstanceOf[CSSObject]
+  inline def getScrollAreaStyles(theme: Theme): CSSObject = ^.asInstanceOf[js.Dynamic].applyDynamic("getScrollAreaStyles")(theme.asInstanceOf[js.Any]).asInstanceOf[CSSObject]
 }

@@ -12,19 +12,15 @@ trait ReadonlyReadonlyChildren extends StObject {
 }
 object ReadonlyReadonlyChildren {
   
-  @scala.inline
-  def apply(): ReadonlyReadonlyChildren = {
+  inline def apply(): ReadonlyReadonlyChildren = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReadonlyReadonlyChildren]
   }
   
-  @scala.inline
-  implicit class ReadonlyReadonlyChildrenMutableBuilder[Self <: ReadonlyReadonlyChildren] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyReadonlyChildren](x: Self) {
     
-    @scala.inline
-    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
   }
 }

@@ -33,43 +33,31 @@ trait PutSecretValueRequest extends StObject {
 }
 object PutSecretValueRequest {
   
-  @scala.inline
-  def apply(SecretId: SecretIdType): PutSecretValueRequest = {
+  inline def apply(SecretId: SecretIdType): PutSecretValueRequest = {
     val __obj = js.Dynamic.literal(SecretId = SecretId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutSecretValueRequest]
   }
   
-  @scala.inline
-  implicit class PutSecretValueRequestMutableBuilder[Self <: PutSecretValueRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutSecretValueRequest](x: Self) {
     
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestTokenType): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: ClientRequestTokenType): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
+    inline def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
     
-    @scala.inline
-    def setSecretBinary(value: SecretBinaryType): Self = StObject.set(x, "SecretBinary", value.asInstanceOf[js.Any])
+    inline def setSecretBinary(value: SecretBinaryType): Self = StObject.set(x, "SecretBinary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretBinaryUndefined: Self = StObject.set(x, "SecretBinary", js.undefined)
+    inline def setSecretBinaryUndefined: Self = StObject.set(x, "SecretBinary", js.undefined)
     
-    @scala.inline
-    def setSecretId(value: SecretIdType): Self = StObject.set(x, "SecretId", value.asInstanceOf[js.Any])
+    inline def setSecretId(value: SecretIdType): Self = StObject.set(x, "SecretId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretString(value: SecretStringType): Self = StObject.set(x, "SecretString", value.asInstanceOf[js.Any])
+    inline def setSecretString(value: SecretStringType): Self = StObject.set(x, "SecretString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretStringUndefined: Self = StObject.set(x, "SecretString", js.undefined)
+    inline def setSecretStringUndefined: Self = StObject.set(x, "SecretString", js.undefined)
     
-    @scala.inline
-    def setVersionStages(value: SecretVersionStagesType): Self = StObject.set(x, "VersionStages", value.asInstanceOf[js.Any])
+    inline def setVersionStages(value: SecretVersionStagesType): Self = StObject.set(x, "VersionStages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionStagesUndefined: Self = StObject.set(x, "VersionStages", js.undefined)
+    inline def setVersionStagesUndefined: Self = StObject.set(x, "VersionStages", js.undefined)
     
-    @scala.inline
-    def setVersionStagesVarargs(value: SecretVersionStageType*): Self = StObject.set(x, "VersionStages", js.Array(value :_*))
+    inline def setVersionStagesVarargs(value: SecretVersionStageType*): Self = StObject.set(x, "VersionStages", js.Array(value :_*))
   }
 }

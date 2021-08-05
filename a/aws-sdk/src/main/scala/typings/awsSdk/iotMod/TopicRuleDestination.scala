@@ -28,37 +28,27 @@ trait TopicRuleDestination extends StObject {
 }
 object TopicRuleDestination {
   
-  @scala.inline
-  def apply(): TopicRuleDestination = {
+  inline def apply(): TopicRuleDestination = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TopicRuleDestination]
   }
   
-  @scala.inline
-  implicit class TopicRuleDestinationMutableBuilder[Self <: TopicRuleDestination] (val x: Self) extends AnyVal {
+  extension [Self <: TopicRuleDestination](x: Self) {
     
-    @scala.inline
-    def setArn(value: AwsArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: AwsArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setHttpUrlProperties(value: HttpUrlDestinationProperties): Self = StObject.set(x, "httpUrlProperties", value.asInstanceOf[js.Any])
+    inline def setHttpUrlProperties(value: HttpUrlDestinationProperties): Self = StObject.set(x, "httpUrlProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpUrlPropertiesUndefined: Self = StObject.set(x, "httpUrlProperties", js.undefined)
+    inline def setHttpUrlPropertiesUndefined: Self = StObject.set(x, "httpUrlProperties", js.undefined)
     
-    @scala.inline
-    def setStatus(value: TopicRuleDestinationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: TopicRuleDestinationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusReason(value: String): Self = StObject.set(x, "statusReason", value.asInstanceOf[js.Any])
+    inline def setStatusReason(value: String): Self = StObject.set(x, "statusReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusReasonUndefined: Self = StObject.set(x, "statusReason", js.undefined)
+    inline def setStatusReasonUndefined: Self = StObject.set(x, "statusReason", js.undefined)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

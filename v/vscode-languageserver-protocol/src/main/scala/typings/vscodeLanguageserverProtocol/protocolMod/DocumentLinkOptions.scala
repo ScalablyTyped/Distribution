@@ -15,19 +15,15 @@ trait DocumentLinkOptions
 }
 object DocumentLinkOptions {
   
-  @scala.inline
-  def apply(): DocumentLinkOptions = {
+  inline def apply(): DocumentLinkOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentLinkOptions]
   }
   
-  @scala.inline
-  implicit class DocumentLinkOptionsMutableBuilder[Self <: DocumentLinkOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentLinkOptions](x: Self) {
     
-    @scala.inline
-    def setResolveProvider(value: Boolean): Self = StObject.set(x, "resolveProvider", value.asInstanceOf[js.Any])
+    inline def setResolveProvider(value: Boolean): Self = StObject.set(x, "resolveProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolveProviderUndefined: Self = StObject.set(x, "resolveProvider", js.undefined)
+    inline def setResolveProviderUndefined: Self = StObject.set(x, "resolveProvider", js.undefined)
   }
 }

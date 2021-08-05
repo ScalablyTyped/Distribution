@@ -28,70 +28,49 @@ trait CopyParameters extends StObject {
 }
 object CopyParameters {
   
-  @scala.inline
-  def apply(fileId: String): CopyParameters = {
+  inline def apply(fileId: String): CopyParameters = {
     val __obj = js.Dynamic.literal(fileId = fileId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyParameters]
   }
   
-  @scala.inline
-  implicit class CopyParametersMutableBuilder[Self <: CopyParameters] (val x: Self) extends AnyVal {
+  extension [Self <: CopyParameters](x: Self) {
     
-    @scala.inline
-    def setConvert(value: Boolean): Self = StObject.set(x, "convert", value.asInstanceOf[js.Any])
+    inline def setConvert(value: Boolean): Self = StObject.set(x, "convert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConvertUndefined: Self = StObject.set(x, "convert", js.undefined)
+    inline def setConvertUndefined: Self = StObject.set(x, "convert", js.undefined)
     
-    @scala.inline
-    def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
+    inline def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOcr(value: Boolean): Self = StObject.set(x, "ocr", value.asInstanceOf[js.Any])
+    inline def setOcr(value: Boolean): Self = StObject.set(x, "ocr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOcrLanguage(value: String): Self = StObject.set(x, "ocrLanguage", value.asInstanceOf[js.Any])
+    inline def setOcrLanguage(value: String): Self = StObject.set(x, "ocrLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOcrLanguageUndefined: Self = StObject.set(x, "ocrLanguage", js.undefined)
+    inline def setOcrLanguageUndefined: Self = StObject.set(x, "ocrLanguage", js.undefined)
     
-    @scala.inline
-    def setOcrUndefined: Self = StObject.set(x, "ocr", js.undefined)
+    inline def setOcrUndefined: Self = StObject.set(x, "ocr", js.undefined)
     
-    @scala.inline
-    def setPinned(value: Boolean): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
+    inline def setPinned(value: Boolean): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPinnedUndefined: Self = StObject.set(x, "pinned", js.undefined)
+    inline def setPinnedUndefined: Self = StObject.set(x, "pinned", js.undefined)
     
-    @scala.inline
-    def setResource(value: FileResource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: FileResource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
-    @scala.inline
-    def setSupportsTeamDrives(value: Boolean): Self = StObject.set(x, "supportsTeamDrives", value.asInstanceOf[js.Any])
+    inline def setSupportsTeamDrives(value: Boolean): Self = StObject.set(x, "supportsTeamDrives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsTeamDrivesUndefined: Self = StObject.set(x, "supportsTeamDrives", js.undefined)
+    inline def setSupportsTeamDrivesUndefined: Self = StObject.set(x, "supportsTeamDrives", js.undefined)
     
-    @scala.inline
-    def setTimedTextLanguage(value: String): Self = StObject.set(x, "timedTextLanguage", value.asInstanceOf[js.Any])
+    inline def setTimedTextLanguage(value: String): Self = StObject.set(x, "timedTextLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimedTextLanguageUndefined: Self = StObject.set(x, "timedTextLanguage", js.undefined)
+    inline def setTimedTextLanguageUndefined: Self = StObject.set(x, "timedTextLanguage", js.undefined)
     
-    @scala.inline
-    def setTimedTextTrackName(value: String): Self = StObject.set(x, "timedTextTrackName", value.asInstanceOf[js.Any])
+    inline def setTimedTextTrackName(value: String): Self = StObject.set(x, "timedTextTrackName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimedTextTrackNameUndefined: Self = StObject.set(x, "timedTextTrackName", js.undefined)
+    inline def setTimedTextTrackNameUndefined: Self = StObject.set(x, "timedTextTrackName", js.undefined)
     
-    @scala.inline
-    def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
+    inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }
 }

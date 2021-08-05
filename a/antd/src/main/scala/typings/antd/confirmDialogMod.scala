@@ -12,8 +12,7 @@ object confirmDialogMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(props: ConfirmDialogProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(props: ConfirmDialogProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait ConfirmDialogProps
     extends StObject
@@ -27,29 +26,22 @@ object confirmDialogMod {
   }
   object ConfirmDialogProps {
     
-    @scala.inline
-    def apply(close: /* repeated */ js.Any => Unit): ConfirmDialogProps = {
+    inline def apply(close: /* repeated */ js.Any => Unit): ConfirmDialogProps = {
       val __obj = js.Dynamic.literal(close = js.Any.fromFunction1(close))
       __obj.asInstanceOf[ConfirmDialogProps]
     }
     
-    @scala.inline
-    implicit class ConfirmDialogPropsMutableBuilder[Self <: ConfirmDialogProps] (val x: Self) extends AnyVal {
+    extension [Self <: ConfirmDialogProps](x: Self) {
       
-      @scala.inline
-      def setAfterClose(value: () => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
+      inline def setAfterClose(value: () => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAfterCloseUndefined: Self = StObject.set(x, "afterClose", js.undefined)
+      inline def setAfterCloseUndefined: Self = StObject.set(x, "afterClose", js.undefined)
       
-      @scala.inline
-      def setClose(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
+      inline def setClose(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRootPrefixCls(value: String): Self = StObject.set(x, "rootPrefixCls", value.asInstanceOf[js.Any])
+      inline def setRootPrefixCls(value: String): Self = StObject.set(x, "rootPrefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootPrefixClsUndefined: Self = StObject.set(x, "rootPrefixCls", js.undefined)
+      inline def setRootPrefixClsUndefined: Self = StObject.set(x, "rootPrefixCls", js.undefined)
     }
   }
 }

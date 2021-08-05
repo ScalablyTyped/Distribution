@@ -18,22 +18,17 @@ trait RemoveAllResourcePermissionsRequest extends StObject {
 }
 object RemoveAllResourcePermissionsRequest {
   
-  @scala.inline
-  def apply(ResourceId: ResourceIdType): RemoveAllResourcePermissionsRequest = {
+  inline def apply(ResourceId: ResourceIdType): RemoveAllResourcePermissionsRequest = {
     val __obj = js.Dynamic.literal(ResourceId = ResourceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveAllResourcePermissionsRequest]
   }
   
-  @scala.inline
-  implicit class RemoveAllResourcePermissionsRequestMutableBuilder[Self <: RemoveAllResourcePermissionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveAllResourcePermissionsRequest](x: Self) {
     
-    @scala.inline
-    def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
+    inline def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
+    inline def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
     
-    @scala.inline
-    def setResourceId(value: ResourceIdType): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: ResourceIdType): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
   }
 }

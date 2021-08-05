@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.Button")
 @js.native
-class Button protected ()
+/* private */ class Button ()
   extends StObject
      with typings.activexInfopath.InfoPath.Button {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("InfoPath.Button_typekey")
   var InfoPathDotButton_typekey: typings.activexInfopath.InfoPath.Button = js.native
 }

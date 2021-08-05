@@ -18,28 +18,21 @@ trait ListDelegatedServicesForAccountResponse extends StObject {
 }
 object ListDelegatedServicesForAccountResponse {
   
-  @scala.inline
-  def apply(): ListDelegatedServicesForAccountResponse = {
+  inline def apply(): ListDelegatedServicesForAccountResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListDelegatedServicesForAccountResponse]
   }
   
-  @scala.inline
-  implicit class ListDelegatedServicesForAccountResponseMutableBuilder[Self <: ListDelegatedServicesForAccountResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListDelegatedServicesForAccountResponse](x: Self) {
     
-    @scala.inline
-    def setDelegatedServices(value: DelegatedServices): Self = StObject.set(x, "DelegatedServices", value.asInstanceOf[js.Any])
+    inline def setDelegatedServices(value: DelegatedServices): Self = StObject.set(x, "DelegatedServices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelegatedServicesUndefined: Self = StObject.set(x, "DelegatedServices", js.undefined)
+    inline def setDelegatedServicesUndefined: Self = StObject.set(x, "DelegatedServices", js.undefined)
     
-    @scala.inline
-    def setDelegatedServicesVarargs(value: DelegatedService*): Self = StObject.set(x, "DelegatedServices", js.Array(value :_*))
+    inline def setDelegatedServicesVarargs(value: DelegatedService*): Self = StObject.set(x, "DelegatedServices", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

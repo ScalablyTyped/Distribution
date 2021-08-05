@@ -13,16 +13,13 @@ trait GetBluetoothAdapterStateOptions
 }
 object GetBluetoothAdapterStateOptions {
   
-  @scala.inline
-  def apply(success: BluetoothAdapterStateData => Unit): GetBluetoothAdapterStateOptions = {
+  inline def apply(success: BluetoothAdapterStateData => Unit): GetBluetoothAdapterStateOptions = {
     val __obj = js.Dynamic.literal(success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[GetBluetoothAdapterStateOptions]
   }
   
-  @scala.inline
-  implicit class GetBluetoothAdapterStateOptionsMutableBuilder[Self <: GetBluetoothAdapterStateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetBluetoothAdapterStateOptions](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: BluetoothAdapterStateData => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: BluetoothAdapterStateData => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

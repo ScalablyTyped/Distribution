@@ -13,6 +13,5 @@ object isEthereumAddressMod {
   /**
     * Check if the string is an [Ethereum](https://ethereum.org/) address using basic regex. Does not validate address checksums.
     */
-  @scala.inline
-  def default(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def default(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

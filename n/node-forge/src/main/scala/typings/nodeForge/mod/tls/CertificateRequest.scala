@@ -13,19 +13,15 @@ trait CertificateRequest extends StObject {
 }
 object CertificateRequest {
   
-  @scala.inline
-  def apply(certificate_authorities: ByteBuffer, certificate_types: ByteBuffer): CertificateRequest = {
+  inline def apply(certificate_authorities: ByteBuffer, certificate_types: ByteBuffer): CertificateRequest = {
     val __obj = js.Dynamic.literal(certificate_authorities = certificate_authorities.asInstanceOf[js.Any], certificate_types = certificate_types.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificateRequest]
   }
   
-  @scala.inline
-  implicit class CertificateRequestMutableBuilder[Self <: CertificateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CertificateRequest](x: Self) {
     
-    @scala.inline
-    def setCertificate_authorities(value: ByteBuffer): Self = StObject.set(x, "certificate_authorities", value.asInstanceOf[js.Any])
+    inline def setCertificate_authorities(value: ByteBuffer): Self = StObject.set(x, "certificate_authorities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificate_types(value: ByteBuffer): Self = StObject.set(x, "certificate_types", value.asInstanceOf[js.Any])
+    inline def setCertificate_types(value: ByteBuffer): Self = StObject.set(x, "certificate_types", value.asInstanceOf[js.Any])
   }
 }

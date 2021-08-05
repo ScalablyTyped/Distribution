@@ -20,30 +20,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait uFrequency extends StObject
 object uFrequency {
   
-  @scala.inline
-  def GHz: typings.convertUnits.convertUnitsStrings.GHz = "GHz".asInstanceOf[typings.convertUnits.convertUnitsStrings.GHz]
+  inline def GHz: typings.convertUnits.convertUnitsStrings.GHz = "GHz".asInstanceOf[typings.convertUnits.convertUnitsStrings.GHz]
   
-  @scala.inline
-  def Hz: typings.convertUnits.convertUnitsStrings.Hz = "Hz".asInstanceOf[typings.convertUnits.convertUnitsStrings.Hz]
+  inline def Hz: typings.convertUnits.convertUnitsStrings.Hz = "Hz".asInstanceOf[typings.convertUnits.convertUnitsStrings.Hz]
   
-  @scala.inline
-  def MHz: typings.convertUnits.convertUnitsStrings.MHz = "MHz".asInstanceOf[typings.convertUnits.convertUnitsStrings.MHz]
+  inline def MHz: typings.convertUnits.convertUnitsStrings.MHz = "MHz".asInstanceOf[typings.convertUnits.convertUnitsStrings.MHz]
   
-  @scala.inline
-  def THz: typings.convertUnits.convertUnitsStrings.THz = "THz".asInstanceOf[typings.convertUnits.convertUnitsStrings.THz]
+  inline def THz: typings.convertUnits.convertUnitsStrings.THz = "THz".asInstanceOf[typings.convertUnits.convertUnitsStrings.THz]
   
-  @scala.inline
-  def degSlashs: typings.convertUnits.convertUnitsStrings.degSlashs = "deg/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.degSlashs]
+  inline def degSlashs: typings.convertUnits.convertUnitsStrings.degSlashs = "deg/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.degSlashs]
   
-  @scala.inline
-  def kHz: typings.convertUnits.convertUnitsStrings.kHz = "kHz".asInstanceOf[typings.convertUnits.convertUnitsStrings.kHz]
+  inline def kHz: typings.convertUnits.convertUnitsStrings.kHz = "kHz".asInstanceOf[typings.convertUnits.convertUnitsStrings.kHz]
   
-  @scala.inline
-  def mHz: mHz_ = "mHz".asInstanceOf[mHz_]
+  inline def mHz: mHz_ = "mHz".asInstanceOf[mHz_]
   
-  @scala.inline
-  def radSlashs: typings.convertUnits.convertUnitsStrings.radSlashs = "rad/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.radSlashs]
+  inline def radSlashs: typings.convertUnits.convertUnitsStrings.radSlashs = "rad/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.radSlashs]
   
-  @scala.inline
-  def rpm: typings.convertUnits.convertUnitsStrings.rpm = "rpm".asInstanceOf[typings.convertUnits.convertUnitsStrings.rpm]
+  inline def rpm: typings.convertUnits.convertUnitsStrings.rpm = "rpm".asInstanceOf[typings.convertUnits.convertUnitsStrings.rpm]
 }

@@ -19,23 +19,18 @@ trait CIMGeometricEffectBuffer
 }
 object CIMGeometricEffectBuffer {
   
-  @scala.inline
-  def apply(): CIMGeometricEffectBuffer = {
+  inline def apply(): CIMGeometricEffectBuffer = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMGeometricEffectBuffer")
     __obj.asInstanceOf[CIMGeometricEffectBuffer]
   }
   
-  @scala.inline
-  implicit class CIMGeometricEffectBufferMutableBuilder[Self <: CIMGeometricEffectBuffer] (val x: Self) extends AnyVal {
+  extension [Self <: CIMGeometricEffectBuffer](x: Self) {
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectBuffer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectBuffer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

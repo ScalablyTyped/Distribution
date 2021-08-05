@@ -19,26 +19,25 @@ object observableviewMod {
   class ObservableView[T] protected () extends ViewNode {
     def this(func: js.Function0[T], scope: js.Object, context: IContextInfoStruct, compareStructural: Boolean) = this()
     
-    var _value: T = js.native
+    /* protected */ var _value: T = js.native
     
-    var changeEvent: default = js.native
+    /* protected */ var changeEvent: default = js.native
     
-    var compareStructural: js.Any = js.native
+    /* private */ var compareStructural: js.Any = js.native
     
     /* protected */ def func(): T = js.native
     
     def get(): T = js.native
     
-    var isComputing: js.Any = js.native
+    /* private */ var isComputing: js.Any = js.native
     
     def observe(listener: js.Function2[/* newValue */ T, /* oldValue */ T, Unit]): Lambda = js.native
     def observe(listener: js.Function2[/* newValue */ T, /* oldValue */ T, Unit], fireImmediately: Boolean): Lambda = js.native
     
-    var scope: js.Any = js.native
+    /* private */ var scope: js.Any = js.native
     
     def set(x: js.Any): Unit = js.native
   }
   
-  @scala.inline
-  def throwingViewSetter(name: js.Any): Lambda = ^.asInstanceOf[js.Dynamic].applyDynamic("throwingViewSetter")(name.asInstanceOf[js.Any]).asInstanceOf[Lambda]
+  inline def throwingViewSetter(name: js.Any): Lambda = ^.asInstanceOf[js.Dynamic].applyDynamic("throwingViewSetter")(name.asInstanceOf[js.Any]).asInstanceOf[Lambda]
 }

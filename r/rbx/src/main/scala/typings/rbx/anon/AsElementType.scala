@@ -11,16 +11,13 @@ trait AsElementType extends StObject {
 }
 object AsElementType {
   
-  @scala.inline
-  def apply(as: ElementType[js.Any]): AsElementType = {
+  inline def apply(as: ElementType[js.Any]): AsElementType = {
     val __obj = js.Dynamic.literal(as = as.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsElementType]
   }
   
-  @scala.inline
-  implicit class AsElementTypeMutableBuilder[Self <: AsElementType] (val x: Self) extends AnyVal {
+  extension [Self <: AsElementType](x: Self) {
     
-    @scala.inline
-    def setAs(value: ElementType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def setAs(value: ElementType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
   }
 }

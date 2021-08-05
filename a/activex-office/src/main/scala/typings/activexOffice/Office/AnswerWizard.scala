@@ -16,7 +16,7 @@ trait AnswerWizard extends StObject {
   @JSName("Files")
   val Files_Original: AnswerWizardFiles
   
-  @JSName("Office.AnswerWizard_typekey")
+  /* private */ @JSName("Office.AnswerWizard_typekey")
   var OfficeDotAnswerWizard_typekey: AnswerWizard
   
   val Parent: js.Any
@@ -25,8 +25,7 @@ trait AnswerWizard extends StObject {
 }
 object AnswerWizard {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     ClearFileList: () => Unit,
     Creator: Double,
@@ -40,28 +39,20 @@ object AnswerWizard {
     __obj.asInstanceOf[AnswerWizard]
   }
   
-  @scala.inline
-  implicit class AnswerWizardMutableBuilder[Self <: AnswerWizard] (val x: Self) extends AnyVal {
+  extension [Self <: AnswerWizard](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearFileList(value: () => Unit): Self = StObject.set(x, "ClearFileList", js.Any.fromFunction0(value))
+    inline def setClearFileList(value: () => Unit): Self = StObject.set(x, "ClearFileList", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiles(value: AnswerWizardFiles): Self = StObject.set(x, "Files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: AnswerWizardFiles): Self = StObject.set(x, "Files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotAnswerWizard_typekey(value: AnswerWizard): Self = StObject.set(x, "Office.AnswerWizard_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotAnswerWizard_typekey(value: AnswerWizard): Self = StObject.set(x, "Office.AnswerWizard_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResetFileList(value: () => Unit): Self = StObject.set(x, "ResetFileList", js.Any.fromFunction0(value))
+    inline def setResetFileList(value: () => Unit): Self = StObject.set(x, "ResetFileList", js.Any.fromFunction0(value))
   }
 }

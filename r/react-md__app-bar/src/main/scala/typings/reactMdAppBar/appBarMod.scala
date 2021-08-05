@@ -25,20 +25,15 @@ object appBarMod {
   trait AppBarHeight extends StObject
   object AppBarHeight {
     
-    @scala.inline
-    def dense: typings.reactMdAppBar.reactMdAppBarStrings.dense = "dense".asInstanceOf[typings.reactMdAppBar.reactMdAppBarStrings.dense]
+    inline def dense: typings.reactMdAppBar.reactMdAppBarStrings.dense = "dense".asInstanceOf[typings.reactMdAppBar.reactMdAppBarStrings.dense]
     
-    @scala.inline
-    def none: typings.reactMdAppBar.reactMdAppBarStrings.none = "none".asInstanceOf[typings.reactMdAppBar.reactMdAppBarStrings.none]
+    inline def none: typings.reactMdAppBar.reactMdAppBarStrings.none = "none".asInstanceOf[typings.reactMdAppBar.reactMdAppBarStrings.none]
     
-    @scala.inline
-    def normal: typings.reactMdAppBar.reactMdAppBarStrings.normal = "normal".asInstanceOf[typings.reactMdAppBar.reactMdAppBarStrings.normal]
+    inline def normal: typings.reactMdAppBar.reactMdAppBarStrings.normal = "normal".asInstanceOf[typings.reactMdAppBar.reactMdAppBarStrings.normal]
     
-    @scala.inline
-    def prominent: typings.reactMdAppBar.reactMdAppBarStrings.prominent = "prominent".asInstanceOf[typings.reactMdAppBar.reactMdAppBarStrings.prominent]
+    inline def prominent: typings.reactMdAppBar.reactMdAppBarStrings.prominent = "prominent".asInstanceOf[typings.reactMdAppBar.reactMdAppBarStrings.prominent]
     
-    @scala.inline
-    def `prominent-dense`: typings.reactMdAppBar.reactMdAppBarStrings.`prominent-dense` = "prominent-dense".asInstanceOf[typings.reactMdAppBar.reactMdAppBarStrings.`prominent-dense`]
+    inline def `prominent-dense`: typings.reactMdAppBar.reactMdAppBarStrings.`prominent-dense` = "prominent-dense".asInstanceOf[typings.reactMdAppBar.reactMdAppBarStrings.`prominent-dense`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -48,11 +43,9 @@ object appBarMod {
   trait AppBarPosition extends StObject
   object AppBarPosition {
     
-    @scala.inline
-    def bottom: typings.reactMdAppBar.reactMdAppBarStrings.bottom = "bottom".asInstanceOf[typings.reactMdAppBar.reactMdAppBarStrings.bottom]
+    inline def bottom: typings.reactMdAppBar.reactMdAppBarStrings.bottom = "bottom".asInstanceOf[typings.reactMdAppBar.reactMdAppBarStrings.bottom]
     
-    @scala.inline
-    def top: typings.reactMdAppBar.reactMdAppBarStrings.top = "top".asInstanceOf[typings.reactMdAppBar.reactMdAppBarStrings.top]
+    inline def top: typings.reactMdAppBar.reactMdAppBarStrings.top = "top".asInstanceOf[typings.reactMdAppBar.reactMdAppBarStrings.top]
   }
   
   trait AppBarProps
@@ -117,62 +110,44 @@ object appBarMod {
   }
   object AppBarProps {
     
-    @scala.inline
-    def apply(): AppBarProps = {
+    inline def apply(): AppBarProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AppBarProps]
     }
     
-    @scala.inline
-    implicit class AppBarPropsMutableBuilder[Self <: AppBarProps] (val x: Self) extends AnyVal {
+    extension [Self <: AppBarProps](x: Self) {
       
-      @scala.inline
-      def setComponent(value: ElementType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ElementType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      @scala.inline
-      def setFixed(value: Boolean): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
+      inline def setFixed(value: Boolean): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixedElevation(value: Boolean): Self = StObject.set(x, "fixedElevation", value.asInstanceOf[js.Any])
+      inline def setFixedElevation(value: Boolean): Self = StObject.set(x, "fixedElevation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixedElevationUndefined: Self = StObject.set(x, "fixedElevation", js.undefined)
+      inline def setFixedElevationUndefined: Self = StObject.set(x, "fixedElevation", js.undefined)
       
-      @scala.inline
-      def setFixedPosition(value: AppBarPosition): Self = StObject.set(x, "fixedPosition", value.asInstanceOf[js.Any])
+      inline def setFixedPosition(value: AppBarPosition): Self = StObject.set(x, "fixedPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixedPositionUndefined: Self = StObject.set(x, "fixedPosition", js.undefined)
+      inline def setFixedPositionUndefined: Self = StObject.set(x, "fixedPosition", js.undefined)
       
-      @scala.inline
-      def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
+      inline def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
       
-      @scala.inline
-      def setFlexWrap(value: Boolean): Self = StObject.set(x, "flexWrap", value.asInstanceOf[js.Any])
+      inline def setFlexWrap(value: Boolean): Self = StObject.set(x, "flexWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexWrapUndefined: Self = StObject.set(x, "flexWrap", js.undefined)
+      inline def setFlexWrapUndefined: Self = StObject.set(x, "flexWrap", js.undefined)
       
-      @scala.inline
-      def setHeight(value: AppBarHeight): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: AppBarHeight): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setInheritColor(value: Boolean): Self = StObject.set(x, "inheritColor", value.asInstanceOf[js.Any])
+      inline def setInheritColor(value: Boolean): Self = StObject.set(x, "inheritColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInheritColorUndefined: Self = StObject.set(x, "inheritColor", js.undefined)
+      inline def setInheritColorUndefined: Self = StObject.set(x, "inheritColor", js.undefined)
       
-      @scala.inline
-      def setTheme(value: AppBarTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: AppBarTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -185,16 +160,12 @@ object appBarMod {
   trait AppBarTheme extends StObject
   object AppBarTheme {
     
-    @scala.inline
-    def default: typings.reactMdAppBar.reactMdAppBarStrings.default = "default".asInstanceOf[typings.reactMdAppBar.reactMdAppBarStrings.default]
+    inline def default: typings.reactMdAppBar.reactMdAppBarStrings.default = "default".asInstanceOf[typings.reactMdAppBar.reactMdAppBarStrings.default]
     
-    @scala.inline
-    def clear: typings.reactMdAppBar.reactMdAppBarStrings.clear = "clear".asInstanceOf[typings.reactMdAppBar.reactMdAppBarStrings.clear]
+    inline def clear: typings.reactMdAppBar.reactMdAppBarStrings.clear = "clear".asInstanceOf[typings.reactMdAppBar.reactMdAppBarStrings.clear]
     
-    @scala.inline
-    def primary: typings.reactMdAppBar.reactMdAppBarStrings.primary = "primary".asInstanceOf[typings.reactMdAppBar.reactMdAppBarStrings.primary]
+    inline def primary: typings.reactMdAppBar.reactMdAppBarStrings.primary = "primary".asInstanceOf[typings.reactMdAppBar.reactMdAppBarStrings.primary]
     
-    @scala.inline
-    def secondary: typings.reactMdAppBar.reactMdAppBarStrings.secondary = "secondary".asInstanceOf[typings.reactMdAppBar.reactMdAppBarStrings.secondary]
+    inline def secondary: typings.reactMdAppBar.reactMdAppBarStrings.secondary = "secondary".asInstanceOf[typings.reactMdAppBar.reactMdAppBarStrings.secondary]
   }
 }

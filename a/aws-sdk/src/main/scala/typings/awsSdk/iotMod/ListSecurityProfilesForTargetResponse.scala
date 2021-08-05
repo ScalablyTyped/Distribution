@@ -18,28 +18,21 @@ trait ListSecurityProfilesForTargetResponse extends StObject {
 }
 object ListSecurityProfilesForTargetResponse {
   
-  @scala.inline
-  def apply(): ListSecurityProfilesForTargetResponse = {
+  inline def apply(): ListSecurityProfilesForTargetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListSecurityProfilesForTargetResponse]
   }
   
-  @scala.inline
-  implicit class ListSecurityProfilesForTargetResponseMutableBuilder[Self <: ListSecurityProfilesForTargetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListSecurityProfilesForTargetResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setSecurityProfileTargetMappings(value: SecurityProfileTargetMappings): Self = StObject.set(x, "securityProfileTargetMappings", value.asInstanceOf[js.Any])
+    inline def setSecurityProfileTargetMappings(value: SecurityProfileTargetMappings): Self = StObject.set(x, "securityProfileTargetMappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityProfileTargetMappingsUndefined: Self = StObject.set(x, "securityProfileTargetMappings", js.undefined)
+    inline def setSecurityProfileTargetMappingsUndefined: Self = StObject.set(x, "securityProfileTargetMappings", js.undefined)
     
-    @scala.inline
-    def setSecurityProfileTargetMappingsVarargs(value: SecurityProfileTargetMapping*): Self = StObject.set(x, "securityProfileTargetMappings", js.Array(value :_*))
+    inline def setSecurityProfileTargetMappingsVarargs(value: SecurityProfileTargetMapping*): Self = StObject.set(x, "securityProfileTargetMappings", js.Array(value :_*))
   }
 }

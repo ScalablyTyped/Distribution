@@ -42,20 +42,16 @@ object kinesisMixinsMod {
   }
   object StreamEvent {
     
-    @scala.inline
-    def apply(Records: js.Array[StreamEventRecord]): StreamEvent = {
+    inline def apply(Records: js.Array[StreamEventRecord]): StreamEvent = {
       val __obj = js.Dynamic.literal(Records = Records.asInstanceOf[js.Any])
       __obj.asInstanceOf[StreamEvent]
     }
     
-    @scala.inline
-    implicit class StreamEventMutableBuilder[Self <: StreamEvent] (val x: Self) extends AnyVal {
+    extension [Self <: StreamEvent](x: Self) {
       
-      @scala.inline
-      def setRecords(value: js.Array[StreamEventRecord]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
+      inline def setRecords(value: js.Array[StreamEventRecord]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecordsVarargs(value: StreamEventRecord*): Self = StObject.set(x, "Records", js.Array(value :_*))
+      inline def setRecordsVarargs(value: StreamEventRecord*): Self = StObject.set(x, "Records", js.Array(value :_*))
     }
   }
   
@@ -81,8 +77,7 @@ object kinesisMixinsMod {
   }
   object StreamEventRecord {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       awsRegion: String,
       eventID: String,
       eventSourceARN: String,
@@ -94,32 +89,23 @@ object kinesisMixinsMod {
       __obj.asInstanceOf[StreamEventRecord]
     }
     
-    @scala.inline
-    implicit class StreamEventRecordMutableBuilder[Self <: StreamEventRecord] (val x: Self) extends AnyVal {
+    extension [Self <: StreamEventRecord](x: Self) {
       
-      @scala.inline
-      def setAwsRegion(value: String): Self = StObject.set(x, "awsRegion", value.asInstanceOf[js.Any])
+      inline def setAwsRegion(value: String): Self = StObject.set(x, "awsRegion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventID(value: String): Self = StObject.set(x, "eventID", value.asInstanceOf[js.Any])
+      inline def setEventID(value: String): Self = StObject.set(x, "eventID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventName(value: awsColonkinesisColonrecord): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
+      inline def setEventName(value: awsColonkinesisColonrecord): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventSource(value: awsColonkinesis): Self = StObject.set(x, "eventSource", value.asInstanceOf[js.Any])
+      inline def setEventSource(value: awsColonkinesis): Self = StObject.set(x, "eventSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventSourceARN(value: String): Self = StObject.set(x, "eventSourceARN", value.asInstanceOf[js.Any])
+      inline def setEventSourceARN(value: String): Self = StObject.set(x, "eventSourceARN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventVersion(value: String): Self = StObject.set(x, "eventVersion", value.asInstanceOf[js.Any])
+      inline def setEventVersion(value: String): Self = StObject.set(x, "eventVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvokeIdentityArn(value: String): Self = StObject.set(x, "invokeIdentityArn", value.asInstanceOf[js.Any])
+      inline def setInvokeIdentityArn(value: String): Self = StObject.set(x, "invokeIdentityArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKinesis(value: KinesisSchemaVersion): Self = StObject.set(x, "kinesis", value.asInstanceOf[js.Any])
+      inline def setKinesis(value: KinesisSchemaVersion): Self = StObject.set(x, "kinesis", value.asInstanceOf[js.Any])
     }
   }
   
@@ -181,65 +167,46 @@ object kinesisMixinsMod {
   }
   object StreamEventSubscriptionArgs {
     
-    @scala.inline
-    def apply(startingPosition: TRIM_HORIZON | LATEST | AT_TIMESTAMP): StreamEventSubscriptionArgs = {
+    inline def apply(startingPosition: TRIM_HORIZON | LATEST | AT_TIMESTAMP): StreamEventSubscriptionArgs = {
       val __obj = js.Dynamic.literal(startingPosition = startingPosition.asInstanceOf[js.Any])
       __obj.asInstanceOf[StreamEventSubscriptionArgs]
     }
     
-    @scala.inline
-    implicit class StreamEventSubscriptionArgsMutableBuilder[Self <: StreamEventSubscriptionArgs] (val x: Self) extends AnyVal {
+    extension [Self <: StreamEventSubscriptionArgs](x: Self) {
       
-      @scala.inline
-      def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
+      inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
+      inline def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
       
-      @scala.inline
-      def setBisectBatchOnFunctionError(value: Boolean): Self = StObject.set(x, "bisectBatchOnFunctionError", value.asInstanceOf[js.Any])
+      inline def setBisectBatchOnFunctionError(value: Boolean): Self = StObject.set(x, "bisectBatchOnFunctionError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBisectBatchOnFunctionErrorUndefined: Self = StObject.set(x, "bisectBatchOnFunctionError", js.undefined)
+      inline def setBisectBatchOnFunctionErrorUndefined: Self = StObject.set(x, "bisectBatchOnFunctionError", js.undefined)
       
-      @scala.inline
-      def setDestinationConfig(value: Input[EventSourceMappingDestinationConfig]): Self = StObject.set(x, "destinationConfig", value.asInstanceOf[js.Any])
+      inline def setDestinationConfig(value: Input[EventSourceMappingDestinationConfig]): Self = StObject.set(x, "destinationConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationConfigUndefined: Self = StObject.set(x, "destinationConfig", js.undefined)
+      inline def setDestinationConfigUndefined: Self = StObject.set(x, "destinationConfig", js.undefined)
       
-      @scala.inline
-      def setMaximumBatchingWindowInSeconds(value: Double): Self = StObject.set(x, "maximumBatchingWindowInSeconds", value.asInstanceOf[js.Any])
+      inline def setMaximumBatchingWindowInSeconds(value: Double): Self = StObject.set(x, "maximumBatchingWindowInSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumBatchingWindowInSecondsUndefined: Self = StObject.set(x, "maximumBatchingWindowInSeconds", js.undefined)
+      inline def setMaximumBatchingWindowInSecondsUndefined: Self = StObject.set(x, "maximumBatchingWindowInSeconds", js.undefined)
       
-      @scala.inline
-      def setMaximumRecordAgeInSeconds(value: Double): Self = StObject.set(x, "maximumRecordAgeInSeconds", value.asInstanceOf[js.Any])
+      inline def setMaximumRecordAgeInSeconds(value: Double): Self = StObject.set(x, "maximumRecordAgeInSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumRecordAgeInSecondsUndefined: Self = StObject.set(x, "maximumRecordAgeInSeconds", js.undefined)
+      inline def setMaximumRecordAgeInSecondsUndefined: Self = StObject.set(x, "maximumRecordAgeInSeconds", js.undefined)
       
-      @scala.inline
-      def setMaximumRetryAttempts(value: Double): Self = StObject.set(x, "maximumRetryAttempts", value.asInstanceOf[js.Any])
+      inline def setMaximumRetryAttempts(value: Double): Self = StObject.set(x, "maximumRetryAttempts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumRetryAttemptsUndefined: Self = StObject.set(x, "maximumRetryAttempts", js.undefined)
+      inline def setMaximumRetryAttemptsUndefined: Self = StObject.set(x, "maximumRetryAttempts", js.undefined)
       
-      @scala.inline
-      def setParallelizationFactor(value: Double): Self = StObject.set(x, "parallelizationFactor", value.asInstanceOf[js.Any])
+      inline def setParallelizationFactor(value: Double): Self = StObject.set(x, "parallelizationFactor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParallelizationFactorUndefined: Self = StObject.set(x, "parallelizationFactor", js.undefined)
+      inline def setParallelizationFactorUndefined: Self = StObject.set(x, "parallelizationFactor", js.undefined)
       
-      @scala.inline
-      def setStartingPosition(value: TRIM_HORIZON | LATEST | AT_TIMESTAMP): Self = StObject.set(x, "startingPosition", value.asInstanceOf[js.Any])
+      inline def setStartingPosition(value: TRIM_HORIZON | LATEST | AT_TIMESTAMP): Self = StObject.set(x, "startingPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartingPositionTimestamp(value: String): Self = StObject.set(x, "startingPositionTimestamp", value.asInstanceOf[js.Any])
+      inline def setStartingPositionTimestamp(value: String): Self = StObject.set(x, "startingPositionTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartingPositionTimestampUndefined: Self = StObject.set(x, "startingPositionTimestamp", js.undefined)
+      inline def setStartingPositionTimestampUndefined: Self = StObject.set(x, "startingPositionTimestamp", js.undefined)
     }
   }
   

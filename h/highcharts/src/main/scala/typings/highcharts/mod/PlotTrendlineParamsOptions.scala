@@ -15,19 +15,15 @@ trait PlotTrendlineParamsOptions extends StObject {
 }
 object PlotTrendlineParamsOptions {
   
-  @scala.inline
-  def apply(): PlotTrendlineParamsOptions = {
+  inline def apply(): PlotTrendlineParamsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotTrendlineParamsOptions]
   }
   
-  @scala.inline
-  implicit class PlotTrendlineParamsOptionsMutableBuilder[Self <: PlotTrendlineParamsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotTrendlineParamsOptions](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double | String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double | String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
   }
 }

@@ -112,6 +112,6 @@ trait MailingLabel extends StObject {
   
   var Vertical: Boolean = js.native
   
-  @JSName("Word.MailingLabel_typekey")
+  /* private */ @JSName("Word.MailingLabel_typekey")
   var WordDotMailingLabel_typekey: MailingLabel = js.native
 }

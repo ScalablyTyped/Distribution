@@ -30,13 +30,12 @@ trait OLEControl extends StObject {
   
   var Width: Double
   
-  @JSName("Word.OLEControl_typekey")
+  /* private */ @JSName("Word.OLEControl_typekey")
   var WordDotOLEControl_typekey: OLEControl
 }
 object OLEControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Activate: () => Unit,
     AltHTML: String,
     Automation: js.Any,
@@ -56,46 +55,32 @@ object OLEControl {
     __obj.asInstanceOf[OLEControl]
   }
   
-  @scala.inline
-  implicit class OLEControlMutableBuilder[Self <: OLEControl] (val x: Self) extends AnyVal {
+  extension [Self <: OLEControl](x: Self) {
     
-    @scala.inline
-    def setActivate(value: () => Unit): Self = StObject.set(x, "Activate", js.Any.fromFunction0(value))
+    inline def setActivate(value: () => Unit): Self = StObject.set(x, "Activate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAltHTML(value: String): Self = StObject.set(x, "AltHTML", value.asInstanceOf[js.Any])
+    inline def setAltHTML(value: String): Self = StObject.set(x, "AltHTML", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutomation(value: js.Any): Self = StObject.set(x, "Automation", value.asInstanceOf[js.Any])
+    inline def setAutomation(value: js.Any): Self = StObject.set(x, "Automation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopy(value: () => Unit): Self = StObject.set(x, "Copy", js.Any.fromFunction0(value))
+    inline def setCopy(value: () => Unit): Self = StObject.set(x, "Copy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCut(value: () => Unit): Self = StObject.set(x, "Cut", js.Any.fromFunction0(value))
+    inline def setCut(value: () => Unit): Self = StObject.set(x, "Cut", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft(value: Double): Self = StObject.set(x, "Left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Double): Self = StObject.set(x, "Left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelect(value: () => Unit): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
+    inline def setSelect(value: () => Unit): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "Top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "Top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotOLEControl_typekey(value: OLEControl): Self = StObject.set(x, "Word.OLEControl_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotOLEControl_typekey(value: OLEControl): Self = StObject.set(x, "Word.OLEControl_typekey", value.asInstanceOf[js.Any])
   }
 }

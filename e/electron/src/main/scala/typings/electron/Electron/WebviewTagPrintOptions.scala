@@ -90,112 +90,77 @@ trait WebviewTagPrintOptions extends StObject {
 }
 object WebviewTagPrintOptions {
   
-  @scala.inline
-  def apply(): WebviewTagPrintOptions = {
+  inline def apply(): WebviewTagPrintOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebviewTagPrintOptions]
   }
   
-  @scala.inline
-  implicit class WebviewTagPrintOptionsMutableBuilder[Self <: WebviewTagPrintOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WebviewTagPrintOptions](x: Self) {
     
-    @scala.inline
-    def setCollate(value: Boolean): Self = StObject.set(x, "collate", value.asInstanceOf[js.Any])
+    inline def setCollate(value: Boolean): Self = StObject.set(x, "collate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollateUndefined: Self = StObject.set(x, "collate", js.undefined)
+    inline def setCollateUndefined: Self = StObject.set(x, "collate", js.undefined)
     
-    @scala.inline
-    def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setCopies(value: Double): Self = StObject.set(x, "copies", value.asInstanceOf[js.Any])
+    inline def setCopies(value: Double): Self = StObject.set(x, "copies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopiesUndefined: Self = StObject.set(x, "copies", js.undefined)
+    inline def setCopiesUndefined: Self = StObject.set(x, "copies", js.undefined)
     
-    @scala.inline
-    def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
+    inline def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceNameUndefined: Self = StObject.set(x, "deviceName", js.undefined)
+    inline def setDeviceNameUndefined: Self = StObject.set(x, "deviceName", js.undefined)
     
-    @scala.inline
-    def setDpi(value: Record[String, Double]): Self = StObject.set(x, "dpi", value.asInstanceOf[js.Any])
+    inline def setDpi(value: Record[String, Double]): Self = StObject.set(x, "dpi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDpiUndefined: Self = StObject.set(x, "dpi", js.undefined)
+    inline def setDpiUndefined: Self = StObject.set(x, "dpi", js.undefined)
     
-    @scala.inline
-    def setDuplexMode(value: simplex | shortEdge | longEdge): Self = StObject.set(x, "duplexMode", value.asInstanceOf[js.Any])
+    inline def setDuplexMode(value: simplex | shortEdge | longEdge): Self = StObject.set(x, "duplexMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuplexModeUndefined: Self = StObject.set(x, "duplexMode", js.undefined)
+    inline def setDuplexModeUndefined: Self = StObject.set(x, "duplexMode", js.undefined)
     
-    @scala.inline
-    def setFooter(value: String): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+    inline def setFooter(value: String): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+    inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
     
-    @scala.inline
-    def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    @scala.inline
-    def setLandscape(value: Boolean): Self = StObject.set(x, "landscape", value.asInstanceOf[js.Any])
+    inline def setLandscape(value: Boolean): Self = StObject.set(x, "landscape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLandscapeUndefined: Self = StObject.set(x, "landscape", js.undefined)
+    inline def setLandscapeUndefined: Self = StObject.set(x, "landscape", js.undefined)
     
-    @scala.inline
-    def setMargins(value: Margins): Self = StObject.set(x, "margins", value.asInstanceOf[js.Any])
+    inline def setMargins(value: Margins): Self = StObject.set(x, "margins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginsUndefined: Self = StObject.set(x, "margins", js.undefined)
+    inline def setMarginsUndefined: Self = StObject.set(x, "margins", js.undefined)
     
-    @scala.inline
-    def setPageRanges(value: js.Array[PageRanges]): Self = StObject.set(x, "pageRanges", value.asInstanceOf[js.Any])
+    inline def setPageRanges(value: js.Array[PageRanges]): Self = StObject.set(x, "pageRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageRangesUndefined: Self = StObject.set(x, "pageRanges", js.undefined)
+    inline def setPageRangesUndefined: Self = StObject.set(x, "pageRanges", js.undefined)
     
-    @scala.inline
-    def setPageRangesVarargs(value: PageRanges*): Self = StObject.set(x, "pageRanges", js.Array(value :_*))
+    inline def setPageRangesVarargs(value: PageRanges*): Self = StObject.set(x, "pageRanges", js.Array(value :_*))
     
-    @scala.inline
-    def setPageSize(value: String | Size): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: String | Size): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
-    @scala.inline
-    def setPagesPerSheet(value: Double): Self = StObject.set(x, "pagesPerSheet", value.asInstanceOf[js.Any])
+    inline def setPagesPerSheet(value: Double): Self = StObject.set(x, "pagesPerSheet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagesPerSheetUndefined: Self = StObject.set(x, "pagesPerSheet", js.undefined)
+    inline def setPagesPerSheetUndefined: Self = StObject.set(x, "pagesPerSheet", js.undefined)
     
-    @scala.inline
-    def setPrintBackground(value: Boolean): Self = StObject.set(x, "printBackground", value.asInstanceOf[js.Any])
+    inline def setPrintBackground(value: Boolean): Self = StObject.set(x, "printBackground", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintBackgroundUndefined: Self = StObject.set(x, "printBackground", js.undefined)
+    inline def setPrintBackgroundUndefined: Self = StObject.set(x, "printBackground", js.undefined)
     
-    @scala.inline
-    def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
+    inline def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleFactorUndefined: Self = StObject.set(x, "scaleFactor", js.undefined)
+    inline def setScaleFactorUndefined: Self = StObject.set(x, "scaleFactor", js.undefined)
     
-    @scala.inline
-    def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+    inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+    inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
   }
 }

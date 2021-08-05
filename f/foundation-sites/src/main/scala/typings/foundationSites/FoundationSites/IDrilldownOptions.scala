@@ -16,37 +16,27 @@ trait IDrilldownOptions extends StObject {
 }
 object IDrilldownOptions {
   
-  @scala.inline
-  def apply(): IDrilldownOptions = {
+  inline def apply(): IDrilldownOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDrilldownOptions]
   }
   
-  @scala.inline
-  implicit class IDrilldownOptionsMutableBuilder[Self <: IDrilldownOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IDrilldownOptions](x: Self) {
     
-    @scala.inline
-    def setBackButton(value: String): Self = StObject.set(x, "backButton", value.asInstanceOf[js.Any])
+    inline def setBackButton(value: String): Self = StObject.set(x, "backButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackButtonUndefined: Self = StObject.set(x, "backButton", js.undefined)
+    inline def setBackButtonUndefined: Self = StObject.set(x, "backButton", js.undefined)
     
-    @scala.inline
-    def setCloseOnClick(value: Boolean): Self = StObject.set(x, "closeOnClick", value.asInstanceOf[js.Any])
+    inline def setCloseOnClick(value: Boolean): Self = StObject.set(x, "closeOnClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseOnClickUndefined: Self = StObject.set(x, "closeOnClick", js.undefined)
+    inline def setCloseOnClickUndefined: Self = StObject.set(x, "closeOnClick", js.undefined)
     
-    @scala.inline
-    def setParentLink(value: Boolean): Self = StObject.set(x, "parentLink", value.asInstanceOf[js.Any])
+    inline def setParentLink(value: Boolean): Self = StObject.set(x, "parentLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentLinkUndefined: Self = StObject.set(x, "parentLink", js.undefined)
+    inline def setParentLinkUndefined: Self = StObject.set(x, "parentLink", js.undefined)
     
-    @scala.inline
-    def setWrapper(value: String): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+    inline def setWrapper(value: String): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
+    inline def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
   }
 }

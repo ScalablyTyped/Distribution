@@ -21,13 +21,13 @@ object disposableMod {
     /**
       * Extension point for disposable objects.
       */
-    /* CompleteClass */
-    /* protected */ override def disposeInternal(): Unit = js.native
+    /* protected */ /* CompleteClass */
+    override def disposeInternal(): Unit = js.native
     
     /**
       * The object has already been disposed.
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var disposed: Boolean = js.native
   }
   
@@ -46,27 +46,22 @@ object disposableMod {
     /**
       * The object has already been disposed.
       */
-    var disposed: Boolean
+    /* protected */ var disposed: Boolean
   }
   object Disposable {
     
-    @scala.inline
-    def apply(dispose: () => Unit, disposeInternal: () => Unit, disposed: Boolean): Disposable = {
+    inline def apply(dispose: () => Unit, disposeInternal: () => Unit, disposed: Boolean): Disposable = {
       val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), disposeInternal = js.Any.fromFunction0(disposeInternal), disposed = disposed.asInstanceOf[js.Any])
       __obj.asInstanceOf[Disposable]
     }
     
-    @scala.inline
-    implicit class DisposableMutableBuilder[Self <: Disposable] (val x: Self) extends AnyVal {
+    extension [Self <: Disposable](x: Self) {
       
-      @scala.inline
-      def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDisposeInternal(value: () => Unit): Self = StObject.set(x, "disposeInternal", js.Any.fromFunction0(value))
+      inline def setDisposeInternal(value: () => Unit): Self = StObject.set(x, "disposeInternal", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDisposed(value: Boolean): Self = StObject.set(x, "disposed", value.asInstanceOf[js.Any])
+      inline def setDisposed(value: Boolean): Self = StObject.set(x, "disposed", value.asInstanceOf[js.Any])
     }
   }
 }

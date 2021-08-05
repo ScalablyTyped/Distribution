@@ -10,16 +10,13 @@ trait RadioButtonsItemProps extends StObject {
 }
 object RadioButtonsItemProps {
   
-  @scala.inline
-  def apply(children: String): RadioButtonsItemProps = {
+  inline def apply(children: String): RadioButtonsItemProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.asInstanceOf[RadioButtonsItemProps]
   }
   
-  @scala.inline
-  implicit class RadioButtonsItemPropsMutableBuilder[Self <: RadioButtonsItemProps] (val x: Self) extends AnyVal {
+  extension [Self <: RadioButtonsItemProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
   }
 }

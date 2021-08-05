@@ -15,22 +15,17 @@ trait WorkspaceCollection extends StObject {
 }
 object WorkspaceCollection {
   
-  @scala.inline
-  def apply(pagination: Pagination, workspaces: js.Array[Workspace]): WorkspaceCollection = {
+  inline def apply(pagination: Pagination, workspaces: js.Array[Workspace]): WorkspaceCollection = {
     val __obj = js.Dynamic.literal(pagination = pagination.asInstanceOf[js.Any], workspaces = workspaces.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkspaceCollection]
   }
   
-  @scala.inline
-  implicit class WorkspaceCollectionMutableBuilder[Self <: WorkspaceCollection] (val x: Self) extends AnyVal {
+  extension [Self <: WorkspaceCollection](x: Self) {
     
-    @scala.inline
-    def setPagination(value: Pagination): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
+    inline def setPagination(value: Pagination): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspaces(value: js.Array[Workspace]): Self = StObject.set(x, "workspaces", value.asInstanceOf[js.Any])
+    inline def setWorkspaces(value: js.Array[Workspace]): Self = StObject.set(x, "workspaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspacesVarargs(value: Workspace*): Self = StObject.set(x, "workspaces", js.Array(value :_*))
+    inline def setWorkspacesVarargs(value: Workspace*): Self = StObject.set(x, "workspaces", js.Array(value :_*))
   }
 }

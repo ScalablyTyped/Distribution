@@ -28,34 +28,25 @@ trait UpdateCampaignRequest extends StObject {
 }
 object UpdateCampaignRequest {
   
-  @scala.inline
-  def apply(campaignArn: Arn): UpdateCampaignRequest = {
+  inline def apply(campaignArn: Arn): UpdateCampaignRequest = {
     val __obj = js.Dynamic.literal(campaignArn = campaignArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateCampaignRequest]
   }
   
-  @scala.inline
-  implicit class UpdateCampaignRequestMutableBuilder[Self <: UpdateCampaignRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateCampaignRequest](x: Self) {
     
-    @scala.inline
-    def setCampaignArn(value: Arn): Self = StObject.set(x, "campaignArn", value.asInstanceOf[js.Any])
+    inline def setCampaignArn(value: Arn): Self = StObject.set(x, "campaignArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCampaignConfig(value: CampaignConfig): Self = StObject.set(x, "campaignConfig", value.asInstanceOf[js.Any])
+    inline def setCampaignConfig(value: CampaignConfig): Self = StObject.set(x, "campaignConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCampaignConfigUndefined: Self = StObject.set(x, "campaignConfig", js.undefined)
+    inline def setCampaignConfigUndefined: Self = StObject.set(x, "campaignConfig", js.undefined)
     
-    @scala.inline
-    def setMinProvisionedTPS(value: TransactionsPerSecond): Self = StObject.set(x, "minProvisionedTPS", value.asInstanceOf[js.Any])
+    inline def setMinProvisionedTPS(value: TransactionsPerSecond): Self = StObject.set(x, "minProvisionedTPS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinProvisionedTPSUndefined: Self = StObject.set(x, "minProvisionedTPS", js.undefined)
+    inline def setMinProvisionedTPSUndefined: Self = StObject.set(x, "minProvisionedTPS", js.undefined)
     
-    @scala.inline
-    def setSolutionVersionArn(value: Arn): Self = StObject.set(x, "solutionVersionArn", value.asInstanceOf[js.Any])
+    inline def setSolutionVersionArn(value: Arn): Self = StObject.set(x, "solutionVersionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSolutionVersionArnUndefined: Self = StObject.set(x, "solutionVersionArn", js.undefined)
+    inline def setSolutionVersionArnUndefined: Self = StObject.set(x, "solutionVersionArn", js.undefined)
   }
 }

@@ -19,8 +19,7 @@ trait TimingAnimationConfig
 }
 object TimingAnimationConfig {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     toValue: Double | AnimatedValue | X | AnimatedValueXY | AnimatedInterpolation,
     useNativeDriver: Boolean
   ): TimingAnimationConfig = {
@@ -28,28 +27,20 @@ object TimingAnimationConfig {
     __obj.asInstanceOf[TimingAnimationConfig]
   }
   
-  @scala.inline
-  implicit class TimingAnimationConfigMutableBuilder[Self <: TimingAnimationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: TimingAnimationConfig](x: Self) {
     
-    @scala.inline
-    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setEasing(value: /* value */ Double => Double): Self = StObject.set(x, "easing", js.Any.fromFunction1(value))
+    inline def setEasing(value: /* value */ Double => Double): Self = StObject.set(x, "easing", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+    inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
     
-    @scala.inline
-    def setToValue(value: Double | AnimatedValue | X | AnimatedValueXY | AnimatedInterpolation): Self = StObject.set(x, "toValue", value.asInstanceOf[js.Any])
+    inline def setToValue(value: Double | AnimatedValue | X | AnimatedValueXY | AnimatedInterpolation): Self = StObject.set(x, "toValue", value.asInstanceOf[js.Any])
   }
 }

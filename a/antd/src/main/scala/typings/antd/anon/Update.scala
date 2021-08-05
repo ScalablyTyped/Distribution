@@ -13,19 +13,15 @@ trait Update extends StObject {
 }
 object Update {
   
-  @scala.inline
-  def apply(destroy: /* repeated */ js.Any => Unit, update: ConfigUpdate => Unit): Update = {
+  inline def apply(destroy: /* repeated */ js.Any => Unit, update: ConfigUpdate => Unit): Update = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction1(destroy), update = js.Any.fromFunction1(update))
     __obj.asInstanceOf[Update]
   }
   
-  @scala.inline
-  implicit class UpdateMutableBuilder[Self <: Update] (val x: Self) extends AnyVal {
+  extension [Self <: Update](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
+    inline def setDestroy(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdate(value: ConfigUpdate => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+    inline def setUpdate(value: ConfigUpdate => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
   }
 }

@@ -58,9 +58,9 @@ object ohandlerMod {
     def get(): this.type = js.native
     def get(resource: String): this.type = js.native
     
-    var getBody: js.Any = js.native
+    /* private */ var getBody: js.Any = js.native
     
-    var getFetch: js.Any = js.native
+    /* private */ var getFetch: js.Any = js.native
     
     /**
       * Returns a URL based on the rootURL + the given resource
@@ -149,7 +149,7 @@ object ohandlerMod {
       */
     def request(req: ORequest): Unit = js.native
     
-    var requests: js.Any = js.native
+    /* private */ var requests: js.Any = js.native
   }
   
   type BodyType = Blob | BufferSource | FormData | URLSearchParams | String | js.Object

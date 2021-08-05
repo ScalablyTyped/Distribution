@@ -20,22 +20,17 @@ trait RaphaelFont extends StObject {
 }
 object RaphaelFont {
   
-  @scala.inline
-  def apply(face: PartialRaphaelFontFace, glyphs: Record[String, PartialRaphaelFontGlyph], w: Double): RaphaelFont = {
+  inline def apply(face: PartialRaphaelFontFace, glyphs: Record[String, PartialRaphaelFontGlyph], w: Double): RaphaelFont = {
     val __obj = js.Dynamic.literal(face = face.asInstanceOf[js.Any], glyphs = glyphs.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any])
     __obj.asInstanceOf[RaphaelFont]
   }
   
-  @scala.inline
-  implicit class RaphaelFontMutableBuilder[Self <: RaphaelFont] (val x: Self) extends AnyVal {
+  extension [Self <: RaphaelFont](x: Self) {
     
-    @scala.inline
-    def setFace(value: PartialRaphaelFontFace): Self = StObject.set(x, "face", value.asInstanceOf[js.Any])
+    inline def setFace(value: PartialRaphaelFontFace): Self = StObject.set(x, "face", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlyphs(value: Record[String, PartialRaphaelFontGlyph]): Self = StObject.set(x, "glyphs", value.asInstanceOf[js.Any])
+    inline def setGlyphs(value: Record[String, PartialRaphaelFontGlyph]): Self = StObject.set(x, "glyphs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+    inline def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
   }
 }

@@ -8,6 +8,5 @@ object webpackAssetsManifestStrings {
   
   @js.native
   sealed trait customize extends StObject
-  @scala.inline
-  def customize: customize = "customize".asInstanceOf[customize]
+  inline def customize: customize = "customize".asInstanceOf[customize]
 }

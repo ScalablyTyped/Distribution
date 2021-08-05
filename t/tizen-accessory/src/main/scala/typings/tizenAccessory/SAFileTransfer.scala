@@ -24,8 +24,7 @@ trait SAFileTransfer extends StObject {
 }
 object SAFileTransfer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cancelFile: String => Unit,
     defaultReceivePath: String,
     receiveFile: (String, String) => Unit,
@@ -38,28 +37,20 @@ object SAFileTransfer {
     __obj.asInstanceOf[SAFileTransfer]
   }
   
-  @scala.inline
-  implicit class SAFileTransferMutableBuilder[Self <: SAFileTransfer] (val x: Self) extends AnyVal {
+  extension [Self <: SAFileTransfer](x: Self) {
     
-    @scala.inline
-    def setCancelFile(value: String => Unit): Self = StObject.set(x, "cancelFile", js.Any.fromFunction1(value))
+    inline def setCancelFile(value: String => Unit): Self = StObject.set(x, "cancelFile", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDefaultReceivePath(value: String): Self = StObject.set(x, "defaultReceivePath", value.asInstanceOf[js.Any])
+    inline def setDefaultReceivePath(value: String): Self = StObject.set(x, "defaultReceivePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceiveFile(value: (String, String) => Unit): Self = StObject.set(x, "receiveFile", js.Any.fromFunction2(value))
+    inline def setReceiveFile(value: (String, String) => Unit): Self = StObject.set(x, "receiveFile", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRejectFile(value: String => Unit): Self = StObject.set(x, "rejectFile", js.Any.fromFunction1(value))
+    inline def setRejectFile(value: String => Unit): Self = StObject.set(x, "rejectFile", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSendFile(value: (SAPeerAgent, String) => Double): Self = StObject.set(x, "sendFile", js.Any.fromFunction2(value))
+    inline def setSendFile(value: (SAPeerAgent, String) => Double): Self = StObject.set(x, "sendFile", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetFileReceiveListener(value: Onprogress => Unit): Self = StObject.set(x, "setFileReceiveListener", js.Any.fromFunction1(value))
+    inline def setSetFileReceiveListener(value: Onprogress => Unit): Self = StObject.set(x, "setFileReceiveListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFileSendListener(value: Oncomplete => Unit): Self = StObject.set(x, "setFileSendListener", js.Any.fromFunction1(value))
+    inline def setSetFileSendListener(value: Oncomplete => Unit): Self = StObject.set(x, "setFileSendListener", js.Any.fromFunction1(value))
   }
 }

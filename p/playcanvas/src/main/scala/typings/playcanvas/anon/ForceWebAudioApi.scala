@@ -10,19 +10,15 @@ trait ForceWebAudioApi extends StObject {
 }
 object ForceWebAudioApi {
   
-  @scala.inline
-  def apply(): ForceWebAudioApi = {
+  inline def apply(): ForceWebAudioApi = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ForceWebAudioApi]
   }
   
-  @scala.inline
-  implicit class ForceWebAudioApiMutableBuilder[Self <: ForceWebAudioApi] (val x: Self) extends AnyVal {
+  extension [Self <: ForceWebAudioApi](x: Self) {
     
-    @scala.inline
-    def setForceWebAudioApi(value: Boolean): Self = StObject.set(x, "forceWebAudioApi", value.asInstanceOf[js.Any])
+    inline def setForceWebAudioApi(value: Boolean): Self = StObject.set(x, "forceWebAudioApi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceWebAudioApiUndefined: Self = StObject.set(x, "forceWebAudioApi", js.undefined)
+    inline def setForceWebAudioApiUndefined: Self = StObject.set(x, "forceWebAudioApi", js.undefined)
   }
 }

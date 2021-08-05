@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "zeit__next-source-maps"
-version := "0.0-dt-20200925Z-4d0efd"
+version := "0.0-dt-20200925Z-9c23e1"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

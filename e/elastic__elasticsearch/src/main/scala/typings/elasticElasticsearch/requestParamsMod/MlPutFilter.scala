@@ -14,19 +14,15 @@ trait MlPutFilter[T]
 }
 object MlPutFilter {
   
-  @scala.inline
-  def apply[T](body: T, filter_id: String): MlPutFilter[T] = {
+  inline def apply[T](body: T, filter_id: String): MlPutFilter[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], filter_id = filter_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[MlPutFilter[T]]
   }
   
-  @scala.inline
-  implicit class MlPutFilterMutableBuilder[Self <: MlPutFilter[?], T] (val x: Self & MlPutFilter[T]) extends AnyVal {
+  extension [Self <: MlPutFilter[?], T](x: Self & MlPutFilter[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilter_id(value: String): Self = StObject.set(x, "filter_id", value.asInstanceOf[js.Any])
+    inline def setFilter_id(value: String): Self = StObject.set(x, "filter_id", value.asInstanceOf[js.Any])
   }
 }

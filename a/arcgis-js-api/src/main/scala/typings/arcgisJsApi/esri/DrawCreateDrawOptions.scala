@@ -22,8 +22,7 @@ trait DrawCreateDrawOptions
 }
 object DrawCreateDrawOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -32,13 +31,10 @@ object DrawCreateDrawOptions {
     __obj.asInstanceOf[DrawCreateDrawOptions]
   }
   
-  @scala.inline
-  implicit class DrawCreateDrawOptionsMutableBuilder[Self <: DrawCreateDrawOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DrawCreateDrawOptions](x: Self) {
     
-    @scala.inline
-    def setMode(value: hybrid | freehand | click): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: hybrid | freehand | click): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

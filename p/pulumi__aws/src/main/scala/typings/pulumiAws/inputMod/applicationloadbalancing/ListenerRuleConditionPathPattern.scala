@@ -14,19 +14,15 @@ trait ListenerRuleConditionPathPattern extends StObject {
 }
 object ListenerRuleConditionPathPattern {
   
-  @scala.inline
-  def apply(values: Input[js.Array[Input[String]]]): ListenerRuleConditionPathPattern = {
+  inline def apply(values: Input[js.Array[Input[String]]]): ListenerRuleConditionPathPattern = {
     val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListenerRuleConditionPathPattern]
   }
   
-  @scala.inline
-  implicit class ListenerRuleConditionPathPatternMutableBuilder[Self <: ListenerRuleConditionPathPattern] (val x: Self) extends AnyVal {
+  extension [Self <: ListenerRuleConditionPathPattern](x: Self) {
     
-    @scala.inline
-    def setValues(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: Input[String]*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Input[String]*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

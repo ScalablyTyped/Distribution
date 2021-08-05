@@ -14,6 +14,5 @@ object signatureMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createSignature(context: Context, node: SignatureDeclaration, name: String, kind: ReflectionKind): SignatureReflection = (^.asInstanceOf[js.Dynamic].applyDynamic("createSignature")(context.asInstanceOf[js.Any], node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[SignatureReflection]
+  inline def createSignature(context: Context, node: SignatureDeclaration, name: String, kind: ReflectionKind): SignatureReflection = (^.asInstanceOf[js.Dynamic].applyDynamic("createSignature")(context.asInstanceOf[js.Any], node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[SignatureReflection]
 }

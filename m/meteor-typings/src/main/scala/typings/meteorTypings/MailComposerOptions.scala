@@ -18,8 +18,7 @@ trait MailComposerOptions extends StObject {
 }
 object MailComposerOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     charset: String,
     encoding: String,
     escapeSMTP: Boolean,
@@ -30,22 +29,16 @@ object MailComposerOptions {
     __obj.asInstanceOf[MailComposerOptions]
   }
   
-  @scala.inline
-  implicit class MailComposerOptionsMutableBuilder[Self <: MailComposerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MailComposerOptions](x: Self) {
     
-    @scala.inline
-    def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
+    inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEscapeSMTP(value: Boolean): Self = StObject.set(x, "escapeSMTP", value.asInstanceOf[js.Any])
+    inline def setEscapeSMTP(value: Boolean): Self = StObject.set(x, "escapeSMTP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceEmbeddedImages(value: Boolean): Self = StObject.set(x, "forceEmbeddedImages", value.asInstanceOf[js.Any])
+    inline def setForceEmbeddedImages(value: Boolean): Self = StObject.set(x, "forceEmbeddedImages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepBcc(value: Boolean): Self = StObject.set(x, "keepBcc", value.asInstanceOf[js.Any])
+    inline def setKeepBcc(value: Boolean): Self = StObject.set(x, "keepBcc", value.asInstanceOf[js.Any])
   }
 }

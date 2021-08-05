@@ -115,21 +115,16 @@ object analyticsApplicationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): AnalyticsApplication = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[AnalyticsApplication]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): AnalyticsApplication = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AnalyticsApplication]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AnalyticsApplicationState): AnalyticsApplication = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AnalyticsApplication]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AnalyticsApplicationState, opts: CustomResourceOptions): AnalyticsApplication = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AnalyticsApplication]
+    inline def get(name: String, id: Input[ID]): AnalyticsApplication = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[AnalyticsApplication]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): AnalyticsApplication = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AnalyticsApplication]
+    inline def get(name: String, id: Input[ID], state: AnalyticsApplicationState): AnalyticsApplication = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AnalyticsApplication]
+    inline def get(name: String, id: Input[ID], state: AnalyticsApplicationState, opts: CustomResourceOptions): AnalyticsApplication = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AnalyticsApplication]
     
     /**
       * Returns true if the given object is an instance of AnalyticsApplication.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kinesis/analyticsApplication.AnalyticsApplication */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/kinesis/analyticsApplication.AnalyticsApplication */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kinesis/analyticsApplication.AnalyticsApplication */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/kinesis/analyticsApplication.AnalyticsApplication */ Boolean]
   }
   
   trait AnalyticsApplicationArgs extends StObject {
@@ -184,65 +179,46 @@ object analyticsApplicationMod {
   }
   object AnalyticsApplicationArgs {
     
-    @scala.inline
-    def apply(): AnalyticsApplicationArgs = {
+    inline def apply(): AnalyticsApplicationArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AnalyticsApplicationArgs]
     }
     
-    @scala.inline
-    implicit class AnalyticsApplicationArgsMutableBuilder[Self <: AnalyticsApplicationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: AnalyticsApplicationArgs](x: Self) {
       
-      @scala.inline
-      def setCloudwatchLoggingOptions(value: Input[typings.pulumiAws.inputMod.kinesis.AnalyticsApplicationCloudwatchLoggingOptions]): Self = StObject.set(x, "cloudwatchLoggingOptions", value.asInstanceOf[js.Any])
+      inline def setCloudwatchLoggingOptions(value: Input[typings.pulumiAws.inputMod.kinesis.AnalyticsApplicationCloudwatchLoggingOptions]): Self = StObject.set(x, "cloudwatchLoggingOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudwatchLoggingOptionsUndefined: Self = StObject.set(x, "cloudwatchLoggingOptions", js.undefined)
+      inline def setCloudwatchLoggingOptionsUndefined: Self = StObject.set(x, "cloudwatchLoggingOptions", js.undefined)
       
-      @scala.inline
-      def setCode(value: Input[String]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Input[String]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setInputs(value: Input[typings.pulumiAws.inputMod.kinesis.AnalyticsApplicationInputs]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+      inline def setInputs(value: Input[typings.pulumiAws.inputMod.kinesis.AnalyticsApplicationInputs]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
+      inline def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOutputs(value: Input[js.Array[Input[typings.pulumiAws.inputMod.kinesis.AnalyticsApplicationOutput]]]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
+      inline def setOutputs(value: Input[js.Array[Input[typings.pulumiAws.inputMod.kinesis.AnalyticsApplicationOutput]]]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
+      inline def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
       
-      @scala.inline
-      def setOutputsVarargs(value: Input[typings.pulumiAws.inputMod.kinesis.AnalyticsApplicationOutput]*): Self = StObject.set(x, "outputs", js.Array(value :_*))
+      inline def setOutputsVarargs(value: Input[typings.pulumiAws.inputMod.kinesis.AnalyticsApplicationOutput]*): Self = StObject.set(x, "outputs", js.Array(value :_*))
       
-      @scala.inline
-      def setReferenceDataSources(value: Input[typings.pulumiAws.inputMod.kinesis.AnalyticsApplicationReferenceDataSources]): Self = StObject.set(x, "referenceDataSources", value.asInstanceOf[js.Any])
+      inline def setReferenceDataSources(value: Input[typings.pulumiAws.inputMod.kinesis.AnalyticsApplicationReferenceDataSources]): Self = StObject.set(x, "referenceDataSources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferenceDataSourcesUndefined: Self = StObject.set(x, "referenceDataSources", js.undefined)
+      inline def setReferenceDataSourcesUndefined: Self = StObject.set(x, "referenceDataSources", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -323,95 +299,66 @@ object analyticsApplicationMod {
   }
   object AnalyticsApplicationState {
     
-    @scala.inline
-    def apply(): AnalyticsApplicationState = {
+    inline def apply(): AnalyticsApplicationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AnalyticsApplicationState]
     }
     
-    @scala.inline
-    implicit class AnalyticsApplicationStateMutableBuilder[Self <: AnalyticsApplicationState] (val x: Self) extends AnyVal {
+    extension [Self <: AnalyticsApplicationState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[ARN]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[ARN]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setCloudwatchLoggingOptions(value: Input[typings.pulumiAws.inputMod.kinesis.AnalyticsApplicationCloudwatchLoggingOptions]): Self = StObject.set(x, "cloudwatchLoggingOptions", value.asInstanceOf[js.Any])
+      inline def setCloudwatchLoggingOptions(value: Input[typings.pulumiAws.inputMod.kinesis.AnalyticsApplicationCloudwatchLoggingOptions]): Self = StObject.set(x, "cloudwatchLoggingOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudwatchLoggingOptionsUndefined: Self = StObject.set(x, "cloudwatchLoggingOptions", js.undefined)
+      inline def setCloudwatchLoggingOptionsUndefined: Self = StObject.set(x, "cloudwatchLoggingOptions", js.undefined)
       
-      @scala.inline
-      def setCode(value: Input[String]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Input[String]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
-      @scala.inline
-      def setCreateTimestamp(value: Input[String]): Self = StObject.set(x, "createTimestamp", value.asInstanceOf[js.Any])
+      inline def setCreateTimestamp(value: Input[String]): Self = StObject.set(x, "createTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateTimestampUndefined: Self = StObject.set(x, "createTimestamp", js.undefined)
+      inline def setCreateTimestampUndefined: Self = StObject.set(x, "createTimestamp", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setInputs(value: Input[typings.pulumiAws.inputMod.kinesis.AnalyticsApplicationInputs]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+      inline def setInputs(value: Input[typings.pulumiAws.inputMod.kinesis.AnalyticsApplicationInputs]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
+      inline def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
       
-      @scala.inline
-      def setLastUpdateTimestamp(value: Input[String]): Self = StObject.set(x, "lastUpdateTimestamp", value.asInstanceOf[js.Any])
+      inline def setLastUpdateTimestamp(value: Input[String]): Self = StObject.set(x, "lastUpdateTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastUpdateTimestampUndefined: Self = StObject.set(x, "lastUpdateTimestamp", js.undefined)
+      inline def setLastUpdateTimestampUndefined: Self = StObject.set(x, "lastUpdateTimestamp", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOutputs(value: Input[js.Array[Input[typings.pulumiAws.inputMod.kinesis.AnalyticsApplicationOutput]]]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
+      inline def setOutputs(value: Input[js.Array[Input[typings.pulumiAws.inputMod.kinesis.AnalyticsApplicationOutput]]]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
+      inline def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
       
-      @scala.inline
-      def setOutputsVarargs(value: Input[typings.pulumiAws.inputMod.kinesis.AnalyticsApplicationOutput]*): Self = StObject.set(x, "outputs", js.Array(value :_*))
+      inline def setOutputsVarargs(value: Input[typings.pulumiAws.inputMod.kinesis.AnalyticsApplicationOutput]*): Self = StObject.set(x, "outputs", js.Array(value :_*))
       
-      @scala.inline
-      def setReferenceDataSources(value: Input[typings.pulumiAws.inputMod.kinesis.AnalyticsApplicationReferenceDataSources]): Self = StObject.set(x, "referenceDataSources", value.asInstanceOf[js.Any])
+      inline def setReferenceDataSources(value: Input[typings.pulumiAws.inputMod.kinesis.AnalyticsApplicationReferenceDataSources]): Self = StObject.set(x, "referenceDataSources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferenceDataSourcesUndefined: Self = StObject.set(x, "referenceDataSources", js.undefined)
+      inline def setReferenceDataSourcesUndefined: Self = StObject.set(x, "referenceDataSources", js.undefined)
       
-      @scala.inline
-      def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVersion(value: Input[Double]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Input[Double]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
 }

@@ -15,19 +15,15 @@ trait IRequestCallbackError extends StObject {
 }
 object IRequestCallbackError {
   
-  @scala.inline
-  def apply(body: String, number: Double): IRequestCallbackError = {
+  inline def apply(body: String, number: Double): IRequestCallbackError = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRequestCallbackError]
   }
   
-  @scala.inline
-  implicit class IRequestCallbackErrorMutableBuilder[Self <: IRequestCallbackError] (val x: Self) extends AnyVal {
+  extension [Self <: IRequestCallbackError](x: Self) {
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
   }
 }

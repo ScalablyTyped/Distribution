@@ -20,26 +20,20 @@ trait Probability extends StObject {
 }
 object Probability {
   
-  @scala.inline
-  def apply(location: Height, name: Double, probability: Double, `type`: Double): Probability = {
+  inline def apply(location: Height, name: Double, probability: Double, `type`: Double): Probability = {
     val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], probability = probability.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Probability]
   }
   
-  @scala.inline
-  implicit class ProbabilityMutableBuilder[Self <: Probability] (val x: Self) extends AnyVal {
+  extension [Self <: Probability](x: Self) {
     
-    @scala.inline
-    def setLocation(value: Height): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Height): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: Double): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Double): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProbability(value: Double): Self = StObject.set(x, "probability", value.asInstanceOf[js.Any])
+    inline def setProbability(value: Double): Self = StObject.set(x, "probability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

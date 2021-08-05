@@ -13,19 +13,15 @@ trait Size extends StObject {
 }
 object Size {
   
-  @scala.inline
-  def apply(encoding: typings.vegaLite.encodingMod.Encoding[String], size: LayoutSizeMixins): Size = {
+  inline def apply(encoding: typings.vegaLite.encodingMod.Encoding[String], size: LayoutSizeMixins): Size = {
     val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[Size]
   }
   
-  @scala.inline
-  implicit class SizeMutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
+  extension [Self <: Size](x: Self) {
     
-    @scala.inline
-    def setEncoding(value: typings.vegaLite.encodingMod.Encoding[String]): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: typings.vegaLite.encodingMod.Encoding[String]): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: LayoutSizeMixins): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: LayoutSizeMixins): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

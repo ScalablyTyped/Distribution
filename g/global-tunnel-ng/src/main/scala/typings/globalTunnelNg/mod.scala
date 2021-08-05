@@ -16,15 +16,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def end(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("end")().asInstanceOf[Unit]
+  inline def end(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("end")().asInstanceOf[Unit]
   
-  @scala.inline
-  def initialize(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")().asInstanceOf[Unit]
-  @scala.inline
-  def initialize(options: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def initialize(options: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def initialize(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")().asInstanceOf[Unit]
+  inline def initialize(options: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def initialize(options: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("global-tunnel-ng", "isProxying")
   @js.native
@@ -58,56 +54,40 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(host: String, port: Double): Options = {
+    inline def apply(host: String, port: Double): Options = {
       val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setConnect(value: neither | https | both): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
+      inline def setConnect(value: neither | https | both): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectUndefined: Self = StObject.set(x, "connect", js.undefined)
+      inline def setConnectUndefined: Self = StObject.set(x, "connect", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginHttpsOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "originHttpsOptions", value.asInstanceOf[js.Any])
+      inline def setOriginHttpsOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "originHttpsOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginHttpsOptionsUndefined: Self = StObject.set(x, "originHttpsOptions", js.undefined)
+      inline def setOriginHttpsOptionsUndefined: Self = StObject.set(x, "originHttpsOptions", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocol(value: httpColon | httpsColon): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: httpColon | httpsColon): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+      inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
       
-      @scala.inline
-      def setProxyAuth(value: String): Self = StObject.set(x, "proxyAuth", value.asInstanceOf[js.Any])
+      inline def setProxyAuth(value: String): Self = StObject.set(x, "proxyAuth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyAuthUndefined: Self = StObject.set(x, "proxyAuth", js.undefined)
+      inline def setProxyAuthUndefined: Self = StObject.set(x, "proxyAuth", js.undefined)
       
-      @scala.inline
-      def setProxyHttpsOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "proxyHttpsOptions", value.asInstanceOf[js.Any])
+      inline def setProxyHttpsOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "proxyHttpsOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyHttpsOptionsUndefined: Self = StObject.set(x, "proxyHttpsOptions", js.undefined)
+      inline def setProxyHttpsOptionsUndefined: Self = StObject.set(x, "proxyHttpsOptions", js.undefined)
       
-      @scala.inline
-      def setSockets(value: Double): Self = StObject.set(x, "sockets", value.asInstanceOf[js.Any])
+      inline def setSockets(value: Double): Self = StObject.set(x, "sockets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocketsUndefined: Self = StObject.set(x, "sockets", js.undefined)
+      inline def setSocketsUndefined: Self = StObject.set(x, "sockets", js.undefined)
     }
   }
 }

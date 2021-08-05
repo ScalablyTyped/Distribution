@@ -95,50 +95,42 @@ object mod {
     @JSImport("react-foundation", "Alignments.BOTTOM")
     @js.native
     def BOTTOM: VerticalAlignments = js.native
-    @scala.inline
-    def BOTTOM_=(x: VerticalAlignments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BOTTOM")(x.asInstanceOf[js.Any])
+    inline def BOTTOM_=(x: VerticalAlignments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BOTTOM")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation", "Alignments.CENTER")
     @js.native
     def CENTER: MenuAlignments = js.native
-    @scala.inline
-    def CENTER_=(x: MenuAlignments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CENTER")(x.asInstanceOf[js.Any])
+    inline def CENTER_=(x: MenuAlignments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CENTER")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation", "Alignments.JUSTIFY")
     @js.native
     def JUSTIFY: HorizontalAlignments = js.native
-    @scala.inline
-    def JUSTIFY_=(x: HorizontalAlignments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JUSTIFY")(x.asInstanceOf[js.Any])
+    inline def JUSTIFY_=(x: HorizontalAlignments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JUSTIFY")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation", "Alignments.MIDDLE")
     @js.native
     def MIDDLE: VerticalAlignments = js.native
-    @scala.inline
-    def MIDDLE_=(x: VerticalAlignments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIDDLE")(x.asInstanceOf[js.Any])
+    inline def MIDDLE_=(x: VerticalAlignments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIDDLE")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation", "Alignments.RIGHT")
     @js.native
     def RIGHT: MenuAlignments = js.native
-    @scala.inline
-    def RIGHT_=(x: MenuAlignments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RIGHT")(x.asInstanceOf[js.Any])
+    inline def RIGHT_=(x: MenuAlignments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RIGHT")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation", "Alignments.SPACED")
     @js.native
     def SPACED: HorizontalAlignments = js.native
-    @scala.inline
-    def SPACED_=(x: HorizontalAlignments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SPACED")(x.asInstanceOf[js.Any])
+    inline def SPACED_=(x: HorizontalAlignments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SPACED")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation", "Alignments.STRETCH")
     @js.native
     def STRETCH: VerticalAlignments = js.native
-    @scala.inline
-    def STRETCH_=(x: VerticalAlignments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STRETCH")(x.asInstanceOf[js.Any])
+    inline def STRETCH_=(x: VerticalAlignments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STRETCH")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation", "Alignments.TOP")
     @js.native
     def TOP: VerticalAlignments = js.native
-    @scala.inline
-    def TOP_=(x: VerticalAlignments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOP")(x.asInstanceOf[js.Any])
+    inline def TOP_=(x: VerticalAlignments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOP")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-foundation", "Badge")
@@ -166,32 +158,27 @@ object mod {
     @JSImport("react-foundation", "Breakpoints.LARGE")
     @js.native
     def LARGE: typings.reactFoundation.enumsMod.Breakpoints = js.native
-    @scala.inline
-    def LARGE_=(x: typings.reactFoundation.enumsMod.Breakpoints): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LARGE")(x.asInstanceOf[js.Any])
+    inline def LARGE_=(x: typings.reactFoundation.enumsMod.Breakpoints): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LARGE")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation", "Breakpoints.MEDIUM")
     @js.native
     def MEDIUM: typings.reactFoundation.enumsMod.Breakpoints = js.native
-    @scala.inline
-    def MEDIUM_=(x: typings.reactFoundation.enumsMod.Breakpoints): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MEDIUM")(x.asInstanceOf[js.Any])
+    inline def MEDIUM_=(x: typings.reactFoundation.enumsMod.Breakpoints): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MEDIUM")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation", "Breakpoints.SMALL")
     @js.native
     def SMALL: typings.reactFoundation.enumsMod.Breakpoints = js.native
-    @scala.inline
-    def SMALL_=(x: typings.reactFoundation.enumsMod.Breakpoints): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SMALL")(x.asInstanceOf[js.Any])
+    inline def SMALL_=(x: typings.reactFoundation.enumsMod.Breakpoints): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SMALL")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation", "Breakpoints.XLARGE")
     @js.native
     def XLARGE: typings.reactFoundation.enumsMod.Breakpoints = js.native
-    @scala.inline
-    def XLARGE_=(x: typings.reactFoundation.enumsMod.Breakpoints): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XLARGE")(x.asInstanceOf[js.Any])
+    inline def XLARGE_=(x: typings.reactFoundation.enumsMod.Breakpoints): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XLARGE")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation", "Breakpoints.XXLARGE")
     @js.native
     def XXLARGE: typings.reactFoundation.enumsMod.Breakpoints = js.native
-    @scala.inline
-    def XXLARGE_=(x: typings.reactFoundation.enumsMod.Breakpoints): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XXLARGE")(x.asInstanceOf[js.Any])
+    inline def XXLARGE_=(x: typings.reactFoundation.enumsMod.Breakpoints): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XXLARGE")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-foundation", "Button")
@@ -223,38 +210,32 @@ object mod {
     @JSImport("react-foundation", "Colors.ALERT")
     @js.native
     def ALERT: ProgressColors = js.native
-    @scala.inline
-    def ALERT_=(x: ProgressColors): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALERT")(x.asInstanceOf[js.Any])
+    inline def ALERT_=(x: ProgressColors): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALERT")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation", "Colors.INFO")
     @js.native
     def INFO: BadgeColors = js.native
-    @scala.inline
-    def INFO_=(x: BadgeColors): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INFO")(x.asInstanceOf[js.Any])
+    inline def INFO_=(x: BadgeColors): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INFO")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation", "Colors.PRIMARY")
     @js.native
     def PRIMARY: ButtonColors = js.native
-    @scala.inline
-    def PRIMARY_=(x: ButtonColors): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRIMARY")(x.asInstanceOf[js.Any])
+    inline def PRIMARY_=(x: ButtonColors): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRIMARY")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation", "Colors.SECONDARY")
     @js.native
     def SECONDARY: ProgressColors = js.native
-    @scala.inline
-    def SECONDARY_=(x: ProgressColors): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SECONDARY")(x.asInstanceOf[js.Any])
+    inline def SECONDARY_=(x: ProgressColors): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SECONDARY")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation", "Colors.SUCCESS")
     @js.native
     def SUCCESS: ProgressColors = js.native
-    @scala.inline
-    def SUCCESS_=(x: ProgressColors): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUCCESS")(x.asInstanceOf[js.Any])
+    inline def SUCCESS_=(x: ProgressColors): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUCCESS")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation", "Colors.WARNING")
     @js.native
     def WARNING: ProgressColors = js.native
-    @scala.inline
-    def WARNING_=(x: ProgressColors): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WARNING")(x.asInstanceOf[js.Any])
+    inline def WARNING_=(x: ProgressColors): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WARNING")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-foundation", "Column")
@@ -270,38 +251,32 @@ object mod {
     @JSImport("react-foundation", "ExtendedBreakpoints.ALL")
     @js.native
     def ALL: typings.reactFoundation.enumsMod.ExtendedBreakpoints = js.native
-    @scala.inline
-    def ALL_=(x: typings.reactFoundation.enumsMod.ExtendedBreakpoints): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALL")(x.asInstanceOf[js.Any])
+    inline def ALL_=(x: typings.reactFoundation.enumsMod.ExtendedBreakpoints): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALL")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation", "ExtendedBreakpoints.LARGE")
     @js.native
     def LARGE: typings.reactFoundation.enumsMod.ExtendedBreakpoints = js.native
-    @scala.inline
-    def LARGE_=(x: typings.reactFoundation.enumsMod.ExtendedBreakpoints): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LARGE")(x.asInstanceOf[js.Any])
+    inline def LARGE_=(x: typings.reactFoundation.enumsMod.ExtendedBreakpoints): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LARGE")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation", "ExtendedBreakpoints.MEDIUM")
     @js.native
     def MEDIUM: typings.reactFoundation.enumsMod.ExtendedBreakpoints = js.native
-    @scala.inline
-    def MEDIUM_=(x: typings.reactFoundation.enumsMod.ExtendedBreakpoints): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MEDIUM")(x.asInstanceOf[js.Any])
+    inline def MEDIUM_=(x: typings.reactFoundation.enumsMod.ExtendedBreakpoints): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MEDIUM")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation", "ExtendedBreakpoints.SMALL")
     @js.native
     def SMALL: typings.reactFoundation.enumsMod.ExtendedBreakpoints = js.native
-    @scala.inline
-    def SMALL_=(x: typings.reactFoundation.enumsMod.ExtendedBreakpoints): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SMALL")(x.asInstanceOf[js.Any])
+    inline def SMALL_=(x: typings.reactFoundation.enumsMod.ExtendedBreakpoints): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SMALL")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation", "ExtendedBreakpoints.XLARGE")
     @js.native
     def XLARGE: typings.reactFoundation.enumsMod.ExtendedBreakpoints = js.native
-    @scala.inline
-    def XLARGE_=(x: typings.reactFoundation.enumsMod.ExtendedBreakpoints): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XLARGE")(x.asInstanceOf[js.Any])
+    inline def XLARGE_=(x: typings.reactFoundation.enumsMod.ExtendedBreakpoints): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XLARGE")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation", "ExtendedBreakpoints.XXLARGE")
     @js.native
     def XXLARGE: typings.reactFoundation.enumsMod.ExtendedBreakpoints = js.native
-    @scala.inline
-    def XXLARGE_=(x: typings.reactFoundation.enumsMod.ExtendedBreakpoints): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XXLARGE")(x.asInstanceOf[js.Any])
+    inline def XXLARGE_=(x: typings.reactFoundation.enumsMod.ExtendedBreakpoints): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XXLARGE")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-foundation", "FlexVideo")
@@ -317,20 +292,17 @@ object mod {
     @JSImport("react-foundation", "FloatTypes.CENTER")
     @js.native
     def CENTER: typings.reactFoundation.enumsMod.FloatTypes = js.native
-    @scala.inline
-    def CENTER_=(x: typings.reactFoundation.enumsMod.FloatTypes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CENTER")(x.asInstanceOf[js.Any])
+    inline def CENTER_=(x: typings.reactFoundation.enumsMod.FloatTypes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CENTER")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation", "FloatTypes.LEFT")
     @js.native
     def LEFT: typings.reactFoundation.enumsMod.FloatTypes = js.native
-    @scala.inline
-    def LEFT_=(x: typings.reactFoundation.enumsMod.FloatTypes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEFT")(x.asInstanceOf[js.Any])
+    inline def LEFT_=(x: typings.reactFoundation.enumsMod.FloatTypes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEFT")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation", "FloatTypes.RIGHT")
     @js.native
     def RIGHT: typings.reactFoundation.enumsMod.FloatTypes = js.native
-    @scala.inline
-    def RIGHT_=(x: typings.reactFoundation.enumsMod.FloatTypes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RIGHT")(x.asInstanceOf[js.Any])
+    inline def RIGHT_=(x: typings.reactFoundation.enumsMod.FloatTypes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RIGHT")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-foundation", "Grid")
@@ -350,14 +322,12 @@ object mod {
     @JSImport("react-foundation", "GutterTypes.MARGIN")
     @js.native
     def MARGIN: typings.reactFoundation.enumsMod.GutterTypes = js.native
-    @scala.inline
-    def MARGIN_=(x: typings.reactFoundation.enumsMod.GutterTypes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MARGIN")(x.asInstanceOf[js.Any])
+    inline def MARGIN_=(x: typings.reactFoundation.enumsMod.GutterTypes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MARGIN")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation", "GutterTypes.PADDING")
     @js.native
     def PADDING: typings.reactFoundation.enumsMod.GutterTypes = js.native
-    @scala.inline
-    def PADDING_=(x: typings.reactFoundation.enumsMod.GutterTypes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PADDING")(x.asInstanceOf[js.Any])
+    inline def PADDING_=(x: typings.reactFoundation.enumsMod.GutterTypes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PADDING")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-foundation", "Icon")
@@ -377,14 +347,12 @@ object mod {
     @JSImport("react-foundation", "InputTypes.CHECKBOX")
     @js.native
     def CHECKBOX: SwitchInputTypes = js.native
-    @scala.inline
-    def CHECKBOX_=(x: SwitchInputTypes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CHECKBOX")(x.asInstanceOf[js.Any])
+    inline def CHECKBOX_=(x: SwitchInputTypes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CHECKBOX")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation", "InputTypes.RADIO")
     @js.native
     def RADIO: SwitchInputTypes = js.native
-    @scala.inline
-    def RADIO_=(x: SwitchInputTypes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RADIO")(x.asInstanceOf[js.Any])
+    inline def RADIO_=(x: SwitchInputTypes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RADIO")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-foundation", "Label")
@@ -415,8 +383,7 @@ object mod {
   @js.native
   val MenuItem: StatelessComponent[MenuItemProps] = js.native
   
-  @scala.inline
-  def MenuText(props: MenuItemProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuText")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def MenuText(props: MenuItemProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuText")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("react-foundation", "NativeProgress")
   @js.native
@@ -472,14 +439,12 @@ object mod {
     @JSImport("react-foundation", "ResponsiveNavigation.defaultProps")
     @js.native
     def defaultProps: Breakpoint = js.native
-    @scala.inline
-    def defaultProps_=(x: Breakpoint): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Breakpoint): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation", "ResponsiveNavigation.propTypes")
     @js.native
     def propTypes: AlignX = js.native
-    @scala.inline
-    def propTypes_=(x: AlignX): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: AlignX): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-foundation", "Reveal")
@@ -499,20 +464,17 @@ object mod {
     @JSImport("react-foundation", "Sizes.LARGE")
     @js.native
     def LARGE: ButtonSizes = js.native
-    @scala.inline
-    def LARGE_=(x: ButtonSizes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LARGE")(x.asInstanceOf[js.Any])
+    inline def LARGE_=(x: ButtonSizes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LARGE")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation", "Sizes.SMALL")
     @js.native
     def SMALL: ButtonSizes = js.native
-    @scala.inline
-    def SMALL_=(x: ButtonSizes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SMALL")(x.asInstanceOf[js.Any])
+    inline def SMALL_=(x: ButtonSizes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SMALL")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation", "Sizes.TINY")
     @js.native
     def TINY: ButtonSizes = js.native
-    @scala.inline
-    def TINY_=(x: ButtonSizes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TINY")(x.asInstanceOf[js.Any])
+    inline def TINY_=(x: ButtonSizes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TINY")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-foundation", "Slider")
@@ -537,20 +499,17 @@ object mod {
     @JSImport("react-foundation", "SpaceControls.AUTO")
     @js.native
     def AUTO: typings.reactFoundation.enumsMod.SpaceControls = js.native
-    @scala.inline
-    def AUTO_=(x: typings.reactFoundation.enumsMod.SpaceControls): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AUTO")(x.asInstanceOf[js.Any])
+    inline def AUTO_=(x: typings.reactFoundation.enumsMod.SpaceControls): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AUTO")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation", "SpaceControls.GROW")
     @js.native
     def GROW: typings.reactFoundation.enumsMod.SpaceControls = js.native
-    @scala.inline
-    def GROW_=(x: typings.reactFoundation.enumsMod.SpaceControls): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GROW")(x.asInstanceOf[js.Any])
+    inline def GROW_=(x: typings.reactFoundation.enumsMod.SpaceControls): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GROW")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation", "SpaceControls.SHRINK")
     @js.native
     def SHRINK: typings.reactFoundation.enumsMod.SpaceControls = js.native
-    @scala.inline
-    def SHRINK_=(x: typings.reactFoundation.enumsMod.SpaceControls): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHRINK")(x.asInstanceOf[js.Any])
+    inline def SHRINK_=(x: typings.reactFoundation.enumsMod.SpaceControls): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHRINK")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-foundation", "Switch")

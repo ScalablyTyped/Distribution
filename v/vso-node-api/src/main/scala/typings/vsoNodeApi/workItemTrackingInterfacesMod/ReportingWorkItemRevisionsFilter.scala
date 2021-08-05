@@ -38,8 +38,7 @@ trait ReportingWorkItemRevisionsFilter extends StObject {
 }
 object ReportingWorkItemRevisionsFilter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fields: js.Array[String],
     includeDeleted: Boolean,
     includeIdentityRef: Boolean,
@@ -51,31 +50,22 @@ object ReportingWorkItemRevisionsFilter {
     __obj.asInstanceOf[ReportingWorkItemRevisionsFilter]
   }
   
-  @scala.inline
-  implicit class ReportingWorkItemRevisionsFilterMutableBuilder[Self <: ReportingWorkItemRevisionsFilter] (val x: Self) extends AnyVal {
+  extension [Self <: ReportingWorkItemRevisionsFilter](x: Self) {
     
-    @scala.inline
-    def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludeDeleted(value: Boolean): Self = StObject.set(x, "includeDeleted", value.asInstanceOf[js.Any])
+    inline def setIncludeDeleted(value: Boolean): Self = StObject.set(x, "includeDeleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeIdentityRef(value: Boolean): Self = StObject.set(x, "includeIdentityRef", value.asInstanceOf[js.Any])
+    inline def setIncludeIdentityRef(value: Boolean): Self = StObject.set(x, "includeIdentityRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeLatestOnly(value: Boolean): Self = StObject.set(x, "includeLatestOnly", value.asInstanceOf[js.Any])
+    inline def setIncludeLatestOnly(value: Boolean): Self = StObject.set(x, "includeLatestOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeTagRef(value: Boolean): Self = StObject.set(x, "includeTagRef", value.asInstanceOf[js.Any])
+    inline def setIncludeTagRef(value: Boolean): Self = StObject.set(x, "includeTagRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

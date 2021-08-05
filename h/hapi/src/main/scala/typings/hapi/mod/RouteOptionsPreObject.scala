@@ -33,36 +33,28 @@ trait RouteOptionsPreObject extends StObject {
 }
 object RouteOptionsPreObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     method: (/* request */ Request, /* h */ ResponseToolkit, /* err */ js.UndefOr[Error]) => ReturnValue
   ): RouteOptionsPreObject = {
     val __obj = js.Dynamic.literal(method = js.Any.fromFunction3(method))
     __obj.asInstanceOf[RouteOptionsPreObject]
   }
   
-  @scala.inline
-  implicit class RouteOptionsPreObjectMutableBuilder[Self <: RouteOptionsPreObject] (val x: Self) extends AnyVal {
+  extension [Self <: RouteOptionsPreObject](x: Self) {
     
-    @scala.inline
-    def setAssign(value: String): Self = StObject.set(x, "assign", value.asInstanceOf[js.Any])
+    inline def setAssign(value: String): Self = StObject.set(x, "assign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignUndefined: Self = StObject.set(x, "assign", js.undefined)
+    inline def setAssignUndefined: Self = StObject.set(x, "assign", js.undefined)
     
-    @scala.inline
-    def setFailAction(value: FailAction): Self = StObject.set(x, "failAction", value.asInstanceOf[js.Any])
+    inline def setFailAction(value: FailAction): Self = StObject.set(x, "failAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailActionFunction3(
+    inline def setFailActionFunction3(
       value: (/* request */ Request, /* h */ ResponseToolkit, /* err */ js.UndefOr[Error]) => ReturnValue
     ): Self = StObject.set(x, "failAction", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setFailActionUndefined: Self = StObject.set(x, "failAction", js.undefined)
+    inline def setFailActionUndefined: Self = StObject.set(x, "failAction", js.undefined)
     
-    @scala.inline
-    def setMethod(
+    inline def setMethod(
       value: (/* request */ Request, /* h */ ResponseToolkit, /* err */ js.UndefOr[Error]) => ReturnValue
     ): Self = StObject.set(x, "method", js.Any.fromFunction3(value))
   }

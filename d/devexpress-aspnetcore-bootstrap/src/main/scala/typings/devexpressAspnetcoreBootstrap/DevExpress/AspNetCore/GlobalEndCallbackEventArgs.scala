@@ -12,16 +12,13 @@ trait GlobalEndCallbackEventArgs
 }
 object GlobalEndCallbackEventArgs {
   
-  @scala.inline
-  def apply(control: Control, sender: Control): GlobalEndCallbackEventArgs = {
+  inline def apply(control: Control, sender: Control): GlobalEndCallbackEventArgs = {
     val __obj = js.Dynamic.literal(control = control.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalEndCallbackEventArgs]
   }
   
-  @scala.inline
-  implicit class GlobalEndCallbackEventArgsMutableBuilder[Self <: GlobalEndCallbackEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalEndCallbackEventArgs](x: Self) {
     
-    @scala.inline
-    def setControl(value: Control): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
+    inline def setControl(value: Control): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
   }
 }

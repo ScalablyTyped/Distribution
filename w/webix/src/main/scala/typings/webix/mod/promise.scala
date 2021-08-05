@@ -30,6 +30,5 @@ trait promise
 }
 object promise {
   
-  @scala.inline
-  def apply: typings.webix.webix.promise = ^.asInstanceOf[js.Dynamic].selectDynamic("promise").asInstanceOf[typings.webix.webix.promise]
+  inline def apply: typings.webix.webix.promise = ^.asInstanceOf[js.Dynamic].selectDynamic("promise").asInstanceOf[typings.webix.webix.promise]
 }

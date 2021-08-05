@@ -18,19 +18,15 @@ trait GetMLTaskRunRequest extends StObject {
 }
 object GetMLTaskRunRequest {
   
-  @scala.inline
-  def apply(TaskRunId: HashString, TransformId: HashString): GetMLTaskRunRequest = {
+  inline def apply(TaskRunId: HashString, TransformId: HashString): GetMLTaskRunRequest = {
     val __obj = js.Dynamic.literal(TaskRunId = TaskRunId.asInstanceOf[js.Any], TransformId = TransformId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMLTaskRunRequest]
   }
   
-  @scala.inline
-  implicit class GetMLTaskRunRequestMutableBuilder[Self <: GetMLTaskRunRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetMLTaskRunRequest](x: Self) {
     
-    @scala.inline
-    def setTaskRunId(value: HashString): Self = StObject.set(x, "TaskRunId", value.asInstanceOf[js.Any])
+    inline def setTaskRunId(value: HashString): Self = StObject.set(x, "TaskRunId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformId(value: HashString): Self = StObject.set(x, "TransformId", value.asInstanceOf[js.Any])
+    inline def setTransformId(value: HashString): Self = StObject.set(x, "TransformId", value.asInstanceOf[js.Any])
   }
 }

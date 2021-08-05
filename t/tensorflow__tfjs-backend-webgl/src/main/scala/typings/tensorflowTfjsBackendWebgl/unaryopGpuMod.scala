@@ -147,10 +147,8 @@ object unaryopGpuMod {
   @js.native
   val SQRT: /* "return sqrt(x);" */ String = js.native
   
-  @scala.inline
-  def STEP(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("STEP")().asInstanceOf[String]
-  @scala.inline
-  def STEP(alpha: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("STEP")(alpha.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def STEP(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("STEP")().asInstanceOf[String]
+  inline def STEP(alpha: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("STEP")(alpha.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/unaryop_gpu", "TANH")
   @js.native

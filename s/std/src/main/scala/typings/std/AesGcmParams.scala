@@ -18,8 +18,7 @@ trait AesGcmParams
 }
 object AesGcmParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     iv: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
     name: java.lang.String
   ): AesGcmParams = {
@@ -27,26 +26,20 @@ object AesGcmParams {
     __obj.asInstanceOf[AesGcmParams]
   }
   
-  @scala.inline
-  implicit class AesGcmParamsMutableBuilder[Self <: AesGcmParams] (val x: Self) extends AnyVal {
+  extension [Self <: AesGcmParams](x: Self) {
     
-    @scala.inline
-    def setAdditionalData(
+    inline def setAdditionalData(
       value: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
     ): Self = StObject.set(x, "additionalData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalDataUndefined: Self = StObject.set(x, "additionalData", js.undefined)
+    inline def setAdditionalDataUndefined: Self = StObject.set(x, "additionalData", js.undefined)
     
-    @scala.inline
-    def setIv(
+    inline def setIv(
       value: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
     ): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagLength(value: Double): Self = StObject.set(x, "tagLength", value.asInstanceOf[js.Any])
+    inline def setTagLength(value: Double): Self = StObject.set(x, "tagLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagLengthUndefined: Self = StObject.set(x, "tagLength", js.undefined)
+    inline def setTagLengthUndefined: Self = StObject.set(x, "tagLength", js.undefined)
   }
 }

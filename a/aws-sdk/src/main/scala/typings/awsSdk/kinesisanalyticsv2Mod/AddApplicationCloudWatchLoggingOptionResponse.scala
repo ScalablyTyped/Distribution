@@ -23,34 +23,25 @@ trait AddApplicationCloudWatchLoggingOptionResponse extends StObject {
 }
 object AddApplicationCloudWatchLoggingOptionResponse {
   
-  @scala.inline
-  def apply(): AddApplicationCloudWatchLoggingOptionResponse = {
+  inline def apply(): AddApplicationCloudWatchLoggingOptionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddApplicationCloudWatchLoggingOptionResponse]
   }
   
-  @scala.inline
-  implicit class AddApplicationCloudWatchLoggingOptionResponseMutableBuilder[Self <: AddApplicationCloudWatchLoggingOptionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AddApplicationCloudWatchLoggingOptionResponse](x: Self) {
     
-    @scala.inline
-    def setApplicationARN(value: ResourceARN): Self = StObject.set(x, "ApplicationARN", value.asInstanceOf[js.Any])
+    inline def setApplicationARN(value: ResourceARN): Self = StObject.set(x, "ApplicationARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationARNUndefined: Self = StObject.set(x, "ApplicationARN", js.undefined)
+    inline def setApplicationARNUndefined: Self = StObject.set(x, "ApplicationARN", js.undefined)
     
-    @scala.inline
-    def setApplicationVersionId(value: ApplicationVersionId): Self = StObject.set(x, "ApplicationVersionId", value.asInstanceOf[js.Any])
+    inline def setApplicationVersionId(value: ApplicationVersionId): Self = StObject.set(x, "ApplicationVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationVersionIdUndefined: Self = StObject.set(x, "ApplicationVersionId", js.undefined)
+    inline def setApplicationVersionIdUndefined: Self = StObject.set(x, "ApplicationVersionId", js.undefined)
     
-    @scala.inline
-    def setCloudWatchLoggingOptionDescriptions(value: CloudWatchLoggingOptionDescriptions): Self = StObject.set(x, "CloudWatchLoggingOptionDescriptions", value.asInstanceOf[js.Any])
+    inline def setCloudWatchLoggingOptionDescriptions(value: CloudWatchLoggingOptionDescriptions): Self = StObject.set(x, "CloudWatchLoggingOptionDescriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudWatchLoggingOptionDescriptionsUndefined: Self = StObject.set(x, "CloudWatchLoggingOptionDescriptions", js.undefined)
+    inline def setCloudWatchLoggingOptionDescriptionsUndefined: Self = StObject.set(x, "CloudWatchLoggingOptionDescriptions", js.undefined)
     
-    @scala.inline
-    def setCloudWatchLoggingOptionDescriptionsVarargs(value: CloudWatchLoggingOptionDescription*): Self = StObject.set(x, "CloudWatchLoggingOptionDescriptions", js.Array(value :_*))
+    inline def setCloudWatchLoggingOptionDescriptionsVarargs(value: CloudWatchLoggingOptionDescription*): Self = StObject.set(x, "CloudWatchLoggingOptionDescriptions", js.Array(value :_*))
   }
 }

@@ -18,16 +18,13 @@ trait ASPxClientGridViewRowClickEventArgs
 }
 object ASPxClientGridViewRowClickEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, htmlEvent: js.Any, visibleIndex: Double): ASPxClientGridViewRowClickEventArgs = {
+  inline def apply(cancel: Boolean, htmlEvent: js.Any, visibleIndex: Double): ASPxClientGridViewRowClickEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], htmlEvent = htmlEvent.asInstanceOf[js.Any], visibleIndex = visibleIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientGridViewRowClickEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientGridViewRowClickEventArgsMutableBuilder[Self <: ASPxClientGridViewRowClickEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientGridViewRowClickEventArgs](x: Self) {
     
-    @scala.inline
-    def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+    inline def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
   }
 }

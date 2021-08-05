@@ -13,19 +13,15 @@ trait ResetJobBookmarkResponse extends StObject {
 }
 object ResetJobBookmarkResponse {
   
-  @scala.inline
-  def apply(): ResetJobBookmarkResponse = {
+  inline def apply(): ResetJobBookmarkResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResetJobBookmarkResponse]
   }
   
-  @scala.inline
-  implicit class ResetJobBookmarkResponseMutableBuilder[Self <: ResetJobBookmarkResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ResetJobBookmarkResponse](x: Self) {
     
-    @scala.inline
-    def setJobBookmarkEntry(value: JobBookmarkEntry): Self = StObject.set(x, "JobBookmarkEntry", value.asInstanceOf[js.Any])
+    inline def setJobBookmarkEntry(value: JobBookmarkEntry): Self = StObject.set(x, "JobBookmarkEntry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobBookmarkEntryUndefined: Self = StObject.set(x, "JobBookmarkEntry", js.undefined)
+    inline def setJobBookmarkEntryUndefined: Self = StObject.set(x, "JobBookmarkEntry", js.undefined)
   }
 }

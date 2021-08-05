@@ -30,43 +30,31 @@ trait Auth0Result extends StObject {
 }
 object Auth0Result {
   
-  @scala.inline
-  def apply(): Auth0Result = {
+  inline def apply(): Auth0Result = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Auth0Result]
   }
   
-  @scala.inline
-  implicit class Auth0ResultMutableBuilder[Self <: Auth0Result] (val x: Self) extends AnyVal {
+  extension [Self <: Auth0Result](x: Self) {
     
-    @scala.inline
-    def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+    inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
+    inline def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
     
-    @scala.inline
-    def setAppState(value: js.Any): Self = StObject.set(x, "appState", value.asInstanceOf[js.Any])
+    inline def setAppState(value: js.Any): Self = StObject.set(x, "appState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppStateUndefined: Self = StObject.set(x, "appState", js.undefined)
+    inline def setAppStateUndefined: Self = StObject.set(x, "appState", js.undefined)
     
-    @scala.inline
-    def setExpiresIn(value: Double): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
+    inline def setExpiresIn(value: Double): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiresInUndefined: Self = StObject.set(x, "expiresIn", js.undefined)
+    inline def setExpiresInUndefined: Self = StObject.set(x, "expiresIn", js.undefined)
     
-    @scala.inline
-    def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
+    inline def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdTokenUndefined: Self = StObject.set(x, "idToken", js.undefined)
+    inline def setIdTokenUndefined: Self = StObject.set(x, "idToken", js.undefined)
     
-    @scala.inline
-    def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
+    inline def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshTokenUndefined: Self = StObject.set(x, "refreshToken", js.undefined)
+    inline def setRefreshTokenUndefined: Self = StObject.set(x, "refreshToken", js.undefined)
   }
 }

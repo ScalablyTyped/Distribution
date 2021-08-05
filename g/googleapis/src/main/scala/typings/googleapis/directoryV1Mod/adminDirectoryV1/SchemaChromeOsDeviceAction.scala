@@ -19,25 +19,19 @@ trait SchemaChromeOsDeviceAction extends StObject {
 }
 object SchemaChromeOsDeviceAction {
   
-  @scala.inline
-  def apply(): SchemaChromeOsDeviceAction = {
+  inline def apply(): SchemaChromeOsDeviceAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaChromeOsDeviceAction]
   }
   
-  @scala.inline
-  implicit class SchemaChromeOsDeviceActionMutableBuilder[Self <: SchemaChromeOsDeviceAction] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaChromeOsDeviceAction](x: Self) {
     
-    @scala.inline
-    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setDeprovisionReason(value: String): Self = StObject.set(x, "deprovisionReason", value.asInstanceOf[js.Any])
+    inline def setDeprovisionReason(value: String): Self = StObject.set(x, "deprovisionReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeprovisionReasonUndefined: Self = StObject.set(x, "deprovisionReason", js.undefined)
+    inline def setDeprovisionReasonUndefined: Self = StObject.set(x, "deprovisionReason", js.undefined)
   }
 }

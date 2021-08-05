@@ -28,34 +28,25 @@ trait SampleChannelDataRequest extends StObject {
 }
 object SampleChannelDataRequest {
   
-  @scala.inline
-  def apply(channelName: ChannelName): SampleChannelDataRequest = {
+  inline def apply(channelName: ChannelName): SampleChannelDataRequest = {
     val __obj = js.Dynamic.literal(channelName = channelName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SampleChannelDataRequest]
   }
   
-  @scala.inline
-  implicit class SampleChannelDataRequestMutableBuilder[Self <: SampleChannelDataRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SampleChannelDataRequest](x: Self) {
     
-    @scala.inline
-    def setChannelName(value: ChannelName): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
+    inline def setChannelName(value: ChannelName): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTime(value: EndTime): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: EndTime): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setMaxMessages(value: MaxMessages): Self = StObject.set(x, "maxMessages", value.asInstanceOf[js.Any])
+    inline def setMaxMessages(value: MaxMessages): Self = StObject.set(x, "maxMessages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxMessagesUndefined: Self = StObject.set(x, "maxMessages", js.undefined)
+    inline def setMaxMessagesUndefined: Self = StObject.set(x, "maxMessages", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: StartTime): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: StartTime): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

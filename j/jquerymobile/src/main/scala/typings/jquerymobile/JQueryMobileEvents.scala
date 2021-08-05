@@ -68,8 +68,7 @@ trait JQueryMobileEvents extends StObject {
 }
 object JQueryMobileEvents {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     orientationchange: js.Any,
     pagebeforechange: js.Any,
     pagebeforecreate: js.Any,
@@ -105,97 +104,66 @@ object JQueryMobileEvents {
     __obj.asInstanceOf[JQueryMobileEvents]
   }
   
-  @scala.inline
-  implicit class JQueryMobileEventsMutableBuilder[Self <: JQueryMobileEvents] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryMobileEvents](x: Self) {
     
-    @scala.inline
-    def setOrientationchange(value: js.Any): Self = StObject.set(x, "orientationchange", value.asInstanceOf[js.Any])
+    inline def setOrientationchange(value: js.Any): Self = StObject.set(x, "orientationchange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagebeforechange(value: js.Any): Self = StObject.set(x, "pagebeforechange", value.asInstanceOf[js.Any])
+    inline def setPagebeforechange(value: js.Any): Self = StObject.set(x, "pagebeforechange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagebeforecreate(value: js.Any): Self = StObject.set(x, "pagebeforecreate", value.asInstanceOf[js.Any])
+    inline def setPagebeforecreate(value: js.Any): Self = StObject.set(x, "pagebeforecreate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagebeforehide(value: js.Any): Self = StObject.set(x, "pagebeforehide", value.asInstanceOf[js.Any])
+    inline def setPagebeforehide(value: js.Any): Self = StObject.set(x, "pagebeforehide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagebeforeload(value: js.Any): Self = StObject.set(x, "pagebeforeload", value.asInstanceOf[js.Any])
+    inline def setPagebeforeload(value: js.Any): Self = StObject.set(x, "pagebeforeload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagebeforeshow(value: js.Any): Self = StObject.set(x, "pagebeforeshow", value.asInstanceOf[js.Any])
+    inline def setPagebeforeshow(value: js.Any): Self = StObject.set(x, "pagebeforeshow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagechange(value: js.Any): Self = StObject.set(x, "pagechange", value.asInstanceOf[js.Any])
+    inline def setPagechange(value: js.Any): Self = StObject.set(x, "pagechange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagechangefailed(value: js.Any): Self = StObject.set(x, "pagechangefailed", value.asInstanceOf[js.Any])
+    inline def setPagechangefailed(value: js.Any): Self = StObject.set(x, "pagechangefailed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagecreate(value: js.Any): Self = StObject.set(x, "pagecreate", value.asInstanceOf[js.Any])
+    inline def setPagecreate(value: js.Any): Self = StObject.set(x, "pagecreate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagehide(value: js.Any): Self = StObject.set(x, "pagehide", value.asInstanceOf[js.Any])
+    inline def setPagehide(value: js.Any): Self = StObject.set(x, "pagehide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageinit(value: js.Any): Self = StObject.set(x, "pageinit", value.asInstanceOf[js.Any])
+    inline def setPageinit(value: js.Any): Self = StObject.set(x, "pageinit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageload(value: js.Any): Self = StObject.set(x, "pageload", value.asInstanceOf[js.Any])
+    inline def setPageload(value: js.Any): Self = StObject.set(x, "pageload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageloadfailed(value: js.Any): Self = StObject.set(x, "pageloadfailed", value.asInstanceOf[js.Any])
+    inline def setPageloadfailed(value: js.Any): Self = StObject.set(x, "pageloadfailed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageremove(value: js.Any): Self = StObject.set(x, "pageremove", value.asInstanceOf[js.Any])
+    inline def setPageremove(value: js.Any): Self = StObject.set(x, "pageremove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageshow(value: js.Any): Self = StObject.set(x, "pageshow", value.asInstanceOf[js.Any])
+    inline def setPageshow(value: js.Any): Self = StObject.set(x, "pageshow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollstart(value: js.Any): Self = StObject.set(x, "scrollstart", value.asInstanceOf[js.Any])
+    inline def setScrollstart(value: js.Any): Self = StObject.set(x, "scrollstart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollstop(value: js.Any): Self = StObject.set(x, "scrollstop", value.asInstanceOf[js.Any])
+    inline def setScrollstop(value: js.Any): Self = StObject.set(x, "scrollstop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwipe(value: js.Any): Self = StObject.set(x, "swipe", value.asInstanceOf[js.Any])
+    inline def setSwipe(value: js.Any): Self = StObject.set(x, "swipe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwipeleft(value: js.Any): Self = StObject.set(x, "swipeleft", value.asInstanceOf[js.Any])
+    inline def setSwipeleft(value: js.Any): Self = StObject.set(x, "swipeleft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwiperight(value: js.Any): Self = StObject.set(x, "swiperight", value.asInstanceOf[js.Any])
+    inline def setSwiperight(value: js.Any): Self = StObject.set(x, "swiperight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTap(value: js.Any): Self = StObject.set(x, "tap", value.asInstanceOf[js.Any])
+    inline def setTap(value: js.Any): Self = StObject.set(x, "tap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaphold(value: js.Any): Self = StObject.set(x, "taphold", value.asInstanceOf[js.Any])
+    inline def setTaphold(value: js.Any): Self = StObject.set(x, "taphold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatelayout(value: js.Any): Self = StObject.set(x, "updatelayout", value.asInstanceOf[js.Any])
+    inline def setUpdatelayout(value: js.Any): Self = StObject.set(x, "updatelayout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVclick(value: js.Any): Self = StObject.set(x, "vclick", value.asInstanceOf[js.Any])
+    inline def setVclick(value: js.Any): Self = StObject.set(x, "vclick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmousecancel(value: js.Any): Self = StObject.set(x, "vmousecancel", value.asInstanceOf[js.Any])
+    inline def setVmousecancel(value: js.Any): Self = StObject.set(x, "vmousecancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmousedown(value: js.Any): Self = StObject.set(x, "vmousedown", value.asInstanceOf[js.Any])
+    inline def setVmousedown(value: js.Any): Self = StObject.set(x, "vmousedown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmousemove(value: js.Any): Self = StObject.set(x, "vmousemove", value.asInstanceOf[js.Any])
+    inline def setVmousemove(value: js.Any): Self = StObject.set(x, "vmousemove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmouseout(value: js.Any): Self = StObject.set(x, "vmouseout", value.asInstanceOf[js.Any])
+    inline def setVmouseout(value: js.Any): Self = StObject.set(x, "vmouseout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmouseover(value: js.Any): Self = StObject.set(x, "vmouseover", value.asInstanceOf[js.Any])
+    inline def setVmouseover(value: js.Any): Self = StObject.set(x, "vmouseover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmouseup(value: js.Any): Self = StObject.set(x, "vmouseup", value.asInstanceOf[js.Any])
+    inline def setVmouseup(value: js.Any): Self = StObject.set(x, "vmouseup", value.asInstanceOf[js.Any])
   }
 }

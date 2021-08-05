@@ -13,19 +13,15 @@ trait RecrawlPolicy extends StObject {
 }
 object RecrawlPolicy {
   
-  @scala.inline
-  def apply(): RecrawlPolicy = {
+  inline def apply(): RecrawlPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecrawlPolicy]
   }
   
-  @scala.inline
-  implicit class RecrawlPolicyMutableBuilder[Self <: RecrawlPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: RecrawlPolicy](x: Self) {
     
-    @scala.inline
-    def setRecrawlBehavior(value: RecrawlBehavior): Self = StObject.set(x, "RecrawlBehavior", value.asInstanceOf[js.Any])
+    inline def setRecrawlBehavior(value: RecrawlBehavior): Self = StObject.set(x, "RecrawlBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecrawlBehaviorUndefined: Self = StObject.set(x, "RecrawlBehavior", js.undefined)
+    inline def setRecrawlBehaviorUndefined: Self = StObject.set(x, "RecrawlBehavior", js.undefined)
   }
 }

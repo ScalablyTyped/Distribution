@@ -15,19 +15,15 @@ trait SchemaManagedInstanceLastAttempt extends StObject {
 }
 object SchemaManagedInstanceLastAttempt {
   
-  @scala.inline
-  def apply(): SchemaManagedInstanceLastAttempt = {
+  inline def apply(): SchemaManagedInstanceLastAttempt = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaManagedInstanceLastAttempt]
   }
   
-  @scala.inline
-  implicit class SchemaManagedInstanceLastAttemptMutableBuilder[Self <: SchemaManagedInstanceLastAttempt] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaManagedInstanceLastAttempt](x: Self) {
     
-    @scala.inline
-    def setErrors(value: `3`): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: `3`): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
   }
 }

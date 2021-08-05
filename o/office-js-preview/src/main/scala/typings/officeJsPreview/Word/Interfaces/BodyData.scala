@@ -98,88 +98,61 @@ trait BodyData extends StObject {
 }
 object BodyData {
   
-  @scala.inline
-  def apply(): BodyData = {
+  inline def apply(): BodyData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BodyData]
   }
   
-  @scala.inline
-  implicit class BodyDataMutableBuilder[Self <: BodyData] (val x: Self) extends AnyVal {
+  extension [Self <: BodyData](x: Self) {
     
-    @scala.inline
-    def setContentControls(value: js.Array[ContentControlData]): Self = StObject.set(x, "contentControls", value.asInstanceOf[js.Any])
+    inline def setContentControls(value: js.Array[ContentControlData]): Self = StObject.set(x, "contentControls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentControlsUndefined: Self = StObject.set(x, "contentControls", js.undefined)
+    inline def setContentControlsUndefined: Self = StObject.set(x, "contentControls", js.undefined)
     
-    @scala.inline
-    def setContentControlsVarargs(value: ContentControlData*): Self = StObject.set(x, "contentControls", js.Array(value :_*))
+    inline def setContentControlsVarargs(value: ContentControlData*): Self = StObject.set(x, "contentControls", js.Array(value :_*))
     
-    @scala.inline
-    def setFont(value: FontData): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: FontData): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
-    @scala.inline
-    def setInlinePictures(value: js.Array[InlinePictureData]): Self = StObject.set(x, "inlinePictures", value.asInstanceOf[js.Any])
+    inline def setInlinePictures(value: js.Array[InlinePictureData]): Self = StObject.set(x, "inlinePictures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInlinePicturesUndefined: Self = StObject.set(x, "inlinePictures", js.undefined)
+    inline def setInlinePicturesUndefined: Self = StObject.set(x, "inlinePictures", js.undefined)
     
-    @scala.inline
-    def setInlinePicturesVarargs(value: InlinePictureData*): Self = StObject.set(x, "inlinePictures", js.Array(value :_*))
+    inline def setInlinePicturesVarargs(value: InlinePictureData*): Self = StObject.set(x, "inlinePictures", js.Array(value :_*))
     
-    @scala.inline
-    def setLists(value: js.Array[ListData]): Self = StObject.set(x, "lists", value.asInstanceOf[js.Any])
+    inline def setLists(value: js.Array[ListData]): Self = StObject.set(x, "lists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListsUndefined: Self = StObject.set(x, "lists", js.undefined)
+    inline def setListsUndefined: Self = StObject.set(x, "lists", js.undefined)
     
-    @scala.inline
-    def setListsVarargs(value: ListData*): Self = StObject.set(x, "lists", js.Array(value :_*))
+    inline def setListsVarargs(value: ListData*): Self = StObject.set(x, "lists", js.Array(value :_*))
     
-    @scala.inline
-    def setParagraphs(value: js.Array[ParagraphData]): Self = StObject.set(x, "paragraphs", value.asInstanceOf[js.Any])
+    inline def setParagraphs(value: js.Array[ParagraphData]): Self = StObject.set(x, "paragraphs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParagraphsUndefined: Self = StObject.set(x, "paragraphs", js.undefined)
+    inline def setParagraphsUndefined: Self = StObject.set(x, "paragraphs", js.undefined)
     
-    @scala.inline
-    def setParagraphsVarargs(value: ParagraphData*): Self = StObject.set(x, "paragraphs", js.Array(value :_*))
+    inline def setParagraphsVarargs(value: ParagraphData*): Self = StObject.set(x, "paragraphs", js.Array(value :_*))
     
-    @scala.inline
-    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleBuiltIn(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150 */ js.Any): Self = StObject.set(x, "styleBuiltIn", value.asInstanceOf[js.Any])
+    inline def setStyleBuiltIn(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150 */ js.Any): Self = StObject.set(x, "styleBuiltIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleBuiltInUndefined: Self = StObject.set(x, "styleBuiltIn", js.undefined)
+    inline def setStyleBuiltInUndefined: Self = StObject.set(x, "styleBuiltIn", js.undefined)
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setTables(value: js.Array[TableData]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
+    inline def setTables(value: js.Array[TableData]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTablesUndefined: Self = StObject.set(x, "tables", js.undefined)
+    inline def setTablesUndefined: Self = StObject.set(x, "tables", js.undefined)
     
-    @scala.inline
-    def setTablesVarargs(value: TableData*): Self = StObject.set(x, "tables", js.Array(value :_*))
+    inline def setTablesVarargs(value: TableData*): Self = StObject.set(x, "tables", js.Array(value :_*))
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setType(value: BodyType | Unknown_ | MainDoc | Section | Header | Footer | TableCell): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: BodyType | Unknown_ | MainDoc | Section | Header | Footer | TableCell): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PlannerPreviewType extends StObject
 object PlannerPreviewType {
   
-  @scala.inline
-  def automatic: typings.microsoftGraph.microsoftGraphStrings.automatic = "automatic".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.automatic]
+  inline def automatic: typings.microsoftGraph.microsoftGraphStrings.automatic = "automatic".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.automatic]
   
-  @scala.inline
-  def checklist: typings.microsoftGraph.microsoftGraphStrings.checklist = "checklist".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.checklist]
+  inline def checklist: typings.microsoftGraph.microsoftGraphStrings.checklist = "checklist".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.checklist]
   
-  @scala.inline
-  def description: typings.microsoftGraph.microsoftGraphStrings.description = "description".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.description]
+  inline def description: typings.microsoftGraph.microsoftGraphStrings.description = "description".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.description]
   
-  @scala.inline
-  def noPreview: typings.microsoftGraph.microsoftGraphStrings.noPreview = "noPreview".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.noPreview]
+  inline def noPreview: typings.microsoftGraph.microsoftGraphStrings.noPreview = "noPreview".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.noPreview]
   
-  @scala.inline
-  def reference: typings.microsoftGraph.microsoftGraphStrings.reference = "reference".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.reference]
+  inline def reference: typings.microsoftGraph.microsoftGraphStrings.reference = "reference".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.reference]
 }

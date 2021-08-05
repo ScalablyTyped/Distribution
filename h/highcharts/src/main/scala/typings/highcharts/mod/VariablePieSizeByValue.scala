@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VariablePieSizeByValue extends StObject
 object VariablePieSizeByValue {
   
-  @scala.inline
-  def area: typings.highcharts.highchartsStrings.area = "area".asInstanceOf[typings.highcharts.highchartsStrings.area]
+  inline def area: typings.highcharts.highchartsStrings.area = "area".asInstanceOf[typings.highcharts.highchartsStrings.area]
   
-  @scala.inline
-  def radius: typings.highcharts.highchartsStrings.radius = "radius".asInstanceOf[typings.highcharts.highchartsStrings.radius]
+  inline def radius: typings.highcharts.highchartsStrings.radius = "radius".asInstanceOf[typings.highcharts.highchartsStrings.radius]
 }

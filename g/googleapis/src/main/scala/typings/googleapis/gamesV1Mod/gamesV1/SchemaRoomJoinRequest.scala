@@ -32,40 +32,29 @@ trait SchemaRoomJoinRequest extends StObject {
 }
 object SchemaRoomJoinRequest {
   
-  @scala.inline
-  def apply(): SchemaRoomJoinRequest = {
+  inline def apply(): SchemaRoomJoinRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRoomJoinRequest]
   }
   
-  @scala.inline
-  implicit class SchemaRoomJoinRequestMutableBuilder[Self <: SchemaRoomJoinRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRoomJoinRequest](x: Self) {
     
-    @scala.inline
-    def setCapabilities(value: js.Array[String]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
+    inline def setCapabilities(value: js.Array[String]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
+    inline def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
     
-    @scala.inline
-    def setCapabilitiesVarargs(value: String*): Self = StObject.set(x, "capabilities", js.Array(value :_*))
+    inline def setCapabilitiesVarargs(value: String*): Self = StObject.set(x, "capabilities", js.Array(value :_*))
     
-    @scala.inline
-    def setClientAddress(value: SchemaRoomClientAddress): Self = StObject.set(x, "clientAddress", value.asInstanceOf[js.Any])
+    inline def setClientAddress(value: SchemaRoomClientAddress): Self = StObject.set(x, "clientAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientAddressUndefined: Self = StObject.set(x, "clientAddress", js.undefined)
+    inline def setClientAddressUndefined: Self = StObject.set(x, "clientAddress", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNetworkDiagnostics(value: SchemaNetworkDiagnostics): Self = StObject.set(x, "networkDiagnostics", value.asInstanceOf[js.Any])
+    inline def setNetworkDiagnostics(value: SchemaNetworkDiagnostics): Self = StObject.set(x, "networkDiagnostics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkDiagnosticsUndefined: Self = StObject.set(x, "networkDiagnostics", js.undefined)
+    inline def setNetworkDiagnosticsUndefined: Self = StObject.set(x, "networkDiagnostics", js.undefined)
   }
 }

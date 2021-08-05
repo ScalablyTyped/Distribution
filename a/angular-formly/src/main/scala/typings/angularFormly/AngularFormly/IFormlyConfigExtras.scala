@@ -26,8 +26,7 @@ trait IFormlyConfigExtras extends StObject {
 }
 object IFormlyConfigExtras {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     apiCheckInstance: js.Any,
     defaultHideDirective: String,
     disableNgModelAttrsManipulator: Boolean,
@@ -42,37 +41,26 @@ object IFormlyConfigExtras {
     __obj.asInstanceOf[IFormlyConfigExtras]
   }
   
-  @scala.inline
-  implicit class IFormlyConfigExtrasMutableBuilder[Self <: IFormlyConfigExtras] (val x: Self) extends AnyVal {
+  extension [Self <: IFormlyConfigExtras](x: Self) {
     
-    @scala.inline
-    def setApiCheckInstance(value: js.Any): Self = StObject.set(x, "apiCheckInstance", value.asInstanceOf[js.Any])
+    inline def setApiCheckInstance(value: js.Any): Self = StObject.set(x, "apiCheckInstance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultHideDirective(value: String): Self = StObject.set(x, "defaultHideDirective", value.asInstanceOf[js.Any])
+    inline def setDefaultHideDirective(value: String): Self = StObject.set(x, "defaultHideDirective", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableNgModelAttrsManipulator(value: Boolean): Self = StObject.set(x, "disableNgModelAttrsManipulator", value.asInstanceOf[js.Any])
+    inline def setDisableNgModelAttrsManipulator(value: Boolean): Self = StObject.set(x, "disableNgModelAttrsManipulator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorExistsAndShouldBeVisibleExpression(value: js.Any): Self = StObject.set(x, "errorExistsAndShouldBeVisibleExpression", value.asInstanceOf[js.Any])
+    inline def setErrorExistsAndShouldBeVisibleExpression(value: js.Any): Self = StObject.set(x, "errorExistsAndShouldBeVisibleExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExplicitAsync(value: Boolean): Self = StObject.set(x, "explicitAsync", value.asInstanceOf[js.Any])
+    inline def setExplicitAsync(value: Boolean): Self = StObject.set(x, "explicitAsync", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldTransform(value: js.Function | js.Array[js.Function]): Self = StObject.set(x, "fieldTransform", value.asInstanceOf[js.Any])
+    inline def setFieldTransform(value: js.Function | js.Array[js.Function]): Self = StObject.set(x, "fieldTransform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldTransformVarargs(value: js.Function*): Self = StObject.set(x, "fieldTransform", js.Array(value :_*))
+    inline def setFieldTransformVarargs(value: js.Function*): Self = StObject.set(x, "fieldTransform", js.Array(value :_*))
     
-    @scala.inline
-    def setGetFieldId(value: js.Function): Self = StObject.set(x, "getFieldId", value.asInstanceOf[js.Any])
+    inline def setGetFieldId(value: js.Function): Self = StObject.set(x, "getFieldId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNgModelAttrsManipulatorPreferUnbound(value: Boolean): Self = StObject.set(x, "ngModelAttrsManipulatorPreferUnbound", value.asInstanceOf[js.Any])
+    inline def setNgModelAttrsManipulatorPreferUnbound(value: Boolean): Self = StObject.set(x, "ngModelAttrsManipulatorPreferUnbound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveChromeAutoComplete(value: Boolean): Self = StObject.set(x, "removeChromeAutoComplete", value.asInstanceOf[js.Any])
+    inline def setRemoveChromeAutoComplete(value: Boolean): Self = StObject.set(x, "removeChromeAutoComplete", value.asInstanceOf[js.Any])
   }
 }

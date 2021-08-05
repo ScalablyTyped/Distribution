@@ -13,8 +13,7 @@ trait SemanticTokensRegistrationOptions
      with StaticRegistrationOptions
 object SemanticTokensRegistrationOptions {
   
-  @scala.inline
-  def apply(legend: SemanticTokensLegend): SemanticTokensRegistrationOptions = {
+  inline def apply(legend: SemanticTokensLegend): SemanticTokensRegistrationOptions = {
     val __obj = js.Dynamic.literal(legend = legend.asInstanceOf[js.Any], documentSelector = null)
     __obj.asInstanceOf[SemanticTokensRegistrationOptions]
   }

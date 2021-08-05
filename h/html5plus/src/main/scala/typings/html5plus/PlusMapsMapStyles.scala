@@ -110,73 +110,51 @@ trait PlusMapsMapStyles extends StObject {
 }
 object PlusMapsMapStyles {
   
-  @scala.inline
-  def apply(): PlusMapsMapStyles = {
+  inline def apply(): PlusMapsMapStyles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusMapsMapStyles]
   }
   
-  @scala.inline
-  implicit class PlusMapsMapStylesMutableBuilder[Self <: PlusMapsMapStyles] (val x: Self) extends AnyVal {
+  extension [Self <: PlusMapsMapStyles](x: Self) {
     
-    @scala.inline
-    def setCenter(value: PlusMapsPoint): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: PlusMapsPoint): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
+    inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
-    @scala.inline
-    def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setTop(value: String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
-    @scala.inline
-    def setTraffic(value: Boolean): Self = StObject.set(x, "traffic", value.asInstanceOf[js.Any])
+    inline def setTraffic(value: Boolean): Self = StObject.set(x, "traffic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrafficUndefined: Self = StObject.set(x, "traffic", js.undefined)
+    inline def setTrafficUndefined: Self = StObject.set(x, "traffic", js.undefined)
     
-    @scala.inline
-    def setType(value: PlusMapsMapType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: PlusMapsMapType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
-    @scala.inline
-    def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomControls(value: Boolean): Self = StObject.set(x, "zoomControls", value.asInstanceOf[js.Any])
+    inline def setZoomControls(value: Boolean): Self = StObject.set(x, "zoomControls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomControlsUndefined: Self = StObject.set(x, "zoomControls", js.undefined)
+    inline def setZoomControlsUndefined: Self = StObject.set(x, "zoomControls", js.undefined)
     
-    @scala.inline
-    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
+    inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
   }
 }

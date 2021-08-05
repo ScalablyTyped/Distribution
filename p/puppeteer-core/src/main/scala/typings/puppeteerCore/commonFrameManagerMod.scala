@@ -135,7 +135,7 @@ object commonFrameManagerMod {
       */
     def _detach(): Unit = js.native
     
-    var _detached: js.Any = js.native
+    /* private */ var _detached: js.Any = js.native
     
     /**
       * @internal
@@ -187,14 +187,14 @@ object commonFrameManagerMod {
       */
     def _onLoadingStopped(): Unit = js.native
     
-    var _parentFrame: js.Any = js.native
+    /* private */ var _parentFrame: js.Any = js.native
     
     /**
       * @internal
       */
     var _secondaryWorld: DOMWorld = js.native
     
-    var _url: js.Any = js.native
+    /* private */ var _url: js.Any = js.native
     
     /**
       * Adds a `<script>` tag into the page with the desired url or content.
@@ -648,32 +648,32 @@ object commonFrameManagerMod {
     
     var _client: CDPSession = js.native
     
-    var _contextIdToContext: js.Any = js.native
+    /* private */ var _contextIdToContext: js.Any = js.native
     
     def _ensureIsolatedWorld(name: String): js.Promise[Unit] = js.native
     
-    var _frames: js.Any = js.native
+    /* private */ var _frames: js.Any = js.native
     
     def _handleFrameTree(frameTree: FrameTree): Unit = js.native
     
-    var _isolatedWorlds: js.Any = js.native
+    /* private */ var _isolatedWorlds: js.Any = js.native
     
-    var _mainFrame: js.Any = js.native
+    /* private */ var _mainFrame: js.Any = js.native
     
-    var _networkManager: js.Any = js.native
+    /* private */ var _networkManager: js.Any = js.native
     
     def _onExecutionContextCreated(contextPayload: ExecutionContextDescription): Unit = js.native
     
-    var _onExecutionContextDestroyed: js.Any = js.native
+    /* private */ var _onExecutionContextDestroyed: js.Any = js.native
     
-    var _onExecutionContextsCleared: js.Any = js.native
+    /* private */ var _onExecutionContextsCleared: js.Any = js.native
     
     def _onFrameAttached(frameId: String): Unit = js.native
     def _onFrameAttached(frameId: String, parentFrameId: String): Unit = js.native
     
     def _onFrameDetached(frameId: String): Unit = js.native
     
-    var _onFrameMoved: js.Any = js.native
+    /* private */ var _onFrameMoved: js.Any = js.native
     
     def _onFrameNavigated(framePayload: typings.devtoolsProtocol.mod.Protocol.Page.Frame): Unit = js.native
     
@@ -683,9 +683,9 @@ object commonFrameManagerMod {
     
     def _onLifecycleEvent(event: LifecycleEventEvent): Unit = js.native
     
-    var _page: js.Any = js.native
+    /* private */ var _page: js.Any = js.native
     
-    var _removeFramesRecursively: js.Any = js.native
+    /* private */ var _removeFramesRecursively: js.Any = js.native
     
     var _timeoutSettings: TimeoutSettings = js.native
     
@@ -719,26 +719,22 @@ object commonFrameManagerMod {
     @JSImport("puppeteer-core/lib/esm/puppeteer/common/FrameManager", "FrameManagerEmittedEvents.ExecutionContextCreated")
     @js.native
     def ExecutionContextCreated: js.Symbol = js.native
-    @scala.inline
-    def ExecutionContextCreated_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExecutionContextCreated")(x.asInstanceOf[js.Any])
+    inline def ExecutionContextCreated_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExecutionContextCreated")(x.asInstanceOf[js.Any])
     
     @JSImport("puppeteer-core/lib/esm/puppeteer/common/FrameManager", "FrameManagerEmittedEvents.ExecutionContextDestroyed")
     @js.native
     def ExecutionContextDestroyed: js.Symbol = js.native
-    @scala.inline
-    def ExecutionContextDestroyed_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExecutionContextDestroyed")(x.asInstanceOf[js.Any])
+    inline def ExecutionContextDestroyed_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExecutionContextDestroyed")(x.asInstanceOf[js.Any])
     
     @JSImport("puppeteer-core/lib/esm/puppeteer/common/FrameManager", "FrameManagerEmittedEvents.FrameAttached")
     @js.native
     def FrameAttached: js.Symbol = js.native
-    @scala.inline
-    def FrameAttached_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FrameAttached")(x.asInstanceOf[js.Any])
+    inline def FrameAttached_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FrameAttached")(x.asInstanceOf[js.Any])
     
     @JSImport("puppeteer-core/lib/esm/puppeteer/common/FrameManager", "FrameManagerEmittedEvents.FrameDetached")
     @js.native
     def FrameDetached: js.Symbol = js.native
-    @scala.inline
-    def FrameDetached_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FrameDetached")(x.asInstanceOf[js.Any])
+    inline def FrameDetached_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FrameDetached")(x.asInstanceOf[js.Any])
     
     @JSImport("puppeteer-core/lib/esm/puppeteer/common/FrameManager", "FrameManagerEmittedEvents.FrameNavigated")
     @js.native
@@ -747,17 +743,14 @@ object commonFrameManagerMod {
     @JSImport("puppeteer-core/lib/esm/puppeteer/common/FrameManager", "FrameManagerEmittedEvents.FrameNavigatedWithinDocument")
     @js.native
     def FrameNavigatedWithinDocument: js.Symbol = js.native
-    @scala.inline
-    def FrameNavigatedWithinDocument_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FrameNavigatedWithinDocument")(x.asInstanceOf[js.Any])
+    inline def FrameNavigatedWithinDocument_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FrameNavigatedWithinDocument")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def FrameNavigated_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FrameNavigated")(x.asInstanceOf[js.Any])
+    inline def FrameNavigated_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FrameNavigated")(x.asInstanceOf[js.Any])
     
     @JSImport("puppeteer-core/lib/esm/puppeteer/common/FrameManager", "FrameManagerEmittedEvents.LifecycleEvent")
     @js.native
     def LifecycleEvent: js.Symbol = js.native
-    @scala.inline
-    def LifecycleEvent_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LifecycleEvent")(x.asInstanceOf[js.Any])
+    inline def LifecycleEvent_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LifecycleEvent")(x.asInstanceOf[js.Any])
   }
   
   trait FrameAddScriptTagOptions extends StObject {
@@ -787,38 +780,28 @@ object commonFrameManagerMod {
   }
   object FrameAddScriptTagOptions {
     
-    @scala.inline
-    def apply(): FrameAddScriptTagOptions = {
+    inline def apply(): FrameAddScriptTagOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FrameAddScriptTagOptions]
     }
     
-    @scala.inline
-    implicit class FrameAddScriptTagOptionsMutableBuilder[Self <: FrameAddScriptTagOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FrameAddScriptTagOptions](x: Self) {
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -844,32 +827,24 @@ object commonFrameManagerMod {
   }
   object FrameAddStyleTagOptions {
     
-    @scala.inline
-    def apply(): FrameAddStyleTagOptions = {
+    inline def apply(): FrameAddStyleTagOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FrameAddStyleTagOptions]
     }
     
-    @scala.inline
-    implicit class FrameAddStyleTagOptionsMutableBuilder[Self <: FrameAddStyleTagOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FrameAddStyleTagOptions](x: Self) {
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -898,26 +873,20 @@ object commonFrameManagerMod {
   }
   object FrameWaitForFunctionOptions {
     
-    @scala.inline
-    def apply(): FrameWaitForFunctionOptions = {
+    inline def apply(): FrameWaitForFunctionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FrameWaitForFunctionOptions]
     }
     
-    @scala.inline
-    implicit class FrameWaitForFunctionOptionsMutableBuilder[Self <: FrameWaitForFunctionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FrameWaitForFunctionOptions](x: Self) {
       
-      @scala.inline
-      def setPolling(value: String | Double): Self = StObject.set(x, "polling", value.asInstanceOf[js.Any])
+      inline def setPolling(value: String | Double): Self = StObject.set(x, "polling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPollingUndefined: Self = StObject.set(x, "polling", js.undefined)
+      inline def setPollingUndefined: Self = StObject.set(x, "polling", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
 }

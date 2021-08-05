@@ -9,8 +9,7 @@ trait CloseSocketOptions
      with BaseOptions[js.Any, js.Any]
 object CloseSocketOptions {
   
-  @scala.inline
-  def apply(): CloseSocketOptions = {
+  inline def apply(): CloseSocketOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CloseSocketOptions]
   }

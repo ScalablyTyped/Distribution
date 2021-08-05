@@ -20,28 +20,21 @@ trait SchemaBackendServicesScopedList extends StObject {
 }
 object SchemaBackendServicesScopedList {
   
-  @scala.inline
-  def apply(): SchemaBackendServicesScopedList = {
+  inline def apply(): SchemaBackendServicesScopedList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBackendServicesScopedList]
   }
   
-  @scala.inline
-  implicit class SchemaBackendServicesScopedListMutableBuilder[Self <: SchemaBackendServicesScopedList] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBackendServicesScopedList](x: Self) {
     
-    @scala.inline
-    def setBackendServices(value: js.Array[SchemaBackendService]): Self = StObject.set(x, "backendServices", value.asInstanceOf[js.Any])
+    inline def setBackendServices(value: js.Array[SchemaBackendService]): Self = StObject.set(x, "backendServices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackendServicesUndefined: Self = StObject.set(x, "backendServices", js.undefined)
+    inline def setBackendServicesUndefined: Self = StObject.set(x, "backendServices", js.undefined)
     
-    @scala.inline
-    def setBackendServicesVarargs(value: SchemaBackendService*): Self = StObject.set(x, "backendServices", js.Array(value :_*))
+    inline def setBackendServicesVarargs(value: SchemaBackendService*): Self = StObject.set(x, "backendServices", js.Array(value :_*))
     
-    @scala.inline
-    def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+    inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

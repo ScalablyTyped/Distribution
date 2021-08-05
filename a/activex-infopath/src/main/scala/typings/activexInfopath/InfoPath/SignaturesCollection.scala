@@ -10,15 +10,14 @@ trait SignaturesCollection extends StObject {
   
   def Create(): SignatureObject
   
-  @JSName("InfoPath.SignaturesCollection_typekey")
+  /* private */ @JSName("InfoPath.SignaturesCollection_typekey")
   var InfoPathDotSignaturesCollection_typekey: SignaturesCollection
   
   def Item(varIndex: js.Any): SignatureObject
 }
 object SignaturesCollection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     Create: () => SignatureObject,
     InfoPathDotSignaturesCollection_typekey: SignaturesCollection,
@@ -29,19 +28,14 @@ object SignaturesCollection {
     __obj.asInstanceOf[SignaturesCollection]
   }
   
-  @scala.inline
-  implicit class SignaturesCollectionMutableBuilder[Self <: SignaturesCollection] (val x: Self) extends AnyVal {
+  extension [Self <: SignaturesCollection](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreate(value: () => SignatureObject): Self = StObject.set(x, "Create", js.Any.fromFunction0(value))
+    inline def setCreate(value: () => SignatureObject): Self = StObject.set(x, "Create", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInfoPathDotSignaturesCollection_typekey(value: SignaturesCollection): Self = StObject.set(x, "InfoPath.SignaturesCollection_typekey", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotSignaturesCollection_typekey(value: SignaturesCollection): Self = StObject.set(x, "InfoPath.SignaturesCollection_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: js.Any => SignatureObject): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: js.Any => SignatureObject): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
   }
 }

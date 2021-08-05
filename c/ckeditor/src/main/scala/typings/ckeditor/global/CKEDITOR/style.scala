@@ -19,8 +19,7 @@ object style {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addCustomHandler(defintion: customHandler): typings.ckeditor.CKEDITOR.style = ^.asInstanceOf[js.Dynamic].applyDynamic("addCustomHandler")(defintion.asInstanceOf[js.Any]).asInstanceOf[typings.ckeditor.CKEDITOR.style]
+  inline def addCustomHandler(defintion: customHandler): typings.ckeditor.CKEDITOR.style = ^.asInstanceOf[js.Dynamic].applyDynamic("addCustomHandler")(defintion.asInstanceOf[js.Any]).asInstanceOf[typings.ckeditor.CKEDITOR.style]
   
   object customHandlers {
     
@@ -31,6 +30,5 @@ object style {
          with typings.ckeditor.CKEDITOR.style.customHandlers.widget
   }
   
-  @scala.inline
-  def getStyleText(style: definition): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyleText")(style.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getStyleText(style: definition): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyleText")(style.asInstanceOf[js.Any]).asInstanceOf[String]
 }

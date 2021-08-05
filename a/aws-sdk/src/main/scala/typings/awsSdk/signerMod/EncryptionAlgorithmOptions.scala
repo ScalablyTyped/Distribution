@@ -18,22 +18,17 @@ trait EncryptionAlgorithmOptions extends StObject {
 }
 object EncryptionAlgorithmOptions {
   
-  @scala.inline
-  def apply(allowedValues: EncryptionAlgorithms, defaultValue: EncryptionAlgorithm): EncryptionAlgorithmOptions = {
+  inline def apply(allowedValues: EncryptionAlgorithms, defaultValue: EncryptionAlgorithm): EncryptionAlgorithmOptions = {
     val __obj = js.Dynamic.literal(allowedValues = allowedValues.asInstanceOf[js.Any], defaultValue = defaultValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncryptionAlgorithmOptions]
   }
   
-  @scala.inline
-  implicit class EncryptionAlgorithmOptionsMutableBuilder[Self <: EncryptionAlgorithmOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EncryptionAlgorithmOptions](x: Self) {
     
-    @scala.inline
-    def setAllowedValues(value: EncryptionAlgorithms): Self = StObject.set(x, "allowedValues", value.asInstanceOf[js.Any])
+    inline def setAllowedValues(value: EncryptionAlgorithms): Self = StObject.set(x, "allowedValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedValuesVarargs(value: EncryptionAlgorithm*): Self = StObject.set(x, "allowedValues", js.Array(value :_*))
+    inline def setAllowedValuesVarargs(value: EncryptionAlgorithm*): Self = StObject.set(x, "allowedValues", js.Array(value :_*))
     
-    @scala.inline
-    def setDefaultValue(value: EncryptionAlgorithm): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: EncryptionAlgorithm): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
   }
 }

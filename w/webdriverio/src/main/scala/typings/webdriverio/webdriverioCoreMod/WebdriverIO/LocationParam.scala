@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LocationParam extends StObject
 object LocationParam {
   
-  @scala.inline
-  def x: typings.webdriverio.webdriverioStrings.x = "x".asInstanceOf[typings.webdriverio.webdriverioStrings.x]
+  inline def x: typings.webdriverio.webdriverioStrings.x = "x".asInstanceOf[typings.webdriverio.webdriverioStrings.x]
   
-  @scala.inline
-  def y: typings.webdriverio.webdriverioStrings.y = "y".asInstanceOf[typings.webdriverio.webdriverioStrings.y]
+  inline def y: typings.webdriverio.webdriverioStrings.y = "y".asInstanceOf[typings.webdriverio.webdriverioStrings.y]
 }

@@ -21,32 +21,24 @@ trait NumberFormatDefinition
 }
 object NumberFormatDefinition {
   
-  @scala.inline
-  def apply(validate: /* data */ Double => Boolean | js.Thenable[js.Any]): NumberFormatDefinition = {
+  inline def apply(validate: /* data */ Double => Boolean | js.Thenable[js.Any]): NumberFormatDefinition = {
     val __obj = js.Dynamic.literal(validate = js.Any.fromFunction1(validate))
     __obj.updateDynamic("type")("number")
     __obj.asInstanceOf[NumberFormatDefinition]
   }
   
-  @scala.inline
-  implicit class NumberFormatDefinitionMutableBuilder[Self <: NumberFormatDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: NumberFormatDefinition](x: Self) {
     
-    @scala.inline
-    def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+    inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+    inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
     
-    @scala.inline
-    def setCompare(value: (/* data1 */ Double, /* data2 */ Double) => Double): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
+    inline def setCompare(value: (/* data1 */ Double, /* data2 */ Double) => Double): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCompareUndefined: Self = StObject.set(x, "compare", js.undefined)
+    inline def setCompareUndefined: Self = StObject.set(x, "compare", js.undefined)
     
-    @scala.inline
-    def setType(value: number): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: number): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidate(value: /* data */ Double => Boolean | js.Thenable[js.Any]): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+    inline def setValidate(value: /* data */ Double => Boolean | js.Thenable[js.Any]): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
   }
 }

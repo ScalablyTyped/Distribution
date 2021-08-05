@@ -21,43 +21,31 @@ trait Checkbox extends StObject {
 }
 object Checkbox {
   
-  @scala.inline
-  def apply(dark: CheckboxTheme, light: CheckboxTheme): Checkbox = {
+  inline def apply(dark: CheckboxTheme, light: CheckboxTheme): Checkbox = {
     val __obj = js.Dynamic.literal(dark = dark.asInstanceOf[js.Any], light = light.asInstanceOf[js.Any])
     __obj.asInstanceOf[Checkbox]
   }
   
-  @scala.inline
-  implicit class CheckboxMutableBuilder[Self <: Checkbox] (val x: Self) extends AnyVal {
+  extension [Self <: Checkbox](x: Self) {
     
-    @scala.inline
-    def setActiveColor(value: String): Self = StObject.set(x, "activeColor", value.asInstanceOf[js.Any])
+    inline def setActiveColor(value: String): Self = StObject.set(x, "activeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveColorUndefined: Self = StObject.set(x, "activeColor", js.undefined)
+    inline def setActiveColorUndefined: Self = StObject.set(x, "activeColor", js.undefined)
     
-    @scala.inline
-    def setDark(value: CheckboxTheme): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
+    inline def setDark(value: CheckboxTheme): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledColor(value: String): Self = StObject.set(x, "disabledColor", value.asInstanceOf[js.Any])
+    inline def setDisabledColor(value: String): Self = StObject.set(x, "disabledColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledColorUndefined: Self = StObject.set(x, "disabledColor", js.undefined)
+    inline def setDisabledColorUndefined: Self = StObject.set(x, "disabledColor", js.undefined)
     
-    @scala.inline
-    def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
+    inline def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontColorUndefined: Self = StObject.set(x, "fontColor", js.undefined)
+    inline def setFontColorUndefined: Self = StObject.set(x, "fontColor", js.undefined)
     
-    @scala.inline
-    def setLight(value: CheckboxTheme): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
+    inline def setLight(value: CheckboxTheme): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

@@ -9,10 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
-  @scala.inline
-  def apply(arg: EvaluateArg): Unit = ^.asInstanceOf[js.Dynamic].apply(arg.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
+  inline def apply(arg: EvaluateArg): Unit = ^.asInstanceOf[js.Dynamic].apply(arg.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("picturefill", JSImport.Namespace)
   @js.native
@@ -30,26 +28,20 @@ object mod {
     }
     object EvaluateArg {
       
-      @scala.inline
-      def apply(elements: NodeList | js.Array[ElementNullable]): EvaluateArg = {
+      inline def apply(elements: NodeList | js.Array[ElementNullable]): EvaluateArg = {
         val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any])
         __obj.asInstanceOf[EvaluateArg]
       }
       
-      @scala.inline
-      implicit class EvaluateArgMutableBuilder[Self <: EvaluateArg] (val x: Self) extends AnyVal {
+      extension [Self <: EvaluateArg](x: Self) {
         
-        @scala.inline
-        def setElements(value: NodeList | js.Array[ElementNullable]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+        inline def setElements(value: NodeList | js.Array[ElementNullable]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setElementsVarargs(value: ElementNullable*): Self = StObject.set(x, "elements", js.Array(value :_*))
+        inline def setElementsVarargs(value: ElementNullable*): Self = StObject.set(x, "elements", js.Array(value :_*))
         
-        @scala.inline
-        def setReevaluate(value: Boolean): Self = StObject.set(x, "reevaluate", value.asInstanceOf[js.Any])
+        inline def setReevaluate(value: Boolean): Self = StObject.set(x, "reevaluate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReevaluateUndefined: Self = StObject.set(x, "reevaluate", js.undefined)
+        inline def setReevaluateUndefined: Self = StObject.set(x, "reevaluate", js.undefined)
       }
     }
   }

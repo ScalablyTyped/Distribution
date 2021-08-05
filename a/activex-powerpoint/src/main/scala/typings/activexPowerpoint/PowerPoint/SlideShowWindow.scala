@@ -21,7 +21,7 @@ trait SlideShowWindow extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.SlideShowWindow_typekey")
+  /* private */ @JSName("PowerPoint.SlideShowWindow_typekey")
   var PowerPointDotSlideShowWindow_typekey: SlideShowWindow
   
   val Presentation: typings.activexPowerpoint.PowerPoint.Presentation
@@ -34,8 +34,7 @@ trait SlideShowWindow extends StObject {
 }
 object SlideShowWindow {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Activate: () => Unit,
     Active: MsoTriState,
     Application: Application,
@@ -54,43 +53,30 @@ object SlideShowWindow {
     __obj.asInstanceOf[SlideShowWindow]
   }
   
-  @scala.inline
-  implicit class SlideShowWindowMutableBuilder[Self <: SlideShowWindow] (val x: Self) extends AnyVal {
+  extension [Self <: SlideShowWindow](x: Self) {
     
-    @scala.inline
-    def setActivate(value: () => Unit): Self = StObject.set(x, "Activate", js.Any.fromFunction0(value))
+    inline def setActivate(value: () => Unit): Self = StObject.set(x, "Activate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setActive(value: MsoTriState): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
+    inline def setActive(value: MsoTriState): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFullScreen(value: MsoTriState): Self = StObject.set(x, "IsFullScreen", value.asInstanceOf[js.Any])
+    inline def setIsFullScreen(value: MsoTriState): Self = StObject.set(x, "IsFullScreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft(value: Double): Self = StObject.set(x, "Left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Double): Self = StObject.set(x, "Left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotSlideShowWindow_typekey(value: SlideShowWindow): Self = StObject.set(x, "PowerPoint.SlideShowWindow_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotSlideShowWindow_typekey(value: SlideShowWindow): Self = StObject.set(x, "PowerPoint.SlideShowWindow_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPresentation(value: Presentation): Self = StObject.set(x, "Presentation", value.asInstanceOf[js.Any])
+    inline def setPresentation(value: Presentation): Self = StObject.set(x, "Presentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "Top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "Top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView(value: SlideShowView): Self = StObject.set(x, "View", value.asInstanceOf[js.Any])
+    inline def setView(value: SlideShowView): Self = StObject.set(x, "View", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
   }
 }

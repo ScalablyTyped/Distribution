@@ -22,52 +22,37 @@ trait CloudwatchEvent extends StObject {
 }
 object CloudwatchEvent {
   
-  @scala.inline
-  def apply(event: String): CloudwatchEvent = {
+  inline def apply(event: String): CloudwatchEvent = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudwatchEvent]
   }
   
-  @scala.inline
-  implicit class CloudwatchEventMutableBuilder[Self <: CloudwatchEvent] (val x: Self) extends AnyVal {
+  extension [Self <: CloudwatchEvent](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInput(value: Input): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: Input): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputPath(value: String): Self = StObject.set(x, "inputPath", value.asInstanceOf[js.Any])
+    inline def setInputPath(value: String): Self = StObject.set(x, "inputPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputPathUndefined: Self = StObject.set(x, "inputPath", js.undefined)
+    inline def setInputPathUndefined: Self = StObject.set(x, "inputPath", js.undefined)
     
-    @scala.inline
-    def setInputTransformer(value: InputTransformer): Self = StObject.set(x, "inputTransformer", value.asInstanceOf[js.Any])
+    inline def setInputTransformer(value: InputTransformer): Self = StObject.set(x, "inputTransformer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputTransformerUndefined: Self = StObject.set(x, "inputTransformer", js.undefined)
+    inline def setInputTransformerUndefined: Self = StObject.set(x, "inputTransformer", js.undefined)
     
-    @scala.inline
-    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

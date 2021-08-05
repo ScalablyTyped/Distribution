@@ -31,94 +31,94 @@ object dockpanelMod {
     /**
       * Create a new handle for use by the panel.
       */
-    var _createHandle: js.Any = js.native
+    /* private */ var _createHandle: js.Any = js.native
     
     /**
       * Create a new tab bar for use by the panel.
       */
-    var _createTabBar: js.Any = js.native
+    /* private */ var _createTabBar: js.Any = js.native
     
-    var _drag: js.Any = js.native
+    /* private */ var _drag: js.Any = js.native
     
-    var _edges: js.Any = js.native
+    /* private */ var _edges: js.Any = js.native
     
     /**
       * Handle the `'lm-dragenter'` event for the dock panel.
       */
-    var _evtDragEnter: js.Any = js.native
+    /* private */ var _evtDragEnter: js.Any = js.native
     
     /**
       * Handle the `'lm-dragleave'` event for the dock panel.
       */
-    var _evtDragLeave: js.Any = js.native
+    /* private */ var _evtDragLeave: js.Any = js.native
     
     /**
       * Handle the `'lm-dragover'` event for the dock panel.
       */
-    var _evtDragOver: js.Any = js.native
+    /* private */ var _evtDragOver: js.Any = js.native
     
     /**
       * Handle the `'lm-drop'` event for the dock panel.
       */
-    var _evtDrop: js.Any = js.native
+    /* private */ var _evtDrop: js.Any = js.native
     
     /**
       * Handle the `'keydown'` event for the dock panel.
       */
-    var _evtKeyDown: js.Any = js.native
+    /* private */ var _evtKeyDown: js.Any = js.native
     
     /**
       * Handle the `'mousedown'` event for the dock panel.
       */
-    var _evtMouseDown: js.Any = js.native
+    /* private */ var _evtMouseDown: js.Any = js.native
     
     /**
       * Handle the `'mousemove'` event for the dock panel.
       */
-    var _evtMouseMove: js.Any = js.native
+    /* private */ var _evtMouseMove: js.Any = js.native
     
     /**
       * Handle the `'mouseup'` event for the dock panel.
       */
-    var _evtMouseUp: js.Any = js.native
+    /* private */ var _evtMouseUp: js.Any = js.native
     
-    var _layoutModified: js.Any = js.native
+    /* private */ var _layoutModified: js.Any = js.native
     
-    var _mode: js.Any = js.native
+    /* private */ var _mode: js.Any = js.native
     
     /**
       * Handle the `currentChanged` signal from a tab bar.
       */
-    var _onCurrentChanged: js.Any = js.native
+    /* private */ var _onCurrentChanged: js.Any = js.native
     
     /**
       * Handle the `tabActivateRequested` signal from a tab bar.
       */
-    var _onTabActivateRequested: js.Any = js.native
+    /* private */ var _onTabActivateRequested: js.Any = js.native
     
     /**
       * Handle the `tabCloseRequested` signal from a tab bar.
       */
-    var _onTabCloseRequested: js.Any = js.native
+    /* private */ var _onTabCloseRequested: js.Any = js.native
     
     /**
       * Handle the `tabDetachRequested` signal from a tab bar.
       */
-    var _onTabDetachRequested: js.Any = js.native
+    /* private */ var _onTabDetachRequested: js.Any = js.native
     
     /**
       * Handle the `tabMoved` signal from a tab bar.
       */
-    var _onTabMoved: js.Any = js.native
+    /* private */ var _onTabMoved: js.Any = js.native
     
-    var _pressData: js.Any = js.native
+    /* private */ var _pressData: js.Any = js.native
     
     /**
       * Release the mouse grab for the dock panel.
       */
-    var _releaseMouse: js.Any = js.native
+    /* private */ var _releaseMouse: js.Any = js.native
     
-    var _renderer: js.Any = js.native
+    /* private */ var _renderer: js.Any = js.native
     
     /**
       * Show the overlay indicator at the given client position.
@@ -128,9 +128,9 @@ object dockpanelMod {
       * #### Notes
       * If the position is not over a valid zone, the overlay is hidden.
       */
-    var _showOverlay: js.Any = js.native
+    /* private */ var _showOverlay: js.Any = js.native
     
-    var _tabsMovable: js.Any = js.native
+    /* private */ var _tabsMovable: js.Any = js.native
     
     /**
       * Activate a specified widget in the dock panel.
@@ -314,9 +314,9 @@ object dockpanelMod {
       extends StObject
          with IOverlay {
       
-      var _hidden: js.Any = js.native
+      /* private */ var _hidden: js.Any = js.native
       
-      var _timer: js.Any = js.native
+      /* private */ var _timer: js.Any = js.native
       
       /**
         * Hide the overlay node.
@@ -417,26 +417,20 @@ object dockpanelMod {
     }
     object IEdges {
       
-      @scala.inline
-      def apply(bottom: Double, left: Double, right: Double, top: Double): IEdges = {
+      inline def apply(bottom: Double, left: Double, right: Double, top: Double): IEdges = {
         val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
         __obj.asInstanceOf[IEdges]
       }
       
-      @scala.inline
-      implicit class IEdgesMutableBuilder[Self <: IEdges] (val x: Self) extends AnyVal {
+      extension [Self <: IEdges](x: Self) {
         
-        @scala.inline
-        def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+        inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+        inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+        inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+        inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       }
     }
     
@@ -493,50 +487,36 @@ object dockpanelMod {
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): IOptions = {
+      inline def apply(): IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setEdges(value: IEdges): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
+        inline def setEdges(value: IEdges): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEdgesUndefined: Self = StObject.set(x, "edges", js.undefined)
+        inline def setEdgesUndefined: Self = StObject.set(x, "edges", js.undefined)
         
-        @scala.inline
-        def setMode(value: Mode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+        inline def setMode(value: Mode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+        inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
         
-        @scala.inline
-        def setOverlay(value: IOverlay): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+        inline def setOverlay(value: IOverlay): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
+        inline def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
         
-        @scala.inline
-        def setRenderer(value: IRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+        inline def setRenderer(value: IRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+        inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
         
-        @scala.inline
-        def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+        inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
+        inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
         
-        @scala.inline
-        def setTabsMovable(value: Boolean): Self = StObject.set(x, "tabsMovable", value.asInstanceOf[js.Any])
+        inline def setTabsMovable(value: Boolean): Self = StObject.set(x, "tabsMovable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTabsMovableUndefined: Self = StObject.set(x, "tabsMovable", js.undefined)
+        inline def setTabsMovableUndefined: Self = StObject.set(x, "tabsMovable", js.undefined)
       }
     }
     
@@ -577,23 +557,18 @@ object dockpanelMod {
     }
     object IOverlay {
       
-      @scala.inline
-      def apply(hide: Double => Unit, node: HTMLDivElement, show: IOverlayGeometry => Unit): IOverlay = {
+      inline def apply(hide: Double => Unit, node: HTMLDivElement, show: IOverlayGeometry => Unit): IOverlay = {
         val __obj = js.Dynamic.literal(hide = js.Any.fromFunction1(hide), node = node.asInstanceOf[js.Any], show = js.Any.fromFunction1(show))
         __obj.asInstanceOf[IOverlay]
       }
       
-      @scala.inline
-      implicit class IOverlayMutableBuilder[Self <: IOverlay] (val x: Self) extends AnyVal {
+      extension [Self <: IOverlay](x: Self) {
         
-        @scala.inline
-        def setHide(value: Double => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction1(value))
+        inline def setHide(value: Double => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setNode(value: HTMLDivElement): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+        inline def setNode(value: HTMLDivElement): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShow(value: IOverlayGeometry => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
+        inline def setShow(value: IOverlayGeometry => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
       }
     }
     
@@ -624,26 +599,20 @@ object dockpanelMod {
     }
     object IOverlayGeometry {
       
-      @scala.inline
-      def apply(bottom: Double, left: Double, right: Double, top: Double): IOverlayGeometry = {
+      inline def apply(bottom: Double, left: Double, right: Double, top: Double): IOverlayGeometry = {
         val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOverlayGeometry]
       }
       
-      @scala.inline
-      implicit class IOverlayGeometryMutableBuilder[Self <: IOverlayGeometry] (val x: Self) extends AnyVal {
+      extension [Self <: IOverlayGeometry](x: Self) {
         
-        @scala.inline
-        def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+        inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+        inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+        inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+        inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       }
     }
     
@@ -667,11 +636,9 @@ object dockpanelMod {
     trait Mode extends StObject
     object Mode {
       
-      @scala.inline
-      def `multiple-document`: typings.luminoWidgets.luminoWidgetsStrings.`multiple-document` = "multiple-document".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`multiple-document`]
+      inline def `multiple-document`: typings.luminoWidgets.luminoWidgetsStrings.`multiple-document` = "multiple-document".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`multiple-document`]
       
-      @scala.inline
-      def `single-document`: typings.luminoWidgets.luminoWidgetsStrings.`single-document` = "single-document".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`single-document`]
+      inline def `single-document`: typings.luminoWidgets.luminoWidgetsStrings.`single-document` = "single-document".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`single-document`]
     }
   }
 }

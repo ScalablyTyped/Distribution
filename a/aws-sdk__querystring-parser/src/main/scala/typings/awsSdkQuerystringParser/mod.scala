@@ -11,6 +11,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parseQueryString(querystring: String): QueryParameterBag = ^.asInstanceOf[js.Dynamic].applyDynamic("parseQueryString")(querystring.asInstanceOf[js.Any]).asInstanceOf[QueryParameterBag]
+  inline def parseQueryString(querystring: String): QueryParameterBag = ^.asInstanceOf[js.Dynamic].applyDynamic("parseQueryString")(querystring.asInstanceOf[js.Any]).asInstanceOf[QueryParameterBag]
 }

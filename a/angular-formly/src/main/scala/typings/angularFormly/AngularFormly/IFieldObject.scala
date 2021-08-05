@@ -305,235 +305,161 @@ trait IFieldObject extends StObject {
 }
 object IFieldObject {
   
-  @scala.inline
-  def apply(value: js.UndefOr[js.Function0[js.Any]] & (js.UndefOr[js.Function1[/* val */ js.Any, Unit]])): IFieldObject = {
+  inline def apply(value: js.UndefOr[js.Function0[js.Any]] & (js.UndefOr[js.Function1[/* val */ js.Any, Unit]])): IFieldObject = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFieldObject]
   }
   
-  @scala.inline
-  implicit class IFieldObjectMutableBuilder[Self <: IFieldObject] (val x: Self) extends AnyVal {
+  extension [Self <: IFieldObject](x: Self) {
     
-    @scala.inline
-    def setAsyncValidators(value: StringDictionary[String | IExpressionFunction | IValidator]): Self = StObject.set(x, "asyncValidators", value.asInstanceOf[js.Any])
+    inline def setAsyncValidators(value: StringDictionary[String | IExpressionFunction | IValidator]): Self = StObject.set(x, "asyncValidators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsyncValidatorsUndefined: Self = StObject.set(x, "asyncValidators", js.undefined)
+    inline def setAsyncValidatorsUndefined: Self = StObject.set(x, "asyncValidators", js.undefined)
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setController(value: String | js.Function): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+    inline def setController(value: String | js.Function): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
+    inline def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
     
-    @scala.inline
-    def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    @scala.inline
-    def setElementAttributes(value: StringDictionary[String]): Self = StObject.set(x, "elementAttributes", value.asInstanceOf[js.Any])
+    inline def setElementAttributes(value: StringDictionary[String]): Self = StObject.set(x, "elementAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementAttributesUndefined: Self = StObject.set(x, "elementAttributes", js.undefined)
+    inline def setElementAttributesUndefined: Self = StObject.set(x, "elementAttributes", js.undefined)
     
-    @scala.inline
-    def setExpressionProperties(value: StringDictionary[String | IExpressionFunction | IValidator]): Self = StObject.set(x, "expressionProperties", value.asInstanceOf[js.Any])
+    inline def setExpressionProperties(value: StringDictionary[String | IExpressionFunction | IValidator]): Self = StObject.set(x, "expressionProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionPropertiesUndefined: Self = StObject.set(x, "expressionProperties", js.undefined)
+    inline def setExpressionPropertiesUndefined: Self = StObject.set(x, "expressionProperties", js.undefined)
     
-    @scala.inline
-    def setFormControl(value: IFormController | js.Array[IFormController]): Self = StObject.set(x, "formControl", value.asInstanceOf[js.Any])
+    inline def setFormControl(value: IFormController | js.Array[IFormController]): Self = StObject.set(x, "formControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormControlUndefined: Self = StObject.set(x, "formControl", js.undefined)
+    inline def setFormControlUndefined: Self = StObject.set(x, "formControl", js.undefined)
     
-    @scala.inline
-    def setFormControlVarargs(value: IFormController*): Self = StObject.set(x, "formControl", js.Array(value :_*))
+    inline def setFormControlVarargs(value: IFormController*): Self = StObject.set(x, "formControl", js.Array(value :_*))
     
-    @scala.inline
-    def setHide(value: Boolean): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+    inline def setHide(value: Boolean): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideExpression(value: String | IExpressionFunction): Self = StObject.set(x, "hideExpression", value.asInstanceOf[js.Any])
+    inline def setHideExpression(value: String | IExpressionFunction): Self = StObject.set(x, "hideExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideExpressionFunction3(value: (/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope) => js.Any): Self = StObject.set(x, "hideExpression", js.Any.fromFunction3(value))
+    inline def setHideExpressionFunction3(value: (/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope) => js.Any): Self = StObject.set(x, "hideExpression", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setHideExpressionUndefined: Self = StObject.set(x, "hideExpression", js.undefined)
+    inline def setHideExpressionUndefined: Self = StObject.set(x, "hideExpression", js.undefined)
     
-    @scala.inline
-    def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
+    inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setInitialValue(value: js.Any): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
+    inline def setInitialValue(value: js.Any): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialValueUndefined: Self = StObject.set(x, "initialValue", js.undefined)
+    inline def setInitialValueUndefined: Self = StObject.set(x, "initialValue", js.undefined)
     
-    @scala.inline
-    def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setLink(
+    inline def setLink(
       value: (IScope, JQLite, IAttributes, /* controller */ js.UndefOr[IController], /* transclude */ js.UndefOr[ITranscludeFunction]) => Unit
     ): Self = StObject.set(x, "link", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+    inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
-    @scala.inline
-    def setModelOptions(value: IModelOptions): Self = StObject.set(x, "modelOptions", value.asInstanceOf[js.Any])
+    inline def setModelOptions(value: IModelOptions): Self = StObject.set(x, "modelOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelOptionsUndefined: Self = StObject.set(x, "modelOptions", js.undefined)
+    inline def setModelOptionsUndefined: Self = StObject.set(x, "modelOptions", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNgModelAttrs(value: Dictkey): Self = StObject.set(x, "ngModelAttrs", value.asInstanceOf[js.Any])
+    inline def setNgModelAttrs(value: Dictkey): Self = StObject.set(x, "ngModelAttrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNgModelAttrsUndefined: Self = StObject.set(x, "ngModelAttrs", js.undefined)
+    inline def setNgModelAttrsUndefined: Self = StObject.set(x, "ngModelAttrs", js.undefined)
     
-    @scala.inline
-    def setNgModelElAttrs(value: StringDictionary[String]): Self = StObject.set(x, "ngModelElAttrs", value.asInstanceOf[js.Any])
+    inline def setNgModelElAttrs(value: StringDictionary[String]): Self = StObject.set(x, "ngModelElAttrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNgModelElAttrsUndefined: Self = StObject.set(x, "ngModelElAttrs", js.undefined)
+    inline def setNgModelElAttrsUndefined: Self = StObject.set(x, "ngModelElAttrs", js.undefined)
     
-    @scala.inline
-    def setNoFormControl(value: Boolean): Self = StObject.set(x, "noFormControl", value.asInstanceOf[js.Any])
+    inline def setNoFormControl(value: Boolean): Self = StObject.set(x, "noFormControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoFormControlUndefined: Self = StObject.set(x, "noFormControl", js.undefined)
+    inline def setNoFormControlUndefined: Self = StObject.set(x, "noFormControl", js.undefined)
     
-    @scala.inline
-    def setOptionsTypes(value: String | js.Array[String]): Self = StObject.set(x, "optionsTypes", value.asInstanceOf[js.Any])
+    inline def setOptionsTypes(value: String | js.Array[String]): Self = StObject.set(x, "optionsTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsTypesUndefined: Self = StObject.set(x, "optionsTypes", js.undefined)
+    inline def setOptionsTypesUndefined: Self = StObject.set(x, "optionsTypes", js.undefined)
     
-    @scala.inline
-    def setOptionsTypesVarargs(value: String*): Self = StObject.set(x, "optionsTypes", js.Array(value :_*))
+    inline def setOptionsTypesVarargs(value: String*): Self = StObject.set(x, "optionsTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setResetModel(value: () => Unit): Self = StObject.set(x, "resetModel", js.Any.fromFunction0(value))
+    inline def setResetModel(value: () => Unit): Self = StObject.set(x, "resetModel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResetModelUndefined: Self = StObject.set(x, "resetModel", js.undefined)
+    inline def setResetModelUndefined: Self = StObject.set(x, "resetModel", js.undefined)
     
-    @scala.inline
-    def setRunExpressions(value: () => Unit): Self = StObject.set(x, "runExpressions", js.Any.fromFunction0(value))
+    inline def setRunExpressions(value: () => Unit): Self = StObject.set(x, "runExpressions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRunExpressionsUndefined: Self = StObject.set(x, "runExpressions", js.undefined)
+    inline def setRunExpressionsUndefined: Self = StObject.set(x, "runExpressions", js.undefined)
     
-    @scala.inline
-    def setTemplate(
+    inline def setTemplate(
       value: String | (js.Function1[/* fieldConfiguration */ IFieldConfigurationObject, String | IPromise[String]])
     ): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateFunction1(value: /* fieldConfiguration */ IFieldConfigurationObject => String | IPromise[String]): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
+    inline def setTemplateFunction1(value: /* fieldConfiguration */ IFieldConfigurationObject => String | IPromise[String]): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTemplateManipulators(value: ITemplateManipulators): Self = StObject.set(x, "templateManipulators", value.asInstanceOf[js.Any])
+    inline def setTemplateManipulators(value: ITemplateManipulators): Self = StObject.set(x, "templateManipulators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateManipulatorsUndefined: Self = StObject.set(x, "templateManipulators", js.undefined)
+    inline def setTemplateManipulatorsUndefined: Self = StObject.set(x, "templateManipulators", js.undefined)
     
-    @scala.inline
-    def setTemplateOptions(value: ITemplateOptions): Self = StObject.set(x, "templateOptions", value.asInstanceOf[js.Any])
+    inline def setTemplateOptions(value: ITemplateOptions): Self = StObject.set(x, "templateOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateOptionsUndefined: Self = StObject.set(x, "templateOptions", js.undefined)
+    inline def setTemplateOptionsUndefined: Self = StObject.set(x, "templateOptions", js.undefined)
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
-    @scala.inline
-    def setTemplateUrl(
+    inline def setTemplateUrl(
       value: String | (js.Function1[/* fieldConfiguration */ IFieldConfigurationObject, String | IPromise[String]])
     ): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUrlFunction1(value: /* fieldConfiguration */ IFieldConfigurationObject => String | IPromise[String]): Self = StObject.set(x, "templateUrl", js.Any.fromFunction1(value))
+    inline def setTemplateUrlFunction1(value: /* fieldConfiguration */ IFieldConfigurationObject => String | IPromise[String]): Self = StObject.set(x, "templateUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
+    inline def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUpdateInitialValue(value: () => Unit): Self = StObject.set(x, "updateInitialValue", js.Any.fromFunction0(value))
+    inline def setUpdateInitialValue(value: () => Unit): Self = StObject.set(x, "updateInitialValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdateInitialValueUndefined: Self = StObject.set(x, "updateInitialValue", js.undefined)
+    inline def setUpdateInitialValueUndefined: Self = StObject.set(x, "updateInitialValue", js.undefined)
     
-    @scala.inline
-    def setValidation(value: ErrorExistsAndShouldBeVisible): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
+    inline def setValidation(value: ErrorExistsAndShouldBeVisible): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationUndefined: Self = StObject.set(x, "validation", js.undefined)
+    inline def setValidationUndefined: Self = StObject.set(x, "validation", js.undefined)
     
-    @scala.inline
-    def setValidators(value: StringDictionary[String | IExpressionFunction | IValidator]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
+    inline def setValidators(value: StringDictionary[String | IExpressionFunction | IValidator]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidatorsUndefined: Self = StObject.set(x, "validators", js.undefined)
+    inline def setValidatorsUndefined: Self = StObject.set(x, "validators", js.undefined)
     
-    @scala.inline
-    def setValue(value: js.UndefOr[js.Function0[js.Any]] & (js.UndefOr[js.Function1[/* val */ js.Any, Unit]])): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.UndefOr[js.Function0[js.Any]] & (js.UndefOr[js.Function1[/* val */ js.Any, Unit]])): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWatcher(value: IWatcher | js.Array[IWatcher]): Self = StObject.set(x, "watcher", value.asInstanceOf[js.Any])
+    inline def setWatcher(value: IWatcher | js.Array[IWatcher]): Self = StObject.set(x, "watcher", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWatcherUndefined: Self = StObject.set(x, "watcher", js.undefined)
+    inline def setWatcherUndefined: Self = StObject.set(x, "watcher", js.undefined)
     
-    @scala.inline
-    def setWatcherVarargs(value: IWatcher*): Self = StObject.set(x, "watcher", js.Array(value :_*))
+    inline def setWatcherVarargs(value: IWatcher*): Self = StObject.set(x, "watcher", js.Array(value :_*))
     
-    @scala.inline
-    def setWrapper(value: String | js.Array[String]): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+    inline def setWrapper(value: String | js.Array[String]): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
+    inline def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
     
-    @scala.inline
-    def setWrapperVarargs(value: String*): Self = StObject.set(x, "wrapper", js.Array(value :_*))
+    inline def setWrapperVarargs(value: String*): Self = StObject.set(x, "wrapper", js.Array(value :_*))
   }
 }

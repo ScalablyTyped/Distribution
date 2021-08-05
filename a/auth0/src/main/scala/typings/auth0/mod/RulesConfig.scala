@@ -13,16 +13,13 @@ trait RulesConfig extends StObject {
 }
 object RulesConfig {
   
-  @scala.inline
-  def apply(key: String): RulesConfig = {
+  inline def apply(key: String): RulesConfig = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[RulesConfig]
   }
   
-  @scala.inline
-  implicit class RulesConfigMutableBuilder[Self <: RulesConfig] (val x: Self) extends AnyVal {
+  extension [Self <: RulesConfig](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

@@ -11,30 +11,25 @@ object dropboxChooserStrings {
   sealed trait crop
     extends StObject
        with ChooserFileMode
-  @scala.inline
-  def crop: crop = "crop".asInstanceOf[crop]
+  inline def crop: crop = "crop".asInstanceOf[crop]
   
   @js.native
   sealed trait direct extends StObject
-  @scala.inline
-  def direct: direct = "direct".asInstanceOf[direct]
+  inline def direct: direct = "direct".asInstanceOf[direct]
   
   @js.native
   sealed trait fit
     extends StObject
        with ChooserFileMode
-  @scala.inline
-  def fit: fit = "fit".asInstanceOf[fit]
+  inline def fit: fit = "fit".asInstanceOf[fit]
   
   @js.native
   sealed trait fit_one_and_overflow
     extends StObject
        with ChooserFileMode
-  @scala.inline
-  def fit_one_and_overflow: fit_one_and_overflow = "fit_one_and_overflow".asInstanceOf[fit_one_and_overflow]
+  inline def fit_one_and_overflow: fit_one_and_overflow = "fit_one_and_overflow".asInstanceOf[fit_one_and_overflow]
   
   @js.native
   sealed trait preview extends StObject
-  @scala.inline
-  def preview: preview = "preview".asInstanceOf[preview]
+  inline def preview: preview = "preview".asInstanceOf[preview]
 }

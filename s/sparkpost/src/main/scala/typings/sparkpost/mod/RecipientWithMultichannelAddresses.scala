@@ -22,25 +22,19 @@ trait RecipientWithMultichannelAddresses extends StObject {
 }
 object RecipientWithMultichannelAddresses {
   
-  @scala.inline
-  def apply(multichannel_addresses: js.Array[MultichannelAddress]): RecipientWithMultichannelAddresses = {
+  inline def apply(multichannel_addresses: js.Array[MultichannelAddress]): RecipientWithMultichannelAddresses = {
     val __obj = js.Dynamic.literal(multichannel_addresses = multichannel_addresses.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecipientWithMultichannelAddresses]
   }
   
-  @scala.inline
-  implicit class RecipientWithMultichannelAddressesMutableBuilder[Self <: RecipientWithMultichannelAddresses] (val x: Self) extends AnyVal {
+  extension [Self <: RecipientWithMultichannelAddresses](x: Self) {
     
-    @scala.inline
-    def setAddress(value: Address | String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: Address | String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setMultichannel_addresses(value: js.Array[MultichannelAddress]): Self = StObject.set(x, "multichannel_addresses", value.asInstanceOf[js.Any])
+    inline def setMultichannel_addresses(value: js.Array[MultichannelAddress]): Self = StObject.set(x, "multichannel_addresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultichannel_addressesVarargs(value: MultichannelAddress*): Self = StObject.set(x, "multichannel_addresses", js.Array(value :_*))
+    inline def setMultichannel_addressesVarargs(value: MultichannelAddress*): Self = StObject.set(x, "multichannel_addresses", js.Array(value :_*))
   }
 }

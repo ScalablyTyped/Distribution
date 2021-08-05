@@ -13,19 +13,15 @@ trait GetEmailIdentityPoliciesResponse extends StObject {
 }
 object GetEmailIdentityPoliciesResponse {
   
-  @scala.inline
-  def apply(): GetEmailIdentityPoliciesResponse = {
+  inline def apply(): GetEmailIdentityPoliciesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetEmailIdentityPoliciesResponse]
   }
   
-  @scala.inline
-  implicit class GetEmailIdentityPoliciesResponseMutableBuilder[Self <: GetEmailIdentityPoliciesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetEmailIdentityPoliciesResponse](x: Self) {
     
-    @scala.inline
-    def setPolicies(value: PolicyMap): Self = StObject.set(x, "Policies", value.asInstanceOf[js.Any])
+    inline def setPolicies(value: PolicyMap): Self = StObject.set(x, "Policies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoliciesUndefined: Self = StObject.set(x, "Policies", js.undefined)
+    inline def setPoliciesUndefined: Self = StObject.set(x, "Policies", js.undefined)
   }
 }

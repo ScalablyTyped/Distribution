@@ -17,13 +17,10 @@ object WrapInfluenceOnPosition {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def ITERATIVE: `3` = 3.asInstanceOf[`3`]
+    inline def ITERATIVE: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def ONCE_CONCURRENT: `2` = 2.asInstanceOf[`2`]
+    inline def ONCE_CONCURRENT: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def ONCE_SUCCESSIVE: `1` = 1.asInstanceOf[`1`]
+    inline def ONCE_SUCCESSIVE: `1` = 1.asInstanceOf[`1`]
   }
 }

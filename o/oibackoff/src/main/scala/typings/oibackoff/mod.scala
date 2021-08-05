@@ -13,19 +13,14 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def backoff(): BackoffInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("backoff")().asInstanceOf[BackoffInstance]
-  @scala.inline
-  def backoff(opts: BackoffOptions): BackoffInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("backoff")(opts.asInstanceOf[js.Any]).asInstanceOf[BackoffInstance]
+  inline def backoff(): BackoffInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("backoff")().asInstanceOf[BackoffInstance]
+  inline def backoff(opts: BackoffOptions): BackoffInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("backoff")(opts.asInstanceOf[js.Any]).asInstanceOf[BackoffInstance]
   
-  @scala.inline
-  def exponential(n: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("exponential")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def exponential(n: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("exponential")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def fibonacci(n: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fibonacci")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def fibonacci(n: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fibonacci")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def incremental(n: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("incremental")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def incremental(n: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("incremental")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @js.native
   trait BackoffInstance extends StObject {
@@ -238,38 +233,28 @@ object mod {
   }
   object BackoffOptions {
     
-    @scala.inline
-    def apply(): BackoffOptions = {
+    inline def apply(): BackoffOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BackoffOptions]
     }
     
-    @scala.inline
-    implicit class BackoffOptionsMutableBuilder[Self <: BackoffOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BackoffOptions](x: Self) {
       
-      @scala.inline
-      def setAlgorithm(value: incremental | exponential | fibonacci): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+      inline def setAlgorithm(value: incremental | exponential | fibonacci): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
+      inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
       
-      @scala.inline
-      def setDelayRatio(value: Double): Self = StObject.set(x, "delayRatio", value.asInstanceOf[js.Any])
+      inline def setDelayRatio(value: Double): Self = StObject.set(x, "delayRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayRatioUndefined: Self = StObject.set(x, "delayRatio", js.undefined)
+      inline def setDelayRatioUndefined: Self = StObject.set(x, "delayRatio", js.undefined)
       
-      @scala.inline
-      def setMaxDelay(value: Double): Self = StObject.set(x, "maxDelay", value.asInstanceOf[js.Any])
+      inline def setMaxDelay(value: Double): Self = StObject.set(x, "maxDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxDelayUndefined: Self = StObject.set(x, "maxDelay", js.undefined)
+      inline def setMaxDelayUndefined: Self = StObject.set(x, "maxDelay", js.undefined)
       
-      @scala.inline
-      def setMaxTries(value: Double): Self = StObject.set(x, "maxTries", value.asInstanceOf[js.Any])
+      inline def setMaxTries(value: Double): Self = StObject.set(x, "maxTries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxTriesUndefined: Self = StObject.set(x, "maxTries", js.undefined)
+      inline def setMaxTriesUndefined: Self = StObject.set(x, "maxTries", js.undefined)
     }
   }
 }

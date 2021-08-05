@@ -18,25 +18,19 @@ trait WebhookAuthConfiguration extends StObject {
 }
 object WebhookAuthConfiguration {
   
-  @scala.inline
-  def apply(): WebhookAuthConfiguration = {
+  inline def apply(): WebhookAuthConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebhookAuthConfiguration]
   }
   
-  @scala.inline
-  implicit class WebhookAuthConfigurationMutableBuilder[Self <: WebhookAuthConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: WebhookAuthConfiguration](x: Self) {
     
-    @scala.inline
-    def setAllowedIPRange(value: WebhookAuthConfigurationAllowedIPRange): Self = StObject.set(x, "AllowedIPRange", value.asInstanceOf[js.Any])
+    inline def setAllowedIPRange(value: WebhookAuthConfigurationAllowedIPRange): Self = StObject.set(x, "AllowedIPRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedIPRangeUndefined: Self = StObject.set(x, "AllowedIPRange", js.undefined)
+    inline def setAllowedIPRangeUndefined: Self = StObject.set(x, "AllowedIPRange", js.undefined)
     
-    @scala.inline
-    def setSecretToken(value: WebhookAuthConfigurationSecretToken): Self = StObject.set(x, "SecretToken", value.asInstanceOf[js.Any])
+    inline def setSecretToken(value: WebhookAuthConfigurationSecretToken): Self = StObject.set(x, "SecretToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretTokenUndefined: Self = StObject.set(x, "SecretToken", js.undefined)
+    inline def setSecretTokenUndefined: Self = StObject.set(x, "SecretToken", js.undefined)
   }
 }

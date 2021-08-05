@@ -11,19 +11,15 @@ trait CustomListTargetingSetting extends StObject {
 }
 object CustomListTargetingSetting {
   
-  @scala.inline
-  def apply(): CustomListTargetingSetting = {
+  inline def apply(): CustomListTargetingSetting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomListTargetingSetting]
   }
   
-  @scala.inline
-  implicit class CustomListTargetingSettingMutableBuilder[Self <: CustomListTargetingSetting] (val x: Self) extends AnyVal {
+  extension [Self <: CustomListTargetingSetting](x: Self) {
     
-    @scala.inline
-    def setCustomListId(value: String): Self = StObject.set(x, "customListId", value.asInstanceOf[js.Any])
+    inline def setCustomListId(value: String): Self = StObject.set(x, "customListId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomListIdUndefined: Self = StObject.set(x, "customListId", js.undefined)
+    inline def setCustomListIdUndefined: Self = StObject.set(x, "customListId", js.undefined)
   }
 }

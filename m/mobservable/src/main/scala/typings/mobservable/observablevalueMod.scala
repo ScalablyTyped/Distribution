@@ -16,21 +16,21 @@ object observablevalueMod {
   class ObservableValue[T] protected () extends DataNode {
     def this(value: T, mode: ValueMode, context: IContextInfoStruct) = this()
     
-    var _value: T = js.native
+    /* protected */ var _value: T = js.native
     
-    var changeEvent: default = js.native
+    /* protected */ var changeEvent: default = js.native
     
     def get(): T = js.native
     
     /* private */ def makeReferenceValueReactive(value: js.Any): js.Any = js.native
     
-    var mode: ValueMode = js.native
+    /* protected */ var mode: ValueMode = js.native
     
     def observe(listener: js.Function2[/* newValue */ T, /* oldValue */ T, Unit]): Lambda = js.native
     def observe(listener: js.Function2[/* newValue */ T, /* oldValue */ T, Unit], fireImmediately: Boolean): Lambda = js.native
     
     def set(newValue: T): Boolean = js.native
     
-    var value: T = js.native
+    /* protected */ var value: T = js.native
   }
 }

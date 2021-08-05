@@ -10,16 +10,12 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def destroyAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyAll")().asInstanceOf[Unit]
+  inline def destroyAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyAll")().asInstanceOf[Unit]
   
-  @scala.inline
-  def init(): PullToRefreshInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[PullToRefreshInstance]
-  @scala.inline
-  def init(options: Options): PullToRefreshInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[PullToRefreshInstance]
+  inline def init(): PullToRefreshInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[PullToRefreshInstance]
+  inline def init(options: Options): PullToRefreshInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[PullToRefreshInstance]
   
-  @scala.inline
-  def setPassiveMode(isPassive: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPassiveMode")(isPassive.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setPassiveMode(isPassive: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPassiveMode")(isPassive.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait Options extends StObject {
     
@@ -151,140 +147,96 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setClassPrefix(value: String): Self = StObject.set(x, "classPrefix", value.asInstanceOf[js.Any])
+      inline def setClassPrefix(value: String): Self = StObject.set(x, "classPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassPrefixUndefined: Self = StObject.set(x, "classPrefix", js.undefined)
+      inline def setClassPrefixUndefined: Self = StObject.set(x, "classPrefix", js.undefined)
       
-      @scala.inline
-      def setCssProp(value: String): Self = StObject.set(x, "cssProp", value.asInstanceOf[js.Any])
+      inline def setCssProp(value: String): Self = StObject.set(x, "cssProp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssPropUndefined: Self = StObject.set(x, "cssProp", js.undefined)
+      inline def setCssPropUndefined: Self = StObject.set(x, "cssProp", js.undefined)
       
-      @scala.inline
-      def setDistIgnore(value: Double): Self = StObject.set(x, "distIgnore", value.asInstanceOf[js.Any])
+      inline def setDistIgnore(value: Double): Self = StObject.set(x, "distIgnore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistIgnoreUndefined: Self = StObject.set(x, "distIgnore", js.undefined)
+      inline def setDistIgnoreUndefined: Self = StObject.set(x, "distIgnore", js.undefined)
       
-      @scala.inline
-      def setDistMax(value: Double): Self = StObject.set(x, "distMax", value.asInstanceOf[js.Any])
+      inline def setDistMax(value: Double): Self = StObject.set(x, "distMax", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistMaxUndefined: Self = StObject.set(x, "distMax", js.undefined)
+      inline def setDistMaxUndefined: Self = StObject.set(x, "distMax", js.undefined)
       
-      @scala.inline
-      def setDistReload(value: Double): Self = StObject.set(x, "distReload", value.asInstanceOf[js.Any])
+      inline def setDistReload(value: Double): Self = StObject.set(x, "distReload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistReloadUndefined: Self = StObject.set(x, "distReload", js.undefined)
+      inline def setDistReloadUndefined: Self = StObject.set(x, "distReload", js.undefined)
       
-      @scala.inline
-      def setDistThreshold(value: Double): Self = StObject.set(x, "distThreshold", value.asInstanceOf[js.Any])
+      inline def setDistThreshold(value: Double): Self = StObject.set(x, "distThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistThresholdUndefined: Self = StObject.set(x, "distThreshold", js.undefined)
+      inline def setDistThresholdUndefined: Self = StObject.set(x, "distThreshold", js.undefined)
       
-      @scala.inline
-      def setGetMarkup(value: () => String): Self = StObject.set(x, "getMarkup", js.Any.fromFunction0(value))
+      inline def setGetMarkup(value: () => String): Self = StObject.set(x, "getMarkup", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMarkupUndefined: Self = StObject.set(x, "getMarkup", js.undefined)
+      inline def setGetMarkupUndefined: Self = StObject.set(x, "getMarkup", js.undefined)
       
-      @scala.inline
-      def setGetStyles(value: () => String): Self = StObject.set(x, "getStyles", js.Any.fromFunction0(value))
+      inline def setGetStyles(value: () => String): Self = StObject.set(x, "getStyles", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStylesUndefined: Self = StObject.set(x, "getStyles", js.undefined)
+      inline def setGetStylesUndefined: Self = StObject.set(x, "getStyles", js.undefined)
       
-      @scala.inline
-      def setIconArrow(value: String): Self = StObject.set(x, "iconArrow", value.asInstanceOf[js.Any])
+      inline def setIconArrow(value: String): Self = StObject.set(x, "iconArrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconArrowUndefined: Self = StObject.set(x, "iconArrow", js.undefined)
+      inline def setIconArrowUndefined: Self = StObject.set(x, "iconArrow", js.undefined)
       
-      @scala.inline
-      def setIconRefreshing(value: String): Self = StObject.set(x, "iconRefreshing", value.asInstanceOf[js.Any])
+      inline def setIconRefreshing(value: String): Self = StObject.set(x, "iconRefreshing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconRefreshingUndefined: Self = StObject.set(x, "iconRefreshing", js.undefined)
+      inline def setIconRefreshingUndefined: Self = StObject.set(x, "iconRefreshing", js.undefined)
       
-      @scala.inline
-      def setInstructionsPullToRefresh(value: String): Self = StObject.set(x, "instructionsPullToRefresh", value.asInstanceOf[js.Any])
+      inline def setInstructionsPullToRefresh(value: String): Self = StObject.set(x, "instructionsPullToRefresh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstructionsPullToRefreshUndefined: Self = StObject.set(x, "instructionsPullToRefresh", js.undefined)
+      inline def setInstructionsPullToRefreshUndefined: Self = StObject.set(x, "instructionsPullToRefresh", js.undefined)
       
-      @scala.inline
-      def setInstructionsRefreshing(value: String): Self = StObject.set(x, "instructionsRefreshing", value.asInstanceOf[js.Any])
+      inline def setInstructionsRefreshing(value: String): Self = StObject.set(x, "instructionsRefreshing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstructionsRefreshingUndefined: Self = StObject.set(x, "instructionsRefreshing", js.undefined)
+      inline def setInstructionsRefreshingUndefined: Self = StObject.set(x, "instructionsRefreshing", js.undefined)
       
-      @scala.inline
-      def setInstructionsReleaseToRefresh(value: String): Self = StObject.set(x, "instructionsReleaseToRefresh", value.asInstanceOf[js.Any])
+      inline def setInstructionsReleaseToRefresh(value: String): Self = StObject.set(x, "instructionsReleaseToRefresh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstructionsReleaseToRefreshUndefined: Self = StObject.set(x, "instructionsReleaseToRefresh", js.undefined)
+      inline def setInstructionsReleaseToRefreshUndefined: Self = StObject.set(x, "instructionsReleaseToRefresh", js.undefined)
       
-      @scala.inline
-      def setMainElement(value: String): Self = StObject.set(x, "mainElement", value.asInstanceOf[js.Any])
+      inline def setMainElement(value: String): Self = StObject.set(x, "mainElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMainElementUndefined: Self = StObject.set(x, "mainElement", js.undefined)
+      inline def setMainElementUndefined: Self = StObject.set(x, "mainElement", js.undefined)
       
-      @scala.inline
-      def setOnInit(value: () => Unit): Self = StObject.set(x, "onInit", js.Any.fromFunction0(value))
+      inline def setOnInit(value: () => Unit): Self = StObject.set(x, "onInit", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnInitUndefined: Self = StObject.set(x, "onInit", js.undefined)
+      inline def setOnInitUndefined: Self = StObject.set(x, "onInit", js.undefined)
       
-      @scala.inline
-      def setOnRefresh(value: () => js.Thenable[Unit] | Unit): Self = StObject.set(x, "onRefresh", js.Any.fromFunction0(value))
+      inline def setOnRefresh(value: () => js.Thenable[Unit] | Unit): Self = StObject.set(x, "onRefresh", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnRefreshUndefined: Self = StObject.set(x, "onRefresh", js.undefined)
+      inline def setOnRefreshUndefined: Self = StObject.set(x, "onRefresh", js.undefined)
       
-      @scala.inline
-      def setPtrElement(value: String): Self = StObject.set(x, "ptrElement", value.asInstanceOf[js.Any])
+      inline def setPtrElement(value: String): Self = StObject.set(x, "ptrElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPtrElementUndefined: Self = StObject.set(x, "ptrElement", js.undefined)
+      inline def setPtrElementUndefined: Self = StObject.set(x, "ptrElement", js.undefined)
       
-      @scala.inline
-      def setRefreshTimeout(value: Double): Self = StObject.set(x, "refreshTimeout", value.asInstanceOf[js.Any])
+      inline def setRefreshTimeout(value: Double): Self = StObject.set(x, "refreshTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefreshTimeoutUndefined: Self = StObject.set(x, "refreshTimeout", js.undefined)
+      inline def setRefreshTimeoutUndefined: Self = StObject.set(x, "refreshTimeout", js.undefined)
       
-      @scala.inline
-      def setResistanceFunction(value: /* input */ Double => Double): Self = StObject.set(x, "resistanceFunction", js.Any.fromFunction1(value))
+      inline def setResistanceFunction(value: /* input */ Double => Double): Self = StObject.set(x, "resistanceFunction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResistanceFunctionUndefined: Self = StObject.set(x, "resistanceFunction", js.undefined)
+      inline def setResistanceFunctionUndefined: Self = StObject.set(x, "resistanceFunction", js.undefined)
       
-      @scala.inline
-      def setShouldPullToRefresh(value: () => Boolean): Self = StObject.set(x, "shouldPullToRefresh", js.Any.fromFunction0(value))
+      inline def setShouldPullToRefresh(value: () => Boolean): Self = StObject.set(x, "shouldPullToRefresh", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShouldPullToRefreshUndefined: Self = StObject.set(x, "shouldPullToRefresh", js.undefined)
+      inline def setShouldPullToRefreshUndefined: Self = StObject.set(x, "shouldPullToRefresh", js.undefined)
       
-      @scala.inline
-      def setTriggerElement(value: String): Self = StObject.set(x, "triggerElement", value.asInstanceOf[js.Any])
+      inline def setTriggerElement(value: String): Self = StObject.set(x, "triggerElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriggerElementUndefined: Self = StObject.set(x, "triggerElement", js.undefined)
+      inline def setTriggerElementUndefined: Self = StObject.set(x, "triggerElement", js.undefined)
     }
   }
   
@@ -294,17 +246,14 @@ object mod {
   }
   object PullToRefreshInstance {
     
-    @scala.inline
-    def apply(destroy: () => Unit): PullToRefreshInstance = {
+    inline def apply(destroy: () => Unit): PullToRefreshInstance = {
       val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy))
       __obj.asInstanceOf[PullToRefreshInstance]
     }
     
-    @scala.inline
-    implicit class PullToRefreshInstanceMutableBuilder[Self <: PullToRefreshInstance] (val x: Self) extends AnyVal {
+    extension [Self <: PullToRefreshInstance](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     }
   }
 }

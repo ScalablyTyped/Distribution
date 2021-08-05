@@ -21,19 +21,15 @@ trait PersistentVolumeClaimVolumeSource extends StObject {
 }
 object PersistentVolumeClaimVolumeSource {
   
-  @scala.inline
-  def apply(claimName: String, readOnly: Boolean): PersistentVolumeClaimVolumeSource = {
+  inline def apply(claimName: String, readOnly: Boolean): PersistentVolumeClaimVolumeSource = {
     val __obj = js.Dynamic.literal(claimName = claimName.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[PersistentVolumeClaimVolumeSource]
   }
   
-  @scala.inline
-  implicit class PersistentVolumeClaimVolumeSourceMutableBuilder[Self <: PersistentVolumeClaimVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: PersistentVolumeClaimVolumeSource](x: Self) {
     
-    @scala.inline
-    def setClaimName(value: String): Self = StObject.set(x, "claimName", value.asInstanceOf[js.Any])
+    inline def setClaimName(value: String): Self = StObject.set(x, "claimName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
   }
 }

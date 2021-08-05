@@ -42,8 +42,7 @@ object countrySpecs {
   }
   object ICountrySpec {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       default_currency: String,
       id: String,
       supported_payment_currencies: js.Array[String],
@@ -55,29 +54,21 @@ object countrySpecs {
       __obj.asInstanceOf[ICountrySpec]
     }
     
-    @scala.inline
-    implicit class ICountrySpecMutableBuilder[Self <: ICountrySpec] (val x: Self) extends AnyVal {
+    extension [Self <: ICountrySpec](x: Self) {
       
-      @scala.inline
-      def setDefault_currency(value: String): Self = StObject.set(x, "default_currency", value.asInstanceOf[js.Any])
+      inline def setDefault_currency(value: String): Self = StObject.set(x, "default_currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject(value: country_spec): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: country_spec): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupported_payment_currencies(value: js.Array[String]): Self = StObject.set(x, "supported_payment_currencies", value.asInstanceOf[js.Any])
+      inline def setSupported_payment_currencies(value: js.Array[String]): Self = StObject.set(x, "supported_payment_currencies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupported_payment_currenciesVarargs(value: String*): Self = StObject.set(x, "supported_payment_currencies", js.Array(value :_*))
+      inline def setSupported_payment_currenciesVarargs(value: String*): Self = StObject.set(x, "supported_payment_currencies", js.Array(value :_*))
       
-      @scala.inline
-      def setSupported_payment_methods(value: js.Array[String]): Self = StObject.set(x, "supported_payment_methods", value.asInstanceOf[js.Any])
+      inline def setSupported_payment_methods(value: js.Array[String]): Self = StObject.set(x, "supported_payment_methods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupported_payment_methodsVarargs(value: String*): Self = StObject.set(x, "supported_payment_methods", js.Array(value :_*))
+      inline def setSupported_payment_methodsVarargs(value: String*): Self = StObject.set(x, "supported_payment_methods", js.Array(value :_*))
       
-      @scala.inline
-      def setVerification_fields(value: Company): Self = StObject.set(x, "verification_fields", value.asInstanceOf[js.Any])
+      inline def setVerification_fields(value: Company): Self = StObject.set(x, "verification_fields", value.asInstanceOf[js.Any])
     }
   }
 }

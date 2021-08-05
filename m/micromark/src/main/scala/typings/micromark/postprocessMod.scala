@@ -11,6 +11,5 @@ object postprocessMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(events: js.Array[Event]): js.Array[Event] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(events.asInstanceOf[js.Any]).asInstanceOf[js.Array[Event]]
+  inline def default(events: js.Array[Event]): js.Array[Event] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(events.asInstanceOf[js.Any]).asInstanceOf[js.Array[Event]]
 }

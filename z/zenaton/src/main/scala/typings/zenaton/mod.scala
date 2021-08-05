@@ -62,8 +62,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def init(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def init(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   @JSImport("zenaton", "Engine")
@@ -90,15 +89,13 @@ object mod {
     
     object EnvironmentNotSetError {
       
-      @scala.inline
-      def apply(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def apply(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       @JSImport("zenaton", "Errors.EnvironmentNotSetError")
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def captureStackTrace(p0: js.Any, p1: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("captureStackTrace")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      inline def captureStackTrace(p0: js.Any, p1: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("captureStackTrace")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       
       @JSImport("zenaton", "Errors.EnvironmentNotSetError.stackTraceLimit")
       @js.native
@@ -107,15 +104,13 @@ object mod {
     
     object ExternalZenatonError {
       
-      @scala.inline
-      def apply(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def apply(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       @JSImport("zenaton", "Errors.ExternalZenatonError")
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def captureStackTrace(p0: js.Any, p1: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("captureStackTrace")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      inline def captureStackTrace(p0: js.Any, p1: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("captureStackTrace")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       
       @JSImport("zenaton", "Errors.ExternalZenatonError.stackTraceLimit")
       @js.native
@@ -124,15 +119,13 @@ object mod {
     
     object InternalZenatonError {
       
-      @scala.inline
-      def apply(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def apply(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       @JSImport("zenaton", "Errors.InternalZenatonError")
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def captureStackTrace(p0: js.Any, p1: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("captureStackTrace")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      inline def captureStackTrace(p0: js.Any, p1: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("captureStackTrace")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       
       @JSImport("zenaton", "Errors.InternalZenatonError.stackTraceLimit")
       @js.native
@@ -141,15 +134,13 @@ object mod {
     
     object InvalidArgumentError {
       
-      @scala.inline
-      def apply(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def apply(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       @JSImport("zenaton", "Errors.InvalidArgumentError")
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def captureStackTrace(p0: js.Any, p1: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("captureStackTrace")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      inline def captureStackTrace(p0: js.Any, p1: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("captureStackTrace")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       
       @JSImport("zenaton", "Errors.InvalidArgumentError.stackTraceLimit")
       @js.native
@@ -158,15 +149,13 @@ object mod {
     
     object ModifiedDeciderError {
       
-      @scala.inline
-      def apply(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def apply(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       @JSImport("zenaton", "Errors.ModifiedDeciderError")
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def captureStackTrace(p0: js.Any, p1: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("captureStackTrace")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      inline def captureStackTrace(p0: js.Any, p1: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("captureStackTrace")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       
       @JSImport("zenaton", "Errors.ModifiedDeciderError.stackTraceLimit")
       @js.native
@@ -175,15 +164,13 @@ object mod {
     
     object ScheduledBoxError {
       
-      @scala.inline
-      def apply(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def apply(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       @JSImport("zenaton", "Errors.ScheduledBoxError")
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def captureStackTrace(p0: js.Any, p1: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("captureStackTrace")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      inline def captureStackTrace(p0: js.Any, p1: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("captureStackTrace")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       
       @JSImport("zenaton", "Errors.ScheduledBoxError.stackTraceLimit")
       @js.native
@@ -192,15 +179,13 @@ object mod {
     
     object ZenatonError {
       
-      @scala.inline
-      def apply(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def apply(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       @JSImport("zenaton", "Errors.ZenatonError")
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def captureStackTrace(p0: js.Any, p1: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("captureStackTrace")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      inline def captureStackTrace(p0: js.Any, p1: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("captureStackTrace")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       
       @JSImport("zenaton", "Errors.ZenatonError.stackTraceLimit")
       @js.native
@@ -260,8 +245,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def init(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def init(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   @JSImport("zenaton", "Parallel")
@@ -274,11 +258,9 @@ object mod {
     def execute(args: js.Any*): js.Any = js.native
   }
   
-  @scala.inline
-  def Task(name: js.Any, task: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("Task")(name.asInstanceOf[js.Any], task.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def Task(name: js.Any, task: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("Task")(name.asInstanceOf[js.Any], task.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def Version(name: js.Any, implementation: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("Version")(name.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def Version(name: js.Any, implementation: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("Version")(name.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   @JSImport("zenaton", "Wait")
   @js.native
@@ -326,15 +308,12 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def methods(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("methods")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def methods(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("methods")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def timezone(timezone: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("timezone")(timezone.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def timezone(timezone: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("timezone")(timezone.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
-  @scala.inline
-  def Workflow(name: js.Any, flow: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("Workflow")(name.asInstanceOf[js.Any], flow.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def Workflow(name: js.Any, flow: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("Workflow")(name.asInstanceOf[js.Any], flow.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   object infos {
     
@@ -345,14 +324,12 @@ object mod {
     @JSImport("zenaton", "infos.appVersion")
     @js.native
     def appVersion: String = js.native
-    @scala.inline
-    def appVersion_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("appVersion")(x.asInstanceOf[js.Any])
+    inline def appVersion_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("appVersion")(x.asInstanceOf[js.Any])
     
     @JSImport("zenaton", "infos.codePath")
     @js.native
     def codePath: String = js.native
-    @scala.inline
-    def codePath_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("codePath")(x.asInstanceOf[js.Any])
+    inline def codePath_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("codePath")(x.asInstanceOf[js.Any])
   }
   
   object serializer {
@@ -365,11 +342,9 @@ object mod {
     @js.native
     val CURRENT_VERSION: String = js.native
     
-    @scala.inline
-    def decode(data: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(data.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def decode(data: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(data.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def encode(data: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(data.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def encode(data: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(data.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   object taskManager {
@@ -378,14 +353,11 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getClass_(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getClass")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def getClass_(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getClass")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def getTask(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTask")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def getTask(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTask")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def setClass(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("setClass")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def setClass(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("setClass")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   object workflowManager {
@@ -394,13 +366,10 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getClass_(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getClass")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def getClass_(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getClass")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def getWorkflow(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getWorkflow")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def getWorkflow(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getWorkflow")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def setClass(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("setClass")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def setClass(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("setClass")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
 }

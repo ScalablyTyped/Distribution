@@ -19,8 +19,7 @@ trait IConfiguration extends StObject {
 }
 object IConfiguration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dimensions: IDimension,
     maxImageSize: Double,
     stylesheets: js.Array[String],
@@ -30,25 +29,18 @@ object IConfiguration {
     __obj.asInstanceOf[IConfiguration]
   }
   
-  @scala.inline
-  implicit class IConfigurationMutableBuilder[Self <: IConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: IConfiguration](x: Self) {
     
-    @scala.inline
-    def setDimensions(value: IDimension): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: IDimension): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxImageSize(value: Double): Self = StObject.set(x, "maxImageSize", value.asInstanceOf[js.Any])
+    inline def setMaxImageSize(value: Double): Self = StObject.set(x, "maxImageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesheets(value: js.Array[String]): Self = StObject.set(x, "stylesheets", value.asInstanceOf[js.Any])
+    inline def setStylesheets(value: js.Array[String]): Self = StObject.set(x, "stylesheets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesheetsVarargs(value: String*): Self = StObject.set(x, "stylesheets", js.Array(value :_*))
+    inline def setStylesheetsVarargs(value: String*): Self = StObject.set(x, "stylesheets", js.Array(value :_*))
     
-    @scala.inline
-    def setToolbar(value: js.Array[String]): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
+    inline def setToolbar(value: js.Array[String]): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolbarVarargs(value: String*): Self = StObject.set(x, "toolbar", js.Array(value :_*))
+    inline def setToolbarVarargs(value: String*): Self = StObject.set(x, "toolbar", js.Array(value :_*))
   }
 }

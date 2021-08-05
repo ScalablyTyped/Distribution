@@ -24,7 +24,7 @@ object loggerSimpleConsoleLoggerMod {
     def this(options: Boolean) = this()
     def this(options: all) = this()
     
-    var options: js.Any = js.native
+    /* private */ var options: js.Any = js.native
     
     /**
       * Converts parameters to a string.

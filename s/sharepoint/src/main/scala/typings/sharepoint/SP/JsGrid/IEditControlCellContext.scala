@@ -29,8 +29,7 @@ trait IEditControlCellContext
 }
 object IEditControlCellContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Hide: HTMLElement => Unit,
     NotifyEditComplete: () => Unit,
     NotifyExpandControl: () => Unit,
@@ -52,31 +51,22 @@ object IEditControlCellContext {
     __obj.asInstanceOf[IEditControlCellContext]
   }
   
-  @scala.inline
-  implicit class IEditControlCellContextMutableBuilder[Self <: IEditControlCellContext] (val x: Self) extends AnyVal {
+  extension [Self <: IEditControlCellContext](x: Self) {
     
-    @scala.inline
-    def setCellHeight(value: Double): Self = StObject.set(x, "cellHeight", value.asInstanceOf[js.Any])
+    inline def setCellHeight(value: Double): Self = StObject.set(x, "cellHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellRect(value: js.Any): Self = StObject.set(x, "cellRect", value.asInstanceOf[js.Any])
+    inline def setCellRect(value: js.Any): Self = StObject.set(x, "cellRect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellStyle(value: js.Any): Self = StObject.set(x, "cellStyle", value.asInstanceOf[js.Any])
+    inline def setCellStyle(value: js.Any): Self = StObject.set(x, "cellStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellWidth(value: Double): Self = StObject.set(x, "cellWidth", value.asInstanceOf[js.Any])
+    inline def setCellWidth(value: Double): Self = StObject.set(x, "cellWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHide(value: HTMLElement => Unit): Self = StObject.set(x, "Hide", js.Any.fromFunction1(value))
+    inline def setHide(value: HTMLElement => Unit): Self = StObject.set(x, "Hide", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNotifyEditComplete(value: () => Unit): Self = StObject.set(x, "NotifyEditComplete", js.Any.fromFunction0(value))
+    inline def setNotifyEditComplete(value: () => Unit): Self = StObject.set(x, "NotifyEditComplete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNotifyExpandControl(value: () => Unit): Self = StObject.set(x, "NotifyExpandControl", js.Any.fromFunction0(value))
+    inline def setNotifyExpandControl(value: () => Unit): Self = StObject.set(x, "NotifyExpandControl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShow(value: HTMLElement => Unit): Self = StObject.set(x, "Show", js.Any.fromFunction1(value))
+    inline def setShow(value: HTMLElement => Unit): Self = StObject.set(x, "Show", js.Any.fromFunction1(value))
   }
 }

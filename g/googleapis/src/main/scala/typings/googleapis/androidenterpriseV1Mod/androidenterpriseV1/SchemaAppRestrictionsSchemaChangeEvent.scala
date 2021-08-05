@@ -20,19 +20,15 @@ trait SchemaAppRestrictionsSchemaChangeEvent extends StObject {
 }
 object SchemaAppRestrictionsSchemaChangeEvent {
   
-  @scala.inline
-  def apply(): SchemaAppRestrictionsSchemaChangeEvent = {
+  inline def apply(): SchemaAppRestrictionsSchemaChangeEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAppRestrictionsSchemaChangeEvent]
   }
   
-  @scala.inline
-  implicit class SchemaAppRestrictionsSchemaChangeEventMutableBuilder[Self <: SchemaAppRestrictionsSchemaChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAppRestrictionsSchemaChangeEvent](x: Self) {
     
-    @scala.inline
-    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
+    inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
   }
 }

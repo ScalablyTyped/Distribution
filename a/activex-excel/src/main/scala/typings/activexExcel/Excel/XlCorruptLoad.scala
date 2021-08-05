@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlCorruptLoad extends StObject
 object XlCorruptLoad {
   
-  @scala.inline
-  def xlExtractData: `2` = 2.asInstanceOf[`2`]
+  inline def xlExtractData: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlNormalLoad: `0` = 0.asInstanceOf[`0`]
+  inline def xlNormalLoad: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xlRepairFile: `1` = 1.asInstanceOf[`1`]
+  inline def xlRepairFile: `1` = 1.asInstanceOf[`1`]
 }

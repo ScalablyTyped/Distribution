@@ -19,8 +19,7 @@ trait IContactInstantMessageField
 }
 object IContactInstantMessageField {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     category: ContactFieldCategory,
     displayText: String,
     launchUri: Uri,
@@ -35,19 +34,14 @@ object IContactInstantMessageField {
     __obj.asInstanceOf[IContactInstantMessageField]
   }
   
-  @scala.inline
-  implicit class IContactInstantMessageFieldMutableBuilder[Self <: IContactInstantMessageField] (val x: Self) extends AnyVal {
+  extension [Self <: IContactInstantMessageField](x: Self) {
     
-    @scala.inline
-    def setDisplayText(value: String): Self = StObject.set(x, "displayText", value.asInstanceOf[js.Any])
+    inline def setDisplayText(value: String): Self = StObject.set(x, "displayText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchUri(value: Uri): Self = StObject.set(x, "launchUri", value.asInstanceOf[js.Any])
+    inline def setLaunchUri(value: Uri): Self = StObject.set(x, "launchUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
   }
 }

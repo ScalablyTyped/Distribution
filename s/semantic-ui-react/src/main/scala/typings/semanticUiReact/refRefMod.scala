@@ -44,8 +44,7 @@ object refRefMod {
        with /* key */ StringDictionary[js.Any]
   object RefProps {
     
-    @scala.inline
-    def apply(): RefProps = {
+    inline def apply(): RefProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RefProps]
     }
@@ -65,32 +64,24 @@ object refRefMod {
   }
   object StrictRefProps {
     
-    @scala.inline
-    def apply(): StrictRefProps = {
+    inline def apply(): StrictRefProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictRefProps]
     }
     
-    @scala.inline
-    implicit class StrictRefPropsMutableBuilder[Self <: StrictRefProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictRefProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setInnerRef(value: typings.react.mod.Ref[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      inline def setInnerRef(value: typings.react.mod.Ref[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      inline def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
+      inline def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
       
-      @scala.inline
-      def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
+      inline def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
     }
   }
 }

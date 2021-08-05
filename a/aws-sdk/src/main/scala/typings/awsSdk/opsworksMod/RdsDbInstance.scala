@@ -53,67 +53,47 @@ trait RdsDbInstance extends StObject {
 }
 object RdsDbInstance {
   
-  @scala.inline
-  def apply(): RdsDbInstance = {
+  inline def apply(): RdsDbInstance = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RdsDbInstance]
   }
   
-  @scala.inline
-  implicit class RdsDbInstanceMutableBuilder[Self <: RdsDbInstance] (val x: Self) extends AnyVal {
+  extension [Self <: RdsDbInstance](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "Address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "Address", js.undefined)
     
-    @scala.inline
-    def setDbInstanceIdentifier(value: String): Self = StObject.set(x, "DbInstanceIdentifier", value.asInstanceOf[js.Any])
+    inline def setDbInstanceIdentifier(value: String): Self = StObject.set(x, "DbInstanceIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDbInstanceIdentifierUndefined: Self = StObject.set(x, "DbInstanceIdentifier", js.undefined)
+    inline def setDbInstanceIdentifierUndefined: Self = StObject.set(x, "DbInstanceIdentifier", js.undefined)
     
-    @scala.inline
-    def setDbPassword(value: String): Self = StObject.set(x, "DbPassword", value.asInstanceOf[js.Any])
+    inline def setDbPassword(value: String): Self = StObject.set(x, "DbPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDbPasswordUndefined: Self = StObject.set(x, "DbPassword", js.undefined)
+    inline def setDbPasswordUndefined: Self = StObject.set(x, "DbPassword", js.undefined)
     
-    @scala.inline
-    def setDbUser(value: String): Self = StObject.set(x, "DbUser", value.asInstanceOf[js.Any])
+    inline def setDbUser(value: String): Self = StObject.set(x, "DbUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDbUserUndefined: Self = StObject.set(x, "DbUser", js.undefined)
+    inline def setDbUserUndefined: Self = StObject.set(x, "DbUser", js.undefined)
     
-    @scala.inline
-    def setEngine(value: String): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
+    inline def setEngine(value: String): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineUndefined: Self = StObject.set(x, "Engine", js.undefined)
+    inline def setEngineUndefined: Self = StObject.set(x, "Engine", js.undefined)
     
-    @scala.inline
-    def setMissingOnRds(value: Boolean): Self = StObject.set(x, "MissingOnRds", value.asInstanceOf[js.Any])
+    inline def setMissingOnRds(value: Boolean): Self = StObject.set(x, "MissingOnRds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMissingOnRdsUndefined: Self = StObject.set(x, "MissingOnRds", js.undefined)
+    inline def setMissingOnRdsUndefined: Self = StObject.set(x, "MissingOnRds", js.undefined)
     
-    @scala.inline
-    def setRdsDbInstanceArn(value: String): Self = StObject.set(x, "RdsDbInstanceArn", value.asInstanceOf[js.Any])
+    inline def setRdsDbInstanceArn(value: String): Self = StObject.set(x, "RdsDbInstanceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRdsDbInstanceArnUndefined: Self = StObject.set(x, "RdsDbInstanceArn", js.undefined)
+    inline def setRdsDbInstanceArnUndefined: Self = StObject.set(x, "RdsDbInstanceArn", js.undefined)
     
-    @scala.inline
-    def setRegion(value: String): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: String): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
     
-    @scala.inline
-    def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
+    inline def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
+    inline def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
   }
 }

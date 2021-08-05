@@ -16,17 +16,14 @@ object typesCommentNotCreatedByCallerExceptionMod {
   }
   object CommentNotCreatedByCallerException {
     
-    @scala.inline
-    def apply(): CommentNotCreatedByCallerException = {
+    inline def apply(): CommentNotCreatedByCallerException = {
       val __obj = js.Dynamic.literal(name = "CommentNotCreatedByCallerException")
       __obj.asInstanceOf[CommentNotCreatedByCallerException]
     }
     
-    @scala.inline
-    implicit class CommentNotCreatedByCallerExceptionMutableBuilder[Self <: CommentNotCreatedByCallerException] (val x: Self) extends AnyVal {
+    extension [Self <: CommentNotCreatedByCallerException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.CommentNotCreatedByCallerException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

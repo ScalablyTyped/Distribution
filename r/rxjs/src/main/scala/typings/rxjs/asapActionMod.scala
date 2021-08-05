@@ -27,7 +27,7 @@ object asapActionMod {
     /* protected */ def requestAsyncId(scheduler: AsapScheduler, id: js.Any, delay: Double): js.Any = js.native
     /* protected */ def requestAsyncId(scheduler: AsapScheduler, id: Unit, delay: Double): js.Any = js.native
     
-    @JSName("scheduler")
+    /* protected */ @JSName("scheduler")
     var scheduler_AsapAction: AsapScheduler = js.native
   }
 }

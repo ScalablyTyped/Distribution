@@ -8,6 +8,5 @@ object roxBrowserStrings {
   
   @js.native
   sealed trait verbose extends StObject
-  @scala.inline
-  def verbose: verbose = "verbose".asInstanceOf[verbose]
+  inline def verbose: verbose = "verbose".asInstanceOf[verbose]
 }

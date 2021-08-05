@@ -10,16 +10,13 @@ trait BrowserPublic extends StObject {
 }
 object BrowserPublic {
   
-  @scala.inline
-  def apply(getUnityObject: Double => Unity): BrowserPublic = {
+  inline def apply(getUnityObject: Double => Unity): BrowserPublic = {
     val __obj = js.Dynamic.literal(getUnityObject = js.Any.fromFunction1(getUnityObject))
     __obj.asInstanceOf[BrowserPublic]
   }
   
-  @scala.inline
-  implicit class BrowserPublicMutableBuilder[Self <: BrowserPublic] (val x: Self) extends AnyVal {
+  extension [Self <: BrowserPublic](x: Self) {
     
-    @scala.inline
-    def setGetUnityObject(value: Double => Unity): Self = StObject.set(x, "getUnityObject", js.Any.fromFunction1(value))
+    inline def setGetUnityObject(value: Double => Unity): Self = StObject.set(x, "getUnityObject", js.Any.fromFunction1(value))
   }
 }

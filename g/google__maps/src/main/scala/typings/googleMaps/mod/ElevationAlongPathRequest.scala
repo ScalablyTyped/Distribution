@@ -20,22 +20,17 @@ trait ElevationAlongPathRequest extends StObject {
 }
 object ElevationAlongPathRequest {
   
-  @scala.inline
-  def apply(path: js.Array[LatLng] | String, samples: Double): ElevationAlongPathRequest = {
+  inline def apply(path: js.Array[LatLng] | String, samples: Double): ElevationAlongPathRequest = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], samples = samples.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElevationAlongPathRequest]
   }
   
-  @scala.inline
-  implicit class ElevationAlongPathRequestMutableBuilder[Self <: ElevationAlongPathRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ElevationAlongPathRequest](x: Self) {
     
-    @scala.inline
-    def setPath(value: js.Array[LatLng] | String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: js.Array[LatLng] | String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathVarargs(value: LatLng*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: LatLng*): Self = StObject.set(x, "path", js.Array(value :_*))
     
-    @scala.inline
-    def setSamples(value: Double): Self = StObject.set(x, "samples", value.asInstanceOf[js.Any])
+    inline def setSamples(value: Double): Self = StObject.set(x, "samples", value.asInstanceOf[js.Any])
   }
 }

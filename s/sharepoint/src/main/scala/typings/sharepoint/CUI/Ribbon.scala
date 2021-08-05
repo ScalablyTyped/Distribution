@@ -31,8 +31,7 @@ trait Ribbon
 }
 object Ribbon {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _lastHeightUpdate: Double,
     _lastLeftUpdate: Double,
     _lastTopUpdate: Double,
@@ -87,37 +86,26 @@ object Ribbon {
     __obj.asInstanceOf[Ribbon]
   }
   
-  @scala.inline
-  implicit class RibbonMutableBuilder[Self <: Ribbon] (val x: Self) extends AnyVal {
+  extension [Self <: Ribbon](x: Self) {
     
-    @scala.inline
-    def setAddChildAtIndex(value: (js.Any, Double) => scala.Unit): Self = StObject.set(x, "addChildAtIndex", js.Any.fromFunction2(value))
+    inline def setAddChildAtIndex(value: (js.Any, Double) => scala.Unit): Self = StObject.set(x, "addChildAtIndex", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAddContextualGroup(value: (String, String, js.Any, String) => js.Any): Self = StObject.set(x, "addContextualGroup", js.Any.fromFunction4(value))
+    inline def setAddContextualGroup(value: (String, String, js.Any, String) => js.Any): Self = StObject.set(x, "addContextualGroup", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setGet_contextualGroupIds(value: () => js.Array[String]): Self = StObject.set(x, "get_contextualGroupIds", js.Any.fromFunction0(value))
+    inline def setGet_contextualGroupIds(value: () => js.Array[String]): Self = StObject.set(x, "get_contextualGroupIds", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHideContextualGroup(value: String => scala.Unit): Self = StObject.set(x, "hideContextualGroup", js.Any.fromFunction1(value))
+    inline def setHideContextualGroup(value: String => scala.Unit): Self = StObject.set(x, "hideContextualGroup", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRefresh(value: () => scala.Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
+    inline def setRefresh(value: () => scala.Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveContextualGroup(value: String => scala.Unit): Self = StObject.set(x, "removeContextualGroup", js.Any.fromFunction1(value))
+    inline def setRemoveContextualGroup(value: String => scala.Unit): Self = StObject.set(x, "removeContextualGroup", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFocus(value: () => scala.Unit): Self = StObject.set(x, "setFocus", js.Any.fromFunction0(value))
+    inline def setSetFocus(value: () => scala.Unit): Self = StObject.set(x, "setFocus", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetFocusOnCurrentTab(value: () => scala.Unit): Self = StObject.set(x, "setFocusOnCurrentTab", js.Any.fromFunction0(value))
+    inline def setSetFocusOnCurrentTab(value: () => scala.Unit): Self = StObject.set(x, "setFocusOnCurrentTab", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetFocusOnRibbon(value: () => scala.Unit): Self = StObject.set(x, "setFocusOnRibbon", js.Any.fromFunction0(value))
+    inline def setSetFocusOnRibbon(value: () => scala.Unit): Self = StObject.set(x, "setFocusOnRibbon", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShowContextualGroup(value: String => scala.Unit): Self = StObject.set(x, "showContextualGroup", js.Any.fromFunction1(value))
+    inline def setShowContextualGroup(value: String => scala.Unit): Self = StObject.set(x, "showContextualGroup", js.Any.fromFunction1(value))
   }
 }

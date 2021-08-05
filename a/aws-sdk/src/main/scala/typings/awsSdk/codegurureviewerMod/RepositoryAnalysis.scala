@@ -13,16 +13,13 @@ trait RepositoryAnalysis extends StObject {
 }
 object RepositoryAnalysis {
   
-  @scala.inline
-  def apply(RepositoryHead: RepositoryHeadSourceCodeType): RepositoryAnalysis = {
+  inline def apply(RepositoryHead: RepositoryHeadSourceCodeType): RepositoryAnalysis = {
     val __obj = js.Dynamic.literal(RepositoryHead = RepositoryHead.asInstanceOf[js.Any])
     __obj.asInstanceOf[RepositoryAnalysis]
   }
   
-  @scala.inline
-  implicit class RepositoryAnalysisMutableBuilder[Self <: RepositoryAnalysis] (val x: Self) extends AnyVal {
+  extension [Self <: RepositoryAnalysis](x: Self) {
     
-    @scala.inline
-    def setRepositoryHead(value: RepositoryHeadSourceCodeType): Self = StObject.set(x, "RepositoryHead", value.asInstanceOf[js.Any])
+    inline def setRepositoryHead(value: RepositoryHeadSourceCodeType): Self = StObject.set(x, "RepositoryHead", value.asInstanceOf[js.Any])
   }
 }

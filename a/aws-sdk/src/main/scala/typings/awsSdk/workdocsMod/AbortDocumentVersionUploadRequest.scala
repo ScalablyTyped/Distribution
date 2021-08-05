@@ -23,25 +23,19 @@ trait AbortDocumentVersionUploadRequest extends StObject {
 }
 object AbortDocumentVersionUploadRequest {
   
-  @scala.inline
-  def apply(DocumentId: ResourceIdType, VersionId: DocumentVersionIdType): AbortDocumentVersionUploadRequest = {
+  inline def apply(DocumentId: ResourceIdType, VersionId: DocumentVersionIdType): AbortDocumentVersionUploadRequest = {
     val __obj = js.Dynamic.literal(DocumentId = DocumentId.asInstanceOf[js.Any], VersionId = VersionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AbortDocumentVersionUploadRequest]
   }
   
-  @scala.inline
-  implicit class AbortDocumentVersionUploadRequestMutableBuilder[Self <: AbortDocumentVersionUploadRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AbortDocumentVersionUploadRequest](x: Self) {
     
-    @scala.inline
-    def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
+    inline def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
+    inline def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
     
-    @scala.inline
-    def setDocumentId(value: ResourceIdType): Self = StObject.set(x, "DocumentId", value.asInstanceOf[js.Any])
+    inline def setDocumentId(value: ResourceIdType): Self = StObject.set(x, "DocumentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionId(value: DocumentVersionIdType): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
+    inline def setVersionId(value: DocumentVersionIdType): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
   }
 }

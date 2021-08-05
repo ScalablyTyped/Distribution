@@ -53,8 +53,7 @@ object Provider {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def setUpdateInformation(
+    inline def setUpdateInformation(
       file: IStorageFile,
       contentId: String,
       readMode: ReadActivationMode,

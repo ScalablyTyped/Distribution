@@ -9,21 +9,17 @@ object global {
   @JSGlobal("SchemeNumber")
   @js.native
   def SchemeNumber: typings.javascriptBignum.SchemeNumber = js.native
-  @scala.inline
-  def SchemeNumber_=(x: SchemeNumber): Unit = js.Dynamic.global.updateDynamic("SchemeNumber")(x.asInstanceOf[js.Any])
+  inline def SchemeNumber_=(x: SchemeNumber): Unit = js.Dynamic.global.updateDynamic("SchemeNumber")(x.asInstanceOf[js.Any])
   
   @JSGlobal("VERSION")
   @js.native
   def VERSION: js.Array[Double] = js.native
-  @scala.inline
-  def VERSION_=(x: js.Array[Double]): Unit = js.Dynamic.global.updateDynamic("VERSION")(x.asInstanceOf[js.Any])
+  inline def VERSION_=(x: js.Array[Double]): Unit = js.Dynamic.global.updateDynamic("VERSION")(x.asInstanceOf[js.Any])
   
   @JSGlobal("maxIntegerDigits")
   @js.native
   def maxIntegerDigits: Double = js.native
-  @scala.inline
-  def maxIntegerDigits_=(x: Double): Unit = js.Dynamic.global.updateDynamic("maxIntegerDigits")(x.asInstanceOf[js.Any])
+  inline def maxIntegerDigits_=(x: Double): Unit = js.Dynamic.global.updateDynamic("maxIntegerDigits")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def raise(conditionType: String, message: String, irritants: js.Any*): Unit = (js.Dynamic.global.applyDynamic("raise")(conditionType.asInstanceOf[js.Any], message.asInstanceOf[js.Any], irritants.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def raise(conditionType: String, message: String, irritants: js.Any*): Unit = (js.Dynamic.global.applyDynamic("raise")(conditionType.asInstanceOf[js.Any], message.asInstanceOf[js.Any], irritants.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

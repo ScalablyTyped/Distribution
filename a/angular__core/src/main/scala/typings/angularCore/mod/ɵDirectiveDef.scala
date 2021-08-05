@@ -130,8 +130,7 @@ trait ɵDirectiveDef[T] extends StObject {
 }
 object ɵDirectiveDef {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     declaredInputs: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: string}
     */ typings.angularCore.angularCoreStrings.ɵDirectiveDef & TopLevel[js.Any],
@@ -150,94 +149,69 @@ object ɵDirectiveDef {
     __obj.asInstanceOf[ɵDirectiveDef[T]]
   }
   
-  @scala.inline
-  implicit class ɵDirectiveDefMutableBuilder[Self <: ɵDirectiveDef[?], T] (val x: Self & ɵDirectiveDef[T]) extends AnyVal {
+  extension [Self <: ɵDirectiveDef[?], T](x: Self & ɵDirectiveDef[T]) {
     
-    @scala.inline
-    def setContentQueries(value: (/* rf */ ɵRenderFlags, T, /* directiveIndex */ Double) => Unit): Self = StObject.set(x, "contentQueries", js.Any.fromFunction3(value))
+    inline def setContentQueries(value: (/* rf */ ɵRenderFlags, T, /* directiveIndex */ Double) => Unit): Self = StObject.set(x, "contentQueries", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setContentQueriesNull: Self = StObject.set(x, "contentQueries", null)
+    inline def setContentQueriesNull: Self = StObject.set(x, "contentQueries", null)
     
-    @scala.inline
-    def setDeclaredInputs(
+    inline def setDeclaredInputs(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof T ]: string}
       */ typings.angularCore.angularCoreStrings.ɵDirectiveDef & TopLevel[js.Any]
     ): Self = StObject.set(x, "declaredInputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportAs(value: js.Array[String]): Self = StObject.set(x, "exportAs", value.asInstanceOf[js.Any])
+    inline def setExportAs(value: js.Array[String]): Self = StObject.set(x, "exportAs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportAsNull: Self = StObject.set(x, "exportAs", null)
+    inline def setExportAsNull: Self = StObject.set(x, "exportAs", null)
     
-    @scala.inline
-    def setExportAsVarargs(value: String*): Self = StObject.set(x, "exportAs", js.Array(value :_*))
+    inline def setExportAsVarargs(value: String*): Self = StObject.set(x, "exportAs", js.Array(value :_*))
     
-    @scala.inline
-    def setFactory(value: FactoryFn[T]): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
+    inline def setFactory(value: FactoryFn[T]): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFactoryNull: Self = StObject.set(x, "factory", null)
+    inline def setFactoryNull: Self = StObject.set(x, "factory", null)
     
-    @scala.inline
-    def setFeatures(value: js.Array[DirectiveDefFeature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+    inline def setFeatures(value: js.Array[DirectiveDefFeature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeaturesNull: Self = StObject.set(x, "features", null)
+    inline def setFeaturesNull: Self = StObject.set(x, "features", null)
     
-    @scala.inline
-    def setFeaturesVarargs(value: DirectiveDefFeature*): Self = StObject.set(x, "features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: DirectiveDefFeature*): Self = StObject.set(x, "features", js.Array(value :_*))
     
-    @scala.inline
-    def setHostAttrs(value: TAttributes): Self = StObject.set(x, "hostAttrs", value.asInstanceOf[js.Any])
+    inline def setHostAttrs(value: TAttributes): Self = StObject.set(x, "hostAttrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostAttrsNull: Self = StObject.set(x, "hostAttrs", null)
+    inline def setHostAttrsNull: Self = StObject.set(x, "hostAttrs", null)
     
-    @scala.inline
-    def setHostAttrsVarargs(value: (String | ɵAttributeMarker | CssSelector)*): Self = StObject.set(x, "hostAttrs", js.Array(value :_*))
+    inline def setHostAttrsVarargs(value: (String | ɵAttributeMarker | CssSelector)*): Self = StObject.set(x, "hostAttrs", js.Array(value :_*))
     
-    @scala.inline
-    def setHostBindings(value: (/* rf */ ɵRenderFlags, T) => Unit): Self = StObject.set(x, "hostBindings", js.Any.fromFunction2(value))
+    inline def setHostBindings(value: (/* rf */ ɵRenderFlags, T) => Unit): Self = StObject.set(x, "hostBindings", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setHostBindingsNull: Self = StObject.set(x, "hostBindings", null)
+    inline def setHostBindingsNull: Self = StObject.set(x, "hostBindings", null)
     
-    @scala.inline
-    def setHostVars(value: Double): Self = StObject.set(x, "hostVars", value.asInstanceOf[js.Any])
+    inline def setHostVars(value: Double): Self = StObject.set(x, "hostVars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputs(
+    inline def setInputs(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof T ]: string}
       */ typings.angularCore.angularCoreStrings.ɵDirectiveDef & TopLevel[js.Any]
     ): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputs(
+    inline def setOutputs(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof T ]: string}
       */ typings.angularCore.angularCoreStrings.ɵDirectiveDef & TopLevel[js.Any]
     ): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvidersResolver(
+    inline def setProvidersResolver(
       value: (/* def */ ɵDirectiveDef[T], /* processProvidersFn */ js.UndefOr[ProcessProvidersFunction]) => Unit
     ): Self = StObject.set(x, "providersResolver", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setProvidersResolverNull: Self = StObject.set(x, "providersResolver", null)
+    inline def setProvidersResolverNull: Self = StObject.set(x, "providersResolver", null)
     
-    @scala.inline
-    def setSelectors(value: ɵCssSelectorList): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
+    inline def setSelectors(value: ɵCssSelectorList): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorsVarargs(value: CssSelector*): Self = StObject.set(x, "selectors", js.Array(value :_*))
+    inline def setSelectorsVarargs(value: CssSelector*): Self = StObject.set(x, "selectors", js.Array(value :_*))
     
-    @scala.inline
-    def setSetInput(
+    inline def setSetInput(
       value: js.ThisFunction4[
           /* this */ ɵDirectiveDef[T], 
           /* instance */ T, 
@@ -248,16 +222,12 @@ object ɵDirectiveDef {
         ]
     ): Self = StObject.set(x, "setInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetInputNull: Self = StObject.set(x, "setInput", null)
+    inline def setSetInputNull: Self = StObject.set(x, "setInput", null)
     
-    @scala.inline
-    def setType(value: Type[T]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Type[T]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewQuery(value: (/* rf */ ɵRenderFlags, T) => Unit): Self = StObject.set(x, "viewQuery", js.Any.fromFunction2(value))
+    inline def setViewQuery(value: (/* rf */ ɵRenderFlags, T) => Unit): Self = StObject.set(x, "viewQuery", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setViewQueryNull: Self = StObject.set(x, "viewQuery", null)
+    inline def setViewQueryNull: Self = StObject.set(x, "viewQuery", null)
   }
 }

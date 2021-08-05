@@ -14,15 +14,11 @@ object coercionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def coercion[T](struct: Struct[T, js.Any], coercer: js.Function1[/* value */ js.Any, js.Any]): Struct[T, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("coercion")(struct.asInstanceOf[js.Any], coercer.asInstanceOf[js.Any])).asInstanceOf[Struct[T, js.Any]]
+  inline def coercion[T](struct: Struct[T, js.Any], coercer: js.Function1[/* value */ js.Any, js.Any]): Struct[T, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("coercion")(struct.asInstanceOf[js.Any], coercer.asInstanceOf[js.Any])).asInstanceOf[Struct[T, js.Any]]
   
-  @scala.inline
-  def defaulted[T](S: Struct[T, js.Any], fallback: js.Any): Struct[T, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("defaulted")(S.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[Struct[T, js.Any]]
+  inline def defaulted[T](S: Struct[T, js.Any], fallback: js.Any): Struct[T, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("defaulted")(S.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[Struct[T, js.Any]]
   
-  @scala.inline
-  def defaulted_true[T](S: Struct[T, js.Any], fallback: js.Any, strict: `true`): Struct[T, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("defaulted")(S.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Struct[T, js.Any]]
+  inline def defaulted_true[T](S: Struct[T, js.Any], fallback: js.Any, strict: `true`): Struct[T, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("defaulted")(S.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Struct[T, js.Any]]
   
-  @scala.inline
-  def masked[T /* <: StringDictionary[js.Any] */, V /* <: Record[String, Struct[js.Any, js.Any]] */](S: Struct[T, V]): Struct[T, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("masked")(S.asInstanceOf[js.Any]).asInstanceOf[Struct[T, js.Any]]
+  inline def masked[T /* <: StringDictionary[js.Any] */, V /* <: Record[String, Struct[js.Any, js.Any]] */](S: Struct[T, V]): Struct[T, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("masked")(S.asInstanceOf[js.Any]).asInstanceOf[Struct[T, js.Any]]
 }

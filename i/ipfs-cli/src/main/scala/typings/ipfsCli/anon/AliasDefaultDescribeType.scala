@@ -16,26 +16,20 @@ trait AliasDefaultDescribeType extends StObject {
 }
 object AliasDefaultDescribeType {
   
-  @scala.inline
-  def apply(alias: String, default: String, describe: String, `type`: String): AliasDefaultDescribeType = {
+  inline def apply(alias: String, default: String, describe: String, `type`: String): AliasDefaultDescribeType = {
     val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], describe = describe.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AliasDefaultDescribeType]
   }
   
-  @scala.inline
-  implicit class AliasDefaultDescribeTypeMutableBuilder[Self <: AliasDefaultDescribeType] (val x: Self) extends AnyVal {
+  extension [Self <: AliasDefaultDescribeType](x: Self) {
     
-    @scala.inline
-    def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+    inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescribe(value: String): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
+    inline def setDescribe(value: String): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

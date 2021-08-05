@@ -28,37 +28,27 @@ trait ForecastResult extends StObject {
 }
 object ForecastResult {
   
-  @scala.inline
-  def apply(): ForecastResult = {
+  inline def apply(): ForecastResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ForecastResult]
   }
   
-  @scala.inline
-  implicit class ForecastResultMutableBuilder[Self <: ForecastResult] (val x: Self) extends AnyVal {
+  extension [Self <: ForecastResult](x: Self) {
     
-    @scala.inline
-    def setMeanValue(value: GenericString): Self = StObject.set(x, "MeanValue", value.asInstanceOf[js.Any])
+    inline def setMeanValue(value: GenericString): Self = StObject.set(x, "MeanValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeanValueUndefined: Self = StObject.set(x, "MeanValue", js.undefined)
+    inline def setMeanValueUndefined: Self = StObject.set(x, "MeanValue", js.undefined)
     
-    @scala.inline
-    def setPredictionIntervalLowerBound(value: GenericString): Self = StObject.set(x, "PredictionIntervalLowerBound", value.asInstanceOf[js.Any])
+    inline def setPredictionIntervalLowerBound(value: GenericString): Self = StObject.set(x, "PredictionIntervalLowerBound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredictionIntervalLowerBoundUndefined: Self = StObject.set(x, "PredictionIntervalLowerBound", js.undefined)
+    inline def setPredictionIntervalLowerBoundUndefined: Self = StObject.set(x, "PredictionIntervalLowerBound", js.undefined)
     
-    @scala.inline
-    def setPredictionIntervalUpperBound(value: GenericString): Self = StObject.set(x, "PredictionIntervalUpperBound", value.asInstanceOf[js.Any])
+    inline def setPredictionIntervalUpperBound(value: GenericString): Self = StObject.set(x, "PredictionIntervalUpperBound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredictionIntervalUpperBoundUndefined: Self = StObject.set(x, "PredictionIntervalUpperBound", js.undefined)
+    inline def setPredictionIntervalUpperBoundUndefined: Self = StObject.set(x, "PredictionIntervalUpperBound", js.undefined)
     
-    @scala.inline
-    def setTimePeriod(value: DateInterval): Self = StObject.set(x, "TimePeriod", value.asInstanceOf[js.Any])
+    inline def setTimePeriod(value: DateInterval): Self = StObject.set(x, "TimePeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimePeriodUndefined: Self = StObject.set(x, "TimePeriod", js.undefined)
+    inline def setTimePeriodUndefined: Self = StObject.set(x, "TimePeriod", js.undefined)
   }
 }

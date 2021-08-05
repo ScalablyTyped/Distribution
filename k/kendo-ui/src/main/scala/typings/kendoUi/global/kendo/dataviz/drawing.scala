@@ -167,28 +167,20 @@ object drawing {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def fromArc(arc: typings.kendoUi.kendo.geometry.Arc): typings.kendoUi.kendo.drawing.Path = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArc")(arc.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.drawing.Path]
-    @scala.inline
-    def fromArc(arc: typings.kendoUi.kendo.geometry.Arc, options: js.Any): typings.kendoUi.kendo.drawing.Path = (^.asInstanceOf[js.Dynamic].applyDynamic("fromArc")(arc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.drawing.Path]
+    inline def fromArc(arc: typings.kendoUi.kendo.geometry.Arc): typings.kendoUi.kendo.drawing.Path = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArc")(arc.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.drawing.Path]
+    inline def fromArc(arc: typings.kendoUi.kendo.geometry.Arc, options: js.Any): typings.kendoUi.kendo.drawing.Path = (^.asInstanceOf[js.Dynamic].applyDynamic("fromArc")(arc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.drawing.Path]
     
     /* static member */
-    @scala.inline
-    def fromPoints(points: js.Any): typings.kendoUi.kendo.drawing.Path = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(points.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.drawing.Path]
-    @scala.inline
-    def fromPoints(points: js.Any, options: js.Any): typings.kendoUi.kendo.drawing.Path = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(points.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.drawing.Path]
+    inline def fromPoints(points: js.Any): typings.kendoUi.kendo.drawing.Path = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(points.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.drawing.Path]
+    inline def fromPoints(points: js.Any, options: js.Any): typings.kendoUi.kendo.drawing.Path = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(points.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.drawing.Path]
     
     /* static member */
-    @scala.inline
-    def fromRect(rect: typings.kendoUi.kendo.geometry.Rect): typings.kendoUi.kendo.drawing.Path = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRect")(rect.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.drawing.Path]
-    @scala.inline
-    def fromRect(rect: typings.kendoUi.kendo.geometry.Rect, options: js.Any): typings.kendoUi.kendo.drawing.Path = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRect")(rect.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.drawing.Path]
+    inline def fromRect(rect: typings.kendoUi.kendo.geometry.Rect): typings.kendoUi.kendo.drawing.Path = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRect")(rect.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.drawing.Path]
+    inline def fromRect(rect: typings.kendoUi.kendo.geometry.Rect, options: js.Any): typings.kendoUi.kendo.drawing.Path = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRect")(rect.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.drawing.Path]
     
     /* static member */
-    @scala.inline
-    def parse(svgPath: String): typings.kendoUi.kendo.drawing.MultiPath = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(svgPath.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.drawing.MultiPath]
-    @scala.inline
-    def parse(svgPath: String, options: js.Any): typings.kendoUi.kendo.drawing.MultiPath = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(svgPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.drawing.MultiPath]
+    inline def parse(svgPath: String): typings.kendoUi.kendo.drawing.MultiPath = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(svgPath.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.drawing.MultiPath]
+    inline def parse(svgPath: String, options: js.Any): typings.kendoUi.kendo.drawing.MultiPath = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(svgPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.drawing.MultiPath]
   }
   
   @JSGlobal("kendo.dataviz.drawing.RadialGradient")
@@ -242,15 +234,11 @@ object drawing {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def create(element: JQuery): typings.kendoUi.kendo.drawing.Surface = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.drawing.Surface]
-    @scala.inline
-    def create(element: JQuery, options: js.Any): typings.kendoUi.kendo.drawing.Surface = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.drawing.Surface]
+    inline def create(element: JQuery): typings.kendoUi.kendo.drawing.Surface = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.drawing.Surface]
+    inline def create(element: JQuery, options: js.Any): typings.kendoUi.kendo.drawing.Surface = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.drawing.Surface]
     /* static member */
-    @scala.inline
-    def create(element: typings.kendoUi.kendo.dataviz.drawing.Element): typings.kendoUi.kendo.drawing.Surface = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.drawing.Surface]
-    @scala.inline
-    def create(element: typings.kendoUi.kendo.dataviz.drawing.Element, options: js.Any): typings.kendoUi.kendo.drawing.Surface = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.drawing.Surface]
+    inline def create(element: typings.kendoUi.kendo.dataviz.drawing.Element): typings.kendoUi.kendo.drawing.Surface = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.drawing.Surface]
+    inline def create(element: typings.kendoUi.kendo.dataviz.drawing.Element, options: js.Any): typings.kendoUi.kendo.drawing.Surface = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.drawing.Surface]
   }
   
   @JSGlobal("kendo.dataviz.drawing.Text")

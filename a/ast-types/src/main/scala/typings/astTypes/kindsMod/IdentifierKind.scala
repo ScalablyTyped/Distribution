@@ -12,22 +12,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IdentifierKind extends StObject
 object IdentifierKind {
   
-  @scala.inline
-  def Identifier(name: String): typings.astTypes.namedTypesMod.namedTypes.Identifier = {
+  inline def Identifier(name: String): typings.astTypes.namedTypesMod.namedTypes.Identifier = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Identifier")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.Identifier]
   }
   
-  @scala.inline
-  def JSXIdentifier(name: String): typings.astTypes.namedTypesMod.namedTypes.JSXIdentifier = {
+  inline def JSXIdentifier(name: String): typings.astTypes.namedTypesMod.namedTypes.JSXIdentifier = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("JSXIdentifier")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.JSXIdentifier]
   }
   
-  @scala.inline
-  def TSTypeParameter(name: String): typings.astTypes.namedTypesMod.namedTypes.TSTypeParameter = {
+  inline def TSTypeParameter(name: String): typings.astTypes.namedTypesMod.namedTypes.TSTypeParameter = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSTypeParameter")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.TSTypeParameter]

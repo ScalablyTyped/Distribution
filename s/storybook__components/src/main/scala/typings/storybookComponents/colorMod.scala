@@ -20,8 +20,7 @@ object colorMod {
        with ColorConfig
   object ColorProps {
     
-    @scala.inline
-    def apply(name: String, onChange: ColorValue => ColorValue | Unit): ColorProps = {
+    inline def apply(name: String, onChange: ColorValue => ColorValue | Unit): ColorProps = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange))
       __obj.asInstanceOf[ColorProps]
     }

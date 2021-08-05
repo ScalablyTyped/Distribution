@@ -11,27 +11,23 @@ object mermaidStrings {
   sealed trait default
     extends StObject
        with Theme
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
+  inline def default: default = "default".asInstanceOf[default]
   
   @js.native
   sealed trait dark
     extends StObject
        with Theme
-  @scala.inline
-  def dark: dark = "dark".asInstanceOf[dark]
+  inline def dark: dark = "dark".asInstanceOf[dark]
   
   @js.native
   sealed trait forest
     extends StObject
        with Theme
-  @scala.inline
-  def forest: forest = "forest".asInstanceOf[forest]
+  inline def forest: forest = "forest".asInstanceOf[forest]
   
   @js.native
   sealed trait neutral
     extends StObject
        with Theme
-  @scala.inline
-  def neutral: neutral = "neutral".asInstanceOf[neutral]
+  inline def neutral: neutral = "neutral".asInstanceOf[neutral]
 }

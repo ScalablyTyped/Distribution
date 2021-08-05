@@ -12,16 +12,13 @@ trait AsyncSearchDelete
 }
 object AsyncSearchDelete {
   
-  @scala.inline
-  def apply(id: String): AsyncSearchDelete = {
+  inline def apply(id: String): AsyncSearchDelete = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsyncSearchDelete]
   }
   
-  @scala.inline
-  implicit class AsyncSearchDeleteMutableBuilder[Self <: AsyncSearchDelete] (val x: Self) extends AnyVal {
+  extension [Self <: AsyncSearchDelete](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

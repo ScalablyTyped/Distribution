@@ -12,14 +12,10 @@ object createI18nMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createI18n(): I18n = ^.asInstanceOf[js.Dynamic].applyDynamic("createI18n")().asInstanceOf[I18n]
-  @scala.inline
-  def createI18n(initialData: Unit, initialDomain: String): I18n = (^.asInstanceOf[js.Dynamic].applyDynamic("createI18n")(initialData.asInstanceOf[js.Any], initialDomain.asInstanceOf[js.Any])).asInstanceOf[I18n]
-  @scala.inline
-  def createI18n(initialData: Record[String, js.Any]): I18n = ^.asInstanceOf[js.Dynamic].applyDynamic("createI18n")(initialData.asInstanceOf[js.Any]).asInstanceOf[I18n]
-  @scala.inline
-  def createI18n(initialData: Record[String, js.Any], initialDomain: String): I18n = (^.asInstanceOf[js.Dynamic].applyDynamic("createI18n")(initialData.asInstanceOf[js.Any], initialDomain.asInstanceOf[js.Any])).asInstanceOf[I18n]
+  inline def createI18n(): I18n = ^.asInstanceOf[js.Dynamic].applyDynamic("createI18n")().asInstanceOf[I18n]
+  inline def createI18n(initialData: Unit, initialDomain: String): I18n = (^.asInstanceOf[js.Dynamic].applyDynamic("createI18n")(initialData.asInstanceOf[js.Any], initialDomain.asInstanceOf[js.Any])).asInstanceOf[I18n]
+  inline def createI18n(initialData: Record[String, js.Any]): I18n = ^.asInstanceOf[js.Dynamic].applyDynamic("createI18n")(initialData.asInstanceOf[js.Any]).asInstanceOf[I18n]
+  inline def createI18n(initialData: Record[String, js.Any], initialDomain: String): I18n = (^.asInstanceOf[js.Dynamic].applyDynamic("createI18n")(initialData.asInstanceOf[js.Any], initialDomain.asInstanceOf[js.Any])).asInstanceOf[I18n]
   
   trait I18n extends StObject {
     
@@ -58,8 +54,7 @@ object createI18nMod {
   }
   object I18n {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       __ : js.Function,
       _n: js.Function,
       _nx: js.Function,
@@ -71,26 +66,19 @@ object createI18nMod {
       __obj.asInstanceOf[I18n]
     }
     
-    @scala.inline
-    implicit class I18nMutableBuilder[Self <: I18n] (val x: Self) extends AnyVal {
+    extension [Self <: I18n](x: Self) {
       
-      @scala.inline
-      def setIsRTL(value: js.Function): Self = StObject.set(x, "isRTL", value.asInstanceOf[js.Any])
+      inline def setIsRTL(value: js.Function): Self = StObject.set(x, "isRTL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetLocaleData(value: js.Function): Self = StObject.set(x, "setLocaleData", value.asInstanceOf[js.Any])
+      inline def setSetLocaleData(value: js.Function): Self = StObject.set(x, "setLocaleData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__(value: js.Function): Self = StObject.set(x, "__", value.asInstanceOf[js.Any])
+      inline def set__(value: js.Function): Self = StObject.set(x, "__", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_n(value: js.Function): Self = StObject.set(x, "_n", value.asInstanceOf[js.Any])
+      inline def set_n(value: js.Function): Self = StObject.set(x, "_n", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_nx(value: js.Function): Self = StObject.set(x, "_nx", value.asInstanceOf[js.Any])
+      inline def set_nx(value: js.Function): Self = StObject.set(x, "_nx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_x(value: js.Function): Self = StObject.set(x, "_x", value.asInstanceOf[js.Any])
+      inline def set_x(value: js.Function): Self = StObject.set(x, "_x", value.asInstanceOf[js.Any])
     }
   }
   

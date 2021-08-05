@@ -19,26 +19,20 @@ object anon {
   }
   object Buffer {
     
-    @scala.inline
-    def apply(buffer: typings.node.Buffer, dimensions: RotateDimensions, orientation: Double, quality: Double): Buffer = {
+    inline def apply(buffer: typings.node.Buffer, dimensions: RotateDimensions, orientation: Double, quality: Double): Buffer = {
       val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], dimensions = dimensions.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], quality = quality.asInstanceOf[js.Any])
       __obj.asInstanceOf[Buffer]
     }
     
-    @scala.inline
-    implicit class BufferMutableBuilder[Self <: Buffer] (val x: Self) extends AnyVal {
+    extension [Self <: Buffer](x: Self) {
       
-      @scala.inline
-      def setBuffer(value: typings.node.Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: typings.node.Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDimensions(value: RotateDimensions): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+      inline def setDimensions(value: RotateDimensions): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrientation(value: Double): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+      inline def setOrientation(value: Double): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -38,61 +38,43 @@ trait GetAccountAuthorizationDetailsResponse extends StObject {
 }
 object GetAccountAuthorizationDetailsResponse {
   
-  @scala.inline
-  def apply(): GetAccountAuthorizationDetailsResponse = {
+  inline def apply(): GetAccountAuthorizationDetailsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAccountAuthorizationDetailsResponse]
   }
   
-  @scala.inline
-  implicit class GetAccountAuthorizationDetailsResponseMutableBuilder[Self <: GetAccountAuthorizationDetailsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetAccountAuthorizationDetailsResponse](x: Self) {
     
-    @scala.inline
-    def setGroupDetailList(value: groupDetailListType): Self = StObject.set(x, "GroupDetailList", value.asInstanceOf[js.Any])
+    inline def setGroupDetailList(value: groupDetailListType): Self = StObject.set(x, "GroupDetailList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupDetailListUndefined: Self = StObject.set(x, "GroupDetailList", js.undefined)
+    inline def setGroupDetailListUndefined: Self = StObject.set(x, "GroupDetailList", js.undefined)
     
-    @scala.inline
-    def setGroupDetailListVarargs(value: GroupDetail*): Self = StObject.set(x, "GroupDetailList", js.Array(value :_*))
+    inline def setGroupDetailListVarargs(value: GroupDetail*): Self = StObject.set(x, "GroupDetailList", js.Array(value :_*))
     
-    @scala.inline
-    def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
+    inline def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
+    inline def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
     
-    @scala.inline
-    def setMarker(value: responseMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: responseMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setPolicies(value: ManagedPolicyDetailListType): Self = StObject.set(x, "Policies", value.asInstanceOf[js.Any])
+    inline def setPolicies(value: ManagedPolicyDetailListType): Self = StObject.set(x, "Policies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoliciesUndefined: Self = StObject.set(x, "Policies", js.undefined)
+    inline def setPoliciesUndefined: Self = StObject.set(x, "Policies", js.undefined)
     
-    @scala.inline
-    def setPoliciesVarargs(value: ManagedPolicyDetail*): Self = StObject.set(x, "Policies", js.Array(value :_*))
+    inline def setPoliciesVarargs(value: ManagedPolicyDetail*): Self = StObject.set(x, "Policies", js.Array(value :_*))
     
-    @scala.inline
-    def setRoleDetailList(value: roleDetailListType): Self = StObject.set(x, "RoleDetailList", value.asInstanceOf[js.Any])
+    inline def setRoleDetailList(value: roleDetailListType): Self = StObject.set(x, "RoleDetailList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleDetailListUndefined: Self = StObject.set(x, "RoleDetailList", js.undefined)
+    inline def setRoleDetailListUndefined: Self = StObject.set(x, "RoleDetailList", js.undefined)
     
-    @scala.inline
-    def setRoleDetailListVarargs(value: RoleDetail*): Self = StObject.set(x, "RoleDetailList", js.Array(value :_*))
+    inline def setRoleDetailListVarargs(value: RoleDetail*): Self = StObject.set(x, "RoleDetailList", js.Array(value :_*))
     
-    @scala.inline
-    def setUserDetailList(value: userDetailListType): Self = StObject.set(x, "UserDetailList", value.asInstanceOf[js.Any])
+    inline def setUserDetailList(value: userDetailListType): Self = StObject.set(x, "UserDetailList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserDetailListUndefined: Self = StObject.set(x, "UserDetailList", js.undefined)
+    inline def setUserDetailListUndefined: Self = StObject.set(x, "UserDetailList", js.undefined)
     
-    @scala.inline
-    def setUserDetailListVarargs(value: UserDetail*): Self = StObject.set(x, "UserDetailList", js.Array(value :_*))
+    inline def setUserDetailListVarargs(value: UserDetail*): Self = StObject.set(x, "UserDetailList", js.Array(value :_*))
   }
 }

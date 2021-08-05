@@ -12,8 +12,7 @@ object getRequestIdentifierMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(parameters: RequestParameters, variables: Variables): RequestIdentifier = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parameters.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[RequestIdentifier]
+  inline def default(parameters: RequestParameters, variables: Variables): RequestIdentifier = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parameters.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[RequestIdentifier]
   
   type RequestIdentifier = String
 }

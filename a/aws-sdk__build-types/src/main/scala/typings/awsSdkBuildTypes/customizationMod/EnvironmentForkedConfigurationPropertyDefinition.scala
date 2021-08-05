@@ -32,8 +32,7 @@ trait EnvironmentForkedConfigurationPropertyDefinition
 }
 object EnvironmentForkedConfigurationPropertyDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     browser: ConfigurationPropertyDefinitionRuntimeAttributes & AdditionalDocumentation,
     documentation: String,
     inputType: String,
@@ -45,19 +44,14 @@ object EnvironmentForkedConfigurationPropertyDefinition {
     __obj.asInstanceOf[EnvironmentForkedConfigurationPropertyDefinition]
   }
   
-  @scala.inline
-  implicit class EnvironmentForkedConfigurationPropertyDefinitionMutableBuilder[Self <: EnvironmentForkedConfigurationPropertyDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: EnvironmentForkedConfigurationPropertyDefinition](x: Self) {
     
-    @scala.inline
-    def setBrowser(value: ConfigurationPropertyDefinitionRuntimeAttributes & AdditionalDocumentation): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
+    inline def setBrowser(value: ConfigurationPropertyDefinitionRuntimeAttributes & AdditionalDocumentation): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode(value: ConfigurationPropertyDefinitionRuntimeAttributes & AdditionalDocumentation): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: ConfigurationPropertyDefinitionRuntimeAttributes & AdditionalDocumentation): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: forked): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: forked): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniversal(value: ConfigurationPropertyDefinitionRuntimeAttributes & AdditionalDocumentation): Self = StObject.set(x, "universal", value.asInstanceOf[js.Any])
+    inline def setUniversal(value: ConfigurationPropertyDefinitionRuntimeAttributes & AdditionalDocumentation): Self = StObject.set(x, "universal", value.asInstanceOf[js.Any])
   }
 }

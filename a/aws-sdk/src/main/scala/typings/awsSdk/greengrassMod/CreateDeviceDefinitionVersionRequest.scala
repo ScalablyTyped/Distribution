@@ -23,31 +23,23 @@ trait CreateDeviceDefinitionVersionRequest extends StObject {
 }
 object CreateDeviceDefinitionVersionRequest {
   
-  @scala.inline
-  def apply(DeviceDefinitionId: string): CreateDeviceDefinitionVersionRequest = {
+  inline def apply(DeviceDefinitionId: string): CreateDeviceDefinitionVersionRequest = {
     val __obj = js.Dynamic.literal(DeviceDefinitionId = DeviceDefinitionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDeviceDefinitionVersionRequest]
   }
   
-  @scala.inline
-  implicit class CreateDeviceDefinitionVersionRequestMutableBuilder[Self <: CreateDeviceDefinitionVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDeviceDefinitionVersionRequest](x: Self) {
     
-    @scala.inline
-    def setAmznClientToken(value: string): Self = StObject.set(x, "AmznClientToken", value.asInstanceOf[js.Any])
+    inline def setAmznClientToken(value: string): Self = StObject.set(x, "AmznClientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmznClientTokenUndefined: Self = StObject.set(x, "AmznClientToken", js.undefined)
+    inline def setAmznClientTokenUndefined: Self = StObject.set(x, "AmznClientToken", js.undefined)
     
-    @scala.inline
-    def setDeviceDefinitionId(value: string): Self = StObject.set(x, "DeviceDefinitionId", value.asInstanceOf[js.Any])
+    inline def setDeviceDefinitionId(value: string): Self = StObject.set(x, "DeviceDefinitionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevices(value: listOfDevice): Self = StObject.set(x, "Devices", value.asInstanceOf[js.Any])
+    inline def setDevices(value: listOfDevice): Self = StObject.set(x, "Devices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevicesUndefined: Self = StObject.set(x, "Devices", js.undefined)
+    inline def setDevicesUndefined: Self = StObject.set(x, "Devices", js.undefined)
     
-    @scala.inline
-    def setDevicesVarargs(value: Device*): Self = StObject.set(x, "Devices", js.Array(value :_*))
+    inline def setDevicesVarargs(value: Device*): Self = StObject.set(x, "Devices", js.Array(value :_*))
   }
 }

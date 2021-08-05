@@ -15,20 +15,16 @@ object zebraOptionsMod {
   }
   object ZebraOptions {
     
-    @scala.inline
-    def apply(): ZebraOptions = {
+    inline def apply(): ZebraOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ZebraOptions]
     }
     
-    @scala.inline
-    implicit class ZebraOptionsMutableBuilder[Self <: ZebraOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ZebraOptions](x: Self) {
       
-      @scala.inline
-      def setZebra(value: js.Tuple2[String, String]): Self = StObject.set(x, "zebra", value.asInstanceOf[js.Any])
+      inline def setZebra(value: js.Tuple2[String, String]): Self = StObject.set(x, "zebra", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZebraUndefined: Self = StObject.set(x, "zebra", js.undefined)
+      inline def setZebraUndefined: Self = StObject.set(x, "zebra", js.undefined)
     }
   }
 }

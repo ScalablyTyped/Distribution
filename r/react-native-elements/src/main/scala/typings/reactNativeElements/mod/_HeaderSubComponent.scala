@@ -7,14 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait _HeaderSubComponent extends StObject
 object _HeaderSubComponent {
   
-  @scala.inline
-  def HeaderIcon(): typings.reactNativeElements.mod.HeaderIcon = {
+  inline def HeaderIcon(): typings.reactNativeElements.mod.HeaderIcon = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.reactNativeElements.mod.HeaderIcon]
   }
   
-  @scala.inline
-  def TextProps(): typings.reactNativeElements.mod.TextProps = {
+  inline def TextProps(): typings.reactNativeElements.mod.TextProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.reactNativeElements.mod.TextProps]
   }

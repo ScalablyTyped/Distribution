@@ -11,16 +11,13 @@ trait HTMLElement extends StObject {
 }
 object HTMLElement {
   
-  @scala.inline
-  def apply(selectize: IApi[js.Any, js.Any]): HTMLElement = {
+  inline def apply(selectize: IApi[js.Any, js.Any]): HTMLElement = {
     val __obj = js.Dynamic.literal(selectize = selectize.asInstanceOf[js.Any])
     __obj.asInstanceOf[HTMLElement]
   }
   
-  @scala.inline
-  implicit class HTMLElementMutableBuilder[Self <: HTMLElement] (val x: Self) extends AnyVal {
+  extension [Self <: HTMLElement](x: Self) {
     
-    @scala.inline
-    def setSelectize(value: IApi[js.Any, js.Any]): Self = StObject.set(x, "selectize", value.asInstanceOf[js.Any])
+    inline def setSelectize(value: IApi[js.Any, js.Any]): Self = StObject.set(x, "selectize", value.asInstanceOf[js.Any])
   }
 }

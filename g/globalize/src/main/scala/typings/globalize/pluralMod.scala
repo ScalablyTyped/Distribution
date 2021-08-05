@@ -53,20 +53,16 @@ object pluralMod extends Shortcut {
     }
     object PluralGeneratorOptions {
       
-      @scala.inline
-      def apply(): PluralGeneratorOptions = {
+      inline def apply(): PluralGeneratorOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[PluralGeneratorOptions]
       }
       
-      @scala.inline
-      implicit class PluralGeneratorOptionsMutableBuilder[Self <: PluralGeneratorOptions] (val x: Self) extends AnyVal {
+      extension [Self <: PluralGeneratorOptions](x: Self) {
         
-        @scala.inline
-        def setType(value: cardinal | ordinal): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: cardinal | ordinal): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       }
     }
     

@@ -10,16 +10,13 @@ trait EventRegistrationToken extends StObject {
 }
 object EventRegistrationToken {
   
-  @scala.inline
-  def apply(value: Double): EventRegistrationToken = {
+  inline def apply(value: Double): EventRegistrationToken = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventRegistrationToken]
   }
   
-  @scala.inline
-  implicit class EventRegistrationTokenMutableBuilder[Self <: EventRegistrationToken] (val x: Self) extends AnyVal {
+  extension [Self <: EventRegistrationToken](x: Self) {
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

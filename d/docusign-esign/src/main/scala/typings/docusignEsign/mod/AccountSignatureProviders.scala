@@ -13,22 +13,17 @@ trait AccountSignatureProviders extends StObject {
 }
 object AccountSignatureProviders {
   
-  @scala.inline
-  def apply(): AccountSignatureProviders = {
+  inline def apply(): AccountSignatureProviders = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountSignatureProviders]
   }
   
-  @scala.inline
-  implicit class AccountSignatureProvidersMutableBuilder[Self <: AccountSignatureProviders] (val x: Self) extends AnyVal {
+  extension [Self <: AccountSignatureProviders](x: Self) {
     
-    @scala.inline
-    def setSignatureProviders(value: js.Array[AccountSignatureProvider]): Self = StObject.set(x, "signatureProviders", value.asInstanceOf[js.Any])
+    inline def setSignatureProviders(value: js.Array[AccountSignatureProvider]): Self = StObject.set(x, "signatureProviders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureProvidersUndefined: Self = StObject.set(x, "signatureProviders", js.undefined)
+    inline def setSignatureProvidersUndefined: Self = StObject.set(x, "signatureProviders", js.undefined)
     
-    @scala.inline
-    def setSignatureProvidersVarargs(value: AccountSignatureProvider*): Self = StObject.set(x, "signatureProviders", js.Array(value :_*))
+    inline def setSignatureProvidersVarargs(value: AccountSignatureProvider*): Self = StObject.set(x, "signatureProviders", js.Array(value :_*))
   }
 }

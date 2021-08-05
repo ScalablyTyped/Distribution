@@ -30,8 +30,7 @@ trait XCell2
 }
 object XCell2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Error: Double,
     Formula: String,
     Type: CellContentType,
@@ -52,13 +51,10 @@ object XCell2 {
     __obj.asInstanceOf[XCell2]
   }
   
-  @scala.inline
-  implicit class XCell2MutableBuilder[Self <: XCell2] (val x: Self) extends AnyVal {
+  extension [Self <: XCell2](x: Self) {
     
-    @scala.inline
-    def setSetFormulaResult(value: Double => Unit): Self = StObject.set(x, "setFormulaResult", js.Any.fromFunction1(value))
+    inline def setSetFormulaResult(value: Double => Unit): Self = StObject.set(x, "setFormulaResult", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFormulaString(value: String => Unit): Self = StObject.set(x, "setFormulaString", js.Any.fromFunction1(value))
+    inline def setSetFormulaString(value: String => Unit): Self = StObject.set(x, "setFormulaString", js.Any.fromFunction1(value))
   }
 }

@@ -17,31 +17,23 @@ trait BodyEndpoint extends StObject {
 }
 object BodyEndpoint {
   
-  @scala.inline
-  def apply(body: Endpoint): BodyEndpoint = {
+  inline def apply(body: Endpoint): BodyEndpoint = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = "Endpoint")
     __obj.asInstanceOf[BodyEndpoint]
   }
   
-  @scala.inline
-  implicit class BodyEndpointMutableBuilder[Self <: BodyEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: BodyEndpoint](x: Self) {
     
-    @scala.inline
-    def setBody(value: Endpoint): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Endpoint): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: typings.request.mod.Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: typings.request.mod.Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setOptions(value: typings.request.mod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: typings.request.mod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: typings.fhirKitClient.fhirKitClientStrings.Endpoint): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: typings.fhirKitClient.fhirKitClientStrings.Endpoint): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
   }
 }

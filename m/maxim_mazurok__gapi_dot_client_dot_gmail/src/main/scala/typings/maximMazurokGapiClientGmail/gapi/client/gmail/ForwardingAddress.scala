@@ -14,25 +14,19 @@ trait ForwardingAddress extends StObject {
 }
 object ForwardingAddress {
   
-  @scala.inline
-  def apply(): ForwardingAddress = {
+  inline def apply(): ForwardingAddress = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ForwardingAddress]
   }
   
-  @scala.inline
-  implicit class ForwardingAddressMutableBuilder[Self <: ForwardingAddress] (val x: Self) extends AnyVal {
+  extension [Self <: ForwardingAddress](x: Self) {
     
-    @scala.inline
-    def setForwardingEmail(value: String): Self = StObject.set(x, "forwardingEmail", value.asInstanceOf[js.Any])
+    inline def setForwardingEmail(value: String): Self = StObject.set(x, "forwardingEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardingEmailUndefined: Self = StObject.set(x, "forwardingEmail", js.undefined)
+    inline def setForwardingEmailUndefined: Self = StObject.set(x, "forwardingEmail", js.undefined)
     
-    @scala.inline
-    def setVerificationStatus(value: String): Self = StObject.set(x, "verificationStatus", value.asInstanceOf[js.Any])
+    inline def setVerificationStatus(value: String): Self = StObject.set(x, "verificationStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerificationStatusUndefined: Self = StObject.set(x, "verificationStatus", js.undefined)
+    inline def setVerificationStatusUndefined: Self = StObject.set(x, "verificationStatus", js.undefined)
   }
 }

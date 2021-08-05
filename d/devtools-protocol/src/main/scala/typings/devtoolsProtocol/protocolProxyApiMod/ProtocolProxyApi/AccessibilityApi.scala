@@ -43,8 +43,7 @@ trait AccessibilityApi extends StObject {
 }
 object AccessibilityApi {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     disable: () => js.Promise[Unit],
     enable: () => js.Promise[Unit],
     getFullAXTree: () => js.Promise[GetFullAXTreeResponse],
@@ -55,22 +54,16 @@ object AccessibilityApi {
     __obj.asInstanceOf[AccessibilityApi]
   }
   
-  @scala.inline
-  implicit class AccessibilityApiMutableBuilder[Self <: AccessibilityApi] (val x: Self) extends AnyVal {
+  extension [Self <: AccessibilityApi](x: Self) {
     
-    @scala.inline
-    def setDisable(value: () => js.Promise[Unit]): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
+    inline def setDisable(value: () => js.Promise[Unit]): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEnable(value: () => js.Promise[Unit]): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
+    inline def setEnable(value: () => js.Promise[Unit]): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFullAXTree(value: () => js.Promise[GetFullAXTreeResponse]): Self = StObject.set(x, "getFullAXTree", js.Any.fromFunction0(value))
+    inline def setGetFullAXTree(value: () => js.Promise[GetFullAXTreeResponse]): Self = StObject.set(x, "getFullAXTree", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPartialAXTree(value: GetPartialAXTreeRequest => js.Promise[GetPartialAXTreeResponse]): Self = StObject.set(x, "getPartialAXTree", js.Any.fromFunction1(value))
+    inline def setGetPartialAXTree(value: GetPartialAXTreeRequest => js.Promise[GetPartialAXTreeResponse]): Self = StObject.set(x, "getPartialAXTree", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setQueryAXTree(value: QueryAXTreeRequest => js.Promise[QueryAXTreeResponse]): Self = StObject.set(x, "queryAXTree", js.Any.fromFunction1(value))
+    inline def setQueryAXTree(value: QueryAXTreeRequest => js.Promise[QueryAXTreeResponse]): Self = StObject.set(x, "queryAXTree", js.Any.fromFunction1(value))
   }
 }

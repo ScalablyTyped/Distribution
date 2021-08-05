@@ -12,31 +12,23 @@ trait VideoSourceOptions extends StObject {
 }
 object VideoSourceOptions {
   
-  @scala.inline
-  def apply(): VideoSourceOptions = {
+  inline def apply(): VideoSourceOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VideoSourceOptions]
   }
   
-  @scala.inline
-  implicit class VideoSourceOptionsMutableBuilder[Self <: VideoSourceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: VideoSourceOptions](x: Self) {
     
-    @scala.inline
-    def setCoordinates(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
+    inline def setCoordinates(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoordinatesUndefined: Self = StObject.set(x, "coordinates", js.undefined)
+    inline def setCoordinatesUndefined: Self = StObject.set(x, "coordinates", js.undefined)
     
-    @scala.inline
-    def setCoordinatesVarargs(value: js.Array[Double]*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
+    inline def setCoordinatesVarargs(value: js.Array[Double]*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
     
-    @scala.inline
-    def setUrls(value: js.Array[String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
+    inline def setUrls(value: js.Array[String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
+    inline def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
     
-    @scala.inline
-    def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
+    inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
   }
 }

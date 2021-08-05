@@ -12,22 +12,17 @@ trait Authenticated extends StObject {
 }
 object Authenticated {
   
-  @scala.inline
-  def apply(authenticated: Boolean): Authenticated = {
+  inline def apply(authenticated: Boolean): Authenticated = {
     val __obj = js.Dynamic.literal(authenticated = authenticated.asInstanceOf[js.Any], user = null)
     __obj.asInstanceOf[Authenticated]
   }
   
-  @scala.inline
-  implicit class AuthenticatedMutableBuilder[Self <: Authenticated] (val x: Self) extends AnyVal {
+  extension [Self <: Authenticated](x: Self) {
     
-    @scala.inline
-    def setAuthenticated(value: Boolean): Self = StObject.set(x, "authenticated", value.asInstanceOf[js.Any])
+    inline def setAuthenticated(value: Boolean): Self = StObject.set(x, "authenticated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: js.Object): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: js.Object): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserNull: Self = StObject.set(x, "user", null)
+    inline def setUserNull: Self = StObject.set(x, "user", null)
   }
 }

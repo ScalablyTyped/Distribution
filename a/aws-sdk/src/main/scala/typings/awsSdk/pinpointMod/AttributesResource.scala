@@ -23,28 +23,21 @@ trait AttributesResource extends StObject {
 }
 object AttributesResource {
   
-  @scala.inline
-  def apply(ApplicationId: string, AttributeType: string): AttributesResource = {
+  inline def apply(ApplicationId: string, AttributeType: string): AttributesResource = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], AttributeType = AttributeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttributesResource]
   }
   
-  @scala.inline
-  implicit class AttributesResourceMutableBuilder[Self <: AttributesResource] (val x: Self) extends AnyVal {
+  extension [Self <: AttributesResource](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeType(value: string): Self = StObject.set(x, "AttributeType", value.asInstanceOf[js.Any])
+    inline def setAttributeType(value: string): Self = StObject.set(x, "AttributeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributes(value: ListOfString): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: ListOfString): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
-    @scala.inline
-    def setAttributesVarargs(value: string*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: string*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
   }
 }

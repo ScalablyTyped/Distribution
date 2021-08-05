@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Version")
 @js.native
-class Version protected ()
+/* private */ class Version ()
   extends StObject
      with typings.activexWord.Word.Version {
   
@@ -41,7 +41,7 @@ class Version protected ()
   /* CompleteClass */
   override val SavedBy: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.Version_typekey")
   var WordDotVersion_typekey: typings.activexWord.Word.Version = js.native
 }

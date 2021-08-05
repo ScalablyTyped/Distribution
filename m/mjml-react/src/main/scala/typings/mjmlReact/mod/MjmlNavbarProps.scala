@@ -42,109 +42,75 @@ trait MjmlNavbarProps extends StObject {
 }
 object MjmlNavbarProps {
   
-  @scala.inline
-  def apply(): MjmlNavbarProps = {
+  inline def apply(): MjmlNavbarProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MjmlNavbarProps]
   }
   
-  @scala.inline
-  implicit class MjmlNavbarPropsMutableBuilder[Self <: MjmlNavbarProps] (val x: Self) extends AnyVal {
+  extension [Self <: MjmlNavbarProps](x: Self) {
     
-    @scala.inline
-    def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    @scala.inline
-    def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+    inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
+    inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
     
-    @scala.inline
-    def setHamburger(value: hamburger): Self = StObject.set(x, "hamburger", value.asInstanceOf[js.Any])
+    inline def setHamburger(value: hamburger): Self = StObject.set(x, "hamburger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHamburgerUndefined: Self = StObject.set(x, "hamburger", js.undefined)
+    inline def setHamburgerUndefined: Self = StObject.set(x, "hamburger", js.undefined)
     
-    @scala.inline
-    def setIcoAlign(value: String): Self = StObject.set(x, "icoAlign", value.asInstanceOf[js.Any])
+    inline def setIcoAlign(value: String): Self = StObject.set(x, "icoAlign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcoAlignUndefined: Self = StObject.set(x, "icoAlign", js.undefined)
+    inline def setIcoAlignUndefined: Self = StObject.set(x, "icoAlign", js.undefined)
     
-    @scala.inline
-    def setIcoClose(value: String): Self = StObject.set(x, "icoClose", value.asInstanceOf[js.Any])
+    inline def setIcoClose(value: String): Self = StObject.set(x, "icoClose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcoCloseUndefined: Self = StObject.set(x, "icoClose", js.undefined)
+    inline def setIcoCloseUndefined: Self = StObject.set(x, "icoClose", js.undefined)
     
-    @scala.inline
-    def setIcoColor(value: ColorProperty): Self = StObject.set(x, "icoColor", value.asInstanceOf[js.Any])
+    inline def setIcoColor(value: ColorProperty): Self = StObject.set(x, "icoColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcoColorUndefined: Self = StObject.set(x, "icoColor", js.undefined)
+    inline def setIcoColorUndefined: Self = StObject.set(x, "icoColor", js.undefined)
     
-    @scala.inline
-    def setIcoFontSize(value: String): Self = StObject.set(x, "icoFontSize", value.asInstanceOf[js.Any])
+    inline def setIcoFontSize(value: String): Self = StObject.set(x, "icoFontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcoFontSizeUndefined: Self = StObject.set(x, "icoFontSize", js.undefined)
+    inline def setIcoFontSizeUndefined: Self = StObject.set(x, "icoFontSize", js.undefined)
     
-    @scala.inline
-    def setIcoLineHeight(value: String): Self = StObject.set(x, "icoLineHeight", value.asInstanceOf[js.Any])
+    inline def setIcoLineHeight(value: String): Self = StObject.set(x, "icoLineHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcoLineHeightUndefined: Self = StObject.set(x, "icoLineHeight", js.undefined)
+    inline def setIcoLineHeightUndefined: Self = StObject.set(x, "icoLineHeight", js.undefined)
     
-    @scala.inline
-    def setIcoOpen(value: String): Self = StObject.set(x, "icoOpen", value.asInstanceOf[js.Any])
+    inline def setIcoOpen(value: String): Self = StObject.set(x, "icoOpen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcoOpenUndefined: Self = StObject.set(x, "icoOpen", js.undefined)
+    inline def setIcoOpenUndefined: Self = StObject.set(x, "icoOpen", js.undefined)
     
-    @scala.inline
-    def setIcoPadding(value: String): Self = StObject.set(x, "icoPadding", value.asInstanceOf[js.Any])
+    inline def setIcoPadding(value: String): Self = StObject.set(x, "icoPadding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcoPaddingBottom(value: String): Self = StObject.set(x, "icoPaddingBottom", value.asInstanceOf[js.Any])
+    inline def setIcoPaddingBottom(value: String): Self = StObject.set(x, "icoPaddingBottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcoPaddingBottomUndefined: Self = StObject.set(x, "icoPaddingBottom", js.undefined)
+    inline def setIcoPaddingBottomUndefined: Self = StObject.set(x, "icoPaddingBottom", js.undefined)
     
-    @scala.inline
-    def setIcoPaddingLeft(value: String): Self = StObject.set(x, "icoPaddingLeft", value.asInstanceOf[js.Any])
+    inline def setIcoPaddingLeft(value: String): Self = StObject.set(x, "icoPaddingLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcoPaddingLeftUndefined: Self = StObject.set(x, "icoPaddingLeft", js.undefined)
+    inline def setIcoPaddingLeftUndefined: Self = StObject.set(x, "icoPaddingLeft", js.undefined)
     
-    @scala.inline
-    def setIcoPaddingRight(value: String): Self = StObject.set(x, "icoPaddingRight", value.asInstanceOf[js.Any])
+    inline def setIcoPaddingRight(value: String): Self = StObject.set(x, "icoPaddingRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcoPaddingRightUndefined: Self = StObject.set(x, "icoPaddingRight", js.undefined)
+    inline def setIcoPaddingRightUndefined: Self = StObject.set(x, "icoPaddingRight", js.undefined)
     
-    @scala.inline
-    def setIcoPaddingTop(value: String): Self = StObject.set(x, "icoPaddingTop", value.asInstanceOf[js.Any])
+    inline def setIcoPaddingTop(value: String): Self = StObject.set(x, "icoPaddingTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcoPaddingTopUndefined: Self = StObject.set(x, "icoPaddingTop", js.undefined)
+    inline def setIcoPaddingTopUndefined: Self = StObject.set(x, "icoPaddingTop", js.undefined)
     
-    @scala.inline
-    def setIcoPaddingUndefined: Self = StObject.set(x, "icoPadding", js.undefined)
+    inline def setIcoPaddingUndefined: Self = StObject.set(x, "icoPadding", js.undefined)
     
-    @scala.inline
-    def setIcoTextDecoration(value: String): Self = StObject.set(x, "icoTextDecoration", value.asInstanceOf[js.Any])
+    inline def setIcoTextDecoration(value: String): Self = StObject.set(x, "icoTextDecoration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcoTextDecorationUndefined: Self = StObject.set(x, "icoTextDecoration", js.undefined)
+    inline def setIcoTextDecorationUndefined: Self = StObject.set(x, "icoTextDecoration", js.undefined)
     
-    @scala.inline
-    def setIcoTextTransform(value: String): Self = StObject.set(x, "icoTextTransform", value.asInstanceOf[js.Any])
+    inline def setIcoTextTransform(value: String): Self = StObject.set(x, "icoTextTransform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcoTextTransformUndefined: Self = StObject.set(x, "icoTextTransform", js.undefined)
+    inline def setIcoTextTransformUndefined: Self = StObject.set(x, "icoTextTransform", js.undefined)
   }
 }

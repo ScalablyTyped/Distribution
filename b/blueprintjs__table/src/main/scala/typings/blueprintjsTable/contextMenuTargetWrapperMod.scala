@@ -37,20 +37,16 @@ object contextMenuTargetWrapperMod {
   }
   object IContextMenuTargetWrapper {
     
-    @scala.inline
-    def apply(renderContextMenu: MouseEvent[HTMLElement, NativeMouseEvent] => Element, style: CSSProperties): IContextMenuTargetWrapper = {
+    inline def apply(renderContextMenu: MouseEvent[HTMLElement, NativeMouseEvent] => Element, style: CSSProperties): IContextMenuTargetWrapper = {
       val __obj = js.Dynamic.literal(renderContextMenu = js.Any.fromFunction1(renderContextMenu), style = style.asInstanceOf[js.Any])
       __obj.asInstanceOf[IContextMenuTargetWrapper]
     }
     
-    @scala.inline
-    implicit class IContextMenuTargetWrapperMutableBuilder[Self <: IContextMenuTargetWrapper] (val x: Self) extends AnyVal {
+    extension [Self <: IContextMenuTargetWrapper](x: Self) {
       
-      @scala.inline
-      def setRenderContextMenu(value: MouseEvent[HTMLElement, NativeMouseEvent] => Element): Self = StObject.set(x, "renderContextMenu", js.Any.fromFunction1(value))
+      inline def setRenderContextMenu(value: MouseEvent[HTMLElement, NativeMouseEvent] => Element): Self = StObject.set(x, "renderContextMenu", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     }
   }
 }

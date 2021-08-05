@@ -13,16 +13,13 @@ trait DeleteGameSessionQueueInput extends StObject {
 }
 object DeleteGameSessionQueueInput {
   
-  @scala.inline
-  def apply(Name: GameSessionQueueNameOrArn): DeleteGameSessionQueueInput = {
+  inline def apply(Name: GameSessionQueueNameOrArn): DeleteGameSessionQueueInput = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteGameSessionQueueInput]
   }
   
-  @scala.inline
-  implicit class DeleteGameSessionQueueInputMutableBuilder[Self <: DeleteGameSessionQueueInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteGameSessionQueueInput](x: Self) {
     
-    @scala.inline
-    def setName(value: GameSessionQueueNameOrArn): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: GameSessionQueueNameOrArn): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

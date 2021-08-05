@@ -12,25 +12,19 @@ trait LocationOptions extends StObject {
 }
 object LocationOptions {
   
-  @scala.inline
-  def apply(): LocationOptions = {
+  inline def apply(): LocationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocationOptions]
   }
   
-  @scala.inline
-  implicit class LocationOptionsMutableBuilder[Self <: LocationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LocationOptions](x: Self) {
     
-    @scala.inline
-    def setPersistQuery(value: Boolean): Self = StObject.set(x, "persistQuery", value.asInstanceOf[js.Any])
+    inline def setPersistQuery(value: Boolean): Self = StObject.set(x, "persistQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersistQueryUndefined: Self = StObject.set(x, "persistQuery", js.undefined)
+    inline def setPersistQueryUndefined: Self = StObject.set(x, "persistQuery", js.undefined)
     
-    @scala.inline
-    def setUpdateRoutes(value: Boolean): Self = StObject.set(x, "updateRoutes", value.asInstanceOf[js.Any])
+    inline def setUpdateRoutes(value: Boolean): Self = StObject.set(x, "updateRoutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateRoutesUndefined: Self = StObject.set(x, "updateRoutes", js.undefined)
+    inline def setUpdateRoutesUndefined: Self = StObject.set(x, "updateRoutes", js.undefined)
   }
 }

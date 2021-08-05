@@ -364,7 +364,7 @@ class HttpClient protected () extends StObject {
   @JSName("get")
   def get_T[T](url: String, options: `3`): Observable_[T] = js.native
   
-  var handler: js.Any = js.native
+  /* private */ var handler: js.Any = js.native
   
   /**
     * Constructs a `HEAD` request that interprets the body as a JSON object and

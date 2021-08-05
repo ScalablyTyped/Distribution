@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait vbextComponentType extends StObject
 object vbextComponentType {
   
-  @scala.inline
-  def vbext_ct_ActiveXDesigner: `11` = 11.asInstanceOf[`11`]
+  inline def vbext_ct_ActiveXDesigner: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def vbext_ct_ClassModule: `2` = 2.asInstanceOf[`2`]
+  inline def vbext_ct_ClassModule: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def vbext_ct_Document: `100` = 100.asInstanceOf[`100`]
+  inline def vbext_ct_Document: `100` = 100.asInstanceOf[`100`]
   
-  @scala.inline
-  def vbext_ct_MSForm: `3` = 3.asInstanceOf[`3`]
+  inline def vbext_ct_MSForm: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def vbext_ct_StdModule: `1` = 1.asInstanceOf[`1`]
+  inline def vbext_ct_StdModule: `1` = 1.asInstanceOf[`1`]
 }

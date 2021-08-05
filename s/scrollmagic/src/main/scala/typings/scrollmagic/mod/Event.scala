@@ -21,8 +21,7 @@ trait Event[T] extends StObject {
 }
 object Event {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     currentTarget: Scene,
     namespace: String,
     target: Scene,
@@ -35,22 +34,16 @@ object Event {
     __obj.asInstanceOf[Event[T]]
   }
   
-  @scala.inline
-  implicit class EventMutableBuilder[Self <: Event[?], T] (val x: Self & Event[T]) extends AnyVal {
+  extension [Self <: Event[?], T](x: Self & Event[T]) {
     
-    @scala.inline
-    def setCurrentTarget(value: Scene): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+    inline def setCurrentTarget(value: Scene): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: Scene): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Scene): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeStamp(value: Date): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+    inline def setTimeStamp(value: Date): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

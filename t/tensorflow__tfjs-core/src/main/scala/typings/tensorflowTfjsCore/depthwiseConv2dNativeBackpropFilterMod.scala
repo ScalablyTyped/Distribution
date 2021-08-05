@@ -19,8 +19,7 @@ object depthwiseConv2dNativeBackpropFilterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def depthwiseConv2dNativeBackpropFilter(
+  inline def depthwiseConv2dNativeBackpropFilter(
     x: Tensor[R3 | R4],
     dy: Tensor[R3 | R4],
     filterShape: js.Tuple4[Double, Double, Double, Double],

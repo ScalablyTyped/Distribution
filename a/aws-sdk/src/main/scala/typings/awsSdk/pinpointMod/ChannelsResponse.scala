@@ -13,16 +13,13 @@ trait ChannelsResponse extends StObject {
 }
 object ChannelsResponse {
   
-  @scala.inline
-  def apply(Channels: MapOfChannelResponse): ChannelsResponse = {
+  inline def apply(Channels: MapOfChannelResponse): ChannelsResponse = {
     val __obj = js.Dynamic.literal(Channels = Channels.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelsResponse]
   }
   
-  @scala.inline
-  implicit class ChannelsResponseMutableBuilder[Self <: ChannelsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelsResponse](x: Self) {
     
-    @scala.inline
-    def setChannels(value: MapOfChannelResponse): Self = StObject.set(x, "Channels", value.asInstanceOf[js.Any])
+    inline def setChannels(value: MapOfChannelResponse): Self = StObject.set(x, "Channels", value.asInstanceOf[js.Any])
   }
 }

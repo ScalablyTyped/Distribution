@@ -20,28 +20,21 @@ trait ConversionCountingConfig extends StObject {
 }
 object ConversionCountingConfig {
   
-  @scala.inline
-  def apply(): ConversionCountingConfig = {
+  inline def apply(): ConversionCountingConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConversionCountingConfig]
   }
   
-  @scala.inline
-  implicit class ConversionCountingConfigMutableBuilder[Self <: ConversionCountingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ConversionCountingConfig](x: Self) {
     
-    @scala.inline
-    def setFloodlightActivityConfigs(value: js.Array[TrackingFloodlightActivityConfig]): Self = StObject.set(x, "floodlightActivityConfigs", value.asInstanceOf[js.Any])
+    inline def setFloodlightActivityConfigs(value: js.Array[TrackingFloodlightActivityConfig]): Self = StObject.set(x, "floodlightActivityConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloodlightActivityConfigsUndefined: Self = StObject.set(x, "floodlightActivityConfigs", js.undefined)
+    inline def setFloodlightActivityConfigsUndefined: Self = StObject.set(x, "floodlightActivityConfigs", js.undefined)
     
-    @scala.inline
-    def setFloodlightActivityConfigsVarargs(value: TrackingFloodlightActivityConfig*): Self = StObject.set(x, "floodlightActivityConfigs", js.Array(value :_*))
+    inline def setFloodlightActivityConfigsVarargs(value: TrackingFloodlightActivityConfig*): Self = StObject.set(x, "floodlightActivityConfigs", js.Array(value :_*))
     
-    @scala.inline
-    def setPostViewCountPercentageMillis(value: String): Self = StObject.set(x, "postViewCountPercentageMillis", value.asInstanceOf[js.Any])
+    inline def setPostViewCountPercentageMillis(value: String): Self = StObject.set(x, "postViewCountPercentageMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostViewCountPercentageMillisUndefined: Self = StObject.set(x, "postViewCountPercentageMillis", js.undefined)
+    inline def setPostViewCountPercentageMillisUndefined: Self = StObject.set(x, "postViewCountPercentageMillis", js.undefined)
   }
 }

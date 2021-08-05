@@ -25,23 +25,18 @@ object mod {
   }
   object Entry {
     
-    @scala.inline
-    def apply[K, V](e: Double, k: K, v: V): Entry[K, V] = {
+    inline def apply[K, V](e: Double, k: K, v: V): Entry[K, V] = {
       val __obj = js.Dynamic.literal(e = e.asInstanceOf[js.Any], k = k.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
       __obj.asInstanceOf[Entry[K, V]]
     }
     
-    @scala.inline
-    implicit class EntryMutableBuilder[Self <: Entry[?, ?], K, V] (val x: Self & (Entry[K, V])) extends AnyVal {
+    extension [Self <: Entry[?, ?], K, V](x: Self & (Entry[K, V])) {
       
-      @scala.inline
-      def setE(value: Double): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+      inline def setE(value: Double): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setK(value: K): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
+      inline def setK(value: K): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setV(value: V): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+      inline def setV(value: V): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     }
   }
   
@@ -236,56 +231,40 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply[K, V](): Options[K, V] = {
+    inline def apply[K, V](): Options[K, V] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options[K, V]]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[?, ?], K, V] (val x: Self & (Options[K, V])) extends AnyVal {
+    extension [Self <: Options[?, ?], K, V](x: Self & (Options[K, V])) {
       
-      @scala.inline
-      def setDispose(value: (/* key */ K, /* value */ V) => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction2(value))
+      inline def setDispose(value: (/* key */ K, /* value */ V) => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDisposeUndefined: Self = StObject.set(x, "dispose", js.undefined)
+      inline def setDisposeUndefined: Self = StObject.set(x, "dispose", js.undefined)
       
-      @scala.inline
-      def setLength(value: (/* value */ V, /* key */ js.UndefOr[K]) => Double): Self = StObject.set(x, "length", js.Any.fromFunction2(value))
+      inline def setLength(value: (/* value */ V, /* key */ js.UndefOr[K]) => Double): Self = StObject.set(x, "length", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+      inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+      inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setNoDisposeOnSet(value: Boolean): Self = StObject.set(x, "noDisposeOnSet", value.asInstanceOf[js.Any])
+      inline def setNoDisposeOnSet(value: Boolean): Self = StObject.set(x, "noDisposeOnSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoDisposeOnSetUndefined: Self = StObject.set(x, "noDisposeOnSet", js.undefined)
+      inline def setNoDisposeOnSetUndefined: Self = StObject.set(x, "noDisposeOnSet", js.undefined)
       
-      @scala.inline
-      def setStale(value: Boolean): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
+      inline def setStale(value: Boolean): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaleUndefined: Self = StObject.set(x, "stale", js.undefined)
+      inline def setStaleUndefined: Self = StObject.set(x, "stale", js.undefined)
       
-      @scala.inline
-      def setUpdateAgeOnGet(value: Boolean): Self = StObject.set(x, "updateAgeOnGet", value.asInstanceOf[js.Any])
+      inline def setUpdateAgeOnGet(value: Boolean): Self = StObject.set(x, "updateAgeOnGet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateAgeOnGetUndefined: Self = StObject.set(x, "updateAgeOnGet", js.undefined)
+      inline def setUpdateAgeOnGetUndefined: Self = StObject.set(x, "updateAgeOnGet", js.undefined)
     }
   }
 }

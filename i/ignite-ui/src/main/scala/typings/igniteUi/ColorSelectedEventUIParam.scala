@@ -13,19 +13,15 @@ trait ColorSelectedEventUIParam extends StObject {
 }
 object ColorSelectedEventUIParam {
   
-  @scala.inline
-  def apply(): ColorSelectedEventUIParam = {
+  inline def apply(): ColorSelectedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColorSelectedEventUIParam]
   }
   
-  @scala.inline
-  implicit class ColorSelectedEventUIParamMutableBuilder[Self <: ColorSelectedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: ColorSelectedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setColor(value: js.Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: js.Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
   }
 }

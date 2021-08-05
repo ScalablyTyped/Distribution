@@ -11,30 +11,25 @@ object jestWatcherStrings {
   sealed trait onFileChange
     extends StObject
        with AvailableHooks
-  @scala.inline
-  def onFileChange: onFileChange = "onFileChange".asInstanceOf[onFileChange]
+  inline def onFileChange: onFileChange = "onFileChange".asInstanceOf[onFileChange]
   
   @js.native
   sealed trait onTestRunComplete
     extends StObject
        with AvailableHooks
-  @scala.inline
-  def onTestRunComplete: onTestRunComplete = "onTestRunComplete".asInstanceOf[onTestRunComplete]
+  inline def onTestRunComplete: onTestRunComplete = "onTestRunComplete".asInstanceOf[onTestRunComplete]
   
   @js.native
   sealed trait shouldRunTestSuite
     extends StObject
        with AvailableHooks
-  @scala.inline
-  def shouldRunTestSuite: shouldRunTestSuite = "shouldRunTestSuite".asInstanceOf[shouldRunTestSuite]
+  inline def shouldRunTestSuite: shouldRunTestSuite = "shouldRunTestSuite".asInstanceOf[shouldRunTestSuite]
   
   @js.native
   sealed trait watch extends StObject
-  @scala.inline
-  def watch: watch = "watch".asInstanceOf[watch]
+  inline def watch: watch = "watch".asInstanceOf[watch]
   
   @js.native
   sealed trait watchAll extends StObject
-  @scala.inline
-  def watchAll: watchAll = "watchAll".asInstanceOf[watchAll]
+  inline def watchAll: watchAll = "watchAll".asInstanceOf[watchAll]
 }

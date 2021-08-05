@@ -23,33 +23,27 @@ trait ReportRow extends StObject {
 }
 object ReportRow {
   
-  @scala.inline
-  def apply(): ReportRow = {
+  inline def apply(): ReportRow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReportRow]
   }
   
-  @scala.inline
-  implicit class ReportRowMutableBuilder[Self <: ReportRow] (val x: Self) extends AnyVal {
+  extension [Self <: ReportRow](x: Self) {
     
-    @scala.inline
-    def setDimensionValues(
+    inline def setDimensionValues(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.admob.gapi.client.admob.ReportRowDimensionValue}
       */ typings.maximMazurokGapiClientAdmob.maximMazurokGapiClientAdmobStrings.ReportRow & TopLevel[js.Any]
     ): Self = StObject.set(x, "dimensionValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionValuesUndefined: Self = StObject.set(x, "dimensionValues", js.undefined)
+    inline def setDimensionValuesUndefined: Self = StObject.set(x, "dimensionValues", js.undefined)
     
-    @scala.inline
-    def setMetricValues(
+    inline def setMetricValues(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.admob.gapi.client.admob.ReportRowMetricValue}
       */ typings.maximMazurokGapiClientAdmob.maximMazurokGapiClientAdmobStrings.ReportRow & TopLevel[js.Any]
     ): Self = StObject.set(x, "metricValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricValuesUndefined: Self = StObject.set(x, "metricValues", js.undefined)
+    inline def setMetricValuesUndefined: Self = StObject.set(x, "metricValues", js.undefined)
   }
 }

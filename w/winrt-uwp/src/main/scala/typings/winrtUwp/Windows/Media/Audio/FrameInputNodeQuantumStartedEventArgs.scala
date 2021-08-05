@@ -12,16 +12,13 @@ trait FrameInputNodeQuantumStartedEventArgs extends StObject {
 }
 object FrameInputNodeQuantumStartedEventArgs {
   
-  @scala.inline
-  def apply(requiredSamples: Double): FrameInputNodeQuantumStartedEventArgs = {
+  inline def apply(requiredSamples: Double): FrameInputNodeQuantumStartedEventArgs = {
     val __obj = js.Dynamic.literal(requiredSamples = requiredSamples.asInstanceOf[js.Any])
     __obj.asInstanceOf[FrameInputNodeQuantumStartedEventArgs]
   }
   
-  @scala.inline
-  implicit class FrameInputNodeQuantumStartedEventArgsMutableBuilder[Self <: FrameInputNodeQuantumStartedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: FrameInputNodeQuantumStartedEventArgs](x: Self) {
     
-    @scala.inline
-    def setRequiredSamples(value: Double): Self = StObject.set(x, "requiredSamples", value.asInstanceOf[js.Any])
+    inline def setRequiredSamples(value: Double): Self = StObject.set(x, "requiredSamples", value.asInstanceOf[js.Any])
   }
 }

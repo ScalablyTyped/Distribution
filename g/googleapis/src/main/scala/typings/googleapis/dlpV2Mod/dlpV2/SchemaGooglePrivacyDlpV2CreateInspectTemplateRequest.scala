@@ -24,25 +24,19 @@ trait SchemaGooglePrivacyDlpV2CreateInspectTemplateRequest extends StObject {
 }
 object SchemaGooglePrivacyDlpV2CreateInspectTemplateRequest {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2CreateInspectTemplateRequest = {
+  inline def apply(): SchemaGooglePrivacyDlpV2CreateInspectTemplateRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2CreateInspectTemplateRequest]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2CreateInspectTemplateRequestMutableBuilder[Self <: SchemaGooglePrivacyDlpV2CreateInspectTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2CreateInspectTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setInspectTemplate(value: SchemaGooglePrivacyDlpV2InspectTemplate): Self = StObject.set(x, "inspectTemplate", value.asInstanceOf[js.Any])
+    inline def setInspectTemplate(value: SchemaGooglePrivacyDlpV2InspectTemplate): Self = StObject.set(x, "inspectTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInspectTemplateUndefined: Self = StObject.set(x, "inspectTemplate", js.undefined)
+    inline def setInspectTemplateUndefined: Self = StObject.set(x, "inspectTemplate", js.undefined)
     
-    @scala.inline
-    def setTemplateId(value: String): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
+    inline def setTemplateId(value: String): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateIdUndefined: Self = StObject.set(x, "templateId", js.undefined)
+    inline def setTemplateIdUndefined: Self = StObject.set(x, "templateId", js.undefined)
   }
 }

@@ -19,6 +19,5 @@ object Slider {
   @JSImport("@ant-design/react-native", "Slider.defaultProps")
   @js.native
   def defaultProps: DefaultValue = js.native
-  @scala.inline
-  def defaultProps_=(x: DefaultValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: DefaultValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

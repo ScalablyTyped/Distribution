@@ -12,8 +12,7 @@ trait GetCurrentOptions extends StObject {
 }
 object GetCurrentOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addOptionsGetter: (String, js.Function0[js.UndefOr[js.Object | Null]]) => js.Function0[Unit],
     getCurrentOptions: () => js.UndefOr[js.Object | Null]
   ): GetCurrentOptions = {
@@ -21,13 +20,10 @@ object GetCurrentOptions {
     __obj.asInstanceOf[GetCurrentOptions]
   }
   
-  @scala.inline
-  implicit class GetCurrentOptionsMutableBuilder[Self <: GetCurrentOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetCurrentOptions](x: Self) {
     
-    @scala.inline
-    def setAddOptionsGetter(value: (String, js.Function0[js.UndefOr[js.Object | Null]]) => js.Function0[Unit]): Self = StObject.set(x, "addOptionsGetter", js.Any.fromFunction2(value))
+    inline def setAddOptionsGetter(value: (String, js.Function0[js.UndefOr[js.Object | Null]]) => js.Function0[Unit]): Self = StObject.set(x, "addOptionsGetter", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetCurrentOptions(value: () => js.UndefOr[js.Object | Null]): Self = StObject.set(x, "getCurrentOptions", js.Any.fromFunction0(value))
+    inline def setGetCurrentOptions(value: () => js.UndefOr[js.Object | Null]): Self = StObject.set(x, "getCurrentOptions", js.Any.fromFunction0(value))
   }
 }

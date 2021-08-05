@@ -14,28 +14,21 @@ trait TopicalExploreFeedResponseExplore extends StObject {
 }
 object TopicalExploreFeedResponseExplore {
   
-  @scala.inline
-  def apply(explanation: String): TopicalExploreFeedResponseExplore = {
+  inline def apply(explanation: String): TopicalExploreFeedResponseExplore = {
     val __obj = js.Dynamic.literal(explanation = explanation.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopicalExploreFeedResponseExplore]
   }
   
-  @scala.inline
-  implicit class TopicalExploreFeedResponseExploreMutableBuilder[Self <: TopicalExploreFeedResponseExplore] (val x: Self) extends AnyVal {
+  extension [Self <: TopicalExploreFeedResponseExplore](x: Self) {
     
-    @scala.inline
-    def setActor_id(value: Double): Self = StObject.set(x, "actor_id", value.asInstanceOf[js.Any])
+    inline def setActor_id(value: Double): Self = StObject.set(x, "actor_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActor_idUndefined: Self = StObject.set(x, "actor_id", js.undefined)
+    inline def setActor_idUndefined: Self = StObject.set(x, "actor_id", js.undefined)
     
-    @scala.inline
-    def setExplanation(value: String): Self = StObject.set(x, "explanation", value.asInstanceOf[js.Any])
+    inline def setExplanation(value: String): Self = StObject.set(x, "explanation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource_token(value: String): Self = StObject.set(x, "source_token", value.asInstanceOf[js.Any])
+    inline def setSource_token(value: String): Self = StObject.set(x, "source_token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource_tokenUndefined: Self = StObject.set(x, "source_token", js.undefined)
+    inline def setSource_tokenUndefined: Self = StObject.set(x, "source_token", js.undefined)
   }
 }

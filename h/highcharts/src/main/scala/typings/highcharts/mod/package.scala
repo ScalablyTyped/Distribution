@@ -5,309 +5,236 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def addEvent[T](el: T, `type`: java.lang.String, fn: js.Function): js.Function = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("addEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Function]
-@scala.inline
-def addEvent[T](
+inline def addEvent[T](el: T, `type`: java.lang.String, fn: js.Function): js.Function = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("addEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+inline def addEvent[T](
   el: T,
   `type`: java.lang.String,
   fn: js.Function,
   options: typings.highcharts.mod.EventOptionsObject
 ): js.Function = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("addEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function]
-@scala.inline
-def addEvent[T](el: T, `type`: java.lang.String, fn: typings.highcharts.mod.EventCallbackFunction[T]): js.Function = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("addEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Function]
-@scala.inline
-def addEvent[T](
+inline def addEvent[T](el: T, `type`: java.lang.String, fn: typings.highcharts.mod.EventCallbackFunction[T]): js.Function = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("addEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+inline def addEvent[T](
   el: T,
   `type`: java.lang.String,
   fn: typings.highcharts.mod.EventCallbackFunction[T],
   options: typings.highcharts.mod.EventOptionsObject
 ): js.Function = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("addEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function]
-@scala.inline
-def addEvent[T](el: typings.highcharts.mod.Class[T], `type`: java.lang.String, fn: js.Function): js.Function = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("addEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Function]
-@scala.inline
-def addEvent[T](
+inline def addEvent[T](el: typings.highcharts.mod.Class[T], `type`: java.lang.String, fn: js.Function): js.Function = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("addEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+inline def addEvent[T](
   el: typings.highcharts.mod.Class[T],
   `type`: java.lang.String,
   fn: js.Function,
   options: typings.highcharts.mod.EventOptionsObject
 ): js.Function = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("addEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function]
-@scala.inline
-def addEvent[T](
+inline def addEvent[T](
   el: typings.highcharts.mod.Class[T],
   `type`: java.lang.String,
   fn: typings.highcharts.mod.EventCallbackFunction[T]
 ): js.Function = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("addEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Function]
-@scala.inline
-def addEvent[T](
+inline def addEvent[T](
   el: typings.highcharts.mod.Class[T],
   `type`: java.lang.String,
   fn: typings.highcharts.mod.EventCallbackFunction[T],
   options: typings.highcharts.mod.EventOptionsObject
 ): js.Function = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("addEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function]
 
-@scala.inline
-def animObject(): typings.highcharts.mod.AnimationOptionsObject = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("animObject")().asInstanceOf[typings.highcharts.mod.AnimationOptionsObject]
-@scala.inline
-def animObject(animation: scala.Boolean): typings.highcharts.mod.AnimationOptionsObject = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("animObject")(animation.asInstanceOf[js.Any]).asInstanceOf[typings.highcharts.mod.AnimationOptionsObject]
-@scala.inline
-def animObject(animation: typings.highcharts.mod.AnimationOptionsObject): typings.highcharts.mod.AnimationOptionsObject = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("animObject")(animation.asInstanceOf[js.Any]).asInstanceOf[typings.highcharts.mod.AnimationOptionsObject]
+inline def animObject(): typings.highcharts.mod.AnimationOptionsObject = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("animObject")().asInstanceOf[typings.highcharts.mod.AnimationOptionsObject]
+inline def animObject(animation: scala.Boolean): typings.highcharts.mod.AnimationOptionsObject = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("animObject")(animation.asInstanceOf[js.Any]).asInstanceOf[typings.highcharts.mod.AnimationOptionsObject]
+inline def animObject(animation: typings.highcharts.mod.AnimationOptionsObject): typings.highcharts.mod.AnimationOptionsObject = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("animObject")(animation.asInstanceOf[js.Any]).asInstanceOf[typings.highcharts.mod.AnimationOptionsObject]
 
-@scala.inline
-def animate(el: typings.highcharts.mod.HTMLDOMElement, params: typings.highcharts.mod.CSSObject): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("animate")(el.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def animate(
+inline def animate(el: typings.highcharts.mod.HTMLDOMElement, params: typings.highcharts.mod.CSSObject): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("animate")(el.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def animate(
   el: typings.highcharts.mod.HTMLDOMElement,
   params: typings.highcharts.mod.CSSObject,
   opt: typings.highcharts.anon.PartialAnimationOptionsOb
 ): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("animate")(el.asInstanceOf[js.Any], params.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def animate(el: typings.highcharts.mod.HTMLDOMElement, params: typings.highcharts.mod.SVGAttributes): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("animate")(el.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def animate(
+inline def animate(el: typings.highcharts.mod.HTMLDOMElement, params: typings.highcharts.mod.SVGAttributes): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("animate")(el.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def animate(
   el: typings.highcharts.mod.HTMLDOMElement,
   params: typings.highcharts.mod.SVGAttributes,
   opt: typings.highcharts.anon.PartialAnimationOptionsOb
 ): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("animate")(el.asInstanceOf[js.Any], params.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def animate(el: typings.highcharts.mod.SVGElement, params: typings.highcharts.mod.CSSObject): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("animate")(el.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def animate(
+inline def animate(el: typings.highcharts.mod.SVGElement, params: typings.highcharts.mod.CSSObject): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("animate")(el.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def animate(
   el: typings.highcharts.mod.SVGElement,
   params: typings.highcharts.mod.CSSObject,
   opt: typings.highcharts.anon.PartialAnimationOptionsOb
 ): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("animate")(el.asInstanceOf[js.Any], params.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def animate(el: typings.highcharts.mod.SVGElement, params: typings.highcharts.mod.SVGAttributes): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("animate")(el.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def animate(
+inline def animate(el: typings.highcharts.mod.SVGElement, params: typings.highcharts.mod.SVGAttributes): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("animate")(el.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def animate(
   el: typings.highcharts.mod.SVGElement,
   params: typings.highcharts.mod.SVGAttributes,
   opt: typings.highcharts.anon.PartialAnimationOptionsOb
 ): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("animate")(el.asInstanceOf[js.Any], params.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 
-@scala.inline
-def arrayMax(data: js.Array[js.Any]): scala.Double = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("arrayMax")(data.asInstanceOf[js.Any]).asInstanceOf[scala.Double]
+inline def arrayMax(data: js.Array[js.Any]): scala.Double = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("arrayMax")(data.asInstanceOf[js.Any]).asInstanceOf[scala.Double]
 
-@scala.inline
-def arrayMin(data: js.Array[js.Any]): scala.Double = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("arrayMin")(data.asInstanceOf[js.Any]).asInstanceOf[scala.Double]
+inline def arrayMin(data: js.Array[js.Any]): scala.Double = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("arrayMin")(data.asInstanceOf[js.Any]).asInstanceOf[scala.Double]
 
-@scala.inline
-def attr(elem: typings.highcharts.mod.HTMLDOMElement): js.UndefOr[java.lang.String | scala.Null] = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[java.lang.String | scala.Null]]
-@scala.inline
-def attr(elem: typings.highcharts.mod.HTMLDOMElement, prop: java.lang.String): js.UndefOr[java.lang.String | scala.Null] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[java.lang.String | scala.Null]]
-@scala.inline
-def attr(elem: typings.highcharts.mod.HTMLDOMElement, prop: java.lang.String, value: java.lang.String): js.UndefOr[java.lang.String | scala.Null] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[java.lang.String | scala.Null]]
-@scala.inline
-def attr(elem: typings.highcharts.mod.HTMLDOMElement, prop: java.lang.String, value: scala.Double): js.UndefOr[java.lang.String | scala.Null] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[java.lang.String | scala.Null]]
-@scala.inline
-def attr(elem: typings.highcharts.mod.HTMLDOMElement, prop: scala.Unit, value: java.lang.String): js.UndefOr[java.lang.String | scala.Null] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[java.lang.String | scala.Null]]
-@scala.inline
-def attr(elem: typings.highcharts.mod.HTMLDOMElement, prop: scala.Unit, value: scala.Double): js.UndefOr[java.lang.String | scala.Null] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[java.lang.String | scala.Null]]
-@scala.inline
-def attr(elem: typings.highcharts.mod.HTMLDOMElement, prop: typings.highcharts.mod.HTMLAttributes): js.UndefOr[java.lang.String | scala.Null] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[java.lang.String | scala.Null]]
-@scala.inline
-def attr(
+inline def attr(elem: typings.highcharts.mod.HTMLDOMElement): js.UndefOr[java.lang.String | scala.Null] = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[java.lang.String | scala.Null]]
+inline def attr(elem: typings.highcharts.mod.HTMLDOMElement, prop: java.lang.String): js.UndefOr[java.lang.String | scala.Null] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[java.lang.String | scala.Null]]
+inline def attr(elem: typings.highcharts.mod.HTMLDOMElement, prop: java.lang.String, value: java.lang.String): js.UndefOr[java.lang.String | scala.Null] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[java.lang.String | scala.Null]]
+inline def attr(elem: typings.highcharts.mod.HTMLDOMElement, prop: java.lang.String, value: scala.Double): js.UndefOr[java.lang.String | scala.Null] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[java.lang.String | scala.Null]]
+inline def attr(elem: typings.highcharts.mod.HTMLDOMElement, prop: scala.Unit, value: java.lang.String): js.UndefOr[java.lang.String | scala.Null] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[java.lang.String | scala.Null]]
+inline def attr(elem: typings.highcharts.mod.HTMLDOMElement, prop: scala.Unit, value: scala.Double): js.UndefOr[java.lang.String | scala.Null] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[java.lang.String | scala.Null]]
+inline def attr(elem: typings.highcharts.mod.HTMLDOMElement, prop: typings.highcharts.mod.HTMLAttributes): js.UndefOr[java.lang.String | scala.Null] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[java.lang.String | scala.Null]]
+inline def attr(
   elem: typings.highcharts.mod.HTMLDOMElement,
   prop: typings.highcharts.mod.HTMLAttributes,
   value: java.lang.String
 ): js.UndefOr[java.lang.String | scala.Null] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[java.lang.String | scala.Null]]
-@scala.inline
-def attr(
+inline def attr(
   elem: typings.highcharts.mod.HTMLDOMElement,
   prop: typings.highcharts.mod.HTMLAttributes,
   value: scala.Double
 ): js.UndefOr[java.lang.String | scala.Null] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[java.lang.String | scala.Null]]
-@scala.inline
-def attr(elem: typings.highcharts.mod.HTMLDOMElement, prop: typings.highcharts.mod.SVGAttributes): js.UndefOr[java.lang.String | scala.Null] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[java.lang.String | scala.Null]]
-@scala.inline
-def attr(
+inline def attr(elem: typings.highcharts.mod.HTMLDOMElement, prop: typings.highcharts.mod.SVGAttributes): js.UndefOr[java.lang.String | scala.Null] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[java.lang.String | scala.Null]]
+inline def attr(
   elem: typings.highcharts.mod.HTMLDOMElement,
   prop: typings.highcharts.mod.SVGAttributes,
   value: java.lang.String
 ): js.UndefOr[java.lang.String | scala.Null] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[java.lang.String | scala.Null]]
-@scala.inline
-def attr(
+inline def attr(
   elem: typings.highcharts.mod.HTMLDOMElement,
   prop: typings.highcharts.mod.SVGAttributes,
   value: scala.Double
 ): js.UndefOr[java.lang.String | scala.Null] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[java.lang.String | scala.Null]]
-@scala.inline
-def attr(elem: typings.highcharts.mod.SVGDOMElement): js.UndefOr[java.lang.String | scala.Null] = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[java.lang.String | scala.Null]]
-@scala.inline
-def attr(elem: typings.highcharts.mod.SVGDOMElement, prop: java.lang.String): js.UndefOr[java.lang.String | scala.Null] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[java.lang.String | scala.Null]]
-@scala.inline
-def attr(elem: typings.highcharts.mod.SVGDOMElement, prop: java.lang.String, value: java.lang.String): js.UndefOr[java.lang.String | scala.Null] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[java.lang.String | scala.Null]]
-@scala.inline
-def attr(elem: typings.highcharts.mod.SVGDOMElement, prop: java.lang.String, value: scala.Double): js.UndefOr[java.lang.String | scala.Null] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[java.lang.String | scala.Null]]
-@scala.inline
-def attr(elem: typings.highcharts.mod.SVGDOMElement, prop: scala.Unit, value: java.lang.String): js.UndefOr[java.lang.String | scala.Null] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[java.lang.String | scala.Null]]
-@scala.inline
-def attr(elem: typings.highcharts.mod.SVGDOMElement, prop: scala.Unit, value: scala.Double): js.UndefOr[java.lang.String | scala.Null] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[java.lang.String | scala.Null]]
-@scala.inline
-def attr(elem: typings.highcharts.mod.SVGDOMElement, prop: typings.highcharts.mod.HTMLAttributes): js.UndefOr[java.lang.String | scala.Null] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[java.lang.String | scala.Null]]
-@scala.inline
-def attr(
+inline def attr(elem: typings.highcharts.mod.SVGDOMElement): js.UndefOr[java.lang.String | scala.Null] = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[java.lang.String | scala.Null]]
+inline def attr(elem: typings.highcharts.mod.SVGDOMElement, prop: java.lang.String): js.UndefOr[java.lang.String | scala.Null] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[java.lang.String | scala.Null]]
+inline def attr(elem: typings.highcharts.mod.SVGDOMElement, prop: java.lang.String, value: java.lang.String): js.UndefOr[java.lang.String | scala.Null] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[java.lang.String | scala.Null]]
+inline def attr(elem: typings.highcharts.mod.SVGDOMElement, prop: java.lang.String, value: scala.Double): js.UndefOr[java.lang.String | scala.Null] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[java.lang.String | scala.Null]]
+inline def attr(elem: typings.highcharts.mod.SVGDOMElement, prop: scala.Unit, value: java.lang.String): js.UndefOr[java.lang.String | scala.Null] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[java.lang.String | scala.Null]]
+inline def attr(elem: typings.highcharts.mod.SVGDOMElement, prop: scala.Unit, value: scala.Double): js.UndefOr[java.lang.String | scala.Null] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[java.lang.String | scala.Null]]
+inline def attr(elem: typings.highcharts.mod.SVGDOMElement, prop: typings.highcharts.mod.HTMLAttributes): js.UndefOr[java.lang.String | scala.Null] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[java.lang.String | scala.Null]]
+inline def attr(
   elem: typings.highcharts.mod.SVGDOMElement,
   prop: typings.highcharts.mod.HTMLAttributes,
   value: java.lang.String
 ): js.UndefOr[java.lang.String | scala.Null] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[java.lang.String | scala.Null]]
-@scala.inline
-def attr(
+inline def attr(
   elem: typings.highcharts.mod.SVGDOMElement,
   prop: typings.highcharts.mod.HTMLAttributes,
   value: scala.Double
 ): js.UndefOr[java.lang.String | scala.Null] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[java.lang.String | scala.Null]]
-@scala.inline
-def attr(elem: typings.highcharts.mod.SVGDOMElement, prop: typings.highcharts.mod.SVGAttributes): js.UndefOr[java.lang.String | scala.Null] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[java.lang.String | scala.Null]]
-@scala.inline
-def attr(
+inline def attr(elem: typings.highcharts.mod.SVGDOMElement, prop: typings.highcharts.mod.SVGAttributes): js.UndefOr[java.lang.String | scala.Null] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[java.lang.String | scala.Null]]
+inline def attr(
   elem: typings.highcharts.mod.SVGDOMElement,
   prop: typings.highcharts.mod.SVGAttributes,
   value: java.lang.String
 ): js.UndefOr[java.lang.String | scala.Null] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[java.lang.String | scala.Null]]
-@scala.inline
-def attr(
+inline def attr(
   elem: typings.highcharts.mod.SVGDOMElement,
   prop: typings.highcharts.mod.SVGAttributes,
   value: scala.Double
 ): js.UndefOr[java.lang.String | scala.Null] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("attr")(elem.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[java.lang.String | scala.Null]]
 
-@scala.inline
-def chart(options: typings.highcharts.mod.Options): typings.highcharts.mod.Chart_ = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("chart")(options.asInstanceOf[js.Any]).asInstanceOf[typings.highcharts.mod.Chart_]
-@scala.inline
-def chart(options: typings.highcharts.mod.Options, callback: typings.highcharts.mod.ChartCallbackFunction): typings.highcharts.mod.Chart_ = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("chart")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.Chart_]
-@scala.inline
-def chart(renderTo: java.lang.String, options: typings.highcharts.mod.Options): typings.highcharts.mod.Chart_ = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("chart")(renderTo.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.Chart_]
-@scala.inline
-def chart(
+inline def chart(options: typings.highcharts.mod.Options): typings.highcharts.mod.Chart_ = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("chart")(options.asInstanceOf[js.Any]).asInstanceOf[typings.highcharts.mod.Chart_]
+inline def chart(options: typings.highcharts.mod.Options, callback: typings.highcharts.mod.ChartCallbackFunction): typings.highcharts.mod.Chart_ = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("chart")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.Chart_]
+inline def chart(renderTo: java.lang.String, options: typings.highcharts.mod.Options): typings.highcharts.mod.Chart_ = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("chart")(renderTo.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.Chart_]
+inline def chart(
   renderTo: java.lang.String,
   options: typings.highcharts.mod.Options,
   callback: typings.highcharts.mod.ChartCallbackFunction
 ): typings.highcharts.mod.Chart_ = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("chart")(renderTo.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.Chart_]
-@scala.inline
-def chart(renderTo: typings.highcharts.mod.HTMLDOMElement, options: typings.highcharts.mod.Options): typings.highcharts.mod.Chart_ = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("chart")(renderTo.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.Chart_]
-@scala.inline
-def chart(
+inline def chart(renderTo: typings.highcharts.mod.HTMLDOMElement, options: typings.highcharts.mod.Options): typings.highcharts.mod.Chart_ = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("chart")(renderTo.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.Chart_]
+inline def chart(
   renderTo: typings.highcharts.mod.HTMLDOMElement,
   options: typings.highcharts.mod.Options,
   callback: typings.highcharts.mod.ChartCallbackFunction
 ): typings.highcharts.mod.Chart_ = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("chart")(renderTo.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.Chart_]
 
-@scala.inline
-def charts: js.Array[js.UndefOr[typings.highcharts.mod.Chart_]] = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].selectDynamic("charts").asInstanceOf[js.Array[js.UndefOr[typings.highcharts.mod.Chart_]]]
-@scala.inline
-def charts_=(x: js.Array[js.UndefOr[typings.highcharts.mod.Chart_]]): scala.Unit = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].updateDynamic("charts")(x.asInstanceOf[js.Any])
+inline def charts: js.Array[js.UndefOr[typings.highcharts.mod.Chart_]] = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].selectDynamic("charts").asInstanceOf[js.Array[js.UndefOr[typings.highcharts.mod.Chart_]]]
+inline def charts_=(x: js.Array[js.UndefOr[typings.highcharts.mod.Chart_]]): scala.Unit = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].updateDynamic("charts")(x.asInstanceOf[js.Any])
 
-@scala.inline
-def clearTimeout(id: scala.Double): scala.Unit = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("clearTimeout")(id.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def clearTimeout(id: scala.Double): scala.Unit = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("clearTimeout")(id.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
 
-@scala.inline
-def color(input: typings.highcharts.mod.ColorType): typings.highcharts.mod.Color_ = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("color")(input.asInstanceOf[js.Any]).asInstanceOf[typings.highcharts.mod.Color_]
+inline def color(input: typings.highcharts.mod.ColorType): typings.highcharts.mod.Color_ = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("color")(input.asInstanceOf[js.Any]).asInstanceOf[typings.highcharts.mod.Color_]
 
-@scala.inline
-def correctFloat(num: scala.Double): scala.Double = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("correctFloat")(num.asInstanceOf[js.Any]).asInstanceOf[scala.Double]
-@scala.inline
-def correctFloat(num: scala.Double, prec: scala.Double): scala.Double = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("correctFloat")(num.asInstanceOf[js.Any], prec.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+inline def correctFloat(num: scala.Double): scala.Double = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("correctFloat")(num.asInstanceOf[js.Any]).asInstanceOf[scala.Double]
+inline def correctFloat(num: scala.Double, prec: scala.Double): scala.Double = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("correctFloat")(num.asInstanceOf[js.Any], prec.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
 
-@scala.inline
-def createElement(tag: java.lang.String): typings.highcharts.mod.HTMLDOMElement = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any]).asInstanceOf[typings.highcharts.mod.HTMLDOMElement]
-@scala.inline
-def createElement(
+inline def createElement(tag: java.lang.String): typings.highcharts.mod.HTMLDOMElement = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any]).asInstanceOf[typings.highcharts.mod.HTMLDOMElement]
+inline def createElement(
   tag: java.lang.String,
   attribs: scala.Unit,
   styles: scala.Unit,
   parent: scala.Unit,
   nopad: scala.Boolean
 ): typings.highcharts.mod.HTMLDOMElement = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any], attribs.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], nopad.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.HTMLDOMElement]
-@scala.inline
-def createElement(
+inline def createElement(
   tag: java.lang.String,
   attribs: scala.Unit,
   styles: scala.Unit,
   parent: typings.highcharts.mod.HTMLDOMElement
 ): typings.highcharts.mod.HTMLDOMElement = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any], attribs.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.HTMLDOMElement]
-@scala.inline
-def createElement(
+inline def createElement(
   tag: java.lang.String,
   attribs: scala.Unit,
   styles: scala.Unit,
   parent: typings.highcharts.mod.HTMLDOMElement,
   nopad: scala.Boolean
 ): typings.highcharts.mod.HTMLDOMElement = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any], attribs.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], nopad.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.HTMLDOMElement]
-@scala.inline
-def createElement(tag: java.lang.String, attribs: scala.Unit, styles: typings.highcharts.mod.CSSObject): typings.highcharts.mod.HTMLDOMElement = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any], attribs.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.HTMLDOMElement]
-@scala.inline
-def createElement(
+inline def createElement(tag: java.lang.String, attribs: scala.Unit, styles: typings.highcharts.mod.CSSObject): typings.highcharts.mod.HTMLDOMElement = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any], attribs.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.HTMLDOMElement]
+inline def createElement(
   tag: java.lang.String,
   attribs: scala.Unit,
   styles: typings.highcharts.mod.CSSObject,
   parent: scala.Unit,
   nopad: scala.Boolean
 ): typings.highcharts.mod.HTMLDOMElement = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any], attribs.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], nopad.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.HTMLDOMElement]
-@scala.inline
-def createElement(
+inline def createElement(
   tag: java.lang.String,
   attribs: scala.Unit,
   styles: typings.highcharts.mod.CSSObject,
   parent: typings.highcharts.mod.HTMLDOMElement
 ): typings.highcharts.mod.HTMLDOMElement = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any], attribs.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.HTMLDOMElement]
-@scala.inline
-def createElement(
+inline def createElement(
   tag: java.lang.String,
   attribs: scala.Unit,
   styles: typings.highcharts.mod.CSSObject,
   parent: typings.highcharts.mod.HTMLDOMElement,
   nopad: scala.Boolean
 ): typings.highcharts.mod.HTMLDOMElement = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any], attribs.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], nopad.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.HTMLDOMElement]
-@scala.inline
-def createElement(tag: java.lang.String, attribs: typings.highcharts.mod.HTMLAttributes): typings.highcharts.mod.HTMLDOMElement = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any], attribs.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.HTMLDOMElement]
-@scala.inline
-def createElement(
+inline def createElement(tag: java.lang.String, attribs: typings.highcharts.mod.HTMLAttributes): typings.highcharts.mod.HTMLDOMElement = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any], attribs.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.HTMLDOMElement]
+inline def createElement(
   tag: java.lang.String,
   attribs: typings.highcharts.mod.HTMLAttributes,
   styles: scala.Unit,
   parent: scala.Unit,
   nopad: scala.Boolean
 ): typings.highcharts.mod.HTMLDOMElement = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any], attribs.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], nopad.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.HTMLDOMElement]
-@scala.inline
-def createElement(
+inline def createElement(
   tag: java.lang.String,
   attribs: typings.highcharts.mod.HTMLAttributes,
   styles: scala.Unit,
   parent: typings.highcharts.mod.HTMLDOMElement
 ): typings.highcharts.mod.HTMLDOMElement = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any], attribs.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.HTMLDOMElement]
-@scala.inline
-def createElement(
+inline def createElement(
   tag: java.lang.String,
   attribs: typings.highcharts.mod.HTMLAttributes,
   styles: scala.Unit,
   parent: typings.highcharts.mod.HTMLDOMElement,
   nopad: scala.Boolean
 ): typings.highcharts.mod.HTMLDOMElement = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any], attribs.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], nopad.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.HTMLDOMElement]
-@scala.inline
-def createElement(
+inline def createElement(
   tag: java.lang.String,
   attribs: typings.highcharts.mod.HTMLAttributes,
   styles: typings.highcharts.mod.CSSObject
 ): typings.highcharts.mod.HTMLDOMElement = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any], attribs.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.HTMLDOMElement]
-@scala.inline
-def createElement(
+inline def createElement(
   tag: java.lang.String,
   attribs: typings.highcharts.mod.HTMLAttributes,
   styles: typings.highcharts.mod.CSSObject,
   parent: scala.Unit,
   nopad: scala.Boolean
 ): typings.highcharts.mod.HTMLDOMElement = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any], attribs.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], nopad.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.HTMLDOMElement]
-@scala.inline
-def createElement(
+inline def createElement(
   tag: java.lang.String,
   attribs: typings.highcharts.mod.HTMLAttributes,
   styles: typings.highcharts.mod.CSSObject,
   parent: typings.highcharts.mod.HTMLDOMElement
 ): typings.highcharts.mod.HTMLDOMElement = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any], attribs.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.HTMLDOMElement]
-@scala.inline
-def createElement(
+inline def createElement(
   tag: java.lang.String,
   attribs: typings.highcharts.mod.HTMLAttributes,
   styles: typings.highcharts.mod.CSSObject,
@@ -315,339 +242,252 @@ def createElement(
   nopad: scala.Boolean
 ): typings.highcharts.mod.HTMLDOMElement = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any], attribs.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], nopad.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.HTMLDOMElement]
 
-@scala.inline
-def css(el: typings.highcharts.mod.HTMLDOMElement, styles: typings.highcharts.mod.CSSObject): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("css")(el.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def css(el: typings.highcharts.mod.SVGDOMElement, styles: typings.highcharts.mod.CSSObject): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("css")(el.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def css(el: typings.highcharts.mod.HTMLDOMElement, styles: typings.highcharts.mod.CSSObject): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("css")(el.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def css(el: typings.highcharts.mod.SVGDOMElement, styles: typings.highcharts.mod.CSSObject): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("css")(el.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 
-@scala.inline
-def dateFormat(format: java.lang.String, timestamp: scala.Double): java.lang.String = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("dateFormat")(format.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-@scala.inline
-def dateFormat(format: java.lang.String, timestamp: scala.Double, capitalize: scala.Boolean): java.lang.String = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("dateFormat")(format.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any], capitalize.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def dateFormat(format: java.lang.String, timestamp: scala.Double): java.lang.String = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("dateFormat")(format.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def dateFormat(format: java.lang.String, timestamp: scala.Double, capitalize: scala.Boolean): java.lang.String = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("dateFormat")(format.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any], capitalize.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
 
-@scala.inline
-def dateFormats: typings.highcharts.mod.Dictionary[typings.highcharts.mod.TimeFormatCallbackFunction] = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].selectDynamic("dateFormats").asInstanceOf[typings.highcharts.mod.Dictionary[typings.highcharts.mod.TimeFormatCallbackFunction]]
-@scala.inline
-def dateFormats_=(x: typings.highcharts.mod.Dictionary[typings.highcharts.mod.TimeFormatCallbackFunction]): scala.Unit = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].updateDynamic("dateFormats")(x.asInstanceOf[js.Any])
+inline def dateFormats: typings.highcharts.mod.Dictionary[typings.highcharts.mod.TimeFormatCallbackFunction] = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].selectDynamic("dateFormats").asInstanceOf[typings.highcharts.mod.Dictionary[typings.highcharts.mod.TimeFormatCallbackFunction]]
+inline def dateFormats_=(x: typings.highcharts.mod.Dictionary[typings.highcharts.mod.TimeFormatCallbackFunction]): scala.Unit = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].updateDynamic("dateFormats")(x.asInstanceOf[js.Any])
 
-@scala.inline
-def defaultOptions: typings.highcharts.mod.Options = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].selectDynamic("defaultOptions").asInstanceOf[typings.highcharts.mod.Options]
-@scala.inline
-def defaultOptions_=(x: typings.highcharts.mod.Options): scala.Unit = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
+inline def defaultOptions: typings.highcharts.mod.Options = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].selectDynamic("defaultOptions").asInstanceOf[typings.highcharts.mod.Options]
+inline def defaultOptions_=(x: typings.highcharts.mod.Options): scala.Unit = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
 
-@scala.inline
-def defined(obj: js.Any): scala.Boolean = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("defined")(obj.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def defined(obj: js.Any): scala.Boolean = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("defined")(obj.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
 
-@scala.inline
-def destroyObjectProperties(obj: js.Any): scala.Unit = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("destroyObjectProperties")(obj.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-@scala.inline
-def destroyObjectProperties(obj: js.Any, except: js.Any): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("destroyObjectProperties")(obj.asInstanceOf[js.Any], except.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def destroyObjectProperties(obj: js.Any): scala.Unit = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("destroyObjectProperties")(obj.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def destroyObjectProperties(obj: js.Any, except: js.Any): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("destroyObjectProperties")(obj.asInstanceOf[js.Any], except.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 
-@scala.inline
-def discardElement(element: typings.highcharts.mod.HTMLDOMElement): scala.Unit = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("discardElement")(element.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def discardElement(element: typings.highcharts.mod.HTMLDOMElement): scala.Unit = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("discardElement")(element.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
 
-@scala.inline
-def each(arr: js.Array[js.Any], fn: js.Function): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("each")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def each(arr: js.Array[js.Any], fn: js.Function, ctx: js.Any): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("each")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def each(arr: js.Array[js.Any], fn: js.Function): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("each")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def each(arr: js.Array[js.Any], fn: js.Function, ctx: js.Any): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("each")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 
-@scala.inline
-def erase(arr: js.Array[js.Any], item: js.Any): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("erase")(arr.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def erase(arr: js.Array[js.Any], item: js.Any): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("erase")(arr.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 
-@scala.inline
-def error(code: java.lang.String): scala.Unit = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-@scala.inline
-def error(code: java.lang.String, stop: scala.Boolean): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def error(
+inline def error(code: java.lang.String): scala.Unit = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def error(code: java.lang.String, stop: scala.Boolean): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def error(
   code: java.lang.String,
   stop: scala.Boolean,
   chart: scala.Unit,
   params: typings.highcharts.mod.Dictionary[java.lang.String]
 ): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], chart.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def error(code: java.lang.String, stop: scala.Boolean, chart: typings.highcharts.mod.Chart_): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], chart.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def error(
+inline def error(code: java.lang.String, stop: scala.Boolean, chart: typings.highcharts.mod.Chart_): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], chart.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def error(
   code: java.lang.String,
   stop: scala.Boolean,
   chart: typings.highcharts.mod.Chart_,
   params: typings.highcharts.mod.Dictionary[java.lang.String]
 ): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], chart.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def error(
+inline def error(
   code: java.lang.String,
   stop: scala.Unit,
   chart: scala.Unit,
   params: typings.highcharts.mod.Dictionary[java.lang.String]
 ): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], chart.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def error(code: java.lang.String, stop: scala.Unit, chart: typings.highcharts.mod.Chart_): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], chart.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def error(
+inline def error(code: java.lang.String, stop: scala.Unit, chart: typings.highcharts.mod.Chart_): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], chart.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def error(
   code: java.lang.String,
   stop: scala.Unit,
   chart: typings.highcharts.mod.Chart_,
   params: typings.highcharts.mod.Dictionary[java.lang.String]
 ): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], chart.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def error(code: scala.Double): scala.Unit = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-@scala.inline
-def error(code: scala.Double, stop: scala.Boolean): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def error(
+inline def error(code: scala.Double): scala.Unit = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def error(code: scala.Double, stop: scala.Boolean): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def error(
   code: scala.Double,
   stop: scala.Boolean,
   chart: scala.Unit,
   params: typings.highcharts.mod.Dictionary[java.lang.String]
 ): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], chart.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def error(code: scala.Double, stop: scala.Boolean, chart: typings.highcharts.mod.Chart_): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], chart.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def error(
+inline def error(code: scala.Double, stop: scala.Boolean, chart: typings.highcharts.mod.Chart_): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], chart.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def error(
   code: scala.Double,
   stop: scala.Boolean,
   chart: typings.highcharts.mod.Chart_,
   params: typings.highcharts.mod.Dictionary[java.lang.String]
 ): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], chart.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def error(
+inline def error(
   code: scala.Double,
   stop: scala.Unit,
   chart: scala.Unit,
   params: typings.highcharts.mod.Dictionary[java.lang.String]
 ): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], chart.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def error(code: scala.Double, stop: scala.Unit, chart: typings.highcharts.mod.Chart_): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], chart.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def error(
+inline def error(code: scala.Double, stop: scala.Unit, chart: typings.highcharts.mod.Chart_): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], chart.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def error(
   code: scala.Double,
   stop: scala.Unit,
   chart: typings.highcharts.mod.Chart_,
   params: typings.highcharts.mod.Dictionary[java.lang.String]
 ): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("error")(code.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], chart.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 
-@scala.inline
-def extend[T](a: T, b: js.Object): T = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("extend")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-@scala.inline
-def extend[T](a: scala.Unit, b: js.Object): T = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("extend")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def extend[T](a: T, b: js.Object): T = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("extend")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def extend[T](a: scala.Unit, b: js.Object): T = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("extend")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
 
-@scala.inline
-def extendClass[T](parent: typings.highcharts.mod.Class[T], members: typings.highcharts.mod.Dictionary[js.Any]): typings.highcharts.mod.Class[T] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("extendClass")(parent.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.Class[T]]
+inline def extendClass[T](parent: typings.highcharts.mod.Class[T], members: typings.highcharts.mod.Dictionary[js.Any]): typings.highcharts.mod.Class[T] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("extendClass")(parent.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.Class[T]]
 
-@scala.inline
-def find[T](arr: js.Array[T], callback: js.Function): js.UndefOr[T] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("find")(arr.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
+inline def find[T](arr: js.Array[T], callback: js.Function): js.UndefOr[T] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("find")(arr.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
 
-@scala.inline
-def fireEvent[T](el: T, `type`: java.lang.String): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def fireEvent[T](el: T, `type`: java.lang.String, eventArguments: scala.Unit, defaultFunction: js.Function): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], eventArguments.asInstanceOf[js.Any], defaultFunction.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def fireEvent[T](
+inline def fireEvent[T](el: T, `type`: java.lang.String): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def fireEvent[T](el: T, `type`: java.lang.String, eventArguments: scala.Unit, defaultFunction: js.Function): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], eventArguments.asInstanceOf[js.Any], defaultFunction.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def fireEvent[T](
   el: T,
   `type`: java.lang.String,
   eventArguments: scala.Unit,
   defaultFunction: typings.highcharts.mod.EventCallbackFunction[T]
 ): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], eventArguments.asInstanceOf[js.Any], defaultFunction.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def fireEvent[T](el: T, `type`: java.lang.String, eventArguments: typings.highcharts.mod.Dictionary[js.Any]): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], eventArguments.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def fireEvent[T](
+inline def fireEvent[T](el: T, `type`: java.lang.String, eventArguments: typings.highcharts.mod.Dictionary[js.Any]): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], eventArguments.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def fireEvent[T](
   el: T,
   `type`: java.lang.String,
   eventArguments: typings.highcharts.mod.Dictionary[js.Any],
   defaultFunction: js.Function
 ): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], eventArguments.asInstanceOf[js.Any], defaultFunction.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def fireEvent[T](
+inline def fireEvent[T](
   el: T,
   `type`: java.lang.String,
   eventArguments: typings.highcharts.mod.Dictionary[js.Any],
   defaultFunction: typings.highcharts.mod.EventCallbackFunction[T]
 ): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], eventArguments.asInstanceOf[js.Any], defaultFunction.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def fireEvent[T](el: T, `type`: java.lang.String, eventArguments: typings.std.Event): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], eventArguments.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def fireEvent[T](el: T, `type`: java.lang.String, eventArguments: typings.std.Event, defaultFunction: js.Function): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], eventArguments.asInstanceOf[js.Any], defaultFunction.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def fireEvent[T](
+inline def fireEvent[T](el: T, `type`: java.lang.String, eventArguments: typings.std.Event): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], eventArguments.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def fireEvent[T](el: T, `type`: java.lang.String, eventArguments: typings.std.Event, defaultFunction: js.Function): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], eventArguments.asInstanceOf[js.Any], defaultFunction.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def fireEvent[T](
   el: T,
   `type`: java.lang.String,
   eventArguments: typings.std.Event,
   defaultFunction: typings.highcharts.mod.EventCallbackFunction[T]
 ): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], eventArguments.asInstanceOf[js.Any], defaultFunction.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 
-@scala.inline
-def format(str: java.lang.String, ctx: typings.std.Record[java.lang.String, js.Any]): java.lang.String = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("format")(str.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-@scala.inline
-def format(
+inline def format(str: java.lang.String, ctx: typings.std.Record[java.lang.String, js.Any]): java.lang.String = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("format")(str.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def format(
   str: java.lang.String,
   ctx: typings.std.Record[java.lang.String, js.Any],
   chart: typings.highcharts.mod.Chart_
 ): java.lang.String = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("format")(str.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], chart.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
 
-@scala.inline
-def getDeferredAnimation(chart: typings.highcharts.mod.Chart_, animation: scala.Boolean): scala.Double = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getDeferredAnimation")(chart.asInstanceOf[js.Any], animation.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-@scala.inline
-def getDeferredAnimation(
+inline def getDeferredAnimation(chart: typings.highcharts.mod.Chart_, animation: scala.Boolean): scala.Double = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getDeferredAnimation")(chart.asInstanceOf[js.Any], animation.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+inline def getDeferredAnimation(
   chart: typings.highcharts.mod.Chart_,
   animation: scala.Boolean,
   series: typings.highcharts.mod.Series
 ): scala.Double = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getDeferredAnimation")(chart.asInstanceOf[js.Any], animation.asInstanceOf[js.Any], series.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-@scala.inline
-def getDeferredAnimation(chart: typings.highcharts.mod.Chart_, animation: typings.highcharts.mod.AnimationOptionsObject): scala.Double = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getDeferredAnimation")(chart.asInstanceOf[js.Any], animation.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-@scala.inline
-def getDeferredAnimation(
+inline def getDeferredAnimation(chart: typings.highcharts.mod.Chart_, animation: typings.highcharts.mod.AnimationOptionsObject): scala.Double = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getDeferredAnimation")(chart.asInstanceOf[js.Any], animation.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+inline def getDeferredAnimation(
   chart: typings.highcharts.mod.Chart_,
   animation: typings.highcharts.mod.AnimationOptionsObject,
   series: typings.highcharts.mod.Series
 ): scala.Double = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getDeferredAnimation")(chart.asInstanceOf[js.Any], animation.asInstanceOf[js.Any], series.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
 
-@scala.inline
-def getMagnitude(num: scala.Double): scala.Double = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getMagnitude")(num.asInstanceOf[js.Any]).asInstanceOf[scala.Double]
+inline def getMagnitude(num: scala.Double): scala.Double = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getMagnitude")(num.asInstanceOf[js.Any]).asInstanceOf[scala.Double]
 
-@scala.inline
-def getOptions(): typings.highcharts.mod.Options = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getOptions")().asInstanceOf[typings.highcharts.mod.Options]
+inline def getOptions(): typings.highcharts.mod.Options = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getOptions")().asInstanceOf[typings.highcharts.mod.Options]
 
-@scala.inline
-def getStyle(el: typings.highcharts.mod.HTMLDOMElement, prop: java.lang.String): scala.Double | java.lang.String = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getStyle")(el.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[scala.Double | java.lang.String]
-@scala.inline
-def getStyle(el: typings.highcharts.mod.HTMLDOMElement, prop: java.lang.String, toInt: scala.Boolean): scala.Double | java.lang.String = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getStyle")(el.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], toInt.asInstanceOf[js.Any])).asInstanceOf[scala.Double | java.lang.String]
+inline def getStyle(el: typings.highcharts.mod.HTMLDOMElement, prop: java.lang.String): scala.Double | java.lang.String = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getStyle")(el.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[scala.Double | java.lang.String]
+inline def getStyle(el: typings.highcharts.mod.HTMLDOMElement, prop: java.lang.String, toInt: scala.Boolean): scala.Double | java.lang.String = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getStyle")(el.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], toInt.asInstanceOf[js.Any])).asInstanceOf[scala.Double | java.lang.String]
 
-@scala.inline
-def grep(arr: js.Array[js.Any], callback: js.Function): js.Array[js.Any] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("grep")(arr.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+inline def grep(arr: js.Array[js.Any], callback: js.Function): js.Array[js.Any] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("grep")(arr.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
 
-@scala.inline
-def inArray(item: js.Any, arr: js.Array[js.Any]): scala.Double = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("inArray")(item.asInstanceOf[js.Any], arr.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-@scala.inline
-def inArray(item: js.Any, arr: js.Array[js.Any], fromIndex: scala.Double): scala.Double = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("inArray")(item.asInstanceOf[js.Any], arr.asInstanceOf[js.Any], fromIndex.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+inline def inArray(item: js.Any, arr: js.Array[js.Any]): scala.Double = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("inArray")(item.asInstanceOf[js.Any], arr.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+inline def inArray(item: js.Any, arr: js.Array[js.Any], fromIndex: scala.Double): scala.Double = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("inArray")(item.asInstanceOf[js.Any], arr.asInstanceOf[js.Any], fromIndex.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
 
-@scala.inline
-def isArray(obj: js.Any): scala.Boolean = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(obj.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def isArray(obj: js.Any): scala.Boolean = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(obj.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
 
-@scala.inline
-def isClass(): scala.Boolean = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isClass")().asInstanceOf[scala.Boolean]
-@scala.inline
-def isClass(obj: js.Object): scala.Boolean = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isClass")(obj.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def isClass(): scala.Boolean = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isClass")().asInstanceOf[scala.Boolean]
+inline def isClass(obj: js.Object): scala.Boolean = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isClass")(obj.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
 
-@scala.inline
-def isDOMElement(obj: js.Any): scala.Boolean = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isDOMElement")(obj.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def isDOMElement(obj: js.Any): scala.Boolean = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isDOMElement")(obj.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
 
-@scala.inline
-def isNumber(n: js.Any): scala.Boolean = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isNumber")(n.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def isNumber(n: js.Any): scala.Boolean = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isNumber")(n.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
 
-@scala.inline
-def isObject(obj: js.Any): scala.Boolean = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(obj.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
-@scala.inline
-def isObject(obj: js.Any, strict: scala.Boolean): scala.Boolean = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(obj.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
+inline def isObject(obj: js.Any): scala.Boolean = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(obj.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def isObject(obj: js.Any, strict: scala.Boolean): scala.Boolean = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(obj.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
 
-@scala.inline
-def isString(s: js.Any): scala.Boolean = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isString")(s.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def isString(s: js.Any): scala.Boolean = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isString")(s.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
 
-@scala.inline
-def keys(obj: js.Any): js.Array[java.lang.String] = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("keys")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[java.lang.String]]
+inline def keys(obj: js.Any): js.Array[java.lang.String] = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("keys")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[java.lang.String]]
 
-@scala.inline
-def map(arr: js.Array[js.Any], fn: js.Function): js.Array[js.Any] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("map")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+inline def map(arr: js.Array[js.Any], fn: js.Function): js.Array[js.Any] = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("map")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
 
-@scala.inline
-def merge[T](a: T, n: js.UndefOr[js.Object]*): T = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("merge")(a.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[T]
-@scala.inline
-def merge[T](a: scala.Unit, n: js.UndefOr[js.Object]*): T = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("merge")(a.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[T]
-@scala.inline
-def merge[T](extend: scala.Boolean, a: T, n: js.UndefOr[js.Object]*): T = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("merge")(extend.asInstanceOf[js.Any], a.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[T]
-@scala.inline
-def merge[T](extend: scala.Boolean, a: scala.Unit, n: js.UndefOr[js.Object]*): T = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("merge")(extend.asInstanceOf[js.Any], a.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def merge[T](a: T, n: js.UndefOr[js.Object]*): T = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("merge")(a.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def merge[T](a: scala.Unit, n: js.UndefOr[js.Object]*): T = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("merge")(a.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def merge[T](extend: scala.Boolean, a: T, n: js.UndefOr[js.Object]*): T = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("merge")(extend.asInstanceOf[js.Any], a.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def merge[T](extend: scala.Boolean, a: scala.Unit, n: js.UndefOr[js.Object]*): T = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("merge")(extend.asInstanceOf[js.Any], a.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[T]
 
-@scala.inline
-def normalizeTickInterval(interval: scala.Double): scala.Double = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any]).asInstanceOf[scala.Double]
-@scala.inline
-def normalizeTickInterval(interval: scala.Double, multiples: js.Array[js.Any]): scala.Double = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-@scala.inline
-def normalizeTickInterval(interval: scala.Double, multiples: js.Array[js.Any], magnitude: scala.Double): scala.Double = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-@scala.inline
-def normalizeTickInterval(
+inline def normalizeTickInterval(interval: scala.Double): scala.Double = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any]).asInstanceOf[scala.Double]
+inline def normalizeTickInterval(interval: scala.Double, multiples: js.Array[js.Any]): scala.Double = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+inline def normalizeTickInterval(interval: scala.Double, multiples: js.Array[js.Any], magnitude: scala.Double): scala.Double = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+inline def normalizeTickInterval(
   interval: scala.Double,
   multiples: js.Array[js.Any],
   magnitude: scala.Double,
   allowDecimals: scala.Boolean
 ): scala.Double = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-@scala.inline
-def normalizeTickInterval(
+inline def normalizeTickInterval(
   interval: scala.Double,
   multiples: js.Array[js.Any],
   magnitude: scala.Double,
   allowDecimals: scala.Boolean,
   hasTickAmount: scala.Boolean
 ): scala.Double = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any], hasTickAmount.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-@scala.inline
-def normalizeTickInterval(
+inline def normalizeTickInterval(
   interval: scala.Double,
   multiples: js.Array[js.Any],
   magnitude: scala.Double,
   allowDecimals: scala.Unit,
   hasTickAmount: scala.Boolean
 ): scala.Double = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any], hasTickAmount.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-@scala.inline
-def normalizeTickInterval(
+inline def normalizeTickInterval(
   interval: scala.Double,
   multiples: js.Array[js.Any],
   magnitude: scala.Unit,
   allowDecimals: scala.Boolean
 ): scala.Double = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-@scala.inline
-def normalizeTickInterval(
+inline def normalizeTickInterval(
   interval: scala.Double,
   multiples: js.Array[js.Any],
   magnitude: scala.Unit,
   allowDecimals: scala.Boolean,
   hasTickAmount: scala.Boolean
 ): scala.Double = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any], hasTickAmount.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-@scala.inline
-def normalizeTickInterval(
+inline def normalizeTickInterval(
   interval: scala.Double,
   multiples: js.Array[js.Any],
   magnitude: scala.Unit,
   allowDecimals: scala.Unit,
   hasTickAmount: scala.Boolean
 ): scala.Double = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any], hasTickAmount.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-@scala.inline
-def normalizeTickInterval(interval: scala.Double, multiples: scala.Unit, magnitude: scala.Double): scala.Double = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-@scala.inline
-def normalizeTickInterval(
+inline def normalizeTickInterval(interval: scala.Double, multiples: scala.Unit, magnitude: scala.Double): scala.Double = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+inline def normalizeTickInterval(
   interval: scala.Double,
   multiples: scala.Unit,
   magnitude: scala.Double,
   allowDecimals: scala.Boolean
 ): scala.Double = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-@scala.inline
-def normalizeTickInterval(
+inline def normalizeTickInterval(
   interval: scala.Double,
   multiples: scala.Unit,
   magnitude: scala.Double,
   allowDecimals: scala.Boolean,
   hasTickAmount: scala.Boolean
 ): scala.Double = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any], hasTickAmount.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-@scala.inline
-def normalizeTickInterval(
+inline def normalizeTickInterval(
   interval: scala.Double,
   multiples: scala.Unit,
   magnitude: scala.Double,
   allowDecimals: scala.Unit,
   hasTickAmount: scala.Boolean
 ): scala.Double = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any], hasTickAmount.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-@scala.inline
-def normalizeTickInterval(interval: scala.Double, multiples: scala.Unit, magnitude: scala.Unit, allowDecimals: scala.Boolean): scala.Double = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-@scala.inline
-def normalizeTickInterval(
+inline def normalizeTickInterval(interval: scala.Double, multiples: scala.Unit, magnitude: scala.Unit, allowDecimals: scala.Boolean): scala.Double = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+inline def normalizeTickInterval(
   interval: scala.Double,
   multiples: scala.Unit,
   magnitude: scala.Unit,
   allowDecimals: scala.Boolean,
   hasTickAmount: scala.Boolean
 ): scala.Double = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any], hasTickAmount.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-@scala.inline
-def normalizeTickInterval(
+inline def normalizeTickInterval(
   interval: scala.Double,
   multiples: scala.Unit,
   magnitude: scala.Unit,
@@ -655,130 +495,99 @@ def normalizeTickInterval(
   hasTickAmount: scala.Boolean
 ): scala.Double = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any], allowDecimals.asInstanceOf[js.Any], hasTickAmount.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
 
-@scala.inline
-def numberFormat(number: scala.Double, decimals: scala.Double): java.lang.String = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("numberFormat")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-@scala.inline
-def numberFormat(number: scala.Double, decimals: scala.Double, decimalPoint: java.lang.String): java.lang.String = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("numberFormat")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], decimalPoint.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-@scala.inline
-def numberFormat(
+inline def numberFormat(number: scala.Double, decimals: scala.Double): java.lang.String = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("numberFormat")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def numberFormat(number: scala.Double, decimals: scala.Double, decimalPoint: java.lang.String): java.lang.String = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("numberFormat")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], decimalPoint.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def numberFormat(
   number: scala.Double,
   decimals: scala.Double,
   decimalPoint: java.lang.String,
   thousandsSep: java.lang.String
 ): java.lang.String = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("numberFormat")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], decimalPoint.asInstanceOf[js.Any], thousandsSep.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-@scala.inline
-def numberFormat(
+inline def numberFormat(
   number: scala.Double,
   decimals: scala.Double,
   decimalPoint: scala.Unit,
   thousandsSep: java.lang.String
 ): java.lang.String = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("numberFormat")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], decimalPoint.asInstanceOf[js.Any], thousandsSep.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
 
-@scala.inline
-def objectEach[T](obj: js.Any, fn: typings.highcharts.mod.ObjectEachCallbackFunction[T]): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("objectEach")(obj.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def objectEach[T](obj: js.Any, fn: typings.highcharts.mod.ObjectEachCallbackFunction[T], ctx: T): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("objectEach")(obj.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def objectEach[T](obj: js.Any, fn: typings.highcharts.mod.ObjectEachCallbackFunction[T]): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("objectEach")(obj.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def objectEach[T](obj: js.Any, fn: typings.highcharts.mod.ObjectEachCallbackFunction[T], ctx: T): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("objectEach")(obj.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 
-@scala.inline
-def offset(el: typings.std.Element): typings.highcharts.mod.OffsetObject = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("offset")(el.asInstanceOf[js.Any]).asInstanceOf[typings.highcharts.mod.OffsetObject]
+inline def offset(el: typings.std.Element): typings.highcharts.mod.OffsetObject = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("offset")(el.asInstanceOf[js.Any]).asInstanceOf[typings.highcharts.mod.OffsetObject]
 
-@scala.inline
-def pad(number: scala.Double): java.lang.String = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("pad")(number.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
-@scala.inline
-def pad(number: scala.Double, length: scala.Double): java.lang.String = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("pad")(number.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-@scala.inline
-def pad(number: scala.Double, length: scala.Double, padder: java.lang.String): java.lang.String = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("pad")(number.asInstanceOf[js.Any], length.asInstanceOf[js.Any], padder.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-@scala.inline
-def pad(number: scala.Double, length: scala.Unit, padder: java.lang.String): java.lang.String = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("pad")(number.asInstanceOf[js.Any], length.asInstanceOf[js.Any], padder.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def pad(number: scala.Double): java.lang.String = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("pad")(number.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def pad(number: scala.Double, length: scala.Double): java.lang.String = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("pad")(number.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def pad(number: scala.Double, length: scala.Double, padder: java.lang.String): java.lang.String = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("pad")(number.asInstanceOf[js.Any], length.asInstanceOf[js.Any], padder.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def pad(number: scala.Double, length: scala.Unit, padder: java.lang.String): java.lang.String = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("pad")(number.asInstanceOf[js.Any], length.asInstanceOf[js.Any], padder.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
 
-@scala.inline
-def pick[T](items: (js.UndefOr[T | scala.Null])*): T = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("pick")(items.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def pick[T](items: (js.UndefOr[T | scala.Null])*): T = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("pick")(items.asInstanceOf[js.Any]).asInstanceOf[T]
 
-@scala.inline
-def reduce(arr: js.Array[js.Any], fn: js.Function, initialValue: js.Any): js.Any = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+inline def reduce(arr: js.Array[js.Any], fn: js.Function, initialValue: js.Any): js.Any = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 
-@scala.inline
-def relativeLength(value: typings.highcharts.mod.RelativeSize, base: scala.Double): scala.Double = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("relativeLength")(value.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-@scala.inline
-def relativeLength(value: typings.highcharts.mod.RelativeSize, base: scala.Double, offset: scala.Double): scala.Double = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("relativeLength")(value.asInstanceOf[js.Any], base.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+inline def relativeLength(value: typings.highcharts.mod.RelativeSize, base: scala.Double): scala.Double = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("relativeLength")(value.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+inline def relativeLength(value: typings.highcharts.mod.RelativeSize, base: scala.Double, offset: scala.Double): scala.Double = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("relativeLength")(value.asInstanceOf[js.Any], base.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
 
-@scala.inline
-def removeEvent[T](el: T): scala.Unit = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("removeEvent")(el.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-@scala.inline
-def removeEvent[T](el: T, `type`: java.lang.String): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("removeEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def removeEvent[T](el: T, `type`: java.lang.String, fn: typings.highcharts.mod.EventCallbackFunction[T]): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("removeEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def removeEvent[T](el: T, `type`: scala.Unit, fn: typings.highcharts.mod.EventCallbackFunction[T]): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("removeEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def removeEvent[T](el: typings.highcharts.mod.Class[T]): scala.Unit = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("removeEvent")(el.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-@scala.inline
-def removeEvent[T](el: typings.highcharts.mod.Class[T], `type`: java.lang.String): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("removeEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def removeEvent[T](
+inline def removeEvent[T](el: T): scala.Unit = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("removeEvent")(el.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def removeEvent[T](el: T, `type`: java.lang.String): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("removeEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def removeEvent[T](el: T, `type`: java.lang.String, fn: typings.highcharts.mod.EventCallbackFunction[T]): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("removeEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def removeEvent[T](el: T, `type`: scala.Unit, fn: typings.highcharts.mod.EventCallbackFunction[T]): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("removeEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def removeEvent[T](el: typings.highcharts.mod.Class[T]): scala.Unit = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("removeEvent")(el.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def removeEvent[T](el: typings.highcharts.mod.Class[T], `type`: java.lang.String): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("removeEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def removeEvent[T](
   el: typings.highcharts.mod.Class[T],
   `type`: java.lang.String,
   fn: typings.highcharts.mod.EventCallbackFunction[T]
 ): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("removeEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def removeEvent[T](
+inline def removeEvent[T](
   el: typings.highcharts.mod.Class[T],
   `type`: scala.Unit,
   fn: typings.highcharts.mod.EventCallbackFunction[T]
 ): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("removeEvent")(el.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 
-@scala.inline
-def seriesType(
+inline def seriesType(
   `type`: java.lang.String,
   parent: java.lang.String,
   options: typings.highcharts.mod.Dictionary[js.Any]
 ): typings.highcharts.mod.Series = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("seriesType")(`type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.Series]
-@scala.inline
-def seriesType(
+inline def seriesType(
   `type`: java.lang.String,
   parent: java.lang.String,
   options: typings.highcharts.mod.Dictionary[js.Any],
   props: scala.Unit,
   pointProps: typings.highcharts.mod.Dictionary[js.Any]
 ): typings.highcharts.mod.Series = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("seriesType")(`type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], options.asInstanceOf[js.Any], props.asInstanceOf[js.Any], pointProps.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.Series]
-@scala.inline
-def seriesType(
+inline def seriesType(
   `type`: java.lang.String,
   parent: java.lang.String,
   options: typings.highcharts.mod.Dictionary[js.Any],
   props: typings.highcharts.mod.Dictionary[js.Any]
 ): typings.highcharts.mod.Series = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("seriesType")(`type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], options.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.Series]
-@scala.inline
-def seriesType(
+inline def seriesType(
   `type`: java.lang.String,
   parent: java.lang.String,
   options: typings.highcharts.mod.Dictionary[js.Any],
   props: typings.highcharts.mod.Dictionary[js.Any],
   pointProps: typings.highcharts.mod.Dictionary[js.Any]
 ): typings.highcharts.mod.Series = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("seriesType")(`type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], options.asInstanceOf[js.Any], props.asInstanceOf[js.Any], pointProps.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.Series]
-@scala.inline
-def seriesType(
+inline def seriesType(
   `type`: java.lang.String,
   parent: java.lang.String,
   options: typings.highcharts.mod.SeriesOptionsType
 ): typings.highcharts.mod.Series = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("seriesType")(`type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.Series]
-@scala.inline
-def seriesType(
+inline def seriesType(
   `type`: java.lang.String,
   parent: java.lang.String,
   options: typings.highcharts.mod.SeriesOptionsType,
   props: scala.Unit,
   pointProps: typings.highcharts.mod.Dictionary[js.Any]
 ): typings.highcharts.mod.Series = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("seriesType")(`type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], options.asInstanceOf[js.Any], props.asInstanceOf[js.Any], pointProps.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.Series]
-@scala.inline
-def seriesType(
+inline def seriesType(
   `type`: java.lang.String,
   parent: java.lang.String,
   options: typings.highcharts.mod.SeriesOptionsType,
   props: typings.highcharts.mod.Dictionary[js.Any]
 ): typings.highcharts.mod.Series = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("seriesType")(`type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], options.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.Series]
-@scala.inline
-def seriesType(
+inline def seriesType(
   `type`: java.lang.String,
   parent: java.lang.String,
   options: typings.highcharts.mod.SeriesOptionsType,
@@ -786,55 +595,36 @@ def seriesType(
   pointProps: typings.highcharts.mod.Dictionary[js.Any]
 ): typings.highcharts.mod.Series = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("seriesType")(`type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], options.asInstanceOf[js.Any], props.asInstanceOf[js.Any], pointProps.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.Series]
 
-@scala.inline
-def setAnimation(animation: scala.Boolean, chart: typings.highcharts.mod.Chart_): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setAnimation")(animation.asInstanceOf[js.Any], chart.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def setAnimation(animation: scala.Unit, chart: typings.highcharts.mod.Chart_): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setAnimation")(animation.asInstanceOf[js.Any], chart.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def setAnimation(animation: typings.highcharts.anon.PartialAnimationOptionsOb, chart: typings.highcharts.mod.Chart_): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setAnimation")(animation.asInstanceOf[js.Any], chart.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def setAnimation(animation: scala.Boolean, chart: typings.highcharts.mod.Chart_): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setAnimation")(animation.asInstanceOf[js.Any], chart.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def setAnimation(animation: scala.Unit, chart: typings.highcharts.mod.Chart_): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setAnimation")(animation.asInstanceOf[js.Any], chart.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def setAnimation(animation: typings.highcharts.anon.PartialAnimationOptionsOb, chart: typings.highcharts.mod.Chart_): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setAnimation")(animation.asInstanceOf[js.Any], chart.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 
-@scala.inline
-def setOptions(options: typings.highcharts.mod.Options): typings.highcharts.mod.Options = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setOptions")(options.asInstanceOf[js.Any]).asInstanceOf[typings.highcharts.mod.Options]
+inline def setOptions(options: typings.highcharts.mod.Options): typings.highcharts.mod.Options = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setOptions")(options.asInstanceOf[js.Any]).asInstanceOf[typings.highcharts.mod.Options]
 
-@scala.inline
-def some(arr: js.Array[js.Any], fn: js.Function, ctx: js.Any): scala.Boolean = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("some")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
+inline def some(arr: js.Array[js.Any], fn: js.Function, ctx: js.Any): scala.Boolean = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("some")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
 
-@scala.inline
-def splat(obj: js.Any): js.Array[js.Any] = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("splat")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+inline def splat(obj: js.Any): js.Array[js.Any] = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("splat")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
 
-@scala.inline
-def stableSort(arr: js.Array[js.Any], sortFunction: js.Function): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("stableSort")(arr.asInstanceOf[js.Any], sortFunction.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def stableSort(arr: js.Array[js.Any], sortFunction: js.Function): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("stableSort")(arr.asInstanceOf[js.Any], sortFunction.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 
-@scala.inline
-def stop(el: typings.highcharts.mod.SVGElement): scala.Unit = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("stop")(el.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-@scala.inline
-def stop(el: typings.highcharts.mod.SVGElement, prop: java.lang.String): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("stop")(el.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def stop(el: typings.highcharts.mod.SVGElement): scala.Unit = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("stop")(el.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def stop(el: typings.highcharts.mod.SVGElement, prop: java.lang.String): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("stop")(el.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 
-@scala.inline
-def syncTimeout(fn: js.Function, delay: scala.Double): scala.Double = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("syncTimeout")(fn.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-@scala.inline
-def syncTimeout(fn: js.Function, delay: scala.Double, context: js.Any): scala.Double = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("syncTimeout")(fn.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+inline def syncTimeout(fn: js.Function, delay: scala.Double): scala.Double = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("syncTimeout")(fn.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+inline def syncTimeout(fn: js.Function, delay: scala.Double, context: js.Any): scala.Double = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("syncTimeout")(fn.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
 
-@scala.inline
-def theme: typings.highcharts.mod.Options = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].selectDynamic("theme").asInstanceOf[typings.highcharts.mod.Options]
-@scala.inline
-def theme_=(x: typings.highcharts.mod.Options): scala.Unit = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].updateDynamic("theme")(x.asInstanceOf[js.Any])
+inline def theme: typings.highcharts.mod.Options = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].selectDynamic("theme").asInstanceOf[typings.highcharts.mod.Options]
+inline def theme_=(x: typings.highcharts.mod.Options): scala.Unit = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].updateDynamic("theme")(x.asInstanceOf[js.Any])
 
-@scala.inline
-def time: typings.highcharts.mod.Time_ = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].selectDynamic("time").asInstanceOf[typings.highcharts.mod.Time_]
-@scala.inline
-def time_=(x: typings.highcharts.mod.Time_): scala.Unit = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].updateDynamic("time")(x.asInstanceOf[js.Any])
+inline def time: typings.highcharts.mod.Time_ = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].selectDynamic("time").asInstanceOf[typings.highcharts.mod.Time_]
+inline def time_=(x: typings.highcharts.mod.Time_): scala.Unit = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].updateDynamic("time")(x.asInstanceOf[js.Any])
 
-@scala.inline
-def uniqueKey(): java.lang.String = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("uniqueKey")().asInstanceOf[java.lang.String]
+inline def uniqueKey(): java.lang.String = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("uniqueKey")().asInstanceOf[java.lang.String]
 
-@scala.inline
-def useSerialIds(): js.UndefOr[scala.Boolean] = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useSerialIds")().asInstanceOf[js.UndefOr[scala.Boolean]]
-@scala.inline
-def useSerialIds(mode: scala.Boolean): js.UndefOr[scala.Boolean] = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useSerialIds")(mode.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[scala.Boolean]]
+inline def useSerialIds(): js.UndefOr[scala.Boolean] = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useSerialIds")().asInstanceOf[js.UndefOr[scala.Boolean]]
+inline def useSerialIds(mode: scala.Boolean): js.UndefOr[scala.Boolean] = typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useSerialIds")(mode.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[scala.Boolean]]
 
-@scala.inline
-def wrap(obj: js.Any, method: java.lang.String, func: typings.highcharts.mod.WrapProceedFunction): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(obj.asInstanceOf[js.Any], method.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def wrap(obj: js.Any, method: java.lang.String, func: typings.highcharts.mod.WrapProceedFunction): scala.Unit = (typings.highcharts.mod.^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(obj.asInstanceOf[js.Any], method.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 
 type AccessibilityAnnouncementFormatter = js.Function3[
 /* updatedSeries */ js.Array[typings.highcharts.mod.Series], 

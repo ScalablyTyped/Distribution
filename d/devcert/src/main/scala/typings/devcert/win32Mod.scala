@@ -18,10 +18,10 @@ object win32Mod {
     extends StObject
        with Platform {
     
-    var HOST_FILE_PATH: js.Any = js.native
+    /* private */ var HOST_FILE_PATH: js.Any = js.native
     
-    var decrypt: js.Any = js.native
+    /* private */ var decrypt: js.Any = js.native
     
-    var encrypt: js.Any = js.native
+    /* private */ var encrypt: js.Any = js.native
   }
 }

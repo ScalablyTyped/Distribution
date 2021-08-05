@@ -14,19 +14,15 @@ trait GoogleCloudAssetV1GcsDestination extends StObject {
 }
 object GoogleCloudAssetV1GcsDestination {
   
-  @scala.inline
-  def apply(): GoogleCloudAssetV1GcsDestination = {
+  inline def apply(): GoogleCloudAssetV1GcsDestination = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudAssetV1GcsDestination]
   }
   
-  @scala.inline
-  implicit class GoogleCloudAssetV1GcsDestinationMutableBuilder[Self <: GoogleCloudAssetV1GcsDestination] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudAssetV1GcsDestination](x: Self) {
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

@@ -92,97 +92,67 @@ trait SchemaQuery extends StObject {
 }
 object SchemaQuery {
   
-  @scala.inline
-  def apply(): SchemaQuery = {
+  inline def apply(): SchemaQuery = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaQuery]
   }
   
-  @scala.inline
-  implicit class SchemaQueryMutableBuilder[Self <: SchemaQuery] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaQuery](x: Self) {
     
-    @scala.inline
-    def setAccountInfo(value: SchemaAccountInfo): Self = StObject.set(x, "accountInfo", value.asInstanceOf[js.Any])
+    inline def setAccountInfo(value: SchemaAccountInfo): Self = StObject.set(x, "accountInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountInfoUndefined: Self = StObject.set(x, "accountInfo", js.undefined)
+    inline def setAccountInfoUndefined: Self = StObject.set(x, "accountInfo", js.undefined)
     
-    @scala.inline
-    def setCorpus(value: String): Self = StObject.set(x, "corpus", value.asInstanceOf[js.Any])
+    inline def setCorpus(value: String): Self = StObject.set(x, "corpus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorpusUndefined: Self = StObject.set(x, "corpus", js.undefined)
+    inline def setCorpusUndefined: Self = StObject.set(x, "corpus", js.undefined)
     
-    @scala.inline
-    def setDataScope(value: String): Self = StObject.set(x, "dataScope", value.asInstanceOf[js.Any])
+    inline def setDataScope(value: String): Self = StObject.set(x, "dataScope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataScopeUndefined: Self = StObject.set(x, "dataScope", js.undefined)
+    inline def setDataScopeUndefined: Self = StObject.set(x, "dataScope", js.undefined)
     
-    @scala.inline
-    def setDriveOptions(value: SchemaDriveOptions): Self = StObject.set(x, "driveOptions", value.asInstanceOf[js.Any])
+    inline def setDriveOptions(value: SchemaDriveOptions): Self = StObject.set(x, "driveOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDriveOptionsUndefined: Self = StObject.set(x, "driveOptions", js.undefined)
+    inline def setDriveOptionsUndefined: Self = StObject.set(x, "driveOptions", js.undefined)
     
-    @scala.inline
-    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setHangoutsChatInfo(value: SchemaHangoutsChatInfo): Self = StObject.set(x, "hangoutsChatInfo", value.asInstanceOf[js.Any])
+    inline def setHangoutsChatInfo(value: SchemaHangoutsChatInfo): Self = StObject.set(x, "hangoutsChatInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHangoutsChatInfoUndefined: Self = StObject.set(x, "hangoutsChatInfo", js.undefined)
+    inline def setHangoutsChatInfoUndefined: Self = StObject.set(x, "hangoutsChatInfo", js.undefined)
     
-    @scala.inline
-    def setHangoutsChatOptions(value: SchemaHangoutsChatOptions): Self = StObject.set(x, "hangoutsChatOptions", value.asInstanceOf[js.Any])
+    inline def setHangoutsChatOptions(value: SchemaHangoutsChatOptions): Self = StObject.set(x, "hangoutsChatOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHangoutsChatOptionsUndefined: Self = StObject.set(x, "hangoutsChatOptions", js.undefined)
+    inline def setHangoutsChatOptionsUndefined: Self = StObject.set(x, "hangoutsChatOptions", js.undefined)
     
-    @scala.inline
-    def setMailOptions(value: SchemaMailOptions): Self = StObject.set(x, "mailOptions", value.asInstanceOf[js.Any])
+    inline def setMailOptions(value: SchemaMailOptions): Self = StObject.set(x, "mailOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMailOptionsUndefined: Self = StObject.set(x, "mailOptions", js.undefined)
+    inline def setMailOptionsUndefined: Self = StObject.set(x, "mailOptions", js.undefined)
     
-    @scala.inline
-    def setOrgUnitInfo(value: SchemaOrgUnitInfo): Self = StObject.set(x, "orgUnitInfo", value.asInstanceOf[js.Any])
+    inline def setOrgUnitInfo(value: SchemaOrgUnitInfo): Self = StObject.set(x, "orgUnitInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrgUnitInfoUndefined: Self = StObject.set(x, "orgUnitInfo", js.undefined)
+    inline def setOrgUnitInfoUndefined: Self = StObject.set(x, "orgUnitInfo", js.undefined)
     
-    @scala.inline
-    def setSearchMethod(value: String): Self = StObject.set(x, "searchMethod", value.asInstanceOf[js.Any])
+    inline def setSearchMethod(value: String): Self = StObject.set(x, "searchMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchMethodUndefined: Self = StObject.set(x, "searchMethod", js.undefined)
+    inline def setSearchMethodUndefined: Self = StObject.set(x, "searchMethod", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
-    @scala.inline
-    def setTeamDriveInfo(value: SchemaTeamDriveInfo): Self = StObject.set(x, "teamDriveInfo", value.asInstanceOf[js.Any])
+    inline def setTeamDriveInfo(value: SchemaTeamDriveInfo): Self = StObject.set(x, "teamDriveInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeamDriveInfoUndefined: Self = StObject.set(x, "teamDriveInfo", js.undefined)
+    inline def setTeamDriveInfoUndefined: Self = StObject.set(x, "teamDriveInfo", js.undefined)
     
-    @scala.inline
-    def setTerms(value: String): Self = StObject.set(x, "terms", value.asInstanceOf[js.Any])
+    inline def setTerms(value: String): Self = StObject.set(x, "terms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTermsUndefined: Self = StObject.set(x, "terms", js.undefined)
+    inline def setTermsUndefined: Self = StObject.set(x, "terms", js.undefined)
     
-    @scala.inline
-    def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
+    inline def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
+    inline def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
   }
 }

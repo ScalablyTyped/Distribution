@@ -13,16 +13,13 @@ trait DescribeDatasetImportJobRequest extends StObject {
 }
 object DescribeDatasetImportJobRequest {
   
-  @scala.inline
-  def apply(DatasetImportJobArn: Arn): DescribeDatasetImportJobRequest = {
+  inline def apply(DatasetImportJobArn: Arn): DescribeDatasetImportJobRequest = {
     val __obj = js.Dynamic.literal(DatasetImportJobArn = DatasetImportJobArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDatasetImportJobRequest]
   }
   
-  @scala.inline
-  implicit class DescribeDatasetImportJobRequestMutableBuilder[Self <: DescribeDatasetImportJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDatasetImportJobRequest](x: Self) {
     
-    @scala.inline
-    def setDatasetImportJobArn(value: Arn): Self = StObject.set(x, "DatasetImportJobArn", value.asInstanceOf[js.Any])
+    inline def setDatasetImportJobArn(value: Arn): Self = StObject.set(x, "DatasetImportJobArn", value.asInstanceOf[js.Any])
   }
 }

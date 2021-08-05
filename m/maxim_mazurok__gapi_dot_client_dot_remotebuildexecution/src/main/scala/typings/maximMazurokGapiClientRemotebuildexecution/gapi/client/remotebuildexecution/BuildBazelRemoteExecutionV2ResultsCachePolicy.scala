@@ -15,19 +15,15 @@ trait BuildBazelRemoteExecutionV2ResultsCachePolicy extends StObject {
 }
 object BuildBazelRemoteExecutionV2ResultsCachePolicy {
   
-  @scala.inline
-  def apply(): BuildBazelRemoteExecutionV2ResultsCachePolicy = {
+  inline def apply(): BuildBazelRemoteExecutionV2ResultsCachePolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuildBazelRemoteExecutionV2ResultsCachePolicy]
   }
   
-  @scala.inline
-  implicit class BuildBazelRemoteExecutionV2ResultsCachePolicyMutableBuilder[Self <: BuildBazelRemoteExecutionV2ResultsCachePolicy] (val x: Self) extends AnyVal {
+  extension [Self <: BuildBazelRemoteExecutionV2ResultsCachePolicy](x: Self) {
     
-    @scala.inline
-    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
   }
 }

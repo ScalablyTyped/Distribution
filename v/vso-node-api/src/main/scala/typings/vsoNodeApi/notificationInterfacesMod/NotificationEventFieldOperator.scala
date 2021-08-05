@@ -18,19 +18,15 @@ trait NotificationEventFieldOperator extends StObject {
 }
 object NotificationEventFieldOperator {
   
-  @scala.inline
-  def apply(displayName: String, id: String): NotificationEventFieldOperator = {
+  inline def apply(displayName: String, id: String): NotificationEventFieldOperator = {
     val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationEventFieldOperator]
   }
   
-  @scala.inline
-  implicit class NotificationEventFieldOperatorMutableBuilder[Self <: NotificationEventFieldOperator] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationEventFieldOperator](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

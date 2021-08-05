@@ -18,9 +18,9 @@ object upstreamMod {
     
     def actualSend(message: js.Any): js.Promise[Result] = js.native
     
-    val config: js.Any = js.native
+    /* private */ val config: js.Any = js.native
     
-    val pendingMessages: js.Any = js.native
+    /* private */ val pendingMessages: js.Any = js.native
     
     def rejectPendingMessages(): Unit = js.native
     
@@ -38,9 +38,9 @@ object upstreamMod {
     
     def sendPendingMessages(): Unit = js.native
     
-    val transport: js.Any = js.native
+    /* private */ val transport: js.Any = js.native
     
-    val twilsock: js.Any = js.native
+    /* private */ val twilsock: js.Any = js.native
   }
   
   type Headers = StringDictionary[String]
@@ -55,26 +55,20 @@ object upstreamMod {
   }
   object Result {
     
-    @scala.inline
-    def apply(headers: Headers, status: Code): Result = {
+    inline def apply(headers: Headers, status: Code): Result = {
       val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[Result]
     }
     
-    @scala.inline
-    implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+    extension [Self <: Result](x: Self) {
       
-      @scala.inline
-      def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -39,8 +39,7 @@ trait Timestamp extends StObject {
 }
 object Timestamp {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isEqual: Timestamp => Boolean,
     nanoseconds: Double,
     seconds: Double,
@@ -51,22 +50,16 @@ object Timestamp {
     __obj.asInstanceOf[Timestamp]
   }
   
-  @scala.inline
-  implicit class TimestampMutableBuilder[Self <: Timestamp] (val x: Self) extends AnyVal {
+  extension [Self <: Timestamp](x: Self) {
     
-    @scala.inline
-    def setIsEqual(value: Timestamp => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
+    inline def setIsEqual(value: Timestamp => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNanoseconds(value: Double): Self = StObject.set(x, "nanoseconds", value.asInstanceOf[js.Any])
+    inline def setNanoseconds(value: Double): Self = StObject.set(x, "nanoseconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+    inline def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToDate(value: () => Date): Self = StObject.set(x, "toDate", js.Any.fromFunction0(value))
+    inline def setToDate(value: () => Date): Self = StObject.set(x, "toDate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToMillis(value: () => Double): Self = StObject.set(x, "toMillis", js.Any.fromFunction0(value))
+    inline def setToMillis(value: () => Double): Self = StObject.set(x, "toMillis", js.Any.fromFunction0(value))
   }
 }

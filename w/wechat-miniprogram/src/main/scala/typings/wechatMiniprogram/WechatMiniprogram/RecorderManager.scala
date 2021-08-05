@@ -97,8 +97,7 @@ trait RecorderManager extends StObject {
 }
 object RecorderManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     onError: UDPSocketOnErrorCallback => Unit,
     onFrameRecorded: OnFrameRecordedCallback => Unit,
     onInterruptionBegin: OnInterruptionBeginCallback => Unit,
@@ -116,43 +115,30 @@ object RecorderManager {
     __obj.asInstanceOf[RecorderManager]
   }
   
-  @scala.inline
-  implicit class RecorderManagerMutableBuilder[Self <: RecorderManager] (val x: Self) extends AnyVal {
+  extension [Self <: RecorderManager](x: Self) {
     
-    @scala.inline
-    def setOnError(value: UDPSocketOnErrorCallback => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    inline def setOnError(value: UDPSocketOnErrorCallback => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnFrameRecorded(value: OnFrameRecordedCallback => Unit): Self = StObject.set(x, "onFrameRecorded", js.Any.fromFunction1(value))
+    inline def setOnFrameRecorded(value: OnFrameRecordedCallback => Unit): Self = StObject.set(x, "onFrameRecorded", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnInterruptionBegin(value: OnInterruptionBeginCallback => Unit): Self = StObject.set(x, "onInterruptionBegin", js.Any.fromFunction1(value))
+    inline def setOnInterruptionBegin(value: OnInterruptionBeginCallback => Unit): Self = StObject.set(x, "onInterruptionBegin", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnInterruptionEnd(value: OnInterruptionEndCallback => Unit): Self = StObject.set(x, "onInterruptionEnd", js.Any.fromFunction1(value))
+    inline def setOnInterruptionEnd(value: OnInterruptionEndCallback => Unit): Self = StObject.set(x, "onInterruptionEnd", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnPause(value: OnPauseCallback => Unit): Self = StObject.set(x, "onPause", js.Any.fromFunction1(value))
+    inline def setOnPause(value: OnPauseCallback => Unit): Self = StObject.set(x, "onPause", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnResume(value: OnResumeCallback => Unit): Self = StObject.set(x, "onResume", js.Any.fromFunction1(value))
+    inline def setOnResume(value: OnResumeCallback => Unit): Self = StObject.set(x, "onResume", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnStart(value: OnStartCallback => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
+    inline def setOnStart(value: OnStartCallback => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnStop(value: RecorderManagerOnStopCallback => Unit): Self = StObject.set(x, "onStop", js.Any.fromFunction1(value))
+    inline def setOnStop(value: RecorderManagerOnStopCallback => Unit): Self = StObject.set(x, "onStop", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
+    inline def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResume(value: () => Unit): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
+    inline def setResume(value: () => Unit): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStart(value: RecorderManagerStartOption => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+    inline def setStart(value: RecorderManagerStartOption => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+    inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
   }
 }

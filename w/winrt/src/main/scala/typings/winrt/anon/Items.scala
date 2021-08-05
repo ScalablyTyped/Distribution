@@ -12,22 +12,17 @@ trait Items[T] extends StObject {
 }
 object Items {
   
-  @scala.inline
-  def apply[T](items: js.Array[T], returnValue: Double): Items[T] = {
+  inline def apply[T](items: js.Array[T], returnValue: Double): Items[T] = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[Items[T]]
   }
   
-  @scala.inline
-  implicit class ItemsMutableBuilder[Self <: Items[?], T] (val x: Self & Items[T]) extends AnyVal {
+  extension [Self <: Items[?], T](x: Self & Items[T]) {
     
-    @scala.inline
-    def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

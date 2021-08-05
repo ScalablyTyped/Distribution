@@ -28,43 +28,31 @@ trait CreateLabelRenderParamsXmlParams extends StObject {
 }
 object CreateLabelRenderParamsXmlParams {
   
-  @scala.inline
-  def apply(): CreateLabelRenderParamsXmlParams = {
+  inline def apply(): CreateLabelRenderParamsXmlParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateLabelRenderParamsXmlParams]
   }
   
-  @scala.inline
-  implicit class CreateLabelRenderParamsXmlParamsMutableBuilder[Self <: CreateLabelRenderParamsXmlParams] (val x: Self) extends AnyVal {
+  extension [Self <: CreateLabelRenderParamsXmlParams](x: Self) {
     
-    @scala.inline
-    def setFlowDirection(value: FlowDirection): Self = StObject.set(x, "flowDirection", value.asInstanceOf[js.Any])
+    inline def setFlowDirection(value: FlowDirection): Self = StObject.set(x, "flowDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowDirectionUndefined: Self = StObject.set(x, "flowDirection", js.undefined)
+    inline def setFlowDirectionUndefined: Self = StObject.set(x, "flowDirection", js.undefined)
     
-    @scala.inline
-    def setLabelColor(value: Color): Self = StObject.set(x, "labelColor", value.asInstanceOf[js.Any])
+    inline def setLabelColor(value: Color): Self = StObject.set(x, "labelColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelColorUndefined: Self = StObject.set(x, "labelColor", js.undefined)
+    inline def setLabelColorUndefined: Self = StObject.set(x, "labelColor", js.undefined)
     
-    @scala.inline
-    def setPngUseDisplayResolution(value: Boolean): Self = StObject.set(x, "pngUseDisplayResolution", value.asInstanceOf[js.Any])
+    inline def setPngUseDisplayResolution(value: Boolean): Self = StObject.set(x, "pngUseDisplayResolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPngUseDisplayResolutionUndefined: Self = StObject.set(x, "pngUseDisplayResolution", js.undefined)
+    inline def setPngUseDisplayResolutionUndefined: Self = StObject.set(x, "pngUseDisplayResolution", js.undefined)
     
-    @scala.inline
-    def setShadowColor(value: Color): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
+    inline def setShadowColor(value: Color): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowColorUndefined: Self = StObject.set(x, "shadowColor", js.undefined)
+    inline def setShadowColorUndefined: Self = StObject.set(x, "shadowColor", js.undefined)
     
-    @scala.inline
-    def setShadowDepth(value: Double): Self = StObject.set(x, "shadowDepth", value.asInstanceOf[js.Any])
+    inline def setShadowDepth(value: Double): Self = StObject.set(x, "shadowDepth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowDepthUndefined: Self = StObject.set(x, "shadowDepth", js.undefined)
+    inline def setShadowDepthUndefined: Self = StObject.set(x, "shadowDepth", js.undefined)
   }
 }

@@ -21,49 +21,35 @@ trait AxisLabel extends StObject {
 }
 object AxisLabel {
   
-  @scala.inline
-  def apply(): AxisLabel = {
+  inline def apply(): AxisLabel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AxisLabel]
   }
   
-  @scala.inline
-  implicit class AxisLabelMutableBuilder[Self <: AxisLabel] (val x: Self) extends AnyVal {
+  extension [Self <: AxisLabel](x: Self) {
     
-    @scala.inline
-    def setAxis(value: CSSProperties): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: CSSProperties): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisLabel(value: CSSProperties): Self = StObject.set(x, "axisLabel", value.asInstanceOf[js.Any])
+    inline def setAxisLabel(value: CSSProperties): Self = StObject.set(x, "axisLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisLabelUndefined: Self = StObject.set(x, "axisLabel", js.undefined)
+    inline def setAxisLabelUndefined: Self = StObject.set(x, "axisLabel", js.undefined)
     
-    @scala.inline
-    def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+    inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
-    @scala.inline
-    def setGrid(value: KinkeyofCSSPropertiesstri): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+    inline def setGrid(value: KinkeyofCSSPropertiesstri): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
+    inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
     
-    @scala.inline
-    def setParent(value: CSSProperties): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: CSSProperties): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
-    @scala.inline
-    def setTickLabels(value: KinkeyofCSSPropertiesstri): Self = StObject.set(x, "tickLabels", value.asInstanceOf[js.Any])
+    inline def setTickLabels(value: KinkeyofCSSPropertiesstri): Self = StObject.set(x, "tickLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTickLabelsUndefined: Self = StObject.set(x, "tickLabels", js.undefined)
+    inline def setTickLabelsUndefined: Self = StObject.set(x, "tickLabels", js.undefined)
     
-    @scala.inline
-    def setTicks(value: KinkeyofCSSPropertiesstri): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
+    inline def setTicks(value: KinkeyofCSSPropertiesstri): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
+    inline def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
   }
 }

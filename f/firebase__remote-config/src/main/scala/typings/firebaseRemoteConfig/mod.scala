@@ -12,8 +12,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def registerRemoteConfig(firebaseInstance: FirebaseNamespace): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerRemoteConfig")(firebaseInstance.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def registerRemoteConfig(firebaseInstance: FirebaseNamespace): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerRemoteConfig")(firebaseInstance.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   object firebaseAppTypesAugmentingMod {
     
@@ -23,17 +22,14 @@ object mod {
     }
     object FirebaseApp {
       
-      @scala.inline
-      def apply(remoteConfig: () => RemoteConfig): FirebaseApp = {
+      inline def apply(remoteConfig: () => RemoteConfig): FirebaseApp = {
         val __obj = js.Dynamic.literal(remoteConfig = js.Any.fromFunction0(remoteConfig))
         __obj.asInstanceOf[FirebaseApp]
       }
       
-      @scala.inline
-      implicit class FirebaseAppMutableBuilder[Self <: FirebaseApp] (val x: Self) extends AnyVal {
+      extension [Self <: FirebaseApp](x: Self) {
         
-        @scala.inline
-        def setRemoteConfig(value: () => RemoteConfig): Self = StObject.set(x, "remoteConfig", js.Any.fromFunction0(value))
+        inline def setRemoteConfig(value: () => RemoteConfig): Self = StObject.set(x, "remoteConfig", js.Any.fromFunction0(value))
       }
     }
     
@@ -43,20 +39,16 @@ object mod {
     }
     object FirebaseNamespace {
       
-      @scala.inline
-      def apply(): typings.firebaseRemoteConfig.mod.firebaseAppTypesAugmentingMod.FirebaseNamespace = {
+      inline def apply(): typings.firebaseRemoteConfig.mod.firebaseAppTypesAugmentingMod.FirebaseNamespace = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.firebaseRemoteConfig.mod.firebaseAppTypesAugmentingMod.FirebaseNamespace]
       }
       
-      @scala.inline
-      implicit class FirebaseNamespaceMutableBuilder[Self <: typings.firebaseRemoteConfig.mod.firebaseAppTypesAugmentingMod.FirebaseNamespace] (val x: Self) extends AnyVal {
+      extension [Self <: typings.firebaseRemoteConfig.mod.firebaseAppTypesAugmentingMod.FirebaseNamespace](x: Self) {
         
-        @scala.inline
-        def setRemoteConfig(value: /* app */ js.UndefOr[FirebaseApp] => RemoteConfig): Self = StObject.set(x, "remoteConfig", js.Any.fromFunction1(value))
+        inline def setRemoteConfig(value: /* app */ js.UndefOr[FirebaseApp] => RemoteConfig): Self = StObject.set(x, "remoteConfig", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setRemoteConfigUndefined: Self = StObject.set(x, "remoteConfig", js.undefined)
+        inline def setRemoteConfigUndefined: Self = StObject.set(x, "remoteConfig", js.undefined)
       }
     }
   }
@@ -69,17 +61,14 @@ object mod {
     }
     object Window {
       
-      @scala.inline
-      def apply(FIREBASE_REMOTE_CONFIG_URL_BASE: String): Window = {
+      inline def apply(FIREBASE_REMOTE_CONFIG_URL_BASE: String): Window = {
         val __obj = js.Dynamic.literal(FIREBASE_REMOTE_CONFIG_URL_BASE = FIREBASE_REMOTE_CONFIG_URL_BASE.asInstanceOf[js.Any])
         __obj.asInstanceOf[Window]
       }
       
-      @scala.inline
-      implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+      extension [Self <: Window](x: Self) {
         
-        @scala.inline
-        def setFIREBASE_REMOTE_CONFIG_URL_BASE(value: String): Self = StObject.set(x, "FIREBASE_REMOTE_CONFIG_URL_BASE", value.asInstanceOf[js.Any])
+        inline def setFIREBASE_REMOTE_CONFIG_URL_BASE(value: String): Self = StObject.set(x, "FIREBASE_REMOTE_CONFIG_URL_BASE", value.asInstanceOf[js.Any])
       }
     }
   }

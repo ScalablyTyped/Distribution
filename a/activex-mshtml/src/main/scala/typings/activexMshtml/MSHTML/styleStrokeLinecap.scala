@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleStrokeLinecap extends StObject
 object styleStrokeLinecap {
   
-  @scala.inline
-  def styleStrokeLinecapButt: `1` = 1.asInstanceOf[`1`]
+  inline def styleStrokeLinecapButt: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def styleStrokeLinecapNotSet: `0` = 0.asInstanceOf[`0`]
+  inline def styleStrokeLinecapNotSet: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleStrokeLinecapRound: `2` = 2.asInstanceOf[`2`]
+  inline def styleStrokeLinecapRound: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def styleStrokeLinecapSquare: `3` = 3.asInstanceOf[`3`]
+  inline def styleStrokeLinecapSquare: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def styleStrokeLinecap_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleStrokeLinecap_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

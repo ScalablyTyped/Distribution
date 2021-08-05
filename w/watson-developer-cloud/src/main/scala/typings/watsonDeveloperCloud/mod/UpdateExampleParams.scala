@@ -28,49 +28,35 @@ trait UpdateExampleParams extends StObject {
 }
 object UpdateExampleParams {
   
-  @scala.inline
-  def apply(intent: String, text: String, workspace_id: String): UpdateExampleParams = {
+  inline def apply(intent: String, text: String, workspace_id: String): UpdateExampleParams = {
     val __obj = js.Dynamic.literal(intent = intent.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], workspace_id = workspace_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateExampleParams]
   }
   
-  @scala.inline
-  implicit class UpdateExampleParamsMutableBuilder[Self <: UpdateExampleParams] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateExampleParams](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setIntent(value: String): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
+    inline def setIntent(value: String): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNew_mentions(value: js.Array[Mention]): Self = StObject.set(x, "new_mentions", value.asInstanceOf[js.Any])
+    inline def setNew_mentions(value: js.Array[Mention]): Self = StObject.set(x, "new_mentions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNew_mentionsUndefined: Self = StObject.set(x, "new_mentions", js.undefined)
+    inline def setNew_mentionsUndefined: Self = StObject.set(x, "new_mentions", js.undefined)
     
-    @scala.inline
-    def setNew_mentionsVarargs(value: Mention*): Self = StObject.set(x, "new_mentions", js.Array(value :_*))
+    inline def setNew_mentionsVarargs(value: Mention*): Self = StObject.set(x, "new_mentions", js.Array(value :_*))
     
-    @scala.inline
-    def setNew_text(value: String): Self = StObject.set(x, "new_text", value.asInstanceOf[js.Any])
+    inline def setNew_text(value: String): Self = StObject.set(x, "new_text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNew_textUndefined: Self = StObject.set(x, "new_text", js.undefined)
+    inline def setNew_textUndefined: Self = StObject.set(x, "new_text", js.undefined)
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspace_id(value: String): Self = StObject.set(x, "workspace_id", value.asInstanceOf[js.Any])
+    inline def setWorkspace_id(value: String): Self = StObject.set(x, "workspace_id", value.asInstanceOf[js.Any])
   }
 }

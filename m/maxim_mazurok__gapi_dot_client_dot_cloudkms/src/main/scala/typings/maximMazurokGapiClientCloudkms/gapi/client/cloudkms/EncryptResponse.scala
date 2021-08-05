@@ -38,43 +38,31 @@ trait EncryptResponse extends StObject {
 }
 object EncryptResponse {
   
-  @scala.inline
-  def apply(): EncryptResponse = {
+  inline def apply(): EncryptResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EncryptResponse]
   }
   
-  @scala.inline
-  implicit class EncryptResponseMutableBuilder[Self <: EncryptResponse] (val x: Self) extends AnyVal {
+  extension [Self <: EncryptResponse](x: Self) {
     
-    @scala.inline
-    def setCiphertext(value: String): Self = StObject.set(x, "ciphertext", value.asInstanceOf[js.Any])
+    inline def setCiphertext(value: String): Self = StObject.set(x, "ciphertext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCiphertextCrc32c(value: String): Self = StObject.set(x, "ciphertextCrc32c", value.asInstanceOf[js.Any])
+    inline def setCiphertextCrc32c(value: String): Self = StObject.set(x, "ciphertextCrc32c", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCiphertextCrc32cUndefined: Self = StObject.set(x, "ciphertextCrc32c", js.undefined)
+    inline def setCiphertextCrc32cUndefined: Self = StObject.set(x, "ciphertextCrc32c", js.undefined)
     
-    @scala.inline
-    def setCiphertextUndefined: Self = StObject.set(x, "ciphertext", js.undefined)
+    inline def setCiphertextUndefined: Self = StObject.set(x, "ciphertext", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setVerifiedAdditionalAuthenticatedDataCrc32c(value: Boolean): Self = StObject.set(x, "verifiedAdditionalAuthenticatedDataCrc32c", value.asInstanceOf[js.Any])
+    inline def setVerifiedAdditionalAuthenticatedDataCrc32c(value: Boolean): Self = StObject.set(x, "verifiedAdditionalAuthenticatedDataCrc32c", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerifiedAdditionalAuthenticatedDataCrc32cUndefined: Self = StObject.set(x, "verifiedAdditionalAuthenticatedDataCrc32c", js.undefined)
+    inline def setVerifiedAdditionalAuthenticatedDataCrc32cUndefined: Self = StObject.set(x, "verifiedAdditionalAuthenticatedDataCrc32c", js.undefined)
     
-    @scala.inline
-    def setVerifiedPlaintextCrc32c(value: Boolean): Self = StObject.set(x, "verifiedPlaintextCrc32c", value.asInstanceOf[js.Any])
+    inline def setVerifiedPlaintextCrc32c(value: Boolean): Self = StObject.set(x, "verifiedPlaintextCrc32c", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerifiedPlaintextCrc32cUndefined: Self = StObject.set(x, "verifiedPlaintextCrc32c", js.undefined)
+    inline def setVerifiedPlaintextCrc32cUndefined: Self = StObject.set(x, "verifiedPlaintextCrc32c", js.undefined)
   }
 }

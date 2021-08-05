@@ -14,22 +14,17 @@ trait ReturnTypeGetUsageAndQuotaResponse extends StObject {
 }
 object ReturnTypeGetUsageAndQuotaResponse {
   
-  @scala.inline
-  def apply(paramsType: js.Array[GetUsageAndQuotaRequest], returnType: GetUsageAndQuotaResponse): ReturnTypeGetUsageAndQuotaResponse = {
+  inline def apply(paramsType: js.Array[GetUsageAndQuotaRequest], returnType: GetUsageAndQuotaResponse): ReturnTypeGetUsageAndQuotaResponse = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnTypeGetUsageAndQuotaResponse]
   }
   
-  @scala.inline
-  implicit class ReturnTypeGetUsageAndQuotaResponseMutableBuilder[Self <: ReturnTypeGetUsageAndQuotaResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnTypeGetUsageAndQuotaResponse](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[GetUsageAndQuotaRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[GetUsageAndQuotaRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: GetUsageAndQuotaRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: GetUsageAndQuotaRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: GetUsageAndQuotaResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: GetUsageAndQuotaResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

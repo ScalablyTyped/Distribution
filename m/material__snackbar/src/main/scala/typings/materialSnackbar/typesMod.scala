@@ -26,20 +26,16 @@ object typesMod {
   }
   object MDCSnackbarCloseEventDetail {
     
-    @scala.inline
-    def apply(): MDCSnackbarCloseEventDetail = {
+    inline def apply(): MDCSnackbarCloseEventDetail = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MDCSnackbarCloseEventDetail]
     }
     
-    @scala.inline
-    implicit class MDCSnackbarCloseEventDetailMutableBuilder[Self <: MDCSnackbarCloseEventDetail] (val x: Self) extends AnyVal {
+    extension [Self <: MDCSnackbarCloseEventDetail](x: Self) {
       
-      @scala.inline
-      def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+      inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     }
   }
 }

@@ -18,31 +18,23 @@ trait WifiData extends StObject {
 }
 object WifiData {
   
-  @scala.inline
-  def apply(): WifiData = {
+  inline def apply(): WifiData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WifiData]
   }
   
-  @scala.inline
-  implicit class WifiDataMutableBuilder[Self <: WifiData] (val x: Self) extends AnyVal {
+  extension [Self <: WifiData](x: Self) {
     
-    @scala.inline
-    def setBSSID(value: String): Self = StObject.set(x, "BSSID", value.asInstanceOf[js.Any])
+    inline def setBSSID(value: String): Self = StObject.set(x, "BSSID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBSSIDUndefined: Self = StObject.set(x, "BSSID", js.undefined)
+    inline def setBSSIDUndefined: Self = StObject.set(x, "BSSID", js.undefined)
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
-    @scala.inline
-    def setSSID(value: String): Self = StObject.set(x, "SSID", value.asInstanceOf[js.Any])
+    inline def setSSID(value: String): Self = StObject.set(x, "SSID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSSIDUndefined: Self = StObject.set(x, "SSID", js.undefined)
+    inline def setSSIDUndefined: Self = StObject.set(x, "SSID", js.undefined)
   }
 }

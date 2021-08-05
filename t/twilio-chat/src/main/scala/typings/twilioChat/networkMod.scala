@@ -13,29 +13,29 @@ object networkMod {
   class Network protected () extends StObject {
     def this(config: js.Any, services: js.Any) = this()
     
-    var backoffConfig: js.Any = js.native
+    /* private */ var backoffConfig: js.Any = js.native
     
-    val cache: js.Any = js.native
+    /* private */ val cache: js.Any = js.native
     
-    var cacheLifetime: js.Any = js.native
+    /* private */ var cacheLifetime: js.Any = js.native
     
-    var cleanupCache: js.Any = js.native
+    /* private */ var cleanupCache: js.Any = js.native
     
-    val config: js.Any = js.native
+    /* private */ val config: js.Any = js.native
     
-    var executeWithRetry: js.Any = js.native
+    /* private */ var executeWithRetry: js.Any = js.native
     
     def get(url: String): js.Promise[js.Any] = js.native
     
-    var isExpired: js.Any = js.native
+    /* private */ var isExpired: js.Any = js.native
     
     def pokeTimer(): Unit = js.native
     
-    var retryWhenThrottled: js.Any = js.native
+    /* private */ var retryWhenThrottled: js.Any = js.native
     
-    val services: js.Any = js.native
+    /* private */ val services: js.Any = js.native
     
-    var timer: js.Any = js.native
+    /* private */ var timer: js.Any = js.native
   }
   
   trait NetworkServices extends StObject {
@@ -46,20 +46,16 @@ object networkMod {
   }
   object NetworkServices {
     
-    @scala.inline
-    def apply(session: Session, transport: Transport): NetworkServices = {
+    inline def apply(session: Session, transport: Transport): NetworkServices = {
       val __obj = js.Dynamic.literal(session = session.asInstanceOf[js.Any], transport = transport.asInstanceOf[js.Any])
       __obj.asInstanceOf[NetworkServices]
     }
     
-    @scala.inline
-    implicit class NetworkServicesMutableBuilder[Self <: NetworkServices] (val x: Self) extends AnyVal {
+    extension [Self <: NetworkServices](x: Self) {
       
-      @scala.inline
-      def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+      inline def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransport(value: Transport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
+      inline def setTransport(value: Transport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
     }
   }
 }

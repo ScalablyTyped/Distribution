@@ -13,19 +13,15 @@ trait GetVoiceConnectorTerminationResponse extends StObject {
 }
 object GetVoiceConnectorTerminationResponse {
   
-  @scala.inline
-  def apply(): GetVoiceConnectorTerminationResponse = {
+  inline def apply(): GetVoiceConnectorTerminationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetVoiceConnectorTerminationResponse]
   }
   
-  @scala.inline
-  implicit class GetVoiceConnectorTerminationResponseMutableBuilder[Self <: GetVoiceConnectorTerminationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetVoiceConnectorTerminationResponse](x: Self) {
     
-    @scala.inline
-    def setTermination(value: Termination): Self = StObject.set(x, "Termination", value.asInstanceOf[js.Any])
+    inline def setTermination(value: Termination): Self = StObject.set(x, "Termination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerminationUndefined: Self = StObject.set(x, "Termination", js.undefined)
+    inline def setTerminationUndefined: Self = StObject.set(x, "Termination", js.undefined)
   }
 }

@@ -12,10 +12,8 @@ object mod {
     * @param options optional object
     * @returns serialized data
     */
-  @scala.inline
-  def apply(input: js.Any): String = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(input: js.Any, options: SerializeJSOptions): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(input: js.Any): String = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(input: js.Any, options: SerializeJSOptions): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("serialize-javascript", JSImport.Namespace)
   @js.native
@@ -51,38 +49,28 @@ object mod {
   }
   object SerializeJSOptions {
     
-    @scala.inline
-    def apply(): SerializeJSOptions = {
+    inline def apply(): SerializeJSOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SerializeJSOptions]
     }
     
-    @scala.inline
-    implicit class SerializeJSOptionsMutableBuilder[Self <: SerializeJSOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SerializeJSOptions](x: Self) {
       
-      @scala.inline
-      def setIgnoreFunction(value: Boolean): Self = StObject.set(x, "ignoreFunction", value.asInstanceOf[js.Any])
+      inline def setIgnoreFunction(value: Boolean): Self = StObject.set(x, "ignoreFunction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreFunctionUndefined: Self = StObject.set(x, "ignoreFunction", js.undefined)
+      inline def setIgnoreFunctionUndefined: Self = StObject.set(x, "ignoreFunction", js.undefined)
       
-      @scala.inline
-      def setIsJSON(value: Boolean): Self = StObject.set(x, "isJSON", value.asInstanceOf[js.Any])
+      inline def setIsJSON(value: Boolean): Self = StObject.set(x, "isJSON", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsJSONUndefined: Self = StObject.set(x, "isJSON", js.undefined)
+      inline def setIsJSONUndefined: Self = StObject.set(x, "isJSON", js.undefined)
       
-      @scala.inline
-      def setSpace(value: String | Double): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
+      inline def setSpace(value: String | Double): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
+      inline def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
       
-      @scala.inline
-      def setUnsafe(value: Boolean): Self = StObject.set(x, "unsafe", value.asInstanceOf[js.Any])
+      inline def setUnsafe(value: Boolean): Self = StObject.set(x, "unsafe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsafeUndefined: Self = StObject.set(x, "unsafe", js.undefined)
+      inline def setUnsafeUndefined: Self = StObject.set(x, "unsafe", js.undefined)
     }
   }
 }

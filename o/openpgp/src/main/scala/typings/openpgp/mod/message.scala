@@ -221,8 +221,7 @@ object message {
     * @param userIds (optional) user IDs to sign with, e.g. [ { name:'Steve Sender', email:'steve@openpgp.org' }]
     * @returns list of signature packets
     */
-  @scala.inline
-  def createSignaturePackets(
+  inline def createSignaturePackets(
     literalDataPacket: Literal,
     privateKeys: js.Array[js.Any],
     signature: Signature,
@@ -239,8 +238,7 @@ object message {
     *        i.e. check signature creation time < date < expiration time
     * @returns list of signer's keyid and validity of signature
     */
-  @scala.inline
-  def createVerificationObject(
+  inline def createVerificationObject(
     signature: typings.openpgp.mod.packet.Signature,
     literalDataList: js.Array[js.Any],
     keys: js.Array[js.Any],
@@ -256,8 +254,7 @@ object message {
     *        i.e. check signature creation time < date < expiration time
     * @returns list of signer's keyid and validity of signature
     */
-  @scala.inline
-  def createVerificationObjects(
+  inline def createVerificationObjects(
     signatureList: js.Array[js.Any],
     literalDataList: js.Array[js.Any],
     keys: js.Array[js.Any],
@@ -276,8 +273,7 @@ object message {
     * @param userIds (optional) user IDs to encrypt for, e.g. [ { name:'Robert Receiver', email:'robert@openpgp.org' }]
     * @returns new message with encrypted content
     */
-  @scala.inline
-  def encryptSessionKey(
+  inline def encryptSessionKey(
     sessionKey: Uint8Array,
     symAlgo: String,
     aeadAlgo: String,
@@ -288,14 +284,10 @@ object message {
     userIds: js.Array[js.Any]
   ): js.Promise[Message] = (^.asInstanceOf[js.Dynamic].applyDynamic("encryptSessionKey")(sessionKey.asInstanceOf[js.Any], symAlgo.asInstanceOf[js.Any], aeadAlgo.asInstanceOf[js.Any], publicKeys.asInstanceOf[js.Any], passwords.asInstanceOf[js.Any], wildcard.asInstanceOf[js.Any], date.asInstanceOf[js.Any], userIds.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Message]]
   
-  @scala.inline
-  def fromBinary(bytes: ReadableStream[Uint8Array]): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Message]
-  @scala.inline
-  def fromBinary(bytes: ReadableStream[Uint8Array], filename: String): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromBinary(bytes: ReadableStream[Uint8Array], filename: String, date: Date): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromBinary(bytes: ReadableStream[Uint8Array], filename: Unit, date: Date): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary(bytes: ReadableStream[Uint8Array]): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Message]
+  inline def fromBinary(bytes: ReadableStream[Uint8Array], filename: String): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary(bytes: ReadableStream[Uint8Array], filename: String, date: Date): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary(bytes: ReadableStream[Uint8Array], filename: Unit, date: Date): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Message]
   /**
     * creates new message object from binary data
     * @param bytes
@@ -304,82 +296,46 @@ object message {
     * @param type (optional) data packet type
     * @returns new message object
     */
-  @scala.inline
-  def fromBinary(bytes: Uint8Array): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Message]
-  @scala.inline
-  def fromBinary(bytes: Uint8Array, filename: String): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromBinary(bytes: Uint8Array, filename: String, date: Date): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromBinary(bytes: Uint8Array, filename: Unit, date: Date): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary(bytes: Uint8Array): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Message]
+  inline def fromBinary(bytes: Uint8Array, filename: String): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary(bytes: Uint8Array, filename: String, date: Date): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary(bytes: Uint8Array, filename: Unit, date: Date): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Message]
   
-  @scala.inline
-  def fromBinary_binary(bytes: ReadableStream[Uint8Array], filename: String, date: Unit, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromBinary_binary(bytes: ReadableStream[Uint8Array], filename: String, date: Date, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromBinary_binary(bytes: ReadableStream[Uint8Array], filename: Unit, date: Unit, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromBinary_binary(bytes: ReadableStream[Uint8Array], filename: Unit, date: Date, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromBinary_binary(bytes: Uint8Array, filename: String, date: Unit, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromBinary_binary(bytes: Uint8Array, filename: String, date: Date, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromBinary_binary(bytes: Uint8Array, filename: Unit, date: Unit, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromBinary_binary(bytes: Uint8Array, filename: Unit, date: Date, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary_binary(bytes: ReadableStream[Uint8Array], filename: String, date: Unit, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary_binary(bytes: ReadableStream[Uint8Array], filename: String, date: Date, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary_binary(bytes: ReadableStream[Uint8Array], filename: Unit, date: Unit, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary_binary(bytes: ReadableStream[Uint8Array], filename: Unit, date: Date, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary_binary(bytes: Uint8Array, filename: String, date: Unit, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary_binary(bytes: Uint8Array, filename: String, date: Date, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary_binary(bytes: Uint8Array, filename: Unit, date: Unit, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary_binary(bytes: Uint8Array, filename: Unit, date: Date, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
   
-  @scala.inline
-  def fromBinary_mime(bytes: ReadableStream[Uint8Array], filename: String, date: Unit, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromBinary_mime(bytes: ReadableStream[Uint8Array], filename: String, date: Date, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromBinary_mime(bytes: ReadableStream[Uint8Array], filename: Unit, date: Unit, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromBinary_mime(bytes: ReadableStream[Uint8Array], filename: Unit, date: Date, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromBinary_mime(bytes: Uint8Array, filename: String, date: Unit, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromBinary_mime(bytes: Uint8Array, filename: String, date: Date, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromBinary_mime(bytes: Uint8Array, filename: Unit, date: Unit, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromBinary_mime(bytes: Uint8Array, filename: Unit, date: Date, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary_mime(bytes: ReadableStream[Uint8Array], filename: String, date: Unit, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary_mime(bytes: ReadableStream[Uint8Array], filename: String, date: Date, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary_mime(bytes: ReadableStream[Uint8Array], filename: Unit, date: Unit, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary_mime(bytes: ReadableStream[Uint8Array], filename: Unit, date: Date, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary_mime(bytes: Uint8Array, filename: String, date: Unit, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary_mime(bytes: Uint8Array, filename: String, date: Date, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary_mime(bytes: Uint8Array, filename: Unit, date: Unit, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary_mime(bytes: Uint8Array, filename: Unit, date: Date, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
   
-  @scala.inline
-  def fromBinary_text(bytes: ReadableStream[Uint8Array], filename: String, date: Unit, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromBinary_text(bytes: ReadableStream[Uint8Array], filename: String, date: Date, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromBinary_text(bytes: ReadableStream[Uint8Array], filename: Unit, date: Unit, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromBinary_text(bytes: ReadableStream[Uint8Array], filename: Unit, date: Date, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromBinary_text(bytes: Uint8Array, filename: String, date: Unit, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromBinary_text(bytes: Uint8Array, filename: String, date: Date, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromBinary_text(bytes: Uint8Array, filename: Unit, date: Unit, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromBinary_text(bytes: Uint8Array, filename: Unit, date: Date, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary_text(bytes: ReadableStream[Uint8Array], filename: String, date: Unit, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary_text(bytes: ReadableStream[Uint8Array], filename: String, date: Date, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary_text(bytes: ReadableStream[Uint8Array], filename: Unit, date: Unit, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary_text(bytes: ReadableStream[Uint8Array], filename: Unit, date: Date, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary_text(bytes: Uint8Array, filename: String, date: Unit, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary_text(bytes: Uint8Array, filename: String, date: Date, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary_text(bytes: Uint8Array, filename: Unit, date: Unit, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary_text(bytes: Uint8Array, filename: Unit, date: Date, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
   
-  @scala.inline
-  def fromBinary_utf8(bytes: ReadableStream[Uint8Array], filename: String, date: Unit, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromBinary_utf8(bytes: ReadableStream[Uint8Array], filename: String, date: Date, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromBinary_utf8(bytes: ReadableStream[Uint8Array], filename: Unit, date: Unit, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromBinary_utf8(bytes: ReadableStream[Uint8Array], filename: Unit, date: Date, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromBinary_utf8(bytes: Uint8Array, filename: String, date: Unit, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromBinary_utf8(bytes: Uint8Array, filename: String, date: Date, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromBinary_utf8(bytes: Uint8Array, filename: Unit, date: Unit, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromBinary_utf8(bytes: Uint8Array, filename: Unit, date: Date, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary_utf8(bytes: ReadableStream[Uint8Array], filename: String, date: Unit, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary_utf8(bytes: ReadableStream[Uint8Array], filename: String, date: Date, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary_utf8(bytes: ReadableStream[Uint8Array], filename: Unit, date: Unit, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary_utf8(bytes: ReadableStream[Uint8Array], filename: Unit, date: Date, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary_utf8(bytes: Uint8Array, filename: String, date: Unit, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary_utf8(bytes: Uint8Array, filename: String, date: Date, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary_utf8(bytes: Uint8Array, filename: Unit, date: Unit, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary_utf8(bytes: Uint8Array, filename: Unit, date: Date, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
   
   /**
     * creates new message object from text
@@ -389,113 +345,67 @@ object message {
     * @param type (optional) data packet type
     * @returns new message object
     */
-  @scala.inline
-  def fromText(text: String): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any]).asInstanceOf[Message]
-  @scala.inline
-  def fromText(text: String, filename: String): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromText(text: String, filename: String, date: Date): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromText(text: String, filename: Unit, date: Date): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromText(text: ReadableStream[String]): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any]).asInstanceOf[Message]
-  @scala.inline
-  def fromText(text: ReadableStream[String], filename: String): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromText(text: ReadableStream[String], filename: String, date: Date): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromText(text: ReadableStream[String], filename: Unit, date: Date): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText(text: String): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any]).asInstanceOf[Message]
+  inline def fromText(text: String, filename: String): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText(text: String, filename: String, date: Date): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText(text: String, filename: Unit, date: Date): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText(text: ReadableStream[String]): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any]).asInstanceOf[Message]
+  inline def fromText(text: ReadableStream[String], filename: String): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText(text: ReadableStream[String], filename: String, date: Date): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText(text: ReadableStream[String], filename: Unit, date: Date): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Message]
   
-  @scala.inline
-  def fromText_binary(text: String, filename: String, date: Unit, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromText_binary(text: String, filename: String, date: Date, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromText_binary(text: String, filename: Unit, date: Unit, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromText_binary(text: String, filename: Unit, date: Date, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromText_binary(text: ReadableStream[String], filename: String, date: Unit, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromText_binary(text: ReadableStream[String], filename: String, date: Date, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromText_binary(text: ReadableStream[String], filename: Unit, date: Unit, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromText_binary(text: ReadableStream[String], filename: Unit, date: Date, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText_binary(text: String, filename: String, date: Unit, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText_binary(text: String, filename: String, date: Date, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText_binary(text: String, filename: Unit, date: Unit, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText_binary(text: String, filename: Unit, date: Date, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText_binary(text: ReadableStream[String], filename: String, date: Unit, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText_binary(text: ReadableStream[String], filename: String, date: Date, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText_binary(text: ReadableStream[String], filename: Unit, date: Unit, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText_binary(text: ReadableStream[String], filename: Unit, date: Date, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
   
-  @scala.inline
-  def fromText_mime(text: String, filename: String, date: Unit, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromText_mime(text: String, filename: String, date: Date, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromText_mime(text: String, filename: Unit, date: Unit, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromText_mime(text: String, filename: Unit, date: Date, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromText_mime(text: ReadableStream[String], filename: String, date: Unit, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromText_mime(text: ReadableStream[String], filename: String, date: Date, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromText_mime(text: ReadableStream[String], filename: Unit, date: Unit, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromText_mime(text: ReadableStream[String], filename: Unit, date: Date, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText_mime(text: String, filename: String, date: Unit, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText_mime(text: String, filename: String, date: Date, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText_mime(text: String, filename: Unit, date: Unit, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText_mime(text: String, filename: Unit, date: Date, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText_mime(text: ReadableStream[String], filename: String, date: Unit, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText_mime(text: ReadableStream[String], filename: String, date: Date, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText_mime(text: ReadableStream[String], filename: Unit, date: Unit, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText_mime(text: ReadableStream[String], filename: Unit, date: Date, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
   
-  @scala.inline
-  def fromText_text(text: String, filename: String, date: Unit, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromText_text(text: String, filename: String, date: Date, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromText_text(text: String, filename: Unit, date: Unit, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromText_text(text: String, filename: Unit, date: Date, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromText_text(text: ReadableStream[String], filename: String, date: Unit, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromText_text(text: ReadableStream[String], filename: String, date: Date, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromText_text(text: ReadableStream[String], filename: Unit, date: Unit, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromText_text(text: ReadableStream[String], filename: Unit, date: Date, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText_text(text: String, filename: String, date: Unit, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText_text(text: String, filename: String, date: Date, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText_text(text: String, filename: Unit, date: Unit, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText_text(text: String, filename: Unit, date: Date, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText_text(text: ReadableStream[String], filename: String, date: Unit, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText_text(text: ReadableStream[String], filename: String, date: Date, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText_text(text: ReadableStream[String], filename: Unit, date: Unit, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText_text(text: ReadableStream[String], filename: Unit, date: Date, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
   
-  @scala.inline
-  def fromText_utf8(text: String, filename: String, date: Unit, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromText_utf8(text: String, filename: String, date: Date, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromText_utf8(text: String, filename: Unit, date: Unit, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromText_utf8(text: String, filename: Unit, date: Date, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromText_utf8(text: ReadableStream[String], filename: String, date: Unit, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromText_utf8(text: ReadableStream[String], filename: String, date: Date, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromText_utf8(text: ReadableStream[String], filename: Unit, date: Unit, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  @scala.inline
-  def fromText_utf8(text: ReadableStream[String], filename: Unit, date: Date, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText_utf8(text: String, filename: String, date: Unit, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText_utf8(text: String, filename: String, date: Date, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText_utf8(text: String, filename: Unit, date: Unit, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText_utf8(text: String, filename: Unit, date: Date, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText_utf8(text: ReadableStream[String], filename: String, date: Unit, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText_utf8(text: ReadableStream[String], filename: String, date: Date, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText_utf8(text: ReadableStream[String], filename: Unit, date: Unit, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText_utf8(text: ReadableStream[String], filename: Unit, date: Date, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
   
-  @scala.inline
-  def read(input: ReadableStream[Uint8Array]): js.Promise[Message] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Message]]
-  @scala.inline
-  def read(input: ReadableStream[Uint8Array], fromStream: Boolean): js.Promise[Message] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(input.asInstanceOf[js.Any], fromStream.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Message]]
+  inline def read(input: ReadableStream[Uint8Array]): js.Promise[Message] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Message]]
+  inline def read(input: ReadableStream[Uint8Array], fromStream: Boolean): js.Promise[Message] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(input.asInstanceOf[js.Any], fromStream.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Message]]
   /**
     * reads an OpenPGP message as byte array and returns a message object
     * @param input binary message
     * @param fromStream whether the message was created from a Stream
     * @returns new message object
     */
-  @scala.inline
-  def read(input: Uint8Array): js.Promise[Message] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Message]]
-  @scala.inline
-  def read(input: Uint8Array, fromStream: Boolean): js.Promise[Message] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(input.asInstanceOf[js.Any], fromStream.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Message]]
+  inline def read(input: Uint8Array): js.Promise[Message] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Message]]
+  inline def read(input: Uint8Array, fromStream: Boolean): js.Promise[Message] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(input.asInstanceOf[js.Any], fromStream.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Message]]
   
   /**
     * reads an OpenPGP armored message and returns a message object
     * @param armoredText text to be parsed
     * @returns new message object
     */
-  @scala.inline
-  def readArmored(armoredText: String): js.Promise[Message] = ^.asInstanceOf[js.Dynamic].applyDynamic("readArmored")(armoredText.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Message]]
-  @scala.inline
-  def readArmored(armoredText: ReadableStream[String]): js.Promise[Message] = ^.asInstanceOf[js.Dynamic].applyDynamic("readArmored")(armoredText.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Message]]
+  inline def readArmored(armoredText: String): js.Promise[Message] = ^.asInstanceOf[js.Dynamic].applyDynamic("readArmored")(armoredText.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Message]]
+  inline def readArmored(armoredText: ReadableStream[String]): js.Promise[Message] = ^.asInstanceOf[js.Dynamic].applyDynamic("readArmored")(armoredText.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Message]]
 }

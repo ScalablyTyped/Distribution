@@ -11,6 +11,5 @@ object useCurrentMenuLayoutPropsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(currentMenu: ProSettings): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(currentMenu.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  inline def default(currentMenu: ProSettings): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(currentMenu.asInstanceOf[js.Any]).asInstanceOf[js.Object]
 }

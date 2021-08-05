@@ -15,16 +15,13 @@ trait SlidesOnOpen
 }
 object SlidesOnOpen {
   
-  @scala.inline
-  def apply(authMode: AuthMode, source: Presentation, triggerUid: String, user: User): SlidesOnOpen = {
+  inline def apply(authMode: AuthMode, source: Presentation, triggerUid: String, user: User): SlidesOnOpen = {
     val __obj = js.Dynamic.literal(authMode = authMode.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], triggerUid = triggerUid.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlidesOnOpen]
   }
   
-  @scala.inline
-  implicit class SlidesOnOpenMutableBuilder[Self <: SlidesOnOpen] (val x: Self) extends AnyVal {
+  extension [Self <: SlidesOnOpen](x: Self) {
     
-    @scala.inline
-    def setSource(value: Presentation): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Presentation): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

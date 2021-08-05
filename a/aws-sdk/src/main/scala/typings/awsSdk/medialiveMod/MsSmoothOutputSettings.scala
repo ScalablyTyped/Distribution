@@ -19,25 +19,19 @@ trait MsSmoothOutputSettings extends StObject {
 }
 object MsSmoothOutputSettings {
   
-  @scala.inline
-  def apply(): MsSmoothOutputSettings = {
+  inline def apply(): MsSmoothOutputSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MsSmoothOutputSettings]
   }
   
-  @scala.inline
-  implicit class MsSmoothOutputSettingsMutableBuilder[Self <: MsSmoothOutputSettings] (val x: Self) extends AnyVal {
+  extension [Self <: MsSmoothOutputSettings](x: Self) {
     
-    @scala.inline
-    def setH265PackagingType(value: MsSmoothH265PackagingType): Self = StObject.set(x, "H265PackagingType", value.asInstanceOf[js.Any])
+    inline def setH265PackagingType(value: MsSmoothH265PackagingType): Self = StObject.set(x, "H265PackagingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setH265PackagingTypeUndefined: Self = StObject.set(x, "H265PackagingType", js.undefined)
+    inline def setH265PackagingTypeUndefined: Self = StObject.set(x, "H265PackagingType", js.undefined)
     
-    @scala.inline
-    def setNameModifier(value: string): Self = StObject.set(x, "NameModifier", value.asInstanceOf[js.Any])
+    inline def setNameModifier(value: string): Self = StObject.set(x, "NameModifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameModifierUndefined: Self = StObject.set(x, "NameModifier", js.undefined)
+    inline def setNameModifierUndefined: Self = StObject.set(x, "NameModifier", js.undefined)
   }
 }

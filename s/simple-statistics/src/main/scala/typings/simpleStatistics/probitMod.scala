@@ -10,6 +10,5 @@ object probitMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(p: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(p.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def default(p: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(p.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

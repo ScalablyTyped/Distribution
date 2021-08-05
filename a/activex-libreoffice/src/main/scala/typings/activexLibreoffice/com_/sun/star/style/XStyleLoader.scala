@@ -31,8 +31,7 @@ trait XStyleLoader
 }
 object XStyleLoader {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     StyleLoaderOptions: SafeArray[PropertyValue],
     acquire: () => Unit,
     getStyleLoaderOptions: () => SafeArray[PropertyValue],
@@ -44,16 +43,12 @@ object XStyleLoader {
     __obj.asInstanceOf[XStyleLoader]
   }
   
-  @scala.inline
-  implicit class XStyleLoaderMutableBuilder[Self <: XStyleLoader] (val x: Self) extends AnyVal {
+  extension [Self <: XStyleLoader](x: Self) {
     
-    @scala.inline
-    def setGetStyleLoaderOptions(value: () => SafeArray[PropertyValue]): Self = StObject.set(x, "getStyleLoaderOptions", js.Any.fromFunction0(value))
+    inline def setGetStyleLoaderOptions(value: () => SafeArray[PropertyValue]): Self = StObject.set(x, "getStyleLoaderOptions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLoadStylesFromURL(value: (String, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "loadStylesFromURL", js.Any.fromFunction2(value))
+    inline def setLoadStylesFromURL(value: (String, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "loadStylesFromURL", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStyleLoaderOptions(value: SafeArray[PropertyValue]): Self = StObject.set(x, "StyleLoaderOptions", value.asInstanceOf[js.Any])
+    inline def setStyleLoaderOptions(value: SafeArray[PropertyValue]): Self = StObject.set(x, "StyleLoaderOptions", value.asInstanceOf[js.Any])
   }
 }

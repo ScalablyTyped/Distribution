@@ -18,19 +18,15 @@ trait DeregisterEventTopicRequest extends StObject {
 }
 object DeregisterEventTopicRequest {
   
-  @scala.inline
-  def apply(DirectoryId: DirectoryId, TopicName: TopicName): DeregisterEventTopicRequest = {
+  inline def apply(DirectoryId: DirectoryId, TopicName: TopicName): DeregisterEventTopicRequest = {
     val __obj = js.Dynamic.literal(DirectoryId = DirectoryId.asInstanceOf[js.Any], TopicName = TopicName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeregisterEventTopicRequest]
   }
   
-  @scala.inline
-  implicit class DeregisterEventTopicRequestMutableBuilder[Self <: DeregisterEventTopicRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeregisterEventTopicRequest](x: Self) {
     
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicName(value: TopicName): Self = StObject.set(x, "TopicName", value.asInstanceOf[js.Any])
+    inline def setTopicName(value: TopicName): Self = StObject.set(x, "TopicName", value.asInstanceOf[js.Any])
   }
 }

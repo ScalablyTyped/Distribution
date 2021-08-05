@@ -13,16 +13,13 @@ trait DescribeLoggingOptionsResponse extends StObject {
 }
 object DescribeLoggingOptionsResponse {
   
-  @scala.inline
-  def apply(loggingOptions: LoggingOptions): DescribeLoggingOptionsResponse = {
+  inline def apply(loggingOptions: LoggingOptions): DescribeLoggingOptionsResponse = {
     val __obj = js.Dynamic.literal(loggingOptions = loggingOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeLoggingOptionsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeLoggingOptionsResponseMutableBuilder[Self <: DescribeLoggingOptionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeLoggingOptionsResponse](x: Self) {
     
-    @scala.inline
-    def setLoggingOptions(value: LoggingOptions): Self = StObject.set(x, "loggingOptions", value.asInstanceOf[js.Any])
+    inline def setLoggingOptions(value: LoggingOptions): Self = StObject.set(x, "loggingOptions", value.asInstanceOf[js.Any])
   }
 }

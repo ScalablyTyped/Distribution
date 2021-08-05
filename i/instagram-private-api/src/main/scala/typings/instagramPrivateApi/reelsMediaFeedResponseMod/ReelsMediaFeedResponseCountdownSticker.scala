@@ -32,8 +32,7 @@ trait ReelsMediaFeedResponseCountdownSticker extends StObject {
 }
 object ReelsMediaFeedResponseCountdownSticker {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attribution: Null,
     countdown_id: Double,
     digit_card_color: String,
@@ -51,43 +50,30 @@ object ReelsMediaFeedResponseCountdownSticker {
     __obj.asInstanceOf[ReelsMediaFeedResponseCountdownSticker]
   }
   
-  @scala.inline
-  implicit class ReelsMediaFeedResponseCountdownStickerMutableBuilder[Self <: ReelsMediaFeedResponseCountdownSticker] (val x: Self) extends AnyVal {
+  extension [Self <: ReelsMediaFeedResponseCountdownSticker](x: Self) {
     
-    @scala.inline
-    def setAttribution(value: Null): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
+    inline def setAttribution(value: Null): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountdown_id(value: Double): Self = StObject.set(x, "countdown_id", value.asInstanceOf[js.Any])
+    inline def setCountdown_id(value: Double): Self = StObject.set(x, "countdown_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigit_card_color(value: String): Self = StObject.set(x, "digit_card_color", value.asInstanceOf[js.Any])
+    inline def setDigit_card_color(value: String): Self = StObject.set(x, "digit_card_color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigit_color(value: String): Self = StObject.set(x, "digit_color", value.asInstanceOf[js.Any])
+    inline def setDigit_color(value: String): Self = StObject.set(x, "digit_color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd_background_color(value: String): Self = StObject.set(x, "end_background_color", value.asInstanceOf[js.Any])
+    inline def setEnd_background_color(value: String): Self = StObject.set(x, "end_background_color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd_ts(value: Double): Self = StObject.set(x, "end_ts", value.asInstanceOf[js.Any])
+    inline def setEnd_ts(value: Double): Self = StObject.set(x, "end_ts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFollowing_enabled(value: Boolean): Self = StObject.set(x, "following_enabled", value.asInstanceOf[js.Any])
+    inline def setFollowing_enabled(value: Boolean): Self = StObject.set(x, "following_enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_owner(value: Boolean): Self = StObject.set(x, "is_owner", value.asInstanceOf[js.Any])
+    inline def setIs_owner(value: Boolean): Self = StObject.set(x, "is_owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart_background_color(value: String): Self = StObject.set(x, "start_background_color", value.asInstanceOf[js.Any])
+    inline def setStart_background_color(value: String): Self = StObject.set(x, "start_background_color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText_color(value: String): Self = StObject.set(x, "text_color", value.asInstanceOf[js.Any])
+    inline def setText_color(value: String): Self = StObject.set(x, "text_color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewer_is_following(value: Boolean): Self = StObject.set(x, "viewer_is_following", value.asInstanceOf[js.Any])
+    inline def setViewer_is_following(value: Boolean): Self = StObject.set(x, "viewer_is_following", value.asInstanceOf[js.Any])
   }
 }

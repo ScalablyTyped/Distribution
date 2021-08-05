@@ -13,16 +13,13 @@ trait DeleteCodeRepositoryInput extends StObject {
 }
 object DeleteCodeRepositoryInput {
   
-  @scala.inline
-  def apply(CodeRepositoryName: EntityName): DeleteCodeRepositoryInput = {
+  inline def apply(CodeRepositoryName: EntityName): DeleteCodeRepositoryInput = {
     val __obj = js.Dynamic.literal(CodeRepositoryName = CodeRepositoryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteCodeRepositoryInput]
   }
   
-  @scala.inline
-  implicit class DeleteCodeRepositoryInputMutableBuilder[Self <: DeleteCodeRepositoryInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteCodeRepositoryInput](x: Self) {
     
-    @scala.inline
-    def setCodeRepositoryName(value: EntityName): Self = StObject.set(x, "CodeRepositoryName", value.asInstanceOf[js.Any])
+    inline def setCodeRepositoryName(value: EntityName): Self = StObject.set(x, "CodeRepositoryName", value.asInstanceOf[js.Any])
   }
 }

@@ -32,32 +32,24 @@ object typesDeleteObjectOutputMod {
   }
   object DeleteObjectOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): DeleteObjectOutput = {
+    inline def apply($metadata: ResponseMetadata): DeleteObjectOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteObjectOutput]
     }
     
-    @scala.inline
-    implicit class DeleteObjectOutputMutableBuilder[Self <: DeleteObjectOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteObjectOutput](x: Self) {
       
-      @scala.inline
-      def setDeleteMarker(value: Boolean): Self = StObject.set(x, "DeleteMarker", value.asInstanceOf[js.Any])
+      inline def setDeleteMarker(value: Boolean): Self = StObject.set(x, "DeleteMarker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleteMarkerUndefined: Self = StObject.set(x, "DeleteMarker", js.undefined)
+      inline def setDeleteMarkerUndefined: Self = StObject.set(x, "DeleteMarker", js.undefined)
       
-      @scala.inline
-      def setRequestCharged(value: requester_ | String): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
+      inline def setRequestCharged(value: requester_ | String): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestChargedUndefined: Self = StObject.set(x, "RequestCharged", js.undefined)
+      inline def setRequestChargedUndefined: Self = StObject.set(x, "RequestCharged", js.undefined)
       
-      @scala.inline
-      def setVersionId(value: String): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
+      inline def setVersionId(value: String): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
+      inline def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
     }
   }
 }

@@ -58,61 +58,43 @@ trait IDiffEditorOptions
 }
 object IDiffEditorOptions {
   
-  @scala.inline
-  def apply(): IDiffEditorOptions = {
+  inline def apply(): IDiffEditorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDiffEditorOptions]
   }
   
-  @scala.inline
-  implicit class IDiffEditorOptionsMutableBuilder[Self <: IDiffEditorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IDiffEditorOptions](x: Self) {
     
-    @scala.inline
-    def setEnableSplitViewResizing(value: Boolean): Self = StObject.set(x, "enableSplitViewResizing", value.asInstanceOf[js.Any])
+    inline def setEnableSplitViewResizing(value: Boolean): Self = StObject.set(x, "enableSplitViewResizing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableSplitViewResizingUndefined: Self = StObject.set(x, "enableSplitViewResizing", js.undefined)
+    inline def setEnableSplitViewResizingUndefined: Self = StObject.set(x, "enableSplitViewResizing", js.undefined)
     
-    @scala.inline
-    def setIgnoreTrimWhitespace(value: Boolean): Self = StObject.set(x, "ignoreTrimWhitespace", value.asInstanceOf[js.Any])
+    inline def setIgnoreTrimWhitespace(value: Boolean): Self = StObject.set(x, "ignoreTrimWhitespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreTrimWhitespaceUndefined: Self = StObject.set(x, "ignoreTrimWhitespace", js.undefined)
+    inline def setIgnoreTrimWhitespaceUndefined: Self = StObject.set(x, "ignoreTrimWhitespace", js.undefined)
     
-    @scala.inline
-    def setMaxComputationTime(value: Double): Self = StObject.set(x, "maxComputationTime", value.asInstanceOf[js.Any])
+    inline def setMaxComputationTime(value: Double): Self = StObject.set(x, "maxComputationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxComputationTimeUndefined: Self = StObject.set(x, "maxComputationTime", js.undefined)
+    inline def setMaxComputationTimeUndefined: Self = StObject.set(x, "maxComputationTime", js.undefined)
     
-    @scala.inline
-    def setModifiedCodeLens(value: Boolean): Self = StObject.set(x, "modifiedCodeLens", value.asInstanceOf[js.Any])
+    inline def setModifiedCodeLens(value: Boolean): Self = StObject.set(x, "modifiedCodeLens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiedCodeLensUndefined: Self = StObject.set(x, "modifiedCodeLens", js.undefined)
+    inline def setModifiedCodeLensUndefined: Self = StObject.set(x, "modifiedCodeLens", js.undefined)
     
-    @scala.inline
-    def setOriginalCodeLens(value: Boolean): Self = StObject.set(x, "originalCodeLens", value.asInstanceOf[js.Any])
+    inline def setOriginalCodeLens(value: Boolean): Self = StObject.set(x, "originalCodeLens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalCodeLensUndefined: Self = StObject.set(x, "originalCodeLens", js.undefined)
+    inline def setOriginalCodeLensUndefined: Self = StObject.set(x, "originalCodeLens", js.undefined)
     
-    @scala.inline
-    def setOriginalEditable(value: Boolean): Self = StObject.set(x, "originalEditable", value.asInstanceOf[js.Any])
+    inline def setOriginalEditable(value: Boolean): Self = StObject.set(x, "originalEditable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalEditableUndefined: Self = StObject.set(x, "originalEditable", js.undefined)
+    inline def setOriginalEditableUndefined: Self = StObject.set(x, "originalEditable", js.undefined)
     
-    @scala.inline
-    def setRenderIndicators(value: Boolean): Self = StObject.set(x, "renderIndicators", value.asInstanceOf[js.Any])
+    inline def setRenderIndicators(value: Boolean): Self = StObject.set(x, "renderIndicators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderIndicatorsUndefined: Self = StObject.set(x, "renderIndicators", js.undefined)
+    inline def setRenderIndicatorsUndefined: Self = StObject.set(x, "renderIndicators", js.undefined)
     
-    @scala.inline
-    def setRenderSideBySide(value: Boolean): Self = StObject.set(x, "renderSideBySide", value.asInstanceOf[js.Any])
+    inline def setRenderSideBySide(value: Boolean): Self = StObject.set(x, "renderSideBySide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderSideBySideUndefined: Self = StObject.set(x, "renderSideBySide", js.undefined)
+    inline def setRenderSideBySideUndefined: Self = StObject.set(x, "renderSideBySide", js.undefined)
   }
 }

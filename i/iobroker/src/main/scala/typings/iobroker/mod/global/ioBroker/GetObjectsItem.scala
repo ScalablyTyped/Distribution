@@ -15,19 +15,15 @@ trait GetObjectsItem[T /* <: BaseObject */] extends StObject {
 }
 object GetObjectsItem {
   
-  @scala.inline
-  def apply[T /* <: BaseObject */](id: String, value: T): GetObjectsItem[T] = {
+  inline def apply[T /* <: BaseObject */](id: String, value: T): GetObjectsItem[T] = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetObjectsItem[T]]
   }
   
-  @scala.inline
-  implicit class GetObjectsItemMutableBuilder[Self <: GetObjectsItem[?], T /* <: BaseObject */] (val x: Self & GetObjectsItem[T]) extends AnyVal {
+  extension [Self <: GetObjectsItem[?], T /* <: BaseObject */](x: Self & GetObjectsItem[T]) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

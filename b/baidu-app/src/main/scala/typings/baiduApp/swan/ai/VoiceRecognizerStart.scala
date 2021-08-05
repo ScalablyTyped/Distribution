@@ -19,31 +19,23 @@ trait VoiceRecognizerStart extends StObject {
 }
 object VoiceRecognizerStart {
   
-  @scala.inline
-  def apply(): VoiceRecognizerStart = {
+  inline def apply(): VoiceRecognizerStart = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VoiceRecognizerStart]
   }
   
-  @scala.inline
-  implicit class VoiceRecognizerStartMutableBuilder[Self <: VoiceRecognizerStart] (val x: Self) extends AnyVal {
+  extension [Self <: VoiceRecognizerStart](x: Self) {
     
-    @scala.inline
-    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setLongSpeech(value: Boolean): Self = StObject.set(x, "longSpeech", value.asInstanceOf[js.Any])
+    inline def setLongSpeech(value: Boolean): Self = StObject.set(x, "longSpeech", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongSpeechUndefined: Self = StObject.set(x, "longSpeech", js.undefined)
+    inline def setLongSpeechUndefined: Self = StObject.set(x, "longSpeech", js.undefined)
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

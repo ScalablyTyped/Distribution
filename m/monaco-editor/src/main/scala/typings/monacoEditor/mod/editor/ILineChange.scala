@@ -12,8 +12,7 @@ trait ILineChange
 }
 object ILineChange {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     modifiedEndLineNumber: Double,
     modifiedStartLineNumber: Double,
     originalEndLineNumber: Double,
@@ -23,16 +22,12 @@ object ILineChange {
     __obj.asInstanceOf[ILineChange]
   }
   
-  @scala.inline
-  implicit class ILineChangeMutableBuilder[Self <: ILineChange] (val x: Self) extends AnyVal {
+  extension [Self <: ILineChange](x: Self) {
     
-    @scala.inline
-    def setCharChanges(value: js.Array[ICharChange]): Self = StObject.set(x, "charChanges", value.asInstanceOf[js.Any])
+    inline def setCharChanges(value: js.Array[ICharChange]): Self = StObject.set(x, "charChanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharChangesUndefined: Self = StObject.set(x, "charChanges", js.undefined)
+    inline def setCharChangesUndefined: Self = StObject.set(x, "charChanges", js.undefined)
     
-    @scala.inline
-    def setCharChangesVarargs(value: ICharChange*): Self = StObject.set(x, "charChanges", js.Array(value :_*))
+    inline def setCharChangesVarargs(value: ICharChange*): Self = StObject.set(x, "charChanges", js.Array(value :_*))
   }
 }

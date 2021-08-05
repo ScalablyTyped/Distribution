@@ -13,22 +13,17 @@ trait CreateDiskFromSnapshotResult extends StObject {
 }
 object CreateDiskFromSnapshotResult {
   
-  @scala.inline
-  def apply(): CreateDiskFromSnapshotResult = {
+  inline def apply(): CreateDiskFromSnapshotResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateDiskFromSnapshotResult]
   }
   
-  @scala.inline
-  implicit class CreateDiskFromSnapshotResultMutableBuilder[Self <: CreateDiskFromSnapshotResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDiskFromSnapshotResult](x: Self) {
     
-    @scala.inline
-    def setOperations(value: OperationList): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+    inline def setOperations(value: OperationList): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
+    inline def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
     
-    @scala.inline
-    def setOperationsVarargs(value: Operation*): Self = StObject.set(x, "operations", js.Array(value :_*))
+    inline def setOperationsVarargs(value: Operation*): Self = StObject.set(x, "operations", js.Array(value :_*))
   }
 }

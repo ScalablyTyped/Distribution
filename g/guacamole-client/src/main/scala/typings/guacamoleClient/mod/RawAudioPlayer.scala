@@ -37,8 +37,7 @@ object RawAudioPlayer {
     *     any parameters. If the necessary JavaScript APIs for playing raw audio
     *     are absent, this list will be empty.
     */
-  @scala.inline
-  def getSupportedTypes(): js.Array[Mimetype] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSupportedTypes")().asInstanceOf[js.Array[Mimetype]]
+  inline def getSupportedTypes(): js.Array[Mimetype] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSupportedTypes")().asInstanceOf[js.Array[Mimetype]]
   
   /**
     * Determines whether the given mimetype is supported by
@@ -46,6 +45,5 @@ object RawAudioPlayer {
     * @param mimetype The mimetype to check.
     * @returns true if the given mimetype is supported by Guacamole.RawAudioPlayer, false otherwise.
     */
-  @scala.inline
-  def isSupportedType(mimetype: Mimetype): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupportedType")(mimetype.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isSupportedType(mimetype: Mimetype): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupportedType")(mimetype.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

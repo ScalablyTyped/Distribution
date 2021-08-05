@@ -9,8 +9,7 @@ object UntitledNumbersConst {
   
   object Constants {
     
-    @scala.inline
-    def INVALID_NUMBER: `0` = 0.asInstanceOf[`0`]
+    inline def INVALID_NUMBER: `0` = 0.asInstanceOf[`0`]
   }
   type Constants = `0`
 }

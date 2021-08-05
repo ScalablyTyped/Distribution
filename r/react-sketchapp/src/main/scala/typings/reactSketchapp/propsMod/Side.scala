@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Side extends StObject
 object Side {
   
-  @scala.inline
-  def left: typings.reactSketchapp.reactSketchappStrings.left = "left".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.left]
+  inline def left: typings.reactSketchapp.reactSketchappStrings.left = "left".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.left]
   
-  @scala.inline
-  def right: typings.reactSketchapp.reactSketchappStrings.right = "right".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.right]
+  inline def right: typings.reactSketchapp.reactSketchappStrings.right = "right".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.right]
 }

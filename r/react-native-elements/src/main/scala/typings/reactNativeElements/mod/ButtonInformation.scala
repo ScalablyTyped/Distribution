@@ -19,37 +19,27 @@ trait ButtonInformation extends StObject {
 }
 object ButtonInformation {
   
-  @scala.inline
-  def apply(icon: String, title: String): ButtonInformation = {
+  inline def apply(icon: String, title: String): ButtonInformation = {
     val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonInformation]
   }
   
-  @scala.inline
-  implicit class ButtonInformationMutableBuilder[Self <: ButtonInformation] (val x: Self) extends AnyVal {
+  extension [Self <: ButtonInformation](x: Self) {
     
-    @scala.inline
-    def setButtonStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "buttonStyle", value.asInstanceOf[js.Any])
+    inline def setButtonStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "buttonStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonStyleNull: Self = StObject.set(x, "buttonStyle", null)
+    inline def setButtonStyleNull: Self = StObject.set(x, "buttonStyle", null)
     
-    @scala.inline
-    def setButtonStyleUndefined: Self = StObject.set(x, "buttonStyle", js.undefined)
+    inline def setButtonStyleUndefined: Self = StObject.set(x, "buttonStyle", js.undefined)
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "titleStyle", value.asInstanceOf[js.Any])
+    inline def setTitleStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "titleStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleStyleNull: Self = StObject.set(x, "titleStyle", null)
+    inline def setTitleStyleNull: Self = StObject.set(x, "titleStyle", null)
     
-    @scala.inline
-    def setTitleStyleUndefined: Self = StObject.set(x, "titleStyle", js.undefined)
+    inline def setTitleStyleUndefined: Self = StObject.set(x, "titleStyle", js.undefined)
   }
 }

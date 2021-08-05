@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HTMLPerformanceNavigation extends StObject {
   
-  @JSName("MSHTML.HTMLPerformanceNavigation_typekey")
+  /* private */ @JSName("MSHTML.HTMLPerformanceNavigation_typekey")
   var MSHTMLDotHTMLPerformanceNavigation_typekey: HTMLPerformanceNavigation
   
   val redirectCount: Double
@@ -17,8 +17,7 @@ trait HTMLPerformanceNavigation extends StObject {
 }
 object HTMLPerformanceNavigation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotHTMLPerformanceNavigation_typekey: HTMLPerformanceNavigation,
     redirectCount: Double,
     toJSON: () => js.Any,
@@ -30,19 +29,14 @@ object HTMLPerformanceNavigation {
     __obj.asInstanceOf[HTMLPerformanceNavigation]
   }
   
-  @scala.inline
-  implicit class HTMLPerformanceNavigationMutableBuilder[Self <: HTMLPerformanceNavigation] (val x: Self) extends AnyVal {
+  extension [Self <: HTMLPerformanceNavigation](x: Self) {
     
-    @scala.inline
-    def setMSHTMLDotHTMLPerformanceNavigation_typekey(value: HTMLPerformanceNavigation): Self = StObject.set(x, "MSHTML.HTMLPerformanceNavigation_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotHTMLPerformanceNavigation_typekey(value: HTMLPerformanceNavigation): Self = StObject.set(x, "MSHTML.HTMLPerformanceNavigation_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectCount(value: Double): Self = StObject.set(x, "redirectCount", value.asInstanceOf[js.Any])
+    inline def setRedirectCount(value: Double): Self = StObject.set(x, "redirectCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

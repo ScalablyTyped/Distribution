@@ -10,8 +10,7 @@ trait GetBucketLocationOutput
      with typings.awsSdkClientS3Node.typesGetBucketLocationOutputMod.GetBucketLocationOutput
 object GetBucketLocationOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): GetBucketLocationOutput = {
+  inline def apply($metadata: ResponseMetadata): GetBucketLocationOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketLocationOutput]
   }

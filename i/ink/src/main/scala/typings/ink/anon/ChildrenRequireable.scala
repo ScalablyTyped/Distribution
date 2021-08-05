@@ -12,16 +12,13 @@ trait ChildrenRequireable extends StObject {
 }
 object ChildrenRequireable {
   
-  @scala.inline
-  def apply(children: Requireable[ReactNodeLike]): ChildrenRequireable = {
+  inline def apply(children: Requireable[ReactNodeLike]): ChildrenRequireable = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChildrenRequireable]
   }
   
-  @scala.inline
-  implicit class ChildrenRequireableMutableBuilder[Self <: ChildrenRequireable] (val x: Self) extends AnyVal {
+  extension [Self <: ChildrenRequireable](x: Self) {
     
-    @scala.inline
-    def setChildren(value: Requireable[ReactNodeLike]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Requireable[ReactNodeLike]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
   }
 }

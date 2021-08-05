@@ -22,18 +22,15 @@ object NamingConvention {
   @JSImport("breeze", "NamingConvention.camelCase")
   @js.native
   def camelCase: typings.breeze.breeze.NamingConvention = js.native
-  @scala.inline
-  def camelCase_=(x: typings.breeze.breeze.NamingConvention): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("camelCase")(x.asInstanceOf[js.Any])
+  inline def camelCase_=(x: typings.breeze.breeze.NamingConvention): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("camelCase")(x.asInstanceOf[js.Any])
   
   @JSImport("breeze", "NamingConvention.defaultInstance")
   @js.native
   def defaultInstance: typings.breeze.breeze.NamingConvention = js.native
-  @scala.inline
-  def defaultInstance_=(x: typings.breeze.breeze.NamingConvention): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultInstance")(x.asInstanceOf[js.Any])
+  inline def defaultInstance_=(x: typings.breeze.breeze.NamingConvention): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultInstance")(x.asInstanceOf[js.Any])
   
   @JSImport("breeze", "NamingConvention.none")
   @js.native
   def none: typings.breeze.breeze.NamingConvention = js.native
-  @scala.inline
-  def none_=(x: typings.breeze.breeze.NamingConvention): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
+  inline def none_=(x: typings.breeze.breeze.NamingConvention): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
 }

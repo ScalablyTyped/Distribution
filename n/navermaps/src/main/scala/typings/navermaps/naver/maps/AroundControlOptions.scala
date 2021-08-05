@@ -10,16 +10,13 @@ trait AroundControlOptions extends StObject {
 }
 object AroundControlOptions {
   
-  @scala.inline
-  def apply(position: Position): AroundControlOptions = {
+  inline def apply(position: Position): AroundControlOptions = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[AroundControlOptions]
   }
   
-  @scala.inline
-  implicit class AroundControlOptionsMutableBuilder[Self <: AroundControlOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AroundControlOptions](x: Self) {
     
-    @scala.inline
-    def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

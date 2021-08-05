@@ -13,19 +13,15 @@ trait CancellationToken extends StObject {
 }
 object CancellationToken {
   
-  @scala.inline
-  def apply(isCancellationRequested: () => Boolean, throwIfCancellationRequested: () => Unit): CancellationToken = {
+  inline def apply(isCancellationRequested: () => Boolean, throwIfCancellationRequested: () => Unit): CancellationToken = {
     val __obj = js.Dynamic.literal(isCancellationRequested = js.Any.fromFunction0(isCancellationRequested), throwIfCancellationRequested = js.Any.fromFunction0(throwIfCancellationRequested))
     __obj.asInstanceOf[CancellationToken]
   }
   
-  @scala.inline
-  implicit class CancellationTokenMutableBuilder[Self <: CancellationToken] (val x: Self) extends AnyVal {
+  extension [Self <: CancellationToken](x: Self) {
     
-    @scala.inline
-    def setIsCancellationRequested(value: () => Boolean): Self = StObject.set(x, "isCancellationRequested", js.Any.fromFunction0(value))
+    inline def setIsCancellationRequested(value: () => Boolean): Self = StObject.set(x, "isCancellationRequested", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setThrowIfCancellationRequested(value: () => Unit): Self = StObject.set(x, "throwIfCancellationRequested", js.Any.fromFunction0(value))
+    inline def setThrowIfCancellationRequested(value: () => Unit): Self = StObject.set(x, "throwIfCancellationRequested", js.Any.fromFunction0(value))
   }
 }

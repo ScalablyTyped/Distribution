@@ -48,7 +48,7 @@ object expandMod {
     /**
       * Gets or sets the answer of the prompt.
       */
-    var answer: String = js.native
+    /* protected */ var answer: String = js.native
     
     /**
       * Resolves the value of the prompt.
@@ -67,8 +67,8 @@ object expandMod {
       * @returns
       * The string-representations of the choices.
       */
-    @JSName("generateChoicesString")
-    /* protected */ def generateChoicesString_choices(
+    /* protected */ @JSName("generateChoicesString")
+    def generateChoicesString_choices(
       choices: /* import warning: importer.ImportType#apply Failed type conversion: inquirer.inquirer.prompts.PromptOptions<TQuestion>['choices'] */ js.Any,
       defaultChoice: js.Any
     ): String = js.native
@@ -97,7 +97,7 @@ object expandMod {
     /**
       * Gets the promise of the keypress-eventhandler.
       */
-    var keypressObs: js.Promise[Unit] = js.native
+    /* protected */ var keypressObs: js.Promise[Unit] = js.native
     
     /**
       * Handles the `error`-event of the prompt.
@@ -123,12 +123,12 @@ object expandMod {
     /**
       * Gets or sets an object for paginating the content.
       */
-    var paginator: typings.inquirer.paginatorMod.^ = js.native
+    /* protected */ var paginator: typings.inquirer.paginatorMod.^ = js.native
     
     /**
       * Gets or sets the default key.
       */
-    var rawDefault: String = js.native
+    /* protected */ var rawDefault: String = js.native
     
     /**
       * Renders the prompt to the screen.
@@ -153,8 +153,8 @@ object expandMod {
       * @param pointer
       * The value of the choice to select.
       */
-    @JSName("renderChoices")
-    /* protected */ def renderChoices_choices(
+    /* protected */ @JSName("renderChoices")
+    def renderChoices_choices(
       choices: /* import warning: importer.ImportType#apply Failed type conversion: inquirer.inquirer.prompts.PromptOptions<TQuestion>['choices'] */ js.Any,
       pointer: String
     ): String = js.native
@@ -162,7 +162,7 @@ object expandMod {
     /**
       * Gets or sets the currently selected key.
       */
-    var selectedKey: String = js.native
+    /* protected */ var selectedKey: String = js.native
     
     /**
       * Validates the integrity of the choices.
@@ -170,8 +170,8 @@ object expandMod {
       * @param choices
       * The choices to validate.
       */
-    @JSName("validateChoices")
-    /* protected */ def validateChoices_choices(
+    /* protected */ @JSName("validateChoices")
+    def validateChoices_choices(
       choices: /* import warning: importer.ImportType#apply Failed type conversion: inquirer.inquirer.prompts.PromptOptions<TQuestion>['choices'] */ js.Any
     ): Unit = js.native
   }

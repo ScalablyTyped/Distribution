@@ -13,19 +13,15 @@ trait OperatingSystem extends StObject {
 }
 object OperatingSystem {
   
-  @scala.inline
-  def apply(): OperatingSystem = {
+  inline def apply(): OperatingSystem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OperatingSystem]
   }
   
-  @scala.inline
-  implicit class OperatingSystemMutableBuilder[Self <: OperatingSystem] (val x: Self) extends AnyVal {
+  extension [Self <: OperatingSystem](x: Self) {
     
-    @scala.inline
-    def setType(value: OperatingSystemType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: OperatingSystemType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

@@ -26,14 +26,12 @@ object convertDirectiveMetadataMod {
     var name: String = js.native
   }
   
-  @scala.inline
-  def convertDirectiveMetadataToExpression(
+  inline def convertDirectiveMetadataToExpression(
     metadata: js.Any,
     resolveSymbolImport: js.Function1[/* symbol */ StaticSymbol, String | Null],
     createImport: js.Function2[/* moduleName */ String, /* name */ String, Expression]
   ): Expression = (^.asInstanceOf[js.Dynamic].applyDynamic("convertDirectiveMetadataToExpression")(metadata.asInstanceOf[js.Any], resolveSymbolImport.asInstanceOf[js.Any], createImport.asInstanceOf[js.Any])).asInstanceOf[Expression]
-  @scala.inline
-  def convertDirectiveMetadataToExpression(
+  inline def convertDirectiveMetadataToExpression(
     metadata: js.Any,
     resolveSymbolImport: js.Function1[/* symbol */ StaticSymbol, String | Null],
     createImport: js.Function2[/* moduleName */ String, /* name */ String, Expression],

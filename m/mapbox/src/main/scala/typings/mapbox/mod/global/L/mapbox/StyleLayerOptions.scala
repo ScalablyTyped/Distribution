@@ -12,19 +12,15 @@ trait StyleLayerOptions
 }
 object StyleLayerOptions {
   
-  @scala.inline
-  def apply(): StyleLayerOptions = {
+  inline def apply(): StyleLayerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StyleLayerOptions]
   }
   
-  @scala.inline
-  implicit class StyleLayerOptionsMutableBuilder[Self <: StyleLayerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StyleLayerOptions](x: Self) {
     
-    @scala.inline
-    def setSanitizer(value: /* template */ String => String): Self = StObject.set(x, "sanitizer", js.Any.fromFunction1(value))
+    inline def setSanitizer(value: /* template */ String => String): Self = StObject.set(x, "sanitizer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSanitizerUndefined: Self = StObject.set(x, "sanitizer", js.undefined)
+    inline def setSanitizerUndefined: Self = StObject.set(x, "sanitizer", js.undefined)
   }
 }

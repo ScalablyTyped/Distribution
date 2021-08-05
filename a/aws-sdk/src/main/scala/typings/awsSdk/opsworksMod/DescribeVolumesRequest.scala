@@ -28,40 +28,29 @@ trait DescribeVolumesRequest extends StObject {
 }
 object DescribeVolumesRequest {
   
-  @scala.inline
-  def apply(): DescribeVolumesRequest = {
+  inline def apply(): DescribeVolumesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeVolumesRequest]
   }
   
-  @scala.inline
-  implicit class DescribeVolumesRequestMutableBuilder[Self <: DescribeVolumesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeVolumesRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
-    @scala.inline
-    def setRaidArrayId(value: String): Self = StObject.set(x, "RaidArrayId", value.asInstanceOf[js.Any])
+    inline def setRaidArrayId(value: String): Self = StObject.set(x, "RaidArrayId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRaidArrayIdUndefined: Self = StObject.set(x, "RaidArrayId", js.undefined)
+    inline def setRaidArrayIdUndefined: Self = StObject.set(x, "RaidArrayId", js.undefined)
     
-    @scala.inline
-    def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
+    inline def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
+    inline def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
     
-    @scala.inline
-    def setVolumeIds(value: Strings): Self = StObject.set(x, "VolumeIds", value.asInstanceOf[js.Any])
+    inline def setVolumeIds(value: Strings): Self = StObject.set(x, "VolumeIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeIdsUndefined: Self = StObject.set(x, "VolumeIds", js.undefined)
+    inline def setVolumeIdsUndefined: Self = StObject.set(x, "VolumeIds", js.undefined)
     
-    @scala.inline
-    def setVolumeIdsVarargs(value: String*): Self = StObject.set(x, "VolumeIds", js.Array(value :_*))
+    inline def setVolumeIdsVarargs(value: String*): Self = StObject.set(x, "VolumeIds", js.Array(value :_*))
   }
 }

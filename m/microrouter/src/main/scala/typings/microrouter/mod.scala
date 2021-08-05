@@ -41,11 +41,9 @@ object mod {
   @js.native
   val put: RouteHandler = js.native
   
-  @scala.inline
-  def router(routes: RequestHandler*): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("router")(routes.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
+  inline def router(routes: RequestHandler*): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("router")(routes.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
   
-  @scala.inline
-  def withNamespace(namespace: String): js.Function1[/* repeated */ RequestHandler, RequestHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("withNamespace")(namespace.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ RequestHandler, RequestHandler]]
+  inline def withNamespace(namespace: String): js.Function1[/* repeated */ RequestHandler, RequestHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("withNamespace")(namespace.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ RequestHandler, RequestHandler]]
   
   type AugmentedRequestHandler = js.Function2[/* req */ ServerRequest, /* res */ ServerResponse, js.Any]
   

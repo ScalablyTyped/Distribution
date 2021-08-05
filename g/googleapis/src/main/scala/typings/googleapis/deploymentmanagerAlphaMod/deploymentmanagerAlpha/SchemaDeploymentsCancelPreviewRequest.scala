@@ -21,19 +21,15 @@ trait SchemaDeploymentsCancelPreviewRequest extends StObject {
 }
 object SchemaDeploymentsCancelPreviewRequest {
   
-  @scala.inline
-  def apply(): SchemaDeploymentsCancelPreviewRequest = {
+  inline def apply(): SchemaDeploymentsCancelPreviewRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDeploymentsCancelPreviewRequest]
   }
   
-  @scala.inline
-  implicit class SchemaDeploymentsCancelPreviewRequestMutableBuilder[Self <: SchemaDeploymentsCancelPreviewRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDeploymentsCancelPreviewRequest](x: Self) {
     
-    @scala.inline
-    def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+    inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
+    inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
   }
 }

@@ -18,8 +18,7 @@ trait Query extends StObject {
 }
 object Query {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abort: () => Unit,
     send: js.Function1[/* response */ QueryResponse, Unit] => Unit,
     setQuery: String => Unit,
@@ -30,22 +29,16 @@ object Query {
     __obj.asInstanceOf[Query]
   }
   
-  @scala.inline
-  implicit class QueryMutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
+  extension [Self <: Query](x: Self) {
     
-    @scala.inline
-    def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
+    inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSend(value: js.Function1[/* response */ QueryResponse, Unit] => Unit): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
+    inline def setSend(value: js.Function1[/* response */ QueryResponse, Unit] => Unit): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetQuery(value: String => Unit): Self = StObject.set(x, "setQuery", js.Any.fromFunction1(value))
+    inline def setSetQuery(value: String => Unit): Self = StObject.set(x, "setQuery", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRefreshInterval(value: Double => Unit): Self = StObject.set(x, "setRefreshInterval", js.Any.fromFunction1(value))
+    inline def setSetRefreshInterval(value: Double => Unit): Self = StObject.set(x, "setRefreshInterval", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTimeout(value: Double => Unit): Self = StObject.set(x, "setTimeout", js.Any.fromFunction1(value))
+    inline def setSetTimeout(value: Double => Unit): Self = StObject.set(x, "setTimeout", js.Any.fromFunction1(value))
   }
 }

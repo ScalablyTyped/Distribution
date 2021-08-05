@@ -26,50 +26,36 @@ trait PivotTransform
 }
 object PivotTransform {
   
-  @scala.inline
-  def apply(field: FieldRef, value: FieldRef): PivotTransform = {
+  inline def apply(field: FieldRef, value: FieldRef): PivotTransform = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("pivot")
     __obj.asInstanceOf[PivotTransform]
   }
   
-  @scala.inline
-  implicit class PivotTransformMutableBuilder[Self <: PivotTransform] (val x: Self) extends AnyVal {
+  extension [Self <: PivotTransform](x: Self) {
     
-    @scala.inline
-    def setField(value: FieldRef): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: FieldRef): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupby(value: js.Array[FieldRef] | SignalRef): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
+    inline def setGroupby(value: js.Array[FieldRef] | SignalRef): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
+    inline def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
     
-    @scala.inline
-    def setGroupbyVarargs(value: FieldRef*): Self = StObject.set(x, "groupby", js.Array(value :_*))
+    inline def setGroupbyVarargs(value: FieldRef*): Self = StObject.set(x, "groupby", js.Array(value :_*))
     
-    @scala.inline
-    def setKey(value: String | TransformField): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String | TransformField): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setLimit(value: Double | SignalRef): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double | SignalRef): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setOp(value: String | SignalRef): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+    inline def setOp(value: String | SignalRef): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpUndefined: Self = StObject.set(x, "op", js.undefined)
+    inline def setOpUndefined: Self = StObject.set(x, "op", js.undefined)
     
-    @scala.inline
-    def setType(value: pivot): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: pivot): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: FieldRef): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: FieldRef): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

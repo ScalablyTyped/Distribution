@@ -10,16 +10,13 @@ trait IGeographicRegionStatics extends StObject {
 }
 object IGeographicRegionStatics {
   
-  @scala.inline
-  def apply(isSupported: String => Boolean): IGeographicRegionStatics = {
+  inline def apply(isSupported: String => Boolean): IGeographicRegionStatics = {
     val __obj = js.Dynamic.literal(isSupported = js.Any.fromFunction1(isSupported))
     __obj.asInstanceOf[IGeographicRegionStatics]
   }
   
-  @scala.inline
-  implicit class IGeographicRegionStaticsMutableBuilder[Self <: IGeographicRegionStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IGeographicRegionStatics](x: Self) {
     
-    @scala.inline
-    def setIsSupported(value: String => Boolean): Self = StObject.set(x, "isSupported", js.Any.fromFunction1(value))
+    inline def setIsSupported(value: String => Boolean): Self = StObject.set(x, "isSupported", js.Any.fromFunction1(value))
   }
 }

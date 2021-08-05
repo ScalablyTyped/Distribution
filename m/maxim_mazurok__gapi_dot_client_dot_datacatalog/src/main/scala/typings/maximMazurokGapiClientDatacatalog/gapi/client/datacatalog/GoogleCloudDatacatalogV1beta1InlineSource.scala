@@ -11,22 +11,17 @@ trait GoogleCloudDatacatalogV1beta1InlineSource extends StObject {
 }
 object GoogleCloudDatacatalogV1beta1InlineSource {
   
-  @scala.inline
-  def apply(): GoogleCloudDatacatalogV1beta1InlineSource = {
+  inline def apply(): GoogleCloudDatacatalogV1beta1InlineSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatacatalogV1beta1InlineSource]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatacatalogV1beta1InlineSourceMutableBuilder[Self <: GoogleCloudDatacatalogV1beta1InlineSource] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatacatalogV1beta1InlineSource](x: Self) {
     
-    @scala.inline
-    def setTaxonomies(value: js.Array[GoogleCloudDatacatalogV1beta1SerializedTaxonomy]): Self = StObject.set(x, "taxonomies", value.asInstanceOf[js.Any])
+    inline def setTaxonomies(value: js.Array[GoogleCloudDatacatalogV1beta1SerializedTaxonomy]): Self = StObject.set(x, "taxonomies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaxonomiesUndefined: Self = StObject.set(x, "taxonomies", js.undefined)
+    inline def setTaxonomiesUndefined: Self = StObject.set(x, "taxonomies", js.undefined)
     
-    @scala.inline
-    def setTaxonomiesVarargs(value: GoogleCloudDatacatalogV1beta1SerializedTaxonomy*): Self = StObject.set(x, "taxonomies", js.Array(value :_*))
+    inline def setTaxonomiesVarargs(value: GoogleCloudDatacatalogV1beta1SerializedTaxonomy*): Self = StObject.set(x, "taxonomies", js.Array(value :_*))
   }
 }

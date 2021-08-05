@@ -65,61 +65,43 @@ trait ParamsResourceClaimsSearch
 }
 object ParamsResourceClaimsSearch {
   
-  @scala.inline
-  def apply(): ParamsResourceClaimsSearch = {
+  inline def apply(): ParamsResourceClaimsSearch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceClaimsSearch]
   }
   
-  @scala.inline
-  implicit class ParamsResourceClaimsSearchMutableBuilder[Self <: ParamsResourceClaimsSearch] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceClaimsSearch](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
-    @scala.inline
-    def setMaxAgeDays(value: Double): Self = StObject.set(x, "maxAgeDays", value.asInstanceOf[js.Any])
+    inline def setMaxAgeDays(value: Double): Self = StObject.set(x, "maxAgeDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxAgeDaysUndefined: Self = StObject.set(x, "maxAgeDays", js.undefined)
+    inline def setMaxAgeDaysUndefined: Self = StObject.set(x, "maxAgeDays", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setReviewPublisherSiteFilter(value: String): Self = StObject.set(x, "reviewPublisherSiteFilter", value.asInstanceOf[js.Any])
+    inline def setReviewPublisherSiteFilter(value: String): Self = StObject.set(x, "reviewPublisherSiteFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReviewPublisherSiteFilterUndefined: Self = StObject.set(x, "reviewPublisherSiteFilter", js.undefined)
+    inline def setReviewPublisherSiteFilterUndefined: Self = StObject.set(x, "reviewPublisherSiteFilter", js.undefined)
   }
 }

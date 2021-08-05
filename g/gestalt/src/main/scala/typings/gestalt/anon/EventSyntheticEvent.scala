@@ -13,19 +13,16 @@ trait EventSyntheticEvent extends StObject {
 }
 object EventSyntheticEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     event: typings.react.mod.SyntheticEvent[MouseEvent[HTMLDivElement, NativeMouseEvent], typings.std.Event]
   ): EventSyntheticEvent = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventSyntheticEvent]
   }
   
-  @scala.inline
-  implicit class EventSyntheticEventMutableBuilder[Self <: EventSyntheticEvent] (val x: Self) extends AnyVal {
+  extension [Self <: EventSyntheticEvent](x: Self) {
     
-    @scala.inline
-    def setEvent(
+    inline def setEvent(
       value: typings.react.mod.SyntheticEvent[MouseEvent[HTMLDivElement, NativeMouseEvent], typings.std.Event]
     ): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
   }

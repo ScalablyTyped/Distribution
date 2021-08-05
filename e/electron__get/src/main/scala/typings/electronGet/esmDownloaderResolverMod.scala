@@ -11,6 +11,5 @@ object esmDownloaderResolverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getDownloaderForSystem(): js.Promise[Downloader[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDownloaderForSystem")().asInstanceOf[js.Promise[Downloader[js.Any]]]
+  inline def getDownloaderForSystem(): js.Promise[Downloader[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDownloaderForSystem")().asInstanceOf[js.Promise[Downloader[js.Any]]]
 }

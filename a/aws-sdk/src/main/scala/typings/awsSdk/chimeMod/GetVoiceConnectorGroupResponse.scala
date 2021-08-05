@@ -13,19 +13,15 @@ trait GetVoiceConnectorGroupResponse extends StObject {
 }
 object GetVoiceConnectorGroupResponse {
   
-  @scala.inline
-  def apply(): GetVoiceConnectorGroupResponse = {
+  inline def apply(): GetVoiceConnectorGroupResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetVoiceConnectorGroupResponse]
   }
   
-  @scala.inline
-  implicit class GetVoiceConnectorGroupResponseMutableBuilder[Self <: GetVoiceConnectorGroupResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetVoiceConnectorGroupResponse](x: Self) {
     
-    @scala.inline
-    def setVoiceConnectorGroup(value: VoiceConnectorGroup): Self = StObject.set(x, "VoiceConnectorGroup", value.asInstanceOf[js.Any])
+    inline def setVoiceConnectorGroup(value: VoiceConnectorGroup): Self = StObject.set(x, "VoiceConnectorGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoiceConnectorGroupUndefined: Self = StObject.set(x, "VoiceConnectorGroup", js.undefined)
+    inline def setVoiceConnectorGroupUndefined: Self = StObject.set(x, "VoiceConnectorGroup", js.undefined)
   }
 }

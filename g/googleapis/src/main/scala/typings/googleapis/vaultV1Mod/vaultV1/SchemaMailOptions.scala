@@ -16,19 +16,15 @@ trait SchemaMailOptions extends StObject {
 }
 object SchemaMailOptions {
   
-  @scala.inline
-  def apply(): SchemaMailOptions = {
+  inline def apply(): SchemaMailOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMailOptions]
   }
   
-  @scala.inline
-  implicit class SchemaMailOptionsMutableBuilder[Self <: SchemaMailOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMailOptions](x: Self) {
     
-    @scala.inline
-    def setExcludeDrafts(value: Boolean): Self = StObject.set(x, "excludeDrafts", value.asInstanceOf[js.Any])
+    inline def setExcludeDrafts(value: Boolean): Self = StObject.set(x, "excludeDrafts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeDraftsUndefined: Self = StObject.set(x, "excludeDrafts", js.undefined)
+    inline def setExcludeDraftsUndefined: Self = StObject.set(x, "excludeDrafts", js.undefined)
   }
 }

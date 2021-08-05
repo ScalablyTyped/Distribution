@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MountType extends StObject
 object MountType {
   
-  @scala.inline
-  def bind: typings.dockerode.dockerodeStrings.bind = "bind".asInstanceOf[typings.dockerode.dockerodeStrings.bind]
+  inline def bind: typings.dockerode.dockerodeStrings.bind = "bind".asInstanceOf[typings.dockerode.dockerodeStrings.bind]
   
-  @scala.inline
-  def tmpfs: typings.dockerode.dockerodeStrings.tmpfs = "tmpfs".asInstanceOf[typings.dockerode.dockerodeStrings.tmpfs]
+  inline def tmpfs: typings.dockerode.dockerodeStrings.tmpfs = "tmpfs".asInstanceOf[typings.dockerode.dockerodeStrings.tmpfs]
   
-  @scala.inline
-  def volume: typings.dockerode.dockerodeStrings.volume = "volume".asInstanceOf[typings.dockerode.dockerodeStrings.volume]
+  inline def volume: typings.dockerode.dockerodeStrings.volume = "volume".asInstanceOf[typings.dockerode.dockerodeStrings.volume]
 }

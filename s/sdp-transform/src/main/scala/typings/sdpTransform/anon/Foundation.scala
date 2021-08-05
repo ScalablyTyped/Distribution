@@ -34,8 +34,7 @@ trait Foundation extends StObject {
 }
 object Foundation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     component: Double,
     foundation: String,
     ip: String,
@@ -49,64 +48,44 @@ object Foundation {
     __obj.asInstanceOf[Foundation]
   }
   
-  @scala.inline
-  implicit class FoundationMutableBuilder[Self <: Foundation] (val x: Self) extends AnyVal {
+  extension [Self <: Foundation](x: Self) {
     
-    @scala.inline
-    def setComponent(value: Double): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: Double): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFoundation(value: String): Self = StObject.set(x, "foundation", value.asInstanceOf[js.Any])
+    inline def setFoundation(value: String): Self = StObject.set(x, "foundation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeneration(value: Double): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
+    inline def setGeneration(value: Double): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
+    inline def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
     
-    @scala.inline
-    def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+    inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setNetwork-cost`(value: Double): Self = StObject.set(x, "network-cost", value.asInstanceOf[js.Any])
+    inline def `setNetwork-cost`(value: Double): Self = StObject.set(x, "network-cost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setNetwork-costUndefined`: Self = StObject.set(x, "network-cost", js.undefined)
+    inline def `setNetwork-costUndefined`: Self = StObject.set(x, "network-cost", js.undefined)
     
-    @scala.inline
-    def `setNetwork-id`(value: Double): Self = StObject.set(x, "network-id", value.asInstanceOf[js.Any])
+    inline def `setNetwork-id`(value: Double): Self = StObject.set(x, "network-id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setNetwork-idUndefined`: Self = StObject.set(x, "network-id", js.undefined)
+    inline def `setNetwork-idUndefined`: Self = StObject.set(x, "network-id", js.undefined)
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriority(value: Double | String): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Double | String): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRaddr(value: String): Self = StObject.set(x, "raddr", value.asInstanceOf[js.Any])
+    inline def setRaddr(value: String): Self = StObject.set(x, "raddr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRaddrUndefined: Self = StObject.set(x, "raddr", js.undefined)
+    inline def setRaddrUndefined: Self = StObject.set(x, "raddr", js.undefined)
     
-    @scala.inline
-    def setRport(value: Double): Self = StObject.set(x, "rport", value.asInstanceOf[js.Any])
+    inline def setRport(value: Double): Self = StObject.set(x, "rport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRportUndefined: Self = StObject.set(x, "rport", js.undefined)
+    inline def setRportUndefined: Self = StObject.set(x, "rport", js.undefined)
     
-    @scala.inline
-    def setTcptype(value: String): Self = StObject.set(x, "tcptype", value.asInstanceOf[js.Any])
+    inline def setTcptype(value: String): Self = StObject.set(x, "tcptype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTcptypeUndefined: Self = StObject.set(x, "tcptype", js.undefined)
+    inline def setTcptypeUndefined: Self = StObject.set(x, "tcptype", js.undefined)
     
-    @scala.inline
-    def setTransport(value: String): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
+    inline def setTransport(value: String): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -18,15 +18,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     Child: Component[
       /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for P */ js.Any, 
       /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for S */ js.Any
     ]
   ): VNode[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(Child.asInstanceOf[js.Any]).asInstanceOf[VNode[js.Object]]
-  @scala.inline
-  def default(
+  inline def default(
     Child: Component[
       /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for P */ js.Any, 
       /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for S */ js.Any
@@ -86,8 +84,7 @@ object mod {
     def this(props: Fields, context: js.Any) = this()
   }
   
-  @scala.inline
-  def withText[Props, Context](mapping: js.Object): js.Function1[
+  inline def withText[Props, Context](mapping: js.Object): js.Function1[
     /* Child */ ComponentChild, 
     Instantiable2[/* props */ js.UndefOr[Props], /* context */ js.UndefOr[Context], js.Any]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withText")(mapping.asInstanceOf[js.Any]).asInstanceOf[js.Function1[

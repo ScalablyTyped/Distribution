@@ -16,28 +16,21 @@ trait Filter[T /* <: HasRoomPosition | RoomPosition */] extends StObject {
 }
 object Filter {
   
-  @scala.inline
-  def apply[T /* <: HasRoomPosition | RoomPosition */](): Filter[T] = {
+  inline def apply[T /* <: HasRoomPosition | RoomPosition */](): Filter[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Filter[T]]
   }
   
-  @scala.inline
-  implicit class FilterMutableBuilder[Self <: Filter[?], T /* <: HasRoomPosition | RoomPosition */] (val x: Self & Filter[T]) extends AnyVal {
+  extension [Self <: Filter[?], T /* <: HasRoomPosition | RoomPosition */](x: Self & Filter[T]) {
     
-    @scala.inline
-    def setAlgorithm(value: FindClosestByPathAlgorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+    inline def setAlgorithm(value: FindClosestByPathAlgorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
+    inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
     
-    @scala.inline
-    def setFilter(value: (js.Function1[/* object */ T, Boolean]) | FilterObject | String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: (js.Function1[/* object */ T, Boolean]) | FilterObject | String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterFunction1(value: /* object */ T => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+    inline def setFilterFunction1(value: /* object */ T => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
   }
 }

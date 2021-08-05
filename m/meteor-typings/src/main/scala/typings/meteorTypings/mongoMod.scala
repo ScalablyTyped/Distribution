@@ -115,8 +115,7 @@ object mongoMod {
       def this(name: Null, options: Connection) = this()
     }
     
-    @scala.inline
-    def Collection_=(x: CollectionStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Collection")(x.asInstanceOf[js.Any])
+    inline def Collection_=(x: CollectionStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Collection")(x.asInstanceOf[js.Any])
     
     @js.native
     trait Cursor[T] extends StObject {
@@ -153,8 +152,7 @@ object mongoMod {
       extends StObject
          with Cursor[T]
     
-    @scala.inline
-    def Cursor_=(x: CursorStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Cursor")(x.asInstanceOf[js.Any])
+    inline def Cursor_=(x: CursorStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Cursor")(x.asInstanceOf[js.Any])
     
     trait ObjectID extends StObject
     @JSImport("meteor/mongo", "Mongo.ObjectID")
@@ -170,8 +168,7 @@ object mongoMod {
       def this(hexString: String) = this()
     }
     
-    @scala.inline
-    def ObjectID_=(x: ObjectIDStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ObjectID")(x.asInstanceOf[js.Any])
+    inline def ObjectID_=(x: ObjectIDStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ObjectID")(x.asInstanceOf[js.Any])
     
     trait AllowDenyOptions extends StObject {
       
@@ -195,49 +192,36 @@ object mongoMod {
     }
     object AllowDenyOptions {
       
-      @scala.inline
-      def apply(): AllowDenyOptions = {
+      inline def apply(): AllowDenyOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[AllowDenyOptions]
       }
       
-      @scala.inline
-      implicit class AllowDenyOptionsMutableBuilder[Self <: AllowDenyOptions] (val x: Self) extends AnyVal {
+      extension [Self <: AllowDenyOptions](x: Self) {
         
-        @scala.inline
-        def setFetch(value: js.Array[String]): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
+        inline def setFetch(value: js.Array[String]): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFetchUndefined: Self = StObject.set(x, "fetch", js.undefined)
+        inline def setFetchUndefined: Self = StObject.set(x, "fetch", js.undefined)
         
-        @scala.inline
-        def setFetchVarargs(value: String*): Self = StObject.set(x, "fetch", js.Array(value :_*))
+        inline def setFetchVarargs(value: String*): Self = StObject.set(x, "fetch", js.Array(value :_*))
         
-        @scala.inline
-        def setInsert(value: (/* userId */ String, /* doc */ js.Any) => Boolean): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
+        inline def setInsert(value: (/* userId */ String, /* doc */ js.Any) => Boolean): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
+        inline def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
         
-        @scala.inline
-        def setRemove(value: (/* userId */ String, /* doc */ js.Any) => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
+        inline def setRemove(value: (/* userId */ String, /* doc */ js.Any) => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+        inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
         
-        @scala.inline
-        def setTransform(value: js.Function): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+        inline def setTransform(value: js.Function): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+        inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
         
-        @scala.inline
-        def setUpdate(
+        inline def setUpdate(
           value: (/* userId */ String, /* doc */ js.Any, /* fieldNames */ js.Array[String], /* modifier */ js.Any) => Boolean
         ): Self = StObject.set(x, "update", js.Any.fromFunction4(value))
         
-        @scala.inline
-        def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+        inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
       }
     }
     
@@ -297,58 +281,42 @@ object mongoMod {
     }
     object ObserveCallbacks {
       
-      @scala.inline
-      def apply(): ObserveCallbacks = {
+      inline def apply(): ObserveCallbacks = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ObserveCallbacks]
       }
       
-      @scala.inline
-      implicit class ObserveCallbacksMutableBuilder[Self <: ObserveCallbacks] (val x: Self) extends AnyVal {
+      extension [Self <: ObserveCallbacks](x: Self) {
         
-        @scala.inline
-        def setAdded(value: /* document */ js.Object => Unit): Self = StObject.set(x, "added", js.Any.fromFunction1(value))
+        inline def setAdded(value: /* document */ js.Object => Unit): Self = StObject.set(x, "added", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setAddedAt(value: (/* document */ js.Object, /* atIndex */ Double, /* before */ js.Object) => Unit): Self = StObject.set(x, "addedAt", js.Any.fromFunction3(value))
+        inline def setAddedAt(value: (/* document */ js.Object, /* atIndex */ Double, /* before */ js.Object) => Unit): Self = StObject.set(x, "addedAt", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setAddedAtUndefined: Self = StObject.set(x, "addedAt", js.undefined)
+        inline def setAddedAtUndefined: Self = StObject.set(x, "addedAt", js.undefined)
         
-        @scala.inline
-        def setAddedUndefined: Self = StObject.set(x, "added", js.undefined)
+        inline def setAddedUndefined: Self = StObject.set(x, "added", js.undefined)
         
-        @scala.inline
-        def setChanged(value: (/* newDocument */ js.Object, /* oldDocument */ js.Object) => Unit): Self = StObject.set(x, "changed", js.Any.fromFunction2(value))
+        inline def setChanged(value: (/* newDocument */ js.Object, /* oldDocument */ js.Object) => Unit): Self = StObject.set(x, "changed", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setChangedAt(value: (/* newDocument */ js.Object, /* oldDocument */ js.Object, /* indexAt */ Double) => Unit): Self = StObject.set(x, "changedAt", js.Any.fromFunction3(value))
+        inline def setChangedAt(value: (/* newDocument */ js.Object, /* oldDocument */ js.Object, /* indexAt */ Double) => Unit): Self = StObject.set(x, "changedAt", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setChangedAtUndefined: Self = StObject.set(x, "changedAt", js.undefined)
+        inline def setChangedAtUndefined: Self = StObject.set(x, "changedAt", js.undefined)
         
-        @scala.inline
-        def setChangedUndefined: Self = StObject.set(x, "changed", js.undefined)
+        inline def setChangedUndefined: Self = StObject.set(x, "changed", js.undefined)
         
-        @scala.inline
-        def setMovedTo(
+        inline def setMovedTo(
           value: (/* document */ js.Object, /* fromIndex */ Double, /* toIndex */ Double, /* before */ js.Object) => Unit
         ): Self = StObject.set(x, "movedTo", js.Any.fromFunction4(value))
         
-        @scala.inline
-        def setMovedToUndefined: Self = StObject.set(x, "movedTo", js.undefined)
+        inline def setMovedToUndefined: Self = StObject.set(x, "movedTo", js.undefined)
         
-        @scala.inline
-        def setRemoved(value: /* oldDocument */ js.Object => Unit): Self = StObject.set(x, "removed", js.Any.fromFunction1(value))
+        inline def setRemoved(value: /* oldDocument */ js.Object => Unit): Self = StObject.set(x, "removed", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setRemovedAt(value: (/* oldDocument */ js.Object, /* atIndex */ Double) => Unit): Self = StObject.set(x, "removedAt", js.Any.fromFunction2(value))
+        inline def setRemovedAt(value: (/* oldDocument */ js.Object, /* atIndex */ Double) => Unit): Self = StObject.set(x, "removedAt", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setRemovedAtUndefined: Self = StObject.set(x, "removedAt", js.undefined)
+        inline def setRemovedAtUndefined: Self = StObject.set(x, "removedAt", js.undefined)
         
-        @scala.inline
-        def setRemovedUndefined: Self = StObject.set(x, "removed", js.undefined)
+        inline def setRemovedUndefined: Self = StObject.set(x, "removed", js.undefined)
       }
     }
     
@@ -368,44 +336,32 @@ object mongoMod {
     }
     object ObserveChangesCallbacks {
       
-      @scala.inline
-      def apply(): ObserveChangesCallbacks = {
+      inline def apply(): ObserveChangesCallbacks = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ObserveChangesCallbacks]
       }
       
-      @scala.inline
-      implicit class ObserveChangesCallbacksMutableBuilder[Self <: ObserveChangesCallbacks] (val x: Self) extends AnyVal {
+      extension [Self <: ObserveChangesCallbacks](x: Self) {
         
-        @scala.inline
-        def setAdded(value: (/* id */ String, /* fields */ js.Object) => Unit): Self = StObject.set(x, "added", js.Any.fromFunction2(value))
+        inline def setAdded(value: (/* id */ String, /* fields */ js.Object) => Unit): Self = StObject.set(x, "added", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setAddedBefore(value: (/* id */ String, /* fields */ js.Object, /* before */ js.Object) => Unit): Self = StObject.set(x, "addedBefore", js.Any.fromFunction3(value))
+        inline def setAddedBefore(value: (/* id */ String, /* fields */ js.Object, /* before */ js.Object) => Unit): Self = StObject.set(x, "addedBefore", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setAddedBeforeUndefined: Self = StObject.set(x, "addedBefore", js.undefined)
+        inline def setAddedBeforeUndefined: Self = StObject.set(x, "addedBefore", js.undefined)
         
-        @scala.inline
-        def setAddedUndefined: Self = StObject.set(x, "added", js.undefined)
+        inline def setAddedUndefined: Self = StObject.set(x, "added", js.undefined)
         
-        @scala.inline
-        def setChanged(value: (/* id */ String, /* fields */ js.Object) => Unit): Self = StObject.set(x, "changed", js.Any.fromFunction2(value))
+        inline def setChanged(value: (/* id */ String, /* fields */ js.Object) => Unit): Self = StObject.set(x, "changed", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setChangedUndefined: Self = StObject.set(x, "changed", js.undefined)
+        inline def setChangedUndefined: Self = StObject.set(x, "changed", js.undefined)
         
-        @scala.inline
-        def setMovedBefore(value: (/* id */ String, /* before */ js.Object) => Unit): Self = StObject.set(x, "movedBefore", js.Any.fromFunction2(value))
+        inline def setMovedBefore(value: (/* id */ String, /* before */ js.Object) => Unit): Self = StObject.set(x, "movedBefore", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setMovedBeforeUndefined: Self = StObject.set(x, "movedBefore", js.undefined)
+        inline def setMovedBeforeUndefined: Self = StObject.set(x, "movedBefore", js.undefined)
         
-        @scala.inline
-        def setRemoved(value: /* id */ String => Unit): Self = StObject.set(x, "removed", js.Any.fromFunction1(value))
+        inline def setRemoved(value: /* id */ String => Unit): Self = StObject.set(x, "removed", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setRemovedUndefined: Self = StObject.set(x, "removed", js.undefined)
+        inline def setRemovedUndefined: Self = StObject.set(x, "removed", js.undefined)
       }
     }
     
@@ -415,8 +371,7 @@ object mongoMod {
          with /* key */ StringDictionary[js.Any]
     object Selector {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         constructor: js.Function,
         hasOwnProperty: PropertyKey => Boolean,
         propertyIsEnumerable: PropertyKey => Boolean

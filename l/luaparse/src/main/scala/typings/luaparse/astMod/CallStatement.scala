@@ -13,17 +13,14 @@ trait CallStatement
 }
 object CallStatement {
   
-  @scala.inline
-  def apply(expression: CallExpression | StringCallExpression | TableCallExpression): CallStatement = {
+  inline def apply(expression: CallExpression | StringCallExpression | TableCallExpression): CallStatement = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("CallStatement")
     __obj.asInstanceOf[CallStatement]
   }
   
-  @scala.inline
-  implicit class CallStatementMutableBuilder[Self <: CallStatement] (val x: Self) extends AnyVal {
+  extension [Self <: CallStatement](x: Self) {
     
-    @scala.inline
-    def setExpression(value: CallExpression | StringCallExpression | TableCallExpression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: CallExpression | StringCallExpression | TableCallExpression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
   }
 }

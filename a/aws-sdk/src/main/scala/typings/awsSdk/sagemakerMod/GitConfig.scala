@@ -23,28 +23,21 @@ trait GitConfig extends StObject {
 }
 object GitConfig {
   
-  @scala.inline
-  def apply(RepositoryUrl: GitConfigUrl): GitConfig = {
+  inline def apply(RepositoryUrl: GitConfigUrl): GitConfig = {
     val __obj = js.Dynamic.literal(RepositoryUrl = RepositoryUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitConfig]
   }
   
-  @scala.inline
-  implicit class GitConfigMutableBuilder[Self <: GitConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GitConfig](x: Self) {
     
-    @scala.inline
-    def setBranch(value: Branch): Self = StObject.set(x, "Branch", value.asInstanceOf[js.Any])
+    inline def setBranch(value: Branch): Self = StObject.set(x, "Branch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranchUndefined: Self = StObject.set(x, "Branch", js.undefined)
+    inline def setBranchUndefined: Self = StObject.set(x, "Branch", js.undefined)
     
-    @scala.inline
-    def setRepositoryUrl(value: GitConfigUrl): Self = StObject.set(x, "RepositoryUrl", value.asInstanceOf[js.Any])
+    inline def setRepositoryUrl(value: GitConfigUrl): Self = StObject.set(x, "RepositoryUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretArn(value: SecretArn): Self = StObject.set(x, "SecretArn", value.asInstanceOf[js.Any])
+    inline def setSecretArn(value: SecretArn): Self = StObject.set(x, "SecretArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretArnUndefined: Self = StObject.set(x, "SecretArn", js.undefined)
+    inline def setSecretArnUndefined: Self = StObject.set(x, "SecretArn", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait EnumValuesPending extends StObject {
 }
 object EnumValuesPending {
   
-  @scala.inline
-  def apply(enumValues: Pending): EnumValuesPending = {
+  inline def apply(enumValues: Pending): EnumValuesPending = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesPending]
   }
   
-  @scala.inline
-  implicit class EnumValuesPendingMutableBuilder[Self <: EnumValuesPending] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesPending](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: Pending): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: Pending): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

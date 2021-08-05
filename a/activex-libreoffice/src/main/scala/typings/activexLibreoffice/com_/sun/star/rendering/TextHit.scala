@@ -32,19 +32,15 @@ trait TextHit extends StObject {
 }
 object TextHit {
   
-  @scala.inline
-  def apply(EntryIndex: Double, IsLeadingEdge: Boolean): TextHit = {
+  inline def apply(EntryIndex: Double, IsLeadingEdge: Boolean): TextHit = {
     val __obj = js.Dynamic.literal(EntryIndex = EntryIndex.asInstanceOf[js.Any], IsLeadingEdge = IsLeadingEdge.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextHit]
   }
   
-  @scala.inline
-  implicit class TextHitMutableBuilder[Self <: TextHit] (val x: Self) extends AnyVal {
+  extension [Self <: TextHit](x: Self) {
     
-    @scala.inline
-    def setEntryIndex(value: Double): Self = StObject.set(x, "EntryIndex", value.asInstanceOf[js.Any])
+    inline def setEntryIndex(value: Double): Self = StObject.set(x, "EntryIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLeadingEdge(value: Boolean): Self = StObject.set(x, "IsLeadingEdge", value.asInstanceOf[js.Any])
+    inline def setIsLeadingEdge(value: Boolean): Self = StObject.set(x, "IsLeadingEdge", value.asInstanceOf[js.Any])
   }
 }

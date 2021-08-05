@@ -29,55 +29,39 @@ trait UpgradeHistoryEntry extends StObject {
 }
 object UpgradeHistoryEntry {
   
-  @scala.inline
-  def apply(): UpgradeHistoryEntry = {
+  inline def apply(): UpgradeHistoryEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpgradeHistoryEntry]
   }
   
-  @scala.inline
-  implicit class UpgradeHistoryEntryMutableBuilder[Self <: UpgradeHistoryEntry] (val x: Self) extends AnyVal {
+  extension [Self <: UpgradeHistoryEntry](x: Self) {
     
-    @scala.inline
-    def setContainerImage(value: String): Self = StObject.set(x, "containerImage", value.asInstanceOf[js.Any])
+    inline def setContainerImage(value: String): Self = StObject.set(x, "containerImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerImageUndefined: Self = StObject.set(x, "containerImage", js.undefined)
+    inline def setContainerImageUndefined: Self = StObject.set(x, "containerImage", js.undefined)
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setFramework(value: String): Self = StObject.set(x, "framework", value.asInstanceOf[js.Any])
+    inline def setFramework(value: String): Self = StObject.set(x, "framework", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameworkUndefined: Self = StObject.set(x, "framework", js.undefined)
+    inline def setFrameworkUndefined: Self = StObject.set(x, "framework", js.undefined)
     
-    @scala.inline
-    def setSnapshot(value: String): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
+    inline def setSnapshot(value: String): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotUndefined: Self = StObject.set(x, "snapshot", js.undefined)
+    inline def setSnapshotUndefined: Self = StObject.set(x, "snapshot", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
-    @scala.inline
-    def setVmImage(value: String): Self = StObject.set(x, "vmImage", value.asInstanceOf[js.Any])
+    inline def setVmImage(value: String): Self = StObject.set(x, "vmImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmImageUndefined: Self = StObject.set(x, "vmImage", js.undefined)
+    inline def setVmImageUndefined: Self = StObject.set(x, "vmImage", js.undefined)
   }
 }

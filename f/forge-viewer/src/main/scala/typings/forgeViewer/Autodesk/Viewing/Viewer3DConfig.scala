@@ -17,25 +17,19 @@ trait Viewer3DConfig
 }
 object Viewer3DConfig {
   
-  @scala.inline
-  def apply(): Viewer3DConfig = {
+  inline def apply(): Viewer3DConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Viewer3DConfig]
   }
   
-  @scala.inline
-  implicit class Viewer3DConfigMutableBuilder[Self <: Viewer3DConfig] (val x: Self) extends AnyVal {
+  extension [Self <: Viewer3DConfig](x: Self) {
     
-    @scala.inline
-    def setStartOnInitialize(value: Boolean): Self = StObject.set(x, "startOnInitialize", value.asInstanceOf[js.Any])
+    inline def setStartOnInitialize(value: Boolean): Self = StObject.set(x, "startOnInitialize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartOnInitializeUndefined: Self = StObject.set(x, "startOnInitialize", js.undefined)
+    inline def setStartOnInitializeUndefined: Self = StObject.set(x, "startOnInitialize", js.undefined)
     
-    @scala.inline
-    def setTheme(value: `dark-theme` | `light-theme` | String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: `dark-theme` | `light-theme` | String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

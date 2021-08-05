@@ -24,28 +24,21 @@ trait HeatmapSliderProperties
 }
 object HeatmapSliderProperties {
   
-  @scala.inline
-  def apply(): HeatmapSliderProperties = {
+  inline def apply(): HeatmapSliderProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HeatmapSliderProperties]
   }
   
-  @scala.inline
-  implicit class HeatmapSliderPropertiesMutableBuilder[Self <: HeatmapSliderProperties] (val x: Self) extends AnyVal {
+  extension [Self <: HeatmapSliderProperties](x: Self) {
     
-    @scala.inline
-    def setStops(value: js.Array[HeatmapColorStopProperties]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
+    inline def setStops(value: js.Array[HeatmapColorStopProperties]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
+    inline def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
     
-    @scala.inline
-    def setStopsVarargs(value: HeatmapColorStopProperties*): Self = StObject.set(x, "stops", js.Array(value :_*))
+    inline def setStopsVarargs(value: HeatmapColorStopProperties*): Self = StObject.set(x, "stops", js.Array(value :_*))
     
-    @scala.inline
-    def setViewModel(value: HeatmapSliderViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
+    inline def setViewModel(value: HeatmapSliderViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
+    inline def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
   }
 }

@@ -23,8 +23,7 @@ trait TooltipService extends StObject {
 }
 object TooltipService {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     engine: IPlaybackEngine,
     eventEmitter: IEventEmitter,
     textMap: ITextMap,
@@ -35,22 +34,16 @@ object TooltipService {
     __obj.asInstanceOf[TooltipService]
   }
   
-  @scala.inline
-  implicit class TooltipServiceMutableBuilder[Self <: TooltipService] (val x: Self) extends AnyVal {
+  extension [Self <: TooltipService](x: Self) {
     
-    @scala.inline
-    def setEngine(value: IPlaybackEngine): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
+    inline def setEngine(value: IPlaybackEngine): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
+    inline def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextMap(value: ITextMap): Self = StObject.set(x, "textMap", value.asInstanceOf[js.Any])
+    inline def setTextMap(value: ITextMap): Self = StObject.set(x, "textMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTheme(value: IThemeService): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: IThemeService): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipService(value: ITooltipService): Self = StObject.set(x, "tooltipService", value.asInstanceOf[js.Any])
+    inline def setTooltipService(value: ITooltipService): Self = StObject.set(x, "tooltipService", value.asInstanceOf[js.Any])
   }
 }

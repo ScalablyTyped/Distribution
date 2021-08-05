@@ -16,7 +16,7 @@ object pinpointClientMod {
   class PinpointClient protected () extends StObject {
     def this(configuration: PinpointConfiguration) = this()
     
-    val config: PinpointResolvedConfiguration = js.native
+    /* protected */ val config: PinpointResolvedConfiguration = js.native
     
     def destroy(): Unit = js.native
     

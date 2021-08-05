@@ -14,25 +14,19 @@ trait IngestMessageResponse extends StObject {
 }
 object IngestMessageResponse {
   
-  @scala.inline
-  def apply(): IngestMessageResponse = {
+  inline def apply(): IngestMessageResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IngestMessageResponse]
   }
   
-  @scala.inline
-  implicit class IngestMessageResponseMutableBuilder[Self <: IngestMessageResponse] (val x: Self) extends AnyVal {
+  extension [Self <: IngestMessageResponse](x: Self) {
     
-    @scala.inline
-    def setHl7Ack(value: String): Self = StObject.set(x, "hl7Ack", value.asInstanceOf[js.Any])
+    inline def setHl7Ack(value: String): Self = StObject.set(x, "hl7Ack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHl7AckUndefined: Self = StObject.set(x, "hl7Ack", js.undefined)
+    inline def setHl7AckUndefined: Self = StObject.set(x, "hl7Ack", js.undefined)
     
-    @scala.inline
-    def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
   }
 }

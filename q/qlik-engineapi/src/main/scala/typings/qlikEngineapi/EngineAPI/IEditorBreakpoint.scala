@@ -26,22 +26,17 @@ trait IEditorBreakpoint extends StObject {
 }
 object IEditorBreakpoint {
   
-  @scala.inline
-  def apply(qEnabled: Boolean, qbufferName: String, qlineIx: Double): IEditorBreakpoint = {
+  inline def apply(qEnabled: Boolean, qbufferName: String, qlineIx: Double): IEditorBreakpoint = {
     val __obj = js.Dynamic.literal(qEnabled = qEnabled.asInstanceOf[js.Any], qbufferName = qbufferName.asInstanceOf[js.Any], qlineIx = qlineIx.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEditorBreakpoint]
   }
   
-  @scala.inline
-  implicit class IEditorBreakpointMutableBuilder[Self <: IEditorBreakpoint] (val x: Self) extends AnyVal {
+  extension [Self <: IEditorBreakpoint](x: Self) {
     
-    @scala.inline
-    def setQEnabled(value: Boolean): Self = StObject.set(x, "qEnabled", value.asInstanceOf[js.Any])
+    inline def setQEnabled(value: Boolean): Self = StObject.set(x, "qEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQbufferName(value: String): Self = StObject.set(x, "qbufferName", value.asInstanceOf[js.Any])
+    inline def setQbufferName(value: String): Self = StObject.set(x, "qbufferName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQlineIx(value: Double): Self = StObject.set(x, "qlineIx", value.asInstanceOf[js.Any])
+    inline def setQlineIx(value: Double): Self = StObject.set(x, "qlineIx", value.asInstanceOf[js.Any])
   }
 }

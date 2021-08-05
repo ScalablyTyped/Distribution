@@ -17,7 +17,7 @@ class IonContent protected ()
      with typings.ionicCore.componentsMod.Components.IonContent {
   def this(c: ChangeDetectorRef, r: ElementRef[js.Any], z: NgZone) = this()
   
-  var el: HTMLElement = js.native
+  /* protected */ var el: HTMLElement = js.native
   
   var ionScroll: EventEmitter[CustomEvent[js.Any]] = js.native
   
@@ -25,5 +25,5 @@ class IonContent protected ()
   
   var ionScrollStart: EventEmitter[CustomEvent[js.Any]] = js.native
   
-  var z: NgZone = js.native
+  /* protected */ var z: NgZone = js.native
 }

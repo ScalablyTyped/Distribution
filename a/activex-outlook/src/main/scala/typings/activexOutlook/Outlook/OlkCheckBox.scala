@@ -29,7 +29,7 @@ trait OlkCheckBox extends StObject {
   
   var MousePointer: OlMousePointer
   
-  @JSName("Outlook.OlkCheckBox_typekey")
+  /* private */ @JSName("Outlook.OlkCheckBox_typekey")
   var OutlookDotOlkCheckBox_typekey: OlkCheckBox
   
   var TripleState: Boolean
@@ -40,8 +40,7 @@ trait OlkCheckBox extends StObject {
 }
 object OlkCheckBox {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Accelerator: String,
     Alignment: OlAlignment,
     BackColor: OLE_COLOR,
@@ -62,49 +61,34 @@ object OlkCheckBox {
     __obj.asInstanceOf[OlkCheckBox]
   }
   
-  @scala.inline
-  implicit class OlkCheckBoxMutableBuilder[Self <: OlkCheckBox] (val x: Self) extends AnyVal {
+  extension [Self <: OlkCheckBox](x: Self) {
     
-    @scala.inline
-    def setAccelerator(value: String): Self = StObject.set(x, "Accelerator", value.asInstanceOf[js.Any])
+    inline def setAccelerator(value: String): Self = StObject.set(x, "Accelerator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignment(value: OlAlignment): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
+    inline def setAlignment(value: OlAlignment): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackColor(value: OLE_COLOR): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
+    inline def setBackColor(value: OLE_COLOR): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackStyle(value: OlBackStyle): Self = StObject.set(x, "BackStyle", value.asInstanceOf[js.Any])
+    inline def setBackStyle(value: OlBackStyle): Self = StObject.set(x, "BackStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFont(value: StdFont): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
+    inline def setFont(value: StdFont): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForeColor(value: OLE_COLOR): Self = StObject.set(x, "ForeColor", value.asInstanceOf[js.Any])
+    inline def setForeColor(value: OLE_COLOR): Self = StObject.set(x, "ForeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseIcon(value: StdPicture): Self = StObject.set(x, "MouseIcon", value.asInstanceOf[js.Any])
+    inline def setMouseIcon(value: StdPicture): Self = StObject.set(x, "MouseIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMousePointer(value: OlMousePointer): Self = StObject.set(x, "MousePointer", value.asInstanceOf[js.Any])
+    inline def setMousePointer(value: OlMousePointer): Self = StObject.set(x, "MousePointer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDotOlkCheckBox_typekey(value: OlkCheckBox): Self = StObject.set(x, "Outlook.OlkCheckBox_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotOlkCheckBox_typekey(value: OlkCheckBox): Self = StObject.set(x, "Outlook.OlkCheckBox_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTripleState(value: Boolean): Self = StObject.set(x, "TripleState", value.asInstanceOf[js.Any])
+    inline def setTripleState(value: Boolean): Self = StObject.set(x, "TripleState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordWrap(value: Boolean): Self = StObject.set(x, "WordWrap", value.asInstanceOf[js.Any])
+    inline def setWordWrap(value: Boolean): Self = StObject.set(x, "WordWrap", value.asInstanceOf[js.Any])
   }
 }

@@ -38,37 +38,27 @@ trait IgComboLocale
 }
 object IgComboLocale {
   
-  @scala.inline
-  def apply(): IgComboLocale = {
+  inline def apply(): IgComboLocale = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgComboLocale]
   }
   
-  @scala.inline
-  implicit class IgComboLocaleMutableBuilder[Self <: IgComboLocale] (val x: Self) extends AnyVal {
+  extension [Self <: IgComboLocale](x: Self) {
     
-    @scala.inline
-    def setClearButtonTitle(value: js.Any): Self = StObject.set(x, "clearButtonTitle", value.asInstanceOf[js.Any])
+    inline def setClearButtonTitle(value: js.Any): Self = StObject.set(x, "clearButtonTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearButtonTitleUndefined: Self = StObject.set(x, "clearButtonTitle", js.undefined)
+    inline def setClearButtonTitleUndefined: Self = StObject.set(x, "clearButtonTitle", js.undefined)
     
-    @scala.inline
-    def setDropDownButtonTitle(value: js.Any): Self = StObject.set(x, "dropDownButtonTitle", value.asInstanceOf[js.Any])
+    inline def setDropDownButtonTitle(value: js.Any): Self = StObject.set(x, "dropDownButtonTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropDownButtonTitleUndefined: Self = StObject.set(x, "dropDownButtonTitle", js.undefined)
+    inline def setDropDownButtonTitleUndefined: Self = StObject.set(x, "dropDownButtonTitle", js.undefined)
     
-    @scala.inline
-    def setNoMatchFoundText(value: js.Any): Self = StObject.set(x, "noMatchFoundText", value.asInstanceOf[js.Any])
+    inline def setNoMatchFoundText(value: js.Any): Self = StObject.set(x, "noMatchFoundText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoMatchFoundTextUndefined: Self = StObject.set(x, "noMatchFoundText", js.undefined)
+    inline def setNoMatchFoundTextUndefined: Self = StObject.set(x, "noMatchFoundText", js.undefined)
     
-    @scala.inline
-    def setPlaceHolder(value: js.Any): Self = StObject.set(x, "placeHolder", value.asInstanceOf[js.Any])
+    inline def setPlaceHolder(value: js.Any): Self = StObject.set(x, "placeHolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceHolderUndefined: Self = StObject.set(x, "placeHolder", js.undefined)
+    inline def setPlaceHolderUndefined: Self = StObject.set(x, "placeHolder", js.undefined)
   }
 }

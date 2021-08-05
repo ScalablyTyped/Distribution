@@ -14,25 +14,19 @@ trait EventDefinition
 }
 object EventDefinition {
   
-  @scala.inline
-  def apply(script: String | js.Array[String] | ScriptDefinition | Script): EventDefinition = {
+  inline def apply(script: String | js.Array[String] | ScriptDefinition | Script): EventDefinition = {
     val __obj = js.Dynamic.literal(script = script.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventDefinition]
   }
   
-  @scala.inline
-  implicit class EventDefinitionMutableBuilder[Self <: EventDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: EventDefinition](x: Self) {
     
-    @scala.inline
-    def setListen(value: String): Self = StObject.set(x, "listen", value.asInstanceOf[js.Any])
+    inline def setListen(value: String): Self = StObject.set(x, "listen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListenUndefined: Self = StObject.set(x, "listen", js.undefined)
+    inline def setListenUndefined: Self = StObject.set(x, "listen", js.undefined)
     
-    @scala.inline
-    def setScript(value: String | js.Array[String] | ScriptDefinition | Script): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+    inline def setScript(value: String | js.Array[String] | ScriptDefinition | Script): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptVarargs(value: String*): Self = StObject.set(x, "script", js.Array(value :_*))
+    inline def setScriptVarargs(value: String*): Self = StObject.set(x, "script", js.Array(value :_*))
   }
 }

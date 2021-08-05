@@ -13,19 +13,15 @@ trait NodeLogPublishingConfiguration extends StObject {
 }
 object NodeLogPublishingConfiguration {
   
-  @scala.inline
-  def apply(): NodeLogPublishingConfiguration = {
+  inline def apply(): NodeLogPublishingConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodeLogPublishingConfiguration]
   }
   
-  @scala.inline
-  implicit class NodeLogPublishingConfigurationMutableBuilder[Self <: NodeLogPublishingConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: NodeLogPublishingConfiguration](x: Self) {
     
-    @scala.inline
-    def setFabric(value: NodeFabricLogPublishingConfiguration): Self = StObject.set(x, "Fabric", value.asInstanceOf[js.Any])
+    inline def setFabric(value: NodeFabricLogPublishingConfiguration): Self = StObject.set(x, "Fabric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFabricUndefined: Self = StObject.set(x, "Fabric", js.undefined)
+    inline def setFabricUndefined: Self = StObject.set(x, "Fabric", js.undefined)
   }
 }

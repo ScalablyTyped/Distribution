@@ -16,31 +16,23 @@ trait ProfilePhoto
 }
 object ProfilePhoto {
   
-  @scala.inline
-  def apply(): ProfilePhoto = {
+  inline def apply(): ProfilePhoto = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProfilePhoto]
   }
   
-  @scala.inline
-  implicit class ProfilePhotoMutableBuilder[Self <: ProfilePhoto] (val x: Self) extends AnyVal {
+  extension [Self <: ProfilePhoto](x: Self) {
     
-    @scala.inline
-    def setHeight(value: NullableOption[Double]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: NullableOption[Double]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightNull: Self = StObject.set(x, "height", null)
+    inline def setHeightNull: Self = StObject.set(x, "height", null)
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setWidth(value: NullableOption[Double]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: NullableOption[Double]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthNull: Self = StObject.set(x, "width", null)
+    inline def setWidthNull: Self = StObject.set(x, "width", null)
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

@@ -63,26 +63,20 @@ object serialDataItemMod {
   }
   object SerialDataItem {
     
-    @scala.inline
-    def apply(axes: js.Object, category: js.Any, time: Double, x: Double): SerialDataItem = {
+    inline def apply(axes: js.Object, category: js.Any, time: Double, x: Double): SerialDataItem = {
       val __obj = js.Dynamic.literal(axes = axes.asInstanceOf[js.Any], category = category.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any])
       __obj.asInstanceOf[SerialDataItem]
     }
     
-    @scala.inline
-    implicit class SerialDataItemMutableBuilder[Self <: SerialDataItem] (val x: Self) extends AnyVal {
+    extension [Self <: SerialDataItem](x: Self) {
       
-      @scala.inline
-      def setAxes(value: js.Object): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
+      inline def setAxes(value: js.Object): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCategory(value: js.Any): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+      inline def setCategory(value: js.Any): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     }
   }
 }

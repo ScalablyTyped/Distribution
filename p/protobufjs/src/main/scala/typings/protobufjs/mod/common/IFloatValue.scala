@@ -11,19 +11,15 @@ trait IFloatValue extends StObject {
 }
 object IFloatValue {
   
-  @scala.inline
-  def apply(): IFloatValue = {
+  inline def apply(): IFloatValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IFloatValue]
   }
   
-  @scala.inline
-  implicit class IFloatValueMutableBuilder[Self <: IFloatValue] (val x: Self) extends AnyVal {
+  extension [Self <: IFloatValue](x: Self) {
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

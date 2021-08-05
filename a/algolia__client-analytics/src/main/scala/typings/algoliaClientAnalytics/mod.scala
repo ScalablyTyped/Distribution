@@ -22,8 +22,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addABTest(base: AnalyticsClient): js.Function2[
+  inline def addABTest(base: AnalyticsClient): js.Function2[
     /* abTest */ ABTest, 
     /* requestOptions */ js.UndefOr[RequestOptions], 
     ReadonlyPromiseAddABTestR
@@ -37,8 +36,7 @@ object mod {
   @js.native
   val createAnalyticsClient: CreateClient[AnalyticsClient, AnalyticsClientOptions & ClientTransporterOptions] = js.native
   
-  @scala.inline
-  def deleteABTest(base: AnalyticsClient): js.Function2[
+  inline def deleteABTest(base: AnalyticsClient): js.Function2[
     /* abTestID */ Double, 
     /* requestOptions */ js.UndefOr[RequestOptions], 
     ReadonlyPromiseDeleteABTe
@@ -48,8 +46,7 @@ object mod {
     ReadonlyPromiseDeleteABTe
   ]]
   
-  @scala.inline
-  def getABTest(base: AnalyticsClient): js.Function2[
+  inline def getABTest(base: AnalyticsClient): js.Function2[
     /* abTestID */ Double, 
     /* requestOptions */ js.UndefOr[RequestOptions], 
     ReadonlyPromiseGetABTestR
@@ -59,8 +56,7 @@ object mod {
     ReadonlyPromiseGetABTestR
   ]]
   
-  @scala.inline
-  def getABTests(base: AnalyticsClient): js.Function1[
+  inline def getABTests(base: AnalyticsClient): js.Function1[
     /* requestOptions */ js.UndefOr[RequestOptions & GetABTestsOptions], 
     ReadonlyPromiseGetABTests
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getABTests")(base.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
@@ -68,8 +64,7 @@ object mod {
     ReadonlyPromiseGetABTests
   ]]
   
-  @scala.inline
-  def stopABTest(base: AnalyticsClient): js.Function2[
+  inline def stopABTest(base: AnalyticsClient): js.Function2[
     /* abTestID */ Double, 
     /* requestOptions */ js.UndefOr[RequestOptions], 
     ReadonlyPromiseStopABTest
@@ -98,26 +93,20 @@ object mod {
   }
   object ABTest {
     
-    @scala.inline
-    def apply(endAt: String, name: String, variants: js.Array[Variant]): ABTest = {
+    inline def apply(endAt: String, name: String, variants: js.Array[Variant]): ABTest = {
       val __obj = js.Dynamic.literal(endAt = endAt.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], variants = variants.asInstanceOf[js.Any])
       __obj.asInstanceOf[ABTest]
     }
     
-    @scala.inline
-    implicit class ABTestMutableBuilder[Self <: ABTest] (val x: Self) extends AnyVal {
+    extension [Self <: ABTest](x: Self) {
       
-      @scala.inline
-      def setEndAt(value: String): Self = StObject.set(x, "endAt", value.asInstanceOf[js.Any])
+      inline def setEndAt(value: String): Self = StObject.set(x, "endAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariants(value: js.Array[Variant]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
+      inline def setVariants(value: js.Array[Variant]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariantsVarargs(value: Variant*): Self = StObject.set(x, "variants", js.Array(value :_*))
+      inline def setVariantsVarargs(value: Variant*): Self = StObject.set(x, "variants", js.Array(value :_*))
     }
   }
   
@@ -140,23 +129,18 @@ object mod {
   }
   object AddABTestResponse {
     
-    @scala.inline
-    def apply(abTestID: Double, index: String, taskID: Double): AddABTestResponse = {
+    inline def apply(abTestID: Double, index: String, taskID: Double): AddABTestResponse = {
       val __obj = js.Dynamic.literal(abTestID = abTestID.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], taskID = taskID.asInstanceOf[js.Any])
       __obj.asInstanceOf[AddABTestResponse]
     }
     
-    @scala.inline
-    implicit class AddABTestResponseMutableBuilder[Self <: AddABTestResponse] (val x: Self) extends AnyVal {
+    extension [Self <: AddABTestResponse](x: Self) {
       
-      @scala.inline
-      def setAbTestID(value: Double): Self = StObject.set(x, "abTestID", value.asInstanceOf[js.Any])
+      inline def setAbTestID(value: Double): Self = StObject.set(x, "abTestID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaskID(value: Double): Self = StObject.set(x, "taskID", value.asInstanceOf[js.Any])
+      inline def setTaskID(value: Double): Self = StObject.set(x, "taskID", value.asInstanceOf[js.Any])
     }
   }
   
@@ -174,20 +158,16 @@ object mod {
   }
   object AnalyticsClient {
     
-    @scala.inline
-    def apply(appId: String, transporter: Transporter): AnalyticsClient = {
+    inline def apply(appId: String, transporter: Transporter): AnalyticsClient = {
       val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], transporter = transporter.asInstanceOf[js.Any])
       __obj.asInstanceOf[AnalyticsClient]
     }
     
-    @scala.inline
-    implicit class AnalyticsClientMutableBuilder[Self <: AnalyticsClient] (val x: Self) extends AnyVal {
+    extension [Self <: AnalyticsClient](x: Self) {
       
-      @scala.inline
-      def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+      inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransporter(value: Transporter): Self = StObject.set(x, "transporter", value.asInstanceOf[js.Any])
+      inline def setTransporter(value: Transporter): Self = StObject.set(x, "transporter", value.asInstanceOf[js.Any])
     }
   }
   
@@ -210,26 +190,20 @@ object mod {
   }
   object AnalyticsClientOptions {
     
-    @scala.inline
-    def apply(apiKey: String, appId: String): AnalyticsClientOptions = {
+    inline def apply(apiKey: String, appId: String): AnalyticsClientOptions = {
       val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any], appId = appId.asInstanceOf[js.Any])
       __obj.asInstanceOf[AnalyticsClientOptions]
     }
     
-    @scala.inline
-    implicit class AnalyticsClientOptionsMutableBuilder[Self <: AnalyticsClientOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AnalyticsClientOptions](x: Self) {
       
-      @scala.inline
-      def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
+      inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+      inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegion(value: de | us): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: de | us): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+      inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     }
   }
   
@@ -252,23 +226,18 @@ object mod {
   }
   object DeleteABTestResponse {
     
-    @scala.inline
-    def apply(abTestID: Double, index: String, taskID: Double): DeleteABTestResponse = {
+    inline def apply(abTestID: Double, index: String, taskID: Double): DeleteABTestResponse = {
       val __obj = js.Dynamic.literal(abTestID = abTestID.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], taskID = taskID.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteABTestResponse]
     }
     
-    @scala.inline
-    implicit class DeleteABTestResponseMutableBuilder[Self <: DeleteABTestResponse] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteABTestResponse](x: Self) {
       
-      @scala.inline
-      def setAbTestID(value: Double): Self = StObject.set(x, "abTestID", value.asInstanceOf[js.Any])
+      inline def setAbTestID(value: Double): Self = StObject.set(x, "abTestID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaskID(value: Double): Self = StObject.set(x, "taskID", value.asInstanceOf[js.Any])
+      inline def setTaskID(value: Double): Self = StObject.set(x, "taskID", value.asInstanceOf[js.Any])
     }
   }
   
@@ -322,8 +291,7 @@ object mod {
   }
   object GetABTestResponse {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abTestID: Double,
       clickSignificance: Double,
       conversionSignificance: Double,
@@ -338,38 +306,27 @@ object mod {
       __obj.asInstanceOf[GetABTestResponse]
     }
     
-    @scala.inline
-    implicit class GetABTestResponseMutableBuilder[Self <: GetABTestResponse] (val x: Self) extends AnyVal {
+    extension [Self <: GetABTestResponse](x: Self) {
       
-      @scala.inline
-      def setAbTestID(value: Double): Self = StObject.set(x, "abTestID", value.asInstanceOf[js.Any])
+      inline def setAbTestID(value: Double): Self = StObject.set(x, "abTestID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClickSignificance(value: Double): Self = StObject.set(x, "clickSignificance", value.asInstanceOf[js.Any])
+      inline def setClickSignificance(value: Double): Self = StObject.set(x, "clickSignificance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConversionSignificance(value: Double): Self = StObject.set(x, "conversionSignificance", value.asInstanceOf[js.Any])
+      inline def setConversionSignificance(value: Double): Self = StObject.set(x, "conversionSignificance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedAt(value: String): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+      inline def setCreatedAt(value: String): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndAt(value: String): Self = StObject.set(x, "endAt", value.asInstanceOf[js.Any])
+      inline def setEndAt(value: String): Self = StObject.set(x, "endAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdatedAt(value: String): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
+      inline def setUpdatedAt(value: String): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariants(value: js.Array[VariantResponse]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
+      inline def setVariants(value: js.Array[VariantResponse]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariantsVarargs(value: VariantResponse*): Self = StObject.set(x, "variants", js.Array(value :_*))
+      inline def setVariantsVarargs(value: VariantResponse*): Self = StObject.set(x, "variants", js.Array(value :_*))
     }
   }
   
@@ -387,26 +344,20 @@ object mod {
   }
   object GetABTestsOptions {
     
-    @scala.inline
-    def apply(): GetABTestsOptions = {
+    inline def apply(): GetABTestsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetABTestsOptions]
     }
     
-    @scala.inline
-    implicit class GetABTestsOptionsMutableBuilder[Self <: GetABTestsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GetABTestsOptions](x: Self) {
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     }
   }
   
@@ -429,29 +380,22 @@ object mod {
   }
   object GetABTestsResponse {
     
-    @scala.inline
-    def apply(count: Double, total: Double): GetABTestsResponse = {
+    inline def apply(count: Double, total: Double): GetABTestsResponse = {
       val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], abtests = null)
       __obj.asInstanceOf[GetABTestsResponse]
     }
     
-    @scala.inline
-    implicit class GetABTestsResponseMutableBuilder[Self <: GetABTestsResponse] (val x: Self) extends AnyVal {
+    extension [Self <: GetABTestsResponse](x: Self) {
       
-      @scala.inline
-      def setAbtests(value: js.Array[GetABTestResponse]): Self = StObject.set(x, "abtests", value.asInstanceOf[js.Any])
+      inline def setAbtests(value: js.Array[GetABTestResponse]): Self = StObject.set(x, "abtests", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbtestsNull: Self = StObject.set(x, "abtests", null)
+      inline def setAbtestsNull: Self = StObject.set(x, "abtests", null)
       
-      @scala.inline
-      def setAbtestsVarargs(value: GetABTestResponse*): Self = StObject.set(x, "abtests", js.Array(value :_*))
+      inline def setAbtestsVarargs(value: GetABTestResponse*): Self = StObject.set(x, "abtests", js.Array(value :_*))
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }
   }
   
@@ -474,23 +418,18 @@ object mod {
   }
   object StopABTestResponse {
     
-    @scala.inline
-    def apply(abTestID: Double, index: String, taskID: Double): StopABTestResponse = {
+    inline def apply(abTestID: Double, index: String, taskID: Double): StopABTestResponse = {
       val __obj = js.Dynamic.literal(abTestID = abTestID.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], taskID = taskID.asInstanceOf[js.Any])
       __obj.asInstanceOf[StopABTestResponse]
     }
     
-    @scala.inline
-    implicit class StopABTestResponseMutableBuilder[Self <: StopABTestResponse] (val x: Self) extends AnyVal {
+    extension [Self <: StopABTestResponse](x: Self) {
       
-      @scala.inline
-      def setAbTestID(value: Double): Self = StObject.set(x, "abTestID", value.asInstanceOf[js.Any])
+      inline def setAbTestID(value: Double): Self = StObject.set(x, "abTestID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaskID(value: Double): Self = StObject.set(x, "taskID", value.asInstanceOf[js.Any])
+      inline def setTaskID(value: Double): Self = StObject.set(x, "taskID", value.asInstanceOf[js.Any])
     }
   }
   
@@ -518,32 +457,24 @@ object mod {
   }
   object Variant {
     
-    @scala.inline
-    def apply(index: String, trafficPercentage: Double): Variant = {
+    inline def apply(index: String, trafficPercentage: Double): Variant = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], trafficPercentage = trafficPercentage.asInstanceOf[js.Any])
       __obj.asInstanceOf[Variant]
     }
     
-    @scala.inline
-    implicit class VariantMutableBuilder[Self <: Variant] (val x: Self) extends AnyVal {
+    extension [Self <: Variant](x: Self) {
       
-      @scala.inline
-      def setCustomSearchParameters(value: SearchOptions): Self = StObject.set(x, "customSearchParameters", value.asInstanceOf[js.Any])
+      inline def setCustomSearchParameters(value: SearchOptions): Self = StObject.set(x, "customSearchParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomSearchParametersUndefined: Self = StObject.set(x, "customSearchParameters", js.undefined)
+      inline def setCustomSearchParametersUndefined: Self = StObject.set(x, "customSearchParameters", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrafficPercentage(value: Double): Self = StObject.set(x, "trafficPercentage", value.asInstanceOf[js.Any])
+      inline def setTrafficPercentage(value: Double): Self = StObject.set(x, "trafficPercentage", value.asInstanceOf[js.Any])
     }
   }
   
@@ -598,68 +529,48 @@ object mod {
   }
   object VariantResponse {
     
-    @scala.inline
-    def apply(index: String, trafficPercentage: Double): VariantResponse = {
+    inline def apply(index: String, trafficPercentage: Double): VariantResponse = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], trafficPercentage = trafficPercentage.asInstanceOf[js.Any])
       __obj.asInstanceOf[VariantResponse]
     }
     
-    @scala.inline
-    implicit class VariantResponseMutableBuilder[Self <: VariantResponse] (val x: Self) extends AnyVal {
+    extension [Self <: VariantResponse](x: Self) {
       
-      @scala.inline
-      def setAverageClickPosition(value: Double): Self = StObject.set(x, "averageClickPosition", value.asInstanceOf[js.Any])
+      inline def setAverageClickPosition(value: Double): Self = StObject.set(x, "averageClickPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAverageClickPositionUndefined: Self = StObject.set(x, "averageClickPosition", js.undefined)
+      inline def setAverageClickPositionUndefined: Self = StObject.set(x, "averageClickPosition", js.undefined)
       
-      @scala.inline
-      def setClickCount(value: Double): Self = StObject.set(x, "clickCount", value.asInstanceOf[js.Any])
+      inline def setClickCount(value: Double): Self = StObject.set(x, "clickCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClickCountUndefined: Self = StObject.set(x, "clickCount", js.undefined)
+      inline def setClickCountUndefined: Self = StObject.set(x, "clickCount", js.undefined)
       
-      @scala.inline
-      def setClickThroughRate(value: Double): Self = StObject.set(x, "clickThroughRate", value.asInstanceOf[js.Any])
+      inline def setClickThroughRate(value: Double): Self = StObject.set(x, "clickThroughRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClickThroughRateUndefined: Self = StObject.set(x, "clickThroughRate", js.undefined)
+      inline def setClickThroughRateUndefined: Self = StObject.set(x, "clickThroughRate", js.undefined)
       
-      @scala.inline
-      def setConversionCount(value: Double): Self = StObject.set(x, "conversionCount", value.asInstanceOf[js.Any])
+      inline def setConversionCount(value: Double): Self = StObject.set(x, "conversionCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConversionCountUndefined: Self = StObject.set(x, "conversionCount", js.undefined)
+      inline def setConversionCountUndefined: Self = StObject.set(x, "conversionCount", js.undefined)
       
-      @scala.inline
-      def setConversionRate(value: Double): Self = StObject.set(x, "conversionRate", value.asInstanceOf[js.Any])
+      inline def setConversionRate(value: Double): Self = StObject.set(x, "conversionRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConversionRateUndefined: Self = StObject.set(x, "conversionRate", js.undefined)
+      inline def setConversionRateUndefined: Self = StObject.set(x, "conversionRate", js.undefined)
       
-      @scala.inline
-      def setNoResultCount(value: Double): Self = StObject.set(x, "noResultCount", value.asInstanceOf[js.Any])
+      inline def setNoResultCount(value: Double): Self = StObject.set(x, "noResultCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoResultCountUndefined: Self = StObject.set(x, "noResultCount", js.undefined)
+      inline def setNoResultCountUndefined: Self = StObject.set(x, "noResultCount", js.undefined)
       
-      @scala.inline
-      def setSearchCount(value: Double): Self = StObject.set(x, "searchCount", value.asInstanceOf[js.Any])
+      inline def setSearchCount(value: Double): Self = StObject.set(x, "searchCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchCountUndefined: Self = StObject.set(x, "searchCount", js.undefined)
+      inline def setSearchCountUndefined: Self = StObject.set(x, "searchCount", js.undefined)
       
-      @scala.inline
-      def setTrackedSearchCount(value: Double): Self = StObject.set(x, "trackedSearchCount", value.asInstanceOf[js.Any])
+      inline def setTrackedSearchCount(value: Double): Self = StObject.set(x, "trackedSearchCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackedSearchCountUndefined: Self = StObject.set(x, "trackedSearchCount", js.undefined)
+      inline def setTrackedSearchCountUndefined: Self = StObject.set(x, "trackedSearchCount", js.undefined)
       
-      @scala.inline
-      def setUserCount(value: Double): Self = StObject.set(x, "userCount", value.asInstanceOf[js.Any])
+      inline def setUserCount(value: Double): Self = StObject.set(x, "userCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserCountUndefined: Self = StObject.set(x, "userCount", js.undefined)
+      inline def setUserCountUndefined: Self = StObject.set(x, "userCount", js.undefined)
     }
   }
 }

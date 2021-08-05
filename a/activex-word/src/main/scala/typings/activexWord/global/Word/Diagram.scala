@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Diagram")
 @js.native
-class Diagram protected ()
+/* private */ class Diagram ()
   extends StObject
      with typings.activexWord.Word.Diagram {
   
@@ -42,7 +42,7 @@ class Diagram protected ()
   /* CompleteClass */
   override val Type: MsoDiagramType = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.Diagram_typekey")
   var WordDotDiagram_typekey: typings.activexWord.Word.Diagram = js.native
 }

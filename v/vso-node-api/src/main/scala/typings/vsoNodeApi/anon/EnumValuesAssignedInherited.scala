@@ -10,16 +10,13 @@ trait EnumValuesAssignedInherited extends StObject {
 }
 object EnumValuesAssignedInherited {
   
-  @scala.inline
-  def apply(enumValues: AssignedInherited): EnumValuesAssignedInherited = {
+  inline def apply(enumValues: AssignedInherited): EnumValuesAssignedInherited = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesAssignedInherited]
   }
   
-  @scala.inline
-  implicit class EnumValuesAssignedInheritedMutableBuilder[Self <: EnumValuesAssignedInherited] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesAssignedInherited](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: AssignedInherited): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: AssignedInherited): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

@@ -11,16 +11,13 @@ trait ReplaceLayoutOpts extends StObject {
 }
 object ReplaceLayoutOpts {
   
-  @scala.inline
-  def apply(layout: Layout): ReplaceLayoutOpts = {
+  inline def apply(layout: Layout): ReplaceLayoutOpts = {
     val __obj = js.Dynamic.literal(layout = layout.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplaceLayoutOpts]
   }
   
-  @scala.inline
-  implicit class ReplaceLayoutOptsMutableBuilder[Self <: ReplaceLayoutOpts] (val x: Self) extends AnyVal {
+  extension [Self <: ReplaceLayoutOpts](x: Self) {
     
-    @scala.inline
-    def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
   }
 }

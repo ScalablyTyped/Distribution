@@ -48,8 +48,7 @@ trait AspectRatio extends StObject {
 }
 object AspectRatio {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     aspectRatio: Double,
     bitrateBps: Double,
     codec: String,
@@ -63,31 +62,22 @@ object AspectRatio {
     __obj.asInstanceOf[AspectRatio]
   }
   
-  @scala.inline
-  implicit class AspectRatioMutableBuilder[Self <: AspectRatio] (val x: Self) extends AnyVal {
+  extension [Self <: AspectRatio](x: Self) {
     
-    @scala.inline
-    def setAspectRatio(value: Double): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
+    inline def setAspectRatio(value: Double): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitrateBps(value: Double): Self = StObject.set(x, "bitrateBps", value.asInstanceOf[js.Any])
+    inline def setBitrateBps(value: Double): Self = StObject.set(x, "bitrateBps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodec(value: String): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
+    inline def setCodec(value: String): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameRateFps(value: Double): Self = StObject.set(x, "frameRateFps", value.asInstanceOf[js.Any])
+    inline def setFrameRateFps(value: Double): Self = StObject.set(x, "frameRateFps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightPixels(value: Double): Self = StObject.set(x, "heightPixels", value.asInstanceOf[js.Any])
+    inline def setHeightPixels(value: Double): Self = StObject.set(x, "heightPixels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotation(value: String): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    inline def setRotation(value: String): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVender(value: String): Self = StObject.set(x, "vender", value.asInstanceOf[js.Any])
+    inline def setVender(value: String): Self = StObject.set(x, "vender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthPixels(value: Double): Self = StObject.set(x, "widthPixels", value.asInstanceOf[js.Any])
+    inline def setWidthPixels(value: Double): Self = StObject.set(x, "widthPixels", value.asInstanceOf[js.Any])
   }
 }

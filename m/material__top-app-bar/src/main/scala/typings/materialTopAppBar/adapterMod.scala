@@ -44,8 +44,7 @@ object adapterMod {
   }
   object MDCTopAppBarAdapter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addClass: String => Unit,
       getTopAppBarHeight: () => Double,
       getTotalActionItems: () => Double,
@@ -59,32 +58,23 @@ object adapterMod {
       __obj.asInstanceOf[MDCTopAppBarAdapter]
     }
     
-    @scala.inline
-    implicit class MDCTopAppBarAdapterMutableBuilder[Self <: MDCTopAppBarAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: MDCTopAppBarAdapter](x: Self) {
       
-      @scala.inline
-      def setAddClass(value: String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
+      inline def setAddClass(value: String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetTopAppBarHeight(value: () => Double): Self = StObject.set(x, "getTopAppBarHeight", js.Any.fromFunction0(value))
+      inline def setGetTopAppBarHeight(value: () => Double): Self = StObject.set(x, "getTopAppBarHeight", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTotalActionItems(value: () => Double): Self = StObject.set(x, "getTotalActionItems", js.Any.fromFunction0(value))
+      inline def setGetTotalActionItems(value: () => Double): Self = StObject.set(x, "getTotalActionItems", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetViewportScrollY(value: () => Double): Self = StObject.set(x, "getViewportScrollY", js.Any.fromFunction0(value))
+      inline def setGetViewportScrollY(value: () => Double): Self = StObject.set(x, "getViewportScrollY", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasClass(value: String => Boolean): Self = StObject.set(x, "hasClass", js.Any.fromFunction1(value))
+      inline def setHasClass(value: String => Boolean): Self = StObject.set(x, "hasClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNotifyNavigationIconClicked(value: () => Unit): Self = StObject.set(x, "notifyNavigationIconClicked", js.Any.fromFunction0(value))
+      inline def setNotifyNavigationIconClicked(value: () => Unit): Self = StObject.set(x, "notifyNavigationIconClicked", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveClass(value: String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
+      inline def setRemoveClass(value: String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetStyle(value: (String, String) => Unit): Self = StObject.set(x, "setStyle", js.Any.fromFunction2(value))
+      inline def setSetStyle(value: (String, String) => Unit): Self = StObject.set(x, "setStyle", js.Any.fromFunction2(value))
     }
   }
 }

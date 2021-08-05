@@ -33,8 +33,7 @@ trait PointSymbol3DVerticalOffsetProperties
 }
 object PointSymbol3DVerticalOffsetProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -43,25 +42,18 @@ object PointSymbol3DVerticalOffsetProperties {
     __obj.asInstanceOf[PointSymbol3DVerticalOffsetProperties]
   }
   
-  @scala.inline
-  implicit class PointSymbol3DVerticalOffsetPropertiesMutableBuilder[Self <: PointSymbol3DVerticalOffsetProperties] (val x: Self) extends AnyVal {
+  extension [Self <: PointSymbol3DVerticalOffsetProperties](x: Self) {
     
-    @scala.inline
-    def setMaxWorldLength(value: Double): Self = StObject.set(x, "maxWorldLength", value.asInstanceOf[js.Any])
+    inline def setMaxWorldLength(value: Double): Self = StObject.set(x, "maxWorldLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxWorldLengthUndefined: Self = StObject.set(x, "maxWorldLength", js.undefined)
+    inline def setMaxWorldLengthUndefined: Self = StObject.set(x, "maxWorldLength", js.undefined)
     
-    @scala.inline
-    def setMinWorldLength(value: Double): Self = StObject.set(x, "minWorldLength", value.asInstanceOf[js.Any])
+    inline def setMinWorldLength(value: Double): Self = StObject.set(x, "minWorldLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinWorldLengthUndefined: Self = StObject.set(x, "minWorldLength", js.undefined)
+    inline def setMinWorldLengthUndefined: Self = StObject.set(x, "minWorldLength", js.undefined)
     
-    @scala.inline
-    def setScreenLength(value: Double): Self = StObject.set(x, "screenLength", value.asInstanceOf[js.Any])
+    inline def setScreenLength(value: Double): Self = StObject.set(x, "screenLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenLengthUndefined: Self = StObject.set(x, "screenLength", js.undefined)
+    inline def setScreenLengthUndefined: Self = StObject.set(x, "screenLength", js.undefined)
   }
 }

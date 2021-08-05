@@ -9,8 +9,7 @@ trait DescribeGlobalTableInput
      with typings.awsSdkClientDynamodbNode.typesDescribeGlobalTableInputMod.DescribeGlobalTableInput
 object DescribeGlobalTableInput {
   
-  @scala.inline
-  def apply(GlobalTableName: String): DescribeGlobalTableInput = {
+  inline def apply(GlobalTableName: String): DescribeGlobalTableInput = {
     val __obj = js.Dynamic.literal(GlobalTableName = GlobalTableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeGlobalTableInput]
   }

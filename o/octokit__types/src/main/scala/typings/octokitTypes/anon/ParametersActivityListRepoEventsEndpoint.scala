@@ -17,8 +17,7 @@ trait ParametersActivityListRepoEventsEndpoint extends StObject {
 }
 object ParametersActivityListRepoEventsEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ActivityListRepoEventsEndpoint,
     request: ActivityListRepoEventsRequestOptions,
     response: OctokitResponse[js.Any]
@@ -27,16 +26,12 @@ object ParametersActivityListRepoEventsEndpoint {
     __obj.asInstanceOf[ParametersActivityListRepoEventsEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersActivityListRepoEventsEndpointMutableBuilder[Self <: ParametersActivityListRepoEventsEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersActivityListRepoEventsEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ActivityListRepoEventsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ActivityListRepoEventsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ActivityListRepoEventsRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ActivityListRepoEventsRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

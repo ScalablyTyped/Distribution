@@ -14,20 +14,15 @@ object themeMod {
   @js.native
   val DEFAULT_THEME: Theme = js.native
   
-  @scala.inline
-  def fromJson(json: JsonTheme): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJson")(json.asInstanceOf[js.Any]).asInstanceOf[Theme]
+  inline def fromJson(json: JsonTheme): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJson")(json.asInstanceOf[js.Any]).asInstanceOf[Theme]
   
-  @scala.inline
-  def parse(json: String): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(json.asInstanceOf[js.Any]).asInstanceOf[Theme]
+  inline def parse(json: String): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(json.asInstanceOf[js.Any]).asInstanceOf[Theme]
   
-  @scala.inline
-  def plain(codePart: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("plain")(codePart.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def plain(codePart: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("plain")(codePart.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def stringify(theme: Theme): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(theme.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringify(theme: Theme): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(theme.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def toJson(theme: Theme): JsonTheme = ^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(theme.asInstanceOf[js.Any]).asInstanceOf[JsonTheme]
+  inline def toJson(theme: Theme): JsonTheme = ^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(theme.asInstanceOf[js.Any]).asInstanceOf[JsonTheme]
   
   type JsonTheme = Tokens[Style | js.Array[Style]]
   
@@ -61,80 +56,55 @@ object themeMod {
   trait Style extends StObject
   object Style {
     
-    @scala.inline
-    def bgBlack: typings.cliHighlight.cliHighlightStrings.bgBlack = "bgBlack".asInstanceOf[typings.cliHighlight.cliHighlightStrings.bgBlack]
+    inline def bgBlack: typings.cliHighlight.cliHighlightStrings.bgBlack = "bgBlack".asInstanceOf[typings.cliHighlight.cliHighlightStrings.bgBlack]
     
-    @scala.inline
-    def bgBlue: typings.cliHighlight.cliHighlightStrings.bgBlue = "bgBlue".asInstanceOf[typings.cliHighlight.cliHighlightStrings.bgBlue]
+    inline def bgBlue: typings.cliHighlight.cliHighlightStrings.bgBlue = "bgBlue".asInstanceOf[typings.cliHighlight.cliHighlightStrings.bgBlue]
     
-    @scala.inline
-    def bgCyan: typings.cliHighlight.cliHighlightStrings.bgCyan = "bgCyan".asInstanceOf[typings.cliHighlight.cliHighlightStrings.bgCyan]
+    inline def bgCyan: typings.cliHighlight.cliHighlightStrings.bgCyan = "bgCyan".asInstanceOf[typings.cliHighlight.cliHighlightStrings.bgCyan]
     
-    @scala.inline
-    def bgGreen: typings.cliHighlight.cliHighlightStrings.bgGreen = "bgGreen".asInstanceOf[typings.cliHighlight.cliHighlightStrings.bgGreen]
+    inline def bgGreen: typings.cliHighlight.cliHighlightStrings.bgGreen = "bgGreen".asInstanceOf[typings.cliHighlight.cliHighlightStrings.bgGreen]
     
-    @scala.inline
-    def bgMagenta: typings.cliHighlight.cliHighlightStrings.bgMagenta = "bgMagenta".asInstanceOf[typings.cliHighlight.cliHighlightStrings.bgMagenta]
+    inline def bgMagenta: typings.cliHighlight.cliHighlightStrings.bgMagenta = "bgMagenta".asInstanceOf[typings.cliHighlight.cliHighlightStrings.bgMagenta]
     
-    @scala.inline
-    def bgRed: typings.cliHighlight.cliHighlightStrings.bgRed = "bgRed".asInstanceOf[typings.cliHighlight.cliHighlightStrings.bgRed]
+    inline def bgRed: typings.cliHighlight.cliHighlightStrings.bgRed = "bgRed".asInstanceOf[typings.cliHighlight.cliHighlightStrings.bgRed]
     
-    @scala.inline
-    def bgYellow: typings.cliHighlight.cliHighlightStrings.bgYellow = "bgYellow".asInstanceOf[typings.cliHighlight.cliHighlightStrings.bgYellow]
+    inline def bgYellow: typings.cliHighlight.cliHighlightStrings.bgYellow = "bgYellow".asInstanceOf[typings.cliHighlight.cliHighlightStrings.bgYellow]
     
-    @scala.inline
-    def black: typings.cliHighlight.cliHighlightStrings.black = "black".asInstanceOf[typings.cliHighlight.cliHighlightStrings.black]
+    inline def black: typings.cliHighlight.cliHighlightStrings.black = "black".asInstanceOf[typings.cliHighlight.cliHighlightStrings.black]
     
-    @scala.inline
-    def blue: typings.cliHighlight.cliHighlightStrings.blue = "blue".asInstanceOf[typings.cliHighlight.cliHighlightStrings.blue]
+    inline def blue: typings.cliHighlight.cliHighlightStrings.blue = "blue".asInstanceOf[typings.cliHighlight.cliHighlightStrings.blue]
     
-    @scala.inline
-    def bold: typings.cliHighlight.cliHighlightStrings.bold = "bold".asInstanceOf[typings.cliHighlight.cliHighlightStrings.bold]
+    inline def bold: typings.cliHighlight.cliHighlightStrings.bold = "bold".asInstanceOf[typings.cliHighlight.cliHighlightStrings.bold]
     
-    @scala.inline
-    def cyan: typings.cliHighlight.cliHighlightStrings.cyan = "cyan".asInstanceOf[typings.cliHighlight.cliHighlightStrings.cyan]
+    inline def cyan: typings.cliHighlight.cliHighlightStrings.cyan = "cyan".asInstanceOf[typings.cliHighlight.cliHighlightStrings.cyan]
     
-    @scala.inline
-    def dim: typings.cliHighlight.cliHighlightStrings.dim = "dim".asInstanceOf[typings.cliHighlight.cliHighlightStrings.dim]
+    inline def dim: typings.cliHighlight.cliHighlightStrings.dim = "dim".asInstanceOf[typings.cliHighlight.cliHighlightStrings.dim]
     
-    @scala.inline
-    def gray: typings.cliHighlight.cliHighlightStrings.gray = "gray".asInstanceOf[typings.cliHighlight.cliHighlightStrings.gray]
+    inline def gray: typings.cliHighlight.cliHighlightStrings.gray = "gray".asInstanceOf[typings.cliHighlight.cliHighlightStrings.gray]
     
-    @scala.inline
-    def green: typings.cliHighlight.cliHighlightStrings.green = "green".asInstanceOf[typings.cliHighlight.cliHighlightStrings.green]
+    inline def green: typings.cliHighlight.cliHighlightStrings.green = "green".asInstanceOf[typings.cliHighlight.cliHighlightStrings.green]
     
-    @scala.inline
-    def hidden: typings.cliHighlight.cliHighlightStrings.hidden = "hidden".asInstanceOf[typings.cliHighlight.cliHighlightStrings.hidden]
+    inline def hidden: typings.cliHighlight.cliHighlightStrings.hidden = "hidden".asInstanceOf[typings.cliHighlight.cliHighlightStrings.hidden]
     
-    @scala.inline
-    def inverse: typings.cliHighlight.cliHighlightStrings.inverse = "inverse".asInstanceOf[typings.cliHighlight.cliHighlightStrings.inverse]
+    inline def inverse: typings.cliHighlight.cliHighlightStrings.inverse = "inverse".asInstanceOf[typings.cliHighlight.cliHighlightStrings.inverse]
     
-    @scala.inline
-    def italic: typings.cliHighlight.cliHighlightStrings.italic = "italic".asInstanceOf[typings.cliHighlight.cliHighlightStrings.italic]
+    inline def italic: typings.cliHighlight.cliHighlightStrings.italic = "italic".asInstanceOf[typings.cliHighlight.cliHighlightStrings.italic]
     
-    @scala.inline
-    def magenta: typings.cliHighlight.cliHighlightStrings.magenta = "magenta".asInstanceOf[typings.cliHighlight.cliHighlightStrings.magenta]
+    inline def magenta: typings.cliHighlight.cliHighlightStrings.magenta = "magenta".asInstanceOf[typings.cliHighlight.cliHighlightStrings.magenta]
     
-    @scala.inline
-    def plain: typings.cliHighlight.cliHighlightStrings.plain = "plain".asInstanceOf[typings.cliHighlight.cliHighlightStrings.plain]
+    inline def plain: typings.cliHighlight.cliHighlightStrings.plain = "plain".asInstanceOf[typings.cliHighlight.cliHighlightStrings.plain]
     
-    @scala.inline
-    def red: typings.cliHighlight.cliHighlightStrings.red = "red".asInstanceOf[typings.cliHighlight.cliHighlightStrings.red]
+    inline def red: typings.cliHighlight.cliHighlightStrings.red = "red".asInstanceOf[typings.cliHighlight.cliHighlightStrings.red]
     
-    @scala.inline
-    def reset: typings.cliHighlight.cliHighlightStrings.reset = "reset".asInstanceOf[typings.cliHighlight.cliHighlightStrings.reset]
+    inline def reset: typings.cliHighlight.cliHighlightStrings.reset = "reset".asInstanceOf[typings.cliHighlight.cliHighlightStrings.reset]
     
-    @scala.inline
-    def strikethrough: typings.cliHighlight.cliHighlightStrings.strikethrough = "strikethrough".asInstanceOf[typings.cliHighlight.cliHighlightStrings.strikethrough]
+    inline def strikethrough: typings.cliHighlight.cliHighlightStrings.strikethrough = "strikethrough".asInstanceOf[typings.cliHighlight.cliHighlightStrings.strikethrough]
     
-    @scala.inline
-    def underline: typings.cliHighlight.cliHighlightStrings.underline = "underline".asInstanceOf[typings.cliHighlight.cliHighlightStrings.underline]
+    inline def underline: typings.cliHighlight.cliHighlightStrings.underline = "underline".asInstanceOf[typings.cliHighlight.cliHighlightStrings.underline]
     
-    @scala.inline
-    def white: typings.cliHighlight.cliHighlightStrings.white = "white".asInstanceOf[typings.cliHighlight.cliHighlightStrings.white]
+    inline def white: typings.cliHighlight.cliHighlightStrings.white = "white".asInstanceOf[typings.cliHighlight.cliHighlightStrings.white]
     
-    @scala.inline
-    def yellow: typings.cliHighlight.cliHighlightStrings.yellow = "yellow".asInstanceOf[typings.cliHighlight.cliHighlightStrings.yellow]
+    inline def yellow: typings.cliHighlight.cliHighlightStrings.yellow = "yellow".asInstanceOf[typings.cliHighlight.cliHighlightStrings.yellow]
   }
   
   trait Theme
@@ -148,20 +118,16 @@ object themeMod {
   }
   object Theme {
     
-    @scala.inline
-    def apply(): Theme = {
+    inline def apply(): Theme = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Theme]
     }
     
-    @scala.inline
-    implicit class ThemeMutableBuilder[Self <: Theme] (val x: Self) extends AnyVal {
+    extension [Self <: Theme](x: Self) {
       
-      @scala.inline
-      def setDefault(value: /* codePart */ String => String): Self = StObject.set(x, "default", js.Any.fromFunction1(value))
+      inline def setDefault(value: /* codePart */ String => String): Self = StObject.set(x, "default", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     }
   }
   
@@ -374,260 +340,176 @@ object themeMod {
   }
   object Tokens {
     
-    @scala.inline
-    def apply[T](): Tokens[T] = {
+    inline def apply[T](): Tokens[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Tokens[T]]
     }
     
-    @scala.inline
-    implicit class TokensMutableBuilder[Self <: Tokens[?], T] (val x: Self & Tokens[T]) extends AnyVal {
+    extension [Self <: Tokens[?], T](x: Self & Tokens[T]) {
       
-      @scala.inline
-      def setAddition(value: T): Self = StObject.set(x, "addition", value.asInstanceOf[js.Any])
+      inline def setAddition(value: T): Self = StObject.set(x, "addition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionUndefined: Self = StObject.set(x, "addition", js.undefined)
+      inline def setAdditionUndefined: Self = StObject.set(x, "addition", js.undefined)
       
-      @scala.inline
-      def setAttr(value: T): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
+      inline def setAttr(value: T): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttrUndefined: Self = StObject.set(x, "attr", js.undefined)
+      inline def setAttrUndefined: Self = StObject.set(x, "attr", js.undefined)
       
-      @scala.inline
-      def setAttribute(value: T): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+      inline def setAttribute(value: T): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
+      inline def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
       
-      @scala.inline
-      def setBuilt_in(value: T): Self = StObject.set(x, "built_in", value.asInstanceOf[js.Any])
+      inline def setBuilt_in(value: T): Self = StObject.set(x, "built_in", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuilt_inUndefined: Self = StObject.set(x, "built_in", js.undefined)
+      inline def setBuilt_inUndefined: Self = StObject.set(x, "built_in", js.undefined)
       
-      @scala.inline
-      def `setBuiltin-name`(value: T): Self = StObject.set(x, "builtin-name", value.asInstanceOf[js.Any])
+      inline def `setBuiltin-name`(value: T): Self = StObject.set(x, "builtin-name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBuiltin-nameUndefined`: Self = StObject.set(x, "builtin-name", js.undefined)
+      inline def `setBuiltin-nameUndefined`: Self = StObject.set(x, "builtin-name", js.undefined)
       
-      @scala.inline
-      def setBullet(value: T): Self = StObject.set(x, "bullet", value.asInstanceOf[js.Any])
+      inline def setBullet(value: T): Self = StObject.set(x, "bullet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBulletUndefined: Self = StObject.set(x, "bullet", js.undefined)
+      inline def setBulletUndefined: Self = StObject.set(x, "bullet", js.undefined)
       
-      @scala.inline
-      def setClass(value: T): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+      inline def setClass(value: T): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
+      inline def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
       
-      @scala.inline
-      def setCode(value: T): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: T): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
-      @scala.inline
-      def setComment(value: T): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: T): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      @scala.inline
-      def setDeletion(value: T): Self = StObject.set(x, "deletion", value.asInstanceOf[js.Any])
+      inline def setDeletion(value: T): Self = StObject.set(x, "deletion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeletionUndefined: Self = StObject.set(x, "deletion", js.undefined)
+      inline def setDeletionUndefined: Self = StObject.set(x, "deletion", js.undefined)
       
-      @scala.inline
-      def setDoctag(value: T): Self = StObject.set(x, "doctag", value.asInstanceOf[js.Any])
+      inline def setDoctag(value: T): Self = StObject.set(x, "doctag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDoctagUndefined: Self = StObject.set(x, "doctag", js.undefined)
+      inline def setDoctagUndefined: Self = StObject.set(x, "doctag", js.undefined)
       
-      @scala.inline
-      def setEmphasis(value: T): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
+      inline def setEmphasis(value: T): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
+      inline def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
       
-      @scala.inline
-      def setFormula(value: T): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
+      inline def setFormula(value: T): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
+      inline def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
       
-      @scala.inline
-      def setFunction(value: T): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
+      inline def setFunction(value: T): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
+      inline def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
       
-      @scala.inline
-      def setKeyword(value: T): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
+      inline def setKeyword(value: T): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeywordUndefined: Self = StObject.set(x, "keyword", js.undefined)
+      inline def setKeywordUndefined: Self = StObject.set(x, "keyword", js.undefined)
       
-      @scala.inline
-      def setLink(value: T): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+      inline def setLink(value: T): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+      inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
       
-      @scala.inline
-      def setLiteral(value: T): Self = StObject.set(x, "literal", value.asInstanceOf[js.Any])
+      inline def setLiteral(value: T): Self = StObject.set(x, "literal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLiteralUndefined: Self = StObject.set(x, "literal", js.undefined)
+      inline def setLiteralUndefined: Self = StObject.set(x, "literal", js.undefined)
       
-      @scala.inline
-      def setMeta(value: T): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: T): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMeta-keyword`(value: T): Self = StObject.set(x, "meta-keyword", value.asInstanceOf[js.Any])
+      inline def `setMeta-keyword`(value: T): Self = StObject.set(x, "meta-keyword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMeta-keywordUndefined`: Self = StObject.set(x, "meta-keyword", js.undefined)
+      inline def `setMeta-keywordUndefined`: Self = StObject.set(x, "meta-keyword", js.undefined)
       
-      @scala.inline
-      def `setMeta-string`(value: T): Self = StObject.set(x, "meta-string", value.asInstanceOf[js.Any])
+      inline def `setMeta-string`(value: T): Self = StObject.set(x, "meta-string", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMeta-stringUndefined`: Self = StObject.set(x, "meta-string", js.undefined)
+      inline def `setMeta-stringUndefined`: Self = StObject.set(x, "meta-string", js.undefined)
       
-      @scala.inline
-      def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+      inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
       
-      @scala.inline
-      def setName(value: T): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: T): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNumber(value: T): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: T): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+      inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
       
-      @scala.inline
-      def setParams(value: T): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: T): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setQuote(value: T): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
+      inline def setQuote(value: T): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuoteUndefined: Self = StObject.set(x, "quote", js.undefined)
+      inline def setQuoteUndefined: Self = StObject.set(x, "quote", js.undefined)
       
-      @scala.inline
-      def setRegexp(value: T): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
+      inline def setRegexp(value: T): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegexpUndefined: Self = StObject.set(x, "regexp", js.undefined)
+      inline def setRegexpUndefined: Self = StObject.set(x, "regexp", js.undefined)
       
-      @scala.inline
-      def setSection(value: T): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
+      inline def setSection(value: T): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSectionUndefined: Self = StObject.set(x, "section", js.undefined)
+      inline def setSectionUndefined: Self = StObject.set(x, "section", js.undefined)
       
-      @scala.inline
-      def `setSelector-attr`(value: T): Self = StObject.set(x, "selector-attr", value.asInstanceOf[js.Any])
+      inline def `setSelector-attr`(value: T): Self = StObject.set(x, "selector-attr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setSelector-attrUndefined`: Self = StObject.set(x, "selector-attr", js.undefined)
+      inline def `setSelector-attrUndefined`: Self = StObject.set(x, "selector-attr", js.undefined)
       
-      @scala.inline
-      def `setSelector-class`(value: T): Self = StObject.set(x, "selector-class", value.asInstanceOf[js.Any])
+      inline def `setSelector-class`(value: T): Self = StObject.set(x, "selector-class", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setSelector-classUndefined`: Self = StObject.set(x, "selector-class", js.undefined)
+      inline def `setSelector-classUndefined`: Self = StObject.set(x, "selector-class", js.undefined)
       
-      @scala.inline
-      def `setSelector-id`(value: T): Self = StObject.set(x, "selector-id", value.asInstanceOf[js.Any])
+      inline def `setSelector-id`(value: T): Self = StObject.set(x, "selector-id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setSelector-idUndefined`: Self = StObject.set(x, "selector-id", js.undefined)
+      inline def `setSelector-idUndefined`: Self = StObject.set(x, "selector-id", js.undefined)
       
-      @scala.inline
-      def `setSelector-pseudo`(value: T): Self = StObject.set(x, "selector-pseudo", value.asInstanceOf[js.Any])
+      inline def `setSelector-pseudo`(value: T): Self = StObject.set(x, "selector-pseudo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setSelector-pseudoUndefined`: Self = StObject.set(x, "selector-pseudo", js.undefined)
+      inline def `setSelector-pseudoUndefined`: Self = StObject.set(x, "selector-pseudo", js.undefined)
       
-      @scala.inline
-      def `setSelector-tag`(value: T): Self = StObject.set(x, "selector-tag", value.asInstanceOf[js.Any])
+      inline def `setSelector-tag`(value: T): Self = StObject.set(x, "selector-tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setSelector-tagUndefined`: Self = StObject.set(x, "selector-tag", js.undefined)
+      inline def `setSelector-tagUndefined`: Self = StObject.set(x, "selector-tag", js.undefined)
       
-      @scala.inline
-      def setString(value: T): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+      inline def setString(value: T): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
+      inline def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
       
-      @scala.inline
-      def setStrong(value: T): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
+      inline def setStrong(value: T): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrongUndefined: Self = StObject.set(x, "strong", js.undefined)
+      inline def setStrongUndefined: Self = StObject.set(x, "strong", js.undefined)
       
-      @scala.inline
-      def setSubst(value: T): Self = StObject.set(x, "subst", value.asInstanceOf[js.Any])
+      inline def setSubst(value: T): Self = StObject.set(x, "subst", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubstUndefined: Self = StObject.set(x, "subst", js.undefined)
+      inline def setSubstUndefined: Self = StObject.set(x, "subst", js.undefined)
       
-      @scala.inline
-      def setSymbol(value: T): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+      inline def setSymbol(value: T): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+      inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
       
-      @scala.inline
-      def setTag(value: T): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: T): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
       
-      @scala.inline
-      def `setTemplate-tag`(value: T): Self = StObject.set(x, "template-tag", value.asInstanceOf[js.Any])
+      inline def `setTemplate-tag`(value: T): Self = StObject.set(x, "template-tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTemplate-tagUndefined`: Self = StObject.set(x, "template-tag", js.undefined)
+      inline def `setTemplate-tagUndefined`: Self = StObject.set(x, "template-tag", js.undefined)
       
-      @scala.inline
-      def `setTemplate-variable`(value: T): Self = StObject.set(x, "template-variable", value.asInstanceOf[js.Any])
+      inline def `setTemplate-variable`(value: T): Self = StObject.set(x, "template-variable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTemplate-variableUndefined`: Self = StObject.set(x, "template-variable", js.undefined)
+      inline def `setTemplate-variableUndefined`: Self = StObject.set(x, "template-variable", js.undefined)
       
-      @scala.inline
-      def setTitle(value: T): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: T): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setVariable(value: T): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
+      inline def setVariable(value: T): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
+      inline def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
     }
   }
 }

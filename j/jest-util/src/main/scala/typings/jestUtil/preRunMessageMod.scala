@@ -11,9 +11,7 @@ object preRunMessageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def print(stream: WritableStream): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("print")(stream.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def print(stream: WritableStream): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("print")(stream.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def remove(stream: WritableStream): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(stream.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def remove(stream: WritableStream): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(stream.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -20,19 +20,15 @@ trait SchemaCommand extends StObject {
 }
 object SchemaCommand {
   
-  @scala.inline
-  def apply(): SchemaCommand = {
+  inline def apply(): SchemaCommand = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCommand]
   }
   
-  @scala.inline
-  implicit class SchemaCommandMutableBuilder[Self <: SchemaCommand] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCommand](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

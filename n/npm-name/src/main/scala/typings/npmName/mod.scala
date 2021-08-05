@@ -37,10 +37,8 @@ object mod {
   	})();
   	```
   	*/
-  @scala.inline
-  def apply(name: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def apply(name: String, options: Options): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  inline def apply(name: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  inline def apply(name: String, options: Options): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
   
   @JSImport("npm-name", JSImport.Namespace)
   @js.native
@@ -62,8 +60,7 @@ object mod {
   @JSImport("npm-name", "InvalidNameError")
   @js.native
   def InvalidNameError: Instantiable0[InvalidNameErrorClass] = js.native
-  @scala.inline
-  def InvalidNameError_=(x: Instantiable0[InvalidNameErrorClass]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InvalidNameError")(x.asInstanceOf[js.Any])
+  inline def InvalidNameError_=(x: Instantiable0[InvalidNameErrorClass]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InvalidNameError")(x.asInstanceOf[js.Any])
   
   /**
   	Check whether multiple package/organization names are available (not registered) on npm.
@@ -84,10 +81,8 @@ object mod {
   	})();
   	```
   	*/
-  @scala.inline
-  def many[NameType /* <: String */](names: js.Array[NameType]): js.Promise[Map[NameType, Boolean]] = ^.asInstanceOf[js.Dynamic].applyDynamic("many")(names.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Map[NameType, Boolean]]]
-  @scala.inline
-  def many[NameType /* <: String */](names: js.Array[NameType], options: Options): js.Promise[Map[NameType, Boolean]] = (^.asInstanceOf[js.Dynamic].applyDynamic("many")(names.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Map[NameType, Boolean]]]
+  inline def many[NameType /* <: String */](names: js.Array[NameType]): js.Promise[Map[NameType, Boolean]] = ^.asInstanceOf[js.Dynamic].applyDynamic("many")(names.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Map[NameType, Boolean]]]
+  inline def many[NameType /* <: String */](names: js.Array[NameType], options: Options): js.Promise[Map[NameType, Boolean]] = (^.asInstanceOf[js.Dynamic].applyDynamic("many")(names.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Map[NameType, Boolean]]]
   
   type InvalidNameErrorClass = Error
   
@@ -101,17 +96,14 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(registryUrl: String): Options = {
+    inline def apply(registryUrl: String): Options = {
       val __obj = js.Dynamic.literal(registryUrl = registryUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setRegistryUrl(value: String): Self = StObject.set(x, "registryUrl", value.asInstanceOf[js.Any])
+      inline def setRegistryUrl(value: String): Self = StObject.set(x, "registryUrl", value.asInstanceOf[js.Any])
     }
   }
 }

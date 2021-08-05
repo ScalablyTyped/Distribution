@@ -16,25 +16,19 @@ trait MultipartUploadCopyResult extends StObject {
 }
 object MultipartUploadCopyResult {
   
-  @scala.inline
-  def apply(bucket: String, etag: String, name: String, res: NormalSuccessResponse): MultipartUploadCopyResult = {
+  inline def apply(bucket: String, etag: String, name: String, res: NormalSuccessResponse): MultipartUploadCopyResult = {
     val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any], etag = etag.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultipartUploadCopyResult]
   }
   
-  @scala.inline
-  implicit class MultipartUploadCopyResultMutableBuilder[Self <: MultipartUploadCopyResult] (val x: Self) extends AnyVal {
+  extension [Self <: MultipartUploadCopyResult](x: Self) {
     
-    @scala.inline
-    def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+    inline def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
   }
 }

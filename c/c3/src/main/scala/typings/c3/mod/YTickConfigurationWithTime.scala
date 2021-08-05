@@ -13,19 +13,15 @@ trait YTickConfigurationWithTime
 }
 object YTickConfigurationWithTime {
   
-  @scala.inline
-  def apply(): YTickConfigurationWithTime = {
+  inline def apply(): YTickConfigurationWithTime = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[YTickConfigurationWithTime]
   }
   
-  @scala.inline
-  implicit class YTickConfigurationWithTimeMutableBuilder[Self <: YTickConfigurationWithTime] (val x: Self) extends AnyVal {
+  extension [Self <: YTickConfigurationWithTime](x: Self) {
     
-    @scala.inline
-    def setTime(value: Interval): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: Interval): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+    inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
   }
 }

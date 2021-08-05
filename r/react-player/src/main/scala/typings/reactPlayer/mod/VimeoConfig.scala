@@ -10,19 +10,15 @@ trait VimeoConfig extends StObject {
 }
 object VimeoConfig {
   
-  @scala.inline
-  def apply(): VimeoConfig = {
+  inline def apply(): VimeoConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VimeoConfig]
   }
   
-  @scala.inline
-  implicit class VimeoConfigMutableBuilder[Self <: VimeoConfig] (val x: Self) extends AnyVal {
+  extension [Self <: VimeoConfig](x: Self) {
     
-    @scala.inline
-    def setPlayerOptions(value: js.Object): Self = StObject.set(x, "playerOptions", value.asInstanceOf[js.Any])
+    inline def setPlayerOptions(value: js.Object): Self = StObject.set(x, "playerOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerOptionsUndefined: Self = StObject.set(x, "playerOptions", js.undefined)
+    inline def setPlayerOptionsUndefined: Self = StObject.set(x, "playerOptions", js.undefined)
   }
 }

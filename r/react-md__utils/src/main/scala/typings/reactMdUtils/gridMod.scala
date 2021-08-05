@@ -121,80 +121,56 @@ object gridMod {
   }
   object GridProps {
     
-    @scala.inline
-    def apply(): GridProps = {
+    inline def apply(): GridProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GridProps]
     }
     
-    @scala.inline
-    implicit class GridPropsMutableBuilder[Self <: GridProps] (val x: Self) extends AnyVal {
+    extension [Self <: GridProps](x: Self) {
       
-      @scala.inline
-      def setCloneStyles(value: Boolean): Self = StObject.set(x, "cloneStyles", value.asInstanceOf[js.Any])
+      inline def setCloneStyles(value: Boolean): Self = StObject.set(x, "cloneStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloneStylesUndefined: Self = StObject.set(x, "cloneStyles", js.undefined)
+      inline def setCloneStylesUndefined: Self = StObject.set(x, "cloneStyles", js.undefined)
       
-      @scala.inline
-      def setClone_(value: Boolean): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
+      inline def setClone_(value: Boolean): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
+      inline def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
       
-      @scala.inline
-      def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+      inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      @scala.inline
-      def setDesktopColumns(value: Double): Self = StObject.set(x, "desktopColumns", value.asInstanceOf[js.Any])
+      inline def setDesktopColumns(value: Double): Self = StObject.set(x, "desktopColumns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDesktopColumnsUndefined: Self = StObject.set(x, "desktopColumns", js.undefined)
+      inline def setDesktopColumnsUndefined: Self = StObject.set(x, "desktopColumns", js.undefined)
       
-      @scala.inline
-      def setGutter(value: String): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
+      inline def setGutter(value: String): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGutterUndefined: Self = StObject.set(x, "gutter", js.undefined)
+      inline def setGutterUndefined: Self = StObject.set(x, "gutter", js.undefined)
       
-      @scala.inline
-      def setLargeDesktopColumns(value: Double): Self = StObject.set(x, "largeDesktopColumns", value.asInstanceOf[js.Any])
+      inline def setLargeDesktopColumns(value: Double): Self = StObject.set(x, "largeDesktopColumns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLargeDesktopColumnsUndefined: Self = StObject.set(x, "largeDesktopColumns", js.undefined)
+      inline def setLargeDesktopColumnsUndefined: Self = StObject.set(x, "largeDesktopColumns", js.undefined)
       
-      @scala.inline
-      def setMinCellWidth(value: `min-content` | `max-content` | auto | String): Self = StObject.set(x, "minCellWidth", value.asInstanceOf[js.Any])
+      inline def setMinCellWidth(value: `min-content` | `max-content` | auto | String): Self = StObject.set(x, "minCellWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinCellWidthUndefined: Self = StObject.set(x, "minCellWidth", js.undefined)
+      inline def setMinCellWidthUndefined: Self = StObject.set(x, "minCellWidth", js.undefined)
       
-      @scala.inline
-      def setPadding(value: Double | String): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: Double | String): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      @scala.inline
-      def setPhoneColumns(value: Double): Self = StObject.set(x, "phoneColumns", value.asInstanceOf[js.Any])
+      inline def setPhoneColumns(value: Double): Self = StObject.set(x, "phoneColumns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhoneColumnsUndefined: Self = StObject.set(x, "phoneColumns", js.undefined)
+      inline def setPhoneColumnsUndefined: Self = StObject.set(x, "phoneColumns", js.undefined)
       
-      @scala.inline
-      def setTabletColumns(value: Double): Self = StObject.set(x, "tabletColumns", value.asInstanceOf[js.Any])
+      inline def setTabletColumns(value: Double): Self = StObject.set(x, "tabletColumns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabletColumnsUndefined: Self = StObject.set(x, "tabletColumns", js.undefined)
+      inline def setTabletColumnsUndefined: Self = StObject.set(x, "tabletColumns", js.undefined)
       
-      @scala.inline
-      def setWrapOnly(value: Boolean): Self = StObject.set(x, "wrapOnly", value.asInstanceOf[js.Any])
+      inline def setWrapOnly(value: Boolean): Self = StObject.set(x, "wrapOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapOnlyUndefined: Self = StObject.set(x, "wrapOnly", js.undefined)
+      inline def setWrapOnlyUndefined: Self = StObject.set(x, "wrapOnly", js.undefined)
     }
   }
 }

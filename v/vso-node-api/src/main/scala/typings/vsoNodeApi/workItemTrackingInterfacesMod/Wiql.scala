@@ -13,16 +13,13 @@ trait Wiql extends StObject {
 }
 object Wiql {
   
-  @scala.inline
-  def apply(query: String): Wiql = {
+  inline def apply(query: String): Wiql = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[Wiql]
   }
   
-  @scala.inline
-  implicit class WiqlMutableBuilder[Self <: Wiql] (val x: Self) extends AnyVal {
+  extension [Self <: Wiql](x: Self) {
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }
 }

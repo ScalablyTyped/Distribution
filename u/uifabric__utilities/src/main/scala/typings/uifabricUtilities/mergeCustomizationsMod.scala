@@ -12,6 +12,5 @@ object mergeCustomizationsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def mergeCustomizations(props: ICustomizerProps, parentContext: ICustomizerContext): ICustomizerContext = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeCustomizations")(props.asInstanceOf[js.Any], parentContext.asInstanceOf[js.Any])).asInstanceOf[ICustomizerContext]
+  inline def mergeCustomizations(props: ICustomizerProps, parentContext: ICustomizerContext): ICustomizerContext = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeCustomizations")(props.asInstanceOf[js.Any], parentContext.asInstanceOf[js.Any])).asInstanceOf[ICustomizerContext]
 }

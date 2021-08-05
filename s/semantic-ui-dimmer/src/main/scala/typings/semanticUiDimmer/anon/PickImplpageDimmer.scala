@@ -11,16 +11,13 @@ trait PickImplpageDimmer extends StObject {
 }
 object PickImplpageDimmer {
   
-  @scala.inline
-  def apply(pageDimmer: String): PickImplpageDimmer = {
+  inline def apply(pageDimmer: String): PickImplpageDimmer = {
     val __obj = js.Dynamic.literal(pageDimmer = pageDimmer.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplpageDimmer]
   }
   
-  @scala.inline
-  implicit class PickImplpageDimmerMutableBuilder[Self <: PickImplpageDimmer] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplpageDimmer](x: Self) {
     
-    @scala.inline
-    def setPageDimmer(value: String): Self = StObject.set(x, "pageDimmer", value.asInstanceOf[js.Any])
+    inline def setPageDimmer(value: String): Self = StObject.set(x, "pageDimmer", value.asInstanceOf[js.Any])
   }
 }

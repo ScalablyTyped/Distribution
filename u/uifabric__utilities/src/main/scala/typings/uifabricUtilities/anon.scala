@@ -22,20 +22,16 @@ object anon {
   }
   object AsyncPlaceholder {
     
-    @scala.inline
-    def apply(): AsyncPlaceholder = {
+    inline def apply(): AsyncPlaceholder = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AsyncPlaceholder]
     }
     
-    @scala.inline
-    implicit class AsyncPlaceholderMutableBuilder[Self <: AsyncPlaceholder] (val x: Self) extends AnyVal {
+    extension [Self <: AsyncPlaceholder](x: Self) {
       
-      @scala.inline
-      def setAsyncPlaceholder(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ js.Any): Self = StObject.set(x, "asyncPlaceholder", value.asInstanceOf[js.Any])
+      inline def setAsyncPlaceholder(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ js.Any): Self = StObject.set(x, "asyncPlaceholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsyncPlaceholderUndefined: Self = StObject.set(x, "asyncPlaceholder", js.undefined)
+      inline def setAsyncPlaceholderUndefined: Self = StObject.set(x, "asyncPlaceholder", js.undefined)
     }
   }
   
@@ -49,8 +45,7 @@ object anon {
   }
   object CachedInputs {
     
-    @scala.inline
-    def apply[TStyleProps, TStyleSet](
+    inline def apply[TStyleProps, TStyleSet](
       __cachedInputs__ : js.Array[js.UndefOr[IStyleFunctionOrObject[TStyleProps, TStyleSet]]],
       __noStyleOverride__ : Boolean
     ): CachedInputs[TStyleProps, TStyleSet] = {
@@ -58,17 +53,13 @@ object anon {
       __obj.asInstanceOf[CachedInputs[TStyleProps, TStyleSet]]
     }
     
-    @scala.inline
-    implicit class CachedInputsMutableBuilder[Self <: CachedInputs[?, ?], TStyleProps, TStyleSet] (val x: Self & (CachedInputs[TStyleProps, TStyleSet])) extends AnyVal {
+    extension [Self <: CachedInputs[?, ?], TStyleProps, TStyleSet](x: Self & (CachedInputs[TStyleProps, TStyleSet])) {
       
-      @scala.inline
-      def set__cachedInputs__(value: js.Array[js.UndefOr[IStyleFunctionOrObject[TStyleProps, TStyleSet]]]): Self = StObject.set(x, "__cachedInputs__", value.asInstanceOf[js.Any])
+      inline def set__cachedInputs__(value: js.Array[js.UndefOr[IStyleFunctionOrObject[TStyleProps, TStyleSet]]]): Self = StObject.set(x, "__cachedInputs__", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__cachedInputs__Varargs(value: (js.UndefOr[IStyleFunctionOrObject[TStyleProps, TStyleSet]])*): Self = StObject.set(x, "__cachedInputs__", js.Array(value :_*))
+      inline def set__cachedInputs__Varargs(value: (js.UndefOr[IStyleFunctionOrObject[TStyleProps, TStyleSet]])*): Self = StObject.set(x, "__cachedInputs__", js.Array(value :_*))
       
-      @scala.inline
-      def set__noStyleOverride__(value: Boolean): Self = StObject.set(x, "__noStyleOverride__", value.asInstanceOf[js.Any])
+      inline def set__noStyleOverride__(value: Boolean): Self = StObject.set(x, "__noStyleOverride__", value.asInstanceOf[js.Any])
     }
   }
   
@@ -80,20 +71,16 @@ object anon {
   }
   object Configurable {
     
-    @scala.inline
-    def apply[T /* <: js.Function */](configurable: Boolean, get: () => T): Configurable[T] = {
+    inline def apply[T /* <: js.Function */](configurable: Boolean, get: () => T): Configurable[T] = {
       val __obj = js.Dynamic.literal(configurable = configurable.asInstanceOf[js.Any], get = js.Any.fromFunction0(get))
       __obj.asInstanceOf[Configurable[T]]
     }
     
-    @scala.inline
-    implicit class ConfigurableMutableBuilder[Self <: Configurable[?], T /* <: js.Function */] (val x: Self & Configurable[T]) extends AnyVal {
+    extension [Self <: Configurable[?], T /* <: js.Function */](x: Self & Configurable[T]) {
       
-      @scala.inline
-      def setConfigurable(value: Boolean): Self = StObject.set(x, "configurable", value.asInstanceOf[js.Any])
+      inline def setConfigurable(value: Boolean): Self = StObject.set(x, "configurable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGet(value: () => T): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+      inline def setGet(value: () => T): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     }
   }
   
@@ -103,20 +90,16 @@ object anon {
   }
   object DefaultRender {
     
-    @scala.inline
-    def apply[T](): DefaultRender[T] = {
+    inline def apply[T](): DefaultRender[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DefaultRender[T]]
     }
     
-    @scala.inline
-    implicit class DefaultRenderMutableBuilder[Self <: DefaultRender[?], T] (val x: Self & DefaultRender[T]) extends AnyVal {
+    extension [Self <: DefaultRender[?], T](x: Self & DefaultRender[T]) {
       
-      @scala.inline
-      def setDefaultRender(value: ComponentType[T]): Self = StObject.set(x, "defaultRender", value.asInstanceOf[js.Any])
+      inline def setDefaultRender(value: ComponentType[T]): Self = StObject.set(x, "defaultRender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultRenderUndefined: Self = StObject.set(x, "defaultRender", js.undefined)
+      inline def setDefaultRenderUndefined: Self = StObject.set(x, "defaultRender", js.undefined)
     }
   }
   
@@ -126,17 +109,14 @@ object anon {
   }
   object Delay {
     
-    @scala.inline
-    def apply(delay: Double): Delay = {
+    inline def apply(delay: Double): Delay = {
       val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any])
       __obj.asInstanceOf[Delay]
     }
     
-    @scala.inline
-    implicit class DelayMutableBuilder[Self <: Delay] (val x: Self) extends AnyVal {
+    extension [Self <: Delay](x: Self) {
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     }
   }
   
@@ -153,17 +133,14 @@ object anon {
   }
   object Focus {
     
-    @scala.inline
-    def apply(focus: () => Unit): Focus = {
+    inline def apply(focus: () => Unit): Focus = {
       val __obj = js.Dynamic.literal(focus = js.Any.fromFunction0(focus))
       __obj.asInstanceOf[Focus]
     }
     
-    @scala.inline
-    implicit class FocusMutableBuilder[Self <: Focus] (val x: Self) extends AnyVal {
+    extension [Self <: Focus](x: Self) {
       
-      @scala.inline
-      def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+      inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     }
   }
   
@@ -175,26 +152,20 @@ object anon {
   }
   object Leading {
     
-    @scala.inline
-    def apply(): Leading = {
+    inline def apply(): Leading = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Leading]
     }
     
-    @scala.inline
-    implicit class LeadingMutableBuilder[Self <: Leading] (val x: Self) extends AnyVal {
+    extension [Self <: Leading](x: Self) {
       
-      @scala.inline
-      def setLeading(value: Boolean): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
+      inline def setLeading(value: Boolean): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeadingUndefined: Self = StObject.set(x, "leading", js.undefined)
+      inline def setLeadingUndefined: Self = StObject.set(x, "leading", js.undefined)
       
-      @scala.inline
-      def setTrailing(value: Boolean): Self = StObject.set(x, "trailing", value.asInstanceOf[js.Any])
+      inline def setTrailing(value: Boolean): Self = StObject.set(x, "trailing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrailingUndefined: Self = StObject.set(x, "trailing", js.undefined)
+      inline def setTrailingUndefined: Self = StObject.set(x, "trailing", js.undefined)
     }
   }
   
@@ -208,32 +179,24 @@ object anon {
   }
   object MaxWait {
     
-    @scala.inline
-    def apply(): MaxWait = {
+    inline def apply(): MaxWait = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MaxWait]
     }
     
-    @scala.inline
-    implicit class MaxWaitMutableBuilder[Self <: MaxWait] (val x: Self) extends AnyVal {
+    extension [Self <: MaxWait](x: Self) {
       
-      @scala.inline
-      def setLeading(value: Boolean): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
+      inline def setLeading(value: Boolean): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeadingUndefined: Self = StObject.set(x, "leading", js.undefined)
+      inline def setLeadingUndefined: Self = StObject.set(x, "leading", js.undefined)
       
-      @scala.inline
-      def setMaxWait(value: Double): Self = StObject.set(x, "maxWait", value.asInstanceOf[js.Any])
+      inline def setMaxWait(value: Double): Self = StObject.set(x, "maxWait", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWaitUndefined: Self = StObject.set(x, "maxWait", js.undefined)
+      inline def setMaxWaitUndefined: Self = StObject.set(x, "maxWait", js.undefined)
       
-      @scala.inline
-      def setTrailing(value: Boolean): Self = StObject.set(x, "trailing", value.asInstanceOf[js.Any])
+      inline def setTrailing(value: Boolean): Self = StObject.set(x, "trailing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrailingUndefined: Self = StObject.set(x, "trailing", js.undefined)
+      inline def setTrailingUndefined: Self = StObject.set(x, "trailing", js.undefined)
     }
   }
   
@@ -244,17 +207,14 @@ object anon {
   }
   object ReadonlyICustomizerContex {
     
-    @scala.inline
-    def apply(customizations: ICustomizations): ReadonlyICustomizerContex = {
+    inline def apply(customizations: ICustomizations): ReadonlyICustomizerContex = {
       val __obj = js.Dynamic.literal(customizations = customizations.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReadonlyICustomizerContex]
     }
     
-    @scala.inline
-    implicit class ReadonlyICustomizerContexMutableBuilder[Self <: ReadonlyICustomizerContex] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyICustomizerContex](x: Self) {
       
-      @scala.inline
-      def setCustomizations(value: ICustomizations): Self = StObject.set(x, "customizations", value.asInstanceOf[js.Any])
+      inline def setCustomizations(value: ICustomizations): Self = StObject.set(x, "customizations", value.asInstanceOf[js.Any])
     }
   }
   
@@ -264,20 +224,16 @@ object anon {
   }
   object RootRef {
     
-    @scala.inline
-    def apply(): RootRef = {
+    inline def apply(): RootRef = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RootRef]
     }
     
-    @scala.inline
-    implicit class RootRefMutableBuilder[Self <: RootRef] (val x: Self) extends AnyVal {
+    extension [Self <: RootRef](x: Self) {
       
-      @scala.inline
-      def setRootRef(value: RefObject[HTMLElement]): Self = StObject.set(x, "rootRef", value.asInstanceOf[js.Any])
+      inline def setRootRef(value: RefObject[HTMLElement]): Self = StObject.set(x, "rootRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootRefUndefined: Self = StObject.set(x, "rootRef", js.undefined)
+      inline def setRootRefUndefined: Self = StObject.set(x, "rootRef", js.undefined)
     }
   }
   
@@ -287,20 +243,16 @@ object anon {
   }
   object Rtl {
     
-    @scala.inline
-    def apply(): Rtl = {
+    inline def apply(): Rtl = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Rtl]
     }
     
-    @scala.inline
-    implicit class RtlMutableBuilder[Self <: Rtl] (val x: Self) extends AnyVal {
+    extension [Self <: Rtl](x: Self) {
       
-      @scala.inline
-      def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
+      inline def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRtlUndefined: Self = StObject.set(x, "rtl", js.undefined)
+      inline def setRtlUndefined: Self = StObject.set(x, "rtl", js.undefined)
     }
   }
 }

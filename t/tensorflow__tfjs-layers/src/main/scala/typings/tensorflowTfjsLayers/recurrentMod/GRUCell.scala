@@ -78,6 +78,5 @@ object GRUCell {
   @JSImport("@tensorflow/tfjs-layers/dist/layers/recurrent", "GRUCell.className")
   @js.native
   def className: String = js.native
-  @scala.inline
-  def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+  inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
 }

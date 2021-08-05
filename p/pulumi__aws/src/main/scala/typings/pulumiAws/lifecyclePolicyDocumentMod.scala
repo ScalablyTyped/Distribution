@@ -22,18 +22,15 @@ object lifecyclePolicyDocumentMod {
   }
   object Action {
     
-    @scala.inline
-    def apply(`type`: Input[expire]): Action = {
+    inline def apply(`type`: Input[expire]): Action = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Action]
     }
     
-    @scala.inline
-    implicit class ActionMutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
+    extension [Self <: Action](x: Self) {
       
-      @scala.inline
-      def setType(value: Input[expire]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Input[expire]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -43,20 +40,16 @@ object lifecyclePolicyDocumentMod {
   }
   object LifecyclePolicyDocument {
     
-    @scala.inline
-    def apply(rules: js.Array[PolicyRule]): LifecyclePolicyDocument = {
+    inline def apply(rules: js.Array[PolicyRule]): LifecyclePolicyDocument = {
       val __obj = js.Dynamic.literal(rules = rules.asInstanceOf[js.Any])
       __obj.asInstanceOf[LifecyclePolicyDocument]
     }
     
-    @scala.inline
-    implicit class LifecyclePolicyDocumentMutableBuilder[Self <: LifecyclePolicyDocument] (val x: Self) extends AnyVal {
+    extension [Self <: LifecyclePolicyDocument](x: Self) {
       
-      @scala.inline
-      def setRules(value: js.Array[PolicyRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: js.Array[PolicyRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesVarargs(value: PolicyRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: PolicyRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
     }
   }
   
@@ -84,29 +77,22 @@ object lifecyclePolicyDocumentMod {
   }
   object PolicyRule {
     
-    @scala.inline
-    def apply(action: Action, rulePriority: Input[Double], selection: Selection): PolicyRule = {
+    inline def apply(action: Action, rulePriority: Input[Double], selection: Selection): PolicyRule = {
       val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], rulePriority = rulePriority.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any])
       __obj.asInstanceOf[PolicyRule]
     }
     
-    @scala.inline
-    implicit class PolicyRuleMutableBuilder[Self <: PolicyRule] (val x: Self) extends AnyVal {
+    extension [Self <: PolicyRule](x: Self) {
       
-      @scala.inline
-      def setAction(value: Action): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: Action): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setRulePriority(value: Input[Double]): Self = StObject.set(x, "rulePriority", value.asInstanceOf[js.Any])
+      inline def setRulePriority(value: Input[Double]): Self = StObject.set(x, "rulePriority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelection(value: Selection): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+      inline def setSelection(value: Selection): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     }
   }
   
@@ -139,8 +125,7 @@ object lifecyclePolicyDocumentMod {
   }
   object Selection {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       countNumber: Input[Double],
       countType: Input[imageCountMoreThan | sinceImagePushed],
       tagStatus: Input[tagged | untagged | any]
@@ -149,32 +134,23 @@ object lifecyclePolicyDocumentMod {
       __obj.asInstanceOf[Selection]
     }
     
-    @scala.inline
-    implicit class SelectionMutableBuilder[Self <: Selection] (val x: Self) extends AnyVal {
+    extension [Self <: Selection](x: Self) {
       
-      @scala.inline
-      def setCountNumber(value: Input[Double]): Self = StObject.set(x, "countNumber", value.asInstanceOf[js.Any])
+      inline def setCountNumber(value: Input[Double]): Self = StObject.set(x, "countNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountType(value: Input[imageCountMoreThan | sinceImagePushed]): Self = StObject.set(x, "countType", value.asInstanceOf[js.Any])
+      inline def setCountType(value: Input[imageCountMoreThan | sinceImagePushed]): Self = StObject.set(x, "countType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountUnit(value: Input[String]): Self = StObject.set(x, "countUnit", value.asInstanceOf[js.Any])
+      inline def setCountUnit(value: Input[String]): Self = StObject.set(x, "countUnit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountUnitUndefined: Self = StObject.set(x, "countUnit", js.undefined)
+      inline def setCountUnitUndefined: Self = StObject.set(x, "countUnit", js.undefined)
       
-      @scala.inline
-      def setTagPrefixList(value: Input[String] | js.Array[Input[String]]): Self = StObject.set(x, "tagPrefixList", value.asInstanceOf[js.Any])
+      inline def setTagPrefixList(value: Input[String] | js.Array[Input[String]]): Self = StObject.set(x, "tagPrefixList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagPrefixListUndefined: Self = StObject.set(x, "tagPrefixList", js.undefined)
+      inline def setTagPrefixListUndefined: Self = StObject.set(x, "tagPrefixList", js.undefined)
       
-      @scala.inline
-      def setTagPrefixListVarargs(value: Input[String]*): Self = StObject.set(x, "tagPrefixList", js.Array(value :_*))
+      inline def setTagPrefixListVarargs(value: Input[String]*): Self = StObject.set(x, "tagPrefixList", js.Array(value :_*))
       
-      @scala.inline
-      def setTagStatus(value: Input[tagged | untagged | any]): Self = StObject.set(x, "tagStatus", value.asInstanceOf[js.Any])
+      inline def setTagStatus(value: Input[tagged | untagged | any]): Self = StObject.set(x, "tagStatus", value.asInstanceOf[js.Any])
     }
   }
 }

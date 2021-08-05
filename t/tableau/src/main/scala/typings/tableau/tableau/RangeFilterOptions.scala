@@ -18,22 +18,17 @@ trait RangeFilterOptions extends StObject {
 }
 object RangeFilterOptions {
   
-  @scala.inline
-  def apply(max: Double | Date, min: Double | Date, nullOption: NullOption): RangeFilterOptions = {
+  inline def apply(max: Double | Date, min: Double | Date, nullOption: NullOption): RangeFilterOptions = {
     val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], nullOption = nullOption.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeFilterOptions]
   }
   
-  @scala.inline
-  implicit class RangeFilterOptionsMutableBuilder[Self <: RangeFilterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RangeFilterOptions](x: Self) {
     
-    @scala.inline
-    def setMax(value: Double | Date): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double | Date): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: Double | Date): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double | Date): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNullOption(value: NullOption): Self = StObject.set(x, "nullOption", value.asInstanceOf[js.Any])
+    inline def setNullOption(value: NullOption): Self = StObject.set(x, "nullOption", value.asInstanceOf[js.Any])
   }
 }

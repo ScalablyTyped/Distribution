@@ -14,28 +14,21 @@ trait XcodeVersion extends StObject {
 }
 object XcodeVersion {
   
-  @scala.inline
-  def apply(): XcodeVersion = {
+  inline def apply(): XcodeVersion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[XcodeVersion]
   }
   
-  @scala.inline
-  implicit class XcodeVersionMutableBuilder[Self <: XcodeVersion] (val x: Self) extends AnyVal {
+  extension [Self <: XcodeVersion](x: Self) {
     
-    @scala.inline
-    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

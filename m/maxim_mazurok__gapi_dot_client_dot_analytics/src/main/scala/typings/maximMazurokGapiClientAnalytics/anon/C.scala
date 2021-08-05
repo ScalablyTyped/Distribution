@@ -10,22 +10,17 @@ trait C extends StObject {
 }
 object C {
   
-  @scala.inline
-  def apply(): C = {
+  inline def apply(): C = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[C]
   }
   
-  @scala.inline
-  implicit class CMutableBuilder[Self <: C] (val x: Self) extends AnyVal {
+  extension [Self <: C](x: Self) {
     
-    @scala.inline
-    def setC(value: js.Array[V]): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
+    inline def setC(value: js.Array[V]): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCUndefined: Self = StObject.set(x, "c", js.undefined)
+    inline def setCUndefined: Self = StObject.set(x, "c", js.undefined)
     
-    @scala.inline
-    def setCVarargs(value: V*): Self = StObject.set(x, "c", js.Array(value :_*))
+    inline def setCVarargs(value: V*): Self = StObject.set(x, "c", js.Array(value :_*))
   }
 }

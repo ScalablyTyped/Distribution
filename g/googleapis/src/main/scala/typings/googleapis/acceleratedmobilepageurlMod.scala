@@ -40,8 +40,7 @@ object acceleratedmobilepageurlMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         Acceleratedmobilepageurl
       ] = js.native
-    @scala.inline
-    def v1_=(
+    inline def v1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -50,11 +49,9 @@ object acceleratedmobilepageurlMod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def acceleratedmobilepageurl(options: Options): Acceleratedmobilepageurl = ^.asInstanceOf[js.Dynamic].applyDynamic("acceleratedmobilepageurl")(options.asInstanceOf[js.Any]).asInstanceOf[Acceleratedmobilepageurl]
+  inline def acceleratedmobilepageurl(options: Options): Acceleratedmobilepageurl = ^.asInstanceOf[js.Dynamic].applyDynamic("acceleratedmobilepageurl")(options.asInstanceOf[js.Any]).asInstanceOf[Acceleratedmobilepageurl]
   
-  @scala.inline
-  def acceleratedmobilepageurl_v1(version: v1): Acceleratedmobilepageurl = ^.asInstanceOf[js.Dynamic].applyDynamic("acceleratedmobilepageurl")(version.asInstanceOf[js.Any]).asInstanceOf[Acceleratedmobilepageurl]
+  inline def acceleratedmobilepageurl_v1(version: v1): Acceleratedmobilepageurl = ^.asInstanceOf[js.Dynamic].applyDynamic("acceleratedmobilepageurl")(version.asInstanceOf[js.Any]).asInstanceOf[Acceleratedmobilepageurl]
   
   object auth extends Shortcut {
     
@@ -89,8 +86,7 @@ object acceleratedmobilepageurlMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */

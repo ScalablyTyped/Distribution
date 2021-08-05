@@ -9,6 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 sealed trait InterpolationEndingModes extends StObject
 object InterpolationEndingModes {
   
-  @scala.inline
-  def apply(value: scala.Nothing): js.UndefOr[InterpolationEndingModes & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("InterpolationEndingModes")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[InterpolationEndingModes & scala.Nothing]]
+  inline def apply(value: scala.Nothing): js.UndefOr[InterpolationEndingModes & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("InterpolationEndingModes")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[InterpolationEndingModes & scala.Nothing]]
 }

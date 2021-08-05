@@ -28,61 +28,43 @@ trait RoleDefinition
 }
 object RoleDefinition {
   
-  @scala.inline
-  def apply(): RoleDefinition = {
+  inline def apply(): RoleDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RoleDefinition]
   }
   
-  @scala.inline
-  implicit class RoleDefinitionMutableBuilder[Self <: RoleDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: RoleDefinition](x: Self) {
     
-    @scala.inline
-    def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionNull: Self = StObject.set(x, "description", null)
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setIsBuiltIn(value: Boolean): Self = StObject.set(x, "isBuiltIn", value.asInstanceOf[js.Any])
+    inline def setIsBuiltIn(value: Boolean): Self = StObject.set(x, "isBuiltIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsBuiltInUndefined: Self = StObject.set(x, "isBuiltIn", js.undefined)
+    inline def setIsBuiltInUndefined: Self = StObject.set(x, "isBuiltIn", js.undefined)
     
-    @scala.inline
-    def setRoleAssignments(value: NullableOption[js.Array[RoleAssignment]]): Self = StObject.set(x, "roleAssignments", value.asInstanceOf[js.Any])
+    inline def setRoleAssignments(value: NullableOption[js.Array[RoleAssignment]]): Self = StObject.set(x, "roleAssignments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleAssignmentsNull: Self = StObject.set(x, "roleAssignments", null)
+    inline def setRoleAssignmentsNull: Self = StObject.set(x, "roleAssignments", null)
     
-    @scala.inline
-    def setRoleAssignmentsUndefined: Self = StObject.set(x, "roleAssignments", js.undefined)
+    inline def setRoleAssignmentsUndefined: Self = StObject.set(x, "roleAssignments", js.undefined)
     
-    @scala.inline
-    def setRoleAssignmentsVarargs(value: RoleAssignment*): Self = StObject.set(x, "roleAssignments", js.Array(value :_*))
+    inline def setRoleAssignmentsVarargs(value: RoleAssignment*): Self = StObject.set(x, "roleAssignments", js.Array(value :_*))
     
-    @scala.inline
-    def setRolePermissions(value: NullableOption[js.Array[RolePermission]]): Self = StObject.set(x, "rolePermissions", value.asInstanceOf[js.Any])
+    inline def setRolePermissions(value: NullableOption[js.Array[RolePermission]]): Self = StObject.set(x, "rolePermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRolePermissionsNull: Self = StObject.set(x, "rolePermissions", null)
+    inline def setRolePermissionsNull: Self = StObject.set(x, "rolePermissions", null)
     
-    @scala.inline
-    def setRolePermissionsUndefined: Self = StObject.set(x, "rolePermissions", js.undefined)
+    inline def setRolePermissionsUndefined: Self = StObject.set(x, "rolePermissions", js.undefined)
     
-    @scala.inline
-    def setRolePermissionsVarargs(value: RolePermission*): Self = StObject.set(x, "rolePermissions", js.Array(value :_*))
+    inline def setRolePermissionsVarargs(value: RolePermission*): Self = StObject.set(x, "rolePermissions", js.Array(value :_*))
   }
 }

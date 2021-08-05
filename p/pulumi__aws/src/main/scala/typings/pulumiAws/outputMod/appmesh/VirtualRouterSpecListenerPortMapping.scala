@@ -18,19 +18,15 @@ trait VirtualRouterSpecListenerPortMapping extends StObject {
 }
 object VirtualRouterSpecListenerPortMapping {
   
-  @scala.inline
-  def apply(port: Double, protocol: String): VirtualRouterSpecListenerPortMapping = {
+  inline def apply(port: Double, protocol: String): VirtualRouterSpecListenerPortMapping = {
     val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualRouterSpecListenerPortMapping]
   }
   
-  @scala.inline
-  implicit class VirtualRouterSpecListenerPortMappingMutableBuilder[Self <: VirtualRouterSpecListenerPortMapping] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualRouterSpecListenerPortMapping](x: Self) {
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
   }
 }

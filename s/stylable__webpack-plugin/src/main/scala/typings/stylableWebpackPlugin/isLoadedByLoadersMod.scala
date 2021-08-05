@@ -11,6 +11,5 @@ object isLoadedByLoadersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isLoadedByLoaders(module: StylableModule, warn: js.Function1[/* m */ StylableModule, Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isLoadedByLoaders")(module.asInstanceOf[js.Any], warn.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isLoadedByLoaders(module: StylableModule, warn: js.Function1[/* m */ StylableModule, Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isLoadedByLoaders")(module.asInstanceOf[js.Any], warn.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

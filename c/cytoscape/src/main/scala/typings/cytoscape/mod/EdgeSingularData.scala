@@ -23,19 +23,15 @@ trait EdgeSingularData extends StObject {
 }
 object EdgeSingularData {
   
-  @scala.inline
-  def apply(isLoop: () => Boolean, isSimple: () => Boolean): EdgeSingularData = {
+  inline def apply(isLoop: () => Boolean, isSimple: () => Boolean): EdgeSingularData = {
     val __obj = js.Dynamic.literal(isLoop = js.Any.fromFunction0(isLoop), isSimple = js.Any.fromFunction0(isSimple))
     __obj.asInstanceOf[EdgeSingularData]
   }
   
-  @scala.inline
-  implicit class EdgeSingularDataMutableBuilder[Self <: EdgeSingularData] (val x: Self) extends AnyVal {
+  extension [Self <: EdgeSingularData](x: Self) {
     
-    @scala.inline
-    def setIsLoop(value: () => Boolean): Self = StObject.set(x, "isLoop", js.Any.fromFunction0(value))
+    inline def setIsLoop(value: () => Boolean): Self = StObject.set(x, "isLoop", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsSimple(value: () => Boolean): Self = StObject.set(x, "isSimple", js.Any.fromFunction0(value))
+    inline def setIsSimple(value: () => Boolean): Self = StObject.set(x, "isSimple", js.Any.fromFunction0(value))
   }
 }

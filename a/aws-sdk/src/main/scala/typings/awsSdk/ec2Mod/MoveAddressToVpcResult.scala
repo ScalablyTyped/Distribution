@@ -18,25 +18,19 @@ trait MoveAddressToVpcResult extends StObject {
 }
 object MoveAddressToVpcResult {
   
-  @scala.inline
-  def apply(): MoveAddressToVpcResult = {
+  inline def apply(): MoveAddressToVpcResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MoveAddressToVpcResult]
   }
   
-  @scala.inline
-  implicit class MoveAddressToVpcResultMutableBuilder[Self <: MoveAddressToVpcResult] (val x: Self) extends AnyVal {
+  extension [Self <: MoveAddressToVpcResult](x: Self) {
     
-    @scala.inline
-    def setAllocationId(value: String): Self = StObject.set(x, "AllocationId", value.asInstanceOf[js.Any])
+    inline def setAllocationId(value: String): Self = StObject.set(x, "AllocationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllocationIdUndefined: Self = StObject.set(x, "AllocationId", js.undefined)
+    inline def setAllocationIdUndefined: Self = StObject.set(x, "AllocationId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

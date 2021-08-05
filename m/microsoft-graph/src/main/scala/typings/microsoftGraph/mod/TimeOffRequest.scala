@@ -25,40 +25,29 @@ trait TimeOffRequest
 }
 object TimeOffRequest {
   
-  @scala.inline
-  def apply(): TimeOffRequest = {
+  inline def apply(): TimeOffRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimeOffRequest]
   }
   
-  @scala.inline
-  implicit class TimeOffRequestMutableBuilder[Self <: TimeOffRequest] (val x: Self) extends AnyVal {
+  extension [Self <: TimeOffRequest](x: Self) {
     
-    @scala.inline
-    def setEndDateTime(value: NullableOption[String]): Self = StObject.set(x, "endDateTime", value.asInstanceOf[js.Any])
+    inline def setEndDateTime(value: NullableOption[String]): Self = StObject.set(x, "endDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDateTimeNull: Self = StObject.set(x, "endDateTime", null)
+    inline def setEndDateTimeNull: Self = StObject.set(x, "endDateTime", null)
     
-    @scala.inline
-    def setEndDateTimeUndefined: Self = StObject.set(x, "endDateTime", js.undefined)
+    inline def setEndDateTimeUndefined: Self = StObject.set(x, "endDateTime", js.undefined)
     
-    @scala.inline
-    def setStartDateTime(value: NullableOption[String]): Self = StObject.set(x, "startDateTime", value.asInstanceOf[js.Any])
+    inline def setStartDateTime(value: NullableOption[String]): Self = StObject.set(x, "startDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDateTimeNull: Self = StObject.set(x, "startDateTime", null)
+    inline def setStartDateTimeNull: Self = StObject.set(x, "startDateTime", null)
     
-    @scala.inline
-    def setStartDateTimeUndefined: Self = StObject.set(x, "startDateTime", js.undefined)
+    inline def setStartDateTimeUndefined: Self = StObject.set(x, "startDateTime", js.undefined)
     
-    @scala.inline
-    def setTimeOffReasonId(value: NullableOption[String]): Self = StObject.set(x, "timeOffReasonId", value.asInstanceOf[js.Any])
+    inline def setTimeOffReasonId(value: NullableOption[String]): Self = StObject.set(x, "timeOffReasonId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeOffReasonIdNull: Self = StObject.set(x, "timeOffReasonId", null)
+    inline def setTimeOffReasonIdNull: Self = StObject.set(x, "timeOffReasonId", null)
     
-    @scala.inline
-    def setTimeOffReasonIdUndefined: Self = StObject.set(x, "timeOffReasonId", js.undefined)
+    inline def setTimeOffReasonIdUndefined: Self = StObject.set(x, "timeOffReasonId", js.undefined)
   }
 }

@@ -16,20 +16,16 @@ object typesCoreMod {
   }
   object LocaleData {
     
-    @scala.inline
-    def apply[T](data: T, locale: Locale): LocaleData[T] = {
+    inline def apply[T](data: T, locale: Locale): LocaleData[T] = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any])
       __obj.asInstanceOf[LocaleData[T]]
     }
     
-    @scala.inline
-    implicit class LocaleDataMutableBuilder[Self <: LocaleData[?], T] (val x: Self & LocaleData[T]) extends AnyVal {
+    extension [Self <: LocaleData[?], T](x: Self & LocaleData[T]) {
       
-      @scala.inline
-      def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     }
   }
   
@@ -43,29 +39,22 @@ object typesCoreMod {
   }
   object LookupMatcherResult {
     
-    @scala.inline
-    def apply(locale: String): LookupMatcherResult = {
+    inline def apply(locale: String): LookupMatcherResult = {
       val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any])
       __obj.asInstanceOf[LookupMatcherResult]
     }
     
-    @scala.inline
-    implicit class LookupMatcherResultMutableBuilder[Self <: LookupMatcherResult] (val x: Self) extends AnyVal {
+    extension [Self <: LookupMatcherResult](x: Self) {
       
-      @scala.inline
-      def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+      inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
+      inline def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNu(value: String): Self = StObject.set(x, "nu", value.asInstanceOf[js.Any])
+      inline def setNu(value: String): Self = StObject.set(x, "nu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNuUndefined: Self = StObject.set(x, "nu", js.undefined)
+      inline def setNuUndefined: Self = StObject.set(x, "nu", js.undefined)
     }
   }
 }

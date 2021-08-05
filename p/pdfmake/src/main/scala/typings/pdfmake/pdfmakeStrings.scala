@@ -21,627 +21,534 @@ object pdfmakeStrings {
   sealed trait `1Dot3`
     extends StObject
        with PDFVersion
-  @scala.inline
-  def `1Dot3`: `1Dot3` = "1.3".asInstanceOf[`1Dot3`]
+  inline def `1Dot3`: `1Dot3` = "1.3".asInstanceOf[`1Dot3`]
   
   @js.native
   sealed trait `1Dot4`
     extends StObject
        with PDFVersion
-  @scala.inline
-  def `1Dot4`: `1Dot4` = "1.4".asInstanceOf[`1Dot4`]
+  inline def `1Dot4`: `1Dot4` = "1.4".asInstanceOf[`1Dot4`]
   
   @js.native
   sealed trait `1Dot5`
     extends StObject
        with PDFVersion
-  @scala.inline
-  def `1Dot5`: `1Dot5` = "1.5".asInstanceOf[`1Dot5`]
+  inline def `1Dot5`: `1Dot5` = "1.5".asInstanceOf[`1Dot5`]
   
   @js.native
   sealed trait `1Dot6`
     extends StObject
        with PDFVersion
-  @scala.inline
-  def `1Dot6`: `1Dot6` = "1.6".asInstanceOf[`1Dot6`]
+  inline def `1Dot6`: `1Dot6` = "1.6".asInstanceOf[`1Dot6`]
   
   @js.native
   sealed trait `1Dot7`
     extends StObject
        with PDFVersion
-  @scala.inline
-  def `1Dot7`: `1Dot7` = "1.7".asInstanceOf[`1Dot7`]
+  inline def `1Dot7`: `1Dot7` = "1.7".asInstanceOf[`1Dot7`]
   
   @js.native
   sealed trait `1Dot7ext3`
     extends StObject
        with PDFVersion
-  @scala.inline
-  def `1Dot7ext3`: `1Dot7ext3` = "1.7ext3".asInstanceOf[`1Dot7ext3`]
+  inline def `1Dot7ext3`: `1Dot7ext3` = "1.7ext3".asInstanceOf[`1Dot7ext3`]
   
   @js.native
   sealed trait `2A0`
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def `2A0`: `2A0` = "2A0".asInstanceOf[`2A0`]
+  inline def `2A0`: `2A0` = "2A0".asInstanceOf[`2A0`]
   
   @js.native
   sealed trait `4A0`
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def `4A0`: `4A0` = "4A0".asInstanceOf[`4A0`]
+  inline def `4A0`: `4A0` = "4A0".asInstanceOf[`4A0`]
   
   @js.native
   sealed trait A0
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def A0: A0 = "A0".asInstanceOf[A0]
+  inline def A0: A0 = "A0".asInstanceOf[A0]
   
   @js.native
   sealed trait A1
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def A1: A1 = "A1".asInstanceOf[A1]
+  inline def A1: A1 = "A1".asInstanceOf[A1]
   
   @js.native
   sealed trait A10
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def A10: A10 = "A10".asInstanceOf[A10]
+  inline def A10: A10 = "A10".asInstanceOf[A10]
   
   @js.native
   sealed trait A2
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def A2: A2 = "A2".asInstanceOf[A2]
+  inline def A2: A2 = "A2".asInstanceOf[A2]
   
   @js.native
   sealed trait A3
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def A3: A3 = "A3".asInstanceOf[A3]
+  inline def A3: A3 = "A3".asInstanceOf[A3]
   
   @js.native
   sealed trait A4
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def A4: A4 = "A4".asInstanceOf[A4]
+  inline def A4: A4 = "A4".asInstanceOf[A4]
   
   @js.native
   sealed trait A5
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def A5: A5 = "A5".asInstanceOf[A5]
+  inline def A5: A5 = "A5".asInstanceOf[A5]
   
   @js.native
   sealed trait A6
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def A6: A6 = "A6".asInstanceOf[A6]
+  inline def A6: A6 = "A6".asInstanceOf[A6]
   
   @js.native
   sealed trait A7
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def A7: A7 = "A7".asInstanceOf[A7]
+  inline def A7: A7 = "A7".asInstanceOf[A7]
   
   @js.native
   sealed trait A8
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def A8: A8 = "A8".asInstanceOf[A8]
+  inline def A8: A8 = "A8".asInstanceOf[A8]
   
   @js.native
   sealed trait A9
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def A9: A9 = "A9".asInstanceOf[A9]
+  inline def A9: A9 = "A9".asInstanceOf[A9]
   
   @js.native
   sealed trait Asterisk
     extends StObject
        with _Size
-  @scala.inline
-  def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
+  inline def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   
   @js.native
   sealed trait B0
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def B0: B0 = "B0".asInstanceOf[B0]
+  inline def B0: B0 = "B0".asInstanceOf[B0]
   
   @js.native
   sealed trait B1
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def B1: B1 = "B1".asInstanceOf[B1]
+  inline def B1: B1 = "B1".asInstanceOf[B1]
   
   @js.native
   sealed trait B10
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def B10: B10 = "B10".asInstanceOf[B10]
+  inline def B10: B10 = "B10".asInstanceOf[B10]
   
   @js.native
   sealed trait B2
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def B2: B2 = "B2".asInstanceOf[B2]
+  inline def B2: B2 = "B2".asInstanceOf[B2]
   
   @js.native
   sealed trait B3
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def B3: B3 = "B3".asInstanceOf[B3]
+  inline def B3: B3 = "B3".asInstanceOf[B3]
   
   @js.native
   sealed trait B4
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def B4: B4 = "B4".asInstanceOf[B4]
+  inline def B4: B4 = "B4".asInstanceOf[B4]
   
   @js.native
   sealed trait B5
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def B5: B5 = "B5".asInstanceOf[B5]
+  inline def B5: B5 = "B5".asInstanceOf[B5]
   
   @js.native
   sealed trait B6
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def B6: B6 = "B6".asInstanceOf[B6]
+  inline def B6: B6 = "B6".asInstanceOf[B6]
   
   @js.native
   sealed trait B7
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def B7: B7 = "B7".asInstanceOf[B7]
+  inline def B7: B7 = "B7".asInstanceOf[B7]
   
   @js.native
   sealed trait B8
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def B8: B8 = "B8".asInstanceOf[B8]
+  inline def B8: B8 = "B8".asInstanceOf[B8]
   
   @js.native
   sealed trait B9
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def B9: B9 = "B9".asInstanceOf[B9]
+  inline def B9: B9 = "B9".asInstanceOf[B9]
   
   @js.native
   sealed trait C0
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def C0: C0 = "C0".asInstanceOf[C0]
+  inline def C0: C0 = "C0".asInstanceOf[C0]
   
   @js.native
   sealed trait C1
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def C1: C1 = "C1".asInstanceOf[C1]
+  inline def C1: C1 = "C1".asInstanceOf[C1]
   
   @js.native
   sealed trait C10
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def C10: C10 = "C10".asInstanceOf[C10]
+  inline def C10: C10 = "C10".asInstanceOf[C10]
   
   @js.native
   sealed trait C2
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def C2: C2 = "C2".asInstanceOf[C2]
+  inline def C2: C2 = "C2".asInstanceOf[C2]
   
   @js.native
   sealed trait C3
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def C3: C3 = "C3".asInstanceOf[C3]
+  inline def C3: C3 = "C3".asInstanceOf[C3]
   
   @js.native
   sealed trait C4
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def C4: C4 = "C4".asInstanceOf[C4]
+  inline def C4: C4 = "C4".asInstanceOf[C4]
   
   @js.native
   sealed trait C5
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def C5: C5 = "C5".asInstanceOf[C5]
+  inline def C5: C5 = "C5".asInstanceOf[C5]
   
   @js.native
   sealed trait C6
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def C6: C6 = "C6".asInstanceOf[C6]
+  inline def C6: C6 = "C6".asInstanceOf[C6]
   
   @js.native
   sealed trait C7
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def C7: C7 = "C7".asInstanceOf[C7]
+  inline def C7: C7 = "C7".asInstanceOf[C7]
   
   @js.native
   sealed trait C8
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def C8: C8 = "C8".asInstanceOf[C8]
+  inline def C8: C8 = "C8".asInstanceOf[C8]
   
   @js.native
   sealed trait C9
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def C9: C9 = "C9".asInstanceOf[C9]
+  inline def C9: C9 = "C9".asInstanceOf[C9]
   
   @js.native
   sealed trait EXECUTIVE
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def EXECUTIVE: EXECUTIVE = "EXECUTIVE".asInstanceOf[EXECUTIVE]
+  inline def EXECUTIVE: EXECUTIVE = "EXECUTIVE".asInstanceOf[EXECUTIVE]
   
   @js.native
   sealed trait FOLIO
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def FOLIO: FOLIO = "FOLIO".asInstanceOf[FOLIO]
+  inline def FOLIO: FOLIO = "FOLIO".asInstanceOf[FOLIO]
   
   @js.native
   sealed trait H extends StObject
-  @scala.inline
-  def H: H = "H".asInstanceOf[H]
+  inline def H: H = "H".asInstanceOf[H]
   
   @js.native
   sealed trait L extends StObject
-  @scala.inline
-  def L: L = "L".asInstanceOf[L]
+  inline def L: L = "L".asInstanceOf[L]
   
   @js.native
   sealed trait LEGAL
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def LEGAL: LEGAL = "LEGAL".asInstanceOf[LEGAL]
+  inline def LEGAL: LEGAL = "LEGAL".asInstanceOf[LEGAL]
   
   @js.native
   sealed trait LETTER
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def LETTER: LETTER = "LETTER".asInstanceOf[LETTER]
+  inline def LETTER: LETTER = "LETTER".asInstanceOf[LETTER]
   
   @js.native
   sealed trait M extends StObject
-  @scala.inline
-  def M: M = "M".asInstanceOf[M]
+  inline def M: M = "M".asInstanceOf[M]
   
   @js.native
   sealed trait Q extends StObject
-  @scala.inline
-  def Q: Q = "Q".asInstanceOf[Q]
+  inline def Q: Q = "Q".asInstanceOf[Q]
   
   @js.native
   sealed trait RA1
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def RA1: RA1 = "RA1".asInstanceOf[RA1]
+  inline def RA1: RA1 = "RA1".asInstanceOf[RA1]
   
   @js.native
   sealed trait RA2
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def RA2: RA2 = "RA2".asInstanceOf[RA2]
+  inline def RA2: RA2 = "RA2".asInstanceOf[RA2]
   
   @js.native
   sealed trait RA3
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def RA3: RA3 = "RA3".asInstanceOf[RA3]
+  inline def RA3: RA3 = "RA3".asInstanceOf[RA3]
   
   @js.native
   sealed trait RA4
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def RA4: RA4 = "RA4".asInstanceOf[RA4]
+  inline def RA4: RA4 = "RA4".asInstanceOf[RA4]
   
   @js.native
   sealed trait SRA1
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def SRA1: SRA1 = "SRA1".asInstanceOf[SRA1]
+  inline def SRA1: SRA1 = "SRA1".asInstanceOf[SRA1]
   
   @js.native
   sealed trait SRA2
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def SRA2: SRA2 = "SRA2".asInstanceOf[SRA2]
+  inline def SRA2: SRA2 = "SRA2".asInstanceOf[SRA2]
   
   @js.native
   sealed trait SRA3
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def SRA3: SRA3 = "SRA3".asInstanceOf[SRA3]
+  inline def SRA3: SRA3 = "SRA3".asInstanceOf[SRA3]
   
   @js.native
   sealed trait SRA4
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def SRA4: SRA4 = "SRA4".asInstanceOf[SRA4]
+  inline def SRA4: SRA4 = "SRA4".asInstanceOf[SRA4]
   
   @js.native
   sealed trait TABLOID
     extends StObject
        with PredefinedPageSize
-  @scala.inline
-  def TABLOID: TABLOID = "TABLOID".asInstanceOf[TABLOID]
+  inline def TABLOID: TABLOID = "TABLOID".asInstanceOf[TABLOID]
   
   @js.native
   sealed trait after
     extends StObject
        with PageBreak
-  @scala.inline
-  def after: after = "after".asInstanceOf[after]
+  inline def after: after = "after".asInstanceOf[after]
   
   @js.native
   sealed trait alphanumeric extends StObject
-  @scala.inline
-  def alphanumeric: alphanumeric = "alphanumeric".asInstanceOf[alphanumeric]
+  inline def alphanumeric: alphanumeric = "alphanumeric".asInstanceOf[alphanumeric]
   
   @js.native
   sealed trait auto
     extends StObject
        with _Size
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
   sealed trait before
     extends StObject
        with PageBreak
-  @scala.inline
-  def before: before = "before".asInstanceOf[before]
+  inline def before: before = "before".asInstanceOf[before]
   
   @js.native
   sealed trait center
     extends StObject
        with Alignment
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
+  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
   sealed trait circle
     extends StObject
        with UnorderedListType
-  @scala.inline
-  def circle: circle = "circle".asInstanceOf[circle]
+  inline def circle: circle = "circle".asInstanceOf[circle]
   
   @js.native
   sealed trait dashed
     extends StObject
        with DecorationStyle
-  @scala.inline
-  def dashed: dashed = "dashed".asInstanceOf[dashed]
+  inline def dashed: dashed = "dashed".asInstanceOf[dashed]
   
   @js.native
   sealed trait dotted
     extends StObject
        with DecorationStyle
-  @scala.inline
-  def dotted: dotted = "dotted".asInstanceOf[dotted]
+  inline def dotted: dotted = "dotted".asInstanceOf[dotted]
   
   @js.native
   sealed trait double
     extends StObject
        with DecorationStyle
-  @scala.inline
-  def double: double = "double".asInstanceOf[double]
+  inline def double: double = "double".asInstanceOf[double]
   
   @js.native
   sealed trait ellipse extends StObject
-  @scala.inline
-  def ellipse: ellipse = "ellipse".asInstanceOf[ellipse]
+  inline def ellipse: ellipse = "ellipse".asInstanceOf[ellipse]
   
   @js.native
   sealed trait headerLineOnly
     extends StObject
        with PredefinedTableLayout
-  @scala.inline
-  def headerLineOnly: headerLineOnly = "headerLineOnly".asInstanceOf[headerLineOnly]
+  inline def headerLineOnly: headerLineOnly = "headerLineOnly".asInstanceOf[headerLineOnly]
   
   @js.native
   sealed trait justify
     extends StObject
        with Alignment
-  @scala.inline
-  def justify: justify = "justify".asInstanceOf[justify]
+  inline def justify: justify = "justify".asInstanceOf[justify]
   
   @js.native
   sealed trait landscape
     extends StObject
        with PageOrientation
-  @scala.inline
-  def landscape: landscape = "landscape".asInstanceOf[landscape]
+  inline def landscape: landscape = "landscape".asInstanceOf[landscape]
   
   @js.native
   sealed trait left
     extends StObject
        with Alignment
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
   sealed trait lightHorizontalLines
     extends StObject
        with PredefinedTableLayout
-  @scala.inline
-  def lightHorizontalLines: lightHorizontalLines = "lightHorizontalLines".asInstanceOf[lightHorizontalLines]
+  inline def lightHorizontalLines: lightHorizontalLines = "lightHorizontalLines".asInstanceOf[lightHorizontalLines]
   
   @js.native
   sealed trait line extends StObject
-  @scala.inline
-  def line: line = "line".asInstanceOf[line]
+  inline def line: line = "line".asInstanceOf[line]
   
   @js.native
   sealed trait lineThrough
     extends StObject
        with Decoration
-  @scala.inline
-  def lineThrough: lineThrough = "lineThrough".asInstanceOf[lineThrough]
+  inline def lineThrough: lineThrough = "lineThrough".asInstanceOf[lineThrough]
   
   @js.native
   sealed trait `lower-alpha`
     extends StObject
        with OrderedListType
-  @scala.inline
-  def `lower-alpha`: `lower-alpha` = "lower-alpha".asInstanceOf[`lower-alpha`]
+  inline def `lower-alpha`: `lower-alpha` = "lower-alpha".asInstanceOf[`lower-alpha`]
   
   @js.native
   sealed trait `lower-roman`
     extends StObject
        with OrderedListType
-  @scala.inline
-  def `lower-roman`: `lower-roman` = "lower-roman".asInstanceOf[`lower-roman`]
+  inline def `lower-roman`: `lower-roman` = "lower-roman".asInstanceOf[`lower-roman`]
   
   @js.native
   sealed trait noBorders
     extends StObject
        with PredefinedTableLayout
-  @scala.inline
-  def noBorders: noBorders = "noBorders".asInstanceOf[noBorders]
+  inline def noBorders: noBorders = "noBorders".asInstanceOf[noBorders]
   
   @js.native
   sealed trait none
     extends StObject
        with OrderedListType
        with UnorderedListType
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait numeric extends StObject
-  @scala.inline
-  def numeric: numeric = "numeric".asInstanceOf[numeric]
+  inline def numeric: numeric = "numeric".asInstanceOf[numeric]
   
   @js.native
   sealed trait octet extends StObject
-  @scala.inline
-  def octet: octet = "octet".asInstanceOf[octet]
+  inline def octet: octet = "octet".asInstanceOf[octet]
   
   @js.native
   sealed trait overline
     extends StObject
        with Decoration
-  @scala.inline
-  def overline: overline = "overline".asInstanceOf[overline]
+  inline def overline: overline = "overline".asInstanceOf[overline]
   
   @js.native
   sealed trait polyline extends StObject
-  @scala.inline
-  def polyline: polyline = "polyline".asInstanceOf[polyline]
+  inline def polyline: polyline = "polyline".asInstanceOf[polyline]
   
   @js.native
   sealed trait portrait
     extends StObject
        with PageOrientation
-  @scala.inline
-  def portrait: portrait = "portrait".asInstanceOf[portrait]
+  inline def portrait: portrait = "portrait".asInstanceOf[portrait]
   
   @js.native
   sealed trait rect extends StObject
-  @scala.inline
-  def rect: rect = "rect".asInstanceOf[rect]
+  inline def rect: rect = "rect".asInstanceOf[rect]
   
   @js.native
   sealed trait right
     extends StObject
        with Alignment
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
   sealed trait round extends StObject
-  @scala.inline
-  def round: round = "round".asInstanceOf[round]
+  inline def round: round = "round".asInstanceOf[round]
   
   @js.native
   sealed trait square
     extends StObject
        with UnorderedListType
-  @scala.inline
-  def square: square = "square".asInstanceOf[square]
+  inline def square: square = "square".asInstanceOf[square]
   
   @js.native
   sealed trait underline
     extends StObject
        with Decoration
-  @scala.inline
-  def underline: underline = "underline".asInstanceOf[underline]
+  inline def underline: underline = "underline".asInstanceOf[underline]
   
   @js.native
   sealed trait `upper-alpha`
     extends StObject
        with OrderedListType
-  @scala.inline
-  def `upper-alpha`: `upper-alpha` = "upper-alpha".asInstanceOf[`upper-alpha`]
+  inline def `upper-alpha`: `upper-alpha` = "upper-alpha".asInstanceOf[`upper-alpha`]
   
   @js.native
   sealed trait `upper-roman`
     extends StObject
        with OrderedListType
-  @scala.inline
-  def `upper-roman`: `upper-roman` = "upper-roman".asInstanceOf[`upper-roman`]
+  inline def `upper-roman`: `upper-roman` = "upper-roman".asInstanceOf[`upper-roman`]
   
   @js.native
   sealed trait wavy
     extends StObject
        with DecorationStyle
-  @scala.inline
-  def wavy: wavy = "wavy".asInstanceOf[wavy]
+  inline def wavy: wavy = "wavy".asInstanceOf[wavy]
 }

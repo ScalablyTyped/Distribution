@@ -12,25 +12,19 @@ trait LayerOptions extends StObject {
 }
 object LayerOptions {
   
-  @scala.inline
-  def apply(): LayerOptions = {
+  inline def apply(): LayerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LayerOptions]
   }
   
-  @scala.inline
-  implicit class LayerOptionsMutableBuilder[Self <: LayerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LayerOptions](x: Self) {
     
-    @scala.inline
-    def setAttribution(value: String): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
+    inline def setAttribution(value: String): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributionUndefined: Self = StObject.set(x, "attribution", js.undefined)
+    inline def setAttributionUndefined: Self = StObject.set(x, "attribution", js.undefined)
     
-    @scala.inline
-    def setPane(value: String): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
+    inline def setPane(value: String): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
+    inline def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
   }
 }

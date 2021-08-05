@@ -31,29 +31,22 @@ object subjectChangeMapMod {
   }
   object SubjectChangeMap {
     
-    @scala.inline
-    def apply(value: Subject | js.Any): SubjectChangeMap = {
+    inline def apply(value: Subject | js.Any): SubjectChangeMap = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[SubjectChangeMap]
     }
     
-    @scala.inline
-    implicit class SubjectChangeMapMutableBuilder[Self <: SubjectChangeMap] (val x: Self) extends AnyVal {
+    extension [Self <: SubjectChangeMap](x: Self) {
       
-      @scala.inline
-      def setColumn(value: ColumnMetadata): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: ColumnMetadata): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+      inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
       
-      @scala.inline
-      def setRelation(value: RelationMetadata): Self = StObject.set(x, "relation", value.asInstanceOf[js.Any])
+      inline def setRelation(value: RelationMetadata): Self = StObject.set(x, "relation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelationUndefined: Self = StObject.set(x, "relation", js.undefined)
+      inline def setRelationUndefined: Self = StObject.set(x, "relation", js.undefined)
       
-      @scala.inline
-      def setValue(value: Subject | js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Subject | js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

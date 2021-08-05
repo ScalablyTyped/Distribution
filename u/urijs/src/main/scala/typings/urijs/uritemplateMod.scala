@@ -49,26 +49,20 @@ object uritemplateMod extends Shortcut {
   }
   object URITemplateExpression {
     
-    @scala.inline
-    def apply(expression: String, operator: String, variables: js.Array[URITemplateVariable]): URITemplateExpression = {
+    inline def apply(expression: String, operator: String, variables: js.Array[URITemplateVariable]): URITemplateExpression = {
       val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
       __obj.asInstanceOf[URITemplateExpression]
     }
     
-    @scala.inline
-    implicit class URITemplateExpressionMutableBuilder[Self <: URITemplateExpression] (val x: Self) extends AnyVal {
+    extension [Self <: URITemplateExpression](x: Self) {
       
-      @scala.inline
-      def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+      inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+      inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariables(value: js.Array[URITemplateVariable]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+      inline def setVariables(value: js.Array[URITemplateVariable]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariablesVarargs(value: URITemplateVariable*): Self = StObject.set(x, "variables", js.Array(value :_*))
+      inline def setVariablesVarargs(value: URITemplateVariable*): Self = StObject.set(x, "variables", js.Array(value :_*))
     }
   }
   
@@ -98,26 +92,20 @@ object uritemplateMod extends Shortcut {
   }
   object URITemplateVariable {
     
-    @scala.inline
-    def apply(explode: Boolean, name: String): URITemplateVariable = {
+    inline def apply(explode: Boolean, name: String): URITemplateVariable = {
       val __obj = js.Dynamic.literal(explode = explode.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[URITemplateVariable]
     }
     
-    @scala.inline
-    implicit class URITemplateVariableMutableBuilder[Self <: URITemplateVariable] (val x: Self) extends AnyVal {
+    extension [Self <: URITemplateVariable](x: Self) {
       
-      @scala.inline
-      def setExplode(value: Boolean): Self = StObject.set(x, "explode", value.asInstanceOf[js.Any])
+      inline def setExplode(value: Boolean): Self = StObject.set(x, "explode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+      inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
+      inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

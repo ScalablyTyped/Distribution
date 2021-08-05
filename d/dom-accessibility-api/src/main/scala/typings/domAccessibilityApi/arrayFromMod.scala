@@ -12,8 +12,6 @@ object arrayFromMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](iterable: ArrayLike[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
-  @scala.inline
-  def default[T](iterable: Iterable[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def default[T](iterable: ArrayLike[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def default[T](iterable: Iterable[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
 }

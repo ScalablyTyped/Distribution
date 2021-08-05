@@ -17,23 +17,18 @@ object dependencyMod {
   }
   object Dependency {
     
-    @scala.inline
-    def apply(hint: String, mode: Mode, name: String): Dependency = {
+    inline def apply(hint: String, mode: Mode, name: String): Dependency = {
       val __obj = js.Dynamic.literal(hint = hint.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dependency]
     }
     
-    @scala.inline
-    implicit class DependencyMutableBuilder[Self <: Dependency] (val x: Self) extends AnyVal {
+    extension [Self <: Dependency](x: Self) {
       
-      @scala.inline
-      def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
+      inline def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMode(value: Mode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: Mode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

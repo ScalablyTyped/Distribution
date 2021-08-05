@@ -48,8 +48,7 @@ trait DispatchStatement extends StObject {
 }
 object DispatchStatement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     aArgs: SafeArray[PropertyValue],
     aCommand: String,
     aTarget: String,
@@ -60,22 +59,16 @@ object DispatchStatement {
     __obj.asInstanceOf[DispatchStatement]
   }
   
-  @scala.inline
-  implicit class DispatchStatementMutableBuilder[Self <: DispatchStatement] (val x: Self) extends AnyVal {
+  extension [Self <: DispatchStatement](x: Self) {
     
-    @scala.inline
-    def setAArgs(value: SafeArray[PropertyValue]): Self = StObject.set(x, "aArgs", value.asInstanceOf[js.Any])
+    inline def setAArgs(value: SafeArray[PropertyValue]): Self = StObject.set(x, "aArgs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setACommand(value: String): Self = StObject.set(x, "aCommand", value.asInstanceOf[js.Any])
+    inline def setACommand(value: String): Self = StObject.set(x, "aCommand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setATarget(value: String): Self = StObject.set(x, "aTarget", value.asInstanceOf[js.Any])
+    inline def setATarget(value: String): Self = StObject.set(x, "aTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBIsComment(value: Boolean): Self = StObject.set(x, "bIsComment", value.asInstanceOf[js.Any])
+    inline def setBIsComment(value: Boolean): Self = StObject.set(x, "bIsComment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNFlags(value: Double): Self = StObject.set(x, "nFlags", value.asInstanceOf[js.Any])
+    inline def setNFlags(value: Double): Self = StObject.set(x, "nFlags", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait SetZoomSuccessCallbackResult extends StObject {
 }
 object SetZoomSuccessCallbackResult {
   
-  @scala.inline
-  def apply(errMsg: String, zoom: Double): SetZoomSuccessCallbackResult = {
+  inline def apply(errMsg: String, zoom: Double): SetZoomSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetZoomSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class SetZoomSuccessCallbackResultMutableBuilder[Self <: SetZoomSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: SetZoomSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
   }
 }

@@ -10,12 +10,10 @@ object global {
   @js.native
   def Gantt_ : GanttEnterprise = js.native
   
-  @scala.inline
-  def Gantt__=(x: GanttEnterprise): Unit = js.Dynamic.global.updateDynamic("Gantt")(x.asInstanceOf[js.Any])
+  inline def Gantt__=(x: GanttEnterprise): Unit = js.Dynamic.global.updateDynamic("Gantt")(x.asInstanceOf[js.Any])
   
   @JSGlobal("gantt")
   @js.native
   def gantt: GanttStatic = js.native
-  @scala.inline
-  def gantt_=(x: GanttStatic): Unit = js.Dynamic.global.updateDynamic("gantt")(x.asInstanceOf[js.Any])
+  inline def gantt_=(x: GanttStatic): Unit = js.Dynamic.global.updateDynamic("gantt")(x.asInstanceOf[js.Any])
 }

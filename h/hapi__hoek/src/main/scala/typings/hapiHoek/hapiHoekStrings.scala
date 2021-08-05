@@ -8,6 +8,5 @@ object hapiHoekStrings {
   
   @js.native
   sealed trait Without extends StObject
-  @scala.inline
-  def Without: Without = "Without".asInstanceOf[Without]
+  inline def Without: Without = "Without".asInstanceOf[Without]
 }

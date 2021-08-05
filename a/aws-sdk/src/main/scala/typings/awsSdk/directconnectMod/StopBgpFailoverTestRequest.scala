@@ -13,16 +13,13 @@ trait StopBgpFailoverTestRequest extends StObject {
 }
 object StopBgpFailoverTestRequest {
   
-  @scala.inline
-  def apply(virtualInterfaceId: VirtualInterfaceId): StopBgpFailoverTestRequest = {
+  inline def apply(virtualInterfaceId: VirtualInterfaceId): StopBgpFailoverTestRequest = {
     val __obj = js.Dynamic.literal(virtualInterfaceId = virtualInterfaceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopBgpFailoverTestRequest]
   }
   
-  @scala.inline
-  implicit class StopBgpFailoverTestRequestMutableBuilder[Self <: StopBgpFailoverTestRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StopBgpFailoverTestRequest](x: Self) {
     
-    @scala.inline
-    def setVirtualInterfaceId(value: VirtualInterfaceId): Self = StObject.set(x, "virtualInterfaceId", value.asInstanceOf[js.Any])
+    inline def setVirtualInterfaceId(value: VirtualInterfaceId): Self = StObject.set(x, "virtualInterfaceId", value.asInstanceOf[js.Any])
   }
 }

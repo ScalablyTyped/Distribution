@@ -58,58 +58,41 @@ trait Session extends StObject {
 }
 object Session {
   
-  @scala.inline
-  def apply(FleetName: String, Id: String, StackName: String, State: SessionState, UserId: UserId): Session = {
+  inline def apply(FleetName: String, Id: String, StackName: String, State: SessionState, UserId: UserId): Session = {
     val __obj = js.Dynamic.literal(FleetName = FleetName.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], StackName = StackName.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any], UserId = UserId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Session]
   }
   
-  @scala.inline
-  implicit class SessionMutableBuilder[Self <: Session] (val x: Self) extends AnyVal {
+  extension [Self <: Session](x: Self) {
     
-    @scala.inline
-    def setAuthenticationType(value: AuthenticationType): Self = StObject.set(x, "AuthenticationType", value.asInstanceOf[js.Any])
+    inline def setAuthenticationType(value: AuthenticationType): Self = StObject.set(x, "AuthenticationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationTypeUndefined: Self = StObject.set(x, "AuthenticationType", js.undefined)
+    inline def setAuthenticationTypeUndefined: Self = StObject.set(x, "AuthenticationType", js.undefined)
     
-    @scala.inline
-    def setConnectionState(value: SessionConnectionState): Self = StObject.set(x, "ConnectionState", value.asInstanceOf[js.Any])
+    inline def setConnectionState(value: SessionConnectionState): Self = StObject.set(x, "ConnectionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionStateUndefined: Self = StObject.set(x, "ConnectionState", js.undefined)
+    inline def setConnectionStateUndefined: Self = StObject.set(x, "ConnectionState", js.undefined)
     
-    @scala.inline
-    def setFleetName(value: String): Self = StObject.set(x, "FleetName", value.asInstanceOf[js.Any])
+    inline def setFleetName(value: String): Self = StObject.set(x, "FleetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxExpirationTime(value: Timestamp): Self = StObject.set(x, "MaxExpirationTime", value.asInstanceOf[js.Any])
+    inline def setMaxExpirationTime(value: Timestamp): Self = StObject.set(x, "MaxExpirationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxExpirationTimeUndefined: Self = StObject.set(x, "MaxExpirationTime", js.undefined)
+    inline def setMaxExpirationTimeUndefined: Self = StObject.set(x, "MaxExpirationTime", js.undefined)
     
-    @scala.inline
-    def setNetworkAccessConfiguration(value: NetworkAccessConfiguration): Self = StObject.set(x, "NetworkAccessConfiguration", value.asInstanceOf[js.Any])
+    inline def setNetworkAccessConfiguration(value: NetworkAccessConfiguration): Self = StObject.set(x, "NetworkAccessConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkAccessConfigurationUndefined: Self = StObject.set(x, "NetworkAccessConfiguration", js.undefined)
+    inline def setNetworkAccessConfigurationUndefined: Self = StObject.set(x, "NetworkAccessConfiguration", js.undefined)
     
-    @scala.inline
-    def setStackName(value: String): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
+    inline def setStackName(value: String): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
-    @scala.inline
-    def setState(value: SessionState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: SessionState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserId(value: UserId): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: UserId): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
   }
 }

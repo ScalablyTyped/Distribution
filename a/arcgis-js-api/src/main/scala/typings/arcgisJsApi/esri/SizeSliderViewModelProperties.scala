@@ -17,22 +17,17 @@ trait SizeSliderViewModelProperties
 }
 object SizeSliderViewModelProperties {
   
-  @scala.inline
-  def apply(): SizeSliderViewModelProperties = {
+  inline def apply(): SizeSliderViewModelProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SizeSliderViewModelProperties]
   }
   
-  @scala.inline
-  implicit class SizeSliderViewModelPropertiesMutableBuilder[Self <: SizeSliderViewModelProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SizeSliderViewModelProperties](x: Self) {
     
-    @scala.inline
-    def setStops(value: js.Array[SizeStopProperties]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
+    inline def setStops(value: js.Array[SizeStopProperties]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
+    inline def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
     
-    @scala.inline
-    def setStopsVarargs(value: SizeStopProperties*): Self = StObject.set(x, "stops", js.Array(value :_*))
+    inline def setStopsVarargs(value: SizeStopProperties*): Self = StObject.set(x, "stops", js.Array(value :_*))
   }
 }

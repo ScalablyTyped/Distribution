@@ -38,55 +38,39 @@ trait ExportAutoScalingGroupRecommendationsRequest extends StObject {
 }
 object ExportAutoScalingGroupRecommendationsRequest {
   
-  @scala.inline
-  def apply(s3DestinationConfig: S3DestinationConfig): ExportAutoScalingGroupRecommendationsRequest = {
+  inline def apply(s3DestinationConfig: S3DestinationConfig): ExportAutoScalingGroupRecommendationsRequest = {
     val __obj = js.Dynamic.literal(s3DestinationConfig = s3DestinationConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportAutoScalingGroupRecommendationsRequest]
   }
   
-  @scala.inline
-  implicit class ExportAutoScalingGroupRecommendationsRequestMutableBuilder[Self <: ExportAutoScalingGroupRecommendationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ExportAutoScalingGroupRecommendationsRequest](x: Self) {
     
-    @scala.inline
-    def setAccountIds(value: AccountIds): Self = StObject.set(x, "accountIds", value.asInstanceOf[js.Any])
+    inline def setAccountIds(value: AccountIds): Self = StObject.set(x, "accountIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdsUndefined: Self = StObject.set(x, "accountIds", js.undefined)
+    inline def setAccountIdsUndefined: Self = StObject.set(x, "accountIds", js.undefined)
     
-    @scala.inline
-    def setAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "accountIds", js.Array(value :_*))
+    inline def setAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "accountIds", js.Array(value :_*))
     
-    @scala.inline
-    def setFieldsToExport(value: ExportableAutoScalingGroupFields): Self = StObject.set(x, "fieldsToExport", value.asInstanceOf[js.Any])
+    inline def setFieldsToExport(value: ExportableAutoScalingGroupFields): Self = StObject.set(x, "fieldsToExport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsToExportUndefined: Self = StObject.set(x, "fieldsToExport", js.undefined)
+    inline def setFieldsToExportUndefined: Self = StObject.set(x, "fieldsToExport", js.undefined)
     
-    @scala.inline
-    def setFieldsToExportVarargs(value: ExportableAutoScalingGroupField*): Self = StObject.set(x, "fieldsToExport", js.Array(value :_*))
+    inline def setFieldsToExportVarargs(value: ExportableAutoScalingGroupField*): Self = StObject.set(x, "fieldsToExport", js.Array(value :_*))
     
-    @scala.inline
-    def setFileFormat(value: FileFormat): Self = StObject.set(x, "fileFormat", value.asInstanceOf[js.Any])
+    inline def setFileFormat(value: FileFormat): Self = StObject.set(x, "fileFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileFormatUndefined: Self = StObject.set(x, "fileFormat", js.undefined)
+    inline def setFileFormatUndefined: Self = StObject.set(x, "fileFormat", js.undefined)
     
-    @scala.inline
-    def setFilters(value: Filters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: Filters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludeMemberAccounts(value: IncludeMemberAccounts): Self = StObject.set(x, "includeMemberAccounts", value.asInstanceOf[js.Any])
+    inline def setIncludeMemberAccounts(value: IncludeMemberAccounts): Self = StObject.set(x, "includeMemberAccounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeMemberAccountsUndefined: Self = StObject.set(x, "includeMemberAccounts", js.undefined)
+    inline def setIncludeMemberAccountsUndefined: Self = StObject.set(x, "includeMemberAccounts", js.undefined)
     
-    @scala.inline
-    def setS3DestinationConfig(value: S3DestinationConfig): Self = StObject.set(x, "s3DestinationConfig", value.asInstanceOf[js.Any])
+    inline def setS3DestinationConfig(value: S3DestinationConfig): Self = StObject.set(x, "s3DestinationConfig", value.asInstanceOf[js.Any])
   }
 }

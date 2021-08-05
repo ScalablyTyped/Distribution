@@ -12,19 +12,15 @@ trait JumpPointFinderBaseOptions
 }
 object JumpPointFinderBaseOptions {
   
-  @scala.inline
-  def apply(): JumpPointFinderBaseOptions = {
+  inline def apply(): JumpPointFinderBaseOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JumpPointFinderBaseOptions]
   }
   
-  @scala.inline
-  implicit class JumpPointFinderBaseOptionsMutableBuilder[Self <: JumpPointFinderBaseOptions] (val x: Self) extends AnyVal {
+  extension [Self <: JumpPointFinderBaseOptions](x: Self) {
     
-    @scala.inline
-    def setTrackJumpRecursion(value: Boolean): Self = StObject.set(x, "trackJumpRecursion", value.asInstanceOf[js.Any])
+    inline def setTrackJumpRecursion(value: Boolean): Self = StObject.set(x, "trackJumpRecursion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackJumpRecursionUndefined: Self = StObject.set(x, "trackJumpRecursion", js.undefined)
+    inline def setTrackJumpRecursionUndefined: Self = StObject.set(x, "trackJumpRecursion", js.undefined)
   }
 }

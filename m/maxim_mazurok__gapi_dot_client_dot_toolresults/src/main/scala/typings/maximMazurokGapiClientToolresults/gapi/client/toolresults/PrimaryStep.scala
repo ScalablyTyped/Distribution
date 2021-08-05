@@ -14,28 +14,21 @@ trait PrimaryStep extends StObject {
 }
 object PrimaryStep {
   
-  @scala.inline
-  def apply(): PrimaryStep = {
+  inline def apply(): PrimaryStep = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PrimaryStep]
   }
   
-  @scala.inline
-  implicit class PrimaryStepMutableBuilder[Self <: PrimaryStep] (val x: Self) extends AnyVal {
+  extension [Self <: PrimaryStep](x: Self) {
     
-    @scala.inline
-    def setIndividualOutcome(value: js.Array[IndividualOutcome]): Self = StObject.set(x, "individualOutcome", value.asInstanceOf[js.Any])
+    inline def setIndividualOutcome(value: js.Array[IndividualOutcome]): Self = StObject.set(x, "individualOutcome", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndividualOutcomeUndefined: Self = StObject.set(x, "individualOutcome", js.undefined)
+    inline def setIndividualOutcomeUndefined: Self = StObject.set(x, "individualOutcome", js.undefined)
     
-    @scala.inline
-    def setIndividualOutcomeVarargs(value: IndividualOutcome*): Self = StObject.set(x, "individualOutcome", js.Array(value :_*))
+    inline def setIndividualOutcomeVarargs(value: IndividualOutcome*): Self = StObject.set(x, "individualOutcome", js.Array(value :_*))
     
-    @scala.inline
-    def setRollUp(value: String): Self = StObject.set(x, "rollUp", value.asInstanceOf[js.Any])
+    inline def setRollUp(value: String): Self = StObject.set(x, "rollUp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRollUpUndefined: Self = StObject.set(x, "rollUp", js.undefined)
+    inline def setRollUpUndefined: Self = StObject.set(x, "rollUp", js.undefined)
   }
 }

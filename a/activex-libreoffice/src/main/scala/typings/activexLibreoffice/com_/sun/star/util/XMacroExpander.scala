@@ -24,8 +24,7 @@ trait XMacroExpander
 }
 object XMacroExpander {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     expandMacros: String => String,
     queryInterface: `type` => js.Any,
@@ -35,10 +34,8 @@ object XMacroExpander {
     __obj.asInstanceOf[XMacroExpander]
   }
   
-  @scala.inline
-  implicit class XMacroExpanderMutableBuilder[Self <: XMacroExpander] (val x: Self) extends AnyVal {
+  extension [Self <: XMacroExpander](x: Self) {
     
-    @scala.inline
-    def setExpandMacros(value: String => String): Self = StObject.set(x, "expandMacros", js.Any.fromFunction1(value))
+    inline def setExpandMacros(value: String => String): Self = StObject.set(x, "expandMacros", js.Any.fromFunction1(value))
   }
 }

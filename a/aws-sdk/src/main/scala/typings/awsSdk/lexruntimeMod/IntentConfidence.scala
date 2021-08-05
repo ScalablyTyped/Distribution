@@ -13,19 +13,15 @@ trait IntentConfidence extends StObject {
 }
 object IntentConfidence {
   
-  @scala.inline
-  def apply(): IntentConfidence = {
+  inline def apply(): IntentConfidence = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IntentConfidence]
   }
   
-  @scala.inline
-  implicit class IntentConfidenceMutableBuilder[Self <: IntentConfidence] (val x: Self) extends AnyVal {
+  extension [Self <: IntentConfidence](x: Self) {
     
-    @scala.inline
-    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
+    inline def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
   }
 }

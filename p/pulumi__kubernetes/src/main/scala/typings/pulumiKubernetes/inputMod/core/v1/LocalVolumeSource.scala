@@ -22,22 +22,17 @@ trait LocalVolumeSource extends StObject {
 }
 object LocalVolumeSource {
   
-  @scala.inline
-  def apply(path: Input[String]): LocalVolumeSource = {
+  inline def apply(path: Input[String]): LocalVolumeSource = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalVolumeSource]
   }
   
-  @scala.inline
-  implicit class LocalVolumeSourceMutableBuilder[Self <: LocalVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: LocalVolumeSource](x: Self) {
     
-    @scala.inline
-    def setFsType(value: Input[String]): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
+    inline def setFsType(value: Input[String]): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFsTypeUndefined: Self = StObject.set(x, "fsType", js.undefined)
+    inline def setFsTypeUndefined: Self = StObject.set(x, "fsType", js.undefined)
     
-    @scala.inline
-    def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

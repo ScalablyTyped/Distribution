@@ -41,8 +41,7 @@ object gridGridMod extends Shortcut {
        with /* key */ StringDictionary[js.Any]
   object GridProps {
     
-    @scala.inline
-    def apply(): GridProps = {
+    inline def apply(): GridProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GridProps]
     }
@@ -114,116 +113,80 @@ object gridGridMod extends Shortcut {
   }
   object StrictGridProps {
     
-    @scala.inline
-    def apply(): StrictGridProps = {
+    inline def apply(): StrictGridProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictGridProps]
     }
     
-    @scala.inline
-    implicit class StrictGridPropsMutableBuilder[Self <: StrictGridProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictGridProps](x: Self) {
       
-      @scala.inline
-      def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setCelled(value: Boolean | internally): Self = StObject.set(x, "celled", value.asInstanceOf[js.Any])
+      inline def setCelled(value: Boolean | internally): Self = StObject.set(x, "celled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCelledUndefined: Self = StObject.set(x, "celled", js.undefined)
+      inline def setCelledUndefined: Self = StObject.set(x, "celled", js.undefined)
       
-      @scala.inline
-      def setCentered(value: Boolean): Self = StObject.set(x, "centered", value.asInstanceOf[js.Any])
+      inline def setCentered(value: Boolean): Self = StObject.set(x, "centered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCenteredUndefined: Self = StObject.set(x, "centered", js.undefined)
+      inline def setCenteredUndefined: Self = StObject.set(x, "centered", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setColumns(value: SemanticWIDTHS | equal): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: SemanticWIDTHS | equal): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+      inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      @scala.inline
-      def setContainer(value: Boolean): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: Boolean): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
-      @scala.inline
-      def setDivided(value: Boolean | vertically): Self = StObject.set(x, "divided", value.asInstanceOf[js.Any])
+      inline def setDivided(value: Boolean | vertically): Self = StObject.set(x, "divided", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDividedUndefined: Self = StObject.set(x, "divided", js.undefined)
+      inline def setDividedUndefined: Self = StObject.set(x, "divided", js.undefined)
       
-      @scala.inline
-      def setDoubling(value: Boolean): Self = StObject.set(x, "doubling", value.asInstanceOf[js.Any])
+      inline def setDoubling(value: Boolean): Self = StObject.set(x, "doubling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDoublingUndefined: Self = StObject.set(x, "doubling", js.undefined)
+      inline def setDoublingUndefined: Self = StObject.set(x, "doubling", js.undefined)
       
-      @scala.inline
-      def setInverted(value: Boolean): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
+      inline def setInverted(value: Boolean): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvertedUndefined: Self = StObject.set(x, "inverted", js.undefined)
+      inline def setInvertedUndefined: Self = StObject.set(x, "inverted", js.undefined)
       
-      @scala.inline
-      def setPadded(value: Boolean | horizontally | vertically): Self = StObject.set(x, "padded", value.asInstanceOf[js.Any])
+      inline def setPadded(value: Boolean | horizontally | vertically): Self = StObject.set(x, "padded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddedUndefined: Self = StObject.set(x, "padded", js.undefined)
+      inline def setPaddedUndefined: Self = StObject.set(x, "padded", js.undefined)
       
-      @scala.inline
-      def setRelaxed(value: Boolean | very): Self = StObject.set(x, "relaxed", value.asInstanceOf[js.Any])
+      inline def setRelaxed(value: Boolean | very): Self = StObject.set(x, "relaxed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelaxedUndefined: Self = StObject.set(x, "relaxed", js.undefined)
+      inline def setRelaxedUndefined: Self = StObject.set(x, "relaxed", js.undefined)
       
-      @scala.inline
-      def setReversed(value: GridReversedProp): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
+      inline def setReversed(value: GridReversedProp): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
+      inline def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
       
-      @scala.inline
-      def setStackable(value: Boolean): Self = StObject.set(x, "stackable", value.asInstanceOf[js.Any])
+      inline def setStackable(value: Boolean): Self = StObject.set(x, "stackable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackableUndefined: Self = StObject.set(x, "stackable", js.undefined)
+      inline def setStackableUndefined: Self = StObject.set(x, "stackable", js.undefined)
       
-      @scala.inline
-      def setStretched(value: Boolean): Self = StObject.set(x, "stretched", value.asInstanceOf[js.Any])
+      inline def setStretched(value: Boolean): Self = StObject.set(x, "stretched", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStretchedUndefined: Self = StObject.set(x, "stretched", js.undefined)
+      inline def setStretchedUndefined: Self = StObject.set(x, "stretched", js.undefined)
       
-      @scala.inline
-      def setTextAlign(value: SemanticTEXTALIGNMENTS): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+      inline def setTextAlign(value: SemanticTEXTALIGNMENTS): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
+      inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
       
-      @scala.inline
-      def setVerticalAlign(value: SemanticVERTICALALIGNMENTS): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+      inline def setVerticalAlign(value: SemanticVERTICALALIGNMENTS): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
+      inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
     }
   }
   

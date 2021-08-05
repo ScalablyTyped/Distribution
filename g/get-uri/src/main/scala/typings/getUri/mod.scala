@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(uri: String): js.Promise[Readable] = ^.asInstanceOf[js.Dynamic].apply(uri.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Readable]]
+  inline def apply(uri: String): js.Promise[Readable] = ^.asInstanceOf[js.Dynamic].apply(uri.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Readable]]
   /**
     * Async function that returns a `stream.Readable` instance to the
     * callback function that will output the contents of the given URI.
@@ -27,12 +26,9 @@ object mod {
     * @param {Function} fn callback function
     * @api public
     */
-  @scala.inline
-  def apply(uri: String, fn: GetUriCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(uri.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(uri: String, opts: GetUriOptions): js.Promise[Readable] = (^.asInstanceOf[js.Dynamic].apply(uri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Readable]]
-  @scala.inline
-  def apply(uri: String, opts: GetUriOptions, fn: GetUriCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(uri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(uri: String, fn: GetUriCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(uri.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(uri: String, opts: GetUriOptions): js.Promise[Readable] = (^.asInstanceOf[js.Dynamic].apply(uri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Readable]]
+  inline def apply(uri: String, opts: GetUriOptions, fn: GetUriCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(uri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("get-uri", JSImport.Namespace)
   @js.native
@@ -46,20 +42,16 @@ object mod {
   }
   object GetUriOptions {
     
-    @scala.inline
-    def apply(): GetUriOptions = {
+    inline def apply(): GetUriOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetUriOptions]
     }
     
-    @scala.inline
-    implicit class GetUriOptionsMutableBuilder[Self <: GetUriOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GetUriOptions](x: Self) {
       
-      @scala.inline
-      def setCache(value: Readable): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Readable): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     }
   }
   

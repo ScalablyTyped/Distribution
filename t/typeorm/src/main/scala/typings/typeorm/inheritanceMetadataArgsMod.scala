@@ -27,29 +27,22 @@ object inheritanceMetadataArgsMod {
   }
   object InheritanceMetadataArgs {
     
-    @scala.inline
-    def apply(): InheritanceMetadataArgs = {
+    inline def apply(): InheritanceMetadataArgs = {
       val __obj = js.Dynamic.literal(pattern = "STI")
       __obj.asInstanceOf[InheritanceMetadataArgs]
     }
     
-    @scala.inline
-    implicit class InheritanceMetadataArgsMutableBuilder[Self <: InheritanceMetadataArgs] (val x: Self) extends AnyVal {
+    extension [Self <: InheritanceMetadataArgs](x: Self) {
       
-      @scala.inline
-      def setColumn(value: ColumnOptions): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: ColumnOptions): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+      inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
       
-      @scala.inline
-      def setPattern(value: STI): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+      inline def setPattern(value: STI): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: js.Function | String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: js.Function | String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }
   }
 }

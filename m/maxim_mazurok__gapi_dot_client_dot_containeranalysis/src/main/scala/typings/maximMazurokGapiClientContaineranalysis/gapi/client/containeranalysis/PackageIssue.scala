@@ -17,31 +17,23 @@ trait PackageIssue extends StObject {
 }
 object PackageIssue {
   
-  @scala.inline
-  def apply(): PackageIssue = {
+  inline def apply(): PackageIssue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PackageIssue]
   }
   
-  @scala.inline
-  implicit class PackageIssueMutableBuilder[Self <: PackageIssue] (val x: Self) extends AnyVal {
+  extension [Self <: PackageIssue](x: Self) {
     
-    @scala.inline
-    def setAffectedLocation(value: VulnerabilityLocation): Self = StObject.set(x, "affectedLocation", value.asInstanceOf[js.Any])
+    inline def setAffectedLocation(value: VulnerabilityLocation): Self = StObject.set(x, "affectedLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAffectedLocationUndefined: Self = StObject.set(x, "affectedLocation", js.undefined)
+    inline def setAffectedLocationUndefined: Self = StObject.set(x, "affectedLocation", js.undefined)
     
-    @scala.inline
-    def setFixedLocation(value: VulnerabilityLocation): Self = StObject.set(x, "fixedLocation", value.asInstanceOf[js.Any])
+    inline def setFixedLocation(value: VulnerabilityLocation): Self = StObject.set(x, "fixedLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedLocationUndefined: Self = StObject.set(x, "fixedLocation", js.undefined)
+    inline def setFixedLocationUndefined: Self = StObject.set(x, "fixedLocation", js.undefined)
     
-    @scala.inline
-    def setSeverityName(value: String): Self = StObject.set(x, "severityName", value.asInstanceOf[js.Any])
+    inline def setSeverityName(value: String): Self = StObject.set(x, "severityName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeverityNameUndefined: Self = StObject.set(x, "severityName", js.undefined)
+    inline def setSeverityNameUndefined: Self = StObject.set(x, "severityName", js.undefined)
   }
 }

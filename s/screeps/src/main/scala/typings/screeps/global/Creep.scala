@@ -29,6 +29,5 @@ class Creep protected ()
 }
 object Creep {
   
-  @scala.inline
-  def apply: CreepConstructor = js.Dynamic.global.selectDynamic("Creep").asInstanceOf[CreepConstructor]
+  inline def apply: CreepConstructor = js.Dynamic.global.selectDynamic("Creep").asInstanceOf[CreepConstructor]
 }

@@ -28,37 +28,27 @@ trait ManagedScaling extends StObject {
 }
 object ManagedScaling {
   
-  @scala.inline
-  def apply(): ManagedScaling = {
+  inline def apply(): ManagedScaling = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ManagedScaling]
   }
   
-  @scala.inline
-  implicit class ManagedScalingMutableBuilder[Self <: ManagedScaling] (val x: Self) extends AnyVal {
+  extension [Self <: ManagedScaling](x: Self) {
     
-    @scala.inline
-    def setMaximumScalingStepSize(value: ManagedScalingStepSize): Self = StObject.set(x, "maximumScalingStepSize", value.asInstanceOf[js.Any])
+    inline def setMaximumScalingStepSize(value: ManagedScalingStepSize): Self = StObject.set(x, "maximumScalingStepSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumScalingStepSizeUndefined: Self = StObject.set(x, "maximumScalingStepSize", js.undefined)
+    inline def setMaximumScalingStepSizeUndefined: Self = StObject.set(x, "maximumScalingStepSize", js.undefined)
     
-    @scala.inline
-    def setMinimumScalingStepSize(value: ManagedScalingStepSize): Self = StObject.set(x, "minimumScalingStepSize", value.asInstanceOf[js.Any])
+    inline def setMinimumScalingStepSize(value: ManagedScalingStepSize): Self = StObject.set(x, "minimumScalingStepSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumScalingStepSizeUndefined: Self = StObject.set(x, "minimumScalingStepSize", js.undefined)
+    inline def setMinimumScalingStepSizeUndefined: Self = StObject.set(x, "minimumScalingStepSize", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ManagedScalingStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ManagedScalingStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setTargetCapacity(value: ManagedScalingTargetCapacity): Self = StObject.set(x, "targetCapacity", value.asInstanceOf[js.Any])
+    inline def setTargetCapacity(value: ManagedScalingTargetCapacity): Self = StObject.set(x, "targetCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetCapacityUndefined: Self = StObject.set(x, "targetCapacity", js.undefined)
+    inline def setTargetCapacityUndefined: Self = StObject.set(x, "targetCapacity", js.undefined)
   }
 }

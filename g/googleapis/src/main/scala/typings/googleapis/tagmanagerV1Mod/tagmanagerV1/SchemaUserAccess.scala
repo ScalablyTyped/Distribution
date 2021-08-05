@@ -36,46 +36,33 @@ trait SchemaUserAccess extends StObject {
 }
 object SchemaUserAccess {
   
-  @scala.inline
-  def apply(): SchemaUserAccess = {
+  inline def apply(): SchemaUserAccess = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUserAccess]
   }
   
-  @scala.inline
-  implicit class SchemaUserAccessMutableBuilder[Self <: SchemaUserAccess] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUserAccess](x: Self) {
     
-    @scala.inline
-    def setAccountAccess(value: SchemaAccountAccess): Self = StObject.set(x, "accountAccess", value.asInstanceOf[js.Any])
+    inline def setAccountAccess(value: SchemaAccountAccess): Self = StObject.set(x, "accountAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountAccessUndefined: Self = StObject.set(x, "accountAccess", js.undefined)
+    inline def setAccountAccessUndefined: Self = StObject.set(x, "accountAccess", js.undefined)
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setContainerAccess(value: js.Array[SchemaContainerAccess]): Self = StObject.set(x, "containerAccess", value.asInstanceOf[js.Any])
+    inline def setContainerAccess(value: js.Array[SchemaContainerAccess]): Self = StObject.set(x, "containerAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerAccessUndefined: Self = StObject.set(x, "containerAccess", js.undefined)
+    inline def setContainerAccessUndefined: Self = StObject.set(x, "containerAccess", js.undefined)
     
-    @scala.inline
-    def setContainerAccessVarargs(value: SchemaContainerAccess*): Self = StObject.set(x, "containerAccess", js.Array(value :_*))
+    inline def setContainerAccessVarargs(value: SchemaContainerAccess*): Self = StObject.set(x, "containerAccess", js.Array(value :_*))
     
-    @scala.inline
-    def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
+    inline def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
+    inline def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
     
-    @scala.inline
-    def setPermissionId(value: String): Self = StObject.set(x, "permissionId", value.asInstanceOf[js.Any])
+    inline def setPermissionId(value: String): Self = StObject.set(x, "permissionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionIdUndefined: Self = StObject.set(x, "permissionId", js.undefined)
+    inline def setPermissionIdUndefined: Self = StObject.set(x, "permissionId", js.undefined)
   }
 }

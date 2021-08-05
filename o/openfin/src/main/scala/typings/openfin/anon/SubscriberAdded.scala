@@ -12,19 +12,15 @@ trait SubscriberAdded extends StObject {
 }
 object SubscriberAdded {
   
-  @scala.inline
-  def apply(subscriberAdded: String, subscriberRemoved: String): SubscriberAdded = {
+  inline def apply(subscriberAdded: String, subscriberRemoved: String): SubscriberAdded = {
     val __obj = js.Dynamic.literal(subscriberAdded = subscriberAdded.asInstanceOf[js.Any], subscriberRemoved = subscriberRemoved.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriberAdded]
   }
   
-  @scala.inline
-  implicit class SubscriberAddedMutableBuilder[Self <: SubscriberAdded] (val x: Self) extends AnyVal {
+  extension [Self <: SubscriberAdded](x: Self) {
     
-    @scala.inline
-    def setSubscriberAdded(value: String): Self = StObject.set(x, "subscriberAdded", value.asInstanceOf[js.Any])
+    inline def setSubscriberAdded(value: String): Self = StObject.set(x, "subscriberAdded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriberRemoved(value: String): Self = StObject.set(x, "subscriberRemoved", value.asInstanceOf[js.Any])
+    inline def setSubscriberRemoved(value: String): Self = StObject.set(x, "subscriberRemoved", value.asInstanceOf[js.Any])
   }
 }

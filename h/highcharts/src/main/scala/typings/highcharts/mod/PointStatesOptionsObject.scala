@@ -33,37 +33,27 @@ trait PointStatesOptionsObject extends StObject {
 }
 object PointStatesOptionsObject {
   
-  @scala.inline
-  def apply(): PointStatesOptionsObject = {
+  inline def apply(): PointStatesOptionsObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PointStatesOptionsObject]
   }
   
-  @scala.inline
-  implicit class PointStatesOptionsObjectMutableBuilder[Self <: PointStatesOptionsObject] (val x: Self) extends AnyVal {
+  extension [Self <: PointStatesOptionsObject](x: Self) {
     
-    @scala.inline
-    def setHover(value: PointStatesHoverOptionsObject): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+    inline def setHover(value: PointStatesHoverOptionsObject): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
+    inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
     
-    @scala.inline
-    def setInactive(value: PointStatesInactiveOptionsObject): Self = StObject.set(x, "inactive", value.asInstanceOf[js.Any])
+    inline def setInactive(value: PointStatesInactiveOptionsObject): Self = StObject.set(x, "inactive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInactiveUndefined: Self = StObject.set(x, "inactive", js.undefined)
+    inline def setInactiveUndefined: Self = StObject.set(x, "inactive", js.undefined)
     
-    @scala.inline
-    def setNormal(value: PointStatesNormalOptionsObject): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
+    inline def setNormal(value: PointStatesNormalOptionsObject): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalUndefined: Self = StObject.set(x, "normal", js.undefined)
+    inline def setNormalUndefined: Self = StObject.set(x, "normal", js.undefined)
     
-    @scala.inline
-    def setSelect(value: PointStatesSelectOptionsObject): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+    inline def setSelect(value: PointStatesSelectOptionsObject): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+    inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
   }
 }

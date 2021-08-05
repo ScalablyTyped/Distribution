@@ -18,8 +18,7 @@ trait WebAclRuleStatementOrStatementStatementOrStatementStatementNotStatement ex
 }
 object WebAclRuleStatementOrStatementStatementOrStatementStatementNotStatement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     statements: Input[
       js.Array[
         Input[WebAclRuleStatementOrStatementStatementOrStatementStatementNotStatementStatement]
@@ -30,11 +29,9 @@ object WebAclRuleStatementOrStatementStatementOrStatementStatementNotStatement {
     __obj.asInstanceOf[WebAclRuleStatementOrStatementStatementOrStatementStatementNotStatement]
   }
   
-  @scala.inline
-  implicit class WebAclRuleStatementOrStatementStatementOrStatementStatementNotStatementMutableBuilder[Self <: WebAclRuleStatementOrStatementStatementOrStatementStatementNotStatement] (val x: Self) extends AnyVal {
+  extension [Self <: WebAclRuleStatementOrStatementStatementOrStatementStatementNotStatement](x: Self) {
     
-    @scala.inline
-    def setStatements(
+    inline def setStatements(
       value: Input[
           js.Array[
             Input[WebAclRuleStatementOrStatementStatementOrStatementStatementNotStatementStatement]
@@ -42,7 +39,6 @@ object WebAclRuleStatementOrStatementStatementOrStatementStatementNotStatement {
         ]
     ): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatementsVarargs(value: Input[WebAclRuleStatementOrStatementStatementOrStatementStatementNotStatementStatement]*): Self = StObject.set(x, "statements", js.Array(value :_*))
+    inline def setStatementsVarargs(value: Input[WebAclRuleStatementOrStatementStatementOrStatementStatementNotStatementStatement]*): Self = StObject.set(x, "statements", js.Array(value :_*))
   }
 }

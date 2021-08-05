@@ -12,19 +12,15 @@ trait CustomTestField extends StObject {
 }
 object CustomTestField {
   
-  @scala.inline
-  def apply(fieldName: String, value: js.Any): CustomTestField = {
+  inline def apply(fieldName: String, value: js.Any): CustomTestField = {
     val __obj = js.Dynamic.literal(fieldName = fieldName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomTestField]
   }
   
-  @scala.inline
-  implicit class CustomTestFieldMutableBuilder[Self <: CustomTestField] (val x: Self) extends AnyVal {
+  extension [Self <: CustomTestField](x: Self) {
     
-    @scala.inline
-    def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
+    inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

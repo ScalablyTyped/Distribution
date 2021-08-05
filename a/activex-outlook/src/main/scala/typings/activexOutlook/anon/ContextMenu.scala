@@ -11,16 +11,13 @@ trait ContextMenu extends StObject {
 }
 object ContextMenu {
   
-  @scala.inline
-  def apply(ContextMenu: OlContextMenu): ContextMenu = {
+  inline def apply(ContextMenu: OlContextMenu): ContextMenu = {
     val __obj = js.Dynamic.literal(ContextMenu = ContextMenu.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextMenu]
   }
   
-  @scala.inline
-  implicit class ContextMenuMutableBuilder[Self <: ContextMenu] (val x: Self) extends AnyVal {
+  extension [Self <: ContextMenu](x: Self) {
     
-    @scala.inline
-    def setContextMenu(value: OlContextMenu): Self = StObject.set(x, "ContextMenu", value.asInstanceOf[js.Any])
+    inline def setContextMenu(value: OlContextMenu): Self = StObject.set(x, "ContextMenu", value.asInstanceOf[js.Any])
   }
 }

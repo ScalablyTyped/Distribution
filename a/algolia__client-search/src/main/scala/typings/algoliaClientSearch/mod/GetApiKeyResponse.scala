@@ -66,76 +66,53 @@ trait GetApiKeyResponse extends StObject {
 }
 object GetApiKeyResponse {
   
-  @scala.inline
-  def apply(acl: js.Array[ApiKeyACLType], createdAt: String, validity: Double, value: String): GetApiKeyResponse = {
+  inline def apply(acl: js.Array[ApiKeyACLType], createdAt: String, validity: Double, value: String): GetApiKeyResponse = {
     val __obj = js.Dynamic.literal(acl = acl.asInstanceOf[js.Any], createdAt = createdAt.asInstanceOf[js.Any], validity = validity.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetApiKeyResponse]
   }
   
-  @scala.inline
-  implicit class GetApiKeyResponseMutableBuilder[Self <: GetApiKeyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetApiKeyResponse](x: Self) {
     
-    @scala.inline
-    def setAcl(value: js.Array[ApiKeyACLType]): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
+    inline def setAcl(value: js.Array[ApiKeyACLType]): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAclVarargs(value: ApiKeyACLType*): Self = StObject.set(x, "acl", js.Array(value :_*))
+    inline def setAclVarargs(value: ApiKeyACLType*): Self = StObject.set(x, "acl", js.Array(value :_*))
     
-    @scala.inline
-    def setCreatedAt(value: String): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: String): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setIndexes(value: js.Array[String]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
+    inline def setIndexes(value: js.Array[String]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexesUndefined: Self = StObject.set(x, "indexes", js.undefined)
+    inline def setIndexesUndefined: Self = StObject.set(x, "indexes", js.undefined)
     
-    @scala.inline
-    def setIndexesVarargs(value: String*): Self = StObject.set(x, "indexes", js.Array(value :_*))
+    inline def setIndexesVarargs(value: String*): Self = StObject.set(x, "indexes", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxHitsPerQuery(value: Double): Self = StObject.set(x, "maxHitsPerQuery", value.asInstanceOf[js.Any])
+    inline def setMaxHitsPerQuery(value: Double): Self = StObject.set(x, "maxHitsPerQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxHitsPerQueryUndefined: Self = StObject.set(x, "maxHitsPerQuery", js.undefined)
+    inline def setMaxHitsPerQueryUndefined: Self = StObject.set(x, "maxHitsPerQuery", js.undefined)
     
-    @scala.inline
-    def setMaxQueriesPerIPPerHour(value: Double): Self = StObject.set(x, "maxQueriesPerIPPerHour", value.asInstanceOf[js.Any])
+    inline def setMaxQueriesPerIPPerHour(value: Double): Self = StObject.set(x, "maxQueriesPerIPPerHour", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxQueriesPerIPPerHourUndefined: Self = StObject.set(x, "maxQueriesPerIPPerHour", js.undefined)
+    inline def setMaxQueriesPerIPPerHourUndefined: Self = StObject.set(x, "maxQueriesPerIPPerHour", js.undefined)
     
-    @scala.inline
-    def setQueryParameters(value: String): Self = StObject.set(x, "queryParameters", value.asInstanceOf[js.Any])
+    inline def setQueryParameters(value: String): Self = StObject.set(x, "queryParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryParametersUndefined: Self = StObject.set(x, "queryParameters", js.undefined)
+    inline def setQueryParametersUndefined: Self = StObject.set(x, "queryParameters", js.undefined)
     
-    @scala.inline
-    def setReferers(value: js.Array[String]): Self = StObject.set(x, "referers", value.asInstanceOf[js.Any])
+    inline def setReferers(value: js.Array[String]): Self = StObject.set(x, "referers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferersUndefined: Self = StObject.set(x, "referers", js.undefined)
+    inline def setReferersUndefined: Self = StObject.set(x, "referers", js.undefined)
     
-    @scala.inline
-    def setReferersVarargs(value: String*): Self = StObject.set(x, "referers", js.Array(value :_*))
+    inline def setReferersVarargs(value: String*): Self = StObject.set(x, "referers", js.Array(value :_*))
     
-    @scala.inline
-    def setRestrictSources(value: String): Self = StObject.set(x, "restrictSources", value.asInstanceOf[js.Any])
+    inline def setRestrictSources(value: String): Self = StObject.set(x, "restrictSources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestrictSourcesUndefined: Self = StObject.set(x, "restrictSources", js.undefined)
+    inline def setRestrictSourcesUndefined: Self = StObject.set(x, "restrictSources", js.undefined)
     
-    @scala.inline
-    def setValidity(value: Double): Self = StObject.set(x, "validity", value.asInstanceOf[js.Any])
+    inline def setValidity(value: Double): Self = StObject.set(x, "validity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

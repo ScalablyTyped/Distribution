@@ -12,25 +12,19 @@ trait MediaKeySystemMediaCapability extends StObject {
 }
 object MediaKeySystemMediaCapability {
   
-  @scala.inline
-  def apply(): MediaKeySystemMediaCapability = {
+  inline def apply(): MediaKeySystemMediaCapability = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MediaKeySystemMediaCapability]
   }
   
-  @scala.inline
-  implicit class MediaKeySystemMediaCapabilityMutableBuilder[Self <: MediaKeySystemMediaCapability] (val x: Self) extends AnyVal {
+  extension [Self <: MediaKeySystemMediaCapability](x: Self) {
     
-    @scala.inline
-    def setContentType(value: java.lang.String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: java.lang.String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    @scala.inline
-    def setRobustness(value: java.lang.String): Self = StObject.set(x, "robustness", value.asInstanceOf[js.Any])
+    inline def setRobustness(value: java.lang.String): Self = StObject.set(x, "robustness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRobustnessUndefined: Self = StObject.set(x, "robustness", js.undefined)
+    inline def setRobustnessUndefined: Self = StObject.set(x, "robustness", js.undefined)
   }
 }

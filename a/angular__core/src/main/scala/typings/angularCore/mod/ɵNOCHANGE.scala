@@ -15,10 +15,8 @@ object ɵNOCHANGE {
   @js.native
   val ^ : ɵNOCHANGE = js.native
   
-  @scala.inline
-  implicit class ɵNOCHANGEMutableBuilder[Self <: ɵNOCHANGE] (val x: Self) extends AnyVal {
+  extension [Self <: ɵNOCHANGE](x: Self) {
     
-    @scala.inline
-    def set__brand__(value: NO_CHANGE): Self = StObject.set(x, "__brand__", value.asInstanceOf[js.Any])
+    inline def set__brand__(value: NO_CHANGE): Self = StObject.set(x, "__brand__", value.asInstanceOf[js.Any])
   }
 }

@@ -13,6 +13,5 @@ class CertificateValues ()
   extends typings.xadesjs.xmlMod.CertificateValues
 object CertificateValues {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.CertificateValues] = ^.asInstanceOf[js.Dynamic].selectDynamic("CertificateValues").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.CertificateValues]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.CertificateValues] = ^.asInstanceOf[js.Dynamic].selectDynamic("CertificateValues").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.CertificateValues]]
 }

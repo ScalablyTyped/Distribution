@@ -18,25 +18,19 @@ trait Align extends StObject {
 }
 object Align {
   
-  @scala.inline
-  def apply(element: JQuery[HTMLElement], id: String): Align = {
+  inline def apply(element: JQuery[HTMLElement], id: String): Align = {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Align]
   }
   
-  @scala.inline
-  implicit class AlignMutableBuilder[Self <: Align] (val x: Self) extends AnyVal {
+  extension [Self <: Align](x: Self) {
     
-    @scala.inline
-    def setAlign(value: left | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: left | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    @scala.inline
-    def setElement(value: JQuery[HTMLElement]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: JQuery[HTMLElement]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

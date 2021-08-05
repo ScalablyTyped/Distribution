@@ -90,8 +90,7 @@ trait MatterCollisionPair extends StObject {
 }
 object MatterCollisionPair {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activeContacts: js.Array[Vector],
     bodyA: BodyType,
     bodyB: BodyType,
@@ -113,58 +112,40 @@ object MatterCollisionPair {
     __obj.asInstanceOf[MatterCollisionPair]
   }
   
-  @scala.inline
-  implicit class MatterCollisionPairMutableBuilder[Self <: MatterCollisionPair] (val x: Self) extends AnyVal {
+  extension [Self <: MatterCollisionPair](x: Self) {
     
-    @scala.inline
-    def setActiveContacts(value: js.Array[Vector]): Self = StObject.set(x, "activeContacts", value.asInstanceOf[js.Any])
+    inline def setActiveContacts(value: js.Array[Vector]): Self = StObject.set(x, "activeContacts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveContactsVarargs(value: Vector*): Self = StObject.set(x, "activeContacts", js.Array(value :_*))
+    inline def setActiveContactsVarargs(value: Vector*): Self = StObject.set(x, "activeContacts", js.Array(value :_*))
     
-    @scala.inline
-    def setBodyA(value: BodyType): Self = StObject.set(x, "bodyA", value.asInstanceOf[js.Any])
+    inline def setBodyA(value: BodyType): Self = StObject.set(x, "bodyA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyB(value: BodyType): Self = StObject.set(x, "bodyB", value.asInstanceOf[js.Any])
+    inline def setBodyB(value: BodyType): Self = StObject.set(x, "bodyB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollision(value: MatterCollisionData): Self = StObject.set(x, "collision", value.asInstanceOf[js.Any])
+    inline def setCollision(value: MatterCollisionData): Self = StObject.set(x, "collision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfirmedActive(value: Boolean): Self = StObject.set(x, "confirmedActive", value.asInstanceOf[js.Any])
+    inline def setConfirmedActive(value: Boolean): Self = StObject.set(x, "confirmedActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFriction(value: Double): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
+    inline def setFriction(value: Double): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrictionStatic(value: Double): Self = StObject.set(x, "frictionStatic", value.asInstanceOf[js.Any])
+    inline def setFrictionStatic(value: Double): Self = StObject.set(x, "frictionStatic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInverseMass(value: Double): Self = StObject.set(x, "inverseMass", value.asInstanceOf[js.Any])
+    inline def setInverseMass(value: Double): Self = StObject.set(x, "inverseMass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+    inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSensor(value: Boolean): Self = StObject.set(x, "isSensor", value.asInstanceOf[js.Any])
+    inline def setIsSensor(value: Boolean): Self = StObject.set(x, "isSensor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestitution(value: Double): Self = StObject.set(x, "restitution", value.asInstanceOf[js.Any])
+    inline def setRestitution(value: Double): Self = StObject.set(x, "restitution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeparation(value: Double): Self = StObject.set(x, "separation", value.asInstanceOf[js.Any])
+    inline def setSeparation(value: Double): Self = StObject.set(x, "separation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlop(value: Double): Self = StObject.set(x, "slop", value.asInstanceOf[js.Any])
+    inline def setSlop(value: Double): Self = StObject.set(x, "slop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeCreated(value: Double): Self = StObject.set(x, "timeCreated", value.asInstanceOf[js.Any])
+    inline def setTimeCreated(value: Double): Self = StObject.set(x, "timeCreated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUpdated(value: Double): Self = StObject.set(x, "timeUpdated", value.asInstanceOf[js.Any])
+    inline def setTimeUpdated(value: Double): Self = StObject.set(x, "timeUpdated", value.asInstanceOf[js.Any])
   }
 }

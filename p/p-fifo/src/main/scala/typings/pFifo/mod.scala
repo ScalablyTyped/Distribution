@@ -32,23 +32,18 @@ object mod {
   }
   object PFifo {
     
-    @scala.inline
-    def apply[T](isEmpty: () => Boolean, push: T => js.Promise[Unit], shift: () => js.Promise[T]): PFifo[T] = {
+    inline def apply[T](isEmpty: () => Boolean, push: T => js.Promise[Unit], shift: () => js.Promise[T]): PFifo[T] = {
       val __obj = js.Dynamic.literal(isEmpty = js.Any.fromFunction0(isEmpty), push = js.Any.fromFunction1(push), shift = js.Any.fromFunction0(shift))
       __obj.asInstanceOf[PFifo[T]]
     }
     
-    @scala.inline
-    implicit class PFifoMutableBuilder[Self <: PFifo[?], T] (val x: Self & PFifo[T]) extends AnyVal {
+    extension [Self <: PFifo[?], T](x: Self & PFifo[T]) {
       
-      @scala.inline
-      def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
+      inline def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPush(value: T => js.Promise[Unit]): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+      inline def setPush(value: T => js.Promise[Unit]): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShift(value: () => js.Promise[T]): Self = StObject.set(x, "shift", js.Any.fromFunction0(value))
+      inline def setShift(value: () => js.Promise[T]): Self = StObject.set(x, "shift", js.Any.fromFunction0(value))
     }
   }
 }

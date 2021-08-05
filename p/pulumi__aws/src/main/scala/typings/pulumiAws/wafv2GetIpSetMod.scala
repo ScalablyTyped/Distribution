@@ -11,10 +11,8 @@ object wafv2GetIpSetMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getIpSet(args: GetIpSetArgs): js.Promise[GetIpSetResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIpSet")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetIpSetResult]]
-  @scala.inline
-  def getIpSet(args: GetIpSetArgs, opts: InvokeOptions): js.Promise[GetIpSetResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getIpSet")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetIpSetResult]]
+  inline def getIpSet(args: GetIpSetArgs): js.Promise[GetIpSetResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIpSet")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetIpSetResult]]
+  inline def getIpSet(args: GetIpSetArgs, opts: InvokeOptions): js.Promise[GetIpSetResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getIpSet")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetIpSetResult]]
   
   trait GetIpSetArgs extends StObject {
     
@@ -30,20 +28,16 @@ object wafv2GetIpSetMod {
   }
   object GetIpSetArgs {
     
-    @scala.inline
-    def apply(name: String, scope: String): GetIpSetArgs = {
+    inline def apply(name: String, scope: String): GetIpSetArgs = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetIpSetArgs]
     }
     
-    @scala.inline
-    implicit class GetIpSetArgsMutableBuilder[Self <: GetIpSetArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetIpSetArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     }
   }
   
@@ -80,8 +74,7 @@ object wafv2GetIpSetMod {
   }
   object GetIpSetResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addresses: js.Array[String],
       arn: String,
       description: String,
@@ -94,32 +87,23 @@ object wafv2GetIpSetMod {
       __obj.asInstanceOf[GetIpSetResult]
     }
     
-    @scala.inline
-    implicit class GetIpSetResultMutableBuilder[Self <: GetIpSetResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetIpSetResult](x: Self) {
       
-      @scala.inline
-      def setAddresses(value: js.Array[String]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
+      inline def setAddresses(value: js.Array[String]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddressesVarargs(value: String*): Self = StObject.set(x, "addresses", js.Array(value :_*))
+      inline def setAddressesVarargs(value: String*): Self = StObject.set(x, "addresses", js.Array(value :_*))
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpAddressVersion(value: String): Self = StObject.set(x, "ipAddressVersion", value.asInstanceOf[js.Any])
+      inline def setIpAddressVersion(value: String): Self = StObject.set(x, "ipAddressVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     }
   }
 }

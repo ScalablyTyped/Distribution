@@ -16,28 +16,21 @@ trait SchemaBundlesListResponse extends StObject {
 }
 object SchemaBundlesListResponse {
   
-  @scala.inline
-  def apply(): SchemaBundlesListResponse = {
+  inline def apply(): SchemaBundlesListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBundlesListResponse]
   }
   
-  @scala.inline
-  implicit class SchemaBundlesListResponseMutableBuilder[Self <: SchemaBundlesListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBundlesListResponse](x: Self) {
     
-    @scala.inline
-    def setBundles(value: js.Array[SchemaBundle]): Self = StObject.set(x, "bundles", value.asInstanceOf[js.Any])
+    inline def setBundles(value: js.Array[SchemaBundle]): Self = StObject.set(x, "bundles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBundlesUndefined: Self = StObject.set(x, "bundles", js.undefined)
+    inline def setBundlesUndefined: Self = StObject.set(x, "bundles", js.undefined)
     
-    @scala.inline
-    def setBundlesVarargs(value: SchemaBundle*): Self = StObject.set(x, "bundles", js.Array(value :_*))
+    inline def setBundlesVarargs(value: SchemaBundle*): Self = StObject.set(x, "bundles", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

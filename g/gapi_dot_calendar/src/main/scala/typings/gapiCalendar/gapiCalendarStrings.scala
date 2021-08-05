@@ -23,319 +23,272 @@ object gapiCalendarStrings {
     extends StObject
        with EventVisibility
        with ScopeType
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
+  inline def default: default = "default".asInstanceOf[default]
   
   @js.native
   sealed trait accepted
     extends StObject
        with AttendeeResponseStatus
-  @scala.inline
-  def accepted: accepted = "accepted".asInstanceOf[accepted]
+  inline def accepted: accepted = "accepted".asInstanceOf[accepted]
   
   @js.native
   sealed trait agenda
     extends StObject
        with NotificationType
-  @scala.inline
-  def agenda: agenda = "agenda".asInstanceOf[agenda]
+  inline def agenda: agenda = "agenda".asInstanceOf[agenda]
   
   @js.native
   sealed trait calendarNumbersignaclRule extends StObject
-  @scala.inline
-  def calendarNumbersignaclRule: calendarNumbersignaclRule = "calendar#aclRule".asInstanceOf[calendarNumbersignaclRule]
+  inline def calendarNumbersignaclRule: calendarNumbersignaclRule = "calendar#aclRule".asInstanceOf[calendarNumbersignaclRule]
   
   @js.native
   sealed trait calendarNumbersigncalendar extends StObject
-  @scala.inline
-  def calendarNumbersigncalendar: calendarNumbersigncalendar = "calendar#calendar".asInstanceOf[calendarNumbersigncalendar]
+  inline def calendarNumbersigncalendar: calendarNumbersigncalendar = "calendar#calendar".asInstanceOf[calendarNumbersigncalendar]
   
   @js.native
   sealed trait calendarNumbersigncalendarList extends StObject
-  @scala.inline
-  def calendarNumbersigncalendarList: calendarNumbersigncalendarList = "calendar#calendarList".asInstanceOf[calendarNumbersigncalendarList]
+  inline def calendarNumbersigncalendarList: calendarNumbersigncalendarList = "calendar#calendarList".asInstanceOf[calendarNumbersigncalendarList]
   
   @js.native
   sealed trait calendarNumbersigncalendarListEntry extends StObject
-  @scala.inline
-  def calendarNumbersigncalendarListEntry: calendarNumbersigncalendarListEntry = "calendar#calendarListEntry".asInstanceOf[calendarNumbersigncalendarListEntry]
+  inline def calendarNumbersigncalendarListEntry: calendarNumbersigncalendarListEntry = "calendar#calendarListEntry".asInstanceOf[calendarNumbersigncalendarListEntry]
   
   @js.native
   sealed trait calendarNumbersignevent extends StObject
-  @scala.inline
-  def calendarNumbersignevent: calendarNumbersignevent = "calendar#event".asInstanceOf[calendarNumbersignevent]
+  inline def calendarNumbersignevent: calendarNumbersignevent = "calendar#event".asInstanceOf[calendarNumbersignevent]
   
   @js.native
   sealed trait calendarNumbersignevents extends StObject
-  @scala.inline
-  def calendarNumbersignevents: calendarNumbersignevents = "calendar#events".asInstanceOf[calendarNumbersignevents]
+  inline def calendarNumbersignevents: calendarNumbersignevents = "calendar#events".asInstanceOf[calendarNumbersignevents]
   
   @js.native
   sealed trait calendarNumbersignfreeBusy extends StObject
-  @scala.inline
-  def calendarNumbersignfreeBusy: calendarNumbersignfreeBusy = "calendar#freeBusy".asInstanceOf[calendarNumbersignfreeBusy]
+  inline def calendarNumbersignfreeBusy: calendarNumbersignfreeBusy = "calendar#freeBusy".asInstanceOf[calendarNumbersignfreeBusy]
   
   @js.native
   sealed trait cancelled
     extends StObject
        with EventStatus
-  @scala.inline
-  def cancelled: cancelled = "cancelled".asInstanceOf[cancelled]
+  inline def cancelled: cancelled = "cancelled".asInstanceOf[cancelled]
   
   @js.native
   sealed trait chip
     extends StObject
        with GadgetDisplayMode
-  @scala.inline
-  def chip: chip = "chip".asInstanceOf[chip]
+  inline def chip: chip = "chip".asInstanceOf[chip]
   
   @js.native
   sealed trait confidential
     extends StObject
        with EventVisibility
-  @scala.inline
-  def confidential: confidential = "confidential".asInstanceOf[confidential]
+  inline def confidential: confidential = "confidential".asInstanceOf[confidential]
   
   @js.native
   sealed trait confirmed
     extends StObject
        with EventStatus
-  @scala.inline
-  def confirmed: confirmed = "confirmed".asInstanceOf[confirmed]
+  inline def confirmed: confirmed = "confirmed".asInstanceOf[confirmed]
   
   @js.native
   sealed trait declined
     extends StObject
        with AttendeeResponseStatus
-  @scala.inline
-  def declined: declined = "declined".asInstanceOf[declined]
+  inline def declined: declined = "declined".asInstanceOf[declined]
   
   @js.native
   sealed trait domain
     extends StObject
        with ScopeType
-  @scala.inline
-  def domain: domain = "domain".asInstanceOf[domain]
+  inline def domain: domain = "domain".asInstanceOf[domain]
   
   @js.native
   sealed trait email
     extends StObject
        with ReminderMethod
-  @scala.inline
-  def email: email = "email".asInstanceOf[email]
+  inline def email: email = "email".asInstanceOf[email]
   
   @js.native
   sealed trait eventCancellation
     extends StObject
        with NotificationType
-  @scala.inline
-  def eventCancellation: eventCancellation = "eventCancellation".asInstanceOf[eventCancellation]
+  inline def eventCancellation: eventCancellation = "eventCancellation".asInstanceOf[eventCancellation]
   
   @js.native
   sealed trait eventChange
     extends StObject
        with NotificationType
-  @scala.inline
-  def eventChange: eventChange = "eventChange".asInstanceOf[eventChange]
+  inline def eventChange: eventChange = "eventChange".asInstanceOf[eventChange]
   
   @js.native
   sealed trait eventCreation
     extends StObject
        with NotificationType
-  @scala.inline
-  def eventCreation: eventCreation = "eventCreation".asInstanceOf[eventCreation]
+  inline def eventCreation: eventCreation = "eventCreation".asInstanceOf[eventCreation]
   
   @js.native
   sealed trait eventResponse
     extends StObject
        with NotificationType
-  @scala.inline
-  def eventResponse: eventResponse = "eventResponse".asInstanceOf[eventResponse]
+  inline def eventResponse: eventResponse = "eventResponse".asInstanceOf[eventResponse]
   
   @js.native
   sealed trait freeBusyReader
     extends StObject
        with AccessRole
        with AccessRoleWithoutNone
-  @scala.inline
-  def freeBusyReader: freeBusyReader = "freeBusyReader".asInstanceOf[freeBusyReader]
+  inline def freeBusyReader: freeBusyReader = "freeBusyReader".asInstanceOf[freeBusyReader]
   
   @js.native
   sealed trait group
     extends StObject
        with ScopeType
-  @scala.inline
-  def group: group = "group".asInstanceOf[group]
+  inline def group: group = "group".asInstanceOf[group]
   
   @js.native
   sealed trait iCalUID
     extends StObject
        with SyncToken
-  @scala.inline
-  def iCalUID: iCalUID = "iCalUID".asInstanceOf[iCalUID]
+  inline def iCalUID: iCalUID = "iCalUID".asInstanceOf[iCalUID]
   
   @js.native
   sealed trait icon
     extends StObject
        with GadgetDisplayMode
-  @scala.inline
-  def icon: icon = "icon".asInstanceOf[icon]
+  inline def icon: icon = "icon".asInstanceOf[icon]
   
   @js.native
   sealed trait needsAction
     extends StObject
        with AttendeeResponseStatus
-  @scala.inline
-  def needsAction: needsAction = "needsAction".asInstanceOf[needsAction]
+  inline def needsAction: needsAction = "needsAction".asInstanceOf[needsAction]
   
   @js.native
   sealed trait none
     extends StObject
        with AccessRole
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait opaque
     extends StObject
        with EventTransparency
-  @scala.inline
-  def opaque: opaque = "opaque".asInstanceOf[opaque]
+  inline def opaque: opaque = "opaque".asInstanceOf[opaque]
   
   @js.native
   sealed trait orderBy
     extends StObject
        with SyncToken
-  @scala.inline
-  def orderBy: orderBy = "orderBy".asInstanceOf[orderBy]
+  inline def orderBy: orderBy = "orderBy".asInstanceOf[orderBy]
   
   @js.native
   sealed trait owner
     extends StObject
        with AccessRole
        with AccessRoleWithoutNone
-  @scala.inline
-  def owner: owner = "owner".asInstanceOf[owner]
+  inline def owner: owner = "owner".asInstanceOf[owner]
   
   @js.native
   sealed trait popup
     extends StObject
        with ReminderMethod
-  @scala.inline
-  def popup: popup = "popup".asInstanceOf[popup]
+  inline def popup: popup = "popup".asInstanceOf[popup]
   
   @js.native
   sealed trait `private`
     extends StObject
        with EventVisibility
-  @scala.inline
-  def `private`: `private` = "private".asInstanceOf[`private`]
+  inline def `private`: `private` = "private".asInstanceOf[`private`]
   
   @js.native
   sealed trait privateExtendedProperty
     extends StObject
        with SyncToken
-  @scala.inline
-  def privateExtendedProperty: privateExtendedProperty = "privateExtendedProperty".asInstanceOf[privateExtendedProperty]
+  inline def privateExtendedProperty: privateExtendedProperty = "privateExtendedProperty".asInstanceOf[privateExtendedProperty]
   
   @js.native
   sealed trait public
     extends StObject
        with EventVisibility
-  @scala.inline
-  def public: public = "public".asInstanceOf[public]
+  inline def public: public = "public".asInstanceOf[public]
   
   @js.native
   sealed trait q
     extends StObject
        with SyncToken
-  @scala.inline
-  def q: q = "q".asInstanceOf[q]
+  inline def q: q = "q".asInstanceOf[q]
   
   @js.native
   sealed trait reader
     extends StObject
        with AccessRole
        with AccessRoleWithoutNone
-  @scala.inline
-  def reader: reader = "reader".asInstanceOf[reader]
+  inline def reader: reader = "reader".asInstanceOf[reader]
   
   @js.native
   sealed trait sharedExtendedProperty
     extends StObject
        with SyncToken
-  @scala.inline
-  def sharedExtendedProperty: sharedExtendedProperty = "sharedExtendedProperty".asInstanceOf[sharedExtendedProperty]
+  inline def sharedExtendedProperty: sharedExtendedProperty = "sharedExtendedProperty".asInstanceOf[sharedExtendedProperty]
   
   @js.native
   sealed trait sms
     extends StObject
        with ReminderMethod
-  @scala.inline
-  def sms: sms = "sms".asInstanceOf[sms]
+  inline def sms: sms = "sms".asInstanceOf[sms]
   
   @js.native
   sealed trait startTime
     extends StObject
        with EventsOrder
-  @scala.inline
-  def startTime: startTime = "startTime".asInstanceOf[startTime]
+  inline def startTime: startTime = "startTime".asInstanceOf[startTime]
   
   @js.native
   sealed trait tentative
     extends StObject
        with AttendeeResponseStatus
        with EventStatus
-  @scala.inline
-  def tentative: tentative = "tentative".asInstanceOf[tentative]
+  inline def tentative: tentative = "tentative".asInstanceOf[tentative]
   
   @js.native
   sealed trait timeMax
     extends StObject
        with SyncToken
-  @scala.inline
-  def timeMax: timeMax = "timeMax".asInstanceOf[timeMax]
+  inline def timeMax: timeMax = "timeMax".asInstanceOf[timeMax]
   
   @js.native
   sealed trait timeMin
     extends StObject
        with SyncToken
-  @scala.inline
-  def timeMin: timeMin = "timeMin".asInstanceOf[timeMin]
+  inline def timeMin: timeMin = "timeMin".asInstanceOf[timeMin]
   
   @js.native
   sealed trait transparent
     extends StObject
        with EventTransparency
-  @scala.inline
-  def transparent: transparent = "transparent".asInstanceOf[transparent]
+  inline def transparent: transparent = "transparent".asInstanceOf[transparent]
   
   @js.native
   sealed trait updated
     extends StObject
        with EventsOrder
-  @scala.inline
-  def updated: updated = "updated".asInstanceOf[updated]
+  inline def updated: updated = "updated".asInstanceOf[updated]
   
   @js.native
   sealed trait updatedMin
     extends StObject
        with SyncToken
-  @scala.inline
-  def updatedMin: updatedMin = "updatedMin".asInstanceOf[updatedMin]
+  inline def updatedMin: updatedMin = "updatedMin".asInstanceOf[updatedMin]
   
   @js.native
   sealed trait user
     extends StObject
        with ScopeType
-  @scala.inline
-  def user: user = "user".asInstanceOf[user]
+  inline def user: user = "user".asInstanceOf[user]
   
   @js.native
   sealed trait writer
     extends StObject
        with AccessRole
        with AccessRoleWithoutNone
-  @scala.inline
-  def writer: writer = "writer".asInstanceOf[writer]
+  inline def writer: writer = "writer".asInstanceOf[writer]
 }

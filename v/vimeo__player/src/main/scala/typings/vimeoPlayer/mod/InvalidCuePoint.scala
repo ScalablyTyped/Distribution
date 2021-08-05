@@ -13,16 +13,13 @@ trait InvalidCuePoint
 }
 object InvalidCuePoint {
   
-  @scala.inline
-  def apply(message: String, method: String): InvalidCuePoint = {
+  inline def apply(message: String, method: String): InvalidCuePoint = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], name = "InvalidCuePoint")
     __obj.asInstanceOf[InvalidCuePoint]
   }
   
-  @scala.inline
-  implicit class InvalidCuePointMutableBuilder[Self <: InvalidCuePoint] (val x: Self) extends AnyVal {
+  extension [Self <: InvalidCuePoint](x: Self) {
     
-    @scala.inline
-    def setName(value: typings.vimeoPlayer.vimeoPlayerStrings.InvalidCuePoint): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: typings.vimeoPlayer.vimeoPlayerStrings.InvalidCuePoint): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

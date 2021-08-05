@@ -47,55 +47,39 @@ trait SchemaAsp extends StObject {
 }
 object SchemaAsp {
   
-  @scala.inline
-  def apply(): SchemaAsp = {
+  inline def apply(): SchemaAsp = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAsp]
   }
   
-  @scala.inline
-  implicit class SchemaAspMutableBuilder[Self <: SchemaAsp] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAsp](x: Self) {
     
-    @scala.inline
-    def setCodeId(value: Double): Self = StObject.set(x, "codeId", value.asInstanceOf[js.Any])
+    inline def setCodeId(value: Double): Self = StObject.set(x, "codeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeIdUndefined: Self = StObject.set(x, "codeId", js.undefined)
+    inline def setCodeIdUndefined: Self = StObject.set(x, "codeId", js.undefined)
     
-    @scala.inline
-    def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLastTimeUsed(value: String): Self = StObject.set(x, "lastTimeUsed", value.asInstanceOf[js.Any])
+    inline def setLastTimeUsed(value: String): Self = StObject.set(x, "lastTimeUsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastTimeUsedUndefined: Self = StObject.set(x, "lastTimeUsed", js.undefined)
+    inline def setLastTimeUsedUndefined: Self = StObject.set(x, "lastTimeUsed", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setUserKey(value: String): Self = StObject.set(x, "userKey", value.asInstanceOf[js.Any])
+    inline def setUserKey(value: String): Self = StObject.set(x, "userKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserKeyUndefined: Self = StObject.set(x, "userKey", js.undefined)
+    inline def setUserKeyUndefined: Self = StObject.set(x, "userKey", js.undefined)
   }
 }

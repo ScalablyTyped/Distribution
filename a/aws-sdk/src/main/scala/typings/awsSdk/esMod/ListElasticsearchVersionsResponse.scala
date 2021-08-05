@@ -12,28 +12,21 @@ trait ListElasticsearchVersionsResponse extends StObject {
 }
 object ListElasticsearchVersionsResponse {
   
-  @scala.inline
-  def apply(): ListElasticsearchVersionsResponse = {
+  inline def apply(): ListElasticsearchVersionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListElasticsearchVersionsResponse]
   }
   
-  @scala.inline
-  implicit class ListElasticsearchVersionsResponseMutableBuilder[Self <: ListElasticsearchVersionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListElasticsearchVersionsResponse](x: Self) {
     
-    @scala.inline
-    def setElasticsearchVersions(value: ElasticsearchVersionList): Self = StObject.set(x, "ElasticsearchVersions", value.asInstanceOf[js.Any])
+    inline def setElasticsearchVersions(value: ElasticsearchVersionList): Self = StObject.set(x, "ElasticsearchVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElasticsearchVersionsUndefined: Self = StObject.set(x, "ElasticsearchVersions", js.undefined)
+    inline def setElasticsearchVersionsUndefined: Self = StObject.set(x, "ElasticsearchVersions", js.undefined)
     
-    @scala.inline
-    def setElasticsearchVersionsVarargs(value: ElasticsearchVersionString*): Self = StObject.set(x, "ElasticsearchVersions", js.Array(value :_*))
+    inline def setElasticsearchVersionsVarargs(value: ElasticsearchVersionString*): Self = StObject.set(x, "ElasticsearchVersions", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

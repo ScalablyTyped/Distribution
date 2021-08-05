@@ -19,10 +19,8 @@ object mod {
   	})();
   	```
   	*/
-  @scala.inline
-  def apply(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def apply(filePath: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def apply(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[String]]
+  inline def apply(filePath: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
   @JSImport("xdg-trashdir", JSImport.Namespace)
   @js.native
@@ -39,6 +37,5 @@ object mod {
   	})();
   	```
   	*/
-  @scala.inline
-  def all(): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")().asInstanceOf[js.Promise[js.Array[String]]]
+  inline def all(): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")().asInstanceOf[js.Promise[js.Array[String]]]
 }

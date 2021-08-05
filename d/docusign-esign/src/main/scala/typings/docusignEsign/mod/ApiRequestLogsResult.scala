@@ -13,22 +13,17 @@ trait ApiRequestLogsResult extends StObject {
 }
 object ApiRequestLogsResult {
   
-  @scala.inline
-  def apply(): ApiRequestLogsResult = {
+  inline def apply(): ApiRequestLogsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApiRequestLogsResult]
   }
   
-  @scala.inline
-  implicit class ApiRequestLogsResultMutableBuilder[Self <: ApiRequestLogsResult] (val x: Self) extends AnyVal {
+  extension [Self <: ApiRequestLogsResult](x: Self) {
     
-    @scala.inline
-    def setApiRequestLogs(value: js.Array[/* Contains API request log information. */ ApiRequestLog]): Self = StObject.set(x, "apiRequestLogs", value.asInstanceOf[js.Any])
+    inline def setApiRequestLogs(value: js.Array[/* Contains API request log information. */ ApiRequestLog]): Self = StObject.set(x, "apiRequestLogs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiRequestLogsUndefined: Self = StObject.set(x, "apiRequestLogs", js.undefined)
+    inline def setApiRequestLogsUndefined: Self = StObject.set(x, "apiRequestLogs", js.undefined)
     
-    @scala.inline
-    def setApiRequestLogsVarargs(value: (/* Contains API request log information. */ ApiRequestLog)*): Self = StObject.set(x, "apiRequestLogs", js.Array(value :_*))
+    inline def setApiRequestLogsVarargs(value: (/* Contains API request log information. */ ApiRequestLog)*): Self = StObject.set(x, "apiRequestLogs", js.Array(value :_*))
   }
 }

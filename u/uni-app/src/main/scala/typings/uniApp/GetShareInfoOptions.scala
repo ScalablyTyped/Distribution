@@ -33,43 +33,31 @@ trait GetShareInfoOptions extends StObject {
 }
 object GetShareInfoOptions {
   
-  @scala.inline
-  def apply(): GetShareInfoOptions = {
+  inline def apply(): GetShareInfoOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetShareInfoOptions]
   }
   
-  @scala.inline
-  implicit class GetShareInfoOptionsMutableBuilder[Self <: GetShareInfoOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetShareInfoOptions](x: Self) {
     
-    @scala.inline
-    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    @scala.inline
-    def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
+    inline def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
-    @scala.inline
-    def setShareTicket(value: String): Self = StObject.set(x, "shareTicket", value.asInstanceOf[js.Any])
+    inline def setShareTicket(value: String): Self = StObject.set(x, "shareTicket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShareTicketUndefined: Self = StObject.set(x, "shareTicket", js.undefined)
+    inline def setShareTicketUndefined: Self = StObject.set(x, "shareTicket", js.undefined)
     
-    @scala.inline
-    def setSuccess(value: /* result */ GetShareInfoRes => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* result */ GetShareInfoRes => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

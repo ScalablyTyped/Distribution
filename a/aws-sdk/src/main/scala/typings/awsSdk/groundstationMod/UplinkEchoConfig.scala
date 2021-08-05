@@ -18,19 +18,15 @@ trait UplinkEchoConfig extends StObject {
 }
 object UplinkEchoConfig {
   
-  @scala.inline
-  def apply(antennaUplinkConfigArn: ConfigArn, enabled: Boolean): UplinkEchoConfig = {
+  inline def apply(antennaUplinkConfigArn: ConfigArn, enabled: Boolean): UplinkEchoConfig = {
     val __obj = js.Dynamic.literal(antennaUplinkConfigArn = antennaUplinkConfigArn.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[UplinkEchoConfig]
   }
   
-  @scala.inline
-  implicit class UplinkEchoConfigMutableBuilder[Self <: UplinkEchoConfig] (val x: Self) extends AnyVal {
+  extension [Self <: UplinkEchoConfig](x: Self) {
     
-    @scala.inline
-    def setAntennaUplinkConfigArn(value: ConfigArn): Self = StObject.set(x, "antennaUplinkConfigArn", value.asInstanceOf[js.Any])
+    inline def setAntennaUplinkConfigArn(value: ConfigArn): Self = StObject.set(x, "antennaUplinkConfigArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }
 }

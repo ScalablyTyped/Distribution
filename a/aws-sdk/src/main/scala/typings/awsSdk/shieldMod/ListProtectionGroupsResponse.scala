@@ -18,25 +18,19 @@ trait ListProtectionGroupsResponse extends StObject {
 }
 object ListProtectionGroupsResponse {
   
-  @scala.inline
-  def apply(ProtectionGroups: ProtectionGroups): ListProtectionGroupsResponse = {
+  inline def apply(ProtectionGroups: ProtectionGroups): ListProtectionGroupsResponse = {
     val __obj = js.Dynamic.literal(ProtectionGroups = ProtectionGroups.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListProtectionGroupsResponse]
   }
   
-  @scala.inline
-  implicit class ListProtectionGroupsResponseMutableBuilder[Self <: ListProtectionGroupsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListProtectionGroupsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setProtectionGroups(value: ProtectionGroups): Self = StObject.set(x, "ProtectionGroups", value.asInstanceOf[js.Any])
+    inline def setProtectionGroups(value: ProtectionGroups): Self = StObject.set(x, "ProtectionGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtectionGroupsVarargs(value: ProtectionGroup*): Self = StObject.set(x, "ProtectionGroups", js.Array(value :_*))
+    inline def setProtectionGroupsVarargs(value: ProtectionGroup*): Self = StObject.set(x, "ProtectionGroups", js.Array(value :_*))
   }
 }

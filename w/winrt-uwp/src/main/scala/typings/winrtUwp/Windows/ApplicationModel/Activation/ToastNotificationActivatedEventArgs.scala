@@ -25,8 +25,7 @@ trait ToastNotificationActivatedEventArgs extends StObject {
 }
 object ToastNotificationActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     argument: String,
     kind: ActivationKind,
     previousExecutionState: ApplicationExecutionState,
@@ -37,22 +36,16 @@ object ToastNotificationActivatedEventArgs {
     __obj.asInstanceOf[ToastNotificationActivatedEventArgs]
   }
   
-  @scala.inline
-  implicit class ToastNotificationActivatedEventArgsMutableBuilder[Self <: ToastNotificationActivatedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ToastNotificationActivatedEventArgs](x: Self) {
     
-    @scala.inline
-    def setArgument(value: String): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
+    inline def setArgument(value: String): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
+    inline def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
+    inline def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserInput(value: ValueSet): Self = StObject.set(x, "userInput", value.asInstanceOf[js.Any])
+    inline def setUserInput(value: ValueSet): Self = StObject.set(x, "userInput", value.asInstanceOf[js.Any])
   }
 }

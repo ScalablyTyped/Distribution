@@ -36,23 +36,18 @@ object documentScan {
   }
   object DocumentScanCallbackArg {
     
-    @scala.inline
-    def apply(dataUrls: js.Array[String], mimeType: String): DocumentScanCallbackArg = {
+    inline def apply(dataUrls: js.Array[String], mimeType: String): DocumentScanCallbackArg = {
       val __obj = js.Dynamic.literal(dataUrls = dataUrls.asInstanceOf[js.Any], mimeType = mimeType.asInstanceOf[js.Any])
       __obj.asInstanceOf[DocumentScanCallbackArg]
     }
     
-    @scala.inline
-    implicit class DocumentScanCallbackArgMutableBuilder[Self <: DocumentScanCallbackArg] (val x: Self) extends AnyVal {
+    extension [Self <: DocumentScanCallbackArg](x: Self) {
       
-      @scala.inline
-      def setDataUrls(value: js.Array[String]): Self = StObject.set(x, "dataUrls", value.asInstanceOf[js.Any])
+      inline def setDataUrls(value: js.Array[String]): Self = StObject.set(x, "dataUrls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUrlsVarargs(value: String*): Self = StObject.set(x, "dataUrls", js.Array(value :_*))
+      inline def setDataUrlsVarargs(value: String*): Self = StObject.set(x, "dataUrls", js.Array(value :_*))
       
-      @scala.inline
-      def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+      inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -66,29 +61,22 @@ object documentScan {
   }
   object DocumentScanOptions {
     
-    @scala.inline
-    def apply(): DocumentScanOptions = {
+    inline def apply(): DocumentScanOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DocumentScanOptions]
     }
     
-    @scala.inline
-    implicit class DocumentScanOptionsMutableBuilder[Self <: DocumentScanOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DocumentScanOptions](x: Self) {
       
-      @scala.inline
-      def setMaxImages(value: integer): Self = StObject.set(x, "maxImages", value.asInstanceOf[js.Any])
+      inline def setMaxImages(value: integer): Self = StObject.set(x, "maxImages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxImagesUndefined: Self = StObject.set(x, "maxImages", js.undefined)
+      inline def setMaxImagesUndefined: Self = StObject.set(x, "maxImages", js.undefined)
       
-      @scala.inline
-      def setMimeTypes(value: js.Array[String]): Self = StObject.set(x, "mimeTypes", value.asInstanceOf[js.Any])
+      inline def setMimeTypes(value: js.Array[String]): Self = StObject.set(x, "mimeTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMimeTypesUndefined: Self = StObject.set(x, "mimeTypes", js.undefined)
+      inline def setMimeTypesUndefined: Self = StObject.set(x, "mimeTypes", js.undefined)
       
-      @scala.inline
-      def setMimeTypesVarargs(value: String*): Self = StObject.set(x, "mimeTypes", js.Array(value :_*))
+      inline def setMimeTypesVarargs(value: String*): Self = StObject.set(x, "mimeTypes", js.Array(value :_*))
     }
   }
 }

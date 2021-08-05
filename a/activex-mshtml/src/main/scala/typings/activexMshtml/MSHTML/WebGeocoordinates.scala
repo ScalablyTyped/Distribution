@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait WebGeocoordinates extends StObject {
   
-  @JSName("MSHTML.WebGeocoordinates_typekey")
+  /* private */ @JSName("MSHTML.WebGeocoordinates_typekey")
   var MSHTMLDotWebGeocoordinates_typekey: WebGeocoordinates
   
   val accuracy: Double
@@ -25,8 +25,7 @@ trait WebGeocoordinates extends StObject {
 }
 object WebGeocoordinates {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotWebGeocoordinates_typekey: WebGeocoordinates,
     accuracy: Double,
     altitude: js.Any,
@@ -41,31 +40,22 @@ object WebGeocoordinates {
     __obj.asInstanceOf[WebGeocoordinates]
   }
   
-  @scala.inline
-  implicit class WebGeocoordinatesMutableBuilder[Self <: WebGeocoordinates] (val x: Self) extends AnyVal {
+  extension [Self <: WebGeocoordinates](x: Self) {
     
-    @scala.inline
-    def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
+    inline def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltitude(value: js.Any): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
+    inline def setAltitude(value: js.Any): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltitudeAccuracy(value: js.Any): Self = StObject.set(x, "altitudeAccuracy", value.asInstanceOf[js.Any])
+    inline def setAltitudeAccuracy(value: js.Any): Self = StObject.set(x, "altitudeAccuracy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeading(value: js.Any): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
+    inline def setHeading(value: js.Any): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+    inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+    inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotWebGeocoordinates_typekey(value: WebGeocoordinates): Self = StObject.set(x, "MSHTML.WebGeocoordinates_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotWebGeocoordinates_typekey(value: WebGeocoordinates): Self = StObject.set(x, "MSHTML.WebGeocoordinates_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeed(value: js.Any): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+    inline def setSpeed(value: js.Any): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
   }
 }

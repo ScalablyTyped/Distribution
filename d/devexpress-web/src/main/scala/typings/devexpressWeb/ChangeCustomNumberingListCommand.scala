@@ -24,8 +24,7 @@ trait ChangeCustomNumberingListCommand extends StObject {
 }
 object ChangeCustomNumberingListCommand {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     execute: (Double, js.Array[ListLevelSettings]) => Boolean,
     getState: Double => CommandState[js.Array[ListLevelSettings]]
   ): ChangeCustomNumberingListCommand = {
@@ -33,13 +32,10 @@ object ChangeCustomNumberingListCommand {
     __obj.asInstanceOf[ChangeCustomNumberingListCommand]
   }
   
-  @scala.inline
-  implicit class ChangeCustomNumberingListCommandMutableBuilder[Self <: ChangeCustomNumberingListCommand] (val x: Self) extends AnyVal {
+  extension [Self <: ChangeCustomNumberingListCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: (Double, js.Array[ListLevelSettings]) => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction2(value))
+    inline def setExecute(value: (Double, js.Array[ListLevelSettings]) => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetState(value: Double => CommandState[js.Array[ListLevelSettings]]): Self = StObject.set(x, "getState", js.Any.fromFunction1(value))
+    inline def setGetState(value: Double => CommandState[js.Array[ListLevelSettings]]): Self = StObject.set(x, "getState", js.Any.fromFunction1(value))
   }
 }

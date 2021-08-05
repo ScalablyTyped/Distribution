@@ -26,8 +26,7 @@ trait XTextShapesSupplier
 }
 object XTextShapesSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Shapes: XIndexAccess,
     acquire: () => Unit,
     getShapes: () => XIndexAccess,
@@ -38,13 +37,10 @@ object XTextShapesSupplier {
     __obj.asInstanceOf[XTextShapesSupplier]
   }
   
-  @scala.inline
-  implicit class XTextShapesSupplierMutableBuilder[Self <: XTextShapesSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XTextShapesSupplier](x: Self) {
     
-    @scala.inline
-    def setGetShapes(value: () => XIndexAccess): Self = StObject.set(x, "getShapes", js.Any.fromFunction0(value))
+    inline def setGetShapes(value: () => XIndexAccess): Self = StObject.set(x, "getShapes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShapes(value: XIndexAccess): Self = StObject.set(x, "Shapes", value.asInstanceOf[js.Any])
+    inline def setShapes(value: XIndexAccess): Self = StObject.set(x, "Shapes", value.asInstanceOf[js.Any])
   }
 }

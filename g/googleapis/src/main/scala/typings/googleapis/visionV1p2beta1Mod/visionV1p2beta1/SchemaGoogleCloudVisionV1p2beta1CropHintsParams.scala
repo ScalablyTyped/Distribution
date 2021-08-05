@@ -21,22 +21,17 @@ trait SchemaGoogleCloudVisionV1p2beta1CropHintsParams extends StObject {
 }
 object SchemaGoogleCloudVisionV1p2beta1CropHintsParams {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudVisionV1p2beta1CropHintsParams = {
+  inline def apply(): SchemaGoogleCloudVisionV1p2beta1CropHintsParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p2beta1CropHintsParams]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudVisionV1p2beta1CropHintsParamsMutableBuilder[Self <: SchemaGoogleCloudVisionV1p2beta1CropHintsParams] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudVisionV1p2beta1CropHintsParams](x: Self) {
     
-    @scala.inline
-    def setAspectRatios(value: js.Array[Double]): Self = StObject.set(x, "aspectRatios", value.asInstanceOf[js.Any])
+    inline def setAspectRatios(value: js.Array[Double]): Self = StObject.set(x, "aspectRatios", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAspectRatiosUndefined: Self = StObject.set(x, "aspectRatios", js.undefined)
+    inline def setAspectRatiosUndefined: Self = StObject.set(x, "aspectRatios", js.undefined)
     
-    @scala.inline
-    def setAspectRatiosVarargs(value: Double*): Self = StObject.set(x, "aspectRatios", js.Array(value :_*))
+    inline def setAspectRatiosVarargs(value: Double*): Self = StObject.set(x, "aspectRatios", js.Array(value :_*))
   }
 }

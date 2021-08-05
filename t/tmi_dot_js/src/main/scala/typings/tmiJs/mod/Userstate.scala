@@ -18,56 +18,47 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Userstate extends StObject
 object Userstate {
   
-  @scala.inline
-  def AnonSubGiftUpgradeUserstate(): typings.tmiJs.mod.AnonSubGiftUpgradeUserstate = {
+  inline def AnonSubGiftUpgradeUserstate(): typings.tmiJs.mod.AnonSubGiftUpgradeUserstate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.tmiJs.mod.AnonSubGiftUpgradeUserstate]
   }
   
-  @scala.inline
-  def AnonSubGiftUserstate(): typings.tmiJs.mod.AnonSubGiftUserstate = {
+  inline def AnonSubGiftUserstate(): typings.tmiJs.mod.AnonSubGiftUserstate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.tmiJs.mod.AnonSubGiftUserstate]
   }
   
-  @scala.inline
-  def ChatUserstate(): typings.tmiJs.mod.ChatUserstate = {
+  inline def ChatUserstate(): typings.tmiJs.mod.ChatUserstate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.tmiJs.mod.ChatUserstate]
   }
   
-  @scala.inline
-  def RaidUserstate(): typings.tmiJs.mod.RaidUserstate = {
+  inline def RaidUserstate(): typings.tmiJs.mod.RaidUserstate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.tmiJs.mod.RaidUserstate]
   }
   
-  @scala.inline
-  def RitualUserstate(): typings.tmiJs.mod.RitualUserstate = {
+  inline def RitualUserstate(): typings.tmiJs.mod.RitualUserstate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.tmiJs.mod.RitualUserstate]
   }
   
-  @scala.inline
-  def SubGiftUpgradeUserstate(): typings.tmiJs.mod.SubGiftUpgradeUserstate = {
+  inline def SubGiftUpgradeUserstate(): typings.tmiJs.mod.SubGiftUpgradeUserstate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.tmiJs.mod.SubGiftUpgradeUserstate]
   }
   
-  @scala.inline
-  def SubGiftUserstate(): typings.tmiJs.mod.SubGiftUserstate = {
+  inline def SubGiftUserstate(): typings.tmiJs.mod.SubGiftUserstate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.tmiJs.mod.SubGiftUserstate]
   }
   
-  @scala.inline
-  def SubMysteryGiftUserstate(): typings.tmiJs.mod.SubMysteryGiftUserstate = {
+  inline def SubMysteryGiftUserstate(): typings.tmiJs.mod.SubMysteryGiftUserstate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.tmiJs.mod.SubMysteryGiftUserstate]
   }
   
-  @scala.inline
-  def SubUserstate(): typings.tmiJs.mod.SubUserstate = {
+  inline def SubUserstate(): typings.tmiJs.mod.SubUserstate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.tmiJs.mod.SubUserstate]
   }

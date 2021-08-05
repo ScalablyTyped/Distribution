@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class UsageWriter protected () extends StObject {
   def this(margin: Double, padding: Double) = this()
   
-  var fit: js.Any = js.native
+  /* private */ var fit: js.Any = js.native
   
-  var margin: js.Any = js.native
+  /* private */ var margin: js.Any = js.native
   
-  var padding: js.Any = js.native
+  /* private */ var padding: js.Any = js.native
   
-  var remainder: js.Any = js.native
+  /* private */ var remainder: js.Any = js.native
   
   def writeOption(): Unit = js.native
   def writeOption(left: String): Unit = js.native

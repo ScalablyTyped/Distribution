@@ -87,67 +87,47 @@ trait DataBarConditionalFormatLoadOptions extends StObject {
 }
 object DataBarConditionalFormatLoadOptions {
   
-  @scala.inline
-  def apply(): DataBarConditionalFormatLoadOptions = {
+  inline def apply(): DataBarConditionalFormatLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataBarConditionalFormatLoadOptions]
   }
   
-  @scala.inline
-  implicit class DataBarConditionalFormatLoadOptionsMutableBuilder[Self <: DataBarConditionalFormatLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DataBarConditionalFormatLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setAxisColor(value: Boolean): Self = StObject.set(x, "axisColor", value.asInstanceOf[js.Any])
+    inline def setAxisColor(value: Boolean): Self = StObject.set(x, "axisColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisColorUndefined: Self = StObject.set(x, "axisColor", js.undefined)
+    inline def setAxisColorUndefined: Self = StObject.set(x, "axisColor", js.undefined)
     
-    @scala.inline
-    def setAxisFormat(value: Boolean): Self = StObject.set(x, "axisFormat", value.asInstanceOf[js.Any])
+    inline def setAxisFormat(value: Boolean): Self = StObject.set(x, "axisFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisFormatUndefined: Self = StObject.set(x, "axisFormat", js.undefined)
+    inline def setAxisFormatUndefined: Self = StObject.set(x, "axisFormat", js.undefined)
     
-    @scala.inline
-    def setBarDirection(value: Boolean): Self = StObject.set(x, "barDirection", value.asInstanceOf[js.Any])
+    inline def setBarDirection(value: Boolean): Self = StObject.set(x, "barDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBarDirectionUndefined: Self = StObject.set(x, "barDirection", js.undefined)
+    inline def setBarDirectionUndefined: Self = StObject.set(x, "barDirection", js.undefined)
     
-    @scala.inline
-    def setLowerBoundRule(value: Boolean): Self = StObject.set(x, "lowerBoundRule", value.asInstanceOf[js.Any])
+    inline def setLowerBoundRule(value: Boolean): Self = StObject.set(x, "lowerBoundRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowerBoundRuleUndefined: Self = StObject.set(x, "lowerBoundRule", js.undefined)
+    inline def setLowerBoundRuleUndefined: Self = StObject.set(x, "lowerBoundRule", js.undefined)
     
-    @scala.inline
-    def setNegativeFormat(value: ConditionalDataBarNegativeFormatLoadOptions): Self = StObject.set(x, "negativeFormat", value.asInstanceOf[js.Any])
+    inline def setNegativeFormat(value: ConditionalDataBarNegativeFormatLoadOptions): Self = StObject.set(x, "negativeFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegativeFormatUndefined: Self = StObject.set(x, "negativeFormat", js.undefined)
+    inline def setNegativeFormatUndefined: Self = StObject.set(x, "negativeFormat", js.undefined)
     
-    @scala.inline
-    def setPositiveFormat(value: ConditionalDataBarPositiveFormatLoadOptions): Self = StObject.set(x, "positiveFormat", value.asInstanceOf[js.Any])
+    inline def setPositiveFormat(value: ConditionalDataBarPositiveFormatLoadOptions): Self = StObject.set(x, "positiveFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositiveFormatUndefined: Self = StObject.set(x, "positiveFormat", js.undefined)
+    inline def setPositiveFormatUndefined: Self = StObject.set(x, "positiveFormat", js.undefined)
     
-    @scala.inline
-    def setShowDataBarOnly(value: Boolean): Self = StObject.set(x, "showDataBarOnly", value.asInstanceOf[js.Any])
+    inline def setShowDataBarOnly(value: Boolean): Self = StObject.set(x, "showDataBarOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowDataBarOnlyUndefined: Self = StObject.set(x, "showDataBarOnly", js.undefined)
+    inline def setShowDataBarOnlyUndefined: Self = StObject.set(x, "showDataBarOnly", js.undefined)
     
-    @scala.inline
-    def setUpperBoundRule(value: Boolean): Self = StObject.set(x, "upperBoundRule", value.asInstanceOf[js.Any])
+    inline def setUpperBoundRule(value: Boolean): Self = StObject.set(x, "upperBoundRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpperBoundRuleUndefined: Self = StObject.set(x, "upperBoundRule", js.undefined)
+    inline def setUpperBoundRuleUndefined: Self = StObject.set(x, "upperBoundRule", js.undefined)
   }
 }

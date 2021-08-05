@@ -77,97 +77,67 @@ trait SasPortalInstallationParams extends StObject {
 }
 object SasPortalInstallationParams {
   
-  @scala.inline
-  def apply(): SasPortalInstallationParams = {
+  inline def apply(): SasPortalInstallationParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SasPortalInstallationParams]
   }
   
-  @scala.inline
-  implicit class SasPortalInstallationParamsMutableBuilder[Self <: SasPortalInstallationParams] (val x: Self) extends AnyVal {
+  extension [Self <: SasPortalInstallationParams](x: Self) {
     
-    @scala.inline
-    def setAntennaAzimuth(value: Double): Self = StObject.set(x, "antennaAzimuth", value.asInstanceOf[js.Any])
+    inline def setAntennaAzimuth(value: Double): Self = StObject.set(x, "antennaAzimuth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAntennaAzimuthUndefined: Self = StObject.set(x, "antennaAzimuth", js.undefined)
+    inline def setAntennaAzimuthUndefined: Self = StObject.set(x, "antennaAzimuth", js.undefined)
     
-    @scala.inline
-    def setAntennaBeamwidth(value: Double): Self = StObject.set(x, "antennaBeamwidth", value.asInstanceOf[js.Any])
+    inline def setAntennaBeamwidth(value: Double): Self = StObject.set(x, "antennaBeamwidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAntennaBeamwidthUndefined: Self = StObject.set(x, "antennaBeamwidth", js.undefined)
+    inline def setAntennaBeamwidthUndefined: Self = StObject.set(x, "antennaBeamwidth", js.undefined)
     
-    @scala.inline
-    def setAntennaDowntilt(value: Double): Self = StObject.set(x, "antennaDowntilt", value.asInstanceOf[js.Any])
+    inline def setAntennaDowntilt(value: Double): Self = StObject.set(x, "antennaDowntilt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAntennaDowntiltUndefined: Self = StObject.set(x, "antennaDowntilt", js.undefined)
+    inline def setAntennaDowntiltUndefined: Self = StObject.set(x, "antennaDowntilt", js.undefined)
     
-    @scala.inline
-    def setAntennaGain(value: Double): Self = StObject.set(x, "antennaGain", value.asInstanceOf[js.Any])
+    inline def setAntennaGain(value: Double): Self = StObject.set(x, "antennaGain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAntennaGainUndefined: Self = StObject.set(x, "antennaGain", js.undefined)
+    inline def setAntennaGainUndefined: Self = StObject.set(x, "antennaGain", js.undefined)
     
-    @scala.inline
-    def setAntennaModel(value: String): Self = StObject.set(x, "antennaModel", value.asInstanceOf[js.Any])
+    inline def setAntennaModel(value: String): Self = StObject.set(x, "antennaModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAntennaModelUndefined: Self = StObject.set(x, "antennaModel", js.undefined)
+    inline def setAntennaModelUndefined: Self = StObject.set(x, "antennaModel", js.undefined)
     
-    @scala.inline
-    def setCpeCbsdIndication(value: Boolean): Self = StObject.set(x, "cpeCbsdIndication", value.asInstanceOf[js.Any])
+    inline def setCpeCbsdIndication(value: Boolean): Self = StObject.set(x, "cpeCbsdIndication", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpeCbsdIndicationUndefined: Self = StObject.set(x, "cpeCbsdIndication", js.undefined)
+    inline def setCpeCbsdIndicationUndefined: Self = StObject.set(x, "cpeCbsdIndication", js.undefined)
     
-    @scala.inline
-    def setEirpCapability(value: Double): Self = StObject.set(x, "eirpCapability", value.asInstanceOf[js.Any])
+    inline def setEirpCapability(value: Double): Self = StObject.set(x, "eirpCapability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEirpCapabilityUndefined: Self = StObject.set(x, "eirpCapability", js.undefined)
+    inline def setEirpCapabilityUndefined: Self = StObject.set(x, "eirpCapability", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightType(value: String): Self = StObject.set(x, "heightType", value.asInstanceOf[js.Any])
+    inline def setHeightType(value: String): Self = StObject.set(x, "heightType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightTypeUndefined: Self = StObject.set(x, "heightType", js.undefined)
+    inline def setHeightTypeUndefined: Self = StObject.set(x, "heightType", js.undefined)
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setHorizontalAccuracy(value: Double): Self = StObject.set(x, "horizontalAccuracy", value.asInstanceOf[js.Any])
+    inline def setHorizontalAccuracy(value: Double): Self = StObject.set(x, "horizontalAccuracy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalAccuracyUndefined: Self = StObject.set(x, "horizontalAccuracy", js.undefined)
+    inline def setHorizontalAccuracyUndefined: Self = StObject.set(x, "horizontalAccuracy", js.undefined)
     
-    @scala.inline
-    def setIndoorDeployment(value: Boolean): Self = StObject.set(x, "indoorDeployment", value.asInstanceOf[js.Any])
+    inline def setIndoorDeployment(value: Boolean): Self = StObject.set(x, "indoorDeployment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndoorDeploymentUndefined: Self = StObject.set(x, "indoorDeployment", js.undefined)
+    inline def setIndoorDeploymentUndefined: Self = StObject.set(x, "indoorDeployment", js.undefined)
     
-    @scala.inline
-    def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+    inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatitudeUndefined: Self = StObject.set(x, "latitude", js.undefined)
+    inline def setLatitudeUndefined: Self = StObject.set(x, "latitude", js.undefined)
     
-    @scala.inline
-    def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+    inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongitudeUndefined: Self = StObject.set(x, "longitude", js.undefined)
+    inline def setLongitudeUndefined: Self = StObject.set(x, "longitude", js.undefined)
     
-    @scala.inline
-    def setVerticalAccuracy(value: Double): Self = StObject.set(x, "verticalAccuracy", value.asInstanceOf[js.Any])
+    inline def setVerticalAccuracy(value: Double): Self = StObject.set(x, "verticalAccuracy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalAccuracyUndefined: Self = StObject.set(x, "verticalAccuracy", js.undefined)
+    inline def setVerticalAccuracyUndefined: Self = StObject.set(x, "verticalAccuracy", js.undefined)
   }
 }

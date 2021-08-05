@@ -28,8 +28,7 @@ trait ASPxClientCustomizeParameterLookUpSourceEventArgs
 }
 object ASPxClientCustomizeParameterLookUpSourceEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dataSource: js.Any,
     items: js.Array[ASPxDesignerElementEditorItem],
     parameter: ASPxDesignerElementParameterDescriptor
@@ -38,19 +37,14 @@ object ASPxClientCustomizeParameterLookUpSourceEventArgs {
     __obj.asInstanceOf[ASPxClientCustomizeParameterLookUpSourceEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientCustomizeParameterLookUpSourceEventArgsMutableBuilder[Self <: ASPxClientCustomizeParameterLookUpSourceEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientCustomizeParameterLookUpSourceEventArgs](x: Self) {
     
-    @scala.inline
-    def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: js.Array[ASPxDesignerElementEditorItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[ASPxDesignerElementEditorItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: ASPxDesignerElementEditorItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ASPxDesignerElementEditorItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setParameter(value: ASPxDesignerElementParameterDescriptor): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
+    inline def setParameter(value: ASPxDesignerElementParameterDescriptor): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
   }
 }

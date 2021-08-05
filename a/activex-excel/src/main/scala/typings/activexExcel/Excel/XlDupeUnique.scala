@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlDupeUnique extends StObject
 object XlDupeUnique {
   
-  @scala.inline
-  def xlDuplicate: `1` = 1.asInstanceOf[`1`]
+  inline def xlDuplicate: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlUnique: `0` = 0.asInstanceOf[`0`]
+  inline def xlUnique: `0` = 0.asInstanceOf[`0`]
 }

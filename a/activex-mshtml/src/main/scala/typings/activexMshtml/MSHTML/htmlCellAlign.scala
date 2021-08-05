@@ -19,21 +19,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait htmlCellAlign extends StObject
 object htmlCellAlign {
   
-  @scala.inline
-  def htmlCellAlignCenter: `2` = 2.asInstanceOf[`2`]
+  inline def htmlCellAlignCenter: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def htmlCellAlignLeft: `1` = 1.asInstanceOf[`1`]
+  inline def htmlCellAlignLeft: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def htmlCellAlignMiddle: `2` = 2.asInstanceOf[`2`]
+  inline def htmlCellAlignMiddle: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def htmlCellAlignNotSet: `0` = 0.asInstanceOf[`0`]
+  inline def htmlCellAlignNotSet: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def htmlCellAlignRight: `3` = 3.asInstanceOf[`3`]
+  inline def htmlCellAlignRight: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def htmlCellAlign_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def htmlCellAlign_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

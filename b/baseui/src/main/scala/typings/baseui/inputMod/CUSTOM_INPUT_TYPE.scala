@@ -15,10 +15,8 @@ object CUSTOM_INPUT_TYPE {
   @js.native
   val ^ : CUSTOM_INPUT_TYPE = js.native
   
-  @scala.inline
-  implicit class CUSTOM_INPUT_TYPEMutableBuilder[Self <: CUSTOM_INPUT_TYPE] (val x: Self) extends AnyVal {
+  extension [Self <: CUSTOM_INPUT_TYPE](x: Self) {
     
-    @scala.inline
-    def setTextarea(value: textarea): Self = StObject.set(x, "textarea", value.asInstanceOf[js.Any])
+    inline def setTextarea(value: textarea): Self = StObject.set(x, "textarea", value.asInstanceOf[js.Any])
   }
 }

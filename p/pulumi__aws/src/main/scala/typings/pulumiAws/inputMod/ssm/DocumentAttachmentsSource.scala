@@ -24,28 +24,21 @@ trait DocumentAttachmentsSource extends StObject {
 }
 object DocumentAttachmentsSource {
   
-  @scala.inline
-  def apply(key: Input[String], values: Input[js.Array[Input[String]]]): DocumentAttachmentsSource = {
+  inline def apply(key: Input[String], values: Input[js.Array[Input[String]]]): DocumentAttachmentsSource = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentAttachmentsSource]
   }
   
-  @scala.inline
-  implicit class DocumentAttachmentsSourceMutableBuilder[Self <: DocumentAttachmentsSource] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentAttachmentsSource](x: Self) {
     
-    @scala.inline
-    def setKey(value: Input[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Input[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setValues(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: Input[String]*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Input[String]*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

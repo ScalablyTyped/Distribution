@@ -15,8 +15,7 @@ trait TileEvent
 }
 object TileEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     coords: Coords,
     layer: js.Any,
     propagatedFrom: js.Any,
@@ -30,13 +29,10 @@ object TileEvent {
     __obj.asInstanceOf[TileEvent]
   }
   
-  @scala.inline
-  implicit class TileEventMutableBuilder[Self <: TileEvent] (val x: Self) extends AnyVal {
+  extension [Self <: TileEvent](x: Self) {
     
-    @scala.inline
-    def setCoords(value: Coords): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
+    inline def setCoords(value: Coords): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTile(value: HTMLImageElement): Self = StObject.set(x, "tile", value.asInstanceOf[js.Any])
+    inline def setTile(value: HTMLImageElement): Self = StObject.set(x, "tile", value.asInstanceOf[js.Any])
   }
 }

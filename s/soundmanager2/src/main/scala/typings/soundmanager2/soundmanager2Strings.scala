@@ -11,13 +11,11 @@ object soundmanager2Strings {
   sealed trait always
     extends StObject
        with ScriptAccess
-  @scala.inline
-  def always: always = "always".asInstanceOf[always]
+  inline def always: always = "always".asInstanceOf[always]
   
   @js.native
   sealed trait sameDomain
     extends StObject
        with ScriptAccess
-  @scala.inline
-  def sameDomain: sameDomain = "sameDomain".asInstanceOf[sameDomain]
+  inline def sameDomain: sameDomain = "sameDomain".asInstanceOf[sameDomain]
 }

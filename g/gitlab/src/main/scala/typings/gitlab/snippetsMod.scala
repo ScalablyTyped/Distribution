@@ -52,13 +52,10 @@ object snippetsMod {
   trait SnippetVisibility extends StObject
   object SnippetVisibility {
     
-    @scala.inline
-    def internal: typings.gitlab.gitlabStrings.internal = "internal".asInstanceOf[typings.gitlab.gitlabStrings.internal]
+    inline def internal: typings.gitlab.gitlabStrings.internal = "internal".asInstanceOf[typings.gitlab.gitlabStrings.internal]
     
-    @scala.inline
-    def `private`: typings.gitlab.gitlabStrings.`private` = "private".asInstanceOf[typings.gitlab.gitlabStrings.`private`]
+    inline def `private`: typings.gitlab.gitlabStrings.`private` = "private".asInstanceOf[typings.gitlab.gitlabStrings.`private`]
     
-    @scala.inline
-    def public: typings.gitlab.gitlabStrings.public = "public".asInstanceOf[typings.gitlab.gitlabStrings.public]
+    inline def public: typings.gitlab.gitlabStrings.public = "public".asInstanceOf[typings.gitlab.gitlabStrings.public]
   }
 }

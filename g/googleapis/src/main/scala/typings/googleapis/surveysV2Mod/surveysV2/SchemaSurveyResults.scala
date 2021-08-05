@@ -21,25 +21,19 @@ trait SchemaSurveyResults extends StObject {
 }
 object SchemaSurveyResults {
   
-  @scala.inline
-  def apply(): SchemaSurveyResults = {
+  inline def apply(): SchemaSurveyResults = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSurveyResults]
   }
   
-  @scala.inline
-  implicit class SchemaSurveyResultsMutableBuilder[Self <: SchemaSurveyResults] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSurveyResults](x: Self) {
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setSurveyUrlId(value: String): Self = StObject.set(x, "surveyUrlId", value.asInstanceOf[js.Any])
+    inline def setSurveyUrlId(value: String): Self = StObject.set(x, "surveyUrlId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSurveyUrlIdUndefined: Self = StObject.set(x, "surveyUrlId", js.undefined)
+    inline def setSurveyUrlIdUndefined: Self = StObject.set(x, "surveyUrlId", js.undefined)
   }
 }

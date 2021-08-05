@@ -21,8 +21,7 @@ trait JSXFragment
 }
 object JSXFragment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     children: js.Array[JSXText | JSXExpressionContainer | JSXSpreadChild | JSXElement | JSXFragment],
     closingFragment: JSXClosingFragment,
     openingFragment: JSXOpeningFragment
@@ -32,22 +31,16 @@ object JSXFragment {
     __obj.asInstanceOf[JSXFragment]
   }
   
-  @scala.inline
-  implicit class JSXFragmentMutableBuilder[Self <: JSXFragment] (val x: Self) extends AnyVal {
+  extension [Self <: JSXFragment](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Array[JSXText | JSXExpressionContainer | JSXSpreadChild | JSXElement | JSXFragment]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[JSXText | JSXExpressionContainer | JSXSpreadChild | JSXElement | JSXFragment]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVarargs(value: (JSXText | JSXExpressionContainer | JSXSpreadChild | JSXElement | JSXFragment)*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: (JSXText | JSXExpressionContainer | JSXSpreadChild | JSXElement | JSXFragment)*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setClosingFragment(value: JSXClosingFragment): Self = StObject.set(x, "closingFragment", value.asInstanceOf[js.Any])
+    inline def setClosingFragment(value: JSXClosingFragment): Self = StObject.set(x, "closingFragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpeningFragment(value: JSXOpeningFragment): Self = StObject.set(x, "openingFragment", value.asInstanceOf[js.Any])
+    inline def setOpeningFragment(value: JSXOpeningFragment): Self = StObject.set(x, "openingFragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.estreeJsx.estreeJsxStrings.JSXFragment): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estreeJsx.estreeJsxStrings.JSXFragment): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

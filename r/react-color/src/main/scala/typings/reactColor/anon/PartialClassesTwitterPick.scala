@@ -11,19 +11,15 @@ trait PartialClassesTwitterPick extends StObject {
 }
 object PartialClassesTwitterPick {
   
-  @scala.inline
-  def apply(): PartialClassesTwitterPick = {
+  inline def apply(): PartialClassesTwitterPick = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassesTwitterPick]
   }
   
-  @scala.inline
-  implicit class PartialClassesTwitterPickMutableBuilder[Self <: PartialClassesTwitterPick] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassesTwitterPick](x: Self) {
     
-    @scala.inline
-    def setDefault(value: PartialTwitterPickerStyle): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: PartialTwitterPickerStyle): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
   }
 }

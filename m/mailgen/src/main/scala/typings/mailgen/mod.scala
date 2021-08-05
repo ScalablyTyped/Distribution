@@ -37,20 +37,16 @@ object mod {
   }
   object Action {
     
-    @scala.inline
-    def apply(button: Button, instructions: String): Action = {
+    inline def apply(button: Button, instructions: String): Action = {
       val __obj = js.Dynamic.literal(button = button.asInstanceOf[js.Any], instructions = instructions.asInstanceOf[js.Any])
       __obj.asInstanceOf[Action]
     }
     
-    @scala.inline
-    implicit class ActionMutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
+    extension [Self <: Action](x: Self) {
       
-      @scala.inline
-      def setButton(value: Button): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+      inline def setButton(value: Button): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstructions(value: String): Self = StObject.set(x, "instructions", value.asInstanceOf[js.Any])
+      inline def setInstructions(value: String): Self = StObject.set(x, "instructions", value.asInstanceOf[js.Any])
     }
   }
   
@@ -64,23 +60,18 @@ object mod {
   }
   object Button {
     
-    @scala.inline
-    def apply(color: String, link: String, text: String): Button = {
+    inline def apply(color: String, link: String, text: String): Button = {
       val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[Button]
     }
     
-    @scala.inline
-    implicit class ButtonMutableBuilder[Self <: Button] (val x: Self) extends AnyVal {
+    extension [Self <: Button](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+      inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -92,20 +83,16 @@ object mod {
   }
   object ColumnOptions {
     
-    @scala.inline
-    def apply(customAlignment: js.Any, customWidth: js.Any): ColumnOptions = {
+    inline def apply(customAlignment: js.Any, customWidth: js.Any): ColumnOptions = {
       val __obj = js.Dynamic.literal(customAlignment = customAlignment.asInstanceOf[js.Any], customWidth = customWidth.asInstanceOf[js.Any])
       __obj.asInstanceOf[ColumnOptions]
     }
     
-    @scala.inline
-    implicit class ColumnOptionsMutableBuilder[Self <: ColumnOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ColumnOptions](x: Self) {
       
-      @scala.inline
-      def setCustomAlignment(value: js.Any): Self = StObject.set(x, "customAlignment", value.asInstanceOf[js.Any])
+      inline def setCustomAlignment(value: js.Any): Self = StObject.set(x, "customAlignment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomWidth(value: js.Any): Self = StObject.set(x, "customWidth", value.asInstanceOf[js.Any])
+      inline def setCustomWidth(value: js.Any): Self = StObject.set(x, "customWidth", value.asInstanceOf[js.Any])
     }
   }
   
@@ -115,17 +102,14 @@ object mod {
   }
   object Content {
     
-    @scala.inline
-    def apply(body: ContentBody): Content = {
+    inline def apply(body: ContentBody): Content = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
       __obj.asInstanceOf[Content]
     }
     
-    @scala.inline
-    implicit class ContentMutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
+    extension [Self <: Content](x: Self) {
       
-      @scala.inline
-      def setBody(value: ContentBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: ContentBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     }
   }
   
@@ -153,86 +137,60 @@ object mod {
   }
   object ContentBody {
     
-    @scala.inline
-    def apply(): ContentBody = {
+    inline def apply(): ContentBody = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ContentBody]
     }
     
-    @scala.inline
-    implicit class ContentBodyMutableBuilder[Self <: ContentBody] (val x: Self) extends AnyVal {
+    extension [Self <: ContentBody](x: Self) {
       
-      @scala.inline
-      def setAction(value: Action | js.Array[Action]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: Action | js.Array[Action]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      @scala.inline
-      def setActionVarargs(value: Action*): Self = StObject.set(x, "action", js.Array(value :_*))
+      inline def setActionVarargs(value: Action*): Self = StObject.set(x, "action", js.Array(value :_*))
       
-      @scala.inline
-      def setDictionary(value: js.Any): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
+      inline def setDictionary(value: js.Any): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDictionaryUndefined: Self = StObject.set(x, "dictionary", js.undefined)
+      inline def setDictionaryUndefined: Self = StObject.set(x, "dictionary", js.undefined)
       
-      @scala.inline
-      def setGoToAction(value: GoToAction): Self = StObject.set(x, "goToAction", value.asInstanceOf[js.Any])
+      inline def setGoToAction(value: GoToAction): Self = StObject.set(x, "goToAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGoToActionUndefined: Self = StObject.set(x, "goToAction", js.undefined)
+      inline def setGoToActionUndefined: Self = StObject.set(x, "goToAction", js.undefined)
       
-      @scala.inline
-      def setGreeting(value: String): Self = StObject.set(x, "greeting", value.asInstanceOf[js.Any])
+      inline def setGreeting(value: String): Self = StObject.set(x, "greeting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreetingUndefined: Self = StObject.set(x, "greeting", js.undefined)
+      inline def setGreetingUndefined: Self = StObject.set(x, "greeting", js.undefined)
       
-      @scala.inline
-      def setIntro(value: String | js.Array[String]): Self = StObject.set(x, "intro", value.asInstanceOf[js.Any])
+      inline def setIntro(value: String | js.Array[String]): Self = StObject.set(x, "intro", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntroUndefined: Self = StObject.set(x, "intro", js.undefined)
+      inline def setIntroUndefined: Self = StObject.set(x, "intro", js.undefined)
       
-      @scala.inline
-      def setIntroVarargs(value: String*): Self = StObject.set(x, "intro", js.Array(value :_*))
+      inline def setIntroVarargs(value: String*): Self = StObject.set(x, "intro", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOutro(value: String | js.Array[String]): Self = StObject.set(x, "outro", value.asInstanceOf[js.Any])
+      inline def setOutro(value: String | js.Array[String]): Self = StObject.set(x, "outro", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutroUndefined: Self = StObject.set(x, "outro", js.undefined)
+      inline def setOutroUndefined: Self = StObject.set(x, "outro", js.undefined)
       
-      @scala.inline
-      def setOutroVarargs(value: String*): Self = StObject.set(x, "outro", js.Array(value :_*))
+      inline def setOutroVarargs(value: String*): Self = StObject.set(x, "outro", js.Array(value :_*))
       
-      @scala.inline
-      def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+      inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
+      inline def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
       
-      @scala.inline
-      def setTable(value: Table | js.Array[Table]): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+      inline def setTable(value: Table | js.Array[Table]): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
+      inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
       
-      @scala.inline
-      def setTableVarargs(value: Table*): Self = StObject.set(x, "table", js.Array(value :_*))
+      inline def setTableVarargs(value: Table*): Self = StObject.set(x, "table", js.Array(value :_*))
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -244,23 +202,18 @@ object mod {
   }
   object CustomTheme {
     
-    @scala.inline
-    def apply(path: String): CustomTheme = {
+    inline def apply(path: String): CustomTheme = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomTheme]
     }
     
-    @scala.inline
-    implicit class CustomThemeMutableBuilder[Self <: CustomTheme] (val x: Self) extends AnyVal {
+    extension [Self <: CustomTheme](x: Self) {
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaintextPath(value: String): Self = StObject.set(x, "plaintextPath", value.asInstanceOf[js.Any])
+      inline def setPlaintextPath(value: String): Self = StObject.set(x, "plaintextPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaintextPathUndefined: Self = StObject.set(x, "plaintextPath", js.undefined)
+      inline def setPlaintextPathUndefined: Self = StObject.set(x, "plaintextPath", js.undefined)
     }
   }
   
@@ -274,23 +227,18 @@ object mod {
   }
   object GoToAction {
     
-    @scala.inline
-    def apply(description: String, link: String, text: String): GoToAction = {
+    inline def apply(description: String, link: String, text: String): GoToAction = {
       val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[GoToAction]
     }
     
-    @scala.inline
-    implicit class GoToActionMutableBuilder[Self <: GoToAction] (val x: Self) extends AnyVal {
+    extension [Self <: GoToAction](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+      inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -309,8 +257,7 @@ object mod {
   }
   object Mailgen {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cacheThemes: () => Unit,
       generate: Content => js.Any,
       generatePlaintext: Content => js.Any,
@@ -320,20 +267,15 @@ object mod {
       __obj.asInstanceOf[Mailgen]
     }
     
-    @scala.inline
-    implicit class MailgenMutableBuilder[Self <: Mailgen] (val x: Self) extends AnyVal {
+    extension [Self <: Mailgen](x: Self) {
       
-      @scala.inline
-      def setCacheThemes(value: () => Unit): Self = StObject.set(x, "cacheThemes", js.Any.fromFunction0(value))
+      inline def setCacheThemes(value: () => Unit): Self = StObject.set(x, "cacheThemes", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGenerate(value: Content => js.Any): Self = StObject.set(x, "generate", js.Any.fromFunction1(value))
+      inline def setGenerate(value: Content => js.Any): Self = StObject.set(x, "generate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGeneratePlaintext(value: Content => js.Any): Self = StObject.set(x, "generatePlaintext", js.Any.fromFunction1(value))
+      inline def setGeneratePlaintext(value: Content => js.Any): Self = StObject.set(x, "generatePlaintext", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setParseParams(value: js.Any => js.Any): Self = StObject.set(x, "parseParams", js.Any.fromFunction1(value))
+      inline def setParseParams(value: js.Any => js.Any): Self = StObject.set(x, "parseParams", js.Any.fromFunction1(value))
     }
   }
   
@@ -345,20 +287,16 @@ object mod {
   }
   object Option {
     
-    @scala.inline
-    def apply(product: Product, theme: String | CustomTheme): Option = {
+    inline def apply(product: Product, theme: String | CustomTheme): Option = {
       val __obj = js.Dynamic.literal(product = product.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[Option]
     }
     
-    @scala.inline
-    implicit class OptionMutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
+    extension [Self <: Option](x: Self) {
       
-      @scala.inline
-      def setProduct(value: Product): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
+      inline def setProduct(value: Product): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTheme(value: String | CustomTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: String | CustomTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -374,32 +312,24 @@ object mod {
   }
   object Product {
     
-    @scala.inline
-    def apply(link: String, name: String): Product = {
+    inline def apply(link: String, name: String): Product = {
       val __obj = js.Dynamic.literal(link = link.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Product]
     }
     
-    @scala.inline
-    implicit class ProductMutableBuilder[Self <: Product] (val x: Self) extends AnyVal {
+    extension [Self <: Product](x: Self) {
       
-      @scala.inline
-      def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
+      inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
+      inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
       
-      @scala.inline
-      def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+      inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogo(value: String): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
+      inline def setLogo(value: String): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
+      inline def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -411,29 +341,22 @@ object mod {
   }
   object Table {
     
-    @scala.inline
-    def apply(data: js.Array[js.Any]): Table = {
+    inline def apply(data: js.Array[js.Any]): Table = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[Table]
     }
     
-    @scala.inline
-    implicit class TableMutableBuilder[Self <: Table] (val x: Self) extends AnyVal {
+    extension [Self <: Table](x: Self) {
       
-      @scala.inline
-      def setColumns(value: js.Array[ColumnOptions]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: js.Array[ColumnOptions]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+      inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      @scala.inline
-      def setColumnsVarargs(value: ColumnOptions*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: ColumnOptions*): Self = StObject.set(x, "columns", js.Array(value :_*))
       
-      @scala.inline
-      def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
     }
   }
 }

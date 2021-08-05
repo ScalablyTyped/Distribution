@@ -191,8 +191,7 @@ trait ASPxClientAppointment extends StObject {
 }
 object ASPxClientAppointment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AddResource: String => Unit,
     GetAllDay: () => Boolean,
     GetAppointmentType: () => ASPxAppointmentType,
@@ -231,109 +230,74 @@ object ASPxClientAppointment {
     __obj.asInstanceOf[ASPxClientAppointment]
   }
   
-  @scala.inline
-  implicit class ASPxClientAppointmentMutableBuilder[Self <: ASPxClientAppointment] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientAppointment](x: Self) {
     
-    @scala.inline
-    def setAddResource(value: String => Unit): Self = StObject.set(x, "AddResource", js.Any.fromFunction1(value))
+    inline def setAddResource(value: String => Unit): Self = StObject.set(x, "AddResource", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAppointmentId(value: String): Self = StObject.set(x, "appointmentId", value.asInstanceOf[js.Any])
+    inline def setAppointmentId(value: String): Self = StObject.set(x, "appointmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppointmentType(value: ASPxAppointmentType): Self = StObject.set(x, "appointmentType", value.asInstanceOf[js.Any])
+    inline def setAppointmentType(value: ASPxAppointmentType): Self = StObject.set(x, "appointmentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAllDay(value: () => Boolean): Self = StObject.set(x, "GetAllDay", js.Any.fromFunction0(value))
+    inline def setGetAllDay(value: () => Boolean): Self = StObject.set(x, "GetAllDay", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAppointmentType(value: () => ASPxAppointmentType): Self = StObject.set(x, "GetAppointmentType", js.Any.fromFunction0(value))
+    inline def setGetAppointmentType(value: () => ASPxAppointmentType): Self = StObject.set(x, "GetAppointmentType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDescription(value: () => String): Self = StObject.set(x, "GetDescription", js.Any.fromFunction0(value))
+    inline def setGetDescription(value: () => String): Self = StObject.set(x, "GetDescription", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDuration(value: () => Double): Self = StObject.set(x, "GetDuration", js.Any.fromFunction0(value))
+    inline def setGetDuration(value: () => Double): Self = StObject.set(x, "GetDuration", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEnd(value: () => Date): Self = StObject.set(x, "GetEnd", js.Any.fromFunction0(value))
+    inline def setGetEnd(value: () => Date): Self = StObject.set(x, "GetEnd", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetId(value: () => String): Self = StObject.set(x, "GetId", js.Any.fromFunction0(value))
+    inline def setGetId(value: () => String): Self = StObject.set(x, "GetId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLabelId(value: () => Double): Self = StObject.set(x, "GetLabelId", js.Any.fromFunction0(value))
+    inline def setGetLabelId(value: () => Double): Self = StObject.set(x, "GetLabelId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLocation(value: () => String): Self = StObject.set(x, "GetLocation", js.Any.fromFunction0(value))
+    inline def setGetLocation(value: () => String): Self = StObject.set(x, "GetLocation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRecurrenceInfo(value: () => ASPxClientRecurrenceInfo): Self = StObject.set(x, "GetRecurrenceInfo", js.Any.fromFunction0(value))
+    inline def setGetRecurrenceInfo(value: () => ASPxClientRecurrenceInfo): Self = StObject.set(x, "GetRecurrenceInfo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRecurrencePattern(value: () => ASPxClientAppointment): Self = StObject.set(x, "GetRecurrencePattern", js.Any.fromFunction0(value))
+    inline def setGetRecurrencePattern(value: () => ASPxClientAppointment): Self = StObject.set(x, "GetRecurrencePattern", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetResource(value: Double => String): Self = StObject.set(x, "GetResource", js.Any.fromFunction1(value))
+    inline def setGetResource(value: Double => String): Self = StObject.set(x, "GetResource", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetStart(value: () => Date): Self = StObject.set(x, "GetStart", js.Any.fromFunction0(value))
+    inline def setGetStart(value: () => Date): Self = StObject.set(x, "GetStart", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStatusId(value: () => Double): Self = StObject.set(x, "GetStatusId", js.Any.fromFunction0(value))
+    inline def setGetStatusId(value: () => Double): Self = StObject.set(x, "GetStatusId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSubject(value: () => String): Self = StObject.set(x, "GetSubject", js.Any.fromFunction0(value))
+    inline def setGetSubject(value: () => String): Self = StObject.set(x, "GetSubject", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInterval(value: ASPxClientTimeInterval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: ASPxClientTimeInterval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelIndex(value: Double): Self = StObject.set(x, "labelIndex", value.asInstanceOf[js.Any])
+    inline def setLabelIndex(value: Double): Self = StObject.set(x, "labelIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResources(value: js.Array[String]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: js.Array[String]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
     
-    @scala.inline
-    def setSetAllDay(value: Boolean => Unit): Self = StObject.set(x, "SetAllDay", js.Any.fromFunction1(value))
+    inline def setSetAllDay(value: Boolean => Unit): Self = StObject.set(x, "SetAllDay", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetAppointmentType(value: ASPxAppointmentType => Unit): Self = StObject.set(x, "SetAppointmentType", js.Any.fromFunction1(value))
+    inline def setSetAppointmentType(value: ASPxAppointmentType => Unit): Self = StObject.set(x, "SetAppointmentType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDescription(value: String => Unit): Self = StObject.set(x, "SetDescription", js.Any.fromFunction1(value))
+    inline def setSetDescription(value: String => Unit): Self = StObject.set(x, "SetDescription", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDuration(value: js.Any => Unit): Self = StObject.set(x, "SetDuration", js.Any.fromFunction1(value))
+    inline def setSetDuration(value: js.Any => Unit): Self = StObject.set(x, "SetDuration", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetEnd(value: Date => Unit): Self = StObject.set(x, "SetEnd", js.Any.fromFunction1(value))
+    inline def setSetEnd(value: Date => Unit): Self = StObject.set(x, "SetEnd", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetId(value: String => Unit): Self = StObject.set(x, "SetId", js.Any.fromFunction1(value))
+    inline def setSetId(value: String => Unit): Self = StObject.set(x, "SetId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLabelId(value: Double => Unit): Self = StObject.set(x, "SetLabelId", js.Any.fromFunction1(value))
+    inline def setSetLabelId(value: Double => Unit): Self = StObject.set(x, "SetLabelId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLocation(value: String => Unit): Self = StObject.set(x, "SetLocation", js.Any.fromFunction1(value))
+    inline def setSetLocation(value: String => Unit): Self = StObject.set(x, "SetLocation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRecurrenceInfo(value: ASPxClientRecurrenceInfo => Unit): Self = StObject.set(x, "SetRecurrenceInfo", js.Any.fromFunction1(value))
+    inline def setSetRecurrenceInfo(value: ASPxClientRecurrenceInfo => Unit): Self = StObject.set(x, "SetRecurrenceInfo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetStart(value: Date => Unit): Self = StObject.set(x, "SetStart", js.Any.fromFunction1(value))
+    inline def setSetStart(value: Date => Unit): Self = StObject.set(x, "SetStart", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetStatusId(value: Double => Unit): Self = StObject.set(x, "SetStatusId", js.Any.fromFunction1(value))
+    inline def setSetStatusId(value: Double => Unit): Self = StObject.set(x, "SetStatusId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSubject(value: String => Unit): Self = StObject.set(x, "SetSubject", js.Any.fromFunction1(value))
+    inline def setSetSubject(value: String => Unit): Self = StObject.set(x, "SetSubject", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStatusIndex(value: Double): Self = StObject.set(x, "statusIndex", value.asInstanceOf[js.Any])
+    inline def setStatusIndex(value: Double): Self = StObject.set(x, "statusIndex", value.asInstanceOf[js.Any])
   }
 }

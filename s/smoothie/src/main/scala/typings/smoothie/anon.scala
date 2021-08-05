@@ -17,23 +17,18 @@ object anon {
   }
   object Index {
     
-    @scala.inline
-    def apply(index: Double, series: TimeSeries, value: Double): Index = {
+    inline def apply(index: Double, series: TimeSeries, value: Double): Index = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], series = series.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Index]
     }
     
-    @scala.inline
-    implicit class IndexMutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
+    extension [Self <: Index](x: Self) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeries(value: TimeSeries): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+      inline def setSeries(value: TimeSeries): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -45,20 +40,16 @@ object anon {
   }
   object LineWidth {
     
-    @scala.inline
-    def apply(lineWidth: Double, strokeStyle: String): LineWidth = {
+    inline def apply(lineWidth: Double, strokeStyle: String): LineWidth = {
       val __obj = js.Dynamic.literal(lineWidth = lineWidth.asInstanceOf[js.Any], strokeStyle = strokeStyle.asInstanceOf[js.Any])
       __obj.asInstanceOf[LineWidth]
     }
     
-    @scala.inline
-    implicit class LineWidthMutableBuilder[Self <: LineWidth] (val x: Self) extends AnyVal {
+    extension [Self <: LineWidth](x: Self) {
       
-      @scala.inline
-      def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+      inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeStyle(value: String): Self = StObject.set(x, "strokeStyle", value.asInstanceOf[js.Any])
+      inline def setStrokeStyle(value: String): Self = StObject.set(x, "strokeStyle", value.asInstanceOf[js.Any])
     }
   }
 }

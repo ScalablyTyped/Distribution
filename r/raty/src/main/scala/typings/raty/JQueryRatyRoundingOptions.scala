@@ -14,22 +14,17 @@ trait JQueryRatyRoundingOptions extends StObject {
 }
 object JQueryRatyRoundingOptions {
   
-  @scala.inline
-  def apply(down: Double, full: Double, up: Double): JQueryRatyRoundingOptions = {
+  inline def apply(down: Double, full: Double, up: Double): JQueryRatyRoundingOptions = {
     val __obj = js.Dynamic.literal(down = down.asInstanceOf[js.Any], full = full.asInstanceOf[js.Any], up = up.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryRatyRoundingOptions]
   }
   
-  @scala.inline
-  implicit class JQueryRatyRoundingOptionsMutableBuilder[Self <: JQueryRatyRoundingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryRatyRoundingOptions](x: Self) {
     
-    @scala.inline
-    def setDown(value: Double): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
+    inline def setDown(value: Double): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFull(value: Double): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
+    inline def setFull(value: Double): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUp(value: Double): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
+    inline def setUp(value: Double): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
   }
 }

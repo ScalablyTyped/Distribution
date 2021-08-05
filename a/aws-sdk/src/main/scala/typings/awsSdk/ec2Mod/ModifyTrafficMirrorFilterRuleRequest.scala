@@ -68,85 +68,59 @@ trait ModifyTrafficMirrorFilterRuleRequest extends StObject {
 }
 object ModifyTrafficMirrorFilterRuleRequest {
   
-  @scala.inline
-  def apply(TrafficMirrorFilterRuleId: TrafficMirrorFilterRuleId): ModifyTrafficMirrorFilterRuleRequest = {
+  inline def apply(TrafficMirrorFilterRuleId: TrafficMirrorFilterRuleId): ModifyTrafficMirrorFilterRuleRequest = {
     val __obj = js.Dynamic.literal(TrafficMirrorFilterRuleId = TrafficMirrorFilterRuleId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyTrafficMirrorFilterRuleRequest]
   }
   
-  @scala.inline
-  implicit class ModifyTrafficMirrorFilterRuleRequestMutableBuilder[Self <: ModifyTrafficMirrorFilterRuleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyTrafficMirrorFilterRuleRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setDestinationCidrBlock(value: String): Self = StObject.set(x, "DestinationCidrBlock", value.asInstanceOf[js.Any])
+    inline def setDestinationCidrBlock(value: String): Self = StObject.set(x, "DestinationCidrBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationCidrBlockUndefined: Self = StObject.set(x, "DestinationCidrBlock", js.undefined)
+    inline def setDestinationCidrBlockUndefined: Self = StObject.set(x, "DestinationCidrBlock", js.undefined)
     
-    @scala.inline
-    def setDestinationPortRange(value: TrafficMirrorPortRangeRequest): Self = StObject.set(x, "DestinationPortRange", value.asInstanceOf[js.Any])
+    inline def setDestinationPortRange(value: TrafficMirrorPortRangeRequest): Self = StObject.set(x, "DestinationPortRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationPortRangeUndefined: Self = StObject.set(x, "DestinationPortRange", js.undefined)
+    inline def setDestinationPortRangeUndefined: Self = StObject.set(x, "DestinationPortRange", js.undefined)
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setProtocol(value: Integer): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: Integer): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolUndefined: Self = StObject.set(x, "Protocol", js.undefined)
+    inline def setProtocolUndefined: Self = StObject.set(x, "Protocol", js.undefined)
     
-    @scala.inline
-    def setRemoveFields(value: TrafficMirrorFilterRuleFieldList): Self = StObject.set(x, "RemoveFields", value.asInstanceOf[js.Any])
+    inline def setRemoveFields(value: TrafficMirrorFilterRuleFieldList): Self = StObject.set(x, "RemoveFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveFieldsUndefined: Self = StObject.set(x, "RemoveFields", js.undefined)
+    inline def setRemoveFieldsUndefined: Self = StObject.set(x, "RemoveFields", js.undefined)
     
-    @scala.inline
-    def setRemoveFieldsVarargs(value: TrafficMirrorFilterRuleField*): Self = StObject.set(x, "RemoveFields", js.Array(value :_*))
+    inline def setRemoveFieldsVarargs(value: TrafficMirrorFilterRuleField*): Self = StObject.set(x, "RemoveFields", js.Array(value :_*))
     
-    @scala.inline
-    def setRuleAction(value: TrafficMirrorRuleAction): Self = StObject.set(x, "RuleAction", value.asInstanceOf[js.Any])
+    inline def setRuleAction(value: TrafficMirrorRuleAction): Self = StObject.set(x, "RuleAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleActionUndefined: Self = StObject.set(x, "RuleAction", js.undefined)
+    inline def setRuleActionUndefined: Self = StObject.set(x, "RuleAction", js.undefined)
     
-    @scala.inline
-    def setRuleNumber(value: Integer): Self = StObject.set(x, "RuleNumber", value.asInstanceOf[js.Any])
+    inline def setRuleNumber(value: Integer): Self = StObject.set(x, "RuleNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleNumberUndefined: Self = StObject.set(x, "RuleNumber", js.undefined)
+    inline def setRuleNumberUndefined: Self = StObject.set(x, "RuleNumber", js.undefined)
     
-    @scala.inline
-    def setSourceCidrBlock(value: String): Self = StObject.set(x, "SourceCidrBlock", value.asInstanceOf[js.Any])
+    inline def setSourceCidrBlock(value: String): Self = StObject.set(x, "SourceCidrBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceCidrBlockUndefined: Self = StObject.set(x, "SourceCidrBlock", js.undefined)
+    inline def setSourceCidrBlockUndefined: Self = StObject.set(x, "SourceCidrBlock", js.undefined)
     
-    @scala.inline
-    def setSourcePortRange(value: TrafficMirrorPortRangeRequest): Self = StObject.set(x, "SourcePortRange", value.asInstanceOf[js.Any])
+    inline def setSourcePortRange(value: TrafficMirrorPortRangeRequest): Self = StObject.set(x, "SourcePortRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcePortRangeUndefined: Self = StObject.set(x, "SourcePortRange", js.undefined)
+    inline def setSourcePortRangeUndefined: Self = StObject.set(x, "SourcePortRange", js.undefined)
     
-    @scala.inline
-    def setTrafficDirection(value: TrafficDirection): Self = StObject.set(x, "TrafficDirection", value.asInstanceOf[js.Any])
+    inline def setTrafficDirection(value: TrafficDirection): Self = StObject.set(x, "TrafficDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrafficDirectionUndefined: Self = StObject.set(x, "TrafficDirection", js.undefined)
+    inline def setTrafficDirectionUndefined: Self = StObject.set(x, "TrafficDirection", js.undefined)
     
-    @scala.inline
-    def setTrafficMirrorFilterRuleId(value: TrafficMirrorFilterRuleId): Self = StObject.set(x, "TrafficMirrorFilterRuleId", value.asInstanceOf[js.Any])
+    inline def setTrafficMirrorFilterRuleId(value: TrafficMirrorFilterRuleId): Self = StObject.set(x, "TrafficMirrorFilterRuleId", value.asInstanceOf[js.Any])
   }
 }

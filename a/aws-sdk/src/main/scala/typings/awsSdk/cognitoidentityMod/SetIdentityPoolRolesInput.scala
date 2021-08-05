@@ -23,25 +23,19 @@ trait SetIdentityPoolRolesInput extends StObject {
 }
 object SetIdentityPoolRolesInput {
   
-  @scala.inline
-  def apply(IdentityPoolId: IdentityPoolId, Roles: RolesMap): SetIdentityPoolRolesInput = {
+  inline def apply(IdentityPoolId: IdentityPoolId, Roles: RolesMap): SetIdentityPoolRolesInput = {
     val __obj = js.Dynamic.literal(IdentityPoolId = IdentityPoolId.asInstanceOf[js.Any], Roles = Roles.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetIdentityPoolRolesInput]
   }
   
-  @scala.inline
-  implicit class SetIdentityPoolRolesInputMutableBuilder[Self <: SetIdentityPoolRolesInput] (val x: Self) extends AnyVal {
+  extension [Self <: SetIdentityPoolRolesInput](x: Self) {
     
-    @scala.inline
-    def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
+    inline def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleMappings(value: RoleMappingMap): Self = StObject.set(x, "RoleMappings", value.asInstanceOf[js.Any])
+    inline def setRoleMappings(value: RoleMappingMap): Self = StObject.set(x, "RoleMappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleMappingsUndefined: Self = StObject.set(x, "RoleMappings", js.undefined)
+    inline def setRoleMappingsUndefined: Self = StObject.set(x, "RoleMappings", js.undefined)
     
-    @scala.inline
-    def setRoles(value: RolesMap): Self = StObject.set(x, "Roles", value.asInstanceOf[js.Any])
+    inline def setRoles(value: RolesMap): Self = StObject.set(x, "Roles", value.asInstanceOf[js.Any])
   }
 }

@@ -10,8 +10,7 @@ trait IView
      with ITable
 object IView {
   
-  @scala.inline
-  def apply(): IView = {
+  inline def apply(): IView = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IView]
   }

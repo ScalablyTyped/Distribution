@@ -28,31 +28,23 @@ trait UpdateResourceRequest extends StObject {
 }
 object UpdateResourceRequest {
   
-  @scala.inline
-  def apply(OrganizationId: OrganizationId, ResourceId: ResourceId): UpdateResourceRequest = {
+  inline def apply(OrganizationId: OrganizationId, ResourceId: ResourceId): UpdateResourceRequest = {
     val __obj = js.Dynamic.literal(OrganizationId = OrganizationId.asInstanceOf[js.Any], ResourceId = ResourceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateResourceRequest]
   }
   
-  @scala.inline
-  implicit class UpdateResourceRequestMutableBuilder[Self <: UpdateResourceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateResourceRequest](x: Self) {
     
-    @scala.inline
-    def setBookingOptions(value: BookingOptions): Self = StObject.set(x, "BookingOptions", value.asInstanceOf[js.Any])
+    inline def setBookingOptions(value: BookingOptions): Self = StObject.set(x, "BookingOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBookingOptionsUndefined: Self = StObject.set(x, "BookingOptions", js.undefined)
+    inline def setBookingOptionsUndefined: Self = StObject.set(x, "BookingOptions", js.undefined)
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
+    inline def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceId(value: ResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: ResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
   }
 }

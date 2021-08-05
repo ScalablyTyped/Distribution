@@ -17,19 +17,15 @@ trait SentenceOptions extends StObject {
 }
 object SentenceOptions {
   
-  @scala.inline
-  def apply(punctuation: Dot | Questionmark | Semicolon | Exclamationmark | Colon | Boolean, words: Double): SentenceOptions = {
+  inline def apply(punctuation: Dot | Questionmark | Semicolon | Exclamationmark | Colon | Boolean, words: Double): SentenceOptions = {
     val __obj = js.Dynamic.literal(punctuation = punctuation.asInstanceOf[js.Any], words = words.asInstanceOf[js.Any])
     __obj.asInstanceOf[SentenceOptions]
   }
   
-  @scala.inline
-  implicit class SentenceOptionsMutableBuilder[Self <: SentenceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SentenceOptions](x: Self) {
     
-    @scala.inline
-    def setPunctuation(value: Dot | Questionmark | Semicolon | Exclamationmark | Colon | Boolean): Self = StObject.set(x, "punctuation", value.asInstanceOf[js.Any])
+    inline def setPunctuation(value: Dot | Questionmark | Semicolon | Exclamationmark | Colon | Boolean): Self = StObject.set(x, "punctuation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWords(value: Double): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
+    inline def setWords(value: Double): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
   }
 }

@@ -16,19 +16,15 @@ trait BluetoothLEAdvertisementDataSection extends StObject {
 }
 object BluetoothLEAdvertisementDataSection {
   
-  @scala.inline
-  def apply(data: IBuffer, dataType: Double): BluetoothLEAdvertisementDataSection = {
+  inline def apply(data: IBuffer, dataType: Double): BluetoothLEAdvertisementDataSection = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], dataType = dataType.asInstanceOf[js.Any])
     __obj.asInstanceOf[BluetoothLEAdvertisementDataSection]
   }
   
-  @scala.inline
-  implicit class BluetoothLEAdvertisementDataSectionMutableBuilder[Self <: BluetoothLEAdvertisementDataSection] (val x: Self) extends AnyVal {
+  extension [Self <: BluetoothLEAdvertisementDataSection](x: Self) {
     
-    @scala.inline
-    def setData(value: IBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: IBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataType(value: Double): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+    inline def setDataType(value: Double): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
   }
 }

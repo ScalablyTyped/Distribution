@@ -18,25 +18,19 @@ trait CreateIndexOptions extends StObject {
 }
 object CreateIndexOptions {
   
-  @scala.inline
-  def apply(): CreateIndexOptions = {
+  inline def apply(): CreateIndexOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateIndexOptions]
   }
   
-  @scala.inline
-  implicit class CreateIndexOptionsMutableBuilder[Self <: CreateIndexOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CreateIndexOptions](x: Self) {
     
-    @scala.inline
-    def setDeferred(value: Boolean): Self = StObject.set(x, "deferred", value.asInstanceOf[js.Any])
+    inline def setDeferred(value: Boolean): Self = StObject.set(x, "deferred", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferredUndefined: Self = StObject.set(x, "deferred", js.undefined)
+    inline def setDeferredUndefined: Self = StObject.set(x, "deferred", js.undefined)
     
-    @scala.inline
-    def setIgnoreIfExists(value: Boolean): Self = StObject.set(x, "ignoreIfExists", value.asInstanceOf[js.Any])
+    inline def setIgnoreIfExists(value: Boolean): Self = StObject.set(x, "ignoreIfExists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreIfExistsUndefined: Self = StObject.set(x, "ignoreIfExists", js.undefined)
+    inline def setIgnoreIfExistsUndefined: Self = StObject.set(x, "ignoreIfExists", js.undefined)
   }
 }

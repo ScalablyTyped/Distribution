@@ -47,17 +47,14 @@ object mod {
   }
   object ListrError {
     
-    @scala.inline
-    def apply[Ctx](context: Ctx, message: String, name: String): ListrError[Ctx] = {
+    inline def apply[Ctx](context: Ctx, message: String, name: String): ListrError[Ctx] = {
       val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListrError[Ctx]]
     }
     
-    @scala.inline
-    implicit class ListrErrorMutableBuilder[Self <: ListrError[?], Ctx] (val x: Self & ListrError[Ctx]) extends AnyVal {
+    extension [Self <: ListrError[?], Ctx](x: Self & ListrError[Ctx]) {
       
-      @scala.inline
-      def setContext(value: Ctx): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Ctx): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     }
   }
   
@@ -69,24 +66,19 @@ object mod {
   }
   object ListrEvent {
     
-    @scala.inline
-    def apply(`type`: String): ListrEvent = {
+    inline def apply(`type`: String): ListrEvent = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListrEvent]
     }
     
-    @scala.inline
-    implicit class ListrEventMutableBuilder[Self <: ListrEvent] (val x: Self) extends AnyVal {
+    extension [Self <: ListrEvent](x: Self) {
       
-      @scala.inline
-      def setData(value: String | Boolean): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String | Boolean): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -102,38 +94,28 @@ object mod {
   }
   object ListrOptions {
     
-    @scala.inline
-    def apply[Ctx](): ListrOptions[Ctx] = {
+    inline def apply[Ctx](): ListrOptions[Ctx] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListrOptions[Ctx]]
     }
     
-    @scala.inline
-    implicit class ListrOptionsMutableBuilder[Self <: ListrOptions[?], Ctx] (val x: Self & ListrOptions[Ctx]) extends AnyVal {
+    extension [Self <: ListrOptions[?], Ctx](x: Self & ListrOptions[Ctx]) {
       
-      @scala.inline
-      def setConcurrent(value: Boolean | Double): Self = StObject.set(x, "concurrent", value.asInstanceOf[js.Any])
+      inline def setConcurrent(value: Boolean | Double): Self = StObject.set(x, "concurrent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConcurrentUndefined: Self = StObject.set(x, "concurrent", js.undefined)
+      inline def setConcurrentUndefined: Self = StObject.set(x, "concurrent", js.undefined)
       
-      @scala.inline
-      def setExitOnError(value: Boolean): Self = StObject.set(x, "exitOnError", value.asInstanceOf[js.Any])
+      inline def setExitOnError(value: Boolean): Self = StObject.set(x, "exitOnError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExitOnErrorUndefined: Self = StObject.set(x, "exitOnError", js.undefined)
+      inline def setExitOnErrorUndefined: Self = StObject.set(x, "exitOnError", js.undefined)
       
-      @scala.inline
-      def setNonTTYRenderer(value: ListrRendererValue[Ctx]): Self = StObject.set(x, "nonTTYRenderer", value.asInstanceOf[js.Any])
+      inline def setNonTTYRenderer(value: ListrRendererValue[Ctx]): Self = StObject.set(x, "nonTTYRenderer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonTTYRendererUndefined: Self = StObject.set(x, "nonTTYRenderer", js.undefined)
+      inline def setNonTTYRendererUndefined: Self = StObject.set(x, "nonTTYRenderer", js.undefined)
       
-      @scala.inline
-      def setRenderer(value: ListrRendererValue[Ctx]): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+      inline def setRenderer(value: ListrRendererValue[Ctx]): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+      inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
     }
   }
   
@@ -145,20 +127,16 @@ object mod {
   }
   object ListrRenderer {
     
-    @scala.inline
-    def apply(end: Error => Unit, render: () => Unit): ListrRenderer = {
+    inline def apply(end: Error => Unit, render: () => Unit): ListrRenderer = {
       val __obj = js.Dynamic.literal(end = js.Any.fromFunction1(end), render = js.Any.fromFunction0(render))
       __obj.asInstanceOf[ListrRenderer]
     }
     
-    @scala.inline
-    implicit class ListrRendererMutableBuilder[Self <: ListrRenderer] (val x: Self) extends AnyVal {
+    extension [Self <: ListrRenderer](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Error => Unit): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
+      inline def setEnd(value: Error => Unit): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRender(value: () => Unit): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
+      inline def setRender(value: () => Unit): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
     }
   }
   
@@ -197,32 +175,24 @@ object mod {
   }
   object ListrTask {
     
-    @scala.inline
-    def apply[Ctx](task: (Ctx, ListrTaskWrapper[Ctx]) => Unit | ListrTaskResult[Ctx], title: String): ListrTask[Ctx] = {
+    inline def apply[Ctx](task: (Ctx, ListrTaskWrapper[Ctx]) => Unit | ListrTaskResult[Ctx], title: String): ListrTask[Ctx] = {
       val __obj = js.Dynamic.literal(task = js.Any.fromFunction2(task), title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListrTask[Ctx]]
     }
     
-    @scala.inline
-    implicit class ListrTaskMutableBuilder[Self <: ListrTask[?], Ctx] (val x: Self & ListrTask[Ctx]) extends AnyVal {
+    extension [Self <: ListrTask[?], Ctx](x: Self & ListrTask[Ctx]) {
       
-      @scala.inline
-      def setEnabled(value: /* ctx */ Ctx => Boolean | js.Promise[Boolean] | Observable_[Boolean]): Self = StObject.set(x, "enabled", js.Any.fromFunction1(value))
+      inline def setEnabled(value: /* ctx */ Ctx => Boolean | js.Promise[Boolean] | Observable_[Boolean]): Self = StObject.set(x, "enabled", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setSkip(value: /* ctx */ Ctx => Unit | Boolean | String | js.Promise[Boolean]): Self = StObject.set(x, "skip", js.Any.fromFunction1(value))
+      inline def setSkip(value: /* ctx */ Ctx => Unit | Boolean | String | js.Promise[Boolean]): Self = StObject.set(x, "skip", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+      inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
       
-      @scala.inline
-      def setTask(value: (Ctx, ListrTaskWrapper[Ctx]) => Unit | ListrTaskResult[Ctx]): Self = StObject.set(x, "task", js.Any.fromFunction2(value))
+      inline def setTask(value: (Ctx, ListrTaskWrapper[Ctx]) => Unit | ListrTaskResult[Ctx]): Self = StObject.set(x, "task", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   

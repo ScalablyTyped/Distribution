@@ -28,25 +28,19 @@ trait ObjectStoreIndex extends StObject {
 }
 object ObjectStoreIndex {
   
-  @scala.inline
-  def apply(keyPath: KeyPath, multiEntry: Boolean, name: String, unique: Boolean): ObjectStoreIndex = {
+  inline def apply(keyPath: KeyPath, multiEntry: Boolean, name: String, unique: Boolean): ObjectStoreIndex = {
     val __obj = js.Dynamic.literal(keyPath = keyPath.asInstanceOf[js.Any], multiEntry = multiEntry.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], unique = unique.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectStoreIndex]
   }
   
-  @scala.inline
-  implicit class ObjectStoreIndexMutableBuilder[Self <: ObjectStoreIndex] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectStoreIndex](x: Self) {
     
-    @scala.inline
-    def setKeyPath(value: KeyPath): Self = StObject.set(x, "keyPath", value.asInstanceOf[js.Any])
+    inline def setKeyPath(value: KeyPath): Self = StObject.set(x, "keyPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiEntry(value: Boolean): Self = StObject.set(x, "multiEntry", value.asInstanceOf[js.Any])
+    inline def setMultiEntry(value: Boolean): Self = StObject.set(x, "multiEntry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnique(value: Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
+    inline def setUnique(value: Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
   }
 }

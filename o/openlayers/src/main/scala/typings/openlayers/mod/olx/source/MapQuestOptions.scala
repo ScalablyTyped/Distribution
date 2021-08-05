@@ -20,40 +20,29 @@ trait MapQuestOptions extends StObject {
 }
 object MapQuestOptions {
   
-  @scala.inline
-  def apply(layer: String): MapQuestOptions = {
+  inline def apply(layer: String): MapQuestOptions = {
     val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapQuestOptions]
   }
   
-  @scala.inline
-  implicit class MapQuestOptionsMutableBuilder[Self <: MapQuestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MapQuestOptions](x: Self) {
     
-    @scala.inline
-    def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
+    inline def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheSizeUndefined: Self = StObject.set(x, "cacheSize", js.undefined)
+    inline def setCacheSizeUndefined: Self = StObject.set(x, "cacheSize", js.undefined)
     
-    @scala.inline
-    def setLayer(value: String): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: String): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReprojectionErrorThreshold(value: Double): Self = StObject.set(x, "reprojectionErrorThreshold", value.asInstanceOf[js.Any])
+    inline def setReprojectionErrorThreshold(value: Double): Self = StObject.set(x, "reprojectionErrorThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReprojectionErrorThresholdUndefined: Self = StObject.set(x, "reprojectionErrorThreshold", js.undefined)
+    inline def setReprojectionErrorThresholdUndefined: Self = StObject.set(x, "reprojectionErrorThreshold", js.undefined)
     
-    @scala.inline
-    def setTileLoadFunction(value: (/* tile */ Tile, /* url */ String) => Unit): Self = StObject.set(x, "tileLoadFunction", js.Any.fromFunction2(value))
+    inline def setTileLoadFunction(value: (/* tile */ Tile, /* url */ String) => Unit): Self = StObject.set(x, "tileLoadFunction", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTileLoadFunctionUndefined: Self = StObject.set(x, "tileLoadFunction", js.undefined)
+    inline def setTileLoadFunctionUndefined: Self = StObject.set(x, "tileLoadFunction", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

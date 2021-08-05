@@ -23,8 +23,7 @@ object anon {
   }
   object Buffer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Buffer: () => String,
       BufferDotisBuffer: String => String,
       __dirname: (String, String) => String,
@@ -37,26 +36,19 @@ object anon {
       __obj.asInstanceOf[Buffer]
     }
     
-    @scala.inline
-    implicit class BufferMutableBuilder[Self <: Buffer] (val x: Self) extends AnyVal {
+    extension [Self <: Buffer](x: Self) {
       
-      @scala.inline
-      def setBuffer(value: () => String): Self = StObject.set(x, "Buffer", js.Any.fromFunction0(value))
+      inline def setBuffer(value: () => String): Self = StObject.set(x, "Buffer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setBufferDotisBuffer(value: String => String): Self = StObject.set(x, "Buffer.isBuffer", js.Any.fromFunction1(value))
+      inline def setBufferDotisBuffer(value: String => String): Self = StObject.set(x, "Buffer.isBuffer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGlobal(value: () => String): Self = StObject.set(x, "global", js.Any.fromFunction0(value))
+      inline def setGlobal(value: () => String): Self = StObject.set(x, "global", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setProcess(value: String => String): Self = StObject.set(x, "process", js.Any.fromFunction1(value))
+      inline def setProcess(value: String => String): Self = StObject.set(x, "process", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set__dirname(value: (String, String) => String): Self = StObject.set(x, "__dirname", js.Any.fromFunction2(value))
+      inline def set__dirname(value: (String, String) => String): Self = StObject.set(x, "__dirname", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def set__filename(value: (String, String) => String): Self = StObject.set(x, "__filename", js.Any.fromFunction2(value))
+      inline def set__filename(value: (String, String) => String): Self = StObject.set(x, "__filename", js.Any.fromFunction2(value))
     }
   }
 }

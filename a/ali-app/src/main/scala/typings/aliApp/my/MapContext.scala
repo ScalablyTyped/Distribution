@@ -22,19 +22,15 @@ trait MapContext
 }
 object MapContext {
   
-  @scala.inline
-  def apply(getCenterLocation: GetCenterLocationOptions => Unit, moveToLocation: () => Unit): MapContext = {
+  inline def apply(getCenterLocation: GetCenterLocationOptions => Unit, moveToLocation: () => Unit): MapContext = {
     val __obj = js.Dynamic.literal(getCenterLocation = js.Any.fromFunction1(getCenterLocation), moveToLocation = js.Any.fromFunction0(moveToLocation))
     __obj.asInstanceOf[MapContext]
   }
   
-  @scala.inline
-  implicit class MapContextMutableBuilder[Self <: MapContext] (val x: Self) extends AnyVal {
+  extension [Self <: MapContext](x: Self) {
     
-    @scala.inline
-    def setGetCenterLocation(value: GetCenterLocationOptions => Unit): Self = StObject.set(x, "getCenterLocation", js.Any.fromFunction1(value))
+    inline def setGetCenterLocation(value: GetCenterLocationOptions => Unit): Self = StObject.set(x, "getCenterLocation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMoveToLocation(value: () => Unit): Self = StObject.set(x, "moveToLocation", js.Any.fromFunction0(value))
+    inline def setMoveToLocation(value: () => Unit): Self = StObject.set(x, "moveToLocation", js.Any.fromFunction0(value))
   }
 }

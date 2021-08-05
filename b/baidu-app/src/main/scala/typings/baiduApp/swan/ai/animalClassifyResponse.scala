@@ -17,25 +17,19 @@ trait animalClassifyResponse extends StObject {
 }
 object animalClassifyResponse {
   
-  @scala.inline
-  def apply(log_id: Double, result: js.Array[Score], result_num: Double): animalClassifyResponse = {
+  inline def apply(log_id: Double, result: js.Array[Score], result_num: Double): animalClassifyResponse = {
     val __obj = js.Dynamic.literal(log_id = log_id.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], result_num = result_num.asInstanceOf[js.Any])
     __obj.asInstanceOf[animalClassifyResponse]
   }
   
-  @scala.inline
-  implicit class animalClassifyResponseMutableBuilder[Self <: animalClassifyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: animalClassifyResponse](x: Self) {
     
-    @scala.inline
-    def setLog_id(value: Double): Self = StObject.set(x, "log_id", value.asInstanceOf[js.Any])
+    inline def setLog_id(value: Double): Self = StObject.set(x, "log_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: js.Array[Score]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: js.Array[Score]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultVarargs(value: Score*): Self = StObject.set(x, "result", js.Array(value :_*))
+    inline def setResultVarargs(value: Score*): Self = StObject.set(x, "result", js.Array(value :_*))
     
-    @scala.inline
-    def setResult_num(value: Double): Self = StObject.set(x, "result_num", value.asInstanceOf[js.Any])
+    inline def setResult_num(value: Double): Self = StObject.set(x, "result_num", value.asInstanceOf[js.Any])
   }
 }

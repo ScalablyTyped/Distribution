@@ -13,19 +13,15 @@ trait DeclineHandshakeResponse extends StObject {
 }
 object DeclineHandshakeResponse {
   
-  @scala.inline
-  def apply(): DeclineHandshakeResponse = {
+  inline def apply(): DeclineHandshakeResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeclineHandshakeResponse]
   }
   
-  @scala.inline
-  implicit class DeclineHandshakeResponseMutableBuilder[Self <: DeclineHandshakeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeclineHandshakeResponse](x: Self) {
     
-    @scala.inline
-    def setHandshake(value: Handshake): Self = StObject.set(x, "Handshake", value.asInstanceOf[js.Any])
+    inline def setHandshake(value: Handshake): Self = StObject.set(x, "Handshake", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandshakeUndefined: Self = StObject.set(x, "Handshake", js.undefined)
+    inline def setHandshakeUndefined: Self = StObject.set(x, "Handshake", js.undefined)
   }
 }

@@ -17,8 +17,7 @@ object sidebarBackButtonUniDriverMod {
   }
   object SidebarBackButtonUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       clickButton: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
@@ -29,14 +28,11 @@ object sidebarBackButtonUniDriverMod {
       __obj.asInstanceOf[SidebarBackButtonUniDriver]
     }
     
-    @scala.inline
-    implicit class SidebarBackButtonUniDriverMutableBuilder[Self <: SidebarBackButtonUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: SidebarBackButtonUniDriver](x: Self) {
       
-      @scala.inline
-      def setClickButton(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickButton", js.Any.fromFunction0(value))
+      inline def setClickButton(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetButtonText(value: () => js.Promise[String]): Self = StObject.set(x, "getButtonText", js.Any.fromFunction0(value))
+      inline def setGetButtonText(value: () => js.Promise[String]): Self = StObject.set(x, "getButtonText", js.Any.fromFunction0(value))
     }
   }
 }

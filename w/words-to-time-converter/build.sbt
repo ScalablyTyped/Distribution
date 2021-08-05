@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "words-to-time-converter"
-version := "1.0-dt-20201107Z-221027"
+version := "1.0-dt-20201107Z-473ad0"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

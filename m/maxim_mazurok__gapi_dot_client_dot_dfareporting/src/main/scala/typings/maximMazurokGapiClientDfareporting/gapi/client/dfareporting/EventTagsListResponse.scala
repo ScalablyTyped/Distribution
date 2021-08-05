@@ -14,28 +14,21 @@ trait EventTagsListResponse extends StObject {
 }
 object EventTagsListResponse {
   
-  @scala.inline
-  def apply(): EventTagsListResponse = {
+  inline def apply(): EventTagsListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EventTagsListResponse]
   }
   
-  @scala.inline
-  implicit class EventTagsListResponseMutableBuilder[Self <: EventTagsListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: EventTagsListResponse](x: Self) {
     
-    @scala.inline
-    def setEventTags(value: js.Array[EventTag]): Self = StObject.set(x, "eventTags", value.asInstanceOf[js.Any])
+    inline def setEventTags(value: js.Array[EventTag]): Self = StObject.set(x, "eventTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTagsUndefined: Self = StObject.set(x, "eventTags", js.undefined)
+    inline def setEventTagsUndefined: Self = StObject.set(x, "eventTags", js.undefined)
     
-    @scala.inline
-    def setEventTagsVarargs(value: EventTag*): Self = StObject.set(x, "eventTags", js.Array(value :_*))
+    inline def setEventTagsVarargs(value: EventTag*): Self = StObject.set(x, "eventTags", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

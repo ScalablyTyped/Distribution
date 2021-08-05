@@ -14,22 +14,17 @@ trait NewsRepositoryInboxResponseHashtagFollow extends StObject {
 }
 object NewsRepositoryInboxResponseHashtagFollow {
   
-  @scala.inline
-  def apply(follow_status: Double, id: String, name: String): NewsRepositoryInboxResponseHashtagFollow = {
+  inline def apply(follow_status: Double, id: String, name: String): NewsRepositoryInboxResponseHashtagFollow = {
     val __obj = js.Dynamic.literal(follow_status = follow_status.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewsRepositoryInboxResponseHashtagFollow]
   }
   
-  @scala.inline
-  implicit class NewsRepositoryInboxResponseHashtagFollowMutableBuilder[Self <: NewsRepositoryInboxResponseHashtagFollow] (val x: Self) extends AnyVal {
+  extension [Self <: NewsRepositoryInboxResponseHashtagFollow](x: Self) {
     
-    @scala.inline
-    def setFollow_status(value: Double): Self = StObject.set(x, "follow_status", value.asInstanceOf[js.Any])
+    inline def setFollow_status(value: Double): Self = StObject.set(x, "follow_status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

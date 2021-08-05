@@ -11,19 +11,15 @@ trait ValueArray extends StObject {
 }
 object ValueArray {
   
-  @scala.inline
-  def apply(value: js.Array[Double]): ValueArray = {
+  inline def apply(value: js.Array[Double]): ValueArray = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueArray]
   }
   
-  @scala.inline
-  implicit class ValueArrayMutableBuilder[Self <: ValueArray] (val x: Self) extends AnyVal {
+  extension [Self <: ValueArray](x: Self) {
     
-    @scala.inline
-    def setValue(value: js.Array[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Array[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

@@ -708,8 +708,7 @@ object BulkAccess {
   }
   object IStorageItemInformation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       basicProperties: BasicProperties,
       documentProperties: DocumentProperties,
       imageProperties: ImageProperties,
@@ -721,26 +720,19 @@ object BulkAccess {
       __obj.asInstanceOf[IStorageItemInformation]
     }
     
-    @scala.inline
-    implicit class IStorageItemInformationMutableBuilder[Self <: IStorageItemInformation] (val x: Self) extends AnyVal {
+    extension [Self <: IStorageItemInformation](x: Self) {
       
-      @scala.inline
-      def setBasicProperties(value: BasicProperties): Self = StObject.set(x, "basicProperties", value.asInstanceOf[js.Any])
+      inline def setBasicProperties(value: BasicProperties): Self = StObject.set(x, "basicProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentProperties(value: DocumentProperties): Self = StObject.set(x, "documentProperties", value.asInstanceOf[js.Any])
+      inline def setDocumentProperties(value: DocumentProperties): Self = StObject.set(x, "documentProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageProperties(value: ImageProperties): Self = StObject.set(x, "imageProperties", value.asInstanceOf[js.Any])
+      inline def setImageProperties(value: ImageProperties): Self = StObject.set(x, "imageProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMusicProperties(value: MusicProperties): Self = StObject.set(x, "musicProperties", value.asInstanceOf[js.Any])
+      inline def setMusicProperties(value: MusicProperties): Self = StObject.set(x, "musicProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnail(value: StorageItemThumbnail): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+      inline def setThumbnail(value: StorageItemThumbnail): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVideoProperties(value: VideoProperties): Self = StObject.set(x, "videoProperties", value.asInstanceOf[js.Any])
+      inline def setVideoProperties(value: VideoProperties): Self = StObject.set(x, "videoProperties", value.asInstanceOf[js.Any])
     }
   }
 }

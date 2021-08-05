@@ -99,74 +99,52 @@ object baseCardTypesMod {
   }
   object IBaseCardProps {
     
-    @scala.inline
-    def apply[TComponent, TStyles, TStyleProps](): IBaseCardProps[TComponent, TStyles, TStyleProps] = {
+    inline def apply[TComponent, TStyles, TStyleProps](): IBaseCardProps[TComponent, TStyles, TStyleProps] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IBaseCardProps[TComponent, TStyles, TStyleProps]]
     }
     
-    @scala.inline
-    implicit class IBaseCardPropsMutableBuilder[Self <: IBaseCardProps[?, ?, ?], TComponent, TStyles, TStyleProps] (val x: Self & (IBaseCardProps[TComponent, TStyles, TStyleProps])) extends AnyVal {
+    extension [Self <: IBaseCardProps[?, ?, ?], TComponent, TStyles, TStyleProps](x: Self & (IBaseCardProps[TComponent, TStyles, TStyleProps])) {
       
-      @scala.inline
-      def setCalloutProps(value: ICalloutProps): Self = StObject.set(x, "calloutProps", value.asInstanceOf[js.Any])
+      inline def setCalloutProps(value: ICalloutProps): Self = StObject.set(x, "calloutProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCalloutPropsUndefined: Self = StObject.set(x, "calloutProps", js.undefined)
+      inline def setCalloutPropsUndefined: Self = StObject.set(x, "calloutProps", js.undefined)
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[TComponent]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[TComponent]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ TComponent | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ TComponent | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setDirectionalHint(value: DirectionalHint): Self = StObject.set(x, "directionalHint", value.asInstanceOf[js.Any])
+      inline def setDirectionalHint(value: DirectionalHint): Self = StObject.set(x, "directionalHint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionalHintFixed(value: Boolean): Self = StObject.set(x, "directionalHintFixed", value.asInstanceOf[js.Any])
+      inline def setDirectionalHintFixed(value: Boolean): Self = StObject.set(x, "directionalHintFixed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionalHintFixedUndefined: Self = StObject.set(x, "directionalHintFixed", js.undefined)
+      inline def setDirectionalHintFixedUndefined: Self = StObject.set(x, "directionalHintFixed", js.undefined)
       
-      @scala.inline
-      def setDirectionalHintUndefined: Self = StObject.set(x, "directionalHint", js.undefined)
+      inline def setDirectionalHintUndefined: Self = StObject.set(x, "directionalHint", js.undefined)
       
-      @scala.inline
-      def setFirstFocus(value: Boolean): Self = StObject.set(x, "firstFocus", value.asInstanceOf[js.Any])
+      inline def setFirstFocus(value: Boolean): Self = StObject.set(x, "firstFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstFocusUndefined: Self = StObject.set(x, "firstFocus", js.undefined)
+      inline def setFirstFocusUndefined: Self = StObject.set(x, "firstFocus", js.undefined)
       
-      @scala.inline
-      def setGapSpace(value: Double): Self = StObject.set(x, "gapSpace", value.asInstanceOf[js.Any])
+      inline def setGapSpace(value: Double): Self = StObject.set(x, "gapSpace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGapSpaceUndefined: Self = StObject.set(x, "gapSpace", js.undefined)
+      inline def setGapSpaceUndefined: Self = StObject.set(x, "gapSpace", js.undefined)
       
-      @scala.inline
-      def setOnEnter(value: /* ev */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onEnter", js.Any.fromFunction1(value))
+      inline def setOnEnter(value: /* ev */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onEnter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
+      inline def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
       
-      @scala.inline
-      def setOnLeave(value: /* ev */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onLeave", js.Any.fromFunction1(value))
+      inline def setOnLeave(value: /* ev */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onLeave", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLeaveUndefined: Self = StObject.set(x, "onLeave", js.undefined)
+      inline def setOnLeaveUndefined: Self = StObject.set(x, "onLeave", js.undefined)
       
-      @scala.inline
-      def setRenderData(value: js.Any): Self = StObject.set(x, "renderData", value.asInstanceOf[js.Any])
+      inline def setRenderData(value: js.Any): Self = StObject.set(x, "renderData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderDataUndefined: Self = StObject.set(x, "renderData", js.undefined)
+      inline def setRenderDataUndefined: Self = StObject.set(x, "renderData", js.undefined)
       
-      @scala.inline
-      def setStyles(
+      inline def setStyles(
         value: IStyleFunctionOrObject[
               TStyleProps, 
               /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -175,8 +153,7 @@ object baseCardTypesMod {
             ]
       ): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(
+      inline def setStylesFunction1(
         value: TStyleProps => DeepPartial[
               /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ P in keyof TStyles ]: @uifabric/merge-styles.@uifabric/merge-styles/lib/IStyle.IStyle}
@@ -184,26 +161,19 @@ object baseCardTypesMod {
             ]
       ): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTargetElement(value: HTMLElement): Self = StObject.set(x, "targetElement", value.asInstanceOf[js.Any])
+      inline def setTargetElement(value: HTMLElement): Self = StObject.set(x, "targetElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetElementUndefined: Self = StObject.set(x, "targetElement", js.undefined)
+      inline def setTargetElementUndefined: Self = StObject.set(x, "targetElement", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setTrapFocus(value: Boolean): Self = StObject.set(x, "trapFocus", value.asInstanceOf[js.Any])
+      inline def setTrapFocus(value: Boolean): Self = StObject.set(x, "trapFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrapFocusUndefined: Self = StObject.set(x, "trapFocus", js.undefined)
+      inline def setTrapFocusUndefined: Self = StObject.set(x, "trapFocus", js.undefined)
     }
   }
   
@@ -221,23 +191,18 @@ object baseCardTypesMod {
   }
   object IBaseCardStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): IBaseCardStyleProps = {
+    inline def apply(theme: ITheme): IBaseCardStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[IBaseCardStyleProps]
     }
     
-    @scala.inline
-    implicit class IBaseCardStylePropsMutableBuilder[Self <: IBaseCardStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IBaseCardStyleProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -250,23 +215,18 @@ object baseCardTypesMod {
   }
   object IBaseCardStyles {
     
-    @scala.inline
-    def apply(): IBaseCardStyles = {
+    inline def apply(): IBaseCardStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IBaseCardStyles]
     }
     
-    @scala.inline
-    implicit class IBaseCardStylesMutableBuilder[Self <: IBaseCardStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IBaseCardStyles](x: Self) {
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
 }

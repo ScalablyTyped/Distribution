@@ -15,18 +15,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LocationUniqueIdType extends StObject
 object LocationUniqueIdType {
   
-  @scala.inline
-  def bing: typings.microsoftGraph.microsoftGraphStrings.bing = "bing".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.bing]
+  inline def bing: typings.microsoftGraph.microsoftGraphStrings.bing = "bing".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.bing]
   
-  @scala.inline
-  def directory: typings.microsoftGraph.microsoftGraphStrings.directory = "directory".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.directory]
+  inline def directory: typings.microsoftGraph.microsoftGraphStrings.directory = "directory".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.directory]
   
-  @scala.inline
-  def locationStore: typings.microsoftGraph.microsoftGraphStrings.locationStore = "locationStore".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.locationStore]
+  inline def locationStore: typings.microsoftGraph.microsoftGraphStrings.locationStore = "locationStore".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.locationStore]
   
-  @scala.inline
-  def `private`: typings.microsoftGraph.microsoftGraphStrings.`private` = "private".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.`private`]
+  inline def `private`: typings.microsoftGraph.microsoftGraphStrings.`private` = "private".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.`private`]
   
-  @scala.inline
-  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
+  inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
 }

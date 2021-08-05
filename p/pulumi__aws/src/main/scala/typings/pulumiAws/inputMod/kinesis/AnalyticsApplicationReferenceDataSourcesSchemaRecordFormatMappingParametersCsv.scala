@@ -19,19 +19,15 @@ trait AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParameter
 }
 object AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersCsv {
   
-  @scala.inline
-  def apply(recordColumnDelimiter: Input[String], recordRowDelimiter: Input[String]): AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersCsv = {
+  inline def apply(recordColumnDelimiter: Input[String], recordRowDelimiter: Input[String]): AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersCsv = {
     val __obj = js.Dynamic.literal(recordColumnDelimiter = recordColumnDelimiter.asInstanceOf[js.Any], recordRowDelimiter = recordRowDelimiter.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersCsv]
   }
   
-  @scala.inline
-  implicit class AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersCsvMutableBuilder[Self <: AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersCsv] (val x: Self) extends AnyVal {
+  extension [Self <: AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersCsv](x: Self) {
     
-    @scala.inline
-    def setRecordColumnDelimiter(value: Input[String]): Self = StObject.set(x, "recordColumnDelimiter", value.asInstanceOf[js.Any])
+    inline def setRecordColumnDelimiter(value: Input[String]): Self = StObject.set(x, "recordColumnDelimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordRowDelimiter(value: Input[String]): Self = StObject.set(x, "recordRowDelimiter", value.asInstanceOf[js.Any])
+    inline def setRecordRowDelimiter(value: Input[String]): Self = StObject.set(x, "recordRowDelimiter", value.asInstanceOf[js.Any])
   }
 }

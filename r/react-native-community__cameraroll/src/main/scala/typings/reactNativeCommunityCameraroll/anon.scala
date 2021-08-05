@@ -20,44 +20,32 @@ object anon {
   }
   object Altitude {
     
-    @scala.inline
-    def apply(): Altitude = {
+    inline def apply(): Altitude = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Altitude]
     }
     
-    @scala.inline
-    implicit class AltitudeMutableBuilder[Self <: Altitude] (val x: Self) extends AnyVal {
+    extension [Self <: Altitude](x: Self) {
       
-      @scala.inline
-      def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
+      inline def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAltitudeUndefined: Self = StObject.set(x, "altitude", js.undefined)
+      inline def setAltitudeUndefined: Self = StObject.set(x, "altitude", js.undefined)
       
-      @scala.inline
-      def setHeading(value: Double): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
+      inline def setHeading(value: Double): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
+      inline def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
       
-      @scala.inline
-      def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+      inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatitudeUndefined: Self = StObject.set(x, "latitude", js.undefined)
+      inline def setLatitudeUndefined: Self = StObject.set(x, "latitude", js.undefined)
       
-      @scala.inline
-      def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+      inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongitudeUndefined: Self = StObject.set(x, "longitude", js.undefined)
+      inline def setLongitudeUndefined: Self = StObject.set(x, "longitude", js.undefined)
       
-      @scala.inline
-      def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+      inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
+      inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
     }
   }
   
@@ -71,29 +59,22 @@ object anon {
   }
   object Endcursor {
     
-    @scala.inline
-    def apply(has_next_page: Boolean): Endcursor = {
+    inline def apply(has_next_page: Boolean): Endcursor = {
       val __obj = js.Dynamic.literal(has_next_page = has_next_page.asInstanceOf[js.Any])
       __obj.asInstanceOf[Endcursor]
     }
     
-    @scala.inline
-    implicit class EndcursorMutableBuilder[Self <: Endcursor] (val x: Self) extends AnyVal {
+    extension [Self <: Endcursor](x: Self) {
       
-      @scala.inline
-      def setEnd_cursor(value: String): Self = StObject.set(x, "end_cursor", value.asInstanceOf[js.Any])
+      inline def setEnd_cursor(value: String): Self = StObject.set(x, "end_cursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnd_cursorUndefined: Self = StObject.set(x, "end_cursor", js.undefined)
+      inline def setEnd_cursorUndefined: Self = StObject.set(x, "end_cursor", js.undefined)
       
-      @scala.inline
-      def setHas_next_page(value: Boolean): Self = StObject.set(x, "has_next_page", value.asInstanceOf[js.Any])
+      inline def setHas_next_page(value: Boolean): Self = StObject.set(x, "has_next_page", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart_cursor(value: String): Self = StObject.set(x, "start_cursor", value.asInstanceOf[js.Any])
+      inline def setStart_cursor(value: String): Self = StObject.set(x, "start_cursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart_cursorUndefined: Self = StObject.set(x, "start_cursor", js.undefined)
+      inline def setStart_cursorUndefined: Self = StObject.set(x, "start_cursor", js.undefined)
     }
   }
   
@@ -121,41 +102,30 @@ object anon {
   }
   object FileSize {
     
-    @scala.inline
-    def apply(height: Double, uri: String, width: Double): FileSize = {
+    inline def apply(height: Double, uri: String, width: Double): FileSize = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], fileSize = null, filename = null, playableDuration = null)
       __obj.asInstanceOf[FileSize]
     }
     
-    @scala.inline
-    implicit class FileSizeMutableBuilder[Self <: FileSize] (val x: Self) extends AnyVal {
+    extension [Self <: FileSize](x: Self) {
       
-      @scala.inline
-      def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
+      inline def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileSizeNull: Self = StObject.set(x, "fileSize", null)
+      inline def setFileSizeNull: Self = StObject.set(x, "fileSize", null)
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameNull: Self = StObject.set(x, "filename", null)
+      inline def setFilenameNull: Self = StObject.set(x, "filename", null)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlayableDuration(value: Double): Self = StObject.set(x, "playableDuration", value.asInstanceOf[js.Any])
+      inline def setPlayableDuration(value: Double): Self = StObject.set(x, "playableDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlayableDurationNull: Self = StObject.set(x, "playableDuration", null)
+      inline def setPlayableDurationNull: Self = StObject.set(x, "playableDuration", null)
       
-      @scala.inline
-      def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -175,33 +145,25 @@ object anon {
   }
   object Groupname {
     
-    @scala.inline
-    def apply(group_name: String, image: FileSize, timestamp: Double, `type`: String): Groupname = {
+    inline def apply(group_name: String, image: FileSize, timestamp: Double, `type`: String): Groupname = {
       val __obj = js.Dynamic.literal(group_name = group_name.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], location = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Groupname]
     }
     
-    @scala.inline
-    implicit class GroupnameMutableBuilder[Self <: Groupname] (val x: Self) extends AnyVal {
+    extension [Self <: Groupname](x: Self) {
       
-      @scala.inline
-      def setGroup_name(value: String): Self = StObject.set(x, "group_name", value.asInstanceOf[js.Any])
+      inline def setGroup_name(value: String): Self = StObject.set(x, "group_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage(value: FileSize): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: FileSize): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: Altitude): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: Altitude): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationNull: Self = StObject.set(x, "location", null)
+      inline def setLocationNull: Self = StObject.set(x, "location", null)
       
-      @scala.inline
-      def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

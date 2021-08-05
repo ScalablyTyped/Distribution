@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.NegativeBarFormat")
 @js.native
-class NegativeBarFormat protected ()
+/* private */ class NegativeBarFormat ()
   extends StObject
      with typings.activexExcel.Excel.NegativeBarFormat {
   
@@ -30,7 +30,7 @@ class NegativeBarFormat protected ()
   /* CompleteClass */
   override val Creator: XlCreator = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.NegativeBarFormat_typekey")
   var ExcelDotNegativeBarFormat_typekey: typings.activexExcel.Excel.NegativeBarFormat = js.native
   

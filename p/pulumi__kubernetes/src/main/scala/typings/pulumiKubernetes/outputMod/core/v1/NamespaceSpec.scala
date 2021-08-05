@@ -16,19 +16,15 @@ trait NamespaceSpec extends StObject {
 }
 object NamespaceSpec {
   
-  @scala.inline
-  def apply(finalizers: js.Array[String]): NamespaceSpec = {
+  inline def apply(finalizers: js.Array[String]): NamespaceSpec = {
     val __obj = js.Dynamic.literal(finalizers = finalizers.asInstanceOf[js.Any])
     __obj.asInstanceOf[NamespaceSpec]
   }
   
-  @scala.inline
-  implicit class NamespaceSpecMutableBuilder[Self <: NamespaceSpec] (val x: Self) extends AnyVal {
+  extension [Self <: NamespaceSpec](x: Self) {
     
-    @scala.inline
-    def setFinalizers(value: js.Array[String]): Self = StObject.set(x, "finalizers", value.asInstanceOf[js.Any])
+    inline def setFinalizers(value: js.Array[String]): Self = StObject.set(x, "finalizers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalizersVarargs(value: String*): Self = StObject.set(x, "finalizers", js.Array(value :_*))
+    inline def setFinalizersVarargs(value: String*): Self = StObject.set(x, "finalizers", js.Array(value :_*))
   }
 }

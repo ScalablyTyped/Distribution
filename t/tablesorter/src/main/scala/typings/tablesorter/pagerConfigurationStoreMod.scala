@@ -166,8 +166,7 @@ object pagerConfigurationStoreMod {
   }
   object PagerConfigurationStore {
     
-    @scala.inline
-    def apply[TElement](
+    inline def apply[TElement](
       $container: JQuery[HTMLElement],
       $goto: JQuery[HTMLElement],
       $size: JQuery[HTMLElement],
@@ -204,26 +203,19 @@ object pagerConfigurationStoreMod {
       __obj.asInstanceOf[PagerConfigurationStore[TElement]]
     }
     
-    @scala.inline
-    implicit class PagerConfigurationStoreMutableBuilder[Self <: PagerConfigurationStore[?], TElement] (val x: Self & PagerConfigurationStore[TElement]) extends AnyVal {
+    extension [Self <: PagerConfigurationStore[?], TElement](x: Self & PagerConfigurationStore[TElement]) {
       
-      @scala.inline
-      def set$container(value: JQuery[HTMLElement]): Self = StObject.set(x, "$container", value.asInstanceOf[js.Any])
+      inline def set$container(value: JQuery[HTMLElement]): Self = StObject.set(x, "$container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$goto(value: JQuery[HTMLElement]): Self = StObject.set(x, "$goto", value.asInstanceOf[js.Any])
+      inline def set$goto(value: JQuery[HTMLElement]): Self = StObject.set(x, "$goto", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$size(value: JQuery[HTMLElement]): Self = StObject.set(x, "$size", value.asInstanceOf[js.Any])
+      inline def set$size(value: JQuery[HTMLElement]): Self = StObject.set(x, "$size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAjax(value: Boolean): Self = StObject.set(x, "ajax", value.asInstanceOf[js.Any])
+      inline def setAjax(value: Boolean): Self = StObject.set(x, "ajax", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAjaxCounter(value: Double): Self = StObject.set(x, "ajaxCounter", value.asInstanceOf[js.Any])
+      inline def setAjaxCounter(value: Double): Self = StObject.set(x, "ajaxCounter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAjaxData(
+      inline def setAjaxData(
         value: PagerDataPart[TElement] | js.Array[Double] | (js.Tuple3[
               Double, 
               JQuery[HTMLElement] | js.Array[js.Array[js.Any]], 
@@ -231,80 +223,55 @@ object pagerConfigurationStoreMod {
             ])
       ): Self = StObject.set(x, "ajaxData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAjaxDataVarargs(value: Double*): Self = StObject.set(x, "ajaxData", js.Array(value :_*))
+      inline def setAjaxDataVarargs(value: Double*): Self = StObject.set(x, "ajaxData", js.Array(value :_*))
       
-      @scala.inline
-      def setAjaxUrl(value: String): Self = StObject.set(x, "ajaxUrl", value.asInstanceOf[js.Any])
+      inline def setAjaxUrl(value: String): Self = StObject.set(x, "ajaxUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCachedIndex(value: js.Array[Double]): Self = StObject.set(x, "cachedIndex", value.asInstanceOf[js.Any])
+      inline def setCachedIndex(value: js.Array[Double]): Self = StObject.set(x, "cachedIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCachedIndexVarargs(value: Double*): Self = StObject.set(x, "cachedIndex", js.Array(value :_*))
+      inline def setCachedIndexVarargs(value: Double*): Self = StObject.set(x, "cachedIndex", js.Array(value :_*))
       
-      @scala.inline
-      def setCurrentFilters(value: js.Array[String]): Self = StObject.set(x, "currentFilters", value.asInstanceOf[js.Any])
+      inline def setCurrentFilters(value: js.Array[String]): Self = StObject.set(x, "currentFilters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentFiltersVarargs(value: String*): Self = StObject.set(x, "currentFilters", js.Array(value :_*))
+      inline def setCurrentFiltersVarargs(value: String*): Self = StObject.set(x, "currentFilters", js.Array(value :_*))
       
-      @scala.inline
-      def setEndRow(value: Double): Self = StObject.set(x, "endRow", value.asInstanceOf[js.Any])
+      inline def setEndRow(value: Double): Self = StObject.set(x, "endRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilteredPages(value: Double): Self = StObject.set(x, "filteredPages", value.asInstanceOf[js.Any])
+      inline def setFilteredPages(value: Double): Self = StObject.set(x, "filteredPages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilteredRows(value: Double): Self = StObject.set(x, "filteredRows", value.asInstanceOf[js.Any])
+      inline def setFilteredRows(value: Double): Self = StObject.set(x, "filteredRows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialized(value: Boolean): Self = StObject.set(x, "initialized", value.asInstanceOf[js.Any])
+      inline def setInitialized(value: Boolean): Self = StObject.set(x, "initialized", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitializing(value: Boolean): Self = StObject.set(x, "initializing", value.asInstanceOf[js.Any])
+      inline def setInitializing(value: Boolean): Self = StObject.set(x, "initializing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
+      inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLast(value: PagerMemory): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
+      inline def setLast(value: PagerMemory): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldAjaxSuccess(value: SuccessCallback[js.Any]): Self = StObject.set(x, "oldAjaxSuccess", value.asInstanceOf[js.Any])
+      inline def setOldAjaxSuccess(value: SuccessCallback[js.Any]): Self = StObject.set(x, "oldAjaxSuccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptAjaxUrl(value: String): Self = StObject.set(x, "optAjaxUrl", value.asInstanceOf[js.Any])
+      inline def setOptAjaxUrl(value: String): Self = StObject.set(x, "optAjaxUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegexFiltered(value: RegExp): Self = StObject.set(x, "regexFiltered", value.asInstanceOf[js.Any])
+      inline def setRegexFiltered(value: RegExp): Self = StObject.set(x, "regexFiltered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegexRows(value: RegExp): Self = StObject.set(x, "regexRows", value.asInstanceOf[js.Any])
+      inline def setRegexRows(value: RegExp): Self = StObject.set(x, "regexRows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettings(value: PagerConfiguration[TElement]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      inline def setSettings(value: PagerConfiguration[TElement]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortList(value: js.Array[SortDefinition]): Self = StObject.set(x, "sortList", value.asInstanceOf[js.Any])
+      inline def setSortList(value: js.Array[SortDefinition]): Self = StObject.set(x, "sortList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortListVarargs(value: SortDefinition*): Self = StObject.set(x, "sortList", js.Array(value :_*))
+      inline def setSortListVarargs(value: SortDefinition*): Self = StObject.set(x, "sortList", js.Array(value :_*))
       
-      @scala.inline
-      def setStartRow(value: Double): Self = StObject.set(x, "startRow", value.asInstanceOf[js.Any])
+      inline def setStartRow(value: Double): Self = StObject.set(x, "startRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalPages(value: Double): Self = StObject.set(x, "totalPages", value.asInstanceOf[js.Any])
+      inline def setTotalPages(value: Double): Self = StObject.set(x, "totalPages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalRows(value: Double): Self = StObject.set(x, "totalRows", value.asInstanceOf[js.Any])
+      inline def setTotalRows(value: Double): Self = StObject.set(x, "totalRows", value.asInstanceOf[js.Any])
     }
   }
 }

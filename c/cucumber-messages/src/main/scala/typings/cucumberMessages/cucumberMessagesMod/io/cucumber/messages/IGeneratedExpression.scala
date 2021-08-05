@@ -15,34 +15,25 @@ trait IGeneratedExpression extends StObject {
 }
 object IGeneratedExpression {
   
-  @scala.inline
-  def apply(): IGeneratedExpression = {
+  inline def apply(): IGeneratedExpression = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IGeneratedExpression]
   }
   
-  @scala.inline
-  implicit class IGeneratedExpressionMutableBuilder[Self <: IGeneratedExpression] (val x: Self) extends AnyVal {
+  extension [Self <: IGeneratedExpression](x: Self) {
     
-    @scala.inline
-    def setParameterTypeNames(value: js.Array[String]): Self = StObject.set(x, "parameterTypeNames", value.asInstanceOf[js.Any])
+    inline def setParameterTypeNames(value: js.Array[String]): Self = StObject.set(x, "parameterTypeNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterTypeNamesNull: Self = StObject.set(x, "parameterTypeNames", null)
+    inline def setParameterTypeNamesNull: Self = StObject.set(x, "parameterTypeNames", null)
     
-    @scala.inline
-    def setParameterTypeNamesUndefined: Self = StObject.set(x, "parameterTypeNames", js.undefined)
+    inline def setParameterTypeNamesUndefined: Self = StObject.set(x, "parameterTypeNames", js.undefined)
     
-    @scala.inline
-    def setParameterTypeNamesVarargs(value: String*): Self = StObject.set(x, "parameterTypeNames", js.Array(value :_*))
+    inline def setParameterTypeNamesVarargs(value: String*): Self = StObject.set(x, "parameterTypeNames", js.Array(value :_*))
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextNull: Self = StObject.set(x, "text", null)
+    inline def setTextNull: Self = StObject.set(x, "text", null)
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

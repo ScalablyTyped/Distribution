@@ -44,8 +44,7 @@ object relayModernQueryExecutorMod {
   }
   object ExecuteConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getDataID: (/* fieldValue */ StringDictionary[js.Any], /* typeName */ String) => js.Any,
       operation: OperationDescriptor,
       operationLoader: OperationLoader,
@@ -58,47 +57,33 @@ object relayModernQueryExecutorMod {
       __obj.asInstanceOf[ExecuteConfig]
     }
     
-    @scala.inline
-    implicit class ExecuteConfigMutableBuilder[Self <: ExecuteConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ExecuteConfig](x: Self) {
       
-      @scala.inline
-      def setGetDataID(value: (/* fieldValue */ StringDictionary[js.Any], /* typeName */ String) => js.Any): Self = StObject.set(x, "getDataID", js.Any.fromFunction2(value))
+      inline def setGetDataID(value: (/* fieldValue */ StringDictionary[js.Any], /* typeName */ String) => js.Any): Self = StObject.set(x, "getDataID", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOperation(value: OperationDescriptor): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+      inline def setOperation(value: OperationDescriptor): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperationLoader(value: OperationLoader): Self = StObject.set(x, "operationLoader", value.asInstanceOf[js.Any])
+      inline def setOperationLoader(value: OperationLoader): Self = StObject.set(x, "operationLoader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperationTracker(value: OperationTracker): Self = StObject.set(x, "operationTracker", value.asInstanceOf[js.Any])
+      inline def setOperationTracker(value: OperationTracker): Self = StObject.set(x, "operationTracker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperationTrackerUndefined: Self = StObject.set(x, "operationTracker", js.undefined)
+      inline def setOperationTrackerUndefined: Self = StObject.set(x, "operationTracker", js.undefined)
       
-      @scala.inline
-      def setOptimisticConfig(value: OptimisticResponseConfig): Self = StObject.set(x, "optimisticConfig", value.asInstanceOf[js.Any])
+      inline def setOptimisticConfig(value: OptimisticResponseConfig): Self = StObject.set(x, "optimisticConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublishQueue(value: PublishQueue): Self = StObject.set(x, "publishQueue", value.asInstanceOf[js.Any])
+      inline def setPublishQueue(value: PublishQueue): Self = StObject.set(x, "publishQueue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScheduler(value: TaskScheduler): Self = StObject.set(x, "scheduler", value.asInstanceOf[js.Any])
+      inline def setScheduler(value: TaskScheduler): Self = StObject.set(x, "scheduler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchedulerUndefined: Self = StObject.set(x, "scheduler", js.undefined)
+      inline def setSchedulerUndefined: Self = StObject.set(x, "scheduler", js.undefined)
       
-      @scala.inline
-      def setSink(value: Sink[GraphQLResponse]): Self = StObject.set(x, "sink", value.asInstanceOf[js.Any])
+      inline def setSink(value: Sink[GraphQLResponse]): Self = StObject.set(x, "sink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: RelayObservable[GraphQLResponse]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: RelayObservable[GraphQLResponse]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdater(value: (/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit): Self = StObject.set(x, "updater", js.Any.fromFunction2(value))
+      inline def setUpdater(value: (/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit): Self = StObject.set(x, "updater", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUpdaterUndefined: Self = StObject.set(x, "updater", js.undefined)
+      inline def setUpdaterUndefined: Self = StObject.set(x, "updater", js.undefined)
     }
   }
   
@@ -110,20 +95,16 @@ object relayModernQueryExecutorMod {
   }
   object TaskScheduler {
     
-    @scala.inline
-    def apply(cancel: String => Unit, schedule: js.Function0[Unit] => String): TaskScheduler = {
+    inline def apply(cancel: String => Unit, schedule: js.Function0[Unit] => String): TaskScheduler = {
       val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction1(cancel), schedule = js.Any.fromFunction1(schedule))
       __obj.asInstanceOf[TaskScheduler]
     }
     
-    @scala.inline
-    implicit class TaskSchedulerMutableBuilder[Self <: TaskScheduler] (val x: Self) extends AnyVal {
+    extension [Self <: TaskScheduler](x: Self) {
       
-      @scala.inline
-      def setCancel(value: String => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
+      inline def setCancel(value: String => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSchedule(value: js.Function0[Unit] => String): Self = StObject.set(x, "schedule", js.Any.fromFunction1(value))
+      inline def setSchedule(value: js.Function0[Unit] => String): Self = StObject.set(x, "schedule", js.Any.fromFunction1(value))
     }
   }
 }

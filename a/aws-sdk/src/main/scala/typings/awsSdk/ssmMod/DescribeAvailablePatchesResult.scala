@@ -18,28 +18,21 @@ trait DescribeAvailablePatchesResult extends StObject {
 }
 object DescribeAvailablePatchesResult {
   
-  @scala.inline
-  def apply(): DescribeAvailablePatchesResult = {
+  inline def apply(): DescribeAvailablePatchesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAvailablePatchesResult]
   }
   
-  @scala.inline
-  implicit class DescribeAvailablePatchesResultMutableBuilder[Self <: DescribeAvailablePatchesResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAvailablePatchesResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPatches(value: PatchList): Self = StObject.set(x, "Patches", value.asInstanceOf[js.Any])
+    inline def setPatches(value: PatchList): Self = StObject.set(x, "Patches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatchesUndefined: Self = StObject.set(x, "Patches", js.undefined)
+    inline def setPatchesUndefined: Self = StObject.set(x, "Patches", js.undefined)
     
-    @scala.inline
-    def setPatchesVarargs(value: Patch*): Self = StObject.set(x, "Patches", js.Array(value :_*))
+    inline def setPatchesVarargs(value: Patch*): Self = StObject.set(x, "Patches", js.Array(value :_*))
   }
 }

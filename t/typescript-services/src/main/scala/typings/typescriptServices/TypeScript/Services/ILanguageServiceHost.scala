@@ -30,8 +30,7 @@ trait ILanguageServiceHost
 }
 object ILanguageServiceHost {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     debug: () => Boolean,
     directoryExists: String => Boolean,
     error: () => Boolean,
@@ -55,28 +54,20 @@ object ILanguageServiceHost {
     __obj.asInstanceOf[ILanguageServiceHost]
   }
   
-  @scala.inline
-  implicit class ILanguageServiceHostMutableBuilder[Self <: ILanguageServiceHost] (val x: Self) extends AnyVal {
+  extension [Self <: ILanguageServiceHost](x: Self) {
     
-    @scala.inline
-    def setGetCompilationSettings(value: () => CompilationSettings): Self = StObject.set(x, "getCompilationSettings", js.Any.fromFunction0(value))
+    inline def setGetCompilationSettings(value: () => CompilationSettings): Self = StObject.set(x, "getCompilationSettings", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDiagnosticsObject(value: () => ILanguageServicesDiagnostics): Self = StObject.set(x, "getDiagnosticsObject", js.Any.fromFunction0(value))
+    inline def setGetDiagnosticsObject(value: () => ILanguageServicesDiagnostics): Self = StObject.set(x, "getDiagnosticsObject", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLocalizedDiagnosticMessages(value: () => js.Any): Self = StObject.set(x, "getLocalizedDiagnosticMessages", js.Any.fromFunction0(value))
+    inline def setGetLocalizedDiagnosticMessages(value: () => js.Any): Self = StObject.set(x, "getLocalizedDiagnosticMessages", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetScriptByteOrderMark(value: String => ByteOrderMark): Self = StObject.set(x, "getScriptByteOrderMark", js.Any.fromFunction1(value))
+    inline def setGetScriptByteOrderMark(value: String => ByteOrderMark): Self = StObject.set(x, "getScriptByteOrderMark", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetScriptFileNames(value: () => js.Array[String]): Self = StObject.set(x, "getScriptFileNames", js.Any.fromFunction0(value))
+    inline def setGetScriptFileNames(value: () => js.Array[String]): Self = StObject.set(x, "getScriptFileNames", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetScriptIsOpen(value: String => Boolean): Self = StObject.set(x, "getScriptIsOpen", js.Any.fromFunction1(value))
+    inline def setGetScriptIsOpen(value: String => Boolean): Self = StObject.set(x, "getScriptIsOpen", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetScriptVersion(value: String => Double): Self = StObject.set(x, "getScriptVersion", js.Any.fromFunction1(value))
+    inline def setGetScriptVersion(value: String => Double): Self = StObject.set(x, "getScriptVersion", js.Any.fromFunction1(value))
   }
 }

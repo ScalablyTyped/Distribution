@@ -68,40 +68,29 @@ trait SchemaTemplateParameter extends StObject {
 }
 object SchemaTemplateParameter {
   
-  @scala.inline
-  def apply(): SchemaTemplateParameter = {
+  inline def apply(): SchemaTemplateParameter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTemplateParameter]
   }
   
-  @scala.inline
-  implicit class SchemaTemplateParameterMutableBuilder[Self <: SchemaTemplateParameter] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTemplateParameter](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setValidation(value: SchemaParameterValidation): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
+    inline def setValidation(value: SchemaParameterValidation): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationUndefined: Self = StObject.set(x, "validation", js.undefined)
+    inline def setValidationUndefined: Self = StObject.set(x, "validation", js.undefined)
   }
 }

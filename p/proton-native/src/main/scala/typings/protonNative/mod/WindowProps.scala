@@ -66,79 +66,55 @@ trait WindowProps extends StObject {
 }
 object WindowProps {
   
-  @scala.inline
-  def apply(): WindowProps = {
+  inline def apply(): WindowProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WindowProps]
   }
   
-  @scala.inline
-  implicit class WindowPropsMutableBuilder[Self <: WindowProps] (val x: Self) extends AnyVal {
+  extension [Self <: WindowProps](x: Self) {
     
-    @scala.inline
-    def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
+    inline def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderlessUndefined: Self = StObject.set(x, "borderless", js.undefined)
+    inline def setBorderlessUndefined: Self = StObject.set(x, "borderless", js.undefined)
     
-    @scala.inline
-    def setChildren(value: Element): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Element): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
+    inline def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClosedUndefined: Self = StObject.set(x, "closed", js.undefined)
+    inline def setClosedUndefined: Self = StObject.set(x, "closed", js.undefined)
     
-    @scala.inline
-    def setFullscreen(value: Boolean): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
+    inline def setFullscreen(value: Boolean): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullscreenUndefined: Self = StObject.set(x, "fullscreen", js.undefined)
+    inline def setFullscreenUndefined: Self = StObject.set(x, "fullscreen", js.undefined)
     
-    @scala.inline
-    def setLastWindow(value: Boolean): Self = StObject.set(x, "lastWindow", value.asInstanceOf[js.Any])
+    inline def setLastWindow(value: Boolean): Self = StObject.set(x, "lastWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastWindowUndefined: Self = StObject.set(x, "lastWindow", js.undefined)
+    inline def setLastWindowUndefined: Self = StObject.set(x, "lastWindow", js.undefined)
     
-    @scala.inline
-    def setMargined(value: Boolean): Self = StObject.set(x, "margined", value.asInstanceOf[js.Any])
+    inline def setMargined(value: Boolean): Self = StObject.set(x, "margined", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginedUndefined: Self = StObject.set(x, "margined", js.undefined)
+    inline def setMarginedUndefined: Self = StObject.set(x, "margined", js.undefined)
     
-    @scala.inline
-    def setMenuBar(value: Boolean): Self = StObject.set(x, "menuBar", value.asInstanceOf[js.Any])
+    inline def setMenuBar(value: Boolean): Self = StObject.set(x, "menuBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuBarUndefined: Self = StObject.set(x, "menuBar", js.undefined)
+    inline def setMenuBarUndefined: Self = StObject.set(x, "menuBar", js.undefined)
     
-    @scala.inline
-    def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+    inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+    inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
     
-    @scala.inline
-    def setOnContentSizeChange(value: /* size */ Y => Unit): Self = StObject.set(x, "onContentSizeChange", js.Any.fromFunction1(value))
+    inline def setOnContentSizeChange(value: /* size */ Y => Unit): Self = StObject.set(x, "onContentSizeChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnContentSizeChangeUndefined: Self = StObject.set(x, "onContentSizeChange", js.undefined)
+    inline def setOnContentSizeChangeUndefined: Self = StObject.set(x, "onContentSizeChange", js.undefined)
     
-    @scala.inline
-    def setSize(value: W): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: W): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

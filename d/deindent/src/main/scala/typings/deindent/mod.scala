@@ -7,12 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(input: String): String = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(tagFn: js.Function2[/* template */ TemplateStringsArray, /* repeated */ js.Any, String]): js.Function2[/* template */ TemplateStringsArray, /* repeated */ js.Any, String] = ^.asInstanceOf[js.Dynamic].apply(tagFn.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* template */ TemplateStringsArray, /* repeated */ js.Any, String]]
-  @scala.inline
-  def apply(template: TemplateStringsArray, substitutions: js.Any*): String = (^.asInstanceOf[js.Dynamic].apply(template.asInstanceOf[js.Any], substitutions.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(input: String): String = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(tagFn: js.Function2[/* template */ TemplateStringsArray, /* repeated */ js.Any, String]): js.Function2[/* template */ TemplateStringsArray, /* repeated */ js.Any, String] = ^.asInstanceOf[js.Dynamic].apply(tagFn.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* template */ TemplateStringsArray, /* repeated */ js.Any, String]]
+  inline def apply(template: TemplateStringsArray, substitutions: js.Any*): String = (^.asInstanceOf[js.Dynamic].apply(template.asInstanceOf[js.Any], substitutions.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("deindent", JSImport.Namespace)
   @js.native

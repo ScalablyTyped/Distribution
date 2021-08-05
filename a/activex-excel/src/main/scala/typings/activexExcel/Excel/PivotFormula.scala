@@ -12,7 +12,7 @@ trait PivotFormula extends StObject {
   
   def Delete(): Unit
   
-  @JSName("Excel.PivotFormula_typekey")
+  /* private */ @JSName("Excel.PivotFormula_typekey")
   var ExcelDotPivotFormula_typekey: PivotFormula
   
   var Formula: String
@@ -29,8 +29,7 @@ trait PivotFormula extends StObject {
 }
 object PivotFormula {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: XlCreator,
     Delete: () => Unit,
@@ -47,37 +46,26 @@ object PivotFormula {
     __obj.asInstanceOf[PivotFormula]
   }
   
-  @scala.inline
-  implicit class PivotFormulaMutableBuilder[Self <: PivotFormula] (val x: Self) extends AnyVal {
+  extension [Self <: PivotFormula](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExcelDotPivotFormula_typekey(value: PivotFormula): Self = StObject.set(x, "Excel.PivotFormula_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotPivotFormula_typekey(value: PivotFormula): Self = StObject.set(x, "Excel.PivotFormula_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormula(value: String): Self = StObject.set(x, "Formula", value.asInstanceOf[js.Any])
+    inline def setFormula(value: String): Self = StObject.set(x, "Formula", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardFormula(value: String): Self = StObject.set(x, "StandardFormula", value.asInstanceOf[js.Any])
+    inline def setStandardFormula(value: String): Self = StObject.set(x, "StandardFormula", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_Default(value: String): Self = StObject.set(x, "_Default", value.asInstanceOf[js.Any])
+    inline def set_Default(value: String): Self = StObject.set(x, "_Default", value.asInstanceOf[js.Any])
   }
 }

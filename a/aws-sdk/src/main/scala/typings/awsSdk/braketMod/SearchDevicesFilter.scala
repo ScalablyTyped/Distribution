@@ -18,22 +18,17 @@ trait SearchDevicesFilter extends StObject {
 }
 object SearchDevicesFilter {
   
-  @scala.inline
-  def apply(name: SearchDevicesFilterNameString, values: SearchDevicesFilterValuesList): SearchDevicesFilter = {
+  inline def apply(name: SearchDevicesFilterNameString, values: SearchDevicesFilterValuesList): SearchDevicesFilter = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchDevicesFilter]
   }
   
-  @scala.inline
-  implicit class SearchDevicesFilterMutableBuilder[Self <: SearchDevicesFilter] (val x: Self) extends AnyVal {
+  extension [Self <: SearchDevicesFilter](x: Self) {
     
-    @scala.inline
-    def setName(value: SearchDevicesFilterNameString): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: SearchDevicesFilterNameString): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: SearchDevicesFilterValuesList): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: SearchDevicesFilterValuesList): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: String256*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String256*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

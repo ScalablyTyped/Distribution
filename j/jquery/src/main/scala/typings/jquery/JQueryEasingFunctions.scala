@@ -22,19 +22,15 @@ trait JQueryEasingFunctions
 }
 object JQueryEasingFunctions {
   
-  @scala.inline
-  def apply(linear: /* percent */ Double => Double, swing: /* percent */ Double => Double): JQueryEasingFunctions = {
+  inline def apply(linear: /* percent */ Double => Double, swing: /* percent */ Double => Double): JQueryEasingFunctions = {
     val __obj = js.Dynamic.literal(linear = js.Any.fromFunction1(linear), swing = js.Any.fromFunction1(swing))
     __obj.asInstanceOf[JQueryEasingFunctions]
   }
   
-  @scala.inline
-  implicit class JQueryEasingFunctionsMutableBuilder[Self <: JQueryEasingFunctions] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryEasingFunctions](x: Self) {
     
-    @scala.inline
-    def setLinear(value: /* percent */ Double => Double): Self = StObject.set(x, "linear", js.Any.fromFunction1(value))
+    inline def setLinear(value: /* percent */ Double => Double): Self = StObject.set(x, "linear", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSwing(value: /* percent */ Double => Double): Self = StObject.set(x, "swing", js.Any.fromFunction1(value))
+    inline def setSwing(value: /* percent */ Double => Double): Self = StObject.set(x, "swing", js.Any.fromFunction1(value))
   }
 }

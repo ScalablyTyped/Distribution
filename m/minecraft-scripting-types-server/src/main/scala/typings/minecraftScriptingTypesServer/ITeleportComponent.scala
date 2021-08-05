@@ -60,8 +60,7 @@ trait ITeleportComponent extends StObject {
 }
 object ITeleportComponent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     darkTeleportChance: Double,
     lightTeleportChance: Double,
     maxRandomTeleportTime: Double,
@@ -75,31 +74,22 @@ object ITeleportComponent {
     __obj.asInstanceOf[ITeleportComponent]
   }
   
-  @scala.inline
-  implicit class ITeleportComponentMutableBuilder[Self <: ITeleportComponent] (val x: Self) extends AnyVal {
+  extension [Self <: ITeleportComponent](x: Self) {
     
-    @scala.inline
-    def setDarkTeleportChance(value: Double): Self = StObject.set(x, "darkTeleportChance", value.asInstanceOf[js.Any])
+    inline def setDarkTeleportChance(value: Double): Self = StObject.set(x, "darkTeleportChance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLightTeleportChance(value: Double): Self = StObject.set(x, "lightTeleportChance", value.asInstanceOf[js.Any])
+    inline def setLightTeleportChance(value: Double): Self = StObject.set(x, "lightTeleportChance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRandomTeleportTime(value: Double): Self = StObject.set(x, "maxRandomTeleportTime", value.asInstanceOf[js.Any])
+    inline def setMaxRandomTeleportTime(value: Double): Self = StObject.set(x, "maxRandomTeleportTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinRandomTeleportTime(value: Double): Self = StObject.set(x, "minRandomTeleportTime", value.asInstanceOf[js.Any])
+    inline def setMinRandomTeleportTime(value: Double): Self = StObject.set(x, "minRandomTeleportTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRandomTeleportCube(value: VectorArray): Self = StObject.set(x, "randomTeleportCube", value.asInstanceOf[js.Any])
+    inline def setRandomTeleportCube(value: VectorArray): Self = StObject.set(x, "randomTeleportCube", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRandomTeleports(value: Boolean): Self = StObject.set(x, "randomTeleports", value.asInstanceOf[js.Any])
+    inline def setRandomTeleports(value: Boolean): Self = StObject.set(x, "randomTeleports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetDistance(value: Double): Self = StObject.set(x, "targetDistance", value.asInstanceOf[js.Any])
+    inline def setTargetDistance(value: Double): Self = StObject.set(x, "targetDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget_teleport_chance(value: Double): Self = StObject.set(x, "target_teleport_chance", value.asInstanceOf[js.Any])
+    inline def setTarget_teleport_chance(value: Double): Self = StObject.set(x, "target_teleport_chance", value.asInstanceOf[js.Any])
   }
 }

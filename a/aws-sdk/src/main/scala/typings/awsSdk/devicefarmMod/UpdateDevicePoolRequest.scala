@@ -38,49 +38,35 @@ trait UpdateDevicePoolRequest extends StObject {
 }
 object UpdateDevicePoolRequest {
   
-  @scala.inline
-  def apply(arn: AmazonResourceName): UpdateDevicePoolRequest = {
+  inline def apply(arn: AmazonResourceName): UpdateDevicePoolRequest = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDevicePoolRequest]
   }
   
-  @scala.inline
-  implicit class UpdateDevicePoolRequestMutableBuilder[Self <: UpdateDevicePoolRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDevicePoolRequest](x: Self) {
     
-    @scala.inline
-    def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearMaxDevices(value: Boolean): Self = StObject.set(x, "clearMaxDevices", value.asInstanceOf[js.Any])
+    inline def setClearMaxDevices(value: Boolean): Self = StObject.set(x, "clearMaxDevices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearMaxDevicesUndefined: Self = StObject.set(x, "clearMaxDevices", js.undefined)
+    inline def setClearMaxDevicesUndefined: Self = StObject.set(x, "clearMaxDevices", js.undefined)
     
-    @scala.inline
-    def setDescription(value: Message): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Message): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setMaxDevices(value: Integer): Self = StObject.set(x, "maxDevices", value.asInstanceOf[js.Any])
+    inline def setMaxDevices(value: Integer): Self = StObject.set(x, "maxDevices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDevicesUndefined: Self = StObject.set(x, "maxDevices", js.undefined)
+    inline def setMaxDevicesUndefined: Self = StObject.set(x, "maxDevices", js.undefined)
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setRules(value: Rules): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: Rules): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+    inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    @scala.inline
-    def setRulesVarargs(value: Rule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: Rule*): Self = StObject.set(x, "rules", js.Array(value :_*))
   }
 }

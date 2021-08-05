@@ -22,15 +22,12 @@ object tabCapture {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def capture(options: CaptureOptions, callback: js.Function1[/* stream */ MediaStream | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("capture")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def capture(options: CaptureOptions, callback: js.Function1[/* stream */ MediaStream | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("capture")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def getCapturedTabs(callback: js.Function1[/* result */ js.Array[CaptureInfo], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getCapturedTabs")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def getCapturedTabs(callback: js.Function1[/* result */ js.Array[CaptureInfo], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getCapturedTabs")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSGlobal("chrome.tabCapture.onStatusChanged")
   @js.native
   def onStatusChanged: CaptureStatusChangedEvent = js.native
-  @scala.inline
-  def onStatusChanged_=(x: CaptureStatusChangedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onStatusChanged")(x.asInstanceOf[js.Any])
+  inline def onStatusChanged_=(x: CaptureStatusChangedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onStatusChanged")(x.asInstanceOf[js.Any])
 }

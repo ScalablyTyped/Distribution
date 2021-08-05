@@ -13,19 +13,15 @@ trait BaseServer extends StObject {
 }
 object BaseServer {
   
-  @scala.inline
-  def apply(close: () => Unit, getIndexedDB: () => IDBDatabase): BaseServer = {
+  inline def apply(close: () => Unit, getIndexedDB: () => IDBDatabase): BaseServer = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), getIndexedDB = js.Any.fromFunction0(getIndexedDB))
     __obj.asInstanceOf[BaseServer]
   }
   
-  @scala.inline
-  implicit class BaseServerMutableBuilder[Self <: BaseServer] (val x: Self) extends AnyVal {
+  extension [Self <: BaseServer](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIndexedDB(value: () => IDBDatabase): Self = StObject.set(x, "getIndexedDB", js.Any.fromFunction0(value))
+    inline def setGetIndexedDB(value: () => IDBDatabase): Self = StObject.set(x, "getIndexedDB", js.Any.fromFunction0(value))
   }
 }

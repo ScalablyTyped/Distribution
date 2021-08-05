@@ -75,8 +75,7 @@ trait IntegerBitmapLayout extends StObject {
 }
 object IntegerBitmapLayout {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ColorSpace: XIntegerBitmapColorSpace,
     IsMsbFirst: Boolean,
     Palette: XBitmapPalette,
@@ -89,28 +88,20 @@ object IntegerBitmapLayout {
     __obj.asInstanceOf[IntegerBitmapLayout]
   }
   
-  @scala.inline
-  implicit class IntegerBitmapLayoutMutableBuilder[Self <: IntegerBitmapLayout] (val x: Self) extends AnyVal {
+  extension [Self <: IntegerBitmapLayout](x: Self) {
     
-    @scala.inline
-    def setColorSpace(value: XIntegerBitmapColorSpace): Self = StObject.set(x, "ColorSpace", value.asInstanceOf[js.Any])
+    inline def setColorSpace(value: XIntegerBitmapColorSpace): Self = StObject.set(x, "ColorSpace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMsbFirst(value: Boolean): Self = StObject.set(x, "IsMsbFirst", value.asInstanceOf[js.Any])
+    inline def setIsMsbFirst(value: Boolean): Self = StObject.set(x, "IsMsbFirst", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPalette(value: XBitmapPalette): Self = StObject.set(x, "Palette", value.asInstanceOf[js.Any])
+    inline def setPalette(value: XBitmapPalette): Self = StObject.set(x, "Palette", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaneStride(value: Double): Self = StObject.set(x, "PlaneStride", value.asInstanceOf[js.Any])
+    inline def setPlaneStride(value: Double): Self = StObject.set(x, "PlaneStride", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScanLineBytes(value: Double): Self = StObject.set(x, "ScanLineBytes", value.asInstanceOf[js.Any])
+    inline def setScanLineBytes(value: Double): Self = StObject.set(x, "ScanLineBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScanLineStride(value: Double): Self = StObject.set(x, "ScanLineStride", value.asInstanceOf[js.Any])
+    inline def setScanLineStride(value: Double): Self = StObject.set(x, "ScanLineStride", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScanLines(value: Double): Self = StObject.set(x, "ScanLines", value.asInstanceOf[js.Any])
+    inline def setScanLines(value: Double): Self = StObject.set(x, "ScanLines", value.asInstanceOf[js.Any])
   }
 }

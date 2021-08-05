@@ -38,8 +38,7 @@ trait InputConfiguration extends StObject {
 }
 object InputConfiguration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     creationTime: Timestamp,
     inputArn: InputArn,
     inputName: InputName,
@@ -50,28 +49,20 @@ object InputConfiguration {
     __obj.asInstanceOf[InputConfiguration]
   }
   
-  @scala.inline
-  implicit class InputConfigurationMutableBuilder[Self <: InputConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: InputConfiguration](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputArn(value: InputArn): Self = StObject.set(x, "inputArn", value.asInstanceOf[js.Any])
+    inline def setInputArn(value: InputArn): Self = StObject.set(x, "inputArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputDescription(value: InputDescription): Self = StObject.set(x, "inputDescription", value.asInstanceOf[js.Any])
+    inline def setInputDescription(value: InputDescription): Self = StObject.set(x, "inputDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputDescriptionUndefined: Self = StObject.set(x, "inputDescription", js.undefined)
+    inline def setInputDescriptionUndefined: Self = StObject.set(x, "inputDescription", js.undefined)
     
-    @scala.inline
-    def setInputName(value: InputName): Self = StObject.set(x, "inputName", value.asInstanceOf[js.Any])
+    inline def setInputName(value: InputName): Self = StObject.set(x, "inputName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdateTime(value: Timestamp): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdateTime(value: Timestamp): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: InputStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: InputStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

@@ -15,17 +15,14 @@ object anon {
   }
   object RelativeTo {
     
-    @scala.inline
-    def apply(relativeTo: String): RelativeTo = {
+    inline def apply(relativeTo: String): RelativeTo = {
       val __obj = js.Dynamic.literal(relativeTo = relativeTo.asInstanceOf[js.Any])
       __obj.asInstanceOf[RelativeTo]
     }
     
-    @scala.inline
-    implicit class RelativeToMutableBuilder[Self <: RelativeTo] (val x: Self) extends AnyVal {
+    extension [Self <: RelativeTo](x: Self) {
       
-      @scala.inline
-      def setRelativeTo(value: String): Self = StObject.set(x, "relativeTo", value.asInstanceOf[js.Any])
+      inline def setRelativeTo(value: String): Self = StObject.set(x, "relativeTo", value.asInstanceOf[js.Any])
     }
   }
 }

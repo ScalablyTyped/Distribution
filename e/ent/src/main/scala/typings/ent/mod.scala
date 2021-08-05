@@ -10,13 +10,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def decode(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def decode(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(s.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def encode(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(s.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def encode(s: String, opts: EntOpts): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(s.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def encode(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def encode(s: String, opts: EntOpts): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(s.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait EntOpts extends StObject {
     
@@ -37,32 +34,24 @@ object mod {
   }
   object EntOpts {
     
-    @scala.inline
-    def apply(): EntOpts = {
+    inline def apply(): EntOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EntOpts]
     }
     
-    @scala.inline
-    implicit class EntOptsMutableBuilder[Self <: EntOpts] (val x: Self) extends AnyVal {
+    extension [Self <: EntOpts](x: Self) {
       
-      @scala.inline
-      def setNamed(value: Boolean): Self = StObject.set(x, "named", value.asInstanceOf[js.Any])
+      inline def setNamed(value: Boolean): Self = StObject.set(x, "named", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamedUndefined: Self = StObject.set(x, "named", js.undefined)
+      inline def setNamedUndefined: Self = StObject.set(x, "named", js.undefined)
       
-      @scala.inline
-      def setNumeric(value: Boolean): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
+      inline def setNumeric(value: Boolean): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumericUndefined: Self = StObject.set(x, "numeric", js.undefined)
+      inline def setNumericUndefined: Self = StObject.set(x, "numeric", js.undefined)
       
-      @scala.inline
-      def setSpecial(value: js.Any): Self = StObject.set(x, "special", value.asInstanceOf[js.Any])
+      inline def setSpecial(value: js.Any): Self = StObject.set(x, "special", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpecialUndefined: Self = StObject.set(x, "special", js.undefined)
+      inline def setSpecialUndefined: Self = StObject.set(x, "special", js.undefined)
     }
   }
 }

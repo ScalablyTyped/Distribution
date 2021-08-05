@@ -23,31 +23,23 @@ trait ClusterCredentials extends StObject {
 }
 object ClusterCredentials {
   
-  @scala.inline
-  def apply(): ClusterCredentials = {
+  inline def apply(): ClusterCredentials = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClusterCredentials]
   }
   
-  @scala.inline
-  implicit class ClusterCredentialsMutableBuilder[Self <: ClusterCredentials] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterCredentials](x: Self) {
     
-    @scala.inline
-    def setDbPassword(value: SensitiveString): Self = StObject.set(x, "DbPassword", value.asInstanceOf[js.Any])
+    inline def setDbPassword(value: SensitiveString): Self = StObject.set(x, "DbPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDbPasswordUndefined: Self = StObject.set(x, "DbPassword", js.undefined)
+    inline def setDbPasswordUndefined: Self = StObject.set(x, "DbPassword", js.undefined)
     
-    @scala.inline
-    def setDbUser(value: String): Self = StObject.set(x, "DbUser", value.asInstanceOf[js.Any])
+    inline def setDbUser(value: String): Self = StObject.set(x, "DbUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDbUserUndefined: Self = StObject.set(x, "DbUser", js.undefined)
+    inline def setDbUserUndefined: Self = StObject.set(x, "DbUser", js.undefined)
     
-    @scala.inline
-    def setExpiration(value: TStamp): Self = StObject.set(x, "Expiration", value.asInstanceOf[js.Any])
+    inline def setExpiration(value: TStamp): Self = StObject.set(x, "Expiration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationUndefined: Self = StObject.set(x, "Expiration", js.undefined)
+    inline def setExpirationUndefined: Self = StObject.set(x, "Expiration", js.undefined)
   }
 }

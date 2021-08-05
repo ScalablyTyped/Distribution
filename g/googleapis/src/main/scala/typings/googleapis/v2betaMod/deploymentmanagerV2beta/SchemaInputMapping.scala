@@ -32,37 +32,27 @@ trait SchemaInputMapping extends StObject {
 }
 object SchemaInputMapping {
   
-  @scala.inline
-  def apply(): SchemaInputMapping = {
+  inline def apply(): SchemaInputMapping = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInputMapping]
   }
   
-  @scala.inline
-  implicit class SchemaInputMappingMutableBuilder[Self <: SchemaInputMapping] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInputMapping](x: Self) {
     
-    @scala.inline
-    def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
+    inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldNameUndefined: Self = StObject.set(x, "fieldName", js.undefined)
+    inline def setFieldNameUndefined: Self = StObject.set(x, "fieldName", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setMethodMatch(value: String): Self = StObject.set(x, "methodMatch", value.asInstanceOf[js.Any])
+    inline def setMethodMatch(value: String): Self = StObject.set(x, "methodMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodMatchUndefined: Self = StObject.set(x, "methodMatch", js.undefined)
+    inline def setMethodMatchUndefined: Self = StObject.set(x, "methodMatch", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

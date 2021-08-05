@@ -10,19 +10,15 @@ trait CreateGlobalReplicationGroupResult extends StObject {
 }
 object CreateGlobalReplicationGroupResult {
   
-  @scala.inline
-  def apply(): CreateGlobalReplicationGroupResult = {
+  inline def apply(): CreateGlobalReplicationGroupResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateGlobalReplicationGroupResult]
   }
   
-  @scala.inline
-  implicit class CreateGlobalReplicationGroupResultMutableBuilder[Self <: CreateGlobalReplicationGroupResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateGlobalReplicationGroupResult](x: Self) {
     
-    @scala.inline
-    def setGlobalReplicationGroup(value: GlobalReplicationGroup): Self = StObject.set(x, "GlobalReplicationGroup", value.asInstanceOf[js.Any])
+    inline def setGlobalReplicationGroup(value: GlobalReplicationGroup): Self = StObject.set(x, "GlobalReplicationGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalReplicationGroupUndefined: Self = StObject.set(x, "GlobalReplicationGroup", js.undefined)
+    inline def setGlobalReplicationGroupUndefined: Self = StObject.set(x, "GlobalReplicationGroup", js.undefined)
   }
 }

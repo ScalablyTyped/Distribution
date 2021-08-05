@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TypeaheadAlign extends StObject
 object TypeaheadAlign {
   
-  @scala.inline
-  def justify: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.justify = "justify".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.justify]
+  inline def justify: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.justify = "justify".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.justify]
   
-  @scala.inline
-  def left: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.left = "left".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.left]
+  inline def left: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.left = "left".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.left]
   
-  @scala.inline
-  def right: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.right = "right".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.right]
+  inline def right: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.right = "right".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.right]
 }

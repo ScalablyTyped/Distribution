@@ -13,19 +13,15 @@ trait DescribeLagsRequest extends StObject {
 }
 object DescribeLagsRequest {
   
-  @scala.inline
-  def apply(): DescribeLagsRequest = {
+  inline def apply(): DescribeLagsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeLagsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeLagsRequestMutableBuilder[Self <: DescribeLagsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeLagsRequest](x: Self) {
     
-    @scala.inline
-    def setLagId(value: LagId): Self = StObject.set(x, "lagId", value.asInstanceOf[js.Any])
+    inline def setLagId(value: LagId): Self = StObject.set(x, "lagId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLagIdUndefined: Self = StObject.set(x, "lagId", js.undefined)
+    inline def setLagIdUndefined: Self = StObject.set(x, "lagId", js.undefined)
   }
 }

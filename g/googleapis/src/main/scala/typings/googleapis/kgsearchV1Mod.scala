@@ -98,17 +98,14 @@ object kgsearchV1Mod {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal(version = "v1")
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setVersion(value: v1): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+        inline def setVersion(value: v1): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       }
     }
     
@@ -163,71 +160,50 @@ object kgsearchV1Mod {
     }
     object ParamsResourceEntitiesSearch {
       
-      @scala.inline
-      def apply(): ParamsResourceEntitiesSearch = {
+      inline def apply(): ParamsResourceEntitiesSearch = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ParamsResourceEntitiesSearch]
       }
       
-      @scala.inline
-      implicit class ParamsResourceEntitiesSearchMutableBuilder[Self <: ParamsResourceEntitiesSearch] (val x: Self) extends AnyVal {
+      extension [Self <: ParamsResourceEntitiesSearch](x: Self) {
         
-        @scala.inline
-        def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+        inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+        inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
         
-        @scala.inline
-        def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+        inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
+        inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
         
-        @scala.inline
-        def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+        inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
         
-        @scala.inline
-        def setIndent(value: Boolean): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+        inline def setIndent(value: Boolean): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
+        inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
         
-        @scala.inline
-        def setLanguages(value: js.Array[String]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
+        inline def setLanguages(value: js.Array[String]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
+        inline def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
         
-        @scala.inline
-        def setLanguagesVarargs(value: String*): Self = StObject.set(x, "languages", js.Array(value :_*))
+        inline def setLanguagesVarargs(value: String*): Self = StObject.set(x, "languages", js.Array(value :_*))
         
-        @scala.inline
-        def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+        inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+        inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
         
-        @scala.inline
-        def setPrefix(value: Boolean): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+        inline def setPrefix(value: Boolean): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+        inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
         
-        @scala.inline
-        def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+        inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+        inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
         
-        @scala.inline
-        def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+        inline def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
+        inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
         
-        @scala.inline
-        def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
+        inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
       }
     }
     
@@ -255,35 +231,26 @@ object kgsearchV1Mod {
     }
     object SchemaSearchResponse {
       
-      @scala.inline
-      def apply(): SchemaSearchResponse = {
+      inline def apply(): SchemaSearchResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SchemaSearchResponse]
       }
       
-      @scala.inline
-      implicit class SchemaSearchResponseMutableBuilder[Self <: SchemaSearchResponse] (val x: Self) extends AnyVal {
+      extension [Self <: SchemaSearchResponse](x: Self) {
         
-        @scala.inline
-        def `set@context`(value: js.Any): Self = StObject.set(x, "@context", value.asInstanceOf[js.Any])
+        inline def `set@context`(value: js.Any): Self = StObject.set(x, "@context", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `set@contextUndefined`: Self = StObject.set(x, "@context", js.undefined)
+        inline def `set@contextUndefined`: Self = StObject.set(x, "@context", js.undefined)
         
-        @scala.inline
-        def `set@type`(value: js.Any): Self = StObject.set(x, "@type", value.asInstanceOf[js.Any])
+        inline def `set@type`(value: js.Any): Self = StObject.set(x, "@type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `set@typeUndefined`: Self = StObject.set(x, "@type", js.undefined)
+        inline def `set@typeUndefined`: Self = StObject.set(x, "@type", js.undefined)
         
-        @scala.inline
-        def setItemListElement(value: js.Array[js.Any]): Self = StObject.set(x, "itemListElement", value.asInstanceOf[js.Any])
+        inline def setItemListElement(value: js.Array[js.Any]): Self = StObject.set(x, "itemListElement", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setItemListElementUndefined: Self = StObject.set(x, "itemListElement", js.undefined)
+        inline def setItemListElementUndefined: Self = StObject.set(x, "itemListElement", js.undefined)
         
-        @scala.inline
-        def setItemListElementVarargs(value: js.Any*): Self = StObject.set(x, "itemListElement", js.Array(value :_*))
+        inline def setItemListElementVarargs(value: js.Any*): Self = StObject.set(x, "itemListElement", js.Array(value :_*))
       }
     }
     
@@ -351,80 +318,56 @@ object kgsearchV1Mod {
     }
     object StandardParameters {
       
-      @scala.inline
-      def apply(): StandardParameters = {
+      inline def apply(): StandardParameters = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[StandardParameters]
       }
       
-      @scala.inline
-      implicit class StandardParametersMutableBuilder[Self <: StandardParameters] (val x: Self) extends AnyVal {
+      extension [Self <: StandardParameters](x: Self) {
         
-        @scala.inline
-        def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
+        inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set$DotxgafvUndefined: Self = StObject.set(x, "$.xgafv", js.undefined)
+        inline def set$DotxgafvUndefined: Self = StObject.set(x, "$.xgafv", js.undefined)
         
-        @scala.inline
-        def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
+        inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
+        inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
         
-        @scala.inline
-        def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+        inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+        inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
         
-        @scala.inline
-        def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+        inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+        inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
         
-        @scala.inline
-        def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+        inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+        inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
         
-        @scala.inline
-        def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+        inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+        inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
         
-        @scala.inline
-        def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
+        inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
+        inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
         
-        @scala.inline
-        def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
+        inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
+        inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
         
-        @scala.inline
-        def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
+        inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+        inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
         
-        @scala.inline
-        def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
+        inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUploadTypeUndefined: Self = StObject.set(x, "uploadType", js.undefined)
+        inline def setUploadTypeUndefined: Self = StObject.set(x, "uploadType", js.undefined)
         
-        @scala.inline
-        def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
+        inline def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
+        inline def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
       }
     }
   }

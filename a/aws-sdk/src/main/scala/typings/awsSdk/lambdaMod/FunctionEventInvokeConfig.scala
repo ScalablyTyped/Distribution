@@ -33,43 +33,31 @@ trait FunctionEventInvokeConfig extends StObject {
 }
 object FunctionEventInvokeConfig {
   
-  @scala.inline
-  def apply(): FunctionEventInvokeConfig = {
+  inline def apply(): FunctionEventInvokeConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FunctionEventInvokeConfig]
   }
   
-  @scala.inline
-  implicit class FunctionEventInvokeConfigMutableBuilder[Self <: FunctionEventInvokeConfig] (val x: Self) extends AnyVal {
+  extension [Self <: FunctionEventInvokeConfig](x: Self) {
     
-    @scala.inline
-    def setDestinationConfig(value: DestinationConfig): Self = StObject.set(x, "DestinationConfig", value.asInstanceOf[js.Any])
+    inline def setDestinationConfig(value: DestinationConfig): Self = StObject.set(x, "DestinationConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationConfigUndefined: Self = StObject.set(x, "DestinationConfig", js.undefined)
+    inline def setDestinationConfigUndefined: Self = StObject.set(x, "DestinationConfig", js.undefined)
     
-    @scala.inline
-    def setFunctionArn(value: FunctionArn): Self = StObject.set(x, "FunctionArn", value.asInstanceOf[js.Any])
+    inline def setFunctionArn(value: FunctionArn): Self = StObject.set(x, "FunctionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionArnUndefined: Self = StObject.set(x, "FunctionArn", js.undefined)
+    inline def setFunctionArnUndefined: Self = StObject.set(x, "FunctionArn", js.undefined)
     
-    @scala.inline
-    def setLastModified(value: Date): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
+    inline def setLastModified(value: Date): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
+    inline def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
     
-    @scala.inline
-    def setMaximumEventAgeInSeconds(value: MaximumEventAgeInSeconds): Self = StObject.set(x, "MaximumEventAgeInSeconds", value.asInstanceOf[js.Any])
+    inline def setMaximumEventAgeInSeconds(value: MaximumEventAgeInSeconds): Self = StObject.set(x, "MaximumEventAgeInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumEventAgeInSecondsUndefined: Self = StObject.set(x, "MaximumEventAgeInSeconds", js.undefined)
+    inline def setMaximumEventAgeInSecondsUndefined: Self = StObject.set(x, "MaximumEventAgeInSeconds", js.undefined)
     
-    @scala.inline
-    def setMaximumRetryAttempts(value: MaximumRetryAttempts): Self = StObject.set(x, "MaximumRetryAttempts", value.asInstanceOf[js.Any])
+    inline def setMaximumRetryAttempts(value: MaximumRetryAttempts): Self = StObject.set(x, "MaximumRetryAttempts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumRetryAttemptsUndefined: Self = StObject.set(x, "MaximumRetryAttempts", js.undefined)
+    inline def setMaximumRetryAttemptsUndefined: Self = StObject.set(x, "MaximumRetryAttempts", js.undefined)
   }
 }

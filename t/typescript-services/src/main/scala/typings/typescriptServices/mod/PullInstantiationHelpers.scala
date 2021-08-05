@@ -29,43 +29,36 @@ object PullInstantiationHelpers {
     var typeParameterArgumentMap: TypeArgumentMap = js.native
   }
   
-  @scala.inline
-  def cleanUpTypeArgumentMap(
+  inline def cleanUpTypeArgumentMap(
     symbol: InstantiableSymbol,
     mutableTypeArgumentMap: typings.typescriptServices.TypeScript.PullInstantiationHelpers.MutableTypeArgumentMap
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cleanUpTypeArgumentMap")(symbol.asInstanceOf[js.Any], mutableTypeArgumentMap.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def createTypeParameterArgumentMap(
+  inline def createTypeParameterArgumentMap(
     typeParameters: js.Array[typings.typescriptServices.TypeScript.PullTypeParameterSymbol],
     typeArguments: js.Array[typings.typescriptServices.TypeScript.PullTypeSymbol]
   ): TypeArgumentMap = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeParameterArgumentMap")(typeParameters.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any])).asInstanceOf[TypeArgumentMap]
   
-  @scala.inline
-  def getAllowedToReferenceTypeParametersFromDecl(decl: typings.typescriptServices.TypeScript.PullDecl): js.Array[typings.typescriptServices.TypeScript.PullTypeParameterSymbol] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllowedToReferenceTypeParametersFromDecl")(decl.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.typescriptServices.TypeScript.PullTypeParameterSymbol]]
+  inline def getAllowedToReferenceTypeParametersFromDecl(decl: typings.typescriptServices.TypeScript.PullDecl): js.Array[typings.typescriptServices.TypeScript.PullTypeParameterSymbol] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllowedToReferenceTypeParametersFromDecl")(decl.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.typescriptServices.TypeScript.PullTypeParameterSymbol]]
   
-  @scala.inline
-  def instantiateTypeArgument(
+  inline def instantiateTypeArgument(
     resolver: typings.typescriptServices.TypeScript.PullTypeResolver,
     symbol: InstantiableSymbol,
     mutableTypeParameterMap: typings.typescriptServices.TypeScript.PullInstantiationHelpers.MutableTypeArgumentMap
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("instantiateTypeArgument")(resolver.asInstanceOf[js.Any], symbol.asInstanceOf[js.Any], mutableTypeParameterMap.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def twoTypesAreInstantiationsOfSameNamedGenericType(
+  inline def twoTypesAreInstantiationsOfSameNamedGenericType(
     type1: typings.typescriptServices.TypeScript.PullTypeSymbol,
     type2: typings.typescriptServices.TypeScript.PullTypeSymbol
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("twoTypesAreInstantiationsOfSameNamedGenericType")(type1.asInstanceOf[js.Any], type2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def updateMutableTypeParameterArgumentMap(
+  inline def updateMutableTypeParameterArgumentMap(
     typeParameters: js.Array[typings.typescriptServices.TypeScript.PullTypeParameterSymbol],
     typeArguments: js.Array[typings.typescriptServices.TypeScript.PullTypeSymbol],
     mutableMap: typings.typescriptServices.TypeScript.PullInstantiationHelpers.MutableTypeArgumentMap
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateMutableTypeParameterArgumentMap")(typeParameters.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], mutableMap.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def updateTypeParameterArgumentMap(
+  inline def updateTypeParameterArgumentMap(
     typeParameters: js.Array[typings.typescriptServices.TypeScript.PullTypeParameterSymbol],
     typeArguments: js.Array[typings.typescriptServices.TypeScript.PullTypeSymbol],
     typeParameterArgumentMap: TypeArgumentMap

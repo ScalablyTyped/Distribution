@@ -53,8 +53,7 @@ trait DescribeAssetModelResponse extends StObject {
 }
 object DescribeAssetModelResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     assetModelArn: ARN,
     assetModelCreationDate: Timestamp,
     assetModelDescription: Description,
@@ -69,40 +68,28 @@ object DescribeAssetModelResponse {
     __obj.asInstanceOf[DescribeAssetModelResponse]
   }
   
-  @scala.inline
-  implicit class DescribeAssetModelResponseMutableBuilder[Self <: DescribeAssetModelResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAssetModelResponse](x: Self) {
     
-    @scala.inline
-    def setAssetModelArn(value: ARN): Self = StObject.set(x, "assetModelArn", value.asInstanceOf[js.Any])
+    inline def setAssetModelArn(value: ARN): Self = StObject.set(x, "assetModelArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetModelCreationDate(value: Timestamp): Self = StObject.set(x, "assetModelCreationDate", value.asInstanceOf[js.Any])
+    inline def setAssetModelCreationDate(value: Timestamp): Self = StObject.set(x, "assetModelCreationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetModelDescription(value: Description): Self = StObject.set(x, "assetModelDescription", value.asInstanceOf[js.Any])
+    inline def setAssetModelDescription(value: Description): Self = StObject.set(x, "assetModelDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetModelHierarchies(value: AssetModelHierarchies): Self = StObject.set(x, "assetModelHierarchies", value.asInstanceOf[js.Any])
+    inline def setAssetModelHierarchies(value: AssetModelHierarchies): Self = StObject.set(x, "assetModelHierarchies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetModelHierarchiesVarargs(value: AssetModelHierarchy*): Self = StObject.set(x, "assetModelHierarchies", js.Array(value :_*))
+    inline def setAssetModelHierarchiesVarargs(value: AssetModelHierarchy*): Self = StObject.set(x, "assetModelHierarchies", js.Array(value :_*))
     
-    @scala.inline
-    def setAssetModelId(value: ID): Self = StObject.set(x, "assetModelId", value.asInstanceOf[js.Any])
+    inline def setAssetModelId(value: ID): Self = StObject.set(x, "assetModelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetModelLastUpdateDate(value: Timestamp): Self = StObject.set(x, "assetModelLastUpdateDate", value.asInstanceOf[js.Any])
+    inline def setAssetModelLastUpdateDate(value: Timestamp): Self = StObject.set(x, "assetModelLastUpdateDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetModelName(value: Name): Self = StObject.set(x, "assetModelName", value.asInstanceOf[js.Any])
+    inline def setAssetModelName(value: Name): Self = StObject.set(x, "assetModelName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetModelProperties(value: AssetModelProperties): Self = StObject.set(x, "assetModelProperties", value.asInstanceOf[js.Any])
+    inline def setAssetModelProperties(value: AssetModelProperties): Self = StObject.set(x, "assetModelProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetModelPropertiesVarargs(value: AssetModelProperty*): Self = StObject.set(x, "assetModelProperties", js.Array(value :_*))
+    inline def setAssetModelPropertiesVarargs(value: AssetModelProperty*): Self = StObject.set(x, "assetModelProperties", js.Array(value :_*))
     
-    @scala.inline
-    def setAssetModelStatus(value: AssetModelStatus): Self = StObject.set(x, "assetModelStatus", value.asInstanceOf[js.Any])
+    inline def setAssetModelStatus(value: AssetModelStatus): Self = StObject.set(x, "assetModelStatus", value.asInstanceOf[js.Any])
   }
 }

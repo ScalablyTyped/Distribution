@@ -27,8 +27,7 @@ object userInterfaceMod extends Shortcut {
   }
   object UserInterface {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       closeFirefoxBeforeContinuing: () => js.Promise[Unit],
       firefoxWizardPromptPage: String => js.Promise[String],
       getWindowsEncryptionPassword: () => js.Promise[String],
@@ -40,26 +39,19 @@ object userInterfaceMod extends Shortcut {
       __obj.asInstanceOf[UserInterface]
     }
     
-    @scala.inline
-    implicit class UserInterfaceMutableBuilder[Self <: UserInterface] (val x: Self) extends AnyVal {
+    extension [Self <: UserInterface](x: Self) {
       
-      @scala.inline
-      def setCloseFirefoxBeforeContinuing(value: () => js.Promise[Unit]): Self = StObject.set(x, "closeFirefoxBeforeContinuing", js.Any.fromFunction0(value))
+      inline def setCloseFirefoxBeforeContinuing(value: () => js.Promise[Unit]): Self = StObject.set(x, "closeFirefoxBeforeContinuing", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFirefoxWizardPromptPage(value: String => js.Promise[String]): Self = StObject.set(x, "firefoxWizardPromptPage", js.Any.fromFunction1(value))
+      inline def setFirefoxWizardPromptPage(value: String => js.Promise[String]): Self = StObject.set(x, "firefoxWizardPromptPage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetWindowsEncryptionPassword(value: () => js.Promise[String]): Self = StObject.set(x, "getWindowsEncryptionPassword", js.Any.fromFunction0(value))
+      inline def setGetWindowsEncryptionPassword(value: () => js.Promise[String]): Self = StObject.set(x, "getWindowsEncryptionPassword", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStartFirefoxWizard(value: String => js.Promise[Unit]): Self = StObject.set(x, "startFirefoxWizard", js.Any.fromFunction1(value))
+      inline def setStartFirefoxWizard(value: String => js.Promise[Unit]): Self = StObject.set(x, "startFirefoxWizard", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWaitForFirefoxWizard(value: () => js.Promise[Unit]): Self = StObject.set(x, "waitForFirefoxWizard", js.Any.fromFunction0(value))
+      inline def setWaitForFirefoxWizard(value: () => js.Promise[Unit]): Self = StObject.set(x, "waitForFirefoxWizard", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setWarnChromeOnLinuxWithoutCertutil(value: () => js.Promise[Unit]): Self = StObject.set(x, "warnChromeOnLinuxWithoutCertutil", js.Any.fromFunction0(value))
+      inline def setWarnChromeOnLinuxWithoutCertutil(value: () => js.Promise[Unit]): Self = StObject.set(x, "warnChromeOnLinuxWithoutCertutil", js.Any.fromFunction0(value))
     }
   }
   

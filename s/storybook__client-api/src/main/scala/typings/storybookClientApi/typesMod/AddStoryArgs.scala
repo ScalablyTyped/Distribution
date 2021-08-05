@@ -28,46 +28,33 @@ trait AddStoryArgs
 }
 object AddStoryArgs {
   
-  @scala.inline
-  def apply(id: StoryId, kind: StoryKind, name: StoryName, storyFn: StoryFn[js.Any]): AddStoryArgs = {
+  inline def apply(id: StoryId, kind: StoryKind, name: StoryName, storyFn: StoryFn[js.Any]): AddStoryArgs = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], storyFn = storyFn.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddStoryArgs]
   }
   
-  @scala.inline
-  implicit class AddStoryArgsMutableBuilder[Self <: AddStoryArgs] (val x: Self) extends AnyVal {
+  extension [Self <: AddStoryArgs](x: Self) {
     
-    @scala.inline
-    def setDecorators(value: js.Array[DecoratorFunction[js.Any]]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
+    inline def setDecorators(value: js.Array[DecoratorFunction[js.Any]]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecoratorsUndefined: Self = StObject.set(x, "decorators", js.undefined)
+    inline def setDecoratorsUndefined: Self = StObject.set(x, "decorators", js.undefined)
     
-    @scala.inline
-    def setDecoratorsVarargs(value: DecoratorFunction[js.Any]*): Self = StObject.set(x, "decorators", js.Array(value :_*))
+    inline def setDecoratorsVarargs(value: DecoratorFunction[js.Any]*): Self = StObject.set(x, "decorators", js.Array(value :_*))
     
-    @scala.inline
-    def setLoaders(value: js.Array[LoaderFunction]): Self = StObject.set(x, "loaders", value.asInstanceOf[js.Any])
+    inline def setLoaders(value: js.Array[LoaderFunction]): Self = StObject.set(x, "loaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadersUndefined: Self = StObject.set(x, "loaders", js.undefined)
+    inline def setLoadersUndefined: Self = StObject.set(x, "loaders", js.undefined)
     
-    @scala.inline
-    def setLoadersVarargs(value: LoaderFunction*): Self = StObject.set(x, "loaders", js.Array(value :_*))
+    inline def setLoadersVarargs(value: LoaderFunction*): Self = StObject.set(x, "loaders", js.Array(value :_*))
     
-    @scala.inline
-    def setParameters(value: Parameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: Parameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setStoryFn(value: StoryFn[js.Any]): Self = StObject.set(x, "storyFn", value.asInstanceOf[js.Any])
+    inline def setStoryFn(value: StoryFn[js.Any]): Self = StObject.set(x, "storyFn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoryFnFunction1(value: /* p */ js.UndefOr[StoryContext] => js.Any): Self = StObject.set(x, "storyFn", js.Any.fromFunction1(value))
+    inline def setStoryFnFunction1(value: /* p */ js.UndefOr[StoryContext] => js.Any): Self = StObject.set(x, "storyFn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStoryFnFunction2(value: (/* a */ js.UndefOr[Args], /* p */ js.UndefOr[StoryContext]) => js.Any): Self = StObject.set(x, "storyFn", js.Any.fromFunction2(value))
+    inline def setStoryFnFunction2(value: (/* a */ js.UndefOr[Args], /* p */ js.UndefOr[StoryContext]) => js.Any): Self = StObject.set(x, "storyFn", js.Any.fromFunction2(value))
   }
 }

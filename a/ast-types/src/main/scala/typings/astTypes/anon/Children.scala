@@ -32,55 +32,41 @@ trait Children extends StObject {
 }
 object Children {
   
-  @scala.inline
-  def apply(closingFragment: JSXClosingFragmentKind, openingFragment: JSXOpeningFragmentKind): Children = {
+  inline def apply(closingFragment: JSXClosingFragmentKind, openingFragment: JSXOpeningFragmentKind): Children = {
     val __obj = js.Dynamic.literal(closingFragment = closingFragment.asInstanceOf[js.Any], openingFragment = openingFragment.asInstanceOf[js.Any])
     __obj.asInstanceOf[Children]
   }
   
-  @scala.inline
-  implicit class ChildrenMutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
+  extension [Self <: Children](x: Self) {
     
-    @scala.inline
-    def setChildren(
+    inline def setChildren(
       value: js.Array[
           JSXTextKind | JSXExpressionContainerKind | JSXSpreadChildKind | JSXElementKind | JSXFragmentKind | LiteralKind
         ]
     ): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setChildrenVarargs(
+    inline def setChildrenVarargs(
       value: (JSXTextKind | JSXExpressionContainerKind | JSXSpreadChildKind | JSXElementKind | JSXFragmentKind | LiteralKind)*
     ): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setClosingFragment(value: JSXClosingFragmentKind): Self = StObject.set(x, "closingFragment", value.asInstanceOf[js.Any])
+    inline def setClosingFragment(value: JSXClosingFragmentKind): Self = StObject.set(x, "closingFragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComments(value: js.Array[CommentKind]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+    inline def setComments(value: js.Array[CommentKind]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentsNull: Self = StObject.set(x, "comments", null)
+    inline def setCommentsNull: Self = StObject.set(x, "comments", null)
     
-    @scala.inline
-    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+    inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
-    @scala.inline
-    def setCommentsVarargs(value: CommentKind*): Self = StObject.set(x, "comments", js.Array(value :_*))
+    inline def setCommentsVarargs(value: CommentKind*): Self = StObject.set(x, "comments", js.Array(value :_*))
     
-    @scala.inline
-    def setLoc(value: SourceLocationKind): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
+    inline def setLoc(value: SourceLocationKind): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocNull: Self = StObject.set(x, "loc", null)
+    inline def setLocNull: Self = StObject.set(x, "loc", null)
     
-    @scala.inline
-    def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
+    inline def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
     
-    @scala.inline
-    def setOpeningFragment(value: JSXOpeningFragmentKind): Self = StObject.set(x, "openingFragment", value.asInstanceOf[js.Any])
+    inline def setOpeningFragment(value: JSXOpeningFragmentKind): Self = StObject.set(x, "openingFragment", value.asInstanceOf[js.Any])
   }
 }

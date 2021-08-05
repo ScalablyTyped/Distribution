@@ -13,16 +13,13 @@ trait DeleteNotebookInstanceInput extends StObject {
 }
 object DeleteNotebookInstanceInput {
   
-  @scala.inline
-  def apply(NotebookInstanceName: NotebookInstanceName): DeleteNotebookInstanceInput = {
+  inline def apply(NotebookInstanceName: NotebookInstanceName): DeleteNotebookInstanceInput = {
     val __obj = js.Dynamic.literal(NotebookInstanceName = NotebookInstanceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteNotebookInstanceInput]
   }
   
-  @scala.inline
-  implicit class DeleteNotebookInstanceInputMutableBuilder[Self <: DeleteNotebookInstanceInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteNotebookInstanceInput](x: Self) {
     
-    @scala.inline
-    def setNotebookInstanceName(value: NotebookInstanceName): Self = StObject.set(x, "NotebookInstanceName", value.asInstanceOf[js.Any])
+    inline def setNotebookInstanceName(value: NotebookInstanceName): Self = StObject.set(x, "NotebookInstanceName", value.asInstanceOf[js.Any])
   }
 }

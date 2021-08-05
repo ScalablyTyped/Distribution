@@ -45,8 +45,7 @@ trait XTextRange
 }
 object XTextRange {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     End: XTextRange,
     Start: XTextRange,
     String: String,
@@ -63,31 +62,22 @@ object XTextRange {
     __obj.asInstanceOf[XTextRange]
   }
   
-  @scala.inline
-  implicit class XTextRangeMutableBuilder[Self <: XTextRange] (val x: Self) extends AnyVal {
+  extension [Self <: XTextRange](x: Self) {
     
-    @scala.inline
-    def setEnd(value: XTextRange): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
+    inline def setEnd(value: XTextRange): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetEnd(value: () => XTextRange): Self = StObject.set(x, "getEnd", js.Any.fromFunction0(value))
+    inline def setGetEnd(value: () => XTextRange): Self = StObject.set(x, "getEnd", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStart(value: () => XTextRange): Self = StObject.set(x, "getStart", js.Any.fromFunction0(value))
+    inline def setGetStart(value: () => XTextRange): Self = StObject.set(x, "getStart", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetString(value: () => String): Self = StObject.set(x, "getString", js.Any.fromFunction0(value))
+    inline def setGetString(value: () => String): Self = StObject.set(x, "getString", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetText(value: () => XText): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+    inline def setGetText(value: () => XText): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetString(value: String => Unit): Self = StObject.set(x, "setString", js.Any.fromFunction1(value))
+    inline def setSetString(value: String => Unit): Self = StObject.set(x, "setString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStart(value: XTextRange): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
+    inline def setStart(value: XTextRange): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setString(value: String): Self = StObject.set(x, "String", value.asInstanceOf[js.Any])
+    inline def setString(value: String): Self = StObject.set(x, "String", value.asInstanceOf[js.Any])
   }
 }

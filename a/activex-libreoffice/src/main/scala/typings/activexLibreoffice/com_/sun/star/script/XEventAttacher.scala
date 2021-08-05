@@ -53,8 +53,7 @@ trait XEventAttacher
 }
 object XEventAttacher {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     attachListener: (XInterface, XAllListener, js.Any, String, String) => XEventListener,
     attachSingleEventListener: (XInterface, XAllListener, js.Any, String, String, String) => XEventListener,
@@ -66,16 +65,12 @@ object XEventAttacher {
     __obj.asInstanceOf[XEventAttacher]
   }
   
-  @scala.inline
-  implicit class XEventAttacherMutableBuilder[Self <: XEventAttacher] (val x: Self) extends AnyVal {
+  extension [Self <: XEventAttacher](x: Self) {
     
-    @scala.inline
-    def setAttachListener(value: (XInterface, XAllListener, js.Any, String, String) => XEventListener): Self = StObject.set(x, "attachListener", js.Any.fromFunction5(value))
+    inline def setAttachListener(value: (XInterface, XAllListener, js.Any, String, String) => XEventListener): Self = StObject.set(x, "attachListener", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setAttachSingleEventListener(value: (XInterface, XAllListener, js.Any, String, String, String) => XEventListener): Self = StObject.set(x, "attachSingleEventListener", js.Any.fromFunction6(value))
+    inline def setAttachSingleEventListener(value: (XInterface, XAllListener, js.Any, String, String, String) => XEventListener): Self = StObject.set(x, "attachSingleEventListener", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setRemoveListener(value: (XInterface, String, String, XEventListener) => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction4(value))
+    inline def setRemoveListener(value: (XInterface, String, String, XEventListener) => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction4(value))
   }
 }

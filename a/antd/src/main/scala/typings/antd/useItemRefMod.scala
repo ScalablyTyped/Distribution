@@ -12,8 +12,7 @@ object useItemRefMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): js.Function2[
+  inline def default(): js.Function2[
     /* name */ InternalNamePath, 
     /* children */ js.Any, 
     js.UndefOr[(js.Function1[/* instance */ js.Any, Unit]) | RefObject[js.Any] | Null]

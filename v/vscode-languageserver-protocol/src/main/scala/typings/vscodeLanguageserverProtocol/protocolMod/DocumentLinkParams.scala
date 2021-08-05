@@ -17,16 +17,13 @@ trait DocumentLinkParams
 }
 object DocumentLinkParams {
   
-  @scala.inline
-  def apply(textDocument: TextDocumentIdentifier): DocumentLinkParams = {
+  inline def apply(textDocument: TextDocumentIdentifier): DocumentLinkParams = {
     val __obj = js.Dynamic.literal(textDocument = textDocument.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentLinkParams]
   }
   
-  @scala.inline
-  implicit class DocumentLinkParamsMutableBuilder[Self <: DocumentLinkParams] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentLinkParams](x: Self) {
     
-    @scala.inline
-    def setTextDocument(value: TextDocumentIdentifier): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
+    inline def setTextDocument(value: TextDocumentIdentifier): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
   }
 }

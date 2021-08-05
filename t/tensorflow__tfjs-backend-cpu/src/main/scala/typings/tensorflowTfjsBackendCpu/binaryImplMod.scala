@@ -12,6 +12,5 @@ object binaryImplMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createSimpleBinaryKernelImpl(op: SimpleBinaryOperation): SimpleBinaryKernelImpl = ^.asInstanceOf[js.Dynamic].applyDynamic("createSimpleBinaryKernelImpl")(op.asInstanceOf[js.Any]).asInstanceOf[SimpleBinaryKernelImpl]
+  inline def createSimpleBinaryKernelImpl(op: SimpleBinaryOperation): SimpleBinaryKernelImpl = ^.asInstanceOf[js.Dynamic].applyDynamic("createSimpleBinaryKernelImpl")(op.asInstanceOf[js.Any]).asInstanceOf[SimpleBinaryKernelImpl]
 }

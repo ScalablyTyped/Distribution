@@ -22,8 +22,7 @@ trait IContactLocationField
 }
 object IContactLocationField {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     category: ContactFieldCategory,
     city: String,
     country: String,
@@ -40,25 +39,18 @@ object IContactLocationField {
     __obj.asInstanceOf[IContactLocationField]
   }
   
-  @scala.inline
-  implicit class IContactLocationFieldMutableBuilder[Self <: IContactLocationField] (val x: Self) extends AnyVal {
+  extension [Self <: IContactLocationField](x: Self) {
     
-    @scala.inline
-    def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+    inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
+    inline def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreet(value: String): Self = StObject.set(x, "street", value.asInstanceOf[js.Any])
+    inline def setStreet(value: String): Self = StObject.set(x, "street", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnstructuredAddress(value: String): Self = StObject.set(x, "unstructuredAddress", value.asInstanceOf[js.Any])
+    inline def setUnstructuredAddress(value: String): Self = StObject.set(x, "unstructuredAddress", value.asInstanceOf[js.Any])
   }
 }

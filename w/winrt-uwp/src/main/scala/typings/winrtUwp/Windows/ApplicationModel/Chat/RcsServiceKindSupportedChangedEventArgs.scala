@@ -12,16 +12,13 @@ trait RcsServiceKindSupportedChangedEventArgs extends StObject {
 }
 object RcsServiceKindSupportedChangedEventArgs {
   
-  @scala.inline
-  def apply(serviceKind: RcsServiceKind): RcsServiceKindSupportedChangedEventArgs = {
+  inline def apply(serviceKind: RcsServiceKind): RcsServiceKindSupportedChangedEventArgs = {
     val __obj = js.Dynamic.literal(serviceKind = serviceKind.asInstanceOf[js.Any])
     __obj.asInstanceOf[RcsServiceKindSupportedChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class RcsServiceKindSupportedChangedEventArgsMutableBuilder[Self <: RcsServiceKindSupportedChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: RcsServiceKindSupportedChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setServiceKind(value: RcsServiceKind): Self = StObject.set(x, "serviceKind", value.asInstanceOf[js.Any])
+    inline def setServiceKind(value: RcsServiceKind): Self = StObject.set(x, "serviceKind", value.asInstanceOf[js.Any])
   }
 }

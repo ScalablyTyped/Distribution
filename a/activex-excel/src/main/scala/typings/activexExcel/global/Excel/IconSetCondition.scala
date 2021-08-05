@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.IconSetCondition")
 @js.native
-class IconSetCondition protected ()
+/* private */ class IconSetCondition ()
   extends StObject
      with typings.activexExcel.Excel.IconSetCondition {
   
@@ -34,7 +34,7 @@ class IconSetCondition protected ()
   /* CompleteClass */
   override def Delete(): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.IconSetCondition_typekey")
   var ExcelDotIconSetCondition_typekey: typings.activexExcel.Excel.IconSetCondition = js.native
   

@@ -22,23 +22,18 @@ object mod {
   }
   object FindResult {
     
-    @scala.inline
-    def apply[T](handlers: js.Array[T], params: StringDictionary[String]): FindResult[T] = {
+    inline def apply[T](handlers: js.Array[T], params: StringDictionary[String]): FindResult[T] = {
       val __obj = js.Dynamic.literal(handlers = handlers.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
       __obj.asInstanceOf[FindResult[T]]
     }
     
-    @scala.inline
-    implicit class FindResultMutableBuilder[Self <: FindResult[?], T] (val x: Self & FindResult[T]) extends AnyVal {
+    extension [Self <: FindResult[?], T](x: Self & FindResult[T]) {
       
-      @scala.inline
-      def setHandlers(value: js.Array[T]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
+      inline def setHandlers(value: js.Array[T]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandlersVarargs(value: T*): Self = StObject.set(x, "handlers", js.Array(value :_*))
+      inline def setHandlersVarargs(value: T*): Self = StObject.set(x, "handlers", js.Array(value :_*))
       
-      @scala.inline
-      def setParams(value: StringDictionary[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: StringDictionary[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     }
   }
   
@@ -81,107 +76,73 @@ object mod {
   trait HTTPMethod extends StObject
   object HTTPMethod {
     
-    @scala.inline
-    def ACL: typings.trouter.trouterStrings.ACL = "ACL".asInstanceOf[typings.trouter.trouterStrings.ACL]
+    inline def ACL: typings.trouter.trouterStrings.ACL = "ACL".asInstanceOf[typings.trouter.trouterStrings.ACL]
     
-    @scala.inline
-    def BIND: typings.trouter.trouterStrings.BIND = "BIND".asInstanceOf[typings.trouter.trouterStrings.BIND]
+    inline def BIND: typings.trouter.trouterStrings.BIND = "BIND".asInstanceOf[typings.trouter.trouterStrings.BIND]
     
-    @scala.inline
-    def CHECKOUT: typings.trouter.trouterStrings.CHECKOUT = "CHECKOUT".asInstanceOf[typings.trouter.trouterStrings.CHECKOUT]
+    inline def CHECKOUT: typings.trouter.trouterStrings.CHECKOUT = "CHECKOUT".asInstanceOf[typings.trouter.trouterStrings.CHECKOUT]
     
-    @scala.inline
-    def CONNECT: typings.trouter.trouterStrings.CONNECT = "CONNECT".asInstanceOf[typings.trouter.trouterStrings.CONNECT]
+    inline def CONNECT: typings.trouter.trouterStrings.CONNECT = "CONNECT".asInstanceOf[typings.trouter.trouterStrings.CONNECT]
     
-    @scala.inline
-    def COPY: typings.trouter.trouterStrings.COPY = "COPY".asInstanceOf[typings.trouter.trouterStrings.COPY]
+    inline def COPY: typings.trouter.trouterStrings.COPY = "COPY".asInstanceOf[typings.trouter.trouterStrings.COPY]
     
-    @scala.inline
-    def DELETE: typings.trouter.trouterStrings.DELETE = "DELETE".asInstanceOf[typings.trouter.trouterStrings.DELETE]
+    inline def DELETE: typings.trouter.trouterStrings.DELETE = "DELETE".asInstanceOf[typings.trouter.trouterStrings.DELETE]
     
-    @scala.inline
-    def GET: typings.trouter.trouterStrings.GET = "GET".asInstanceOf[typings.trouter.trouterStrings.GET]
+    inline def GET: typings.trouter.trouterStrings.GET = "GET".asInstanceOf[typings.trouter.trouterStrings.GET]
     
-    @scala.inline
-    def HEAD: typings.trouter.trouterStrings.HEAD = "HEAD".asInstanceOf[typings.trouter.trouterStrings.HEAD]
+    inline def HEAD: typings.trouter.trouterStrings.HEAD = "HEAD".asInstanceOf[typings.trouter.trouterStrings.HEAD]
     
-    @scala.inline
-    def LINK: typings.trouter.trouterStrings.LINK = "LINK".asInstanceOf[typings.trouter.trouterStrings.LINK]
+    inline def LINK: typings.trouter.trouterStrings.LINK = "LINK".asInstanceOf[typings.trouter.trouterStrings.LINK]
     
-    @scala.inline
-    def LOCK: typings.trouter.trouterStrings.LOCK = "LOCK".asInstanceOf[typings.trouter.trouterStrings.LOCK]
+    inline def LOCK: typings.trouter.trouterStrings.LOCK = "LOCK".asInstanceOf[typings.trouter.trouterStrings.LOCK]
     
-    @scala.inline
-    def `M-SEARCH`: typings.trouter.trouterStrings.`M-SEARCH` = "M-SEARCH".asInstanceOf[typings.trouter.trouterStrings.`M-SEARCH`]
+    inline def `M-SEARCH`: typings.trouter.trouterStrings.`M-SEARCH` = "M-SEARCH".asInstanceOf[typings.trouter.trouterStrings.`M-SEARCH`]
     
-    @scala.inline
-    def MERGE: typings.trouter.trouterStrings.MERGE = "MERGE".asInstanceOf[typings.trouter.trouterStrings.MERGE]
+    inline def MERGE: typings.trouter.trouterStrings.MERGE = "MERGE".asInstanceOf[typings.trouter.trouterStrings.MERGE]
     
-    @scala.inline
-    def MKACTIVITY: typings.trouter.trouterStrings.MKACTIVITY = "MKACTIVITY".asInstanceOf[typings.trouter.trouterStrings.MKACTIVITY]
+    inline def MKACTIVITY: typings.trouter.trouterStrings.MKACTIVITY = "MKACTIVITY".asInstanceOf[typings.trouter.trouterStrings.MKACTIVITY]
     
-    @scala.inline
-    def MKCALENDAR: typings.trouter.trouterStrings.MKCALENDAR = "MKCALENDAR".asInstanceOf[typings.trouter.trouterStrings.MKCALENDAR]
+    inline def MKCALENDAR: typings.trouter.trouterStrings.MKCALENDAR = "MKCALENDAR".asInstanceOf[typings.trouter.trouterStrings.MKCALENDAR]
     
-    @scala.inline
-    def MKCOL: typings.trouter.trouterStrings.MKCOL = "MKCOL".asInstanceOf[typings.trouter.trouterStrings.MKCOL]
+    inline def MKCOL: typings.trouter.trouterStrings.MKCOL = "MKCOL".asInstanceOf[typings.trouter.trouterStrings.MKCOL]
     
-    @scala.inline
-    def MOVE: typings.trouter.trouterStrings.MOVE = "MOVE".asInstanceOf[typings.trouter.trouterStrings.MOVE]
+    inline def MOVE: typings.trouter.trouterStrings.MOVE = "MOVE".asInstanceOf[typings.trouter.trouterStrings.MOVE]
     
-    @scala.inline
-    def NOTIFY: typings.trouter.trouterStrings.NOTIFY = "NOTIFY".asInstanceOf[typings.trouter.trouterStrings.NOTIFY]
+    inline def NOTIFY: typings.trouter.trouterStrings.NOTIFY = "NOTIFY".asInstanceOf[typings.trouter.trouterStrings.NOTIFY]
     
-    @scala.inline
-    def OPTIONS: typings.trouter.trouterStrings.OPTIONS = "OPTIONS".asInstanceOf[typings.trouter.trouterStrings.OPTIONS]
+    inline def OPTIONS: typings.trouter.trouterStrings.OPTIONS = "OPTIONS".asInstanceOf[typings.trouter.trouterStrings.OPTIONS]
     
-    @scala.inline
-    def PATCH: typings.trouter.trouterStrings.PATCH = "PATCH".asInstanceOf[typings.trouter.trouterStrings.PATCH]
+    inline def PATCH: typings.trouter.trouterStrings.PATCH = "PATCH".asInstanceOf[typings.trouter.trouterStrings.PATCH]
     
-    @scala.inline
-    def POST: typings.trouter.trouterStrings.POST = "POST".asInstanceOf[typings.trouter.trouterStrings.POST]
+    inline def POST: typings.trouter.trouterStrings.POST = "POST".asInstanceOf[typings.trouter.trouterStrings.POST]
     
-    @scala.inline
-    def PROPFIND: typings.trouter.trouterStrings.PROPFIND = "PROPFIND".asInstanceOf[typings.trouter.trouterStrings.PROPFIND]
+    inline def PROPFIND: typings.trouter.trouterStrings.PROPFIND = "PROPFIND".asInstanceOf[typings.trouter.trouterStrings.PROPFIND]
     
-    @scala.inline
-    def PROPPATCH: typings.trouter.trouterStrings.PROPPATCH = "PROPPATCH".asInstanceOf[typings.trouter.trouterStrings.PROPPATCH]
+    inline def PROPPATCH: typings.trouter.trouterStrings.PROPPATCH = "PROPPATCH".asInstanceOf[typings.trouter.trouterStrings.PROPPATCH]
     
-    @scala.inline
-    def PURGE: typings.trouter.trouterStrings.PURGE = "PURGE".asInstanceOf[typings.trouter.trouterStrings.PURGE]
+    inline def PURGE: typings.trouter.trouterStrings.PURGE = "PURGE".asInstanceOf[typings.trouter.trouterStrings.PURGE]
     
-    @scala.inline
-    def PUT: typings.trouter.trouterStrings.PUT = "PUT".asInstanceOf[typings.trouter.trouterStrings.PUT]
+    inline def PUT: typings.trouter.trouterStrings.PUT = "PUT".asInstanceOf[typings.trouter.trouterStrings.PUT]
     
-    @scala.inline
-    def REBIND: typings.trouter.trouterStrings.REBIND = "REBIND".asInstanceOf[typings.trouter.trouterStrings.REBIND]
+    inline def REBIND: typings.trouter.trouterStrings.REBIND = "REBIND".asInstanceOf[typings.trouter.trouterStrings.REBIND]
     
-    @scala.inline
-    def REPORT: typings.trouter.trouterStrings.REPORT = "REPORT".asInstanceOf[typings.trouter.trouterStrings.REPORT]
+    inline def REPORT: typings.trouter.trouterStrings.REPORT = "REPORT".asInstanceOf[typings.trouter.trouterStrings.REPORT]
     
-    @scala.inline
-    def SEARCH: typings.trouter.trouterStrings.SEARCH = "SEARCH".asInstanceOf[typings.trouter.trouterStrings.SEARCH]
+    inline def SEARCH: typings.trouter.trouterStrings.SEARCH = "SEARCH".asInstanceOf[typings.trouter.trouterStrings.SEARCH]
     
-    @scala.inline
-    def SOURCE: typings.trouter.trouterStrings.SOURCE = "SOURCE".asInstanceOf[typings.trouter.trouterStrings.SOURCE]
+    inline def SOURCE: typings.trouter.trouterStrings.SOURCE = "SOURCE".asInstanceOf[typings.trouter.trouterStrings.SOURCE]
     
-    @scala.inline
-    def SUBSCRIBE: typings.trouter.trouterStrings.SUBSCRIBE = "SUBSCRIBE".asInstanceOf[typings.trouter.trouterStrings.SUBSCRIBE]
+    inline def SUBSCRIBE: typings.trouter.trouterStrings.SUBSCRIBE = "SUBSCRIBE".asInstanceOf[typings.trouter.trouterStrings.SUBSCRIBE]
     
-    @scala.inline
-    def TRACE: typings.trouter.trouterStrings.TRACE = "TRACE".asInstanceOf[typings.trouter.trouterStrings.TRACE]
+    inline def TRACE: typings.trouter.trouterStrings.TRACE = "TRACE".asInstanceOf[typings.trouter.trouterStrings.TRACE]
     
-    @scala.inline
-    def UNBIND: typings.trouter.trouterStrings.UNBIND = "UNBIND".asInstanceOf[typings.trouter.trouterStrings.UNBIND]
+    inline def UNBIND: typings.trouter.trouterStrings.UNBIND = "UNBIND".asInstanceOf[typings.trouter.trouterStrings.UNBIND]
     
-    @scala.inline
-    def UNLINK: typings.trouter.trouterStrings.UNLINK = "UNLINK".asInstanceOf[typings.trouter.trouterStrings.UNLINK]
+    inline def UNLINK: typings.trouter.trouterStrings.UNLINK = "UNLINK".asInstanceOf[typings.trouter.trouterStrings.UNLINK]
     
-    @scala.inline
-    def UNLOCK: typings.trouter.trouterStrings.UNLOCK = "UNLOCK".asInstanceOf[typings.trouter.trouterStrings.UNLOCK]
+    inline def UNLOCK: typings.trouter.trouterStrings.UNLOCK = "UNLOCK".asInstanceOf[typings.trouter.trouterStrings.UNLOCK]
     
-    @scala.inline
-    def UNSUBSCRIBE: typings.trouter.trouterStrings.UNSUBSCRIBE = "UNSUBSCRIBE".asInstanceOf[typings.trouter.trouterStrings.UNSUBSCRIBE]
+    inline def UNSUBSCRIBE: typings.trouter.trouterStrings.UNSUBSCRIBE = "UNSUBSCRIBE".asInstanceOf[typings.trouter.trouterStrings.UNSUBSCRIBE]
   }
   
   @js.native

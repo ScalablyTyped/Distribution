@@ -11,8 +11,7 @@ trait RadarDatasetConfig
      with LineRadarConfig
 object RadarDatasetConfig {
   
-  @scala.inline
-  def apply(): RadarDatasetConfig = {
+  inline def apply(): RadarDatasetConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RadarDatasetConfig]
   }

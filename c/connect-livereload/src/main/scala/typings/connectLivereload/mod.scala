@@ -8,10 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): HandleFunction = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[HandleFunction]
-  @scala.inline
-  def apply(options: Options): HandleFunction = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[HandleFunction]
+  inline def apply(): HandleFunction = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[HandleFunction]
+  inline def apply(options: Options): HandleFunction = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[HandleFunction]
   
   @JSImport("connect-livereload", JSImport.Namespace)
   @js.native
@@ -41,80 +39,56 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDisableCompression(value: Boolean): Self = StObject.set(x, "disableCompression", value.asInstanceOf[js.Any])
+      inline def setDisableCompression(value: Boolean): Self = StObject.set(x, "disableCompression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableCompressionUndefined: Self = StObject.set(x, "disableCompression", js.undefined)
+      inline def setDisableCompressionUndefined: Self = StObject.set(x, "disableCompression", js.undefined)
       
-      @scala.inline
-      def setExcludeList(value: js.Array[FileMatcher]): Self = StObject.set(x, "excludeList", value.asInstanceOf[js.Any])
+      inline def setExcludeList(value: js.Array[FileMatcher]): Self = StObject.set(x, "excludeList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeListUndefined: Self = StObject.set(x, "excludeList", js.undefined)
+      inline def setExcludeListUndefined: Self = StObject.set(x, "excludeList", js.undefined)
       
-      @scala.inline
-      def setExcludeListVarargs(value: FileMatcher*): Self = StObject.set(x, "excludeList", js.Array(value :_*))
+      inline def setExcludeListVarargs(value: FileMatcher*): Self = StObject.set(x, "excludeList", js.Array(value :_*))
       
-      @scala.inline
-      def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
+      inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
       
-      @scala.inline
-      def setHtml(value: /* val */ String => Boolean): Self = StObject.set(x, "html", js.Any.fromFunction1(value))
+      inline def setHtml(value: /* val */ String => Boolean): Self = StObject.set(x, "html", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+      inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
       
-      @scala.inline
-      def setIgnore(value: js.Array[FileMatcher]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: js.Array[FileMatcher]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      @scala.inline
-      def setIgnoreVarargs(value: FileMatcher*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: FileMatcher*): Self = StObject.set(x, "ignore", js.Array(value :_*))
       
-      @scala.inline
-      def setInclude(value: js.Array[FileMatcher]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: js.Array[FileMatcher]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+      inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      @scala.inline
-      def setIncludeVarargs(value: FileMatcher*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: FileMatcher*): Self = StObject.set(x, "include", js.Array(value :_*))
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setRules(value: js.Array[Rule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: js.Array[Rule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+      inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
       
-      @scala.inline
-      def setRulesVarargs(value: Rule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: Rule*): Self = StObject.set(x, "rules", js.Array(value :_*))
       
-      @scala.inline
-      def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+      inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
     }
   }
   
@@ -126,21 +100,17 @@ object mod {
   }
   object Rule {
     
-    @scala.inline
-    def apply(fn: (String, String) => String, `match`: RegExp): Rule = {
+    inline def apply(fn: (String, String) => String, `match`: RegExp): Rule = {
       val __obj = js.Dynamic.literal(fn = js.Any.fromFunction2(fn))
       __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Rule]
     }
     
-    @scala.inline
-    implicit class RuleMutableBuilder[Self <: Rule] (val x: Self) extends AnyVal {
+    extension [Self <: Rule](x: Self) {
       
-      @scala.inline
-      def setFn(value: (String, String) => String): Self = StObject.set(x, "fn", js.Any.fromFunction2(value))
+      inline def setFn(value: (String, String) => String): Self = StObject.set(x, "fn", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMatch(value: RegExp): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+      inline def setMatch(value: RegExp): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     }
   }
 }

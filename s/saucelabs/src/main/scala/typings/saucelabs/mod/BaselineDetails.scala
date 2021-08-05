@@ -19,40 +19,29 @@ trait BaselineDetails
 }
 object BaselineDetails {
   
-  @scala.inline
-  def apply(): BaselineDetails = {
+  inline def apply(): BaselineDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BaselineDetails]
   }
   
-  @scala.inline
-  implicit class BaselineDetailsMutableBuilder[Self <: BaselineDetails] (val x: Self) extends AnyVal {
+  extension [Self <: BaselineDetails](x: Self) {
     
-    @scala.inline
-    def setBaseline(value: Double): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
+    inline def setBaseline(value: Double): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaselineUndefined: Self = StObject.set(x, "baseline", js.undefined)
+    inline def setBaselineUndefined: Self = StObject.set(x, "baseline", js.undefined)
     
-    @scala.inline
-    def setLower_boundary(value: Double): Self = StObject.set(x, "lower_boundary", value.asInstanceOf[js.Any])
+    inline def setLower_boundary(value: Double): Self = StObject.set(x, "lower_boundary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLower_boundaryUndefined: Self = StObject.set(x, "lower_boundary", js.undefined)
+    inline def setLower_boundaryUndefined: Self = StObject.set(x, "lower_boundary", js.undefined)
     
-    @scala.inline
-    def setUpper_boundary(value: Double): Self = StObject.set(x, "upper_boundary", value.asInstanceOf[js.Any])
+    inline def setUpper_boundary(value: Double): Self = StObject.set(x, "upper_boundary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpper_boundaryUndefined: Self = StObject.set(x, "upper_boundary", js.undefined)
+    inline def setUpper_boundaryUndefined: Self = StObject.set(x, "upper_boundary", js.undefined)
     
-    @scala.inline
-    def setValues(value: js.Array[BaselineValues]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[BaselineValues]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: BaselineValues*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: BaselineValues*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

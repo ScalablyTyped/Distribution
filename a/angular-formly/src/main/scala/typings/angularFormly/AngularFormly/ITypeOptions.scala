@@ -51,108 +51,75 @@ trait ITypeOptions extends StObject {
 }
 object ITypeOptions {
   
-  @scala.inline
-  def apply(name: String): ITypeOptions = {
+  inline def apply(name: String): ITypeOptions = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITypeOptions]
   }
   
-  @scala.inline
-  implicit class ITypeOptionsMutableBuilder[Self <: ITypeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ITypeOptions](x: Self) {
     
-    @scala.inline
-    def setApiCheck(value: StringDictionary[js.Function]): Self = StObject.set(x, "apiCheck", value.asInstanceOf[js.Any])
+    inline def setApiCheck(value: StringDictionary[js.Function]): Self = StObject.set(x, "apiCheck", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiCheckFunction(value: String): Self = StObject.set(x, "apiCheckFunction", value.asInstanceOf[js.Any])
+    inline def setApiCheckFunction(value: String): Self = StObject.set(x, "apiCheckFunction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiCheckFunctionUndefined: Self = StObject.set(x, "apiCheckFunction", js.undefined)
+    inline def setApiCheckFunctionUndefined: Self = StObject.set(x, "apiCheckFunction", js.undefined)
     
-    @scala.inline
-    def setApiCheckInstance(value: js.Any): Self = StObject.set(x, "apiCheckInstance", value.asInstanceOf[js.Any])
+    inline def setApiCheckInstance(value: js.Any): Self = StObject.set(x, "apiCheckInstance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiCheckInstanceUndefined: Self = StObject.set(x, "apiCheckInstance", js.undefined)
+    inline def setApiCheckInstanceUndefined: Self = StObject.set(x, "apiCheckInstance", js.undefined)
     
-    @scala.inline
-    def setApiCheckOptions(value: js.Object): Self = StObject.set(x, "apiCheckOptions", value.asInstanceOf[js.Any])
+    inline def setApiCheckOptions(value: js.Object): Self = StObject.set(x, "apiCheckOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiCheckOptionsUndefined: Self = StObject.set(x, "apiCheckOptions", js.undefined)
+    inline def setApiCheckOptionsUndefined: Self = StObject.set(x, "apiCheckOptions", js.undefined)
     
-    @scala.inline
-    def setApiCheckUndefined: Self = StObject.set(x, "apiCheck", js.undefined)
+    inline def setApiCheckUndefined: Self = StObject.set(x, "apiCheck", js.undefined)
     
-    @scala.inline
-    def setController(value: js.Function | String | js.Array[js.Any]): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+    inline def setController(value: js.Function | String | js.Array[js.Any]): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
+    inline def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
     
-    @scala.inline
-    def setControllerVarargs(value: js.Any*): Self = StObject.set(x, "controller", js.Array(value :_*))
+    inline def setControllerVarargs(value: js.Any*): Self = StObject.set(x, "controller", js.Array(value :_*))
     
-    @scala.inline
-    def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setDefaultOptions(value: IFieldConfigurationObject | js.Function): Self = StObject.set(x, "defaultOptions", value.asInstanceOf[js.Any])
+    inline def setDefaultOptions(value: IFieldConfigurationObject | js.Function): Self = StObject.set(x, "defaultOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultOptionsUndefined: Self = StObject.set(x, "defaultOptions", js.undefined)
+    inline def setDefaultOptionsUndefined: Self = StObject.set(x, "defaultOptions", js.undefined)
     
-    @scala.inline
-    def setExtends(value: String): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
+    inline def setExtends(value: String): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendsUndefined: Self = StObject.set(x, "extends", js.undefined)
+    inline def setExtendsUndefined: Self = StObject.set(x, "extends", js.undefined)
     
-    @scala.inline
-    def setLink(
+    inline def setLink(
       value: (IScope, JQLite, IAttributes, /* controller */ js.UndefOr[IController], /* transclude */ js.UndefOr[ITranscludeFunction]) => Unit
     ): Self = StObject.set(x, "link", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+    inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverwriteOk(value: Boolean): Self = StObject.set(x, "overwriteOk", value.asInstanceOf[js.Any])
+    inline def setOverwriteOk(value: Boolean): Self = StObject.set(x, "overwriteOk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverwriteOkUndefined: Self = StObject.set(x, "overwriteOk", js.undefined)
+    inline def setOverwriteOkUndefined: Self = StObject.set(x, "overwriteOk", js.undefined)
     
-    @scala.inline
-    def setTemplate(value: js.Function | String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: js.Function | String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
-    @scala.inline
-    def setTemplateUrl(value: js.Function | String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
+    inline def setTemplateUrl(value: js.Function | String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
+    inline def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
     
-    @scala.inline
-    def setValidateOptions(value: js.Function): Self = StObject.set(x, "validateOptions", value.asInstanceOf[js.Any])
+    inline def setValidateOptions(value: js.Function): Self = StObject.set(x, "validateOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidateOptionsUndefined: Self = StObject.set(x, "validateOptions", js.undefined)
+    inline def setValidateOptionsUndefined: Self = StObject.set(x, "validateOptions", js.undefined)
     
-    @scala.inline
-    def setWrapper(value: String | js.Array[String]): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+    inline def setWrapper(value: String | js.Array[String]): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
+    inline def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
     
-    @scala.inline
-    def setWrapperVarargs(value: String*): Self = StObject.set(x, "wrapper", js.Array(value :_*))
+    inline def setWrapperVarargs(value: String*): Self = StObject.set(x, "wrapper", js.Array(value :_*))
   }
 }

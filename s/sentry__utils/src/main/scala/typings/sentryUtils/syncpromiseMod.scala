@@ -19,25 +19,25 @@ object syncpromiseMod {
           ]) = this()
     
     /** JSDoc */
-    val _attachHandler: js.Any = js.native
+    /* private */ val _attachHandler: js.Any = js.native
     
     /** JSDoc */
-    val _executeHandlers: js.Any = js.native
+    /* private */ val _executeHandlers: js.Any = js.native
     
-    var _handlers: js.Any = js.native
-    
-    /** JSDoc */
-    val _reject: js.Any = js.native
+    /* private */ var _handlers: js.Any = js.native
     
     /** JSDoc */
-    val _resolve: js.Any = js.native
+    /* private */ val _reject: js.Any = js.native
     
     /** JSDoc */
-    val _setResult: js.Any = js.native
+    /* private */ val _resolve: js.Any = js.native
     
-    var _state: js.Any = js.native
+    /** JSDoc */
+    /* private */ val _setResult: js.Any = js.native
     
-    var _value: js.Any = js.native
+    /* private */ var _state: js.Any = js.native
+    
+    /* private */ var _value: js.Any = js.native
     
     /** JSDoc */
     def `catch`[TResult](): js.Thenable[T | TResult] = js.native
@@ -55,21 +55,16 @@ object syncpromiseMod {
     
     /** JSDoc */
     /* static member */
-    @scala.inline
-    def all[U](collection: js.Array[U | js.Thenable[U]]): js.Thenable[js.Array[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(collection.asInstanceOf[js.Any]).asInstanceOf[js.Thenable[js.Array[U]]]
+    inline def all[U](collection: js.Array[U | js.Thenable[U]]): js.Thenable[js.Array[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(collection.asInstanceOf[js.Any]).asInstanceOf[js.Thenable[js.Array[U]]]
     
     /** JSDoc */
     /* static member */
-    @scala.inline
-    def reject[T](): js.Thenable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("reject")().asInstanceOf[js.Thenable[T]]
-    @scala.inline
-    def reject[T](reason: js.Any): js.Thenable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("reject")(reason.asInstanceOf[js.Any]).asInstanceOf[js.Thenable[T]]
+    inline def reject[T](): js.Thenable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("reject")().asInstanceOf[js.Thenable[T]]
+    inline def reject[T](reason: js.Any): js.Thenable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("reject")(reason.asInstanceOf[js.Any]).asInstanceOf[js.Thenable[T]]
     
     /** JSDoc */
     /* static member */
-    @scala.inline
-    def resolve[T](value: T): js.Thenable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(value.asInstanceOf[js.Any]).asInstanceOf[js.Thenable[T]]
-    @scala.inline
-    def resolve[T](value: js.Thenable[T]): js.Thenable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(value.asInstanceOf[js.Any]).asInstanceOf[js.Thenable[T]]
+    inline def resolve[T](value: T): js.Thenable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(value.asInstanceOf[js.Any]).asInstanceOf[js.Thenable[T]]
+    inline def resolve[T](value: js.Thenable[T]): js.Thenable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(value.asInstanceOf[js.Any]).asInstanceOf[js.Thenable[T]]
   }
 }

@@ -12,7 +12,7 @@ object pulsarMod {
   @js.native
   class Pulsar () extends StObject {
     
-    var _waiters: js.Any = js.native
+    /* private */ var _waiters: js.Any = js.native
     
     /**
       * Notifies the next waiter.

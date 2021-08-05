@@ -23,31 +23,23 @@ trait ListEventSubscriptionsRequest extends StObject {
 }
 object ListEventSubscriptionsRequest {
   
-  @scala.inline
-  def apply(): ListEventSubscriptionsRequest = {
+  inline def apply(): ListEventSubscriptionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListEventSubscriptionsRequest]
   }
   
-  @scala.inline
-  implicit class ListEventSubscriptionsRequestMutableBuilder[Self <: ListEventSubscriptionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListEventSubscriptionsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: ListEventSubscriptionsMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: ListEventSubscriptionsMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setResourceArn(value: Arn): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: Arn): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceArnUndefined: Self = StObject.set(x, "resourceArn", js.undefined)
+    inline def setResourceArnUndefined: Self = StObject.set(x, "resourceArn", js.undefined)
   }
 }

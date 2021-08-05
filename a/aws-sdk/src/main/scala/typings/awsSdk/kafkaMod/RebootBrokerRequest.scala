@@ -22,22 +22,17 @@ trait RebootBrokerRequest extends StObject {
 }
 object RebootBrokerRequest {
   
-  @scala.inline
-  def apply(BrokerIds: listOfString, ClusterArn: string): RebootBrokerRequest = {
+  inline def apply(BrokerIds: listOfString, ClusterArn: string): RebootBrokerRequest = {
     val __obj = js.Dynamic.literal(BrokerIds = BrokerIds.asInstanceOf[js.Any], ClusterArn = ClusterArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[RebootBrokerRequest]
   }
   
-  @scala.inline
-  implicit class RebootBrokerRequestMutableBuilder[Self <: RebootBrokerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RebootBrokerRequest](x: Self) {
     
-    @scala.inline
-    def setBrokerIds(value: listOfString): Self = StObject.set(x, "BrokerIds", value.asInstanceOf[js.Any])
+    inline def setBrokerIds(value: listOfString): Self = StObject.set(x, "BrokerIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrokerIdsVarargs(value: string*): Self = StObject.set(x, "BrokerIds", js.Array(value :_*))
+    inline def setBrokerIdsVarargs(value: string*): Self = StObject.set(x, "BrokerIds", js.Array(value :_*))
     
-    @scala.inline
-    def setClusterArn(value: string): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
+    inline def setClusterArn(value: string): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
   }
 }

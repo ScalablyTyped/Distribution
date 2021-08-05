@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.DocEventObject")
 @js.native
-class DocEventObject protected ()
+/* private */ class DocEventObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.DocEventObject {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("InfoPath.DocEventObject_typekey")
   var InfoPathDotDocEventObject_typekey: typings.activexInfopath.InfoPath.DocEventObject = js.native
   

@@ -33,37 +33,27 @@ trait SchemaEmbeddedObjectBorderSuggestionState extends StObject {
 }
 object SchemaEmbeddedObjectBorderSuggestionState {
   
-  @scala.inline
-  def apply(): SchemaEmbeddedObjectBorderSuggestionState = {
+  inline def apply(): SchemaEmbeddedObjectBorderSuggestionState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEmbeddedObjectBorderSuggestionState]
   }
   
-  @scala.inline
-  implicit class SchemaEmbeddedObjectBorderSuggestionStateMutableBuilder[Self <: SchemaEmbeddedObjectBorderSuggestionState] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaEmbeddedObjectBorderSuggestionState](x: Self) {
     
-    @scala.inline
-    def setColorSuggested(value: Boolean): Self = StObject.set(x, "colorSuggested", value.asInstanceOf[js.Any])
+    inline def setColorSuggested(value: Boolean): Self = StObject.set(x, "colorSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorSuggestedUndefined: Self = StObject.set(x, "colorSuggested", js.undefined)
+    inline def setColorSuggestedUndefined: Self = StObject.set(x, "colorSuggested", js.undefined)
     
-    @scala.inline
-    def setDashStyleSuggested(value: Boolean): Self = StObject.set(x, "dashStyleSuggested", value.asInstanceOf[js.Any])
+    inline def setDashStyleSuggested(value: Boolean): Self = StObject.set(x, "dashStyleSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashStyleSuggestedUndefined: Self = StObject.set(x, "dashStyleSuggested", js.undefined)
+    inline def setDashStyleSuggestedUndefined: Self = StObject.set(x, "dashStyleSuggested", js.undefined)
     
-    @scala.inline
-    def setPropertyStateSuggested(value: Boolean): Self = StObject.set(x, "propertyStateSuggested", value.asInstanceOf[js.Any])
+    inline def setPropertyStateSuggested(value: Boolean): Self = StObject.set(x, "propertyStateSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyStateSuggestedUndefined: Self = StObject.set(x, "propertyStateSuggested", js.undefined)
+    inline def setPropertyStateSuggestedUndefined: Self = StObject.set(x, "propertyStateSuggested", js.undefined)
     
-    @scala.inline
-    def setWidthSuggested(value: Boolean): Self = StObject.set(x, "widthSuggested", value.asInstanceOf[js.Any])
+    inline def setWidthSuggested(value: Boolean): Self = StObject.set(x, "widthSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthSuggestedUndefined: Self = StObject.set(x, "widthSuggested", js.undefined)
+    inline def setWidthSuggestedUndefined: Self = StObject.set(x, "widthSuggested", js.undefined)
   }
 }

@@ -22,8 +22,7 @@ trait DataServiceAdapter extends StObject {
 }
 object DataServiceAdapter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     JsonResultsAdapter: JsonResultsAdapter,
     checkForRecomposition: InterfaceName => Unit,
     executeQuery: typings.breeze.anon.DataService => js.Promise[js.Any],
@@ -35,25 +34,18 @@ object DataServiceAdapter {
     __obj.asInstanceOf[DataServiceAdapter]
   }
   
-  @scala.inline
-  implicit class DataServiceAdapterMutableBuilder[Self <: DataServiceAdapter] (val x: Self) extends AnyVal {
+  extension [Self <: DataServiceAdapter](x: Self) {
     
-    @scala.inline
-    def setCheckForRecomposition(value: InterfaceName => Unit): Self = StObject.set(x, "checkForRecomposition", js.Any.fromFunction1(value))
+    inline def setCheckForRecomposition(value: InterfaceName => Unit): Self = StObject.set(x, "checkForRecomposition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExecuteQuery(value: typings.breeze.anon.DataService => js.Promise[js.Any]): Self = StObject.set(x, "executeQuery", js.Any.fromFunction1(value))
+    inline def setExecuteQuery(value: typings.breeze.anon.DataService => js.Promise[js.Any]): Self = StObject.set(x, "executeQuery", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFetchMetadata(value: (MetadataStore, DataService) => js.Promise[js.Any]): Self = StObject.set(x, "fetchMetadata", js.Any.fromFunction2(value))
+    inline def setFetchMetadata(value: (MetadataStore, DataService) => js.Promise[js.Any]): Self = StObject.set(x, "fetchMetadata", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInitialize(value: () => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction0(value))
+    inline def setInitialize(value: () => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setJsonResultsAdapter(value: JsonResultsAdapter): Self = StObject.set(x, "JsonResultsAdapter", value.asInstanceOf[js.Any])
+    inline def setJsonResultsAdapter(value: JsonResultsAdapter): Self = StObject.set(x, "JsonResultsAdapter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveChanges(value: (ResourceName, js.Object) => js.Promise[SaveResult]): Self = StObject.set(x, "saveChanges", js.Any.fromFunction2(value))
+    inline def setSaveChanges(value: (ResourceName, js.Object) => js.Promise[SaveResult]): Self = StObject.set(x, "saveChanges", js.Any.fromFunction2(value))
   }
 }

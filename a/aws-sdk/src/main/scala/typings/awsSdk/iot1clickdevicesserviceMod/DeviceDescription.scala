@@ -45,55 +45,39 @@ trait DeviceDescription extends StObject {
 }
 object DeviceDescription {
   
-  @scala.inline
-  def apply(): DeviceDescription = {
+  inline def apply(): DeviceDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceDescription]
   }
   
-  @scala.inline
-  implicit class DeviceDescriptionMutableBuilder[Self <: DeviceDescription] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceDescription](x: Self) {
     
-    @scala.inline
-    def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setAttributes(value: DeviceAttributes): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: DeviceAttributes): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
-    @scala.inline
-    def setDeviceId(value: string): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: string): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceIdUndefined: Self = StObject.set(x, "DeviceId", js.undefined)
+    inline def setDeviceIdUndefined: Self = StObject.set(x, "DeviceId", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
     
-    @scala.inline
-    def setRemainingLife(value: doubleMin0Max100): Self = StObject.set(x, "RemainingLife", value.asInstanceOf[js.Any])
+    inline def setRemainingLife(value: doubleMin0Max100): Self = StObject.set(x, "RemainingLife", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemainingLifeUndefined: Self = StObject.set(x, "RemainingLife", js.undefined)
+    inline def setRemainingLifeUndefined: Self = StObject.set(x, "RemainingLife", js.undefined)
     
-    @scala.inline
-    def setTags(value: mapOfString): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: mapOfString): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setType(value: string): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: string): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

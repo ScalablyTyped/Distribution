@@ -16,8 +16,7 @@ trait ILocaleNumberFormatDescriptor extends StObject {
 }
 object ILocaleNumberFormatDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CURRENCY_SYM: String,
     DECIMAL_SEP: String,
     GROUP_SEP: String,
@@ -27,22 +26,16 @@ object ILocaleNumberFormatDescriptor {
     __obj.asInstanceOf[ILocaleNumberFormatDescriptor]
   }
   
-  @scala.inline
-  implicit class ILocaleNumberFormatDescriptorMutableBuilder[Self <: ILocaleNumberFormatDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: ILocaleNumberFormatDescriptor](x: Self) {
     
-    @scala.inline
-    def setCURRENCY_SYM(value: String): Self = StObject.set(x, "CURRENCY_SYM", value.asInstanceOf[js.Any])
+    inline def setCURRENCY_SYM(value: String): Self = StObject.set(x, "CURRENCY_SYM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDECIMAL_SEP(value: String): Self = StObject.set(x, "DECIMAL_SEP", value.asInstanceOf[js.Any])
+    inline def setDECIMAL_SEP(value: String): Self = StObject.set(x, "DECIMAL_SEP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGROUP_SEP(value: String): Self = StObject.set(x, "GROUP_SEP", value.asInstanceOf[js.Any])
+    inline def setGROUP_SEP(value: String): Self = StObject.set(x, "GROUP_SEP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPATTERNS(value: js.Array[ILocaleNumberPatternDescriptor]): Self = StObject.set(x, "PATTERNS", value.asInstanceOf[js.Any])
+    inline def setPATTERNS(value: js.Array[ILocaleNumberPatternDescriptor]): Self = StObject.set(x, "PATTERNS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPATTERNSVarargs(value: ILocaleNumberPatternDescriptor*): Self = StObject.set(x, "PATTERNS", js.Array(value :_*))
+    inline def setPATTERNSVarargs(value: ILocaleNumberPatternDescriptor*): Self = StObject.set(x, "PATTERNS", js.Array(value :_*))
   }
 }

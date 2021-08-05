@@ -23,55 +23,39 @@ trait KmlLayerOptions extends StObject {
 }
 object KmlLayerOptions {
   
-  @scala.inline
-  def apply(): KmlLayerOptions = {
+  inline def apply(): KmlLayerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KmlLayerOptions]
   }
   
-  @scala.inline
-  implicit class KmlLayerOptionsMutableBuilder[Self <: KmlLayerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: KmlLayerOptions](x: Self) {
     
-    @scala.inline
-    def setClickable(value: Boolean): Self = StObject.set(x, "clickable", value.asInstanceOf[js.Any])
+    inline def setClickable(value: Boolean): Self = StObject.set(x, "clickable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClickableUndefined: Self = StObject.set(x, "clickable", js.undefined)
+    inline def setClickableUndefined: Self = StObject.set(x, "clickable", js.undefined)
     
-    @scala.inline
-    def setMap(value: Map[Element]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: Map[Element]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+    inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
-    @scala.inline
-    def setPreserveViewport(value: Boolean): Self = StObject.set(x, "preserveViewport", value.asInstanceOf[js.Any])
+    inline def setPreserveViewport(value: Boolean): Self = StObject.set(x, "preserveViewport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveViewportUndefined: Self = StObject.set(x, "preserveViewport", js.undefined)
+    inline def setPreserveViewportUndefined: Self = StObject.set(x, "preserveViewport", js.undefined)
     
-    @scala.inline
-    def setScreenOverlays(value: Boolean): Self = StObject.set(x, "screenOverlays", value.asInstanceOf[js.Any])
+    inline def setScreenOverlays(value: Boolean): Self = StObject.set(x, "screenOverlays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenOverlaysUndefined: Self = StObject.set(x, "screenOverlays", js.undefined)
+    inline def setScreenOverlaysUndefined: Self = StObject.set(x, "screenOverlays", js.undefined)
     
-    @scala.inline
-    def setSuppressInfoWindows(value: Boolean): Self = StObject.set(x, "suppressInfoWindows", value.asInstanceOf[js.Any])
+    inline def setSuppressInfoWindows(value: Boolean): Self = StObject.set(x, "suppressInfoWindows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuppressInfoWindowsUndefined: Self = StObject.set(x, "suppressInfoWindows", js.undefined)
+    inline def setSuppressInfoWindowsUndefined: Self = StObject.set(x, "suppressInfoWindows", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    @scala.inline
-    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

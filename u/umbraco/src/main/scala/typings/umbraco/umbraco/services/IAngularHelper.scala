@@ -81,8 +81,7 @@ trait IAngularHelper extends StObject {
 }
 object IAngularHelper {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getCurrentForm: IScope => js.Any,
     getNullForm: String => IFormController,
     getRequiredCurrentForm: IScope => js.Object,
@@ -93,22 +92,16 @@ object IAngularHelper {
     __obj.asInstanceOf[IAngularHelper]
   }
   
-  @scala.inline
-  implicit class IAngularHelperMutableBuilder[Self <: IAngularHelper] (val x: Self) extends AnyVal {
+  extension [Self <: IAngularHelper](x: Self) {
     
-    @scala.inline
-    def setGetCurrentForm(value: IScope => js.Any): Self = StObject.set(x, "getCurrentForm", js.Any.fromFunction1(value))
+    inline def setGetCurrentForm(value: IScope => js.Any): Self = StObject.set(x, "getCurrentForm", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetNullForm(value: String => IFormController): Self = StObject.set(x, "getNullForm", js.Any.fromFunction1(value))
+    inline def setGetNullForm(value: String => IFormController): Self = StObject.set(x, "getNullForm", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetRequiredCurrentForm(value: IScope => js.Object): Self = StObject.set(x, "getRequiredCurrentForm", js.Any.fromFunction1(value))
+    inline def setGetRequiredCurrentForm(value: IScope => js.Object): Self = StObject.set(x, "getRequiredCurrentForm", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRejectedPromise(value: js.Object => Unit): Self = StObject.set(x, "rejectedPromise", js.Any.fromFunction1(value))
+    inline def setRejectedPromise(value: js.Object => Unit): Self = StObject.set(x, "rejectedPromise", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSafeApply(value: (IScope, js.Function) => Unit): Self = StObject.set(x, "safeApply", js.Any.fromFunction2(value))
+    inline def setSafeApply(value: (IScope, js.Function) => Unit): Self = StObject.set(x, "safeApply", js.Any.fromFunction2(value))
   }
 }

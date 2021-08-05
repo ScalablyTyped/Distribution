@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SortIndicatorType extends StObject
 object SortIndicatorType {
   
-  @scala.inline
-  def A: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.A = "A".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.A]
+  inline def A: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.A = "A".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.A]
   
-  @scala.inline
-  def D: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.D = "D".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.D]
+  inline def D: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.D = "D".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.D]
   
-  @scala.inline
-  def N: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.N = "N".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.N]
+  inline def N: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.N = "N".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.N]
 }

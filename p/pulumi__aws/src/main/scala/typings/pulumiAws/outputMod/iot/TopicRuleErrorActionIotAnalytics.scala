@@ -18,19 +18,15 @@ trait TopicRuleErrorActionIotAnalytics extends StObject {
 }
 object TopicRuleErrorActionIotAnalytics {
   
-  @scala.inline
-  def apply(channelName: String, roleArn: String): TopicRuleErrorActionIotAnalytics = {
+  inline def apply(channelName: String, roleArn: String): TopicRuleErrorActionIotAnalytics = {
     val __obj = js.Dynamic.literal(channelName = channelName.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopicRuleErrorActionIotAnalytics]
   }
   
-  @scala.inline
-  implicit class TopicRuleErrorActionIotAnalyticsMutableBuilder[Self <: TopicRuleErrorActionIotAnalytics] (val x: Self) extends AnyVal {
+  extension [Self <: TopicRuleErrorActionIotAnalytics](x: Self) {
     
-    @scala.inline
-    def setChannelName(value: String): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
+    inline def setChannelName(value: String): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
   }
 }

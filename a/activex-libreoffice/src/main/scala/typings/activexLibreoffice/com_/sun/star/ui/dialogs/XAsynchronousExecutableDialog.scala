@@ -25,8 +25,7 @@ trait XAsynchronousExecutableDialog
 }
 object XAsynchronousExecutableDialog {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -37,13 +36,10 @@ object XAsynchronousExecutableDialog {
     __obj.asInstanceOf[XAsynchronousExecutableDialog]
   }
   
-  @scala.inline
-  implicit class XAsynchronousExecutableDialogMutableBuilder[Self <: XAsynchronousExecutableDialog] (val x: Self) extends AnyVal {
+  extension [Self <: XAsynchronousExecutableDialog](x: Self) {
     
-    @scala.inline
-    def setSetDialogTitle(value: String => Unit): Self = StObject.set(x, "setDialogTitle", js.Any.fromFunction1(value))
+    inline def setSetDialogTitle(value: String => Unit): Self = StObject.set(x, "setDialogTitle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStartExecuteModal(value: XDialogClosedListener => Unit): Self = StObject.set(x, "startExecuteModal", js.Any.fromFunction1(value))
+    inline def setStartExecuteModal(value: XDialogClosedListener => Unit): Self = StObject.set(x, "startExecuteModal", js.Any.fromFunction1(value))
   }
 }

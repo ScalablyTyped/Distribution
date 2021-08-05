@@ -16,19 +16,15 @@ trait SchemaAncestor extends StObject {
 }
 object SchemaAncestor {
   
-  @scala.inline
-  def apply(): SchemaAncestor = {
+  inline def apply(): SchemaAncestor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAncestor]
   }
   
-  @scala.inline
-  implicit class SchemaAncestorMutableBuilder[Self <: SchemaAncestor] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAncestor](x: Self) {
     
-    @scala.inline
-    def setResourceId(value: SchemaResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: SchemaResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
+    inline def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
   }
 }

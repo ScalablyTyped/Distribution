@@ -43,61 +43,43 @@ trait AuditAdvertiserResponse extends StObject {
 }
 object AuditAdvertiserResponse {
   
-  @scala.inline
-  def apply(): AuditAdvertiserResponse = {
+  inline def apply(): AuditAdvertiserResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuditAdvertiserResponse]
   }
   
-  @scala.inline
-  implicit class AuditAdvertiserResponseMutableBuilder[Self <: AuditAdvertiserResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AuditAdvertiserResponse](x: Self) {
     
-    @scala.inline
-    def setAdGroupCriteriaCount(value: String): Self = StObject.set(x, "adGroupCriteriaCount", value.asInstanceOf[js.Any])
+    inline def setAdGroupCriteriaCount(value: String): Self = StObject.set(x, "adGroupCriteriaCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdGroupCriteriaCountUndefined: Self = StObject.set(x, "adGroupCriteriaCount", js.undefined)
+    inline def setAdGroupCriteriaCountUndefined: Self = StObject.set(x, "adGroupCriteriaCount", js.undefined)
     
-    @scala.inline
-    def setCampaignCriteriaCount(value: String): Self = StObject.set(x, "campaignCriteriaCount", value.asInstanceOf[js.Any])
+    inline def setCampaignCriteriaCount(value: String): Self = StObject.set(x, "campaignCriteriaCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCampaignCriteriaCountUndefined: Self = StObject.set(x, "campaignCriteriaCount", js.undefined)
+    inline def setCampaignCriteriaCountUndefined: Self = StObject.set(x, "campaignCriteriaCount", js.undefined)
     
-    @scala.inline
-    def setChannelsCount(value: String): Self = StObject.set(x, "channelsCount", value.asInstanceOf[js.Any])
+    inline def setChannelsCount(value: String): Self = StObject.set(x, "channelsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelsCountUndefined: Self = StObject.set(x, "channelsCount", js.undefined)
+    inline def setChannelsCountUndefined: Self = StObject.set(x, "channelsCount", js.undefined)
     
-    @scala.inline
-    def setNegativeKeywordListsCount(value: String): Self = StObject.set(x, "negativeKeywordListsCount", value.asInstanceOf[js.Any])
+    inline def setNegativeKeywordListsCount(value: String): Self = StObject.set(x, "negativeKeywordListsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegativeKeywordListsCountUndefined: Self = StObject.set(x, "negativeKeywordListsCount", js.undefined)
+    inline def setNegativeKeywordListsCountUndefined: Self = StObject.set(x, "negativeKeywordListsCount", js.undefined)
     
-    @scala.inline
-    def setNegativelyTargetedChannelsCount(value: String): Self = StObject.set(x, "negativelyTargetedChannelsCount", value.asInstanceOf[js.Any])
+    inline def setNegativelyTargetedChannelsCount(value: String): Self = StObject.set(x, "negativelyTargetedChannelsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegativelyTargetedChannelsCountUndefined: Self = StObject.set(x, "negativelyTargetedChannelsCount", js.undefined)
+    inline def setNegativelyTargetedChannelsCountUndefined: Self = StObject.set(x, "negativelyTargetedChannelsCount", js.undefined)
     
-    @scala.inline
-    def setUsedCampaignsCount(value: String): Self = StObject.set(x, "usedCampaignsCount", value.asInstanceOf[js.Any])
+    inline def setUsedCampaignsCount(value: String): Self = StObject.set(x, "usedCampaignsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsedCampaignsCountUndefined: Self = StObject.set(x, "usedCampaignsCount", js.undefined)
+    inline def setUsedCampaignsCountUndefined: Self = StObject.set(x, "usedCampaignsCount", js.undefined)
     
-    @scala.inline
-    def setUsedInsertionOrdersCount(value: String): Self = StObject.set(x, "usedInsertionOrdersCount", value.asInstanceOf[js.Any])
+    inline def setUsedInsertionOrdersCount(value: String): Self = StObject.set(x, "usedInsertionOrdersCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsedInsertionOrdersCountUndefined: Self = StObject.set(x, "usedInsertionOrdersCount", js.undefined)
+    inline def setUsedInsertionOrdersCountUndefined: Self = StObject.set(x, "usedInsertionOrdersCount", js.undefined)
     
-    @scala.inline
-    def setUsedLineItemsCount(value: String): Self = StObject.set(x, "usedLineItemsCount", value.asInstanceOf[js.Any])
+    inline def setUsedLineItemsCount(value: String): Self = StObject.set(x, "usedLineItemsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsedLineItemsCountUndefined: Self = StObject.set(x, "usedLineItemsCount", js.undefined)
+    inline def setUsedLineItemsCountUndefined: Self = StObject.set(x, "usedLineItemsCount", js.undefined)
   }
 }

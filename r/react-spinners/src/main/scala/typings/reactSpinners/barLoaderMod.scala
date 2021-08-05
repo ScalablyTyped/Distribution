@@ -30,8 +30,7 @@ object barLoaderMod {
     @JSImport("react-spinners/BarLoader", "default.defaultProps")
     @js.native
     def defaultProps: LoaderHeightWidthProps = js.native
-    @scala.inline
-    def defaultProps_=(x: LoaderHeightWidthProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: LoaderHeightWidthProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-spinners/BarLoader", "Loader")
@@ -59,7 +58,6 @@ object barLoaderMod {
     @JSImport("react-spinners/BarLoader", "Loader.defaultProps")
     @js.native
     def defaultProps: LoaderHeightWidthProps = js.native
-    @scala.inline
-    def defaultProps_=(x: LoaderHeightWidthProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: LoaderHeightWidthProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

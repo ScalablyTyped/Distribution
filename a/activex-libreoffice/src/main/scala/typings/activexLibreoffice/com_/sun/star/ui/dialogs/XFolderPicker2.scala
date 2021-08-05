@@ -16,8 +16,7 @@ trait XFolderPicker2
      with XCancellable
 object XFolderPicker2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Directory: String,
     DisplayDirectory: String,
     acquire: () => Unit,

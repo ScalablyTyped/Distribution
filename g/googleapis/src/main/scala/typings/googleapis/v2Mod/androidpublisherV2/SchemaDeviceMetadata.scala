@@ -64,79 +64,55 @@ trait SchemaDeviceMetadata extends StObject {
 }
 object SchemaDeviceMetadata {
   
-  @scala.inline
-  def apply(): SchemaDeviceMetadata = {
+  inline def apply(): SchemaDeviceMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDeviceMetadata]
   }
   
-  @scala.inline
-  implicit class SchemaDeviceMetadataMutableBuilder[Self <: SchemaDeviceMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDeviceMetadata](x: Self) {
     
-    @scala.inline
-    def setCpuMake(value: String): Self = StObject.set(x, "cpuMake", value.asInstanceOf[js.Any])
+    inline def setCpuMake(value: String): Self = StObject.set(x, "cpuMake", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpuMakeUndefined: Self = StObject.set(x, "cpuMake", js.undefined)
+    inline def setCpuMakeUndefined: Self = StObject.set(x, "cpuMake", js.undefined)
     
-    @scala.inline
-    def setCpuModel(value: String): Self = StObject.set(x, "cpuModel", value.asInstanceOf[js.Any])
+    inline def setCpuModel(value: String): Self = StObject.set(x, "cpuModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpuModelUndefined: Self = StObject.set(x, "cpuModel", js.undefined)
+    inline def setCpuModelUndefined: Self = StObject.set(x, "cpuModel", js.undefined)
     
-    @scala.inline
-    def setDeviceClass(value: String): Self = StObject.set(x, "deviceClass", value.asInstanceOf[js.Any])
+    inline def setDeviceClass(value: String): Self = StObject.set(x, "deviceClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceClassUndefined: Self = StObject.set(x, "deviceClass", js.undefined)
+    inline def setDeviceClassUndefined: Self = StObject.set(x, "deviceClass", js.undefined)
     
-    @scala.inline
-    def setGlEsVersion(value: Double): Self = StObject.set(x, "glEsVersion", value.asInstanceOf[js.Any])
+    inline def setGlEsVersion(value: Double): Self = StObject.set(x, "glEsVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlEsVersionUndefined: Self = StObject.set(x, "glEsVersion", js.undefined)
+    inline def setGlEsVersionUndefined: Self = StObject.set(x, "glEsVersion", js.undefined)
     
-    @scala.inline
-    def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
+    inline def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManufacturerUndefined: Self = StObject.set(x, "manufacturer", js.undefined)
+    inline def setManufacturerUndefined: Self = StObject.set(x, "manufacturer", js.undefined)
     
-    @scala.inline
-    def setNativePlatform(value: String): Self = StObject.set(x, "nativePlatform", value.asInstanceOf[js.Any])
+    inline def setNativePlatform(value: String): Self = StObject.set(x, "nativePlatform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNativePlatformUndefined: Self = StObject.set(x, "nativePlatform", js.undefined)
+    inline def setNativePlatformUndefined: Self = StObject.set(x, "nativePlatform", js.undefined)
     
-    @scala.inline
-    def setProductName(value: String): Self = StObject.set(x, "productName", value.asInstanceOf[js.Any])
+    inline def setProductName(value: String): Self = StObject.set(x, "productName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductNameUndefined: Self = StObject.set(x, "productName", js.undefined)
+    inline def setProductNameUndefined: Self = StObject.set(x, "productName", js.undefined)
     
-    @scala.inline
-    def setRamMb(value: Double): Self = StObject.set(x, "ramMb", value.asInstanceOf[js.Any])
+    inline def setRamMb(value: Double): Self = StObject.set(x, "ramMb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRamMbUndefined: Self = StObject.set(x, "ramMb", js.undefined)
+    inline def setRamMbUndefined: Self = StObject.set(x, "ramMb", js.undefined)
     
-    @scala.inline
-    def setScreenDensityDpi(value: Double): Self = StObject.set(x, "screenDensityDpi", value.asInstanceOf[js.Any])
+    inline def setScreenDensityDpi(value: Double): Self = StObject.set(x, "screenDensityDpi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenDensityDpiUndefined: Self = StObject.set(x, "screenDensityDpi", js.undefined)
+    inline def setScreenDensityDpiUndefined: Self = StObject.set(x, "screenDensityDpi", js.undefined)
     
-    @scala.inline
-    def setScreenHeightPx(value: Double): Self = StObject.set(x, "screenHeightPx", value.asInstanceOf[js.Any])
+    inline def setScreenHeightPx(value: Double): Self = StObject.set(x, "screenHeightPx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenHeightPxUndefined: Self = StObject.set(x, "screenHeightPx", js.undefined)
+    inline def setScreenHeightPxUndefined: Self = StObject.set(x, "screenHeightPx", js.undefined)
     
-    @scala.inline
-    def setScreenWidthPx(value: Double): Self = StObject.set(x, "screenWidthPx", value.asInstanceOf[js.Any])
+    inline def setScreenWidthPx(value: Double): Self = StObject.set(x, "screenWidthPx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenWidthPxUndefined: Self = StObject.set(x, "screenWidthPx", js.undefined)
+    inline def setScreenWidthPxUndefined: Self = StObject.set(x, "screenWidthPx", js.undefined)
   }
 }

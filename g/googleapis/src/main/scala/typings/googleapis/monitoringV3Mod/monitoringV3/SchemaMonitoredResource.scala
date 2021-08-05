@@ -39,25 +39,19 @@ trait SchemaMonitoredResource extends StObject {
 }
 object SchemaMonitoredResource {
   
-  @scala.inline
-  def apply(): SchemaMonitoredResource = {
+  inline def apply(): SchemaMonitoredResource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMonitoredResource]
   }
   
-  @scala.inline
-  implicit class SchemaMonitoredResourceMutableBuilder[Self <: SchemaMonitoredResource] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMonitoredResource](x: Self) {
     
-    @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

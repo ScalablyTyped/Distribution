@@ -28,8 +28,7 @@ trait AllJoynCredentialsRequestedEventArgs extends StObject {
 }
 object AllJoynCredentialsRequestedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attemptCount: Double,
     credentials: AllJoynCredentials,
     getDeferral: () => Deferral,
@@ -40,22 +39,16 @@ object AllJoynCredentialsRequestedEventArgs {
     __obj.asInstanceOf[AllJoynCredentialsRequestedEventArgs]
   }
   
-  @scala.inline
-  implicit class AllJoynCredentialsRequestedEventArgsMutableBuilder[Self <: AllJoynCredentialsRequestedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: AllJoynCredentialsRequestedEventArgs](x: Self) {
     
-    @scala.inline
-    def setAttemptCount(value: Double): Self = StObject.set(x, "attemptCount", value.asInstanceOf[js.Any])
+    inline def setAttemptCount(value: Double): Self = StObject.set(x, "attemptCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentials(value: AllJoynCredentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+    inline def setCredentials(value: AllJoynCredentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDeferral(value: () => Deferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
+    inline def setGetDeferral(value: () => Deferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPeerUniqueName(value: String): Self = StObject.set(x, "peerUniqueName", value.asInstanceOf[js.Any])
+    inline def setPeerUniqueName(value: String): Self = StObject.set(x, "peerUniqueName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestedUserName(value: String): Self = StObject.set(x, "requestedUserName", value.asInstanceOf[js.Any])
+    inline def setRequestedUserName(value: String): Self = StObject.set(x, "requestedUserName", value.asInstanceOf[js.Any])
   }
 }

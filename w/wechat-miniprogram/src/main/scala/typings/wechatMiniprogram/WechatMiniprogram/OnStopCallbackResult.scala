@@ -17,22 +17,17 @@ trait OnStopCallbackResult extends StObject {
 }
 object OnStopCallbackResult {
   
-  @scala.inline
-  def apply(duration: Double, fileSize: Double, tempFilePath: String): OnStopCallbackResult = {
+  inline def apply(duration: Double, fileSize: Double, tempFilePath: String): OnStopCallbackResult = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], fileSize = fileSize.asInstanceOf[js.Any], tempFilePath = tempFilePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnStopCallbackResult]
   }
   
-  @scala.inline
-  implicit class OnStopCallbackResultMutableBuilder[Self <: OnStopCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: OnStopCallbackResult](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
+    inline def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTempFilePath(value: String): Self = StObject.set(x, "tempFilePath", value.asInstanceOf[js.Any])
+    inline def setTempFilePath(value: String): Self = StObject.set(x, "tempFilePath", value.asInstanceOf[js.Any])
   }
 }

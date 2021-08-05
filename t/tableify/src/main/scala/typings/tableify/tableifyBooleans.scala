@@ -8,6 +8,5 @@ object tableifyBooleans {
   
   @js.native
   sealed trait `false` extends StObject
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
+  inline def `false`: `false` = false.asInstanceOf[`false`]
 }

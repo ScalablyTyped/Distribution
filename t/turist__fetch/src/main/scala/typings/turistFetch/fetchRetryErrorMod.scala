@@ -43,23 +43,18 @@ object fetchRetryErrorMod {
   }
   object FetchRetryError {
     
-    @scala.inline
-    def apply(message: String, name: String, res: Response, statusCode: Double, url: String): FetchRetryError = {
+    inline def apply(message: String, name: String, res: Response, statusCode: Double, url: String): FetchRetryError = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[FetchRetryError]
     }
     
-    @scala.inline
-    implicit class FetchRetryErrorMutableBuilder[Self <: FetchRetryError] (val x: Self) extends AnyVal {
+    extension [Self <: FetchRetryError](x: Self) {
       
-      @scala.inline
-      def setRes(value: Response): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+      inline def setRes(value: Response): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

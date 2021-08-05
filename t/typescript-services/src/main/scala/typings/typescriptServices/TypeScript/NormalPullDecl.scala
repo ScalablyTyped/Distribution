@@ -10,14 +10,13 @@ trait NormalPullDecl
   
   var _rootDecl: RootPullDecl
   
-  var parentDecl: js.Any
+  /* private */ var parentDecl: js.Any
   
-  var parentPath: js.Any
+  /* private */ var parentPath: js.Any
 }
 object NormalPullDecl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _getEnclosingDeclFromParentDecl: () => PullDecl,
     _rootDecl: RootPullDecl,
     addChildDecl: PullDecl => Unit,
@@ -71,16 +70,12 @@ object NormalPullDecl {
     __obj.asInstanceOf[NormalPullDecl]
   }
   
-  @scala.inline
-  implicit class NormalPullDeclMutableBuilder[Self <: NormalPullDecl] (val x: Self) extends AnyVal {
+  extension [Self <: NormalPullDecl](x: Self) {
     
-    @scala.inline
-    def setParentDecl(value: js.Any): Self = StObject.set(x, "parentDecl", value.asInstanceOf[js.Any])
+    inline def setParentDecl(value: js.Any): Self = StObject.set(x, "parentDecl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentPath(value: js.Any): Self = StObject.set(x, "parentPath", value.asInstanceOf[js.Any])
+    inline def setParentPath(value: js.Any): Self = StObject.set(x, "parentPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_rootDecl(value: RootPullDecl): Self = StObject.set(x, "_rootDecl", value.asInstanceOf[js.Any])
+    inline def set_rootDecl(value: RootPullDecl): Self = StObject.set(x, "_rootDecl", value.asInstanceOf[js.Any])
   }
 }

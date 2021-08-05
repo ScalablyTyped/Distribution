@@ -38,8 +38,7 @@ trait OrganizationConformancePackDetailedStatus extends StObject {
 }
 object OrganizationConformancePackDetailedStatus {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccountId: AccountId,
     ConformancePackName: StringWithCharLimit256,
     Status: OrganizationResourceDetailedStatus
@@ -48,34 +47,24 @@ object OrganizationConformancePackDetailedStatus {
     __obj.asInstanceOf[OrganizationConformancePackDetailedStatus]
   }
   
-  @scala.inline
-  implicit class OrganizationConformancePackDetailedStatusMutableBuilder[Self <: OrganizationConformancePackDetailedStatus] (val x: Self) extends AnyVal {
+  extension [Self <: OrganizationConformancePackDetailedStatus](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConformancePackName(value: StringWithCharLimit256): Self = StObject.set(x, "ConformancePackName", value.asInstanceOf[js.Any])
+    inline def setConformancePackName(value: StringWithCharLimit256): Self = StObject.set(x, "ConformancePackName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCode(value: String): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: String): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
-    @scala.inline
-    def setLastUpdateTime(value: Date): Self = StObject.set(x, "LastUpdateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdateTime(value: Date): Self = StObject.set(x, "LastUpdateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdateTimeUndefined: Self = StObject.set(x, "LastUpdateTime", js.undefined)
+    inline def setLastUpdateTimeUndefined: Self = StObject.set(x, "LastUpdateTime", js.undefined)
     
-    @scala.inline
-    def setStatus(value: OrganizationResourceDetailedStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: OrganizationResourceDetailedStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

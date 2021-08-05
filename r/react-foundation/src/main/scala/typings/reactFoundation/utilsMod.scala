@@ -57,8 +57,7 @@ object utilsMod {
   }
   object FlexboxPropTypes {
     
-    @scala.inline
-    def apply(): FlexboxPropTypes = {
+    inline def apply(): FlexboxPropTypes = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FlexboxPropTypes]
     }
@@ -70,32 +69,27 @@ object utilsMod {
     @JSImport("react-foundation/utils", "FlexboxPropTypes.alignX")
     @js.native
     def alignX: Requireable[js.Any] = js.native
-    @scala.inline
-    def alignX_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alignX")(x.asInstanceOf[js.Any])
+    inline def alignX_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alignX")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation/utils", "FlexboxPropTypes.alignY")
     @js.native
     def alignY: Requireable[js.Any] = js.native
-    @scala.inline
-    def alignY_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alignY")(x.asInstanceOf[js.Any])
+    inline def alignY_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alignY")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation/utils", "FlexboxPropTypes.centerAlign")
     @js.native
     def centerAlign: Requireable[js.Any] = js.native
-    @scala.inline
-    def centerAlign_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("centerAlign")(x.asInstanceOf[js.Any])
+    inline def centerAlign_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("centerAlign")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation/utils", "FlexboxPropTypes.flexChild")
     @js.native
     def flexChild: Requireable[js.Any] = js.native
-    @scala.inline
-    def flexChild_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flexChild")(x.asInstanceOf[js.Any])
+    inline def flexChild_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flexChild")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation/utils", "FlexboxPropTypes.flexContainer")
     @js.native
     def flexContainer: Requireable[js.Any] = js.native
-    @scala.inline
-    def flexContainer_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flexContainer")(x.asInstanceOf[js.Any])
+    inline def flexContainer_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flexContainer")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation/utils", "FlexboxPropTypes.flexDirCol")
     @js.native
@@ -104,11 +98,9 @@ object utilsMod {
     @JSImport("react-foundation/utils", "FlexboxPropTypes.flexDirColRev")
     @js.native
     def flexDirColRev: Requireable[js.Any] = js.native
-    @scala.inline
-    def flexDirColRev_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flexDirColRev")(x.asInstanceOf[js.Any])
+    inline def flexDirColRev_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flexDirColRev")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def flexDirCol_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flexDirCol")(x.asInstanceOf[js.Any])
+    inline def flexDirCol_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flexDirCol")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation/utils", "FlexboxPropTypes.flexDirRow")
     @js.native
@@ -117,11 +109,9 @@ object utilsMod {
     @JSImport("react-foundation/utils", "FlexboxPropTypes.flexDirRowRev")
     @js.native
     def flexDirRowRev: Requireable[js.Any] = js.native
-    @scala.inline
-    def flexDirRowRev_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flexDirRowRev")(x.asInstanceOf[js.Any])
+    inline def flexDirRowRev_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flexDirRowRev")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def flexDirRow_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flexDirRow")(x.asInstanceOf[js.Any])
+    inline def flexDirRow_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flexDirRow")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation/utils", "FlexboxPropTypes.flexOrder")
     @js.native
@@ -130,128 +120,91 @@ object utilsMod {
     @JSImport("react-foundation/utils", "FlexboxPropTypes.flexOrderLarge")
     @js.native
     def flexOrderLarge: Requireable[js.Any] = js.native
-    @scala.inline
-    def flexOrderLarge_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flexOrderLarge")(x.asInstanceOf[js.Any])
+    inline def flexOrderLarge_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flexOrderLarge")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation/utils", "FlexboxPropTypes.flexOrderMedium")
     @js.native
     def flexOrderMedium: Requireable[js.Any] = js.native
-    @scala.inline
-    def flexOrderMedium_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flexOrderMedium")(x.asInstanceOf[js.Any])
+    inline def flexOrderMedium_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flexOrderMedium")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation/utils", "FlexboxPropTypes.flexOrderSmall")
     @js.native
     def flexOrderSmall: Requireable[js.Any] = js.native
-    @scala.inline
-    def flexOrderSmall_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flexOrderSmall")(x.asInstanceOf[js.Any])
+    inline def flexOrderSmall_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flexOrderSmall")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def flexOrder_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flexOrder")(x.asInstanceOf[js.Any])
+    inline def flexOrder_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flexOrder")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation/utils", "FlexboxPropTypes.selfAlignX")
     @js.native
     def selfAlignX: Requireable[js.Any] = js.native
-    @scala.inline
-    def selfAlignX_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selfAlignX")(x.asInstanceOf[js.Any])
+    inline def selfAlignX_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selfAlignX")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation/utils", "FlexboxPropTypes.selfAlignY")
     @js.native
     def selfAlignY: Requireable[js.Any] = js.native
-    @scala.inline
-    def selfAlignY_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selfAlignY")(x.asInstanceOf[js.Any])
+    inline def selfAlignY_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selfAlignY")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    implicit class FlexboxPropTypesMutableBuilder[Self <: FlexboxPropTypes] (val x: Self) extends AnyVal {
+    extension [Self <: FlexboxPropTypes](x: Self) {
       
-      @scala.inline
-      def setAlignX(value: HorizontalAlignments): Self = StObject.set(x, "alignX", value.asInstanceOf[js.Any])
+      inline def setAlignX(value: HorizontalAlignments): Self = StObject.set(x, "alignX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignXUndefined: Self = StObject.set(x, "alignX", js.undefined)
+      inline def setAlignXUndefined: Self = StObject.set(x, "alignX", js.undefined)
       
-      @scala.inline
-      def setAlignY(value: VerticalAlignments): Self = StObject.set(x, "alignY", value.asInstanceOf[js.Any])
+      inline def setAlignY(value: VerticalAlignments): Self = StObject.set(x, "alignY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignYUndefined: Self = StObject.set(x, "alignY", js.undefined)
+      inline def setAlignYUndefined: Self = StObject.set(x, "alignY", js.undefined)
       
-      @scala.inline
-      def setCenterAlign(value: Boolean): Self = StObject.set(x, "centerAlign", value.asInstanceOf[js.Any])
+      inline def setCenterAlign(value: Boolean): Self = StObject.set(x, "centerAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCenterAlignUndefined: Self = StObject.set(x, "centerAlign", js.undefined)
+      inline def setCenterAlignUndefined: Self = StObject.set(x, "centerAlign", js.undefined)
       
-      @scala.inline
-      def setFlexChild(value: SpaceControls): Self = StObject.set(x, "flexChild", value.asInstanceOf[js.Any])
+      inline def setFlexChild(value: SpaceControls): Self = StObject.set(x, "flexChild", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexChildUndefined: Self = StObject.set(x, "flexChild", js.undefined)
+      inline def setFlexChildUndefined: Self = StObject.set(x, "flexChild", js.undefined)
       
-      @scala.inline
-      def setFlexContainer(value: Boolean): Self = StObject.set(x, "flexContainer", value.asInstanceOf[js.Any])
+      inline def setFlexContainer(value: Boolean): Self = StObject.set(x, "flexContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexContainerUndefined: Self = StObject.set(x, "flexContainer", js.undefined)
+      inline def setFlexContainerUndefined: Self = StObject.set(x, "flexContainer", js.undefined)
       
-      @scala.inline
-      def setFlexDirCol(value: ExtendedBreakpoints): Self = StObject.set(x, "flexDirCol", value.asInstanceOf[js.Any])
+      inline def setFlexDirCol(value: ExtendedBreakpoints): Self = StObject.set(x, "flexDirCol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexDirColRev(value: ExtendedBreakpoints): Self = StObject.set(x, "flexDirColRev", value.asInstanceOf[js.Any])
+      inline def setFlexDirColRev(value: ExtendedBreakpoints): Self = StObject.set(x, "flexDirColRev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexDirColRevUndefined: Self = StObject.set(x, "flexDirColRev", js.undefined)
+      inline def setFlexDirColRevUndefined: Self = StObject.set(x, "flexDirColRev", js.undefined)
       
-      @scala.inline
-      def setFlexDirColUndefined: Self = StObject.set(x, "flexDirCol", js.undefined)
+      inline def setFlexDirColUndefined: Self = StObject.set(x, "flexDirCol", js.undefined)
       
-      @scala.inline
-      def setFlexDirRow(value: ExtendedBreakpoints): Self = StObject.set(x, "flexDirRow", value.asInstanceOf[js.Any])
+      inline def setFlexDirRow(value: ExtendedBreakpoints): Self = StObject.set(x, "flexDirRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexDirRowRev(value: ExtendedBreakpoints): Self = StObject.set(x, "flexDirRowRev", value.asInstanceOf[js.Any])
+      inline def setFlexDirRowRev(value: ExtendedBreakpoints): Self = StObject.set(x, "flexDirRowRev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexDirRowRevUndefined: Self = StObject.set(x, "flexDirRowRev", js.undefined)
+      inline def setFlexDirRowRevUndefined: Self = StObject.set(x, "flexDirRowRev", js.undefined)
       
-      @scala.inline
-      def setFlexDirRowUndefined: Self = StObject.set(x, "flexDirRow", js.undefined)
+      inline def setFlexDirRowUndefined: Self = StObject.set(x, "flexDirRow", js.undefined)
       
-      @scala.inline
-      def setFlexOrder(value: Double): Self = StObject.set(x, "flexOrder", value.asInstanceOf[js.Any])
+      inline def setFlexOrder(value: Double): Self = StObject.set(x, "flexOrder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexOrderLarge(value: Double): Self = StObject.set(x, "flexOrderLarge", value.asInstanceOf[js.Any])
+      inline def setFlexOrderLarge(value: Double): Self = StObject.set(x, "flexOrderLarge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexOrderLargeUndefined: Self = StObject.set(x, "flexOrderLarge", js.undefined)
+      inline def setFlexOrderLargeUndefined: Self = StObject.set(x, "flexOrderLarge", js.undefined)
       
-      @scala.inline
-      def setFlexOrderMedium(value: Double): Self = StObject.set(x, "flexOrderMedium", value.asInstanceOf[js.Any])
+      inline def setFlexOrderMedium(value: Double): Self = StObject.set(x, "flexOrderMedium", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexOrderMediumUndefined: Self = StObject.set(x, "flexOrderMedium", js.undefined)
+      inline def setFlexOrderMediumUndefined: Self = StObject.set(x, "flexOrderMedium", js.undefined)
       
-      @scala.inline
-      def setFlexOrderSmall(value: Double): Self = StObject.set(x, "flexOrderSmall", value.asInstanceOf[js.Any])
+      inline def setFlexOrderSmall(value: Double): Self = StObject.set(x, "flexOrderSmall", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexOrderSmallUndefined: Self = StObject.set(x, "flexOrderSmall", js.undefined)
+      inline def setFlexOrderSmallUndefined: Self = StObject.set(x, "flexOrderSmall", js.undefined)
       
-      @scala.inline
-      def setFlexOrderUndefined: Self = StObject.set(x, "flexOrder", js.undefined)
+      inline def setFlexOrderUndefined: Self = StObject.set(x, "flexOrder", js.undefined)
       
-      @scala.inline
-      def setSelfAlignX(value: HorizontalAlignments): Self = StObject.set(x, "selfAlignX", value.asInstanceOf[js.Any])
+      inline def setSelfAlignX(value: HorizontalAlignments): Self = StObject.set(x, "selfAlignX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelfAlignXUndefined: Self = StObject.set(x, "selfAlignX", js.undefined)
+      inline def setSelfAlignXUndefined: Self = StObject.set(x, "selfAlignX", js.undefined)
       
-      @scala.inline
-      def setSelfAlignY(value: VerticalAlignments): Self = StObject.set(x, "selfAlignY", value.asInstanceOf[js.Any])
+      inline def setSelfAlignY(value: VerticalAlignments): Self = StObject.set(x, "selfAlignY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelfAlignYUndefined: Self = StObject.set(x, "selfAlignY", js.undefined)
+      inline def setSelfAlignYUndefined: Self = StObject.set(x, "selfAlignY", js.undefined)
     }
   }
   
@@ -285,8 +238,7 @@ object utilsMod {
   }
   object GeneralPropTypes {
     
-    @scala.inline
-    def apply(): GeneralPropTypes = {
+    inline def apply(): GeneralPropTypes = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GeneralPropTypes]
     }
@@ -298,38 +250,32 @@ object utilsMod {
     @JSImport("react-foundation/utils", "GeneralPropTypes.float")
     @js.native
     def float: Requireable[js.Any] = js.native
-    @scala.inline
-    def float_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("float")(x.asInstanceOf[js.Any])
+    inline def float_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("float")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation/utils", "GeneralPropTypes.hideFor")
     @js.native
     def hideFor: Requireable[js.Any] = js.native
-    @scala.inline
-    def hideFor_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hideFor")(x.asInstanceOf[js.Any])
+    inline def hideFor_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hideFor")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation/utils", "GeneralPropTypes.hideOnlyFor")
     @js.native
     def hideOnlyFor: Requireable[js.Any] = js.native
-    @scala.inline
-    def hideOnlyFor_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hideOnlyFor")(x.asInstanceOf[js.Any])
+    inline def hideOnlyFor_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hideOnlyFor")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation/utils", "GeneralPropTypes.isClearfix")
     @js.native
     def isClearfix: Requireable[js.Any] = js.native
-    @scala.inline
-    def isClearfix_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isClearfix")(x.asInstanceOf[js.Any])
+    inline def isClearfix_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isClearfix")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation/utils", "GeneralPropTypes.isHidden")
     @js.native
     def isHidden: Requireable[js.Any] = js.native
-    @scala.inline
-    def isHidden_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isHidden")(x.asInstanceOf[js.Any])
+    inline def isHidden_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isHidden")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation/utils", "GeneralPropTypes.isInvisible")
     @js.native
     def isInvisible: Requireable[js.Any] = js.native
-    @scala.inline
-    def isInvisible_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isInvisible")(x.asInstanceOf[js.Any])
+    inline def isInvisible_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isInvisible")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation/utils", "GeneralPropTypes.showFor")
     @js.native
@@ -338,145 +284,102 @@ object utilsMod {
     @JSImport("react-foundation/utils", "GeneralPropTypes.showForLandscape")
     @js.native
     def showForLandscape: Requireable[js.Any] = js.native
-    @scala.inline
-    def showForLandscape_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showForLandscape")(x.asInstanceOf[js.Any])
+    inline def showForLandscape_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showForLandscape")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation/utils", "GeneralPropTypes.showForPortrait")
     @js.native
     def showForPortrait: Requireable[js.Any] = js.native
-    @scala.inline
-    def showForPortrait_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showForPortrait")(x.asInstanceOf[js.Any])
+    inline def showForPortrait_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showForPortrait")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation/utils", "GeneralPropTypes.showForSr")
     @js.native
     def showForSr: Requireable[js.Any] = js.native
-    @scala.inline
-    def showForSr_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showForSr")(x.asInstanceOf[js.Any])
+    inline def showForSr_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showForSr")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def showFor_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showFor")(x.asInstanceOf[js.Any])
+    inline def showFor_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showFor")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation/utils", "GeneralPropTypes.showOnFocus")
     @js.native
     def showOnFocus: Requireable[js.Any] = js.native
-    @scala.inline
-    def showOnFocus_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showOnFocus")(x.asInstanceOf[js.Any])
+    inline def showOnFocus_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showOnFocus")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation/utils", "GeneralPropTypes.showOnlyFor")
     @js.native
     def showOnlyFor: Requireable[js.Any] = js.native
-    @scala.inline
-    def showOnlyFor_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showOnlyFor")(x.asInstanceOf[js.Any])
+    inline def showOnlyFor_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showOnlyFor")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    implicit class GeneralPropTypesMutableBuilder[Self <: GeneralPropTypes] (val x: Self) extends AnyVal {
+    extension [Self <: GeneralPropTypes](x: Self) {
       
-      @scala.inline
-      def setFloat(value: FloatTypes): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
+      inline def setFloat(value: FloatTypes): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFloatUndefined: Self = StObject.set(x, "float", js.undefined)
+      inline def setFloatUndefined: Self = StObject.set(x, "float", js.undefined)
       
-      @scala.inline
-      def setHideFor(value: medium | large): Self = StObject.set(x, "hideFor", value.asInstanceOf[js.Any])
+      inline def setHideFor(value: medium | large): Self = StObject.set(x, "hideFor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideForUndefined: Self = StObject.set(x, "hideFor", js.undefined)
+      inline def setHideForUndefined: Self = StObject.set(x, "hideFor", js.undefined)
       
-      @scala.inline
-      def setHideOnlyFor(value: Breakpoints): Self = StObject.set(x, "hideOnlyFor", value.asInstanceOf[js.Any])
+      inline def setHideOnlyFor(value: Breakpoints): Self = StObject.set(x, "hideOnlyFor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideOnlyForUndefined: Self = StObject.set(x, "hideOnlyFor", js.undefined)
+      inline def setHideOnlyForUndefined: Self = StObject.set(x, "hideOnlyFor", js.undefined)
       
-      @scala.inline
-      def setIsClearfix(value: Boolean): Self = StObject.set(x, "isClearfix", value.asInstanceOf[js.Any])
+      inline def setIsClearfix(value: Boolean): Self = StObject.set(x, "isClearfix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsClearfixUndefined: Self = StObject.set(x, "isClearfix", js.undefined)
+      inline def setIsClearfixUndefined: Self = StObject.set(x, "isClearfix", js.undefined)
       
-      @scala.inline
-      def setIsHidden(value: Boolean): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
+      inline def setIsHidden(value: Boolean): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHiddenUndefined: Self = StObject.set(x, "isHidden", js.undefined)
+      inline def setIsHiddenUndefined: Self = StObject.set(x, "isHidden", js.undefined)
       
-      @scala.inline
-      def setIsInvisible(value: Boolean): Self = StObject.set(x, "isInvisible", value.asInstanceOf[js.Any])
+      inline def setIsInvisible(value: Boolean): Self = StObject.set(x, "isInvisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsInvisibleUndefined: Self = StObject.set(x, "isInvisible", js.undefined)
+      inline def setIsInvisibleUndefined: Self = StObject.set(x, "isInvisible", js.undefined)
       
-      @scala.inline
-      def setShowFor(value: Breakpoints): Self = StObject.set(x, "showFor", value.asInstanceOf[js.Any])
+      inline def setShowFor(value: Breakpoints): Self = StObject.set(x, "showFor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowForLandscape(value: Boolean): Self = StObject.set(x, "showForLandscape", value.asInstanceOf[js.Any])
+      inline def setShowForLandscape(value: Boolean): Self = StObject.set(x, "showForLandscape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowForLandscapeUndefined: Self = StObject.set(x, "showForLandscape", js.undefined)
+      inline def setShowForLandscapeUndefined: Self = StObject.set(x, "showForLandscape", js.undefined)
       
-      @scala.inline
-      def setShowForPortrait(value: Boolean): Self = StObject.set(x, "showForPortrait", value.asInstanceOf[js.Any])
+      inline def setShowForPortrait(value: Boolean): Self = StObject.set(x, "showForPortrait", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowForPortraitUndefined: Self = StObject.set(x, "showForPortrait", js.undefined)
+      inline def setShowForPortraitUndefined: Self = StObject.set(x, "showForPortrait", js.undefined)
       
-      @scala.inline
-      def setShowForSr(value: Boolean): Self = StObject.set(x, "showForSr", value.asInstanceOf[js.Any])
+      inline def setShowForSr(value: Boolean): Self = StObject.set(x, "showForSr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowForSrUndefined: Self = StObject.set(x, "showForSr", js.undefined)
+      inline def setShowForSrUndefined: Self = StObject.set(x, "showForSr", js.undefined)
       
-      @scala.inline
-      def setShowForUndefined: Self = StObject.set(x, "showFor", js.undefined)
+      inline def setShowForUndefined: Self = StObject.set(x, "showFor", js.undefined)
       
-      @scala.inline
-      def setShowOnFocus(value: Boolean): Self = StObject.set(x, "showOnFocus", value.asInstanceOf[js.Any])
+      inline def setShowOnFocus(value: Boolean): Self = StObject.set(x, "showOnFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowOnFocusUndefined: Self = StObject.set(x, "showOnFocus", js.undefined)
+      inline def setShowOnFocusUndefined: Self = StObject.set(x, "showOnFocus", js.undefined)
       
-      @scala.inline
-      def setShowOnlyFor(value: Breakpoints): Self = StObject.set(x, "showOnlyFor", value.asInstanceOf[js.Any])
+      inline def setShowOnlyFor(value: Breakpoints): Self = StObject.set(x, "showOnlyFor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowOnlyForUndefined: Self = StObject.set(x, "showOnlyFor", js.undefined)
+      inline def setShowOnlyForUndefined: Self = StObject.set(x, "showOnlyFor", js.undefined)
     }
   }
   
-  @scala.inline
-  def addBreakpoint(prop: String, size: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("addBreakpoint")(prop.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def addBreakpoint(prop: String, size: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("addBreakpoint")(prop.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def createClassName(args: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createClassName")(args.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def createClassName(args: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createClassName")(args.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def flexboxClassNames(props: FlexboxPropTypes): StringDictionary[js.UndefOr[Boolean]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flexboxClassNames")(props.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.UndefOr[Boolean]]]
+  inline def flexboxClassNames(props: FlexboxPropTypes): StringDictionary[js.UndefOr[Boolean]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flexboxClassNames")(props.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.UndefOr[Boolean]]]
   
-  @scala.inline
-  def generalClassNames(props: GeneralPropTypes): Clearfix = ^.asInstanceOf[js.Dynamic].applyDynamic("generalClassNames")(props.asInstanceOf[js.Any]).asInstanceOf[Clearfix]
+  inline def generalClassNames(props: GeneralPropTypes): Clearfix = ^.asInstanceOf[js.Dynamic].applyDynamic("generalClassNames")(props.asInstanceOf[js.Any]).asInstanceOf[Clearfix]
   
-  @scala.inline
-  def isDefined(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDefined")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isDefined(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDefined")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def objectKeys(`object`: js.Object): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("objectKeys")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def objectKeys(`object`: js.Object): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("objectKeys")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def objectValues(`object`: js.Object): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("objectValues")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def objectValues(`object`: js.Object): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("objectValues")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
-  @scala.inline
-  def removeProps(`object`: js.Object, remove: js.Array[String]): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("removeProps")(`object`.asInstanceOf[js.Any], remove.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def removeProps(`object`: js.Object, remove: js.Array[String]): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("removeProps")(`object`.asInstanceOf[js.Any], remove.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
-  @scala.inline
-  def setDirection(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("setDirection")().asInstanceOf[String]
-  @scala.inline
-  def setDirection(isVertical: Boolean): String = ^.asInstanceOf[js.Dynamic].applyDynamic("setDirection")(isVertical.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def setDirection(isVertical: Boolean, gutters: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("setDirection")(isVertical.asInstanceOf[js.Any], gutters.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def setDirection(isVertical: Unit, gutters: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("setDirection")(isVertical.asInstanceOf[js.Any], gutters.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def setDirection(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("setDirection")().asInstanceOf[String]
+  inline def setDirection(isVertical: Boolean): String = ^.asInstanceOf[js.Dynamic].applyDynamic("setDirection")(isVertical.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def setDirection(isVertical: Boolean, gutters: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("setDirection")(isVertical.asInstanceOf[js.Any], gutters.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def setDirection(isVertical: Unit, gutters: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("setDirection")(isVertical.asInstanceOf[js.Any], gutters.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait ClassNameProps extends StObject {
     
@@ -486,26 +389,20 @@ object utilsMod {
   }
   object ClassNameProps {
     
-    @scala.inline
-    def apply(): ClassNameProps = {
+    inline def apply(): ClassNameProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClassNameProps]
     }
     
-    @scala.inline
-    implicit class ClassNamePropsMutableBuilder[Self <: ClassNameProps] (val x: Self) extends AnyVal {
+    extension [Self <: ClassNameProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setNoDefaultClassName(value: String): Self = StObject.set(x, "noDefaultClassName", value.asInstanceOf[js.Any])
+      inline def setNoDefaultClassName(value: String): Self = StObject.set(x, "noDefaultClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoDefaultClassNameUndefined: Self = StObject.set(x, "noDefaultClassName", js.undefined)
+      inline def setNoDefaultClassNameUndefined: Self = StObject.set(x, "noDefaultClassName", js.undefined)
     }
   }
 }

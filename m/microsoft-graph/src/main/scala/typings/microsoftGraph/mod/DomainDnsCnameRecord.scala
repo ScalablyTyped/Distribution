@@ -13,22 +13,17 @@ trait DomainDnsCnameRecord
 }
 object DomainDnsCnameRecord {
   
-  @scala.inline
-  def apply(): DomainDnsCnameRecord = {
+  inline def apply(): DomainDnsCnameRecord = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DomainDnsCnameRecord]
   }
   
-  @scala.inline
-  implicit class DomainDnsCnameRecordMutableBuilder[Self <: DomainDnsCnameRecord] (val x: Self) extends AnyVal {
+  extension [Self <: DomainDnsCnameRecord](x: Self) {
     
-    @scala.inline
-    def setCanonicalName(value: NullableOption[String]): Self = StObject.set(x, "canonicalName", value.asInstanceOf[js.Any])
+    inline def setCanonicalName(value: NullableOption[String]): Self = StObject.set(x, "canonicalName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanonicalNameNull: Self = StObject.set(x, "canonicalName", null)
+    inline def setCanonicalNameNull: Self = StObject.set(x, "canonicalName", null)
     
-    @scala.inline
-    def setCanonicalNameUndefined: Self = StObject.set(x, "canonicalName", js.undefined)
+    inline def setCanonicalNameUndefined: Self = StObject.set(x, "canonicalName", js.undefined)
   }
 }

@@ -111,97 +111,67 @@ trait BaseValidationOptions extends StObject {
 }
 object BaseValidationOptions {
   
-  @scala.inline
-  def apply(): BaseValidationOptions = {
+  inline def apply(): BaseValidationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BaseValidationOptions]
   }
   
-  @scala.inline
-  implicit class BaseValidationOptionsMutableBuilder[Self <: BaseValidationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BaseValidationOptions](x: Self) {
     
-    @scala.inline
-    def setAbortEarly(value: Boolean): Self = StObject.set(x, "abortEarly", value.asInstanceOf[js.Any])
+    inline def setAbortEarly(value: Boolean): Self = StObject.set(x, "abortEarly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbortEarlyUndefined: Self = StObject.set(x, "abortEarly", js.undefined)
+    inline def setAbortEarlyUndefined: Self = StObject.set(x, "abortEarly", js.undefined)
     
-    @scala.inline
-    def setAllowUnknown(value: Boolean): Self = StObject.set(x, "allowUnknown", value.asInstanceOf[js.Any])
+    inline def setAllowUnknown(value: Boolean): Self = StObject.set(x, "allowUnknown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowUnknownUndefined: Self = StObject.set(x, "allowUnknown", js.undefined)
+    inline def setAllowUnknownUndefined: Self = StObject.set(x, "allowUnknown", js.undefined)
     
-    @scala.inline
-    def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+    inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
-    @scala.inline
-    def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setConvert(value: Boolean): Self = StObject.set(x, "convert", value.asInstanceOf[js.Any])
+    inline def setConvert(value: Boolean): Self = StObject.set(x, "convert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConvertUndefined: Self = StObject.set(x, "convert", js.undefined)
+    inline def setConvertUndefined: Self = StObject.set(x, "convert", js.undefined)
     
-    @scala.inline
-    def setDateFormat(value: date | iso | string | time | utc): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
+    inline def setDateFormat(value: date | iso | string | time | utc): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
+    inline def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
     
-    @scala.inline
-    def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+    inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
-    @scala.inline
-    def setErrors(value: ErrorFormattingOptions): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: ErrorFormattingOptions): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    @scala.inline
-    def setExternals(value: Boolean): Self = StObject.set(x, "externals", value.asInstanceOf[js.Any])
+    inline def setExternals(value: Boolean): Self = StObject.set(x, "externals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalsUndefined: Self = StObject.set(x, "externals", js.undefined)
+    inline def setExternalsUndefined: Self = StObject.set(x, "externals", js.undefined)
     
-    @scala.inline
-    def setNoDefaults(value: Boolean): Self = StObject.set(x, "noDefaults", value.asInstanceOf[js.Any])
+    inline def setNoDefaults(value: Boolean): Self = StObject.set(x, "noDefaults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoDefaultsUndefined: Self = StObject.set(x, "noDefaults", js.undefined)
+    inline def setNoDefaultsUndefined: Self = StObject.set(x, "noDefaults", js.undefined)
     
-    @scala.inline
-    def setNonEnumerables(value: Boolean): Self = StObject.set(x, "nonEnumerables", value.asInstanceOf[js.Any])
+    inline def setNonEnumerables(value: Boolean): Self = StObject.set(x, "nonEnumerables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonEnumerablesUndefined: Self = StObject.set(x, "nonEnumerables", js.undefined)
+    inline def setNonEnumerablesUndefined: Self = StObject.set(x, "nonEnumerables", js.undefined)
     
-    @scala.inline
-    def setPresence(value: PresenceMode): Self = StObject.set(x, "presence", value.asInstanceOf[js.Any])
+    inline def setPresence(value: PresenceMode): Self = StObject.set(x, "presence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPresenceUndefined: Self = StObject.set(x, "presence", js.undefined)
+    inline def setPresenceUndefined: Self = StObject.set(x, "presence", js.undefined)
     
-    @scala.inline
-    def setSkipFunctions(value: Boolean): Self = StObject.set(x, "skipFunctions", value.asInstanceOf[js.Any])
+    inline def setSkipFunctions(value: Boolean): Self = StObject.set(x, "skipFunctions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipFunctionsUndefined: Self = StObject.set(x, "skipFunctions", js.undefined)
+    inline def setSkipFunctionsUndefined: Self = StObject.set(x, "skipFunctions", js.undefined)
     
-    @scala.inline
-    def setStripUnknown(value: Boolean | Arrays): Self = StObject.set(x, "stripUnknown", value.asInstanceOf[js.Any])
+    inline def setStripUnknown(value: Boolean | Arrays): Self = StObject.set(x, "stripUnknown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStripUnknownUndefined: Self = StObject.set(x, "stripUnknown", js.undefined)
+    inline def setStripUnknownUndefined: Self = StObject.set(x, "stripUnknown", js.undefined)
   }
 }

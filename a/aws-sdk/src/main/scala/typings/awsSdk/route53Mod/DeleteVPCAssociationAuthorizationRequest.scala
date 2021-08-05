@@ -18,19 +18,15 @@ trait DeleteVPCAssociationAuthorizationRequest extends StObject {
 }
 object DeleteVPCAssociationAuthorizationRequest {
   
-  @scala.inline
-  def apply(HostedZoneId: ResourceId, VPC: VPC): DeleteVPCAssociationAuthorizationRequest = {
+  inline def apply(HostedZoneId: ResourceId, VPC: VPC): DeleteVPCAssociationAuthorizationRequest = {
     val __obj = js.Dynamic.literal(HostedZoneId = HostedZoneId.asInstanceOf[js.Any], VPC = VPC.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteVPCAssociationAuthorizationRequest]
   }
   
-  @scala.inline
-  implicit class DeleteVPCAssociationAuthorizationRequestMutableBuilder[Self <: DeleteVPCAssociationAuthorizationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteVPCAssociationAuthorizationRequest](x: Self) {
     
-    @scala.inline
-    def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
+    inline def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVPC(value: VPC): Self = StObject.set(x, "VPC", value.asInstanceOf[js.Any])
+    inline def setVPC(value: VPC): Self = StObject.set(x, "VPC", value.asInstanceOf[js.Any])
   }
 }

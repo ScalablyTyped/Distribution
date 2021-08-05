@@ -14,25 +14,19 @@ trait HttpRequestValidation extends StObject {
 }
 object HttpRequestValidation {
   
-  @scala.inline
-  def apply(): HttpRequestValidation = {
+  inline def apply(): HttpRequestValidation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HttpRequestValidation]
   }
   
-  @scala.inline
-  implicit class HttpRequestValidationMutableBuilder[Self <: HttpRequestValidation] (val x: Self) extends AnyVal {
+  extension [Self <: HttpRequestValidation](x: Self) {
     
-    @scala.inline
-    def setParameters(value: HttpRequestParametersValidation): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: HttpRequestParametersValidation): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setSchema(value: StringDictionary[Record[String, js.Any]]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: StringDictionary[Record[String, js.Any]]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+    inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
   }
 }

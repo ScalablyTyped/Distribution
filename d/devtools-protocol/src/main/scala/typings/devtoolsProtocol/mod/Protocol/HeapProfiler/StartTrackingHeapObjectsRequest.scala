@@ -10,19 +10,15 @@ trait StartTrackingHeapObjectsRequest extends StObject {
 }
 object StartTrackingHeapObjectsRequest {
   
-  @scala.inline
-  def apply(): StartTrackingHeapObjectsRequest = {
+  inline def apply(): StartTrackingHeapObjectsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartTrackingHeapObjectsRequest]
   }
   
-  @scala.inline
-  implicit class StartTrackingHeapObjectsRequestMutableBuilder[Self <: StartTrackingHeapObjectsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartTrackingHeapObjectsRequest](x: Self) {
     
-    @scala.inline
-    def setTrackAllocations(value: Boolean): Self = StObject.set(x, "trackAllocations", value.asInstanceOf[js.Any])
+    inline def setTrackAllocations(value: Boolean): Self = StObject.set(x, "trackAllocations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackAllocationsUndefined: Self = StObject.set(x, "trackAllocations", js.undefined)
+    inline def setTrackAllocationsUndefined: Self = StObject.set(x, "trackAllocations", js.undefined)
   }
 }

@@ -79,8 +79,7 @@ trait AppCaptureSettings extends StObject {
 }
 object AppCaptureSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alternateShortcutKeys: AppCaptureAlternateShortcutKeys,
     appCaptureDestinationFolder: StorageFolder,
     audioEncodingBitrate: Double,
@@ -109,76 +108,52 @@ object AppCaptureSettings {
     __obj.asInstanceOf[AppCaptureSettings]
   }
   
-  @scala.inline
-  implicit class AppCaptureSettingsMutableBuilder[Self <: AppCaptureSettings] (val x: Self) extends AnyVal {
+  extension [Self <: AppCaptureSettings](x: Self) {
     
-    @scala.inline
-    def setAlternateShortcutKeys(value: AppCaptureAlternateShortcutKeys): Self = StObject.set(x, "alternateShortcutKeys", value.asInstanceOf[js.Any])
+    inline def setAlternateShortcutKeys(value: AppCaptureAlternateShortcutKeys): Self = StObject.set(x, "alternateShortcutKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppCaptureDestinationFolder(value: StorageFolder): Self = StObject.set(x, "appCaptureDestinationFolder", value.asInstanceOf[js.Any])
+    inline def setAppCaptureDestinationFolder(value: StorageFolder): Self = StObject.set(x, "appCaptureDestinationFolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioEncodingBitrate(value: Double): Self = StObject.set(x, "audioEncodingBitrate", value.asInstanceOf[js.Any])
+    inline def setAudioEncodingBitrate(value: Double): Self = StObject.set(x, "audioEncodingBitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomVideoEncodingBitrate(value: Double): Self = StObject.set(x, "customVideoEncodingBitrate", value.asInstanceOf[js.Any])
+    inline def setCustomVideoEncodingBitrate(value: Double): Self = StObject.set(x, "customVideoEncodingBitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomVideoEncodingHeight(value: Double): Self = StObject.set(x, "customVideoEncodingHeight", value.asInstanceOf[js.Any])
+    inline def setCustomVideoEncodingHeight(value: Double): Self = StObject.set(x, "customVideoEncodingHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomVideoEncodingWidth(value: Double): Self = StObject.set(x, "customVideoEncodingWidth", value.asInstanceOf[js.Any])
+    inline def setCustomVideoEncodingWidth(value: Double): Self = StObject.set(x, "customVideoEncodingWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasHardwareEncoder(value: Boolean): Self = StObject.set(x, "hasHardwareEncoder", value.asInstanceOf[js.Any])
+    inline def setHasHardwareEncoder(value: Boolean): Self = StObject.set(x, "hasHardwareEncoder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistoricalBufferLength(value: Double): Self = StObject.set(x, "historicalBufferLength", value.asInstanceOf[js.Any])
+    inline def setHistoricalBufferLength(value: Double): Self = StObject.set(x, "historicalBufferLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistoricalBufferLengthUnit(value: AppCaptureHistoricalBufferLengthUnit): Self = StObject.set(x, "historicalBufferLengthUnit", value.asInstanceOf[js.Any])
+    inline def setHistoricalBufferLengthUnit(value: AppCaptureHistoricalBufferLengthUnit): Self = StObject.set(x, "historicalBufferLengthUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAppCaptureEnabled(value: Boolean): Self = StObject.set(x, "isAppCaptureEnabled", value.asInstanceOf[js.Any])
+    inline def setIsAppCaptureEnabled(value: Boolean): Self = StObject.set(x, "isAppCaptureEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAudioCaptureEnabled(value: Boolean): Self = StObject.set(x, "isAudioCaptureEnabled", value.asInstanceOf[js.Any])
+    inline def setIsAudioCaptureEnabled(value: Boolean): Self = StObject.set(x, "isAudioCaptureEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCpuConstrained(value: Boolean): Self = StObject.set(x, "isCpuConstrained", value.asInstanceOf[js.Any])
+    inline def setIsCpuConstrained(value: Boolean): Self = StObject.set(x, "isCpuConstrained", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDisabledByPolicy(value: Boolean): Self = StObject.set(x, "isDisabledByPolicy", value.asInstanceOf[js.Any])
+    inline def setIsDisabledByPolicy(value: Boolean): Self = StObject.set(x, "isDisabledByPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsGpuConstrained(value: Boolean): Self = StObject.set(x, "isGpuConstrained", value.asInstanceOf[js.Any])
+    inline def setIsGpuConstrained(value: Boolean): Self = StObject.set(x, "isGpuConstrained", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsHistoricalCaptureEnabled(value: Boolean): Self = StObject.set(x, "isHistoricalCaptureEnabled", value.asInstanceOf[js.Any])
+    inline def setIsHistoricalCaptureEnabled(value: Boolean): Self = StObject.set(x, "isHistoricalCaptureEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsHistoricalCaptureOnBatteryAllowed(value: Boolean): Self = StObject.set(x, "isHistoricalCaptureOnBatteryAllowed", value.asInstanceOf[js.Any])
+    inline def setIsHistoricalCaptureOnBatteryAllowed(value: Boolean): Self = StObject.set(x, "isHistoricalCaptureOnBatteryAllowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsHistoricalCaptureOnWirelessDisplayAllowed(value: Boolean): Self = StObject.set(x, "isHistoricalCaptureOnWirelessDisplayAllowed", value.asInstanceOf[js.Any])
+    inline def setIsHistoricalCaptureOnWirelessDisplayAllowed(value: Boolean): Self = StObject.set(x, "isHistoricalCaptureOnWirelessDisplayAllowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMemoryConstrained(value: Boolean): Self = StObject.set(x, "isMemoryConstrained", value.asInstanceOf[js.Any])
+    inline def setIsMemoryConstrained(value: Boolean): Self = StObject.set(x, "isMemoryConstrained", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMicrophoneCaptureEnabled(value: js.Any): Self = StObject.set(x, "isMicrophoneCaptureEnabled", value.asInstanceOf[js.Any])
+    inline def setIsMicrophoneCaptureEnabled(value: js.Any): Self = StObject.set(x, "isMicrophoneCaptureEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumRecordLength(value: Double): Self = StObject.set(x, "maximumRecordLength", value.asInstanceOf[js.Any])
+    inline def setMaximumRecordLength(value: Double): Self = StObject.set(x, "maximumRecordLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenshotDestinationFolder(value: StorageFolder): Self = StObject.set(x, "screenshotDestinationFolder", value.asInstanceOf[js.Any])
+    inline def setScreenshotDestinationFolder(value: StorageFolder): Self = StObject.set(x, "screenshotDestinationFolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoEncodingBitrateMode(value: AppCaptureVideoEncodingBitrateMode): Self = StObject.set(x, "videoEncodingBitrateMode", value.asInstanceOf[js.Any])
+    inline def setVideoEncodingBitrateMode(value: AppCaptureVideoEncodingBitrateMode): Self = StObject.set(x, "videoEncodingBitrateMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoEncodingResolutionMode(value: AppCaptureVideoEncodingResolutionMode): Self = StObject.set(x, "videoEncodingResolutionMode", value.asInstanceOf[js.Any])
+    inline def setVideoEncodingResolutionMode(value: AppCaptureVideoEncodingResolutionMode): Self = StObject.set(x, "videoEncodingResolutionMode", value.asInstanceOf[js.Any])
   }
 }

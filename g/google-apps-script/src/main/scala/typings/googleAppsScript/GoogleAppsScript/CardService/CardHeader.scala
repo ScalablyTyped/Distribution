@@ -27,8 +27,7 @@ trait CardHeader extends StObject {
 }
 object CardHeader {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     setImageAltText: String => CardHeader,
     setImageStyle: ImageStyle => CardHeader,
     setImageUrl: String => CardHeader,
@@ -39,22 +38,16 @@ object CardHeader {
     __obj.asInstanceOf[CardHeader]
   }
   
-  @scala.inline
-  implicit class CardHeaderMutableBuilder[Self <: CardHeader] (val x: Self) extends AnyVal {
+  extension [Self <: CardHeader](x: Self) {
     
-    @scala.inline
-    def setSetImageAltText(value: String => CardHeader): Self = StObject.set(x, "setImageAltText", js.Any.fromFunction1(value))
+    inline def setSetImageAltText(value: String => CardHeader): Self = StObject.set(x, "setImageAltText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetImageStyle(value: ImageStyle => CardHeader): Self = StObject.set(x, "setImageStyle", js.Any.fromFunction1(value))
+    inline def setSetImageStyle(value: ImageStyle => CardHeader): Self = StObject.set(x, "setImageStyle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetImageUrl(value: String => CardHeader): Self = StObject.set(x, "setImageUrl", js.Any.fromFunction1(value))
+    inline def setSetImageUrl(value: String => CardHeader): Self = StObject.set(x, "setImageUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSubtitle(value: String => CardHeader): Self = StObject.set(x, "setSubtitle", js.Any.fromFunction1(value))
+    inline def setSetSubtitle(value: String => CardHeader): Self = StObject.set(x, "setSubtitle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTitle(value: String => CardHeader): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
+    inline def setSetTitle(value: String => CardHeader): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
   }
 }

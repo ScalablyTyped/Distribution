@@ -23,8 +23,7 @@ trait PayoutHeader extends StObject {
 }
 object PayoutHeader {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     batch_status: CANCELED | DENIED | PENDING | PROCESSING | SUCCESS,
     payout_batch_id: String,
     sender_batch_header: PayoutSenderBatchHeader
@@ -33,28 +32,20 @@ object PayoutHeader {
     __obj.asInstanceOf[PayoutHeader]
   }
   
-  @scala.inline
-  implicit class PayoutHeaderMutableBuilder[Self <: PayoutHeader] (val x: Self) extends AnyVal {
+  extension [Self <: PayoutHeader](x: Self) {
     
-    @scala.inline
-    def setBatch_status(value: CANCELED | DENIED | PENDING | PROCESSING | SUCCESS): Self = StObject.set(x, "batch_status", value.asInstanceOf[js.Any])
+    inline def setBatch_status(value: CANCELED | DENIED | PENDING | PROCESSING | SUCCESS): Self = StObject.set(x, "batch_status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrors(value: js.Any): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Any): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    @scala.inline
-    def setPayout_batch_id(value: String): Self = StObject.set(x, "payout_batch_id", value.asInstanceOf[js.Any])
+    inline def setPayout_batch_id(value: String): Self = StObject.set(x, "payout_batch_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSender_batch_header(value: PayoutSenderBatchHeader): Self = StObject.set(x, "sender_batch_header", value.asInstanceOf[js.Any])
+    inline def setSender_batch_header(value: PayoutSenderBatchHeader): Self = StObject.set(x, "sender_batch_header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime_created(value: String): Self = StObject.set(x, "time_created", value.asInstanceOf[js.Any])
+    inline def setTime_created(value: String): Self = StObject.set(x, "time_created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime_createdUndefined: Self = StObject.set(x, "time_created", js.undefined)
+    inline def setTime_createdUndefined: Self = StObject.set(x, "time_created", js.undefined)
   }
 }

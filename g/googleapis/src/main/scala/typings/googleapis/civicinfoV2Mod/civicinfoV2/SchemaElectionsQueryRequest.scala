@@ -10,19 +10,15 @@ trait SchemaElectionsQueryRequest extends StObject {
 }
 object SchemaElectionsQueryRequest {
   
-  @scala.inline
-  def apply(): SchemaElectionsQueryRequest = {
+  inline def apply(): SchemaElectionsQueryRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaElectionsQueryRequest]
   }
   
-  @scala.inline
-  implicit class SchemaElectionsQueryRequestMutableBuilder[Self <: SchemaElectionsQueryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaElectionsQueryRequest](x: Self) {
     
-    @scala.inline
-    def setContextParams(value: SchemaContextParams): Self = StObject.set(x, "contextParams", value.asInstanceOf[js.Any])
+    inline def setContextParams(value: SchemaContextParams): Self = StObject.set(x, "contextParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextParamsUndefined: Self = StObject.set(x, "contextParams", js.undefined)
+    inline def setContextParamsUndefined: Self = StObject.set(x, "contextParams", js.undefined)
   }
 }

@@ -11,26 +11,19 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addDictionary(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add_dictionary")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addDictionary(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add_dictionary")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def decode(args: DecodeArgsWithSecret): RadiusPacket = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(args.asInstanceOf[js.Any]).asInstanceOf[RadiusPacket]
+  inline def decode(args: DecodeArgsWithSecret): RadiusPacket = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(args.asInstanceOf[js.Any]).asInstanceOf[RadiusPacket]
   
-  @scala.inline
-  def decodeWithoutSecret(args: DecodeArgs): RadiusPacket = ^.asInstanceOf[js.Dynamic].applyDynamic("decode_without_secret")(args.asInstanceOf[js.Any]).asInstanceOf[RadiusPacket]
+  inline def decodeWithoutSecret(args: DecodeArgs): RadiusPacket = ^.asInstanceOf[js.Dynamic].applyDynamic("decode_without_secret")(args.asInstanceOf[js.Any]).asInstanceOf[RadiusPacket]
   
-  @scala.inline
-  def encode(args: EncodeArgs): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(args.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def encode(args: EncodeArgs): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(args.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @scala.inline
-  def encodeResponse(args: EncodeResponseArgs): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode_response")(args.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def encodeResponse(args: EncodeResponseArgs): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode_response")(args.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @scala.inline
-  def unloadDictionaries(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unload_dictionaries")().asInstanceOf[Unit]
+  inline def unloadDictionaries(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unload_dictionaries")().asInstanceOf[Unit]
   
-  @scala.inline
-  def verifyResponse(args: VerifyResponseArgs): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("verify_response")(args.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def verifyResponse(args: VerifyResponseArgs): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("verify_response")(args.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * {@link https://github.com/retailnext/node-radius#radiusdecode_without_secretargs} for more info.
@@ -41,17 +34,14 @@ object mod {
   }
   object DecodeArgs {
     
-    @scala.inline
-    def apply(packet: Buffer): DecodeArgs = {
+    inline def apply(packet: Buffer): DecodeArgs = {
       val __obj = js.Dynamic.literal(packet = packet.asInstanceOf[js.Any])
       __obj.asInstanceOf[DecodeArgs]
     }
     
-    @scala.inline
-    implicit class DecodeArgsMutableBuilder[Self <: DecodeArgs] (val x: Self) extends AnyVal {
+    extension [Self <: DecodeArgs](x: Self) {
       
-      @scala.inline
-      def setPacket(value: Buffer): Self = StObject.set(x, "packet", value.asInstanceOf[js.Any])
+      inline def setPacket(value: Buffer): Self = StObject.set(x, "packet", value.asInstanceOf[js.Any])
     }
   }
   
@@ -66,17 +56,14 @@ object mod {
   }
   object DecodeArgsWithSecret {
     
-    @scala.inline
-    def apply(packet: Buffer, secret: String): DecodeArgsWithSecret = {
+    inline def apply(packet: Buffer, secret: String): DecodeArgsWithSecret = {
       val __obj = js.Dynamic.literal(packet = packet.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any])
       __obj.asInstanceOf[DecodeArgsWithSecret]
     }
     
-    @scala.inline
-    implicit class DecodeArgsWithSecretMutableBuilder[Self <: DecodeArgsWithSecret] (val x: Self) extends AnyVal {
+    extension [Self <: DecodeArgsWithSecret](x: Self) {
       
-      @scala.inline
-      def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+      inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     }
   }
   
@@ -104,38 +91,28 @@ object mod {
   }
   object EncodeArgs {
     
-    @scala.inline
-    def apply(code: String, secret: String): EncodeArgs = {
+    inline def apply(code: String, secret: String): EncodeArgs = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any])
       __obj.asInstanceOf[EncodeArgs]
     }
     
-    @scala.inline
-    implicit class EncodeArgsMutableBuilder[Self <: EncodeArgs] (val x: Self) extends AnyVal {
+    extension [Self <: EncodeArgs](x: Self) {
       
-      @scala.inline
-      def setAdd_message_authenticator(value: Boolean): Self = StObject.set(x, "add_message_authenticator", value.asInstanceOf[js.Any])
+      inline def setAdd_message_authenticator(value: Boolean): Self = StObject.set(x, "add_message_authenticator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdd_message_authenticatorUndefined: Self = StObject.set(x, "add_message_authenticator", js.undefined)
+      inline def setAdd_message_authenticatorUndefined: Self = StObject.set(x, "add_message_authenticator", js.undefined)
       
-      @scala.inline
-      def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentifier(value: Double): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+      inline def setIdentifier(value: Double): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
+      inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
       
-      @scala.inline
-      def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+      inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     }
   }
   
@@ -154,29 +131,22 @@ object mod {
   }
   object EncodeResponseArgs {
     
-    @scala.inline
-    def apply(code: String, packet: RadiusPacket, secret: String): EncodeResponseArgs = {
+    inline def apply(code: String, packet: RadiusPacket, secret: String): EncodeResponseArgs = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], packet = packet.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any])
       __obj.asInstanceOf[EncodeResponseArgs]
     }
     
-    @scala.inline
-    implicit class EncodeResponseArgsMutableBuilder[Self <: EncodeResponseArgs] (val x: Self) extends AnyVal {
+    extension [Self <: EncodeResponseArgs](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPacket(value: RadiusPacket): Self = StObject.set(x, "packet", value.asInstanceOf[js.Any])
+      inline def setPacket(value: RadiusPacket): Self = StObject.set(x, "packet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+      inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     }
   }
   
@@ -194,8 +164,7 @@ object mod {
   }
   object RadiusPacket {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attributes: js.Any,
       code: String,
       identifier: Double,
@@ -206,26 +175,19 @@ object mod {
       __obj.asInstanceOf[RadiusPacket]
     }
     
-    @scala.inline
-    implicit class RadiusPacketMutableBuilder[Self <: RadiusPacket] (val x: Self) extends AnyVal {
+    extension [Self <: RadiusPacket](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentifier(value: Double): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+      inline def setIdentifier(value: Double): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRaw_attributes(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "raw_attributes", value.asInstanceOf[js.Any])
+      inline def setRaw_attributes(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "raw_attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRaw_attributesVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "raw_attributes", js.Array(value :_*))
+      inline def setRaw_attributesVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "raw_attributes", js.Array(value :_*))
     }
   }
   
@@ -242,23 +204,18 @@ object mod {
   }
   object VerifyResponseArgs {
     
-    @scala.inline
-    def apply(request: Buffer, response: Buffer, secret: String): VerifyResponseArgs = {
+    inline def apply(request: Buffer, response: Buffer, secret: String): VerifyResponseArgs = {
       val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any])
       __obj.asInstanceOf[VerifyResponseArgs]
     }
     
-    @scala.inline
-    implicit class VerifyResponseArgsMutableBuilder[Self <: VerifyResponseArgs] (val x: Self) extends AnyVal {
+    extension [Self <: VerifyResponseArgs](x: Self) {
       
-      @scala.inline
-      def setRequest(value: Buffer): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: Buffer): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse(value: Buffer): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: Buffer): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+      inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     }
   }
 }

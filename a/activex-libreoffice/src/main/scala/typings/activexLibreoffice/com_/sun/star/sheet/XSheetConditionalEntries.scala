@@ -44,8 +44,7 @@ trait XSheetConditionalEntries
 }
 object XSheetConditionalEntries {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     ElementType: `type`,
     acquire: () => Unit,
@@ -63,16 +62,12 @@ object XSheetConditionalEntries {
     __obj.asInstanceOf[XSheetConditionalEntries]
   }
   
-  @scala.inline
-  implicit class XSheetConditionalEntriesMutableBuilder[Self <: XSheetConditionalEntries] (val x: Self) extends AnyVal {
+  extension [Self <: XSheetConditionalEntries](x: Self) {
     
-    @scala.inline
-    def setAddNew(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "addNew", js.Any.fromFunction1(value))
+    inline def setAddNew(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "addNew", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveByIndex(value: Double => Unit): Self = StObject.set(x, "removeByIndex", js.Any.fromFunction1(value))
+    inline def setRemoveByIndex(value: Double => Unit): Self = StObject.set(x, "removeByIndex", js.Any.fromFunction1(value))
   }
 }

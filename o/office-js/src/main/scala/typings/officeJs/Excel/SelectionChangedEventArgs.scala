@@ -22,16 +22,13 @@ trait SelectionChangedEventArgs extends StObject {
 }
 object SelectionChangedEventArgs {
   
-  @scala.inline
-  def apply(workbook: Workbook): SelectionChangedEventArgs = {
+  inline def apply(workbook: Workbook): SelectionChangedEventArgs = {
     val __obj = js.Dynamic.literal(workbook = workbook.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectionChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class SelectionChangedEventArgsMutableBuilder[Self <: SelectionChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: SelectionChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setWorkbook(value: Workbook): Self = StObject.set(x, "workbook", value.asInstanceOf[js.Any])
+    inline def setWorkbook(value: Workbook): Self = StObject.set(x, "workbook", value.asInstanceOf[js.Any])
   }
 }

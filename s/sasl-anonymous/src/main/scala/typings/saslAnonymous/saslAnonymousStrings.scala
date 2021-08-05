@@ -8,6 +8,5 @@ object saslAnonymousStrings {
   
   @js.native
   sealed trait ANONYMOUS extends StObject
-  @scala.inline
-  def ANONYMOUS: ANONYMOUS = "ANONYMOUS".asInstanceOf[ANONYMOUS]
+  inline def ANONYMOUS: ANONYMOUS = "ANONYMOUS".asInstanceOf[ANONYMOUS]
 }

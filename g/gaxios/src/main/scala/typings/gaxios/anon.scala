@@ -15,20 +15,16 @@ object anon {
   }
   object Config {
     
-    @scala.inline
-    def apply(config: Unit, shouldRetry: Boolean): Config = {
+    inline def apply(config: Unit, shouldRetry: Boolean): Config = {
       val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], shouldRetry = shouldRetry.asInstanceOf[js.Any])
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setConfig(value: Unit): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: Unit): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldRetry(value: Boolean): Self = StObject.set(x, "shouldRetry", value.asInstanceOf[js.Any])
+      inline def setShouldRetry(value: Boolean): Self = StObject.set(x, "shouldRetry", value.asInstanceOf[js.Any])
     }
   }
   
@@ -40,20 +36,16 @@ object anon {
   }
   object ShouldRetry {
     
-    @scala.inline
-    def apply(config: GaxiosOptions, shouldRetry: Boolean): ShouldRetry = {
+    inline def apply(config: GaxiosOptions, shouldRetry: Boolean): ShouldRetry = {
       val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], shouldRetry = shouldRetry.asInstanceOf[js.Any])
       __obj.asInstanceOf[ShouldRetry]
     }
     
-    @scala.inline
-    implicit class ShouldRetryMutableBuilder[Self <: ShouldRetry] (val x: Self) extends AnyVal {
+    extension [Self <: ShouldRetry](x: Self) {
       
-      @scala.inline
-      def setConfig(value: GaxiosOptions): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: GaxiosOptions): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldRetry(value: Boolean): Self = StObject.set(x, "shouldRetry", value.asInstanceOf[js.Any])
+      inline def setShouldRetry(value: Boolean): Self = StObject.set(x, "shouldRetry", value.asInstanceOf[js.Any])
     }
   }
 }

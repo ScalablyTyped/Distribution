@@ -17,28 +17,21 @@ trait getSummaryDataOptions extends StObject {
 }
 object getSummaryDataOptions {
   
-  @scala.inline
-  def apply(maxRows: Double): getSummaryDataOptions = {
+  inline def apply(maxRows: Double): getSummaryDataOptions = {
     val __obj = js.Dynamic.literal(maxRows = maxRows.asInstanceOf[js.Any])
     __obj.asInstanceOf[getSummaryDataOptions]
   }
   
-  @scala.inline
-  implicit class getSummaryDataOptionsMutableBuilder[Self <: getSummaryDataOptions] (val x: Self) extends AnyVal {
+  extension [Self <: getSummaryDataOptions](x: Self) {
     
-    @scala.inline
-    def setIgnoreAliases(value: Boolean): Self = StObject.set(x, "ignoreAliases", value.asInstanceOf[js.Any])
+    inline def setIgnoreAliases(value: Boolean): Self = StObject.set(x, "ignoreAliases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreAliasesUndefined: Self = StObject.set(x, "ignoreAliases", js.undefined)
+    inline def setIgnoreAliasesUndefined: Self = StObject.set(x, "ignoreAliases", js.undefined)
     
-    @scala.inline
-    def setIgnoreSelection(value: Boolean): Self = StObject.set(x, "ignoreSelection", value.asInstanceOf[js.Any])
+    inline def setIgnoreSelection(value: Boolean): Self = StObject.set(x, "ignoreSelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreSelectionUndefined: Self = StObject.set(x, "ignoreSelection", js.undefined)
+    inline def setIgnoreSelectionUndefined: Self = StObject.set(x, "ignoreSelection", js.undefined)
     
-    @scala.inline
-    def setMaxRows(value: Double): Self = StObject.set(x, "maxRows", value.asInstanceOf[js.Any])
+    inline def setMaxRows(value: Double): Self = StObject.set(x, "maxRows", value.asInstanceOf[js.Any])
   }
 }

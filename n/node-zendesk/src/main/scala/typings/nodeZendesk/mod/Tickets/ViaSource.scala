@@ -14,25 +14,19 @@ trait ViaSource extends StObject {
 }
 object ViaSource {
   
-  @scala.inline
-  def apply(from: js.Object, to: js.Object): ViaSource = {
+  inline def apply(from: js.Object, to: js.Object): ViaSource = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any], rel = null)
     __obj.asInstanceOf[ViaSource]
   }
   
-  @scala.inline
-  implicit class ViaSourceMutableBuilder[Self <: ViaSource] (val x: Self) extends AnyVal {
+  extension [Self <: ViaSource](x: Self) {
     
-    @scala.inline
-    def setFrom(value: js.Object): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: js.Object): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+    inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelNull: Self = StObject.set(x, "rel", null)
+    inline def setRelNull: Self = StObject.set(x, "rel", null)
     
-    @scala.inline
-    def setTo(value: js.Object): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: js.Object): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }
 }

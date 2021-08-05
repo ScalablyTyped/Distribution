@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(str: String): String = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(str: String, options: PrettyOptions): String = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(str: String): String = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(str: String, options: PrettyOptions): String = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("pretty", JSImport.Namespace)
   @js.native
@@ -21,17 +19,14 @@ object mod {
   }
   object PrettyOptions {
     
-    @scala.inline
-    def apply(ocd: Boolean): PrettyOptions = {
+    inline def apply(ocd: Boolean): PrettyOptions = {
       val __obj = js.Dynamic.literal(ocd = ocd.asInstanceOf[js.Any])
       __obj.asInstanceOf[PrettyOptions]
     }
     
-    @scala.inline
-    implicit class PrettyOptionsMutableBuilder[Self <: PrettyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PrettyOptions](x: Self) {
       
-      @scala.inline
-      def setOcd(value: Boolean): Self = StObject.set(x, "ocd", value.asInstanceOf[js.Any])
+      inline def setOcd(value: Boolean): Self = StObject.set(x, "ocd", value.asInstanceOf[js.Any])
     }
   }
 }

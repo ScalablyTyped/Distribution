@@ -62,53 +62,38 @@ object mod {
   }
   object LaunchOptions {
     
-    @scala.inline
-    def apply(): LaunchOptions = {
+    inline def apply(): LaunchOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LaunchOptions]
     }
     
-    @scala.inline
-    implicit class LaunchOptionsMutableBuilder[Self <: LaunchOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LaunchOptions](x: Self) {
       
-      @scala.inline
-      def setCompletion(value: String): Self = StObject.set(x, "completion", value.asInstanceOf[js.Any])
+      inline def setCompletion(value: String): Self = StObject.set(x, "completion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompletionUndefined: Self = StObject.set(x, "completion", js.undefined)
+      inline def setCompletionUndefined: Self = StObject.set(x, "completion", js.undefined)
       
-      @scala.inline
-      def setConfigPath(value: String): Self = StObject.set(x, "configPath", value.asInstanceOf[js.Any])
+      inline def setConfigPath(value: String): Self = StObject.set(x, "configPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigPathUndefined: Self = StObject.set(x, "configPath", js.undefined)
+      inline def setConfigPathUndefined: Self = StObject.set(x, "configPath", js.undefined)
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setForcedFlags(value: String | js.Array[String] | (js.Function1[/* env */ LiftoffEnv, String | js.Array[String]])): Self = StObject.set(x, "forcedFlags", value.asInstanceOf[js.Any])
+      inline def setForcedFlags(value: String | js.Array[String] | (js.Function1[/* env */ LiftoffEnv, String | js.Array[String]])): Self = StObject.set(x, "forcedFlags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForcedFlagsFunction1(value: /* env */ LiftoffEnv => String | js.Array[String]): Self = StObject.set(x, "forcedFlags", js.Any.fromFunction1(value))
+      inline def setForcedFlagsFunction1(value: /* env */ LiftoffEnv => String | js.Array[String]): Self = StObject.set(x, "forcedFlags", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setForcedFlagsUndefined: Self = StObject.set(x, "forcedFlags", js.undefined)
+      inline def setForcedFlagsUndefined: Self = StObject.set(x, "forcedFlags", js.undefined)
       
-      @scala.inline
-      def setForcedFlagsVarargs(value: String*): Self = StObject.set(x, "forcedFlags", js.Array(value :_*))
+      inline def setForcedFlagsVarargs(value: String*): Self = StObject.set(x, "forcedFlags", js.Array(value :_*))
       
-      @scala.inline
-      def setRequire(value: String | js.Array[js.Any]): Self = StObject.set(x, "require", value.asInstanceOf[js.Any])
+      inline def setRequire(value: String | js.Array[js.Any]): Self = StObject.set(x, "require", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequireUndefined: Self = StObject.set(x, "require", js.undefined)
+      inline def setRequireUndefined: Self = StObject.set(x, "require", js.undefined)
       
-      @scala.inline
-      def setRequireVarargs(value: js.Any*): Self = StObject.set(x, "require", js.Array(value :_*))
+      inline def setRequireVarargs(value: js.Any*): Self = StObject.set(x, "require", js.Array(value :_*))
     }
   }
   
@@ -252,59 +237,42 @@ object mod {
   }
   object LiftoffEnv {
     
-    @scala.inline
-    def apply(configNameSearch: js.Array[String], cwd: String, require: js.Array[String]): LiftoffEnv = {
+    inline def apply(configNameSearch: js.Array[String], cwd: String, require: js.Array[String]): LiftoffEnv = {
       val __obj = js.Dynamic.literal(configNameSearch = configNameSearch.asInstanceOf[js.Any], cwd = cwd.asInstanceOf[js.Any], require = require.asInstanceOf[js.Any])
       __obj.asInstanceOf[LiftoffEnv]
     }
     
-    @scala.inline
-    implicit class LiftoffEnvMutableBuilder[Self <: LiftoffEnv] (val x: Self) extends AnyVal {
+    extension [Self <: LiftoffEnv](x: Self) {
       
-      @scala.inline
-      def setConfigBase(value: String): Self = StObject.set(x, "configBase", value.asInstanceOf[js.Any])
+      inline def setConfigBase(value: String): Self = StObject.set(x, "configBase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigBaseUndefined: Self = StObject.set(x, "configBase", js.undefined)
+      inline def setConfigBaseUndefined: Self = StObject.set(x, "configBase", js.undefined)
       
-      @scala.inline
-      def setConfigFiles(value: StringDictionary[StringDictionary[String | Null]]): Self = StObject.set(x, "configFiles", value.asInstanceOf[js.Any])
+      inline def setConfigFiles(value: StringDictionary[StringDictionary[String | Null]]): Self = StObject.set(x, "configFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigFilesUndefined: Self = StObject.set(x, "configFiles", js.undefined)
+      inline def setConfigFilesUndefined: Self = StObject.set(x, "configFiles", js.undefined)
       
-      @scala.inline
-      def setConfigNameSearch(value: js.Array[String]): Self = StObject.set(x, "configNameSearch", value.asInstanceOf[js.Any])
+      inline def setConfigNameSearch(value: js.Array[String]): Self = StObject.set(x, "configNameSearch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigNameSearchVarargs(value: String*): Self = StObject.set(x, "configNameSearch", js.Array(value :_*))
+      inline def setConfigNameSearchVarargs(value: String*): Self = StObject.set(x, "configNameSearch", js.Array(value :_*))
       
-      @scala.inline
-      def setConfigPath(value: String): Self = StObject.set(x, "configPath", value.asInstanceOf[js.Any])
+      inline def setConfigPath(value: String): Self = StObject.set(x, "configPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigPathUndefined: Self = StObject.set(x, "configPath", js.undefined)
+      inline def setConfigPathUndefined: Self = StObject.set(x, "configPath", js.undefined)
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModulePackage(value: StringDictionary[js.Any]): Self = StObject.set(x, "modulePackage", value.asInstanceOf[js.Any])
+      inline def setModulePackage(value: StringDictionary[js.Any]): Self = StObject.set(x, "modulePackage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModulePackageUndefined: Self = StObject.set(x, "modulePackage", js.undefined)
+      inline def setModulePackageUndefined: Self = StObject.set(x, "modulePackage", js.undefined)
       
-      @scala.inline
-      def setModulePath(value: String): Self = StObject.set(x, "modulePath", value.asInstanceOf[js.Any])
+      inline def setModulePath(value: String): Self = StObject.set(x, "modulePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModulePathUndefined: Self = StObject.set(x, "modulePath", js.undefined)
+      inline def setModulePathUndefined: Self = StObject.set(x, "modulePath", js.undefined)
       
-      @scala.inline
-      def setRequire(value: js.Array[String]): Self = StObject.set(x, "require", value.asInstanceOf[js.Any])
+      inline def setRequire(value: js.Array[String]): Self = StObject.set(x, "require", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequireVarargs(value: String*): Self = StObject.set(x, "require", js.Array(value :_*))
+      inline def setRequireVarargs(value: String*): Self = StObject.set(x, "require", js.Array(value :_*))
     }
   }
   
@@ -370,70 +338,50 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCompletions(value: /* completion */ String => js.Any): Self = StObject.set(x, "completions", js.Any.fromFunction1(value))
+      inline def setCompletions(value: /* completion */ String => js.Any): Self = StObject.set(x, "completions", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCompletionsUndefined: Self = StObject.set(x, "completions", js.undefined)
+      inline def setCompletionsUndefined: Self = StObject.set(x, "completions", js.undefined)
       
-      @scala.inline
-      def setConfigFiles(value: StringDictionary[StringDictionary[String | PathSpec]]): Self = StObject.set(x, "configFiles", value.asInstanceOf[js.Any])
+      inline def setConfigFiles(value: StringDictionary[StringDictionary[String | PathSpec]]): Self = StObject.set(x, "configFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigFilesUndefined: Self = StObject.set(x, "configFiles", js.undefined)
+      inline def setConfigFilesUndefined: Self = StObject.set(x, "configFiles", js.undefined)
       
-      @scala.inline
-      def setConfigName(value: String): Self = StObject.set(x, "configName", value.asInstanceOf[js.Any])
+      inline def setConfigName(value: String): Self = StObject.set(x, "configName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigNameUndefined: Self = StObject.set(x, "configName", js.undefined)
+      inline def setConfigNameUndefined: Self = StObject.set(x, "configName", js.undefined)
       
-      @scala.inline
-      def setExtensions(value: Extensions_): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: Extensions_): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+      inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      @scala.inline
-      def setModuleName(value: String): Self = StObject.set(x, "moduleName", value.asInstanceOf[js.Any])
+      inline def setModuleName(value: String): Self = StObject.set(x, "moduleName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModuleNameUndefined: Self = StObject.set(x, "moduleName", js.undefined)
+      inline def setModuleNameUndefined: Self = StObject.set(x, "moduleName", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setProcessTitle(value: String): Self = StObject.set(x, "processTitle", value.asInstanceOf[js.Any])
+      inline def setProcessTitle(value: String): Self = StObject.set(x, "processTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessTitleUndefined: Self = StObject.set(x, "processTitle", js.undefined)
+      inline def setProcessTitleUndefined: Self = StObject.set(x, "processTitle", js.undefined)
       
-      @scala.inline
-      def setV8flags(
+      inline def setV8flags(
         value: js.Array[String] | (js.Function1[/* cb */ js.Function2[/* err */ js.Any, /* flags */ js.Array[String], Unit], Unit])
       ): Self = StObject.set(x, "v8flags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setV8flagsFunction1(value: /* cb */ js.Function2[/* err */ js.Any, /* flags */ js.Array[String], Unit] => Unit): Self = StObject.set(x, "v8flags", js.Any.fromFunction1(value))
+      inline def setV8flagsFunction1(value: /* cb */ js.Function2[/* err */ js.Any, /* flags */ js.Array[String], Unit] => Unit): Self = StObject.set(x, "v8flags", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setV8flagsUndefined: Self = StObject.set(x, "v8flags", js.undefined)
+      inline def setV8flagsUndefined: Self = StObject.set(x, "v8flags", js.undefined)
       
-      @scala.inline
-      def setV8flagsVarargs(value: String*): Self = StObject.set(x, "v8flags", js.Array(value :_*))
+      inline def setV8flagsVarargs(value: String*): Self = StObject.set(x, "v8flags", js.Array(value :_*))
     }
   }
 }

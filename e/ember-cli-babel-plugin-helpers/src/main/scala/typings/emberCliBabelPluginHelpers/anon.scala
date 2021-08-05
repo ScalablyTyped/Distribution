@@ -13,20 +13,16 @@ object anon {
   }
   object Babel {
     
-    @scala.inline
-    def apply(): Babel = {
+    inline def apply(): Babel = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Babel]
     }
     
-    @scala.inline
-    implicit class BabelMutableBuilder[Self <: Babel] (val x: Self) extends AnyVal {
+    extension [Self <: Babel](x: Self) {
       
-      @scala.inline
-      def setBabel(value: Plugins): Self = StObject.set(x, "babel", value.asInstanceOf[js.Any])
+      inline def setBabel(value: Plugins): Self = StObject.set(x, "babel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBabelUndefined: Self = StObject.set(x, "babel", js.undefined)
+      inline def setBabelUndefined: Self = StObject.set(x, "babel", js.undefined)
     }
   }
   
@@ -36,20 +32,16 @@ object anon {
   }
   object Name {
     
-    @scala.inline
-    def apply(): Name = {
+    inline def apply(): Name = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Name]
     }
     
-    @scala.inline
-    implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+    extension [Self <: Name](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
   
@@ -59,23 +51,18 @@ object anon {
   }
   object Plugins {
     
-    @scala.inline
-    def apply(): Plugins = {
+    inline def apply(): Plugins = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Plugins]
     }
     
-    @scala.inline
-    implicit class PluginsMutableBuilder[Self <: Plugins] (val x: Self) extends AnyVal {
+    extension [Self <: Plugins](x: Self) {
       
-      @scala.inline
-      def setPlugins(value: js.Array[BabelPluginConfig]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: js.Array[BabelPluginConfig]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      @scala.inline
-      def setPluginsVarargs(value: BabelPluginConfig*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: BabelPluginConfig*): Self = StObject.set(x, "plugins", js.Array(value :_*))
     }
   }
 }

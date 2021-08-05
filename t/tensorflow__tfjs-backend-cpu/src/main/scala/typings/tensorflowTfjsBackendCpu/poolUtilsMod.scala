@@ -18,18 +18,15 @@ object poolUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def maxPoolPositions(xValues: TypedArray, xShape: js.Array[Double], dtype: DataType, convInfo: Conv2DInfo): TensorBuffer[Rank, int32] = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolPositions")(xValues.asInstanceOf[js.Any], xShape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], convInfo.asInstanceOf[js.Any])).asInstanceOf[TensorBuffer[Rank, int32]]
-  @scala.inline
-  def maxPoolPositions(
+  inline def maxPoolPositions(xValues: TypedArray, xShape: js.Array[Double], dtype: DataType, convInfo: Conv2DInfo): TensorBuffer[Rank, int32] = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolPositions")(xValues.asInstanceOf[js.Any], xShape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], convInfo.asInstanceOf[js.Any])).asInstanceOf[TensorBuffer[Rank, int32]]
+  inline def maxPoolPositions(
     xValues: TypedArray,
     xShape: js.Array[Double],
     dtype: DataType,
     convInfo: Conv2DInfo,
     flattenPositions: Boolean
   ): TensorBuffer[Rank, int32] = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolPositions")(xValues.asInstanceOf[js.Any], xShape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], convInfo.asInstanceOf[js.Any], flattenPositions.asInstanceOf[js.Any])).asInstanceOf[TensorBuffer[Rank, int32]]
-  @scala.inline
-  def maxPoolPositions(
+  inline def maxPoolPositions(
     xValues: TypedArray,
     xShape: js.Array[Double],
     dtype: DataType,
@@ -37,8 +34,7 @@ object poolUtilsMod {
     flattenPositions: Boolean,
     includeBatchInIndex: Boolean
   ): TensorBuffer[Rank, int32] = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolPositions")(xValues.asInstanceOf[js.Any], xShape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], convInfo.asInstanceOf[js.Any], flattenPositions.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[TensorBuffer[Rank, int32]]
-  @scala.inline
-  def maxPoolPositions(
+  inline def maxPoolPositions(
     xValues: TypedArray,
     xShape: js.Array[Double],
     dtype: DataType,
@@ -47,8 +43,7 @@ object poolUtilsMod {
     includeBatchInIndex: Boolean
   ): TensorBuffer[Rank, int32] = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolPositions")(xValues.asInstanceOf[js.Any], xShape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], convInfo.asInstanceOf[js.Any], flattenPositions.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[TensorBuffer[Rank, int32]]
   
-  @scala.inline
-  def pool_avg(
+  inline def pool_avg(
     xValues: TypedArray,
     xShape: js.Array[Double],
     dtype: DataType,
@@ -57,8 +52,7 @@ object poolUtilsMod {
     poolType: avg
   ): TensorBuffer[Rank, DataType] = (^.asInstanceOf[js.Dynamic].applyDynamic("pool")(xValues.asInstanceOf[js.Any], xShape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], convInfo.asInstanceOf[js.Any], poolType.asInstanceOf[js.Any])).asInstanceOf[TensorBuffer[Rank, DataType]]
   
-  @scala.inline
-  def pool_max(
+  inline def pool_max(
     xValues: TypedArray,
     xShape: js.Array[Double],
     dtype: DataType,

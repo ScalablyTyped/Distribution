@@ -13,28 +13,21 @@ trait ListSearchApplicationsResponse extends StObject {
 }
 object ListSearchApplicationsResponse {
   
-  @scala.inline
-  def apply(): ListSearchApplicationsResponse = {
+  inline def apply(): ListSearchApplicationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListSearchApplicationsResponse]
   }
   
-  @scala.inline
-  implicit class ListSearchApplicationsResponseMutableBuilder[Self <: ListSearchApplicationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListSearchApplicationsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setSearchApplications(value: js.Array[SearchApplication]): Self = StObject.set(x, "searchApplications", value.asInstanceOf[js.Any])
+    inline def setSearchApplications(value: js.Array[SearchApplication]): Self = StObject.set(x, "searchApplications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchApplicationsUndefined: Self = StObject.set(x, "searchApplications", js.undefined)
+    inline def setSearchApplicationsUndefined: Self = StObject.set(x, "searchApplications", js.undefined)
     
-    @scala.inline
-    def setSearchApplicationsVarargs(value: SearchApplication*): Self = StObject.set(x, "searchApplications", js.Array(value :_*))
+    inline def setSearchApplicationsVarargs(value: SearchApplication*): Self = StObject.set(x, "searchApplications", js.Array(value :_*))
   }
 }

@@ -9,8 +9,7 @@ trait AggressiveTokenizerVi
      with Tokenizer
 object AggressiveTokenizerVi {
   
-  @scala.inline
-  def apply(tokenize: String => js.Array[String]): AggressiveTokenizerVi = {
+  inline def apply(tokenize: String => js.Array[String]): AggressiveTokenizerVi = {
     val __obj = js.Dynamic.literal(tokenize = js.Any.fromFunction1(tokenize))
     __obj.asInstanceOf[AggressiveTokenizerVi]
   }

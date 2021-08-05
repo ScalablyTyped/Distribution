@@ -12,6 +12,5 @@ object factoryMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(plotly: js.Object): ComponentType[PlotParams] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(plotly.asInstanceOf[js.Any]).asInstanceOf[ComponentType[PlotParams]]
+  inline def default(plotly: js.Object): ComponentType[PlotParams] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(plotly.asInstanceOf[js.Any]).asInstanceOf[ComponentType[PlotParams]]
 }

@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait htmlSelection extends StObject
 object htmlSelection {
   
-  @scala.inline
-  def htmlSelectionControl: `2` = 2.asInstanceOf[`2`]
+  inline def htmlSelectionControl: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def htmlSelectionNone: `0` = 0.asInstanceOf[`0`]
+  inline def htmlSelectionNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def htmlSelectionTable: `3` = 3.asInstanceOf[`3`]
+  inline def htmlSelectionTable: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def htmlSelectionText: `1` = 1.asInstanceOf[`1`]
+  inline def htmlSelectionText: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def htmlSelection_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def htmlSelection_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

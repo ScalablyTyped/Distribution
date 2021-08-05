@@ -13,19 +13,15 @@ trait CreateOpenIDConnectProviderResponse extends StObject {
 }
 object CreateOpenIDConnectProviderResponse {
   
-  @scala.inline
-  def apply(): CreateOpenIDConnectProviderResponse = {
+  inline def apply(): CreateOpenIDConnectProviderResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateOpenIDConnectProviderResponse]
   }
   
-  @scala.inline
-  implicit class CreateOpenIDConnectProviderResponseMutableBuilder[Self <: CreateOpenIDConnectProviderResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateOpenIDConnectProviderResponse](x: Self) {
     
-    @scala.inline
-    def setOpenIDConnectProviderArn(value: arnType): Self = StObject.set(x, "OpenIDConnectProviderArn", value.asInstanceOf[js.Any])
+    inline def setOpenIDConnectProviderArn(value: arnType): Self = StObject.set(x, "OpenIDConnectProviderArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenIDConnectProviderArnUndefined: Self = StObject.set(x, "OpenIDConnectProviderArn", js.undefined)
+    inline def setOpenIDConnectProviderArnUndefined: Self = StObject.set(x, "OpenIDConnectProviderArn", js.undefined)
   }
 }

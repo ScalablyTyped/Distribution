@@ -14,31 +14,23 @@ trait ContentTypeOrder extends StObject {
 }
 object ContentTypeOrder {
   
-  @scala.inline
-  def apply(): ContentTypeOrder = {
+  inline def apply(): ContentTypeOrder = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContentTypeOrder]
   }
   
-  @scala.inline
-  implicit class ContentTypeOrderMutableBuilder[Self <: ContentTypeOrder] (val x: Self) extends AnyVal {
+  extension [Self <: ContentTypeOrder](x: Self) {
     
-    @scala.inline
-    def setDefault(value: NullableOption[Boolean]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: NullableOption[Boolean]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultNull: Self = StObject.set(x, "default", null)
+    inline def setDefaultNull: Self = StObject.set(x, "default", null)
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
-    @scala.inline
-    def setPosition(value: NullableOption[Double]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: NullableOption[Double]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionNull: Self = StObject.set(x, "position", null)
+    inline def setPositionNull: Self = StObject.set(x, "position", null)
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdFlowDirection extends StObject
 object WdFlowDirection {
   
-  @scala.inline
-  def wdFlowLtr: `0` = 0.asInstanceOf[`0`]
+  inline def wdFlowLtr: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdFlowRtl: `1` = 1.asInstanceOf[`1`]
+  inline def wdFlowRtl: `1` = 1.asInstanceOf[`1`]
 }

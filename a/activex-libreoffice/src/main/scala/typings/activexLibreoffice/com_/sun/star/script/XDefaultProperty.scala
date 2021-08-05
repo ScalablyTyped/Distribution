@@ -44,8 +44,7 @@ trait XDefaultProperty
 }
 object XDefaultProperty {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DefaultPropertyName: String,
     acquire: () => Unit,
     getDefaultPropertyName: () => String,
@@ -56,13 +55,10 @@ object XDefaultProperty {
     __obj.asInstanceOf[XDefaultProperty]
   }
   
-  @scala.inline
-  implicit class XDefaultPropertyMutableBuilder[Self <: XDefaultProperty] (val x: Self) extends AnyVal {
+  extension [Self <: XDefaultProperty](x: Self) {
     
-    @scala.inline
-    def setDefaultPropertyName(value: String): Self = StObject.set(x, "DefaultPropertyName", value.asInstanceOf[js.Any])
+    inline def setDefaultPropertyName(value: String): Self = StObject.set(x, "DefaultPropertyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDefaultPropertyName(value: () => String): Self = StObject.set(x, "getDefaultPropertyName", js.Any.fromFunction0(value))
+    inline def setGetDefaultPropertyName(value: () => String): Self = StObject.set(x, "getDefaultPropertyName", js.Any.fromFunction0(value))
   }
 }

@@ -16,8 +16,7 @@ object collectGrammarDiagnosticsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def collectGrammarDiagnostics(
+  inline def collectGrammarDiagnostics(
     report: js.Function1[/* e */ Warning, Unit],
     spec: Spec,
     mainSource: String,

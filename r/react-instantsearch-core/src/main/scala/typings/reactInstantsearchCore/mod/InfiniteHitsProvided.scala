@@ -20,8 +20,7 @@ trait InfiniteHitsProvided[THit] extends StObject {
 }
 object InfiniteHitsProvided {
   
-  @scala.inline
-  def apply[THit](
+  inline def apply[THit](
     hasMore: Boolean,
     hasPrevious: Boolean,
     hits: js.Array[THit],
@@ -32,25 +31,18 @@ object InfiniteHitsProvided {
     __obj.asInstanceOf[InfiniteHitsProvided[THit]]
   }
   
-  @scala.inline
-  implicit class InfiniteHitsProvidedMutableBuilder[Self <: InfiniteHitsProvided[?], THit] (val x: Self & InfiniteHitsProvided[THit]) extends AnyVal {
+  extension [Self <: InfiniteHitsProvided[?], THit](x: Self & InfiniteHitsProvided[THit]) {
     
-    @scala.inline
-    def setHasMore(value: Boolean): Self = StObject.set(x, "hasMore", value.asInstanceOf[js.Any])
+    inline def setHasMore(value: Boolean): Self = StObject.set(x, "hasMore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasPrevious(value: Boolean): Self = StObject.set(x, "hasPrevious", value.asInstanceOf[js.Any])
+    inline def setHasPrevious(value: Boolean): Self = StObject.set(x, "hasPrevious", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHits(value: js.Array[THit]): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
+    inline def setHits(value: js.Array[THit]): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHitsVarargs(value: THit*): Self = StObject.set(x, "hits", js.Array(value :_*))
+    inline def setHitsVarargs(value: THit*): Self = StObject.set(x, "hits", js.Array(value :_*))
     
-    @scala.inline
-    def setRefineNext(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "refineNext", js.Any.fromFunction1(value))
+    inline def setRefineNext(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "refineNext", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRefinePrevious(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "refinePrevious", js.Any.fromFunction1(value))
+    inline def setRefinePrevious(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "refinePrevious", js.Any.fromFunction1(value))
   }
 }

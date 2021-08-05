@@ -11,6 +11,5 @@ object wonkaOperatorTakeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def take[A](max: Double): Operator[A, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("take")(max.asInstanceOf[js.Any]).asInstanceOf[Operator[A, A]]
+  inline def take[A](max: Double): Operator[A, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("take")(max.asInstanceOf[js.Any]).asInstanceOf[Operator[A, A]]
 }

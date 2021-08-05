@@ -298,8 +298,7 @@ object mod {
     *Returns a milliseconds time since the epoch for the given UTC date
     */
   /* static member */
-  @scala.inline
-  def UTC(
+  inline def UTC(
     year: Double,
     month: Double,
     date: Double,
@@ -309,16 +308,11 @@ object mod {
     milliseconds: Double
   ): XDate = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], date.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any], milliseconds.asInstanceOf[js.Any])).asInstanceOf[XDate]
   /* static member */
-  @scala.inline
-  def UTC(year: Double, month: Double, day: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def UTC(year: Double, month: Double, day: Double, hours: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hours.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def UTC(year: Double, month: Double, day: Double, hours: Double, minutes: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def UTC(year: Double, month: Double, day: Double, hours: Double, minutes: Double, seconds: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def UTC(
+  inline def UTC(year: Double, month: Double, day: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def UTC(year: Double, month: Double, day: Double, hours: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hours.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def UTC(year: Double, month: Double, day: Double, hours: Double, minutes: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def UTC(year: Double, month: Double, day: Double, hours: Double, minutes: Double, seconds: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def UTC(
     year: Double,
     month: Double,
     day: Double,
@@ -327,10 +321,8 @@ object mod {
     seconds: Unit,
     ms: Double
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def UTC(year: Double, month: Double, day: Double, hours: Double, minutes: Unit, seconds: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def UTC(
+  inline def UTC(year: Double, month: Double, day: Double, hours: Double, minutes: Unit, seconds: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def UTC(
     year: Double,
     month: Double,
     day: Double,
@@ -339,14 +331,10 @@ object mod {
     seconds: Double,
     ms: Double
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def UTC(year: Double, month: Double, day: Double, hours: Double, minutes: Unit, seconds: Unit, ms: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def UTC(year: Double, month: Double, day: Double, hours: Unit, minutes: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def UTC(year: Double, month: Double, day: Double, hours: Unit, minutes: Double, seconds: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def UTC(
+  inline def UTC(year: Double, month: Double, day: Double, hours: Double, minutes: Unit, seconds: Unit, ms: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def UTC(year: Double, month: Double, day: Double, hours: Unit, minutes: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def UTC(year: Double, month: Double, day: Double, hours: Unit, minutes: Double, seconds: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def UTC(
     year: Double,
     month: Double,
     day: Double,
@@ -355,17 +343,12 @@ object mod {
     seconds: Double,
     ms: Double
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def UTC(year: Double, month: Double, day: Double, hours: Unit, minutes: Double, seconds: Unit, ms: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def UTC(year: Double, month: Double, day: Double, hours: Unit, minutes: Unit, seconds: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def UTC(year: Double, month: Double, day: Double, hours: Unit, minutes: Unit, seconds: Double, ms: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def UTC(year: Double, month: Double, day: Double, hours: Unit, minutes: Unit, seconds: Unit, ms: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def UTC(year: Double, month: Double, day: Double, hours: Unit, minutes: Double, seconds: Unit, ms: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def UTC(year: Double, month: Double, day: Double, hours: Unit, minutes: Unit, seconds: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def UTC(year: Double, month: Double, day: Double, hours: Unit, minutes: Unit, seconds: Double, ms: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def UTC(year: Double, month: Double, day: Double, hours: Unit, minutes: Unit, seconds: Unit, ms: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def UTC_Double(
+  inline def UTC_Double(
     year: Double,
     month: Double,
     day: Double,
@@ -379,15 +362,13 @@ object mod {
   @JSImport("xdate", "defaultLocale")
   @js.native
   def defaultLocale: String = js.native
-  @scala.inline
-  def defaultLocale_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultLocale")(x.asInstanceOf[js.Any])
+  inline def defaultLocale_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultLocale")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("xdate", "formatters")
   @js.native
   def formatters: formattersInfo = js.native
-  @scala.inline
-  def formatters_=(x: formattersInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formatters")(x.asInstanceOf[js.Any])
+  inline def formatters_=(x: formattersInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formatters")(x.asInstanceOf[js.Any])
   
   //------------
   //Static function
@@ -396,29 +377,25 @@ object mod {
     *Returns the number of days in the given month
     */
   /* static member */
-  @scala.inline
-  def getDaysInMonth(year: Double, month: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDaysInMonth")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getDaysInMonth(year: Double, month: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDaysInMonth")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /*
     *Returns the current date, as milliseconds since the epoch. You'll probably want to use new XDate() instead.
     */
   /* static member */
-  @scala.inline
-  def now(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[Double]
+  inline def now(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[Double]
   
   /*
     *Parses a date-string and returns milliseconds since the epoch. You'll probably want to use new XDate(dateString) instead.
     */
   /* static member */
-  @scala.inline
-  def parse(dateString: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateString.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def parse(dateString: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateString.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /*
     *Returns the current date with time cleared, as an XDate object
     */
   /* static member */
-  @scala.inline
-  def today(): XDate = ^.asInstanceOf[js.Dynamic].applyDynamic("today")().asInstanceOf[XDate]
+  inline def today(): XDate = ^.asInstanceOf[js.Dynamic].applyDynamic("today")().asInstanceOf[XDate]
   
   @js.native
   trait XDate extends StObject {
@@ -711,38 +688,28 @@ object mod {
   }
   object formattersInfo {
     
-    @scala.inline
-    def apply(): formattersInfo = {
+    inline def apply(): formattersInfo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[formattersInfo]
     }
     
-    @scala.inline
-    implicit class formattersInfoMutableBuilder[Self <: formattersInfo] (val x: Self) extends AnyVal {
+    extension [Self <: formattersInfo](x: Self) {
       
-      @scala.inline
-      def setI(value: String): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
+      inline def setI(value: String): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIUndefined: Self = StObject.set(x, "i", js.undefined)
+      inline def setIUndefined: Self = StObject.set(x, "i", js.undefined)
       
-      @scala.inline
-      def setU(value: String): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
+      inline def setU(value: String): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUUndefined: Self = StObject.set(x, "u", js.undefined)
+      inline def setUUndefined: Self = StObject.set(x, "u", js.undefined)
       
-      @scala.inline
-      def setVvv(value: (/* xdate */ XDate, /* useutc */ Boolean) => String): Self = StObject.set(x, "vvv", js.Any.fromFunction2(value))
+      inline def setVvv(value: (/* xdate */ XDate, /* useutc */ Boolean) => String): Self = StObject.set(x, "vvv", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setVvvUndefined: Self = StObject.set(x, "vvv", js.undefined)
+      inline def setVvvUndefined: Self = StObject.set(x, "vvv", js.undefined)
       
-      @scala.inline
-      def setXxx(value: String): Self = StObject.set(x, "xxx", value.asInstanceOf[js.Any])
+      inline def setXxx(value: String): Self = StObject.set(x, "xxx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXxxUndefined: Self = StObject.set(x, "xxx", js.undefined)
+      inline def setXxxUndefined: Self = StObject.set(x, "xxx", js.undefined)
     }
   }
   
@@ -762,62 +729,44 @@ object mod {
   }
   object localeDetail {
     
-    @scala.inline
-    def apply(): localeDetail = {
+    inline def apply(): localeDetail = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[localeDetail]
     }
     
-    @scala.inline
-    implicit class localeDetailMutableBuilder[Self <: localeDetail] (val x: Self) extends AnyVal {
+    extension [Self <: localeDetail](x: Self) {
       
-      @scala.inline
-      def setAmDesignator(value: String): Self = StObject.set(x, "amDesignator", value.asInstanceOf[js.Any])
+      inline def setAmDesignator(value: String): Self = StObject.set(x, "amDesignator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmDesignatorUndefined: Self = StObject.set(x, "amDesignator", js.undefined)
+      inline def setAmDesignatorUndefined: Self = StObject.set(x, "amDesignator", js.undefined)
       
-      @scala.inline
-      def setDayNames(value: js.Array[String]): Self = StObject.set(x, "dayNames", value.asInstanceOf[js.Any])
+      inline def setDayNames(value: js.Array[String]): Self = StObject.set(x, "dayNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDayNamesShort(value: js.Array[String]): Self = StObject.set(x, "dayNamesShort", value.asInstanceOf[js.Any])
+      inline def setDayNamesShort(value: js.Array[String]): Self = StObject.set(x, "dayNamesShort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDayNamesShortUndefined: Self = StObject.set(x, "dayNamesShort", js.undefined)
+      inline def setDayNamesShortUndefined: Self = StObject.set(x, "dayNamesShort", js.undefined)
       
-      @scala.inline
-      def setDayNamesShortVarargs(value: String*): Self = StObject.set(x, "dayNamesShort", js.Array(value :_*))
+      inline def setDayNamesShortVarargs(value: String*): Self = StObject.set(x, "dayNamesShort", js.Array(value :_*))
       
-      @scala.inline
-      def setDayNamesUndefined: Self = StObject.set(x, "dayNames", js.undefined)
+      inline def setDayNamesUndefined: Self = StObject.set(x, "dayNames", js.undefined)
       
-      @scala.inline
-      def setDayNamesVarargs(value: String*): Self = StObject.set(x, "dayNames", js.Array(value :_*))
+      inline def setDayNamesVarargs(value: String*): Self = StObject.set(x, "dayNames", js.Array(value :_*))
       
-      @scala.inline
-      def setMonthNames(value: js.Array[String]): Self = StObject.set(x, "monthNames", value.asInstanceOf[js.Any])
+      inline def setMonthNames(value: js.Array[String]): Self = StObject.set(x, "monthNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthNamesShort(value: js.Array[String]): Self = StObject.set(x, "monthNamesShort", value.asInstanceOf[js.Any])
+      inline def setMonthNamesShort(value: js.Array[String]): Self = StObject.set(x, "monthNamesShort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthNamesShortUndefined: Self = StObject.set(x, "monthNamesShort", js.undefined)
+      inline def setMonthNamesShortUndefined: Self = StObject.set(x, "monthNamesShort", js.undefined)
       
-      @scala.inline
-      def setMonthNamesShortVarargs(value: String*): Self = StObject.set(x, "monthNamesShort", js.Array(value :_*))
+      inline def setMonthNamesShortVarargs(value: String*): Self = StObject.set(x, "monthNamesShort", js.Array(value :_*))
       
-      @scala.inline
-      def setMonthNamesUndefined: Self = StObject.set(x, "monthNames", js.undefined)
+      inline def setMonthNamesUndefined: Self = StObject.set(x, "monthNames", js.undefined)
       
-      @scala.inline
-      def setMonthNamesVarargs(value: String*): Self = StObject.set(x, "monthNames", js.Array(value :_*))
+      inline def setMonthNamesVarargs(value: String*): Self = StObject.set(x, "monthNames", js.Array(value :_*))
       
-      @scala.inline
-      def setPmDesignator(value: String): Self = StObject.set(x, "pmDesignator", value.asInstanceOf[js.Any])
+      inline def setPmDesignator(value: String): Self = StObject.set(x, "pmDesignator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPmDesignatorUndefined: Self = StObject.set(x, "pmDesignator", js.undefined)
+      inline def setPmDesignatorUndefined: Self = StObject.set(x, "pmDesignator", js.undefined)
     }
   }
   

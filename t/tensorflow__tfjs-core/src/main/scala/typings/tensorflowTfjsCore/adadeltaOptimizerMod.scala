@@ -16,15 +16,15 @@ object adadeltaOptimizerMod {
     def this(learningRate: Double, rho: Double) = this()
     def this(learningRate: Double, rho: Double, epsilon: Double) = this()
     
-    var accumulatedGrads: js.Any = js.native
+    /* private */ var accumulatedGrads: js.Any = js.native
     
-    var accumulatedUpdates: js.Any = js.native
+    /* private */ var accumulatedUpdates: js.Any = js.native
     
-    var epsilon: Double = js.native
+    /* protected */ var epsilon: Double = js.native
     
-    var learningRate: Double = js.native
+    /* protected */ var learningRate: Double = js.native
     
-    var rho: Double = js.native
+    /* protected */ var rho: Double = js.native
   }
   /* static members */
   object AdadeltaOptimizer {
@@ -37,11 +37,9 @@ object adadeltaOptimizerMod {
     @JSImport("@tensorflow/tfjs-core/dist/optimizers/adadelta_optimizer", "AdadeltaOptimizer.className")
     @js.native
     def className: String = js.native
-    @scala.inline
-    def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+    inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
     
     /** @nocollapse */
-    @scala.inline
-    def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
   }
 }

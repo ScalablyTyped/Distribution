@@ -19,8 +19,7 @@ trait EnhancedMouseEvent
 }
 object EnhancedMouseEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Buttons: Double,
     ClickCount: Double,
     Modifiers: Double,
@@ -34,10 +33,8 @@ object EnhancedMouseEvent {
     __obj.asInstanceOf[EnhancedMouseEvent]
   }
   
-  @scala.inline
-  implicit class EnhancedMouseEventMutableBuilder[Self <: EnhancedMouseEvent] (val x: Self) extends AnyVal {
+  extension [Self <: EnhancedMouseEvent](x: Self) {
     
-    @scala.inline
-    def setTarget(value: XInterface): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: XInterface): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
   }
 }

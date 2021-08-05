@@ -64,61 +64,43 @@ trait IssuesListForAuthenticatedUserEndpoint extends StObject {
 }
 object IssuesListForAuthenticatedUserEndpoint {
   
-  @scala.inline
-  def apply(): IssuesListForAuthenticatedUserEndpoint = {
+  inline def apply(): IssuesListForAuthenticatedUserEndpoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IssuesListForAuthenticatedUserEndpoint]
   }
   
-  @scala.inline
-  implicit class IssuesListForAuthenticatedUserEndpointMutableBuilder[Self <: IssuesListForAuthenticatedUserEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: IssuesListForAuthenticatedUserEndpoint](x: Self) {
     
-    @scala.inline
-    def setDirection(value: asc | desc): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: asc | desc): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    @scala.inline
-    def setFilter(value: assigned | created | mentioned | subscribed | all): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: assigned | created | mentioned | subscribed | all): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setLabels(value: String): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: String): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
-    @scala.inline
-    def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
+    inline def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
+    inline def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
     
-    @scala.inline
-    def setSince(value: String): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
+    inline def setSince(value: String): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
+    inline def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
     
-    @scala.inline
-    def setSort(value: created | updated | comments): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: created | updated | comments): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    @scala.inline
-    def setState(value: open | closed | all): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: open | closed | all): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

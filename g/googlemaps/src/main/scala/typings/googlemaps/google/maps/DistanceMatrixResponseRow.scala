@@ -19,19 +19,15 @@ trait DistanceMatrixResponseRow extends StObject {
 }
 object DistanceMatrixResponseRow {
   
-  @scala.inline
-  def apply(elements: js.Array[DistanceMatrixResponseElement]): DistanceMatrixResponseRow = {
+  inline def apply(elements: js.Array[DistanceMatrixResponseElement]): DistanceMatrixResponseRow = {
     val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistanceMatrixResponseRow]
   }
   
-  @scala.inline
-  implicit class DistanceMatrixResponseRowMutableBuilder[Self <: DistanceMatrixResponseRow] (val x: Self) extends AnyVal {
+  extension [Self <: DistanceMatrixResponseRow](x: Self) {
     
-    @scala.inline
-    def setElements(value: js.Array[DistanceMatrixResponseElement]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+    inline def setElements(value: js.Array[DistanceMatrixResponseElement]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementsVarargs(value: DistanceMatrixResponseElement*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: DistanceMatrixResponseElement*): Self = StObject.set(x, "elements", js.Array(value :_*))
   }
 }

@@ -22,19 +22,15 @@ trait WelcomeDynamicResultSetStruct extends StObject {
 }
 object WelcomeDynamicResultSetStruct {
   
-  @scala.inline
-  def apply(New: XResultSet, Old: XResultSet): WelcomeDynamicResultSetStruct = {
+  inline def apply(New: XResultSet, Old: XResultSet): WelcomeDynamicResultSetStruct = {
     val __obj = js.Dynamic.literal(New = New.asInstanceOf[js.Any], Old = Old.asInstanceOf[js.Any])
     __obj.asInstanceOf[WelcomeDynamicResultSetStruct]
   }
   
-  @scala.inline
-  implicit class WelcomeDynamicResultSetStructMutableBuilder[Self <: WelcomeDynamicResultSetStruct] (val x: Self) extends AnyVal {
+  extension [Self <: WelcomeDynamicResultSetStruct](x: Self) {
     
-    @scala.inline
-    def setNew(value: XResultSet): Self = StObject.set(x, "New", value.asInstanceOf[js.Any])
+    inline def setNew(value: XResultSet): Self = StObject.set(x, "New", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOld(value: XResultSet): Self = StObject.set(x, "Old", value.asInstanceOf[js.Any])
+    inline def setOld(value: XResultSet): Self = StObject.set(x, "Old", value.asInstanceOf[js.Any])
   }
 }

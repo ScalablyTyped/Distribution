@@ -35,55 +35,39 @@ trait TransferSpec extends StObject {
 }
 object TransferSpec {
   
-  @scala.inline
-  def apply(): TransferSpec = {
+  inline def apply(): TransferSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TransferSpec]
   }
   
-  @scala.inline
-  implicit class TransferSpecMutableBuilder[Self <: TransferSpec] (val x: Self) extends AnyVal {
+  extension [Self <: TransferSpec](x: Self) {
     
-    @scala.inline
-    def setAwsS3DataSource(value: AwsS3Data): Self = StObject.set(x, "awsS3DataSource", value.asInstanceOf[js.Any])
+    inline def setAwsS3DataSource(value: AwsS3Data): Self = StObject.set(x, "awsS3DataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsS3DataSourceUndefined: Self = StObject.set(x, "awsS3DataSource", js.undefined)
+    inline def setAwsS3DataSourceUndefined: Self = StObject.set(x, "awsS3DataSource", js.undefined)
     
-    @scala.inline
-    def setAzureBlobStorageDataSource(value: AzureBlobStorageData): Self = StObject.set(x, "azureBlobStorageDataSource", value.asInstanceOf[js.Any])
+    inline def setAzureBlobStorageDataSource(value: AzureBlobStorageData): Self = StObject.set(x, "azureBlobStorageDataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAzureBlobStorageDataSourceUndefined: Self = StObject.set(x, "azureBlobStorageDataSource", js.undefined)
+    inline def setAzureBlobStorageDataSourceUndefined: Self = StObject.set(x, "azureBlobStorageDataSource", js.undefined)
     
-    @scala.inline
-    def setGcsDataSink(value: GcsData): Self = StObject.set(x, "gcsDataSink", value.asInstanceOf[js.Any])
+    inline def setGcsDataSink(value: GcsData): Self = StObject.set(x, "gcsDataSink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcsDataSinkUndefined: Self = StObject.set(x, "gcsDataSink", js.undefined)
+    inline def setGcsDataSinkUndefined: Self = StObject.set(x, "gcsDataSink", js.undefined)
     
-    @scala.inline
-    def setGcsDataSource(value: GcsData): Self = StObject.set(x, "gcsDataSource", value.asInstanceOf[js.Any])
+    inline def setGcsDataSource(value: GcsData): Self = StObject.set(x, "gcsDataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcsDataSourceUndefined: Self = StObject.set(x, "gcsDataSource", js.undefined)
+    inline def setGcsDataSourceUndefined: Self = StObject.set(x, "gcsDataSource", js.undefined)
     
-    @scala.inline
-    def setHttpDataSource(value: HttpData): Self = StObject.set(x, "httpDataSource", value.asInstanceOf[js.Any])
+    inline def setHttpDataSource(value: HttpData): Self = StObject.set(x, "httpDataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpDataSourceUndefined: Self = StObject.set(x, "httpDataSource", js.undefined)
+    inline def setHttpDataSourceUndefined: Self = StObject.set(x, "httpDataSource", js.undefined)
     
-    @scala.inline
-    def setObjectConditions(value: ObjectConditions): Self = StObject.set(x, "objectConditions", value.asInstanceOf[js.Any])
+    inline def setObjectConditions(value: ObjectConditions): Self = StObject.set(x, "objectConditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectConditionsUndefined: Self = StObject.set(x, "objectConditions", js.undefined)
+    inline def setObjectConditionsUndefined: Self = StObject.set(x, "objectConditions", js.undefined)
     
-    @scala.inline
-    def setTransferOptions(value: TransferOptions): Self = StObject.set(x, "transferOptions", value.asInstanceOf[js.Any])
+    inline def setTransferOptions(value: TransferOptions): Self = StObject.set(x, "transferOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransferOptionsUndefined: Self = StObject.set(x, "transferOptions", js.undefined)
+    inline def setTransferOptionsUndefined: Self = StObject.set(x, "transferOptions", js.undefined)
   }
 }

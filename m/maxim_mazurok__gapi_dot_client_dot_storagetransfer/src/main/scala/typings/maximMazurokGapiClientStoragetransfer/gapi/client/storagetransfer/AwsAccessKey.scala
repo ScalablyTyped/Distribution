@@ -14,25 +14,19 @@ trait AwsAccessKey extends StObject {
 }
 object AwsAccessKey {
   
-  @scala.inline
-  def apply(): AwsAccessKey = {
+  inline def apply(): AwsAccessKey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsAccessKey]
   }
   
-  @scala.inline
-  implicit class AwsAccessKeyMutableBuilder[Self <: AwsAccessKey] (val x: Self) extends AnyVal {
+  extension [Self <: AwsAccessKey](x: Self) {
     
-    @scala.inline
-    def setAccessKeyId(value: String): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
+    inline def setAccessKeyId(value: String): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessKeyIdUndefined: Self = StObject.set(x, "accessKeyId", js.undefined)
+    inline def setAccessKeyIdUndefined: Self = StObject.set(x, "accessKeyId", js.undefined)
     
-    @scala.inline
-    def setSecretAccessKey(value: String): Self = StObject.set(x, "secretAccessKey", value.asInstanceOf[js.Any])
+    inline def setSecretAccessKey(value: String): Self = StObject.set(x, "secretAccessKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretAccessKeyUndefined: Self = StObject.set(x, "secretAccessKey", js.undefined)
+    inline def setSecretAccessKeyUndefined: Self = StObject.set(x, "secretAccessKey", js.undefined)
   }
 }

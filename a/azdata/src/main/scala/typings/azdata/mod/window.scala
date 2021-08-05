@@ -41,37 +41,25 @@ object window {
     /* 1 */ val Warning: typings.azdata.mod.window.MessageLevel.Warning & Double = js.native
   }
   
-  @scala.inline
-  def closeDialog(dialog: Dialog): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeDialog")(dialog.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def closeDialog(dialog: Dialog): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeDialog")(dialog.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def createButton(label: String): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("createButton")(label.asInstanceOf[js.Any]).asInstanceOf[Button]
-  @scala.inline
-  def createButton(label: String, position: DialogButtonPosition): Button = (^.asInstanceOf[js.Dynamic].applyDynamic("createButton")(label.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Button]
+  inline def createButton(label: String): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("createButton")(label.asInstanceOf[js.Any]).asInstanceOf[Button]
+  inline def createButton(label: String, position: DialogButtonPosition): Button = (^.asInstanceOf[js.Dynamic].applyDynamic("createButton")(label.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Button]
   
-  @scala.inline
-  def createModelViewDialog(title: String): Dialog = ^.asInstanceOf[js.Dynamic].applyDynamic("createModelViewDialog")(title.asInstanceOf[js.Any]).asInstanceOf[Dialog]
-  @scala.inline
-  def createModelViewDialog(title: String, dialogName: String): Dialog = (^.asInstanceOf[js.Dynamic].applyDynamic("createModelViewDialog")(title.asInstanceOf[js.Any], dialogName.asInstanceOf[js.Any])).asInstanceOf[Dialog]
-  @scala.inline
-  def createModelViewDialog(title: String, dialogName: String, isWide: Boolean): Dialog = (^.asInstanceOf[js.Dynamic].applyDynamic("createModelViewDialog")(title.asInstanceOf[js.Any], dialogName.asInstanceOf[js.Any], isWide.asInstanceOf[js.Any])).asInstanceOf[Dialog]
-  @scala.inline
-  def createModelViewDialog(title: String, dialogName: Unit, isWide: Boolean): Dialog = (^.asInstanceOf[js.Dynamic].applyDynamic("createModelViewDialog")(title.asInstanceOf[js.Any], dialogName.asInstanceOf[js.Any], isWide.asInstanceOf[js.Any])).asInstanceOf[Dialog]
+  inline def createModelViewDialog(title: String): Dialog = ^.asInstanceOf[js.Dynamic].applyDynamic("createModelViewDialog")(title.asInstanceOf[js.Any]).asInstanceOf[Dialog]
+  inline def createModelViewDialog(title: String, dialogName: String): Dialog = (^.asInstanceOf[js.Dynamic].applyDynamic("createModelViewDialog")(title.asInstanceOf[js.Any], dialogName.asInstanceOf[js.Any])).asInstanceOf[Dialog]
+  inline def createModelViewDialog(title: String, dialogName: String, isWide: Boolean): Dialog = (^.asInstanceOf[js.Dynamic].applyDynamic("createModelViewDialog")(title.asInstanceOf[js.Any], dialogName.asInstanceOf[js.Any], isWide.asInstanceOf[js.Any])).asInstanceOf[Dialog]
+  inline def createModelViewDialog(title: String, dialogName: Unit, isWide: Boolean): Dialog = (^.asInstanceOf[js.Dynamic].applyDynamic("createModelViewDialog")(title.asInstanceOf[js.Any], dialogName.asInstanceOf[js.Any], isWide.asInstanceOf[js.Any])).asInstanceOf[Dialog]
   
-  @scala.inline
-  def createTab(title: String): DialogTab = ^.asInstanceOf[js.Dynamic].applyDynamic("createTab")(title.asInstanceOf[js.Any]).asInstanceOf[DialogTab]
+  inline def createTab(title: String): DialogTab = ^.asInstanceOf[js.Dynamic].applyDynamic("createTab")(title.asInstanceOf[js.Any]).asInstanceOf[DialogTab]
   
-  @scala.inline
-  def createWebViewDialog(title: String): ModalDialog = ^.asInstanceOf[js.Dynamic].applyDynamic("createWebViewDialog")(title.asInstanceOf[js.Any]).asInstanceOf[ModalDialog]
+  inline def createWebViewDialog(title: String): ModalDialog = ^.asInstanceOf[js.Dynamic].applyDynamic("createWebViewDialog")(title.asInstanceOf[js.Any]).asInstanceOf[ModalDialog]
   
-  @scala.inline
-  def createWizard(title: String): Wizard = ^.asInstanceOf[js.Dynamic].applyDynamic("createWizard")(title.asInstanceOf[js.Any]).asInstanceOf[Wizard]
+  inline def createWizard(title: String): Wizard = ^.asInstanceOf[js.Dynamic].applyDynamic("createWizard")(title.asInstanceOf[js.Any]).asInstanceOf[Wizard]
   
-  @scala.inline
-  def createWizardPage(title: String): WizardPage = ^.asInstanceOf[js.Dynamic].applyDynamic("createWizardPage")(title.asInstanceOf[js.Any]).asInstanceOf[WizardPage]
+  inline def createWizardPage(title: String): WizardPage = ^.asInstanceOf[js.Dynamic].applyDynamic("createWizardPage")(title.asInstanceOf[js.Any]).asInstanceOf[WizardPage]
   
-  @scala.inline
-  def openDialog(dialog: Dialog): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openDialog")(dialog.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def openDialog(dialog: Dialog): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openDialog")(dialog.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @js.native
   trait Button extends StObject {
@@ -181,11 +169,9 @@ object window {
   trait DialogButtonPosition extends StObject
   object DialogButtonPosition {
     
-    @scala.inline
-    def left: typings.azdata.azdataStrings.left = "left".asInstanceOf[typings.azdata.azdataStrings.left]
+    inline def left: typings.azdata.azdataStrings.left = "left".asInstanceOf[typings.azdata.azdataStrings.left]
     
-    @scala.inline
-    def right: typings.azdata.azdataStrings.right = "right".asInstanceOf[typings.azdata.azdataStrings.right]
+    inline def right: typings.azdata.azdataStrings.right = "right".asInstanceOf[typings.azdata.azdataStrings.right]
   }
   
   trait DialogMessage extends StObject {
@@ -198,29 +184,22 @@ object window {
   }
   object DialogMessage {
     
-    @scala.inline
-    def apply(text: String): DialogMessage = {
+    inline def apply(text: String): DialogMessage = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[DialogMessage]
     }
     
-    @scala.inline
-    implicit class DialogMessageMutableBuilder[Self <: DialogMessage] (val x: Self) extends AnyVal {
+    extension [Self <: DialogMessage](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setLevel(value: MessageLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: MessageLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -453,20 +432,16 @@ object window {
   }
   object WizardPageChangeInfo {
     
-    @scala.inline
-    def apply(lastPage: Double, newPage: Double): WizardPageChangeInfo = {
+    inline def apply(lastPage: Double, newPage: Double): WizardPageChangeInfo = {
       val __obj = js.Dynamic.literal(lastPage = lastPage.asInstanceOf[js.Any], newPage = newPage.asInstanceOf[js.Any])
       __obj.asInstanceOf[WizardPageChangeInfo]
     }
     
-    @scala.inline
-    implicit class WizardPageChangeInfoMutableBuilder[Self <: WizardPageChangeInfo] (val x: Self) extends AnyVal {
+    extension [Self <: WizardPageChangeInfo](x: Self) {
       
-      @scala.inline
-      def setLastPage(value: Double): Self = StObject.set(x, "lastPage", value.asInstanceOf[js.Any])
+      inline def setLastPage(value: Double): Self = StObject.set(x, "lastPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewPage(value: Double): Self = StObject.set(x, "newPage", value.asInstanceOf[js.Any])
+      inline def setNewPage(value: Double): Self = StObject.set(x, "newPage", value.asInstanceOf[js.Any])
     }
   }
 }

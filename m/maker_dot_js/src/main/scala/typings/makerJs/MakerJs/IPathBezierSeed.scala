@@ -23,26 +23,20 @@ trait IPathBezierSeed
 }
 object IPathBezierSeed {
   
-  @scala.inline
-  def apply(controls: js.Array[IPoint], end: IPoint, origin: IPoint, `type`: String): IPathBezierSeed = {
+  inline def apply(controls: js.Array[IPoint], end: IPoint, origin: IPoint, `type`: String): IPathBezierSeed = {
     val __obj = js.Dynamic.literal(controls = controls.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPathBezierSeed]
   }
   
-  @scala.inline
-  implicit class IPathBezierSeedMutableBuilder[Self <: IPathBezierSeed] (val x: Self) extends AnyVal {
+  extension [Self <: IPathBezierSeed](x: Self) {
     
-    @scala.inline
-    def setControls(value: js.Array[IPoint]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
+    inline def setControls(value: js.Array[IPoint]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlsVarargs(value: IPoint*): Self = StObject.set(x, "controls", js.Array(value :_*))
+    inline def setControlsVarargs(value: IPoint*): Self = StObject.set(x, "controls", js.Array(value :_*))
     
-    @scala.inline
-    def setParentRange(value: IBezierRange): Self = StObject.set(x, "parentRange", value.asInstanceOf[js.Any])
+    inline def setParentRange(value: IBezierRange): Self = StObject.set(x, "parentRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentRangeUndefined: Self = StObject.set(x, "parentRange", js.undefined)
+    inline def setParentRangeUndefined: Self = StObject.set(x, "parentRange", js.undefined)
   }
 }

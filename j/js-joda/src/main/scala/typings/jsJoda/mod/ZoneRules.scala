@@ -48,6 +48,5 @@ object ZoneRules {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def of(offest: ZoneOffset): ZoneRules = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(offest.asInstanceOf[js.Any]).asInstanceOf[ZoneRules]
+  inline def of(offest: ZoneOffset): ZoneRules = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(offest.asInstanceOf[js.Any]).asInstanceOf[ZoneRules]
 }

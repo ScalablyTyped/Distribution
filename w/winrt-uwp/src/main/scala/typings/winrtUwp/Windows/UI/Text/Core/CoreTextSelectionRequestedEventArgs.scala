@@ -12,16 +12,13 @@ trait CoreTextSelectionRequestedEventArgs extends StObject {
 }
 object CoreTextSelectionRequestedEventArgs {
   
-  @scala.inline
-  def apply(request: CoreTextSelectionRequest): CoreTextSelectionRequestedEventArgs = {
+  inline def apply(request: CoreTextSelectionRequest): CoreTextSelectionRequestedEventArgs = {
     val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
     __obj.asInstanceOf[CoreTextSelectionRequestedEventArgs]
   }
   
-  @scala.inline
-  implicit class CoreTextSelectionRequestedEventArgsMutableBuilder[Self <: CoreTextSelectionRequestedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: CoreTextSelectionRequestedEventArgs](x: Self) {
     
-    @scala.inline
-    def setRequest(value: CoreTextSelectionRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: CoreTextSelectionRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
   }
 }

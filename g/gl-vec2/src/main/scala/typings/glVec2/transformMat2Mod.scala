@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object transformMat2Mod {
   
-  @scala.inline
-  def apply(out: js.Array[Double], a: js.Array[Double], m: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].apply(out.asInstanceOf[js.Any], a.asInstanceOf[js.Any], m.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def apply(out: js.Array[Double], a: js.Array[Double], m: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].apply(out.asInstanceOf[js.Any], a.asInstanceOf[js.Any], m.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
   @JSImport("gl-vec2/transformMat2", JSImport.Namespace)
   @js.native

@@ -14,22 +14,17 @@ trait Xshift extends StObject {
 }
 object Xshift {
   
-  @scala.inline
-  def apply(code: String, x_shift: Double, y_shift: Double): Xshift = {
+  inline def apply(code: String, x_shift: Double, y_shift: Double): Xshift = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], x_shift = x_shift.asInstanceOf[js.Any], y_shift = y_shift.asInstanceOf[js.Any])
     __obj.asInstanceOf[Xshift]
   }
   
-  @scala.inline
-  implicit class XshiftMutableBuilder[Self <: Xshift] (val x: Self) extends AnyVal {
+  extension [Self <: Xshift](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX_shift(value: Double): Self = StObject.set(x, "x_shift", value.asInstanceOf[js.Any])
+    inline def setX_shift(value: Double): Self = StObject.set(x, "x_shift", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY_shift(value: Double): Self = StObject.set(x, "y_shift", value.asInstanceOf[js.Any])
+    inline def setY_shift(value: Double): Self = StObject.set(x, "y_shift", value.asInstanceOf[js.Any])
   }
 }

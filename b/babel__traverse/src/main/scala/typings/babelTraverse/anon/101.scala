@@ -11,17 +11,14 @@ trait `101` extends StObject {
 }
 object `101` {
   
-  @scala.inline
-  def apply(): `101` = {
+  inline def apply(): `101` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("TSInferType")
     __obj.asInstanceOf[`101`]
   }
   
-  @scala.inline
-  implicit class `101MutableBuilder`[Self <: `101`] (val x: Self) extends AnyVal {
+  extension [Self <: `101`](x: Self) {
     
-    @scala.inline
-    def setType(value: TSInferType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TSInferType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

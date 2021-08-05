@@ -23,10 +23,10 @@ object mod {
     /* CompleteClass */
     override def handle(request: Request): js.Promise[Unit] = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var operationSecurity: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var securitySets: js.Any = js.native
   }
   
@@ -36,17 +36,14 @@ object mod {
   }
   object IOpenAPISecurityHandler {
     
-    @scala.inline
-    def apply(handle: Request => js.Promise[Unit]): IOpenAPISecurityHandler = {
+    inline def apply(handle: Request => js.Promise[Unit]): IOpenAPISecurityHandler = {
       val __obj = js.Dynamic.literal(handle = js.Any.fromFunction1(handle))
       __obj.asInstanceOf[IOpenAPISecurityHandler]
     }
     
-    @scala.inline
-    implicit class IOpenAPISecurityHandlerMutableBuilder[Self <: IOpenAPISecurityHandler] (val x: Self) extends AnyVal {
+    extension [Self <: IOpenAPISecurityHandler](x: Self) {
       
-      @scala.inline
-      def setHandle(value: Request => js.Promise[Unit]): Self = StObject.set(x, "handle", js.Any.fromFunction1(value))
+      inline def setHandle(value: Request => js.Promise[Unit]): Self = StObject.set(x, "handle", js.Any.fromFunction1(value))
     }
   }
   
@@ -56,29 +53,24 @@ object mod {
     
     def handle(request: js.Any): js.Promise[Unit]
     
-    var operationSecurity: js.Any
+    /* private */ var operationSecurity: js.Any
     
-    var securitySets: js.Any
+    /* private */ var securitySets: js.Any
   }
   object OpenAPISecurityHandler {
     
-    @scala.inline
-    def apply(handle: js.Any => js.Promise[Unit], operationSecurity: js.Any, securitySets: js.Any): OpenAPISecurityHandler = {
+    inline def apply(handle: js.Any => js.Promise[Unit], operationSecurity: js.Any, securitySets: js.Any): OpenAPISecurityHandler = {
       val __obj = js.Dynamic.literal(handle = js.Any.fromFunction1(handle), operationSecurity = operationSecurity.asInstanceOf[js.Any], securitySets = securitySets.asInstanceOf[js.Any])
       __obj.asInstanceOf[OpenAPISecurityHandler]
     }
     
-    @scala.inline
-    implicit class OpenAPISecurityHandlerMutableBuilder[Self <: OpenAPISecurityHandler] (val x: Self) extends AnyVal {
+    extension [Self <: OpenAPISecurityHandler](x: Self) {
       
-      @scala.inline
-      def setHandle(value: js.Any => js.Promise[Unit]): Self = StObject.set(x, "handle", js.Any.fromFunction1(value))
+      inline def setHandle(value: js.Any => js.Promise[Unit]): Self = StObject.set(x, "handle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOperationSecurity(value: js.Any): Self = StObject.set(x, "operationSecurity", value.asInstanceOf[js.Any])
+      inline def setOperationSecurity(value: js.Any): Self = StObject.set(x, "operationSecurity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecuritySets(value: js.Any): Self = StObject.set(x, "securitySets", value.asInstanceOf[js.Any])
+      inline def setSecuritySets(value: js.Any): Self = StObject.set(x, "securitySets", value.asInstanceOf[js.Any])
     }
   }
   
@@ -96,8 +88,7 @@ object mod {
   }
   object OpenAPISecurityHandlerArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       loggingKey: String,
       operationSecurity: js.Array[
           SecurityRequirementObject | typings.openapiTypes.mod.OpenAPIV3.SecurityRequirementObject
@@ -109,27 +100,21 @@ object mod {
       __obj.asInstanceOf[OpenAPISecurityHandlerArgs]
     }
     
-    @scala.inline
-    implicit class OpenAPISecurityHandlerArgsMutableBuilder[Self <: OpenAPISecurityHandlerArgs] (val x: Self) extends AnyVal {
+    extension [Self <: OpenAPISecurityHandlerArgs](x: Self) {
       
-      @scala.inline
-      def setLoggingKey(value: String): Self = StObject.set(x, "loggingKey", value.asInstanceOf[js.Any])
+      inline def setLoggingKey(value: String): Self = StObject.set(x, "loggingKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperationSecurity(
+      inline def setOperationSecurity(
         value: js.Array[
               SecurityRequirementObject | typings.openapiTypes.mod.OpenAPIV3.SecurityRequirementObject
             ]
       ): Self = StObject.set(x, "operationSecurity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperationSecurityVarargs(value: (SecurityRequirementObject | typings.openapiTypes.mod.OpenAPIV3.SecurityRequirementObject)*): Self = StObject.set(x, "operationSecurity", js.Array(value :_*))
+      inline def setOperationSecurityVarargs(value: (SecurityRequirementObject | typings.openapiTypes.mod.OpenAPIV3.SecurityRequirementObject)*): Self = StObject.set(x, "operationSecurity", js.Array(value :_*))
       
-      @scala.inline
-      def setSecurityDefinitions(value: SecurityDefinitionsObject): Self = StObject.set(x, "securityDefinitions", value.asInstanceOf[js.Any])
+      inline def setSecurityDefinitions(value: SecurityDefinitionsObject): Self = StObject.set(x, "securityDefinitions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityHandlers(value: SecurityHandlers): Self = StObject.set(x, "securityHandlers", value.asInstanceOf[js.Any])
+      inline def setSecurityHandlers(value: SecurityHandlers): Self = StObject.set(x, "securityHandlers", value.asInstanceOf[js.Any])
     }
   }
   

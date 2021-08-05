@@ -21,23 +21,18 @@ object mod extends Shortcut {
   }
   object NoScroll {
     
-    @scala.inline
-    def apply(off: () => Unit, on: () => Unit, toggle: () => Unit): NoScroll = {
+    inline def apply(off: () => Unit, on: () => Unit, toggle: () => Unit): NoScroll = {
       val __obj = js.Dynamic.literal(off = js.Any.fromFunction0(off), on = js.Any.fromFunction0(on), toggle = js.Any.fromFunction0(toggle))
       __obj.asInstanceOf[NoScroll]
     }
     
-    @scala.inline
-    implicit class NoScrollMutableBuilder[Self <: NoScroll] (val x: Self) extends AnyVal {
+    extension [Self <: NoScroll](x: Self) {
       
-      @scala.inline
-      def setOff(value: () => Unit): Self = StObject.set(x, "off", js.Any.fromFunction0(value))
+      inline def setOff(value: () => Unit): Self = StObject.set(x, "off", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOn(value: () => Unit): Self = StObject.set(x, "on", js.Any.fromFunction0(value))
+      inline def setOn(value: () => Unit): Self = StObject.set(x, "on", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
+      inline def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
     }
   }
   

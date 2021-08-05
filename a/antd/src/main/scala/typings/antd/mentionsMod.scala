@@ -40,11 +40,9 @@ object mentionsMod extends Shortcut {
   trait MentionPlacement extends StObject
   object MentionPlacement {
     
-    @scala.inline
-    def bottom: typings.antd.antdStrings.bottom = "bottom".asInstanceOf[typings.antd.antdStrings.bottom]
+    inline def bottom: typings.antd.antdStrings.bottom = "bottom".asInstanceOf[typings.antd.antdStrings.bottom]
     
-    @scala.inline
-    def top: typings.antd.antdStrings.top = "top".asInstanceOf[typings.antd.antdStrings.top]
+    inline def top: typings.antd.antdStrings.top = "top".asInstanceOf[typings.antd.antdStrings.top]
   }
   
   trait MentionProps
@@ -55,20 +53,16 @@ object mentionsMod extends Shortcut {
   }
   object MentionProps {
     
-    @scala.inline
-    def apply(): MentionProps = {
+    inline def apply(): MentionProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MentionProps]
     }
     
-    @scala.inline
-    implicit class MentionPropsMutableBuilder[Self <: MentionProps] (val x: Self) extends AnyVal {
+    extension [Self <: MentionProps](x: Self) {
       
-      @scala.inline
-      def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+      inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
     }
   }
   
@@ -78,17 +72,14 @@ object mentionsMod extends Shortcut {
   }
   object MentionState {
     
-    @scala.inline
-    def apply(focused: Boolean): MentionState = {
+    inline def apply(focused: Boolean): MentionState = {
       val __obj = js.Dynamic.literal(focused = focused.asInstanceOf[js.Any])
       __obj.asInstanceOf[MentionState]
     }
     
-    @scala.inline
-    implicit class MentionStateMutableBuilder[Self <: MentionState] (val x: Self) extends AnyVal {
+    extension [Self <: MentionState](x: Self) {
       
-      @scala.inline
-      def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
+      inline def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
     }
   }
   
@@ -100,29 +91,22 @@ object mentionsMod extends Shortcut {
   }
   object MentionsConfig {
     
-    @scala.inline
-    def apply(): MentionsConfig = {
+    inline def apply(): MentionsConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MentionsConfig]
     }
     
-    @scala.inline
-    implicit class MentionsConfigMutableBuilder[Self <: MentionsConfig] (val x: Self) extends AnyVal {
+    extension [Self <: MentionsConfig](x: Self) {
       
-      @scala.inline
-      def setPrefix(value: String | js.Array[String]): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String | js.Array[String]): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setPrefixVarargs(value: String*): Self = StObject.set(x, "prefix", js.Array(value :_*))
+      inline def setPrefixVarargs(value: String*): Self = StObject.set(x, "prefix", js.Array(value :_*))
       
-      @scala.inline
-      def setSplit(value: String): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
+      inline def setSplit(value: String): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSplitUndefined: Self = StObject.set(x, "split", js.undefined)
+      inline def setSplitUndefined: Self = StObject.set(x, "split", js.undefined)
     }
   }
   
@@ -134,20 +118,16 @@ object mentionsMod extends Shortcut {
   }
   object MentionsEntity {
     
-    @scala.inline
-    def apply(prefix: String, value: String): MentionsEntity = {
+    inline def apply(prefix: String, value: String): MentionsEntity = {
       val __obj = js.Dynamic.literal(prefix = prefix.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[MentionsEntity]
     }
     
-    @scala.inline
-    implicit class MentionsEntityMutableBuilder[Self <: MentionsEntity] (val x: Self) extends AnyVal {
+    extension [Self <: MentionsEntity](x: Self) {
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -161,23 +141,18 @@ object mentionsMod extends Shortcut {
   }
   object OptionProps {
     
-    @scala.inline
-    def apply(value: String): OptionProps = {
+    inline def apply(value: String): OptionProps = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptionProps]
     }
     
-    @scala.inline
-    implicit class OptionPropsMutableBuilder[Self <: OptionProps] (val x: Self) extends AnyVal {
+    extension [Self <: OptionProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

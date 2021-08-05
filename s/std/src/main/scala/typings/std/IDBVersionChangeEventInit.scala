@@ -14,28 +14,21 @@ trait IDBVersionChangeEventInit
 }
 object IDBVersionChangeEventInit {
   
-  @scala.inline
-  def apply(): IDBVersionChangeEventInit = {
+  inline def apply(): IDBVersionChangeEventInit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDBVersionChangeEventInit]
   }
   
-  @scala.inline
-  implicit class IDBVersionChangeEventInitMutableBuilder[Self <: IDBVersionChangeEventInit] (val x: Self) extends AnyVal {
+  extension [Self <: IDBVersionChangeEventInit](x: Self) {
     
-    @scala.inline
-    def setNewVersion(value: Double): Self = StObject.set(x, "newVersion", value.asInstanceOf[js.Any])
+    inline def setNewVersion(value: Double): Self = StObject.set(x, "newVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewVersionNull: Self = StObject.set(x, "newVersion", null)
+    inline def setNewVersionNull: Self = StObject.set(x, "newVersion", null)
     
-    @scala.inline
-    def setNewVersionUndefined: Self = StObject.set(x, "newVersion", js.undefined)
+    inline def setNewVersionUndefined: Self = StObject.set(x, "newVersion", js.undefined)
     
-    @scala.inline
-    def setOldVersion(value: Double): Self = StObject.set(x, "oldVersion", value.asInstanceOf[js.Any])
+    inline def setOldVersion(value: Double): Self = StObject.set(x, "oldVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldVersionUndefined: Self = StObject.set(x, "oldVersion", js.undefined)
+    inline def setOldVersionUndefined: Self = StObject.set(x, "oldVersion", js.undefined)
   }
 }

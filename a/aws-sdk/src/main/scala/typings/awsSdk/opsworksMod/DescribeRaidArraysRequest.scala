@@ -23,34 +23,25 @@ trait DescribeRaidArraysRequest extends StObject {
 }
 object DescribeRaidArraysRequest {
   
-  @scala.inline
-  def apply(): DescribeRaidArraysRequest = {
+  inline def apply(): DescribeRaidArraysRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeRaidArraysRequest]
   }
   
-  @scala.inline
-  implicit class DescribeRaidArraysRequestMutableBuilder[Self <: DescribeRaidArraysRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeRaidArraysRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
-    @scala.inline
-    def setRaidArrayIds(value: Strings): Self = StObject.set(x, "RaidArrayIds", value.asInstanceOf[js.Any])
+    inline def setRaidArrayIds(value: Strings): Self = StObject.set(x, "RaidArrayIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRaidArrayIdsUndefined: Self = StObject.set(x, "RaidArrayIds", js.undefined)
+    inline def setRaidArrayIdsUndefined: Self = StObject.set(x, "RaidArrayIds", js.undefined)
     
-    @scala.inline
-    def setRaidArrayIdsVarargs(value: String*): Self = StObject.set(x, "RaidArrayIds", js.Array(value :_*))
+    inline def setRaidArrayIdsVarargs(value: String*): Self = StObject.set(x, "RaidArrayIds", js.Array(value :_*))
     
-    @scala.inline
-    def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
+    inline def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
+    inline def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
   }
 }

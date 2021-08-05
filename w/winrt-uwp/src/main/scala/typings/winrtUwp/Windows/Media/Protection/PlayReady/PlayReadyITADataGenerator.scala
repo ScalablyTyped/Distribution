@@ -25,16 +25,13 @@ trait PlayReadyITADataGenerator extends StObject {
 }
 object PlayReadyITADataGenerator {
   
-  @scala.inline
-  def apply(generateData: (String, Double, IPropertySet, PlayReadyITADataFormat) => js.Array[Double]): PlayReadyITADataGenerator = {
+  inline def apply(generateData: (String, Double, IPropertySet, PlayReadyITADataFormat) => js.Array[Double]): PlayReadyITADataGenerator = {
     val __obj = js.Dynamic.literal(generateData = js.Any.fromFunction4(generateData))
     __obj.asInstanceOf[PlayReadyITADataGenerator]
   }
   
-  @scala.inline
-  implicit class PlayReadyITADataGeneratorMutableBuilder[Self <: PlayReadyITADataGenerator] (val x: Self) extends AnyVal {
+  extension [Self <: PlayReadyITADataGenerator](x: Self) {
     
-    @scala.inline
-    def setGenerateData(value: (String, Double, IPropertySet, PlayReadyITADataFormat) => js.Array[Double]): Self = StObject.set(x, "generateData", js.Any.fromFunction4(value))
+    inline def setGenerateData(value: (String, Double, IPropertySet, PlayReadyITADataFormat) => js.Array[Double]): Self = StObject.set(x, "generateData", js.Any.fromFunction4(value))
   }
 }

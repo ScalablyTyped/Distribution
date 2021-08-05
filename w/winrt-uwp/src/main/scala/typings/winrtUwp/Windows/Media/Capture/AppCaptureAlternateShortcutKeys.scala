@@ -47,8 +47,7 @@ trait AppCaptureAlternateShortcutKeys extends StObject {
 }
 object AppCaptureAlternateShortcutKeys {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     saveHistoricalVideoKey: VirtualKey,
     saveHistoricalVideoKeyModifiers: VirtualKeyModifiers,
     takeScreenshotKey: VirtualKey,
@@ -66,43 +65,30 @@ object AppCaptureAlternateShortcutKeys {
     __obj.asInstanceOf[AppCaptureAlternateShortcutKeys]
   }
   
-  @scala.inline
-  implicit class AppCaptureAlternateShortcutKeysMutableBuilder[Self <: AppCaptureAlternateShortcutKeys] (val x: Self) extends AnyVal {
+  extension [Self <: AppCaptureAlternateShortcutKeys](x: Self) {
     
-    @scala.inline
-    def setSaveHistoricalVideoKey(value: VirtualKey): Self = StObject.set(x, "saveHistoricalVideoKey", value.asInstanceOf[js.Any])
+    inline def setSaveHistoricalVideoKey(value: VirtualKey): Self = StObject.set(x, "saveHistoricalVideoKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveHistoricalVideoKeyModifiers(value: VirtualKeyModifiers): Self = StObject.set(x, "saveHistoricalVideoKeyModifiers", value.asInstanceOf[js.Any])
+    inline def setSaveHistoricalVideoKeyModifiers(value: VirtualKeyModifiers): Self = StObject.set(x, "saveHistoricalVideoKeyModifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTakeScreenshotKey(value: VirtualKey): Self = StObject.set(x, "takeScreenshotKey", value.asInstanceOf[js.Any])
+    inline def setTakeScreenshotKey(value: VirtualKey): Self = StObject.set(x, "takeScreenshotKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTakeScreenshotKeyModifiers(value: VirtualKeyModifiers): Self = StObject.set(x, "takeScreenshotKeyModifiers", value.asInstanceOf[js.Any])
+    inline def setTakeScreenshotKeyModifiers(value: VirtualKeyModifiers): Self = StObject.set(x, "takeScreenshotKeyModifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleGameBarKey(value: VirtualKey): Self = StObject.set(x, "toggleGameBarKey", value.asInstanceOf[js.Any])
+    inline def setToggleGameBarKey(value: VirtualKey): Self = StObject.set(x, "toggleGameBarKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleGameBarKeyModifiers(value: VirtualKeyModifiers): Self = StObject.set(x, "toggleGameBarKeyModifiers", value.asInstanceOf[js.Any])
+    inline def setToggleGameBarKeyModifiers(value: VirtualKeyModifiers): Self = StObject.set(x, "toggleGameBarKeyModifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleMicrophoneCaptureKey(value: js.Any): Self = StObject.set(x, "toggleMicrophoneCaptureKey", value.asInstanceOf[js.Any])
+    inline def setToggleMicrophoneCaptureKey(value: js.Any): Self = StObject.set(x, "toggleMicrophoneCaptureKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleMicrophoneCaptureKeyModifiers(value: js.Any): Self = StObject.set(x, "toggleMicrophoneCaptureKeyModifiers", value.asInstanceOf[js.Any])
+    inline def setToggleMicrophoneCaptureKeyModifiers(value: js.Any): Self = StObject.set(x, "toggleMicrophoneCaptureKeyModifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleRecordingIndicatorKey(value: VirtualKey): Self = StObject.set(x, "toggleRecordingIndicatorKey", value.asInstanceOf[js.Any])
+    inline def setToggleRecordingIndicatorKey(value: VirtualKey): Self = StObject.set(x, "toggleRecordingIndicatorKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleRecordingIndicatorKeyModifiers(value: VirtualKeyModifiers): Self = StObject.set(x, "toggleRecordingIndicatorKeyModifiers", value.asInstanceOf[js.Any])
+    inline def setToggleRecordingIndicatorKeyModifiers(value: VirtualKeyModifiers): Self = StObject.set(x, "toggleRecordingIndicatorKeyModifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleRecordingKey(value: VirtualKey): Self = StObject.set(x, "toggleRecordingKey", value.asInstanceOf[js.Any])
+    inline def setToggleRecordingKey(value: VirtualKey): Self = StObject.set(x, "toggleRecordingKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleRecordingKeyModifiers(value: VirtualKeyModifiers): Self = StObject.set(x, "toggleRecordingKeyModifiers", value.asInstanceOf[js.Any])
+    inline def setToggleRecordingKeyModifiers(value: VirtualKeyModifiers): Self = StObject.set(x, "toggleRecordingKeyModifiers", value.asInstanceOf[js.Any])
   }
 }

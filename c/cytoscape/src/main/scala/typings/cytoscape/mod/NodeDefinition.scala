@@ -13,16 +13,13 @@ trait NodeDefinition
 }
 object NodeDefinition {
   
-  @scala.inline
-  def apply(data: NodeDataDefinition): NodeDefinition = {
+  inline def apply(data: NodeDataDefinition): NodeDefinition = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeDefinition]
   }
   
-  @scala.inline
-  implicit class NodeDefinitionMutableBuilder[Self <: NodeDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: NodeDefinition](x: Self) {
     
-    @scala.inline
-    def setData(value: NodeDataDefinition): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: NodeDataDefinition): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

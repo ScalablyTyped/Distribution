@@ -21,8 +21,7 @@ trait XTextRangeMover
 }
 object XTextRangeMover {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     moveTextRange: (XTextRange, Double) => Unit,
     queryInterface: `type` => js.Any,
@@ -32,10 +31,8 @@ object XTextRangeMover {
     __obj.asInstanceOf[XTextRangeMover]
   }
   
-  @scala.inline
-  implicit class XTextRangeMoverMutableBuilder[Self <: XTextRangeMover] (val x: Self) extends AnyVal {
+  extension [Self <: XTextRangeMover](x: Self) {
     
-    @scala.inline
-    def setMoveTextRange(value: (XTextRange, Double) => Unit): Self = StObject.set(x, "moveTextRange", js.Any.fromFunction2(value))
+    inline def setMoveTextRange(value: (XTextRange, Double) => Unit): Self = StObject.set(x, "moveTextRange", js.Any.fromFunction2(value))
   }
 }

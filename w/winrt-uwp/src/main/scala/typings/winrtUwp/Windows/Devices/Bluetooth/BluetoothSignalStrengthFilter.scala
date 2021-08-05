@@ -21,8 +21,7 @@ trait BluetoothSignalStrengthFilter extends StObject {
 }
 object BluetoothSignalStrengthFilter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     inRangeThresholdInDBm: Double,
     outOfRangeThresholdInDBm: Double,
     outOfRangeTimeout: Double,
@@ -32,19 +31,14 @@ object BluetoothSignalStrengthFilter {
     __obj.asInstanceOf[BluetoothSignalStrengthFilter]
   }
   
-  @scala.inline
-  implicit class BluetoothSignalStrengthFilterMutableBuilder[Self <: BluetoothSignalStrengthFilter] (val x: Self) extends AnyVal {
+  extension [Self <: BluetoothSignalStrengthFilter](x: Self) {
     
-    @scala.inline
-    def setInRangeThresholdInDBm(value: Double): Self = StObject.set(x, "inRangeThresholdInDBm", value.asInstanceOf[js.Any])
+    inline def setInRangeThresholdInDBm(value: Double): Self = StObject.set(x, "inRangeThresholdInDBm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutOfRangeThresholdInDBm(value: Double): Self = StObject.set(x, "outOfRangeThresholdInDBm", value.asInstanceOf[js.Any])
+    inline def setOutOfRangeThresholdInDBm(value: Double): Self = StObject.set(x, "outOfRangeThresholdInDBm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutOfRangeTimeout(value: Double): Self = StObject.set(x, "outOfRangeTimeout", value.asInstanceOf[js.Any])
+    inline def setOutOfRangeTimeout(value: Double): Self = StObject.set(x, "outOfRangeTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSamplingInterval(value: Double): Self = StObject.set(x, "samplingInterval", value.asInstanceOf[js.Any])
+    inline def setSamplingInterval(value: Double): Self = StObject.set(x, "samplingInterval", value.asInstanceOf[js.Any])
   }
 }

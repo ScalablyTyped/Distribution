@@ -15,31 +15,23 @@ trait PartialPickImplkeyofImplMethod extends StObject {
 }
 object PartialPickImplkeyofImplMethod {
   
-  @scala.inline
-  def apply(): PartialPickImplkeyofImplMethod = {
+  inline def apply(): PartialPickImplkeyofImplMethod = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPickImplkeyofImplMethod]
   }
   
-  @scala.inline
-  implicit class PartialPickImplkeyofImplMethodMutableBuilder[Self <: PartialPickImplkeyofImplMethod] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPickImplkeyofImplMethod](x: Self) {
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setNoCookieStorage(value: String): Self = StObject.set(x, "noCookieStorage", value.asInstanceOf[js.Any])
+    inline def setNoCookieStorage(value: String): Self = StObject.set(x, "noCookieStorage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoCookieStorageUndefined: Self = StObject.set(x, "noCookieStorage", js.undefined)
+    inline def setNoCookieStorageUndefined: Self = StObject.set(x, "noCookieStorage", js.undefined)
     
-    @scala.inline
-    def setNoStorage(value: String): Self = StObject.set(x, "noStorage", value.asInstanceOf[js.Any])
+    inline def setNoStorage(value: String): Self = StObject.set(x, "noStorage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoStorageUndefined: Self = StObject.set(x, "noStorage", js.undefined)
+    inline def setNoStorageUndefined: Self = StObject.set(x, "noStorage", js.undefined)
   }
 }

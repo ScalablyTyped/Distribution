@@ -48,61 +48,43 @@ trait CacheSettings extends StObject {
 }
 object CacheSettings {
   
-  @scala.inline
-  def apply(): CacheSettings = {
+  inline def apply(): CacheSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CacheSettings]
   }
   
-  @scala.inline
-  implicit class CacheSettingsMutableBuilder[Self <: CacheSettings] (val x: Self) extends AnyVal {
+  extension [Self <: CacheSettings](x: Self) {
     
-    @scala.inline
-    def setAllowedHTTPMethods(value: NonEmptyString): Self = StObject.set(x, "allowedHTTPMethods", value.asInstanceOf[js.Any])
+    inline def setAllowedHTTPMethods(value: NonEmptyString): Self = StObject.set(x, "allowedHTTPMethods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedHTTPMethodsUndefined: Self = StObject.set(x, "allowedHTTPMethods", js.undefined)
+    inline def setAllowedHTTPMethodsUndefined: Self = StObject.set(x, "allowedHTTPMethods", js.undefined)
     
-    @scala.inline
-    def setCachedHTTPMethods(value: NonEmptyString): Self = StObject.set(x, "cachedHTTPMethods", value.asInstanceOf[js.Any])
+    inline def setCachedHTTPMethods(value: NonEmptyString): Self = StObject.set(x, "cachedHTTPMethods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCachedHTTPMethodsUndefined: Self = StObject.set(x, "cachedHTTPMethods", js.undefined)
+    inline def setCachedHTTPMethodsUndefined: Self = StObject.set(x, "cachedHTTPMethods", js.undefined)
     
-    @scala.inline
-    def setDefaultTTL(value: long): Self = StObject.set(x, "defaultTTL", value.asInstanceOf[js.Any])
+    inline def setDefaultTTL(value: long): Self = StObject.set(x, "defaultTTL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultTTLUndefined: Self = StObject.set(x, "defaultTTL", js.undefined)
+    inline def setDefaultTTLUndefined: Self = StObject.set(x, "defaultTTL", js.undefined)
     
-    @scala.inline
-    def setForwardedCookies(value: CookieObject): Self = StObject.set(x, "forwardedCookies", value.asInstanceOf[js.Any])
+    inline def setForwardedCookies(value: CookieObject): Self = StObject.set(x, "forwardedCookies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardedCookiesUndefined: Self = StObject.set(x, "forwardedCookies", js.undefined)
+    inline def setForwardedCookiesUndefined: Self = StObject.set(x, "forwardedCookies", js.undefined)
     
-    @scala.inline
-    def setForwardedHeaders(value: HeaderObject): Self = StObject.set(x, "forwardedHeaders", value.asInstanceOf[js.Any])
+    inline def setForwardedHeaders(value: HeaderObject): Self = StObject.set(x, "forwardedHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardedHeadersUndefined: Self = StObject.set(x, "forwardedHeaders", js.undefined)
+    inline def setForwardedHeadersUndefined: Self = StObject.set(x, "forwardedHeaders", js.undefined)
     
-    @scala.inline
-    def setForwardedQueryStrings(value: QueryStringObject): Self = StObject.set(x, "forwardedQueryStrings", value.asInstanceOf[js.Any])
+    inline def setForwardedQueryStrings(value: QueryStringObject): Self = StObject.set(x, "forwardedQueryStrings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardedQueryStringsUndefined: Self = StObject.set(x, "forwardedQueryStrings", js.undefined)
+    inline def setForwardedQueryStringsUndefined: Self = StObject.set(x, "forwardedQueryStrings", js.undefined)
     
-    @scala.inline
-    def setMaximumTTL(value: long): Self = StObject.set(x, "maximumTTL", value.asInstanceOf[js.Any])
+    inline def setMaximumTTL(value: long): Self = StObject.set(x, "maximumTTL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumTTLUndefined: Self = StObject.set(x, "maximumTTL", js.undefined)
+    inline def setMaximumTTLUndefined: Self = StObject.set(x, "maximumTTL", js.undefined)
     
-    @scala.inline
-    def setMinimumTTL(value: long): Self = StObject.set(x, "minimumTTL", value.asInstanceOf[js.Any])
+    inline def setMinimumTTL(value: long): Self = StObject.set(x, "minimumTTL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumTTLUndefined: Self = StObject.set(x, "minimumTTL", js.undefined)
+    inline def setMinimumTTLUndefined: Self = StObject.set(x, "minimumTTL", js.undefined)
   }
 }

@@ -43,8 +43,7 @@ object handlerMod {
   }
   object Context {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       callbackWaitsForEmptyEventLoop: Boolean,
       environ: String,
       environment: String,
@@ -63,47 +62,33 @@ object handlerMod {
       __obj.asInstanceOf[Context]
     }
     
-    @scala.inline
-    implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
+    extension [Self <: Context](x: Self) {
       
-      @scala.inline
-      def setCallbackWaitsForEmptyEventLoop(value: Boolean): Self = StObject.set(x, "callbackWaitsForEmptyEventLoop", value.asInstanceOf[js.Any])
+      inline def setCallbackWaitsForEmptyEventLoop(value: Boolean): Self = StObject.set(x, "callbackWaitsForEmptyEventLoop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnviron(value: String): Self = StObject.set(x, "environ", value.asInstanceOf[js.Any])
+      inline def setEnviron(value: String): Self = StObject.set(x, "environ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+      inline def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunction_name(value: String): Self = StObject.set(x, "function_name", value.asInstanceOf[js.Any])
+      inline def setFunction_name(value: String): Self = StObject.set(x, "function_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunction_version(value: String): Self = StObject.set(x, "function_version", value.asInstanceOf[js.Any])
+      inline def setFunction_version(value: String): Self = StObject.set(x, "function_version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetRemainingTimeInMillis(value: () => Double): Self = StObject.set(x, "getRemainingTimeInMillis", js.Any.fromFunction0(value))
+      inline def setGetRemainingTimeInMillis(value: () => Double): Self = StObject.set(x, "getRemainingTimeInMillis", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMemory_limit_in_mb(value: Double): Self = StObject.set(x, "memory_limit_in_mb", value.asInstanceOf[js.Any])
+      inline def setMemory_limit_in_mb(value: Double): Self = StObject.set(x, "memory_limit_in_mb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest_id(value: String): Self = StObject.set(x, "request_id", value.asInstanceOf[js.Any])
+      inline def setRequest_id(value: String): Self = StObject.set(x, "request_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTencentcloud_appid(value: String): Self = StObject.set(x, "tencentcloud_appid", value.asInstanceOf[js.Any])
+      inline def setTencentcloud_appid(value: String): Self = StObject.set(x, "tencentcloud_appid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTencentcloud_region(value: String): Self = StObject.set(x, "tencentcloud_region", value.asInstanceOf[js.Any])
+      inline def setTencentcloud_region(value: String): Self = StObject.set(x, "tencentcloud_region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTencentcloud_uin(value: String): Self = StObject.set(x, "tencentcloud_uin", value.asInstanceOf[js.Any])
+      inline def setTencentcloud_uin(value: String): Self = StObject.set(x, "tencentcloud_uin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime_limit_in_ms(value: Double): Self = StObject.set(x, "time_limit_in_ms", value.asInstanceOf[js.Any])
+      inline def setTime_limit_in_ms(value: Double): Self = StObject.set(x, "time_limit_in_ms", value.asInstanceOf[js.Any])
     }
   }
   

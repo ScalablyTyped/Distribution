@@ -18,8 +18,7 @@ trait CompletionList extends StObject {
 }
 object CompletionList {
   
-  @scala.inline
-  def apply(isIncomplete: Boolean, items: js.Array[CompletionItem]): CompletionList = {
+  inline def apply(isIncomplete: Boolean, items: js.Array[CompletionItem]): CompletionList = {
     val __obj = js.Dynamic.literal(isIncomplete = isIncomplete.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompletionList]
   }
@@ -34,25 +33,17 @@ object CompletionList {
     * @param items The completion items.
     * @param isIncomplete The list is not complete.
     */
-  @scala.inline
-  def create(): CompletionList = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[CompletionList]
-  @scala.inline
-  def create(items: js.Array[CompletionItem]): CompletionList = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(items.asInstanceOf[js.Any]).asInstanceOf[CompletionList]
-  @scala.inline
-  def create(items: js.Array[CompletionItem], isIncomplete: Boolean): CompletionList = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(items.asInstanceOf[js.Any], isIncomplete.asInstanceOf[js.Any])).asInstanceOf[CompletionList]
-  @scala.inline
-  def create(items: Unit, isIncomplete: Boolean): CompletionList = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(items.asInstanceOf[js.Any], isIncomplete.asInstanceOf[js.Any])).asInstanceOf[CompletionList]
+  inline def create(): CompletionList = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[CompletionList]
+  inline def create(items: js.Array[CompletionItem]): CompletionList = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(items.asInstanceOf[js.Any]).asInstanceOf[CompletionList]
+  inline def create(items: js.Array[CompletionItem], isIncomplete: Boolean): CompletionList = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(items.asInstanceOf[js.Any], isIncomplete.asInstanceOf[js.Any])).asInstanceOf[CompletionList]
+  inline def create(items: Unit, isIncomplete: Boolean): CompletionList = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(items.asInstanceOf[js.Any], isIncomplete.asInstanceOf[js.Any])).asInstanceOf[CompletionList]
   
-  @scala.inline
-  implicit class CompletionListMutableBuilder[Self <: CompletionList] (val x: Self) extends AnyVal {
+  extension [Self <: CompletionList](x: Self) {
     
-    @scala.inline
-    def setIsIncomplete(value: Boolean): Self = StObject.set(x, "isIncomplete", value.asInstanceOf[js.Any])
+    inline def setIsIncomplete(value: Boolean): Self = StObject.set(x, "isIncomplete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: js.Array[CompletionItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[CompletionItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: CompletionItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: CompletionItem*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

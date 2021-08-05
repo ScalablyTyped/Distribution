@@ -24,8 +24,7 @@ object address {
   }
   object AddressData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AddressLine1: String,
       AddressLine2: String,
       City: String,
@@ -37,26 +36,19 @@ object address {
       __obj.asInstanceOf[AddressData]
     }
     
-    @scala.inline
-    implicit class AddressDataMutableBuilder[Self <: AddressData] (val x: Self) extends AnyVal {
+    extension [Self <: AddressData](x: Self) {
       
-      @scala.inline
-      def setAddressLine1(value: String): Self = StObject.set(x, "AddressLine1", value.asInstanceOf[js.Any])
+      inline def setAddressLine1(value: String): Self = StObject.set(x, "AddressLine1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddressLine2(value: String): Self = StObject.set(x, "AddressLine2", value.asInstanceOf[js.Any])
+      inline def setAddressLine2(value: String): Self = StObject.set(x, "AddressLine2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCity(value: String): Self = StObject.set(x, "City", value.asInstanceOf[js.Any])
+      inline def setCity(value: String): Self = StObject.set(x, "City", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountry(value: String): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
+      inline def setCountry(value: String): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPostalCode(value: String): Self = StObject.set(x, "PostalCode", value.asInstanceOf[js.Any])
+      inline def setPostalCode(value: String): Self = StObject.set(x, "PostalCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
     }
   }
   

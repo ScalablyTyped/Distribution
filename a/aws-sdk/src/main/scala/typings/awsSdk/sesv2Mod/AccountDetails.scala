@@ -38,52 +38,37 @@ trait AccountDetails extends StObject {
 }
 object AccountDetails {
   
-  @scala.inline
-  def apply(): AccountDetails = {
+  inline def apply(): AccountDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountDetails]
   }
   
-  @scala.inline
-  implicit class AccountDetailsMutableBuilder[Self <: AccountDetails] (val x: Self) extends AnyVal {
+  extension [Self <: AccountDetails](x: Self) {
     
-    @scala.inline
-    def setAdditionalContactEmailAddresses(value: AdditionalContactEmailAddresses): Self = StObject.set(x, "AdditionalContactEmailAddresses", value.asInstanceOf[js.Any])
+    inline def setAdditionalContactEmailAddresses(value: AdditionalContactEmailAddresses): Self = StObject.set(x, "AdditionalContactEmailAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalContactEmailAddressesUndefined: Self = StObject.set(x, "AdditionalContactEmailAddresses", js.undefined)
+    inline def setAdditionalContactEmailAddressesUndefined: Self = StObject.set(x, "AdditionalContactEmailAddresses", js.undefined)
     
-    @scala.inline
-    def setAdditionalContactEmailAddressesVarargs(value: AdditionalContactEmailAddress*): Self = StObject.set(x, "AdditionalContactEmailAddresses", js.Array(value :_*))
+    inline def setAdditionalContactEmailAddressesVarargs(value: AdditionalContactEmailAddress*): Self = StObject.set(x, "AdditionalContactEmailAddresses", js.Array(value :_*))
     
-    @scala.inline
-    def setContactLanguage(value: ContactLanguage): Self = StObject.set(x, "ContactLanguage", value.asInstanceOf[js.Any])
+    inline def setContactLanguage(value: ContactLanguage): Self = StObject.set(x, "ContactLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactLanguageUndefined: Self = StObject.set(x, "ContactLanguage", js.undefined)
+    inline def setContactLanguageUndefined: Self = StObject.set(x, "ContactLanguage", js.undefined)
     
-    @scala.inline
-    def setMailType(value: MailType): Self = StObject.set(x, "MailType", value.asInstanceOf[js.Any])
+    inline def setMailType(value: MailType): Self = StObject.set(x, "MailType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMailTypeUndefined: Self = StObject.set(x, "MailType", js.undefined)
+    inline def setMailTypeUndefined: Self = StObject.set(x, "MailType", js.undefined)
     
-    @scala.inline
-    def setReviewDetails(value: ReviewDetails): Self = StObject.set(x, "ReviewDetails", value.asInstanceOf[js.Any])
+    inline def setReviewDetails(value: ReviewDetails): Self = StObject.set(x, "ReviewDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReviewDetailsUndefined: Self = StObject.set(x, "ReviewDetails", js.undefined)
+    inline def setReviewDetailsUndefined: Self = StObject.set(x, "ReviewDetails", js.undefined)
     
-    @scala.inline
-    def setUseCaseDescription(value: UseCaseDescription): Self = StObject.set(x, "UseCaseDescription", value.asInstanceOf[js.Any])
+    inline def setUseCaseDescription(value: UseCaseDescription): Self = StObject.set(x, "UseCaseDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseCaseDescriptionUndefined: Self = StObject.set(x, "UseCaseDescription", js.undefined)
+    inline def setUseCaseDescriptionUndefined: Self = StObject.set(x, "UseCaseDescription", js.undefined)
     
-    @scala.inline
-    def setWebsiteURL(value: WebsiteURL): Self = StObject.set(x, "WebsiteURL", value.asInstanceOf[js.Any])
+    inline def setWebsiteURL(value: WebsiteURL): Self = StObject.set(x, "WebsiteURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebsiteURLUndefined: Self = StObject.set(x, "WebsiteURL", js.undefined)
+    inline def setWebsiteURLUndefined: Self = StObject.set(x, "WebsiteURL", js.undefined)
   }
 }

@@ -24,17 +24,14 @@ object typesInvalidMarkerExceptionMod {
   }
   object InvalidMarkerException {
     
-    @scala.inline
-    def apply(): InvalidMarkerException = {
+    inline def apply(): InvalidMarkerException = {
       val __obj = js.Dynamic.literal(name = "InvalidMarkerException")
       __obj.asInstanceOf[InvalidMarkerException]
     }
     
-    @scala.inline
-    implicit class InvalidMarkerExceptionMutableBuilder[Self <: InvalidMarkerException] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidMarkerException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.InvalidMarkerException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.InvalidMarkerException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -47,20 +44,16 @@ object typesInvalidMarkerExceptionMod {
   }
   object InvalidMarkerExceptionDetails {
     
-    @scala.inline
-    def apply(): InvalidMarkerExceptionDetails = {
+    inline def apply(): InvalidMarkerExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InvalidMarkerExceptionDetails]
     }
     
-    @scala.inline
-    implicit class InvalidMarkerExceptionDetailsMutableBuilder[Self <: InvalidMarkerExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidMarkerExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

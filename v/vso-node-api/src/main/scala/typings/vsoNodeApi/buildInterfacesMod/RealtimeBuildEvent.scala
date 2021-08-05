@@ -10,16 +10,13 @@ trait RealtimeBuildEvent extends StObject {
 }
 object RealtimeBuildEvent {
   
-  @scala.inline
-  def apply(buildId: Double): RealtimeBuildEvent = {
+  inline def apply(buildId: Double): RealtimeBuildEvent = {
     val __obj = js.Dynamic.literal(buildId = buildId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RealtimeBuildEvent]
   }
   
-  @scala.inline
-  implicit class RealtimeBuildEventMutableBuilder[Self <: RealtimeBuildEvent] (val x: Self) extends AnyVal {
+  extension [Self <: RealtimeBuildEvent](x: Self) {
     
-    @scala.inline
-    def setBuildId(value: Double): Self = StObject.set(x, "buildId", value.asInstanceOf[js.Any])
+    inline def setBuildId(value: Double): Self = StObject.set(x, "buildId", value.asInstanceOf[js.Any])
   }
 }

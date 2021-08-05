@@ -13,19 +13,15 @@ trait StartCelebrityRecognitionResponse extends StObject {
 }
 object StartCelebrityRecognitionResponse {
   
-  @scala.inline
-  def apply(): StartCelebrityRecognitionResponse = {
+  inline def apply(): StartCelebrityRecognitionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartCelebrityRecognitionResponse]
   }
   
-  @scala.inline
-  implicit class StartCelebrityRecognitionResponseMutableBuilder[Self <: StartCelebrityRecognitionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StartCelebrityRecognitionResponse](x: Self) {
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
+    inline def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
   }
 }

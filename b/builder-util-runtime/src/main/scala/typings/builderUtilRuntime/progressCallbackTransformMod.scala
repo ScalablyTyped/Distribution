@@ -21,19 +21,19 @@ object progressCallbackTransformMod {
     
     def _transform(chunk: js.Any, encoding: String, callback: js.Any): Unit = js.native
     
-    val cancellationToken: js.Any = js.native
+    /* private */ val cancellationToken: js.Any = js.native
     
-    var delta: js.Any = js.native
+    /* private */ var delta: js.Any = js.native
     
-    var nextUpdate: js.Any = js.native
+    /* private */ var nextUpdate: js.Any = js.native
     
-    val onProgress: js.Any = js.native
+    /* private */ val onProgress: js.Any = js.native
     
-    var start: js.Any = js.native
+    /* private */ var start: js.Any = js.native
     
-    val total: js.Any = js.native
+    /* private */ val total: js.Any = js.native
     
-    var transferred: js.Any = js.native
+    /* private */ var transferred: js.Any = js.native
   }
   
   trait ProgressInfo extends StObject {
@@ -50,29 +50,22 @@ object progressCallbackTransformMod {
   }
   object ProgressInfo {
     
-    @scala.inline
-    def apply(bytesPerSecond: Double, delta: Double, percent: Double, total: Double, transferred: Double): ProgressInfo = {
+    inline def apply(bytesPerSecond: Double, delta: Double, percent: Double, total: Double, transferred: Double): ProgressInfo = {
       val __obj = js.Dynamic.literal(bytesPerSecond = bytesPerSecond.asInstanceOf[js.Any], delta = delta.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], transferred = transferred.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProgressInfo]
     }
     
-    @scala.inline
-    implicit class ProgressInfoMutableBuilder[Self <: ProgressInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ProgressInfo](x: Self) {
       
-      @scala.inline
-      def setBytesPerSecond(value: Double): Self = StObject.set(x, "bytesPerSecond", value.asInstanceOf[js.Any])
+      inline def setBytesPerSecond(value: Double): Self = StObject.set(x, "bytesPerSecond", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+      inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+      inline def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransferred(value: Double): Self = StObject.set(x, "transferred", value.asInstanceOf[js.Any])
+      inline def setTransferred(value: Double): Self = StObject.set(x, "transferred", value.asInstanceOf[js.Any])
     }
   }
 }

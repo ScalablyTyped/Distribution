@@ -39,49 +39,35 @@ trait TriggerAction extends StObject {
 }
 object TriggerAction {
   
-  @scala.inline
-  def apply(): TriggerAction = {
+  inline def apply(): TriggerAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TriggerAction]
   }
   
-  @scala.inline
-  implicit class TriggerActionMutableBuilder[Self <: TriggerAction] (val x: Self) extends AnyVal {
+  extension [Self <: TriggerAction](x: Self) {
     
-    @scala.inline
-    def setArguments(value: StringDictionary[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: StringDictionary[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
+    inline def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
     
-    @scala.inline
-    def setCrawlerName(value: String): Self = StObject.set(x, "crawlerName", value.asInstanceOf[js.Any])
+    inline def setCrawlerName(value: String): Self = StObject.set(x, "crawlerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrawlerNameUndefined: Self = StObject.set(x, "crawlerName", js.undefined)
+    inline def setCrawlerNameUndefined: Self = StObject.set(x, "crawlerName", js.undefined)
     
-    @scala.inline
-    def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
+    inline def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobNameUndefined: Self = StObject.set(x, "jobName", js.undefined)
+    inline def setJobNameUndefined: Self = StObject.set(x, "jobName", js.undefined)
     
-    @scala.inline
-    def setNotificationProperty(value: TriggerActionNotificationProperty): Self = StObject.set(x, "notificationProperty", value.asInstanceOf[js.Any])
+    inline def setNotificationProperty(value: TriggerActionNotificationProperty): Self = StObject.set(x, "notificationProperty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationPropertyUndefined: Self = StObject.set(x, "notificationProperty", js.undefined)
+    inline def setNotificationPropertyUndefined: Self = StObject.set(x, "notificationProperty", js.undefined)
     
-    @scala.inline
-    def setSecurityConfiguration(value: String): Self = StObject.set(x, "securityConfiguration", value.asInstanceOf[js.Any])
+    inline def setSecurityConfiguration(value: String): Self = StObject.set(x, "securityConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityConfigurationUndefined: Self = StObject.set(x, "securityConfiguration", js.undefined)
+    inline def setSecurityConfigurationUndefined: Self = StObject.set(x, "securityConfiguration", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

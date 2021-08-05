@@ -63,86 +63,60 @@ object app {
   }
   object IApplication {
     
-    @scala.inline
-    def apply(): IApplication = {
+    inline def apply(): IApplication = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IApplication]
     }
     
-    @scala.inline
-    implicit class IApplicationMutableBuilder[Self <: IApplication] (val x: Self) extends AnyVal {
+    extension [Self <: IApplication](x: Self) {
       
-      @scala.inline
-      def setAppFolder(value: java.lang.String): Self = StObject.set(x, "appFolder", value.asInstanceOf[js.Any])
+      inline def setAppFolder(value: java.lang.String): Self = StObject.set(x, "appFolder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppFolderUndefined: Self = StObject.set(x, "appFolder", js.undefined)
+      inline def setAppFolderUndefined: Self = StObject.set(x, "appFolder", js.undefined)
       
-      @scala.inline
-      def setAppProperty(value: java.lang.String): Self = StObject.set(x, "appProperty", value.asInstanceOf[js.Any])
+      inline def setAppProperty(value: java.lang.String): Self = StObject.set(x, "appProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppPropertyUndefined: Self = StObject.set(x, "appProperty", js.undefined)
+      inline def setAppPropertyUndefined: Self = StObject.set(x, "appProperty", js.undefined)
       
-      @scala.inline
-      def setAutoCreateViewport(value: Boolean): Self = StObject.set(x, "autoCreateViewport", value.asInstanceOf[js.Any])
+      inline def setAutoCreateViewport(value: Boolean): Self = StObject.set(x, "autoCreateViewport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoCreateViewportUndefined: Self = StObject.set(x, "autoCreateViewport", js.undefined)
+      inline def setAutoCreateViewportUndefined: Self = StObject.set(x, "autoCreateViewport", js.undefined)
       
-      @scala.inline
-      def setControllers(value: js.Any): Self = StObject.set(x, "controllers", value.asInstanceOf[js.Any])
+      inline def setControllers(value: js.Any): Self = StObject.set(x, "controllers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControllersUndefined: Self = StObject.set(x, "controllers", js.undefined)
+      inline def setControllersUndefined: Self = StObject.set(x, "controllers", js.undefined)
       
-      @scala.inline
-      def setEnableQuickTips(value: Boolean): Self = StObject.set(x, "enableQuickTips", value.asInstanceOf[js.Any])
+      inline def setEnableQuickTips(value: Boolean): Self = StObject.set(x, "enableQuickTips", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableQuickTipsUndefined: Self = StObject.set(x, "enableQuickTips", js.undefined)
+      inline def setEnableQuickTipsUndefined: Self = StObject.set(x, "enableQuickTips", js.undefined)
       
-      @scala.inline
-      def setGetApplication(value: () => IApplication): Self = StObject.set(x, "getApplication", js.Any.fromFunction0(value))
+      inline def setGetApplication(value: () => IApplication): Self = StObject.set(x, "getApplication", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetApplicationUndefined: Self = StObject.set(x, "getApplication", js.undefined)
+      inline def setGetApplicationUndefined: Self = StObject.set(x, "getApplication", js.undefined)
       
-      @scala.inline
-      def setGetController(value: /* name */ js.UndefOr[js.Any] => IController): Self = StObject.set(x, "getController", js.Any.fromFunction1(value))
+      inline def setGetController(value: /* name */ js.UndefOr[js.Any] => IController): Self = StObject.set(x, "getController", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetControllerUndefined: Self = StObject.set(x, "getController", js.undefined)
+      inline def setGetControllerUndefined: Self = StObject.set(x, "getController", js.undefined)
       
-      @scala.inline
-      def setLaunch(value: /* profile */ js.UndefOr[java.lang.String] => Boolean): Self = StObject.set(x, "launch", js.Any.fromFunction1(value))
+      inline def setLaunch(value: /* profile */ js.UndefOr[java.lang.String] => Boolean): Self = StObject.set(x, "launch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLaunchUndefined: Self = StObject.set(x, "launch", js.undefined)
+      inline def setLaunchUndefined: Self = StObject.set(x, "launch", js.undefined)
       
-      @scala.inline
-      def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNamespaces(value: js.Any): Self = StObject.set(x, "namespaces", value.asInstanceOf[js.Any])
+      inline def setNamespaces(value: js.Any): Self = StObject.set(x, "namespaces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespacesUndefined: Self = StObject.set(x, "namespaces", js.undefined)
+      inline def setNamespacesUndefined: Self = StObject.set(x, "namespaces", js.undefined)
       
-      @scala.inline
-      def setPaths(value: js.Any): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+      inline def setPaths(value: js.Any): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
+      inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
       
-      @scala.inline
-      def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     }
   }
   
@@ -233,116 +207,80 @@ object app {
   }
   object IController {
     
-    @scala.inline
-    def apply(): IController = {
+    inline def apply(): IController = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IController]
     }
     
-    @scala.inline
-    implicit class IControllerMutableBuilder[Self <: IController] (val x: Self) extends AnyVal {
+    extension [Self <: IController](x: Self) {
       
-      @scala.inline
-      def setAddRef(value: /* refs */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "addRef", js.Any.fromFunction1(value))
+      inline def setAddRef(value: /* refs */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "addRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddRefUndefined: Self = StObject.set(x, "addRef", js.undefined)
+      inline def setAddRefUndefined: Self = StObject.set(x, "addRef", js.undefined)
       
-      @scala.inline
-      def setApplication(value: IApplication): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
+      inline def setApplication(value: IApplication): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationUndefined: Self = StObject.set(x, "application", js.undefined)
+      inline def setApplicationUndefined: Self = StObject.set(x, "application", js.undefined)
       
-      @scala.inline
-      def setControl(value: (/* selectors */ js.UndefOr[js.Any], /* listeners */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "control", js.Any.fromFunction2(value))
+      inline def setControl(value: (/* selectors */ js.UndefOr[js.Any], /* listeners */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "control", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
+      inline def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
       
-      @scala.inline
-      def setGetApplication(value: () => IApplication): Self = StObject.set(x, "getApplication", js.Any.fromFunction0(value))
+      inline def setGetApplication(value: () => IApplication): Self = StObject.set(x, "getApplication", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetApplicationUndefined: Self = StObject.set(x, "getApplication", js.undefined)
+      inline def setGetApplicationUndefined: Self = StObject.set(x, "getApplication", js.undefined)
       
-      @scala.inline
-      def setGetController(value: /* id */ js.UndefOr[java.lang.String] => IController): Self = StObject.set(x, "getController", js.Any.fromFunction1(value))
+      inline def setGetController(value: /* id */ js.UndefOr[java.lang.String] => IController): Self = StObject.set(x, "getController", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetControllerUndefined: Self = StObject.set(x, "getController", js.undefined)
+      inline def setGetControllerUndefined: Self = StObject.set(x, "getController", js.undefined)
       
-      @scala.inline
-      def setGetModel(value: /* name */ js.UndefOr[java.lang.String] => IModel): Self = StObject.set(x, "getModel", js.Any.fromFunction1(value))
+      inline def setGetModel(value: /* name */ js.UndefOr[java.lang.String] => IModel): Self = StObject.set(x, "getModel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetModelUndefined: Self = StObject.set(x, "getModel", js.undefined)
+      inline def setGetModelUndefined: Self = StObject.set(x, "getModel", js.undefined)
       
-      @scala.inline
-      def setGetStore(value: /* name */ js.UndefOr[java.lang.String] => IStore): Self = StObject.set(x, "getStore", js.Any.fromFunction1(value))
+      inline def setGetStore(value: /* name */ js.UndefOr[java.lang.String] => IStore): Self = StObject.set(x, "getStore", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetStoreUndefined: Self = StObject.set(x, "getStore", js.undefined)
+      inline def setGetStoreUndefined: Self = StObject.set(x, "getStore", js.undefined)
       
-      @scala.inline
-      def setGetView(value: /* name */ js.UndefOr[java.lang.String] => IBase): Self = StObject.set(x, "getView", js.Any.fromFunction1(value))
+      inline def setGetView(value: /* name */ js.UndefOr[java.lang.String] => IBase): Self = StObject.set(x, "getView", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetViewUndefined: Self = StObject.set(x, "getView", js.undefined)
+      inline def setGetViewUndefined: Self = StObject.set(x, "getView", js.undefined)
       
-      @scala.inline
-      def setHasRef(value: /* ref */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "hasRef", js.Any.fromFunction1(value))
+      inline def setHasRef(value: /* ref */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "hasRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasRefUndefined: Self = StObject.set(x, "hasRef", js.undefined)
+      inline def setHasRefUndefined: Self = StObject.set(x, "hasRef", js.undefined)
       
-      @scala.inline
-      def setId(value: java.lang.String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: java.lang.String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setInit(value: /* application */ js.UndefOr[IApplication] => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+      inline def setInit(value: /* application */ js.UndefOr[IApplication] => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+      inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
       
-      @scala.inline
-      def setListen(value: /* to */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "listen", js.Any.fromFunction1(value))
+      inline def setListen(value: /* to */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "listen", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setListenUndefined: Self = StObject.set(x, "listen", js.undefined)
+      inline def setListenUndefined: Self = StObject.set(x, "listen", js.undefined)
       
-      @scala.inline
-      def setModels(value: js.Any): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
+      inline def setModels(value: js.Any): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelsUndefined: Self = StObject.set(x, "models", js.undefined)
+      inline def setModelsUndefined: Self = StObject.set(x, "models", js.undefined)
       
-      @scala.inline
-      def setOnLaunch(value: /* application */ js.UndefOr[IApplication] => Unit): Self = StObject.set(x, "onLaunch", js.Any.fromFunction1(value))
+      inline def setOnLaunch(value: /* application */ js.UndefOr[IApplication] => Unit): Self = StObject.set(x, "onLaunch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLaunchUndefined: Self = StObject.set(x, "onLaunch", js.undefined)
+      inline def setOnLaunchUndefined: Self = StObject.set(x, "onLaunch", js.undefined)
       
-      @scala.inline
-      def setRefs(value: Array): Self = StObject.set(x, "refs", value.asInstanceOf[js.Any])
+      inline def setRefs(value: Array): Self = StObject.set(x, "refs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefsUndefined: Self = StObject.set(x, "refs", js.undefined)
+      inline def setRefsUndefined: Self = StObject.set(x, "refs", js.undefined)
       
-      @scala.inline
-      def setStores(value: js.Any): Self = StObject.set(x, "stores", value.asInstanceOf[js.Any])
+      inline def setStores(value: js.Any): Self = StObject.set(x, "stores", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoresUndefined: Self = StObject.set(x, "stores", js.undefined)
+      inline def setStoresUndefined: Self = StObject.set(x, "stores", js.undefined)
       
-      @scala.inline
-      def setViews(value: js.Any): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+      inline def setViews(value: js.Any): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
+      inline def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
     }
   }
   
@@ -378,38 +316,28 @@ object app {
   }
   object IEventDomain {
     
-    @scala.inline
-    def apply(): IEventDomain = {
+    inline def apply(): IEventDomain = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IEventDomain]
     }
     
-    @scala.inline
-    implicit class IEventDomainMutableBuilder[Self <: IEventDomain] (val x: Self) extends AnyVal {
+    extension [Self <: IEventDomain](x: Self) {
       
-      @scala.inline
-      def setIdProperty(value: java.lang.String): Self = StObject.set(x, "idProperty", value.asInstanceOf[js.Any])
+      inline def setIdProperty(value: java.lang.String): Self = StObject.set(x, "idProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdPropertyUndefined: Self = StObject.set(x, "idProperty", js.undefined)
+      inline def setIdPropertyUndefined: Self = StObject.set(x, "idProperty", js.undefined)
       
-      @scala.inline
-      def setInstances(value: js.Any): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
+      inline def setInstances(value: js.Any): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
+      inline def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
       
-      @scala.inline
-      def setMatch(value: (/* target */ js.UndefOr[js.Any], /* selector */ js.UndefOr[java.lang.String]) => Boolean): Self = StObject.set(x, "match", js.Any.fromFunction2(value))
+      inline def setMatch(value: (/* target */ js.UndefOr[js.Any], /* selector */ js.UndefOr[java.lang.String]) => Boolean): Self = StObject.set(x, "match", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
+      inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
       
-      @scala.inline
-      def setMonitor(value: /* observable */ js.UndefOr[IClass] => Unit): Self = StObject.set(x, "monitor", js.Any.fromFunction1(value))
+      inline def setMonitor(value: /* observable */ js.UndefOr[IClass] => Unit): Self = StObject.set(x, "monitor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMonitorUndefined: Self = StObject.set(x, "monitor", js.undefined)
+      inline def setMonitorUndefined: Self = StObject.set(x, "monitor", js.undefined)
     }
   }
   

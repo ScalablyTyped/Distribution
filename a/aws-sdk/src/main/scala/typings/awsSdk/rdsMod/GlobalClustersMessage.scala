@@ -18,28 +18,21 @@ trait GlobalClustersMessage extends StObject {
 }
 object GlobalClustersMessage {
   
-  @scala.inline
-  def apply(): GlobalClustersMessage = {
+  inline def apply(): GlobalClustersMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GlobalClustersMessage]
   }
   
-  @scala.inline
-  implicit class GlobalClustersMessageMutableBuilder[Self <: GlobalClustersMessage] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalClustersMessage](x: Self) {
     
-    @scala.inline
-    def setGlobalClusters(value: GlobalClusterList): Self = StObject.set(x, "GlobalClusters", value.asInstanceOf[js.Any])
+    inline def setGlobalClusters(value: GlobalClusterList): Self = StObject.set(x, "GlobalClusters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalClustersUndefined: Self = StObject.set(x, "GlobalClusters", js.undefined)
+    inline def setGlobalClustersUndefined: Self = StObject.set(x, "GlobalClusters", js.undefined)
     
-    @scala.inline
-    def setGlobalClustersVarargs(value: GlobalCluster*): Self = StObject.set(x, "GlobalClusters", js.Array(value :_*))
+    inline def setGlobalClustersVarargs(value: GlobalCluster*): Self = StObject.set(x, "GlobalClusters", js.Array(value :_*))
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

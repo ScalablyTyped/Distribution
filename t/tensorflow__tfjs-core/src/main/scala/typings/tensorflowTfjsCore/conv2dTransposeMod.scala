@@ -18,8 +18,7 @@ object conv2dTransposeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def conv2dTranspose[T /* <: Tensor3D | Tensor4D */](
+  inline def conv2dTranspose[T /* <: Tensor3D | Tensor4D */](
     x: T | TensorLike,
     filter: Tensor4D | TensorLike,
     outputShape: (js.Tuple4[Double, Double, Double, Double]) | (js.Tuple3[Double, Double, Double]),

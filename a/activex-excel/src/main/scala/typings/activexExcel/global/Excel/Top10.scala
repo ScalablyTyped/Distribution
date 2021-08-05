@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Top10")
 @js.native
-class Top10 protected ()
+/* private */ class Top10 ()
   extends StObject
      with typings.activexExcel.Excel.Top10 {
   
@@ -45,7 +45,7 @@ class Top10 protected ()
   /* CompleteClass */
   override def Delete(): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.Top10_typekey")
   var ExcelDotTop10_typekey: typings.activexExcel.Excel.Top10 = js.native
   

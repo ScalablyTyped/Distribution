@@ -15,19 +15,15 @@ trait CapturedPhoto extends StObject {
 }
 object CapturedPhoto {
   
-  @scala.inline
-  def apply(frame: CapturedFrame, thumbnail: CapturedFrame): CapturedPhoto = {
+  inline def apply(frame: CapturedFrame, thumbnail: CapturedFrame): CapturedPhoto = {
     val __obj = js.Dynamic.literal(frame = frame.asInstanceOf[js.Any], thumbnail = thumbnail.asInstanceOf[js.Any])
     __obj.asInstanceOf[CapturedPhoto]
   }
   
-  @scala.inline
-  implicit class CapturedPhotoMutableBuilder[Self <: CapturedPhoto] (val x: Self) extends AnyVal {
+  extension [Self <: CapturedPhoto](x: Self) {
     
-    @scala.inline
-    def setFrame(value: CapturedFrame): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
+    inline def setFrame(value: CapturedFrame): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnail(value: CapturedFrame): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+    inline def setThumbnail(value: CapturedFrame): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
   }
 }

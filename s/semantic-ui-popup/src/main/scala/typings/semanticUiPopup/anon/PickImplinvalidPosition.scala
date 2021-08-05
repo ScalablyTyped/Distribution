@@ -11,16 +11,13 @@ trait PickImplinvalidPosition extends StObject {
 }
 object PickImplinvalidPosition {
   
-  @scala.inline
-  def apply(invalidPosition: String): PickImplinvalidPosition = {
+  inline def apply(invalidPosition: String): PickImplinvalidPosition = {
     val __obj = js.Dynamic.literal(invalidPosition = invalidPosition.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplinvalidPosition]
   }
   
-  @scala.inline
-  implicit class PickImplinvalidPositionMutableBuilder[Self <: PickImplinvalidPosition] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplinvalidPosition](x: Self) {
     
-    @scala.inline
-    def setInvalidPosition(value: String): Self = StObject.set(x, "invalidPosition", value.asInstanceOf[js.Any])
+    inline def setInvalidPosition(value: String): Self = StObject.set(x, "invalidPosition", value.asInstanceOf[js.Any])
   }
 }

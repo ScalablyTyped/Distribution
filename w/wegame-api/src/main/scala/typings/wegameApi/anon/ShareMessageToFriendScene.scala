@@ -13,16 +13,13 @@ trait ShareMessageToFriendScene extends StObject {
 }
 object ShareMessageToFriendScene {
   
-  @scala.inline
-  def apply(shareMessageToFriendScene: Double): ShareMessageToFriendScene = {
+  inline def apply(shareMessageToFriendScene: Double): ShareMessageToFriendScene = {
     val __obj = js.Dynamic.literal(shareMessageToFriendScene = shareMessageToFriendScene.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShareMessageToFriendScene]
   }
   
-  @scala.inline
-  implicit class ShareMessageToFriendSceneMutableBuilder[Self <: ShareMessageToFriendScene] (val x: Self) extends AnyVal {
+  extension [Self <: ShareMessageToFriendScene](x: Self) {
     
-    @scala.inline
-    def setShareMessageToFriendScene(value: Double): Self = StObject.set(x, "shareMessageToFriendScene", value.asInstanceOf[js.Any])
+    inline def setShareMessageToFriendScene(value: Double): Self = StObject.set(x, "shareMessageToFriendScene", value.asInstanceOf[js.Any])
   }
 }

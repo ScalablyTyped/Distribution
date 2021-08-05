@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlRuleType extends StObject
 object OlRuleType {
   
-  @scala.inline
-  def olRuleReceive: `0` = 0.asInstanceOf[`0`]
+  inline def olRuleReceive: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def olRuleSend: `1` = 1.asInstanceOf[`1`]
+  inline def olRuleSend: `1` = 1.asInstanceOf[`1`]
 }

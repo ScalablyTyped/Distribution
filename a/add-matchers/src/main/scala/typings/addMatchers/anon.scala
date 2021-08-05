@@ -15,8 +15,7 @@ object anon {
   }
   object BeforeEach {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       beforeEach: js.Any,
       jasmine: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify jasmine.Env */ js.Any
     ): BeforeEach = {
@@ -24,14 +23,11 @@ object anon {
       __obj.asInstanceOf[BeforeEach]
     }
     
-    @scala.inline
-    implicit class BeforeEachMutableBuilder[Self <: BeforeEach] (val x: Self) extends AnyVal {
+    extension [Self <: BeforeEach](x: Self) {
       
-      @scala.inline
-      def setBeforeEach(value: js.Any): Self = StObject.set(x, "beforeEach", value.asInstanceOf[js.Any])
+      inline def setBeforeEach(value: js.Any): Self = StObject.set(x, "beforeEach", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJasmine(
+      inline def setJasmine(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify jasmine.Env */ js.Any
       ): Self = StObject.set(x, "jasmine", value.asInstanceOf[js.Any])
     }
@@ -51,19 +47,16 @@ object anon {
   }
   object Expect {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       expect: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify jest.Expect */ js.Any
     ): Expect = {
       val __obj = js.Dynamic.literal(expect = expect.asInstanceOf[js.Any])
       __obj.asInstanceOf[Expect]
     }
     
-    @scala.inline
-    implicit class ExpectMutableBuilder[Self <: Expect] (val x: Self) extends AnyVal {
+    extension [Self <: Expect](x: Self) {
       
-      @scala.inline
-      def setExpect(
+      inline def setExpect(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify jest.Expect */ js.Any
       ): Self = StObject.set(x, "expect", value.asInstanceOf[js.Any])
     }

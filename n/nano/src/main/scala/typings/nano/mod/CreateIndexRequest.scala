@@ -27,40 +27,29 @@ trait CreateIndexRequest extends StObject {
 }
 object CreateIndexRequest {
   
-  @scala.inline
-  def apply(index: Fields): CreateIndexRequest = {
+  inline def apply(index: Fields): CreateIndexRequest = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateIndexRequest]
   }
   
-  @scala.inline
-  implicit class CreateIndexRequestMutableBuilder[Self <: CreateIndexRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateIndexRequest](x: Self) {
     
-    @scala.inline
-    def setDdoc(value: String): Self = StObject.set(x, "ddoc", value.asInstanceOf[js.Any])
+    inline def setDdoc(value: String): Self = StObject.set(x, "ddoc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDdocUndefined: Self = StObject.set(x, "ddoc", js.undefined)
+    inline def setDdocUndefined: Self = StObject.set(x, "ddoc", js.undefined)
     
-    @scala.inline
-    def setIndex(value: Fields): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Fields): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPartitioned(value: Boolean): Self = StObject.set(x, "partitioned", value.asInstanceOf[js.Any])
+    inline def setPartitioned(value: Boolean): Self = StObject.set(x, "partitioned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionedUndefined: Self = StObject.set(x, "partitioned", js.undefined)
+    inline def setPartitionedUndefined: Self = StObject.set(x, "partitioned", js.undefined)
     
-    @scala.inline
-    def setType(value: json | text): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: json | text): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -18,19 +18,15 @@ trait StageExecution extends StObject {
 }
 object StageExecution {
   
-  @scala.inline
-  def apply(pipelineExecutionId: PipelineExecutionId, status: StageExecutionStatus): StageExecution = {
+  inline def apply(pipelineExecutionId: PipelineExecutionId, status: StageExecutionStatus): StageExecution = {
     val __obj = js.Dynamic.literal(pipelineExecutionId = pipelineExecutionId.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[StageExecution]
   }
   
-  @scala.inline
-  implicit class StageExecutionMutableBuilder[Self <: StageExecution] (val x: Self) extends AnyVal {
+  extension [Self <: StageExecution](x: Self) {
     
-    @scala.inline
-    def setPipelineExecutionId(value: PipelineExecutionId): Self = StObject.set(x, "pipelineExecutionId", value.asInstanceOf[js.Any])
+    inline def setPipelineExecutionId(value: PipelineExecutionId): Self = StObject.set(x, "pipelineExecutionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: StageExecutionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: StageExecutionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

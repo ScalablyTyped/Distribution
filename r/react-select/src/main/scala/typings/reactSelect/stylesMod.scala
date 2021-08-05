@@ -18,8 +18,7 @@ object stylesMod {
   @js.native
   val defaultStyles: Styles = js.native
   
-  @scala.inline
-  def mergeStyles(source: StylesConfig, target: StylesConfig): StylesConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyles")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[StylesConfig]
+  inline def mergeStyles(source: StylesConfig, target: StylesConfig): StylesConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyles")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[StylesConfig]
   
   type GetStyles = js.Function2[/* a */ String, /* b */ Props, CSSProperties]
   
@@ -75,146 +74,100 @@ object stylesMod {
   }
   object Styles {
     
-    @scala.inline
-    def apply(): Styles = {
+    inline def apply(): Styles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Styles]
     }
     
-    @scala.inline
-    implicit class StylesMutableBuilder[Self <: Styles] (val x: Self) extends AnyVal {
+    extension [Self <: Styles](x: Self) {
       
-      @scala.inline
-      def setClearIndicator(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "clearIndicator", js.Any.fromFunction2(value))
+      inline def setClearIndicator(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "clearIndicator", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setClearIndicatorUndefined: Self = StObject.set(x, "clearIndicator", js.undefined)
+      inline def setClearIndicatorUndefined: Self = StObject.set(x, "clearIndicator", js.undefined)
       
-      @scala.inline
-      def setContainer(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "container", js.Any.fromFunction2(value))
+      inline def setContainer(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "container", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
-      @scala.inline
-      def setControl(value: (/* base */ CSSProperties, ControlProps[js.Object]) => CSSProperties): Self = StObject.set(x, "control", js.Any.fromFunction2(value))
+      inline def setControl(value: (/* base */ CSSProperties, ControlProps[js.Object]) => CSSProperties): Self = StObject.set(x, "control", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
+      inline def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
       
-      @scala.inline
-      def setDropdownIndicator(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "dropdownIndicator", js.Any.fromFunction2(value))
+      inline def setDropdownIndicator(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "dropdownIndicator", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDropdownIndicatorUndefined: Self = StObject.set(x, "dropdownIndicator", js.undefined)
+      inline def setDropdownIndicatorUndefined: Self = StObject.set(x, "dropdownIndicator", js.undefined)
       
-      @scala.inline
-      def setGroup(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "group", js.Any.fromFunction2(value))
+      inline def setGroup(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "group", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGroupHeading(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "groupHeading", js.Any.fromFunction2(value))
+      inline def setGroupHeading(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "groupHeading", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGroupHeadingUndefined: Self = StObject.set(x, "groupHeading", js.undefined)
+      inline def setGroupHeadingUndefined: Self = StObject.set(x, "groupHeading", js.undefined)
       
-      @scala.inline
-      def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+      inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
-      @scala.inline
-      def setIndicatorSeparator(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "indicatorSeparator", js.Any.fromFunction2(value))
+      inline def setIndicatorSeparator(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "indicatorSeparator", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIndicatorSeparatorUndefined: Self = StObject.set(x, "indicatorSeparator", js.undefined)
+      inline def setIndicatorSeparatorUndefined: Self = StObject.set(x, "indicatorSeparator", js.undefined)
       
-      @scala.inline
-      def setIndicatorsContainer(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "indicatorsContainer", js.Any.fromFunction2(value))
+      inline def setIndicatorsContainer(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "indicatorsContainer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIndicatorsContainerUndefined: Self = StObject.set(x, "indicatorsContainer", js.undefined)
+      inline def setIndicatorsContainerUndefined: Self = StObject.set(x, "indicatorsContainer", js.undefined)
       
-      @scala.inline
-      def setInput(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "input", js.Any.fromFunction2(value))
+      inline def setInput(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "input", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+      inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
       
-      @scala.inline
-      def setLoadingIndicator(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "loadingIndicator", js.Any.fromFunction2(value))
+      inline def setLoadingIndicator(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "loadingIndicator", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLoadingIndicatorUndefined: Self = StObject.set(x, "loadingIndicator", js.undefined)
+      inline def setLoadingIndicatorUndefined: Self = StObject.set(x, "loadingIndicator", js.undefined)
       
-      @scala.inline
-      def setLoadingMessage(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "loadingMessage", js.Any.fromFunction2(value))
+      inline def setLoadingMessage(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "loadingMessage", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLoadingMessageUndefined: Self = StObject.set(x, "loadingMessage", js.undefined)
+      inline def setLoadingMessageUndefined: Self = StObject.set(x, "loadingMessage", js.undefined)
       
-      @scala.inline
-      def setMenu(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "menu", js.Any.fromFunction2(value))
+      inline def setMenu(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "menu", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMenuList(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "menuList", js.Any.fromFunction2(value))
+      inline def setMenuList(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "menuList", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMenuListUndefined: Self = StObject.set(x, "menuList", js.undefined)
+      inline def setMenuListUndefined: Self = StObject.set(x, "menuList", js.undefined)
       
-      @scala.inline
-      def setMenuPortal(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "menuPortal", js.Any.fromFunction2(value))
+      inline def setMenuPortal(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "menuPortal", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMenuPortalUndefined: Self = StObject.set(x, "menuPortal", js.undefined)
+      inline def setMenuPortalUndefined: Self = StObject.set(x, "menuPortal", js.undefined)
       
-      @scala.inline
-      def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
+      inline def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
       
-      @scala.inline
-      def setMultiValue(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "multiValue", js.Any.fromFunction2(value))
+      inline def setMultiValue(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "multiValue", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMultiValueLabel(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "multiValueLabel", js.Any.fromFunction2(value))
+      inline def setMultiValueLabel(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "multiValueLabel", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMultiValueLabelUndefined: Self = StObject.set(x, "multiValueLabel", js.undefined)
+      inline def setMultiValueLabelUndefined: Self = StObject.set(x, "multiValueLabel", js.undefined)
       
-      @scala.inline
-      def setMultiValueRemove(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "multiValueRemove", js.Any.fromFunction2(value))
+      inline def setMultiValueRemove(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "multiValueRemove", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMultiValueRemoveUndefined: Self = StObject.set(x, "multiValueRemove", js.undefined)
+      inline def setMultiValueRemoveUndefined: Self = StObject.set(x, "multiValueRemove", js.undefined)
       
-      @scala.inline
-      def setMultiValueUndefined: Self = StObject.set(x, "multiValue", js.undefined)
+      inline def setMultiValueUndefined: Self = StObject.set(x, "multiValue", js.undefined)
       
-      @scala.inline
-      def setNoOptionsMessage(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "noOptionsMessage", js.Any.fromFunction2(value))
+      inline def setNoOptionsMessage(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "noOptionsMessage", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNoOptionsMessageUndefined: Self = StObject.set(x, "noOptionsMessage", js.undefined)
+      inline def setNoOptionsMessageUndefined: Self = StObject.set(x, "noOptionsMessage", js.undefined)
       
-      @scala.inline
-      def setOption(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "option", js.Any.fromFunction2(value))
+      inline def setOption(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "option", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOptionUndefined: Self = StObject.set(x, "option", js.undefined)
+      inline def setOptionUndefined: Self = StObject.set(x, "option", js.undefined)
       
-      @scala.inline
-      def setPlaceholder(value: (/* base */ CSSProperties, PlaceholderProps[js.Object]) => CSSProperties): Self = StObject.set(x, "placeholder", js.Any.fromFunction2(value))
+      inline def setPlaceholder(value: (/* base */ CSSProperties, PlaceholderProps[js.Object]) => CSSProperties): Self = StObject.set(x, "placeholder", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      @scala.inline
-      def setSingleValue(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "singleValue", js.Any.fromFunction2(value))
+      inline def setSingleValue(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "singleValue", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSingleValueUndefined: Self = StObject.set(x, "singleValue", js.undefined)
+      inline def setSingleValueUndefined: Self = StObject.set(x, "singleValue", js.undefined)
       
-      @scala.inline
-      def setValueContainer(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "valueContainer", js.Any.fromFunction2(value))
+      inline def setValueContainer(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "valueContainer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setValueContainerUndefined: Self = StObject.set(x, "valueContainer", js.undefined)
+      inline def setValueContainerUndefined: Self = StObject.set(x, "valueContainer", js.undefined)
     }
   }
   
@@ -267,146 +220,100 @@ object stylesMod {
   }
   object StylesConfig {
     
-    @scala.inline
-    def apply(): StylesConfig = {
+    inline def apply(): StylesConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StylesConfig]
     }
     
-    @scala.inline
-    implicit class StylesConfigMutableBuilder[Self <: StylesConfig] (val x: Self) extends AnyVal {
+    extension [Self <: StylesConfig](x: Self) {
       
-      @scala.inline
-      def setClearIndicator(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "clearIndicator", js.Any.fromFunction2(value))
+      inline def setClearIndicator(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "clearIndicator", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setClearIndicatorUndefined: Self = StObject.set(x, "clearIndicator", js.undefined)
+      inline def setClearIndicatorUndefined: Self = StObject.set(x, "clearIndicator", js.undefined)
       
-      @scala.inline
-      def setContainer(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "container", js.Any.fromFunction2(value))
+      inline def setContainer(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "container", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
-      @scala.inline
-      def setControl(value: (/* base */ CSSProperties, ControlProps[js.Object]) => CSSProperties): Self = StObject.set(x, "control", js.Any.fromFunction2(value))
+      inline def setControl(value: (/* base */ CSSProperties, ControlProps[js.Object]) => CSSProperties): Self = StObject.set(x, "control", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
+      inline def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
       
-      @scala.inline
-      def setDropdownIndicator(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "dropdownIndicator", js.Any.fromFunction2(value))
+      inline def setDropdownIndicator(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "dropdownIndicator", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDropdownIndicatorUndefined: Self = StObject.set(x, "dropdownIndicator", js.undefined)
+      inline def setDropdownIndicatorUndefined: Self = StObject.set(x, "dropdownIndicator", js.undefined)
       
-      @scala.inline
-      def setGroup(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "group", js.Any.fromFunction2(value))
+      inline def setGroup(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "group", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGroupHeading(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "groupHeading", js.Any.fromFunction2(value))
+      inline def setGroupHeading(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "groupHeading", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGroupHeadingUndefined: Self = StObject.set(x, "groupHeading", js.undefined)
+      inline def setGroupHeadingUndefined: Self = StObject.set(x, "groupHeading", js.undefined)
       
-      @scala.inline
-      def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+      inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
-      @scala.inline
-      def setIndicatorSeparator(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "indicatorSeparator", js.Any.fromFunction2(value))
+      inline def setIndicatorSeparator(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "indicatorSeparator", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIndicatorSeparatorUndefined: Self = StObject.set(x, "indicatorSeparator", js.undefined)
+      inline def setIndicatorSeparatorUndefined: Self = StObject.set(x, "indicatorSeparator", js.undefined)
       
-      @scala.inline
-      def setIndicatorsContainer(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "indicatorsContainer", js.Any.fromFunction2(value))
+      inline def setIndicatorsContainer(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "indicatorsContainer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIndicatorsContainerUndefined: Self = StObject.set(x, "indicatorsContainer", js.undefined)
+      inline def setIndicatorsContainerUndefined: Self = StObject.set(x, "indicatorsContainer", js.undefined)
       
-      @scala.inline
-      def setInput(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "input", js.Any.fromFunction2(value))
+      inline def setInput(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "input", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+      inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
       
-      @scala.inline
-      def setLoadingIndicator(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "loadingIndicator", js.Any.fromFunction2(value))
+      inline def setLoadingIndicator(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "loadingIndicator", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLoadingIndicatorUndefined: Self = StObject.set(x, "loadingIndicator", js.undefined)
+      inline def setLoadingIndicatorUndefined: Self = StObject.set(x, "loadingIndicator", js.undefined)
       
-      @scala.inline
-      def setLoadingMessage(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "loadingMessage", js.Any.fromFunction2(value))
+      inline def setLoadingMessage(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "loadingMessage", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLoadingMessageUndefined: Self = StObject.set(x, "loadingMessage", js.undefined)
+      inline def setLoadingMessageUndefined: Self = StObject.set(x, "loadingMessage", js.undefined)
       
-      @scala.inline
-      def setMenu(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "menu", js.Any.fromFunction2(value))
+      inline def setMenu(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "menu", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMenuList(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "menuList", js.Any.fromFunction2(value))
+      inline def setMenuList(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "menuList", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMenuListUndefined: Self = StObject.set(x, "menuList", js.undefined)
+      inline def setMenuListUndefined: Self = StObject.set(x, "menuList", js.undefined)
       
-      @scala.inline
-      def setMenuPortal(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "menuPortal", js.Any.fromFunction2(value))
+      inline def setMenuPortal(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "menuPortal", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMenuPortalUndefined: Self = StObject.set(x, "menuPortal", js.undefined)
+      inline def setMenuPortalUndefined: Self = StObject.set(x, "menuPortal", js.undefined)
       
-      @scala.inline
-      def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
+      inline def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
       
-      @scala.inline
-      def setMultiValue(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "multiValue", js.Any.fromFunction2(value))
+      inline def setMultiValue(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "multiValue", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMultiValueLabel(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "multiValueLabel", js.Any.fromFunction2(value))
+      inline def setMultiValueLabel(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "multiValueLabel", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMultiValueLabelUndefined: Self = StObject.set(x, "multiValueLabel", js.undefined)
+      inline def setMultiValueLabelUndefined: Self = StObject.set(x, "multiValueLabel", js.undefined)
       
-      @scala.inline
-      def setMultiValueRemove(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "multiValueRemove", js.Any.fromFunction2(value))
+      inline def setMultiValueRemove(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "multiValueRemove", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMultiValueRemoveUndefined: Self = StObject.set(x, "multiValueRemove", js.undefined)
+      inline def setMultiValueRemoveUndefined: Self = StObject.set(x, "multiValueRemove", js.undefined)
       
-      @scala.inline
-      def setMultiValueUndefined: Self = StObject.set(x, "multiValue", js.undefined)
+      inline def setMultiValueUndefined: Self = StObject.set(x, "multiValue", js.undefined)
       
-      @scala.inline
-      def setNoOptionsMessage(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "noOptionsMessage", js.Any.fromFunction2(value))
+      inline def setNoOptionsMessage(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "noOptionsMessage", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNoOptionsMessageUndefined: Self = StObject.set(x, "noOptionsMessage", js.undefined)
+      inline def setNoOptionsMessageUndefined: Self = StObject.set(x, "noOptionsMessage", js.undefined)
       
-      @scala.inline
-      def setOption(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "option", js.Any.fromFunction2(value))
+      inline def setOption(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "option", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOptionUndefined: Self = StObject.set(x, "option", js.undefined)
+      inline def setOptionUndefined: Self = StObject.set(x, "option", js.undefined)
       
-      @scala.inline
-      def setPlaceholder(value: (/* base */ CSSProperties, PlaceholderProps[js.Object]) => CSSProperties): Self = StObject.set(x, "placeholder", js.Any.fromFunction2(value))
+      inline def setPlaceholder(value: (/* base */ CSSProperties, PlaceholderProps[js.Object]) => CSSProperties): Self = StObject.set(x, "placeholder", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      @scala.inline
-      def setSingleValue(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "singleValue", js.Any.fromFunction2(value))
+      inline def setSingleValue(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "singleValue", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSingleValueUndefined: Self = StObject.set(x, "singleValue", js.undefined)
+      inline def setSingleValueUndefined: Self = StObject.set(x, "singleValue", js.undefined)
       
-      @scala.inline
-      def setValueContainer(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "valueContainer", js.Any.fromFunction2(value))
+      inline def setValueContainer(value: (/* base */ CSSProperties, js.Any) => CSSProperties): Self = StObject.set(x, "valueContainer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setValueContainerUndefined: Self = StObject.set(x, "valueContainer", js.undefined)
+      inline def setValueContainerUndefined: Self = StObject.set(x, "valueContainer", js.undefined)
     }
   }
   

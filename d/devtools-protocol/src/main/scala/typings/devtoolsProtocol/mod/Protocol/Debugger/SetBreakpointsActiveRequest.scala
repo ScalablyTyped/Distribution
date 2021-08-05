@@ -13,16 +13,13 @@ trait SetBreakpointsActiveRequest extends StObject {
 }
 object SetBreakpointsActiveRequest {
   
-  @scala.inline
-  def apply(active: Boolean): SetBreakpointsActiveRequest = {
+  inline def apply(active: Boolean): SetBreakpointsActiveRequest = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetBreakpointsActiveRequest]
   }
   
-  @scala.inline
-  implicit class SetBreakpointsActiveRequestMutableBuilder[Self <: SetBreakpointsActiveRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetBreakpointsActiveRequest](x: Self) {
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
   }
 }

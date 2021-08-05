@@ -13,19 +13,15 @@ trait FsObjType extends StObject {
 }
 object FsObjType {
   
-  @scala.inline
-  def apply(fsObjType: FileSystemObjectType, id: Double): FsObjType = {
+  inline def apply(fsObjType: FileSystemObjectType, id: Double): FsObjType = {
     val __obj = js.Dynamic.literal(fsObjType = fsObjType.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[FsObjType]
   }
   
-  @scala.inline
-  implicit class FsObjTypeMutableBuilder[Self <: FsObjType] (val x: Self) extends AnyVal {
+  extension [Self <: FsObjType](x: Self) {
     
-    @scala.inline
-    def setFsObjType(value: FileSystemObjectType): Self = StObject.set(x, "fsObjType", value.asInstanceOf[js.Any])
+    inline def setFsObjType(value: FileSystemObjectType): Self = StObject.set(x, "fsObjType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

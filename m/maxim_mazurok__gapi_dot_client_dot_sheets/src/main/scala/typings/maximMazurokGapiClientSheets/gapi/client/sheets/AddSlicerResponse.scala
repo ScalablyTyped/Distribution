@@ -11,19 +11,15 @@ trait AddSlicerResponse extends StObject {
 }
 object AddSlicerResponse {
   
-  @scala.inline
-  def apply(): AddSlicerResponse = {
+  inline def apply(): AddSlicerResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddSlicerResponse]
   }
   
-  @scala.inline
-  implicit class AddSlicerResponseMutableBuilder[Self <: AddSlicerResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AddSlicerResponse](x: Self) {
     
-    @scala.inline
-    def setSlicer(value: Slicer): Self = StObject.set(x, "slicer", value.asInstanceOf[js.Any])
+    inline def setSlicer(value: Slicer): Self = StObject.set(x, "slicer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlicerUndefined: Self = StObject.set(x, "slicer", js.undefined)
+    inline def setSlicerUndefined: Self = StObject.set(x, "slicer", js.undefined)
   }
 }

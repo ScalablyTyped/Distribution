@@ -9,8 +9,7 @@ trait UseSelectGetMenuPropsOptions
      with GetMenuPropsOptions
 object UseSelectGetMenuPropsOptions {
   
-  @scala.inline
-  def apply(): UseSelectGetMenuPropsOptions = {
+  inline def apply(): UseSelectGetMenuPropsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UseSelectGetMenuPropsOptions]
   }

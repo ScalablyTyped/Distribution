@@ -19,10 +19,8 @@ object mod {
   	})();
   	```
   	*/
-  @scala.inline
-  def apply[ValueType](promise: js.Thenable[ValueType], minimumDelay: Double): js.Promise[ValueType] = (^.asInstanceOf[js.Dynamic].apply(promise.asInstanceOf[js.Any], minimumDelay.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ValueType]]
-  @scala.inline
-  def apply[ValueType](promise: js.Thenable[ValueType], minimumDelay: Double, options: Options): js.Promise[ValueType] = (^.asInstanceOf[js.Dynamic].apply(promise.asInstanceOf[js.Any], minimumDelay.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ValueType]]
+  inline def apply[ValueType](promise: js.Thenable[ValueType], minimumDelay: Double): js.Promise[ValueType] = (^.asInstanceOf[js.Dynamic].apply(promise.asInstanceOf[js.Any], minimumDelay.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ValueType]]
+  inline def apply[ValueType](promise: js.Thenable[ValueType], minimumDelay: Double, options: Options): js.Promise[ValueType] = (^.asInstanceOf[js.Dynamic].apply(promise.asInstanceOf[js.Any], minimumDelay.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ValueType]]
   
   @JSImport("p-min-delay", JSImport.Namespace)
   @js.native
@@ -38,8 +36,7 @@ object mod {
   @JSImport("p-min-delay", "default")
   @js.native
   def default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pMinDelay */ js.Any = js.native
-  @scala.inline
-  def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pMinDelay */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pMinDelay */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   trait Options extends StObject {
     
@@ -52,20 +49,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDelayRejection(value: Boolean): Self = StObject.set(x, "delayRejection", value.asInstanceOf[js.Any])
+      inline def setDelayRejection(value: Boolean): Self = StObject.set(x, "delayRejection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayRejectionUndefined: Self = StObject.set(x, "delayRejection", js.undefined)
+      inline def setDelayRejectionUndefined: Self = StObject.set(x, "delayRejection", js.undefined)
     }
   }
 }

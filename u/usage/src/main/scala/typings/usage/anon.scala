@@ -14,20 +14,16 @@ object anon {
   }
   object Rss {
     
-    @scala.inline
-    def apply(rss: Double, vsize: Double): Rss = {
+    inline def apply(rss: Double, vsize: Double): Rss = {
       val __obj = js.Dynamic.literal(rss = rss.asInstanceOf[js.Any], vsize = vsize.asInstanceOf[js.Any])
       __obj.asInstanceOf[Rss]
     }
     
-    @scala.inline
-    implicit class RssMutableBuilder[Self <: Rss] (val x: Self) extends AnyVal {
+    extension [Self <: Rss](x: Self) {
       
-      @scala.inline
-      def setRss(value: Double): Self = StObject.set(x, "rss", value.asInstanceOf[js.Any])
+      inline def setRss(value: Double): Self = StObject.set(x, "rss", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVsize(value: Double): Self = StObject.set(x, "vsize", value.asInstanceOf[js.Any])
+      inline def setVsize(value: Double): Self = StObject.set(x, "vsize", value.asInstanceOf[js.Any])
     }
   }
 }

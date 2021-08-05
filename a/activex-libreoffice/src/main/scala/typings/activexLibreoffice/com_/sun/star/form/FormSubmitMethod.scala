@@ -15,10 +15,8 @@ trait FormSubmitMethod extends StObject
 object FormSubmitMethod {
   
   /** specifies to append the input information of a form to the target URL as parameters. */
-  @scala.inline
-  def GET: `0` = 0.asInstanceOf[`0`]
+  inline def GET: `0` = 0.asInstanceOf[`0`]
   
   /** specifies to send the input information in a data body. */
-  @scala.inline
-  def POST: `1` = 1.asInstanceOf[`1`]
+  inline def POST: `1` = 1.asInstanceOf[`1`]
 }

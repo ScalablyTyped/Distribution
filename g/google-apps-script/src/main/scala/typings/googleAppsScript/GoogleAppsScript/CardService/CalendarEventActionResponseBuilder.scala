@@ -18,8 +18,7 @@ trait CalendarEventActionResponseBuilder extends StObject {
 }
 object CalendarEventActionResponseBuilder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addAttendees: js.Array[String] => CalendarEventActionResponseBuilder,
     build: () => CalendarEventActionResponse,
     setConferenceData: ConferenceData => CalendarEventActionResponseBuilder
@@ -28,16 +27,12 @@ object CalendarEventActionResponseBuilder {
     __obj.asInstanceOf[CalendarEventActionResponseBuilder]
   }
   
-  @scala.inline
-  implicit class CalendarEventActionResponseBuilderMutableBuilder[Self <: CalendarEventActionResponseBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: CalendarEventActionResponseBuilder](x: Self) {
     
-    @scala.inline
-    def setAddAttendees(value: js.Array[String] => CalendarEventActionResponseBuilder): Self = StObject.set(x, "addAttendees", js.Any.fromFunction1(value))
+    inline def setAddAttendees(value: js.Array[String] => CalendarEventActionResponseBuilder): Self = StObject.set(x, "addAttendees", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBuild(value: () => CalendarEventActionResponse): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
+    inline def setBuild(value: () => CalendarEventActionResponse): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetConferenceData(value: ConferenceData => CalendarEventActionResponseBuilder): Self = StObject.set(x, "setConferenceData", js.Any.fromFunction1(value))
+    inline def setSetConferenceData(value: ConferenceData => CalendarEventActionResponseBuilder): Self = StObject.set(x, "setConferenceData", js.Any.fromFunction1(value))
   }
 }

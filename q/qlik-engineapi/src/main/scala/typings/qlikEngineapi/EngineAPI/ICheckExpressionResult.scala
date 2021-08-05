@@ -17,22 +17,17 @@ trait ICheckExpressionResult
 }
 object ICheckExpressionResult {
   
-  @scala.inline
-  def apply(qBadFieldNames: js.Array[INxRange], qDangerousFieldNames: js.Array[INxRange], qErrorMsg: String): ICheckExpressionResult = {
+  inline def apply(qBadFieldNames: js.Array[INxRange], qDangerousFieldNames: js.Array[INxRange], qErrorMsg: String): ICheckExpressionResult = {
     val __obj = js.Dynamic.literal(qBadFieldNames = qBadFieldNames.asInstanceOf[js.Any], qDangerousFieldNames = qDangerousFieldNames.asInstanceOf[js.Any], qErrorMsg = qErrorMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICheckExpressionResult]
   }
   
-  @scala.inline
-  implicit class ICheckExpressionResultMutableBuilder[Self <: ICheckExpressionResult] (val x: Self) extends AnyVal {
+  extension [Self <: ICheckExpressionResult](x: Self) {
     
-    @scala.inline
-    def setQDangerousFieldNames(value: js.Array[INxRange]): Self = StObject.set(x, "qDangerousFieldNames", value.asInstanceOf[js.Any])
+    inline def setQDangerousFieldNames(value: js.Array[INxRange]): Self = StObject.set(x, "qDangerousFieldNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQDangerousFieldNamesVarargs(value: INxRange*): Self = StObject.set(x, "qDangerousFieldNames", js.Array(value :_*))
+    inline def setQDangerousFieldNamesVarargs(value: INxRange*): Self = StObject.set(x, "qDangerousFieldNames", js.Array(value :_*))
     
-    @scala.inline
-    def setQErrorMsg(value: String): Self = StObject.set(x, "qErrorMsg", value.asInstanceOf[js.Any])
+    inline def setQErrorMsg(value: String): Self = StObject.set(x, "qErrorMsg", value.asInstanceOf[js.Any])
   }
 }

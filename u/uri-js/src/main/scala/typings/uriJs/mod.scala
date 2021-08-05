@@ -11,66 +11,41 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def equal(uriA: String, uriB: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(uriA.asInstanceOf[js.Any], uriB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def equal(uriA: String, uriB: String, options: URIOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(uriA.asInstanceOf[js.Any], uriB.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def equal(uriA: URIComponents, uriB: URIComponents): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(uriA.asInstanceOf[js.Any], uriB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def equal(uriA: URIComponents, uriB: URIComponents, options: URIOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(uriA.asInstanceOf[js.Any], uriB.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def equal(uriA: String, uriB: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(uriA.asInstanceOf[js.Any], uriB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def equal(uriA: String, uriB: String, options: URIOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(uriA.asInstanceOf[js.Any], uriB.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def equal(uriA: URIComponents, uriB: URIComponents): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(uriA.asInstanceOf[js.Any], uriB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def equal(uriA: URIComponents, uriB: URIComponents, options: URIOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(uriA.asInstanceOf[js.Any], uriB.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def escapeComponent(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeComponent")(str.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def escapeComponent(str: String, options: URIOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("escapeComponent")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def escapeComponent(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeComponent")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def escapeComponent(str: String, options: URIOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("escapeComponent")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def normalize(uri: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(uri.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def normalize(uri: String, options: URIOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(uri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def normalize(uri: URIComponents): URIComponents = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(uri.asInstanceOf[js.Any]).asInstanceOf[URIComponents]
-  @scala.inline
-  def normalize(uri: URIComponents, options: URIOptions): URIComponents = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(uri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[URIComponents]
+  inline def normalize(uri: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(uri.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def normalize(uri: String, options: URIOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(uri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def normalize(uri: URIComponents): URIComponents = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(uri.asInstanceOf[js.Any]).asInstanceOf[URIComponents]
+  inline def normalize(uri: URIComponents, options: URIOptions): URIComponents = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(uri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[URIComponents]
   
-  @scala.inline
-  def parse(uriString: String): URIComponents = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(uriString.asInstanceOf[js.Any]).asInstanceOf[URIComponents]
-  @scala.inline
-  def parse(uriString: String, options: URIOptions): URIComponents = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(uriString.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[URIComponents]
+  inline def parse(uriString: String): URIComponents = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(uriString.asInstanceOf[js.Any]).asInstanceOf[URIComponents]
+  inline def parse(uriString: String, options: URIOptions): URIComponents = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(uriString.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[URIComponents]
   
-  @scala.inline
-  def pctDecChars(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pctDecChars")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def pctDecChars(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pctDecChars")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def pctEncChar(chr: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pctEncChar")(chr.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def pctEncChar(chr: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pctEncChar")(chr.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def removeDotSegments(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("removeDotSegments")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def removeDotSegments(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("removeDotSegments")(input.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def resolve(baseURI: String, relativeURI: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(baseURI.asInstanceOf[js.Any], relativeURI.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def resolve(baseURI: String, relativeURI: String, options: URIOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(baseURI.asInstanceOf[js.Any], relativeURI.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def resolve(baseURI: String, relativeURI: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(baseURI.asInstanceOf[js.Any], relativeURI.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def resolve(baseURI: String, relativeURI: String, options: URIOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(baseURI.asInstanceOf[js.Any], relativeURI.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def resolveComponents(base: URIComponents, relative: URIComponents): URIComponents = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveComponents")(base.asInstanceOf[js.Any], relative.asInstanceOf[js.Any])).asInstanceOf[URIComponents]
-  @scala.inline
-  def resolveComponents(base: URIComponents, relative: URIComponents, options: Unit, skipNormalization: Boolean): URIComponents = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveComponents")(base.asInstanceOf[js.Any], relative.asInstanceOf[js.Any], options.asInstanceOf[js.Any], skipNormalization.asInstanceOf[js.Any])).asInstanceOf[URIComponents]
-  @scala.inline
-  def resolveComponents(base: URIComponents, relative: URIComponents, options: URIOptions): URIComponents = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveComponents")(base.asInstanceOf[js.Any], relative.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[URIComponents]
-  @scala.inline
-  def resolveComponents(base: URIComponents, relative: URIComponents, options: URIOptions, skipNormalization: Boolean): URIComponents = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveComponents")(base.asInstanceOf[js.Any], relative.asInstanceOf[js.Any], options.asInstanceOf[js.Any], skipNormalization.asInstanceOf[js.Any])).asInstanceOf[URIComponents]
+  inline def resolveComponents(base: URIComponents, relative: URIComponents): URIComponents = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveComponents")(base.asInstanceOf[js.Any], relative.asInstanceOf[js.Any])).asInstanceOf[URIComponents]
+  inline def resolveComponents(base: URIComponents, relative: URIComponents, options: Unit, skipNormalization: Boolean): URIComponents = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveComponents")(base.asInstanceOf[js.Any], relative.asInstanceOf[js.Any], options.asInstanceOf[js.Any], skipNormalization.asInstanceOf[js.Any])).asInstanceOf[URIComponents]
+  inline def resolveComponents(base: URIComponents, relative: URIComponents, options: URIOptions): URIComponents = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveComponents")(base.asInstanceOf[js.Any], relative.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[URIComponents]
+  inline def resolveComponents(base: URIComponents, relative: URIComponents, options: URIOptions, skipNormalization: Boolean): URIComponents = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveComponents")(base.asInstanceOf[js.Any], relative.asInstanceOf[js.Any], options.asInstanceOf[js.Any], skipNormalization.asInstanceOf[js.Any])).asInstanceOf[URIComponents]
   
-  @scala.inline
-  def serialize(components: URIComponents): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(components.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def serialize(components: URIComponents, options: URIOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(components.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def serialize(components: URIComponents): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(components.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def serialize(components: URIComponents, options: URIOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(components.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def unescapeComponent(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescapeComponent")(str.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def unescapeComponent(str: String, options: URIOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("unescapeComponent")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def unescapeComponent(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescapeComponent")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def unescapeComponent(str: String, options: URIOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("unescapeComponent")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait URIComponents extends StObject {
     
@@ -94,68 +69,48 @@ object mod {
   }
   object URIComponents {
     
-    @scala.inline
-    def apply(): URIComponents = {
+    inline def apply(): URIComponents = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[URIComponents]
     }
     
-    @scala.inline
-    implicit class URIComponentsMutableBuilder[Self <: URIComponents] (val x: Self) extends AnyVal {
+    extension [Self <: URIComponents](x: Self) {
       
-      @scala.inline
-      def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setFragment(value: String): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
+      inline def setFragment(value: String): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFragmentUndefined: Self = StObject.set(x, "fragment", js.undefined)
+      inline def setFragmentUndefined: Self = StObject.set(x, "fragment", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double | String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double | String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
-      @scala.inline
-      def setReference(value: String): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+      inline def setReference(value: String): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferenceUndefined: Self = StObject.set(x, "reference", js.undefined)
+      inline def setReferenceUndefined: Self = StObject.set(x, "reference", js.undefined)
       
-      @scala.inline
-      def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+      inline def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
+      inline def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
       
-      @scala.inline
-      def setUserinfo(value: String): Self = StObject.set(x, "userinfo", value.asInstanceOf[js.Any])
+      inline def setUserinfo(value: String): Self = StObject.set(x, "userinfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserinfoUndefined: Self = StObject.set(x, "userinfo", js.undefined)
+      inline def setUserinfoUndefined: Self = StObject.set(x, "userinfo", js.undefined)
     }
   }
   
@@ -177,56 +132,40 @@ object mod {
   }
   object URIOptions {
     
-    @scala.inline
-    def apply(): URIOptions = {
+    inline def apply(): URIOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[URIOptions]
     }
     
-    @scala.inline
-    implicit class URIOptionsMutableBuilder[Self <: URIOptions] (val x: Self) extends AnyVal {
+    extension [Self <: URIOptions](x: Self) {
       
-      @scala.inline
-      def setAbsolutePath(value: Boolean): Self = StObject.set(x, "absolutePath", value.asInstanceOf[js.Any])
+      inline def setAbsolutePath(value: Boolean): Self = StObject.set(x, "absolutePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbsolutePathUndefined: Self = StObject.set(x, "absolutePath", js.undefined)
+      inline def setAbsolutePathUndefined: Self = StObject.set(x, "absolutePath", js.undefined)
       
-      @scala.inline
-      def setDomainHost(value: Boolean): Self = StObject.set(x, "domainHost", value.asInstanceOf[js.Any])
+      inline def setDomainHost(value: Boolean): Self = StObject.set(x, "domainHost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainHostUndefined: Self = StObject.set(x, "domainHost", js.undefined)
+      inline def setDomainHostUndefined: Self = StObject.set(x, "domainHost", js.undefined)
       
-      @scala.inline
-      def setIri(value: Boolean): Self = StObject.set(x, "iri", value.asInstanceOf[js.Any])
+      inline def setIri(value: Boolean): Self = StObject.set(x, "iri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIriUndefined: Self = StObject.set(x, "iri", js.undefined)
+      inline def setIriUndefined: Self = StObject.set(x, "iri", js.undefined)
       
-      @scala.inline
-      def setReference(value: String): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+      inline def setReference(value: String): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferenceUndefined: Self = StObject.set(x, "reference", js.undefined)
+      inline def setReferenceUndefined: Self = StObject.set(x, "reference", js.undefined)
       
-      @scala.inline
-      def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+      inline def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
+      inline def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
       
-      @scala.inline
-      def setTolerant(value: Boolean): Self = StObject.set(x, "tolerant", value.asInstanceOf[js.Any])
+      inline def setTolerant(value: Boolean): Self = StObject.set(x, "tolerant", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTolerantUndefined: Self = StObject.set(x, "tolerant", js.undefined)
+      inline def setTolerantUndefined: Self = StObject.set(x, "tolerant", js.undefined)
       
-      @scala.inline
-      def setUnicodeSupport(value: Boolean): Self = StObject.set(x, "unicodeSupport", value.asInstanceOf[js.Any])
+      inline def setUnicodeSupport(value: Boolean): Self = StObject.set(x, "unicodeSupport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnicodeSupportUndefined: Self = StObject.set(x, "unicodeSupport", js.undefined)
+      inline def setUnicodeSupportUndefined: Self = StObject.set(x, "unicodeSupport", js.undefined)
     }
   }
   
@@ -260,8 +199,7 @@ object mod {
   }
   object URIRegExps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ESCAPE: RegExp,
       IPV4ADDRESS: RegExp,
       IPV6ADDRESS: RegExp,
@@ -280,47 +218,33 @@ object mod {
       __obj.asInstanceOf[URIRegExps]
     }
     
-    @scala.inline
-    implicit class URIRegExpsMutableBuilder[Self <: URIRegExps] (val x: Self) extends AnyVal {
+    extension [Self <: URIRegExps](x: Self) {
       
-      @scala.inline
-      def setESCAPE(value: RegExp): Self = StObject.set(x, "ESCAPE", value.asInstanceOf[js.Any])
+      inline def setESCAPE(value: RegExp): Self = StObject.set(x, "ESCAPE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIPV4ADDRESS(value: RegExp): Self = StObject.set(x, "IPV4ADDRESS", value.asInstanceOf[js.Any])
+      inline def setIPV4ADDRESS(value: RegExp): Self = StObject.set(x, "IPV4ADDRESS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIPV6ADDRESS(value: RegExp): Self = StObject.set(x, "IPV6ADDRESS", value.asInstanceOf[js.Any])
+      inline def setIPV6ADDRESS(value: RegExp): Self = StObject.set(x, "IPV6ADDRESS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNOT_FRAGMENT(value: RegExp): Self = StObject.set(x, "NOT_FRAGMENT", value.asInstanceOf[js.Any])
+      inline def setNOT_FRAGMENT(value: RegExp): Self = StObject.set(x, "NOT_FRAGMENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNOT_HOST(value: RegExp): Self = StObject.set(x, "NOT_HOST", value.asInstanceOf[js.Any])
+      inline def setNOT_HOST(value: RegExp): Self = StObject.set(x, "NOT_HOST", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNOT_PATH(value: RegExp): Self = StObject.set(x, "NOT_PATH", value.asInstanceOf[js.Any])
+      inline def setNOT_PATH(value: RegExp): Self = StObject.set(x, "NOT_PATH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNOT_PATH_NOSCHEME(value: RegExp): Self = StObject.set(x, "NOT_PATH_NOSCHEME", value.asInstanceOf[js.Any])
+      inline def setNOT_PATH_NOSCHEME(value: RegExp): Self = StObject.set(x, "NOT_PATH_NOSCHEME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNOT_QUERY(value: RegExp): Self = StObject.set(x, "NOT_QUERY", value.asInstanceOf[js.Any])
+      inline def setNOT_QUERY(value: RegExp): Self = StObject.set(x, "NOT_QUERY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNOT_SCHEME(value: RegExp): Self = StObject.set(x, "NOT_SCHEME", value.asInstanceOf[js.Any])
+      inline def setNOT_SCHEME(value: RegExp): Self = StObject.set(x, "NOT_SCHEME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNOT_USERINFO(value: RegExp): Self = StObject.set(x, "NOT_USERINFO", value.asInstanceOf[js.Any])
+      inline def setNOT_USERINFO(value: RegExp): Self = StObject.set(x, "NOT_USERINFO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOTHER_CHARS(value: RegExp): Self = StObject.set(x, "OTHER_CHARS", value.asInstanceOf[js.Any])
+      inline def setOTHER_CHARS(value: RegExp): Self = StObject.set(x, "OTHER_CHARS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPCT_ENCODED(value: RegExp): Self = StObject.set(x, "PCT_ENCODED", value.asInstanceOf[js.Any])
+      inline def setPCT_ENCODED(value: RegExp): Self = StObject.set(x, "PCT_ENCODED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUNRESERVED(value: RegExp): Self = StObject.set(x, "UNRESERVED", value.asInstanceOf[js.Any])
+      inline def setUNRESERVED(value: RegExp): Self = StObject.set(x, "UNRESERVED", value.asInstanceOf[js.Any])
     }
   }
   
@@ -340,8 +264,7 @@ object mod {
   }
   object URISchemeHandler {
     
-    @scala.inline
-    def apply[Components /* <: URIComponents */, Options /* <: URIOptions */, ParentComponents /* <: URIComponents */](
+    inline def apply[Components /* <: URIComponents */, Options /* <: URIOptions */, ParentComponents /* <: URIComponents */](
       parse: (ParentComponents, Options) => Components,
       scheme: String,
       serialize: (Components, Options) => ParentComponents
@@ -350,35 +273,25 @@ object mod {
       __obj.asInstanceOf[URISchemeHandler[Components, Options, ParentComponents]]
     }
     
-    @scala.inline
-    implicit class URISchemeHandlerMutableBuilder[Self <: URISchemeHandler[?, ?, ?], Components /* <: URIComponents */, Options /* <: URIOptions */, ParentComponents /* <: URIComponents */] (val x: Self & (URISchemeHandler[Components, Options, ParentComponents])) extends AnyVal {
+    extension [Self <: URISchemeHandler[?, ?, ?], Components /* <: URIComponents */, Options /* <: URIOptions */, ParentComponents /* <: URIComponents */](x: Self & (URISchemeHandler[Components, Options, ParentComponents])) {
       
-      @scala.inline
-      def setAbsolutePath(value: Boolean): Self = StObject.set(x, "absolutePath", value.asInstanceOf[js.Any])
+      inline def setAbsolutePath(value: Boolean): Self = StObject.set(x, "absolutePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbsolutePathUndefined: Self = StObject.set(x, "absolutePath", js.undefined)
+      inline def setAbsolutePathUndefined: Self = StObject.set(x, "absolutePath", js.undefined)
       
-      @scala.inline
-      def setDomainHost(value: Boolean): Self = StObject.set(x, "domainHost", value.asInstanceOf[js.Any])
+      inline def setDomainHost(value: Boolean): Self = StObject.set(x, "domainHost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainHostUndefined: Self = StObject.set(x, "domainHost", js.undefined)
+      inline def setDomainHostUndefined: Self = StObject.set(x, "domainHost", js.undefined)
       
-      @scala.inline
-      def setParse(value: (ParentComponents, Options) => Components): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
+      inline def setParse(value: (ParentComponents, Options) => Components): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+      inline def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerialize(value: (Components, Options) => ParentComponents): Self = StObject.set(x, "serialize", js.Any.fromFunction2(value))
+      inline def setSerialize(value: (Components, Options) => ParentComponents): Self = StObject.set(x, "serialize", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUnicodeSupport(value: Boolean): Self = StObject.set(x, "unicodeSupport", value.asInstanceOf[js.Any])
+      inline def setUnicodeSupport(value: Boolean): Self = StObject.set(x, "unicodeSupport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnicodeSupportUndefined: Self = StObject.set(x, "unicodeSupport", js.undefined)
+      inline def setUnicodeSupportUndefined: Self = StObject.set(x, "unicodeSupport", js.undefined)
     }
   }
 }

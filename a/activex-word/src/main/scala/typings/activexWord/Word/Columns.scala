@@ -46,6 +46,6 @@ trait Columns extends StObject {
   
   var Width: Double = js.native
   
-  @JSName("Word.Columns_typekey")
+  /* private */ @JSName("Word.Columns_typekey")
   var WordDotColumns_typekey: Columns = js.native
 }

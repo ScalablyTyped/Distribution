@@ -20,8 +20,7 @@ trait Bindingsversion extends StObject {
 }
 object Bindingsversion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bindings_version: String,
     lang: String,
     lang_version: String,
@@ -33,25 +32,18 @@ object Bindingsversion {
     __obj.asInstanceOf[Bindingsversion]
   }
   
-  @scala.inline
-  implicit class BindingsversionMutableBuilder[Self <: Bindingsversion] (val x: Self) extends AnyVal {
+  extension [Self <: Bindingsversion](x: Self) {
     
-    @scala.inline
-    def setBindings_version(value: String): Self = StObject.set(x, "bindings_version", value.asInstanceOf[js.Any])
+    inline def setBindings_version(value: String): Self = StObject.set(x, "bindings_version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+    inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLang_version(value: String): Self = StObject.set(x, "lang_version", value.asInstanceOf[js.Any])
+    inline def setLang_version(value: String): Self = StObject.set(x, "lang_version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublisher(value: String): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
+    inline def setPublisher(value: String): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUname(value: String): Self = StObject.set(x, "uname", value.asInstanceOf[js.Any])
+    inline def setUname(value: String): Self = StObject.set(x, "uname", value.asInstanceOf[js.Any])
   }
 }

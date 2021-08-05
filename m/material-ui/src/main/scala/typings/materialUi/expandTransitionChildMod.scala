@@ -32,38 +32,28 @@ object expandTransitionChildMod {
   }
   object ExpandTransitionChildProps {
     
-    @scala.inline
-    def apply(): ExpandTransitionChildProps = {
+    inline def apply(): ExpandTransitionChildProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExpandTransitionChildProps]
     }
     
-    @scala.inline
-    implicit class ExpandTransitionChildPropsMutableBuilder[Self <: ExpandTransitionChildProps] (val x: Self) extends AnyVal {
+    extension [Self <: ExpandTransitionChildProps](x: Self) {
       
-      @scala.inline
-      def setEnterDelay(value: Double): Self = StObject.set(x, "enterDelay", value.asInstanceOf[js.Any])
+      inline def setEnterDelay(value: Double): Self = StObject.set(x, "enterDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnterDelayUndefined: Self = StObject.set(x, "enterDelay", js.undefined)
+      inline def setEnterDelayUndefined: Self = StObject.set(x, "enterDelay", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTransitionDelay(value: Double): Self = StObject.set(x, "transitionDelay", value.asInstanceOf[js.Any])
+      inline def setTransitionDelay(value: Double): Self = StObject.set(x, "transitionDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionDelayUndefined: Self = StObject.set(x, "transitionDelay", js.undefined)
+      inline def setTransitionDelayUndefined: Self = StObject.set(x, "transitionDelay", js.undefined)
       
-      @scala.inline
-      def setTransitionDuration(value: Double): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
+      inline def setTransitionDuration(value: Double): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
+      inline def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
     }
   }
 }

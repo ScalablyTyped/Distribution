@@ -13,10 +13,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def prepare(config: Extensions_, filepath: String): `true` | js.Array[Attempt] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepare")(config.asInstanceOf[js.Any], filepath.asInstanceOf[js.Any])).asInstanceOf[`true` | js.Array[Attempt]]
-  @scala.inline
-  def prepare(config: Extensions_, filepath: String, requireFrom: String): `true` | js.Array[Attempt] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepare")(config.asInstanceOf[js.Any], filepath.asInstanceOf[js.Any], requireFrom.asInstanceOf[js.Any])).asInstanceOf[`true` | js.Array[Attempt]]
+  inline def prepare(config: Extensions_, filepath: String): `true` | js.Array[Attempt] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepare")(config.asInstanceOf[js.Any], filepath.asInstanceOf[js.Any])).asInstanceOf[`true` | js.Array[Attempt]]
+  inline def prepare(config: Extensions_, filepath: String, requireFrom: String): `true` | js.Array[Attempt] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepare")(config.asInstanceOf[js.Any], filepath.asInstanceOf[js.Any], requireFrom.asInstanceOf[js.Any])).asInstanceOf[`true` | js.Array[Attempt]]
   
   trait Attempt extends StObject {
     
@@ -28,26 +26,20 @@ object mod {
   }
   object Attempt {
     
-    @scala.inline
-    def apply(module: js.Any, moduleName: String): Attempt = {
+    inline def apply(module: js.Any, moduleName: String): Attempt = {
       val __obj = js.Dynamic.literal(module = module.asInstanceOf[js.Any], moduleName = moduleName.asInstanceOf[js.Any], error = null)
       __obj.asInstanceOf[Attempt]
     }
     
-    @scala.inline
-    implicit class AttemptMutableBuilder[Self <: Attempt] (val x: Self) extends AnyVal {
+    extension [Self <: Attempt](x: Self) {
       
-      @scala.inline
-      def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorNull: Self = StObject.set(x, "error", null)
+      inline def setErrorNull: Self = StObject.set(x, "error", null)
       
-      @scala.inline
-      def setModule(value: js.Any): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+      inline def setModule(value: js.Any): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModuleName(value: String): Self = StObject.set(x, "moduleName", value.asInstanceOf[js.Any])
+      inline def setModuleName(value: String): Self = StObject.set(x, "moduleName", value.asInstanceOf[js.Any])
     }
   }
 }

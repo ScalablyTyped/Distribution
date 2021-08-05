@@ -17,7 +17,7 @@ object subjectBuilderCascadesSubjectBuilderMod {
   class CascadesSubjectBuilder protected () extends StObject {
     def this(allSubjects: js.Array[Subject]) = this()
     
-    var allSubjects: js.Array[Subject] = js.native
+    /* protected */ var allSubjects: js.Array[Subject] = js.native
     
     @JSName("build")
     def build_recover(subject: Subject, operationType: recover): Unit = js.native

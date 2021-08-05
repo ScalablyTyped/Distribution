@@ -29,37 +29,27 @@ trait FeatureTemplatesViewModelProperties extends StObject {
 }
 object FeatureTemplatesViewModelProperties {
   
-  @scala.inline
-  def apply(): FeatureTemplatesViewModelProperties = {
+  inline def apply(): FeatureTemplatesViewModelProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FeatureTemplatesViewModelProperties]
   }
   
-  @scala.inline
-  implicit class FeatureTemplatesViewModelPropertiesMutableBuilder[Self <: FeatureTemplatesViewModelProperties] (val x: Self) extends AnyVal {
+  extension [Self <: FeatureTemplatesViewModelProperties](x: Self) {
     
-    @scala.inline
-    def setFilterFunction(value: /* filterName */ js.Any => Boolean): Self = StObject.set(x, "filterFunction", js.Any.fromFunction1(value))
+    inline def setFilterFunction(value: /* filterName */ js.Any => Boolean): Self = StObject.set(x, "filterFunction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFilterFunctionUndefined: Self = StObject.set(x, "filterFunction", js.undefined)
+    inline def setFilterFunctionUndefined: Self = StObject.set(x, "filterFunction", js.undefined)
     
-    @scala.inline
-    def setGroupBy(value: String | GroupByFunction): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
+    inline def setGroupBy(value: String | GroupByFunction): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupByFunction1(value: /* grouping */ js.Any => String | js.Any): Self = StObject.set(x, "groupBy", js.Any.fromFunction1(value))
+    inline def setGroupByFunction1(value: /* grouping */ js.Any => String | js.Any): Self = StObject.set(x, "groupBy", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGroupByUndefined: Self = StObject.set(x, "groupBy", js.undefined)
+    inline def setGroupByUndefined: Self = StObject.set(x, "groupBy", js.undefined)
     
-    @scala.inline
-    def setLayers(value: js.Array[FeatureLayerProperties]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+    inline def setLayers(value: js.Array[FeatureLayerProperties]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
+    inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
-    @scala.inline
-    def setLayersVarargs(value: FeatureLayerProperties*): Self = StObject.set(x, "layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: FeatureLayerProperties*): Self = StObject.set(x, "layers", js.Array(value :_*))
   }
 }

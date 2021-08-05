@@ -38,43 +38,31 @@ trait DiscoverInstancesRequest extends StObject {
 }
 object DiscoverInstancesRequest {
   
-  @scala.inline
-  def apply(NamespaceName: NamespaceName, ServiceName: ServiceName): DiscoverInstancesRequest = {
+  inline def apply(NamespaceName: NamespaceName, ServiceName: ServiceName): DiscoverInstancesRequest = {
     val __obj = js.Dynamic.literal(NamespaceName = NamespaceName.asInstanceOf[js.Any], ServiceName = ServiceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiscoverInstancesRequest]
   }
   
-  @scala.inline
-  implicit class DiscoverInstancesRequestMutableBuilder[Self <: DiscoverInstancesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DiscoverInstancesRequest](x: Self) {
     
-    @scala.inline
-    def setHealthStatus(value: HealthStatusFilter): Self = StObject.set(x, "HealthStatus", value.asInstanceOf[js.Any])
+    inline def setHealthStatus(value: HealthStatusFilter): Self = StObject.set(x, "HealthStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthStatusUndefined: Self = StObject.set(x, "HealthStatus", js.undefined)
+    inline def setHealthStatusUndefined: Self = StObject.set(x, "HealthStatus", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: DiscoverMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: DiscoverMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNamespaceName(value: NamespaceName): Self = StObject.set(x, "NamespaceName", value.asInstanceOf[js.Any])
+    inline def setNamespaceName(value: NamespaceName): Self = StObject.set(x, "NamespaceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionalParameters(value: Attributes): Self = StObject.set(x, "OptionalParameters", value.asInstanceOf[js.Any])
+    inline def setOptionalParameters(value: Attributes): Self = StObject.set(x, "OptionalParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionalParametersUndefined: Self = StObject.set(x, "OptionalParameters", js.undefined)
+    inline def setOptionalParametersUndefined: Self = StObject.set(x, "OptionalParameters", js.undefined)
     
-    @scala.inline
-    def setQueryParameters(value: Attributes): Self = StObject.set(x, "QueryParameters", value.asInstanceOf[js.Any])
+    inline def setQueryParameters(value: Attributes): Self = StObject.set(x, "QueryParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryParametersUndefined: Self = StObject.set(x, "QueryParameters", js.undefined)
+    inline def setQueryParametersUndefined: Self = StObject.set(x, "QueryParameters", js.undefined)
     
-    @scala.inline
-    def setServiceName(value: ServiceName): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: ServiceName): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
   }
 }

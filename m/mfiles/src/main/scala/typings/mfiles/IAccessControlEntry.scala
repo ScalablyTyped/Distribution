@@ -21,8 +21,7 @@ trait IAccessControlEntry extends StObject {
 }
 object IAccessControlEntry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ChangePermissionsPermission: MFPermission,
     Clone: () => IAccessControlEntry,
     EditPermission: MFPermission,
@@ -34,25 +33,18 @@ object IAccessControlEntry {
     __obj.asInstanceOf[IAccessControlEntry]
   }
   
-  @scala.inline
-  implicit class IAccessControlEntryMutableBuilder[Self <: IAccessControlEntry] (val x: Self) extends AnyVal {
+  extension [Self <: IAccessControlEntry](x: Self) {
     
-    @scala.inline
-    def setChangePermissionsPermission(value: MFPermission): Self = StObject.set(x, "ChangePermissionsPermission", value.asInstanceOf[js.Any])
+    inline def setChangePermissionsPermission(value: MFPermission): Self = StObject.set(x, "ChangePermissionsPermission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClone(value: () => IAccessControlEntry): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IAccessControlEntry): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEditPermission(value: MFPermission): Self = StObject.set(x, "EditPermission", value.asInstanceOf[js.Any])
+    inline def setEditPermission(value: MFPermission): Self = StObject.set(x, "EditPermission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsGroup(value: Boolean): Self = StObject.set(x, "IsGroup", value.asInstanceOf[js.Any])
+    inline def setIsGroup(value: Boolean): Self = StObject.set(x, "IsGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadPermission(value: MFPermission): Self = StObject.set(x, "ReadPermission", value.asInstanceOf[js.Any])
+    inline def setReadPermission(value: MFPermission): Self = StObject.set(x, "ReadPermission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserOrGroupID(value: Double): Self = StObject.set(x, "UserOrGroupID", value.asInstanceOf[js.Any])
+    inline def setUserOrGroupID(value: Double): Self = StObject.set(x, "UserOrGroupID", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait DescribeScalingParametersRequest extends StObject {
 }
 object DescribeScalingParametersRequest {
   
-  @scala.inline
-  def apply(DomainName: DomainName): DescribeScalingParametersRequest = {
+  inline def apply(DomainName: DomainName): DescribeScalingParametersRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeScalingParametersRequest]
   }
   
-  @scala.inline
-  implicit class DescribeScalingParametersRequestMutableBuilder[Self <: DescribeScalingParametersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeScalingParametersRequest](x: Self) {
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
   }
 }

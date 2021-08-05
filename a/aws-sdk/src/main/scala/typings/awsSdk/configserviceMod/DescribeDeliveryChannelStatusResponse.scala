@@ -13,22 +13,17 @@ trait DescribeDeliveryChannelStatusResponse extends StObject {
 }
 object DescribeDeliveryChannelStatusResponse {
   
-  @scala.inline
-  def apply(): DescribeDeliveryChannelStatusResponse = {
+  inline def apply(): DescribeDeliveryChannelStatusResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeDeliveryChannelStatusResponse]
   }
   
-  @scala.inline
-  implicit class DescribeDeliveryChannelStatusResponseMutableBuilder[Self <: DescribeDeliveryChannelStatusResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDeliveryChannelStatusResponse](x: Self) {
     
-    @scala.inline
-    def setDeliveryChannelsStatus(value: DeliveryChannelStatusList): Self = StObject.set(x, "DeliveryChannelsStatus", value.asInstanceOf[js.Any])
+    inline def setDeliveryChannelsStatus(value: DeliveryChannelStatusList): Self = StObject.set(x, "DeliveryChannelsStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliveryChannelsStatusUndefined: Self = StObject.set(x, "DeliveryChannelsStatus", js.undefined)
+    inline def setDeliveryChannelsStatusUndefined: Self = StObject.set(x, "DeliveryChannelsStatus", js.undefined)
     
-    @scala.inline
-    def setDeliveryChannelsStatusVarargs(value: DeliveryChannelStatus*): Self = StObject.set(x, "DeliveryChannelsStatus", js.Array(value :_*))
+    inline def setDeliveryChannelsStatusVarargs(value: DeliveryChannelStatus*): Self = StObject.set(x, "DeliveryChannelsStatus", js.Array(value :_*))
   }
 }

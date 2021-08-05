@@ -22,58 +22,41 @@ trait MarkerClustererOptions extends StObject {
 }
 object MarkerClustererOptions {
   
-  @scala.inline
-  def apply(): MarkerClustererOptions = {
+  inline def apply(): MarkerClustererOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MarkerClustererOptions]
   }
   
-  @scala.inline
-  implicit class MarkerClustererOptionsMutableBuilder[Self <: MarkerClustererOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MarkerClustererOptions](x: Self) {
     
-    @scala.inline
-    def setAverageCenter(value: Boolean): Self = StObject.set(x, "averageCenter", value.asInstanceOf[js.Any])
+    inline def setAverageCenter(value: Boolean): Self = StObject.set(x, "averageCenter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAverageCenterUndefined: Self = StObject.set(x, "averageCenter", js.undefined)
+    inline def setAverageCenterUndefined: Self = StObject.set(x, "averageCenter", js.undefined)
     
-    @scala.inline
-    def setGridSize(value: Double): Self = StObject.set(x, "gridSize", value.asInstanceOf[js.Any])
+    inline def setGridSize(value: Double): Self = StObject.set(x, "gridSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridSizeUndefined: Self = StObject.set(x, "gridSize", js.undefined)
+    inline def setGridSizeUndefined: Self = StObject.set(x, "gridSize", js.undefined)
     
-    @scala.inline
-    def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+    inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
+    inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
     
-    @scala.inline
-    def setMinClusterSize(value: Double): Self = StObject.set(x, "minClusterSize", value.asInstanceOf[js.Any])
+    inline def setMinClusterSize(value: Double): Self = StObject.set(x, "minClusterSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinClusterSizeUndefined: Self = StObject.set(x, "minClusterSize", js.undefined)
+    inline def setMinClusterSizeUndefined: Self = StObject.set(x, "minClusterSize", js.undefined)
     
-    @scala.inline
-    def setRenderCluserMarker(value: /* obj */ js.Any => Unit): Self = StObject.set(x, "renderCluserMarker", js.Any.fromFunction1(value))
+    inline def setRenderCluserMarker(value: /* obj */ js.Any => Unit): Self = StObject.set(x, "renderCluserMarker", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenderCluserMarkerUndefined: Self = StObject.set(x, "renderCluserMarker", js.undefined)
+    inline def setRenderCluserMarkerUndefined: Self = StObject.set(x, "renderCluserMarker", js.undefined)
     
-    @scala.inline
-    def setStyles(value: js.Array[js.Any]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: js.Array[js.Any]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
-    @scala.inline
-    def setStylesVarargs(value: js.Any*): Self = StObject.set(x, "styles", js.Array(value :_*))
+    inline def setStylesVarargs(value: js.Any*): Self = StObject.set(x, "styles", js.Array(value :_*))
     
-    @scala.inline
-    def setZoomOnClick(value: Boolean): Self = StObject.set(x, "zoomOnClick", value.asInstanceOf[js.Any])
+    inline def setZoomOnClick(value: Boolean): Self = StObject.set(x, "zoomOnClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomOnClickUndefined: Self = StObject.set(x, "zoomOnClick", js.undefined)
+    inline def setZoomOnClickUndefined: Self = StObject.set(x, "zoomOnClick", js.undefined)
   }
 }

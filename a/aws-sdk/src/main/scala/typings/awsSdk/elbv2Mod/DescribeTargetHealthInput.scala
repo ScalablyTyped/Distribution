@@ -18,25 +18,19 @@ trait DescribeTargetHealthInput extends StObject {
 }
 object DescribeTargetHealthInput {
   
-  @scala.inline
-  def apply(TargetGroupArn: TargetGroupArn): DescribeTargetHealthInput = {
+  inline def apply(TargetGroupArn: TargetGroupArn): DescribeTargetHealthInput = {
     val __obj = js.Dynamic.literal(TargetGroupArn = TargetGroupArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTargetHealthInput]
   }
   
-  @scala.inline
-  implicit class DescribeTargetHealthInputMutableBuilder[Self <: DescribeTargetHealthInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTargetHealthInput](x: Self) {
     
-    @scala.inline
-    def setTargetGroupArn(value: TargetGroupArn): Self = StObject.set(x, "TargetGroupArn", value.asInstanceOf[js.Any])
+    inline def setTargetGroupArn(value: TargetGroupArn): Self = StObject.set(x, "TargetGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargets(value: TargetDescriptions): Self = StObject.set(x, "Targets", value.asInstanceOf[js.Any])
+    inline def setTargets(value: TargetDescriptions): Self = StObject.set(x, "Targets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetsUndefined: Self = StObject.set(x, "Targets", js.undefined)
+    inline def setTargetsUndefined: Self = StObject.set(x, "Targets", js.undefined)
     
-    @scala.inline
-    def setTargetsVarargs(value: TargetDescription*): Self = StObject.set(x, "Targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: TargetDescription*): Self = StObject.set(x, "Targets", js.Array(value :_*))
   }
 }

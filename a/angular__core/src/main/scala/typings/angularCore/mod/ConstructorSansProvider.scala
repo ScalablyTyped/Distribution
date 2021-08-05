@@ -15,22 +15,17 @@ trait ConstructorSansProvider
 }
 object ConstructorSansProvider {
   
-  @scala.inline
-  def apply(): ConstructorSansProvider = {
+  inline def apply(): ConstructorSansProvider = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConstructorSansProvider]
   }
   
-  @scala.inline
-  implicit class ConstructorSansProviderMutableBuilder[Self <: ConstructorSansProvider] (val x: Self) extends AnyVal {
+  extension [Self <: ConstructorSansProvider](x: Self) {
     
-    @scala.inline
-    def setDeps(value: js.Array[js.Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
+    inline def setDeps(value: js.Array[js.Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepsUndefined: Self = StObject.set(x, "deps", js.undefined)
+    inline def setDepsUndefined: Self = StObject.set(x, "deps", js.undefined)
     
-    @scala.inline
-    def setDepsVarargs(value: js.Any*): Self = StObject.set(x, "deps", js.Array(value :_*))
+    inline def setDepsVarargs(value: js.Any*): Self = StObject.set(x, "deps", js.Array(value :_*))
   }
 }

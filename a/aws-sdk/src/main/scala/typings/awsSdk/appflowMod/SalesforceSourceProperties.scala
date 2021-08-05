@@ -23,29 +23,22 @@ trait SalesforceSourceProperties extends StObject {
 }
 object SalesforceSourceProperties {
   
-  @scala.inline
-  def apply(`object`: Object): SalesforceSourceProperties = {
+  inline def apply(`object`: Object): SalesforceSourceProperties = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SalesforceSourceProperties]
   }
   
-  @scala.inline
-  implicit class SalesforceSourcePropertiesMutableBuilder[Self <: SalesforceSourceProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SalesforceSourceProperties](x: Self) {
     
-    @scala.inline
-    def setEnableDynamicFieldUpdate(value: Boolean): Self = StObject.set(x, "enableDynamicFieldUpdate", value.asInstanceOf[js.Any])
+    inline def setEnableDynamicFieldUpdate(value: Boolean): Self = StObject.set(x, "enableDynamicFieldUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableDynamicFieldUpdateUndefined: Self = StObject.set(x, "enableDynamicFieldUpdate", js.undefined)
+    inline def setEnableDynamicFieldUpdateUndefined: Self = StObject.set(x, "enableDynamicFieldUpdate", js.undefined)
     
-    @scala.inline
-    def setIncludeDeletedRecords(value: Boolean): Self = StObject.set(x, "includeDeletedRecords", value.asInstanceOf[js.Any])
+    inline def setIncludeDeletedRecords(value: Boolean): Self = StObject.set(x, "includeDeletedRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeDeletedRecordsUndefined: Self = StObject.set(x, "includeDeletedRecords", js.undefined)
+    inline def setIncludeDeletedRecordsUndefined: Self = StObject.set(x, "includeDeletedRecords", js.undefined)
     
-    @scala.inline
-    def setObject(value: Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
   }
 }

@@ -94,77 +94,55 @@ trait RouteOptionsResponse extends StObject {
 }
 object RouteOptionsResponse {
   
-  @scala.inline
-  def apply(): RouteOptionsResponse = {
+  inline def apply(): RouteOptionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RouteOptionsResponse]
   }
   
-  @scala.inline
-  implicit class RouteOptionsResponseMutableBuilder[Self <: RouteOptionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RouteOptionsResponse](x: Self) {
     
-    @scala.inline
-    def setDisconnectStatusCode(value: Double): Self = StObject.set(x, "disconnectStatusCode", value.asInstanceOf[js.Any])
+    inline def setDisconnectStatusCode(value: Double): Self = StObject.set(x, "disconnectStatusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisconnectStatusCodeUndefined: Self = StObject.set(x, "disconnectStatusCode", js.undefined)
+    inline def setDisconnectStatusCodeUndefined: Self = StObject.set(x, "disconnectStatusCode", js.undefined)
     
-    @scala.inline
-    def setEmptyStatusCode(value: `200` | `204`): Self = StObject.set(x, "emptyStatusCode", value.asInstanceOf[js.Any])
+    inline def setEmptyStatusCode(value: `200` | `204`): Self = StObject.set(x, "emptyStatusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmptyStatusCodeUndefined: Self = StObject.set(x, "emptyStatusCode", js.undefined)
+    inline def setEmptyStatusCodeUndefined: Self = StObject.set(x, "emptyStatusCode", js.undefined)
     
-    @scala.inline
-    def setFailAction(value: FailAction): Self = StObject.set(x, "failAction", value.asInstanceOf[js.Any])
+    inline def setFailAction(value: FailAction): Self = StObject.set(x, "failAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailActionFunction3(
+    inline def setFailActionFunction3(
       value: (/* request */ Request, /* h */ ResponseToolkit, /* err */ js.UndefOr[Error]) => ReturnValue
     ): Self = StObject.set(x, "failAction", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setFailActionUndefined: Self = StObject.set(x, "failAction", js.undefined)
+    inline def setFailActionUndefined: Self = StObject.set(x, "failAction", js.undefined)
     
-    @scala.inline
-    def setModify(value: Boolean): Self = StObject.set(x, "modify", value.asInstanceOf[js.Any])
+    inline def setModify(value: Boolean): Self = StObject.set(x, "modify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifyUndefined: Self = StObject.set(x, "modify", js.undefined)
+    inline def setModifyUndefined: Self = StObject.set(x, "modify", js.undefined)
     
-    @scala.inline
-    def setOptions(value: ValidationOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: ValidationOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setRanges(value: Boolean): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
+    inline def setRanges(value: Boolean): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
+    inline def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
     
-    @scala.inline
-    def setSample(value: Double): Self = StObject.set(x, "sample", value.asInstanceOf[js.Any])
+    inline def setSample(value: Double): Self = StObject.set(x, "sample", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleUndefined: Self = StObject.set(x, "sample", js.undefined)
+    inline def setSampleUndefined: Self = StObject.set(x, "sample", js.undefined)
     
-    @scala.inline
-    def setSchema(value: RouteOptionsResponseSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: RouteOptionsResponseSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaFunction2(
+    inline def setSchemaFunction2(
       value: (/* value */ js.Object | Buffer | String, /* options */ ValidationOptions) => js.Promise[js.Any]
     ): Self = StObject.set(x, "schema", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+    inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Dictionary[RouteOptionsResponseSchema]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Dictionary[RouteOptionsResponseSchema]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

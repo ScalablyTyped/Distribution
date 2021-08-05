@@ -37,100 +37,69 @@ trait BaseMark extends StObject {
 }
 object BaseMark {
   
-  @scala.inline
-  def apply(): BaseMark = {
+  inline def apply(): BaseMark = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BaseMark]
   }
   
-  @scala.inline
-  implicit class BaseMarkMutableBuilder[Self <: BaseMark] (val x: Self) extends AnyVal {
+  extension [Self <: BaseMark](x: Self) {
     
-    @scala.inline
-    def setAria(value: Boolean): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
+    inline def setAria(value: Boolean): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAriaUndefined: Self = StObject.set(x, "aria", js.undefined)
+    inline def setAriaUndefined: Self = StObject.set(x, "aria", js.undefined)
     
-    @scala.inline
-    def setClip(value: Clip): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
+    inline def setClip(value: Clip): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
+    inline def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setFrom(value: From): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: From): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
-    @scala.inline
-    def setInteractive(value: Boolean | SignalRef): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
+    inline def setInteractive(value: Boolean | SignalRef): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInteractiveUndefined: Self = StObject.set(x, "interactive", js.undefined)
+    inline def setInteractiveUndefined: Self = StObject.set(x, "interactive", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOn(value: js.Array[OnMarkTrigger]): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+    inline def setOn(value: js.Array[OnMarkTrigger]): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
+    inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     
-    @scala.inline
-    def setOnVarargs(value: OnMarkTrigger*): Self = StObject.set(x, "on", js.Array(value :_*))
+    inline def setOnVarargs(value: OnMarkTrigger*): Self = StObject.set(x, "on", js.Array(value :_*))
     
-    @scala.inline
-    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
-    @scala.inline
-    def setSort(value: Compare): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: Compare): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    @scala.inline
-    def setStyle(value: String | js.Array[String]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: String | js.Array[String]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setStyleVarargs(value: String*): Self = StObject.set(x, "style", js.Array(value :_*))
+    inline def setStyleVarargs(value: String*): Self = StObject.set(x, "style", js.Array(value :_*))
     
-    @scala.inline
-    def setTransform(value: js.Array[Transforms]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    inline def setTransform(value: js.Array[Transforms]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+    inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     
-    @scala.inline
-    def setTransformVarargs(value: Transforms*): Self = StObject.set(x, "transform", js.Array(value :_*))
+    inline def setTransformVarargs(value: Transforms*): Self = StObject.set(x, "transform", js.Array(value :_*))
     
-    @scala.inline
-    def setZindex(value: Double): Self = StObject.set(x, "zindex", value.asInstanceOf[js.Any])
+    inline def setZindex(value: Double): Self = StObject.set(x, "zindex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZindexUndefined: Self = StObject.set(x, "zindex", js.undefined)
+    inline def setZindexUndefined: Self = StObject.set(x, "zindex", js.undefined)
   }
 }

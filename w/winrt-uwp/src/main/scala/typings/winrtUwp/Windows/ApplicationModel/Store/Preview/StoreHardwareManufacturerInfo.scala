@@ -21,8 +21,7 @@ trait StoreHardwareManufacturerInfo extends StObject {
 }
 object StoreHardwareManufacturerInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     hardwareManufacturerId: String,
     manufacturerName: String,
     modelName: String,
@@ -32,19 +31,14 @@ object StoreHardwareManufacturerInfo {
     __obj.asInstanceOf[StoreHardwareManufacturerInfo]
   }
   
-  @scala.inline
-  implicit class StoreHardwareManufacturerInfoMutableBuilder[Self <: StoreHardwareManufacturerInfo] (val x: Self) extends AnyVal {
+  extension [Self <: StoreHardwareManufacturerInfo](x: Self) {
     
-    @scala.inline
-    def setHardwareManufacturerId(value: String): Self = StObject.set(x, "hardwareManufacturerId", value.asInstanceOf[js.Any])
+    inline def setHardwareManufacturerId(value: String): Self = StObject.set(x, "hardwareManufacturerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManufacturerName(value: String): Self = StObject.set(x, "manufacturerName", value.asInstanceOf[js.Any])
+    inline def setManufacturerName(value: String): Self = StObject.set(x, "manufacturerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelName(value: String): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
+    inline def setModelName(value: String): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoreContentModifierId(value: String): Self = StObject.set(x, "storeContentModifierId", value.asInstanceOf[js.Any])
+    inline def setStoreContentModifierId(value: String): Self = StObject.set(x, "storeContentModifierId", value.asInstanceOf[js.Any])
   }
 }

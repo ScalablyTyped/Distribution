@@ -10,16 +10,13 @@ trait ValidationMessageBasicObject extends StObject {
 }
 object ValidationMessageBasicObject {
   
-  @scala.inline
-  def apply(message: String): ValidationMessageBasicObject = {
+  inline def apply(message: String): ValidationMessageBasicObject = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidationMessageBasicObject]
   }
   
-  @scala.inline
-  implicit class ValidationMessageBasicObjectMutableBuilder[Self <: ValidationMessageBasicObject] (val x: Self) extends AnyVal {
+  extension [Self <: ValidationMessageBasicObject](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

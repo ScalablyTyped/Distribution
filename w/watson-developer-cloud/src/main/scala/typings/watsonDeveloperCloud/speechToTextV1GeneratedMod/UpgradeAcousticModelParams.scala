@@ -22,40 +22,29 @@ trait UpgradeAcousticModelParams extends StObject {
 }
 object UpgradeAcousticModelParams {
   
-  @scala.inline
-  def apply(customization_id: String): UpgradeAcousticModelParams = {
+  inline def apply(customization_id: String): UpgradeAcousticModelParams = {
     val __obj = js.Dynamic.literal(customization_id = customization_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpgradeAcousticModelParams]
   }
   
-  @scala.inline
-  implicit class UpgradeAcousticModelParamsMutableBuilder[Self <: UpgradeAcousticModelParams] (val x: Self) extends AnyVal {
+  extension [Self <: UpgradeAcousticModelParams](x: Self) {
     
-    @scala.inline
-    def setCustom_language_model_id(value: String): Self = StObject.set(x, "custom_language_model_id", value.asInstanceOf[js.Any])
+    inline def setCustom_language_model_id(value: String): Self = StObject.set(x, "custom_language_model_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustom_language_model_idUndefined: Self = StObject.set(x, "custom_language_model_id", js.undefined)
+    inline def setCustom_language_model_idUndefined: Self = StObject.set(x, "custom_language_model_id", js.undefined)
     
-    @scala.inline
-    def setCustomization_id(value: String): Self = StObject.set(x, "customization_id", value.asInstanceOf[js.Any])
+    inline def setCustomization_id(value: String): Self = StObject.set(x, "customization_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
   }
 }

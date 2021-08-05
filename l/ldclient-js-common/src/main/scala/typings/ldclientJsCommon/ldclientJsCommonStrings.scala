@@ -8,6 +8,5 @@ object ldclientJsCommonStrings {
   
   @js.native
   sealed trait localStorage extends StObject
-  @scala.inline
-  def localStorage: localStorage = "localStorage".asInstanceOf[localStorage]
+  inline def localStorage: localStorage = "localStorage".asInstanceOf[localStorage]
 }

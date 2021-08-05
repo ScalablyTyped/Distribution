@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.SlideShowSettings")
 @js.native
-class SlideShowSettings protected ()
+/* private */ class SlideShowSettings ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.SlideShowSettings {
   
@@ -35,7 +35,7 @@ class SlideShowSettings protected ()
   /* CompleteClass */
   override val PointerColor: typings.activexPowerpoint.PowerPoint.ColorFormat = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.SlideShowSettings_typekey")
   var PowerPointDotSlideShowSettings_typekey: typings.activexPowerpoint.PowerPoint.SlideShowSettings = js.native
   

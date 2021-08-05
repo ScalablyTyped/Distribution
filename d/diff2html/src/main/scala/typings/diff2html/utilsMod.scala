@@ -10,12 +10,9 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def escapeForRegExp(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeForRegExp")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def escapeForRegExp(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeForRegExp")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def hashCode_(text: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hashCode")(text.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def hashCode_(text: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hashCode")(text.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def unifyPath(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unifyPath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def unifyPath(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unifyPath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
 }

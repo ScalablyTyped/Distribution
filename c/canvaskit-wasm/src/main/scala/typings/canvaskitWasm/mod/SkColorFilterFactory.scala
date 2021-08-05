@@ -46,8 +46,7 @@ trait SkColorFilterFactory extends StObject {
 }
 object SkColorFilterFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MakeBlend: (InputColor, BlendMode) => SkColorFilter,
     MakeCompose: (SkColorFilter, SkColorFilter) => SkColorFilter,
     MakeLerp: (Double, SkColorFilter, SkColorFilter) => SkColorFilter,
@@ -59,25 +58,18 @@ object SkColorFilterFactory {
     __obj.asInstanceOf[SkColorFilterFactory]
   }
   
-  @scala.inline
-  implicit class SkColorFilterFactoryMutableBuilder[Self <: SkColorFilterFactory] (val x: Self) extends AnyVal {
+  extension [Self <: SkColorFilterFactory](x: Self) {
     
-    @scala.inline
-    def setMakeBlend(value: (InputColor, BlendMode) => SkColorFilter): Self = StObject.set(x, "MakeBlend", js.Any.fromFunction2(value))
+    inline def setMakeBlend(value: (InputColor, BlendMode) => SkColorFilter): Self = StObject.set(x, "MakeBlend", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMakeCompose(value: (SkColorFilter, SkColorFilter) => SkColorFilter): Self = StObject.set(x, "MakeCompose", js.Any.fromFunction2(value))
+    inline def setMakeCompose(value: (SkColorFilter, SkColorFilter) => SkColorFilter): Self = StObject.set(x, "MakeCompose", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMakeLerp(value: (Double, SkColorFilter, SkColorFilter) => SkColorFilter): Self = StObject.set(x, "MakeLerp", js.Any.fromFunction3(value))
+    inline def setMakeLerp(value: (Double, SkColorFilter, SkColorFilter) => SkColorFilter): Self = StObject.set(x, "MakeLerp", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setMakeLinearToSRGBGamma(value: () => SkColorFilter): Self = StObject.set(x, "MakeLinearToSRGBGamma", js.Any.fromFunction0(value))
+    inline def setMakeLinearToSRGBGamma(value: () => SkColorFilter): Self = StObject.set(x, "MakeLinearToSRGBGamma", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMakeMatrix(value: InputColorMatrix => SkColorFilter): Self = StObject.set(x, "MakeMatrix", js.Any.fromFunction1(value))
+    inline def setMakeMatrix(value: InputColorMatrix => SkColorFilter): Self = StObject.set(x, "MakeMatrix", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMakeSRGBToLinearGamma(value: () => SkColorFilter): Self = StObject.set(x, "MakeSRGBToLinearGamma", js.Any.fromFunction0(value))
+    inline def setMakeSRGBToLinearGamma(value: () => SkColorFilter): Self = StObject.set(x, "MakeSRGBToLinearGamma", js.Any.fromFunction0(value))
   }
 }

@@ -18,25 +18,19 @@ trait NetworkInterfaceAttachmentChanges extends StObject {
 }
 object NetworkInterfaceAttachmentChanges {
   
-  @scala.inline
-  def apply(): NetworkInterfaceAttachmentChanges = {
+  inline def apply(): NetworkInterfaceAttachmentChanges = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NetworkInterfaceAttachmentChanges]
   }
   
-  @scala.inline
-  implicit class NetworkInterfaceAttachmentChangesMutableBuilder[Self <: NetworkInterfaceAttachmentChanges] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkInterfaceAttachmentChanges](x: Self) {
     
-    @scala.inline
-    def setAttachmentId(value: NetworkInterfaceAttachmentId): Self = StObject.set(x, "AttachmentId", value.asInstanceOf[js.Any])
+    inline def setAttachmentId(value: NetworkInterfaceAttachmentId): Self = StObject.set(x, "AttachmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentIdUndefined: Self = StObject.set(x, "AttachmentId", js.undefined)
+    inline def setAttachmentIdUndefined: Self = StObject.set(x, "AttachmentId", js.undefined)
     
-    @scala.inline
-    def setDeleteOnTermination(value: Boolean): Self = StObject.set(x, "DeleteOnTermination", value.asInstanceOf[js.Any])
+    inline def setDeleteOnTermination(value: Boolean): Self = StObject.set(x, "DeleteOnTermination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteOnTerminationUndefined: Self = StObject.set(x, "DeleteOnTermination", js.undefined)
+    inline def setDeleteOnTerminationUndefined: Self = StObject.set(x, "DeleteOnTermination", js.undefined)
   }
 }

@@ -35,37 +35,27 @@ trait ViewabilityConfig extends StObject {
 }
 object ViewabilityConfig {
   
-  @scala.inline
-  def apply(): ViewabilityConfig = {
+  inline def apply(): ViewabilityConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ViewabilityConfig]
   }
   
-  @scala.inline
-  implicit class ViewabilityConfigMutableBuilder[Self <: ViewabilityConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ViewabilityConfig](x: Self) {
     
-    @scala.inline
-    def setItemVisiblePercentThreshold(value: Double): Self = StObject.set(x, "itemVisiblePercentThreshold", value.asInstanceOf[js.Any])
+    inline def setItemVisiblePercentThreshold(value: Double): Self = StObject.set(x, "itemVisiblePercentThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemVisiblePercentThresholdUndefined: Self = StObject.set(x, "itemVisiblePercentThreshold", js.undefined)
+    inline def setItemVisiblePercentThresholdUndefined: Self = StObject.set(x, "itemVisiblePercentThreshold", js.undefined)
     
-    @scala.inline
-    def setMinimumViewTime(value: Double): Self = StObject.set(x, "minimumViewTime", value.asInstanceOf[js.Any])
+    inline def setMinimumViewTime(value: Double): Self = StObject.set(x, "minimumViewTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumViewTimeUndefined: Self = StObject.set(x, "minimumViewTime", js.undefined)
+    inline def setMinimumViewTimeUndefined: Self = StObject.set(x, "minimumViewTime", js.undefined)
     
-    @scala.inline
-    def setViewAreaCoveragePercentThreshold(value: Double): Self = StObject.set(x, "viewAreaCoveragePercentThreshold", value.asInstanceOf[js.Any])
+    inline def setViewAreaCoveragePercentThreshold(value: Double): Self = StObject.set(x, "viewAreaCoveragePercentThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewAreaCoveragePercentThresholdUndefined: Self = StObject.set(x, "viewAreaCoveragePercentThreshold", js.undefined)
+    inline def setViewAreaCoveragePercentThresholdUndefined: Self = StObject.set(x, "viewAreaCoveragePercentThreshold", js.undefined)
     
-    @scala.inline
-    def setWaitForInteraction(value: Boolean): Self = StObject.set(x, "waitForInteraction", value.asInstanceOf[js.Any])
+    inline def setWaitForInteraction(value: Boolean): Self = StObject.set(x, "waitForInteraction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaitForInteractionUndefined: Self = StObject.set(x, "waitForInteraction", js.undefined)
+    inline def setWaitForInteractionUndefined: Self = StObject.set(x, "waitForInteraction", js.undefined)
   }
 }

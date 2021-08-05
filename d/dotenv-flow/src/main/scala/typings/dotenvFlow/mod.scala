@@ -12,42 +12,26 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def config(): DotenvLoadOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("config")().asInstanceOf[DotenvLoadOutput]
-  @scala.inline
-  def config(options: DotenvConfigOptions): DotenvLoadOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(options.asInstanceOf[js.Any]).asInstanceOf[DotenvLoadOutput]
+  inline def config(): DotenvLoadOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("config")().asInstanceOf[DotenvLoadOutput]
+  inline def config(options: DotenvConfigOptions): DotenvLoadOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(options.asInstanceOf[js.Any]).asInstanceOf[DotenvLoadOutput]
   
-  @scala.inline
-  def listDotenvFiles(dirname: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("listDotenvFiles")(dirname.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-  @scala.inline
-  def listDotenvFiles(dirname: String, options: DotenvListFilesOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("listDotenvFiles")(dirname.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def listDotenvFiles(dirname: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("listDotenvFiles")(dirname.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def listDotenvFiles(dirname: String, options: DotenvListFilesOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("listDotenvFiles")(dirname.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def load(filenames: String): DotenvLoadOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(filenames.asInstanceOf[js.Any]).asInstanceOf[DotenvLoadOutput]
-  @scala.inline
-  def load(filenames: String, options: DotenvReadFileOptions): DotenvLoadOutput = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(filenames.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DotenvLoadOutput]
-  @scala.inline
-  def load(filenames: js.Array[String]): DotenvLoadOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(filenames.asInstanceOf[js.Any]).asInstanceOf[DotenvLoadOutput]
-  @scala.inline
-  def load(filenames: js.Array[String], options: DotenvReadFileOptions): DotenvLoadOutput = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(filenames.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DotenvLoadOutput]
+  inline def load(filenames: String): DotenvLoadOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(filenames.asInstanceOf[js.Any]).asInstanceOf[DotenvLoadOutput]
+  inline def load(filenames: String, options: DotenvReadFileOptions): DotenvLoadOutput = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(filenames.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DotenvLoadOutput]
+  inline def load(filenames: js.Array[String]): DotenvLoadOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(filenames.asInstanceOf[js.Any]).asInstanceOf[DotenvLoadOutput]
+  inline def load(filenames: js.Array[String], options: DotenvReadFileOptions): DotenvLoadOutput = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(filenames.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DotenvLoadOutput]
   
-  @scala.inline
-  def parse(filenames: String): DotenvParseOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(filenames.asInstanceOf[js.Any]).asInstanceOf[DotenvParseOutput]
-  @scala.inline
-  def parse(filenames: String, options: DotenvReadFileOptions): DotenvParseOutput = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(filenames.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DotenvParseOutput]
-  @scala.inline
-  def parse(filenames: js.Array[String]): DotenvParseOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(filenames.asInstanceOf[js.Any]).asInstanceOf[DotenvParseOutput]
-  @scala.inline
-  def parse(filenames: js.Array[String], options: DotenvReadFileOptions): DotenvParseOutput = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(filenames.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DotenvParseOutput]
+  inline def parse(filenames: String): DotenvParseOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(filenames.asInstanceOf[js.Any]).asInstanceOf[DotenvParseOutput]
+  inline def parse(filenames: String, options: DotenvReadFileOptions): DotenvParseOutput = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(filenames.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DotenvParseOutput]
+  inline def parse(filenames: js.Array[String]): DotenvParseOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(filenames.asInstanceOf[js.Any]).asInstanceOf[DotenvParseOutput]
+  inline def parse(filenames: js.Array[String], options: DotenvReadFileOptions): DotenvParseOutput = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(filenames.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DotenvParseOutput]
   
-  @scala.inline
-  def unload(filenames: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unload")(filenames.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def unload(filenames: String, options: DotenvReadFileOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unload")(filenames.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def unload(filenames: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unload")(filenames.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def unload(filenames: js.Array[String], options: DotenvReadFileOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unload")(filenames.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unload(filenames: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unload")(filenames.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def unload(filenames: String, options: DotenvReadFileOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unload")(filenames.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unload(filenames: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unload")(filenames.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def unload(filenames: js.Array[String], options: DotenvReadFileOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unload")(filenames.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait DotenvConfigOptions extends StObject {
     
@@ -88,50 +72,36 @@ object mod {
   }
   object DotenvConfigOptions {
     
-    @scala.inline
-    def apply(): DotenvConfigOptions = {
+    inline def apply(): DotenvConfigOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DotenvConfigOptions]
     }
     
-    @scala.inline
-    implicit class DotenvConfigOptionsMutableBuilder[Self <: DotenvConfigOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DotenvConfigOptions](x: Self) {
       
-      @scala.inline
-      def setDefault_node_env(value: String): Self = StObject.set(x, "default_node_env", value.asInstanceOf[js.Any])
+      inline def setDefault_node_env(value: String): Self = StObject.set(x, "default_node_env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefault_node_envUndefined: Self = StObject.set(x, "default_node_env", js.undefined)
+      inline def setDefault_node_envUndefined: Self = StObject.set(x, "default_node_env", js.undefined)
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setNode_env(value: String): Self = StObject.set(x, "node_env", value.asInstanceOf[js.Any])
+      inline def setNode_env(value: String): Self = StObject.set(x, "node_env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode_envUndefined: Self = StObject.set(x, "node_env", js.undefined)
+      inline def setNode_envUndefined: Self = StObject.set(x, "node_env", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setPurge_dotenv(value: Boolean): Self = StObject.set(x, "purge_dotenv", value.asInstanceOf[js.Any])
+      inline def setPurge_dotenv(value: Boolean): Self = StObject.set(x, "purge_dotenv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPurge_dotenvUndefined: Self = StObject.set(x, "purge_dotenv", js.undefined)
+      inline def setPurge_dotenvUndefined: Self = StObject.set(x, "purge_dotenv", js.undefined)
       
-      @scala.inline
-      def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+      inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+      inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     }
   }
   
@@ -144,20 +114,16 @@ object mod {
   }
   object DotenvListFilesOptions {
     
-    @scala.inline
-    def apply(): DotenvListFilesOptions = {
+    inline def apply(): DotenvListFilesOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DotenvListFilesOptions]
     }
     
-    @scala.inline
-    implicit class DotenvListFilesOptionsMutableBuilder[Self <: DotenvListFilesOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DotenvListFilesOptions](x: Self) {
       
-      @scala.inline
-      def setNode_env(value: String): Self = StObject.set(x, "node_env", value.asInstanceOf[js.Any])
+      inline def setNode_env(value: String): Self = StObject.set(x, "node_env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode_envUndefined: Self = StObject.set(x, "node_env", js.undefined)
+      inline def setNode_envUndefined: Self = StObject.set(x, "node_env", js.undefined)
     }
   }
   
@@ -169,26 +135,20 @@ object mod {
   }
   object DotenvLoadOutput {
     
-    @scala.inline
-    def apply(): DotenvLoadOutput = {
+    inline def apply(): DotenvLoadOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DotenvLoadOutput]
     }
     
-    @scala.inline
-    implicit class DotenvLoadOutputMutableBuilder[Self <: DotenvLoadOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DotenvLoadOutput](x: Self) {
       
-      @scala.inline
-      def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setParsed(value: DotenvParseOutput): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
+      inline def setParsed(value: DotenvParseOutput): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParsedUndefined: Self = StObject.set(x, "parsed", js.undefined)
+      inline def setParsedUndefined: Self = StObject.set(x, "parsed", js.undefined)
     }
   }
   
@@ -203,20 +163,16 @@ object mod {
   }
   object DotenvReadFileOptions {
     
-    @scala.inline
-    def apply(): DotenvReadFileOptions = {
+    inline def apply(): DotenvReadFileOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DotenvReadFileOptions]
     }
     
-    @scala.inline
-    implicit class DotenvReadFileOptionsMutableBuilder[Self <: DotenvReadFileOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DotenvReadFileOptions](x: Self) {
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     }
   }
 }

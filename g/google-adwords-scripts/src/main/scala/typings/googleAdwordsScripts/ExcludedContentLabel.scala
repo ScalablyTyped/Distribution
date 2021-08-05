@@ -23,8 +23,7 @@ trait ExcludedContentLabel
 }
 object ExcludedContentLabel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getCampaign: () => Campaign,
     getCampaignType: () => CampaignType,
     getContentLabelType: () => String,
@@ -36,22 +35,16 @@ object ExcludedContentLabel {
     __obj.asInstanceOf[ExcludedContentLabel]
   }
   
-  @scala.inline
-  implicit class ExcludedContentLabelMutableBuilder[Self <: ExcludedContentLabel] (val x: Self) extends AnyVal {
+  extension [Self <: ExcludedContentLabel](x: Self) {
     
-    @scala.inline
-    def setGetCampaignType(value: () => CampaignType): Self = StObject.set(x, "getCampaignType", js.Any.fromFunction0(value))
+    inline def setGetCampaignType(value: () => CampaignType): Self = StObject.set(x, "getCampaignType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetContentLabelType(value: () => String): Self = StObject.set(x, "getContentLabelType", js.Any.fromFunction0(value))
+    inline def setGetContentLabelType(value: () => String): Self = StObject.set(x, "getContentLabelType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetId(value: () => Double): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+    inline def setGetId(value: () => Double): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetVideoCampaign(value: () => Campaign): Self = StObject.set(x, "getVideoCampaign", js.Any.fromFunction0(value))
+    inline def setGetVideoCampaign(value: () => Campaign): Self = StObject.set(x, "getVideoCampaign", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+    inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
   }
 }

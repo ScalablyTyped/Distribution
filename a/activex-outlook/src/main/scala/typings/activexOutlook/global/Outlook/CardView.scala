@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.CardView")
 @js.native
-class CardView protected ()
+/* private */ class CardView ()
   extends StObject
      with typings.activexOutlook.Outlook.CardView {
   
@@ -59,7 +59,7 @@ class CardView protected ()
   /* CompleteClass */
   var Name: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.CardView_typekey")
   var OutlookDotCardView_typekey: typings.activexOutlook.Outlook.CardView = js.native
   

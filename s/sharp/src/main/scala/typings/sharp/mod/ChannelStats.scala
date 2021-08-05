@@ -38,8 +38,7 @@ trait ChannelStats extends StObject {
 }
 object ChannelStats {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     max: Double,
     maxX: Double,
     maxY: Double,
@@ -55,37 +54,26 @@ object ChannelStats {
     __obj.asInstanceOf[ChannelStats]
   }
   
-  @scala.inline
-  implicit class ChannelStatsMutableBuilder[Self <: ChannelStats] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelStats](x: Self) {
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxX(value: Double): Self = StObject.set(x, "maxX", value.asInstanceOf[js.Any])
+    inline def setMaxX(value: Double): Self = StObject.set(x, "maxX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxY(value: Double): Self = StObject.set(x, "maxY", value.asInstanceOf[js.Any])
+    inline def setMaxY(value: Double): Self = StObject.set(x, "maxY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMean(value: Double): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
+    inline def setMean(value: Double): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinX(value: Double): Self = StObject.set(x, "minX", value.asInstanceOf[js.Any])
+    inline def setMinX(value: Double): Self = StObject.set(x, "minX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinY(value: Double): Self = StObject.set(x, "minY", value.asInstanceOf[js.Any])
+    inline def setMinY(value: Double): Self = StObject.set(x, "minY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSquaresSum(value: Double): Self = StObject.set(x, "squaresSum", value.asInstanceOf[js.Any])
+    inline def setSquaresSum(value: Double): Self = StObject.set(x, "squaresSum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStdev(value: Double): Self = StObject.set(x, "stdev", value.asInstanceOf[js.Any])
+    inline def setStdev(value: Double): Self = StObject.set(x, "stdev", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSum(value: Double): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
+    inline def setSum(value: Double): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
   }
 }

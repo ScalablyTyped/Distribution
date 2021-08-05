@@ -15,16 +15,13 @@ trait ValueDef[V /* <: Value[ExprRef | SignalRef] */] extends StObject {
 }
 object ValueDef {
   
-  @scala.inline
-  def apply[V /* <: Value[ExprRef | SignalRef] */](value: V): ValueDef[V] = {
+  inline def apply[V /* <: Value[ExprRef | SignalRef] */](value: V): ValueDef[V] = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueDef[V]]
   }
   
-  @scala.inline
-  implicit class ValueDefMutableBuilder[Self <: ValueDef[?], V /* <: Value[ExprRef | SignalRef] */] (val x: Self & ValueDef[V]) extends AnyVal {
+  extension [Self <: ValueDef[?], V /* <: Value[ExprRef | SignalRef] */](x: Self & ValueDef[V]) {
     
-    @scala.inline
-    def setValue(value: V): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: V): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

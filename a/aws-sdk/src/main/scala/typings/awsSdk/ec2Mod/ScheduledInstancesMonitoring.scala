@@ -13,19 +13,15 @@ trait ScheduledInstancesMonitoring extends StObject {
 }
 object ScheduledInstancesMonitoring {
   
-  @scala.inline
-  def apply(): ScheduledInstancesMonitoring = {
+  inline def apply(): ScheduledInstancesMonitoring = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScheduledInstancesMonitoring]
   }
   
-  @scala.inline
-  implicit class ScheduledInstancesMonitoringMutableBuilder[Self <: ScheduledInstancesMonitoring] (val x: Self) extends AnyVal {
+  extension [Self <: ScheduledInstancesMonitoring](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
   }
 }

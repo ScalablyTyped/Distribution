@@ -19,23 +19,18 @@ trait CallInfo[Fn /* <: Func */] extends StObject {
 }
 object CallInfo {
   
-  @scala.inline
-  def apply[Fn /* <: Func */](args: Parameters[Fn], `object`: js.Any, returnValue: ReturnType[Fn]): CallInfo[Fn] = {
+  inline def apply[Fn /* <: Func */](args: Parameters[Fn], `object`: js.Any, returnValue: ReturnType[Fn]): CallInfo[Fn] = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallInfo[Fn]]
   }
   
-  @scala.inline
-  implicit class CallInfoMutableBuilder[Self <: CallInfo[?], Fn /* <: Func */] (val x: Self & CallInfo[Fn]) extends AnyVal {
+  extension [Self <: CallInfo[?], Fn /* <: Func */](x: Self & CallInfo[Fn]) {
     
-    @scala.inline
-    def setArgs(value: Parameters[Fn]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: Parameters[Fn]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: ReturnType[Fn]): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: ReturnType[Fn]): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

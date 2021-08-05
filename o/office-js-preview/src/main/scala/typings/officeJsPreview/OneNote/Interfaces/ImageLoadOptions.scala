@@ -81,67 +81,47 @@ trait ImageLoadOptions extends StObject {
 }
 object ImageLoadOptions {
   
-  @scala.inline
-  def apply(): ImageLoadOptions = {
+  inline def apply(): ImageLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImageLoadOptions]
   }
   
-  @scala.inline
-  implicit class ImageLoadOptionsMutableBuilder[Self <: ImageLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ImageLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setDescription(value: Boolean): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Boolean): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Boolean): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Boolean): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setHyperlink(value: Boolean): Self = StObject.set(x, "hyperlink", value.asInstanceOf[js.Any])
+    inline def setHyperlink(value: Boolean): Self = StObject.set(x, "hyperlink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHyperlinkUndefined: Self = StObject.set(x, "hyperlink", js.undefined)
+    inline def setHyperlinkUndefined: Self = StObject.set(x, "hyperlink", js.undefined)
     
-    @scala.inline
-    def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setOcrData(value: Boolean): Self = StObject.set(x, "ocrData", value.asInstanceOf[js.Any])
+    inline def setOcrData(value: Boolean): Self = StObject.set(x, "ocrData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOcrDataUndefined: Self = StObject.set(x, "ocrData", js.undefined)
+    inline def setOcrDataUndefined: Self = StObject.set(x, "ocrData", js.undefined)
     
-    @scala.inline
-    def setPageContent(value: PageContentLoadOptions): Self = StObject.set(x, "pageContent", value.asInstanceOf[js.Any])
+    inline def setPageContent(value: PageContentLoadOptions): Self = StObject.set(x, "pageContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageContentUndefined: Self = StObject.set(x, "pageContent", js.undefined)
+    inline def setPageContentUndefined: Self = StObject.set(x, "pageContent", js.undefined)
     
-    @scala.inline
-    def setParagraph(value: ParagraphLoadOptions): Self = StObject.set(x, "paragraph", value.asInstanceOf[js.Any])
+    inline def setParagraph(value: ParagraphLoadOptions): Self = StObject.set(x, "paragraph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParagraphUndefined: Self = StObject.set(x, "paragraph", js.undefined)
+    inline def setParagraphUndefined: Self = StObject.set(x, "paragraph", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Boolean): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Boolean): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

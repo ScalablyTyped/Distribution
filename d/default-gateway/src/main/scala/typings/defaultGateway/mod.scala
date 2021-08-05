@@ -30,20 +30,16 @@ object mod {
   }
   object Gateway {
     
-    @scala.inline
-    def apply(gateway: String, interface: String): Gateway = {
+    inline def apply(gateway: String, interface: String): Gateway = {
       val __obj = js.Dynamic.literal(gateway = gateway.asInstanceOf[js.Any], interface = interface.asInstanceOf[js.Any])
       __obj.asInstanceOf[Gateway]
     }
     
-    @scala.inline
-    implicit class GatewayMutableBuilder[Self <: Gateway] (val x: Self) extends AnyVal {
+    extension [Self <: Gateway](x: Self) {
       
-      @scala.inline
-      def setGateway(value: String): Self = StObject.set(x, "gateway", value.asInstanceOf[js.Any])
+      inline def setGateway(value: String): Self = StObject.set(x, "gateway", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterface(value: String): Self = StObject.set(x, "interface", value.asInstanceOf[js.Any])
+      inline def setInterface(value: String): Self = StObject.set(x, "interface", value.asInstanceOf[js.Any])
     }
   }
 }

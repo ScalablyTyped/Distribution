@@ -11,19 +11,15 @@ trait AvgPoolInputs extends StObject {
 }
 object AvgPoolInputs {
   
-  @scala.inline
-  def apply(): AvgPoolInputs = {
+  inline def apply(): AvgPoolInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AvgPoolInputs]
   }
   
-  @scala.inline
-  implicit class AvgPoolInputsMutableBuilder[Self <: AvgPoolInputs] (val x: Self) extends AnyVal {
+  extension [Self <: AvgPoolInputs](x: Self) {
     
-    @scala.inline
-    def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
   }
 }

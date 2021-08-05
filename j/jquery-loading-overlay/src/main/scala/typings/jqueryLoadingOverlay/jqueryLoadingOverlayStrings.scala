@@ -8,6 +8,5 @@ object jqueryLoadingOverlayStrings {
   
   @js.native
   sealed trait remove extends StObject
-  @scala.inline
-  def remove: remove = "remove".asInstanceOf[remove]
+  inline def remove: remove = "remove".asInstanceOf[remove]
 }

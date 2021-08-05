@@ -54,49 +54,35 @@ trait Duration extends StObject {
 }
 object Duration {
   
-  @scala.inline
-  def apply(): Duration = {
+  inline def apply(): Duration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Duration]
   }
   
-  @scala.inline
-  implicit class DurationMutableBuilder[Self <: Duration] (val x: Self) extends AnyVal {
+  extension [Self <: Duration](x: Self) {
     
-    @scala.inline
-    def setAlwaysEnabled(value: Boolean): Self = StObject.set(x, "alwaysEnabled", value.asInstanceOf[js.Any])
+    inline def setAlwaysEnabled(value: Boolean): Self = StObject.set(x, "alwaysEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlwaysEnabledUndefined: Self = StObject.set(x, "alwaysEnabled", js.undefined)
+    inline def setAlwaysEnabledUndefined: Self = StObject.set(x, "alwaysEnabled", js.undefined)
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setProvider(value: /* connection */ typings.typeorm.connectionConnectionMod.Connection => QueryResultCache): Self = StObject.set(x, "provider", js.Any.fromFunction1(value))
+    inline def setProvider(value: /* connection */ typings.typeorm.connectionConnectionMod.Connection => QueryResultCache): Self = StObject.set(x, "provider", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
+    inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
     
-    @scala.inline
-    def setTableName(value: String): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: String): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableNameUndefined: Self = StObject.set(x, "tableName", js.undefined)
+    inline def setTableNameUndefined: Self = StObject.set(x, "tableName", js.undefined)
     
-    @scala.inline
-    def setType(value: database | redis | ioredis | ioredisSlashcluster): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: database | redis | ioredis | ioredisSlashcluster): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

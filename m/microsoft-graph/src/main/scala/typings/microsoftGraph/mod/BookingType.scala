@@ -13,12 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BookingType extends StObject
 object BookingType {
   
-  @scala.inline
-  def reserved: typings.microsoftGraph.microsoftGraphStrings.reserved = "reserved".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.reserved]
+  inline def reserved: typings.microsoftGraph.microsoftGraphStrings.reserved = "reserved".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.reserved]
   
-  @scala.inline
-  def standard: typings.microsoftGraph.microsoftGraphStrings.standard = "standard".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.standard]
+  inline def standard: typings.microsoftGraph.microsoftGraphStrings.standard = "standard".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.standard]
   
-  @scala.inline
-  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
+  inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
 }

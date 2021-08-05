@@ -27,34 +27,25 @@ trait SchemaGooglePrivacyDlpV2NumericalStatsResult extends StObject {
 }
 object SchemaGooglePrivacyDlpV2NumericalStatsResult {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2NumericalStatsResult = {
+  inline def apply(): SchemaGooglePrivacyDlpV2NumericalStatsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2NumericalStatsResult]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2NumericalStatsResultMutableBuilder[Self <: SchemaGooglePrivacyDlpV2NumericalStatsResult] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2NumericalStatsResult](x: Self) {
     
-    @scala.inline
-    def setMaxValue(value: SchemaGooglePrivacyDlpV2Value): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: SchemaGooglePrivacyDlpV2Value): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
+    inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     
-    @scala.inline
-    def setMinValue(value: SchemaGooglePrivacyDlpV2Value): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: SchemaGooglePrivacyDlpV2Value): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
+    inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
     
-    @scala.inline
-    def setQuantileValues(value: js.Array[SchemaGooglePrivacyDlpV2Value]): Self = StObject.set(x, "quantileValues", value.asInstanceOf[js.Any])
+    inline def setQuantileValues(value: js.Array[SchemaGooglePrivacyDlpV2Value]): Self = StObject.set(x, "quantileValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantileValuesUndefined: Self = StObject.set(x, "quantileValues", js.undefined)
+    inline def setQuantileValuesUndefined: Self = StObject.set(x, "quantileValues", js.undefined)
     
-    @scala.inline
-    def setQuantileValuesVarargs(value: SchemaGooglePrivacyDlpV2Value*): Self = StObject.set(x, "quantileValues", js.Array(value :_*))
+    inline def setQuantileValuesVarargs(value: SchemaGooglePrivacyDlpV2Value*): Self = StObject.set(x, "quantileValues", js.Array(value :_*))
   }
 }

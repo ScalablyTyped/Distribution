@@ -16,34 +16,25 @@ trait Cavv extends StObject {
 }
 object Cavv {
   
-  @scala.inline
-  def apply(eciFlag: String): Cavv = {
+  inline def apply(eciFlag: String): Cavv = {
     val __obj = js.Dynamic.literal(eciFlag = eciFlag.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cavv]
   }
   
-  @scala.inline
-  implicit class CavvMutableBuilder[Self <: Cavv] (val x: Self) extends AnyVal {
+  extension [Self <: Cavv](x: Self) {
     
-    @scala.inline
-    def setCavv(value: String): Self = StObject.set(x, "cavv", value.asInstanceOf[js.Any])
+    inline def setCavv(value: String): Self = StObject.set(x, "cavv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCavvUndefined: Self = StObject.set(x, "cavv", js.undefined)
+    inline def setCavvUndefined: Self = StObject.set(x, "cavv", js.undefined)
     
-    @scala.inline
-    def setEciFlag(value: String): Self = StObject.set(x, "eciFlag", value.asInstanceOf[js.Any])
+    inline def setEciFlag(value: String): Self = StObject.set(x, "eciFlag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreeDSecureVision(value: String): Self = StObject.set(x, "threeDSecureVision", value.asInstanceOf[js.Any])
+    inline def setThreeDSecureVision(value: String): Self = StObject.set(x, "threeDSecureVision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreeDSecureVisionUndefined: Self = StObject.set(x, "threeDSecureVision", js.undefined)
+    inline def setThreeDSecureVisionUndefined: Self = StObject.set(x, "threeDSecureVision", js.undefined)
     
-    @scala.inline
-    def setXid(value: String): Self = StObject.set(x, "xid", value.asInstanceOf[js.Any])
+    inline def setXid(value: String): Self = StObject.set(x, "xid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXidUndefined: Self = StObject.set(x, "xid", js.undefined)
+    inline def setXidUndefined: Self = StObject.set(x, "xid", js.undefined)
   }
 }

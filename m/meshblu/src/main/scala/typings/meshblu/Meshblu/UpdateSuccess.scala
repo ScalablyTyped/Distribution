@@ -14,22 +14,17 @@ trait UpdateSuccess extends StObject {
 }
 object UpdateSuccess {
   
-  @scala.inline
-  def apply(status: String, token: String, uuid: String): UpdateSuccess = {
+  inline def apply(status: String, token: String, uuid: String): UpdateSuccess = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateSuccess]
   }
   
-  @scala.inline
-  implicit class UpdateSuccessMutableBuilder[Self <: UpdateSuccess] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateSuccess](x: Self) {
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
   }
 }

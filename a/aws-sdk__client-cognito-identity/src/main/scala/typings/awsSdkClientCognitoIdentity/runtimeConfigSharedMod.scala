@@ -18,35 +18,28 @@ object runtimeConfigSharedMod {
     @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.shared", "ClientSharedValues.apiVersion")
     @js.native
     def apiVersion: String = js.native
-    @scala.inline
-    def apiVersion_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("apiVersion")(x.asInstanceOf[js.Any])
+    inline def apiVersion_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("apiVersion")(x.asInstanceOf[js.Any])
     
     @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.shared", "ClientSharedValues.disableHostPrefix")
     @js.native
     def disableHostPrefix: Boolean = js.native
-    @scala.inline
-    def disableHostPrefix_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disableHostPrefix")(x.asInstanceOf[js.Any])
+    inline def disableHostPrefix_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disableHostPrefix")(x.asInstanceOf[js.Any])
     
     @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.shared", "ClientSharedValues.logger")
     @js.native
     def logger: Logger = js.native
-    @scala.inline
-    def logger_=(x: Logger): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("logger")(x.asInstanceOf[js.Any])
+    inline def logger_=(x: Logger): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("logger")(x.asInstanceOf[js.Any])
     
     @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.shared", "ClientSharedValues.regionInfoProvider")
     @js.native
     def regionInfoProvider: RegionInfoProvider = js.native
-    @scala.inline
-    def regionInfoProvider(region: String): js.Promise[js.UndefOr[RegionInfo]] = ^.asInstanceOf[js.Dynamic].applyDynamic("regionInfoProvider")(region.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[RegionInfo]]]
-    @scala.inline
-    def regionInfoProvider(region: String, options: js.Any): js.Promise[js.UndefOr[RegionInfo]] = (^.asInstanceOf[js.Dynamic].applyDynamic("regionInfoProvider")(region.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[RegionInfo]]]
-    @scala.inline
-    def regionInfoProvider_=(x: RegionInfoProvider): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("regionInfoProvider")(x.asInstanceOf[js.Any])
+    inline def regionInfoProvider(region: String): js.Promise[js.UndefOr[RegionInfo]] = ^.asInstanceOf[js.Dynamic].applyDynamic("regionInfoProvider")(region.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[RegionInfo]]]
+    inline def regionInfoProvider(region: String, options: js.Any): js.Promise[js.UndefOr[RegionInfo]] = (^.asInstanceOf[js.Dynamic].applyDynamic("regionInfoProvider")(region.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[RegionInfo]]]
+    inline def regionInfoProvider_=(x: RegionInfoProvider): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("regionInfoProvider")(x.asInstanceOf[js.Any])
     
     @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.shared", "ClientSharedValues.signingName")
     @js.native
     def signingName: String = js.native
-    @scala.inline
-    def signingName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("signingName")(x.asInstanceOf[js.Any])
+    inline def signingName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("signingName")(x.asInstanceOf[js.Any])
   }
 }

@@ -35,8 +35,7 @@ trait XRowSetSupplier
 }
 object XRowSetSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     RowSet: XRowSet,
     acquire: () => Unit,
     getRowSet: () => XRowSet,
@@ -48,16 +47,12 @@ object XRowSetSupplier {
     __obj.asInstanceOf[XRowSetSupplier]
   }
   
-  @scala.inline
-  implicit class XRowSetSupplierMutableBuilder[Self <: XRowSetSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XRowSetSupplier](x: Self) {
     
-    @scala.inline
-    def setGetRowSet(value: () => XRowSet): Self = StObject.set(x, "getRowSet", js.Any.fromFunction0(value))
+    inline def setGetRowSet(value: () => XRowSet): Self = StObject.set(x, "getRowSet", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRowSet(value: XRowSet): Self = StObject.set(x, "RowSet", value.asInstanceOf[js.Any])
+    inline def setRowSet(value: XRowSet): Self = StObject.set(x, "RowSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetRowSet(value: XRowSet => Unit): Self = StObject.set(x, "setRowSet", js.Any.fromFunction1(value))
+    inline def setSetRowSet(value: XRowSet => Unit): Self = StObject.set(x, "setRowSet", js.Any.fromFunction1(value))
   }
 }

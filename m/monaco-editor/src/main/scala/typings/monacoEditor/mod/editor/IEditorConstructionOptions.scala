@@ -22,25 +22,19 @@ trait IEditorConstructionOptions
 }
 object IEditorConstructionOptions {
   
-  @scala.inline
-  def apply(): IEditorConstructionOptions = {
+  inline def apply(): IEditorConstructionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IEditorConstructionOptions]
   }
   
-  @scala.inline
-  implicit class IEditorConstructionOptionsMutableBuilder[Self <: IEditorConstructionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IEditorConstructionOptions](x: Self) {
     
-    @scala.inline
-    def setDimension(value: IDimension): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
+    inline def setDimension(value: IDimension): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionUndefined: Self = StObject.set(x, "dimension", js.undefined)
+    inline def setDimensionUndefined: Self = StObject.set(x, "dimension", js.undefined)
     
-    @scala.inline
-    def setOverflowWidgetsDomNode(value: HTMLElement): Self = StObject.set(x, "overflowWidgetsDomNode", value.asInstanceOf[js.Any])
+    inline def setOverflowWidgetsDomNode(value: HTMLElement): Self = StObject.set(x, "overflowWidgetsDomNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverflowWidgetsDomNodeUndefined: Self = StObject.set(x, "overflowWidgetsDomNode", js.undefined)
+    inline def setOverflowWidgetsDomNodeUndefined: Self = StObject.set(x, "overflowWidgetsDomNode", js.undefined)
   }
 }

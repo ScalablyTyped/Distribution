@@ -23,28 +23,21 @@ trait SchemaSegmentSequenceStep extends StObject {
 }
 object SchemaSegmentSequenceStep {
   
-  @scala.inline
-  def apply(): SchemaSegmentSequenceStep = {
+  inline def apply(): SchemaSegmentSequenceStep = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSegmentSequenceStep]
   }
   
-  @scala.inline
-  implicit class SchemaSegmentSequenceStepMutableBuilder[Self <: SchemaSegmentSequenceStep] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSegmentSequenceStep](x: Self) {
     
-    @scala.inline
-    def setMatchType(value: String): Self = StObject.set(x, "matchType", value.asInstanceOf[js.Any])
+    inline def setMatchType(value: String): Self = StObject.set(x, "matchType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchTypeUndefined: Self = StObject.set(x, "matchType", js.undefined)
+    inline def setMatchTypeUndefined: Self = StObject.set(x, "matchType", js.undefined)
     
-    @scala.inline
-    def setOrFiltersForSegment(value: js.Array[SchemaOrFiltersForSegment]): Self = StObject.set(x, "orFiltersForSegment", value.asInstanceOf[js.Any])
+    inline def setOrFiltersForSegment(value: js.Array[SchemaOrFiltersForSegment]): Self = StObject.set(x, "orFiltersForSegment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrFiltersForSegmentUndefined: Self = StObject.set(x, "orFiltersForSegment", js.undefined)
+    inline def setOrFiltersForSegmentUndefined: Self = StObject.set(x, "orFiltersForSegment", js.undefined)
     
-    @scala.inline
-    def setOrFiltersForSegmentVarargs(value: SchemaOrFiltersForSegment*): Self = StObject.set(x, "orFiltersForSegment", js.Array(value :_*))
+    inline def setOrFiltersForSegmentVarargs(value: SchemaOrFiltersForSegment*): Self = StObject.set(x, "orFiltersForSegment", js.Array(value :_*))
   }
 }

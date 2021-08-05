@@ -25,22 +25,17 @@ trait SnappedPoint extends StObject {
 }
 object SnappedPoint {
   
-  @scala.inline
-  def apply(location: LatLngLiteralVerbose, originalIndex: Double, placeId: String): SnappedPoint = {
+  inline def apply(location: LatLngLiteralVerbose, originalIndex: Double, placeId: String): SnappedPoint = {
     val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], originalIndex = originalIndex.asInstanceOf[js.Any], placeId = placeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnappedPoint]
   }
   
-  @scala.inline
-  implicit class SnappedPointMutableBuilder[Self <: SnappedPoint] (val x: Self) extends AnyVal {
+  extension [Self <: SnappedPoint](x: Self) {
     
-    @scala.inline
-    def setLocation(value: LatLngLiteralVerbose): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: LatLngLiteralVerbose): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalIndex(value: Double): Self = StObject.set(x, "originalIndex", value.asInstanceOf[js.Any])
+    inline def setOriginalIndex(value: Double): Self = StObject.set(x, "originalIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceId(value: String): Self = StObject.set(x, "placeId", value.asInstanceOf[js.Any])
+    inline def setPlaceId(value: String): Self = StObject.set(x, "placeId", value.asInstanceOf[js.Any])
   }
 }

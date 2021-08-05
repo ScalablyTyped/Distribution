@@ -13,19 +13,15 @@ trait SupportedOperation extends StObject {
 }
 object SupportedOperation {
   
-  @scala.inline
-  def apply(): SupportedOperation = {
+  inline def apply(): SupportedOperation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SupportedOperation]
   }
   
-  @scala.inline
-  implicit class SupportedOperationMutableBuilder[Self <: SupportedOperation] (val x: Self) extends AnyVal {
+  extension [Self <: SupportedOperation](x: Self) {
     
-    @scala.inline
-    def setOperationName(value: String): Self = StObject.set(x, "OperationName", value.asInstanceOf[js.Any])
+    inline def setOperationName(value: String): Self = StObject.set(x, "OperationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationNameUndefined: Self = StObject.set(x, "OperationName", js.undefined)
+    inline def setOperationNameUndefined: Self = StObject.set(x, "OperationName", js.undefined)
   }
 }

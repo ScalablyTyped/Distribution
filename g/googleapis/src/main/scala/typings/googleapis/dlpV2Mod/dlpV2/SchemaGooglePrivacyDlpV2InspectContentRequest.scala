@@ -31,31 +31,23 @@ trait SchemaGooglePrivacyDlpV2InspectContentRequest extends StObject {
 }
 object SchemaGooglePrivacyDlpV2InspectContentRequest {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2InspectContentRequest = {
+  inline def apply(): SchemaGooglePrivacyDlpV2InspectContentRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2InspectContentRequest]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2InspectContentRequestMutableBuilder[Self <: SchemaGooglePrivacyDlpV2InspectContentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2InspectContentRequest](x: Self) {
     
-    @scala.inline
-    def setInspectConfig(value: SchemaGooglePrivacyDlpV2InspectConfig): Self = StObject.set(x, "inspectConfig", value.asInstanceOf[js.Any])
+    inline def setInspectConfig(value: SchemaGooglePrivacyDlpV2InspectConfig): Self = StObject.set(x, "inspectConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInspectConfigUndefined: Self = StObject.set(x, "inspectConfig", js.undefined)
+    inline def setInspectConfigUndefined: Self = StObject.set(x, "inspectConfig", js.undefined)
     
-    @scala.inline
-    def setInspectTemplateName(value: String): Self = StObject.set(x, "inspectTemplateName", value.asInstanceOf[js.Any])
+    inline def setInspectTemplateName(value: String): Self = StObject.set(x, "inspectTemplateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInspectTemplateNameUndefined: Self = StObject.set(x, "inspectTemplateName", js.undefined)
+    inline def setInspectTemplateNameUndefined: Self = StObject.set(x, "inspectTemplateName", js.undefined)
     
-    @scala.inline
-    def setItem(value: SchemaGooglePrivacyDlpV2ContentItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: SchemaGooglePrivacyDlpV2ContentItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
   }
 }

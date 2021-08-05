@@ -28,40 +28,29 @@ trait OrderableClusterOption extends StObject {
 }
 object OrderableClusterOption {
   
-  @scala.inline
-  def apply(): OrderableClusterOption = {
+  inline def apply(): OrderableClusterOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrderableClusterOption]
   }
   
-  @scala.inline
-  implicit class OrderableClusterOptionMutableBuilder[Self <: OrderableClusterOption] (val x: Self) extends AnyVal {
+  extension [Self <: OrderableClusterOption](x: Self) {
     
-    @scala.inline
-    def setAvailabilityZones(value: AvailabilityZoneList): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZones(value: AvailabilityZoneList): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
+    inline def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
     
-    @scala.inline
-    def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
+    inline def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
     
-    @scala.inline
-    def setClusterType(value: String): Self = StObject.set(x, "ClusterType", value.asInstanceOf[js.Any])
+    inline def setClusterType(value: String): Self = StObject.set(x, "ClusterType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterTypeUndefined: Self = StObject.set(x, "ClusterType", js.undefined)
+    inline def setClusterTypeUndefined: Self = StObject.set(x, "ClusterType", js.undefined)
     
-    @scala.inline
-    def setClusterVersion(value: String): Self = StObject.set(x, "ClusterVersion", value.asInstanceOf[js.Any])
+    inline def setClusterVersion(value: String): Self = StObject.set(x, "ClusterVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterVersionUndefined: Self = StObject.set(x, "ClusterVersion", js.undefined)
+    inline def setClusterVersionUndefined: Self = StObject.set(x, "ClusterVersion", js.undefined)
     
-    @scala.inline
-    def setNodeType(value: String): Self = StObject.set(x, "NodeType", value.asInstanceOf[js.Any])
+    inline def setNodeType(value: String): Self = StObject.set(x, "NodeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeTypeUndefined: Self = StObject.set(x, "NodeType", js.undefined)
+    inline def setNodeTypeUndefined: Self = StObject.set(x, "NodeType", js.undefined)
   }
 }

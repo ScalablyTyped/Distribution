@@ -111,86 +111,72 @@ object mod {
     @JSImport("@carbon/colors", "colors.black")
     @js.native
     def black: `100` = js.native
-    @scala.inline
-    def black_=(x: `100`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("black")(x.asInstanceOf[js.Any])
+    inline def black_=(x: `100`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("black")(x.asInstanceOf[js.Any])
     
     @JSImport("@carbon/colors", "colors.blue")
     @js.native
     def blue: `10` = js.native
-    @scala.inline
-    def blue_=(x: `10`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("blue")(x.asInstanceOf[js.Any])
+    inline def blue_=(x: `10`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("blue")(x.asInstanceOf[js.Any])
     
     @JSImport("@carbon/colors", "colors.coolGray")
     @js.native
     def coolGray: `10` = js.native
-    @scala.inline
-    def coolGray_=(x: `10`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("coolGray")(x.asInstanceOf[js.Any])
+    inline def coolGray_=(x: `10`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("coolGray")(x.asInstanceOf[js.Any])
     
     @JSImport("@carbon/colors", "colors.cyan")
     @js.native
     def cyan: `10` = js.native
-    @scala.inline
-    def cyan_=(x: `10`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cyan")(x.asInstanceOf[js.Any])
+    inline def cyan_=(x: `10`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cyan")(x.asInstanceOf[js.Any])
     
     @JSImport("@carbon/colors", "colors.gray")
     @js.native
     def gray: `10` = js.native
-    @scala.inline
-    def gray_=(x: `10`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gray")(x.asInstanceOf[js.Any])
+    inline def gray_=(x: `10`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gray")(x.asInstanceOf[js.Any])
     
     @JSImport("@carbon/colors", "colors.green")
     @js.native
     def green: `10` = js.native
-    @scala.inline
-    def green_=(x: `10`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("green")(x.asInstanceOf[js.Any])
+    inline def green_=(x: `10`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("green")(x.asInstanceOf[js.Any])
     
     @JSImport("@carbon/colors", "colors.magenta")
     @js.native
     def magenta: `10` = js.native
-    @scala.inline
-    def magenta_=(x: `10`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("magenta")(x.asInstanceOf[js.Any])
+    inline def magenta_=(x: `10`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("magenta")(x.asInstanceOf[js.Any])
     
     @JSImport("@carbon/colors", "colors.orange")
     @js.native
     def orange: `40` = js.native
-    @scala.inline
-    def orange_=(x: `40`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("orange")(x.asInstanceOf[js.Any])
+    inline def orange_=(x: `40`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("orange")(x.asInstanceOf[js.Any])
     
     @JSImport("@carbon/colors", "colors.purple")
     @js.native
     def purple: `10` = js.native
-    @scala.inline
-    def purple_=(x: `10`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("purple")(x.asInstanceOf[js.Any])
+    inline def purple_=(x: `10`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("purple")(x.asInstanceOf[js.Any])
     
     @JSImport("@carbon/colors", "colors.red")
     @js.native
     def red: `10` = js.native
-    @scala.inline
-    def red_=(x: `10`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("red")(x.asInstanceOf[js.Any])
+    inline def red_=(x: `10`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("red")(x.asInstanceOf[js.Any])
     
     @JSImport("@carbon/colors", "colors.teal")
     @js.native
     def teal: `10` = js.native
-    @scala.inline
-    def teal_=(x: `10`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("teal")(x.asInstanceOf[js.Any])
+    inline def teal_=(x: `10`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("teal")(x.asInstanceOf[js.Any])
     
     @JSImport("@carbon/colors", "colors.warmGray")
     @js.native
     def warmGray: `10` = js.native
-    @scala.inline
-    def warmGray_=(x: `10`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warmGray")(x.asInstanceOf[js.Any])
+    inline def warmGray_=(x: `10`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warmGray")(x.asInstanceOf[js.Any])
     
     @JSImport("@carbon/colors", "colors.white")
     @js.native
     def white: `0` = js.native
-    @scala.inline
-    def white_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("white")(x.asInstanceOf[js.Any])
+    inline def white_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("white")(x.asInstanceOf[js.Any])
     
     @JSImport("@carbon/colors", "colors.yellow")
     @js.native
     def yellow: `20` = js.native
-    @scala.inline
-    def yellow_=(x: `20`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("yellow")(x.asInstanceOf[js.Any])
+    inline def yellow_=(x: `20`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("yellow")(x.asInstanceOf[js.Any])
   }
   
   object coolGray {
@@ -784,8 +770,7 @@ object mod {
   
   object rgba {
     
-    @scala.inline
-    def apply(hexcode: String, opacity: Double): String = (^.asInstanceOf[js.Dynamic].apply(hexcode.asInstanceOf[js.Any], opacity.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def apply(hexcode: String, opacity: Double): String = (^.asInstanceOf[js.Dynamic].apply(hexcode.asInstanceOf[js.Any], opacity.asInstanceOf[js.Any])).asInstanceOf[String]
     
     @JSImport("@carbon/colors", "rgba")
     @js.native

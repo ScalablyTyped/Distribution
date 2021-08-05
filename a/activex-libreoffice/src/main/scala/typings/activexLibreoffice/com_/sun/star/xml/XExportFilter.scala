@@ -29,8 +29,7 @@ trait XExportFilter
 }
 object XExportFilter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     exporter: (SeqEquiv[PropertyValue], SeqEquiv[String]) => Boolean,
     queryInterface: `type` => js.Any,
@@ -40,10 +39,8 @@ object XExportFilter {
     __obj.asInstanceOf[XExportFilter]
   }
   
-  @scala.inline
-  implicit class XExportFilterMutableBuilder[Self <: XExportFilter] (val x: Self) extends AnyVal {
+  extension [Self <: XExportFilter](x: Self) {
     
-    @scala.inline
-    def setExporter(value: (SeqEquiv[PropertyValue], SeqEquiv[String]) => Boolean): Self = StObject.set(x, "exporter", js.Any.fromFunction2(value))
+    inline def setExporter(value: (SeqEquiv[PropertyValue], SeqEquiv[String]) => Boolean): Self = StObject.set(x, "exporter", js.Any.fromFunction2(value))
   }
 }

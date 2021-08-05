@@ -19,8 +19,7 @@ object postAuthenticationMod {
   }
   object PostAuthenticationTriggerEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       callerContext: AwsSdkVersion,
       region: String,
       request: NewDeviceUsed,
@@ -32,11 +31,9 @@ object postAuthenticationMod {
       __obj.asInstanceOf[PostAuthenticationTriggerEvent]
     }
     
-    @scala.inline
-    implicit class PostAuthenticationTriggerEventMutableBuilder[Self <: PostAuthenticationTriggerEvent] (val x: Self) extends AnyVal {
+    extension [Self <: PostAuthenticationTriggerEvent](x: Self) {
       
-      @scala.inline
-      def setRequest(value: NewDeviceUsed): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: NewDeviceUsed): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     }
   }
   

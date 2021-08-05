@@ -62,8 +62,7 @@ trait typeCreatePCClassRendererParams
 }
 object typeCreatePCClassRendererParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     field: String,
     hasOwnProperty: PropertyKey => Boolean,
@@ -74,43 +73,30 @@ object typeCreatePCClassRendererParams {
     __obj.asInstanceOf[typeCreatePCClassRendererParams]
   }
   
-  @scala.inline
-  implicit class typeCreatePCClassRendererParamsMutableBuilder[Self <: typeCreatePCClassRendererParams] (val x: Self) extends AnyVal {
+  extension [Self <: typeCreatePCClassRendererParams](x: Self) {
     
-    @scala.inline
-    def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
+    inline def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDensityUndefined: Self = StObject.set(x, "density", js.undefined)
+    inline def setDensityUndefined: Self = StObject.set(x, "density", js.undefined)
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayer(value: PointCloudLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: PointCloudLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
-    @scala.inline
-    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setStatistics(value: UniqueValuesResult): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
+    inline def setStatistics(value: UniqueValuesResult): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatisticsUndefined: Self = StObject.set(x, "statistics", js.undefined)
+    inline def setStatisticsUndefined: Self = StObject.set(x, "statistics", js.undefined)
     
-    @scala.inline
-    def setTypeScheme(value: TypeSchemeForPoint): Self = StObject.set(x, "typeScheme", value.asInstanceOf[js.Any])
+    inline def setTypeScheme(value: TypeSchemeForPoint): Self = StObject.set(x, "typeScheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeSchemeUndefined: Self = StObject.set(x, "typeScheme", js.undefined)
+    inline def setTypeSchemeUndefined: Self = StObject.set(x, "typeScheme", js.undefined)
   }
 }

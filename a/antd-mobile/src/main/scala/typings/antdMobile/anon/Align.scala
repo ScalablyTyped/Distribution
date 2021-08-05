@@ -12,19 +12,15 @@ trait Align extends StObject {
 }
 object Align {
   
-  @scala.inline
-  def apply(align: String, prefixCls: String): Align = {
+  inline def apply(align: String, prefixCls: String): Align = {
     val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any])
     __obj.asInstanceOf[Align]
   }
   
-  @scala.inline
-  implicit class AlignMutableBuilder[Self <: Align] (val x: Self) extends AnyVal {
+  extension [Self <: Align](x: Self) {
     
-    @scala.inline
-    def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+    inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
   }
 }

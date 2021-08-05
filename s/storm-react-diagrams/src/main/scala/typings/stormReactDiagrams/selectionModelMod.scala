@@ -20,8 +20,7 @@ object selectionModelMod {
   }
   object SelectionModel {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       initialX: Double,
       initialY: Double,
       model: BaseModel[BaseEntity[BaseListener[js.Any]], BaseModelListener]
@@ -30,17 +29,13 @@ object selectionModelMod {
       __obj.asInstanceOf[SelectionModel]
     }
     
-    @scala.inline
-    implicit class SelectionModelMutableBuilder[Self <: SelectionModel] (val x: Self) extends AnyVal {
+    extension [Self <: SelectionModel](x: Self) {
       
-      @scala.inline
-      def setInitialX(value: Double): Self = StObject.set(x, "initialX", value.asInstanceOf[js.Any])
+      inline def setInitialX(value: Double): Self = StObject.set(x, "initialX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialY(value: Double): Self = StObject.set(x, "initialY", value.asInstanceOf[js.Any])
+      inline def setInitialY(value: Double): Self = StObject.set(x, "initialY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModel(value: BaseModel[BaseEntity[BaseListener[js.Any]], BaseModelListener]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: BaseModel[BaseEntity[BaseListener[js.Any]], BaseModelListener]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     }
   }
 }

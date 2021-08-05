@@ -65,79 +65,55 @@ trait EventDefinition extends StObject {
 }
 object EventDefinition {
   
-  @scala.inline
-  def apply(): EventDefinition = {
+  inline def apply(): EventDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EventDefinition]
   }
   
-  @scala.inline
-  implicit class EventDefinitionMutableBuilder[Self <: EventDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: EventDefinition](x: Self) {
     
-    @scala.inline
-    def setAggregate(value: String): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
+    inline def setAggregate(value: String): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregateId(value: String): Self = StObject.set(x, "aggregateId", value.asInstanceOf[js.Any])
+    inline def setAggregateId(value: String): Self = StObject.set(x, "aggregateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregateIdUndefined: Self = StObject.set(x, "aggregateId", js.undefined)
+    inline def setAggregateIdUndefined: Self = StObject.set(x, "aggregateId", js.undefined)
     
-    @scala.inline
-    def setAggregateUndefined: Self = StObject.set(x, "aggregate", js.undefined)
+    inline def setAggregateUndefined: Self = StObject.set(x, "aggregate", js.undefined)
     
-    @scala.inline
-    def setCommitStamp(value: String): Self = StObject.set(x, "commitStamp", value.asInstanceOf[js.Any])
+    inline def setCommitStamp(value: String): Self = StObject.set(x, "commitStamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitStampUndefined: Self = StObject.set(x, "commitStamp", js.undefined)
+    inline def setCommitStampUndefined: Self = StObject.set(x, "commitStamp", js.undefined)
     
-    @scala.inline
-    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setCorrelationId(value: String): Self = StObject.set(x, "correlationId", value.asInstanceOf[js.Any])
+    inline def setCorrelationId(value: String): Self = StObject.set(x, "correlationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorrelationIdUndefined: Self = StObject.set(x, "correlationId", js.undefined)
+    inline def setCorrelationIdUndefined: Self = StObject.set(x, "correlationId", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setMeta(value: String): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: String): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+    inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
-    @scala.inline
-    def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+    inline def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionUndefined: Self = StObject.set(x, "revision", js.undefined)
+    inline def setRevisionUndefined: Self = StObject.set(x, "revision", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

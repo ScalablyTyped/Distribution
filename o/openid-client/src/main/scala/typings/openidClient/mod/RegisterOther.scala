@@ -20,25 +20,19 @@ trait RegisterOther extends StObject {
 }
 object RegisterOther {
   
-  @scala.inline
-  def apply(): RegisterOther = {
+  inline def apply(): RegisterOther = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegisterOther]
   }
   
-  @scala.inline
-  implicit class RegisterOtherMutableBuilder[Self <: RegisterOther] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterOther](x: Self) {
     
-    @scala.inline
-    def setInitialAccessToken(value: String): Self = StObject.set(x, "initialAccessToken", value.asInstanceOf[js.Any])
+    inline def setInitialAccessToken(value: String): Self = StObject.set(x, "initialAccessToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialAccessTokenUndefined: Self = StObject.set(x, "initialAccessToken", js.undefined)
+    inline def setInitialAccessTokenUndefined: Self = StObject.set(x, "initialAccessToken", js.undefined)
     
-    @scala.inline
-    def setJwks(value: JSONWebKeySet): Self = StObject.set(x, "jwks", value.asInstanceOf[js.Any])
+    inline def setJwks(value: JSONWebKeySet): Self = StObject.set(x, "jwks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJwksUndefined: Self = StObject.set(x, "jwks", js.undefined)
+    inline def setJwksUndefined: Self = StObject.set(x, "jwks", js.undefined)
   }
 }

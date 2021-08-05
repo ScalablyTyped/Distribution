@@ -13,19 +13,15 @@ trait ElasticInferenceAcceleratorHealth extends StObject {
 }
 object ElasticInferenceAcceleratorHealth {
   
-  @scala.inline
-  def apply(): ElasticInferenceAcceleratorHealth = {
+  inline def apply(): ElasticInferenceAcceleratorHealth = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ElasticInferenceAcceleratorHealth]
   }
   
-  @scala.inline
-  implicit class ElasticInferenceAcceleratorHealthMutableBuilder[Self <: ElasticInferenceAcceleratorHealth] (val x: Self) extends AnyVal {
+  extension [Self <: ElasticInferenceAcceleratorHealth](x: Self) {
     
-    @scala.inline
-    def setStatus(value: AcceleratorHealthStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: AcceleratorHealthStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

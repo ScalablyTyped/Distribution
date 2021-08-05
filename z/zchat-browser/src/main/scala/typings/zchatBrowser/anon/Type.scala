@@ -20,29 +20,22 @@ trait Type
 }
 object Type {
   
-  @scala.inline
-  def apply(buttons: js.Array[Button], items: js.Array[ListItem]): Type = {
+  inline def apply(buttons: js.Array[Button], items: js.Array[ListItem]): Type = {
     val __obj = js.Dynamic.literal(buttons = buttons.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("LIST_TEMPLATE")
     __obj.asInstanceOf[Type]
   }
   
-  @scala.inline
-  implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
+  extension [Self <: Type](x: Self) {
     
-    @scala.inline
-    def setButtons(value: js.Array[Button]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: js.Array[Button]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonsVarargs(value: Button*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: Button*): Self = StObject.set(x, "buttons", js.Array(value :_*))
     
-    @scala.inline
-    def setItems(value: js.Array[ListItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[ListItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: ListItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ListItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: LIST_TEMPLATE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: LIST_TEMPLATE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

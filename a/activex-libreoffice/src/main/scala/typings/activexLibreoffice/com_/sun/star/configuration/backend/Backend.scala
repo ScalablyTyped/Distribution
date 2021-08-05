@@ -26,8 +26,7 @@ trait Backend
      with XBackendEntities
 object Backend {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdminEntity: String,
     OwnerEntity: String,
     acquire: () => Unit,

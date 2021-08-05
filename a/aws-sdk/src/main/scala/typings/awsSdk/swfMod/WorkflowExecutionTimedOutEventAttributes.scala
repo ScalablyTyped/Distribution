@@ -18,19 +18,15 @@ trait WorkflowExecutionTimedOutEventAttributes extends StObject {
 }
 object WorkflowExecutionTimedOutEventAttributes {
   
-  @scala.inline
-  def apply(childPolicy: ChildPolicy, timeoutType: WorkflowExecutionTimeoutType): WorkflowExecutionTimedOutEventAttributes = {
+  inline def apply(childPolicy: ChildPolicy, timeoutType: WorkflowExecutionTimeoutType): WorkflowExecutionTimedOutEventAttributes = {
     val __obj = js.Dynamic.literal(childPolicy = childPolicy.asInstanceOf[js.Any], timeoutType = timeoutType.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkflowExecutionTimedOutEventAttributes]
   }
   
-  @scala.inline
-  implicit class WorkflowExecutionTimedOutEventAttributesMutableBuilder[Self <: WorkflowExecutionTimedOutEventAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: WorkflowExecutionTimedOutEventAttributes](x: Self) {
     
-    @scala.inline
-    def setChildPolicy(value: ChildPolicy): Self = StObject.set(x, "childPolicy", value.asInstanceOf[js.Any])
+    inline def setChildPolicy(value: ChildPolicy): Self = StObject.set(x, "childPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutType(value: WorkflowExecutionTimeoutType): Self = StObject.set(x, "timeoutType", value.asInstanceOf[js.Any])
+    inline def setTimeoutType(value: WorkflowExecutionTimeoutType): Self = StObject.set(x, "timeoutType", value.asInstanceOf[js.Any])
   }
 }

@@ -14,28 +14,21 @@ trait GoogleCloudVideointelligenceV1beta2PersonDetectionAnnotation extends StObj
 }
 object GoogleCloudVideointelligenceV1beta2PersonDetectionAnnotation {
   
-  @scala.inline
-  def apply(): GoogleCloudVideointelligenceV1beta2PersonDetectionAnnotation = {
+  inline def apply(): GoogleCloudVideointelligenceV1beta2PersonDetectionAnnotation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1beta2PersonDetectionAnnotation]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVideointelligenceV1beta2PersonDetectionAnnotationMutableBuilder[Self <: GoogleCloudVideointelligenceV1beta2PersonDetectionAnnotation] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVideointelligenceV1beta2PersonDetectionAnnotation](x: Self) {
     
-    @scala.inline
-    def setTracks(value: js.Array[GoogleCloudVideointelligenceV1beta2Track]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
+    inline def setTracks(value: js.Array[GoogleCloudVideointelligenceV1beta2Track]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTracksUndefined: Self = StObject.set(x, "tracks", js.undefined)
+    inline def setTracksUndefined: Self = StObject.set(x, "tracks", js.undefined)
     
-    @scala.inline
-    def setTracksVarargs(value: GoogleCloudVideointelligenceV1beta2Track*): Self = StObject.set(x, "tracks", js.Array(value :_*))
+    inline def setTracksVarargs(value: GoogleCloudVideointelligenceV1beta2Track*): Self = StObject.set(x, "tracks", js.Array(value :_*))
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

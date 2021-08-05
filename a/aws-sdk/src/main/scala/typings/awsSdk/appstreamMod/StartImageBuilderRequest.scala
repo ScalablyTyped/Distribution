@@ -18,22 +18,17 @@ trait StartImageBuilderRequest extends StObject {
 }
 object StartImageBuilderRequest {
   
-  @scala.inline
-  def apply(Name: String): StartImageBuilderRequest = {
+  inline def apply(Name: String): StartImageBuilderRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartImageBuilderRequest]
   }
   
-  @scala.inline
-  implicit class StartImageBuilderRequestMutableBuilder[Self <: StartImageBuilderRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartImageBuilderRequest](x: Self) {
     
-    @scala.inline
-    def setAppstreamAgentVersion(value: AppstreamAgentVersion): Self = StObject.set(x, "AppstreamAgentVersion", value.asInstanceOf[js.Any])
+    inline def setAppstreamAgentVersion(value: AppstreamAgentVersion): Self = StObject.set(x, "AppstreamAgentVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppstreamAgentVersionUndefined: Self = StObject.set(x, "AppstreamAgentVersion", js.undefined)
+    inline def setAppstreamAgentVersionUndefined: Self = StObject.set(x, "AppstreamAgentVersion", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

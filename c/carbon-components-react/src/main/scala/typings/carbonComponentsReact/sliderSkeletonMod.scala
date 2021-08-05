@@ -22,20 +22,16 @@ object sliderSkeletonMod extends Shortcut {
   }
   object SliderSkeletonProps {
     
-    @scala.inline
-    def apply(): SliderSkeletonProps = {
+    inline def apply(): SliderSkeletonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SliderSkeletonProps]
     }
     
-    @scala.inline
-    implicit class SliderSkeletonPropsMutableBuilder[Self <: SliderSkeletonProps] (val x: Self) extends AnyVal {
+    extension [Self <: SliderSkeletonProps](x: Self) {
       
-      @scala.inline
-      def setHideLabel(value: Boolean): Self = StObject.set(x, "hideLabel", value.asInstanceOf[js.Any])
+      inline def setHideLabel(value: Boolean): Self = StObject.set(x, "hideLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideLabelUndefined: Self = StObject.set(x, "hideLabel", js.undefined)
+      inline def setHideLabelUndefined: Self = StObject.set(x, "hideLabel", js.undefined)
     }
   }
   

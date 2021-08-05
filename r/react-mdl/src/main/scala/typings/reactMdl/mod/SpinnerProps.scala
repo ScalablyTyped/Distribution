@@ -13,19 +13,15 @@ trait SpinnerProps
 }
 object SpinnerProps {
   
-  @scala.inline
-  def apply(): SpinnerProps = {
+  inline def apply(): SpinnerProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SpinnerProps]
   }
   
-  @scala.inline
-  implicit class SpinnerPropsMutableBuilder[Self <: SpinnerProps] (val x: Self) extends AnyVal {
+  extension [Self <: SpinnerProps](x: Self) {
     
-    @scala.inline
-    def setSingleColor(value: Boolean): Self = StObject.set(x, "singleColor", value.asInstanceOf[js.Any])
+    inline def setSingleColor(value: Boolean): Self = StObject.set(x, "singleColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleColorUndefined: Self = StObject.set(x, "singleColor", js.undefined)
+    inline def setSingleColorUndefined: Self = StObject.set(x, "singleColor", js.undefined)
   }
 }

@@ -18,22 +18,17 @@ trait SourceAlgorithm extends StObject {
 }
 object SourceAlgorithm {
   
-  @scala.inline
-  def apply(AlgorithmName: ArnOrName): SourceAlgorithm = {
+  inline def apply(AlgorithmName: ArnOrName): SourceAlgorithm = {
     val __obj = js.Dynamic.literal(AlgorithmName = AlgorithmName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceAlgorithm]
   }
   
-  @scala.inline
-  implicit class SourceAlgorithmMutableBuilder[Self <: SourceAlgorithm] (val x: Self) extends AnyVal {
+  extension [Self <: SourceAlgorithm](x: Self) {
     
-    @scala.inline
-    def setAlgorithmName(value: ArnOrName): Self = StObject.set(x, "AlgorithmName", value.asInstanceOf[js.Any])
+    inline def setAlgorithmName(value: ArnOrName): Self = StObject.set(x, "AlgorithmName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelDataUrl(value: Url): Self = StObject.set(x, "ModelDataUrl", value.asInstanceOf[js.Any])
+    inline def setModelDataUrl(value: Url): Self = StObject.set(x, "ModelDataUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelDataUrlUndefined: Self = StObject.set(x, "ModelDataUrl", js.undefined)
+    inline def setModelDataUrlUndefined: Self = StObject.set(x, "ModelDataUrl", js.undefined)
   }
 }

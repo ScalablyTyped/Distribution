@@ -67,34 +67,34 @@ object commonDomworldMod {
       */
     var _boundFunctions: Map[String, js.Function] = js.native
     
-    var _contextPromise: js.Any = js.native
+    /* private */ var _contextPromise: js.Any = js.native
     
-    var _contextResolveCallback: js.Any = js.native
+    /* private */ var _contextResolveCallback: js.Any = js.native
     
-    var _ctxBindings: js.Any = js.native
+    /* private */ var _ctxBindings: js.Any = js.native
     
     def _detach(): Unit = js.native
     
-    var _detached: js.Any = js.native
+    /* private */ var _detached: js.Any = js.native
     
     def _document(): js.Promise[ElementHandle[Element]] = js.native
     
-    var _documentPromise: js.Any = js.native
+    /* private */ var _documentPromise: js.Any = js.native
     
-    var _frame: js.Any = js.native
+    /* private */ var _frame: js.Any = js.native
     
-    var _frameManager: js.Any = js.native
+    /* private */ var _frameManager: js.Any = js.native
     
     def _hasContext(): Boolean = js.native
     
-    var _onBindingCalled: js.Any = js.native
+    /* private */ var _onBindingCalled: js.Any = js.native
     
     def _setContext(): js.Promise[Unit] = js.native
     def _setContext(context: ExecutionContext): js.Promise[Unit] = js.native
     
-    var _settingUpBinding: js.Any = js.native
+    /* private */ var _settingUpBinding: js.Any = js.native
     
-    var _timeoutSettings: js.Any = js.native
+    /* private */ var _timeoutSettings: js.Any = js.native
     
     /**
       * @internal
@@ -182,8 +182,7 @@ object commonDomworldMod {
     @JSImport("puppeteer-core/lib/esm/puppeteer/common/DOMWorld", "DOMWorld.bindingIdentifier")
     @js.native
     def bindingIdentifier: js.Any = js.native
-    @scala.inline
-    def bindingIdentifier_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bindingIdentifier")(x.asInstanceOf[js.Any])
+    inline def bindingIdentifier_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bindingIdentifier")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("puppeteer-core/lib/esm/puppeteer/common/DOMWorld", "WaitTask")
@@ -230,20 +229,16 @@ object commonDomworldMod {
   }
   object PageBinding {
     
-    @scala.inline
-    def apply(name: String, pptrFunction: js.Function): PageBinding = {
+    inline def apply(name: String, pptrFunction: js.Function): PageBinding = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], pptrFunction = pptrFunction.asInstanceOf[js.Any])
       __obj.asInstanceOf[PageBinding]
     }
     
-    @scala.inline
-    implicit class PageBindingMutableBuilder[Self <: PageBinding] (val x: Self) extends AnyVal {
+    extension [Self <: PageBinding](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPptrFunction(value: js.Function): Self = StObject.set(x, "pptrFunction", value.asInstanceOf[js.Any])
+      inline def setPptrFunction(value: js.Function): Self = StObject.set(x, "pptrFunction", value.asInstanceOf[js.Any])
     }
   }
   
@@ -257,32 +252,24 @@ object commonDomworldMod {
   }
   object WaitForSelectorOptions {
     
-    @scala.inline
-    def apply(): WaitForSelectorOptions = {
+    inline def apply(): WaitForSelectorOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WaitForSelectorOptions]
     }
     
-    @scala.inline
-    implicit class WaitForSelectorOptionsMutableBuilder[Self <: WaitForSelectorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WaitForSelectorOptions](x: Self) {
       
-      @scala.inline
-      def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+      inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+      inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     }
   }
   
@@ -304,8 +291,7 @@ object commonDomworldMod {
   }
   object WaitTaskOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       args: js.Array[SerializableOrJSHandle],
       domWorld: DOMWorld,
       polling: String | Double,
@@ -317,35 +303,25 @@ object commonDomworldMod {
       __obj.asInstanceOf[WaitTaskOptions]
     }
     
-    @scala.inline
-    implicit class WaitTaskOptionsMutableBuilder[Self <: WaitTaskOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WaitTaskOptions](x: Self) {
       
-      @scala.inline
-      def setArgs(value: js.Array[SerializableOrJSHandle]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[SerializableOrJSHandle]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsVarargs(value: SerializableOrJSHandle*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: SerializableOrJSHandle*): Self = StObject.set(x, "args", js.Array(value :_*))
       
-      @scala.inline
-      def setBinding(value: PageBinding): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
+      inline def setBinding(value: PageBinding): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBindingUndefined: Self = StObject.set(x, "binding", js.undefined)
+      inline def setBindingUndefined: Self = StObject.set(x, "binding", js.undefined)
       
-      @scala.inline
-      def setDomWorld(value: DOMWorld): Self = StObject.set(x, "domWorld", value.asInstanceOf[js.Any])
+      inline def setDomWorld(value: DOMWorld): Self = StObject.set(x, "domWorld", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolling(value: String | Double): Self = StObject.set(x, "polling", value.asInstanceOf[js.Any])
+      inline def setPolling(value: String | Double): Self = StObject.set(x, "polling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPredicateBody(value: js.Function | String): Self = StObject.set(x, "predicateBody", value.asInstanceOf[js.Any])
+      inline def setPredicateBody(value: js.Function | String): Self = StObject.set(x, "predicateBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
 }

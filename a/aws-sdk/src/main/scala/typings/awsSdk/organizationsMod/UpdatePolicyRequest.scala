@@ -28,34 +28,25 @@ trait UpdatePolicyRequest extends StObject {
 }
 object UpdatePolicyRequest {
   
-  @scala.inline
-  def apply(PolicyId: PolicyId): UpdatePolicyRequest = {
+  inline def apply(PolicyId: PolicyId): UpdatePolicyRequest = {
     val __obj = js.Dynamic.literal(PolicyId = PolicyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdatePolicyRequest]
   }
   
-  @scala.inline
-  implicit class UpdatePolicyRequestMutableBuilder[Self <: UpdatePolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdatePolicyRequest](x: Self) {
     
-    @scala.inline
-    def setContent(value: PolicyContent): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+    inline def setContent(value: PolicyContent): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
     
-    @scala.inline
-    def setDescription(value: PolicyDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: PolicyDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setName(value: PolicyName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: PolicyName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setPolicyId(value: PolicyId): Self = StObject.set(x, "PolicyId", value.asInstanceOf[js.Any])
+    inline def setPolicyId(value: PolicyId): Self = StObject.set(x, "PolicyId", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait IpFilter extends StObject {
 }
 object IpFilter {
   
-  @scala.inline
-  def apply(): IpFilter = {
+  inline def apply(): IpFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IpFilter]
   }
   
-  @scala.inline
-  implicit class IpFilterMutableBuilder[Self <: IpFilter] (val x: Self) extends AnyVal {
+  extension [Self <: IpFilter](x: Self) {
     
-    @scala.inline
-    def setCidr(value: NonEmptyString): Self = StObject.set(x, "Cidr", value.asInstanceOf[js.Any])
+    inline def setCidr(value: NonEmptyString): Self = StObject.set(x, "Cidr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidrUndefined: Self = StObject.set(x, "Cidr", js.undefined)
+    inline def setCidrUndefined: Self = StObject.set(x, "Cidr", js.undefined)
   }
 }

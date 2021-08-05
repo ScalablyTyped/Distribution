@@ -14,31 +14,23 @@ trait NavigationResetActionPayload extends StObject {
 }
 object NavigationResetActionPayload {
   
-  @scala.inline
-  def apply(actions: js.Array[NavigationNavigateAction], index: Double): NavigationResetActionPayload = {
+  inline def apply(actions: js.Array[NavigationNavigateAction], index: Double): NavigationResetActionPayload = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationResetActionPayload]
   }
   
-  @scala.inline
-  implicit class NavigationResetActionPayloadMutableBuilder[Self <: NavigationResetActionPayload] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationResetActionPayload](x: Self) {
     
-    @scala.inline
-    def setActions(value: js.Array[NavigationNavigateAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: js.Array[NavigationNavigateAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsVarargs(value: NavigationNavigateAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: NavigationNavigateAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyNull: Self = StObject.set(x, "key", null)
+    inline def setKeyNull: Self = StObject.set(x, "key", null)
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
   }
 }

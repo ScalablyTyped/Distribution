@@ -23,8 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object ReferenceType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     name: ModelToObject[String] | String,
     `type`: (ModelToObject[/* "reference" */ String]) | (/* "reference" */ String)
   ): ReferenceType = {
@@ -33,36 +32,26 @@ object ReferenceType {
     __obj.asInstanceOf[ReferenceType]
   }
   
-  @scala.inline
-  implicit class ReferenceTypeMutableBuilder[Self <: ReferenceType] (val x: Self) extends AnyVal {
+  extension [Self <: ReferenceType](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setName(value: ModelToObject[String] | String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ModelToObject[String] | String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "name", js.Array(value :_*))
+    inline def setNameVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "name", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: (ModelToObject[/* "reference" */ String]) | (/* "reference" */ String)): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: (ModelToObject[/* "reference" */ String]) | (/* "reference" */ String)): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeArguments(
+    inline def setTypeArguments(
       value: ModelToObject[js.UndefOr[js.Array[typings.typedoc.typesAbstractMod.Type]]] | js.Array[typings.typedoc.typesAbstractMod.Type]
     ): Self = StObject.set(x, "typeArguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeArgumentsUndefined: Self = StObject.set(x, "typeArguments", js.undefined)
+    inline def setTypeArgumentsUndefined: Self = StObject.set(x, "typeArguments", js.undefined)
     
-    @scala.inline
-    def setTypeArgumentsVarargs(value: (typings.typedoc.typesAbstractMod.Type | _ModelToObject[js.Any])*): Self = StObject.set(x, "typeArguments", js.Array(value :_*))
+    inline def setTypeArgumentsVarargs(value: (typings.typedoc.typesAbstractMod.Type | _ModelToObject[js.Any])*): Self = StObject.set(x, "typeArguments", js.Array(value :_*))
     
-    @scala.inline
-    def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
   }
 }

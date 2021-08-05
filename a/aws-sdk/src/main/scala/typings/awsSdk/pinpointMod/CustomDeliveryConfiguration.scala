@@ -18,25 +18,19 @@ trait CustomDeliveryConfiguration extends StObject {
 }
 object CustomDeliveryConfiguration {
   
-  @scala.inline
-  def apply(DeliveryUri: string): CustomDeliveryConfiguration = {
+  inline def apply(DeliveryUri: string): CustomDeliveryConfiguration = {
     val __obj = js.Dynamic.literal(DeliveryUri = DeliveryUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomDeliveryConfiguration]
   }
   
-  @scala.inline
-  implicit class CustomDeliveryConfigurationMutableBuilder[Self <: CustomDeliveryConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: CustomDeliveryConfiguration](x: Self) {
     
-    @scala.inline
-    def setDeliveryUri(value: string): Self = StObject.set(x, "DeliveryUri", value.asInstanceOf[js.Any])
+    inline def setDeliveryUri(value: string): Self = StObject.set(x, "DeliveryUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointTypes(value: ListOfEndpointTypesElement): Self = StObject.set(x, "EndpointTypes", value.asInstanceOf[js.Any])
+    inline def setEndpointTypes(value: ListOfEndpointTypesElement): Self = StObject.set(x, "EndpointTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointTypesUndefined: Self = StObject.set(x, "EndpointTypes", js.undefined)
+    inline def setEndpointTypesUndefined: Self = StObject.set(x, "EndpointTypes", js.undefined)
     
-    @scala.inline
-    def setEndpointTypesVarargs(value: EndpointTypesElement*): Self = StObject.set(x, "EndpointTypes", js.Array(value :_*))
+    inline def setEndpointTypesVarargs(value: EndpointTypesElement*): Self = StObject.set(x, "EndpointTypes", js.Array(value :_*))
   }
 }

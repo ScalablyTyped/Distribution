@@ -19,17 +19,17 @@ object fpmMod {
   @js.native
   trait FpmTarget extends Target {
     
-    var computeFpmMetaInfoOptions: js.Any = js.native
+    /* private */ var computeFpmMetaInfoOptions: js.Any = js.native
     
-    var createScripts: js.Any = js.native
+    /* private */ var createScripts: js.Any = js.native
     
-    val helper: js.Any = js.native
+    /* private */ val helper: js.Any = js.native
     
     @JSName("options")
     val options_FpmTarget: LinuxTargetSpecificOptions = js.native
     
-    val packager: js.Any = js.native
+    /* private */ val packager: js.Any = js.native
     
-    val scriptFiles: js.Any = js.native
+    /* private */ val scriptFiles: js.Any = js.native
   }
 }

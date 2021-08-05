@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.ScopeFolder")
 @js.native
-class ScopeFolder protected ()
+/* private */ class ScopeFolder ()
   extends StObject
      with typings.activexOffice.Office.ScopeFolder {
   
@@ -23,7 +23,7 @@ class ScopeFolder protected ()
   /* CompleteClass */
   override val Name: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.ScopeFolder_typekey")
   var OfficeDotScopeFolder_typekey: typings.activexOffice.Office.ScopeFolder = js.native
   

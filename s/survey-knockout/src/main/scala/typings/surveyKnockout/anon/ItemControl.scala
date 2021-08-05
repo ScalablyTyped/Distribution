@@ -26,8 +26,7 @@ trait ItemControl extends StObject {
 }
 object ItemControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clearButton: String,
     image: String,
     item: String,
@@ -42,34 +41,24 @@ object ItemControl {
     __obj.asInstanceOf[ItemControl]
   }
   
-  @scala.inline
-  implicit class ItemControlMutableBuilder[Self <: ItemControl] (val x: Self) extends AnyVal {
+  extension [Self <: ItemControl](x: Self) {
     
-    @scala.inline
-    def setClearButton(value: String): Self = StObject.set(x, "clearButton", value.asInstanceOf[js.Any])
+    inline def setClearButton(value: String): Self = StObject.set(x, "clearButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemChecked(value: String): Self = StObject.set(x, "itemChecked", value.asInstanceOf[js.Any])
+    inline def setItemChecked(value: String): Self = StObject.set(x, "itemChecked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemControl(value: String): Self = StObject.set(x, "itemControl", value.asInstanceOf[js.Any])
+    inline def setItemControl(value: String): Self = StObject.set(x, "itemControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemInline(value: String): Self = StObject.set(x, "itemInline", value.asInstanceOf[js.Any])
+    inline def setItemInline(value: String): Self = StObject.set(x, "itemInline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemText(value: String): Self = StObject.set(x, "itemText", value.asInstanceOf[js.Any])
+    inline def setItemText(value: String): Self = StObject.set(x, "itemText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
   }
 }

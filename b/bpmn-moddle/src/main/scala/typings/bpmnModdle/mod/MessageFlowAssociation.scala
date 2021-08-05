@@ -14,8 +14,7 @@ trait MessageFlowAssociation
 }
 object MessageFlowAssociation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     id: String,
@@ -26,13 +25,10 @@ object MessageFlowAssociation {
     __obj.asInstanceOf[MessageFlowAssociation]
   }
   
-  @scala.inline
-  implicit class MessageFlowAssociationMutableBuilder[Self <: MessageFlowAssociation] (val x: Self) extends AnyVal {
+  extension [Self <: MessageFlowAssociation](x: Self) {
     
-    @scala.inline
-    def setInnerMessageFlowRef(value: MessageFlow): Self = StObject.set(x, "innerMessageFlowRef", value.asInstanceOf[js.Any])
+    inline def setInnerMessageFlowRef(value: MessageFlow): Self = StObject.set(x, "innerMessageFlowRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOuterMessageFlowRef(value: MessageFlow): Self = StObject.set(x, "outerMessageFlowRef", value.asInstanceOf[js.Any])
+    inline def setOuterMessageFlowRef(value: MessageFlow): Self = StObject.set(x, "outerMessageFlowRef", value.asInstanceOf[js.Any])
   }
 }

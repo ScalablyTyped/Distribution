@@ -22,22 +22,17 @@ trait IEquipmentComponent extends StObject {
 }
 object IEquipmentComponent {
   
-  @scala.inline
-  def apply(slot_drop_chance: js.Array[Dropchance], table: String): IEquipmentComponent = {
+  inline def apply(slot_drop_chance: js.Array[Dropchance], table: String): IEquipmentComponent = {
     val __obj = js.Dynamic.literal(slot_drop_chance = slot_drop_chance.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEquipmentComponent]
   }
   
-  @scala.inline
-  implicit class IEquipmentComponentMutableBuilder[Self <: IEquipmentComponent] (val x: Self) extends AnyVal {
+  extension [Self <: IEquipmentComponent](x: Self) {
     
-    @scala.inline
-    def setSlot_drop_chance(value: js.Array[Dropchance]): Self = StObject.set(x, "slot_drop_chance", value.asInstanceOf[js.Any])
+    inline def setSlot_drop_chance(value: js.Array[Dropchance]): Self = StObject.set(x, "slot_drop_chance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlot_drop_chanceVarargs(value: Dropchance*): Self = StObject.set(x, "slot_drop_chance", js.Array(value :_*))
+    inline def setSlot_drop_chanceVarargs(value: Dropchance*): Self = StObject.set(x, "slot_drop_chance", js.Array(value :_*))
     
-    @scala.inline
-    def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+    inline def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
   }
 }

@@ -15,43 +15,36 @@ object themeMod {
     @JSImport("@storybook/react-native/dist/preview/components/Shared/theme", "theme.backgroundColor")
     @js.native
     def backgroundColor: String = js.native
-    @scala.inline
-    def backgroundColor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("backgroundColor")(x.asInstanceOf[js.Any])
+    inline def backgroundColor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("backgroundColor")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/react-native/dist/preview/components/Shared/theme", "theme.borderColor")
     @js.native
     def borderColor: String = js.native
-    @scala.inline
-    def borderColor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("borderColor")(x.asInstanceOf[js.Any])
+    inline def borderColor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("borderColor")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/react-native/dist/preview/components/Shared/theme", "theme.buttonActiveTextColor")
     @js.native
     def buttonActiveTextColor: String = js.native
-    @scala.inline
-    def buttonActiveTextColor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buttonActiveTextColor")(x.asInstanceOf[js.Any])
+    inline def buttonActiveTextColor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buttonActiveTextColor")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/react-native/dist/preview/components/Shared/theme", "theme.buttonTextColor")
     @js.native
     def buttonTextColor: String = js.native
-    @scala.inline
-    def buttonTextColor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buttonTextColor")(x.asInstanceOf[js.Any])
+    inline def buttonTextColor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buttonTextColor")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/react-native/dist/preview/components/Shared/theme", "theme.headerTextColor")
     @js.native
     def headerTextColor: String = js.native
-    @scala.inline
-    def headerTextColor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("headerTextColor")(x.asInstanceOf[js.Any])
+    inline def headerTextColor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("headerTextColor")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/react-native/dist/preview/components/Shared/theme", "theme.labelColor")
     @js.native
     def labelColor: String = js.native
-    @scala.inline
-    def labelColor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("labelColor")(x.asInstanceOf[js.Any])
+    inline def labelColor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("labelColor")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/react-native/dist/preview/components/Shared/theme", "theme.previewBorderColor")
     @js.native
     def previewBorderColor: String = js.native
-    @scala.inline
-    def previewBorderColor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("previewBorderColor")(x.asInstanceOf[js.Any])
+    inline def previewBorderColor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("previewBorderColor")(x.asInstanceOf[js.Any])
   }
 }

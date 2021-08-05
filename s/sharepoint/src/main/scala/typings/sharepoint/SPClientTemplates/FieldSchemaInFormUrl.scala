@@ -13,8 +13,7 @@ trait FieldSchemaInFormUrl
 }
 object FieldSchemaInFormUrl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AllowGridEditing: Boolean,
     Description: String,
     Direction: String,
@@ -35,10 +34,8 @@ object FieldSchemaInFormUrl {
     __obj.asInstanceOf[FieldSchemaInFormUrl]
   }
   
-  @scala.inline
-  implicit class FieldSchemaInFormUrlMutableBuilder[Self <: FieldSchemaInFormUrl] (val x: Self) extends AnyVal {
+  extension [Self <: FieldSchemaInFormUrl](x: Self) {
     
-    @scala.inline
-    def setDisplayFormat(value: UrlFormatType): Self = StObject.set(x, "DisplayFormat", value.asInstanceOf[js.Any])
+    inline def setDisplayFormat(value: UrlFormatType): Self = StObject.set(x, "DisplayFormat", value.asInstanceOf[js.Any])
   }
 }

@@ -15,22 +15,17 @@ trait HeadObjectResult extends StObject {
 }
 object HeadObjectResult {
   
-  @scala.inline
-  def apply(meta: UserMeta, res: NormalSuccessResponse, status: Double): HeadObjectResult = {
+  inline def apply(meta: UserMeta, res: NormalSuccessResponse, status: Double): HeadObjectResult = {
     val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeadObjectResult]
   }
   
-  @scala.inline
-  implicit class HeadObjectResultMutableBuilder[Self <: HeadObjectResult] (val x: Self) extends AnyVal {
+  extension [Self <: HeadObjectResult](x: Self) {
     
-    @scala.inline
-    def setMeta(value: UserMeta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: UserMeta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+    inline def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

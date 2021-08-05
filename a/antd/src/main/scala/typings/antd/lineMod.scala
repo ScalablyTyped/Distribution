@@ -21,11 +21,9 @@ object lineMod {
   @js.native
   val default: FC[LineProps] = js.native
   
-  @scala.inline
-  def handleGradient(strokeColor: ProgressGradient, directionConfig: DirectionType): BackgroundImage = (^.asInstanceOf[js.Dynamic].applyDynamic("handleGradient")(strokeColor.asInstanceOf[js.Any], directionConfig.asInstanceOf[js.Any])).asInstanceOf[BackgroundImage]
+  inline def handleGradient(strokeColor: ProgressGradient, directionConfig: DirectionType): BackgroundImage = (^.asInstanceOf[js.Dynamic].applyDynamic("handleGradient")(strokeColor.asInstanceOf[js.Any], directionConfig.asInstanceOf[js.Any])).asInstanceOf[BackgroundImage]
   
-  @scala.inline
-  def sortGradient(gradients: StringGradients): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sortGradient")(gradients.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def sortGradient(gradients: StringGradients): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sortGradient")(gradients.asInstanceOf[js.Any]).asInstanceOf[String]
   
   trait LineProps
     extends StObject
@@ -40,29 +38,22 @@ object lineMod {
   }
   object LineProps {
     
-    @scala.inline
-    def apply(prefixCls: String): LineProps = {
+    inline def apply(prefixCls: String): LineProps = {
       val __obj = js.Dynamic.literal(prefixCls = prefixCls.asInstanceOf[js.Any])
       __obj.asInstanceOf[LineProps]
     }
     
-    @scala.inline
-    implicit class LinePropsMutableBuilder[Self <: LineProps] (val x: Self) extends AnyVal {
+    extension [Self <: LineProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDirection(value: DirectionType): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: DirectionType): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
     }
   }
 }

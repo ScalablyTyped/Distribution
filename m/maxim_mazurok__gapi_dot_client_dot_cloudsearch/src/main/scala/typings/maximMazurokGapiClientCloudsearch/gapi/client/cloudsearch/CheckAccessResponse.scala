@@ -11,19 +11,15 @@ trait CheckAccessResponse extends StObject {
 }
 object CheckAccessResponse {
   
-  @scala.inline
-  def apply(): CheckAccessResponse = {
+  inline def apply(): CheckAccessResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CheckAccessResponse]
   }
   
-  @scala.inline
-  implicit class CheckAccessResponseMutableBuilder[Self <: CheckAccessResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CheckAccessResponse](x: Self) {
     
-    @scala.inline
-    def setHasAccess(value: Boolean): Self = StObject.set(x, "hasAccess", value.asInstanceOf[js.Any])
+    inline def setHasAccess(value: Boolean): Self = StObject.set(x, "hasAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasAccessUndefined: Self = StObject.set(x, "hasAccess", js.undefined)
+    inline def setHasAccessUndefined: Self = StObject.set(x, "hasAccess", js.undefined)
   }
 }

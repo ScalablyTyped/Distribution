@@ -30,29 +30,29 @@ object randUtilMod {
     def this(mean: Double, stdDeviation: Double, dtype: Unit, truncated: Unit, seed: Double) = this()
     
     /** Handles proper rounding for non-floating-point numbers. */
-    var convertValue: js.Any = js.native
+    /* private */ var convertValue: js.Any = js.native
     
-    var dtype: js.Any = js.native
+    /* private */ var dtype: js.Any = js.native
     
     /** Returns true if less than 2-standard-deviations from the mean. */
-    var isValidTruncated: js.Any = js.native
+    /* private */ var isValidTruncated: js.Any = js.native
     
-    var lower: js.Any = js.native
+    /* private */ var lower: js.Any = js.native
     
-    var mean: js.Any = js.native
+    /* private */ var mean: js.Any = js.native
     
-    var nextVal: js.Any = js.native
+    /* private */ var nextVal: js.Any = js.native
     
     /* CompleteClass */
     override def nextValue(): Double = js.native
     
-    var random: js.Any = js.native
+    /* private */ var random: js.Any = js.native
     
-    var stdDev: js.Any = js.native
+    /* private */ var stdDev: js.Any = js.native
     
-    var truncated: js.Any = js.native
+    /* private */ var truncated: js.Any = js.native
     
-    var upper: js.Any = js.native
+    /* private */ var upper: js.Any = js.native
   }
   
   @JSImport("@tensorflow/tfjs-core/dist/ops/rand_util", "RandGamma")
@@ -65,25 +65,25 @@ object randUtilMod {
     def this(alpha: Double, beta: Double, dtype: float32, seed: Double) = this()
     def this(alpha: Double, beta: Double, dtype: int32, seed: Double) = this()
     
-    var alpha: js.Any = js.native
+    /* private */ var alpha: js.Any = js.native
     
-    var beta: js.Any = js.native
+    /* private */ var beta: js.Any = js.native
     
-    var c: js.Any = js.native
+    /* private */ var c: js.Any = js.native
     
     /** Handles proper rounding for non-floating-point numbers. */
-    var convertValue: js.Any = js.native
+    /* private */ var convertValue: js.Any = js.native
     
-    var d: js.Any = js.native
+    /* private */ var d: js.Any = js.native
     
-    var dtype: js.Any = js.native
+    /* private */ var dtype: js.Any = js.native
     
     /* CompleteClass */
     override def nextValue(): Double = js.native
     
-    var randn: js.Any = js.native
+    /* private */ var randn: js.Any = js.native
     
-    var randu: js.Any = js.native
+    /* private */ var randu: js.Any = js.native
   }
   
   @JSImport("@tensorflow/tfjs-core/dist/ops/rand_util", "UniformRandom")
@@ -116,35 +116,29 @@ object randUtilMod {
     def this(min: Unit, max: Unit, dtype: Unit, seed: Double) = this()
     
     /** Handles proper rounding for non floating point numbers. */
-    var canReturnFloat: js.Any = js.native
+    /* private */ var canReturnFloat: js.Any = js.native
     
-    var convertValue: js.Any = js.native
+    /* private */ var convertValue: js.Any = js.native
     
-    var dtype: js.Any = js.native
+    /* private */ var dtype: js.Any = js.native
     
-    var min: js.Any = js.native
+    /* private */ var min: js.Any = js.native
     
     /* CompleteClass */
     override def nextValue(): Double = js.native
     
-    var random: js.Any = js.native
+    /* private */ var random: js.Any = js.native
     
-    var range: js.Any = js.native
+    /* private */ var range: js.Any = js.native
   }
   
-  @scala.inline
-  def expectArrayInMeanStdRange(actual: js.Array[Double], expectedMean: Double, expectedStdDev: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("expectArrayInMeanStdRange")(actual.asInstanceOf[js.Any], expectedMean.asInstanceOf[js.Any], expectedStdDev.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def expectArrayInMeanStdRange(actual: js.Array[Double], expectedMean: Double, expectedStdDev: Double, epsilon: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("expectArrayInMeanStdRange")(actual.asInstanceOf[js.Any], expectedMean.asInstanceOf[js.Any], expectedStdDev.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def expectArrayInMeanStdRange(actual: TypedArray, expectedMean: Double, expectedStdDev: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("expectArrayInMeanStdRange")(actual.asInstanceOf[js.Any], expectedMean.asInstanceOf[js.Any], expectedStdDev.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def expectArrayInMeanStdRange(actual: TypedArray, expectedMean: Double, expectedStdDev: Double, epsilon: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("expectArrayInMeanStdRange")(actual.asInstanceOf[js.Any], expectedMean.asInstanceOf[js.Any], expectedStdDev.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def expectArrayInMeanStdRange(actual: js.Array[Double], expectedMean: Double, expectedStdDev: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("expectArrayInMeanStdRange")(actual.asInstanceOf[js.Any], expectedMean.asInstanceOf[js.Any], expectedStdDev.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def expectArrayInMeanStdRange(actual: js.Array[Double], expectedMean: Double, expectedStdDev: Double, epsilon: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("expectArrayInMeanStdRange")(actual.asInstanceOf[js.Any], expectedMean.asInstanceOf[js.Any], expectedStdDev.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def expectArrayInMeanStdRange(actual: TypedArray, expectedMean: Double, expectedStdDev: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("expectArrayInMeanStdRange")(actual.asInstanceOf[js.Any], expectedMean.asInstanceOf[js.Any], expectedStdDev.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def expectArrayInMeanStdRange(actual: TypedArray, expectedMean: Double, expectedStdDev: Double, epsilon: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("expectArrayInMeanStdRange")(actual.asInstanceOf[js.Any], expectedMean.asInstanceOf[js.Any], expectedStdDev.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def jarqueBeraNormalityTest(values: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("jarqueBeraNormalityTest")(values.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def jarqueBeraNormalityTest(values: TypedArray): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("jarqueBeraNormalityTest")(values.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def jarqueBeraNormalityTest(values: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("jarqueBeraNormalityTest")(values.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def jarqueBeraNormalityTest(values: TypedArray): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("jarqueBeraNormalityTest")(values.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait RandGammaDataTypes extends StObject {
     
@@ -154,20 +148,16 @@ object randUtilMod {
   }
   object RandGammaDataTypes {
     
-    @scala.inline
-    def apply(float32: Float32Array, int32: Int32Array): RandGammaDataTypes = {
+    inline def apply(float32: Float32Array, int32: Int32Array): RandGammaDataTypes = {
       val __obj = js.Dynamic.literal(float32 = float32.asInstanceOf[js.Any], int32 = int32.asInstanceOf[js.Any])
       __obj.asInstanceOf[RandGammaDataTypes]
     }
     
-    @scala.inline
-    implicit class RandGammaDataTypesMutableBuilder[Self <: RandGammaDataTypes] (val x: Self) extends AnyVal {
+    extension [Self <: RandGammaDataTypes](x: Self) {
       
-      @scala.inline
-      def setFloat32(value: Float32Array): Self = StObject.set(x, "float32", value.asInstanceOf[js.Any])
+      inline def setFloat32(value: Float32Array): Self = StObject.set(x, "float32", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInt32(value: Int32Array): Self = StObject.set(x, "int32", value.asInstanceOf[js.Any])
+      inline def setInt32(value: Int32Array): Self = StObject.set(x, "int32", value.asInstanceOf[js.Any])
     }
   }
   
@@ -179,20 +169,16 @@ object randUtilMod {
   }
   object RandNormalDataTypes {
     
-    @scala.inline
-    def apply(float32: Float32Array, int32: Int32Array): RandNormalDataTypes = {
+    inline def apply(float32: Float32Array, int32: Int32Array): RandNormalDataTypes = {
       val __obj = js.Dynamic.literal(float32 = float32.asInstanceOf[js.Any], int32 = int32.asInstanceOf[js.Any])
       __obj.asInstanceOf[RandNormalDataTypes]
     }
     
-    @scala.inline
-    implicit class RandNormalDataTypesMutableBuilder[Self <: RandNormalDataTypes] (val x: Self) extends AnyVal {
+    extension [Self <: RandNormalDataTypes](x: Self) {
       
-      @scala.inline
-      def setFloat32(value: Float32Array): Self = StObject.set(x, "float32", value.asInstanceOf[js.Any])
+      inline def setFloat32(value: Float32Array): Self = StObject.set(x, "float32", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInt32(value: Int32Array): Self = StObject.set(x, "int32", value.asInstanceOf[js.Any])
+      inline def setInt32(value: Int32Array): Self = StObject.set(x, "int32", value.asInstanceOf[js.Any])
     }
   }
   
@@ -202,17 +188,14 @@ object randUtilMod {
   }
   object RandomBase {
     
-    @scala.inline
-    def apply(nextValue: () => Double): RandomBase = {
+    inline def apply(nextValue: () => Double): RandomBase = {
       val __obj = js.Dynamic.literal(nextValue = js.Any.fromFunction0(nextValue))
       __obj.asInstanceOf[RandomBase]
     }
     
-    @scala.inline
-    implicit class RandomBaseMutableBuilder[Self <: RandomBase] (val x: Self) extends AnyVal {
+    extension [Self <: RandomBase](x: Self) {
       
-      @scala.inline
-      def setNextValue(value: () => Double): Self = StObject.set(x, "nextValue", js.Any.fromFunction0(value))
+      inline def setNextValue(value: () => Double): Self = StObject.set(x, "nextValue", js.Any.fromFunction0(value))
     }
   }
   
@@ -222,17 +205,14 @@ object randUtilMod {
   }
   object RandomGamma {
     
-    @scala.inline
-    def apply(nextValue: () => Double): RandomGamma = {
+    inline def apply(nextValue: () => Double): RandomGamma = {
       val __obj = js.Dynamic.literal(nextValue = js.Any.fromFunction0(nextValue))
       __obj.asInstanceOf[RandomGamma]
     }
     
-    @scala.inline
-    implicit class RandomGammaMutableBuilder[Self <: RandomGamma] (val x: Self) extends AnyVal {
+    extension [Self <: RandomGamma](x: Self) {
       
-      @scala.inline
-      def setNextValue(value: () => Double): Self = StObject.set(x, "nextValue", js.Any.fromFunction0(value))
+      inline def setNextValue(value: () => Double): Self = StObject.set(x, "nextValue", js.Any.fromFunction0(value))
     }
   }
 }

@@ -18,22 +18,17 @@ trait InstanceDefinition extends StObject {
 }
 object InstanceDefinition {
   
-  @scala.inline
-  def apply(InstanceType: GameServerGroupInstanceType): InstanceDefinition = {
+  inline def apply(InstanceType: GameServerGroupInstanceType): InstanceDefinition = {
     val __obj = js.Dynamic.literal(InstanceType = InstanceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceDefinition]
   }
   
-  @scala.inline
-  implicit class InstanceDefinitionMutableBuilder[Self <: InstanceDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceDefinition](x: Self) {
     
-    @scala.inline
-    def setInstanceType(value: GameServerGroupInstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: GameServerGroupInstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightedCapacity(value: WeightedCapacity): Self = StObject.set(x, "WeightedCapacity", value.asInstanceOf[js.Any])
+    inline def setWeightedCapacity(value: WeightedCapacity): Self = StObject.set(x, "WeightedCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightedCapacityUndefined: Self = StObject.set(x, "WeightedCapacity", js.undefined)
+    inline def setWeightedCapacityUndefined: Self = StObject.set(x, "WeightedCapacity", js.undefined)
   }
 }

@@ -15,22 +15,17 @@ trait IntentCollection extends StObject {
 }
 object IntentCollection {
   
-  @scala.inline
-  def apply(intents: js.Array[Intent], pagination: Pagination): IntentCollection = {
+  inline def apply(intents: js.Array[Intent], pagination: Pagination): IntentCollection = {
     val __obj = js.Dynamic.literal(intents = intents.asInstanceOf[js.Any], pagination = pagination.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntentCollection]
   }
   
-  @scala.inline
-  implicit class IntentCollectionMutableBuilder[Self <: IntentCollection] (val x: Self) extends AnyVal {
+  extension [Self <: IntentCollection](x: Self) {
     
-    @scala.inline
-    def setIntents(value: js.Array[Intent]): Self = StObject.set(x, "intents", value.asInstanceOf[js.Any])
+    inline def setIntents(value: js.Array[Intent]): Self = StObject.set(x, "intents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntentsVarargs(value: Intent*): Self = StObject.set(x, "intents", js.Array(value :_*))
+    inline def setIntentsVarargs(value: Intent*): Self = StObject.set(x, "intents", js.Array(value :_*))
     
-    @scala.inline
-    def setPagination(value: Pagination): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
+    inline def setPagination(value: Pagination): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
   }
 }

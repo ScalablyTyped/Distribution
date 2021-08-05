@@ -23,17 +23,12 @@ object featureMod {
     extends StObject
        with FeatureFormat
   
-  @scala.inline
-  def transformExtentWithOptions(extent: Extent): Extent = ^.asInstanceOf[js.Dynamic].applyDynamic("transformExtentWithOptions")(extent.asInstanceOf[js.Any]).asInstanceOf[Extent]
-  @scala.inline
-  def transformExtentWithOptions(extent: Extent, opt_options: ReadOptions): Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("transformExtentWithOptions")(extent.asInstanceOf[js.Any], opt_options.asInstanceOf[js.Any])).asInstanceOf[Extent]
+  inline def transformExtentWithOptions(extent: Extent): Extent = ^.asInstanceOf[js.Dynamic].applyDynamic("transformExtentWithOptions")(extent.asInstanceOf[js.Any]).asInstanceOf[Extent]
+  inline def transformExtentWithOptions(extent: Extent, opt_options: ReadOptions): Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("transformExtentWithOptions")(extent.asInstanceOf[js.Any], opt_options.asInstanceOf[js.Any])).asInstanceOf[Extent]
   
-  @scala.inline
-  def transformGeometryWithOptions(geometry: typings.ol.geometryMod.default, write: Boolean): typings.ol.geometryMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("transformGeometryWithOptions")(geometry.asInstanceOf[js.Any], write.asInstanceOf[js.Any])).asInstanceOf[typings.ol.geometryMod.default]
-  @scala.inline
-  def transformGeometryWithOptions(geometry: typings.ol.geometryMod.default, write: Boolean, opt_options: ReadOptions): typings.ol.geometryMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("transformGeometryWithOptions")(geometry.asInstanceOf[js.Any], write.asInstanceOf[js.Any], opt_options.asInstanceOf[js.Any])).asInstanceOf[typings.ol.geometryMod.default]
-  @scala.inline
-  def transformGeometryWithOptions(geometry: typings.ol.geometryMod.default, write: Boolean, opt_options: WriteOptions): typings.ol.geometryMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("transformGeometryWithOptions")(geometry.asInstanceOf[js.Any], write.asInstanceOf[js.Any], opt_options.asInstanceOf[js.Any])).asInstanceOf[typings.ol.geometryMod.default]
+  inline def transformGeometryWithOptions(geometry: typings.ol.geometryMod.default, write: Boolean): typings.ol.geometryMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("transformGeometryWithOptions")(geometry.asInstanceOf[js.Any], write.asInstanceOf[js.Any])).asInstanceOf[typings.ol.geometryMod.default]
+  inline def transformGeometryWithOptions(geometry: typings.ol.geometryMod.default, write: Boolean, opt_options: ReadOptions): typings.ol.geometryMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("transformGeometryWithOptions")(geometry.asInstanceOf[js.Any], write.asInstanceOf[js.Any], opt_options.asInstanceOf[js.Any])).asInstanceOf[typings.ol.geometryMod.default]
+  inline def transformGeometryWithOptions(geometry: typings.ol.geometryMod.default, write: Boolean, opt_options: WriteOptions): typings.ol.geometryMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("transformGeometryWithOptions")(geometry.asInstanceOf[js.Any], write.asInstanceOf[js.Any], opt_options.asInstanceOf[js.Any])).asInstanceOf[typings.ol.geometryMod.default]
   
   @js.native
   trait FeatureFormat extends StObject {
@@ -46,9 +41,9 @@ object featureMod {
     /* protected */ def adaptOptions(options: ReadOptions): js.UndefOr[WriteOptions | ReadOptions] = js.native
     /* protected */ def adaptOptions(options: WriteOptions): js.UndefOr[WriteOptions | ReadOptions] = js.native
     
-    var dataProjection: typings.ol.projectionMod.default = js.native
+    /* protected */ var dataProjection: typings.ol.projectionMod.default = js.native
     
-    var defaultFeatureProjection: typings.ol.projectionMod.default = js.native
+    /* protected */ var defaultFeatureProjection: typings.ol.projectionMod.default = js.native
     
     /* protected */ def getReadOptions(source: String): js.UndefOr[ReadOptions] = js.native
     /* protected */ def getReadOptions(source: String, opt_options: ReadOptions): js.UndefOr[ReadOptions] = js.native
@@ -145,32 +140,24 @@ object featureMod {
   }
   object ReadOptions {
     
-    @scala.inline
-    def apply(): ReadOptions = {
+    inline def apply(): ReadOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReadOptions]
     }
     
-    @scala.inline
-    implicit class ReadOptionsMutableBuilder[Self <: ReadOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ReadOptions](x: Self) {
       
-      @scala.inline
-      def setDataProjection(value: ProjectionLike): Self = StObject.set(x, "dataProjection", value.asInstanceOf[js.Any])
+      inline def setDataProjection(value: ProjectionLike): Self = StObject.set(x, "dataProjection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataProjectionUndefined: Self = StObject.set(x, "dataProjection", js.undefined)
+      inline def setDataProjectionUndefined: Self = StObject.set(x, "dataProjection", js.undefined)
       
-      @scala.inline
-      def setExtent(value: Extent): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
+      inline def setExtent(value: Extent): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
+      inline def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
       
-      @scala.inline
-      def setFeatureProjection(value: ProjectionLike): Self = StObject.set(x, "featureProjection", value.asInstanceOf[js.Any])
+      inline def setFeatureProjection(value: ProjectionLike): Self = StObject.set(x, "featureProjection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeatureProjectionUndefined: Self = StObject.set(x, "featureProjection", js.undefined)
+      inline def setFeatureProjectionUndefined: Self = StObject.set(x, "featureProjection", js.undefined)
     }
   }
   
@@ -186,38 +173,28 @@ object featureMod {
   }
   object WriteOptions {
     
-    @scala.inline
-    def apply(): WriteOptions = {
+    inline def apply(): WriteOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WriteOptions]
     }
     
-    @scala.inline
-    implicit class WriteOptionsMutableBuilder[Self <: WriteOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WriteOptions](x: Self) {
       
-      @scala.inline
-      def setDataProjection(value: ProjectionLike): Self = StObject.set(x, "dataProjection", value.asInstanceOf[js.Any])
+      inline def setDataProjection(value: ProjectionLike): Self = StObject.set(x, "dataProjection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataProjectionUndefined: Self = StObject.set(x, "dataProjection", js.undefined)
+      inline def setDataProjectionUndefined: Self = StObject.set(x, "dataProjection", js.undefined)
       
-      @scala.inline
-      def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
+      inline def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecimalsUndefined: Self = StObject.set(x, "decimals", js.undefined)
+      inline def setDecimalsUndefined: Self = StObject.set(x, "decimals", js.undefined)
       
-      @scala.inline
-      def setFeatureProjection(value: ProjectionLike): Self = StObject.set(x, "featureProjection", value.asInstanceOf[js.Any])
+      inline def setFeatureProjection(value: ProjectionLike): Self = StObject.set(x, "featureProjection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeatureProjectionUndefined: Self = StObject.set(x, "featureProjection", js.undefined)
+      inline def setFeatureProjectionUndefined: Self = StObject.set(x, "featureProjection", js.undefined)
       
-      @scala.inline
-      def setRightHanded(value: Boolean): Self = StObject.set(x, "rightHanded", value.asInstanceOf[js.Any])
+      inline def setRightHanded(value: Boolean): Self = StObject.set(x, "rightHanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightHandedUndefined: Self = StObject.set(x, "rightHanded", js.undefined)
+      inline def setRightHandedUndefined: Self = StObject.set(x, "rightHanded", js.undefined)
     }
   }
 }

@@ -22,19 +22,15 @@ trait ChainArrayElement extends StObject {
 }
 object ChainArrayElement {
   
-  @scala.inline
-  def apply(backref: Double | String, regexp: RegExp): ChainArrayElement = {
+  inline def apply(backref: Double | String, regexp: RegExp): ChainArrayElement = {
     val __obj = js.Dynamic.literal(backref = backref.asInstanceOf[js.Any], regexp = regexp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChainArrayElement]
   }
   
-  @scala.inline
-  implicit class ChainArrayElementMutableBuilder[Self <: ChainArrayElement] (val x: Self) extends AnyVal {
+  extension [Self <: ChainArrayElement](x: Self) {
     
-    @scala.inline
-    def setBackref(value: Double | String): Self = StObject.set(x, "backref", value.asInstanceOf[js.Any])
+    inline def setBackref(value: Double | String): Self = StObject.set(x, "backref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegexp(value: RegExp): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
+    inline def setRegexp(value: RegExp): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
   }
 }

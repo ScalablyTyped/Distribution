@@ -24,31 +24,23 @@ trait Metric extends StObject {
 }
 object Metric {
   
-  @scala.inline
-  def apply(): Metric = {
+  inline def apply(): Metric = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Metric]
   }
   
-  @scala.inline
-  implicit class MetricMutableBuilder[Self <: Metric] (val x: Self) extends AnyVal {
+  extension [Self <: Metric](x: Self) {
     
-    @scala.inline
-    def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+    inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+    inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
     
-    @scala.inline
-    def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
+    inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
     
-    @scala.inline
-    def setFormattingType(value: String): Self = StObject.set(x, "formattingType", value.asInstanceOf[js.Any])
+    inline def setFormattingType(value: String): Self = StObject.set(x, "formattingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormattingTypeUndefined: Self = StObject.set(x, "formattingType", js.undefined)
+    inline def setFormattingTypeUndefined: Self = StObject.set(x, "formattingType", js.undefined)
   }
 }

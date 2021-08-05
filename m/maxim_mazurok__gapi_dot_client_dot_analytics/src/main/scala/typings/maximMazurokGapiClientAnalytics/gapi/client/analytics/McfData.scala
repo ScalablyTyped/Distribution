@@ -68,113 +68,79 @@ trait McfData extends StObject {
 }
 object McfData {
   
-  @scala.inline
-  def apply(): McfData = {
+  inline def apply(): McfData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[McfData]
   }
   
-  @scala.inline
-  implicit class McfDataMutableBuilder[Self <: McfData] (val x: Self) extends AnyVal {
+  extension [Self <: McfData](x: Self) {
     
-    @scala.inline
-    def setColumnHeaders(value: js.Array[ColumnType]): Self = StObject.set(x, "columnHeaders", value.asInstanceOf[js.Any])
+    inline def setColumnHeaders(value: js.Array[ColumnType]): Self = StObject.set(x, "columnHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnHeadersUndefined: Self = StObject.set(x, "columnHeaders", js.undefined)
+    inline def setColumnHeadersUndefined: Self = StObject.set(x, "columnHeaders", js.undefined)
     
-    @scala.inline
-    def setColumnHeadersVarargs(value: ColumnType*): Self = StObject.set(x, "columnHeaders", js.Array(value :_*))
+    inline def setColumnHeadersVarargs(value: ColumnType*): Self = StObject.set(x, "columnHeaders", js.Array(value :_*))
     
-    @scala.inline
-    def setContainsSampledData(value: Boolean): Self = StObject.set(x, "containsSampledData", value.asInstanceOf[js.Any])
+    inline def setContainsSampledData(value: Boolean): Self = StObject.set(x, "containsSampledData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainsSampledDataUndefined: Self = StObject.set(x, "containsSampledData", js.undefined)
+    inline def setContainsSampledDataUndefined: Self = StObject.set(x, "containsSampledData", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setItemsPerPage(value: Double): Self = StObject.set(x, "itemsPerPage", value.asInstanceOf[js.Any])
+    inline def setItemsPerPage(value: Double): Self = StObject.set(x, "itemsPerPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsPerPageUndefined: Self = StObject.set(x, "itemsPerPage", js.undefined)
+    inline def setItemsPerPageUndefined: Self = StObject.set(x, "itemsPerPage", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNextLink(value: String): Self = StObject.set(x, "nextLink", value.asInstanceOf[js.Any])
+    inline def setNextLink(value: String): Self = StObject.set(x, "nextLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextLinkUndefined: Self = StObject.set(x, "nextLink", js.undefined)
+    inline def setNextLinkUndefined: Self = StObject.set(x, "nextLink", js.undefined)
     
-    @scala.inline
-    def setPreviousLink(value: String): Self = StObject.set(x, "previousLink", value.asInstanceOf[js.Any])
+    inline def setPreviousLink(value: String): Self = StObject.set(x, "previousLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousLinkUndefined: Self = StObject.set(x, "previousLink", js.undefined)
+    inline def setPreviousLinkUndefined: Self = StObject.set(x, "previousLink", js.undefined)
     
-    @scala.inline
-    def setProfileInfo(value: AccountId): Self = StObject.set(x, "profileInfo", value.asInstanceOf[js.Any])
+    inline def setProfileInfo(value: AccountId): Self = StObject.set(x, "profileInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileInfoUndefined: Self = StObject.set(x, "profileInfo", js.undefined)
+    inline def setProfileInfoUndefined: Self = StObject.set(x, "profileInfo", js.undefined)
     
-    @scala.inline
-    def setQuery(value: Dimensions): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: Dimensions): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setRows(value: js.Array[js.Array[ConversionPathValue]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[js.Array[ConversionPathValue]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    @scala.inline
-    def setRowsVarargs(value: js.Array[ConversionPathValue]*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: js.Array[ConversionPathValue]*): Self = StObject.set(x, "rows", js.Array(value :_*))
     
-    @scala.inline
-    def setSampleSize(value: String): Self = StObject.set(x, "sampleSize", value.asInstanceOf[js.Any])
+    inline def setSampleSize(value: String): Self = StObject.set(x, "sampleSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleSizeUndefined: Self = StObject.set(x, "sampleSize", js.undefined)
+    inline def setSampleSizeUndefined: Self = StObject.set(x, "sampleSize", js.undefined)
     
-    @scala.inline
-    def setSampleSpace(value: String): Self = StObject.set(x, "sampleSpace", value.asInstanceOf[js.Any])
+    inline def setSampleSpace(value: String): Self = StObject.set(x, "sampleSpace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleSpaceUndefined: Self = StObject.set(x, "sampleSpace", js.undefined)
+    inline def setSampleSpaceUndefined: Self = StObject.set(x, "sampleSpace", js.undefined)
     
-    @scala.inline
-    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+    inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+    inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
-    @scala.inline
-    def setTotalResults(value: Double): Self = StObject.set(x, "totalResults", value.asInstanceOf[js.Any])
+    inline def setTotalResults(value: Double): Self = StObject.set(x, "totalResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalResultsUndefined: Self = StObject.set(x, "totalResults", js.undefined)
+    inline def setTotalResultsUndefined: Self = StObject.set(x, "totalResults", js.undefined)
     
-    @scala.inline
-    def setTotalsForAllResults(
+    inline def setTotalsForAllResults(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientAnalytics.maximMazurokGapiClientAnalyticsStrings.McfData & TopLevel[js.Any]
     ): Self = StObject.set(x, "totalsForAllResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalsForAllResultsUndefined: Self = StObject.set(x, "totalsForAllResults", js.undefined)
+    inline def setTotalsForAllResultsUndefined: Self = StObject.set(x, "totalsForAllResults", js.undefined)
   }
 }

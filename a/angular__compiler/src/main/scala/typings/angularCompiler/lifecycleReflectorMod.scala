@@ -73,9 +73,7 @@ object lifecycleReflectorMod {
     /* 0 */ val OnInit: typings.angularCompiler.lifecycleReflectorMod.LifecycleHooks.OnInit & Double = js.native
   }
   
-  @scala.inline
-  def getAllLifecycleHooks(reflector: CompileReflector, token: js.Any): js.Array[LifecycleHooks] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAllLifecycleHooks")(reflector.asInstanceOf[js.Any], token.asInstanceOf[js.Any])).asInstanceOf[js.Array[LifecycleHooks]]
+  inline def getAllLifecycleHooks(reflector: CompileReflector, token: js.Any): js.Array[LifecycleHooks] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAllLifecycleHooks")(reflector.asInstanceOf[js.Any], token.asInstanceOf[js.Any])).asInstanceOf[js.Array[LifecycleHooks]]
   
-  @scala.inline
-  def hasLifecycleHook(reflector: CompileReflector, hook: LifecycleHooks, token: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasLifecycleHook")(reflector.asInstanceOf[js.Any], hook.asInstanceOf[js.Any], token.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def hasLifecycleHook(reflector: CompileReflector, hook: LifecycleHooks, token: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasLifecycleHook")(reflector.asInstanceOf[js.Any], hook.asInstanceOf[js.Any], token.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

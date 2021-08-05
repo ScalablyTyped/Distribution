@@ -12,19 +12,15 @@ trait RetrieveMessage extends StObject {
 }
 object RetrieveMessage {
   
-  @scala.inline
-  def apply(fileName: String, problem: String): RetrieveMessage = {
+  inline def apply(fileName: String, problem: String): RetrieveMessage = {
     val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], problem = problem.asInstanceOf[js.Any])
     __obj.asInstanceOf[RetrieveMessage]
   }
   
-  @scala.inline
-  implicit class RetrieveMessageMutableBuilder[Self <: RetrieveMessage] (val x: Self) extends AnyVal {
+  extension [Self <: RetrieveMessage](x: Self) {
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProblem(value: String): Self = StObject.set(x, "problem", value.asInstanceOf[js.Any])
+    inline def setProblem(value: String): Self = StObject.set(x, "problem", value.asInstanceOf[js.Any])
   }
 }

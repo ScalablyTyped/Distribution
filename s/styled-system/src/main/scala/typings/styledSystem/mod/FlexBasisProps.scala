@@ -14,25 +14,19 @@ trait FlexBasisProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extend
 }
 object FlexBasisProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): FlexBasisProps[ThemeType, TVal] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): FlexBasisProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FlexBasisProps[ThemeType, TVal]]
   }
   
-  @scala.inline
-  implicit class FlexBasisPropsMutableBuilder[Self <: FlexBasisProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (FlexBasisProps[ThemeType, TVal])) extends AnyVal {
+  extension [Self <: FlexBasisProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (FlexBasisProps[ThemeType, TVal])) {
     
-    @scala.inline
-    def setFlexBasis(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "flexBasis", value.asInstanceOf[js.Any])
+    inline def setFlexBasis(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "flexBasis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlexBasisNull: Self = StObject.set(x, "flexBasis", null)
+    inline def setFlexBasisNull: Self = StObject.set(x, "flexBasis", null)
     
-    @scala.inline
-    def setFlexBasisUndefined: Self = StObject.set(x, "flexBasis", js.undefined)
+    inline def setFlexBasisUndefined: Self = StObject.set(x, "flexBasis", js.undefined)
     
-    @scala.inline
-    def setFlexBasisVarargs(value: (TVal | Null)*): Self = StObject.set(x, "flexBasis", js.Array(value :_*))
+    inline def setFlexBasisVarargs(value: (TVal | Null)*): Self = StObject.set(x, "flexBasis", js.Array(value :_*))
   }
 }

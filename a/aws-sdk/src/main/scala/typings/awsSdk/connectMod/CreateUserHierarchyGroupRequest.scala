@@ -23,25 +23,19 @@ trait CreateUserHierarchyGroupRequest extends StObject {
 }
 object CreateUserHierarchyGroupRequest {
   
-  @scala.inline
-  def apply(InstanceId: InstanceId, Name: HierarchyGroupName): CreateUserHierarchyGroupRequest = {
+  inline def apply(InstanceId: InstanceId, Name: HierarchyGroupName): CreateUserHierarchyGroupRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateUserHierarchyGroupRequest]
   }
   
-  @scala.inline
-  implicit class CreateUserHierarchyGroupRequestMutableBuilder[Self <: CreateUserHierarchyGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateUserHierarchyGroupRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: HierarchyGroupName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: HierarchyGroupName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentGroupId(value: HierarchyGroupId): Self = StObject.set(x, "ParentGroupId", value.asInstanceOf[js.Any])
+    inline def setParentGroupId(value: HierarchyGroupId): Self = StObject.set(x, "ParentGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentGroupIdUndefined: Self = StObject.set(x, "ParentGroupId", js.undefined)
+    inline def setParentGroupIdUndefined: Self = StObject.set(x, "ParentGroupId", js.undefined)
   }
 }

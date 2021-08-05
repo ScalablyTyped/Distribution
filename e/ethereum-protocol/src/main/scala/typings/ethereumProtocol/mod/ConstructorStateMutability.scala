@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConstructorStateMutability extends StObject
 object ConstructorStateMutability {
   
-  @scala.inline
-  def nonpayable: typings.ethereumProtocol.ethereumProtocolStrings.nonpayable = "nonpayable".asInstanceOf[typings.ethereumProtocol.ethereumProtocolStrings.nonpayable]
+  inline def nonpayable: typings.ethereumProtocol.ethereumProtocolStrings.nonpayable = "nonpayable".asInstanceOf[typings.ethereumProtocol.ethereumProtocolStrings.nonpayable]
   
-  @scala.inline
-  def payable: typings.ethereumProtocol.ethereumProtocolStrings.payable = "payable".asInstanceOf[typings.ethereumProtocol.ethereumProtocolStrings.payable]
+  inline def payable: typings.ethereumProtocol.ethereumProtocolStrings.payable = "payable".asInstanceOf[typings.ethereumProtocol.ethereumProtocolStrings.payable]
 }

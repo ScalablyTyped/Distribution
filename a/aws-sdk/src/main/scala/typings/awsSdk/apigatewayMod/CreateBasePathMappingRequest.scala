@@ -28,31 +28,23 @@ trait CreateBasePathMappingRequest extends StObject {
 }
 object CreateBasePathMappingRequest {
   
-  @scala.inline
-  def apply(domainName: String, restApiId: String): CreateBasePathMappingRequest = {
+  inline def apply(domainName: String, restApiId: String): CreateBasePathMappingRequest = {
     val __obj = js.Dynamic.literal(domainName = domainName.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateBasePathMappingRequest]
   }
   
-  @scala.inline
-  implicit class CreateBasePathMappingRequestMutableBuilder[Self <: CreateBasePathMappingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateBasePathMappingRequest](x: Self) {
     
-    @scala.inline
-    def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
+    inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
+    inline def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
     
-    @scala.inline
-    def setDomainName(value: String): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: String): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
+    inline def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStage(value: String): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
+    inline def setStage(value: String): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStageUndefined: Self = StObject.set(x, "stage", js.undefined)
+    inline def setStageUndefined: Self = StObject.set(x, "stage", js.undefined)
   }
 }

@@ -54,52 +54,37 @@ trait DaylightProperties
 }
 object DaylightProperties {
   
-  @scala.inline
-  def apply(): DaylightProperties = {
+  inline def apply(): DaylightProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DaylightProperties]
   }
   
-  @scala.inline
-  implicit class DaylightPropertiesMutableBuilder[Self <: DaylightProperties] (val x: Self) extends AnyVal {
+  extension [Self <: DaylightProperties](x: Self) {
     
-    @scala.inline
-    def setDateOrSeason(value: season | date): Self = StObject.set(x, "dateOrSeason", value.asInstanceOf[js.Any])
+    inline def setDateOrSeason(value: season | date): Self = StObject.set(x, "dateOrSeason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateOrSeasonUndefined: Self = StObject.set(x, "dateOrSeason", js.undefined)
+    inline def setDateOrSeasonUndefined: Self = StObject.set(x, "dateOrSeason", js.undefined)
     
-    @scala.inline
-    def setPlaySpeedMultiplier(value: Double): Self = StObject.set(x, "playSpeedMultiplier", value.asInstanceOf[js.Any])
+    inline def setPlaySpeedMultiplier(value: Double): Self = StObject.set(x, "playSpeedMultiplier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaySpeedMultiplierUndefined: Self = StObject.set(x, "playSpeedMultiplier", js.undefined)
+    inline def setPlaySpeedMultiplierUndefined: Self = StObject.set(x, "playSpeedMultiplier", js.undefined)
     
-    @scala.inline
-    def setTimeSliderSteps(value: Double | js.Array[Double]): Self = StObject.set(x, "timeSliderSteps", value.asInstanceOf[js.Any])
+    inline def setTimeSliderSteps(value: Double | js.Array[Double]): Self = StObject.set(x, "timeSliderSteps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeSliderStepsUndefined: Self = StObject.set(x, "timeSliderSteps", js.undefined)
+    inline def setTimeSliderStepsUndefined: Self = StObject.set(x, "timeSliderSteps", js.undefined)
     
-    @scala.inline
-    def setTimeSliderStepsVarargs(value: Double*): Self = StObject.set(x, "timeSliderSteps", js.Array(value :_*))
+    inline def setTimeSliderStepsVarargs(value: Double*): Self = StObject.set(x, "timeSliderSteps", js.Array(value :_*))
     
-    @scala.inline
-    def setView(value: SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewModel(value: DaylightViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
+    inline def setViewModel(value: DaylightViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
+    inline def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
     
-    @scala.inline
-    def setVisibleElements(value: DaylightVisibleElements): Self = StObject.set(x, "visibleElements", value.asInstanceOf[js.Any])
+    inline def setVisibleElements(value: DaylightVisibleElements): Self = StObject.set(x, "visibleElements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleElementsUndefined: Self = StObject.set(x, "visibleElements", js.undefined)
+    inline def setVisibleElementsUndefined: Self = StObject.set(x, "visibleElements", js.undefined)
   }
 }

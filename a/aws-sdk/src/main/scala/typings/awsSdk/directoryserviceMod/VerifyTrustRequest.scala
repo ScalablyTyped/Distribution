@@ -13,16 +13,13 @@ trait VerifyTrustRequest extends StObject {
 }
 object VerifyTrustRequest {
   
-  @scala.inline
-  def apply(TrustId: TrustId): VerifyTrustRequest = {
+  inline def apply(TrustId: TrustId): VerifyTrustRequest = {
     val __obj = js.Dynamic.literal(TrustId = TrustId.asInstanceOf[js.Any])
     __obj.asInstanceOf[VerifyTrustRequest]
   }
   
-  @scala.inline
-  implicit class VerifyTrustRequestMutableBuilder[Self <: VerifyTrustRequest] (val x: Self) extends AnyVal {
+  extension [Self <: VerifyTrustRequest](x: Self) {
     
-    @scala.inline
-    def setTrustId(value: TrustId): Self = StObject.set(x, "TrustId", value.asInstanceOf[js.Any])
+    inline def setTrustId(value: TrustId): Self = StObject.set(x, "TrustId", value.asInstanceOf[js.Any])
   }
 }

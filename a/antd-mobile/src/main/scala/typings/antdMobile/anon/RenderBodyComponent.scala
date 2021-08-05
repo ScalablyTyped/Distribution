@@ -17,8 +17,7 @@ trait RenderBodyComponent extends StObject {
 }
 object RenderBodyComponent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     renderBodyComponent: () => Element,
     renderFooter: js.Any,
     renderHeader: js.Any,
@@ -28,19 +27,14 @@ object RenderBodyComponent {
     __obj.asInstanceOf[RenderBodyComponent]
   }
   
-  @scala.inline
-  implicit class RenderBodyComponentMutableBuilder[Self <: RenderBodyComponent] (val x: Self) extends AnyVal {
+  extension [Self <: RenderBodyComponent](x: Self) {
     
-    @scala.inline
-    def setRenderBodyComponent(value: () => Element): Self = StObject.set(x, "renderBodyComponent", js.Any.fromFunction0(value))
+    inline def setRenderBodyComponent(value: () => Element): Self = StObject.set(x, "renderBodyComponent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRenderFooter(value: js.Any): Self = StObject.set(x, "renderFooter", value.asInstanceOf[js.Any])
+    inline def setRenderFooter(value: js.Any): Self = StObject.set(x, "renderFooter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderHeader(value: js.Any): Self = StObject.set(x, "renderHeader", value.asInstanceOf[js.Any])
+    inline def setRenderHeader(value: js.Any): Self = StObject.set(x, "renderHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderSectionHeader(value: js.Any): Self = StObject.set(x, "renderSectionHeader", value.asInstanceOf[js.Any])
+    inline def setRenderSectionHeader(value: js.Any): Self = StObject.set(x, "renderSectionHeader", value.asInstanceOf[js.Any])
   }
 }

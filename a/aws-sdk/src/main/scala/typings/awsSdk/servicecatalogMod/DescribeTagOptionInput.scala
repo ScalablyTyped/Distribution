@@ -13,16 +13,13 @@ trait DescribeTagOptionInput extends StObject {
 }
 object DescribeTagOptionInput {
   
-  @scala.inline
-  def apply(Id: TagOptionId): DescribeTagOptionInput = {
+  inline def apply(Id: TagOptionId): DescribeTagOptionInput = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTagOptionInput]
   }
   
-  @scala.inline
-  implicit class DescribeTagOptionInputMutableBuilder[Self <: DescribeTagOptionInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTagOptionInput](x: Self) {
     
-    @scala.inline
-    def setId(value: TagOptionId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: TagOptionId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

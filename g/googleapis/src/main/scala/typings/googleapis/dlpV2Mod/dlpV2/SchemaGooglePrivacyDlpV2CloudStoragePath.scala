@@ -17,19 +17,15 @@ trait SchemaGooglePrivacyDlpV2CloudStoragePath extends StObject {
 }
 object SchemaGooglePrivacyDlpV2CloudStoragePath {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2CloudStoragePath = {
+  inline def apply(): SchemaGooglePrivacyDlpV2CloudStoragePath = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2CloudStoragePath]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2CloudStoragePathMutableBuilder[Self <: SchemaGooglePrivacyDlpV2CloudStoragePath] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2CloudStoragePath](x: Self) {
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
   }
 }

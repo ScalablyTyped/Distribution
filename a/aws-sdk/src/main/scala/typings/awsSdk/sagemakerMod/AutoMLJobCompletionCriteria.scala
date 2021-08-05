@@ -23,31 +23,23 @@ trait AutoMLJobCompletionCriteria extends StObject {
 }
 object AutoMLJobCompletionCriteria {
   
-  @scala.inline
-  def apply(): AutoMLJobCompletionCriteria = {
+  inline def apply(): AutoMLJobCompletionCriteria = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoMLJobCompletionCriteria]
   }
   
-  @scala.inline
-  implicit class AutoMLJobCompletionCriteriaMutableBuilder[Self <: AutoMLJobCompletionCriteria] (val x: Self) extends AnyVal {
+  extension [Self <: AutoMLJobCompletionCriteria](x: Self) {
     
-    @scala.inline
-    def setMaxAutoMLJobRuntimeInSeconds(value: MaxAutoMLJobRuntimeInSeconds): Self = StObject.set(x, "MaxAutoMLJobRuntimeInSeconds", value.asInstanceOf[js.Any])
+    inline def setMaxAutoMLJobRuntimeInSeconds(value: MaxAutoMLJobRuntimeInSeconds): Self = StObject.set(x, "MaxAutoMLJobRuntimeInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxAutoMLJobRuntimeInSecondsUndefined: Self = StObject.set(x, "MaxAutoMLJobRuntimeInSeconds", js.undefined)
+    inline def setMaxAutoMLJobRuntimeInSecondsUndefined: Self = StObject.set(x, "MaxAutoMLJobRuntimeInSeconds", js.undefined)
     
-    @scala.inline
-    def setMaxCandidates(value: MaxCandidates): Self = StObject.set(x, "MaxCandidates", value.asInstanceOf[js.Any])
+    inline def setMaxCandidates(value: MaxCandidates): Self = StObject.set(x, "MaxCandidates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxCandidatesUndefined: Self = StObject.set(x, "MaxCandidates", js.undefined)
+    inline def setMaxCandidatesUndefined: Self = StObject.set(x, "MaxCandidates", js.undefined)
     
-    @scala.inline
-    def setMaxRuntimePerTrainingJobInSeconds(value: MaxRuntimePerTrainingJobInSeconds): Self = StObject.set(x, "MaxRuntimePerTrainingJobInSeconds", value.asInstanceOf[js.Any])
+    inline def setMaxRuntimePerTrainingJobInSeconds(value: MaxRuntimePerTrainingJobInSeconds): Self = StObject.set(x, "MaxRuntimePerTrainingJobInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRuntimePerTrainingJobInSecondsUndefined: Self = StObject.set(x, "MaxRuntimePerTrainingJobInSeconds", js.undefined)
+    inline def setMaxRuntimePerTrainingJobInSecondsUndefined: Self = StObject.set(x, "MaxRuntimePerTrainingJobInSeconds", js.undefined)
   }
 }

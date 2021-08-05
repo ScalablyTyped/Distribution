@@ -18,28 +18,21 @@ trait ListCostCategoryDefinitionsResponse extends StObject {
 }
 object ListCostCategoryDefinitionsResponse {
   
-  @scala.inline
-  def apply(): ListCostCategoryDefinitionsResponse = {
+  inline def apply(): ListCostCategoryDefinitionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListCostCategoryDefinitionsResponse]
   }
   
-  @scala.inline
-  implicit class ListCostCategoryDefinitionsResponseMutableBuilder[Self <: ListCostCategoryDefinitionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListCostCategoryDefinitionsResponse](x: Self) {
     
-    @scala.inline
-    def setCostCategoryReferences(value: CostCategoryReferencesList): Self = StObject.set(x, "CostCategoryReferences", value.asInstanceOf[js.Any])
+    inline def setCostCategoryReferences(value: CostCategoryReferencesList): Self = StObject.set(x, "CostCategoryReferences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCostCategoryReferencesUndefined: Self = StObject.set(x, "CostCategoryReferences", js.undefined)
+    inline def setCostCategoryReferencesUndefined: Self = StObject.set(x, "CostCategoryReferences", js.undefined)
     
-    @scala.inline
-    def setCostCategoryReferencesVarargs(value: CostCategoryReference*): Self = StObject.set(x, "CostCategoryReferences", js.Array(value :_*))
+    inline def setCostCategoryReferencesVarargs(value: CostCategoryReference*): Self = StObject.set(x, "CostCategoryReferences", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextPageToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextPageToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

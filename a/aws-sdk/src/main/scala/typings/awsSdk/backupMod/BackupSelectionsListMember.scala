@@ -38,49 +38,35 @@ trait BackupSelectionsListMember extends StObject {
 }
 object BackupSelectionsListMember {
   
-  @scala.inline
-  def apply(): BackupSelectionsListMember = {
+  inline def apply(): BackupSelectionsListMember = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BackupSelectionsListMember]
   }
   
-  @scala.inline
-  implicit class BackupSelectionsListMemberMutableBuilder[Self <: BackupSelectionsListMember] (val x: Self) extends AnyVal {
+  extension [Self <: BackupSelectionsListMember](x: Self) {
     
-    @scala.inline
-    def setBackupPlanId(value: String): Self = StObject.set(x, "BackupPlanId", value.asInstanceOf[js.Any])
+    inline def setBackupPlanId(value: String): Self = StObject.set(x, "BackupPlanId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupPlanIdUndefined: Self = StObject.set(x, "BackupPlanId", js.undefined)
+    inline def setBackupPlanIdUndefined: Self = StObject.set(x, "BackupPlanId", js.undefined)
     
-    @scala.inline
-    def setCreationDate(value: timestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: timestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
-    @scala.inline
-    def setCreatorRequestId(value: String): Self = StObject.set(x, "CreatorRequestId", value.asInstanceOf[js.Any])
+    inline def setCreatorRequestId(value: String): Self = StObject.set(x, "CreatorRequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatorRequestIdUndefined: Self = StObject.set(x, "CreatorRequestId", js.undefined)
+    inline def setCreatorRequestIdUndefined: Self = StObject.set(x, "CreatorRequestId", js.undefined)
     
-    @scala.inline
-    def setIamRoleArn(value: IAMRoleArn): Self = StObject.set(x, "IamRoleArn", value.asInstanceOf[js.Any])
+    inline def setIamRoleArn(value: IAMRoleArn): Self = StObject.set(x, "IamRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIamRoleArnUndefined: Self = StObject.set(x, "IamRoleArn", js.undefined)
+    inline def setIamRoleArnUndefined: Self = StObject.set(x, "IamRoleArn", js.undefined)
     
-    @scala.inline
-    def setSelectionId(value: String): Self = StObject.set(x, "SelectionId", value.asInstanceOf[js.Any])
+    inline def setSelectionId(value: String): Self = StObject.set(x, "SelectionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionIdUndefined: Self = StObject.set(x, "SelectionId", js.undefined)
+    inline def setSelectionIdUndefined: Self = StObject.set(x, "SelectionId", js.undefined)
     
-    @scala.inline
-    def setSelectionName(value: BackupSelectionName): Self = StObject.set(x, "SelectionName", value.asInstanceOf[js.Any])
+    inline def setSelectionName(value: BackupSelectionName): Self = StObject.set(x, "SelectionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionNameUndefined: Self = StObject.set(x, "SelectionName", js.undefined)
+    inline def setSelectionNameUndefined: Self = StObject.set(x, "SelectionName", js.undefined)
   }
 }

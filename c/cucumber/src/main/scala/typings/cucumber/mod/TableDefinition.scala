@@ -26,8 +26,7 @@ trait TableDefinition[Type] extends StObject {
 }
 object TableDefinition {
   
-  @scala.inline
-  def apply[Type](
+  inline def apply[Type](
     hashes: () => js.Array[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ columnName in keyof Type ]: string}
@@ -41,11 +40,9 @@ object TableDefinition {
     __obj.asInstanceOf[TableDefinition[Type]]
   }
   
-  @scala.inline
-  implicit class TableDefinitionMutableBuilder[Self <: TableDefinition[?], Type] (val x: Self & TableDefinition[Type]) extends AnyVal {
+  extension [Self <: TableDefinition[?], Type](x: Self & TableDefinition[Type]) {
     
-    @scala.inline
-    def setHashes(
+    inline def setHashes(
       value: () => js.Array[
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ columnName in keyof Type ]: string}
@@ -53,13 +50,10 @@ object TableDefinition {
         ]
     ): Self = StObject.set(x, "hashes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRaw(value: () => js.Array[js.Array[String]]): Self = StObject.set(x, "raw", js.Any.fromFunction0(value))
+    inline def setRaw(value: () => js.Array[js.Array[String]]): Self = StObject.set(x, "raw", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRows(value: () => js.Array[js.Array[String]]): Self = StObject.set(x, "rows", js.Any.fromFunction0(value))
+    inline def setRows(value: () => js.Array[js.Array[String]]): Self = StObject.set(x, "rows", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRowsHash(value: () => StringDictionary[String]): Self = StObject.set(x, "rowsHash", js.Any.fromFunction0(value))
+    inline def setRowsHash(value: () => StringDictionary[String]): Self = StObject.set(x, "rowsHash", js.Any.fromFunction0(value))
   }
 }

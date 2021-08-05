@@ -20,43 +20,31 @@ trait GetAddressParams
 }
 object GetAddressParams {
   
-  @scala.inline
-  def apply(path: String | js.Array[Double]): GetAddressParams = {
+  inline def apply(path: String | js.Array[Double]): GetAddressParams = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAddressParams]
   }
   
-  @scala.inline
-  implicit class GetAddressParamsMutableBuilder[Self <: GetAddressParams] (val x: Self) extends AnyVal {
+  extension [Self <: GetAddressParams](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setCoin(value: String): Self = StObject.set(x, "coin", value.asInstanceOf[js.Any])
+    inline def setCoin(value: String): Self = StObject.set(x, "coin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoinUndefined: Self = StObject.set(x, "coin", js.undefined)
+    inline def setCoinUndefined: Self = StObject.set(x, "coin", js.undefined)
     
-    @scala.inline
-    def setCrossChain(value: Boolean): Self = StObject.set(x, "crossChain", value.asInstanceOf[js.Any])
+    inline def setCrossChain(value: Boolean): Self = StObject.set(x, "crossChain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrossChainUndefined: Self = StObject.set(x, "crossChain", js.undefined)
+    inline def setCrossChainUndefined: Self = StObject.set(x, "crossChain", js.undefined)
     
-    @scala.inline
-    def setPath(value: String | js.Array[Double]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String | js.Array[Double]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathVarargs(value: Double*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: Double*): Self = StObject.set(x, "path", js.Array(value :_*))
     
-    @scala.inline
-    def setShowOnTrezor(value: Boolean): Self = StObject.set(x, "showOnTrezor", value.asInstanceOf[js.Any])
+    inline def setShowOnTrezor(value: Boolean): Self = StObject.set(x, "showOnTrezor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowOnTrezorUndefined: Self = StObject.set(x, "showOnTrezor", js.undefined)
+    inline def setShowOnTrezorUndefined: Self = StObject.set(x, "showOnTrezor", js.undefined)
   }
 }

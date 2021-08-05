@@ -10,19 +10,16 @@ trait LabelInteractable extends StObject {
 }
 object LabelInteractable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     LabelInteractable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
   ): LabelInteractable = {
     val __obj = js.Dynamic.literal(LabelInteractable = LabelInteractable.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelInteractable]
   }
   
-  @scala.inline
-  implicit class LabelInteractableMutableBuilder[Self <: LabelInteractable] (val x: Self) extends AnyVal {
+  extension [Self <: LabelInteractable](x: Self) {
     
-    @scala.inline
-    def setLabelInteractable(
+    inline def setLabelInteractable(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
     ): Self = StObject.set(x, "LabelInteractable", value.asInstanceOf[js.Any])
   }

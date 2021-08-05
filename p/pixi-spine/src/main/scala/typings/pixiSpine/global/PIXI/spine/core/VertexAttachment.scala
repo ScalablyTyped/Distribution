@@ -59,6 +59,5 @@ object VertexAttachment {
   @JSGlobal("PIXI.spine.core.VertexAttachment.nextID")
   @js.native
   def nextID: js.Any = js.native
-  @scala.inline
-  def nextID_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nextID")(x.asInstanceOf[js.Any])
+  inline def nextID_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nextID")(x.asInstanceOf[js.Any])
 }

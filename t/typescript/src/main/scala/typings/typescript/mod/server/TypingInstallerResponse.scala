@@ -10,19 +10,16 @@ trait TypingInstallerResponse extends StObject {
 }
 object TypingInstallerResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     kind: ActionSet | ActionInvalidate | EventTypesRegistry | ActionPackageInstalled | EventBeginInstallTypes | EventEndInstallTypes | EventInitializationFailed
   ): TypingInstallerResponse = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypingInstallerResponse]
   }
   
-  @scala.inline
-  implicit class TypingInstallerResponseMutableBuilder[Self <: TypingInstallerResponse] (val x: Self) extends AnyVal {
+  extension [Self <: TypingInstallerResponse](x: Self) {
     
-    @scala.inline
-    def setKind(
+    inline def setKind(
       value: ActionSet | ActionInvalidate | EventTypesRegistry | ActionPackageInstalled | EventBeginInstallTypes | EventEndInstallTypes | EventInitializationFailed
     ): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }

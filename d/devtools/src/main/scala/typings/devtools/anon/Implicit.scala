@@ -14,31 +14,23 @@ trait Implicit extends StObject {
 }
 object Implicit {
   
-  @scala.inline
-  def apply(): Implicit = {
+  inline def apply(): Implicit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Implicit]
   }
   
-  @scala.inline
-  implicit class ImplicitMutableBuilder[Self <: Implicit] (val x: Self) extends AnyVal {
+  extension [Self <: Implicit](x: Self) {
     
-    @scala.inline
-    def setImplicit(value: Double): Self = StObject.set(x, "implicit", value.asInstanceOf[js.Any])
+    inline def setImplicit(value: Double): Self = StObject.set(x, "implicit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImplicitUndefined: Self = StObject.set(x, "implicit", js.undefined)
+    inline def setImplicitUndefined: Self = StObject.set(x, "implicit", js.undefined)
     
-    @scala.inline
-    def setPageLoad(value: Double): Self = StObject.set(x, "pageLoad", value.asInstanceOf[js.Any])
+    inline def setPageLoad(value: Double): Self = StObject.set(x, "pageLoad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageLoadUndefined: Self = StObject.set(x, "pageLoad", js.undefined)
+    inline def setPageLoadUndefined: Self = StObject.set(x, "pageLoad", js.undefined)
     
-    @scala.inline
-    def setScript(value: Double): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+    inline def setScript(value: Double): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
+    inline def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
   }
 }

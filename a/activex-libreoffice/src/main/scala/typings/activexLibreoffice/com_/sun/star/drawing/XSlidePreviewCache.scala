@@ -57,8 +57,7 @@ trait XSlidePreviewCache extends StObject {
 }
 object XSlidePreviewCache {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addPreviewCreationNotifyListener: XSlidePreviewCacheListener => Unit,
     getSlidePreview: (Double, XCanvas) => XBitmap,
     pause: () => Unit,
@@ -72,31 +71,22 @@ object XSlidePreviewCache {
     __obj.asInstanceOf[XSlidePreviewCache]
   }
   
-  @scala.inline
-  implicit class XSlidePreviewCacheMutableBuilder[Self <: XSlidePreviewCache] (val x: Self) extends AnyVal {
+  extension [Self <: XSlidePreviewCache](x: Self) {
     
-    @scala.inline
-    def setAddPreviewCreationNotifyListener(value: XSlidePreviewCacheListener => Unit): Self = StObject.set(x, "addPreviewCreationNotifyListener", js.Any.fromFunction1(value))
+    inline def setAddPreviewCreationNotifyListener(value: XSlidePreviewCacheListener => Unit): Self = StObject.set(x, "addPreviewCreationNotifyListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSlidePreview(value: (Double, XCanvas) => XBitmap): Self = StObject.set(x, "getSlidePreview", js.Any.fromFunction2(value))
+    inline def setGetSlidePreview(value: (Double, XCanvas) => XBitmap): Self = StObject.set(x, "getSlidePreview", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
+    inline def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemovePreviewCreationNotifyListener(value: XSlidePreviewCacheListener => Unit): Self = StObject.set(x, "removePreviewCreationNotifyListener", js.Any.fromFunction1(value))
+    inline def setRemovePreviewCreationNotifyListener(value: XSlidePreviewCacheListener => Unit): Self = StObject.set(x, "removePreviewCreationNotifyListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResume(value: () => Unit): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
+    inline def setResume(value: () => Unit): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetDocumentSlides(value: (XIndexAccess, XInterface) => Unit): Self = StObject.set(x, "setDocumentSlides", js.Any.fromFunction2(value))
+    inline def setSetDocumentSlides(value: (XIndexAccess, XInterface) => Unit): Self = StObject.set(x, "setDocumentSlides", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetPreviewSize(value: IntegerSize2D => Unit): Self = StObject.set(x, "setPreviewSize", js.Any.fromFunction1(value))
+    inline def setSetPreviewSize(value: IntegerSize2D => Unit): Self = StObject.set(x, "setPreviewSize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetVisibleRange(value: (Double, Double) => Unit): Self = StObject.set(x, "setVisibleRange", js.Any.fromFunction2(value))
+    inline def setSetVisibleRange(value: (Double, Double) => Unit): Self = StObject.set(x, "setVisibleRange", js.Any.fromFunction2(value))
   }
 }

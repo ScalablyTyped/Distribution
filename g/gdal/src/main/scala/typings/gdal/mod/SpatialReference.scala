@@ -70,39 +70,27 @@ object SpatialReference {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromCRSURL(input: String): SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCRSURL")(input.asInstanceOf[js.Any]).asInstanceOf[SpatialReference]
+  inline def fromCRSURL(input: String): SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCRSURL")(input.asInstanceOf[js.Any]).asInstanceOf[SpatialReference]
   
-  @scala.inline
-  def fromEPSG(input: String): SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEPSG")(input.asInstanceOf[js.Any]).asInstanceOf[SpatialReference]
+  inline def fromEPSG(input: String): SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEPSG")(input.asInstanceOf[js.Any]).asInstanceOf[SpatialReference]
   
-  @scala.inline
-  def fromEPSGA(input: Double): SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEPSGA")(input.asInstanceOf[js.Any]).asInstanceOf[SpatialReference]
+  inline def fromEPSGA(input: Double): SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEPSGA")(input.asInstanceOf[js.Any]).asInstanceOf[SpatialReference]
   
-  @scala.inline
-  def fromESRI(input: js.Array[String]): SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromESRI")(input.asInstanceOf[js.Any]).asInstanceOf[SpatialReference]
+  inline def fromESRI(input: js.Array[String]): SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromESRI")(input.asInstanceOf[js.Any]).asInstanceOf[SpatialReference]
   
-  @scala.inline
-  def fromMICoordSys(input: String): SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMICoordSys")(input.asInstanceOf[js.Any]).asInstanceOf[SpatialReference]
+  inline def fromMICoordSys(input: String): SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMICoordSys")(input.asInstanceOf[js.Any]).asInstanceOf[SpatialReference]
   
-  @scala.inline
-  def fromProj4(input: String): SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromProj4")(input.asInstanceOf[js.Any]).asInstanceOf[SpatialReference]
+  inline def fromProj4(input: String): SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromProj4")(input.asInstanceOf[js.Any]).asInstanceOf[SpatialReference]
   
-  @scala.inline
-  def fromURL(url: String): SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any]).asInstanceOf[SpatialReference]
+  inline def fromURL(url: String): SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any]).asInstanceOf[SpatialReference]
   
-  @scala.inline
-  def fromURN(input: String): SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromURN")(input.asInstanceOf[js.Any]).asInstanceOf[SpatialReference]
+  inline def fromURN(input: String): SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromURN")(input.asInstanceOf[js.Any]).asInstanceOf[SpatialReference]
   
-  @scala.inline
-  def fromUserInput(input: String): SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUserInput")(input.asInstanceOf[js.Any]).asInstanceOf[SpatialReference]
+  inline def fromUserInput(input: String): SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUserInput")(input.asInstanceOf[js.Any]).asInstanceOf[SpatialReference]
   
-  @scala.inline
-  def fromWKT(wkt: String): SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWKT")(wkt.asInstanceOf[js.Any]).asInstanceOf[SpatialReference]
+  inline def fromWKT(wkt: String): SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWKT")(wkt.asInstanceOf[js.Any]).asInstanceOf[SpatialReference]
   
-  @scala.inline
-  def fromWMSAUTO(input: String): SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWMSAUTO")(input.asInstanceOf[js.Any]).asInstanceOf[SpatialReference]
+  inline def fromWMSAUTO(input: String): SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWMSAUTO")(input.asInstanceOf[js.Any]).asInstanceOf[SpatialReference]
   
-  @scala.inline
-  def fromXML(input: String): SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromXML")(input.asInstanceOf[js.Any]).asInstanceOf[SpatialReference]
+  inline def fromXML(input: String): SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromXML")(input.asInstanceOf[js.Any]).asInstanceOf[SpatialReference]
 }

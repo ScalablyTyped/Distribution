@@ -28,37 +28,27 @@ trait DescribeImagePermissionsRequest extends StObject {
 }
 object DescribeImagePermissionsRequest {
   
-  @scala.inline
-  def apply(Name: Name): DescribeImagePermissionsRequest = {
+  inline def apply(Name: Name): DescribeImagePermissionsRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeImagePermissionsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeImagePermissionsRequestMutableBuilder[Self <: DescribeImagePermissionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeImagePermissionsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSharedAwsAccountIds(value: AwsAccountIdList): Self = StObject.set(x, "SharedAwsAccountIds", value.asInstanceOf[js.Any])
+    inline def setSharedAwsAccountIds(value: AwsAccountIdList): Self = StObject.set(x, "SharedAwsAccountIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedAwsAccountIdsUndefined: Self = StObject.set(x, "SharedAwsAccountIds", js.undefined)
+    inline def setSharedAwsAccountIdsUndefined: Self = StObject.set(x, "SharedAwsAccountIds", js.undefined)
     
-    @scala.inline
-    def setSharedAwsAccountIdsVarargs(value: AwsAccountId*): Self = StObject.set(x, "SharedAwsAccountIds", js.Array(value :_*))
+    inline def setSharedAwsAccountIdsVarargs(value: AwsAccountId*): Self = StObject.set(x, "SharedAwsAccountIds", js.Array(value :_*))
   }
 }

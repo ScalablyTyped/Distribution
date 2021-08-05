@@ -11,19 +11,15 @@ trait Plans extends StObject {
 }
 object Plans {
   
-  @scala.inline
-  def apply(plans: js.Array[Plan]): Plans = {
+  inline def apply(plans: js.Array[Plan]): Plans = {
     val __obj = js.Dynamic.literal(plans = plans.asInstanceOf[js.Any])
     __obj.asInstanceOf[Plans]
   }
   
-  @scala.inline
-  implicit class PlansMutableBuilder[Self <: Plans] (val x: Self) extends AnyVal {
+  extension [Self <: Plans](x: Self) {
     
-    @scala.inline
-    def setPlans(value: js.Array[Plan]): Self = StObject.set(x, "plans", value.asInstanceOf[js.Any])
+    inline def setPlans(value: js.Array[Plan]): Self = StObject.set(x, "plans", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlansVarargs(value: Plan*): Self = StObject.set(x, "plans", js.Array(value :_*))
+    inline def setPlansVarargs(value: Plan*): Self = StObject.set(x, "plans", js.Array(value :_*))
   }
 }

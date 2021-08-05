@@ -24,8 +24,7 @@ object anon {
   }
   object AfterTransform {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       afterTransform: (js.Any, js.Any) => Unit | Boolean,
       needTransform: Boolean,
       transforming: Boolean,
@@ -35,32 +34,23 @@ object anon {
       __obj.asInstanceOf[AfterTransform]
     }
     
-    @scala.inline
-    implicit class AfterTransformMutableBuilder[Self <: AfterTransform] (val x: Self) extends AnyVal {
+    extension [Self <: AfterTransform](x: Self) {
       
-      @scala.inline
-      def setAfterTransform(value: (js.Any, js.Any) => Unit | Boolean): Self = StObject.set(x, "afterTransform", js.Any.fromFunction2(value))
+      inline def setAfterTransform(value: (js.Any, js.Any) => Unit | Boolean): Self = StObject.set(x, "afterTransform", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNeedTransform(value: Boolean): Self = StObject.set(x, "needTransform", value.asInstanceOf[js.Any])
+      inline def setNeedTransform(value: Boolean): Self = StObject.set(x, "needTransform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransforming(value: Boolean): Self = StObject.set(x, "transforming", value.asInstanceOf[js.Any])
+      inline def setTransforming(value: Boolean): Self = StObject.set(x, "transforming", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWritecb(value: /* err */ js.Any => js.Any): Self = StObject.set(x, "writecb", js.Any.fromFunction1(value))
+      inline def setWritecb(value: /* err */ js.Any => js.Any): Self = StObject.set(x, "writecb", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWritecbNull: Self = StObject.set(x, "writecb", null)
+      inline def setWritecbNull: Self = StObject.set(x, "writecb", null)
       
-      @scala.inline
-      def setWritechunk(value: js.Any): Self = StObject.set(x, "writechunk", value.asInstanceOf[js.Any])
+      inline def setWritechunk(value: js.Any): Self = StObject.set(x, "writechunk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteencoding(value: BufferEncoding): Self = StObject.set(x, "writeencoding", value.asInstanceOf[js.Any])
+      inline def setWriteencoding(value: BufferEncoding): Self = StObject.set(x, "writeencoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteencodingNull: Self = StObject.set(x, "writeencoding", null)
+      inline def setWriteencodingNull: Self = StObject.set(x, "writeencoding", null)
     }
   }
   
@@ -72,20 +62,16 @@ object anon {
   }
   object Chunk {
     
-    @scala.inline
-    def apply(chunk: js.Any, encoding: BufferEncoding | String): Chunk = {
+    inline def apply(chunk: js.Any, encoding: BufferEncoding | String): Chunk = {
       val __obj = js.Dynamic.literal(chunk = chunk.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any])
       __obj.asInstanceOf[Chunk]
     }
     
-    @scala.inline
-    implicit class ChunkMutableBuilder[Self <: Chunk] (val x: Self) extends AnyVal {
+    extension [Self <: Chunk](x: Self) {
       
-      @scala.inline
-      def setChunk(value: js.Any): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
+      inline def setChunk(value: js.Any): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncoding(value: BufferEncoding | String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: BufferEncoding | String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     }
   }
   
@@ -97,20 +83,16 @@ object anon {
   }
   object Encoding {
     
-    @scala.inline
-    def apply(chunk: js.Any, encoding: BufferEncoding): Encoding = {
+    inline def apply(chunk: js.Any, encoding: BufferEncoding): Encoding = {
       val __obj = js.Dynamic.literal(chunk = chunk.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any])
       __obj.asInstanceOf[Encoding]
     }
     
-    @scala.inline
-    implicit class EncodingMutableBuilder[Self <: Encoding] (val x: Self) extends AnyVal {
+    extension [Self <: Encoding](x: Self) {
       
-      @scala.inline
-      def setChunk(value: js.Any): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
+      inline def setChunk(value: js.Any): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     }
   }
   
@@ -120,20 +102,16 @@ object anon {
   }
   object End {
     
-    @scala.inline
-    def apply(): End = {
+    inline def apply(): End = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[End]
     }
     
-    @scala.inline
-    implicit class EndMutableBuilder[Self <: End] (val x: Self) extends AnyVal {
+    extension [Self <: End](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     }
   }
 }

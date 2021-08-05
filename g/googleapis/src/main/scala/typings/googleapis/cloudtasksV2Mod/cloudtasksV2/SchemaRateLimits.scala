@@ -58,31 +58,23 @@ trait SchemaRateLimits extends StObject {
 }
 object SchemaRateLimits {
   
-  @scala.inline
-  def apply(): SchemaRateLimits = {
+  inline def apply(): SchemaRateLimits = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRateLimits]
   }
   
-  @scala.inline
-  implicit class SchemaRateLimitsMutableBuilder[Self <: SchemaRateLimits] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRateLimits](x: Self) {
     
-    @scala.inline
-    def setMaxBurstSize(value: Double): Self = StObject.set(x, "maxBurstSize", value.asInstanceOf[js.Any])
+    inline def setMaxBurstSize(value: Double): Self = StObject.set(x, "maxBurstSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxBurstSizeUndefined: Self = StObject.set(x, "maxBurstSize", js.undefined)
+    inline def setMaxBurstSizeUndefined: Self = StObject.set(x, "maxBurstSize", js.undefined)
     
-    @scala.inline
-    def setMaxConcurrentDispatches(value: Double): Self = StObject.set(x, "maxConcurrentDispatches", value.asInstanceOf[js.Any])
+    inline def setMaxConcurrentDispatches(value: Double): Self = StObject.set(x, "maxConcurrentDispatches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxConcurrentDispatchesUndefined: Self = StObject.set(x, "maxConcurrentDispatches", js.undefined)
+    inline def setMaxConcurrentDispatchesUndefined: Self = StObject.set(x, "maxConcurrentDispatches", js.undefined)
     
-    @scala.inline
-    def setMaxDispatchesPerSecond(value: Double): Self = StObject.set(x, "maxDispatchesPerSecond", value.asInstanceOf[js.Any])
+    inline def setMaxDispatchesPerSecond(value: Double): Self = StObject.set(x, "maxDispatchesPerSecond", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDispatchesPerSecondUndefined: Self = StObject.set(x, "maxDispatchesPerSecond", js.undefined)
+    inline def setMaxDispatchesPerSecondUndefined: Self = StObject.set(x, "maxDispatchesPerSecond", js.undefined)
   }
 }

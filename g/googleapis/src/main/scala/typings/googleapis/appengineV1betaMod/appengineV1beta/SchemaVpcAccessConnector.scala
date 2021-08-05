@@ -17,19 +17,15 @@ trait SchemaVpcAccessConnector extends StObject {
 }
 object SchemaVpcAccessConnector {
   
-  @scala.inline
-  def apply(): SchemaVpcAccessConnector = {
+  inline def apply(): SchemaVpcAccessConnector = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaVpcAccessConnector]
   }
   
-  @scala.inline
-  implicit class SchemaVpcAccessConnectorMutableBuilder[Self <: SchemaVpcAccessConnector] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaVpcAccessConnector](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

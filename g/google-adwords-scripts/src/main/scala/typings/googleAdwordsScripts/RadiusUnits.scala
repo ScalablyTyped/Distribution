@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RadiusUnits extends StObject
 object RadiusUnits {
   
-  @scala.inline
-  def KILOMETERS: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.KILOMETERS = "KILOMETERS".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.KILOMETERS]
+  inline def KILOMETERS: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.KILOMETERS = "KILOMETERS".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.KILOMETERS]
   
-  @scala.inline
-  def MILES: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.MILES = "MILES".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.MILES]
+  inline def MILES: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.MILES = "MILES".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.MILES]
 }

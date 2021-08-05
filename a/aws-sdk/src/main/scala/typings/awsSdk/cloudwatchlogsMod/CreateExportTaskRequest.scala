@@ -43,43 +43,31 @@ trait CreateExportTaskRequest extends StObject {
 }
 object CreateExportTaskRequest {
   
-  @scala.inline
-  def apply(destination: ExportDestinationBucket, from: Timestamp, logGroupName: LogGroupName, to: Timestamp): CreateExportTaskRequest = {
+  inline def apply(destination: ExportDestinationBucket, from: Timestamp, logGroupName: LogGroupName, to: Timestamp): CreateExportTaskRequest = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], logGroupName = logGroupName.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateExportTaskRequest]
   }
   
-  @scala.inline
-  implicit class CreateExportTaskRequestMutableBuilder[Self <: CreateExportTaskRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateExportTaskRequest](x: Self) {
     
-    @scala.inline
-    def setDestination(value: ExportDestinationBucket): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: ExportDestinationBucket): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationPrefix(value: ExportDestinationPrefix): Self = StObject.set(x, "destinationPrefix", value.asInstanceOf[js.Any])
+    inline def setDestinationPrefix(value: ExportDestinationPrefix): Self = StObject.set(x, "destinationPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationPrefixUndefined: Self = StObject.set(x, "destinationPrefix", js.undefined)
+    inline def setDestinationPrefixUndefined: Self = StObject.set(x, "destinationPrefix", js.undefined)
     
-    @scala.inline
-    def setFrom(value: Timestamp): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: Timestamp): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
+    inline def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogStreamNamePrefix(value: LogStreamName): Self = StObject.set(x, "logStreamNamePrefix", value.asInstanceOf[js.Any])
+    inline def setLogStreamNamePrefix(value: LogStreamName): Self = StObject.set(x, "logStreamNamePrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogStreamNamePrefixUndefined: Self = StObject.set(x, "logStreamNamePrefix", js.undefined)
+    inline def setLogStreamNamePrefixUndefined: Self = StObject.set(x, "logStreamNamePrefix", js.undefined)
     
-    @scala.inline
-    def setTaskName(value: ExportTaskName): Self = StObject.set(x, "taskName", value.asInstanceOf[js.Any])
+    inline def setTaskName(value: ExportTaskName): Self = StObject.set(x, "taskName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskNameUndefined: Self = StObject.set(x, "taskName", js.undefined)
+    inline def setTaskNameUndefined: Self = StObject.set(x, "taskName", js.undefined)
     
-    @scala.inline
-    def setTo(value: Timestamp): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: Timestamp): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }
 }

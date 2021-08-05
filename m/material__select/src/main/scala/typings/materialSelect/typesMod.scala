@@ -25,20 +25,16 @@ object typesMod {
   }
   object MDCSelectEventDetail {
     
-    @scala.inline
-    def apply(index: Double, value: String): MDCSelectEventDetail = {
+    inline def apply(index: Double, value: String): MDCSelectEventDetail = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[MDCSelectEventDetail]
     }
     
-    @scala.inline
-    implicit class MDCSelectEventDetailMutableBuilder[Self <: MDCSelectEventDetail] (val x: Self) extends AnyVal {
+    extension [Self <: MDCSelectEventDetail](x: Self) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -50,20 +46,16 @@ object typesMod {
   }
   object MDCSelectFoundationMap {
     
-    @scala.inline
-    def apply(helperText: MDCSelectHelperTextFoundation, leadingIcon: MDCSelectIconFoundation): MDCSelectFoundationMap = {
+    inline def apply(helperText: MDCSelectHelperTextFoundation, leadingIcon: MDCSelectIconFoundation): MDCSelectFoundationMap = {
       val __obj = js.Dynamic.literal(helperText = helperText.asInstanceOf[js.Any], leadingIcon = leadingIcon.asInstanceOf[js.Any])
       __obj.asInstanceOf[MDCSelectFoundationMap]
     }
     
-    @scala.inline
-    implicit class MDCSelectFoundationMapMutableBuilder[Self <: MDCSelectFoundationMap] (val x: Self) extends AnyVal {
+    extension [Self <: MDCSelectFoundationMap](x: Self) {
       
-      @scala.inline
-      def setHelperText(value: MDCSelectHelperTextFoundation): Self = StObject.set(x, "helperText", value.asInstanceOf[js.Any])
+      inline def setHelperText(value: MDCSelectHelperTextFoundation): Self = StObject.set(x, "helperText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeadingIcon(value: MDCSelectIconFoundation): Self = StObject.set(x, "leadingIcon", value.asInstanceOf[js.Any])
+      inline def setLeadingIcon(value: MDCSelectIconFoundation): Self = StObject.set(x, "leadingIcon", value.asInstanceOf[js.Any])
     }
   }
 }

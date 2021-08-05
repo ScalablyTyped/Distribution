@@ -12,22 +12,17 @@ trait PsbtInput
 }
 object PsbtInput {
   
-  @scala.inline
-  def apply(): PsbtInput = {
+  inline def apply(): PsbtInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PsbtInput]
   }
   
-  @scala.inline
-  implicit class PsbtInputMutableBuilder[Self <: PsbtInput] (val x: Self) extends AnyVal {
+  extension [Self <: PsbtInput](x: Self) {
     
-    @scala.inline
-    def setUnknownKeyVals(value: js.Array[KeyValue]): Self = StObject.set(x, "unknownKeyVals", value.asInstanceOf[js.Any])
+    inline def setUnknownKeyVals(value: js.Array[KeyValue]): Self = StObject.set(x, "unknownKeyVals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnknownKeyValsUndefined: Self = StObject.set(x, "unknownKeyVals", js.undefined)
+    inline def setUnknownKeyValsUndefined: Self = StObject.set(x, "unknownKeyVals", js.undefined)
     
-    @scala.inline
-    def setUnknownKeyValsVarargs(value: KeyValue*): Self = StObject.set(x, "unknownKeyVals", js.Array(value :_*))
+    inline def setUnknownKeyValsVarargs(value: KeyValue*): Self = StObject.set(x, "unknownKeyVals", js.Array(value :_*))
   }
 }

@@ -23,22 +23,17 @@ trait DeleteArchiveInput extends StObject {
 }
 object DeleteArchiveInput {
   
-  @scala.inline
-  def apply(accountId: String, archiveId: String, vaultName: String): DeleteArchiveInput = {
+  inline def apply(accountId: String, archiveId: String, vaultName: String): DeleteArchiveInput = {
     val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], archiveId = archiveId.asInstanceOf[js.Any], vaultName = vaultName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteArchiveInput]
   }
   
-  @scala.inline
-  implicit class DeleteArchiveInputMutableBuilder[Self <: DeleteArchiveInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteArchiveInput](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArchiveId(value: String): Self = StObject.set(x, "archiveId", value.asInstanceOf[js.Any])
+    inline def setArchiveId(value: String): Self = StObject.set(x, "archiveId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVaultName(value: String): Self = StObject.set(x, "vaultName", value.asInstanceOf[js.Any])
+    inline def setVaultName(value: String): Self = StObject.set(x, "vaultName", value.asInstanceOf[js.Any])
   }
 }

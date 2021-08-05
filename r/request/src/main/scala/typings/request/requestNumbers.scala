@@ -8,11 +8,9 @@ object requestNumbers {
   
   @js.native
   sealed trait `4` extends StObject
-  @scala.inline
-  def `4`: `4` = 4.asInstanceOf[`4`]
+  inline def `4`: `4` = 4.asInstanceOf[`4`]
   
   @js.native
   sealed trait `6` extends StObject
-  @scala.inline
-  def `6`: `6` = 6.asInstanceOf[`6`]
+  inline def `6`: `6` = 6.asInstanceOf[`6`]
 }

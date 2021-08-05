@@ -69,55 +69,39 @@ trait SchemaExecution extends StObject {
 }
 object SchemaExecution {
   
-  @scala.inline
-  def apply(): SchemaExecution = {
+  inline def apply(): SchemaExecution = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaExecution]
   }
   
-  @scala.inline
-  implicit class SchemaExecutionMutableBuilder[Self <: SchemaExecution] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaExecution](x: Self) {
     
-    @scala.inline
-    def setCompletionTime(value: SchemaTimestamp): Self = StObject.set(x, "completionTime", value.asInstanceOf[js.Any])
+    inline def setCompletionTime(value: SchemaTimestamp): Self = StObject.set(x, "completionTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletionTimeUndefined: Self = StObject.set(x, "completionTime", js.undefined)
+    inline def setCompletionTimeUndefined: Self = StObject.set(x, "completionTime", js.undefined)
     
-    @scala.inline
-    def setCreationTime(value: SchemaTimestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: SchemaTimestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
-    @scala.inline
-    def setExecutionId(value: String): Self = StObject.set(x, "executionId", value.asInstanceOf[js.Any])
+    inline def setExecutionId(value: String): Self = StObject.set(x, "executionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionIdUndefined: Self = StObject.set(x, "executionId", js.undefined)
+    inline def setExecutionIdUndefined: Self = StObject.set(x, "executionId", js.undefined)
     
-    @scala.inline
-    def setOutcome(value: SchemaOutcome): Self = StObject.set(x, "outcome", value.asInstanceOf[js.Any])
+    inline def setOutcome(value: SchemaOutcome): Self = StObject.set(x, "outcome", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutcomeUndefined: Self = StObject.set(x, "outcome", js.undefined)
+    inline def setOutcomeUndefined: Self = StObject.set(x, "outcome", js.undefined)
     
-    @scala.inline
-    def setSpecification(value: SchemaSpecification): Self = StObject.set(x, "specification", value.asInstanceOf[js.Any])
+    inline def setSpecification(value: SchemaSpecification): Self = StObject.set(x, "specification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecificationUndefined: Self = StObject.set(x, "specification", js.undefined)
+    inline def setSpecificationUndefined: Self = StObject.set(x, "specification", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setTestExecutionMatrixId(value: String): Self = StObject.set(x, "testExecutionMatrixId", value.asInstanceOf[js.Any])
+    inline def setTestExecutionMatrixId(value: String): Self = StObject.set(x, "testExecutionMatrixId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestExecutionMatrixIdUndefined: Self = StObject.set(x, "testExecutionMatrixId", js.undefined)
+    inline def setTestExecutionMatrixIdUndefined: Self = StObject.set(x, "testExecutionMatrixId", js.undefined)
   }
 }

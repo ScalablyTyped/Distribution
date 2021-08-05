@@ -25,8 +25,7 @@ trait XSignatureVerifyResultListener
 }
 object XSignatureVerifyResultListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -36,10 +35,8 @@ object XSignatureVerifyResultListener {
     __obj.asInstanceOf[XSignatureVerifyResultListener]
   }
   
-  @scala.inline
-  implicit class XSignatureVerifyResultListenerMutableBuilder[Self <: XSignatureVerifyResultListener] (val x: Self) extends AnyVal {
+  extension [Self <: XSignatureVerifyResultListener](x: Self) {
     
-    @scala.inline
-    def setSignatureVerified(value: (Double, SecurityOperationStatus) => Unit): Self = StObject.set(x, "signatureVerified", js.Any.fromFunction2(value))
+    inline def setSignatureVerified(value: (Double, SecurityOperationStatus) => Unit): Self = StObject.set(x, "signatureVerified", js.Any.fromFunction2(value))
   }
 }

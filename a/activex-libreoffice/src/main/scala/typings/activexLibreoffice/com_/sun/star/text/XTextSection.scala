@@ -29,8 +29,7 @@ trait XTextSection
 }
 object XTextSection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     ChildSections: SafeArray[XTextSection],
     ParentSection: XTextSection,
@@ -49,19 +48,14 @@ object XTextSection {
     __obj.asInstanceOf[XTextSection]
   }
   
-  @scala.inline
-  implicit class XTextSectionMutableBuilder[Self <: XTextSection] (val x: Self) extends AnyVal {
+  extension [Self <: XTextSection](x: Self) {
     
-    @scala.inline
-    def setChildSections(value: SafeArray[XTextSection]): Self = StObject.set(x, "ChildSections", value.asInstanceOf[js.Any])
+    inline def setChildSections(value: SafeArray[XTextSection]): Self = StObject.set(x, "ChildSections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetChildSections(value: () => SafeArray[XTextSection]): Self = StObject.set(x, "getChildSections", js.Any.fromFunction0(value))
+    inline def setGetChildSections(value: () => SafeArray[XTextSection]): Self = StObject.set(x, "getChildSections", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetParentSection(value: () => XTextSection): Self = StObject.set(x, "getParentSection", js.Any.fromFunction0(value))
+    inline def setGetParentSection(value: () => XTextSection): Self = StObject.set(x, "getParentSection", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setParentSection(value: XTextSection): Self = StObject.set(x, "ParentSection", value.asInstanceOf[js.Any])
+    inline def setParentSection(value: XTextSection): Self = StObject.set(x, "ParentSection", value.asInstanceOf[js.Any])
   }
 }

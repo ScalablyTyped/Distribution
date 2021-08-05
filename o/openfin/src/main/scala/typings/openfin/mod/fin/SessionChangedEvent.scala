@@ -24,23 +24,18 @@ trait SessionChangedEvent extends StObject {
 }
 object SessionChangedEvent {
   
-  @scala.inline
-  def apply(reason: lock | unlock | `remote-connect` | `remote-disconnect` | unknown): SessionChangedEvent = {
+  inline def apply(reason: lock | unlock | `remote-connect` | `remote-disconnect` | unknown): SessionChangedEvent = {
     val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], topic = "system")
     __obj.updateDynamic("type")("session-changed")
     __obj.asInstanceOf[SessionChangedEvent]
   }
   
-  @scala.inline
-  implicit class SessionChangedEventMutableBuilder[Self <: SessionChangedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SessionChangedEvent](x: Self) {
     
-    @scala.inline
-    def setReason(value: lock | unlock | `remote-connect` | `remote-disconnect` | unknown): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: lock | unlock | `remote-connect` | `remote-disconnect` | unknown): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopic(value: system): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: system): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `session-changed`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `session-changed`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

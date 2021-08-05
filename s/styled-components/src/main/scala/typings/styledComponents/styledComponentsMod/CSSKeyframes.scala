@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with /* key */ StringDictionary[CSSObject]
 object CSSKeyframes {
   
-  @scala.inline
-  def apply(): CSSKeyframes = {
+  inline def apply(): CSSKeyframes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CSSKeyframes]
   }

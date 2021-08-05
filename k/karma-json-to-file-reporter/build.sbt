@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "karma-json-to-file-reporter"
-version := "1.0-dt-20200302Z-7c3fed"
+version := "1.0-dt-20200302Z-10649e"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

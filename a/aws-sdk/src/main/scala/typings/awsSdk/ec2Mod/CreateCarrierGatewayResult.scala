@@ -13,19 +13,15 @@ trait CreateCarrierGatewayResult extends StObject {
 }
 object CreateCarrierGatewayResult {
   
-  @scala.inline
-  def apply(): CreateCarrierGatewayResult = {
+  inline def apply(): CreateCarrierGatewayResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateCarrierGatewayResult]
   }
   
-  @scala.inline
-  implicit class CreateCarrierGatewayResultMutableBuilder[Self <: CreateCarrierGatewayResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCarrierGatewayResult](x: Self) {
     
-    @scala.inline
-    def setCarrierGateway(value: CarrierGateway): Self = StObject.set(x, "CarrierGateway", value.asInstanceOf[js.Any])
+    inline def setCarrierGateway(value: CarrierGateway): Self = StObject.set(x, "CarrierGateway", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCarrierGatewayUndefined: Self = StObject.set(x, "CarrierGateway", js.undefined)
+    inline def setCarrierGatewayUndefined: Self = StObject.set(x, "CarrierGateway", js.undefined)
   }
 }

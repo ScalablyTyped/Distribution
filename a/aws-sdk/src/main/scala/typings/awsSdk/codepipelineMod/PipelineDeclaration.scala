@@ -38,43 +38,31 @@ trait PipelineDeclaration extends StObject {
 }
 object PipelineDeclaration {
   
-  @scala.inline
-  def apply(name: PipelineName, roleArn: RoleArn, stages: PipelineStageDeclarationList): PipelineDeclaration = {
+  inline def apply(name: PipelineName, roleArn: RoleArn, stages: PipelineStageDeclarationList): PipelineDeclaration = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any], stages = stages.asInstanceOf[js.Any])
     __obj.asInstanceOf[PipelineDeclaration]
   }
   
-  @scala.inline
-  implicit class PipelineDeclarationMutableBuilder[Self <: PipelineDeclaration] (val x: Self) extends AnyVal {
+  extension [Self <: PipelineDeclaration](x: Self) {
     
-    @scala.inline
-    def setArtifactStore(value: ArtifactStore): Self = StObject.set(x, "artifactStore", value.asInstanceOf[js.Any])
+    inline def setArtifactStore(value: ArtifactStore): Self = StObject.set(x, "artifactStore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtifactStoreUndefined: Self = StObject.set(x, "artifactStore", js.undefined)
+    inline def setArtifactStoreUndefined: Self = StObject.set(x, "artifactStore", js.undefined)
     
-    @scala.inline
-    def setArtifactStores(value: ArtifactStoreMap): Self = StObject.set(x, "artifactStores", value.asInstanceOf[js.Any])
+    inline def setArtifactStores(value: ArtifactStoreMap): Self = StObject.set(x, "artifactStores", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtifactStoresUndefined: Self = StObject.set(x, "artifactStores", js.undefined)
+    inline def setArtifactStoresUndefined: Self = StObject.set(x, "artifactStores", js.undefined)
     
-    @scala.inline
-    def setName(value: PipelineName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: PipelineName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStages(value: PipelineStageDeclarationList): Self = StObject.set(x, "stages", value.asInstanceOf[js.Any])
+    inline def setStages(value: PipelineStageDeclarationList): Self = StObject.set(x, "stages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStagesVarargs(value: StageDeclaration*): Self = StObject.set(x, "stages", js.Array(value :_*))
+    inline def setStagesVarargs(value: StageDeclaration*): Self = StObject.set(x, "stages", js.Array(value :_*))
     
-    @scala.inline
-    def setVersion(value: PipelineVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: PipelineVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

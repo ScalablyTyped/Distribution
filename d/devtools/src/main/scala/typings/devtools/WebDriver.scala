@@ -15,20 +15,16 @@ object WebDriver {
   }
   object ChromeOptions {
     
-    @scala.inline
-    def apply(): ChromeOptions = {
+    inline def apply(): ChromeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ChromeOptions]
     }
     
-    @scala.inline
-    implicit class ChromeOptionsMutableBuilder[Self <: ChromeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ChromeOptions](x: Self) {
       
-      @scala.inline
-      def setHeadless(value: Boolean): Self = StObject.set(x, "headless", value.asInstanceOf[js.Any])
+      inline def setHeadless(value: Boolean): Self = StObject.set(x, "headless", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadlessUndefined: Self = StObject.set(x, "headless", js.undefined)
+      inline def setHeadlessUndefined: Self = StObject.set(x, "headless", js.undefined)
     }
   }
   
@@ -41,20 +37,16 @@ object WebDriver {
   }
   object FirefoxOptions {
     
-    @scala.inline
-    def apply(): FirefoxOptions = {
+    inline def apply(): FirefoxOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FirefoxOptions]
     }
     
-    @scala.inline
-    implicit class FirefoxOptionsMutableBuilder[Self <: FirefoxOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FirefoxOptions](x: Self) {
       
-      @scala.inline
-      def setHeadless(value: Boolean): Self = StObject.set(x, "headless", value.asInstanceOf[js.Any])
+      inline def setHeadless(value: Boolean): Self = StObject.set(x, "headless", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadlessUndefined: Self = StObject.set(x, "headless", js.undefined)
+      inline def setHeadlessUndefined: Self = StObject.set(x, "headless", js.undefined)
     }
   }
   
@@ -67,20 +59,16 @@ object WebDriver {
   }
   object MicrosoftEdgeOptions {
     
-    @scala.inline
-    def apply(): MicrosoftEdgeOptions = {
+    inline def apply(): MicrosoftEdgeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MicrosoftEdgeOptions]
     }
     
-    @scala.inline
-    implicit class MicrosoftEdgeOptionsMutableBuilder[Self <: MicrosoftEdgeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MicrosoftEdgeOptions](x: Self) {
       
-      @scala.inline
-      def setHeadless(value: Boolean): Self = StObject.set(x, "headless", value.asInstanceOf[js.Any])
+      inline def setHeadless(value: Boolean): Self = StObject.set(x, "headless", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadlessUndefined: Self = StObject.set(x, "headless", js.undefined)
+      inline def setHeadlessUndefined: Self = StObject.set(x, "headless", js.undefined)
     }
   }
 }

@@ -19,8 +19,7 @@ object eslintMod {
   }
   object CLIEngine {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       executeOnFiles: js.Array[String] => LintReport,
       isPathIgnored: String => Boolean,
       resolveFileGlobPatterns: js.Array[String] => js.Array[String],
@@ -30,20 +29,15 @@ object eslintMod {
       __obj.asInstanceOf[CLIEngine]
     }
     
-    @scala.inline
-    implicit class CLIEngineMutableBuilder[Self <: CLIEngine] (val x: Self) extends AnyVal {
+    extension [Self <: CLIEngine](x: Self) {
       
-      @scala.inline
-      def setExecuteOnFiles(value: js.Array[String] => LintReport): Self = StObject.set(x, "executeOnFiles", js.Any.fromFunction1(value))
+      inline def setExecuteOnFiles(value: js.Array[String] => LintReport): Self = StObject.set(x, "executeOnFiles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsPathIgnored(value: String => Boolean): Self = StObject.set(x, "isPathIgnored", js.Any.fromFunction1(value))
+      inline def setIsPathIgnored(value: String => Boolean): Self = StObject.set(x, "isPathIgnored", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResolveFileGlobPatterns(value: js.Array[String] => js.Array[String]): Self = StObject.set(x, "resolveFileGlobPatterns", js.Any.fromFunction1(value))
+      inline def setResolveFileGlobPatterns(value: js.Array[String] => js.Array[String]): Self = StObject.set(x, "resolveFileGlobPatterns", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -59,35 +53,26 @@ object eslintMod {
   }
   object CLIEngineOptions {
     
-    @scala.inline
-    def apply(): CLIEngineOptions = {
+    inline def apply(): CLIEngineOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CLIEngineOptions]
     }
     
-    @scala.inline
-    implicit class CLIEngineOptionsMutableBuilder[Self <: CLIEngineOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CLIEngineOptions](x: Self) {
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+      inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      @scala.inline
-      def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
       
-      @scala.inline
-      def setFix(value: Boolean): Self = StObject.set(x, "fix", value.asInstanceOf[js.Any])
+      inline def setFix(value: Boolean): Self = StObject.set(x, "fix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixUndefined: Self = StObject.set(x, "fix", js.undefined)
+      inline def setFixUndefined: Self = StObject.set(x, "fix", js.undefined)
     }
   }
   
@@ -111,44 +96,32 @@ object eslintMod {
   }
   object LintMessage {
     
-    @scala.inline
-    def apply(column: Double, line: Double, message: String, severity: Double): LintMessage = {
+    inline def apply(column: Double, line: Double, message: String, severity: Double): LintMessage = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], severity = severity.asInstanceOf[js.Any], ruleId = null)
       __obj.asInstanceOf[LintMessage]
     }
     
-    @scala.inline
-    implicit class LintMessageMutableBuilder[Self <: LintMessage] (val x: Self) extends AnyVal {
+    extension [Self <: LintMessage](x: Self) {
       
-      @scala.inline
-      def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndColumn(value: Double): Self = StObject.set(x, "endColumn", value.asInstanceOf[js.Any])
+      inline def setEndColumn(value: Double): Self = StObject.set(x, "endColumn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndColumnUndefined: Self = StObject.set(x, "endColumn", js.undefined)
+      inline def setEndColumnUndefined: Self = StObject.set(x, "endColumn", js.undefined)
       
-      @scala.inline
-      def setEndLine(value: Double): Self = StObject.set(x, "endLine", value.asInstanceOf[js.Any])
+      inline def setEndLine(value: Double): Self = StObject.set(x, "endLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndLineUndefined: Self = StObject.set(x, "endLine", js.undefined)
+      inline def setEndLineUndefined: Self = StObject.set(x, "endLine", js.undefined)
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuleId(value: String): Self = StObject.set(x, "ruleId", value.asInstanceOf[js.Any])
+      inline def setRuleId(value: String): Self = StObject.set(x, "ruleId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuleIdNull: Self = StObject.set(x, "ruleId", null)
+      inline def setRuleIdNull: Self = StObject.set(x, "ruleId", null)
       
-      @scala.inline
-      def setSeverity(value: Double): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+      inline def setSeverity(value: Double): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     }
   }
   
@@ -160,20 +133,16 @@ object eslintMod {
   }
   object LintReport {
     
-    @scala.inline
-    def apply(results: js.Array[LintResult]): LintReport = {
+    inline def apply(results: js.Array[LintResult]): LintReport = {
       val __obj = js.Dynamic.literal(results = results.asInstanceOf[js.Any])
       __obj.asInstanceOf[LintReport]
     }
     
-    @scala.inline
-    implicit class LintReportMutableBuilder[Self <: LintReport] (val x: Self) extends AnyVal {
+    extension [Self <: LintReport](x: Self) {
       
-      @scala.inline
-      def setResults(value: js.Array[LintResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      inline def setResults(value: js.Array[LintResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultsVarargs(value: LintResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+      inline def setResultsVarargs(value: LintResult*): Self = StObject.set(x, "results", js.Array(value :_*))
     }
   }
   
@@ -187,23 +156,18 @@ object eslintMod {
   }
   object LintResult {
     
-    @scala.inline
-    def apply(filePath: String, messages: js.Array[LintMessage]): LintResult = {
+    inline def apply(filePath: String, messages: js.Array[LintMessage]): LintResult = {
       val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any])
       __obj.asInstanceOf[LintResult]
     }
     
-    @scala.inline
-    implicit class LintResultMutableBuilder[Self <: LintResult] (val x: Self) extends AnyVal {
+    extension [Self <: LintResult](x: Self) {
       
-      @scala.inline
-      def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+      inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessages(value: js.Array[LintMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      inline def setMessages(value: js.Array[LintMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessagesVarargs(value: LintMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
+      inline def setMessagesVarargs(value: LintMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
     }
   }
 }

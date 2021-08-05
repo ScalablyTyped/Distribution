@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLDOMRange")
 @js.native
-class HTMLDOMRange protected ()
+/* private */ class HTMLDOMRange ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLDOMRange {
   
   /* CompleteClass */
   override def Detach(): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.HTMLDOMRange_typekey")
   var MSHTMLDotHTMLDOMRange_typekey: typings.activexMshtml.MSHTML.HTMLDOMRange = js.native
   

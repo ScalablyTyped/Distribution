@@ -34,49 +34,35 @@ trait IPaymentIntentDataShipping extends StObject {
 }
 object IPaymentIntentDataShipping {
   
-  @scala.inline
-  def apply(address: IAddress): IPaymentIntentDataShipping = {
+  inline def apply(address: IAddress): IPaymentIntentDataShipping = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], name = null)
     __obj.asInstanceOf[IPaymentIntentDataShipping]
   }
   
-  @scala.inline
-  implicit class IPaymentIntentDataShippingMutableBuilder[Self <: IPaymentIntentDataShipping] (val x: Self) extends AnyVal {
+  extension [Self <: IPaymentIntentDataShipping](x: Self) {
     
-    @scala.inline
-    def setAddress(value: IAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: IAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCarrier(value: String): Self = StObject.set(x, "carrier", value.asInstanceOf[js.Any])
+    inline def setCarrier(value: String): Self = StObject.set(x, "carrier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCarrierNull: Self = StObject.set(x, "carrier", null)
+    inline def setCarrierNull: Self = StObject.set(x, "carrier", null)
     
-    @scala.inline
-    def setCarrierUndefined: Self = StObject.set(x, "carrier", js.undefined)
+    inline def setCarrierUndefined: Self = StObject.set(x, "carrier", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+    inline def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneNull: Self = StObject.set(x, "phone", null)
+    inline def setPhoneNull: Self = StObject.set(x, "phone", null)
     
-    @scala.inline
-    def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
+    inline def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
     
-    @scala.inline
-    def setTracking_number(value: String): Self = StObject.set(x, "tracking_number", value.asInstanceOf[js.Any])
+    inline def setTracking_number(value: String): Self = StObject.set(x, "tracking_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTracking_numberNull: Self = StObject.set(x, "tracking_number", null)
+    inline def setTracking_numberNull: Self = StObject.set(x, "tracking_number", null)
     
-    @scala.inline
-    def setTracking_numberUndefined: Self = StObject.set(x, "tracking_number", js.undefined)
+    inline def setTracking_numberUndefined: Self = StObject.set(x, "tracking_number", js.undefined)
   }
 }

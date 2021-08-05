@@ -18,25 +18,19 @@ trait MergeBranchesByThreeWayOutput extends StObject {
 }
 object MergeBranchesByThreeWayOutput {
   
-  @scala.inline
-  def apply(): MergeBranchesByThreeWayOutput = {
+  inline def apply(): MergeBranchesByThreeWayOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MergeBranchesByThreeWayOutput]
   }
   
-  @scala.inline
-  implicit class MergeBranchesByThreeWayOutputMutableBuilder[Self <: MergeBranchesByThreeWayOutput] (val x: Self) extends AnyVal {
+  extension [Self <: MergeBranchesByThreeWayOutput](x: Self) {
     
-    @scala.inline
-    def setCommitId(value: ObjectId): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
+    inline def setCommitId(value: ObjectId): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitIdUndefined: Self = StObject.set(x, "commitId", js.undefined)
+    inline def setCommitIdUndefined: Self = StObject.set(x, "commitId", js.undefined)
     
-    @scala.inline
-    def setTreeId(value: ObjectId): Self = StObject.set(x, "treeId", value.asInstanceOf[js.Any])
+    inline def setTreeId(value: ObjectId): Self = StObject.set(x, "treeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreeIdUndefined: Self = StObject.set(x, "treeId", js.undefined)
+    inline def setTreeIdUndefined: Self = StObject.set(x, "treeId", js.undefined)
   }
 }

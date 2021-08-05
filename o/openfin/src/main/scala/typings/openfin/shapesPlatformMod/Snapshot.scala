@@ -14,25 +14,19 @@ trait Snapshot extends StObject {
 }
 object Snapshot {
   
-  @scala.inline
-  def apply(windows: js.Array[WindowOptions]): Snapshot = {
+  inline def apply(windows: js.Array[WindowOptions]): Snapshot = {
     val __obj = js.Dynamic.literal(windows = windows.asInstanceOf[js.Any])
     __obj.asInstanceOf[Snapshot]
   }
   
-  @scala.inline
-  implicit class SnapshotMutableBuilder[Self <: Snapshot] (val x: Self) extends AnyVal {
+  extension [Self <: Snapshot](x: Self) {
     
-    @scala.inline
-    def setSnapshotDetails(value: MonitorInfo): Self = StObject.set(x, "snapshotDetails", value.asInstanceOf[js.Any])
+    inline def setSnapshotDetails(value: MonitorInfo): Self = StObject.set(x, "snapshotDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotDetailsUndefined: Self = StObject.set(x, "snapshotDetails", js.undefined)
+    inline def setSnapshotDetailsUndefined: Self = StObject.set(x, "snapshotDetails", js.undefined)
     
-    @scala.inline
-    def setWindows(value: js.Array[WindowOptions]): Self = StObject.set(x, "windows", value.asInstanceOf[js.Any])
+    inline def setWindows(value: js.Array[WindowOptions]): Self = StObject.set(x, "windows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowsVarargs(value: WindowOptions*): Self = StObject.set(x, "windows", js.Array(value :_*))
+    inline def setWindowsVarargs(value: WindowOptions*): Self = StObject.set(x, "windows", js.Array(value :_*))
   }
 }

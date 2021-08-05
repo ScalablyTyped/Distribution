@@ -18,8 +18,7 @@ trait ParametersUsersListFollowingForUserEndpoint extends StObject {
 }
 object ParametersUsersListFollowingForUserEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: UsersListFollowingForUserEndpoint,
     request: UsersListFollowingForUserRequestOptions,
     response: OctokitResponse[UsersListFollowingForUserResponseData]
@@ -28,16 +27,12 @@ object ParametersUsersListFollowingForUserEndpoint {
     __obj.asInstanceOf[ParametersUsersListFollowingForUserEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersUsersListFollowingForUserEndpointMutableBuilder[Self <: ParametersUsersListFollowingForUserEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersUsersListFollowingForUserEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: UsersListFollowingForUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: UsersListFollowingForUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: UsersListFollowingForUserRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: UsersListFollowingForUserRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[UsersListFollowingForUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[UsersListFollowingForUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

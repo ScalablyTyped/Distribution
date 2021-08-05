@@ -428,20 +428,16 @@ object FileManager {
   }
   object AllFileBookmarks {
     
-    @scala.inline
-    def apply(name: String, source: String): AllFileBookmarks = {
+    inline def apply(name: String, source: String): AllFileBookmarks = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[AllFileBookmarks]
     }
     
-    @scala.inline
-    implicit class AllFileBookmarksMutableBuilder[Self <: AllFileBookmarks] (val x: Self) extends AnyVal {
+    extension [Self <: AllFileBookmarks](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
 }

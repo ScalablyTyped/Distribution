@@ -119,116 +119,81 @@ trait SelectRow[TRow /* <: js.Object */] extends StObject {
 }
 object SelectRow {
   
-  @scala.inline
-  def apply[TRow /* <: js.Object */](mode: SelectRowMode): SelectRow[TRow] = {
+  inline def apply[TRow /* <: js.Object */](mode: SelectRowMode): SelectRow[TRow] = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectRow[TRow]]
   }
   
-  @scala.inline
-  implicit class SelectRowMutableBuilder[Self <: SelectRow[?], TRow /* <: js.Object */] (val x: Self & SelectRow[TRow]) extends AnyVal {
+  extension [Self <: SelectRow[?], TRow /* <: js.Object */](x: Self & SelectRow[TRow]) {
     
-    @scala.inline
-    def setBgColor(value: String | (js.Function2[/* row */ TRow, /* isSelect */ Boolean, String])): Self = StObject.set(x, "bgColor", value.asInstanceOf[js.Any])
+    inline def setBgColor(value: String | (js.Function2[/* row */ TRow, /* isSelect */ Boolean, String])): Self = StObject.set(x, "bgColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBgColorFunction2(value: (/* row */ TRow, /* isSelect */ Boolean) => String): Self = StObject.set(x, "bgColor", js.Any.fromFunction2(value))
+    inline def setBgColorFunction2(value: (/* row */ TRow, /* isSelect */ Boolean) => String): Self = StObject.set(x, "bgColor", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBgColorUndefined: Self = StObject.set(x, "bgColor", js.undefined)
+    inline def setBgColorUndefined: Self = StObject.set(x, "bgColor", js.undefined)
     
-    @scala.inline
-    def setClassName(value: String | (js.Function2[/* row */ TRow, /* isSelect */ Boolean, String])): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String | (js.Function2[/* row */ TRow, /* isSelect */ Boolean, String])): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameFunction2(value: (/* row */ TRow, /* isSelect */ Boolean) => String): Self = StObject.set(x, "className", js.Any.fromFunction2(value))
+    inline def setClassNameFunction2(value: (/* row */ TRow, /* isSelect */ Boolean) => String): Self = StObject.set(x, "className", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setClickToExpand(value: Boolean): Self = StObject.set(x, "clickToExpand", value.asInstanceOf[js.Any])
+    inline def setClickToExpand(value: Boolean): Self = StObject.set(x, "clickToExpand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClickToExpandUndefined: Self = StObject.set(x, "clickToExpand", js.undefined)
+    inline def setClickToExpandUndefined: Self = StObject.set(x, "clickToExpand", js.undefined)
     
-    @scala.inline
-    def setClickToSelect(value: Boolean): Self = StObject.set(x, "clickToSelect", value.asInstanceOf[js.Any])
+    inline def setClickToSelect(value: Boolean): Self = StObject.set(x, "clickToSelect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClickToSelectAndEditCell(value: Boolean): Self = StObject.set(x, "clickToSelectAndEditCell", value.asInstanceOf[js.Any])
+    inline def setClickToSelectAndEditCell(value: Boolean): Self = StObject.set(x, "clickToSelectAndEditCell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClickToSelectAndEditCellUndefined: Self = StObject.set(x, "clickToSelectAndEditCell", js.undefined)
+    inline def setClickToSelectAndEditCellUndefined: Self = StObject.set(x, "clickToSelectAndEditCell", js.undefined)
     
-    @scala.inline
-    def setClickToSelectUndefined: Self = StObject.set(x, "clickToSelect", js.undefined)
+    inline def setClickToSelectUndefined: Self = StObject.set(x, "clickToSelect", js.undefined)
     
-    @scala.inline
-    def setColumnWidth(value: String): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
+    inline def setColumnWidth(value: String): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
+    inline def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
     
-    @scala.inline
-    def setCustomComponent(value: /* props */ CustomSelectProps => String | ReactElement): Self = StObject.set(x, "customComponent", js.Any.fromFunction1(value))
+    inline def setCustomComponent(value: /* props */ CustomSelectProps => String | ReactElement): Self = StObject.set(x, "customComponent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCustomComponentUndefined: Self = StObject.set(x, "customComponent", js.undefined)
+    inline def setCustomComponentUndefined: Self = StObject.set(x, "customComponent", js.undefined)
     
-    @scala.inline
-    def setHideSelectColumn(value: Boolean): Self = StObject.set(x, "hideSelectColumn", value.asInstanceOf[js.Any])
+    inline def setHideSelectColumn(value: Boolean): Self = StObject.set(x, "hideSelectColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideSelectColumnUndefined: Self = StObject.set(x, "hideSelectColumn", js.undefined)
+    inline def setHideSelectColumnUndefined: Self = StObject.set(x, "hideSelectColumn", js.undefined)
     
-    @scala.inline
-    def setMode(value: SelectRowMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: SelectRowMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnSelect(
+    inline def setOnSelect(
       value: (/* row */ TRow, /* isSelected */ Boolean, /* event */ js.Any, /* rowIndex */ Double) => Boolean | Unit
     ): Self = StObject.set(x, "onSelect", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setOnSelectAll(
+    inline def setOnSelectAll(
       value: (/* isSelected */ Boolean, /* rows */ js.Array[TRow]) => Boolean | (js.Array[Double | String])
     ): Self = StObject.set(x, "onSelectAll", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnSelectAllUndefined: Self = StObject.set(x, "onSelectAll", js.undefined)
+    inline def setOnSelectAllUndefined: Self = StObject.set(x, "onSelectAll", js.undefined)
     
-    @scala.inline
-    def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
+    inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
     
-    @scala.inline
-    def setOnlyUnselectVisible(value: Boolean): Self = StObject.set(x, "onlyUnselectVisible", value.asInstanceOf[js.Any])
+    inline def setOnlyUnselectVisible(value: Boolean): Self = StObject.set(x, "onlyUnselectVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlyUnselectVisibleUndefined: Self = StObject.set(x, "onlyUnselectVisible", js.undefined)
+    inline def setOnlyUnselectVisibleUndefined: Self = StObject.set(x, "onlyUnselectVisible", js.undefined)
     
-    @scala.inline
-    def setSelected(value: js.Array[Double | String]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: js.Array[Double | String]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
-    @scala.inline
-    def setSelectedVarargs(value: (Double | String)*): Self = StObject.set(x, "selected", js.Array(value :_*))
+    inline def setSelectedVarargs(value: (Double | String)*): Self = StObject.set(x, "selected", js.Array(value :_*))
     
-    @scala.inline
-    def setShowOnlySelected(value: Boolean): Self = StObject.set(x, "showOnlySelected", value.asInstanceOf[js.Any])
+    inline def setShowOnlySelected(value: Boolean): Self = StObject.set(x, "showOnlySelected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowOnlySelectedUndefined: Self = StObject.set(x, "showOnlySelected", js.undefined)
+    inline def setShowOnlySelectedUndefined: Self = StObject.set(x, "showOnlySelected", js.undefined)
     
-    @scala.inline
-    def setUnselectable(value: js.Array[Double | String]): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
+    inline def setUnselectable(value: js.Array[Double | String]): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
+    inline def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
     
-    @scala.inline
-    def setUnselectableVarargs(value: (Double | String)*): Self = StObject.set(x, "unselectable", js.Array(value :_*))
+    inline def setUnselectableVarargs(value: (Double | String)*): Self = StObject.set(x, "unselectable", js.Array(value :_*))
   }
 }

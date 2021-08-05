@@ -27,8 +27,7 @@ trait AccessibleMenuBar
      with XAccessibleSelection
 object AccessibleMenuBar {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleChildCount: Double,
     AccessibleDescription: String,
     AccessibleIndexInParent: Double,

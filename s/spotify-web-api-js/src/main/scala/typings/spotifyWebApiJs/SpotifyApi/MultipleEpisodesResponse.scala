@@ -16,19 +16,15 @@ trait MultipleEpisodesResponse extends StObject {
 }
 object MultipleEpisodesResponse {
   
-  @scala.inline
-  def apply(episodes: js.Array[EpisodeObjectFull]): MultipleEpisodesResponse = {
+  inline def apply(episodes: js.Array[EpisodeObjectFull]): MultipleEpisodesResponse = {
     val __obj = js.Dynamic.literal(episodes = episodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultipleEpisodesResponse]
   }
   
-  @scala.inline
-  implicit class MultipleEpisodesResponseMutableBuilder[Self <: MultipleEpisodesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: MultipleEpisodesResponse](x: Self) {
     
-    @scala.inline
-    def setEpisodes(value: js.Array[EpisodeObjectFull]): Self = StObject.set(x, "episodes", value.asInstanceOf[js.Any])
+    inline def setEpisodes(value: js.Array[EpisodeObjectFull]): Self = StObject.set(x, "episodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEpisodesVarargs(value: EpisodeObjectFull*): Self = StObject.set(x, "episodes", js.Array(value :_*))
+    inline def setEpisodesVarargs(value: EpisodeObjectFull*): Self = StObject.set(x, "episodes", js.Array(value :_*))
   }
 }

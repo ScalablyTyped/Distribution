@@ -47,50 +47,36 @@ object insightsOptionsMod {
   }
   object AccountInsightsOptions {
     
-    @scala.inline
-    def apply(): AccountInsightsOptions = {
+    inline def apply(): AccountInsightsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AccountInsightsOptions]
     }
     
-    @scala.inline
-    implicit class AccountInsightsOptionsMutableBuilder[Self <: AccountInsightsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AccountInsightsOptions](x: Self) {
       
-      @scala.inline
-      def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+      inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
+      inline def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
       
-      @scala.inline
-      def setActivityTab(value: Boolean): Self = StObject.set(x, "activityTab", value.asInstanceOf[js.Any])
+      inline def setActivityTab(value: Boolean): Self = StObject.set(x, "activityTab", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActivityTabUndefined: Self = StObject.set(x, "activityTab", js.undefined)
+      inline def setActivityTabUndefined: Self = StObject.set(x, "activityTab", js.undefined)
       
-      @scala.inline
-      def setAudienceTab(value: Boolean): Self = StObject.set(x, "audienceTab", value.asInstanceOf[js.Any])
+      inline def setAudienceTab(value: Boolean): Self = StObject.set(x, "audienceTab", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAudienceTabUndefined: Self = StObject.set(x, "audienceTab", js.undefined)
+      inline def setAudienceTabUndefined: Self = StObject.set(x, "audienceTab", js.undefined)
       
-      @scala.inline
-      def setContentTab(value: Boolean): Self = StObject.set(x, "contentTab", value.asInstanceOf[js.Any])
+      inline def setContentTab(value: Boolean): Self = StObject.set(x, "contentTab", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentTabUndefined: Self = StObject.set(x, "contentTab", js.undefined)
+      inline def setContentTabUndefined: Self = StObject.set(x, "contentTab", js.undefined)
       
-      @scala.inline
-      def setGridMediaSize(value: Double): Self = StObject.set(x, "gridMediaSize", value.asInstanceOf[js.Any])
+      inline def setGridMediaSize(value: Double): Self = StObject.set(x, "gridMediaSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridMediaSizeUndefined: Self = StObject.set(x, "gridMediaSize", js.undefined)
+      inline def setGridMediaSizeUndefined: Self = StObject.set(x, "gridMediaSize", js.undefined)
       
-      @scala.inline
-      def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+      inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+      inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
     }
   }
   
@@ -104,8 +90,7 @@ object insightsOptionsMod {
   }
   object PostsInsightsFeedOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dataOrdering: CALL | COMMENT_COUNT | EMAIL | ENGAGEMENT_COUNT | FOLLOW | GET_DIRECTIONS | IMPRESSION_COUNT | LIKE_COUNT | PROFILE_VIEW | REACH_COUNT | SAVE_COUNT | SHARE_COUNT | TEXT | BIO_LINK_CLICK,
       postType: ALL | IMAGE | VIDEO | CAROUSEL_V2 | SHOPPING,
       timeframe: ONE_WEEK | ONE_MONTH | THREE_MONTHS | SIX_MONTHS | ONE_YEAR | TWO_YEARS
@@ -114,19 +99,15 @@ object insightsOptionsMod {
       __obj.asInstanceOf[PostsInsightsFeedOptions]
     }
     
-    @scala.inline
-    implicit class PostsInsightsFeedOptionsMutableBuilder[Self <: PostsInsightsFeedOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PostsInsightsFeedOptions](x: Self) {
       
-      @scala.inline
-      def setDataOrdering(
+      inline def setDataOrdering(
         value: CALL | COMMENT_COUNT | EMAIL | ENGAGEMENT_COUNT | FOLLOW | GET_DIRECTIONS | IMPRESSION_COUNT | LIKE_COUNT | PROFILE_VIEW | REACH_COUNT | SAVE_COUNT | SHARE_COUNT | TEXT | BIO_LINK_CLICK
       ): Self = StObject.set(x, "dataOrdering", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPostType(value: ALL | IMAGE | VIDEO | CAROUSEL_V2 | SHOPPING): Self = StObject.set(x, "postType", value.asInstanceOf[js.Any])
+      inline def setPostType(value: ALL | IMAGE | VIDEO | CAROUSEL_V2 | SHOPPING): Self = StObject.set(x, "postType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeframe(value: ONE_WEEK | ONE_MONTH | THREE_MONTHS | SIX_MONTHS | ONE_YEAR | TWO_YEARS): Self = StObject.set(x, "timeframe", value.asInstanceOf[js.Any])
+      inline def setTimeframe(value: ONE_WEEK | ONE_MONTH | THREE_MONTHS | SIX_MONTHS | ONE_YEAR | TWO_YEARS): Self = StObject.set(x, "timeframe", value.asInstanceOf[js.Any])
     }
   }
 }

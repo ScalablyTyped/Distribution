@@ -50,22 +50,17 @@ trait JQueryStatic extends StObject {
 }
 object JQueryStatic {
   
-  @scala.inline
-  def apply(Widget: Widget, datepicker: Datepicker, ui: UI, widget: Widget): JQueryStatic = {
+  inline def apply(Widget: Widget, datepicker: Datepicker, ui: UI, widget: Widget): JQueryStatic = {
     val __obj = js.Dynamic.literal(Widget = Widget.asInstanceOf[js.Any], datepicker = datepicker.asInstanceOf[js.Any], ui = ui.asInstanceOf[js.Any], widget = widget.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  @scala.inline
-  implicit class JQueryStaticMutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryStatic](x: Self) {
     
-    @scala.inline
-    def setDatepicker(value: Datepicker): Self = StObject.set(x, "datepicker", value.asInstanceOf[js.Any])
+    inline def setDatepicker(value: Datepicker): Self = StObject.set(x, "datepicker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUi(value: UI): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
+    inline def setUi(value: UI): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidget(value: Widget): Self = StObject.set(x, "Widget", value.asInstanceOf[js.Any])
+    inline def setWidget(value: Widget): Self = StObject.set(x, "Widget", value.asInstanceOf[js.Any])
   }
 }

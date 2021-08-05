@@ -62,21 +62,16 @@ object analyticsConfigurationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): AnalyticsConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[AnalyticsConfiguration]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): AnalyticsConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AnalyticsConfiguration]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AnalyticsConfigurationState): AnalyticsConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AnalyticsConfiguration]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AnalyticsConfigurationState, opts: CustomResourceOptions): AnalyticsConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AnalyticsConfiguration]
+    inline def get(name: String, id: Input[ID]): AnalyticsConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[AnalyticsConfiguration]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): AnalyticsConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AnalyticsConfiguration]
+    inline def get(name: String, id: Input[ID], state: AnalyticsConfigurationState): AnalyticsConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AnalyticsConfiguration]
+    inline def get(name: String, id: Input[ID], state: AnalyticsConfigurationState, opts: CustomResourceOptions): AnalyticsConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AnalyticsConfiguration]
     
     /**
       * Returns true if the given object is an instance of AnalyticsConfiguration.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/analyticsConfiguration.AnalyticsConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/analyticsConfiguration.AnalyticsConfiguration */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/analyticsConfiguration.AnalyticsConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/analyticsConfiguration.AnalyticsConfiguration */ Boolean]
   }
   
   trait AnalyticsConfigurationArgs extends StObject {
@@ -103,35 +98,26 @@ object analyticsConfigurationMod {
   }
   object AnalyticsConfigurationArgs {
     
-    @scala.inline
-    def apply(bucket: Input[String]): AnalyticsConfigurationArgs = {
+    inline def apply(bucket: Input[String]): AnalyticsConfigurationArgs = {
       val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[AnalyticsConfigurationArgs]
     }
     
-    @scala.inline
-    implicit class AnalyticsConfigurationArgsMutableBuilder[Self <: AnalyticsConfigurationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: AnalyticsConfigurationArgs](x: Self) {
       
-      @scala.inline
-      def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter(value: Input[typings.pulumiAws.inputMod.s3.AnalyticsConfigurationFilter]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: Input[typings.pulumiAws.inputMod.s3.AnalyticsConfigurationFilter]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setStorageClassAnalysis(value: Input[typings.pulumiAws.inputMod.s3.AnalyticsConfigurationStorageClassAnalysis]): Self = StObject.set(x, "storageClassAnalysis", value.asInstanceOf[js.Any])
+      inline def setStorageClassAnalysis(value: Input[typings.pulumiAws.inputMod.s3.AnalyticsConfigurationStorageClassAnalysis]): Self = StObject.set(x, "storageClassAnalysis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageClassAnalysisUndefined: Self = StObject.set(x, "storageClassAnalysis", js.undefined)
+      inline def setStorageClassAnalysisUndefined: Self = StObject.set(x, "storageClassAnalysis", js.undefined)
     }
   }
   
@@ -159,38 +145,28 @@ object analyticsConfigurationMod {
   }
   object AnalyticsConfigurationState {
     
-    @scala.inline
-    def apply(): AnalyticsConfigurationState = {
+    inline def apply(): AnalyticsConfigurationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AnalyticsConfigurationState]
     }
     
-    @scala.inline
-    implicit class AnalyticsConfigurationStateMutableBuilder[Self <: AnalyticsConfigurationState] (val x: Self) extends AnyVal {
+    extension [Self <: AnalyticsConfigurationState](x: Self) {
       
-      @scala.inline
-      def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
+      inline def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
       
-      @scala.inline
-      def setFilter(value: Input[typings.pulumiAws.inputMod.s3.AnalyticsConfigurationFilter]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: Input[typings.pulumiAws.inputMod.s3.AnalyticsConfigurationFilter]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setStorageClassAnalysis(value: Input[typings.pulumiAws.inputMod.s3.AnalyticsConfigurationStorageClassAnalysis]): Self = StObject.set(x, "storageClassAnalysis", value.asInstanceOf[js.Any])
+      inline def setStorageClassAnalysis(value: Input[typings.pulumiAws.inputMod.s3.AnalyticsConfigurationStorageClassAnalysis]): Self = StObject.set(x, "storageClassAnalysis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageClassAnalysisUndefined: Self = StObject.set(x, "storageClassAnalysis", js.undefined)
+      inline def setStorageClassAnalysisUndefined: Self = StObject.set(x, "storageClassAnalysis", js.undefined)
     }
   }
 }

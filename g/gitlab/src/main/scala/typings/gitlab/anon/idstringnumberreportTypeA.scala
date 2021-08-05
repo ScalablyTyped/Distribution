@@ -34,8 +34,7 @@ trait idstringnumberreportTypeA
 }
 object idstringnumberreportTypeA {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     confidence: js.Array[String],
     id: String | Double,
     pipelineId: String | Double,
@@ -47,64 +46,44 @@ object idstringnumberreportTypeA {
     __obj.asInstanceOf[idstringnumberreportTypeA]
   }
   
-  @scala.inline
-  implicit class idstringnumberreportTypeAMutableBuilder[Self <: idstringnumberreportTypeA] (val x: Self) extends AnyVal {
+  extension [Self <: idstringnumberreportTypeA](x: Self) {
     
-    @scala.inline
-    def setConfidence(value: js.Array[String]): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: js.Array[String]): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceVarargs(value: String*): Self = StObject.set(x, "confidence", js.Array(value :_*))
+    inline def setConfidenceVarargs(value: String*): Self = StObject.set(x, "confidence", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxPages(value: Double): Self = StObject.set(x, "maxPages", value.asInstanceOf[js.Any])
+    inline def setMaxPages(value: Double): Self = StObject.set(x, "maxPages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxPagesUndefined: Self = StObject.set(x, "maxPages", js.undefined)
+    inline def setMaxPagesUndefined: Self = StObject.set(x, "maxPages", js.undefined)
     
-    @scala.inline
-    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
-    @scala.inline
-    def setPerPage(value: Double): Self = StObject.set(x, "perPage", value.asInstanceOf[js.Any])
+    inline def setPerPage(value: Double): Self = StObject.set(x, "perPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerPageUndefined: Self = StObject.set(x, "perPage", js.undefined)
+    inline def setPerPageUndefined: Self = StObject.set(x, "perPage", js.undefined)
     
-    @scala.inline
-    def setPipelineId(value: String | Double): Self = StObject.set(x, "pipelineId", value.asInstanceOf[js.Any])
+    inline def setPipelineId(value: String | Double): Self = StObject.set(x, "pipelineId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportType(value: js.Array[String]): Self = StObject.set(x, "reportType", value.asInstanceOf[js.Any])
+    inline def setReportType(value: js.Array[String]): Self = StObject.set(x, "reportType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportTypeVarargs(value: String*): Self = StObject.set(x, "reportType", js.Array(value :_*))
+    inline def setReportTypeVarargs(value: String*): Self = StObject.set(x, "reportType", js.Array(value :_*))
     
-    @scala.inline
-    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeverity(value: js.Array[String]): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+    inline def setSeverity(value: js.Array[String]): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeverityVarargs(value: String*): Self = StObject.set(x, "severity", js.Array(value :_*))
+    inline def setSeverityVarargs(value: String*): Self = StObject.set(x, "severity", js.Array(value :_*))
     
-    @scala.inline
-    def setShowPagination(value: Boolean): Self = StObject.set(x, "showPagination", value.asInstanceOf[js.Any])
+    inline def setShowPagination(value: Boolean): Self = StObject.set(x, "showPagination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowPaginationUndefined: Self = StObject.set(x, "showPagination", js.undefined)
+    inline def setShowPaginationUndefined: Self = StObject.set(x, "showPagination", js.undefined)
     
-    @scala.inline
-    def setSudo(value: String | Double): Self = StObject.set(x, "sudo", value.asInstanceOf[js.Any])
+    inline def setSudo(value: String | Double): Self = StObject.set(x, "sudo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSudoUndefined: Self = StObject.set(x, "sudo", js.undefined)
+    inline def setSudoUndefined: Self = StObject.set(x, "sudo", js.undefined)
   }
 }

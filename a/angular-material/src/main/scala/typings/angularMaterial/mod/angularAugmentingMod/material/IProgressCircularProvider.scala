@@ -10,16 +10,13 @@ trait IProgressCircularProvider extends StObject {
 }
 object IProgressCircularProvider {
   
-  @scala.inline
-  def apply(configure: IProgressCircularConfig => Unit): IProgressCircularProvider = {
+  inline def apply(configure: IProgressCircularConfig => Unit): IProgressCircularProvider = {
     val __obj = js.Dynamic.literal(configure = js.Any.fromFunction1(configure))
     __obj.asInstanceOf[IProgressCircularProvider]
   }
   
-  @scala.inline
-  implicit class IProgressCircularProviderMutableBuilder[Self <: IProgressCircularProvider] (val x: Self) extends AnyVal {
+  extension [Self <: IProgressCircularProvider](x: Self) {
     
-    @scala.inline
-    def setConfigure(value: IProgressCircularConfig => Unit): Self = StObject.set(x, "configure", js.Any.fromFunction1(value))
+    inline def setConfigure(value: IProgressCircularConfig => Unit): Self = StObject.set(x, "configure", js.Any.fromFunction1(value))
   }
 }

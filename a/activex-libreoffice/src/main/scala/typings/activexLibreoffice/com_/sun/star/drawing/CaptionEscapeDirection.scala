@@ -17,13 +17,10 @@ object CaptionEscapeDirection {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def auto: `2` = 2.asInstanceOf[`2`]
+    inline def auto: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def horizontal: `0` = 0.asInstanceOf[`0`]
+    inline def horizontal: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def vertical: `1` = 1.asInstanceOf[`1`]
+    inline def vertical: `1` = 1.asInstanceOf[`1`]
   }
 }

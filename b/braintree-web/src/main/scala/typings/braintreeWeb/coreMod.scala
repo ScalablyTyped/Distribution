@@ -34,27 +34,21 @@ object coreMod {
   }
   object BraintreeError {
     
-    @scala.inline
-    def apply(code: String, details: js.Any, message: String, `type`: BraintreeErrorTypes): BraintreeError = {
+    inline def apply(code: String, details: js.Any, message: String, `type`: BraintreeErrorTypes): BraintreeError = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[BraintreeError]
     }
     
-    @scala.inline
-    implicit class BraintreeErrorMutableBuilder[Self <: BraintreeError] (val x: Self) extends AnyVal {
+    extension [Self <: BraintreeError](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetails(value: js.Any): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: js.Any): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: BraintreeErrorTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: BraintreeErrorTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -68,20 +62,15 @@ object coreMod {
   trait BraintreeErrorTypes extends StObject
   object BraintreeErrorTypes {
     
-    @scala.inline
-    def CUSTOMER: typings.braintreeWeb.braintreeWebStrings.CUSTOMER = "CUSTOMER".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.CUSTOMER]
+    inline def CUSTOMER: typings.braintreeWeb.braintreeWebStrings.CUSTOMER = "CUSTOMER".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.CUSTOMER]
     
-    @scala.inline
-    def INTERNAL: typings.braintreeWeb.braintreeWebStrings.INTERNAL = "INTERNAL".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.INTERNAL]
+    inline def INTERNAL: typings.braintreeWeb.braintreeWebStrings.INTERNAL = "INTERNAL".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.INTERNAL]
     
-    @scala.inline
-    def MERCHANT: typings.braintreeWeb.braintreeWebStrings.MERCHANT = "MERCHANT".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.MERCHANT]
+    inline def MERCHANT: typings.braintreeWeb.braintreeWebStrings.MERCHANT = "MERCHANT".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.MERCHANT]
     
-    @scala.inline
-    def NETWORK: typings.braintreeWeb.braintreeWebStrings.NETWORK = "NETWORK".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.NETWORK]
+    inline def NETWORK: typings.braintreeWeb.braintreeWebStrings.NETWORK = "NETWORK".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.NETWORK]
     
-    @scala.inline
-    def UNKNOWN: typings.braintreeWeb.braintreeWebStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.UNKNOWN]
+    inline def UNKNOWN: typings.braintreeWeb.braintreeWebStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.UNKNOWN]
   }
   
   type callback[T] = js.Function2[/* err */ js.UndefOr[BraintreeError], /* data */ js.UndefOr[T], Unit]

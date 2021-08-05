@@ -13,16 +13,13 @@ trait TaskList extends StObject {
 }
 object TaskList {
   
-  @scala.inline
-  def apply(name: Name): TaskList = {
+  inline def apply(name: Name): TaskList = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskList]
   }
   
-  @scala.inline
-  implicit class TaskListMutableBuilder[Self <: TaskList] (val x: Self) extends AnyVal {
+  extension [Self <: TaskList](x: Self) {
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

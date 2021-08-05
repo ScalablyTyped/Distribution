@@ -24,25 +24,19 @@ trait SchemaGooglePrivacyDlpV2CreateJobTriggerRequest extends StObject {
 }
 object SchemaGooglePrivacyDlpV2CreateJobTriggerRequest {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2CreateJobTriggerRequest = {
+  inline def apply(): SchemaGooglePrivacyDlpV2CreateJobTriggerRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2CreateJobTriggerRequest]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2CreateJobTriggerRequestMutableBuilder[Self <: SchemaGooglePrivacyDlpV2CreateJobTriggerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2CreateJobTriggerRequest](x: Self) {
     
-    @scala.inline
-    def setJobTrigger(value: SchemaGooglePrivacyDlpV2JobTrigger): Self = StObject.set(x, "jobTrigger", value.asInstanceOf[js.Any])
+    inline def setJobTrigger(value: SchemaGooglePrivacyDlpV2JobTrigger): Self = StObject.set(x, "jobTrigger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobTriggerUndefined: Self = StObject.set(x, "jobTrigger", js.undefined)
+    inline def setJobTriggerUndefined: Self = StObject.set(x, "jobTrigger", js.undefined)
     
-    @scala.inline
-    def setTriggerId(value: String): Self = StObject.set(x, "triggerId", value.asInstanceOf[js.Any])
+    inline def setTriggerId(value: String): Self = StObject.set(x, "triggerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerIdUndefined: Self = StObject.set(x, "triggerId", js.undefined)
+    inline def setTriggerIdUndefined: Self = StObject.set(x, "triggerId", js.undefined)
   }
 }

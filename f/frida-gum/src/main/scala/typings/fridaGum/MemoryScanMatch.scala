@@ -18,19 +18,15 @@ trait MemoryScanMatch extends StObject {
 }
 object MemoryScanMatch {
   
-  @scala.inline
-  def apply(address: NativePointer, size: Double): MemoryScanMatch = {
+  inline def apply(address: NativePointer, size: Double): MemoryScanMatch = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[MemoryScanMatch]
   }
   
-  @scala.inline
-  implicit class MemoryScanMatchMutableBuilder[Self <: MemoryScanMatch] (val x: Self) extends AnyVal {
+  extension [Self <: MemoryScanMatch](x: Self) {
     
-    @scala.inline
-    def setAddress(value: NativePointer): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: NativePointer): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

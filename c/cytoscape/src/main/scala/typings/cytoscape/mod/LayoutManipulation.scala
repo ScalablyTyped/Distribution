@@ -28,22 +28,17 @@ trait LayoutManipulation extends StObject {
 }
 object LayoutManipulation {
   
-  @scala.inline
-  def apply(run: () => LayoutManipulation, start: () => LayoutManipulation, stop: () => LayoutManipulation): LayoutManipulation = {
+  inline def apply(run: () => LayoutManipulation, start: () => LayoutManipulation, stop: () => LayoutManipulation): LayoutManipulation = {
     val __obj = js.Dynamic.literal(run = js.Any.fromFunction0(run), start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop))
     __obj.asInstanceOf[LayoutManipulation]
   }
   
-  @scala.inline
-  implicit class LayoutManipulationMutableBuilder[Self <: LayoutManipulation] (val x: Self) extends AnyVal {
+  extension [Self <: LayoutManipulation](x: Self) {
     
-    @scala.inline
-    def setRun(value: () => LayoutManipulation): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
+    inline def setRun(value: () => LayoutManipulation): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStart(value: () => LayoutManipulation): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+    inline def setStart(value: () => LayoutManipulation): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStop(value: () => LayoutManipulation): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+    inline def setStop(value: () => LayoutManipulation): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
   }
 }

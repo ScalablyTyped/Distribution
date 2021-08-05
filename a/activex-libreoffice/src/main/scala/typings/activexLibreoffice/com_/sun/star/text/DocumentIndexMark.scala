@@ -23,8 +23,7 @@ trait DocumentIndexMark
 }
 object DocumentIndexMark {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AlternativeText: String,
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
@@ -46,16 +45,12 @@ object DocumentIndexMark {
     __obj.asInstanceOf[DocumentIndexMark]
   }
   
-  @scala.inline
-  implicit class DocumentIndexMarkMutableBuilder[Self <: DocumentIndexMark] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentIndexMark](x: Self) {
     
-    @scala.inline
-    def setIsMainEntry(value: Boolean): Self = StObject.set(x, "IsMainEntry", value.asInstanceOf[js.Any])
+    inline def setIsMainEntry(value: Boolean): Self = StObject.set(x, "IsMainEntry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryKey(value: String): Self = StObject.set(x, "PrimaryKey", value.asInstanceOf[js.Any])
+    inline def setPrimaryKey(value: String): Self = StObject.set(x, "PrimaryKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryKey(value: String): Self = StObject.set(x, "SecondaryKey", value.asInstanceOf[js.Any])
+    inline def setSecondaryKey(value: String): Self = StObject.set(x, "SecondaryKey", value.asInstanceOf[js.Any])
   }
 }

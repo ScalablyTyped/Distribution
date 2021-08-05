@@ -25,29 +25,22 @@ trait MidiTimeCodeMessage extends StObject {
 }
 object MidiTimeCodeMessage {
   
-  @scala.inline
-  def apply(frameType: Double, rawData: IBuffer, timestamp: Double, `type`: MidiMessageType, values: Double): MidiTimeCodeMessage = {
+  inline def apply(frameType: Double, rawData: IBuffer, timestamp: Double, `type`: MidiMessageType, values: Double): MidiTimeCodeMessage = {
     val __obj = js.Dynamic.literal(frameType = frameType.asInstanceOf[js.Any], rawData = rawData.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MidiTimeCodeMessage]
   }
   
-  @scala.inline
-  implicit class MidiTimeCodeMessageMutableBuilder[Self <: MidiTimeCodeMessage] (val x: Self) extends AnyVal {
+  extension [Self <: MidiTimeCodeMessage](x: Self) {
     
-    @scala.inline
-    def setFrameType(value: Double): Self = StObject.set(x, "frameType", value.asInstanceOf[js.Any])
+    inline def setFrameType(value: Double): Self = StObject.set(x, "frameType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawData(value: IBuffer): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
+    inline def setRawData(value: IBuffer): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: MidiMessageType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: MidiMessageType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: Double): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: Double): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
   }
 }

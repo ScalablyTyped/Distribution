@@ -15,28 +15,21 @@ trait PropertyOptions
 }
 object PropertyOptions {
   
-  @scala.inline
-  def apply(): PropertyOptions = {
+  inline def apply(): PropertyOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PropertyOptions]
   }
   
-  @scala.inline
-  implicit class PropertyOptionsMutableBuilder[Self <: PropertyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PropertyOptions](x: Self) {
     
-    @scala.inline
-    def setIgnoreHidden(value: Boolean): Self = StObject.set(x, "ignoreHidden", value.asInstanceOf[js.Any])
+    inline def setIgnoreHidden(value: Boolean): Self = StObject.set(x, "ignoreHidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreHiddenUndefined: Self = StObject.set(x, "ignoreHidden", js.undefined)
+    inline def setIgnoreHiddenUndefined: Self = StObject.set(x, "ignoreHidden", js.undefined)
     
-    @scala.inline
-    def setPropFilter(value: js.Array[String]): Self = StObject.set(x, "propFilter", value.asInstanceOf[js.Any])
+    inline def setPropFilter(value: js.Array[String]): Self = StObject.set(x, "propFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropFilterUndefined: Self = StObject.set(x, "propFilter", js.undefined)
+    inline def setPropFilterUndefined: Self = StObject.set(x, "propFilter", js.undefined)
     
-    @scala.inline
-    def setPropFilterVarargs(value: String*): Self = StObject.set(x, "propFilter", js.Array(value :_*))
+    inline def setPropFilterVarargs(value: String*): Self = StObject.set(x, "propFilter", js.Array(value :_*))
   }
 }

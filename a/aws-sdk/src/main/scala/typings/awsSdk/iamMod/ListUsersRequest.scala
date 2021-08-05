@@ -23,31 +23,23 @@ trait ListUsersRequest extends StObject {
 }
 object ListUsersRequest {
   
-  @scala.inline
-  def apply(): ListUsersRequest = {
+  inline def apply(): ListUsersRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListUsersRequest]
   }
   
-  @scala.inline
-  implicit class ListUsersRequestMutableBuilder[Self <: ListUsersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListUsersRequest](x: Self) {
     
-    @scala.inline
-    def setMarker(value: markerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: markerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxItems(value: maxItemsType): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: maxItemsType): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
+    inline def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
     
-    @scala.inline
-    def setPathPrefix(value: pathPrefixType): Self = StObject.set(x, "PathPrefix", value.asInstanceOf[js.Any])
+    inline def setPathPrefix(value: pathPrefixType): Self = StObject.set(x, "PathPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathPrefixUndefined: Self = StObject.set(x, "PathPrefix", js.undefined)
+    inline def setPathPrefixUndefined: Self = StObject.set(x, "PathPrefix", js.undefined)
   }
 }

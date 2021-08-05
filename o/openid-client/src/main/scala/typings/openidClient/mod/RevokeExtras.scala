@@ -19,25 +19,19 @@ trait RevokeExtras extends StObject {
 }
 object RevokeExtras {
   
-  @scala.inline
-  def apply(): RevokeExtras = {
+  inline def apply(): RevokeExtras = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RevokeExtras]
   }
   
-  @scala.inline
-  implicit class RevokeExtrasMutableBuilder[Self <: RevokeExtras] (val x: Self) extends AnyVal {
+  extension [Self <: RevokeExtras](x: Self) {
     
-    @scala.inline
-    def setClientAssertionPayload(value: js.Object): Self = StObject.set(x, "clientAssertionPayload", value.asInstanceOf[js.Any])
+    inline def setClientAssertionPayload(value: js.Object): Self = StObject.set(x, "clientAssertionPayload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientAssertionPayloadUndefined: Self = StObject.set(x, "clientAssertionPayload", js.undefined)
+    inline def setClientAssertionPayloadUndefined: Self = StObject.set(x, "clientAssertionPayload", js.undefined)
     
-    @scala.inline
-    def setRevokeBody(value: js.Object): Self = StObject.set(x, "revokeBody", value.asInstanceOf[js.Any])
+    inline def setRevokeBody(value: js.Object): Self = StObject.set(x, "revokeBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevokeBodyUndefined: Self = StObject.set(x, "revokeBody", js.undefined)
+    inline def setRevokeBodyUndefined: Self = StObject.set(x, "revokeBody", js.undefined)
   }
 }

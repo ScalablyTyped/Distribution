@@ -16,15 +16,15 @@ object proxyTracerMod {
     def this(_provider: ProxyTracerProvider, name: String) = this()
     def this(_provider: ProxyTracerProvider, name: String, version: String) = this()
     
-    var _delegate: js.Any = js.native
+    /* private */ var _delegate: js.Any = js.native
     
     /**
       * Try to get a tracer from the proxy tracer provider.
       * If the proxy tracer provider has no delegate, return a noop tracer.
       */
-    var _getTracer: js.Any = js.native
+    /* private */ var _getTracer: js.Any = js.native
     
-    var _provider: js.Any = js.native
+    /* private */ var _provider: js.Any = js.native
     
     val name: String = js.native
     

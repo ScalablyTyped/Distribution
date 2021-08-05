@@ -20,18 +20,18 @@ object nodeHttp2HandlerMod {
        with RequestHandler[HttpRequest, HttpResponse, HttpHandlerOptions] {
     def this(http2Options: NodeHttp2Options) = this()
     
-    val connectionPool: js.Any = js.native
+    /* private */ val connectionPool: js.Any = js.native
     
     @JSName("destroy")
     def destroy_MNodeHttp2Handler(): Unit = js.native
     
-    var getSession: js.Any = js.native
+    /* private */ var getSession: js.Any = js.native
     
     /* CompleteClass */
     override def handle(request: HttpRequest, handlerOptions: HttpHandlerOptions): js.Promise[RequestHandlerOutput[HttpResponse]] = js.native
     def handle(request: typings.awsSdkProtocolHttp.mod.HttpRequest, hasAbortSignal: HttpHandlerOptions): js.Promise[Response] = js.native
     
-    val http2Options: js.Any = js.native
+    /* private */ val http2Options: js.Any = js.native
     
     @JSName("metadata")
     val metadata_NodeHttp2Handler: HandlerProtocol = js.native
@@ -54,26 +54,20 @@ object nodeHttp2HandlerMod {
   }
   object NodeHttp2Options {
     
-    @scala.inline
-    def apply(): NodeHttp2Options = {
+    inline def apply(): NodeHttp2Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NodeHttp2Options]
     }
     
-    @scala.inline
-    implicit class NodeHttp2OptionsMutableBuilder[Self <: NodeHttp2Options] (val x: Self) extends AnyVal {
+    extension [Self <: NodeHttp2Options](x: Self) {
       
-      @scala.inline
-      def setRequestTimeout(value: Double): Self = StObject.set(x, "requestTimeout", value.asInstanceOf[js.Any])
+      inline def setRequestTimeout(value: Double): Self = StObject.set(x, "requestTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestTimeoutUndefined: Self = StObject.set(x, "requestTimeout", js.undefined)
+      inline def setRequestTimeoutUndefined: Self = StObject.set(x, "requestTimeout", js.undefined)
       
-      @scala.inline
-      def setSessionTimeout(value: Double): Self = StObject.set(x, "sessionTimeout", value.asInstanceOf[js.Any])
+      inline def setSessionTimeout(value: Double): Self = StObject.set(x, "sessionTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionTimeoutUndefined: Self = StObject.set(x, "sessionTimeout", js.undefined)
+      inline def setSessionTimeoutUndefined: Self = StObject.set(x, "sessionTimeout", js.undefined)
     }
   }
 }

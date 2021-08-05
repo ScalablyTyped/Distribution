@@ -28,7 +28,7 @@ object baseclientMod {
       * @param backendClass A constructor function to create the backend.
       * @param options Options for the client.
       */
-    protected def this(backendClass: BackendClass[B, O], options: O) = this()
+    /* protected */ def this(backendClass: BackendClass[B, O], options: O) = this()
     
     /**
       *  Enhances event using the client configuration.
@@ -49,7 +49,7 @@ object baseclientMod {
       * will correspond to the client. When composing SDKs, however, the Backend
       * from the root SDK will be used.
       */
-    val _backend: B = js.native
+    /* protected */ val _backend: B = js.native
     
     /**
       * Processes the event and logs an error in case of rejection
@@ -63,13 +63,13 @@ object baseclientMod {
     /* protected */ def _captureEvent(event: Event, hint: EventHint, scope: Scope): js.Thenable[js.UndefOr[String]] = js.native
     
     /** The client Dsn, if specified in options. Without this Dsn, the SDK will be disabled. */
-    val _dsn: js.UndefOr[Dsn] = js.native
+    /* protected */ val _dsn: js.UndefOr[Dsn] = js.native
     
     /** Returns the current backend. */
     /* protected */ def _getBackend(): B = js.native
     
     /** Array of used integrations. */
-    var _integrations: IntegrationIndex = js.native
+    /* protected */ var _integrations: IntegrationIndex = js.native
     
     /** Waits for the client to be done with processing. */
     /* protected */ def _isClientProcessing(): js.Thenable[Boolean] = js.native
@@ -92,7 +92,7 @@ object baseclientMod {
     /* protected */ def _normalizeEvent(event: Event, depth: Double): Event | Null = js.native
     
     /** Options passed to the SDK. */
-    val _options: O = js.native
+    /* protected */ val _options: O = js.native
     
     /**
       * Adds common information to events.
@@ -137,7 +137,7 @@ object baseclientMod {
     /* protected */ def _processEvent(event: Event, hint: EventHint, scope: Scope): js.Thenable[Event] = js.native
     
     /** Number of call being processed */
-    var _processing: Double = js.native
+    /* protected */ var _processing: Double = js.native
     
     /**
       * Tells the backend to send this event

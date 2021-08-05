@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FileInfo extends StObject
 object FileInfo {
   
-  @scala.inline
-  def Exists(isDirectory: Boolean, modificationTime: Double, size: Double, uri: String): typings.expoFileSystem.anon.Exists = {
+  inline def Exists(isDirectory: Boolean, modificationTime: Double, size: Double, uri: String): typings.expoFileSystem.anon.Exists = {
     val __obj = js.Dynamic.literal(exists = true, isDirectory = isDirectory.asInstanceOf[js.Any], modificationTime = modificationTime.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.expoFileSystem.anon.Exists]
   }
   
-  @scala.inline
-  def IsDirectory(md5: Unit, modificationTime: Unit, size: Unit, uri: String): typings.expoFileSystem.anon.IsDirectory = {
+  inline def IsDirectory(md5: Unit, modificationTime: Unit, size: Unit, uri: String): typings.expoFileSystem.anon.IsDirectory = {
     val __obj = js.Dynamic.literal(exists = false, isDirectory = false, md5 = md5.asInstanceOf[js.Any], modificationTime = modificationTime.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.expoFileSystem.anon.IsDirectory]
   }

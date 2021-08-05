@@ -13,19 +13,15 @@ trait Errors extends StObject {
 }
 object Errors {
   
-  @scala.inline
-  def apply(errors: Record[String, js.Any], infos: Record[String, js.Any]): Errors = {
+  inline def apply(errors: Record[String, js.Any], infos: Record[String, js.Any]): Errors = {
     val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], infos = infos.asInstanceOf[js.Any])
     __obj.asInstanceOf[Errors]
   }
   
-  @scala.inline
-  implicit class ErrorsMutableBuilder[Self <: Errors] (val x: Self) extends AnyVal {
+  extension [Self <: Errors](x: Self) {
     
-    @scala.inline
-    def setErrors(value: Record[String, js.Any]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: Record[String, js.Any]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfos(value: Record[String, js.Any]): Self = StObject.set(x, "infos", value.asInstanceOf[js.Any])
+    inline def setInfos(value: Record[String, js.Any]): Self = StObject.set(x, "infos", value.asInstanceOf[js.Any])
   }
 }

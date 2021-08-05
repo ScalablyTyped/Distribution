@@ -11,6 +11,5 @@ object useTimeoutMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Set = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Set]
+  inline def default(): Set = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Set]
 }

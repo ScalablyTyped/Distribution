@@ -32,23 +32,18 @@ object ooxml {
   }
   object WorkbookEvent {
     
-    @scala.inline
-    def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Workbook): WorkbookEvent = {
+    inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Workbook): WorkbookEvent = {
       val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
       __obj.asInstanceOf[WorkbookEvent]
     }
     
-    @scala.inline
-    implicit class WorkbookEventMutableBuilder[Self <: WorkbookEvent] (val x: Self) extends AnyVal {
+    extension [Self <: WorkbookEvent](x: Self) {
       
-      @scala.inline
-      def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
+      inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
+      inline def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSender(value: Workbook): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+      inline def setSender(value: Workbook): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
     }
   }
   
@@ -64,41 +59,30 @@ object ooxml {
   }
   object WorkbookOptions {
     
-    @scala.inline
-    def apply(): WorkbookOptions = {
+    inline def apply(): WorkbookOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WorkbookOptions]
     }
     
-    @scala.inline
-    implicit class WorkbookOptionsMutableBuilder[Self <: WorkbookOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WorkbookOptions](x: Self) {
       
-      @scala.inline
-      def setCreator(value: String): Self = StObject.set(x, "creator", value.asInstanceOf[js.Any])
+      inline def setCreator(value: String): Self = StObject.set(x, "creator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatorUndefined: Self = StObject.set(x, "creator", js.undefined)
+      inline def setCreatorUndefined: Self = StObject.set(x, "creator", js.undefined)
       
-      @scala.inline
-      def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setSheets(value: js.Array[WorkbookSheet]): Self = StObject.set(x, "sheets", value.asInstanceOf[js.Any])
+      inline def setSheets(value: js.Array[WorkbookSheet]): Self = StObject.set(x, "sheets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSheetsUndefined: Self = StObject.set(x, "sheets", js.undefined)
+      inline def setSheetsUndefined: Self = StObject.set(x, "sheets", js.undefined)
       
-      @scala.inline
-      def setSheetsVarargs(value: WorkbookSheet*): Self = StObject.set(x, "sheets", js.Array(value :_*))
+      inline def setSheetsVarargs(value: WorkbookSheet*): Self = StObject.set(x, "sheets", js.Array(value :_*))
     }
   }
   
@@ -126,80 +110,56 @@ object ooxml {
   }
   object WorkbookSheet {
     
-    @scala.inline
-    def apply(): WorkbookSheet = {
+    inline def apply(): WorkbookSheet = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WorkbookSheet]
     }
     
-    @scala.inline
-    implicit class WorkbookSheetMutableBuilder[Self <: WorkbookSheet] (val x: Self) extends AnyVal {
+    extension [Self <: WorkbookSheet](x: Self) {
       
-      @scala.inline
-      def setColumns(value: js.Array[WorkbookSheetColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: js.Array[WorkbookSheetColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+      inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      @scala.inline
-      def setColumnsVarargs(value: WorkbookSheetColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: WorkbookSheetColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
       
-      @scala.inline
-      def setFilter(value: WorkbookSheetFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: WorkbookSheetFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setFreezePane(value: WorkbookSheetFreezePane): Self = StObject.set(x, "freezePane", value.asInstanceOf[js.Any])
+      inline def setFreezePane(value: WorkbookSheetFreezePane): Self = StObject.set(x, "freezePane", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFreezePaneUndefined: Self = StObject.set(x, "freezePane", js.undefined)
+      inline def setFreezePaneUndefined: Self = StObject.set(x, "freezePane", js.undefined)
       
-      @scala.inline
-      def setFrozenColumns(value: Double): Self = StObject.set(x, "frozenColumns", value.asInstanceOf[js.Any])
+      inline def setFrozenColumns(value: Double): Self = StObject.set(x, "frozenColumns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrozenColumnsUndefined: Self = StObject.set(x, "frozenColumns", js.undefined)
+      inline def setFrozenColumnsUndefined: Self = StObject.set(x, "frozenColumns", js.undefined)
       
-      @scala.inline
-      def setFrozenRows(value: Double): Self = StObject.set(x, "frozenRows", value.asInstanceOf[js.Any])
+      inline def setFrozenRows(value: Double): Self = StObject.set(x, "frozenRows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrozenRowsUndefined: Self = StObject.set(x, "frozenRows", js.undefined)
+      inline def setFrozenRowsUndefined: Self = StObject.set(x, "frozenRows", js.undefined)
       
-      @scala.inline
-      def setMergedCells(value: js.Any): Self = StObject.set(x, "mergedCells", value.asInstanceOf[js.Any])
+      inline def setMergedCells(value: js.Any): Self = StObject.set(x, "mergedCells", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMergedCellsUndefined: Self = StObject.set(x, "mergedCells", js.undefined)
+      inline def setMergedCellsUndefined: Self = StObject.set(x, "mergedCells", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRows(value: js.Array[WorkbookSheetRow]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      inline def setRows(value: js.Array[WorkbookSheetRow]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+      inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
       
-      @scala.inline
-      def setRowsVarargs(value: WorkbookSheetRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
+      inline def setRowsVarargs(value: WorkbookSheetRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
       
-      @scala.inline
-      def setShowGridLines(value: Boolean): Self = StObject.set(x, "showGridLines", value.asInstanceOf[js.Any])
+      inline def setShowGridLines(value: Boolean): Self = StObject.set(x, "showGridLines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowGridLinesUndefined: Self = StObject.set(x, "showGridLines", js.undefined)
+      inline def setShowGridLinesUndefined: Self = StObject.set(x, "showGridLines", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -213,32 +173,24 @@ object ooxml {
   }
   object WorkbookSheetColumn {
     
-    @scala.inline
-    def apply(): WorkbookSheetColumn = {
+    inline def apply(): WorkbookSheetColumn = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WorkbookSheetColumn]
     }
     
-    @scala.inline
-    implicit class WorkbookSheetColumnMutableBuilder[Self <: WorkbookSheetColumn] (val x: Self) extends AnyVal {
+    extension [Self <: WorkbookSheetColumn](x: Self) {
       
-      @scala.inline
-      def setAutoWidth(value: Boolean): Self = StObject.set(x, "autoWidth", value.asInstanceOf[js.Any])
+      inline def setAutoWidth(value: Boolean): Self = StObject.set(x, "autoWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoWidthUndefined: Self = StObject.set(x, "autoWidth", js.undefined)
+      inline def setAutoWidthUndefined: Self = StObject.set(x, "autoWidth", js.undefined)
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -250,26 +202,20 @@ object ooxml {
   }
   object WorkbookSheetFilter {
     
-    @scala.inline
-    def apply(): WorkbookSheetFilter = {
+    inline def apply(): WorkbookSheetFilter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WorkbookSheetFilter]
     }
     
-    @scala.inline
-    implicit class WorkbookSheetFilterMutableBuilder[Self <: WorkbookSheetFilter] (val x: Self) extends AnyVal {
+    extension [Self <: WorkbookSheetFilter](x: Self) {
       
-      @scala.inline
-      def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
-      @scala.inline
-      def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     }
   }
   
@@ -281,26 +227,20 @@ object ooxml {
   }
   object WorkbookSheetFreezePane {
     
-    @scala.inline
-    def apply(): WorkbookSheetFreezePane = {
+    inline def apply(): WorkbookSheetFreezePane = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WorkbookSheetFreezePane]
     }
     
-    @scala.inline
-    implicit class WorkbookSheetFreezePaneMutableBuilder[Self <: WorkbookSheetFreezePane] (val x: Self) extends AnyVal {
+    extension [Self <: WorkbookSheetFreezePane](x: Self) {
       
-      @scala.inline
-      def setColSplit(value: Double): Self = StObject.set(x, "colSplit", value.asInstanceOf[js.Any])
+      inline def setColSplit(value: Double): Self = StObject.set(x, "colSplit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColSplitUndefined: Self = StObject.set(x, "colSplit", js.undefined)
+      inline def setColSplitUndefined: Self = StObject.set(x, "colSplit", js.undefined)
       
-      @scala.inline
-      def setRowSplit(value: Double): Self = StObject.set(x, "rowSplit", value.asInstanceOf[js.Any])
+      inline def setRowSplit(value: Double): Self = StObject.set(x, "rowSplit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowSplitUndefined: Self = StObject.set(x, "rowSplit", js.undefined)
+      inline def setRowSplitUndefined: Self = StObject.set(x, "rowSplit", js.undefined)
     }
   }
   
@@ -314,35 +254,26 @@ object ooxml {
   }
   object WorkbookSheetRow {
     
-    @scala.inline
-    def apply(): WorkbookSheetRow = {
+    inline def apply(): WorkbookSheetRow = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WorkbookSheetRow]
     }
     
-    @scala.inline
-    implicit class WorkbookSheetRowMutableBuilder[Self <: WorkbookSheetRow] (val x: Self) extends AnyVal {
+    extension [Self <: WorkbookSheetRow](x: Self) {
       
-      @scala.inline
-      def setCells(value: js.Array[WorkbookSheetRowCell]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
+      inline def setCells(value: js.Array[WorkbookSheetRowCell]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
+      inline def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
       
-      @scala.inline
-      def setCellsVarargs(value: WorkbookSheetRowCell*): Self = StObject.set(x, "cells", js.Array(value :_*))
+      inline def setCellsVarargs(value: WorkbookSheetRowCell*): Self = StObject.set(x, "cells", js.Array(value :_*))
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     }
   }
   
@@ -396,152 +327,104 @@ object ooxml {
   }
   object WorkbookSheetRowCell {
     
-    @scala.inline
-    def apply(): WorkbookSheetRowCell = {
+    inline def apply(): WorkbookSheetRowCell = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WorkbookSheetRowCell]
     }
     
-    @scala.inline
-    implicit class WorkbookSheetRowCellMutableBuilder[Self <: WorkbookSheetRowCell] (val x: Self) extends AnyVal {
+    extension [Self <: WorkbookSheetRowCell](x: Self) {
       
-      @scala.inline
-      def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+      inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
-      @scala.inline
-      def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
+      inline def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
+      inline def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
       
-      @scala.inline
-      def setBorderBottom(value: WorkbookSheetRowCellBorderBottom): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
+      inline def setBorderBottom(value: WorkbookSheetRowCellBorderBottom): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderBottomUndefined: Self = StObject.set(x, "borderBottom", js.undefined)
+      inline def setBorderBottomUndefined: Self = StObject.set(x, "borderBottom", js.undefined)
       
-      @scala.inline
-      def setBorderLeft(value: WorkbookSheetRowCellBorderLeft): Self = StObject.set(x, "borderLeft", value.asInstanceOf[js.Any])
+      inline def setBorderLeft(value: WorkbookSheetRowCellBorderLeft): Self = StObject.set(x, "borderLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderLeftUndefined: Self = StObject.set(x, "borderLeft", js.undefined)
+      inline def setBorderLeftUndefined: Self = StObject.set(x, "borderLeft", js.undefined)
       
-      @scala.inline
-      def setBorderRight(value: WorkbookSheetRowCellBorderRight): Self = StObject.set(x, "borderRight", value.asInstanceOf[js.Any])
+      inline def setBorderRight(value: WorkbookSheetRowCellBorderRight): Self = StObject.set(x, "borderRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderRightUndefined: Self = StObject.set(x, "borderRight", js.undefined)
+      inline def setBorderRightUndefined: Self = StObject.set(x, "borderRight", js.undefined)
       
-      @scala.inline
-      def setBorderTop(value: WorkbookSheetRowCellBorderTop): Self = StObject.set(x, "borderTop", value.asInstanceOf[js.Any])
+      inline def setBorderTop(value: WorkbookSheetRowCellBorderTop): Self = StObject.set(x, "borderTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderTopUndefined: Self = StObject.set(x, "borderTop", js.undefined)
+      inline def setBorderTopUndefined: Self = StObject.set(x, "borderTop", js.undefined)
       
-      @scala.inline
-      def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
+      inline def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColSpanUndefined: Self = StObject.set(x, "colSpan", js.undefined)
+      inline def setColSpanUndefined: Self = StObject.set(x, "colSpan", js.undefined)
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+      inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
+      inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
       
-      @scala.inline
-      def setFontName(value: String): Self = StObject.set(x, "fontName", value.asInstanceOf[js.Any])
+      inline def setFontName(value: String): Self = StObject.set(x, "fontName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontNameUndefined: Self = StObject.set(x, "fontName", js.undefined)
+      inline def setFontNameUndefined: Self = StObject.set(x, "fontName", js.undefined)
       
-      @scala.inline
-      def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+      inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setFormula(value: String): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
+      inline def setFormula(value: String): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
+      inline def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
       
-      @scala.inline
-      def setHAlign(value: String): Self = StObject.set(x, "hAlign", value.asInstanceOf[js.Any])
+      inline def setHAlign(value: String): Self = StObject.set(x, "hAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHAlignUndefined: Self = StObject.set(x, "hAlign", js.undefined)
+      inline def setHAlignUndefined: Self = StObject.set(x, "hAlign", js.undefined)
       
-      @scala.inline
-      def setIndex(value: js.Any): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: js.Any): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
+      inline def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
+      inline def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
       
-      @scala.inline
-      def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
+      inline def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
+      inline def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
       
-      @scala.inline
-      def setTextAlign(value: String): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+      inline def setTextAlign(value: String): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
+      inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
       
-      @scala.inline
-      def setUnderline(value: Boolean): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
+      inline def setUnderline(value: Boolean): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
+      inline def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
       
-      @scala.inline
-      def setVAlign(value: String): Self = StObject.set(x, "vAlign", value.asInstanceOf[js.Any])
+      inline def setVAlign(value: String): Self = StObject.set(x, "vAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVAlignUndefined: Self = StObject.set(x, "vAlign", js.undefined)
+      inline def setVAlignUndefined: Self = StObject.set(x, "vAlign", js.undefined)
       
-      @scala.inline
-      def setValue(value: Date | Double | String | Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Date | Double | String | Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      @scala.inline
-      def setVerticalAlign(value: String): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+      inline def setVerticalAlign(value: String): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
+      inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
       
-      @scala.inline
-      def setWrap(value: Boolean): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+      inline def setWrap(value: Boolean): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
+      inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
     }
   }
   
@@ -553,26 +436,20 @@ object ooxml {
   }
   object WorkbookSheetRowCellBorderBottom {
     
-    @scala.inline
-    def apply(): WorkbookSheetRowCellBorderBottom = {
+    inline def apply(): WorkbookSheetRowCellBorderBottom = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WorkbookSheetRowCellBorderBottom]
     }
     
-    @scala.inline
-    implicit class WorkbookSheetRowCellBorderBottomMutableBuilder[Self <: WorkbookSheetRowCellBorderBottom] (val x: Self) extends AnyVal {
+    extension [Self <: WorkbookSheetRowCellBorderBottom](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -584,26 +461,20 @@ object ooxml {
   }
   object WorkbookSheetRowCellBorderLeft {
     
-    @scala.inline
-    def apply(): WorkbookSheetRowCellBorderLeft = {
+    inline def apply(): WorkbookSheetRowCellBorderLeft = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WorkbookSheetRowCellBorderLeft]
     }
     
-    @scala.inline
-    implicit class WorkbookSheetRowCellBorderLeftMutableBuilder[Self <: WorkbookSheetRowCellBorderLeft] (val x: Self) extends AnyVal {
+    extension [Self <: WorkbookSheetRowCellBorderLeft](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -615,26 +486,20 @@ object ooxml {
   }
   object WorkbookSheetRowCellBorderRight {
     
-    @scala.inline
-    def apply(): WorkbookSheetRowCellBorderRight = {
+    inline def apply(): WorkbookSheetRowCellBorderRight = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WorkbookSheetRowCellBorderRight]
     }
     
-    @scala.inline
-    implicit class WorkbookSheetRowCellBorderRightMutableBuilder[Self <: WorkbookSheetRowCellBorderRight] (val x: Self) extends AnyVal {
+    extension [Self <: WorkbookSheetRowCellBorderRight](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -646,26 +511,20 @@ object ooxml {
   }
   object WorkbookSheetRowCellBorderTop {
     
-    @scala.inline
-    def apply(): WorkbookSheetRowCellBorderTop = {
+    inline def apply(): WorkbookSheetRowCellBorderTop = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WorkbookSheetRowCellBorderTop]
     }
     
-    @scala.inline
-    implicit class WorkbookSheetRowCellBorderTopMutableBuilder[Self <: WorkbookSheetRowCellBorderTop] (val x: Self) extends AnyVal {
+    extension [Self <: WorkbookSheetRowCellBorderTop](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
 }

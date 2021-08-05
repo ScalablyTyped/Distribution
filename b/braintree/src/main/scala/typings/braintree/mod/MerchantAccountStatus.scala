@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MerchantAccountStatus extends StObject
 object MerchantAccountStatus {
   
-  @scala.inline
-  def Active: typings.braintree.braintreeStrings.Active = "Active".asInstanceOf[typings.braintree.braintreeStrings.Active]
+  inline def Active: typings.braintree.braintreeStrings.Active = "Active".asInstanceOf[typings.braintree.braintreeStrings.Active]
   
-  @scala.inline
-  def Pending: typings.braintree.braintreeStrings.Pending = "Pending".asInstanceOf[typings.braintree.braintreeStrings.Pending]
+  inline def Pending: typings.braintree.braintreeStrings.Pending = "Pending".asInstanceOf[typings.braintree.braintreeStrings.Pending]
   
-  @scala.inline
-  def Suspended: typings.braintree.braintreeStrings.Suspended = "Suspended".asInstanceOf[typings.braintree.braintreeStrings.Suspended]
+  inline def Suspended: typings.braintree.braintreeStrings.Suspended = "Suspended".asInstanceOf[typings.braintree.braintreeStrings.Suspended]
 }

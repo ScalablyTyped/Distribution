@@ -75,73 +75,51 @@ trait ParamsResourceChangesList
 }
 object ParamsResourceChangesList {
   
-  @scala.inline
-  def apply(): ParamsResourceChangesList = {
+  inline def apply(): ParamsResourceChangesList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceChangesList]
   }
   
-  @scala.inline
-  implicit class ParamsResourceChangesListMutableBuilder[Self <: ParamsResourceChangesList] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceChangesList](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setIncludeCorpusRemovals(value: Boolean): Self = StObject.set(x, "includeCorpusRemovals", value.asInstanceOf[js.Any])
+    inline def setIncludeCorpusRemovals(value: Boolean): Self = StObject.set(x, "includeCorpusRemovals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeCorpusRemovalsUndefined: Self = StObject.set(x, "includeCorpusRemovals", js.undefined)
+    inline def setIncludeCorpusRemovalsUndefined: Self = StObject.set(x, "includeCorpusRemovals", js.undefined)
     
-    @scala.inline
-    def setIncludeRemoved(value: Boolean): Self = StObject.set(x, "includeRemoved", value.asInstanceOf[js.Any])
+    inline def setIncludeRemoved(value: Boolean): Self = StObject.set(x, "includeRemoved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeRemovedUndefined: Self = StObject.set(x, "includeRemoved", js.undefined)
+    inline def setIncludeRemovedUndefined: Self = StObject.set(x, "includeRemoved", js.undefined)
     
-    @scala.inline
-    def setIncludeTeamDriveItems(value: Boolean): Self = StObject.set(x, "includeTeamDriveItems", value.asInstanceOf[js.Any])
+    inline def setIncludeTeamDriveItems(value: Boolean): Self = StObject.set(x, "includeTeamDriveItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeTeamDriveItemsUndefined: Self = StObject.set(x, "includeTeamDriveItems", js.undefined)
+    inline def setIncludeTeamDriveItemsUndefined: Self = StObject.set(x, "includeTeamDriveItems", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setRestrictToMyDrive(value: Boolean): Self = StObject.set(x, "restrictToMyDrive", value.asInstanceOf[js.Any])
+    inline def setRestrictToMyDrive(value: Boolean): Self = StObject.set(x, "restrictToMyDrive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestrictToMyDriveUndefined: Self = StObject.set(x, "restrictToMyDrive", js.undefined)
+    inline def setRestrictToMyDriveUndefined: Self = StObject.set(x, "restrictToMyDrive", js.undefined)
     
-    @scala.inline
-    def setSpaces(value: String): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
+    inline def setSpaces(value: String): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpacesUndefined: Self = StObject.set(x, "spaces", js.undefined)
+    inline def setSpacesUndefined: Self = StObject.set(x, "spaces", js.undefined)
     
-    @scala.inline
-    def setSupportsTeamDrives(value: Boolean): Self = StObject.set(x, "supportsTeamDrives", value.asInstanceOf[js.Any])
+    inline def setSupportsTeamDrives(value: Boolean): Self = StObject.set(x, "supportsTeamDrives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsTeamDrivesUndefined: Self = StObject.set(x, "supportsTeamDrives", js.undefined)
+    inline def setSupportsTeamDrivesUndefined: Self = StObject.set(x, "supportsTeamDrives", js.undefined)
     
-    @scala.inline
-    def setTeamDriveId(value: String): Self = StObject.set(x, "teamDriveId", value.asInstanceOf[js.Any])
+    inline def setTeamDriveId(value: String): Self = StObject.set(x, "teamDriveId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeamDriveIdUndefined: Self = StObject.set(x, "teamDriveId", js.undefined)
+    inline def setTeamDriveIdUndefined: Self = StObject.set(x, "teamDriveId", js.undefined)
   }
 }

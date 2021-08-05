@@ -28,8 +28,7 @@ trait XCachedPrimitive
 }
 object XCachedPrimitive {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     redraw: ViewState => Double,
@@ -39,10 +38,8 @@ object XCachedPrimitive {
     __obj.asInstanceOf[XCachedPrimitive]
   }
   
-  @scala.inline
-  implicit class XCachedPrimitiveMutableBuilder[Self <: XCachedPrimitive] (val x: Self) extends AnyVal {
+  extension [Self <: XCachedPrimitive](x: Self) {
     
-    @scala.inline
-    def setRedraw(value: ViewState => Double): Self = StObject.set(x, "redraw", js.Any.fromFunction1(value))
+    inline def setRedraw(value: ViewState => Double): Self = StObject.set(x, "redraw", js.Any.fromFunction1(value))
   }
 }

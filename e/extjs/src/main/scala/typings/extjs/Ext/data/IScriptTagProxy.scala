@@ -30,43 +30,31 @@ trait IScriptTagProxy
 }
 object IScriptTagProxy {
   
-  @scala.inline
-  def apply(): IScriptTagProxy = {
+  inline def apply(): IScriptTagProxy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IScriptTagProxy]
   }
   
-  @scala.inline
-  implicit class IScriptTagProxyMutableBuilder[Self <: IScriptTagProxy] (val x: Self) extends AnyVal {
+  extension [Self <: IScriptTagProxy](x: Self) {
     
-    @scala.inline
-    def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
+    inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAbortUndefined: Self = StObject.set(x, "abort", js.undefined)
+    inline def setAbortUndefined: Self = StObject.set(x, "abort", js.undefined)
     
-    @scala.inline
-    def setAutoAppendParams(value: Boolean): Self = StObject.set(x, "autoAppendParams", value.asInstanceOf[js.Any])
+    inline def setAutoAppendParams(value: Boolean): Self = StObject.set(x, "autoAppendParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoAppendParamsUndefined: Self = StObject.set(x, "autoAppendParams", js.undefined)
+    inline def setAutoAppendParamsUndefined: Self = StObject.set(x, "autoAppendParams", js.undefined)
     
-    @scala.inline
-    def setCallbackKey(value: String): Self = StObject.set(x, "callbackKey", value.asInstanceOf[js.Any])
+    inline def setCallbackKey(value: String): Self = StObject.set(x, "callbackKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackKeyUndefined: Self = StObject.set(x, "callbackKey", js.undefined)
+    inline def setCallbackKeyUndefined: Self = StObject.set(x, "callbackKey", js.undefined)
     
-    @scala.inline
-    def setEncodeRecords(value: /* records */ js.UndefOr[Array] => Array): Self = StObject.set(x, "encodeRecords", js.Any.fromFunction1(value))
+    inline def setEncodeRecords(value: /* records */ js.UndefOr[Array] => Array): Self = StObject.set(x, "encodeRecords", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEncodeRecordsUndefined: Self = StObject.set(x, "encodeRecords", js.undefined)
+    inline def setEncodeRecordsUndefined: Self = StObject.set(x, "encodeRecords", js.undefined)
     
-    @scala.inline
-    def setRecordParam(value: String): Self = StObject.set(x, "recordParam", value.asInstanceOf[js.Any])
+    inline def setRecordParam(value: String): Self = StObject.set(x, "recordParam", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordParamUndefined: Self = StObject.set(x, "recordParam", js.undefined)
+    inline def setRecordParamUndefined: Self = StObject.set(x, "recordParam", js.undefined)
   }
 }

@@ -14,22 +14,17 @@ trait Details extends StObject {
 }
 object Details {
   
-  @scala.inline
-  def apply(Details: ApiVersion, Name: String, Version: String): Details = {
+  inline def apply(Details: ApiVersion, Name: String, Version: String): Details = {
     val __obj = js.Dynamic.literal(Details = Details.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Details]
   }
   
-  @scala.inline
-  implicit class DetailsMutableBuilder[Self <: Details] (val x: Self) extends AnyVal {
+  extension [Self <: Details](x: Self) {
     
-    @scala.inline
-    def setDetails(value: ApiVersion): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: ApiVersion): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
   }
 }

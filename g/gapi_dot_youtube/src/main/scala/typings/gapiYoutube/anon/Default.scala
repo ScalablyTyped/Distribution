@@ -18,22 +18,17 @@ trait Default extends StObject {
 }
 object Default {
   
-  @scala.inline
-  def apply(default: String, localized: js.Array[Language]): Default = {
+  inline def apply(default: String, localized: js.Array[Language]): Default = {
     val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], localized = localized.asInstanceOf[js.Any])
     __obj.asInstanceOf[Default]
   }
   
-  @scala.inline
-  implicit class DefaultMutableBuilder[Self <: Default] (val x: Self) extends AnyVal {
+  extension [Self <: Default](x: Self) {
     
-    @scala.inline
-    def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalized(value: js.Array[Language]): Self = StObject.set(x, "localized", value.asInstanceOf[js.Any])
+    inline def setLocalized(value: js.Array[Language]): Self = StObject.set(x, "localized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalizedVarargs(value: Language*): Self = StObject.set(x, "localized", js.Array(value :_*))
+    inline def setLocalizedVarargs(value: Language*): Self = StObject.set(x, "localized", js.Array(value :_*))
   }
 }

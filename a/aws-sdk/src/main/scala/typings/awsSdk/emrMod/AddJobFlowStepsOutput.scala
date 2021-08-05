@@ -13,22 +13,17 @@ trait AddJobFlowStepsOutput extends StObject {
 }
 object AddJobFlowStepsOutput {
   
-  @scala.inline
-  def apply(): AddJobFlowStepsOutput = {
+  inline def apply(): AddJobFlowStepsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddJobFlowStepsOutput]
   }
   
-  @scala.inline
-  implicit class AddJobFlowStepsOutputMutableBuilder[Self <: AddJobFlowStepsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: AddJobFlowStepsOutput](x: Self) {
     
-    @scala.inline
-    def setStepIds(value: StepIdsList): Self = StObject.set(x, "StepIds", value.asInstanceOf[js.Any])
+    inline def setStepIds(value: StepIdsList): Self = StObject.set(x, "StepIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepIdsUndefined: Self = StObject.set(x, "StepIds", js.undefined)
+    inline def setStepIdsUndefined: Self = StObject.set(x, "StepIds", js.undefined)
     
-    @scala.inline
-    def setStepIdsVarargs(value: XmlStringMaxLen256*): Self = StObject.set(x, "StepIds", js.Array(value :_*))
+    inline def setStepIdsVarargs(value: XmlStringMaxLen256*): Self = StObject.set(x, "StepIds", js.Array(value :_*))
   }
 }

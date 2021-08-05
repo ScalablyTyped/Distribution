@@ -15,9 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ClientState extends StObject
 object ClientState {
   
-  @scala.inline
-  def Offline: typings.xrm.xrmStrings.Offline = "Offline".asInstanceOf[typings.xrm.xrmStrings.Offline]
+  inline def Offline: typings.xrm.xrmStrings.Offline = "Offline".asInstanceOf[typings.xrm.xrmStrings.Offline]
   
-  @scala.inline
-  def Online: typings.xrm.xrmStrings.Online = "Online".asInstanceOf[typings.xrm.xrmStrings.Online]
+  inline def Online: typings.xrm.xrmStrings.Online = "Online".asInstanceOf[typings.xrm.xrmStrings.Online]
 }

@@ -14,31 +14,23 @@ trait ETBJPY extends StObject {
 }
 object ETBJPY {
   
-  @scala.inline
-  def apply(ETB: js.Array[String], JPY: js.Array[String], USD: js.Array[String]): ETBJPY = {
+  inline def apply(ETB: js.Array[String], JPY: js.Array[String], USD: js.Array[String]): ETBJPY = {
     val __obj = js.Dynamic.literal(ETB = ETB.asInstanceOf[js.Any], JPY = JPY.asInstanceOf[js.Any], USD = USD.asInstanceOf[js.Any])
     __obj.asInstanceOf[ETBJPY]
   }
   
-  @scala.inline
-  implicit class ETBJPYMutableBuilder[Self <: ETBJPY] (val x: Self) extends AnyVal {
+  extension [Self <: ETBJPY](x: Self) {
     
-    @scala.inline
-    def setETB(value: js.Array[String]): Self = StObject.set(x, "ETB", value.asInstanceOf[js.Any])
+    inline def setETB(value: js.Array[String]): Self = StObject.set(x, "ETB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setETBVarargs(value: String*): Self = StObject.set(x, "ETB", js.Array(value :_*))
+    inline def setETBVarargs(value: String*): Self = StObject.set(x, "ETB", js.Array(value :_*))
     
-    @scala.inline
-    def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
+    inline def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value :_*))
+    inline def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value :_*))
     
-    @scala.inline
-    def setUSD(value: js.Array[String]): Self = StObject.set(x, "USD", value.asInstanceOf[js.Any])
+    inline def setUSD(value: js.Array[String]): Self = StObject.set(x, "USD", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUSDVarargs(value: String*): Self = StObject.set(x, "USD", js.Array(value :_*))
+    inline def setUSDVarargs(value: String*): Self = StObject.set(x, "USD", js.Array(value :_*))
   }
 }

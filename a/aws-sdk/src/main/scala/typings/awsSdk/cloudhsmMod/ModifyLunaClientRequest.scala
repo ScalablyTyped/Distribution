@@ -18,19 +18,15 @@ trait ModifyLunaClientRequest extends StObject {
 }
 object ModifyLunaClientRequest {
   
-  @scala.inline
-  def apply(Certificate: Certificate, ClientArn: ClientArn): ModifyLunaClientRequest = {
+  inline def apply(Certificate: Certificate, ClientArn: ClientArn): ModifyLunaClientRequest = {
     val __obj = js.Dynamic.literal(Certificate = Certificate.asInstanceOf[js.Any], ClientArn = ClientArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyLunaClientRequest]
   }
   
-  @scala.inline
-  implicit class ModifyLunaClientRequestMutableBuilder[Self <: ModifyLunaClientRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyLunaClientRequest](x: Self) {
     
-    @scala.inline
-    def setCertificate(value: Certificate): Self = StObject.set(x, "Certificate", value.asInstanceOf[js.Any])
+    inline def setCertificate(value: Certificate): Self = StObject.set(x, "Certificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientArn(value: ClientArn): Self = StObject.set(x, "ClientArn", value.asInstanceOf[js.Any])
+    inline def setClientArn(value: ClientArn): Self = StObject.set(x, "ClientArn", value.asInstanceOf[js.Any])
   }
 }

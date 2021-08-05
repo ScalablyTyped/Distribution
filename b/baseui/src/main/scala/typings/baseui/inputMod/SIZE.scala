@@ -24,19 +24,14 @@ object SIZE {
   @js.native
   val ^ : SIZE = js.native
   
-  @scala.inline
-  implicit class SIZEMutableBuilder[Self <: SIZE] (val x: Self) extends AnyVal {
+  extension [Self <: SIZE](x: Self) {
     
-    @scala.inline
-    def setCompact(value: compact): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+    inline def setCompact(value: compact): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefault(value: default_): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: default_): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLarge(value: large_): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
+    inline def setLarge(value: large_): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMini(value: mini): Self = StObject.set(x, "mini", value.asInstanceOf[js.Any])
+    inline def setMini(value: mini): Self = StObject.set(x, "mini", value.asInstanceOf[js.Any])
   }
 }

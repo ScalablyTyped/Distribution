@@ -28,40 +28,29 @@ trait PipelineSummary extends StObject {
 }
 object PipelineSummary {
   
-  @scala.inline
-  def apply(): PipelineSummary = {
+  inline def apply(): PipelineSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PipelineSummary]
   }
   
-  @scala.inline
-  implicit class PipelineSummaryMutableBuilder[Self <: PipelineSummary] (val x: Self) extends AnyVal {
+  extension [Self <: PipelineSummary](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
-    @scala.inline
-    def setLastUpdateTime(value: Timestamp): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdateTime(value: Timestamp): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdateTimeUndefined: Self = StObject.set(x, "lastUpdateTime", js.undefined)
+    inline def setLastUpdateTimeUndefined: Self = StObject.set(x, "lastUpdateTime", js.undefined)
     
-    @scala.inline
-    def setPipelineName(value: PipelineName): Self = StObject.set(x, "pipelineName", value.asInstanceOf[js.Any])
+    inline def setPipelineName(value: PipelineName): Self = StObject.set(x, "pipelineName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipelineNameUndefined: Self = StObject.set(x, "pipelineName", js.undefined)
+    inline def setPipelineNameUndefined: Self = StObject.set(x, "pipelineName", js.undefined)
     
-    @scala.inline
-    def setReprocessingSummaries(value: ReprocessingSummaries): Self = StObject.set(x, "reprocessingSummaries", value.asInstanceOf[js.Any])
+    inline def setReprocessingSummaries(value: ReprocessingSummaries): Self = StObject.set(x, "reprocessingSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReprocessingSummariesUndefined: Self = StObject.set(x, "reprocessingSummaries", js.undefined)
+    inline def setReprocessingSummariesUndefined: Self = StObject.set(x, "reprocessingSummaries", js.undefined)
     
-    @scala.inline
-    def setReprocessingSummariesVarargs(value: ReprocessingSummary*): Self = StObject.set(x, "reprocessingSummaries", js.Array(value :_*))
+    inline def setReprocessingSummariesVarargs(value: ReprocessingSummary*): Self = StObject.set(x, "reprocessingSummaries", js.Array(value :_*))
   }
 }

@@ -30,8 +30,7 @@ trait XErrorHandler
 }
 object XErrorHandler {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     error: js.Any => Unit,
     fatalError: js.Any => Unit,
@@ -43,16 +42,12 @@ object XErrorHandler {
     __obj.asInstanceOf[XErrorHandler]
   }
   
-  @scala.inline
-  implicit class XErrorHandlerMutableBuilder[Self <: XErrorHandler] (val x: Self) extends AnyVal {
+  extension [Self <: XErrorHandler](x: Self) {
     
-    @scala.inline
-    def setError(value: js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFatalError(value: js.Any => Unit): Self = StObject.set(x, "fatalError", js.Any.fromFunction1(value))
+    inline def setFatalError(value: js.Any => Unit): Self = StObject.set(x, "fatalError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWarning(value: js.Any => Unit): Self = StObject.set(x, "warning", js.Any.fromFunction1(value))
+    inline def setWarning(value: js.Any => Unit): Self = StObject.set(x, "warning", js.Any.fromFunction1(value))
   }
 }

@@ -12,19 +12,15 @@ trait StrategyEnum extends StObject {
 }
 object StrategyEnum {
   
-  @scala.inline
-  def apply(attention: Double, entropy: Double): StrategyEnum = {
+  inline def apply(attention: Double, entropy: Double): StrategyEnum = {
     val __obj = js.Dynamic.literal(attention = attention.asInstanceOf[js.Any], entropy = entropy.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrategyEnum]
   }
   
-  @scala.inline
-  implicit class StrategyEnumMutableBuilder[Self <: StrategyEnum] (val x: Self) extends AnyVal {
+  extension [Self <: StrategyEnum](x: Self) {
     
-    @scala.inline
-    def setAttention(value: Double): Self = StObject.set(x, "attention", value.asInstanceOf[js.Any])
+    inline def setAttention(value: Double): Self = StObject.set(x, "attention", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntropy(value: Double): Self = StObject.set(x, "entropy", value.asInstanceOf[js.Any])
+    inline def setEntropy(value: Double): Self = StObject.set(x, "entropy", value.asInstanceOf[js.Any])
   }
 }

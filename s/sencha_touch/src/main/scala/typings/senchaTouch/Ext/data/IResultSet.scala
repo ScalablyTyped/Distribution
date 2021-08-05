@@ -90,121 +90,83 @@ trait IResultSet
 }
 object IResultSet {
   
-  @scala.inline
-  def apply(): IResultSet = {
+  inline def apply(): IResultSet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IResultSet]
   }
   
-  @scala.inline
-  implicit class IResultSetMutableBuilder[Self <: IResultSet] (val x: Self) extends AnyVal {
+  extension [Self <: IResultSet](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setGetCount(value: () => Double): Self = StObject.set(x, "getCount", js.Any.fromFunction0(value))
+    inline def setGetCount(value: () => Double): Self = StObject.set(x, "getCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCountUndefined: Self = StObject.set(x, "getCount", js.undefined)
+    inline def setGetCountUndefined: Self = StObject.set(x, "getCount", js.undefined)
     
-    @scala.inline
-    def setGetLoaded(value: () => Boolean): Self = StObject.set(x, "getLoaded", js.Any.fromFunction0(value))
+    inline def setGetLoaded(value: () => Boolean): Self = StObject.set(x, "getLoaded", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLoadedUndefined: Self = StObject.set(x, "getLoaded", js.undefined)
+    inline def setGetLoadedUndefined: Self = StObject.set(x, "getLoaded", js.undefined)
     
-    @scala.inline
-    def setGetMessage(value: () => String): Self = StObject.set(x, "getMessage", js.Any.fromFunction0(value))
+    inline def setGetMessage(value: () => String): Self = StObject.set(x, "getMessage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMessageUndefined: Self = StObject.set(x, "getMessage", js.undefined)
+    inline def setGetMessageUndefined: Self = StObject.set(x, "getMessage", js.undefined)
     
-    @scala.inline
-    def setGetRecords(value: () => Array): Self = StObject.set(x, "getRecords", js.Any.fromFunction0(value))
+    inline def setGetRecords(value: () => Array): Self = StObject.set(x, "getRecords", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRecordsUndefined: Self = StObject.set(x, "getRecords", js.undefined)
+    inline def setGetRecordsUndefined: Self = StObject.set(x, "getRecords", js.undefined)
     
-    @scala.inline
-    def setGetSuccess(value: () => Boolean): Self = StObject.set(x, "getSuccess", js.Any.fromFunction0(value))
+    inline def setGetSuccess(value: () => Boolean): Self = StObject.set(x, "getSuccess", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSuccessUndefined: Self = StObject.set(x, "getSuccess", js.undefined)
+    inline def setGetSuccessUndefined: Self = StObject.set(x, "getSuccess", js.undefined)
     
-    @scala.inline
-    def setGetTotal(value: () => Double): Self = StObject.set(x, "getTotal", js.Any.fromFunction0(value))
+    inline def setGetTotal(value: () => Double): Self = StObject.set(x, "getTotal", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTotalUndefined: Self = StObject.set(x, "getTotal", js.undefined)
+    inline def setGetTotalUndefined: Self = StObject.set(x, "getTotal", js.undefined)
     
-    @scala.inline
-    def setLoaded(value: Boolean): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+    inline def setLoaded(value: Boolean): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
+    inline def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setRecords(value: Array): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
+    inline def setRecords(value: Array): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordsUndefined: Self = StObject.set(x, "records", js.undefined)
+    inline def setRecordsUndefined: Self = StObject.set(x, "records", js.undefined)
     
-    @scala.inline
-    def setSetCount(value: /* count */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setCount", js.Any.fromFunction1(value))
+    inline def setSetCount(value: /* count */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setCount", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetCountUndefined: Self = StObject.set(x, "setCount", js.undefined)
+    inline def setSetCountUndefined: Self = StObject.set(x, "setCount", js.undefined)
     
-    @scala.inline
-    def setSetLoaded(value: /* loaded */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setLoaded", js.Any.fromFunction1(value))
+    inline def setSetLoaded(value: /* loaded */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setLoaded", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLoadedUndefined: Self = StObject.set(x, "setLoaded", js.undefined)
+    inline def setSetLoadedUndefined: Self = StObject.set(x, "setLoaded", js.undefined)
     
-    @scala.inline
-    def setSetMessage(value: /* message */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setMessage", js.Any.fromFunction1(value))
+    inline def setSetMessage(value: /* message */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setMessage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMessageUndefined: Self = StObject.set(x, "setMessage", js.undefined)
+    inline def setSetMessageUndefined: Self = StObject.set(x, "setMessage", js.undefined)
     
-    @scala.inline
-    def setSetRecords(value: /* records */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setRecords", js.Any.fromFunction1(value))
+    inline def setSetRecords(value: /* records */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setRecords", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRecordsUndefined: Self = StObject.set(x, "setRecords", js.undefined)
+    inline def setSetRecordsUndefined: Self = StObject.set(x, "setRecords", js.undefined)
     
-    @scala.inline
-    def setSetSuccess(value: /* success */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setSuccess", js.Any.fromFunction1(value))
+    inline def setSetSuccess(value: /* success */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setSuccess", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSuccessUndefined: Self = StObject.set(x, "setSuccess", js.undefined)
+    inline def setSetSuccessUndefined: Self = StObject.set(x, "setSuccess", js.undefined)
     
-    @scala.inline
-    def setSetTotal(value: /* total */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setTotal", js.Any.fromFunction1(value))
+    inline def setSetTotal(value: /* total */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setTotal", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTotalUndefined: Self = StObject.set(x, "setTotal", js.undefined)
+    inline def setSetTotalUndefined: Self = StObject.set(x, "setTotal", js.undefined)
     
-    @scala.inline
-    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
-    @scala.inline
-    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+    inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
   }
 }

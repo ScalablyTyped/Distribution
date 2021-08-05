@@ -8,22 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(recordProcessor: RecordProcessor): KCLManager = ^.asInstanceOf[js.Dynamic].apply(recordProcessor.asInstanceOf[js.Any]).asInstanceOf[KCLManager]
-  @scala.inline
-  def apply(recordProcessor: RecordProcessor, inputFile: Unit, outputFile: Unit, errorFile: WriteStream): KCLManager = (^.asInstanceOf[js.Dynamic].apply(recordProcessor.asInstanceOf[js.Any], inputFile.asInstanceOf[js.Any], outputFile.asInstanceOf[js.Any], errorFile.asInstanceOf[js.Any])).asInstanceOf[KCLManager]
-  @scala.inline
-  def apply(recordProcessor: RecordProcessor, inputFile: Unit, outputFile: WriteStream): KCLManager = (^.asInstanceOf[js.Dynamic].apply(recordProcessor.asInstanceOf[js.Any], inputFile.asInstanceOf[js.Any], outputFile.asInstanceOf[js.Any])).asInstanceOf[KCLManager]
-  @scala.inline
-  def apply(recordProcessor: RecordProcessor, inputFile: Unit, outputFile: WriteStream, errorFile: WriteStream): KCLManager = (^.asInstanceOf[js.Dynamic].apply(recordProcessor.asInstanceOf[js.Any], inputFile.asInstanceOf[js.Any], outputFile.asInstanceOf[js.Any], errorFile.asInstanceOf[js.Any])).asInstanceOf[KCLManager]
-  @scala.inline
-  def apply(recordProcessor: RecordProcessor, inputFile: ReadStream): KCLManager = (^.asInstanceOf[js.Dynamic].apply(recordProcessor.asInstanceOf[js.Any], inputFile.asInstanceOf[js.Any])).asInstanceOf[KCLManager]
-  @scala.inline
-  def apply(recordProcessor: RecordProcessor, inputFile: ReadStream, outputFile: Unit, errorFile: WriteStream): KCLManager = (^.asInstanceOf[js.Dynamic].apply(recordProcessor.asInstanceOf[js.Any], inputFile.asInstanceOf[js.Any], outputFile.asInstanceOf[js.Any], errorFile.asInstanceOf[js.Any])).asInstanceOf[KCLManager]
-  @scala.inline
-  def apply(recordProcessor: RecordProcessor, inputFile: ReadStream, outputFile: WriteStream): KCLManager = (^.asInstanceOf[js.Dynamic].apply(recordProcessor.asInstanceOf[js.Any], inputFile.asInstanceOf[js.Any], outputFile.asInstanceOf[js.Any])).asInstanceOf[KCLManager]
-  @scala.inline
-  def apply(
+  inline def apply(recordProcessor: RecordProcessor): KCLManager = ^.asInstanceOf[js.Dynamic].apply(recordProcessor.asInstanceOf[js.Any]).asInstanceOf[KCLManager]
+  inline def apply(recordProcessor: RecordProcessor, inputFile: Unit, outputFile: Unit, errorFile: WriteStream): KCLManager = (^.asInstanceOf[js.Dynamic].apply(recordProcessor.asInstanceOf[js.Any], inputFile.asInstanceOf[js.Any], outputFile.asInstanceOf[js.Any], errorFile.asInstanceOf[js.Any])).asInstanceOf[KCLManager]
+  inline def apply(recordProcessor: RecordProcessor, inputFile: Unit, outputFile: WriteStream): KCLManager = (^.asInstanceOf[js.Dynamic].apply(recordProcessor.asInstanceOf[js.Any], inputFile.asInstanceOf[js.Any], outputFile.asInstanceOf[js.Any])).asInstanceOf[KCLManager]
+  inline def apply(recordProcessor: RecordProcessor, inputFile: Unit, outputFile: WriteStream, errorFile: WriteStream): KCLManager = (^.asInstanceOf[js.Dynamic].apply(recordProcessor.asInstanceOf[js.Any], inputFile.asInstanceOf[js.Any], outputFile.asInstanceOf[js.Any], errorFile.asInstanceOf[js.Any])).asInstanceOf[KCLManager]
+  inline def apply(recordProcessor: RecordProcessor, inputFile: ReadStream): KCLManager = (^.asInstanceOf[js.Dynamic].apply(recordProcessor.asInstanceOf[js.Any], inputFile.asInstanceOf[js.Any])).asInstanceOf[KCLManager]
+  inline def apply(recordProcessor: RecordProcessor, inputFile: ReadStream, outputFile: Unit, errorFile: WriteStream): KCLManager = (^.asInstanceOf[js.Dynamic].apply(recordProcessor.asInstanceOf[js.Any], inputFile.asInstanceOf[js.Any], outputFile.asInstanceOf[js.Any], errorFile.asInstanceOf[js.Any])).asInstanceOf[KCLManager]
+  inline def apply(recordProcessor: RecordProcessor, inputFile: ReadStream, outputFile: WriteStream): KCLManager = (^.asInstanceOf[js.Dynamic].apply(recordProcessor.asInstanceOf[js.Any], inputFile.asInstanceOf[js.Any], outputFile.asInstanceOf[js.Any])).asInstanceOf[KCLManager]
+  inline def apply(
     recordProcessor: RecordProcessor,
     inputFile: ReadStream,
     outputFile: WriteStream,
@@ -61,17 +53,14 @@ object mod {
   }
   object CheckpointInput {
     
-    @scala.inline
-    def apply(checkpointer: Checkpointer): CheckpointInput = {
+    inline def apply(checkpointer: Checkpointer): CheckpointInput = {
       val __obj = js.Dynamic.literal(checkpointer = checkpointer.asInstanceOf[js.Any])
       __obj.asInstanceOf[CheckpointInput]
     }
     
-    @scala.inline
-    implicit class CheckpointInputMutableBuilder[Self <: CheckpointInput] (val x: Self) extends AnyVal {
+    extension [Self <: CheckpointInput](x: Self) {
       
-      @scala.inline
-      def setCheckpointer(value: Checkpointer): Self = StObject.set(x, "checkpointer", value.asInstanceOf[js.Any])
+      inline def setCheckpointer(value: Checkpointer): Self = StObject.set(x, "checkpointer", value.asInstanceOf[js.Any])
     }
   }
   
@@ -103,29 +92,22 @@ object mod {
   }
   object InitializeInput {
     
-    @scala.inline
-    def apply(shardId: String): InitializeInput = {
+    inline def apply(shardId: String): InitializeInput = {
       val __obj = js.Dynamic.literal(shardId = shardId.asInstanceOf[js.Any])
       __obj.asInstanceOf[InitializeInput]
     }
     
-    @scala.inline
-    implicit class InitializeInputMutableBuilder[Self <: InitializeInput] (val x: Self) extends AnyVal {
+    extension [Self <: InitializeInput](x: Self) {
       
-      @scala.inline
-      def setSequenceNumber(value: String): Self = StObject.set(x, "sequenceNumber", value.asInstanceOf[js.Any])
+      inline def setSequenceNumber(value: String): Self = StObject.set(x, "sequenceNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSequenceNumberUndefined: Self = StObject.set(x, "sequenceNumber", js.undefined)
+      inline def setSequenceNumberUndefined: Self = StObject.set(x, "sequenceNumber", js.undefined)
       
-      @scala.inline
-      def setShardId(value: String): Self = StObject.set(x, "shardId", value.asInstanceOf[js.Any])
+      inline def setShardId(value: String): Self = StObject.set(x, "shardId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubSequenceNumber(value: Double): Self = StObject.set(x, "subSequenceNumber", value.asInstanceOf[js.Any])
+      inline def setSubSequenceNumber(value: Double): Self = StObject.set(x, "subSequenceNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubSequenceNumberUndefined: Self = StObject.set(x, "subSequenceNumber", js.undefined)
+      inline def setSubSequenceNumberUndefined: Self = StObject.set(x, "subSequenceNumber", js.undefined)
     }
   }
   
@@ -137,20 +119,16 @@ object mod {
   }
   object KCLInput {
     
-    @scala.inline
-    def apply(recordProcessor: RecordProcessor, version: js.Symbol): KCLInput = {
+    inline def apply(recordProcessor: RecordProcessor, version: js.Symbol): KCLInput = {
       val __obj = js.Dynamic.literal(recordProcessor = recordProcessor.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[KCLInput]
     }
     
-    @scala.inline
-    implicit class KCLInputMutableBuilder[Self <: KCLInput] (val x: Self) extends AnyVal {
+    extension [Self <: KCLInput](x: Self) {
       
-      @scala.inline
-      def setRecordProcessor(value: RecordProcessor): Self = StObject.set(x, "recordProcessor", value.asInstanceOf[js.Any])
+      inline def setRecordProcessor(value: RecordProcessor): Self = StObject.set(x, "recordProcessor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: js.Symbol): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: js.Symbol): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -166,26 +144,20 @@ object mod {
   }
   object ProcessRecordsInput {
     
-    @scala.inline
-    def apply(checkpointer: Checkpointer, records: js.Array[Record]): ProcessRecordsInput = {
+    inline def apply(checkpointer: Checkpointer, records: js.Array[Record]): ProcessRecordsInput = {
       val __obj = js.Dynamic.literal(checkpointer = checkpointer.asInstanceOf[js.Any], records = records.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProcessRecordsInput]
     }
     
-    @scala.inline
-    implicit class ProcessRecordsInputMutableBuilder[Self <: ProcessRecordsInput] (val x: Self) extends AnyVal {
+    extension [Self <: ProcessRecordsInput](x: Self) {
       
-      @scala.inline
-      def setMillisBehindLatest(value: Double): Self = StObject.set(x, "millisBehindLatest", value.asInstanceOf[js.Any])
+      inline def setMillisBehindLatest(value: Double): Self = StObject.set(x, "millisBehindLatest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMillisBehindLatestUndefined: Self = StObject.set(x, "millisBehindLatest", js.undefined)
+      inline def setMillisBehindLatestUndefined: Self = StObject.set(x, "millisBehindLatest", js.undefined)
       
-      @scala.inline
-      def setRecords(value: js.Array[Record]): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
+      inline def setRecords(value: js.Array[Record]): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecordsVarargs(value: Record*): Self = StObject.set(x, "records", js.Array(value :_*))
+      inline def setRecordsVarargs(value: Record*): Self = StObject.set(x, "records", js.Array(value :_*))
     }
   }
   
@@ -199,23 +171,18 @@ object mod {
   }
   object Record {
     
-    @scala.inline
-    def apply(data: String, partitionKey: String, sequenceNumber: String): Record = {
+    inline def apply(data: String, partitionKey: String, sequenceNumber: String): Record = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], partitionKey = partitionKey.asInstanceOf[js.Any], sequenceNumber = sequenceNumber.asInstanceOf[js.Any])
       __obj.asInstanceOf[Record]
     }
     
-    @scala.inline
-    implicit class RecordMutableBuilder[Self <: Record] (val x: Self) extends AnyVal {
+    extension [Self <: Record](x: Self) {
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartitionKey(value: String): Self = StObject.set(x, "partitionKey", value.asInstanceOf[js.Any])
+      inline def setPartitionKey(value: String): Self = StObject.set(x, "partitionKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSequenceNumber(value: String): Self = StObject.set(x, "sequenceNumber", value.asInstanceOf[js.Any])
+      inline def setSequenceNumber(value: String): Self = StObject.set(x, "sequenceNumber", value.asInstanceOf[js.Any])
     }
   }
   
@@ -277,8 +244,7 @@ object mod {
   }
   object RecordProcessor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       initialize: (InitializeInput, Callback) => Unit,
       leaseLost: (LeaseLossInput, Callback) => Unit,
       processRecords: (ProcessRecordsInput, Callback) => Unit,
@@ -288,20 +254,15 @@ object mod {
       __obj.asInstanceOf[RecordProcessor]
     }
     
-    @scala.inline
-    implicit class RecordProcessorMutableBuilder[Self <: RecordProcessor] (val x: Self) extends AnyVal {
+    extension [Self <: RecordProcessor](x: Self) {
       
-      @scala.inline
-      def setInitialize(value: (InitializeInput, Callback) => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction2(value))
+      inline def setInitialize(value: (InitializeInput, Callback) => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLeaseLost(value: (LeaseLossInput, Callback) => Unit): Self = StObject.set(x, "leaseLost", js.Any.fromFunction2(value))
+      inline def setLeaseLost(value: (LeaseLossInput, Callback) => Unit): Self = StObject.set(x, "leaseLost", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setProcessRecords(value: (ProcessRecordsInput, Callback) => Unit): Self = StObject.set(x, "processRecords", js.Any.fromFunction2(value))
+      inline def setProcessRecords(value: (ProcessRecordsInput, Callback) => Unit): Self = StObject.set(x, "processRecords", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setShardEnded(value: (ShardEndedInput, Callback) => Unit): Self = StObject.set(x, "shardEnded", js.Any.fromFunction2(value))
+      inline def setShardEnded(value: (ShardEndedInput, Callback) => Unit): Self = StObject.set(x, "shardEnded", js.Any.fromFunction2(value))
     }
   }
   

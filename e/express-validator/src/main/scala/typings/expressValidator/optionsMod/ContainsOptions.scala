@@ -10,19 +10,15 @@ trait ContainsOptions extends StObject {
 }
 object ContainsOptions {
   
-  @scala.inline
-  def apply(): ContainsOptions = {
+  inline def apply(): ContainsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContainsOptions]
   }
   
-  @scala.inline
-  implicit class ContainsOptionsMutableBuilder[Self <: ContainsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ContainsOptions](x: Self) {
     
-    @scala.inline
-    def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
+    inline def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
+    inline def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
   }
 }

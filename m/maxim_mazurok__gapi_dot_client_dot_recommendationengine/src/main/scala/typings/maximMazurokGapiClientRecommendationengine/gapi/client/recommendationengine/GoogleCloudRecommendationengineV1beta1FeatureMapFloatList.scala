@@ -11,22 +11,17 @@ trait GoogleCloudRecommendationengineV1beta1FeatureMapFloatList extends StObject
 }
 object GoogleCloudRecommendationengineV1beta1FeatureMapFloatList {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommendationengineV1beta1FeatureMapFloatList = {
+  inline def apply(): GoogleCloudRecommendationengineV1beta1FeatureMapFloatList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1FeatureMapFloatList]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1FeatureMapFloatListMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1FeatureMapFloatList] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommendationengineV1beta1FeatureMapFloatList](x: Self) {
     
-    @scala.inline
-    def setValue(value: js.Array[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Array[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    @scala.inline
-    def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

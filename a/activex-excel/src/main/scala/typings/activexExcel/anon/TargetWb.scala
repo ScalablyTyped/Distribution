@@ -14,19 +14,15 @@ trait TargetWb extends StObject {
 }
 object TargetWb {
   
-  @scala.inline
-  def apply(Target: PivotTable, Wb: Workbook): TargetWb = {
+  inline def apply(Target: PivotTable, Wb: Workbook): TargetWb = {
     val __obj = js.Dynamic.literal(Target = Target.asInstanceOf[js.Any], Wb = Wb.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetWb]
   }
   
-  @scala.inline
-  implicit class TargetWbMutableBuilder[Self <: TargetWb] (val x: Self) extends AnyVal {
+  extension [Self <: TargetWb](x: Self) {
     
-    @scala.inline
-    def setTarget(value: PivotTable): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: PivotTable): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWb(value: Workbook): Self = StObject.set(x, "Wb", value.asInstanceOf[js.Any])
+    inline def setWb(value: Workbook): Self = StObject.set(x, "Wb", value.asInstanceOf[js.Any])
   }
 }

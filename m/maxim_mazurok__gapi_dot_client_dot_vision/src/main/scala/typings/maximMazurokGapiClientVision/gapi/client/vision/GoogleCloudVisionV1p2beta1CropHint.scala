@@ -17,31 +17,23 @@ trait GoogleCloudVisionV1p2beta1CropHint extends StObject {
 }
 object GoogleCloudVisionV1p2beta1CropHint {
   
-  @scala.inline
-  def apply(): GoogleCloudVisionV1p2beta1CropHint = {
+  inline def apply(): GoogleCloudVisionV1p2beta1CropHint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVisionV1p2beta1CropHint]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVisionV1p2beta1CropHintMutableBuilder[Self <: GoogleCloudVisionV1p2beta1CropHint] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVisionV1p2beta1CropHint](x: Self) {
     
-    @scala.inline
-    def setBoundingPoly(value: GoogleCloudVisionV1p2beta1BoundingPoly): Self = StObject.set(x, "boundingPoly", value.asInstanceOf[js.Any])
+    inline def setBoundingPoly(value: GoogleCloudVisionV1p2beta1BoundingPoly): Self = StObject.set(x, "boundingPoly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundingPolyUndefined: Self = StObject.set(x, "boundingPoly", js.undefined)
+    inline def setBoundingPolyUndefined: Self = StObject.set(x, "boundingPoly", js.undefined)
     
-    @scala.inline
-    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
     
-    @scala.inline
-    def setImportanceFraction(value: Double): Self = StObject.set(x, "importanceFraction", value.asInstanceOf[js.Any])
+    inline def setImportanceFraction(value: Double): Self = StObject.set(x, "importanceFraction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportanceFractionUndefined: Self = StObject.set(x, "importanceFraction", js.undefined)
+    inline def setImportanceFractionUndefined: Self = StObject.set(x, "importanceFraction", js.undefined)
   }
 }

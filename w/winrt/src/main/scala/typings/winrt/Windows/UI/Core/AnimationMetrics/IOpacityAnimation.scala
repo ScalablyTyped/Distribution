@@ -15,8 +15,7 @@ trait IOpacityAnimation
 }
 object IOpacityAnimation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     control1: Point,
     control2: Point,
     delay: Double,
@@ -30,13 +29,10 @@ object IOpacityAnimation {
     __obj.asInstanceOf[IOpacityAnimation]
   }
   
-  @scala.inline
-  implicit class IOpacityAnimationMutableBuilder[Self <: IOpacityAnimation] (val x: Self) extends AnyVal {
+  extension [Self <: IOpacityAnimation](x: Self) {
     
-    @scala.inline
-    def setFinalOpacity(value: Double): Self = StObject.set(x, "finalOpacity", value.asInstanceOf[js.Any])
+    inline def setFinalOpacity(value: Double): Self = StObject.set(x, "finalOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialOpacity(value: Double): Self = StObject.set(x, "initialOpacity", value.asInstanceOf[js.Any])
+    inline def setInitialOpacity(value: Double): Self = StObject.set(x, "initialOpacity", value.asInstanceOf[js.Any])
   }
 }

@@ -456,8 +456,7 @@ object Calls {
       * @return An asynchronous operation that returns a PhoneCallHistoryStore object on successful completion.
       */
     /* static member */
-    @scala.inline
-    def requestStoreAsync(accessType: PhoneCallHistoryStoreAccessType): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Calls.PhoneCallHistoryStore] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestStoreAsync")(accessType.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Calls.PhoneCallHistoryStore]]
+    inline def requestStoreAsync(accessType: PhoneCallHistoryStoreAccessType): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Calls.PhoneCallHistoryStore] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestStoreAsync")(accessType.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Calls.PhoneCallHistoryStore]]
   }
   
   /** The type of identifier that the PhoneCallHistoryEntry.SourceId refers to. */

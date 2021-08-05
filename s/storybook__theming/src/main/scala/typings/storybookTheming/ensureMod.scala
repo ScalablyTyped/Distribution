@@ -12,6 +12,5 @@ object ensureMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ensure(input: ThemeVars): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("ensure")(input.asInstanceOf[js.Any]).asInstanceOf[Theme]
+  inline def ensure(input: ThemeVars): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("ensure")(input.asInstanceOf[js.Any]).asInstanceOf[Theme]
 }

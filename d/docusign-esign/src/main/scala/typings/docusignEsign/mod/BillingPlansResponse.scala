@@ -13,22 +13,17 @@ trait BillingPlansResponse extends StObject {
 }
 object BillingPlansResponse {
   
-  @scala.inline
-  def apply(): BillingPlansResponse = {
+  inline def apply(): BillingPlansResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BillingPlansResponse]
   }
   
-  @scala.inline
-  implicit class BillingPlansResponseMutableBuilder[Self <: BillingPlansResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BillingPlansResponse](x: Self) {
     
-    @scala.inline
-    def setBillingPlans(value: js.Array[/* Contains information about a billing plan. */ BillingPlan]): Self = StObject.set(x, "billingPlans", value.asInstanceOf[js.Any])
+    inline def setBillingPlans(value: js.Array[/* Contains information about a billing plan. */ BillingPlan]): Self = StObject.set(x, "billingPlans", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillingPlansUndefined: Self = StObject.set(x, "billingPlans", js.undefined)
+    inline def setBillingPlansUndefined: Self = StObject.set(x, "billingPlans", js.undefined)
     
-    @scala.inline
-    def setBillingPlansVarargs(value: (/* Contains information about a billing plan. */ BillingPlan)*): Self = StObject.set(x, "billingPlans", js.Array(value :_*))
+    inline def setBillingPlansVarargs(value: (/* Contains information about a billing plan. */ BillingPlan)*): Self = StObject.set(x, "billingPlans", js.Array(value :_*))
   }
 }

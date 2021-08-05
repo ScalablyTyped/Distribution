@@ -67,8 +67,7 @@ object reporters {
       *
       * @see https://mochajs.org/api/module-base#.color
       */
-    @scala.inline
-    def color(`type`: String, str: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("color")(`type`.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def color(`type`: String, str: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("color")(`type`.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Default color map
@@ -93,32 +92,27 @@ object reporters {
       /**
         * Clears the line and moves to the beginning of the line.
         */
-      @scala.inline
-      def CR(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("CR")().asInstanceOf[Unit]
+      inline def CR(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("CR")().asInstanceOf[Unit]
       
       /**
         * Moves to the beginning of the line
         */
-      @scala.inline
-      def beginningOfLine(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beginningOfLine")().asInstanceOf[Unit]
+      inline def beginningOfLine(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beginningOfLine")().asInstanceOf[Unit]
       
       /**
         * Deletes the current line
         */
-      @scala.inline
-      def deleteLine(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteLine")().asInstanceOf[Unit]
+      inline def deleteLine(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteLine")().asInstanceOf[Unit]
       
       /**
         * Hides the cursor
         */
-      @scala.inline
-      def hide(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")().asInstanceOf[Unit]
+      inline def hide(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")().asInstanceOf[Unit]
       
       /**
         * Shows the cursor
         */
-      @scala.inline
-      def show(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")().asInstanceOf[Unit]
+      inline def show(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")().asInstanceOf[Unit]
     }
     
     /**
@@ -126,8 +120,7 @@ object reporters {
       *
       * @see https://mochajs.org/api/module-base#.generateDiff
       */
-    @scala.inline
-    def generateDiff(actual: String, expected: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateDiff")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def generateDiff(actual: String, expected: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateDiff")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Inline diffs instead of +/-
@@ -137,16 +130,14 @@ object reporters {
     @JSImport("mocha", "reporters.Base.inlineDiffs")
     @js.native
     def inlineDiffs: Boolean = js.native
-    @scala.inline
-    def inlineDiffs_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inlineDiffs")(x.asInstanceOf[js.Any])
+    inline def inlineDiffs_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inlineDiffs")(x.asInstanceOf[js.Any])
     
     /**
       * Output the given `failures` as a list.
       *
       * @see https://mochajs.org/api/Mocha.reporters.Base.html#.exports.list1
       */
-    @scala.inline
-    def list(failures: js.Array[Test]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(failures.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def list(failures: js.Array[Test]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(failures.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Default symbol map
@@ -165,8 +156,7 @@ object reporters {
     @JSImport("mocha", "reporters.Base.useColors")
     @js.native
     def useColors: Boolean = js.native
-    @scala.inline
-    def useColors_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("useColors")(x.asInstanceOf[js.Any])
+    inline def useColors_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("useColors")(x.asInstanceOf[js.Any])
     
     /**
       * Expose terminal window size
@@ -182,8 +172,7 @@ object reporters {
       @JSImport("mocha", "reporters.Base.window.width")
       @js.native
       def width: Double = js.native
-      @scala.inline
-      def width_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("width")(x.asInstanceOf[js.Any])
+      inline def width_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("width")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -566,28 +555,28 @@ object reporters {
     extends StObject
        with typings.mocha.Mocha.reporters.Nyan_ {
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var appendRainbow: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var colorIndex: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var cursorDown: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var cursorUp: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var draw: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var drawNyanCat: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var drawRainbow: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var drawScoreboard: js.Any = js.native
     
     /**
@@ -598,7 +587,7 @@ object reporters {
     /* CompleteClass */
     override def epilogue(): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var face: js.Any = js.native
     
     /**
@@ -607,16 +596,16 @@ object reporters {
     /* CompleteClass */
     var failures: js.Array[Test] = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var generateColors: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var numberOfLines: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var rainbowColors: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var rainbowify: js.Any = js.native
     
     /**
@@ -625,7 +614,7 @@ object reporters {
     /* CompleteClass */
     var runner: typings.mocha.Mocha.Runner = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var scoreboardWidth: js.Any = js.native
     
     /**
@@ -634,13 +623,13 @@ object reporters {
     /* CompleteClass */
     var stats: Stats = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var tick: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var trajectories: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var trajectoryWidthMax: js.Any = js.native
   }
   
@@ -880,8 +869,7 @@ object reporters {
       *
       * @see https://mochajs.org/api/module-base#.color
       */
-    @scala.inline
-    def color(`type`: String, str: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("color")(`type`.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def color(`type`: String, str: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("color")(`type`.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Default color map
@@ -906,32 +894,27 @@ object reporters {
       /**
         * Clears the line and moves to the beginning of the line.
         */
-      @scala.inline
-      def CR(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("CR")().asInstanceOf[Unit]
+      inline def CR(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("CR")().asInstanceOf[Unit]
       
       /**
         * Moves to the beginning of the line
         */
-      @scala.inline
-      def beginningOfLine(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beginningOfLine")().asInstanceOf[Unit]
+      inline def beginningOfLine(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beginningOfLine")().asInstanceOf[Unit]
       
       /**
         * Deletes the current line
         */
-      @scala.inline
-      def deleteLine(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteLine")().asInstanceOf[Unit]
+      inline def deleteLine(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteLine")().asInstanceOf[Unit]
       
       /**
         * Hides the cursor
         */
-      @scala.inline
-      def hide(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")().asInstanceOf[Unit]
+      inline def hide(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")().asInstanceOf[Unit]
       
       /**
         * Shows the cursor
         */
-      @scala.inline
-      def show(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")().asInstanceOf[Unit]
+      inline def show(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")().asInstanceOf[Unit]
     }
     
     /**
@@ -939,8 +922,7 @@ object reporters {
       *
       * @see https://mochajs.org/api/module-base#.generateDiff
       */
-    @scala.inline
-    def generateDiff(actual: String, expected: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateDiff")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def generateDiff(actual: String, expected: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateDiff")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Inline diffs instead of +/-
@@ -950,16 +932,14 @@ object reporters {
     @JSImport("mocha", "reporters.base.inlineDiffs")
     @js.native
     def inlineDiffs: Boolean = js.native
-    @scala.inline
-    def inlineDiffs_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inlineDiffs")(x.asInstanceOf[js.Any])
+    inline def inlineDiffs_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inlineDiffs")(x.asInstanceOf[js.Any])
     
     /**
       * Output the given `failures` as a list.
       *
       * @see https://mochajs.org/api/Mocha.reporters.Base.html#.exports.list1
       */
-    @scala.inline
-    def list(failures: js.Array[Test]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(failures.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def list(failures: js.Array[Test]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(failures.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Default symbol map
@@ -978,8 +958,7 @@ object reporters {
     @JSImport("mocha", "reporters.base.useColors")
     @js.native
     def useColors: Boolean = js.native
-    @scala.inline
-    def useColors_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("useColors")(x.asInstanceOf[js.Any])
+    inline def useColors_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("useColors")(x.asInstanceOf[js.Any])
     
     /**
       * Expose terminal window size
@@ -995,8 +974,7 @@ object reporters {
       @JSImport("mocha", "reporters.base.window.width")
       @js.native
       def width: Double = js.native
-      @scala.inline
-      def width_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("width")(x.asInstanceOf[js.Any])
+      inline def width_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("width")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -1311,28 +1289,28 @@ object reporters {
     extends StObject
        with typings.mocha.Mocha.reporters.Nyan_ {
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var appendRainbow: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var colorIndex: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var cursorDown: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var cursorUp: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var draw: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var drawNyanCat: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var drawRainbow: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var drawScoreboard: js.Any = js.native
     
     /**
@@ -1343,7 +1321,7 @@ object reporters {
     /* CompleteClass */
     override def epilogue(): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var face: js.Any = js.native
     
     /**
@@ -1352,16 +1330,16 @@ object reporters {
     /* CompleteClass */
     var failures: js.Array[Test] = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var generateColors: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var numberOfLines: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var rainbowColors: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var rainbowify: js.Any = js.native
     
     /**
@@ -1370,7 +1348,7 @@ object reporters {
     /* CompleteClass */
     var runner: typings.mocha.Mocha.Runner = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var scoreboardWidth: js.Any = js.native
     
     /**
@@ -1379,13 +1357,13 @@ object reporters {
     /* CompleteClass */
     var stats: Stats = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var tick: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var trajectories: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var trajectoryWidthMax: js.Any = js.native
   }
   

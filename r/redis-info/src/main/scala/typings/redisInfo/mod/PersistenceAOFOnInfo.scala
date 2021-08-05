@@ -25,8 +25,7 @@ trait PersistenceAOFOnInfo extends StObject {
 }
 object PersistenceAOFOnInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     aof_base_size: String,
     aof_buffer_length: String,
     aof_current_size: String,
@@ -40,31 +39,22 @@ object PersistenceAOFOnInfo {
     __obj.asInstanceOf[PersistenceAOFOnInfo]
   }
   
-  @scala.inline
-  implicit class PersistenceAOFOnInfoMutableBuilder[Self <: PersistenceAOFOnInfo] (val x: Self) extends AnyVal {
+  extension [Self <: PersistenceAOFOnInfo](x: Self) {
     
-    @scala.inline
-    def setAof_base_size(value: String): Self = StObject.set(x, "aof_base_size", value.asInstanceOf[js.Any])
+    inline def setAof_base_size(value: String): Self = StObject.set(x, "aof_base_size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAof_buffer_length(value: String): Self = StObject.set(x, "aof_buffer_length", value.asInstanceOf[js.Any])
+    inline def setAof_buffer_length(value: String): Self = StObject.set(x, "aof_buffer_length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAof_current_size(value: String): Self = StObject.set(x, "aof_current_size", value.asInstanceOf[js.Any])
+    inline def setAof_current_size(value: String): Self = StObject.set(x, "aof_current_size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAof_delayed_fsync(value: String): Self = StObject.set(x, "aof_delayed_fsync", value.asInstanceOf[js.Any])
+    inline def setAof_delayed_fsync(value: String): Self = StObject.set(x, "aof_delayed_fsync", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAof_enabled(value: ON): Self = StObject.set(x, "aof_enabled", value.asInstanceOf[js.Any])
+    inline def setAof_enabled(value: ON): Self = StObject.set(x, "aof_enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAof_pending_bio_fsync(value: String): Self = StObject.set(x, "aof_pending_bio_fsync", value.asInstanceOf[js.Any])
+    inline def setAof_pending_bio_fsync(value: String): Self = StObject.set(x, "aof_pending_bio_fsync", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAof_pending_rewrite(value: Flag): Self = StObject.set(x, "aof_pending_rewrite", value.asInstanceOf[js.Any])
+    inline def setAof_pending_rewrite(value: Flag): Self = StObject.set(x, "aof_pending_rewrite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAof_rewrite_buffer_length(value: String): Self = StObject.set(x, "aof_rewrite_buffer_length", value.asInstanceOf[js.Any])
+    inline def setAof_rewrite_buffer_length(value: String): Self = StObject.set(x, "aof_rewrite_buffer_length", value.asInstanceOf[js.Any])
   }
 }

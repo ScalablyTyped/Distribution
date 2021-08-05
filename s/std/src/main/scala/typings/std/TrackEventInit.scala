@@ -12,22 +12,17 @@ trait TrackEventInit
 }
 object TrackEventInit {
   
-  @scala.inline
-  def apply(): TrackEventInit = {
+  inline def apply(): TrackEventInit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrackEventInit]
   }
   
-  @scala.inline
-  implicit class TrackEventInitMutableBuilder[Self <: TrackEventInit] (val x: Self) extends AnyVal {
+  extension [Self <: TrackEventInit](x: Self) {
     
-    @scala.inline
-    def setTrack(value: TextTrack): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+    inline def setTrack(value: TextTrack): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackNull: Self = StObject.set(x, "track", null)
+    inline def setTrackNull: Self = StObject.set(x, "track", null)
     
-    @scala.inline
-    def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
+    inline def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
   }
 }

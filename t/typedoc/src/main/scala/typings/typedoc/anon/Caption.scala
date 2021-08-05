@@ -12,19 +12,15 @@ trait Caption extends StObject {
 }
 object Caption {
   
-  @scala.inline
-  def apply(caption: String, target: String): Caption = {
+  inline def apply(caption: String, target: String): Caption = {
     val __obj = js.Dynamic.literal(caption = caption.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[Caption]
   }
   
-  @scala.inline
-  implicit class CaptionMutableBuilder[Self <: Caption] (val x: Self) extends AnyVal {
+  extension [Self <: Caption](x: Self) {
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

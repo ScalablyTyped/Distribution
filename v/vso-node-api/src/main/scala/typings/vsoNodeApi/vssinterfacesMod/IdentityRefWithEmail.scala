@@ -12,8 +12,7 @@ trait IdentityRefWithEmail
 }
 object IdentityRefWithEmail {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     directoryAlias: String,
     displayName: String,
     id: String,
@@ -30,10 +29,8 @@ object IdentityRefWithEmail {
     __obj.asInstanceOf[IdentityRefWithEmail]
   }
   
-  @scala.inline
-  implicit class IdentityRefWithEmailMutableBuilder[Self <: IdentityRefWithEmail] (val x: Self) extends AnyVal {
+  extension [Self <: IdentityRefWithEmail](x: Self) {
     
-    @scala.inline
-    def setPreferredEmailAddress(value: String): Self = StObject.set(x, "preferredEmailAddress", value.asInstanceOf[js.Any])
+    inline def setPreferredEmailAddress(value: String): Self = StObject.set(x, "preferredEmailAddress", value.asInstanceOf[js.Any])
   }
 }

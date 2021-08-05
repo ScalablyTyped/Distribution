@@ -18,22 +18,17 @@ trait DeleteDomainRequest extends StObject {
 }
 object DeleteDomainRequest {
   
-  @scala.inline
-  def apply(DomainId: DomainId): DeleteDomainRequest = {
+  inline def apply(DomainId: DomainId): DeleteDomainRequest = {
     val __obj = js.Dynamic.literal(DomainId = DomainId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDomainRequest]
   }
   
-  @scala.inline
-  implicit class DeleteDomainRequestMutableBuilder[Self <: DeleteDomainRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDomainRequest](x: Self) {
     
-    @scala.inline
-    def setDomainId(value: DomainId): Self = StObject.set(x, "DomainId", value.asInstanceOf[js.Any])
+    inline def setDomainId(value: DomainId): Self = StObject.set(x, "DomainId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetentionPolicy(value: RetentionPolicy): Self = StObject.set(x, "RetentionPolicy", value.asInstanceOf[js.Any])
+    inline def setRetentionPolicy(value: RetentionPolicy): Self = StObject.set(x, "RetentionPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetentionPolicyUndefined: Self = StObject.set(x, "RetentionPolicy", js.undefined)
+    inline def setRetentionPolicyUndefined: Self = StObject.set(x, "RetentionPolicy", js.undefined)
   }
 }

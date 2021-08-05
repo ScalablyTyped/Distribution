@@ -21,23 +21,18 @@ trait HostObject
 }
 object HostObject {
   
-  @scala.inline
-  def apply(_id: String, common: HostCommon, native: HostNative): HostObject = {
+  inline def apply(_id: String, common: HostCommon, native: HostNative): HostObject = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("host")
     __obj.asInstanceOf[HostObject]
   }
   
-  @scala.inline
-  implicit class HostObjectMutableBuilder[Self <: HostObject] (val x: Self) extends AnyVal {
+  extension [Self <: HostObject](x: Self) {
     
-    @scala.inline
-    def setCommon(value: HostCommon): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
+    inline def setCommon(value: HostCommon): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNative(value: HostNative): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
+    inline def setNative(value: HostNative): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: host): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: host): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

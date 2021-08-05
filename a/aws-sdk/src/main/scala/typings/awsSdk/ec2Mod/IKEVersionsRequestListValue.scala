@@ -13,19 +13,15 @@ trait IKEVersionsRequestListValue extends StObject {
 }
 object IKEVersionsRequestListValue {
   
-  @scala.inline
-  def apply(): IKEVersionsRequestListValue = {
+  inline def apply(): IKEVersionsRequestListValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IKEVersionsRequestListValue]
   }
   
-  @scala.inline
-  implicit class IKEVersionsRequestListValueMutableBuilder[Self <: IKEVersionsRequestListValue] (val x: Self) extends AnyVal {
+  extension [Self <: IKEVersionsRequestListValue](x: Self) {
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

@@ -103,8 +103,7 @@ object usStreet {
   }
   object Analysis {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       active: String,
       cmra: String,
       dpvFootnotes: String,
@@ -120,38 +119,27 @@ object usStreet {
       __obj.asInstanceOf[Analysis]
     }
     
-    @scala.inline
-    implicit class AnalysisMutableBuilder[Self <: Analysis] (val x: Self) extends AnyVal {
+    extension [Self <: Analysis](x: Self) {
       
-      @scala.inline
-      def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCmra(value: String): Self = StObject.set(x, "cmra", value.asInstanceOf[js.Any])
+      inline def setCmra(value: String): Self = StObject.set(x, "cmra", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDpvFootnotes(value: String): Self = StObject.set(x, "dpvFootnotes", value.asInstanceOf[js.Any])
+      inline def setDpvFootnotes(value: String): Self = StObject.set(x, "dpvFootnotes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDpvMatchCode(value: String): Self = StObject.set(x, "dpvMatchCode", value.asInstanceOf[js.Any])
+      inline def setDpvMatchCode(value: String): Self = StObject.set(x, "dpvMatchCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFootnotes(value: String): Self = StObject.set(x, "footnotes", value.asInstanceOf[js.Any])
+      inline def setFootnotes(value: String): Self = StObject.set(x, "footnotes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEwsMatch(value: Boolean): Self = StObject.set(x, "isEwsMatch", value.asInstanceOf[js.Any])
+      inline def setIsEwsMatch(value: Boolean): Self = StObject.set(x, "isEwsMatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSuiteLinkMatch(value: Boolean): Self = StObject.set(x, "isSuiteLinkMatch", value.asInstanceOf[js.Any])
+      inline def setIsSuiteLinkMatch(value: Boolean): Self = StObject.set(x, "isSuiteLinkMatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLacsLinkCode(value: js.Any): Self = StObject.set(x, "lacsLinkCode", value.asInstanceOf[js.Any])
+      inline def setLacsLinkCode(value: js.Any): Self = StObject.set(x, "lacsLinkCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLacsLinkIndicator(value: js.Any): Self = StObject.set(x, "lacsLinkIndicator", value.asInstanceOf[js.Any])
+      inline def setLacsLinkIndicator(value: js.Any): Self = StObject.set(x, "lacsLinkIndicator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVacant(value: String): Self = StObject.set(x, "vacant", value.asInstanceOf[js.Any])
+      inline def setVacant(value: String): Self = StObject.set(x, "vacant", value.asInstanceOf[js.Any])
     }
   }
   
@@ -197,8 +185,7 @@ object usStreet {
   }
   object Componenet {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cityName: String,
       defaultCityName: String,
       deliveryPoint: String,
@@ -223,65 +210,45 @@ object usStreet {
       __obj.asInstanceOf[Componenet]
     }
     
-    @scala.inline
-    implicit class ComponenetMutableBuilder[Self <: Componenet] (val x: Self) extends AnyVal {
+    extension [Self <: Componenet](x: Self) {
       
-      @scala.inline
-      def setCityName(value: String): Self = StObject.set(x, "cityName", value.asInstanceOf[js.Any])
+      inline def setCityName(value: String): Self = StObject.set(x, "cityName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultCityName(value: String): Self = StObject.set(x, "defaultCityName", value.asInstanceOf[js.Any])
+      inline def setDefaultCityName(value: String): Self = StObject.set(x, "defaultCityName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeliveryPoint(value: String): Self = StObject.set(x, "deliveryPoint", value.asInstanceOf[js.Any])
+      inline def setDeliveryPoint(value: String): Self = StObject.set(x, "deliveryPoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeliveryPointCheckDigit(value: String): Self = StObject.set(x, "deliveryPointCheckDigit", value.asInstanceOf[js.Any])
+      inline def setDeliveryPointCheckDigit(value: String): Self = StObject.set(x, "deliveryPointCheckDigit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraSecondaryDesignator(value: js.Any): Self = StObject.set(x, "extraSecondaryDesignator", value.asInstanceOf[js.Any])
+      inline def setExtraSecondaryDesignator(value: js.Any): Self = StObject.set(x, "extraSecondaryDesignator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraSecondaryNumber(value: js.Any): Self = StObject.set(x, "extraSecondaryNumber", value.asInstanceOf[js.Any])
+      inline def setExtraSecondaryNumber(value: js.Any): Self = StObject.set(x, "extraSecondaryNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlus4Code(value: String): Self = StObject.set(x, "plus4Code", value.asInstanceOf[js.Any])
+      inline def setPlus4Code(value: String): Self = StObject.set(x, "plus4Code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPmbDesignator(value: js.Any): Self = StObject.set(x, "pmbDesignator", value.asInstanceOf[js.Any])
+      inline def setPmbDesignator(value: js.Any): Self = StObject.set(x, "pmbDesignator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPmbNumber(value: js.Any): Self = StObject.set(x, "pmbNumber", value.asInstanceOf[js.Any])
+      inline def setPmbNumber(value: js.Any): Self = StObject.set(x, "pmbNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryNumber(value: String): Self = StObject.set(x, "primaryNumber", value.asInstanceOf[js.Any])
+      inline def setPrimaryNumber(value: String): Self = StObject.set(x, "primaryNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondaryDesignator(value: String): Self = StObject.set(x, "secondaryDesignator", value.asInstanceOf[js.Any])
+      inline def setSecondaryDesignator(value: String): Self = StObject.set(x, "secondaryDesignator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondaryNumber(value: String): Self = StObject.set(x, "secondaryNumber", value.asInstanceOf[js.Any])
+      inline def setSecondaryNumber(value: String): Self = StObject.set(x, "secondaryNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreetName(value: String): Self = StObject.set(x, "streetName", value.asInstanceOf[js.Any])
+      inline def setStreetName(value: String): Self = StObject.set(x, "streetName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreetPostdirection(value: String): Self = StObject.set(x, "streetPostdirection", value.asInstanceOf[js.Any])
+      inline def setStreetPostdirection(value: String): Self = StObject.set(x, "streetPostdirection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreetPredirection(value: String): Self = StObject.set(x, "streetPredirection", value.asInstanceOf[js.Any])
+      inline def setStreetPredirection(value: String): Self = StObject.set(x, "streetPredirection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreetSuffix(value: String): Self = StObject.set(x, "streetSuffix", value.asInstanceOf[js.Any])
+      inline def setStreetSuffix(value: String): Self = StObject.set(x, "streetSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrbanization(value: String): Self = StObject.set(x, "urbanization", value.asInstanceOf[js.Any])
+      inline def setUrbanization(value: String): Self = StObject.set(x, "urbanization", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZipCode(value: String): Self = StObject.set(x, "zipCode", value.asInstanceOf[js.Any])
+      inline def setZipCode(value: String): Self = StObject.set(x, "zipCode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -323,8 +290,7 @@ object usStreet {
   }
   object Metadata {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       buildingDefaultIndicator: js.Any,
       carrierRoute: String,
       congressionalDistrict: String,
@@ -347,59 +313,41 @@ object usStreet {
       __obj.asInstanceOf[Metadata]
     }
     
-    @scala.inline
-    implicit class MetadataMutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
+    extension [Self <: Metadata](x: Self) {
       
-      @scala.inline
-      def setBuildingDefaultIndicator(value: js.Any): Self = StObject.set(x, "buildingDefaultIndicator", value.asInstanceOf[js.Any])
+      inline def setBuildingDefaultIndicator(value: js.Any): Self = StObject.set(x, "buildingDefaultIndicator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCarrierRoute(value: String): Self = StObject.set(x, "carrierRoute", value.asInstanceOf[js.Any])
+      inline def setCarrierRoute(value: String): Self = StObject.set(x, "carrierRoute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCongressionalDistrict(value: String): Self = StObject.set(x, "congressionalDistrict", value.asInstanceOf[js.Any])
+      inline def setCongressionalDistrict(value: String): Self = StObject.set(x, "congressionalDistrict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountyFips(value: String): Self = StObject.set(x, "countyFips", value.asInstanceOf[js.Any])
+      inline def setCountyFips(value: String): Self = StObject.set(x, "countyFips", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountyName(value: String): Self = StObject.set(x, "countyName", value.asInstanceOf[js.Any])
+      inline def setCountyName(value: String): Self = StObject.set(x, "countyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElotSequence(value: String): Self = StObject.set(x, "elotSequence", value.asInstanceOf[js.Any])
+      inline def setElotSequence(value: String): Self = StObject.set(x, "elotSequence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElotSort(value: String): Self = StObject.set(x, "elotSort", value.asInstanceOf[js.Any])
+      inline def setElotSort(value: String): Self = StObject.set(x, "elotSort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEwsMatch(value: Boolean): Self = StObject.set(x, "isEwsMatch", value.asInstanceOf[js.Any])
+      inline def setIsEwsMatch(value: Boolean): Self = StObject.set(x, "isEwsMatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+      inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+      inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObeysDst(value: Boolean): Self = StObject.set(x, "obeysDst", value.asInstanceOf[js.Any])
+      inline def setObeysDst(value: Boolean): Self = StObject.set(x, "obeysDst", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrecision(value: String): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+      inline def setPrecision(value: String): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRdi(value: String): Self = StObject.set(x, "rdi", value.asInstanceOf[js.Any])
+      inline def setRdi(value: String): Self = StObject.set(x, "rdi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecordType(value: String): Self = StObject.set(x, "recordType", value.asInstanceOf[js.Any])
+      inline def setRecordType(value: String): Self = StObject.set(x, "recordType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
+      inline def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUtcOffset(value: Double): Self = StObject.set(x, "utcOffset", value.asInstanceOf[js.Any])
+      inline def setUtcOffset(value: Double): Self = StObject.set(x, "utcOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZipType(value: String): Self = StObject.set(x, "zipType", value.asInstanceOf[js.Any])
+      inline def setZipType(value: String): Self = StObject.set(x, "zipType", value.asInstanceOf[js.Any])
     }
   }
 }

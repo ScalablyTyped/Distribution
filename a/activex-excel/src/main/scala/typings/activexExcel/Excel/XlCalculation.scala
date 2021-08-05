@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlCalculation extends StObject
 object XlCalculation {
   
-  @scala.inline
-  def xlCalculationAutomatic: `-4105` = -4105.asInstanceOf[`-4105`]
+  inline def xlCalculationAutomatic: `-4105` = -4105.asInstanceOf[`-4105`]
   
-  @scala.inline
-  def xlCalculationManual: `-4135` = -4135.asInstanceOf[`-4135`]
+  inline def xlCalculationManual: `-4135` = -4135.asInstanceOf[`-4135`]
   
-  @scala.inline
-  def xlCalculationSemiautomatic: `2` = 2.asInstanceOf[`2`]
+  inline def xlCalculationSemiautomatic: `2` = 2.asInstanceOf[`2`]
 }

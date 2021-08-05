@@ -79,7 +79,7 @@ trait RemoteItem extends StObject {
   
   var NoAging: Boolean = js.native
   
-  @JSName("Outlook.RemoteItem_typekey")
+  /* private */ @JSName("Outlook.RemoteItem_typekey")
   var OutlookDotRemoteItem_typekey: RemoteItem = js.native
   
   val OutlookInternalVersion: Double = js.native

@@ -13,22 +13,17 @@ trait SchemaBatchDeleteMessagesRequest extends StObject {
 }
 object SchemaBatchDeleteMessagesRequest {
   
-  @scala.inline
-  def apply(): SchemaBatchDeleteMessagesRequest = {
+  inline def apply(): SchemaBatchDeleteMessagesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBatchDeleteMessagesRequest]
   }
   
-  @scala.inline
-  implicit class SchemaBatchDeleteMessagesRequestMutableBuilder[Self <: SchemaBatchDeleteMessagesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBatchDeleteMessagesRequest](x: Self) {
     
-    @scala.inline
-    def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+    inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
+    inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
-    @scala.inline
-    def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
   }
 }

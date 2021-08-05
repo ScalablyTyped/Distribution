@@ -16,32 +16,24 @@ object anon {
   }
   object Diff {
     
-    @scala.inline
-    def apply(): Diff = {
+    inline def apply(): Diff = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Diff]
     }
     
-    @scala.inline
-    implicit class DiffMutableBuilder[Self <: Diff] (val x: Self) extends AnyVal {
+    extension [Self <: Diff](x: Self) {
       
-      @scala.inline
-      def setDiff(value: /* str */ String => String): Self = StObject.set(x, "diff", js.Any.fromFunction1(value))
+      inline def setDiff(value: /* str */ String => String): Self = StObject.set(x, "diff", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDiffUndefined: Self = StObject.set(x, "diff", js.undefined)
+      inline def setDiffUndefined: Self = StObject.set(x, "diff", js.undefined)
       
-      @scala.inline
-      def setSuccess(value: /* str */ String => String): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+      inline def setSuccess(value: /* str */ String => String): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+      inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
       
-      @scala.inline
-      def setWarning(value: /* str */ String => String): Self = StObject.set(x, "warning", js.Any.fromFunction1(value))
+      inline def setWarning(value: /* str */ String => String): Self = StObject.set(x, "warning", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+      inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
     }
   }
   
@@ -53,26 +45,20 @@ object anon {
   }
   object Info {
     
-    @scala.inline
-    def apply(): Info = {
+    inline def apply(): Info = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Info]
     }
     
-    @scala.inline
-    implicit class InfoMutableBuilder[Self <: Info] (val x: Self) extends AnyVal {
+    extension [Self <: Info](x: Self) {
       
-      @scala.inline
-      def setInfo(value: /* str */ String => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
+      inline def setInfo(value: /* str */ String => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
+      inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
       
-      @scala.inline
-      def setWarn(value: /* str */ String => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+      inline def setWarn(value: /* str */ String => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
+      inline def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
     }
   }
 }

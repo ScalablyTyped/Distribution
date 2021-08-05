@@ -22,28 +22,21 @@ trait SchemaMatchedDeveloperMetadata extends StObject {
 }
 object SchemaMatchedDeveloperMetadata {
   
-  @scala.inline
-  def apply(): SchemaMatchedDeveloperMetadata = {
+  inline def apply(): SchemaMatchedDeveloperMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMatchedDeveloperMetadata]
   }
   
-  @scala.inline
-  implicit class SchemaMatchedDeveloperMetadataMutableBuilder[Self <: SchemaMatchedDeveloperMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMatchedDeveloperMetadata](x: Self) {
     
-    @scala.inline
-    def setDataFilters(value: js.Array[SchemaDataFilter]): Self = StObject.set(x, "dataFilters", value.asInstanceOf[js.Any])
+    inline def setDataFilters(value: js.Array[SchemaDataFilter]): Self = StObject.set(x, "dataFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataFiltersUndefined: Self = StObject.set(x, "dataFilters", js.undefined)
+    inline def setDataFiltersUndefined: Self = StObject.set(x, "dataFilters", js.undefined)
     
-    @scala.inline
-    def setDataFiltersVarargs(value: SchemaDataFilter*): Self = StObject.set(x, "dataFilters", js.Array(value :_*))
+    inline def setDataFiltersVarargs(value: SchemaDataFilter*): Self = StObject.set(x, "dataFilters", js.Array(value :_*))
     
-    @scala.inline
-    def setDeveloperMetadata(value: SchemaDeveloperMetadata): Self = StObject.set(x, "developerMetadata", value.asInstanceOf[js.Any])
+    inline def setDeveloperMetadata(value: SchemaDeveloperMetadata): Self = StObject.set(x, "developerMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeveloperMetadataUndefined: Self = StObject.set(x, "developerMetadata", js.undefined)
+    inline def setDeveloperMetadataUndefined: Self = StObject.set(x, "developerMetadata", js.undefined)
   }
 }

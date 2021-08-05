@@ -14,22 +14,17 @@ trait ILocalizableOwner extends StObject {
 }
 object ILocalizableOwner {
   
-  @scala.inline
-  def apply(getLocale: () => String, getMarkdownHtml: String => String, getProcessedText: String => String): ILocalizableOwner = {
+  inline def apply(getLocale: () => String, getMarkdownHtml: String => String, getProcessedText: String => String): ILocalizableOwner = {
     val __obj = js.Dynamic.literal(getLocale = js.Any.fromFunction0(getLocale), getMarkdownHtml = js.Any.fromFunction1(getMarkdownHtml), getProcessedText = js.Any.fromFunction1(getProcessedText))
     __obj.asInstanceOf[ILocalizableOwner]
   }
   
-  @scala.inline
-  implicit class ILocalizableOwnerMutableBuilder[Self <: ILocalizableOwner] (val x: Self) extends AnyVal {
+  extension [Self <: ILocalizableOwner](x: Self) {
     
-    @scala.inline
-    def setGetLocale(value: () => String): Self = StObject.set(x, "getLocale", js.Any.fromFunction0(value))
+    inline def setGetLocale(value: () => String): Self = StObject.set(x, "getLocale", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMarkdownHtml(value: String => String): Self = StObject.set(x, "getMarkdownHtml", js.Any.fromFunction1(value))
+    inline def setGetMarkdownHtml(value: String => String): Self = StObject.set(x, "getMarkdownHtml", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetProcessedText(value: String => String): Self = StObject.set(x, "getProcessedText", js.Any.fromFunction1(value))
+    inline def setGetProcessedText(value: String => String): Self = StObject.set(x, "getProcessedText", js.Any.fromFunction1(value))
   }
 }

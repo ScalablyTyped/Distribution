@@ -35,8 +35,7 @@ trait IGeoXmlStats extends StObject {
 }
 object IGeoXmlStats {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fileSize: Double,
     numGroundOverlays: Double,
     numLocations: Double,
@@ -51,34 +50,24 @@ object IGeoXmlStats {
     __obj.asInstanceOf[IGeoXmlStats]
   }
   
-  @scala.inline
-  implicit class IGeoXmlStatsMutableBuilder[Self <: IGeoXmlStats] (val x: Self) extends AnyVal {
+  extension [Self <: IGeoXmlStats](x: Self) {
     
-    @scala.inline
-    def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
+    inline def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumGroundOverlays(value: Double): Self = StObject.set(x, "numGroundOverlays", value.asInstanceOf[js.Any])
+    inline def setNumGroundOverlays(value: Double): Self = StObject.set(x, "numGroundOverlays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumLocations(value: Double): Self = StObject.set(x, "numLocations", value.asInstanceOf[js.Any])
+    inline def setNumLocations(value: Double): Self = StObject.set(x, "numLocations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumNetworkLinks(value: Double): Self = StObject.set(x, "numNetworkLinks", value.asInstanceOf[js.Any])
+    inline def setNumNetworkLinks(value: Double): Self = StObject.set(x, "numNetworkLinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumPolygons(value: Double): Self = StObject.set(x, "numPolygons", value.asInstanceOf[js.Any])
+    inline def setNumPolygons(value: Double): Self = StObject.set(x, "numPolygons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumPolylines(value: Double): Self = StObject.set(x, "numPolylines", value.asInstanceOf[js.Any])
+    inline def setNumPolylines(value: Double): Self = StObject.set(x, "numPolylines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumPushpins(value: Double): Self = StObject.set(x, "numPushpins", value.asInstanceOf[js.Any])
+    inline def setNumPushpins(value: Double): Self = StObject.set(x, "numPushpins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumScreenOverlays(value: Double): Self = StObject.set(x, "numScreenOverlays", value.asInstanceOf[js.Any])
+    inline def setNumScreenOverlays(value: Double): Self = StObject.set(x, "numScreenOverlays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessingTime(value: Double): Self = StObject.set(x, "processingTime", value.asInstanceOf[js.Any])
+    inline def setProcessingTime(value: Double): Self = StObject.set(x, "processingTime", value.asInstanceOf[js.Any])
   }
 }

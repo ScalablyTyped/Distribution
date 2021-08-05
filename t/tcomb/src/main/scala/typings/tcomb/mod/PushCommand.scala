@@ -13,19 +13,15 @@ trait PushCommand
 }
 object PushCommand {
   
-  @scala.inline
-  def apply($push: js.Array[js.Any]): PushCommand = {
+  inline def apply($push: js.Array[js.Any]): PushCommand = {
     val __obj = js.Dynamic.literal($push = $push.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushCommand]
   }
   
-  @scala.inline
-  implicit class PushCommandMutableBuilder[Self <: PushCommand] (val x: Self) extends AnyVal {
+  extension [Self <: PushCommand](x: Self) {
     
-    @scala.inline
-    def set$push(value: js.Array[js.Any]): Self = StObject.set(x, "$push", value.asInstanceOf[js.Any])
+    inline def set$push(value: js.Array[js.Any]): Self = StObject.set(x, "$push", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$pushVarargs(value: js.Any*): Self = StObject.set(x, "$push", js.Array(value :_*))
+    inline def set$pushVarargs(value: js.Any*): Self = StObject.set(x, "$push", js.Array(value :_*))
   }
 }

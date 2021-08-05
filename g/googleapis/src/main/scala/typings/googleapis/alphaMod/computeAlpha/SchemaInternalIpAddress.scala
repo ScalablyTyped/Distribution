@@ -33,43 +33,31 @@ trait SchemaInternalIpAddress extends StObject {
 }
 object SchemaInternalIpAddress {
   
-  @scala.inline
-  def apply(): SchemaInternalIpAddress = {
+  inline def apply(): SchemaInternalIpAddress = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInternalIpAddress]
   }
   
-  @scala.inline
-  implicit class SchemaInternalIpAddressMutableBuilder[Self <: SchemaInternalIpAddress] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInternalIpAddress](x: Self) {
     
-    @scala.inline
-    def setCidr(value: String): Self = StObject.set(x, "cidr", value.asInstanceOf[js.Any])
+    inline def setCidr(value: String): Self = StObject.set(x, "cidr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidrUndefined: Self = StObject.set(x, "cidr", js.undefined)
+    inline def setCidrUndefined: Self = StObject.set(x, "cidr", js.undefined)
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setPurpose(value: String): Self = StObject.set(x, "purpose", value.asInstanceOf[js.Any])
+    inline def setPurpose(value: String): Self = StObject.set(x, "purpose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPurposeUndefined: Self = StObject.set(x, "purpose", js.undefined)
+    inline def setPurposeUndefined: Self = StObject.set(x, "purpose", js.undefined)
     
-    @scala.inline
-    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -26,8 +26,7 @@ trait SingleSelectQueryAnalyzer
      with XParametersSupplier
 object SingleSelectQueryAnalyzer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Columns: XNameAccess,
     Filter: String,
     Group: String,

@@ -36,71 +36,50 @@ object postingIgtvOptionsMod {
   }
   object PostingIgtvOptions {
     
-    @scala.inline
-    def apply(coverFrame: Buffer, title: String, video: Buffer): PostingIgtvOptions = {
+    inline def apply(coverFrame: Buffer, title: String, video: Buffer): PostingIgtvOptions = {
       val __obj = js.Dynamic.literal(coverFrame = coverFrame.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any])
       __obj.asInstanceOf[PostingIgtvOptions]
     }
     
-    @scala.inline
-    implicit class PostingIgtvOptionsMutableBuilder[Self <: PostingIgtvOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PostingIgtvOptions](x: Self) {
       
-      @scala.inline
-      def setAudioMuted(value: Boolean): Self = StObject.set(x, "audioMuted", value.asInstanceOf[js.Any])
+      inline def setAudioMuted(value: Boolean): Self = StObject.set(x, "audioMuted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAudioMutedUndefined: Self = StObject.set(x, "audioMuted", js.undefined)
+      inline def setAudioMutedUndefined: Self = StObject.set(x, "audioMuted", js.undefined)
       
-      @scala.inline
-      def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+      inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+      inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
       
-      @scala.inline
-      def setConfigureOptions(value: PartialMediaConfigureToIg): Self = StObject.set(x, "configureOptions", value.asInstanceOf[js.Any])
+      inline def setConfigureOptions(value: PartialMediaConfigureToIg): Self = StObject.set(x, "configureOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigureOptionsUndefined: Self = StObject.set(x, "configureOptions", js.undefined)
+      inline def setConfigureOptionsUndefined: Self = StObject.set(x, "configureOptions", js.undefined)
       
-      @scala.inline
-      def setCoverFrame(value: Buffer): Self = StObject.set(x, "coverFrame", value.asInstanceOf[js.Any])
+      inline def setCoverFrame(value: Buffer): Self = StObject.set(x, "coverFrame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeedPreviewCrop(value: Bottom): Self = StObject.set(x, "feedPreviewCrop", value.asInstanceOf[js.Any])
+      inline def setFeedPreviewCrop(value: Bottom): Self = StObject.set(x, "feedPreviewCrop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeedPreviewCropUndefined: Self = StObject.set(x, "feedPreviewCrop", js.undefined)
+      inline def setFeedPreviewCropUndefined: Self = StObject.set(x, "feedPreviewCrop", js.undefined)
       
-      @scala.inline
-      def setMaxTranscodeTries(value: Double): Self = StObject.set(x, "maxTranscodeTries", value.asInstanceOf[js.Any])
+      inline def setMaxTranscodeTries(value: Double): Self = StObject.set(x, "maxTranscodeTries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxTranscodeTriesUndefined: Self = StObject.set(x, "maxTranscodeTries", js.undefined)
+      inline def setMaxTranscodeTriesUndefined: Self = StObject.set(x, "maxTranscodeTries", js.undefined)
       
-      @scala.inline
-      def setShareToFeed(value: Boolean): Self = StObject.set(x, "shareToFeed", value.asInstanceOf[js.Any])
+      inline def setShareToFeed(value: Boolean): Self = StObject.set(x, "shareToFeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShareToFeedUndefined: Self = StObject.set(x, "shareToFeed", js.undefined)
+      inline def setShareToFeedUndefined: Self = StObject.set(x, "shareToFeed", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranscodeDelay(value: Double): Self = StObject.set(x, "transcodeDelay", value.asInstanceOf[js.Any])
+      inline def setTranscodeDelay(value: Double): Self = StObject.set(x, "transcodeDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranscodeDelayUndefined: Self = StObject.set(x, "transcodeDelay", js.undefined)
+      inline def setTranscodeDelayUndefined: Self = StObject.set(x, "transcodeDelay", js.undefined)
       
-      @scala.inline
-      def setUploadOptions(value: PartialUploadVideoOptions): Self = StObject.set(x, "uploadOptions", value.asInstanceOf[js.Any])
+      inline def setUploadOptions(value: PartialUploadVideoOptions): Self = StObject.set(x, "uploadOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploadOptionsUndefined: Self = StObject.set(x, "uploadOptions", js.undefined)
+      inline def setUploadOptionsUndefined: Self = StObject.set(x, "uploadOptions", js.undefined)
       
-      @scala.inline
-      def setVideo(value: Buffer): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+      inline def setVideo(value: Buffer): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     }
   }
 }

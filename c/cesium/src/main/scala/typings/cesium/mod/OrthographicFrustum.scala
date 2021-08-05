@@ -33,6 +33,5 @@ object OrthographicFrustum {
   @JSImport("cesium", "OrthographicFrustum.packedLength")
   @js.native
   def packedLength: Double = js.native
-  @scala.inline
-  def packedLength_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("packedLength")(x.asInstanceOf[js.Any])
+  inline def packedLength_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("packedLength")(x.asInstanceOf[js.Any])
 }

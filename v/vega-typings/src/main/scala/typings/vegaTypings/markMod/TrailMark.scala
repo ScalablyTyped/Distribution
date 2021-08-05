@@ -17,17 +17,14 @@ trait TrailMark
 }
 object TrailMark {
   
-  @scala.inline
-  def apply(): TrailMark = {
+  inline def apply(): TrailMark = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("trail")
     __obj.asInstanceOf[TrailMark]
   }
   
-  @scala.inline
-  implicit class TrailMarkMutableBuilder[Self <: TrailMark] (val x: Self) extends AnyVal {
+  extension [Self <: TrailMark](x: Self) {
     
-    @scala.inline
-    def setType(value: trail): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: trail): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

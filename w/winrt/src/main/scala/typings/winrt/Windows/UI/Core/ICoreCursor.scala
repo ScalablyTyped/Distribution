@@ -12,20 +12,16 @@ trait ICoreCursor extends StObject {
 }
 object ICoreCursor {
   
-  @scala.inline
-  def apply(id: Double, `type`: CoreCursorType): ICoreCursor = {
+  inline def apply(id: Double, `type`: CoreCursorType): ICoreCursor = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICoreCursor]
   }
   
-  @scala.inline
-  implicit class ICoreCursorMutableBuilder[Self <: ICoreCursor] (val x: Self) extends AnyVal {
+  extension [Self <: ICoreCursor](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: CoreCursorType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: CoreCursorType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

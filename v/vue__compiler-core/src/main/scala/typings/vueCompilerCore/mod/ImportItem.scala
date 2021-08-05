@@ -12,19 +12,15 @@ trait ImportItem extends StObject {
 }
 object ImportItem {
   
-  @scala.inline
-  def apply(exp: String | ExpressionNode, path: String): ImportItem = {
+  inline def apply(exp: String | ExpressionNode, path: String): ImportItem = {
     val __obj = js.Dynamic.literal(exp = exp.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportItem]
   }
   
-  @scala.inline
-  implicit class ImportItemMutableBuilder[Self <: ImportItem] (val x: Self) extends AnyVal {
+  extension [Self <: ImportItem](x: Self) {
     
-    @scala.inline
-    def setExp(value: String | ExpressionNode): Self = StObject.set(x, "exp", value.asInstanceOf[js.Any])
+    inline def setExp(value: String | ExpressionNode): Self = StObject.set(x, "exp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

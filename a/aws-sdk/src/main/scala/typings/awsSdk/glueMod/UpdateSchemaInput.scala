@@ -28,34 +28,25 @@ trait UpdateSchemaInput extends StObject {
 }
 object UpdateSchemaInput {
   
-  @scala.inline
-  def apply(SchemaId: SchemaId): UpdateSchemaInput = {
+  inline def apply(SchemaId: SchemaId): UpdateSchemaInput = {
     val __obj = js.Dynamic.literal(SchemaId = SchemaId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateSchemaInput]
   }
   
-  @scala.inline
-  implicit class UpdateSchemaInputMutableBuilder[Self <: UpdateSchemaInput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateSchemaInput](x: Self) {
     
-    @scala.inline
-    def setCompatibility(value: Compatibility): Self = StObject.set(x, "Compatibility", value.asInstanceOf[js.Any])
+    inline def setCompatibility(value: Compatibility): Self = StObject.set(x, "Compatibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompatibilityUndefined: Self = StObject.set(x, "Compatibility", js.undefined)
+    inline def setCompatibilityUndefined: Self = StObject.set(x, "Compatibility", js.undefined)
     
-    @scala.inline
-    def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setSchemaId(value: SchemaId): Self = StObject.set(x, "SchemaId", value.asInstanceOf[js.Any])
+    inline def setSchemaId(value: SchemaId): Self = StObject.set(x, "SchemaId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaVersionNumber(value: SchemaVersionNumber): Self = StObject.set(x, "SchemaVersionNumber", value.asInstanceOf[js.Any])
+    inline def setSchemaVersionNumber(value: SchemaVersionNumber): Self = StObject.set(x, "SchemaVersionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaVersionNumberUndefined: Self = StObject.set(x, "SchemaVersionNumber", js.undefined)
+    inline def setSchemaVersionNumberUndefined: Self = StObject.set(x, "SchemaVersionNumber", js.undefined)
   }
 }

@@ -18,22 +18,17 @@ trait BatchStopJobRunRequest extends StObject {
 }
 object BatchStopJobRunRequest {
   
-  @scala.inline
-  def apply(JobName: NameString, JobRunIds: BatchStopJobRunJobRunIdList): BatchStopJobRunRequest = {
+  inline def apply(JobName: NameString, JobRunIds: BatchStopJobRunJobRunIdList): BatchStopJobRunRequest = {
     val __obj = js.Dynamic.literal(JobName = JobName.asInstanceOf[js.Any], JobRunIds = JobRunIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchStopJobRunRequest]
   }
   
-  @scala.inline
-  implicit class BatchStopJobRunRequestMutableBuilder[Self <: BatchStopJobRunRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchStopJobRunRequest](x: Self) {
     
-    @scala.inline
-    def setJobName(value: NameString): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
+    inline def setJobName(value: NameString): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobRunIds(value: BatchStopJobRunJobRunIdList): Self = StObject.set(x, "JobRunIds", value.asInstanceOf[js.Any])
+    inline def setJobRunIds(value: BatchStopJobRunJobRunIdList): Self = StObject.set(x, "JobRunIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobRunIdsVarargs(value: IdString*): Self = StObject.set(x, "JobRunIds", js.Array(value :_*))
+    inline def setJobRunIdsVarargs(value: IdString*): Self = StObject.set(x, "JobRunIds", js.Array(value :_*))
   }
 }

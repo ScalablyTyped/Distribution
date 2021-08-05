@@ -13,16 +13,13 @@ trait GetRepositoryInput extends StObject {
 }
 object GetRepositoryInput {
   
-  @scala.inline
-  def apply(repositoryName: RepositoryName): GetRepositoryInput = {
+  inline def apply(repositoryName: RepositoryName): GetRepositoryInput = {
     val __obj = js.Dynamic.literal(repositoryName = repositoryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRepositoryInput]
   }
   
-  @scala.inline
-  implicit class GetRepositoryInputMutableBuilder[Self <: GetRepositoryInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetRepositoryInput](x: Self) {
     
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+    inline def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
   }
 }

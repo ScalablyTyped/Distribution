@@ -14,8 +14,7 @@ object headerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[DateType](props: CalendarHeaderProps[DateType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default[DateType](props: CalendarHeaderProps[DateType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait CalendarHeaderProps[DateType] extends StObject {
     
@@ -39,8 +38,7 @@ object headerMod {
   }
   object CalendarHeaderProps {
     
-    @scala.inline
-    def apply[DateType](
+    inline def apply[DateType](
       fullscreen: Boolean,
       generateConfig: GenerateConfig[DateType],
       locale: Locale,
@@ -54,38 +52,27 @@ object headerMod {
       __obj.asInstanceOf[CalendarHeaderProps[DateType]]
     }
     
-    @scala.inline
-    implicit class CalendarHeaderPropsMutableBuilder[Self <: CalendarHeaderProps[?], DateType] (val x: Self & CalendarHeaderProps[DateType]) extends AnyVal {
+    extension [Self <: CalendarHeaderProps[?], DateType](x: Self & CalendarHeaderProps[DateType]) {
       
-      @scala.inline
-      def setFullscreen(value: Boolean): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
+      inline def setFullscreen(value: Boolean): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenerateConfig(value: GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
+      inline def setGenerateConfig(value: GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMode(value: CalendarMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: CalendarMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnChange(value: DateType => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: DateType => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnModeChange(value: CalendarMode => Unit): Self = StObject.set(x, "onModeChange", js.Any.fromFunction1(value))
+      inline def setOnModeChange(value: CalendarMode => Unit): Self = StObject.set(x, "onModeChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidRange(value: js.Tuple2[DateType, DateType]): Self = StObject.set(x, "validRange", value.asInstanceOf[js.Any])
+      inline def setValidRange(value: js.Tuple2[DateType, DateType]): Self = StObject.set(x, "validRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidRangeUndefined: Self = StObject.set(x, "validRange", js.undefined)
+      inline def setValidRangeUndefined: Self = StObject.set(x, "validRange", js.undefined)
       
-      @scala.inline
-      def setValue(value: DateType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: DateType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -26,8 +26,7 @@ trait MUIDataTableTextLabels extends StObject {
 }
 object MUIDataTableTextLabels {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     body: PartialMUIDataTableTextLa,
     filter: PartialMUIDataTableTextLaAll,
     pagination: PartialMUIDataTableTextLaDisplayRows,
@@ -39,25 +38,18 @@ object MUIDataTableTextLabels {
     __obj.asInstanceOf[MUIDataTableTextLabels]
   }
   
-  @scala.inline
-  implicit class MUIDataTableTextLabelsMutableBuilder[Self <: MUIDataTableTextLabels] (val x: Self) extends AnyVal {
+  extension [Self <: MUIDataTableTextLabels](x: Self) {
     
-    @scala.inline
-    def setBody(value: PartialMUIDataTableTextLa): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: PartialMUIDataTableTextLa): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilter(value: PartialMUIDataTableTextLaAll): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: PartialMUIDataTableTextLaAll): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagination(value: PartialMUIDataTableTextLaDisplayRows): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
+    inline def setPagination(value: PartialMUIDataTableTextLaDisplayRows): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedRows(value: PartialMUIDataTableTextLaDelete): Self = StObject.set(x, "selectedRows", value.asInstanceOf[js.Any])
+    inline def setSelectedRows(value: PartialMUIDataTableTextLaDelete): Self = StObject.set(x, "selectedRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolbar(value: PartialMUIDataTableTextLaDownloadCsv): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
+    inline def setToolbar(value: PartialMUIDataTableTextLaDownloadCsv): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewColumns(value: PartialMUIDataTableTextLaTitle): Self = StObject.set(x, "viewColumns", value.asInstanceOf[js.Any])
+    inline def setViewColumns(value: PartialMUIDataTableTextLaTitle): Self = StObject.set(x, "viewColumns", value.asInstanceOf[js.Any])
   }
 }

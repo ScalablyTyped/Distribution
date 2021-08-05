@@ -9,10 +9,8 @@ object dateFnsSetISODayIndexMod {
   
   object default {
     
-    @scala.inline
-    def apply(date: Double, day: Double): Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], day.asInstanceOf[js.Any])).asInstanceOf[Date]
-    @scala.inline
-    def apply(date: Date, day: Double): Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], day.asInstanceOf[js.Any])).asInstanceOf[Date]
+    inline def apply(date: Double, day: Double): Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], day.asInstanceOf[js.Any])).asInstanceOf[Date]
+    inline def apply(date: Date, day: Double): Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], day.asInstanceOf[js.Any])).asInstanceOf[Date]
     
     @JSImport("date-fns/setISODay/index", JSImport.Default)
     @js.native

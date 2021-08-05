@@ -79,49 +79,35 @@ trait SchemaEphemeralIdRegistration extends StObject {
 }
 object SchemaEphemeralIdRegistration {
   
-  @scala.inline
-  def apply(): SchemaEphemeralIdRegistration = {
+  inline def apply(): SchemaEphemeralIdRegistration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEphemeralIdRegistration]
   }
   
-  @scala.inline
-  implicit class SchemaEphemeralIdRegistrationMutableBuilder[Self <: SchemaEphemeralIdRegistration] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaEphemeralIdRegistration](x: Self) {
     
-    @scala.inline
-    def setBeaconEcdhPublicKey(value: String): Self = StObject.set(x, "beaconEcdhPublicKey", value.asInstanceOf[js.Any])
+    inline def setBeaconEcdhPublicKey(value: String): Self = StObject.set(x, "beaconEcdhPublicKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeaconEcdhPublicKeyUndefined: Self = StObject.set(x, "beaconEcdhPublicKey", js.undefined)
+    inline def setBeaconEcdhPublicKeyUndefined: Self = StObject.set(x, "beaconEcdhPublicKey", js.undefined)
     
-    @scala.inline
-    def setBeaconIdentityKey(value: String): Self = StObject.set(x, "beaconIdentityKey", value.asInstanceOf[js.Any])
+    inline def setBeaconIdentityKey(value: String): Self = StObject.set(x, "beaconIdentityKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeaconIdentityKeyUndefined: Self = StObject.set(x, "beaconIdentityKey", js.undefined)
+    inline def setBeaconIdentityKeyUndefined: Self = StObject.set(x, "beaconIdentityKey", js.undefined)
     
-    @scala.inline
-    def setInitialClockValue(value: String): Self = StObject.set(x, "initialClockValue", value.asInstanceOf[js.Any])
+    inline def setInitialClockValue(value: String): Self = StObject.set(x, "initialClockValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialClockValueUndefined: Self = StObject.set(x, "initialClockValue", js.undefined)
+    inline def setInitialClockValueUndefined: Self = StObject.set(x, "initialClockValue", js.undefined)
     
-    @scala.inline
-    def setInitialEid(value: String): Self = StObject.set(x, "initialEid", value.asInstanceOf[js.Any])
+    inline def setInitialEid(value: String): Self = StObject.set(x, "initialEid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialEidUndefined: Self = StObject.set(x, "initialEid", js.undefined)
+    inline def setInitialEidUndefined: Self = StObject.set(x, "initialEid", js.undefined)
     
-    @scala.inline
-    def setRotationPeriodExponent(value: Double): Self = StObject.set(x, "rotationPeriodExponent", value.asInstanceOf[js.Any])
+    inline def setRotationPeriodExponent(value: Double): Self = StObject.set(x, "rotationPeriodExponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotationPeriodExponentUndefined: Self = StObject.set(x, "rotationPeriodExponent", js.undefined)
+    inline def setRotationPeriodExponentUndefined: Self = StObject.set(x, "rotationPeriodExponent", js.undefined)
     
-    @scala.inline
-    def setServiceEcdhPublicKey(value: String): Self = StObject.set(x, "serviceEcdhPublicKey", value.asInstanceOf[js.Any])
+    inline def setServiceEcdhPublicKey(value: String): Self = StObject.set(x, "serviceEcdhPublicKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceEcdhPublicKeyUndefined: Self = StObject.set(x, "serviceEcdhPublicKey", js.undefined)
+    inline def setServiceEcdhPublicKeyUndefined: Self = StObject.set(x, "serviceEcdhPublicKey", js.undefined)
   }
 }

@@ -16,31 +16,23 @@ trait MultiFactorInfo extends StObject {
 }
 object MultiFactorInfo {
   
-  @scala.inline
-  def apply(enrollmentTime: String, factorId: String, uid: String): MultiFactorInfo = {
+  inline def apply(enrollmentTime: String, factorId: String, uid: String): MultiFactorInfo = {
     val __obj = js.Dynamic.literal(enrollmentTime = enrollmentTime.asInstanceOf[js.Any], factorId = factorId.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiFactorInfo]
   }
   
-  @scala.inline
-  implicit class MultiFactorInfoMutableBuilder[Self <: MultiFactorInfo] (val x: Self) extends AnyVal {
+  extension [Self <: MultiFactorInfo](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setEnrollmentTime(value: String): Self = StObject.set(x, "enrollmentTime", value.asInstanceOf[js.Any])
+    inline def setEnrollmentTime(value: String): Self = StObject.set(x, "enrollmentTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFactorId(value: String): Self = StObject.set(x, "factorId", value.asInstanceOf[js.Any])
+    inline def setFactorId(value: String): Self = StObject.set(x, "factorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+    inline def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
   }
 }

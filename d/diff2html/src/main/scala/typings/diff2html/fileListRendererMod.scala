@@ -12,6 +12,5 @@ object fileListRendererMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def render(diffFiles: js.Array[DiffFile], hoganUtils: default): String = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(diffFiles.asInstanceOf[js.Any], hoganUtils.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def render(diffFiles: js.Array[DiffFile], hoganUtils: default): String = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(diffFiles.asInstanceOf[js.Any], hoganUtils.asInstanceOf[js.Any])).asInstanceOf[String]
 }

@@ -22,20 +22,16 @@ object textAreaSkeletonMod extends Shortcut {
   }
   object TextAreaSkeletonProps {
     
-    @scala.inline
-    def apply(): TextAreaSkeletonProps = {
+    inline def apply(): TextAreaSkeletonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TextAreaSkeletonProps]
     }
     
-    @scala.inline
-    implicit class TextAreaSkeletonPropsMutableBuilder[Self <: TextAreaSkeletonProps] (val x: Self) extends AnyVal {
+    extension [Self <: TextAreaSkeletonProps](x: Self) {
       
-      @scala.inline
-      def setHideLabel(value: Boolean): Self = StObject.set(x, "hideLabel", value.asInstanceOf[js.Any])
+      inline def setHideLabel(value: Boolean): Self = StObject.set(x, "hideLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideLabelUndefined: Self = StObject.set(x, "hideLabel", js.undefined)
+      inline def setHideLabelUndefined: Self = StObject.set(x, "hideLabel", js.undefined)
     }
   }
   

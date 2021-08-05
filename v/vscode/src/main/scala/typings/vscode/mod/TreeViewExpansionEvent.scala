@@ -13,16 +13,13 @@ trait TreeViewExpansionEvent[T] extends StObject {
 }
 object TreeViewExpansionEvent {
   
-  @scala.inline
-  def apply[T](element: T): TreeViewExpansionEvent[T] = {
+  inline def apply[T](element: T): TreeViewExpansionEvent[T] = {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeViewExpansionEvent[T]]
   }
   
-  @scala.inline
-  implicit class TreeViewExpansionEventMutableBuilder[Self <: TreeViewExpansionEvent[?], T] (val x: Self & TreeViewExpansionEvent[T]) extends AnyVal {
+  extension [Self <: TreeViewExpansionEvent[?], T](x: Self & TreeViewExpansionEvent[T]) {
     
-    @scala.inline
-    def setElement(value: T): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: T): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
   }
 }

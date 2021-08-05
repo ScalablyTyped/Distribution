@@ -14,8 +14,7 @@ trait CustomEvent[Detail /* <: IAnyObject */, Mark /* <: IAnyObject */, CurrentT
 }
 object CustomEvent {
   
-  @scala.inline
-  def apply[Detail /* <: IAnyObject */, Mark /* <: IAnyObject */, CurrentTargetDataset /* <: IAnyObject */, TargetDataset /* <: IAnyObject */](
+  inline def apply[Detail /* <: IAnyObject */, Mark /* <: IAnyObject */, CurrentTargetDataset /* <: IAnyObject */, TargetDataset /* <: IAnyObject */](
     currentTarget: Target[CurrentTargetDataset],
     detail: Detail,
     target: Target[TargetDataset],
@@ -27,10 +26,8 @@ object CustomEvent {
     __obj.asInstanceOf[CustomEvent[Detail, Mark, CurrentTargetDataset, TargetDataset]]
   }
   
-  @scala.inline
-  implicit class CustomEventMutableBuilder[Self <: CustomEvent[?, ?, ?, ?], Detail /* <: IAnyObject */, Mark /* <: IAnyObject */, CurrentTargetDataset /* <: IAnyObject */, TargetDataset /* <: IAnyObject */] (val x: Self & (CustomEvent[Detail, Mark, CurrentTargetDataset, TargetDataset])) extends AnyVal {
+  extension [Self <: CustomEvent[?, ?, ?, ?], Detail /* <: IAnyObject */, Mark /* <: IAnyObject */, CurrentTargetDataset /* <: IAnyObject */, TargetDataset /* <: IAnyObject */](x: Self & (CustomEvent[Detail, Mark, CurrentTargetDataset, TargetDataset])) {
     
-    @scala.inline
-    def setDetail(value: Detail): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+    inline def setDetail(value: Detail): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
   }
 }

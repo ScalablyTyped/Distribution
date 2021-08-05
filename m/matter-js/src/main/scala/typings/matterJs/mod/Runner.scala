@@ -51,25 +51,21 @@ object Runner {
     * @method create
     * @param {} options
     */
-  @scala.inline
-  def create(): Runner = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Runner]
-  @scala.inline
-  def create(options: IRunnerOptions): Runner = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[Runner]
+  inline def create(): Runner = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Runner]
+  inline def create(options: IRunnerOptions): Runner = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[Runner]
   
   /**
     * Continuously ticks a `Matter.Engine` by calling `Runner.tick` on the `requestAnimationFrame` event.
     * @method run
     * @param {engine} engine
     */
-  @scala.inline
-  def run(engine: Engine): Runner = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(engine.asInstanceOf[js.Any]).asInstanceOf[Runner]
+  inline def run(engine: Engine): Runner = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(engine.asInstanceOf[js.Any]).asInstanceOf[Runner]
   /**
     * Continuously ticks a `Matter.Engine` by calling `Runner.tick` on the `requestAnimationFrame` event.
     * @method run
     * @param {engine} engine
     */
-  @scala.inline
-  def run(runner: Runner, engine: Engine): Runner = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(runner.asInstanceOf[js.Any], engine.asInstanceOf[js.Any])).asInstanceOf[Runner]
+  inline def run(runner: Runner, engine: Engine): Runner = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(runner.asInstanceOf[js.Any], engine.asInstanceOf[js.Any])).asInstanceOf[Runner]
   
   /**
     * Alias for `Runner.run`.
@@ -77,8 +73,7 @@ object Runner {
     * @param {runner} runner
     * @param {engine} engine
     */
-  @scala.inline
-  def start(runner: Runner, engine: Engine): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(runner.asInstanceOf[js.Any], engine.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def start(runner: Runner, engine: Engine): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(runner.asInstanceOf[js.Any], engine.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Ends execution of `Runner.run` on the given `runner`, by canceling the animation frame request event loop.
@@ -86,8 +81,7 @@ object Runner {
     * @method stop
     * @param {runner} runner
     */
-  @scala.inline
-  def stop(runner: Runner): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")(runner.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def stop(runner: Runner): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")(runner.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * A game loop utility that updates the engine and renderer by one step (a 'tick').
@@ -99,6 +93,5 @@ object Runner {
     * @param {engine} engine
     * @param {number} time
     */
-  @scala.inline
-  def tick(runner: Runner, engine: Engine, time: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("tick")(runner.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def tick(runner: Runner, engine: Engine, time: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("tick")(runner.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

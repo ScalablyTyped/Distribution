@@ -15,23 +15,18 @@ object mod {
   }
   object Attributes {
     
-    @scala.inline
-    def apply(): Attributes = {
+    inline def apply(): Attributes = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Attributes]
     }
     
-    @scala.inline
-    implicit class AttributesMutableBuilder[Self <: Attributes] (val x: Self) extends AnyVal {
+    extension [Self <: Attributes](x: Self) {
       
-      @scala.inline
-      def setCss(value: Interpolation[Theme]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+      inline def setCss(value: Interpolation[Theme]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssNull: Self = StObject.set(x, "css", null)
+      inline def setCssNull: Self = StObject.set(x, "css", null)
       
-      @scala.inline
-      def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
+      inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     }
   }
 }

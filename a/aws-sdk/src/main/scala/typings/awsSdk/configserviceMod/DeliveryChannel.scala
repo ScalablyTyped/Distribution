@@ -33,43 +33,31 @@ trait DeliveryChannel extends StObject {
 }
 object DeliveryChannel {
   
-  @scala.inline
-  def apply(): DeliveryChannel = {
+  inline def apply(): DeliveryChannel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeliveryChannel]
   }
   
-  @scala.inline
-  implicit class DeliveryChannelMutableBuilder[Self <: DeliveryChannel] (val x: Self) extends AnyVal {
+  extension [Self <: DeliveryChannel](x: Self) {
     
-    @scala.inline
-    def setConfigSnapshotDeliveryProperties(value: ConfigSnapshotDeliveryProperties): Self = StObject.set(x, "configSnapshotDeliveryProperties", value.asInstanceOf[js.Any])
+    inline def setConfigSnapshotDeliveryProperties(value: ConfigSnapshotDeliveryProperties): Self = StObject.set(x, "configSnapshotDeliveryProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigSnapshotDeliveryPropertiesUndefined: Self = StObject.set(x, "configSnapshotDeliveryProperties", js.undefined)
+    inline def setConfigSnapshotDeliveryPropertiesUndefined: Self = StObject.set(x, "configSnapshotDeliveryProperties", js.undefined)
     
-    @scala.inline
-    def setName(value: ChannelName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ChannelName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setS3BucketName(value: String): Self = StObject.set(x, "s3BucketName", value.asInstanceOf[js.Any])
+    inline def setS3BucketName(value: String): Self = StObject.set(x, "s3BucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3BucketNameUndefined: Self = StObject.set(x, "s3BucketName", js.undefined)
+    inline def setS3BucketNameUndefined: Self = StObject.set(x, "s3BucketName", js.undefined)
     
-    @scala.inline
-    def setS3KeyPrefix(value: String): Self = StObject.set(x, "s3KeyPrefix", value.asInstanceOf[js.Any])
+    inline def setS3KeyPrefix(value: String): Self = StObject.set(x, "s3KeyPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3KeyPrefixUndefined: Self = StObject.set(x, "s3KeyPrefix", js.undefined)
+    inline def setS3KeyPrefixUndefined: Self = StObject.set(x, "s3KeyPrefix", js.undefined)
     
-    @scala.inline
-    def setSnsTopicARN(value: String): Self = StObject.set(x, "snsTopicARN", value.asInstanceOf[js.Any])
+    inline def setSnsTopicARN(value: String): Self = StObject.set(x, "snsTopicARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnsTopicARNUndefined: Self = StObject.set(x, "snsTopicARN", js.undefined)
+    inline def setSnsTopicARNUndefined: Self = StObject.set(x, "snsTopicARN", js.undefined)
   }
 }

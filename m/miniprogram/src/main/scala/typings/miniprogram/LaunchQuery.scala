@@ -18,25 +18,19 @@ trait LaunchQuery extends StObject {
 }
 object LaunchQuery {
   
-  @scala.inline
-  def apply(path: String, query: js.Any): LaunchQuery = {
+  inline def apply(path: String, query: js.Any): LaunchQuery = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchQuery]
   }
   
-  @scala.inline
-  implicit class LaunchQueryMutableBuilder[Self <: LaunchQuery] (val x: Self) extends AnyVal {
+  extension [Self <: LaunchQuery](x: Self) {
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferrerInfo(value: AppId): Self = StObject.set(x, "referrerInfo", value.asInstanceOf[js.Any])
+    inline def setReferrerInfo(value: AppId): Self = StObject.set(x, "referrerInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferrerInfoUndefined: Self = StObject.set(x, "referrerInfo", js.undefined)
+    inline def setReferrerInfoUndefined: Self = StObject.set(x, "referrerInfo", js.undefined)
   }
 }

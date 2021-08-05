@@ -35,18 +35,14 @@ object Alignment {
     *
     * The text is positioned below the main line.
     */
-  @scala.inline
-  def BOTTOM: `7` = 7.asInstanceOf[`7`]
+  inline def BOTTOM: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def BOTTOM_LEFT: `6` = 6.asInstanceOf[`6`]
+  inline def BOTTOM_LEFT: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def BOTTOM_RIGHT: `8` = 8.asInstanceOf[`8`]
+  inline def BOTTOM_RIGHT: `8` = 8.asInstanceOf[`8`]
   
   /** The text is centered inside the shape. */
-  @scala.inline
-  def CENTER: `4` = 4.asInstanceOf[`4`]
+  inline def CENTER: `4` = 4.asInstanceOf[`4`]
   
   /**
     * the connection line leaves the connected object to the left,
@@ -55,8 +51,7 @@ object Alignment {
     *
     * The left edge of the text is adjusted to the left edge of the shape.
     */
-  @scala.inline
-  def LEFT: `3` = 3.asInstanceOf[`3`]
+  inline def LEFT: `3` = 3.asInstanceOf[`3`]
   
   /**
     * the connection line leaves the connected object to the right,
@@ -65,8 +60,7 @@ object Alignment {
     *
     * The right edge of the text is adjusted to the right edge of the shape.
     */
-  @scala.inline
-  def RIGHT: `5` = 5.asInstanceOf[`5`]
+  inline def RIGHT: `5` = 5.asInstanceOf[`5`]
   
   /**
     * the connection line leaves the connected object from the top,
@@ -75,12 +69,9 @@ object Alignment {
     *
     * The text is positioned above the main line.
     */
-  @scala.inline
-  def TOP: `1` = 1.asInstanceOf[`1`]
+  inline def TOP: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def TOP_LEFT: `0` = 0.asInstanceOf[`0`]
+  inline def TOP_LEFT: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def TOP_RIGHT: `2` = 2.asInstanceOf[`2`]
+  inline def TOP_RIGHT: `2` = 2.asInstanceOf[`2`]
 }

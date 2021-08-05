@@ -14,19 +14,15 @@ trait CourseAlias extends StObject {
 }
 object CourseAlias {
   
-  @scala.inline
-  def apply(): CourseAlias = {
+  inline def apply(): CourseAlias = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CourseAlias]
   }
   
-  @scala.inline
-  implicit class CourseAliasMutableBuilder[Self <: CourseAlias] (val x: Self) extends AnyVal {
+  extension [Self <: CourseAlias](x: Self) {
     
-    @scala.inline
-    def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+    inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+    inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
   }
 }

@@ -20,37 +20,27 @@ trait LogLine extends StObject {
 }
 object LogLine {
   
-  @scala.inline
-  def apply(): LogLine = {
+  inline def apply(): LogLine = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LogLine]
   }
   
-  @scala.inline
-  implicit class LogLineMutableBuilder[Self <: LogLine] (val x: Self) extends AnyVal {
+  extension [Self <: LogLine](x: Self) {
     
-    @scala.inline
-    def setLogMessage(value: String): Self = StObject.set(x, "logMessage", value.asInstanceOf[js.Any])
+    inline def setLogMessage(value: String): Self = StObject.set(x, "logMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogMessageUndefined: Self = StObject.set(x, "logMessage", js.undefined)
+    inline def setLogMessageUndefined: Self = StObject.set(x, "logMessage", js.undefined)
     
-    @scala.inline
-    def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+    inline def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
+    inline def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
     
-    @scala.inline
-    def setSourceLocation(value: SourceLocation): Self = StObject.set(x, "sourceLocation", value.asInstanceOf[js.Any])
+    inline def setSourceLocation(value: SourceLocation): Self = StObject.set(x, "sourceLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceLocationUndefined: Self = StObject.set(x, "sourceLocation", js.undefined)
+    inline def setSourceLocationUndefined: Self = StObject.set(x, "sourceLocation", js.undefined)
     
-    @scala.inline
-    def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+    inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
   }
 }

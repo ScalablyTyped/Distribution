@@ -13,16 +13,13 @@ trait StopBluetoothDevicesDiscoveryOptions
 }
 object StopBluetoothDevicesDiscoveryOptions {
   
-  @scala.inline
-  def apply(success: ErrMsgResponse => Unit): StopBluetoothDevicesDiscoveryOptions = {
+  inline def apply(success: ErrMsgResponse => Unit): StopBluetoothDevicesDiscoveryOptions = {
     val __obj = js.Dynamic.literal(success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[StopBluetoothDevicesDiscoveryOptions]
   }
   
-  @scala.inline
-  implicit class StopBluetoothDevicesDiscoveryOptionsMutableBuilder[Self <: StopBluetoothDevicesDiscoveryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StopBluetoothDevicesDiscoveryOptions](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: ErrMsgResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: ErrMsgResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

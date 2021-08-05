@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLSpanFlow")
 @js.native
-class HTMLSpanFlow protected ()
+/* private */ class HTMLSpanFlow ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLSpanFlow

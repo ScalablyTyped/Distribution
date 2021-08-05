@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ScrollRectType extends StObject
 object ScrollRectType {
   
-  @scala.inline
-  def RepaintsOnScroll: typings.devtoolsProtocol.devtoolsProtocolStrings.RepaintsOnScroll = "RepaintsOnScroll".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.RepaintsOnScroll]
+  inline def RepaintsOnScroll: typings.devtoolsProtocol.devtoolsProtocolStrings.RepaintsOnScroll = "RepaintsOnScroll".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.RepaintsOnScroll]
   
-  @scala.inline
-  def TouchEventHandler: typings.devtoolsProtocol.devtoolsProtocolStrings.TouchEventHandler = "TouchEventHandler".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.TouchEventHandler]
+  inline def TouchEventHandler: typings.devtoolsProtocol.devtoolsProtocolStrings.TouchEventHandler = "TouchEventHandler".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.TouchEventHandler]
   
-  @scala.inline
-  def WheelEventHandler: typings.devtoolsProtocol.devtoolsProtocolStrings.WheelEventHandler = "WheelEventHandler".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.WheelEventHandler]
+  inline def WheelEventHandler: typings.devtoolsProtocol.devtoolsProtocolStrings.WheelEventHandler = "WheelEventHandler".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.WheelEventHandler]
 }

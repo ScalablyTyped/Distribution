@@ -56,8 +56,7 @@ trait Clearable extends StObject {
 }
 object Clearable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $clearable: Boolean,
     $creatable: Boolean,
     $disabled: Boolean,
@@ -77,49 +76,34 @@ object Clearable {
     __obj.asInstanceOf[Clearable]
   }
   
-  @scala.inline
-  implicit class ClearableMutableBuilder[Self <: Clearable] (val x: Self) extends AnyVal {
+  extension [Self <: Clearable](x: Self) {
     
-    @scala.inline
-    def set$clearable(value: Boolean): Self = StObject.set(x, "$clearable", value.asInstanceOf[js.Any])
+    inline def set$clearable(value: Boolean): Self = StObject.set(x, "$clearable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$creatable(value: Boolean): Self = StObject.set(x, "$creatable", value.asInstanceOf[js.Any])
+    inline def set$creatable(value: Boolean): Self = StObject.set(x, "$creatable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$disabled(value: Boolean): Self = StObject.set(x, "$disabled", value.asInstanceOf[js.Any])
+    inline def set$disabled(value: Boolean): Self = StObject.set(x, "$disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$error(value: Boolean): Self = StObject.set(x, "$error", value.asInstanceOf[js.Any])
+    inline def set$error(value: Boolean): Self = StObject.set(x, "$error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$isFocused(value: Boolean): Self = StObject.set(x, "$isFocused", value.asInstanceOf[js.Any])
+    inline def set$isFocused(value: Boolean): Self = StObject.set(x, "$isFocused", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$isLoading(value: Boolean): Self = StObject.set(x, "$isLoading", value.asInstanceOf[js.Any])
+    inline def set$isLoading(value: Boolean): Self = StObject.set(x, "$isLoading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$isOpen(value: Boolean): Self = StObject.set(x, "$isOpen", value.asInstanceOf[js.Any])
+    inline def set$isOpen(value: Boolean): Self = StObject.set(x, "$isOpen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$isPseudoFocused(value: Boolean): Self = StObject.set(x, "$isPseudoFocused", value.asInstanceOf[js.Any])
+    inline def set$isPseudoFocused(value: Boolean): Self = StObject.set(x, "$isPseudoFocused", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$multi(value: Boolean): Self = StObject.set(x, "$multi", value.asInstanceOf[js.Any])
+    inline def set$multi(value: Boolean): Self = StObject.set(x, "$multi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$positive(value: Boolean): Self = StObject.set(x, "$positive", value.asInstanceOf[js.Any])
+    inline def set$positive(value: Boolean): Self = StObject.set(x, "$positive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$required(value: Boolean): Self = StObject.set(x, "$required", value.asInstanceOf[js.Any])
+    inline def set$required(value: Boolean): Self = StObject.set(x, "$required", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$searchable(value: Boolean): Self = StObject.set(x, "$searchable", value.asInstanceOf[js.Any])
+    inline def set$searchable(value: Boolean): Self = StObject.set(x, "$searchable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$size(value: mini | default_ | compact | large_): Self = StObject.set(x, "$size", value.asInstanceOf[js.Any])
+    inline def set$size(value: mini | default_ | compact | large_): Self = StObject.set(x, "$size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$type(value: select | search): Self = StObject.set(x, "$type", value.asInstanceOf[js.Any])
+    inline def set$type(value: select | search): Self = StObject.set(x, "$type", value.asInstanceOf[js.Any])
   }
 }

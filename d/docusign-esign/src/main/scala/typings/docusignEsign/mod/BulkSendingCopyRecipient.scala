@@ -187,147 +187,101 @@ trait BulkSendingCopyRecipient extends StObject {
 }
 object BulkSendingCopyRecipient {
   
-  @scala.inline
-  def apply(): BulkSendingCopyRecipient = {
+  inline def apply(): BulkSendingCopyRecipient = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BulkSendingCopyRecipient]
   }
   
-  @scala.inline
-  implicit class BulkSendingCopyRecipientMutableBuilder[Self <: BulkSendingCopyRecipient] (val x: Self) extends AnyVal {
+  extension [Self <: BulkSendingCopyRecipient](x: Self) {
     
-    @scala.inline
-    def setAccessCode(value: String): Self = StObject.set(x, "accessCode", value.asInstanceOf[js.Any])
+    inline def setAccessCode(value: String): Self = StObject.set(x, "accessCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessCodeUndefined: Self = StObject.set(x, "accessCode", js.undefined)
+    inline def setAccessCodeUndefined: Self = StObject.set(x, "accessCode", js.undefined)
     
-    @scala.inline
-    def setClientUserId(value: String): Self = StObject.set(x, "clientUserId", value.asInstanceOf[js.Any])
+    inline def setClientUserId(value: String): Self = StObject.set(x, "clientUserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientUserIdUndefined: Self = StObject.set(x, "clientUserId", js.undefined)
+    inline def setClientUserIdUndefined: Self = StObject.set(x, "clientUserId", js.undefined)
     
-    @scala.inline
-    def setCustomFields(value: js.Array[String]): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
+    inline def setCustomFields(value: js.Array[String]): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomFieldsUndefined: Self = StObject.set(x, "customFields", js.undefined)
+    inline def setCustomFieldsUndefined: Self = StObject.set(x, "customFields", js.undefined)
     
-    @scala.inline
-    def setCustomFieldsVarargs(value: String*): Self = StObject.set(x, "customFields", js.Array(value :_*))
+    inline def setCustomFieldsVarargs(value: String*): Self = StObject.set(x, "customFields", js.Array(value :_*))
     
-    @scala.inline
-    def setDeliveryMethod(value: String): Self = StObject.set(x, "deliveryMethod", value.asInstanceOf[js.Any])
+    inline def setDeliveryMethod(value: String): Self = StObject.set(x, "deliveryMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliveryMethodUndefined: Self = StObject.set(x, "deliveryMethod", js.undefined)
+    inline def setDeliveryMethodUndefined: Self = StObject.set(x, "deliveryMethod", js.undefined)
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailNotification(value: RecipientEmailNotification): Self = StObject.set(x, "emailNotification", value.asInstanceOf[js.Any])
+    inline def setEmailNotification(value: RecipientEmailNotification): Self = StObject.set(x, "emailNotification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailNotificationUndefined: Self = StObject.set(x, "emailNotification", js.undefined)
+    inline def setEmailNotificationUndefined: Self = StObject.set(x, "emailNotification", js.undefined)
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setEmbeddedRecipientStartURL(value: String): Self = StObject.set(x, "embeddedRecipientStartURL", value.asInstanceOf[js.Any])
+    inline def setEmbeddedRecipientStartURL(value: String): Self = StObject.set(x, "embeddedRecipientStartURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmbeddedRecipientStartURLUndefined: Self = StObject.set(x, "embeddedRecipientStartURL", js.undefined)
+    inline def setEmbeddedRecipientStartURLUndefined: Self = StObject.set(x, "embeddedRecipientStartURL", js.undefined)
     
-    @scala.inline
-    def setFaxNumber(value: String): Self = StObject.set(x, "faxNumber", value.asInstanceOf[js.Any])
+    inline def setFaxNumber(value: String): Self = StObject.set(x, "faxNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaxNumberUndefined: Self = StObject.set(x, "faxNumber", js.undefined)
+    inline def setFaxNumberUndefined: Self = StObject.set(x, "faxNumber", js.undefined)
     
-    @scala.inline
-    def setIdCheckConfigurationName(value: String): Self = StObject.set(x, "idCheckConfigurationName", value.asInstanceOf[js.Any])
+    inline def setIdCheckConfigurationName(value: String): Self = StObject.set(x, "idCheckConfigurationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdCheckConfigurationNameUndefined: Self = StObject.set(x, "idCheckConfigurationName", js.undefined)
+    inline def setIdCheckConfigurationNameUndefined: Self = StObject.set(x, "idCheckConfigurationName", js.undefined)
     
-    @scala.inline
-    def setIdCheckInformationInput(
+    inline def setIdCheckInformationInput(
       value: /* A complex element that contains input information related to a recipient ID check. */ IdCheckInformationInput
     ): Self = StObject.set(x, "idCheckInformationInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdCheckInformationInputUndefined: Self = StObject.set(x, "idCheckInformationInput", js.undefined)
+    inline def setIdCheckInformationInputUndefined: Self = StObject.set(x, "idCheckInformationInput", js.undefined)
     
-    @scala.inline
-    def setIdentificationMethod(value: String): Self = StObject.set(x, "identificationMethod", value.asInstanceOf[js.Any])
+    inline def setIdentificationMethod(value: String): Self = StObject.set(x, "identificationMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentificationMethodUndefined: Self = StObject.set(x, "identificationMethod", js.undefined)
+    inline def setIdentificationMethodUndefined: Self = StObject.set(x, "identificationMethod", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
+    inline def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
+    inline def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
     
-    @scala.inline
-    def setPhoneAuthentication(value: RecipientPhoneAuthentication): Self = StObject.set(x, "phoneAuthentication", value.asInstanceOf[js.Any])
+    inline def setPhoneAuthentication(value: RecipientPhoneAuthentication): Self = StObject.set(x, "phoneAuthentication", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneAuthenticationUndefined: Self = StObject.set(x, "phoneAuthentication", js.undefined)
+    inline def setPhoneAuthenticationUndefined: Self = StObject.set(x, "phoneAuthentication", js.undefined)
     
-    @scala.inline
-    def setRecipientId(value: String): Self = StObject.set(x, "recipientId", value.asInstanceOf[js.Any])
+    inline def setRecipientId(value: String): Self = StObject.set(x, "recipientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipientIdUndefined: Self = StObject.set(x, "recipientId", js.undefined)
+    inline def setRecipientIdUndefined: Self = StObject.set(x, "recipientId", js.undefined)
     
-    @scala.inline
-    def setRecipientSignatureProviders(value: js.Array[RecipientSignatureProvider]): Self = StObject.set(x, "recipientSignatureProviders", value.asInstanceOf[js.Any])
+    inline def setRecipientSignatureProviders(value: js.Array[RecipientSignatureProvider]): Self = StObject.set(x, "recipientSignatureProviders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipientSignatureProvidersUndefined: Self = StObject.set(x, "recipientSignatureProviders", js.undefined)
+    inline def setRecipientSignatureProvidersUndefined: Self = StObject.set(x, "recipientSignatureProviders", js.undefined)
     
-    @scala.inline
-    def setRecipientSignatureProvidersVarargs(value: RecipientSignatureProvider*): Self = StObject.set(x, "recipientSignatureProviders", js.Array(value :_*))
+    inline def setRecipientSignatureProvidersVarargs(value: RecipientSignatureProvider*): Self = StObject.set(x, "recipientSignatureProviders", js.Array(value :_*))
     
-    @scala.inline
-    def setRoleName(value: String): Self = StObject.set(x, "roleName", value.asInstanceOf[js.Any])
+    inline def setRoleName(value: String): Self = StObject.set(x, "roleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleNameUndefined: Self = StObject.set(x, "roleName", js.undefined)
+    inline def setRoleNameUndefined: Self = StObject.set(x, "roleName", js.undefined)
     
-    @scala.inline
-    def setSmsAuthentication(value: RecipientSMSAuthentication): Self = StObject.set(x, "smsAuthentication", value.asInstanceOf[js.Any])
+    inline def setSmsAuthentication(value: RecipientSMSAuthentication): Self = StObject.set(x, "smsAuthentication", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmsAuthenticationUndefined: Self = StObject.set(x, "smsAuthentication", js.undefined)
+    inline def setSmsAuthenticationUndefined: Self = StObject.set(x, "smsAuthentication", js.undefined)
     
-    @scala.inline
-    def setSocialAuthentications(value: js.Array[SocialAuthentication]): Self = StObject.set(x, "socialAuthentications", value.asInstanceOf[js.Any])
+    inline def setSocialAuthentications(value: js.Array[SocialAuthentication]): Self = StObject.set(x, "socialAuthentications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSocialAuthenticationsUndefined: Self = StObject.set(x, "socialAuthentications", js.undefined)
+    inline def setSocialAuthenticationsUndefined: Self = StObject.set(x, "socialAuthentications", js.undefined)
     
-    @scala.inline
-    def setSocialAuthenticationsVarargs(value: SocialAuthentication*): Self = StObject.set(x, "socialAuthentications", js.Array(value :_*))
+    inline def setSocialAuthenticationsVarargs(value: SocialAuthentication*): Self = StObject.set(x, "socialAuthentications", js.Array(value :_*))
     
-    @scala.inline
-    def setTabs(value: js.Array[BulkSendingCopyTab]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
+    inline def setTabs(value: js.Array[BulkSendingCopyTab]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabsUndefined: Self = StObject.set(x, "tabs", js.undefined)
+    inline def setTabsUndefined: Self = StObject.set(x, "tabs", js.undefined)
     
-    @scala.inline
-    def setTabsVarargs(value: BulkSendingCopyTab*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+    inline def setTabsVarargs(value: BulkSendingCopyTab*): Self = StObject.set(x, "tabs", js.Array(value :_*))
   }
 }

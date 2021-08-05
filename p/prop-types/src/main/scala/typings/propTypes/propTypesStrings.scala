@@ -8,16 +8,13 @@ object propTypesStrings {
   
   @js.native
   sealed trait InferPropsInner extends StObject
-  @scala.inline
-  def InferPropsInner: InferPropsInner = "InferPropsInner".asInstanceOf[InferPropsInner]
+  inline def InferPropsInner: InferPropsInner = "InferPropsInner".asInstanceOf[InferPropsInner]
   
   @js.native
   sealed trait ValidationMap extends StObject
-  @scala.inline
-  def ValidationMap: ValidationMap = "ValidationMap".asInstanceOf[ValidationMap]
+  inline def ValidationMap: ValidationMap = "ValidationMap".asInstanceOf[ValidationMap]
   
   @js.native
   sealed trait objectOf extends StObject
-  @scala.inline
-  def objectOf: objectOf = "objectOf".asInstanceOf[objectOf]
+  inline def objectOf: objectOf = "objectOf".asInstanceOf[objectOf]
 }

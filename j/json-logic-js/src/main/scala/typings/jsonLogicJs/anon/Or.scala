@@ -15,8 +15,7 @@ trait Or
 }
 object Or {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     or: js.Array[
       /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object
     ]
@@ -25,18 +24,15 @@ object Or {
     __obj.asInstanceOf[Or]
   }
   
-  @scala.inline
-  implicit class OrMutableBuilder[Self <: Or] (val x: Self) extends AnyVal {
+  extension [Self <: Or](x: Self) {
     
-    @scala.inline
-    def setOr(
+    inline def setOr(
       value: js.Array[
           /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object
         ]
     ): Self = StObject.set(x, "or", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrVarargs(
+    inline def setOrVarargs(
       value: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object)*
     ): Self = StObject.set(x, "or", js.Array(value :_*))
   }

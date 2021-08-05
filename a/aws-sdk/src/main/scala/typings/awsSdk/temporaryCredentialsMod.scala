@@ -40,14 +40,12 @@ object temporaryCredentialsMod {
     trait TemporaryCredentialsOptions extends StObject
     object TemporaryCredentialsOptions {
       
-      @scala.inline
-      def AssumeRoleRequest(RoleArn: arnType, RoleSessionName: roleSessionNameType): typings.awsSdk.stsMod.AssumeRoleRequest = {
+      inline def AssumeRoleRequest(RoleArn: arnType, RoleSessionName: roleSessionNameType): typings.awsSdk.stsMod.AssumeRoleRequest = {
         val __obj = js.Dynamic.literal(RoleArn = RoleArn.asInstanceOf[js.Any], RoleSessionName = RoleSessionName.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.awsSdk.stsMod.AssumeRoleRequest]
       }
       
-      @scala.inline
-      def GetSessionTokenRequest(): typings.awsSdk.stsMod.GetSessionTokenRequest = {
+      inline def GetSessionTokenRequest(): typings.awsSdk.stsMod.GetSessionTokenRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.awsSdk.stsMod.GetSessionTokenRequest]
       }

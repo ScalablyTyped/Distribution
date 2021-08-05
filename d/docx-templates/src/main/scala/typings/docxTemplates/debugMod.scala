@@ -19,16 +19,12 @@ object debugMod {
     @JSImport("docx-templates/lib/debug", "logger.debug")
     @js.native
     def debug: LogSink = js.native
-    @scala.inline
-    def debug(message: js.Any, optionalParams: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(message.asInstanceOf[js.Any], optionalParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def debug(message: Unit, optionalParams: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(message.asInstanceOf[js.Any], optionalParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def debug_=(x: LogSink): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("debug")(x.asInstanceOf[js.Any])
+    inline def debug(message: js.Any, optionalParams: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(message.asInstanceOf[js.Any], optionalParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def debug(message: Unit, optionalParams: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(message.asInstanceOf[js.Any], optionalParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def debug_=(x: LogSink): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("debug")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def setDebugLogSink(f: LogSink): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDebugLogSink")(f.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setDebugLogSink(f: LogSink): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDebugLogSink")(f.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @js.native
   trait LogSink extends StObject {

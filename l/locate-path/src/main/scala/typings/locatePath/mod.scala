@@ -27,10 +27,8 @@ object mod {
   	})();
   	```
   	*/
-  @scala.inline
-  def apply(paths: Iterable[String]): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].apply(paths.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[String]]]
-  @scala.inline
-  def apply(paths: Iterable[String], options: AsyncOptions): js.Promise[js.UndefOr[String]] = (^.asInstanceOf[js.Dynamic].apply(paths.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[String]]]
+  inline def apply(paths: Iterable[String]): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].apply(paths.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[String]]]
+  inline def apply(paths: Iterable[String], options: AsyncOptions): js.Promise[js.UndefOr[String]] = (^.asInstanceOf[js.Dynamic].apply(paths.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[String]]]
   
   @JSImport("locate-path", JSImport.Namespace)
   @js.native
@@ -41,10 +39,8 @@ object mod {
   	@param paths - Paths to check.
   	@returns The first path that exists or `undefined` if none exists.
   	*/
-  @scala.inline
-  def sync(paths: Iterable[String]): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(paths.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
-  @scala.inline
-  def sync(paths: Iterable[String], options: Options): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(paths.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  inline def sync(paths: Iterable[String]): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(paths.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def sync(paths: Iterable[String], options: Options): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(paths.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
   
   trait AsyncOptions
     extends StObject
@@ -65,26 +61,20 @@ object mod {
   }
   object AsyncOptions {
     
-    @scala.inline
-    def apply(): AsyncOptions = {
+    inline def apply(): AsyncOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AsyncOptions]
     }
     
-    @scala.inline
-    implicit class AsyncOptionsMutableBuilder[Self <: AsyncOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AsyncOptions](x: Self) {
       
-      @scala.inline
-      def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
+      inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConcurrencyUndefined: Self = StObject.set(x, "concurrency", js.undefined)
+      inline def setConcurrencyUndefined: Self = StObject.set(x, "concurrency", js.undefined)
       
-      @scala.inline
-      def setPreserveOrder(value: Boolean): Self = StObject.set(x, "preserveOrder", value.asInstanceOf[js.Any])
+      inline def setPreserveOrder(value: Boolean): Self = StObject.set(x, "preserveOrder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveOrderUndefined: Self = StObject.set(x, "preserveOrder", js.undefined)
+      inline def setPreserveOrderUndefined: Self = StObject.set(x, "preserveOrder", js.undefined)
     }
   }
   
@@ -110,32 +100,24 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAllowSymlinks(value: Boolean): Self = StObject.set(x, "allowSymlinks", value.asInstanceOf[js.Any])
+      inline def setAllowSymlinks(value: Boolean): Self = StObject.set(x, "allowSymlinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowSymlinksUndefined: Self = StObject.set(x, "allowSymlinks", js.undefined)
+      inline def setAllowSymlinksUndefined: Self = StObject.set(x, "allowSymlinks", js.undefined)
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setType(value: file | directory): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: file | directory): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

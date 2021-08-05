@@ -25,8 +25,7 @@ object mod extends Shortcut {
   }
   object VueChartkickPlugin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addAdapter: js.Any => Unit,
       install: (/* Vue */ VueConstructor[Vue], /* options */ js.UndefOr[Adapter]) => Unit,
       version: String
@@ -35,14 +34,11 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VueChartkickPlugin]
     }
     
-    @scala.inline
-    implicit class VueChartkickPluginMutableBuilder[Self <: VueChartkickPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: VueChartkickPlugin](x: Self) {
       
-      @scala.inline
-      def setAddAdapter(value: js.Any => Unit): Self = StObject.set(x, "addAdapter", js.Any.fromFunction1(value))
+      inline def setAddAdapter(value: js.Any => Unit): Self = StObject.set(x, "addAdapter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   

@@ -30,7 +30,7 @@ object getCredentialsForIdentityCommandMod {
         ] {
     def this(input: GetCredentialsForIdentityCommandInput) = this()
     
-    var deserialize: js.Any = js.native
+    /* private */ var deserialize: js.Any = js.native
     
     def resolveMiddleware(
       clientStack: MiddlewareStack[ServiceInputTypes, ServiceOutputTypes],
@@ -42,7 +42,7 @@ object getCredentialsForIdentityCommandMod {
       options: HttpHandlerOptions
     ): Handler[GetCredentialsForIdentityCommandInput, GetCredentialsForIdentityCommandOutput] = js.native
     
-    var serialize: js.Any = js.native
+    /* private */ var serialize: js.Any = js.native
   }
   
   type GetCredentialsForIdentityCommandInput = GetCredentialsForIdentityInput
@@ -54,8 +54,7 @@ object getCredentialsForIdentityCommandMod {
        with _ServiceOutputTypes
   object GetCredentialsForIdentityCommandOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): GetCredentialsForIdentityCommandOutput = {
+    inline def apply($metadata: ResponseMetadata): GetCredentialsForIdentityCommandOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetCredentialsForIdentityCommandOutput]
     }

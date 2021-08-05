@@ -10,6 +10,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def knuthShuffle[T](array: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("knuthShuffle")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def knuthShuffle[T](array: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("knuthShuffle")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
 }

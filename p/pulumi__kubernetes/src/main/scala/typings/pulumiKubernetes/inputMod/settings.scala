@@ -37,38 +37,28 @@ object settings {
     }
     object PodPreset {
       
-      @scala.inline
-      def apply(): PodPreset = {
+      inline def apply(): PodPreset = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[PodPreset]
       }
       
-      @scala.inline
-      implicit class PodPresetMutableBuilder[Self <: PodPreset] (val x: Self) extends AnyVal {
+      extension [Self <: PodPreset](x: Self) {
         
-        @scala.inline
-        def setApiVersion(value: Input[settingsDotk8sDotioSlashv1alpha1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+        inline def setApiVersion(value: Input[settingsDotk8sDotioSlashv1alpha1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+        inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
         
-        @scala.inline
-        def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.PodPreset]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.PodPreset]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+        inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
         
-        @scala.inline
-        def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+        inline def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+        inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
         
-        @scala.inline
-        def setSpec(value: Input[PodPresetSpec]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+        inline def setSpec(value: Input[PodPresetSpec]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
+        inline def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
       }
     }
     
@@ -104,56 +94,40 @@ object settings {
     }
     object PodPresetSpec {
       
-      @scala.inline
-      def apply(): PodPresetSpec = {
+      inline def apply(): PodPresetSpec = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[PodPresetSpec]
       }
       
-      @scala.inline
-      implicit class PodPresetSpecMutableBuilder[Self <: PodPresetSpec] (val x: Self) extends AnyVal {
+      extension [Self <: PodPresetSpec](x: Self) {
         
-        @scala.inline
-        def setEnv(value: Input[js.Array[Input[EnvVar]]]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+        inline def setEnv(value: Input[js.Array[Input[EnvVar]]]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEnvFrom(value: Input[js.Array[Input[EnvFromSource]]]): Self = StObject.set(x, "envFrom", value.asInstanceOf[js.Any])
+        inline def setEnvFrom(value: Input[js.Array[Input[EnvFromSource]]]): Self = StObject.set(x, "envFrom", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEnvFromUndefined: Self = StObject.set(x, "envFrom", js.undefined)
+        inline def setEnvFromUndefined: Self = StObject.set(x, "envFrom", js.undefined)
         
-        @scala.inline
-        def setEnvFromVarargs(value: Input[EnvFromSource]*): Self = StObject.set(x, "envFrom", js.Array(value :_*))
+        inline def setEnvFromVarargs(value: Input[EnvFromSource]*): Self = StObject.set(x, "envFrom", js.Array(value :_*))
         
-        @scala.inline
-        def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+        inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
         
-        @scala.inline
-        def setEnvVarargs(value: Input[EnvVar]*): Self = StObject.set(x, "env", js.Array(value :_*))
+        inline def setEnvVarargs(value: Input[EnvVar]*): Self = StObject.set(x, "env", js.Array(value :_*))
         
-        @scala.inline
-        def setSelector(value: Input[LabelSelector]): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+        inline def setSelector(value: Input[LabelSelector]): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+        inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
         
-        @scala.inline
-        def setVolumeMounts(value: Input[js.Array[Input[VolumeMount]]]): Self = StObject.set(x, "volumeMounts", value.asInstanceOf[js.Any])
+        inline def setVolumeMounts(value: Input[js.Array[Input[VolumeMount]]]): Self = StObject.set(x, "volumeMounts", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVolumeMountsUndefined: Self = StObject.set(x, "volumeMounts", js.undefined)
+        inline def setVolumeMountsUndefined: Self = StObject.set(x, "volumeMounts", js.undefined)
         
-        @scala.inline
-        def setVolumeMountsVarargs(value: Input[VolumeMount]*): Self = StObject.set(x, "volumeMounts", js.Array(value :_*))
+        inline def setVolumeMountsVarargs(value: Input[VolumeMount]*): Self = StObject.set(x, "volumeMounts", js.Array(value :_*))
         
-        @scala.inline
-        def setVolumes(value: Input[js.Array[Input[Volume]]]): Self = StObject.set(x, "volumes", value.asInstanceOf[js.Any])
+        inline def setVolumes(value: Input[js.Array[Input[Volume]]]): Self = StObject.set(x, "volumes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVolumesUndefined: Self = StObject.set(x, "volumes", js.undefined)
+        inline def setVolumesUndefined: Self = StObject.set(x, "volumes", js.undefined)
         
-        @scala.inline
-        def setVolumesVarargs(value: Input[Volume]*): Self = StObject.set(x, "volumes", js.Array(value :_*))
+        inline def setVolumesVarargs(value: Input[Volume]*): Self = StObject.set(x, "volumes", js.Array(value :_*))
       }
     }
   }

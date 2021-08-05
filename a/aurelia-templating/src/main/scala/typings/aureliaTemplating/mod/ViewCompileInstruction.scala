@@ -35,6 +35,5 @@ object ViewCompileInstruction {
   @JSImport("aurelia-templating", "ViewCompileInstruction.normal")
   @js.native
   def normal: ViewCompileInstruction = js.native
-  @scala.inline
-  def normal_=(x: ViewCompileInstruction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("normal")(x.asInstanceOf[js.Any])
+  inline def normal_=(x: ViewCompileInstruction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("normal")(x.asInstanceOf[js.Any])
 }

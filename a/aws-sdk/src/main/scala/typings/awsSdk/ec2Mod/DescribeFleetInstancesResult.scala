@@ -23,34 +23,25 @@ trait DescribeFleetInstancesResult extends StObject {
 }
 object DescribeFleetInstancesResult {
   
-  @scala.inline
-  def apply(): DescribeFleetInstancesResult = {
+  inline def apply(): DescribeFleetInstancesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeFleetInstancesResult]
   }
   
-  @scala.inline
-  implicit class DescribeFleetInstancesResultMutableBuilder[Self <: DescribeFleetInstancesResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeFleetInstancesResult](x: Self) {
     
-    @scala.inline
-    def setActiveInstances(value: ActiveInstanceSet): Self = StObject.set(x, "ActiveInstances", value.asInstanceOf[js.Any])
+    inline def setActiveInstances(value: ActiveInstanceSet): Self = StObject.set(x, "ActiveInstances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveInstancesUndefined: Self = StObject.set(x, "ActiveInstances", js.undefined)
+    inline def setActiveInstancesUndefined: Self = StObject.set(x, "ActiveInstances", js.undefined)
     
-    @scala.inline
-    def setActiveInstancesVarargs(value: ActiveInstance*): Self = StObject.set(x, "ActiveInstances", js.Array(value :_*))
+    inline def setActiveInstancesVarargs(value: ActiveInstance*): Self = StObject.set(x, "ActiveInstances", js.Array(value :_*))
     
-    @scala.inline
-    def setFleetId(value: FleetId): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
+    inline def setFleetId(value: FleetId): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFleetIdUndefined: Self = StObject.set(x, "FleetId", js.undefined)
+    inline def setFleetIdUndefined: Self = StObject.set(x, "FleetId", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

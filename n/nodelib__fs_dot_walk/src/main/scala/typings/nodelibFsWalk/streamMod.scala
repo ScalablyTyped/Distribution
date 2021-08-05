@@ -14,16 +14,16 @@ object streamMod {
        with StreamProvider {
     def this(_root: String, _settings: typings.nodelibFsWalk.settingsMod.default) = this()
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     override val _reader: typings.nodelibFsWalk.readersAsyncMod.default = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     override val _root: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     override val _settings: js.Any = js.native
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     override val _stream: Readable = js.native
     
     /* CompleteClass */
@@ -32,20 +32,19 @@ object streamMod {
   
   trait StreamProvider extends StObject {
     
-    val _reader: typings.nodelibFsWalk.readersAsyncMod.default
+    /* protected */ val _reader: typings.nodelibFsWalk.readersAsyncMod.default
     
-    val _root: js.Any
+    /* private */ val _root: js.Any
     
-    val _settings: js.Any
+    /* private */ val _settings: js.Any
     
-    val _stream: Readable
+    /* protected */ val _stream: Readable
     
     def read(): Readable
   }
   object StreamProvider {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _reader: typings.nodelibFsWalk.readersAsyncMod.default,
       _root: js.Any,
       _settings: js.Any,
@@ -56,23 +55,17 @@ object streamMod {
       __obj.asInstanceOf[StreamProvider]
     }
     
-    @scala.inline
-    implicit class StreamProviderMutableBuilder[Self <: StreamProvider] (val x: Self) extends AnyVal {
+    extension [Self <: StreamProvider](x: Self) {
       
-      @scala.inline
-      def setRead(value: () => Readable): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
+      inline def setRead(value: () => Readable): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_reader(value: typings.nodelibFsWalk.readersAsyncMod.default): Self = StObject.set(x, "_reader", value.asInstanceOf[js.Any])
+      inline def set_reader(value: typings.nodelibFsWalk.readersAsyncMod.default): Self = StObject.set(x, "_reader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_root(value: js.Any): Self = StObject.set(x, "_root", value.asInstanceOf[js.Any])
+      inline def set_root(value: js.Any): Self = StObject.set(x, "_root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_settings(value: js.Any): Self = StObject.set(x, "_settings", value.asInstanceOf[js.Any])
+      inline def set_settings(value: js.Any): Self = StObject.set(x, "_settings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_stream(value: Readable): Self = StObject.set(x, "_stream", value.asInstanceOf[js.Any])
+      inline def set_stream(value: Readable): Self = StObject.set(x, "_stream", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -102,8 +102,7 @@ object controlMod {
     @JSImport("@wordpress/customize-browser/Control", "Control.instanceCounter")
     @js.native
     def instanceCounter: js.UndefOr[Double] = js.native
-    @scala.inline
-    def instanceCounter_=(x: js.UndefOr[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("instanceCounter")(x.asInstanceOf[js.Any])
+    inline def instanceCounter_=(x: js.UndefOr[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("instanceCounter")(x.asInstanceOf[js.Any])
   }
   
   trait ControlParams extends StObject {
@@ -134,8 +133,7 @@ object controlMod {
   }
   object ControlParams {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       active: Boolean,
       description: String,
       label: String,
@@ -149,59 +147,41 @@ object controlMod {
       __obj.asInstanceOf[ControlParams]
     }
     
-    @scala.inline
-    implicit class ControlParamsMutableBuilder[Self <: ControlParams] (val x: Self) extends AnyVal {
+    extension [Self <: ControlParams](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceNumber(value: Double): Self = StObject.set(x, "instanceNumber", value.asInstanceOf[js.Any])
+      inline def setInstanceNumber(value: Double): Self = StObject.set(x, "instanceNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceNumberUndefined: Self = StObject.set(x, "instanceNumber", js.undefined)
+      inline def setInstanceNumberUndefined: Self = StObject.set(x, "instanceNumber", js.undefined)
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParams(value: ControlParams): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: ControlParams): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSection(value: String): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
+      inline def setSection(value: String): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetting(value: String | Setting[js.Any]): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
+      inline def setSetting(value: String | Setting[js.Any]): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettingUndefined: Self = StObject.set(x, "setting", js.undefined)
+      inline def setSettingUndefined: Self = StObject.set(x, "setting", js.undefined)
       
-      @scala.inline
-      def setSettings(value: ControlSettings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      inline def setSettings(value: ControlSettings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateId(value: String): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
+      inline def setTemplateId(value: String): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateIdUndefined: Self = StObject.set(x, "templateId", js.undefined)
+      inline def setTemplateIdUndefined: Self = StObject.set(x, "templateId", js.undefined)
       
-      @scala.inline
-      def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

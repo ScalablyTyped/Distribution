@@ -11,19 +11,15 @@ trait ThirdPartyOnlyConfig extends StObject {
 }
 object ThirdPartyOnlyConfig {
   
-  @scala.inline
-  def apply(): ThirdPartyOnlyConfig = {
+  inline def apply(): ThirdPartyOnlyConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThirdPartyOnlyConfig]
   }
   
-  @scala.inline
-  implicit class ThirdPartyOnlyConfigMutableBuilder[Self <: ThirdPartyOnlyConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ThirdPartyOnlyConfig](x: Self) {
     
-    @scala.inline
-    def setPixelOrderIdReportingEnabled(value: Boolean): Self = StObject.set(x, "pixelOrderIdReportingEnabled", value.asInstanceOf[js.Any])
+    inline def setPixelOrderIdReportingEnabled(value: Boolean): Self = StObject.set(x, "pixelOrderIdReportingEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPixelOrderIdReportingEnabledUndefined: Self = StObject.set(x, "pixelOrderIdReportingEnabled", js.undefined)
+    inline def setPixelOrderIdReportingEnabledUndefined: Self = StObject.set(x, "pixelOrderIdReportingEnabled", js.undefined)
   }
 }

@@ -28,37 +28,27 @@ trait UploadLayerPartResponse extends StObject {
 }
 object UploadLayerPartResponse {
   
-  @scala.inline
-  def apply(): UploadLayerPartResponse = {
+  inline def apply(): UploadLayerPartResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UploadLayerPartResponse]
   }
   
-  @scala.inline
-  implicit class UploadLayerPartResponseMutableBuilder[Self <: UploadLayerPartResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UploadLayerPartResponse](x: Self) {
     
-    @scala.inline
-    def setLastByteReceived(value: PartSize): Self = StObject.set(x, "lastByteReceived", value.asInstanceOf[js.Any])
+    inline def setLastByteReceived(value: PartSize): Self = StObject.set(x, "lastByteReceived", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastByteReceivedUndefined: Self = StObject.set(x, "lastByteReceived", js.undefined)
+    inline def setLastByteReceivedUndefined: Self = StObject.set(x, "lastByteReceived", js.undefined)
     
-    @scala.inline
-    def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
+    inline def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
+    inline def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
     
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+    inline def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryNameUndefined: Self = StObject.set(x, "repositoryName", js.undefined)
+    inline def setRepositoryNameUndefined: Self = StObject.set(x, "repositoryName", js.undefined)
     
-    @scala.inline
-    def setUploadId(value: UploadId): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
+    inline def setUploadId(value: UploadId): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadIdUndefined: Self = StObject.set(x, "uploadId", js.undefined)
+    inline def setUploadIdUndefined: Self = StObject.set(x, "uploadId", js.undefined)
   }
 }

@@ -17,14 +17,14 @@ object rollupcontextMod {
     def this(verbosity: VerbosityLevel, bail: Boolean, context: PluginContext) = this()
     def this(verbosity: VerbosityLevel, bail: Boolean, context: PluginContext, prefix: String) = this()
     
-    var bail: js.Any = js.native
+    /* private */ var bail: js.Any = js.native
     
-    var context: js.Any = js.native
+    /* private */ var context: js.Any = js.native
     
-    var hasContext: js.Any = js.native
+    /* private */ var hasContext: js.Any = js.native
     
-    var prefix: js.Any = js.native
+    /* private */ var prefix: js.Any = js.native
     
-    var verbosity: js.Any = js.native
+    /* private */ var verbosity: js.Any = js.native
   }
 }

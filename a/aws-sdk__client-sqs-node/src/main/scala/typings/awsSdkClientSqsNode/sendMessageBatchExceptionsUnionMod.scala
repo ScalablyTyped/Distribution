@@ -17,38 +17,32 @@ object sendMessageBatchExceptionsUnionMod {
   trait SendMessageBatchExceptionsUnion extends StObject
   object SendMessageBatchExceptionsUnion {
     
-    @scala.inline
-    def BatchEntryIdsNotDistinct(): typings.awsSdkClientSqsNode.typesBatchEntryIdsNotDistinctMod.BatchEntryIdsNotDistinct = {
+    inline def BatchEntryIdsNotDistinct(): typings.awsSdkClientSqsNode.typesBatchEntryIdsNotDistinctMod.BatchEntryIdsNotDistinct = {
       val __obj = js.Dynamic.literal(name = "BatchEntryIdsNotDistinct")
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesBatchEntryIdsNotDistinctMod.BatchEntryIdsNotDistinct]
     }
     
-    @scala.inline
-    def BatchRequestTooLong(): typings.awsSdkClientSqsNode.typesBatchRequestTooLongMod.BatchRequestTooLong = {
+    inline def BatchRequestTooLong(): typings.awsSdkClientSqsNode.typesBatchRequestTooLongMod.BatchRequestTooLong = {
       val __obj = js.Dynamic.literal(name = "BatchRequestTooLong")
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesBatchRequestTooLongMod.BatchRequestTooLong]
     }
     
-    @scala.inline
-    def EmptyBatchRequest(): typings.awsSdkClientSqsNode.typesEmptyBatchRequestMod.EmptyBatchRequest = {
+    inline def EmptyBatchRequest(): typings.awsSdkClientSqsNode.typesEmptyBatchRequestMod.EmptyBatchRequest = {
       val __obj = js.Dynamic.literal(name = "EmptyBatchRequest")
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesEmptyBatchRequestMod.EmptyBatchRequest]
     }
     
-    @scala.inline
-    def InvalidBatchEntryId(): typings.awsSdkClientSqsNode.typesInvalidBatchEntryIdMod.InvalidBatchEntryId = {
+    inline def InvalidBatchEntryId(): typings.awsSdkClientSqsNode.typesInvalidBatchEntryIdMod.InvalidBatchEntryId = {
       val __obj = js.Dynamic.literal(name = "InvalidBatchEntryId")
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesInvalidBatchEntryIdMod.InvalidBatchEntryId]
     }
     
-    @scala.inline
-    def TooManyEntriesInBatchRequest(): typings.awsSdkClientSqsNode.typesTooManyEntriesInBatchRequestMod.TooManyEntriesInBatchRequest = {
+    inline def TooManyEntriesInBatchRequest(): typings.awsSdkClientSqsNode.typesTooManyEntriesInBatchRequestMod.TooManyEntriesInBatchRequest = {
       val __obj = js.Dynamic.literal(name = "TooManyEntriesInBatchRequest")
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesTooManyEntriesInBatchRequestMod.TooManyEntriesInBatchRequest]
     }
     
-    @scala.inline
-    def UnsupportedOperation(): typings.awsSdkClientSqsNode.typesUnsupportedOperationMod.UnsupportedOperation = {
+    inline def UnsupportedOperation(): typings.awsSdkClientSqsNode.typesUnsupportedOperationMod.UnsupportedOperation = {
       val __obj = js.Dynamic.literal(name = "UnsupportedOperation")
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesUnsupportedOperationMod.UnsupportedOperation]
     }

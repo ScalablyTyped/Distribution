@@ -13,19 +13,15 @@ trait IosMobileAppIdentifier
 }
 object IosMobileAppIdentifier {
   
-  @scala.inline
-  def apply(): IosMobileAppIdentifier = {
+  inline def apply(): IosMobileAppIdentifier = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IosMobileAppIdentifier]
   }
   
-  @scala.inline
-  implicit class IosMobileAppIdentifierMutableBuilder[Self <: IosMobileAppIdentifier] (val x: Self) extends AnyVal {
+  extension [Self <: IosMobileAppIdentifier](x: Self) {
     
-    @scala.inline
-    def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
+    inline def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
+    inline def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
   }
 }

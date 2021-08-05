@@ -11,16 +11,13 @@ trait IBUDDY_REMOVE extends StObject {
 }
 object IBUDDY_REMOVE {
   
-  @scala.inline
-  def apply(buddy: SFSBuddy): IBUDDY_REMOVE = {
+  inline def apply(buddy: SFSBuddy): IBUDDY_REMOVE = {
     val __obj = js.Dynamic.literal(buddy = buddy.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBUDDY_REMOVE]
   }
   
-  @scala.inline
-  implicit class IBUDDY_REMOVEMutableBuilder[Self <: IBUDDY_REMOVE] (val x: Self) extends AnyVal {
+  extension [Self <: IBUDDY_REMOVE](x: Self) {
     
-    @scala.inline
-    def setBuddy(value: SFSBuddy): Self = StObject.set(x, "buddy", value.asInstanceOf[js.Any])
+    inline def setBuddy(value: SFSBuddy): Self = StObject.set(x, "buddy", value.asInstanceOf[js.Any])
   }
 }

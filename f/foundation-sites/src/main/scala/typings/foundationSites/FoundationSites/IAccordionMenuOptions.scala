@@ -12,25 +12,19 @@ trait IAccordionMenuOptions extends StObject {
 }
 object IAccordionMenuOptions {
   
-  @scala.inline
-  def apply(): IAccordionMenuOptions = {
+  inline def apply(): IAccordionMenuOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IAccordionMenuOptions]
   }
   
-  @scala.inline
-  implicit class IAccordionMenuOptionsMutableBuilder[Self <: IAccordionMenuOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IAccordionMenuOptions](x: Self) {
     
-    @scala.inline
-    def setMultiOpen(value: Boolean): Self = StObject.set(x, "multiOpen", value.asInstanceOf[js.Any])
+    inline def setMultiOpen(value: Boolean): Self = StObject.set(x, "multiOpen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiOpenUndefined: Self = StObject.set(x, "multiOpen", js.undefined)
+    inline def setMultiOpenUndefined: Self = StObject.set(x, "multiOpen", js.undefined)
     
-    @scala.inline
-    def setSlideSpeed(value: Double): Self = StObject.set(x, "slideSpeed", value.asInstanceOf[js.Any])
+    inline def setSlideSpeed(value: Double): Self = StObject.set(x, "slideSpeed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlideSpeedUndefined: Self = StObject.set(x, "slideSpeed", js.undefined)
+    inline def setSlideSpeedUndefined: Self = StObject.set(x, "slideSpeed", js.undefined)
   }
 }

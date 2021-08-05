@@ -29,29 +29,23 @@ trait WorkerMessageCode extends StObject {
 }
 object WorkerMessageCode {
   
-  @scala.inline
-  def apply(): WorkerMessageCode = {
+  inline def apply(): WorkerMessageCode = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkerMessageCode]
   }
   
-  @scala.inline
-  implicit class WorkerMessageCodeMutableBuilder[Self <: WorkerMessageCode] (val x: Self) extends AnyVal {
+  extension [Self <: WorkerMessageCode](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setParameters(
+    inline def setParameters(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkerMessageCode & TopLevel[js.Any]
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
   }
 }

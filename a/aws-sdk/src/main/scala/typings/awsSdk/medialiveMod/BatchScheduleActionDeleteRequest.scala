@@ -13,19 +13,15 @@ trait BatchScheduleActionDeleteRequest extends StObject {
 }
 object BatchScheduleActionDeleteRequest {
   
-  @scala.inline
-  def apply(ActionNames: listOfString): BatchScheduleActionDeleteRequest = {
+  inline def apply(ActionNames: listOfString): BatchScheduleActionDeleteRequest = {
     val __obj = js.Dynamic.literal(ActionNames = ActionNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchScheduleActionDeleteRequest]
   }
   
-  @scala.inline
-  implicit class BatchScheduleActionDeleteRequestMutableBuilder[Self <: BatchScheduleActionDeleteRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchScheduleActionDeleteRequest](x: Self) {
     
-    @scala.inline
-    def setActionNames(value: listOfString): Self = StObject.set(x, "ActionNames", value.asInstanceOf[js.Any])
+    inline def setActionNames(value: listOfString): Self = StObject.set(x, "ActionNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionNamesVarargs(value: string*): Self = StObject.set(x, "ActionNames", js.Array(value :_*))
+    inline def setActionNamesVarargs(value: string*): Self = StObject.set(x, "ActionNames", js.Array(value :_*))
   }
 }

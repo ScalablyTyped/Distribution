@@ -13,10 +13,8 @@ object getSecretsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getSecrets(args: GetSecretsArgs): js.Promise[GetSecretsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecrets")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSecretsResult]]
-  @scala.inline
-  def getSecrets(args: GetSecretsArgs, opts: InvokeOptions): js.Promise[GetSecretsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSecrets")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSecretsResult]]
+  inline def getSecrets(args: GetSecretsArgs): js.Promise[GetSecretsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecrets")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSecretsResult]]
+  inline def getSecrets(args: GetSecretsArgs, opts: InvokeOptions): js.Promise[GetSecretsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSecrets")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSecretsResult]]
   
   trait GetSecretsArgs extends StObject {
     
@@ -27,20 +25,16 @@ object getSecretsMod {
   }
   object GetSecretsArgs {
     
-    @scala.inline
-    def apply(secrets: js.Array[GetSecretsSecret]): GetSecretsArgs = {
+    inline def apply(secrets: js.Array[GetSecretsSecret]): GetSecretsArgs = {
       val __obj = js.Dynamic.literal(secrets = secrets.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetSecretsArgs]
     }
     
-    @scala.inline
-    implicit class GetSecretsArgsMutableBuilder[Self <: GetSecretsArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetSecretsArgs](x: Self) {
       
-      @scala.inline
-      def setSecrets(value: js.Array[GetSecretsSecret]): Self = StObject.set(x, "secrets", value.asInstanceOf[js.Any])
+      inline def setSecrets(value: js.Array[GetSecretsSecret]): Self = StObject.set(x, "secrets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretsVarargs(value: GetSecretsSecret*): Self = StObject.set(x, "secrets", js.Array(value :_*))
+      inline def setSecretsVarargs(value: GetSecretsSecret*): Self = StObject.set(x, "secrets", js.Array(value :_*))
     }
   }
   
@@ -60,8 +54,7 @@ object getSecretsMod {
   }
   object GetSecretsResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       id: String,
       plaintext: StringDictionary[String],
       secrets: js.Array[typings.pulumiAws.outputMod.kms.GetSecretsSecret]
@@ -70,20 +63,15 @@ object getSecretsMod {
       __obj.asInstanceOf[GetSecretsResult]
     }
     
-    @scala.inline
-    implicit class GetSecretsResultMutableBuilder[Self <: GetSecretsResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetSecretsResult](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaintext(value: StringDictionary[String]): Self = StObject.set(x, "plaintext", value.asInstanceOf[js.Any])
+      inline def setPlaintext(value: StringDictionary[String]): Self = StObject.set(x, "plaintext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecrets(value: js.Array[typings.pulumiAws.outputMod.kms.GetSecretsSecret]): Self = StObject.set(x, "secrets", value.asInstanceOf[js.Any])
+      inline def setSecrets(value: js.Array[typings.pulumiAws.outputMod.kms.GetSecretsSecret]): Self = StObject.set(x, "secrets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretsVarargs(value: typings.pulumiAws.outputMod.kms.GetSecretsSecret*): Self = StObject.set(x, "secrets", js.Array(value :_*))
+      inline def setSecretsVarargs(value: typings.pulumiAws.outputMod.kms.GetSecretsSecret*): Self = StObject.set(x, "secrets", js.Array(value :_*))
     }
   }
 }

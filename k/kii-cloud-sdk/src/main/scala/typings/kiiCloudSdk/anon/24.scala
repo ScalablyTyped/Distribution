@@ -14,8 +14,7 @@ trait `24`[T] extends StObject {
 }
 object `24` {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     failure: (KiiServerCodeEntry, T, KiiServerCodeExecResult, String) => js.Any,
     success: (KiiServerCodeEntry, T, KiiServerCodeExecResult) => js.Any
   ): `24`[T] = {
@@ -23,13 +22,10 @@ object `24` {
     __obj.asInstanceOf[`24`[T]]
   }
   
-  @scala.inline
-  implicit class `24MutableBuilder`[Self <: `24`[?], T] (val x: Self & `24`[T]) extends AnyVal {
+  extension [Self <: `24`[?], T](x: Self & `24`[T]) {
     
-    @scala.inline
-    def setFailure(value: (KiiServerCodeEntry, T, KiiServerCodeExecResult, String) => js.Any): Self = StObject.set(x, "failure", js.Any.fromFunction4(value))
+    inline def setFailure(value: (KiiServerCodeEntry, T, KiiServerCodeExecResult, String) => js.Any): Self = StObject.set(x, "failure", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setSuccess(value: (KiiServerCodeEntry, T, KiiServerCodeExecResult) => js.Any): Self = StObject.set(x, "success", js.Any.fromFunction3(value))
+    inline def setSuccess(value: (KiiServerCodeEntry, T, KiiServerCodeExecResult) => js.Any): Self = StObject.set(x, "success", js.Any.fromFunction3(value))
   }
 }

@@ -11,8 +11,7 @@ object imageDriverPrivateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def imageDriverFactory(base: UniDriver[js.Any]): ImageDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("imageDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[ImageDriver]
+  inline def imageDriverFactory(base: UniDriver[js.Any]): ImageDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("imageDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[ImageDriver]
   
   trait ImageDriver
     extends StObject
@@ -24,8 +23,7 @@ object imageDriverPrivateMod {
   }
   object ImageDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -39,14 +37,11 @@ object imageDriverPrivateMod {
       __obj.asInstanceOf[ImageDriver]
     }
     
-    @scala.inline
-    implicit class ImageDriverMutableBuilder[Self <: ImageDriver] (val x: Self) extends AnyVal {
+    extension [Self <: ImageDriver](x: Self) {
       
-      @scala.inline
-      def setGetResizeMode(value: () => js.Promise[String | Boolean]): Self = StObject.set(x, "getResizeMode", js.Any.fromFunction0(value))
+      inline def setGetResizeMode(value: () => js.Promise[String | Boolean]): Self = StObject.set(x, "getResizeMode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSrcSet(value: () => js.Promise[String]): Self = StObject.set(x, "getSrcSet", js.Any.fromFunction0(value))
+      inline def setGetSrcSet(value: () => js.Promise[String]): Self = StObject.set(x, "getSrcSet", js.Any.fromFunction0(value))
     }
   }
 }

@@ -19,43 +19,31 @@ trait JQueryFileUploadChangeObject extends StObject {
 }
 object JQueryFileUploadChangeObject {
   
-  @scala.inline
-  def apply(files: js.Array[File], originalFiles: js.Array[File]): JQueryFileUploadChangeObject = {
+  inline def apply(files: js.Array[File], originalFiles: js.Array[File]): JQueryFileUploadChangeObject = {
     val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any], originalFiles = originalFiles.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryFileUploadChangeObject]
   }
   
-  @scala.inline
-  implicit class JQueryFileUploadChangeObjectMutableBuilder[Self <: JQueryFileUploadChangeObject] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryFileUploadChangeObject](x: Self) {
     
-    @scala.inline
-    def setFileInput(value: JQuery): Self = StObject.set(x, "fileInput", value.asInstanceOf[js.Any])
+    inline def setFileInput(value: JQuery): Self = StObject.set(x, "fileInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileInputClone(value: JQuery): Self = StObject.set(x, "fileInputClone", value.asInstanceOf[js.Any])
+    inline def setFileInputClone(value: JQuery): Self = StObject.set(x, "fileInputClone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileInputCloneUndefined: Self = StObject.set(x, "fileInputClone", js.undefined)
+    inline def setFileInputCloneUndefined: Self = StObject.set(x, "fileInputClone", js.undefined)
     
-    @scala.inline
-    def setFileInputUndefined: Self = StObject.set(x, "fileInput", js.undefined)
+    inline def setFileInputUndefined: Self = StObject.set(x, "fileInput", js.undefined)
     
-    @scala.inline
-    def setFiles(value: js.Array[File]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: js.Array[File]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesVarargs(value: File*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: File*): Self = StObject.set(x, "files", js.Array(value :_*))
     
-    @scala.inline
-    def setForm(value: JQuery): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+    inline def setForm(value: JQuery): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
+    inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
     
-    @scala.inline
-    def setOriginalFiles(value: js.Array[File]): Self = StObject.set(x, "originalFiles", value.asInstanceOf[js.Any])
+    inline def setOriginalFiles(value: js.Array[File]): Self = StObject.set(x, "originalFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalFilesVarargs(value: File*): Self = StObject.set(x, "originalFiles", js.Array(value :_*))
+    inline def setOriginalFilesVarargs(value: File*): Self = StObject.set(x, "originalFiles", js.Array(value :_*))
   }
 }

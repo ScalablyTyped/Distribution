@@ -15,34 +15,25 @@ trait IBatchDeleteIntentsRequest extends StObject {
 }
 object IBatchDeleteIntentsRequest {
   
-  @scala.inline
-  def apply(): IBatchDeleteIntentsRequest = {
+  inline def apply(): IBatchDeleteIntentsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IBatchDeleteIntentsRequest]
   }
   
-  @scala.inline
-  implicit class IBatchDeleteIntentsRequestMutableBuilder[Self <: IBatchDeleteIntentsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IBatchDeleteIntentsRequest](x: Self) {
     
-    @scala.inline
-    def setIntents(value: js.Array[IIntent]): Self = StObject.set(x, "intents", value.asInstanceOf[js.Any])
+    inline def setIntents(value: js.Array[IIntent]): Self = StObject.set(x, "intents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntentsNull: Self = StObject.set(x, "intents", null)
+    inline def setIntentsNull: Self = StObject.set(x, "intents", null)
     
-    @scala.inline
-    def setIntentsUndefined: Self = StObject.set(x, "intents", js.undefined)
+    inline def setIntentsUndefined: Self = StObject.set(x, "intents", js.undefined)
     
-    @scala.inline
-    def setIntentsVarargs(value: IIntent*): Self = StObject.set(x, "intents", js.Array(value :_*))
+    inline def setIntentsVarargs(value: IIntent*): Self = StObject.set(x, "intents", js.Array(value :_*))
     
-    @scala.inline
-    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentNull: Self = StObject.set(x, "parent", null)
+    inline def setParentNull: Self = StObject.set(x, "parent", null)
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
   }
 }

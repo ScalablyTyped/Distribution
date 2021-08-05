@@ -47,8 +47,7 @@ object readableSpanMod {
   }
   object ReadableSpan {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attributes: Attributes,
       duration: HrTime,
       endTime: HrTime,
@@ -67,59 +66,41 @@ object readableSpanMod {
       __obj.asInstanceOf[ReadableSpan]
     }
     
-    @scala.inline
-    implicit class ReadableSpanMutableBuilder[Self <: ReadableSpan] (val x: Self) extends AnyVal {
+    extension [Self <: ReadableSpan](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDuration(value: HrTime): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: HrTime): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndTime(value: HrTime): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+      inline def setEndTime(value: HrTime): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnded(value: Boolean): Self = StObject.set(x, "ended", value.asInstanceOf[js.Any])
+      inline def setEnded(value: Boolean): Self = StObject.set(x, "ended", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvents(value: js.Array[TimedEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: js.Array[TimedEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsVarargs(value: TimedEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
+      inline def setEventsVarargs(value: TimedEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
       
-      @scala.inline
-      def setInstrumentationLibrary(value: InstrumentationLibrary): Self = StObject.set(x, "instrumentationLibrary", value.asInstanceOf[js.Any])
+      inline def setInstrumentationLibrary(value: InstrumentationLibrary): Self = StObject.set(x, "instrumentationLibrary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKind(value: SpanKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: SpanKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinks(value: js.Array[Link]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+      inline def setLinks(value: js.Array[Link]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinksVarargs(value: Link*): Self = StObject.set(x, "links", js.Array(value :_*))
+      inline def setLinksVarargs(value: Link*): Self = StObject.set(x, "links", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentSpanId(value: String): Self = StObject.set(x, "parentSpanId", value.asInstanceOf[js.Any])
+      inline def setParentSpanId(value: String): Self = StObject.set(x, "parentSpanId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentSpanIdUndefined: Self = StObject.set(x, "parentSpanId", js.undefined)
+      inline def setParentSpanIdUndefined: Self = StObject.set(x, "parentSpanId", js.undefined)
       
-      @scala.inline
-      def setResource(value: Resource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      inline def setResource(value: Resource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpanContext(value: SpanContext): Self = StObject.set(x, "spanContext", value.asInstanceOf[js.Any])
+      inline def setSpanContext(value: SpanContext): Self = StObject.set(x, "spanContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTime(value: HrTime): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: HrTime): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
 }

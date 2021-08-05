@@ -27,31 +27,23 @@ trait SchemaResourcePolicyGroupPlacementPolicy extends StObject {
 }
 object SchemaResourcePolicyGroupPlacementPolicy {
   
-  @scala.inline
-  def apply(): SchemaResourcePolicyGroupPlacementPolicy = {
+  inline def apply(): SchemaResourcePolicyGroupPlacementPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaResourcePolicyGroupPlacementPolicy]
   }
   
-  @scala.inline
-  implicit class SchemaResourcePolicyGroupPlacementPolicyMutableBuilder[Self <: SchemaResourcePolicyGroupPlacementPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaResourcePolicyGroupPlacementPolicy](x: Self) {
     
-    @scala.inline
-    def setLocality(value: String): Self = StObject.set(x, "locality", value.asInstanceOf[js.Any])
+    inline def setLocality(value: String): Self = StObject.set(x, "locality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalityUndefined: Self = StObject.set(x, "locality", js.undefined)
+    inline def setLocalityUndefined: Self = StObject.set(x, "locality", js.undefined)
     
-    @scala.inline
-    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setVmCount(value: Double): Self = StObject.set(x, "vmCount", value.asInstanceOf[js.Any])
+    inline def setVmCount(value: Double): Self = StObject.set(x, "vmCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmCountUndefined: Self = StObject.set(x, "vmCount", js.undefined)
+    inline def setVmCountUndefined: Self = StObject.set(x, "vmCount", js.undefined)
   }
 }

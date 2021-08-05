@@ -13,19 +13,15 @@ trait KeyPairSyncResult[T1 /* <: String | Buffer */, T2 /* <: String | Buffer */
 }
 object KeyPairSyncResult {
   
-  @scala.inline
-  def apply[T1 /* <: String | Buffer */, T2 /* <: String | Buffer */](privateKey: T2, publicKey: T1): KeyPairSyncResult[T1, T2] = {
+  inline def apply[T1 /* <: String | Buffer */, T2 /* <: String | Buffer */](privateKey: T2, publicKey: T1): KeyPairSyncResult[T1, T2] = {
     val __obj = js.Dynamic.literal(privateKey = privateKey.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyPairSyncResult[T1, T2]]
   }
   
-  @scala.inline
-  implicit class KeyPairSyncResultMutableBuilder[Self <: KeyPairSyncResult[?, ?], T1 /* <: String | Buffer */, T2 /* <: String | Buffer */] (val x: Self & (KeyPairSyncResult[T1, T2])) extends AnyVal {
+  extension [Self <: KeyPairSyncResult[?, ?], T1 /* <: String | Buffer */, T2 /* <: String | Buffer */](x: Self & (KeyPairSyncResult[T1, T2])) {
     
-    @scala.inline
-    def setPrivateKey(value: T2): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
+    inline def setPrivateKey(value: T2): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKey(value: T1): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+    inline def setPublicKey(value: T1): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
   }
 }

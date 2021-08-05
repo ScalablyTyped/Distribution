@@ -81,8 +81,7 @@ object accordionAccordionMod {
        with /* key */ StringDictionary[js.Any]
   object AccordionProps {
     
-    @scala.inline
-    def apply(): AccordionProps = {
+    inline def apply(): AccordionProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AccordionProps]
     }
@@ -103,32 +102,24 @@ object accordionAccordionMod {
   }
   object StrictAccordionProps {
     
-    @scala.inline
-    def apply(): StrictAccordionProps = {
+    inline def apply(): StrictAccordionProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictAccordionProps]
     }
     
-    @scala.inline
-    implicit class StrictAccordionPropsMutableBuilder[Self <: StrictAccordionProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictAccordionProps](x: Self) {
       
-      @scala.inline
-      def setFluid(value: Boolean): Self = StObject.set(x, "fluid", value.asInstanceOf[js.Any])
+      inline def setFluid(value: Boolean): Self = StObject.set(x, "fluid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFluidUndefined: Self = StObject.set(x, "fluid", js.undefined)
+      inline def setFluidUndefined: Self = StObject.set(x, "fluid", js.undefined)
       
-      @scala.inline
-      def setInverted(value: Boolean): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
+      inline def setInverted(value: Boolean): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvertedUndefined: Self = StObject.set(x, "inverted", js.undefined)
+      inline def setInvertedUndefined: Self = StObject.set(x, "inverted", js.undefined)
       
-      @scala.inline
-      def setStyled(value: Boolean): Self = StObject.set(x, "styled", value.asInstanceOf[js.Any])
+      inline def setStyled(value: Boolean): Self = StObject.set(x, "styled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyledUndefined: Self = StObject.set(x, "styled", js.undefined)
+      inline def setStyledUndefined: Self = StObject.set(x, "styled", js.undefined)
     }
   }
 }

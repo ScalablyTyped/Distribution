@@ -17,8 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object IPrintCustomItemListOptionDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addItem: (String, String) => Unit,
     displayName: String,
     errorText: String,
@@ -33,13 +32,10 @@ object IPrintCustomItemListOptionDetails {
     __obj.asInstanceOf[IPrintCustomItemListOptionDetails]
   }
   
-  @scala.inline
-  implicit class IPrintCustomItemListOptionDetailsMutableBuilder[Self <: IPrintCustomItemListOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: IPrintCustomItemListOptionDetails](x: Self) {
     
-    @scala.inline
-    def setAddItem(value: (String, String) => Unit): Self = StObject.set(x, "addItem", js.Any.fromFunction2(value))
+    inline def setAddItem(value: (String, String) => Unit): Self = StObject.set(x, "addItem", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
   }
 }

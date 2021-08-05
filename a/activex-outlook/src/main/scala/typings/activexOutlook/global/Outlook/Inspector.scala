@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.Inspector")
 @js.native
-class Inspector protected ()
+/* private */ class Inspector ()
   extends StObject
      with typings.activexOutlook.Outlook.Inspector

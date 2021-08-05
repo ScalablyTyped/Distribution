@@ -46,8 +46,7 @@ trait Artist extends StObject {
 }
 object Artist {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alternate_names: js.Array[js.Any],
     api_path: String,
     current_user_metadata: Permissions,
@@ -70,67 +69,46 @@ object Artist {
     __obj.asInstanceOf[Artist]
   }
   
-  @scala.inline
-  implicit class ArtistMutableBuilder[Self <: Artist] (val x: Self) extends AnyVal {
+  extension [Self <: Artist](x: Self) {
     
-    @scala.inline
-    def setAlternate_names(value: js.Array[js.Any]): Self = StObject.set(x, "alternate_names", value.asInstanceOf[js.Any])
+    inline def setAlternate_names(value: js.Array[js.Any]): Self = StObject.set(x, "alternate_names", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlternate_namesVarargs(value: js.Any*): Self = StObject.set(x, "alternate_names", js.Array(value :_*))
+    inline def setAlternate_namesVarargs(value: js.Any*): Self = StObject.set(x, "alternate_names", js.Array(value :_*))
     
-    @scala.inline
-    def setApi_path(value: String): Self = StObject.set(x, "api_path", value.asInstanceOf[js.Any])
+    inline def setApi_path(value: String): Self = StObject.set(x, "api_path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrent_user_metadata(value: Permissions): Self = StObject.set(x, "current_user_metadata", value.asInstanceOf[js.Any])
+    inline def setCurrent_user_metadata(value: Permissions): Self = StObject.set(x, "current_user_metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription_annotation(value: DescriptionAnnotation): Self = StObject.set(x, "description_annotation", value.asInstanceOf[js.Any])
+    inline def setDescription_annotation(value: DescriptionAnnotation): Self = StObject.set(x, "description_annotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacebook_name(value: String): Self = StObject.set(x, "facebook_name", value.asInstanceOf[js.Any])
+    inline def setFacebook_name(value: String): Self = StObject.set(x, "facebook_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFollowers_count(value: Double): Self = StObject.set(x, "followers_count", value.asInstanceOf[js.Any])
+    inline def setFollowers_count(value: Double): Self = StObject.set(x, "followers_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeader_image_url(value: String): Self = StObject.set(x, "header_image_url", value.asInstanceOf[js.Any])
+    inline def setHeader_image_url(value: String): Self = StObject.set(x, "header_image_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage_url(value: String): Self = StObject.set(x, "image_url", value.asInstanceOf[js.Any])
+    inline def setImage_url(value: String): Self = StObject.set(x, "image_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstagram_name(value: String): Self = StObject.set(x, "instagram_name", value.asInstanceOf[js.Any])
+    inline def setInstagram_name(value: String): Self = StObject.set(x, "instagram_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_meme_verified(value: Boolean): Self = StObject.set(x, "is_meme_verified", value.asInstanceOf[js.Any])
+    inline def setIs_meme_verified(value: Boolean): Self = StObject.set(x, "is_meme_verified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
+    inline def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslation_artist(value: Boolean): Self = StObject.set(x, "translation_artist", value.asInstanceOf[js.Any])
+    inline def setTranslation_artist(value: Boolean): Self = StObject.set(x, "translation_artist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTwitter_name(value: String): Self = StObject.set(x, "twitter_name", value.asInstanceOf[js.Any])
+    inline def setTwitter_name(value: String): Self = StObject.set(x, "twitter_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: js.Any): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: js.Any): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

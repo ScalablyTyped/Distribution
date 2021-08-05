@@ -23,20 +23,16 @@ object navbarItemContextMod {
   }
   object NavbarItemContextValue {
     
-    @scala.inline
-    def apply(active: Boolean, setActive: Boolean => Unit): NavbarItemContextValue = {
+    inline def apply(active: Boolean, setActive: Boolean => Unit): NavbarItemContextValue = {
       val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], setActive = js.Any.fromFunction1(setActive))
       __obj.asInstanceOf[NavbarItemContextValue]
     }
     
-    @scala.inline
-    implicit class NavbarItemContextValueMutableBuilder[Self <: NavbarItemContextValue] (val x: Self) extends AnyVal {
+    extension [Self <: NavbarItemContextValue](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetActive(value: Boolean => Unit): Self = StObject.set(x, "setActive", js.Any.fromFunction1(value))
+      inline def setSetActive(value: Boolean => Unit): Self = StObject.set(x, "setActive", js.Any.fromFunction1(value))
     }
   }
 }

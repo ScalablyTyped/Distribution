@@ -33,37 +33,27 @@ trait ContinueLegendRailCfg extends StObject {
 }
 object ContinueLegendRailCfg {
   
-  @scala.inline
-  def apply(): ContinueLegendRailCfg = {
+  inline def apply(): ContinueLegendRailCfg = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContinueLegendRailCfg]
   }
   
-  @scala.inline
-  implicit class ContinueLegendRailCfgMutableBuilder[Self <: ContinueLegendRailCfg] (val x: Self) extends AnyVal {
+  extension [Self <: ContinueLegendRailCfg](x: Self) {
     
-    @scala.inline
-    def setDefaultLength(value: Double): Self = StObject.set(x, "defaultLength", value.asInstanceOf[js.Any])
+    inline def setDefaultLength(value: Double): Self = StObject.set(x, "defaultLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultLengthUndefined: Self = StObject.set(x, "defaultLength", js.undefined)
+    inline def setDefaultLengthUndefined: Self = StObject.set(x, "defaultLength", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setStyle(value: ShapeAttrs): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: ShapeAttrs): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

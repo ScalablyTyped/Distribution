@@ -10,19 +10,15 @@ trait PageHyphen[TLength] extends StObject {
 }
 object PageHyphen {
   
-  @scala.inline
-  def apply[TLength](): PageHyphen[TLength] = {
+  inline def apply[TLength](): PageHyphen[TLength] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PageHyphen[TLength]]
   }
   
-  @scala.inline
-  implicit class PageHyphenMutableBuilder[Self <: PageHyphen[?], TLength] (val x: Self & PageHyphen[TLength]) extends AnyVal {
+  extension [Self <: PageHyphen[?], TLength](x: Self & PageHyphen[TLength]) {
     
-    @scala.inline
-    def setSize(value: PageSizeProperty[TLength]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: PageSizeProperty[TLength]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

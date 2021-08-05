@@ -24,61 +24,43 @@ trait ConfirmSelectionOnMobile extends StObject {
 }
 object ConfirmSelectionOnMobile {
   
-  @scala.inline
-  def apply(): ConfirmSelectionOnMobile = {
+  inline def apply(): ConfirmSelectionOnMobile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfirmSelectionOnMobile]
   }
   
-  @scala.inline
-  implicit class ConfirmSelectionOnMobileMutableBuilder[Self <: ConfirmSelectionOnMobile] (val x: Self) extends AnyVal {
+  extension [Self <: ConfirmSelectionOnMobile](x: Self) {
     
-    @scala.inline
-    def setConfirmSelectionOnMobile(value: String): Self = StObject.set(x, "confirmSelectionOnMobile", value.asInstanceOf[js.Any])
+    inline def setConfirmSelectionOnMobile(value: String): Self = StObject.set(x, "confirmSelectionOnMobile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfirmSelectionOnMobileUndefined: Self = StObject.set(x, "confirmSelectionOnMobile", js.undefined)
+    inline def setConfirmSelectionOnMobileUndefined: Self = StObject.set(x, "confirmSelectionOnMobile", js.undefined)
     
-    @scala.inline
-    def setShowActionHint(value: Boolean): Self = StObject.set(x, "showActionHint", value.asInstanceOf[js.Any])
+    inline def setShowActionHint(value: Boolean): Self = StObject.set(x, "showActionHint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowActionHintUndefined: Self = StObject.set(x, "showActionHint", js.undefined)
+    inline def setShowActionHintUndefined: Self = StObject.set(x, "showActionHint", js.undefined)
     
-    @scala.inline
-    def setShowAvailability(value: Boolean): Self = StObject.set(x, "showAvailability", value.asInstanceOf[js.Any])
+    inline def setShowAvailability(value: Boolean): Self = StObject.set(x, "showAvailability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowAvailabilityUndefined: Self = StObject.set(x, "showAvailability", js.undefined)
+    inline def setShowAvailabilityUndefined: Self = StObject.set(x, "showAvailability", js.undefined)
     
-    @scala.inline
-    def setShowCategory(value: Boolean): Self = StObject.set(x, "showCategory", value.asInstanceOf[js.Any])
+    inline def setShowCategory(value: Boolean): Self = StObject.set(x, "showCategory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowCategoryUndefined: Self = StObject.set(x, "showCategory", js.undefined)
+    inline def setShowCategoryUndefined: Self = StObject.set(x, "showCategory", js.undefined)
     
-    @scala.inline
-    def setShowLabel(value: Boolean): Self = StObject.set(x, "showLabel", value.asInstanceOf[js.Any])
+    inline def setShowLabel(value: Boolean): Self = StObject.set(x, "showLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowLabelUndefined: Self = StObject.set(x, "showLabel", js.undefined)
+    inline def setShowLabelUndefined: Self = StObject.set(x, "showLabel", js.undefined)
     
-    @scala.inline
-    def setShowPricing(value: Boolean): Self = StObject.set(x, "showPricing", value.asInstanceOf[js.Any])
+    inline def setShowPricing(value: Boolean): Self = StObject.set(x, "showPricing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowPricingUndefined: Self = StObject.set(x, "showPricing", js.undefined)
+    inline def setShowPricingUndefined: Self = StObject.set(x, "showPricing", js.undefined)
     
-    @scala.inline
-    def setShowUnavailableNotice(value: Boolean): Self = StObject.set(x, "showUnavailableNotice", value.asInstanceOf[js.Any])
+    inline def setShowUnavailableNotice(value: Boolean): Self = StObject.set(x, "showUnavailableNotice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowUnavailableNoticeUndefined: Self = StObject.set(x, "showUnavailableNotice", js.undefined)
+    inline def setShowUnavailableNoticeUndefined: Self = StObject.set(x, "showUnavailableNotice", js.undefined)
     
-    @scala.inline
-    def setStylizedLabel(value: Boolean): Self = StObject.set(x, "stylizedLabel", value.asInstanceOf[js.Any])
+    inline def setStylizedLabel(value: Boolean): Self = StObject.set(x, "stylizedLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylizedLabelUndefined: Self = StObject.set(x, "stylizedLabel", js.undefined)
+    inline def setStylizedLabelUndefined: Self = StObject.set(x, "stylizedLabel", js.undefined)
   }
 }

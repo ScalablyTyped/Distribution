@@ -16,17 +16,14 @@ trait VideoSourceRaw
 }
 object VideoSourceRaw {
   
-  @scala.inline
-  def apply(): VideoSourceRaw = {
+  inline def apply(): VideoSourceRaw = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("video")
     __obj.asInstanceOf[VideoSourceRaw]
   }
   
-  @scala.inline
-  implicit class VideoSourceRawMutableBuilder[Self <: VideoSourceRaw] (val x: Self) extends AnyVal {
+  extension [Self <: VideoSourceRaw](x: Self) {
     
-    @scala.inline
-    def setType(value: video): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: video): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

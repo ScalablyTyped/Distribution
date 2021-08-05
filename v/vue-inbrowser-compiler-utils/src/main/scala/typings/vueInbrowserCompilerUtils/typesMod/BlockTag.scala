@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BlockTag extends StObject
 object BlockTag {
   
-  @scala.inline
-  def ParamTag(title: String): typings.vueInbrowserCompilerUtils.typesMod.ParamTag = {
+  inline def ParamTag(title: String): typings.vueInbrowserCompilerUtils.typesMod.ParamTag = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.vueInbrowserCompilerUtils.typesMod.ParamTag]
   }
   
-  @scala.inline
-  def Tag(content: String | Boolean, title: String): typings.vueInbrowserCompilerUtils.typesMod.Tag = {
+  inline def Tag(content: String | Boolean, title: String): typings.vueInbrowserCompilerUtils.typesMod.Tag = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.vueInbrowserCompilerUtils.typesMod.Tag]
   }

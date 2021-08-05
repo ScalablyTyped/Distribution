@@ -17,8 +17,7 @@ trait KnockoutStatic extends StObject {
 }
 object KnockoutStatic {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DirtyFlag: DirtyFlag,
     asyncCommand: KoLiteCommandOptions => KoliteAsyncCommand,
     command: KoLiteCommandOptions => KoliteCommand
@@ -27,16 +26,12 @@ object KnockoutStatic {
     __obj.asInstanceOf[KnockoutStatic]
   }
   
-  @scala.inline
-  implicit class KnockoutStaticMutableBuilder[Self <: KnockoutStatic] (val x: Self) extends AnyVal {
+  extension [Self <: KnockoutStatic](x: Self) {
     
-    @scala.inline
-    def setAsyncCommand(value: KoLiteCommandOptions => KoliteAsyncCommand): Self = StObject.set(x, "asyncCommand", js.Any.fromFunction1(value))
+    inline def setAsyncCommand(value: KoLiteCommandOptions => KoliteAsyncCommand): Self = StObject.set(x, "asyncCommand", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCommand(value: KoLiteCommandOptions => KoliteCommand): Self = StObject.set(x, "command", js.Any.fromFunction1(value))
+    inline def setCommand(value: KoLiteCommandOptions => KoliteCommand): Self = StObject.set(x, "command", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDirtyFlag(value: DirtyFlag): Self = StObject.set(x, "DirtyFlag", value.asInstanceOf[js.Any])
+    inline def setDirtyFlag(value: DirtyFlag): Self = StObject.set(x, "DirtyFlag", value.asInstanceOf[js.Any])
   }
 }

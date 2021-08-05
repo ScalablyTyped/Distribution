@@ -23,40 +23,29 @@ trait CreateSubaccount extends StObject {
 }
 object CreateSubaccount {
   
-  @scala.inline
-  def apply(key_grants: js.Array[String], key_label: String, name: String): CreateSubaccount = {
+  inline def apply(key_grants: js.Array[String], key_label: String, name: String): CreateSubaccount = {
     val __obj = js.Dynamic.literal(key_grants = key_grants.asInstanceOf[js.Any], key_label = key_label.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSubaccount]
   }
   
-  @scala.inline
-  implicit class CreateSubaccountMutableBuilder[Self <: CreateSubaccount] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSubaccount](x: Self) {
     
-    @scala.inline
-    def setIp_pool(value: String): Self = StObject.set(x, "ip_pool", value.asInstanceOf[js.Any])
+    inline def setIp_pool(value: String): Self = StObject.set(x, "ip_pool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIp_poolUndefined: Self = StObject.set(x, "ip_pool", js.undefined)
+    inline def setIp_poolUndefined: Self = StObject.set(x, "ip_pool", js.undefined)
     
-    @scala.inline
-    def setKey_grants(value: js.Array[String]): Self = StObject.set(x, "key_grants", value.asInstanceOf[js.Any])
+    inline def setKey_grants(value: js.Array[String]): Self = StObject.set(x, "key_grants", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey_grantsVarargs(value: String*): Self = StObject.set(x, "key_grants", js.Array(value :_*))
+    inline def setKey_grantsVarargs(value: String*): Self = StObject.set(x, "key_grants", js.Array(value :_*))
     
-    @scala.inline
-    def setKey_label(value: String): Self = StObject.set(x, "key_label", value.asInstanceOf[js.Any])
+    inline def setKey_label(value: String): Self = StObject.set(x, "key_label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey_valid_ips(value: js.Array[String]): Self = StObject.set(x, "key_valid_ips", value.asInstanceOf[js.Any])
+    inline def setKey_valid_ips(value: js.Array[String]): Self = StObject.set(x, "key_valid_ips", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey_valid_ipsUndefined: Self = StObject.set(x, "key_valid_ips", js.undefined)
+    inline def setKey_valid_ipsUndefined: Self = StObject.set(x, "key_valid_ips", js.undefined)
     
-    @scala.inline
-    def setKey_valid_ipsVarargs(value: String*): Self = StObject.set(x, "key_valid_ips", js.Array(value :_*))
+    inline def setKey_valid_ipsVarargs(value: String*): Self = StObject.set(x, "key_valid_ips", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

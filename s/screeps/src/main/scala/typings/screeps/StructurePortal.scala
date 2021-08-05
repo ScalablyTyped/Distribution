@@ -29,8 +29,7 @@ trait StructurePortal
 }
 object StructurePortal {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destination: RoomPosition | typings.screeps.anon.Shard,
     destroy: () => ScreepsReturnCode,
     effects: js.Array[RoomObjectEffect],
@@ -47,16 +46,12 @@ object StructurePortal {
     __obj.asInstanceOf[StructurePortal]
   }
   
-  @scala.inline
-  implicit class StructurePortalMutableBuilder[Self <: StructurePortal] (val x: Self) extends AnyVal {
+  extension [Self <: StructurePortal](x: Self) {
     
-    @scala.inline
-    def setDestination(value: RoomPosition | typings.screeps.anon.Shard): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: RoomPosition | typings.screeps.anon.Shard): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTicksToDecay(value: Double): Self = StObject.set(x, "ticksToDecay", value.asInstanceOf[js.Any])
+    inline def setTicksToDecay(value: Double): Self = StObject.set(x, "ticksToDecay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTicksToDecayUndefined: Self = StObject.set(x, "ticksToDecay", js.undefined)
+    inline def setTicksToDecayUndefined: Self = StObject.set(x, "ticksToDecay", js.undefined)
   }
 }

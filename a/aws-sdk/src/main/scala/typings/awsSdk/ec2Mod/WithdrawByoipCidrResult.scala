@@ -13,19 +13,15 @@ trait WithdrawByoipCidrResult extends StObject {
 }
 object WithdrawByoipCidrResult {
   
-  @scala.inline
-  def apply(): WithdrawByoipCidrResult = {
+  inline def apply(): WithdrawByoipCidrResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WithdrawByoipCidrResult]
   }
   
-  @scala.inline
-  implicit class WithdrawByoipCidrResultMutableBuilder[Self <: WithdrawByoipCidrResult] (val x: Self) extends AnyVal {
+  extension [Self <: WithdrawByoipCidrResult](x: Self) {
     
-    @scala.inline
-    def setByoipCidr(value: ByoipCidr): Self = StObject.set(x, "ByoipCidr", value.asInstanceOf[js.Any])
+    inline def setByoipCidr(value: ByoipCidr): Self = StObject.set(x, "ByoipCidr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByoipCidrUndefined: Self = StObject.set(x, "ByoipCidr", js.undefined)
+    inline def setByoipCidrUndefined: Self = StObject.set(x, "ByoipCidr", js.undefined)
   }
 }

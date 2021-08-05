@@ -248,8 +248,7 @@ object areasSettingsMod {
   }
   object AreasSettings {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       alpha: Double,
       autoZoom: Boolean,
       balloonText: String,
@@ -274,65 +273,45 @@ object areasSettingsMod {
       __obj.asInstanceOf[AreasSettings]
     }
     
-    @scala.inline
-    implicit class AreasSettingsMutableBuilder[Self <: AreasSettings] (val x: Self) extends AnyVal {
+    extension [Self <: AreasSettings](x: Self) {
       
-      @scala.inline
-      def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+      inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoZoom(value: Boolean): Self = StObject.set(x, "autoZoom", value.asInstanceOf[js.Any])
+      inline def setAutoZoom(value: Boolean): Self = StObject.set(x, "autoZoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBalloonText(value: String): Self = StObject.set(x, "balloonText", value.asInstanceOf[js.Any])
+      inline def setBalloonText(value: String): Self = StObject.set(x, "balloonText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorSolid(value: String): Self = StObject.set(x, "colorSolid", value.asInstanceOf[js.Any])
+      inline def setColorSolid(value: String): Self = StObject.set(x, "colorSolid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionWindowHeight(value: Double): Self = StObject.set(x, "descriptionWindowHeight", value.asInstanceOf[js.Any])
+      inline def setDescriptionWindowHeight(value: Double): Self = StObject.set(x, "descriptionWindowHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionWindowWidth(value: Double): Self = StObject.set(x, "descriptionWindowWidth", value.asInstanceOf[js.Any])
+      inline def setDescriptionWindowWidth(value: Double): Self = StObject.set(x, "descriptionWindowWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionWindowX(value: Double): Self = StObject.set(x, "descriptionWindowX", value.asInstanceOf[js.Any])
+      inline def setDescriptionWindowX(value: Double): Self = StObject.set(x, "descriptionWindowX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionWindowY(value: Double): Self = StObject.set(x, "descriptionWindowY", value.asInstanceOf[js.Any])
+      inline def setDescriptionWindowY(value: Double): Self = StObject.set(x, "descriptionWindowY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutlineAlpha(value: Double): Self = StObject.set(x, "outlineAlpha", value.asInstanceOf[js.Any])
+      inline def setOutlineAlpha(value: Double): Self = StObject.set(x, "outlineAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutlineColor(value: String): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
+      inline def setOutlineColor(value: String): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutlineThickness(value: Double): Self = StObject.set(x, "outlineThickness", value.asInstanceOf[js.Any])
+      inline def setOutlineThickness(value: Double): Self = StObject.set(x, "outlineThickness", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRollOverColor(value: String): Self = StObject.set(x, "rollOverColor", value.asInstanceOf[js.Any])
+      inline def setRollOverColor(value: String): Self = StObject.set(x, "rollOverColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRollOverOutlineColor(value: String): Self = StObject.set(x, "rollOverOutlineColor", value.asInstanceOf[js.Any])
+      inline def setRollOverOutlineColor(value: String): Self = StObject.set(x, "rollOverOutlineColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedColor(value: String): Self = StObject.set(x, "selectedColor", value.asInstanceOf[js.Any])
+      inline def setSelectedColor(value: String): Self = StObject.set(x, "selectedColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnlistedAreasAlpha(value: Double): Self = StObject.set(x, "unlistedAreasAlpha", value.asInstanceOf[js.Any])
+      inline def setUnlistedAreasAlpha(value: Double): Self = StObject.set(x, "unlistedAreasAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnlistedAreasColor(value: String): Self = StObject.set(x, "unlistedAreasColor", value.asInstanceOf[js.Any])
+      inline def setUnlistedAreasColor(value: String): Self = StObject.set(x, "unlistedAreasColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnlistedAreasOutlineAlpha(value: Double): Self = StObject.set(x, "unlistedAreasOutlineAlpha", value.asInstanceOf[js.Any])
+      inline def setUnlistedAreasOutlineAlpha(value: Double): Self = StObject.set(x, "unlistedAreasOutlineAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnlistedAreasOutlineColor(value: String): Self = StObject.set(x, "unlistedAreasOutlineColor", value.asInstanceOf[js.Any])
+      inline def setUnlistedAreasOutlineColor(value: String): Self = StObject.set(x, "unlistedAreasOutlineColor", value.asInstanceOf[js.Any])
     }
   }
 }

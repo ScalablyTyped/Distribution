@@ -22,28 +22,21 @@ trait SchemaPermissionConstraint extends StObject {
 }
 object SchemaPermissionConstraint {
   
-  @scala.inline
-  def apply(): SchemaPermissionConstraint = {
+  inline def apply(): SchemaPermissionConstraint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPermissionConstraint]
   }
   
-  @scala.inline
-  implicit class SchemaPermissionConstraintMutableBuilder[Self <: SchemaPermissionConstraint] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPermissionConstraint](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

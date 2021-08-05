@@ -26,10 +26,10 @@ object provideInWhenOnSyntaxMod {
     extends StObject
        with typings.inversifyBindingDecorators.interfacesMod.interfaces.ProvideInWhenOnSyntax[T] {
     
-    var _provideInSyntax: js.Any = js.native
+    /* private */ var _provideInSyntax: js.Any = js.native
     
-    var _provideOnSyntax: js.Any = js.native
+    /* private */ var _provideOnSyntax: js.Any = js.native
     
-    var _provideWhenSyntax: js.Any = js.native
+    /* private */ var _provideWhenSyntax: js.Any = js.native
   }
 }

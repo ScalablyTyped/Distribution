@@ -16,20 +16,20 @@ object bintrayPublisherMod {
     def this(context: PublishContext, info: BintrayOptions, version: String) = this()
     def this(context: PublishContext, info: BintrayOptions, version: String, options: PublishOptions) = this()
     
-    val _versionPromise: js.Any = js.native
+    /* private */ val _versionPromise: js.Any = js.native
     
-    val client: js.Any = js.native
+    /* private */ val client: js.Any = js.native
     
     def deleteRelease(): js.Promise[Unit] = js.native
     def deleteRelease(isForce: Boolean): js.Promise[Unit] = js.native
     
-    var init: js.Any = js.native
+    /* private */ var init: js.Any = js.native
     
-    val options: js.Any = js.native
+    /* private */ val options: js.Any = js.native
     
     @JSName("providerName")
     val providerName_FBintrayPublisher: /* "Bintray" */ String = js.native
     
-    val version: js.Any = js.native
+    /* private */ val version: js.Any = js.native
   }
 }

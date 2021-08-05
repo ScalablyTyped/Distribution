@@ -17,10 +17,8 @@ object mod {
     * Configuration defines possible sources, their order and, optionally, a whitelist.
     * For performance reasons, on each request, remaining lookups are ignored as soon as a match is found.
     */
-  @scala.inline
-  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  @scala.inline
-  def apply(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
   @JSImport("express-locale", JSImport.Namespace)
   @js.native
@@ -39,23 +37,18 @@ object mod {
   }
   object Locale {
     
-    @scala.inline
-    def apply(language: String, region: String, source: String): Locale = {
+    inline def apply(language: String, region: String, source: String): Locale = {
       val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[Locale]
     }
     
-    @scala.inline
-    implicit class LocaleMutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
+    extension [Self <: Locale](x: Self) {
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
   
@@ -130,78 +123,56 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAllowed(value: js.Array[String]): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
+      inline def setAllowed(value: js.Array[String]): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedUndefined: Self = StObject.set(x, "allowed", js.undefined)
+      inline def setAllowedUndefined: Self = StObject.set(x, "allowed", js.undefined)
       
-      @scala.inline
-      def setAllowedVarargs(value: String*): Self = StObject.set(x, "allowed", js.Array(value :_*))
+      inline def setAllowedVarargs(value: String*): Self = StObject.set(x, "allowed", js.Array(value :_*))
       
-      @scala.inline
-      def setCookie(value: StringDictionary[js.Any]): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
+      inline def setCookie(value: StringDictionary[js.Any]): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
+      inline def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
       
-      @scala.inline
-      def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setHostname(value: StringDictionary[String]): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      inline def setHostname(value: StringDictionary[String]): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
+      inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
       
-      @scala.inline
-      def setLookups(
+      inline def setLookups(
         value: StringDictionary[
               js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], String]
             ]
       ): Self = StObject.set(x, "lookups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLookupsUndefined: Self = StObject.set(x, "lookups", js.undefined)
+      inline def setLookupsUndefined: Self = StObject.set(x, "lookups", js.undefined)
       
-      @scala.inline
-      def setMap(value: StringDictionary[String]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: StringDictionary[String]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
-      @scala.inline
-      def setPriority(value: js.Array[String]): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: js.Array[String]): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
       
-      @scala.inline
-      def setPriorityVarargs(value: String*): Self = StObject.set(x, "priority", js.Array(value :_*))
+      inline def setPriorityVarargs(value: String*): Self = StObject.set(x, "priority", js.Array(value :_*))
       
-      @scala.inline
-      def setQuery(value: StringDictionary[js.Any]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: StringDictionary[js.Any]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
-      @scala.inline
-      def setRequestProperty(value: String): Self = StObject.set(x, "requestProperty", value.asInstanceOf[js.Any])
+      inline def setRequestProperty(value: String): Self = StObject.set(x, "requestProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestPropertyUndefined: Self = StObject.set(x, "requestProperty", js.undefined)
+      inline def setRequestPropertyUndefined: Self = StObject.set(x, "requestProperty", js.undefined)
     }
   }
   
@@ -213,17 +184,14 @@ object mod {
     }
     object Request {
       
-      @scala.inline
-      def apply(locale: Locale): Request = {
+      inline def apply(locale: Locale): Request = {
         val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any])
         __obj.asInstanceOf[Request]
       }
       
-      @scala.inline
-      implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+      extension [Self <: Request](x: Self) {
         
-        @scala.inline
-        def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+        inline def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       }
     }
   }

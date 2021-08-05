@@ -18,31 +18,23 @@ trait SourceSchedule extends StObject {
 }
 object SourceSchedule {
   
-  @scala.inline
-  def apply(): SourceSchedule = {
+  inline def apply(): SourceSchedule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SourceSchedule]
   }
   
-  @scala.inline
-  implicit class SourceScheduleMutableBuilder[Self <: SourceSchedule] (val x: Self) extends AnyVal {
+  extension [Self <: SourceSchedule](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setFrequency(value: String): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
+    inline def setFrequency(value: String): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
+    inline def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
     
-    @scala.inline
-    def setTime_zone(value: String): Self = StObject.set(x, "time_zone", value.asInstanceOf[js.Any])
+    inline def setTime_zone(value: String): Self = StObject.set(x, "time_zone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime_zoneUndefined: Self = StObject.set(x, "time_zone", js.undefined)
+    inline def setTime_zoneUndefined: Self = StObject.set(x, "time_zone", js.undefined)
   }
 }

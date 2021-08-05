@@ -19,19 +19,15 @@ trait UnreachableStateException
 }
 object UnreachableStateException {
   
-  @scala.inline
-  def apply(Context: XInterface, CurrentState: Double, Message: String, NextState: Double): UnreachableStateException = {
+  inline def apply(Context: XInterface, CurrentState: Double, Message: String, NextState: Double): UnreachableStateException = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], CurrentState = CurrentState.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], NextState = NextState.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnreachableStateException]
   }
   
-  @scala.inline
-  implicit class UnreachableStateExceptionMutableBuilder[Self <: UnreachableStateException] (val x: Self) extends AnyVal {
+  extension [Self <: UnreachableStateException](x: Self) {
     
-    @scala.inline
-    def setCurrentState(value: Double): Self = StObject.set(x, "CurrentState", value.asInstanceOf[js.Any])
+    inline def setCurrentState(value: Double): Self = StObject.set(x, "CurrentState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextState(value: Double): Self = StObject.set(x, "NextState", value.asInstanceOf[js.Any])
+    inline def setNextState(value: Double): Self = StObject.set(x, "NextState", value.asInstanceOf[js.Any])
   }
 }

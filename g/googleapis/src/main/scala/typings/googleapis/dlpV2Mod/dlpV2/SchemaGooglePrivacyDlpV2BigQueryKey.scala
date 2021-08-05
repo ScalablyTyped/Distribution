@@ -22,25 +22,19 @@ trait SchemaGooglePrivacyDlpV2BigQueryKey extends StObject {
 }
 object SchemaGooglePrivacyDlpV2BigQueryKey {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2BigQueryKey = {
+  inline def apply(): SchemaGooglePrivacyDlpV2BigQueryKey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2BigQueryKey]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2BigQueryKeyMutableBuilder[Self <: SchemaGooglePrivacyDlpV2BigQueryKey] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2BigQueryKey](x: Self) {
     
-    @scala.inline
-    def setRowNumber(value: String): Self = StObject.set(x, "rowNumber", value.asInstanceOf[js.Any])
+    inline def setRowNumber(value: String): Self = StObject.set(x, "rowNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowNumberUndefined: Self = StObject.set(x, "rowNumber", js.undefined)
+    inline def setRowNumberUndefined: Self = StObject.set(x, "rowNumber", js.undefined)
     
-    @scala.inline
-    def setTableReference(value: SchemaGooglePrivacyDlpV2BigQueryTable): Self = StObject.set(x, "tableReference", value.asInstanceOf[js.Any])
+    inline def setTableReference(value: SchemaGooglePrivacyDlpV2BigQueryTable): Self = StObject.set(x, "tableReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableReferenceUndefined: Self = StObject.set(x, "tableReference", js.undefined)
+    inline def setTableReferenceUndefined: Self = StObject.set(x, "tableReference", js.undefined)
   }
 }

@@ -24,8 +24,7 @@ trait Browser extends StObject {
 }
 object Browser {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     chrome: Boolean,
     edge: Boolean,
     facebook: Boolean,
@@ -39,31 +38,22 @@ object Browser {
     __obj.asInstanceOf[Browser]
   }
   
-  @scala.inline
-  implicit class BrowserMutableBuilder[Self <: Browser] (val x: Self) extends AnyVal {
+  extension [Self <: Browser](x: Self) {
     
-    @scala.inline
-    def setChrome(value: Boolean): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
+    inline def setChrome(value: Boolean): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdge(value: Boolean): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
+    inline def setEdge(value: Boolean): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacebook(value: Boolean): Self = StObject.set(x, "facebook", value.asInstanceOf[js.Any])
+    inline def setFacebook(value: Boolean): Self = StObject.set(x, "facebook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirefox(value: Boolean): Self = StObject.set(x, "firefox", value.asInstanceOf[js.Any])
+    inline def setFirefox(value: Boolean): Self = StObject.set(x, "firefox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIe(value: Boolean): Self = StObject.set(x, "ie", value.asInstanceOf[js.Any])
+    inline def setIe(value: Boolean): Self = StObject.set(x, "ie", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsie(value: Boolean): Self = StObject.set(x, "msie", value.asInstanceOf[js.Any])
+    inline def setMsie(value: Boolean): Self = StObject.set(x, "msie", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSafari(value: Boolean): Self = StObject.set(x, "safari", value.asInstanceOf[js.Any])
+    inline def setSafari(value: Boolean): Self = StObject.set(x, "safari", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

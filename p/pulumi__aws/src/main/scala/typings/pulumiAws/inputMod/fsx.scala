@@ -41,8 +41,7 @@ object fsx {
   }
   object WindowsFileSystemSelfManagedActiveDirectory {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dnsIps: Input[js.Array[Input[String]]],
       domainName: Input[String],
       password: Input[String],
@@ -52,35 +51,25 @@ object fsx {
       __obj.asInstanceOf[WindowsFileSystemSelfManagedActiveDirectory]
     }
     
-    @scala.inline
-    implicit class WindowsFileSystemSelfManagedActiveDirectoryMutableBuilder[Self <: WindowsFileSystemSelfManagedActiveDirectory] (val x: Self) extends AnyVal {
+    extension [Self <: WindowsFileSystemSelfManagedActiveDirectory](x: Self) {
       
-      @scala.inline
-      def setDnsIps(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "dnsIps", value.asInstanceOf[js.Any])
+      inline def setDnsIps(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "dnsIps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDnsIpsVarargs(value: Input[String]*): Self = StObject.set(x, "dnsIps", js.Array(value :_*))
+      inline def setDnsIpsVarargs(value: Input[String]*): Self = StObject.set(x, "dnsIps", js.Array(value :_*))
       
-      @scala.inline
-      def setDomainName(value: Input[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+      inline def setDomainName(value: Input[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileSystemAdministratorsGroup(value: Input[String]): Self = StObject.set(x, "fileSystemAdministratorsGroup", value.asInstanceOf[js.Any])
+      inline def setFileSystemAdministratorsGroup(value: Input[String]): Self = StObject.set(x, "fileSystemAdministratorsGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileSystemAdministratorsGroupUndefined: Self = StObject.set(x, "fileSystemAdministratorsGroup", js.undefined)
+      inline def setFileSystemAdministratorsGroupUndefined: Self = StObject.set(x, "fileSystemAdministratorsGroup", js.undefined)
       
-      @scala.inline
-      def setOrganizationalUnitDistinguishedName(value: Input[String]): Self = StObject.set(x, "organizationalUnitDistinguishedName", value.asInstanceOf[js.Any])
+      inline def setOrganizationalUnitDistinguishedName(value: Input[String]): Self = StObject.set(x, "organizationalUnitDistinguishedName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrganizationalUnitDistinguishedNameUndefined: Self = StObject.set(x, "organizationalUnitDistinguishedName", js.undefined)
+      inline def setOrganizationalUnitDistinguishedNameUndefined: Self = StObject.set(x, "organizationalUnitDistinguishedName", js.undefined)
       
-      @scala.inline
-      def setPassword(value: Input[String]): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: Input[String]): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: Input[String]): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: Input[String]): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
 }

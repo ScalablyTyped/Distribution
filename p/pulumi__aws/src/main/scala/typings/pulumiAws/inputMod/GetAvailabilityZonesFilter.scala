@@ -18,22 +18,17 @@ trait GetAvailabilityZonesFilter extends StObject {
 }
 object GetAvailabilityZonesFilter {
   
-  @scala.inline
-  def apply(name: String, values: js.Array[String]): GetAvailabilityZonesFilter = {
+  inline def apply(name: String, values: js.Array[String]): GetAvailabilityZonesFilter = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAvailabilityZonesFilter]
   }
   
-  @scala.inline
-  implicit class GetAvailabilityZonesFilterMutableBuilder[Self <: GetAvailabilityZonesFilter] (val x: Self) extends AnyVal {
+  extension [Self <: GetAvailabilityZonesFilter](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

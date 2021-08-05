@@ -26,8 +26,7 @@ trait PickCardStyleheaderConten extends StObject {
 }
 object PickCardStyleheaderConten {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     headerContent: TextStyle,
     headerContentWrap: ViewStyle,
     headerExtra: TextStyle,
@@ -40,28 +39,20 @@ object PickCardStyleheaderConten {
     __obj.asInstanceOf[PickCardStyleheaderConten]
   }
   
-  @scala.inline
-  implicit class PickCardStyleheaderContenMutableBuilder[Self <: PickCardStyleheaderConten] (val x: Self) extends AnyVal {
+  extension [Self <: PickCardStyleheaderConten](x: Self) {
     
-    @scala.inline
-    def setHeaderContent(value: TextStyle): Self = StObject.set(x, "headerContent", value.asInstanceOf[js.Any])
+    inline def setHeaderContent(value: TextStyle): Self = StObject.set(x, "headerContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderContentWrap(value: ViewStyle): Self = StObject.set(x, "headerContentWrap", value.asInstanceOf[js.Any])
+    inline def setHeaderContentWrap(value: ViewStyle): Self = StObject.set(x, "headerContentWrap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderExtra(value: TextStyle): Self = StObject.set(x, "headerExtra", value.asInstanceOf[js.Any])
+    inline def setHeaderExtra(value: TextStyle): Self = StObject.set(x, "headerExtra", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderExtraWrap(value: ViewStyle): Self = StObject.set(x, "headerExtraWrap", value.asInstanceOf[js.Any])
+    inline def setHeaderExtraWrap(value: ViewStyle): Self = StObject.set(x, "headerExtraWrap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderImage(value: ImageStyle): Self = StObject.set(x, "headerImage", value.asInstanceOf[js.Any])
+    inline def setHeaderImage(value: ImageStyle): Self = StObject.set(x, "headerImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderTitle(value: ViewStyle): Self = StObject.set(x, "headerTitle", value.asInstanceOf[js.Any])
+    inline def setHeaderTitle(value: ViewStyle): Self = StObject.set(x, "headerTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderWrap(value: ViewStyle): Self = StObject.set(x, "headerWrap", value.asInstanceOf[js.Any])
+    inline def setHeaderWrap(value: ViewStyle): Self = StObject.set(x, "headerWrap", value.asInstanceOf[js.Any])
   }
 }

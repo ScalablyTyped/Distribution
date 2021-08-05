@@ -32,64 +32,46 @@ object anon {
   }
   object Agent {
     
-    @scala.inline
-    def apply(endpoint: String): Agent = {
+    inline def apply(endpoint: String): Agent = {
       val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any])
       __obj.asInstanceOf[Agent]
     }
     
-    @scala.inline
-    implicit class AgentMutableBuilder[Self <: Agent] (val x: Self) extends AnyVal {
+    extension [Self <: Agent](x: Self) {
       
-      @scala.inline
-      def setAgent(
+      inline def setAgent(
         value: typings.zipkinTransportHttp.mod.Agent | (js.Function1[/* url */ URL_, typings.zipkinTransportHttp.mod.Agent])
       ): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAgentFunction1(value: /* url */ URL_ => typings.zipkinTransportHttp.mod.Agent): Self = StObject.set(x, "agent", js.Any.fromFunction1(value))
+      inline def setAgentFunction1(value: /* url */ URL_ => typings.zipkinTransportHttp.mod.Agent): Self = StObject.set(x, "agent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
+      inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
       
-      @scala.inline
-      def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setHttpInterval(value: Double): Self = StObject.set(x, "httpInterval", value.asInstanceOf[js.Any])
+      inline def setHttpInterval(value: Double): Self = StObject.set(x, "httpInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpIntervalUndefined: Self = StObject.set(x, "httpInterval", js.undefined)
+      inline def setHttpIntervalUndefined: Self = StObject.set(x, "httpInterval", js.undefined)
       
-      @scala.inline
-      def setJsonEncoder(value: JsonEncoder_): Self = StObject.set(x, "jsonEncoder", value.asInstanceOf[js.Any])
+      inline def setJsonEncoder(value: JsonEncoder_): Self = StObject.set(x, "jsonEncoder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonEncoderUndefined: Self = StObject.set(x, "jsonEncoder", js.undefined)
+      inline def setJsonEncoderUndefined: Self = StObject.set(x, "jsonEncoder", js.undefined)
       
-      @scala.inline
-      def setLog(value: ErrorLogger): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: ErrorLogger): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+      inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
       
-      @scala.inline
-      def setMaxPayloadSize(value: Double): Self = StObject.set(x, "maxPayloadSize", value.asInstanceOf[js.Any])
+      inline def setMaxPayloadSize(value: Double): Self = StObject.set(x, "maxPayloadSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxPayloadSizeUndefined: Self = StObject.set(x, "maxPayloadSize", js.undefined)
+      inline def setMaxPayloadSizeUndefined: Self = StObject.set(x, "maxPayloadSize", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
 }

@@ -10,12 +10,9 @@ object counters {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def add(sname: String, v: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(sname.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def add(sname: String, v: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(sname.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def inc(sname: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("inc")(sname.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def inc(sname: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("inc")(sname.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def reset(sname: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")(sname.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def reset(sname: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")(sname.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

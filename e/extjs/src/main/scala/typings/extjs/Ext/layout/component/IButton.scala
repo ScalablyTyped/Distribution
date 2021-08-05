@@ -22,25 +22,19 @@ trait IButton
 }
 object IButton {
   
-  @scala.inline
-  def apply(): IButton = {
+  inline def apply(): IButton = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IButton]
   }
   
-  @scala.inline
-  implicit class IButtonMutableBuilder[Self <: IButton] (val x: Self) extends AnyVal {
+  extension [Self <: IButton](x: Self) {
     
-    @scala.inline
-    def setBeginLayout(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beginLayout", js.Any.fromFunction1(value))
+    inline def setBeginLayout(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beginLayout", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBeginLayoutCycle(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beginLayoutCycle", js.Any.fromFunction1(value))
+    inline def setBeginLayoutCycle(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beginLayoutCycle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBeginLayoutCycleUndefined: Self = StObject.set(x, "beginLayoutCycle", js.undefined)
+    inline def setBeginLayoutCycleUndefined: Self = StObject.set(x, "beginLayoutCycle", js.undefined)
     
-    @scala.inline
-    def setBeginLayoutUndefined: Self = StObject.set(x, "beginLayout", js.undefined)
+    inline def setBeginLayoutUndefined: Self = StObject.set(x, "beginLayout", js.undefined)
   }
 }

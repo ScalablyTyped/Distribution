@@ -123,8 +123,7 @@ trait Application extends StObject {
 }
 object Application {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addEventListener: (EventInfo, EventCallback) => Double,
     appInfo: ApplicationInformation,
     broadcastEvent: (EventInfo, UserEventData) => Unit,
@@ -139,34 +138,24 @@ object Application {
     __obj.asInstanceOf[Application]
   }
   
-  @scala.inline
-  implicit class ApplicationMutableBuilder[Self <: Application] (val x: Self) extends AnyVal {
+  extension [Self <: Application](x: Self) {
     
-    @scala.inline
-    def setAddEventListener(value: (EventInfo, EventCallback) => Double): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
+    inline def setAddEventListener(value: (EventInfo, EventCallback) => Double): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAppInfo(value: ApplicationInformation): Self = StObject.set(x, "appInfo", value.asInstanceOf[js.Any])
+    inline def setAppInfo(value: ApplicationInformation): Self = StObject.set(x, "appInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBroadcastEvent(value: (EventInfo, UserEventData) => Unit): Self = StObject.set(x, "broadcastEvent", js.Any.fromFunction2(value))
+    inline def setBroadcastEvent(value: (EventInfo, UserEventData) => Unit): Self = StObject.set(x, "broadcastEvent", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBroadcastTrustedEvent(value: (EventInfo, UserEventData) => Unit): Self = StObject.set(x, "broadcastTrustedEvent", js.Any.fromFunction2(value))
+    inline def setBroadcastTrustedEvent(value: (EventInfo, UserEventData) => Unit): Self = StObject.set(x, "broadcastTrustedEvent", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setContextId(value: ApplicationContextId): Self = StObject.set(x, "contextId", value.asInstanceOf[js.Any])
+    inline def setContextId(value: ApplicationContextId): Self = StObject.set(x, "contextId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExit(value: () => Unit): Self = StObject.set(x, "exit", js.Any.fromFunction0(value))
+    inline def setExit(value: () => Unit): Self = StObject.set(x, "exit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRequestedAppControl(value: () => RequestedApplicationControl): Self = StObject.set(x, "getRequestedAppControl", js.Any.fromFunction0(value))
+    inline def setGetRequestedAppControl(value: () => RequestedApplicationControl): Self = StObject.set(x, "getRequestedAppControl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveEventListener(value: Double => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction1(value))
+    inline def setRemoveEventListener(value: Double => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction1(value))
   }
 }

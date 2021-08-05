@@ -28,60 +28,43 @@ trait Auth0LockAdditionalSelectSignUpField
 }
 object Auth0LockAdditionalSelectSignUpField {
   
-  @scala.inline
-  def apply(name: String, placeholder: String): Auth0LockAdditionalSelectSignUpField = {
+  inline def apply(name: String, placeholder: String): Auth0LockAdditionalSelectSignUpField = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any])
     __obj.asInstanceOf[Auth0LockAdditionalSelectSignUpField]
   }
   
-  @scala.inline
-  implicit class Auth0LockAdditionalSelectSignUpFieldMutableBuilder[Self <: Auth0LockAdditionalSelectSignUpField] (val x: Self) extends AnyVal {
+  extension [Self <: Auth0LockAdditionalSelectSignUpField](x: Self) {
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(
+    inline def setOptions(
       value: js.Array[Auth0LockAdditionalSignUpFieldOption] | Auth0LockAdditionalSignUpFieldOptionsFunction
     ): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsFunction1(value: /* callback */ Auth0LockAdditionalSignUpFieldOptionsCallback => Unit): Self = StObject.set(x, "options", js.Any.fromFunction1(value))
+    inline def setOptionsFunction1(value: /* callback */ Auth0LockAdditionalSignUpFieldOptionsCallback => Unit): Self = StObject.set(x, "options", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setOptionsVarargs(value: Auth0LockAdditionalSignUpFieldOption*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: Auth0LockAdditionalSignUpFieldOption*): Self = StObject.set(x, "options", js.Array(value :_*))
     
-    @scala.inline
-    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefill(value: String | Auth0LockAdditionalSignUpFieldPrefillFunction): Self = StObject.set(x, "prefill", value.asInstanceOf[js.Any])
+    inline def setPrefill(value: String | Auth0LockAdditionalSignUpFieldPrefillFunction): Self = StObject.set(x, "prefill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefillFunction1(value: /* callback */ Auth0LockAdditionalSignUpFieldPrefillCallback => Unit): Self = StObject.set(x, "prefill", js.Any.fromFunction1(value))
+    inline def setPrefillFunction1(value: /* callback */ Auth0LockAdditionalSignUpFieldPrefillCallback => Unit): Self = StObject.set(x, "prefill", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPrefillUndefined: Self = StObject.set(x, "prefill", js.undefined)
+    inline def setPrefillUndefined: Self = StObject.set(x, "prefill", js.undefined)
     
-    @scala.inline
-    def setType(value: select): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: select): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setValidator(value: /* input */ String => Hint): Self = StObject.set(x, "validator", js.Any.fromFunction1(value))
+    inline def setValidator(value: /* input */ String => Hint): Self = StObject.set(x, "validator", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)
+    inline def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)
   }
 }

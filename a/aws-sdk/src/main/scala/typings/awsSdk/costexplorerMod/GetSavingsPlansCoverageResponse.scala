@@ -18,25 +18,19 @@ trait GetSavingsPlansCoverageResponse extends StObject {
 }
 object GetSavingsPlansCoverageResponse {
   
-  @scala.inline
-  def apply(SavingsPlansCoverages: SavingsPlansCoverages): GetSavingsPlansCoverageResponse = {
+  inline def apply(SavingsPlansCoverages: SavingsPlansCoverages): GetSavingsPlansCoverageResponse = {
     val __obj = js.Dynamic.literal(SavingsPlansCoverages = SavingsPlansCoverages.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSavingsPlansCoverageResponse]
   }
   
-  @scala.inline
-  implicit class GetSavingsPlansCoverageResponseMutableBuilder[Self <: GetSavingsPlansCoverageResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetSavingsPlansCoverageResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextPageToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextPageToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSavingsPlansCoverages(value: SavingsPlansCoverages): Self = StObject.set(x, "SavingsPlansCoverages", value.asInstanceOf[js.Any])
+    inline def setSavingsPlansCoverages(value: SavingsPlansCoverages): Self = StObject.set(x, "SavingsPlansCoverages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSavingsPlansCoveragesVarargs(value: SavingsPlansCoverage*): Self = StObject.set(x, "SavingsPlansCoverages", js.Array(value :_*))
+    inline def setSavingsPlansCoveragesVarargs(value: SavingsPlansCoverage*): Self = StObject.set(x, "SavingsPlansCoverages", js.Array(value :_*))
   }
 }

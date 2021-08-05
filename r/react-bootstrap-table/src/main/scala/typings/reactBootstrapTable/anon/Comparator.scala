@@ -19,19 +19,15 @@ trait Comparator extends StObject {
 }
 object Comparator {
   
-  @scala.inline
-  def apply(comparator: FilterComparator, number: Double): Comparator = {
+  inline def apply(comparator: FilterComparator, number: Double): Comparator = {
     val __obj = js.Dynamic.literal(comparator = comparator.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any])
     __obj.asInstanceOf[Comparator]
   }
   
-  @scala.inline
-  implicit class ComparatorMutableBuilder[Self <: Comparator] (val x: Self) extends AnyVal {
+  extension [Self <: Comparator](x: Self) {
     
-    @scala.inline
-    def setComparator(value: FilterComparator): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
+    inline def setComparator(value: FilterComparator): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
   }
 }

@@ -45,8 +45,7 @@ object anon {
   }
   object HTTPOrNetworkError {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       HTTPOrNetworkError: (/* err */ Error, /* response */ IncomingMessage, /* body */ js.Any) => Boolean,
       HttpError: (/* err */ Error, /* response */ IncomingMessage, /* body */ js.Any) => Boolean,
       NetworkError: (/* err */ Error, /* response */ IncomingMessage, /* body */ js.Any) => Boolean
@@ -55,17 +54,13 @@ object anon {
       __obj.asInstanceOf[HTTPOrNetworkError]
     }
     
-    @scala.inline
-    implicit class HTTPOrNetworkErrorMutableBuilder[Self <: HTTPOrNetworkError] (val x: Self) extends AnyVal {
+    extension [Self <: HTTPOrNetworkError](x: Self) {
       
-      @scala.inline
-      def setHTTPOrNetworkError(value: (/* err */ Error, /* response */ IncomingMessage, /* body */ js.Any) => Boolean): Self = StObject.set(x, "HTTPOrNetworkError", js.Any.fromFunction3(value))
+      inline def setHTTPOrNetworkError(value: (/* err */ Error, /* response */ IncomingMessage, /* body */ js.Any) => Boolean): Self = StObject.set(x, "HTTPOrNetworkError", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setHttpError(value: (/* err */ Error, /* response */ IncomingMessage, /* body */ js.Any) => Boolean): Self = StObject.set(x, "HttpError", js.Any.fromFunction3(value))
+      inline def setHttpError(value: (/* err */ Error, /* response */ IncomingMessage, /* body */ js.Any) => Boolean): Self = StObject.set(x, "HttpError", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setNetworkError(value: (/* err */ Error, /* response */ IncomingMessage, /* body */ js.Any) => Boolean): Self = StObject.set(x, "NetworkError", js.Any.fromFunction3(value))
+      inline def setNetworkError(value: (/* err */ Error, /* response */ IncomingMessage, /* body */ js.Any) => Boolean): Self = StObject.set(x, "NetworkError", js.Any.fromFunction3(value))
     }
   }
 }

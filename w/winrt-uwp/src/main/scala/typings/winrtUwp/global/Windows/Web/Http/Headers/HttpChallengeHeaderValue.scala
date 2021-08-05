@@ -48,14 +48,12 @@ object HttpChallengeHeaderValue {
     * @return An HttpChallengeHeaderValue instance.
     */
   /* static member */
-  @scala.inline
-  def parse(input: String): typings.winrtUwp.Windows.Web.Http.Headers.HttpChallengeHeaderValue = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Web.Http.Headers.HttpChallengeHeaderValue]
+  inline def parse(input: String): typings.winrtUwp.Windows.Web.Http.Headers.HttpChallengeHeaderValue = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Web.Http.Headers.HttpChallengeHeaderValue]
   
   /**
     * Determines whether a string is valid HttpChallengeHeaderValue information.
     * @param input The string to validate.
     */
   /* static member */
-  @scala.inline
-  def tryParse(input: String): ChallengeHeaderValue = ^.asInstanceOf[js.Dynamic].applyDynamic("tryParse")(input.asInstanceOf[js.Any]).asInstanceOf[ChallengeHeaderValue]
+  inline def tryParse(input: String): ChallengeHeaderValue = ^.asInstanceOf[js.Dynamic].applyDynamic("tryParse")(input.asInstanceOf[js.Any]).asInstanceOf[ChallengeHeaderValue]
 }

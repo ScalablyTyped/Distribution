@@ -15,22 +15,17 @@ trait MessageResponse extends StObject {
 }
 object MessageResponse {
   
-  @scala.inline
-  def apply(output: MessageOutput): MessageResponse = {
+  inline def apply(output: MessageOutput): MessageResponse = {
     val __obj = js.Dynamic.literal(output = output.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageResponse]
   }
   
-  @scala.inline
-  implicit class MessageResponseMutableBuilder[Self <: MessageResponse] (val x: Self) extends AnyVal {
+  extension [Self <: MessageResponse](x: Self) {
     
-    @scala.inline
-    def setContext(value: MessageContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: MessageContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setOutput(value: MessageOutput): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: MessageOutput): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
   }
 }

@@ -19,23 +19,18 @@ object ionTabsContextMod {
   }
   object IonTabsContextState {
     
-    @scala.inline
-    def apply(selectTab: String => Boolean): IonTabsContextState = {
+    inline def apply(selectTab: String => Boolean): IonTabsContextState = {
       val __obj = js.Dynamic.literal(selectTab = js.Any.fromFunction1(selectTab))
       __obj.asInstanceOf[IonTabsContextState]
     }
     
-    @scala.inline
-    implicit class IonTabsContextStateMutableBuilder[Self <: IonTabsContextState] (val x: Self) extends AnyVal {
+    extension [Self <: IonTabsContextState](x: Self) {
       
-      @scala.inline
-      def setActiveTab(value: String): Self = StObject.set(x, "activeTab", value.asInstanceOf[js.Any])
+      inline def setActiveTab(value: String): Self = StObject.set(x, "activeTab", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveTabUndefined: Self = StObject.set(x, "activeTab", js.undefined)
+      inline def setActiveTabUndefined: Self = StObject.set(x, "activeTab", js.undefined)
       
-      @scala.inline
-      def setSelectTab(value: String => Boolean): Self = StObject.set(x, "selectTab", js.Any.fromFunction1(value))
+      inline def setSelectTab(value: String => Boolean): Self = StObject.set(x, "selectTab", js.Any.fromFunction1(value))
     }
   }
 }

@@ -38,49 +38,35 @@ trait GeoLocationDetails extends StObject {
 }
 object GeoLocationDetails {
   
-  @scala.inline
-  def apply(): GeoLocationDetails = {
+  inline def apply(): GeoLocationDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GeoLocationDetails]
   }
   
-  @scala.inline
-  implicit class GeoLocationDetailsMutableBuilder[Self <: GeoLocationDetails] (val x: Self) extends AnyVal {
+  extension [Self <: GeoLocationDetails](x: Self) {
     
-    @scala.inline
-    def setContinentCode(value: GeoLocationContinentCode): Self = StObject.set(x, "ContinentCode", value.asInstanceOf[js.Any])
+    inline def setContinentCode(value: GeoLocationContinentCode): Self = StObject.set(x, "ContinentCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinentCodeUndefined: Self = StObject.set(x, "ContinentCode", js.undefined)
+    inline def setContinentCodeUndefined: Self = StObject.set(x, "ContinentCode", js.undefined)
     
-    @scala.inline
-    def setContinentName(value: GeoLocationContinentName): Self = StObject.set(x, "ContinentName", value.asInstanceOf[js.Any])
+    inline def setContinentName(value: GeoLocationContinentName): Self = StObject.set(x, "ContinentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinentNameUndefined: Self = StObject.set(x, "ContinentName", js.undefined)
+    inline def setContinentNameUndefined: Self = StObject.set(x, "ContinentName", js.undefined)
     
-    @scala.inline
-    def setCountryCode(value: GeoLocationCountryCode): Self = StObject.set(x, "CountryCode", value.asInstanceOf[js.Any])
+    inline def setCountryCode(value: GeoLocationCountryCode): Self = StObject.set(x, "CountryCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryCodeUndefined: Self = StObject.set(x, "CountryCode", js.undefined)
+    inline def setCountryCodeUndefined: Self = StObject.set(x, "CountryCode", js.undefined)
     
-    @scala.inline
-    def setCountryName(value: GeoLocationCountryName): Self = StObject.set(x, "CountryName", value.asInstanceOf[js.Any])
+    inline def setCountryName(value: GeoLocationCountryName): Self = StObject.set(x, "CountryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryNameUndefined: Self = StObject.set(x, "CountryName", js.undefined)
+    inline def setCountryNameUndefined: Self = StObject.set(x, "CountryName", js.undefined)
     
-    @scala.inline
-    def setSubdivisionCode(value: GeoLocationSubdivisionCode): Self = StObject.set(x, "SubdivisionCode", value.asInstanceOf[js.Any])
+    inline def setSubdivisionCode(value: GeoLocationSubdivisionCode): Self = StObject.set(x, "SubdivisionCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubdivisionCodeUndefined: Self = StObject.set(x, "SubdivisionCode", js.undefined)
+    inline def setSubdivisionCodeUndefined: Self = StObject.set(x, "SubdivisionCode", js.undefined)
     
-    @scala.inline
-    def setSubdivisionName(value: GeoLocationSubdivisionName): Self = StObject.set(x, "SubdivisionName", value.asInstanceOf[js.Any])
+    inline def setSubdivisionName(value: GeoLocationSubdivisionName): Self = StObject.set(x, "SubdivisionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubdivisionNameUndefined: Self = StObject.set(x, "SubdivisionName", js.undefined)
+    inline def setSubdivisionNameUndefined: Self = StObject.set(x, "SubdivisionName", js.undefined)
   }
 }

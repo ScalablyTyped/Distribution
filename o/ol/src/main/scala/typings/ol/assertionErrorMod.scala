@@ -44,17 +44,14 @@ object assertionErrorMod {
   }
   object AssertionError {
     
-    @scala.inline
-    def apply(code: Double, message: String, name: String): AssertionError = {
+    inline def apply(code: Double, message: String, name: String): AssertionError = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[AssertionError]
     }
     
-    @scala.inline
-    implicit class AssertionErrorMutableBuilder[Self <: AssertionError] (val x: Self) extends AnyVal {
+    extension [Self <: AssertionError](x: Self) {
       
-      @scala.inline
-      def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     }
   }
 }

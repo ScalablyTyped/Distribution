@@ -86,85 +86,60 @@ object pivotItemTypesMod {
   }
   object IPivotItemProps {
     
-    @scala.inline
-    def apply(): IPivotItemProps = {
+    inline def apply(): IPivotItemProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IPivotItemProps]
     }
     
-    @scala.inline
-    implicit class IPivotItemPropsMutableBuilder[Self <: IPivotItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: IPivotItemProps](x: Self) {
       
-      @scala.inline
-      def setAlwaysRender(value: Boolean): Self = StObject.set(x, "alwaysRender", value.asInstanceOf[js.Any])
+      inline def setAlwaysRender(value: Boolean): Self = StObject.set(x, "alwaysRender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlwaysRenderUndefined: Self = StObject.set(x, "alwaysRender", js.undefined)
+      inline def setAlwaysRenderUndefined: Self = StObject.set(x, "alwaysRender", js.undefined)
       
-      @scala.inline
-      def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
+      inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
+      inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[js.Object]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[js.Object]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ js.Object | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ js.Object | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setHeaderButtonProps(value: IButtonProps | (StringDictionary[String | Double | Boolean])): Self = StObject.set(x, "headerButtonProps", value.asInstanceOf[js.Any])
+      inline def setHeaderButtonProps(value: IButtonProps | (StringDictionary[String | Double | Boolean])): Self = StObject.set(x, "headerButtonProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderButtonPropsUndefined: Self = StObject.set(x, "headerButtonProps", js.undefined)
+      inline def setHeaderButtonPropsUndefined: Self = StObject.set(x, "headerButtonProps", js.undefined)
       
-      @scala.inline
-      def setHeaderText(value: String): Self = StObject.set(x, "headerText", value.asInstanceOf[js.Any])
+      inline def setHeaderText(value: String): Self = StObject.set(x, "headerText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderTextUndefined: Self = StObject.set(x, "headerText", js.undefined)
+      inline def setHeaderTextUndefined: Self = StObject.set(x, "headerText", js.undefined)
       
-      @scala.inline
-      def setItemCount(value: Double | String): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])
+      inline def setItemCount(value: Double | String): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemCountUndefined: Self = StObject.set(x, "itemCount", js.undefined)
+      inline def setItemCountUndefined: Self = StObject.set(x, "itemCount", js.undefined)
       
-      @scala.inline
-      def setItemIcon(value: String): Self = StObject.set(x, "itemIcon", value.asInstanceOf[js.Any])
+      inline def setItemIcon(value: String): Self = StObject.set(x, "itemIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemIconUndefined: Self = StObject.set(x, "itemIcon", js.undefined)
+      inline def setItemIconUndefined: Self = StObject.set(x, "itemIcon", js.undefined)
       
-      @scala.inline
-      def setItemKey(value: String): Self = StObject.set(x, "itemKey", value.asInstanceOf[js.Any])
+      inline def setItemKey(value: String): Self = StObject.set(x, "itemKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemKeyUndefined: Self = StObject.set(x, "itemKey", js.undefined)
+      inline def setItemKeyUndefined: Self = StObject.set(x, "itemKey", js.undefined)
       
-      @scala.inline
-      def setKeytipProps(value: IKeytipProps): Self = StObject.set(x, "keytipProps", value.asInstanceOf[js.Any])
+      inline def setKeytipProps(value: IKeytipProps): Self = StObject.set(x, "keytipProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeytipPropsUndefined: Self = StObject.set(x, "keytipProps", js.undefined)
+      inline def setKeytipPropsUndefined: Self = StObject.set(x, "keytipProps", js.undefined)
       
-      @scala.inline
-      def setLinkText(value: String): Self = StObject.set(x, "linkText", value.asInstanceOf[js.Any])
+      inline def setLinkText(value: String): Self = StObject.set(x, "linkText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkTextUndefined: Self = StObject.set(x, "linkText", js.undefined)
+      inline def setLinkTextUndefined: Self = StObject.set(x, "linkText", js.undefined)
       
-      @scala.inline
-      def setOnRenderItemLink(
+      inline def setOnRenderItemLink(
         value: (/* props */ js.UndefOr[IPivotItemProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPivotItemProps], Element | Null]]) => Element | Null
       ): Self = StObject.set(x, "onRenderItemLink", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRenderItemLinkUndefined: Self = StObject.set(x, "onRenderItemLink", js.undefined)
+      inline def setOnRenderItemLinkUndefined: Self = StObject.set(x, "onRenderItemLink", js.undefined)
     }
   }
 }

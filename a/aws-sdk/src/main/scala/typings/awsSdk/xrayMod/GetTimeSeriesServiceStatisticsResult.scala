@@ -23,34 +23,25 @@ trait GetTimeSeriesServiceStatisticsResult extends StObject {
 }
 object GetTimeSeriesServiceStatisticsResult {
   
-  @scala.inline
-  def apply(): GetTimeSeriesServiceStatisticsResult = {
+  inline def apply(): GetTimeSeriesServiceStatisticsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetTimeSeriesServiceStatisticsResult]
   }
   
-  @scala.inline
-  implicit class GetTimeSeriesServiceStatisticsResultMutableBuilder[Self <: GetTimeSeriesServiceStatisticsResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetTimeSeriesServiceStatisticsResult](x: Self) {
     
-    @scala.inline
-    def setContainsOldGroupVersions(value: Boolean): Self = StObject.set(x, "ContainsOldGroupVersions", value.asInstanceOf[js.Any])
+    inline def setContainsOldGroupVersions(value: Boolean): Self = StObject.set(x, "ContainsOldGroupVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainsOldGroupVersionsUndefined: Self = StObject.set(x, "ContainsOldGroupVersions", js.undefined)
+    inline def setContainsOldGroupVersionsUndefined: Self = StObject.set(x, "ContainsOldGroupVersions", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTimeSeriesServiceStatistics(value: TimeSeriesServiceStatisticsList): Self = StObject.set(x, "TimeSeriesServiceStatistics", value.asInstanceOf[js.Any])
+    inline def setTimeSeriesServiceStatistics(value: TimeSeriesServiceStatisticsList): Self = StObject.set(x, "TimeSeriesServiceStatistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeSeriesServiceStatisticsUndefined: Self = StObject.set(x, "TimeSeriesServiceStatistics", js.undefined)
+    inline def setTimeSeriesServiceStatisticsUndefined: Self = StObject.set(x, "TimeSeriesServiceStatistics", js.undefined)
     
-    @scala.inline
-    def setTimeSeriesServiceStatisticsVarargs(value: TimeSeriesServiceStatistics*): Self = StObject.set(x, "TimeSeriesServiceStatistics", js.Array(value :_*))
+    inline def setTimeSeriesServiceStatisticsVarargs(value: TimeSeriesServiceStatistics*): Self = StObject.set(x, "TimeSeriesServiceStatistics", js.Array(value :_*))
   }
 }

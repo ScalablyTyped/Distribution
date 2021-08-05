@@ -18,22 +18,17 @@ trait AddCustomAttributesRequest extends StObject {
 }
 object AddCustomAttributesRequest {
   
-  @scala.inline
-  def apply(CustomAttributes: CustomAttributesListType, UserPoolId: UserPoolIdType): AddCustomAttributesRequest = {
+  inline def apply(CustomAttributes: CustomAttributesListType, UserPoolId: UserPoolIdType): AddCustomAttributesRequest = {
     val __obj = js.Dynamic.literal(CustomAttributes = CustomAttributes.asInstanceOf[js.Any], UserPoolId = UserPoolId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddCustomAttributesRequest]
   }
   
-  @scala.inline
-  implicit class AddCustomAttributesRequestMutableBuilder[Self <: AddCustomAttributesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AddCustomAttributesRequest](x: Self) {
     
-    @scala.inline
-    def setCustomAttributes(value: CustomAttributesListType): Self = StObject.set(x, "CustomAttributes", value.asInstanceOf[js.Any])
+    inline def setCustomAttributes(value: CustomAttributesListType): Self = StObject.set(x, "CustomAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomAttributesVarargs(value: SchemaAttributeType*): Self = StObject.set(x, "CustomAttributes", js.Array(value :_*))
+    inline def setCustomAttributesVarargs(value: SchemaAttributeType*): Self = StObject.set(x, "CustomAttributes", js.Array(value :_*))
     
-    @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
+    inline def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
   }
 }

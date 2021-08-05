@@ -14,25 +14,19 @@ trait ScoringConfig extends StObject {
 }
 object ScoringConfig {
   
-  @scala.inline
-  def apply(): ScoringConfig = {
+  inline def apply(): ScoringConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScoringConfig]
   }
   
-  @scala.inline
-  implicit class ScoringConfigMutableBuilder[Self <: ScoringConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ScoringConfig](x: Self) {
     
-    @scala.inline
-    def setDisableFreshness(value: Boolean): Self = StObject.set(x, "disableFreshness", value.asInstanceOf[js.Any])
+    inline def setDisableFreshness(value: Boolean): Self = StObject.set(x, "disableFreshness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableFreshnessUndefined: Self = StObject.set(x, "disableFreshness", js.undefined)
+    inline def setDisableFreshnessUndefined: Self = StObject.set(x, "disableFreshness", js.undefined)
     
-    @scala.inline
-    def setDisablePersonalization(value: Boolean): Self = StObject.set(x, "disablePersonalization", value.asInstanceOf[js.Any])
+    inline def setDisablePersonalization(value: Boolean): Self = StObject.set(x, "disablePersonalization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisablePersonalizationUndefined: Self = StObject.set(x, "disablePersonalization", js.undefined)
+    inline def setDisablePersonalizationUndefined: Self = StObject.set(x, "disablePersonalization", js.undefined)
   }
 }

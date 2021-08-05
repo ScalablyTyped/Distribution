@@ -18,28 +18,21 @@ trait ListExportsOutput extends StObject {
 }
 object ListExportsOutput {
   
-  @scala.inline
-  def apply(): ListExportsOutput = {
+  inline def apply(): ListExportsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListExportsOutput]
   }
   
-  @scala.inline
-  implicit class ListExportsOutputMutableBuilder[Self <: ListExportsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListExportsOutput](x: Self) {
     
-    @scala.inline
-    def setExportSummaries(value: ExportSummaries): Self = StObject.set(x, "ExportSummaries", value.asInstanceOf[js.Any])
+    inline def setExportSummaries(value: ExportSummaries): Self = StObject.set(x, "ExportSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportSummariesUndefined: Self = StObject.set(x, "ExportSummaries", js.undefined)
+    inline def setExportSummariesUndefined: Self = StObject.set(x, "ExportSummaries", js.undefined)
     
-    @scala.inline
-    def setExportSummariesVarargs(value: ExportSummary*): Self = StObject.set(x, "ExportSummaries", js.Array(value :_*))
+    inline def setExportSummariesVarargs(value: ExportSummary*): Self = StObject.set(x, "ExportSummaries", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: ExportNextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: ExportNextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

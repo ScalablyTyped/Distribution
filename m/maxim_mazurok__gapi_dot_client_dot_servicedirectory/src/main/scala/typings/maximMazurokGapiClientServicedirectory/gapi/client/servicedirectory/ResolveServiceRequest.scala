@@ -22,25 +22,19 @@ trait ResolveServiceRequest extends StObject {
 }
 object ResolveServiceRequest {
   
-  @scala.inline
-  def apply(): ResolveServiceRequest = {
+  inline def apply(): ResolveServiceRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResolveServiceRequest]
   }
   
-  @scala.inline
-  implicit class ResolveServiceRequestMutableBuilder[Self <: ResolveServiceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ResolveServiceRequest](x: Self) {
     
-    @scala.inline
-    def setEndpointFilter(value: String): Self = StObject.set(x, "endpointFilter", value.asInstanceOf[js.Any])
+    inline def setEndpointFilter(value: String): Self = StObject.set(x, "endpointFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointFilterUndefined: Self = StObject.set(x, "endpointFilter", js.undefined)
+    inline def setEndpointFilterUndefined: Self = StObject.set(x, "endpointFilter", js.undefined)
     
-    @scala.inline
-    def setMaxEndpoints(value: Double): Self = StObject.set(x, "maxEndpoints", value.asInstanceOf[js.Any])
+    inline def setMaxEndpoints(value: Double): Self = StObject.set(x, "maxEndpoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxEndpointsUndefined: Self = StObject.set(x, "maxEndpoints", js.undefined)
+    inline def setMaxEndpointsUndefined: Self = StObject.set(x, "maxEndpoints", js.undefined)
   }
 }

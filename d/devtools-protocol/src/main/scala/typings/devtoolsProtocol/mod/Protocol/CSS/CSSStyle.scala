@@ -34,43 +34,31 @@ trait CSSStyle extends StObject {
 }
 object CSSStyle {
   
-  @scala.inline
-  def apply(cssProperties: js.Array[CSSProperty], shorthandEntries: js.Array[ShorthandEntry]): CSSStyle = {
+  inline def apply(cssProperties: js.Array[CSSProperty], shorthandEntries: js.Array[ShorthandEntry]): CSSStyle = {
     val __obj = js.Dynamic.literal(cssProperties = cssProperties.asInstanceOf[js.Any], shorthandEntries = shorthandEntries.asInstanceOf[js.Any])
     __obj.asInstanceOf[CSSStyle]
   }
   
-  @scala.inline
-  implicit class CSSStyleMutableBuilder[Self <: CSSStyle] (val x: Self) extends AnyVal {
+  extension [Self <: CSSStyle](x: Self) {
     
-    @scala.inline
-    def setCssProperties(value: js.Array[CSSProperty]): Self = StObject.set(x, "cssProperties", value.asInstanceOf[js.Any])
+    inline def setCssProperties(value: js.Array[CSSProperty]): Self = StObject.set(x, "cssProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssPropertiesVarargs(value: CSSProperty*): Self = StObject.set(x, "cssProperties", js.Array(value :_*))
+    inline def setCssPropertiesVarargs(value: CSSProperty*): Self = StObject.set(x, "cssProperties", js.Array(value :_*))
     
-    @scala.inline
-    def setCssText(value: String): Self = StObject.set(x, "cssText", value.asInstanceOf[js.Any])
+    inline def setCssText(value: String): Self = StObject.set(x, "cssText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssTextUndefined: Self = StObject.set(x, "cssText", js.undefined)
+    inline def setCssTextUndefined: Self = StObject.set(x, "cssText", js.undefined)
     
-    @scala.inline
-    def setRange(value: SourceRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: SourceRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    @scala.inline
-    def setShorthandEntries(value: js.Array[ShorthandEntry]): Self = StObject.set(x, "shorthandEntries", value.asInstanceOf[js.Any])
+    inline def setShorthandEntries(value: js.Array[ShorthandEntry]): Self = StObject.set(x, "shorthandEntries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShorthandEntriesVarargs(value: ShorthandEntry*): Self = StObject.set(x, "shorthandEntries", js.Array(value :_*))
+    inline def setShorthandEntriesVarargs(value: ShorthandEntry*): Self = StObject.set(x, "shorthandEntries", js.Array(value :_*))
     
-    @scala.inline
-    def setStyleSheetId(value: StyleSheetId): Self = StObject.set(x, "styleSheetId", value.asInstanceOf[js.Any])
+    inline def setStyleSheetId(value: StyleSheetId): Self = StObject.set(x, "styleSheetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleSheetIdUndefined: Self = StObject.set(x, "styleSheetId", js.undefined)
+    inline def setStyleSheetIdUndefined: Self = StObject.set(x, "styleSheetId", js.undefined)
   }
 }

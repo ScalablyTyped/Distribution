@@ -16,19 +16,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(buf: String, cb: js.Function1[/* data */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(buf.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(buf: ArrayBufferView, cb: js.Function1[/* data */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(buf.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(buf: String, cb: js.Function1[/* data */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(buf.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(buf: ArrayBufferView, cb: js.Function1[/* data */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(buf.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("simple-sha1", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def sync(buf: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(buf.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def sync(buf: ArrayBufferView): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(buf.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def sync(buf: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(buf.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def sync(buf: ArrayBufferView): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(buf.asInstanceOf[js.Any]).asInstanceOf[String]
   
   type ArrayBufferView = TypedArray | DataView
   

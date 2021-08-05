@@ -14,8 +14,7 @@ trait ItemAwareElement
 }
 object ItemAwareElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     dataState: DataState,
@@ -26,13 +25,10 @@ object ItemAwareElement {
     __obj.asInstanceOf[ItemAwareElement]
   }
   
-  @scala.inline
-  implicit class ItemAwareElementMutableBuilder[Self <: ItemAwareElement] (val x: Self) extends AnyVal {
+  extension [Self <: ItemAwareElement](x: Self) {
     
-    @scala.inline
-    def setDataState(value: DataState): Self = StObject.set(x, "dataState", value.asInstanceOf[js.Any])
+    inline def setDataState(value: DataState): Self = StObject.set(x, "dataState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemSubjectRef(value: ItemDefinition): Self = StObject.set(x, "itemSubjectRef", value.asInstanceOf[js.Any])
+    inline def setItemSubjectRef(value: ItemDefinition): Self = StObject.set(x, "itemSubjectRef", value.asInstanceOf[js.Any])
   }
 }

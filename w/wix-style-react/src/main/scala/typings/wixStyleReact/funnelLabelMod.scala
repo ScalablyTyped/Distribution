@@ -22,23 +22,18 @@ object funnelLabelMod {
   }
   object FunnelLabelProps {
     
-    @scala.inline
-    def apply(label: String): FunnelLabelProps = {
+    inline def apply(label: String): FunnelLabelProps = {
       val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
       __obj.asInstanceOf[FunnelLabelProps]
     }
     
-    @scala.inline
-    implicit class FunnelLabelPropsMutableBuilder[Self <: FunnelLabelProps] (val x: Self) extends AnyVal {
+    extension [Self <: FunnelLabelProps](x: Self) {
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

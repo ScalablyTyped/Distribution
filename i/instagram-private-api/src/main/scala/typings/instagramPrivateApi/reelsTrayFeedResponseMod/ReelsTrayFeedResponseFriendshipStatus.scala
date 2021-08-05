@@ -28,61 +28,43 @@ trait ReelsTrayFeedResponseFriendshipStatus extends StObject {
 }
 object ReelsTrayFeedResponseFriendshipStatus {
   
-  @scala.inline
-  def apply(following: Boolean, is_muting_reel: Boolean, muting: Boolean, outgoing_request: Boolean): ReelsTrayFeedResponseFriendshipStatus = {
+  inline def apply(following: Boolean, is_muting_reel: Boolean, muting: Boolean, outgoing_request: Boolean): ReelsTrayFeedResponseFriendshipStatus = {
     val __obj = js.Dynamic.literal(following = following.asInstanceOf[js.Any], is_muting_reel = is_muting_reel.asInstanceOf[js.Any], muting = muting.asInstanceOf[js.Any], outgoing_request = outgoing_request.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReelsTrayFeedResponseFriendshipStatus]
   }
   
-  @scala.inline
-  implicit class ReelsTrayFeedResponseFriendshipStatusMutableBuilder[Self <: ReelsTrayFeedResponseFriendshipStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ReelsTrayFeedResponseFriendshipStatus](x: Self) {
     
-    @scala.inline
-    def setBlocking(value: Boolean): Self = StObject.set(x, "blocking", value.asInstanceOf[js.Any])
+    inline def setBlocking(value: Boolean): Self = StObject.set(x, "blocking", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockingUndefined: Self = StObject.set(x, "blocking", js.undefined)
+    inline def setBlockingUndefined: Self = StObject.set(x, "blocking", js.undefined)
     
-    @scala.inline
-    def setFollowed_by(value: Boolean): Self = StObject.set(x, "followed_by", value.asInstanceOf[js.Any])
+    inline def setFollowed_by(value: Boolean): Self = StObject.set(x, "followed_by", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFollowed_byUndefined: Self = StObject.set(x, "followed_by", js.undefined)
+    inline def setFollowed_byUndefined: Self = StObject.set(x, "followed_by", js.undefined)
     
-    @scala.inline
-    def setFollowing(value: Boolean): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
+    inline def setFollowing(value: Boolean): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncoming_request(value: Boolean): Self = StObject.set(x, "incoming_request", value.asInstanceOf[js.Any])
+    inline def setIncoming_request(value: Boolean): Self = StObject.set(x, "incoming_request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncoming_requestUndefined: Self = StObject.set(x, "incoming_request", js.undefined)
+    inline def setIncoming_requestUndefined: Self = StObject.set(x, "incoming_request", js.undefined)
     
-    @scala.inline
-    def setIs_bestie(value: Boolean): Self = StObject.set(x, "is_bestie", value.asInstanceOf[js.Any])
+    inline def setIs_bestie(value: Boolean): Self = StObject.set(x, "is_bestie", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_bestieUndefined: Self = StObject.set(x, "is_bestie", js.undefined)
+    inline def setIs_bestieUndefined: Self = StObject.set(x, "is_bestie", js.undefined)
     
-    @scala.inline
-    def setIs_muting_reel(value: Boolean): Self = StObject.set(x, "is_muting_reel", value.asInstanceOf[js.Any])
+    inline def setIs_muting_reel(value: Boolean): Self = StObject.set(x, "is_muting_reel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
+    inline def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_privateUndefined: Self = StObject.set(x, "is_private", js.undefined)
+    inline def setIs_privateUndefined: Self = StObject.set(x, "is_private", js.undefined)
     
-    @scala.inline
-    def setIs_restricted(value: Boolean): Self = StObject.set(x, "is_restricted", value.asInstanceOf[js.Any])
+    inline def setIs_restricted(value: Boolean): Self = StObject.set(x, "is_restricted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_restrictedUndefined: Self = StObject.set(x, "is_restricted", js.undefined)
+    inline def setIs_restrictedUndefined: Self = StObject.set(x, "is_restricted", js.undefined)
     
-    @scala.inline
-    def setMuting(value: Boolean): Self = StObject.set(x, "muting", value.asInstanceOf[js.Any])
+    inline def setMuting(value: Boolean): Self = StObject.set(x, "muting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutgoing_request(value: Boolean): Self = StObject.set(x, "outgoing_request", value.asInstanceOf[js.Any])
+    inline def setOutgoing_request(value: Boolean): Self = StObject.set(x, "outgoing_request", value.asInstanceOf[js.Any])
   }
 }

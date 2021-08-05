@@ -10,19 +10,15 @@ trait DecayConfig extends StObject {
 }
 object DecayConfig {
   
-  @scala.inline
-  def apply(deceleration: Adaptable[Double]): DecayConfig = {
+  inline def apply(deceleration: Adaptable[Double]): DecayConfig = {
     val __obj = js.Dynamic.literal(deceleration = deceleration.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecayConfig]
   }
   
-  @scala.inline
-  implicit class DecayConfigMutableBuilder[Self <: DecayConfig] (val x: Self) extends AnyVal {
+  extension [Self <: DecayConfig](x: Self) {
     
-    @scala.inline
-    def setDeceleration(value: Adaptable[Double]): Self = StObject.set(x, "deceleration", value.asInstanceOf[js.Any])
+    inline def setDeceleration(value: Adaptable[Double]): Self = StObject.set(x, "deceleration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecelerationVarargs(value: (Double | AnimatedNode[Double] | (js.Array[Double | AnimatedNode[Double]]))*): Self = StObject.set(x, "deceleration", js.Array(value :_*))
+    inline def setDecelerationVarargs(value: (Double | AnimatedNode[Double] | (js.Array[Double | AnimatedNode[Double]]))*): Self = StObject.set(x, "deceleration", js.Array(value :_*))
   }
 }

@@ -18,25 +18,19 @@ trait DeleteInfrastructureConfigurationResponse extends StObject {
 }
 object DeleteInfrastructureConfigurationResponse {
   
-  @scala.inline
-  def apply(): DeleteInfrastructureConfigurationResponse = {
+  inline def apply(): DeleteInfrastructureConfigurationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteInfrastructureConfigurationResponse]
   }
   
-  @scala.inline
-  implicit class DeleteInfrastructureConfigurationResponseMutableBuilder[Self <: DeleteInfrastructureConfigurationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteInfrastructureConfigurationResponse](x: Self) {
     
-    @scala.inline
-    def setInfrastructureConfigurationArn(value: InfrastructureConfigurationArn): Self = StObject.set(x, "infrastructureConfigurationArn", value.asInstanceOf[js.Any])
+    inline def setInfrastructureConfigurationArn(value: InfrastructureConfigurationArn): Self = StObject.set(x, "infrastructureConfigurationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfrastructureConfigurationArnUndefined: Self = StObject.set(x, "infrastructureConfigurationArn", js.undefined)
+    inline def setInfrastructureConfigurationArnUndefined: Self = StObject.set(x, "infrastructureConfigurationArn", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: NonEmptyString): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: NonEmptyString): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
   }
 }

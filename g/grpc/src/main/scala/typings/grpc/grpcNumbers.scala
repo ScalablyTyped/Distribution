@@ -8,11 +8,9 @@ object grpcNumbers {
   
   @js.native
   sealed trait `5` extends StObject
-  @scala.inline
-  def `5`: `5` = 5.asInstanceOf[`5`]
+  inline def `5`: `5` = 5.asInstanceOf[`5`]
   
   @js.native
   sealed trait `6` extends StObject
-  @scala.inline
-  def `6`: `6` = 6.asInstanceOf[`6`]
+  inline def `6`: `6` = 6.asInstanceOf[`6`]
 }

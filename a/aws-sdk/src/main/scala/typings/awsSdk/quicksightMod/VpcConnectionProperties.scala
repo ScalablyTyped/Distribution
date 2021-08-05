@@ -13,16 +13,13 @@ trait VpcConnectionProperties extends StObject {
 }
 object VpcConnectionProperties {
   
-  @scala.inline
-  def apply(VpcConnectionArn: Arn): VpcConnectionProperties = {
+  inline def apply(VpcConnectionArn: Arn): VpcConnectionProperties = {
     val __obj = js.Dynamic.literal(VpcConnectionArn = VpcConnectionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[VpcConnectionProperties]
   }
   
-  @scala.inline
-  implicit class VpcConnectionPropertiesMutableBuilder[Self <: VpcConnectionProperties] (val x: Self) extends AnyVal {
+  extension [Self <: VpcConnectionProperties](x: Self) {
     
-    @scala.inline
-    def setVpcConnectionArn(value: Arn): Self = StObject.set(x, "VpcConnectionArn", value.asInstanceOf[js.Any])
+    inline def setVpcConnectionArn(value: Arn): Self = StObject.set(x, "VpcConnectionArn", value.asInstanceOf[js.Any])
   }
 }

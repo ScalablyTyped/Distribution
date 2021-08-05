@@ -33,49 +33,35 @@ trait DescribeLocalGatewayRouteTableVpcAssociationsRequest extends StObject {
 }
 object DescribeLocalGatewayRouteTableVpcAssociationsRequest {
   
-  @scala.inline
-  def apply(): DescribeLocalGatewayRouteTableVpcAssociationsRequest = {
+  inline def apply(): DescribeLocalGatewayRouteTableVpcAssociationsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeLocalGatewayRouteTableVpcAssociationsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeLocalGatewayRouteTableVpcAssociationsRequestMutableBuilder[Self <: DescribeLocalGatewayRouteTableVpcAssociationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeLocalGatewayRouteTableVpcAssociationsRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
-    @scala.inline
-    def setLocalGatewayRouteTableVpcAssociationIds(value: LocalGatewayRouteTableVpcAssociationIdSet): Self = StObject.set(x, "LocalGatewayRouteTableVpcAssociationIds", value.asInstanceOf[js.Any])
+    inline def setLocalGatewayRouteTableVpcAssociationIds(value: LocalGatewayRouteTableVpcAssociationIdSet): Self = StObject.set(x, "LocalGatewayRouteTableVpcAssociationIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalGatewayRouteTableVpcAssociationIdsUndefined: Self = StObject.set(x, "LocalGatewayRouteTableVpcAssociationIds", js.undefined)
+    inline def setLocalGatewayRouteTableVpcAssociationIdsUndefined: Self = StObject.set(x, "LocalGatewayRouteTableVpcAssociationIds", js.undefined)
     
-    @scala.inline
-    def setLocalGatewayRouteTableVpcAssociationIdsVarargs(value: LocalGatewayRouteTableVpcAssociationId*): Self = StObject.set(x, "LocalGatewayRouteTableVpcAssociationIds", js.Array(value :_*))
+    inline def setLocalGatewayRouteTableVpcAssociationIdsVarargs(value: LocalGatewayRouteTableVpcAssociationId*): Self = StObject.set(x, "LocalGatewayRouteTableVpcAssociationIds", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxResults(value: LocalGatewayMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: LocalGatewayMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

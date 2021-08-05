@@ -14,17 +14,14 @@ trait AnyMxRecord
 }
 object AnyMxRecord {
   
-  @scala.inline
-  def apply(exchange: String, priority: Double): AnyMxRecord = {
+  inline def apply(exchange: String, priority: Double): AnyMxRecord = {
     val __obj = js.Dynamic.literal(exchange = exchange.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("MX")
     __obj.asInstanceOf[AnyMxRecord]
   }
   
-  @scala.inline
-  implicit class AnyMxRecordMutableBuilder[Self <: AnyMxRecord] (val x: Self) extends AnyVal {
+  extension [Self <: AnyMxRecord](x: Self) {
     
-    @scala.inline
-    def setType(value: MX): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: MX): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

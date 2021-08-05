@@ -88,115 +88,79 @@ trait ServiceSpec extends StObject {
 }
 object ServiceSpec {
   
-  @scala.inline
-  def apply(): ServiceSpec = {
+  inline def apply(): ServiceSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServiceSpec]
   }
   
-  @scala.inline
-  implicit class ServiceSpecMutableBuilder[Self <: ServiceSpec] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceSpec](x: Self) {
     
-    @scala.inline
-    def setClusterIP(value: Input[String]): Self = StObject.set(x, "clusterIP", value.asInstanceOf[js.Any])
+    inline def setClusterIP(value: Input[String]): Self = StObject.set(x, "clusterIP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterIPUndefined: Self = StObject.set(x, "clusterIP", js.undefined)
+    inline def setClusterIPUndefined: Self = StObject.set(x, "clusterIP", js.undefined)
     
-    @scala.inline
-    def setExternalIPs(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "externalIPs", value.asInstanceOf[js.Any])
+    inline def setExternalIPs(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "externalIPs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalIPsUndefined: Self = StObject.set(x, "externalIPs", js.undefined)
+    inline def setExternalIPsUndefined: Self = StObject.set(x, "externalIPs", js.undefined)
     
-    @scala.inline
-    def setExternalIPsVarargs(value: Input[String]*): Self = StObject.set(x, "externalIPs", js.Array(value :_*))
+    inline def setExternalIPsVarargs(value: Input[String]*): Self = StObject.set(x, "externalIPs", js.Array(value :_*))
     
-    @scala.inline
-    def setExternalName(value: Input[String]): Self = StObject.set(x, "externalName", value.asInstanceOf[js.Any])
+    inline def setExternalName(value: Input[String]): Self = StObject.set(x, "externalName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalNameUndefined: Self = StObject.set(x, "externalName", js.undefined)
+    inline def setExternalNameUndefined: Self = StObject.set(x, "externalName", js.undefined)
     
-    @scala.inline
-    def setExternalTrafficPolicy(value: Input[String]): Self = StObject.set(x, "externalTrafficPolicy", value.asInstanceOf[js.Any])
+    inline def setExternalTrafficPolicy(value: Input[String]): Self = StObject.set(x, "externalTrafficPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalTrafficPolicyUndefined: Self = StObject.set(x, "externalTrafficPolicy", js.undefined)
+    inline def setExternalTrafficPolicyUndefined: Self = StObject.set(x, "externalTrafficPolicy", js.undefined)
     
-    @scala.inline
-    def setHealthCheckNodePort(value: Input[Double]): Self = StObject.set(x, "healthCheckNodePort", value.asInstanceOf[js.Any])
+    inline def setHealthCheckNodePort(value: Input[Double]): Self = StObject.set(x, "healthCheckNodePort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthCheckNodePortUndefined: Self = StObject.set(x, "healthCheckNodePort", js.undefined)
+    inline def setHealthCheckNodePortUndefined: Self = StObject.set(x, "healthCheckNodePort", js.undefined)
     
-    @scala.inline
-    def setIpFamily(value: Input[String]): Self = StObject.set(x, "ipFamily", value.asInstanceOf[js.Any])
+    inline def setIpFamily(value: Input[String]): Self = StObject.set(x, "ipFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpFamilyUndefined: Self = StObject.set(x, "ipFamily", js.undefined)
+    inline def setIpFamilyUndefined: Self = StObject.set(x, "ipFamily", js.undefined)
     
-    @scala.inline
-    def setLoadBalancerIP(value: Input[String]): Self = StObject.set(x, "loadBalancerIP", value.asInstanceOf[js.Any])
+    inline def setLoadBalancerIP(value: Input[String]): Self = StObject.set(x, "loadBalancerIP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadBalancerIPUndefined: Self = StObject.set(x, "loadBalancerIP", js.undefined)
+    inline def setLoadBalancerIPUndefined: Self = StObject.set(x, "loadBalancerIP", js.undefined)
     
-    @scala.inline
-    def setLoadBalancerSourceRanges(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "loadBalancerSourceRanges", value.asInstanceOf[js.Any])
+    inline def setLoadBalancerSourceRanges(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "loadBalancerSourceRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadBalancerSourceRangesUndefined: Self = StObject.set(x, "loadBalancerSourceRanges", js.undefined)
+    inline def setLoadBalancerSourceRangesUndefined: Self = StObject.set(x, "loadBalancerSourceRanges", js.undefined)
     
-    @scala.inline
-    def setLoadBalancerSourceRangesVarargs(value: Input[String]*): Self = StObject.set(x, "loadBalancerSourceRanges", js.Array(value :_*))
+    inline def setLoadBalancerSourceRangesVarargs(value: Input[String]*): Self = StObject.set(x, "loadBalancerSourceRanges", js.Array(value :_*))
     
-    @scala.inline
-    def setPorts(value: Input[js.Array[Input[ServicePort]]]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
+    inline def setPorts(value: Input[js.Array[Input[ServicePort]]]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
+    inline def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
     
-    @scala.inline
-    def setPortsVarargs(value: Input[ServicePort]*): Self = StObject.set(x, "ports", js.Array(value :_*))
+    inline def setPortsVarargs(value: Input[ServicePort]*): Self = StObject.set(x, "ports", js.Array(value :_*))
     
-    @scala.inline
-    def setPublishNotReadyAddresses(value: Input[Boolean]): Self = StObject.set(x, "publishNotReadyAddresses", value.asInstanceOf[js.Any])
+    inline def setPublishNotReadyAddresses(value: Input[Boolean]): Self = StObject.set(x, "publishNotReadyAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishNotReadyAddressesUndefined: Self = StObject.set(x, "publishNotReadyAddresses", js.undefined)
+    inline def setPublishNotReadyAddressesUndefined: Self = StObject.set(x, "publishNotReadyAddresses", js.undefined)
     
-    @scala.inline
-    def setSelector(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+    inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
-    @scala.inline
-    def setSessionAffinity(value: Input[String]): Self = StObject.set(x, "sessionAffinity", value.asInstanceOf[js.Any])
+    inline def setSessionAffinity(value: Input[String]): Self = StObject.set(x, "sessionAffinity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionAffinityConfig(value: Input[SessionAffinityConfig]): Self = StObject.set(x, "sessionAffinityConfig", value.asInstanceOf[js.Any])
+    inline def setSessionAffinityConfig(value: Input[SessionAffinityConfig]): Self = StObject.set(x, "sessionAffinityConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionAffinityConfigUndefined: Self = StObject.set(x, "sessionAffinityConfig", js.undefined)
+    inline def setSessionAffinityConfigUndefined: Self = StObject.set(x, "sessionAffinityConfig", js.undefined)
     
-    @scala.inline
-    def setSessionAffinityUndefined: Self = StObject.set(x, "sessionAffinity", js.undefined)
+    inline def setSessionAffinityUndefined: Self = StObject.set(x, "sessionAffinity", js.undefined)
     
-    @scala.inline
-    def setTopologyKeys(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "topologyKeys", value.asInstanceOf[js.Any])
+    inline def setTopologyKeys(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "topologyKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopologyKeysUndefined: Self = StObject.set(x, "topologyKeys", js.undefined)
+    inline def setTopologyKeysUndefined: Self = StObject.set(x, "topologyKeys", js.undefined)
     
-    @scala.inline
-    def setTopologyKeysVarargs(value: Input[String]*): Self = StObject.set(x, "topologyKeys", js.Array(value :_*))
+    inline def setTopologyKeysVarargs(value: Input[String]*): Self = StObject.set(x, "topologyKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

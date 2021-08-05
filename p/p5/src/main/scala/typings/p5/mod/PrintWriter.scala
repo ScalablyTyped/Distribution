@@ -34,8 +34,7 @@ trait PrintWriter extends StObject {
 }
 object PrintWriter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clear: () => Unit,
     close: () => Unit,
     print: js.Array[js.Any] => Unit,
@@ -45,19 +44,14 @@ object PrintWriter {
     __obj.asInstanceOf[PrintWriter]
   }
   
-  @scala.inline
-  implicit class PrintWriterMutableBuilder[Self <: PrintWriter] (val x: Self) extends AnyVal {
+  extension [Self <: PrintWriter](x: Self) {
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPrint(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "print", js.Any.fromFunction1(value))
+    inline def setPrint(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "print", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWrite(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+    inline def setWrite(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
   }
 }

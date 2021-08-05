@@ -35,8 +35,7 @@ trait heatmapGetSchemeByNameParams
 }
 object heatmapGetSchemeByNameParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     name: String,
@@ -46,22 +45,16 @@ object heatmapGetSchemeByNameParams {
     __obj.asInstanceOf[heatmapGetSchemeByNameParams]
   }
   
-  @scala.inline
-  implicit class heatmapGetSchemeByNameParamsMutableBuilder[Self <: heatmapGetSchemeByNameParams] (val x: Self) extends AnyVal {
+  extension [Self <: heatmapGetSchemeByNameParams](x: Self) {
     
-    @scala.inline
-    def setBasemap(value: String | Basemap): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
+    inline def setBasemap(value: String | Basemap): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasemapTheme(value: light | dark): Self = StObject.set(x, "basemapTheme", value.asInstanceOf[js.Any])
+    inline def setBasemapTheme(value: light | dark): Self = StObject.set(x, "basemapTheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasemapThemeUndefined: Self = StObject.set(x, "basemapTheme", js.undefined)
+    inline def setBasemapThemeUndefined: Self = StObject.set(x, "basemapTheme", js.undefined)
     
-    @scala.inline
-    def setBasemapUndefined: Self = StObject.set(x, "basemap", js.undefined)
+    inline def setBasemapUndefined: Self = StObject.set(x, "basemap", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

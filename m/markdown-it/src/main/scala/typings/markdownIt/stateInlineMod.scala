@@ -111,8 +111,7 @@ object stateInlineMod {
   }
   object Delimiter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       close: Boolean,
       end: Double,
       jump: Double,
@@ -125,29 +124,21 @@ object stateInlineMod {
       __obj.asInstanceOf[Delimiter]
     }
     
-    @scala.inline
-    implicit class DelimiterMutableBuilder[Self <: Delimiter] (val x: Self) extends AnyVal {
+    extension [Self <: Delimiter](x: Self) {
       
-      @scala.inline
-      def setClose(value: Boolean): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+      inline def setClose(value: Boolean): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJump(value: Double): Self = StObject.set(x, "jump", value.asInstanceOf[js.Any])
+      inline def setJump(value: Double): Self = StObject.set(x, "jump", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarker(value: Double): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+      inline def setMarker(value: Double): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToken(value: Double): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: Double): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
   }
   
@@ -161,23 +152,18 @@ object stateInlineMod {
   }
   object Scanned {
     
-    @scala.inline
-    def apply(can_close: Boolean, can_open: Boolean, length: Double): Scanned = {
+    inline def apply(can_close: Boolean, can_open: Boolean, length: Double): Scanned = {
       val __obj = js.Dynamic.literal(can_close = can_close.asInstanceOf[js.Any], can_open = can_open.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any])
       __obj.asInstanceOf[Scanned]
     }
     
-    @scala.inline
-    implicit class ScannedMutableBuilder[Self <: Scanned] (val x: Self) extends AnyVal {
+    extension [Self <: Scanned](x: Self) {
       
-      @scala.inline
-      def setCan_close(value: Boolean): Self = StObject.set(x, "can_close", value.asInstanceOf[js.Any])
+      inline def setCan_close(value: Boolean): Self = StObject.set(x, "can_close", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCan_open(value: Boolean): Self = StObject.set(x, "can_open", value.asInstanceOf[js.Any])
+      inline def setCan_open(value: Boolean): Self = StObject.set(x, "can_open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
@@ -245,8 +231,7 @@ object stateInlineMod {
   }
   object StateInline {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Token: Instantiable3[
           /* type */ String, 
           /* tag */ String, 
@@ -273,53 +258,37 @@ object stateInlineMod {
       __obj.asInstanceOf[StateInline]
     }
     
-    @scala.inline
-    implicit class StateInlineMutableBuilder[Self <: StateInline] (val x: Self) extends AnyVal {
+    extension [Self <: StateInline](x: Self) {
       
-      @scala.inline
-      def setCache(value: js.Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: js.Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelimiters(value: js.Array[Delimiter]): Self = StObject.set(x, "delimiters", value.asInstanceOf[js.Any])
+      inline def setDelimiters(value: js.Array[Delimiter]): Self = StObject.set(x, "delimiters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelimitersVarargs(value: Delimiter*): Self = StObject.set(x, "delimiters", js.Array(value :_*))
+      inline def setDelimitersVarargs(value: Delimiter*): Self = StObject.set(x, "delimiters", js.Array(value :_*))
       
-      @scala.inline
-      def setEnv(value: js.Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: js.Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMd(value: MarkdownIt): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
+      inline def setMd(value: MarkdownIt): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPending(value: String): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+      inline def setPending(value: String): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPendingLevel(value: Double): Self = StObject.set(x, "pendingLevel", value.asInstanceOf[js.Any])
+      inline def setPendingLevel(value: Double): Self = StObject.set(x, "pendingLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+      inline def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosMax(value: Double): Self = StObject.set(x, "posMax", value.asInstanceOf[js.Any])
+      inline def setPosMax(value: Double): Self = StObject.set(x, "posMax", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPush(value: (String, String, Nesting) => typings.markdownIt.tokenMod.^): Self = StObject.set(x, "push", js.Any.fromFunction3(value))
+      inline def setPush(value: (String, String, Nesting) => typings.markdownIt.tokenMod.^): Self = StObject.set(x, "push", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPushPending(value: () => typings.markdownIt.tokenMod.^): Self = StObject.set(x, "pushPending", js.Any.fromFunction0(value))
+      inline def setPushPending(value: () => typings.markdownIt.tokenMod.^): Self = StObject.set(x, "pushPending", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setScanDelims(value: (Double, Boolean) => Scanned): Self = StObject.set(x, "scanDelims", js.Any.fromFunction2(value))
+      inline def setScanDelims(value: (Double, Boolean) => Scanned): Self = StObject.set(x, "scanDelims", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToken(
+      inline def setToken(
         value: Instantiable3[
               /* type */ String, 
               /* tag */ String, 
@@ -328,17 +297,13 @@ object stateInlineMod {
             ]
       ): Self = StObject.set(x, "Token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokens(value: js.Array[typings.markdownIt.tokenMod.^]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+      inline def setTokens(value: js.Array[typings.markdownIt.tokenMod.^]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokensVarargs(value: typings.markdownIt.tokenMod.^ *): Self = StObject.set(x, "tokens", js.Array(value :_*))
+      inline def setTokensVarargs(value: typings.markdownIt.tokenMod.^ *): Self = StObject.set(x, "tokens", js.Array(value :_*))
       
-      @scala.inline
-      def setTokens_meta(value: js.Array[TokenMata | Null]): Self = StObject.set(x, "tokens_meta", value.asInstanceOf[js.Any])
+      inline def setTokens_meta(value: js.Array[TokenMata | Null]): Self = StObject.set(x, "tokens_meta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokens_metaVarargs(value: (TokenMata | Null)*): Self = StObject.set(x, "tokens_meta", js.Array(value :_*))
+      inline def setTokens_metaVarargs(value: (TokenMata | Null)*): Self = StObject.set(x, "tokens_meta", js.Array(value :_*))
     }
   }
   
@@ -348,20 +313,16 @@ object stateInlineMod {
   }
   object TokenMata {
     
-    @scala.inline
-    def apply(delimiters: js.Array[Delimiter]): TokenMata = {
+    inline def apply(delimiters: js.Array[Delimiter]): TokenMata = {
       val __obj = js.Dynamic.literal(delimiters = delimiters.asInstanceOf[js.Any])
       __obj.asInstanceOf[TokenMata]
     }
     
-    @scala.inline
-    implicit class TokenMataMutableBuilder[Self <: TokenMata] (val x: Self) extends AnyVal {
+    extension [Self <: TokenMata](x: Self) {
       
-      @scala.inline
-      def setDelimiters(value: js.Array[Delimiter]): Self = StObject.set(x, "delimiters", value.asInstanceOf[js.Any])
+      inline def setDelimiters(value: js.Array[Delimiter]): Self = StObject.set(x, "delimiters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelimitersVarargs(value: Delimiter*): Self = StObject.set(x, "delimiters", js.Array(value :_*))
+      inline def setDelimitersVarargs(value: Delimiter*): Self = StObject.set(x, "delimiters", js.Array(value :_*))
     }
   }
 }

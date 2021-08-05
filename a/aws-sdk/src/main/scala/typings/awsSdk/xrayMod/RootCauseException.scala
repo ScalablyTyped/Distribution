@@ -18,25 +18,19 @@ trait RootCauseException extends StObject {
 }
 object RootCauseException {
   
-  @scala.inline
-  def apply(): RootCauseException = {
+  inline def apply(): RootCauseException = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RootCauseException]
   }
   
-  @scala.inline
-  implicit class RootCauseExceptionMutableBuilder[Self <: RootCauseException] (val x: Self) extends AnyVal {
+  extension [Self <: RootCauseException](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

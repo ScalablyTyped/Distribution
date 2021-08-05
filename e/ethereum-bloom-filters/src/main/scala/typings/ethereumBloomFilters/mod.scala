@@ -11,26 +11,18 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isAddress(address: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAddress")(address.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isAddress(address: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAddress")(address.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isBloom(bloom: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBloom")(bloom.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isBloom(bloom: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBloom")(bloom.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isContractAddressInBloom(bloom: String, contractAddress: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isContractAddressInBloom")(bloom.asInstanceOf[js.Any], contractAddress.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isContractAddressInBloom(bloom: String, contractAddress: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isContractAddressInBloom")(bloom.asInstanceOf[js.Any], contractAddress.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isInBloom(bloom: String, value: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isInBloom")(bloom.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def isInBloom(bloom: String, value: Uint8Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isInBloom")(bloom.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isInBloom(bloom: String, value: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isInBloom")(bloom.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isInBloom(bloom: String, value: Uint8Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isInBloom")(bloom.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isTopic(topic: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTopic")(topic.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isTopic(topic: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTopic")(topic.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isTopicInBloom(bloom: String, topic: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTopicInBloom")(bloom.asInstanceOf[js.Any], topic.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isTopicInBloom(bloom: String, topic: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTopicInBloom")(bloom.asInstanceOf[js.Any], topic.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isUserEthereumAddressInBloom(bloom: String, ethereumAddress: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isUserEthereumAddressInBloom")(bloom.asInstanceOf[js.Any], ethereumAddress.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isUserEthereumAddressInBloom(bloom: String, ethereumAddress: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isUserEthereumAddressInBloom")(bloom.asInstanceOf[js.Any], ethereumAddress.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

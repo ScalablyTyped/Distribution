@@ -32,20 +32,16 @@ object datetimeMod {
   }
   object DateTimeOptions {
     
-    @scala.inline
-    def apply(): DateTimeOptions = {
+    inline def apply(): DateTimeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DateTimeOptions]
     }
     
-    @scala.inline
-    implicit class DateTimeOptionsMutableBuilder[Self <: DateTimeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DateTimeOptions](x: Self) {
       
-      @scala.inline
-      def setPrompts(value: DateTimeOptionsPrompts): Self = StObject.set(x, "prompts", value.asInstanceOf[js.Any])
+      inline def setPrompts(value: DateTimeOptionsPrompts): Self = StObject.set(x, "prompts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromptsUndefined: Self = StObject.set(x, "prompts", js.undefined)
+      inline def setPromptsUndefined: Self = StObject.set(x, "prompts", js.undefined)
     }
   }
   
@@ -74,32 +70,24 @@ object datetimeMod {
   }
   object DateTimeOptionsPrompts {
     
-    @scala.inline
-    def apply(): DateTimeOptionsPrompts = {
+    inline def apply(): DateTimeOptionsPrompts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DateTimeOptionsPrompts]
     }
     
-    @scala.inline
-    implicit class DateTimeOptionsPromptsMutableBuilder[Self <: DateTimeOptionsPrompts] (val x: Self) extends AnyVal {
+    extension [Self <: DateTimeOptionsPrompts](x: Self) {
       
-      @scala.inline
-      def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      @scala.inline
-      def setInitial(value: String): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
+      inline def setInitial(value: String): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
+      inline def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
       
-      @scala.inline
-      def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+      inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
     }
   }
 }

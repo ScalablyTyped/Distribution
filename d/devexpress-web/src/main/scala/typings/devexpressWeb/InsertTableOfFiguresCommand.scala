@@ -18,16 +18,13 @@ trait InsertTableOfFiguresCommand
 }
 object InsertTableOfFiguresCommand {
   
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => SimpleCommandState): InsertTableOfFiguresCommand = {
+  inline def apply(execute: () => Boolean, getState: () => SimpleCommandState): InsertTableOfFiguresCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[InsertTableOfFiguresCommand]
   }
   
-  @scala.inline
-  implicit class InsertTableOfFiguresCommandMutableBuilder[Self <: InsertTableOfFiguresCommand] (val x: Self) extends AnyVal {
+  extension [Self <: InsertTableOfFiguresCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }
 }

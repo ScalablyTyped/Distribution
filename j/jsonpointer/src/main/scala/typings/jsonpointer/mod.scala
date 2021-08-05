@@ -13,20 +13,17 @@ object mod {
   /**
     *  Builds a JSONPointer instance from a pointer value.
     */
-  @scala.inline
-  def compile(pointer: String): JSONPointer = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(pointer.asInstanceOf[js.Any]).asInstanceOf[JSONPointer]
+  inline def compile(pointer: String): JSONPointer = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(pointer.asInstanceOf[js.Any]).asInstanceOf[JSONPointer]
   
   /**
     * Looks up a JSON pointer in an object
     */
-  @scala.inline
-  def get(`object`: js.Object, pointer: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], pointer.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def get(`object`: js.Object, pointer: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], pointer.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Set a value for a JSON pointer on object
     */
-  @scala.inline
-  def set(`object`: js.Object, pointer: String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(`object`.asInstanceOf[js.Any], pointer.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def set(`object`: js.Object, pointer: String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(`object`.asInstanceOf[js.Any], pointer.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait JSONPointer extends StObject {
     
@@ -42,20 +39,16 @@ object mod {
   }
   object JSONPointer {
     
-    @scala.inline
-    def apply(get: (js.Object, String) => js.Any, set: (js.Object, String, js.Any) => Unit): JSONPointer = {
+    inline def apply(get: (js.Object, String) => js.Any, set: (js.Object, String, js.Any) => Unit): JSONPointer = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get), set = js.Any.fromFunction3(set))
       __obj.asInstanceOf[JSONPointer]
     }
     
-    @scala.inline
-    implicit class JSONPointerMutableBuilder[Self <: JSONPointer] (val x: Self) extends AnyVal {
+    extension [Self <: JSONPointer](x: Self) {
       
-      @scala.inline
-      def setGet(value: (js.Object, String) => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+      inline def setGet(value: (js.Object, String) => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSet(value: (js.Object, String, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction3(value))
+      inline def setSet(value: (js.Object, String, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction3(value))
     }
   }
 }

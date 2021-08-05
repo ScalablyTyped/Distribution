@@ -13,16 +13,13 @@ trait DescribeRoleAliasRequest extends StObject {
 }
 object DescribeRoleAliasRequest {
   
-  @scala.inline
-  def apply(roleAlias: RoleAlias): DescribeRoleAliasRequest = {
+  inline def apply(roleAlias: RoleAlias): DescribeRoleAliasRequest = {
     val __obj = js.Dynamic.literal(roleAlias = roleAlias.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeRoleAliasRequest]
   }
   
-  @scala.inline
-  implicit class DescribeRoleAliasRequestMutableBuilder[Self <: DescribeRoleAliasRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeRoleAliasRequest](x: Self) {
     
-    @scala.inline
-    def setRoleAlias(value: RoleAlias): Self = StObject.set(x, "roleAlias", value.asInstanceOf[js.Any])
+    inline def setRoleAlias(value: RoleAlias): Self = StObject.set(x, "roleAlias", value.asInstanceOf[js.Any])
   }
 }

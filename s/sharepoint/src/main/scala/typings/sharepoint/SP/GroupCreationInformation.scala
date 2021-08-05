@@ -18,8 +18,7 @@ trait GroupCreationInformation
 }
 object GroupCreationInformation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -34,19 +33,14 @@ object GroupCreationInformation {
     __obj.asInstanceOf[GroupCreationInformation]
   }
   
-  @scala.inline
-  implicit class GroupCreationInformationMutableBuilder[Self <: GroupCreationInformation] (val x: Self) extends AnyVal {
+  extension [Self <: GroupCreationInformation](x: Self) {
     
-    @scala.inline
-    def setGet_description(value: () => String): Self = StObject.set(x, "get_description", js.Any.fromFunction0(value))
+    inline def setGet_description(value: () => String): Self = StObject.set(x, "get_description", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_title(value: () => String): Self = StObject.set(x, "get_title", js.Any.fromFunction0(value))
+    inline def setGet_title(value: () => String): Self = StObject.set(x, "get_title", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_description(value: String => Unit): Self = StObject.set(x, "set_description", js.Any.fromFunction1(value))
+    inline def setSet_description(value: String => Unit): Self = StObject.set(x, "set_description", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_title(value: String => Unit): Self = StObject.set(x, "set_title", js.Any.fromFunction1(value))
+    inline def setSet_title(value: String => Unit): Self = StObject.set(x, "set_title", js.Any.fromFunction1(value))
   }
 }

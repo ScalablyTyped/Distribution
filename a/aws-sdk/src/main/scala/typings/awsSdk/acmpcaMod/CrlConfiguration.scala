@@ -28,34 +28,25 @@ trait CrlConfiguration extends StObject {
 }
 object CrlConfiguration {
   
-  @scala.inline
-  def apply(Enabled: Boolean): CrlConfiguration = {
+  inline def apply(Enabled: Boolean): CrlConfiguration = {
     val __obj = js.Dynamic.literal(Enabled = Enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[CrlConfiguration]
   }
   
-  @scala.inline
-  implicit class CrlConfigurationMutableBuilder[Self <: CrlConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: CrlConfiguration](x: Self) {
     
-    @scala.inline
-    def setCustomCname(value: String253): Self = StObject.set(x, "CustomCname", value.asInstanceOf[js.Any])
+    inline def setCustomCname(value: String253): Self = StObject.set(x, "CustomCname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomCnameUndefined: Self = StObject.set(x, "CustomCname", js.undefined)
+    inline def setCustomCnameUndefined: Self = StObject.set(x, "CustomCname", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationInDays(value: Integer1To5000): Self = StObject.set(x, "ExpirationInDays", value.asInstanceOf[js.Any])
+    inline def setExpirationInDays(value: Integer1To5000): Self = StObject.set(x, "ExpirationInDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationInDaysUndefined: Self = StObject.set(x, "ExpirationInDays", js.undefined)
+    inline def setExpirationInDaysUndefined: Self = StObject.set(x, "ExpirationInDays", js.undefined)
     
-    @scala.inline
-    def setS3BucketName(value: String3To255): Self = StObject.set(x, "S3BucketName", value.asInstanceOf[js.Any])
+    inline def setS3BucketName(value: String3To255): Self = StObject.set(x, "S3BucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3BucketNameUndefined: Self = StObject.set(x, "S3BucketName", js.undefined)
+    inline def setS3BucketNameUndefined: Self = StObject.set(x, "S3BucketName", js.undefined)
   }
 }

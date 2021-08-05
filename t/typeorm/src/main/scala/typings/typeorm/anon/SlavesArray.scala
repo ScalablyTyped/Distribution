@@ -19,8 +19,7 @@ trait SlavesArray extends StObject {
 }
 object SlavesArray {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     master: SqlServerConnectionCredentialsOptions,
     slaves: js.Array[SqlServerConnectionCredentialsOptions]
   ): SlavesArray = {
@@ -28,16 +27,12 @@ object SlavesArray {
     __obj.asInstanceOf[SlavesArray]
   }
   
-  @scala.inline
-  implicit class SlavesArrayMutableBuilder[Self <: SlavesArray] (val x: Self) extends AnyVal {
+  extension [Self <: SlavesArray](x: Self) {
     
-    @scala.inline
-    def setMaster(value: SqlServerConnectionCredentialsOptions): Self = StObject.set(x, "master", value.asInstanceOf[js.Any])
+    inline def setMaster(value: SqlServerConnectionCredentialsOptions): Self = StObject.set(x, "master", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlaves(value: js.Array[SqlServerConnectionCredentialsOptions]): Self = StObject.set(x, "slaves", value.asInstanceOf[js.Any])
+    inline def setSlaves(value: js.Array[SqlServerConnectionCredentialsOptions]): Self = StObject.set(x, "slaves", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlavesVarargs(value: SqlServerConnectionCredentialsOptions*): Self = StObject.set(x, "slaves", js.Array(value :_*))
+    inline def setSlavesVarargs(value: SqlServerConnectionCredentialsOptions*): Self = StObject.set(x, "slaves", js.Array(value :_*))
   }
 }

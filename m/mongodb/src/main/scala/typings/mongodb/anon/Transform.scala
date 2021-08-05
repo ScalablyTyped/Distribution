@@ -10,19 +10,15 @@ trait Transform[T] extends StObject {
 }
 object Transform {
   
-  @scala.inline
-  def apply[T](): Transform[T] = {
+  inline def apply[T](): Transform[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Transform[T]]
   }
   
-  @scala.inline
-  implicit class TransformMutableBuilder[Self <: Transform[?], T] (val x: Self & Transform[T]) extends AnyVal {
+  extension [Self <: Transform[?], T](x: Self & Transform[T]) {
     
-    @scala.inline
-    def setTransform(value: /* document */ T => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+    inline def setTransform(value: /* document */ T => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+    inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
   }
 }

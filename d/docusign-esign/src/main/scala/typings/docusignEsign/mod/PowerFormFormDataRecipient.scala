@@ -26,46 +26,35 @@ trait PowerFormFormDataRecipient extends StObject {
 }
 object PowerFormFormDataRecipient {
   
-  @scala.inline
-  def apply(): PowerFormFormDataRecipient = {
+  inline def apply(): PowerFormFormDataRecipient = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PowerFormFormDataRecipient]
   }
   
-  @scala.inline
-  implicit class PowerFormFormDataRecipientMutableBuilder[Self <: PowerFormFormDataRecipient] (val x: Self) extends AnyVal {
+  extension [Self <: PowerFormFormDataRecipient](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setFormData(
+    inline def setFormData(
       value: js.Array[
           /* A name-value pair that describes an item and provides a value for the item. */ NameValue
         ]
     ): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
+    inline def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
     
-    @scala.inline
-    def setFormDataVarargs(
+    inline def setFormDataVarargs(
       value: (/* A name-value pair that describes an item and provides a value for the item. */ NameValue)*
     ): Self = StObject.set(x, "formData", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setRecipientId(value: String): Self = StObject.set(x, "recipientId", value.asInstanceOf[js.Any])
+    inline def setRecipientId(value: String): Self = StObject.set(x, "recipientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipientIdUndefined: Self = StObject.set(x, "recipientId", js.undefined)
+    inline def setRecipientIdUndefined: Self = StObject.set(x, "recipientId", js.undefined)
   }
 }

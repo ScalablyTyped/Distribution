@@ -13,19 +13,15 @@ trait GetVoiceConnectorStreamingConfigurationResponse extends StObject {
 }
 object GetVoiceConnectorStreamingConfigurationResponse {
   
-  @scala.inline
-  def apply(): GetVoiceConnectorStreamingConfigurationResponse = {
+  inline def apply(): GetVoiceConnectorStreamingConfigurationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetVoiceConnectorStreamingConfigurationResponse]
   }
   
-  @scala.inline
-  implicit class GetVoiceConnectorStreamingConfigurationResponseMutableBuilder[Self <: GetVoiceConnectorStreamingConfigurationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetVoiceConnectorStreamingConfigurationResponse](x: Self) {
     
-    @scala.inline
-    def setStreamingConfiguration(value: StreamingConfiguration): Self = StObject.set(x, "StreamingConfiguration", value.asInstanceOf[js.Any])
+    inline def setStreamingConfiguration(value: StreamingConfiguration): Self = StObject.set(x, "StreamingConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamingConfigurationUndefined: Self = StObject.set(x, "StreamingConfiguration", js.undefined)
+    inline def setStreamingConfigurationUndefined: Self = StObject.set(x, "StreamingConfiguration", js.undefined)
   }
 }

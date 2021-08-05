@@ -29,8 +29,7 @@ trait CompositeVideoFrameContext extends StObject {
 }
 object CompositeVideoFrameContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     backgroundFrame: VideoFrame,
     getOverlayForSurface: IDirect3DSurface => MediaOverlay,
     outputFrame: VideoFrame,
@@ -40,19 +39,14 @@ object CompositeVideoFrameContext {
     __obj.asInstanceOf[CompositeVideoFrameContext]
   }
   
-  @scala.inline
-  implicit class CompositeVideoFrameContextMutableBuilder[Self <: CompositeVideoFrameContext] (val x: Self) extends AnyVal {
+  extension [Self <: CompositeVideoFrameContext](x: Self) {
     
-    @scala.inline
-    def setBackgroundFrame(value: VideoFrame): Self = StObject.set(x, "backgroundFrame", value.asInstanceOf[js.Any])
+    inline def setBackgroundFrame(value: VideoFrame): Self = StObject.set(x, "backgroundFrame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetOverlayForSurface(value: IDirect3DSurface => MediaOverlay): Self = StObject.set(x, "getOverlayForSurface", js.Any.fromFunction1(value))
+    inline def setGetOverlayForSurface(value: IDirect3DSurface => MediaOverlay): Self = StObject.set(x, "getOverlayForSurface", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOutputFrame(value: VideoFrame): Self = StObject.set(x, "outputFrame", value.asInstanceOf[js.Any])
+    inline def setOutputFrame(value: VideoFrame): Self = StObject.set(x, "outputFrame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSurfacesToOverlay(value: IVectorView[IDirect3DSurface]): Self = StObject.set(x, "surfacesToOverlay", value.asInstanceOf[js.Any])
+    inline def setSurfacesToOverlay(value: IVectorView[IDirect3DSurface]): Self = StObject.set(x, "surfacesToOverlay", value.asInstanceOf[js.Any])
   }
 }

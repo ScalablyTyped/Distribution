@@ -13,16 +13,13 @@ trait UserSettings extends StObject {
 }
 object UserSettings {
   
-  @scala.inline
-  def apply(Telephony: TelephonySettings): UserSettings = {
+  inline def apply(Telephony: TelephonySettings): UserSettings = {
     val __obj = js.Dynamic.literal(Telephony = Telephony.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserSettings]
   }
   
-  @scala.inline
-  implicit class UserSettingsMutableBuilder[Self <: UserSettings] (val x: Self) extends AnyVal {
+  extension [Self <: UserSettings](x: Self) {
     
-    @scala.inline
-    def setTelephony(value: TelephonySettings): Self = StObject.set(x, "Telephony", value.asInstanceOf[js.Any])
+    inline def setTelephony(value: TelephonySettings): Self = StObject.set(x, "Telephony", value.asInstanceOf[js.Any])
   }
 }

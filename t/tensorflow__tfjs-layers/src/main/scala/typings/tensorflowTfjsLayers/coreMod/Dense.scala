@@ -15,27 +15,27 @@ class Dense protected () extends Layer {
   
   val DEFAULT_KERNEL_INITIALIZER: InitializerIdentifier = js.native
   
-  var activation: js.Any = js.native
+  /* private */ var activation: js.Any = js.native
   
-  var bias: js.Any = js.native
+  /* private */ var bias: js.Any = js.native
   
-  val biasConstraint: js.Any = js.native
+  /* private */ val biasConstraint: js.Any = js.native
   
-  var biasInitializer: js.Any = js.native
+  /* private */ var biasInitializer: js.Any = js.native
   
-  val biasRegularizer: js.Any = js.native
+  /* private */ val biasRegularizer: js.Any = js.native
   
-  var kernel: js.Any = js.native
+  /* private */ var kernel: js.Any = js.native
   
-  val kernelConstraint: js.Any = js.native
+  /* private */ val kernelConstraint: js.Any = js.native
   
-  var kernelInitializer: js.Any = js.native
+  /* private */ var kernelInitializer: js.Any = js.native
   
-  val kernelRegularizer: js.Any = js.native
+  /* private */ val kernelRegularizer: js.Any = js.native
   
-  var units: js.Any = js.native
+  /* private */ var units: js.Any = js.native
   
-  var useBias: js.Any = js.native
+  /* private */ var useBias: js.Any = js.native
 }
 /* static members */
 object Dense {
@@ -48,6 +48,5 @@ object Dense {
   @JSImport("@tensorflow/tfjs-layers/dist/layers/core", "Dense.className")
   @js.native
   def className: String = js.native
-  @scala.inline
-  def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+  inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
 }

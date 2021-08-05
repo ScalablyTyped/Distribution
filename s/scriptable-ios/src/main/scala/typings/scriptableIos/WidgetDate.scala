@@ -164,8 +164,7 @@ trait WidgetDate extends StObject {
 }
 object WidgetDate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     applyDateStyle: () => Unit,
     applyOffsetStyle: () => Unit,
     applyRelativeStyle: () => Unit,
@@ -189,61 +188,42 @@ object WidgetDate {
     __obj.asInstanceOf[WidgetDate]
   }
   
-  @scala.inline
-  implicit class WidgetDateMutableBuilder[Self <: WidgetDate] (val x: Self) extends AnyVal {
+  extension [Self <: WidgetDate](x: Self) {
     
-    @scala.inline
-    def setApplyDateStyle(value: () => Unit): Self = StObject.set(x, "applyDateStyle", js.Any.fromFunction0(value))
+    inline def setApplyDateStyle(value: () => Unit): Self = StObject.set(x, "applyDateStyle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setApplyOffsetStyle(value: () => Unit): Self = StObject.set(x, "applyOffsetStyle", js.Any.fromFunction0(value))
+    inline def setApplyOffsetStyle(value: () => Unit): Self = StObject.set(x, "applyOffsetStyle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setApplyRelativeStyle(value: () => Unit): Self = StObject.set(x, "applyRelativeStyle", js.Any.fromFunction0(value))
+    inline def setApplyRelativeStyle(value: () => Unit): Self = StObject.set(x, "applyRelativeStyle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setApplyTimeStyle(value: () => Unit): Self = StObject.set(x, "applyTimeStyle", js.Any.fromFunction0(value))
+    inline def setApplyTimeStyle(value: () => Unit): Self = StObject.set(x, "applyTimeStyle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setApplyTimerStyle(value: () => Unit): Self = StObject.set(x, "applyTimerStyle", js.Any.fromFunction0(value))
+    inline def setApplyTimerStyle(value: () => Unit): Self = StObject.set(x, "applyTimerStyle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCenterAlignText(value: () => Unit): Self = StObject.set(x, "centerAlignText", js.Any.fromFunction0(value))
+    inline def setCenterAlignText(value: () => Unit): Self = StObject.set(x, "centerAlignText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFont(value: Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftAlignText(value: () => Unit): Self = StObject.set(x, "leftAlignText", js.Any.fromFunction0(value))
+    inline def setLeftAlignText(value: () => Unit): Self = StObject.set(x, "leftAlignText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLineLimit(value: Double): Self = StObject.set(x, "lineLimit", value.asInstanceOf[js.Any])
+    inline def setLineLimit(value: Double): Self = StObject.set(x, "lineLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumScaleFactor(value: Double): Self = StObject.set(x, "minimumScaleFactor", value.asInstanceOf[js.Any])
+    inline def setMinimumScaleFactor(value: Double): Self = StObject.set(x, "minimumScaleFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightAlignText(value: () => Unit): Self = StObject.set(x, "rightAlignText", js.Any.fromFunction0(value))
+    inline def setRightAlignText(value: () => Unit): Self = StObject.set(x, "rightAlignText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShadowColor(value: Color): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
+    inline def setShadowColor(value: Color): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowOffset(value: Point): Self = StObject.set(x, "shadowOffset", value.asInstanceOf[js.Any])
+    inline def setShadowOffset(value: Point): Self = StObject.set(x, "shadowOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowRadius(value: Double): Self = StObject.set(x, "shadowRadius", value.asInstanceOf[js.Any])
+    inline def setShadowRadius(value: Double): Self = StObject.set(x, "shadowRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextColor(value: Color): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
+    inline def setTextColor(value: Color): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextOpacity(value: Double): Self = StObject.set(x, "textOpacity", value.asInstanceOf[js.Any])
+    inline def setTextOpacity(value: Double): Self = StObject.set(x, "textOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

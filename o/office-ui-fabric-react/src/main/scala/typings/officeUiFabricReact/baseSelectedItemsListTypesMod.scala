@@ -23,26 +23,20 @@ object baseSelectedItemsListTypesMod {
   }
   object IBaseSelectedItemsList {
     
-    @scala.inline
-    def apply[T](addItems: js.Array[T] => Unit): IBaseSelectedItemsList[T] = {
+    inline def apply[T](addItems: js.Array[T] => Unit): IBaseSelectedItemsList[T] = {
       val __obj = js.Dynamic.literal(addItems = js.Any.fromFunction1(addItems))
       __obj.asInstanceOf[IBaseSelectedItemsList[T]]
     }
     
-    @scala.inline
-    implicit class IBaseSelectedItemsListMutableBuilder[Self <: IBaseSelectedItemsList[?], T] (val x: Self & IBaseSelectedItemsList[T]) extends AnyVal {
+    extension [Self <: IBaseSelectedItemsList[?], T](x: Self & IBaseSelectedItemsList[T]) {
       
-      @scala.inline
-      def setAddItems(value: js.Array[T] => Unit): Self = StObject.set(x, "addItems", js.Any.fromFunction1(value))
+      inline def setAddItems(value: js.Array[T] => Unit): Self = StObject.set(x, "addItems", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      @scala.inline
-      def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
     }
   }
   
@@ -119,101 +113,70 @@ object baseSelectedItemsListTypesMod {
   }
   object IBaseSelectedItemsListProps {
     
-    @scala.inline
-    def apply[T](): IBaseSelectedItemsListProps[T] = {
+    inline def apply[T](): IBaseSelectedItemsListProps[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IBaseSelectedItemsListProps[T]]
     }
     
-    @scala.inline
-    implicit class IBaseSelectedItemsListPropsMutableBuilder[Self <: IBaseSelectedItemsListProps[?], T] (val x: Self & IBaseSelectedItemsListProps[T]) extends AnyVal {
+    extension [Self <: IBaseSelectedItemsListProps[?], T](x: Self & IBaseSelectedItemsListProps[T]) {
       
-      @scala.inline
-      def setCanRemoveItem(value: /* item */ T => Boolean): Self = StObject.set(x, "canRemoveItem", js.Any.fromFunction1(value))
+      inline def setCanRemoveItem(value: /* item */ T => Boolean): Self = StObject.set(x, "canRemoveItem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCanRemoveItemUndefined: Self = StObject.set(x, "canRemoveItem", js.undefined)
+      inline def setCanRemoveItemUndefined: Self = StObject.set(x, "canRemoveItem", js.undefined)
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[IBaseSelectedItemsList[T]]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[IBaseSelectedItemsList[T]]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ IBaseSelectedItemsList[T] | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ IBaseSelectedItemsList[T] | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setCreateGenericItem(value: (/* input */ String, /* ValidationState */ ValidationState) => ISuggestionModel[T]): Self = StObject.set(x, "createGenericItem", js.Any.fromFunction2(value))
+      inline def setCreateGenericItem(value: (/* input */ String, /* ValidationState */ ValidationState) => ISuggestionModel[T]): Self = StObject.set(x, "createGenericItem", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCreateGenericItemUndefined: Self = StObject.set(x, "createGenericItem", js.undefined)
+      inline def setCreateGenericItemUndefined: Self = StObject.set(x, "createGenericItem", js.undefined)
       
-      @scala.inline
-      def setDefaultSelectedItems(value: js.Array[T]): Self = StObject.set(x, "defaultSelectedItems", value.asInstanceOf[js.Any])
+      inline def setDefaultSelectedItems(value: js.Array[T]): Self = StObject.set(x, "defaultSelectedItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultSelectedItemsUndefined: Self = StObject.set(x, "defaultSelectedItems", js.undefined)
+      inline def setDefaultSelectedItemsUndefined: Self = StObject.set(x, "defaultSelectedItems", js.undefined)
       
-      @scala.inline
-      def setDefaultSelectedItemsVarargs(value: T*): Self = StObject.set(x, "defaultSelectedItems", js.Array(value :_*))
+      inline def setDefaultSelectedItemsVarargs(value: T*): Self = StObject.set(x, "defaultSelectedItems", js.Array(value :_*))
       
-      @scala.inline
-      def setOnChange(value: /* items */ js.UndefOr[js.Array[T]] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* items */ js.UndefOr[js.Array[T]] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnCopyItems(value: /* items */ js.Array[T] => String): Self = StObject.set(x, "onCopyItems", js.Any.fromFunction1(value))
+      inline def setOnCopyItems(value: /* items */ js.Array[T] => String): Self = StObject.set(x, "onCopyItems", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCopyItemsUndefined: Self = StObject.set(x, "onCopyItems", js.undefined)
+      inline def setOnCopyItemsUndefined: Self = StObject.set(x, "onCopyItems", js.undefined)
       
-      @scala.inline
-      def setOnItemDeleted(value: /* deletedItem */ T => Unit): Self = StObject.set(x, "onItemDeleted", js.Any.fromFunction1(value))
+      inline def setOnItemDeleted(value: /* deletedItem */ T => Unit): Self = StObject.set(x, "onItemDeleted", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnItemDeletedUndefined: Self = StObject.set(x, "onItemDeleted", js.undefined)
+      inline def setOnItemDeletedUndefined: Self = StObject.set(x, "onItemDeleted", js.undefined)
       
-      @scala.inline
-      def setOnItemSelected(value: /* selectedItem */ js.UndefOr[T] => T | js.Thenable[T]): Self = StObject.set(x, "onItemSelected", js.Any.fromFunction1(value))
+      inline def setOnItemSelected(value: /* selectedItem */ js.UndefOr[T] => T | js.Thenable[T]): Self = StObject.set(x, "onItemSelected", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnItemSelectedUndefined: Self = StObject.set(x, "onItemSelected", js.undefined)
+      inline def setOnItemSelectedUndefined: Self = StObject.set(x, "onItemSelected", js.undefined)
       
-      @scala.inline
-      def setOnItemsDeleted(value: /* deletedItems */ js.Array[T] => Unit): Self = StObject.set(x, "onItemsDeleted", js.Any.fromFunction1(value))
+      inline def setOnItemsDeleted(value: /* deletedItems */ js.Array[T] => Unit): Self = StObject.set(x, "onItemsDeleted", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnItemsDeletedUndefined: Self = StObject.set(x, "onItemsDeleted", js.undefined)
+      inline def setOnItemsDeletedUndefined: Self = StObject.set(x, "onItemsDeleted", js.undefined)
       
-      @scala.inline
-      def setOnRenderItem(value: /* props */ ISelectedItemProps[T] => Element): Self = StObject.set(x, "onRenderItem", js.Any.fromFunction1(value))
+      inline def setOnRenderItem(value: /* props */ ISelectedItemProps[T] => Element): Self = StObject.set(x, "onRenderItem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRenderItemUndefined: Self = StObject.set(x, "onRenderItem", js.undefined)
+      inline def setOnRenderItemUndefined: Self = StObject.set(x, "onRenderItem", js.undefined)
       
-      @scala.inline
-      def setRemoveButtonAriaLabel(value: String): Self = StObject.set(x, "removeButtonAriaLabel", value.asInstanceOf[js.Any])
+      inline def setRemoveButtonAriaLabel(value: String): Self = StObject.set(x, "removeButtonAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveButtonAriaLabelUndefined: Self = StObject.set(x, "removeButtonAriaLabel", js.undefined)
+      inline def setRemoveButtonAriaLabelUndefined: Self = StObject.set(x, "removeButtonAriaLabel", js.undefined)
       
-      @scala.inline
-      def setSelectedItems(value: js.Array[T]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+      inline def setSelectedItems(value: js.Array[T]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
+      inline def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
       
-      @scala.inline
-      def setSelectedItemsVarargs(value: T*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
+      inline def setSelectedItemsVarargs(value: T*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
       
-      @scala.inline
-      def setSelection(value: Selection[IObjectWithKey]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+      inline def setSelection(value: Selection[IObjectWithKey]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
+      inline def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
     }
   }
   
@@ -225,18 +188,15 @@ object baseSelectedItemsListTypesMod {
   }
   object ISelectedItemProps {
     
-    @scala.inline
-    def apply[T](IPickerItemProps: IPickerItemProps[T], onCopyItem: T => Unit): ISelectedItemProps[T] = {
+    inline def apply[T](IPickerItemProps: IPickerItemProps[T], onCopyItem: T => Unit): ISelectedItemProps[T] = {
       val __obj = js.Dynamic.literal(onCopyItem = js.Any.fromFunction1(onCopyItem))
       js.Dynamic.global.Object.assign(__obj, IPickerItemProps)
       __obj.asInstanceOf[ISelectedItemProps[T]]
     }
     
-    @scala.inline
-    implicit class ISelectedItemPropsMutableBuilder[Self <: ISelectedItemProps[?], T] (val x: Self & ISelectedItemProps[T]) extends AnyVal {
+    extension [Self <: ISelectedItemProps[?], T](x: Self & ISelectedItemProps[T]) {
       
-      @scala.inline
-      def setOnCopyItem(value: T => Unit): Self = StObject.set(x, "onCopyItem", js.Any.fromFunction1(value))
+      inline def setOnCopyItem(value: T => Unit): Self = StObject.set(x, "onCopyItem", js.Any.fromFunction1(value))
     }
   }
 }

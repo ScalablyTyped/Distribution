@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PositionStickiness extends StObject
 object PositionStickiness {
   
-  @scala.inline
-  def toNext: typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.toNext = "toNext".asInstanceOf[typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.toNext]
+  inline def toNext: typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.toNext = "toNext".asInstanceOf[typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.toNext]
   
-  @scala.inline
-  def toNone: typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.toNone = "toNone".asInstanceOf[typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.toNone]
+  inline def toNone: typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.toNone = "toNone".asInstanceOf[typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.toNone]
   
-  @scala.inline
-  def toPrevious: typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.toPrevious = "toPrevious".asInstanceOf[typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.toPrevious]
+  inline def toPrevious: typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.toPrevious = "toPrevious".asInstanceOf[typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.toPrevious]
 }

@@ -25,8 +25,7 @@ trait XContentIdentifierFactory
 }
 object XContentIdentifierFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createContentIdentifier: String => XContentIdentifier,
     queryInterface: `type` => js.Any,
@@ -36,10 +35,8 @@ object XContentIdentifierFactory {
     __obj.asInstanceOf[XContentIdentifierFactory]
   }
   
-  @scala.inline
-  implicit class XContentIdentifierFactoryMutableBuilder[Self <: XContentIdentifierFactory] (val x: Self) extends AnyVal {
+  extension [Self <: XContentIdentifierFactory](x: Self) {
     
-    @scala.inline
-    def setCreateContentIdentifier(value: String => XContentIdentifier): Self = StObject.set(x, "createContentIdentifier", js.Any.fromFunction1(value))
+    inline def setCreateContentIdentifier(value: String => XContentIdentifier): Self = StObject.set(x, "createContentIdentifier", js.Any.fromFunction1(value))
   }
 }

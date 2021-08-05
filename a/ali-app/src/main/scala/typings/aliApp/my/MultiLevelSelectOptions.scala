@@ -26,49 +26,35 @@ trait MultiLevelSelectOptions
 }
 object MultiLevelSelectOptions {
   
-  @scala.inline
-  def apply(): MultiLevelSelectOptions = {
+  inline def apply(): MultiLevelSelectOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MultiLevelSelectOptions]
   }
   
-  @scala.inline
-  implicit class MultiLevelSelectOptionsMutableBuilder[Self <: MultiLevelSelectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MultiLevelSelectOptions](x: Self) {
     
-    @scala.inline
-    def setList(value: js.Array[MultiLevelSelectItem]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+    inline def setList(value: js.Array[MultiLevelSelectItem]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListUndefined: Self = StObject.set(x, "list", js.undefined)
+    inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
     
-    @scala.inline
-    def setListVarargs(value: MultiLevelSelectItem*): Self = StObject.set(x, "list", js.Array(value :_*))
+    inline def setListVarargs(value: MultiLevelSelectItem*): Self = StObject.set(x, "list", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSubList(value: js.Array[MultiLevelSelectItem]): Self = StObject.set(x, "subList", value.asInstanceOf[js.Any])
+    inline def setSubList(value: js.Array[MultiLevelSelectItem]): Self = StObject.set(x, "subList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubListUndefined: Self = StObject.set(x, "subList", js.undefined)
+    inline def setSubListUndefined: Self = StObject.set(x, "subList", js.undefined)
     
-    @scala.inline
-    def setSubListVarargs(value: MultiLevelSelectItem*): Self = StObject.set(x, "subList", js.Array(value :_*))
+    inline def setSubListVarargs(value: MultiLevelSelectItem*): Self = StObject.set(x, "subList", js.Array(value :_*))
     
-    @scala.inline
-    def setSuccess(value: /* res */ Result => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ Result => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

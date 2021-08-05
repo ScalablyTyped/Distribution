@@ -14,31 +14,23 @@ trait SparklineValueAxisItemNotesLine extends StObject {
 }
 object SparklineValueAxisItemNotesLine {
   
-  @scala.inline
-  def apply(): SparklineValueAxisItemNotesLine = {
+  inline def apply(): SparklineValueAxisItemNotesLine = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SparklineValueAxisItemNotesLine]
   }
   
-  @scala.inline
-  implicit class SparklineValueAxisItemNotesLineMutableBuilder[Self <: SparklineValueAxisItemNotesLine] (val x: Self) extends AnyVal {
+  extension [Self <: SparklineValueAxisItemNotesLine](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

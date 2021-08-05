@@ -21,13 +21,11 @@ object ContainerWidth {
   @JSImport("mendixmodelsdk", "pages.ContainerWidth.FixedWidth")
   @js.native
   def FixedWidth: typings.mendixmodelsdk.pagesMod.pages.ContainerWidth = js.native
-  @scala.inline
-  def FixedWidth_=(x: typings.mendixmodelsdk.pagesMod.pages.ContainerWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FixedWidth")(x.asInstanceOf[js.Any])
+  inline def FixedWidth_=(x: typings.mendixmodelsdk.pagesMod.pages.ContainerWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FixedWidth")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.ContainerWidth.FullWidth")
   @js.native
   def FullWidth: typings.mendixmodelsdk.pagesMod.pages.ContainerWidth = js.native
-  @scala.inline
-  def FullWidth_=(x: typings.mendixmodelsdk.pagesMod.pages.ContainerWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FullWidth")(x.asInstanceOf[js.Any])
+  inline def FullWidth_=(x: typings.mendixmodelsdk.pagesMod.pages.ContainerWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FullWidth")(x.asInstanceOf[js.Any])
 }

@@ -28,8 +28,7 @@ trait Boolean
 }
 object Boolean {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     coerce: Node => Node,
     column: Double,
     eval: () => Node,
@@ -54,22 +53,16 @@ object Boolean {
     __obj.asInstanceOf[Boolean]
   }
   
-  @scala.inline
-  implicit class BooleanMutableBuilder[Self <: Boolean] (val x: Self) extends AnyVal {
+  extension [Self <: Boolean](x: Self) {
     
-    @scala.inline
-    def setInspect(value: () => java.lang.String): Self = StObject.set(x, "inspect", js.Any.fromFunction0(value))
+    inline def setInspect(value: () => java.lang.String): Self = StObject.set(x, "inspect", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsFalse(value: scala.Boolean): Self = StObject.set(x, "isFalse", value.asInstanceOf[js.Any])
+    inline def setIsFalse(value: scala.Boolean): Self = StObject.set(x, "isFalse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTrue(value: scala.Boolean): Self = StObject.set(x, "isTrue", value.asInstanceOf[js.Any])
+    inline def setIsTrue(value: scala.Boolean): Self = StObject.set(x, "isTrue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegate(value: () => Boolean): Self = StObject.set(x, "negate", js.Any.fromFunction0(value))
+    inline def setNegate(value: () => Boolean): Self = StObject.set(x, "negate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setVal(value: scala.Boolean): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+    inline def setVal(value: scala.Boolean): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
   }
 }

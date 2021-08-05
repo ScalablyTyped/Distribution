@@ -11,6 +11,5 @@ object hardwareConcurrencyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useHardwareConcurrency(): NumberOfLogicalProcessors = ^.asInstanceOf[js.Dynamic].applyDynamic("useHardwareConcurrency")().asInstanceOf[NumberOfLogicalProcessors]
+  inline def useHardwareConcurrency(): NumberOfLogicalProcessors = ^.asInstanceOf[js.Dynamic].applyDynamic("useHardwareConcurrency")().asInstanceOf[NumberOfLogicalProcessors]
 }

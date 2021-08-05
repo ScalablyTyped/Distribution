@@ -24,20 +24,16 @@ object iconMod {
   }
   object Icon {
     
-    @scala.inline
-    def apply(): Icon = {
+    inline def apply(): Icon = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Icon]
     }
     
-    @scala.inline
-    implicit class IconMutableBuilder[Self <: Icon] (val x: Self) extends AnyVal {
+    extension [Self <: Icon](x: Self) {
       
-      @scala.inline
-      def setIconIdParser(value: (/* id */ String, /* params */ js.Array[String]) => String): Self = StObject.set(x, "iconIdParser", js.Any.fromFunction2(value))
+      inline def setIconIdParser(value: (/* id */ String, /* params */ js.Array[String]) => String): Self = StObject.set(x, "iconIdParser", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIconIdParserUndefined: Self = StObject.set(x, "iconIdParser", js.undefined)
+      inline def setIconIdParserUndefined: Self = StObject.set(x, "iconIdParser", js.undefined)
     }
   }
 }

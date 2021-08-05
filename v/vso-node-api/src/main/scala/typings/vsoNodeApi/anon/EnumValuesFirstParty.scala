@@ -10,16 +10,13 @@ trait EnumValuesFirstParty extends StObject {
 }
 object EnumValuesFirstParty {
   
-  @scala.inline
-  def apply(enumValues: FirstParty): EnumValuesFirstParty = {
+  inline def apply(enumValues: FirstParty): EnumValuesFirstParty = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesFirstParty]
   }
   
-  @scala.inline
-  implicit class EnumValuesFirstPartyMutableBuilder[Self <: EnumValuesFirstParty] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesFirstParty](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: FirstParty): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: FirstParty): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

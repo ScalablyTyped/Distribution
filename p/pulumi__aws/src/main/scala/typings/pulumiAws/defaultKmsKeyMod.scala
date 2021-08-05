@@ -45,21 +45,16 @@ object defaultKmsKeyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): DefaultKmsKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DefaultKmsKey]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DefaultKmsKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DefaultKmsKey]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: DefaultKmsKeyState): DefaultKmsKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DefaultKmsKey]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: DefaultKmsKeyState, opts: CustomResourceOptions): DefaultKmsKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DefaultKmsKey]
+    inline def get(name: String, id: Input[ID]): DefaultKmsKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DefaultKmsKey]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DefaultKmsKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DefaultKmsKey]
+    inline def get(name: String, id: Input[ID], state: DefaultKmsKeyState): DefaultKmsKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DefaultKmsKey]
+    inline def get(name: String, id: Input[ID], state: DefaultKmsKeyState, opts: CustomResourceOptions): DefaultKmsKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DefaultKmsKey]
     
     /**
       * Returns true if the given object is an instance of DefaultKmsKey.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ebs/defaultKmsKey.DefaultKmsKey */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ebs/defaultKmsKey.DefaultKmsKey */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ebs/defaultKmsKey.DefaultKmsKey */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ebs/defaultKmsKey.DefaultKmsKey */ Boolean]
   }
   
   trait DefaultKmsKeyArgs extends StObject {
@@ -71,17 +66,14 @@ object defaultKmsKeyMod {
   }
   object DefaultKmsKeyArgs {
     
-    @scala.inline
-    def apply(keyArn: Input[String]): DefaultKmsKeyArgs = {
+    inline def apply(keyArn: Input[String]): DefaultKmsKeyArgs = {
       val __obj = js.Dynamic.literal(keyArn = keyArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[DefaultKmsKeyArgs]
     }
     
-    @scala.inline
-    implicit class DefaultKmsKeyArgsMutableBuilder[Self <: DefaultKmsKeyArgs] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultKmsKeyArgs](x: Self) {
       
-      @scala.inline
-      def setKeyArn(value: Input[String]): Self = StObject.set(x, "keyArn", value.asInstanceOf[js.Any])
+      inline def setKeyArn(value: Input[String]): Self = StObject.set(x, "keyArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -94,20 +86,16 @@ object defaultKmsKeyMod {
   }
   object DefaultKmsKeyState {
     
-    @scala.inline
-    def apply(): DefaultKmsKeyState = {
+    inline def apply(): DefaultKmsKeyState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DefaultKmsKeyState]
     }
     
-    @scala.inline
-    implicit class DefaultKmsKeyStateMutableBuilder[Self <: DefaultKmsKeyState] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultKmsKeyState](x: Self) {
       
-      @scala.inline
-      def setKeyArn(value: Input[String]): Self = StObject.set(x, "keyArn", value.asInstanceOf[js.Any])
+      inline def setKeyArn(value: Input[String]): Self = StObject.set(x, "keyArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyArnUndefined: Self = StObject.set(x, "keyArn", js.undefined)
+      inline def setKeyArnUndefined: Self = StObject.set(x, "keyArn", js.undefined)
     }
   }
 }

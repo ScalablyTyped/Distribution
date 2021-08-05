@@ -23,8 +23,7 @@ trait ASPxClientSpreadsheetPopupMenuShowingEventArgs
 }
 object ASPxClientSpreadsheetPopupMenuShowingEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cancel: Boolean,
     menuItems: ASPxClientSpreadsheetPopupMenuItemCollection,
     menuType: ASPxClientSpreadsheetPopupMenuType
@@ -33,13 +32,10 @@ object ASPxClientSpreadsheetPopupMenuShowingEventArgs {
     __obj.asInstanceOf[ASPxClientSpreadsheetPopupMenuShowingEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientSpreadsheetPopupMenuShowingEventArgsMutableBuilder[Self <: ASPxClientSpreadsheetPopupMenuShowingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientSpreadsheetPopupMenuShowingEventArgs](x: Self) {
     
-    @scala.inline
-    def setMenuItems(value: ASPxClientSpreadsheetPopupMenuItemCollection): Self = StObject.set(x, "menuItems", value.asInstanceOf[js.Any])
+    inline def setMenuItems(value: ASPxClientSpreadsheetPopupMenuItemCollection): Self = StObject.set(x, "menuItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuType(value: ASPxClientSpreadsheetPopupMenuType): Self = StObject.set(x, "menuType", value.asInstanceOf[js.Any])
+    inline def setMenuType(value: ASPxClientSpreadsheetPopupMenuType): Self = StObject.set(x, "menuType", value.asInstanceOf[js.Any])
   }
 }

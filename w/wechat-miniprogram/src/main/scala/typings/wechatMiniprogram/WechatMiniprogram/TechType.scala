@@ -33,8 +33,7 @@ trait TechType extends StObject {
 }
 object TechType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isoDep: String,
     mifareClassic: String,
     mifareUltralight: String,
@@ -48,31 +47,22 @@ object TechType {
     __obj.asInstanceOf[TechType]
   }
   
-  @scala.inline
-  implicit class TechTypeMutableBuilder[Self <: TechType] (val x: Self) extends AnyVal {
+  extension [Self <: TechType](x: Self) {
     
-    @scala.inline
-    def setIsoDep(value: String): Self = StObject.set(x, "isoDep", value.asInstanceOf[js.Any])
+    inline def setIsoDep(value: String): Self = StObject.set(x, "isoDep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMifareClassic(value: String): Self = StObject.set(x, "mifareClassic", value.asInstanceOf[js.Any])
+    inline def setMifareClassic(value: String): Self = StObject.set(x, "mifareClassic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMifareUltralight(value: String): Self = StObject.set(x, "mifareUltralight", value.asInstanceOf[js.Any])
+    inline def setMifareUltralight(value: String): Self = StObject.set(x, "mifareUltralight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNdef(value: String): Self = StObject.set(x, "ndef", value.asInstanceOf[js.Any])
+    inline def setNdef(value: String): Self = StObject.set(x, "ndef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNfcA(value: String): Self = StObject.set(x, "nfcA", value.asInstanceOf[js.Any])
+    inline def setNfcA(value: String): Self = StObject.set(x, "nfcA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNfcB(value: String): Self = StObject.set(x, "nfcB", value.asInstanceOf[js.Any])
+    inline def setNfcB(value: String): Self = StObject.set(x, "nfcB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNfcF(value: String): Self = StObject.set(x, "nfcF", value.asInstanceOf[js.Any])
+    inline def setNfcF(value: String): Self = StObject.set(x, "nfcF", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNfcV(value: String): Self = StObject.set(x, "nfcV", value.asInstanceOf[js.Any])
+    inline def setNfcV(value: String): Self = StObject.set(x, "nfcV", value.asInstanceOf[js.Any])
   }
 }

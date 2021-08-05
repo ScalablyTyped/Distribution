@@ -18,19 +18,15 @@ trait UpdateMemberSessionRequest extends StObject {
 }
 object UpdateMemberSessionRequest {
   
-  @scala.inline
-  def apply(id: string, status: MacieStatus): UpdateMemberSessionRequest = {
+  inline def apply(id: string, status: MacieStatus): UpdateMemberSessionRequest = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateMemberSessionRequest]
   }
   
-  @scala.inline
-  implicit class UpdateMemberSessionRequestMutableBuilder[Self <: UpdateMemberSessionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateMemberSessionRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: string): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: string): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: MacieStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: MacieStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

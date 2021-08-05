@@ -18,31 +18,23 @@ trait MultiVarRead extends StObject {
 }
 object MultiVarRead {
   
-  @scala.inline
-  def apply(Amount: Double, Area: Area, Start: Double, WordLen: WordLen): MultiVarRead = {
+  inline def apply(Amount: Double, Area: Area, Start: Double, WordLen: WordLen): MultiVarRead = {
     val __obj = js.Dynamic.literal(Amount = Amount.asInstanceOf[js.Any], Area = Area.asInstanceOf[js.Any], Start = Start.asInstanceOf[js.Any], WordLen = WordLen.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiVarRead]
   }
   
-  @scala.inline
-  implicit class MultiVarReadMutableBuilder[Self <: MultiVarRead] (val x: Self) extends AnyVal {
+  extension [Self <: MultiVarRead](x: Self) {
     
-    @scala.inline
-    def setAmount(value: Double): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: Double): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArea(value: Area): Self = StObject.set(x, "Area", value.asInstanceOf[js.Any])
+    inline def setArea(value: Area): Self = StObject.set(x, "Area", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBNumber(value: Double): Self = StObject.set(x, "DBNumber", value.asInstanceOf[js.Any])
+    inline def setDBNumber(value: Double): Self = StObject.set(x, "DBNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBNumberUndefined: Self = StObject.set(x, "DBNumber", js.undefined)
+    inline def setDBNumberUndefined: Self = StObject.set(x, "DBNumber", js.undefined)
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordLen(value: WordLen): Self = StObject.set(x, "WordLen", value.asInstanceOf[js.Any])
+    inline def setWordLen(value: WordLen): Self = StObject.set(x, "WordLen", value.asInstanceOf[js.Any])
   }
 }

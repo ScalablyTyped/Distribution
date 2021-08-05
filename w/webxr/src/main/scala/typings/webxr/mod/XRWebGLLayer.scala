@@ -34,6 +34,5 @@ object XRWebGLLayer {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getNativeFramebufferScaleFactor(session: XRSession): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getNativeFramebufferScaleFactor")(session.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getNativeFramebufferScaleFactor(session: XRSession): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getNativeFramebufferScaleFactor")(session.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

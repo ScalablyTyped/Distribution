@@ -22,20 +22,16 @@ object buttonSetButtonSetMod extends Shortcut {
   }
   object ButtonSetProps {
     
-    @scala.inline
-    def apply(): ButtonSetProps = {
+    inline def apply(): ButtonSetProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ButtonSetProps]
     }
     
-    @scala.inline
-    implicit class ButtonSetPropsMutableBuilder[Self <: ButtonSetProps] (val x: Self) extends AnyVal {
+    extension [Self <: ButtonSetProps](x: Self) {
       
-      @scala.inline
-      def setStacked(value: Boolean): Self = StObject.set(x, "stacked", value.asInstanceOf[js.Any])
+      inline def setStacked(value: Boolean): Self = StObject.set(x, "stacked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackedUndefined: Self = StObject.set(x, "stacked", js.undefined)
+      inline def setStackedUndefined: Self = StObject.set(x, "stacked", js.undefined)
     }
   }
   

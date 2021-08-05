@@ -15,19 +15,15 @@ trait GoogleActionsV2SignInValueSpec extends StObject {
 }
 object GoogleActionsV2SignInValueSpec {
   
-  @scala.inline
-  def apply(): GoogleActionsV2SignInValueSpec = {
+  inline def apply(): GoogleActionsV2SignInValueSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2SignInValueSpec]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2SignInValueSpecMutableBuilder[Self <: GoogleActionsV2SignInValueSpec] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2SignInValueSpec](x: Self) {
     
-    @scala.inline
-    def setOptContext(value: String): Self = StObject.set(x, "optContext", value.asInstanceOf[js.Any])
+    inline def setOptContext(value: String): Self = StObject.set(x, "optContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptContextUndefined: Self = StObject.set(x, "optContext", js.undefined)
+    inline def setOptContextUndefined: Self = StObject.set(x, "optContext", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait CloseStatusFilter extends StObject {
 }
 object CloseStatusFilter {
   
-  @scala.inline
-  def apply(status: CloseStatus): CloseStatusFilter = {
+  inline def apply(status: CloseStatus): CloseStatusFilter = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloseStatusFilter]
   }
   
-  @scala.inline
-  implicit class CloseStatusFilterMutableBuilder[Self <: CloseStatusFilter] (val x: Self) extends AnyVal {
+  extension [Self <: CloseStatusFilter](x: Self) {
     
-    @scala.inline
-    def setStatus(value: CloseStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: CloseStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

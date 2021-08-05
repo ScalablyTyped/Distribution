@@ -31,23 +31,18 @@ trait AppointmentTimeChangedEventArgs extends StObject {
 }
 object AppointmentTimeChangedEventArgs {
   
-  @scala.inline
-  def apply(end: Date, start: Date): AppointmentTimeChangedEventArgs = {
+  inline def apply(end: Date, start: Date): AppointmentTimeChangedEventArgs = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("olkAppointmentTimeChanged")
     __obj.asInstanceOf[AppointmentTimeChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class AppointmentTimeChangedEventArgsMutableBuilder[Self <: AppointmentTimeChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: AppointmentTimeChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: olkAppointmentTimeChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: olkAppointmentTimeChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

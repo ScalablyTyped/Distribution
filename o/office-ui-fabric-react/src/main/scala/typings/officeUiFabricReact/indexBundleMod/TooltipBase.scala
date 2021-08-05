@@ -27,6 +27,5 @@ object TooltipBase {
   @JSImport("office-ui-fabric-react/lib/index.bundle", "TooltipBase.defaultProps")
   @js.native
   def defaultProps: PartialITooltipProps = js.native
-  @scala.inline
-  def defaultProps_=(x: PartialITooltipProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: PartialITooltipProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

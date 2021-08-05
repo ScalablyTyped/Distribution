@@ -11,19 +11,15 @@ trait DialogEvents extends StObject {
 }
 object DialogEvents {
   
-  @scala.inline
-  def apply(): DialogEvents = {
+  inline def apply(): DialogEvents = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DialogEvents]
   }
   
-  @scala.inline
-  implicit class DialogEventsMutableBuilder[Self <: DialogEvents] (val x: Self) extends AnyVal {
+  extension [Self <: DialogEvents](x: Self) {
     
-    @scala.inline
-    def setCreate(value: (/* event */ Event, /* ui */ js.Any) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+    inline def setCreate(value: (/* event */ Event, /* ui */ js.Any) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+    inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
   }
 }

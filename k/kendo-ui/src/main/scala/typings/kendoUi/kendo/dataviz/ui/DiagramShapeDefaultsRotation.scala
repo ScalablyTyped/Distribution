@@ -10,19 +10,15 @@ trait DiagramShapeDefaultsRotation extends StObject {
 }
 object DiagramShapeDefaultsRotation {
   
-  @scala.inline
-  def apply(): DiagramShapeDefaultsRotation = {
+  inline def apply(): DiagramShapeDefaultsRotation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DiagramShapeDefaultsRotation]
   }
   
-  @scala.inline
-  implicit class DiagramShapeDefaultsRotationMutableBuilder[Self <: DiagramShapeDefaultsRotation] (val x: Self) extends AnyVal {
+  extension [Self <: DiagramShapeDefaultsRotation](x: Self) {
     
-    @scala.inline
-    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+    inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
   }
 }

@@ -9,8 +9,7 @@ trait IdleDispatchedHandlerArgs
      with IIdleDispatchedHandlerArgs
 object IdleDispatchedHandlerArgs {
   
-  @scala.inline
-  def apply(isDispatcherIdle: Boolean): IdleDispatchedHandlerArgs = {
+  inline def apply(isDispatcherIdle: Boolean): IdleDispatchedHandlerArgs = {
     val __obj = js.Dynamic.literal(isDispatcherIdle = isDispatcherIdle.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdleDispatchedHandlerArgs]
   }

@@ -52,44 +52,32 @@ object mod {
   }
   object DraggableFlatListProps {
     
-    @scala.inline
-    def apply[Item](renderItem: RenderItemInfo[Item] => ReactElement | Null): DraggableFlatListProps[Item] = {
+    inline def apply[Item](renderItem: RenderItemInfo[Item] => ReactElement | Null): DraggableFlatListProps[Item] = {
       val __obj = js.Dynamic.literal(renderItem = js.Any.fromFunction1(renderItem), data = null)
       __obj.asInstanceOf[DraggableFlatListProps[Item]]
     }
     
-    @scala.inline
-    implicit class DraggableFlatListPropsMutableBuilder[Self <: DraggableFlatListProps[?], Item] (val x: Self & DraggableFlatListProps[Item]) extends AnyVal {
+    extension [Self <: DraggableFlatListProps[?], Item](x: Self & DraggableFlatListProps[Item]) {
       
-      @scala.inline
-      def setData(value: js.Array[Item]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[Item]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataNull: Self = StObject.set(x, "data", null)
+      inline def setDataNull: Self = StObject.set(x, "data", null)
       
-      @scala.inline
-      def setDataVarargs(value: Item*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Item*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setOnMoveBegin(value: /* index */ Double => Unit): Self = StObject.set(x, "onMoveBegin", js.Any.fromFunction1(value))
+      inline def setOnMoveBegin(value: /* index */ Double => Unit): Self = StObject.set(x, "onMoveBegin", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMoveBeginUndefined: Self = StObject.set(x, "onMoveBegin", js.undefined)
+      inline def setOnMoveBeginUndefined: Self = StObject.set(x, "onMoveBegin", js.undefined)
       
-      @scala.inline
-      def setOnMoveEnd(value: /* info */ OnMoveEndInfo[Item] => Unit): Self = StObject.set(x, "onMoveEnd", js.Any.fromFunction1(value))
+      inline def setOnMoveEnd(value: /* info */ OnMoveEndInfo[Item] => Unit): Self = StObject.set(x, "onMoveEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMoveEndUndefined: Self = StObject.set(x, "onMoveEnd", js.undefined)
+      inline def setOnMoveEndUndefined: Self = StObject.set(x, "onMoveEnd", js.undefined)
       
-      @scala.inline
-      def setRenderItem(value: RenderItemInfo[Item] => ReactElement | Null): Self = StObject.set(x, "renderItem", js.Any.fromFunction1(value))
+      inline def setRenderItem(value: RenderItemInfo[Item] => ReactElement | Null): Self = StObject.set(x, "renderItem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setScrollPercent(value: Double): Self = StObject.set(x, "scrollPercent", value.asInstanceOf[js.Any])
+      inline def setScrollPercent(value: Double): Self = StObject.set(x, "scrollPercent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollPercentUndefined: Self = StObject.set(x, "scrollPercent", js.undefined)
+      inline def setScrollPercentUndefined: Self = StObject.set(x, "scrollPercent", js.undefined)
     }
   }
   
@@ -105,32 +93,24 @@ object mod {
   }
   object OnMoveEndInfo {
     
-    @scala.inline
-    def apply[ItemM](from: Double, row: ItemM, to: Double): OnMoveEndInfo[ItemM] = {
+    inline def apply[ItemM](from: Double, row: ItemM, to: Double): OnMoveEndInfo[ItemM] = {
       val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any], data = null)
       __obj.asInstanceOf[OnMoveEndInfo[ItemM]]
     }
     
-    @scala.inline
-    implicit class OnMoveEndInfoMutableBuilder[Self <: OnMoveEndInfo[?], ItemM] (val x: Self & OnMoveEndInfo[ItemM]) extends AnyVal {
+    extension [Self <: OnMoveEndInfo[?], ItemM](x: Self & OnMoveEndInfo[ItemM]) {
       
-      @scala.inline
-      def setData(value: js.Array[ItemM]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[ItemM]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataNull: Self = StObject.set(x, "data", null)
+      inline def setDataNull: Self = StObject.set(x, "data", null)
       
-      @scala.inline
-      def setDataVarargs(value: ItemM*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: ItemM*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRow(value: ItemM): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRow(value: ItemM): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     }
   }
   
@@ -148,29 +128,22 @@ object mod {
   }
   object RenderItemInfo {
     
-    @scala.inline
-    def apply[ItemR](index: Double, isActive: Boolean, item: ItemR, move: () => Unit, moveEnd: () => Unit): RenderItemInfo[ItemR] = {
+    inline def apply[ItemR](index: Double, isActive: Boolean, item: ItemR, move: () => Unit, moveEnd: () => Unit): RenderItemInfo[ItemR] = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], isActive = isActive.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], move = js.Any.fromFunction0(move), moveEnd = js.Any.fromFunction0(moveEnd))
       __obj.asInstanceOf[RenderItemInfo[ItemR]]
     }
     
-    @scala.inline
-    implicit class RenderItemInfoMutableBuilder[Self <: RenderItemInfo[?], ItemR] (val x: Self & RenderItemInfo[ItemR]) extends AnyVal {
+    extension [Self <: RenderItemInfo[?], ItemR](x: Self & RenderItemInfo[ItemR]) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+      inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItem(value: ItemR): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: ItemR): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMove(value: () => Unit): Self = StObject.set(x, "move", js.Any.fromFunction0(value))
+      inline def setMove(value: () => Unit): Self = StObject.set(x, "move", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMoveEnd(value: () => Unit): Self = StObject.set(x, "moveEnd", js.Any.fromFunction0(value))
+      inline def setMoveEnd(value: () => Unit): Self = StObject.set(x, "moveEnd", js.Any.fromFunction0(value))
     }
   }
 }

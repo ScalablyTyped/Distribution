@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* was `typeof BaseFileSystemHandle` */
 @JSGlobal("FileSystemHandle")
 @js.native
-class FileSystemHandle protected ()
+/* protected */ class FileSystemHandle ()
   extends StObject
      with BaseFileSystemHandle

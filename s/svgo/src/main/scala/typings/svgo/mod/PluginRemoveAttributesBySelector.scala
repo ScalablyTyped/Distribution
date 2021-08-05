@@ -12,16 +12,13 @@ trait PluginRemoveAttributesBySelector
 }
 object PluginRemoveAttributesBySelector {
   
-  @scala.inline
-  def apply(removeAttributesBySelector: Boolean | js.Object): PluginRemoveAttributesBySelector = {
+  inline def apply(removeAttributesBySelector: Boolean | js.Object): PluginRemoveAttributesBySelector = {
     val __obj = js.Dynamic.literal(removeAttributesBySelector = removeAttributesBySelector.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginRemoveAttributesBySelector]
   }
   
-  @scala.inline
-  implicit class PluginRemoveAttributesBySelectorMutableBuilder[Self <: PluginRemoveAttributesBySelector] (val x: Self) extends AnyVal {
+  extension [Self <: PluginRemoveAttributesBySelector](x: Self) {
     
-    @scala.inline
-    def setRemoveAttributesBySelector(value: Boolean | js.Object): Self = StObject.set(x, "removeAttributesBySelector", value.asInstanceOf[js.Any])
+    inline def setRemoveAttributesBySelector(value: Boolean | js.Object): Self = StObject.set(x, "removeAttributesBySelector", value.asInstanceOf[js.Any])
   }
 }

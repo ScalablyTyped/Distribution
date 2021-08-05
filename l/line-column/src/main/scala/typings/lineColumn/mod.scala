@@ -12,12 +12,9 @@ object mod {
     * @param options options for the finder or a number representing the 'from' index.
     * @returns a `LineColumnFinder` instance.
     */
-  @scala.inline
-  def apply(str: String): LineColumnFinder = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[LineColumnFinder]
-  @scala.inline
-  def apply(str: String, options: Double): LineColumnFinder = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LineColumnFinder]
-  @scala.inline
-  def apply(str: String, options: LineColumnOptions): LineColumnFinder = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LineColumnFinder]
+  inline def apply(str: String): LineColumnFinder = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[LineColumnFinder]
+  inline def apply(str: String, options: Double): LineColumnFinder = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LineColumnFinder]
+  inline def apply(str: String, options: LineColumnOptions): LineColumnFinder = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LineColumnFinder]
   
   @JSImport("line-column", JSImport.Namespace)
   @js.native
@@ -66,20 +63,16 @@ object mod {
   }
   object LineColumnInfo {
     
-    @scala.inline
-    def apply(col: Double, line: Double): LineColumnInfo = {
+    inline def apply(col: Double, line: Double): LineColumnInfo = {
       val __obj = js.Dynamic.literal(col = col.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
       __obj.asInstanceOf[LineColumnInfo]
     }
     
-    @scala.inline
-    implicit class LineColumnInfoMutableBuilder[Self <: LineColumnInfo] (val x: Self) extends AnyVal {
+    extension [Self <: LineColumnInfo](x: Self) {
       
-      @scala.inline
-      def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
+      inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     }
   }
   
@@ -94,14 +87,12 @@ object mod {
   trait LineColumnObject extends StObject
   object LineColumnObject {
     
-    @scala.inline
-    def Column(column: Double, line: Double): typings.lineColumn.anon.Column = {
+    inline def Column(column: Double, line: Double): typings.lineColumn.anon.Column = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.lineColumn.anon.Column]
     }
     
-    @scala.inline
-    def LineColumnInfo(col: Double, line: Double): typings.lineColumn.mod.LineColumnInfo = {
+    inline def LineColumnInfo(col: Double, line: Double): typings.lineColumn.mod.LineColumnInfo = {
       val __obj = js.Dynamic.literal(col = col.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.lineColumn.mod.LineColumnInfo]
     }
@@ -116,17 +107,14 @@ object mod {
   }
   object LineColumnOptions {
     
-    @scala.inline
-    def apply(origin: Double): LineColumnOptions = {
+    inline def apply(origin: Double): LineColumnOptions = {
       val __obj = js.Dynamic.literal(origin = origin.asInstanceOf[js.Any])
       __obj.asInstanceOf[LineColumnOptions]
     }
     
-    @scala.inline
-    implicit class LineColumnOptionsMutableBuilder[Self <: LineColumnOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LineColumnOptions](x: Self) {
       
-      @scala.inline
-      def setOrigin(value: Double): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: Double): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     }
   }
 }

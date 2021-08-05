@@ -22,50 +22,28 @@ object svgMod {
     * @param properties Map of properties
     * @param children (Lists of) child nodes
     */
-  @scala.inline
-  def apply(): Element = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Element]
-  @scala.inline
-  def apply(selector: String): Element = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[Element]
-  @scala.inline
-  def apply(selector: String, children: String): Element = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
-  @scala.inline
-  def apply(selector: String, children: js.Array[String | Node]): Element = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
-  @scala.inline
-  def apply(selector: String, children: Node): Element = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
-  @scala.inline
-  def apply(selector: String, properties: Unit, children: String): Element = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
-  @scala.inline
-  def apply(selector: String, properties: Unit, children: js.Array[String | Node]): Element = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
-  @scala.inline
-  def apply(selector: String, properties: Unit, children: Node): Element = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
-  @scala.inline
-  def apply(selector: String, properties: Properties): Element = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Element]
-  @scala.inline
-  def apply(selector: String, properties: Properties, children: String): Element = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
-  @scala.inline
-  def apply(selector: String, properties: Properties, children: js.Array[String | Node]): Element = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
-  @scala.inline
-  def apply(selector: String, properties: Properties, children: Node): Element = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
-  @scala.inline
-  def apply(selector: Unit, children: String): Element = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
-  @scala.inline
-  def apply(selector: Unit, children: js.Array[String | Node]): Element = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
-  @scala.inline
-  def apply(selector: Unit, children: Node): Element = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
-  @scala.inline
-  def apply(selector: Unit, properties: Unit, children: String): Element = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
-  @scala.inline
-  def apply(selector: Unit, properties: Unit, children: js.Array[String | Node]): Element = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
-  @scala.inline
-  def apply(selector: Unit, properties: Unit, children: Node): Element = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
-  @scala.inline
-  def apply(selector: Unit, properties: Properties): Element = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Element]
-  @scala.inline
-  def apply(selector: Unit, properties: Properties, children: String): Element = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
-  @scala.inline
-  def apply(selector: Unit, properties: Properties, children: js.Array[String | Node]): Element = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
-  @scala.inline
-  def apply(selector: Unit, properties: Properties, children: Node): Element = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def apply(): Element = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Element]
+  inline def apply(selector: String): Element = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def apply(selector: String, children: String): Element = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def apply(selector: String, children: js.Array[String | Node]): Element = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def apply(selector: String, children: Node): Element = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def apply(selector: String, properties: Unit, children: String): Element = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def apply(selector: String, properties: Unit, children: js.Array[String | Node]): Element = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def apply(selector: String, properties: Unit, children: Node): Element = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def apply(selector: String, properties: Properties): Element = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def apply(selector: String, properties: Properties, children: String): Element = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def apply(selector: String, properties: Properties, children: js.Array[String | Node]): Element = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def apply(selector: String, properties: Properties, children: Node): Element = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def apply(selector: Unit, children: String): Element = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def apply(selector: Unit, children: js.Array[String | Node]): Element = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def apply(selector: Unit, children: Node): Element = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def apply(selector: Unit, properties: Unit, children: String): Element = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def apply(selector: Unit, properties: Unit, children: js.Array[String | Node]): Element = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def apply(selector: Unit, properties: Unit, children: Node): Element = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def apply(selector: Unit, properties: Properties): Element = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def apply(selector: Unit, properties: Properties, children: String): Element = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def apply(selector: Unit, properties: Properties, children: js.Array[String | Node]): Element = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def apply(selector: Unit, properties: Properties, children: Node): Element = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
   
   @JSImport("hastscript/svg", JSImport.Namespace)
   @js.native

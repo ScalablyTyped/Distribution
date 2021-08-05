@@ -44,20 +44,14 @@ object Background {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getAccessStatus(): BackgroundAccessStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccessStatus")().asInstanceOf[BackgroundAccessStatus]
-    @scala.inline
-    def getAccessStatus(applicationId: String): BackgroundAccessStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccessStatus")(applicationId.asInstanceOf[js.Any]).asInstanceOf[BackgroundAccessStatus]
+    inline def getAccessStatus(): BackgroundAccessStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccessStatus")().asInstanceOf[BackgroundAccessStatus]
+    inline def getAccessStatus(applicationId: String): BackgroundAccessStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccessStatus")(applicationId.asInstanceOf[js.Any]).asInstanceOf[BackgroundAccessStatus]
     
-    @scala.inline
-    def removeAccess(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAccess")().asInstanceOf[Unit]
-    @scala.inline
-    def removeAccess(applicationId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAccess")(applicationId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def removeAccess(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAccess")().asInstanceOf[Unit]
+    inline def removeAccess(applicationId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAccess")(applicationId.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def requestAccessAsync(): IAsyncOperation[BackgroundAccessStatus] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestAccessAsync")().asInstanceOf[IAsyncOperation[BackgroundAccessStatus]]
-    @scala.inline
-    def requestAccessAsync(applicationId: String): IAsyncOperation[BackgroundAccessStatus] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestAccessAsync")(applicationId.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[BackgroundAccessStatus]]
+    inline def requestAccessAsync(): IAsyncOperation[BackgroundAccessStatus] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestAccessAsync")().asInstanceOf[IAsyncOperation[BackgroundAccessStatus]]
+    inline def requestAccessAsync(applicationId: String): IAsyncOperation[BackgroundAccessStatus] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestAccessAsync")(applicationId.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[BackgroundAccessStatus]]
   }
   
   @JSGlobal("Windows.ApplicationModel.Background.BackgroundTaskBuilder")
@@ -167,8 +161,7 @@ object Background {
     @JSGlobal("Windows.ApplicationModel.Background.BackgroundTaskRegistration.allTasks")
     @js.native
     def allTasks: IMapView[String, IBackgroundTaskRegistration] = js.native
-    @scala.inline
-    def allTasks_=(x: IMapView[String, IBackgroundTaskRegistration]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("allTasks")(x.asInstanceOf[js.Any])
+    inline def allTasks_=(x: IMapView[String, IBackgroundTaskRegistration]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("allTasks")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Windows.ApplicationModel.Background.MaintenanceTrigger")

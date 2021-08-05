@@ -10,16 +10,13 @@ trait GetCampaignActivitiesResponse extends StObject {
 }
 object GetCampaignActivitiesResponse {
   
-  @scala.inline
-  def apply(ActivitiesResponse: ActivitiesResponse): GetCampaignActivitiesResponse = {
+  inline def apply(ActivitiesResponse: ActivitiesResponse): GetCampaignActivitiesResponse = {
     val __obj = js.Dynamic.literal(ActivitiesResponse = ActivitiesResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCampaignActivitiesResponse]
   }
   
-  @scala.inline
-  implicit class GetCampaignActivitiesResponseMutableBuilder[Self <: GetCampaignActivitiesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetCampaignActivitiesResponse](x: Self) {
     
-    @scala.inline
-    def setActivitiesResponse(value: ActivitiesResponse): Self = StObject.set(x, "ActivitiesResponse", value.asInstanceOf[js.Any])
+    inline def setActivitiesResponse(value: ActivitiesResponse): Self = StObject.set(x, "ActivitiesResponse", value.asInstanceOf[js.Any])
   }
 }

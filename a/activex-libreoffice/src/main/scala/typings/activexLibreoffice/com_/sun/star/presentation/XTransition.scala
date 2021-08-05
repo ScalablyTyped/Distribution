@@ -25,8 +25,7 @@ trait XTransition
 }
 object XTransition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -37,13 +36,10 @@ object XTransition {
     __obj.asInstanceOf[XTransition]
   }
   
-  @scala.inline
-  implicit class XTransitionMutableBuilder[Self <: XTransition] (val x: Self) extends AnyVal {
+  extension [Self <: XTransition](x: Self) {
     
-    @scala.inline
-    def setUpdate(value: Double => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+    inline def setUpdate(value: Double => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setViewChanged(value: (XSlideShowView, XBitmap, XBitmap) => Unit): Self = StObject.set(x, "viewChanged", js.Any.fromFunction3(value))
+    inline def setViewChanged(value: (XSlideShowView, XBitmap, XBitmap) => Unit): Self = StObject.set(x, "viewChanged", js.Any.fromFunction3(value))
   }
 }

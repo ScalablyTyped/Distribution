@@ -15,19 +15,15 @@ trait TypeofDateTimePicker extends StObject {
 }
 object TypeofDateTimePicker {
   
-  @scala.inline
-  def apply(extend: js.Object => DateTimePicker, fn: DateTimePicker): TypeofDateTimePicker = {
+  inline def apply(extend: js.Object => DateTimePicker, fn: DateTimePicker): TypeofDateTimePicker = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofDateTimePicker]
   }
   
-  @scala.inline
-  implicit class TypeofDateTimePickerMutableBuilder[Self <: TypeofDateTimePicker] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofDateTimePicker](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => DateTimePicker): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => DateTimePicker): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: DateTimePicker): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: DateTimePicker): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

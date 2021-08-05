@@ -14,25 +14,19 @@ trait Error extends StObject {
 }
 object Error {
   
-  @scala.inline
-  def apply(): Error = {
+  inline def apply(): Error = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Error]
   }
   
-  @scala.inline
-  implicit class ErrorMutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
+  extension [Self <: Error](x: Self) {
     
-    @scala.inline
-    def setPointCount(value: Double): Self = StObject.set(x, "pointCount", value.asInstanceOf[js.Any])
+    inline def setPointCount(value: Double): Self = StObject.set(x, "pointCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointCountUndefined: Self = StObject.set(x, "pointCount", js.undefined)
+    inline def setPointCountUndefined: Self = StObject.set(x, "pointCount", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

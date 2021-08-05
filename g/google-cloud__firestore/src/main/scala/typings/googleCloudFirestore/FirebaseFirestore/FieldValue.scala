@@ -16,16 +16,13 @@ trait FieldValue extends StObject {
 }
 object FieldValue {
   
-  @scala.inline
-  def apply(isEqual: FieldValue => Boolean): FieldValue = {
+  inline def apply(isEqual: FieldValue => Boolean): FieldValue = {
     val __obj = js.Dynamic.literal(isEqual = js.Any.fromFunction1(isEqual))
     __obj.asInstanceOf[FieldValue]
   }
   
-  @scala.inline
-  implicit class FieldValueMutableBuilder[Self <: FieldValue] (val x: Self) extends AnyVal {
+  extension [Self <: FieldValue](x: Self) {
     
-    @scala.inline
-    def setIsEqual(value: FieldValue => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
+    inline def setIsEqual(value: FieldValue => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
   }
 }

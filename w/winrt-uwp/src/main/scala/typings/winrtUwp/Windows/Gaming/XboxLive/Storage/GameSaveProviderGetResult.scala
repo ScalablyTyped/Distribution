@@ -15,19 +15,15 @@ trait GameSaveProviderGetResult extends StObject {
 }
 object GameSaveProviderGetResult {
   
-  @scala.inline
-  def apply(status: GameSaveErrorStatus, value: GameSaveProvider): GameSaveProviderGetResult = {
+  inline def apply(status: GameSaveErrorStatus, value: GameSaveProvider): GameSaveProviderGetResult = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[GameSaveProviderGetResult]
   }
   
-  @scala.inline
-  implicit class GameSaveProviderGetResultMutableBuilder[Self <: GameSaveProviderGetResult] (val x: Self) extends AnyVal {
+  extension [Self <: GameSaveProviderGetResult](x: Self) {
     
-    @scala.inline
-    def setStatus(value: GameSaveErrorStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: GameSaveErrorStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: GameSaveProvider): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: GameSaveProvider): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

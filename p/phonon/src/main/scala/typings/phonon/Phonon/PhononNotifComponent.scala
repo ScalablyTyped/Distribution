@@ -14,8 +14,7 @@ trait PhononNotifComponent extends StObject {
 }
 object PhononNotifComponent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     hide: () => PhononNotifComponent,
     setColor: PhononColor => PhononNotifComponent,
     show: () => PhononNotifComponent
@@ -24,16 +23,12 @@ object PhononNotifComponent {
     __obj.asInstanceOf[PhononNotifComponent]
   }
   
-  @scala.inline
-  implicit class PhononNotifComponentMutableBuilder[Self <: PhononNotifComponent] (val x: Self) extends AnyVal {
+  extension [Self <: PhononNotifComponent](x: Self) {
     
-    @scala.inline
-    def setHide(value: () => PhononNotifComponent): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => PhononNotifComponent): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetColor(value: PhononColor => PhononNotifComponent): Self = StObject.set(x, "setColor", js.Any.fromFunction1(value))
+    inline def setSetColor(value: PhononColor => PhononNotifComponent): Self = StObject.set(x, "setColor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShow(value: () => PhononNotifComponent): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => PhononNotifComponent): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
   }
 }

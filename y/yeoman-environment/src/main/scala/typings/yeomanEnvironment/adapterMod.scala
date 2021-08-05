@@ -42,20 +42,16 @@ object adapterMod {
   }
   object AdapterOptions {
     
-    @scala.inline
-    def apply(): AdapterOptions = {
+    inline def apply(): AdapterOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AdapterOptions]
     }
     
-    @scala.inline
-    implicit class AdapterOptionsMutableBuilder[Self <: AdapterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AdapterOptions](x: Self) {
       
-      @scala.inline
-      def setConsole(value: Console): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
+      inline def setConsole(value: Console): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsoleUndefined: Self = StObject.set(x, "console", js.undefined)
+      inline def setConsoleUndefined: Self = StObject.set(x, "console", js.undefined)
     }
   }
   

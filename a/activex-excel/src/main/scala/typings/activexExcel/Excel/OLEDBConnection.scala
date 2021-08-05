@@ -34,7 +34,7 @@ trait OLEDBConnection extends StObject {
   
   var EnableRefresh: Boolean = js.native
   
-  @JSName("Excel.OLEDBConnection_typekey")
+  /* private */ @JSName("Excel.OLEDBConnection_typekey")
   var ExcelDotOLEDBConnection_typekey: OLEDBConnection = js.native
   
   val IsConnected: Boolean = js.native

@@ -23,34 +23,25 @@ trait DescribeServiceErrorsRequest extends StObject {
 }
 object DescribeServiceErrorsRequest {
   
-  @scala.inline
-  def apply(): DescribeServiceErrorsRequest = {
+  inline def apply(): DescribeServiceErrorsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeServiceErrorsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeServiceErrorsRequestMutableBuilder[Self <: DescribeServiceErrorsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeServiceErrorsRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
-    @scala.inline
-    def setServiceErrorIds(value: Strings): Self = StObject.set(x, "ServiceErrorIds", value.asInstanceOf[js.Any])
+    inline def setServiceErrorIds(value: Strings): Self = StObject.set(x, "ServiceErrorIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceErrorIdsUndefined: Self = StObject.set(x, "ServiceErrorIds", js.undefined)
+    inline def setServiceErrorIdsUndefined: Self = StObject.set(x, "ServiceErrorIds", js.undefined)
     
-    @scala.inline
-    def setServiceErrorIdsVarargs(value: String*): Self = StObject.set(x, "ServiceErrorIds", js.Array(value :_*))
+    inline def setServiceErrorIdsVarargs(value: String*): Self = StObject.set(x, "ServiceErrorIds", js.Array(value :_*))
     
-    @scala.inline
-    def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
+    inline def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
+    inline def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
   }
 }

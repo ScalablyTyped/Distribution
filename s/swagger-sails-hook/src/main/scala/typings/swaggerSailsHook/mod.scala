@@ -12,8 +12,7 @@ object mod {
     * @param sails - reference to the running sails instance
     * @returns SailsHook - `swagger-sails-hook` object implementing the Sails' hook specification.
     */
-  @scala.inline
-  def apply(sails: js.Any): SailsHook = ^.asInstanceOf[js.Dynamic].apply(sails.asInstanceOf[js.Any]).asInstanceOf[SailsHook]
+  inline def apply(sails: js.Any): SailsHook = ^.asInstanceOf[js.Dynamic].apply(sails.asInstanceOf[js.Any]).asInstanceOf[SailsHook]
   
   @JSImport("swagger-sails-hook", JSImport.Namespace)
   @js.native
@@ -44,20 +43,16 @@ object mod {
   }
   object SailsHook {
     
-    @scala.inline
-    def apply(initialize: js.Function0[js.Any] => Unit, routes: After): SailsHook = {
+    inline def apply(initialize: js.Function0[js.Any] => Unit, routes: After): SailsHook = {
       val __obj = js.Dynamic.literal(initialize = js.Any.fromFunction1(initialize), routes = routes.asInstanceOf[js.Any])
       __obj.asInstanceOf[SailsHook]
     }
     
-    @scala.inline
-    implicit class SailsHookMutableBuilder[Self <: SailsHook] (val x: Self) extends AnyVal {
+    extension [Self <: SailsHook](x: Self) {
       
-      @scala.inline
-      def setInitialize(value: js.Function0[js.Any] => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
+      inline def setInitialize(value: js.Function0[js.Any] => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRoutes(value: After): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+      inline def setRoutes(value: After): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     }
   }
 }

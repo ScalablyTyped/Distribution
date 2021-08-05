@@ -34,25 +34,19 @@ trait SchemaEnumValuePair extends StObject {
 }
 object SchemaEnumValuePair {
   
-  @scala.inline
-  def apply(): SchemaEnumValuePair = {
+  inline def apply(): SchemaEnumValuePair = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEnumValuePair]
   }
   
-  @scala.inline
-  implicit class SchemaEnumValuePairMutableBuilder[Self <: SchemaEnumValuePair] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaEnumValuePair](x: Self) {
     
-    @scala.inline
-    def setIntegerValue(value: Double): Self = StObject.set(x, "integerValue", value.asInstanceOf[js.Any])
+    inline def setIntegerValue(value: Double): Self = StObject.set(x, "integerValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntegerValueUndefined: Self = StObject.set(x, "integerValue", js.undefined)
+    inline def setIntegerValueUndefined: Self = StObject.set(x, "integerValue", js.undefined)
     
-    @scala.inline
-    def setStringValue(value: String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
+    inline def setStringValue(value: String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
+    inline def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
   }
 }

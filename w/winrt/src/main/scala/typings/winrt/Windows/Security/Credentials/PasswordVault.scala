@@ -10,8 +10,7 @@ trait PasswordVault
      with IPasswordVault
 object PasswordVault {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: PasswordCredential => Unit,
     findAllByResource: String => IVectorView[PasswordCredential],
     findAllByUserName: String => IVectorView[PasswordCredential],

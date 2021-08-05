@@ -65,21 +65,16 @@ object sourceCredentialMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): SourceCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SourceCredential]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): SourceCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SourceCredential]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: SourceCredentialState): SourceCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[SourceCredential]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: SourceCredentialState, opts: CustomResourceOptions): SourceCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SourceCredential]
+    inline def get(name: String, id: Input[ID]): SourceCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SourceCredential]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): SourceCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SourceCredential]
+    inline def get(name: String, id: Input[ID], state: SourceCredentialState): SourceCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[SourceCredential]
+    inline def get(name: String, id: Input[ID], state: SourceCredentialState, opts: CustomResourceOptions): SourceCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SourceCredential]
     
     /**
       * Returns true if the given object is an instance of SourceCredential.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codebuild/sourceCredential.SourceCredential */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codebuild/sourceCredential.SourceCredential */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codebuild/sourceCredential.SourceCredential */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codebuild/sourceCredential.SourceCredential */ Boolean]
   }
   
   trait SourceCredentialArgs extends StObject {
@@ -106,29 +101,22 @@ object sourceCredentialMod {
   }
   object SourceCredentialArgs {
     
-    @scala.inline
-    def apply(authType: Input[String], serverType: Input[String], token: Input[String]): SourceCredentialArgs = {
+    inline def apply(authType: Input[String], serverType: Input[String], token: Input[String]): SourceCredentialArgs = {
       val __obj = js.Dynamic.literal(authType = authType.asInstanceOf[js.Any], serverType = serverType.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
       __obj.asInstanceOf[SourceCredentialArgs]
     }
     
-    @scala.inline
-    implicit class SourceCredentialArgsMutableBuilder[Self <: SourceCredentialArgs] (val x: Self) extends AnyVal {
+    extension [Self <: SourceCredentialArgs](x: Self) {
       
-      @scala.inline
-      def setAuthType(value: Input[String]): Self = StObject.set(x, "authType", value.asInstanceOf[js.Any])
+      inline def setAuthType(value: Input[String]): Self = StObject.set(x, "authType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerType(value: Input[String]): Self = StObject.set(x, "serverType", value.asInstanceOf[js.Any])
+      inline def setServerType(value: Input[String]): Self = StObject.set(x, "serverType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToken(value: Input[String]): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: Input[String]): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserName(value: Input[String]): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
+      inline def setUserName(value: Input[String]): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
+      inline def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
     }
   }
   
@@ -161,44 +149,32 @@ object sourceCredentialMod {
   }
   object SourceCredentialState {
     
-    @scala.inline
-    def apply(): SourceCredentialState = {
+    inline def apply(): SourceCredentialState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SourceCredentialState]
     }
     
-    @scala.inline
-    implicit class SourceCredentialStateMutableBuilder[Self <: SourceCredentialState] (val x: Self) extends AnyVal {
+    extension [Self <: SourceCredentialState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setAuthType(value: Input[String]): Self = StObject.set(x, "authType", value.asInstanceOf[js.Any])
+      inline def setAuthType(value: Input[String]): Self = StObject.set(x, "authType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthTypeUndefined: Self = StObject.set(x, "authType", js.undefined)
+      inline def setAuthTypeUndefined: Self = StObject.set(x, "authType", js.undefined)
       
-      @scala.inline
-      def setServerType(value: Input[String]): Self = StObject.set(x, "serverType", value.asInstanceOf[js.Any])
+      inline def setServerType(value: Input[String]): Self = StObject.set(x, "serverType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerTypeUndefined: Self = StObject.set(x, "serverType", js.undefined)
+      inline def setServerTypeUndefined: Self = StObject.set(x, "serverType", js.undefined)
       
-      @scala.inline
-      def setToken(value: Input[String]): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: Input[String]): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+      inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
       
-      @scala.inline
-      def setUserName(value: Input[String]): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
+      inline def setUserName(value: Input[String]): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
+      inline def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
     }
   }
 }

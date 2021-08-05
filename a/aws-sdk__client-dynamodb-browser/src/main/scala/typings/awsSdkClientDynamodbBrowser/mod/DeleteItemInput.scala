@@ -12,8 +12,7 @@ trait DeleteItemInput
      with typings.awsSdkClientDynamodbBrowser.typesDeleteItemInputMod.DeleteItemInput
 object DeleteItemInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Key: StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]]),
     TableName: String
   ): DeleteItemInput = {

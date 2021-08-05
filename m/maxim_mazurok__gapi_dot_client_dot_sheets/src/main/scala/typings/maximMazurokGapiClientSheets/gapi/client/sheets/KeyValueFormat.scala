@@ -14,25 +14,19 @@ trait KeyValueFormat extends StObject {
 }
 object KeyValueFormat {
   
-  @scala.inline
-  def apply(): KeyValueFormat = {
+  inline def apply(): KeyValueFormat = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KeyValueFormat]
   }
   
-  @scala.inline
-  implicit class KeyValueFormatMutableBuilder[Self <: KeyValueFormat] (val x: Self) extends AnyVal {
+  extension [Self <: KeyValueFormat](x: Self) {
     
-    @scala.inline
-    def setPosition(value: TextPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: TextPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setTextFormat(value: TextFormat): Self = StObject.set(x, "textFormat", value.asInstanceOf[js.Any])
+    inline def setTextFormat(value: TextFormat): Self = StObject.set(x, "textFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextFormatUndefined: Self = StObject.set(x, "textFormat", js.undefined)
+    inline def setTextFormatUndefined: Self = StObject.set(x, "textFormat", js.undefined)
   }
 }

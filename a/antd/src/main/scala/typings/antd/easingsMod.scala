@@ -10,6 +10,5 @@ object easingsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def easeInOutCubic(t: Double, b: Double, c: Double, d: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("easeInOutCubic")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def easeInOutCubic(t: Double, b: Double, c: Double, d: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("easeInOutCubic")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

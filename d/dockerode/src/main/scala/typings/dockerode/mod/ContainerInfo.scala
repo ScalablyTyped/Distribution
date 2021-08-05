@@ -38,8 +38,7 @@ trait ContainerInfo extends StObject {
 }
 object ContainerInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Command: String,
     Created: Double,
     HostConfig: NetworkMode,
@@ -58,55 +57,38 @@ object ContainerInfo {
     __obj.asInstanceOf[ContainerInfo]
   }
   
-  @scala.inline
-  implicit class ContainerInfoMutableBuilder[Self <: ContainerInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerInfo](x: Self) {
     
-    @scala.inline
-    def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreated(value: Double): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: Double): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostConfig(value: NetworkMode): Self = StObject.set(x, "HostConfig", value.asInstanceOf[js.Any])
+    inline def setHostConfig(value: NetworkMode): Self = StObject.set(x, "HostConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage(value: String): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
+    inline def setImage(value: String): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageID(value: String): Self = StObject.set(x, "ImageID", value.asInstanceOf[js.Any])
+    inline def setImageID(value: String): Self = StObject.set(x, "ImageID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "Labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "Labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMounts(value: js.Array[Destination]): Self = StObject.set(x, "Mounts", value.asInstanceOf[js.Any])
+    inline def setMounts(value: js.Array[Destination]): Self = StObject.set(x, "Mounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMountsVarargs(value: Destination*): Self = StObject.set(x, "Mounts", js.Array(value :_*))
+    inline def setMountsVarargs(value: Destination*): Self = StObject.set(x, "Mounts", js.Array(value :_*))
     
-    @scala.inline
-    def setNames(value: js.Array[String]): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
+    inline def setNames(value: js.Array[String]): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamesVarargs(value: String*): Self = StObject.set(x, "Names", js.Array(value :_*))
+    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "Names", js.Array(value :_*))
     
-    @scala.inline
-    def setNetworkSettings(value: Networks): Self = StObject.set(x, "NetworkSettings", value.asInstanceOf[js.Any])
+    inline def setNetworkSettings(value: Networks): Self = StObject.set(x, "NetworkSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPorts(value: js.Array[Port]): Self = StObject.set(x, "Ports", value.asInstanceOf[js.Any])
+    inline def setPorts(value: js.Array[Port]): Self = StObject.set(x, "Ports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortsVarargs(value: Port*): Self = StObject.set(x, "Ports", js.Array(value :_*))
+    inline def setPortsVarargs(value: Port*): Self = StObject.set(x, "Ports", js.Array(value :_*))
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

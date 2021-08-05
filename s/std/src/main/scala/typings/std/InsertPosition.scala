@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InsertPosition extends StObject
 object InsertPosition {
   
-  @scala.inline
-  def afterbegin: typings.std.stdStrings.afterbegin = "afterbegin".asInstanceOf[typings.std.stdStrings.afterbegin]
+  inline def afterbegin: typings.std.stdStrings.afterbegin = "afterbegin".asInstanceOf[typings.std.stdStrings.afterbegin]
   
-  @scala.inline
-  def afterend: typings.std.stdStrings.afterend = "afterend".asInstanceOf[typings.std.stdStrings.afterend]
+  inline def afterend: typings.std.stdStrings.afterend = "afterend".asInstanceOf[typings.std.stdStrings.afterend]
   
-  @scala.inline
-  def beforebegin: typings.std.stdStrings.beforebegin = "beforebegin".asInstanceOf[typings.std.stdStrings.beforebegin]
+  inline def beforebegin: typings.std.stdStrings.beforebegin = "beforebegin".asInstanceOf[typings.std.stdStrings.beforebegin]
   
-  @scala.inline
-  def beforeend: typings.std.stdStrings.beforeend = "beforeend".asInstanceOf[typings.std.stdStrings.beforeend]
+  inline def beforeend: typings.std.stdStrings.beforeend = "beforeend".asInstanceOf[typings.std.stdStrings.beforeend]
 }

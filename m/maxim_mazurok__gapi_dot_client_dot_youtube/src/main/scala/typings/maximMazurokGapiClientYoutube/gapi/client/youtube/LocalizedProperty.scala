@@ -15,34 +15,25 @@ trait LocalizedProperty extends StObject {
 }
 object LocalizedProperty {
   
-  @scala.inline
-  def apply(): LocalizedProperty = {
+  inline def apply(): LocalizedProperty = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocalizedProperty]
   }
   
-  @scala.inline
-  implicit class LocalizedPropertyMutableBuilder[Self <: LocalizedProperty] (val x: Self) extends AnyVal {
+  extension [Self <: LocalizedProperty](x: Self) {
     
-    @scala.inline
-    def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultLanguage(value: LanguageTag): Self = StObject.set(x, "defaultLanguage", value.asInstanceOf[js.Any])
+    inline def setDefaultLanguage(value: LanguageTag): Self = StObject.set(x, "defaultLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultLanguageUndefined: Self = StObject.set(x, "defaultLanguage", js.undefined)
+    inline def setDefaultLanguageUndefined: Self = StObject.set(x, "defaultLanguage", js.undefined)
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
-    @scala.inline
-    def setLocalized(value: js.Array[LocalizedString]): Self = StObject.set(x, "localized", value.asInstanceOf[js.Any])
+    inline def setLocalized(value: js.Array[LocalizedString]): Self = StObject.set(x, "localized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalizedUndefined: Self = StObject.set(x, "localized", js.undefined)
+    inline def setLocalizedUndefined: Self = StObject.set(x, "localized", js.undefined)
     
-    @scala.inline
-    def setLocalizedVarargs(value: LocalizedString*): Self = StObject.set(x, "localized", js.Array(value :_*))
+    inline def setLocalizedVarargs(value: LocalizedString*): Self = StObject.set(x, "localized", js.Array(value :_*))
   }
 }

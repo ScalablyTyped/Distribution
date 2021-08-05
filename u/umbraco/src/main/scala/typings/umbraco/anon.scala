@@ -24,8 +24,7 @@ object anon {
   }
   object Error {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       error: (IResourcePromise, /* status */ Double, /* headers */ IHttpHeadersGetter, /* config */ IRequestConfig) => Unit,
       success: (T, /* status */ Double, /* headers */ IHttpHeadersGetter, /* config */ IRequestConfig) => Unit
     ): Error[T] = {
@@ -33,16 +32,13 @@ object anon {
       __obj.asInstanceOf[Error[T]]
     }
     
-    @scala.inline
-    implicit class ErrorMutableBuilder[Self <: Error[?], T] (val x: Self & Error[T]) extends AnyVal {
+    extension [Self <: Error[?], T](x: Self & Error[T]) {
       
-      @scala.inline
-      def setError(
+      inline def setError(
         value: (IResourcePromise, /* status */ Double, /* headers */ IHttpHeadersGetter, /* config */ IRequestConfig) => Unit
       ): Self = StObject.set(x, "error", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setSuccess(
+      inline def setSuccess(
         value: (T, /* status */ Double, /* headers */ IHttpHeadersGetter, /* config */ IRequestConfig) => Unit
       ): Self = StObject.set(x, "success", js.Any.fromFunction4(value))
     }
@@ -58,8 +54,7 @@ object anon {
   }
   object ErrorMsg {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       errorMsg: String,
       success: (T, /* status */ Double, /* headers */ IHttpHeadersGetter, /* config */ IRequestConfig) => Unit
     ): ErrorMsg[T] = {
@@ -67,14 +62,11 @@ object anon {
       __obj.asInstanceOf[ErrorMsg[T]]
     }
     
-    @scala.inline
-    implicit class ErrorMsgMutableBuilder[Self <: ErrorMsg[?], T] (val x: Self & ErrorMsg[T]) extends AnyVal {
+    extension [Self <: ErrorMsg[?], T](x: Self & ErrorMsg[T]) {
       
-      @scala.inline
-      def setErrorMsg(value: String): Self = StObject.set(x, "errorMsg", value.asInstanceOf[js.Any])
+      inline def setErrorMsg(value: String): Self = StObject.set(x, "errorMsg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccess(
+      inline def setSuccess(
         value: (T, /* status */ Double, /* headers */ IHttpHeadersGetter, /* config */ IRequestConfig) => Unit
       ): Self = StObject.set(x, "success", js.Any.fromFunction4(value))
     }
@@ -94,8 +86,7 @@ object anon {
   }
   object Filter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       filter: String,
       orderBy: OrderItemsBy,
       orderDirection: Direction,
@@ -106,23 +97,17 @@ object anon {
       __obj.asInstanceOf[Filter]
     }
     
-    @scala.inline
-    implicit class FilterMutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
+    extension [Self <: Filter](x: Self) {
       
-      @scala.inline
-      def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderBy(value: OrderItemsBy): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
+      inline def setOrderBy(value: OrderItemsBy): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderDirection(value: Direction): Self = StObject.set(x, "orderDirection", value.asInstanceOf[js.Any])
+      inline def setOrderDirection(value: Direction): Self = StObject.set(x, "orderDirection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
+      inline def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+      inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     }
   }
   
@@ -132,17 +117,14 @@ object anon {
   }
   object Url {
     
-    @scala.inline
-    def apply(Url: String): Url = {
+    inline def apply(Url: String): Url = {
       val __obj = js.Dynamic.literal(Url = Url.asInstanceOf[js.Any])
       __obj.asInstanceOf[Url]
     }
     
-    @scala.inline
-    implicit class UrlMutableBuilder[Self <: Url] (val x: Self) extends AnyVal {
+    extension [Self <: Url](x: Self) {
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     }
   }
 }

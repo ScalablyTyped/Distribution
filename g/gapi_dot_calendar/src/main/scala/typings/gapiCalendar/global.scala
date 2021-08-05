@@ -111,17 +111,13 @@ object global {
           @js.native
           val ^ : js.Any = js.native
           
-          @scala.inline
-          def delete(parameters: AclDeleteParameters): HttpRequest[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[Unit]]
+          inline def delete(parameters: AclDeleteParameters): HttpRequest[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[Unit]]
           
-          @scala.inline
-          def get(parameters: AclGetParameters): HttpRequest[Acl_] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[Acl_]]
+          inline def get(parameters: AclGetParameters): HttpRequest[Acl_] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[Acl_]]
           
-          @scala.inline
-          def insert(parameters: AclInsertParameters): HttpRequest[Acl_] = ^.asInstanceOf[js.Dynamic].applyDynamic("insert")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[Acl_]]
+          inline def insert(parameters: AclInsertParameters): HttpRequest[Acl_] = ^.asInstanceOf[js.Dynamic].applyDynamic("insert")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[Acl_]]
           
-          @scala.inline
-          def update(parameters: AclUpdateParameters): HttpRequest[Acl_] = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[Acl_]]
+          inline def update(parameters: AclUpdateParameters): HttpRequest[Acl_] = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[Acl_]]
         }
         
         @JSGlobal("gapi.client.calendar.calendarList")
@@ -136,13 +132,10 @@ object global {
           @js.native
           val ^ : js.Any = js.native
           
-          @scala.inline
-          def insert(parameters: CalendarListInsertParameters): HttpRequest[CalendarListEntry] = ^.asInstanceOf[js.Dynamic].applyDynamic("insert")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[CalendarListEntry]]
+          inline def insert(parameters: CalendarListInsertParameters): HttpRequest[CalendarListEntry] = ^.asInstanceOf[js.Dynamic].applyDynamic("insert")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[CalendarListEntry]]
           
-          @scala.inline
-          def list(): HttpRequest[CalendarList_] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[HttpRequest[CalendarList_]]
-          @scala.inline
-          def list(parameters: CalendarListListParameters): HttpRequest[CalendarList_] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[CalendarList_]]
+          inline def list(): HttpRequest[CalendarList_] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[HttpRequest[CalendarList_]]
+          inline def list(parameters: CalendarListListParameters): HttpRequest[CalendarList_] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[CalendarList_]]
         }
         
         @JSGlobal("gapi.client.calendar.calendars")
@@ -157,14 +150,11 @@ object global {
           @js.native
           val ^ : js.Any = js.native
           
-          @scala.inline
-          def delete(parameters: CalendarsDeleteParameters): HttpRequest[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[Unit]]
+          inline def delete(parameters: CalendarsDeleteParameters): HttpRequest[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[Unit]]
           
-          @scala.inline
-          def insert(parameters: CalendarsInsertParameters): HttpRequest[Calendar] = ^.asInstanceOf[js.Dynamic].applyDynamic("insert")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[Calendar]]
+          inline def insert(parameters: CalendarsInsertParameters): HttpRequest[Calendar] = ^.asInstanceOf[js.Dynamic].applyDynamic("insert")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[Calendar]]
           
-          @scala.inline
-          def update(parameters: CalendarsUpdateParameters): HttpRequest[Calendar] = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[Calendar]]
+          inline def update(parameters: CalendarsUpdateParameters): HttpRequest[Calendar] = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[Calendar]]
         }
         
         @JSGlobal("gapi.client.calendar.events")
@@ -180,20 +170,15 @@ object global {
           val ^ : js.Any = js.native
           
           // delete the existing event from calendar
-          @scala.inline
-          def delete(parameters: EventsDeleteParameters): HttpRequest[typings.gapiCalendar.gapi.client.calendar.Event] = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[typings.gapiCalendar.gapi.client.calendar.Event]]
+          inline def delete(parameters: EventsDeleteParameters): HttpRequest[typings.gapiCalendar.gapi.client.calendar.Event] = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[typings.gapiCalendar.gapi.client.calendar.Event]]
           
-          @scala.inline
-          def get(parameters: EventsGetParameters): HttpRequest[typings.gapiCalendar.gapi.client.calendar.Event] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[typings.gapiCalendar.gapi.client.calendar.Event]]
+          inline def get(parameters: EventsGetParameters): HttpRequest[typings.gapiCalendar.gapi.client.calendar.Event] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[typings.gapiCalendar.gapi.client.calendar.Event]]
           
-          @scala.inline
-          def insert(parameters: EventsInsertParameters): HttpRequest[typings.gapiCalendar.gapi.client.calendar.Event] = ^.asInstanceOf[js.Dynamic].applyDynamic("insert")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[typings.gapiCalendar.gapi.client.calendar.Event]]
+          inline def insert(parameters: EventsInsertParameters): HttpRequest[typings.gapiCalendar.gapi.client.calendar.Event] = ^.asInstanceOf[js.Dynamic].applyDynamic("insert")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[typings.gapiCalendar.gapi.client.calendar.Event]]
           
-          @scala.inline
-          def list(parameters: EventsListParameters): HttpRequest[Events_] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[Events_]]
+          inline def list(parameters: EventsListParameters): HttpRequest[Events_] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[Events_]]
           
-          @scala.inline
-          def update(parameters: EventsUpdateParameters): HttpRequest[typings.gapiCalendar.gapi.client.calendar.Event] = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[typings.gapiCalendar.gapi.client.calendar.Event]]
+          inline def update(parameters: EventsUpdateParameters): HttpRequest[typings.gapiCalendar.gapi.client.calendar.Event] = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[typings.gapiCalendar.gapi.client.calendar.Event]]
         }
         
         @JSGlobal("gapi.client.calendar.freebusy")
@@ -208,8 +193,7 @@ object global {
           @js.native
           val ^ : js.Any = js.native
           
-          @scala.inline
-          def query(parameters: FreeBusyQueryParameters): HttpRequest[FreeBusy_] = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[FreeBusy_]]
+          inline def query(parameters: FreeBusyQueryParameters): HttpRequest[FreeBusy_] = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[FreeBusy_]]
         }
       }
     }

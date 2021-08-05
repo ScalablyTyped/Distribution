@@ -13,72 +13,61 @@ object amapJsApiGeolocationStrings {
   sealed trait LB
     extends StObject
        with ButtonPosition
-  @scala.inline
-  def LB: LB = "LB".asInstanceOf[LB]
+  inline def LB: LB = "LB".asInstanceOf[LB]
   
   @js.native
   sealed trait LT
     extends StObject
        with ButtonPosition
-  @scala.inline
-  def LT: LT = "LT".asInstanceOf[LT]
+  inline def LT: LT = "LT".asInstanceOf[LT]
   
   @js.native
   sealed trait RB
     extends StObject
        with ButtonPosition
-  @scala.inline
-  def RB: RB = "RB".asInstanceOf[RB]
+  inline def RB: RB = "RB".asInstanceOf[RB]
   
   @js.native
   sealed trait RT
     extends StObject
        with ButtonPosition
-  @scala.inline
-  def RT: RT = "RT".asInstanceOf[RT]
+  inline def RT: RT = "RT".asInstanceOf[RT]
   
   @js.native
   sealed trait all extends StObject
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
   sealed trait base extends StObject
-  @scala.inline
-  def base: base = "base".asInstanceOf[base]
+  inline def base: base = "base".asInstanceOf[base]
   
   @js.native
   sealed trait complete
     extends StObject
        with SearchStatus
-  @scala.inline
-  def complete: complete = "complete".asInstanceOf[complete]
+  inline def complete: complete = "complete".asInstanceOf[complete]
   
   @js.native
   sealed trait error
     extends StObject
        with SearchStatus
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait html5
     extends StObject
        with LocationType
-  @scala.inline
-  def html5: html5 = "html5".asInstanceOf[html5]
+  inline def html5: html5 = "html5".asInstanceOf[html5]
   
   @js.native
   sealed trait ip
     extends StObject
        with LocationType
-  @scala.inline
-  def ip: ip = "ip".asInstanceOf[ip]
+  inline def ip: ip = "ip".asInstanceOf[ip]
   
   @js.native
   sealed trait sdk
     extends StObject
        with LocationType
-  @scala.inline
-  def sdk: sdk = "sdk".asInstanceOf[sdk]
+  inline def sdk: sdk = "sdk".asInstanceOf[sdk]
 }

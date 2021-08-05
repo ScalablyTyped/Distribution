@@ -36,17 +36,14 @@ object colorIndicatorMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(colorValue: String): Props = {
+      inline def apply(colorValue: String): Props = {
         val __obj = js.Dynamic.literal(colorValue = colorValue.asInstanceOf[js.Any])
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setColorValue(value: String): Self = StObject.set(x, "colorValue", value.asInstanceOf[js.Any])
+        inline def setColorValue(value: String): Self = StObject.set(x, "colorValue", value.asInstanceOf[js.Any])
       }
     }
   }

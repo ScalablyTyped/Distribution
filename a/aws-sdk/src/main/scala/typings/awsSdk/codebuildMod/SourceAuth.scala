@@ -18,23 +18,18 @@ trait SourceAuth extends StObject {
 }
 object SourceAuth {
   
-  @scala.inline
-  def apply(`type`: SourceAuthType): SourceAuth = {
+  inline def apply(`type`: SourceAuthType): SourceAuth = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceAuth]
   }
   
-  @scala.inline
-  implicit class SourceAuthMutableBuilder[Self <: SourceAuth] (val x: Self) extends AnyVal {
+  extension [Self <: SourceAuth](x: Self) {
     
-    @scala.inline
-    def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
-    @scala.inline
-    def setType(value: SourceAuthType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: SourceAuthType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

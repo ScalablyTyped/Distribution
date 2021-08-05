@@ -23,37 +23,27 @@ trait ComplianceDetails extends StObject {
 }
 object ComplianceDetails {
   
-  @scala.inline
-  def apply(): ComplianceDetails = {
+  inline def apply(): ComplianceDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ComplianceDetails]
   }
   
-  @scala.inline
-  implicit class ComplianceDetailsMutableBuilder[Self <: ComplianceDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ComplianceDetails](x: Self) {
     
-    @scala.inline
-    def setComplianceStatus(value: ComplianceStatus): Self = StObject.set(x, "ComplianceStatus", value.asInstanceOf[js.Any])
+    inline def setComplianceStatus(value: ComplianceStatus): Self = StObject.set(x, "ComplianceStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComplianceStatusUndefined: Self = StObject.set(x, "ComplianceStatus", js.undefined)
+    inline def setComplianceStatusUndefined: Self = StObject.set(x, "ComplianceStatus", js.undefined)
     
-    @scala.inline
-    def setKeysWithNoncompliantValues(value: TagKeyList): Self = StObject.set(x, "KeysWithNoncompliantValues", value.asInstanceOf[js.Any])
+    inline def setKeysWithNoncompliantValues(value: TagKeyList): Self = StObject.set(x, "KeysWithNoncompliantValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeysWithNoncompliantValuesUndefined: Self = StObject.set(x, "KeysWithNoncompliantValues", js.undefined)
+    inline def setKeysWithNoncompliantValuesUndefined: Self = StObject.set(x, "KeysWithNoncompliantValues", js.undefined)
     
-    @scala.inline
-    def setKeysWithNoncompliantValuesVarargs(value: TagKey*): Self = StObject.set(x, "KeysWithNoncompliantValues", js.Array(value :_*))
+    inline def setKeysWithNoncompliantValuesVarargs(value: TagKey*): Self = StObject.set(x, "KeysWithNoncompliantValues", js.Array(value :_*))
     
-    @scala.inline
-    def setNoncompliantKeys(value: TagKeyList): Self = StObject.set(x, "NoncompliantKeys", value.asInstanceOf[js.Any])
+    inline def setNoncompliantKeys(value: TagKeyList): Self = StObject.set(x, "NoncompliantKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoncompliantKeysUndefined: Self = StObject.set(x, "NoncompliantKeys", js.undefined)
+    inline def setNoncompliantKeysUndefined: Self = StObject.set(x, "NoncompliantKeys", js.undefined)
     
-    @scala.inline
-    def setNoncompliantKeysVarargs(value: TagKey*): Self = StObject.set(x, "NoncompliantKeys", js.Array(value :_*))
+    inline def setNoncompliantKeysVarargs(value: TagKey*): Self = StObject.set(x, "NoncompliantKeys", js.Array(value :_*))
   }
 }

@@ -45,8 +45,7 @@ trait Hash extends StObject {
 }
 object Hash {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     hmac: (/* hash */ BlockHash[js.Any], /* key */ js.Any, /* enc */ js.UndefOr[hex]) => Hmac,
     ripemd: RipemdSet,
     ripemd160: () => Ripemd160,
@@ -62,37 +61,26 @@ object Hash {
     __obj.asInstanceOf[Hash]
   }
   
-  @scala.inline
-  implicit class HashMutableBuilder[Self <: Hash] (val x: Self) extends AnyVal {
+  extension [Self <: Hash](x: Self) {
     
-    @scala.inline
-    def setHmac(value: (/* hash */ BlockHash[js.Any], /* key */ js.Any, /* enc */ js.UndefOr[hex]) => Hmac): Self = StObject.set(x, "hmac", js.Any.fromFunction3(value))
+    inline def setHmac(value: (/* hash */ BlockHash[js.Any], /* key */ js.Any, /* enc */ js.UndefOr[hex]) => Hmac): Self = StObject.set(x, "hmac", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRipemd(value: RipemdSet): Self = StObject.set(x, "ripemd", value.asInstanceOf[js.Any])
+    inline def setRipemd(value: RipemdSet): Self = StObject.set(x, "ripemd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRipemd160(value: () => Ripemd160): Self = StObject.set(x, "ripemd160", js.Any.fromFunction0(value))
+    inline def setRipemd160(value: () => Ripemd160): Self = StObject.set(x, "ripemd160", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSha(value: ShaSet): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
+    inline def setSha(value: ShaSet): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha1(value: () => Sha1): Self = StObject.set(x, "sha1", js.Any.fromFunction0(value))
+    inline def setSha1(value: () => Sha1): Self = StObject.set(x, "sha1", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSha224(value: () => Sha224): Self = StObject.set(x, "sha224", js.Any.fromFunction0(value))
+    inline def setSha224(value: () => Sha224): Self = StObject.set(x, "sha224", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSha256(value: () => Sha256): Self = StObject.set(x, "sha256", js.Any.fromFunction0(value))
+    inline def setSha256(value: () => Sha256): Self = StObject.set(x, "sha256", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSha384(value: () => Sha384): Self = StObject.set(x, "sha384", js.Any.fromFunction0(value))
+    inline def setSha384(value: () => Sha384): Self = StObject.set(x, "sha384", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSha512(value: () => Sha512): Self = StObject.set(x, "sha512", js.Any.fromFunction0(value))
+    inline def setSha512(value: () => Sha512): Self = StObject.set(x, "sha512", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUtils(value: Utils): Self = StObject.set(x, "utils", value.asInstanceOf[js.Any])
+    inline def setUtils(value: Utils): Self = StObject.set(x, "utils", value.asInstanceOf[js.Any])
   }
 }

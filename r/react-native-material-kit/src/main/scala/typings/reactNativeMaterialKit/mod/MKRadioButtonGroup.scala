@@ -10,19 +10,15 @@ trait MKRadioButtonGroup extends StObject {
 }
 object MKRadioButtonGroup {
   
-  @scala.inline
-  def apply(buttons: js.Array[js.Any]): MKRadioButtonGroup = {
+  inline def apply(buttons: js.Array[js.Any]): MKRadioButtonGroup = {
     val __obj = js.Dynamic.literal(buttons = buttons.asInstanceOf[js.Any])
     __obj.asInstanceOf[MKRadioButtonGroup]
   }
   
-  @scala.inline
-  implicit class MKRadioButtonGroupMutableBuilder[Self <: MKRadioButtonGroup] (val x: Self) extends AnyVal {
+  extension [Self <: MKRadioButtonGroup](x: Self) {
     
-    @scala.inline
-    def setButtons(value: js.Array[js.Any]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: js.Array[js.Any]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonsVarargs(value: js.Any*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: js.Any*): Self = StObject.set(x, "buttons", js.Array(value :_*))
   }
 }

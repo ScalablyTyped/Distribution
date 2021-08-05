@@ -24,29 +24,22 @@ trait LeafletEvent
 }
 object LeafletEvent {
   
-  @scala.inline
-  def apply(layer: js.Any, propagatedFrom: js.Any, sourceTarget: js.Any, target: js.Any, `type`: String): LeafletEvent = {
+  inline def apply(layer: js.Any, propagatedFrom: js.Any, sourceTarget: js.Any, target: js.Any, `type`: String): LeafletEvent = {
     val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LeafletEvent]
   }
   
-  @scala.inline
-  implicit class LeafletEventMutableBuilder[Self <: LeafletEvent] (val x: Self) extends AnyVal {
+  extension [Self <: LeafletEvent](x: Self) {
     
-    @scala.inline
-    def setLayer(value: js.Any): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: js.Any): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropagatedFrom(value: js.Any): Self = StObject.set(x, "propagatedFrom", value.asInstanceOf[js.Any])
+    inline def setPropagatedFrom(value: js.Any): Self = StObject.set(x, "propagatedFrom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceTarget(value: js.Any): Self = StObject.set(x, "sourceTarget", value.asInstanceOf[js.Any])
+    inline def setSourceTarget(value: js.Any): Self = StObject.set(x, "sourceTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

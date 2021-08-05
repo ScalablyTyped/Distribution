@@ -12,20 +12,16 @@ object anon {
   }
   object ChildrenKeyName {
     
-    @scala.inline
-    def apply(): ChildrenKeyName = {
+    inline def apply(): ChildrenKeyName = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ChildrenKeyName]
     }
     
-    @scala.inline
-    implicit class ChildrenKeyNameMutableBuilder[Self <: ChildrenKeyName] (val x: Self) extends AnyVal {
+    extension [Self <: ChildrenKeyName](x: Self) {
       
-      @scala.inline
-      def setChildrenKeyName(value: String): Self = StObject.set(x, "childrenKeyName", value.asInstanceOf[js.Any])
+      inline def setChildrenKeyName(value: String): Self = StObject.set(x, "childrenKeyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenKeyNameUndefined: Self = StObject.set(x, "childrenKeyName", js.undefined)
+      inline def setChildrenKeyNameUndefined: Self = StObject.set(x, "childrenKeyName", js.undefined)
     }
   }
 }

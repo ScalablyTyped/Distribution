@@ -12,16 +12,13 @@ trait Dst extends StObject {
 }
 object Dst {
   
-  @scala.inline
-  def apply(dst: Terminal | ScreenBuffer): Dst = {
+  inline def apply(dst: Terminal | ScreenBuffer): Dst = {
     val __obj = js.Dynamic.literal(dst = dst.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dst]
   }
   
-  @scala.inline
-  implicit class DstMutableBuilder[Self <: Dst] (val x: Self) extends AnyVal {
+  extension [Self <: Dst](x: Self) {
     
-    @scala.inline
-    def setDst(value: Terminal | ScreenBuffer): Self = StObject.set(x, "dst", value.asInstanceOf[js.Any])
+    inline def setDst(value: Terminal | ScreenBuffer): Self = StObject.set(x, "dst", value.asInstanceOf[js.Any])
   }
 }

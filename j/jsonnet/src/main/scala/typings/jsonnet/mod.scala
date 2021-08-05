@@ -32,23 +32,18 @@ object mod {
   }
   object Jsonnet {
     
-    @scala.inline
-    def apply(destroy: () => Unit, eval: String => js.Any, evalFile: () => js.Any): Jsonnet = {
+    inline def apply(destroy: () => Unit, eval: String => js.Any, evalFile: () => js.Any): Jsonnet = {
       val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), eval = js.Any.fromFunction1(eval), evalFile = js.Any.fromFunction0(evalFile))
       __obj.asInstanceOf[Jsonnet]
     }
     
-    @scala.inline
-    implicit class JsonnetMutableBuilder[Self <: Jsonnet] (val x: Self) extends AnyVal {
+    extension [Self <: Jsonnet](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEval(value: String => js.Any): Self = StObject.set(x, "eval", js.Any.fromFunction1(value))
+      inline def setEval(value: String => js.Any): Self = StObject.set(x, "eval", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEvalFile(value: () => js.Any): Self = StObject.set(x, "evalFile", js.Any.fromFunction0(value))
+      inline def setEvalFile(value: () => js.Any): Self = StObject.set(x, "evalFile", js.Any.fromFunction0(value))
     }
   }
 }

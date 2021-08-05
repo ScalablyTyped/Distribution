@@ -12,19 +12,15 @@ trait WhiskerSeriesProps
 }
 object WhiskerSeriesProps {
   
-  @scala.inline
-  def apply(): WhiskerSeriesProps = {
+  inline def apply(): WhiskerSeriesProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WhiskerSeriesProps]
   }
   
-  @scala.inline
-  implicit class WhiskerSeriesPropsMutableBuilder[Self <: WhiskerSeriesProps] (val x: Self) extends AnyVal {
+  extension [Self <: WhiskerSeriesProps](x: Self) {
     
-    @scala.inline
-    def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+    inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
+    inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
   }
 }

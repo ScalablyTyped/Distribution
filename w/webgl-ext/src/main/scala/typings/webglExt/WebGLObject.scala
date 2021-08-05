@@ -11,16 +11,13 @@ trait WebGLObject extends StObject {
 }
 object WebGLObject {
   
-  @scala.inline
-  def apply(__WebGLObject: Unit): WebGLObject = {
+  inline def apply(__WebGLObject: Unit): WebGLObject = {
     val __obj = js.Dynamic.literal(__WebGLObject = __WebGLObject.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebGLObject]
   }
   
-  @scala.inline
-  implicit class WebGLObjectMutableBuilder[Self <: WebGLObject] (val x: Self) extends AnyVal {
+  extension [Self <: WebGLObject](x: Self) {
     
-    @scala.inline
-    def set__WebGLObject(value: Unit): Self = StObject.set(x, "__WebGLObject", value.asInstanceOf[js.Any])
+    inline def set__WebGLObject(value: Unit): Self = StObject.set(x, "__WebGLObject", value.asInstanceOf[js.Any])
   }
 }

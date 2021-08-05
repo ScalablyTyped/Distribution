@@ -20,8 +20,7 @@ trait GetBackgroundColor extends StObject {
 }
 object GetBackgroundColor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getBackgroundColor: () => String,
     getBorderColor: () => String,
     getBorderRadius: () => String,
@@ -33,25 +32,18 @@ object GetBackgroundColor {
     __obj.asInstanceOf[GetBackgroundColor]
   }
   
-  @scala.inline
-  implicit class GetBackgroundColorMutableBuilder[Self <: GetBackgroundColor] (val x: Self) extends AnyVal {
+  extension [Self <: GetBackgroundColor](x: Self) {
     
-    @scala.inline
-    def setGetBackgroundColor(value: () => String): Self = StObject.set(x, "getBackgroundColor", js.Any.fromFunction0(value))
+    inline def setGetBackgroundColor(value: () => String): Self = StObject.set(x, "getBackgroundColor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetBorderColor(value: () => String): Self = StObject.set(x, "getBorderColor", js.Any.fromFunction0(value))
+    inline def setGetBorderColor(value: () => String): Self = StObject.set(x, "getBorderColor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetBorderRadius(value: () => String): Self = StObject.set(x, "getBorderRadius", js.Any.fromFunction0(value))
+    inline def setGetBorderRadius(value: () => String): Self = StObject.set(x, "getBorderRadius", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetBorderStyle(value: () => String): Self = StObject.set(x, "getBorderStyle", js.Any.fromFunction0(value))
+    inline def setGetBorderStyle(value: () => String): Self = StObject.set(x, "getBorderStyle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetBorderWidth(value: () => String): Self = StObject.set(x, "getBorderWidth", js.Any.fromFunction0(value))
+    inline def setGetBorderWidth(value: () => String): Self = StObject.set(x, "getBorderWidth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetContentPadding(value: () => String): Self = StObject.set(x, "getContentPadding", js.Any.fromFunction0(value))
+    inline def setGetContentPadding(value: () => String): Self = StObject.set(x, "getContentPadding", js.Any.fromFunction0(value))
   }
 }

@@ -14,25 +14,19 @@ trait RestoreInfo extends StObject {
 }
 object RestoreInfo {
   
-  @scala.inline
-  def apply(): RestoreInfo = {
+  inline def apply(): RestoreInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RestoreInfo]
   }
   
-  @scala.inline
-  implicit class RestoreInfoMutableBuilder[Self <: RestoreInfo] (val x: Self) extends AnyVal {
+  extension [Self <: RestoreInfo](x: Self) {
     
-    @scala.inline
-    def setBackupInfo(value: BackupInfo): Self = StObject.set(x, "backupInfo", value.asInstanceOf[js.Any])
+    inline def setBackupInfo(value: BackupInfo): Self = StObject.set(x, "backupInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupInfoUndefined: Self = StObject.set(x, "backupInfo", js.undefined)
+    inline def setBackupInfoUndefined: Self = StObject.set(x, "backupInfo", js.undefined)
     
-    @scala.inline
-    def setSourceType(value: String): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
+    inline def setSourceType(value: String): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
+    inline def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
   }
 }

@@ -13,22 +13,17 @@ trait TestAuthorizationResponse extends StObject {
 }
 object TestAuthorizationResponse {
   
-  @scala.inline
-  def apply(): TestAuthorizationResponse = {
+  inline def apply(): TestAuthorizationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TestAuthorizationResponse]
   }
   
-  @scala.inline
-  implicit class TestAuthorizationResponseMutableBuilder[Self <: TestAuthorizationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: TestAuthorizationResponse](x: Self) {
     
-    @scala.inline
-    def setAuthResults(value: AuthResults): Self = StObject.set(x, "authResults", value.asInstanceOf[js.Any])
+    inline def setAuthResults(value: AuthResults): Self = StObject.set(x, "authResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthResultsUndefined: Self = StObject.set(x, "authResults", js.undefined)
+    inline def setAuthResultsUndefined: Self = StObject.set(x, "authResults", js.undefined)
     
-    @scala.inline
-    def setAuthResultsVarargs(value: AuthResult*): Self = StObject.set(x, "authResults", js.Array(value :_*))
+    inline def setAuthResultsVarargs(value: AuthResult*): Self = StObject.set(x, "authResults", js.Array(value :_*))
   }
 }

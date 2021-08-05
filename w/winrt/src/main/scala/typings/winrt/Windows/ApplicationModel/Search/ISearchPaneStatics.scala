@@ -10,16 +10,13 @@ trait ISearchPaneStatics extends StObject {
 }
 object ISearchPaneStatics {
   
-  @scala.inline
-  def apply(getForCurrentView: () => SearchPane): ISearchPaneStatics = {
+  inline def apply(getForCurrentView: () => SearchPane): ISearchPaneStatics = {
     val __obj = js.Dynamic.literal(getForCurrentView = js.Any.fromFunction0(getForCurrentView))
     __obj.asInstanceOf[ISearchPaneStatics]
   }
   
-  @scala.inline
-  implicit class ISearchPaneStaticsMutableBuilder[Self <: ISearchPaneStatics] (val x: Self) extends AnyVal {
+  extension [Self <: ISearchPaneStatics](x: Self) {
     
-    @scala.inline
-    def setGetForCurrentView(value: () => SearchPane): Self = StObject.set(x, "getForCurrentView", js.Any.fromFunction0(value))
+    inline def setGetForCurrentView(value: () => SearchPane): Self = StObject.set(x, "getForCurrentView", js.Any.fromFunction0(value))
   }
 }

@@ -13,22 +13,17 @@ trait ListAccessControlRulesResponse extends StObject {
 }
 object ListAccessControlRulesResponse {
   
-  @scala.inline
-  def apply(): ListAccessControlRulesResponse = {
+  inline def apply(): ListAccessControlRulesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListAccessControlRulesResponse]
   }
   
-  @scala.inline
-  implicit class ListAccessControlRulesResponseMutableBuilder[Self <: ListAccessControlRulesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListAccessControlRulesResponse](x: Self) {
     
-    @scala.inline
-    def setRules(value: AccessControlRulesList): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: AccessControlRulesList): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesUndefined: Self = StObject.set(x, "Rules", js.undefined)
+    inline def setRulesUndefined: Self = StObject.set(x, "Rules", js.undefined)
     
-    @scala.inline
-    def setRulesVarargs(value: AccessControlRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: AccessControlRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
   }
 }

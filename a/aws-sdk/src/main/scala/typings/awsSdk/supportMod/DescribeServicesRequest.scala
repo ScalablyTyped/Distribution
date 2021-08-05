@@ -18,28 +18,21 @@ trait DescribeServicesRequest extends StObject {
 }
 object DescribeServicesRequest {
   
-  @scala.inline
-  def apply(): DescribeServicesRequest = {
+  inline def apply(): DescribeServicesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeServicesRequest]
   }
   
-  @scala.inline
-  implicit class DescribeServicesRequestMutableBuilder[Self <: DescribeServicesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeServicesRequest](x: Self) {
     
-    @scala.inline
-    def setLanguage(value: Language): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: Language): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setServiceCodeList(value: ServiceCodeList): Self = StObject.set(x, "serviceCodeList", value.asInstanceOf[js.Any])
+    inline def setServiceCodeList(value: ServiceCodeList): Self = StObject.set(x, "serviceCodeList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceCodeListUndefined: Self = StObject.set(x, "serviceCodeList", js.undefined)
+    inline def setServiceCodeListUndefined: Self = StObject.set(x, "serviceCodeList", js.undefined)
     
-    @scala.inline
-    def setServiceCodeListVarargs(value: ServiceCode*): Self = StObject.set(x, "serviceCodeList", js.Array(value :_*))
+    inline def setServiceCodeListVarargs(value: ServiceCode*): Self = StObject.set(x, "serviceCodeList", js.Array(value :_*))
   }
 }

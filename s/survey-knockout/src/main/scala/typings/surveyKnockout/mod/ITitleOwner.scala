@@ -22,8 +22,7 @@ trait ITitleOwner extends StObject {
 }
 object ITitleOwner {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isRequireTextAfterTitle: Boolean,
     isRequireTextBeforeTitle: Boolean,
     isRequireTextOnStart: Boolean,
@@ -36,28 +35,20 @@ object ITitleOwner {
     __obj.asInstanceOf[ITitleOwner]
   }
   
-  @scala.inline
-  implicit class ITitleOwnerMutableBuilder[Self <: ITitleOwner] (val x: Self) extends AnyVal {
+  extension [Self <: ITitleOwner](x: Self) {
     
-    @scala.inline
-    def setIsRequireTextAfterTitle(value: Boolean): Self = StObject.set(x, "isRequireTextAfterTitle", value.asInstanceOf[js.Any])
+    inline def setIsRequireTextAfterTitle(value: Boolean): Self = StObject.set(x, "isRequireTextAfterTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRequireTextBeforeTitle(value: Boolean): Self = StObject.set(x, "isRequireTextBeforeTitle", value.asInstanceOf[js.Any])
+    inline def setIsRequireTextBeforeTitle(value: Boolean): Self = StObject.set(x, "isRequireTextBeforeTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRequireTextOnStart(value: Boolean): Self = StObject.set(x, "isRequireTextOnStart", value.asInstanceOf[js.Any])
+    inline def setIsRequireTextOnStart(value: Boolean): Self = StObject.set(x, "isRequireTextOnStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocTitle(value: LocalizableString): Self = StObject.set(x, "locTitle", value.asInstanceOf[js.Any])
+    inline def setLocTitle(value: LocalizableString): Self = StObject.set(x, "locTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNo(value: String): Self = StObject.set(x, "no", value.asInstanceOf[js.Any])
+    inline def setNo(value: String): Self = StObject.set(x, "no", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredText(value: String): Self = StObject.set(x, "requiredText", value.asInstanceOf[js.Any])
+    inline def setRequiredText(value: String): Self = StObject.set(x, "requiredText", value.asInstanceOf[js.Any])
   }
 }

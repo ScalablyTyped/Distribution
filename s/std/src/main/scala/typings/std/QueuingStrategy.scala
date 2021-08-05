@@ -12,25 +12,19 @@ trait QueuingStrategy[T] extends StObject {
 }
 object QueuingStrategy {
   
-  @scala.inline
-  def apply[T](): QueuingStrategy[T] = {
+  inline def apply[T](): QueuingStrategy[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueuingStrategy[T]]
   }
   
-  @scala.inline
-  implicit class QueuingStrategyMutableBuilder[Self <: QueuingStrategy[?], T] (val x: Self & QueuingStrategy[T]) extends AnyVal {
+  extension [Self <: QueuingStrategy[?], T](x: Self & QueuingStrategy[T]) {
     
-    @scala.inline
-    def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
+    inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
+    inline def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
     
-    @scala.inline
-    def setSize(value: T => Double): Self = StObject.set(x, "size", js.Any.fromFunction1(value))
+    inline def setSize(value: T => Double): Self = StObject.set(x, "size", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

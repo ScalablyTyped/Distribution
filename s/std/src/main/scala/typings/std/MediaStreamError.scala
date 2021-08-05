@@ -14,28 +14,21 @@ trait MediaStreamError extends StObject {
 }
 object MediaStreamError {
   
-  @scala.inline
-  def apply(name: java.lang.String): MediaStreamError = {
+  inline def apply(name: java.lang.String): MediaStreamError = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], constraintName = null, message = null)
     __obj.asInstanceOf[MediaStreamError]
   }
   
-  @scala.inline
-  implicit class MediaStreamErrorMutableBuilder[Self <: MediaStreamError] (val x: Self) extends AnyVal {
+  extension [Self <: MediaStreamError](x: Self) {
     
-    @scala.inline
-    def setConstraintName(value: java.lang.String): Self = StObject.set(x, "constraintName", value.asInstanceOf[js.Any])
+    inline def setConstraintName(value: java.lang.String): Self = StObject.set(x, "constraintName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstraintNameNull: Self = StObject.set(x, "constraintName", null)
+    inline def setConstraintNameNull: Self = StObject.set(x, "constraintName", null)
     
-    @scala.inline
-    def setMessage(value: java.lang.String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: java.lang.String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageNull: Self = StObject.set(x, "message", null)
+    inline def setMessageNull: Self = StObject.set(x, "message", null)
     
-    @scala.inline
-    def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

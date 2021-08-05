@@ -11,19 +11,15 @@ trait GoogleCloudMlV1SampledShapleyAttribution extends StObject {
 }
 object GoogleCloudMlV1SampledShapleyAttribution {
   
-  @scala.inline
-  def apply(): GoogleCloudMlV1SampledShapleyAttribution = {
+  inline def apply(): GoogleCloudMlV1SampledShapleyAttribution = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMlV1SampledShapleyAttribution]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMlV1SampledShapleyAttributionMutableBuilder[Self <: GoogleCloudMlV1SampledShapleyAttribution] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMlV1SampledShapleyAttribution](x: Self) {
     
-    @scala.inline
-    def setNumPaths(value: Double): Self = StObject.set(x, "numPaths", value.asInstanceOf[js.Any])
+    inline def setNumPaths(value: Double): Self = StObject.set(x, "numPaths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumPathsUndefined: Self = StObject.set(x, "numPaths", js.undefined)
+    inline def setNumPathsUndefined: Self = StObject.set(x, "numPaths", js.undefined)
   }
 }

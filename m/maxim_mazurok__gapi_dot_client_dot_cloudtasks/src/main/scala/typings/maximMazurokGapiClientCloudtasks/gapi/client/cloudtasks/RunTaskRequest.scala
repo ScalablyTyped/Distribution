@@ -15,19 +15,15 @@ trait RunTaskRequest extends StObject {
 }
 object RunTaskRequest {
   
-  @scala.inline
-  def apply(): RunTaskRequest = {
+  inline def apply(): RunTaskRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RunTaskRequest]
   }
   
-  @scala.inline
-  implicit class RunTaskRequestMutableBuilder[Self <: RunTaskRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RunTaskRequest](x: Self) {
     
-    @scala.inline
-    def setResponseView(value: String): Self = StObject.set(x, "responseView", value.asInstanceOf[js.Any])
+    inline def setResponseView(value: String): Self = StObject.set(x, "responseView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseViewUndefined: Self = StObject.set(x, "responseView", js.undefined)
+    inline def setResponseViewUndefined: Self = StObject.set(x, "responseView", js.undefined)
   }
 }

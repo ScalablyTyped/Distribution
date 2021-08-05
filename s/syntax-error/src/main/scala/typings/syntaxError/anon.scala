@@ -25,8 +25,7 @@ object anon {
   }
   object SyntaxErrorlinenumbercolu {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       annotated: String,
       column: Double,
       inspect: () => String,
@@ -38,32 +37,23 @@ object anon {
       __obj.asInstanceOf[SyntaxErrorlinenumbercolu]
     }
     
-    @scala.inline
-    implicit class SyntaxErrorlinenumbercoluMutableBuilder[Self <: SyntaxErrorlinenumbercolu] (val x: Self) extends AnyVal {
+    extension [Self <: SyntaxErrorlinenumbercolu](x: Self) {
       
-      @scala.inline
-      def setAnnotated(value: String): Self = StObject.set(x, "annotated", value.asInstanceOf[js.Any])
+      inline def setAnnotated(value: String): Self = StObject.set(x, "annotated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInspect(value: () => String): Self = StObject.set(x, "inspect", js.Any.fromFunction0(value))
+      inline def setInspect(value: () => String): Self = StObject.set(x, "inspect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+      inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     }
   }
 }

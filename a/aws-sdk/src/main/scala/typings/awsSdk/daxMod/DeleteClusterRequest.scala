@@ -13,16 +13,13 @@ trait DeleteClusterRequest extends StObject {
 }
 object DeleteClusterRequest {
   
-  @scala.inline
-  def apply(ClusterName: String): DeleteClusterRequest = {
+  inline def apply(ClusterName: String): DeleteClusterRequest = {
     val __obj = js.Dynamic.literal(ClusterName = ClusterName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteClusterRequest]
   }
   
-  @scala.inline
-  implicit class DeleteClusterRequestMutableBuilder[Self <: DeleteClusterRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteClusterRequest](x: Self) {
     
-    @scala.inline
-    def setClusterName(value: String): Self = StObject.set(x, "ClusterName", value.asInstanceOf[js.Any])
+    inline def setClusterName(value: String): Self = StObject.set(x, "ClusterName", value.asInstanceOf[js.Any])
   }
 }

@@ -643,8 +643,7 @@ object filesystemMod {
   }
   object FileFilter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       endCreated: Date,
       endModified: Date,
       isDirectory: Boolean,
@@ -657,29 +656,21 @@ object filesystemMod {
       __obj.asInstanceOf[FileFilter]
     }
     
-    @scala.inline
-    implicit class FileFilterMutableBuilder[Self <: FileFilter] (val x: Self) extends AnyVal {
+    extension [Self <: FileFilter](x: Self) {
       
-      @scala.inline
-      def setEndCreated(value: Date): Self = StObject.set(x, "endCreated", value.asInstanceOf[js.Any])
+      inline def setEndCreated(value: Date): Self = StObject.set(x, "endCreated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndModified(value: Date): Self = StObject.set(x, "endModified", value.asInstanceOf[js.Any])
+      inline def setEndModified(value: Date): Self = StObject.set(x, "endModified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDirectory(value: Boolean): Self = StObject.set(x, "isDirectory", value.asInstanceOf[js.Any])
+      inline def setIsDirectory(value: Boolean): Self = StObject.set(x, "isDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFile(value: Boolean): Self = StObject.set(x, "isFile", value.asInstanceOf[js.Any])
+      inline def setIsFile(value: Boolean): Self = StObject.set(x, "isFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartCreated(value: Date): Self = StObject.set(x, "startCreated", value.asInstanceOf[js.Any])
+      inline def setStartCreated(value: Date): Self = StObject.set(x, "startCreated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartModified(value: Date): Self = StObject.set(x, "startModified", value.asInstanceOf[js.Any])
+      inline def setStartModified(value: Date): Self = StObject.set(x, "startModified", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1161,8 +1152,7 @@ object filesystemMod {
   }
   object FileStream {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bytesAvailable: Double,
       close: () => Unit,
       eof: Boolean,
@@ -1178,38 +1168,27 @@ object filesystemMod {
       __obj.asInstanceOf[FileStream]
     }
     
-    @scala.inline
-    implicit class FileStreamMutableBuilder[Self <: FileStream] (val x: Self) extends AnyVal {
+    extension [Self <: FileStream](x: Self) {
       
-      @scala.inline
-      def setBytesAvailable(value: Double): Self = StObject.set(x, "bytesAvailable", value.asInstanceOf[js.Any])
+      inline def setBytesAvailable(value: Double): Self = StObject.set(x, "bytesAvailable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEof(value: Boolean): Self = StObject.set(x, "eof", value.asInstanceOf[js.Any])
+      inline def setEof(value: Boolean): Self = StObject.set(x, "eof", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRead(value: Double => String): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
+      inline def setRead(value: Double => String): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReadBase64(value: Double => String): Self = StObject.set(x, "readBase64", js.Any.fromFunction1(value))
+      inline def setReadBase64(value: Double => String): Self = StObject.set(x, "readBase64", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReadBytes(value: Double => Uint8Array): Self = StObject.set(x, "readBytes", js.Any.fromFunction1(value))
+      inline def setReadBytes(value: Double => Uint8Array): Self = StObject.set(x, "readBytes", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWrite(value: String => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+      inline def setWrite(value: String => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWriteBase64(value: String => Unit): Self = StObject.set(x, "writeBase64", js.Any.fromFunction1(value))
+      inline def setWriteBase64(value: String => Unit): Self = StObject.set(x, "writeBase64", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWriteBytes(value: Uint8Array => Unit): Self = StObject.set(x, "writeBytes", js.Any.fromFunction1(value))
+      inline def setWriteBytes(value: Uint8Array => Unit): Self = StObject.set(x, "writeBytes", js.Any.fromFunction1(value))
     }
   }
   
@@ -1239,8 +1218,7 @@ object filesystemMod {
   }
   object FileSystemStorage {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       label: String,
       state: FileSystemStorageState | MOUNTED | REMOVED | UNMOUNTABLE,
       `type`: FileSystemStorageType | INTERNAL | EXTERNAL
@@ -1250,17 +1228,13 @@ object filesystemMod {
       __obj.asInstanceOf[FileSystemStorage]
     }
     
-    @scala.inline
-    implicit class FileSystemStorageMutableBuilder[Self <: FileSystemStorage] (val x: Self) extends AnyVal {
+    extension [Self <: FileSystemStorage](x: Self) {
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: FileSystemStorageState | MOUNTED | REMOVED | UNMOUNTABLE): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: FileSystemStorageState | MOUNTED | REMOVED | UNMOUNTABLE): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: FileSystemStorageType | INTERNAL | EXTERNAL): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: FileSystemStorageType | INTERNAL | EXTERNAL): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

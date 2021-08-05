@@ -15,19 +15,15 @@ trait Band
 }
 object Band {
   
-  @scala.inline
-  def apply(band: Boolean | Double, scale: typings.vegaTypings.encodeMod.Field): Band = {
+  inline def apply(band: Boolean | Double, scale: typings.vegaTypings.encodeMod.Field): Band = {
     val __obj = js.Dynamic.literal(band = band.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any])
     __obj.asInstanceOf[Band]
   }
   
-  @scala.inline
-  implicit class BandMutableBuilder[Self <: Band] (val x: Self) extends AnyVal {
+  extension [Self <: Band](x: Self) {
     
-    @scala.inline
-    def setBand(value: Boolean | Double): Self = StObject.set(x, "band", value.asInstanceOf[js.Any])
+    inline def setBand(value: Boolean | Double): Self = StObject.set(x, "band", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScale(value: typings.vegaTypings.encodeMod.Field): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: typings.vegaTypings.encodeMod.Field): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
   }
 }

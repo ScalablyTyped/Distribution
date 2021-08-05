@@ -17,8 +17,7 @@ trait TokenResponse
 }
 object TokenResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accessToken: String,
     expiresIn: Double,
     expiresOn: Date | String,
@@ -29,13 +28,10 @@ object TokenResponse {
     __obj.asInstanceOf[TokenResponse]
   }
   
-  @scala.inline
-  implicit class TokenResponseMutableBuilder[Self <: TokenResponse] (val x: Self) extends AnyVal {
+  extension [Self <: TokenResponse](x: Self) {
     
-    @scala.inline
-    def setNotBefore(value: Double): Self = StObject.set(x, "notBefore", value.asInstanceOf[js.Any])
+    inline def setNotBefore(value: Double): Self = StObject.set(x, "notBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotBeforeUndefined: Self = StObject.set(x, "notBefore", js.undefined)
+    inline def setNotBeforeUndefined: Self = StObject.set(x, "notBefore", js.undefined)
   }
 }

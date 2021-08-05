@@ -36,32 +36,24 @@ object gapi {
       }
       object GoogleCloudPolicytroubleshooterV1AccessTuple {
         
-        @scala.inline
-        def apply(): GoogleCloudPolicytroubleshooterV1AccessTuple = {
+        inline def apply(): GoogleCloudPolicytroubleshooterV1AccessTuple = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GoogleCloudPolicytroubleshooterV1AccessTuple]
         }
         
-        @scala.inline
-        implicit class GoogleCloudPolicytroubleshooterV1AccessTupleMutableBuilder[Self <: GoogleCloudPolicytroubleshooterV1AccessTuple] (val x: Self) extends AnyVal {
+        extension [Self <: GoogleCloudPolicytroubleshooterV1AccessTuple](x: Self) {
           
-          @scala.inline
-          def setFullResourceName(value: String): Self = StObject.set(x, "fullResourceName", value.asInstanceOf[js.Any])
+          inline def setFullResourceName(value: String): Self = StObject.set(x, "fullResourceName", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setFullResourceNameUndefined: Self = StObject.set(x, "fullResourceName", js.undefined)
+          inline def setFullResourceNameUndefined: Self = StObject.set(x, "fullResourceName", js.undefined)
           
-          @scala.inline
-          def setPermission(value: String): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
+          inline def setPermission(value: String): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
+          inline def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
           
-          @scala.inline
-          def setPrincipal(value: String): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
+          inline def setPrincipal(value: String): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPrincipalUndefined: Self = StObject.set(x, "principal", js.undefined)
+          inline def setPrincipalUndefined: Self = StObject.set(x, "principal", js.undefined)
         }
       }
       
@@ -107,60 +99,44 @@ object gapi {
       }
       object GoogleCloudPolicytroubleshooterV1BindingExplanation {
         
-        @scala.inline
-        def apply(): GoogleCloudPolicytroubleshooterV1BindingExplanation = {
+        inline def apply(): GoogleCloudPolicytroubleshooterV1BindingExplanation = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GoogleCloudPolicytroubleshooterV1BindingExplanation]
         }
         
-        @scala.inline
-        implicit class GoogleCloudPolicytroubleshooterV1BindingExplanationMutableBuilder[Self <: GoogleCloudPolicytroubleshooterV1BindingExplanation] (val x: Self) extends AnyVal {
+        extension [Self <: GoogleCloudPolicytroubleshooterV1BindingExplanation](x: Self) {
           
-          @scala.inline
-          def setAccess(value: String): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
+          inline def setAccess(value: String): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
+          inline def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
           
-          @scala.inline
-          def setCondition(value: GoogleTypeExpr): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+          inline def setCondition(value: GoogleTypeExpr): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+          inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
           
-          @scala.inline
-          def setMemberships(
+          inline def setMemberships(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: @maxim_mazurok/gapi.client.policytroubleshooter.gapi.client.policytroubleshooter.GoogleCloudPolicytroubleshooterV1BindingExplanationAnnotatedMembership}
             */ typings.maximMazurokGapiClientPolicytroubleshooter.maximMazurokGapiClientPolicytroubleshooterStrings.GoogleCloudPolicytroubleshooterV1BindingExplanation & TopLevel[js.Any]
           ): Self = StObject.set(x, "memberships", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMembershipsUndefined: Self = StObject.set(x, "memberships", js.undefined)
+          inline def setMembershipsUndefined: Self = StObject.set(x, "memberships", js.undefined)
           
-          @scala.inline
-          def setRelevance(value: String): Self = StObject.set(x, "relevance", value.asInstanceOf[js.Any])
+          inline def setRelevance(value: String): Self = StObject.set(x, "relevance", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRelevanceUndefined: Self = StObject.set(x, "relevance", js.undefined)
+          inline def setRelevanceUndefined: Self = StObject.set(x, "relevance", js.undefined)
           
-          @scala.inline
-          def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+          inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRolePermission(value: String): Self = StObject.set(x, "rolePermission", value.asInstanceOf[js.Any])
+          inline def setRolePermission(value: String): Self = StObject.set(x, "rolePermission", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRolePermissionRelevance(value: String): Self = StObject.set(x, "rolePermissionRelevance", value.asInstanceOf[js.Any])
+          inline def setRolePermissionRelevance(value: String): Self = StObject.set(x, "rolePermissionRelevance", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRolePermissionRelevanceUndefined: Self = StObject.set(x, "rolePermissionRelevance", js.undefined)
+          inline def setRolePermissionRelevanceUndefined: Self = StObject.set(x, "rolePermissionRelevance", js.undefined)
           
-          @scala.inline
-          def setRolePermissionUndefined: Self = StObject.set(x, "rolePermission", js.undefined)
+          inline def setRolePermissionUndefined: Self = StObject.set(x, "rolePermission", js.undefined)
           
-          @scala.inline
-          def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+          inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
         }
       }
       
@@ -174,26 +150,20 @@ object gapi {
       }
       object GoogleCloudPolicytroubleshooterV1BindingExplanationAnnotatedMembership {
         
-        @scala.inline
-        def apply(): GoogleCloudPolicytroubleshooterV1BindingExplanationAnnotatedMembership = {
+        inline def apply(): GoogleCloudPolicytroubleshooterV1BindingExplanationAnnotatedMembership = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GoogleCloudPolicytroubleshooterV1BindingExplanationAnnotatedMembership]
         }
         
-        @scala.inline
-        implicit class GoogleCloudPolicytroubleshooterV1BindingExplanationAnnotatedMembershipMutableBuilder[Self <: GoogleCloudPolicytroubleshooterV1BindingExplanationAnnotatedMembership] (val x: Self) extends AnyVal {
+        extension [Self <: GoogleCloudPolicytroubleshooterV1BindingExplanationAnnotatedMembership](x: Self) {
           
-          @scala.inline
-          def setMembership(value: String): Self = StObject.set(x, "membership", value.asInstanceOf[js.Any])
+          inline def setMembership(value: String): Self = StObject.set(x, "membership", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMembershipUndefined: Self = StObject.set(x, "membership", js.undefined)
+          inline def setMembershipUndefined: Self = StObject.set(x, "membership", js.undefined)
           
-          @scala.inline
-          def setRelevance(value: String): Self = StObject.set(x, "relevance", value.asInstanceOf[js.Any])
+          inline def setRelevance(value: String): Self = StObject.set(x, "relevance", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRelevanceUndefined: Self = StObject.set(x, "relevance", js.undefined)
+          inline def setRelevanceUndefined: Self = StObject.set(x, "relevance", js.undefined)
         }
       }
       
@@ -230,47 +200,34 @@ object gapi {
       }
       object GoogleCloudPolicytroubleshooterV1ExplainedPolicy {
         
-        @scala.inline
-        def apply(): GoogleCloudPolicytroubleshooterV1ExplainedPolicy = {
+        inline def apply(): GoogleCloudPolicytroubleshooterV1ExplainedPolicy = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GoogleCloudPolicytroubleshooterV1ExplainedPolicy]
         }
         
-        @scala.inline
-        implicit class GoogleCloudPolicytroubleshooterV1ExplainedPolicyMutableBuilder[Self <: GoogleCloudPolicytroubleshooterV1ExplainedPolicy] (val x: Self) extends AnyVal {
+        extension [Self <: GoogleCloudPolicytroubleshooterV1ExplainedPolicy](x: Self) {
           
-          @scala.inline
-          def setAccess(value: String): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
+          inline def setAccess(value: String): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
+          inline def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
           
-          @scala.inline
-          def setBindingExplanations(value: js.Array[GoogleCloudPolicytroubleshooterV1BindingExplanation]): Self = StObject.set(x, "bindingExplanations", value.asInstanceOf[js.Any])
+          inline def setBindingExplanations(value: js.Array[GoogleCloudPolicytroubleshooterV1BindingExplanation]): Self = StObject.set(x, "bindingExplanations", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setBindingExplanationsUndefined: Self = StObject.set(x, "bindingExplanations", js.undefined)
+          inline def setBindingExplanationsUndefined: Self = StObject.set(x, "bindingExplanations", js.undefined)
           
-          @scala.inline
-          def setBindingExplanationsVarargs(value: GoogleCloudPolicytroubleshooterV1BindingExplanation*): Self = StObject.set(x, "bindingExplanations", js.Array(value :_*))
+          inline def setBindingExplanationsVarargs(value: GoogleCloudPolicytroubleshooterV1BindingExplanation*): Self = StObject.set(x, "bindingExplanations", js.Array(value :_*))
           
-          @scala.inline
-          def setFullResourceName(value: String): Self = StObject.set(x, "fullResourceName", value.asInstanceOf[js.Any])
+          inline def setFullResourceName(value: String): Self = StObject.set(x, "fullResourceName", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setFullResourceNameUndefined: Self = StObject.set(x, "fullResourceName", js.undefined)
+          inline def setFullResourceNameUndefined: Self = StObject.set(x, "fullResourceName", js.undefined)
           
-          @scala.inline
-          def setPolicy(value: GoogleIamV1Policy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+          inline def setPolicy(value: GoogleIamV1Policy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+          inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
           
-          @scala.inline
-          def setRelevance(value: String): Self = StObject.set(x, "relevance", value.asInstanceOf[js.Any])
+          inline def setRelevance(value: String): Self = StObject.set(x, "relevance", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRelevanceUndefined: Self = StObject.set(x, "relevance", js.undefined)
+          inline def setRelevanceUndefined: Self = StObject.set(x, "relevance", js.undefined)
         }
       }
       
@@ -281,20 +238,16 @@ object gapi {
       }
       object GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyRequest {
         
-        @scala.inline
-        def apply(): GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyRequest = {
+        inline def apply(): GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyRequest = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyRequest]
         }
         
-        @scala.inline
-        implicit class GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyRequestMutableBuilder[Self <: GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyRequest] (val x: Self) extends AnyVal {
+        extension [Self <: GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyRequest](x: Self) {
           
-          @scala.inline
-          def setAccessTuple(value: GoogleCloudPolicytroubleshooterV1AccessTuple): Self = StObject.set(x, "accessTuple", value.asInstanceOf[js.Any])
+          inline def setAccessTuple(value: GoogleCloudPolicytroubleshooterV1AccessTuple): Self = StObject.set(x, "accessTuple", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAccessTupleUndefined: Self = StObject.set(x, "accessTuple", js.undefined)
+          inline def setAccessTupleUndefined: Self = StObject.set(x, "accessTuple", js.undefined)
         }
       }
       
@@ -312,29 +265,22 @@ object gapi {
       }
       object GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyResponse {
         
-        @scala.inline
-        def apply(): GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyResponse = {
+        inline def apply(): GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyResponse = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyResponse]
         }
         
-        @scala.inline
-        implicit class GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyResponseMutableBuilder[Self <: GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyResponse] (val x: Self) extends AnyVal {
+        extension [Self <: GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyResponse](x: Self) {
           
-          @scala.inline
-          def setAccess(value: String): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
+          inline def setAccess(value: String): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
+          inline def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
           
-          @scala.inline
-          def setExplainedPolicies(value: js.Array[GoogleCloudPolicytroubleshooterV1ExplainedPolicy]): Self = StObject.set(x, "explainedPolicies", value.asInstanceOf[js.Any])
+          inline def setExplainedPolicies(value: js.Array[GoogleCloudPolicytroubleshooterV1ExplainedPolicy]): Self = StObject.set(x, "explainedPolicies", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setExplainedPoliciesUndefined: Self = StObject.set(x, "explainedPolicies", js.undefined)
+          inline def setExplainedPoliciesUndefined: Self = StObject.set(x, "explainedPolicies", js.undefined)
           
-          @scala.inline
-          def setExplainedPoliciesVarargs(value: GoogleCloudPolicytroubleshooterV1ExplainedPolicy*): Self = StObject.set(x, "explainedPolicies", js.Array(value :_*))
+          inline def setExplainedPoliciesVarargs(value: GoogleCloudPolicytroubleshooterV1ExplainedPolicy*): Self = StObject.set(x, "explainedPolicies", js.Array(value :_*))
         }
       }
       
@@ -351,29 +297,22 @@ object gapi {
       }
       object GoogleIamV1AuditConfig {
         
-        @scala.inline
-        def apply(): GoogleIamV1AuditConfig = {
+        inline def apply(): GoogleIamV1AuditConfig = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GoogleIamV1AuditConfig]
         }
         
-        @scala.inline
-        implicit class GoogleIamV1AuditConfigMutableBuilder[Self <: GoogleIamV1AuditConfig] (val x: Self) extends AnyVal {
+        extension [Self <: GoogleIamV1AuditConfig](x: Self) {
           
-          @scala.inline
-          def setAuditLogConfigs(value: js.Array[GoogleIamV1AuditLogConfig]): Self = StObject.set(x, "auditLogConfigs", value.asInstanceOf[js.Any])
+          inline def setAuditLogConfigs(value: js.Array[GoogleIamV1AuditLogConfig]): Self = StObject.set(x, "auditLogConfigs", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAuditLogConfigsUndefined: Self = StObject.set(x, "auditLogConfigs", js.undefined)
+          inline def setAuditLogConfigsUndefined: Self = StObject.set(x, "auditLogConfigs", js.undefined)
           
-          @scala.inline
-          def setAuditLogConfigsVarargs(value: GoogleIamV1AuditLogConfig*): Self = StObject.set(x, "auditLogConfigs", js.Array(value :_*))
+          inline def setAuditLogConfigsVarargs(value: GoogleIamV1AuditLogConfig*): Self = StObject.set(x, "auditLogConfigs", js.Array(value :_*))
           
-          @scala.inline
-          def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+          inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+          inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
         }
       }
       
@@ -387,29 +326,22 @@ object gapi {
       }
       object GoogleIamV1AuditLogConfig {
         
-        @scala.inline
-        def apply(): GoogleIamV1AuditLogConfig = {
+        inline def apply(): GoogleIamV1AuditLogConfig = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GoogleIamV1AuditLogConfig]
         }
         
-        @scala.inline
-        implicit class GoogleIamV1AuditLogConfigMutableBuilder[Self <: GoogleIamV1AuditLogConfig] (val x: Self) extends AnyVal {
+        extension [Self <: GoogleIamV1AuditLogConfig](x: Self) {
           
-          @scala.inline
-          def setExemptedMembers(value: js.Array[String]): Self = StObject.set(x, "exemptedMembers", value.asInstanceOf[js.Any])
+          inline def setExemptedMembers(value: js.Array[String]): Self = StObject.set(x, "exemptedMembers", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setExemptedMembersUndefined: Self = StObject.set(x, "exemptedMembers", js.undefined)
+          inline def setExemptedMembersUndefined: Self = StObject.set(x, "exemptedMembers", js.undefined)
           
-          @scala.inline
-          def setExemptedMembersVarargs(value: String*): Self = StObject.set(x, "exemptedMembers", js.Array(value :_*))
+          inline def setExemptedMembersVarargs(value: String*): Self = StObject.set(x, "exemptedMembers", js.Array(value :_*))
           
-          @scala.inline
-          def setLogType(value: String): Self = StObject.set(x, "logType", value.asInstanceOf[js.Any])
+          inline def setLogType(value: String): Self = StObject.set(x, "logType", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLogTypeUndefined: Self = StObject.set(x, "logType", js.undefined)
+          inline def setLogTypeUndefined: Self = StObject.set(x, "logType", js.undefined)
         }
       }
       
@@ -442,35 +374,26 @@ object gapi {
       }
       object GoogleIamV1Binding {
         
-        @scala.inline
-        def apply(): GoogleIamV1Binding = {
+        inline def apply(): GoogleIamV1Binding = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GoogleIamV1Binding]
         }
         
-        @scala.inline
-        implicit class GoogleIamV1BindingMutableBuilder[Self <: GoogleIamV1Binding] (val x: Self) extends AnyVal {
+        extension [Self <: GoogleIamV1Binding](x: Self) {
           
-          @scala.inline
-          def setCondition(value: GoogleTypeExpr): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+          inline def setCondition(value: GoogleTypeExpr): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+          inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
           
-          @scala.inline
-          def setMembers(value: js.Array[String]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+          inline def setMembers(value: js.Array[String]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
+          inline def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
           
-          @scala.inline
-          def setMembersVarargs(value: String*): Self = StObject.set(x, "members", js.Array(value :_*))
+          inline def setMembersVarargs(value: String*): Self = StObject.set(x, "members", js.Array(value :_*))
           
-          @scala.inline
-          def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+          inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+          inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
         }
       }
       
@@ -506,44 +429,32 @@ object gapi {
       }
       object GoogleIamV1Policy {
         
-        @scala.inline
-        def apply(): GoogleIamV1Policy = {
+        inline def apply(): GoogleIamV1Policy = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GoogleIamV1Policy]
         }
         
-        @scala.inline
-        implicit class GoogleIamV1PolicyMutableBuilder[Self <: GoogleIamV1Policy] (val x: Self) extends AnyVal {
+        extension [Self <: GoogleIamV1Policy](x: Self) {
           
-          @scala.inline
-          def setAuditConfigs(value: js.Array[GoogleIamV1AuditConfig]): Self = StObject.set(x, "auditConfigs", value.asInstanceOf[js.Any])
+          inline def setAuditConfigs(value: js.Array[GoogleIamV1AuditConfig]): Self = StObject.set(x, "auditConfigs", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAuditConfigsUndefined: Self = StObject.set(x, "auditConfigs", js.undefined)
+          inline def setAuditConfigsUndefined: Self = StObject.set(x, "auditConfigs", js.undefined)
           
-          @scala.inline
-          def setAuditConfigsVarargs(value: GoogleIamV1AuditConfig*): Self = StObject.set(x, "auditConfigs", js.Array(value :_*))
+          inline def setAuditConfigsVarargs(value: GoogleIamV1AuditConfig*): Self = StObject.set(x, "auditConfigs", js.Array(value :_*))
           
-          @scala.inline
-          def setBindings(value: js.Array[GoogleIamV1Binding]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
+          inline def setBindings(value: js.Array[GoogleIamV1Binding]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
+          inline def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
           
-          @scala.inline
-          def setBindingsVarargs(value: GoogleIamV1Binding*): Self = StObject.set(x, "bindings", js.Array(value :_*))
+          inline def setBindingsVarargs(value: GoogleIamV1Binding*): Self = StObject.set(x, "bindings", js.Array(value :_*))
           
-          @scala.inline
-          def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+          inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+          inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
           
-          @scala.inline
-          def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+          inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+          inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
         }
       }
       
@@ -563,38 +474,28 @@ object gapi {
       }
       object GoogleTypeExpr {
         
-        @scala.inline
-        def apply(): GoogleTypeExpr = {
+        inline def apply(): GoogleTypeExpr = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GoogleTypeExpr]
         }
         
-        @scala.inline
-        implicit class GoogleTypeExprMutableBuilder[Self <: GoogleTypeExpr] (val x: Self) extends AnyVal {
+        extension [Self <: GoogleTypeExpr](x: Self) {
           
-          @scala.inline
-          def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+          inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+          inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
           
-          @scala.inline
-          def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+          inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
+          inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
           
-          @scala.inline
-          def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+          inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+          inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
           
-          @scala.inline
-          def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+          inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+          inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
         }
       }
       

@@ -16,8 +16,7 @@ object configurationsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def resolveAwsAuthConfig[T](input: T & AwsAuthInputConfig & PreviouslyResolved): T & AwsAuthResolvedConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveAwsAuthConfig")(input.asInstanceOf[js.Any]).asInstanceOf[T & AwsAuthResolvedConfig]
+  inline def resolveAwsAuthConfig[T](input: T & AwsAuthInputConfig & PreviouslyResolved): T & AwsAuthResolvedConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveAwsAuthConfig")(input.asInstanceOf[js.Any]).asInstanceOf[T & AwsAuthResolvedConfig]
   
   trait AwsAuthInputConfig extends StObject {
     
@@ -49,50 +48,36 @@ object configurationsMod {
   }
   object AwsAuthInputConfig {
     
-    @scala.inline
-    def apply(): AwsAuthInputConfig = {
+    inline def apply(): AwsAuthInputConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AwsAuthInputConfig]
     }
     
-    @scala.inline
-    implicit class AwsAuthInputConfigMutableBuilder[Self <: AwsAuthInputConfig] (val x: Self) extends AnyVal {
+    extension [Self <: AwsAuthInputConfig](x: Self) {
       
-      @scala.inline
-      def setCredentials(value: Credentials | Provider[Credentials]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: Credentials | Provider[Credentials]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCredentialsFunction0(value: () => js.Promise[Credentials]): Self = StObject.set(x, "credentials", js.Any.fromFunction0(value))
+      inline def setCredentialsFunction0(value: () => js.Promise[Credentials]): Self = StObject.set(x, "credentials", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
+      inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
       
-      @scala.inline
-      def setSigner(value: RequestSigner | Provider[RequestSigner]): Self = StObject.set(x, "signer", value.asInstanceOf[js.Any])
+      inline def setSigner(value: RequestSigner | Provider[RequestSigner]): Self = StObject.set(x, "signer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignerFunction0(value: () => js.Promise[RequestSigner]): Self = StObject.set(x, "signer", js.Any.fromFunction0(value))
+      inline def setSignerFunction0(value: () => js.Promise[RequestSigner]): Self = StObject.set(x, "signer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSignerUndefined: Self = StObject.set(x, "signer", js.undefined)
+      inline def setSignerUndefined: Self = StObject.set(x, "signer", js.undefined)
       
-      @scala.inline
-      def setSigningEscapePath(value: Boolean): Self = StObject.set(x, "signingEscapePath", value.asInstanceOf[js.Any])
+      inline def setSigningEscapePath(value: Boolean): Self = StObject.set(x, "signingEscapePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSigningEscapePathUndefined: Self = StObject.set(x, "signingEscapePath", js.undefined)
+      inline def setSigningEscapePathUndefined: Self = StObject.set(x, "signingEscapePath", js.undefined)
       
-      @scala.inline
-      def setSigningRegion(value: String): Self = StObject.set(x, "signingRegion", value.asInstanceOf[js.Any])
+      inline def setSigningRegion(value: String): Self = StObject.set(x, "signingRegion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSigningRegionUndefined: Self = StObject.set(x, "signingRegion", js.undefined)
+      inline def setSigningRegionUndefined: Self = StObject.set(x, "signingRegion", js.undefined)
       
-      @scala.inline
-      def setSystemClockOffset(value: Double): Self = StObject.set(x, "systemClockOffset", value.asInstanceOf[js.Any])
+      inline def setSystemClockOffset(value: Double): Self = StObject.set(x, "systemClockOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSystemClockOffsetUndefined: Self = StObject.set(x, "systemClockOffset", js.undefined)
+      inline def setSystemClockOffsetUndefined: Self = StObject.set(x, "systemClockOffset", js.undefined)
     }
   }
   
@@ -112,8 +97,7 @@ object configurationsMod {
   }
   object AwsAuthResolvedConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       credentials: () => js.Promise[Credentials],
       signer: () => js.Promise[RequestSigner],
       signingEscapePath: Boolean,
@@ -123,20 +107,15 @@ object configurationsMod {
       __obj.asInstanceOf[AwsAuthResolvedConfig]
     }
     
-    @scala.inline
-    implicit class AwsAuthResolvedConfigMutableBuilder[Self <: AwsAuthResolvedConfig] (val x: Self) extends AnyVal {
+    extension [Self <: AwsAuthResolvedConfig](x: Self) {
       
-      @scala.inline
-      def setCredentials(value: () => js.Promise[Credentials]): Self = StObject.set(x, "credentials", js.Any.fromFunction0(value))
+      inline def setCredentials(value: () => js.Promise[Credentials]): Self = StObject.set(x, "credentials", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSigner(value: () => js.Promise[RequestSigner]): Self = StObject.set(x, "signer", js.Any.fromFunction0(value))
+      inline def setSigner(value: () => js.Promise[RequestSigner]): Self = StObject.set(x, "signer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSigningEscapePath(value: Boolean): Self = StObject.set(x, "signingEscapePath", value.asInstanceOf[js.Any])
+      inline def setSigningEscapePath(value: Boolean): Self = StObject.set(x, "signingEscapePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSystemClockOffset(value: Double): Self = StObject.set(x, "systemClockOffset", value.asInstanceOf[js.Any])
+      inline def setSystemClockOffset(value: Double): Self = StObject.set(x, "systemClockOffset", value.asInstanceOf[js.Any])
     }
   }
   
@@ -157,8 +136,7 @@ object configurationsMod {
   }
   object PreviouslyResolved {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       credentialDefaultProvider: js.Any => Provider[Credentials],
       region: String | Provider[String],
       regionInfoProvider: (/* region */ String, /* options */ js.UndefOr[js.Any]) => js.Promise[js.UndefOr[RegionInfo]],
@@ -169,28 +147,21 @@ object configurationsMod {
       __obj.asInstanceOf[PreviouslyResolved]
     }
     
-    @scala.inline
-    implicit class PreviouslyResolvedMutableBuilder[Self <: PreviouslyResolved] (val x: Self) extends AnyVal {
+    extension [Self <: PreviouslyResolved](x: Self) {
       
-      @scala.inline
-      def setCredentialDefaultProvider(value: js.Any => Provider[Credentials]): Self = StObject.set(x, "credentialDefaultProvider", js.Any.fromFunction1(value))
+      inline def setCredentialDefaultProvider(value: js.Any => Provider[Credentials]): Self = StObject.set(x, "credentialDefaultProvider", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegion(value: String | Provider[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String | Provider[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionFunction0(value: () => js.Promise[String]): Self = StObject.set(x, "region", js.Any.fromFunction0(value))
+      inline def setRegionFunction0(value: () => js.Promise[String]): Self = StObject.set(x, "region", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRegionInfoProvider(
+      inline def setRegionInfoProvider(
         value: (/* region */ String, /* options */ js.UndefOr[js.Any]) => js.Promise[js.UndefOr[RegionInfo]]
       ): Self = StObject.set(x, "regionInfoProvider", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSha256(value: HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
+      inline def setSha256(value: HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSigningName(value: String): Self = StObject.set(x, "signingName", value.asInstanceOf[js.Any])
+      inline def setSigningName(value: String): Self = StObject.set(x, "signingName", value.asInstanceOf[js.Any])
     }
   }
 }

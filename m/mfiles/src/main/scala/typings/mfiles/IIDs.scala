@@ -22,8 +22,7 @@ trait IIDs extends StObject {
 }
 object IIDs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Add: (Double, Double) => Unit,
     Clone: () => IIDs,
     Count: Double,
@@ -36,28 +35,20 @@ object IIDs {
     __obj.asInstanceOf[IIDs]
   }
   
-  @scala.inline
-  implicit class IIDsMutableBuilder[Self <: IIDs] (val x: Self) extends AnyVal {
+  extension [Self <: IIDs](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (Double, Double) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (Double, Double) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setClone(value: () => IIDs): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IIDs): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexOf(value: Double => Double): Self = StObject.set(x, "IndexOf", js.Any.fromFunction1(value))
+    inline def setIndexOf(value: Double => Double): Self = StObject.set(x, "IndexOf", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setItem(value: Double => Double): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => Double): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove(value: Double => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: Double => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveAll(value: Double => Double): Self = StObject.set(x, "RemoveAll", js.Any.fromFunction1(value))
+    inline def setRemoveAll(value: Double => Double): Self = StObject.set(x, "RemoveAll", js.Any.fromFunction1(value))
   }
 }

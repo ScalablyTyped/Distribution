@@ -54,49 +54,35 @@ trait SchemaNonComplianceDetail extends StObject {
 }
 object SchemaNonComplianceDetail {
   
-  @scala.inline
-  def apply(): SchemaNonComplianceDetail = {
+  inline def apply(): SchemaNonComplianceDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaNonComplianceDetail]
   }
   
-  @scala.inline
-  implicit class SchemaNonComplianceDetailMutableBuilder[Self <: SchemaNonComplianceDetail] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaNonComplianceDetail](x: Self) {
     
-    @scala.inline
-    def setCurrentValue(value: js.Any): Self = StObject.set(x, "currentValue", value.asInstanceOf[js.Any])
+    inline def setCurrentValue(value: js.Any): Self = StObject.set(x, "currentValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentValueUndefined: Self = StObject.set(x, "currentValue", js.undefined)
+    inline def setCurrentValueUndefined: Self = StObject.set(x, "currentValue", js.undefined)
     
-    @scala.inline
-    def setFieldPath(value: String): Self = StObject.set(x, "fieldPath", value.asInstanceOf[js.Any])
+    inline def setFieldPath(value: String): Self = StObject.set(x, "fieldPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldPathUndefined: Self = StObject.set(x, "fieldPath", js.undefined)
+    inline def setFieldPathUndefined: Self = StObject.set(x, "fieldPath", js.undefined)
     
-    @scala.inline
-    def setInstallationFailureReason(value: String): Self = StObject.set(x, "installationFailureReason", value.asInstanceOf[js.Any])
+    inline def setInstallationFailureReason(value: String): Self = StObject.set(x, "installationFailureReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstallationFailureReasonUndefined: Self = StObject.set(x, "installationFailureReason", js.undefined)
+    inline def setInstallationFailureReasonUndefined: Self = StObject.set(x, "installationFailureReason", js.undefined)
     
-    @scala.inline
-    def setNonComplianceReason(value: String): Self = StObject.set(x, "nonComplianceReason", value.asInstanceOf[js.Any])
+    inline def setNonComplianceReason(value: String): Self = StObject.set(x, "nonComplianceReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonComplianceReasonUndefined: Self = StObject.set(x, "nonComplianceReason", js.undefined)
+    inline def setNonComplianceReasonUndefined: Self = StObject.set(x, "nonComplianceReason", js.undefined)
     
-    @scala.inline
-    def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
+    inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
+    inline def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
     
-    @scala.inline
-    def setSettingName(value: String): Self = StObject.set(x, "settingName", value.asInstanceOf[js.Any])
+    inline def setSettingName(value: String): Self = StObject.set(x, "settingName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettingNameUndefined: Self = StObject.set(x, "settingName", js.undefined)
+    inline def setSettingNameUndefined: Self = StObject.set(x, "settingName", js.undefined)
   }
 }

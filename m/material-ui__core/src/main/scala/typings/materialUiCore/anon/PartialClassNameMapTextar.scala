@@ -15,31 +15,23 @@ trait PartialClassNameMapTextar extends StObject {
 }
 object PartialClassNameMapTextar {
   
-  @scala.inline
-  def apply(): PartialClassNameMapTextar = {
+  inline def apply(): PartialClassNameMapTextar = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapTextar]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapTextarMutableBuilder[Self <: PartialClassNameMapTextar] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapTextar](x: Self) {
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setShadow(value: String): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
+    inline def setShadow(value: String): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
+    inline def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
     
-    @scala.inline
-    def setTextarea(value: String): Self = StObject.set(x, "textarea", value.asInstanceOf[js.Any])
+    inline def setTextarea(value: String): Self = StObject.set(x, "textarea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextareaUndefined: Self = StObject.set(x, "textarea", js.undefined)
+    inline def setTextareaUndefined: Self = StObject.set(x, "textarea", js.undefined)
   }
 }

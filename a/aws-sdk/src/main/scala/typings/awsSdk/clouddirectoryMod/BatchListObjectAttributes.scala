@@ -28,34 +28,25 @@ trait BatchListObjectAttributes extends StObject {
 }
 object BatchListObjectAttributes {
   
-  @scala.inline
-  def apply(ObjectReference: ObjectReference): BatchListObjectAttributes = {
+  inline def apply(ObjectReference: ObjectReference): BatchListObjectAttributes = {
     val __obj = js.Dynamic.literal(ObjectReference = ObjectReference.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchListObjectAttributes]
   }
   
-  @scala.inline
-  implicit class BatchListObjectAttributesMutableBuilder[Self <: BatchListObjectAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: BatchListObjectAttributes](x: Self) {
     
-    @scala.inline
-    def setFacetFilter(value: SchemaFacet): Self = StObject.set(x, "FacetFilter", value.asInstanceOf[js.Any])
+    inline def setFacetFilter(value: SchemaFacet): Self = StObject.set(x, "FacetFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacetFilterUndefined: Self = StObject.set(x, "FacetFilter", js.undefined)
+    inline def setFacetFilterUndefined: Self = StObject.set(x, "FacetFilter", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: NumberResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: NumberResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setObjectReference(value: ObjectReference): Self = StObject.set(x, "ObjectReference", value.asInstanceOf[js.Any])
+    inline def setObjectReference(value: ObjectReference): Self = StObject.set(x, "ObjectReference", value.asInstanceOf[js.Any])
   }
 }

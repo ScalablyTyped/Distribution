@@ -12,19 +12,15 @@ trait AutoOpen extends StObject {
 }
 object AutoOpen {
   
-  @scala.inline
-  def apply(autoOpen: Boolean, baudRate: Double): AutoOpen = {
+  inline def apply(autoOpen: Boolean, baudRate: Double): AutoOpen = {
     val __obj = js.Dynamic.literal(autoOpen = autoOpen.asInstanceOf[js.Any], baudRate = baudRate.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoOpen]
   }
   
-  @scala.inline
-  implicit class AutoOpenMutableBuilder[Self <: AutoOpen] (val x: Self) extends AnyVal {
+  extension [Self <: AutoOpen](x: Self) {
     
-    @scala.inline
-    def setAutoOpen(value: Boolean): Self = StObject.set(x, "autoOpen", value.asInstanceOf[js.Any])
+    inline def setAutoOpen(value: Boolean): Self = StObject.set(x, "autoOpen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaudRate(value: Double): Self = StObject.set(x, "baudRate", value.asInstanceOf[js.Any])
+    inline def setBaudRate(value: Double): Self = StObject.set(x, "baudRate", value.asInstanceOf[js.Any])
   }
 }

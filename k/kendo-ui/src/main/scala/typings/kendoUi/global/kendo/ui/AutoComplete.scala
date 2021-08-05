@@ -21,13 +21,11 @@ object AutoComplete {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def extend(proto: js.Object): typings.kendoUi.kendo.ui.AutoComplete = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.AutoComplete]
+  inline def extend(proto: js.Object): typings.kendoUi.kendo.ui.AutoComplete = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.AutoComplete]
   
   /* static member */
   @JSGlobal("kendo.ui.AutoComplete.fn")
   @js.native
   def fn: typings.kendoUi.kendo.ui.AutoComplete = js.native
-  @scala.inline
-  def fn_=(x: typings.kendoUi.kendo.ui.AutoComplete): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+  inline def fn_=(x: typings.kendoUi.kendo.ui.AutoComplete): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

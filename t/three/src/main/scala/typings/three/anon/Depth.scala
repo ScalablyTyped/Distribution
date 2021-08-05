@@ -20,8 +20,7 @@ trait Depth extends StObject {
 }
 object Depth {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     depth: Double,
     depthSegments: Double,
     height: Double,
@@ -33,25 +32,18 @@ object Depth {
     __obj.asInstanceOf[Depth]
   }
   
-  @scala.inline
-  implicit class DepthMutableBuilder[Self <: Depth] (val x: Self) extends AnyVal {
+  extension [Self <: Depth](x: Self) {
     
-    @scala.inline
-    def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+    inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepthSegments(value: Double): Self = StObject.set(x, "depthSegments", value.asInstanceOf[js.Any])
+    inline def setDepthSegments(value: Double): Self = StObject.set(x, "depthSegments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightSegments(value: Double): Self = StObject.set(x, "heightSegments", value.asInstanceOf[js.Any])
+    inline def setHeightSegments(value: Double): Self = StObject.set(x, "heightSegments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthSegments(value: Double): Self = StObject.set(x, "widthSegments", value.asInstanceOf[js.Any])
+    inline def setWidthSegments(value: Double): Self = StObject.set(x, "widthSegments", value.asInstanceOf[js.Any])
   }
 }

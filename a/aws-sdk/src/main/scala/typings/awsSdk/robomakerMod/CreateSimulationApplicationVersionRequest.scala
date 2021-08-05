@@ -18,22 +18,17 @@ trait CreateSimulationApplicationVersionRequest extends StObject {
 }
 object CreateSimulationApplicationVersionRequest {
   
-  @scala.inline
-  def apply(application: Arn): CreateSimulationApplicationVersionRequest = {
+  inline def apply(application: Arn): CreateSimulationApplicationVersionRequest = {
     val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSimulationApplicationVersionRequest]
   }
   
-  @scala.inline
-  implicit class CreateSimulationApplicationVersionRequestMutableBuilder[Self <: CreateSimulationApplicationVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSimulationApplicationVersionRequest](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Arn): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Arn): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentRevisionId(value: RevisionId): Self = StObject.set(x, "currentRevisionId", value.asInstanceOf[js.Any])
+    inline def setCurrentRevisionId(value: RevisionId): Self = StObject.set(x, "currentRevisionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentRevisionIdUndefined: Self = StObject.set(x, "currentRevisionId", js.undefined)
+    inline def setCurrentRevisionIdUndefined: Self = StObject.set(x, "currentRevisionId", js.undefined)
   }
 }

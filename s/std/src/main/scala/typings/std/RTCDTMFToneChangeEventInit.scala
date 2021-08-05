@@ -12,16 +12,13 @@ trait RTCDTMFToneChangeEventInit
 }
 object RTCDTMFToneChangeEventInit {
   
-  @scala.inline
-  def apply(tone: java.lang.String): RTCDTMFToneChangeEventInit = {
+  inline def apply(tone: java.lang.String): RTCDTMFToneChangeEventInit = {
     val __obj = js.Dynamic.literal(tone = tone.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCDTMFToneChangeEventInit]
   }
   
-  @scala.inline
-  implicit class RTCDTMFToneChangeEventInitMutableBuilder[Self <: RTCDTMFToneChangeEventInit] (val x: Self) extends AnyVal {
+  extension [Self <: RTCDTMFToneChangeEventInit](x: Self) {
     
-    @scala.inline
-    def setTone(value: java.lang.String): Self = StObject.set(x, "tone", value.asInstanceOf[js.Any])
+    inline def setTone(value: java.lang.String): Self = StObject.set(x, "tone", value.asInstanceOf[js.Any])
   }
 }

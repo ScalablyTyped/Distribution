@@ -15,25 +15,19 @@ trait DecomposeOptions
 }
 object DecomposeOptions {
   
-  @scala.inline
-  def apply(pk: String): DecomposeOptions = {
+  inline def apply(pk: String): DecomposeOptions = {
     val __obj = js.Dynamic.literal(pk = pk.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecomposeOptions]
   }
   
-  @scala.inline
-  implicit class DecomposeOptionsMutableBuilder[Self <: DecomposeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DecomposeOptions](x: Self) {
     
-    @scala.inline
-    def setColumns(value: js.Array[String] | AnyObject[String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: js.Array[String] | AnyObject[String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    @scala.inline
-    def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
-    @scala.inline
-    def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+    inline def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
   }
 }

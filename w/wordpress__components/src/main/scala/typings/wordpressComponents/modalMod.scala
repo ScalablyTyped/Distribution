@@ -110,86 +110,60 @@ object modalMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(onRequestClose: () => Unit, title: String): Props = {
+      inline def apply(onRequestClose: () => Unit, title: String): Props = {
         val __obj = js.Dynamic.literal(onRequestClose = js.Any.fromFunction0(onRequestClose), title = title.asInstanceOf[js.Any])
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setAria(value: Describedby): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
+        inline def setAria(value: Describedby): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAriaUndefined: Self = StObject.set(x, "aria", js.undefined)
+        inline def setAriaUndefined: Self = StObject.set(x, "aria", js.undefined)
         
-        @scala.inline
-        def setBodyOpenClassName(value: String): Self = StObject.set(x, "bodyOpenClassName", value.asInstanceOf[js.Any])
+        inline def setBodyOpenClassName(value: String): Self = StObject.set(x, "bodyOpenClassName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBodyOpenClassNameUndefined: Self = StObject.set(x, "bodyOpenClassName", js.undefined)
+        inline def setBodyOpenClassNameUndefined: Self = StObject.set(x, "bodyOpenClassName", js.undefined)
         
-        @scala.inline
-        def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+        inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+        inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
         
-        @scala.inline
-        def setCloseButtonLabel(value: String): Self = StObject.set(x, "closeButtonLabel", value.asInstanceOf[js.Any])
+        inline def setCloseButtonLabel(value: String): Self = StObject.set(x, "closeButtonLabel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCloseButtonLabelUndefined: Self = StObject.set(x, "closeButtonLabel", js.undefined)
+        inline def setCloseButtonLabelUndefined: Self = StObject.set(x, "closeButtonLabel", js.undefined)
         
-        @scala.inline
-        def setFocusOnMount(value: Boolean): Self = StObject.set(x, "focusOnMount", value.asInstanceOf[js.Any])
+        inline def setFocusOnMount(value: Boolean): Self = StObject.set(x, "focusOnMount", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFocusOnMountUndefined: Self = StObject.set(x, "focusOnMount", js.undefined)
+        inline def setFocusOnMountUndefined: Self = StObject.set(x, "focusOnMount", js.undefined)
         
-        @scala.inline
-        def setIcon(value: ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+        inline def setIcon(value: ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+        inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
         
-        @scala.inline
-        def setIsDismissable(value: Boolean): Self = StObject.set(x, "isDismissable", value.asInstanceOf[js.Any])
+        inline def setIsDismissable(value: Boolean): Self = StObject.set(x, "isDismissable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsDismissableUndefined: Self = StObject.set(x, "isDismissable", js.undefined)
+        inline def setIsDismissableUndefined: Self = StObject.set(x, "isDismissable", js.undefined)
         
-        @scala.inline
-        def setIsDismissible(value: Boolean): Self = StObject.set(x, "isDismissible", value.asInstanceOf[js.Any])
+        inline def setIsDismissible(value: Boolean): Self = StObject.set(x, "isDismissible", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsDismissibleUndefined: Self = StObject.set(x, "isDismissible", js.undefined)
+        inline def setIsDismissibleUndefined: Self = StObject.set(x, "isDismissible", js.undefined)
         
-        @scala.inline
-        def setOnRequestClose(value: () => Unit): Self = StObject.set(x, "onRequestClose", js.Any.fromFunction0(value))
+        inline def setOnRequestClose(value: () => Unit): Self = StObject.set(x, "onRequestClose", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOverlayClassName(value: String): Self = StObject.set(x, "overlayClassName", value.asInstanceOf[js.Any])
+        inline def setOverlayClassName(value: String): Self = StObject.set(x, "overlayClassName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOverlayClassNameUndefined: Self = StObject.set(x, "overlayClassName", js.undefined)
+        inline def setOverlayClassNameUndefined: Self = StObject.set(x, "overlayClassName", js.undefined)
         
-        @scala.inline
-        def setShouldCloseOnClickOutside(value: Boolean): Self = StObject.set(x, "shouldCloseOnClickOutside", value.asInstanceOf[js.Any])
+        inline def setShouldCloseOnClickOutside(value: Boolean): Self = StObject.set(x, "shouldCloseOnClickOutside", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShouldCloseOnClickOutsideUndefined: Self = StObject.set(x, "shouldCloseOnClickOutside", js.undefined)
+        inline def setShouldCloseOnClickOutsideUndefined: Self = StObject.set(x, "shouldCloseOnClickOutside", js.undefined)
         
-        @scala.inline
-        def setShouldCloseOnEsc(value: Boolean): Self = StObject.set(x, "shouldCloseOnEsc", value.asInstanceOf[js.Any])
+        inline def setShouldCloseOnEsc(value: Boolean): Self = StObject.set(x, "shouldCloseOnEsc", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShouldCloseOnEscUndefined: Self = StObject.set(x, "shouldCloseOnEsc", js.undefined)
+        inline def setShouldCloseOnEscUndefined: Self = StObject.set(x, "shouldCloseOnEsc", js.undefined)
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       }
     }
   }

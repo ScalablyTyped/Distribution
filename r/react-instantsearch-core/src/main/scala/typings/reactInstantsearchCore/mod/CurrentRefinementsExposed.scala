@@ -17,25 +17,19 @@ trait CurrentRefinementsExposed extends StObject {
 }
 object CurrentRefinementsExposed {
   
-  @scala.inline
-  def apply(): CurrentRefinementsExposed = {
+  inline def apply(): CurrentRefinementsExposed = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CurrentRefinementsExposed]
   }
   
-  @scala.inline
-  implicit class CurrentRefinementsExposedMutableBuilder[Self <: CurrentRefinementsExposed] (val x: Self) extends AnyVal {
+  extension [Self <: CurrentRefinementsExposed](x: Self) {
     
-    @scala.inline
-    def setClearsQuery(value: Boolean): Self = StObject.set(x, "clearsQuery", value.asInstanceOf[js.Any])
+    inline def setClearsQuery(value: Boolean): Self = StObject.set(x, "clearsQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearsQueryUndefined: Self = StObject.set(x, "clearsQuery", js.undefined)
+    inline def setClearsQueryUndefined: Self = StObject.set(x, "clearsQuery", js.undefined)
     
-    @scala.inline
-    def setTransformItems(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "transformItems", js.Any.fromFunction1(value))
+    inline def setTransformItems(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "transformItems", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTransformItemsUndefined: Self = StObject.set(x, "transformItems", js.undefined)
+    inline def setTransformItemsUndefined: Self = StObject.set(x, "transformItems", js.undefined)
   }
 }

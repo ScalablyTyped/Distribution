@@ -18,22 +18,17 @@ trait AudioChannelMapping extends StObject {
 }
 object AudioChannelMapping {
   
-  @scala.inline
-  def apply(InputChannelLevels: listOfInputChannelLevel, OutputChannel: integerMin0Max7): AudioChannelMapping = {
+  inline def apply(InputChannelLevels: listOfInputChannelLevel, OutputChannel: integerMin0Max7): AudioChannelMapping = {
     val __obj = js.Dynamic.literal(InputChannelLevels = InputChannelLevels.asInstanceOf[js.Any], OutputChannel = OutputChannel.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioChannelMapping]
   }
   
-  @scala.inline
-  implicit class AudioChannelMappingMutableBuilder[Self <: AudioChannelMapping] (val x: Self) extends AnyVal {
+  extension [Self <: AudioChannelMapping](x: Self) {
     
-    @scala.inline
-    def setInputChannelLevels(value: listOfInputChannelLevel): Self = StObject.set(x, "InputChannelLevels", value.asInstanceOf[js.Any])
+    inline def setInputChannelLevels(value: listOfInputChannelLevel): Self = StObject.set(x, "InputChannelLevels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputChannelLevelsVarargs(value: InputChannelLevel*): Self = StObject.set(x, "InputChannelLevels", js.Array(value :_*))
+    inline def setInputChannelLevelsVarargs(value: InputChannelLevel*): Self = StObject.set(x, "InputChannelLevels", js.Array(value :_*))
     
-    @scala.inline
-    def setOutputChannel(value: integerMin0Max7): Self = StObject.set(x, "OutputChannel", value.asInstanceOf[js.Any])
+    inline def setOutputChannel(value: integerMin0Max7): Self = StObject.set(x, "OutputChannel", value.asInstanceOf[js.Any])
   }
 }

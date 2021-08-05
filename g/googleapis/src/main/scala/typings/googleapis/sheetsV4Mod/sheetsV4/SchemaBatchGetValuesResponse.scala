@@ -23,28 +23,21 @@ trait SchemaBatchGetValuesResponse extends StObject {
 }
 object SchemaBatchGetValuesResponse {
   
-  @scala.inline
-  def apply(): SchemaBatchGetValuesResponse = {
+  inline def apply(): SchemaBatchGetValuesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBatchGetValuesResponse]
   }
   
-  @scala.inline
-  implicit class SchemaBatchGetValuesResponseMutableBuilder[Self <: SchemaBatchGetValuesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBatchGetValuesResponse](x: Self) {
     
-    @scala.inline
-    def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
+    inline def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpreadsheetIdUndefined: Self = StObject.set(x, "spreadsheetId", js.undefined)
+    inline def setSpreadsheetIdUndefined: Self = StObject.set(x, "spreadsheetId", js.undefined)
     
-    @scala.inline
-    def setValueRanges(value: js.Array[SchemaValueRange]): Self = StObject.set(x, "valueRanges", value.asInstanceOf[js.Any])
+    inline def setValueRanges(value: js.Array[SchemaValueRange]): Self = StObject.set(x, "valueRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueRangesUndefined: Self = StObject.set(x, "valueRanges", js.undefined)
+    inline def setValueRangesUndefined: Self = StObject.set(x, "valueRanges", js.undefined)
     
-    @scala.inline
-    def setValueRangesVarargs(value: SchemaValueRange*): Self = StObject.set(x, "valueRanges", js.Array(value :_*))
+    inline def setValueRangesVarargs(value: SchemaValueRange*): Self = StObject.set(x, "valueRanges", js.Array(value :_*))
   }
 }

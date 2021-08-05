@@ -50,44 +50,32 @@ object mod {
   }
   object Connection {
     
-    @scala.inline
-    def apply(): Connection = {
+    inline def apply(): Connection = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Connection]
     }
     
-    @scala.inline
-    implicit class ConnectionMutableBuilder[Self <: Connection] (val x: Self) extends AnyVal {
+    extension [Self <: Connection](x: Self) {
       
-      @scala.inline
-      def setDownlink(value: Double): Self = StObject.set(x, "downlink", value.asInstanceOf[js.Any])
+      inline def setDownlink(value: Double): Self = StObject.set(x, "downlink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownlinkMax(value: js.Any): Self = StObject.set(x, "downlinkMax", value.asInstanceOf[js.Any])
+      inline def setDownlinkMax(value: js.Any): Self = StObject.set(x, "downlinkMax", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownlinkMaxUndefined: Self = StObject.set(x, "downlinkMax", js.undefined)
+      inline def setDownlinkMaxUndefined: Self = StObject.set(x, "downlinkMax", js.undefined)
       
-      @scala.inline
-      def setDownlinkUndefined: Self = StObject.set(x, "downlink", js.undefined)
+      inline def setDownlinkUndefined: Self = StObject.set(x, "downlink", js.undefined)
       
-      @scala.inline
-      def setEffectiveType(value: String): Self = StObject.set(x, "effectiveType", value.asInstanceOf[js.Any])
+      inline def setEffectiveType(value: String): Self = StObject.set(x, "effectiveType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEffectiveTypeUndefined: Self = StObject.set(x, "effectiveType", js.undefined)
+      inline def setEffectiveTypeUndefined: Self = StObject.set(x, "effectiveType", js.undefined)
       
-      @scala.inline
-      def setRtt(value: Double): Self = StObject.set(x, "rtt", value.asInstanceOf[js.Any])
+      inline def setRtt(value: Double): Self = StObject.set(x, "rtt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRttUndefined: Self = StObject.set(x, "rtt", js.undefined)
+      inline def setRttUndefined: Self = StObject.set(x, "rtt", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -160,8 +148,7 @@ object mod {
   }
   object Data {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       appName: String,
       platform: String,
       pluginsLength: Double,
@@ -176,59 +163,41 @@ object mod {
       __obj.asInstanceOf[Data]
     }
     
-    @scala.inline
-    implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+    extension [Self <: Data](x: Self) {
       
-      @scala.inline
-      def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
+      inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+      inline def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
+      inline def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
       
-      @scala.inline
-      def setCpuClass(value: String): Self = StObject.set(x, "cpuClass", value.asInstanceOf[js.Any])
+      inline def setCpuClass(value: String): Self = StObject.set(x, "cpuClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCpuClassUndefined: Self = StObject.set(x, "cpuClass", js.undefined)
+      inline def setCpuClassUndefined: Self = StObject.set(x, "cpuClass", js.undefined)
       
-      @scala.inline
-      def setDeviceCategory(value: String): Self = StObject.set(x, "deviceCategory", value.asInstanceOf[js.Any])
+      inline def setDeviceCategory(value: String): Self = StObject.set(x, "deviceCategory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceCategoryUndefined: Self = StObject.set(x, "deviceCategory", js.undefined)
+      inline def setDeviceCategoryUndefined: Self = StObject.set(x, "deviceCategory", js.undefined)
       
-      @scala.inline
-      def setOscpu(value: String): Self = StObject.set(x, "oscpu", value.asInstanceOf[js.Any])
+      inline def setOscpu(value: String): Self = StObject.set(x, "oscpu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOscpuUndefined: Self = StObject.set(x, "oscpu", js.undefined)
+      inline def setOscpuUndefined: Self = StObject.set(x, "oscpu", js.undefined)
       
-      @scala.inline
-      def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginsLength(value: Double): Self = StObject.set(x, "pluginsLength", value.asInstanceOf[js.Any])
+      inline def setPluginsLength(value: Double): Self = StObject.set(x, "pluginsLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenHeight(value: Double): Self = StObject.set(x, "screenHeight", value.asInstanceOf[js.Any])
+      inline def setScreenHeight(value: Double): Self = StObject.set(x, "screenHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenWidth(value: Double): Self = StObject.set(x, "screenWidth", value.asInstanceOf[js.Any])
+      inline def setScreenWidth(value: Double): Self = StObject.set(x, "screenWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
+      inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
+      inline def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewportHeight(value: Double): Self = StObject.set(x, "viewportHeight", value.asInstanceOf[js.Any])
+      inline def setViewportHeight(value: Double): Self = StObject.set(x, "viewportHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewportWidth(value: Double): Self = StObject.set(x, "viewportWidth", value.asInstanceOf[js.Any])
+      inline def setViewportWidth(value: Double): Self = StObject.set(x, "viewportWidth", value.asInstanceOf[js.Any])
     }
   }
   
@@ -251,23 +220,18 @@ object mod {
   }
   object UserAgent {
     
-    @scala.inline
-    def apply(appName: String, data: Data, random: () => UserAgent): UserAgent = {
+    inline def apply(appName: String, data: Data, random: () => UserAgent): UserAgent = {
       val __obj = js.Dynamic.literal(appName = appName.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], random = js.Any.fromFunction0(random))
       __obj.asInstanceOf[UserAgent]
     }
     
-    @scala.inline
-    implicit class UserAgentMutableBuilder[Self <: UserAgent] (val x: Self) extends AnyVal {
+    extension [Self <: UserAgent](x: Self) {
       
-      @scala.inline
-      def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
+      inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRandom(value: () => UserAgent): Self = StObject.set(x, "random", js.Any.fromFunction0(value))
+      inline def setRandom(value: () => UserAgent): Self = StObject.set(x, "random", js.Any.fromFunction0(value))
     }
   }
 }

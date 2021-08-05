@@ -12,22 +12,17 @@ trait IGossipBlockResponse extends StObject {
 }
 object IGossipBlockResponse {
   
-  @scala.inline
-  def apply(): IGossipBlockResponse = {
+  inline def apply(): IGossipBlockResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IGossipBlockResponse]
   }
   
-  @scala.inline
-  implicit class IGossipBlockResponseMutableBuilder[Self <: IGossipBlockResponse] (val x: Self) extends AnyVal {
+  extension [Self <: IGossipBlockResponse](x: Self) {
     
-    @scala.inline
-    def setContent(value: Uint8Array): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: Uint8Array): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentNull: Self = StObject.set(x, "content", null)
+    inline def setContentNull: Self = StObject.set(x, "content", null)
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
   }
 }

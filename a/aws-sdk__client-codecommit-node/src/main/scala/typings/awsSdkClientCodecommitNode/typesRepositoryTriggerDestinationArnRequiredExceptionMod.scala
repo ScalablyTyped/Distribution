@@ -18,17 +18,14 @@ object typesRepositoryTriggerDestinationArnRequiredExceptionMod {
   }
   object RepositoryTriggerDestinationArnRequiredException {
     
-    @scala.inline
-    def apply(): RepositoryTriggerDestinationArnRequiredException = {
+    inline def apply(): RepositoryTriggerDestinationArnRequiredException = {
       val __obj = js.Dynamic.literal(name = "RepositoryTriggerDestinationArnRequiredException")
       __obj.asInstanceOf[RepositoryTriggerDestinationArnRequiredException]
     }
     
-    @scala.inline
-    implicit class RepositoryTriggerDestinationArnRequiredExceptionMutableBuilder[Self <: RepositoryTriggerDestinationArnRequiredException] (val x: Self) extends AnyVal {
+    extension [Self <: RepositoryTriggerDestinationArnRequiredException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.RepositoryTriggerDestinationArnRequiredException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

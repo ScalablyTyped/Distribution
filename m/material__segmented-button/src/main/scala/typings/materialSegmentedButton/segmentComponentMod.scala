@@ -25,9 +25,9 @@ object segmentComponentMod {
       */
     def getSegmentId(): js.UndefOr[String] = js.native
     
-    var handleClick: js.Any = js.native
+    /* private */ var handleClick: js.Any = js.native
     
-    var index: js.Any = js.native
+    /* private */ var index: js.Any = js.native
     
     def initialize(): Unit = js.native
     def initialize(rippleFactory: MDCRippleFactory): Unit = js.native
@@ -38,11 +38,11 @@ object segmentComponentMod {
       */
     def isSelected(): Boolean = js.native
     
-    var isSingleSelect: js.Any = js.native
+    /* private */ var isSingleSelect: js.Any = js.native
     
     def ripple: MDCRipple = js.native
     
-    var rippleComponent: js.Any = js.native
+    /* private */ var rippleComponent: js.Any = js.native
     
     /**
       * Sets segment's index value
@@ -77,8 +77,7 @@ object segmentComponentMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def attachTo(root: Element): MDCSegmentedButtonSegment = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCSegmentedButtonSegment]
+    inline def attachTo(root: Element): MDCSegmentedButtonSegment = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCSegmentedButtonSegment]
   }
   
   type MDCSegmentedButtonSegmentFactory = js.Function2[

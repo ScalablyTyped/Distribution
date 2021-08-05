@@ -12,19 +12,15 @@ trait ReelsMediaFeedResponseRootObject extends StObject {
 }
 object ReelsMediaFeedResponseRootObject {
   
-  @scala.inline
-  def apply(reels: ReelsMediaFeedResponseReels, status: String): ReelsMediaFeedResponseRootObject = {
+  inline def apply(reels: ReelsMediaFeedResponseReels, status: String): ReelsMediaFeedResponseRootObject = {
     val __obj = js.Dynamic.literal(reels = reels.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReelsMediaFeedResponseRootObject]
   }
   
-  @scala.inline
-  implicit class ReelsMediaFeedResponseRootObjectMutableBuilder[Self <: ReelsMediaFeedResponseRootObject] (val x: Self) extends AnyVal {
+  extension [Self <: ReelsMediaFeedResponseRootObject](x: Self) {
     
-    @scala.inline
-    def setReels(value: ReelsMediaFeedResponseReels): Self = StObject.set(x, "reels", value.asInstanceOf[js.Any])
+    inline def setReels(value: ReelsMediaFeedResponseReels): Self = StObject.set(x, "reels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

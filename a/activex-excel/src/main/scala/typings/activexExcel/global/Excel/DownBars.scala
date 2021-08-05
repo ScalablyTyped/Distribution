@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.DownBars")
 @js.native
-class DownBars protected ()
+/* private */ class DownBars ()
   extends StObject
      with typings.activexExcel.Excel.DownBars {
   
@@ -23,7 +23,7 @@ class DownBars protected ()
   /* CompleteClass */
   override def Delete(): js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.DownBars_typekey")
   var ExcelDotDownBars_typekey: typings.activexExcel.Excel.DownBars = js.native
   

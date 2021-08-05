@@ -17,25 +17,19 @@ trait SdkHarnessContainerImage extends StObject {
 }
 object SdkHarnessContainerImage {
   
-  @scala.inline
-  def apply(): SdkHarnessContainerImage = {
+  inline def apply(): SdkHarnessContainerImage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SdkHarnessContainerImage]
   }
   
-  @scala.inline
-  implicit class SdkHarnessContainerImageMutableBuilder[Self <: SdkHarnessContainerImage] (val x: Self) extends AnyVal {
+  extension [Self <: SdkHarnessContainerImage](x: Self) {
     
-    @scala.inline
-    def setContainerImage(value: String): Self = StObject.set(x, "containerImage", value.asInstanceOf[js.Any])
+    inline def setContainerImage(value: String): Self = StObject.set(x, "containerImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerImageUndefined: Self = StObject.set(x, "containerImage", js.undefined)
+    inline def setContainerImageUndefined: Self = StObject.set(x, "containerImage", js.undefined)
     
-    @scala.inline
-    def setUseSingleCorePerContainer(value: Boolean): Self = StObject.set(x, "useSingleCorePerContainer", value.asInstanceOf[js.Any])
+    inline def setUseSingleCorePerContainer(value: Boolean): Self = StObject.set(x, "useSingleCorePerContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseSingleCorePerContainerUndefined: Self = StObject.set(x, "useSingleCorePerContainer", js.undefined)
+    inline def setUseSingleCorePerContainerUndefined: Self = StObject.set(x, "useSingleCorePerContainer", js.undefined)
   }
 }

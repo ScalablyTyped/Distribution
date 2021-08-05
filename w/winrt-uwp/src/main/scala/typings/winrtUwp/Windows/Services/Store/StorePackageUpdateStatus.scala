@@ -27,8 +27,7 @@ trait StorePackageUpdateStatus extends StObject {
 }
 object StorePackageUpdateStatus {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     packageBytesDownloaded: Double,
     packageDownloadProgress: Double,
     packageDownloadSizeInBytes: Double,
@@ -40,25 +39,18 @@ object StorePackageUpdateStatus {
     __obj.asInstanceOf[StorePackageUpdateStatus]
   }
   
-  @scala.inline
-  implicit class StorePackageUpdateStatusMutableBuilder[Self <: StorePackageUpdateStatus] (val x: Self) extends AnyVal {
+  extension [Self <: StorePackageUpdateStatus](x: Self) {
     
-    @scala.inline
-    def setPackageBytesDownloaded(value: Double): Self = StObject.set(x, "packageBytesDownloaded", value.asInstanceOf[js.Any])
+    inline def setPackageBytesDownloaded(value: Double): Self = StObject.set(x, "packageBytesDownloaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageDownloadProgress(value: Double): Self = StObject.set(x, "packageDownloadProgress", value.asInstanceOf[js.Any])
+    inline def setPackageDownloadProgress(value: Double): Self = StObject.set(x, "packageDownloadProgress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageDownloadSizeInBytes(value: Double): Self = StObject.set(x, "packageDownloadSizeInBytes", value.asInstanceOf[js.Any])
+    inline def setPackageDownloadSizeInBytes(value: Double): Self = StObject.set(x, "packageDownloadSizeInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageFamilyName(value: String): Self = StObject.set(x, "packageFamilyName", value.asInstanceOf[js.Any])
+    inline def setPackageFamilyName(value: String): Self = StObject.set(x, "packageFamilyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageUpdateState(value: StorePackageUpdateState): Self = StObject.set(x, "packageUpdateState", value.asInstanceOf[js.Any])
+    inline def setPackageUpdateState(value: StorePackageUpdateState): Self = StObject.set(x, "packageUpdateState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalDownloadProgress(value: Double): Self = StObject.set(x, "totalDownloadProgress", value.asInstanceOf[js.Any])
+    inline def setTotalDownloadProgress(value: Double): Self = StObject.set(x, "totalDownloadProgress", value.asInstanceOf[js.Any])
   }
 }

@@ -13,10 +13,8 @@ object minMaxTimePluginMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Plugin[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Plugin[js.Object]]
-  @scala.inline
-  def default(config: Config): Plugin[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[Plugin[js.Object]]
+  inline def default(): Plugin[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Plugin[js.Object]]
+  inline def default(config: Config): Plugin[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[Plugin[js.Object]]
   
   trait Config extends StObject {
     
@@ -28,32 +26,24 @@ object minMaxTimePluginMod {
   }
   object Config {
     
-    @scala.inline
-    def apply(): Config = {
+    inline def apply(): Config = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setGetTimeLimits(value: /* date */ Date => MinMaxTime): Self = StObject.set(x, "getTimeLimits", js.Any.fromFunction1(value))
+      inline def setGetTimeLimits(value: /* date */ Date => MinMaxTime): Self = StObject.set(x, "getTimeLimits", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetTimeLimitsUndefined: Self = StObject.set(x, "getTimeLimits", js.undefined)
+      inline def setGetTimeLimitsUndefined: Self = StObject.set(x, "getTimeLimits", js.undefined)
       
-      @scala.inline
-      def setTable(value: Record[String, MinMaxTime]): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+      inline def setTable(value: Record[String, MinMaxTime]): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableDateFormat(value: String): Self = StObject.set(x, "tableDateFormat", value.asInstanceOf[js.Any])
+      inline def setTableDateFormat(value: String): Self = StObject.set(x, "tableDateFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableDateFormatUndefined: Self = StObject.set(x, "tableDateFormat", js.undefined)
+      inline def setTableDateFormatUndefined: Self = StObject.set(x, "tableDateFormat", js.undefined)
       
-      @scala.inline
-      def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
+      inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
     }
   }
   
@@ -65,26 +55,20 @@ object minMaxTimePluginMod {
   }
   object MinMaxTime {
     
-    @scala.inline
-    def apply(): MinMaxTime = {
+    inline def apply(): MinMaxTime = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MinMaxTime]
     }
     
-    @scala.inline
-    implicit class MinMaxTimeMutableBuilder[Self <: MinMaxTime] (val x: Self) extends AnyVal {
+    extension [Self <: MinMaxTime](x: Self) {
       
-      @scala.inline
-      def setMaxTime(value: String): Self = StObject.set(x, "maxTime", value.asInstanceOf[js.Any])
+      inline def setMaxTime(value: String): Self = StObject.set(x, "maxTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxTimeUndefined: Self = StObject.set(x, "maxTime", js.undefined)
+      inline def setMaxTimeUndefined: Self = StObject.set(x, "maxTime", js.undefined)
       
-      @scala.inline
-      def setMinTime(value: String): Self = StObject.set(x, "minTime", value.asInstanceOf[js.Any])
+      inline def setMinTime(value: String): Self = StObject.set(x, "minTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinTimeUndefined: Self = StObject.set(x, "minTime", js.undefined)
+      inline def setMinTimeUndefined: Self = StObject.set(x, "minTime", js.undefined)
     }
   }
   
@@ -98,23 +82,18 @@ object minMaxTimePluginMod {
   }
   object State {
     
-    @scala.inline
-    def apply(defaults: MinMaxTime, formatDate: (Date, String) => String, tableDateFormat: String): State = {
+    inline def apply(defaults: MinMaxTime, formatDate: (Date, String) => String, tableDateFormat: String): State = {
       val __obj = js.Dynamic.literal(defaults = defaults.asInstanceOf[js.Any], formatDate = js.Any.fromFunction2(formatDate), tableDateFormat = tableDateFormat.asInstanceOf[js.Any])
       __obj.asInstanceOf[State]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+    extension [Self <: State](x: Self) {
       
-      @scala.inline
-      def setDefaults(value: MinMaxTime): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+      inline def setDefaults(value: MinMaxTime): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatDate(value: (Date, String) => String): Self = StObject.set(x, "formatDate", js.Any.fromFunction2(value))
+      inline def setFormatDate(value: (Date, String) => String): Self = StObject.set(x, "formatDate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTableDateFormat(value: String): Self = StObject.set(x, "tableDateFormat", value.asInstanceOf[js.Any])
+      inline def setTableDateFormat(value: String): Self = StObject.set(x, "tableDateFormat", value.asInstanceOf[js.Any])
     }
   }
 }

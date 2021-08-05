@@ -26,31 +26,20 @@ object polygonMod {
     ) = this()
   }
   
-  @scala.inline
-  def circular(center: Coordinate, radius: Double): Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("circular")(center.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[Polygon]
-  @scala.inline
-  def circular(center: Coordinate, radius: Double, opt_n: Double): Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("circular")(center.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], opt_n.asInstanceOf[js.Any])).asInstanceOf[Polygon]
-  @scala.inline
-  def circular(center: Coordinate, radius: Double, opt_n: Double, opt_sphereRadius: Double): Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("circular")(center.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], opt_n.asInstanceOf[js.Any], opt_sphereRadius.asInstanceOf[js.Any])).asInstanceOf[Polygon]
-  @scala.inline
-  def circular(center: Coordinate, radius: Double, opt_n: Unit, opt_sphereRadius: Double): Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("circular")(center.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], opt_n.asInstanceOf[js.Any], opt_sphereRadius.asInstanceOf[js.Any])).asInstanceOf[Polygon]
+  inline def circular(center: Coordinate, radius: Double): Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("circular")(center.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[Polygon]
+  inline def circular(center: Coordinate, radius: Double, opt_n: Double): Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("circular")(center.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], opt_n.asInstanceOf[js.Any])).asInstanceOf[Polygon]
+  inline def circular(center: Coordinate, radius: Double, opt_n: Double, opt_sphereRadius: Double): Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("circular")(center.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], opt_n.asInstanceOf[js.Any], opt_sphereRadius.asInstanceOf[js.Any])).asInstanceOf[Polygon]
+  inline def circular(center: Coordinate, radius: Double, opt_n: Unit, opt_sphereRadius: Double): Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("circular")(center.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], opt_n.asInstanceOf[js.Any], opt_sphereRadius.asInstanceOf[js.Any])).asInstanceOf[Polygon]
   
-  @scala.inline
-  def fromCircle(circle: typings.ol.circleMod.default): Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCircle")(circle.asInstanceOf[js.Any]).asInstanceOf[Polygon]
-  @scala.inline
-  def fromCircle(circle: typings.ol.circleMod.default, opt_sides: Double): Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("fromCircle")(circle.asInstanceOf[js.Any], opt_sides.asInstanceOf[js.Any])).asInstanceOf[Polygon]
-  @scala.inline
-  def fromCircle(circle: typings.ol.circleMod.default, opt_sides: Double, opt_angle: Double): Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("fromCircle")(circle.asInstanceOf[js.Any], opt_sides.asInstanceOf[js.Any], opt_angle.asInstanceOf[js.Any])).asInstanceOf[Polygon]
-  @scala.inline
-  def fromCircle(circle: typings.ol.circleMod.default, opt_sides: Unit, opt_angle: Double): Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("fromCircle")(circle.asInstanceOf[js.Any], opt_sides.asInstanceOf[js.Any], opt_angle.asInstanceOf[js.Any])).asInstanceOf[Polygon]
+  inline def fromCircle(circle: typings.ol.circleMod.default): Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCircle")(circle.asInstanceOf[js.Any]).asInstanceOf[Polygon]
+  inline def fromCircle(circle: typings.ol.circleMod.default, opt_sides: Double): Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("fromCircle")(circle.asInstanceOf[js.Any], opt_sides.asInstanceOf[js.Any])).asInstanceOf[Polygon]
+  inline def fromCircle(circle: typings.ol.circleMod.default, opt_sides: Double, opt_angle: Double): Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("fromCircle")(circle.asInstanceOf[js.Any], opt_sides.asInstanceOf[js.Any], opt_angle.asInstanceOf[js.Any])).asInstanceOf[Polygon]
+  inline def fromCircle(circle: typings.ol.circleMod.default, opt_sides: Unit, opt_angle: Double): Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("fromCircle")(circle.asInstanceOf[js.Any], opt_sides.asInstanceOf[js.Any], opt_angle.asInstanceOf[js.Any])).asInstanceOf[Polygon]
   
-  @scala.inline
-  def fromExtent(extent: Extent): Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("fromExtent")(extent.asInstanceOf[js.Any]).asInstanceOf[Polygon]
+  inline def fromExtent(extent: Extent): Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("fromExtent")(extent.asInstanceOf[js.Any]).asInstanceOf[Polygon]
   
-  @scala.inline
-  def makeRegular(polygon: Polygon, center: Coordinate, radius: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("makeRegular")(polygon.asInstanceOf[js.Any], center.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def makeRegular(polygon: Polygon, center: Coordinate, radius: Double, opt_angle: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("makeRegular")(polygon.asInstanceOf[js.Any], center.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], opt_angle.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def makeRegular(polygon: Polygon, center: Coordinate, radius: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("makeRegular")(polygon.asInstanceOf[js.Any], center.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def makeRegular(polygon: Polygon, center: Coordinate, radius: Double, opt_angle: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("makeRegular")(polygon.asInstanceOf[js.Any], center.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], opt_angle.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @js.native
   trait Polygon

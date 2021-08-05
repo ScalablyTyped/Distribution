@@ -34,6 +34,5 @@ object Autofill {
   @JSImport("office-ui-fabric-react", "Autofill.defaultProps")
   @js.native
   def defaultProps: EnableAutofillOnKeyPress = js.native
-  @scala.inline
-  def defaultProps_=(x: EnableAutofillOnKeyPress): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: EnableAutofillOnKeyPress): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

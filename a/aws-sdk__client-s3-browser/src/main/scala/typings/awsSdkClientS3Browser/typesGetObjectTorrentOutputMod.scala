@@ -25,26 +25,20 @@ object typesGetObjectTorrentOutputMod {
   }
   object GetObjectTorrentOutput {
     
-    @scala.inline
-    def apply[StreamType]($metadata: ResponseMetadata): GetObjectTorrentOutput[StreamType] = {
+    inline def apply[StreamType]($metadata: ResponseMetadata): GetObjectTorrentOutput[StreamType] = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetObjectTorrentOutput[StreamType]]
     }
     
-    @scala.inline
-    implicit class GetObjectTorrentOutputMutableBuilder[Self <: GetObjectTorrentOutput[?], StreamType] (val x: Self & GetObjectTorrentOutput[StreamType]) extends AnyVal {
+    extension [Self <: GetObjectTorrentOutput[?], StreamType](x: Self & GetObjectTorrentOutput[StreamType]) {
       
-      @scala.inline
-      def setBody(value: StreamType): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
+      inline def setBody(value: StreamType): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
       
-      @scala.inline
-      def setRequestCharged(value: requester_ | String): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
+      inline def setRequestCharged(value: requester_ | String): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestChargedUndefined: Self = StObject.set(x, "RequestCharged", js.undefined)
+      inline def setRequestChargedUndefined: Self = StObject.set(x, "RequestCharged", js.undefined)
     }
   }
 }

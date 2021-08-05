@@ -13,17 +13,14 @@ trait DynatraceSourceProperties extends StObject {
 }
 object DynatraceSourceProperties {
   
-  @scala.inline
-  def apply(`object`: Object): DynatraceSourceProperties = {
+  inline def apply(`object`: Object): DynatraceSourceProperties = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynatraceSourceProperties]
   }
   
-  @scala.inline
-  implicit class DynatraceSourcePropertiesMutableBuilder[Self <: DynatraceSourceProperties] (val x: Self) extends AnyVal {
+  extension [Self <: DynatraceSourceProperties](x: Self) {
     
-    @scala.inline
-    def setObject(value: Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
   }
 }

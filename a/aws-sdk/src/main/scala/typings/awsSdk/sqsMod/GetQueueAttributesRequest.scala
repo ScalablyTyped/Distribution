@@ -18,25 +18,19 @@ trait GetQueueAttributesRequest extends StObject {
 }
 object GetQueueAttributesRequest {
   
-  @scala.inline
-  def apply(QueueUrl: String): GetQueueAttributesRequest = {
+  inline def apply(QueueUrl: String): GetQueueAttributesRequest = {
     val __obj = js.Dynamic.literal(QueueUrl = QueueUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetQueueAttributesRequest]
   }
   
-  @scala.inline
-  implicit class GetQueueAttributesRequestMutableBuilder[Self <: GetQueueAttributesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetQueueAttributesRequest](x: Self) {
     
-    @scala.inline
-    def setAttributeNames(value: AttributeNameList): Self = StObject.set(x, "AttributeNames", value.asInstanceOf[js.Any])
+    inline def setAttributeNames(value: AttributeNameList): Self = StObject.set(x, "AttributeNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeNamesUndefined: Self = StObject.set(x, "AttributeNames", js.undefined)
+    inline def setAttributeNamesUndefined: Self = StObject.set(x, "AttributeNames", js.undefined)
     
-    @scala.inline
-    def setAttributeNamesVarargs(value: QueueAttributeName*): Self = StObject.set(x, "AttributeNames", js.Array(value :_*))
+    inline def setAttributeNamesVarargs(value: QueueAttributeName*): Self = StObject.set(x, "AttributeNames", js.Array(value :_*))
     
-    @scala.inline
-    def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
+    inline def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
   }
 }

@@ -45,6 +45,5 @@ object ViewLocator {
   @JSImport("aurelia-templating", "ViewLocator.viewStrategyMetadataKey")
   @js.native
   def viewStrategyMetadataKey: js.Any = js.native
-  @scala.inline
-  def viewStrategyMetadataKey_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("viewStrategyMetadataKey")(x.asInstanceOf[js.Any])
+  inline def viewStrategyMetadataKey_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("viewStrategyMetadataKey")(x.asInstanceOf[js.Any])
 }

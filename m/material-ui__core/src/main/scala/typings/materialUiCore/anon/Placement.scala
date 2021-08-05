@@ -14,22 +14,17 @@ trait Placement extends StObject {
 }
 object Placement {
   
-  @scala.inline
-  def apply(placement: PopperPlacementType): Placement = {
+  inline def apply(placement: PopperPlacementType): Placement = {
     val __obj = js.Dynamic.literal(placement = placement.asInstanceOf[js.Any])
     __obj.asInstanceOf[Placement]
   }
   
-  @scala.inline
-  implicit class PlacementMutableBuilder[Self <: Placement] (val x: Self) extends AnyVal {
+  extension [Self <: Placement](x: Self) {
     
-    @scala.inline
-    def setPlacement(value: PopperPlacementType): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+    inline def setPlacement(value: PopperPlacementType): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionProps(value: TransitionProps): Self = StObject.set(x, "TransitionProps", value.asInstanceOf[js.Any])
+    inline def setTransitionProps(value: TransitionProps): Self = StObject.set(x, "TransitionProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionPropsUndefined: Self = StObject.set(x, "TransitionProps", js.undefined)
+    inline def setTransitionPropsUndefined: Self = StObject.set(x, "TransitionProps", js.undefined)
   }
 }

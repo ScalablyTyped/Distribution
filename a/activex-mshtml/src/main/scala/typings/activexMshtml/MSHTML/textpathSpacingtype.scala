@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait textpathSpacingtype extends StObject
 object textpathSpacingtype {
   
-  @scala.inline
-  def TEXTPATH_SPACINGTYPE_AUTO: `1` = 1.asInstanceOf[`1`]
+  inline def TEXTPATH_SPACINGTYPE_AUTO: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def TEXTPATH_SPACINGTYPE_EXACT: `2` = 2.asInstanceOf[`2`]
+  inline def TEXTPATH_SPACINGTYPE_EXACT: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def TEXTPATH_SPACINGTYPE_UNKNOWN: `0` = 0.asInstanceOf[`0`]
+  inline def TEXTPATH_SPACINGTYPE_UNKNOWN: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def textpathSpacingtype_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def textpathSpacingtype_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

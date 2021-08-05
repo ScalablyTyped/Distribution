@@ -24,25 +24,19 @@ trait SchemaNumberFormat extends StObject {
 }
 object SchemaNumberFormat {
   
-  @scala.inline
-  def apply(): SchemaNumberFormat = {
+  inline def apply(): SchemaNumberFormat = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaNumberFormat]
   }
   
-  @scala.inline
-  implicit class SchemaNumberFormatMutableBuilder[Self <: SchemaNumberFormat] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaNumberFormat](x: Self) {
     
-    @scala.inline
-    def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+    inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

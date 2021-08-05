@@ -15,19 +15,15 @@ trait Scram extends StObject {
 }
 object Scram {
   
-  @scala.inline
-  def apply(): Scram = {
+  inline def apply(): Scram = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Scram]
   }
   
-  @scala.inline
-  implicit class ScramMutableBuilder[Self <: Scram] (val x: Self) extends AnyVal {
+  extension [Self <: Scram](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
   }
 }

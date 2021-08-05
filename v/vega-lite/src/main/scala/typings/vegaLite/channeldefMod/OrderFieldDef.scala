@@ -20,19 +20,15 @@ trait OrderFieldDef[F /* <: Field */]
 }
 object OrderFieldDef {
   
-  @scala.inline
-  def apply[F /* <: Field */](): OrderFieldDef[F] = {
+  inline def apply[F /* <: Field */](): OrderFieldDef[F] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrderFieldDef[F]]
   }
   
-  @scala.inline
-  implicit class OrderFieldDefMutableBuilder[Self <: OrderFieldDef[?], F /* <: Field */] (val x: Self & OrderFieldDef[F]) extends AnyVal {
+  extension [Self <: OrderFieldDef[?], F /* <: Field */](x: Self & OrderFieldDef[F]) {
     
-    @scala.inline
-    def setSort(value: SortOrder): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: SortOrder): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
   }
 }

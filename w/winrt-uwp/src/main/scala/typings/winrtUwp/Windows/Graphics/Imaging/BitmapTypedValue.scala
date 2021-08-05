@@ -16,20 +16,16 @@ trait BitmapTypedValue extends StObject {
 }
 object BitmapTypedValue {
   
-  @scala.inline
-  def apply(`type`: PropertyType, value: js.Any): BitmapTypedValue = {
+  inline def apply(`type`: PropertyType, value: js.Any): BitmapTypedValue = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BitmapTypedValue]
   }
   
-  @scala.inline
-  implicit class BitmapTypedValueMutableBuilder[Self <: BitmapTypedValue] (val x: Self) extends AnyVal {
+  extension [Self <: BitmapTypedValue](x: Self) {
     
-    @scala.inline
-    def setType(value: PropertyType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: PropertyType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

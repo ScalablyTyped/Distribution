@@ -13,19 +13,15 @@ trait GetSystemInfoOptions
 }
 object GetSystemInfoOptions {
   
-  @scala.inline
-  def apply(): GetSystemInfoOptions = {
+  inline def apply(): GetSystemInfoOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSystemInfoOptions]
   }
   
-  @scala.inline
-  implicit class GetSystemInfoOptionsMutableBuilder[Self <: GetSystemInfoOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetSystemInfoOptions](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: /* res */ SystemInfo => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ SystemInfo => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

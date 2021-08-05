@@ -10,16 +10,13 @@ trait NothingMatcher extends StObject {
 }
 object NothingMatcher {
   
-  @scala.inline
-  def apply(nothing: () => Unit): NothingMatcher = {
+  inline def apply(nothing: () => Unit): NothingMatcher = {
     val __obj = js.Dynamic.literal(nothing = js.Any.fromFunction0(nothing))
     __obj.asInstanceOf[NothingMatcher]
   }
   
-  @scala.inline
-  implicit class NothingMatcherMutableBuilder[Self <: NothingMatcher] (val x: Self) extends AnyVal {
+  extension [Self <: NothingMatcher](x: Self) {
     
-    @scala.inline
-    def setNothing(value: () => Unit): Self = StObject.set(x, "nothing", js.Any.fromFunction0(value))
+    inline def setNothing(value: () => Unit): Self = StObject.set(x, "nothing", js.Any.fromFunction0(value))
   }
 }

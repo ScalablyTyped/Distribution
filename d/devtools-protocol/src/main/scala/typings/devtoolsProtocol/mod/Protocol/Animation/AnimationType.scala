@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AnimationType extends StObject
 object AnimationType {
   
-  @scala.inline
-  def CSSAnimation: typings.devtoolsProtocol.devtoolsProtocolStrings.CSSAnimation = "CSSAnimation".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.CSSAnimation]
+  inline def CSSAnimation: typings.devtoolsProtocol.devtoolsProtocolStrings.CSSAnimation = "CSSAnimation".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.CSSAnimation]
   
-  @scala.inline
-  def CSSTransition: typings.devtoolsProtocol.devtoolsProtocolStrings.CSSTransition = "CSSTransition".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.CSSTransition]
+  inline def CSSTransition: typings.devtoolsProtocol.devtoolsProtocolStrings.CSSTransition = "CSSTransition".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.CSSTransition]
   
-  @scala.inline
-  def WebAnimation: typings.devtoolsProtocol.devtoolsProtocolStrings.WebAnimation = "WebAnimation".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.WebAnimation]
+  inline def WebAnimation: typings.devtoolsProtocol.devtoolsProtocolStrings.WebAnimation = "WebAnimation".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.WebAnimation]
 }

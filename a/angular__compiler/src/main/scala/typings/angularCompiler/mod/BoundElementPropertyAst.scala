@@ -34,6 +34,5 @@ object BoundElementPropertyAst {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromBoundProperty(prop: typings.angularCompiler.astMod.BoundElementProperty): typings.angularCompiler.templateAstMod.BoundElementPropertyAst = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBoundProperty")(prop.asInstanceOf[js.Any]).asInstanceOf[typings.angularCompiler.templateAstMod.BoundElementPropertyAst]
+  inline def fromBoundProperty(prop: typings.angularCompiler.astMod.BoundElementProperty): typings.angularCompiler.templateAstMod.BoundElementPropertyAst = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBoundProperty")(prop.asInstanceOf[js.Any]).asInstanceOf[typings.angularCompiler.templateAstMod.BoundElementPropertyAst]
 }

@@ -90,21 +90,16 @@ object permissionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Permission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Permission]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Permission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Permission]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: PermissionState): Permission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Permission]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: PermissionState, opts: CustomResourceOptions): Permission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Permission]
+    inline def get(name: String, id: Input[ID]): Permission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Permission]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Permission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Permission]
+    inline def get(name: String, id: Input[ID], state: PermissionState): Permission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Permission]
+    inline def get(name: String, id: Input[ID], state: PermissionState, opts: CustomResourceOptions): Permission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Permission]
     
     /**
       * Returns true if the given object is an instance of Permission.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lambda/permission.Permission */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/lambda/permission.Permission */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lambda/permission.Permission */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/lambda/permission.Permission */ Boolean]
   }
   
   trait PermissionArgs extends StObject {
@@ -160,59 +155,42 @@ object permissionMod {
   }
   object PermissionArgs {
     
-    @scala.inline
-    def apply(action: Input[String], function: Input[String | Function], principal: Input[String]): PermissionArgs = {
+    inline def apply(action: Input[String], function: Input[String | Function], principal: Input[String]): PermissionArgs = {
       val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], function = function.asInstanceOf[js.Any], principal = principal.asInstanceOf[js.Any])
       __obj.asInstanceOf[PermissionArgs]
     }
     
-    @scala.inline
-    implicit class PermissionArgsMutableBuilder[Self <: PermissionArgs] (val x: Self) extends AnyVal {
+    extension [Self <: PermissionArgs](x: Self) {
       
-      @scala.inline
-      def setAction(value: Input[String]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: Input[String]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventSourceToken(value: Input[String]): Self = StObject.set(x, "eventSourceToken", value.asInstanceOf[js.Any])
+      inline def setEventSourceToken(value: Input[String]): Self = StObject.set(x, "eventSourceToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventSourceTokenUndefined: Self = StObject.set(x, "eventSourceToken", js.undefined)
+      inline def setEventSourceTokenUndefined: Self = StObject.set(x, "eventSourceToken", js.undefined)
       
-      @scala.inline
-      def setFunction(value: Input[String | Function]): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
+      inline def setFunction(value: Input[String | Function]): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrincipal(value: Input[String]): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
+      inline def setPrincipal(value: Input[String]): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualifier(value: Input[String]): Self = StObject.set(x, "qualifier", value.asInstanceOf[js.Any])
+      inline def setQualifier(value: Input[String]): Self = StObject.set(x, "qualifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualifierUndefined: Self = StObject.set(x, "qualifier", js.undefined)
+      inline def setQualifierUndefined: Self = StObject.set(x, "qualifier", js.undefined)
       
-      @scala.inline
-      def setSourceAccount(value: Input[String]): Self = StObject.set(x, "sourceAccount", value.asInstanceOf[js.Any])
+      inline def setSourceAccount(value: Input[String]): Self = StObject.set(x, "sourceAccount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceAccountUndefined: Self = StObject.set(x, "sourceAccount", js.undefined)
+      inline def setSourceAccountUndefined: Self = StObject.set(x, "sourceAccount", js.undefined)
       
-      @scala.inline
-      def setSourceArn(value: Input[String]): Self = StObject.set(x, "sourceArn", value.asInstanceOf[js.Any])
+      inline def setSourceArn(value: Input[String]): Self = StObject.set(x, "sourceArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceArnUndefined: Self = StObject.set(x, "sourceArn", js.undefined)
+      inline def setSourceArnUndefined: Self = StObject.set(x, "sourceArn", js.undefined)
       
-      @scala.inline
-      def setStatementId(value: Input[String]): Self = StObject.set(x, "statementId", value.asInstanceOf[js.Any])
+      inline def setStatementId(value: Input[String]): Self = StObject.set(x, "statementId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatementIdPrefix(value: Input[String]): Self = StObject.set(x, "statementIdPrefix", value.asInstanceOf[js.Any])
+      inline def setStatementIdPrefix(value: Input[String]): Self = StObject.set(x, "statementIdPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatementIdPrefixUndefined: Self = StObject.set(x, "statementIdPrefix", js.undefined)
+      inline def setStatementIdPrefixUndefined: Self = StObject.set(x, "statementIdPrefix", js.undefined)
       
-      @scala.inline
-      def setStatementIdUndefined: Self = StObject.set(x, "statementId", js.undefined)
+      inline def setStatementIdUndefined: Self = StObject.set(x, "statementId", js.undefined)
     }
   }
   
@@ -269,68 +247,48 @@ object permissionMod {
   }
   object PermissionState {
     
-    @scala.inline
-    def apply(): PermissionState = {
+    inline def apply(): PermissionState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PermissionState]
     }
     
-    @scala.inline
-    implicit class PermissionStateMutableBuilder[Self <: PermissionState] (val x: Self) extends AnyVal {
+    extension [Self <: PermissionState](x: Self) {
       
-      @scala.inline
-      def setAction(value: Input[String]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: Input[String]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      @scala.inline
-      def setEventSourceToken(value: Input[String]): Self = StObject.set(x, "eventSourceToken", value.asInstanceOf[js.Any])
+      inline def setEventSourceToken(value: Input[String]): Self = StObject.set(x, "eventSourceToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventSourceTokenUndefined: Self = StObject.set(x, "eventSourceToken", js.undefined)
+      inline def setEventSourceTokenUndefined: Self = StObject.set(x, "eventSourceToken", js.undefined)
       
-      @scala.inline
-      def setFunction(value: Input[String | Function]): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
+      inline def setFunction(value: Input[String | Function]): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
+      inline def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
       
-      @scala.inline
-      def setPrincipal(value: Input[String]): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
+      inline def setPrincipal(value: Input[String]): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrincipalUndefined: Self = StObject.set(x, "principal", js.undefined)
+      inline def setPrincipalUndefined: Self = StObject.set(x, "principal", js.undefined)
       
-      @scala.inline
-      def setQualifier(value: Input[String]): Self = StObject.set(x, "qualifier", value.asInstanceOf[js.Any])
+      inline def setQualifier(value: Input[String]): Self = StObject.set(x, "qualifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualifierUndefined: Self = StObject.set(x, "qualifier", js.undefined)
+      inline def setQualifierUndefined: Self = StObject.set(x, "qualifier", js.undefined)
       
-      @scala.inline
-      def setSourceAccount(value: Input[String]): Self = StObject.set(x, "sourceAccount", value.asInstanceOf[js.Any])
+      inline def setSourceAccount(value: Input[String]): Self = StObject.set(x, "sourceAccount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceAccountUndefined: Self = StObject.set(x, "sourceAccount", js.undefined)
+      inline def setSourceAccountUndefined: Self = StObject.set(x, "sourceAccount", js.undefined)
       
-      @scala.inline
-      def setSourceArn(value: Input[String]): Self = StObject.set(x, "sourceArn", value.asInstanceOf[js.Any])
+      inline def setSourceArn(value: Input[String]): Self = StObject.set(x, "sourceArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceArnUndefined: Self = StObject.set(x, "sourceArn", js.undefined)
+      inline def setSourceArnUndefined: Self = StObject.set(x, "sourceArn", js.undefined)
       
-      @scala.inline
-      def setStatementId(value: Input[String]): Self = StObject.set(x, "statementId", value.asInstanceOf[js.Any])
+      inline def setStatementId(value: Input[String]): Self = StObject.set(x, "statementId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatementIdPrefix(value: Input[String]): Self = StObject.set(x, "statementIdPrefix", value.asInstanceOf[js.Any])
+      inline def setStatementIdPrefix(value: Input[String]): Self = StObject.set(x, "statementIdPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatementIdPrefixUndefined: Self = StObject.set(x, "statementIdPrefix", js.undefined)
+      inline def setStatementIdPrefixUndefined: Self = StObject.set(x, "statementIdPrefix", js.undefined)
       
-      @scala.inline
-      def setStatementIdUndefined: Self = StObject.set(x, "statementId", js.undefined)
+      inline def setStatementIdUndefined: Self = StObject.set(x, "statementId", js.undefined)
     }
   }
 }
